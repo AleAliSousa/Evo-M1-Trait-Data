@@ -1,0 +1,63 @@
+---
+title: "EDITING UGLY SPREADSHEETS"
+output: html_document
+date: "2023-07-04"
+---
+
+#################### #################### #################### #################### 
+#################### #################### #################### #################### 
+#################### EDITING UGLY SPREADSHEETS BY HAND ####################
+#################### #################### #################### #################### 
+#################### #################### #################### #################### 
+
+# Set Working Directory. Store with the spreadsheet.
+```{r}
+setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data")
+```
+
+# All corrections and formatting changes
+```{r}
+# Read the spreadsheet
+spreadsheet<-read.csv("TESTS NOTES cytoarch GLI cell types.csv")
+# Remove unwanted names. Takes names from columns 1-7, adds next to them names from 9-last #assigns new names to original df
+names(spreadsheet) = c(names(spreadsheet)[1:7],  names(spreadsheet)[9:length(names(spreadsheet))])
+# Delete empty column (you need to run it twice or use two similar functions, for some reason)
+spreadsheet[,13]<-NULL
+spreadsheet=spreadsheet[,-13]
+#spreadsheet[,13]=NULL
+# rename columns
+colnames(spreadsheet)[colnames(spreadsheet) == "X"] ="Anatomy"
+colnames(spreadsheet)[colnames(spreadsheet) == "X.2"] ="delta"
+# remove unnecessary character in a specific column
+spreadsheet$delta = gsub("x", "", spreadsheet$delta)
+# remove unnecessary string in the whole dataset
+spreadsheet <- data.frame(sapply(spreadsheet,function(x) gsub("n.a.","",as.character(x))))
+spreadsheet <- data.frame(sapply(spreadsheet,function(x) gsub(",","",as.character(x))))
+# rename string in columns
+colnames(spreadsheet) = gsub("\\b..\\b", "_", colnames(spreadsheet))
+# rename string in columns (Genus)
+colnames(spreadsheet) = gsub("M_", "Macropus_", colnames(spreadsheet))
+# Convert equation string to a number (Steps 1_2)
+### Step 1: load tidyverse
+library(tidyverse)
+## Step 2: look for columns TRUE for 106 or 109. If true, need to multiply equation.   
+for (i in 2:length(names(spreadsheet))) {
+  spreadsheet$x106=str_detect(spreadsheet[,i], 'x106')
+  spreadsheet$x109=str_detect(spreadsheet[,i], 'x109')
+  ifelse (spreadsheet$x106 == TRUE, spreadsheet[,i] <- gsub("x106", "", spreadsheet[,i]), spreadsheet[,i])
+  ifelse (spreadsheet$x109 == TRUE, spreadsheet[,i] <- gsub("x109", "", spreadsheet[,i]), spreadsheet[,i])
+  spreadsheet[,i] <- as.numeric(spreadsheet[,i])
+  ifelse (spreadsheet$x106 == TRUE, as.numeric(spreadsheet[,i] <-  spreadsheet[,i]*10^6), spreadsheet[,i])
+  ifelse (spreadsheet$x109 == TRUE, as.numeric(spreadsheet[,i] <-  spreadsheet[,i]*10^9), spreadsheet[,i])
+}
+spreadsheet$x106 = NULL
+spreadsheet$x109 = NULL
+```
+
+# Turn of scientific notation (optional)
+```{r}
+options(scipen=999)
+```
+
+
+

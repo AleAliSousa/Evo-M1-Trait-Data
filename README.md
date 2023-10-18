@@ -1,2 +1,2 @@
 # Evo-M1-Trait-Data
-refer to ___READ ME
+refer to __READ ME.xlsx in this folder for details

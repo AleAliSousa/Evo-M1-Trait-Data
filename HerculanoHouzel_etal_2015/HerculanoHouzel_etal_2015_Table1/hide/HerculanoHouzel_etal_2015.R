@@ -7,7 +7,7 @@
 
 ## PART ONE: READ FILE
 # Set Working Directory. Store with the spreadsheet.
-setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/Cell_Counts_Isotropic_Fractionator/HerculanoHouzel_etal_2015")
+setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/HerculanoHouzel_etal_2015")
 
 
 

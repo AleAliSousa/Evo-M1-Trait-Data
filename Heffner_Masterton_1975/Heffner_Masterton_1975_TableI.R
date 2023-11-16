@@ -70,10 +70,10 @@ options(scipen = 999)
 
 ## 4. Save as csv
 
-# Save the tabledirectxl data frame to a CSV file
+# Save the data frame to a CSV file
 write.csv(merged_df, file = "Heffner_Masterton_1975_TableI.csv", row.names = FALSE)
 
 ## 5. Save as tsv with DOI file name
 
-# Save the tabledirectxl data frame to a TSV file
+# Save the data frame to a TSV file
 write.csv(merged_df, file = "10.1159%2F000124401_tableI.tsv", row.names = FALSE)

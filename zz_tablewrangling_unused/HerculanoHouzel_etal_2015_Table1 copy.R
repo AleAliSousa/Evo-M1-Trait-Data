@@ -3,15 +3,10 @@
 library(readxl)
 tabledirectxl <- read_excel("HerculanoHouzel_etal_2015_Table1.xlsx")
 
-## 2. Check Table name
-# Assuming the first column header is "Table 1. Cerebral cortex"
-first_column_name <- colnames(tabledirectxl)[1]
-# Specify the prefix to remove
-prefix_to_remove <- "Table 1. "
-# Extract the part after the prefix
-structure_name <- sub(paste0("^", prefix_to_remove), "", first_column_name)
+## 2. Delete empty columns
+tabledirectxl <- tabledirectxl[, colSums(is.na(tabledirectxl) | tabledirectxl == "") != nrow(tabledirectxl), drop = FALSE]
 
-## 3. Remove table name header and bottom note
+## 3. Table name / header removal
 # Set the next row as the new header
 colnames(tabledirectxl) <- as.character(unlist(tabledirectxl[1, ]))
 # Remove the first row since it's now the header
@@ -48,16 +43,10 @@ for (column in columns_to_convert) {
   tabledirectxl[[column]] <- as.numeric(gsub(",", "", tabledirectxl[[column]]))
 }
 
-## 7. Name columns after the structure
-# Specify the columns to rename
-columns_to_rename <- c("Mass, g", "Mass, g SD", "N, n", "N, n SD", "O, n", "O, n SD", "N/mg", "N/mg SD", "O/mg", "O/mg SD", "O/N", "O/N SD", "Source")
-# Add structure at the beginning of each column name
-colnames(tabledirectxl)[match(columns_to_rename, colnames(tabledirectxl))] <- paste0(structure_name, " ", columns_to_rename)
-
-## 8. Save as csv
+## 7. Save as csv
 # Save the dataframe to a CSV file
 write.csv(tabledirectxl, file = "HerculanoHouzel_etal_2015_Table1.csv", row.names = FALSE)
 
-## 9. Save as tsv with DOI file name
+## 8. Save as tsv with DOI file name
 # Save the dataframe to a TSV file
 write.csv(tabledirectxl, file = "10.1159%2F000437413_table1.tsv", row.names = FALSE)

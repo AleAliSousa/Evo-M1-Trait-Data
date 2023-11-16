@@ -1,13 +1,13 @@
-# Table 1
+# Table 3
 ## 1. Read direct from xl
 library(readxl)
-tabledirectxl <- read_excel("HerculanoHouzel_etal_2015_Table1.xlsx")
+tabledirectxl <- read_excel("HerculanoHouzel_etal_2015_Table3.xlsx")
 
 ## 2. Check Table name
-# Assuming the first column header is "Table 1. Cerebral cortex"
+# Assuming the first column header is "Table 3. RoB"
 first_column_name <- colnames(tabledirectxl)[1]
 # Specify the prefix to remove
-prefix_to_remove <- "Table 1. "
+prefix_to_remove <- "Table 3. "
 # Extract the part after the prefix
 structure_name <- sub(paste0("^", prefix_to_remove), "", first_column_name)
 
@@ -19,12 +19,12 @@ tabledirectxl <- tabledirectxl[-1, ]
 # Remove the last two rows which are notes
 tabledirectxl <- tabledirectxl[1:(nrow(tabledirectxl)-2), ]
 
-## 4. Correct (possible) error
-# There seems to be a " + " in place of " ± " in 	column "N,n" row "Rattus norvegicus"
-# Replace " + " with " ± " in the entire dataset
-tabledirectxl[] <- lapply(tabledirectxl, function(x) gsub("\\s*\\+\\s*", " ± ", x))
+# ## 3. Correct (possible) error
+# # There seems to be a " + " in place of " ± " in 	column "N,n" row "Rattus norvegicus"
+# # Replace " + " with " ± " in the entire dataset
+# tabledirectxl[] <- lapply(tabledirectxl, function(x) gsub("\\s*\\+\\s*", " ± ", x))
 
-## 5. Split 6 columns containing average ± standard deviation into 12 different columns.
+## 4. Split 6 columns containing average ± standard deviation into 12 different columns.
 # Load the 'tidyr' package
 library(tidyr)
 # Define the columns to split and their corresponding new column names
@@ -42,22 +42,22 @@ for (i in seq_along(cols_to_split)) {
   )
 }
 
-## 6. Convert columns to numeric (taking away commas)
+## 5. Convert columns to numeric (taking away commas)
 columns_to_convert <- c("Mass, g", "Mass, g SD", "N, n", "N, n SD", "O, n", "O, n SD", "N/mg", "N/mg SD", "O/mg", "O/mg SD", "O/N", "O/N SD")
 for (column in columns_to_convert) {
   tabledirectxl[[column]] <- as.numeric(gsub(",", "", tabledirectxl[[column]]))
 }
 
-## 7. Name columns after the structure
+## 6. Name columns after the structure 
 # Specify the columns to rename
 columns_to_rename <- c("Mass, g", "Mass, g SD", "N, n", "N, n SD", "O, n", "O, n SD", "N/mg", "N/mg SD", "O/mg", "O/mg SD", "O/N", "O/N SD", "Source")
 # Add structure at the beginning of each column name
 colnames(tabledirectxl)[match(columns_to_rename, colnames(tabledirectxl))] <- paste0(structure_name, " ", columns_to_rename)
 
-## 8. Save as csv
+## 7. Save as csv
 # Save the dataframe to a CSV file
-write.csv(tabledirectxl, file = "HerculanoHouzel_etal_2015_Table1.csv", row.names = FALSE)
+write.csv(tabledirectxl, file = "HerculanoHouzel_etal_2015_Table3.csv", row.names = FALSE)
 
-## 9. Save as tsv with DOI file name
+## 8. Save as tsv with DOI file name
 # Save the dataframe to a TSV file
-write.csv(tabledirectxl, file = "10.1159%2F000437413_table1.tsv", row.names = FALSE)
+write.csv(tabledirectxl, file = "10.1159%2F000437413_table3.tsv", row.names = FALSE)

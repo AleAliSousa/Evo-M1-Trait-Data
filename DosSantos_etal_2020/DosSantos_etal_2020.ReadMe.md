@@ -18,8 +18,6 @@ formatted into primary or equivalent Table 1
 
 5. Pivoted to reorganize by "Structure"
 
---> Online database
-
 dossantos_etal_2020_2022_table1.csv <-- USE THIS
 
 --> Online database

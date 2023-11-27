@@ -76,11 +76,11 @@ options(scipen = 999)
 
 ## 7. Save as csv
 
-# Save the tabledirectxl data frame to a CSV file
+# Save the dataframe to a CSV file
 write.csv(tabledirectxl, file = "caspar_etal_2022_table1.csv", row.names = FALSE)
 
 ## 8. Save as tsv with DOI file name
 
-# Save the tabledirectxl data frame to a TSV file
+# Save the dataframe to a TSV file
 write.csv(tabledirectxl, file = "10.7554%2FeLife.77875_table1.tsv", row.names = FALSE)
 

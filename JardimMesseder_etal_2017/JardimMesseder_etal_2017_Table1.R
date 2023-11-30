@@ -105,17 +105,33 @@ tabledirectxl <- tabledirectxl[, column_order]
 # Rename the columns to ensure "Species" is the first column and "Common Name" is the second column
 colnames(tabledirectxl) <- c("Species", "Common Name", colnames(tabledirectxl)[-c(species_col_index, common_name_col_index)])
 
-
 # Replace "." with " " in the "Species", "Common Name" columns
 tabledirectxl$Species <- gsub("\\.", " ", tabledirectxl$Species)
 tabledirectxl$"Common Name" <- gsub("\\.", " ", tabledirectxl$"Common Name")
 # Remove leading and trailing whitespace from the "Species" column
 tabledirectxl$Species <- trimws(tabledirectxl$Species)
 
-## Save as csv
+## Save
+
 # Save the dataframe to a CSV file
 write.csv(tabledirectxl, file = "JardimMesseder_etal_2017_Table1.csv", row.names = FALSE)
 
-## Save as tsv with DOI file name
-# Save the dataframe to a TSV file
-write.csv(tabledirectxl, file = "10.3389%2Ffnana.2017.00118_table1.tsv", row.names = FALSE)
+# Save the dataframe to a TSV file for online database
+write.csv(tabledirectxl, file = "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/__Public/comparative-data/10.3389%2Ffnana.2017.00118_Table1.tsv", row.names = FALSE)
+
+## Export colnames to merge terms
+# Edit for your existing DATAFRAME and TABLE
+# Create a new dataframe with the desired structure
+new_dataframe <- data.frame(
+  Original_Term = rep("", ncol(tabledirectxl)),  # Empty character column with the same number of rows as columns in tabledirectxl
+  Standardized_Term = colnames(tabledirectxl),  # Column headers from tabledirectxl
+  Reference = rep("JardimMesseder_etal_2017_Table1", ncol(tabledirectxl)),  # Reference column
+  Description = rep("", ncol(tabledirectxl))  # Empty character column with the same number of rows as columns in tabledirectxl
+)
+
+# Save the new dataframe to a CSV file
+file_path <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/__merging/JardimMesseder_etal_2017_Table1_terms.csv"
+write.csv(new_dataframe, file_path, row.names = FALSE)
+
+# Print the new dataframe
+print(new_dataframe)

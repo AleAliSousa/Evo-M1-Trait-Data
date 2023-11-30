@@ -30,8 +30,8 @@ colnames(sheetfromtxt)[colnames(sheetfromtxt) == "...1"] ="_"
 colnames(sheetfromtxt)[colnames(sheetfromtxt) == "...13"] ="Δ"
 # rename string in column names
 colnames(sheetfromtxt) = gsub("\\b..\\b", ". ", colnames(sheetfromtxt))
-# Save it as 'dossantos_etal_2017_primary_or_equivalent.csv'
-write.csv(sheetfromtxt, file = "dossantos_etal_2017_tables1_primary_or_equivalent.csv", row.names = FALSE)
+# Save it as primary_or_equivalent
+write.csv(sheetfromtxt, file = "DosSantos_etal_2017_TableS1_primary_or_equivalent.csv", row.names = FALSE)
 
 
 ## PART TWO: CORRECT ERRATUM
@@ -82,7 +82,7 @@ sheetfromtxt$"_" <- sub("^(.*)MES\\+D\\+S$", "mesencephalon+diencephalon+striatu
 sheetfromtxt$"_" <- sub("^(.*)BD$", "Body_\\1", sheetfromtxt$"_")
 sheetfromtxt$"_" <- sub("^(.*)BR$", "whole_brain_\\1", sheetfromtxt$"_")
 sheetfromtxt$"_" <- sub("^(.*)CX$", "Cerebral_Cortex_\\1", sheetfromtxt$"_")
-sheetfromtxt$"_" <- sub("^(.*)HP$", "hippocampus_\\1", sheetfromtxt$"_")
+sheetfromtxt$"_" <- sub("^(.*)HP$", "Hippocampus_\\1", sheetfromtxt$"_")
 sheetfromtxt$"_" <- sub("^(.*)CB$", "Cerebellum_\\1", sheetfromtxt$"_")
 sheetfromtxt$"_" <- sub("^(.*)ROB$", "RoB_\\1", sheetfromtxt$"_")
 sheetfromtxt$"_" <- sub("^(.*)D\\+S$", "diencephalon+striatum_\\1", sheetfromtxt$"_")
@@ -142,10 +142,26 @@ sheetfromtxt$Species[sheetfromtxt$Species == "M. fuliginosus"] <- "Macropus fuli
 # Delete the row "Δ"
 sheetfromtxt <- sheetfromtxt[!sheetfromtxt$Species == "Δ", ]
 
-## PART TEN: Save to CSV with item
-# Save it as 'dossantos_etal_2017_tables1.csv'
-write.csv(sheetfromtxt, file = "dossantos_etal_2017_tables1.csv", row.names = FALSE)
+## PART TEN: 
+# Save CSV
+write.csv(sheetfromtxt, file = "DosSantos_etal_2017_TableS1.csv", row.names = FALSE)
 
-## PART ELEVEN: Save to TSV with DOI file name
-write.csv(sheetfromtxt, file = "10.1159%2000452856_tableS1.tsv", row.names = FALSE)
+## Save TSV with DOI file name in Online Database Folder
+write.csv(sheetfromtxt, file = "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/__Public/comparative-data/10.1159%2000452856_TableS1.tsv", row.names = FALSE)
 
+## Export colnames to merge terms
+# Assuming sheetfromtxt is your existing dataframe
+# Create a new dataframe with the desired structure
+new_dataframe <- data.frame(
+  Original_Term = rep("", ncol(sheetfromtxt)),  # Empty character column with the same number of rows as columns in sheetfromtxt
+  Standardized_Term = colnames(sheetfromtxt),  # Column headers from sheetfromtxt
+  Reference = rep("DosSantos_etal_2017_TableS1", ncol(sheetfromtxt)),  # Reference column
+  Description = rep("", ncol(sheetfromtxt))  # Empty character column with the same number of rows as columns in sheetfromtxt
+)
+
+# Save the new dataframe to a CSV file
+file_path <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/__merging/DosSantos_etal_2017_TableS1_terms.csv"
+write.csv(new_dataframe, file_path, row.names = FALSE)
+
+# Print the new dataframe
+print(new_dataframe)

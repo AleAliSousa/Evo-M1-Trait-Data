@@ -1,0 +1,16 @@
+Code,Definition,Structure,Measure,Reference,Note
+GM,Cerebral Cortex Grey Matter,CerebralCortexGrey,,DosSantos_etal_2017_TableS1,"defined in text: ""separation of the remaining Cx into gray and white matter, which had their numbers of cells counted separately"""
+BR,whole brain (excluding the olfactory bulb),WholeBrain,,DosSantos_etal_2017_TableS1,
+CB,cerebellum,Cerebellum,,DosSantos_etal_2017_TableS1,
+CX,cerebral cortex (including hippocampus),CerebralCortex,,DosSantos_etal_2017_TableS1,
+D+S,diencephalon + striatum,DiencephalonStriatum,,DosSantos_etal_2017_TableS1,
+HP,hippocampus,Hippocampus,,DosSantos_etal_2017_TableS1,
+MES,mesencephalon,Mesencephalon,,DosSantos_etal_2017_TableS1,
+MES+D+S,mesencephalon + diencephalon + striatum,MesencephalonDiencephalonStriatum,,DosSantos_etal_2017_TableS1,
+OB,olfactory bulb,OlfactoryBulb,,DosSantos_etal_2017_TableS1,
+P+M,pons + medulla,PonsMedulla,,DosSantos_etal_2017_TableS1,
+RoB,"rest of brain (the sum of diencephalon+striatum, mesencephalon, and pons+medulla)",RoB,,DosSantos_etal_2017_TableS1,
+M,mass of the structure,,"Mass,g",DosSantos_etal_2017_TableS1,
+N,number of neurons,,"N,n",DosSantos_etal_2017_TableS1,
+DN,neuronal density (in neurons/mg),,N/mg,DosSantos_etal_2017_TableS1,
+O/N,ratio between numbers of other (non-neuronal) cells and neurons. ,,O/N,DosSantos_etal_2017_TableS1,

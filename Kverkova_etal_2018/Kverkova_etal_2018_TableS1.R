@@ -33,8 +33,8 @@ matrix1[25, ] <- trimws(matrix1[25, ])
 # Create a new column for type in matrix1
 # Insert 'type' column to the right of the first column, and keep the remaining columns.
 matrix1 <- cbind(
-  matrix1[, 1],  # Keep the first  column
-  type = ifelse(is.na(matrix1[, 2]) | matrix1[, 2] == "", "percent of brain", ""),  # Create 'type' column
+  matrix1[, 1],  # Keep the first column
+  type = ifelse(is.na(matrix1[, 2]) | matrix1[, 2] == "", "_FractionofBrain", ""),  # Create 'type' column
   matrix1[, -c(1)]  # Keep the remaining columns
 )
 
@@ -56,7 +56,7 @@ are_type_identical <- identical(matrix1_top[, 2], matrix1_bottom[, 2])
 # Merge matrices based on the first two columns
 combined_matrix <- cbind(matrix1_top, matrix1_bottom)
 
-# Check if the "Species"  (and type)  column is identical / repeated
+# Check if the "Species"(and type)  column is identical / repeated
 are_species_identical2 <- identical(combined_matrix[, 1] == "Species", combined_matrix[, 11] == "Species")
 are_type_identical2 <- identical(combined_matrix[, 2], combined_matrix[, 12])
 
@@ -85,12 +85,10 @@ library(tidyverse)
 df1 <- combined_df %>%
   pivot_wider(
     names_from = V2,
-    values_from = c("Olfactory bulbs", "Olfactory cortices", "Neocortex", "Entorhinal cortex", "Hippocampus", "Amygdala", "Striatum","Septum", "Thalamus", "Hypothalamus", "Cerebellum", "Tectum", "Tegmentum", "Medulla oblongata"),
-    names_glue = "{.value} {V2}",
+    values_from = c("Olfactory bulbs", "Olfactory cortices", "Neocortex", "Entorhinal cortex", "Hippocampus", "Amygdala", "Striatum", "Septum", "Thalamus", "Hypothalamus", "Cerebellum", "Tectum", "Tegmentum", "Medulla oblongata"),
+    names_glue = "{.value}{V2}",
     values_fill = NA
   ) 
-# Trim whitespace in header
-colnames(df1) <- trimws(colnames(df1))
 
 # Summarize the column for each species (collapse Species pairs of rows). 
 library(dplyr)
@@ -99,9 +97,7 @@ df1_combined <- df1 %>%
   group_by(Species) %>%
   summarise(across(everything(), ~ ifelse(all(is.na(.)), NA, first(na.omit(.)))))
 
-
 # Define the columns to split and their corresponding new column names. 
-
 library(tidyr)
 cols_to_split <- c(
   "Body mass", "Brain mass", "Olfactory bulbs", "Olfactory cortices",
@@ -109,16 +105,16 @@ cols_to_split <- c(
   "Striatum", "Septum", "Thalamus", "Hypothalamus",
   "Cerebellum", "Tectum", "Tegmentum", "Medulla oblongata"
 )
-# Add units based on Table note. Elsewhere in Supplement it is indicated that Body mass is in (G)
+# Give measurement details based on Table note. Elsewhere in Supplement it is indicated that Body mass is in (g)
 new_col_names <- c(
-  "Body mass, g", "Body mass, g SD", "Brain mass, g", "Brain mass, g SD",
-  "Olfactory bulbs", "Olfactory bulbs, mmˆ3 SD", "Olfactory cortices mmˆ3", "Olfactory cortices mmˆ3 SD",
-  "Neocortex, mmˆ3", "Neocortex, mmˆ3 SD", "Entorhinal cortex, mmˆ3", "Entorhinal cortex, mmˆ3 SD",
-  "Hippocampus, mmˆ3", "Hippocampus, mmˆ3 SD", "Amygdala, mmˆ3", "Amygdala, mmˆ3 SD",
-  "Striatum, mmˆ3", "Striatum, mmˆ3 SD", "Septum, mmˆ3", "Septum, mmˆ3 SD",
-  "Thalamus, mmˆ3", "Thalamus, mmˆ3 SD", "Hypothalamus, mmˆ3", "Hypothalamus, mmˆ3 SD",
-  "Cerebellum, mmˆ3", "Cerebellum, mmˆ3 SD", "Tectum, mmˆ3", "Tectum, mmˆ3 SD",
-  "Tegmentum, mmˆ3", "Tegmentum, mmˆ3 SD", "Medulla oblongata, mmˆ3", "Medulla oblongata, mmˆ3 SD"
+  "Body_Mass,g", "Body_Mass,g_SD", "Brain_Mass,g", "Brain_Mass,g_SD",
+  "Olfactory bulbs_Vol,mm3", "Olfactory bulbs_Vol,mm3_SD", "Olfactory cortices_Vol,mm3", "Olfactory cortices_Vol,mm3_SD",
+  "Neocortex_Vol,mm3", "Neocortex_Vol,mm3_SD", "Entorhinal cortex_Vol,mm3", "Entorhinal cortex_Vol,mm3_SD",
+  "Hippocampus_Vol,mm3", "Hippocampus_Vol,mm3_SD", "Amygdala_Vol,mm3", "Amygdala_Vol,mm3_SD",
+  "Striatum_Vol,mm3", "Striatum_Vol,mm3_SD", "Septum_Vol,mm3", "Septum_Vol,mm3_SD",
+  "Thalamus_Vol,mm3", "Thalamus_Vol,mm3_SD", "Hypothalamus_Vol,mm3", "Hypothalamus_Vol,mm3_SD",
+  "Cerebellum_Vol,mm3", "Cerebellum_Vol,mm3_SD", "Tectum_Vol,mm3", "Tectum_Vol,mm3_SD",
+  "Tegmentum_Vol,mm3", "Tegmentum_Vol,mm3_SD", "Medulla oblongata_Vol,mm3", "Medulla  oblongata_Vol,mm3_SD"
 )
 
 # Loop through the columns and split each one
@@ -126,7 +122,7 @@ for (i in seq_along(cols_to_split)) {
   df1_combined <- separate(
     df1_combined,
     col = cols_to_split[i],  # Specify the column to split
-    into = c(new_col_names[i * 2 - 1], paste0(new_col_names[i * 2 - 1], " SD")),  # New column names with space before SD
+    into = c(new_col_names[i * 2 - 1], paste0(new_col_names[i * 2 - 1], "_SD")),  # New column names with space before SD
     sep = "\\s*±\\s*",  # Specify the separator as a regular expression to split on ' ±' with or without space
     extra = "drop"  # Drop any extra pieces
   )
@@ -153,9 +149,7 @@ write.csv(df1_combined, file = "~/Library/CloudStorage/OneDrive-AllenInstitute/S
 # Create a new dataframe with the desired structure
 new_dataframe <- data.frame(
   Original_Term = colnames(df1_combined),  # Column headers from df1_combined
-  Standardized_Term = rep("", ncol(df1_combined)),  # Empty character column with the same number of rows as columns in df1_combined
-  Reference = rep("Kverkova_etal_2018_TableS1", ncol(df1_combined)),  # Reference column
-  Description = rep("", ncol(df1_combined))  # Empty character column with the same number of rows as columns in df1_combined
+  Reference = rep("Kverkova_etal_2018_TableS1", ncol(df1_combined))  # Reference column
 )
 
 # Save the new dataframe to a CSV file

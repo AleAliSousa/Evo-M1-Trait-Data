@@ -91,7 +91,7 @@ for (i in seq_along(cols_to_split)) {
   )
 }
 
-#MOVE SPECIES COLUMN, TIDY CHARACTERS
+#MOVE SPECIES COLUMN, TIDY CHARACTERS, RESTORE ABBREVIATED TERMS
 # Identify the column indices for "Species" and "Common Name"
 species_col_index <- which(colnames(tabledirectxl) == "Species")
 common_name_col_index <- which(colnames(tabledirectxl) == "Common Name")
@@ -111,7 +111,12 @@ tabledirectxl$"Common Name" <- gsub("\\.", " ", tabledirectxl$"Common Name")
 # Remove leading and trailing whitespace from the "Species" column
 tabledirectxl$Species <- trimws(tabledirectxl$Species)
 
-## Save
+# Restore original abbreviated terms in column names
+colnames(tabledirectxl) <- gsub("O.N", "O/N", colnames(tabledirectxl))
+# # replace ".g" with "..g" and ".kg" with "..kg"
+colnames(tabledirectxl) <- gsub("\\.\\.(g|kg)", ".\\1", colnames(tabledirectxl))
+
+##SAVE
 
 # Save the dataframe to a CSV file
 write.csv(tabledirectxl, file = "JardimMesseder_etal_2017_Table1.csv", row.names = FALSE)
@@ -124,9 +129,7 @@ write.csv(tabledirectxl, file = "~/Library/CloudStorage/OneDrive-AllenInstitute/
 # Create a new dataframe with the desired structure
 new_dataframe <- data.frame(
   Original_Term = colnames(tabledirectxl),  # Column headers from tabledirectxl
-  Standardized_Term = rep("", ncol(tabledirectxl)),  # Empty character column with the same number of rows as columns in tabledirectxl
-  Reference = rep("JardimMesseder_etal_2017_Table1", ncol(tabledirectxl)),  # Reference column
-  Description = rep("", ncol(tabledirectxl))  # Empty character column with the same number of rows as columns in tabledirectxl
+  Reference = rep("JardimMesseder_etal_2017_Table1", ncol(tabledirectxl))  # Reference column
 )
 
 # Save the new dataframe to a CSV file

@@ -1,0 +1,14 @@
+Code,Definition,Structure,Measure,Reference,Note
+BR,whole brain (excluding the olfactory bulb),WholeBrain,,JardimMesseder_etal_2017_Table1,
+CB,cerebellum,Cerebellum,,JardimMesseder_etal_2017_Table1,
+HP,hippocampus,Hippocampus,,JardimMesseder_etal_2017_Table1,
+OB,olfactory bulb,OlfactoryBulb,,JardimMesseder_etal_2017_Table1,
+RoB,"rest of brain (the sum of diencephalon+basal ganglia, mesencephalon, and pons+medulla)",RoB,,JardimMesseder_etal_2017_Table1,DosSantos_etal_2017 mentioned basal ganglia instead of striatum
+M,mass of the structure,,"Mass,g",JardimMesseder_etal_2017_Table1,Exception: body mass in kg
+M,mass of the structure,,"Mass,kg",JardimMesseder_etal_2017_Table1,Exception: body mass in kg
+N,number of neurons,,"N,n",JardimMesseder_etal_2017_Table1,
+DN,neuronal density (in neurons/mg),,N/mg,JardimMesseder_etal_2017_Table1,
+O/N,ratio between numbers of other (non-neuronal) cells and neurons. ,,O/N,JardimMesseder_etal_2017_Table1,
+O,number of other (non-neuronal) cells,,"O,n",JardimMesseder_etal_2017_Table1,
+CXT,"whole cerebral cortex (gray matter, white matter and hippocampus)",CerebralCortex,,JardimMesseder_etal_2017_Table1,
+BD,body,Body,,JardimMesseder_etal_2017_Table1,Exception: body mass in kg

@@ -1,0 +1,16 @@
+Code,Definition,Structure,Measure,Reference
+Cx,"Cerebral cortex (including grey matter, white matter and hippocampus)",CerebralCortex,,DosSantos_etal_2020_Table1
+Cb,Cerebellum,Cerebellum,,DosSantos_etal_2020_Table1
+RoB,"Rest of brain (including pons, medulla oblongata, mesencephalon, diencephalon and striatum)",RoB,,DosSantos_etal_2020_Table1
+P+M,Pons and medulla oblongata,PonsMedulla,,DosSantos_etal_2020_Table1
+Ctx,"Cerebral cortex (grey and white matter, excluding hippocampus)",CerebralCortexNoHippocampus,,DosSantos_etal_2020_Table1
+Hp,Hippocampus,Hippocampus,,DosSantos_etal_2020_Table1
+Br,"whole brain (corresponding to the joint value of the respective Cx, Cb and RoB)",WholeBrain,,DosSantos_etal_2020_Table1
+C,Total number of cells in the structure,,"C,n",DosSantos_etal_2020_Table1
+N,Total number of neurons in the structure,,"N,n",DosSantos_etal_2020_Table1
+I,Total number of microglia in the structure,,"I,n",DosSantos_etal_2020_Table1
+N/mg,number of neuronal cells per milligram of structure,,N/mg,DosSantos_etal_2020_Table1
+I/mg,Number of microglia per milligram of structure,,I/mg,DosSantos_etal_2020_Table1
+I/N,Microglia/Neuron ratio,,I/N,DosSantos_etal_2020_Table1
+Structure mass (g),mass in grams,,"Mass,g",DosSantos_etal_2020_Table1
+No. of samples,number,,n,DosSantos_etal_2020_Table1

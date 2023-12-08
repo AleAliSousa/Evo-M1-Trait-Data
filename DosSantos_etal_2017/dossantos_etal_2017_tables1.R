@@ -76,27 +76,27 @@ for (row in 1:nrow(sheetfromtxt)) {
   }
 }
 
-## PART SIX: CORRECT AND SPELL OUT ABBREVIATIONS
-# Replace specific brain component endings at the end of a string with the corresponding strings prepended in the "_" column
-sheetfromtxt$"_" <- sub("^(.*)MES\\+D\\+S$", "mesencephalon+diencephalon+striatum_\\1", sheetfromtxt$"_") #this needs to be before D+S 
-sheetfromtxt$"_" <- sub("^(.*)BD$", "Body_\\1", sheetfromtxt$"_")
-sheetfromtxt$"_" <- sub("^(.*)BR$", "whole_brain_\\1", sheetfromtxt$"_")
-sheetfromtxt$"_" <- sub("^(.*)CX$", "Cerebral_Cortex_\\1", sheetfromtxt$"_")
-sheetfromtxt$"_" <- sub("^(.*)HP$", "Hippocampus_\\1", sheetfromtxt$"_")
-sheetfromtxt$"_" <- sub("^(.*)CB$", "Cerebellum_\\1", sheetfromtxt$"_")
-sheetfromtxt$"_" <- sub("^(.*)ROB$", "RoB_\\1", sheetfromtxt$"_")
-sheetfromtxt$"_" <- sub("^(.*)D\\+S$", "diencephalon+striatum_\\1", sheetfromtxt$"_")
-sheetfromtxt$"_" <- sub("^(.*)D\\s*\\+\\s*S$", "diencephalon+striatum_\\1", sheetfromtxt$"_") #change those with spacing errors as well
-sheetfromtxt$"_" <- sub("^(.*)D\\+S\\s*$", "diencephalon+striatum_\\1", sheetfromtxt$"_") #change those with spacing errors as well
-sheetfromtxt$"_" <- sub("^(.*)MES$", "mesencephalon_\\1", sheetfromtxt$"_")
-sheetfromtxt$"_" <- sub("^(.*)P\\+M$", "pons+medulla_\\1", sheetfromtxt$"_")
-sheetfromtxt$"_" <- sub("^(.*)OB$", "Olfactory_bulb_\\1", sheetfromtxt$"_")
-sheetfromtxt$"_" <- sub("^(.*)GM$", "Cerebral_Cortex_Grey_Matter_\\1", sheetfromtxt$"_")
-# Replace specific cellular composition part of strings in the "_" column
-sheetfromtxt$"_" <- sub("_M$", "_Mass_g", sheetfromtxt$"_") #Mass (g)
-sheetfromtxt$"_" <- sub("_N$", "_N_n", sheetfromtxt$"_") #number of neurons
-sheetfromtxt$"_" <- sub("_DN$", "_Nmg", sheetfromtxt$"_") #neuronal density (in neurons/mg)
-sheetfromtxt$"_" <- sub("_O/N$", "_ON", sheetfromtxt$"_") #O/N, ratio between numbers of other (non-neuronal) cells and neurons
+# ## PART SIX: CORRECT AND SPELL OUT ABBREVIATIONS
+# # Replace specific brain component endings at the end of a string with the corresponding strings prepended in the "_" column
+# sheetfromtxt$"_" <- sub("^(.*)MES\\+D\\+S$", "mesencephalon+diencephalon+striatum_\\1", sheetfromtxt$"_") #this needs to be before D+S 
+# sheetfromtxt$"_" <- sub("^(.*)BD$", "Body_\\1", sheetfromtxt$"_")
+# sheetfromtxt$"_" <- sub("^(.*)BR$", "whole_brain_\\1", sheetfromtxt$"_")
+# sheetfromtxt$"_" <- sub("^(.*)CX$", "Cerebral_Cortex_\\1", sheetfromtxt$"_")
+# sheetfromtxt$"_" <- sub("^(.*)HP$", "Hippocampus_\\1", sheetfromtxt$"_")
+# sheetfromtxt$"_" <- sub("^(.*)CB$", "Cerebellum_\\1", sheetfromtxt$"_")
+# sheetfromtxt$"_" <- sub("^(.*)ROB$", "RoB_\\1", sheetfromtxt$"_")
+# sheetfromtxt$"_" <- sub("^(.*)D\\+S$", "diencephalon+striatum_\\1", sheetfromtxt$"_")
+# sheetfromtxt$"_" <- sub("^(.*)D\\s*\\+\\s*S$", "diencephalon+striatum_\\1", sheetfromtxt$"_") #change those with spacing errors as well
+# sheetfromtxt$"_" <- sub("^(.*)D\\+S\\s*$", "diencephalon+striatum_\\1", sheetfromtxt$"_") #change those with spacing errors as well
+# sheetfromtxt$"_" <- sub("^(.*)MES$", "mesencephalon_\\1", sheetfromtxt$"_")
+# sheetfromtxt$"_" <- sub("^(.*)P\\+M$", "pons+medulla_\\1", sheetfromtxt$"_")
+# sheetfromtxt$"_" <- sub("^(.*)OB$", "Olfactory_bulb_\\1", sheetfromtxt$"_")
+# sheetfromtxt$"_" <- sub("^(.*)GM$", "Cerebral_Cortex_Grey_Matter_\\1", sheetfromtxt$"_")
+# # Replace specific cellular composition part of strings in the "_" column
+# sheetfromtxt$"_" <- sub("_M$", "_Mass_g", sheetfromtxt$"_") #Mass (g)
+# sheetfromtxt$"_" <- sub("_N$", "_N_n", sheetfromtxt$"_") #number of neurons
+# sheetfromtxt$"_" <- sub("_DN$", "_Nmg", sheetfromtxt$"_") #neuronal density (in neurons/mg)
+# sheetfromtxt$"_" <- sub("_O/N$", "_ON", sheetfromtxt$"_") #O/N, ratio between numbers of other (non-neuronal) cells and neurons
 
 ## PART SEVEN: TRANSPOSE AND SHIFT INTO PLACE
 # transpose the dataframe to a matrix
@@ -154,9 +154,7 @@ write.csv(sheetfromtxt, file = "~/Library/CloudStorage/OneDrive-AllenInstitute/S
 # Create a new dataframe with the desired structure
 new_dataframe <- data.frame(
   Original_Term = colnames(sheetfromtxt),  # Column headers from sheetfromtxt
-  Standardized_Term = rep("", ncol(sheetfromtxt)),  # Empty character column with the same number of rows as columns in sheetfromtxt
-  Reference = rep("DosSantos_etal_2017_TableS1", ncol(sheetfromtxt)),  # Reference column
-  Description = rep("", ncol(sheetfromtxt))  # Empty character column with the same number of rows as columns in sheetfromtxt
+  Reference = rep("DosSantos_etal_2017_TableS1", ncol(sheetfromtxt))  # Reference column
 )
 
 # Save the new dataframe to a CSV file

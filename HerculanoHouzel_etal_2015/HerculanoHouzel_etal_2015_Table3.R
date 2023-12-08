@@ -69,9 +69,7 @@ write.csv(tabledirectxl, file = "~/Library/CloudStorage/OneDrive-AllenInstitute/
 # Create a new dataframe with the desired structure
 new_dataframe <- data.frame(
   Original_Term = colnames(tabledirectxl),  # Column headers from tabledirectxl
-  Standardized_Term = rep("", ncol(tabledirectxl)),  # Empty character column with the same number of rows as columns in tabledirectxl
-  Reference = rep("HerculanoHouzel_etal_2015_Table3", ncol(tabledirectxl)),  # Reference column
-  Description = rep("", ncol(tabledirectxl))  # Empty character column with the same number of rows as columns in tabledirectxl
+  Reference = rep("HerculanoHouzel_etal_2015_Table3", ncol(tabledirectxl))  # Reference column
 )
 
 # Save the new dataframe to a CSV file

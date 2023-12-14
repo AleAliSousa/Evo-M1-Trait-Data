@@ -1,7 +1,9 @@
 #source
 setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/__merging")
 
-##MERGE TERM LISTS
+## Summary: This is for merging all variables in datasets from papers about cell counts into a list, and then matching them with Standardized terms, via so reference to the the old key.
+
+##MERGE TERM LISTS FROM HEADERS
 
 # Check the names of all files in the folder
 file_names <- list.files("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/__merging")
@@ -39,21 +41,13 @@ merged_terms <- rbind(
 
 ##COMPARE MERGED TERMS TO OLD KEY  
 
-# Read old key of terms
+## HerculanoHouzel_etal_2015 tables 1-5
+# Read old key of terms and merge pair. In old_key, "Original_Term" based on HerculanoHouzel_etal_2015.
 old_key <- read.csv("old_key.csv")
-
-# merge pair
 merged_terms_combined_key <- merge(merged_terms, old_key, by = "Original_Term", all = TRUE)
 
-# # Improve"Standardized_Term.x" column by moving data from "Standardized_Term.y" and deleting and renaming
-# Step 1: Write over "Standardized_Term.y" in place of "Standardized_Term.x"
-merged_terms_combined_key$Standardized_Term.x <- merged_terms_combined_key$Standardized_Term.y
-# Step 2: Delete old last column
-merged_terms_combined_key$Standardized_Term.y <- NULL
-# Step 3: Rename "Standardized_Term.x" to "Standardized_Term"
-colnames(merged_terms_combined_key)[colnames(merged_terms_combined_key) == "Standardized_Term.x"] <- "Standardized_Term"
-
-## Match JardimMessender2017_old to Original_Term from JardimMesseder_2017_key
+## JardimMesseder_etal_2017_Table1 
+# Match JardimMessender2017_old column to Original_Term, to capture rows from JardimMesseder_etal_2017_Table1 
 # Replace missing values in the Standardized_Term column with values from rows where Original_Term matches the JardimMessender2017_old column.
 # Loop through each row in the dataframe. If Standardized_Term is NA or empty, proceed.
 # Identify rows where JardimMessender2017_old matches the current row's Original_Term.
@@ -73,8 +67,17 @@ for (i in 1:(nrow(merged_terms_combined_key) - 1)) {
     }
   }
 }
+# Irregular case of Common Name
+merged_terms_combined_key$Standardized_Term <- ifelse(
+  merged_terms_combined_key$Original_Term %in% c("CommonName", "Common Name") & is.na(merged_terms_combined_key$Standardized_Term),
+  "CommonName",
+  merged_terms_combined_key$Standardized_Term
+)
 
-## Match DosSantos2017_old to Original_Term from dossantos_2017_key
+
+
+## DosSantos_etal_2017_TableS1
+# Match to DosSantos2017_old to Original_Term, to capture rows from DosSantos_etal_2017_TableS1
 # Replace missing values in the Standardized_Term column with values from rows where Original_Term matches the DosSantos2017_old column.
 # Loop through each row in the dataframe. If Standardized_Term is NA or empty, proceed.
 # Identify rows where DosSantos2017_old matches the current row's Original_Term.
@@ -94,20 +97,20 @@ for (i in 1:(nrow(merged_terms_combined_key) - 1)) {
   }
 }
 
-## Match Original_Term from HerculanoHouzel_2020* tables to Standardized_Term, and making list to update
-# Define the mapping rules
+## HerculanoHouzel_2020 tables 1-2
+# Match Original_Term from HerculanoHouzel_2020* tables to Standardized_Term (or provide new one if not available)
+# Define the mapping rules for existing terms and (if available) Standardized Terms. These are irregular so done one by one.
 term_mapping <- c("Clade" = "Clade",
                   "Family" = "Family",
-                  "MBODY, g" = "Body_Mass,g",
-                  "MBRAIN, g" = "WholeBrain_Mass,g",
-                  "Micro/mega" = "Micro/mega",
+                  "MBODY, g" = "Body_Mass.g",
+                  "MBRAIN, g" = "WholeBrain_Mass.g",
+                  "Micro/mega" = "Micro.or.mega",
                   "n" = "WholeBrain_n",
-                  "NBRAIN" = "WholeBrain_N,n",
-                  "Species" = "Species",
-                  "DN,Cb" = "Cerebellum_N/mg",
-                  "DN,CX" = "CerebralCortex_N/mg",
-                  "DN,RoB" = "RoB_N/mg",
-                  "Common Name" = "Common Name")
+                  "NBRAIN" = "WholeBrain_N.n",
+                  "DN,Cb" = "Cerebellum_N.p.mg",
+                  "DN,CX" = "CerebralCortex_N.p.mg",
+                  "DN,RoB" = "RoB_N.p.mg"
+                  )
 # Filter rows where Reference starts with "HerculanoHouzel_etal_2020"
 filtered_rows <- merged_terms_combined_key[grep("^HerculanoHouzel_etal_2020", merged_terms_combined_key$Reference), ]
 # Loop through rows and apply the mapping
@@ -119,17 +122,13 @@ for (i in 1:nrow(filtered_rows)) {
     filtered_rows$Standardized_Term[i] <- term_mapping[original_term]
   }
 }
-# Update the original dataframe with the modified rows
-merged_terms_combined_key[grep("^HerculanoHouzel_etal_2020", merged_terms_combined_key$Reference), ] <- filtered_rows
-
-## SORT OUT TAXONOMIC HEADERS
+merged_terms_combined_key[grep("^HerculanoHouzel_etal_2020", merged_terms_combined_key$Reference), ] <- filtered_rows # Update the original dataframe with the modified rows
 # Update Standardized_term to "Species" for rows where Original_term is "Species" or "Species name" and Standardized_term is NA
 merged_terms_combined_key$Standardized_Term <- ifelse(merged_terms_combined_key$Original_Term %in% c("Species", "Species name") & is.na(merged_terms_combined_key$Standardized_Term), "Species", merged_terms_combined_key$Standardized_Term)
-# Update Standardized_term to "CommonName" for rows where Original_term is "Common Name" and Standardized_term is NA
-merged_terms_combined_key$Standardized_Term <- ifelse(merged_terms_combined_key$Original_Term == "Common Name" & is.na(merged_terms_combined_key$Standardized_Term), "CommonName", merged_terms_combined_key$Standardized_Term)
 
 ## FILL OUT STRUCTURE_MEASURE FROM THE DEFINITIONS FILES THAT LIST THEM SEPARATELY
 
+## Kverkova_etal_2018 table S1,S5
 # Use stucture and measure list to match Kverkova_etal_2018
 Kverkova_etal_2018_definitions <- read.csv("Kverkova_etal_2018_definitions.csv")
 fillStandardizedTerm <- function(merged_terms_combined_key, Kverkova_etal_2018_definitions) {
@@ -142,22 +141,29 @@ fillStandardizedTerm <- function(merged_terms_combined_key, Kverkova_etal_2018_d
     strings <- strsplit(original_term, "_")[[1]]
     Structure_string <- strings[1]
     Measure_string <- strings[2]
+    SD_string <- strings[3]
     # Search for Structure_string in Kverkova_etal_2018_definitions$Code and copy corresponding "Structure" term
     structure_term <- Kverkova_etal_2018_definitions$Structure[Kverkova_etal_2018_definitions$Code == Structure_string]
     # Search for Measure_string in Kverkova_etal_2018_definitions$Code and copy corresponding "Measure" term
     measure_term <- Kverkova_etal_2018_definitions$Measure[Kverkova_etal_2018_definitions$Code == Measure_string]
+    # Search for Measure_string in Kverkova_etal_2018_definitions$Code and copy corresponding "SD" term
+    SD_term <- Kverkova_etal_2018_definitions$SD[Kverkova_etal_2018_definitions$Code == SD_string]
     # Combine Structure_string and Measure_string to form the Standardized_Term
-    standardized_term <- paste(structure_term, measure_term, sep="_")
+    standardized_term <- paste(structure_term, measure_term, SD_term[!is.na(SD_term)==T], sep="_")
+    # remove trailing underscores
+    standardized_term = sub("_$", "",standardized_term)
     # Update the merged_terms_combined$Standardized_Term with the newly formed term
     merged_terms_combined_key$Standardized_Term[i] <- standardized_term
   }
-  # Rename string1 and string2 columns
+   # Rename string1, string2 and string3 columns
   names(merged_terms_combined_key)[names(merged_terms_combined_key) == "Structure_string"] <- "Structure"
   names(merged_terms_combined_key)[names(merged_terms_combined_key) == "Measure_string"] <- "Measure"
+  names(merged_terms_combined_key)[names(merged_terms_combined_key) == "SD_string"] <- "SD"
   return(merged_terms_combined_key)
 }
 merged_terms_combined_key <- fillStandardizedTerm(merged_terms_combined_key, Kverkova_etal_2018_definitions)
 
+## DosSantos_etal_2020_Table1
 # Use stucture and measure list to match DosSantos_etal_2020 
 DosSantos_etal_2020_definitions <- read.csv("DosSantos_etal_2020_definitions.csv")
 fillStandardizedTerm <- function(merged_terms_combined_key, DosSantos_etal_2020_definitions) {
@@ -167,14 +173,14 @@ fillStandardizedTerm <- function(merged_terms_combined_key, DosSantos_etal_2020_
   for (i in which(rows_to_process)) {
     # Extract Original_Term and split into Structure_string and Measure_string
     original_term <- merged_terms_combined_key$Original_Term[i]
-    strings <- strsplit(original_term, "_")[[1]]
+    strings <- strsplit(original_term, "_")[[1]] #Get rid of trailing "_"
     Structure_string <- strings[1]
     Measure_string <- strings[2]
     # Search for Structure_string in DosSantos_etal_2020_definitions$Code and copy corresponding "Structure" term
     structure_term <- DosSantos_etal_2020_definitions$Structure[DosSantos_etal_2020_definitions$Code == Structure_string]
     # Search for Measure_string in DosSantos_etal_2020_definitions$Code and copy corresponding "Measure" term
     measure_term <- DosSantos_etal_2020_definitions$Measure[DosSantos_etal_2020_definitions$Code == Measure_string]
-    # Combine Structure_string and Measure_string to form the Standardized_Term
+    # Combine Structure_string and Measure_string to form the Standardized_Term 
     standardized_term <- paste(structure_term, measure_term, sep="_")
     # Update the merged_terms_combined$Standardized_Term with the newly formed term
     merged_terms_combined_key$Standardized_Term[i] <- standardized_term
@@ -187,6 +193,56 @@ fillStandardizedTerm <- function(merged_terms_combined_key, DosSantos_etal_2020_
 # Updated variable names
 merged_terms_combined_key <- fillStandardizedTerm(merged_terms_combined_key, DosSantos_etal_2020_definitions)
 
-# Save to a CSV file
-write.csv(merged_terms_combined_key, "merged_terms_combined_key.csv", row.names = FALSE)
+# Tidy up Standardized Term list
+# Delete unnecessary columns: Standard_old, DosSantos2017_old, JardimMessender2017_old
+standardized_term_cellcounts <- merged_terms_combined_key[, -which(names(merged_terms_combined_key) %in% c("Standard_old", "DosSantos2017_old", "JardimMessender2017_old"))]
+# Delete any rows where Reference is NA
+standardized_term_cellcounts <- standardized_term_cellcounts[complete.cases(standardized_term_cellcounts$Reference), ]
+# Sort rows, first by Reference and then by Original_Term
+library(dplyr)
+standardized_term_cellcounts <- standardized_term_cellcounts %>%
+  arrange(Reference, Original_Term)
 
+# CHECKS
+# The number of observations in dataframe X should match the number of observations where Reference is X in standardized_term_cellcounts   
+# List of dataframe names
+dataframe_names <- c(
+  "DosSantos_etal_2017_TableS1",
+  "DosSantos_etal_2020_Table1",
+  "HerculanoHouzel_etal_2015_Table1",
+  "HerculanoHouzel_etal_2015_Table2",
+  "HerculanoHouzel_etal_2015_Table3",
+  "HerculanoHouzel_etal_2015_Table4",
+  "HerculanoHouzel_etal_2015_Table5",
+  "HerculanoHouzel_etal_2020_Table1",
+  "HerculanoHouzel_etal_2020_Table2",
+  "JardimMesseder_etal_2017_Table1",
+  "Kverkova_etal_2018_TableS1",
+  "Kverkova_etal_2018_TableS5"
+)
+# Check for each dataframe
+for (df_name in dataframe_names) {
+  df <- get(df_name)  # Assuming the dataframes are in the global environment
+  if (nrow(df) == sum(standardized_term_cellcounts$Reference == df_name)) {
+    cat("The number of observations in", df_name, "matches the number of observations in standardized_term_cellcounts with the same name in Reference.\n")
+  } else {
+    cat("The number of observations in", df_name, "DOES NOT match the number of observations in standardized_term_cellcounts with the same name in Reference.\n")
+  }
+}
+
+# Check for consistency between Original_Term and Standardized_Term. If no inconsistencies are found, the code will not print anything. 
+reference_groups2 <- split(standardized_term_cellcounts, standardized_term_cellcounts$Reference)
+for (group in reference_groups2) {
+  for (col_name in c("Original_Term", "Standardized_Term")) {
+    if (any(duplicated(group$Original_Term) & duplicated(group$Standardized_Term) | 
+            duplicated(group$Original_Term, fromLast = TRUE) & duplicated(group$Standardized_Term, fromLast = TRUE))) {
+      cat("Inconsistent values in group with Reference:", group$Reference[1], "for column:", col_name, "\n")
+      cat("Original_Term values:", toString(group$Original_Term), "\n")
+      cat("Standardized_Term values:", toString(group$Standardized_Term), "\n\n")
+    }
+  }
+}
+
+
+# Save to a CSV file
+write.csv(standardized_term_cellcounts, "standardized_term_cellcounts.csv", row.names = FALSE)

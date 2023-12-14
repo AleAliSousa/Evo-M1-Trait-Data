@@ -1,18 +1,19 @@
 #source
 setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/__merging")
 
-## COMBINE PARTS INTO OLD KEY
-# This is for comparing old KEY files found in "Do expensive brain ..." hand edited into term lists
-# Read all CSVs
-DosSantos_2017_key <- read.csv("DosSantos_2017_key.csv", stringsAsFactors = FALSE)
-HerculanoHouzel_2015_key <- read.csv("HerculanoHouzel_2015_key.csv", stringsAsFactors = FALSE)
-JardimMesseder_2017_key <- read.csv("JardimMesseder_2017_key.csv", stringsAsFactors = FALSE)
+## Summary: This is for merging, comparing, and summarizing old KEY files found in "Do expensive brain ..." that were hand-compiled into term lists
+# typo in old_HerculanoHouzel_2015_key Struct.Descrip_old "\\*neurol\\*", "\\*neuronal\\*"  was done by hand first
 
-# # Alter typo HerculanoHouzel_2015_key Struct.Descrip_old "\\*neurol\\*", "\\*neuronal\\*"  (was done by hand instead)
+## COMBINE PARTS INTO OLD KEY
+
+# Read all CSVs
+old_DosSantos_2017_key <- read.csv("old_DosSantos_2017_key.csv", stringsAsFactors = FALSE)
+old_HerculanoHouzel_2015_key <- read.csv("old_HerculanoHouzel_2015_key.csv", stringsAsFactors = FALSE)
+old_JardimMesseder_2017_key <- read.csv("old_JardimMesseder_2017_key.csv", stringsAsFactors = FALSE)
 
 # merge in pairs
-DosSantos_2017_HerculanoHouzel_2015_key <- merge(DosSantos_2017_key, HerculanoHouzel_2015_key, all = TRUE)
-old_key <- merge(DosSantos_2017_HerculanoHouzel_2015_key, JardimMesseder_2017_key, all = TRUE)
+old_DosSantos_2017_HerculanoHouzel_2015_key <- merge(old_DosSantos_2017_key, old_HerculanoHouzel_2015_key, all = TRUE)
+old_key <- merge(old_DosSantos_2017_HerculanoHouzel_2015_key, old_JardimMesseder_2017_key, all = TRUE)
 
 # Remove the unnecessary "X_" column
 old_key$X_ <- NULL
@@ -64,6 +65,7 @@ old_key$Standard_old_edit <- gsub("_", " ", old_key$Standard_old_edit)
 colnames(old_key)[colnames(old_key) == "Standard_old_edit"] <- "Original_Term"
 ##HERE1_End
 
+# CREATE Standardized_Term using underscore as a separator and avoiding problematic symbols
 # Standard_old -> Standardized_Term
 ## Make a new version which is better for Standardized_Term
 # Duplicate column to edit
@@ -73,14 +75,27 @@ old_key$Standardized_Term <- old_key$Standard_old
 old_key$Standardized_Term <- gsub("CerebralCortexGreyMatter", "CerebralCortexGrey", old_key$Standardized_Term)
 
 # Replace measurements
-old_key$Standardized_Term <- gsub("O_n", "O,n", old_key$Standardized_Term)
-old_key$Standardized_Term <- gsub("N_n", "N,n", old_key$Standardized_Term)
-old_key$Standardized_Term <- gsub("Omg", "O/mg", old_key$Standardized_Term)
-old_key$Standardized_Term <- gsub("Nmg", "N/mg", old_key$Standardized_Term)
-old_key$Standardized_Term <- gsub("ON", "O/N", old_key$Standardized_Term)
-old_key$Standardized_Term <- gsub("Mass_g", "Mass,g", old_key$Standardized_Term)
-old_key$Standardized_Term <- gsub("Mass_kg", "Mass,kg", old_key$Standardized_Term)
-old_key$Standardized_Term <- gsub("percent_Neurons", "%Neurons", old_key$Standardized_Term)
+old_key$Standardized_Term <- gsub("O_n", "O.n", old_key$Standardized_Term)
+old_key$Standardized_Term <- gsub("N_n", "N.n", old_key$Standardized_Term)
+old_key$Standardized_Term <- gsub("Omg", "O.p.mg", old_key$Standardized_Term)
+old_key$Standardized_Term <- gsub("Nmg", "N.p.mg", old_key$Standardized_Term)
+old_key$Standardized_Term <- gsub("ON", "O.p.N", old_key$Standardized_Term)
+old_key$Standardized_Term <- gsub("Mass_g", "Mass.g", old_key$Standardized_Term)
+old_key$Standardized_Term <- gsub("Mass_kg", "Mass.kg", old_key$Standardized_Term)
+old_key$Standardized_Term <- gsub("percent_Neurons", "p.C.N", old_key$Standardized_Term)
+
+# Identify duplicates in each column
+duplicates <- apply(old_key, 2, function(x) any(duplicated(x) | duplicated(x, fromLast = TRUE)))
+# Print columns with duplicates along with the duplicated values
+for (col_name in names(duplicates[duplicates])) {
+  duplicated_values <- old_key[duplicated(old_key[[col_name]]) | duplicated(old_key[[col_name]], fromLast = TRUE), col_name]
+  cat("Column:", col_name, "\n")
+  cat("Duplicated Values:", toString(duplicated_values), "\n\n")
+}
+# These are all due to empty cells with "" or "NA" so do not cause conflicts
 
 # Save to a CSV file
 write.csv(old_key, "old_key.csv", row.names = FALSE)
+
+
+

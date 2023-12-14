@@ -70,7 +70,7 @@ print(colnames(df5))
 df5[, -1] <- df5[, -1] * 10^6
 
 # Drop ", x 10ˆ6" from all column names
-colnames(df5) <- gsub(", x 10ˆ6", "_N,n", colnames(df5), fixed = TRUE)
+colnames(df5) <- gsub(", x 10ˆ6", "_N.n", colnames(df5), fixed = TRUE)
 
 ## 5. SAVE
 

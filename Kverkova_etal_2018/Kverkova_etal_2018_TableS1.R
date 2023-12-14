@@ -34,7 +34,7 @@ matrix1[25, ] <- trimws(matrix1[25, ])
 # Insert 'type' column to the right of the first column, and keep the remaining columns.
 matrix1 <- cbind(
   matrix1[, 1],  # Keep the first column
-  type = ifelse(is.na(matrix1[, 2]) | matrix1[, 2] == "", "_FractionofBrain", ""),  # Create 'type' column
+  type = ifelse(is.na(matrix1[, 2]) | matrix1[, 2] == "", "_p.C.Brain", ""),  # Create 'type' column
   matrix1[, -c(1)]  # Keep the remaining columns
 )
 
@@ -107,14 +107,14 @@ cols_to_split <- c(
 )
 # Give measurement details based on Table note. Elsewhere in Supplement it is indicated that Body mass is in (g)
 new_col_names <- c(
-  "Body_Mass,g", "Body_Mass,g_SD", "Brain_Mass,g", "Brain_Mass,g_SD",
-  "Olfactory bulbs_Vol,mm3", "Olfactory bulbs_Vol,mm3_SD", "Olfactory cortices_Vol,mm3", "Olfactory cortices_Vol,mm3_SD",
-  "Neocortex_Vol,mm3", "Neocortex_Vol,mm3_SD", "Entorhinal cortex_Vol,mm3", "Entorhinal cortex_Vol,mm3_SD",
-  "Hippocampus_Vol,mm3", "Hippocampus_Vol,mm3_SD", "Amygdala_Vol,mm3", "Amygdala_Vol,mm3_SD",
-  "Striatum_Vol,mm3", "Striatum_Vol,mm3_SD", "Septum_Vol,mm3", "Septum_Vol,mm3_SD",
-  "Thalamus_Vol,mm3", "Thalamus_Vol,mm3_SD", "Hypothalamus_Vol,mm3", "Hypothalamus_Vol,mm3_SD",
-  "Cerebellum_Vol,mm3", "Cerebellum_Vol,mm3_SD", "Tectum_Vol,mm3", "Tectum_Vol,mm3_SD",
-  "Tegmentum_Vol,mm3", "Tegmentum_Vol,mm3_SD", "Medulla oblongata_Vol,mm3", "Medulla  oblongata_Vol,mm3_SD"
+  "Body_Mass.g", "Body_Mass.g_SD", "Brain_Mass.g", "Brain_Mass.g_SD",
+  "Olfactory bulbs_Vol.mm3", "Olfactory bulbs_Vol.mm3_SD", "Olfactory cortices_Vol.mm3", "Olfactory cortices_Vol.mm3_SD",
+  "Neocortex_Vol.mm3", "Neocortex_Vol.mm3_SD", "Entorhinal cortex_Vol.mm3", "Entorhinal cortex_Vol.mm3_SD",
+  "Hippocampus_Vol.mm3", "Hippocampus_Vol.mm3_SD", "Amygdala_Vol.mm3", "Amygdala_Vol.mm3_SD",
+  "Striatum_Vol.mm3", "Striatum_Vol.mm3_SD", "Septum_Vol.mm3", "Septum_Vol.mm3_SD",
+  "Thalamus_Vol.mm3", "Thalamus_Vol.mm3_SD", "Hypothalamus_Vol.mm3", "Hypothalamus_Vol.mm3_SD",
+  "Cerebellum_Vol.mm3", "Cerebellum_Vol.mm3_SD", "Tectum_Vol.mm3", "Tectum_Vol.mm3_SD",
+  "Tegmentum_Vol.mm3", "Tegmentum_Vol.mm3_SD", "Medulla oblongata_Vol.mm3", "Medulla oblongata_Vol.mm3_SD"
 )
 
 # Loop through the columns and split each one

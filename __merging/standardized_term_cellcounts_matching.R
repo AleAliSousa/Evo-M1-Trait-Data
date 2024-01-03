@@ -23,6 +23,9 @@ JardimMesseder_etal_2017_Table1 <- read.csv("JardimMesseder_etal_2017_Table1_ter
 Kverkova_etal_2018_TableS1 <- read.csv("Kverkova_etal_2018_TableS1_terms.csv", stringsAsFactors = FALSE)
 Kverkova_etal_2018_TableS5 <- read.csv("Kverkova_etal_2018_TableS5_terms.csv", stringsAsFactors = FALSE)
 
+# Read header row from all the relevant csv or tsv files
+# csv version
+
 # Merge all terms into one dataframe
 merged_terms <- rbind(
   DosSantos_etal_2017_TableS1,

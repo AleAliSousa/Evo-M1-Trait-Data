@@ -21,6 +21,9 @@ JardimMesseder_etal_2017_Table1 <- read.csv("~/Library/CloudStorage/OneDrive-All
 Kverkova_etal_2018_TableS1 <- read.csv("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/Kverkova_etal_2018/Kverkova_etal_2018_TableS1.csv", stringsAsFactors = FALSE, check.names=FALSE)
 Kverkova_etal_2018_TableS5 <- read.csv("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/Kverkova_etal_2018/Kverkova_etal_2018_TableS5.csv", stringsAsFactors = FALSE, check.names=FALSE)
 
+setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/__merging/cellcountsanalyses")
+df_names <- dir(pattern = "csv$")
+
 ## Change to standardized term for all variables in those dfs
 
 # Read standardized terms
@@ -28,7 +31,6 @@ standardized_term_cellcounts <- read.csv("standardized_term_cellcounts.csv", che
 
 # List of data frame names
 df_names <- c(
-  "DosSantos_etal_2017_TableS1",
   "DosSantos_etal_2017_TableS1",
   "DosSantos_etal_2020_Table1",
   "HerculanoHouzel_etal_2015_Table1",
@@ -45,17 +47,17 @@ df_names <- c(
 
 # Loop through each data frame
 for (df_name in df_names) {
-  indices <- match(colnames(df_name), standardized_term_cellcounts$Original_Term[standardized_term_cellcounts$Reference == df_name])
-  colnames(df_name) <- (standardized_term_cellcounts$Standardized_Term[standardized_term_cellcounts$Reference == df_name])[indices]
+  df <- get(df_name)
+  indices <- match(colnames(df), standardized_term_cellcounts$Original_Term[standardized_term_cellcounts$Reference == df_name])
+  colnames(df) = (standardized_term_cellcounts$Standardized_Term[standardized_term_cellcounts$Reference == df_name])[indices]
+  assign(df_name, df)
 }
 
-
-
-m = match (colnames(DosSantos_etal_2017_TableS1), standardized_term_cellcounts$Original_Term[standardized_term_cellcounts$Reference == "DosSantos_etal_2017_TableS1"])
-colnames(DosSantos_etal_2017_TableS1) = standardized_term_cellcounts$Standardized_Term[m]
-
-m = match (colnames(DosSantos_etal_2020_Table1), standardized_term_cellcounts$Original_Term[standardized_term_cellcounts$Reference == "DosSantos_etal_2020_Table1"])
-colnames(DosSantos_etal_2020_Table1) = (standardized_term_cellcounts$Standardized_Term[standardized_term_cellcounts$Reference == "DosSantos_etal_2020_Table1"])[m]
+# # one at a time alternative
+# m = match (colnames(DosSantos_etal_2017_TableS1), standardized_term_cellcounts$Original_Term[standardized_term_cellcounts$Reference == "DosSantos_etal_2017_TableS1"])
+# colnames(DosSantos_etal_2017_TableS1) = (standardized_term_cellcounts$Standardized_Term[standardized_term_cellcounts$Reference == "DosSantos_etal_2017_TableS1"])[m]
+# m = match (colnames(DosSantos_etal_2020_Table1), standardized_term_cellcounts$Original_Term[standardized_term_cellcounts$Reference == "DosSantos_etal_2020_Table1"])
+# colnames(DosSantos_etal_2020_Table1) = (standardized_term_cellcounts$Standardized_Term[standardized_term_cellcounts$Reference == "DosSantos_etal_2020_Table1"])[m]
 
 # 2. Compile total of all datasets on cellular composition
 # 2Qa. What data should be included/excluded when doing an imputation?

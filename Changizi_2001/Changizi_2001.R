@@ -1,5 +1,5 @@
 # 1. Data comes from Fig 3 caption and was not tabulated, so a table was created, Changizi_2001_fig3.csv
-setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/Changizi_2001")
+setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Changizi_2001")
 
 # open file and read last two columns as numeric
 figdata <- read.csv("Changizi_2001_fig3_primary_or_equivalent.csv", check.names = FALSE)

@@ -1,5 +1,5 @@
 # Set Working Directory. Store with the spreadsheet.
-setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/__merging/")
+setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging/")
 
 # Working with cell counts data (
 # 1. Create a regression of whole brain cell count on body size for all species 
@@ -8,20 +8,20 @@ setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/
 # 1c. Compile and view. Then, check which species are there.
 
 # Read the relevant database files. Do not check names because some of the characters are not accepted by R.
-DosSantos_etal_2017_TableS1 <- read.csv("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/DosSantos_etal_2017/DosSantos_etal_2017_TableS1.csv", stringsAsFactors = FALSE, check.names=FALSE)
-DosSantos_etal_2020_Table1 <- read.csv("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/DosSantos_etal_2020/DosSantos_etal_2020_Table1.csv", stringsAsFactors = FALSE, check.names=FALSE)
-HerculanoHouzel_etal_2015_Table1 <- read.csv("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/HerculanoHouzel_etal_2015/HerculanoHouzel_etal_2015_Table1.csv", stringsAsFactors = FALSE, check.names=FALSE)
-HerculanoHouzel_etal_2015_Table2 <- read.csv("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/HerculanoHouzel_etal_2015/HerculanoHouzel_etal_2015_Table2.csv", stringsAsFactors = FALSE, check.names=FALSE)
-HerculanoHouzel_etal_2015_Table3 <- read.csv("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/HerculanoHouzel_etal_2015/HerculanoHouzel_etal_2015_Table3.csv", stringsAsFactors = FALSE, check.names=FALSE)
-HerculanoHouzel_etal_2015_Table4 <- read.csv("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/HerculanoHouzel_etal_2015/HerculanoHouzel_etal_2015_Table4.csv", stringsAsFactors = FALSE, check.names=FALSE)
-HerculanoHouzel_etal_2015_Table5 <- read.csv("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/HerculanoHouzel_etal_2015/HerculanoHouzel_etal_2015_Table5.csv", stringsAsFactors = FALSE, check.names=FALSE)
-HerculanoHouzel_etal_2020_Table1 <- read.csv("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/HerculanoHouzel_etal_2020/HerculanoHouzel_etal_2020_Table1.csv", stringsAsFactors = FALSE, check.names=FALSE)
-HerculanoHouzel_etal_2020_Table2 <- read.csv("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/HerculanoHouzel_etal_2020/HerculanoHouzel_etal_2020_Table2.csv", stringsAsFactors = FALSE, check.names=FALSE)
-JardimMesseder_etal_2017_Table1 <- read.csv("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/JardimMesseder_etal_2017/JardimMesseder_etal_2017_Table1.csv", stringsAsFactors = FALSE, check.names=FALSE)
-Kverkova_etal_2018_TableS1 <- read.csv("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/Kverkova_etal_2018/Kverkova_etal_2018_TableS1.csv", stringsAsFactors = FALSE, check.names=FALSE)
-Kverkova_etal_2018_TableS5 <- read.csv("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/Kverkova_etal_2018/Kverkova_etal_2018_TableS5.csv", stringsAsFactors = FALSE, check.names=FALSE)
+DosSantos_etal_2017_TableS1 <- read.csv("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/DosSantos_etal_2017/DosSantos_etal_2017_TableS1.csv", stringsAsFactors = FALSE, check.names=FALSE)
+DosSantos_etal_2020_Table1 <- read.csv("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/DosSantos_etal_2020/DosSantos_etal_2020_Table1.csv", stringsAsFactors = FALSE, check.names=FALSE)
+HerculanoHouzel_etal_2015_Table1 <- read.csv("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel_etal_2015/HerculanoHouzel_etal_2015_Table1.csv", stringsAsFactors = FALSE, check.names=FALSE)
+HerculanoHouzel_etal_2015_Table2 <- read.csv("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel_etal_2015/HerculanoHouzel_etal_2015_Table2.csv", stringsAsFactors = FALSE, check.names=FALSE)
+HerculanoHouzel_etal_2015_Table3 <- read.csv("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel_etal_2015/HerculanoHouzel_etal_2015_Table3.csv", stringsAsFactors = FALSE, check.names=FALSE)
+HerculanoHouzel_etal_2015_Table4 <- read.csv("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel_etal_2015/HerculanoHouzel_etal_2015_Table4.csv", stringsAsFactors = FALSE, check.names=FALSE)
+HerculanoHouzel_etal_2015_Table5 <- read.csv("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel_etal_2015/HerculanoHouzel_etal_2015_Table5.csv", stringsAsFactors = FALSE, check.names=FALSE)
+HerculanoHouzel_etal_2020_Table1 <- read.csv("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel_etal_2020/HerculanoHouzel_etal_2020_Table1.csv", stringsAsFactors = FALSE, check.names=FALSE)
+HerculanoHouzel_etal_2020_Table2 <- read.csv("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel_etal_2020/HerculanoHouzel_etal_2020_Table2.csv", stringsAsFactors = FALSE, check.names=FALSE)
+JardimMesseder_etal_2017_Table1 <- read.csv("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/JardimMesseder_etal_2017/JardimMesseder_etal_2017_Table1.csv", stringsAsFactors = FALSE, check.names=FALSE)
+Kverkova_etal_2018_TableS1 <- read.csv("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kverkova_etal_2018/Kverkova_etal_2018_TableS1.csv", stringsAsFactors = FALSE, check.names=FALSE)
+Kverkova_etal_2018_TableS5 <- read.csv("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kverkova_etal_2018/Kverkova_etal_2018_TableS5.csv", stringsAsFactors = FALSE, check.names=FALSE)
 
-setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/__merging/cellcountsanalyses")
+setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging/cellcountsanalyses")
 df_names <- dir(pattern = "csv$")
 
 ## Change to standardized term for all variables in those dfs

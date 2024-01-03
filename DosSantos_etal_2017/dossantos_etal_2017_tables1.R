@@ -8,7 +8,7 @@
 
 ## READ FILE
 # Set Working Directory. Store with the spreadsheet.
-setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/DosSantos_etal_2017")
+setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/DosSantos_etal_2017")
 
 #Load readr
 library(readr)
@@ -147,7 +147,7 @@ sheetfromtxt <- sheetfromtxt[!sheetfromtxt$Species == "Δ", ]
 write.csv(sheetfromtxt, file = "DosSantos_etal_2017_TableS1.csv", row.names = FALSE)
 
 ## Save TSV with DOI file name in Online Database Folder
-write.csv(sheetfromtxt, file = "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/__Public/comparative-data/10.1159%2000452856_TableS1.tsv", row.names = FALSE)
+write.csv(sheetfromtxt, file = "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__Public/comparative-data/10.1159%2F000452856_TableS1.tsv", row.names = FALSE)
 
 ## Export colnames to merge terms
 # Assuming sheetfromtxt is your existing dataframe
@@ -158,7 +158,7 @@ new_dataframe <- data.frame(
 )
 
 # Save the new dataframe to a CSV file
-file_path <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/__merging/DosSantos_etal_2017_TableS1_terms.csv"
+file_path <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging/DosSantos_etal_2017_TableS1_terms.csv"
 write.csv(new_dataframe, file_path, row.names = FALSE)
 
 # Print the new dataframe

@@ -1,5 +1,5 @@
 ## 1. SOURCE
-setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/JardimMesseder_etal_2017")
+setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/JardimMesseder_etal_2017")
 
 # Table 1
 # Open pdf in Adobe Acrobat
@@ -122,7 +122,7 @@ colnames(tabledirectxl) <- gsub("\\.\\.(g|kg)", ".\\1", colnames(tabledirectxl))
 write.csv(tabledirectxl, file = "JardimMesseder_etal_2017_Table1.csv", row.names = FALSE)
 
 # Save the dataframe to a TSV file for online database
-write.csv(tabledirectxl, file = "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/__Public/comparative-data/10.3389%2Ffnana.2017.00118_Table1.tsv", row.names = FALSE)
+write.csv(tabledirectxl, file = "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__Public/comparative-data/10.3389%2Ffnana.2017.00118_Table1.tsv", row.names = FALSE)
 
 ## Export colnames to merge terms
 # Edit for your existing DATAFRAME and TABLE
@@ -133,7 +133,7 @@ new_dataframe <- data.frame(
 )
 
 # Save the new dataframe to a CSV file
-file_path <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/__merging/JardimMesseder_etal_2017_Table1_terms.csv"
+file_path <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging/JardimMesseder_etal_2017_Table1_terms.csv"
 write.csv(new_dataframe, file_path, row.names = FALSE)
 
 # Print the new dataframe

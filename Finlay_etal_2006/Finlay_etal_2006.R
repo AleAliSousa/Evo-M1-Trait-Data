@@ -1,5 +1,5 @@
 ## 1. Read direct from xl
-setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/Finlay_etal_2006")
+setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Finlay_etal_2006")
 
 library(readxl)
 tablefromxl <- read_excel("Finlay_etal_2006_primary_or_equivalent.xlsx", col_types = c("text", "text", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric"))

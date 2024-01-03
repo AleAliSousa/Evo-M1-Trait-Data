@@ -1,5 +1,5 @@
 ## 1. SOURCE
-setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/HerculanoHouzel_etal_2020")
+setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel_etal_2020")
 
 # Load the tabulizer library and rJava
 library(rJava)
@@ -7,7 +7,7 @@ library(tabulizer)
 library(tabulizerjars)
 
 # Define the PDF file path
-pdf_file <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/HerculanoHouzel_etal_2020/Herculano-Houze-2020-Microchiropterans have a.pdf"
+pdf_file <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel_etal_2020/Herculano-Houze-2020-Microchiropterans have a.pdf"
 # Use extract_tables to get all tables on the specified page
 tables1 <- extract_tables(pdf_file,pages = c(3))
 
@@ -61,7 +61,7 @@ df1[, columns_to_convert] <- lapply(df1[, columns_to_convert], as.numeric)
 write.csv(df1, file = "HerculanoHouzel_etal_2020_Table1.csv", row.names = FALSE)
 
 # Save the data frame to a TSV file for online database
-write.csv(df1, file = "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/__Public/comparative-data/10.1002%2Fcne.24985_Table1.tsv", row.names = FALSE)
+write.csv(df1, file = "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__Public/comparative-data/10.1002%2Fcne.24985_Table1.tsv", row.names = FALSE)
 
 ## Export colnames to merge terms
 # Edit for your existing DATAFRAME and TABLE
@@ -72,7 +72,7 @@ new_dataframe <- data.frame(
 )
 
 # Save the new dataframe to a CSV file
-file_path <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/__merging/HerculanoHouzel_etal_2020_Table1_terms.csv"
+file_path <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging/HerculanoHouzel_etal_2020_Table1_terms.csv"
 write.csv(new_dataframe, file_path, row.names = FALSE)
 
 # Print the new dataframe

@@ -1,4 +1,4 @@
-setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/Heffner_Masterton_1975")
+setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heffner_Masterton_1975")
 
 ## 1. Read from xl
 library(readxl)

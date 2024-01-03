@@ -1,5 +1,5 @@
 ## 1. SOURCE
-setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/Kverkova_etal_2018")
+setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kverkova_etal_2018")
 
 # Copy a Word table into Excel 
 # In Word document, select the rows and columns of the table to copy to an Excel worksheet. 
@@ -142,7 +142,7 @@ df1_combined$Species[df1_combined$Species == "Heliophobius argent."] <- "Helioph
 write.csv(df1_combined, file = "Kverkova_etal_2018_TableS1.csv", row.names = FALSE)
 
 # Save the dataframe to a TSV file for online database
-write.csv(df1_combined, file = "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/__Public/comparative-data/10.1038%2Fs41598-018-26062-8_TableS1.tsv", row.names = FALSE)
+write.csv(df1_combined, file = "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__Public/comparative-data/10.1038%2Fs41598-018-26062-8_TableS1.tsv", row.names = FALSE)
 
 ## Export colnames to merge terms
 # Edit for your existing DATAFRAME and TABLE
@@ -153,7 +153,7 @@ new_dataframe <- data.frame(
 )
 
 # Save the new dataframe to a CSV file
-file_path <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/__merging/Kverkova_etal_2018_TableS1_terms.csv"
+file_path <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging/Kverkova_etal_2018_TableS1_terms.csv"
 write.csv(new_dataframe, file_path, row.names = FALSE)
 
 # Print the new dataframe

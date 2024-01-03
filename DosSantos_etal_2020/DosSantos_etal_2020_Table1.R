@@ -1,5 +1,5 @@
 ## 1. SOURCE
-setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/DosSantos_etal_2020")
+setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/DosSantos_etal_2020")
 
 # Load the tabulizer library and rJava
 library(rJava)
@@ -106,7 +106,7 @@ result_df <- combined_df %>%
 write.csv(result_df, file = "DosSantos_etal_2020_Table1.csv", row.names = FALSE)
 
 # Save the data frame to a TSV file for online database
-write.csv(result_df, file = "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/__Public/comparative-data/10.1523%2FJNEUROSCI.2339-19.2020%0A_table1.tsv", row.names = FALSE)
+write.csv(result_df, file = "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__Public/comparative-data/10.1523%2FJNEUROSCI.2339-19.2020%0A_table1.tsv", row.names = FALSE)
 
 ## Export colnames to merge terms
 # Edit for your existing DATAFRAME and TABLE
@@ -117,7 +117,7 @@ new_dataframe <- data.frame(
 )
 
 # Save the new dataframe to a CSV file
-file_path <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/__merging/DosSantos_etal_2020_Table1_terms.csv"
+file_path <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging/DosSantos_etal_2020_Table1_terms.csv"
 write.csv(new_dataframe, file_path, row.names = FALSE)
 
 # Print the new dataframe

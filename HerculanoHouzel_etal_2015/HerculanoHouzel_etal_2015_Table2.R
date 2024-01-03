@@ -1,5 +1,5 @@
 ## 1. SOURCE
-setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/HerculanoHouzel_etal_2015")
+setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel_etal_2015")
 
 # Table 2
 ## 1. Read direct from xl
@@ -62,7 +62,7 @@ colnames(tabledirectxl)[match(columns_to_rename, colnames(tabledirectxl))] <- pa
 write.csv(tabledirectxl, file = "HerculanoHouzel_etal_2015_Table2.csv", row.names = FALSE)
 
 # Save the data frame to a TSV file for online database
-write.csv(tabledirectxl, file = "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/__Public/comparative-data/10.1159%2F000437413_Table2.tsv", row.names = FALSE)
+write.csv(tabledirectxl, file = "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__Public/comparative-data/10.1159%2F000437413_Table2.tsv", row.names = FALSE)
 
 ## Export colnames to merge terms
 # Edit for your existing DATAFRAME and TABLE
@@ -73,7 +73,7 @@ new_dataframe <- data.frame(
 )
 
 # Save the new dataframe to a CSV file
-file_path <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/__merging/HerculanoHouzel_etal_2015_Table2_terms.csv"
+file_path <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging/HerculanoHouzel_etal_2015_Table2_terms.csv"
 write.csv(new_dataframe, file_path, row.names = FALSE)
 
 # Print the new dataframe

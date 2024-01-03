@@ -1,6 +1,6 @@
 # Table I (across several pages of pdf)
 
-setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/Heffner_Masterton_1975")
+setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heffner_Masterton_1975")
 
 # This extracts most of the table, but the Loxodota africana row at the end is missing!
 # Load the tabulizer library and rJava

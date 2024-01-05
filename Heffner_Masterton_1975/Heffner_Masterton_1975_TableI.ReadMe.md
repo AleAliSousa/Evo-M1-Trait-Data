@@ -4,11 +4,11 @@ pdf (paywall)
 
 Table I is over several pages
 
---> Primary or Equivalent
+--> Snapshot
 
 Manually entered data (with some coping and pasting of particular parts)
 
-Heffner_Masterton_1975_TableI_primary_or_equivalent.xlsx
+Heffner_Masterton_1975_TableI_snapshot.xlsx
 
 --> Data readable   
 
@@ -22,4 +22,4 @@ Heffner_Masterton_1975_TableI.csv <-- USE THIS
 
 Added TSV copy named with DOI to https://github.com/r03ert0/comparative-data
 
-10.1159%2F000124401_tableI.tsv <-- ONLINE COPY
+10.1159%2F000124401_TableI.tsv <-- ONLINE COPY

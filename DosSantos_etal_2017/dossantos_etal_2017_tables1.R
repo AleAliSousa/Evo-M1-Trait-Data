@@ -18,7 +18,7 @@ sheetfromtxt <- read_delim("452856_sm10.txt",
                             trim_ws = TRUE, skip = 1)
 View(sheetfromtxt)
 
-## PART ONE: FIX FORMATTING ERROR TO ALIGN CELLS AND SAVE PRIMARY EQUIVALANT
+## PART ONE: FIX FORMATTING ERROR TO ALIGN CELLS AND SAVE SNAPSHOT
 # Delete 2 empty columns by column names #left one name since there will be shifting and hard to work with nameless column
 sheetfromtxt <- sheetfromtxt[, !colnames(sheetfromtxt) %in% c("?", "...15")]
 # Align column headers / Remove unwanted extra column header. Takes names from columns 1-7, adds next to them names from columns 9-last. Assigns new names to original df
@@ -30,8 +30,8 @@ colnames(sheetfromtxt)[colnames(sheetfromtxt) == "...1"] ="_"
 colnames(sheetfromtxt)[colnames(sheetfromtxt) == "...13"] ="Δ"
 # rename string in column names
 colnames(sheetfromtxt) = gsub("\\b..\\b", ". ", colnames(sheetfromtxt))
-# Save it as primary_or_equivalent
-write.csv(sheetfromtxt, file = "DosSantos_etal_2017_TableS1_primary_or_equivalent.csv", row.names = FALSE)
+# Save it as snapshot
+write.csv(sheetfromtxt, file = "DosSantos_etal_2017_TableS1_snapshot.csv", row.names = FALSE)
 
 
 ## PART TWO: CORRECT ERRATUM

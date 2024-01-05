@@ -2,7 +2,7 @@ setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/
 
 ## 1. Read from xl
 library(readxl)
-tabledirectxl <- read_excel("Heffner_Masterton_1975_TableI_primary_or_equivalent.xlsx")
+tabledirectxl <- read_excel("Heffner_Masterton_1975_TableI_snapshot.xlsx")
 
 ## 2. Make column headings readable
 
@@ -68,12 +68,23 @@ merged_df <- merged_df[!is.na(merged_df$Animal), ]
 # Set the scipen option to a high value to turn off scientific notation
 options(scipen = 999)
 
-## 4. Save as csv
+## 4. Save
 
-# Save the data frame to a CSV file
-write.csv(merged_df, file = "Heffner_Masterton_1975_TableI.csv", row.names = FALSE)
+# Finalize dataframe (UPDATE!!!)
+final.dataframe <- merged_df
 
-## 5. Save as tsv with DOI file name
+# Get Item name: Get Path of the current script, Extract the file name, Remove the ".R" extension
+library(rstudioapi)
+item_name <- gsub("\\.R$", "", basename(rstudioapi::getActiveDocumentContext()$path))
 
-# Save the data frame to a TSV file
-write.csv(merged_df, file = "10.1159%2F000124401_tableI.tsv", row.names = FALSE)
+# Get Item encoded
+library(readxl) 
+filecodes <- read_excel("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__ReadMe.xlsx", sheet = "Sheet1")
+item_encoded <- filecodes$"Item encoded"[match(item_name, filecodes$"Item name")]
+
+# Save dataframe to a CSV file
+write.csv(final.dataframe, file = paste0(item_name, ".csv"), row.names = FALSE)
+
+# Save dataframe to a TSV file in the online database
+tsv_file_path <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__Public/comparative-data/"
+write.table(final.dataframe, file = paste0(tsv_file_path, item_encoded, ".tsv"), sep = "\t", row.names = FALSE)

@@ -4,8 +4,7 @@ https://ndownloader.figstatic.com/files/7428211
 2. Open 452856_sm10.doc in MS Word (double click it)
 3. Save as Plain Text (.txt)
 
---> Primary or Equivalent 
-
+--> Snapshot 
 Fixed formatting
 
 --> Corrections
@@ -23,12 +22,11 @@ Transpose
 --> Species update
 Updated species names based on article text
 
-dossantos_etal_2017_tables1.csv <-- USE THIS
+DosSantos_etal_2017_TableS1.csv <-- USE THIS
 
 --> Online database
 
 Added TSV copy named with DOI to https://github.com/r03ert0/comparative-data
 
-10.1159%2000452856_tableS1.tsv <-- ONLINE COPY
+10.1159%2000452856_TableS1.tsv <-- ONLINE COPY
 
-https://ndownloader.figstatic.com/files/7428211

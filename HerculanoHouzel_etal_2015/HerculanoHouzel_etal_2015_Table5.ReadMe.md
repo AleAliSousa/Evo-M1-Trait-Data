@@ -3,7 +3,7 @@ Source
 Download Publication pdf from Source: 
 https://karger.com/bbe/article-pdf/86/3-4/145/2264694/000437413.pdf
 
---> Primary or Equivalent
+--> Snapshot
 
 Open in Adobe Acrobat Pro. Export a PDF > Microsoft Excel > Microsoft Excel Workbook 
 

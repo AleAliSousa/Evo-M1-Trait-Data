@@ -11,7 +11,7 @@ gyz043_suppl_supplement_material.docx
 
 3. Unzip gyz043_suppl_supplement_data.zip 
 
---> Primary or Equivalent
+--> Snapshot
 
 4. gyz043_suppl_Supplement_Data.csv <- USE THIS FILE
 

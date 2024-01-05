@@ -24,7 +24,7 @@ df1 <- df1[-1,]
 rownames(df1) <- NULL
 
 # Save the data frame to a "primary or equivalent" to a CSV file
-write.csv(df1, file = "HerculanoHouzel_etal_2020_Table2_primary_or_equivalent.csv", row.names = FALSE)
+write.csv(df1, file = "HerculanoHouzel_etal_2020_Table2_snapshot.csv", row.names = FALSE)
 
 # Loop through columns and remove commas in numbers
 columns_to_clean <- c("NCX","NCB","NRoB","DN,CX","DN,Cb","DN,RoB")

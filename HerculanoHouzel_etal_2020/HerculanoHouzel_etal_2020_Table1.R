@@ -45,7 +45,7 @@ df1 <- combine_and_clean_by_species(df1, "Rousettus aegyptiacus")
 df1 <- combine_and_clean_by_species(df1, "Hypsignathus mostrosus")
 
 # Save the data frame to a "primary or equivalent" to a CSV file
-write.csv(df1, file = "HerculanoHouzel_etal_2020_Table1_primary_or_equivalent.csv", row.names = FALSE)
+write.csv(df1, file = "HerculanoHouzel_etal_2020_Table1_snapshot.csv", row.names = FALSE)
 
 # Loop through columns and remove commas in numbers
 columns_to_clean <- c("NBRAIN")

@@ -65,7 +65,7 @@ combined_df[155,]=trimws(combined_df[155,])
 combined_df$Structure[combined_df$Structure == "P1M"] <- "P+M"
 
 # Save the data frame to a "primary or equivalent" to a CSV file
-write.csv(combined_df, file = "dossantos_etal_2020_Table1_primary_or_equivalent.csv", row.names = FALSE)
+write.csv(combined_df, file = "dossantos_etal_2020_Table1_snapshot.csv", row.names = FALSE)
 
 # Assuming combined_df is your data frame
 columns_to_clean <- c("Structure mass (g)", "C", "N", "I", "N/mg", "I/mg")

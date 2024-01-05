@@ -3,7 +3,7 @@ Source
 
 Table 1 (specimen data) is across three pages
 
---> Primary or Equivalent 
+--> Snapshot 
 
 2. Fixed formatting in R
 

@@ -4,7 +4,7 @@ setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/
 # Table 1
 ## 1. Read direct from xl
 library(readxl)
-tabledirectxl <- read_excel("HerculanoHouzel_etal_2015_Table1_primary_or_equivalent.xlsx")
+tabledirectxl <- read_excel("HerculanoHouzel_etal_2015_Table1_snapshot.xlsx")
 
 ## 2. Check Table name
 # Assuming the first column header is "Table 1. Cerebral cortex"

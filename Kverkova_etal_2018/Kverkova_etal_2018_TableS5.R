@@ -18,7 +18,7 @@ colnames(tables5[[5]]) <- gsub("\\s*106", ", x 10ˆ6", colnames(tables5[[5]]))
 tables5[[5]] <- apply(tables5[[5]], 2, function(x) gsub("(?<![[:space:]])±( |%)|(?<![[:space:]])± | ±(?![[:space:]])", " ± ", x, perl=TRUE))
 
 # Save the data frame to a "primary or equivalent" to a CSV file
-write.csv(tables5[[5]], file = "Kverkova_etal_2018_TableS5_primary_or_equivalent.csv", row.names = FALSE)
+write.csv(tables5[[5]], file = "Kverkova_etal_2018_TableS5_snapshot.csv", row.names = FALSE)
 
 ## 2. MAKE READABLE
 

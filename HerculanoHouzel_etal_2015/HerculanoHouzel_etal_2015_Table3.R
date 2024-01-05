@@ -4,7 +4,7 @@ setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/
 # Table 3
 ## 1. Read direct from xl
 library(readxl)
-tabledirectxl <- read_excel("HerculanoHouzel_etal_2015_Table3_primary_or_equivalent.xlsx")
+tabledirectxl <- read_excel("HerculanoHouzel_etal_2015_Table3_snapshot.xlsx")
 
 ## 2. Check Table name
 # Assuming the first column header is "Table 3. RoB"

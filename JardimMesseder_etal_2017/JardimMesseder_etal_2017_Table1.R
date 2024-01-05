@@ -22,7 +22,7 @@ tabledirectxl <- tabledirectxl[1:(nrow(tabledirectxl)-4), ]
 tabledirectxl <- tabledirectxl[, colSums(is.na(tabledirectxl)) != nrow(tabledirectxl), drop = FALSE]
 
 # Save the dataframe to a CSV file #symbol not formatted for Excel, open in Numbers
-write.csv(tabledirectxl, file = "JardimMesseder_etal_2017_Table1_primary_or_equivalent.csv", row.names = FALSE)
+write.csv(tabledirectxl, file = "JardimMesseder_etal_2017_Table1_snapshot.csv", row.names = FALSE)
 
 ## MAKE DATA READABLE
 

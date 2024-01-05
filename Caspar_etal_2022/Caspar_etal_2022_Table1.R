@@ -1,8 +1,9 @@
 # Table 1
+setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Caspar_etal_2022")
 
 ## 1. Read direct from xl
 library(readxl)
-tabledirectxl <- read_excel("caspar_etal_2022_table1_primary_or_equivalent.xlsx")
+tabledirectxl <- read_excel("Caspar_etal_2022_Table1_snapshot.xlsx")
 
 ## 2. Table name / header removal
 
@@ -74,13 +75,23 @@ tabledirectxl$nGenus <- as.numeric(tabledirectxl$nGenus)
 # Set the scipen option to a high value to turn off scientific notation
 options(scipen = 999)
 
-## 7. Save as csv
+## 7. Save
 
-# Save the dataframe to a CSV file
-write.csv(tabledirectxl, file = "caspar_etal_2022_table1.csv", row.names = FALSE)
+# Finalize dataframe (UPDATE!!!)
+final.dataframe <- tabledirectxl
 
-## 8. Save as tsv with DOI file name
+# Get Item name: Get Path of the current script, Extract the file name, Remove the ".R" extension
+library(rstudioapi)
+item_name <- gsub("\\.R$", "", basename(rstudioapi::getActiveDocumentContext()$path))
 
-# Save the dataframe to a TSV file
-write.csv(tabledirectxl, file = "10.7554%2FeLife.77875_table1.tsv", row.names = FALSE)
+# Get Item encoded
+library(readxl) 
+filecodes <- read_excel("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__ReadMe.xlsx", sheet = "Sheet1")
+item_encoded <- filecodes$"Item encoded"[match(item_name, filecodes$"Item name")]
 
+# Save dataframe to a CSV file
+write.csv(final.dataframe, file = paste0(item_name, ".csv"), row.names = FALSE)
+
+# Save dataframe to a TSV file in the online database
+tsv_file_path <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__Public/comparative-data/"
+write.table(final.dataframe, file = paste0(tsv_file_path, item_encoded, ".tsv"), sep = "\t", row.names = FALSE)

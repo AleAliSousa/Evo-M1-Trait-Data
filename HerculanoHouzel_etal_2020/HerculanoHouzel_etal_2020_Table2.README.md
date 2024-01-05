@@ -1,7 +1,7 @@
 Source
 1. Read Table 1 into R from pdf (downloaded)
 
---> Primary or Equivalent 
+--> Snapshot 
 
 2. Fixed formatting in R
 

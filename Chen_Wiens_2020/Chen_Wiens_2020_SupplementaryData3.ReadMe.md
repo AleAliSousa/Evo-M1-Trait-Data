@@ -3,10 +3,9 @@ Source
 1. Auto-Download Supplementary Data 3 at Source: 
 https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-020-14356-3/MediaObjects/41467_2020_14356_MOESM6_ESM.xlsx
 
---> Primary or Equivalent
+--> Snapshot
 
 41467_2020_14356_MOESM6_ESM.xlsx <-- USE THIS
-
 
 --> Online database
 
@@ -14,9 +13,9 @@ https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-020-14356-3/Media
 
 3. Copied Supplementary Data_3-Table 1.tsv and renamed as TSV named with DOI
 
-10.1038%2Fs41467-020-14356-3_Supp3.tsv <-- ONLINE COPY
+10.1038%2Fs41467-020-14356-3_SupplementaryData3.tsv <-- ONLINE COPY
 
-4. Added TSV copy named with DOI to https://github.com/r03ert0/comparative-data
+4. Manually added TSV copy named with DOI to https://github.com/r03ert0/comparative-data
 
 
 

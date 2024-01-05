@@ -1,4 +1,4 @@
---> Primary or Equivalent 
+--> Snapshot 
 # Table 1
 # Open pdf in Adobe Acrobat
 # Export >  Microsoft Excel Workbook > Settings: Create Worksheet for each Table

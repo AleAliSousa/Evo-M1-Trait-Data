@@ -7,7 +7,7 @@ setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/
 
 # Read from xlsx
 library(readxl)
-matrix1 <- as.matrix(read_excel("Kverkova_etal_2018_TableS1_primary_or_equivalent.xlsx"))
+matrix1 <- as.matrix(read_excel("Kverkova_etal_2018_TableS1_snapshot.xlsx"))
 
 ## 2. MAKE READABLE
 

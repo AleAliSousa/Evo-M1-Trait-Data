@@ -1,10 +1,11 @@
 # Set Working Directory
+setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging")
 
 ## 1. Get data
 ## 1.1 Create a list with all the dataframes for cell count analyses
 ## 1.2 Change to standardized terminology for all variables in those dataframes
 ## 1.3 Calculate variables to match them across datasets (if needed) 
-## 1.4 Calculate species to match them across datasets (if needed) 
+## 1.4 Rename species to NCBI Taxonomy (if needed) 
 # - are species and subspecies both represented for any given species?
 ## 1.5 Combine all data in all dataframes in cellcounts_data_list 
 ## 1.6 Check for and address any conflicting datapoints across datasets 
@@ -124,78 +125,152 @@ for (i in seq_along(item_name)) {
   cellcounts_data_list[[i]] <- df
 }
 
-## 1.4 Calculate species to match them across datasets (if needed)
+## 1.4 Compare Species to NCBI Taxonomy and rename to this standard
 
-## 1.4.1 Inspect data: Get a full list of species in alphabetical order to examine
-# Initialize an empty vector to store species names
-species_list <- character(0)
+# 1.4.1 Compare full source_species_list to NCBI Taxonomy ID 
+library(taxizedb)
 
+# Get a full list of species in alphabetical order to examine
+source_species_list <- character(0)
+for (i in seq_along(cellcounts_data_list)) {
+  source_species_list <- sort(unique(c(source_species_list, cellcounts_data_list[[i]]$Species)))
+}
+
+# Get NCBI Taxonomic IDs for source_species_list
+ids <- name2taxid(source_species_list, out_type = "summary")
+# Get NCBI Preferred Names for those Taxonomic IDs
+preferred_names <- taxid2name(ids$id, out_type = "summary")
+
+# Identify any names not listed
+names_not_listed <- setdiff(source_species_list, ids$name)
+
+# Create a data frame with Species Name in Source, Preferred Name and Taxonomic ID
+source_species_ids <- data.frame(
+  Species_Name_Source = source_species_list,
+  Preferred_Name = NA,
+  Taxonomic_ID = NA
+)
+
+# Update Taxonomic_Name and Taxonomic_ID for listed species
+source_species_ids$Taxonomic_ID[source_species_list %in% ids$name] <- ids$id
+source_species_ids$Preferred_Name[source_species_list %in% ids$name] <- preferred_names
+
+# Include names_not_listed in the Species_Name_Source column with "NA"
+source_species_ids <- rbind(source_species_ids, data.frame(
+  Species_Name_Source = names_not_listed,
+  Preferred_Name = NA,
+  Taxonomic_ID = NA
+))
+
+# Sort source_species_ids by the same order as source_species_list
+source_species_ids <- source_species_ids[match(source_species_list, source_species_ids$Species_Name_Source), ]
+
+# Add a column to check if Preferred_Name is different from Original_Species_Name or if it's NA and Original_Species_Name is from names_not_listed
+source_species_ids$different <- ifelse(source_species_ids$Preferred_Name != source_species_ids$Species_Name_Source | (is.na(source_species_ids$Preferred_Name) & source_species_ids$Species_Name_Source %in% names_not_listed), TRUE, "")
+
+# Add a column to check if Preferred_Name is exactly the same as Species_Name_Source
+source_species_ids$exact <- ifelse(source_species_ids$Preferred_Name == source_species_ids$Species_Name_Source, TRUE, "")
+
+# Add a column called Reference_Note to source_species_ids
+source_species_ids$Reference_Note <- ifelse(
+  source_species_ids$Preferred_Name == source_species_ids$Species_Name_Source, 
+  "NCBI exact",
+  ifelse(
+    !is.na(source_species_ids$Preferred_Name),
+    "NCBI",
+    NA
+  )
+)
+
+## 1.4.2 Create a new column for updated species names if they are not all the NCBI default Preferred Name for their Taxonomic ID
+
+# Add a column called Species_Name with the Preferred_Name. If NA, leave blank (for now).
+source_species_ids$Species_Name <- ifelse(
+  !is.na(source_species_ids$Preferred_Name), 
+  source_species_ids$Preferred_Name,
+  NA
+)
+
+# Add information about the remaining species: Species_Name to use and reference note
+source_species_ids$Species_Name[source_species_ids$Species_Name_Source == "Cryptomys pretoriae"] <- "Cryptomys hottentotus pretoriae"
+source_species_ids$Reference_Note[source_species_ids$Species_Name_Source == "Cryptomys pretoriae"] <- "ITIS invalid synonym"
+source_species_ids$Species_Name[source_species_ids$Species_Name_Source == "Cynomys sp."] <- "Cynomys sp."
+source_species_ids$Reference_Note[source_species_ids$Species_Name_Source == "Cynomys sp."] <- "Genus, species unknown"
+source_species_ids$Species_Name[source_species_ids$Species_Name_Source == "Dasyprocta prymnolopha"] <- "Dasyprocta prymnolopha"
+source_species_ids$Reference_Note[source_species_ids$Species_Name_Source == "Dasyprocta prymnolopha"] <- "ITIS valid, missing from NCBI"
+source_species_ids$Species_Name[source_species_ids$Species_Name_Source == "Homo sapiens sapiens"] <- "Homo sapiens"
+source_species_ids$Reference_Note[source_species_ids$Species_Name_Source == "Homo sapiens sapiens"] <- "GBIF for subspecies"
+source_species_ids$Species_Name[source_species_ids$Species_Name_Source == "Papio anubis cynocephalus"] <- "Papio cynocephalus"
+source_species_ids$Reference_Note[source_species_ids$Species_Name_Source == "Papio anubis cynocephalus"] <- "referenced papers call these Papio cynocephalus (Gabi 2010), Papio sp (HH 2008)"
+
+# Automatically add Taxonomic_IDs and Preferred_Name if NA (unless exempt from this step)
+# These are exempt, because NCBI Taxon ID doesn't apply at species level: Dasyprocta prymnolopha, Cynomys sp.
+# Create species_list with updated names
+species_list <- source_species_ids$Species_Name
+# Update Taxonomic IDs for species_list
+ids <- name2taxid(species_list, out_type = "summary")
+# Update Preferred Names for those Taxonomic IDs
+preferred_names <- taxid2name(ids$id, out_type = "summary")
+# Update Taxonomic_ID for listed species
+source_species_ids$Taxonomic_ID <- ifelse(
+  is.na(source_species_ids$Taxonomic_ID),
+  ids$id[match(source_species_ids$Species_Name, ids$name)],
+  source_species_ids$Taxonomic_ID
+)
+# Update Preferred_Name for listed species
+source_species_ids$Preferred_Name <- ifelse(
+  is.na(source_species_ids$Preferred_Name),
+  ids$name[match(source_species_ids$Taxonomic_ID, ids$id)],
+  source_species_ids$Preferred_Name
+)
+
+# Save the data frame as a CSV file
+write.csv(source_species_ids, "source_species_ids.csv", row.names = FALSE)
+
+# 1.4.3 If there are species without NCBI ID, duplicate "Species" in all dataframes in cellcounts_data_list and call it "Species_Source", so that "Species" can be edited
 # Loop through each data frame in the list
 for (i in seq_along(cellcounts_data_list)) {
+  # Duplicate the "Species" column and rename it to "Species_Source"
+  cellcounts_data_list[[i]]$Species_Source <- cellcounts_data_list[[i]]$Species
+}
+
+# Loop through each data frame in the list cellcounts_data_list and the "Species" column by matching cellcounts_data_list "Species_Source"  to source_species_ids "Species_Name_Source", and then using the value from source_species_ids "Species_Name"
+for (i in seq_along(cellcounts_data_list)) {
+  cellcounts_data_list[[i]]$Species <- source_species_ids$Species_Name[match(cellcounts_data_list[[i]]$Species_Source, source_species_ids$Species_Name_Source)]
+}
+
+# Check species list versions it #Here, Homo sapiens sapiens was collapsed with Homo sapiens
+species_list_update2 <- character(0)
+for (i in seq_along(cellcounts_data_list)) {
   # Combine the unique species names with the existing vector in alphabetical order
-  species_list <- sort(unique(c(species_list, cellcounts_data_list[[i]]$Species)))
+  species_list_update2 <- sort(unique(c(species_list_update2, cellcounts_data_list[[i]]$Species)))
 }
+species_list_update2
+species_list
+source_species_list
 
-## 1.4.2 Check if Species overlap between dataframe pairs
-# Get the unique Species names for each dataframe in the list
-all_species <- lapply(cellcounts_data_list, function(df) unique(df$Species))
 
-# # Compare all pairs of dataframes for repeated Species names
-# repeated_species_pairs <- list()
-# for (i in 1:(length(cellcounts_data_list) - 1)) {
-#   for (j in (i + 1):length(cellcounts_data_list)) {
-#     repeated_species <- intersect(all_species[[i]], all_species[[j]])
-#     if (length(repeated_species) > 0) {
-#       pair_name <- paste("Pair", item_name[i], "-", item_name[j], sep="-")
-#       repeated_species_pairs[[pair_name]] <- repeated_species
-#     }
-#   }
-# }
-# 
-# # Print the result
-# if (length(repeated_species_pairs) > 0) {
-#   print("Pairs with repeated species:")
-#   print(repeated_species_pairs)
-# } else {
-#   print("No pairs with repeated species.")
-# }
+## 1.5 Combine all data in all dataframes in cellcounts_data_list as a long dataframe
+library(dplyr)
+library(tidyr)
 
-## 1.5 Combine all data in all dataframes in cellcounts_data_list
-
-# 1.5.1 Create a new list to store dataframes with suffixes
-suffix_data_list <- list()
-
-# Add suffix to each dataframe and store in the new list
-for (i in 1:length(cellcounts_data_list)) {
-  current_df <- cellcounts_data_list[[i]]
-  suffix <- names(cellcounts_data_list)[i]
+# Assuming cellcounts_data_list is your list of dataframes
+combined_data <- lapply(names(cellcounts_data_list), function(source) {
+  df <- cellcounts_data_list[[source]]
   
-  # Add suffix to variables in the dataframe
-  current_df <- setNames(current_df, c("Species", paste(names(current_df)[-1], paste("__", suffix, sep = ""), sep = "")))
+  # Convert all columns to character strings
+  df[] <- lapply(df, as.character)
   
-  # Store the dataframe in the new list
-  suffix_data_list[[i]] <- current_df
-}
-
-## 1.5.2 Combine all data in all dataframes in suffix_data_list, "Species" is the common identifier
-combined_data <- suffix_data_list[[1]]
-
-for (i in 2:length(suffix_data_list)) {
-  # Merge based on the "Species" column
-  combined_data <- full_join(combined_data, suffix_data_list[[i]], by = "Species")
-}
-
-# Sort columns alphabetically
-combined_data <- combined_data[, order(names(combined_data))]
-
-# Ensure "Species" is the first column
-combined_data <- combined_data[, c("Species", setdiff(names(combined_data), "Species"))]
-
-# Sort rows by the "Species" column
-combined_data <- combined_data[order(combined_data$Species), ]
-
-# Reset row names
-rownames(combined_data) <- NULL
+  # Combine "Species," "Variable," "Source," and "Value" columns
+  df_long <- df %>%
+    pivot_longer(cols = -Species, names_to = "Variable", values_to = "Value") %>%
+    mutate(Source = source) %>%
+    select(Species, Variable, Source, Value)
+  
+  return(df_long)
+})
+# Combine all dataframes in the list into a single dataframe
+combined_data <- bind_rows(combined_data)
 
 ## 1.6 Check for and address any conflicting datapoints across datasets 
 
@@ -210,7 +285,7 @@ worth_dataframe <- data.frame(source = character(),
 for (df_name in names(cellcounts_data_list)) {
   
   # Extract date from the dataframe name
-  date <- as.numeric(str_extract(df_name, "(?<=_)[0-9]+"))
+  date <- as.numeric(str_extract(df_name, "[0-9]+"))
   
   # Extract number of species from the dataframe
   number_species <- nrow(cellcounts_data_list[[df_name]]) - 1  # Subtract 1 for the header
@@ -230,127 +305,69 @@ rownames(worth_dataframe) <- NULL
 # Add a new column called "priority" with row numbers as values
 worth_dataframe$priority <- seq_len(nrow(worth_dataframe))
 
+# Append a "priority" column to the "combined_data" dataframe by matching "Source" values with "source" in "worth_dataframe"
+combined_data$priority <- match(combined_data$Source,  worth_dataframe$source, worth_dataframe$priority)
+
+write_csv(combined_data, "combined_data.csv")
+
 ## 1.6.2 Limit dataset to best available data
+# remove any NA values in combined_data
+intermediate_data <- combined_data[!is.na(combined_data$Value), , drop = FALSE]
+write_csv(intermediate_data, "intermediate_data.csv")
 
-# Create an intermediate dataframe where lesser-ranked source values are marked as "WORSE."
-intermediate_data <- combined_data
+## TESTING ZONE START
+# Example dataframe
+df <- data.frame(
+  Species = c('HS', 'HS', 'HS', 'HS', 'LA', 'LA', 'LA'),  
+  Variable = c('WBNN', 'WBNN', 'WBNN', 'CNN', 'CNN', 'WBNN', 'CNN'),
+  Source = c('JM', 'HH', 'DS', 'DS', 'JM', 'JM', 'HH'),
+  priority = c('3', '1', '2', '2', '3', '3', '1'),
+  Value = c(10, 10, 20, 30, 40, 50, 60)
+)
 
-# ## ## #TRY SOMETHING
-get_info_for_cell <- function(data, species_index, column_index) {
-  species <- data$Species[species_index]
-  column_name <- colnames(data)[column_index]
-  
-  # Extract variable and source from the column name
-  variable_source <- strsplit(column_name, "__")[[1]]
-  variable <- variable_source[1]
-  source <- variable_source[2]
-  
-  # Extract all column names with the same variable
-  variable_colnames <- grep(paste0("^", variable, "__"), colnames(data), value = TRUE)
-  
-  # Extract all valid, non-"NA" non-"WORSE" sources for the same variable and species
-  variable_sources_valid <- (sapply(strsplit(variable_colnames, "__"), function(x) x[2]))[!is.na(data[species_index, variable_colnames]) & data[species_index, variable_colnames] != "WORSE"]
-  
-  # Extract all ranks for valid sources for the same variable and species
-  variable_sources_valid_ranks <- worth_dataframe$priority[match(variable_sources_valid, worth_dataframe$source)]
-  
-  # Extract the BEST rank for valid sources for the same variable and species
-  variable_sources_best_rank <- min(worth_dataframe$priority[match(variable_sources_valid, worth_dataframe$source)])
-  
-  # Extract all WORSE ranks for valid sources for the same variable and species  # Filter for ranks greater than the minimum rank
-  variable_sources_worse_ranks <- variable_sources_valid_ranks[variable_sources_valid_ranks > min(worth_dataframe$priority[match(variable_sources_valid, worth_dataframe$source)])]
-  
-  # Get the values for the specified cell and sources
-  cell_value <- data[species_index, column_index]
-  variable_values <- data[species_index, variable_colnames]
-  
-  result <- list(
-    species = species,
-    column_name = column_name,
-    variable = variable,
-    source = source,
-    variable_colnames = variable_colnames,
-    variable_sources_valid = variable_sources_valid,
-    variable_sources_valid_ranks = variable_sources_valid_ranks,
-    variable_sources_best_rank = variable_sources_best_rank,
-    variable_sources_worse_ranks = variable_sources_worse_ranks,
-    cell_value = cell_value,
-    variable_values = variable_values
-  )
-  
-  return(result)
+# Add a blank column "DECISION"
+df$DECISION <- ""
+
+# Convert dataframe to a list of dataframes
+df_list <- split(df, list(df$Species, df$Variable))
+
+# Create a loop to update "DECISION" based on the specified condition
+for (i in seq_along(df_list)) {
+  priority_values <- df_list[[i]]$priority
+  df_list[[i]]$DECISION[df_list[[i]]$priority > min(priority_values)] <- "WORSE"
 }
 
-# Example usage:
-result <- get_info_for_cell(intermediate_data, species_index = 44, column_index = 258)
-print(result)
+# See the updated list of matrices
+df_list
 
-# ## ## #END SOMETHING
+# Combine all rows from df_list into one dataframe excluding rows with DECISION:WORSE
+updated_df <- do.call(rbind, df_list)
+updated_df <- updated_df[updated_df$DECISION != "WORSE", ]
 
-# # Your function to mark values as "WORSE" based on the condition
-# mark_worse <- function(data, variable_col, source_col, rank_col, worth_dataframe) {
-#   data %>%
-#     mutate(across(
-#       .cols = -c(Species), 
-#       .fns = ~ifelse(
-#         !is.na(.x) & .x != "" & .x != "WORSE" & worth_dataframe$source[which.min(worth_dataframe$priority)] != .x, 
-#         "WORSE", 
-#         .x
-#       )
-#     ))
-# }
-# 
-# # Apply the function to your dataframe
-# intermediate_data <- mark_worse(
-#   data = intermediate_data,
-#   
-#   variable_col = intermediate_data %>%
-#     select(matches("variable__")) %>%
-#     colnames(),
-#   source_col = intermediate_data %>%
-#     select(matches("__source")) %>%
-#     colnames(),
-#   rank_col = worth_dataframe$priority,  # Use the correct column name from worth_dataframe
-#   worth_dataframe = worth_dataframe
-# )
-# 
+# See the updated dataframe
+updated_df
+## TESTING ZONE END
 
+## APPLY TESTING ZONE START
+# Add a blank column "DECISION"
+intermediate_data$DECISION <- ""
 
-# #### CODE BELOW IS FINE ####
-# 
-# ## 2. Examine WholeBrain dataset
-# ## 2.1 Get a full list of WholeBrain_N.n from all dataframes in the list cellcounts_data_list.
-# WholeBrain_N.n <- character(0)
-# 
-# # Loop through each data frame in the list
-# for (i in seq_along(cellcounts_data_list)) {
-#   # Extract the "Species" column from the current data frame
-#   species_col <- cellcounts_data_list[[i]]$Species
-#   
-#   # Combine the unique species names with the existing vector
-#   all_species <- unique(c(all_species, species_col))
-# }
-# 
-# # Sort the vector in alphabetical order
-# all_species <- sort(all_species)
-# all_species
-# 
-# ## 2.2 Compile total of all datasets on Whole Brain cellular composition
-# 
-# # Initialize an empty dataframe
-# combined_df <- data.frame(Species = character(), WholeBrain_N.n = numeric())
-# 
-# # Loop through each data frame in the list
-# for (i in seq_along(cellcounts_data_list)) {
-#   # Check if "WholeBrain_N.n" and "Species" columns exist in the current data frame
-#   if ("WholeBrain_N.n" %in% colnames(cellcounts_data_list[[i]]) &&
-#       "Species" %in% colnames(cellcounts_data_list[[i]])) {
-#     # Extract the relevant columns and append to the combined dataframe
-#     combined_df <- rbind(combined_df, cellcounts_data_list[[i]][c("Species", "WholeBrain_N.n")])
-#   }
-# }
-# 
-# # View the combined dataframe
-# combined_df
-# 
-# #### CODE ABOVE IS FINE ####
+# Convert dataframe to a list of dataframes
+df_list <- split(intermediate_data, list(intermediate_data$Species, intermediate_data$Variable))
+
+# Create a loop to update "DECISION" based on the specified condition
+for (i in seq_along(df_list)) {
+  priority_values <- df_list[[i]]$priority
+  df_list[[i]]$DECISION[df_list[[i]]$priority > min(priority_values)] <- "WORSE"
+}
+
+# See the updated list of matrices
+df_list
+
+# Combine all rows from df_list into one dataframe excluding rows with DECISION:WORSE
+updated_df <- do.call(rbind, df_list)
+updated_df <- updated_df[updated_df$DECISION != "WORSE", ]
+
+# See the updated dataframe
+updated_df
+## APPLY TESTING ZONE END

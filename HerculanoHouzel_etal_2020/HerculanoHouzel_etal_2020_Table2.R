@@ -38,10 +38,15 @@ for (col in columns_to_clean) {
 columns_to_convert <- c("NCX","NCB","NRoB","DN,CX","DN,Cb","DN,RoB")
 df1[, columns_to_convert] <- lapply(df1[, columns_to_convert], as.numeric)
 
+## 4. CORRECT SPECIES NAME TYPO
+# See paper text for correct spelling of species
+df1$Species[df1$Species == "Hypsignathus mostrosus"] <- "Hypsignathus monstrosus"
+
+
 # Set the scipen option to a high value to turn off scientific notation
 options(scipen = 999)
 
-## 4. SAVE
+## 5. SAVE
 # Finalize dataframe (UPDATE!!!)
 final.dataframe <- df1
 

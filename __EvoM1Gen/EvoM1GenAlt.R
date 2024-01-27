@@ -10,9 +10,6 @@ tsv_directory_list <- list.files("~/Library/CloudStorage/OneDrive-AllenInstitute
 # Filter files to include only those that end with ".tsv" 
 tsv_names <- tsv_directory_list[grep("\\.tsv$", tsv_directory_list)]
 
-# Maybe - Eliminate problematic ones
-# tsv_names <- tsv_names[tsv_names != "10.1016%2Fj.jhevol.2008.08.004_Table2.tsv"]
-
 # Get Item Code by removing end with ".tsv"
 item_encoded_names <-  sub("\\.tsv$", "", tsv_names)
 
@@ -52,91 +49,57 @@ for (i in seq_along(item_name)) {
 list2env(tsv_data_list, envir = environment()) # Make the dataframes available in the environment
 
 
-# ######OLDVERSIONHIDE
-# # Loop through item names, read tables from TSVs, and store as dataframes in the list, row.names = NULL
-# for (i in seq_along(item_name)) {
-#   cat("Processing item:", item_name[i], "\n")  # Print item name
-# 
-#   
-#   item_encoded <- filecodes$"Item encoded"[match(item_name[i], filecodes$"Item name")]
-#   item_data <- read.table(file = paste0("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__Public/comparative-data/", item_encoded, ".tsv"), sep = "\t", 
-#                           header = TRUE, stringsAsFactors = FALSE, check.names = FALSE, row.names = NULL)
-#   
-#   # Store the data frame in the list with the corresponding item name
-#   tsv_data_list[[item_name[i]]] <- item_data
-# }
-######OLDVERSIONHIDE
-# ## TROUBLESHOOTING TESTS
-# # List all files in the directory ending with .tsv
-# tsv_directory_list <- list.files("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__Public/comparative-data", pattern = "\\.tsv$", full.names = FALSE)
-# # Remove the .tsv extension
-# tsv_directory_list <- tools::file_path_sans_ext(tsv_directory_list)
-# tsv_directory_list
-# 
-# # Read tsv files using read.delim() method
-# tsvtesting<-read.delim("10.1126%2Fscience.aaa9101_TableS1.tsv", sep = "\t", header = TRUE, stringsAsFactors = FALSE, check.names = FALSE)
-# ## TROUBLESHOOTINGTESTSEND
-
-
-# # Initialize a list to store counts for each species list
-# species_counts <- list()
-# 
-# # Iterate through the data frames in tsv_data_list
-# for (i in seq_along(tsv_data_list)) {
-#   tsv_data <- tsv_data_list[[i]]
-#   
-#   # Print the column names for debugging
-#   cat("Column names in Data:", i, ":", colnames(tsv_data), "\n")
-#   
-#   # Identify relevant columns in the current data frame
-#   relevant_columns <- colnames(tsv_data) %>%
-#     tolower() %>%
-#     grep("species|genus species|binomial", ignore.case = TRUE, value = TRUE)
-#   
-#   # Print relevant columns for debugging
-#   cat("Relevant columns in Data:", i, ":", relevant_columns, "\n")
-#   
-#   # Iterate through the relevant columns
-#   for (col in relevant_columns) {
-#     # Extract species names, treating "_" as " "
-#     species_names <- gsub("_", " ", tolower(tsv_data[[col]]))
-#     
-#     # Match with "species_sci" column in the "Traits" data
-#     match_counts <- stringdist::stringdistmatrix(species_names, traits_data$species_sci, method = "jaccard") %>%
-#       apply(2, function(x) sum(x == 0))
-#     
-#     # Store the count for the current data frame and column
-#     species_counts[[paste("Data:", i, "Column:", col)]] <- match_counts
-#   }
-# }
-# 
-# # View the results
-# print(species_counts)
-
 # One by one version
 # Read the "Traits" sheet from the Excel file
 traits_data <- read_excel("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Mammalian M1 Evo - Species metadata.xlsx", sheet = "Traits")
 # Read the
 traits_data$species_sci
 
-# # One by one - replace number
-# tsv_data_list[[4]]
-# # What is the name of the dataframe that corresponds to tsv_data_list[[i]]?
-# names(tsv_data_list)[4]
-# # Is there a column "Species" in colnames(tsv_data_list[[i]])? 
-# "Species" %in% colnames(tsv_data_list[[4]])
-# # Match (tsv_data_list[[i]]$Species) to traits_data$species_sci
-# match(tsv_data_list[[4]]$Species, traits_data$species_sci)
-# # See the matched values in tsv_data_list[[i]]$Species
-# na.omit(traits_data$species_sci[match(tsv_data_list[[4]]$Species, traits_data$species_sci)])
-# # Count the number of matched values
-# sum(!is.na(traits_data$species_sci[match(tsv_data_list[[4]]$Species, traits_data$species_sci)]))
-# # Print a summary stating the dataframe name, whether there is a column "Species", and the number of matched values
-
 # "Species" column exists in i <- 1:5
 i <- 5  # Change this to the desired index
 # Print a summary stating the dataframe name, the existence of a column "Species", and the number of matched values
 cat("For", names(tsv_data_list)[i], ", a column called 'Species' exists:", "Species" %in% colnames(tsv_data_list[[i]]), "and the number of matched values at the level of subspecies is:", sum(!is.na(traits_data$species_sci[match(tsv_data_list[[i]]$Species, traits_data$species_sci)])), ". This is the list matched at the level of subspecies:", na.omit(traits_data$species_sci[match(tsv_data_list[[i]]$Species, traits_data$species_sci)]))
+
+
+# "Species" column exists in i <- 1:5
+i <- 5  # Change this to the desired index
+# Step 1: Check if a column called 'Species' exists
+species_column_exists <- "Species" %in% colnames(tsv_data_list[[i]])
+print(paste("Step 1: For i=", i, names(tsv_data_list)[i], ", a column called 'Species' exists:", species_column_exists))
+# Step 2: Extract 'Species' column and replace underscores (if present) with spaces
+species_column <- gsub("_", " ", tsv_data_list[[i]]$Species)
+# Step 3: Match 'Species' column with traits_data$species_sci
+matched_indices <- match(species_column, traits_data$species_sci)
+# Step 4: Count the number of matched values at the level of subspecies
+num_subspecies_matches <- sum(!is.na(matched_indices))
+print(paste("Step 4: Number of matched values at the level of subspecies:", num_subspecies_matches))
+# Step 5: Extract the list of matched values
+matched_values <- na.omit(traits_data$species_sci[matched_indices])
+print(paste("Step 5: List matched at the level of subspecies:", matched_values))
+
+# Assuming tsv_data_list[[5]] is the fifth dataframe in the list
+i <- 5  # Change this to the desired index
+# Step 1: Identify relevant columns species info in the current dataframe
+relevant_columns <- colnames(tsv_data_list[[i]]) %>%
+  tolower() %>%
+  grep("species|genus species|binomial", ignore.case = TRUE, value = TRUE)
+# Check if any relevant columns exist with species info
+relevant_column_exists <- length(relevant_columns) > 0
+print(paste("Step 1: For", names(tsv_data_list)[i], ", relevant columns including terms 'Species,' 'Genus species,' 'Binomial' exist:", relevant_column_exists))
+# Step 2: Extract species info column and replace underscores (if present) with spaces
+relevant_columns <- gsub("_", " ", tsv_data_list[[i]]$Species)
+# Step 3: Match species info column with traits_data$species_sci
+matched_indices <- match(species_column, traits_data$species_sci)
+# Step 4: Count the number of matched values at the level of subspecies
+num_subspecies_matches <- sum(!is.na(matched_indices))
+print(paste("Step 4: Number of matched values at the level of subspecies:", num_subspecies_matches))
+#the number of matched values at the level of subspecies is:
+sum(!is.na(tsv_data_list[[i]]$Species[match(traits_data$species_sci, tsv_data_list[[i]]$Species)]))
+# Step 5: Extract the list of matched values
+matched_values <- na.omit(traits_data$species_sci[matched_indices])
+cat("Step 5: List matched at the level of subspecies:", paste(matched_values))
+
+
 
 # "Species" column BUT needs to be combined with "Genus" column in i <- 6 (DO LATER)
 i <- 6  # Change this to the desired index

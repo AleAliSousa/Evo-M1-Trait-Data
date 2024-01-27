@@ -1,3 +1,30 @@
+# library(myTAI)
+# 
+# # Initialize an empty data frame to store results
+# result_df <- data.frame(Species = character(0), Taxonomy_ID = character(0), stringsAsFactors = FALSE)
+# 
+# # If stuck: Start from the nth species on the list
+# start_index <- 18
+# species_list <- species_list[start_index:length(species_list)]
+# 
+# 
+# # Loop through each species name in the list
+# for (species_name in species_list) {
+#   # Search NCBI taxonomy for the current species name
+#   result <- myTAI::taxonomy(organism = species_name,
+#                              db       = "ncbi",
+#                              output   = "taxid" )
+# 
+#   # Check if there is a match
+#   if (!is.null(result)) {
+#     # Add a row to the result data frame
+#     result_df <- rbind(result_df, data.frame(Species = species_name, Taxonomy_ID = result, stringsAsFactors = FALSE))
+#   } else {
+#     # If no match, add a row with FALSE
+#     result_df <- rbind(result_df, data.frame(Species = species_name, Taxonomy_ID = "FALSE", stringsAsFactors = FALSE))
+#   }
+# }
+
 # # Loop through unique variables and species to mark "WORSE" for lesser-ranked sources
 # for (variable in unique_variables) {
 #   for (species_index in seq_along(unique_species)) {

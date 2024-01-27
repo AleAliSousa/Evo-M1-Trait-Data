@@ -9,10 +9,14 @@ Source
 
 3. Took away commas in numbers and made numerical 
 
+--> Species update
+
+4. Corrected species name typo based on text in paper.
+
 HerculanoHouzel_etal_2020_Table1.csv <-- USE THIS
 
 --> Online database
 
-Added TSV copy named with DOI to https://github.com/r03ert0/comparative-data
+5. Added TSV copy named with DOI to https://github.com/r03ert0/comparative-data
 
 10.1002%2Fcne.24985_table1.tsv <-- ONLINE COPY

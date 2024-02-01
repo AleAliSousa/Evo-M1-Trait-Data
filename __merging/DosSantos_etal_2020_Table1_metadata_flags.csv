@@ -1,0 +1,2 @@
+"Flag_Description","Flag_Condition"
+"Omit secondary data due to some typos/conflicts with primary sources. Keep only I.mg.","grepl('_C.n|_I.n|_I.p.N|_N.n|_N.p.mg|_n.S|_Mass.g', colnames(filtered_cellcounts_data_list[[df_name]]))"

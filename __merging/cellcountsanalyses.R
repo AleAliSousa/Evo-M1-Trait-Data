@@ -5,9 +5,10 @@ setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/
 ## 1.1 Create a list with all the dataframes for cell count analyses
 ## 1.2 Change to standardized terminology for all variables in those dataframes
 ## 1.3 Calculate variables to match them across datasets (if needed) 
-## 1.4 Compare Species to NCBI Taxonomy and rename to this standard
-## 1.5 Combine all data in all dataframes in cellcounts_data_list as a long dataframe
-## 1.6 Check for and address any conflicting datapoints across datasets 
+## 1.4 Rename Species using NCBI Taxonomy as the standard
+## 1.5 Filter: Remove flagged data in cellcounts_data_list
+## 1.6 Filter: Annex to Metadata any contingent variables
+## 1.7 Filter: Melt dataframe and address conflicting datapoints across datasets using priority
 
 ## 2. Examine WholeBrain dataset
 ## 2.1 Get a full list of WholeBrain_N.n from all dataframes in the list cellcounts_data_list.
@@ -58,8 +59,6 @@ for (i in seq_along(item_name)) {
   cellcounts_data_list[[item_name[i]]] <- item_data
 }
 
-# list2env(cellcounts_data_list, envir = environment()) # Make the dataframes available in the environment
-
 ## 1.2 Change to standardized terminology for all variables in those dataframes
 
 # Read standardized terms
@@ -92,10 +91,9 @@ all_variables <- sort(all_variables)
 all_variables
 
 # 1.3.2 Calculate variables to make comparisons
-# Different terms were used to show that in Kverkova et al 2018 included olfactory bulb in Whole brain, but in the other datasets it did not (see definitions).
+# Different definitions were used in different papers. Kverkova et al 2018 included olfactory bulb in Whole brain, whereas Herculano-Houzel team did not (see definitions).
 # "WholeBrainOlfactoryBulb" denotes the whole brain including the olfactory bulb
-# To standardize create new variables starting with "WholeBrain" before the first underscore by subtracting the "OlfactoryBulb" component from "WholeBrainOlfactoryBulb" and naming the new variable as "WholeBrain_X."
-# The formula is "WholeBrain_X"="WholeBrainOlfactoryBulb_X"−"OlfactoryBulb_X"
+# Formula to standardize: "WholeBrain_X" = "WholeBrainOlfactoryBulb_X" - "OlfactoryBulb_X"
 
 # Loop: Calculate "WholeBrain_" from differences between "WholeBrainOlfactoryBulb_" and "OlfactoryBulb_" columns
 for (i in seq_along(item_name)) {
@@ -124,7 +122,7 @@ for (i in seq_along(item_name)) {
   cellcounts_data_list[[i]] <- df
 }
 
-## 1.4 Compare Species to NCBI Taxonomy and rename to this standard
+## 1.4 Rename Species using NCBI Taxonomy as the standard
 
 # 1.4.1 Compare full source_species_list to NCBI Taxonomy ID 
 library(taxizedb)
@@ -167,9 +165,6 @@ source_species_ids <- source_species_ids[match(source_species_list, source_speci
 # Add a column to check if Preferred_Name is different from Original_Species_Name or if it's NA and Original_Species_Name is from names_not_listed
 source_species_ids$different <- ifelse(source_species_ids$Preferred_Name != source_species_ids$Species_Name_Source | (is.na(source_species_ids$Preferred_Name) & source_species_ids$Species_Name_Source %in% names_not_listed), TRUE, "")
 
-# Add a column to check if Preferred_Name is exactly the same as Species_Name_Source
-source_species_ids$exact <- ifelse(source_species_ids$Preferred_Name == source_species_ids$Species_Name_Source, TRUE, "")
-
 # Add a column called Reference_Note to source_species_ids
 source_species_ids$Reference_Note <- ifelse(
   source_species_ids$Preferred_Name == source_species_ids$Species_Name_Source, 
@@ -197,9 +192,9 @@ for (i in seq_along(cellcounts_data_list)) {
 }
 source_species_ids$Source_Species = sapply(source_species_list, function(species) paste(source_species_source[[species]], collapse = ", "))
 
-## 1.4.2 Create a new column for updated species names if they are not all the NCBI default Preferred Name for their Taxonomic ID
+## 1.4.2 Create a new column for updated species names if they are not all are the NCBI default Preferred Name for their Taxonomic ID
 
-# Add a column called Species_Name with the Preferred_Name. If NA, leave blank (for now).
+# Add a column called Species_Name with the Preferred_Name. If NA, leave blank.
 source_species_ids$Species_Name <- ifelse(
   !is.na(source_species_ids$Preferred_Name), 
   source_species_ids$Preferred_Name,
@@ -243,30 +238,133 @@ source_species_ids$Preferred_Name <- ifelse(
 write.csv(source_species_ids, "source_species_ids.csv", row.names = FALSE)
 
 # 1.4.3 If there are species without NCBI ID, duplicate "Species" in all dataframes in cellcounts_data_list and call it "Species_Source", so that "Species" can be edited
-# Loop through each data frame in the list
+# Loop through each data frame in the list. Duplicate the "Species" column and rename it to "Species_Source"
 for (i in seq_along(cellcounts_data_list)) {
-  # Duplicate the "Species" column and rename it to "Species_Source"
   cellcounts_data_list[[i]]$Species_Source <- cellcounts_data_list[[i]]$Species
 }
 
-# Loop through each data frame in the list cellcounts_data_list and the "Species" column by matching cellcounts_data_list "Species_Source"  to source_species_ids "Species_Name_Source", and then using the value from source_species_ids "Species_Name"
+# Loop through each data frame in the list and update the "Species" column by matching cellcounts_data_list "Species_Source" to source_species_ids "Species_Name_Source", and then using the value from source_species_ids "Species_Name"
 for (i in seq_along(cellcounts_data_list)) {
   cellcounts_data_list[[i]]$Species <- source_species_ids$Species_Name[match(cellcounts_data_list[[i]]$Species_Source, source_species_ids$Species_Name_Source)]
 }
 
-# Check species list versions it #Here, Homo sapiens sapiens was collapsed with Homo sapiens
-species_list_update2 <- character(0)
-for (i in seq_along(cellcounts_data_list)) {
-  # Combine the unique species names with the existing vector in alphabetical order
-  species_list_update2 <- sort(unique(c(species_list_update2, cellcounts_data_list[[i]]$Species)))
-}
-species_list_update2
-species_list
-source_species_list
+## 1.5 Filter: Remove flagged data in cellcounts_data_list
 
-## 1.5 Combine all data in all dataframes in cellcounts_data_list as a long dataframe
-combined_data <- lapply(names(cellcounts_data_list), function(source) {
-  df <- cellcounts_data_list[[source]]
+# Create a copy of cellcounts_data_list to filter
+filtered_cellcounts_data_list <- lapply(cellcounts_data_list, data.frame)
+
+## 1.5.1 Flag problematic data for removal
+
+# Initialize metadata_flags for each dataframe with a common suffix
+metadata_flags <- list()
+
+for (df in item_name) {
+  metadata_flags[[df]] <- data.frame(
+    Flag_Description = c(NA),
+    Flag_Condition = c(NA)
+  )
+}
+
+# Flag data in any relevant datasets
+
+# Extract suffixes from DosSantos_etal_2020_Table1 to determine secondary data variables to exclude.
+suffixes <- unique(sub(".*_", "", grep(".*_.*", colnames(cellcounts_data_list$DosSantos_etal_2020_Table1), value = TRUE)))
+# Ignore '_I.p.mg' and '_S.n' which are primary and Species_Source which is not really a variable.
+suffixes <- suffixes[!(suffixes %in% c("I.p.mg", "Source", "S.n"))]
+paste0("_",suffixes, collapse = "|") # Manually change the double quotes for single in the script
+
+# Define the changes for metadata_flags$DosSantos_etal_2020_Table1_metadata_flags
+metadata_flags$DosSantos_etal_2020_Table1$Flag_Condition <- c("grepl('_C.n|_I.n|_I.p.N|_N.n|_N.p.mg|_n.S|_Mass.g', colnames(filtered_cellcounts_data_list[[df_name]]))")
+metadata_flags$DosSantos_etal_2020_Table1$Flag_Description <- c("Omit secondary data due to some typos/conflicts with primary sources. Keep only I.mg.")
+
+# Loop through metadata_flags to save each dataframe as a separate CSV file
+for (df_name in names(metadata_flags)) {
+  # Save the dataframe as a CSV file
+  write.csv(metadata_flags[[df_name]], file = paste0(df_name, "_metadata_flags.csv"), row.names = FALSE)
+}
+
+# If metadata_flags dataframe Flag_Condition is a string, treat it as R script to identify a set of values in the corresponding dataframe in filtered_cellcounts_data_list, then delete that set
+# Loop through every dataframe in filtered_cellcounts_data_list
+for (df_name in names(filtered_cellcounts_data_list)) {
+  # df_name <- "DosSantos_etal_2020_Table1"
+  # Find the corresponding metadata_flags dataframe
+  flag_df <- metadata_flags[[df_name]]
+  
+  # If Flag_Condition is a string, use it as an R script
+  if (is.character(flag_df$Flag_Condition)) {
+    
+    # Assuming your R script is a valid condition
+    delete_datapoints <- flag_df$Flag_Condition
+    
+    # Designate a set of datapoints in the dataframe and delete them
+    subset_condition <- eval(parse(text = delete_datapoints))
+    matching_indices <- which(subset_condition)
+    
+    # Determine if rows or columns should be excluded
+    if (length(matching_indices) > 1) {
+      # Exclude matching columns from the copy
+      filtered_cellcounts_data_list[[df_name]] <- filtered_cellcounts_data_list[[df_name]][, -matching_indices]
+    } else if (length(matching_indices) == 1) {
+      # Exclude matching rows from the copy
+      filtered_cellcounts_data_list[[df_name]] <- filtered_cellcounts_data_list[[df_name]][-matching_indices, ]
+    } else {
+      # Handle the case when no indices are found (no exclusions needed)
+      cat("No matching indices found for exclusion in", df_name, "\n")
+    }
+  }
+}
+
+## 1.6 Filter: Annex to Metadata any contingent variables
+
+# Initialize an empty vector to store all column names, filtered
+filtered_all_variables <- character(0)
+# Loop through each data frame
+for (i in seq_along(item_name)) {
+  # Get the data frame associated with the current name
+  df <- filtered_cellcounts_data_list[[item_name[i]]]
+  # Extract column names (variables) from the current data frame
+  variables_in_df <- colnames(df)
+  # Combine unique column names with the existing vector
+  filtered_all_variables <- unique(c(filtered_all_variables, variables_in_df))
+}
+# Sort the column names alphabetically and view
+filtered_all_variables <- sort(filtered_all_variables)
+filtered_all_variables
+
+# Move specific variables from the main dataset, filtered_cellcounts_data_list, to the list annexed_metadata.
+# Extra taxonomic variables: "Species_Source", "Family", "Order", "Clade", "CommonName", "Micro.or.mega"    
+# Data Sources variables: variables ending in "_Source"
+
+# Initialize annexed_metadata as a named list
+annexed_metadata <- setNames(vector("list", length(filtered_cellcounts_data_list)), names(filtered_cellcounts_data_list))
+# Initialize variables_to_move as an empty vector
+variables_to_move <- character(0)
+# Iterate through the dataframes
+for (i in seq_along(filtered_cellcounts_data_list)) {
+  # Update variables_to_move including variables ending in "_Source" for each dataframe
+  variables_to_move <- c("Family", "Order", "Clade", "CommonName", "Micro.or.mega", grep("_Source$", names(filtered_cellcounts_data_list[[i]]), value = TRUE))
+  # Check if any of the variables to move are present in the dataframe
+  present_variables <- intersect(variables_to_move, names(filtered_cellcounts_data_list[[i]]))
+  if (length(present_variables) > 0) {
+    # Create a new dataframe with only the specified variables
+    annexed_data <- filtered_cellcounts_data_list[[i]][, present_variables, drop = FALSE]
+    # Remove the specified variables from the original dataframe
+    filtered_cellcounts_data_list[[i]] <- filtered_cellcounts_data_list[[i]][, !(names(filtered_cellcounts_data_list[[i]]) %in% present_variables), drop = FALSE]
+    # Add the new dataframe to annexed_metadata list
+    annexed_metadata[[names(filtered_cellcounts_data_list)[i]]] <- annexed_data
+  } else {
+    # Skip if none of the variables are present in the dataframe
+  }
+}
+
+
+
+## 1.7 Filter: Melt dataframe and address conflicting datapoints across datasets using priority
+
+## 1.7.1 Combine all data in all dataframes in filtered_cellcounts_data_list as a long dataframe
+
+combined_data <- lapply(names(filtered_cellcounts_data_list), function(source) {
+  df <- filtered_cellcounts_data_list[[source]]
   
   # Convert all columns to character strings
   df[] <- lapply(df, as.character)
@@ -282,23 +380,23 @@ combined_data <- lapply(names(cellcounts_data_list), function(source) {
 # Combine all dataframes in the list into a single dataframe
 combined_data <- bind_rows(combined_data)
 
-## 1.6 Check for and address any conflicting datapoints across datasets 
+## 1.7.2 Address conflicting datapoints across datasets using priority
 
-## 1.6.1 Determine worth order for dataframes to give priority
+## 1.7.3 Determine worth order for dataframes to give priority
 # Initialize an empty dataframe to store the summary
 worth_dataframe <- data.frame(source = character(),
                               date = numeric(),
                               number_species = numeric(),
                               stringsAsFactors = FALSE)
 
-# Iterate over the dataframes in cellcounts_data_list
-for (df_name in names(cellcounts_data_list)) {
+# Iterate over the dataframes in filtered_cellcounts_data_list
+for (df_name in names(filtered_cellcounts_data_list)) {
   
   # Extract date from the dataframe name
   date <- as.numeric(str_extract(df_name, "[0-9]+"))
   
   # Extract number of species from the dataframe
-  number_species <- nrow(cellcounts_data_list[[df_name]]) - 1  # Subtract 1 for the header
+  number_species <- nrow(filtered_cellcounts_data_list[[df_name]]) - 1  # Subtract 1 for the header
   
   # Append the information to the summary dataframe
   worth_dataframe <- rbind(worth_dataframe, data.frame(source = df_name,
@@ -320,7 +418,7 @@ combined_data$priority <- match(combined_data$Source,  worth_dataframe$source, w
 
 write_csv(combined_data, "combined_data.csv")
 
-## 1.6.2 Limit dataset to best available data
+## 1.7.4 Limit dataset to best available data
 # remove any NA values in combined_data
 intermediate_data <- combined_data[!is.na(combined_data$Value), , drop = FALSE]
 
@@ -330,14 +428,19 @@ intermediate_data$DECISION <- ""
 # Convert dataframe to a list of dataframes
 df_list <- split(intermediate_data, list(intermediate_data$Species, intermediate_data$Variable))
 
-# Create a loop to update "DECISION" based on the specified condition
+# Create a loop to update "DECISION" based on the priority condition
 for (i in seq_along(df_list)) {
   priority_values <- df_list[[i]]$priority
-  df_list[[i]]$DECISION[df_list[[i]]$priority > min(priority_values)] <- "WORSE"
+  
+  # Check if there are non-missing values in priority_values
+  if (any(!is.na(priority_values))) {
+    # Update "DECISION" based on the specified condition
+    df_list[[i]]$DECISION[df_list[[i]]$priority > min(priority_values, na.rm = TRUE)] <- "WORSE"
+  } else {
+    # Handle the case where all values are missing
+    df_list[[i]]$DECISION <- NA
+  }
 }
-
-# See the updated list of matrices #Use this for further comparisons as well
-df_list
 
 # Combine all rows from df_list into one dataframe excluding rows with DECISION:WORSE
 best_data_long <- do.call(rbind, df_list)
@@ -348,101 +451,3 @@ best_data_wide <- arrange(pivot_wider(best_data_long, id_cols = Species, names_f
 # keep a record of sources for the datapoints
 source_best_data_wide <- arrange(pivot_wider(best_data_long, id_cols = Species, names_from = Variable, values_from = Source), Species)
 write_csv(best_data_wide, "best_data_wide.csv")
-
-## 1.6.3 Comparisons to do with the previously created list of dfs df_list
-
-## 1.6.3.1 Check if there are values that differ, and check if any differ by than 1% 
-
-# Filter the list of dataframes to only include those with more than one row
-comp_df_list <- lapply(df_list, function(df) {
-  if (nrow(df) > 1) {
-    return(df)
-  } else {
-    return(NULL)  # Returning NULL for dataframes with one or fewer rows
-  }
-})
-
-# Remove NULL elements from the list
-comp_df_list <- comp_df_list[!sapply(comp_df_list, is.null)]
-
-# See the filtered list of dataframes
-comp_df_list
-
-# Filter the list of dataframes to only include those where the "Value" column differs between rows
-comp_df_list_diff <- lapply(comp_df_list, function(df) {
-  if (anyDuplicated(df$Value) == 0) {
-    return(df)
-  } else {
-    return(NULL)  # Returning NULL for dataframes with duplicate "Value" values
-  }
-})
-comp_df_list_diff <- comp_df_list_diff[!sapply(comp_df_list_diff, is.null)] # Remove NULL elements from the list
-
-# See the filtered list of dataframes with differing "Value" values
-comp_df_list_diff
-
-# Numericize "Value" and filter the dataframe list, retaining only those with over 1% variation in consecutive "Value" column entries.
-
-# Convert the "Value" column to numerical in comp_df_list_diff
-comp_df_list_diff <- lapply(comp_df_list_diff, function(df) {
-  df$Value <- as.numeric(df$Value)
-  return(df)
-})
-
-# Filter the list of dataframes to only include those where the "Value" column differs between rows by more than 1% (absolute value)
-# comp_df_list_diff_more_than_1_percent <- lapply(comp_df_list_diff, function(df) {
-#   if (all(diff(df$Value) / df$Value[-length(df$Value)] > 0.01)) {
-#     return(df)
-#   } else {
-#     return(NULL)  # Returning NULL for dataframes that don't meet the criteria
-#   }
-# })
-comp_df_list_diff_more_than_1_percent <- lapply(comp_df_list_diff, function(df) {
-  if (all(abs(diff(df$Value) / df$Value[-length(df$Value)]) > 0.01)) {
-    return(df)
-  } else {
-    return(NULL)  # Returning NULL for dataframes that don't meet the criteria
-  }
-})
-comp_df_list_diff_more_than_1_percent <- comp_df_list_diff_more_than_1_percent[!sapply(comp_df_list_diff_more_than_1_percent, is.null)] # Remove NULL elements from the list
-
-# See the filtered list of dataframes with differing "Value" values by more than 1%
-comp_df_list_diff_more_than_1_percent
-
-#### NOTE: Conflicts that differ by > 1% are all between HerculanoHouzel_etal_2015 and DosSantos_etal_2020 (different method), or Kverkova (different specimens) 
-
-# Check for species in cellcounts_data_list$DosSantos_etal_2020* but not in cellcounts_data_list$HerculanoHouzel_etal_2015*
-# Initialize an empty list to store dataframes
-dataframes_list <- list()
-
-# Create a list of dataframes for DosSantos_etal_2020
-dos_santos_df_names <- grep(paste0("^", "DosSantos_etal_2020"), names(cellcounts_data_list), value = TRUE)
-for (dos_santos_df_name in dos_santos_df_names) {
-  dataframes_list[[length(dataframes_list) + 1]] <- cellcounts_data_list[[dos_santos_df_name]]
-}
-
-# Create a list of dataframes for HerculanoHouzel_etal_2015
-herculano_houzel_df_names <- grep(paste0("^", "HerculanoHouzel_etal_2015"), names(cellcounts_data_list), value = TRUE)
-for (herculano_houzel_df_name in herculano_houzel_df_names) {
-  dataframes_list[[length(dataframes_list) + 1]] <- cellcounts_data_list[[herculano_houzel_df_name]]
-}
-
-# Get species from DosSantos_etal_2020 dataframes
-dos_santos_2020_species <- unique(unlist(lapply(dataframes_list[grepl("DosSantos_etal_2020", names(cellcounts_data_list))], function(df) df$Species)))
-dos_santos_2020_species
-
-# Get species from HerculanoHouzel_etal_2015 dataframes
-herculano_houzel_2015_species <- unique(unlist(lapply(dataframes_list[grepl("HerculanoHouzel_etal_2015", names(cellcounts_data_list))], function(df) df$Species)))
-herculano_houzel_2015_species
-
-# Identify unique species from these combined
-unique_species <- unique(c(dos_santos_2020_species, herculano_houzel_2015_species))
-unique_species
-
-# Identify species in DosSantos_etal_2020 but not in HerculanoHouzel_etal_2015
-species_only_in_dos_santos <- setdiff(dos_santos_2020_species, herculano_houzel_2015_species)
-species_only_in_dos_santos
-
-# Identify species in HerculanoHouzel_etal_2015 but not in DosSantos_etal_2020
-species_only_in_herculano_houzel <- setdiff(herculano_houzel_2015_species, dos_santos_2020_species)
-species_only_in_herculano_houzel

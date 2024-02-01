@@ -140,7 +140,7 @@ merged_terms_combined_key$Standardized_Term <- ifelse(merged_terms_combined_key$
 ## FILL OUT STRUCTURE_MEASURE FROM THE DEFINITIONS FILES THAT LIST THEM SEPARATELY
 
 ## Kverkova_etal_2018 table S1,S5
-# Use stucture and measure list to match Kverkova_etal_2018
+# Use structure and measure list to match Kverkova_etal_2018
 Kverkova_etal_2018_definitions <- read.csv("Kverkova_etal_2018_definitions.csv")
 fillStandardizedTerm <- function(merged_terms_combined_key, Kverkova_etal_2018_definitions) {
   # Filter rows in merged_terms_combined_key where Standardized_Term is NA and Reference starts with "Kverkova_etal_2018"

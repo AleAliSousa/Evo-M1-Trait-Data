@@ -1,3 +1,52 @@
+# Create a copy of cellcounts_data_list
+filtered_cellcounts_data_list <- lapply(cellcounts_data_list, data.frame)
+
+# Loop through every dataframe in filtered_cellcounts_data_list
+for (df_name in names(filtered_cellcounts_data_list)) {
+  
+  # Find the corresponding metadata_flags dataframe
+  flag_df <- metadata_flags[[df_name]]
+  
+  # If Flag_Condition is a string, use it as an R script
+  if (is.character(flag_df$Flag_Condition)) {
+    
+    # Assuming your R script is a valid condition
+    condition_script <- flag_df$Flag_Condition
+    
+    # Designate a set of datapoints in the dataframe and delete them
+    subset_condition <- eval(parse(text = condition_script))
+    
+    # Filter the dataframe using subset on the copy
+    filtered_cellcounts_data_list[[df_name]] <- subset(filtered_cellcounts_data_list[[df_name]], !subset_condition)
+  }
+}
+
+# View the modified list of dataframes outside the loop
+View(filtered_cellcounts_data_list)
+
+
+
+
+
+
+
+# # Create an independent copy using data.frame of DosSantos_etal_2020_Table1  data frame in filtered_cellcounts_data_list
+# DosSantos_etal_2020_Table1 <- data.frame(filtered_cellcounts_data_list[["DosSantos_etal_2020_Table1"]])
+# 
+# # Delete the identified columns in the independent dataframe DosSantos_etal_2020_Table1
+# DosSantos_etal_2020_Table1 <- DosSantos_etal_2020_Table1[, !(colnames(DosSantos_etal_2020_Table1) %in% colnames(DosSantos_etal_2020_Table1)[grepl('_C.n|_I.n|_I.p.N|_N.n|_N.p.mg|_n|_Mass.g', colnames(DosSantos_etal_2020_Table1))])]
+# 
+# # Delete the identified columns directly in filtered_cellcounts_data_list[["DosSantos_etal_2020_Table1"]]
+# filtered_cellcounts_data_list[["DosSantos_etal_2020_Table1"]] <-
+#   filtered_cellcounts_data_list[["DosSantos_etal_2020_Table1"]][,!(
+#     colnames(filtered_cellcounts_data_list[["DosSantos_etal_2020_Table1"]]) %in%
+#       colnames(filtered_cellcounts_data_list[["DosSantos_etal_2020_Table1"]])[grepl(
+#         '_C.n|_I.n|_I.p.N|_N.n|_N.p.mg|_n|_Mass.g',
+#         colnames(filtered_cellcounts_data_list[["DosSantos_etal_2020_Table1"]])
+#       )]
+#   )]
+
+
 # Load necessary libraries
 library(dplyr)
 

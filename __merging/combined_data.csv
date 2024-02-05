@@ -225,7 +225,7 @@ Notamacropus rufogriseus,Mesencephalon_Mass.g,DosSantos_etal_2017_TableS1,NA,6
 Notamacropus rufogriseus,MesencephalonDiencephalonStriatum_Mass.g,DosSantos_etal_2017_TableS1,5.93,6
 Notamacropus rufogriseus,PonsMedulla_Mass.g,DosSantos_etal_2017_TableS1,1.39,6
 Notamacropus rufogriseus,OlfactoryBulb_Mass.g,DosSantos_etal_2017_TableS1,NA,6
-Notamacropus rufogriseus,WholeBrain_N.n,DosSantos_etal_2017_TableS1,1.32e+09,6
+Notamacropus rufogriseus,WholeBrain_N.n,DosSantos_etal_2017_TableS1,1320000000,6
 Notamacropus rufogriseus,CerebralCortex_N.n,DosSantos_etal_2017_TableS1,256780000,6
 Notamacropus rufogriseus,CerebralCortexGrey_N.n,DosSantos_etal_2017_TableS1,207740000,6
 Notamacropus rufogriseus,Hippocampus_N.n,DosSantos_etal_2017_TableS1,10770000,6
@@ -268,7 +268,7 @@ Wallabia bicolor,Mesencephalon_Mass.g,DosSantos_etal_2017_TableS1,NA,6
 Wallabia bicolor,MesencephalonDiencephalonStriatum_Mass.g,DosSantos_etal_2017_TableS1,6.396,6
 Wallabia bicolor,PonsMedulla_Mass.g,DosSantos_etal_2017_TableS1,4.014,6
 Wallabia bicolor,OlfactoryBulb_Mass.g,DosSantos_etal_2017_TableS1,NA,6
-Wallabia bicolor,WholeBrain_N.n,DosSantos_etal_2017_TableS1,1.44e+09,6
+Wallabia bicolor,WholeBrain_N.n,DosSantos_etal_2017_TableS1,1440000000,6
 Wallabia bicolor,CerebralCortex_N.n,DosSantos_etal_2017_TableS1,208110000,6
 Wallabia bicolor,CerebralCortexGrey_N.n,DosSantos_etal_2017_TableS1,170420000,6
 Wallabia bicolor,Hippocampus_N.n,DosSantos_etal_2017_TableS1,12970000,6
@@ -354,7 +354,7 @@ Dendrolagus goodfellowi,Mesencephalon_Mass.g,DosSantos_etal_2017_TableS1,NA,6
 Dendrolagus goodfellowi,MesencephalonDiencephalonStriatum_Mass.g,DosSantos_etal_2017_TableS1,5.066,6
 Dendrolagus goodfellowi,PonsMedulla_Mass.g,DosSantos_etal_2017_TableS1,2.676,6
 Dendrolagus goodfellowi,OlfactoryBulb_Mass.g,DosSantos_etal_2017_TableS1,NA,6
-Dendrolagus goodfellowi,WholeBrain_N.n,DosSantos_etal_2017_TableS1,1.55e+09,6
+Dendrolagus goodfellowi,WholeBrain_N.n,DosSantos_etal_2017_TableS1,1550000000,6
 Dendrolagus goodfellowi,CerebralCortex_N.n,DosSantos_etal_2017_TableS1,273430000,6
 Dendrolagus goodfellowi,CerebralCortexGrey_N.n,DosSantos_etal_2017_TableS1,188300000,6
 Dendrolagus goodfellowi,Hippocampus_N.n,DosSantos_etal_2017_TableS1,18150000,6
@@ -397,7 +397,7 @@ Macropus fuliginosus,Mesencephalon_Mass.g,DosSantos_etal_2017_TableS1,NA,6
 Macropus fuliginosus,MesencephalonDiencephalonStriatum_Mass.g,DosSantos_etal_2017_TableS1,10.81,6
 Macropus fuliginosus,PonsMedulla_Mass.g,DosSantos_etal_2017_TableS1,4.362,6
 Macropus fuliginosus,OlfactoryBulb_Mass.g,DosSantos_etal_2017_TableS1,NA,6
-Macropus fuliginosus,WholeBrain_N.n,DosSantos_etal_2017_TableS1,2.46e+09,6
+Macropus fuliginosus,WholeBrain_N.n,DosSantos_etal_2017_TableS1,2460000000,6
 Macropus fuliginosus,CerebralCortex_N.n,DosSantos_etal_2017_TableS1,370170000,6
 Macropus fuliginosus,CerebralCortexGrey_N.n,DosSantos_etal_2017_TableS1,271030000,6
 Macropus fuliginosus,Hippocampus_N.n,DosSantos_etal_2017_TableS1,44770000,6
@@ -430,467 +430,236 @@ Macropus fuliginosus,MesencephalonDiencephalonStriatum_O.p.N,DosSantos_etal_2017
 Macropus fuliginosus,PonsMedulla_O.p.N,DosSantos_etal_2017_TableS1,11.821,6
 Macropus fuliginosus,OlfactoryBulb_O.p.N,DosSantos_etal_2017_TableS1,NA,6
 Dendrohyrax dorsalis,WholeBrain_I.p.mg,DosSantos_etal_2020_Table1,10129,1
-Dendrohyrax dorsalis,WholeBrain_S.n,DosSantos_etal_2020_Table1,7,1
 Dendrohyrax dorsalis,Cerebellum_I.p.mg,DosSantos_etal_2020_Table1,1235,1
-Dendrohyrax dorsalis,Cerebellum_S.n,DosSantos_etal_2020_Table1,1,1
 Dendrohyrax dorsalis,CerebralCortexNoHippocampus_I.p.mg,DosSantos_etal_2020_Table1,1805,1
-Dendrohyrax dorsalis,CerebralCortexNoHippocampus_S.n,DosSantos_etal_2020_Table1,2,1
 Dendrohyrax dorsalis,CerebralCortex_I.p.mg,DosSantos_etal_2020_Table1,1832,1
-Dendrohyrax dorsalis,CerebralCortex_S.n,DosSantos_etal_2020_Table1,3,1
 Dendrohyrax dorsalis,Hippocampus_I.p.mg,DosSantos_etal_2020_Table1,2089,1
-Dendrohyrax dorsalis,Hippocampus_S.n,DosSantos_etal_2020_Table1,1,1
 Dendrohyrax dorsalis,PonsMedulla_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Dendrohyrax dorsalis,PonsMedulla_S.n,DosSantos_etal_2020_Table1,NA,1
 Dendrohyrax dorsalis,RoB_I.p.mg,DosSantos_etal_2020_Table1,3299,1
-Dendrohyrax dorsalis,RoB_S.n,DosSantos_etal_2020_Table1,3,1
 Elephantulus myurus,WholeBrain_I.p.mg,DosSantos_etal_2020_Table1,2818,1
-Elephantulus myurus,WholeBrain_S.n,DosSantos_etal_2020_Table1,7,1
 Elephantulus myurus,Cerebellum_I.p.mg,DosSantos_etal_2020_Table1,4896,1
-Elephantulus myurus,Cerebellum_S.n,DosSantos_etal_2020_Table1,2,1
 Elephantulus myurus,CerebralCortexNoHippocampus_I.p.mg,DosSantos_etal_2020_Table1,1631,1
-Elephantulus myurus,CerebralCortexNoHippocampus_S.n,DosSantos_etal_2020_Table1,2,1
 Elephantulus myurus,CerebralCortex_I.p.mg,DosSantos_etal_2020_Table1,2338,1
-Elephantulus myurus,CerebralCortex_S.n,DosSantos_etal_2020_Table1,3,1
 Elephantulus myurus,Hippocampus_I.p.mg,DosSantos_etal_2020_Table1,4116,1
-Elephantulus myurus,Hippocampus_S.n,DosSantos_etal_2020_Table1,1,1
 Elephantulus myurus,PonsMedulla_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Elephantulus myurus,PonsMedulla_S.n,DosSantos_etal_2020_Table1,NA,1
 Elephantulus myurus,RoB_I.p.mg,DosSantos_etal_2020_Table1,3295,1
-Elephantulus myurus,RoB_S.n,DosSantos_etal_2020_Table1,2,1
 Loxodonta africana,WholeBrain_I.p.mg,DosSantos_etal_2020_Table1,4562,1
-Loxodonta africana,WholeBrain_S.n,DosSantos_etal_2020_Table1,388,1
 Loxodonta africana,Cerebellum_I.p.mg,DosSantos_etal_2020_Table1,5982,1
-Loxodonta africana,Cerebellum_S.n,DosSantos_etal_2020_Table1,80,1
 Loxodonta africana,CerebralCortexNoHippocampus_I.p.mg,DosSantos_etal_2020_Table1,4149,1
-Loxodonta africana,CerebralCortexNoHippocampus_S.n,DosSantos_etal_2020_Table1,263,1
 Loxodonta africana,CerebralCortex_I.p.mg,DosSantos_etal_2020_Table1,4192,1
-Loxodonta africana,CerebralCortex_S.n,DosSantos_etal_2020_Table1,264,1
 Loxodonta africana,Hippocampus_I.p.mg,DosSantos_etal_2020_Table1,8175,1
-Loxodonta africana,Hippocampus_S.n,DosSantos_etal_2020_Table1,1,1
 Loxodonta africana,PonsMedulla_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Loxodonta africana,PonsMedulla_S.n,DosSantos_etal_2020_Table1,NA,1
 Loxodonta africana,RoB_I.p.mg,DosSantos_etal_2020_Table1,3450,1
-Loxodonta africana,RoB_S.n,DosSantos_etal_2020_Table1,44,1
 Petrodromus tetradactylus,WholeBrain_I.p.mg,DosSantos_etal_2020_Table1,2743,1
-Petrodromus tetradactylus,WholeBrain_S.n,DosSantos_etal_2020_Table1,8,1
 Petrodromus tetradactylus,Cerebellum_I.p.mg,DosSantos_etal_2020_Table1,4206,1
-Petrodromus tetradactylus,Cerebellum_S.n,DosSantos_etal_2020_Table1,2,1
 Petrodromus tetradactylus,CerebralCortexNoHippocampus_I.p.mg,DosSantos_etal_2020_Table1,3018,1
-Petrodromus tetradactylus,CerebralCortexNoHippocampus_S.n,DosSantos_etal_2020_Table1,2,1
 Petrodromus tetradactylus,CerebralCortex_I.p.mg,DosSantos_etal_2020_Table1,3019,1
-Petrodromus tetradactylus,CerebralCortex_S.n,DosSantos_etal_2020_Table1,4,1
 Petrodromus tetradactylus,Hippocampus_I.p.mg,DosSantos_etal_2020_Table1,3032,1
-Petrodromus tetradactylus,Hippocampus_S.n,DosSantos_etal_2020_Table1,2,1
 Petrodromus tetradactylus,PonsMedulla_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Petrodromus tetradactylus,PonsMedulla_S.n,DosSantos_etal_2020_Table1,NA,1
 Petrodromus tetradactylus,RoB_I.p.mg,DosSantos_etal_2020_Table1,1845,1
-Petrodromus tetradactylus,RoB_S.n,DosSantos_etal_2020_Table1,2,1
 Procavia capensis,WholeBrain_I.p.mg,DosSantos_etal_2020_Table1,3389,1
-Procavia capensis,WholeBrain_S.n,DosSantos_etal_2020_Table1,12,1
 Procavia capensis,Cerebellum_I.p.mg,DosSantos_etal_2020_Table1,3801,1
-Procavia capensis,Cerebellum_S.n,DosSantos_etal_2020_Table1,2,1
 Procavia capensis,CerebralCortexNoHippocampus_I.p.mg,DosSantos_etal_2020_Table1,3604,1
-Procavia capensis,CerebralCortexNoHippocampus_S.n,DosSantos_etal_2020_Table1,4,1
 Procavia capensis,CerebralCortex_I.p.mg,DosSantos_etal_2020_Table1,3637,1
-Procavia capensis,CerebralCortex_S.n,DosSantos_etal_2020_Table1,6,1
 Procavia capensis,Hippocampus_I.p.mg,DosSantos_etal_2020_Table1,3860,1
-Procavia capensis,Hippocampus_S.n,DosSantos_etal_2020_Table1,2,1
 Procavia capensis,PonsMedulla_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Procavia capensis,PonsMedulla_S.n,DosSantos_etal_2020_Table1,NA,1
 Procavia capensis,RoB_I.p.mg,DosSantos_etal_2020_Table1,2594,1
-Procavia capensis,RoB_S.n,DosSantos_etal_2020_Table1,4,1
 Antidorcas marsupialis,WholeBrain_I.p.mg,DosSantos_etal_2020_Table1,3810,1
-Antidorcas marsupialis,WholeBrain_S.n,DosSantos_etal_2020_Table1,34,1
 Antidorcas marsupialis,Cerebellum_I.p.mg,DosSantos_etal_2020_Table1,5147,1
-Antidorcas marsupialis,Cerebellum_S.n,DosSantos_etal_2020_Table1,2,1
 Antidorcas marsupialis,CerebralCortexNoHippocampus_I.p.mg,DosSantos_etal_2020_Table1,3790,1
-Antidorcas marsupialis,CerebralCortexNoHippocampus_S.n,DosSantos_etal_2020_Table1,28,1
 Antidorcas marsupialis,CerebralCortex_I.p.mg,DosSantos_etal_2020_Table1,3791,1
-Antidorcas marsupialis,CerebralCortex_S.n,DosSantos_etal_2020_Table1,29,1
 Antidorcas marsupialis,Hippocampus_I.p.mg,DosSantos_etal_2020_Table1,3778,1
-Antidorcas marsupialis,Hippocampus_S.n,DosSantos_etal_2020_Table1,1,1
 Antidorcas marsupialis,PonsMedulla_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Antidorcas marsupialis,PonsMedulla_S.n,DosSantos_etal_2020_Table1,NA,1
 Antidorcas marsupialis,RoB_I.p.mg,DosSantos_etal_2020_Table1,3267,1
-Antidorcas marsupialis,RoB_S.n,DosSantos_etal_2020_Table1,3,1
 Giraffa camelopardalis,WholeBrain_I.p.mg,DosSantos_etal_2020_Table1,6278,1
-Giraffa camelopardalis,WholeBrain_S.n,DosSantos_etal_2020_Table1,51,1
 Giraffa camelopardalis,Cerebellum_I.p.mg,DosSantos_etal_2020_Table1,4401,1
-Giraffa camelopardalis,Cerebellum_S.n,DosSantos_etal_2020_Table1,1,1
 Giraffa camelopardalis,CerebralCortexNoHippocampus_I.p.mg,DosSantos_etal_2020_Table1,6278,1
-Giraffa camelopardalis,CerebralCortexNoHippocampus_S.n,DosSantos_etal_2020_Table1,44,1
 Giraffa camelopardalis,CerebralCortex_I.p.mg,DosSantos_etal_2020_Table1,6330,1
-Giraffa camelopardalis,CerebralCortex_S.n,DosSantos_etal_2020_Table1,45,1
 Giraffa camelopardalis,Hippocampus_I.p.mg,DosSantos_etal_2020_Table1,9327,1
-Giraffa camelopardalis,Hippocampus_S.n,DosSantos_etal_2020_Table1,1,1
 Giraffa camelopardalis,PonsMedulla_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Giraffa camelopardalis,PonsMedulla_S.n,DosSantos_etal_2020_Table1,NA,1
 Giraffa camelopardalis,RoB_I.p.mg,DosSantos_etal_2020_Table1,7005,1
-Giraffa camelopardalis,RoB_S.n,DosSantos_etal_2020_Table1,5,1
 Sus scrofa domesticus,WholeBrain_I.p.mg,DosSantos_etal_2020_Table1,9310,1
-Sus scrofa domesticus,WholeBrain_S.n,DosSantos_etal_2020_Table1,28,1
 Sus scrofa domesticus,Cerebellum_I.p.mg,DosSantos_etal_2020_Table1,10536,1
-Sus scrofa domesticus,Cerebellum_S.n,DosSantos_etal_2020_Table1,1,1
 Sus scrofa domesticus,CerebralCortexNoHippocampus_I.p.mg,DosSantos_etal_2020_Table1,8932,1
-Sus scrofa domesticus,CerebralCortexNoHippocampus_S.n,DosSantos_etal_2020_Table1,23,1
 Sus scrofa domesticus,CerebralCortex_I.p.mg,DosSantos_etal_2020_Table1,9048,1
-Sus scrofa domesticus,CerebralCortex_S.n,DosSantos_etal_2020_Table1,24,1
 Sus scrofa domesticus,Hippocampus_I.p.mg,DosSantos_etal_2020_Table1,11480,1
-Sus scrofa domesticus,Hippocampus_S.n,DosSantos_etal_2020_Table1,1,1
 Sus scrofa domesticus,PonsMedulla_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Sus scrofa domesticus,PonsMedulla_S.n,DosSantos_etal_2020_Table1,NA,1
 Sus scrofa domesticus,RoB_I.p.mg,DosSantos_etal_2020_Table1,9386,1
-Sus scrofa domesticus,RoB_S.n,DosSantos_etal_2020_Table1,3,1
 Tragelaphus strepsiceros,WholeBrain_I.p.mg,DosSantos_etal_2020_Table1,3800,1
-Tragelaphus strepsiceros,WholeBrain_S.n,DosSantos_etal_2020_Table1,43,1
 Tragelaphus strepsiceros,Cerebellum_I.p.mg,DosSantos_etal_2020_Table1,3041,1
-Tragelaphus strepsiceros,Cerebellum_S.n,DosSantos_etal_2020_Table1,1,1
 Tragelaphus strepsiceros,CerebralCortexNoHippocampus_I.p.mg,DosSantos_etal_2020_Table1,3772,1
-Tragelaphus strepsiceros,CerebralCortexNoHippocampus_S.n,DosSantos_etal_2020_Table1,36,1
 Tragelaphus strepsiceros,CerebralCortex_I.p.mg,DosSantos_etal_2020_Table1,3718,1
-Tragelaphus strepsiceros,CerebralCortex_S.n,DosSantos_etal_2020_Table1,37,1
 Tragelaphus strepsiceros,Hippocampus_I.p.mg,DosSantos_etal_2020_Table1,4710,1
-Tragelaphus strepsiceros,Hippocampus_S.n,DosSantos_etal_2020_Table1,1,1
 Tragelaphus strepsiceros,PonsMedulla_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Tragelaphus strepsiceros,PonsMedulla_S.n,DosSantos_etal_2020_Table1,NA,1
 Tragelaphus strepsiceros,RoB_I.p.mg,DosSantos_etal_2020_Table1,4485,1
-Tragelaphus strepsiceros,RoB_S.n,DosSantos_etal_2020_Table1,5,1
 Canis lupus familiaris,WholeBrain_I.p.mg,DosSantos_etal_2020_Table1,5382,1
-Canis lupus familiaris,WholeBrain_S.n,DosSantos_etal_2020_Table1,94,1
 Canis lupus familiaris,Cerebellum_I.p.mg,DosSantos_etal_2020_Table1,6421,1
-Canis lupus familiaris,Cerebellum_S.n,DosSantos_etal_2020_Table1,2,1
 Canis lupus familiaris,CerebralCortexNoHippocampus_I.p.mg,DosSantos_etal_2020_Table1,4767,1
-Canis lupus familiaris,CerebralCortexNoHippocampus_S.n,DosSantos_etal_2020_Table1,84,1
 Canis lupus familiaris,CerebralCortex_I.p.mg,DosSantos_etal_2020_Table1,4788,1
-Canis lupus familiaris,CerebralCortex_S.n,DosSantos_etal_2020_Table1,86,1
 Canis lupus familiaris,Hippocampus_I.p.mg,DosSantos_etal_2020_Table1,5543,1
-Canis lupus familiaris,Hippocampus_S.n,DosSantos_etal_2020_Table1,2,1
 Canis lupus familiaris,PonsMedulla_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Canis lupus familiaris,PonsMedulla_S.n,DosSantos_etal_2020_Table1,NA,1
 Canis lupus familiaris,RoB_I.p.mg,DosSantos_etal_2020_Table1,7681,1
-Canis lupus familiaris,RoB_S.n,DosSantos_etal_2020_Table1,6,1
 Felis catus,WholeBrain_I.p.mg,DosSantos_etal_2020_Table1,3032,1
-Felis catus,WholeBrain_S.n,DosSantos_etal_2020_Table1,48,1
 Felis catus,Cerebellum_I.p.mg,DosSantos_etal_2020_Table1,4271,1
-Felis catus,Cerebellum_S.n,DosSantos_etal_2020_Table1,1,1
 Felis catus,CerebralCortexNoHippocampus_I.p.mg,DosSantos_etal_2020_Table1,3078,1
-Felis catus,CerebralCortexNoHippocampus_S.n,DosSantos_etal_2020_Table1,43,1
 Felis catus,CerebralCortex_I.p.mg,DosSantos_etal_2020_Table1,3048,1
-Felis catus,CerebralCortex_S.n,DosSantos_etal_2020_Table1,44,1
 Felis catus,Hippocampus_I.p.mg,DosSantos_etal_2020_Table1,2228,1
-Felis catus,Hippocampus_S.n,DosSantos_etal_2020_Table1,1,1
 Felis catus,PonsMedulla_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Felis catus,PonsMedulla_S.n,DosSantos_etal_2020_Table1,NA,1
 Felis catus,RoB_I.p.mg,DosSantos_etal_2020_Table1,1831,1
-Felis catus,RoB_S.n,DosSantos_etal_2020_Table1,3,1
 Mungos mungo,WholeBrain_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Mungos mungo,WholeBrain_S.n,DosSantos_etal_2020_Table1,24,1
 Mungos mungo,Cerebellum_I.p.mg,DosSantos_etal_2020_Table1,5617,1
-Mungos mungo,Cerebellum_S.n,DosSantos_etal_2020_Table1,1,1
 Mungos mungo,CerebralCortexNoHippocampus_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Mungos mungo,CerebralCortexNoHippocampus_S.n,DosSantos_etal_2020_Table1,19,1
 Mungos mungo,CerebralCortex_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Mungos mungo,CerebralCortex_S.n,DosSantos_etal_2020_Table1,20,1
 Mungos mungo,Hippocampus_I.p.mg,DosSantos_etal_2020_Table1,2018,1
-Mungos mungo,Hippocampus_S.n,DosSantos_etal_2020_Table1,1,1
 Mungos mungo,PonsMedulla_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Mungos mungo,PonsMedulla_S.n,DosSantos_etal_2020_Table1,NA,1
 Mungos mungo,RoB_I.p.mg,DosSantos_etal_2020_Table1,1.915,1
-Mungos mungo,RoB_S.n,DosSantos_etal_2020_Table1,3,1
 Mustela putorius furo,WholeBrain_I.p.mg,DosSantos_etal_2020_Table1,7758,1
-Mustela putorius furo,WholeBrain_S.n,DosSantos_etal_2020_Table1,30,1
 Mustela putorius furo,Cerebellum_I.p.mg,DosSantos_etal_2020_Table1,9601,1
-Mustela putorius furo,Cerebellum_S.n,DosSantos_etal_2020_Table1,2,1
 Mustela putorius furo,CerebralCortexNoHippocampus_I.p.mg,DosSantos_etal_2020_Table1,6274,1
-Mustela putorius furo,CerebralCortexNoHippocampus_S.n,DosSantos_etal_2020_Table1,22,1
 Mustela putorius furo,CerebralCortex_I.p.mg,DosSantos_etal_2020_Table1,6530,1
-Mustela putorius furo,CerebralCortex_S.n,DosSantos_etal_2020_Table1,24,1
 Mustela putorius furo,Hippocampus_I.p.mg,DosSantos_etal_2020_Table1,8683,1
-Mustela putorius furo,Hippocampus_S.n,DosSantos_etal_2020_Table1,2,1
 Mustela putorius furo,PonsMedulla_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Mustela putorius furo,PonsMedulla_S.n,DosSantos_etal_2020_Table1,NA,1
 Mustela putorius furo,RoB_I.p.mg,DosSantos_etal_2020_Table1,9269,1
-Mustela putorius furo,RoB_S.n,DosSantos_etal_2020_Table1,4,1
 Panthera leo,WholeBrain_I.p.mg,DosSantos_etal_2020_Table1,5679,1
-Panthera leo,WholeBrain_S.n,DosSantos_etal_2020_Table1,110,1
 Panthera leo,Cerebellum_I.p.mg,DosSantos_etal_2020_Table1,4989,1
-Panthera leo,Cerebellum_S.n,DosSantos_etal_2020_Table1,1,1
 Panthera leo,CerebralCortexNoHippocampus_I.p.mg,DosSantos_etal_2020_Table1,5757,1
-Panthera leo,CerebralCortexNoHippocampus_S.n,DosSantos_etal_2020_Table1,106,1
 Panthera leo,CerebralCortex_I.p.mg,DosSantos_etal_2020_Table1,5686,1
-Panthera leo,CerebralCortex_S.n,DosSantos_etal_2020_Table1,107,1
 Panthera leo,Hippocampus_I.p.mg,DosSantos_etal_2020_Table1,2984,1
-Panthera leo,Hippocampus_S.n,DosSantos_etal_2020_Table1,1,1
 Panthera leo,PonsMedulla_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Panthera leo,PonsMedulla_S.n,DosSantos_etal_2020_Table1,NA,1
 Panthera leo,RoB_I.p.mg,DosSantos_etal_2020_Table1,6169,1
-Panthera leo,RoB_S.n,DosSantos_etal_2020_Table1,2,1
 Ursus arctos,WholeBrain_I.p.mg,DosSantos_etal_2020_Table1,3591,1
-Ursus arctos,WholeBrain_S.n,DosSantos_etal_2020_Table1,121,1
 Ursus arctos,Cerebellum_I.p.mg,DosSantos_etal_2020_Table1,4174,1
-Ursus arctos,Cerebellum_S.n,DosSantos_etal_2020_Table1,1,1
 Ursus arctos,CerebralCortexNoHippocampus_I.p.mg,DosSantos_etal_2020_Table1,3833,1
-Ursus arctos,CerebralCortexNoHippocampus_S.n,DosSantos_etal_2020_Table1,115,1
 Ursus arctos,CerebralCortex_I.p.mg,DosSantos_etal_2020_Table1,3801,1
-Ursus arctos,CerebralCortex_S.n,DosSantos_etal_2020_Table1,116,1
 Ursus arctos,Hippocampus_I.p.mg,DosSantos_etal_2020_Table1,2135,1
-Ursus arctos,Hippocampus_S.n,DosSantos_etal_2020_Table1,1,1
 Ursus arctos,PonsMedulla_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Ursus arctos,PonsMedulla_S.n,DosSantos_etal_2020_Table1,NA,1
 Ursus arctos,RoB_I.p.mg,DosSantos_etal_2020_Table1,2062,1
-Ursus arctos,RoB_S.n,DosSantos_etal_2020_Table1,4,1
 Dendrolagus goodfellowi,WholeBrain_I.p.mg,DosSantos_etal_2020_Table1,3818,1
-Dendrolagus goodfellowi,WholeBrain_S.n,DosSantos_etal_2020_Table1,49,1
 Dendrolagus goodfellowi,Cerebellum_I.p.mg,DosSantos_etal_2020_Table1,2408,1
-Dendrolagus goodfellowi,Cerebellum_S.n,DosSantos_etal_2020_Table1,1,1
 Dendrolagus goodfellowi,CerebralCortexNoHippocampus_I.p.mg,DosSantos_etal_2020_Table1,4064,1
-Dendrolagus goodfellowi,CerebralCortexNoHippocampus_S.n,DosSantos_etal_2020_Table1,45,1
 Dendrolagus goodfellowi,CerebralCortex_I.p.mg,DosSantos_etal_2020_Table1,4110,1
-Dendrolagus goodfellowi,CerebralCortex_S.n,DosSantos_etal_2020_Table1,46,1
 Dendrolagus goodfellowi,Hippocampus_I.p.mg,DosSantos_etal_2020_Table1,4798,1
-Dendrolagus goodfellowi,Hippocampus_S.n,DosSantos_etal_2020_Table1,1,1
 Dendrolagus goodfellowi,PonsMedulla_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Dendrolagus goodfellowi,PonsMedulla_S.n,DosSantos_etal_2020_Table1,NA,1
 Dendrolagus goodfellowi,RoB_I.p.mg,DosSantos_etal_2020_Table1,3835,1
-Dendrolagus goodfellowi,RoB_S.n,DosSantos_etal_2020_Table1,2,1
 Didelphis aurita,WholeBrain_I.p.mg,DosSantos_etal_2020_Table1,5961,1
-Didelphis aurita,WholeBrain_S.n,DosSantos_etal_2020_Table1,35,1
 Didelphis aurita,Cerebellum_I.p.mg,DosSantos_etal_2020_Table1,6893,1
-Didelphis aurita,Cerebellum_S.n,DosSantos_etal_2020_Table1,1,1
 Didelphis aurita,CerebralCortexNoHippocampus_I.p.mg,DosSantos_etal_2020_Table1,5679,1
-Didelphis aurita,CerebralCortexNoHippocampus_S.n,DosSantos_etal_2020_Table1,30,1
 Didelphis aurita,CerebralCortex_I.p.mg,DosSantos_etal_2020_Table1,5511,1
-Didelphis aurita,CerebralCortex_S.n,DosSantos_etal_2020_Table1,31,1
 Didelphis aurita,Hippocampus_I.p.mg,DosSantos_etal_2020_Table1,4788,1
-Didelphis aurita,Hippocampus_S.n,DosSantos_etal_2020_Table1,1,1
 Didelphis aurita,PonsMedulla_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Didelphis aurita,PonsMedulla_S.n,DosSantos_etal_2020_Table1,NA,1
 Didelphis aurita,RoB_I.p.mg,DosSantos_etal_2020_Table1,6043,1
-Didelphis aurita,RoB_S.n,DosSantos_etal_2020_Table1,3,1
 Macropus fuliginosus,WholeBrain_I.p.mg,DosSantos_etal_2020_Table1,4235,1
-Macropus fuliginosus,WholeBrain_S.n,DosSantos_etal_2020_Table1,57,1
 Macropus fuliginosus,Cerebellum_I.p.mg,DosSantos_etal_2020_Table1,3107,1
-Macropus fuliginosus,Cerebellum_S.n,DosSantos_etal_2020_Table1,1,1
 Macropus fuliginosus,CerebralCortexNoHippocampus_I.p.mg,DosSantos_etal_2020_Table1,3913,1
-Macropus fuliginosus,CerebralCortexNoHippocampus_S.n,DosSantos_etal_2020_Table1,53,1
 Macropus fuliginosus,CerebralCortex_I.p.mg,DosSantos_etal_2020_Table1,4023,1
-Macropus fuliginosus,CerebralCortex_S.n,DosSantos_etal_2020_Table1,54,1
 Macropus fuliginosus,Hippocampus_I.p.mg,DosSantos_etal_2020_Table1,5438,1
-Macropus fuliginosus,Hippocampus_S.n,DosSantos_etal_2020_Table1,1,1
 Macropus fuliginosus,PonsMedulla_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Macropus fuliginosus,PonsMedulla_S.n,DosSantos_etal_2020_Table1,NA,1
 Macropus fuliginosus,RoB_I.p.mg,DosSantos_etal_2020_Table1,5337,1
-Macropus fuliginosus,RoB_S.n,DosSantos_etal_2020_Table1,2,1
 Notamacropus parma,WholeBrain_I.p.mg,DosSantos_etal_2020_Table1,4700,1
-Notamacropus parma,WholeBrain_S.n,DosSantos_etal_2020_Table1,38,1
 Notamacropus parma,Cerebellum_I.p.mg,DosSantos_etal_2020_Table1,3117,1
-Notamacropus parma,Cerebellum_S.n,DosSantos_etal_2020_Table1,1,1
 Notamacropus parma,CerebralCortexNoHippocampus_I.p.mg,DosSantos_etal_2020_Table1,4664,1
-Notamacropus parma,CerebralCortexNoHippocampus_S.n,DosSantos_etal_2020_Table1,34,1
 Notamacropus parma,CerebralCortex_I.p.mg,DosSantos_etal_2020_Table1,4868,1
-Notamacropus parma,CerebralCortex_S.n,DosSantos_etal_2020_Table1,35,1
 Notamacropus parma,Hippocampus_I.p.mg,DosSantos_etal_2020_Table1,6302,1
-Notamacropus parma,Hippocampus_S.n,DosSantos_etal_2020_Table1,1,1
 Notamacropus parma,PonsMedulla_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Notamacropus parma,PonsMedulla_S.n,DosSantos_etal_2020_Table1,NA,1
 Notamacropus parma,RoB_I.p.mg,DosSantos_etal_2020_Table1,4928,1
-Notamacropus parma,RoB_S.n,DosSantos_etal_2020_Table1,2,1
 Notamacropus rufogriseus,WholeBrain_I.p.mg,DosSantos_etal_2020_Table1,5510,1
-Notamacropus rufogriseus,WholeBrain_S.n,DosSantos_etal_2020_Table1,44,1
 Notamacropus rufogriseus,Cerebellum_I.p.mg,DosSantos_etal_2020_Table1,3811,1
-Notamacropus rufogriseus,Cerebellum_S.n,DosSantos_etal_2020_Table1,1,1
 Notamacropus rufogriseus,CerebralCortexNoHippocampus_I.p.mg,DosSantos_etal_2020_Table1,5874,1
-Notamacropus rufogriseus,CerebralCortexNoHippocampus_S.n,DosSantos_etal_2020_Table1,40,1
 Notamacropus rufogriseus,CerebralCortex_I.p.mg,DosSantos_etal_2020_Table1,6120,1
-Notamacropus rufogriseus,CerebralCortex_S.n,DosSantos_etal_2020_Table1,41,1
 Notamacropus rufogriseus,Hippocampus_I.p.mg,DosSantos_etal_2020_Table1,8081,1
-Notamacropus rufogriseus,Hippocampus_S.n,DosSantos_etal_2020_Table1,1,1
 Notamacropus rufogriseus,PonsMedulla_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Notamacropus rufogriseus,PonsMedulla_S.n,DosSantos_etal_2020_Table1,NA,1
 Notamacropus rufogriseus,RoB_I.p.mg,DosSantos_etal_2020_Table1,4992,1
-Notamacropus rufogriseus,RoB_S.n,DosSantos_etal_2020_Table1,2,1
 Osphranter rufus,WholeBrain_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Osphranter rufus,WholeBrain_S.n,DosSantos_etal_2020_Table1,NA,1
 Osphranter rufus,Cerebellum_I.p.mg,DosSantos_etal_2020_Table1,6525,1
-Osphranter rufus,Cerebellum_S.n,DosSantos_etal_2020_Table1,1,1
 Osphranter rufus,CerebralCortexNoHippocampus_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Osphranter rufus,CerebralCortexNoHippocampus_S.n,DosSantos_etal_2020_Table1,NA,1
 Osphranter rufus,CerebralCortex_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Osphranter rufus,CerebralCortex_S.n,DosSantos_etal_2020_Table1,NA,1
 Osphranter rufus,Hippocampus_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Osphranter rufus,Hippocampus_S.n,DosSantos_etal_2020_Table1,NA,1
 Osphranter rufus,PonsMedulla_I.p.mg,DosSantos_etal_2020_Table1,6196,1
-Osphranter rufus,PonsMedulla_S.n,DosSantos_etal_2020_Table1,1,1
 Osphranter rufus,RoB_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Osphranter rufus,RoB_S.n,DosSantos_etal_2020_Table1,NA,1
 Marmosops incanus,WholeBrain_I.p.mg,DosSantos_etal_2020_Table1,6515,1
-Marmosops incanus,WholeBrain_S.n,DosSantos_etal_2020_Table1,6,1
 Marmosops incanus,Cerebellum_I.p.mg,DosSantos_etal_2020_Table1,4988,1
-Marmosops incanus,Cerebellum_S.n,DosSantos_etal_2020_Table1,1,1
 Marmosops incanus,CerebralCortexNoHippocampus_I.p.mg,DosSantos_etal_2020_Table1,7339,1
-Marmosops incanus,CerebralCortexNoHippocampus_S.n,DosSantos_etal_2020_Table1,1,1
 Marmosops incanus,CerebralCortex_I.p.mg,DosSantos_etal_2020_Table1,6892,1
-Marmosops incanus,CerebralCortex_S.n,DosSantos_etal_2020_Table1,2,1
 Marmosops incanus,Hippocampus_I.p.mg,DosSantos_etal_2020_Table1,4309,1
-Marmosops incanus,Hippocampus_S.n,DosSantos_etal_2020_Table1,1,1
 Marmosops incanus,PonsMedulla_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Marmosops incanus,PonsMedulla_S.n,DosSantos_etal_2020_Table1,NA,1
 Marmosops incanus,RoB_I.p.mg,DosSantos_etal_2020_Table1,6780,1
-Marmosops incanus,RoB_S.n,DosSantos_etal_2020_Table1,3,1
 Metachirus nudicaudatus,WholeBrain_I.p.mg,DosSantos_etal_2020_Table1,4014,1
-Metachirus nudicaudatus,WholeBrain_S.n,DosSantos_etal_2020_Table1,6,1
 Metachirus nudicaudatus,Cerebellum_I.p.mg,DosSantos_etal_2020_Table1,5057,1
-Metachirus nudicaudatus,Cerebellum_S.n,DosSantos_etal_2020_Table1,1,1
 Metachirus nudicaudatus,CerebralCortexNoHippocampus_I.p.mg,DosSantos_etal_2020_Table1,2621,1
-Metachirus nudicaudatus,CerebralCortexNoHippocampus_S.n,DosSantos_etal_2020_Table1,1,1
 Metachirus nudicaudatus,CerebralCortex_I.p.mg,DosSantos_etal_2020_Table1,2675,1
-Metachirus nudicaudatus,CerebralCortex_S.n,DosSantos_etal_2020_Table1,2,1
 Metachirus nudicaudatus,Hippocampus_I.p.mg,DosSantos_etal_2020_Table1,2978,1
-Metachirus nudicaudatus,Hippocampus_S.n,DosSantos_etal_2020_Table1,1,1
 Metachirus nudicaudatus,PonsMedulla_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Metachirus nudicaudatus,PonsMedulla_S.n,DosSantos_etal_2020_Table1,NA,1
 Metachirus nudicaudatus,RoB_I.p.mg,DosSantos_etal_2020_Table1,5446,1
-Metachirus nudicaudatus,RoB_S.n,DosSantos_etal_2020_Table1,3,1
 Sarcophilus harrisii,WholeBrain_I.p.mg,DosSantos_etal_2020_Table1,2337,1
-Sarcophilus harrisii,WholeBrain_S.n,DosSantos_etal_2020_Table1,30,1
 Sarcophilus harrisii,Cerebellum_I.p.mg,DosSantos_etal_2020_Table1,5385,1
-Sarcophilus harrisii,Cerebellum_S.n,DosSantos_etal_2020_Table1,1,1
 Sarcophilus harrisii,CerebralCortexNoHippocampus_I.p.mg,DosSantos_etal_2020_Table1,1578,1
-Sarcophilus harrisii,CerebralCortexNoHippocampus_S.n,DosSantos_etal_2020_Table1,25,1
 Sarcophilus harrisii,CerebralCortex_I.p.mg,DosSantos_etal_2020_Table1,1826,1
-Sarcophilus harrisii,CerebralCortex_S.n,DosSantos_etal_2020_Table1,26,1
 Sarcophilus harrisii,Hippocampus_I.p.mg,DosSantos_etal_2020_Table1,3588,1
-Sarcophilus harrisii,Hippocampus_S.n,DosSantos_etal_2020_Table1,1,1
 Sarcophilus harrisii,PonsMedulla_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Sarcophilus harrisii,PonsMedulla_S.n,DosSantos_etal_2020_Table1,NA,1
 Sarcophilus harrisii,RoB_I.p.mg,DosSantos_etal_2020_Table1,1780,1
-Sarcophilus harrisii,RoB_S.n,DosSantos_etal_2020_Table1,3,1
 Wallabia bicolor,WholeBrain_I.p.mg,DosSantos_etal_2020_Table1,5861,1
-Wallabia bicolor,WholeBrain_S.n,DosSantos_etal_2020_Table1,48,1
 Wallabia bicolor,Cerebellum_I.p.mg,DosSantos_etal_2020_Table1,5914,1
-Wallabia bicolor,Cerebellum_S.n,DosSantos_etal_2020_Table1,1,1
 Wallabia bicolor,CerebralCortexNoHippocampus_I.p.mg,DosSantos_etal_2020_Table1,6483,1
-Wallabia bicolor,CerebralCortexNoHippocampus_S.n,DosSantos_etal_2020_Table1,44,1
 Wallabia bicolor,CerebralCortex_I.p.mg,DosSantos_etal_2020_Table1,6269,1
-Wallabia bicolor,CerebralCortex_S.n,DosSantos_etal_2020_Table1,45,1
 Wallabia bicolor,Hippocampus_I.p.mg,DosSantos_etal_2020_Table1,4401,1
-Wallabia bicolor,Hippocampus_S.n,DosSantos_etal_2020_Table1,1,1
 Wallabia bicolor,PonsMedulla_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Wallabia bicolor,PonsMedulla_S.n,DosSantos_etal_2020_Table1,NA,1
 Wallabia bicolor,RoB_I.p.mg,DosSantos_etal_2020_Table1,5252,1
-Wallabia bicolor,RoB_S.n,DosSantos_etal_2020_Table1,2,1
 Aotus trivirgatus,WholeBrain_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Aotus trivirgatus,WholeBrain_S.n,DosSantos_etal_2020_Table1,NA,1
 Aotus trivirgatus,Cerebellum_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Aotus trivirgatus,Cerebellum_S.n,DosSantos_etal_2020_Table1,NA,1
 Aotus trivirgatus,CerebralCortexNoHippocampus_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Aotus trivirgatus,CerebralCortexNoHippocampus_S.n,DosSantos_etal_2020_Table1,NA,1
 Aotus trivirgatus,CerebralCortex_I.p.mg,DosSantos_etal_2020_Table1,2635,1
-Aotus trivirgatus,CerebralCortex_S.n,DosSantos_etal_2020_Table1,43,1
 Aotus trivirgatus,Hippocampus_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Aotus trivirgatus,Hippocampus_S.n,DosSantos_etal_2020_Table1,NA,1
 Aotus trivirgatus,PonsMedulla_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Aotus trivirgatus,PonsMedulla_S.n,DosSantos_etal_2020_Table1,NA,1
 Aotus trivirgatus,RoB_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Aotus trivirgatus,RoB_S.n,DosSantos_etal_2020_Table1,NA,1
 Sapajus apella,WholeBrain_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Sapajus apella,WholeBrain_S.n,DosSantos_etal_2020_Table1,NA,1
 Sapajus apella,Cerebellum_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Sapajus apella,Cerebellum_S.n,DosSantos_etal_2020_Table1,NA,1
 Sapajus apella,CerebralCortexNoHippocampus_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Sapajus apella,CerebralCortexNoHippocampus_S.n,DosSantos_etal_2020_Table1,NA,1
 Sapajus apella,CerebralCortex_I.p.mg,DosSantos_etal_2020_Table1,1991,1
-Sapajus apella,CerebralCortex_S.n,DosSantos_etal_2020_Table1,78,1
 Sapajus apella,Hippocampus_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Sapajus apella,Hippocampus_S.n,DosSantos_etal_2020_Table1,NA,1
 Sapajus apella,PonsMedulla_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Sapajus apella,PonsMedulla_S.n,DosSantos_etal_2020_Table1,NA,1
 Sapajus apella,RoB_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Sapajus apella,RoB_S.n,DosSantos_etal_2020_Table1,NA,1
 Homo sapiens,WholeBrain_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Homo sapiens,WholeBrain_S.n,DosSantos_etal_2020_Table1,NA,1
 Homo sapiens,Cerebellum_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Homo sapiens,Cerebellum_S.n,DosSantos_etal_2020_Table1,NA,1
 Homo sapiens,CerebralCortexNoHippocampus_I.p.mg,DosSantos_etal_2020_Table1,2381,1
-Homo sapiens,CerebralCortexNoHippocampus_S.n,DosSantos_etal_2020_Table1,271,1
 Homo sapiens,CerebralCortex_I.p.mg,DosSantos_etal_2020_Table1,2403,1
-Homo sapiens,CerebralCortex_S.n,DosSantos_etal_2020_Table1,290,1
 Homo sapiens,Hippocampus_I.p.mg,DosSantos_etal_2020_Table1,3085,1
-Homo sapiens,Hippocampus_S.n,DosSantos_etal_2020_Table1,19,1
 Homo sapiens,PonsMedulla_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Homo sapiens,PonsMedulla_S.n,DosSantos_etal_2020_Table1,NA,1
 Homo sapiens,RoB_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Homo sapiens,RoB_S.n,DosSantos_etal_2020_Table1,NA,1
 Macaca fascicularis,WholeBrain_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Macaca fascicularis,WholeBrain_S.n,DosSantos_etal_2020_Table1,NA,1
 Macaca fascicularis,Cerebellum_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Macaca fascicularis,Cerebellum_S.n,DosSantos_etal_2020_Table1,NA,1
 Macaca fascicularis,CerebralCortexNoHippocampus_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Macaca fascicularis,CerebralCortexNoHippocampus_S.n,DosSantos_etal_2020_Table1,NA,1
 Macaca fascicularis,CerebralCortex_I.p.mg,DosSantos_etal_2020_Table1,4727,1
-Macaca fascicularis,CerebralCortex_S.n,DosSantos_etal_2020_Table1,79,1
 Macaca fascicularis,Hippocampus_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Macaca fascicularis,Hippocampus_S.n,DosSantos_etal_2020_Table1,NA,1
 Macaca fascicularis,PonsMedulla_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Macaca fascicularis,PonsMedulla_S.n,DosSantos_etal_2020_Table1,NA,1
 Macaca fascicularis,RoB_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Macaca fascicularis,RoB_S.n,DosSantos_etal_2020_Table1,NA,1
 Macaca nemestrina,WholeBrain_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Macaca nemestrina,WholeBrain_S.n,DosSantos_etal_2020_Table1,NA,1
 Macaca nemestrina,Cerebellum_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Macaca nemestrina,Cerebellum_S.n,DosSantos_etal_2020_Table1,NA,1
 Macaca nemestrina,CerebralCortexNoHippocampus_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Macaca nemestrina,CerebralCortexNoHippocampus_S.n,DosSantos_etal_2020_Table1,NA,1
 Macaca nemestrina,CerebralCortex_I.p.mg,DosSantos_etal_2020_Table1,3668,1
-Macaca nemestrina,CerebralCortex_S.n,DosSantos_etal_2020_Table1,106,1
 Macaca nemestrina,Hippocampus_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Macaca nemestrina,Hippocampus_S.n,DosSantos_etal_2020_Table1,NA,1
 Macaca nemestrina,PonsMedulla_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Macaca nemestrina,PonsMedulla_S.n,DosSantos_etal_2020_Table1,NA,1
 Macaca nemestrina,RoB_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Macaca nemestrina,RoB_S.n,DosSantos_etal_2020_Table1,NA,1
 Otolemur garnettii,WholeBrain_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Otolemur garnettii,WholeBrain_S.n,DosSantos_etal_2020_Table1,NA,1
 Otolemur garnettii,Cerebellum_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Otolemur garnettii,Cerebellum_S.n,DosSantos_etal_2020_Table1,NA,1
 Otolemur garnettii,CerebralCortexNoHippocampus_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Otolemur garnettii,CerebralCortexNoHippocampus_S.n,DosSantos_etal_2020_Table1,NA,1
 Otolemur garnettii,CerebralCortex_I.p.mg,DosSantos_etal_2020_Table1,8294,1
-Otolemur garnettii,CerebralCortex_S.n,DosSantos_etal_2020_Table1,23,1
 Otolemur garnettii,Hippocampus_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Otolemur garnettii,Hippocampus_S.n,DosSantos_etal_2020_Table1,NA,1
 Otolemur garnettii,PonsMedulla_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Otolemur garnettii,PonsMedulla_S.n,DosSantos_etal_2020_Table1,NA,1
 Otolemur garnettii,RoB_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Otolemur garnettii,RoB_S.n,DosSantos_etal_2020_Table1,NA,1
 Papio cynocephalus,WholeBrain_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Papio cynocephalus,WholeBrain_S.n,DosSantos_etal_2020_Table1,NA,1
 Papio cynocephalus,Cerebellum_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Papio cynocephalus,Cerebellum_S.n,DosSantos_etal_2020_Table1,NA,1
 Papio cynocephalus,CerebralCortexNoHippocampus_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Papio cynocephalus,CerebralCortexNoHippocampus_S.n,DosSantos_etal_2020_Table1,NA,1
 Papio cynocephalus,CerebralCortex_I.p.mg,DosSantos_etal_2020_Table1,2773,1
-Papio cynocephalus,CerebralCortex_S.n,DosSantos_etal_2020_Table1,102,1
 Papio cynocephalus,Hippocampus_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Papio cynocephalus,Hippocampus_S.n,DosSantos_etal_2020_Table1,NA,1
 Papio cynocephalus,PonsMedulla_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Papio cynocephalus,PonsMedulla_S.n,DosSantos_etal_2020_Table1,NA,1
 Papio cynocephalus,RoB_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Papio cynocephalus,RoB_S.n,DosSantos_etal_2020_Table1,NA,1
 Saguinus midas,WholeBrain_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Saguinus midas,WholeBrain_S.n,DosSantos_etal_2020_Table1,NA,1
 Saguinus midas,Cerebellum_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Saguinus midas,Cerebellum_S.n,DosSantos_etal_2020_Table1,NA,1
 Saguinus midas,CerebralCortexNoHippocampus_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Saguinus midas,CerebralCortexNoHippocampus_S.n,DosSantos_etal_2020_Table1,NA,1
 Saguinus midas,CerebralCortex_I.p.mg,DosSantos_etal_2020_Table1,3041,1
-Saguinus midas,CerebralCortex_S.n,DosSantos_etal_2020_Table1,28,1
 Saguinus midas,Hippocampus_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Saguinus midas,Hippocampus_S.n,DosSantos_etal_2020_Table1,NA,1
 Saguinus midas,PonsMedulla_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Saguinus midas,PonsMedulla_S.n,DosSantos_etal_2020_Table1,NA,1
 Saguinus midas,RoB_I.p.mg,DosSantos_etal_2020_Table1,NA,1
-Saguinus midas,RoB_S.n,DosSantos_etal_2020_Table1,NA,1
 Sorex fumeus,CerebralCortex_Mass.g,HerculanoHouzel_etal_2015_Table1,0.084,9
 Sorex fumeus,CerebralCortex_Mass.g_SD,HerculanoHouzel_etal_2015_Table1,0.009,9
 Sorex fumeus,CerebralCortex_N.n,HerculanoHouzel_etal_2015_Table1,9730000,9
@@ -1184,7 +953,7 @@ Aotus trivirgatus,CerebralCortex_Mass.g_SD,HerculanoHouzel_etal_2015_Table1,0.61
 Aotus trivirgatus,CerebralCortex_N.n,HerculanoHouzel_etal_2015_Table1,441900000,9
 Aotus trivirgatus,CerebralCortex_N.n_SD,HerculanoHouzel_etal_2015_Table1,111310000,9
 Aotus trivirgatus,CerebralCortex_O.n,HerculanoHouzel_etal_2015_Table1,695420000,9
-Aotus trivirgatus,CerebralCortex_O.n_SD,HerculanoHouzel_etal_2015_Table1,1.3e+08,9
+Aotus trivirgatus,CerebralCortex_O.n_SD,HerculanoHouzel_etal_2015_Table1,130000000,9
 Aotus trivirgatus,CerebralCortex_N.p.mg,HerculanoHouzel_etal_2015_Table1,41990,9
 Aotus trivirgatus,CerebralCortex_N.p.mg_SD,HerculanoHouzel_etal_2015_Table1,12900,9
 Aotus trivirgatus,CerebralCortex_O.p.mg,HerculanoHouzel_etal_2015_Table1,65330,9
@@ -1205,10 +974,10 @@ Callimico goeldii,CerebralCortex_O.p.N,HerculanoHouzel_etal_2015_Table1,2.003,9
 Callimico goeldii,CerebralCortex_O.p.N_SD,HerculanoHouzel_etal_2015_Table1,NA,9
 Saimiri sciureus,CerebralCortex_Mass.g,HerculanoHouzel_etal_2015_Table1,20.652,9
 Saimiri sciureus,CerebralCortex_Mass.g_SD,HerculanoHouzel_etal_2015_Table1,0.368,9
-Saimiri sciureus,CerebralCortex_N.n,HerculanoHouzel_etal_2015_Table1,1.34e+09,9
-Saimiri sciureus,CerebralCortex_N.n_SD,HerculanoHouzel_etal_2015_Table1,2e+07,9
-Saimiri sciureus,CerebralCortex_O.n,HerculanoHouzel_etal_2015_Table1,1.61e+09,9
-Saimiri sciureus,CerebralCortex_O.n_SD,HerculanoHouzel_etal_2015_Table1,4e+07,9
+Saimiri sciureus,CerebralCortex_N.n,HerculanoHouzel_etal_2015_Table1,1340000000,9
+Saimiri sciureus,CerebralCortex_N.n_SD,HerculanoHouzel_etal_2015_Table1,20000000,9
+Saimiri sciureus,CerebralCortex_O.n,HerculanoHouzel_etal_2015_Table1,1610000000,9
+Saimiri sciureus,CerebralCortex_O.n_SD,HerculanoHouzel_etal_2015_Table1,40000000,9
 Saimiri sciureus,CerebralCortex_N.p.mg,HerculanoHouzel_etal_2015_Table1,64930,9
 Saimiri sciureus,CerebralCortex_N.p.mg_SD,HerculanoHouzel_etal_2015_Table1,7420,9
 Saimiri sciureus,CerebralCortex_O.p.mg,HerculanoHouzel_etal_2015_Table1,77840,9
@@ -1229,9 +998,9 @@ Macaca fascicularis,CerebralCortex_O.p.N,HerculanoHouzel_etal_2015_Table1,3.444,
 Macaca fascicularis,CerebralCortex_O.p.N_SD,HerculanoHouzel_etal_2015_Table1,NA,9
 Sapajus apella,CerebralCortex_Mass.g,HerculanoHouzel_etal_2015_Table1,39.178,9
 Sapajus apella,CerebralCortex_Mass.g_SD,HerculanoHouzel_etal_2015_Table1,NA,9
-Sapajus apella,CerebralCortex_N.n,HerculanoHouzel_etal_2015_Table1,1.14e+09,9
+Sapajus apella,CerebralCortex_N.n,HerculanoHouzel_etal_2015_Table1,1140000000,9
 Sapajus apella,CerebralCortex_N.n_SD,HerculanoHouzel_etal_2015_Table1,NA,9
-Sapajus apella,CerebralCortex_O.n,HerculanoHouzel_etal_2015_Table1,2.55e+09,9
+Sapajus apella,CerebralCortex_O.n,HerculanoHouzel_etal_2015_Table1,2550000000,9
 Sapajus apella,CerebralCortex_O.n_SD,HerculanoHouzel_etal_2015_Table1,NA,9
 Sapajus apella,CerebralCortex_N.p.mg,HerculanoHouzel_etal_2015_Table1,29180,9
 Sapajus apella,CerebralCortex_N.p.mg_SD,HerculanoHouzel_etal_2015_Table1,NA,9
@@ -1289,9 +1058,9 @@ Antidorcas marsupialis,CerebralCortex_O.p.N,HerculanoHouzel_etal_2015_Table1,10.
 Antidorcas marsupialis,CerebralCortex_O.p.N_SD,HerculanoHouzel_etal_2015_Table1,NA,9
 Macaca mulatta,CerebralCortex_Mass.g,HerculanoHouzel_etal_2015_Table1,69.832,9
 Macaca mulatta,CerebralCortex_Mass.g_SD,HerculanoHouzel_etal_2015_Table1,NA,9
-Macaca mulatta,CerebralCortex_N.n,HerculanoHouzel_etal_2015_Table1,1.71e+09,9
+Macaca mulatta,CerebralCortex_N.n,HerculanoHouzel_etal_2015_Table1,1710000000,9
 Macaca mulatta,CerebralCortex_N.n_SD,HerculanoHouzel_etal_2015_Table1,NA,9
-Macaca mulatta,CerebralCortex_O.n,HerculanoHouzel_etal_2015_Table1,5.27e+09,9
+Macaca mulatta,CerebralCortex_O.n,HerculanoHouzel_etal_2015_Table1,5270000000,9
 Macaca mulatta,CerebralCortex_O.n_SD,HerculanoHouzel_etal_2015_Table1,NA,9
 Macaca mulatta,CerebralCortex_N.p.mg,HerculanoHouzel_etal_2015_Table1,24470,9
 Macaca mulatta,CerebralCortex_N.p.mg_SD,HerculanoHouzel_etal_2015_Table1,NA,9
@@ -1349,10 +1118,10 @@ Giraffa camelopardalis,CerebralCortex_O.p.N,HerculanoHouzel_etal_2015_Table1,15.
 Giraffa camelopardalis,CerebralCortex_O.p.N_SD,HerculanoHouzel_etal_2015_Table1,NA,9
 Homo sapiens,CerebralCortex_Mass.g,HerculanoHouzel_etal_2015_Table1,1232.93,9
 Homo sapiens,CerebralCortex_Mass.g_SD,HerculanoHouzel_etal_2015_Table1,233.68,9
-Homo sapiens,CerebralCortex_N.n,HerculanoHouzel_etal_2015_Table1,1.634e+10,9
-Homo sapiens,CerebralCortex_N.n_SD,HerculanoHouzel_etal_2015_Table1,2.17e+09,9
-Homo sapiens,CerebralCortex_O.n,HerculanoHouzel_etal_2015_Table1,6.084e+10,9
-Homo sapiens,CerebralCortex_O.n_SD,HerculanoHouzel_etal_2015_Table1,7.02e+09,9
+Homo sapiens,CerebralCortex_N.n,HerculanoHouzel_etal_2015_Table1,16340000000,9
+Homo sapiens,CerebralCortex_N.n_SD,HerculanoHouzel_etal_2015_Table1,2170000000,9
+Homo sapiens,CerebralCortex_O.n,HerculanoHouzel_etal_2015_Table1,60840000000,9
+Homo sapiens,CerebralCortex_O.n_SD,HerculanoHouzel_etal_2015_Table1,7020000000,9
 Homo sapiens,CerebralCortex_N.p.mg,HerculanoHouzel_etal_2015_Table1,13520,9
 Homo sapiens,CerebralCortex_N.p.mg_SD,HerculanoHouzel_etal_2015_Table1,3636,9
 Homo sapiens,CerebralCortex_O.p.mg,HerculanoHouzel_etal_2015_Table1,49230,9
@@ -1625,8 +1394,8 @@ Oryctolagus cuniculus,Cerebellum_O.p.N,HerculanoHouzel_etal_2015_Table2,1.222,8
 Oryctolagus cuniculus,Cerebellum_O.p.N_SD,HerculanoHouzel_etal_2015_Table2,NA,8
 Aotus trivirgatus,Cerebellum_Mass.g,HerculanoHouzel_etal_2015_Table2,1.732,8
 Aotus trivirgatus,Cerebellum_Mass.g_SD,HerculanoHouzel_etal_2015_Table2,0.218,8
-Aotus trivirgatus,Cerebellum_N.n,HerculanoHouzel_etal_2015_Table2,1.04e+09,8
-Aotus trivirgatus,Cerebellum_N.n_SD,HerculanoHouzel_etal_2015_Table2,2e+07,8
+Aotus trivirgatus,Cerebellum_N.n,HerculanoHouzel_etal_2015_Table2,1040000000,8
+Aotus trivirgatus,Cerebellum_N.n_SD,HerculanoHouzel_etal_2015_Table2,20000000,8
 Aotus trivirgatus,Cerebellum_O.n,HerculanoHouzel_etal_2015_Table2,145270000,8
 Aotus trivirgatus,Cerebellum_O.n_SD,HerculanoHouzel_etal_2015_Table2,45030000,8
 Aotus trivirgatus,Cerebellum_N.p.mg,HerculanoHouzel_etal_2015_Table2,605080,8
@@ -1673,7 +1442,7 @@ Dasyprocta prymnolopha,Cerebellum_O.p.N,HerculanoHouzel_etal_2015_Table2,0.234,8
 Dasyprocta prymnolopha,Cerebellum_O.p.N_SD,HerculanoHouzel_etal_2015_Table2,0.066,8
 Saimiri sciureus,Cerebellum_Mass.g,HerculanoHouzel_etal_2015_Table2,4.3,8
 Saimiri sciureus,Cerebellum_Mass.g_SD,HerculanoHouzel_etal_2015_Table2,NA,8
-Saimiri sciureus,Cerebellum_N.n,HerculanoHouzel_etal_2015_Table2,1.82e+09,8
+Saimiri sciureus,Cerebellum_N.n,HerculanoHouzel_etal_2015_Table2,1820000000,8
 Saimiri sciureus,Cerebellum_N.n_SD,HerculanoHouzel_etal_2015_Table2,NA,8
 Saimiri sciureus,Cerebellum_O.n,HerculanoHouzel_etal_2015_Table2,133020000,8
 Saimiri sciureus,Cerebellum_O.n_SD,HerculanoHouzel_etal_2015_Table2,NA,8
@@ -1685,7 +1454,7 @@ Saimiri sciureus,Cerebellum_O.p.N,HerculanoHouzel_etal_2015_Table2,0.073,8
 Saimiri sciureus,Cerebellum_O.p.N_SD,HerculanoHouzel_etal_2015_Table2,NA,8
 Sapajus apella,Cerebellum_Mass.g,HerculanoHouzel_etal_2015_Table2,4.6,8
 Sapajus apella,Cerebellum_Mass.g_SD,HerculanoHouzel_etal_2015_Table2,NA,8
-Sapajus apella,Cerebellum_N.n,HerculanoHouzel_etal_2015_Table2,2.49e+09,8
+Sapajus apella,Cerebellum_N.n,HerculanoHouzel_etal_2015_Table2,2490000000,8
 Sapajus apella,Cerebellum_N.n_SD,HerculanoHouzel_etal_2015_Table2,NA,8
 Sapajus apella,Cerebellum_O.n,HerculanoHouzel_etal_2015_Table2,245810000,8
 Sapajus apella,Cerebellum_O.n_SD,HerculanoHouzel_etal_2015_Table2,NA,8
@@ -1733,7 +1502,7 @@ Hydrochoerus hydrochaeris,Cerebellum_O.p.N,HerculanoHouzel_etal_2015_Table2,0.49
 Hydrochoerus hydrochaeris,Cerebellum_O.p.N_SD,HerculanoHouzel_etal_2015_Table2,0.068,8
 Macaca mulatta,Cerebellum_Mass.g,HerculanoHouzel_etal_2015_Table2,7.694,8
 Macaca mulatta,Cerebellum_Mass.g_SD,HerculanoHouzel_etal_2015_Table2,NA,8
-Macaca mulatta,Cerebellum_N.n,HerculanoHouzel_etal_2015_Table2,4.55e+09,8
+Macaca mulatta,Cerebellum_N.n,HerculanoHouzel_etal_2015_Table2,4550000000,8
 Macaca mulatta,Cerebellum_N.n_SD,HerculanoHouzel_etal_2015_Table2,NA,8
 Macaca mulatta,Cerebellum_O.n,HerculanoHouzel_etal_2015_Table2,931030000,8
 Macaca mulatta,Cerebellum_O.n_SD,HerculanoHouzel_etal_2015_Table2,NA,8
@@ -1805,9 +1574,9 @@ Tragelaphus strepsiceros,Cerebellum_O.p.N,HerculanoHouzel_etal_2015_Table2,0.313
 Tragelaphus strepsiceros,Cerebellum_O.p.N_SD,HerculanoHouzel_etal_2015_Table2,NA,8
 Pongo pygmaeus,Cerebellum_Mass.g,HerculanoHouzel_etal_2015_Table2,35.06,8
 Pongo pygmaeus,Cerebellum_Mass.g_SD,HerculanoHouzel_etal_2015_Table2,4.34,8
-Pongo pygmaeus,Cerebellum_N.n,HerculanoHouzel_etal_2015_Table2,2.63e+10,8
-Pongo pygmaeus,Cerebellum_N.n_SD,HerculanoHouzel_etal_2015_Table2,2.47e+09,8
-Pongo pygmaeus,Cerebellum_O.n,HerculanoHouzel_etal_2015_Table2,2.2e+09,8
+Pongo pygmaeus,Cerebellum_N.n,HerculanoHouzel_etal_2015_Table2,26300000000,8
+Pongo pygmaeus,Cerebellum_N.n_SD,HerculanoHouzel_etal_2015_Table2,2470000000,8
+Pongo pygmaeus,Cerebellum_O.n,HerculanoHouzel_etal_2015_Table2,2200000000,8
 Pongo pygmaeus,Cerebellum_O.n_SD,HerculanoHouzel_etal_2015_Table2,NA,8
 Pongo pygmaeus,Cerebellum_N.p.mg,HerculanoHouzel_etal_2015_Table2,750143,8
 Pongo pygmaeus,Cerebellum_N.p.mg_SD,HerculanoHouzel_etal_2015_Table2,NA,8
@@ -1817,9 +1586,9 @@ Pongo pygmaeus,Cerebellum_O.p.N,HerculanoHouzel_etal_2015_Table2,0.084,8
 Pongo pygmaeus,Cerebellum_O.p.N_SD,HerculanoHouzel_etal_2015_Table2,NA,8
 Gorilla gorilla,Cerebellum_Mass.g,HerculanoHouzel_etal_2015_Table2,37.56,8
 Gorilla gorilla,Cerebellum_Mass.g_SD,HerculanoHouzel_etal_2015_Table2,NA,8
-Gorilla gorilla,Cerebellum_N.n,HerculanoHouzel_etal_2015_Table2,2.64e+10,8
+Gorilla gorilla,Cerebellum_N.n,HerculanoHouzel_etal_2015_Table2,26400000000,8
 Gorilla gorilla,Cerebellum_N.n_SD,HerculanoHouzel_etal_2015_Table2,NA,8
-Gorilla gorilla,Cerebellum_O.n,HerculanoHouzel_etal_2015_Table2,2.9e+09,8
+Gorilla gorilla,Cerebellum_O.n,HerculanoHouzel_etal_2015_Table2,2900000000,8
 Gorilla gorilla,Cerebellum_O.n_SD,HerculanoHouzel_etal_2015_Table2,NA,8
 Gorilla gorilla,Cerebellum_N.p.mg,HerculanoHouzel_etal_2015_Table2,702875,8
 Gorilla gorilla,Cerebellum_N.p.mg_SD,HerculanoHouzel_etal_2015_Table2,NA,8
@@ -1841,9 +1610,9 @@ Giraffa camelopardalis,Cerebellum_O.p.N,HerculanoHouzel_etal_2015_Table2,0.622,8
 Giraffa camelopardalis,Cerebellum_O.p.N_SD,HerculanoHouzel_etal_2015_Table2,NA,8
 Homo sapiens,Cerebellum_Mass.g,HerculanoHouzel_etal_2015_Table2,154.02,8
 Homo sapiens,Cerebellum_Mass.g_SD,HerculanoHouzel_etal_2015_Table2,19.29,8
-Homo sapiens,Cerebellum_N.n,HerculanoHouzel_etal_2015_Table2,6.903e+10,8
-Homo sapiens,Cerebellum_N.n_SD,HerculanoHouzel_etal_2015_Table2,6.65e+09,8
-Homo sapiens,Cerebellum_O.n,HerculanoHouzel_etal_2015_Table2,1.604e+10,8
+Homo sapiens,Cerebellum_N.n,HerculanoHouzel_etal_2015_Table2,69030000000,8
+Homo sapiens,Cerebellum_N.n_SD,HerculanoHouzel_etal_2015_Table2,6650000000,8
+Homo sapiens,Cerebellum_O.n,HerculanoHouzel_etal_2015_Table2,16040000000,8
 Homo sapiens,Cerebellum_O.n_SD,HerculanoHouzel_etal_2015_Table2,2170000,8
 Homo sapiens,Cerebellum_N.p.mg,HerculanoHouzel_etal_2015_Table2,471660,8
 Homo sapiens,Cerebellum_N.p.mg_SD,HerculanoHouzel_etal_2015_Table2,90393,8
@@ -2323,7 +2092,7 @@ Homo sapiens,RoB_Mass.g,HerculanoHouzel_etal_2015_Table3,117.66,10
 Homo sapiens,RoB_Mass.g_SD,HerculanoHouzel_etal_2015_Table3,45.42,10
 Homo sapiens,RoB_N.n,HerculanoHouzel_etal_2015_Table3,690000000,10
 Homo sapiens,RoB_N.n_SD,HerculanoHouzel_etal_2015_Table3,120000000,10
-Homo sapiens,RoB_O.n,HerculanoHouzel_etal_2015_Table3,7.73e+09,10
+Homo sapiens,RoB_O.n,HerculanoHouzel_etal_2015_Table3,7730000000,10
 Homo sapiens,RoB_O.n_SD,HerculanoHouzel_etal_2015_Table3,1450000000,10
 Homo sapiens,RoB_N.p.mg,HerculanoHouzel_etal_2015_Table3,6560,10
 Homo sapiens,RoB_N.p.mg_SD,HerculanoHouzel_etal_2015_Table3,2115,10
@@ -2729,8 +2498,6 @@ Sorex fumeus,WholeBrain_N.n,HerculanoHouzel_etal_2015_Table5,36460000,11
 Sorex fumeus,WholeBrain_N.n_SD,HerculanoHouzel_etal_2015_Table5,4567000,11
 Sorex fumeus,WholeBrain_O.n,HerculanoHouzel_etal_2015_Table5,22860000,11
 Sorex fumeus,WholeBrain_O.n_SD,HerculanoHouzel_etal_2015_Table5,3956000,11
-Sorex fumeus,WholeBrain_p.C.N,HerculanoHouzel_etal_2015_Table5,61.3,11
-Sorex fumeus,WholeBrain_p.C.N_SD,HerculanoHouzel_etal_2015_Table5,1.4,11
 Blarina brevicauda,WholeBrain_n,HerculanoHouzel_etal_2015_Table5,5,11
 Blarina brevicauda,Body_Mass.g,HerculanoHouzel_etal_2015_Table5,16.2,11
 Blarina brevicauda,Body_Mass.g_SD,HerculanoHouzel_etal_2015_Table5,1.6,11
@@ -2740,8 +2507,6 @@ Blarina brevicauda,WholeBrain_N.n,HerculanoHouzel_etal_2015_Table5,55190000,11
 Blarina brevicauda,WholeBrain_N.n_SD,HerculanoHouzel_etal_2015_Table5,6126000,11
 Blarina brevicauda,WholeBrain_O.n,HerculanoHouzel_etal_2015_Table5,33550000,11
 Blarina brevicauda,WholeBrain_O.n_SD,HerculanoHouzel_etal_2015_Table5,1222000,11
-Blarina brevicauda,WholeBrain_p.C.N,HerculanoHouzel_etal_2015_Table5,64.8,11
-Blarina brevicauda,WholeBrain_p.C.N_SD,HerculanoHouzel_etal_2015_Table5,2.3,11
 Heterocephalus glaber,WholeBrain_n,HerculanoHouzel_etal_2015_Table5,3,11
 Heterocephalus glaber,Body_Mass.g,HerculanoHouzel_etal_2015_Table5,23.3,11
 Heterocephalus glaber,Body_Mass.g_SD,HerculanoHouzel_etal_2015_Table5,5.9,11
@@ -2751,8 +2516,6 @@ Heterocephalus glaber,WholeBrain_N.n,HerculanoHouzel_etal_2015_Table5,26875462,1
 Heterocephalus glaber,WholeBrain_N.n_SD,HerculanoHouzel_etal_2015_Table5,3340087,11
 Heterocephalus glaber,WholeBrain_O.n,HerculanoHouzel_etal_2015_Table5,24191205,11
 Heterocephalus glaber,WholeBrain_O.n_SD,HerculanoHouzel_etal_2015_Table5,1739102,11
-Heterocephalus glaber,WholeBrain_p.C.N,HerculanoHouzel_etal_2015_Table5,52.5,11
-Heterocephalus glaber,WholeBrain_p.C.N_SD,HerculanoHouzel_etal_2015_Table5,3.3,11
 Mus musculus,WholeBrain_n,HerculanoHouzel_etal_2015_Table5,4,11
 Mus musculus,Body_Mass.g,HerculanoHouzel_etal_2015_Table5,40.4,11
 Mus musculus,Body_Mass.g_SD,HerculanoHouzel_etal_2015_Table5,11.6,11
@@ -2762,8 +2525,6 @@ Mus musculus,WholeBrain_N.n,HerculanoHouzel_etal_2015_Table5,67873741,11
 Mus musculus,WholeBrain_N.n_SD,HerculanoHouzel_etal_2015_Table5,10406194,11
 Mus musculus,WholeBrain_O.n,HerculanoHouzel_etal_2015_Table5,33858759,11
 Mus musculus,WholeBrain_O.n_SD,HerculanoHouzel_etal_2015_Table5,6657119,11
-Mus musculus,WholeBrain_p.C.N,HerculanoHouzel_etal_2015_Table5,65.3,11
-Mus musculus,WholeBrain_p.C.N_SD,HerculanoHouzel_etal_2015_Table5,2.3,11
 Parascalops breweri,WholeBrain_n,HerculanoHouzel_etal_2015_Table5,3,11
 Parascalops breweri,Body_Mass.g,HerculanoHouzel_etal_2015_Table5,42.7,11
 Parascalops breweri,Body_Mass.g_SD,HerculanoHouzel_etal_2015_Table5,9.1,11
@@ -2773,8 +2534,6 @@ Parascalops breweri,WholeBrain_N.n,HerculanoHouzel_etal_2015_Table5,123600000,11
 Parascalops breweri,WholeBrain_N.n_SD,HerculanoHouzel_etal_2015_Table5,12470000,11
 Parascalops breweri,WholeBrain_O.n,HerculanoHouzel_etal_2015_Table5,78260000,11
 Parascalops breweri,WholeBrain_O.n_SD,HerculanoHouzel_etal_2015_Table5,6095000,11
-Parascalops breweri,WholeBrain_p.C.N,HerculanoHouzel_etal_2015_Table5,61.2,11
-Parascalops breweri,WholeBrain_p.C.N_SD,HerculanoHouzel_etal_2015_Table5,4.1,11
 Condylura cristata,WholeBrain_n,HerculanoHouzel_etal_2015_Table5,4,11
 Condylura cristata,Body_Mass.g,HerculanoHouzel_etal_2015_Table5,41.1,11
 Condylura cristata,Body_Mass.g_SD,HerculanoHouzel_etal_2015_Table5,4.7,11
@@ -2784,8 +2543,6 @@ Condylura cristata,WholeBrain_N.n,HerculanoHouzel_etal_2015_Table5,131330000,11
 Condylura cristata,WholeBrain_N.n_SD,HerculanoHouzel_etal_2015_Table5,21229000,11
 Condylura cristata,WholeBrain_O.n,HerculanoHouzel_etal_2015_Table5,83040000,11
 Condylura cristata,WholeBrain_O.n_SD,HerculanoHouzel_etal_2015_Table5,19046000,11
-Condylura cristata,WholeBrain_p.C.N,HerculanoHouzel_etal_2015_Table5,61.3,11
-Condylura cristata,WholeBrain_p.C.N_SD,HerculanoHouzel_etal_2015_Table5,6.3,11
 Amblysomus hottentotus,WholeBrain_n,HerculanoHouzel_etal_2015_Table5,2,11
 Amblysomus hottentotus,Body_Mass.g,HerculanoHouzel_etal_2015_Table5,79,11
 Amblysomus hottentotus,Body_Mass.g_SD,HerculanoHouzel_etal_2015_Table5,NA,11
@@ -2795,8 +2552,6 @@ Amblysomus hottentotus,WholeBrain_N.n,HerculanoHouzel_etal_2015_Table5,65074000,
 Amblysomus hottentotus,WholeBrain_N.n_SD,HerculanoHouzel_etal_2015_Table5,2124000,11
 Amblysomus hottentotus,WholeBrain_O.n,HerculanoHouzel_etal_2015_Table5,46631000,11
 Amblysomus hottentotus,WholeBrain_O.n_SD,HerculanoHouzel_etal_2015_Table5,527000,11
-Amblysomus hottentotus,WholeBrain_p.C.N,HerculanoHouzel_etal_2015_Table5,NA,11
-Amblysomus hottentotus,WholeBrain_p.C.N_SD,HerculanoHouzel_etal_2015_Table5,NA,11
 Mesocricetus auratus,WholeBrain_n,HerculanoHouzel_etal_2015_Table5,2,11
 Mesocricetus auratus,Body_Mass.g,HerculanoHouzel_etal_2015_Table5,168.1,11
 Mesocricetus auratus,Body_Mass.g_SD,HerculanoHouzel_etal_2015_Table5,13.6,11
@@ -2806,8 +2561,6 @@ Mesocricetus auratus,WholeBrain_N.n,HerculanoHouzel_etal_2015_Table5,84220000,11
 Mesocricetus auratus,WholeBrain_N.n_SD,HerculanoHouzel_etal_2015_Table5,9893371,11
 Mesocricetus auratus,WholeBrain_O.n,HerculanoHouzel_etal_2015_Table5,70640000,11
 Mesocricetus auratus,WholeBrain_O.n_SD,HerculanoHouzel_etal_2015_Table5,11942086,11
-Mesocricetus auratus,WholeBrain_p.C.N,HerculanoHouzel_etal_2015_Table5,54.3,11
-Mesocricetus auratus,WholeBrain_p.C.N_SD,HerculanoHouzel_etal_2015_Table5,1.3,11
 Scalopus aquaticus,WholeBrain_n,HerculanoHouzel_etal_2015_Table5,3,11
 Scalopus aquaticus,Body_Mass.g,HerculanoHouzel_etal_2015_Table5,95.3,11
 Scalopus aquaticus,Body_Mass.g_SD,HerculanoHouzel_etal_2015_Table5,9.8,11
@@ -2817,8 +2570,6 @@ Scalopus aquaticus,WholeBrain_N.n,HerculanoHouzel_etal_2015_Table5,203520000,11
 Scalopus aquaticus,WholeBrain_N.n_SD,HerculanoHouzel_etal_2015_Table5,14587000,11
 Scalopus aquaticus,WholeBrain_O.n,HerculanoHouzel_etal_2015_Table5,101740000,11
 Scalopus aquaticus,WholeBrain_O.n_SD,HerculanoHouzel_etal_2015_Table5,11823000,11
-Scalopus aquaticus,WholeBrain_p.C.N,HerculanoHouzel_etal_2015_Table5,66.7,11
-Scalopus aquaticus,WholeBrain_p.C.N_SD,HerculanoHouzel_etal_2015_Table5,1.4,11
 Elephantulus myurus,WholeBrain_n,HerculanoHouzel_etal_2015_Table5,2,11
 Elephantulus myurus,Body_Mass.g,HerculanoHouzel_etal_2015_Table5,45.1,11
 Elephantulus myurus,Body_Mass.g_SD,HerculanoHouzel_etal_2015_Table5,NA,11
@@ -2828,8 +2579,6 @@ Elephantulus myurus,WholeBrain_N.n,HerculanoHouzel_etal_2015_Table5,129190603,11
 Elephantulus myurus,WholeBrain_N.n_SD,HerculanoHouzel_etal_2015_Table5,4424000,11
 Elephantulus myurus,WholeBrain_O.n,HerculanoHouzel_etal_2015_Table5,78594397,11
 Elephantulus myurus,WholeBrain_O.n_SD,HerculanoHouzel_etal_2015_Table5,7733000,11
-Elephantulus myurus,WholeBrain_p.C.N,HerculanoHouzel_etal_2015_Table5,NA,11
-Elephantulus myurus,WholeBrain_p.C.N_SD,HerculanoHouzel_etal_2015_Table5,NA,11
 Rattus norvegicus,WholeBrain_n,HerculanoHouzel_etal_2015_Table5,4,11
 Rattus norvegicus,Body_Mass.g,HerculanoHouzel_etal_2015_Table5,315.1,11
 Rattus norvegicus,Body_Mass.g_SD,HerculanoHouzel_etal_2015_Table5,102.9,11
@@ -2839,8 +2588,6 @@ Rattus norvegicus,WholeBrain_N.n,HerculanoHouzel_etal_2015_Table5,188867832,11
 Rattus norvegicus,WholeBrain_N.n_SD,HerculanoHouzel_etal_2015_Table5,12622383,11
 Rattus norvegicus,WholeBrain_O.n,HerculanoHouzel_etal_2015_Table5,121914668,11
 Rattus norvegicus,WholeBrain_O.n_SD,HerculanoHouzel_etal_2015_Table5,7106729,11
-Rattus norvegicus,WholeBrain_p.C.N,HerculanoHouzel_etal_2015_Table5,60.7,11
-Rattus norvegicus,WholeBrain_p.C.N_SD,HerculanoHouzel_etal_2015_Table5,2.4,11
 Microcebus murinus,WholeBrain_n,HerculanoHouzel_etal_2015_Table5,1,11
 Microcebus murinus,Body_Mass.g,HerculanoHouzel_etal_2015_Table5,60,11
 Microcebus murinus,Body_Mass.g_SD,HerculanoHouzel_etal_2015_Table5,NA,11
@@ -2850,8 +2597,6 @@ Microcebus murinus,WholeBrain_N.n,HerculanoHouzel_etal_2015_Table5,254711180,11
 Microcebus murinus,WholeBrain_N.n_SD,HerculanoHouzel_etal_2015_Table5,NA,11
 Microcebus murinus,WholeBrain_O.n,HerculanoHouzel_etal_2015_Table5,138948820,11
 Microcebus murinus,WholeBrain_O.n_SD,HerculanoHouzel_etal_2015_Table5,NA,11
-Microcebus murinus,WholeBrain_p.C.N,HerculanoHouzel_etal_2015_Table5,64.7,11
-Microcebus murinus,WholeBrain_p.C.N_SD,HerculanoHouzel_etal_2015_Table5,NA,11
 Proechimys guyannensis,WholeBrain_n,HerculanoHouzel_etal_2015_Table5,2,11
 Proechimys guyannensis,Body_Mass.g,HerculanoHouzel_etal_2015_Table5,223.485,11
 Proechimys guyannensis,Body_Mass.g_SD,HerculanoHouzel_etal_2015_Table5,16.6,11
@@ -2861,8 +2606,6 @@ Proechimys guyannensis,WholeBrain_N.n,HerculanoHouzel_etal_2015_Table5,202090113
 Proechimys guyannensis,WholeBrain_N.n_SD,HerculanoHouzel_etal_2015_Table5,2931245,11
 Proechimys guyannensis,WholeBrain_O.n,HerculanoHouzel_etal_2015_Table5,181274887,11
 Proechimys guyannensis,WholeBrain_O.n_SD,HerculanoHouzel_etal_2015_Table5,4310103,11
-Proechimys guyannensis,WholeBrain_p.C.N,HerculanoHouzel_etal_2015_Table5,52.7,11
-Proechimys guyannensis,WholeBrain_p.C.N_SD,HerculanoHouzel_etal_2015_Table5,1,11
 Petrodromus tetradactylus,WholeBrain_n,HerculanoHouzel_etal_2015_Table5,2,11
 Petrodromus tetradactylus,Body_Mass.g,HerculanoHouzel_etal_2015_Table5,132.5,11
 Petrodromus tetradactylus,Body_Mass.g_SD,HerculanoHouzel_etal_2015_Table5,NA,11
@@ -2872,8 +2615,6 @@ Petrodromus tetradactylus,WholeBrain_N.n,HerculanoHouzel_etal_2015_Table5,156830
 Petrodromus tetradactylus,WholeBrain_N.n_SD,HerculanoHouzel_etal_2015_Table5,20600000,11
 Petrodromus tetradactylus,WholeBrain_O.n,HerculanoHouzel_etal_2015_Table5,103349000,11
 Petrodromus tetradactylus,WholeBrain_O.n_SD,HerculanoHouzel_etal_2015_Table5,15610000,11
-Petrodromus tetradactylus,WholeBrain_p.C.N,HerculanoHouzel_etal_2015_Table5,NA,11
-Petrodromus tetradactylus,WholeBrain_p.C.N_SD,HerculanoHouzel_etal_2015_Table5,NA,11
 Tupaia glis,WholeBrain_n,HerculanoHouzel_etal_2015_Table5,2,11
 Tupaia glis,Body_Mass.g,HerculanoHouzel_etal_2015_Table5,172.5,11
 Tupaia glis,Body_Mass.g_SD,HerculanoHouzel_etal_2015_Table5,3.5,11
@@ -2883,8 +2624,6 @@ Tupaia glis,WholeBrain_N.n,HerculanoHouzel_etal_2015_Table5,261400000,11
 Tupaia glis,WholeBrain_N.n_SD,HerculanoHouzel_etal_2015_Table5,NA,11
 Tupaia glis,WholeBrain_O.n,HerculanoHouzel_etal_2015_Table5,199650000,11
 Tupaia glis,WholeBrain_O.n_SD,HerculanoHouzel_etal_2015_Table5,NA,11
-Tupaia glis,WholeBrain_p.C.N,HerculanoHouzel_etal_2015_Table5,56.7,11
-Tupaia glis,WholeBrain_p.C.N_SD,HerculanoHouzel_etal_2015_Table5,NA,11
 Cavia porcellus,WholeBrain_n,HerculanoHouzel_etal_2015_Table5,2,11
 Cavia porcellus,Body_Mass.g,HerculanoHouzel_etal_2015_Table5,311,11
 Cavia porcellus,Body_Mass.g_SD,HerculanoHouzel_etal_2015_Table5,49.1,11
@@ -2894,8 +2633,6 @@ Cavia porcellus,WholeBrain_N.n,HerculanoHouzel_etal_2015_Table5,233557275,11
 Cavia porcellus,WholeBrain_N.n_SD,HerculanoHouzel_etal_2015_Table5,4085741,11
 Cavia porcellus,WholeBrain_O.n,HerculanoHouzel_etal_2015_Table5,228087725,11
 Cavia porcellus,WholeBrain_O.n_SD,HerculanoHouzel_etal_2015_Table5,9141554,11
-Cavia porcellus,WholeBrain_p.C.N,HerculanoHouzel_etal_2015_Table5,50.6,11
-Cavia porcellus,WholeBrain_p.C.N_SD,HerculanoHouzel_etal_2015_Table5,1.4,11
 Cynomys sp.,WholeBrain_n,HerculanoHouzel_etal_2015_Table5,3,11
 Cynomys sp.,Body_Mass.g,HerculanoHouzel_etal_2015_Table5,1515,11
 Cynomys sp.,Body_Mass.g_SD,HerculanoHouzel_etal_2015_Table5,230.6,11
@@ -2905,8 +2642,6 @@ Cynomys sp.,WholeBrain_N.n,HerculanoHouzel_etal_2015_Table5,437943767,11
 Cynomys sp.,WholeBrain_N.n_SD,HerculanoHouzel_etal_2015_Table5,78742230,11
 Cynomys sp.,WholeBrain_O.n,HerculanoHouzel_etal_2015_Table5,417349567,11
 Cynomys sp.,WholeBrain_O.n_SD,HerculanoHouzel_etal_2015_Table5,27350023,11
-Cynomys sp.,WholeBrain_p.C.N,HerculanoHouzel_etal_2015_Table5,51,11
-Cynomys sp.,WholeBrain_p.C.N_SD,HerculanoHouzel_etal_2015_Table5,4.2,11
 Sciurus carolinensis,WholeBrain_n,HerculanoHouzel_etal_2015_Table5,3,11
 Sciurus carolinensis,Body_Mass.g,HerculanoHouzel_etal_2015_Table5,500,11
 Sciurus carolinensis,Body_Mass.g_SD,HerculanoHouzel_etal_2015_Table5,NA,11
@@ -2916,8 +2651,6 @@ Sciurus carolinensis,WholeBrain_N.n,HerculanoHouzel_etal_2015_Table5,453660197,1
 Sciurus carolinensis,WholeBrain_N.n_SD,HerculanoHouzel_etal_2015_Table5,59752698,11
 Sciurus carolinensis,WholeBrain_O.n,HerculanoHouzel_etal_2015_Table5,530476469,11
 Sciurus carolinensis,WholeBrain_O.n_SD,HerculanoHouzel_etal_2015_Table5,5605837,11
-Sciurus carolinensis,WholeBrain_p.C.N,HerculanoHouzel_etal_2015_Table5,46,11
-Sciurus carolinensis,WholeBrain_p.C.N_SD,HerculanoHouzel_etal_2015_Table5,3,11
 Callithrix jacchus,WholeBrain_n,HerculanoHouzel_etal_2015_Table5,3,11
 Callithrix jacchus,Body_Mass.g,HerculanoHouzel_etal_2015_Table5,361,11
 Callithrix jacchus,Body_Mass.g_SD,HerculanoHouzel_etal_2015_Table5,1.4,11
@@ -2927,8 +2660,6 @@ Callithrix jacchus,WholeBrain_N.n,HerculanoHouzel_etal_2015_Table5,635800000,11
 Callithrix jacchus,WholeBrain_N.n_SD,HerculanoHouzel_etal_2015_Table5,115730000,11
 Callithrix jacchus,WholeBrain_O.n,HerculanoHouzel_etal_2015_Table5,590740000,11
 Callithrix jacchus,WholeBrain_O.n_SD,HerculanoHouzel_etal_2015_Table5,70810000,11
-Callithrix jacchus,WholeBrain_p.C.N,HerculanoHouzel_etal_2015_Table5,51.7,11
-Callithrix jacchus,WholeBrain_p.C.N_SD,HerculanoHouzel_etal_2015_Table5,NA,11
 Oryctolagus cuniculus,WholeBrain_n,HerculanoHouzel_etal_2015_Table5,1,11
 Oryctolagus cuniculus,Body_Mass.g,HerculanoHouzel_etal_2015_Table5,4600,11
 Oryctolagus cuniculus,Body_Mass.g_SD,HerculanoHouzel_etal_2015_Table5,NA,11
@@ -2938,19 +2669,15 @@ Oryctolagus cuniculus,WholeBrain_N.n,HerculanoHouzel_etal_2015_Table5,494205000,
 Oryctolagus cuniculus,WholeBrain_N.n_SD,HerculanoHouzel_etal_2015_Table5,NA,11
 Oryctolagus cuniculus,WholeBrain_O.n,HerculanoHouzel_etal_2015_Table5,630795000,11
 Oryctolagus cuniculus,WholeBrain_O.n_SD,HerculanoHouzel_etal_2015_Table5,NA,11
-Oryctolagus cuniculus,WholeBrain_p.C.N,HerculanoHouzel_etal_2015_Table5,43.9,11
-Oryctolagus cuniculus,WholeBrain_p.C.N_SD,HerculanoHouzel_etal_2015_Table5,NA,11
 Otolemur garnettii,WholeBrain_n,HerculanoHouzel_etal_2015_Table5,3,11
 Otolemur garnettii,Body_Mass.g,HerculanoHouzel_etal_2015_Table5,946.7,11
 Otolemur garnettii,Body_Mass.g_SD,HerculanoHouzel_etal_2015_Table5,102.6,11
 Otolemur garnettii,WholeBrain_Mass.g,HerculanoHouzel_etal_2015_Table5,10.15,11
 Otolemur garnettii,WholeBrain_Mass.g_SD,HerculanoHouzel_etal_2015_Table5,0.06,11
-Otolemur garnettii,WholeBrain_N.n,HerculanoHouzel_etal_2015_Table5,9.36e+08,11
+Otolemur garnettii,WholeBrain_N.n,HerculanoHouzel_etal_2015_Table5,936000000,11
 Otolemur garnettii,WholeBrain_N.n_SD,HerculanoHouzel_etal_2015_Table5,115360000,11
 Otolemur garnettii,WholeBrain_O.n,HerculanoHouzel_etal_2015_Table5,666590000,11
 Otolemur garnettii,WholeBrain_O.n_SD,HerculanoHouzel_etal_2015_Table5,63500000,11
-Otolemur garnettii,WholeBrain_p.C.N,HerculanoHouzel_etal_2015_Table5,58.4,11
-Otolemur garnettii,WholeBrain_p.C.N_SD,HerculanoHouzel_etal_2015_Table5,NA,11
 Dendrohyrax dorsalis,WholeBrain_n,HerculanoHouzel_etal_2015_Table5,1,11
 Dendrohyrax dorsalis,Body_Mass.g,HerculanoHouzel_etal_2015_Table5,1150,11
 Dendrohyrax dorsalis,Body_Mass.g_SD,HerculanoHouzel_etal_2015_Table5,NA,11
@@ -2960,8 +2687,6 @@ Dendrohyrax dorsalis,WholeBrain_N.n,HerculanoHouzel_etal_2015_Table5,504572834,1
 Dendrohyrax dorsalis,WholeBrain_N.n_SD,HerculanoHouzel_etal_2015_Table5,NA,11
 Dendrohyrax dorsalis,WholeBrain_O.n,HerculanoHouzel_etal_2015_Table5,413574000,11
 Dendrohyrax dorsalis,WholeBrain_O.n_SD,HerculanoHouzel_etal_2015_Table5,NA,11
-Dendrohyrax dorsalis,WholeBrain_p.C.N,HerculanoHouzel_etal_2015_Table5,NA,11
-Dendrohyrax dorsalis,WholeBrain_p.C.N_SD,HerculanoHouzel_etal_2015_Table5,NA,11
 Aotus trivirgatus,WholeBrain_n,HerculanoHouzel_etal_2015_Table5,2,11
 Aotus trivirgatus,Body_Mass.g,HerculanoHouzel_etal_2015_Table5,925,11
 Aotus trivirgatus,Body_Mass.g_SD,HerculanoHouzel_etal_2015_Table5,35,11
@@ -2971,8 +2696,6 @@ Aotus trivirgatus,WholeBrain_N.n,HerculanoHouzel_etal_2015_Table5,1468410000,11
 Aotus trivirgatus,WholeBrain_N.n_SD,HerculanoHouzel_etal_2015_Table5,NA,11
 Aotus trivirgatus,WholeBrain_O.n,HerculanoHouzel_etal_2015_Table5,1195130000,11
 Aotus trivirgatus,WholeBrain_O.n_SD,HerculanoHouzel_etal_2015_Table5,NA,11
-Aotus trivirgatus,WholeBrain_p.C.N,HerculanoHouzel_etal_2015_Table5,55.1,11
-Aotus trivirgatus,WholeBrain_p.C.N_SD,HerculanoHouzel_etal_2015_Table5,NA,11
 Procavia capensis,WholeBrain_n,HerculanoHouzel_etal_2015_Table5,2,11
 Procavia capensis,Body_Mass.g,HerculanoHouzel_etal_2015_Table5,2517,11
 Procavia capensis,Body_Mass.g_SD,HerculanoHouzel_etal_2015_Table5,NA,11
@@ -2982,8 +2705,6 @@ Procavia capensis,WholeBrain_N.n,HerculanoHouzel_etal_2015_Table5,755653000,11
 Procavia capensis,WholeBrain_N.n_SD,HerculanoHouzel_etal_2015_Table5,72145000,11
 Procavia capensis,WholeBrain_O.n,HerculanoHouzel_etal_2015_Table5,620622000,11
 Procavia capensis,WholeBrain_O.n_SD,HerculanoHouzel_etal_2015_Table5,37616000,11
-Procavia capensis,WholeBrain_p.C.N,HerculanoHouzel_etal_2015_Table5,NA,11
-Procavia capensis,WholeBrain_p.C.N_SD,HerculanoHouzel_etal_2015_Table5,NA,11
 Dasyprocta prymnolopha,WholeBrain_n,HerculanoHouzel_etal_2015_Table5,3,11
 Dasyprocta prymnolopha,Body_Mass.g,HerculanoHouzel_etal_2015_Table5,2843,11
 Dasyprocta prymnolopha,Body_Mass.g_SD,HerculanoHouzel_etal_2015_Table5,196,11
@@ -2993,8 +2714,6 @@ Dasyprocta prymnolopha,WholeBrain_N.n,HerculanoHouzel_etal_2015_Table5,795112070
 Dasyprocta prymnolopha,WholeBrain_N.n_SD,HerculanoHouzel_etal_2015_Table5,NA,11
 Dasyprocta prymnolopha,WholeBrain_O.n,HerculanoHouzel_etal_2015_Table5,951677930,11
 Dasyprocta prymnolopha,WholeBrain_O.n_SD,HerculanoHouzel_etal_2015_Table5,NA,11
-Dasyprocta prymnolopha,WholeBrain_p.C.N,HerculanoHouzel_etal_2015_Table5,45.5,11
-Dasyprocta prymnolopha,WholeBrain_p.C.N_SD,HerculanoHouzel_etal_2015_Table5,NA,11
 Saimiri sciureus,WholeBrain_n,HerculanoHouzel_etal_2015_Table5,2,11
 Saimiri sciureus,Body_Mass.g,HerculanoHouzel_etal_2015_Table5,859,11
 Saimiri sciureus,Body_Mass.g_SD,HerculanoHouzel_etal_2015_Table5,NA,11
@@ -3004,8 +2723,6 @@ Saimiri sciureus,WholeBrain_N.n,HerculanoHouzel_etal_2015_Table5,3246430000,11
 Saimiri sciureus,WholeBrain_N.n_SD,HerculanoHouzel_etal_2015_Table5,NA,11
 Saimiri sciureus,WholeBrain_O.n,HerculanoHouzel_etal_2015_Table5,2073030000,11
 Saimiri sciureus,WholeBrain_O.n_SD,HerculanoHouzel_etal_2015_Table5,NA,11
-Saimiri sciureus,WholeBrain_p.C.N,HerculanoHouzel_etal_2015_Table5,61,11
-Saimiri sciureus,WholeBrain_p.C.N_SD,HerculanoHouzel_etal_2015_Table5,NA,11
 Macaca fascicularis,WholeBrain_n,HerculanoHouzel_etal_2015_Table5,1,11
 Macaca fascicularis,Body_Mass.g,HerculanoHouzel_etal_2015_Table5,5700,11
 Macaca fascicularis,Body_Mass.g_SD,HerculanoHouzel_etal_2015_Table5,NA,11
@@ -3015,8 +2732,6 @@ Macaca fascicularis,WholeBrain_N.n,HerculanoHouzel_etal_2015_Table5,3439004620,1
 Macaca fascicularis,WholeBrain_N.n_SD,HerculanoHouzel_etal_2015_Table5,NA,11
 Macaca fascicularis,WholeBrain_O.n,HerculanoHouzel_etal_2015_Table5,3154415380,11
 Macaca fascicularis,WholeBrain_O.n_SD,HerculanoHouzel_etal_2015_Table5,NA,11
-Macaca fascicularis,WholeBrain_p.C.N,HerculanoHouzel_etal_2015_Table5,52.2,11
-Macaca fascicularis,WholeBrain_p.C.N_SD,HerculanoHouzel_etal_2015_Table5,NA,11
 Sapajus apella,WholeBrain_n,HerculanoHouzel_etal_2015_Table5,1,11
 Sapajus apella,Body_Mass.g,HerculanoHouzel_etal_2015_Table5,3340,11
 Sapajus apella,Body_Mass.g_SD,HerculanoHouzel_etal_2015_Table5,NA,11
@@ -3026,8 +2741,6 @@ Sapajus apella,WholeBrain_N.n,HerculanoHouzel_etal_2015_Table5,3690520000,11
 Sapajus apella,WholeBrain_N.n_SD,HerculanoHouzel_etal_2015_Table5,NA,11
 Sapajus apella,WholeBrain_O.n,HerculanoHouzel_etal_2015_Table5,3297740000,11
 Sapajus apella,WholeBrain_O.n_SD,HerculanoHouzel_etal_2015_Table5,NA,11
-Sapajus apella,WholeBrain_p.C.N,HerculanoHouzel_etal_2015_Table5,52.8,11
-Sapajus apella,WholeBrain_p.C.N_SD,HerculanoHouzel_etal_2015_Table5,NA,11
 Macaca radiata,WholeBrain_n,HerculanoHouzel_etal_2015_Table5,1,11
 Macaca radiata,Body_Mass.g,HerculanoHouzel_etal_2015_Table5,8012,11
 Macaca radiata,Body_Mass.g_SD,HerculanoHouzel_etal_2015_Table5,NA,11
@@ -3037,10 +2750,8 @@ Macaca radiata,WholeBrain_N.n,HerculanoHouzel_etal_2015_Table5,3755620300,11
 Macaca radiata,WholeBrain_N.n_SD,HerculanoHouzel_etal_2015_Table5,NA,11
 Macaca radiata,WholeBrain_O.n,HerculanoHouzel_etal_2015_Table5,4878879700,11
 Macaca radiata,WholeBrain_O.n_SD,HerculanoHouzel_etal_2015_Table5,NA,11
-Macaca radiata,WholeBrain_p.C.N,HerculanoHouzel_etal_2015_Table5,43.5,11
-Macaca radiata,WholeBrain_p.C.N_SD,HerculanoHouzel_etal_2015_Table5,NA,11
 Sus scrofa domesticus,WholeBrain_n,HerculanoHouzel_etal_2015_Table5,1,11
-Sus scrofa domesticus,Body_Mass.g,HerculanoHouzel_etal_2015_Table5,1e+05,11
+Sus scrofa domesticus,Body_Mass.g,HerculanoHouzel_etal_2015_Table5,100000,11
 Sus scrofa domesticus,Body_Mass.g_SD,HerculanoHouzel_etal_2015_Table5,NA,11
 Sus scrofa domesticus,WholeBrain_Mass.g,HerculanoHouzel_etal_2015_Table5,64.18,11
 Sus scrofa domesticus,WholeBrain_Mass.g_SD,HerculanoHouzel_etal_2015_Table5,NA,11
@@ -3048,8 +2759,6 @@ Sus scrofa domesticus,WholeBrain_N.n,HerculanoHouzel_etal_2015_Table5,2224112553
 Sus scrofa domesticus,WholeBrain_N.n_SD,HerculanoHouzel_etal_2015_Table5,NA,11
 Sus scrofa domesticus,WholeBrain_O.n,HerculanoHouzel_etal_2015_Table5,4695783705,11
 Sus scrofa domesticus,WholeBrain_O.n_SD,HerculanoHouzel_etal_2015_Table5,NA,11
-Sus scrofa domesticus,WholeBrain_p.C.N,HerculanoHouzel_etal_2015_Table5,32.1,11
-Sus scrofa domesticus,WholeBrain_p.C.N_SD,HerculanoHouzel_etal_2015_Table5,NA,11
 Hydrochoerus hydrochaeris,WholeBrain_n,HerculanoHouzel_etal_2015_Table5,2,11
 Hydrochoerus hydrochaeris,Body_Mass.g,HerculanoHouzel_etal_2015_Table5,47500,11
 Hydrochoerus hydrochaeris,Body_Mass.g_SD,HerculanoHouzel_etal_2015_Table5,3536,11
@@ -3059,8 +2768,6 @@ Hydrochoerus hydrochaeris,WholeBrain_N.n,HerculanoHouzel_etal_2015_Table5,157256
 Hydrochoerus hydrochaeris,WholeBrain_N.n_SD,HerculanoHouzel_etal_2015_Table5,72641426,11
 Hydrochoerus hydrochaeris,WholeBrain_O.n,HerculanoHouzel_etal_2015_Table5,3197929615,11
 Hydrochoerus hydrochaeris,WholeBrain_O.n_SD,HerculanoHouzel_etal_2015_Table5,974583717,11
-Hydrochoerus hydrochaeris,WholeBrain_p.C.N,HerculanoHouzel_etal_2015_Table5,33.6,11
-Hydrochoerus hydrochaeris,WholeBrain_p.C.N_SD,HerculanoHouzel_etal_2015_Table5,5.8,11
 Macaca mulatta,WholeBrain_n,HerculanoHouzel_etal_2015_Table5,1,11
 Macaca mulatta,Body_Mass.g,HerculanoHouzel_etal_2015_Table5,3900,11
 Macaca mulatta,Body_Mass.g_SD,HerculanoHouzel_etal_2015_Table5,NA,11
@@ -3070,8 +2777,6 @@ Macaca mulatta,WholeBrain_N.n,HerculanoHouzel_etal_2015_Table5,6376160000,11
 Macaca mulatta,WholeBrain_N.n_SD,HerculanoHouzel_etal_2015_Table5,NA,11
 Macaca mulatta,WholeBrain_O.n,HerculanoHouzel_etal_2015_Table5,7162900000,11
 Macaca mulatta,WholeBrain_O.n_SD,HerculanoHouzel_etal_2015_Table5,NA,11
-Macaca mulatta,WholeBrain_p.C.N,HerculanoHouzel_etal_2015_Table5,47.1,11
-Macaca mulatta,WholeBrain_p.C.N_SD,HerculanoHouzel_etal_2015_Table5,NA,11
 Antidorcas marsupialis,WholeBrain_n,HerculanoHouzel_etal_2015_Table5,1,11
 Antidorcas marsupialis,Body_Mass.g,HerculanoHouzel_etal_2015_Table5,25000,11
 Antidorcas marsupialis,Body_Mass.g_SD,HerculanoHouzel_etal_2015_Table5,NA,11
@@ -3081,8 +2786,6 @@ Antidorcas marsupialis,WholeBrain_N.n,HerculanoHouzel_etal_2015_Table5,272459523
 Antidorcas marsupialis,WholeBrain_N.n_SD,HerculanoHouzel_etal_2015_Table5,NA,11
 Antidorcas marsupialis,WholeBrain_O.n,HerculanoHouzel_etal_2015_Table5,5912784575,11
 Antidorcas marsupialis,WholeBrain_O.n_SD,HerculanoHouzel_etal_2015_Table5,NA,11
-Antidorcas marsupialis,WholeBrain_p.C.N,HerculanoHouzel_etal_2015_Table5,31.5,11
-Antidorcas marsupialis,WholeBrain_p.C.N_SD,HerculanoHouzel_etal_2015_Table5,NA,11
 Papio cynocephalus,WholeBrain_n,HerculanoHouzel_etal_2015_Table5,2,11
 Papio cynocephalus,Body_Mass.g,HerculanoHouzel_etal_2015_Table5,8000,11
 Papio cynocephalus,Body_Mass.g_SD,HerculanoHouzel_etal_2015_Table5,NA,11
@@ -3092,8 +2795,6 @@ Papio cynocephalus,WholeBrain_N.n,HerculanoHouzel_etal_2015_Table5,10948086440,1
 Papio cynocephalus,WholeBrain_N.n_SD,HerculanoHouzel_etal_2015_Table5,NA,11
 Papio cynocephalus,WholeBrain_O.n,HerculanoHouzel_etal_2015_Table5,9175538564,11
 Papio cynocephalus,WholeBrain_O.n_SD,HerculanoHouzel_etal_2015_Table5,NA,11
-Papio cynocephalus,WholeBrain_p.C.N,HerculanoHouzel_etal_2015_Table5,54.4,11
-Papio cynocephalus,WholeBrain_p.C.N_SD,HerculanoHouzel_etal_2015_Table5,NA,11
 Damaliscus pygargus phillipsi,WholeBrain_n,HerculanoHouzel_etal_2015_Table5,1,11
 Damaliscus pygargus phillipsi,Body_Mass.g,HerculanoHouzel_etal_2015_Table5,60000,11
 Damaliscus pygargus phillipsi,Body_Mass.g_SD,HerculanoHouzel_etal_2015_Table5,NA,11
@@ -3103,8 +2804,6 @@ Damaliscus pygargus phillipsi,WholeBrain_N.n,HerculanoHouzel_etal_2015_Table5,30
 Damaliscus pygargus phillipsi,WholeBrain_N.n_SD,HerculanoHouzel_etal_2015_Table5,NA,11
 Damaliscus pygargus phillipsi,WholeBrain_O.n,HerculanoHouzel_etal_2015_Table5,9343246559,11
 Damaliscus pygargus phillipsi,WholeBrain_O.n_SD,HerculanoHouzel_etal_2015_Table5,NA,11
-Damaliscus pygargus phillipsi,WholeBrain_p.C.N,HerculanoHouzel_etal_2015_Table5,24.7,11
-Damaliscus pygargus phillipsi,WholeBrain_p.C.N_SD,HerculanoHouzel_etal_2015_Table5,NA,11
 Tragelaphus strepsiceros,WholeBrain_n,HerculanoHouzel_etal_2015_Table5,1,11
 Tragelaphus strepsiceros,Body_Mass.g,HerculanoHouzel_etal_2015_Table5,218000,11
 Tragelaphus strepsiceros,Body_Mass.g_SD,HerculanoHouzel_etal_2015_Table5,NA,11
@@ -3114,8 +2813,6 @@ Tragelaphus strepsiceros,WholeBrain_N.n,HerculanoHouzel_etal_2015_Table5,4911651
 Tragelaphus strepsiceros,WholeBrain_N.n_SD,HerculanoHouzel_etal_2015_Table5,NA,11
 Tragelaphus strepsiceros,WholeBrain_O.n,HerculanoHouzel_etal_2015_Table5,16977183580,11
 Tragelaphus strepsiceros,WholeBrain_O.n_SD,HerculanoHouzel_etal_2015_Table5,NA,11
-Tragelaphus strepsiceros,WholeBrain_p.C.N,HerculanoHouzel_etal_2015_Table5,22.4,11
-Tragelaphus strepsiceros,WholeBrain_p.C.N_SD,HerculanoHouzel_etal_2015_Table5,NA,11
 Giraffa camelopardalis,WholeBrain_n,HerculanoHouzel_etal_2015_Table5,1,11
 Giraffa camelopardalis,Body_Mass.g,HerculanoHouzel_etal_2015_Table5,470000,11
 Giraffa camelopardalis,Body_Mass.g_SD,HerculanoHouzel_etal_2015_Table5,NA,11
@@ -3125,21 +2822,17 @@ Giraffa camelopardalis,WholeBrain_N.n,HerculanoHouzel_etal_2015_Table5,107512876
 Giraffa camelopardalis,WholeBrain_N.n_SD,HerculanoHouzel_etal_2015_Table5,NA,11
 Giraffa camelopardalis,WholeBrain_O.n,HerculanoHouzel_etal_2015_Table5,37912932350,11
 Giraffa camelopardalis,WholeBrain_O.n_SD,HerculanoHouzel_etal_2015_Table5,NA,11
-Giraffa camelopardalis,WholeBrain_p.C.N,HerculanoHouzel_etal_2015_Table5,23.5,11
-Giraffa camelopardalis,WholeBrain_p.C.N_SD,HerculanoHouzel_etal_2015_Table5,NA,11
 Homo sapiens,WholeBrain_n,HerculanoHouzel_etal_2015_Table5,4,11
 Homo sapiens,Body_Mass.g,HerculanoHouzel_etal_2015_Table5,70000,11
 Homo sapiens,Body_Mass.g_SD,HerculanoHouzel_etal_2015_Table5,NA,11
 Homo sapiens,WholeBrain_Mass.g,HerculanoHouzel_etal_2015_Table5,1508.91,11
 Homo sapiens,WholeBrain_Mass.g_SD,HerculanoHouzel_etal_2015_Table5,299.14,11
-Homo sapiens,WholeBrain_N.n,HerculanoHouzel_etal_2015_Table5,8.606e+10,11
-Homo sapiens,WholeBrain_N.n_SD,HerculanoHouzel_etal_2015_Table5,8.12e+09,11
-Homo sapiens,WholeBrain_O.n,HerculanoHouzel_etal_2015_Table5,8.461e+10,11
-Homo sapiens,WholeBrain_O.n_SD,HerculanoHouzel_etal_2015_Table5,9.83e+09,11
-Homo sapiens,WholeBrain_p.C.N,HerculanoHouzel_etal_2015_Table5,50.5,11
-Homo sapiens,WholeBrain_p.C.N_SD,HerculanoHouzel_etal_2015_Table5,3.6,11
+Homo sapiens,WholeBrain_N.n,HerculanoHouzel_etal_2015_Table5,86060000000,11
+Homo sapiens,WholeBrain_N.n_SD,HerculanoHouzel_etal_2015_Table5,8120000000,11
+Homo sapiens,WholeBrain_O.n,HerculanoHouzel_etal_2015_Table5,84610000000,11
+Homo sapiens,WholeBrain_O.n_SD,HerculanoHouzel_etal_2015_Table5,9830000000,11
 Loxodonta africana,WholeBrain_n,HerculanoHouzel_etal_2015_Table5,1,11
-Loxodonta africana,Body_Mass.g,HerculanoHouzel_etal_2015_Table5,5e+06,11
+Loxodonta africana,Body_Mass.g,HerculanoHouzel_etal_2015_Table5,5000000,11
 Loxodonta africana,Body_Mass.g_SD,HerculanoHouzel_etal_2015_Table5,NA,11
 Loxodonta africana,WholeBrain_Mass.g,HerculanoHouzel_etal_2015_Table5,4618.62,11
 Loxodonta africana,WholeBrain_Mass.g_SD,HerculanoHouzel_etal_2015_Table5,NA,11
@@ -3147,57 +2840,68 @@ Loxodonta africana,WholeBrain_N.n,HerculanoHouzel_etal_2015_Table5,257043473412,
 Loxodonta africana,WholeBrain_N.n_SD,HerculanoHouzel_etal_2015_Table5,NA,11
 Loxodonta africana,WholeBrain_O.n,HerculanoHouzel_etal_2015_Table5,216057982337,11
 Loxodonta africana,WholeBrain_O.n_SD,HerculanoHouzel_etal_2015_Table5,NA,11
-Loxodonta africana,WholeBrain_p.C.N,HerculanoHouzel_etal_2015_Table5,NA,11
-Loxodonta africana,WholeBrain_p.C.N_SD,HerculanoHouzel_etal_2015_Table5,NA,11
-Cardioderma cor,WholeBrain_n,HerculanoHouzel_etal_2020_TABLE1,2 (1H each),2
+Cardioderma cor,WholeBrain_n,HerculanoHouzel_etal_2020_TABLE1,2,2
+Cardioderma cor,SampleInfo,HerculanoHouzel_etal_2020_TABLE1,(1H each),2
 Cardioderma cor,Body_Mass.g,HerculanoHouzel_etal_2020_TABLE1,26,2
 Cardioderma cor,WholeBrain_Mass.g,HerculanoHouzel_etal_2020_TABLE1,0.562,2
 Cardioderma cor,WholeBrain_N.n,HerculanoHouzel_etal_2020_TABLE1,81331192,2
-Coleura afra,WholeBrain_n,HerculanoHouzel_etal_2020_TABLE1,2 (1H each),2
+Coleura afra,WholeBrain_n,HerculanoHouzel_etal_2020_TABLE1,2,2
+Coleura afra,SampleInfo,HerculanoHouzel_etal_2020_TABLE1,(1H each),2
 Coleura afra,Body_Mass.g,HerculanoHouzel_etal_2020_TABLE1,11.5,2
 Coleura afra,WholeBrain_Mass.g,HerculanoHouzel_etal_2020_TABLE1,0.244,2
 Coleura afra,WholeBrain_N.n,HerculanoHouzel_etal_2020_TABLE1,58580214,2
-Triaenops persicus,WholeBrain_n,HerculanoHouzel_etal_2020_TABLE1,2 (1H each),2
+Triaenops persicus,WholeBrain_n,HerculanoHouzel_etal_2020_TABLE1,2,2
+Triaenops persicus,SampleInfo,HerculanoHouzel_etal_2020_TABLE1,(1H each),2
 Triaenops persicus,Body_Mass.g,HerculanoHouzel_etal_2020_TABLE1,13.7,2
 Triaenops persicus,WholeBrain_Mass.g,HerculanoHouzel_etal_2020_TABLE1,0.251,2
 Triaenops persicus,WholeBrain_N.n,HerculanoHouzel_etal_2020_TABLE1,69762924,2
-Macronycteris commersoni,WholeBrain_n,HerculanoHouzel_etal_2020_TABLE1,2 females (1H each),2
+Macronycteris commersoni,WholeBrain_n,HerculanoHouzel_etal_2020_TABLE1,2,2
+Macronycteris commersoni,SampleInfo,HerculanoHouzel_etal_2020_TABLE1,females (1H each),2
 Macronycteris commersoni,Body_Mass.g,HerculanoHouzel_etal_2020_TABLE1,101.9,2
 Macronycteris commersoni,WholeBrain_Mass.g,HerculanoHouzel_etal_2020_TABLE1,0.588,2
 Macronycteris commersoni,WholeBrain_N.n,HerculanoHouzel_etal_2020_TABLE1,66718833,2
-Mops pumilus,WholeBrain_n,HerculanoHouzel_etal_2020_TABLE1,2 (1 female) (2H each),2
+Mops pumilus,WholeBrain_n,HerculanoHouzel_etal_2020_TABLE1,2,2
+Mops pumilus,SampleInfo,HerculanoHouzel_etal_2020_TABLE1,(1 female) (2H each),2
 Mops pumilus,Body_Mass.g,HerculanoHouzel_etal_2020_TABLE1,5.4,2
 Mops pumilus,WholeBrain_Mass.g,HerculanoHouzel_etal_2020_TABLE1,0.208,2
 Mops pumilus,WholeBrain_N.n,HerculanoHouzel_etal_2020_TABLE1,34958391,2
-Miniopterus schreibersii,WholeBrain_n,HerculanoHouzel_etal_2020_TABLE1,2 (1H each),2
+Miniopterus schreibersii,WholeBrain_n,HerculanoHouzel_etal_2020_TABLE1,2,2
+Miniopterus schreibersii,SampleInfo,HerculanoHouzel_etal_2020_TABLE1,(1H each),2
 Miniopterus schreibersii,Body_Mass.g,HerculanoHouzel_etal_2020_TABLE1,11.6,2
 Miniopterus schreibersii,WholeBrain_Mass.g,HerculanoHouzel_etal_2020_TABLE1,0.219,2
 Miniopterus schreibersii,WholeBrain_N.n,HerculanoHouzel_etal_2020_TABLE1,55658777,2
-Epomophorus wahlbergi,WholeBrain_n,HerculanoHouzel_etal_2020_TABLE1,2 females (1H each),2
+Epomophorus wahlbergi,WholeBrain_n,HerculanoHouzel_etal_2020_TABLE1,2,2
+Epomophorus wahlbergi,SampleInfo,HerculanoHouzel_etal_2020_TABLE1,females (1H each),2
 Epomophorus wahlbergi,Body_Mass.g,HerculanoHouzel_etal_2020_TABLE1,74,2
 Epomophorus wahlbergi,WholeBrain_Mass.g,HerculanoHouzel_etal_2020_TABLE1,1.224,2
 Epomophorus wahlbergi,WholeBrain_N.n,HerculanoHouzel_etal_2020_TABLE1,161754633,2
-Rousettus aegyptiacus,WholeBrain_n,HerculanoHouzel_etal_2020_TABLE1,2 (1 female) (1H each),2
+Rousettus aegyptiacus,WholeBrain_n,HerculanoHouzel_etal_2020_TABLE1,2,2
+Rousettus aegyptiacus,SampleInfo,HerculanoHouzel_etal_2020_TABLE1,(1 female) (1H each),2
 Rousettus aegyptiacus,Body_Mass.g,HerculanoHouzel_etal_2020_TABLE1,120,2
 Rousettus aegyptiacus,WholeBrain_Mass.g,HerculanoHouzel_etal_2020_TABLE1,1.778,2
 Rousettus aegyptiacus,WholeBrain_N.n,HerculanoHouzel_etal_2020_TABLE1,172232047,2
-Megaloglossus woermanni,WholeBrain_n,HerculanoHouzel_etal_2020_TABLE1,2 (1H each),2
+Megaloglossus woermanni,WholeBrain_n,HerculanoHouzel_etal_2020_TABLE1,2,2
+Megaloglossus woermanni,SampleInfo,HerculanoHouzel_etal_2020_TABLE1,(1H each),2
 Megaloglossus woermanni,Body_Mass.g,HerculanoHouzel_etal_2020_TABLE1,17.9,2
 Megaloglossus woermanni,WholeBrain_Mass.g,HerculanoHouzel_etal_2020_TABLE1,0.55,2
 Megaloglossus woermanni,WholeBrain_N.n,HerculanoHouzel_etal_2020_TABLE1,65728366,2
-Hypsignathus monstrosus,WholeBrain_n,HerculanoHouzel_etal_2020_TABLE1,2 (1 female) (1H each),2
+Hypsignathus monstrosus,WholeBrain_n,HerculanoHouzel_etal_2020_TABLE1,2,2
+Hypsignathus monstrosus,SampleInfo,HerculanoHouzel_etal_2020_TABLE1,(1 female) (1H each),2
 Hypsignathus monstrosus,Body_Mass.g,HerculanoHouzel_etal_2020_TABLE1,310,2
 Hypsignathus monstrosus,WholeBrain_Mass.g,HerculanoHouzel_etal_2020_TABLE1,3.459,2
 Hypsignathus monstrosus,WholeBrain_N.n,HerculanoHouzel_etal_2020_TABLE1,274519253,2
-Epomops franqueti,WholeBrain_n,HerculanoHouzel_etal_2020_TABLE1,2 (1H each),2
+Epomops franqueti,WholeBrain_n,HerculanoHouzel_etal_2020_TABLE1,2,2
+Epomops franqueti,SampleInfo,HerculanoHouzel_etal_2020_TABLE1,(1H each),2
 Epomops franqueti,Body_Mass.g,HerculanoHouzel_etal_2020_TABLE1,120,2
 Epomops franqueti,WholeBrain_Mass.g,HerculanoHouzel_etal_2020_TABLE1,2.044,2
 Epomops franqueti,WholeBrain_N.n,HerculanoHouzel_etal_2020_TABLE1,186002499,2
-Casinycteris argynnis,WholeBrain_n,HerculanoHouzel_etal_2020_TABLE1,2 (1H each),2
+Casinycteris argynnis,WholeBrain_n,HerculanoHouzel_etal_2020_TABLE1,2,2
+Casinycteris argynnis,SampleInfo,HerculanoHouzel_etal_2020_TABLE1,(1H each),2
 Casinycteris argynnis,Body_Mass.g,HerculanoHouzel_etal_2020_TABLE1,27,2
 Casinycteris argynnis,WholeBrain_Mass.g,HerculanoHouzel_etal_2020_TABLE1,0.892,2
 Casinycteris argynnis,WholeBrain_N.n,HerculanoHouzel_etal_2020_TABLE1,99016077,2
-Scotonycteris zenkeri,WholeBrain_n,HerculanoHouzel_etal_2020_TABLE1,2 (1H each),2
+Scotonycteris zenkeri,WholeBrain_n,HerculanoHouzel_etal_2020_TABLE1,2,2
+Scotonycteris zenkeri,SampleInfo,HerculanoHouzel_etal_2020_TABLE1,(1H each),2
 Scotonycteris zenkeri,Body_Mass.g,HerculanoHouzel_etal_2020_TABLE1,16.1,2
 Scotonycteris zenkeri,WholeBrain_Mass.g,HerculanoHouzel_etal_2020_TABLE1,0.588,2
 Scotonycteris zenkeri,WholeBrain_N.n,HerculanoHouzel_etal_2020_TABLE1,65594971,2
@@ -3279,7 +2983,6 @@ Scotonycteris zenkeri,RoB_N.n,HerculanoHouzel_etal_2020_TABLE2,5529891,3
 Scotonycteris zenkeri,CerebralCortex_N.p.mg,HerculanoHouzel_etal_2020_TABLE2,39652,3
 Scotonycteris zenkeri,Cerebellum_N.p.mg,HerculanoHouzel_etal_2020_TABLE2,549046,3
 Scotonycteris zenkeri,RoB_N.p.mg,HerculanoHouzel_etal_2020_TABLE2,31067,3
-Mustela putorius furo,Body_Mass.kg,JardimMesseder_etal_2017_Table1,0.8,7
 Mustela putorius furo,WholeBrain_Mass.g,JardimMesseder_etal_2017_Table1,5.429,7
 Mustela putorius furo,CerebralCortex_Mass.g,JardimMesseder_etal_2017_Table1,3.123,7
 Mustela putorius furo,Hippocampus_Mass.g,JardimMesseder_etal_2017_Table1,0.329,7
@@ -3309,7 +3012,7 @@ Mustela putorius furo,Hippocampus_O.p.N,JardimMesseder_etal_2017_Table1,9.182,7
 Mustela putorius furo,Cerebellum_O.p.N,JardimMesseder_etal_2017_Table1,0.227,7
 Mustela putorius furo,RoB_O.p.N,JardimMesseder_etal_2017_Table1,9.101,7
 Mustela putorius furo,OlfactoryBulb_O.p.N,JardimMesseder_etal_2017_Table1,3.097,7
-Mungos mungo,Body_Mass.kg,JardimMesseder_etal_2017_Table1,1.5,7
+Mustela putorius furo,Body_Mass.g,JardimMesseder_etal_2017_Table1,800,7
 Mungos mungo,WholeBrain_Mass.g,JardimMesseder_etal_2017_Table1,14.292,7
 Mungos mungo,CerebralCortex_Mass.g,JardimMesseder_etal_2017_Table1,9.29,7
 Mungos mungo,Hippocampus_Mass.g,JardimMesseder_etal_2017_Table1,0.428,7
@@ -3339,7 +3042,7 @@ Mungos mungo,Hippocampus_O.p.N,JardimMesseder_etal_2017_Table1,8.618,7
 Mungos mungo,Cerebellum_O.p.N,JardimMesseder_etal_2017_Table1,0.489,7
 Mungos mungo,RoB_O.p.N,JardimMesseder_etal_2017_Table1,6.731,7
 Mungos mungo,OlfactoryBulb_O.p.N,JardimMesseder_etal_2017_Table1,NA,7
-Procyon lotor,Body_Mass.kg,JardimMesseder_etal_2017_Table1,6.2,7
+Mungos mungo,Body_Mass.g,JardimMesseder_etal_2017_Table1,1500,7
 Procyon lotor,WholeBrain_Mass.g,JardimMesseder_etal_2017_Table1,34.186,7
 Procyon lotor,CerebralCortex_Mass.g,JardimMesseder_etal_2017_Table1,24.491,7
 Procyon lotor,Hippocampus_Mass.g,JardimMesseder_etal_2017_Table1,0.477,7
@@ -3356,7 +3059,7 @@ Procyon lotor,WholeBrain_O.n,JardimMesseder_etal_2017_Table1,2399990000,7
 Procyon lotor,CerebralCortex_O.n,JardimMesseder_etal_2017_Table1,1766670000,7
 Procyon lotor,Hippocampus_O.n,JardimMesseder_etal_2017_Table1,70000000,7
 Procyon lotor,Cerebellum_O.n,JardimMesseder_etal_2017_Table1,241320000,7
-Procyon lotor,RoB_O.n,JardimMesseder_etal_2017_Table1,3.92e+08,7
+Procyon lotor,RoB_O.n,JardimMesseder_etal_2017_Table1,392000000,7
 Procyon lotor,OlfactoryBulb_O.n,JardimMesseder_etal_2017_Table1,79760000,7
 Procyon lotor,CerebralCortex_N.p.mg,JardimMesseder_etal_2017_Table1,18510,7
 Procyon lotor,Hippocampus_N.p.mg,JardimMesseder_etal_2017_Table1,16076,7
@@ -3369,7 +3072,7 @@ Procyon lotor,Hippocampus_O.p.N,JardimMesseder_etal_2017_Table1,4.564,7
 Procyon lotor,Cerebellum_O.p.N,JardimMesseder_etal_2017_Table1,0.147,7
 Procyon lotor,RoB_O.p.N,JardimMesseder_etal_2017_Table1,8.071,7
 Procyon lotor,OlfactoryBulb_O.p.N,JardimMesseder_etal_2017_Table1,1.425,7
-Felis catus,Body_Mass.kg,JardimMesseder_etal_2017_Table1,4.5,7
+Procyon lotor,Body_Mass.g,JardimMesseder_etal_2017_Table1,6200,7
 Felis catus,WholeBrain_Mass.g,JardimMesseder_etal_2017_Table1,34.858,7
 Felis catus,CerebralCortex_Mass.g,JardimMesseder_etal_2017_Table1,24.176,7
 Felis catus,Hippocampus_Mass.g,JardimMesseder_etal_2017_Table1,0.876,7
@@ -3399,7 +3102,7 @@ Felis catus,Hippocampus_O.p.N,JardimMesseder_etal_2017_Table1,6.952,7
 Felis catus,Cerebellum_O.p.N,JardimMesseder_etal_2017_Table1,0.346,7
 Felis catus,RoB_O.p.N,JardimMesseder_etal_2017_Table1,13.598,7
 Felis catus,OlfactoryBulb_O.p.N,JardimMesseder_etal_2017_Table1,NA,7
-Canis lupus familiaris,Body_Mass.kg,JardimMesseder_etal_2017_Table1,19.7,7
+Felis catus,Body_Mass.g,JardimMesseder_etal_2017_Table1,4500,7
 Canis lupus familiaris,WholeBrain_Mass.g,JardimMesseder_etal_2017_Table1,86.462,7
 Canis lupus familiaris,CerebralCortex_Mass.g,JardimMesseder_etal_2017_Table1,65.491,7
 Canis lupus familiaris,Hippocampus_Mass.g,JardimMesseder_etal_2017_Table1,2.01,7
@@ -3429,7 +3132,7 @@ Canis lupus familiaris,Hippocampus_O.p.N,JardimMesseder_etal_2017_Table1,15.575,
 Canis lupus familiaris,Cerebellum_O.p.N,JardimMesseder_etal_2017_Table1,0.506,7
 Canis lupus familiaris,RoB_O.p.N,JardimMesseder_etal_2017_Table1,19.275,7
 Canis lupus familiaris,OlfactoryBulb_O.p.N,JardimMesseder_etal_2017_Table1,NA,7
-Hyaena hyaena,Body_Mass.kg,JardimMesseder_etal_2017_Table1,40,7
+Canis lupus familiaris,Body_Mass.g,JardimMesseder_etal_2017_Table1,19700,7
 Hyaena hyaena,WholeBrain_Mass.g,JardimMesseder_etal_2017_Table1,99.214,7
 Hyaena hyaena,CerebralCortex_Mass.g,JardimMesseder_etal_2017_Table1,67.45,7
 Hyaena hyaena,Hippocampus_Mass.g,JardimMesseder_etal_2017_Table1,3.366,7
@@ -3459,7 +3162,7 @@ Hyaena hyaena,Hippocampus_O.p.N,JardimMesseder_etal_2017_Table1,7.667,7
 Hyaena hyaena,Cerebellum_O.p.N,JardimMesseder_etal_2017_Table1,0.178,7
 Hyaena hyaena,RoB_O.p.N,JardimMesseder_etal_2017_Table1,16.749,7
 Hyaena hyaena,OlfactoryBulb_O.p.N,JardimMesseder_etal_2017_Table1,NA,7
-Panthera leo,Body_Mass.kg,JardimMesseder_etal_2017_Table1,180,7
+Hyaena hyaena,Body_Mass.g,JardimMesseder_etal_2017_Table1,40000,7
 Panthera leo,WholeBrain_Mass.g,JardimMesseder_etal_2017_Table1,198.946,7
 Panthera leo,CerebralCortex_Mass.g,JardimMesseder_etal_2017_Table1,139.902,7
 Panthera leo,Hippocampus_Mass.g,JardimMesseder_etal_2017_Table1,3.648,7
@@ -3475,7 +3178,7 @@ Panthera leo,OlfactoryBulb_N.n,JardimMesseder_etal_2017_Table1,NA,7
 Panthera leo,WholeBrain_O.n,JardimMesseder_etal_2017_Table1,12398840000,7
 Panthera leo,CerebralCortex_O.n,JardimMesseder_etal_2017_Table1,7260970000,7
 Panthera leo,Hippocampus_O.n,JardimMesseder_etal_2017_Table1,177110000,7
-Panthera leo,Cerebellum_O.n,JardimMesseder_etal_2017_Table1,3.044e+09,7
+Panthera leo,Cerebellum_O.n,JardimMesseder_etal_2017_Table1,3044000000,7
 Panthera leo,RoB_O.n,JardimMesseder_etal_2017_Table1,2093860000,7
 Panthera leo,OlfactoryBulb_O.n,JardimMesseder_etal_2017_Table1,NA,7
 Panthera leo,CerebralCortex_N.p.mg,JardimMesseder_etal_2017_Table1,3897,7
@@ -3489,7 +3192,7 @@ Panthera leo,Hippocampus_O.p.N,JardimMesseder_etal_2017_Table1,13.083,7
 Panthera leo,Cerebellum_O.p.N,JardimMesseder_etal_2017_Table1,0.752,7
 Panthera leo,RoB_O.p.N,JardimMesseder_etal_2017_Table1,29.063,7
 Panthera leo,OlfactoryBulb_O.p.N,JardimMesseder_etal_2017_Table1,NA,7
-Ursus arctos,Body_Mass.kg,JardimMesseder_etal_2017_Table1,350,7
+Panthera leo,Body_Mass.g,JardimMesseder_etal_2017_Table1,180000,7
 Ursus arctos,WholeBrain_Mass.g,JardimMesseder_etal_2017_Table1,315.004,7
 Ursus arctos,CerebralCortex_Mass.g,JardimMesseder_etal_2017_Table1,222,7
 Ursus arctos,Hippocampus_Mass.g,JardimMesseder_etal_2017_Table1,4.13,7
@@ -3503,7 +3206,7 @@ Ursus arctos,Cerebellum_N.n,JardimMesseder_etal_2017_Table1,9253250000,7
 Ursus arctos,RoB_N.n,JardimMesseder_etal_2017_Table1,81380000,7
 Ursus arctos,OlfactoryBulb_N.n,JardimMesseder_etal_2017_Table1,NA,7
 Ursus arctos,WholeBrain_O.n,JardimMesseder_etal_2017_Table1,15113190000,7
-Ursus arctos,CerebralCortex_O.n,JardimMesseder_etal_2017_Table1,1.0154e+10,7
+Ursus arctos,CerebralCortex_O.n,JardimMesseder_etal_2017_Table1,10154000000,7
 Ursus arctos,Hippocampus_O.n,JardimMesseder_etal_2017_Table1,249160000,7
 Ursus arctos,Cerebellum_O.n,JardimMesseder_etal_2017_Table1,2296750000,7
 Ursus arctos,RoB_O.n,JardimMesseder_etal_2017_Table1,2662440000,7
@@ -3519,512 +3222,359 @@ Ursus arctos,Hippocampus_O.p.N,JardimMesseder_etal_2017_Table1,28.941,7
 Ursus arctos,Cerebellum_O.p.N,JardimMesseder_etal_2017_Table1,0.248,7
 Ursus arctos,RoB_O.p.N,JardimMesseder_etal_2017_Table1,32.714,7
 Ursus arctos,OlfactoryBulb_O.p.N,JardimMesseder_etal_2017_Table1,NA,7
+Ursus arctos,Body_Mass.g,JardimMesseder_etal_2017_Table1,350000,7
 Bathyergus suillus,Body_Mass.g,Kverkova_etal_2018_TableS1,907.82,4
 Bathyergus suillus,Body_Mass.g_SD,Kverkova_etal_2018_TableS1,320.93,4
 Bathyergus suillus,WholeBrainOlfactoryBulb_Mass.g,Kverkova_etal_2018_TableS1,3.78,4
 Bathyergus suillus,WholeBrainOlfactoryBulb_Mass.g_SD,Kverkova_etal_2018_TableS1,0.14,4
 Bathyergus suillus,OlfactoryBulb_Vol.mm3,Kverkova_etal_2018_TableS1,132,4
 Bathyergus suillus,OlfactoryBulb_Vol.mm3_SD,Kverkova_etal_2018_TableS1,14,4
-Bathyergus suillus,OlfactoryBulb_p.C.Brain,Kverkova_etal_2018_TableS1,0.037,4
 Bathyergus suillus,OlfactoryCortices_Vol.mm3,Kverkova_etal_2018_TableS1,173,4
 Bathyergus suillus,OlfactoryCortices_Vol.mm3_SD,Kverkova_etal_2018_TableS1,15,4
-Bathyergus suillus,OlfactoryCortices_p.C.Brain,Kverkova_etal_2018_TableS1,0.0483,4
 Bathyergus suillus,Neocortex_Vol.mm3,Kverkova_etal_2018_TableS1,1011,4
 Bathyergus suillus,Neocortex_Vol.mm3_SD,Kverkova_etal_2018_TableS1,21,4
-Bathyergus suillus,Neocortex_p.C.Brain,Kverkova_etal_2018_TableS1,0.283,4
 Bathyergus suillus,EntorhinalCortex_Vol.mm3,Kverkova_etal_2018_TableS1,96,4
 Bathyergus suillus,EntorhinalCortex_Vol.mm3_SD,Kverkova_etal_2018_TableS1,3,4
-Bathyergus suillus,EntorhinalCortex_p.C.Brain,Kverkova_etal_2018_TableS1,0.027,4
 Bathyergus suillus,Hippocampus_Vol.mm3,Kverkova_etal_2018_TableS1,194,4
 Bathyergus suillus,Hippocampus_Vol.mm3_SD,Kverkova_etal_2018_TableS1,1,4
-Bathyergus suillus,Hippocampus_p.C.Brain,Kverkova_etal_2018_TableS1,0.0544,4
 Bathyergus suillus,Amygdala_Vol.mm3,Kverkova_etal_2018_TableS1,50,4
 Bathyergus suillus,Amygdala_Vol.mm3_SD,Kverkova_etal_2018_TableS1,3,4
-Bathyergus suillus,Amygdala_p.C.Brain,Kverkova_etal_2018_TableS1,0.0139,4
 Bathyergus suillus,Striatum_Vol.mm3,Kverkova_etal_2018_TableS1,249,4
 Bathyergus suillus,Striatum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,20,4
-Bathyergus suillus,Striatum_p.C.Brain,Kverkova_etal_2018_TableS1,0.0698,4
 Bathyergus suillus,Septum_Vol.mm3,Kverkova_etal_2018_TableS1,35,4
 Bathyergus suillus,Septum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,7,4
-Bathyergus suillus,Septum_p.C.Brain,Kverkova_etal_2018_TableS1,0.0097,4
 Bathyergus suillus,Thalamus_Vol.mm3,Kverkova_etal_2018_TableS1,173,4
 Bathyergus suillus,Thalamus_Vol.mm3_SD,Kverkova_etal_2018_TableS1,15,4
-Bathyergus suillus,Thalamus_p.C.Brain,Kverkova_etal_2018_TableS1,0.0483,4
 Bathyergus suillus,Hypothalamus_Vol.mm3,Kverkova_etal_2018_TableS1,85,4
 Bathyergus suillus,Hypothalamus_Vol.mm3_SD,Kverkova_etal_2018_TableS1,7,4
-Bathyergus suillus,Hypothalamus_p.C.Brain,Kverkova_etal_2018_TableS1,0.0238,4
 Bathyergus suillus,Cerebellum_Vol.mm3,Kverkova_etal_2018_TableS1,683,4
 Bathyergus suillus,Cerebellum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,82,4
-Bathyergus suillus,Cerebellum_p.C.Brain,Kverkova_etal_2018_TableS1,0.1911,4
 Bathyergus suillus,Tectum_Vol.mm3,Kverkova_etal_2018_TableS1,69,4
 Bathyergus suillus,Tectum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,6,4
-Bathyergus suillus,Tectum_p.C.Brain,Kverkova_etal_2018_TableS1,0.0192,4
 Bathyergus suillus,Tegmentum_Vol.mm3,Kverkova_etal_2018_TableS1,156,4
 Bathyergus suillus,Tegmentum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,18,4
-Bathyergus suillus,Tegmentum_p.C.Brain,Kverkova_etal_2018_TableS1,0.0437,4
 Bathyergus suillus,Medulla_Vol.mm3,Kverkova_etal_2018_TableS1,368,4
 Bathyergus suillus,Medulla_Vol.mm3_SD,Kverkova_etal_2018_TableS1,30,4
-Bathyergus suillus,Medulla_p.C.Brain,Kverkova_etal_2018_TableS1,0.103,4
 Cryptomys hottentotus,Body_Mass.g,Kverkova_etal_2018_TableS1,68.58,4
 Cryptomys hottentotus,Body_Mass.g_SD,Kverkova_etal_2018_TableS1,12.36,4
 Cryptomys hottentotus,WholeBrainOlfactoryBulb_Mass.g,Kverkova_etal_2018_TableS1,0.85,4
 Cryptomys hottentotus,WholeBrainOlfactoryBulb_Mass.g_SD,Kverkova_etal_2018_TableS1,0.06,4
 Cryptomys hottentotus,OlfactoryBulb_Vol.mm3,Kverkova_etal_2018_TableS1,37,4
 Cryptomys hottentotus,OlfactoryBulb_Vol.mm3_SD,Kverkova_etal_2018_TableS1,4,4
-Cryptomys hottentotus,OlfactoryBulb_p.C.Brain,Kverkova_etal_2018_TableS1,0.0462,4
 Cryptomys hottentotus,OlfactoryCortices_Vol.mm3,Kverkova_etal_2018_TableS1,50,4
 Cryptomys hottentotus,OlfactoryCortices_Vol.mm3_SD,Kverkova_etal_2018_TableS1,8,4
-Cryptomys hottentotus,OlfactoryCortices_p.C.Brain,Kverkova_etal_2018_TableS1,0.0622,4
 Cryptomys hottentotus,Neocortex_Vol.mm3,Kverkova_etal_2018_TableS1,183,4
 Cryptomys hottentotus,Neocortex_Vol.mm3_SD,Kverkova_etal_2018_TableS1,30,4
-Cryptomys hottentotus,Neocortex_p.C.Brain,Kverkova_etal_2018_TableS1,0.2291,4
 Cryptomys hottentotus,EntorhinalCortex_Vol.mm3,Kverkova_etal_2018_TableS1,25,4
 Cryptomys hottentotus,EntorhinalCortex_Vol.mm3_SD,Kverkova_etal_2018_TableS1,3,4
-Cryptomys hottentotus,EntorhinalCortex_p.C.Brain,Kverkova_etal_2018_TableS1,0.0311,4
 Cryptomys hottentotus,Hippocampus_Vol.mm3,Kverkova_etal_2018_TableS1,59,4
 Cryptomys hottentotus,Hippocampus_Vol.mm3_SD,Kverkova_etal_2018_TableS1,8,4
-Cryptomys hottentotus,Hippocampus_p.C.Brain,Kverkova_etal_2018_TableS1,0.0733,4
 Cryptomys hottentotus,Amygdala_Vol.mm3,Kverkova_etal_2018_TableS1,14,4
 Cryptomys hottentotus,Amygdala_Vol.mm3_SD,Kverkova_etal_2018_TableS1,3,4
-Cryptomys hottentotus,Amygdala_p.C.Brain,Kverkova_etal_2018_TableS1,0.0171,4
 Cryptomys hottentotus,Striatum_Vol.mm3,Kverkova_etal_2018_TableS1,59,4
 Cryptomys hottentotus,Striatum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,7,4
-Cryptomys hottentotus,Striatum_p.C.Brain,Kverkova_etal_2018_TableS1,0.0742,4
 Cryptomys hottentotus,Septum_Vol.mm3,Kverkova_etal_2018_TableS1,11,4
 Cryptomys hottentotus,Septum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,1,4
-Cryptomys hottentotus,Septum_p.C.Brain,Kverkova_etal_2018_TableS1,0.0132,4
 Cryptomys hottentotus,Thalamus_Vol.mm3,Kverkova_etal_2018_TableS1,39,4
 Cryptomys hottentotus,Thalamus_Vol.mm3_SD,Kverkova_etal_2018_TableS1,3,4
-Cryptomys hottentotus,Thalamus_p.C.Brain,Kverkova_etal_2018_TableS1,0.0483,4
 Cryptomys hottentotus,Hypothalamus_Vol.mm3,Kverkova_etal_2018_TableS1,25,4
 Cryptomys hottentotus,Hypothalamus_Vol.mm3_SD,Kverkova_etal_2018_TableS1,6,4
-Cryptomys hottentotus,Hypothalamus_p.C.Brain,Kverkova_etal_2018_TableS1,0.0312,4
 Cryptomys hottentotus,Cerebellum_Vol.mm3,Kverkova_etal_2018_TableS1,121,4
 Cryptomys hottentotus,Cerebellum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,19,4
-Cryptomys hottentotus,Cerebellum_p.C.Brain,Kverkova_etal_2018_TableS1,0.1506,4
 Cryptomys hottentotus,Tectum_Vol.mm3,Kverkova_etal_2018_TableS1,17,4
 Cryptomys hottentotus,Tectum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,2,4
-Cryptomys hottentotus,Tectum_p.C.Brain,Kverkova_etal_2018_TableS1,0.0217,4
 Cryptomys hottentotus,Tegmentum_Vol.mm3,Kverkova_etal_2018_TableS1,34,4
 Cryptomys hottentotus,Tegmentum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,4,4
-Cryptomys hottentotus,Tegmentum_p.C.Brain,Kverkova_etal_2018_TableS1,0.0425,4
 Cryptomys hottentotus,Medulla_Vol.mm3,Kverkova_etal_2018_TableS1,79,4
 Cryptomys hottentotus,Medulla_Vol.mm3_SD,Kverkova_etal_2018_TableS1,2,4
-Cryptomys hottentotus,Medulla_p.C.Brain,Kverkova_etal_2018_TableS1,0.0987,4
 Cryptomys hottentotus natalensis,Body_Mass.g,Kverkova_etal_2018_TableS1,99.02,4
 Cryptomys hottentotus natalensis,Body_Mass.g_SD,Kverkova_etal_2018_TableS1,33.43,4
 Cryptomys hottentotus natalensis,WholeBrainOlfactoryBulb_Mass.g,Kverkova_etal_2018_TableS1,1.24,4
 Cryptomys hottentotus natalensis,WholeBrainOlfactoryBulb_Mass.g_SD,Kverkova_etal_2018_TableS1,0.11,4
 Cryptomys hottentotus natalensis,OlfactoryBulb_Vol.mm3,Kverkova_etal_2018_TableS1,55,4
 Cryptomys hottentotus natalensis,OlfactoryBulb_Vol.mm3_SD,Kverkova_etal_2018_TableS1,12,4
-Cryptomys hottentotus natalensis,OlfactoryBulb_p.C.Brain,Kverkova_etal_2018_TableS1,0.047,4
 Cryptomys hottentotus natalensis,OlfactoryCortices_Vol.mm3,Kverkova_etal_2018_TableS1,76,4
 Cryptomys hottentotus natalensis,OlfactoryCortices_Vol.mm3_SD,Kverkova_etal_2018_TableS1,12,4
-Cryptomys hottentotus natalensis,OlfactoryCortices_p.C.Brain,Kverkova_etal_2018_TableS1,0.0655,4
 Cryptomys hottentotus natalensis,Neocortex_Vol.mm3,Kverkova_etal_2018_TableS1,321,4
 Cryptomys hottentotus natalensis,Neocortex_Vol.mm3_SD,Kverkova_etal_2018_TableS1,26,4
-Cryptomys hottentotus natalensis,Neocortex_p.C.Brain,Kverkova_etal_2018_TableS1,0.274,4
 Cryptomys hottentotus natalensis,EntorhinalCortex_Vol.mm3,Kverkova_etal_2018_TableS1,43,4
 Cryptomys hottentotus natalensis,EntorhinalCortex_Vol.mm3_SD,Kverkova_etal_2018_TableS1,6,4
-Cryptomys hottentotus natalensis,EntorhinalCortex_p.C.Brain,Kverkova_etal_2018_TableS1,0.0363,4
 Cryptomys hottentotus natalensis,Hippocampus_Vol.mm3,Kverkova_etal_2018_TableS1,80,4
 Cryptomys hottentotus natalensis,Hippocampus_Vol.mm3_SD,Kverkova_etal_2018_TableS1,13,4
-Cryptomys hottentotus natalensis,Hippocampus_p.C.Brain,Kverkova_etal_2018_TableS1,0.0679,4
 Cryptomys hottentotus natalensis,Amygdala_Vol.mm3,Kverkova_etal_2018_TableS1,20,4
 Cryptomys hottentotus natalensis,Amygdala_Vol.mm3_SD,Kverkova_etal_2018_TableS1,4,4
-Cryptomys hottentotus natalensis,Amygdala_p.C.Brain,Kverkova_etal_2018_TableS1,0.0167,4
 Cryptomys hottentotus natalensis,Striatum_Vol.mm3,Kverkova_etal_2018_TableS1,84,4
 Cryptomys hottentotus natalensis,Striatum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,11,4
-Cryptomys hottentotus natalensis,Striatum_p.C.Brain,Kverkova_etal_2018_TableS1,0.0713,4
 Cryptomys hottentotus natalensis,Septum_Vol.mm3,Kverkova_etal_2018_TableS1,14,4
 Cryptomys hottentotus natalensis,Septum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,3,4
-Cryptomys hottentotus natalensis,Septum_p.C.Brain,Kverkova_etal_2018_TableS1,0.0117,4
 Cryptomys hottentotus natalensis,Thalamus_Vol.mm3,Kverkova_etal_2018_TableS1,54,4
 Cryptomys hottentotus natalensis,Thalamus_Vol.mm3_SD,Kverkova_etal_2018_TableS1,6,4
-Cryptomys hottentotus natalensis,Thalamus_p.C.Brain,Kverkova_etal_2018_TableS1,0.0461,4
 Cryptomys hottentotus natalensis,Hypothalamus_Vol.mm3,Kverkova_etal_2018_TableS1,31,4
 Cryptomys hottentotus natalensis,Hypothalamus_Vol.mm3_SD,Kverkova_etal_2018_TableS1,3,4
-Cryptomys hottentotus natalensis,Hypothalamus_p.C.Brain,Kverkova_etal_2018_TableS1,0.0266,4
 Cryptomys hottentotus natalensis,Cerebellum_Vol.mm3,Kverkova_etal_2018_TableS1,175,4
 Cryptomys hottentotus natalensis,Cerebellum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,19,4
-Cryptomys hottentotus natalensis,Cerebellum_p.C.Brain,Kverkova_etal_2018_TableS1,0.1487,4
 Cryptomys hottentotus natalensis,Tectum_Vol.mm3,Kverkova_etal_2018_TableS1,24,4
 Cryptomys hottentotus natalensis,Tectum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,6,4
-Cryptomys hottentotus natalensis,Tectum_p.C.Brain,Kverkova_etal_2018_TableS1,0.0201,4
 Cryptomys hottentotus natalensis,Tegmentum_Vol.mm3,Kverkova_etal_2018_TableS1,42,4
 Cryptomys hottentotus natalensis,Tegmentum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,6,4
-Cryptomys hottentotus natalensis,Tegmentum_p.C.Brain,Kverkova_etal_2018_TableS1,0.0355,4
 Cryptomys hottentotus natalensis,Medulla_Vol.mm3,Kverkova_etal_2018_TableS1,97,4
 Cryptomys hottentotus natalensis,Medulla_Vol.mm3_SD,Kverkova_etal_2018_TableS1,18,4
-Cryptomys hottentotus natalensis,Medulla_p.C.Brain,Kverkova_etal_2018_TableS1,0.0828,4
 Cryptomys hottentotus pretoriae,Body_Mass.g,Kverkova_etal_2018_TableS1,104.27,4
 Cryptomys hottentotus pretoriae,Body_Mass.g_SD,Kverkova_etal_2018_TableS1,21.31,4
 Cryptomys hottentotus pretoriae,WholeBrainOlfactoryBulb_Mass.g,Kverkova_etal_2018_TableS1,1.35,4
 Cryptomys hottentotus pretoriae,WholeBrainOlfactoryBulb_Mass.g_SD,Kverkova_etal_2018_TableS1,0.11,4
 Cryptomys hottentotus pretoriae,OlfactoryBulb_Vol.mm3,Kverkova_etal_2018_TableS1,57,4
 Cryptomys hottentotus pretoriae,OlfactoryBulb_Vol.mm3_SD,Kverkova_etal_2018_TableS1,9,4
-Cryptomys hottentotus pretoriae,OlfactoryBulb_p.C.Brain,Kverkova_etal_2018_TableS1,0.0446,4
 Cryptomys hottentotus pretoriae,OlfactoryCortices_Vol.mm3,Kverkova_etal_2018_TableS1,76,4
 Cryptomys hottentotus pretoriae,OlfactoryCortices_Vol.mm3_SD,Kverkova_etal_2018_TableS1,2,4
-Cryptomys hottentotus pretoriae,OlfactoryCortices_p.C.Brain,Kverkova_etal_2018_TableS1,0.0602,4
 Cryptomys hottentotus pretoriae,Neocortex_Vol.mm3,Kverkova_etal_2018_TableS1,315,4
 Cryptomys hottentotus pretoriae,Neocortex_Vol.mm3_SD,Kverkova_etal_2018_TableS1,39,4
-Cryptomys hottentotus pretoriae,Neocortex_p.C.Brain,Kverkova_etal_2018_TableS1,0.2488,4
 Cryptomys hottentotus pretoriae,EntorhinalCortex_Vol.mm3,Kverkova_etal_2018_TableS1,46,4
 Cryptomys hottentotus pretoriae,EntorhinalCortex_Vol.mm3_SD,Kverkova_etal_2018_TableS1,4,4
-Cryptomys hottentotus pretoriae,EntorhinalCortex_p.C.Brain,Kverkova_etal_2018_TableS1,0.036,4
 Cryptomys hottentotus pretoriae,Hippocampus_Vol.mm3,Kverkova_etal_2018_TableS1,95,4
 Cryptomys hottentotus pretoriae,Hippocampus_Vol.mm3_SD,Kverkova_etal_2018_TableS1,14,4
-Cryptomys hottentotus pretoriae,Hippocampus_p.C.Brain,Kverkova_etal_2018_TableS1,0.0746,4
 Cryptomys hottentotus pretoriae,Amygdala_Vol.mm3,Kverkova_etal_2018_TableS1,20,4
 Cryptomys hottentotus pretoriae,Amygdala_Vol.mm3_SD,Kverkova_etal_2018_TableS1,5,4
-Cryptomys hottentotus pretoriae,Amygdala_p.C.Brain,Kverkova_etal_2018_TableS1,0.0161,4
 Cryptomys hottentotus pretoriae,Striatum_Vol.mm3,Kverkova_etal_2018_TableS1,85,4
 Cryptomys hottentotus pretoriae,Striatum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,9,4
-Cryptomys hottentotus pretoriae,Striatum_p.C.Brain,Kverkova_etal_2018_TableS1,0.0669,4
 Cryptomys hottentotus pretoriae,Septum_Vol.mm3,Kverkova_etal_2018_TableS1,15,4
 Cryptomys hottentotus pretoriae,Septum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,2,4
-Cryptomys hottentotus pretoriae,Septum_p.C.Brain,Kverkova_etal_2018_TableS1,0.0116,4
 Cryptomys hottentotus pretoriae,Thalamus_Vol.mm3,Kverkova_etal_2018_TableS1,57,4
 Cryptomys hottentotus pretoriae,Thalamus_Vol.mm3_SD,Kverkova_etal_2018_TableS1,8,4
-Cryptomys hottentotus pretoriae,Thalamus_p.C.Brain,Kverkova_etal_2018_TableS1,0.0453,4
 Cryptomys hottentotus pretoriae,Hypothalamus_Vol.mm3,Kverkova_etal_2018_TableS1,33,4
 Cryptomys hottentotus pretoriae,Hypothalamus_Vol.mm3_SD,Kverkova_etal_2018_TableS1,3,4
-Cryptomys hottentotus pretoriae,Hypothalamus_p.C.Brain,Kverkova_etal_2018_TableS1,0.026,4
 Cryptomys hottentotus pretoriae,Cerebellum_Vol.mm3,Kverkova_etal_2018_TableS1,188,4
 Cryptomys hottentotus pretoriae,Cerebellum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,14,4
-Cryptomys hottentotus pretoriae,Cerebellum_p.C.Brain,Kverkova_etal_2018_TableS1,0.148,4
 Cryptomys hottentotus pretoriae,Tectum_Vol.mm3,Kverkova_etal_2018_TableS1,25,4
 Cryptomys hottentotus pretoriae,Tectum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,4,4
-Cryptomys hottentotus pretoriae,Tectum_p.C.Brain,Kverkova_etal_2018_TableS1,0.0201,4
 Cryptomys hottentotus pretoriae,Tegmentum_Vol.mm3,Kverkova_etal_2018_TableS1,47,4
 Cryptomys hottentotus pretoriae,Tegmentum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,4,4
-Cryptomys hottentotus pretoriae,Tegmentum_p.C.Brain,Kverkova_etal_2018_TableS1,0.0373,4
 Cryptomys hottentotus pretoriae,Medulla_Vol.mm3,Kverkova_etal_2018_TableS1,119,4
 Cryptomys hottentotus pretoriae,Medulla_Vol.mm3_SD,Kverkova_etal_2018_TableS1,15,4
-Cryptomys hottentotus pretoriae,Medulla_p.C.Brain,Kverkova_etal_2018_TableS1,0.0941,4
 Fukomys anselli,Body_Mass.g,Kverkova_etal_2018_TableS1,93.45,4
 Fukomys anselli,Body_Mass.g_SD,Kverkova_etal_2018_TableS1,20.47,4
 Fukomys anselli,WholeBrainOlfactoryBulb_Mass.g,Kverkova_etal_2018_TableS1,1.25,4
 Fukomys anselli,WholeBrainOlfactoryBulb_Mass.g_SD,Kverkova_etal_2018_TableS1,0.13,4
 Fukomys anselli,OlfactoryBulb_Vol.mm3,Kverkova_etal_2018_TableS1,55,4
 Fukomys anselli,OlfactoryBulb_Vol.mm3_SD,Kverkova_etal_2018_TableS1,15,4
-Fukomys anselli,OlfactoryBulb_p.C.Brain,Kverkova_etal_2018_TableS1,0.0463,4
 Fukomys anselli,OlfactoryCortices_Vol.mm3,Kverkova_etal_2018_TableS1,71,4
 Fukomys anselli,OlfactoryCortices_Vol.mm3_SD,Kverkova_etal_2018_TableS1,9,4
-Fukomys anselli,OlfactoryCortices_p.C.Brain,Kverkova_etal_2018_TableS1,0.0597,4
 Fukomys anselli,Neocortex_Vol.mm3,Kverkova_etal_2018_TableS1,291,4
 Fukomys anselli,Neocortex_Vol.mm3_SD,Kverkova_etal_2018_TableS1,40,4
-Fukomys anselli,Neocortex_p.C.Brain,Kverkova_etal_2018_TableS1,0.2436,4
 Fukomys anselli,EntorhinalCortex_Vol.mm3,Kverkova_etal_2018_TableS1,38,4
 Fukomys anselli,EntorhinalCortex_Vol.mm3_SD,Kverkova_etal_2018_TableS1,4,4
-Fukomys anselli,EntorhinalCortex_p.C.Brain,Kverkova_etal_2018_TableS1,0.0317,4
 Fukomys anselli,Hippocampus_Vol.mm3,Kverkova_etal_2018_TableS1,82,4
 Fukomys anselli,Hippocampus_Vol.mm3_SD,Kverkova_etal_2018_TableS1,23,4
-Fukomys anselli,Hippocampus_p.C.Brain,Kverkova_etal_2018_TableS1,0.0682,4
 Fukomys anselli,Amygdala_Vol.mm3,Kverkova_etal_2018_TableS1,26,4
 Fukomys anselli,Amygdala_Vol.mm3_SD,Kverkova_etal_2018_TableS1,5,4
-Fukomys anselli,Amygdala_p.C.Brain,Kverkova_etal_2018_TableS1,0.0216,4
 Fukomys anselli,Striatum_Vol.mm3,Kverkova_etal_2018_TableS1,84,4
 Fukomys anselli,Striatum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,11,4
-Fukomys anselli,Striatum_p.C.Brain,Kverkova_etal_2018_TableS1,0.07,4
 Fukomys anselli,Septum_Vol.mm3,Kverkova_etal_2018_TableS1,15,4
 Fukomys anselli,Septum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,3,4
-Fukomys anselli,Septum_p.C.Brain,Kverkova_etal_2018_TableS1,0.0124,4
 Fukomys anselli,Thalamus_Vol.mm3,Kverkova_etal_2018_TableS1,61,4
 Fukomys anselli,Thalamus_Vol.mm3_SD,Kverkova_etal_2018_TableS1,3,4
-Fukomys anselli,Thalamus_p.C.Brain,Kverkova_etal_2018_TableS1,0.0511,4
 Fukomys anselli,Hypothalamus_Vol.mm3,Kverkova_etal_2018_TableS1,35,4
 Fukomys anselli,Hypothalamus_Vol.mm3_SD,Kverkova_etal_2018_TableS1,5,4
-Fukomys anselli,Hypothalamus_p.C.Brain,Kverkova_etal_2018_TableS1,0.0296,4
 Fukomys anselli,Cerebellum_Vol.mm3,Kverkova_etal_2018_TableS1,200,4
 Fukomys anselli,Cerebellum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,52,4
-Fukomys anselli,Cerebellum_p.C.Brain,Kverkova_etal_2018_TableS1,0.1672,4
 Fukomys anselli,Tectum_Vol.mm3,Kverkova_etal_2018_TableS1,32,4
 Fukomys anselli,Tectum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,6,4
-Fukomys anselli,Tectum_p.C.Brain,Kverkova_etal_2018_TableS1,0.0266,4
 Fukomys anselli,Tegmentum_Vol.mm3,Kverkova_etal_2018_TableS1,60,4
 Fukomys anselli,Tegmentum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,19,4
-Fukomys anselli,Tegmentum_p.C.Brain,Kverkova_etal_2018_TableS1,0.05,4
 Fukomys anselli,Medulla_Vol.mm3,Kverkova_etal_2018_TableS1,132,4
 Fukomys anselli,Medulla_Vol.mm3_SD,Kverkova_etal_2018_TableS1,32,4
-Fukomys anselli,Medulla_p.C.Brain,Kverkova_etal_2018_TableS1,0.1104,4
 Fukomys damarensis,Body_Mass.g,Kverkova_etal_2018_TableS1,110.53,4
 Fukomys damarensis,Body_Mass.g_SD,Kverkova_etal_2018_TableS1,30.29,4
 Fukomys damarensis,WholeBrainOlfactoryBulb_Mass.g,Kverkova_etal_2018_TableS1,1.39,4
 Fukomys damarensis,WholeBrainOlfactoryBulb_Mass.g_SD,Kverkova_etal_2018_TableS1,0.14,4
 Fukomys damarensis,OlfactoryBulb_Vol.mm3,Kverkova_etal_2018_TableS1,59,4
 Fukomys damarensis,OlfactoryBulb_Vol.mm3_SD,Kverkova_etal_2018_TableS1,8,4
-Fukomys damarensis,OlfactoryBulb_p.C.Brain,Kverkova_etal_2018_TableS1,0.0448,4
 Fukomys damarensis,OlfactoryCortices_Vol.mm3,Kverkova_etal_2018_TableS1,88,4
 Fukomys damarensis,OlfactoryCortices_Vol.mm3_SD,Kverkova_etal_2018_TableS1,8,4
-Fukomys damarensis,OlfactoryCortices_p.C.Brain,Kverkova_etal_2018_TableS1,0.0673,4
 Fukomys damarensis,Neocortex_Vol.mm3,Kverkova_etal_2018_TableS1,311,4
 Fukomys damarensis,Neocortex_Vol.mm3_SD,Kverkova_etal_2018_TableS1,60,4
-Fukomys damarensis,Neocortex_p.C.Brain,Kverkova_etal_2018_TableS1,0.2371,4
 Fukomys damarensis,EntorhinalCortex_Vol.mm3,Kverkova_etal_2018_TableS1,44,4
 Fukomys damarensis,EntorhinalCortex_Vol.mm3_SD,Kverkova_etal_2018_TableS1,6,4
-Fukomys damarensis,EntorhinalCortex_p.C.Brain,Kverkova_etal_2018_TableS1,0.0338,4
 Fukomys damarensis,Hippocampus_Vol.mm3,Kverkova_etal_2018_TableS1,95,4
 Fukomys damarensis,Hippocampus_Vol.mm3_SD,Kverkova_etal_2018_TableS1,12,4
-Fukomys damarensis,Hippocampus_p.C.Brain,Kverkova_etal_2018_TableS1,0.0724,4
 Fukomys damarensis,Amygdala_Vol.mm3,Kverkova_etal_2018_TableS1,22,4
 Fukomys damarensis,Amygdala_Vol.mm3_SD,Kverkova_etal_2018_TableS1,2,4
-Fukomys damarensis,Amygdala_p.C.Brain,Kverkova_etal_2018_TableS1,0.0169,4
 Fukomys damarensis,Striatum_Vol.mm3,Kverkova_etal_2018_TableS1,102,4
 Fukomys damarensis,Striatum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,17,4
-Fukomys damarensis,Striatum_p.C.Brain,Kverkova_etal_2018_TableS1,0.0779,4
 Fukomys damarensis,Septum_Vol.mm3,Kverkova_etal_2018_TableS1,15,4
 Fukomys damarensis,Septum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,1,4
-Fukomys damarensis,Septum_p.C.Brain,Kverkova_etal_2018_TableS1,0.0112,4
 Fukomys damarensis,Thalamus_Vol.mm3,Kverkova_etal_2018_TableS1,64,4
 Fukomys damarensis,Thalamus_Vol.mm3_SD,Kverkova_etal_2018_TableS1,7,4
-Fukomys damarensis,Thalamus_p.C.Brain,Kverkova_etal_2018_TableS1,0.0488,4
 Fukomys damarensis,Hypothalamus_Vol.mm3,Kverkova_etal_2018_TableS1,39,4
 Fukomys damarensis,Hypothalamus_Vol.mm3_SD,Kverkova_etal_2018_TableS1,7,4
-Fukomys damarensis,Hypothalamus_p.C.Brain,Kverkova_etal_2018_TableS1,0.0295,4
 Fukomys damarensis,Cerebellum_Vol.mm3,Kverkova_etal_2018_TableS1,201,4
 Fukomys damarensis,Cerebellum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,46,4
-Fukomys damarensis,Cerebellum_p.C.Brain,Kverkova_etal_2018_TableS1,0.153,4
 Fukomys damarensis,Tectum_Vol.mm3,Kverkova_etal_2018_TableS1,27,4
 Fukomys damarensis,Tectum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,4,4
-Fukomys damarensis,Tectum_p.C.Brain,Kverkova_etal_2018_TableS1,0.0203,4
 Fukomys damarensis,Tegmentum_Vol.mm3,Kverkova_etal_2018_TableS1,56,4
 Fukomys damarensis,Tegmentum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,14,4
-Fukomys damarensis,Tegmentum_p.C.Brain,Kverkova_etal_2018_TableS1,0.0427,4
 Fukomys damarensis,Medulla_Vol.mm3,Kverkova_etal_2018_TableS1,110,4
 Fukomys damarensis,Medulla_Vol.mm3_SD,Kverkova_etal_2018_TableS1,9,4
-Fukomys damarensis,Medulla_p.C.Brain,Kverkova_etal_2018_TableS1,0.0841,4
 Fukomys darlingi,Body_Mass.g,Kverkova_etal_2018_TableS1,115.19,4
 Fukomys darlingi,Body_Mass.g_SD,Kverkova_etal_2018_TableS1,44.83,4
 Fukomys darlingi,WholeBrainOlfactoryBulb_Mass.g,Kverkova_etal_2018_TableS1,1.23,4
 Fukomys darlingi,WholeBrainOlfactoryBulb_Mass.g_SD,Kverkova_etal_2018_TableS1,0.12,4
 Fukomys darlingi,OlfactoryBulb_Vol.mm3,Kverkova_etal_2018_TableS1,43,4
 Fukomys darlingi,OlfactoryBulb_Vol.mm3_SD,Kverkova_etal_2018_TableS1,10,4
-Fukomys darlingi,OlfactoryBulb_p.C.Brain,Kverkova_etal_2018_TableS1,0.0376,4
 Fukomys darlingi,OlfactoryCortices_Vol.mm3,Kverkova_etal_2018_TableS1,77,4
 Fukomys darlingi,OlfactoryCortices_Vol.mm3_SD,Kverkova_etal_2018_TableS1,9,4
-Fukomys darlingi,OlfactoryCortices_p.C.Brain,Kverkova_etal_2018_TableS1,0.0667,4
 Fukomys darlingi,Neocortex_Vol.mm3,Kverkova_etal_2018_TableS1,271,4
 Fukomys darlingi,Neocortex_Vol.mm3_SD,Kverkova_etal_2018_TableS1,19,4
-Fukomys darlingi,Neocortex_p.C.Brain,Kverkova_etal_2018_TableS1,0.2346,4
 Fukomys darlingi,EntorhinalCortex_Vol.mm3,Kverkova_etal_2018_TableS1,41,4
 Fukomys darlingi,EntorhinalCortex_Vol.mm3_SD,Kverkova_etal_2018_TableS1,10,4
-Fukomys darlingi,EntorhinalCortex_p.C.Brain,Kverkova_etal_2018_TableS1,0.0355,4
 Fukomys darlingi,Hippocampus_Vol.mm3,Kverkova_etal_2018_TableS1,76,4
 Fukomys darlingi,Hippocampus_Vol.mm3_SD,Kverkova_etal_2018_TableS1,4,4
-Fukomys darlingi,Hippocampus_p.C.Brain,Kverkova_etal_2018_TableS1,0.0657,4
 Fukomys darlingi,Amygdala_Vol.mm3,Kverkova_etal_2018_TableS1,16,4
 Fukomys darlingi,Amygdala_Vol.mm3_SD,Kverkova_etal_2018_TableS1,2,4
-Fukomys darlingi,Amygdala_p.C.Brain,Kverkova_etal_2018_TableS1,0.0141,4
 Fukomys darlingi,Striatum_Vol.mm3,Kverkova_etal_2018_TableS1,99,4
 Fukomys darlingi,Striatum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,16,4
-Fukomys darlingi,Striatum_p.C.Brain,Kverkova_etal_2018_TableS1,0.0856,4
 Fukomys darlingi,Septum_Vol.mm3,Kverkova_etal_2018_TableS1,16,4
 Fukomys darlingi,Septum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,3,4
-Fukomys darlingi,Septum_p.C.Brain,Kverkova_etal_2018_TableS1,0.0141,4
 Fukomys darlingi,Thalamus_Vol.mm3,Kverkova_etal_2018_TableS1,51,4
 Fukomys darlingi,Thalamus_Vol.mm3_SD,Kverkova_etal_2018_TableS1,7,4
-Fukomys darlingi,Thalamus_p.C.Brain,Kverkova_etal_2018_TableS1,0.0437,4
 Fukomys darlingi,Hypothalamus_Vol.mm3,Kverkova_etal_2018_TableS1,29,4
 Fukomys darlingi,Hypothalamus_Vol.mm3_SD,Kverkova_etal_2018_TableS1,1,4
-Fukomys darlingi,Hypothalamus_p.C.Brain,Kverkova_etal_2018_TableS1,0.0253,4
 Fukomys darlingi,Cerebellum_Vol.mm3,Kverkova_etal_2018_TableS1,156,4
 Fukomys darlingi,Cerebellum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,27,4
-Fukomys darlingi,Cerebellum_p.C.Brain,Kverkova_etal_2018_TableS1,0.1346,4
 Fukomys darlingi,Tectum_Vol.mm3,Kverkova_etal_2018_TableS1,25,4
 Fukomys darlingi,Tectum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,1,4
-Fukomys darlingi,Tectum_p.C.Brain,Kverkova_etal_2018_TableS1,0.0213,4
 Fukomys darlingi,Tegmentum_Vol.mm3,Kverkova_etal_2018_TableS1,45,4
 Fukomys darlingi,Tegmentum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,5,4
-Fukomys darlingi,Tegmentum_p.C.Brain,Kverkova_etal_2018_TableS1,0.0394,4
 Fukomys darlingi,Medulla_Vol.mm3,Kverkova_etal_2018_TableS1,101,4
 Fukomys darlingi,Medulla_Vol.mm3_SD,Kverkova_etal_2018_TableS1,6,4
-Fukomys darlingi,Medulla_p.C.Brain,Kverkova_etal_2018_TableS1,0.0871,4
 Fukomys mechowii,Body_Mass.g,Kverkova_etal_2018_TableS1,270.16,4
 Fukomys mechowii,Body_Mass.g_SD,Kverkova_etal_2018_TableS1,52.85,4
 Fukomys mechowii,WholeBrainOlfactoryBulb_Mass.g,Kverkova_etal_2018_TableS1,2.15,4
 Fukomys mechowii,WholeBrainOlfactoryBulb_Mass.g_SD,Kverkova_etal_2018_TableS1,0.24,4
 Fukomys mechowii,OlfactoryBulb_Vol.mm3,Kverkova_etal_2018_TableS1,76,4
 Fukomys mechowii,OlfactoryBulb_Vol.mm3_SD,Kverkova_etal_2018_TableS1,6,4
-Fukomys mechowii,OlfactoryBulb_p.C.Brain,Kverkova_etal_2018_TableS1,0.0369,4
 Fukomys mechowii,OlfactoryCortices_Vol.mm3,Kverkova_etal_2018_TableS1,133,4
 Fukomys mechowii,OlfactoryCortices_Vol.mm3_SD,Kverkova_etal_2018_TableS1,9,4
-Fukomys mechowii,OlfactoryCortices_p.C.Brain,Kverkova_etal_2018_TableS1,0.0642,4
 Fukomys mechowii,Neocortex_Vol.mm3,Kverkova_etal_2018_TableS1,627,4
 Fukomys mechowii,Neocortex_Vol.mm3_SD,Kverkova_etal_2018_TableS1,8,4
-Fukomys mechowii,Neocortex_p.C.Brain,Kverkova_etal_2018_TableS1,0.3033,4
 Fukomys mechowii,EntorhinalCortex_Vol.mm3,Kverkova_etal_2018_TableS1,71,4
 Fukomys mechowii,EntorhinalCortex_Vol.mm3_SD,Kverkova_etal_2018_TableS1,13,4
-Fukomys mechowii,EntorhinalCortex_p.C.Brain,Kverkova_etal_2018_TableS1,0.0342,4
 Fukomys mechowii,Hippocampus_Vol.mm3,Kverkova_etal_2018_TableS1,137,4
 Fukomys mechowii,Hippocampus_Vol.mm3_SD,Kverkova_etal_2018_TableS1,11,4
-Fukomys mechowii,Hippocampus_p.C.Brain,Kverkova_etal_2018_TableS1,0.0663,4
 Fukomys mechowii,Amygdala_Vol.mm3,Kverkova_etal_2018_TableS1,35,4
 Fukomys mechowii,Amygdala_Vol.mm3_SD,Kverkova_etal_2018_TableS1,10,4
-Fukomys mechowii,Amygdala_p.C.Brain,Kverkova_etal_2018_TableS1,0.0169,4
 Fukomys mechowii,Striatum_Vol.mm3,Kverkova_etal_2018_TableS1,198,4
 Fukomys mechowii,Striatum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,2,4
-Fukomys mechowii,Striatum_p.C.Brain,Kverkova_etal_2018_TableS1,0.0958,4
 Fukomys mechowii,Septum_Vol.mm3,Kverkova_etal_2018_TableS1,24,4
 Fukomys mechowii,Septum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,1,4
-Fukomys mechowii,Septum_p.C.Brain,Kverkova_etal_2018_TableS1,0.0117,4
 Fukomys mechowii,Thalamus_Vol.mm3,Kverkova_etal_2018_TableS1,116,4
 Fukomys mechowii,Thalamus_Vol.mm3_SD,Kverkova_etal_2018_TableS1,13,4
-Fukomys mechowii,Thalamus_p.C.Brain,Kverkova_etal_2018_TableS1,0.0562,4
 Fukomys mechowii,Hypothalamus_Vol.mm3,Kverkova_etal_2018_TableS1,60,4
 Fukomys mechowii,Hypothalamus_Vol.mm3_SD,Kverkova_etal_2018_TableS1,7,4
-Fukomys mechowii,Hypothalamus_p.C.Brain,Kverkova_etal_2018_TableS1,0.0292,4
 Fukomys mechowii,Cerebellum_Vol.mm3,Kverkova_etal_2018_TableS1,391,4
 Fukomys mechowii,Cerebellum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,58,4
-Fukomys mechowii,Cerebellum_p.C.Brain,Kverkova_etal_2018_TableS1,0.1895,4
 Fukomys mechowii,Tectum_Vol.mm3,Kverkova_etal_2018_TableS1,41,4
 Fukomys mechowii,Tectum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,1,4
-Fukomys mechowii,Tectum_p.C.Brain,Kverkova_etal_2018_TableS1,0.0197,4
 Fukomys mechowii,Tegmentum_Vol.mm3,Kverkova_etal_2018_TableS1,82,4
 Fukomys mechowii,Tegmentum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,13,4
-Fukomys mechowii,Tegmentum_p.C.Brain,Kverkova_etal_2018_TableS1,0.0398,4
 Fukomys mechowii,Medulla_Vol.mm3,Kverkova_etal_2018_TableS1,242,4
 Fukomys mechowii,Medulla_Vol.mm3_SD,Kverkova_etal_2018_TableS1,87,4
-Fukomys mechowii,Medulla_p.C.Brain,Kverkova_etal_2018_TableS1,0.1172,4
 Georychus capensis,Body_Mass.g,Kverkova_etal_2018_TableS1,155.09,4
 Georychus capensis,Body_Mass.g_SD,Kverkova_etal_2018_TableS1,39.08,4
 Georychus capensis,WholeBrainOlfactoryBulb_Mass.g,Kverkova_etal_2018_TableS1,1.65,4
 Georychus capensis,WholeBrainOlfactoryBulb_Mass.g_SD,Kverkova_etal_2018_TableS1,0.18,4
 Georychus capensis,OlfactoryBulb_Vol.mm3,Kverkova_etal_2018_TableS1,74,4
 Georychus capensis,OlfactoryBulb_Vol.mm3_SD,Kverkova_etal_2018_TableS1,8,4
-Georychus capensis,OlfactoryBulb_p.C.Brain,Kverkova_etal_2018_TableS1,0.0479,4
 Georychus capensis,OlfactoryCortices_Vol.mm3,Kverkova_etal_2018_TableS1,97,4
 Georychus capensis,OlfactoryCortices_Vol.mm3_SD,Kverkova_etal_2018_TableS1,13,4
-Georychus capensis,OlfactoryCortices_p.C.Brain,Kverkova_etal_2018_TableS1,0.0623,4
 Georychus capensis,Neocortex_Vol.mm3,Kverkova_etal_2018_TableS1,401,4
 Georychus capensis,Neocortex_Vol.mm3_SD,Kverkova_etal_2018_TableS1,46,4
-Georychus capensis,Neocortex_p.C.Brain,Kverkova_etal_2018_TableS1,0.2581,4
 Georychus capensis,EntorhinalCortex_Vol.mm3,Kverkova_etal_2018_TableS1,53,4
 Georychus capensis,EntorhinalCortex_Vol.mm3_SD,Kverkova_etal_2018_TableS1,8,4
-Georychus capensis,EntorhinalCortex_p.C.Brain,Kverkova_etal_2018_TableS1,0.0344,4
 Georychus capensis,Hippocampus_Vol.mm3,Kverkova_etal_2018_TableS1,114,4
 Georychus capensis,Hippocampus_Vol.mm3_SD,Kverkova_etal_2018_TableS1,19,4
-Georychus capensis,Hippocampus_p.C.Brain,Kverkova_etal_2018_TableS1,0.0732,4
 Georychus capensis,Amygdala_Vol.mm3,Kverkova_etal_2018_TableS1,28,4
 Georychus capensis,Amygdala_Vol.mm3_SD,Kverkova_etal_2018_TableS1,3,4
-Georychus capensis,Amygdala_p.C.Brain,Kverkova_etal_2018_TableS1,0.0183,4
 Georychus capensis,Striatum_Vol.mm3,Kverkova_etal_2018_TableS1,123,4
 Georychus capensis,Striatum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,22,4
-Georychus capensis,Striatum_p.C.Brain,Kverkova_etal_2018_TableS1,0.0794,4
 Georychus capensis,Septum_Vol.mm3,Kverkova_etal_2018_TableS1,21,4
 Georychus capensis,Septum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,2,4
-Georychus capensis,Septum_p.C.Brain,Kverkova_etal_2018_TableS1,0.0136,4
 Georychus capensis,Thalamus_Vol.mm3,Kverkova_etal_2018_TableS1,87,4
 Georychus capensis,Thalamus_Vol.mm3_SD,Kverkova_etal_2018_TableS1,16,4
-Georychus capensis,Thalamus_p.C.Brain,Kverkova_etal_2018_TableS1,0.0558,4
 Georychus capensis,Hypothalamus_Vol.mm3,Kverkova_etal_2018_TableS1,50,4
 Georychus capensis,Hypothalamus_Vol.mm3_SD,Kverkova_etal_2018_TableS1,6,4
-Georychus capensis,Hypothalamus_p.C.Brain,Kverkova_etal_2018_TableS1,0.032,4
 Georychus capensis,Cerebellum_Vol.mm3,Kverkova_etal_2018_TableS1,250,4
 Georychus capensis,Cerebellum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,14,4
-Georychus capensis,Cerebellum_p.C.Brain,Kverkova_etal_2018_TableS1,0.1603,4
 Georychus capensis,Tectum_Vol.mm3,Kverkova_etal_2018_TableS1,34,4
 Georychus capensis,Tectum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,2,4
-Georychus capensis,Tectum_p.C.Brain,Kverkova_etal_2018_TableS1,0.022,4
 Georychus capensis,Tegmentum_Vol.mm3,Kverkova_etal_2018_TableS1,62,4
 Georychus capensis,Tegmentum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,8,4
-Georychus capensis,Tegmentum_p.C.Brain,Kverkova_etal_2018_TableS1,0.0397,4
 Georychus capensis,Medulla_Vol.mm3,Kverkova_etal_2018_TableS1,151,4
 Georychus capensis,Medulla_Vol.mm3_SD,Kverkova_etal_2018_TableS1,21,4
-Georychus capensis,Medulla_p.C.Brain,Kverkova_etal_2018_TableS1,0.0973,4
 Heliophobius argenteocinereus,Body_Mass.g,Kverkova_etal_2018_TableS1,180.51,4
 Heliophobius argenteocinereus,Body_Mass.g_SD,Kverkova_etal_2018_TableS1,35.45,4
 Heliophobius argenteocinereus,WholeBrainOlfactoryBulb_Mass.g,Kverkova_etal_2018_TableS1,1.65,4
 Heliophobius argenteocinereus,WholeBrainOlfactoryBulb_Mass.g_SD,Kverkova_etal_2018_TableS1,0.12,4
 Heliophobius argenteocinereus,OlfactoryBulb_Vol.mm3,Kverkova_etal_2018_TableS1,60,4
 Heliophobius argenteocinereus,OlfactoryBulb_Vol.mm3_SD,Kverkova_etal_2018_TableS1,8,4
-Heliophobius argenteocinereus,OlfactoryBulb_p.C.Brain,Kverkova_etal_2018_TableS1,0.0389,4
 Heliophobius argenteocinereus,OlfactoryCortices_Vol.mm3,Kverkova_etal_2018_TableS1,107,4
 Heliophobius argenteocinereus,OlfactoryCortices_Vol.mm3_SD,Kverkova_etal_2018_TableS1,4,4
-Heliophobius argenteocinereus,OlfactoryCortices_p.C.Brain,Kverkova_etal_2018_TableS1,0.0689,4
 Heliophobius argenteocinereus,Neocortex_Vol.mm3,Kverkova_etal_2018_TableS1,457,4
 Heliophobius argenteocinereus,Neocortex_Vol.mm3_SD,Kverkova_etal_2018_TableS1,25,4
-Heliophobius argenteocinereus,Neocortex_p.C.Brain,Kverkova_etal_2018_TableS1,0.295,4
 Heliophobius argenteocinereus,EntorhinalCortex_Vol.mm3,Kverkova_etal_2018_TableS1,56,4
 Heliophobius argenteocinereus,EntorhinalCortex_Vol.mm3_SD,Kverkova_etal_2018_TableS1,4,4
-Heliophobius argenteocinereus,EntorhinalCortex_p.C.Brain,Kverkova_etal_2018_TableS1,0.0362,4
 Heliophobius argenteocinereus,Hippocampus_Vol.mm3,Kverkova_etal_2018_TableS1,115,4
 Heliophobius argenteocinereus,Hippocampus_Vol.mm3_SD,Kverkova_etal_2018_TableS1,8,4
-Heliophobius argenteocinereus,Hippocampus_p.C.Brain,Kverkova_etal_2018_TableS1,0.074,4
 Heliophobius argenteocinereus,Amygdala_Vol.mm3,Kverkova_etal_2018_TableS1,34,4
 Heliophobius argenteocinereus,Amygdala_Vol.mm3_SD,Kverkova_etal_2018_TableS1,4,4
-Heliophobius argenteocinereus,Amygdala_p.C.Brain,Kverkova_etal_2018_TableS1,0.0219,4
 Heliophobius argenteocinereus,Striatum_Vol.mm3,Kverkova_etal_2018_TableS1,127,4
 Heliophobius argenteocinereus,Striatum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,11,4
-Heliophobius argenteocinereus,Striatum_p.C.Brain,Kverkova_etal_2018_TableS1,0.0823,4
 Heliophobius argenteocinereus,Septum_Vol.mm3,Kverkova_etal_2018_TableS1,18,4
 Heliophobius argenteocinereus,Septum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,2,4
-Heliophobius argenteocinereus,Septum_p.C.Brain,Kverkova_etal_2018_TableS1,0.0116,4
 Heliophobius argenteocinereus,Thalamus_Vol.mm3,Kverkova_etal_2018_TableS1,90,4
 Heliophobius argenteocinereus,Thalamus_Vol.mm3_SD,Kverkova_etal_2018_TableS1,5,4
-Heliophobius argenteocinereus,Thalamus_p.C.Brain,Kverkova_etal_2018_TableS1,0.0578,4
 Heliophobius argenteocinereus,Hypothalamus_Vol.mm3,Kverkova_etal_2018_TableS1,42,4
 Heliophobius argenteocinereus,Hypothalamus_Vol.mm3_SD,Kverkova_etal_2018_TableS1,5,4
-Heliophobius argenteocinereus,Hypothalamus_p.C.Brain,Kverkova_etal_2018_TableS1,0.0272,4
 Heliophobius argenteocinereus,Cerebellum_Vol.mm3,Kverkova_etal_2018_TableS1,215,4
 Heliophobius argenteocinereus,Cerebellum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,37,4
-Heliophobius argenteocinereus,Cerebellum_p.C.Brain,Kverkova_etal_2018_TableS1,0.1385,4
 Heliophobius argenteocinereus,Tectum_Vol.mm3,Kverkova_etal_2018_TableS1,28,4
 Heliophobius argenteocinereus,Tectum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,3,4
-Heliophobius argenteocinereus,Tectum_p.C.Brain,Kverkova_etal_2018_TableS1,0.0183,4
 Heliophobius argenteocinereus,Tegmentum_Vol.mm3,Kverkova_etal_2018_TableS1,56,4
 Heliophobius argenteocinereus,Tegmentum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,3,4
-Heliophobius argenteocinereus,Tegmentum_p.C.Brain,Kverkova_etal_2018_TableS1,0.0363,4
 Heliophobius argenteocinereus,Medulla_Vol.mm3,Kverkova_etal_2018_TableS1,120,4
 Heliophobius argenteocinereus,Medulla_Vol.mm3_SD,Kverkova_etal_2018_TableS1,22,4
-Heliophobius argenteocinereus,Medulla_p.C.Brain,Kverkova_etal_2018_TableS1,0.0776,4
 Heterocephalus glaber,Body_Mass.g,Kverkova_etal_2018_TableS1,37.74,4
 Heterocephalus glaber,Body_Mass.g_SD,Kverkova_etal_2018_TableS1,12.02,4
 Heterocephalus glaber,WholeBrainOlfactoryBulb_Mass.g,Kverkova_etal_2018_TableS1,0.44,4
 Heterocephalus glaber,WholeBrainOlfactoryBulb_Mass.g_SD,Kverkova_etal_2018_TableS1,0.04,4
 Heterocephalus glaber,OlfactoryBulb_Vol.mm3,Kverkova_etal_2018_TableS1,20,4
 Heterocephalus glaber,OlfactoryBulb_Vol.mm3_SD,Kverkova_etal_2018_TableS1,3,4
-Heterocephalus glaber,OlfactoryBulb_p.C.Brain,Kverkova_etal_2018_TableS1,0.0492,4
 Heterocephalus glaber,OlfactoryCortices_Vol.mm3,Kverkova_etal_2018_TableS1,39,4
 Heterocephalus glaber,OlfactoryCortices_Vol.mm3_SD,Kverkova_etal_2018_TableS1,5,4
-Heterocephalus glaber,OlfactoryCortices_p.C.Brain,Kverkova_etal_2018_TableS1,0.094,4
 Heterocephalus glaber,Neocortex_Vol.mm3,Kverkova_etal_2018_TableS1,100,4
 Heterocephalus glaber,Neocortex_Vol.mm3_SD,Kverkova_etal_2018_TableS1,5,4
-Heterocephalus glaber,Neocortex_p.C.Brain,Kverkova_etal_2018_TableS1,0.2416,4
 Heterocephalus glaber,EntorhinalCortex_Vol.mm3,Kverkova_etal_2018_TableS1,14,4
 Heterocephalus glaber,EntorhinalCortex_Vol.mm3_SD,Kverkova_etal_2018_TableS1,4,4
-Heterocephalus glaber,EntorhinalCortex_p.C.Brain,Kverkova_etal_2018_TableS1,0.0345,4
 Heterocephalus glaber,Hippocampus_Vol.mm3,Kverkova_etal_2018_TableS1,32,4
 Heterocephalus glaber,Hippocampus_Vol.mm3_SD,Kverkova_etal_2018_TableS1,6,4
-Heterocephalus glaber,Hippocampus_p.C.Brain,Kverkova_etal_2018_TableS1,0.076,4
 Heterocephalus glaber,Amygdala_Vol.mm3,Kverkova_etal_2018_TableS1,12,4
 Heterocephalus glaber,Amygdala_Vol.mm3_SD,Kverkova_etal_2018_TableS1,1,4
-Heterocephalus glaber,Amygdala_p.C.Brain,Kverkova_etal_2018_TableS1,0.0289,4
 Heterocephalus glaber,Striatum_Vol.mm3,Kverkova_etal_2018_TableS1,29,4
 Heterocephalus glaber,Striatum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,4,4
-Heterocephalus glaber,Striatum_p.C.Brain,Kverkova_etal_2018_TableS1,0.0693,4
 Heterocephalus glaber,Septum_Vol.mm3,Kverkova_etal_2018_TableS1,4.1,4
 Heterocephalus glaber,Septum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,0.4,4
-Heterocephalus glaber,Septum_p.C.Brain,Kverkova_etal_2018_TableS1,0.0098,4
 Heterocephalus glaber,Thalamus_Vol.mm3,Kverkova_etal_2018_TableS1,23,4
 Heterocephalus glaber,Thalamus_Vol.mm3_SD,Kverkova_etal_2018_TableS1,3,4
-Heterocephalus glaber,Thalamus_p.C.Brain,Kverkova_etal_2018_TableS1,0.0566,4
 Heterocephalus glaber,Hypothalamus_Vol.mm3,Kverkova_etal_2018_TableS1,17,4
 Heterocephalus glaber,Hypothalamus_Vol.mm3_SD,Kverkova_etal_2018_TableS1,1,4
-Heterocephalus glaber,Hypothalamus_p.C.Brain,Kverkova_etal_2018_TableS1,0.0404,4
 Heterocephalus glaber,Cerebellum_Vol.mm3,Kverkova_etal_2018_TableS1,48,4
 Heterocephalus glaber,Cerebellum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,5,4
-Heterocephalus glaber,Cerebellum_p.C.Brain,Kverkova_etal_2018_TableS1,0.1163,4
 Heterocephalus glaber,Tectum_Vol.mm3,Kverkova_etal_2018_TableS1,10,4
 Heterocephalus glaber,Tectum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,3,4
-Heterocephalus glaber,Tectum_p.C.Brain,Kverkova_etal_2018_TableS1,0.0232,4
 Heterocephalus glaber,Tegmentum_Vol.mm3,Kverkova_etal_2018_TableS1,19,4
 Heterocephalus glaber,Tegmentum_Vol.mm3_SD,Kverkova_etal_2018_TableS1,4,4
-Heterocephalus glaber,Tegmentum_p.C.Brain,Kverkova_etal_2018_TableS1,0.0462,4
 Heterocephalus glaber,Medulla_Vol.mm3,Kverkova_etal_2018_TableS1,47,4
 Heterocephalus glaber,Medulla_Vol.mm3_SD,Kverkova_etal_2018_TableS1,6,4
-Heterocephalus glaber,Medulla_p.C.Brain,Kverkova_etal_2018_TableS1,0.1131,4
 Heterocephalus glaber,WholeBrainOlfactoryBulb_N.n,Kverkova_etal_2018_TableS5,33620000,5
 Heterocephalus glaber,WholeBrainOlfactoryBulb_N.n_SD,Kverkova_etal_2018_TableS5,3660000,5
 Heterocephalus glaber,OlfactoryBulb_N.n,Kverkova_etal_2018_TableS5,3010000,5

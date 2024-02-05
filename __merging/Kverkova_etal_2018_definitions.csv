@@ -1,4 +1,4 @@
-Code,Definition,Structure,Measure,SD,Reference,Note,Source Note
+Code,Definition,Structure,Measure,Stat,Reference,Note,Source Note
 Brain,Whole brain; appx. sum of 14 structures incl Olfactory bulbs,WholeBrainOlfactoryBulb,,,Kverkova_etal_2018_Fig3,see fig for plot Brain volume (mm3),"[brain and body mass] Data for mole-rats are from our dataset, other data on body mass and brain mass for rodents (n = 414) were collated from the literature "
 Body,,Body,,,Kverkova_etal_2018_TableS1,,"[brain and body mass] Data for mole-rats are from our dataset, other data on body mass and brain mass for rodents (n = 414) were collated from the literature "
 Mass.g,mass in grams ,,Mass.g,,Kverkova_etal_2018_TableS1,,"[brain and body mass] Data for mole-rats are from our dataset, other data on body mass and brain mass for rodents (n = 414) were collated from the literature "
@@ -26,4 +26,11 @@ Subcortical forebrain,"subcortical forebrain (comprising the diencephalon, cauda
 Cerebellum,,Cerebellum,,,Kverkova_etal_2018,,
 Brain stem,brain stem (comprising the mesencephalon and medulla oblongata),MesencephalonMedulla,,,Kverkova_etal_2018,,
 N.n,number of neurons,,N.n,,Kverkova_etal_2018,,
-SD,,,,SD,Kverkova_etal_2018,,
+SD,standard deviation,,,SD,Kverkova_etal_2018,,
+Origin.of.Animals_Colony_Duisburg.Essen,,,,,Kverkova_etal_2018_Table1,,
+Origin.of.Animals_Colony_České.Budějovice,,,,,Kverkova_etal_2018_Table1,,
+Origin.of.Animals_Colony_Cape.Town,,,,,Kverkova_etal_2018_Table1,,
+Origin.of.Animals_Wild.caught,,,,,Kverkova_etal_2018_Table1,,
+Experimental.Use_Volumetry,absolute structure volumes in mm3 ,,,n,Kverkova_etal_2018_Table1,,
+Experimental.Use_Isotropic.fractionator,number of neurons,,,n,Kverkova_etal_2018_Table1,,
+Experimental.Use_Brain.body.relationship,,Body,,n,Kverkova_etal_2018_Table1,,

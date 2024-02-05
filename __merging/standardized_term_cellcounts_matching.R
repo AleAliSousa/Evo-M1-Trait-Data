@@ -113,6 +113,7 @@ for (i in 1:(nrow(merged_terms_combined_key) - 1)) {
 # Define the mapping rules for existing terms and (if available) Standardized Terms. These are irregular so done one by one.
 term_mapping <- c("Clade" = "Clade",
                   "Family" = "Family",
+                  "SampleInfo"= "SampleInfo",
                   "MBODY, g" = "Body_Mass.g",
                   "MBRAIN, g" = "WholeBrain_Mass.g",
                   "Micro/mega" = "Micro.or.mega",

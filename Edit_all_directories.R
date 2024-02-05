@@ -16,13 +16,10 @@
 
 
 # Get list of files in comparative-data
-# install.packages("openxlsx")
 library(openxlsx)
 
 # List all files in the directory
-# list.files("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data")
-# 
-# list.files("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__Public/comparative-data")
+list.files("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__Public/comparative-data")
 
 # Get and write the list of files to Excel
 write.xlsx(data.frame(Files = list.files("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__Public/comparative-data")), 

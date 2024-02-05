@@ -59,6 +59,16 @@ for (col in columns_to_clean) {
 columns_to_convert <- c("MBODY, g", "MBRAIN, g", "NBRAIN")
 df1[, columns_to_convert] <- lapply(df1[, columns_to_convert], as.numeric)
 
+# Split "n" column into two columns, "n" and "sample information"
+df1 <- separate(
+    df1,
+    col = "n",  # Specify the column to split
+    into = c("n", "SampleInfo"),  # New column names
+    sep = " ",  # Specify the separator as the first space
+    extra = "merge"  # Merge additional pieces into the last column
+  )
+
+
 ## 4. CORRECT SPECIES NAME TYPO
 # See paper text for correct spelling of species
 df1$Species[df1$Species == "Hypsignathus mostrosus"] <- "Hypsignathus monstrosus"

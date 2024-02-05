@@ -1,5 +1,8 @@
 Source
 
+Auto-Download Publication Electronic Supplementary Material (docx) at Source: 
+https://static-content.springer.com/esm/art%3A10.1038%2Fs41598-018-26062-8/MediaObjects/41598_2018_26062_MOESM1_ESM.docx
+
 Copy a Word table into Excel 
 In Word document, select the rows and columns of the table to copy to an Excel worksheet. 
 top and bottom of Table S1 done separately.

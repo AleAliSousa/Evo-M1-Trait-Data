@@ -1,3 +1,15 @@
+
+```{r}
+
+```
+
+```{r}
+```
+
+
+```{r}
+```
+
 # Set Working Directory
 setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging")
 
@@ -312,6 +324,7 @@ for (df_name in names(metadata_flags)) {
 # If metadata_flags dataframe Flag_Condition is a string, treat it as R script to identify a set of values in the corresponding dataframe in filtered_cellcounts_data_list, then delete that set
 # Loop through every dataframe in filtered_cellcounts_data_list
 for (df_name in names(filtered_cellcounts_data_list)) {
+  # df_name <- "DosSantos_etal_2020_Table1"
   # Find the corresponding metadata_flags dataframe
   flag_df <- metadata_flags[[df_name]]
   
@@ -374,10 +387,8 @@ for (i in seq_along(filtered_cellcounts_data_list)) {
   # Update variables_to_move including variables ending in "_Source" for each dataframe
   variables_to_move <- c("Body_Mass.kg", "Family", "Order", "Clade", "CommonName", "Micro.or.mega", 
                          grep("_Source$", names(filtered_cellcounts_data_list[[i]]), value = TRUE), 
-                         grep("_S.n$", names(filtered_cellcounts_data_list[[i]]), value = TRUE),
-                         grep("_p.C.N", names(filtered_cellcounts_data_list[[i]]), value = TRUE),
-                         grep("_p.C.Brain", names(filtered_cellcounts_data_list[[i]]), value = TRUE))
-
+                         grep("_S.n$", names(filtered_cellcounts_data_list[[i]]), value = TRUE)),
+  grep("_S.n$", names(filtered_cellcounts_data_list[[i]]), value = TRUE))
   # Check if any of the variables to move are present in the dataframe
   present_variables <- intersect(variables_to_move, names(filtered_cellcounts_data_list[[i]]))
   if (length(present_variables) > 0) {

@@ -1,15 +1,3 @@
-
-```{r}
-
-```
-
-```{r}
-```
-
-
-```{r}
-```
-
 # Set Working Directory
 setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging")
 
@@ -159,6 +147,10 @@ for (i in seq_along(item_name)) {
   # Update the data frame in the list
   cellcounts_data_list[[i]] <- df
 }
+
+
+
+
 
 ## 1.4 Rename Species using NCBI Taxonomy as the standard
 
@@ -324,7 +316,6 @@ for (df_name in names(metadata_flags)) {
 # If metadata_flags dataframe Flag_Condition is a string, treat it as R script to identify a set of values in the corresponding dataframe in filtered_cellcounts_data_list, then delete that set
 # Loop through every dataframe in filtered_cellcounts_data_list
 for (df_name in names(filtered_cellcounts_data_list)) {
-  # df_name <- "DosSantos_etal_2020_Table1"
   # Find the corresponding metadata_flags dataframe
   flag_df <- metadata_flags[[df_name]]
   
@@ -352,6 +343,8 @@ for (df_name in names(filtered_cellcounts_data_list)) {
   }
 }
 
+
+
 ## 1.6 Filter: Annex to Metadata any contingent variables
 
 # Initialize an empty vector to store all column names, filtered
@@ -373,10 +366,10 @@ filtered_all_variables
 # Redundant variables created here: "Body_Mass.kg"
 # Extra taxonomic variables: "Species_Source", "Family", "Order", "Clade", "CommonName", "Micro.or.mega"    
 # Data Sources variables: variables ending in "_Source"
-# Sample information: "SampleInfo"
-# Sample information: variables ending in "_S.n"
+# Sample information: "_SampleInfo"
 # Redundant contingent variables: _N.n (if N.mg and .mg are   
 # Derived variables created from data provided: variables ending in "_p.C.N", "_p.C.Brain"
+# Statistics around means: "_SD", _n", "_S.n"
 
 # Initialize annexed_metadata as a named list
 annexed_metadata <- setNames(vector("list", length(filtered_cellcounts_data_list)), names(filtered_cellcounts_data_list))
@@ -386,9 +379,14 @@ variables_to_move <- character(0)
 for (i in seq_along(filtered_cellcounts_data_list)) {
   # Update variables_to_move including variables ending in "_Source" for each dataframe
   variables_to_move <- c("Body_Mass.kg", "Family", "Order", "Clade", "CommonName", "Micro.or.mega", 
+                         grep("_SampleInfo$", names(filtered_cellcounts_data_list[[i]]), value = TRUE), 
                          grep("_Source$", names(filtered_cellcounts_data_list[[i]]), value = TRUE), 
-                         grep("_S.n$", names(filtered_cellcounts_data_list[[i]]), value = TRUE)),
-  grep("_S.n$", names(filtered_cellcounts_data_list[[i]]), value = TRUE))
+                         grep("_S.n$", names(filtered_cellcounts_data_list[[i]]), value = TRUE),
+                         grep("_SD$", names(filtered_cellcounts_data_list[[i]]), value = TRUE),
+                         grep("_n$", names(filtered_cellcounts_data_list[[i]]), value = TRUE),
+                         grep("_p.C.N", names(filtered_cellcounts_data_list[[i]]), value = TRUE),
+                         grep("_p.C.Brain", names(filtered_cellcounts_data_list[[i]]), value = TRUE))
+
   # Check if any of the variables to move are present in the dataframe
   present_variables <- intersect(variables_to_move, names(filtered_cellcounts_data_list[[i]]))
   if (length(present_variables) > 0) {
@@ -464,12 +462,52 @@ Variables_shared_across_teams <- merge(Kverkova_Team_variables, HerculanoHouzel_
 Variables_in_both_teams <- Variables_shared_across_teams$Variable_Name
 
 
-## 1.7 Filter: Melt dataframe and address conflicting datapoints across datasets using priority
+## 1.7 Filter: Melt dataframe and address conflicting datapoints across datasets using priority 
+## AND AVERAGING
 
-## 1.7.1 Combine all data in all dataframes in filtered_cellcounts_data_list as a long dataframe
+# Create a new list of dataframes from the list of dataframes filtered_cellcounts_data_list with only Kverkova_Team dataframes
+# Initialize an empty list to store matching dataframes
+Kverkova_Team_df_list <- list()
+# Loop through and store as dataframes in the list
+for (i in seq_along(Kverkova_Team_dataframes)) {
+  # Use match to find the dataframe in filtered_cellcounts_data_list with the same name as  i in seq_along(Kverkova_Team_dataframes
+  Kverkova_Team_dfmatch <- filtered_cellcounts_data_list[[i]][, names(filtered_cellcounts_data_list[[i]]) %in% Kverkova_Team_dataframes]
+  # Store the data frame in the list with the corresponding name
+  Kverkova_Team_df_list[[Kverkova_Team_dataframes[i]]] <- Kverkova_Team_dfmatch
+}
 
-combined_data <- lapply(names(filtered_cellcounts_data_list), function(source) {
-  df <- filtered_cellcounts_data_list[[source]]
+# Create a new list of dataframes from the list of dataframes filtered_cellcounts_data_list with only Kverkova_Team dataframes
+# Initialize an empty list to store matching dataframes
+Kverkova_Team_df_list <- list()
+# Loop through and store as dataframes in the list
+for (i in seq_along(filtered_cellcounts_data_list)) {
+  # Check if the name of the dataframe is in Kverkova_Team_dataframes
+  if (names(filtered_cellcounts_data_list)[i] %in% Kverkova_Team_dataframes) {
+    # Assign the entire dataframe to Kverkova_Team_dfmatch
+    Kverkova_Team_dfmatch <- filtered_cellcounts_data_list[[i]]
+    # Store the data frame in the list with the corresponding name
+    Kverkova_Team_df_list[[names(filtered_cellcounts_data_list)[i]]] <- Kverkova_Team_dfmatch
+  }
+}
+
+# Create a new list of dataframes from the list of dataframes filtered_cellcounts_data_list with only HerculanoHouzel_Team dataframes
+# Initialize an empty list to store matching dataframes
+HerculanoHouzel_Team_df_list <- list()
+# Loop through and store as dataframes in the list
+for (i in seq_along(filtered_cellcounts_data_list)) {
+  # Check if the name of the dataframe is in HerculanoHouzel_Team_dataframes
+  if (names(filtered_cellcounts_data_list)[i] %in% HerculanoHouzel_Team_dataframes) {
+    # Assign the entire dataframe to HerculanoHouzel_Team_dfmatch
+    HerculanoHouzel_Team_dfmatch <- filtered_cellcounts_data_list[[i]]
+    # Store the data frame in the list with the corresponding name
+    HerculanoHouzel_Team_df_list[[names(filtered_cellcounts_data_list)[i]]] <- HerculanoHouzel_Team_dfmatch
+  }
+}
+
+###### KVERKOVA TEAM START 1.7.1 - 1.7.4
+## 1.7.1 Combine all data in all dataframes in Kverkova_Team_df_list as a long dataframe
+combined_data <- lapply(names(Kverkova_Team_df_list), function(source) {
+  df <- Kverkova_Team_df_list[[source]]
   
   # Convert all columns to character strings
   df[] <- lapply(df, as.character)
@@ -494,14 +532,14 @@ worth_dataframe <- data.frame(source = character(),
                               number_species = numeric(),
                               stringsAsFactors = FALSE)
 
-# Iterate over the dataframes in filtered_cellcounts_data_list
-for (df_name in names(filtered_cellcounts_data_list)) {
+# Iterate over the dataframes in Kverkova_Team_df_list
+for (df_name in names(Kverkova_Team_df_list)) {
   
   # Extract date from the dataframe name
   date <- as.numeric(str_extract(df_name, "[0-9]+"))
   
   # Extract number of species from the dataframe
-  number_species <- nrow(filtered_cellcounts_data_list[[df_name]]) - 1  # Subtract 1 for the header
+  number_species <- nrow(Kverkova_Team_df_list[[df_name]]) - 1  # Subtract 1 for the header
   
   # Append the information to the summary dataframe
   worth_dataframe <- rbind(worth_dataframe, data.frame(source = df_name,
@@ -520,8 +558,8 @@ worth_dataframe$priority <- seq_len(nrow(worth_dataframe))
 
 # Append a "priority" column to the "combined_data" dataframe by matching "Source" values with "source" in "worth_dataframe"
 combined_data$priority <- match(combined_data$Source,  worth_dataframe$source, worth_dataframe$priority)
-
-write_csv(combined_data, "combined_data.csv")
+# 
+# write_csv(combined_data, "combined_data.csv")
 
 ## 1.7.4 Limit dataset to best available data
 # remove any NA values in combined_data
@@ -548,8 +586,154 @@ for (i in seq_along(df_list)) {
 }
 
 # Combine all rows from df_list into one dataframe excluding rows with DECISION:WORSE
-best_data_long <- do.call(rbind, df_list)
-best_data_long <- best_data_long[best_data_long$DECISION != "WORSE", ]
+Kverkova_Team_data_long <- do.call(rbind, df_list)
+Kverkova_Team_data_long <- Kverkova_Team_data_long[Kverkova_Team_data_long$DECISION != "WORSE", ]
+###### KVERKOVA TEAM END 1.7.1 - 1.7.4
+
+###### HH TEAM START 1.7.1 - 1.7.4
+## 1.7.1 Combine all data in all dataframes in HerculanoHouzel_Team_df_list as a long dataframe
+combined_data <- lapply(names(HerculanoHouzel_Team_df_list), function(source) {
+  df <- HerculanoHouzel_Team_df_list[[source]]
+  
+  # Convert all columns to character strings
+  df[] <- lapply(df, as.character)
+  
+  # Combine "Species," "Variable," "Source," and "Value" columns
+  df_long <- df %>%
+    pivot_longer(cols = -Species, names_to = "Variable", values_to = "Value") %>%
+    mutate(Source = source) %>%
+    select(Species, Variable, Source, Value)
+  
+  return(df_long)
+})
+# Combine all dataframes in the list into a single dataframe
+combined_data <- bind_rows(combined_data)
+
+## 1.7.2 Address conflicting datapoints across datasets using priority
+
+## 1.7.3 Determine worth order for dataframes to give priority
+# Initialize an empty dataframe to store the summary
+worth_dataframe <- data.frame(source = character(),
+                              date = numeric(),
+                              number_species = numeric(),
+                              stringsAsFactors = FALSE)
+
+# Iterate over the dataframes in HerculanoHouzel_Team_df_list
+for (df_name in names(HerculanoHouzel_Team_df_list)) {
+  
+  # Extract date from the dataframe name
+  date <- as.numeric(str_extract(df_name, "[0-9]+"))
+  
+  # Extract number of species from the dataframe
+  number_species <- nrow(HerculanoHouzel_Team_df_list[[df_name]]) - 1  # Subtract 1 for the header
+  
+  # Append the information to the summary dataframe
+  worth_dataframe <- rbind(worth_dataframe, data.frame(source = df_name,
+                                                       date = date,
+                                                       number_species = number_species))
+}
+
+# Sort (highest to lowest) by date first , then by number_species
+worth_dataframe <- worth_dataframe[order(-worth_dataframe$date, -worth_dataframe$number_species), ]
+
+# Reset row names
+rownames(worth_dataframe) <- NULL
+
+# Add a new column called "priority" with row numbers as values
+worth_dataframe$priority <- seq_len(nrow(worth_dataframe))
+
+# Append a "priority" column to the "combined_data" dataframe by matching "Source" values with "source" in "worth_dataframe"
+combined_data$priority <- match(combined_data$Source,  worth_dataframe$source, worth_dataframe$priority)
+# 
+# write_csv(combined_data, "combined_data.csv")
+
+## 1.7.4 Limit dataset to best available data
+# remove any NA values in combined_data
+intermediate_data <- combined_data[!is.na(combined_data$Value), , drop = FALSE]
+
+# Add a blank column "DECISION"
+intermediate_data$DECISION <- ""
+
+# Convert dataframe to a list of dataframes
+df_list <- split(intermediate_data, list(intermediate_data$Species, intermediate_data$Variable))
+
+# Create a loop to update "DECISION" based on the priority condition
+for (i in seq_along(df_list)) {
+  priority_values <- df_list[[i]]$priority
+  
+  # Check if there are non-missing values in priority_values
+  if (any(!is.na(priority_values))) {
+    # Update "DECISION" based on the specified condition
+    df_list[[i]]$DECISION[df_list[[i]]$priority > min(priority_values, na.rm = TRUE)] <- "WORSE"
+  } else {
+    # Handle the case where all values are missing
+    df_list[[i]]$DECISION <- NA
+  }
+}
+
+# Combine all rows from df_list into one dataframe excluding rows with DECISION:WORSE
+HerculanoHouzel_Team_data_long <- do.call(rbind, df_list)
+HerculanoHouzel_Team_data_long <- HerculanoHouzel_Team_data_long[HerculanoHouzel_Team_data_long$DECISION != "WORSE", ]
+###### HH TEAM END 1.7.1 - 1.7.4
+
+###### microglia Calculations for HH TEAM START
+# Make Values numeric
+HerculanoHouzel_Team_data_long$Value <- as.numeric(HerculanoHouzel_Team_data_long$Value)
+# HerculanoHouzel_Team_data_long is a dataframe with a melted structure where variable names are consolidated in the "Variable" column.
+# For each species with available data on microglia density ("_I.p.mg"), the goal is to calculate the number of microglia ("_I.n") for each brain structure. The brain structures are represented by prefixes within the "Variable" column.
+# For a given species (identified by the column "Species") and a particular brain structure (identified by the prefix in the "Variable" column), the corresponding "_I.n" is computed by multiplying the microglia density ("_I.p.mg") by the mass ("_Mass.g") . 
+# The result is then scaled by a factor of 1000 to convert from g to mg.
+
+# Shorthand for the dataframe name
+df_long <- HerculanoHouzel_Team_data_long
+
+# Split the Variable column into Type and Measure
+df_widen <- df_long %>%
+  separate(Variable, into = c("Type", "Measure"), sep = "_", remove = FALSE)
+
+##WORKS UNTIL BELOW HERE
+
+# Correctly align Mass.g and I.p.mg in the same row
+df_corrected <- df_widen %>%
+  pivot_wider(names_from = Measure, values_from = Value) %>%
+  select(Species, Type, Mass.g = Mass.g, I.p.mg = I.p.mg)
+
+
+# Calculate _I.n values
+df_calc <- df_corrected %>%
+  mutate(I.n = Mass.g * I.p.mg * 1000)
+
+# Pivot longer again, to return to a fully long format, and combine Type and Measure into Variable
+df_long_calc <- df_calc %>%
+  pivot_longer(cols = c(`Mass.g`, `I.p.mg`, `I.n`), names_to = "Measure", values_to = "Value") %>%
+  unite("Variable", Type, Measure, sep = "_", remove = TRUE) %>%
+  select(Species, Source, Variable, Value, priority, DECISION)
+
+# Remove rows with NA values in the Value column
+df_long_calculated <- df_long_calc %>%
+  filter(!is.na(Value))
+
+
+
+
+
+# Update the data frame in the list
+HerculanoHouzel_Team_data_long <- df_long_calculated
+unique(HerculanoHouzel_Team_data_long$Variable)
+
+##### microglia Calculations for HH TEAM  END
+
+## Finalize dataset
+# Stack the dataframes lengthwise
+stacked_long_dataframe <- rbind(HerculanoHouzel_Team_data_long, Kverkova_Team_data_long)
+# remove any NA values in stacked_long_dataframe
+stacked_long_dataframe <- stacked_long_dataframe[!is.na(stacked_long_dataframe$Value), , drop = FALSE]
+# # Calculate averages and create the new long dataframe
+
+best_data_long <- stacked_long_dataframe %>%
+  group_by(Species, Variable) %>%
+  summarize(Value = mean(Value),
+            Source = paste0(unique(Source), collapse = "_"))
 
 # Convert to wide dataframe
 best_data_wide <- arrange(pivot_wider(best_data_long, id_cols = Species, names_from = Variable, values_from = Value), Species)

@@ -1,3 +1,89 @@
+###### WIDE microglia Calculations for HH TEAM START TEST
+# Split the HerculanoHouzel_Team_data_long dataframe based on the variable 'Source' and store each group in a list
+HerculanoHouzel_Team_dfs <- split(HerculanoHouzel_Team_data_long, HerculanoHouzel_Team_data_long$Source)
+# Iterate over each dataframe in the list and modify them
+list_of_dfs <- lapply(HerculanoHouzel_Team_dfs, function(df) {
+  # Convert the 'Value' column to numeric
+  df$Value <- as.numeric(df$Value)
+  
+  # Delete the 'priority' and 'DECISION' columns
+  df <- df[, !(names(df) %in% c("priority", "DECISION"))]
+  
+  return(df)
+})
+
+
+
+# Loop: Calculate
+for (i in seq_along(list_of_dfs)) {
+  # Get the data frame associated with the current name
+  df <- list_of_dfs[[i]]
+  # Check if there are required columns ending with "_Mass.g"
+  Mass.g <- grep("_Mass.g$", colnames(df), value = TRUE)
+  # Check if there are also required columns ending with "_I.p.mg"
+  I.p.mg <- grep("_I.p.mg$", colnames(df), value = TRUE)
+  # Loop through matching columns that fulfill both requirements and calculate "_I.n"
+  for (matching_massmg in Mass.g) {
+    # Extract the prefix, the part of the string that appears before "_Mass.g"
+    prefix <- sub("_Mass.g$", "", matching_massmg)
+    # Extract the I.p.mg
+    matching_Ipmg <- paste0(prefix, "_I.p.mg")
+    # Calculate the "_I.n" and store in new and corresponding "_I.n" columns
+    new_col_I.n <- paste0(prefix, "_I.n")
+    df[[new_col_I.n]] <- df[[matching_Ipmg]] * df[[matching_massmg]] * 1000
+  }
+  # Update the data frame in the list
+  list_of_dfs[[i]] <- df
+}
+###### WIDE microglia Calculations for HH TEAM END TEST
+# ###### LONG microglia Calculations for HH TEAM START
+# # Make Values numeric
+# HerculanoHouzel_Team_data_long$Value <- as.numeric(HerculanoHouzel_Team_data_long$Value)
+# # HerculanoHouzel_Team_data_long is a dataframe with a melted structure where variable names are consolidated in the "Variable" column.
+# # For each species with available data on microglia density ("_I.p.mg"), the goal is to calculate the number of microglia ("_I.n") for each brain structure. The brain structures are represented by prefixes within the "Variable" column.
+# # For a given species (identified by the column "Species") and a particular brain structure (identified by the prefix in the "Variable" column), the corresponding "_I.n" is computed by multiplying the microglia density ("_I.p.mg") by the mass ("_Mass.g") . 
+# # The result is then scaled by a factor of 1000 to convert from g to mg.
+# 
+# # Shorthand for the dataframe name
+# df_long <- HerculanoHouzel_Team_data_long
+# 
+# # Split the Variable column into Type and Measure
+# df_widen <- df_long %>%
+#   separate(Variable, into = c("Type", "Measure"), sep = "_", remove = FALSE)
+# 
+# ##WORKS UNTIL BELOW HERE
+# 
+# # Correctly align Mass.g and I.p.mg in the same row
+# df_corrected <- df_widen %>%
+#   pivot_wider(names_from = Measure, values_from = Value) %>%
+#   select(Species, Type, Mass.g = Mass.g, I.p.mg = I.p.mg)
+# 
+# 
+# # Calculate _I.n values
+# df_calc <- df_corrected %>%
+#   mutate(I.n = Mass.g * I.p.mg * 1000)
+# 
+# # Pivot longer again, to return to a fully long format, and combine Type and Measure into Variable
+# df_long_calc <- df_calc %>%
+#   pivot_longer(cols = c(`Mass.g`, `I.p.mg`, `I.n`), names_to = "Measure", values_to = "Value") %>%
+#   unite("Variable", Type, Measure, sep = "_", remove = TRUE) %>%
+#   select(Species, Source, Variable, Value, priority, DECISION)
+# 
+# # Remove rows with NA values in the Value column
+# df_long_calculated <- df_long_calc %>%
+#   filter(!is.na(Value))
+# 
+# # Update the data frame in the list
+# HerculanoHouzel_Team_data_long <- df_long_calculated
+# unique(HerculanoHouzel_Team_data_long$Variable)
+# 
+# ##### LONG microglia Calculations for HH TEAM  END
+
+
+
+
+
+
 ## TESTING ZONE START
 # Example dataframe
 df <- data.frame(

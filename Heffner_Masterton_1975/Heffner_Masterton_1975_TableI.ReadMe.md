@@ -6,7 +6,7 @@ Table I is over several pages
 
 --> Snapshot
 
-Manually entered data (with some coping and pasting of particular parts)
+Manually entered data (with some copying and pasting of particular parts)
 
 Heffner_Masterton_1975_TableI_snapshot.xlsx
 
@@ -14,7 +14,7 @@ Heffner_Masterton_1975_TableI_snapshot.xlsx
 
 Made column headings readable
 
-Compiles data into row per species and remove empty rows 
+Compiled data into row per species and removed empty rows 
 
 Heffner_Masterton_1975_TableI.csv <-- USE THIS
 

@@ -1,5 +1,5 @@
 #source
-setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging")
+setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_cellcounts")
 
 ## Summary: This is for merging, comparing, and summarizing old KEY files found in "Do expensive brain ..." that were hand-compiled into term lists
 # typo in old_HerculanoHouzel_2015_key Struct.Descrip_old "\\*neurol\\*", "\\*neuronal\\*"  was done by hand first

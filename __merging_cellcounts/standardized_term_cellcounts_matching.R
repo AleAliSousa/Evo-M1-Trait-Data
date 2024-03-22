@@ -1,5 +1,5 @@
 #source
-setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging")
+setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_cellcounts")
 
 ## Summary: This is for merging all variables in datasets from papers about cell counts into a list, and then matching them with Standardized terms, via so reference to the the old key.
 

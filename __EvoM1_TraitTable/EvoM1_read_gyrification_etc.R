@@ -1,8 +1,11 @@
+setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__EvoM1_TraitTable")
+
 # Lewitus Glia and Gyrification for EvoM1
 
 ## 1 Get data for cell count analyses
 library(tidyverse)
 library(readxl)
+library(writexl)
 
 ## Create a list with all the dataframes for cell count analyses
 item_name <- c(
@@ -133,27 +136,27 @@ sort(lewitus_data_list$Lewitus_etal_2014_TableS1$Species)
 Lewitus_etal_2014_TableS1$species_sci <- NA 
 Lewitus_etal_2014_TableS1$species_sci[Lewitus_etal_2014_TableS1$Species == "Homo_sapiens"] <- "Homo sapiens"
 Lewitus_etal_2014_TableS1$species_sci[Lewitus_etal_2014_TableS1$Species == "Pan_troglodytes"] <- "Pan troglodytes"
-Lewitus_etal_2014_TableS1$species_sci[Lewitus_etal_2014_TableS1$Species == "Gorilla_gorilla"] <- "Gorilla gorilla gorilla"
+Lewitus_etal_2014_TableS1$species_sci[Lewitus_etal_2014_TableS1$Species == "Gorilla_gorilla"] <- "Gorilla gorilla gorilla" #Species
 Lewitus_etal_2014_TableS1$species_sci[Lewitus_etal_2014_TableS1$Species == "Macaca_mulatta"] <- "Macaca mulatta"
 Lewitus_etal_2014_TableS1$species_sci[Lewitus_etal_2014_TableS1$Species == "Macaca_nemestrina"] <- "Macaca nemestrina"
-Lewitus_etal_2014_TableS1$species_sci[Lewitus_etal_2014_TableS1$Species == "Papio_hamadryas"] <- "Papio anubis"
+Lewitus_etal_2014_TableS1$species_sci[Lewitus_etal_2014_TableS1$Species == "Papio_hamadryas"] <- "Papio anubis" #Genus 
 Lewitus_etal_2014_TableS1$species_sci[Lewitus_etal_2014_TableS1$Species == "Chlorocebus_sabaeus"] <- "Chlorocebus sabaeus"
-Lewitus_etal_2014_TableS1$species_sci[Lewitus_etal_2014_TableS1$Species == "Saimiri_sciureus"] <- "Saimiri boliviensis boliviensis"
+Lewitus_etal_2014_TableS1$species_sci[Lewitus_etal_2014_TableS1$Species == "Saimiri_sciureus"] <- "Saimiri boliviensis boliviensis" #Genus 
 Lewitus_etal_2014_TableS1$species_sci[Lewitus_etal_2014_TableS1$Species == "Sapajus_apella"] <- "Sapajus apella"
 Lewitus_etal_2014_TableS1$species_sci[Lewitus_etal_2014_TableS1$Species == "Callithrix_jacchus"] <- "Callithrix jacchus"
-Lewitus_etal_2014_TableS1$species_sci[Lewitus_etal_2014_TableS1$Species == "Aotus_trivirgatus"] <- "Aotus nancymaae"
-Lewitus_etal_2014_TableS1$species_sci[Lewitus_etal_2014_TableS1$Species == "Otolemur_crassicaudatus"] <- "Otolemur garnettii"
+Lewitus_etal_2014_TableS1$species_sci[Lewitus_etal_2014_TableS1$Species == "Aotus_trivirgatus"] <- "Aotus nancymaae" #Genus 
+Lewitus_etal_2014_TableS1$species_sci[Lewitus_etal_2014_TableS1$Species == "Otolemur_crassicaudatus"] <- "Otolemur garnettii" #Genus 
 Lewitus_etal_2014_TableS1$species_sci[Lewitus_etal_2014_TableS1$Species == "Microcebus_murinus"] <- "Microcebus murinus"
-Lewitus_etal_2014_TableS1$species_sci[Lewitus_etal_2014_TableS1$Species == "Tupaia_glis*"] <- "Tupaia belangeri"
+Lewitus_etal_2014_TableS1$species_sci[Lewitus_etal_2014_TableS1$Species == "Tupaia_glis*"] <- "Tupaia belangeri" #Genus 
 Lewitus_etal_2014_TableS1$species_sci[Lewitus_etal_2014_TableS1$Species == "Mus_musculus"] <- "Mus musculus"
 Lewitus_etal_2014_TableS1$species_sci[Lewitus_etal_2014_TableS1$Species == "Rattus_norvegicus"] <- "Rattus norvegicus"
 Lewitus_etal_2014_TableS1$species_sci[Lewitus_etal_2014_TableS1$Species == "Heterocephalus_glaber"] <- "Heterocephalus glaber"
 Lewitus_etal_2014_TableS1$species_sci[Lewitus_etal_2014_TableS1$Species == "Urocitellus_parryii"] <- "Urocitellus parryii"
 Lewitus_etal_2014_TableS1$species_sci[Lewitus_etal_2014_TableS1$Species == "Oryctolagus_cuniculus*"] <- "Oryctolagus cuniculus"
-Lewitus_etal_2014_TableS1$species_sci[Lewitus_etal_2014_TableS1$Species == "Mustela_putorius"] <- "Mustela putorius furo"
+Lewitus_etal_2014_TableS1$species_sci[Lewitus_etal_2014_TableS1$Species == "Mustela_putorius"] <- "Mustela putorius furo" #Species
 Lewitus_etal_2014_TableS1$species_sci[Lewitus_etal_2014_TableS1$Species == "Canis_latrans"] <- "Canis latrans"
 Lewitus_etal_2014_TableS1$species_sci[Lewitus_etal_2014_TableS1$Species == "Felis_catus"] <- "Felis catus"
-Lewitus_etal_2014_TableS1$species_sci[Lewitus_etal_2014_TableS1$Species == "Sus_scrofa_domesticus"] <- "Sus scrofa"
+Lewitus_etal_2014_TableS1$species_sci[Lewitus_etal_2014_TableS1$Species == "Sus_scrofa_domesticus"] <- "Sus scrofa" #Domestic
 Lewitus_etal_2014_TableS1$species_sci[Lewitus_etal_2014_TableS1$Species == "Dasypus_novemcinctus*"] <- "Dasypus novemcinctus"
 Lewitus_etal_2014_TableS1$species_sci[Lewitus_etal_2014_TableS1$Species == "Monodelphis_domestica"] <- "Monodelphis domestica"
 

@@ -1,5 +1,5 @@
 # Set Working Directory
-setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging")
+setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_cellcounts")
 
 ## 1 Get data for cell count analyses
 ## 2 Change to standardized terminology for all variables in those dataframes

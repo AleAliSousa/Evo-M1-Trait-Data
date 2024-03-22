@@ -2,7 +2,7 @@ library(tidyverse)
 library(writexl)
 
 # Read data
-cellcounts_long <- read.csv("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging/cellcounts_long.csv", check.names=FALSE)
+cellcounts_long <- read.csv("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_cellcounts/cellcounts_long.csv", check.names=FALSE)
 
 # For Project M1 Evo: Export CerebralCortex Mass.g, N.n, O.n, I.p.N and their Sources
 Cx_Massg_Nn_On_IpC_long <- filter(cellcounts_long, Variable %in% c("CerebralCortex_Mass.g","CerebralCortex_N.n", "CerebralCortex_O.n", "CerebralCortex_I.p.C"))

@@ -1,4 +1,4 @@
-setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging")
+setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_cellcounts")
 
 # Impute missing data
 # Q. What data should be included/excluded when doing an imputation?

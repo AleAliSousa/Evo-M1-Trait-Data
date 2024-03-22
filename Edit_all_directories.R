@@ -1,26 +1,51 @@
-# Editing directories
-#### ALREADY DONE 
-# install.packages("xfun")
+## Editing directories : before running, move this outside of the directory to edit
+
+
+# Update directory name in all R files in the directory and its subdirectories
+library(xfun)
+gsub_dir(ext = "R", dir = "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging", recursive = TRUE, pattern = "__merging", replacement = "__merging_cellcounts")
+gsub_dir(ext = "R", dir = "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__EvoM1_TraitTable", recursive = TRUE, pattern = "__merging", replacement = "__merging_cellcounts")
+
+# Get a report of each instance where a change was made
 # library(xfun)
-# # Update directory name in all R files in the directory and its subdirectories
-# gsub_dir(ext = "R", dir = "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data", recursive = TRUE, pattern = "Evo M1 Trait Data", replacement = "Evo-M1-Trait-Data")
+# # Perform the directory name substitution
+# changed_paths <- gsub_dir(
+#   ext = "R", 
+#   dir = "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/__merging", 
+#   recursive = TRUE, 
+#   pattern = "__merging", 
+#   replacement = "__merging_cellcounts"
+# )
+# 
+# # Check if any changes were made
+# if (length(changed_paths) > 0) {
+#   cat("Changes were made to the following paths:\n")
+#   
+#   # Print each changed path
+#   for (path in changed_paths) {
+#     cat(path, "\n")
+#   }
+# } else {
+#   cat("No changes were made.\n")
+# }
 
-# # Update data pipeline step name in all R files in the directory and its subdirectories
-# gsub_dir(ext = "R", dir = "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data", recursive = TRUE, pattern = "Primary or Equivalent", replacement = "Snapshot")
-# gsub_dir(ext = "R", dir = "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data", recursive = TRUE, pattern = "primary_or_equivalent", replacement = "snapshot")
+## PAST STEPS TAKEN
+# Update directory name Evo-M1-Trait-Data
 
-# # Update data pipeline step name in all md in the directory and its subdirectories
-# gsub_dir(ext = "md", dir = "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data", recursive = TRUE, pattern = "Primary or Equivalent", replacement = "Snapshot")
-# gsub_dir(ext = "md", dir = "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data", recursive = TRUE, pattern = "primary_or_equivalent", replacement = "snapshot")
-#### ALREADY DONE  
+library(xfun)
+getwd()
+# Update directory name in all R files in the directory and its subdirectories
+gsub_dir(ext = "R", dir = "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data", recursive = TRUE, pattern = "Evo M1 Trait Data", replacement = "Evo-M1-Trait-Data")
 
 
-# Get list of files in comparative-data
-library(openxlsx)
+# Update data pipeline step name in all R files in the directory and its subdirectories
 
-# List all files in the directory
-list.files("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__Public/comparative-data")
+library(xfun)
 
-# Get and write the list of files to Excel
-write.xlsx(data.frame(Files = list.files("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__Public/comparative-data")), 
-           "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/file_list.xlsx", sheetName = "FileList", colNames = TRUE)
+gsub_dir(ext = "R", dir = "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data", recursive = TRUE, pattern = "Primary or Equivalent", replacement = "Snapshot")
+gsub_dir(ext = "R", dir = "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data", recursive = TRUE, pattern = "primary_or_equivalent", replacement = "snapshot")
+# Update data pipeline step name in all md in the directory and its subdirectories
+gsub_dir(ext = "md", dir = "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data", recursive = TRUE, pattern = "Primary or Equivalent", replacement = "Snapshot")
+gsub_dir(ext = "md", dir = "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data", recursive = TRUE, pattern = "primary_or_equivalent", replacement = "snapshot")
+
+

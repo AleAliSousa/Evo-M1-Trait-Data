@@ -154,15 +154,15 @@ fillStandardizedTerm <- function(merged_terms_combined_key, Kverkova_etal_2018_d
     strings <- strsplit(original_term, "_")[[1]]
     Structure_string <- strings[1]
     Measure_string <- strings[2]
-    SD_string <- strings[3]
+    Stat_string <- strings[3]
     # Search for Structure_string in Kverkova_etal_2018_definitions$Code and copy corresponding "Structure" term
     structure_term <- Kverkova_etal_2018_definitions$Structure[Kverkova_etal_2018_definitions$Code == Structure_string]
     # Search for Measure_string in Kverkova_etal_2018_definitions$Code and copy corresponding "Measure" term
     measure_term <- Kverkova_etal_2018_definitions$Measure[Kverkova_etal_2018_definitions$Code == Measure_string]
-    # Search for Measure_string in Kverkova_etal_2018_definitions$Code and copy corresponding "SD" term
-    SD_term <- Kverkova_etal_2018_definitions$SD[Kverkova_etal_2018_definitions$Code == SD_string]
+    # Search for Measure_string in Kverkova_etal_2018_definitions$Code and copy corresponding "Stat" term
+    Stat_term <- Kverkova_etal_2018_definitions$Stat[Kverkova_etal_2018_definitions$Code == Stat_string]
     # Combine Structure_string and Measure_string to form the Standardized_Term
-    standardized_term <- paste(structure_term, measure_term, SD_term[!is.na(SD_term)==T], sep="_")
+    standardized_term <- paste(structure_term[!is.na(structure_term)==T], measure_term[!is.na(measure_term)==T], Stat_term[!is.na(Stat_term)==T], sep="_")
     # remove trailing underscores
     standardized_term = sub("_$", "",standardized_term)
     # Update the merged_terms_combined$Standardized_Term with the newly formed term
@@ -171,7 +171,7 @@ fillStandardizedTerm <- function(merged_terms_combined_key, Kverkova_etal_2018_d
    # Rename string1, string2 and string3 columns
   names(merged_terms_combined_key)[names(merged_terms_combined_key) == "Structure_string"] <- "Structure"
   names(merged_terms_combined_key)[names(merged_terms_combined_key) == "Measure_string"] <- "Measure"
-  names(merged_terms_combined_key)[names(merged_terms_combined_key) == "SD_string"] <- "SD"
+  names(merged_terms_combined_key)[names(merged_terms_combined_key) == "Stat_string"] <- "Stat"
   return(merged_terms_combined_key)
 }
 merged_terms_combined_key <- fillStandardizedTerm(merged_terms_combined_key, Kverkova_etal_2018_definitions)

@@ -40,6 +40,14 @@ Armstrong, E. (1979). Quantitative comparison of the hominoid thalamus. I. Speci
 - Structures: thalamic substructures (as proportion of thalamus but don't see those raw data)
 - Maybe check Armstrong, Este 1976 A Quantitative Comparison of the Hominoid Thalamus. Unpublished Ph.D. dissertation, Columbia University
 _______
+Kverkova_etal_2018
+- Bathyergidae
+- Volumes
+- Structures: several
+e.g. Thalamus vol. in Heterocephalus glaber
+
+_______
+
 Others to check: 
 In any papers that cite neocortex volumes for mammals, check the neocortex sources, they might have thalamus etc
 Any other work by Este Armstrong or other people who were in Duesseldorf later?

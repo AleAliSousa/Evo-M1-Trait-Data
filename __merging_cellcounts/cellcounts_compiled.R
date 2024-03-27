@@ -18,6 +18,7 @@ library(readxl)
 
 ## Create a list with all the dataframes for cell count analyses
 item_name <- c(
+  "Burish_etal_2010_Table1",
   "DosSantos_etal_2017_TableS1",
   "DosSantos_etal_2020_Table1",
   "HerculanoHouzel_etal_2015_Table1",
@@ -384,11 +385,11 @@ for (df_name in names(filtered_cellcounts_data_list)) {
 # Modify metadata_flags DosSantos_etal_2020_Table1 to include multiple rows for flag conditions and descriptions
 metadata_flags$DosSantos_etal_2020_Table1 <- list(
   Flag_Condition = c(
-    "filtered_cellcounts_data_list[[df_name]]$SPECIES == 'Tragelaphus strepsiceros'",
+    "filtered_cellcounts_data_list[[df_name]]$Species == 'Tragelaphus strepsiceros'",
     "grepl('_C.n|_I.n|_I.p.mg|_I.p.N|_N.n|_N.p.mg|_n.S|_Mass.g', colnames(filtered_cellcounts_data_list[[df_name]]))"
   ),
   Flag_Description = c(
-    "Omit Row SPECIES == Tragelaphus strepsiceros due to impossible numbers",
+    "Omit Row Species == Tragelaphus strepsiceros due to impossible numbers",
     "Omit secondary data columns due to some typos/conflicts with primary sources, and illogical values."
   ),
   Flag_Condition_Type = c(

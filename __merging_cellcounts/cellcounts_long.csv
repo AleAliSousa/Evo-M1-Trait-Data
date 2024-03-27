@@ -108,49 +108,27 @@ Aotus trivirgatus,WholeBrain_Mass.g,15.73,HerculanoHouzel_etal_2015_Table5
 Aotus trivirgatus,WholeBrain_N.n,1468410000,HerculanoHouzel_etal_2015_Table5
 Aotus trivirgatus,WholeBrain_O.n,1195130000,HerculanoHouzel_etal_2015_Table5
 Bathyergus suillus,Amygdala_Vol.mm3,50,Kverkova_etal_2018_TableS1
-Bathyergus suillus,Amygdala_Vol.mm3.1,3,Kverkova_etal_2018_TableS1
 Bathyergus suillus,Body_Mass.g,907.82,Kverkova_etal_2018_TableS1
-Bathyergus suillus,Body_Mass.g.1,320.93,Kverkova_etal_2018_TableS1
 Bathyergus suillus,Cerebellum_N.n,268890000,Kverkova_etal_2018_TableS5
-Bathyergus suillus,Cerebellum_N.n.1,17470000,Kverkova_etal_2018_TableS5
 Bathyergus suillus,Cerebellum_Vol.mm3,683,Kverkova_etal_2018_TableS1
-Bathyergus suillus,Cerebellum_Vol.mm3.1,82,Kverkova_etal_2018_TableS1
 Bathyergus suillus,CerebralCortex_N.n,43480000,Kverkova_etal_2018_TableS5
-Bathyergus suillus,CerebralCortex_N.n.1,5110000,Kverkova_etal_2018_TableS5
 Bathyergus suillus,EntorhinalCortex_Vol.mm3,96,Kverkova_etal_2018_TableS1
-Bathyergus suillus,EntorhinalCortex_Vol.mm3.1,3,Kverkova_etal_2018_TableS1
 Bathyergus suillus,Hippocampus_Vol.mm3,194,Kverkova_etal_2018_TableS1
-Bathyergus suillus,Hippocampus_Vol.mm3.1,1,Kverkova_etal_2018_TableS1
 Bathyergus suillus,Hypothalamus_Vol.mm3,85,Kverkova_etal_2018_TableS1
-Bathyergus suillus,Hypothalamus_Vol.mm3.1,7,Kverkova_etal_2018_TableS1
 Bathyergus suillus,Medulla_Vol.mm3,368,Kverkova_etal_2018_TableS1
-Bathyergus suillus,Medulla_Vol.mm3.1,30,Kverkova_etal_2018_TableS1
 Bathyergus suillus,MesencephalonMedulla_N.n,8670000,Kverkova_etal_2018_TableS5
-Bathyergus suillus,MesencephalonMedulla_N.n.1,600000,Kverkova_etal_2018_TableS5
 Bathyergus suillus,Neocortex_Vol.mm3,1011,Kverkova_etal_2018_TableS1
-Bathyergus suillus,Neocortex_Vol.mm3.1,21,Kverkova_etal_2018_TableS1
 Bathyergus suillus,OlfactoryBulb_N.n,23810000,Kverkova_etal_2018_TableS5
-Bathyergus suillus,OlfactoryBulb_N.n.1,2960000,Kverkova_etal_2018_TableS5
 Bathyergus suillus,OlfactoryBulb_Vol.mm3,132,Kverkova_etal_2018_TableS1
-Bathyergus suillus,OlfactoryBulb_Vol.mm3.1,14,Kverkova_etal_2018_TableS1
 Bathyergus suillus,OlfactoryCortices_Vol.mm3,173,Kverkova_etal_2018_TableS1
-Bathyergus suillus,OlfactoryCortices_Vol.mm3.1,15,Kverkova_etal_2018_TableS1
 Bathyergus suillus,Septum_Vol.mm3,35,Kverkova_etal_2018_TableS1
-Bathyergus suillus,Septum_Vol.mm3.1,7,Kverkova_etal_2018_TableS1
 Bathyergus suillus,Striatum_Vol.mm3,249,Kverkova_etal_2018_TableS1
-Bathyergus suillus,Striatum_Vol.mm3.1,20,Kverkova_etal_2018_TableS1
 Bathyergus suillus,SubcorticalForebrain_N.n,16420000,Kverkova_etal_2018_TableS5
-Bathyergus suillus,SubcorticalForebrain_N.n.1,750000,Kverkova_etal_2018_TableS5
 Bathyergus suillus,Tectum_Vol.mm3,69,Kverkova_etal_2018_TableS1
-Bathyergus suillus,Tectum_Vol.mm3.1,6,Kverkova_etal_2018_TableS1
 Bathyergus suillus,Tegmentum_Vol.mm3,156,Kverkova_etal_2018_TableS1
-Bathyergus suillus,Tegmentum_Vol.mm3.1,18,Kverkova_etal_2018_TableS1
 Bathyergus suillus,Thalamus_Vol.mm3,173,Kverkova_etal_2018_TableS1
-Bathyergus suillus,Thalamus_Vol.mm3.1,15,Kverkova_etal_2018_TableS1
 Bathyergus suillus,WholeBrainOlfactoryBulb_Mass.g,3.78,Kverkova_etal_2018_TableS1
-Bathyergus suillus,WholeBrainOlfactoryBulb_Mass.g.1,0.14,Kverkova_etal_2018_TableS1
 Bathyergus suillus,WholeBrainOlfactoryBulb_N.n,361290000,Kverkova_etal_2018_TableS5
-Bathyergus suillus,WholeBrainOlfactoryBulb_N.n.1,24400000,Kverkova_etal_2018_TableS5
 Bathyergus suillus,WholeBrain_N.n,337480000,Kverkova_etal_2018_TableS5
 Blarina brevicauda,Body_Mass.g,16.2,HerculanoHouzel_etal_2015_Table5
 Blarina brevicauda,Cerebellum_C.n,37840000,HerculanoHouzel_etal_2015_Table2
@@ -377,139 +355,73 @@ Condylura cristata,WholeBrain_Mass.g,0.802,HerculanoHouzel_etal_2015_Table5
 Condylura cristata,WholeBrain_N.n,131330000,HerculanoHouzel_etal_2015_Table5
 Condylura cristata,WholeBrain_O.n,83040000,HerculanoHouzel_etal_2015_Table5
 Cryptomys hottentotus,Amygdala_Vol.mm3,14,Kverkova_etal_2018_TableS1
-Cryptomys hottentotus,Amygdala_Vol.mm3.1,3,Kverkova_etal_2018_TableS1
 Cryptomys hottentotus,Body_Mass.g,68.58,Kverkova_etal_2018_TableS1
-Cryptomys hottentotus,Body_Mass.g.1,12.36,Kverkova_etal_2018_TableS1
 Cryptomys hottentotus,Cerebellum_N.n,68810000,Kverkova_etal_2018_TableS5
-Cryptomys hottentotus,Cerebellum_N.n.1,9020000,Kverkova_etal_2018_TableS5
 Cryptomys hottentotus,Cerebellum_Vol.mm3,121,Kverkova_etal_2018_TableS1
-Cryptomys hottentotus,Cerebellum_Vol.mm3.1,19,Kverkova_etal_2018_TableS1
 Cryptomys hottentotus,CerebralCortex_N.n,11730000,Kverkova_etal_2018_TableS5
-Cryptomys hottentotus,CerebralCortex_N.n.1,220000,Kverkova_etal_2018_TableS5
 Cryptomys hottentotus,EntorhinalCortex_Vol.mm3,25,Kverkova_etal_2018_TableS1
-Cryptomys hottentotus,EntorhinalCortex_Vol.mm3.1,3,Kverkova_etal_2018_TableS1
 Cryptomys hottentotus,Hippocampus_Vol.mm3,59,Kverkova_etal_2018_TableS1
-Cryptomys hottentotus,Hippocampus_Vol.mm3.1,8,Kverkova_etal_2018_TableS1
 Cryptomys hottentotus,Hypothalamus_Vol.mm3,25,Kverkova_etal_2018_TableS1
-Cryptomys hottentotus,Hypothalamus_Vol.mm3.1,6,Kverkova_etal_2018_TableS1
 Cryptomys hottentotus,Medulla_Vol.mm3,79,Kverkova_etal_2018_TableS1
-Cryptomys hottentotus,Medulla_Vol.mm3.1,2,Kverkova_etal_2018_TableS1
 Cryptomys hottentotus,MesencephalonMedulla_N.n,3170000,Kverkova_etal_2018_TableS5
-Cryptomys hottentotus,MesencephalonMedulla_N.n.1,360000,Kverkova_etal_2018_TableS5
 Cryptomys hottentotus,Neocortex_Vol.mm3,183,Kverkova_etal_2018_TableS1
-Cryptomys hottentotus,Neocortex_Vol.mm3.1,30,Kverkova_etal_2018_TableS1
 Cryptomys hottentotus,OlfactoryBulb_N.n,7990000,Kverkova_etal_2018_TableS5
-Cryptomys hottentotus,OlfactoryBulb_N.n.1,460000,Kverkova_etal_2018_TableS5
 Cryptomys hottentotus,OlfactoryBulb_Vol.mm3,37,Kverkova_etal_2018_TableS1
-Cryptomys hottentotus,OlfactoryBulb_Vol.mm3.1,4,Kverkova_etal_2018_TableS1
 Cryptomys hottentotus,OlfactoryCortices_Vol.mm3,50,Kverkova_etal_2018_TableS1
-Cryptomys hottentotus,OlfactoryCortices_Vol.mm3.1,8,Kverkova_etal_2018_TableS1
 Cryptomys hottentotus,Septum_Vol.mm3,11,Kverkova_etal_2018_TableS1
-Cryptomys hottentotus,Septum_Vol.mm3.1,1,Kverkova_etal_2018_TableS1
 Cryptomys hottentotus,Striatum_Vol.mm3,59,Kverkova_etal_2018_TableS1
-Cryptomys hottentotus,Striatum_Vol.mm3.1,7,Kverkova_etal_2018_TableS1
 Cryptomys hottentotus,SubcorticalForebrain_N.n,4550000,Kverkova_etal_2018_TableS5
-Cryptomys hottentotus,SubcorticalForebrain_N.n.1,690000,Kverkova_etal_2018_TableS5
 Cryptomys hottentotus,Tectum_Vol.mm3,17,Kverkova_etal_2018_TableS1
-Cryptomys hottentotus,Tectum_Vol.mm3.1,2,Kverkova_etal_2018_TableS1
 Cryptomys hottentotus,Tegmentum_Vol.mm3,34,Kverkova_etal_2018_TableS1
-Cryptomys hottentotus,Tegmentum_Vol.mm3.1,4,Kverkova_etal_2018_TableS1
 Cryptomys hottentotus,Thalamus_Vol.mm3,39,Kverkova_etal_2018_TableS1
-Cryptomys hottentotus,Thalamus_Vol.mm3.1,3,Kverkova_etal_2018_TableS1
 Cryptomys hottentotus,WholeBrainOlfactoryBulb_Mass.g,0.85,Kverkova_etal_2018_TableS1
-Cryptomys hottentotus,WholeBrainOlfactoryBulb_Mass.g.1,0.06,Kverkova_etal_2018_TableS1
 Cryptomys hottentotus,WholeBrainOlfactoryBulb_N.n,96240000,Kverkova_etal_2018_TableS5
-Cryptomys hottentotus,WholeBrainOlfactoryBulb_N.n.1,9650000,Kverkova_etal_2018_TableS5
 Cryptomys hottentotus,WholeBrain_N.n,88250000,Kverkova_etal_2018_TableS5
 Cryptomys hottentotus natalensis,Amygdala_Vol.mm3,20,Kverkova_etal_2018_TableS1
-Cryptomys hottentotus natalensis,Amygdala_Vol.mm3.1,4,Kverkova_etal_2018_TableS1
 Cryptomys hottentotus natalensis,Body_Mass.g,99.02,Kverkova_etal_2018_TableS1
-Cryptomys hottentotus natalensis,Body_Mass.g.1,33.43,Kverkova_etal_2018_TableS1
 Cryptomys hottentotus natalensis,Cerebellum_N.n,109750000,Kverkova_etal_2018_TableS5
-Cryptomys hottentotus natalensis,Cerebellum_N.n.1,8750000,Kverkova_etal_2018_TableS5
 Cryptomys hottentotus natalensis,Cerebellum_Vol.mm3,175,Kverkova_etal_2018_TableS1
-Cryptomys hottentotus natalensis,Cerebellum_Vol.mm3.1,19,Kverkova_etal_2018_TableS1
 Cryptomys hottentotus natalensis,CerebralCortex_N.n,17460000,Kverkova_etal_2018_TableS5
-Cryptomys hottentotus natalensis,CerebralCortex_N.n.1,1390000,Kverkova_etal_2018_TableS5
 Cryptomys hottentotus natalensis,EntorhinalCortex_Vol.mm3,43,Kverkova_etal_2018_TableS1
-Cryptomys hottentotus natalensis,EntorhinalCortex_Vol.mm3.1,6,Kverkova_etal_2018_TableS1
 Cryptomys hottentotus natalensis,Hippocampus_Vol.mm3,80,Kverkova_etal_2018_TableS1
-Cryptomys hottentotus natalensis,Hippocampus_Vol.mm3.1,13,Kverkova_etal_2018_TableS1
 Cryptomys hottentotus natalensis,Hypothalamus_Vol.mm3,31,Kverkova_etal_2018_TableS1
-Cryptomys hottentotus natalensis,Hypothalamus_Vol.mm3.1,3,Kverkova_etal_2018_TableS1
 Cryptomys hottentotus natalensis,Medulla_Vol.mm3,97,Kverkova_etal_2018_TableS1
-Cryptomys hottentotus natalensis,Medulla_Vol.mm3.1,18,Kverkova_etal_2018_TableS1
 Cryptomys hottentotus natalensis,MesencephalonMedulla_N.n,4110000,Kverkova_etal_2018_TableS5
-Cryptomys hottentotus natalensis,MesencephalonMedulla_N.n.1,140000,Kverkova_etal_2018_TableS5
 Cryptomys hottentotus natalensis,Neocortex_Vol.mm3,321,Kverkova_etal_2018_TableS1
-Cryptomys hottentotus natalensis,Neocortex_Vol.mm3.1,26,Kverkova_etal_2018_TableS1
 Cryptomys hottentotus natalensis,OlfactoryBulb_N.n,11850000,Kverkova_etal_2018_TableS5
-Cryptomys hottentotus natalensis,OlfactoryBulb_N.n.1,290000,Kverkova_etal_2018_TableS5
 Cryptomys hottentotus natalensis,OlfactoryBulb_Vol.mm3,55,Kverkova_etal_2018_TableS1
-Cryptomys hottentotus natalensis,OlfactoryBulb_Vol.mm3.1,12,Kverkova_etal_2018_TableS1
 Cryptomys hottentotus natalensis,OlfactoryCortices_Vol.mm3,76,Kverkova_etal_2018_TableS1
-Cryptomys hottentotus natalensis,OlfactoryCortices_Vol.mm3.1,12,Kverkova_etal_2018_TableS1
 Cryptomys hottentotus natalensis,Septum_Vol.mm3,14,Kverkova_etal_2018_TableS1
-Cryptomys hottentotus natalensis,Septum_Vol.mm3.1,3,Kverkova_etal_2018_TableS1
 Cryptomys hottentotus natalensis,Striatum_Vol.mm3,84,Kverkova_etal_2018_TableS1
-Cryptomys hottentotus natalensis,Striatum_Vol.mm3.1,11,Kverkova_etal_2018_TableS1
 Cryptomys hottentotus natalensis,SubcorticalForebrain_N.n,6820000,Kverkova_etal_2018_TableS5
-Cryptomys hottentotus natalensis,SubcorticalForebrain_N.n.1,810000,Kverkova_etal_2018_TableS5
 Cryptomys hottentotus natalensis,Tectum_Vol.mm3,24,Kverkova_etal_2018_TableS1
-Cryptomys hottentotus natalensis,Tectum_Vol.mm3.1,6,Kverkova_etal_2018_TableS1
 Cryptomys hottentotus natalensis,Tegmentum_Vol.mm3,42,Kverkova_etal_2018_TableS1
-Cryptomys hottentotus natalensis,Tegmentum_Vol.mm3.1,6,Kverkova_etal_2018_TableS1
 Cryptomys hottentotus natalensis,Thalamus_Vol.mm3,54,Kverkova_etal_2018_TableS1
-Cryptomys hottentotus natalensis,Thalamus_Vol.mm3.1,6,Kverkova_etal_2018_TableS1
 Cryptomys hottentotus natalensis,WholeBrainOlfactoryBulb_Mass.g,1.24,Kverkova_etal_2018_TableS1
-Cryptomys hottentotus natalensis,WholeBrainOlfactoryBulb_Mass.g.1,0.11,Kverkova_etal_2018_TableS1
 Cryptomys hottentotus natalensis,WholeBrainOlfactoryBulb_N.n,149980000,Kverkova_etal_2018_TableS5
-Cryptomys hottentotus natalensis,WholeBrainOlfactoryBulb_N.n.1,8500000,Kverkova_etal_2018_TableS5
 Cryptomys hottentotus natalensis,WholeBrain_N.n,138130000,Kverkova_etal_2018_TableS5
 Cryptomys hottentotus pretoriae,Amygdala_Vol.mm3,20,Kverkova_etal_2018_TableS1
-Cryptomys hottentotus pretoriae,Amygdala_Vol.mm3.1,5,Kverkova_etal_2018_TableS1
 Cryptomys hottentotus pretoriae,Body_Mass.g,104.27,Kverkova_etal_2018_TableS1
-Cryptomys hottentotus pretoriae,Body_Mass.g.1,21.31,Kverkova_etal_2018_TableS1
 Cryptomys hottentotus pretoriae,Cerebellum_N.n,120580000,Kverkova_etal_2018_TableS5
-Cryptomys hottentotus pretoriae,Cerebellum_N.n.1,16690000,Kverkova_etal_2018_TableS5
 Cryptomys hottentotus pretoriae,Cerebellum_Vol.mm3,188,Kverkova_etal_2018_TableS1
-Cryptomys hottentotus pretoriae,Cerebellum_Vol.mm3.1,14,Kverkova_etal_2018_TableS1
 Cryptomys hottentotus pretoriae,CerebralCortex_N.n,20560000,Kverkova_etal_2018_TableS5
-Cryptomys hottentotus pretoriae,CerebralCortex_N.n.1,900000,Kverkova_etal_2018_TableS5
 Cryptomys hottentotus pretoriae,EntorhinalCortex_Vol.mm3,46,Kverkova_etal_2018_TableS1
-Cryptomys hottentotus pretoriae,EntorhinalCortex_Vol.mm3.1,4,Kverkova_etal_2018_TableS1
 Cryptomys hottentotus pretoriae,Hippocampus_Vol.mm3,95,Kverkova_etal_2018_TableS1
-Cryptomys hottentotus pretoriae,Hippocampus_Vol.mm3.1,14,Kverkova_etal_2018_TableS1
 Cryptomys hottentotus pretoriae,Hypothalamus_Vol.mm3,33,Kverkova_etal_2018_TableS1
-Cryptomys hottentotus pretoriae,Hypothalamus_Vol.mm3.1,3,Kverkova_etal_2018_TableS1
 Cryptomys hottentotus pretoriae,Medulla_Vol.mm3,119,Kverkova_etal_2018_TableS1
-Cryptomys hottentotus pretoriae,Medulla_Vol.mm3.1,15,Kverkova_etal_2018_TableS1
 Cryptomys hottentotus pretoriae,MesencephalonMedulla_N.n,6030000,Kverkova_etal_2018_TableS5
-Cryptomys hottentotus pretoriae,MesencephalonMedulla_N.n.1,350000,Kverkova_etal_2018_TableS5
 Cryptomys hottentotus pretoriae,Neocortex_Vol.mm3,315,Kverkova_etal_2018_TableS1
-Cryptomys hottentotus pretoriae,Neocortex_Vol.mm3.1,39,Kverkova_etal_2018_TableS1
 Cryptomys hottentotus pretoriae,OlfactoryBulb_N.n,12070000,Kverkova_etal_2018_TableS5
-Cryptomys hottentotus pretoriae,OlfactoryBulb_N.n.1,1410000,Kverkova_etal_2018_TableS5
 Cryptomys hottentotus pretoriae,OlfactoryBulb_Vol.mm3,57,Kverkova_etal_2018_TableS1
-Cryptomys hottentotus pretoriae,OlfactoryBulb_Vol.mm3.1,9,Kverkova_etal_2018_TableS1
 Cryptomys hottentotus pretoriae,OlfactoryCortices_Vol.mm3,76,Kverkova_etal_2018_TableS1
-Cryptomys hottentotus pretoriae,OlfactoryCortices_Vol.mm3.1,2,Kverkova_etal_2018_TableS1
 Cryptomys hottentotus pretoriae,Septum_Vol.mm3,15,Kverkova_etal_2018_TableS1
-Cryptomys hottentotus pretoriae,Septum_Vol.mm3.1,2,Kverkova_etal_2018_TableS1
 Cryptomys hottentotus pretoriae,Striatum_Vol.mm3,85,Kverkova_etal_2018_TableS1
-Cryptomys hottentotus pretoriae,Striatum_Vol.mm3.1,9,Kverkova_etal_2018_TableS1
 Cryptomys hottentotus pretoriae,SubcorticalForebrain_N.n,9920000,Kverkova_etal_2018_TableS5
-Cryptomys hottentotus pretoriae,SubcorticalForebrain_N.n.1,620000,Kverkova_etal_2018_TableS5
 Cryptomys hottentotus pretoriae,Tectum_Vol.mm3,25,Kverkova_etal_2018_TableS1
-Cryptomys hottentotus pretoriae,Tectum_Vol.mm3.1,4,Kverkova_etal_2018_TableS1
 Cryptomys hottentotus pretoriae,Tegmentum_Vol.mm3,47,Kverkova_etal_2018_TableS1
-Cryptomys hottentotus pretoriae,Tegmentum_Vol.mm3.1,4,Kverkova_etal_2018_TableS1
 Cryptomys hottentotus pretoriae,Thalamus_Vol.mm3,57,Kverkova_etal_2018_TableS1
-Cryptomys hottentotus pretoriae,Thalamus_Vol.mm3.1,8,Kverkova_etal_2018_TableS1
 Cryptomys hottentotus pretoriae,WholeBrainOlfactoryBulb_Mass.g,1.35,Kverkova_etal_2018_TableS1
-Cryptomys hottentotus pretoriae,WholeBrainOlfactoryBulb_Mass.g.1,0.11,Kverkova_etal_2018_TableS1
 Cryptomys hottentotus pretoriae,WholeBrainOlfactoryBulb_N.n,169160000,Kverkova_etal_2018_TableS5
-Cryptomys hottentotus pretoriae,WholeBrainOlfactoryBulb_N.n.1,16230000,Kverkova_etal_2018_TableS5
 Cryptomys hottentotus pretoriae,WholeBrain_N.n,157090000,Kverkova_etal_2018_TableS5
 Cynomys sp.,Body_Mass.g,1515,HerculanoHouzel_etal_2015_Table5
 Cynomys sp.,Cerebellum_C.n,416240000,HerculanoHouzel_etal_2015_Table2
@@ -811,229 +723,119 @@ Felis catus,WholeBrain_N.n,1215210000,JardimMesseder_etal_2017_Table1
 Felis catus,WholeBrain_O.n,1728790000,JardimMesseder_etal_2017_Table1
 Felis catus,WholeBrain_O.p.N,1.423,JardimMesseder_etal_2017_Table1
 Fukomys anselli,Amygdala_Vol.mm3,26,Kverkova_etal_2018_TableS1
-Fukomys anselli,Amygdala_Vol.mm3.1,5,Kverkova_etal_2018_TableS1
 Fukomys anselli,Body_Mass.g,93.45,Kverkova_etal_2018_TableS1
-Fukomys anselli,Body_Mass.g.1,20.47,Kverkova_etal_2018_TableS1
 Fukomys anselli,Cerebellum_N.n,75440000,Kverkova_etal_2018_TableS5
-Fukomys anselli,Cerebellum_N.n.1,8900000,Kverkova_etal_2018_TableS5
 Fukomys anselli,Cerebellum_Vol.mm3,200,Kverkova_etal_2018_TableS1
-Fukomys anselli,Cerebellum_Vol.mm3.1,52,Kverkova_etal_2018_TableS1
 Fukomys anselli,CerebralCortex_N.n,9730000,Kverkova_etal_2018_TableS5
-Fukomys anselli,CerebralCortex_N.n.1,2230000,Kverkova_etal_2018_TableS5
 Fukomys anselli,EntorhinalCortex_Vol.mm3,38,Kverkova_etal_2018_TableS1
-Fukomys anselli,EntorhinalCortex_Vol.mm3.1,4,Kverkova_etal_2018_TableS1
 Fukomys anselli,Hippocampus_Vol.mm3,82,Kverkova_etal_2018_TableS1
-Fukomys anselli,Hippocampus_Vol.mm3.1,23,Kverkova_etal_2018_TableS1
 Fukomys anselli,Hypothalamus_Vol.mm3,35,Kverkova_etal_2018_TableS1
-Fukomys anselli,Hypothalamus_Vol.mm3.1,5,Kverkova_etal_2018_TableS1
 Fukomys anselli,Medulla_Vol.mm3,132,Kverkova_etal_2018_TableS1
-Fukomys anselli,Medulla_Vol.mm3.1,32,Kverkova_etal_2018_TableS1
 Fukomys anselli,MesencephalonMedulla_N.n,3900000,Kverkova_etal_2018_TableS5
-Fukomys anselli,MesencephalonMedulla_N.n.1,1160000,Kverkova_etal_2018_TableS5
 Fukomys anselli,Neocortex_Vol.mm3,291,Kverkova_etal_2018_TableS1
-Fukomys anselli,Neocortex_Vol.mm3.1,40,Kverkova_etal_2018_TableS1
 Fukomys anselli,OlfactoryBulb_N.n,8880000,Kverkova_etal_2018_TableS5
-Fukomys anselli,OlfactoryBulb_N.n.1,640000,Kverkova_etal_2018_TableS5
 Fukomys anselli,OlfactoryBulb_Vol.mm3,55,Kverkova_etal_2018_TableS1
-Fukomys anselli,OlfactoryBulb_Vol.mm3.1,15,Kverkova_etal_2018_TableS1
 Fukomys anselli,OlfactoryCortices_Vol.mm3,71,Kverkova_etal_2018_TableS1
-Fukomys anselli,OlfactoryCortices_Vol.mm3.1,9,Kverkova_etal_2018_TableS1
 Fukomys anselli,Septum_Vol.mm3,15,Kverkova_etal_2018_TableS1
-Fukomys anselli,Septum_Vol.mm3.1,3,Kverkova_etal_2018_TableS1
 Fukomys anselli,Striatum_Vol.mm3,84,Kverkova_etal_2018_TableS1
-Fukomys anselli,Striatum_Vol.mm3.1,11,Kverkova_etal_2018_TableS1
 Fukomys anselli,SubcorticalForebrain_N.n,4860000,Kverkova_etal_2018_TableS5
-Fukomys anselli,SubcorticalForebrain_N.n.1,900000,Kverkova_etal_2018_TableS5
 Fukomys anselli,Tectum_Vol.mm3,32,Kverkova_etal_2018_TableS1
-Fukomys anselli,Tectum_Vol.mm3.1,6,Kverkova_etal_2018_TableS1
 Fukomys anselli,Tegmentum_Vol.mm3,60,Kverkova_etal_2018_TableS1
-Fukomys anselli,Tegmentum_Vol.mm3.1,19,Kverkova_etal_2018_TableS1
 Fukomys anselli,Thalamus_Vol.mm3,61,Kverkova_etal_2018_TableS1
-Fukomys anselli,Thalamus_Vol.mm3.1,3,Kverkova_etal_2018_TableS1
 Fukomys anselli,WholeBrainOlfactoryBulb_Mass.g,1.25,Kverkova_etal_2018_TableS1
-Fukomys anselli,WholeBrainOlfactoryBulb_Mass.g.1,0.13,Kverkova_etal_2018_TableS1
 Fukomys anselli,WholeBrainOlfactoryBulb_N.n,102820000,Kverkova_etal_2018_TableS5
-Fukomys anselli,WholeBrainOlfactoryBulb_N.n.1,12280000,Kverkova_etal_2018_TableS5
 Fukomys anselli,WholeBrain_N.n,93940000,Kverkova_etal_2018_TableS5
 Fukomys damarensis,Amygdala_Vol.mm3,22,Kverkova_etal_2018_TableS1
-Fukomys damarensis,Amygdala_Vol.mm3.1,2,Kverkova_etal_2018_TableS1
 Fukomys damarensis,Body_Mass.g,110.53,Kverkova_etal_2018_TableS1
-Fukomys damarensis,Body_Mass.g.1,30.29,Kverkova_etal_2018_TableS1
 Fukomys damarensis,Cerebellum_N.n,129960000,Kverkova_etal_2018_TableS5
-Fukomys damarensis,Cerebellum_N.n.1,18150000,Kverkova_etal_2018_TableS5
 Fukomys damarensis,Cerebellum_Vol.mm3,201,Kverkova_etal_2018_TableS1
-Fukomys damarensis,Cerebellum_Vol.mm3.1,46,Kverkova_etal_2018_TableS1
 Fukomys damarensis,CerebralCortex_N.n,21270000,Kverkova_etal_2018_TableS5
-Fukomys damarensis,CerebralCortex_N.n.1,590000,Kverkova_etal_2018_TableS5
 Fukomys damarensis,EntorhinalCortex_Vol.mm3,44,Kverkova_etal_2018_TableS1
-Fukomys damarensis,EntorhinalCortex_Vol.mm3.1,6,Kverkova_etal_2018_TableS1
 Fukomys damarensis,Hippocampus_Vol.mm3,95,Kverkova_etal_2018_TableS1
-Fukomys damarensis,Hippocampus_Vol.mm3.1,12,Kverkova_etal_2018_TableS1
 Fukomys damarensis,Hypothalamus_Vol.mm3,39,Kverkova_etal_2018_TableS1
-Fukomys damarensis,Hypothalamus_Vol.mm3.1,7,Kverkova_etal_2018_TableS1
 Fukomys damarensis,Medulla_Vol.mm3,110,Kverkova_etal_2018_TableS1
-Fukomys damarensis,Medulla_Vol.mm3.1,9,Kverkova_etal_2018_TableS1
 Fukomys damarensis,MesencephalonMedulla_N.n,4940000,Kverkova_etal_2018_TableS5
-Fukomys damarensis,MesencephalonMedulla_N.n.1,1100000,Kverkova_etal_2018_TableS5
 Fukomys damarensis,Neocortex_Vol.mm3,311,Kverkova_etal_2018_TableS1
-Fukomys damarensis,Neocortex_Vol.mm3.1,60,Kverkova_etal_2018_TableS1
 Fukomys damarensis,OlfactoryBulb_N.n,12550000,Kverkova_etal_2018_TableS5
-Fukomys damarensis,OlfactoryBulb_N.n.1,1820000,Kverkova_etal_2018_TableS5
 Fukomys damarensis,OlfactoryBulb_Vol.mm3,59,Kverkova_etal_2018_TableS1
-Fukomys damarensis,OlfactoryBulb_Vol.mm3.1,8,Kverkova_etal_2018_TableS1
 Fukomys damarensis,OlfactoryCortices_Vol.mm3,88,Kverkova_etal_2018_TableS1
-Fukomys damarensis,OlfactoryCortices_Vol.mm3.1,8,Kverkova_etal_2018_TableS1
 Fukomys damarensis,Septum_Vol.mm3,15,Kverkova_etal_2018_TableS1
-Fukomys damarensis,Septum_Vol.mm3.1,1,Kverkova_etal_2018_TableS1
 Fukomys damarensis,Striatum_Vol.mm3,102,Kverkova_etal_2018_TableS1
-Fukomys damarensis,Striatum_Vol.mm3.1,17,Kverkova_etal_2018_TableS1
 Fukomys damarensis,SubcorticalForebrain_N.n,9580000,Kverkova_etal_2018_TableS5
-Fukomys damarensis,SubcorticalForebrain_N.n.1,1690000,Kverkova_etal_2018_TableS5
 Fukomys damarensis,Tectum_Vol.mm3,27,Kverkova_etal_2018_TableS1
-Fukomys damarensis,Tectum_Vol.mm3.1,4,Kverkova_etal_2018_TableS1
 Fukomys damarensis,Tegmentum_Vol.mm3,56,Kverkova_etal_2018_TableS1
-Fukomys damarensis,Tegmentum_Vol.mm3.1,14,Kverkova_etal_2018_TableS1
 Fukomys damarensis,Thalamus_Vol.mm3,64,Kverkova_etal_2018_TableS1
-Fukomys damarensis,Thalamus_Vol.mm3.1,7,Kverkova_etal_2018_TableS1
 Fukomys damarensis,WholeBrainOlfactoryBulb_Mass.g,1.39,Kverkova_etal_2018_TableS1
-Fukomys damarensis,WholeBrainOlfactoryBulb_Mass.g.1,0.14,Kverkova_etal_2018_TableS1
 Fukomys damarensis,WholeBrainOlfactoryBulb_N.n,178300000,Kverkova_etal_2018_TableS5
-Fukomys damarensis,WholeBrainOlfactoryBulb_N.n.1,19080000,Kverkova_etal_2018_TableS5
 Fukomys damarensis,WholeBrain_N.n,165750000,Kverkova_etal_2018_TableS5
 Fukomys darlingi,Amygdala_Vol.mm3,16,Kverkova_etal_2018_TableS1
-Fukomys darlingi,Amygdala_Vol.mm3.1,2,Kverkova_etal_2018_TableS1
 Fukomys darlingi,Body_Mass.g,115.19,Kverkova_etal_2018_TableS1
-Fukomys darlingi,Body_Mass.g.1,44.83,Kverkova_etal_2018_TableS1
 Fukomys darlingi,Cerebellum_N.n,84910000,Kverkova_etal_2018_TableS5
-Fukomys darlingi,Cerebellum_N.n.1,3950000,Kverkova_etal_2018_TableS5
 Fukomys darlingi,Cerebellum_Vol.mm3,156,Kverkova_etal_2018_TableS1
-Fukomys darlingi,Cerebellum_Vol.mm3.1,27,Kverkova_etal_2018_TableS1
 Fukomys darlingi,CerebralCortex_N.n,12490000,Kverkova_etal_2018_TableS5
-Fukomys darlingi,CerebralCortex_N.n.1,530000,Kverkova_etal_2018_TableS5
 Fukomys darlingi,EntorhinalCortex_Vol.mm3,41,Kverkova_etal_2018_TableS1
-Fukomys darlingi,EntorhinalCortex_Vol.mm3.1,10,Kverkova_etal_2018_TableS1
 Fukomys darlingi,Hippocampus_Vol.mm3,76,Kverkova_etal_2018_TableS1
-Fukomys darlingi,Hippocampus_Vol.mm3.1,4,Kverkova_etal_2018_TableS1
 Fukomys darlingi,Hypothalamus_Vol.mm3,29,Kverkova_etal_2018_TableS1
-Fukomys darlingi,Hypothalamus_Vol.mm3.1,1,Kverkova_etal_2018_TableS1
 Fukomys darlingi,Medulla_Vol.mm3,101,Kverkova_etal_2018_TableS1
-Fukomys darlingi,Medulla_Vol.mm3.1,6,Kverkova_etal_2018_TableS1
 Fukomys darlingi,MesencephalonMedulla_N.n,3140000,Kverkova_etal_2018_TableS5
-Fukomys darlingi,MesencephalonMedulla_N.n.1,150000,Kverkova_etal_2018_TableS5
 Fukomys darlingi,Neocortex_Vol.mm3,271,Kverkova_etal_2018_TableS1
-Fukomys darlingi,Neocortex_Vol.mm3.1,19,Kverkova_etal_2018_TableS1
 Fukomys darlingi,OlfactoryBulb_N.n,7600000,Kverkova_etal_2018_TableS5
-Fukomys darlingi,OlfactoryBulb_N.n.1,1250000,Kverkova_etal_2018_TableS5
 Fukomys darlingi,OlfactoryBulb_Vol.mm3,43,Kverkova_etal_2018_TableS1
-Fukomys darlingi,OlfactoryBulb_Vol.mm3.1,10,Kverkova_etal_2018_TableS1
 Fukomys darlingi,OlfactoryCortices_Vol.mm3,77,Kverkova_etal_2018_TableS1
-Fukomys darlingi,OlfactoryCortices_Vol.mm3.1,9,Kverkova_etal_2018_TableS1
 Fukomys darlingi,Septum_Vol.mm3,16,Kverkova_etal_2018_TableS1
-Fukomys darlingi,Septum_Vol.mm3.1,3,Kverkova_etal_2018_TableS1
 Fukomys darlingi,Striatum_Vol.mm3,99,Kverkova_etal_2018_TableS1
-Fukomys darlingi,Striatum_Vol.mm3.1,16,Kverkova_etal_2018_TableS1
 Fukomys darlingi,SubcorticalForebrain_N.n,5190000,Kverkova_etal_2018_TableS5
-Fukomys darlingi,SubcorticalForebrain_N.n.1,810000,Kverkova_etal_2018_TableS5
 Fukomys darlingi,Tectum_Vol.mm3,25,Kverkova_etal_2018_TableS1
-Fukomys darlingi,Tectum_Vol.mm3.1,1,Kverkova_etal_2018_TableS1
 Fukomys darlingi,Tegmentum_Vol.mm3,45,Kverkova_etal_2018_TableS1
-Fukomys darlingi,Tegmentum_Vol.mm3.1,5,Kverkova_etal_2018_TableS1
 Fukomys darlingi,Thalamus_Vol.mm3,51,Kverkova_etal_2018_TableS1
-Fukomys darlingi,Thalamus_Vol.mm3.1,7,Kverkova_etal_2018_TableS1
 Fukomys darlingi,WholeBrainOlfactoryBulb_Mass.g,1.23,Kverkova_etal_2018_TableS1
-Fukomys darlingi,WholeBrainOlfactoryBulb_Mass.g.1,0.12,Kverkova_etal_2018_TableS1
 Fukomys darlingi,WholeBrainOlfactoryBulb_N.n,113350000,Kverkova_etal_2018_TableS5
-Fukomys darlingi,WholeBrainOlfactoryBulb_N.n.1,3790000,Kverkova_etal_2018_TableS5
 Fukomys darlingi,WholeBrain_N.n,105750000,Kverkova_etal_2018_TableS5
 Fukomys mechowii,Amygdala_Vol.mm3,35,Kverkova_etal_2018_TableS1
-Fukomys mechowii,Amygdala_Vol.mm3.1,10,Kverkova_etal_2018_TableS1
 Fukomys mechowii,Body_Mass.g,270.16,Kverkova_etal_2018_TableS1
-Fukomys mechowii,Body_Mass.g.1,52.85,Kverkova_etal_2018_TableS1
 Fukomys mechowii,Cerebellum_N.n,122640000,Kverkova_etal_2018_TableS5
-Fukomys mechowii,Cerebellum_N.n.1,14340000,Kverkova_etal_2018_TableS5
 Fukomys mechowii,Cerebellum_Vol.mm3,391,Kverkova_etal_2018_TableS1
-Fukomys mechowii,Cerebellum_Vol.mm3.1,58,Kverkova_etal_2018_TableS1
 Fukomys mechowii,CerebralCortex_N.n,23320000,Kverkova_etal_2018_TableS5
-Fukomys mechowii,CerebralCortex_N.n.1,940000,Kverkova_etal_2018_TableS5
 Fukomys mechowii,EntorhinalCortex_Vol.mm3,71,Kverkova_etal_2018_TableS1
-Fukomys mechowii,EntorhinalCortex_Vol.mm3.1,13,Kverkova_etal_2018_TableS1
 Fukomys mechowii,Hippocampus_Vol.mm3,137,Kverkova_etal_2018_TableS1
-Fukomys mechowii,Hippocampus_Vol.mm3.1,11,Kverkova_etal_2018_TableS1
 Fukomys mechowii,Hypothalamus_Vol.mm3,60,Kverkova_etal_2018_TableS1
-Fukomys mechowii,Hypothalamus_Vol.mm3.1,7,Kverkova_etal_2018_TableS1
 Fukomys mechowii,Medulla_Vol.mm3,242,Kverkova_etal_2018_TableS1
-Fukomys mechowii,Medulla_Vol.mm3.1,87,Kverkova_etal_2018_TableS1
 Fukomys mechowii,MesencephalonMedulla_N.n,4750000,Kverkova_etal_2018_TableS5
-Fukomys mechowii,MesencephalonMedulla_N.n.1,980000,Kverkova_etal_2018_TableS5
 Fukomys mechowii,Neocortex_Vol.mm3,627,Kverkova_etal_2018_TableS1
-Fukomys mechowii,Neocortex_Vol.mm3.1,8,Kverkova_etal_2018_TableS1
 Fukomys mechowii,OlfactoryBulb_N.n,14110000,Kverkova_etal_2018_TableS5
-Fukomys mechowii,OlfactoryBulb_N.n.1,2130000,Kverkova_etal_2018_TableS5
 Fukomys mechowii,OlfactoryBulb_Vol.mm3,76,Kverkova_etal_2018_TableS1
-Fukomys mechowii,OlfactoryBulb_Vol.mm3.1,6,Kverkova_etal_2018_TableS1
 Fukomys mechowii,OlfactoryCortices_Vol.mm3,133,Kverkova_etal_2018_TableS1
-Fukomys mechowii,OlfactoryCortices_Vol.mm3.1,9,Kverkova_etal_2018_TableS1
 Fukomys mechowii,Septum_Vol.mm3,24,Kverkova_etal_2018_TableS1
-Fukomys mechowii,Septum_Vol.mm3.1,1,Kverkova_etal_2018_TableS1
 Fukomys mechowii,Striatum_Vol.mm3,198,Kverkova_etal_2018_TableS1
-Fukomys mechowii,Striatum_Vol.mm3.1,2,Kverkova_etal_2018_TableS1
 Fukomys mechowii,SubcorticalForebrain_N.n,9420000,Kverkova_etal_2018_TableS5
-Fukomys mechowii,SubcorticalForebrain_N.n.1,880000,Kverkova_etal_2018_TableS5
 Fukomys mechowii,Tectum_Vol.mm3,41,Kverkova_etal_2018_TableS1
-Fukomys mechowii,Tectum_Vol.mm3.1,1,Kverkova_etal_2018_TableS1
 Fukomys mechowii,Tegmentum_Vol.mm3,82,Kverkova_etal_2018_TableS1
-Fukomys mechowii,Tegmentum_Vol.mm3.1,13,Kverkova_etal_2018_TableS1
 Fukomys mechowii,Thalamus_Vol.mm3,116,Kverkova_etal_2018_TableS1
-Fukomys mechowii,Thalamus_Vol.mm3.1,13,Kverkova_etal_2018_TableS1
 Fukomys mechowii,WholeBrainOlfactoryBulb_Mass.g,2.15,Kverkova_etal_2018_TableS1
-Fukomys mechowii,WholeBrainOlfactoryBulb_Mass.g.1,0.24,Kverkova_etal_2018_TableS1
 Fukomys mechowii,WholeBrainOlfactoryBulb_N.n,174240000,Kverkova_etal_2018_TableS5
-Fukomys mechowii,WholeBrainOlfactoryBulb_N.n.1,14600000,Kverkova_etal_2018_TableS5
 Fukomys mechowii,WholeBrain_N.n,160130000,Kverkova_etal_2018_TableS5
 Georychus capensis,Amygdala_Vol.mm3,28,Kverkova_etal_2018_TableS1
-Georychus capensis,Amygdala_Vol.mm3.1,3,Kverkova_etal_2018_TableS1
 Georychus capensis,Body_Mass.g,155.09,Kverkova_etal_2018_TableS1
-Georychus capensis,Body_Mass.g.1,39.08,Kverkova_etal_2018_TableS1
 Georychus capensis,Cerebellum_N.n,116740000,Kverkova_etal_2018_TableS5
-Georychus capensis,Cerebellum_N.n.1,10310000,Kverkova_etal_2018_TableS5
 Georychus capensis,Cerebellum_Vol.mm3,250,Kverkova_etal_2018_TableS1
-Georychus capensis,Cerebellum_Vol.mm3.1,14,Kverkova_etal_2018_TableS1
 Georychus capensis,CerebralCortex_N.n,25600000,Kverkova_etal_2018_TableS5
-Georychus capensis,CerebralCortex_N.n.1,2090000,Kverkova_etal_2018_TableS5
 Georychus capensis,EntorhinalCortex_Vol.mm3,53,Kverkova_etal_2018_TableS1
-Georychus capensis,EntorhinalCortex_Vol.mm3.1,8,Kverkova_etal_2018_TableS1
 Georychus capensis,Hippocampus_Vol.mm3,114,Kverkova_etal_2018_TableS1
-Georychus capensis,Hippocampus_Vol.mm3.1,19,Kverkova_etal_2018_TableS1
 Georychus capensis,Hypothalamus_Vol.mm3,50,Kverkova_etal_2018_TableS1
-Georychus capensis,Hypothalamus_Vol.mm3.1,6,Kverkova_etal_2018_TableS1
 Georychus capensis,Medulla_Vol.mm3,151,Kverkova_etal_2018_TableS1
-Georychus capensis,Medulla_Vol.mm3.1,21,Kverkova_etal_2018_TableS1
 Georychus capensis,MesencephalonMedulla_N.n,5810000,Kverkova_etal_2018_TableS5
-Georychus capensis,MesencephalonMedulla_N.n.1,340000,Kverkova_etal_2018_TableS5
 Georychus capensis,Neocortex_Vol.mm3,401,Kverkova_etal_2018_TableS1
-Georychus capensis,Neocortex_Vol.mm3.1,46,Kverkova_etal_2018_TableS1
 Georychus capensis,OlfactoryBulb_N.n,12460000,Kverkova_etal_2018_TableS5
-Georychus capensis,OlfactoryBulb_N.n.1,1420000,Kverkova_etal_2018_TableS5
 Georychus capensis,OlfactoryBulb_Vol.mm3,74,Kverkova_etal_2018_TableS1
-Georychus capensis,OlfactoryBulb_Vol.mm3.1,8,Kverkova_etal_2018_TableS1
 Georychus capensis,OlfactoryCortices_Vol.mm3,97,Kverkova_etal_2018_TableS1
-Georychus capensis,OlfactoryCortices_Vol.mm3.1,13,Kverkova_etal_2018_TableS1
 Georychus capensis,Septum_Vol.mm3,21,Kverkova_etal_2018_TableS1
-Georychus capensis,Septum_Vol.mm3.1,2,Kverkova_etal_2018_TableS1
 Georychus capensis,Striatum_Vol.mm3,123,Kverkova_etal_2018_TableS1
-Georychus capensis,Striatum_Vol.mm3.1,22,Kverkova_etal_2018_TableS1
 Georychus capensis,SubcorticalForebrain_N.n,9060000,Kverkova_etal_2018_TableS5
-Georychus capensis,SubcorticalForebrain_N.n.1,1130000,Kverkova_etal_2018_TableS5
 Georychus capensis,Tectum_Vol.mm3,34,Kverkova_etal_2018_TableS1
-Georychus capensis,Tectum_Vol.mm3.1,2,Kverkova_etal_2018_TableS1
 Georychus capensis,Tegmentum_Vol.mm3,62,Kverkova_etal_2018_TableS1
-Georychus capensis,Tegmentum_Vol.mm3.1,8,Kverkova_etal_2018_TableS1
 Georychus capensis,Thalamus_Vol.mm3,87,Kverkova_etal_2018_TableS1
-Georychus capensis,Thalamus_Vol.mm3.1,16,Kverkova_etal_2018_TableS1
 Georychus capensis,WholeBrainOlfactoryBulb_Mass.g,1.65,Kverkova_etal_2018_TableS1
-Georychus capensis,WholeBrainOlfactoryBulb_Mass.g.1,0.18,Kverkova_etal_2018_TableS1
 Georychus capensis,WholeBrainOlfactoryBulb_N.n,169670000,Kverkova_etal_2018_TableS5
-Georychus capensis,WholeBrainOlfactoryBulb_N.n.1,11420000,Kverkova_etal_2018_TableS5
 Georychus capensis,WholeBrain_N.n,157210000,Kverkova_etal_2018_TableS5
 Giraffa camelopardalis,Body_Mass.g,470000,HerculanoHouzel_etal_2015_Table5
 Giraffa camelopardalis,Cerebellum_C.n,14398437501,HerculanoHouzel_etal_2015_Table2
@@ -1081,95 +883,59 @@ Gorilla gorilla,Cerebellum_O.n,2900000000,HerculanoHouzel_etal_2015_Table2
 Gorilla gorilla,Cerebellum_O.p.N,0.11,HerculanoHouzel_etal_2015_Table2
 Gorilla gorilla,Cerebellum_O.p.mg,77210,HerculanoHouzel_etal_2015_Table2
 Heliophobius argenteocinereus,Amygdala_Vol.mm3,34,Kverkova_etal_2018_TableS1
-Heliophobius argenteocinereus,Amygdala_Vol.mm3.1,4,Kverkova_etal_2018_TableS1
 Heliophobius argenteocinereus,Body_Mass.g,180.51,Kverkova_etal_2018_TableS1
-Heliophobius argenteocinereus,Body_Mass.g.1,35.45,Kverkova_etal_2018_TableS1
 Heliophobius argenteocinereus,Cerebellum_N.n,94820000,Kverkova_etal_2018_TableS5
-Heliophobius argenteocinereus,Cerebellum_N.n.1,1970000,Kverkova_etal_2018_TableS5
 Heliophobius argenteocinereus,Cerebellum_Vol.mm3,215,Kverkova_etal_2018_TableS1
-Heliophobius argenteocinereus,Cerebellum_Vol.mm3.1,37,Kverkova_etal_2018_TableS1
 Heliophobius argenteocinereus,CerebralCortex_N.n,25440000,Kverkova_etal_2018_TableS5
-Heliophobius argenteocinereus,CerebralCortex_N.n.1,2230000,Kverkova_etal_2018_TableS5
 Heliophobius argenteocinereus,EntorhinalCortex_Vol.mm3,56,Kverkova_etal_2018_TableS1
-Heliophobius argenteocinereus,EntorhinalCortex_Vol.mm3.1,4,Kverkova_etal_2018_TableS1
 Heliophobius argenteocinereus,Hippocampus_Vol.mm3,115,Kverkova_etal_2018_TableS1
-Heliophobius argenteocinereus,Hippocampus_Vol.mm3.1,8,Kverkova_etal_2018_TableS1
 Heliophobius argenteocinereus,Hypothalamus_Vol.mm3,42,Kverkova_etal_2018_TableS1
-Heliophobius argenteocinereus,Hypothalamus_Vol.mm3.1,5,Kverkova_etal_2018_TableS1
 Heliophobius argenteocinereus,Medulla_Vol.mm3,120,Kverkova_etal_2018_TableS1
-Heliophobius argenteocinereus,Medulla_Vol.mm3.1,22,Kverkova_etal_2018_TableS1
 Heliophobius argenteocinereus,MesencephalonMedulla_N.n,5460000,Kverkova_etal_2018_TableS5
-Heliophobius argenteocinereus,MesencephalonMedulla_N.n.1,840000,Kverkova_etal_2018_TableS5
 Heliophobius argenteocinereus,Neocortex_Vol.mm3,457,Kverkova_etal_2018_TableS1
-Heliophobius argenteocinereus,Neocortex_Vol.mm3.1,25,Kverkova_etal_2018_TableS1
 Heliophobius argenteocinereus,OlfactoryBulb_N.n,10300000,Kverkova_etal_2018_TableS5
-Heliophobius argenteocinereus,OlfactoryBulb_N.n.1,2150000,Kverkova_etal_2018_TableS5
 Heliophobius argenteocinereus,OlfactoryBulb_Vol.mm3,60,Kverkova_etal_2018_TableS1
-Heliophobius argenteocinereus,OlfactoryBulb_Vol.mm3.1,8,Kverkova_etal_2018_TableS1
 Heliophobius argenteocinereus,OlfactoryCortices_Vol.mm3,107,Kverkova_etal_2018_TableS1
-Heliophobius argenteocinereus,OlfactoryCortices_Vol.mm3.1,4,Kverkova_etal_2018_TableS1
 Heliophobius argenteocinereus,Septum_Vol.mm3,18,Kverkova_etal_2018_TableS1
-Heliophobius argenteocinereus,Septum_Vol.mm3.1,2,Kverkova_etal_2018_TableS1
 Heliophobius argenteocinereus,Striatum_Vol.mm3,127,Kverkova_etal_2018_TableS1
-Heliophobius argenteocinereus,Striatum_Vol.mm3.1,11,Kverkova_etal_2018_TableS1
 Heliophobius argenteocinereus,SubcorticalForebrain_N.n,11920000,Kverkova_etal_2018_TableS5
-Heliophobius argenteocinereus,SubcorticalForebrain_N.n.1,1130000,Kverkova_etal_2018_TableS5
 Heliophobius argenteocinereus,Tectum_Vol.mm3,28,Kverkova_etal_2018_TableS1
-Heliophobius argenteocinereus,Tectum_Vol.mm3.1,3,Kverkova_etal_2018_TableS1
 Heliophobius argenteocinereus,Tegmentum_Vol.mm3,56,Kverkova_etal_2018_TableS1
-Heliophobius argenteocinereus,Tegmentum_Vol.mm3.1,3,Kverkova_etal_2018_TableS1
 Heliophobius argenteocinereus,Thalamus_Vol.mm3,90,Kverkova_etal_2018_TableS1
-Heliophobius argenteocinereus,Thalamus_Vol.mm3.1,5,Kverkova_etal_2018_TableS1
 Heliophobius argenteocinereus,WholeBrainOlfactoryBulb_Mass.g,1.65,Kverkova_etal_2018_TableS1
-Heliophobius argenteocinereus,WholeBrainOlfactoryBulb_Mass.g.1,0.12,Kverkova_etal_2018_TableS1
 Heliophobius argenteocinereus,WholeBrainOlfactoryBulb_N.n,147940000,Kverkova_etal_2018_TableS5
-Heliophobius argenteocinereus,WholeBrainOlfactoryBulb_N.n.1,6800000,Kverkova_etal_2018_TableS5
 Heliophobius argenteocinereus,WholeBrain_N.n,137640000,Kverkova_etal_2018_TableS5
 Heterocephalus glaber,Amygdala_Vol.mm3,12,Kverkova_etal_2018_TableS1
-Heterocephalus glaber,Amygdala_Vol.mm3.1,1,Kverkova_etal_2018_TableS1
 Heterocephalus glaber,Body_Mass.g,30.520000000000003,HerculanoHouzel_etal_2015_Table5_Kverkova_etal_2018_TableS1
-Heterocephalus glaber,Body_Mass.g.1,12.02,Kverkova_etal_2018_TableS1
 Heterocephalus glaber,Cerebellum_C.n,21225000,HerculanoHouzel_etal_2015_Table2
 Heterocephalus glaber,Cerebellum_Mass.g,0.048,HerculanoHouzel_etal_2015_Table2
 Heterocephalus glaber,Cerebellum_N.n,18131135,HerculanoHouzel_etal_2015_Table2_Kverkova_etal_2018_TableS5
-Heterocephalus glaber,Cerebellum_N.n.1,3010000,Kverkova_etal_2018_TableS5
 Heterocephalus glaber,Cerebellum_N.p.mg,327280,HerculanoHouzel_etal_2015_Table2
 Heterocephalus glaber,Cerebellum_O.n,5482730,HerculanoHouzel_etal_2015_Table2
 Heterocephalus glaber,Cerebellum_O.p.N,0.356,HerculanoHouzel_etal_2015_Table2
 Heterocephalus glaber,Cerebellum_O.p.mg,115748,HerculanoHouzel_etal_2015_Table2
 Heterocephalus glaber,Cerebellum_Vol.mm3,48,Kverkova_etal_2018_TableS1
-Heterocephalus glaber,Cerebellum_Vol.mm3.1,5,Kverkova_etal_2018_TableS1
 Heterocephalus glaber,CerebralCortex_C.n,14550000,HerculanoHouzel_etal_2015_Table1
 Heterocephalus glaber,CerebralCortex_Mass.g,0.184,HerculanoHouzel_etal_2015_Table1
 Heterocephalus glaber,CerebralCortex_N.n,5730937.5,HerculanoHouzel_etal_2015_Table1_Kverkova_etal_2018_TableS5
-Heterocephalus glaber,CerebralCortex_N.n.1,310000,Kverkova_etal_2018_TableS5
 Heterocephalus glaber,CerebralCortex_N.p.mg,33374,HerculanoHouzel_etal_2015_Table1
 Heterocephalus glaber,CerebralCortex_O.n,8398125,HerculanoHouzel_etal_2015_Table1
 Heterocephalus glaber,CerebralCortex_O.p.N,1.365,HerculanoHouzel_etal_2015_Table1
 Heterocephalus glaber,CerebralCortex_O.p.mg,45894,HerculanoHouzel_etal_2015_Table1
 Heterocephalus glaber,EntorhinalCortex_Vol.mm3,14,Kverkova_etal_2018_TableS1
-Heterocephalus glaber,EntorhinalCortex_Vol.mm3.1,4,Kverkova_etal_2018_TableS1
 Heterocephalus glaber,Hippocampus_Vol.mm3,32,Kverkova_etal_2018_TableS1
-Heterocephalus glaber,Hippocampus_Vol.mm3.1,6,Kverkova_etal_2018_TableS1
 Heterocephalus glaber,Hypothalamus_Vol.mm3,17,Kverkova_etal_2018_TableS1
-Heterocephalus glaber,Hypothalamus_Vol.mm3.1,1,Kverkova_etal_2018_TableS1
 Heterocephalus glaber,Medulla_Vol.mm3,47,Kverkova_etal_2018_TableS1
-Heterocephalus glaber,Medulla_Vol.mm3.1,6,Kverkova_etal_2018_TableS1
 Heterocephalus glaber,MesencephalonMedulla_N.n,1910000,Kverkova_etal_2018_TableS5
-Heterocephalus glaber,MesencephalonMedulla_N.n.1,280000,Kverkova_etal_2018_TableS5
 Heterocephalus glaber,Neocortex_Vol.mm3,100,Kverkova_etal_2018_TableS1
-Heterocephalus glaber,Neocortex_Vol.mm3.1,5,Kverkova_etal_2018_TableS1
 Heterocephalus glaber,OlfactoryBulb_Mass.g,0.021,HerculanoHouzel_etal_2015_Table4
 Heterocephalus glaber,OlfactoryBulb_N.n,2656515,HerculanoHouzel_etal_2015_Table4_Kverkova_etal_2018_TableS5
-Heterocephalus glaber,OlfactoryBulb_N.n.1,330000,Kverkova_etal_2018_TableS5
 Heterocephalus glaber,OlfactoryBulb_N.p.mg,108895,HerculanoHouzel_etal_2015_Table4
 Heterocephalus glaber,OlfactoryBulb_O.n,3571970,HerculanoHouzel_etal_2015_Table4
 Heterocephalus glaber,OlfactoryBulb_O.p.N,1.516,HerculanoHouzel_etal_2015_Table4
 Heterocephalus glaber,OlfactoryBulb_O.p.mg,167991,HerculanoHouzel_etal_2015_Table4
 Heterocephalus glaber,OlfactoryBulb_Vol.mm3,20,Kverkova_etal_2018_TableS1
-Heterocephalus glaber,OlfactoryBulb_Vol.mm3.1,3,Kverkova_etal_2018_TableS1
 Heterocephalus glaber,OlfactoryCortices_Vol.mm3,39,Kverkova_etal_2018_TableS1
-Heterocephalus glaber,OlfactoryCortices_Vol.mm3.1,5,Kverkova_etal_2018_TableS1
 Heterocephalus glaber,RoB_C.n,15291667,HerculanoHouzel_etal_2015_Table3
 Heterocephalus glaber,RoB_Mass.g,0.16,HerculanoHouzel_etal_2015_Table3
 Heterocephalus glaber,RoB_N.n,4981317,HerculanoHouzel_etal_2015_Table3
@@ -1178,21 +944,13 @@ Heterocephalus glaber,RoB_O.n,10310350,HerculanoHouzel_etal_2015_Table3
 Heterocephalus glaber,RoB_O.p.N,2.125,HerculanoHouzel_etal_2015_Table3
 Heterocephalus glaber,RoB_O.p.mg,64145,HerculanoHouzel_etal_2015_Table3
 Heterocephalus glaber,Septum_Vol.mm3,4.1,Kverkova_etal_2018_TableS1
-Heterocephalus glaber,Septum_Vol.mm3.1,0.4,Kverkova_etal_2018_TableS1
 Heterocephalus glaber,Striatum_Vol.mm3,29,Kverkova_etal_2018_TableS1
-Heterocephalus glaber,Striatum_Vol.mm3.1,4,Kverkova_etal_2018_TableS1
 Heterocephalus glaber,SubcorticalForebrain_N.n,2860000,Kverkova_etal_2018_TableS5
-Heterocephalus glaber,SubcorticalForebrain_N.n.1,500000,Kverkova_etal_2018_TableS5
 Heterocephalus glaber,Tectum_Vol.mm3,10,Kverkova_etal_2018_TableS1
-Heterocephalus glaber,Tectum_Vol.mm3.1,3,Kverkova_etal_2018_TableS1
 Heterocephalus glaber,Tegmentum_Vol.mm3,19,Kverkova_etal_2018_TableS1
-Heterocephalus glaber,Tegmentum_Vol.mm3.1,4,Kverkova_etal_2018_TableS1
 Heterocephalus glaber,Thalamus_Vol.mm3,23,Kverkova_etal_2018_TableS1
-Heterocephalus glaber,Thalamus_Vol.mm3.1,3,Kverkova_etal_2018_TableS1
 Heterocephalus glaber,WholeBrainOlfactoryBulb_Mass.g,0.44,Kverkova_etal_2018_TableS1
-Heterocephalus glaber,WholeBrainOlfactoryBulb_Mass.g.1,0.04,Kverkova_etal_2018_TableS1
 Heterocephalus glaber,WholeBrainOlfactoryBulb_N.n,33620000,Kverkova_etal_2018_TableS5
-Heterocephalus glaber,WholeBrainOlfactoryBulb_N.n.1,3660000,Kverkova_etal_2018_TableS5
 Heterocephalus glaber,WholeBrain_C.n,51066667,HerculanoHouzel_etal_2015_Table5
 Heterocephalus glaber,WholeBrain_Mass.g,0.392,HerculanoHouzel_etal_2015_Table5
 Heterocephalus glaber,WholeBrain_N.n,28742731,HerculanoHouzel_etal_2015_Table5_Kverkova_etal_2018_TableS5
@@ -2523,23 +2281,19 @@ Sus scrofa domesticus,WholeBrain_N.n,2224112553,HerculanoHouzel_etal_2015_Table5
 Sus scrofa domesticus,WholeBrain_O.n,4695783705,HerculanoHouzel_etal_2015_Table5
 Tragelaphus strepsiceros,Body_Mass.g,218000,HerculanoHouzel_etal_2015_Table5
 Tragelaphus strepsiceros,Cerebellum_C.n,5308593750,HerculanoHouzel_etal_2015_Table2
-Tragelaphus strepsiceros,Cerebellum_I.p.C,0.0181999999529066,DosSantos_etal_2020_Table1
 Tragelaphus strepsiceros,Cerebellum_Mass.g,31.776,HerculanoHouzel_etal_2015_Table2
 Tragelaphus strepsiceros,Cerebellum_N.n,4042494141,HerculanoHouzel_etal_2015_Table2
 Tragelaphus strepsiceros,Cerebellum_N.p.mg,127218,HerculanoHouzel_etal_2015_Table2
 Tragelaphus strepsiceros,Cerebellum_O.n,1266099609,HerculanoHouzel_etal_2015_Table2
 Tragelaphus strepsiceros,Cerebellum_O.p.N,0.313,HerculanoHouzel_etal_2015_Table2
 Tragelaphus strepsiceros,Cerebellum_O.p.mg,39845,HerculanoHouzel_etal_2015_Table2
-Tragelaphus strepsiceros,CerebralCortexNoHippocampus_I.p.C,0.0645204852055977,DosSantos_etal_2020_Table1
 Tragelaphus strepsiceros,CerebralCortex_C.n,13064871626,HerculanoHouzel_etal_2015_Table1
-Tragelaphus strepsiceros,CerebralCortex_I.p.C,0.0641012667383097,DosSantos_etal_2020_Table1
 Tragelaphus strepsiceros,CerebralCortex_Mass.g,213.37,HerculanoHouzel_etal_2015_Table1
 Tragelaphus strepsiceros,CerebralCortex_N.n,762567178,HerculanoHouzel_etal_2015_Table1
 Tragelaphus strepsiceros,CerebralCortex_N.p.mg,3574,HerculanoHouzel_etal_2015_Table1
 Tragelaphus strepsiceros,CerebralCortex_O.n,12302304448,HerculanoHouzel_etal_2015_Table1
 Tragelaphus strepsiceros,CerebralCortex_O.p.N,16.133,HerculanoHouzel_etal_2015_Table1
 Tragelaphus strepsiceros,CerebralCortex_O.p.mg,57657,HerculanoHouzel_etal_2015_Table1
-Tragelaphus strepsiceros,Hippocampus_I.p.C,0.0548000009343066,DosSantos_etal_2020_Table1
 Tragelaphus strepsiceros,OlfactoryBulb_Mass.g,5.546,HerculanoHouzel_etal_2015_Table4
 Tragelaphus strepsiceros,OlfactoryBulb_N.n,38331562,HerculanoHouzel_etal_2015_Table4
 Tragelaphus strepsiceros,OlfactoryBulb_N.p.mg,6912,HerculanoHouzel_etal_2015_Table4
@@ -2547,7 +2301,6 @@ Tragelaphus strepsiceros,OlfactoryBulb_O.n,362731438,HerculanoHouzel_etal_2015_T
 Tragelaphus strepsiceros,OlfactoryBulb_O.p.N,8.523,HerculanoHouzel_etal_2015_Table4
 Tragelaphus strepsiceros,OlfactoryBulb_O.p.mg,58913,HerculanoHouzel_etal_2015_Table4
 Tragelaphus strepsiceros,RoB_C.n,3515369753,HerculanoHouzel_etal_2015_Table3
-Tragelaphus strepsiceros,RoB_I.p.C,0.0809269035890595,DosSantos_etal_2020_Table1
 Tragelaphus strepsiceros,RoB_Mass.g,61.716,HerculanoHouzel_etal_2015_Table3
 Tragelaphus strepsiceros,RoB_N.n,106590230,HerculanoHouzel_etal_2015_Table3
 Tragelaphus strepsiceros,RoB_N.p.mg,1727,HerculanoHouzel_etal_2015_Table3
@@ -2555,7 +2308,6 @@ Tragelaphus strepsiceros,RoB_O.n,3408779523,HerculanoHouzel_etal_2015_Table3
 Tragelaphus strepsiceros,RoB_O.p.N,31.98,HerculanoHouzel_etal_2015_Table3
 Tragelaphus strepsiceros,RoB_O.p.mg,55233,HerculanoHouzel_etal_2015_Table3
 Tragelaphus strepsiceros,WholeBrain_C.n,21888835129,HerculanoHouzel_etal_2015_Table5
-Tragelaphus strepsiceros,WholeBrain_I.p.C,55.3941435722781,DosSantos_etal_2020_Table1
 Tragelaphus strepsiceros,WholeBrain_Mass.g,306.86,HerculanoHouzel_etal_2015_Table5
 Tragelaphus strepsiceros,WholeBrain_N.n,4911651549,HerculanoHouzel_etal_2015_Table5
 Tragelaphus strepsiceros,WholeBrain_O.n,16977183580,HerculanoHouzel_etal_2015_Table5

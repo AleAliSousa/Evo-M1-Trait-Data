@@ -37,6 +37,9 @@ tabledirectxl$Family[53:56] <- "Lemuridae"
 tabledirectxl$Family[58:62] <- "Loridae"
 tabledirectxl$Family[64] <- "Tarsiidae"
 
+##4. Correction - Spelling Error
+tabledirectxl[which(tabledirectxl$Species == "Galago sengalensis"), "Species"] <- "Galago senegalensis"
+
 # Save
 # Finalize dataframe (UPDATE!!!)
 final.dataframe <- tabledirectxl

@@ -1,7 +1,7 @@
 # Source
 setwd("C:/Users/MILONI/OneDrive - University of Bath/Research Schemes/Allen Institue/Evo-M1-Trait-Data/")
 
-# Table 2
+# Table 4
 ##1. Read direct from xl
 library(readxl)
 folder_path <- "./Iwaniuk_etal_2001/"

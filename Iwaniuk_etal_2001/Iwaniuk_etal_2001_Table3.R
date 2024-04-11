@@ -1,7 +1,7 @@
 #1. Source
 setwd("C:/Users/MILONI/OneDrive - University of Bath/Research Schemes/Allen Institue/Evo-M1-Trait-Data/")
 
-#2. Table 1
+#2. Table 3
 
 ## 1. Read direct from xl
 library(readxl)

@@ -1,6 +1,7 @@
-setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/______EvoM1_TraitTable")
+setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/")
+folder_path <- "./____EvoM1_TraitTable/"
+
 # Heffner 1975 dexterity and corticospinal tract for EvoM1
-## Need to add other Heffner paper
 
 ## 1 Get data for cell count analyses
 library(tidyverse)
@@ -16,12 +17,12 @@ item_name <- c(
 heffner_data_list <- list()
 
 # Read Excel file with item name and item encoded TSVs
-filecodes <- read_excel("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__ReadMe.xlsx", sheet = "Sheet1")
+filecodes <- read_excel("./__ReadMe.xlsx", sheet = "Sheet1")
 
 # Loop through item names, read tables from TSVs, and store as dataframes in the list
 for (i in seq_along(item_name)) {
   item_encoded <- filecodes$"Item encoded"[match(item_name[i], filecodes$"Item name")]
-  item_data <- read.table(file = paste0("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__Public/comparative-data/", item_encoded, ".tsv"), 
+  item_data <- read.table(file = paste0("./__Public/comparative-data/", item_encoded, ".tsv"), 
                           header = TRUE, stringsAsFactors = FALSE, check.names = FALSE, sep = "\t")
   
   # Store the data frame in the list with the corresponding item name
@@ -30,7 +31,7 @@ for (i in seq_along(item_name)) {
 
 Heffner_Masterton_1975_TableI <- heffner_data_list$Heffner_Masterton_1975_TableI
 
-# Add Species names to use based on Genus level match or better
+# Add Species names to use based on Genus level match or better #They come from TWO different columns!
 Heffner_Masterton_1975_TableI$species_sci <- NA 
 Heffner_Masterton_1975_TableI$species_sci[Heffner_Masterton_1975_TableI$Species == "Homo sapiens"] <- "Homo sapiens"
 Heffner_Masterton_1975_TableI$species_sci[Heffner_Masterton_1975_TableI$Species == "Pan troglodytes"] <- "Pan troglodytes"
@@ -62,4 +63,4 @@ Heffner_Masterton_1975_TableI$species_sci[Heffner_Masterton_1975_TableI$Species 
 Heffner_Masterton_1975_TableI <- Heffner_Masterton_1975_TableI[, c("species_sci", setdiff(names(Heffner_Masterton_1975_TableI), "species_sci"))]
 
 # Write the dataframe to an Excel file
-write_xlsx(Heffner_Masterton_1975_TableI, "dexterity_corticospinaltract.xlsx")
+write_xlsx(Heffner_Masterton_1975_TableI, paste0(folder_path, "dexterity_corticospinaltract.xlsx"))

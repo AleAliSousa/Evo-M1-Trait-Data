@@ -51,9 +51,49 @@ comparison_df <- as.data.frame(comparison_values)
 print(comparison_df)
 ```
 ## Conclusion: Rachael and Summer are the same although Summer also has Total neocortex added. Use Summer
+!!! NEW for JUNE 2024
 
-## 2 Check Summer's work: check the difference between the sum of all areas and Total neocortex
-# remove the last for rows from summer which are not need  "Visual_Acuity"        "Sound_localisation"   "Auditory_acuity_Low"  "Auditory_Acuity_High"
+#1 A Check Summer's work: check the difference between the sum of all areas and Total neocortex
+```{r}
+# Move 'Species' to row names and drop 'Total_neocortex' from calculation
+summer_rownames <- summer
+
+# List of columns to sum
+total_neo_rows <- c("V1", "V2", "MT", "DM", "DL", "FST", "MST...8", "VPP", "VP",              
+                    "CT", "Vr", "A1", "R", "A1+R", "S1/3b", "SII", "3a", "PV", "1", "2",       
+                    "SII+PV", "M1", "FEF", "FV", "SMA", "FR", "MST...28")
+
+# Ensure all specified columns exist
+existing_columns <- intersect(total_neo_rows, names(summer))
+
+# Calculate 'Total_neocortex_check' and 'Total_neocortex_diff'
+summer_rownames <- summer_rownames %>%
+  mutate(
+    Total_neocortex_check = rowSums(select(., all_of(existing_columns)), na.rm = TRUE),
+    Total_neocortex_diff = Total_neocortex - Total_neocortex_check
+  )
+```
+## One of these is a negative number
+## Conclusion: Need to re-measure the Total_neocortex measurements!
+!!! NEW for JUNE 2024
+```{r}
+# Validate that the columns exist in the dataframe
+existing_columns <- intersect(total_neo_rows, names(summer))
+
+# Convert specified columns to numeric safely, suppressing warnings about NAs
+summer_rownames[existing_columns] <- lapply(summer_rownames[existing_columns], function(x) {
+  suppressWarnings(as.numeric(as.character(x)))
+})
+
+# Calculate 'Total_neocortex_check' and 'Total_neocortex_diff'
+summer_rownames <- summer_rownames %>%
+  mutate(
+    Total_neocortex_check = rowSums(select(., all_of(existing_columns)), na.rm = TRUE),
+    Total_neocortex_diff = Total_neocortex - Total_neocortex_check
+  )
+```
+
+# remove the last for rows from Summer which are not needed  "Visual_Acuity"        "Sound_localisation"   "Auditory_acuity_Low"  "Auditory_Acuity_High"
 # check whether "MST...8" and "MST...28"  are the same structure.  
 ## check the images (TO DO LATER)
 ## check if there are any conflicts or if these columns can be merged?

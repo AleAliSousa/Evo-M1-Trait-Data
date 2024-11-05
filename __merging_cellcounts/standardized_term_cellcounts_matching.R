@@ -13,6 +13,7 @@ item_name <- c(
   "Burish_etal_2010_Table1",
   "DosSantos_etal_2017_TableS1",
   "DosSantos_etal_2020_Table1",
+  "DosSantos_etal_2020_unpublished",
   "HerculanoHouzel_etal_2015_Table1",
   "HerculanoHouzel_etal_2015_Table2",
   "HerculanoHouzel_etal_2015_Table3",
@@ -249,8 +250,34 @@ for (i in 1:nrow(filtered_rows)) {
 merged_terms_combined_key[grep("^Burish_etal_2010", merged_terms_combined_key$Reference), ] <- filtered_rows # Update the original dataframe with the modified rows
 # Update Standardized_term to "Species" for rows where Original_term is "Species" or "Species name" and Standardized_term is NA
 merged_terms_combined_key$Standardized_Term <- ifelse(merged_terms_combined_key$Original_Term %in% c("Species", "Species name") & is.na(merged_terms_combined_key$Standardized_Term), "Species", merged_terms_combined_key$Standardized_Term)
+#### new ###
+## DosSantos_etal_2020_unpublished
+# Match Original_Term from "DosSantos_etal_2020_unpublished"* tables to Standardized_Term (or provide new one if not available)
+# Define the mapping rules for existing terms and (if available) Standardized Terms. Many of these are irregular so done for all terms.
+term_mapping <- c("Species" = "Species",
+                  "Br_I/C" = "WholeBrain_I.p.C",
+                  "Cb_I/C" = "Cerebellum_I.p.C",
+                  "Ctx_I/C" = "CerebralCortexNoHippocampus_I.p.C",
+                  "Cx_I/C" = "CerebralCortex_I.p.C",
+                  "Hp_I/C" = "Hippocampus_I.p.C",
+                  "RoB_I/C" = "RoB_I.p.C"
+)
 
-
+# Filter rows where Reference starts with DosSantos_etal_2020_unpublished"
+filtered_rows <- merged_terms_combined_key[grep("^DosSantos_etal_2020_unpublished", merged_terms_combined_key$Reference), ]
+# Loop through rows and apply the mapping
+for (i in 1:nrow(filtered_rows)) {
+  original_term <- filtered_rows$Original_Term[i]
+  # Check if the original term is in the mapping
+  if (original_term %in% names(term_mapping)) {
+    # Update Standardized_Term based on the mapping
+    filtered_rows$Standardized_Term[i] <- term_mapping[original_term]
+  }
+}
+merged_terms_combined_key[grep("^DosSantos_etal_2020_unpublished", merged_terms_combined_key$Reference), ] <- filtered_rows # Update the original dataframe with the modified rows
+# Update Standardized_term to "Species" for rows where Original_term is "Species" or "Species name" and Standardized_term is NA
+merged_terms_combined_key$Standardized_Term <- ifelse(merged_terms_combined_key$Original_Term %in% c("Species", "Species name") & is.na(merged_terms_combined_key$Standardized_Term), "Species", merged_terms_combined_key$Standardized_Term)
+#### new ###
 # Tidy up Standardized Term list
 # Delete unnecessary columns: Standard_old, DosSantos2017_old, JardimMessender2017_old
 standardized_term_cellcounts <- merged_terms_combined_key[, -which(names(merged_terms_combined_key) %in% c("Standard_old", "DosSantos2017_old", "JardimMessender2017_old"))]

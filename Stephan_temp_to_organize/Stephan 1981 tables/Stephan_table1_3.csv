@@ -1,0 +1,99 @@
+"Table I,II,III. Data on body weights (g), brain weights (mg), and volumes of total brain and fundamental brain parts (mm3) in insectivores and primates",,,,,,,,,,,
+,,,,,,,,,,,
+Code_number,Species,Number_of_individuals,Body_weight,Brain_weight,Ventricles,Meninges_hypophysis_nerves_etc.,Total_brain_(net_volume),Medulla-oblongata,Cerebellum,Mesencephalon,Diencephalon
+, ,,1,2,3,4,5_(=6-10),6,7,8,9
+Table I. Insectivores,,,,,,,,,,,
+0001,Solenodon paradoxus,2,900,"4,670",56.4,169,"4,282",466,753,206,269
+0002,Tenrec ecaudatus,3,832,"2,570",65.3,101,"2,315",313,309,132,153
+0003,Setifer setosus,2,248,"1,510",21.3,32.3,"1,404",183,142,75.7,99.7
+0004,Hemicentetes semispin.,1,110,830,15.5,29,757,108,117,44.8,48.5
+0005,Echinops telfairi,2,87.5,620,8.34,23.9,566,89.9,57.9,43.8,40.1
+0006,Oryzorictes talpoides,1,44.2,580,4.83,17.3,538,61,81.3,26.6,36.9
+0007,Microgale cowani,1,15.2,420,7.12,6.4,392,45.3,49.5,24,25.4
+0008,Limnogale mergulus,1,92,"1,150",12.6,51,"1,046",204,176,67.4,81
+0009,Nesogale dobsoni,1,32.6,560,5.31,21.9,513,59,57.3,37.9,32.8
+0010,Nesogale talazaci,1,50.4,790,6.02,16,741,85.3,92.3,47.2,43.8
+0014,Micropotamogale lamottei,3,64.2,800,11.9,17.2,743,135,82.7,58.6,62.8
+0015,Potamogale velox,2,660,"4,160",16.6,121,"3,878",756,605,254,298
+0016,Chlorotalpa stuhlmanni,2,39.8,740,7,13.8,693,68.3,74.7,42,51.8
+0017,Chrysochloris asiatica,1,49,700,8.12,10.7,657,58.5,72.6,43.2,52.8
+0021,Aethechinus algirus,3,790,"3,200",121,109,"2,859",336,358,153,246
+0022,Erinaceus europaeus,5,860,"3,350",105,78.8,"3,050",333,394,151,241
+0023,Hemiechinus auritus,3,250,"1,900",82.5,41.2,"1,710",187,198,110,142
+0031,Elephantulus fuscipes,2,57,"1,330",18.1,32.9,"1,233",120,183,117,112
+0033,Rhynchocyon stuhlmanni,2,490,"6,100",97.2,111,"5,680",507,798,523,524
+0041,Sorex minutus,1,5.3,110,0.46,2.47,103,17,11,5.91,8.69
+0042,Sorex araneus,5,10.3,200,1.17,3.96,188,27.1,20.4,10.8,13.7
+0043,Neomys fodiens,2,15.2,320,1.63,8.13,299,42.2,38.9,17.3,25.2
+0059,Crocidura occidentalis,2,28,440,2.67,14,408,59.8,51.3,27.7,28.4
+0060,Crocidura russula,2,11,190,1.67,3.85,178,23.6,21.8,11.7,15
+0063,Suncus murinus,1,35.5,380,4.6,7.8,354,50.5,44.8,24.2,26
+0081,Talpa europaea,2,76,"1,020",10.9,20.6,953,95.4,174,49.8,80.4
+0083,Desmana moschata,1,440,"4,000",138,104,"3,620",402,514,219,344
+0084,Galemys pyrenaicus,2,57.5,"1,330",27.5,25.9,"1,230",147,184,62.2,105
+Table II.  Prosimians,,,,,,,,,,,
+0102,Tupaia glis,20,170,"3,200",38.2,51.4,"2,999",219,376,256,275
+0104,Tupaia minor,2,70,"2,580",22.2,37.8,"2,430",173,308,249,251
+0106,Urvgale everetti,1,275,"4,280",38.9,95.8,"3,997",355,513,307,394
+0111,Cheirogaleus major,2,450,"6,800",83.4,108,"6,373",382,947,241,489
+0112,Cheirogaleus medius,2,177,"3,140",24.6,45.2,"2,961",202,437,145,235
+0114,Microcebus murinus,6,54,"1,780",11.3,26.6,"1,680",99.1,234,85.2,134
+0117,Lepilemur ruficaudatus,3,915,"7,600",76.5,84.1,"7,175",449,"1,165",260,593
+0118,Lemur fulvus,3,"1,400","23,300",194,190,"22,106",909,"3,328",590,"1,713"
+0124,Lemur variegatus,1,"3,000","31,500",299,393,"29,713","1,420","4,286","1,018","2,529"
+0130,Avahi l. laniger,2,"1,285","10,490",172,156,"9,798",553,"1,489",343,862
+0131,Avahi l. occidentalis,2,860,"9,670",73.7,137,"9,124",508,"1,383",345,861
+0132,Propithecus verreauxi,2,"3,480","26,700",231,347,"25,194","1,223","3,957",780,"2,195"
+0133,Indri indri,2,"6,250","38,300",330,354,"36,285","1,342","5,504",978,"2,911"
+0136,Daubentonia madagasc.,1,"2,800","45,150",392,578,"42,611","1,517","6,461",897,"3,539"
+0137,Loris tardigradus,1,322,"6,600",51.6,50.4,"6,269",233,728,220,538
+0138,Nycticebus coucang,2,800,"12,500",142,169,"11,755",528,"1,310",345,"1,077"
+0139,Perodicticus potto,2,"1,150","14,000",127,174,"13,212",680,"1,699",391,"1,024"
+0141,Galago crassicaudatus,2,850,"10,300",147,128,"9,668",540,"1,414",384,785
+0142,Galago demidovii,2,81,"3,380",30.4,28.8,"3,203",169,413,135,246
+0143,Galago senegalensis,1,186,"4,800",40.2,81.4,"4,512",254,672,205,382
+0147,Tarsius sp.,2,125,"3,600",24.1,58,"3,393",207,428,197,303
+Table III. Simians,,,,,,,,,,,
+0151,Callithrix jacchus,4,280,"7,600",52,42.9,"7,241",318,757,295,554
+0156,Cebuella pygmaea,2,140,"4,500",24.5,16.9,"4,302",201,468,192,342
+0164,Saguinus oedipus,3,380,"10,000",62.6,52.8,"9,537",413,984,333,754
+0165,Saguinus tamarin,2,340,"10,300",251,122,"9,569",428,"1,061",332,692
+0166,Callimico goeldii,1,480,"11,000",47.9,59.5,"10,510",460,"1,240",340,739
+0171,Aotus trivirgatus,5,830,"17,100",105,206,"16,195",686,"1,873",409,"1,098"
+0172,Callicebus moloch,2,900,"19,000",279,242,"17,944",787,"1,622",530,"1,375"
+0174,Pithecia monacha,2,"1,500","35,000",631,286,"32,867","1,009","3,908",745,"2,285"
+0179,Alouatta sp.,2,"6,400","52,000",616,568,"49,009","1,593","5,699",986,"3,344"
+0184,Ateles geolfroyi,1,"8,000","108,000","1,389","1,824","101,034","1,834","12,438","1,482","5,334"
+0186,Lagothrix lagotricha,3,"5,200","101,000","1,090",897,"95,503","2,110","11,268","1,582","5,721"
+0191,Cebus sp.,2,"3,100","71,000",729,864,"66,939","1,738","7,871","1,221","3,996"
+0192,Saimiri sciureus,1,660,"24,000",299,295,"22,572",722,"2,260",526,"1,430"
+0202,Macaca mulatta,1,"7,800","93,000",834,"1,038","87,896","1,992","8,965","1,380","4,480"
+0209,Cercocebus albigena,1,"7,900","104,000",742,"2,041","97,603","2,708","10,726","1,770","5,351"
+0212,Papio anubis,2,"25,000","201,000","1,081","1,977","190,957","5,297","18,683","2,711","9,280"
+0227,Cercopithecus mitis,1,"6,300","75,000",467,"1,363","70,564","1,999","6,758","1,354","4,176"
+0231,Cercopithecus ascan.,1,"3,400","67,000",240,927,"63,505","1,632","5,828","1,162","3,605"
+0232,Cercopithecus talap.,2,"1,200","40,000",262,572,"37,776","1,035","3,374",826,"2,375"
+0234,Erythrocebus patas,2,"7,800","108,000",561,519,"103,167","2,616","8,738","1,621","5,423"
+0242,Pygathrix nemaeus,1,"7,500","77,000",911,883,"72,530","2,206","8,063","1,345","4,727"
+0243,Nasalis larvatus,1,"14,000","97,000",591,241,"92,797","2,945","12,113","1,556","5,310"
+0246,Colobus badius,2,"7,000","78,000",455,"1,016","73,818","2,007","8,648","1,333","3,945"
+0271,Hylobates lar,1,"5,700","102,000",555,395,"97,505","2,251","12,078","1,459","5,716"
+0277,Pan troglodytes,1,"46,000","405,000","1,899","6,924","382,103","5,817","43,663","3,739","15,392"
+0279,Gorilla gorilla,1,"105,000","500,000","3,608","8,659","470,359","7,509","69,249","4,352","19,370"
+0280,Homo sapiens sapiens,1,"65,000","1,330,000","18,732","13,205","1,251,847","9,622","137,421","8,087","33,319"
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+"1, 2: Body weight and brain weight standards were taken from Bauchot and Stephan [1966, 1969]. Alterations became necessary for a few",,,,,,,,,,,
+"species, due to extension of material and/or additional information from literature.",,,,,,,,,,,
+"3,4: Ventricles, parts of brain nerves, and remnants of meninges [and hypophysis, see diencephalon, (9)] are regarded not to be pure brain",,,,,,,,,,,
+"tissues. They are included in the measurements, since they are included also when taking the individual brain weight.",,,,,,,,,,,
+"5: Net volume of pure tissue is total brain volume without ventricles (3), nerves, meninges, etc. (4).",,,,,,,,,,,
+"6: Since it is almost impossible to separate distinctly the substantia reticularis of the medulla oblongata from that of the mesencephalon, the",,,,,,,,,,,
+latter is included into the medulla oblongata.,,,,,,,,,,,
+7: Included are brachium and nuclei pontis.,,,,,,,,,,,
+"8: Without substantia reticularis, see 6.",,,,,,,,,,,
+"9: Included is the pallidum (globus pallidus). In order to get comparable values, the hypophysis is excluded from the diencephalon (and",,,,,,,,,,,
+"included in 4) since it is not preserved in all brains (e.g., human), due to difficulties in preparation.",,,,,,,,,,,

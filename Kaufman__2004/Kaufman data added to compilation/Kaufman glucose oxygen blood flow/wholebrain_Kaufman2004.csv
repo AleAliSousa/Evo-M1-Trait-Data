@@ -1,0 +1,21 @@
+Speciesweight,Species,weight,Whole Brain CMRgl N,Whole Brain CMRgl Mean,Whole Brain CMRgl Std. Deviation,Whole Brain CMRgl CV,Whole Brain CMRgl CV_unbiased,Whole Brain CMR02 N,Whole Brain CMR02 Mean,Whole Brain CMR02 Std. Deviation,Whole Brain CMR02 CV,Whole Brain CMR02 CV_unbiased,Whole Brain CBF N,Whole Brain CBF Mean,Whole Brain CBF Std. Deviation,Whole Brain CBF CV,Whole Brain CBF CV_unbiased
+Homounweighted,Homo,unweighted,22,29.31,4.42,15.07,15.24,37,156.92,18.64,11.88,11.96,35,53.06,7.04,13.27,13.36
+Homoweighted,Homo,weighted,216,29.98,5.28,17.61,17.63,358,155.44,27.19,17.49,17.5,335,53.25,9.14,17.16,17.18
+Macacaunweighted,Macaca,unweighted,5,43.15,11.6,26.88,28.22,4,244.19,74.13,30.36,32.25,4,74.93,23.84,31.82,33.81
+Macacaweighted,Macaca,weighted,28,40.66,11.05,27.18,27.42,22,214.93,57.89,26.93,27.24,22,67.33,11.55,17.15,17.35
+Canisunweighted,Canis,unweighted,1,44.5,5,11.24,14.04,1,205.4,22.3,10.86,13.57,1,30.8,6.6,21.43,26.79
+Canisweighted,Canis,weighted,8,44.5,5,11.24,11.59,8,205.4,22.3,10.86,11.2,12,30.8,6.6,21.43,21.88
+Lepusunweighted,Lepus,unweighted,,,,,,1,205.4,17.9,8.71,10.89,1,48,18.5,38.54,48.18
+Lepusweighted,Lepus,weighted,,,,,,38,205.4,17.9,8.71,8.77,38,48,18.5,38.54,38.8
+Merionesunweighted,Meriones,unweighted,,,,,,,,,,,1,102,12.6,12.35,15.44
+Merionesweighted,Meriones,weighted,,,,,,,,,,,10,102,12.6,12.35,12.66
+Rattusunweighted,Rattus,unweighted,13,75.24,13.01,17.29,17.62,7,428.71,69.91,16.31,16.89,7,101.86,7.9,7.76,8.04
+Rattusweighted,Rattus,weighted,205,76.89,19.83,25.79,25.82,106,429.41,76.12,17.73,17.77,106,103.08,18.73,18.17,18.21
+Ovisunweighted,Ovis,unweighted,,,,,,3,223.8,20.44,9.14,9.9,4,64.85,9.93,15.31,16.27
+Ovisweighted,Ovis,weighted,,,,,,18,217.93,47.49,21.79,22.09,30,62.01,11.39,18.37,18.52
+Capraunweighted,Capra,unweighted,,,,,,2,173.43,26.83,15.47,17.4,1,77,7,9.09,11.36
+Capraweighted,Capra,weighted,,,,,,23,182.5,14.03,7.69,7.77,17,77,7,9.09,9.22
+Musunweighted,Mus,unweighted,4,68.03,8.42,12.38,13.15,,,,,,1,117,20,17.09,21.37
+Musweighted,Mus,weighted,37,67.53,8.88,13.15,13.24,,,,,,5,117,20,17.09,17.95
+Equusunweighted,Equus,unweighted,,,,,,,,,,,2,65.4,4.81,7.35,8.27
+Equusweighted,Equus,weighted,,,,,,,,,,,18,64.27,14.17,22.05,22.35

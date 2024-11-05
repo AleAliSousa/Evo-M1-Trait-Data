@@ -1,0 +1,30 @@
+Whole.Brain.CMRgl.N.weighted	
+Whole.Brain.CMRgl.Mean.weighted	
+Whole.Brain.CMRgl.Std..Deviation.weighted	
+Whole.Brain.CMRgl.CV.weighted	
+Whole.Brain.CMRgl.CV_unbiased.weighted	
+Whole.Brain.CMR02.N.weighted	
+Whole.Brain.CMR02.Mean.weighted	
+Whole.Brain.CMR02.Std..Deviation.weighted	
+Whole.Brain.CMR02.CV.weighted	
+Whole.Brain.CMR02.CV_unbiased.weighted	
+Whole.Brain.CBF.N.weighted	
+Whole.Brain.CBF.Mean.weighted	
+Whole.Brain.CBF.Std..Deviation.weighted	
+Whole.Brain.CBF.CV.weighted	
+Whole.Brain.CBF.CV_unbiased.weighted
+
+Whole.Brain	brain structure
+.
+CMRgl	cerebral metabolic rate for glucose
+CMR02	cerebral metabolic rate for oxygen
+CBF	cerebral blood flow
+.
+N	number in sample
+Mean
+Std..Deviation
+CV	coefficient of variation
+CV_unbiased	unbiased coefficient of variation; also CV*
+.
+weighted	Mean is based on the total number of individuals in all studies. Each individual counts as 1/(total number individuals) 
+unweighted	Mean is based on the total number of studies. Each study counts as 1/(total number studies) 

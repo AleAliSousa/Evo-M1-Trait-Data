@@ -3,7 +3,7 @@ Code,Definition,Structure,Measure,Stat,Reference,Note,Source Note
 "N, n",number of neurons,,N.n,,HerculanoHouzel_2015,,
 N/mg,neuronal density (in neurons/mg),,N.p.mg,,HerculanoHouzel_2015,,
 "O, n",number of other cells,,O.n,,HerculanoHouzel_2015,,
-O/mg,other cells density (in neurons/mg),,O.p.mg,,HerculanoHouzel_2015,,
+O/mg,other cells density (in cells/mg),,O.p.mg,,HerculanoHouzel_2015,,
 O/N,"O/N, ratio between numbers of other (non-neuronal) cells and neurons",,O.p.N,,HerculanoHouzel_2015,,
 Cerebellum,"whole cerebellum (both brain halves), including the deep nuclei",Cerebellum,,,HerculanoHouzel_2015,,
 Cerebral Cortex,"sum of gray matter, subcortical white matter, and including the hippocampus, amygdala and piriform cortex in the two hemispheres",CerebralCortex,,,HerculanoHouzel_2015,,

@@ -1,0 +1,55 @@
+"previous studies that determined total numbers of cells and the fraction of neurons
+
+Percentage difference major issues:
+Check for difference between HerculanoHouzel_etal_2015 and DosSantos_etal_2020 
+- describe the difference and compare to the raw data difference
+PART 1
+(A)
+# Whole Brain C (number of cells)
+9	Elephantulus myurus	6.214345595		
+30	Procavia capensis	-0.003964518		
+34	Tragelaphus strepsiceros	99900.000588454	
+
+(B)
+"Cerebral cortex, total (GM+WM+hippoc)" C (number of cells)
+Cx_C
+Cebus apella	3035947220	3707354000	22.115232293	
+!!! Unpublished Cebus apella has 22% more neurons in Cerebral cortex GM+WM+hippoc
+
+(C)
+# "Hippocampus" C (number of cells)
+Elephantulus myurus	12080000	17540000	45.198675496689	
+!!! Unpublished data has more cells in elephant shrew hippocampus!!
+
+(D)
+# "Hippocampus" I/N (microglia per neurons)
+Tragelaphus strepsiceros	3.946	1.0339623	-73.797205673	
+
+(E)
+# "Cerebral cortex, total (GM+WM+hippoc)" C (number of cells)
+Papio anubis cynocephalus	4934116014	6740084000	36.601652269
+!!! Unpublished Papio anubis cynocephalus has 37% more neurons in Cerebral cortex
+
+
+
+Conclusion:if we remove ALL PUBLISHED number of cells and Tragelaphus strepsiceros, and all NEW Cells, conflicts will disappear
+1) Replace Tragelaphus strepsiceros with Un-published 
+2)use the older publication of number of cells
+
+Question 1: compare capuchin Cx Cells
+unpublished: 3707354000
+Dos Santos: 3035947220
+HH 2015: 3690000000
+(No Ctx data for C. apella)
+-- Q1A does it impact ratio I/N?
+--- Is it because different individuals in sample?
+
+Question 2: compare Elephantulus myurus "Hippocampus" C  Cells
+
+PART 2
+- Compared cerebral cortex ratio microglia per cells calculated from data published in Dos Santos versus seen in raw data
+- Cebus apella had 20% more migroglia per cell in publication
+
+
+The earlier citation for primate cortical cells (neurons + other) seems to actually be this: 
+https://karger.com/bbe/article/76/1/32/326591/Cellular-Scaling-Rules-for-the-Brains-of-an

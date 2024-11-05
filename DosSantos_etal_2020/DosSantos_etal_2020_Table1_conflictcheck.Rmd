@@ -1,6 +1,14 @@
 
+```{r setup, include=FALSE, echo=FALSE}
+require("knitr")
+opts_knit$set(root.dir = "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/")
+```
 ```{r}
-setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/")
+getwd()
+```
+
+```{r}
+#setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/")
 folder_path <- "./DosSantos_etal_2020/"
 
 library(dplyr)
@@ -19,28 +27,25 @@ tabledirect_reduced <- tabledirectxl[tabledirectxl$`Section #` != "Average", ]
 tabledirect_reduced <- tabledirectxl[-c(1,4:7,12)]
 tabledirect_summary <- as.data.frame(tabledirect_reduced %>% summarise(across(everything(), mean,na.rm=T), .by = c("Animal Latin Name", "Structure")))
 ```
-
-```{r}
-# 3. Whole brain
-# Whole Brain C (number of cells)
-unpublished <- data.frame(tabledirect_summary$`Number cells 2H`[tabledirect_summary$Structure == c("Whole brain")], tabledirect_summary$`Animal Latin Name`[tabledirect_summary$Structure == c("Whole brain")])
-paper <- data.frame(DosSantos_etal_2020_Table1$Br_C, DosSantos_etal_2020_Table1$"Species name")
-colnames(paper)=c("Br_C", "Species")
-colnames(unpublished)=c("Br_C_U", "Species")
-merged_df<- merge(paper,unpublished, all = T)
-## the different ones
-paper[!paper$Br_C %in% unpublished$Br_C_U, ]
-## Calculate percentage difference
-merged_df$Percentage_Difference <- ((merged_df$Br_C_U - merged_df$Br_C) / merged_df$Br_C) * 100
-merged_df
-
-# Subset rows where Percentage_Difference is greater than zero
-subset(merged_df, abs(Percentage_Difference) > 0, select = c("Species", "Percentage_Difference"))
-```
+<!-- ```{r} -->
+<!-- # 3. Whole brain -->
+<!-- # Whole Brain C (number of cells) -->
+<!-- unpublished <- data.frame(tabledirect_summary$`Number cells 2H`[tabledirect_summary$Structure == c("Whole brain")], tabledirect_summary$`Animal Latin Name`[tabledirect_summary$Structure == c("Whole brain")]) -->
+<!-- paper <- data.frame(DosSantos_etal_2020_Table1$Br_C, DosSantos_etal_2020_Table1$"Species name") -->
+<!-- colnames(paper)=c("Br_C", "Species") -->
+<!-- colnames(unpublished)=c("Br_C_U", "Species") -->
+<!-- merged_df<- merge(paper,unpublished, all = T) -->
+<!-- ## the different ones -->
+<!-- paper[!paper$Br_C %in% unpublished$Br_C_U, ] -->
+<!-- ## Calculate percentage difference -->
+<!-- merged_df$Percentage_Difference <- ((merged_df$Br_C_U - merged_df$Br_C) / merged_df$Br_C) * 100 -->
+<!-- merged_df -->
+<!-- # Subset rows where Percentage_Difference is greater than zero -->
+<!-- subset(merged_df, abs(Percentage_Difference) > 0, select = c("Species", "Percentage_Difference")) -->
+<!-- ``` -->
 ```{r}
 df_list<-list()
 ```
-
 
 ```{r}
 UV <- "Number cells 2H"
@@ -155,8 +160,6 @@ merged_df
 min(merged_df$Percentage_Difference, na.rm = TRUE)
 max(merged_df$Percentage_Difference, na.rm = TRUE)
 ```
-
-
 ```{r}
 # "Cerebral cortex, total (GM+WM+hippoc)" I/N (microglia per neurons)
 unpublished <- data.frame(tabledirect_summary$`Iba1/N`[tabledirect_summary$Structure == c("Cerebral cortex, total (GM+WM+hippoc)")], tabledirect_summary$`Animal Latin Name`[tabledirect_summary$Structure == c("Cerebral cortex, total (GM+WM+hippoc)")])
@@ -172,7 +175,6 @@ merged_df
 min(merged_df$Percentage_Difference, na.rm = TRUE)
 max(merged_df$Percentage_Difference, na.rm = TRUE)
 ```
-
 
 ```{r}
 # 5. "Cerebellum"
@@ -191,7 +193,6 @@ min(merged_df$Percentage_Difference, na.rm = TRUE)
 max(merged_df$Percentage_Difference, na.rm = TRUE)
 ```
 
-
 ```{r}
 # "Cerebellum" I/N (microglia per neurons)
 unpublished <- data.frame(tabledirect_summary$`Iba1/N`[tabledirect_summary$Structure == c("Cerebellum")], tabledirect_summary$`Animal Latin Name`[tabledirect_summary$Structure == c("Cerebellum")])
@@ -207,8 +208,6 @@ merged_df
 min(merged_df$Percentage_Difference, na.rm = TRUE)
 max(merged_df$Percentage_Difference, na.rm = TRUE)
 ```
-
-
 ```{r}
 # 6. "Hippocampus"
 # "Hippocampus" C (number of cells)
@@ -226,7 +225,6 @@ min(merged_df$Percentage_Difference, na.rm = TRUE)
 max(merged_df$Percentage_Difference, na.rm = TRUE)
 ```
 
-
 ```{r}
 # "Hippocampus" I/N (microglia per neurons)
 unpublished <- data.frame(tabledirect_summary$`Iba1/N`[tabledirect_summary$Structure == c("Hippocampus")], tabledirect_summary$`Animal Latin Name`[tabledirect_summary$Structure == c("Hippocampus")])
@@ -242,8 +240,6 @@ merged_df
 min(merged_df$Percentage_Difference, na.rm = TRUE)
 max(merged_df$Percentage_Difference, na.rm = TRUE)
 ```
-
-
 ```{r}
 # 7. "Pons + Medulla"
 # "Pons + Medulla" C (number of cells)
@@ -277,8 +273,6 @@ merged_df
 min(merged_df$Percentage_Difference, na.rm = TRUE)
 max(merged_df$Percentage_Difference, na.rm = TRUE)
 ```
-
-
 ## repeat for I/N for all other structures Cerebral Cortex etc.
 ## PROBABLY only keep I/N from that paper -- check I/N is OK
 ```{r}
@@ -298,23 +292,109 @@ structure_u <- unique(tabledirect_summary$Structure)
 structure_u
 ```
 
-```{r}
-ref_table$Structure_U[ref_table$Structure == "Br"] <- "Whole brain"
-ref_table$Structure_U[ref_table$Structure == "Cb"] <- "Cerebellum"
-ref_table$Structure_U[ref_table$Structure == "Ctx"] <- ?
-ref_table$Structure_U[ref_table$Structure == "Cx"] <- "GM+WM+hippoc"
-ref_table$Structure_U[ref_table$Structure == "Hp"] <- "Hippocampus"
-ref_table$Structure_U[ref_table$Structure == "P+M"] <- "Pons + Medulla"
-ref_table$Structure_U[ref_table$Structure == "RoB"] <- "Pons + Medulla"
-```
+<!-- ```{r} -->
+<!-- ref_table$Structure_U[ref_table$Structure == "Br"] <- "Whole brain" -->
+<!-- ref_table$Structure_U[ref_table$Structure == "Cb"] <- "Cerebellum" -->
+<!-- ref_table$Structure_U[ref_table$Structure == "Ctx"] <- "GM+WM" -->
+<!-- ref_table$Structure_U[ref_table$Structure == "Cx"] <- "GM+WM+hippoc" -->
+<!-- ref_table$Structure_U[ref_table$Structure == "Hp"] <- "Hippocampus" -->
+<!-- ref_table$Structure_U[ref_table$Structure == "P+M"] <- "Pons + Medulla" -->
+<!-- ref_table$Structure_U[ref_table$Structure == "RoB"] <- "Rest of Brain" -->
+<!-- ``` -->
+
+<!-- ```{r} -->
+<!-- P_ref_table <- data.frame(Column_Name = colnames(DosSantos_etal_2020_Table1)[-1], -->
+<!--                         Structure = sapply(strsplit(colnames(DosSantos_etal_2020_Table1)[-1], "_"), `[`, 1), -->
+<!--                         Measure = sapply(strsplit(colnames(DosSantos_etal_2020_Table1)[-1], "_"), `[`, 2), -->
+
+<!-- U_ref_table <- data.frame(Structure_U = unique(tabledirect_summary$Structure), -->
+<!--                         Structure_U = character(length(colnames(DosSantos_etal_2020_Table1)[-1])), -->
+<!--                         Measure_U = character(length(colnames(DosSantos_etal_2020_Table1)[-1])), -->
+<!--                         Column_Name_U = character(length(colnames(DosSantos_etal_2020_Table1)[-1]))) -->
+<!-- ``` -->
 
 ```{r}
-P_ref_table <- data.frame(Column_Name = colnames(DosSantos_etal_2020_Table1)[-1],
-                        Structure = sapply(strsplit(colnames(DosSantos_etal_2020_Table1)[-1], "_"), `[`, 1),
-                        Measure = sapply(strsplit(colnames(DosSantos_etal_2020_Table1)[-1], "_"), `[`, 2),
-                        
-U_ref_table <- data.frame(Structure_U = unique(tabledirect_summary$Structure),
-                        Structure_U = character(length(colnames(DosSantos_etal_2020_Table1)[-1])),
-                        Measure_U = character(length(colnames(DosSantos_etal_2020_Table1)[-1])),
-                        Column_Name_U = character(length(colnames(DosSantos_etal_2020_Table1)[-1])))
+# Calculate new I/C columns for publication dataset
+# Get the column names (excluding the first column)
+column_names <- colnames(DosSantos_etal_2020_Table1)[-1]
+
+# Split column names by the underscore
+split_names <- strsplit(column_names, "_")
+
+# Extract prefixes and suffixes
+prefixes <- sapply(split_names, `[`, 1)  # Get the first element (prefix)
+suffixes <- sapply(split_names, `[`, 2)  # Get the second element (suffix)
+
+# Get unique prefixes and suffixes
+unique_prefixes<-unique(prefixes)
+unique_suffixes<-unique(suffixes)
+
+unique_prefixes
+unique_suffixes
+```
+```{r}
+# Loop through each unique prefix
+for (prefix in unique_prefixes) {
+  # Create column names for 'I' and 'C' suffixes for the current prefix
+  I_col <- paste0(prefix, "_I")
+  C_col <- paste0(prefix, "_C")
+
+  # Check if both columns (I and C) exist in the dataset
+  if (I_col %in% colnames(DosSantos_etal_2020_Table1) & C_col %in% colnames(DosSantos_etal_2020_Table1)) {
+    # Create a new column with the ratio I / C
+    new_col <- paste0(prefix, "_I/C")
+    DosSantos_etal_2020_Table1[[new_col]] <- DosSantos_etal_2020_Table1[[I_col]] / DosSantos_etal_2020_Table1[[C_col]]
+  }
+}
+```
+# Run similar comparisons for microglia per cells
+
+# Whole Brain I/C (ratio migroglia per cells)
+```{r}
+UV <- "%Iba1+"
+US <- "Whole brain"
+PSV <- "Br_I/C"
+
+unpublished <- data.frame(tabledirect_summary[[UV]][tabledirect_summary$Structure == US], tabledirect_summary$"Animal Latin Name"[tabledirect_summary$Structure == US])
+paper <- data.frame(DosSantos_etal_2020_Table1[[PSV]], DosSantos_etal_2020_Table1$"Species name")
+colnames(paper) <- c(PSV, "Species")
+colnames(unpublished) <- c(paste0(PSV, "_U"), "Species")
+# Round the columns to 3 decimal places before comparing
+paper[[PSV]] <- round(paper[[PSV]], digits = 3)
+unpublished[[paste0(PSV, "_U")]] <- round(unpublished[[paste0(PSV, "_U")]], digits = 3)
+merged_df <- merge(paper, unpublished, all = TRUE)
+## the different ones
+different_rows <- paper[!paper[[PSV]] %in% unpublished[[paste0(PSV, "_U")]], ]
+## Calculate percentage difference
+merged_df$Percentage_Difference <- ((merged_df[[paste0(PSV, "_U")]] - merged_df[[PSV]]) / merged_df[[PSV]]) * 100
+# add merged_df to the list
+df_list[[paste0(PSV)]]<-merged_df
+# Subset rows where Percentage_Difference is greater than zero
+subset_df <- subset(merged_df, abs(Percentage_Difference) > 0, select = c("Species", "Percentage_Difference"))
+print(subset_df)
+```
+
+# "Cerebral cortex, total (GM+WM+hippoc)" I/C (ratio migroglia per cells)
+```{r}
+UV <- "%Iba1+"
+US <- "Cerebral cortex, total (GM+WM+hippoc)"
+PSV <- "Cx_I/C"
+
+unpublished <- data.frame(tabledirect_summary[[UV]][tabledirect_summary$Structure == US], tabledirect_summary$"Animal Latin Name"[tabledirect_summary$Structure == US])
+paper <- data.frame(DosSantos_etal_2020_Table1[[PSV]], DosSantos_etal_2020_Table1$"Species name")
+colnames(paper) <- c(PSV, "Species")
+colnames(unpublished) <- c(paste0(PSV, "_U"), "Species")
+# Round the columns to 3 decimal places before comparing
+paper[[PSV]] <- round(paper[[PSV]], digits = 3)
+unpublished[[paste0(PSV, "_U")]] <- round(unpublished[[paste0(PSV, "_U")]], digits = 3)
+merged_df <- merge(paper, unpublished, all = TRUE)
+## the different ones
+different_rows <- paper[!paper[[PSV]] %in% unpublished[[paste0(PSV, "_U")]], ]
+## Calculate percentage difference
+merged_df$Percentage_Difference <- ((merged_df[[paste0(PSV, "_U")]] - merged_df[[PSV]]) / merged_df[[PSV]]) * 100
+# add merged_df to the list
+df_list[[paste0(PSV)]]<-merged_df
+# Subset rows where Percentage_Difference is greater than zero
+subset_df <- subset(merged_df, abs(Percentage_Difference) > 0, select = c("Species", "Percentage_Difference"))
+print(subset_df)
 ```

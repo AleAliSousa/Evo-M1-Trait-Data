@@ -20,7 +20,8 @@ library(readxl)
 item_name <- c(
   "Burish_etal_2010_Table1",
   "DosSantos_etal_2017_TableS1",
-  "DosSantos_etal_2020_Table1",
+ # "DosSantos_etal_2020_Table1",
+  "DosSantos_etal_2020_unpublished",
   "HerculanoHouzel_etal_2015_Table1",
   "HerculanoHouzel_etal_2015_Table2",
   "HerculanoHouzel_etal_2015_Table3",
@@ -152,44 +153,45 @@ for (i in seq_along(item_name)) {
   # Update the dataframe in the list
   cellcounts_data_list$HerculanoHouzel_etal_2020_TABLE2 <- df
 }
-
-# 3.5 Calculate microglia per cells (I/C) data which was not reported in Dos Santos et al. 2020 Table 1 but must have been their primary data
-# Formula: _I.p.C = _I.n/_C.n
-  
-  # Extract the specific dataframe
-  df <- cellcounts_data_list$DosSantos_etal_2020_Table1
-  # Extract unique prefixes from column names
-  prefixes <- unique(sub("_.*", "", colnames(df)))
-  # Add an initial step to create the _I.p.C column if the condition is satisfied
-  for (prefix in prefixes) {
-    In_column <- paste0(prefix, "_I.n")
-    Cn_column <- paste0(prefix, "_C.n")
-    IpC_column <- paste0(prefix, "_I.p.C")
-    if (In_column %in% colnames(df) && Cn_column %in% colnames(df) && 
-        !any(is.na(df[[In_column]])) && !any(is.na(df[[Cn_column]]))) {
-      df[[IpC_column]] <- df[[In_column]] / df[[Cn_column]]
-    }
-  }
-  # Loop through each unique prefix to handle remaining rows
-  for (prefix in prefixes) {
-    # Define column names
-    In_column <- paste0(prefix, "_I.n")
-    Cn_column <- paste0(prefix, "_C.n")
-    IpC_column <- paste0(prefix, "_I.p.C")
-    # Check if both In_column and Cn_column exist
-    if (In_column %in% colnames(df) && Cn_column %in% colnames(df)) {
-      # Check for NA values in both columns
-      if (!any(is.na(df[[In_column]])) && !any(is.na(df[[Cn_column]]))) {
-        # Skip rows with NA values and already calculated _I.p.C values
-        next
-      }
-      # Calculate _I.p.C based on the given formula
-      df[[IpC_column]] <- df[[In_column]] / df[[Cn_column]]
-    }
-  }
-  # Update the dataframe in the list
-  cellcounts_data_list$DosSantos_etal_2020_Table1 <- df
-  cellcounts_data_list$DosSantos_etal_2020_Table1$WholeBrain_I.p.C
+### DosSantos_etal_2020_Table1 omit ###
+# # 3.5 Calculate microglia per cells (I/C) data which was not reported in Dos Santos et al. 2020 Table 1 but must have been their primary data
+# # Formula: _I.p.C = _I.n/_C.n
+#   
+#   # Extract the specific dataframe
+#   df <- cellcounts_data_list$DosSantos_etal_2020_Table1
+#   # Extract unique prefixes from column names
+#   prefixes <- unique(sub("_.*", "", colnames(df)))
+#   # Add an initial step to create the _I.p.C column if the condition is satisfied
+#   for (prefix in prefixes) {
+#     In_column <- paste0(prefix, "_I.n")
+#     Cn_column <- paste0(prefix, "_C.n")
+#     IpC_column <- paste0(prefix, "_I.p.C")
+#     if (In_column %in% colnames(df) && Cn_column %in% colnames(df) && 
+#         !any(is.na(df[[In_column]])) && !any(is.na(df[[Cn_column]]))) {
+#       df[[IpC_column]] <- df[[In_column]] / df[[Cn_column]]
+#     }
+#   }
+#   # Loop through each unique prefix to handle remaining rows
+#   for (prefix in prefixes) {
+#     # Define column names
+#     In_column <- paste0(prefix, "_I.n")
+#     Cn_column <- paste0(prefix, "_C.n")
+#     IpC_column <- paste0(prefix, "_I.p.C")
+#     # Check if both In_column and Cn_column exist
+#     if (In_column %in% colnames(df) && Cn_column %in% colnames(df)) {
+#       # Check for NA values in both columns
+#       if (!any(is.na(df[[In_column]])) && !any(is.na(df[[Cn_column]]))) {
+#         # Skip rows with NA values and already calculated _I.p.C values
+#         next
+#       }
+#       # Calculate _I.p.C based on the given formula
+#       df[[IpC_column]] <- df[[In_column]] / df[[Cn_column]]
+#     }
+#   }
+#   # Update the dataframe in the list
+#   cellcounts_data_list$DosSantos_etal_2020_Table1 <- df
+#   cellcounts_data_list$DosSantos_etal_2020_Table1$WholeBrain_I.p.C
+### DosSantos_etal_2020_Table1 omit ### 
 
 # 3.6 Calculate Cell number where not already available (it was only reported in Dos Santos et al., 2020)
 # Formula _C.n = _N.n + _O.n
@@ -363,13 +365,13 @@ write.csv(cellcounts_unfiltered, file = "cellcounts_unfiltered.csv", row.names =
 
 # Create a copy of cellcounts_data_list to filter
 filtered_cellcounts_data_list <- lapply(cellcounts_data_list, data.frame)
-
-# Extract suffixes from DosSantos_etal_2020_Table1 to determine secondary data variables to exclude.
-suffixes <- unique(sub(".*_", "", grep(".*_.*", colnames(cellcounts_data_list$DosSantos_etal_2020_Table1), value = TRUE)))
-# Ignore '_I.p.C' and '_S.n' which estimates the primary data and Species_Source which is not really a variable.
-suffixes <- suffixes[!(suffixes %in% c("I.p.C", "Source", "S.n"))]
-paste0("_",suffixes, collapse = "|") # Manually change the double quotes for single in the script
-
+# ### DosSantos_etal_2020_Table1 omit ###
+# # Extract suffixes from DosSantos_etal_2020_Table1 to determine secondary data variables to exclude.
+# suffixes <- unique(sub(".*_", "", grep(".*_.*", colnames(cellcounts_data_list$DosSantos_etal_2020_Table1), value = TRUE)))
+# # Ignore '_I.p.C' and '_S.n' which estimates the primary data and Species_Source which is not really a variable.
+# suffixes <- suffixes[!(suffixes %in% c("I.p.C", "Source", "S.n"))]
+# paste0("_",suffixes, collapse = "|") # Manually change the double quotes for single in the script
+# ### DosSantos_etal_2020_Table1 omit ###
 ## 5.1 Flag problematic data for removal
 
 # Initialize metadata_flags for each dataframe with names from filtered_cellcounts_data_list
@@ -381,23 +383,23 @@ for (df_name in names(filtered_cellcounts_data_list)) {
     Flag_Condition_Type = c(NA)
   )
 }
-
-# Modify metadata_flags DosSantos_etal_2020_Table1 to include multiple rows for flag conditions and descriptions
-metadata_flags$DosSantos_etal_2020_Table1 <- list(
-  Flag_Condition = c(
-    "filtered_cellcounts_data_list[[df_name]]$Species == 'Tragelaphus strepsiceros'",
-    "grepl('_C.n|_I.n|_I.p.mg|_I.p.N|_N.n|_N.p.mg|_n.S|_Mass.g', colnames(filtered_cellcounts_data_list[[df_name]]))"
-  ),
-  Flag_Description = c(
-    "Omit Row Species == Tragelaphus strepsiceros due to impossible numbers",
-    "Omit secondary data columns due to some typos/conflicts with primary sources, and illogical values."
-  ),
-  Flag_Condition_Type = c(
-    "row",
-    "column"
-  )
-)
-
+# ### DosSantos_etal_2020_Table1 omit ###
+# # Modify metadata_flags DosSantos_etal_2020_Table1 to include multiple rows for flag conditions and descriptions
+# metadata_flags$DosSantos_etal_2020_Table1 <- list(
+#   Flag_Condition = c(
+#     "filtered_cellcounts_data_list[[df_name]]$Species == 'Tragelaphus strepsiceros'",
+#     "grepl('_C.n|_I.n|_I.p.mg|_I.p.N|_N.n|_N.p.mg|_n.S|_Mass.g', colnames(filtered_cellcounts_data_list[[df_name]]))"
+#   ),
+#   Flag_Description = c(
+#     "Omit Row Species == Tragelaphus strepsiceros due to impossible numbers",
+#     "Omit secondary data columns due to some typos/conflicts with primary sources, and illogical values."
+#   ),
+#   Flag_Condition_Type = c(
+#     "row",
+#     "column"
+#   )
+# )
+# ### DosSantos_etal_2020_Table1 omit ###
 ## Delete flagged data
 # Loop through every dataframe in filtered_cellcounts_data_list
 for (df_name in names(filtered_cellcounts_data_list)) {

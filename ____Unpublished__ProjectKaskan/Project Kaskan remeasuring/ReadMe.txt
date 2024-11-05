@@ -1,6 +1,10 @@
 1. Open PDF in Adobe and Export > Image > JPEG
 2. Open a figure page in ImageJ
 3. Start with linear scale
+- Use the line selection tool to draw a line along the length of the scale bar
+- go to Analyze > Set Scale
+- input the known physical distance represented by the line bar in the "known distance" field, along with the appropriate unit of measurement
+
 4. Next Wand (tracing) tool
 5. Do largest structure first
 

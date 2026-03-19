@@ -1,15 +1,31 @@
-## 1. SOURCE
-setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/")
-folder_path <- "./AvelinodeSouza_etal_2025/"
+## 0. PATHS ---------------------------------------------------------------
+library(rstudioapi)
+
+script_path  <- rstudioapi::getActiveDocumentContext()$path
+paper_dir    <- dirname(script_path)                 # AvelinodeSouza_etal_2025
+dataset_root <- dirname(paper_dir)                   # Evo-M1-Trait-Data
+table_name   <- tools::file_path_sans_ext(basename(script_path))
+
+# --- PDF SOURCE (manual, per your rule) ---
+pdf_file <- file.path(
+  paper_dir,
+  "Avelino-de-Souz-2025-Cellular Composition of t.pdf"
+)
+
+# Outputs
+snapshot_csv   <- file.path(paper_dir, paste0(table_name, "_snapshot.csv"))
+final_csv      <- file.path(paper_dir, paste0(table_name, ".csv"))
+readme_xlsx    <- file.path(dataset_root, "__ReadMe.xlsx")
+public_tsv_dir <- file.path(dataset_root, "__Public", "comparative-data")
+
 
 # Load the tabulizer library and rJava
+## 1. SOURCE ---------------------------------------------------------------
 library(rJava)
 library(tabulapdf)
 library(tidyverse)
-# Define the PDF file path
-pdf_file <- file.path(folder_path, "Avelino-de-Souz-2025-Cellular Composition of t.pdf")
-# Use extract_tables to get all tables on the specified page
-tables1 <- extract_tables(pdf_file,pages = c(5))
+
+tables1 <- extract_tables(pdf_file, pages = c(5))
 
 ## 2. FIX FORMATTING AND SAVE SNAPSHOT
 # Convert the matrices into data frames
@@ -54,7 +70,7 @@ df1 <- df1[!cont, , drop = FALSE]
 row.names(df1) <- NULL
 
 # Save snapshot as a CSV file
-write.csv(df1, paste0(folder_path, file = "AvelinodeSouza_etal_2025_TABLE1_snapshot.csv"), row.names = FALSE)
+write.csv(df1, snapshot_csv, row.names = FALSE)
 
 ## 3. MAKE DATA READABLE
 clean_df<-df1
@@ -89,26 +105,27 @@ options(scipen = 999)
 ## 5. EQULIVALENCIES TABLE
 
 
-## 4. Save
+## 5. SAVE ---------------------------------------------------------------
 
-# Finalize dataframe (UPDATE!!!)
 final.dataframe <- result_df
 
-# Get Item name: Get Path of the current script, Extract the file name, Remove the ".R" extension
-library(rstudioapi)
-item_name <- gsub("\\.R$", "", basename(rstudioapi::getActiveDocumentContext()$path))
+filecodes <- read_excel(readme_xlsx, sheet = "Sheet1")
 
-# Get Item encoded
-library(readxl) 
-filecodes <- read_excel("./__ReadMe.xlsx", sheet = "Sheet1")
-item_encoded <- filecodes$"Item encoded"[match(item_name, filecodes$"Item name")]
+item_encoded <- filecodes$`Item encoded`[
+  match(table_name, filecodes$`Item name`)
+]
 
-# Save dataframe to a CSV file
-write.csv(final.dataframe, file = paste0(folder_path, item_name, ".csv"), row.names = FALSE)
+# Local CSV (paper folder)
+write.csv(final.dataframe, final_csv, row.names = FALSE)
 
-# Save dataframe to a TSV file in the online database
-tsv_file_path <- "./__Public/comparative-data/"
-write.table(final.dataframe, file = paste0(tsv_file_path, item_encoded, ".tsv"), sep = "\t", row.names = FALSE)
+# Public TSV
+dir.create(public_tsv_dir, recursive = TRUE, showWarnings = FALSE)
+write.table(
+  final.dataframe,
+  file = file.path(public_tsv_dir, paste0(item_encoded, ".tsv")),
+  sep = "\t",
+  row.names = FALSE
+)
 
 
 # ------------- EDIT HERE IF YOU WANT DIFFERENT REGION TOKENS -------------

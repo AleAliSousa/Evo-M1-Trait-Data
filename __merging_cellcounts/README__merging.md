@@ -1,4 +1,4 @@
-There were the steps in mergeing cell types counts data
+These were the steps in merging cell types counts data
 1. Standardized term list creation
 Inputs: one file per table
 Outputs:"standardized_term_cellcounts.csv"

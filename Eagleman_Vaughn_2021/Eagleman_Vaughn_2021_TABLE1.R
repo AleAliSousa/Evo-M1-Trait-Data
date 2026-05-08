@@ -70,6 +70,8 @@ df3 <- df2 %>%
 # check
 df3[ , 3:6]
      
+write.csv(df3, snapshot_csv, row.names = FALSE)
+
 df<-df3
 
 ## 3. REMOVE PDF ARTIFACT COLUMNS --------------------------------------------

@@ -60,6 +60,9 @@ df2[df2 == "n.a."] <- NA
 
 df2 <- df2 %>%
   mutate_all(~ gsub("\\s+", "", .))
+## Save snapshot------------------------------------------------------------------------------
+
+write.csv(df2, snapshot_csv, row.names = FALSE)
 
 ## 2.6 Converting to Numeric-------------------------------------------------------
 
@@ -79,10 +82,10 @@ item_encoded <- filecodes$`Item encoded`[match(table_name, filecodes$`Item name`
 write.csv(final.dataframe, final_csv, row.names = FALSE)
 
 # Public TSV output
-dir.create(public_tsv_dir, recursive = TRUE, showWarnings = FALSE)
-write.table(final.dataframe,
-            file = file.path(public_tsv_dir, paste0(item_encoded, ".tsv")),
-            sep = "\t", row.names = FALSE)
+# dir.create(public_tsv_dir, recursive = TRUE, showWarnings = FALSE)
+# write.table(final.dataframe,
+#            file = file.path(public_tsv_dir, paste0(item_encoded, ".tsv")),
+#            sep = "\t", row.names = FALSE)
 
 
 

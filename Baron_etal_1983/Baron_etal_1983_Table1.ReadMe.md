@@ -6,49 +6,52 @@ PDF: `baron_etal_1983.pdf`
 
 Paper: Baron, G., Frahm, H. D., Bhatnagar, K. P., and Stephan, H. (1983). *Comparison of Brain Structure Volumes in Insectivora and Primates. III. Main olfactory bulb (MOB).* Journal fuer Hirnforschung 24:551-568.
 
-Table: **Table 1. Data on total MOB (layers 1-6 + periventricular zone).**
+Table: **Table 1. Data on total MOB (layers 1-6 + periventricular zone).** 76 species.
 
-The source table spans PDF pages 3-5 in the local file render (`page-03.png`, `page-04.png`, `page-05.png`).
+## Three separate concerns
 
-## Snapshot
+1. **Preparation** (`Baron_etal_1983_Table1.R`) — turn the snapshot into a lean per-species CSV. Values come from the snapshot; current names come from the species reference table. Column meanings/units live in the definitions table, not in the data.
+2. **Checking** (`Baron_etal_1983_Table1_compare_to_Baron_1983_csv.R`) — a separate QA process that audits `Baron_1983.csv` against the snapshot (and, optionally, against the reference table).
+3. **Reference tables** (`reference_tables/`) — the species crosswalk and the definitions/data dictionary. Per-paper for now; to be folded into shared, cross-paper tables in the compilation step.
 
-`Baron_etal_1983_Table1_snapshot.xlsx`, sheet `Table1_snapshot`.
+| File | Role |
+|---|---|
+| `Baron_etal_1983_Table1_snapshot.xlsx` | Faithful capture of the PDF table (sheet `Table1_snapshot`). Source of truth for values. |
+| `Baron_etal_1983_Table1.R` | Preparation -> `Baron_etal_1983_Table1.csv`. |
+| `Baron_etal_1983_Table1_compare_to_Baron_1983_csv.R` | Checking (QA) against `Baron_1983.csv`. |
+| `Baron_1983.csv` | Earlier formatted/draft table. Audited only. |
+| `reference_tables/Baron_etal_1983_species_crosswalk.csv` | Species reference: Baron code -> current name + order/family (MDD v2.4). |
+| `reference_tables/Baron_etal_1983_definitions.csv` | Data dictionary: anatomy code, value columns + units, and the legend symbols. |
 
-This workbook is the faithful capture layer. It preserves the original table orientation and labels from the PDF: original species names and abbreviations, original four-digit code numbers, asterisk markers in `n`, plus-sign markers on selected volumes, the group/means headings, and the footnotes below the table. Row 1 is the caption, row 2 is the header, rows 3+ are data.
+## 1. Preparation — `Baron_etal_1983_Table1.R` -> `Baron_etal_1983_Table1.csv`
 
-Do not use the snapshot directly for analysis. Use it as the auditable representation of the PDF table. Both R scripts read it directly from the `.xlsx` (no intermediate snapshot CSV).
+One row per species (76), 13 lean columns:
 
-## Scripts
+`code_Baron1983`, `Anatomy_code` (MOB), `Species_Baron1983` (old name), `Species` (current name), `Species_former_synonym`, `n`, `n_note`, `volume_mm3`, `volume_note`, `SEM_pct`, `size_index`, `permille_net_brain`, `permille_telencephalon`.
 
-Both scripts are written in **tidyverse** (`readxl`, `readr`, `dplyr`, `tidyr`, `stringr`, `tibble`). Install once with `install.packages(c("tidyverse", "readxl"))`. Run from this folder (set the working directory here first).
+What it does:
 
-### 1. Comparison / audit — `Baron_etal_1983_Table1_compare_to_Baron_1983_csv.R`
+- **Names.** `Species_Baron1983` is the 1983 name with footnote digits dropped and Baron's three abbreviations completed (`semispin.` -> semispinosus, `madagascar.` -> madagascariensis, `Avahi l.` -> Avahi laniger). `Species` is the current accepted name pulled from the species crosswalk by code. Genus-level entries (`Tarsius spp.` etc.) are left as-is.
+- **Footnotes translated.** Instead of keeping the bare superscript, `Species_former_synonym` gives the name that superscript points to in the legend — the name used in former papers / Stephan et al. (1981a). Populated for the 12 footnoted species (e.g. *Otolemur crassicaudatus* -> former *Galago crassicaudatus*).
+- **Values + markers.** `n` and the value columns are numeric (dashes/blanks -> `NA`). The `*` on `n` is kept in `n_note`; the `+` on volume is kept in `volume_note`. Their meanings are defined in the definitions table.
 
-Reads the snapshot `.xlsx` and `Baron_1983.csv`, matches rows by the Baron 1983 code, and compares `n` and MOB volume numerically. The CSV's updated binomial (`Species`) is treated as an intentional improvement and is never a mismatch; the original label (`Species_Baron1983`) is compared against the snapshot.
+What it deliberately omits (now in the definitions table or dropped as redundant): units, the full anatomy term, `Structure_original`, the reference/table-number columns, the verbatim superscripted label, and the taxonomic grouping (the grouping lives in the species crosswalk).
 
-Writes:
+On save it writes two files (matching the convention in your other `_Table1.R` scripts): `Baron_etal_1983_Table1.csv` next to the script, and a tab-separated copy named by the item's encoded DOI — looked up in the master `__ReadMe.xlsx` — into the shared `__Public/comparative-data/` folder. If the DOI isn't found or the shared folder is missing, the TSV is skipped with a warning and the local CSV is still written.
 
-- `Baron_etal_1983_Table1_comparison_report_from_R.csv` — every matched/unmatched row with match flags.
-- `Baron_etal_1983_Table1_comparison_mismatches_from_R.csv` — only rows needing attention.
+## 2. Checking — `Baron_etal_1983_Table1_compare_to_Baron_1983_csv.R`
 
-Current result: all 76 species match by code with **0 `n` mismatches and 0 volume mismatches**. Two original-name transcription typos in the CSV are surfaced for review: code 0589 `Oryzoricles talpoides` (snapshot `Oryzorictes talpoides`) and code 3244 `Avahi I. occidentalis` (snapshot `Avahi l. occidentalis`).
+Matches `Baron_1983.csv` to the snapshot by code and reports three checks separately:
 
-> **Bug fixed in this version.** `Baron_1983.csv` contains a non-UTF-8 byte (`0xCA`, a Mac-Roman non-breaking space) inside *Scutisorex somereni*. The previous reader tried UTF-8 first; R hit the bad byte, emitted a **warning** (not an error), and silently truncated the read there — dropping the 12 species below that line. Because it was a warning, the `tryCatch()` latin1 fallback never fired, so those species (Tenrec, Suncus, Tupaia, Tarsius, etc.) were wrongly reported as "missing from csv". The CSV is now read with `readr::locale(encoding = "latin1")`, which reads every byte.
+1. **Values** — `n` and MOB volume. Result: 0 mismatches across all 76.
+2. **Faithful name** — snapshot vs the CSV's `Species_Baron1983`. Result: **2** transcription typos (0589 `Oryzoricles`; 3244 `Avahi I.`).
+3. **Taxonomy currency** *(optional)* — the CSV's updated `Species` vs the crosswalk's current name; skipped if the reference table is absent. Result: **4** out-of-date names.
 
-### 2. Analysis-ready table — `Baron_etal_1983_Table1.R`
+> **Encoding fix (retained).** `Baron_1983.csv` has a non-UTF-8 byte (`0xCA`) in "Scutisorex somereni" that silently truncated a UTF-8 read; the script reads it with `readr::locale(encoding = "latin1")`.
 
-Reads the snapshot `.xlsx` and writes `Baron_etal_1983_Table1.csv`: one row per species (76 rows), with
+## 3. Reference tables — `reference_tables/`
 
-- numeric value columns (`n`, volume, SEM %, size index, per-mille of net brain, per-mille of telencephalon); dashes/blanks become `NA`;
-- note markers split into their own columns (`Number_of_individuals_note` = `*`, `Bulbus_olfactorius_note` = `+`) so the value columns stay numeric;
-- the trailing Baron footnote digit captured in `Species_Baron1983_footnote`;
-- two taxonomic columns — `Major_group` (Insectivora, Scandentia, Primates, Macroscelidea) and `Subgroup` (e.g. Basal/Progressive Insectivora, Prosimians, Simians) — carried down from the section headings via a small lookup that encodes the paper's hierarchy;
-- updated binomials in `Species`, matched from `Baron_1983.csv` by code (the same latin1 fix applies); the original PDF label is kept in `Species_Baron1983`.
+- **`Baron_etal_1983_species_crosswalk.csv`** — each Baron code -> current accepted name + order/family under one authority, the **Mammal Diversity Database (MDD) v2.4**, with `name_change`, `needs_review`, and corroborating sources. Verified against MDD and corroborated by published reuses of the Stephan/Baron dataset (per PubMed): Boddy et al. 2012 [DOI](https://doi.org/10.1111/j.1420-9101.2012.02491.x); DeCasien et al. 2017 [DOI](https://doi.org/10.1038/s41559-017-0112); Smaers et al. 2021 [DOI](https://doi.org/10.1126/sciadv.abe2101).
+- **`Baron_etal_1983_definitions.csv`** — data dictionary in the same format as your other `_definitions.csv` files (`Code, Definition, Structure, Measure, Stat, Reference, Note`). Defines `MOB`, every value column with its unit (volume mm3, SEM %, size index, per-mille of net brain / telencephalon, n), and the legend symbols (`*`, `+`, superscript 1-12, N).
 
-Values always come from the snapshot, never from the CSV.
-
-## Notes on standardization
-
-- `MOB` is standardized to `Bulbus_olfactorius` in value-bearing column names, matching the convention in `Baron_1983.csv`.
-- The original anatomical label is preserved as `Structure_original = total MOB (layers 1-6 + periventricular zone)`.
-- The `Major_group` species counts (Insectivora 26, Primates 45, Scandentia 3, Macroscelidea 2) match the N totals in the paper's own Means rows, confirming the grouping.
+Open items for the compilation step: decide where the **shared** species and anatomy reference tables should live (likely above the per-paper folders); review the 4 `needs_review` species; and to switch taxonomy authority (MSW3, GBIF, …) edit only the crosswalk.

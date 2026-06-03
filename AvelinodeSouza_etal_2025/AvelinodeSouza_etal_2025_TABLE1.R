@@ -1,5 +1,6 @@
 ## 0. PATHS ---------------------------------------------------------------
 library(rstudioapi)
+library(readxl)
 
 script_path  <- rstudioapi::getActiveDocumentContext()$path
 paper_dir    <- dirname(script_path)                 # AvelinodeSouza_etal_2025

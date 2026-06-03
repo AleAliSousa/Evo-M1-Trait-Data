@@ -1,0 +1,16 @@
+Code,Definition,Structure,Measure,Stat,Reference,Note
+MOB,main olfactory bulb; total MOB = layers 1-6 + periventricular zone,OlfactoryBulb,,,Baron_etal_1983_Table1,Baron measured the MAIN olfactory bulb (vs accessory OB)
+code_Baron1983,four-digit species code in the Stephan/Frahm/Baron coding system,,,info,Baron_etal_1983_Table1,
+Species_Baron1983,species name as printed in Baron 1983 (classification follows Corbet & Hill 1980); footnote digits removed,,,info,Baron_etal_1983_Table1,
+Species,current accepted species name,,,info,Baron_etal_1983_Table1,from reference_tables/Baron_etal_1983_species_crosswalk.csv (MDD v2.4)
+Species_former_synonym,name used in former papers and in Stephan et al. 1981a (the superscript footnote translated),,,info,Baron_etal_1983_Table1,populated for the 12 footnoted species
+n,number of individuals (sample size),OlfactoryBulb,,n,Baron_etal_1983_Table1,snapshot column 'n'
+volume_mm3,absolute MOB volume in mm3,OlfactoryBulb,Vol.mm3,,Baron_etal_1983_Table1,snapshot column 'volume in mm3'
+SEM_pct,"standard error of the mean of the volume, expressed as a percentage",OlfactoryBulb,Vol.mm3,SEM,Baron_etal_1983_Table1,snapshot column 'SEM in %'
+size_index,Baron size index (relative/allometric MOB size; dimensionless),OlfactoryBulb,size.index,,Baron_etal_1983_Table1,snapshot column 'size index'
+permille_net_brain,MOB volume as per mille (0/00) of net brain volume,OlfactoryBulb,permille.NetBrain,,Baron_etal_1983_Table1,located in the snapshot by the words 'net brain'; header symbol may read %0 or 0/00 (= per mille)
+permille_telencephalon,MOB volume as per mille (0/00) of telencephalon volume,OlfactoryBulb,permille.Telencephalon,,Baron_etal_1983_Table1,located in the snapshot by the word 'telencephalon'; header symbol may read %0 or 0/00 (= per mille)
+*,in these species both sexes are present,,,note,Baron_etal_1983_Table1,marker carried in n_note
++,figures slightly different from Stephan et al. 1981a because of re-examination and/or additional data,,,note,Baron_etal_1983_Table1,marker carried in volume_note
+superscript 1-12,species name used in former papers / Stephan et al. 1981a; species names here follow Corbet & Hill (1980),,,note,Baron_etal_1983_Table1,translated into Species_former_synonym
+N,number of species,,,note,Baron_etal_1983_Table1,applies to the Means rows of Table 1 (not included in this per-species table). First N = species with >1 animal used for column 3; second N = species used for columns 4-6

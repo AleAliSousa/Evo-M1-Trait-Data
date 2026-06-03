@@ -18,6 +18,7 @@ library(readxl)
 
 ## Create a list with all the dataframes for cell count analyses
 item_name <- c(
+  "AvelinodeSouza_etal_2025_TABLE1",
   "Burish_etal_2010_Table1",
   "DosSantos_etal_2017_TableS1",
  # "DosSantos_etal_2020_Table1",

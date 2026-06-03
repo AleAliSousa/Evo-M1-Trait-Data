@@ -1,23 +1,25 @@
 # Baron_etal_1983_Table1.R
 #
 # Purpose
-#   Convert the faithful Excel snapshot of Baron et al. 1983 Table 1 into an
-#   analysis-ready CSV: numeric value columns, note markers split into their
-#   own columns, meaningful column names, taxonomic grouping carried down from
-#   the section headings, and updated species binomials taken from
-#   Baron_1983.csv (matched by Baron code).
+#   Snapshot preparation. Turn the faithful snapshot of Baron et al. 1983
+#   Table 1 into a lean, analysis-ready CSV: species codes, anatomy code, old
+#   and current species names, the sample size with its marker, and the values.
+#   Column meanings, units and legend symbols live in the definitions table
+#   (reference_tables/Baron_etal_1983_definitions.csv), not in this data table.
 #
 # Inputs
-#   Baron_etal_1983_Table1_snapshot.xlsx   sheet: Table1_snapshot
-#   Baron_1983.csv                         crosswalk for updated species names
+#   Baron_etal_1983_Table1_snapshot.xlsx           sheet: Table1_snapshot (values)
+#   reference_tables/Baron_etal_1983_species_crosswalk.csv   current names by code
 #
-# Output
-#   Baron_etal_1983_Table1.csv             one row per species (76 rows)
+# Outputs
+#   Baron_etal_1983_Table1.csv                     one row per species (76 rows)
+#   <DOI>.tsv in __Public/comparative-data/        tab-separated copy named by the
+#                                                  item's encoded DOI (from __ReadMe.xlsx)
 #
-# Notes
-#   Values come from the snapshot, never from the CSV. The CSV is used only as
-#   a name crosswalk (by code). The crosswalk is read with latin1 so the stray
-#   non-UTF-8 byte in "Scutisorex somereni" cannot silently truncate it.
+# Fixes applied here are only the obvious ones: drop Baron's footnote digits,
+# complete his abbreviations, parse values to numbers. Superscript footnotes are
+# TRANSLATED into the former Stephan-1981a name (Species_former_synonym) rather
+# than kept as bare digits. Current names come from the species crosswalk.
 
 suppressPackageStartupMessages({
   library(readxl)
@@ -30,7 +32,7 @@ suppressPackageStartupMessages({
 
 snapshot_file  <- "Baron_etal_1983_Table1_snapshot.xlsx"
 snapshot_sheet <- "Table1_snapshot"
-crosswalk_file <- "Baron_1983.csv"
+crosswalk_file <- file.path("reference_tables", "Baron_etal_1983_species_crosswalk.csv")
 output_file    <- "Baron_etal_1983_Table1.csv"
 
 # ---- helpers ---------------------------------------------------------------
@@ -43,104 +45,119 @@ read_snapshot <- function(path, sheet) {
   names(dat) <- header
   dat
 }
+read_text_csv <- function(path) read_csv(path, col_types = cols(.default = col_character()), na = c(""))
 
-read_baron_csv <- function(path) {
-  read_csv(path,
-           locale    = locale(encoding = "latin1"),
-           col_types = cols(.default = col_character()),
-           na        = c(""))
-}
+norm_code     <- function(x) suppressWarnings(as.integer(str_remove_all(as.character(x), "\\D")))
+parse_value   <- function(x) parse_number(x, na = c("", "-", "NA", "n.a.", "__"))
+strip_footnote <- function(x) str_squish(str_remove_all(x, "[0-9]+"))   # drop Baron footnote digits
+footnote_num  <- function(x) str_match(x, "([0-9]+)\\s*$")[, 2]
+has_marker    <- function(x, marker) str_detect(replace_na(x, ""), fixed(marker))
 
-norm_code   <- function(x) suppressWarnings(as.integer(str_remove_all(as.character(x), "\\D")))
-parse_value <- function(x) parse_number(x, na = c("", "-", "NA", "n.a.", "__"))
+# Obvious completions of Baron's own abbreviations (do not change taxonomy).
+abbrev_fixes <- c(
+  "Hemicentetes semispin."  = "Hemicentetes semispinosus",
+  "Daubentonia madagascar." = "Daubentonia madagascariensis",
+  "Avahi l. occidentalis"   = "Avahi laniger occidentalis"
+)
+complete_name <- function(x) ifelse(x %in% names(abbrev_fixes), abbrev_fixes[x], x)
 
-# Species label with the trailing Baron footnote digit removed.
-clean_species  <- function(x) str_squish(str_remove_all(x, "[0-9]+"))
-# The trailing footnote digit itself (e.g. "Erinaceus algirus1" -> "1"), else NA.
-footnote_num   <- function(x) str_match(x, "([0-9]+)\\s*$")[, 2]
-has_marker     <- function(x, marker) str_detect(replace_na(x, ""), fixed(marker))
-
-# Section heading -> (Major_group, Subgroup). Headings in the printed table do
-# not state their rank, so this small lookup encodes the paper's hierarchy:
-# Basal/Progressive Insectivora sit under Insectivora; Prosimians/Simians sit
-# under Primates; Scandentia and Macroscelidea stand alone.
-group_lookup <- tribble(
-  ~section,                  ~Major_group,    ~Subgroup,
-  "Basal Insectivora",       "Insectivora",   "Basal Insectivora",
-  "Progressive Insectivora", "Insectivora",   "Progressive Insectivora",
-  "Scandentia",              "Scandentia",    NA_character_,
-  "Primates",                "Primates",      NA_character_,
-  "Prosimians",              "Primates",      "Prosimians",
-  "Simians",                 "Primates",      "Simians",
-  "Macroscelidea",           "Macroscelidea", NA_character_
+# Footnote legend, transcribed from the Table 1 footnotes: the superscript
+# number is the name used in former papers and in Stephan et al. (1981a).
+footnote_synonym <- c(
+  "1"  = "Aethechinus algirus",
+  "2"  = "Crocidura occidentalis",
+  "3"  = "Nesogale dobsoni",
+  "4"  = "Nesogale talazaci",
+  "5"  = "Chlorotalpa stuhlmanni",
+  "6"  = "Lemur fulvus",
+  "7"  = "Lemur variegatus",
+  "8"  = "Galago crassicaudatus",
+  "9"  = "Galago demidovii",
+  "10" = "Saguinus tamarin",
+  "11" = "Cercopithecus talapoin",
+  "12" = "Rhynchocyon stuhlmanni"
 )
 
-# ---- read snapshot, carry section heading down, keep species rows ----------
+# ---- snapshot: the 76 four-digit species rows ------------------------------
 
-snapshot_raw <- read_snapshot(snapshot_file, snapshot_sheet)
+snap <- read_snapshot(snapshot_file, snapshot_sheet) %>%
+  rename(code_raw = `code number of species`, species_raw = `species name`, n_raw = n) %>%
+  filter(!is.na(code_raw) & str_detect(code_raw, "^[0-9]{4}$")) %>%
+  mutate(code_join = norm_code(code_raw))
 
-snap <- snapshot_raw %>%
-  rename(code_raw = `code number of species`, species_raw = `species name`) %>%
-  mutate(
-    is_species = !is.na(code_raw) & str_detect(code_raw, "^[0-9]{4}$"),
-    # Heading rows have no code, a label, and are not the "Means" block.
-    is_heading = (is.na(code_raw) | code_raw == "") &
-                 !is.na(species_raw) & species_raw != "Means",
-    section    = if_else(is_heading, species_raw, NA_character_)
-  ) %>%
-  fill(section, .direction = "down") %>%
-  filter(is_species) %>%
-  left_join(group_lookup, by = "section") %>%
-  mutate(Major_group = coalesce(Major_group, section))
-
-# ---- updated binomials from Baron_1983.csv (matched by code) ---------------
-
-updated_name <- rep(NA_character_, nrow(snap))
+# ---- current names from the species crosswalk (by code) --------------------
 
 if (file.exists(crosswalk_file)) {
-  crosswalk <- read_baron_csv(crosswalk_file) %>%
-    filter(!str_detect(replace_na(Species, ""), "^AAAA_"),
-           !is.na(code_Baron1983)) %>%
-    transmute(code_join = norm_code(code_Baron1983), Species_updated = Species)
-  updated_name <- crosswalk$Species_updated[match(norm_code(snap$code_raw),
-                                                  crosswalk$code_join)]
+  new_names <- read_text_csv(crosswalk_file) %>%
+    transmute(code_join = norm_code(code_Baron1983), Species = Species_MDD_v2_4)
+  snap <- left_join(snap, new_names, by = "code_join")
 } else {
-  warning("Crosswalk '", crosswalk_file, "' not found; keeping original names.")
+  warning("Crosswalk not found at '", crosswalk_file,
+          "'; 'Species' (current name) will fall back to the Baron name.")
+  snap$Species <- NA_character_
 }
-snap$Species_updated <- updated_name
 
-# ---- assemble the analysis-ready table -------------------------------------
+# ---- assemble the lean table -----------------------------------------------
+
+# Locate the two per-mille columns by keyword, so the exact per-mille symbol in
+# the snapshot header (%0, 0/00, or the true per-mille sign) doesn't matter.
+col_pm_netbrain <- grep("net brain",     names(snap), ignore.case = TRUE, value = TRUE)[1]
+col_pm_telen    <- grep("telencephalon", names(snap), ignore.case = TRUE, value = TRUE)[1]
+if (is.na(col_pm_netbrain) || is.na(col_pm_telen))
+  stop("Could not find the per-mille columns ('net brain' / 'telencephalon') in the snapshot header.")
 
 final.dataframe <- snap %>%
   transmute(
-    Reference          = "Baron_etal_1983",
-    Source_table       = "Table 1",
-    Anatomy_code       = "MOB",
-    Anatomy            = "main olfactory bulb",
-    Structure_original = "total MOB (layers 1-6 + periventricular zone)",
-    code_Baron1983     = code_raw,
-    Major_group,
-    Subgroup,
-    Species                    = coalesce(Species_updated, clean_species(species_raw)),
-    Species_Baron1983          = clean_species(species_raw),
-    Species_Baron1983_footnote = footnote_num(species_raw),
-    Number_of_individuals_Bulbus_olfactorius = as.integer(parse_value(n)),
-    Number_of_individuals_note = if_else(has_marker(n, "*"), "*", NA_character_),
-    Bulbus_olfactorius_1983    = parse_value(`volume in mm3`),
-    Bulbus_olfactorius_note    = if_else(has_marker(`volume in mm3`, "+"), "+", NA_character_),
-    Bulbus_olfactorius_SEM_percent_1983             = parse_value(`SEM in %`),
-    Bulbus_olfactorius_size_index_1983              = parse_value(`size index`),
-    Bulbus_olfactorius_per_mille_net_brain_1983     = parse_value(`MOB in %0 of net brain`),
-    Bulbus_olfactorius_per_mille_telencephalon_1983 = parse_value(`MOB in %0 of telencephalon`),
-    unit_volume        = "mm3",
-    unit_SEM           = "percent",
-    unit_per_mille     = "per mille"
+    code_Baron1983         = code_raw,
+    Anatomy_code           = "MOB",
+    Species_Baron1983      = complete_name(strip_footnote(species_raw)),     # old name, no superscript
+    Species                = coalesce(Species, complete_name(strip_footnote(species_raw))),  # current name
+    Species_former_synonym = unname(footnote_synonym[footnote_num(species_raw)]),  # superscript translated
+    n                      = as.integer(parse_value(n_raw)),
+    n_note                 = if_else(has_marker(n_raw, "*"), "*", NA_character_),
+    volume_mm3             = parse_value(`volume in mm3`),
+    volume_note            = if_else(has_marker(`volume in mm3`, "+"), "+", NA_character_),
+    SEM_pct                = parse_value(`SEM in %`),
+    size_index             = parse_value(`size index`),
+    permille_net_brain     = parse_value(.data[[col_pm_netbrain]]),
+    permille_telencephalon = parse_value(.data[[col_pm_telen]])
   )
 
 options(scipen = 999)
-write_csv(final.dataframe, output_file)
 
-message("Wrote ", output_file)
-message("Rows in analysis table: ", nrow(final.dataframe))
-message("Species with updated binomial from crosswalk: ",
-        sum(!is.na(updated_name)))
+## ---- SAVE: local CSV + DOI-named TSV in the shared database folder --------
+# Mirrors the save step used across this dataset (see JardimMesseder_etal_2017):
+# write the analysis CSV next to the script, and a tab-separated copy named by
+# the item's encoded DOI (looked up in the master __ReadMe.xlsx) into the shared
+# comparative-data folder.
+
+# Item name = this script's file name without ".R" (when run from RStudio);
+# falls back to the output_file stem if rstudioapi is unavailable.
+item_name <- tryCatch(
+  gsub("\\.R$", "", basename(rstudioapi::getActiveDocumentContext()$path)),
+  error = function(e) tools::file_path_sans_ext(output_file)
+)
+if (is.null(item_name) || !nzchar(item_name)) item_name <- tools::file_path_sans_ext(output_file)
+
+# 1) Local CSV (the final analysis table).
+write.csv(final.dataframe, file = paste0(item_name, ".csv"), row.names = FALSE)
+message("Wrote ", item_name, ".csv  (", nrow(final.dataframe), " rows)")
+
+# 2) DOI-named TSV copy in the shared comparative-data folder.
+readme_file <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__ReadMe.xlsx"
+tsv_dir     <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__Public/comparative-data/"
+filecodes    <- read_excel(readme_file, sheet = "Sheet1")
+item_encoded <- filecodes$"Item encoded"[match(item_name, filecodes$"Item name")]
+
+if (is.na(item_encoded) || !nzchar(item_encoded)) {
+  warning("No 'Item encoded' (DOI) found for '", item_name, "' in __ReadMe.xlsx; TSV copy skipped.")
+} else if (!dir.exists(path.expand(tsv_dir))) {
+  warning("Shared folder not found: ", tsv_dir, "; TSV copy skipped.")
+} else {
+  write.table(final.dataframe, file = paste0(tsv_dir, item_encoded, ".tsv"),
+              sep = "\t", row.names = FALSE)
+  message("Wrote ", tsv_dir, item_encoded, ".tsv")
+}
+
+message("Footnote synonyms translated: ", sum(!is.na(final.dataframe$Species_former_synonym)),
+        " | current names filled: ", sum(!is.na(final.dataframe$Species)))

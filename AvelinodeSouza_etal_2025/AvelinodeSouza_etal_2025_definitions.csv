@@ -1,0 +1,19 @@
+Code,Definition,Structure,Measure,Stat,Reference,Note,Source Note
+"Mass, g",mass (g),,Mass.g,,AvelinodeSouza_etal_2025_TABLE1,,
+Neurons,number of neurons,,N.n,,AvelinodeSouza_etal_2025_TABLE1,Same definition as Herculano-Houzel et al. 2015 (S. Herculano-Houzel is a co-author; isotropic fractionator).,
+Non-neuronal cells,number of other (non-neuronal) cells,,O.n,,AvelinodeSouza_etal_2025_TABLE1,Same definition as Herculano-Houzel et al. 2015 (S. Herculano-Houzel is a co-author; isotropic fractionator).,
+Neurons/mg,neuronal density (neurons/mg),,N.p.mg,,AvelinodeSouza_etal_2025_TABLE1,Same definition as Herculano-Houzel et al. 2015 (S. Herculano-Houzel is a co-author; isotropic fractionator).,
+Non-neuronal cells/mg,non-neuronal (other) cell density (cells/mg),,O.p.mg,,AvelinodeSouza_etal_2025_TABLE1,Same definition as Herculano-Houzel et al. 2015 (S. Herculano-Houzel is a co-author; isotropic fractionator).,
+Non-neuronal cells/neuron,ratio of non-neuronal (other) cells to neurons (O/N),,O.p.N,,AvelinodeSouza_etal_2025_TABLE1,Same definition as Herculano-Houzel et al. 2015 (S. Herculano-Houzel is a co-author; isotropic fractionator).,
+Whole brain,"whole brain (both sides), NOT including the olfactory bulbs",WholeBrain,,,AvelinodeSouza_etal_2025_TABLE1,Same definition as Herculano-Houzel et al. 2015 (S. Herculano-Houzel is a co-author; isotropic fractionator).,Herculano-Houzel whole-brain definition (excludes olfactory bulb)
+Cerebral cortex (including Hp + amygdala),"all cortical regions of both hemispheres: gray matter + subcortical white matter, INCLUDING hippocampus, amygdala and piriform cortex",CerebralCortex,,,AvelinodeSouza_etal_2025_TABLE1,Same definition as Herculano-Houzel et al. 2015 (S. Herculano-Houzel is a co-author; isotropic fractionator).,Matches HH 2015 'Cerebral Cortex' definition exactly
+Cerebral cortical grey matter,cortical gray matter only,CerebralCortexGrey,,,AvelinodeSouza_etal_2025_TABLE1,Reported separately in this paper; HH 2015 lumped grey+white into 'Cerebral Cortex'.,
+Cerebral cortical white matter,cortical/subcortical white matter only,CerebralCortexWhite,,,AvelinodeSouza_etal_2025_TABLE1,Reported separately in this paper (new sub-structure relative to HH 2015).,
+Cerebellum,"whole cerebellum (both halves), including the deep nuclei",Cerebellum,,,AvelinodeSouza_etal_2025_TABLE1,Same definition as Herculano-Houzel et al. 2015 (S. Herculano-Houzel is a co-author; isotropic fractionator).,
+"Rest of brain (diencephalon+striatum, mesencephalon, pons and medulla)","ensemble of diencephalon, striatum, mesencephalon, pons and medulla, both sides",RoB,,,AvelinodeSouza_etal_2025_TABLE1,Same scope as HH 2015 'RoB'; in this paper it is also broken into the components below.,
+Amygdala,amygdala,Amygdala,,,AvelinodeSouza_etal_2025_TABLE1,Sub-structure reported separately in this paper.,
+Hippocampus,hippocampus,Hippocampus,,,AvelinodeSouza_etal_2025_TABLE1,Sub-structure reported separately in this paper.,
+Diencephalon + Striatum,diencephalon plus striatum (basal ganglia),DiencephalonStriatum,,,AvelinodeSouza_etal_2025_TABLE1,Component of Rest of brain.,
+Mesencephalon,midbrain,Mesencephalon,,,AvelinodeSouza_etal_2025_TABLE1,Component of Rest of brain.,
+Pons,pons,Pons,,,AvelinodeSouza_etal_2025_TABLE1,Component of Rest of brain.,
+Medulla oblongata,medulla oblongata,Medulla,,,AvelinodeSouza_etal_2025_TABLE1,Component of Rest of brain.,

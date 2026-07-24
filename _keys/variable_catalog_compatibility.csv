@@ -290,3 +290,6 @@ VisualArea17 | surface area,VisualArea17,surface area,1,1,Krubitzer_Kaas_1990,Pr
 VisualArea18 | surface area,VisualArea18,surface area,1,1,Krubitzer_Kaas_1990,Primates,primary,FALSE
 WholeBrain | count (number),WholeBrain,count (number),1,1,deSousa_etal_2010,Primates,metadata,FALSE
 see structure col | CMR.umol/g/min,see structure col,CMR.umol/g/min,1,1,Karbowski__2007,Mammals,secondary,FALSE
+whole body | BMR.mlO2_h,whole body,BMR.mlO2_h,1,1,Genoud_etal_2018,Mammalia,secondary,FALSE
+whole body | mass,whole body,mass,1,1,Genoud_etal_2018,Mammalia,secondary,FALSE
+whole body | percentage (relative),whole body,percentage (relative),1,1,Genoud_etal_2018,Mammalia,secondary,FALSE

@@ -1,4 +1,4 @@
-# How to build a dataset file (snapshot → CSV → TSV)
+# How to build a dataset file (frozen source → CSV → TSV)
 
 A guide for research apprentices **and** for Claude/AI assistants working in this dataset.
 It picks up where **`__HOWTO_make_a_snapshot.md`** leaves off (that one covers only the
@@ -12,18 +12,25 @@ ancestor of this document; this is the expanded, authoritative version.
 
 ```
 Source (PDF / journal Excel / Adobe export)
-  → snapshot        faithful copy of the printed table         (..._snapshot.xlsx | .csv)
+  → frozen source   faithful copy that cleaning is reproducible from:
+                      digital-native → the untouched download itself (no derived snapshot)
+                      printed/scanned → a hand-verified ..._snapshot.xlsx | .csv
   → reformat (R)    clean + type + convert units               (..._Table<N>.R)
   → analysis CSV    one tidy row per species (or individual)   (..._Table<N>.csv)
-  → public TSV      DOI/PMID-named, in __Public/comparative-data/
-  → comparison      QA: snapshot ↔ curated data, 0 mismatches  (comparison/..._compare_to_*.R)
+  → public TSV      DOI/PMID-named, in __Public/comparative-data/   ← REQUIRED either way
+  → comparison      QA: frozen source ↔ curated data, 0 mismatches  (comparison/..._compare_to_*.R)
   → definitions     data dictionary, one row per variable      (reference_tables/..._definitions.csv)
   → README          source, steps, checks                      (..._Table<N>.README.md)
   → merge           added to __merging_volumes / __merging_cellcounts (if PRIMARY)
 ```
 
-**One golden rule (inherited from the snapshot guide):** freeze the snapshot *before* any
-cleaning; every change after that happens in the `.R` script, never silently in the snapshot.
+**One golden rule (inherited from the snapshot guide):** freeze the source *before* any cleaning;
+every change after that happens in the `.R` script, never silently in the frozen copy. What counts as
+the frozen copy depends on the source: for a **digital-native** source (a journal-supplied CSV/XLSX)
+the untouched download *is* the frozen copy — keep it verbatim and script from it directly; only a
+**printed/scanned** source needs a separate hand-made `_snapshot` (see §0a invariant 1 and §2).
+**The public TSV (invariant 2) is required either way** — it is what gets databased, merged, and read
+by the Shiny app, and it does not depend on whether a snapshot exists.
 
 ---
 
@@ -39,8 +46,20 @@ the curator's judgement and the shape of the source table.
 
 **Hard invariants (must hold — the merge/registry/catalog break otherwise):**
 
-1. A **frozen snapshot exists** and all cleaning is reproducible from it (golden rule). The snapshot
-   may be hand-made or built by an `*_extract.R`/scrape — either way it is saved as a hardcopy.
+1. A **frozen source exists** and all cleaning is reproducible from it (golden rule). This is
+   satisfied one of two ways depending on the source:
+   - **Digital-native source** (a journal-supplied CSV/XLSX you can download and script directly):
+     the **untouched download itself is the frozen copy** — keep it in the folder verbatim and never
+     edit it. **Do not make a derived `_snapshot`**; a re-save only duplicates the file and can
+     introduce drift (type coercion, re-encoding). The `.R` reads the original download. Record the
+     download filename as the source in the README and the registry's `Snapshot` / `Data readable`
+     columns (as Burger SD1 already does: `gyz043_suppl_Supplement_Data.csv`).
+   - **Printed / scanned / OCR / Adobe-export source** (the source is a *picture* of the table, not
+     the data): a **`_snapshot` is required** — the hand-verified faithful capture is the only frozen,
+     auditable copy, and it may be hand-made or built by an `*_extract.R`/scrape saved as a hardcopy.
+
+   The dividing line is *"is the source already the machine-readable data, or a picture of it?"* — not
+   the file format. When in doubt (e.g. a messy multi-tier XLSX), a snapshot never hurts.
 2. The build writes **both** a local analysis CSV **and** a DOI/PMID-coded TSV into
    `__Public/comparative-data/`, with the code looked up from `__ReadMe.xlsx` (`Sheet1`,
    `Item encoded` matched on `Item name`). *(§4)*
@@ -100,7 +119,12 @@ The model folders to copy: **`Stephan_etal_1982`** (hierarchy in one species col
 
 ---
 
-## 2. Snapshot — see `__HOWTO_make_a_snapshot.md`
+## 2. Frozen source — snapshot only when the source is printed/scanned — see `__HOWTO_make_a_snapshot.md`
+
+**First decide which case you are in (§0a invariant 1).** If the source is **digital-native** (a
+journal CSV/XLSX), skip this section: keep the download verbatim and point the `.R` at it — there is
+no snapshot to make. The steps below apply to **printed/scanned/OCR** sources, where the snapshot is
+the frozen copy.
 
 Reproduce the **specific printed table**, in its **original units and layout**: keep the caption,
 column headers, footnote markers/superscripts, `n.a.`/`—`/blank cells, grouping rows and row order.
@@ -340,8 +364,9 @@ applies this rubric.
 
 ## 11. "Done" checklist (one table)
 
-- [ ] snapshot frozen + reads like the PDF (caption, headers, footnotes, units, row order kept)
-- [ ] cleaning reproducible from the snapshot; names cleaned; units converted + documented
+- [ ] frozen source in place — digital-native: original download kept verbatim (no derived snapshot);
+      printed/scanned: `_snapshot` frozen + reads like the PDF (caption, headers, footnotes, units, row order kept)
+- [ ] cleaning reproducible from the frozen source; names cleaned; units converted + documented
 - [ ] analysis CSV = right number of rows (species/individuals)
 - [ ] **DOI/PMID TSV in `__Public/comparative-data/`**; `Item number` set in `__ReadMe.xlsx` *(invariant)*
 - [ ] printed species name preserved; rows added to `species_key.csv`

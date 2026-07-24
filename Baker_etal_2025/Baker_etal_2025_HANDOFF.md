@@ -36,9 +36,37 @@ Join is on `Species` binomial, normalized `Genus species`. Baker is dexterity-ce
 
 Taxonomy watch-outs: Sapajus / Cebus apella and Pongo pygmaeus / abelii synonymy (see the specimen-taxon-tracking notes). Baker's brain/body/neocortex/cerebellum values come from Venditti 2024 / Barton & Venditti 2014 / the Stephan–Frahm series, overlapping the volume-merge lineage.
 
-## OPEN — fold Baker into the Shiny trait table
+## DONE (2026-07-20) — Baker folded into the Shiny behaviour trait table
 
-This is the work that was paused to restart as a new task. It is **not** started.
+Completed as its own task. Scope decisions (below) were resolved by the user: **expose all** candidate
+variables, and **key Tool_use** as one multi-source measure (Heldstab primary + Baker secondary).
+
+What was built:
+
+- **`____EvoM1_TraitTable/EvoM1_read_dexterity_baker.R`** (canonical) → **`dexterity_baker.xlsx`**
+  (178 taxa; `species_sci` resolved via `_keys`). Exposes `Tool_Use`, `Tool_Manufacture`,
+  `True_Tool_Use`, `peak_workspace`, `relative_size`, `real_size`, and the **19** `log10_*_mm`
+  hand-bone lengths. (Note: **19**, not 24 — digit 1/thumb has no intermediate phalanx; the earlier
+  "24" was wrong.) No R in the build env, so the xlsx was materialized by a Python port; the R script
+  is canonical.
+- **`__merging_behaviour/behaviour_compiled.R`** edited: added `baker` to `TEAM`; added
+  `Tool_Manufacture`/`True_Tool_Use` to `CATEG`; added the Baker `grab()` calls (incl. a loop over the
+  bone columns); added `META` rows; and set `Tool_use` priority to `heldstab`(primary)+`baker`(secondary).
+- **Regenerated** `behaviour_long.csv` / `behaviour_observations_long.csv` / `behaviour_wide.csv`
+  (Python port matching the R logic) and copied `behaviour_long.csv` into `__ShinyApp/data/`. New
+  measure classes: `manipulation` (tool-use presence) and `hand_morphology` (workspace/size/bones).
+- **Verified:** 13 pre-existing measures are **byte-identical** to the pre-Baker baseline (zero
+  regression); `Tool_use` grew 37→188 species with the resolved value unchanged on all 37 baseline
+  species (Heldstab primary wins) and Baker-only species flagged `secondary`/`primary_used=False`.
+  Table is now **2,760 rows over 406 species, 38 measures**.
+
+Rebuild path unchanged: user runs `Rscript __ShinyApp/build_data.R` to reproduce from the canonical R
+scripts and push. The app has no measure whitelist, so the new measures appear automatically under the
+**Behaviour** dataset.
+
+### Historical note — the original OPEN plan (now completed)
+
+The work below was paused to restart as a new task; it has since been done as described above.
 
 **Target architecture** (per the shiny-app build): behaviour is a keyed merge, `__merging_behaviour/behaviour_long.csv` (schema like `body_ecology_long`), loaded by the app via `std_merge(GH$behaviour, …, "Behaviour")`. Inputs are `____EvoM1_TraitTable/*.xlsx` files (columns `species_sci`, `Species`, `<measures>`), each written by an `EvoM1_read_*.R`; `behaviour_compiled.R` holds `grab()` / `META` / `TEAM` for each measure.
 
@@ -50,10 +78,11 @@ This is the work that was paused to restart as a new task. It is **not** started
 
 Brain/body/neocortex/cerebellum do **not** belong here (they go through the volume/mass merges); binocularity is sensory, not dexterity. No R in the build env, so materialize via a Python port with the R scripts canonical; the user runs `Rscript __ShinyApp/build_data.R` to reproduce and push.
 
-### Two scope decisions still needed (asked, deferred)
+### Two scope decisions — RESOLVED 2026-07-20
 
-1. **Which Baker vars to expose.** Candidates: `Tool_use` / `Tool_manufacture` / `True_tool_use` (Bentley-Condit 2010), `peak_workspace` (Feix 2015), `relative_size` / `real_size` (derived), and the raw 24 log10 hand-bone lengths.
-2. **Whether Baker `Tool_use` merges keyed with Heldstab's `Tool_use` or stays a separate column.** Heldstab's `manipulation.xlsx` columns are `Manipulation_complexity` / `Tool_use` / `Extractive_foraging` (37 spp).
+1. **Which Baker vars to expose.** → **All of them** (tool-use set + peak_workspace + relative/real_size
+   + the 19 log10 bone lengths). Candidates were: `Tool_use` / `Tool_manufacture` / `True_tool_use` (Bentley-Condit 2010), `peak_workspace` (Feix 2015), `relative_size` / `real_size` (derived), and the raw 24 log10 hand-bone lengths.
+2. **Whether Baker `Tool_use` merges keyed with Heldstab's `Tool_use` or stays a separate column.** → **Keyed** as one multi-source measure (Heldstab primary, Baker secondary). Heldstab's `manipulation.xlsx` columns are `Manipulation_complexity` / `Tool_use` / `Extractive_foraging` (37 spp).
 
 ## Note for whoever picks this up
 

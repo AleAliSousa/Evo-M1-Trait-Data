@@ -80,6 +80,28 @@ def group_of(sp):
     if sp.startswith("A."): return "Australopithecus"
     return "other"
 
+# ---- 3b. intra-species temporal grade -------------------------------
+# Generic column: the within-species temporal/chronological level of a
+# specimen, for taxa that have such levels. Only H. sapiens is graded in this
+# dataset; extend GRADE_BY_SPECIMEN for other taxa as needed.
+#   early            : early/fossil H. sapiens. The 4 Kochiyama EH fossils
+#                      (Qafzeh 9, Skhul 5, Mladeč 1, Cro-Magnon 1) PLUS two
+#                      other early H. sapiens carried by Seymour/Boyer that are
+#                      NOT in Kochiyama's set: BC1 (Border Cave, ~80 ka) and
+#                      LH 18 (Ngaloba, ~120 ka).
+#   recent           : recent modern-human specimens (M3-A343, M4-A344 Bushmen).
+#   modern_reference : the mean-modern-human anchor (AS8078; ratio_MH == 1.0).
+#   NA               : no intra-species grade applies (Neanderthal, early Homo,
+#                      Australopithecus, and any non-graded taxon).
+GRADE_BY_SPECIMEN = {
+    "Qafzeh 9": "early", "Skhul 5": "early", "Mladeč 1": "early",
+    "Cro-Magnon 1": "early", "BC1": "early", "LH 18": "early",
+    "M3-A343": "recent", "M4-A344": "recent",
+    "AS8078": "modern_reference",
+}
+def grade_of(species, spec_key):
+    return GRADE_BY_SPECIMEN.get(spec_key, "NA")
+
 # ---- 4. arterial estimates (Seymour specimens) ----------------------
 sey = rd("Seymour_etal_2017_TableS1.csv")
 for c in ("Foramen_radius_cm","Total_QICA_cm3_s","Brain_volume_cm3"):
@@ -126,6 +148,7 @@ def add(spec_key, species, group, team, value, ratio):
     if not np.isfinite(value): return
     m = META[team]
     rows.append(dict(Specimen=spec_key, Species=species, Group=group,
+                     sapiens_grade=grade_of(species, spec_key),
                      Measure="BGU", Units="umol/min",
                      Value=round(float(value),1), Ratio_MH=round(float(ratio),3),
                      Scope=m["Scope"], Volume_basis=m["Volume_basis"],
@@ -167,7 +190,8 @@ for k in specs:
     sub = long_filt[long_filt.Specimen==k]
     sp  = sub.Species.dropna().iloc[0] if sub.Species.notna().any() else ""
     gp  = sub.Group.dropna().iloc[0]   if sub.Group.notna().any()   else ""
-    d = dict(Specimen=k, Species=sp, Group=gp)
+    grd = sub.sapiens_grade.dropna().iloc[0] if sub.sapiens_grade.notna().any() else "NA"
+    d = dict(Specimen=k, Species=sp, Group=gp, sapiens_grade=grd)
     ratios=[]; teams=[]
     for t in FILT_TEAMS:
         row = sub[sub.Team==t]

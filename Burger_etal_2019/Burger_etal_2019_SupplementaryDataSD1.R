@@ -1,9 +1,11 @@
 # Burger et al. 2019 — Supplementary Data SD1 (brain & body mass, 1552 mammals)
-# House pipeline: frozen snapshot -> harmonise species -> analysis CSV + DOI-coded public TSV.
+# House pipeline: frozen source -> harmonise species -> analysis CSV + DOI-coded public TSV.
+# Digital-native source: the journal download gyz043_suppl_Supplement_Data.csv IS the frozen
+# source (kept verbatim; no derived snapshot). See __HOWTO_build_a_dataset_file.md §0a invariant 1.
 # SD1 is a COMPILATION (secondary): brain mass with per-species literature references,
 # standardised to the taxonomy of Wilson & Reeder (2005).
 
-library(readxl); library(writexl)
+library(readxl)   # for the __ReadMe.xlsx Item-encoded lookup only
 
 repo <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data"
 setwd(repo)
@@ -30,10 +32,9 @@ resolve <- function(x) {
   c
 }
 
-# ---- read frozen snapshot ---------------------------------------------------
-snap <- read_excel(file.path(folder, paste0(item_name, "_snapshot.xlsx")),
-                   sheet = "SD1_snapshot", .name_repair = "minimal")
-snap <- as.data.frame(snap, check.names = FALSE)
+# ---- read frozen source (digital-native: the untouched journal download) -----
+snap <- read.csv(file.path(folder, "gyz043_suppl_Supplement_Data.csv"),
+                 check.names = FALSE, stringsAsFactors = FALSE)
 
 df <- cbind(species_sci = vapply(snap$Binomial, resolve, character(1)),
             snap, stringsAsFactors = FALSE)

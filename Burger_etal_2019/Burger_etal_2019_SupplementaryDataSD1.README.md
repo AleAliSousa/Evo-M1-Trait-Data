@@ -11,9 +11,11 @@ brain-mass value. SD2 (`gyz043_suppl_supplement_material.docx`) holds the full r
 A house-style build was missing (the folder had only the raw supplement + a hand-placed public
 TSV). Now built to convention:
 
-- **Snapshot:** `Burger_etal_2019_SupplementaryDataSD1_snapshot.xlsx` (sheet `SD1_snapshot`) —
-  a frozen, faithful copy of `gyz043_suppl_Supplement_Data.csv` (14 columns, 1,552 rows).
-- **Reformat:** `Burger_etal_2019_SupplementaryDataSD1.R` reads the snapshot, adds the accepted
+- **Frozen source (digital-native, no snapshot):** the journal download
+  `gyz043_suppl_Supplement_Data.csv` (14 columns, 1,552 rows) is machine-readable, so it **is** the
+  frozen source — kept verbatim, never edited (see `__HOWTO_build_a_dataset_file.md` §0a invariant 1).
+  The earlier `_snapshot.xlsx` was a redundant re-save and has been removed.
+- **Reformat:** `Burger_etal_2019_SupplementaryDataSD1.R` reads the source CSV directly, adds the accepted
   binomial as `species_sci` (via `_keys/*/species_key.csv` + `species_reference.csv`; printed
   `Binomial` preserved), and writes:
   - `Burger_etal_2019_SupplementaryDataSD1.csv` (analysis-ready)

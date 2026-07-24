@@ -42,8 +42,10 @@ spkey <- function(d) { sci <- if ("species_sci" %in% names(d)) d[["species_sci"]
 istxt <- function(x) !(is.na(x) | trimws(x) == "" | tolower(trimws(x)) %in% c("na","nan","none","-"))
 
 TEAM <- c(schniter="Schniter", manyprimates="ManyPrimates", heffner="Heffner", iwaniuk="Iwaniuk",
-          wimberly="Wimberly", granatosky="Granatosky", caspar="Caspar", heldstab="Heldstab")
-CATEG <- c("Gait","Foot_Posture","Arboreal_terrestrial","Tool_use","Extractive_foraging")
+          wimberly="Wimberly", granatosky="Granatosky", caspar="Caspar", heldstab="Heldstab",
+          baker="Baker")
+CATEG <- c("Gait","Foot_Posture","Arboreal_terrestrial","Tool_use","Extractive_foraging",
+           "Tool_Manufacture","True_Tool_Use")
 
 ## gather raw observations: one row per (Species, Measure, source)
 grab <- function(file, col, measure, srckey) {
@@ -68,7 +70,18 @@ obs <- bind_rows(
   grab("handedness.xlsx","Handedness_strength_mean","Handedness_strength_mean","caspar"),
   grab("manipulation.xlsx","Manipulation_complexity","Manipulation_complexity","heldstab"),
   grab("manipulation.xlsx","Tool_use","Tool_use","heldstab"),
-  grab("manipulation.xlsx","Extractive_foraging","Extractive_foraging","heldstab"))
+  grab("manipulation.xlsx","Extractive_foraging","Extractive_foraging","heldstab"),
+  ## Baker 2025 — Tool_use keyed with Heldstab (heldstab primary); the rest Baker-only
+  grab("dexterity_baker.xlsx","Tool_Use","Tool_use","baker"),
+  grab("dexterity_baker.xlsx","Tool_Manufacture","Tool_Manufacture","baker"),
+  grab("dexterity_baker.xlsx","True_Tool_Use","True_Tool_Use","baker"),
+  grab("dexterity_baker.xlsx","peak_workspace","peak_workspace","baker"),
+  grab("dexterity_baker.xlsx","relative_size","relative_size","baker"),
+  grab("dexterity_baker.xlsx","real_size","real_size","baker"))
+## Baker log10 hand-bone lengths (19 measures; Measure name == source column name)
+bone_cols <- grep("^log10_.*_mm$", names(rd("dexterity_baker.xlsx")), value = TRUE)
+obs <- bind_rows(obs, bind_rows(lapply(bone_cols, function(cc)
+  grab("dexterity_baker.xlsx", cc, cc, "baker"))))
 obs <- obs |> distinct(Species, Measure, src, .keep_all = TRUE)
 
 ## measure metadata: class, units, and priority-ordered (source, role)
@@ -85,8 +98,16 @@ META <- tribble(~Measure,~mclass,~Units,~prio,
  "Handedness_index_mean","handedness","HI",list(c("caspar","primary")),
  "Handedness_strength_mean","handedness","abs(HI)",list(c("caspar","primary")),
  "Manipulation_complexity","manipulation","score",list(c("heldstab","primary")),
- "Tool_use","manipulation","category",list(c("heldstab","primary")),
- "Extractive_foraging","manipulation","category",list(c("heldstab","primary")))
+ "Tool_use","manipulation","category",list(c("heldstab","primary"),c("baker","secondary")),
+ "Extractive_foraging","manipulation","category",list(c("heldstab","primary")),
+ "Tool_Manufacture","manipulation","category",list(c("baker","primary")),
+ "True_Tool_Use","manipulation","category",list(c("baker","primary")),
+ "peak_workspace","hand_morphology","index",list(c("baker","primary")),
+ "relative_size","hand_morphology","index",list(c("baker","primary")),
+ "real_size","hand_morphology","index",list(c("baker","primary")))
+## Baker log10 hand-bone length measures (all single-source, baker primary)
+META <- bind_rows(META, tibble(Measure = bone_cols, mclass = "hand_morphology",
+  Units = "log10 mm", prio = lapply(bone_cols, function(x) list(c("baker","primary")))))
 
 ## observations long (raw) with role
 role_of <- function(measure, src) { p <- META$prio[[match(measure, META$Measure)]]

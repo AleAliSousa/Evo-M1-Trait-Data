@@ -1,35 +1,35 @@
-Specimen	Taxon_code	Taxon	PCF_cc	PCF_Vol.mm3	CBLM_cc	CBLM_Vol.mm3	CBLM_PCF	source
-Gi1	Gi	Hylobates (gibbon)	7.11	7110	9.32	9320	1.31	Weaver__2001
-Gi2	Gi	Hylobates (gibbon)	18.36	18360	18.81	18810	1.02	Weaver__2001
-Gi3	Gi	Hylobates (gibbon)	19.82	19820	25.98	25980	1.31	Weaver__2001
-Gi4	Gi	Hylobates (gibbon)	9.37	9370	11.2	11200	1.19	Weaver__2001
-Or1	O	Pongo (orangutan)	55.06	55060	52.7	52700	0.96	Weaver__2001
-Or2	O	Pongo (orangutan)	53.43	53430	49.19	49190	0.92	Weaver__2001
-Or3	O	Pongo (orangutan)	54.5	54500	62.38	62380	1.14	Weaver__2001
-Or4	O	Pongo (orangutan)	45.74	45740	51.22	51220	1.12	Weaver__2001
-GO1	Go	Gorilla	49.38	49380	65.71	65710	1.33	Weaver__2001
-GO2	Go	Gorilla	76.2	76200	89.24	89240	1.17	Weaver__2001
-Pan1	C	Pan (chimpanzee)	37.34	37340	56.12	56120	1.5	Weaver__2001
-Pan2	C	Pan (chimpanzee)	43.76	43760	55.84	55840	1.28	Weaver__2001
-Pan3	C	Pan (chimpanzee)	31.38	31380	43.46	43460	1.38	Weaver__2001
-Pan4	C	Pan (chimpanzee)	35.23	35230	40.47	40470	1.15	Weaver__2001
-Bo1	B	Pan paniscus (bonobo)	37.75	37750	54.07	54070	1.43	Weaver__2001
-Bo2	B	Pan paniscus (bonobo)	30.99	30990	39.41	39410	1.27	Weaver__2001
-Bo3	B	Pan paniscus (bonobo)	37.51	37510	41.82	41820	1.11	Weaver__2001
-YH2	H	Homo sapiens	141.59	141590	153.35	153350	1.08	Weaver__2001
-YH3	H	Homo sapiens	105.1	105100	145.47	145470	1.38	Weaver__2001
-CS1519	H	Homo sapiens	89.28	89280	123.16	123160	1.38	Weaver__2001
-Cs1520	H	Homo sapiens	129.29	129290	125.94	125940	0.97	Weaver__2001
-CS1523	H	Homo sapiens	86.83	86830	100.97	100970	1.16	Weaver__2001
-CS1533	H	Homo sapiens	126.85	126850	134.75	134750	1.06	Weaver__2001
-Cs1541	H	Homo sapiens	118.66	118660	177.63	177630	1.5	Weaver__2001
-Cs1544	H	Homo sapiens	91.28	91280	129.44	129440	1.42	Weaver__2001
-Cs1503	H	Homo sapiens	116.93	116930	156.45	156450	1.34	Weaver__2001
-Cs1501	H	Homo sapiens	123.99	123990	155.75	155750	1.26	Weaver__2001
-Cs1504	H	Homo sapiens	105.5	105500	147.44	147440	1.4	Weaver__2001
-Cs1506	H	Homo sapiens	122.39	122390	159.73	159730	1.31	Weaver__2001
-Cs1507	H	Homo sapiens	91.29	91290	116.39	116390	1.27	Weaver__2001
-Cs1513	H	Homo sapiens	127.5	127500	144.57	144570	1.13	Weaver__2001
-CS1516	H	Homo sapiens	115.93	115930	125.84	125840	1.09	Weaver__2001
-CS1517	H	Homo sapiens	93.91	93910	156.3	156300	1.66	Weaver__2001
-CS1518	H	Homo sapiens	75.95	75950	147.43	147430	1.94	Weaver__2001
+"Specimen"	"Taxon_code"	"Taxon"	"PCF_cc"	"PCF_Vol.mm3"	"CBLM_cc"	"CBLM_Vol.mm3"	"CBLM_PCF"	"source"
+"Gi1"	"Gi"	"Hylobates (gibbon)"	7.11	7110	9.32	9320	1.31	"Weaver__2001"
+"Gi2"	"Gi"	"Hylobates (gibbon)"	18.36	18360	18.81	18810	1.02	"Weaver__2001"
+"Gi3"	"Gi"	"Hylobates (gibbon)"	19.82	19820	25.98	25980	1.31	"Weaver__2001"
+"Gi4"	"Gi"	"Hylobates (gibbon)"	9.37	9370	11.2	11200	1.19	"Weaver__2001"
+"Or1"	"O"	"Pongo (orangutan)"	55.06	55060	52.7	52700	0.96	"Weaver__2001"
+"Or2"	"O"	"Pongo (orangutan)"	53.43	53430	49.19	49190	0.92	"Weaver__2001"
+"Or3"	"O"	"Pongo (orangutan)"	54.5	54500	62.38	62380	1.14	"Weaver__2001"
+"Or4"	"O"	"Pongo (orangutan)"	45.74	45740	51.22	51220	1.12	"Weaver__2001"
+"GO1"	"Go"	"Gorilla"	49.38	49380	65.71	65710	1.33	"Weaver__2001"
+"GO2"	"Go"	"Gorilla"	76.2	76200	89.24	89240	1.17	"Weaver__2001"
+"Pan1"	"C"	"Pan (chimpanzee)"	37.34	37340	56.12	56120	1.5	"Weaver__2001"
+"Pan2"	"C"	"Pan (chimpanzee)"	43.76	43760	55.84	55840	1.28	"Weaver__2001"
+"Pan3"	"C"	"Pan (chimpanzee)"	31.38	31380	43.46	43460	1.38	"Weaver__2001"
+"Pan4"	"C"	"Pan (chimpanzee)"	35.23	35230	40.47	40470	1.15	"Weaver__2001"
+"Bo1"	"B"	"Pan paniscus (bonobo)"	37.75	37750	54.07	54070	1.43	"Weaver__2001"
+"Bo2"	"B"	"Pan paniscus (bonobo)"	30.99	30990	39.41	39410	1.27	"Weaver__2001"
+"Bo3"	"B"	"Pan paniscus (bonobo)"	37.51	37510	41.82	41820	1.11	"Weaver__2001"
+"YH2"	"H"	"Homo sapiens"	141.59	141590	153.35	153350	1.08	"Weaver__2001"
+"YH3"	"H"	"Homo sapiens"	105.1	105100	145.47	145470	1.38	"Weaver__2001"
+"CS1519"	"H"	"Homo sapiens"	89.28	89280	123.16	123160	1.38	"Weaver__2001"
+"Cs1520"	"H"	"Homo sapiens"	129.29	129290	125.94	125940	0.97	"Weaver__2001"
+"CS1523"	"H"	"Homo sapiens"	86.83	86830	100.97	100970	1.16	"Weaver__2001"
+"CS1533"	"H"	"Homo sapiens"	126.85	126850	134.75	134750	1.06	"Weaver__2001"
+"Cs1541"	"H"	"Homo sapiens"	118.66	118660	177.63	177630	1.5	"Weaver__2001"
+"Cs1544"	"H"	"Homo sapiens"	91.28	91280	129.44	129440	1.42	"Weaver__2001"
+"Cs1503"	"H"	"Homo sapiens"	116.93	116930	156.45	156450	1.34	"Weaver__2001"
+"Cs1501"	"H"	"Homo sapiens"	123.99	123990	155.75	155750	1.26	"Weaver__2001"
+"Cs1504"	"H"	"Homo sapiens"	105.5	105500	147.44	147440	1.4	"Weaver__2001"
+"Cs1506"	"H"	"Homo sapiens"	122.39	122390	159.73	159730	1.31	"Weaver__2001"
+"Cs1507"	"H"	"Homo sapiens"	91.29	91290	116.39	116390	1.27	"Weaver__2001"
+"Cs1513"	"H"	"Homo sapiens"	127.5	127500	144.57	144570	1.13	"Weaver__2001"
+"CS1516"	"H"	"Homo sapiens"	115.93	115930	125.84	125840	1.09	"Weaver__2001"
+"CS1517"	"H"	"Homo sapiens"	93.91	93910	156.3	156300	1.66	"Weaver__2001"
+"CS1518"	"H"	"Homo sapiens"	75.95	75950	147.43	147430	1.94	"Weaver__2001"

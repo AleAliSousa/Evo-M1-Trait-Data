@@ -1,127 +1,7 @@
 "script","status","error","start_time","end_time","elapsed_seconds"
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_dexterity_baker.R","FAILED","Error in data.frame(species_sci = vapply(d$Species, resolve, character(1)),  : 
-  arguments imply differing number of rows: 34, 0
-Execution halted","2026-07-24 15:59:47.630212","2026-07-24 15:59:48.446337",0.81612491607666
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_dexterity_corticospinal_eco.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.2.1     ✔ readr     2.2.0
-✔ forcats   1.0.1     ✔ stringr   1.6.0
-✔ ggplot2   4.0.3     ✔ tibble    3.3.1
-✔ lubridate 1.9.5     ✔ tidyr     1.3.2
-✔ purrr     1.2.2     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
-Error in data.frame(species_sci = Iwaniuk_etal_1999_Table1$species_sci,  : 
-  arguments imply differing number of rows: 34, 0
-Calls: write_xlsx -> is.data.frame -> data.frame
-Execution halted","2026-07-24 15:59:48.451506","2026-07-24 15:59:49.643999",1.19249320030212
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_dexterity_corticospinal.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.2.1     ✔ readr     2.2.0
-✔ forcats   1.0.1     ✔ stringr   1.6.0
-✔ ggplot2   4.0.3     ✔ tibble    3.3.1
-✔ lubridate 1.9.5     ✔ tidyr     1.3.2
-✔ purrr     1.2.2     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
-Error in data.frame(species_sci = Heffner_Masterton_1975_TableI$species_sci,  : 
-  arguments imply differing number of rows: 34, 0
-Calls: write_xlsx -> is.data.frame -> data.frame
-Execution halted","2026-07-24 15:59:49.657971","2026-07-24 15:59:50.702729",1.04475808143616
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_gyrification_etc.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.2.1     ✔ readr     2.2.0
-✔ forcats   1.0.1     ✔ stringr   1.6.0
-✔ ggplot2   4.0.3     ✔ tibble    3.3.1
-✔ lubridate 1.9.5     ✔ tidyr     1.3.2
-✔ purrr     1.2.2     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
-Error in fix.by(by.x, x) : 'by' must specify a uniquely valid column
-Calls: merge -> merge.data.frame -> fix.by
-Execution halted","2026-07-24 15:59:52.071439","2026-07-24 15:59:53.172109",1.10066986083984
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_handedness.R","FAILED","Error in data.frame(species_sci = vapply(d$Species, resolve, character(1)),  : 
-  arguments imply differing number of rows: 34, 0
-Execution halted","2026-07-24 15:59:53.176288","2026-07-24 15:59:53.969845",0.793557167053223
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_ILAs.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.2.1     ✔ readr     2.2.0
-✔ forcats   1.0.1     ✔ stringr   1.6.0
-✔ ggplot2   4.0.3     ✔ tibble    3.3.1
-✔ lubridate 1.9.5     ✔ tidyr     1.3.2
-✔ purrr     1.2.2     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
-Error in `rename()`:
-! Can't rename columns that don't exist.
-✖ Column `Scientific name` doesn't exist.
-Backtrace:
-     ▆
-  1. ├─dplyr::rename(data, Species = `Scientific name`)
-  2. ├─dplyr:::rename.data.frame(data, Species = `Scientific name`)
-  3. │ └─tidyselect::eval_rename(expr(c(...)), .data)
-  4. │   └─tidyselect:::rename_impl(...)
-  5. │     └─tidyselect:::eval_select_impl(...)
-  6. │       ├─tidyselect:::with_subscript_errors(...)
-  7. │       │ └─base::withCallingHandlers(...)
-  8. │       └─tidyselect:::vars_select_eval(...)
-  9. │         └─tidyselect:::walk_data_tree(expr, data_mask, context_mask)
- 10. │           └─tidyselect:::eval_c(expr, data_mask, context_mask)
- 11. │             └─tidyselect:::reduce_sels(node, data_mask, context_mask, init = init)
- 12. │               └─tidyselect:::walk_data_tree(new, data_mask, context_mask)
- 13. │                 └─tidyselect:::as_indices_sel_impl(...)
- 14. │                   └─tidyselect:::as_indices_impl(...)
- 15. │                     └─tidyselect:::chr_as_locations(x, vars, call = call, arg = arg)
- 16. │                       └─vctrs::vec_as_location(...)
- 17. └─vctrs (local) `<fn>`() at vctrs/R/subscript-loc.R:84:3
- 18.   └─vctrs:::stop_subscript_oob(...)
- 19.     └─vctrs:::stop_subscript(...) at vctrs/R/subscript-loc.R:503:3
- 20.       └─rlang::abort(...) at vctrs/R/subscript.R:150:3
-Execution halted","2026-07-24 15:59:53.978157","2026-07-24 15:59:55.213085",1.23492789268494
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_manipulation.R","FAILED","Error in data.frame(species_sci = vapply(d$Species, resolve, character(1)),  : 
-  arguments imply differing number of rows: 34, 0
-Execution halted","2026-07-24 15:59:56.136445","2026-07-24 15:59:56.822507",0.686061859130859
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_vocal_schniter.R","FAILED","Error in data.frame(species_sci = vapply(d$Species, resolve, character(1)),  : 
-  arguments imply differing number of rows: 34, 0, 1
-Execution halted","2026-07-24 15:59:58.403531","2026-07-24 15:59:59.189027",0.78549599647522
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1Gen_NoEstimates.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.2.1     ✔ readr     2.2.0
-✔ forcats   1.0.1     ✔ stringr   1.6.0
-✔ ggplot2   4.0.3     ✔ tibble    3.3.1
-✔ lubridate 1.9.5     ✔ tidyr     1.3.2
-✔ purrr     1.2.2     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
-There were 50 or more warnings (use warnings() to see the first 50)
-<environment: R_GlobalEnv>
-New names:
-• `` -> `...78`
- [1] ""Homo sapiens""                    ""Pan troglodytes""                
- [3] ""Gorilla gorilla gorilla""         ""Macaca mulatta""                 
- [5] ""Macaca nemestrina""               ""Papio anubis""                   
- [7] ""Chlorocebus sabaeus""             ""Saimiri boliviensis boliviensis""
- [9] ""Sapajus apella""                  ""Callithrix jacchus""             
-[11] ""Aotus nancymaae""                 ""Otolemur garnettii""             
-[13] ""Microcebus murinus""              ""Tupaia belangeri""               
-[15] ""Mus musculus""                    ""Rattus norvegicus""              
-[17] ""Heterocephalus glaber""           ""Urocitellus parryii""            
-[19] ""Oryctolagus cuniculus""           ""Mustela putorius furo""          
-[21] ""Canis latrans""                   ""Felis catus""                    
-[23] ""Sus scrofa""                      ""Dasypus novemcinctus""           
-[25] ""Monodelphis domestica""           NA                               
-[27] NA                                NA                               
-Error in tsv_data_list[[i]] : subscript out of bounds
-Calls: cat -> %in% -> colnames -> is.data.frame
-Execution halted","2026-07-24 15:59:59.19875","2026-07-24 16:00:00.549115",1.35036492347717
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__flow_comparison/Seymour_Boyer_flow_combined.R","FAILED","Error in deframe(.) : could not find function ""deframe""
 Calls: %>%
-Execution halted","2026-07-24 16:00:03.859664","2026-07-24 16:00:04.746202",0.886538028717041
+Execution halted","2026-07-29 22:43:26.546565","2026-07-29 22:43:27.266277",0.719712018966675
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__imputing_cellcounts/cellcounts_imputations_diagnostic.R","FAILED","|-------------------------------------|
 | misty 0.8.2 (2026-05-16)            |
 | Miscellaneous Functions T. Yanagida |
@@ -461,89 +341,18 @@ Number of logged events: 2379
 Error in density.default(x = c(NA_real_, NA_real_, NA_real_, NA_real_,  : 
   need at least 2 points to select a bandwidth automatically
 Calls: densityplot ... <Anonymous> -> do.call -> <Anonymous> -> density.default
-Execution halted","2026-07-24 16:00:04.750245","2026-07-24 16:00:25.088014",20.3377687931061
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_behaviour/behaviour_compiled.R","FAILED","Error in `group_modify()`:
-! The returned data frame cannot contain the original grouping
-  variables: Measure.
-Backtrace:
-     ▆
-  1. ├─dplyr::arrange(...)
-  2. ├─dplyr::relocate(...)
-  3. ├─dplyr::ungroup(...)
-  4. ├─dplyr::group_modify(...)
-  5. └─dplyr:::group_modify.grouped_df(group_by(obs, Species, Measure), ~resolve_one(.y$Measure, .x))
-  6.   ├─dplyr::group_map(.data, fun, .keep = .keep)
-  7.   └─dplyr:::group_map.data.frame(.data, fun, .keep = .keep)
-  8.     └─dplyr:::map2(chunks, group_keys, .f, ...)
-  9.       └─base::mapply(.f, .x, .y, MoreArgs = list(...), SIMPLIFY = FALSE)
- 10.         └─dplyr (local) `<fn>`(dots[[1L]][[1L]], dots[[2L]][[1L]])
- 11.           └─rlang::abort(msg, call = error_call)
-Execution halted","2026-07-24 16:00:25.092501","2026-07-24 16:00:27.501488",2.40898704528809
+Execution halted","2026-07-29 22:43:27.273228","2026-07-29 22:43:49.436566",22.1633381843567
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_behaviour/behaviour_compiled.R","FAILED","Error in utils::unzip(zip_path, list = TRUE) : 
+  zip file '/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/vocal_repertoire_schniter.xlsx' cannot be opened
+Calls: bind_rows ... standardise_sheet -> %in% -> sheets_fun -> <Anonymous> -> <Anonymous>
+Execution halted","2026-07-29 22:43:49.444404","2026-07-29 22:44:46.350961",56.9065570831299
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_body_ecology/body_ecology_compiled.R","FAILED","Error in sys.frame(1) : not that many frames on the stack
 Calls: normalizePath ... path.expand -> file.path -> dirname -> %||% -> sys.frame
-Execution halted","2026-07-24 16:00:27.503713","2026-07-24 16:00:27.781359",0.277646064758301
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_brain_mass/brain_mass_compiled.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
-Calls: read_csv -> read.csv -> read.table -> file
-In addition: Warning message:
-In file(file, ""rt"") :
-  cannot open file '../__ShinyApp/data/source_manifest.csv': No such file or directory
-Execution halted","2026-07-24 16:00:27.783619","2026-07-24 16:00:28.041153",0.257534027099609
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_cellcounts/cellcounts_compiled.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.2.1     ✔ readr     2.2.0
-✔ forcats   1.0.1     ✔ stringr   1.6.0
-✔ ggplot2   4.0.3     ✔ tibble    3.3.1
-✔ lubridate 1.9.5     ✔ tidyr     1.3.2
-✔ purrr     1.2.2     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
-Error in data.frame(Species_Name_Source = names_not_listed, Preferred_Name = NA,  : 
-  arguments imply differing number of rows: 0, 1
-Calls: rbind -> rbind -> data.frame
-Execution halted","2026-07-24 16:00:28.043225","2026-07-24 16:00:29.296613",1.25338792800903
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_gyrification/gyrification_compiled.R","FAILED","Error in `$<-`:
-! Assigned data `suppressWarnings(as.numeric(d$GI))` must be compatible
-  with existing data.
-✖ Existing data has 34 rows.
-✖ Assigned data has 0 rows.
-ℹ Only vectors of size 1 are recycled.
-Caused by error in `vectbl_recycle_rhs_rows()`:
-! Can't recycle input of size 0 to size 34.
-Backtrace:
-    ▆
- 1. ├─base::`$<-`(`*tmp*`, ""GI"", value = `<dbl>`)
- 2. ├─tibble:::`$<-.tbl_df`(`*tmp*`, ""GI"", value = `<dbl>`)
- 3. │ └─tibble:::tbl_subassign(...)
- 4. │   └─tibble:::vectbl_recycle_rhs_rows(value, fast_nrow(xo), i_arg = NULL, value_arg, call)
- 5. │     ├─base::withCallingHandlers(...)
- 6. │     └─vctrs::vec_recycle(value[[j]], nrow)
- 7. └─vctrs:::stop_recycle_incompatible_size(...) at vctrs/R/recycle.R:40:3
- 8.   └─vctrs:::stop_vctrs(...) at vctrs/R/conditions.R:800:3
- 9.     └─rlang::abort(message, class = c(class, ""vctrs_error""), ..., call = call) at vctrs/R/conditions.R:65:3
-Execution halted","2026-07-24 16:00:36.057786","2026-07-24 16:00:37.568588",1.51080203056335
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_sleep/sleep_compiled.R","FAILED","Error in `mutate()`:
-ℹ In argument: `Value =
-  suppressWarnings(as.numeric(REM_sleep_percent))`.
-Caused by error:
-! object 'REM_sleep_percent' not found
-Backtrace:
-     ▆
-  1. ├─dplyr::transmute(...)
-  2. ├─dplyr::filter(...)
-  3. ├─dplyr::mutate(...)
-  4. ├─dplyr:::mutate.data.frame(...)
-  5. │ └─dplyr:::mutate_cols(.data, dplyr_quosures(...), by)
-  6. │   ├─base::withCallingHandlers(...)
-  7. │   └─dplyr:::mutate_col(dots[[i]], data, mask, new_columns)
-  8. │     └─mask$eval_all_mutate(quo)
-  9. │       └─dplyr (local) eval()
- 10. ├─base::suppressWarnings(as.numeric(REM_sleep_percent))
- 11. │ └─base::withCallingHandlers(...)
- 12. └─base::.handleSimpleError(...)
- 13.   └─dplyr (local) h(simpleError(msg, call))
- 14.     └─rlang::abort(message, class = error_class, parent = parent, call = error_call)
-Execution halted","2026-07-24 16:00:38.698502","2026-07-24 16:00:39.81649",1.11798787117004
+Execution halted","2026-07-29 22:44:46.3794","2026-07-29 22:44:47.181954",0.80255389213562
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_brain_mass/brain_mass_compiled.R","FAILED","Error in vapply(rows[-1], function(r) if (length(r) >= ci) gsub(""\"""",  : 
+  values must be type 'character',
+ but FUN(X[[1]]) result is type 'logical'
+Execution halted","2026-07-29 22:44:47.224589","2026-07-29 22:44:49.935615",2.71102595329285
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/volumes_compiled_DeCasien.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
 ✔ dplyr     1.2.1     ✔ readr     2.2.0
 ✔ forcats   1.0.1     ✔ stringr   1.6.0
@@ -556,20 +365,7 @@ Execution halted","2026-07-24 16:00:38.698502","2026-07-24 16:00:39.81649",1.117
 ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
 Laterality guard OK: 25 one-side column(s) correctly suffixed.
 Error: paper_long('Stephan_etal_1970_Tables1-6'): no measured columns matched the term map. df cols: Species, body_weight_g, brain_weight_mg, total_brain_net_mm3, medulla_oblongata_mm3, cerebellum_mm3, mesencephalon_mm3, diencephalon_mm3, telencephalon_mm3, bulbus_olfactorius_mm3, palaeocortex_plus_amygdala_mm3, septum_mm3, striatum_mm3, schizocortex_mm3, hippocampus_mm3, neocortex_mm3, source
-Execution halted","2026-07-24 16:00:44.763582","2026-07-24 16:00:45.883291",1.11970901489258
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/volumes_compiled.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.2.1     ✔ readr     2.2.0
-✔ forcats   1.0.1     ✔ stringr   1.6.0
-✔ ggplot2   4.0.3     ✔ tibble    3.3.1
-✔ lubridate 1.9.5     ✔ tidyr     1.3.2
-✔ purrr     1.2.2     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
-Laterality guard OK: 25 one-side column(s) correctly suffixed.
-Error: read_item('Stephan_etal_1982_Table1'): no encoding (not in __ReadMe.xlsx 'Item name' and no enc_override). Add a registry row or an enc_override fallback.
-Execution halted","2026-07-24 16:00:45.886555","2026-07-24 16:00:47.299004",1.41244912147522
+Execution halted","2026-07-29 22:45:12.451515","2026-07-29 22:45:13.702109",1.25059413909912
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__ShinyApp/app.R","FAILED","
 Attaching package: ‘bslib’
 
@@ -585,7 +381,7 @@ The following objects are masked from ‘package:shiny’:
     dataTableOutput, renderDataTable
 
 Error: unexpected 'else' in ""             else""
-Execution halted","2026-07-24 16:00:47.304189","2026-07-24 16:01:06.260868",18.9566791057587
+Execution halted","2026-07-29 22:45:17.022925","2026-07-29 22:45:22.314689",5.2917640209198
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_Zilles_Rehkamper_1988_provenance.R","FAILED","New names:
 • `` -> `...2`
 • `` -> `...3`
@@ -656,187 +452,15 @@ One or more parsing issues, call `problems()` on your data frame for details,
 e.g.:
   dat <- vroom(...)
   problems(dat) 
-Execution halted","2026-07-24 16:01:11.025362","2026-07-24 16:01:12.057174",1.03181195259094
+Execution halted","2026-07-29 22:46:12.720932","2026-07-29 22:46:15.474702",2.75376987457275
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_keys/combine_trees.R","FAILED","Error: Need _keys/phylo_placental.* and _keys/phylo_marsupial.* (see PHYLO_SETUP.md).
-Execution halted","2026-07-24 16:01:13.183264","2026-07-24 16:01:14.210667",1.02740287780762
+Execution halted","2026-07-29 22:46:18.046186","2026-07-29 22:46:21.706667",3.66048097610474
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_keys/extend_phylo.R","FAILED","Error: extend_phylo.R is deprecated: use a published source tree (see PHYLO_SETUP.md), not imputation.
-Execution halted","2026-07-24 16:01:14.212935","2026-07-24 16:01:14.471639",0.258703947067261
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Andelin_etal_2019/Andelin_etal_2019_Table4.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.2.1     ✔ readr     2.2.0
-✔ forcats   1.0.1     ✔ stringr   1.6.0
-✔ ggplot2   4.0.3     ✔ tibble    3.3.1
-✔ lubridate 1.9.5     ✔ tidyr     1.3.2
-✔ purrr     1.2.2     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
-Error: No 'Item encoded' found in __ReadMe.xlsx for Item name: Andelin_etal_2019_Table4
-Execution halted","2026-07-24 16:07:57.548921","2026-07-24 16:07:59.87274",2.32381892204285
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Barks_etal_2014/Barks_etal_2014_Fig4A.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.2.1     ✔ readr     2.2.0
-✔ forcats   1.0.1     ✔ stringr   1.6.0
-✔ ggplot2   4.0.3     ✔ tibble    3.3.1
-✔ lubridate 1.9.5     ✔ tidyr     1.3.2
-✔ purrr     1.2.2     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
-Error: No 'Item encoded' entry found in __ReadMe.xlsx for Item name: Barks_etal_2014_Fig4A
-Execution halted","2026-07-24 16:08:09.200158","2026-07-24 16:08:10.396017",1.1958589553833
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Barks_etal_2014/Barks_etal_2014_Fig5A.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.2.1     ✔ readr     2.2.0
-✔ forcats   1.0.1     ✔ stringr   1.6.0
-✔ ggplot2   4.0.3     ✔ tibble    3.3.1
-✔ lubridate 1.9.5     ✔ tidyr     1.3.2
-✔ purrr     1.2.2     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
-Rows: 2 Columns: 38
-── Column specification ────────────────────────────────────────────────────────
-Delimiter: "",""
-chr  (4): Species, subjects, digitized_from, source
-dbl (34): Frontal_GM_L_cm3, Frontal_GM_R_cm3, Frontal_WM_L_cm3, Frontal_WM_R...
-
-ℹ Use `spec()` to retrieve the full column specification for this data.
-ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
-Error: No 'Item encoded' entry found in __ReadMe.xlsx for Item name: Barks_etal_2014_Fig5A
-Execution halted","2026-07-24 16:08:10.398005","2026-07-24 16:08:11.574263",1.1762580871582
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Barks_etal_2014/Barks_etal_2014_TABLE1.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.2.1     ✔ readr     2.2.0
-✔ forcats   1.0.1     ✔ stringr   1.6.0
-✔ ggplot2   4.0.3     ✔ tibble    3.3.1
-✔ lubridate 1.9.5     ✔ tidyr     1.3.2
-✔ purrr     1.2.2     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
-
-── Column specification ────────────────────────────────────────────────────────
-cols(
-  species = col_character(),
-  specimen_number = col_double(),
-  Sex = col_character(),
-  `Age (years)` = col_character(),
-  `Rearing history` = col_character(),
-  `Brain volume (cm3)` = col_double(),
-  `Brain volume minus cerebellum (cm3)` = col_double()
-)
-
-Error: No 'Item encoded' entry found in __ReadMe.xlsx for Item name: Barks_etal_2014_TABLE1
-Execution halted","2026-07-24 16:08:11.576377","2026-07-24 16:08:12.604816",1.02843904495239
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Barks_etal_2014/Barks_etal_2014_TABLE2.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.2.1     ✔ readr     2.2.0
-✔ forcats   1.0.1     ✔ stringr   1.6.0
-✔ ggplot2   4.0.3     ✔ tibble    3.3.1
-✔ lubridate 1.9.5     ✔ tidyr     1.3.2
-✔ purrr     1.2.2     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
-Error: No 'Item encoded' entry found in __ReadMe.xlsx for Item name: Barks_etal_2014_TABLE2
-Execution halted","2026-07-24 16:08:12.6072","2026-07-24 16:08:13.637028",1.02982807159424
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Burish_etal_2010/Burish_etal_2010_SupplementaryTable1.R","FAILED","
-Attaching package: ‘dplyr’
-
-The following objects are masked from ‘package:stats’:
-
-    filter, lag
-
-The following objects are masked from ‘package:base’:
-
-    intersect, setdiff, setequal, union
-
-Error: No 'Item encoded' in __ReadMe.xlsx for: Burish_etal_2010_SupplementaryTable1
-Execution halted","2026-07-24 16:08:27.551507","2026-07-24 16:08:29.979092",2.4275848865509
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Burish_etal_2010/Burish_etal_2010_Table1.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.2.1     ✔ readr     2.2.0
-✔ forcats   1.0.1     ✔ stringr   1.6.0
-✔ ggplot2   4.0.3     ✔ tibble    3.3.1
-✔ lubridate 1.9.5     ✔ tidyr     1.3.2
-✔ purrr     1.2.2     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
-Error: No 'Item encoded' in __ReadMe.xlsx for: Burish_etal_2010_Table1
-Execution halted","2026-07-24 16:08:29.982666","2026-07-24 16:08:31.935746",1.95307993888855
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/deploy_shiny.R","FAILED","Repo root: /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data
-==> Rebuilding derived data (build_data.R) …
-repo: /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data
-out:  /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__ShinyApp/data
-evom1 traits rows: 6592
-source tables indexed (served from GitHub): 198
-manifest rows: 198 | with citation: 0
-DONE -> /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__ShinyApp/data
-==> Deploying to shinyapps.io …
-── Preparing for deployment ────────────────────────────────────────────────────
-✔ Re-deploying ""evo-m1-brain-traits"" using ""server: shinyapps.io / username: 3zqqmj-alexandra0allison-de0sousa""
-ℹ Looking up content with id ""17620858""...
-Error in `httr2::req_perform()`:
-! Failed to perform HTTP request.
-Caused by error in `curl::curl_fetch_memory()`:
-! Timeout was reached [api.shinyapps.io]:
-Connection timed out after 10002 milliseconds
-Backtrace:
-     ▆
-  1. └─rsconnect::deployApp(...)
-  2.   ├─base::tryCatch(...)
-  3.   │ └─base (local) tryCatchList(expr, classes, parentenv, handlers)
-  4.   │   └─base (local) tryCatchOne(expr, names, parentenv, handlers[[1L]])
-  5.   │     └─base (local) doTryCatch(return(expr), name, parentenv, handler)
-  6.   └─client$getApplication(deployment$appId, deployment$version)
-  7.     └─rsconnect:::GET(service, authInfo, path)
-  8.       └─rsconnect:::httpRequest(...)
-  9.         └─rsconnect:::httr2Request(...)
- 10.           └─httr2::req_perform(req)
- 11.             └─httr2:::handle_resp(req, resp, error_call = error_call)
- 12.               └─rlang::cnd_signal(resp)
-Execution halted","2026-07-24 16:08:53.656691","2026-07-24 16:09:07.269744",13.6130528450012
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/DosSantos_etal_2020/DosSantos_etal_2020_Table1.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.2.1     ✔ readr     2.2.0
-✔ forcats   1.0.1     ✔ stringr   1.6.0
-✔ ggplot2   4.0.3     ✔ tibble    3.3.1
-✔ lubridate 1.9.5     ✔ tidyr     1.3.2
-✔ purrr     1.2.2     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
-Error: No 'Item encoded' in __ReadMe.xlsx for: DosSantos_etal_2020_Table1
-Execution halted","2026-07-24 16:09:13.438645","2026-07-24 16:09:16.449834",3.01118922233582
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Eagleman_Vaughn_2021/Eagleman_Vaughn_2021_TABLE1.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.2.1     ✔ readr     2.2.0
-✔ forcats   1.0.1     ✔ stringr   1.6.0
-✔ ggplot2   4.0.3     ✔ tibble    3.3.1
-✔ lubridate 1.9.5     ✔ tidyr     1.3.2
-✔ purrr     1.2.2     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
-Error: No 'Item encoded' in __ReadMe.xlsx for: Eagleman_Vaughn_2021_TABLE1
-Execution halted","2026-07-24 16:09:17.600991","2026-07-24 16:09:19.698784",2.0977931022644
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Garwicz_etal_2009/Garwicz_etal_2009_TableS1.R","FAILED","
-Attaching package: ‘dplyr’
-
-The following objects are masked from ‘package:stats’:
-
-    filter, lag
-
-The following objects are masked from ‘package:base’:
-
-    intersect, setdiff, setequal, union
-
-Error: No 'Item encoded' in __ReadMe.xlsx for: Garwicz_etal_2009_TableS1
-Execution halted","2026-07-24 16:09:30.449008","2026-07-24 16:09:32.063258",1.61424994468689
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Genoud_etal_2018/Genoud_etal_2018_TableS2.R","FAILED","Error: No 'Item encoded' in __ReadMe.xlsx for: Genoud_etal_2018_TableS2
-Execution halted","2026-07-24 16:09:32.077898","2026-07-24 16:09:32.780521",0.702622890472412
+Execution halted","2026-07-29 22:46:21.714076","2026-07-29 22:46:21.990959",0.276882886886597
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Barger_etal_2012/Barger_etal_2012_Table3.R","FAILED","Error in `[[<-.data.frame`(`*tmp*`, paste0(nuc, ""_neurons""), value = c(`13.27 (3.7)` = 13270000,  : 
+  replacement has 5 rows, data has 7
+Calls: [[<- -> [[<-.data.frame
+Execution halted","2026-07-29 22:51:44.829021","2026-07-29 22:51:45.478137",0.649116039276123
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heffner_Masterton_1983/Heffner_Masterton_1983_TableI.R","FAILED","New names:
 • `` -> `...1`
 • `` -> `...2`
@@ -881,87 +505,13 @@ Backtrace:
  23. └─base::.handleSimpleError(...)
  24.   └─dplyr (local) h(simpleError(msg, call))
  25.     └─rlang::abort(message, class = error_class, parent = parent, call = error_call)
-Execution halted","2026-07-24 16:09:34.163443","2026-07-24 16:09:34.943368",0.779924869537354
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel_etal_2020/HerculanoHouzel_etal_2020_TABLE1.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.2.1     ✔ readr     2.2.0
-✔ forcats   1.0.1     ✔ stringr   1.6.0
-✔ ggplot2   4.0.3     ✔ tibble    3.3.1
-✔ lubridate 1.9.5     ✔ tidyr     1.3.2
-✔ purrr     1.2.2     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
-Error: No 'Item encoded' in __ReadMe.xlsx for: HerculanoHouzel_etal_2020_TABLE1
-Execution halted","2026-07-24 16:09:45.35721","2026-07-24 16:09:47.067947",1.71073698997498
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel_etal_2020/HerculanoHouzel_etal_2020_TABLE2.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.2.1     ✔ readr     2.2.0
-✔ forcats   1.0.1     ✔ stringr   1.6.0
-✔ ggplot2   4.0.3     ✔ tibble    3.3.1
-✔ lubridate 1.9.5     ✔ tidyr     1.3.2
-✔ purrr     1.2.2     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
-Error: No 'Item encoded' in __ReadMe.xlsx for: HerculanoHouzel_etal_2020_TABLE2
-Execution halted","2026-07-24 16:09:47.075339","2026-07-24 16:09:48.625271",1.54993200302124
+Execution halted","2026-07-29 22:55:06.143033","2026-07-29 22:55:07.234579",1.09154605865479
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kochiyama_etal_2018/Kochiyama_etal_2018_reconcile_relative_volumes.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
 Calls: read.csv -> read.table -> file
 In addition: Warning message:
 In file(file, ""rt"") :
   cannot open file 'Kochiyama_etal_2018_Figure3.csv': No such file or directory
-Execution halted","2026-07-24 16:10:09.946484","2026-07-24 16:10:10.253992",0.307507991790771
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Rilling_Insel_1998/Rilling_Insel_1998_Table1.R","FAILED","
-Attaching package: ‘dplyr’
-
-The following objects are masked from ‘package:stats’:
-
-    filter, lag
-
-The following objects are masked from ‘package:base’:
-
-    intersect, setdiff, setequal, union
-
-Error: No matching 'Item encoded' found for: Rilling_Insel_1998_Table1
-Execution halted","2026-07-24 16:10:49.088252","2026-07-24 16:10:49.808191",0.71993899345398
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Rilling_Insel_1999/Rilling_Insel_1999_Table1.R","FAILED","
-Attaching package: ‘dplyr’
-
-The following objects are masked from ‘package:stats’:
-
-    filter, lag
-
-The following objects are masked from ‘package:base’:
-
-    intersect, setdiff, setequal, union
-
-Error: No matching 'Item encoded' found for: Rilling_Insel_1999_Table1
-Execution halted","2026-07-24 16:10:49.810494","2026-07-24 16:10:50.565276",0.75478196144104
+Execution halted","2026-07-29 22:55:56.082114","2026-07-29 22:55:56.397486",0.315371990203857
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Seymour_etal_2017/Seymour_etal_2017_TableS1_snapshot_extract.R","FAILED","Error in library(officer) : there is no package called ‘officer’
 Calls: suppressPackageStartupMessages -> withCallingHandlers -> library
-Execution halted","2026-07-24 16:10:54.567661","2026-07-24 16:10:54.908737",0.341075897216797
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stimpson_etal_2015/Stimpson_etal_2015_TableS1.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.2.1     ✔ readr     2.2.0
-✔ forcats   1.0.1     ✔ stringr   1.6.0
-✔ ggplot2   4.0.3     ✔ tibble    3.3.1
-✔ lubridate 1.9.5     ✔ tidyr     1.3.2
-✔ purrr     1.2.2     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
-Error: No 'Item encoded' entry found in __ReadMe.xlsx for Item name: Stimpson_etal_2015_TableS1
-Execution halted","2026-07-24 16:11:33.11138","2026-07-24 16:11:34.010309",0.898928880691528
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stimpson_etal_2015/Stimpson_etal_2015_TableS2.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.2.1     ✔ readr     2.2.0
-✔ forcats   1.0.1     ✔ stringr   1.6.0
-✔ ggplot2   4.0.3     ✔ tibble    3.3.1
-✔ lubridate 1.9.5     ✔ tidyr     1.3.2
-✔ purrr     1.2.2     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
-Error: No 'Item encoded' entry found in __ReadMe.xlsx for Item name: Stimpson_etal_2015_TableS2
-Execution halted","2026-07-24 16:11:34.012605","2026-07-24 16:11:34.944235",0.93163013458252
+Execution halted","2026-07-29 22:56:31.75057","2026-07-29 22:56:32.158909",0.408339023590088

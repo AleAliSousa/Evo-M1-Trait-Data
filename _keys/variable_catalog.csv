@@ -87,6 +87,12 @@ Young_etal_2013_b,Young_etal_2013_b_Table1,body_weight_kg,NA,(structure-agnostic
 Balzeau_etal_2012,Balzeau_etal_2012_Table5,Mean_pct_of_hemisphere,NA,(structure-agnostic; see data columns),NA,pct.of.hemisphere,percentage (relative),Mean,secondary,Homo,mean percentage contribution of the lobe to the hemisphere (sum of the three lobe surfaces)
 Balzeau_etal_2012,Balzeau_etal_2012_Table5,V_star,NA,(structure-agnostic; see data columns),NA,pct.of.hemisphere,percentage (relative),V*,secondary,Homo,size-corrected coefficient of variation of the percentage
 Collins_etal_2016,Collins_etal_2016_Table1,pct_neocortical_area,NA,(structure-agnostic; see data columns),NA,pct,percentage (relative),NA,secondary,Primates,region as percent of total neocortical area
+HerculanoHouzel_etal_2013,HerculanoHouzel_etal_2013_Table1-a,pct_cortical_area,NA,(structure-agnostic; see data columns),NA,pct,percentage (relative),NA,secondary,Mus musculus,% of total cortical surface area
+HerculanoHouzel_etal_2013,HerculanoHouzel_etal_2013_Table1-a,pct_cortical_volume,NA,(structure-agnostic; see data columns),NA,pct,percentage (relative),NA,secondary,Mus musculus,% of total cortical volume
+HerculanoHouzel_etal_2013,HerculanoHouzel_etal_2013_Table1-a,pct_cortical_neurons,NA,(structure-agnostic; see data columns),NA,pct,percentage (relative),NA,secondary,Mus musculus,% of total cortical neurons
+HerculanoHouzel_etal_2013,HerculanoHouzel_etal_2013_Table1-b,pct_cortical_area,NA,(structure-agnostic; see data columns),NA,pct,percentage (relative),NA,secondary,Mus musculus,% of total cortical surface area
+HerculanoHouzel_etal_2013,HerculanoHouzel_etal_2013_Table1-b,pct_cortical_volume,NA,(structure-agnostic; see data columns),NA,pct,percentage (relative),NA,secondary,Mus musculus,% of total cortical volume
+HerculanoHouzel_etal_2013,HerculanoHouzel_etal_2013_Table1-b,pct_cortical_neurons,NA,(structure-agnostic; see data columns),NA,pct,percentage (relative),NA,secondary,Mus musculus,% of total cortical neurons
 Burish_etal_2010,Burish_etal_2010,%N,NA,(structure-agnostic; see data columns),NA,p.C.N,proportion (of CNS/body/brain),NA,review,Primates (+ other mammals),average percent of cells in the structure that are neurons
 Burish_etal_2010,Burish_etal_2010,%NCNS,NA,(structure-agnostic; see data columns),NA,p.C.CNS.neurons,proportion (of CNS/body/brain),NA,review,Primates (+ other mammals),average structure neuron number fraction (expressed as percentage of the CNS neuron number; brain + spinal cord)
 HerculanoHouzel_etal_2015,HerculanoHouzel_2015,% Neurons,NA,(structure-agnostic; see data columns),NA,p.C.N,proportion (of CNS/body/brain),NA,both,Mammals,number of neurons / (number of neurons + number of other cells) * 100
@@ -176,6 +182,10 @@ Wilman_etal_2014,Wilman_etal_2014_MamFuncDat,Activity_Diurnal,Activity,Activity,
 Wilman_etal_2014,Wilman_etal_2014_MamFuncDat,Activity_pattern,Activity,Activity,NA,category,category,NA,primary,mammals,Activity pattern (derived): Nocturnal / Diurnal / Crepuscular / Cathemeral (nocturnal+diurnal)
 Bauernfeind_etal_2013,Bauernfeind_etal_2013_Table1,agranular_mm3,Agranular_insular_cortex,Agranular_insular_cortex,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates,volume of agranular insular cortex (left) in mm3
 Bauernfeind_etal_2013,Bauernfeind_etal_2013_Table2,agranular_R_mm3,Agranular_insular_cortex,Agranular_insular_cortex,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates,volume of agranular insular cortex (right) in mm3
+Barger_etal_2012,Barger_etal_2012_Table3,Amygdala_neurons,amygdala,Amygdala,cell_counts,Count.N,count (number),mean,primary,Hominidae + Hylobatidae + Cercopithecidae,total amygdala neuron number (mean across specimens)
+Barger_etal_2012,Barger_etal_2012_Table3,Amygdala_neurons,amygdala,Amygdala,brain_structure_volume,Count.N,count (number),mean,primary,Hominidae + Hylobatidae + Cercopithecidae,total amygdala neuron number (mean across specimens)
+Barger_etal_2012,Barger_etal_2012_Table3,Amygdala_neurons_SD,amygdala,Amygdala,cell_counts,Count.N,count (number),sd,info,Hominidae + Hylobatidae + Cercopithecidae,SD of total amygdala neuron number
+Barger_etal_2012,Barger_etal_2012_Table3,Amygdala_neurons_SD,amygdala,Amygdala,brain_structure_volume,Count.N,count (number),sd,info,Hominidae + Hylobatidae + Cercopithecidae,SD of total amygdala neuron number
 Frahm_etal_1997,Frahm_etal_1997_Table1,Amygdala_mm3,Amygdala,Amygdala,cell_counts,Vol.mm3,volume,NA,primary,Rodentia & Insectivora,Amygdala (Vol.mm3)
 Frahm_etal_1997,Frahm_etal_1997_Table1,Amygdala_mm3,Amygdala,Amygdala,brain_structure_volume,Vol.mm3,volume,NA,primary,Rodentia & Insectivora,Amygdala (Vol.mm3)
 Stephan_etal_1981,Stephan_etal_1981_TablesI-VI,Amygdala,Amygdala,Amygdala,cell_counts,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",amygdala
@@ -290,6 +300,8 @@ Kochiyama_etal_2018,Kochiyama_etal_2018_FossilSpecimensText,Cerebellum_Vol.mm3,C
 Kochiyama_etal_2018,Kochiyama_etal_2018_FossilSpecimensText,Cerebellum_Vol.mm3,Cerebellum,Cerebellum,brain_structure_volume,Vol.mm3,volume,NA,primary,Homo,cerebellar volume in project units
 MacLeod_etal_2003,MacLeod_etal_2003,cerebellum_volume_cm3,Cerebellum,Cerebellum,cell_counts,Volume.cm3,volume,NA,primary,Apes (Hominoidea),whole cerebellum volume
 MacLeod_etal_2003,MacLeod_etal_2003,cerebellum_volume_cm3,Cerebellum,Cerebellum,brain_structure_volume,Volume.cm3,volume,NA,primary,Apes (Hominoidea),whole cerebellum volume
+Semendeferi_Damasio_2000,Semendeferi_Damasio_2000_Table2,Cerebellum_Vol.mm3,cerebellum,Cerebellum,cell_counts,Vol.mm3,volume,NA,primary,"Hominoidea (Homo, Pan, Gorilla, Pongo, Hylobates)",cerebellum volume
+Semendeferi_Damasio_2000,Semendeferi_Damasio_2000_Table2,Cerebellum_Vol.mm3,cerebellum,Cerebellum,brain_structure_volume,Vol.mm3,volume,NA,primary,"Hominoidea (Homo, Pan, Gorilla, Pongo, Hylobates)",cerebellum volume
 Smaers_etal_2018,Smaers_etal_2018_Figure2-data1,Cerebellum_Vol.mm3,cerebellum,Cerebellum,cell_counts,Vol.mm3,volume,NA,secondary,Mammalia (primates + outgroups),total cerebellum volume
 Smaers_etal_2018,Smaers_etal_2018_Figure2-data1,Cerebellum_Vol.mm3,cerebellum,Cerebellum,brain_structure_volume,Vol.mm3,volume,NA,secondary,Mammalia (primates + outgroups),total cerebellum volume
 Stephan_etal_1970,Stephan_etal_1970,cerebellum_mm3,Cerebellum,Cerebellum,cell_counts,Volume.mm3,volume,NA,primary,NA,cerebellum volume (Brachium and Nuclei pontis included)
@@ -423,6 +435,7 @@ Bauernfeind_etal_2013,Bauernfeind_etal_2013_Table1,total_insula_mm3,Insula,Insul
 Bauernfeind_etal_2013,Bauernfeind_etal_2013_Table2,total_insula_R_mm3,Insula,Insula,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates,total right insula volume in mm3 (granular + dysgranular + agranular + FI)
 Bauernfeind_etal_2013,Bauernfeind_etal_2013_Table3,mean_mm3,Insula,Insula,brain_structure_volume,Vol.mm3,volume,Mean,primary,Primates,species mean subdivision volume in mm3 (printed in cm3 as mean +/- SD; x1000)
 Bauernfeind_etal_2013,Bauernfeind_etal_2013_Table3,sd_mm3,Insula,Insula,brain_structure_volume,Vol.mm3,volume,SD,primary,Primates,standard deviation of the subdivision volume in mm3 (printed in cm3; x1000)
+Semendeferi_Damasio_2000,Semendeferi_Damasio_2000_Table2,Insula_Vol.mm3,insula,Insula,brain_structure_volume,Vol.mm3,volume,NA,primary,"Hominoidea (Homo, Pan, Gorilla, Pongo, Hylobates)",insula volume
 Seymour_etal_2015,Seymour_etal_2015_TableS1,Total_QICA_cm3_s,Internal carotid artery,Internal carotid artery,NA,flow.cm3.s,flow.cm3.s,NA,primary,Primates & Diprotodontia,total internal carotid blood flow rate (both arteries) in cm3 s-1
 Seymour_etal_2017,Seymour_etal_2017_TableS1,Total_QICA_cm3_s,Internal carotid artery,Internal carotid artery,NA,flow.cm3.s,flow.cm3.s,NA,primary,Fossil Hominins,total internal carotid blood flow rate (both arteries) in cm3 s-1
 Seymour_etal_2015,Seymour_etal_2015_TableS1,Lumen_radius_cm,Internal carotid artery,Internal carotid artery,NA,radius.cm,radius.cm,NA,primary,Primates & Diprotodontia,internal carotid artery lumen radius (rICA) in cm
@@ -761,6 +774,7 @@ Ashwell__2020,Ashwell_2020,brain_volume_mm3,WholeBrain,WholeBrain,cell_counts,Vo
 Bush_Allman_2004_a,Bush_Allman_2004_a,whole_brain_cm3,WholeBrain,WholeBrain,cell_counts,Volume.cm3,volume,NA,primary,NA,whole brain volume
 Bush_Allman_2004_b,Bush_Allman_2004_b,whole_brain_cm3,WholeBrain,WholeBrain,cell_counts,Volume.cm3,volume,NA,primary,NA,whole brain volume
 MacLeod_etal_2003,MacLeod_etal_2003,brain_volume_cm3,WholeBrain,WholeBrain,cell_counts,Volume.cm3,volume,NA,primary,Apes (Hominoidea),whole brain volume
+Semendeferi_Damasio_2000,Semendeferi_Damasio_2000_Table2,WholeBrain_Vol.mm3,whole brain,WholeBrain,cell_counts,Vol.mm3,volume,NA,primary,"Hominoidea (Homo, Pan, Gorilla, Pongo, Hylobates)",whole-brain volume
 Semendeferi_etal_1998,Semendeferi_etal_1998,brain_volume_mm3,WholeBrain,WholeBrain,cell_counts,Volume.mm3,volume,NA,primary,Apes & humans,total brain volume
 Semendeferi_etal_2001,Semendeferi_etal_2001,brain_volume_mm3,WholeBrain,WholeBrain,cell_counts,Volume.mm3,volume,NA,primary,Apes & humans,total brain volume
 Seymour_etal_2015,Seymour_etal_2015_TableS1,Brain_volume_ml,Whole Brain,WholeBrain,cell_counts,Vol.ml,volume,NA,primary,Primates & Diprotodontia,brain (endocranial) volume in millilitres
@@ -771,10 +785,30 @@ Smaers_etal_2018,Smaers_etal_2018_Figure2-data1,Brain_Vol.mm3,whole brain,WholeB
 deSousa_etal_2010,deSousa_etal_2010,brain_volume_mm3,WholeBrain,WholeBrain,cell_counts,Volume.mm3,volume,NA,primary,Primates,brain volume
 deSousa_etal_2010,deSousa_etal_2010,brain_volume_cm3,WholeBrain,WholeBrain,cell_counts,Volume.cm3,volume,mean,primary,Primates,whole brain volume
 deSousa_etal_2010,deSousa_etal_2010,brain_volume_cm3,WholeBrain,WholeBrain,cell_counts,Volume.cm3,volume,NA,primary,NA,whole brain volume (Cavalieri)
+Barger_etal_2012,Barger_etal_2012_Table3,AccessoryBasal_neurons,amygdala accessory basal nucleus,amygdala accessory basal nucleus,NA,Count.N,count (number),mean,primary,Hominidae + Hylobatidae + Cercopithecidae,accessory basal nucleus neuron number (mean)
+Barger_etal_2012,Barger_etal_2012_Table3,AccessoryBasal_neurons_SD,amygdala accessory basal nucleus,amygdala accessory basal nucleus,NA,Count.N,count (number),sd,info,Hominidae + Hylobatidae + Cercopithecidae,"SD, accessory basal nucleus"
+Barger_etal_2012,Barger_etal_2012_Table3,Basal_neurons,amygdala basal nucleus,amygdala basal nucleus,NA,Count.N,count (number),mean,primary,Hominidae + Hylobatidae + Cercopithecidae,basal nucleus neuron number (mean)
+Barger_etal_2012,Barger_etal_2012_Table3,Basal_neurons_SD,amygdala basal nucleus,amygdala basal nucleus,NA,Count.N,count (number),sd,info,Hominidae + Hylobatidae + Cercopithecidae,"SD, basal nucleus"
+Barger_etal_2012,Barger_etal_2012_Table3,Central_neurons,amygdala central nucleus,amygdala central nucleus,NA,Count.N,count (number),mean,primary,Hominidae + Hylobatidae + Cercopithecidae,central nucleus neuron number (mean)
+Barger_etal_2012,Barger_etal_2012_Table3,Central_neurons_SD,amygdala central nucleus,amygdala central nucleus,NA,Count.N,count (number),sd,info,Hominidae + Hylobatidae + Cercopithecidae,"SD, central nucleus"
+Barger_etal_2012,Barger_etal_2012_Table3,Lateral_neurons,amygdala lateral nucleus,amygdala lateral nucleus,NA,Count.N,count (number),mean,primary,Hominidae + Hylobatidae + Cercopithecidae,lateral nucleus neuron number (mean)
+Barger_etal_2012,Barger_etal_2012_Table3,Lateral_neurons_SD,amygdala lateral nucleus,amygdala lateral nucleus,NA,Count.N,count (number),sd,info,Hominidae + Hylobatidae + Cercopithecidae,"SD, lateral nucleus"
+Semendeferi_Damasio_2000,Semendeferi_Damasio_2000_Table2,Hemispheres_Vol.mm3,cerebral hemispheres,cerebral hemispheres,NA,Vol.mm3,volume,NA,primary,"Hominoidea (Homo, Pan, Gorilla, Pongo, Hylobates)",cerebral hemispheres (both sides included)
+Semendeferi_Damasio_2000,Semendeferi_Damasio_2000_Table2,Core_Vol.mm3,core,core,NA,Vol.mm3,volume,NA,primary,"Hominoidea (Homo, Pan, Gorilla, Pongo, Hylobates)",core (subcortical) volume
+HerculanoHouzel_etal_2013,HerculanoHouzel_etal_2013_Table1-a,N_per_mm2,cortical area,cortical area,NA,Density.N_mm2,Density.N_mm2,mean,primary,Mus musculus,neuron surface density
+HerculanoHouzel_etal_2013,HerculanoHouzel_etal_2013_Table1-a,N_per_mm3,cortical area,cortical area,NA,Density.N_mm3,Density.N_mm3,mean,primary,Mus musculus,neuron volume density
+HerculanoHouzel_etal_2013,HerculanoHouzel_etal_2013_Table1-a,Neurons,cortical area,cortical area,NA,Count.N,count (number),mean,primary,Mus musculus,neuron number per functional area (one hemisphere)
+HerculanoHouzel_etal_2013,HerculanoHouzel_etal_2013_Table1-a,Neurons_SEM,cortical area,cortical area,NA,Count.N,count (number),sem,info,Mus musculus,SEM of neuron number
+HerculanoHouzel_etal_2013,HerculanoHouzel_etal_2013_Table1-a,OtherCells,cortical area,cortical area,NA,Count.N,count (number),mean,primary,Mus musculus,non-neuronal cell number per area (one hemisphere)
+HerculanoHouzel_etal_2013,HerculanoHouzel_etal_2013_Table1-a,OtherCells_SEM,cortical area,cortical area,NA,Count.N,count (number),sem,info,Mus musculus,SEM of other-cell number
+HerculanoHouzel_etal_2013,HerculanoHouzel_etal_2013_Table1-a,Thickness_mm,cortical area,cortical area,NA,Length.mm,length,mean,primary,Mus musculus,mean cortical thickness
+HerculanoHouzel_etal_2013,HerculanoHouzel_etal_2013_Table1-b,Neurons,cortical group,cortical group,NA,Count.N,count (number),mean,primary,Mus musculus,neuron number for the functional group (one hemisphere)
+Semendeferi_Damasio_2000,Semendeferi_Damasio_2000_Table2,Frontal_Vol.mm3,frontal lobe,frontal lobe,NA,Vol.mm3,volume,NA,primary,"Hominoidea (Homo, Pan, Gorilla, Pongo, Hylobates)",frontal lobe volume
 Bauernfeind_etal_2013,Bauernfeind_etal_2013_Table1,FI_mm3,fronto_insular_cortex,fronto_insular_cortex,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates,volume of frontoinsular cortex (left) in mm3; present only in great apes and humans (VENs)
 Bauernfeind_etal_2013,Bauernfeind_etal_2013_Table2,FI_R_mm3,fronto_insular_cortex,fronto_insular_cortex,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates,volume of frontoinsular cortex (right) in mm3; present only in great apes and humans (VENs)
 Smaers_etal_2018,Smaers_etal_2018_Figure2-data1,LateralCerebellum_Vol.mm3,lateral cerebellum,lateral cerebellum,NA,Vol.mm3,volume,NA,derived,Mammalia (primates + outgroups),lateral cerebellum volume (derived = total cerebellum - medial cerebellum)
 Smaers_etal_2018,Smaers_etal_2018_Figure2-data1,MedialCerebellum_Vol.mm3,medial cerebellum,medial cerebellum,NA,Vol.mm3,volume,NA,secondary,Mammalia (primates + outgroups),medial cerebellum volume
+Semendeferi_Damasio_2000,Semendeferi_Damasio_2000_Table2,ParietoOccipital_Vol.mm3,parieto-occipital,parieto-occipital,NA,Vol.mm3,volume,NA,primary,"Hominoidea (Homo, Pan, Gorilla, Pongo, Hylobates)",parieto-occipital volume
 Johansen_etal_2024,Johansen_etal_2024_Table2,SV2A_total.pmol_mL,region,region,NA,SV2A.pmol_mL,SV2A.pmol_mL,mean,primary,Homo sapiens,"SV2A synaptic-density Bmax, whole-region weighted average (both hemispheres)"
 Johansen_etal_2024,Johansen_etal_2024_Table2,SV2A_total_SD,region,region,NA,SV2A.pmol_mL,SV2A.pmol_mL,sd,info,Homo sapiens,SD of the total SV2A Bmax across subjects
 Johansen_etal_2024,Johansen_etal_2024_Table2,SV2A_L.pmol_mL,region,region,NA,SV2A.pmol_mL,SV2A.pmol_mL,mean,primary,Homo sapiens,"SV2A Bmax, left hemisphere"
@@ -784,6 +818,7 @@ Johansen_etal_2024,Johansen_etal_2024_Table2,SV2A_R_SD,region,region,NA,SV2A.pmo
 Johansen_etal_2024,Johansen_etal_2024_Table2,LR_ratio,region,region,NA,ratio,ratio,mean,derived,Homo sapiens,left/right ratio of SV2A Bmax (derived)
 Johansen_etal_2024,Johansen_etal_2024_Table2,LR_ratio_SD,region,region,NA,ratio,ratio,sd,info,Homo sapiens,SD of the left/right ratio
 Karbowski__2007,Karbowski__2007_TableS1-S23,CMRgl,see structure col,see structure col,NA,CMR.umol/g/min,CMR.umol/g/min,mean,secondary,Mammals,cerebral metabolic rate of glucose (regional or whole-brain)
+Semendeferi_Damasio_2000,Semendeferi_Damasio_2000_Table2,Temporal_Vol.mm3,temporal lobe,temporal lobe,NA,Vol.mm3,volume,NA,primary,"Hominoidea (Homo, Pan, Gorilla, Pongo, Hylobates)",temporal lobe volume
 Genoud_etal_2018,Genoud_etal_2018_TableS2,BMR.mlO2_h,whole body,whole body,NA,BMR.mlO2_h,BMR.mlO2_h,mean,secondary,Mammalia,basal metabolic rate
 Genoud_etal_2018,Genoud_etal_2018_TableS2,Body_mass.g,whole body,whole body,NA,Mass.g,mass,mean,secondary,Mammalia,body mass
 Genoud_etal_2018,Genoud_etal_2018_TableS2,BMR_pct,whole body,whole body,NA,pct.expected,percentage (relative),NA,secondary,Mammalia,BMR as % of the value expected from BMR = 2.382 * mass^0.729 (PGLS on SELECT mammals)

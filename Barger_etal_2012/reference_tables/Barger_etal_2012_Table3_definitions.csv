@@ -1,0 +1,17 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,accepted binomial; printed common-name group preserved as Species_Barger2012; harmonised via species_key token Barger2012,,,,info,Hominidae + Hylobatidae + Cercopithecidae,Barger_etal_2012_Table3,,
+Species_Barger2012,species group as printed in Table 3 (Human/Chimpanzee/Bonobo/Gorilla/Orangutan/Gibbon/Macaque),,,,info,Hominidae + Hylobatidae + Cercopithecidae,Barger_etal_2012_Table3,printed name preserved (invariant),
+n_specimens,number of specimens for this species group (from Table 1),,,,info,Hominidae + Hylobatidae + Cercopithecidae,Barger_etal_2012_Table3,total 35,
+taxon_concept,taxonomic caveat: pooled or sensu-lato means that must NOT be treated as a single modern species,,,,info,Hominidae + Hylobatidae + Cercopithecidae,Barger_etal_2012_Table3,Gibbon = pooled 3 spp (decomposable=FALSE); Orangutan = P. pygmaeus s.l.,
+Amygdala_neurons,total amygdala neuron number (mean across specimens),amygdala,Count.N,mean,primary,Hominidae + Hylobatidae + Cercopithecidae,Barger_etal_2012_Table3,from x10^6 (x1e6 to absolute),stereology (optical fractionator)
+Amygdala_neurons_SD,SD of total amygdala neuron number,amygdala,Count.N,sd,info,Hominidae + Hylobatidae + Cercopithecidae,Barger_etal_2012_Table3,,
+Lateral_neurons,lateral nucleus neuron number (mean),amygdala lateral nucleus,Count.N,mean,primary,Hominidae + Hylobatidae + Cercopithecidae,Barger_etal_2012_Table3,x1e6,
+Lateral_neurons_SD,"SD, lateral nucleus",amygdala lateral nucleus,Count.N,sd,info,Hominidae + Hylobatidae + Cercopithecidae,Barger_etal_2012_Table3,,
+Basal_neurons,basal nucleus neuron number (mean),amygdala basal nucleus,Count.N,mean,primary,Hominidae + Hylobatidae + Cercopithecidae,Barger_etal_2012_Table3,x1e6,
+Basal_neurons_SD,"SD, basal nucleus",amygdala basal nucleus,Count.N,sd,info,Hominidae + Hylobatidae + Cercopithecidae,Barger_etal_2012_Table3,,
+AccessoryBasal_neurons,accessory basal nucleus neuron number (mean),amygdala accessory basal nucleus,Count.N,mean,primary,Hominidae + Hylobatidae + Cercopithecidae,Barger_etal_2012_Table3,x1e6,
+AccessoryBasal_neurons_SD,"SD, accessory basal nucleus",amygdala accessory basal nucleus,Count.N,sd,info,Hominidae + Hylobatidae + Cercopithecidae,Barger_etal_2012_Table3,,
+Central_neurons,central nucleus neuron number (mean),amygdala central nucleus,Count.N,mean,primary,Hominidae + Hylobatidae + Cercopithecidae,Barger_etal_2012_Table3,x1e6,
+Central_neurons_SD,"SD, central nucleus",amygdala central nucleus,Count.N,sd,info,Hominidae + Hylobatidae + Cercopithecidae,Barger_etal_2012_Table3,,
+Method:units,"Table 3 printed neuron numbers x10^6; stored here as absolute counts (x1,000,000)",,,,method,Hominidae + Hylobatidae + Cercopithecidae,Barger_etal_2012_Table3,,
+Method:structures,Amygdala = whole; Lateral+Basal+AccessoryBasal = basolateral division; Central = centromedial,,,,method,Hominidae + Hylobatidae + Cercopithecidae,Barger_etal_2012_Table3,,

@@ -1,0 +1,10 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,accepted scientific binomial; journal-printed name preserved as Species_Smaers2018,,,,info,Mammalia (primates + outgroups),Smaers_etal_2018_Figure2-data1,,
+Species_Smaers2018,species name exactly as printed in the Figure 2 source-data table (printed name preserved — invariant),,,,info,Mammalia (primates + outgroups),Smaers_etal_2018_Figure2-data1,,
+Brain_Vol.mm3,whole-brain volume,whole brain,Vol.mm3,,secondary,Mammalia (primates + outgroups),Smaers_etal_2018_Figure2-data1,converted from cm3 (x1000),compiled from the per-row Source
+MedialCerebellum_Vol.mm3,medial cerebellum volume,medial cerebellum,Vol.mm3,,secondary,Mammalia (primates + outgroups),Smaers_etal_2018_Figure2-data1,converted from cm3 (x1000),compiled from the per-row Source
+Cerebellum_Vol.mm3,total cerebellum volume,cerebellum,Vol.mm3,,secondary,Mammalia (primates + outgroups),Smaers_etal_2018_Figure2-data1,converted from cm3 (x1000),compiled from the per-row Source
+LateralCerebellum_Vol.mm3,lateral cerebellum volume (derived = total cerebellum - medial cerebellum),lateral cerebellum,Vol.mm3,,derived,Mammalia (primates + outgroups),Smaers_etal_2018_Figure2-data1,"derived, not printed in the source table",the paper’s focal measure
+Source,primary source of each row’s brain/cerebellum values,,,,info,Mammalia (primates + outgroups),Smaers_etal_2018_Figure2-data1,Maseko et al. 2012 / Smaers et al. 2011 / MacLeod et al. 2003,drives per-row primary/secondary
+Method:units,structure volumes converted cm3 -> mm3 (x1000); originals in the frozen source (docx),,,,method,Mammalia (primates + outgroups),Smaers_etal_2018_Figure2-data1,,
+Method:lateral,LateralCerebellum_Vol.mm3 = Cerebellum_Vol.mm3 - MedialCerebellum_Vol.mm3,,,,method,Mammalia (primates + outgroups),Smaers_etal_2018_Figure2-data1,,

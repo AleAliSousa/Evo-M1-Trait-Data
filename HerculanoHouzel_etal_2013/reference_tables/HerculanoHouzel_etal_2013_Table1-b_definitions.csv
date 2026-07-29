@@ -1,0 +1,9 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,"species (single-species mouse study, n=4)",,,,info,Mus musculus,HerculanoHouzel_etal_2013_Table1-b,,
+Species_HerculanoHouzel2013,"printed label (""Mouse"")",,,,info,Mus musculus,HerculanoHouzel_etal_2013_Table1-b,,
+FunctionalGroup,higher-level functional grouping of cortical areas,,,,info,Mus musculus,HerculanoHouzel_etal_2013_Table1-b,Sensory = somatosensory+visual+auditory+...,
+pct_cortical_area,% of total cortical surface area,,pct,,secondary,Mus musculus,HerculanoHouzel_etal_2013_Table1-b,,
+pct_cortical_volume,% of total cortical volume,,pct,,secondary,Mus musculus,HerculanoHouzel_etal_2013_Table1-b,,
+Neurons,neuron number for the functional group (one hemisphere),cortical group,Count.N,mean,primary,Mus musculus,HerculanoHouzel_etal_2013_Table1-b,,
+pct_cortical_neurons,% of total cortical neurons,,pct,,secondary,Mus musculus,HerculanoHouzel_etal_2013_Table1-b,,
+Method:grouping,aggregate of the Table 1-a areas into functional systems,,,,method,Mus musculus,HerculanoHouzel_etal_2013_Table1-b,,

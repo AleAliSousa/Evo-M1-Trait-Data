@@ -1,0 +1,20 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,species (single-species human atlas),,,,info,Homo sapiens,Johansen_etal_2024_Table2,,
+Species_Johansen2024,species as studied (Homo sapiens); printed-name invariant (trivial here),,,,info,Homo sapiens,Johansen_etal_2024_Table2,,
+Lobe,lobe grouping as printed (forward-filled from group headers),,,,info,Homo sapiens,Johansen_etal_2024_Table2,,
+Region,brain region (Desikan-Killiany cortical parcellation + subcortical),,,,info,Homo sapiens,Johansen_etal_2024_Table2,,
+is_lobe_total,"flag: 1 = row is a lobe-level aggregate (""… (total)""), not an individual region",,,,info,Homo sapiens,Johansen_etal_2024_Table2,exclude when treating regions as units,
+is_M1,flag: 1 = primary motor cortex (Precentral),,,,info,Homo sapiens,Johansen_etal_2024_Table2,Precentral = M1,
+SV2A_total.pmol_mL,"SV2A synaptic-density Bmax, whole-region weighted average (both hemispheres)",region,SV2A.pmol_mL,mean,primary,Homo sapiens,Johansen_etal_2024_Table2,in vivo [11C]UCB-J PET,pmol/mL
+SV2A_total_SD,SD of the total SV2A Bmax across subjects,region,SV2A.pmol_mL,sd,info,Homo sapiens,Johansen_etal_2024_Table2,,
+SV2A_total_COV,coefficient of variation (%) of total SV2A Bmax,region,,,info,Homo sapiens,Johansen_etal_2024_Table2,,
+SV2A_L.pmol_mL,"SV2A Bmax, left hemisphere",region,SV2A.pmol_mL,mean,primary,Homo sapiens,Johansen_etal_2024_Table2,,pmol/mL
+SV2A_L_SD,"SD, left hemisphere",region,SV2A.pmol_mL,sd,info,Homo sapiens,Johansen_etal_2024_Table2,,
+SV2A_L_COV,"COV (%), left hemisphere",region,,,info,Homo sapiens,Johansen_etal_2024_Table2,,
+SV2A_R.pmol_mL,"SV2A Bmax, right hemisphere",region,SV2A.pmol_mL,mean,primary,Homo sapiens,Johansen_etal_2024_Table2,,pmol/mL
+SV2A_R_SD,"SD, right hemisphere",region,SV2A.pmol_mL,sd,info,Homo sapiens,Johansen_etal_2024_Table2,,
+SV2A_R_COV,"COV (%), right hemisphere",region,,,info,Homo sapiens,Johansen_etal_2024_Table2,,
+LR_ratio,left/right ratio of SV2A Bmax (derived),region,ratio,mean,derived,Homo sapiens,Johansen_etal_2024_Table2,"blank for midline structures (Pons, White matter)",
+LR_ratio_SD,SD of the left/right ratio,region,ratio,sd,info,Homo sapiens,Johansen_etal_2024_Table2,,
+LR_ratio_COV,COV (%) of the left/right ratio,region,,,info,Homo sapiens,Johansen_etal_2024_Table2,,
+Method:units,SV2A density = Bmax in pmol/mL (in vivo [11C]UCB-J PET); single-species human reference atlas,,,,method,Homo sapiens,Johansen_etal_2024_Table2,,

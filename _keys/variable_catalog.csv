@@ -290,6 +290,8 @@ Kochiyama_etal_2018,Kochiyama_etal_2018_FossilSpecimensText,Cerebellum_Vol.mm3,C
 Kochiyama_etal_2018,Kochiyama_etal_2018_FossilSpecimensText,Cerebellum_Vol.mm3,Cerebellum,Cerebellum,brain_structure_volume,Vol.mm3,volume,NA,primary,Homo,cerebellar volume in project units
 MacLeod_etal_2003,MacLeod_etal_2003,cerebellum_volume_cm3,Cerebellum,Cerebellum,cell_counts,Volume.cm3,volume,NA,primary,Apes (Hominoidea),whole cerebellum volume
 MacLeod_etal_2003,MacLeod_etal_2003,cerebellum_volume_cm3,Cerebellum,Cerebellum,brain_structure_volume,Volume.cm3,volume,NA,primary,Apes (Hominoidea),whole cerebellum volume
+Smaers_etal_2018,Smaers_etal_2018_Figure2-data1,Cerebellum_Vol.mm3,cerebellum,Cerebellum,cell_counts,Vol.mm3,volume,NA,secondary,Mammalia (primates + outgroups),total cerebellum volume
+Smaers_etal_2018,Smaers_etal_2018_Figure2-data1,Cerebellum_Vol.mm3,cerebellum,Cerebellum,brain_structure_volume,Vol.mm3,volume,NA,secondary,Mammalia (primates + outgroups),total cerebellum volume
 Stephan_etal_1970,Stephan_etal_1970,cerebellum_mm3,Cerebellum,Cerebellum,cell_counts,Volume.mm3,volume,NA,primary,NA,cerebellum volume (Brachium and Nuclei pontis included)
 Stephan_etal_1970,Stephan_etal_1970,cerebellum_mm3,Cerebellum,Cerebellum,brain_structure_volume,Volume.mm3,volume,NA,primary,NA,cerebellum volume (Brachium and Nuclei pontis included)
 Stephan_etal_1981,Stephan_etal_1981_TablesI-VI,Cerebellum,Cerebellum,Cerebellum,cell_counts,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",cerebellum (incl. brachia & nuclei pontis)
@@ -765,11 +767,22 @@ Seymour_etal_2015,Seymour_etal_2015_TableS1,Brain_volume_ml,Whole Brain,WholeBra
 Seymour_etal_2017,Seymour_etal_2017_TableS1,Brain_volume_cm3,Whole Brain,WholeBrain,cell_counts,Vol.ml,volume,NA,primary,Fossil Hominins,brain (endocranial) volume in cm3 (= ml)
 Seymour_etal_2019,Seymour_etal_2019_rspb20192208si002,ECV_ml,Whole Brain,WholeBrain,cell_counts,Vol.ml,volume,NA,primary,Great Apes & Homo,endocranial volume in millilitres
 Smaers_etal_2011,Smaers_etal_2011,total_brain_volume_cm3,WholeBrain,WholeBrain,cell_counts,Volume.cm3,volume,NA,both,Primates,total brain volume (Table 1)
+Smaers_etal_2018,Smaers_etal_2018_Figure2-data1,Brain_Vol.mm3,whole brain,WholeBrain,cell_counts,Vol.mm3,volume,NA,secondary,Mammalia (primates + outgroups),whole-brain volume
 deSousa_etal_2010,deSousa_etal_2010,brain_volume_mm3,WholeBrain,WholeBrain,cell_counts,Volume.mm3,volume,NA,primary,Primates,brain volume
 deSousa_etal_2010,deSousa_etal_2010,brain_volume_cm3,WholeBrain,WholeBrain,cell_counts,Volume.cm3,volume,mean,primary,Primates,whole brain volume
 deSousa_etal_2010,deSousa_etal_2010,brain_volume_cm3,WholeBrain,WholeBrain,cell_counts,Volume.cm3,volume,NA,primary,NA,whole brain volume (Cavalieri)
 Bauernfeind_etal_2013,Bauernfeind_etal_2013_Table1,FI_mm3,fronto_insular_cortex,fronto_insular_cortex,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates,volume of frontoinsular cortex (left) in mm3; present only in great apes and humans (VENs)
 Bauernfeind_etal_2013,Bauernfeind_etal_2013_Table2,FI_R_mm3,fronto_insular_cortex,fronto_insular_cortex,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates,volume of frontoinsular cortex (right) in mm3; present only in great apes and humans (VENs)
+Smaers_etal_2018,Smaers_etal_2018_Figure2-data1,LateralCerebellum_Vol.mm3,lateral cerebellum,lateral cerebellum,NA,Vol.mm3,volume,NA,derived,Mammalia (primates + outgroups),lateral cerebellum volume (derived = total cerebellum - medial cerebellum)
+Smaers_etal_2018,Smaers_etal_2018_Figure2-data1,MedialCerebellum_Vol.mm3,medial cerebellum,medial cerebellum,NA,Vol.mm3,volume,NA,secondary,Mammalia (primates + outgroups),medial cerebellum volume
+Johansen_etal_2024,Johansen_etal_2024_Table2,SV2A_total.pmol_mL,region,region,NA,SV2A.pmol_mL,SV2A.pmol_mL,mean,primary,Homo sapiens,"SV2A synaptic-density Bmax, whole-region weighted average (both hemispheres)"
+Johansen_etal_2024,Johansen_etal_2024_Table2,SV2A_total_SD,region,region,NA,SV2A.pmol_mL,SV2A.pmol_mL,sd,info,Homo sapiens,SD of the total SV2A Bmax across subjects
+Johansen_etal_2024,Johansen_etal_2024_Table2,SV2A_L.pmol_mL,region,region,NA,SV2A.pmol_mL,SV2A.pmol_mL,mean,primary,Homo sapiens,"SV2A Bmax, left hemisphere"
+Johansen_etal_2024,Johansen_etal_2024_Table2,SV2A_L_SD,region,region,NA,SV2A.pmol_mL,SV2A.pmol_mL,sd,info,Homo sapiens,"SD, left hemisphere"
+Johansen_etal_2024,Johansen_etal_2024_Table2,SV2A_R.pmol_mL,region,region,NA,SV2A.pmol_mL,SV2A.pmol_mL,mean,primary,Homo sapiens,"SV2A Bmax, right hemisphere"
+Johansen_etal_2024,Johansen_etal_2024_Table2,SV2A_R_SD,region,region,NA,SV2A.pmol_mL,SV2A.pmol_mL,sd,info,Homo sapiens,"SD, right hemisphere"
+Johansen_etal_2024,Johansen_etal_2024_Table2,LR_ratio,region,region,NA,ratio,ratio,mean,derived,Homo sapiens,left/right ratio of SV2A Bmax (derived)
+Johansen_etal_2024,Johansen_etal_2024_Table2,LR_ratio_SD,region,region,NA,ratio,ratio,sd,info,Homo sapiens,SD of the left/right ratio
 Karbowski__2007,Karbowski__2007_TableS1-S23,CMRgl,see structure col,see structure col,NA,CMR.umol/g/min,CMR.umol/g/min,mean,secondary,Mammals,cerebral metabolic rate of glucose (regional or whole-brain)
 Genoud_etal_2018,Genoud_etal_2018_TableS2,BMR.mlO2_h,whole body,whole body,NA,BMR.mlO2_h,BMR.mlO2_h,mean,secondary,Mammalia,basal metabolic rate
 Genoud_etal_2018,Genoud_etal_2018_TableS2,Body_mass.g,whole body,whole body,NA,Mass.g,mass,mean,secondary,Mammalia,body mass

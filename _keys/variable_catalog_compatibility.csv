@@ -1,8 +1,8 @@
 compat_key,canonical_structure,measure_class,n_variables,n_papers,papers,taxa,roles,poolable
 (structure-agnostic; see data columns) | mass,(structure-agnostic; see data columns),mass,25,16,AvelinodeSouza_etal_2025; Burish_etal_2010; Collins_etal_2010; Collins_etal_2016; DosSantos_etal_2017; DosSantos_etal_2020; Finlay_etal_2006; HerculanoHouzel_etal_2015; JardimMesseder_etal_2017; Kverkova_etal_2018; Lewitus_etal_2014; Seymour_etal_2015; Seymour_etal_2017; Stephan_etal_1970; Weaver_2001; Young_etal_2013_b,"Carnivores & other companion mammals; Cetaceans & other placental mammals; Fossil Hominins; Mammals; Mammals (marsupial to primate); Marsupials; monkeys, apes, fossil hominids, humans; Primates; Primates (+ other mammals); Primates & Diprotodontia; Rodents (African mole-rats +)",both; info; primary; review; secondary,TRUE
-WholeBrain | volume,WholeBrain,volume,13,11,Ashwell__2020; Bush_Allman_2004_a; Bush_Allman_2004_b; deSousa_etal_2010; MacLeod_etal_2003; Semendeferi_etal_1998; Semendeferi_etal_2001; Seymour_etal_2015; Seymour_etal_2017; Seymour_etal_2019; Smaers_etal_2011,Apes (Hominoidea); Apes & humans; Fossil Hominins; Great Apes & Homo; Mammalia; Primates; Primates & Diprotodontia,both; primary,TRUE
+WholeBrain | volume,WholeBrain,volume,14,12,Ashwell__2020; Bush_Allman_2004_a; Bush_Allman_2004_b; deSousa_etal_2010; MacLeod_etal_2003; Semendeferi_etal_1998; Semendeferi_etal_2001; Seymour_etal_2015; Seymour_etal_2017; Seymour_etal_2019; Smaers_etal_2011; Smaers_etal_2018,Apes (Hominoidea); Apes & humans; Fossil Hominins; Great Apes & Homo; Mammalia; Mammalia (primates + outgroups); Primates; Primates & Diprotodontia,both; primary; secondary,TRUE
+Cerebellum | volume,Cerebellum,volume,26,9,Ashwell__2020; Frahm_etal_1997; Kochiyama_etal_2018; MacLeod_etal_2003; Smaers_etal_2018; Stephan_etal_1970; Stephan_etal_1981; Weaver_2001; Zilles__Rehkamper_1988,"Apes (Hominoidea); hominoids; Homo; Insectivora, Scandentia & Primates; Mammalia; Mammalia (primates + outgroups); monkeys, apes, fossil hominids, humans; Primates (Pongo); Rodentia & Insectivora",primary; secondary,TRUE
 Neocortex | count (number),Neocortex,count (number),26,8,__merging_cortical_areas; Changizi__2001; Collins_etal_2010; Collins_etal_2016; deSousa_etal_2010; Finlay_etal_2006; Lewitus_etal_2014; Young_etal_2013_b,Mammals; Mammals (marsupial to primate); Mammals (monotreme to human); Primates,metadata; primary; secondary,TRUE
-Cerebellum | volume,Cerebellum,volume,24,8,Ashwell__2020; Frahm_etal_1997; Kochiyama_etal_2018; MacLeod_etal_2003; Stephan_etal_1970; Stephan_etal_1981; Weaver_2001; Zilles__Rehkamper_1988,"Apes (Hominoidea); hominoids; Homo; Insectivora, Scandentia & Primates; Mammalia; monkeys, apes, fossil hominids, humans; Primates (Pongo); Rodentia & Insectivora",primary,TRUE
 (structure-agnostic; see data columns) | count (number),(structure-agnostic; see data columns),count (number),15,8,AvelinodeSouza_etal_2025; Burish_etal_2010; DosSantos_etal_2017; DosSantos_etal_2020; HerculanoHouzel_etal_2015; JardimMesseder_etal_2017; Kochiyama_etal_2018; Kverkova_etal_2018,Carnivores & other companion mammals; Cetaceans & other placental mammals; Mammals; Marsupials; Primates (+ other mammals); Rodents (African mole-rats +),both; info; primary; review,TRUE
 Body_weight | mass,Body_weight,mass,8,8,Bauernfeind_etal_2013; Frahm_etal_1997; Frahm_etal_1998; Frahm_Zilles_1994; Matano_etal_1985_a; Matano_etal_1985_b; Stephan_etal_1981; Stephan_etal_1988,"Insectivora & Primates; Insectivora, Scandentia & Primates; Primates; Rodentia & Insectivora",primary; secondary,TRUE
 Neocortex | volume,Neocortex,volume,18,7,Changizi__2001; deSousa_etal_2010; Frahm_etal_1982; Frahm_etal_1997; Stephan_etal_1970; Stephan_etal_1981; Zilles__Rehkamper_1988,"Insectivora & Primates; Insectivora, Scandentia & Primates; Mammals (monotreme to human); Primates; Primates (Pongo); Rodentia & Insectivora",primary,TRUE
@@ -73,6 +73,7 @@ Diet | percentage (relative),Diet,percentage (relative),10,1,Wilman_etal_2014,ma
 M1_GLIprofile | GLI.profile.moment,M1_GLIprofile,GLI.profile.moment,10,1,Sherwood_etal_2004_I,,primary,FALSE
 M1 | percentage (relative),M1,percentage (relative),8,1,Young_etal_2013,Primates,info; primary,FALSE
 FrontalWhite | volume,FrontalWhite,volume,6,1,Smaers_etal_2011,Primates,both,FALSE
+region | SV2A.pmol_mL,region,SV2A.pmol_mL,6,1,Johansen_etal_2024,Homo sapiens,info; primary,FALSE
 (structure-agnostic; see data columns) | age.yBP,(structure-agnostic; see data columns),age.yBP,5,1,Kochiyama_etal_2018,Homo,info; primary; secondary,FALSE
 (structure-agnostic; see data columns) | (per measure),(structure-agnostic; see data columns),(per measure),4,1,Kaufman__2004,Mammals,primary,FALSE
 Cerebellum | surface area,Cerebellum,surface area,4,1,Ashwell__2020,Mammalia,primary,FALSE
@@ -134,6 +135,7 @@ VisualCortex | G.p.N.Stereology,VisualCortex,G.p.N.Stereology,2,1,Lewitus_etal_2
 WholeBrain | BrainSize.residual,WholeBrain,BrainSize.residual,2,1,Iwaniuk_etal_2001,Primates; Rodentia,primary,FALSE
 WholeBrain | EQ,WholeBrain,EQ,2,1,Iwaniuk_etal_2001,Mammals; Marsupialia,primary,FALSE
 fronto_insular_cortex | volume,fronto_insular_cortex,volume,2,1,Bauernfeind_etal_2013,Primates,primary,FALSE
+region | ratio,region,ratio,2,1,Johansen_etal_2024,Homo sapiens,derived; info,FALSE
 (structure-agnostic; see data columns) | ActivityPattern,(structure-agnostic; see data columns),ActivityPattern,1,1,Bush_Allman_2004_a,,secondary,FALSE
 (structure-agnostic; see data columns) | CellType,(structure-agnostic; see data columns),CellType,1,1,BarbeitoAndres_etal_2019,,primary,FALSE
 (structure-agnostic; see data columns) | CommonName,(structure-agnostic; see data columns),CommonName,1,1,Ashwell__2020,Mammalia,primary,FALSE
@@ -289,6 +291,8 @@ VestibularNucleusSuperior | volume,VestibularNucleusSuperior,volume,1,1,Baron_et
 VisualArea17 | surface area,VisualArea17,surface area,1,1,Krubitzer_Kaas_1990,Primates,primary,FALSE
 VisualArea18 | surface area,VisualArea18,surface area,1,1,Krubitzer_Kaas_1990,Primates,primary,FALSE
 WholeBrain | count (number),WholeBrain,count (number),1,1,deSousa_etal_2010,Primates,metadata,FALSE
+lateral cerebellum | volume,lateral cerebellum,volume,1,1,Smaers_etal_2018,Mammalia (primates + outgroups),derived,FALSE
+medial cerebellum | volume,medial cerebellum,volume,1,1,Smaers_etal_2018,Mammalia (primates + outgroups),secondary,FALSE
 see structure col | CMR.umol/g/min,see structure col,CMR.umol/g/min,1,1,Karbowski__2007,Mammals,secondary,FALSE
 whole body | BMR.mlO2_h,whole body,BMR.mlO2_h,1,1,Genoud_etal_2018,Mammalia,secondary,FALSE
 whole body | mass,whole body,mass,1,1,Genoud_etal_2018,Mammalia,secondary,FALSE

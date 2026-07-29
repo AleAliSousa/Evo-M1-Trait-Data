@@ -1,0 +1,17 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,"species (single-species mouse study, n=4)",,,,info,Mus musculus,HerculanoHouzel_etal_2013_Table1-a,,
+Species_HerculanoHouzel2013,"printed label (""Mouse"")",,,,info,Mus musculus,HerculanoHouzel_etal_2013_Table1-a,,
+Area,functional cortical area,,,,info,Mus musculus,HerculanoHouzel_etal_2013_Table1-a,,
+Areas_in_atlas,constituent regions in the Franklin & Paxinos (2007) atlas,,,,info,Mus musculus,HerculanoHouzel_etal_2013_Table1-a,,
+is_M1,"flag: 1 = Motor area (M1, M2)",,,,info,Mus musculus,HerculanoHouzel_etal_2013_Table1-a,,
+pct_cortical_area,% of total cortical surface area,,pct,,secondary,Mus musculus,HerculanoHouzel_etal_2013_Table1-a,,
+pct_cortical_volume,% of total cortical volume,,pct,,secondary,Mus musculus,HerculanoHouzel_etal_2013_Table1-a,,
+Neurons,neuron number per functional area (one hemisphere),cortical area,Count.N,mean,primary,Mus musculus,HerculanoHouzel_etal_2013_Table1-a,corrected for sectioning losses,isotropic fractionator
+Neurons_SEM,SEM of neuron number,cortical area,Count.N,sem,info,Mus musculus,HerculanoHouzel_etal_2013_Table1-a,,
+pct_cortical_neurons,% of total cortical neurons,,pct,,secondary,Mus musculus,HerculanoHouzel_etal_2013_Table1-a,,
+N_per_mm2,neuron surface density,cortical area,Density.N_mm2,mean,primary,Mus musculus,HerculanoHouzel_etal_2013_Table1-a,,
+N_per_mm3,neuron volume density,cortical area,Density.N_mm3,mean,primary,Mus musculus,HerculanoHouzel_etal_2013_Table1-a,,
+OtherCells,non-neuronal cell number per area (one hemisphere),cortical area,Count.N,mean,primary,Mus musculus,HerculanoHouzel_etal_2013_Table1-a,,
+OtherCells_SEM,SEM of other-cell number,cortical area,Count.N,sem,info,Mus musculus,HerculanoHouzel_etal_2013_Table1-a,,
+Thickness_mm,mean cortical thickness,cortical area,Length.mm,mean,primary,Mus musculus,HerculanoHouzel_etal_2013_Table1-a,,
+Method:sample,4 mice; counts corrected for sectioning losses; per one cortical hemisphere,,,,method,Mus musculus,HerculanoHouzel_etal_2013_Table1-a,,

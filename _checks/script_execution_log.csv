@@ -1,137 +1,26 @@
 "script","status","error","start_time","end_time","elapsed_seconds"
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_cellcounts_data.R","SUCCESS","","2026-07-24 16:30:10.377841","2026-07-24 16:30:12.022421",1.64457988739014
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_dexterity_baker.R","FAILED","Error in data.frame(species_sci = vapply(d$Species, resolve, character(1)),  : 
-  arguments imply differing number of rows: 34, 0
-Execution halted","2026-07-24 16:30:12.031857","2026-07-24 16:30:12.696542",0.664685010910034
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_dexterity_corticospinal_eco.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.2.1     ✔ readr     2.2.0
-✔ forcats   1.0.1     ✔ stringr   1.6.0
-✔ ggplot2   4.0.3     ✔ tibble    3.3.1
-✔ lubridate 1.9.5     ✔ tidyr     1.3.2
-✔ purrr     1.2.2     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
-Error in data.frame(species_sci = Iwaniuk_etal_1999_Table1$species_sci,  : 
-  arguments imply differing number of rows: 34, 0
-Calls: write_xlsx -> is.data.frame -> data.frame
-Execution halted","2026-07-24 16:30:12.708684","2026-07-24 16:30:13.782295",1.07361102104187
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_dexterity_corticospinal.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.2.1     ✔ readr     2.2.0
-✔ forcats   1.0.1     ✔ stringr   1.6.0
-✔ ggplot2   4.0.3     ✔ tibble    3.3.1
-✔ lubridate 1.9.5     ✔ tidyr     1.3.2
-✔ purrr     1.2.2     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
-Error in data.frame(species_sci = Heffner_Masterton_1975_TableI$species_sci,  : 
-  arguments imply differing number of rows: 34, 0
-Calls: write_xlsx -> is.data.frame -> data.frame
-Execution halted","2026-07-24 16:30:13.786944","2026-07-24 16:30:14.801988",1.01504397392273
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_diet.R","SUCCESS","","2026-07-24 16:30:14.807036","2026-07-24 16:30:15.509163",0.702126979827881
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_gait.R","SUCCESS","","2026-07-24 16:30:15.515534","2026-07-24 16:30:16.148036",0.63250207901001
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_gyrification_etc.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.2.1     ✔ readr     2.2.0
-✔ forcats   1.0.1     ✔ stringr   1.6.0
-✔ ggplot2   4.0.3     ✔ tibble    3.3.1
-✔ lubridate 1.9.5     ✔ tidyr     1.3.2
-✔ purrr     1.2.2     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
-Error in fix.by(by.x, x) : 'by' must specify a uniquely valid column
-Calls: merge -> merge.data.frame -> fix.by
-Execution halted","2026-07-24 16:30:16.191617","2026-07-24 16:30:17.242557",1.05094003677368
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_handedness.R","FAILED","Error in data.frame(species_sci = vapply(d$Species, resolve, character(1)),  : 
-  arguments imply differing number of rows: 34, 0
-Execution halted","2026-07-24 16:30:17.25532","2026-07-24 16:30:18.041878",0.786557912826538
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_ILAs.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.2.1     ✔ readr     2.2.0
-✔ forcats   1.0.1     ✔ stringr   1.6.0
-✔ ggplot2   4.0.3     ✔ tibble    3.3.1
-✔ lubridate 1.9.5     ✔ tidyr     1.3.2
-✔ purrr     1.2.2     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
-Error in `rename()`:
-! Can't rename columns that don't exist.
-✖ Column `Scientific name` doesn't exist.
-Backtrace:
-     ▆
-  1. ├─dplyr::rename(data, Species = `Scientific name`)
-  2. ├─dplyr:::rename.data.frame(data, Species = `Scientific name`)
-  3. │ └─tidyselect::eval_rename(expr(c(...)), .data)
-  4. │   └─tidyselect:::rename_impl(...)
-  5. │     └─tidyselect:::eval_select_impl(...)
-  6. │       ├─tidyselect:::with_subscript_errors(...)
-  7. │       │ └─base::withCallingHandlers(...)
-  8. │       └─tidyselect:::vars_select_eval(...)
-  9. │         └─tidyselect:::walk_data_tree(expr, data_mask, context_mask)
- 10. │           └─tidyselect:::eval_c(expr, data_mask, context_mask)
- 11. │             └─tidyselect:::reduce_sels(node, data_mask, context_mask, init = init)
- 12. │               └─tidyselect:::walk_data_tree(new, data_mask, context_mask)
- 13. │                 └─tidyselect:::as_indices_sel_impl(...)
- 14. │                   └─tidyselect:::as_indices_impl(...)
- 15. │                     └─tidyselect:::chr_as_locations(x, vars, call = call, arg = arg)
- 16. │                       └─vctrs::vec_as_location(...)
- 17. └─vctrs (local) `<fn>`() at vctrs/R/subscript-loc.R:84:3
- 18.   └─vctrs:::stop_subscript_oob(...)
- 19.     └─vctrs:::stop_subscript(...) at vctrs/R/subscript-loc.R:503:3
- 20.       └─rlang::abort(...) at vctrs/R/subscript.R:150:3
-Execution halted","2026-07-24 16:30:18.045597","2026-07-24 16:30:19.171301",1.12570381164551
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_locomotion.R","SUCCESS","","2026-07-24 16:30:19.175128","2026-07-24 16:30:19.839141",0.664012908935547
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_manipulation.R","FAILED","Error in data.frame(species_sci = vapply(d$Species, resolve, character(1)),  : 
-  arguments imply differing number of rows: 34, 0
-Execution halted","2026-07-24 16:30:19.844393","2026-07-24 16:30:20.477526",0.633132934570312
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_sleep.R","SUCCESS","","2026-07-24 16:30:20.507077","2026-07-24 16:30:20.963868",0.456790924072266
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_v1_karl.R","SUCCESS","","2026-07-24 16:30:20.966943","2026-07-24 16:30:21.562109",0.595165967941284
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_vocal_manyprimates.R","SUCCESS","","2026-07-24 16:30:21.568084","2026-07-24 16:30:21.998909",0.430824995040894
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_vocal_schniter.R","FAILED","Error in data.frame(species_sci = vapply(d$Species, resolve, character(1)),  : 
-  arguments imply differing number of rows: 34, 0, 1
-Execution halted","2026-07-24 16:30:22.002414","2026-07-24 16:30:22.845675",0.843261003494263
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1Gen_NoEstimates.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.2.1     ✔ readr     2.2.0
-✔ forcats   1.0.1     ✔ stringr   1.6.0
-✔ ggplot2   4.0.3     ✔ tibble    3.3.1
-✔ lubridate 1.9.5     ✔ tidyr     1.3.2
-✔ purrr     1.2.2     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
-There were 50 or more warnings (use warnings() to see the first 50)
-<environment: R_GlobalEnv>
-New names:
-• `` -> `...78`
- [1] ""Homo sapiens""                    ""Pan troglodytes""                
- [3] ""Gorilla gorilla gorilla""         ""Macaca mulatta""                 
- [5] ""Macaca nemestrina""               ""Papio anubis""                   
- [7] ""Chlorocebus sabaeus""             ""Saimiri boliviensis boliviensis""
- [9] ""Sapajus apella""                  ""Callithrix jacchus""             
-[11] ""Aotus nancymaae""                 ""Otolemur garnettii""             
-[13] ""Microcebus murinus""              ""Tupaia belangeri""               
-[15] ""Mus musculus""                    ""Rattus norvegicus""              
-[17] ""Heterocephalus glaber""           ""Urocitellus parryii""            
-[19] ""Oryctolagus cuniculus""           ""Mustela putorius furo""          
-[21] ""Canis latrans""                   ""Felis catus""                    
-[23] ""Sus scrofa""                      ""Dasypus novemcinctus""           
-[25] ""Monodelphis domestica""           NA                               
-[27] NA                                NA                               
-Error in tsv_data_list[[i]] : subscript out of bounds
-Calls: cat -> %in% -> colnames -> is.data.frame
-Execution halted","2026-07-24 16:30:22.852854","2026-07-24 16:30:23.845903",0.993048906326294
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__energetics_comparison/energetics_comparison.R","SUCCESS","","2026-07-24 16:30:23.851602","2026-07-24 16:30:25.001744",1.150141954422
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__energetics_comparison/energetics_merged.R","SUCCESS","","2026-07-24 16:30:25.005632","2026-07-24 16:30:26.439517",1.43388509750366
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__energetics_comparison/heiss_wholebrain_check.R","SUCCESS","","2026-07-24 16:30:26.444403","2026-07-24 16:30:26.835392",0.390989065170288
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_cellcounts_data.R","SUCCESS","","2026-07-29 22:43:06.302002","2026-07-29 22:43:08.675161",2.37315893173218
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_dexterity_baker.R","SUCCESS","","2026-07-29 22:43:08.692068","2026-07-29 22:43:09.590054",0.897985935211182
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_dexterity_corticospinal_eco.R","SUCCESS","","2026-07-29 22:43:09.604661","2026-07-29 22:43:10.769507",1.16484594345093
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_dexterity_corticospinal.R","SUCCESS","","2026-07-29 22:43:10.77518","2026-07-29 22:43:12.028555",1.25337481498718
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_diet.R","SUCCESS","","2026-07-29 22:43:12.05008","2026-07-29 22:43:13.288823",1.23874282836914
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_gait.R","SUCCESS","","2026-07-29 22:43:13.319087","2026-07-29 22:43:13.960993",0.641906023025513
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_gyrification_etc.R","SUCCESS","","2026-07-29 22:43:13.98164","2026-07-29 22:43:15.369219",1.3875789642334
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_handedness.R","SUCCESS","","2026-07-29 22:43:15.382739","2026-07-29 22:43:16.152393",0.769654035568237
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_ILAs.R","SUCCESS","","2026-07-29 22:43:16.156443","2026-07-29 22:43:17.403968",1.24752497673035
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_locomotion.R","SUCCESS","","2026-07-29 22:43:17.414239","2026-07-29 22:43:18.113013",0.698774099349976
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_manipulation.R","SUCCESS","","2026-07-29 22:43:18.116028","2026-07-29 22:43:18.667656",0.55162787437439
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_sleep.R","SUCCESS","","2026-07-29 22:43:18.670003","2026-07-29 22:43:19.147034",0.477030992507935
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_v1_karl.R","SUCCESS","","2026-07-29 22:43:19.1493","2026-07-29 22:43:20.075558",0.926257848739624
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_vocal_manyprimates.R","SUCCESS","","2026-07-29 22:43:20.084937","2026-07-29 22:43:20.512663",0.427725791931152
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_vocal_schniter.R","SUCCESS","","2026-07-29 22:43:20.517573","2026-07-29 22:43:21.288425",0.770851850509644
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1Gen_NoEstimates.R","SUCCESS","","2026-07-29 22:43:21.295329","2026-07-29 22:43:23.4799",2.18457078933716
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__energetics_comparison/energetics_comparison.R","SUCCESS","","2026-07-29 22:43:23.482085","2026-07-29 22:43:24.671815",1.18972992897034
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__energetics_comparison/energetics_merged.R","SUCCESS","","2026-07-29 22:43:24.674644","2026-07-29 22:43:26.234323",1.55967903137207
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__energetics_comparison/heiss_wholebrain_check.R","SUCCESS","","2026-07-29 22:43:26.238853","2026-07-29 22:43:26.542504",0.303651094436646
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__flow_comparison/Seymour_Boyer_flow_combined.R","FAILED","Error in deframe(.) : could not find function ""deframe""
 Calls: %>%
-Execution halted","2026-07-24 16:30:26.858548","2026-07-24 16:30:27.873916",1.01536798477173
+Execution halted","2026-07-29 22:43:26.546565","2026-07-29 22:43:27.266277",0.719712018966675
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__imputing_cellcounts/cellcounts_imputations_diagnostic.R","FAILED","|-------------------------------------|
 | misty 0.8.2 (2026-05-16)            |
 | Miscellaneous Functions T. Yanagida |
@@ -471,87 +360,32 @@ Number of logged events: 2379
 Error in density.default(x = c(NA_real_, NA_real_, NA_real_, NA_real_,  : 
   need at least 2 points to select a bandwidth automatically
 Calls: densityplot ... <Anonymous> -> do.call -> <Anonymous> -> density.default
-Execution halted","2026-07-24 16:30:27.88463","2026-07-24 16:30:47.55624",19.6716101169586
+Execution halted","2026-07-29 22:43:27.273228","2026-07-29 22:43:49.436566",22.1633381843567
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_behaviour/behaviour_compiled.R","FAILED","Error in utils::unzip(zip_path, list = TRUE) : 
-  zip file '/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/vocal_repertoire_manyprimates.xlsx' cannot be opened
+  zip file '/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/vocal_repertoire_schniter.xlsx' cannot be opened
 Calls: bind_rows ... standardise_sheet -> %in% -> sheets_fun -> <Anonymous> -> <Anonymous>
-Execution halted","2026-07-24 16:30:47.563027","2026-07-24 16:30:59.467426",11.9043991565704
+Execution halted","2026-07-29 22:43:49.444404","2026-07-29 22:44:46.350961",56.9065570831299
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_body_ecology/body_ecology_compiled.R","FAILED","Error in sys.frame(1) : not that many frames on the stack
 Calls: normalizePath ... path.expand -> file.path -> dirname -> %||% -> sys.frame
-Execution halted","2026-07-24 16:30:59.472791","2026-07-24 16:30:59.822693",0.349902153015137
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_brain_mass/brain_mass_compiled.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
-Calls: read_csv -> read.csv -> read.table -> file
-In addition: Warning message:
-In file(file, ""rt"") :
-  cannot open file '../__ShinyApp/data/source_manifest.csv': No such file or directory
-Execution halted","2026-07-24 16:30:59.826525","2026-07-24 16:31:00.243553",0.417027950286865
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_cellcounts/cellcounts_compiled.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.2.1     ✔ readr     2.2.0
-✔ forcats   1.0.1     ✔ stringr   1.6.0
-✔ ggplot2   4.0.3     ✔ tibble    3.3.1
-✔ lubridate 1.9.5     ✔ tidyr     1.3.2
-✔ purrr     1.2.2     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
-Error in data.frame(Species_Name_Source = names_not_listed, Preferred_Name = NA,  : 
-  arguments imply differing number of rows: 0, 1
-Calls: rbind -> rbind -> data.frame
-Execution halted","2026-07-24 16:31:00.247336","2026-07-24 16:31:01.634133",1.38679718971252
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_cellcounts/standardized_term.R","SUCCESS","","2026-07-24 16:31:01.638847","2026-07-24 16:31:02.931728",1.29288077354431
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_cerebral_metabolic_rate/cerebral_metabolic_rate_compiled.R","SUCCESS","","2026-07-24 16:31:02.947122","2026-07-24 16:31:04.973539",2.02641701698303
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_cerebral_metabolic_rate/standardized_term.R","SUCCESS","","2026-07-24 16:31:04.979844","2026-07-24 16:31:06.172234",1.19238996505737
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_cortical_areas/cortical_areas_compiled.R","SUCCESS","","2026-07-24 16:31:06.17899","2026-07-24 16:31:07.865752",1.68676209449768
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_cortical_areas/standardized_term.R","SUCCESS","","2026-07-24 16:31:07.879183","2026-07-24 16:31:09.161971",1.28278803825378
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_fossil_brain_glucose/fossil_brain_glucose_compiled.R","SUCCESS","","2026-07-24 16:31:09.166969","2026-07-24 16:31:09.700905",0.533936023712158
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_gyrification/gyrification_compiled.R","FAILED","Error in `$<-`:
-! Assigned data `suppressWarnings(as.numeric(d$GI))` must be compatible
-  with existing data.
-✖ Existing data has 34 rows.
-✖ Assigned data has 0 rows.
-ℹ Only vectors of size 1 are recycled.
-Caused by error in `vectbl_recycle_rhs_rows()`:
-! Can't recycle input of size 0 to size 34.
-Backtrace:
-    ▆
- 1. ├─base::`$<-`(`*tmp*`, ""GI"", value = `<dbl>`)
- 2. ├─tibble:::`$<-.tbl_df`(`*tmp*`, ""GI"", value = `<dbl>`)
- 3. │ └─tibble:::tbl_subassign(...)
- 4. │   └─tibble:::vectbl_recycle_rhs_rows(value, fast_nrow(xo), i_arg = NULL, value_arg, call)
- 5. │     ├─base::withCallingHandlers(...)
- 6. │     └─vctrs::vec_recycle(value[[j]], nrow)
- 7. └─vctrs:::stop_recycle_incompatible_size(...) at vctrs/R/recycle.R:40:3
- 8.   └─vctrs:::stop_vctrs(...) at vctrs/R/conditions.R:800:3
- 9.     └─rlang::abort(message, class = c(class, ""vctrs_error""), ..., call = call) at vctrs/R/conditions.R:65:3
-Execution halted","2026-07-24 16:31:09.705661","2026-07-24 16:31:10.998271",1.29260993003845
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_gyrification/standardized_term.R","SUCCESS","","2026-07-24 16:31:11.002543","2026-07-24 16:31:12.175769",1.17322611808777
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_sleep/sleep_compiled.R","FAILED","Error in `mutate()`:
-ℹ In argument: `Value =
-  suppressWarnings(as.numeric(REM_sleep_percent))`.
-Caused by error:
-! object 'REM_sleep_percent' not found
-Backtrace:
-     ▆
-  1. ├─dplyr::transmute(...)
-  2. ├─dplyr::filter(...)
-  3. ├─dplyr::mutate(...)
-  4. ├─dplyr:::mutate.data.frame(...)
-  5. │ └─dplyr:::mutate_cols(.data, dplyr_quosures(...), by)
-  6. │   ├─base::withCallingHandlers(...)
-  7. │   └─dplyr:::mutate_col(dots[[i]], data, mask, new_columns)
-  8. │     └─mask$eval_all_mutate(quo)
-  9. │       └─dplyr (local) eval()
- 10. ├─base::suppressWarnings(as.numeric(REM_sleep_percent))
- 11. │ └─base::withCallingHandlers(...)
- 12. └─base::.handleSimpleError(...)
- 13.   └─dplyr (local) h(simpleError(msg, call))
- 14.     └─rlang::abort(message, class = error_class, parent = parent, call = error_call)
-Execution halted","2026-07-24 16:31:12.177947","2026-07-24 16:31:13.277931",1.09998393058777
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_sleep/standardized_term.R","SUCCESS","","2026-07-24 16:31:13.284279","2026-07-24 16:31:14.336241",1.05196189880371
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/_audit_missing_structures.R","SUCCESS","","2026-07-24 16:31:14.341847","2026-07-24 16:31:16.550977",2.20913004875183
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/crosspub_value_match.R","SUCCESS","","2026-07-24 16:31:16.554257","2026-07-24 16:31:18.171585",1.61732816696167
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/standardized_term.R","SUCCESS","","2026-07-24 16:31:18.176675","2026-07-24 16:31:19.593169",1.41649389266968
+Execution halted","2026-07-29 22:44:46.3794","2026-07-29 22:44:47.181954",0.80255389213562
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_brain_mass/brain_mass_compiled.R","FAILED","Error in vapply(rows[-1], function(r) if (length(r) >= ci) gsub(""\"""",  : 
+  values must be type 'character',
+ but FUN(X[[1]]) result is type 'logical'
+Execution halted","2026-07-29 22:44:47.224589","2026-07-29 22:44:49.935615",2.71102595329285
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_cellcounts/cellcounts_compiled.R","SUCCESS","","2026-07-29 22:44:49.943909","2026-07-29 22:44:54.153238",4.20932912826538
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_cellcounts/standardized_term.R","SUCCESS","","2026-07-29 22:44:54.173633","2026-07-29 22:44:55.955215",1.78158187866211
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_cerebral_metabolic_rate/cerebral_metabolic_rate_compiled.R","SUCCESS","","2026-07-29 22:44:56.042879","2026-07-29 22:44:58.152097",2.10921788215637
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_cerebral_metabolic_rate/standardized_term.R","SUCCESS","","2026-07-29 22:44:58.157279","2026-07-29 22:44:59.477726",1.32044696807861
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_cortical_areas/cortical_areas_compiled.R","SUCCESS","","2026-07-29 22:44:59.526289","2026-07-29 22:45:01.016848",1.49055910110474
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_cortical_areas/standardized_term.R","SUCCESS","","2026-07-29 22:45:01.065307","2026-07-29 22:45:02.610164",1.54485702514648
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_fossil_brain_glucose/fossil_brain_glucose_compiled.R","SUCCESS","","2026-07-29 22:45:02.638919","2026-07-29 22:45:03.082315",0.443395853042603
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_gyrification/gyrification_compiled.R","SUCCESS","","2026-07-29 22:45:03.087566","2026-07-29 22:45:04.413619",1.32605314254761
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_gyrification/standardized_term.R","SUCCESS","","2026-07-29 22:45:04.423318","2026-07-29 22:45:05.909912",1.48659420013428
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_sleep/sleep_compiled.R","SUCCESS","","2026-07-29 22:45:05.923218","2026-07-29 22:45:07.08147",1.15825200080872
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_sleep/standardized_term.R","SUCCESS","","2026-07-29 22:45:07.097158","2026-07-29 22:45:08.182356",1.08519816398621
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/_audit_missing_structures.R","SUCCESS","","2026-07-29 22:45:08.19576","2026-07-29 22:45:09.909122",1.71336197853088
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/crosspub_value_match.R","SUCCESS","","2026-07-29 22:45:09.911606","2026-07-29 22:45:11.250857",1.33925104141235
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/standardized_term.R","SUCCESS","","2026-07-29 22:45:11.255258","2026-07-29 22:45:12.44905",1.19379186630249
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/volumes_compiled_DeCasien.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
 ✔ dplyr     1.2.1     ✔ readr     2.2.0
 ✔ forcats   1.0.1     ✔ stringr   1.6.0
@@ -564,20 +398,8 @@ Execution halted","2026-07-24 16:31:12.177947","2026-07-24 16:31:13.277931",1.09
 ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
 Laterality guard OK: 25 one-side column(s) correctly suffixed.
 Error: paper_long('Stephan_etal_1970_Tables1-6'): no measured columns matched the term map. df cols: Species, body_weight_g, brain_weight_mg, total_brain_net_mm3, medulla_oblongata_mm3, cerebellum_mm3, mesencephalon_mm3, diencephalon_mm3, telencephalon_mm3, bulbus_olfactorius_mm3, palaeocortex_plus_amygdala_mm3, septum_mm3, striatum_mm3, schizocortex_mm3, hippocampus_mm3, neocortex_mm3, source
-Execution halted","2026-07-24 16:31:19.598252","2026-07-24 16:31:20.923205",1.32495284080505
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/volumes_compiled.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.2.1     ✔ readr     2.2.0
-✔ forcats   1.0.1     ✔ stringr   1.6.0
-✔ ggplot2   4.0.3     ✔ tibble    3.3.1
-✔ lubridate 1.9.5     ✔ tidyr     1.3.2
-✔ purrr     1.2.2     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
-Laterality guard OK: 25 one-side column(s) correctly suffixed.
-Error: read_item('Stephan_etal_1982_Table1'): no encoding (not in __ReadMe.xlsx 'Item name' and no enc_override). Add a registry row or an enc_override fallback.
-Execution halted","2026-07-24 16:31:20.926334","2026-07-24 16:31:22.330429",1.40409517288208
+Execution halted","2026-07-29 22:45:12.451515","2026-07-29 22:45:13.702109",1.25059413909912
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/volumes_compiled.R","SUCCESS","","2026-07-29 22:45:13.70484","2026-07-29 22:45:17.013242",3.3084020614624
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__ShinyApp/app.R","FAILED","
 Attaching package: ‘bslib’
 
@@ -593,11 +415,8 @@ The following objects are masked from ‘package:shiny’:
     dataTableOutput, renderDataTable
 
 Error: unexpected 'else' in ""             else""
-Execution halted","2026-07-24 16:31:22.333746","2026-07-24 16:31:34.068582",11.734836101532
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__ShinyApp/build_data.R","FAILED","repo: /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data
-out:  /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__ShinyApp/data
-Error: expected =
-Execution halted","2026-07-24 16:31:34.079957","2026-07-24 16:31:36.749099",2.66914200782776
+Execution halted","2026-07-29 22:45:17.022925","2026-07-29 22:45:22.314689",5.2917640209198
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__ShinyApp/build_data.R","SUCCESS","","2026-07-29 22:45:22.320051","2026-07-29 22:46:12.688485",50.3684339523315
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_Zilles_Rehkamper_1988_provenance.R","FAILED","New names:
 • `` -> `...2`
 • `` -> `...3`
@@ -668,13 +487,11 @@ One or more parsing issues, call `problems()` on your data frame for details,
 e.g.:
   dat <- vroom(...)
   problems(dat) 
-Execution halted","2026-07-24 16:31:36.756459","2026-07-24 16:31:38.436599",1.68014001846313
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_keys/build_variable_catalog.R","SUCCESS","","2026-07-24 16:31:38.439761","2026-07-24 16:31:40.895844",2.45608305931091
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_keys/combine_trees.R","FAILED","Error: Need _keys/phylo_placental.* and _keys/phylo_marsupial.* (see PHYLO_SETUP.md).
-Execution halted","2026-07-24 16:31:40.905249","2026-07-24 16:31:42.366903",1.4616539478302
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_keys/extend_phylo.R","FAILED","Error: extend_phylo.R is deprecated: use a published source tree (see PHYLO_SETUP.md), not imputation.
-Execution halted","2026-07-24 16:31:42.383528","2026-07-24 16:31:43.110444",0.726916074752808
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_keys/resolve_taxonomy.R","RUNNING",NA,"2026-07-24 16:31:43.119445",NA,NA
+Execution halted","2026-07-29 22:46:12.720932","2026-07-29 22:46:15.474702",2.75376987457275
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_keys/build_variable_catalog.R","SUCCESS","","2026-07-29 22:46:15.512126","2026-07-29 22:46:17.977143",2.46501708030701
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_keys/combine_trees.R","RUNNING",NA,"2026-07-29 22:46:18.046186",NA,NA
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_keys/extend_phylo.R",NA,NA,NA,NA,NA
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_keys/resolve_taxonomy.R",NA,NA,NA,NA,NA
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_tools/__edit_all_directories.R",NA,NA,NA,NA,NA
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_tools/__file_list.R",NA,NA,NA,NA,NA
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_tools/find_csv_tsv_creators.R",NA,NA,NA,NA,NA
@@ -690,6 +507,7 @@ Execution halted","2026-07-24 16:31:42.383528","2026-07-24 16:31:43.110444",0.72
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Balzeau_etal_2012/comparison/Balzeau_etal_2012_Table5_compare_to_balzeau_percentages_csv.R",NA,NA,NA,NA,NA
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/BarbeitoAndres_etal_2019/BarbeitoAndres_etal_2019.R",NA,NA,NA,NA,NA
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Barger_etal_2007/Barger_etal_2007_TABLE1.R",NA,NA,NA,NA,NA
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Barger_etal_2012/Barger_etal_2012_Table3.R",NA,NA,NA,NA,NA
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Barger_etal_2014/Barger_etal_2014_Table1.R",NA,NA,NA,NA,NA
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Barks_etal_2014/Barks_etal_2014_Fig4A.R",NA,NA,NA,NA,NA
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Barks_etal_2014/Barks_etal_2014_Fig5A.R",NA,NA,NA,NA,NA
@@ -756,6 +574,8 @@ Execution halted","2026-07-24 16:31:42.383528","2026-07-24 16:31:43.110444",0.72
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heldstab_etal_2016/Heldstab_etal_2016_TableS1.R",NA,NA,NA,NA,NA
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel__2015/HerculanoHouzel__2015_Table1.R",NA,NA,NA,NA,NA
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel__2015/HerculanoHouzel__2015_Table2.R",NA,NA,NA,NA,NA
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel_etal_2013/Herculano-Houzel_etal_2013_Table1-a.R",NA,NA,NA,NA,NA
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel_etal_2013/Herculano-Houzel_etal_2013_Table1-b.R",NA,NA,NA,NA,NA
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel_etal_2015/HerculanoHouzel_etal_2015_Table1.R",NA,NA,NA,NA,NA
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel_etal_2015/HerculanoHouzel_etal_2015_Table2.R",NA,NA,NA,NA,NA
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel_etal_2015/HerculanoHouzel_etal_2015_Table3.R",NA,NA,NA,NA,NA
@@ -770,6 +590,7 @@ Execution halted","2026-07-24 16:31:42.383528","2026-07-24 16:31:43.110444",0.72
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Iwaniuk_etal_2001/Iwaniuk_etal_2001_Table3.R",NA,NA,NA,NA,NA
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Iwaniuk_etal_2001/Iwaniuk_etal_2001_Table4.R",NA,NA,NA,NA,NA
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/JardimMesseder_etal_2017/JardimMesseder_etal_2017_Table1.R",NA,NA,NA,NA,NA
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Johansen_etal_2024/Johansen_etal_2024_Table2.R",NA,NA,NA,NA,NA
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Karbowski__2007/comparison/Karbowski__2007_energetics_table_from_xlsx.R",NA,NA,NA,NA,NA
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Karbowski__2007/Karbowski__2007_TablesS1-S23.R",NA,NA,NA,NA,NA
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Karl_etal_2024/Karl_etal_2024_TABLE1.R",NA,NA,NA,NA,NA
@@ -820,6 +641,7 @@ Execution halted","2026-07-24 16:31:42.383528","2026-07-24 16:31:43.110444",0.72
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Rilling_Insel_1998/Rilling_Insel_1998_Table1.R",NA,NA,NA,NA,NA
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Rilling_Insel_1999/Rilling_Insel_1999_Table1.R",NA,NA,NA,NA,NA
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Schniter_Penaherrera-Aguirre_2026/Schniter_Penaherrera-Aguirre_2026_data.R",NA,NA,NA,NA,NA
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Semendeferi_Damasio_2000/Semendeferi_Damasio_2000_Table2.R",NA,NA,NA,NA,NA
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Semendeferi_etal_1998/Semendeferi_etal_1998_TABLE2.R",NA,NA,NA,NA,NA
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Semendeferi_etal_2001/Semendeferi_etal_2001_TABLE2.R",NA,NA,NA,NA,NA
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Semendeferi_etal_2002/Semendeferi_etal_2002_Table1.R",NA,NA,NA,NA,NA

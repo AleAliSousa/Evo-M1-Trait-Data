@@ -50,6 +50,17 @@ group_of <- function(sp) ifelse(grepl("neanderthal", sp, ignore.case = TRUE), "N
   ifelse(grepl("erectus|heidelberg|rudolf|habilis|georgicus|naledi|floresiensis", sp, ignore.case = TRUE),
          "early Homo", ifelse(grepl("^A\\.", sp), "Australopithecus", "other"))))
 
+## 3b. intra-species temporal grade ------------------------------------------
+# Generic within-species temporal level; only H. sapiens graded here (extend
+# GRADE_BY_SPECIMEN for other taxa). early = 4 Kochiyama EH fossils + BC1, LH 18
+# (early H. sapiens in Seymour/Boyer, not Kochiyama); recent = Bushmen;
+# modern_reference = AS8078 anchor; NA = no intra-species grade.
+GRADE_BY_SPECIMEN <- c("Qafzeh 9"="early", "Skhul 5"="early", "Mladeč 1"="early",
+  "Cro-Magnon 1"="early", "BC1"="early", "LH 18"="early",
+  "M3-A343"="recent", "M4-A344"="recent", "AS8078"="modern_reference")
+grade_of <- function(spec_key) ifelse(spec_key %in% names(GRADE_BY_SPECIMEN),
+                                       GRADE_BY_SPECIMEN[spec_key], "NA")
+
 ## 4. arterial estimates (Seymour specimens) ---------------------------------
 sey <- rd("Seymour_etal_2017_TableS1.csv")
 for (c in c("Foramen_radius_cm","Total_QICA_cm3_s","Brain_volume_cm3"))
@@ -87,7 +98,8 @@ add <- function(key, species, group, team, value, ratio) {
   if (!is.finite(value)) return(invisible())
   m <- meta[[team]]
   recs[[length(recs)+1]] <<- data.frame(
-    Specimen=key, Species=species, Group=group, Measure="BGU", Units="umol/min",
+    Specimen=key, Species=species, Group=group, sapiens_grade=grade_of(key),
+    Measure="BGU", Units="umol/min",
     Value=round(value,1), Ratio_MH=round(ratio,3),
     Scope=m["Scope"], Volume_basis=m["Volume_basis"], Team=team, Source=m["Source"],
     filtered=as.logical(m["filtered"]), stringsAsFactors=FALSE)
@@ -120,8 +132,9 @@ specs <- sort(unique(long_filt$Specimen))
 wide <- do.call(rbind, lapply(specs, function(k) {
   sub <- long_filt[long_filt$Specimen==k, ]
   sp  <- sub$Species[sub$Species!=""][1]; gp <- sub$Group[sub$Group!=""][1]
+  grd <- sub$sapiens_grade[!is.na(sub$sapiens_grade)][1]
   d <- data.frame(Specimen=k, Species=ifelse(is.na(sp),"",sp), Group=ifelse(is.na(gp),"",gp),
-                  stringsAsFactors=FALSE)
+                  sapiens_grade=ifelse(is.na(grd),"NA",grd), stringsAsFactors=FALSE)
   ratios <- c(); teams <- c()
   for (t in FILT) {
     r <- sub[sub$Team==t, ]

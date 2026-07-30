@@ -87,11 +87,29 @@ staged inputs, then estimates, ratios, and resolves.
 ## Outputs
 
 - **`fossil_brain_glucose_long.csv`** — one row per Specimen × filtered Team:
-  `Specimen, Species, Group, Measure, Units, Value, Ratio_MH, Scope, Volume_basis,
-  Team, Source`.
-- **`fossil_brain_glucose_wide.csv`** — one row per Specimen: each team's `__BGU`
-  and `__ratio_MH`, plus `n_teams, teams, consensus_ratio_MH, consensus_ratio_sd,
-  consensus_BGU_umol_min`.
+  `Specimen, Species, Group, sapiens_grade, Measure, Units, Value, Ratio_MH,
+  Scope, Volume_basis, Team, Source`.
+- **`fossil_brain_glucose_wide.csv`** — one row per Specimen: `Species, Group,
+  sapiens_grade`, each team's `__BGU` and `__ratio_MH`, plus `n_teams, teams,
+  consensus_ratio_MH, consensus_ratio_sd, consensus_BGU_umol_min`.
+
+### `sapiens_grade` — intra-species temporal grade
+
+A generic column giving the within-species temporal level of a specimen, for
+taxa that have such levels (only *H. sapiens* is graded in this dataset; extend
+`GRADE_BY_SPECIMEN` in the builder for other taxa). It exists because the source
+labels conflate fossils with living humans — see
+`../____Collections and Specimen notes/EarlyHomoSapiens_fossil_vs_extant_specimen_note.md`.
+
+| value | meaning |
+|---|---|
+| `early` | early/fossil *H. sapiens*: the 4 Kochiyama EH fossils (Qafzeh 9, Skhul 5, Mladeč 1, Cro-Magnon 1) **plus** two other early *H. sapiens* carried by Seymour/Boyer but not by Kochiyama — BC1 (Border Cave, ~80 ka) and LH 18 (Ngaloba, ~120 ka) |
+| `recent` | recent modern-human specimens (M3-A343, M4-A344 Bushmen) |
+| `modern_reference` | the mean-modern-human anchor (AS8078; `ratio_MH` == 1.0) |
+| `NA` | no intra-species grade applies (Neanderthal, early *Homo*, *Australopithecus*) |
+
+Note that `Group` still lumps `H. sapiens (early/recent)`; use `sapiens_grade`
+to split early from recent/modern without tracing back to the inputs.
 - **`fossil_brain_glucose_unfiltered.csv`** — all rows incl. the `Boyer_ACA_ecvpred`
   upper bound, with a `note` column.
 

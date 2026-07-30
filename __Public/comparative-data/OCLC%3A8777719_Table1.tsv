@@ -1,39 +1,39 @@
-Species	Species_Brodmann1913	Genus_printed	Order_printed	CorticalSurface_1hemisphere.mm2	SulcalCortex.mm2	SulcalCortex_pct	BrainWeight.g	HemisphereWeight.g	note
-Homo sapiens	Europäer: Maximalwert	Homo	Mensch	135470	91667	67.7	1590	707	human max
-Homo sapiens	Europäer: Minimalwert	Homo	Mensch	101918	63148	62.0	1327	590	human min
-Homo sapiens	Europäer: Durchschnitt	Homo	Mensch	112471	74328	64.6			human mean
-Homo sapiens	Naturmenschen: Durchschnitt	Homo	Mensch	96578	58558	60.6			'indigenous' mean (historical term, verbatim)
-Homo sapiens	Idioten: Durchschnitt	Homo	Mensch	66800	37992	56.9			'idiots' mean (historical clinical term, verbatim)
-Pan troglodytes	Schimpanse (Anthropopithecus)	Anthropopithecus	Anthropoide	39572	25985	65.7	295	122	
-Hylobates sp.	Gibbon (Hylobates)	Hylobates	Anthropoide	16301	9330	57.3	118	47	
-Mandrillus sphinx	Mandrill (Cynocephalus)	Cynocephalus	Niedere Affen (Pitheci)	21321	12290	57.7	158	63.5	
-Cercopithecus sp.	Meerkatze (Cercopithecus)	Cercopithecus	Niedere Affen (Pitheci)	14641	7526	51.4	106	46	
-Callithrix sp.	Krallenaffe (Hapale)	Hapale	Niedere Affen (Pitheci)	1649	221	14.6	7.5	3.5	Hapale = old genus for marmoset
-Eulemur macaco	Mohrenmaki (Lemur)	Lemur	Halbaffen (Prosimiae)	4054	1583	39.1	28.3	9.8	
-Cheirogaleus sp.	Zwergmaki (Chirogaleus)	Chirogaleus	Halbaffen (Prosimiae)	921	75	8.1	5.3	2.1	
-Ursus sp.	Bär (Ursus)	Ursus	Raubtiere (Carnivora)	29840	14809	49.6	350	142	
-Panthera leo	Löwe (Felis leo)	Felis	Raubtiere (Carnivora)	21792	10581	48.6	259	85	
-Canis familiaris	Hund (Terrier) (Canis)	Canis	Raubtiere (Carnivora)	9527	3785	39.7	63.5	26.5	domestic terrier
-Felis catus	Katze (Felis)	Felis	Raubtiere (Carnivora)	4474	1763	39.4	31	12	
-Martes foina	Steinmarder (Mustela)	Mustela	Raubtiere (Carnivora)	5066	2364	46.7	27	11.2	
-Mustela putorius	Iltis (Putorius)	Putorius	Raubtiere (Carnivora)	2454	950	38.7	10.7	4.1	
-Elephas sp.	Elefant (Elephas)	Elephas	Huftiere (Ungulata)	301843	222521	73.7	4925	1650	
-Equus caballus	Pferd (Equus)	Equus	Huftiere (Ungulata)	56995	37398	65.6	590	235	
-Bos taurus	Hausrind (Bos)	Bos	Huftiere (Ungulata)	49849	30199	60.6	540	225	
-Ovis aries	Schaf (Ovis)	Ovis	Huftiere (Ungulata)	14014	7889	56.3	118	45	
-Sus scrofa	Schwein (Sus)	Sus	Huftiere (Ungulata)	13022	6509	49.9	112	43	
-Capra hircus	Ziege (Capra)	Capra	Huftiere (Ungulata)	12005	5376	44.8	105	40	
-Phocoena phocoena	Tümmler (Phocaena)	Phocaena	Waltiere (Cetacea)	46994	31339	66.7	455	173	
-Phoca sp.	Seehund (Phoca)	Phoca	Pinnipedia	27551	17768	64.5	187	75	
-Oryctolagus cuniculus	Kaninchen (Lepus)	Lepus	Nagetiere (Rodentia)	1627			12	4.5	printed 'Lepus'; rabbit
-Mus musculus	Hausmaus (Mus)	Mus	Nagetiere (Rodentia)	205			0.8	0.3	
-Erinaceus europaeus	Igel (Erinaceus)	Erinaceus	Insektenfresser (Insektivora)	575			4.0	1.0	
-Tenrec ecaudatus	Borstenigel (Centetes)	Centetes	Insektenfresser (Insektivora)	515			2.6	0.9	
-Talpa europaea	Maulwurf (Talpa)	Talpa	Insektenfresser (Insektivora)	307			1.8	0.65	
-Sorex sp.	Spitzmaus (Sorex)	Sorex	Insektenfresser (Insektivora)	76			0.25	0.09	
-Dasypus sp.	Gürteltier (Dasypus)	Dasypus	Zahnarme (Edentata)	2010			19	6.5	
-Sarcophilus harrisii	Beutelteufel (Sarcophilus)	Sarcophilus	Beuteltiere (Marsupialia)	1807	450	24.9	15.2	5.2	
-Trichosurus vulpecula	Fuchskusu (Phalangista)	Phalangista	Beuteltiere (Marsupialia)	1547	287	18.6	12.5	4.5	
-Didelphis sp.	Beutelratte (Didelphys)	Didelphys	Beuteltiere (Marsupialia)	804			5.3	1.7	
-Zaglossus sp.	Langschnabeligel (Proechidna)	Proechidna	Kloakentiere (Monotremata)	6605	2210	33.5	53	23	
-Ornithorhynchus anatinus	Schnabeltier (Ornithorhynchus)	Ornithorhynchus	Kloakentiere (Monotremata)	753			8.5		brain weight measured in alcohol (Alkoh.)
+"Species"	"Species_Brodmann1913"	"Genus_printed"	"Order_printed"	"CorticalSurface_1hemisphere.mm2"	"SulcalCortex.mm2"	"SulcalCortex_pct"	"BrainWeight.g"	"HemisphereWeight.g"
+"Homo sapiens"	"Europäer: Maximalwert"	"Homo"	"Mensch"	135470	91667	67.7	1590	707
+"Homo sapiens"	"Europäer: Minimalwert"	"Homo"	"Mensch"	101918	63148	62	1327	590
+"Homo sapiens"	"Europäer: Durchschnitt"	"Homo"	"Mensch"	112471	74328	64.6		
+"Homo sapiens"	"Naturmenschen: Durchschnitt"	"Homo"	"Mensch"	96578	58558	60.6		
+"Homo sapiens"	"Idioten: Durchschnitt"	"Homo"	"Mensch"	66800	37992	56.9		
+"Pan troglodytes"	"Schimpanse (Anthropopithecus)"	"Anthropopithecus"	"Anthropoide"	39572	25985	65.7	295	122
+"Hylobates sp."	"Gibbon (Hylobates)"	"Hylobates"	"Anthropoide"	16301	9330	57.3	118	47
+"Mandrillus sphinx"	"Mandrill (Cynocephalus)"	"Cynocephalus"	"Niedere Affen (Pitheci)"	21321	12290	57.7	158	63.5
+"Cercopithecus sp."	"Meerkatze (Cercopithecus)"	"Cercopithecus"	"Niedere Affen (Pitheci)"	14641	7526	51.4	106	46
+"Callithrix sp."	"Krallenaffe (Hapale)"	"Hapale"	"Niedere Affen (Pitheci)"	1649	221	14.6	7.5	3.5
+"Eulemur macaco"	"Mohrenmaki (Lemur)"	"Lemur"	"Halbaffen (Prosimiae)"	4054	1583	39.1	28.3	9.8
+"Cheirogaleus sp."	"Zwergmaki (Chirogaleus)"	"Chirogaleus"	"Halbaffen (Prosimiae)"	921	75	8.1	5.3	2.1
+"Ursus sp."	"Bär (Ursus)"	"Ursus"	"Raubtiere (Carnivora)"	29840	14809	49.6	350	142
+"Panthera leo"	"Löwe (Felis leo)"	"Felis"	"Raubtiere (Carnivora)"	21792	10581	48.6	259	85
+"Canis familiaris"	"Hund (Terrier) (Canis)"	"Canis"	"Raubtiere (Carnivora)"	9527	3785	39.7	63.5	26.5
+"Felis catus"	"Katze (Felis)"	"Felis"	"Raubtiere (Carnivora)"	4474	1763	39.4	31	12
+"Martes foina"	"Steinmarder (Mustela)"	"Mustela"	"Raubtiere (Carnivora)"	5066	2364	46.7	27	11.2
+"Mustela putorius"	"Iltis (Putorius)"	"Putorius"	"Raubtiere (Carnivora)"	2454	950	38.7	10.7	4.1
+"Elephas sp."	"Elefant (Elephas)"	"Elephas"	"Huftiere (Ungulata)"	301843	222521	73.7	4925	1650
+"Equus caballus"	"Pferd (Equus)"	"Equus"	"Huftiere (Ungulata)"	56995	37398	65.6	590	235
+"Bos taurus"	"Hausrind (Bos)"	"Bos"	"Huftiere (Ungulata)"	49849	30199	60.6	540	225
+"Ovis aries"	"Schaf (Ovis)"	"Ovis"	"Huftiere (Ungulata)"	14014	7889	56.3	118	45
+"Sus scrofa"	"Schwein (Sus)"	"Sus"	"Huftiere (Ungulata)"	13022	6509	49.9	112	43
+"Capra hircus"	"Ziege (Capra)"	"Capra"	"Huftiere (Ungulata)"	12005	5376	44.8	105	40
+"Phocoena phocoena"	"Tümmler (Phocaena)"	"Phocaena"	"Waltiere (Cetacea)"	46994	31339	66.7	455	173
+"Phoca sp."	"Seehund (Phoca)"	"Phoca"	"Pinnipedia"	27551	17768	64.5	187	75
+"Oryctolagus cuniculus"	"Kaninchen (Lepus)"	"Lepus"	"Nagetiere (Rodentia)"	1627			12	4.5
+"Mus musculus"	"Hausmaus (Mus)"	"Mus"	"Nagetiere (Rodentia)"	205			0.8	0.3
+"Erinaceus europaeus"	"Igel (Erinaceus)"	"Erinaceus"	"Insektenfresser (Insektivora)"	575			4	1
+"Tenrec ecaudatus"	"Borstenigel (Centetes)"	"Centetes"	"Insektenfresser (Insektivora)"	515			2.6	0.9
+"Talpa europaea"	"Maulwurf (Talpa)"	"Talpa"	"Insektenfresser (Insektivora)"	307			1.8	0.65
+"Sorex sp."	"Spitzmaus (Sorex)"	"Sorex"	"Insektenfresser (Insektivora)"	76			0.25	0.09
+"Dasypus sp."	"Gürteltier (Dasypus)"	"Dasypus"	"Zahnarme (Edentata)"	2010			19	6.5
+"Sarcophilus harrisii"	"Beutelteufel (Sarcophilus)"	"Sarcophilus"	"Beuteltiere (Marsupialia)"	1807	450	24.9	15.2	5.2
+"Trichosurus vulpecula"	"Fuchskusu (Phalangista)"	"Phalangista"	"Beuteltiere (Marsupialia)"	1547	287	18.6	12.5	4.5
+"Didelphis sp."	"Beutelratte (Didelphys)"	"Didelphys"	"Beuteltiere (Marsupialia)"	804			5.3	1.7
+"Zaglossus sp."	"Langschnabeligel (Proechidna)"	"Proechidna"	"Kloakentiere (Monotremata)"	6605	2210	33.5	53	23
+"Ornithorhynchus anatinus"	"Schnabeltier (Ornithorhynchus)"	"Ornithorhynchus"	"Kloakentiere (Monotremata)"	753			8.5	

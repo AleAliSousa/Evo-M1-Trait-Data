@@ -250,6 +250,7 @@ Zilles_etal_2013,Zilles_etal_2013_Table1,Brain_size,Brain,Brain,cell_counts,Brai
 Karbowski__2007,Karbowski__2007_TableS1,CMRO2,Brain,Brain,cell_counts,CMR.ml/g/min,CMR.ml/g/min,mean,secondary,Mammals,cerebral metabolic rate of oxygen (whole brain; Table S1)
 Karbowski__2007,Karbowski__2007_TableS1,Total_O2_consumption,Brain,Brain,cell_counts,Rate.ml/min,Rate.ml/min,point,secondary,Mammals,whole-brain total oxygen consumption (Table S1)
 Karbowski__2007,Karbowski__2007_TableS2,Total_glucose_utilization,Brain,Brain,cell_counts,Rate.umol/min,Rate.umol/min,point,secondary,Mammals,whole-brain total glucose utilization (Table S2)
+Brodmann__1913,Brodmann_1913_Table1,BrainWeight.g,brain,Brain,cell_counts,Mass.g,mass,NA,primary,Mammalia (all orders),brain weight
 Burger_etal_2019,Burger_etal_2019_SupplementaryDataSD1,Mean_brain_mass_g,Brain,Brain,cell_counts,Mass.g,mass,mean,secondary,mammals,Mean brain mass
 Lewitus_etal_2013,Lewitus_etal_2013_TableS2partial,Brain_weight_g,Brain,Brain,cell_counts,Mass.g,mass,NA,secondary,Mammals,Brain weight
 Weaver_2001,Weaver__2001_TableA-15,BrMass_g,Brain,Brain,cell_counts,Mass.g,mass,NA,primary,"monkeys, apes, fossil hominids, humans",brain mass as printed (g)
@@ -320,6 +321,7 @@ Zilles__Rehkamper_1988,Zilles__Rehkamper_1988_Table12-2,Cerebellum_without_pons,
 Zilles__Rehkamper_1988,Zilles__Rehkamper_1988_Table12-2,Cerebellum_without_pons,Cerebellum,Cerebellum,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates (Pongo),cerebellum (measured without the pons) fresh volume
 Bush_Allman_2003,Bush_Allman_2003,cer_gray_cm3,CerebellumGrey,CerebellumGrey,brain_structure_volume,Volume.cm3,volume,NA,primary,NA,cerebellar grey matter volume
 Bush_Allman_2003,Bush_Allman_2003,cer_white_cm3,CerebellumWhite,CerebellumWhite,brain_structure_volume,Volume.cm3,volume,NA,primary,NA,cerebellar white matter volume
+Brodmann__1913,Brodmann_1913_Table1,CorticalSurface_1hemisphere.mm2,cerebral cortex,CerebralCortex,cell_counts,Area.mm2,surface area,NA,primary,Mammalia (all orders),total cortical surface area of ONE hemisphere
 Kochiyama_etal_2018,Kochiyama_etal_2018_FossilSpecimensText,Cerebrum_Vol.cc,Cerebrum,Cerebrum,NA,Vol.cc,volume,NA,primary,Homo,reconstructed cerebral volume (as printed)
 Kochiyama_etal_2018,Kochiyama_etal_2018_FossilSpecimensText,Cerebrum_Vol.mm3,Cerebrum,Cerebrum,NA,Vol.mm3,volume,NA,primary,Homo,cerebral volume in project units
 Stephan_etal_1981,Stephan_etal_1981_TablesI-VI,Complexus_centromedialis,Complexus_centromedialis,Complexus_centromedialis,brain_structure_volume,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",centromedial amygdaloid complex
@@ -793,6 +795,9 @@ Barger_etal_2012,Barger_etal_2012_Table3,Central_neurons,amygdala central nucleu
 Barger_etal_2012,Barger_etal_2012_Table3,Central_neurons_SD,amygdala central nucleus,amygdala central nucleus,NA,Count.N,count (number),sd,info,Hominidae + Hylobatidae + Cercopithecidae,"SD, central nucleus"
 Barger_etal_2012,Barger_etal_2012_Table3,Lateral_neurons,amygdala lateral nucleus,amygdala lateral nucleus,NA,Count.N,count (number),mean,primary,Hominidae + Hylobatidae + Cercopithecidae,lateral nucleus neuron number (mean)
 Barger_etal_2012,Barger_etal_2012_Table3,Lateral_neurons_SD,amygdala lateral nucleus,amygdala lateral nucleus,NA,Count.N,count (number),sd,info,Hominidae + Hylobatidae + Cercopithecidae,"SD, lateral nucleus"
+Brodmann__1913,Brodmann_1913_Table1,SulcalCortex_pct,cerebral cortex (sulcal),cerebral cortex (sulcal),NA,pct,percentage (relative),NA,secondary,Mammalia (all orders),sulcal cortex as % of total cortex
+Brodmann__1913,Brodmann_1913_Table1,SulcalCortex.mm2,cerebral cortex (sulcal),cerebral cortex (sulcal),NA,Area.mm2,surface area,NA,primary,Mammalia (all orders),cortical area buried in sulci/fissures (Furchenrinde)
+Brodmann__1913,Brodmann_1913_Table1,HemisphereWeight.g,cerebral hemisphere,cerebral hemisphere,NA,Mass.g,mass,NA,primary,Mammalia (all orders),hemisphere weight (parenthetical value)
 Semendeferi_Damasio_2000,Semendeferi_Damasio_2000_Table2,Hemispheres_Vol.mm3,cerebral hemispheres,cerebral hemispheres,NA,Vol.mm3,volume,NA,primary,"Hominoidea (Homo, Pan, Gorilla, Pongo, Hylobates)",cerebral hemispheres (both sides included)
 Semendeferi_Damasio_2000,Semendeferi_Damasio_2000_Table2,Core_Vol.mm3,core,core,NA,Vol.mm3,volume,NA,primary,"Hominoidea (Homo, Pan, Gorilla, Pongo, Hylobates)",core (subcortical) volume
 HerculanoHouzel_etal_2013,HerculanoHouzel_etal_2013_Table1-a,N_per_mm2,cortical area,cortical area,NA,Density.N_mm2,Density.N_mm2,mean,primary,Mus musculus,neuron surface density

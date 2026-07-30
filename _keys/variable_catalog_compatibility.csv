@@ -17,6 +17,7 @@ Corpus_geniculatum_laterale | volume,Corpus_geniculatum_laterale,volume,5,5,deSo
 WholeBrain | mass,WholeBrain,mass,5,5,Collins_etal_2016; deSousa_etal_2010; deSousa_etal_2013; Finlay_etal_2006; Young_etal_2013_b,Mammals (marsupial to primate); Primates,info; primary,TRUE
 Amygdala | volume,Amygdala,volume,10,4,Frahm_etal_1997; Stephan_etal_1981; Stephan_etal_1987; Zilles__Rehkamper_1988,"Insectivora & Primates; Insectivora–Primates (incl. Homo); Insectivora, Scandentia & Primates; Primates (Pongo); Rodentia & Insectivora",primary,TRUE
 Septum | volume,Septum,volume,8,4,Frahm_etal_1997; Stephan_etal_1970; Stephan_etal_1981; Zilles__Rehkamper_1988,"Insectivora, Scandentia & Primates; Primates (Pongo); Rodentia & Insectivora",primary,TRUE
+Brain | mass,Brain,mass,5,4,Brodmann__1913; Burger_etal_2019; Lewitus_etal_2013; Weaver_2001,"Mammalia (all orders); mammals; Mammals; monkeys, apes, fossil hominids, humans",primary; secondary,TRUE
 Medulla_oblongata | volume,Medulla_oblongata,volume,5,4,Sherwood_etal_2005; Stephan_etal_1970; Stephan_etal_1981; Zilles__Rehkamper_1988,"Insectivora, Scandentia & Primates; Primates (Pongo)",primary; secondary,TRUE
 Area_striata_grey_matter | volume,Area_striata_grey_matter,volume,4,4,deSousa_etal_2010; Frahm_etal_1984; Frahm_etal_1998; Zilles__Rehkamper_1988,Insectivora & Primates; Primates (Pongo),primary,TRUE
 Diencephalon | volume,Diencephalon,volume,4,4,Frahm_etal_1997; Stephan_etal_1970; Stephan_etal_1981; Zilles__Rehkamper_1988,"Insectivora, Scandentia & Primates; Primates (Pongo); Rodentia & Insectivora",primary,TRUE
@@ -28,7 +29,6 @@ Mesencephalon | volume,Mesencephalon,volume,6,3,Stephan_etal_1970; Stephan_etal_
 LGN | volume,LGN,volume,5,3,Bush_Allman_2004_b; deSousa_etal_2010; deSousa_etal_2013,Primates,primary,TRUE
 (structure-agnostic; see data columns) | proportion (of CNS/body/brain),(structure-agnostic; see data columns),proportion (of CNS/body/brain),4,3,Burish_etal_2010; HerculanoHouzel_etal_2015; Kverkova_etal_2018,Mammals; Primates (+ other mammals); Rodents (African mole-rats +),both; primary; review,TRUE
 (structure-agnostic; see data columns) | ratio,(structure-agnostic; see data columns),ratio,4,3,DosSantos_etal_2020; Kochiyama_etal_2018; Weaver_2001,hominoids; Homo; Homo sapiens; Mammals,info; primary; secondary,TRUE
-Brain | mass,Brain,mass,4,3,Burger_etal_2019; Lewitus_etal_2013; Weaver_2001,"mammals; Mammals; monkeys, apes, fossil hominids, humans",primary; secondary,TRUE
 Bulbus_olfactorius | volume,Bulbus_olfactorius,volume,3,3,Frahm_etal_1997; Stephan_etal_1970; Stephan_etal_1981,"Insectivora, Scandentia & Primates; Rodentia & Insectivora",primary,TRUE
 NeocortexGrey | volume,NeocortexGrey,volume,3,3,Bush_Allman_2003; Bush_Allman_2004_a; Bush_Allman_2004_b,,primary,TRUE
 NeocortexWhite | volume,NeocortexWhite,volume,3,3,Bush_Allman_2003; Bush_Allman_2004_a; Bush_Allman_2004_b,,primary,TRUE
@@ -201,6 +201,7 @@ CerebellarWhiteMatter | volume,CerebellarWhiteMatter,volume,1,1,Ashwell__2020,Ma
 Cerebellar_nuclei_total | volume,Cerebellar_nuclei_total,volume,1,1,Matano_etal_1985_a,"Insectivora, Scandentia & Primates",primary,FALSE
 CerebellumGrey | volume,CerebellumGrey,volume,1,1,Bush_Allman_2003,,primary,FALSE
 CerebellumWhite | volume,CerebellumWhite,volume,1,1,Bush_Allman_2003,,primary,FALSE
+CerebralCortex | surface area,CerebralCortex,surface area,1,1,Brodmann__1913,Mammalia (all orders),primary,FALSE
 Complexus_sensorius_trigeminalis | volume,Complexus_sensorius_trigeminalis,volume,1,1,Baron_etal_1990,Insectivora & Primates,primary,FALSE
 Complexus_vestibularis | volume,Complexus_vestibularis,volume,1,1,Stephan_etal_1981,"Insectivora, Scandentia & Primates",primary,FALSE
 Corpus_pineal | volume,Corpus_pineal,volume,1,1,Stephan_etal_1981,"Insectivora, Scandentia & Primates",primary,FALSE
@@ -297,6 +298,9 @@ VestibularNucleusSuperior | volume,VestibularNucleusSuperior,volume,1,1,Baron_et
 VisualArea17 | surface area,VisualArea17,surface area,1,1,Krubitzer_Kaas_1990,Primates,primary,FALSE
 VisualArea18 | surface area,VisualArea18,surface area,1,1,Krubitzer_Kaas_1990,Primates,primary,FALSE
 WholeBrain | count (number),WholeBrain,count (number),1,1,deSousa_etal_2010,Primates,metadata,FALSE
+cerebral cortex (sulcal) | percentage (relative),cerebral cortex (sulcal),percentage (relative),1,1,Brodmann__1913,Mammalia (all orders),secondary,FALSE
+cerebral cortex (sulcal) | surface area,cerebral cortex (sulcal),surface area,1,1,Brodmann__1913,Mammalia (all orders),primary,FALSE
+cerebral hemisphere | mass,cerebral hemisphere,mass,1,1,Brodmann__1913,Mammalia (all orders),primary,FALSE
 cerebral hemispheres | volume,cerebral hemispheres,volume,1,1,Semendeferi_Damasio_2000,"Hominoidea (Homo, Pan, Gorilla, Pongo, Hylobates)",primary,FALSE
 core | volume,core,volume,1,1,Semendeferi_Damasio_2000,"Hominoidea (Homo, Pan, Gorilla, Pongo, Hylobates)",primary,FALSE
 cortical area | Density.N_mm2,cortical area,Density.N_mm2,1,1,HerculanoHouzel_etal_2013,Mus musculus,primary,FALSE

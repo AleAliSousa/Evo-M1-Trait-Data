@@ -1,99 +1,99 @@
-Specimen,Species,Group,sapiens_grade,Measure,Units,Value,Ratio_MH,Scope,Volume_basis,Team,Source,note
-LB1,H. floresiensis,early Homo,NA,BGU,umol/min,46.1,0.108,whole_brain,endocranial_capacity,Seymour_flow,Seymour_etal_2017,
-LB1,H. floresiensis,early Homo,NA,BGU,umol/min,104.7,0.247,whole_brain,endocranial_capacity,Boyer_ACA_scaled,Boyer_Harrington_2018,
-LB1,H. floresiensis,early Homo,NA,BGU,umol/min,154.7,0.365,whole_brain,endocranial_capacity,Boyer_ACA_ecvpred,Boyer_Harrington_2018,ECV-predicted ACA (upper bound; unfiltered only)
-Forbes' Quarry 1,H. neanderthalensis,Neanderthal,NA,BGU,umol/min,355.0,0.828,whole_brain,endocranial_capacity,Seymour_flow,Seymour_etal_2017,
-Forbes' Quarry 1,H. neanderthalensis,Neanderthal,NA,BGU,umol/min,366.7,0.865,whole_brain,endocranial_capacity,Boyer_ACA_scaled,Boyer_Harrington_2018,
-Forbes' Quarry 1,H. neanderthalensis,Neanderthal,NA,BGU,umol/min,388.7,0.917,whole_brain,endocranial_capacity,Boyer_ACA_ecvpred,Boyer_Harrington_2018,ECV-predicted ACA (upper bound; unfiltered only)
-La Chapelle-aux-Saints 1,H. neanderthalensis,Neanderthal,NA,BGU,umol/min,404.6,0.944,whole_brain,endocranial_capacity,Seymour_flow,Seymour_etal_2017,
-La Chapelle-aux-Saints 1,H. neanderthalensis,Neanderthal,NA,BGU,umol/min,450.3,1.062,whole_brain,endocranial_capacity,Boyer_ACA_scaled,Boyer_Harrington_2018,
-La Chapelle-aux-Saints 1,H. neanderthalensis,Neanderthal,NA,BGU,umol/min,506.3,1.194,whole_brain,endocranial_capacity,Boyer_ACA_ecvpred,Boyer_Harrington_2018,ECV-predicted ACA (upper bound; unfiltered only)
-AS8078,H. sapiens,H. sapiens (early/recent),modern_reference,BGU,umol/min,428.6,1.0,whole_brain,endocranial_capacity,Seymour_flow,Seymour_etal_2017,
-AS8078,H. sapiens,H. sapiens (early/recent),modern_reference,BGU,umol/min,423.9,1.0,whole_brain,endocranial_capacity,Boyer_ACA_scaled,Boyer_Harrington_2018,
-AS8078,H. sapiens,H. sapiens (early/recent),modern_reference,BGU,umol/min,470.2,1.109,whole_brain,endocranial_capacity,Boyer_ACA_ecvpred,Boyer_Harrington_2018,ECV-predicted ACA (upper bound; unfiltered only)
-M3-A343,H. sapiens (Bushman),H. sapiens (early/recent),recent,BGU,umol/min,471.8,1.101,whole_brain,endocranial_capacity,Seymour_flow,Seymour_etal_2017,
-M3-A343,H. sapiens (Bushman),H. sapiens (early/recent),recent,BGU,umol/min,436.2,1.029,whole_brain,endocranial_capacity,Boyer_ACA_scaled,Boyer_Harrington_2018,
-M3-A343,H. sapiens (Bushman),H. sapiens (early/recent),recent,BGU,umol/min,470.2,1.109,whole_brain,endocranial_capacity,Boyer_ACA_ecvpred,Boyer_Harrington_2018,ECV-predicted ACA (upper bound; unfiltered only)
-M4-A344,H. sapiens (Bushman),H. sapiens (early/recent),recent,BGU,umol/min,409.9,0.956,whole_brain,endocranial_capacity,Seymour_flow,Seymour_etal_2017,
-M4-A344,H. sapiens (Bushman),H. sapiens (early/recent),recent,BGU,umol/min,419.0,0.988,whole_brain,endocranial_capacity,Boyer_ACA_scaled,Boyer_Harrington_2018,
-M4-A344,H. sapiens (Bushman),H. sapiens (early/recent),recent,BGU,umol/min,470.2,1.109,whole_brain,endocranial_capacity,Boyer_ACA_ecvpred,Boyer_Harrington_2018,ECV-predicted ACA (upper bound; unfiltered only)
-BC1,H. sapiens,H. sapiens (early/recent),early,BGU,umol/min,445.5,1.04,whole_brain,endocranial_capacity,Seymour_flow,Seymour_etal_2017,
-BC1,H. sapiens,H. sapiens (early/recent),early,BGU,umol/min,431.5,1.018,whole_brain,endocranial_capacity,Boyer_ACA_scaled,Boyer_Harrington_2018,
-BC1,H. sapiens,H. sapiens (early/recent),early,BGU,umol/min,474.9,1.12,whole_brain,endocranial_capacity,Boyer_ACA_ecvpred,Boyer_Harrington_2018,ECV-predicted ACA (upper bound; unfiltered only)
-LH 18,H. sapiens,H. sapiens (early/recent),early,BGU,umol/min,351.5,0.82,whole_brain,endocranial_capacity,Seymour_flow,Seymour_etal_2017,
-LH 18,H. sapiens,H. sapiens (early/recent),early,BGU,umol/min,385.2,0.909,whole_brain,endocranial_capacity,Boyer_ACA_scaled,Boyer_Harrington_2018,
-LH 18,H. sapiens,H. sapiens (early/recent),early,BGU,umol/min,435.4,1.027,whole_brain,endocranial_capacity,Boyer_ACA_ecvpred,Boyer_Harrington_2018,ECV-predicted ACA (upper bound; unfiltered only)
-Skhul 5,H. sapiens,H. sapiens (early/recent),early,BGU,umol/min,276.7,0.646,whole_brain,endocranial_capacity,Seymour_flow,Seymour_etal_2017,
-Skhul 5,H. sapiens,H. sapiens (early/recent),early,BGU,umol/min,385.3,0.909,whole_brain,endocranial_capacity,Boyer_ACA_scaled,Boyer_Harrington_2018,
-Skhul 5,H. sapiens,H. sapiens (early/recent),early,BGU,umol/min,477.6,1.127,whole_brain,endocranial_capacity,Boyer_ACA_ecvpred,Boyer_Harrington_2018,ECV-predicted ACA (upper bound; unfiltered only)
-KNM-ER 1470,H. rudolfensis,early Homo,NA,BGU,umol/min,102.8,0.24,whole_brain,endocranial_capacity,Seymour_flow,Seymour_etal_2017,
-KNM-ER 1470,H. rudolfensis,early Homo,NA,BGU,umol/min,190.0,0.448,whole_brain,endocranial_capacity,Boyer_ACA_scaled,Boyer_Harrington_2018,
-KNM-ER 1470,H. rudolfensis,early Homo,NA,BGU,umol/min,258.6,0.61,whole_brain,endocranial_capacity,Boyer_ACA_ecvpred,Boyer_Harrington_2018,ECV-predicted ACA (upper bound; unfiltered only)
-Ndutu,H. heidelbergensis,early Homo,NA,BGU,umol/min,187.4,0.437,whole_brain,endocranial_capacity,Seymour_flow,Seymour_etal_2017,
-Ndutu,H. heidelbergensis,early Homo,NA,BGU,umol/min,293.5,0.692,whole_brain,endocranial_capacity,Boyer_ACA_scaled,Boyer_Harrington_2018,
-Ndutu,H. heidelbergensis,early Homo,NA,BGU,umol/min,360.3,0.85,whole_brain,endocranial_capacity,Boyer_ACA_ecvpred,Boyer_Harrington_2018,ECV-predicted ACA (upper bound; unfiltered only)
-Kabwe (Broken Hill),H. heidelbergensis,early Homo,NA,BGU,umol/min,327.0,0.763,whole_brain,endocranial_capacity,Seymour_flow,Seymour_etal_2017,
-Kabwe (Broken Hill),H. heidelbergensis,early Homo,NA,BGU,umol/min,385.8,0.91,whole_brain,endocranial_capacity,Boyer_ACA_scaled,Boyer_Harrington_2018,
-Kabwe (Broken Hill),H. heidelbergensis,early Homo,NA,BGU,umol/min,423.8,1.0,whole_brain,endocranial_capacity,Boyer_ACA_ecvpred,Boyer_Harrington_2018,ECV-predicted ACA (upper bound; unfiltered only)
-Ngandong 14 (Solo XI),H. erectus (soloensis),early Homo,NA,BGU,umol/min,261.0,0.609,whole_brain,endocranial_capacity,Seymour_flow,Seymour_etal_2017,
-Ngandong 14 (Solo XI),H. erectus (soloensis),early Homo,NA,BGU,umol/min,317.6,0.749,whole_brain,endocranial_capacity,Boyer_ACA_scaled,Boyer_Harrington_2018,
-Ngandong 14 (Solo XI),H. erectus (soloensis),early Homo,NA,BGU,umol/min,357.4,0.843,whole_brain,endocranial_capacity,Boyer_ACA_ecvpred,Boyer_Harrington_2018,ECV-predicted ACA (upper bound; unfiltered only)
-KNM-ER 42700 (IIIeret),H. erectus,early Homo,NA,BGU,umol/min,178.1,0.416,whole_brain,endocranial_capacity,Seymour_flow,Seymour_etal_2017,
-KNM-ER 42700 (IIIeret),H. erectus,early Homo,NA,BGU,umol/min,216.5,0.511,whole_brain,endocranial_capacity,Boyer_ACA_scaled,Boyer_Harrington_2018,
-KNM-ER 42700 (IIIeret),H. erectus,early Homo,NA,BGU,umol/min,240.3,0.567,whole_brain,endocranial_capacity,Boyer_ACA_ecvpred,Boyer_Harrington_2018,ECV-predicted ACA (upper bound; unfiltered only)
-Sangiran 12,H. erectus,early Homo,NA,BGU,umol/min,228.3,0.533,whole_brain,endocranial_capacity,Seymour_flow,Seymour_etal_2017,
-Sangiran 12,H. erectus,early Homo,NA,BGU,umol/min,297.0,0.701,whole_brain,endocranial_capacity,Boyer_ACA_scaled,Boyer_Harrington_2018,
-Sangiran 12,H. erectus,early Homo,NA,BGU,umol/min,348.6,0.822,whole_brain,endocranial_capacity,Boyer_ACA_ecvpred,Boyer_Harrington_2018,ECV-predicted ACA (upper bound; unfiltered only)
-OH 9,H. erectus,early Homo,NA,BGU,umol/min,222.4,0.519,whole_brain,endocranial_capacity,Seymour_flow,Seymour_etal_2017,
-OH 9,H. erectus,early Homo,NA,BGU,umol/min,291.9,0.689,whole_brain,endocranial_capacity,Boyer_ACA_scaled,Boyer_Harrington_2018,
-OH 9,H. erectus,early Homo,NA,BGU,umol/min,350.9,0.828,whole_brain,endocranial_capacity,Boyer_ACA_ecvpred,Boyer_Harrington_2018,ECV-predicted ACA (upper bound; unfiltered only)
-Sambungmacan 3,H. erectus,early Homo,NA,BGU,umol/min,293.7,0.685,whole_brain,endocranial_capacity,Seymour_flow,Seymour_etal_2017,
-Sambungmacan 3,H. erectus,early Homo,NA,BGU,umol/min,296.0,0.698,whole_brain,endocranial_capacity,Boyer_ACA_scaled,Boyer_Harrington_2018,
-Sambungmacan 3,H. erectus,early Homo,NA,BGU,umol/min,307.5,0.725,whole_brain,endocranial_capacity,Boyer_ACA_ecvpred,Boyer_Harrington_2018,ECV-predicted ACA (upper bound; unfiltered only)
-OH 24,H. habilis,early Homo,NA,BGU,umol/min,138.4,0.323,whole_brain,endocranial_capacity,Seymour_flow,Seymour_etal_2017,
-OH 24,H. habilis,early Homo,NA,BGU,umol/min,176.9,0.417,whole_brain,endocranial_capacity,Boyer_ACA_scaled,Boyer_Harrington_2018,
-OH 24,H. habilis,early Homo,NA,BGU,umol/min,209.3,0.494,whole_brain,endocranial_capacity,Boyer_ACA_ecvpred,Boyer_Harrington_2018,ECV-predicted ACA (upper bound; unfiltered only)
-Dmanisi D2700,H. georgicus,early Homo,NA,BGU,umol/min,61.3,0.143,whole_brain,endocranial_capacity,Seymour_flow,Seymour_etal_2017,
-Dmanisi D2700,H. georgicus,early Homo,NA,BGU,umol/min,144.7,0.341,whole_brain,endocranial_capacity,Boyer_ACA_scaled,Boyer_Harrington_2018,
-Dmanisi D2700,H. georgicus,early Homo,NA,BGU,umol/min,212.4,0.501,whole_brain,endocranial_capacity,Boyer_ACA_ecvpred,Boyer_Harrington_2018,ECV-predicted ACA (upper bound; unfiltered only)
-Sts 5,A. africanus,Australopithecus,NA,BGU,umol/min,60.1,0.14,whole_brain,endocranial_capacity,Seymour_flow,Seymour_etal_2017,
-Sts 5,A. africanus,Australopithecus,NA,BGU,umol/min,124.6,0.294,whole_brain,endocranial_capacity,Boyer_ACA_scaled,Boyer_Harrington_2018,
-Sts 5,A. africanus,Australopithecus,NA,BGU,umol/min,176.5,0.416,whole_brain,endocranial_capacity,Boyer_ACA_ecvpred,Boyer_Harrington_2018,ECV-predicted ACA (upper bound; unfiltered only)
-Sts 19,A. africanus,Australopithecus,NA,BGU,umol/min,63.6,0.149,whole_brain,endocranial_capacity,Seymour_flow,Seymour_etal_2017,
-Sts 19,A. africanus,Australopithecus,NA,BGU,umol/min,119.0,0.281,whole_brain,endocranial_capacity,Boyer_ACA_scaled,Boyer_Harrington_2018,
-Sts 19,A. africanus,Australopithecus,NA,BGU,umol/min,160.8,0.379,whole_brain,endocranial_capacity,Boyer_ACA_ecvpred,Boyer_Harrington_2018,ECV-predicted ACA (upper bound; unfiltered only)
-MLD 37 / 38,A. africanus,Australopithecus,NA,BGU,umol/min,60.7,0.142,whole_brain,endocranial_capacity,Seymour_flow,Seymour_etal_2017,
-MLD 37 / 38,A. africanus,Australopithecus,NA,BGU,umol/min,117.5,0.277,whole_brain,endocranial_capacity,Boyer_ACA_scaled,Boyer_Harrington_2018,
-MLD 37 / 38,A. africanus,Australopithecus,NA,BGU,umol/min,160.5,0.379,whole_brain,endocranial_capacity,Boyer_ACA_ecvpred,Boyer_Harrington_2018,ECV-predicted ACA (upper bound; unfiltered only)
-STW 53g,A. africanus,Australopithecus,NA,BGU,umol/min,49.6,0.116,whole_brain,endocranial_capacity,Seymour_flow,Seymour_etal_2017,
-STW 53g,A. africanus,Australopithecus,NA,BGU,umol/min,114.2,0.269,whole_brain,endocranial_capacity,Boyer_ACA_scaled,Boyer_Harrington_2018,
-STW 53g,A. africanus,Australopithecus,NA,BGU,umol/min,169.2,0.399,whole_brain,endocranial_capacity,Boyer_ACA_ecvpred,Boyer_Harrington_2018,ECV-predicted ACA (upper bound; unfiltered only)
-STW 329h,A. africanus,Australopithecus,NA,BGU,umol/min,88.7,0.207,whole_brain,endocranial_capacity,Seymour_flow,Seymour_etal_2017,
-STW 329h,A. africanus,Australopithecus,NA,BGU,umol/min,135.5,0.32,whole_brain,endocranial_capacity,Boyer_ACA_scaled,Boyer_Harrington_2018,
-STW 329h,A. africanus,Australopithecus,NA,BGU,umol/min,169.2,0.399,whole_brain,endocranial_capacity,Boyer_ACA_ecvpred,Boyer_Harrington_2018,ECV-predicted ACA (upper bound; unfiltered only)
-STS 25h,A. africanus,Australopithecus,NA,BGU,umol/min,70.1,0.163,whole_brain,endocranial_capacity,Seymour_flow,Seymour_etal_2017,
-STS 25h,A. africanus,Australopithecus,NA,BGU,umol/min,126.3,0.298,whole_brain,endocranial_capacity,Boyer_ACA_scaled,Boyer_Harrington_2018,
-STS 25h,A. africanus,Australopithecus,NA,BGU,umol/min,169.2,0.399,whole_brain,endocranial_capacity,Boyer_ACA_ecvpred,Boyer_Harrington_2018,ECV-predicted ACA (upper bound; unfiltered only)
-STW 98h,A. africanus,Australopithecus,NA,BGU,umol/min,91.7,0.214,whole_brain,endocranial_capacity,Seymour_flow,Seymour_etal_2017,
-STW 98h,A. africanus,Australopithecus,NA,BGU,umol/min,136.9,0.323,whole_brain,endocranial_capacity,Boyer_ACA_scaled,Boyer_Harrington_2018,
-STW 98h,A. africanus,Australopithecus,NA,BGU,umol/min,169.2,0.399,whole_brain,endocranial_capacity,Boyer_ACA_ecvpred,Boyer_Harrington_2018,ECV-predicted ACA (upper bound; unfiltered only)
-STW 255h,A. africanus,Australopithecus,NA,BGU,umol/min,77.1,0.18,whole_brain,endocranial_capacity,Seymour_flow,Seymour_etal_2017,
-STW 255h,A. africanus,Australopithecus,NA,BGU,umol/min,129.9,0.306,whole_brain,endocranial_capacity,Boyer_ACA_scaled,Boyer_Harrington_2018,
-STW 255h,A. africanus,Australopithecus,NA,BGU,umol/min,169.2,0.399,whole_brain,endocranial_capacity,Boyer_ACA_ecvpred,Boyer_Harrington_2018,ECV-predicted ACA (upper bound; unfiltered only)
-AL 333-105,A. afarensis,Australopithecus,NA,BGU,umol/min,80.6,0.188,whole_brain,endocranial_capacity,Seymour_flow,Seymour_etal_2017,
-AL 333-105,A. afarensis,Australopithecus,NA,BGU,umol/min,122.1,0.288,whole_brain,endocranial_capacity,Boyer_ACA_scaled,Boyer_Harrington_2018,
-AL 333-105,A. afarensis,Australopithecus,NA,BGU,umol/min,149.2,0.352,whole_brain,endocranial_capacity,Boyer_ACA_ecvpred,Boyer_Harrington_2018,ECV-predicted ACA (upper bound; unfiltered only)
-AL 166-9,A. afarensis,Australopithecus,NA,BGU,umol/min,138.4,0.323,whole_brain,endocranial_capacity,Seymour_flow,Seymour_etal_2017,
-AL 166-9,A. afarensis,Australopithecus,NA,BGU,umol/min,163.4,0.386,whole_brain,endocranial_capacity,Boyer_ACA_scaled,Boyer_Harrington_2018,
-AL 166-9,A. afarensis,Australopithecus,NA,BGU,umol/min,185.6,0.438,whole_brain,endocranial_capacity,Boyer_ACA_ecvpred,Boyer_Harrington_2018,ECV-predicted ACA (upper bound; unfiltered only)
-DH3 (Rising Star),H. naledi,early Homo,NA,BGU,umol/min,82.9,0.193,whole_brain,endocranial_capacity,Seymour_flow,Seymour_etal_2017,
-DH3 (Rising Star),H. naledi,early Homo,NA,BGU,umol/min,136.6,0.322,whole_brain,endocranial_capacity,Boyer_ACA_scaled,Boyer_Harrington_2018,
-DH3 (Rising Star),H. naledi,early Homo,NA,BGU,umol/min,168.5,0.398,whole_brain,endocranial_capacity,Boyer_ACA_ecvpred,Boyer_Harrington_2018,ECV-predicted ACA (upper bound; unfiltered only)
-Amud 1,Homo neanderthalensis,Neanderthal,NA,BGU,umol/min,391.1,1.191,cortical+cerebellar,brain_tissue_GMWM,s4_volume,Kochiyama_2018 x Heiss_2004 (s4),
-La Chapelle-aux-Saints 1,Homo neanderthalensis,Neanderthal,NA,BGU,umol/min,341.6,1.04,cortical+cerebellar,brain_tissue_GMWM,s4_volume,Kochiyama_2018 x Heiss_2004 (s4),
-La Ferrassie 1,Homo neanderthalensis,Neanderthal,NA,BGU,umol/min,377.3,1.149,cortical+cerebellar,brain_tissue_GMWM,s4_volume,Kochiyama_2018 x Heiss_2004 (s4),
-Forbes' Quarry 1,Homo neanderthalensis,Neanderthal,NA,BGU,umol/min,267.7,0.815,cortical+cerebellar,brain_tissue_GMWM,s4_volume,Kochiyama_2018 x Heiss_2004 (s4),
-Qafzeh 9,Homo sapiens,H. sapiens (early/recent),early,BGU,umol/min,322.7,0.982,cortical+cerebellar,brain_tissue_GMWM,s4_volume,Kochiyama_2018 x Heiss_2004 (s4),
-Skhul 5,Homo sapiens,H. sapiens (early/recent),early,BGU,umol/min,316.7,0.964,cortical+cerebellar,brain_tissue_GMWM,s4_volume,Kochiyama_2018 x Heiss_2004 (s4),
-Mladeč 1,Homo sapiens,H. sapiens (early/recent),early,BGU,umol/min,361.8,1.101,cortical+cerebellar,brain_tissue_GMWM,s4_volume,Kochiyama_2018 x Heiss_2004 (s4),
-Cro-Magnon 1,Homo sapiens,H. sapiens (early/recent),early,BGU,umol/min,359.9,1.096,cortical+cerebellar,brain_tissue_GMWM,s4_volume,Kochiyama_2018 x Heiss_2004 (s4),
+"Specimen","Species","Group","sapiens_grade","Measure","Units","Value","Ratio_MH","Scope","Volume_basis","Team","Source","note"
+"LB1","H. floresiensis","early Homo","NA","BGU","umol/min",46.1,0.108,"whole_brain","endocranial_capacity","Seymour_flow","Seymour_etal_2017",""
+"LB1","H. floresiensis","early Homo","NA","BGU","umol/min",104.7,0.247,"whole_brain","endocranial_capacity","Boyer_ACA_scaled","Boyer_Harrington_2018",""
+"LB1","H. floresiensis","early Homo","NA","BGU","umol/min",154.7,0.365,"whole_brain","endocranial_capacity","Boyer_ACA_ecvpred","Boyer_Harrington_2018","ECV-predicted ACA (upper bound; unfiltered only)"
+"Forbes' Quarry 1","H. neanderthalensis","Neanderthal","NA","BGU","umol/min",355,0.828,"whole_brain","endocranial_capacity","Seymour_flow","Seymour_etal_2017",""
+"Forbes' Quarry 1","H. neanderthalensis","Neanderthal","NA","BGU","umol/min",366.7,0.865,"whole_brain","endocranial_capacity","Boyer_ACA_scaled","Boyer_Harrington_2018",""
+"Forbes' Quarry 1","H. neanderthalensis","Neanderthal","NA","BGU","umol/min",388.7,0.917,"whole_brain","endocranial_capacity","Boyer_ACA_ecvpred","Boyer_Harrington_2018","ECV-predicted ACA (upper bound; unfiltered only)"
+"La Chapelle-aux-Saints 1","H. neanderthalensis","Neanderthal","NA","BGU","umol/min",404.6,0.944,"whole_brain","endocranial_capacity","Seymour_flow","Seymour_etal_2017",""
+"La Chapelle-aux-Saints 1","H. neanderthalensis","Neanderthal","NA","BGU","umol/min",450.3,1.062,"whole_brain","endocranial_capacity","Boyer_ACA_scaled","Boyer_Harrington_2018",""
+"La Chapelle-aux-Saints 1","H. neanderthalensis","Neanderthal","NA","BGU","umol/min",506.3,1.194,"whole_brain","endocranial_capacity","Boyer_ACA_ecvpred","Boyer_Harrington_2018","ECV-predicted ACA (upper bound; unfiltered only)"
+"AS8078","H. sapiens","H. sapiens (early/recent)","modern_reference","BGU","umol/min",428.6,1,"whole_brain","endocranial_capacity","Seymour_flow","Seymour_etal_2017",""
+"AS8078","H. sapiens","H. sapiens (early/recent)","modern_reference","BGU","umol/min",423.9,1,"whole_brain","endocranial_capacity","Boyer_ACA_scaled","Boyer_Harrington_2018",""
+"AS8078","H. sapiens","H. sapiens (early/recent)","modern_reference","BGU","umol/min",470.2,1.109,"whole_brain","endocranial_capacity","Boyer_ACA_ecvpred","Boyer_Harrington_2018","ECV-predicted ACA (upper bound; unfiltered only)"
+"M3-A343","H. sapiens (Bushman)","H. sapiens (early/recent)","recent","BGU","umol/min",471.8,1.101,"whole_brain","endocranial_capacity","Seymour_flow","Seymour_etal_2017",""
+"M3-A343","H. sapiens (Bushman)","H. sapiens (early/recent)","recent","BGU","umol/min",436.2,1.029,"whole_brain","endocranial_capacity","Boyer_ACA_scaled","Boyer_Harrington_2018",""
+"M3-A343","H. sapiens (Bushman)","H. sapiens (early/recent)","recent","BGU","umol/min",470.2,1.109,"whole_brain","endocranial_capacity","Boyer_ACA_ecvpred","Boyer_Harrington_2018","ECV-predicted ACA (upper bound; unfiltered only)"
+"M4-A344","H. sapiens (Bushman)","H. sapiens (early/recent)","recent","BGU","umol/min",409.9,0.956,"whole_brain","endocranial_capacity","Seymour_flow","Seymour_etal_2017",""
+"M4-A344","H. sapiens (Bushman)","H. sapiens (early/recent)","recent","BGU","umol/min",419,0.988,"whole_brain","endocranial_capacity","Boyer_ACA_scaled","Boyer_Harrington_2018",""
+"M4-A344","H. sapiens (Bushman)","H. sapiens (early/recent)","recent","BGU","umol/min",470.2,1.109,"whole_brain","endocranial_capacity","Boyer_ACA_ecvpred","Boyer_Harrington_2018","ECV-predicted ACA (upper bound; unfiltered only)"
+"BC1","H. sapiens","H. sapiens (early/recent)","early","BGU","umol/min",445.5,1.04,"whole_brain","endocranial_capacity","Seymour_flow","Seymour_etal_2017",""
+"BC1","H. sapiens","H. sapiens (early/recent)","early","BGU","umol/min",431.5,1.018,"whole_brain","endocranial_capacity","Boyer_ACA_scaled","Boyer_Harrington_2018",""
+"BC1","H. sapiens","H. sapiens (early/recent)","early","BGU","umol/min",474.9,1.12,"whole_brain","endocranial_capacity","Boyer_ACA_ecvpred","Boyer_Harrington_2018","ECV-predicted ACA (upper bound; unfiltered only)"
+"LH 18","H. sapiens","H. sapiens (early/recent)","early","BGU","umol/min",351.5,0.82,"whole_brain","endocranial_capacity","Seymour_flow","Seymour_etal_2017",""
+"LH 18","H. sapiens","H. sapiens (early/recent)","early","BGU","umol/min",385.2,0.909,"whole_brain","endocranial_capacity","Boyer_ACA_scaled","Boyer_Harrington_2018",""
+"LH 18","H. sapiens","H. sapiens (early/recent)","early","BGU","umol/min",435.4,1.027,"whole_brain","endocranial_capacity","Boyer_ACA_ecvpred","Boyer_Harrington_2018","ECV-predicted ACA (upper bound; unfiltered only)"
+"Skhul 5","H. sapiens","H. sapiens (early/recent)","early","BGU","umol/min",276.7,0.646,"whole_brain","endocranial_capacity","Seymour_flow","Seymour_etal_2017",""
+"Skhul 5","H. sapiens","H. sapiens (early/recent)","early","BGU","umol/min",385.3,0.909,"whole_brain","endocranial_capacity","Boyer_ACA_scaled","Boyer_Harrington_2018",""
+"Skhul 5","H. sapiens","H. sapiens (early/recent)","early","BGU","umol/min",477.6,1.127,"whole_brain","endocranial_capacity","Boyer_ACA_ecvpred","Boyer_Harrington_2018","ECV-predicted ACA (upper bound; unfiltered only)"
+"KNM-ER 1470","H. rudolfensis","early Homo","NA","BGU","umol/min",102.8,0.24,"whole_brain","endocranial_capacity","Seymour_flow","Seymour_etal_2017",""
+"KNM-ER 1470","H. rudolfensis","early Homo","NA","BGU","umol/min",190,0.448,"whole_brain","endocranial_capacity","Boyer_ACA_scaled","Boyer_Harrington_2018",""
+"KNM-ER 1470","H. rudolfensis","early Homo","NA","BGU","umol/min",258.6,0.61,"whole_brain","endocranial_capacity","Boyer_ACA_ecvpred","Boyer_Harrington_2018","ECV-predicted ACA (upper bound; unfiltered only)"
+"Ndutu","H. heidelbergensis","early Homo","NA","BGU","umol/min",187.4,0.437,"whole_brain","endocranial_capacity","Seymour_flow","Seymour_etal_2017",""
+"Ndutu","H. heidelbergensis","early Homo","NA","BGU","umol/min",293.5,0.692,"whole_brain","endocranial_capacity","Boyer_ACA_scaled","Boyer_Harrington_2018",""
+"Ndutu","H. heidelbergensis","early Homo","NA","BGU","umol/min",360.3,0.85,"whole_brain","endocranial_capacity","Boyer_ACA_ecvpred","Boyer_Harrington_2018","ECV-predicted ACA (upper bound; unfiltered only)"
+"Kabwe (Broken Hill)","H. heidelbergensis","early Homo","NA","BGU","umol/min",327,0.763,"whole_brain","endocranial_capacity","Seymour_flow","Seymour_etal_2017",""
+"Kabwe (Broken Hill)","H. heidelbergensis","early Homo","NA","BGU","umol/min",385.8,0.91,"whole_brain","endocranial_capacity","Boyer_ACA_scaled","Boyer_Harrington_2018",""
+"Kabwe (Broken Hill)","H. heidelbergensis","early Homo","NA","BGU","umol/min",423.8,1,"whole_brain","endocranial_capacity","Boyer_ACA_ecvpred","Boyer_Harrington_2018","ECV-predicted ACA (upper bound; unfiltered only)"
+"Ngandong 14 (Solo XI)","H. erectus (soloensis)","early Homo","NA","BGU","umol/min",261,0.609,"whole_brain","endocranial_capacity","Seymour_flow","Seymour_etal_2017",""
+"Ngandong 14 (Solo XI)","H. erectus (soloensis)","early Homo","NA","BGU","umol/min",317.6,0.749,"whole_brain","endocranial_capacity","Boyer_ACA_scaled","Boyer_Harrington_2018",""
+"Ngandong 14 (Solo XI)","H. erectus (soloensis)","early Homo","NA","BGU","umol/min",357.4,0.843,"whole_brain","endocranial_capacity","Boyer_ACA_ecvpred","Boyer_Harrington_2018","ECV-predicted ACA (upper bound; unfiltered only)"
+"KNM-ER 42700 (IIIeret)","H. erectus","early Homo","NA","BGU","umol/min",178.1,0.416,"whole_brain","endocranial_capacity","Seymour_flow","Seymour_etal_2017",""
+"KNM-ER 42700 (IIIeret)","H. erectus","early Homo","NA","BGU","umol/min",216.5,0.511,"whole_brain","endocranial_capacity","Boyer_ACA_scaled","Boyer_Harrington_2018",""
+"KNM-ER 42700 (IIIeret)","H. erectus","early Homo","NA","BGU","umol/min",240.3,0.567,"whole_brain","endocranial_capacity","Boyer_ACA_ecvpred","Boyer_Harrington_2018","ECV-predicted ACA (upper bound; unfiltered only)"
+"Sangiran 12","H. erectus","early Homo","NA","BGU","umol/min",228.3,0.533,"whole_brain","endocranial_capacity","Seymour_flow","Seymour_etal_2017",""
+"Sangiran 12","H. erectus","early Homo","NA","BGU","umol/min",297,0.701,"whole_brain","endocranial_capacity","Boyer_ACA_scaled","Boyer_Harrington_2018",""
+"Sangiran 12","H. erectus","early Homo","NA","BGU","umol/min",348.6,0.822,"whole_brain","endocranial_capacity","Boyer_ACA_ecvpred","Boyer_Harrington_2018","ECV-predicted ACA (upper bound; unfiltered only)"
+"OH 9","H. erectus","early Homo","NA","BGU","umol/min",222.4,0.519,"whole_brain","endocranial_capacity","Seymour_flow","Seymour_etal_2017",""
+"OH 9","H. erectus","early Homo","NA","BGU","umol/min",291.9,0.689,"whole_brain","endocranial_capacity","Boyer_ACA_scaled","Boyer_Harrington_2018",""
+"OH 9","H. erectus","early Homo","NA","BGU","umol/min",350.9,0.828,"whole_brain","endocranial_capacity","Boyer_ACA_ecvpred","Boyer_Harrington_2018","ECV-predicted ACA (upper bound; unfiltered only)"
+"Sambungmacan 3","H. erectus","early Homo","NA","BGU","umol/min",293.7,0.685,"whole_brain","endocranial_capacity","Seymour_flow","Seymour_etal_2017",""
+"Sambungmacan 3","H. erectus","early Homo","NA","BGU","umol/min",296,0.698,"whole_brain","endocranial_capacity","Boyer_ACA_scaled","Boyer_Harrington_2018",""
+"Sambungmacan 3","H. erectus","early Homo","NA","BGU","umol/min",307.5,0.725,"whole_brain","endocranial_capacity","Boyer_ACA_ecvpred","Boyer_Harrington_2018","ECV-predicted ACA (upper bound; unfiltered only)"
+"OH 24","H. habilis","early Homo","NA","BGU","umol/min",138.4,0.323,"whole_brain","endocranial_capacity","Seymour_flow","Seymour_etal_2017",""
+"OH 24","H. habilis","early Homo","NA","BGU","umol/min",176.9,0.417,"whole_brain","endocranial_capacity","Boyer_ACA_scaled","Boyer_Harrington_2018",""
+"OH 24","H. habilis","early Homo","NA","BGU","umol/min",209.3,0.494,"whole_brain","endocranial_capacity","Boyer_ACA_ecvpred","Boyer_Harrington_2018","ECV-predicted ACA (upper bound; unfiltered only)"
+"Dmanisi D2700","H. georgicus","early Homo","NA","BGU","umol/min",61.3,0.143,"whole_brain","endocranial_capacity","Seymour_flow","Seymour_etal_2017",""
+"Dmanisi D2700","H. georgicus","early Homo","NA","BGU","umol/min",144.7,0.341,"whole_brain","endocranial_capacity","Boyer_ACA_scaled","Boyer_Harrington_2018",""
+"Dmanisi D2700","H. georgicus","early Homo","NA","BGU","umol/min",212.4,0.501,"whole_brain","endocranial_capacity","Boyer_ACA_ecvpred","Boyer_Harrington_2018","ECV-predicted ACA (upper bound; unfiltered only)"
+"Sts 5","A. africanus","Australopithecus","NA","BGU","umol/min",60.1,0.14,"whole_brain","endocranial_capacity","Seymour_flow","Seymour_etal_2017",""
+"Sts 5","A. africanus","Australopithecus","NA","BGU","umol/min",124.6,0.294,"whole_brain","endocranial_capacity","Boyer_ACA_scaled","Boyer_Harrington_2018",""
+"Sts 5","A. africanus","Australopithecus","NA","BGU","umol/min",176.5,0.416,"whole_brain","endocranial_capacity","Boyer_ACA_ecvpred","Boyer_Harrington_2018","ECV-predicted ACA (upper bound; unfiltered only)"
+"Sts 19","A. africanus","Australopithecus","NA","BGU","umol/min",63.6,0.149,"whole_brain","endocranial_capacity","Seymour_flow","Seymour_etal_2017",""
+"Sts 19","A. africanus","Australopithecus","NA","BGU","umol/min",119,0.281,"whole_brain","endocranial_capacity","Boyer_ACA_scaled","Boyer_Harrington_2018",""
+"Sts 19","A. africanus","Australopithecus","NA","BGU","umol/min",160.8,0.379,"whole_brain","endocranial_capacity","Boyer_ACA_ecvpred","Boyer_Harrington_2018","ECV-predicted ACA (upper bound; unfiltered only)"
+"MLD 37 / 38","A. africanus","Australopithecus","NA","BGU","umol/min",60.7,0.142,"whole_brain","endocranial_capacity","Seymour_flow","Seymour_etal_2017",""
+"MLD 37 / 38","A. africanus","Australopithecus","NA","BGU","umol/min",117.5,0.277,"whole_brain","endocranial_capacity","Boyer_ACA_scaled","Boyer_Harrington_2018",""
+"MLD 37 / 38","A. africanus","Australopithecus","NA","BGU","umol/min",160.5,0.379,"whole_brain","endocranial_capacity","Boyer_ACA_ecvpred","Boyer_Harrington_2018","ECV-predicted ACA (upper bound; unfiltered only)"
+"STW 53g","A. africanus","Australopithecus","NA","BGU","umol/min",49.6,0.116,"whole_brain","endocranial_capacity","Seymour_flow","Seymour_etal_2017",""
+"STW 53g","A. africanus","Australopithecus","NA","BGU","umol/min",114.2,0.269,"whole_brain","endocranial_capacity","Boyer_ACA_scaled","Boyer_Harrington_2018",""
+"STW 53g","A. africanus","Australopithecus","NA","BGU","umol/min",169.2,0.399,"whole_brain","endocranial_capacity","Boyer_ACA_ecvpred","Boyer_Harrington_2018","ECV-predicted ACA (upper bound; unfiltered only)"
+"STW 329h","A. africanus","Australopithecus","NA","BGU","umol/min",88.7,0.207,"whole_brain","endocranial_capacity","Seymour_flow","Seymour_etal_2017",""
+"STW 329h","A. africanus","Australopithecus","NA","BGU","umol/min",135.5,0.32,"whole_brain","endocranial_capacity","Boyer_ACA_scaled","Boyer_Harrington_2018",""
+"STW 329h","A. africanus","Australopithecus","NA","BGU","umol/min",169.2,0.399,"whole_brain","endocranial_capacity","Boyer_ACA_ecvpred","Boyer_Harrington_2018","ECV-predicted ACA (upper bound; unfiltered only)"
+"STS 25h","A. africanus","Australopithecus","NA","BGU","umol/min",70.1,0.163,"whole_brain","endocranial_capacity","Seymour_flow","Seymour_etal_2017",""
+"STS 25h","A. africanus","Australopithecus","NA","BGU","umol/min",126.3,0.298,"whole_brain","endocranial_capacity","Boyer_ACA_scaled","Boyer_Harrington_2018",""
+"STS 25h","A. africanus","Australopithecus","NA","BGU","umol/min",169.2,0.399,"whole_brain","endocranial_capacity","Boyer_ACA_ecvpred","Boyer_Harrington_2018","ECV-predicted ACA (upper bound; unfiltered only)"
+"STW 98h","A. africanus","Australopithecus","NA","BGU","umol/min",91.7,0.214,"whole_brain","endocranial_capacity","Seymour_flow","Seymour_etal_2017",""
+"STW 98h","A. africanus","Australopithecus","NA","BGU","umol/min",136.9,0.323,"whole_brain","endocranial_capacity","Boyer_ACA_scaled","Boyer_Harrington_2018",""
+"STW 98h","A. africanus","Australopithecus","NA","BGU","umol/min",169.2,0.399,"whole_brain","endocranial_capacity","Boyer_ACA_ecvpred","Boyer_Harrington_2018","ECV-predicted ACA (upper bound; unfiltered only)"
+"STW 255h","A. africanus","Australopithecus","NA","BGU","umol/min",77.1,0.18,"whole_brain","endocranial_capacity","Seymour_flow","Seymour_etal_2017",""
+"STW 255h","A. africanus","Australopithecus","NA","BGU","umol/min",129.9,0.306,"whole_brain","endocranial_capacity","Boyer_ACA_scaled","Boyer_Harrington_2018",""
+"STW 255h","A. africanus","Australopithecus","NA","BGU","umol/min",169.2,0.399,"whole_brain","endocranial_capacity","Boyer_ACA_ecvpred","Boyer_Harrington_2018","ECV-predicted ACA (upper bound; unfiltered only)"
+"AL 333-105","A. afarensis","Australopithecus","NA","BGU","umol/min",80.6,0.188,"whole_brain","endocranial_capacity","Seymour_flow","Seymour_etal_2017",""
+"AL 333-105","A. afarensis","Australopithecus","NA","BGU","umol/min",122.1,0.288,"whole_brain","endocranial_capacity","Boyer_ACA_scaled","Boyer_Harrington_2018",""
+"AL 333-105","A. afarensis","Australopithecus","NA","BGU","umol/min",149.2,0.352,"whole_brain","endocranial_capacity","Boyer_ACA_ecvpred","Boyer_Harrington_2018","ECV-predicted ACA (upper bound; unfiltered only)"
+"AL 166-9","A. afarensis","Australopithecus","NA","BGU","umol/min",138.4,0.323,"whole_brain","endocranial_capacity","Seymour_flow","Seymour_etal_2017",""
+"AL 166-9","A. afarensis","Australopithecus","NA","BGU","umol/min",163.4,0.386,"whole_brain","endocranial_capacity","Boyer_ACA_scaled","Boyer_Harrington_2018",""
+"AL 166-9","A. afarensis","Australopithecus","NA","BGU","umol/min",185.6,0.438,"whole_brain","endocranial_capacity","Boyer_ACA_ecvpred","Boyer_Harrington_2018","ECV-predicted ACA (upper bound; unfiltered only)"
+"DH3 (Rising Star)","H. naledi","early Homo","NA","BGU","umol/min",82.9,0.193,"whole_brain","endocranial_capacity","Seymour_flow","Seymour_etal_2017",""
+"DH3 (Rising Star)","H. naledi","early Homo","NA","BGU","umol/min",136.6,0.322,"whole_brain","endocranial_capacity","Boyer_ACA_scaled","Boyer_Harrington_2018",""
+"DH3 (Rising Star)","H. naledi","early Homo","NA","BGU","umol/min",168.5,0.398,"whole_brain","endocranial_capacity","Boyer_ACA_ecvpred","Boyer_Harrington_2018","ECV-predicted ACA (upper bound; unfiltered only)"
+"Amud 1","Homo neanderthalensis","Neanderthal","NA","BGU","umol/min",391.1,1.191,"cortical+cerebellar","brain_tissue_GMWM","s4_volume","Kochiyama_2018 x Heiss_2004 (s4)",""
+"La Chapelle-aux-Saints 1","Homo neanderthalensis","Neanderthal","NA","BGU","umol/min",341.6,1.04,"cortical+cerebellar","brain_tissue_GMWM","s4_volume","Kochiyama_2018 x Heiss_2004 (s4)",""
+"La Ferrassie 1","Homo neanderthalensis","Neanderthal","NA","BGU","umol/min",377.3,1.149,"cortical+cerebellar","brain_tissue_GMWM","s4_volume","Kochiyama_2018 x Heiss_2004 (s4)",""
+"Forbes' Quarry 1","Homo neanderthalensis","Neanderthal","NA","BGU","umol/min",267.7,0.815,"cortical+cerebellar","brain_tissue_GMWM","s4_volume","Kochiyama_2018 x Heiss_2004 (s4)",""
+"Qafzeh 9","Homo sapiens","H. sapiens (early/recent)","early","BGU","umol/min",322.7,0.982,"cortical+cerebellar","brain_tissue_GMWM","s4_volume","Kochiyama_2018 x Heiss_2004 (s4)",""
+"Skhul 5","Homo sapiens","H. sapiens (early/recent)","early","BGU","umol/min",316.7,0.964,"cortical+cerebellar","brain_tissue_GMWM","s4_volume","Kochiyama_2018 x Heiss_2004 (s4)",""
+"Mladeč 1","Homo sapiens","H. sapiens (early/recent)","early","BGU","umol/min",361.8,1.101,"cortical+cerebellar","brain_tissue_GMWM","s4_volume","Kochiyama_2018 x Heiss_2004 (s4)",""
+"Cro-Magnon 1","Homo sapiens","H. sapiens (early/recent)","early","BGU","umol/min",359.9,1.096,"cortical+cerebellar","brain_tissue_GMWM","s4_volume","Kochiyama_2018 x Heiss_2004 (s4)",""

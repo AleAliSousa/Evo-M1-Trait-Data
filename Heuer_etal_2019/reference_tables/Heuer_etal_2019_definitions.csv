@@ -1,0 +1,8 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species_printed,species name exactly as printed in the SI table,,,,info,Primates,Heuer_etal_2019_Data,printed name preserved (invariant 3),confirm species column header
+species_sci,accepted scientific binomial; harmonised via _keys,,,,info,Primates,Heuer_etal_2019_Data,,
+folding_index,MRI surface-based neocortical folding index,Neocortex,folding_index,point,secondary,Primates,Heuer_etal_2019_Data,MRI construct — NOT the Zilles GI; do not pool without reconciliation,confirm header
+total_surface_area,total neocortical surface area (MRI),Neocortex,Surface.mm2,point,secondary,Primates,Heuer_etal_2019_Data,belongs with cortical-surface data if merged,confirm header + units (x100 if cm2)
+exposed_surface_area,exposed (outer) neocortical surface area (MRI),Neocortex,Surface.mm2,point,secondary,Primates,Heuer_etal_2019_Data,,confirm header + units
+average_fold_size,average fold / folial wavelength,Neocortex,Size,point,info,Primates,Heuer_etal_2019_Data,if reported,confirm header
+Method,structural MRI of 34 primate species; surface reconstruction; phylogenetic comparative analysis of folding,,,,method,Primates,Heuer_etal_2019_Data,neocortical folding (separate from cerebellar folding),MRI folding construct — reconcile to Zilles GI or house separately (see README)

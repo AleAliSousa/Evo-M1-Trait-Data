@@ -35,10 +35,13 @@ from the publisher page (Karger/Zenodo block automated fetches) — confirm befo
   see `Reader_etal_2011/Reader_etal_2011.README.md` and `____EvoM1_TraitTable/EvoM1_read_innovation_reader.R`.
   **Blocked in-session:** the org network policy denied Dryad at the egress proxy and there is no R
   runtime here, so the actual per-species values must be downloaded and the reader run **locally**.
-- **Heuer MRI (#1 volumes, #5 folding): REINSTATED — no known issue.** Valid candidates again. **Not
-  yet scaffolded** pending the owner's go-ahead (would slot into `__merging_volumes` as an MRI team of
-  its own, and #5 into the folding discussion). Note #5 (neocortical folding) is a separate question
-  from cerebellar folding, which remains out of scope (below).
+- **Heuer MRI (#1 volumes, #5 folding): REINSTATED — no known issue, now scaffolded (2026-07-31).**
+  `Heuer_etal_2018/` (volumes → `__merging_volumes` as its own **Heuer_MRI** team, never pooled with
+  the histological Stephan volumes; standardized-term template added) and `Heuer_etal_2019/`
+  (neocortical folding — housed separately, **not** auto-pooled into the Zilles-GI merge; curator
+  picks reconcile-vs-house). Both need the frozen source pulled locally + R to wire on; merge scripts
+  left untouched. Note #5 (neocortical folding) is a separate question from cerebellar folding, which
+  remains out of scope (below).
 - **Cerebellar folding (#6): OUT OF SCOPE (2026-07-31).** Decided by the repo owner, who is a
   co-author on the paper: cerebellar folding is outside the dataset's scope right now. Not scaffolded,
   not to be revisited unless scope changes. (For the record: that paper used some Ashwell 2020 data
@@ -57,7 +60,7 @@ from the publisher page (Karger/Zenodo block automated fetches) — confirm befo
 
 ## Tier 1 — strongest fits (M1-adjacent or directly extend a live merge)
 
-### 1. Heuer et al. 2018 — Primate Brain Anatomy: New Volumetric MRI Measurements  — ✅ REINSTATED (no known issue; not yet scaffolded)
+### 1. Heuer et al. 2018 — Primate Brain Anatomy: New Volumetric MRI Measurements  — ✅ REINSTATED & scaffolded (`Heuer_etal_2018/`)
 - **Merge:** `__merging_volumes` (brain-structure volumes). **Role: secondary** (MRI-derived, modern
   compilation to sit alongside the Stephan/Düsseldorf histological volumes).
 - **Contributes:** volumetric measurements of **16 brain areas** across **39 primate species**,
@@ -118,7 +121,7 @@ from the publisher page (Karger/Zenodo block automated fetches) — confirm befo
 
 ## Tier 2 — good fits, secondary
 
-### 5. Heuer et al. 2019 — Evolution of neocortical folding (34 primate MRI)  — ✅ REINSTATED (no known issue; not yet scaffolded)
+### 5. Heuer et al. 2019 — Evolution of neocortical folding (34 primate MRI)  — ✅ REINSTATED & scaffolded (`Heuer_etal_2019/`)
 - **Merge:** `__merging_gyrification` (folding). **Role: secondary.**
 - **Contributes:** folding metrics across **34 primate species** from MRI. NB the merge currently
   pools **only the Zilles-method GI** and deliberately excludes Mota/HH folding-index constructs —

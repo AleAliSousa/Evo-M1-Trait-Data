@@ -1,8 +1,10 @@
 Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
-species_printed,species name exactly as printed in the SI table,,,,info,Primates,Heuer_etal_2019_Data,printed name preserved (invariant 3),confirm species column header
+species_printed,species name exactly as printed in the dataset,,,,info,Primates,Heuer_etal_2019_Data,printed name preserved (invariant 3),confirm species column header
 species_sci,accepted scientific binomial; harmonised via _keys,,,,info,Primates,Heuer_etal_2019_Data,,
-folding_index,MRI surface-based neocortical folding index,Neocortex,folding_index,point,secondary,Primates,Heuer_etal_2019_Data,MRI construct — NOT the Zilles GI; do not pool without reconciliation,confirm header
-total_surface_area,total neocortical surface area (MRI),Neocortex,Surface.mm2,point,secondary,Primates,Heuer_etal_2019_Data,belongs with cortical-surface data if merged,confirm header + units (x100 if cm2)
-exposed_surface_area,exposed (outer) neocortical surface area (MRI),Neocortex,Surface.mm2,point,secondary,Primates,Heuer_etal_2019_Data,,confirm header + units
-average_fold_size,average fold / folial wavelength,Neocortex,Size,point,info,Primates,Heuer_etal_2019_Data,if reported,confirm header
-Method,structural MRI of 34 primate species; surface reconstruction; phylogenetic comparative analysis of folding,,,,method,Primates,Heuer_etal_2019_Data,neocortical folding (separate from cerebellar folding),MRI folding construct — reconcile to Zilles GI or house separately (see README)
+absolute_gyrification_index,3-D gyrification: "excess" of the cortical surface over its volume-normalised convex hull,Neocortex,gyrification_3D,point,secondary,Primates,Heuer_etal_2019_Data,3-D convex-hull method — NOT the Zilles coronal-contour GI; do not pool with the GI merge,confirm header
+total_folding_length,total length of the curves dividing sulci from gyri,Neocortex,Length.mm,point,secondary,Primates,Heuer_etal_2019_Data,metric the Zilles method does not produce,confirm header + units
+average_fold_wavelength,mean folding wavelength (surface of convex hull / half total folding length),Neocortex,Length.mm,point,secondary,Primates,Heuer_etal_2019_Data,~stable ~12 mm across species,confirm header + units
+average_fold_depth,mean fold depth,Neocortex,Length.mm,point,secondary,Primates,Heuer_etal_2019_Data,,confirm header + units
+cerebral_surface_area,total cerebral (pial) surface area (MRI),Neocortex,Surface.mm2,point,secondary,Primates,Heuer_etal_2019_Data,belongs with cortical-surface data if merged (not the GI merge),confirm header + units (x100 if cm2)
+convex_hull_surface_area,surface area of the volume-normalised convex hull,Neocortex,Surface.mm2,point,info,Primates,Heuer_etal_2019_Data,denominator of the absolute gyrification index,confirm header + units
+Method,3-D structural-MRI surface reconstruction of 34 primate species (65 individuals); folding quantified by surface-vs-convex-hull excess + folding length/wavelength/depth; phylogenetic comparative analysis,,,,method,Primates,Heuer_etal_2019_Data,explicitly an alternative to the classical Zilles GI; neocortical (not cerebellar) folding,MRI 3-D method — house separately; never pool with the Zilles-GI merge

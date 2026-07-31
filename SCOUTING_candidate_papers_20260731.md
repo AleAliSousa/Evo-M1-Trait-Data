@@ -38,9 +38,12 @@ from the publisher page (Karger/Zenodo block automated fetches) — confirm befo
 - **Heuer MRI (#1 volumes, #5 folding): REINSTATED — no known issue, now scaffolded (2026-07-31).**
   `Heuer_etal_2018/` (volumes → `__merging_volumes` as its own **Heuer_MRI** team, never pooled with
   the histological Stephan volumes; standardized-term template added) and `Heuer_etal_2019/`
-  (neocortical folding — housed separately, **not** auto-pooled into the Zilles-GI merge; curator
-  picks reconcile-vs-house). Both need the frozen source pulled locally + R to wire on; merge scripts
-  left untouched. Note #5 (neocortical folding) is a separate question from cerebellar folding, which
+  (neocortical folding — **housed separately, decided; NOT pooled into the Zilles-GI merge**). The
+  separate decision is method-confirmed (2026-07-31): Heuer 2019 uses a **3-D** surface-vs-convex-hull
+  gyrification index + folding length/wavelength/depth, whereas the GI merge pools only the **2-D**
+  Zilles coronal-contour GI — different construct/method, presented in the paper as an alternative to
+  Zilles. Both Heuer folders need the frozen source pulled locally + R to wire on; merge scripts left
+  untouched. Note #5 (neocortical folding) is a separate question from cerebellar folding, which
   remains out of scope (below).
 - **Cerebellar folding (#6): OUT OF SCOPE (2026-07-31).** Decided by the repo owner, who is a
   co-author on the paper: cerebellar folding is outside the dataset's scope right now. Not scaffolded,
@@ -122,11 +125,16 @@ from the publisher page (Karger/Zenodo block automated fetches) — confirm befo
 ## Tier 2 — good fits, secondary
 
 ### 5. Heuer et al. 2019 — Evolution of neocortical folding (34 primate MRI)  — ✅ REINSTATED & scaffolded (`Heuer_etal_2019/`)
-- **Merge:** `__merging_gyrification` (folding). **Role: secondary.**
-- **Contributes:** folding metrics across **34 primate species** from MRI. NB the merge currently
-  pools **only the Zilles-method GI** and deliberately excludes Mota/HH folding-index constructs —
-  so ingest only if the Heuer folding metric can be reconciled to the Zilles GI definition;
-  otherwise house it beside Mota FI as a separate construct (do not pool).
+- **Merge:** **none — housed separately in `Heuer_etal_2019/`** (like Mota FI). **Role: secondary.**
+- **Contributes:** 3-D MRI folding metrics across **34 primate species / 65 individuals** — absolute
+  (convex-hull) gyrification index, total folding length, average fold wavelength (~12 mm), average
+  fold depth, cerebral + convex-hull surface.
+- **Decision (method-confirmed 2026-07-31): do NOT pool into the Zilles-GI merge.** Heuer uses a
+  **3-D** surface-vs-convex-hull method + folding length/wavelength/depth; the GI merge pools only the
+  **2-D** Zilles coronal-contour GI. Different construct/method (the paper presents its metrics as an
+  alternative to Zilles) — even Heuer's "GI" is the 3-D convex-hull variant, not interchangeable.
+  Surface-area columns would belong with `__merging_cortical_areas` if ever merged, not the GI merge.
+  Frozen source: Zenodo doi:10.5281/zenodo.2538751.
 - **Citation:** Heuer K., Gulban O.F., Bazin P.-L., et al. (2019). *Evolution of neocortical folding:
   a phylogenetic comparative analysis of MRI from 34 primate species.* Cortex 118:275–291.
   DOI **10.1016/j.cortex.2019.04.011**.

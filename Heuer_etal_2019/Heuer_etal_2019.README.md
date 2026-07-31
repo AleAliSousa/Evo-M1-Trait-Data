@@ -11,31 +11,38 @@ Heuer, K., Gulban, O. F., Bazin, P.-L., Osoianu, A., Valabregue, R., Santin, M.,
 Toro, R. (2019). *Evolution of neocortical folding: a phylogenetic comparative analysis of MRI from
 34 primate species.* Cortex 118:275–291. DOI **10.1016/j.cortex.2019.04.011**.
 
-- **What it contributes:** folding metrics (folding index, and typically surface area / exposed
-  surface / average fold size) across **34 primate species** from MRI.
-- **Frozen source:** the paper's supplementary data (digital-native → download IS the frozen copy).
-  Could not be pulled in the scaffolding session (network policy; no R). Download locally; keep
-  verbatim; write `__Public/comparative-data/10.1016%2Fj.cortex.2019.04.011_<Table>.tsv` (invariant 2).
-  The analysis code/data are also on the authors' repository (Toro lab / OHBM-style GitHub).
+- **What it contributes (verified 2026-07-31 against the paper's methods):** 3-D MRI
+  surface-reconstruction folding metrics across **34 primate species / 65 individuals** — an
+  **absolute gyrification index**, **total folding length**, **average fold wavelength** (~stable
+  12 mm ± 20 % despite ~20× cerebral-volume range), and **average fold depth**, plus cerebral surface
+  area and convex-hull surface.
+- **Frozen source:** the authors' archived dataset on **Zenodo doi:10.5281/zenodo.2538751**
+  (digital-native → the download IS the frozen copy; also on the Toro-lab GitHub). Could not be pulled
+  in the scaffolding session (network policy; no R). Download locally; keep verbatim; write
+  `__Public/comparative-data/10.1016%2Fj.cortex.2019.04.011_<Table>.tsv` (invariant 2).
 
-## Do NOT auto-pool into `__merging_gyrification` — method mismatch
+## DECISION: house separately — do NOT pool into `__merging_gyrification` (method differs, confirmed)
 
-The gyrification merge pools **only the Zilles-method neocortical GI** (inner+buried contour ÷ outer
-contour, on coronal histological sections) and **deliberately excludes** other folding constructs
-(e.g. the Mota & Herculano-Houzel folding index). Heuer's folding index is an **MRI surface-based**
-measure — a different construct/method. Two acceptable homes, **curator's choice**:
+Owner decision (2026-07-31), confirmed against the paper's methods. The gyrification merge pools
+**only the Zilles-method GI** — a **2-D** ratio on coronal sections (inner+buried pial contour ÷ outer
+contour) — and deliberately excludes other folding constructs (e.g. Mota & Herculano-Houzel FI).
+**Heuer 2019 uses a different method:** a **3-D** absolute gyrification index (the "excess" of the
+cortical surface over its volume-normalised convex hull) plus folding length / wavelength / depth —
+metrics the Zilles coronal method does not produce. The paper itself presents these as an
+*alternative* to the classical Zilles GI. So:
 
-1. **Reconcile to GI** — only if Heuer's metric can be shown equivalent to the Zilles GI definition;
-   then it may enter the GI merge as its own team (MRI), resolved not averaged against Zilles/Lewitus.
-2. **House separately** (default) — keep as an MRI folding source in this folder (like Mota FI lives
-   in its own folder), exposing folding index + surface columns, and decide later whether/how it
-   joins a folding comparison. Its **surface-area** columns belong with cortical-surface data
-   (`__merging_cortical_areas`), not the GI merge — same rule the GI README applies to Mota.
+- **Do not reconcile to, or pool with, the Zilles GI merge.** Even Heuer's "gyrification index" is the
+  3-D convex-hull variant, not the Zilles coronal-contour GI — not interchangeable.
+- **House it here** as its own MRI folding source (exactly as Mota FI lives in its own folder).
+- Its **cerebral / convex-hull surface-area** columns belong with cortical-surface data
+  (`__merging_cortical_areas`) if ever merged — same rule the GI README applies to Mota — **not** the
+  GI merge.
 
 ## Build steps
 
-1. Confirm the SI column headers (folding index; total/exposed surface area; average fold size;
-   any GI-equivalent column). Units: surface mm² (×100 if cm²).
+1. Confirm the Zenodo dataset column headers (absolute gyrification index; total folding length;
+   average fold wavelength; average fold depth; cerebral surface area; convex-hull surface area).
+   Units: surface mm² (×100 if cm²), length mm.
 2. `reference_tables/Heuer_etal_2019_definitions.csv` (scaffolded; complete once headers are known).
 3. Register in `__ReadMe.xlsx` Sheet1: `Item name = Heuer_etal_2019_<Table>`,
    `Item encoded = 10.1016%2Fj.cortex.2019.04.011_<Table>`, `Data role = secondary`,

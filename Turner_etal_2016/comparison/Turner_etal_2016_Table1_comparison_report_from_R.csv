@@ -1,7 +1,7 @@
 status,case_snapshot,case_csv,species_snapshot,species_csv,n_measure_mismatch,hemisphere,join_key,brain_surface_cm2_snap,surface_mm2_snap,dedupe_status_csv,brain_surface_cm2_csv,surface_mm2_csv,brain_surface_cm2_match,surface_mm2_match
-matched_by_case,10-50,10-50,M. mulatta,Macaca mulatta,0,LH,10-50 LH,152.3,15230,include,152.3,15230,TRUE,TRUE
+matched_by_case,10-50,10-50,M. mulatta,Macaca mulatta,0,LH,10-50 LH,152.3,15230.000000000002,include,152.3,15230,TRUE,TRUE
 matched_by_case,11-31,11-31,PHA,Papio cynocephalus anubis,0,RH,11-31 RH,234,23400,include,234,23400,TRUE,TRUE
-matched_by_case,11-47,11-47,M. nemestrina,Macaca nemestrina,0,RH,11-47 RH,151.8,15180,include,151.8,15180,TRUE,TRUE
+matched_by_case,11-47,11-47,M. nemestrina,Macaca nemestrina,0,RH,11-47 RH,151.8,15180.000000000002,include,151.8,15180,TRUE,TRUE
 matched_by_case,12-58 LH,12-58,M. radiata,Macaca radiata,0,LH,12-58 LH,100.6,10060,include,100.6,10060,TRUE,TRUE
 matched_by_case,12-58 RH,12-58,M. radiata,Macaca radiata,0,RH,12-58 RH,103.4,10340,include,103.4,10340,TRUE,TRUE
 matched_by_case,9-27,09-27,PHX,Papio cynocephalus anubis,0,RH,9-27 RH,186,18600,exclude_duplicate_Collins2010,186,18600,TRUE,TRUE

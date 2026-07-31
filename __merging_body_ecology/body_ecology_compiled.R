@@ -5,9 +5,28 @@
 # The Python builder is the tested artifact (R was unavailable in the build env);
 # this script implements the identical pipeline.
 
-repo <- normalizePath(file.path(dirname(sys.frame(1)$ofile %||% "."), ".."), mustWork = FALSE)
-`%||%` <- function(a, b) if (is.null(a)) b else a
-if (!dir.exists(file.path(repo, "__Public"))) repo <- "."
+`%||%` <- function(a, b) if (is.null(a) || length(a) == 0) b else a
+
+## ---- repo root: self-locating (Rscript, source(), or RStudio) --------------
+## Was: dirname(sys.frame(1)$ofile) -- errors under Rscript ("not that many
+## frames on the stack") and used %||% before it was defined.
+.sp <- local({
+  a <- grep("^--file=", commandArgs(FALSE), value = TRUE)
+  if (length(a)) return(normalizePath(sub("^--file=", "", a[1])))
+  of <- tryCatch(sys.frames()[[1]]$ofile, error = function(e) NULL)
+  if (!is.null(of) && nzchar(of)) return(normalizePath(of))
+  if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+    p <- rstudioapi::getActiveDocumentContext()$path
+    if (nzchar(p)) return(normalizePath(p))
+  }
+  NA_character_
+})
+repo <- local({
+  d <- if (!is.na(.sp)) dirname(.sp) else normalizePath(getwd())
+  while (dirname(d) != d && !dir.exists(file.path(d, "__Public"))) d <- dirname(d)
+  if (dir.exists(file.path(d, "__Public"))) d
+  else if (dir.exists("__Public")) "." else ".."   # legacy cwd fallback
+})
 pub  <- file.path(repo, "__Public", "comparative-data")
 out  <- file.path(repo, "__merging_body_ecology")
 

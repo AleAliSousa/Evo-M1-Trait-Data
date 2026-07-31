@@ -4,7 +4,27 @@
 # with a dedupe/disagreement report. Python builder is the tested artifact.
 
 `%||%` <- function(a, b) if (is.null(a) || length(a) == 0) b else a
-repo <- if (dir.exists("__Public")) "." else ".."
+
+## ---- repo root: self-locating (Rscript, source(), or RStudio) --------------
+## Was: repo <- if (dir.exists("__Public")) "." else ".." -- cwd-dependent, so
+## Rscript from any other directory failed on ../__ShinyApp/data/source_manifest.csv.
+.sp <- local({
+  a <- grep("^--file=", commandArgs(FALSE), value = TRUE)
+  if (length(a)) return(normalizePath(sub("^--file=", "", a[1])))
+  of <- tryCatch(sys.frames()[[1]]$ofile, error = function(e) NULL)
+  if (!is.null(of) && nzchar(of)) return(normalizePath(of))
+  if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+    p <- rstudioapi::getActiveDocumentContext()$path
+    if (nzchar(p)) return(normalizePath(p))
+  }
+  NA_character_
+})
+repo <- local({
+  d <- if (!is.na(.sp)) dirname(.sp) else normalizePath(getwd())
+  while (dirname(d) != d && !dir.exists(file.path(d, "__Public"))) d <- dirname(d)
+  if (dir.exists(file.path(d, "__Public"))) d
+  else if (dir.exists("__Public")) "." else ".."   # legacy cwd fallback
+})
 pub  <- file.path(repo, "__Public", "comparative-data")
 out  <- file.path(repo, "__merging_brain_mass")
 

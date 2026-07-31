@@ -137,7 +137,7 @@ Aotus nancymaae,gait,Foot_Posture,Wimberly,primary,plantigrade
 Aotus nancymaae,gait,Gait,Wimberly,primary,DSDC
 Aotus nancymaae,gait,Phase,Wimberly,primary,58.37598712
 Aotus trivirgatus,manipulation,Tool_use,Baker,secondary,0
-Aotus trivirgatus,hand_morphology,log10_ip2_mm,Baker,primary,0.957193284252354
+Aotus trivirgatus,hand_morphology,log10_ip2_mm,Baker,primary,0.9571932842523539
 Aotus trivirgatus,hand_morphology,log10_ip3_mm,Baker,primary,1.03342375548695
 Aotus trivirgatus,hand_morphology,log10_ip4_mm,Baker,primary,1.04342426355766
 Aotus trivirgatus,hand_morphology,log10_mc1_mm,Baker,primary,1.07766298919408
@@ -173,7 +173,7 @@ Arctictis binturong,gait,Phase,Wimberly,primary,21.41
 Arctocebus calabarensis,manipulation,Tool_use,Baker,secondary,0
 Arctocebus calabarensis,vocalization,VocalRepertoire,Schniter,primary,2
 Arctocebus calabarensis,hand_morphology,log10_ip4_mm,Baker,primary,0.768175445955215
-Arctocebus calabarensis,hand_morphology,log10_mc3_mm,Baker,primary,0.906335041805091
+Arctocebus calabarensis,hand_morphology,log10_mc3_mm,Baker,primary,0.9063350418050909
 Arctocebus calabarensis,hand_morphology,log10_mc5_mm,Baker,primary,0.868203455637116
 Arctocebus calabarensis,hand_morphology,log10_pp3_mm,Baker,primary,0.838219221907626
 Ardipithecus ramidus,manipulation,Tool_use,Baker,secondary,0
@@ -434,7 +434,7 @@ Carlito syrichta,hand_morphology,relative_size,Baker,primary,-1.04575749056068
 Carpolestes simpsoni,manipulation,Tool_use,Baker,secondary,0
 Carpolestes simpsoni,hand_morphology,log10_dp3_mm,Baker,primary,0.361727836017593
 Carpolestes simpsoni,hand_morphology,log10_ip3_mm,Baker,primary,0.662757831681574
-Carpolestes simpsoni,hand_morphology,log10_mc3_mm,Baker,primary,0.8561244442423
+Carpolestes simpsoni,hand_morphology,log10_mc3_mm,Baker,primary,0.8561244442423001
 Carpolestes simpsoni,hand_morphology,log10_pp3_mm,Baker,primary,0.82020145948564
 Castor canadensis,dexterity,Dexterity,Heffner,primary,3
 Castor canadensis,gait,Duty_Factor,Wimberly,primary,74.15624348999999
@@ -446,7 +446,7 @@ Cebus albifrons,manipulation,Tool_Manufacture,Baker,primary,1
 Cebus albifrons,manipulation,Tool_use,Baker,secondary,1
 Cebus albifrons,manipulation,True_Tool_Use,Baker,primary,1
 Cebus albifrons,hand_morphology,log10_dp1_mm,Baker,primary,1.01130125676674
-Cebus albifrons,hand_morphology,log10_dp2_mm,Baker,primary,0.983275382578022
+Cebus albifrons,hand_morphology,log10_dp2_mm,Baker,primary,0.9832753825780221
 Cebus albifrons,hand_morphology,log10_ip2_mm,Baker,primary,1.1074267799764
 Cebus albifrons,hand_morphology,log10_ip3_mm,Baker,primary,1.1343126816325
 Cebus albifrons,hand_morphology,log10_ip4_mm,Baker,primary,1.15706809537785
@@ -680,7 +680,7 @@ Cheirogaleus medius,locomotion,Intermembral_index,Granatosky,primary,68
 Cheirogaleus medius,locomotion,Locomotor_diversity_index,Granatosky,primary,1.49653172902369
 Cheirogaleus medius,gait,Phase,Wimberly,primary,55.44482598
 Cheirogaleus medius,manipulation,Tool_use,Baker,secondary,0
-Cheirogaleus medius,hand_morphology,log10_ip4_mm,Baker,primary,0.691302563383483
+Cheirogaleus medius,hand_morphology,log10_ip4_mm,Baker,primary,0.6913025633834829
 Cheirogaleus medius,hand_morphology,log10_mc3_mm,Baker,primary,0.876217840591642
 Cheirogaleus medius,hand_morphology,log10_mc5_mm,Baker,primary,0.757016234731301
 Cheirogaleus medius,hand_morphology,log10_pp3_mm,Baker,primary,0.828015064223977
@@ -797,7 +797,7 @@ Cyclopes didactylus,gait,Phase,Wimberly,primary,64.59
 Darwinius masillae,manipulation,Tool_use,Baker,secondary,0
 Darwinius masillae,hand_morphology,log10_dp1_mm,Baker,primary,0.747217536139993
 Darwinius masillae,hand_morphology,log10_dp2_mm,Baker,primary,0.615950051656401
-Darwinius masillae,hand_morphology,log10_dp3_mm,Baker,primary,0.603144372620182
+Darwinius masillae,hand_morphology,log10_dp3_mm,Baker,primary,0.6031443726201819
 Darwinius masillae,hand_morphology,log10_dp4_mm,Baker,primary,0.624282095835668
 Darwinius masillae,hand_morphology,log10_dp5_mm,Baker,primary,0.495544337546448
 Darwinius masillae,hand_morphology,log10_ip2_mm,Baker,primary,0.909556029241175
@@ -1019,7 +1019,7 @@ Galago alleni,vocalization,VocalRepertoire,Schniter,primary,5
 Galago matschiei,locomotion,Arboreal_terrestrial,Granatosky,primary,A
 Galago matschiei,locomotion,Locomotor_diversity_index,Granatosky,primary,1.55376177629077
 Galago moholi,manipulation,Tool_use,Baker,secondary,0
-Galago moholi,hand_morphology,log10_ip4_mm,Baker,primary,0.811575005870593
+Galago moholi,hand_morphology,log10_ip4_mm,Baker,primary,0.8115750058705929
 Galago moholi,hand_morphology,log10_mc3_mm,Baker,primary,0.916980047320382
 Galago moholi,hand_morphology,log10_mc5_mm,Baker,primary,0.798880735242388
 Galago moholi,hand_morphology,log10_pp3_mm,Baker,primary,0.912753303671323
@@ -1046,10 +1046,10 @@ Galagoides demidoff,locomotion,Intermembral_index,Granatosky,primary,68
 Galagoides demidoff,locomotion,Locomotor_diversity_index,Granatosky,primary,1.40614065804908
 Galagoides demidoff,manipulation,Tool_use,Baker,secondary,0
 Galagoides demidoff,vocalization,VocalRepertoire,Schniter,primary,8
-Galagoides demidoff,hand_morphology,log10_ip4_mm,Baker,primary,0.737192642704737
+Galagoides demidoff,hand_morphology,log10_ip4_mm,Baker,primary,0.7371926427047369
 Galagoides demidoff,hand_morphology,log10_mc3_mm,Baker,primary,0.781755374652469
-Galagoides demidoff,hand_morphology,log10_mc5_mm,Baker,primary,0.687863248196042
-Galagoides demidoff,hand_morphology,log10_pp3_mm,Baker,primary,0.811575005870593
+Galagoides demidoff,hand_morphology,log10_mc5_mm,Baker,primary,0.6878632481960421
+Galagoides demidoff,hand_morphology,log10_pp3_mm,Baker,primary,0.8115750058705929
 Galagoides demidoff,hand_morphology,peak_workspace,Baker,primary,-1.50863830616573
 Galagoides demidoff,hand_morphology,real_size,Baker,primary,0.322219294733919
 Galagoides demidoff,hand_morphology,relative_size,Baker,primary,-1.09691001300806
@@ -1352,7 +1352,7 @@ Lemur catta,hand_morphology,log10_mc3_mm,Baker,primary,1.32428245529769
 Lemur catta,hand_morphology,log10_mc5_mm,Baker,primary,1.2724604801459
 Lemur catta,hand_morphology,log10_pp3_mm,Baker,primary,1.25285303097989
 Lemur catta,hand_morphology,peak_workspace,Baker,primary,-1.58502665202918
-Lemur catta,hand_morphology,real_size,Baker,primary,0.832508912706236
+Lemur catta,hand_morphology,real_size,Baker,primary,0.8325089127062359
 Lemur catta,hand_morphology,relative_size,Baker,primary,-1.04575749056068
 Leontopithecus chrysomelas,manipulation,Extractive_foraging,Heldstab,primary,1
 Leontopithecus chrysomelas,handedness,Handedness_index_mean,Caspar,primary,0.151
@@ -1799,7 +1799,7 @@ Nannodectes gidleyi,hand_morphology,log10_mc3_mm,Baker,primary,1.07990446766672
 Nannodectes intermedius,manipulation,Tool_use,Baker,secondary,0
 Nannodectes intermedius,hand_morphology,log10_dp3_mm,Baker,primary,0.717670503002262
 Nannodectes intermedius,hand_morphology,log10_ip3_mm,Baker,primary,0.81690383937566
-Nannodectes intermedius,hand_morphology,log10_mc1_mm,Baker,primary,0.822168079368018
+Nannodectes intermedius,hand_morphology,log10_mc1_mm,Baker,primary,0.8221680793680179
 Nannodectes intermedius,hand_morphology,log10_mc3_mm,Baker,primary,1.06107532362979
 Nannodectes intermedius,hand_morphology,log10_mc5_mm,Baker,primary,0.939519252618618
 Nannodectes intermedius,hand_morphology,log10_pp3_mm,Baker,primary,0.889861721258188
@@ -2082,7 +2082,7 @@ Paradoxurus hermaphroditus,gait,Gait,Wimberly,primary,LSLC
 Paradoxurus hermaphroditus,gait,Phase,Wimberly,primary,24.12
 Paraechinus,dexterity,Dexterity,Heffner,primary,2
 Paragalago zanzibaricus,manipulation,Tool_use,Baker,secondary,0
-Paragalago zanzibaricus,hand_morphology,log10_ip3_mm,Baker,primary,0.79448804665917
+Paragalago zanzibaricus,hand_morphology,log10_ip3_mm,Baker,primary,0.7944880466591701
 Paragalago zanzibaricus,hand_morphology,log10_mc3_mm,Baker,primary,0.951337518795918
 Paragalago zanzibaricus,hand_morphology,log10_pp3_mm,Baker,primary,0.93801909747621
 Paralouatta varonai,manipulation,Tool_use,Baker,secondary,0
@@ -2367,7 +2367,7 @@ Pteropus vampyrus,gait,Phase,Wimberly,primary,29.84214946
 Ptilocercus lowii,manipulation,Tool_use,Baker,secondary,0
 Ptilocercus lowii,hand_morphology,log10_mc1_mm,Baker,primary,0.498310553789601
 Ptilocercus lowii,hand_morphology,log10_mc2_mm,Baker,primary,0.702430536445525
-Ptilocercus lowii,hand_morphology,log10_mc3_mm,Baker,primary,0.760422483423212
+Ptilocercus lowii,hand_morphology,log10_mc3_mm,Baker,primary,0.7604224834232119
 Ptilocercus lowii,hand_morphology,log10_mc4_mm,Baker,primary,0.723318821716769
 Ptilocercus lowii,hand_morphology,log10_mc5_mm,Baker,primary,0.606202163753863
 Pygathrix cinerea,locomotion,Arboreal_terrestrial,Granatosky,primary,A
@@ -2531,7 +2531,7 @@ Sarcophilus harrisii,gait,Phase,Wimberly,primary,20.12
 Scalopus aquaticus,dexterity,Dexterity,Heffner,primary,1
 Sciurillus pusillus,locomotion,Locomotor_diversity_index,Granatosky,primary,1.05509170923132
 Sciurocheirus alleni,manipulation,Tool_use,Baker,secondary,0
-Sciurocheirus alleni,hand_morphology,log10_ip4_mm,Baker,primary,0.974665180804628
+Sciurocheirus alleni,hand_morphology,log10_ip4_mm,Baker,primary,0.9746651808046281
 Sciurocheirus alleni,hand_morphology,log10_mc3_mm,Baker,primary,1.01703333929878
 Sciurocheirus alleni,hand_morphology,log10_mc5_mm,Baker,primary,0.932811868611632
 Sciurocheirus alleni,hand_morphology,log10_pp3_mm,Baker,primary,1.03342375548695
@@ -2706,7 +2706,7 @@ Trachypithecus cristatus,hand_morphology,log10_mc2_mm,Baker,primary,1.5608752605
 Trachypithecus cristatus,hand_morphology,log10_mc3_mm,Baker,primary,1.5651062832652
 Trachypithecus cristatus,hand_morphology,log10_mc4_mm,Baker,primary,1.55264047023468
 Trachypithecus cristatus,hand_morphology,log10_mc5_mm,Baker,primary,1.53375913489462
-Trachypithecus cristatus,hand_morphology,log10_pp1_mm,Baker,primary,0.931709421643859
+Trachypithecus cristatus,hand_morphology,log10_pp1_mm,Baker,primary,0.9317094216438589
 Trachypithecus cristatus,hand_morphology,log10_pp2_mm,Baker,primary,1.35790738628428
 Trachypithecus cristatus,hand_morphology,log10_pp3_mm,Baker,primary,1.44417882107974
 Trachypithecus cristatus,hand_morphology,log10_pp4_mm,Baker,primary,1.44025095882511

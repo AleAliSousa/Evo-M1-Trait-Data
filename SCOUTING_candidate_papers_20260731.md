@@ -18,9 +18,30 @@ from the publisher page (Karger/Zenodo block automated fetches) — confirm befo
 
 ---
 
+## Curator decisions (2026-07-31) — READ FIRST
+
+- **DROP the MRI data (Heuer et al.).** The 2018 volumetric MRI (#1) and the 2019 neocortical-folding
+  MRI (#5) are **excluded**: values depart from expectations, show inter-observer differences, and the
+  first author is unreachable. Do not ingest.
+- **Technical innovation: IN, sourced from Reader — not Navarrete (#3).** Compile from Simon Reader's
+  classic dataset (Reader & Laland 2002, PNAS) and its machine-readable extension (Reader, Hager &
+  Laland 2011, Phil Trans; Dryad doi:10.5061/dryad.t0q94). Scaffolding is in place — see
+  `Reader_etal_2011/Reader_etal_2011.README.md` and `____EvoM1_TraitTable/EvoM1_read_innovation_reader.R`.
+  **Blocked in-session:** the org network policy denied Dryad at the egress proxy and there is no R
+  runtime here, so the actual per-species values must be downloaded and the reader run **locally**.
+- **Cerebellar folding (#6): CURATOR'S CALL.** First-authored by Heuer (same author as the dropped MRI
+  work) **but** it is built on **histological** data from 56 mammals — explicitly *not* MRI — and
+  A. A. de Sousa (repo owner) is a co-author. Different data type from the problematic MRI; left for
+  the owner to decide since she is best placed to judge it. Not touched here.
+- **Keep IN:** Bardo hand proportions (#2), Lesku/Capellini sleep (#4), limb-excursion locomotion (#7),
+  and the Tier-3 M1 items — corticospinal terminations (#8) and Betz cells (#9). Each still needs its
+  source data pulled locally (same network-policy limitation) and R to run/verify the merges.
+
+---
+
 ## Tier 1 — strongest fits (M1-adjacent or directly extend a live merge)
 
-### 1. Heuer et al. 2018 — Primate Brain Anatomy: New Volumetric MRI Measurements
+### 1. Heuer et al. 2018 — Primate Brain Anatomy: New Volumetric MRI Measurements  — ❌ DROPPED (see curator decisions)
 - **Merge:** `__merging_volumes` (brain-structure volumes). **Role: secondary** (MRI-derived, modern
   compilation to sit alongside the Stephan/Düsseldorf histological volumes).
 - **Contributes:** volumetric measurements of **16 brain areas** across **39 primate species**,
@@ -48,7 +69,7 @@ from the publisher page (Karger/Zenodo block automated fetches) — confirm befo
   Baker) → **never average**; record as a secondary key, resolved value stays Baker's where both
   exist. See `__merging_behaviour/README__merging.md` VocalRepertoire/Dexterity precedent.
 
-### 3. Navarrete, Reader, Street, Whalen & Laland 2016 — Innovation & technical intelligence
+### 3. Navarrete, Reader, Street, Whalen & Laland 2016 — Innovation & technical intelligence  — ↪ SUPERSEDED by Reader source (topic IN, see curator decisions + `Reader_etal_2011/`)
 - **Merge:** `__merging_behaviour` (a new `TechnicalInnovation` / `ExtractiveForaging` measure), or
   as an ecology trait beside Heldstab manipulation complexity.
 - **Contributes:** species scores for **technical innovation, non-technical innovation, and technical
@@ -81,7 +102,7 @@ from the publisher page (Karger/Zenodo block automated fetches) — confirm befo
 
 ## Tier 2 — good fits, secondary
 
-### 5. Heuer et al. 2019 — Evolution of neocortical folding (34 primate MRI)
+### 5. Heuer et al. 2019 — Evolution of neocortical folding (34 primate MRI)  — ❌ DROPPED (MRI; see curator decisions)
 - **Merge:** `__merging_gyrification` (folding). **Role: secondary.**
 - **Contributes:** folding metrics across **34 primate species** from MRI. NB the merge currently
   pools **only the Zilles-method GI** and deliberately excludes Mota/HH folding-index constructs —
@@ -91,13 +112,17 @@ from the publisher page (Karger/Zenodo block automated fetches) — confirm befo
   a phylogenetic comparative analysis of MRI from 34 primate species.* Cortex 118:275–291.
   DOI **10.1016/j.cortex.2019.04.011**.
 
-### 6. Cerebellar folding in mammals (eLife 2023)
+### 6. Cerebellar folding in mammals (eLife 2023)  — ⚠️ CURATOR'S CALL (Heuer-authored but histological; owner is co-author)
 - **Merge:** cortical-areas / a new cerebellar-surface slot (regional, not pooled with neocortical
   GI). **Role: primary** for cerebellar folding.
-- **Contributes:** comparative **cerebellar folding / surface** across a broad mammal sample —
-  complements Smaers cerebellum volumes and the neocortical folding merges.
-- **Citation:** *Diversity and evolution of cerebellar folding in mammals.* eLife 12:e85907 (2023).
-  DOI **10.7554/eLife.85907** *(verify authors/n before registering)*.
+- **Contributes:** comparative **cerebellar folding / surface** from an open collection of
+  **histological data from 56 mammalian species** (manually segmented cerebrum + cerebellum).
+  Complements Smaers cerebellum volumes.
+- **Data type note:** unlike the dropped Heuer MRI work, this is **histology** ("MRI does not provide
+  the resolution required… histological data can"), so it does not share the MRI inter-observer issue.
+  First author is Heuer; **A. A. de Sousa (repo owner) is a co-author** → left for the owner to judge.
+- **Citation:** Heuer K., Traut N., de Sousa A.A., Valk S.L., Clavel J., Toro R. (2023). *Diversity
+  and evolution of cerebellar folding in mammals.* eLife 12:e85907. DOI **10.7554/eLife.85907**.
 
 ### 7. Grabowski / limb angular-excursion dataset — terrestrial mammal locomotion
 - **Merge:** `__merging_behaviour` (locomotion/gait), beside Granatosky and Wimberly.

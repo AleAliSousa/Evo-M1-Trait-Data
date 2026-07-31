@@ -20,15 +20,25 @@ from the publisher page (Karger/Zenodo block automated fetches) — confirm befo
 
 ## Curator decisions (2026-07-31) — READ FIRST
 
-- **DROP the MRI data (Heuer et al.).** The 2018 volumetric MRI (#1) and the 2019 neocortical-folding
-  MRI (#5) are **excluded**: values depart from expectations, show inter-observer differences, and the
-  first author is unreachable. Do not ingest.
-- **Technical innovation: IN, sourced from Reader — not Navarrete (#3).** Compile from Simon Reader's
-  classic dataset (Reader & Laland 2002, PNAS) and its machine-readable extension (Reader, Hager &
-  Laland 2011, Phil Trans; Dryad doi:10.5061/dryad.t0q94). Scaffolding is in place — see
-  `Reader_etal_2011/Reader_etal_2011.README.md` and `____EvoM1_TraitTable/EvoM1_read_innovation_reader.R`.
+- **CORRECTION (2026-07-31):** an earlier version of this block wrongly attributed the "problematic
+  data" to **Heuer** and dropped the Heuer MRI candidates. The repo owner flagged **Navarrete**, not
+  Heuer, and reports **no known issue with Heuer**. Both Heuer candidates are therefore **reinstated**
+  (see below); the flagged data is Navarrete's.
+- **EXCLUDE Navarrete (#3).** Flagged by the repo owner (values depart from expectations,
+  inter-observer differences, first author unreachable). Do not ingest.
+  *(Open question for the owner: candidate #3 as catalogued is Navarrete et al. 2016, an* innovation
+  *dataset, not an MRI/volumetric one — so "Navarrete MRI data" may refer to a different Navarrete
+  paper. Confirm which, so this exclusion note is accurate.)*
+- **Technical innovation: IN, sourced from Reader (not from the flagged Navarrete source).** Compile
+  from Simon Reader's classic dataset (Reader & Laland 2002, PNAS) and its machine-readable extension
+  (Reader, Hager & Laland 2011, Phil Trans; Dryad doi:10.5061/dryad.t0q94). Scaffolding is in place —
+  see `Reader_etal_2011/Reader_etal_2011.README.md` and `____EvoM1_TraitTable/EvoM1_read_innovation_reader.R`.
   **Blocked in-session:** the org network policy denied Dryad at the egress proxy and there is no R
   runtime here, so the actual per-species values must be downloaded and the reader run **locally**.
+- **Heuer MRI (#1 volumes, #5 folding): REINSTATED — no known issue.** Valid candidates again. **Not
+  yet scaffolded** pending the owner's go-ahead (would slot into `__merging_volumes` as an MRI team of
+  its own, and #5 into the folding discussion). Note #5 (neocortical folding) is a separate question
+  from cerebellar folding, which remains out of scope (below).
 - **Cerebellar folding (#6): OUT OF SCOPE (2026-07-31).** Decided by the repo owner, who is a
   co-author on the paper: cerebellar folding is outside the dataset's scope right now. Not scaffolded,
   not to be revisited unless scope changes. (For the record: that paper used some Ashwell 2020 data
@@ -47,7 +57,7 @@ from the publisher page (Karger/Zenodo block automated fetches) — confirm befo
 
 ## Tier 1 — strongest fits (M1-adjacent or directly extend a live merge)
 
-### 1. Heuer et al. 2018 — Primate Brain Anatomy: New Volumetric MRI Measurements  — ❌ DROPPED (see curator decisions)
+### 1. Heuer et al. 2018 — Primate Brain Anatomy: New Volumetric MRI Measurements  — ✅ REINSTATED (no known issue; not yet scaffolded)
 - **Merge:** `__merging_volumes` (brain-structure volumes). **Role: secondary** (MRI-derived, modern
   compilation to sit alongside the Stephan/Düsseldorf histological volumes).
 - **Contributes:** volumetric measurements of **16 brain areas** across **39 primate species**,
@@ -75,7 +85,7 @@ from the publisher page (Karger/Zenodo block automated fetches) — confirm befo
   Baker) → **never average**; record as a secondary key, resolved value stays Baker's where both
   exist. See `__merging_behaviour/README__merging.md` VocalRepertoire/Dexterity precedent.
 
-### 3. Navarrete, Reader, Street, Whalen & Laland 2016 — Innovation & technical intelligence  — ↪ SUPERSEDED by Reader source (topic IN, see curator decisions + `Reader_etal_2011/`)
+### 3. Navarrete, Reader, Street, Whalen & Laland 2016 — Innovation & technical intelligence  — ❌ EXCLUDED (owner-flagged; topic covered instead via Reader, see `Reader_etal_2011/`)
 - **Merge:** `__merging_behaviour` (a new `TechnicalInnovation` / `ExtractiveForaging` measure), or
   as an ecology trait beside Heldstab manipulation complexity.
 - **Contributes:** species scores for **technical innovation, non-technical innovation, and technical
@@ -108,7 +118,7 @@ from the publisher page (Karger/Zenodo block automated fetches) — confirm befo
 
 ## Tier 2 — good fits, secondary
 
-### 5. Heuer et al. 2019 — Evolution of neocortical folding (34 primate MRI)  — ❌ DROPPED (MRI; see curator decisions)
+### 5. Heuer et al. 2019 — Evolution of neocortical folding (34 primate MRI)  — ✅ REINSTATED (no known issue; not yet scaffolded)
 - **Merge:** `__merging_gyrification` (folding). **Role: secondary.**
 - **Contributes:** folding metrics across **34 primate species** from MRI. NB the merge currently
   pools **only the Zilles-method GI** and deliberately excludes Mota/HH folding-index constructs —

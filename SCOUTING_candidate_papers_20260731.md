@@ -121,9 +121,21 @@ from the publisher page (Karger/Zenodo block automated fetches) — confirm befo
 ### 6. Cerebellar folding in mammals (eLife 2023)  — ⚠️ CURATOR'S CALL (Heuer-authored but histological; owner is co-author)
 - **Merge:** cortical-areas / a new cerebellar-surface slot (regional, not pooled with neocortical
   GI). **Role: primary** for cerebellar folding.
-- **Contributes:** comparative **cerebellar folding / surface** from an open collection of
-  **histological data from 56 mammalian species** (manually segmented cerebrum + cerebellum).
-  Complements Smaers cerebellum volumes.
+- **Contributes:** comparative **cerebellar folding** (folial structure — the paper's result is that
+  individual fold size ≈ constant across species and larger cerebella are disproportionately folded)
+  from an open collection of **histological data from 56 mammalian species** (manually segmented
+  cerebrum + cerebellum). This is a **regional folding/surface** trait, **not** a whole-cerebellum
+  volume — so it does **not** duplicate the well-covered cerebellum-*volume* sources (Ashwell 2020,
+  Smaers 2018, MacLeod 2003, Rilling & Insel 1998, Matano nuclei, Bush & Allman), and it is a
+  different construct from the neocortical-GI merge (Zilles-method neocortex only).
+- **Not used anywhere in the repo yet:** eLife 85907 is not registered in `__ReadMe.xlsx` and is not
+  cited by any source or review (checked 2026-07-31). The only eLife items present are Smaers 2018
+  (35696, cerebellum *volumes*) and Caspar 2022 (77875, handedness).
+- **Natural home + an already-half-present pairing:** a **cerebellar folding/surface slot** that would
+  also finally surface **Ashwell 2020**'s (`10.1016/j.zool.2020.125753`) already-in-repo but currently
+  **dropped** columns — `foliation_index`, `cb_ext_surface_esa_mm2`, `cb_pial_surface_psa_mm2` (its
+  standardized-term map ingests only the `*_Vol.mm3` volume columns, so the foliation/surface columns
+  never reach a merge). Kept separate from cerebellum-volume and from neocortical GI.
 - **Data type note:** unlike the dropped Heuer MRI work, this is **histology** ("MRI does not provide
   the resolution required… histological data can"), so it does not share the MRI inter-observer issue.
   First author is Heuer; **A. A. de Sousa (repo owner) is a co-author** → left for the owner to judge.

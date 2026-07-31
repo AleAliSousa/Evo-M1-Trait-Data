@@ -1,0 +1,9 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+level,cervical vertebral level (C1-C6); C1 excluded from calibration (not correlated),Cervical vertebra,,,info,Homo sapiens,deJager_etal_2022,,TODO verify against paper
+TF_area_mm2,transverse-foramen cross-sectional area in mm^2,Transverse foramen,area.mm2,,primary,Homo sapiens,deJager_etal_2022,extant human contrast-CT; range ~13.40-71.25 mm^2,TODO verify
+VA_area_mm2,vertebral-artery cross-sectional area (lumen) in mm^2,Vertebral artery,area.mm2,,primary,Homo sapiens,deJager_etal_2022,extant human contrast-CT; range ~4.53-29.40 mm^2,TODO verify
+side,body side of the measurement (left/right/pooled),,,,info,Homo sapiens,deJager_etal_2022,,TODO verify whether sides pooled
+slope,regression slope predicting VA_area_mm2 from TF_area_mm2 at a given level,Vertebral artery,,coef,method,Homo sapiens,deJager_etal_2022,fill from paper; note transform (none/log),TODO
+intercept,regression intercept for VA_area_mm2 ~ TF_area_mm2,Vertebral artery,,coef,method,Homo sapiens,deJager_etal_2022,,TODO
+r2,coefficient of determination of the calibration regression,Vertebral artery,,fit,method,Homo sapiens,deJager_etal_2022,or Pearson r if that is what is reported,TODO
+Method:TF_to_VA,"estimate vertebral-artery area in a fossil from a measured transverse-foramen area using the per-level (C2-C6) regression; feeds VA lumen radius -> Poiseuille flow in ../__flow_comparison physics",Vertebral artery,,method,,,deJager_etal_2022,calibration only; needs a fossil transverse-foramen measurement (e.g. Beaudet et al. 2020 StW 573) to yield an estimate,TODO verify

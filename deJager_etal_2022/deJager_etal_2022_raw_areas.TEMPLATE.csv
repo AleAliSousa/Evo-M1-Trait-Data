@@ -1,0 +1,15 @@
+# TEMPLATE — NOT DATA. Rename to deJager_etal_2022_raw_areas.csv once filled.
+# OPTIONAL but preferred: per-individual, per-level raw cross-sectional areas, if the paper's
+# supplementary material provides them. Lets the builder REFIT the regression in house style
+# (same policy as the Boyer/Seymour refits) instead of trusting transcribed coefficients.
+# One row per individual x level x side. Leave out C1 rows or keep them flagged — C1 is not usable.
+# Columns:
+#   individual   : specimen/subject id as printed
+#   sex          : if reported (M/F/NA)
+#   level        : cervical vertebra (C1..C6)
+#   side         : left | right
+#   TF_area_mm2  : transverse-foramen cross-sectional area, mm^2
+#   VA_area_mm2  : vertebral-artery cross-sectional area, mm^2
+#   note         : e.g. double transverse foramen, anomaly, exclusion
+individual,sex,level,side,TF_area_mm2,VA_area_mm2,note
+# TODO fill from supplementary table, or delete this file if no raw table is available.

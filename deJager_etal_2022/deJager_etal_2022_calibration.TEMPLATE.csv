@@ -1,0 +1,26 @@
+# TEMPLATE — NOT DATA. Rename to deJager_etal_2022_calibration.csv once filled from the paper.
+# One row per cervical level with a usable regression. OMIT C1 (foramen and VA area are NOT correlated at the atlas).
+# Response is vertebral-artery cross-sectional area; predictor is transverse-foramen cross-sectional area.
+# Confirm from the PDF: units (expect mm^2 for both), whether areas are log-transformed before fitting,
+# whether left & right sides are pooled or separate, the regression form, and the sample size (n).
+# Columns:
+#   level              : cervical vertebra (C2..C6)
+#   response           : what is predicted (expect "VA_area_mm2")
+#   predictor          : what predicts it (expect "TF_area_mm2")
+#   transform          : none | log10 | ln  (fill exactly as the paper fits it)
+#   slope              : regression slope (b1)
+#   intercept          : regression intercept (b0)
+#   r2                 : coefficient of determination
+#   r                  : Pearson r (if that is what the paper reports instead of r2)
+#   p_value            : significance of the correlation/slope
+#   n                  : number of observations (individuals, or individual-sides)
+#   side               : pooled | left | right
+#   foramen_area_min_mm2 : lower end of the calibrated foramen-area range (for extrapolation warnings)
+#   foramen_area_max_mm2 : upper end of the calibrated foramen-area range
+#   note               : anything qualifying use of this row
+level,response,predictor,transform,slope,intercept,r2,r,p_value,n,side,foramen_area_min_mm2,foramen_area_max_mm2,note
+C2,VA_area_mm2,TF_area_mm2,,,,,,,,,,,TODO fill from paper
+C3,VA_area_mm2,TF_area_mm2,,,,,,,,,,,TODO fill from paper
+C4,VA_area_mm2,TF_area_mm2,,,,,,,,,,,TODO fill from paper
+C5,VA_area_mm2,TF_area_mm2,,,,,,,,,,,TODO fill from paper
+C6,VA_area_mm2,TF_area_mm2,,,,,,,,,,,TODO fill from paper

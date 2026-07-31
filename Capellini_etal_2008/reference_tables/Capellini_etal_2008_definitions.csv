@@ -1,0 +1,9 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species_printed,journal species name exactly as printed in the source table,,,,info,Mammals,Capellini_etal_2008_Data,printed name preserved (invariant 3),confirm species column header
+species,accepted scientific binomial; spelling normalised (binomials as printed),,,,info,Mammals,Capellini_etal_2008_Data,Capellini lists binomials; no common-name table needed,
+TST_h,total sleep time as reported,whole-organism,Sleep.h_day,point,primary,Mammals,Capellini_etal_2008_Data,source column for Sleep_h_day,confirm header/units (h/day)
+REM_h,REM sleep time as reported,whole-organism,Sleep.h_day,point,primary,Mammals,Capellini_etal_2008_Data,used to derive REM_sleep_pct,confirm header/units (h/day)
+NREM_h,NREM / slow-wave sleep time as reported,whole-organism,Sleep.h_day,point,info,Mammals,Capellini_etal_2008_Data,carried for completeness; not a merged term,confirm header/units (h/day)
+Sleep_h_day,total daily sleep (project standardized term),whole-organism,Sleep.h_day,point,primary,Mammals,Capellini_etal_2008_Data,= TST_h,derived in build script
+REM_sleep_pct,per cent of total sleep spent in REM (project standardized term),whole-organism,Sleep.pct,point,primary,Mammals,Capellini_etal_2008_Data,= 100 * REM_h / TST_h,derived in build script
+Method,literature compilation of mammalian sleep (EEG-defined SWS/REM) corrected & re-analysed with phylogenetic methods,,,,method,Mammals,Capellini_etal_2008_Data,reappraisal of Lesku 2006 / Savage & West / Zepelin data,Capellini is a corrected secondary compiler of these primary sleep studies

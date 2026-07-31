@@ -33,9 +33,15 @@ from the publisher page (Karger/Zenodo block automated fetches) — confirm befo
   work) **but** it is built on **histological** data from 56 mammals — explicitly *not* MRI — and
   A. A. de Sousa (repo owner) is a co-author. Different data type from the problematic MRI; left for
   the owner to decide since she is best placed to judge it. Not touched here.
-- **Keep IN:** Bardo hand proportions (#2), Lesku/Capellini sleep (#4), limb-excursion locomotion (#7),
-  and the Tier-3 M1 items — corticospinal terminations (#8) and Betz cells (#9). Each still needs its
-  source data pulled locally (same network-policy limitation) and R to run/verify the merges.
+- **Keep IN — all scaffolded (2026-07-31):** Bardo hand proportions (#2 → `Bardo_etal_2016/`),
+  Capellini/Lesku sleep (#4 → `Capellini_etal_2008/`), limb-excursion locomotion (#7 →
+  `MedinaGonzalez_2026/`), corticospinal terminations (#8 → `Corticospinal_terminations/`), Betz cells
+  (#9 → `Betz_cells_M1/`). Each folder has a README (source, download/freeze, register, and exact
+  merge-wiring steps) + a `reference_tables/*_definitions.csv`; the two behaviour sources and the
+  locomotion source also have reader scripts in `____EvoM1_TraitTable/`, and the sleep source has a
+  `standardized_term_by_reference/` template. **Every scaffold still needs its source data pulled
+  locally** (same network-policy limitation) **and R to run/verify the merges** — the merge scripts
+  were left untouched so the current build is unaffected until each is wired on.
 
 ---
 

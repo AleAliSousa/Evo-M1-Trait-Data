@@ -1,0 +1,7 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species_printed,species name exactly as printed in the primary source,,,,info,Mammals,CST_termination_compilation,printed name preserved (invariant 3),
+species_sci,accepted scientific binomial; harmonised via _keys,,,,info,Mammals,CST_termination_compilation,,
+CST_termination_grade,ordinal extent of corticospinal termination in spinal grey (0 = dorsal/intermediate only ... max = direct CM contact on distal motoneuron pools),spinal cord / M1 output,grade,ordinal,secondary,Mammals,CST_termination_compilation,coding rubric MUST be documented; one primary source per datum,ordinal curatorial coding — cite source page/figure per species
+CM_monosynaptic,presence of direct monosynaptic corticomotoneuronal connections (0/1),spinal cord / M1 output,presence,binary,secondary,Mammals,CST_termination_compilation,optional companion to the grade,
+Source,the primary paper the datum was taken from,,,,info,Mammals,CST_termination_compilation,Bortoff&Strick 1993 / Nudo&Masterton 1990 / Lemon 2008 / others,
+Method,comparative tract-tracing & electrophysiology of the corticospinal/corticomotoneuronal system; per-species literature compilation,,,,method,Mammals,CST_termination_compilation,behavioural read-out = Heffner dexterity (kept as a separate variable),this is a compilation of multiple primary studies

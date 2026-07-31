@@ -1,0 +1,6 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species_printed,journal species name exactly as printed in the source table,,,,info,Primates,Bardo_etal_2016_Data,printed name preserved (invariant 3),confirm species column header
+species_sci,accepted scientific binomial; harmonised via _keys/species_reference.csv + _keys/Stephan/species_key.csv,,,,info,Primates,Bardo_etal_2016_Data,resolved in EvoM1_read_hand_bardo.R,
+Manipulability_index,dexterous-workspace / manipulative-potential index derived from hand proportions,hand,manipulability,index,secondary,Primates,Bardo_etal_2016_Data,Feix-style manipulability construct — citation-dependent with Baker peak_workspace; never average,confirm exact index column header(s)
+n_samples,number of hand samples contributing to the species value,hand,count,n,info,Primates,Bardo_etal_2016_Data,137 samples across 13 species total,confirm if per-species n is reported
+Method,manipulability inferred from hand-proportion measurements (thumb/finger ratios) across anthropoids; sagittal hand-proportion analysis,,,,method,Primates,Bardo_etal_2016_Data,13 anthropoid species (humans/apes/OWM/NWM),Bardo is the primary source of this index

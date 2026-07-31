@@ -1,29 +1,35 @@
-# EvoM1: sleep (REM proportion + daily sleep duration) -> sleep.xlsx for the trait table.
-# Reads the compiled merge (__merging_sleep/sleep_wide.csv), not a single source TSV, because the
-# two sleep traits come from different papers (Eagleman & Vaughn 2021 = REM%, Herculano-Houzel 2015
-# = daily sleep). Emits per-cell *_Source columns so build_data.R credits each value to its own
-# primary reference. Correlatable side-by-side with the other trait tables on species_sci.
+# EvoM1: sleep & torpor -> sleep.xlsx for the trait table.
+# Reads the compiled merge (__merging_sleep/sleep_wide.csv), not single source TSVs, because the
+# traits come from four papers (Eagleman & Vaughn 2021 REM%, Herculano-Houzel 2015 daily sleep,
+# Lyamin et al. 2008 cetacean SWS, Ruf & Geiser 2015 torpor). Emits a per-cell *_Source column for
+# each trait (trait->source is 1:1 in this build). Correlatable side-by-side with the other trait
+# tables on species_sci.
 library(readxl); library(writexl)
 setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/")
 folder_path <- "./____EvoM1_TraitTable/"
 
 d <- read.csv("./__merging_sleep/sleep_wide.csv", stringsAsFactors = FALSE, check.names = FALSE)
 
-# Species key: sleep_wide$Species is the accepted binomial (Eagleman common names already resolved
-# via __merging_sleep/species_resolution_Eagleman.csv). Keep genus-level "<Genus> sp." labels as-is.
-fmt <- function(x) ifelse(is.na(x) | x == "", NA,
-                          ifelse(x == round(x), as.character(as.integer(x)), as.character(x)))
+# trait -> primary-source label (shown as the app's per-cell Source)
+src <- c(
+  REM_sleep_pct     = "Eagleman & Vaughn 2021 (REM sleep)",
+  Sleep_h_day       = "Herculano-Houzel 2015 (daily sleep)",
+  SWS_total_pct     = "Lyamin et al. 2008 (cetacean slow-wave sleep)",
+  USWS_pctTST       = "Lyamin et al. 2008 (cetacean slow-wave sleep)",
+  Torpor_type       = "Ruf & Geiser 2015 (torpor/hibernation)",
+  Torpor_Tb_min_C   = "Ruf & Geiser 2015 (torpor/hibernation)",
+  Torpor_bout_max_h = "Ruf & Geiser 2015 (torpor/hibernation)"
+)
+traits <- intersect(names(src), names(d))   # traits actually present in the merge
 
-out <- data.frame(
-  species_sci          = d$Species,
-  Species              = d$Species,
-  REM_sleep_pct        = fmt(d$REM_sleep_pct),
-  REM_sleep_pct_Source = ifelse(is.na(d$REM_sleep_pct), NA, "Eagleman & Vaughn 2021 (REM sleep)"),
-  Sleep_h_day          = fmt(d$Sleep_h_day),
-  Sleep_h_day_Source   = ifelse(is.na(d$Sleep_h_day),   NA, "Herculano-Houzel 2015 (daily sleep)"),
-  stringsAsFactors = FALSE, check.names = FALSE)
+out <- data.frame(species_sci = d$Species, Species = d$Species,
+                  stringsAsFactors = FALSE, check.names = FALSE)
+for (t in traits) {
+  v <- as.character(d[[t]]); v[v == ""] <- NA
+  out[[t]] <- v
+  out[[paste0(t, "_Source")]] <- ifelse(is.na(v), NA, unname(src[t]))
+}
 
 write_xlsx(out, paste0(folder_path, "sleep.xlsx"))
-cat("sleep.xlsx:", nrow(out), "rows (",
-    sum(!is.na(out$REM_sleep_pct)), "REM,",
-    sum(!is.na(out$Sleep_h_day)), "daily-sleep )\n")
+cat("sleep.xlsx:", nrow(out), "rows;",
+    paste(sprintf("%s=%d", traits, sapply(traits, function(t) sum(!is.na(out[[t]])))), collapse = ", "), "\n")

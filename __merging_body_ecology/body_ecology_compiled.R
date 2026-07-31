@@ -4,6 +4,12 @@
 # team/role-aware pooling (primary preferred), with a dedupe/disagreement report.
 # The Python builder is the tested artifact (R was unavailable in the build env);
 # this script implements the identical pipeline.
+# NOTE: this twin covers the `mass` class only. The other three classes —
+# `metabolic (body)` (BMR whole-animal + mass-specific), `life_history`
+# (longevity/gestation/weaning/litter/maturity), and `diet_ecology` (Wilman diet
+# %s + categorical dominant-diet/guild/stratum/activity) — are implemented in
+# build_body_ecology_merge.py, the authoritative multi-measure builder (which
+# also carries the categorical-mode pooling the R twin does not).
 
 repo <- normalizePath(file.path(dirname(sys.frame(1)$ofile %||% "."), ".."), mustWork = FALSE)
 `%||%` <- function(a, b) if (is.null(a)) b else a

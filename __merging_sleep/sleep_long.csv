@@ -1,50 +1,50 @@
 Species,Species_printed,Standardized_Term,Value,Units,source,team,ref,species_confidence,dependency_group
-Chlorocebus pygerythrus,Vervet monkey,REM_sleep_pct,6,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table1,medium,REM_pct
-Eulemur mongoz,Mongoose lemur,REM_sleep_pct,7,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table1,high,REM_pct
-Microcebus murinus,Gray mouse lemur,REM_sleep_pct,7,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table1,high,REM_pct
-Ateles geoffroyi,Spider monkey,REM_sleep_pct,7,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table1,review,REM_pct
-Papio cynocephalus,Yellow baboon,REM_sleep_pct,8,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table1,high,REM_pct
-Erythrocebus patas,Patas monkey,REM_sleep_pct,9,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table1,high,REM_pct
-Eulemur macaco,Black lemur,REM_sleep_pct,9,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table1,high,REM_pct
-Macaca sylvanus,Barbary macaque,REM_sleep_pct,9,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table1,high,REM_pct
-Galago senegalensis,Senegal galago,REM_sleep_pct,9,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table1,high,REM_pct
-Chlorocebus sabaeus,Green monkey,REM_sleep_pct,9,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table1,medium,REM_pct
-Eulemur fulvus,Brown lemur,REM_sleep_pct,9,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table1,review,REM_pct
-Papio papio,Guinea baboon,REM_sleep_pct,11,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table1,high,REM_pct
-Aotus trivirgatus,Three-striped night monkey,REM_sleep_pct,11,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table1,high,REM_pct
-Macaca fascicularis,Long-tailed macaque,REM_sleep_pct,11,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table1,high,REM_pct
-Macaca nemestrina,Pigtail macaque,REM_sleep_pct,12,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table1,high,REM_pct
-Pongo pygmaeus,Bornean orangutan,REM_sleep_pct,12,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table1,high,REM_pct
-Papio hamadryas,Hamadryas baboon,REM_sleep_pct,13,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table1,high,REM_pct
-Papio anubis,Olive baboon,REM_sleep_pct,13,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table1,high,REM_pct
-Macaca radiata,Bonnet macaque,REM_sleep_pct,14,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table1,high,REM_pct
-Callithrix jacchus,Common marmoset,REM_sleep_pct,14,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table1,high,REM_pct
-Macaca arctoides,Stump-tailed macaque,REM_sleep_pct,15,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table1,high,REM_pct
-Saimiri sciureus,Common squirrel monkey,REM_sleep_pct,15,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table1,high,REM_pct
-Pan troglodytes,Chimpanzee,REM_sleep_pct,16,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table1,high,REM_pct
-Macaca mulatta,Rhesus monkey,REM_sleep_pct,18,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table1,high,REM_pct
-Homo sapiens,Human,REM_sleep_pct,21,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table1,high,REM_pct
-Aotus trivirgatus,Aotus trivirgatus,Sleep_h_day,16.97,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table1,high,dailysleep
-Callithrix sp.,Callithrix sp.,Sleep_h_day,10.22,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table1,high,dailysleep
-Cebus apella,Cebus apella,Sleep_h_day,5.95,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table1,high,dailysleep
-Saimiri sciureus,Saimiri sciureus,Sleep_h_day,9.11,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table1,high,dailysleep
-Macaca mulatta,Macaca mulatta,Sleep_h_day,8.74,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table1,high,dailysleep
-Macaca radiata,Macaca radiata,Sleep_h_day,9.02,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table1,high,dailysleep
-Papio cynocephalus,Papio cynocephalus,Sleep_h_day,6.19,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table1,high,dailysleep
-Homo sapiens,Homo sapiens,Sleep_h_day,8.47,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table1,high,dailysleep
-Blarina brevicauda,Blarina brevicauda,Sleep_h_day,14.9,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table1,high,dailysleep
-Condylura cristata,Condylura cristata,Sleep_h_day,10.32,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table1,high,dailysleep
-Erinaceus europaeus,Erinaceus europaeus,Sleep_h_day,13.96,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table1,high,dailysleep
-Scalopus aquaticus,Scalopus aquaticus,Sleep_h_day,8.45,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table1,high,dailysleep
-Cavia porcellus,Cavia porcellus,Sleep_h_day,9.37,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table1,high,dailysleep
-Mesocricetus auratus,Mesocricetus auratus,Sleep_h_day,14.98,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table1,high,dailysleep
-Mus musculus,Mus musculus,Sleep_h_day,11.6,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table1,high,dailysleep
-Oryctolagus cuniculus,Oryctolagus cuniculus,Sleep_h_day,9.55,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table1,high,dailysleep
-Rattus norvegicus,Rattus norvegicus,Sleep_h_day,12.27,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table1,high,dailysleep
-Dendrohyrax sp.,Dendrohyrax sp.,Sleep_h_day,5.4,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table1,high,dailysleep
-Loxodonta africana,Loxodonta Africana,Sleep_h_day,3.3,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table1,high,dailysleep
-Procavia sp.,Procavia sp.,Sleep_h_day,5.45,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table1,high,dailysleep
-Bos taurus,Bos taurus,Sleep_h_day,3.19,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table1,high,dailysleep
-Giraffa camelopardalis,Giraffa camelopardalis,Sleep_h_day,3.44,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table1,high,dailysleep
-Sus scrofa,Sus scrofa,Sleep_h_day,8.2,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table1,high,dailysleep
-Tupaia sp.,Tupaia sp.,Sleep_h_day,15.84,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table1,high,dailysleep
+Chlorocebus pygerythrus,Vervet monkey,REM_sleep_pct,6,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,medium,REM_pct
+Eulemur mongoz,Mongoose lemur,REM_sleep_pct,7,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,high,REM_pct
+Microcebus murinus,Gray mouse lemur,REM_sleep_pct,7,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,high,REM_pct
+Ateles geoffroyi,Spider monkey,REM_sleep_pct,7,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,review,REM_pct
+Papio cynocephalus,Yellow baboon,REM_sleep_pct,8,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,high,REM_pct
+Erythrocebus patas,Patas monkey,REM_sleep_pct,9,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,high,REM_pct
+Eulemur macaco,Black lemur,REM_sleep_pct,9,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,high,REM_pct
+Macaca sylvanus,Barbary macaque,REM_sleep_pct,9,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,high,REM_pct
+Galago senegalensis,Senegal galago,REM_sleep_pct,9,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,high,REM_pct
+Chlorocebus sabaeus,Green monkey,REM_sleep_pct,9,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,medium,REM_pct
+Eulemur fulvus,Brown lemur,REM_sleep_pct,9,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,review,REM_pct
+Papio papio,Guinea baboon,REM_sleep_pct,11,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,high,REM_pct
+Aotus trivirgatus,Three-striped night monkey,REM_sleep_pct,11,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,high,REM_pct
+Macaca fascicularis,Long-tailed macaque,REM_sleep_pct,11,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,high,REM_pct
+Macaca nemestrina,Pigtail macaque,REM_sleep_pct,12,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,high,REM_pct
+Pongo pygmaeus,Bornean orangutan,REM_sleep_pct,12,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,high,REM_pct
+Papio hamadryas,Hamadryas baboon,REM_sleep_pct,13,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,high,REM_pct
+Papio anubis,Olive baboon,REM_sleep_pct,13,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,high,REM_pct
+Macaca radiata,Bonnet macaque,REM_sleep_pct,14,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,high,REM_pct
+Callithrix jacchus,Common marmoset,REM_sleep_pct,14,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,high,REM_pct
+Macaca arctoides,Stump-tailed macaque,REM_sleep_pct,15,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,high,REM_pct
+Saimiri sciureus,Common squirrel monkey,REM_sleep_pct,15,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,high,REM_pct
+Pan troglodytes,Chimpanzee,REM_sleep_pct,16,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,high,REM_pct
+Macaca mulatta,Rhesus monkey,REM_sleep_pct,18,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,high,REM_pct
+Homo sapiens,Human,REM_sleep_pct,21,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,high,REM_pct
+Aotus trivirgatus,Aotus trivirgatus,Sleep_h_day,16.97,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table,high,dailysleep
+Callithrix sp.,Callithrix sp.,Sleep_h_day,10.22,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table,high,dailysleep
+Cebus apella,Cebus apella,Sleep_h_day,5.95,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table,high,dailysleep
+Saimiri sciureus,Saimiri sciureus,Sleep_h_day,9.11,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table,high,dailysleep
+Macaca mulatta,Macaca mulatta,Sleep_h_day,8.74,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table,high,dailysleep
+Macaca radiata,Macaca radiata,Sleep_h_day,9.02,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table,high,dailysleep
+Papio cynocephalus,Papio cynocephalus,Sleep_h_day,6.19,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table,high,dailysleep
+Homo sapiens,Homo sapiens,Sleep_h_day,8.47,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table,high,dailysleep
+Blarina brevicauda,Blarina brevicauda,Sleep_h_day,14.9,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table,high,dailysleep
+Condylura cristata,Condylura cristata,Sleep_h_day,10.32,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table,high,dailysleep
+Erinaceus europaeus,Erinaceus europaeus,Sleep_h_day,13.96,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table,high,dailysleep
+Scalopus aquaticus,Scalopus aquaticus,Sleep_h_day,8.45,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table,high,dailysleep
+Cavia porcellus,Cavia porcellus,Sleep_h_day,9.37,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table,high,dailysleep
+Mesocricetus auratus,Mesocricetus auratus,Sleep_h_day,14.98,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table,high,dailysleep
+Mus musculus,Mus musculus,Sleep_h_day,11.6,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table,high,dailysleep
+Oryctolagus cuniculus,Oryctolagus cuniculus,Sleep_h_day,9.55,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table,high,dailysleep
+Rattus norvegicus,Rattus norvegicus,Sleep_h_day,12.27,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table,high,dailysleep
+Dendrohyrax sp.,Dendrohyrax sp.,Sleep_h_day,5.4,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table,high,dailysleep
+Loxodonta africana,Loxodonta Africana,Sleep_h_day,3.3,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table,high,dailysleep
+Procavia sp.,Procavia sp.,Sleep_h_day,5.45,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table,high,dailysleep
+Bos taurus,Bos taurus,Sleep_h_day,3.19,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table,high,dailysleep
+Giraffa camelopardalis,Giraffa camelopardalis,Sleep_h_day,3.44,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table,high,dailysleep
+Sus scrofa,Sus scrofa,Sleep_h_day,8.2,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table,high,dailysleep
+Tupaia sp.,Tupaia sp.,Sleep_h_day,15.84,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table,high,dailysleep

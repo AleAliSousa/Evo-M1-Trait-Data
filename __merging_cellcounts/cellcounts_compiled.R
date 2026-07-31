@@ -38,6 +38,19 @@ item_name <- c(
   "JardimMesseder_etal_2017_Table1",
   "Kverkova_etal_2018_TableS1",
   "Kverkova_etal_2018_TableS5"
+
+  # ---- SCAFFOLDED, NOT YET LIVE (Herculano-Houzel coverage-gap audit, 2026-07) ----
+  # Each is blocked on: its PDF/data + registration in __ReadMe.xlsx + a completed
+  # standardized_term_by_reference/ file (stubs already committed). Uncomment one at a
+  # time only after its build is real, then re-run standardized_term.R first.
+  # See __merging_cellcounts/HH_coverage_gaps_scaffold.md for status and blockers.
+  #
+  # , "Kazu_etal_2014_Table1"                      # NEW SPECIES: extra artiodactyls + giraffe primary (standard scheme; use 2015 corrigendum)
+  # , "Gabi_etal_2016_Table1"                      # NEW REGIONS: prefrontal vs rest-of-cortex counts (needs regional-term decision)
+  # , "HerculanoHouzel_etal_2013_Table1-a"         # NEW REGIONS: mouse 18 cortical areas (data built; needs long->wide area reshape — see WIRING_into_cellcounts.md)
+  # , "Ribeiro_etal_2013_Table1"                   # NEW REGIONS: human cortical zones (within-human; granularity + include/reference decision pending)
+  # Olkowicz_etal_2016_TableS1 is intentionally NOT listed: non-mammal (28 birds), blocked on
+  #   the MDD/mammal-only taxonomy resolver (SCOPING_backbone_traits_and_taxonomy.md do-first steps 1 & 4).
 )
 
 # Initialize an empty list to store data frames with cell counts data

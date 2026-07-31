@@ -1,0 +1,5 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,species (single-species human study),,,,info,Homo sapiens,Ribeiro_etal_2013_Table1,,
+Zone,cortical zone label (grey zones 1-2; white zones 1-3),,,,info,Homo sapiens,Ribeiro_etal_2013_Table1,TODO confirm zone labels,
+Neuron density,neuron density in the zone,cortical zone,N.p.mg,mean,primary,Homo sapiens,Ribeiro_etal_2013_Table1,TODO confirm unit (per mg vs per mm3),isotropic fractionator (HH lab)
+Method:region,"within-human regional density map; granularity + merge-include decision pending (see README)",,,,method,Homo sapiens,Ribeiro_etal_2013_Table1,,

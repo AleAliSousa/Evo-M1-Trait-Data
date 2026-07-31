@@ -1,0 +1,16 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,species (harmonised binomial),,,,info,Artiodactyla,Kazu_etal_2014_Table1,,
+Species_Kazu2014,species name as printed in the paper,,,,info,Artiodactyla,Kazu_etal_2014_Table1,,
+n,number of specimens,,,,info,Artiodactyla,Kazu_etal_2014_Table1,,
+"Body mass, g",body mass (g),Body,Mass.g,,primary,Artiodactyla,Kazu_etal_2014_Table1,TODO confirm printed column,isotropic fractionator (HH lab)
+"Brain mass, g",whole-brain mass (g),WholeBrain,Mass.g,,primary,Artiodactyla,Kazu_etal_2014_Table1,TODO confirm printed column,
+"Cortex mass, g",cerebral cortex mass (g),CerebralCortex,Mass.g,,primary,Artiodactyla,Kazu_etal_2014_Table1,Same scope as HH 2015 'Cerebral Cortex',
+Cortex neurons,cerebral cortex neuron number,CerebralCortex,N.n,,primary,Artiodactyla,Kazu_etal_2014_Table1,,isotropic fractionator
+Cortex other cells,cerebral cortex non-neuronal cell number,CerebralCortex,O.n,,primary,Artiodactyla,Kazu_etal_2014_Table1,,
+"Cerebellum mass, g",cerebellum mass (g),Cerebellum,Mass.g,,primary,Artiodactyla,Kazu_etal_2014_Table1,,
+Cerebellum neurons,cerebellum neuron number,Cerebellum,N.n,,primary,Artiodactyla,Kazu_etal_2014_Table1,,
+Cerebellum other cells,cerebellum non-neuronal cell number,Cerebellum,O.n,,primary,Artiodactyla,Kazu_etal_2014_Table1,,
+"RoB mass, g",rest-of-brain mass (g),RoB,Mass.g,,primary,Artiodactyla,Kazu_etal_2014_Table1,diencephalon+striatum+mesencephalon+pons+medulla,
+RoB neurons,rest-of-brain neuron number,RoB,N.n,,primary,Artiodactyla,Kazu_etal_2014_Table1,,
+RoB other cells,rest-of-brain non-neuronal cell number,RoB,O.n,,primary,Artiodactyla,Kazu_etal_2014_Table1,,
+Method:sample,"isotropic fractionator; values from the 2015 corrigendum (10.3389/fnana.2015.00039)",,,,method,Artiodactyla,Kazu_etal_2014_Table1,,

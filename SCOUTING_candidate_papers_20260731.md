@@ -29,10 +29,10 @@ from the publisher page (Karger/Zenodo block automated fetches) — confirm befo
   `Reader_etal_2011/Reader_etal_2011.README.md` and `____EvoM1_TraitTable/EvoM1_read_innovation_reader.R`.
   **Blocked in-session:** the org network policy denied Dryad at the egress proxy and there is no R
   runtime here, so the actual per-species values must be downloaded and the reader run **locally**.
-- **Cerebellar folding (#6): CURATOR'S CALL.** First-authored by Heuer (same author as the dropped MRI
-  work) **but** it is built on **histological** data from 56 mammals — explicitly *not* MRI — and
-  A. A. de Sousa (repo owner) is a co-author. Different data type from the problematic MRI; left for
-  the owner to decide since she is best placed to judge it. Not touched here.
+- **Cerebellar folding (#6): OUT OF SCOPE (2026-07-31).** Decided by the repo owner, who is a
+  co-author on the paper: cerebellar folding is outside the dataset's scope right now. Not scaffolded,
+  not to be revisited unless scope changes. (For the record: that paper used some Ashwell 2020 data
+  only as a comparison; Ashwell is already in the repo via the volumes merge, so nothing to reconcile.)
 - **Keep IN — all scaffolded (2026-07-31):** Bardo hand proportions (#2 → `Bardo_etal_2016/`),
   Capellini/Lesku sleep (#4 → `Capellini_etal_2008/`), limb-excursion locomotion (#7 →
   `MedinaGonzalez_2026/`), corticospinal terminations (#8 → `Corticospinal_terminations/`), Betz cells
@@ -118,7 +118,7 @@ from the publisher page (Karger/Zenodo block automated fetches) — confirm befo
   a phylogenetic comparative analysis of MRI from 34 primate species.* Cortex 118:275–291.
   DOI **10.1016/j.cortex.2019.04.011**.
 
-### 6. Cerebellar folding in mammals (eLife 2023)  — ⚠️ CURATOR'S CALL (Heuer-authored but histological; owner is co-author)
+### 6. Cerebellar folding in mammals (eLife 2023)  — 🚫 OUT OF SCOPE (owner decision, 2026-07-31; owner is co-author)
 - **Merge:** cortical-areas / a new cerebellar-surface slot (regional, not pooled with neocortical
   GI). **Role: primary** for cerebellar folding.
 - **Contributes:** comparative **cerebellar folding** (folial structure — the paper's result is that

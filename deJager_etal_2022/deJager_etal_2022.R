@@ -13,7 +13,7 @@
 #
 #   de Jager E, Prigge L, Amod N, Oettle A, Beaudet A (2022). Exploring the relationship
 #   between soft and hard tissues: the example of vertebral arteries and transverse
-#   foramina. J. Anat. 241(4), 447-452. doi:10.1111/joa.13681
+#   foramina. J. Anat. 241(2), 447-452. doi:10.1111/joa.13681
 #
 # Inputs
 #   deJager_etal_2022_calibration.csv   Table 2 coefficients, C2-C6 x {right,left,both}
@@ -24,15 +24,17 @@
 #   console PASS/FAIL summary
 #
 # WHY THERE IS NO REFIT
-#   House policy for Boyer/Seymour is refit-and-verify from raw values. That is IMPOSSIBLE
-#   here: the authors state the CT scans cannot be released, and supplementary Table S1 holds
-#   leave-one-out cross-validation metrics (RMSE/MAE/R2), not per-individual areas. The
-#   coefficients are therefore transcribed, and verified three ways instead:
+#   House policy for Boyer/Seymour is refit-and-verify from raw values. No per-individual
+#   areas are published here, so that is not possible (see the README for exactly what the
+#   authors do and do not say about data availability). The coefficients are therefore
+#   transcribed, and verified four ways instead:
 #     (a) text-vs-table  -- the three C2 equations quoted in the running text on p. 450 must
 #         reproduce the C2 rows of Table 2;
 #     (b) prediction-at-the-mean -- pushing each level's mean foramen area (Table 1) through
 #         its own equation must land near that level's mean artery area (Table 1);
-#     (c) schema and range-coherence assertions.
+#     (c) schema and range-coherence assertions;
+#     (d) published-summary reproduction -- the paper's stated "arteries occupy ~35% of the
+#         foramina" must fall out of the transcribed Table 1 unaided.
 #   (b) is a weak check by construction: a log10-log10 fit passes through the mean of the LOGS,
 #   so back-transforming yields a geometric-mean-like value that sits slightly BELOW the
 #   arithmetic mean printed in Table 1. A small negative bias is expected, not an error.
@@ -136,6 +138,31 @@ chk(isTRUE(all.equal(both$foramen_area_min_mm2, both$min_mm2)) &&
       isTRUE(all.equal(both$foramen_area_max_mm2, both$max_mm2)),
     "side='both' foramen ranges are not the outer envelope of the Table 1 ranges")
 
+## --- 4b. Verification (d): reproduce the paper's published ~35% -------------
+# Results and Discussion both state that the arteries occupy approximately 35% of the
+# foramina. Recomputing that unaided from the transcribed Table 1 is an independent test
+# that Table 1 was read correctly. NOTE: the Discussion says the figure was "computed
+# using the measurements for C1-C2", but C1-C2 alone gives ~29.8%; C1-C6 gives ~35.2%.
+# The printed level range is almost certainly a typo -- recorded, not corrected.
+
+lvl   <- subset(tab1, level != "all")
+ratio <- function(levels) {
+  d <- subset(lvl, level %in% levels)
+  100 * sum(d$mean_mm2[d$structure == "vertebral_artery"]) /
+        sum(d$mean_mm2[d$structure == "transverse_foramen"])
+}
+pct_C1C6 <- ratio(c("C1", "C2", "C3", "C4", "C5", "C6"))
+pct_C1C2 <- ratio(c("C1", "C2"))
+chk(abs(pct_C1C6 - 35) < 1,
+    sprintf("VA/TF area ratio over C1-C6 is %.1f%%, not the paper's ~35%%", pct_C1C6))
+
+# Paper-internal inconsistency, correctly transcribed and flagged here rather than fixed:
+# the printed overall LF mean (32.24) is not the mean of the six printed LF level means
+# (32.40). RA and LA reconcile exactly; RF differs only by rounding. The "all" row is the
+# paper's own summary line, so it is preserved as printed.
+lf_recomputed <- mean(subset(lvl, variable == "LF")$mean_mm2)
+lf_printed    <- subset(tab1, level == "all" & variable == "LF")$mean_mm2
+
 ## --- 5. Report --------------------------------------------------------------
 
 write.csv(chkdf, "deJager_etal_2022_calibration_check.csv", row.names = FALSE)
@@ -148,6 +175,11 @@ print(within(chkdf, {
   VA_predicted_mm2 <- round(VA_predicted_mm2, 2)
   pct_diff         <- round(pct_diff, 1)
 }), row.names = FALSE)
+
+cat(sprintf("\nVA area as %% of TF area: C1-C6 = %.1f%% (paper: ~35%%); C1-C2 = %.1f%%\n",
+            pct_C1C6, pct_C1C2))
+cat(sprintf("Paper-internal note: printed overall LF mean %.2f vs mean of level means %.2f\n",
+            lf_printed, lf_recomputed))
 
 if (length(fail)) {
   cat("\nFAIL:\n"); cat(paste0("  - ", fail, collapse = "\n"), "\n")

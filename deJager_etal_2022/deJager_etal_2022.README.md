@@ -7,7 +7,7 @@ originally planned fossil pathway.**
 
 de Jager E, Prigge L, Amod N, Oettlé A, Beaudet A (2022) *Exploring the relationship
 between soft and hard tissues: the example of vertebral arteries and transverse
-foramina.* **J. Anat.** 241(4), 447–452. doi:10.1111/joa.13681 (open access, CC BY-NC).
+foramina.* **J. Anat.** 241(2), 447–452. doi:10.1111/joa.13681 (open access, CC BY-NC).
 
 ## Why this paper is here
 
@@ -29,10 +29,12 @@ Seymour/Boyer: **calibrate on living animals**, **apply to a fossil**.
 
 ## What the paper actually provides
 
-**Sample.** 16 living humans (5 F, 11 M), 21–75 y, South African, post-contrast CT of
-the neck (Philips 128 Ingenuity / GE Optima 660), 0.5–1 mm slices. Cross-sectional areas
+**Sample.** 16 living humans (5 F, 11 M), 21–75 y, South African, scans collected for
+clinical indications at one Gauteng academic referral hospital; post-contrast CT of the
+neck (Philips 128 Ingenuity / GE Optima 660), 0.5–1 mm slices. Cross-sectional areas
 segmented in Avizo v9.0 on a best-fit plane through each foramen. Inter/intra-observer
-error < 5%. The authors call it a *pilot study*.
+differences < 5% — though that test was two observers remeasuring **one** individual, so
+it is not a general error bound. The authors call it a *pilot study*.
 
 **Model form.** Areas were log10-transformed (Shapiro–Wilk rejected normality), so:
 
@@ -57,11 +59,14 @@ predictor.
 ### C1 is excluded on purpose
 
 Table 2 prints C1 coefficients, but the correlation is **not significant** there
-(r = 0.38 right, 0.41 left, 0.23 both) and Table S1 reports much worse RMSE/MAE/R².
-The atlas foramen is large relative to the artery passing through it, plausibly because
-of C1's pivotal biomechanical role. The printed C1 rows are recorded here **for the
-record only** and are deliberately kept out of the machine-readable calibration so
-nothing downstream can pick them up:
+(r = 0.38 right, 0.41 left, 0.23 both). The paper reports R² "much lower for C1", and
+particularly high RMSE and MAE for the **C1 left side specifically** (Table S1). The atlas
+foramen is large relative to the artery passing through it, plausibly because of C1's
+pivotal biomechanical role. Note the authors do *not* forbid the C1 equations — they print
+them, and say that because atlas and axis are often recovered as fossils, "investigating
+the predictive power of such structures was essential". The printed C1 rows are recorded
+here **for the record only** and are deliberately kept out of the machine-readable
+calibration so nothing downstream can pick them up silently:
 
 | Level | Side | r | Intercept | Slope |
 |---|---|---|---|---|
@@ -69,20 +74,31 @@ nothing downstream can pick them up:
 | C1 | Left | 0.41 (n.s.) | −0.1194 | 0.7142 |
 | C1 | Both | 0.23 (n.s.) | 0.5013 | 0.3236 |
 
-### `side = "both"` means means, not pooling
+### `side = "both"` — probably means, not pooling
 
-Per the Table 2 caption, the combined equation is fitted on the **per-individual mean of
-left and right**, not on left and right stacked as separate observations. **n stays 16,
-it is not 32.** The authors offer it because their t-test found no significant
-left–right asymmetry.
+The Table 2 caption says the combined coefficients come from "considering the **mean
+values of both sides**". We read that as a regression on the per-individual mean of left
+and right, i.e. **n stays 16 rather than 32**. Flagging it as an **inference**: no n is
+printed for those rows, and the running text elsewhere calls them the formulas "combining
+both sides". If the distinction matters for your use (weighting, error propagation), treat
+it as unresolved. The authors offer a combined equation at all because their t-test found
+no significant left–right asymmetry.
 
 ## Verification performed
 
-Raw per-individual data are **not obtainable** — the authors state the CT scans cannot be
-released, and supplementary Table S1 holds leave-one-out cross-validation metrics
-(RMSE/MAE/R²), not areas. The house refit-and-verify policy used for Boyer/Seymour is
-therefore impossible. The transcription is instead checked four ways by
-`deJager_etal_2022.R`, all passing:
+No per-individual areas are published in the paper, so the house refit-and-verify policy
+used for Boyer/Seymour cannot be applied. Be precise about why, because it is narrower than
+it looks: the Data Availability Statement is **conditional and about the scans**, not the
+derived measurements — "*CT scans cannot be made publicly available as sharing these data
+requires ethical clearance from the Research Ethics committee.*" Supplementary **Table S1 has
+not been retrieved or inspected**; it is described in a leave-one-out cross-validation
+context and probably holds RMSE/MAE/R², but the sentence "we applied a leave-one-out
+cross-validation approach to the data set that contains value measurements from the two
+sides separately and together (Table S1)" can also be read as S1 containing the dataset.
+**Worth downloading S1 before concluding a refit is impossible**; if it holds per-individual
+areas, redo this folder as a proper refit.
+
+Pending that, the transcription is checked four ways by `deJager_etal_2022.R`, all passing:
 
 1. **Text vs table.** The three C2 equations quoted in the running text (p. 450)
    reproduce the C2 rows of Table 2 exactly.
@@ -95,7 +111,14 @@ therefore impossible. The transcription is instead checked four ways by
    ~35% of foramen area. Recomputing from the transcribed Table 1 over C1–C6 gives
    **35.2%** — an independent confirmation that Table 1 was transcribed correctly.
 
-Output: `deJager_etal_2022_calibration_check.csv`.
+Running the script writes the per-row report to `deJager_etal_2022_calibration_check.csv`.
+**That file is not in the folder yet** — R was not available in the environment where this
+was staged, so the four checks above were run as a line-by-line reimplementation in Python
+and the script was not executed. Run it once locally to produce the report and confirm.
+
+Separately, every number in both CSVs was re-derived from the PDF by an independent
+audit pass: all 45 Table 2 coefficients and all 84 Table 1 values match the print, signs
+and all.
 
 > **Transcription note.** The Discussion says the 35% figure was "computed using the
 > measurements for C1-C2". C1–C2 alone actually gives 29.8%; C1–C6 gives 35.2%. The
@@ -104,18 +127,26 @@ Output: `deJager_etal_2022_calibration_check.csv`.
 
 ## ⚠ Caveats — read before wiring this into the merge
 
-**1. The planned fossil specimen is the wrong vertebra.** The integration plan pointed at
-Beaudet et al. (2020), *The **atlas** of StW 573* — an atlas is **C1**, the one level
-where de Jager's calibration does not work. **de Jager 2022 × StW 573 is not a viable
-pathway.** Using it needs a fossil **C2–C6** with a preserved transverse foramen. Candidates
-cited by the paper itself: Sima de los Huesos (Gómez-Olivencia et al. 2007), Hadar A.L. 333
-(Lovejoy et al. 1982), plus the usual Neanderthal cervical material.
-
-**2. The authors restrict the equations to fossil *humans*.** Verbatim: "*Because our study
+**1. The authors restrict the equations to fossil *humans*.** Verbatim: "*Because our study
 is restricted to extant humans, at this stage we recommend that our equations are applied
-to fossil humans only.*" Applying them to an australopith is an extrapolation the paper
-does not endorse. Sima de los Huesos sits comfortably inside the authors' scope;
-StW 573 does not — a second reason that pathway is weak.
+to fossil humans only.*" This is the firmest constraint on the whole pathway, and it rules
+out australopiths.
+
+**2. The planned fossil specimen is also the wrong vertebra.** The integration plan pointed
+at Beaudet et al. (2020), *The **atlas** of StW 573* — an atlas is **C1**, the one level
+where the correlation is not significant. Two independent problems therefore hit that
+specimen at once: it is an australopith (caveat 1) *and* it is a C1. Note the paper does
+not itself forbid C1 use — it prints C1 coefficients and calls testing atlas/axis
+predictive power "essential" precisely because those elements fossilise well. So the C1
+point is a quality argument, not a prohibition; **caveat 1 is the reason StW 573 should be
+dropped.**
+
+A usable specimen needs to be fossil *Homo*, with a preserved **C2–C6** transverse foramen.
+The paper cites atlas/axis material (Lovejoy et al. 1982 on Hadar A.L. 333; Gómez-Olivencia
+et al. 2007 on the Sima de los Huesos upper cervical spine; Beaudet et al. 2020) as
+motivation, not as a candidate list — A.L. 333 is *A. afarensis* and so fails caveat 1, and
+Gómez-Olivencia is upper cervical, meaning only its **C2** qualifies. Sima de los Huesos is
+the most promising lead on both counts, but the specific element still has to be checked.
 
 **3. Three incompatible bone→lumen assumptions would collide.** The fraction of foramen
 area occupied by the artery is assumed differently in each component:
@@ -126,11 +157,15 @@ area occupied by the artery is assumed differently in each component:
 | `../__flow_comparison/` (`lumen radius = canal radius / 1.4`) | **~51%** | geometric rule of thumb |
 | Boyer & Harrington 2019, *Homo sapiens* | **63%** | their own estimate |
 
-Feeding a de Jager VA area into Boyer's BGU regression mixes a measured 35% with a fitted
-63% and will bias the result **downward** relative to the existing `Boyer_ACA_*` teams.
-This has to be a deliberate, documented choice, not a silent one. Note also that de Jager
-gives the VA **area directly**, so the `/1.4` lumen approximation is not needed for the
-vertebral artery at all.
+The three figures are not strictly commensurable — Boyer & Harrington's 63% is a
+lumen/canal ratio for *H. sapiens*, the `/1.4` is a radius rule of thumb (→ 51.0% by area),
+and de Jager's 35% is a ratio of sample *mean* areas pooled across C1–C6 — but they are
+doing the same job in the pipeline. Feeding a de Jager VA area into Boyer's BGU regression
+mixes a measured 35% with a fitted 63%, which **we expect to bias the result downward**
+relative to the existing `Boyer_ACA_*` teams (an inference, not something either paper
+states; it should be quantified, not assumed). This has to be a deliberate, documented
+choice, not a silent one. Note also that de Jager gives the VA **area directly**, so the
+`/1.4` lumen approximation is not needed for the vertebral artery at all.
 
 **4. Small, clinical, single-population sample.** n = 16 from one South African hospital,
 scans collected for clinical indications, ages 21–75. The authors call the data
@@ -145,10 +180,14 @@ deviations in the check file.
 
 Superseding the scaffold's original plan (which assumed StW 573):
 
-1. ~~Refit from raw areas~~ — impossible; coefficients transcribed and verified instead. **Done.**
-2. **Pick a usable fossil.** Stage a source folder for a hominin **C2–C6** with a measured
-   transverse-foramen area, preferably fossil *Homo*. Sima de los Huesos is the best fit to
-   the authors' stated scope.
+0. **Retrieve supplementary Table S1** and confirm it holds only cross-validation metrics.
+   If it turns out to contain per-individual areas, rebuild this folder as a genuine refit.
+1. ~~Refit from raw areas~~ — not possible from the paper itself; coefficients transcribed
+   and verified instead. **Done**, pending step 0.
+2. **Pick a usable fossil.** Stage a source folder for a fossil ***Homo*** **C2–C6** with a
+   measured transverse-foramen area. Sima de los Huesos is the most promising lead
+   (Gómez-Olivencia et al. 2007), but check which element actually preserves the foramen —
+   that material is upper cervical, so only C2 would qualify.
 3. Fossil transverse-foramen area → **VA area directly** (this calibration). No `/1.4` step.
 4. VA area → lumen radius → VA flow via the wall-shear-stress allometry and Poiseuille
    physics already in `../__flow_comparison/`.
@@ -168,10 +207,10 @@ Superseding the scaffold's original plan (which assumed StW 573):
 | `de Jager-2022-Exploring the relationship betwe.pdf` | staged | the paper |
 | `deJager_etal_2022_calibration.csv` | **done** | Table 2 coefficients, C2–C6 × 3 sides |
 | `deJager_etal_2022_Table1.csv` | **done** | Table 1 descriptive areas, C1–C6 |
-| `deJager_etal_2022_calibration_check.csv` | generated | internal-consistency report |
-| `deJager_etal_2022.R` | **runs** | validation + `estimate_VA_area()` accessor |
+| `deJager_etal_2022_calibration_check.csv` | **not yet generated** | written when you run the R script |
+| `deJager_etal_2022.R` | ready to run | validation + `estimate_VA_area()` accessor; not yet executed (no R where this was staged) |
 | `reference_tables/deJager_etal_2022_definitions.csv` | **done** | column definitions |
-| _(supplementary Table S1)_ | not staged | LOOCV metrics only; no raw areas, nothing to ingest |
+| _(supplementary Table S1)_ | **TODO** | not retrieved; assumed to be cross-validation metrics, unverified — see step 0 |
 
 There is no `_snapshot.xlsx` here: this is a digital-native transcription from the PDF
 with no upstream spreadsheet to snapshot.

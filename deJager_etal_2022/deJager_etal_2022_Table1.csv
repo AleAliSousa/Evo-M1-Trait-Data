@@ -7,8 +7,17 @@
 # reference distribution a fossil transverse-foramen measurement should be checked against before
 # any regression is applied. It is NOT itself a calibration.
 #
-# Note on ranges: Table 1 prints min-max ranges, not SDs; no per-individual data are published
-# (the authors state CT scans cannot be released), so dispersion cannot be recovered.
+# Note on ranges: Table 1 prints min-max ranges, not SDs, and no per-individual areas are
+# published, so dispersion cannot be recovered.
+#
+# TRANSCRIPTION NOTES (values kept exactly as printed; nothing corrected):
+#  - C5/RF min is printed as "17.0" (one decimal). Written here as 17.00 for column
+#    consistency. Numerically identical.
+#  - The printed overall LF mean (32.24) is NOT the mean of the six printed LF level means
+#    (32.40). RA (11.04) and LA (11.56) reconcile exactly and RF differs only by rounding,
+#    so the 0.16 gap is an inconsistency in the paper, not in this transcription. The
+#    level = "all" row is the paper's own summary line and is preserved as printed --
+#    do not recompute it.
 #
 # Columns:
 #   level         : cervical vertebra (C1..C6), or "all" for the paper's overall row

@@ -8,7 +8,8 @@
 #   applying one is a downstream choice, not something this file encodes.
 #
 # C1 IS OMITTED. At the atlas the foramen and artery areas are NOT significantly correlated
-#   (r = 0.38 right, 0.41 left, 0.23 both; all n.s.) and Table S1 reports much worse RMSE/MAE/R2.
+#   (r = 0.38 right, 0.41 left, 0.23 both; all n.s.), and the paper reports R2 "much lower for C1"
+#   with particularly high RMSE and MAE for the C1 LEFT side specifically (Table S1, not staged).
 #   The printed C1 coefficients are recorded in the README for completeness but are deliberately
 #   NOT machine-readable here, so nothing downstream can accidentally use the atlas.
 #
@@ -16,9 +17,10 @@
 #   Per-row n is NOT printed. n=16 is the Methods sample size; the significance pattern in Table 2
 #   is consistent with n=16 (r=0.54 significant, r=0.41 not), so 16 is recorded with that caveat.
 #
-# r2 IS INTENTIONALLY BLANK. Table 2 reports Pearson r only. The paper's R2 values live in
-#   supplementary Table S1 and are LEAVE-ONE-OUT CROSS-VALIDATED, so they are not r^2 and must not
-#   be conflated with it. Square `r` yourself if you want the in-sample fit.
+# r2 IS INTENTIONALLY BLANK. Table 2 reports Pearson r only. The paper's R2 values sit in
+#   supplementary Table S1, which is reported in a leave-one-out cross-validation context, so
+#   they should not be assumed equal to r^2. Table S1 is NOT staged in this folder and has not
+#   been inspected. Square `r` yourself if you want the in-sample fit.
 #
 # p_value IS BLANK: Table 2 flags significance with a footnote marker only; exact p is not printed.
 #
@@ -34,9 +36,12 @@
 #   p_value              : blank -- see note above
 #   n                    : 16 (Methods sample size; not printed per row)
 #   side                 : right | left | both
-#                          "both" = regression on the per-individual MEAN of the left and right
-#                          measurements (Table 2 caption), NOT left and right pooled as separate
-#                          observations. n stays 16 for "both"; it is not 32.
+#                          "both" = the Table 2 caption's "considering the mean values of both
+#                          sides". We read that as a regression on the per-individual MEAN of
+#                          left and right, so n stays 16 rather than 32. INFERENCE, not printed:
+#                          no n is given for these rows, and the running text calls them the
+#                          formulas "combining both sides". If the distinction matters to you
+#                          (e.g. for weighting), treat it as unresolved.
 #   significant          : yes/no, from the footnote-a marker in Table 2 (all rows here are yes)
 #   foramen_area_min_mm2 : lower end of the observed foramen-area range at this level/side (Table 1)
 #   foramen_area_max_mm2 : upper end of the observed foramen-area range at this level/side (Table 1)

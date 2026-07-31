@@ -1,0 +1,51 @@
+# de Jager et al. (2022) J. Anat. 241:447-452, Table 1, transcribed verbatim.
+# Cross-sectional areas (mm^2) of the right (RF) and left (LF) transverse foramina and of the
+# right (RA) and left (LA) vertebral arteries, in 16 living humans, C1-C6.
+# The final row (level = "all") is the paper's own overall summary line, not a recomputation.
+#
+# This is the descriptive companion to deJager_etal_2022_calibration.csv: it is the extant-human
+# reference distribution a fossil transverse-foramen measurement should be checked against before
+# any regression is applied. It is NOT itself a calibration.
+#
+# Note on ranges: Table 1 prints min-max ranges, not SDs; no per-individual data are published
+# (the authors state CT scans cannot be released), so dispersion cannot be recovered.
+#
+# Columns:
+#   level         : cervical vertebra (C1..C6), or "all" for the paper's overall row
+#   variable      : RF = right transverse foramen, LF = left transverse foramen,
+#                   RA = right vertebral artery, LA = left vertebral artery
+#   structure     : transverse_foramen | vertebral_artery
+#   side          : right | left
+#   mean_mm2      : arithmetic mean cross-sectional area as printed
+#   min_mm2       : range minimum as printed
+#   max_mm2       : range maximum as printed
+#   n             : 16 (Methods sample size; not printed per row)
+level,variable,structure,side,mean_mm2,min_mm2,max_mm2,n
+C1,RF,transverse_foramen,right,38.34,22.78,58.24,16
+C1,LF,transverse_foramen,left,39.33,24.62,51.34,16
+C1,RA,vertebral_artery,right,10.69,7.11,16.97,16
+C1,LA,vertebral_artery,left,10.90,5.19,16.19,16
+C2,RF,transverse_foramen,right,37.64,22.83,61.80,16
+C2,LF,transverse_foramen,left,38.39,26.07,57.10,16
+C2,RA,vertebral_artery,right,11.35,4.92,19.59,16
+C2,LA,vertebral_artery,left,12.82,7.95,21.31,16
+C3,RF,transverse_foramen,right,27.83,17.67,50.48,16
+C3,LF,transverse_foramen,left,27.70,15.47,36.79,16
+C3,RA,vertebral_artery,right,11.61,5.18,29.40,16
+C3,LA,vertebral_artery,left,10.59,7.03,16.09,16
+C4,RF,transverse_foramen,right,25.91,17.55,37.70,16
+C4,LF,transverse_foramen,left,26.84,13.40,44.03,16
+C4,RA,vertebral_artery,right,10.74,4.53,27.19,16
+C4,LA,vertebral_artery,left,10.60,4.62,19.78,16
+C5,RF,transverse_foramen,right,30.61,17.00,52.99,16
+C5,LF,transverse_foramen,left,30.14,18.04,62.71,16
+C5,RA,vertebral_artery,right,10.93,5.01,21.73,16
+C5,LA,vertebral_artery,left,12.06,6.84,26.44,16
+C6,RF,transverse_foramen,right,30.69,14.31,71.25,16
+C6,LF,transverse_foramen,left,32.02,14.62,58.16,16
+C6,RA,vertebral_artery,right,10.92,5.57,24.01,16
+C6,LA,vertebral_artery,left,12.39,6.22,22.93,16
+all,RF,transverse_foramen,right,31.83,14.31,71.25,16
+all,LF,transverse_foramen,left,32.24,13.40,62.71,16
+all,RA,vertebral_artery,right,11.04,4.53,29.40,16
+all,LA,vertebral_artery,left,11.56,4.62,26.44,16

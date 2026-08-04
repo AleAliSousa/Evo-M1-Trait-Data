@@ -21,7 +21,7 @@
 #
 # Units: all flow in mL/s; BM in g; ECV/brain volume in mL.
 
-suppressPackageStartupMessages({library(readr); library(dplyr); library(tidyr); library(stringr)})
+suppressPackageStartupMessages({library(readr); library(dplyr); library(tidyr); library(stringr); library(tibble)})  # tibble: deframe()
 
 ## ---- self-contained repo root (Rscript or RStudio; full repo or lone folder) ----
 .here <- local({

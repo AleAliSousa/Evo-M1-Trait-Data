@@ -184,8 +184,11 @@ taxonomy <- tryCatch(
   read_csv_gh("_keys/species_taxonomy.csv",
               file.path(data_dir, "species_taxonomy.csv")),
   error = function(e) NULL)
-tax_order <- if (!is.null(taxonomy)) setNames(taxonomy$Order, taxonomy$Species)
-             else setNames(character(0), character(0))
+tax_order <- if (!is.null(taxonomy)) {
+  setNames(taxonomy$Order, taxonomy$Species)
+} else {
+  setNames(character(0), character(0))
+}
 clade_choices <- c("All", if (!is.null(taxonomy))
   sort(unique(taxonomy$Order[nzchar(taxonomy$Order)])))
 

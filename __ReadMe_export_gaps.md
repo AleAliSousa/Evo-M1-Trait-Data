@@ -45,6 +45,6 @@ These 30 catalog rows have **no matching `.tsv` in `__Public/comparative-data/`*
 | Stephan et al. 1981 | Table VIII | `10.1159%2F000155964_TableVIII.tsv` |
 | Stephan et al. 1981 | Table IX | `10.1159%2F000155965_TableIX.tsv` |
 | Stephan et al. 1981 | Table X | `10.1159%2F000155966_TableX.tsv` |
-| Turner et al. 2016 | Table 1 | `10.1159%2F000446762_Table1.tsv` |
+| ~~Turner et al. 2016~~ | ~~Table 1~~ | ~~`10.1159%2F000446762_Table1.tsv`~~ — **exported 2026-07-31** (full build: snapshot → CSV → TSV, comparison 0 mismatches) |
 
 **Note on DeCasien & Higham 2019:** these four may be intentionally absent from `comparative-data` because DeCasien data is absorbed via the volume-merge pipeline rather than exported as standalone `.tsv`. The catalog item-name column was also fixed (was showing "BrainRegion"/"SocialSystem" twice due to an off-by-one; now derives correctly from each row's item number).

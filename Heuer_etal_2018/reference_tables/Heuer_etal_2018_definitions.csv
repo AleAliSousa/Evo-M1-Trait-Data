@@ -1,0 +1,14 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species_printed,species name exactly as printed in the SI table,,,,info,Primates,Heuer_etal_2018_SupplementaryData,printed name preserved (invariant 3),confirm species column header
+species_sci,accepted scientific binomial; harmonised via _keys,,,,info,Primates,Heuer_etal_2018_SupplementaryData,,
+Total_brain_net_volume,whole-brain volume (MRI),Brain,Vol.mm3,point,secondary,Primates,Heuer_etal_2018_SupplementaryData,MRI-derived; own team (Heuer_MRI); mm3,confirm header + units (x1000 if cm3/mL)
+Telencephalon,telencephalon volume (MRI),Telencephalon,Vol.mm3,point,secondary,Primates,Heuer_etal_2018_SupplementaryData,,confirm header
+Neocortex,neocortex / isocortex volume (MRI),Neocortex,Vol.mm3,point,secondary,Primates,Heuer_etal_2018_SupplementaryData,,confirm header
+Cerebellum,cerebellum volume (MRI),Cerebellum,Vol.mm3,point,secondary,Primates,Heuer_etal_2018_SupplementaryData,,confirm header
+Diencephalon,diencephalon volume (MRI),Diencephalon,Vol.mm3,point,secondary,Primates,Heuer_etal_2018_SupplementaryData,,confirm header
+Mesencephalon,mesencephalon volume (MRI),Mesencephalon,Vol.mm3,point,secondary,Primates,Heuer_etal_2018_SupplementaryData,,confirm header
+Hippocampus,hippocampus volume (MRI),Hippocampus,Vol.mm3,point,secondary,Primates,Heuer_etal_2018_SupplementaryData,,confirm header
+Amygdala,amygdala volume (MRI),Amygdala,Vol.mm3,point,secondary,Primates,Heuer_etal_2018_SupplementaryData,,confirm header
+Striatum,striatum volume (MRI),Striatum,Vol.mm3,point,secondary,Primates,Heuer_etal_2018_SupplementaryData,,confirm header
+remaining_structures_TODO,the rest of the 16 SI structures,,,,info,Primates,Heuer_etal_2018_SupplementaryData,complete once SI headers are confirmed,list the exact 16 structures
+Method,9.4 T structural MRI of Primate Brain Bank specimens; manual/semi-automated segmentation; per-species volumes,,,,method,Primates,Heuer_etal_2018_SupplementaryData,39 species / 46 brains + 7 donated; ~20 species new to the volumetric literature,MRI modality — resolve vs histological volumes by team rule (do NOT average)

@@ -27,7 +27,9 @@ setwd(dirname(.sp))
 
 legend <- read.csv("Kochiyama_etal_2018_Figure3legend.csv", check.names = FALSE)
 t3     <- read.csv("Kochiyama_etal_2018_ExtendedDataTable3.csv", check.names = FALSE)
-fig3   <- read.csv("Kochiyama_etal_2018_Figure3.csv", check.names = FALSE)
+## Figure 3 was split into separate 3A / 3B items (see Kochiyama_etal_2018_ReadMe_split.md);
+## the NT_rel / EH_rel / MH_rel bar-graph values this script needs now live in Figure3A.
+fig3   <- read.csv("Kochiyama_etal_2018_Figure3A.csv", check.names = FALSE)
 ef4    <- read.csv("Kochiyama_etal_2018_ExtendedDataFigure4.csv", check.names = FALSE)
 
 cv <- setNames(legend$MH_sd_Vol.cc / legend$MH_mean_Vol.cc, legend$Region_code)

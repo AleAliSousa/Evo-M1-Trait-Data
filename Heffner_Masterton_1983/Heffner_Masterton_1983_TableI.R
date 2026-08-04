@@ -26,6 +26,7 @@ suppressPackageStartupMessages({
   library(readxl)
   library(dplyr)
   library(stringr)
+  library(tidyr)      # replace_na()
 })
 
 ## ---- paths: self-contained (Rscript or RStudio; full repo or lone folder) ----

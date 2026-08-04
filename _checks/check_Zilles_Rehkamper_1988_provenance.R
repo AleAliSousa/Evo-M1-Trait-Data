@@ -16,7 +16,7 @@
 # Run from the repo root (Evo-M1-Trait-Data) or set `csv_dir`.
 # Output: _checks/Zilles_Rehkamper_1988_provenance_report.csv
 
-suppressPackageStartupMessages({ library(readr); library(dplyr); library(stringr); library(purrr) })
+suppressPackageStartupMessages({ library(readr); library(dplyr); library(stringr); library(purrr); library(tidyr) })  # tidyr: replace_na()
 ## Set working directory to this script folder
 setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks")
 repo_root    <- "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data"

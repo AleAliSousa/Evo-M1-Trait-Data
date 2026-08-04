@@ -10,11 +10,19 @@ following the same `standardized_term` + compile pattern as `__merging_volumes`,
 contour to the superficially exposed (outer) contour, measured on coronal sections. GI = 1 means no
 folding; higher = more folded. This merge pools **only** measures computed on that definition.
 
-**Deliberately excluded:** the Mota & Herculano-Houzel **folding index (FI)** (`Mota_etal_2015`,
-`Mota_etal_2019`). FI is a different construct (surface-area/thickness scaling), not interchangeable
-with GI, and is never pooled with it. Those tables are built to house convention in their own
-folders but do not feed this merge. Their exposed-surface-area columns belong with cortical-surface
-data (`__merging_cortical_areas`), not here.
+**Deliberately excluded (kept completely separate — never merged):**
+
+- The Mota & Herculano-Houzel **folding index (FI)** (`Mota_etal_2015`, `Mota_etal_2019`). FI is a
+  different construct (surface-area/thickness scaling), not interchangeable with GI. Their
+  exposed-surface-area columns belong with cortical-surface data (`__merging_cortical_areas`), not here.
+- **Heuer et al. 2019 MRI folding** (`Heuer_etal_2019/`). A **3-D** surface-vs-convex-hull gyrification
+  index plus folding length / wavelength / depth — a different method from the **2-D** Zilles
+  coronal-contour GI (the paper presents it as an alternative to Zilles). **Owner decision
+  (2026-07-31): the two kinds of gyrification data are kept completely separate and never combined.**
+  Heuer's data is useful but is housed in its own folder and does not feed this merge; its surface-area
+  columns would belong with `__merging_cortical_areas` if ever merged.
+
+These tables are built to house convention in their own folders but do not feed this merge.
 
 ## Traits merged (standardized terms)
 

@@ -53,8 +53,12 @@ short forms; Young the correct ones), and Young's two *Papio* homotypic-synonym 
   Young 2013b (which is excluded from merges) → **included here** as the merged surface source for it.
   New species it adds: *Macaca radiata* (case 12‑58, two hemispheres averaged), *Macaca nemestrina*
   (11‑47), *Macaca mulatta* (10‑50, a different specimen from Finlay's macaque → both kept, flagged).
-  cm² → mm² ×100. (Turner's own folder is only partially built — no snapshot/TSV yet; this merge uses
-  the curated surface extract. Full Turner build is a separate TODO.)
+  cm² → mm² ×100. (Turner's folder is now **fully built** — snapshot, `.R`, CSV, public TSV
+  `10.1159%2F000446762_Table1.tsv`, definitions, README. This merge still reads the curated
+  `turner_2016_surface.csv`; the build's comparison script audits the snapshot against that very file
+  and reports **6/6 cases matched, 0 value mismatches** with `dedupe_status` agreeing, so re-pointing
+  the merge at the TSV — which carries `case_number`, `hemisphere` and `dedupe_status` itself — would
+  change no merged value. Left as a deliberate follow-up rather than an unaudited swap.)
 ² Krubitzer & Kaas 1990 Table 1 reports **relative %** of a fixed 8-field visual scheme
   (17,18,DL,DM,DI,FST,MT,MST), not absolute areas and with no surface area. Its "8" is a
   method-fixed field count, **not comparable** to Finlay's visual-area counts (19–23) — averaging the

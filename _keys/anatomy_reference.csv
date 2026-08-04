@@ -188,3 +188,7 @@ FrontalGrey,brain_structure_volume,Volume.cm3; ratio
 CortexGreyRest,brain_structure_volume,Volume.cm3
 V1,brain_structure_volume,Volume.cm3; Area.cm2; Length.mm
 LGN,brain_structure_volume,Volume.cm3
+Nucleus_olivaris_inferior_principalis,brain_structure_volume,Volume_mm3
+Nucleus_olivaris_inferior_accessorius_medialis,brain_structure_volume,Volume_mm3
+Nucleus_olivaris_inferior_accessorius_dorsalis,brain_structure_volume,Volume_mm3
+Nucleus_olivaris_inferior_accessorius,brain_structure_volume,Volume_mm3

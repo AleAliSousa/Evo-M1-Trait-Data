@@ -144,13 +144,18 @@ if (DO_PUSH) {
   # -- guard 1: only push from the branch the live app actually reads ----------
   branch <- git("rev-parse", "--abbrev-ref", "HEAD")[1]
   if (!identical(branch, PUSH_BRANCH)) {
-    if (!ANY_BRANCH)
-      .die("You are on branch '", branch, "', not '", PUSH_BRANCH, "'.\n",
-           "    The live app reads its data from '", PUSH_BRANCH, "', so pushing ",
-           "here would not update it.\n",
-           "    Either switch branches:   git checkout ", PUSH_BRANCH, "\n",
-           "    or skip this step:        --no-push\n",
-           "    or push here on purpose:  --any-branch")
+    if (!ANY_BRANCH) {
+      # deliberate, expected abort — print guidance, then stop at top level so
+      # R does not tack a "Called from:" traceback onto a non-error
+      message("\n    ! You are on branch '", branch, "', not '", PUSH_BRANCH, "'.")
+      message("      The live app reads its data from '", PUSH_BRANCH,
+              "', so pushing here would not update it.")
+      message("      Nothing was committed, pushed or deployed.\n")
+      message("      Switch branches:        git checkout ", PUSH_BRANCH)
+      message("      or skip the push:       --no-push")
+      message("      or push here on purpose: --any-branch\n")
+      stop("Not on ", PUSH_BRANCH, ".", call. = FALSE)
+    }
     .warn("Pushing to '", branch, "', not '", PUSH_BRANCH,
           "' (--any-branch). The LIVE app will not change.")
   }

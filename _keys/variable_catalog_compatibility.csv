@@ -7,14 +7,14 @@ Neocortex | count (number),Neocortex,count (number),26,8,__merging_cortical_area
 Body_weight | mass,Body_weight,mass,8,8,Bauernfeind_etal_2013; Frahm_etal_1997; Frahm_etal_1998; Frahm_Zilles_1994; Matano_etal_1985_a; Matano_etal_1985_b; Stephan_etal_1981; Stephan_etal_1988,"Insectivora & Primates; Insectivora, Scandentia & Primates; Primates; Rodentia & Insectivora",primary; secondary,TRUE
 Neocortex | volume,Neocortex,volume,18,7,Changizi__2001; deSousa_etal_2010; Frahm_etal_1982; Frahm_etal_1997; Stephan_etal_1970; Stephan_etal_1981; Zilles__Rehkamper_1988,"Insectivora & Primates; Insectivora, Scandentia & Primates; Mammals (monotreme to human); Primates; Primates (Pongo); Rodentia & Insectivora",primary,TRUE
 Body | mass,Body,mass,8,7,Burger_etal_2019; Granatosky__2018; Heffner_Masterton_1975; Heffner_Masterton_1983; Heldstab_etal_2016; Wilman_etal_2014; Wimberly_etal_2021,mammals; Mammals; Primates,primary; secondary,TRUE
+Neocortex | surface area,Neocortex,surface area,20,6,__merging_cortical_areas; Collins_etal_2010; Collins_etal_2016; Finlay_etal_2006; Turner_etal_2016; Young_etal_2013_b,Mammals; Mammals (marsupial to primate); Primates,info; method; primary; secondary,TRUE
 Hippocampus | volume,Hippocampus,volume,12,6,Barger_etal_2014; Frahm_etal_1997; Frahm_Zilles_1994; Stephan_etal_1970; Stephan_etal_1981; Zilles__Rehkamper_1988,"Apes & humans; Insectivora & Primates; Insectivora, Scandentia & Primates; Primates (Pongo); Rodentia & Insectivora",primary,TRUE
 (structure-agnostic; see data columns) | density (per mass/volume),(structure-agnostic; see data columns),density (per mass/volume),10,6,AvelinodeSouza_etal_2025; Burish_etal_2010; DosSantos_etal_2017; DosSantos_etal_2020; HerculanoHouzel_etal_2015; JardimMesseder_etal_2017,Carnivores & other companion mammals; Cetaceans & other placental mammals; Mammals; Marsupials; Primates (+ other mammals),both; primary; review,TRUE
+WholeBrain | mass,WholeBrain,mass,7,6,Collins_etal_2016; deSousa_etal_2010; deSousa_etal_2013; Finlay_etal_2006; Turner_etal_2016; Young_etal_2013_b,Mammals (marsupial to primate); Primates,info; primary; secondary,TRUE
 Brain_weight | mass,Brain_weight,mass,6,6,Bauernfeind_etal_2013; deSousa_etal_2013; Frahm_etal_1997; Frahm_etal_1998; Stephan_etal_1981; Stephan_etal_1988,"Insectivora & Primates; Insectivora, Scandentia & Primates; Primates; Rodentia & Insectivora",primary; secondary,TRUE
-Neocortex | surface area,Neocortex,surface area,14,5,__merging_cortical_areas; Collins_etal_2010; Collins_etal_2016; Finlay_etal_2006; Young_etal_2013_b,Mammals; Mammals (marsupial to primate); Primates,primary; secondary,TRUE
 Striatum | volume,Striatum,volume,10,5,Barger_etal_2014; Frahm_etal_1997; Stephan_etal_1970; Stephan_etal_1981; Zilles__Rehkamper_1988,"Apes & humans; Insectivora, Scandentia & Primates; Primates (Pongo); Rodentia & Insectivora",primary,TRUE
 (structure-agnostic; see data columns) | ratio (per neuron),(structure-agnostic; see data columns),ratio (per neuron),5,5,AvelinodeSouza_etal_2025; DosSantos_etal_2017; DosSantos_etal_2020; HerculanoHouzel_etal_2015; JardimMesseder_etal_2017,Carnivores & other companion mammals; Cetaceans & other placental mammals; Mammals; Marsupials,both; primary,TRUE
 Corpus_geniculatum_laterale | volume,Corpus_geniculatum_laterale,volume,5,5,deSousa_etal_2010; deSousa_etal_2013; Frahm_etal_1998; Stephan_etal_1981; Stephan_etal_1984,"Insectivora & Primates; Insectivora, Scandentia & Primates",primary,TRUE
-WholeBrain | mass,WholeBrain,mass,5,5,Collins_etal_2016; deSousa_etal_2010; deSousa_etal_2013; Finlay_etal_2006; Young_etal_2013_b,Mammals (marsupial to primate); Primates,info; primary,TRUE
 Amygdala | volume,Amygdala,volume,10,4,Frahm_etal_1997; Stephan_etal_1981; Stephan_etal_1987; Zilles__Rehkamper_1988,"Insectivora & Primates; Insectivora–Primates (incl. Homo); Insectivora, Scandentia & Primates; Primates (Pongo); Rodentia & Insectivora",primary,TRUE
 Septum | volume,Septum,volume,8,4,Frahm_etal_1997; Stephan_etal_1970; Stephan_etal_1981; Zilles__Rehkamper_1988,"Insectivora, Scandentia & Primates; Primates (Pongo); Rodentia & Insectivora",primary,TRUE
 Brain | mass,Brain,mass,5,4,Brodmann__1913; Burger_etal_2019; Lewitus_etal_2013; Weaver_2001,"Mammalia (all orders); mammals; Mammals; monkeys, apes, fossil hominids, humans",primary; secondary,TRUE
@@ -25,6 +25,7 @@ Telencephalon | volume,Telencephalon,volume,4,4,Frahm_etal_1997; Stephan_etal_19
 Total_brain_net_volume | volume,Total_brain_net_volume,volume,4,4,Bauernfeind_etal_2013; deSousa_etal_2010; Stephan_etal_1970; Stephan_etal_1981,"Insectivora & Primates; Insectivora, Scandentia & Primates; Primates",primary,TRUE
 (structure-agnostic; see data columns) | volume,(structure-agnostic; see data columns),volume,11,3,Collins_etal_2016; Kochiyama_etal_2018; Kverkova_etal_2018,Homo neanderthalensis; Homo sapiens; Homo sapiens (early); Primates; Rodents (African mole-rats +),info; primary; secondary,TRUE
 (structure-agnostic; see data columns) | percentage (relative),(structure-agnostic; see data columns),percentage (relative),9,3,Balzeau_etal_2012; Collins_etal_2016; HerculanoHouzel_etal_2013,Homo; Mus musculus; Primates,secondary,TRUE
+(structure-agnostic; see data columns) | surface area,(structure-agnostic; see data columns),surface area,6,3,Balzeau_etal_2012; deJager_etal_2022; Krubitzer_Kaas_1990,Homo; Homo sapiens; Primates,primary; secondary,TRUE
 Mesencephalon | volume,Mesencephalon,volume,6,3,Stephan_etal_1970; Stephan_etal_1981; Zilles__Rehkamper_1988,"Insectivora, Scandentia & Primates; Primates (Pongo)",primary,TRUE
 LGN | volume,LGN,volume,5,3,Bush_Allman_2004_b; deSousa_etal_2010; deSousa_etal_2013,Primates,primary,TRUE
 (structure-agnostic; see data columns) | proportion (of CNS/body/brain),(structure-agnostic; see data columns),proportion (of CNS/body/brain),4,3,Burish_etal_2010; HerculanoHouzel_etal_2015; Kverkova_etal_2018,Mammals; Primates (+ other mammals); Rodents (African mole-rats +),both; primary; review,TRUE
@@ -47,7 +48,6 @@ LateralNucleus | volume,LateralNucleus,volume,4,2,Barger_etal_2007; Barger_etal_
 Locomotion | category,Locomotion,category,4,2,Granatosky__2018; Wimberly_etal_2021,mammals,primary; secondary,TRUE
 Neocortex | percentage (relative),Neocortex,percentage (relative),4,2,Collins_etal_2016; Young_etal_2013_b,Primates,primary; secondary,TRUE
 Neocortex | size index (allometric),Neocortex,size index (allometric),4,2,Lewitus_etal_2013; Lewitus_etal_2014,Mammals,primary; secondary,TRUE
-(structure-agnostic; see data columns) | surface area,(structure-agnostic; see data columns),surface area,3,2,Balzeau_etal_2012; Krubitzer_Kaas_1990,Homo; Primates,primary; secondary,TRUE
 Behaviour | count (number),Behaviour,count (number),3,2,ManyPrimates__2022; Schniter_Penaherrera-Aguirre_2026,Primates,primary,TRUE
 OlfactoryBulb | volume,OlfactoryBulb,volume,3,2,Baron_etal_1983; Baron_etal_1987,"Insectivora, Scandentia & Primates",primary,TRUE
 VisualCortex | density (per mass/volume),VisualCortex,density (per mass/volume),3,2,Lewitus_etal_2013; Lewitus_etal_2014,Mammals,primary; secondary,TRUE
@@ -90,6 +90,7 @@ cortical area | count (number),cortical area,count (number),4,1,HerculanoHouzel_
 Activity | binary,Activity,binary,3,1,Wilman_etal_2014,mammals,info,FALSE
 BasolateralDivision | volume,BasolateralDivision,volume,3,1,Barger_etal_2007,Apes & humans,primary,FALSE
 Region | CMRgl,Region,CMRgl,3,1,Heiss_etal_2004,Homo sapiens,primary; secondary,FALSE
+Transverse foramen | surface area,Transverse foramen,surface area,3,1,deJager_etal_2022,Homo sapiens,method; primary,FALSE
 V1_AreaStriata | volume,V1_AreaStriata,volume,3,1,deSousa_etal_2010,Primates,primary,FALSE
 (per Region) | CBF,(per Region),CBF,2,1,Kaufman__2004,Mammals,primary,FALSE
 (per Region) | CMRO2,(per Region),CMRO2,2,1,Kaufman__2004,Mammals,primary,FALSE
@@ -143,6 +144,7 @@ amygdala lateral nucleus | count (number),amygdala lateral nucleus,count (number
 fronto_insular_cortex | volume,fronto_insular_cortex,volume,2,1,Bauernfeind_etal_2013,Primates,primary,FALSE
 region | ratio,region,ratio,2,1,Johansen_etal_2024,Homo sapiens,derived; info,FALSE
 (structure-agnostic; see data columns) | ActivityPattern,(structure-agnostic; see data columns),ActivityPattern,1,1,Bush_Allman_2004_a,,secondary,FALSE
+(structure-agnostic; see data columns) | Age.years,(structure-agnostic; see data columns),Age.years,1,1,Turner_etal_2016,Primates,info,FALSE
 (structure-agnostic; see data columns) | CellType,(structure-agnostic; see data columns),CellType,1,1,BarbeitoAndres_etal_2019,,primary,FALSE
 (structure-agnostic; see data columns) | CommonName,(structure-agnostic; see data columns),CommonName,1,1,Ashwell__2020,Mammalia,primary,FALSE
 (structure-agnostic; see data columns) | Condition,(structure-agnostic; see data columns),Condition,1,1,BarbeitoAndres_etal_2019,,primary,FALSE
@@ -290,6 +292,7 @@ V1_AreaStriata | count (number),V1_AreaStriata,count (number),1,1,deSousa_etal_2
 Ventral_pons | volume,Ventral_pons,volume,1,1,Matano_etal_1985_b,"Insectivora, Scandentia & Primates",primary,FALSE
 Ventricle | volume,Ventricle,volume,1,1,Lewitus_etal_2013,Mammals,secondary,FALSE
 Ventricles | volume,Ventricles,volume,1,1,Stephan_etal_1981,"Insectivora, Scandentia & Primates",primary,FALSE
+Vertebral artery | surface area,Vertebral artery,surface area,1,1,deJager_etal_2022,Homo sapiens,primary,FALSE
 VestibularComplex | volume,VestibularComplex,volume,1,1,Baron_etal_1988,"Insectivora, Scandentia & Primates",primary,FALSE
 VestibularNucleusDescending | volume,VestibularNucleusDescending,volume,1,1,Baron_etal_1988,"Insectivora, Scandentia & Primates",primary,FALSE
 VestibularNucleusLateral | volume,VestibularNucleusLateral,volume,1,1,Baron_etal_1988,"Insectivora, Scandentia & Primates",primary,FALSE

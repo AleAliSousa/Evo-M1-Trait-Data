@@ -1,0 +1,19 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,accepted species binomial (join key),,Species,,primary,Primates,Turner_etal_2016_Table1,resolved from _keys/Stephan/species_key.csv token Turner2016,
+Species_Turner2016,species name exactly as printed in Table 1,,,,info,Primates,Turner_etal_2016_Table1,abbreviated genus (M. radiata) and the baboon codes PHX / PHA,PHA = P. hamadryas anubis; PHX = P. hamadryas anubis/cyncephalus hybrid
+case,case identifier as printed,,,,info,Primates,Turner_etal_2016_Table1,case 12-58 is printed once per hemisphere (12-58 LH / 12-58 RH),
+case_number,case identifier with the hemisphere suffix removed,,,,info,Primates,Turner_etal_2016_Table1,"joins to Collins/Young case ids; those files zero-pad (09-27 = printed 9-27)",
+hemisphere,hemisphere measured,,,,info,Primates,Turner_etal_2016_Table1,LH or RH; one hemisphere per row,
+age_years,age of the animal,,Age.years,,info,Primates,Turner_etal_2016_Table1,,
+sex,sex of the animal,,,,info,Primates,Turner_etal_2016_Table1,M or F,
+brain_weight_g,whole brain mass as printed,WholeBrain,Mass.g,,info,Primates,Turner_etal_2016_Table1,printed value retained; x1000 for the project unit,
+Brain_Mass.mg,whole brain mass in project units,WholeBrain,Mass.mg,,secondary,Primates,Turner_etal_2016_Table1,= brain_weight_g x 1000,
+brain_surface_area_cm2,brain (neocortical sheet) surface area as printed,Neocortex,Area.cm2,,info,Primates,Turner_etal_2016_Table1,printed value retained; x100 for the project unit,
+CorticalSurface_Area.mm2,total unfolded neocortical sheet surface area per hemisphere,Neocortex,Area.mm2,,primary,Primates,Turner_etal_2016_Table1,"= brain_surface_area_cm2 x 100; the trait merged in __merging_cortical_areas",neocortex manually flattened; piece surfaces measured in ImageJ
+taxon_note,printed footnote expanding the baboon codes,,,,note,Primates,Turner_etal_2016_Table1,"PHX is a hybrid; both baboons resolve to Papio cynocephalus anubis, as in Collins 2010 / Young 2013",
+case_note,printed footnote on incomplete cases,,,,note,Primates,Turner_etal_2016_Table1,12-58 frontal eye field and surrounding areas missing; 10-50 A-P coordinates not obtained,
+specimen_overlap,specimen relationship to other built tables,,,,info,Primates,Turner_etal_2016_Table1,"9-27 = Collins 2010 case 09-27; 11-31 also in Young 2013b; 10-50 differs from Finlay's macaque; 12-58 = one animal, two hemispheres",
+dedupe_status,whether the row may enter a merge or is a known duplicate specimen,,,,method,Primates,Turner_etal_2016_Table1,include / exclude_duplicate_Collins2010 (case-level dedupe used by __merging_cortical_areas),
+source,source identifier,,Source,,info,Primates,Turner_etal_2016_Table1,,
+Method:units,cm2 -> mm2 x100 (surface); g -> mg x1000 (brain mass); printed values kept alongside,,,,method,Primates,Turner_etal_2016_Table1,project units per __HOWTO_build_a_dataset_file.md §6,
+Method:surface,total unfolded cortical sheet per hemisphere (buried/sulcal cortex included) - NOT the exposed/pial surface,Neocortex,Area.mm2,,method,Primates,Turner_etal_2016_Table1,"same basis as Collins 2010 and Finlay 2006; not interchangeable with Mota & Herculano-Houzel AG",flattened neocortex separated from white matter; ImageJ

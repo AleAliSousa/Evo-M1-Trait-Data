@@ -1,0 +1,7 @@
+Species,case,hemisphere,brain_surface_cm2,CorticalSurface_Area.mm2,dedupe_status,note
+Macaca radiata,12-58,LH,100.6,10060,include,"one specimen, two hemispheres — averaged with RH to a one-hemisphere value"
+Macaca radiata,12-58,RH,103.4,10340,include,"one specimen, two hemispheres — averaged with LH"
+Macaca nemestrina,11-47,RH,151.8,15180,include,
+Macaca mulatta,10-50,LH,152.3,15230,include,"different specimen from Finlay's macaque — both kept, flagged"
+Papio cynocephalus anubis,09-27,RH,186,18600,exclude_duplicate_Collins2010,"same specimen as Collins 2010 (cortical surface 18577 mm2); do not double-count"
+Papio cynocephalus anubis,11-31,RH,234,23400,include,"normal baboon; also appears in Young 2013b (excluded from merges) — Turner is the merged surface source for it"

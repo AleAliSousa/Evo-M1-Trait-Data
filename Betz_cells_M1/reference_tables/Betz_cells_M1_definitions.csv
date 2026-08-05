@@ -1,8 +1,0 @@
-Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
-species_printed,species name exactly as printed in the primary source,,,,info,Mammals,Betz_cells_M1_compilation,printed name preserved (invariant 3),
-species_sci,accepted scientific binomial; harmonised via _keys,,,,info,Mammals,Betz_cells_M1_compilation,,
-Betz_density_M1,Betz-cell density in M1 layer 5,M1 (regional),Density,point,secondary,Mammals,Betz_cells_M1_compilation,per mm2 or per mm3 — state unit per source; regional M1 — never pool with whole-cortex counts,confirm per source
-Betz_soma_size,mean Betz soma cross-sectional area or diameter,M1 (regional),Size,mean,secondary,Mammals,Betz_cells_M1_compilation,unit per source (um2 or um),confirm per source
-Betz_proportion_L5,Betz as a fraction of layer-5 pyramidal / pyramidal-tract neurons,M1 (regional),Proportion,point,secondary,Mammals,Betz_cells_M1_compilation,where reported,confirm per source
-method,counting method (stereology vs 2-D counts) — not interchangeable,,,,method,Mammals,Betz_cells_M1_compilation,flag per datum as the cellcount lineage does,
-Source,the primary paper the datum was taken from,,,,info,Mammals,Betz_cells_M1_compilation,review entry point: J Comp Neurol 2024 (10.1002/cne.25567),this is a compilation of multiple primary studies

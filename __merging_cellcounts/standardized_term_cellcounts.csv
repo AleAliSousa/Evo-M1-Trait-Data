@@ -206,6 +206,102 @@ Cx_I/C,DosSantos_etal_2020_unpublished,CerebralCortex_I.p.C
 Hp_I/C,DosSantos_etal_2020_unpublished,Hippocampus_I.p.C
 RoB_I/C,DosSantos_etal_2020_unpublished,RoB_I.p.C
 Species,DosSantos_etal_2020_unpublished,Species
+Species,Gabi_etal_2016_Table1,Species
+Prefrontal neurons,Gabi_etal_2016_Table1,PrefrontalCortex_N.n
+Prefrontal other cells,Gabi_etal_2016_Table1,PrefrontalCortex_O.n
+Rest-of-cortex neurons,Gabi_etal_2016_Table1,RestOfCortex_N.n
+Rest-of-cortex other cells,Gabi_etal_2016_Table1,RestOfCortex_O.n
+Species,HerculanoHouzel_etal_2013_Table1-a,Species
+Infralimbic_N.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_Infralimbic_N.n
+Infralimbic_O.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_Infralimbic_O.n
+Infralimbic_N.p.mm2,HerculanoHouzel_etal_2013_Table1-a,Cortex_Infralimbic_N.p.mm2
+Infralimbic_N.p.mm3,HerculanoHouzel_etal_2013_Table1-a,Cortex_Infralimbic_N.p.mm3
+Infralimbic_Thickness.mm,HerculanoHouzel_etal_2013_Table1-a,Cortex_Infralimbic_Thickness.mm
+Cingulate_N.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_Cingulate_N.n
+Cingulate_O.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_Cingulate_O.n
+Cingulate_N.p.mm2,HerculanoHouzel_etal_2013_Table1-a,Cortex_Cingulate_N.p.mm2
+Cingulate_N.p.mm3,HerculanoHouzel_etal_2013_Table1-a,Cortex_Cingulate_N.p.mm3
+Cingulate_Thickness.mm,HerculanoHouzel_etal_2013_Table1-a,Cortex_Cingulate_Thickness.mm
+Retrosplenial_N.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_Retrosplenial_N.n
+Retrosplenial_O.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_Retrosplenial_O.n
+Retrosplenial_N.p.mm2,HerculanoHouzel_etal_2013_Table1-a,Cortex_Retrosplenial_N.p.mm2
+Retrosplenial_N.p.mm3,HerculanoHouzel_etal_2013_Table1-a,Cortex_Retrosplenial_N.p.mm3
+Retrosplenial_Thickness.mm,HerculanoHouzel_etal_2013_Table1-a,Cortex_Retrosplenial_Thickness.mm
+Parietal_N.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_Parietal_N.n
+Parietal_O.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_Parietal_O.n
+Parietal_N.p.mm2,HerculanoHouzel_etal_2013_Table1-a,Cortex_Parietal_N.p.mm2
+Parietal_N.p.mm3,HerculanoHouzel_etal_2013_Table1-a,Cortex_Parietal_N.p.mm3
+Parietal_Thickness.mm,HerculanoHouzel_etal_2013_Table1-a,Cortex_Parietal_Thickness.mm
+Motor_N.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_Motor_N.n
+Motor_O.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_Motor_O.n
+Motor_N.p.mm2,HerculanoHouzel_etal_2013_Table1-a,Cortex_Motor_N.p.mm2
+Motor_N.p.mm3,HerculanoHouzel_etal_2013_Table1-a,Cortex_Motor_N.p.mm3
+Motor_Thickness.mm,HerculanoHouzel_etal_2013_Table1-a,Cortex_Motor_Thickness.mm
+Frontal_N.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_Frontal_N.n
+Frontal_O.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_Frontal_O.n
+Frontal_N.p.mm2,HerculanoHouzel_etal_2013_Table1-a,Cortex_Frontal_N.p.mm2
+Frontal_N.p.mm3,HerculanoHouzel_etal_2013_Table1-a,Cortex_Frontal_N.p.mm3
+Frontal_Thickness.mm,HerculanoHouzel_etal_2013_Table1-a,Cortex_Frontal_Thickness.mm
+V2M_N.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_V2M_N.n
+V2M_O.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_V2M_O.n
+V2M_N.p.mm2,HerculanoHouzel_etal_2013_Table1-a,Cortex_V2M_N.p.mm2
+V2M_N.p.mm3,HerculanoHouzel_etal_2013_Table1-a,Cortex_V2M_N.p.mm3
+V2M_Thickness.mm,HerculanoHouzel_etal_2013_Table1-a,Cortex_V2M_Thickness.mm
+V1_N.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_V1_N.n
+V1_O.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_V1_O.n
+V1_N.p.mm2,HerculanoHouzel_etal_2013_Table1-a,Cortex_V1_N.p.mm2
+V1_N.p.mm3,HerculanoHouzel_etal_2013_Table1-a,Cortex_V1_N.p.mm3
+V1_Thickness.mm,HerculanoHouzel_etal_2013_Table1-a,Cortex_V1_Thickness.mm
+V2L_N.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_V2L_N.n
+V2L_O.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_V2L_O.n
+V2L_N.p.mm2,HerculanoHouzel_etal_2013_Table1-a,Cortex_V2L_N.p.mm2
+V2L_N.p.mm3,HerculanoHouzel_etal_2013_Table1-a,Cortex_V2L_N.p.mm3
+V2L_Thickness.mm,HerculanoHouzel_etal_2013_Table1-a,Cortex_V2L_Thickness.mm
+S1limb_N.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_S1limb_N.n
+S1limb_O.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_S1limb_O.n
+S1limb_N.p.mm2,HerculanoHouzel_etal_2013_Table1-a,Cortex_S1limb_N.p.mm2
+S1limb_N.p.mm3,HerculanoHouzel_etal_2013_Table1-a,Cortex_S1limb_N.p.mm3
+S1limb_Thickness.mm,HerculanoHouzel_etal_2013_Table1-a,Cortex_S1limb_Thickness.mm
+S1face_N.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_S1face_N.n
+S1face_O.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_S1face_O.n
+S1face_N.p.mm2,HerculanoHouzel_etal_2013_Table1-a,Cortex_S1face_N.p.mm2
+S1face_N.p.mm3,HerculanoHouzel_etal_2013_Table1-a,Cortex_S1face_N.p.mm3
+S1face_Thickness.mm,HerculanoHouzel_etal_2013_Table1-a,Cortex_S1face_Thickness.mm
+S2_N.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_S2_N.n
+S2_O.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_S2_O.n
+S2_N.p.mm2,HerculanoHouzel_etal_2013_Table1-a,Cortex_S2_N.p.mm2
+S2_N.p.mm3,HerculanoHouzel_etal_2013_Table1-a,Cortex_S2_N.p.mm3
+S2_Thickness.mm,HerculanoHouzel_etal_2013_Table1-a,Cortex_S2_Thickness.mm
+Auditory_N.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_Auditory_N.n
+Auditory_O.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_Auditory_O.n
+Auditory_N.p.mm2,HerculanoHouzel_etal_2013_Table1-a,Cortex_Auditory_N.p.mm2
+Auditory_N.p.mm3,HerculanoHouzel_etal_2013_Table1-a,Cortex_Auditory_N.p.mm3
+Auditory_Thickness.mm,HerculanoHouzel_etal_2013_Table1-a,Cortex_Auditory_Thickness.mm
+Insula_N.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_Insula_N.n
+Insula_O.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_Insula_O.n
+Insula_N.p.mm2,HerculanoHouzel_etal_2013_Table1-a,Cortex_Insula_N.p.mm2
+Insula_N.p.mm3,HerculanoHouzel_etal_2013_Table1-a,Cortex_Insula_N.p.mm3
+Insula_Thickness.mm,HerculanoHouzel_etal_2013_Table1-a,Cortex_Insula_Thickness.mm
+Orbital_N.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_Orbital_N.n
+Orbital_O.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_Orbital_O.n
+Orbital_N.p.mm2,HerculanoHouzel_etal_2013_Table1-a,Cortex_Orbital_N.p.mm2
+Orbital_N.p.mm3,HerculanoHouzel_etal_2013_Table1-a,Cortex_Orbital_N.p.mm3
+Orbital_Thickness.mm,HerculanoHouzel_etal_2013_Table1-a,Cortex_Orbital_Thickness.mm
+Ectorhinal_N.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_Ectorhinal_N.n
+Ectorhinal_O.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_Ectorhinal_O.n
+Ectorhinal_N.p.mm2,HerculanoHouzel_etal_2013_Table1-a,Cortex_Ectorhinal_N.p.mm2
+Ectorhinal_N.p.mm3,HerculanoHouzel_etal_2013_Table1-a,Cortex_Ectorhinal_N.p.mm3
+Ectorhinal_Thickness.mm,HerculanoHouzel_etal_2013_Table1-a,Cortex_Ectorhinal_Thickness.mm
+Entorhinal_N.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_Entorhinal_N.n
+Entorhinal_O.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_Entorhinal_O.n
+Entorhinal_N.p.mm2,HerculanoHouzel_etal_2013_Table1-a,Cortex_Entorhinal_N.p.mm2
+Entorhinal_N.p.mm3,HerculanoHouzel_etal_2013_Table1-a,Cortex_Entorhinal_N.p.mm3
+Entorhinal_Thickness.mm,HerculanoHouzel_etal_2013_Table1-a,Cortex_Entorhinal_Thickness.mm
+Piriform_N.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_Piriform_N.n
+Piriform_O.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_Piriform_O.n
+Piriform_N.p.mm2,HerculanoHouzel_etal_2013_Table1-a,Cortex_Piriform_N.p.mm2
+Piriform_N.p.mm3,HerculanoHouzel_etal_2013_Table1-a,Cortex_Piriform_N.p.mm3
+Piriform_Thickness.mm,HerculanoHouzel_etal_2013_Table1-a,Cortex_Piriform_Thickness.mm
 "Cerebral cortex Mass, g",HerculanoHouzel_etal_2015_Table1,CerebralCortex_Mass.g
 "Cerebral cortex Mass, g SD",HerculanoHouzel_etal_2015_Table1,CerebralCortex_Mass.g_SD
 "Cerebral cortex N, n",HerculanoHouzel_etal_2015_Table1,CerebralCortex_N.n
@@ -331,6 +427,19 @@ OHP,JardimMesseder_etal_2017_Table1,Hippocampus_O.n
 OOB,JardimMesseder_etal_2017_Table1,OlfactoryBulb_O.n
 ORoB,JardimMesseder_etal_2017_Table1,RoB_O.n
 Species,JardimMesseder_etal_2017_Table1,Species
+Species,Kazu_etal_2014_Table1,Species
+n,Kazu_etal_2014_Table1,WholeBrain_n
+"Body mass, g",Kazu_etal_2014_Table1,Body_Mass.g
+"Brain mass, g",Kazu_etal_2014_Table1,WholeBrain_Mass.g
+"Cortex mass, g",Kazu_etal_2014_Table1,CerebralCortex_Mass.g
+Cortex neurons,Kazu_etal_2014_Table1,CerebralCortex_N.n
+Cortex other cells,Kazu_etal_2014_Table1,CerebralCortex_O.n
+"Cerebellum mass, g",Kazu_etal_2014_Table1,Cerebellum_Mass.g
+Cerebellum neurons,Kazu_etal_2014_Table1,Cerebellum_N.n
+Cerebellum other cells,Kazu_etal_2014_Table1,Cerebellum_O.n
+"RoB mass, g",Kazu_etal_2014_Table1,RoB_Mass.g
+RoB neurons,Kazu_etal_2014_Table1,RoB_N.n
+RoB other cells,Kazu_etal_2014_Table1,RoB_O.n
 Amygdala_Vol.mm3,Kverkova_etal_2018_TableS1,Amygdala_Vol.mm3
 Amygdala_Vol.mm3_SD,Kverkova_etal_2018_TableS1,Amygdala_Vol.mm3_SD
 Amygdala_p.C.Brain,Kverkova_etal_2018_TableS1,Amygdala_p.C.Brain

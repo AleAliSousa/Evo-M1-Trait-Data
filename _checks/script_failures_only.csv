@@ -1,7 +1,22 @@
 "script","status","error","start_time","end_time","elapsed_seconds"
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__flow_comparison/Seymour_Boyer_flow_combined.R","FAILED","Error in deframe(.) : could not find function ""deframe""
-Calls: %>%
-Execution halted","2026-08-04 13:11:45.832406","2026-08-04 13:11:46.537267",0.704860925674438
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_gait_excursion_medina.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
+Calls: read.table -> file
+In addition: Warning message:
+In file(file, ""rt"") :
+  cannot open file './__Public/comparative-data/10.1002%2Fjez.70069_Data.tsv': No such file or directory
+Execution halted","2026-08-05 12:19:41.748931","2026-08-05 12:19:42.192431",0.44350004196167
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_hand_liu.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
+Calls: read.table -> file
+In addition: Warning message:
+In file(file, ""rt"") :
+  cannot open file './__Public/comparative-data/10.1098%2Frspb.2016.1923_TableS1.tsv': No such file or directory
+Execution halted","2026-08-05 12:19:43.725119","2026-08-05 12:19:44.366155",0.641035795211792
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_innovation_reader.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
+Calls: read.table -> file
+In addition: Warning message:
+In file(file, ""rt"") :
+  cannot open file './__Public/comparative-data/10.1098%2Frstb.2010.0342_Data.tsv': No such file or directory
+Execution halted","2026-08-05 12:19:45.979379","2026-08-05 12:19:46.540083",0.560703992843628
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__imputing_cellcounts/cellcounts_imputations_diagnostic.R","FAILED","|-------------------------------------|
 | misty 0.8.2 (2026-05-16)            |
 | Miscellaneous Functions T. Yanagida |
@@ -341,7 +356,7 @@ Number of logged events: 2379
 Error in density.default(x = c(NA_real_, NA_real_, NA_real_, NA_real_,  : 
   need at least 2 points to select a bandwidth automatically
 Calls: densityplot ... <Anonymous> -> do.call -> <Anonymous> -> density.default
-Execution halted","2026-08-04 13:11:46.54037","2026-08-04 13:12:05.356006",18.8156359195709
+Execution halted","2026-08-05 12:19:54.70973","2026-08-05 12:20:12.600579",17.8908491134644
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_behaviour/behaviour_compiled.R","FAILED","Error in `group_modify()`:
 ! The returned data frame cannot contain the original grouping
   variables: Measure.
@@ -358,16 +373,11 @@ Backtrace:
   9.       └─base::mapply(.f, .x, .y, MoreArgs = list(...), SIMPLIFY = FALSE)
  10.         └─dplyr (local) `<fn>`(dots[[1L]][[1L]], dots[[2L]][[1L]])
  11.           └─rlang::abort(msg, call = error_call)
-Execution halted","2026-08-04 13:12:05.364475","2026-08-04 13:12:07.709896",2.34542107582092
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_body_ecology/body_ecology_compiled.R","FAILED","Error in sys.frame(1) : not that many frames on the stack
-Calls: normalizePath ... path.expand -> file.path -> dirname -> %||% -> sys.frame
-Execution halted","2026-08-04 13:12:07.719556","2026-08-04 13:12:08.022986",0.303429841995239
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_brain_mass/brain_mass_compiled.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
-Calls: read_csv -> read.csv -> read.table -> file
-In addition: Warning message:
-In file(file, ""rt"") :
-  cannot open file '../__ShinyApp/data/source_manifest.csv': No such file or directory
-Execution halted","2026-08-04 13:12:08.028642","2026-08-04 13:12:08.317947",0.289304971694946
+Execution halted","2026-08-05 12:20:12.608054","2026-08-05 12:20:14.526303",1.91824913024902
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_brain_mass/brain_mass_compiled.R","FAILED","Error in vapply(rows[-1], function(r) if (length(r) >= ci) gsub(""\"""",  : 
+  values must be type 'character',
+ but FUN(X[[1]]) result is type 'logical'
+Execution halted","2026-08-05 12:20:25.888295","2026-08-05 12:20:26.986413",1.09811806678772
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/volumes_compiled_DeCasien.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
 ✔ dplyr     1.2.1     ✔ readr     2.2.0
 ✔ forcats   1.0.1     ✔ stringr   1.6.0
@@ -380,23 +390,7 @@ Execution halted","2026-08-04 13:12:08.028642","2026-08-04 13:12:08.317947",0.28
 ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
 Laterality guard OK: 25 one-side column(s) correctly suffixed.
 Error: paper_long('Stephan_etal_1970_Tables1-6'): no measured columns matched the term map. df cols: Species, body_weight_g, brain_weight_mg, total_brain_net_mm3, medulla_oblongata_mm3, cerebellum_mm3, mesencephalon_mm3, diencephalon_mm3, telencephalon_mm3, bulbus_olfactorius_mm3, palaeocortex_plus_amygdala_mm3, septum_mm3, striatum_mm3, schizocortex_mm3, hippocampus_mm3, neocortex_mm3, source
-Execution halted","2026-08-04 13:12:28.48825","2026-08-04 13:12:29.764419",1.27616906166077
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__ShinyApp/app.R","FAILED","
-Attaching package: ‘bslib’
-
-The following object is masked from ‘package:utils’:
-
-    page
-
-
-Attaching package: ‘DT’
-
-The following objects are masked from ‘package:shiny’:
-
-    dataTableOutput, renderDataTable
-
-Error: unexpected 'else' in ""             else""
-Execution halted","2026-08-04 13:12:32.920655","2026-08-04 13:12:39.697817",6.77716207504272
+Execution halted","2026-08-05 12:20:47.019557","2026-08-05 12:20:48.136898",1.11734104156494
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_Zilles_Rehkamper_1988_provenance.R","FAILED","New names:
 • `` -> `...2`
 • `` -> `...3`
@@ -431,10 +425,8 @@ New names:
 • `` -> `...16`
 Error in `map()`:
 ℹ In index: 3.
-Caused by error in `filter()`:
-ℹ In argument: `!str_starts(replace_na(Species, """"), ""AAAA_"")`.
-Caused by error in `replace_na()`:
-! could not find function ""replace_na""
+Caused by error in `nchar()`:
+! invalid multibyte string, element 1
 Backtrace:
      ▆
   1. ├─map_dfr(files, scan_one) %>% ...
@@ -455,33 +447,46 @@ Backtrace:
  16. │       ├─base::withCallingHandlers(...)
  17. │       └─mask$eval_all_filter(dots_expanded, invert, env_filter)
  18. │         └─dplyr (local) eval()
- 19. ├─stringr::str_starts(replace_na(Species, """"), ""AAAA_"")
+ 19. ├─stringr::str_detect(replace_na(tolower(Species), """"), source_taxon)
  20. │ └─stringr:::check_lengths(string, pattern)
  21. │   └─vctrs::vec_size_common(...)
  22. │     └─rlang::list2(...) at vctrs/R/size.R:97:3
- 23. └─base::.handleSimpleError(...)
- 24.   └─dplyr (local) h(simpleError(msg, call))
- 25.     └─rlang::abort(message, class = error_class, parent = parent, call = error_call)
+ 23. ├─tidyr::replace_na(tolower(Species), """")
+ 24. ├─base::tolower(Species)
+ 25. ├─base::.handleSimpleError(...)
+ 26. │ └─dplyr (local) h(simpleError(msg, call))
+ 27. │   └─rlang::abort(message, class = error_class, parent = parent, call = error_call)
+ 28. │     └─rlang:::signal_abort(cnd, .file)
+ 29. │       └─base::signalCondition(cnd)
+ 30. │         ├─base::conditionMessage(cond)
+ 31. │         └─rlang:::conditionMessage.rlang_error(cond)
+ 32. │           └─rlang::cnd_message(c)
+ 33. │             └─rlang:::cnd_message_format_prefixed(cnd, parent = TRUE, warning = warning)
+ 34. │               └─rlang:::strip_trailing_newline(message)
+ 35. └─base::.handleSimpleError(...)
+ 36.   └─purrr (local) h(simpleError(msg, call))
+ 37.     └─cli::cli_abort(...)
+ 38.       └─rlang::abort(...)
 Warning message:
 One or more parsing issues, call `problems()` on your data frame for details,
 e.g.:
   dat <- vroom(...)
   problems(dat) 
-Execution halted","2026-08-04 13:12:42.159538","2026-08-04 13:12:43.410913",1.25137495994568
+Execution halted","2026-08-05 12:20:53.597981","2026-08-05 12:20:54.850217",1.25223612785339
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_keys/combine_trees.R","FAILED","Error: Need _keys/phylo_placental.* and _keys/phylo_marsupial.* (see PHYLO_SETUP.md).
-Execution halted","2026-08-04 13:12:45.109059","2026-08-04 13:12:46.429605",1.32054591178894
+Execution halted","2026-08-05 12:20:56.4396","2026-08-05 12:20:57.839813",1.40021300315857
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_keys/extend_phylo.R","FAILED","Error: extend_phylo.R is deprecated: use a published source tree (see PHYLO_SETUP.md), not imputation.
-Execution halted","2026-08-04 13:12:46.433494","2026-08-04 13:12:46.736119",0.302624940872192
+Execution halted","2026-08-05 12:20:57.842752","2026-08-05 12:20:58.17076",0.328007936477661
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Barger_etal_2012/Barger_etal_2012_Table3.R","FAILED","Error in `[[<-.data.frame`(`*tmp*`, paste0(nuc, ""_neurons""), value = c(`13.27 (3.7)` = 13270000,  : 
   replacement has 5 rows, data has 7
 Calls: [[<- -> [[<-.data.frame
-Execution halted","2026-08-04 13:17:55.375665","2026-08-04 13:17:55.865701",0.490036010742188
+Execution halted","2026-08-05 12:27:43.922398","2026-08-05 12:27:44.438268",0.515869855880737
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/deJager_etal_2022/deJager_etal_2022.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
 Calls: read.csv -> read.table -> file
 In addition: Warning message:
 In file(file, ""rt"") :
   cannot open file 'deJager_etal_2022_calibration.csv': No such file or directory
-Execution halted","2026-08-04 13:18:41.207617","2026-08-04 13:18:41.564932",0.357315063476562
+Execution halted","2026-08-05 12:28:28.189697","2026-08-05 12:28:28.489713",0.300015926361084
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heffner_Masterton_1983/Heffner_Masterton_1983_TableI.R","FAILED","New names:
 • `` -> `...1`
 • `` -> `...2`
@@ -496,9 +501,9 @@ Execution halted","2026-08-04 13:18:41.207617","2026-08-04 13:18:41.564932",0.35
 • `` -> `...11`
 • `` -> `...12`
 Error in `transmute()`:
-ℹ In argument: `phyletic_level = as.integer(as_num(phyletic_level))`.
-Caused by error in `replace_na()`:
-! could not find function ""replace_na""
+ℹ In argument: `area_mm2_ref = ref_of(area_mm2)`.
+Caused by error in `vec_assign()`:
+! Can't convert `replace` <character> to match type of `data` <double>.
 Backtrace:
      ▆
   1. ├─snap %>% ...
@@ -509,30 +514,35 @@ Backtrace:
   6. │   └─dplyr:::mutate_col(dots[[i]], data, mask, new_columns)
   7. │     └─mask$eval_all_mutate(quo)
   8. │       └─dplyr (local) eval()
-  9. ├─global as_num(phyletic_level)
- 10. │ ├─base::suppressWarnings(...)
- 11. │ │ └─base::withCallingHandlers(...)
- 12. │ ├─stringr::str_replace_all(val_of(x), "","", """")
- 13. │ │ └─stringr:::check_lengths(string, pattern, replacement)
- 14. │ │   └─vctrs::vec_size_common(...)
- 15. │ │     └─rlang::list2(...) at vctrs/R/size.R:97:3
- 16. │ └─global val_of(x)
- 17. │   ├─stringr::str_trim(str_replace(replace_na(x, """"), ""\\[.*$"", """"))
- 18. │   │ └─stringi::stri_trim_both(string)
- 19. │   └─stringr::str_replace(replace_na(x, """"), ""\\[.*$"", """")
- 20. │     └─stringr:::check_lengths(string, pattern, replacement)
- 21. │       └─vctrs::vec_size_common(...)
- 22. │         └─rlang::list2(...) at vctrs/R/size.R:97:3
- 23. └─base::.handleSimpleError(...)
- 24.   └─dplyr (local) h(simpleError(msg, call))
- 25.     └─rlang::abort(message, class = error_class, parent = parent, call = error_call)
-Execution halted","2026-08-04 13:20:48.043081","2026-08-04 13:20:48.815388",0.7723069190979
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kochiyama_etal_2018/Kochiyama_etal_2018_reconcile_relative_volumes.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
-Calls: read.csv -> read.table -> file
-In addition: Warning message:
-In file(file, ""rt"") :
-  cannot open file 'Kochiyama_etal_2018_Figure3.csv': No such file or directory
-Execution halted","2026-08-04 13:21:32.66818","2026-08-04 13:21:33.021506",0.353326082229614
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Seymour_etal_2017/Seymour_etal_2017_TableS1_snapshot_extract.R","FAILED","Error in library(officer) : there is no package called ‘officer’
-Calls: suppressPackageStartupMessages -> withCallingHandlers -> library
-Execution halted","2026-08-04 13:22:05.092647","2026-08-04 13:22:05.417859",0.325212001800537
+  9. ├─global ref_of(area_mm2)
+ 10. │ ├─stringr::str_extract(replace_na(x, """"), ""\\[.*\\]"")
+ 11. │ │ └─stringr:::check_lengths(string, pattern)
+ 12. │ │   └─vctrs::vec_size_common(...)
+ 13. │ │     └─rlang::list2(...) at vctrs/R/size.R:97:3
+ 14. │ ├─tidyr::replace_na(x, """")
+ 15. │ └─tidyr:::replace_na.default(x, """")
+ 16. │   └─vctrs::vec_assign(data, missing, replace, x_arg = ""data"", value_arg = ""replace"")
+ 17. └─vctrs (local) `<fn>`() at vctrs/R/slice.R:263:3
+ 18.   └─vctrs::vec_default_cast(...)
+ 19.     ├─base::withRestarts(...) at vctrs/R/cast.R:236:3
+ 20.     │ └─base (local) withOneRestart(expr, restarts[[1L]])
+ 21.     │   └─base (local) doWithOneRestart(return(expr), restart)
+ 22.     └─vctrs::stop_incompatible_cast(...) at vctrs/R/cast.R:236:3
+ 23.       └─vctrs::stop_incompatible_type(...) at vctrs/R/conditions.R:172:3
+ 24.         └─vctrs:::stop_incompatible(...) at vctrs/R/conditions.R:146:3
+ 25.           └─vctrs:::stop_vctrs(...) at vctrs/R/conditions.R:95:3
+ 26.             └─rlang::abort(message, class = c(class, ""vctrs_error""), ..., call = call) at vctrs/R/conditions.R:65:3
+Execution halted","2026-08-05 12:28:56.572869","2026-08-05 12:28:57.52037",0.947500944137573
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Matano__1992/Matano__1992_Tables1to4.R","FAILED","Error:
+! 'Matano__1992_Tables1to4_snapshot.csv' does not exist in current
+  working directory: '/Users/crossmodal'.
+Backtrace:
+    ▆
+ 1. ├─readr::read_csv(""Matano__1992_Tables1to4_snapshot.csv"", show_col_types = FALSE)
+ 2. │ └─vroom::vroom(...)
+ 3. │   └─vroom:::vroom_(...)
+ 4. └─vroom (local) `<fn>`(""Matano__1992_Tables1to4_snapshot.csv"")
+ 5.   └─vroom:::check_path(path)
+ 6.     └─cli::cli_abort(msg, call = call)
+ 7.       └─rlang::abort(...)
+Execution halted","2026-08-05 12:29:55.483743","2026-08-05 12:29:56.23749",0.75374698638916

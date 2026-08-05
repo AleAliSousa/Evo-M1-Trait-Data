@@ -20,26 +20,46 @@ from the publisher page (Karger/Zenodo block automated fetches) — confirm befo
 
 ## Curator decisions (2026-07-31) — READ FIRST
 
-- **CORRECTION (2026-07-31):** an earlier version of this block wrongly attributed the "problematic
-  data" to **Heuer** and dropped the Heuer MRI candidates. The repo owner flagged **Navarrete**, not
-  Heuer, and reports **no known issue with Heuer**. Both Heuer candidates are therefore **reinstated**
-  (see below); the flagged data is Navarrete's.
-- **EXCLUDE Navarrete (#3).** Flagged by the repo owner (values depart from expectations,
-  inter-observer differences, first author unreachable). Do not ingest.
-  *(Open question for the owner: candidate #3 as catalogued is Navarrete et al. 2016, an* innovation
-  *dataset, not an MRI/volumetric one — so "Navarrete MRI data" may refer to a different Navarrete
-  paper. Confirm which, so this exclusion note is accurate.)*
+- **⚠️ RESOLVED 2026-08-04 — "Heuer et al. 2018" never existed; it was Navarrete 2018 misattributed.**
+  The 2026-07-31 "CORRECTION" below was itself wrong, and inverted the owner's decision. There is no
+  Heuer 2018 volumetric-MRI paper. The paper titled *Primate Brain Anatomy: New Volumetric MRI
+  Measurements for Neuroanatomical Studies* is:
+  **Navarrete, A. F., Blezer, E. L. A., Pagnotta, M., de Viet, E. S. M., Todorov, O. S., Lindenfors, P.,
+  Laland, K. N., & Reader, S. M. (2018).** Brain Behav Evol **91(2):1–9**, DOI **10.1159/000488136**,
+  PMID **29894995**. (EndNote `[4443]`, PDF held.) The fabricated citation had grafted the *Heuer 2019*
+  author list onto Navarrete's title and invented DOI `10.1159/000489791`.
+  **Consequence:** the "reinstatement" resurrected the owner-excluded source under a clean name and
+  scaffolded it for `__merging_volumes`. **Scaffold deleted 2026-08-04** (`Heuer_etal_2018/` and
+  `__merging_volumes/standardized_term_by_reference/Heuer_etal_2018_SupplementaryData_standardized_terms.csv`,
+  whose nine "high-confidence" structure columns were guessed, never read from the SI). Verified
+  clean: no row in `__ReadMe.xlsx`, no `__Public` TSV, no item in `volumes_compiled.R` — nothing
+  reached the merge. **Heuer et al. 2019 (#5, neocortical folding) is a real, separate paper and is
+  unaffected.**
+- **EXCLUDE Navarrete — identity now pinned (#1-as-catalogued and #3 are different papers).** The
+  owner's flag (values depart from expectations, inter-observer differences, first author unreachable)
+  applies to the **2018 volumetric-MRI** paper above. Do not ingest. The open question "which
+  Navarrete?" is **answered**: it is Navarrete et al. **2018** (Brain Behav Evol), *not* the 2016
+  innovation dataset catalogued as #3. Simon Reader co-authors both, which is why the two got tangled.
+  Corroborating the flag: the **erratum** — Brain Behav Evol 2018;**92(3-4):182–184**, DOI
+  **10.1159/000496658**, PMID 30783037 — rewrites Table 1, re-attributes the 10 "scan donations" to
+  the Great Ape Neuroscience Project (Sherwood & Hof) and K. A. Phillips, and corrects specimen
+  descriptions. Some scans are ***in vivo*** (*Cebus apella*), and the GANP great apes plausibly
+  overlap collections already in the merge — so this source would need specimen-crosswalk work even
+  if the exclusion were lifted. **Ingestion question left open for the owner; nothing to be done
+  without an explicit decision.**
 - **Technical innovation: IN, sourced from Reader (not from the flagged Navarrete source).** Compile
   from Simon Reader's classic dataset (Reader & Laland 2002, PNAS) and its machine-readable extension
   (Reader, Hager & Laland 2011, Phil Trans; Dryad doi:10.5061/dryad.t0q94). Scaffolding is in place —
   see `Reader_etal_2011/Reader_etal_2011.README.md` and `____EvoM1_TraitTable/EvoM1_read_innovation_reader.R`.
   **Blocked in-session:** the org network policy denied Dryad at the egress proxy and there is no R
   runtime here, so the actual per-species values must be downloaded and the reader run **locally**.
-- **Heuer MRI (#1 volumes, #5 folding): REINSTATED — no known issue, now scaffolded (2026-07-31).**
-  `Heuer_etal_2018/` (volumes → `__merging_volumes` as its own **Heuer_MRI** team, never pooled with
-  the histological Stephan volumes; standardized-term template added) and `Heuer_etal_2019/`
-  (neocortical folding — **housed separately, decided; NOT pooled into the Zilles-GI merge**). The
-  separate decision is method-confirmed (2026-07-31): Heuer 2019 uses a **3-D** surface-vs-convex-hull
+- **Heuer MRI — only #5 (folding) exists. #1 was the misattributed Navarrete paper (see above).**
+  `Heuer_etal_2019/` only (neocortical folding — **housed separately, decided; NOT pooled into the
+  Zilles-GI merge**). Confirmed real 2026-08-04: Heuer K., Gulban O. F., Bazin P.-L., Osoianu A.,
+  Valabregue R., Santin M., Herbin M., & Toro R. (2019). *Evolution of neocortical folding: A
+  phylogenetic comparative analysis of MRI from 34 primate species.* **Cortex 118:275–291**,
+  PMID **31235272** — 34 species / 65 individuals, as described below. Not in EndNote.
+  The separate decision is method-confirmed (2026-07-31): Heuer 2019 uses a **3-D** surface-vs-convex-hull
   gyrification index + folding length/wavelength/depth, whereas the GI merge pools only the **2-D**
   Zilles coronal-contour GI — different construct/method, presented in the paper as an alternative to
   Zilles. Both Heuer folders need the frozen source pulled locally + R to wire on; merge scripts left
@@ -49,10 +69,12 @@ from the publisher page (Karger/Zenodo block automated fetches) — confirm befo
   co-author on the paper: cerebellar folding is outside the dataset's scope right now. Not scaffolded,
   not to be revisited unless scope changes. (For the record: that paper used some Ashwell 2020 data
   only as a comparison; Ashwell is already in the repo via the volumes merge, so nothing to reconcile.)
-- **Keep IN — all scaffolded (2026-07-31):** Bardo hand proportions (#2 → `Bardo_etal_2016/`),
+- **Keep IN — all scaffolded (2026-07-31):** Liu hand proportions (#2 → `Liu_etal_2016/`, renamed from
+  `Bardo_etal_2016/` 2026-08-04 — misattributed byline),
   Capellini/Lesku sleep (#4 → `Capellini_etal_2008/`), limb-excursion locomotion (#7 →
-  `MedinaGonzalez_2026/`), corticospinal terminations (#8 → `Corticospinal_terminations/`), Betz cells
-  (#9 → `Betz_cells_M1/`). Each folder has a README (source, download/freeze, register, and exact
+  `MedinaGonzalez_2026/`), corticospinal terminations (#8 → `Corticospinal_terminations/`), gigantopyramidal
+  / Betz neurons (#9 → `Jacobs_etal_2018/`, replacing the dissolved `Betz_cells_M1/` compile-from-literature
+  scaffold 2026-08-04 — **snapshots now built**). Each folder has a README (source, download/freeze, register, and exact
   merge-wiring steps) + a `reference_tables/*_definitions.csv`; the two behaviour sources and the
   locomotion source also have reader scripts in `____EvoM1_TraitTable/`, and the sleep source has a
   `standardized_term_by_reference/` template. **Every scaffold still needs its source data pulled
@@ -63,33 +85,53 @@ from the publisher page (Karger/Zenodo block automated fetches) — confirm befo
 
 ## Tier 1 — strongest fits (M1-adjacent or directly extend a live merge)
 
-### 1. Heuer et al. 2018 — Primate Brain Anatomy: New Volumetric MRI Measurements  — ✅ REINSTATED & scaffolded (`Heuer_etal_2018/`)
-- **Merge:** `__merging_volumes` (brain-structure volumes). **Role: secondary** (MRI-derived, modern
-  compilation to sit alongside the Stephan/Düsseldorf histological volumes).
-- **Contributes:** volumetric measurements of **16 brain areas** across **39 primate species**,
-  **20 of them not previously in the volumetric literature** — telencephalon, cerebellum, neocortex,
-  and regional structures — from the Netherlands Institute of Neuroscience Primate Brain Bank
-  (9.4 T). This is the single largest source of *new primate species* for the volumes merge and the
-  natural modern counterpart to Stephan.
-- **Citation:** Heuer K., Gulban O.F., Bazin P.-L., et al. (2018). *Primate Brain Anatomy: New
-  Volumetric MRI Measurements for Neuroanatomical Studies.* Brain Behav Evol 91(2):109–128.
-  PMID **29894995**; DOI 10.1159/000489791 *(verify)*. Erratum: Brain Behav Evol 92(3-4):182.
-- **Overlap/notes:** cross-check species against Stephan/Isler/deSousa before merging; MRI vs
-  histology means it should stay a **team of its own** and never be pooled cell-for-cell with the
-  histological volumes. Supplementary volume tables are the ingestable artifact.
+### 1. ~~Heuer et al. 2018 — Primate Brain Anatomy~~ → **Navarrete et al. 2018** — ❌ EXCLUDED (owner-flagged; scaffold deleted 2026-08-04)
+- **This candidate was a misattribution.** No Heuer 2018 volumetric paper exists; see the resolution
+  note in *Curator decisions* above. The real paper is owner-excluded, so this entry stands as a
+  record of what was assessed and rejected — **do not re-scaffold it.**
+- **Citation:** Navarrete, A. F., Blezer, E. L. A., Pagnotta, M., de Viet, E. S. M., Todorov, O. S.,
+  Lindenfors, P., Laland, K. N., & Reader, S. M. (2018). *Primate Brain Anatomy: New Volumetric MRI
+  Measurements for Neuroanatomical Studies.* **Brain Behav Evol 91(2):1–9**, DOI
+  **10.1159/000488136**, PMID **29894995**. EndNote `[4443]` (PDF held).
+  **Erratum:** Brain Behav Evol 2018;**92(3-4):182–184**, DOI **10.1159/000496658**, PMID 30783037.
+- **What it would have contributed (for the record):** 16 brain areas across **39 primate species**,
+  ~20 new to the volumetric literature, from 46 Netherlands Institute of Neuroscience Primate Brain
+  Bank brains at 9.4 T plus 7 scans from other sources; partial measurements on 8 further brains.
+  This is the largest single pool of *new primate species* available to the volumes merge, which is
+  why the exclusion is worth revisiting deliberately rather than by accident.
+- **Why excluded:** owner flag — values depart from expectations, inter-observer differences, first
+  author unreachable. The erratum independently rewrites Table 1 and the specimen attributions.
+- **If the exclusion is ever lifted:** it is **MRI**, so it must enter as its own team, never pooled
+  with the histological Stephan/Baron/Frahm collection; work from the **erratum-corrected** Table 1,
+  not the original; and run a specimen crosswalk first — the "other sources" scans are GANP great apes
+  (Sherwood & Hof) and *in vivo* *Cebus apella* (K. A. Phillips), which may already be represented in
+  the merge through other collections.
 
-### 2. Bardo et al. 2016 — Manipulative potential from hand proportions
+### 2. ~~Bardo et al. 2016~~ → **Liu et al. 2016** — Manipulative potential from hand proportions (`Liu_etal_2016/`)
+- **⚠️ AUTHOR MISATTRIBUTION CORRECTED 2026-08-04.** "Bardo et al. 2016" does not exist. The paper
+  carrying this title is by **Liu, Xiong & Hu** — a biomechanics/robotics group at Huazhong University
+  of Science and Technology. Ameline Bardo is a real hand-evolution researcher (several EndNote
+  records) but is **not** an author on it. Same failure mode as the "Heuer 2018" case: real title, real
+  journal, real DOI, invented byline. Folder renamed `Bardo_etal_2016/` → `Liu_etal_2016/`; reader
+  renamed `EvoM1_read_hand_bardo.R` → `EvoM1_read_hand_liu.R`.
+- **Citation:** Liu, M.-J., Xiong, C.-H., & Hu, D. (2016). *Assessing the manipulative potentials of
+  monkeys, apes and humans from hand proportions: implications for hand evolution.* **Proc Biol Sci
+  283(1843):20161923.** DOI **10.1098/rspb.2016.1923** · PMID **27903877** · EndNote `[9631]`.
 - **Merge:** `__merging_behaviour` (hand morphology / manipulation), beside `dexterity_baker`.
-- **Contributes:** a **manipulability / workspace** measure for **13 anthropoid species** (137 hand
-  samples: humans, apes, OWM, NWM) derived from hand proportions. Directly comparable to Baker's
-  `peak_workspace` (both descend from the Feix et al. 2015 manipulability index) and to Heffner
-  dexterity — fills the manipulation axis for species Baker doesn't cover.
-- **Citation:** Bardo A., Cornette R., Borel A., Pouydebat E. (2016). *Assessing the manipulative
-  potentials of monkeys, apes and humans from hand proportions: implications for hand evolution.*
-  Proc R Soc B 283(1843):20161923. DOI **10.1098/rspb.2016.1923**.
-- **Overlap/notes:** citation-dependency rule applies (shares the Feix manipulability construct with
-  Baker) → **never average**; record as a secondary key, resolved value stays Baker's where both
-  exist. See `__merging_behaviour/README__merging.md` VocalRepertoire/Dexterity precedent.
+- **Contributes:** modelled manipulative potential for **13 anthropoid species** — SI Table S1 gives
+  per-**specimen** rows (museum accession numbers) with thumb and forefinger segment proportions plus
+  two derived measures: **`WS`** (workspace) and **`GMI`** (global manipulation index, the headline
+  measure). Column headers confirmed from the SI PDF, now held in the folder
+  (`rspb20161923_si_001.pdf`). **The "137 hand samples" figure was part of the fabricated block and is
+  unverified** — a sweep of the extracted Table S1 finds ~133 specimen rows; count by hand.
+- **Overlap/notes:** the citation-dependency with Baker is **harder than first recorded**. Liu's raw
+  morphometrics are *taken from* Feix, Kivell, Pouydebat & Dollar (2015) — the same source Baker 2025
+  `peak_workspace` descends from. So the two share their **raw input**, not merely a construct family:
+  **never average**, resolve to one source. `Data role = secondary` (derived re-analysis); Feix 2015 is
+  the upstream primary and is **not yet in the repo**. See
+  `__merging_behaviour/README__merging.md` VocalRepertoire/Dexterity precedent.
+- **Also in the SI:** Figure S6 infers manipulative potential for **fossil** hands (*H.
+  neanderthalensis*, Ohalo II H2, *H. naledi*) — keep decomposable, never pooled into an extant mean.
 
 ### 3. Navarrete, Reader, Street, Whalen & Laland 2016 — Innovation & technical intelligence  — ❌ EXCLUDED (owner-flagged; topic covered instead via Reader, see `Reader_etal_2011/`)
 - **Merge:** `__merging_behaviour` (a new `TechnicalInnovation` / `ExtractiveForaging` measure), or
@@ -189,12 +231,32 @@ route), not a journal download.
   corticospinal system*); Nudo & Masterton corticospinal series. Values are per-species text/figures
   → snapshot each.
 
-### 9. Betz-cell / layer-5 corticospinal neuron counts in M1
+### 9. ~~Betz-cell compile-from-literature~~ → **Jacobs et al. 2018** (`Jacobs_etal_2018/`) — ✅ SNAPSHOTS BUILT
+- **⚠️ SCAFFOLD DISSOLVED 2026-08-04.** `Betz_cells_M1/` was a *compile-from-literature* placeholder
+  premised on "no single comparative table of per-species Betz counts exists". **That premise was
+  wrong** — Jacobs et al. 2018 is exactly that table, and it was in EndNote with a PDF all along. The
+  scaffold had also invented a source identity (`Betz_cells_M1_compilation`, `Team = Betz_compilation`)
+  for a paper with a real author, year and DOI. Folder replaced by `Jacobs_etal_2018/`.
+  *(Note: "Betz cell" as **anatomy** is real and retained — Jacobs uses "gigantopyramidal" across
+  mammals and reserves "Betz" for primates. What did not exist was a **source** called "Betz".)*
+- **Citation:** Jacobs, B., Garcia, M. E., Shea-Shumsky, N. B., … Sherwood, C. C., & Manger, P. R.
+  (2018). *Comparative morphology of gigantopyramidal neurons in primary motor cortex across mammals.*
+  **J Comp Neurol 526(3):496–536.** DOI **10.1002/cne.24349** · PMID **29088505** · EndNote `[4950]`.
 - **Merge:** `__merging_cellcounts` as a **regional M1 sub-trait** (never pooled with whole-cortex
-  neuron counts), or beside Young 2013 M1 counts.
-- **Sources:** Jacobs et al. and the Betz-cell comparative literature (e.g. *Betz cells of the primary
-  motor cortex*, J Comp Neurol 2024, DOI 10.1002/cne.25567) report macaque/human/great-ape Betz
-  densities and proportions. Compile the per-species giant-pyramidal counts as a regional column.
+  neuron counts), beside `Young_etal_2013_Table1` — checked, no species or measure collision with Young.
+- **Built:** two snapshots, both verified against the paper's own statistics.
+  **Table 3** = unbiased stereology, 20 species (11 carnivore + 9 primate), layer V pyramidal **and**
+  gigantopyramidal soma length/area/volume + body and brain mass. **Table 5** = Golgi morphology,
+  19 species / 7 orders × 3 neuron types (superficial layer III, deep layer V, gigantopyramidal),
+  617 traced neurons: soma size and depth, dendritic volume, length, segment length, segment count,
+  spine number, spine density.
+- **Nolan et al. 2024** (*Betz cells of the primary motor cortex*, J Comp Neurol 532(1):e25567,
+  DOI 10.1002/cne.25567, PMID 38289193) is the **review entry point only** — no per-species table, and
+  it misquotes Jacobs' feliform mean soma size as 2874 μm² where the paper says **2,847**. Never a
+  row's `Source`.
+- **Remaining primaries** (audit in `Jacobs_etal_2018/README.md`): Sherwood et al. 2003 ✅ EndNote
+  `[5508]` (23 primates + 2 non-primates); Rivara et al. 2003 ❌ absent (the whole human row);
+  Lassek & Wheatley 1945 ✅ `[6767]` (chimpanzee area-4 enumeration).
 
 ---
 
@@ -214,8 +276,8 @@ they are not lost.
    table, slots into the most mature merge.
 2. **Lesku/Capellini sleep** (#4) — the sleep merge was explicitly built to grow and currently stops
    at primates for REM.
-3. **Navarrete innovation** (#3) and **Bardo hand** (#2) — clean archived datasets, extend the
-   behaviour merge on-theme.
+3. **Liu hand** (#2, was mislabelled "Bardo") — extends the behaviour merge on-theme. *(Navarrete
+   innovation (#3) is out: the topic is sourced from Reader's own data.)*
 4. Tier 2/3 as capacity allows.
 
 For any of these, follow `__HOWTO_build_a_dataset_file.md`: freeze source → `.R` reformat →

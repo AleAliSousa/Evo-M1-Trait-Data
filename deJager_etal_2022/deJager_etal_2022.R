@@ -209,3 +209,28 @@ estimate_VA_area <- function(TF_area_mm2, level, side = "both", warn_outside_ran
   }
   10^(row$slope * log10(TF_area_mm2) + row$intercept)
 }
+
+## ---- DOI-coded public TSV for Table 1 (sec 4, invariant 2) -------------------------------
+## Added 2026-08-05. deJager_etal_2022_Table1.csv is BOTH the frozen source and the data: a
+## hand transcription of the printed Table 1 carrying its provenance in leading "#" comment
+## lines. The published table is that file with the comment header stripped - same rows, same
+## columns, nothing recomputed.
+local({
+  base <- local({
+    d <- getwd()
+    while (dirname(d) != d && !file.exists(file.path(d, "__ReadMe.xlsx"))) d <- dirname(d)
+    if (file.exists(file.path(d, "__ReadMe.xlsx"))) d else NA_character_
+  })
+  if (is.na(base)) { warning("Repo root not found; public TSV skipped."); return(invisible(NULL)) }
+  filecodes <- readxl::read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
+  enc     <- filecodes$"Item encoded"[match("deJager_etal_2022_Table1", filecodes$"Item name")]
+  tsv_dir <- file.path(base, "__Public", "comparative-data")
+  if (is.na(enc) || !nzchar(enc)) {
+    warning("No 'Item encoded' for deJager_etal_2022_Table1; public TSV skipped.")
+  } else if (!dir.exists(path.expand(tsv_dir))) {
+    warning("Shared folder not found: ", tsv_dir, "; public TSV skipped.")
+  } else {
+    write.table(tab1, file.path(tsv_dir, paste0(enc, ".tsv")), sep = "\t", row.names = FALSE)
+    message("Wrote ", file.path(tsv_dir, paste0(enc, ".tsv")))
+  }
+})

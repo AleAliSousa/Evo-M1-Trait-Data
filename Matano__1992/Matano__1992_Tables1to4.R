@@ -70,3 +70,21 @@ stopifnot(nrow(out) == 45L, max(resid) <= 0.06)
 write_csv(out, "Matano__1992_Tables1to4.csv")
 cat("Wrote Matano__1992_Tables1to4.csv:", nrow(out), "species; max accessory-sum residual",
     round(max(resid), 3), "\n")
+
+## ---- DOI-coded public TSV (__HOWTO_build_a_dataset_file.md sec 4, invariant 2) -----------
+## Added 2026-08-05 together with the registry Item number ("Tables1to4"), which had been
+## blank - so the lookup returned nothing and the table was built but never published.
+tsv_dir      <- if (!is.na(base)) file.path(base, "__Public", "comparative-data") else NA_character_
+item_encoded <- if (!is.na(base) && file.exists(file.path(base, "__ReadMe.xlsx"))) {
+  filecodes <- readxl::read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
+  filecodes$"Item encoded"[match(item_name, filecodes$"Item name")]
+} else NA_character_
+if (is.na(item_encoded) || !nzchar(item_encoded)) {
+  warning("No 'Item encoded' for '", item_name, "' in __ReadMe.xlsx; public TSV skipped.")
+} else if (is.na(tsv_dir) || !dir.exists(path.expand(tsv_dir))) {
+  warning("Shared folder not found: ", tsv_dir, "; public TSV skipped.")
+} else {
+  write.table(out, file.path(tsv_dir, paste0(item_encoded, ".tsv")),
+              sep = "\t", row.names = FALSE)
+  message("Wrote ", file.path(tsv_dir, paste0(item_encoded, ".tsv")))
+}

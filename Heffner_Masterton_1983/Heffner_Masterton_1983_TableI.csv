@@ -1,22 +1,22 @@
-common_name,Species,Species_as_printed,species_basis,phyletic_level,digital_dexterity,body_weight_kg,area_mm2,area_mm2_ref,no_fibers_x10_3,no_fibers_ref,avg_fiber_size_um,avg_fiber_size_ref,largest_fiber_size_um,largest_fiber_size_ref,extension_down_cord_rank,extension_down_cord_ref,ventralmost_lamina,ventralmost_lamina_ref,densest_lamina,densest_lamina_ref,source
-Bushbaby,Galago crassicaudatus,Galago crassicaudatus,as_printed,4,5,1.14,,"[Ferrer, 1971]",,,,,,,8,,9,"[Ferrer, 1971]",6,"[Ferrer, 1971]",Heffner_Masterton_1983
-Bushbaby,Galago senegalensis,Galago senegalensis,as_printed,4,5,0.26,,,,,,,2.5,"[Verhaart, 1966]",9,"[Goode & Haines, 1975]",9,"[Goode & Haines, 1975]",6,"[Goode & Haines, 1975]",Heffner_Masterton_1983
-Chimpanzee,Pan troglodytes,Pan troglodytes,as_printed,7,6,44,7.77,"[Lassek & Wheatley, 1945]",807,"[Lassek & Wheatley, 1945]",,,,,9,,10,"[Petras, 1968]",6,"[Petras, 1968]",Heffner_Masterton_1983
-Gibbon,Hylobates lar,Hylobates lar,as_printed,7,6,6,3.44,"[Verhaart, 1970b]",315,"[Verhaart, 1948b]",1.09,"[Verhaart, 1970b]",12,"[Petras, 1968]",8,"[Petras, 1968]",10,"[Petras, 1969]",6,"[Petras, 1968]",Heffner_Masterton_1983
-Hedgehog,Erinaceus,Erinaceous,spelling_correction,2,2,0.75,0.02,"[Verhaart, 1970b]",,,,,,,1,,,,,,Heffner_Masterton_1983
-Hedgehog,Paraechinus,Paraechinus,as_printed,2,2,0.5,,,,,,,,,1,"[RoBards, pers. commun.]",,,,,Heffner_Masterton_1983
-Lemur,Lemur catta,Lemur catta,as_printed,4,5,2.1,,,,,,,3,"[Verhaart, 1966]",7,"[Verhaart, 1966]",,,,,Heffner_Masterton_1983
-Man,Homo sapiens,Homo sapiens,as_printed,8,7,70,11.43,"[Lassek & Rasmussen, 1940]",1101,"[Lassek & Rasmussen, 1940]",1.03,"[Truex & Carpenter, 1969]",22,"[Truex & Carpenter, 1969]",9,,,,,,Heffner_Masterton_1983
-Monkey (Cebus),Cebus apella,Cebus apella,as_printed,5,5,2.4,2,"[Manocha et al., 1968]",,,,,,,9,,10,"[Petras, 1968]",6,"[Petras, 1968]",Heffner_Masterton_1983
-Monkey (vervet),Cercopithecus pygerythrus,Cercopithecus pygerythrus,as_printed,6,6,4,,,,,,,,,9,,10,"[Petras, 1968]",6,"[Petras, 1968]",Heffner_Masterton_1983
-Monkey (wooly),Lagothrix lagotricha,Lagothrix lagotricha,as_printed,5,5,6,,,,,,,,,9,,10,"[Petras, 1968]",6,"[Petras, 1968]",Heffner_Masterton_1983
-Monkey (macaque),Macaca irus,Macaca ira,spelling_correction,6,6,5,1.18,"[Verhaart, 1954]",195,"[Verhaart, 1948a]",0.6,,,,9,,10,"[Petras, 1969]",6,"[Petras, 1968]",Heffner_Masterton_1983
-Monkey (macaque),Macaca mulatta,Macaca mulatta,as_printed,6,6,8.5,2.89,"[Lassek, 1941]",400,"[DeMeyer & Russel, 1958]",0.72,,,,9,,10,"[Petras, 1969]",6,"[Petras, 1968]",Heffner_Masterton_1983
-Monkey (baboon),Papio papio,Papio papio,as_printed,6,6,25,,,,,,,,,,,10,"[Phillips, 1967]",,,Heffner_Masterton_1983
-Monkey (squirrel),Saimiri sciureus,Saimiri sciureus,as_printed,5,5,0.75,0.7,"[Verhaart, 1970b]",,,,,8,"[Verhaart, 1970b]",8,"[Verhaart, 1966]",9,"[Harting & Noback, 1970]",6,"[Harting & Noback, 1970]",Heffner_Masterton_1983
-Opossum,Didelphis virginiana,Didelphis,Iwaniuk_etal_1999_imputed,1,3,3.7,0.22,"[Towe, 1973]",48.1,"[Towe, 1973]",0.45,"[Bautista & Matzke, 1965]",,,3,"[Bautista & Matzke, 1965]",8,"[Martin & Fisher, 1968]",5,"[Martin & Fisher, 1968]",Heffner_Masterton_1983
-Orangutan,Pongo pygmaeus,Pongo pygmaeus,as_printed,7,6,60,2.61,"[Verhaart, 1970b]",,,,,,,,,,,,,Heffner_Masterton_1983
-Siamang,Hylobates syndactylus,Hylobates syndactylus,as_printed,7,6,10,3.25,"[Verhaart, 1948b]",239.7,"[Verhaart, 1948b]",1.35,,,,,,,,,,Heffner_Masterton_1983
-Slow loris,Nycticebus coucang,Nycticebus coucang,as_printed,4,5,1.3,0.28,"[Verhaart, 1966]",,,,,4.5,"[Verhaart, 1970a]",8,"[Campbell, 1965]",10,"[Campbell et al., 1966]",6,"[Campbell et al., 1966]",Heffner_Masterton_1983
-Tarsier,Tarsius,Tarsius,as_printed,4,4,0.12,0.16,"[Tilney, 1927]",,,,,,,,,,,,,Heffner_Masterton_1983
-Tree shrew,Tupaia glis,Tupaia glis,as_printed,3,3,0.16,0.12,"[Tigges & Shantha, 1969]",,,,,2,"[Verhaart, 1966]",5,"[Shriver & Noback, 1967]",6,"[Jane et al., 1969]",5,"[Campbell, 1965]",Heffner_Masterton_1983
+"common_name","Species","Species_as_printed","species_basis","phyletic_level","digital_dexterity","body_weight_kg","area_mm2","area_mm2_ref","no_fibers_x10_3","no_fibers_x10_3_ref","avg_fiber_size_um","avg_fiber_size_um_ref","largest_fiber_size_um","largest_fiber_size_um_ref","extension_down_cord_rank","extension_down_cord_rank_ref","ventralmost_lamina","ventralmost_lamina_ref","densest_lamina","densest_lamina_ref","source"
+"Bushbaby","Galago crassicaudatus","Galago crassicaudatus","as_printed",4,5,1.14,NA,"[Ferrer, 1971]",NA,"",NA,"",NA,"",8,"",9,"[Ferrer, 1971]",6,"[Ferrer, 1971]","Heffner_Masterton_1983"
+"Bushbaby","Galago senegalensis","Galago senegalensis","as_printed",4,5,0.26,NA,"",NA,"",NA,"",2.5,"[Verhaart, 1966]",9,"[Goode & Haines, 1975]",9,"[Goode & Haines, 1975]",6,"[Goode & Haines, 1975]","Heffner_Masterton_1983"
+"Chimpanzee","Pan troglodytes","Pan troglodytes","as_printed",7,6,44,7.77,"[Lassek & Wheatley, 1945]",807,"[Lassek & Wheatley, 1945]",NA,"",NA,"",9,"",10,"[Petras, 1968]",6,"[Petras, 1968]","Heffner_Masterton_1983"
+"Gibbon","Hylobates lar","Hylobates lar","as_printed",7,6,6,3.44,"[Verhaart, 1970b]",315,"[Verhaart, 1948b]",1.09,"[Verhaart, 1970b]",12,"[Petras, 1968]",8,"[Petras, 1968]",10,"[Petras, 1969]",6,"[Petras, 1968]","Heffner_Masterton_1983"
+"Hedgehog","Erinaceus","Erinaceous","spelling_correction",2,2,0.75,0.02,"[Verhaart, 1970b]",NA,"",NA,"",NA,"",1,"",NA,"",NA,"","Heffner_Masterton_1983"
+"Hedgehog","Paraechinus","Paraechinus","as_printed",2,2,0.5,NA,"",NA,"",NA,"",NA,"",1,"[RoBards, pers. commun.]",NA,"",NA,"","Heffner_Masterton_1983"
+"Lemur","Lemur catta","Lemur catta","as_printed",4,5,2.1,NA,"",NA,"",NA,"",3,"[Verhaart, 1966]",7,"[Verhaart, 1966]",NA,"",NA,"","Heffner_Masterton_1983"
+"Man","Homo sapiens","Homo sapiens","as_printed",8,7,70,11.43,"[Lassek & Rasmussen, 1940]",1101,"[Lassek & Rasmussen, 1940]",1.03,"[Truex & Carpenter, 1969]",22,"[Truex & Carpenter, 1969]",9,"",NA,"",NA,"","Heffner_Masterton_1983"
+"Monkey (Cebus)","Cebus apella","Cebus apella","as_printed",5,5,2.4,2,"[Manocha et al., 1968]",NA,"",NA,"",NA,"",9,"",10,"[Petras, 1968]",6,"[Petras, 1968]","Heffner_Masterton_1983"
+"Monkey (vervet)","Cercopithecus pygerythrus","Cercopithecus pygerythrus","as_printed",6,6,4,NA,"",NA,"",NA,"",NA,"",9,"",10,"[Petras, 1968]",6,"[Petras, 1968]","Heffner_Masterton_1983"
+"Monkey (wooly)","Lagothrix lagotricha","Lagothrix lagotricha","as_printed",5,5,6,NA,"",NA,"",NA,"",NA,"",9,"",10,"[Petras, 1968]",6,"[Petras, 1968]","Heffner_Masterton_1983"
+"Monkey (macaque)","Macaca irus","Macaca ira","spelling_correction",6,6,5,1.18,"[Verhaart, 1954]",195,"[Verhaart, 1948a]",0.6,"",NA,"",9,"",10,"[Petras, 1969]",6,"[Petras, 1968]","Heffner_Masterton_1983"
+"Monkey (macaque)","Macaca mulatta","Macaca mulatta","as_printed",6,6,8.5,2.89,"[Lassek, 1941]",400,"[DeMeyer & Russel, 1958]",0.72,"",NA,"",9,"",10,"[Petras, 1969]",6,"[Petras, 1968]","Heffner_Masterton_1983"
+"Monkey (baboon)","Papio papio","Papio papio","as_printed",6,6,25,NA,"",NA,"",NA,"",NA,"",NA,"",10,"[Phillips, 1967]",NA,"","Heffner_Masterton_1983"
+"Monkey (squirrel)","Saimiri sciureus","Saimiri sciureus","as_printed",5,5,0.75,0.7,"[Verhaart, 1970b]",NA,"",NA,"",8,"[Verhaart, 1970b]",8,"[Verhaart, 1966]",9,"[Harting & Noback, 1970]",6,"[Harting & Noback, 1970]","Heffner_Masterton_1983"
+"Opossum","Didelphis virginiana","Didelphis","Iwaniuk_etal_1999_imputed",1,3,3.7,0.22,"[Towe, 1973]",48.1,"[Towe, 1973]",0.45,"[Bautista & Matzke, 1965]",NA,"",3,"[Bautista & Matzke, 1965]",8,"[Martin & Fisher, 1968]",5,"[Martin & Fisher, 1968]","Heffner_Masterton_1983"
+"Orangutan","Pongo pygmaeus","Pongo pygmaeus","as_printed",7,6,60,2.61,"[Verhaart, 1970b]",NA,"",NA,"",NA,"",NA,"",NA,"",NA,"","Heffner_Masterton_1983"
+"Siamang","Hylobates syndactylus","Hylobates syndactylus","as_printed",7,6,10,3.25,"[Verhaart, 1948b]",239.7,"[Verhaart, 1948b]",1.35,"",NA,"",NA,"",NA,"",NA,"","Heffner_Masterton_1983"
+"Slow loris","Nycticebus coucang","Nycticebus coucang","as_printed",4,5,1.3,0.28,"[Verhaart, 1966]",NA,"",NA,"",4.5,"[Verhaart, 1970a]",8,"[Campbell, 1965]",10,"[Campbell et al., 1966]",6,"[Campbell et al., 1966]","Heffner_Masterton_1983"
+"Tarsier","Tarsius","Tarsius","as_printed",4,4,0.12,0.16,"[Tilney, 1927]",NA,"",NA,"",NA,"",NA,"",NA,"",NA,"","Heffner_Masterton_1983"
+"Tree shrew","Tupaia glis","Tupaia glis","as_printed",3,3,0.16,0.12,"[Tigges & Shantha, 1969]",NA,"",NA,"",2,"[Verhaart, 1966]",5,"[Shriver & Noback, 1967]",6,"[Jane et al., 1969]",5,"[Campbell, 1965]","Heffner_Masterton_1983"

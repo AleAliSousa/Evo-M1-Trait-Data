@@ -146,11 +146,47 @@ prints the current name. The other 12 printed binomials stand.
 - Museum counts sum to 137.
 - **Re-run `Liu_etal_2016_TableS1.R` in RStudio** to confirm it reproduces the committed CSV/TSV.
 
+### Reader fixed 2026-08-05 — specimen provenance was being dropped silently
+
+`____EvoM1_TraitTable/EvoM1_read_hand_liu.R` wrote `hand_liu.xlsx` with **`specimen_key` empty in all
+137 rows**. Cause: the reader looked for a column called **`Key`** — that is the header *printed* in
+SI Table S1, but `Liu_etal_2016_TableS1.R` already renames it to **`specimen_key`** in the analysis
+table and public TSV. The lookup fell through to `NA_character_` with no warning, so the museum
+accessions — the whole reason specimen granularity was kept — vanished between the build and the
+trait table.
+
+Three defects fixed:
+
+1. `specimen_key` is read by the build's name, with the printed `Key` kept as a fallback.
+2. `museum` is carried through (it was being dropped entirely).
+3. `species_sci` now **prefers the build's paper-scoped resolution** instead of re-resolving with the
+   generic key. Re-resolving could give a different answer for the same row — the build maps
+   *Presbytis cristata* → *Trachypithecus cristatus* under `source_publication = Liu2016`, and that
+   decision must not be silently re-derived. Fallback resolution applies only to rows with no
+   `species_sci`.
+
+A hard `stop()` now guards the provenance column, so an all-empty `specimen_key` aborts the build
+instead of writing a table that looks fine. `hand_liu.xlsx` regenerated and verified: **137 specimen
+rows, 13 species, 137 accessions, 10 museums** (HMNH 32, AMNH 30, WITS 29, NMW 15, UV 10, UM-APC 9,
+MRAC 5, UNI-FI 4, YPM 2, ZMB 1 = 137), **0 cell mismatches** against the public TSV, and the
+*Presbytis → Trachypithecus* remap preserved alongside the printed name.
+
+> Regenerated with a Python mirror of the `.R` (no R in the authoring environment). **The `.R` is
+> canonical — re-run it in RStudio to confirm it reproduces the committed `hand_liu.xlsx`.**
+
 ### Still to do (curator)
 
-- `____EvoM1_TraitTable/EvoM1_read_hand_liu.R` — the `TODO(curator)` column marker is **resolved**:
-  the headline index is `GMI`, with `WS` as a second exposed measure.
-- Merge wiring into `__merging_behaviour` is **not** done (out of scope for this build).
+- Merge wiring into `__merging_behaviour` is **not** done. Two decisions are open, both recorded in
+  `__merging_behaviour/README__merging.md` if wired:
+  - **Liu adds no new species.** All 13 Liu species already carry Baker `peak_workspace` (13/13
+    overlap, checked 2026-08-05), so the scouting rationale "fills the manipulation axis for species
+    Baker doesn't cover" was wrong. Whether to wire it at all is a real choice.
+  - If wired, `WS`/`GMI` should be **their own Measures**, not keyed onto `peak_workspace` — the two
+    are different model outputs on different scales, so a shared `value_min`/`value_max` would be
+    meaningless. The Feix 2015 never-average flag still applies.
+  - Table S1 is **specimen-level**; the merge resolves one value per species, so an explicit
+    aggregation is required. Wired naively, `resolve_one()` would take whichever specimen sorts
+    first. Species n range from 45 (*Homo sapiens*) to 4 (*Gorilla gorilla*).
 
 ## Wire into `__merging_behaviour/behaviour_compiled.R` (only after `hand_liu.xlsx` exists)
 

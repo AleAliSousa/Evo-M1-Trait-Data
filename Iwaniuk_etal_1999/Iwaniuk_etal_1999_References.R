@@ -56,3 +56,21 @@ references <- references[order(references$ref_number), ]
 ## 3. SAVE
 write.csv(references, output_file, row.names = FALSE)
 message("Wrote ", nrow(references), " reference rows to: ", output_file)
+
+## ---- DOI-coded public TSV (__HOWTO_build_a_dataset_file.md sec 4, invariant 2) -----------
+## Added 2026-08-05: the script wrote the analysis CSV but never the public TSV, so the table
+## was built but unpublished. Same object, same columns - only the separator differs.
+tsv_dir      <- if (!is.na(base)) file.path(base, "__Public", "comparative-data") else NA_character_
+item_encoded <- if (!is.na(base) && file.exists(file.path(base, "__ReadMe.xlsx"))) {
+  filecodes <- readxl::read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
+  filecodes$"Item encoded"[match(item_name, filecodes$"Item name")]
+} else NA_character_
+if (is.na(item_encoded) || !nzchar(item_encoded)) {
+  warning("No 'Item encoded' for '", item_name, "' in __ReadMe.xlsx; public TSV skipped.")
+} else if (is.na(tsv_dir) || !dir.exists(path.expand(tsv_dir))) {
+  warning("Shared folder not found: ", tsv_dir, "; public TSV skipped.")
+} else {
+  write.table(references, file = file.path(tsv_dir, paste0(item_encoded, ".tsv")),
+              sep = "\t", row.names = FALSE)
+  message("Wrote ", file.path(tsv_dir, paste0(item_encoded, ".tsv")))
+}

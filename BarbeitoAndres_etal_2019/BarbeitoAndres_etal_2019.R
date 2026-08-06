@@ -113,3 +113,27 @@ message("Barbeito 2019: volumes ", nrow(barbeito_volumes),
         " | cell_number ", nrow(barbeito_cellnumber),
         " | cell_density ", nrow(barbeito_celldensity),
         " -> tidy ", nrow(tidy), " rows.")
+
+## ---- DOI-coded public TSVs (__HOWTO_build_a_dataset_file.md sec 4, invariant 2) ----------
+## Added 2026-08-05. write_csv_tsv() above writes LOCAL .tsv copies next to the CSVs; those are
+## working files, not the published table. The three registered items still need the DOI-coded
+## copy in __Public/comparative-data/, which is what the merges and the Shiny app read.
+publish <- function(df, item) {
+  if (is.na(base) || !file.exists(file.path(base, "__ReadMe.xlsx"))) {
+    warning("Repo root not found; public TSV skipped for ", item); return(invisible(NULL))
+  }
+  filecodes <- readxl::read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
+  enc     <- filecodes$"Item encoded"[match(item, filecodes$"Item name")]
+  tsv_dir <- file.path(base, "__Public", "comparative-data")
+  if (is.na(enc) || !nzchar(enc)) {
+    warning("No 'Item encoded' for '", item, "' in __ReadMe.xlsx; public TSV skipped.")
+  } else if (!dir.exists(path.expand(tsv_dir))) {
+    warning("Shared folder not found: ", tsv_dir, "; public TSV skipped.")
+  } else {
+    write.table(df, file.path(tsv_dir, paste0(enc, ".tsv")), sep = "\t", row.names = FALSE)
+    message("Wrote ", file.path(tsv_dir, paste0(enc, ".tsv")))
+  }
+}
+publish(barbeito_volumes,     "BarbeitoAndres_etal_2019_volumes")
+publish(barbeito_cellnumber,  "BarbeitoAndres_etal_2019_cellnumber")
+publish(barbeito_celldensity, "BarbeitoAndres_etal_2019_celldensity")

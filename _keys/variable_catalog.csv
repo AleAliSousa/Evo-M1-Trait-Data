@@ -20,7 +20,9 @@ Bush_Allman_2003,Bush_Allman_2003,group,NA,(structure-agnostic; see data columns
 Bush_Allman_2004_a,Bush_Allman_2004_a,group_size,NA,(structure-agnostic; see data columns),NA,GroupSize,GroupSize,NA,secondary,NA,mean group size
 Heiss_etal_2004,Heiss_etal_2004,category,NA,(structure-agnostic; see data columns),NA,Grouping,Grouping,NA,primary,Homo sapiens,region grouping (Cerebral cortex / Forebrain nuclei / Brain stem nuclei / Cerebellum / White matter)
 BarbeitoAndres_etal_2019,BarbeitoAndres_etal_2019,measure,NA,(structure-agnostic; see data columns),NA,MeasureType,MeasureType,NA,primary,NA,absolute_volume | cell_number | cell_density
+Heuer_etal_2019,Heuer_etal_2019_S1,SNR,NA,(structure-agnostic; see data columns),NA,Ratio,Ratio,point,info,Primates,signal-to-noise ratio of the scan
 Kaufman__2004,Kaufman__2004_TableA1..A14,Reference,NA,(structure-agnostic; see data columns),NA,Reference,Reference,NA,info,Mammals,"literature citation for the study, as printed (author, year)"
+Capellini_etal_2008,Capellini_etal_2008_sleep-data,Lab_condition_score,NA,(structure-agnostic; see data columns),NA,Score,Score,point,info,Mammals,composite laboratory-condition quality score
 Bush_Allman_2004_a,Bush_Allman_2004_a,group_type,NA,(structure-agnostic; see data columns),NA,SocialGroup,SocialGroup,NA,secondary,NA,social group type
 Heiss_etal_2004,Heiss_etal_2004,P,NA,(structure-agnostic; see data columns),NA,Stat,Stat,p,secondary,Homo sapiens,p-value for the hemispheric asymmetry
 Kaufman__2004,Kaufman__2004_TableA1..A14,Region,NA,(structure-agnostic; see data columns),NA,Structure,Structure,NA,primary,Mammals,brain region for this table (dissertation's own Appendix numbering)
@@ -38,6 +40,9 @@ AvelinodeSouza_etal_2025,AvelinodeSouza_etal_2025_TABLE1,Neurons,NA,(structure-a
 AvelinodeSouza_etal_2025,AvelinodeSouza_etal_2025_TABLE1,Non-neuronal cells,NA,(structure-agnostic; see data columns),NA,O.n,count (number),NA,primary,Cetaceans & other placental mammals,number of other (non-neuronal) cells
 Burish_etal_2010,Burish_etal_2010,N,NA,(structure-agnostic; see data columns),NA,N.n,count (number),NA,review,Primates (+ other mammals),average number of neurons
 Burish_etal_2010,Burish_etal_2010,O,NA,(structure-agnostic; see data columns),NA,O.n,count (number),NA,review,Primates (+ other mammals),average number of other (nonneuronal) cells in the structure
+Capellini_etal_2008,Capellini_etal_2008_sleep-data,N_reported,NA,(structure-agnostic; see data columns),NA,Count,count (number),point,info,Mammals,number of animals as printed by the primary study
+Capellini_etal_2008,Capellini_etal_2008_sleep-data,N_in_mean,NA,(structure-agnostic; see data columns),NA,Count,count (number),point,info,Mammals,number of animals contributing to the calculated mean
+Capellini_etal_2008,Capellini_etal_2008_sleep-data,Animals_sampled,NA,(structure-agnostic; see data columns),NA,Count,count (number),point,info,Mammals,number of animals sampled
 DosSantos_etal_2017,DosSantos_etal_2017_TableS1,N,NA,(structure-agnostic; see data columns),NA,N.n,count (number),NA,primary,Marsupials,number of neurons
 DosSantos_etal_2020,DosSantos_etal_2020_Table1,C,NA,(structure-agnostic; see data columns),NA,C.n,count (number),NA,primary,Mammals,Total number of cells in the structure
 DosSantos_etal_2020,DosSantos_etal_2020_Table1,N,NA,(structure-agnostic; see data columns),NA,N.n,count (number),NA,primary,Mammals,Total number of neurons in the structure
@@ -45,10 +50,17 @@ DosSantos_etal_2020,DosSantos_etal_2020_Table1,I,NA,(structure-agnostic; see dat
 DosSantos_etal_2020,DosSantos_etal_2020_Table1,No. of samples,NA,(structure-agnostic; see data columns),NA,S.n,count (number),NA,primary,Mammals,number of samples of free nuclei prepared with isotropic fractionator
 HerculanoHouzel_etal_2015,HerculanoHouzel_2015,"N, n",NA,(structure-agnostic; see data columns),NA,N.n,count (number),NA,both,Mammals,number of neurons
 HerculanoHouzel_etal_2015,HerculanoHouzel_2015,"O, n",NA,(structure-agnostic; see data columns),NA,O.n,count (number),NA,both,Mammals,number of other cells
+Heuer_etal_2019,Heuer_etal_2019_S1,volume_dim_x,NA,(structure-agnostic; see data columns),NA,Count,count (number),point,info,Primates,image matrix size along x
+Heuer_etal_2019,Heuer_etal_2019_S1,volume_dim_y,NA,(structure-agnostic; see data columns),NA,Count,count (number),point,info,Primates,image matrix size along y
+Heuer_etal_2019,Heuer_etal_2019_S1,volume_dim_z,NA,(structure-agnostic; see data columns),NA,Count,count (number),point,info,Primates,image matrix size along z
+Heuer_etal_2019,Heuer_etal_2019_Table1,n_individuals,NA,(structure-agnostic; see data columns),NA,Count,count (number),point,info,Primates,number of individuals scanned for that species
 JardimMesseder_etal_2017,JardimMesseder_etal_2017_Table1,N,NA,(structure-agnostic; see data columns),NA,N.n,count (number),NA,primary,Carnivores & other companion mammals,number of neurons
 JardimMesseder_etal_2017,JardimMesseder_etal_2017_Table1,O,NA,(structure-agnostic; see data columns),NA,O.n,count (number),NA,primary,Carnivores & other companion mammals,number of other (non-neuronal) cells
 Kochiyama_etal_2018,Kochiyama_etal_2018_ExtendedDataTable1,n_AAL_regions,NA,(structure-agnostic; see data columns),NA,count,count (number),NA,info,NA,number of AAL sub-regions in the parcel
 Kverkova_etal_2018,Kverkova_etal_2018,N.n,NA,(structure-agnostic; see data columns),NA,N.n,count (number),NA,primary,Rodents (African mole-rats +),number of neurons
+Reader_etal_2011,Reader_etal_2011_Data,Journal_search_article_count,NA,(structure-agnostic; see data columns),NA,report_count,count (number),count,info,Primates,total reports found per species in the journal back-issue search regardless of content
+Reader_etal_2011,Reader_etal_2011_Data,Zoological_record_article_count,NA,(structure-agnostic; see data columns),NA,report_count,count (number),count,info,Primates,number of Zoological Record articles per species 1993-2001
+Reader_etal_2011,Reader_etal_2011_Data,Journal_reports_2002,NA,(structure-agnostic; see data columns),NA,report_count,count (number),count,info,Primates,total reports per species in the 2002 survey
 AvelinodeSouza_etal_2025,AvelinodeSouza_etal_2025_TABLE1,Neurons/mg,NA,(structure-agnostic; see data columns),NA,N.p.mg,density (per mass/volume),NA,primary,Cetaceans & other placental mammals,neuronal density (neurons/mg)
 AvelinodeSouza_etal_2025,AvelinodeSouza_etal_2025_TABLE1,Non-neuronal cells/mg,NA,(structure-agnostic; see data columns),NA,O.p.mg,density (per mass/volume),NA,primary,Cetaceans & other placental mammals,non-neuronal (other) cell density (cells/mg)
 Burish_etal_2010,Burish_etal_2010,DN,NA,(structure-agnostic; see data columns),NA,N.p.mg,density (per mass/volume),NA,review,Primates (+ other mammals),average density of neurons per milligram of tissue in the structure
@@ -60,6 +72,9 @@ HerculanoHouzel_etal_2015,HerculanoHouzel_2015,N/mg,NA,(structure-agnostic; see 
 HerculanoHouzel_etal_2015,HerculanoHouzel_2015,O/mg,NA,(structure-agnostic; see data columns),NA,O.p.mg,density (per mass/volume),NA,both,Mammals,other cells density (in cells/mg)
 JardimMesseder_etal_2017,JardimMesseder_etal_2017_Table1,DN,NA,(structure-agnostic; see data columns),NA,N.p.mg,density (per mass/volume),NA,primary,Carnivores & other companion mammals,neuronal density (in neurons/mg)
 Burish_etal_2010,Burish_etal_2010,Length,NA,(structure-agnostic; see data columns),NA,Length.mm,length,NA,review,Primates (+ other mammals),average length of the structure (in millimeters)
+Heuer_etal_2019,Heuer_etal_2019_S1,voxel_size_x_mm,NA,(structure-agnostic; see data columns),NA,Length.mm,length,point,info,Primates,voxel size along x
+Heuer_etal_2019,Heuer_etal_2019_S1,voxel_size_y_mm,NA,(structure-agnostic; see data columns),NA,Length.mm,length,point,info,Primates,voxel size along y
+Heuer_etal_2019,Heuer_etal_2019_S1,voxel_size_z_mm,NA,(structure-agnostic; see data columns),NA,Length.mm,length,point,info,Primates,voxel size along z
 AvelinodeSouza_etal_2025,AvelinodeSouza_etal_2025_TABLE1,"Mass, g",NA,(structure-agnostic; see data columns),NA,Mass.g,mass,NA,primary,Cetaceans & other placental mammals,mass (g)
 Burish_etal_2010,Burish_etal_2010,M,NA,(structure-agnostic; see data columns),NA,Mass.g,mass,NA,review,Primates (+ other mammals),average mass of the structure (in grams)
 Burish_etal_2010,Burish_etal_2010,%MBD,NA,(structure-agnostic; see data columns),NA,p.C.Body.mass,mass,NA,review,Primates (+ other mammals),average structure mass fraction (expressed as percentage of the whole body mass)
@@ -70,7 +85,7 @@ DosSantos_etal_2017,DosSantos_etal_2017_TableS1,M,NA,(structure-agnostic; see da
 DosSantos_etal_2020,DosSantos_etal_2020_Table1,Structure mass (g),NA,(structure-agnostic; see data columns),NA,Mass.g,mass,NA,primary,Mammals,mass in grams
 Finlay_etal_2006,Finlay_etal_2006_Table6.1,bodyweight_g,NA,(structure-agnostic; see data columns),NA,Mass.g,mass,NA,primary,Mammals (marsupial to primate),body weight
 HerculanoHouzel_etal_2015,HerculanoHouzel_2015,"Mass, g",NA,(structure-agnostic; see data columns),NA,Mass.g,mass,NA,both,Mammals,mass (g)
-Jacobs_etal_2018,Jacobs_etal_2018_Table3,body_mass,NA,(structure-agnostic; see data columns),NA,Mass,mass,point,info,Carnivores + Primates,body mass of the specimen
+Jacobs_etal_2018,Jacobs_etal_2018_Table3,body_mass_g,NA,(structure-agnostic; see data columns),NA,Mass.g,mass,point,info,Carnivores + Primates,body mass of the specimen
 JardimMesseder_etal_2017,JardimMesseder_etal_2017_Table1,M,NA,(structure-agnostic; see data columns),NA,Mass.g,mass,NA,primary,Carnivores & other companion mammals,mass of the structure
 JardimMesseder_etal_2017,JardimMesseder_etal_2017_Table1,M,NA,(structure-agnostic; see data columns),NA,Mass.kg,mass,NA,primary,Carnivores & other companion mammals,mass of the structure
 Kverkova_etal_2018,Kverkova_etal_2018_TableS1,Mass.g,NA,(structure-agnostic; see data columns),NA,Mass.g,mass,NA,primary,Rodents (African mole-rats +),mass in grams
@@ -520,20 +535,39 @@ Young_etal_2013,Young_etal_2013_Table1,M1_area_mm2,M1,M1,NA,Area.mm2,surface are
 Young_etal_2013,Young_etal_2013_Table1,M1_area_mm2_sd,M1,M1,NA,Area.mm2,surface area,sd,info,Primates,SD of M1 surface area
 Jacobs_etal_2018,Jacobs_etal_2018_Table3,neuron_class,M1 (regional),M1 (regional),NA,Class,Class,NA,info,Carnivores + Primates,layer V pyramidal or gigantopyramidal (= Betz cell in primates)
 Jacobs_etal_2018,Jacobs_etal_2018_Table5,neuron_type,M1 (regional),M1 (regional),NA,Class,Class,NA,info,Mammals (7 orders),"Superficial (layer III pyramidal), Deep (layer V pyramidal), or Gigantopyramidal (Betz cell in primates)"
-Jacobs_etal_2018,Jacobs_etal_2018_Table5,dendritic_spine_density_M1,M1 (regional),M1 (regional),NA,Density,Density,mean,primary,Mammals (7 orders),number of spines per um of dendritic length (DSD)
-Jacobs_etal_2018,Jacobs_etal_2018_Table5,soma_depth_M1,M1 (regional),M1 (regional),NA,Depth,Depth,mean,primary,Mammals (7 orders),soma depth from the pial surface (SoDepth)
-Jacobs_etal_2018,Jacobs_etal_2018_Table5,gigantopyramidal_absent,M1 (regional),M1 (regional),NA,Presence,Presence,point,primary,Mammals (7 orders),"biological zero: gigantopyramidal neurons not distinguishable in mongoose, rabbit, rat, wallaby"
-Jacobs_etal_2018,Jacobs_etal_2018_Table3,n_cells,M1 (regional),M1 (regional),NA,Count,count (number),point,info,Carnivores + Primates,number of cells measured for that species x neuron class x measure
+Jacobs_etal_2018,Jacobs_etal_2018_Table5,dendritic_spine_density_M1,M1 (regional),M1 (regional),NA,Density.per_um,Density.per_um,mean,primary,Mammals (7 orders),number of spines per um of dendritic length (DSD)
+Jacobs_etal_2018,Jacobs_etal_2018_Table5,dendritic_spine_density_M1_sd,M1 (regional),M1 (regional),NA,Density.per_um,Density.per_um,dispersion,info,Mammals (7 orders),standard deviation printed alongside the mean
+Jacobs_etal_2018,Jacobs_etal_2018_Table5,soma_depth_M1,M1 (regional),M1 (regional),NA,Depth.um,Depth.um,mean,primary,Mammals (7 orders),soma depth from the pial surface (SoDepth)
+Jacobs_etal_2018,Jacobs_etal_2018_Table5,soma_depth_M1_sd,M1 (regional),M1 (regional),NA,Depth.um,Depth.um,dispersion,info,Mammals (7 orders),standard deviation printed alongside the mean
+Jacobs_etal_2018,Jacobs_etal_2018_Table5,gigantopyramidal_absent,M1 (regional),M1 (regional),NA,Presence,Presence,point,primary,Mammals (7 orders),"biological zero: gigantopyramidal neurons not distinguishable in banded mongoose, Flemish giant rabbit, rat, Bennett's wallaby"
+Jacobs_etal_2018,Jacobs_etal_2018_Table3,n_length,M1 (regional),M1 (regional),NA,Count,count (number),point,info,Carnivores + Primates,number of cells measured for the soma-length estimate
+Jacobs_etal_2018,Jacobs_etal_2018_Table3,n_area,M1 (regional),M1 (regional),NA,Count,count (number),point,info,Carnivores + Primates,number of cells measured for the soma-area estimate
+Jacobs_etal_2018,Jacobs_etal_2018_Table3,n_volume,M1 (regional),M1 (regional),NA,Count,count (number),point,info,Carnivores + Primates,number of cells measured for the soma-volume estimate
 Jacobs_etal_2018,Jacobs_etal_2018_Table5,n_cells,M1 (regional),M1 (regional),NA,Count,count (number),point,info,Mammals (7 orders),number of cells traced
 Jacobs_etal_2018,Jacobs_etal_2018_Table5,dendritic_segment_count_M1,M1 (regional),M1 (regional),NA,Count,count (number),mean,primary,Mammals (7 orders),number of dendritic segments per neuron (DSC)
+Jacobs_etal_2018,Jacobs_etal_2018_Table5,dendritic_segment_count_M1_sd,M1 (regional),M1 (regional),NA,Count,count (number),dispersion,info,Mammals (7 orders),standard deviation printed alongside the mean
 Jacobs_etal_2018,Jacobs_etal_2018_Table5,dendritic_spine_number_M1,M1 (regional),M1 (regional),NA,Count,count (number),mean,primary,Mammals (7 orders),number of spines per neuron (DSN)
-Jacobs_etal_2018,Jacobs_etal_2018_Table3,soma_length_M1,M1 (regional),M1 (regional),NA,Length,length,mean,primary,Carnivores + Primates,soma length of layer V pyramidal / gigantopyramidal neurons in M1
-Jacobs_etal_2018,Jacobs_etal_2018_Table5,total_dendritic_length_M1,M1 (regional),M1 (regional),NA,Length,length,mean,primary,Mammals (7 orders),total dendritic length (TDL)
-Jacobs_etal_2018,Jacobs_etal_2018_Table5,mean_segment_length_M1,M1 (regional),M1 (regional),NA,Length,length,mean,primary,Mammals (7 orders),average length of dendritic segments (MSL)
-Jacobs_etal_2018,Jacobs_etal_2018_Table3,soma_area_M1,M1 (regional),M1 (regional),NA,Area,surface area,mean,primary,Carnivores + Primates,soma cross-sectional area of layer V pyramidal / gigantopyramidal neurons in M1
-Jacobs_etal_2018,Jacobs_etal_2018_Table5,soma_size_M1,M1 (regional),M1 (regional),NA,Area,surface area,mean,primary,Mammals (7 orders),soma size (SoSize)
-Jacobs_etal_2018,Jacobs_etal_2018_Table3,soma_volume_M1,M1 (regional),M1 (regional),NA,Volume,volume,mean,primary,Carnivores + Primates,soma volume of layer V pyramidal / gigantopyramidal neurons in M1
-Jacobs_etal_2018,Jacobs_etal_2018_Table5,dendritic_volume_M1,M1 (regional),M1 (regional),NA,Volume,volume,mean,primary,Mammals (7 orders),dendritic volume (Vol)
+Jacobs_etal_2018,Jacobs_etal_2018_Table5,dendritic_spine_number_M1_sd,M1 (regional),M1 (regional),NA,Count,count (number),dispersion,info,Mammals (7 orders),standard deviation printed alongside the mean
+Jacobs_etal_2018,Jacobs_etal_2018_Table3,soma_length_M1,M1 (regional),M1 (regional),NA,Length.um,length,mean,primary,Carnivores + Primates,mean soma length of the neuron class in M1
+Jacobs_etal_2018,Jacobs_etal_2018_Table3,soma_length_M1_sd,M1 (regional),M1 (regional),NA,Length.um,length,dispersion,info,Carnivores + Primates,standard deviation printed alongside the soma-length mean
+Jacobs_etal_2018,Jacobs_etal_2018_Table3,soma_length_M1_min,M1 (regional),M1 (regional),NA,Length.um,length,range,info,Carnivores + Primates,lower bound of the printed soma-length range
+Jacobs_etal_2018,Jacobs_etal_2018_Table3,soma_length_M1_max,M1 (regional),M1 (regional),NA,Length.um,length,range,info,Carnivores + Primates,upper bound of the printed soma-length range
+Jacobs_etal_2018,Jacobs_etal_2018_Table5,total_dendritic_length_M1,M1 (regional),M1 (regional),NA,Length.um,length,mean,primary,Mammals (7 orders),total dendritic length (TDL)
+Jacobs_etal_2018,Jacobs_etal_2018_Table5,total_dendritic_length_M1_sd,M1 (regional),M1 (regional),NA,Length.um,length,dispersion,info,Mammals (7 orders),standard deviation printed alongside the mean
+Jacobs_etal_2018,Jacobs_etal_2018_Table5,mean_segment_length_M1,M1 (regional),M1 (regional),NA,Length.um,length,mean,primary,Mammals (7 orders),average length of dendritic segments (MSL)
+Jacobs_etal_2018,Jacobs_etal_2018_Table5,mean_segment_length_M1_sd,M1 (regional),M1 (regional),NA,Length.um,length,dispersion,info,Mammals (7 orders),standard deviation printed alongside the mean
+Jacobs_etal_2018,Jacobs_etal_2018_Table3,soma_area_M1,M1 (regional),M1 (regional),NA,Area.um2,surface area,mean,primary,Carnivores + Primates,mean soma cross-sectional area of the neuron class in M1
+Jacobs_etal_2018,Jacobs_etal_2018_Table3,soma_area_M1_sd,M1 (regional),M1 (regional),NA,Area.um2,surface area,dispersion,info,Carnivores + Primates,standard deviation printed alongside the soma-area mean
+Jacobs_etal_2018,Jacobs_etal_2018_Table3,soma_area_M1_min,M1 (regional),M1 (regional),NA,Area.um2,surface area,range,info,Carnivores + Primates,lower bound of the printed soma-area range
+Jacobs_etal_2018,Jacobs_etal_2018_Table3,soma_area_M1_max,M1 (regional),M1 (regional),NA,Area.um2,surface area,range,info,Carnivores + Primates,upper bound of the printed soma-area range
+Jacobs_etal_2018,Jacobs_etal_2018_Table5,soma_size_M1,M1 (regional),M1 (regional),NA,Area.um2,surface area,mean,primary,Mammals (7 orders),soma size (SoSize)
+Jacobs_etal_2018,Jacobs_etal_2018_Table5,soma_size_M1_sd,M1 (regional),M1 (regional),NA,Area.um2,surface area,dispersion,info,Mammals (7 orders),standard deviation printed alongside the mean
+Jacobs_etal_2018,Jacobs_etal_2018_Table3,soma_volume_M1,M1 (regional),M1 (regional),NA,Volume.um3,volume,mean,primary,Carnivores + Primates,mean soma volume of the neuron class in M1
+Jacobs_etal_2018,Jacobs_etal_2018_Table3,soma_volume_M1_sd,M1 (regional),M1 (regional),NA,Volume.um3,volume,dispersion,info,Carnivores + Primates,standard deviation printed alongside the soma-volume mean
+Jacobs_etal_2018,Jacobs_etal_2018_Table3,soma_volume_M1_min,M1 (regional),M1 (regional),NA,Volume.um3,volume,range,info,Carnivores + Primates,lower bound of the printed soma-volume range
+Jacobs_etal_2018,Jacobs_etal_2018_Table3,soma_volume_M1_max,M1 (regional),M1 (regional),NA,Volume.um3,volume,range,info,Carnivores + Primates,upper bound of the printed soma-volume range
+Jacobs_etal_2018,Jacobs_etal_2018_Table5,dendritic_volume_M1,M1 (regional),M1 (regional),NA,Volume.um3,volume,mean,primary,Mammals (7 orders),dendritic volume (Vol)
+Jacobs_etal_2018,Jacobs_etal_2018_Table5,dendritic_volume_M1_sd,M1 (regional),M1 (regional),NA,Volume.um3,volume,dispersion,info,Mammals (7 orders),standard deviation printed alongside the mean
 Sherwood_etal_2004_I,Sherwood_etal_2004_I,meany.o,M1_GLIprofile,M1_GLIprofile,NA,GLI.profile.moment,GLI.profile.moment,mean,primary,NA,mean of y (GLI) of the original M1 layer GLI profile
 Sherwood_etal_2004_I,Sherwood_etal_2004_I,meanx.o,M1_GLIprofile,M1_GLIprofile,NA,GLI.profile.moment,GLI.profile.moment,mean,primary,NA,mean of x (cortical depth) of the original profile
 Sherwood_etal_2004_I,Sherwood_etal_2004_I,sd.o,M1_GLIprofile,M1_GLIprofile,NA,GLI.profile.moment,GLI.profile.moment,SD,primary,NA,standard deviation of the original profile
@@ -624,14 +658,6 @@ Lewitus_etal_2013,Lewitus_etal_2013_TableS2partial,Neuron_density_per_mm3,Neocor
 Lewitus_etal_2013,Lewitus_etal_2013_TableS2partial,Neuron_density_per_mm3,Neocortex,Neocortex,brain_structure_volume,N.p.mm3,density (per mass/volume),NA,secondary,Mammals,Neuronal density in neocortex
 Lewitus_etal_2013,Lewitus_etal_2013_TableS2partial,Astrocyte_density_per_mm3,Neocortex,Neocortex,cell_counts,A.p.mm3,density (per mass/volume),NA,secondary,Mammals,Astrocyte density in neocortex
 Lewitus_etal_2013,Lewitus_etal_2013_TableS2partial,Astrocyte_density_per_mm3,Neocortex,Neocortex,brain_structure_volume,A.p.mm3,density (per mass/volume),NA,secondary,Mammals,Astrocyte density in neocortex
-Heuer_etal_2019,Heuer_etal_2019_Data,absolute_gyrification_index,Neocortex,Neocortex,cell_counts,gyrification_3D,gyrification_3D,point,secondary,Primates,"3-D gyrification: ""excess"" of the cortical surface over its volume-normalised convex hull"
-Heuer_etal_2019,Heuer_etal_2019_Data,absolute_gyrification_index,Neocortex,Neocortex,brain_structure_volume,gyrification_3D,gyrification_3D,point,secondary,Primates,"3-D gyrification: ""excess"" of the cortical surface over its volume-normalised convex hull"
-Heuer_etal_2019,Heuer_etal_2019_Data,total_folding_length,Neocortex,Neocortex,cell_counts,Length.mm,length,point,secondary,Primates,total length of the curves dividing sulci from gyri
-Heuer_etal_2019,Heuer_etal_2019_Data,total_folding_length,Neocortex,Neocortex,brain_structure_volume,Length.mm,length,point,secondary,Primates,total length of the curves dividing sulci from gyri
-Heuer_etal_2019,Heuer_etal_2019_Data,average_fold_wavelength,Neocortex,Neocortex,cell_counts,Length.mm,length,point,secondary,Primates,mean folding wavelength (surface of convex hull / half total folding length)
-Heuer_etal_2019,Heuer_etal_2019_Data,average_fold_wavelength,Neocortex,Neocortex,brain_structure_volume,Length.mm,length,point,secondary,Primates,mean folding wavelength (surface of convex hull / half total folding length)
-Heuer_etal_2019,Heuer_etal_2019_Data,average_fold_depth,Neocortex,Neocortex,cell_counts,Length.mm,length,point,secondary,Primates,mean fold depth
-Heuer_etal_2019,Heuer_etal_2019_Data,average_fold_depth,Neocortex,Neocortex,brain_structure_volume,Length.mm,length,point,secondary,Primates,mean fold depth
 Collins_etal_2016,Collins_etal_2016_Table1,pct_neurons,Neocortex,Neocortex,cell_counts,pct,percentage (relative),NA,primary,Primates,fraction of cells that are neurons
 Collins_etal_2016,Collins_etal_2016_Table1,pct_neurons,Neocortex,Neocortex,brain_structure_volume,pct,percentage (relative),NA,primary,Primates,fraction of cells that are neurons
 Young_etal_2013_b,Young_etal_2013_b_Table1,pct_neurons,Neocortex,Neocortex,cell_counts,pct,percentage (relative),NA,secondary,Primates,average percent of cells that are neurons
@@ -646,10 +672,6 @@ Collins_etal_2016,Collins_etal_2016_Table1,area_cm2,Neocortex,Neocortex,cell_cou
 Collins_etal_2016,Collins_etal_2016_Table1,area_cm2,Neocortex,Neocortex,brain_structure_volume,Area.cm2,surface area,NA,primary,Primates,cortical surface area of the region
 Finlay_etal_2006,Finlay_etal_2006_Table6.1,cortical_area_mm2,Neocortex,Neocortex,cell_counts,Area.mm2,surface area,NA,primary,Mammals (marsupial to primate),total cortical sheet area
 Finlay_etal_2006,Finlay_etal_2006_Table6.1,cortical_area_mm2,Neocortex,Neocortex,brain_structure_volume,Area.mm2,surface area,NA,primary,Mammals (marsupial to primate),total cortical sheet area
-Heuer_etal_2019,Heuer_etal_2019_Data,cerebral_surface_area,Neocortex,Neocortex,cell_counts,Surface.mm2,surface area,point,secondary,Primates,total cerebral (pial) surface area (MRI)
-Heuer_etal_2019,Heuer_etal_2019_Data,cerebral_surface_area,Neocortex,Neocortex,brain_structure_volume,Surface.mm2,surface area,point,secondary,Primates,total cerebral (pial) surface area (MRI)
-Heuer_etal_2019,Heuer_etal_2019_Data,convex_hull_surface_area,Neocortex,Neocortex,cell_counts,Surface.mm2,surface area,point,info,Primates,surface area of the volume-normalised convex hull
-Heuer_etal_2019,Heuer_etal_2019_Data,convex_hull_surface_area,Neocortex,Neocortex,brain_structure_volume,Surface.mm2,surface area,point,info,Primates,surface area of the volume-normalised convex hull
 Turner_etal_2016,Turner_etal_2016_Table1,brain_surface_area_cm2,Neocortex,Neocortex,cell_counts,Area.cm2,surface area,NA,info,Primates,brain (neocortical sheet) surface area as printed
 Turner_etal_2016,Turner_etal_2016_Table1,brain_surface_area_cm2,Neocortex,Neocortex,brain_structure_volume,Area.cm2,surface area,NA,info,Primates,brain (neocortical sheet) surface area as printed
 Turner_etal_2016,Turner_etal_2016_Table1,CorticalSurface_Area.mm2,Neocortex,Neocortex,cell_counts,Area.mm2,surface area,NA,primary,Primates,total unfolded neocortical sheet surface area per hemisphere
@@ -839,7 +861,7 @@ Iwaniuk_etal_2001,Iwaniuk_etal_2001_Table3,EQ,WholeBrain,WholeBrain,cell_counts,
 deSousa_etal_2010,deSousa_etal_2010,brain_N,WholeBrain,WholeBrain,cell_counts,Count,count (number),N,metadata,Primates,number of specimens for brain volume
 Collins_etal_2016,Collins_etal_2016_Table1,brain_mass_g,WholeBrain,WholeBrain,cell_counts,Mass.g,mass,NA,info,Primates,whole brain mass
 Finlay_etal_2006,Finlay_etal_2006_Table6.1,brainweight_g,WholeBrain,WholeBrain,cell_counts,Mass.g,mass,NA,primary,Mammals (marsupial to primate),brain weight
-Jacobs_etal_2018,Jacobs_etal_2018_Table3,brain_mass,Whole brain,WholeBrain,cell_counts,Mass,mass,point,info,Carnivores + Primates,brain mass of the specimen
+Jacobs_etal_2018,Jacobs_etal_2018_Table3,brain_mass_mg,Whole brain,WholeBrain,cell_counts,Mass.mg,mass,point,info,Carnivores + Primates,brain mass of the specimen
 Kazu_etal_2014,Kazu_etal_2014_Table1,"Brain mass, g",WholeBrain,WholeBrain,cell_counts,Mass.g,mass,NA,primary,Artiodactyla,whole-brain mass (g)
 Turner_etal_2016,Turner_etal_2016_Table1,brain_weight_g,WholeBrain,WholeBrain,cell_counts,Mass.g,mass,NA,info,Primates,whole brain mass as printed
 Turner_etal_2016,Turner_etal_2016_Table1,Brain_Mass.mg,WholeBrain,WholeBrain,cell_counts,Mass.mg,mass,NA,secondary,Primates,whole brain mass in project units
@@ -916,15 +938,30 @@ Semendeferi_Damasio_2000,Semendeferi_Damasio_2000_Table2,Temporal_Vol.mm3,tempor
 Genoud_etal_2018,Genoud_etal_2018_TableS2,BMR.mlO2_h,whole body,whole body,NA,BMR.mlO2_h,BMR.mlO2_h,mean,secondary,Mammalia,basal metabolic rate
 Genoud_etal_2018,Genoud_etal_2018_TableS2,Body_mass.g,whole body,whole body,NA,Mass.g,mass,mean,secondary,Mammalia,body mass
 Genoud_etal_2018,Genoud_etal_2018_TableS2,BMR_pct,whole body,whole body,NA,pct.expected,percentage (relative),NA,secondary,Mammalia,BMR as % of the value expected from BMR = 2.382 * mass^0.729 (PGLS on SELECT mammals)
-Capellini_etal_2008,Capellini_etal_2008_Data,TST_h,whole-organism,whole-organism,NA,Sleep.h_day,Sleep.h_day,point,primary,Mammals,total sleep time as reported
-Capellini_etal_2008,Capellini_etal_2008_Data,REM_h,whole-organism,whole-organism,NA,Sleep.h_day,Sleep.h_day,point,primary,Mammals,REM sleep time as reported
-Capellini_etal_2008,Capellini_etal_2008_Data,NREM_h,whole-organism,whole-organism,NA,Sleep.h_day,Sleep.h_day,point,info,Mammals,NREM / slow-wave sleep time as reported
-Capellini_etal_2008,Capellini_etal_2008_Data,Sleep_h_day,whole-organism,whole-organism,NA,Sleep.h_day,Sleep.h_day,point,primary,Mammals,total daily sleep (project standardized term)
+Capellini_etal_2008,Capellini_etal_2008_sleep-data,Sleep_h_day,whole-organism,whole-organism,NA,Sleep.h_day,Sleep.h_day,point,primary,Mammals,total daily sleep time as reported
+Capellini_etal_2008,Capellini_etal_2008_sleep-data,Sleep_h_day_drowsy_adj,whole-organism,whole-organism,NA,Sleep.h_day,Sleep.h_day,point,info,Mammals,total daily sleep adjusted for drowsiness
+Capellini_etal_2008,Capellini_etal_2008_sleep-data,REM_h,whole-organism,whole-organism,NA,Sleep.h_day,Sleep.h_day,point,primary,Mammals,paradoxical (REM) sleep time as reported
+Capellini_etal_2008,Capellini_etal_2008_sleep-data,NREM_h,whole-organism,whole-organism,NA,Sleep.h_day,Sleep.h_day,point,info,Mammals,quiet (NREM / slow-wave) sleep time as reported
+Capellini_etal_2008,Capellini_etal_2008_sleep-data,Sleep_h_day_in_water,whole-organism,whole-organism,NA,Sleep.h_day,Sleep.h_day,point,info,Mammals (marine),total daily sleep recorded in water
+Capellini_etal_2008,Capellini_etal_2008_sleep-data,Sleep_h_day_on_land,whole-organism,whole-organism,NA,Sleep.h_day,Sleep.h_day,point,info,Mammals (marine),total daily sleep recorded on land
+Capellini_etal_2008,Capellini_etal_2008_sleep-data,REM_h_in_water,whole-organism,whole-organism,NA,Sleep.h_day,Sleep.h_day,point,info,Mammals (marine),REM sleep recorded in water
+Capellini_etal_2008,Capellini_etal_2008_sleep-data,REM_h_on_land,whole-organism,whole-organism,NA,Sleep.h_day,Sleep.h_day,point,info,Mammals (marine),REM sleep recorded on land
+Capellini_etal_2008,Capellini_etal_2008_sleep-data,NREM_h_in_water,whole-organism,whole-organism,NA,Sleep.h_day,Sleep.h_day,point,info,Mammals (marine),quiet sleep recorded in water
+Capellini_etal_2008,Capellini_etal_2008_sleep-data,NREM_h_on_land,whole-organism,whole-organism,NA,Sleep.h_day,Sleep.h_day,point,info,Mammals (marine),quiet sleep recorded on land
+Capellini_etal_2008,Capellini_etal_2008_sleep-data,USWS,whole-organism,whole-organism,NA,Sleep.text,Sleep.text,NA,info,Mammals (marine),unihemispheric slow-wave sleep as reported by the primary study
+Capellini_etal_2008,Capellini_etal_2008_sleep-data,BSWS,whole-organism,whole-organism,NA,Sleep.text,Sleep.text,NA,info,Mammals (marine),bihemispheric slow-wave sleep as reported
+Capellini_etal_2008,Capellini_etal_2008_sleep-data,ASWS,whole-organism,whole-organism,NA,Sleep.text,Sleep.text,NA,info,Mammals (marine),asymmetric slow-wave sleep as reported
 MedinaGonzalez_2026,MedinaGonzalez_2026_Data,Top_speed,whole-organism,whole-organism,NA,Speed,Speed,point,primary,Mammals,reported top speed
+Capellini_etal_2008,Capellini_etal_2008_sleep-data,Sleep_cycle_min,whole-organism,whole-organism,NA,Time.min,Time.min,point,info,Mammals,length of one sleep cycle
 MedinaGonzalez_2026,MedinaGonzalez_2026_Data,Locomotor_habit,whole-organism,whole-organism,NA,category,category,point,primary,Mammals,locomotor habit class
-Capellini_etal_2008,Capellini_etal_2008_Data,REM_sleep_pct,whole-organism,whole-organism,NA,Sleep.pct,percentage (relative),point,primary,Mammals,per cent of total sleep spent in REM (project standardized term)
-Reader_etal_2011,Reader_etal_2011_Data,Innovation,whole-organism behaviour,whole-organism behaviour,NA,report_count,count (number),frequency,primary,Primates,frequency of reported behavioural innovation (novel/modified behaviour patterns)
-Reader_etal_2011,Reader_etal_2011_Data,Extractive_foraging,whole-organism behaviour,whole-organism behaviour,NA,report_count,count (number),frequency,primary,Primates,frequency of reported extractive foraging (obtaining embedded/encased food)
-Reader_etal_2011,Reader_etal_2011_Data,Tool_use,whole-organism behaviour,whole-organism behaviour,NA,report_count,count (number),frequency,primary,Primates,frequency of reported tool use
-Reader_etal_2011,Reader_etal_2011_Data,Social_learning,whole-organism behaviour,whole-organism behaviour,NA,report_count,count (number),frequency,primary,Primates,frequency of reported social learning
-Reader_etal_2011,Reader_etal_2011_Data,Tactical_deception,whole-organism behaviour,whole-organism behaviour,NA,report_count,count (number),frequency,primary,Primates,frequency of reported tactical deception
+Capellini_etal_2008,Capellini_etal_2008_sleep-data,REM_sleep_pct,whole-organism,whole-organism,NA,Sleep.pct,percentage (relative),point,primary,Mammals,per cent of total sleep spent in REM
+Reader_etal_2011,Reader_etal_2011_Data,Innovation,whole-organism behaviour,whole-organism behaviour,NA,report_count,count (number),count,primary,Primates,number of reported examples of behavioural innovation found in the literature survey
+Reader_etal_2011,Reader_etal_2011_Data,Tool_use,whole-organism behaviour,whole-organism behaviour,NA,report_count,count (number),count,primary,Primates,number of reported examples of tool use
+Reader_etal_2011,Reader_etal_2011_Data,Extractive_foraging,whole-organism behaviour,whole-organism behaviour,NA,report_count,count (number),count,primary,Primates,number of reported examples of extractive foraging
+Reader_etal_2011,Reader_etal_2011_Data,Social_learning,whole-organism behaviour,whole-organism behaviour,NA,report_count,count (number),count,primary,Primates,number of reported examples of social learning
+Reader_etal_2011,Reader_etal_2011_Data,Innovation_reduced,whole-organism behaviour,whole-organism behaviour,NA,report_count,count (number),count,info,Primates,innovation count after cases that also qualified as tool use / extractive foraging / tactical deception were removed
+Reader_etal_2011,Reader_etal_2011_Data,Tool_use_reduced,whole-organism behaviour,whole-organism behaviour,NA,report_count,count (number),count,info,Primates,tool-use count after multiply-qualifying cases were removed
+Reader_etal_2011,Reader_etal_2011_Data,Extractive_foraging_reduced,whole-organism behaviour,whole-organism behaviour,NA,report_count,count (number),count,info,Primates,extractive-foraging count after multiply-qualifying cases were removed
+Reader_etal_2011,Reader_etal_2011_Data,Innovation_2002,whole-organism behaviour,whole-organism behaviour,NA,report_count,count (number),count,secondary,Primates,innovation count from the Reader & Laland 2002 survey
+Reader_etal_2011,Reader_etal_2011_Data,Social_learning_2002,whole-organism behaviour,whole-organism behaviour,NA,report_count,count (number),count,secondary,Primates,social-learning count from the 2002 survey
+Reader_etal_2011,Reader_etal_2011_Data,Tool_use_2002,whole-organism behaviour,whole-organism behaviour,NA,report_count,count (number),count,secondary,Primates,tool-use count from the 2002 survey

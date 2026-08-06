@@ -1,0 +1,19 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+group_printed,printed taxonomic-group label,,,,info,Primates,Heuer_etal_2019_S1,same grouping as Table 1,source column Group
+Specimens_Heuer2019,common name exactly as printed in S1,,,,info,Primates,Heuer_etal_2019_S1,printed name preserved (invariant 3); S1 prints no binomials,source column Specimens
+species_sci,accepted binomial resolved via _keys/Stephan/species_key.csv (source_publication = Heuer2019),,,,info,Primates,Heuer_etal_2019_S1,"64 of 66 rows resolved; the two 'Gorilla' rows stay NA because one printed name covers two species",accepted names read off Table 1 of the same paper
+SpecimenID,the source archive's own specimen identifier,,,,info,Primates,Heuer_etal_2019_S1,"the only field that distinguishes the two gorillas (GorillaBeringeiG_0854 vs Gorilla_kinyani)",source column SpecimenID
+SNR,signal-to-noise ratio of the scan,,Ratio,point,info,Primates,Heuer_etal_2019_S1,"the paper's own scan-quality index; ranges 2.6 to 350.4 - low-SNR scans support weaker surface reconstructions",source column SNR
+voxel_size_printed,voxel size as printed (comma-joined x y z triple in one cell),,,,info,Primates,Heuer_etal_2019_S1,kept verbatim alongside the split columns,"source column ""Voxel size x,y,z"""
+voxel_size_x_mm,voxel size along x,,Length.mm,point,info,Primates,Heuer_etal_2019_S1,split from the printed triple,mm
+voxel_size_y_mm,voxel size along y,,Length.mm,point,info,Primates,Heuer_etal_2019_S1,split from the printed triple,mm
+voxel_size_z_mm,voxel size along z,,Length.mm,point,info,Primates,Heuer_etal_2019_S1,"split from the printed triple; resolution ranges 0.175 mm (ex-cranio museum specimens) to 1.0 mm (in vivo human)",mm
+volume_dims_printed,volume dimensions as printed (comma-joined x y z triple in one cell),,,,info,Primates,Heuer_etal_2019_S1,kept verbatim alongside the split columns,"source column ""Volume dimensions x,y,z"""
+volume_dim_x,image matrix size along x,,Count,point,info,Primates,Heuer_etal_2019_S1,voxels,
+volume_dim_y,image matrix size along y,,Count,point,info,Primates,Heuer_etal_2019_S1,voxels,
+volume_dim_z,image matrix size along z,,Count,point,info,Primates,Heuer_etal_2019_S1,voxels,
+in_vivo,whether this specimen was scanned in vivo,,,,method,Primates,Heuer_etal_2019_S1,33 yes / 33 no across the 66 rows,source column In vivo
+extracted,whether the brain was extracted from the skull before scanning,,,,method,Primates,Heuer_etal_2019_S1,19 yes / 47 no,source column Extracted
+provenance,archive the scan came from,,,,info,Primates,Heuer_etal_2019_S1,"MNHN 30, NCBR 12, ABIDE 10, PDE 8, BC 3, PL 3",source column Provenance
+species_note,curator note where the printed name cannot be resolved from the name alone,,,,note,Primates,Heuer_etal_2019_S1,"2 rows: the ambiguous 'Gorilla' pair, plus the red howler monkey that S1 carries and Table 1 does not",added by the build script
+Method,per-specimen MRI acquisition parameters and quality control for a 3-D folding study,,,,method,Primates,Heuer_etal_2019_S1,"SCAN QC AND PROVENANCE ONLY - S1 carries no folding measurement. The folding metrics are in the Zenodo archive doi:10.5281/zenodo.2538751 and are NOT yet in this repo","66 scanned specimens here vs the 65 analysed; the extra one is the red howler monkey, absent from Table 1"

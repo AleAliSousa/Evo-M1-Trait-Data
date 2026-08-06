@@ -1,6 +1,50 @@
 # Jacobs et al. 2018 — Table 3 (stereology: layer V pyramidal vs gigantopyramidal somata)
 
-**Snapshot built 2026-08-04. Analysis CSV / public TSV / `.R` still to do locally (needs R).**
+**Snapshot built 2026-08-04. Reformat `.R`, analysis CSV and public TSV built 2026-08-05.**
+
+| File | |
+|---|---|
+| `Jacobs_etal_2018_Table3_snapshot.xlsx` | frozen source (printed table) |
+| `Jacobs_etal_2018_Table3.R` | reformat: snapshot → CSV + TSV |
+| `Jacobs_etal_2018_Table3.csv` | analysis table — **40 rows = 20 species × 2 neuron classes** |
+| `__Public/comparative-data/10.1002%2Fcne.24349_Table3.tsv` | public TSV |
+
+**Shape.** One row per species × `neuron_class`. The printed table is wide (six blocks:
+pyramidal / gigantopyramidal × length / area / volume, each with its own `n`, `Mean ± SD`, `Range`),
+so each block becomes `n_<measure>`, `soma_<measure>_M1`, `…_sd`, `…_min`, `…_max`. **`n` differs
+between the three measure blocks** for the same animal — do not reuse one `n` for all three.
+
+**Units.** Body mass kg → **g** (×1000), brain mass g → **mg** (×1000). Soma length µm, area µm²,
+volume µm³ are left as printed — this is *not* the mm³ structure-volume lineage.
+
+### Printed-number errors — flagged, never corrected
+
+Table 3 uses commas as thousands separators, but three cells have a comma where a decimal point
+belongs. Blind comma-stripping would turn `55,734.1` into `557341`, so the parser accepts a number
+only when every comma group after the first is exactly three digits; anything else becomes `NA` and
+the printed text is quoted in `parse_flags` (§7 — record the problem, don't fix the snapshot):
+
+| Species | Cell | Printed | Almost certainly |
+|---|---|---|---|
+| African wild dog | gigantopyramidal volume range | `9,109.7–55,734,1` | 55,734.1 |
+| Banded mongoose | gigantopyramidal volume range | `40,16.1–8,954.5` | 4,016.1 |
+| Siberian tiger | pyramidal volume mean ± SD | `3,158.4±14,71.9` | 1,471.9 |
+
+One further oddity is **not** machine-detectable and is recorded here only: African wild dog prints
+`20.11` as the pyramidal soma-area minimum, implausible against a mean of 286.4 ± 51.8 (n = 167) —
+likely `201.1`. Carried as printed.
+
+### Verification
+
+- 20 species × 2 classes = 40 rows; body and brain mass present on all 40.
+- Cell-count-weighted **primate** gigantopyramidal / pyramidal soma-**area** ratio recomputes to
+  **1.64**, matching the figure the paper states independently. (Soma-volume ratio recomputes to
+  2.35 against the paper's 2.30 — the difference is aggregation from species means rather than raw
+  cells, not a parse error.)
+- `Cebuella pygmaea` is the only printed binomial remapped (→ `Callithrix pygmaea`, the house
+  accepted name), via a `Jacobs2018` row in `_keys/Stephan/species_key.csv`.
+- **Re-run `Jacobs_etal_2018_Table3.R` in RStudio** to confirm it reproduces the committed files —
+  they were written by an offline mirror of the script (no R in the authoring environment).
 
 ## Source
 

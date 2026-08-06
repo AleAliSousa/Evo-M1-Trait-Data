@@ -42,16 +42,51 @@ dimensionless — there is no unit conversion to do (invariant 4 does not bite h
 gorilla, Pongo pygmaeus, Hylobates lar, Macaca mulatta, Macaca fascicularis, Papio hamadryas,
 Presbytis cristata, Sapajus/Cebus apella, Cebus albifrons, Alouatta seniculus*.
 
-**Specimen count — confirm on the PDF.** The scaffold asserted "137 hand samples"; that number was
-part of the fabricated block and is **not verified**. A regex sweep of the extracted Table S1 finds
-**133** specimen rows (HMNH 32, AMNH 30, WITS 29, NMW 15, UV 10, UM-APC 9, MRAC 5, YPM 2, ZMB 1),
-and the museum key also lists UNI-Fl and NME with no rows detected — so the extraction is probably
-missing a few. Count by hand when building the snapshot; do not carry 137 forward unchecked.
+**Specimen count — RESOLVED 2026-08-05: 137 is correct.** The earlier regex sweep found only 133
+because it missed the four `UNI-FI` (Florence) rows at the top of SI p. 8. The built snapshot has
+**137 specimen rows across 13 species**, and the paper's own Methods say *"a dataset that includes
+a total of 137 hand samples from 13 anthropoid species"* — an independent confirmation. Museum
+breakdown: HMNH 32, AMNH 30, WITS 29, NMW 15, UV 10, UM-APC 9, MRAC 5, UNI-FI 4, YPM 2, ZMB 1.
+`NME` appears in the printed museum key but **no row carries it** — an unused legend entry.
+
+Per-species specimen counts: *Homo sapiens* 45, *Macaca fascicularis* 17, *Pongo pygmaeus* 10,
+*Presbytis cristata* 9, *Cebus albifrons* 9, *Pan troglodytes* 7, *Macaca mulatta* 7,
+*Papio hamadryas* 7, *Sapajus apella* 6, *Alouatta seniculus* 6, *Pan paniscus* 5,
+*Hylobates lar* 5, *Gorilla gorilla* 4.
 
 Museum keys: AMNH (American Museum of Natural History), HMNH (Harvard), YPM (Yale Peabody), UM-APC
 (U. Massachusetts Amherst), ZMB (Museum für Naturkunde Berlin), NMW (Naturhistorisches Museum Wien),
 UV (U. Vienna), UNI-Fl (U. Florence), MRAC (Musée royal de l'Afrique centrale), NME (National Museum
 of Ethiopia), WITS (U. Witwatersrand).
+
+### ⚠️ `UNI-Fl` vs `UNI-FI` — the paper is internally inconsistent. Do not harmonise. (checked 2026-08-05)
+
+The Florence code is spelled **two different ways in the same supplement**, and this is the paper's
+own inconsistency, not an extraction artefact. The PDF's embedded text encodes genuinely different
+characters:
+
+| Where | As printed | Codepoints |
+|---|---|---|
+| Museum-key legend, SI p. 7 | `UNI-Fl` | `F` = U+0046, **`l` = U+006C** (lowercase L) |
+| The four data rows, SI p. 8 | `UNI-FI` | `F` = U+0046, **`I` = U+0049** (uppercase i) |
+
+Both readings are defensible, which is why it is easy to get wrong: `Fl` matches the legend's own
+gloss "University of **Fl**orence", while `FI` is the official Italian province code for Firenze. In
+the printed font the two glyphs are near-identical, so this looks like a typo in *our* files. It is
+not.
+
+**Rule:** each stays as printed in the cell it came from — the snapshot and analysis CSV carry
+**`UNI-FI`** in `specimen_key` / `museum` because that is what those cells print (fidelity checklist),
+and the legend quoted above keeps `UNI-Fl`. Verified: the snapshot's four Florence rows read `UNI-FI`,
+and the caption row preserves the legend verbatim. **Do not "fix" either one.**
+
+All nine other museum codes are unambiguous all-caps and agree between legend and data (checked
+codepoint-by-codepoint). Only Florence differs.
+
+**If a canonical museum code is ever needed** — e.g. to match specimens across sources, or against the
+`specimen_crosswalk` — add it as a *separate derived* column in the build script (`museum_canonical`),
+mapping both spellings to one code. Do not achieve it by editing `museum`, which must keep the printed
+string.
 
 ## ⚠️ Hard citation-dependency with Feix et al. 2015 — stronger than the scaffold claimed
 
@@ -76,22 +111,46 @@ and *Homo naledi* (the last from reference [2], not Feix). Per house rule, fossi
 grade, **not** a sensu-lato split — keep fossil rows decomposable and never fold them into an extant
 *Homo sapiens* mean.
 
-## Still to do (locally, with R)
+## Built 2026-08-05
 
-1. Hand-build `Liu_etal_2016_TableS1_snapshot.xlsx` from the SI PDF — printed source, faithful capture,
-   **one row per specimen** with `Species` and `Key` preserved verbatim (invariant 3).
-2. `Liu_etal_2016_TableS1.R`: snapshot → analysis CSV. Decide and document whether the merge takes
-   **specimen rows** or **species means** — Table S2 works from species means, so the paper itself uses
-   both. Aggregating loses the museum-accession provenance, so keep the specimen rows in the analysis
-   CSV and aggregate only at the merge.
-3. Register in `__ReadMe.xlsx` Sheet1: `Item name = Liu_etal_2016_TableS1`,
-   `Item encoded = 10.1098%2Frspb.2016.1923_TableS1`, `Data role = secondary`,
-   `Main Trait(s) = hand manipulability (workspace, global manipulation index)`,
-   `Taxon group = Primates`, `Team = Liu`.
-4. Write the DOI-coded public TSV (invariant 2).
-5. Reader `____EvoM1_TraitTable/EvoM1_read_hand_liu.R` (renamed from the Bardo version) — the
-   `TODO(curator)` column marker is now **resolved**: the headline index is `GMI`, with `WS` available
-   as a second exposed measure.
+| File | |
+|---|---|
+| `rspb20161923_si_001.pdf` | the printed source (SI, 25 pp.; Table S1 on pp. 7–10) |
+| `Liu_etal_2016_TableS1_extract_snapshot.py` | capture script (no R in the authoring environment) |
+| `Liu_etal_2016_TableS1_snapshot.xlsx` | **frozen source** — 137 specimen rows, caption + header kept |
+| `Liu_etal_2016_TableS1.R` | reformat: snapshot → CSV + TSV |
+| `Liu_etal_2016_TableS1.csv` | analysis table, **one row per specimen** |
+| `__Public/comparative-data/10.1098%2Frspb.2016.1923_TableS1.tsv` | public TSV |
+
+**Granularity: specimen rows kept, not species means.** Table S2 of the paper works from species
+means, but aggregating here would discard the museum accession, so averaging is left to the merge.
+
+**How the species blocks were recovered.** The `Species` cell is a *merged* cell — the binomial is
+printed once, vertically centred in its block of specimen rows. Centring turned out to be too
+imprecise to segment on (it mis-assigned rows by up to nine). The extractor instead uses the
+table's **own drawn cell borders**: the sub-1-pt rules spanning the Species column are exactly the
+block boundaries, and a block that runs off the foot of a page continues in the first segment of
+the next. The snapshot then expands the merged cell — the species is written on every row of its
+block, which is that cell's actual value.
+
+**Species names.** One remap, via a `Liu2016` row in `_keys/Stephan/species_key.csv`:
+`Presbytis cristata` → `Trachypithecus cristatus`, so the row joins `Reader_etal_2011`, which
+prints the current name. The other 12 printed binomials stand.
+
+### Verification
+
+- **137 specimens / 13 species** — matches the paper's own Methods sentence exactly.
+- **Column-shift check:** the seven segment proportions are shares of one length, so each row must
+  sum to 1. Observed range across all 137 rows is **0.998–1.002** (printed rounding). Carried in
+  the analysis CSV as `segment_sum_check`.
+- Museum counts sum to 137.
+- **Re-run `Liu_etal_2016_TableS1.R` in RStudio** to confirm it reproduces the committed CSV/TSV.
+
+### Still to do (curator)
+
+- `____EvoM1_TraitTable/EvoM1_read_hand_liu.R` — the `TODO(curator)` column marker is **resolved**:
+  the headline index is `GMI`, with `WS` as a second exposed measure.
+- Merge wiring into `__merging_behaviour` is **not** done (out of scope for this build).
 
 ## Wire into `__merging_behaviour/behaviour_compiled.R` (only after `hand_liu.xlsx` exists)
 

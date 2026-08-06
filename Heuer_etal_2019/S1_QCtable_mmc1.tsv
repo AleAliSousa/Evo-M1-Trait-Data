@@ -1,0 +1,67 @@
+Group	Specimens	SpecimenID	SNR	Voxel size x,y,z	Volume dimensions x,y,z	In vivo	Extracted	Provenance
+Lemuriformes	Aye-aye	AyeAyeDaubentoni_cb56	14.2	0.300781,0.300781,0.3	147,207,117	No	No	MNHN
+Lemuriformes	Black-and-white ruffed lemur	VariNoirEtBlancL_4d0e	3.5	0.300781,0.3,0.300781	180,200,140	No	No	MNHN
+Lemuriformes	Coquerel's mouse lemur	MicrocebeDeCoque_e3a9	193	0.300481,0.3,0.300481	373,334,290	No	No	MNHN
+Lemuriformes	Grey mouse lemur	MicrocebeMignonM_ca6c	31.8	0.25,0.25,0.25	184,232,136	No	No	MNHN
+Lemuriformes	Mongoose lemur	LemurMongosLemur_b941	28.9	0.3,0.3,0.3	200,354,230	No	No	MNHN
+Lemuriformes	Red-tailed sportive lemur	LepilemurAQueueR_309f	12.6	0.25,0.25,0.25	228,256,188	No	No	MNHN
+Lemuriformes	Ring-tailed lemur	MakiCattaLemurCa_dec8	61.3	0.25,0.25,0.25	156,200,124	No	Yes	MNHN
+Loridae	Red slender loris	NycticebusTardig_08cb	53	0.25,0.25,0.25	104,112,92	No	Yes	MNHN
+Galagonidae	Demidoff's galago	GalagoDemidoviiG_6cf3	229.4	0.25,0.25,0.25	184,244,324	No	No	MNHN
+Cebidae	Black-pencilled marmoset	OuistitiAPinceau_b4aa	66	0.25,0.25,0.25	112,144,100	No	Yes	MNHN
+Cebidae	Cotton-top tamarin	MarsousetOedipom_e834	27.3	0.25,0.2,0.25	156,390,228	No	Yes	MNHN
+Cebidae	Douroucouli	DouroucouliAotus_091c	114.4	0.25,0.25,0.25	240,364,240	No	No	MNHN
+Cebidae	Squirrel monkey	SaimiriCassiquia_7176	70.2	0.25,0.25,0.25	132,180,124	No	Yes	MNHN
+Cebidae	Squirrel monkey	SaimiriCassiquia_eb44	54.5	0.25,0.25,0.25	148,172,100	No	Yes	MNHN
+Cebidae	Tufted capuchin	ApelleCebusApell_f4b9	48.8	0.275,0.28,0.275	208,258,175	No	No	MNHN
+Cebidae	White-faced sapajou	SapajouCapucinCe_d971	58.3	0.283333,0.283333,0.28	160,223,142	No	Yes	MNHN
+Atelidae	Black spider monkey	Atele_6717	8.8	0.275,0.28,0.275	237,286,248	No	No	MNHN
+Atelidae	Black spider monkey	AteleAtelesAter_7245	23.9	0.299107,0.3,0.299107	204,314,201	No	No	MNHN
+Atelidae	Red howler monkey	HurleurRouxAloua_47da	68.4	0.25,0.25,0.25	404,368,288	No	No	MNHN
+Atelidae	Woolly monkey	SingeLaineuxLago_0f84	32.2	0.25,0.25,0.25	240,276,196	No	Yes	MNHN
+Cercopithecini	Green monkey	VervetCercopithe_72ae	35.4	0.3,0.3,0.3	200,260,157	No	Yes	MNHN
+Cercopithecini	Moustached guenon	MoustacLasiopygi_23cc	41.3	0.25,0.25,0.25	216,264,176	No	Yes	MNHN
+Papionini	Crab-eating macaque	MacacaFascicular_3a21	19.8	0.175,0.175,0.175	321,405,254	No	Yes	BC
+Papionini	Crab-eating macaque	MacaqueCrabierMa_8f9e	22	0.25,0.25,0.25	196,232,192	No	Yes	BC
+Papionini	Crab-eating macaque	MacacaFascicularis_mf01	8.6	0.5,0.5,0.5	116,143,112	Yes	No	PL
+Papionini	Crab-eating macaque	MacacaFascicularis_mf02	9.7	0.5,0.5,0.5	112,139,90	Yes	No	PL
+Papionini	Crab-eating macaque	MacacaFascicularis_32200	13.1	0.5,0.5,0.5	144,192,156	Yes	No	PDE
+Papionini	Crab-eating macaque	MacacaFascicularis_32202	8.9	0.5,0.5,0.5	144,192,156	Yes	No	PDE
+Papionini	Crab-eating macaque	MacacaFascicularis_32204	12.4	0.5,0.5,0.5	144,192,156	Yes	No	PDE
+Papionini	Crab-eating macaque	MacacaFascicularis_32205	9.4	0.5,0.5,0.5	144,192,192	Yes	No	PDE
+Papionini	Grey-cheeked mangabey	MangabeyCercoceb_4458	41.6	0.3,0.3,0.3	213,186,148	No	Yes	MNHN
+Papionini	Hamadryas baboon	BabouinCercopith_a723	16.7	0.234375,0.234375,0.23	301,347,220	No	Yes	MNHN
+Papionini	Rhesus monkey	MacaqueRhesusMac_bdf8	20.1	0.25,0.25,0.25	183,235,148	No	Yes	MNHN
+Papionini	Rhesus monkey	MacacaMulatta_mm01	6.9	0.5,0.5,0.5	136,176,113	Yes	No	PL
+Papionini	Rhesus monkey	MacacaMulatta_32198	350.4	0.5,0.5,0.5	143,198,140	Yes	No	PDE
+Papionini	Rhesus monkey	MacacaMulatta_32199	15.9	0.5,0.5,0.5	144,192,192	Yes	No	PDE
+Papionini	Rhesus monkey	MacacaMulatta_32201	10.9	0.5,0.5,0.5	144,192,192	Yes	No	PDE
+Papionini	Rhesus monkey	MacacaMulatta_32203	17.7	0.5,0.5,0.5	144,192,192	Yes	No	PDE
+Papionini	Sooty mangabey	MangabeyCouronne_6b65	13.7	0.2,0.2,0.2	301,360,241	No	Yes	MNHN
+Colobinae	Hanuman langur	LangurIndienPith_8390	23.3	0.25,0.25,0.25	244,268,196	No	Yes	MNHN
+Colobinae	Indochinese lutung	PithecusGermaini_6a2c	29.8	0.3,0.3,0.3	234,377,447	No	No	MNHN
+Colobinae	King colobus	ColobeColobusPol_6118	38.2	0.275,0.28,0.275	193,243,186	No	Yes	MNHN
+Hominoidea	Bonobo	Bonobo_brian	6.6	0.703125,0.703125,0.6	140,165,162	Yes	No	NCBR
+Hominoidea	Chimpanzee	Abby_Yerkes	6	1.0,1.0,1.0	256,256,256	Yes	No	NCBR
+Hominoidea	Chimpanzee	Amanda_Yerkes	2.6	1.0,1.0,1.0	256,256,256	Yes	No	NCBR
+Hominoidea	Chimpanzee	Artemus_Yerkes	17.7	1.0,1.0,1.0	256,256,256	Yes	No	NCBR
+Hominoidea	Chimpanzee	Arthur_Yerkes	11.5	1.0,1.0,1.0	256,256,256	Yes	No	NCBR
+Hominoidea	Chimpanzee	Azalea_Yerkes	8.2	1.0,1.0,1.0	256,256,256	Yes	No	NCBR
+Hominoidea	Chimpanzee	Barbara_Yerkes	3	1.0,1.0,1.0	256,256,256	Yes	No	NCBR
+Hominoidea	Chimpanzee	Barney_Yerkes	26.7	1.0,1.0,1.0	256,256,256	Yes	No	NCBR
+Hominoidea	Chimpanzee	Carl_Yerkes	12.2	1.0,1.0,1.0	256,256,256	Yes	No	NCBR
+Hominoidea	Chimpanzee	David_Yerkes	8.3	1.0,1.0,1.0	256,256,256	Yes	No	NCBR
+Hominoidea	Gibbon	Gibbon_buddy	55.3	0.546875,0.546875,0.6	118,147,94	Yes	No	NCBR
+Hominoidea	Gorilla	Gorilla_kinyani	18.9	0.703125,0.703125,0.6	134,175,164	Yes	No	NCBR
+Hominoidea	Gorilla	GorillaBeringeiG_0854	6.7	0.6,0.517857,0.517857	160,224,160	No	Yes	BC
+Hominoidea	Human	Human_51058	55.9	1.0,1.0,1.0	256,256,256	Yes	No	ABIDE 2
+Hominoidea	Human	Human_51060	49	1.0,1.0,1.0	256,256,256	Yes	No	ABIDE 3
+Hominoidea	Human	Human_51061	44.2	1.0,1.0,1.0	256,256,256	Yes	No	ABIDE 4
+Hominoidea	Human	Human_51062	33.9	1.0,1.0,1.0	256,256,256	Yes	No	ABIDE 5
+Hominoidea	Human	Human_51063	21.8	1.0,1.0,1.0	256,256,256	Yes	No	ABIDE 6
+Hominoidea	Human	Human_51114	41.9	1.0,1.0,1.0	256,256,256	Yes	No	ABIDE 7
+Hominoidea	Human	Human_51116	16.5	1.0,1.0,1.0	256,256,256	Yes	No	ABIDE 8
+Hominoidea	Human	Human_51118	56.2	1.0,1.0,1.0	256,256,256	Yes	No	ABIDE 9
+Hominoidea	Human	Human_51152	16.4	1.0,1.0,1.0	256,256,256	Yes	No	ABIDE 10
+Hominoidea	Human	Human_51153	38.5	1.0,1.0,1.0	256,256,256	Yes	No	ABIDE 11
+Hominoidea	Orangutan	Orangoutan_80bb	4.2	0.4,0.4,0.4	210,240,210	No	No	MNHN

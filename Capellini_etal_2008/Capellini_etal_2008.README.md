@@ -1,57 +1,101 @@
-# Capellini et al. 2008 — mammalian sleep (ecology & evolution reappraisal)
+# Capellini et al. 2008 — mammalian sleep (`sleep-data_Female` / `_Male` / `_Mixed`)
 
-Source folder for a **sleep** source feeding `__merging_sleep` (candidate #4 in
-`SCOUTING_candidate_papers_20260731.md`; kept per curator, 2026-07-31). Extends the sleep merge
-**beyond its current primate-only REM coverage** to a broad mammalian sample.
+**Built 2026-08-05.** Three registry items, one build script, three analysis CSVs, three public TSVs.
 
-## Source (freeze before cleaning)
+## Source
 
 Capellini, I., Barton, R. A., McNamara, P., Preston, B. T., & Nunn, C. L. (2008). *Phylogenetic
-analysis of the ecology and evolution of mammalian sleep: a reappraisal.* Evolution 62(7):1764–1776.
-DOI **10.1111/j.1558-5646.2008.00392.x**. Open copy: PMC2674385.
+analysis of the ecology and evolution of mammalian sleep: a reappraisal.* **Evolution 62(7):1764–1776.**
+DOI **10.1111/j.1558-5646.2008.00392.x** · open copy PMC2674385.
 
-- **Why this over Lesku 2006:** Capellini et al. is a **curated, corrected re-compilation** of the
-  same underlying mammalian-sleep data (Zepelin, Savage & West, Campbell & Tobler, Lesku 2006) — the
-  cleaner single primary. Lesku, Roth, Amlaner & Lima (2006, Am Nat 168:441, DOI 10.1086/506973) is
-  the antecedent; if both are ingested they are the **same lineage → resolve, never average**.
-- **What it contributes:** total sleep time (TST) and its **REM** and **NREM/SWS** components for a
-  broad mammal set (~tens of species, several new to this merge). Maps onto the two existing
-  standardized terms.
-- **Frozen source:** the paper's supplementary sleep table. Could not be pulled in the scaffolding
-  session (network policy; no R). Download locally; keep verbatim; write the DOI-coded public TSV
-  `__Public/comparative-data/10.1111%2Fj.1558-5646.2008.00392.x_<Table>.tsv` (invariant 2).
+**Frozen source — digital-native, no derived snapshot** (`__HOWTO_build_a_dataset_file.md` §0a
+invariant 1). The three files below are untouched exports from the mammalian-sleep database cited by
+the paper, pulled with the search term `Sex = Female / Male / Mixed` (recorded in the registry's
+*Note about item*). They are the frozen copies — never edit them.
 
-## Derivation (units) — do this in an `.R` build script, not by hand
+| Frozen source | Records | Registry item | Public TSV |
+|---|---|---|---|
+| `sleep-data_Female.csv` | 40 | `Capellini_etal_2008_sleep-dataFemale` | `10.1111%2Fj.1558-5646.2008.00392.x_sleep-dataFemale.tsv` |
+| `sleep-data_Male.csv` | 89 | `Capellini_etal_2008_sleep-dataMale` | `10.1111%2Fj.1558-5646.2008.00392.x_sleep-dataMale.tsv` |
+| `sleep-data_Mixed.csv` | 54 | `Capellini_etal_2008_sleep-dataMixed` | `10.1111%2Fj.1558-5646.2008.00392.x_sleep-dataMixed.tsv` |
 
-The sleep merge's two standardized terms are:
+**183 records, 93 resolved species** (35 already in `_keys/species_reference.csv`).
 
-| Standardized_Term | from Capellini | derivation |
+## Granularity — one row per STUDY RECORD, not per species
+
+Each row is one primary sleep study × species × sex class. Several references report the same
+species, and a species can appear in more than one of the three files. **Aggregate to species means
+at the merge, not here** (§3, "granularity"). `Reference` / `Full_Reference` name the study that
+actually measured each row — Capellini is the compiler, not the measurer.
+
+## Build
+
+`Capellini_etal_2008_sleep-data.R` — reads the three frozen CSVs, resolves species, derives the two
+standardized terms, writes the analysis CSV and the DOI-coded public TSV for each.
+
+No unit conversion is needed: sleep times are printed in **hours per day** and kept that way; the
+sleep cycle is printed in **minutes**. The one derivation is
+
+```
+REM_sleep_pct = 100 * REM_h / Sleep_h_day        # = 100 * Daily_PS_time / Total_daily_sleep
+```
+
+Missing tokens in this source are `""` and `N/A`.
+
+Source columns are renamed once, in the script: `Total_daily_sleep → Sleep_h_day`,
+`Daily_PS_time → REM_h` (PS = paradoxical sleep = REM), `Quiet_sleep_time → NREM_h`,
+`Sleep_cycle_length → Sleep_cycle_min`, and `Diet → Diet_condition` (the source's `Diet` is the
+feeding condition during recording, **not** the ecological diet trait — renamed so it cannot be
+mistaken for one). Every rename is listed in `reference_tables/Capellini_etal_2008_definitions.csv`
+under *Source Note*.
+
+## Species names
+
+Printed names are preserved verbatim in `SpeciesName_Reported` (invariant 3). Resolution is entirely
+through the key — **108 rows added to `_keys/Stephan/species_key.csv` with
+`source_publication = Capellini2008`** — with nothing hand-coded in the script (§5). The export
+prints Title Case (`Arctocephalus Pusillus`), inbred strains (`BALB/c`, `C57BL/6J`,
+`Sprague-Dawley Rat`), breeds (`Beagle Dog`, `New Zealand White Rabbit`, `Pottock Pony`) and bare
+common names (`Cat`, `Goat`, `Pig`, `Jaguar`), all mapped in the key.
+
+### Three labels left unresolved — for the curator
+
+Deliberately **not** given a key row, so no guess enters the data. `species_sci` keeps the cleaned
+printed label (or `NA`):
+
+| Printed | Record | Why unresolved |
 |---|---|---|
-| `Sleep_h_day`   | total sleep time (h/day) | direct copy |
-| `REM_sleep_pct` | REM (h) and TST (h)      | `REM_sleep_pct = 100 * REM_h / TST_h` |
+| `Fur Seal` | Mixed | Genus not stated; both *Arctocephalus pusillus* and *Callorhinus ursinus* appear elsewhere in the same export |
+| `Tapir` | Mixed, Zepelin 1970 | Four living *Tapirus* species; the record names none |
+| `N/A` | Mixed, Hänninen et al. 2008 | Species column is `N/A`; `CommonName_Reported = "Calves"`, so almost certainly *Bos taurus* — needs the primary to confirm. `species_sci` is `NA` |
 
-Write `Capellini_etal_2008_Table.R` that reads the frozen source, computes `Sleep_h_day` and
-`REM_sleep_pct` (show the formula in a comment, per invariant 4), preserves the printed species name,
-and writes the analysis CSV + the public TSV. The standardized-term map then just relabels those two
-computed columns (below).
+## Data-quality columns — read before using a row
 
-## Register + wire into `__merging_sleep`
+The export carries the compilation's own screening columns, all retained: `Lab_condition_score`
+(composite quality index), `EEG`, `Telemetry`, `Twenty_four_hour`, `Light`, `Adaptation`,
+`Diet_condition`, `Temperature`, `Restraint`, `Behavioural`. **11 of 183 records carry an `Error`
+flag**, and `Notes_Misc` records provenance warnings (e.g. "Data Match Elgar Et Al. (1988)").
+`Data_came_from` marks which earlier compilation a row descends from.
 
-1. `reference_tables/Capellini_etal_2008_definitions.csv` (scaffolded).
-2. `__merging_sleep/standardized_term_by_reference/Capellini_etal_2008_<Table>_standardized_terms.csv`
-   (scaffolded template) — maps the source columns to `Species` / `Sleep_h_day` / `REM_sleep_pct`.
-3. Register in `__ReadMe.xlsx` Sheet1: `Item name = Capellini_etal_2008_<Table>`,
-   `Item encoded = 10.1111%2Fj.1558-5646.2008.00392.x_<Table>`, `Data role = primary`,
-   `Main Trait(s) = sleep (REM %, daily sleep)`, `Taxon group = Mammals`, `Team = Capellini_2008`.
-4. In `__merging_sleep/sleep_compiled.R`: add the item to the `item_name` vector and to `team_of`
-   (`Capellini_etal_2008_<Table> = "Capellini_2008"`), and add a read+relabel block mirroring the
-   Herculano-Houzel binomial block (Capellini lists binomials → only spelling normalisation needed;
-   no common-name resolution table required). Re-run `standardized_term.R` then `sleep_compiled.R`.
+## Not done here (scope: through public TSV + registry)
 
-### Citation-dependency (now bites)
+Merge wiring into `__merging_sleep` is **not** done — no merge script was touched. When it is:
 
-`Sleep_h_day` currently comes from Herculano-Houzel 2015, whose daily-sleep column also descends from
-these older compilations. So Capellini vs HH for `Sleep_h_day` is **citation-dependent → resolve, do
-not average** (pick one primary; the README of the merge documents the team-aware rule). `REM_sleep_pct`
-currently comes only from Eagleman (primates); Capellini adds non-primate REM — new species do not
-conflict, shared species resolve by the same rule.
+- `Sleep_h_day` currently comes from Herculano-Houzel 2015, whose daily-sleep column descends from
+  the **same** older compilations (Zepelin; Campbell & Tobler). Capellini vs HH is therefore
+  **citation-dependent → resolve, never average**.
+- `REM_sleep_pct` currently comes only from Eagleman & Vaughn 2021 (25 primates). Capellini adds
+  non-primate REM; new species do not conflict, shared species resolve by the same rule.
+- Lesku et al. 2006 (Am Nat 168:441, DOI 10.1086/506973) is the antecedent compilation — same
+  lineage, resolve rather than average if it is ever ingested.
+- The `USWS` / `BSWS` / `ASWS` columns are **free text**, not the numeric `USWS_pctTST` that
+  Lyamin et al. 2008 supplies. Do not pool them.
+
+## Verification
+
+- 40 + 89 + 54 = 183 records out, matching the three frozen files row-for-row.
+- Every `REM_sleep_pct` recomputed from the written TSV reproduces `100 × REM_h / Sleep_h_day`.
+- No species name resolved outside `species_key.csv`.
+- **Re-run `Capellini_etal_2008_sleep-data.R` in RStudio** to confirm it reproduces these files —
+  the committed CSV/TSV were written by an offline mirror of the script (no R in the authoring
+  environment).

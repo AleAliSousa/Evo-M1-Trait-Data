@@ -1,5 +1,41 @@
 # Handoff — dataset-expansion scouting & scaffolding (2026-07-31)
 
+> ## ✅ ALL SCAFFOLDS BUILT — 2026-08-05
+>
+> Every scaffold below is now a finished source folder: frozen source → `.R` → analysis CSV →
+> DOI-coded public TSV → `definitions.csv` → README → `__ReadMe.xlsx` row. **Nine registry items**
+> (57 items lacked a public TSV at the start of that session; 50 do now).
+>
+> | Item | Rows | Frozen source |
+> |---|---|---|
+> | `Capellini_etal_2008_sleep-data{Female,Male,Mixed}` | 40 / 89 / 54 records, 93 species | 3 database CSVs (digital-native) |
+> | `Reader_etal_2011_Data` | 238 species | Dryad CSV (digital-native) |
+> | `Liu_etal_2016_TableS1` | 137 specimens, 13 species | SI PDF → snapshot |
+> | `Jacobs_etal_2018_Table3` | 40 (20 species × 2 neuron classes) | printed table → snapshot |
+> | `Jacobs_etal_2018_Table5` | 53 (19 species × neuron types) | printed table → snapshot |
+> | `Heuer_etal_2019_Table1` | 34 species / 65 individuals | printed table → snapshot |
+> | `Heuer_etal_2019_S1` | 66 scanned specimens | journal supplement TSV (digital-native) |
+>
+> **166 species-key rows** added to `_keys/Stephan/species_key.csv` under paper-scoped tokens
+> (`Capellini2008` 108, `Heuer2019` 33, `Jacobs2018` 20, `Reader2011` 4, `Liu2016` 1).
+>
+> **No merge script was touched** — `__merging_sleep`, `__merging_behaviour` and
+> `__merging_cellcounts` wiring is still outstanding, and each folder's README says exactly what
+> that wiring needs.
+>
+> **Corrections to the scouting claims below, found while building:**
+> - **Reader 2011 has no tactical-deception column** in the archived Dryad file, and ships no
+>   pre-corrected values — raw counts, "reduced" counts and a research-effort column instead.
+> - **Liu 2016 = 137 specimens** (the "133" flagged as an undercount was one; the paper's own
+>   Methods say 137 from 13 species).
+> - **Heuer 2019's folding measures are NOT in the supplement.** `mmc1.zip` holds only the scan-QC
+>   table. The gyrification index / folding length / wavelength / depth / surface areas exist only
+>   on Zenodo (doi:10.5281/zenodo.2538751), still unreachable. What is built is the sample
+>   documentation. See `Heuer_etal_2019/Heuer_etal_2019.README.md`.
+> - **The `.R` scripts are canonical but have not been run** (no R in that environment). Their
+>   CSV/TSV were written by an offline mirror — re-run each `.R` in RStudio to confirm.
+
+
 Branch: **`claude/evo-m1-trait-data-q50l6x`**. Everything below is committed and pushed there.
 
 ## What this session did

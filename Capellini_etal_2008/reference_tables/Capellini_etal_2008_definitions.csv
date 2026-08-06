@@ -1,9 +1,46 @@
 Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
-species_printed,journal species name exactly as printed in the source table,,,,info,Mammals,Capellini_etal_2008_Data,printed name preserved (invariant 3),confirm species column header
-species,accepted scientific binomial; spelling normalised (binomials as printed),,,,info,Mammals,Capellini_etal_2008_Data,Capellini lists binomials; no common-name table needed,
-TST_h,total sleep time as reported,whole-organism,Sleep.h_day,point,primary,Mammals,Capellini_etal_2008_Data,source column for Sleep_h_day,confirm header/units (h/day)
-REM_h,REM sleep time as reported,whole-organism,Sleep.h_day,point,primary,Mammals,Capellini_etal_2008_Data,used to derive REM_sleep_pct,confirm header/units (h/day)
-NREM_h,NREM / slow-wave sleep time as reported,whole-organism,Sleep.h_day,point,info,Mammals,Capellini_etal_2008_Data,carried for completeness; not a merged term,confirm header/units (h/day)
-Sleep_h_day,total daily sleep (project standardized term),whole-organism,Sleep.h_day,point,primary,Mammals,Capellini_etal_2008_Data,= TST_h,derived in build script
-REM_sleep_pct,per cent of total sleep spent in REM (project standardized term),whole-organism,Sleep.pct,point,primary,Mammals,Capellini_etal_2008_Data,= 100 * REM_h / TST_h,derived in build script
-Method,literature compilation of mammalian sleep (EEG-defined SWS/REM) corrected & re-analysed with phylogenetic methods,,,,method,Mammals,Capellini_etal_2008_Data,reappraisal of Lesku 2006 / Savage & West / Zepelin data,Capellini is a corrected secondary compiler of these primary sleep studies
+search_id,record identifier in the source sleep database export,,,,info,Mammals,Capellini_etal_2008_sleep-data,unique within the export; not stable across the three sex files,source column search_id
+sex_file,which of the three exports the record came from (Female / Male / Mixed),,,,info,Mammals,Capellini_etal_2008_sleep-data,added by the build script; equals the registry Item number suffix,three separate registry items
+Sex_reported,sex class as printed (F / M / Mix),,,,info,Mammals,Capellini_etal_2008_sleep-data,,source column Sex
+habitat_type,Land or Marine as classified in the source,,,,info,Mammals,Capellini_etal_2008_sleep-data,drives which of the in-water / on-land columns are populated,source column type
+Reference,short citation of the primary sleep study,,,,info,Mammals,Capellini_etal_2008_sleep-data,Capellini compiled these; each row's real measurer is this reference,source column Reference
+Full_Reference,full citation of the primary sleep study,,,,info,Mammals,Capellini_etal_2008_sleep-data,,source column Full_Reference
+SpeciesName_Reported,species name exactly as printed in the source export,,,,info,Mammals,Capellini_etal_2008_sleep-data,printed name preserved verbatim (invariant 3); printed in Title Case,includes lab strains and common names
+CommonName_Reported,common name as printed,,,,info,Mammals,Capellini_etal_2008_sleep-data,the only species clue for the one record whose species column is N/A,source column CommonName_Reported
+species_sci,accepted scientific binomial resolved via _keys/Stephan/species_key.csv (source_publication = Capellini2008),,,,info,Mammals,Capellini_etal_2008_sleep-data,"93 species; NA for the one unidentified record; Fur Seal and Tapir stay as printed pending curator review",no name is resolved outside the key (HOWTO sec 5)
+Sleep_h_day,total daily sleep time as reported,whole-organism,Sleep.h_day,point,primary,Mammals,Capellini_etal_2008_sleep-data,project standardized term; hours per day as printed - no unit conversion,source column Total_daily_sleep
+Sleep_h_day_drowsy_adj,total daily sleep adjusted for drowsiness,whole-organism,Sleep.h_day,point,info,Mammals,Capellini_etal_2008_sleep-data,populated for very few records; alternative to Sleep_h_day - do not average the two,source column Sleep_time_adjusted_for_drowsiness
+REM_h,paradoxical (REM) sleep time as reported,whole-organism,Sleep.h_day,point,primary,Mammals,Capellini_etal_2008_sleep-data,PS = paradoxical sleep = REM; used to derive REM_sleep_pct,source column Daily_PS_time
+NREM_h,quiet (NREM / slow-wave) sleep time as reported,whole-organism,Sleep.h_day,point,info,Mammals,Capellini_etal_2008_sleep-data,carried for completeness; not currently a merged term,source column Quiet_sleep_time
+Sleep_cycle_min,length of one sleep cycle,whole-organism,Time.min,point,info,Mammals,Capellini_etal_2008_sleep-data,minutes as printed; sparsely populated (57 of 183 records),source column Sleep_cycle_length
+REM_sleep_pct,per cent of total sleep spent in REM,whole-organism,Sleep.pct,point,primary,Mammals,Capellini_etal_2008_sleep-data,project standardized term; = 100 * REM_h / Sleep_h_day,derived in Capellini_etal_2008_sleep-data.R
+Sleep_h_day_in_water,total daily sleep recorded in water,whole-organism,Sleep.h_day,point,info,Mammals (marine),Capellini_etal_2008_sleep-data,marine records only,source column Total_daily_sleep_time_in_water
+Sleep_h_day_on_land,total daily sleep recorded on land,whole-organism,Sleep.h_day,point,info,Mammals (marine),Capellini_etal_2008_sleep-data,marine records only,source column Total_daily_sleep_time_on_land
+REM_h_in_water,REM sleep recorded in water,whole-organism,Sleep.h_day,point,info,Mammals (marine),Capellini_etal_2008_sleep-data,marine records only,source column Daily_PS_time_in_water
+REM_h_on_land,REM sleep recorded on land,whole-organism,Sleep.h_day,point,info,Mammals (marine),Capellini_etal_2008_sleep-data,marine records only,source column Daily_PS_time_on_land
+NREM_h_in_water,quiet sleep recorded in water,whole-organism,Sleep.h_day,point,info,Mammals (marine),Capellini_etal_2008_sleep-data,marine records only,source column Quiet_sleep_time_in_water
+NREM_h_on_land,quiet sleep recorded on land,whole-organism,Sleep.h_day,point,info,Mammals (marine),Capellini_etal_2008_sleep-data,marine records only,source column Quiet_sleep_time_on_land
+USWS,unihemispheric slow-wave sleep as reported by the primary study,whole-organism,Sleep.text,,info,Mammals (marine),Capellini_etal_2008_sleep-data,free text not a number; relates to the Lyamin 2008 USWS terms but is NOT the same measure,source column USWS
+BSWS,bihemispheric slow-wave sleep as reported,whole-organism,Sleep.text,,info,Mammals (marine),Capellini_etal_2008_sleep-data,free text not a number,source column BSWS
+ASWS,asymmetric slow-wave sleep as reported,whole-organism,Sleep.text,,info,Mammals (marine),Capellini_etal_2008_sleep-data,free text not a number,source column ASWS
+N_reported,number of animals as printed by the primary study,,Count,point,info,Mammals,Capellini_etal_2008_sleep-data,,source column N
+N_in_mean,number of animals contributing to the calculated mean,,Count,point,info,Mammals,Capellini_etal_2008_sleep-data,use this rather than N_reported when weighting,source column Number_of_animals_in_calculated_mean
+Animals_sampled,number of animals sampled,,Count,point,info,Mammals,Capellini_etal_2008_sleep-data,,source column Animals_sampled
+EEG,whether sleep was scored from EEG,,,,method,Mammals,Capellini_etal_2008_sleep-data,EEG-scored records are the higher-quality subset,source column EEG
+Telemetry,whether recording used telemetry,,,,method,Mammals,Capellini_etal_2008_sleep-data,,source column Telemetry
+Twenty_four_hour,whether the recording covered a full 24 h,,,,method,Mammals,Capellini_etal_2008_sleep-data,records not covering 24 h under-estimate daily sleep,source column Twenty_four_hour
+Light,lighting regime during recording,,,,method,Mammals,Capellini_etal_2008_sleep-data,,source column Light
+Adaptation,whether animals were adapted to the recording setup,,,,method,Mammals,Capellini_etal_2008_sleep-data,,source column Adaptation
+Diet_condition,feeding condition during recording,,,,method,Mammals,Capellini_etal_2008_sleep-data,renamed from the source column Diet to avoid clashing with the ecological Diet trait,source column Diet
+Temperature,whether ambient temperature was manipulated,,,,method,Mammals,Capellini_etal_2008_sleep-data,,source column Temperature
+Restraint,whether animals were restrained,,,,method,Mammals,Capellini_etal_2008_sleep-data,,source column Restraint
+Behavioural,whether sleep was scored behaviourally,,,,method,Mammals,Capellini_etal_2008_sleep-data,,source column Behavioural
+Lab_condition_score,composite laboratory-condition quality score,,Score,point,info,Mammals,Capellini_etal_2008_sleep-data,the source's own data-quality index; higher = more standard conditions,source column Total_lab_condition_score
+Summary_age_class,age class of the animals,,,,info,Mammals,Capellini_etal_2008_sleep-data,,source column Summary_age_class
+Monophasic_polyphasic,monophasic or polyphasic sleep pattern,,,,info,Mammals,Capellini_etal_2008_sleep-data,,source column Monophasic_polyphasic
+Error,error flag set in the source database,,,,info,Mammals,Capellini_etal_2008_sleep-data,11 of 183 records carry a flag - check before using those rows,source column Error
+Error_Note,text of the error flag,,,,info,Mammals,Capellini_etal_2008_sleep-data,,source column Error_Note
+Notes_Misc,free-text notes from the compiler,,,,info,Mammals,Capellini_etal_2008_sleep-data,records duplicate-of-Elgar-1988 and similar provenance warnings,source column Notes_Misc
+Data_came_from,provenance of the record within the compilation,,,,info,Mammals,Capellini_etal_2008_sleep-data,e.g. "Not from Zepelin" - marks which earlier compilation the row descends from,source column Data_came_from
+Post1988,whether the primary study post-dates Elgar et al. 1988,,,,info,Mammals,Capellini_etal_2008_sleep-data,used by the source to separate new records from the older compilations,source column Post1988
+Method,"EEG/behaviourally scored mammalian sleep records compiled from the primary literature, screened for laboratory conditions and re-analysed phylogenetically",,,,method,Mammals,Capellini_etal_2008_sleep-data,"one row per primary study x species x sex class, NOT per species - aggregate at the merge",Capellini et al. 2008 is a corrected re-compilation of Zepelin / Savage & West / Campbell & Tobler / Lesku 2006; the measurer of each datum is the row's Reference

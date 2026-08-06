@@ -1,16 +1,25 @@
 Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
 Species,common species name exactly as printed in Table 3,,,,info,Carnivores + Primates,Jacobs_etal_2018_Table3,printed name preserved (invariant 3),printed on line 1 of the Species cell
 Species_binomial,scientific binomial exactly as printed (italic) in Table 3,,,,info,Carnivores + Primates,Jacobs_etal_2018_Table3,printed name preserved (invariant 3),printed on line 2 of the Species cell; split into its own column
-species_sci,accepted scientific binomial; harmonised via _keys,,,,info,Carnivores + Primates,Jacobs_etal_2018_Table3,,
+species_sci,accepted binomial resolved via _keys/Stephan/species_key.csv (source_publication = Jacobs2018),,,,info,Carnivores + Primates,Jacobs_etal_2018_Table3,only Cebuella pygmaea is remapped (to Callithrix pygmaea); all other printed binomials stand,paper-scoped resolution (SPECIES_NAMING.md sec 3)
 clade_printed,printed grouping row (Carnivores / Primates),,,,info,Carnivores + Primates,Jacobs_etal_2018_Table3,kept as published,
-neuron_class,"layer V pyramidal or gigantopyramidal (= Betz cell in primates)",M1 (regional),Class,,info,Carnivores + Primates,Jacobs_etal_2018_Table3,must stay explicit — never collapse the two classes,both classes measured in the same animal
-body_mass,body mass of the specimen,,Mass,point,info,Carnivores + Primates,Jacobs_etal_2018_Table3,printed in kg; project unit g (x1000),one animal per species
-brain_mass,brain mass of the specimen,Whole brain,Mass,point,info,Carnivores + Primates,Jacobs_etal_2018_Table3,printed in g; project unit mg (x1000),one animal per species
-soma_length_M1,soma length of layer V pyramidal / gigantopyramidal neurons in M1,M1 (regional),Length,mean,primary,Carnivores + Primates,Jacobs_etal_2018_Table3,um; mean +/- SD and range printed; regional M1 — never pool with whole-cortex counts,unbiased stereology
-soma_area_M1,soma cross-sectional area of layer V pyramidal / gigantopyramidal neurons in M1,M1 (regional),Area,mean,primary,Carnivores + Primates,Jacobs_etal_2018_Table3,um2; nucleator probe (StereoInvestigator),unbiased stereology
-soma_volume_M1,soma volume of layer V pyramidal / gigantopyramidal neurons in M1,M1 (regional),Volume,mean,primary,Carnivores + Primates,Jacobs_etal_2018_Table3,um3; NOT the mm3 structure-volume lineage — do not convert,unbiased stereology
-n_cells,number of cells measured for that species x neuron class x measure,M1 (regional),Count,point,info,Carnivores + Primates,Jacobs_etal_2018_Table3,printed per measure block; varies within a species,
-sd,standard deviation as printed alongside the mean,M1 (regional),,dispersion,info,Carnivores + Primates,Jacobs_etal_2018_Table3,split out of the printed Mean +/- SD cell in the .R,
-range_min,lower bound of the printed range,M1 (regional),,range,info,Carnivores + Primates,Jacobs_etal_2018_Table3,split out of the printed Range cell in the .R,
-range_max,upper bound of the printed range,M1 (regional),,range,info,Carnivores + Primates,Jacobs_etal_2018_Table3,split out of the printed Range cell in the .R,
-method,counting/measurement method,,,,method,Carnivores + Primates,Jacobs_etal_2018_Table3,"unbiased stereology — not interchangeable with the Golgi 2-D measures in Table 5",flag per datum as the cellcount lineage does
+neuron_class,layer V pyramidal or gigantopyramidal (= Betz cell in primates),M1 (regional),Class,,info,Carnivores + Primates,Jacobs_etal_2018_Table3,must stay explicit - never collapse the two classes; one row per species x class,both classes measured in the same animal
+body_mass_g,body mass of the specimen,,Mass.g,point,info,Carnivores + Primates,Jacobs_etal_2018_Table3,printed in kg; converted x1000 to project g,one animal per species; repeated on both neuron_class rows
+brain_mass_mg,brain mass of the specimen,Whole brain,Mass.mg,point,info,Carnivores + Primates,Jacobs_etal_2018_Table3,printed in g; converted x1000 to project mg,one animal per species; repeated on both neuron_class rows
+n_length,number of cells measured for the soma-length estimate,M1 (regional),Count,point,info,Carnivores + Primates,Jacobs_etal_2018_Table3,n differs between the length / area / volume blocks - do not reuse one n for all three,printed per measure block
+soma_length_M1,mean soma length of the neuron class in M1,M1 (regional),Length.um,mean,primary,Carnivores + Primates,Jacobs_etal_2018_Table3,um; regional M1 - never pool with whole-cortex counts,unbiased stereology
+soma_length_M1_sd,standard deviation printed alongside the soma-length mean,M1 (regional),Length.um,dispersion,info,Carnivores + Primates,Jacobs_etal_2018_Table3,split out of the printed "Mean +/- SD" cell,
+soma_length_M1_min,lower bound of the printed soma-length range,M1 (regional),Length.um,range,info,Carnivores + Primates,Jacobs_etal_2018_Table3,split out of the printed Range cell,
+soma_length_M1_max,upper bound of the printed soma-length range,M1 (regional),Length.um,range,info,Carnivores + Primates,Jacobs_etal_2018_Table3,split out of the printed Range cell,
+n_area,number of cells measured for the soma-area estimate,M1 (regional),Count,point,info,Carnivores + Primates,Jacobs_etal_2018_Table3,,printed per measure block
+soma_area_M1,mean soma cross-sectional area of the neuron class in M1,M1 (regional),Area.um2,mean,primary,Carnivores + Primates,Jacobs_etal_2018_Table3,um2; nucleator probe (StereoInvestigator),unbiased stereology
+soma_area_M1_sd,standard deviation printed alongside the soma-area mean,M1 (regional),Area.um2,dispersion,info,Carnivores + Primates,Jacobs_etal_2018_Table3,,
+soma_area_M1_min,lower bound of the printed soma-area range,M1 (regional),Area.um2,range,info,Carnivores + Primates,Jacobs_etal_2018_Table3,"African wild dog prints 20.11 as the pyramidal minimum - implausible against mean 286.4 +/- 51.8; suspected print error, carried as printed",
+soma_area_M1_max,upper bound of the printed soma-area range,M1 (regional),Area.um2,range,info,Carnivores + Primates,Jacobs_etal_2018_Table3,,
+n_volume,number of cells measured for the soma-volume estimate,M1 (regional),Count,point,info,Carnivores + Primates,Jacobs_etal_2018_Table3,,printed per measure block
+soma_volume_M1,mean soma volume of the neuron class in M1,M1 (regional),Volume.um3,mean,primary,Carnivores + Primates,Jacobs_etal_2018_Table3,um3; NOT the mm3 structure-volume lineage - do not convert,unbiased stereology
+soma_volume_M1_sd,standard deviation printed alongside the soma-volume mean,M1 (regional),Volume.um3,dispersion,info,Carnivores + Primates,Jacobs_etal_2018_Table3,,
+soma_volume_M1_min,lower bound of the printed soma-volume range,M1 (regional),Volume.um3,range,info,Carnivores + Primates,Jacobs_etal_2018_Table3,,
+soma_volume_M1_max,upper bound of the printed soma-volume range,M1 (regional),Volume.um3,range,info,Carnivores + Primates,Jacobs_etal_2018_Table3,,
+method,counting/measurement method,,,,method,Carnivores + Primates,Jacobs_etal_2018_Table3,unbiased stereology - not interchangeable with the Golgi 2-D measures in Table 5,flag per datum as the cellcount lineage does
+parse_flags,printed cells that could not be parsed as numbers or that fail a mean-within-range check,,,,note,Carnivores + Primates,Jacobs_etal_2018_Table3,"3 of 40 rows flagged; the value is NA rather than a wrong number, and the printed text is quoted in the flag",typesetting errors in the source table - never silently corrected (sec 7)

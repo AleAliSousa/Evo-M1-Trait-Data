@@ -1,6 +1,40 @@
 # Jacobs et al. 2018 — Table 5 (Golgi somatodendritic morphology, 3 neuron types)
 
-**Snapshot built 2026-08-04. Analysis CSV / public TSV / `.R` still to do locally (needs R).**
+**Snapshot built 2026-08-04. Reformat `.R`, analysis CSV and public TSV built 2026-08-05.**
+
+| File | |
+|---|---|
+| `Jacobs_etal_2018_Table5_snapshot.xlsx` | frozen source (printed table) |
+| `Jacobs_etal_2018_Table5.R` | reformat: snapshot → CSV + TSV |
+| `Jacobs_etal_2018_Table5.csv` | analysis table — **53 rows = 19 species × their neuron types** |
+| `__Public/comparative-data/10.1002%2Fcne.24349_Table5.tsv` | public TSV |
+
+**Shape.** One row per species × `neuron_type`, each of the eight measures as `<measure>` +
+`<measure>_sd`. Units are left exactly as printed (µm³, µm, µm², spines/µm) — Golgi 2-D tracing,
+never mixed with Table 3's stereology; `method` is stamped on every row.
+
+**Species names** are resolved from the printed common name through `Jacobs2018` rows in
+`_keys/Stephan/species_key.csv` (paper-scoped, `_keys/SPECIES_NAMING.md` §3) — binomials taken from
+Table 3 of the same paper where the species appears there, otherwise the standard binomial. Plains
+zebra uses the house name `Equus burchelli`; Bennett's wallaby uses `Notamacropus rufogriseus`.
+
+**`gigantopyramidal_absent`** is `TRUE` on the rows of the four species where the paper's text
+states gigantopyramidal neurons were not distinguishable (banded mongoose, Flemish giant rabbit,
+rat, Bennett's wallaby). Those species have Superficial + Deep rows only — the absence is recorded
+as a flag rather than as an invented zero-valued row.
+
+### Verification of the built CSV (recomputed 2026-08-05)
+
+| Check | From the built CSV | Paper |
+|---|---|---|
+| Traced neurons, total | **617** | 617 |
+| — superficial / deep / gigantopyramidal | **233 / 203 / 181** | 233 / 203 / 181 |
+| Feliform gigantopyramidal mean soma size | **2,847 µm²** | 2,847 µm² |
+| Primate gigantopyramidal mean soma size | **987 µm²** | 987 µm² |
+
+The two n = 1 rows (clouded leopard Deep, ring-tailed lemur Deep) carry `NA` in every `_sd` column,
+not `0`. **Re-run `Jacobs_etal_2018_Table5.R` in RStudio** to confirm it reproduces the committed
+files — they were written by an offline mirror of the script (no R in the authoring environment).
 
 ## Source
 

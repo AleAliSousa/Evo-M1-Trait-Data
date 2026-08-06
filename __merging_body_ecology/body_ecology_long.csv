@@ -39,7 +39,7 @@
 "Acomys mullah","mass","Body_Mass","g",28.74,28.74,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Acomys nesiotes","mass","Body_Mass","g",28.67,28.67,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Acomys percivali","mass","Body_Mass","g",22,22,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Acomys russatus","mass","Body_Mass","g",55.787,55.787,12,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
+"Acomys russatus","mass","Body_Mass","g",58.525,61.825,13,3,0,FALSE,"Genoud; Ruf; Wilman","secondary",NA,NA
 "Acomys seurati","mass","Body_Mass","g",28.81,28.81,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Acomys spinosissimus","mass","Body_Mass","g",26.76,26.76,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
 "Acomys subspinosus","mass","Body_Mass","g",26.63,26.63,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
@@ -47,9 +47,10 @@
 "Aconaemys fuscus","mass","Body_Mass","g",122.75,122.75,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
 "Aconaemys porteri","mass","Body_Mass","g",113.5,113.5,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Aconaemys sagei","mass","Body_Mass","g",96.5,96.5,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Acrobates pygmaeus","mass","Body_Mass","g",14,14,8,5,1,TRUE,"Burger; Genoud; Seymour; Wilman; Wimberly","primary; secondary",NA,NA
+"Acrobates pygmaeus","mass","Body_Mass","g",14,14,9,6,1,TRUE,"Burger; Genoud; Ruf; Seymour; Wilman; Wimberly","primary; secondary",NA,NA
 "Adapornis personata","mass","Body_Mass","g",40,40,4,1,0,FALSE,"MacLarnon","secondary",NA,NA
 "Addax nasomaculatus","mass","Body_Mass","g",88500.16,88500.16,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
+"Aegotheles cristatus","mass","Body_Mass","g",50,50,4,1,0,FALSE,"Ruf","secondary",NA,NA
 "Aepeomys lugens","mass","Body_Mass","g",37,37,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Aepeomys reigi","mass","Body_Mass","g",37,37,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Aepyceros melampus","mass","Body_Mass","g",54233.923,52591.69,6,3,0,FALSE,"Burger; Wilman; Wimberly","secondary",NA,NA
@@ -57,6 +58,7 @@
 "Aeretes melanopterus","mass","Body_Mass","g",753.23,753.23,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Aeromys tephromelas","mass","Body_Mass","g",1132,1132,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Aeromys thomasi","mass","Body_Mass","g",1435,1435,4,1,0,FALSE,"Wilman","secondary",NA,NA
+"Aeronautes saxatalis","mass","Body_Mass","g",30.5,30.5,4,1,0,FALSE,"Ruf","secondary",NA,NA
 "Aethalops aequalis","mass","Body_Mass","g",15,15,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Aethalops alecto","mass","Body_Mass","g",15,15,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Aethomys bocagei","mass","Body_Mass","g",79.89,79.89,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -64,6 +66,7 @@
 "Aethomys hindei","mass","Body_Mass","g",124.9,124.9,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Aethomys ineptus","mass","Body_Mass","g",133.16,133.16,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Aethomys kaiseri","mass","Body_Mass","g",90,90,4,1,0,FALSE,"Wilman","secondary",NA,NA
+"Aethomys namaquenesis","mass","Body_Mass","g",46,46,4,1,0,FALSE,"Ruf","secondary",NA,NA
 "Aethomys nyikae","mass","Body_Mass","g",77.01,77.01,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Aethomys silindensis","mass","Body_Mass","g",82.76,82.76,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Aethomys stannarius","mass","Body_Mass","g",82.9,82.9,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -122,7 +125,7 @@
 "Allactaga balikunica","mass","Body_Mass","g",93.08,93.08,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Allactaga bullata","mass","Body_Mass","g",89.35,89.35,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Allactaga elater","mass","Body_Mass","g",59,59,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Allactaga euphratica","mass","Body_Mass","g",232,232,4,1,0,FALSE,"Wilman","secondary",NA,NA
+"Allactaga euphratica","mass","Body_Mass","g",161,161,5,2,0,FALSE,"Ruf; Wilman","secondary",NA,NA
 "Allactaga firouzi","mass","Body_Mass","g",92.39,92.39,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Allactaga hotsoni","mass","Body_Mass","g",76.5,76.5,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Allactaga major","mass","Body_Mass","g",350,350,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -130,7 +133,7 @@
 "Allactaga sibirica","mass","Body_Mass","g",145.25,145.25,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Allactaga tetradactyla","mass","Body_Mass","g",52,52,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Allactaga vinogradovi","mass","Body_Mass","g",90.51,90.51,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Allactaga williamsi","mass","Body_Mass","g",116.74,116.74,4,1,0,FALSE,"Wilman","secondary",NA,NA
+"Allactaga williamsi","mass","Body_Mass","g",133.37,133.37,5,2,0,FALSE,"Ruf; Wilman","secondary",NA,NA
 "Allactodipus bobrinskii","mass","Body_Mass","g",65.3,65.3,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Allenopithecus nigroviridis","mass","Body_Mass","g",4309.99,4655,7,4,0,FALSE,"Burger; Isler; Powell; Wilman","secondary",NA,NA
 "Allocebus trichotis","mass","Body_Mass","g",77.5,77.5,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -161,8 +164,10 @@
 "Alticola stoliczkanus","mass","Body_Mass","g",27.47,27.47,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Alticola strelzowi","mass","Body_Mass","g",50,50,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Alticola tuvinicus","mass","Body_Mass","g",33.32,33.32,4,1,0,FALSE,"Wilman","secondary",NA,NA
+"Amazilia versicolor","mass","Body_Mass","g",3.9,3.9,4,1,0,FALSE,"Ruf","secondary",NA,NA
+"Amblonyx cinereus","mass","Body_Mass","g",3500,3500,5,1,0,FALSE,"10.1002%2Fcne.24349_Table3.tsv","secondary",NA,NA
 "Amblysomus corriae","mass","Body_Mass","g",52.6,52.6,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Amblysomus hottentotus","mass","Body_Mass","g",66.812,68.838,9,3,0,FALSE,"Genoud; HerculanoHouzel; Wilman","secondary",NA,NA
+"Amblysomus hottentotus","mass","Body_Mass","g",68.859,71.919,10,4,0,FALSE,"Genoud; HerculanoHouzel; Ruf; Wilman","secondary",NA,NA
 "Amblysomus marleyi","mass","Body_Mass","g",52.6,52.6,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Amblysomus robustus","mass","Body_Mass","g",52.6,52.6,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Amblysomus septentrionalis","mass","Body_Mass","g",52.6,52.6,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -198,15 +203,15 @@
 "Anourosorex schmidi","mass","Body_Mass","g",20,20,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Anourosorex squamipes","mass","Body_Mass","g",20,20,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Anourosorex yamashinai","mass","Body_Mass","g",20,20,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Antechinomys laniger","mass","Body_Mass","g",25.457,25.57,7,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Antechinomys laniger","mass","Body_Mass","g",25.843,25.685,8,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Antechinus adustus","mass","Body_Mass","g",36,36,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Antechinus agilis","mass","Body_Mass","g",23.065,23.065,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Antechinus bellus","mass","Body_Mass","g",44.75,44.75,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
-"Antechinus flavipes","mass","Body_Mass","g",41.833,45,7,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Antechinus flavipes","mass","Body_Mass","g",37.875,40.25,8,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Antechinus godmani","mass","Body_Mass","g",76.5,76.5,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Antechinus leo","mass","Body_Mass","g",74,74,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Antechinus minimus","mass","Body_Mass","g",53.5,53.5,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
-"Antechinus stuartii","mass","Body_Mass","g",27.622,27.5,8,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Antechinus stuartii","mass","Body_Mass","g",27.217,27.5,9,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Antechinus subtropicus","mass","Body_Mass","g",44,44,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Antechinus swainsonii","mass","Body_Mass","g",57.633,53,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
 "Anthops ornatus","mass","Body_Mass","g",8,8,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -238,7 +243,7 @@
 "Apodemus latronum","mass","Body_Mass","g",35.2,35.2,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Apodemus mystacinus","mass","Body_Mass","g",41.3,41.3,7,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
 "Apodemus pallipes","mass","Body_Mass","g",25.68,25.68,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Apodemus peninsulae","mass","Body_Mass","g",32.9,32.9,4,1,0,FALSE,"Wilman","secondary",NA,NA
+"Apodemus peninsulae","mass","Body_Mass","g",29.45,29.45,5,2,0,FALSE,"Ruf; Wilman","secondary",NA,NA
 "Apodemus ponticus","mass","Body_Mass","g",25.76,25.76,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Apodemus rusiges","mass","Body_Mass","g",25.67,25.67,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Apodemus semotus","mass","Body_Mass","g",25.77,25.77,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -256,11 +261,13 @@
 "Apomys musculus","mass","Body_Mass","g",21.2,21.2,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Apomys sacobianus","mass","Body_Mass","g",82.4,82.4,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Aproteles bulmerae","mass","Body_Mass","g",600,600,4,1,0,FALSE,"Wilman","secondary",NA,NA
+"Apus apus","mass","Body_Mass","g",42,42,4,1,0,FALSE,"Ruf","secondary",NA,NA
 "Arborimus albipes","mass","Body_Mass","g",23,23,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Arborimus longicaudus","mass","Body_Mass","g",21.8,21.8,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Arborimus pomo","mass","Body_Mass","g",27.15,27.15,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
 "Archboldomys luzonensis","mass","Body_Mass","g",35.4,35.4,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Archboldomys musseri","mass","Body_Mass","g",35.4,35.4,4,1,0,FALSE,"Wilman","secondary",NA,NA
+"Archilochus alexandri","mass","Body_Mass","g",3.2,3.2,4,1,0,FALSE,"Ruf","secondary",NA,NA
 "Arctictis binturong","mass","Body_Mass","g",12156.248,12234.995,7,4,0,FALSE,"Burger; Genoud; Wilman; Wimberly","secondary",NA,NA
 "Arctocebus aureus","mass","Body_Mass","g",216.25,210,7,4,0,FALSE,"Burger; Isler; Powell; Wilman","secondary",NA,NA
 "Arctocebus calabarensis","mass","Body_Mass","g",258.3,257.5,9,5,0,FALSE,"Burger; Genoud; Isler; Powell; Wilman","secondary",NA,NA
@@ -281,6 +288,7 @@
 "Arielulus societatis","mass","Body_Mass","g",8.03,8.03,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Arielulus torquatus","mass","Body_Mass","g",10.4,10.4,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Ariteus flavescens","mass","Body_Mass","g",11.9,11.9,4,1,0,FALSE,"Wilman","secondary",NA,NA
+"Artamus cyanopterus","mass","Body_Mass","g",35,35,4,1,0,FALSE,"Ruf","secondary",NA,NA
 "Artibeus amplus","mass","Body_Mass","g",60,60,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Artibeus anderseni","mass","Body_Mass","g",138,138,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Artibeus aztecus","mass","Body_Mass","g",20.38,20.38,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -314,8 +322,8 @@
 "Aselliscus stoliczkanus","mass","Body_Mass","g",4.9,4.9,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Aselliscus tricuspidatus","mass","Body_Mass","g",4.233,4.2,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
 "Atelerix albiventris","mass","Body_Mass","g",443.333,450,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
-"Atelerix algirus","mass","Body_Mass","g",745,745,9,3,1,TRUE,"Burger; Stephan_collection; Wilman","primary; secondary",NA,NA
-"Atelerix frontalis","mass","Body_Mass","g",342.25,342.25,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
+"Atelerix algirus","mass","Body_Mass","g",745,745,10,4,1,TRUE,"Burger; Ruf; Stephan_collection; Wilman","primary; secondary",NA,NA
+"Atelerix frontalis","mass","Body_Mass","g",361.5,375,6,3,0,FALSE,"Genoud; Ruf; Wilman","secondary",NA,NA
 "Atelerix sclateri","mass","Body_Mass","g",539.15,539.15,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Ateles ater","mass","Body_Mass","g",6000,6000,4,1,1,TRUE,"Heffner","primary",NA,NA
 "Ateles belzebuth","mass","Body_Mass","g",7581.086,8167,8,5,0,FALSE,"Burger; Granatosky; Isler; Powell; Wilman","secondary",NA,NA
@@ -349,7 +357,7 @@
 "Babyrousa celebensis","mass","Body_Mass","g",1e+05,1e+05,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Babyrousa togeanensis","mass","Body_Mass","g",1e+05,1e+05,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Baiomys musculus","mass","Body_Mass","g",9,9,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Baiomys taylori","mass","Body_Mass","g",7.55,7.55,6,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
+"Baiomys taylori","mass","Body_Mass","g",7.167,7.1,7,3,0,FALSE,"Genoud; Ruf; Wilman","secondary",NA,NA
 "Balaena mysticetus","mass","Body_Mass","g",95499999.965,95499999.965,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Balaenoptera acutorostrata","mass","Body_Mass","g",7793546.795,7793546.795,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Balaenoptera bonaerensis","mass","Body_Mass","g",35089915.83,35089915.83,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -364,7 +372,7 @@
 "Bandicota bengalensis","mass","Body_Mass","g",188.5,188.5,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Bandicota indica","mass","Body_Mass","g",719.96,719.96,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Bandicota savilei","mass","Body_Mass","g",199,199,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Barbastella barbastellus","mass","Body_Mass","g",7.015,7.015,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
+"Barbastella barbastellus","mass","Body_Mass","g",7.01,7,6,3,0,FALSE,"Burger; Ruf; Wilman","secondary",NA,NA
 "Barbastella leucomelas","mass","Body_Mass","g",15.05,15.05,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Bassaricyon alleni","mass","Body_Mass","g",1235.005,1235.005,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Bassaricyon beddardi","mass","Body_Mass","g",1235.01,1235.01,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -466,7 +474,7 @@
 "Bunomys penitus","mass","Body_Mass","g",170,170,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Bunomys prolatus","mass","Body_Mass","g",131,131,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Bunopithecus hoolock","mass","Body_Mass","g",6718.417,6728,6,3,0,FALSE,"Burger; Isler; Wilman","secondary",NA,NA
-"Burramys parvus","mass","Body_Mass","g",42.433,41.5,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Burramys parvus","mass","Body_Mass","g",47.575,42.9,7,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "C. apella","mass","Body_Mass","g",3200,3200,4,1,1,TRUE,"Weaver","primary",NA,NA
 "C. atys","mass","Body_Mass","g",10500,10500,4,1,1,TRUE,"Weaver","primary",NA,NA
 "Cabassous centralis","mass","Body_Mass","g",3809.98,3809.98,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
@@ -532,9 +540,9 @@
 "Callithrix melanura","mass","Body_Mass","g",335.61,335.61,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Callithrix nigriceps","mass","Body_Mass","g",401.12,401.12,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Callithrix penicillata","mass","Body_Mass","g",324.278,328,7,4,0,FALSE,"Burger; Isler; Powell; Wilman","secondary",NA,NA
-"Callithrix pygmaea","mass","Body_Mass","g",120.889,120,22,10,3,TRUE,"Burger; Genoud; Granatosky; Isler; Powell; Seymour; Stephan; Stephan_collection; Wilman; Zilles","primary; secondary",NA,NA
+"Callithrix pygmaea","mass","Body_Mass","g",120.889,120,24,11,3,TRUE,"10.1002%2Fcne.24349_Table3.tsv; Burger; Genoud; Granatosky; Isler; Powell; Seymour; Stephan; Stephan_collection; Wilman; Zilles","primary; secondary",NA,NA
 "Callithrix saterei","mass","Body_Mass","g",441.25,441.25,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Callorhinus ursinus","mass","Body_Mass","g",52000,52000,8,4,1,TRUE,"Burger; Genoud; Heffner; Wilman","primary; secondary",NA,NA
+"Callorhinus ursinus","mass","Body_Mass","g",52000,52000,10,5,1,TRUE,"10.1002%2Fcne.24349_Table3.tsv; Burger; Genoud; Heffner; Wilman","primary; secondary",NA,NA
 "Callosciurus adamsi","mass","Body_Mass","g",134.5,134.5,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Callosciurus albescens","mass","Body_Mass","g",220.89,220.89,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Callosciurus baluensis","mass","Body_Mass","g",356,356,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -557,11 +565,11 @@
 "Calomys hummelincki","mass","Body_Mass","g",27,27,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Calomys laucha","mass","Body_Mass","g",14,14,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Calomys lepidus","mass","Body_Mass","g",21.3,21.3,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
-"Calomys musculinus","mass","Body_Mass","g",18.5,18.5,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
+"Calomys musculinus","mass","Body_Mass","g",18,17,6,3,0,FALSE,"Genoud; Ruf; Wilman","secondary",NA,NA
 "Calomys sorellus","mass","Body_Mass","g",20,20,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Calomys tener","mass","Body_Mass","g",13.8,13.8,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Calomys tocantinsi","mass","Body_Mass","g",25.3,25.3,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Calomys venustus","mass","Body_Mass","g",49.415,49.415,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
+"Calomys venustus","mass","Body_Mass","g",49.61,49.5,6,3,0,FALSE,"Genoud; Ruf; Wilman","secondary",NA,NA
 "Calomyscus bailwardi","mass","Body_Mass","g",20.4,20.4,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Calomyscus baluchi","mass","Body_Mass","g",21.39,21.39,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Calomyscus elburzensis","mass","Body_Mass","g",18.62,18.62,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -575,6 +583,8 @@
 "Caluromys lanatus","mass","Body_Mass","g",354.5,354.5,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Caluromys philander","mass","Body_Mass","g",208.555,208.875,7,4,0,FALSE,"Burger; Genoud; Wilman; Wimberly","secondary",NA,NA
 "Caluromysiops irrupta","mass","Body_Mass","g",250,250,4,1,0,FALSE,"Wilman","secondary",NA,NA
+"Calypte anna","mass","Body_Mass","g",3.4,3.4,4,1,0,FALSE,"Ruf","secondary",NA,NA
+"Calypte costae","mass","Body_Mass","g",3.2,3.2,4,1,0,FALSE,"Ruf","secondary",NA,NA
 "Calyptophractus retusus","mass","Body_Mass","g",129.99,129.99,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Camelus","mass","Body_Mass","g",570000,570000,4,1,1,TRUE,"Heffner","primary",NA,NA
 "Camelus bactrianus","mass","Body_Mass","g",548171.97,554515.91,6,3,0,FALSE,"Burger; Wilman; Wimberly","secondary",NA,NA
@@ -607,17 +617,21 @@
 "Capricornis sumatraensis","mass","Body_Mass","g",110942.22,110942.22,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Capricornis swinhoei","mass","Body_Mass","g",69093.52,69093.52,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Capricornis thar","mass","Body_Mass","g",69093.52,69093.52,4,1,0,FALSE,"Wilman","secondary",NA,NA
+"Caprimulgus europaeus","mass","Body_Mass","g",70,70,4,1,0,FALSE,"Ruf","secondary",NA,NA
+"Caprimulgus guttatus (argus)","mass","Body_Mass","g",75,75,4,1,0,FALSE,"Ruf","secondary",NA,NA
+"Caprimulgus tristigma","mass","Body_Mass","g",73,73,4,1,0,FALSE,"Ruf","secondary",NA,NA
+"Caprimulgus vociferus","mass","Body_Mass","g",55,55,4,1,0,FALSE,"Ruf","secondary",NA,NA
 "Caprolagus hispidus","mass","Body_Mass","g",2497,2497,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Capromys gundlachianus","mass","Body_Mass","g",5650,5650,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Capromys pilorides","mass","Body_Mass","g",4140,4140,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
-"Caracal caracal","mass","Body_Mass","g",13023.303,13749.91,6,3,0,FALSE,"Burger; Wilman; Wimberly","secondary",NA,NA
+"Caracal caracal","mass","Body_Mass","g",12667.478,12674.955,8,4,0,FALSE,"10.1002%2Fcne.24349_Table3.tsv; Burger; Wilman; Wimberly","secondary",NA,NA
 "Cardiocranius paradoxus","mass","Body_Mass","g",8.6,8.6,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Cardioderma cor","mass","Body_Mass","g",26.67,26.67,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Carlito syrichta","mass","Body_Mass","g",127,127,6,1,0,FALSE,"Granatosky","secondary",NA,NA
 "Carollia brevicauda","mass","Body_Mass","g",14.4,14.4,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Carollia castanea","mass","Body_Mass","g",12.91,12.91,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Carollia colombiana","mass","Body_Mass","g",15.47,15.47,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Carollia perspicillata","mass","Body_Mass","g",17.028,17.07,9,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Carollia perspicillata","mass","Body_Mass","g",17.271,17.535,10,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Carollia sowelli","mass","Body_Mass","g",16.5,16.5,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Carollia subrufa","mass","Body_Mass","g",15.59,15.59,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Carpitalpa arendsi","mass","Body_Mass","g",52.34,52.34,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -671,9 +685,9 @@
 "Cephalorhynchus hectori","mass","Body_Mass","g",50000,50000,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Ceratotherium simum","mass","Body_Mass","g",2211975.247,2285939.43,6,3,0,FALSE,"Burger; Wilman; Wimberly","secondary",NA,NA
 "Cercartetus caudatus","mass","Body_Mass","g",27.5,27.5,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
-"Cercartetus concinnus","mass","Body_Mass","g",17,17,7,4,1,TRUE,"Burger; Genoud; Seymour; Wilman","primary; secondary",NA,NA
-"Cercartetus lepidus","mass","Body_Mass","g",8.867,7,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
-"Cercartetus nanus","mass","Body_Mass","g",70,70,8,4,1,TRUE,"Burger; Genoud; Seymour; Wilman","primary; secondary",NA,NA
+"Cercartetus concinnus","mass","Body_Mass","g",17,17,8,5,1,TRUE,"Burger; Genoud; Ruf; Seymour; Wilman","primary; secondary",NA,NA
+"Cercartetus lepidus","mass","Body_Mass","g",9.65,9.5,7,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
+"Cercartetus nanus","mass","Body_Mass","g",70,70,9,5,1,TRUE,"Burger; Genoud; Ruf; Seymour; Wilman","primary; secondary",NA,NA
 "Cercocebus agilis","mass","Body_Mass","g",6485,6620,7,4,0,FALSE,"Burger; Isler; Wilman; Zilles","secondary",NA,NA
 "Cercocebus atys","mass","Body_Mass","g",6200,6200,11,7,1,TRUE,"Burger; Granatosky; Heldstab; Isler; Powell; RillingInsel; Wilman","primary; secondary",NA,NA
 "Cercocebus chrysogaster","mass","Body_Mass","g",12000,12000,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -682,7 +696,7 @@
 "Cercocebus torquatus","mass","Body_Mass","g",6343.328,6571.25,10,6,0,FALSE,"Burger; Genoud; Isler; MacLarnon; Powell; Wilman","secondary",NA,NA
 "Cercopithecus aethiops","mass","Body_Mass","g",4173.5,4173.5,5,1,0,FALSE,"MacLarnon","secondary",NA,NA
 "Cercopithecus albogularis","mass","Body_Mass","g",5305.778,5619.835,9,3,0,FALSE,"Burger; Isler; Wilman","secondary",NA,NA
-"Cercopithecus ascanius","mass","Body_Mass","g",3425,3425,18,7,2,TRUE,"Burger; Granatosky; Isler; Powell; Stephan; Stephan_collection; Wilman","primary; secondary",NA,NA
+"Cercopithecus ascanius","mass","Body_Mass","g",3425,3425,20,8,2,TRUE,"10.1002%2Fcne.24349_Table3.tsv; Burger; Granatosky; Isler; Powell; Stephan; Stephan_collection; Wilman","primary; secondary",NA,NA
 "Cercopithecus campbelli","mass","Body_Mass","g",3273.085,3600,8,5,0,FALSE,"Burger; Granatosky; Isler; Powell; Wilman","secondary",NA,NA
 "Cercopithecus campbelli lowei","mass","Body_Mass","g",2848.5,2848.5,6,2,0,FALSE,"Granatosky; Powell","secondary",NA,NA
 "Cercopithecus cephus","mass","Body_Mass","g",3364.577,3496.655,7,4,0,FALSE,"Burger; Isler; Powell; Wilman","secondary",NA,NA
@@ -757,16 +771,16 @@
 "Chaetophractus vellerosus","mass","Body_Mass","g",1070.005,1070.005,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
 "Chaetophractus villosus","mass","Body_Mass","g",4009.347,4540,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
 "Chalinolobus dwyeri","mass","Body_Mass","g",9.03,9.03,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Chalinolobus gouldii","mass","Body_Mass","g",14.557,14.47,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Chalinolobus gouldii","mass","Body_Mass","g",15.418,15.985,7,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Chalinolobus morio","mass","Body_Mass","g",8.56,8.56,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Chalinolobus neocaledonicus","mass","Body_Mass","g",8.71,8.71,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Chalinolobus nigrogriseus","mass","Body_Mass","g",8.8,8.8,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Chalinolobus picatus","mass","Body_Mass","g",5.1,5.1,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Chalinolobus tuberculatus","mass","Body_Mass","g",8.5,8.5,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Cheirogaleus adipicaudatus","mass","Body_Mass","g",312.695,312.695,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
-"Cheirogaleus crossleyi","mass","Body_Mass","g",285.39,285.39,4,1,0,FALSE,"Wilman","secondary",NA,NA
+"Cheirogaleus crossleyi","mass","Body_Mass","g",392.695,392.695,5,2,0,FALSE,"Ruf; Wilman","secondary",NA,NA
 "Cheirogaleus major","mass","Body_Mass","g",450,450,18,8,2,TRUE,"Burger; Granatosky; Isler; Lewitus; Powell; Stephan; Stephan_collection; Wilman","primary; secondary",NA,NA
-"Cheirogaleus medius","mass","Body_Mass","g",177,177,22,10,2,TRUE,"Burger; Genoud; Granatosky; Isler; Lewitus; Powell; Stephan; Stephan_collection; Wilman; Wimberly","primary; secondary",NA,NA
+"Cheirogaleus medius","mass","Body_Mass","g",177,177,23,11,2,TRUE,"Burger; Genoud; Granatosky; Isler; Lewitus; Powell; Ruf; Stephan; Stephan_collection; Wilman; Wimberly","primary; secondary",NA,NA
 "Cheirogaleus minusculus","mass","Body_Mass","g",285.39,285.39,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Cheirogaleus ravus","mass","Body_Mass","g",285.39,285.39,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Cheirogaleus sibreei","mass","Body_Mass","g",352.75,352.75,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
@@ -819,7 +833,7 @@
 "Chlorocebus aethiops","mass","Body_Mass","g",3620,3620,10,6,1,TRUE,"Burger; Granatosky; Isler; Powell; Seymour; Wilman","primary; secondary",NA,NA
 "Chlorocebus cynosuros","mass","Body_Mass","g",3956.5,3956.5,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Chlorocebus djamdjamensis","mass","Body_Mass","g",6000,6000,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Chlorocebus pygerythrus","mass","Body_Mass","g",4267.931,4251.462,11,4,0,FALSE,"Burger; Isler; Powell; Wilman","secondary",NA,NA
+"Chlorocebus pygerythrus","mass","Body_Mass","g",4534.345,4323.523,13,5,0,FALSE,"10.1002%2Fcne.24349_Table3.tsv; Burger; Isler; Powell; Wilman","secondary",NA,NA
 "Chlorocebus sabaeus","mass","Body_Mass","g",4329.2,4311.9,7,4,0,FALSE,"Burger; Isler; Powell; Wilman","secondary",NA,NA
 "Chlorocebus tantalus","mass","Body_Mass","g",4993,4993,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Chlorotalpa duthieae","mass","Body_Mass","g",49.7,49.7,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -838,6 +852,8 @@
 "Choeronycteris mexicana","mass","Body_Mass","g",16.6,16.6,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Choloepus didactylus","mass","Body_Mass","g",5781.625,5705,7,4,0,FALSE,"Burger; Lewitus; Wilman; Wimberly","secondary",NA,NA
 "Choloepus hoffmanni","mass","Body_Mass","g",4602.67,4750.01,7,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Chordeiles acutipennis","mass","Body_Mass","g",50,50,4,1,0,FALSE,"Ruf","secondary",NA,NA
+"Chordeiles minor","mass","Body_Mass","g",73,73,4,1,0,FALSE,"Ruf","secondary",NA,NA
 "Chrotogale owstoni","mass","Body_Mass","g",3250,3250,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Chrotomys gonzalesi","mass","Body_Mass","g",140.2,140.2,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Chrotomys mindorensis","mass","Body_Mass","g",151.98,151.98,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -850,12 +866,14 @@
 "Chrysocyon brachyurus","mass","Body_Mass","g",22833.28,23249.84,6,3,0,FALSE,"Burger; Wilman; Wimberly","secondary",NA,NA
 "Chrysospalax trevelyani","mass","Body_Mass","g",426.5,426.5,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Chrysospalax villosus","mass","Body_Mass","g",119.88,119.88,4,1,0,FALSE,"Wilman","secondary",NA,NA
+"Chrysuronia oenone","mass","Body_Mass","g",5,5,4,1,0,FALSE,"Ruf","secondary",NA,NA
 "Cistugo lesueuri","mass","Body_Mass","g",7.26,7.26,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Cistugo seabrae","mass","Body_Mass","g",8.35,8.35,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Civettictis civetta","mass","Body_Mass","g",11624.985,11624.985,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Cloeotis percivali","mass","Body_Mass","g",4.05,4.05,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Clyomys bishopi","mass","Body_Mass","g",30,30,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Clyomys laticeps","mass","Body_Mass","g",201,201,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
+"Clytolaema rubricauda","mass","Body_Mass","g",7.7,7.7,4,1,0,FALSE,"Ruf","secondary",NA,NA
 "Coccymys albidens","mass","Body_Mass","g",40.4,40.4,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Coccymys ruemmleri","mass","Body_Mass","g",29.7,29.7,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Coelops frithii","mass","Body_Mass","g",7.52,7.52,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -866,6 +884,9 @@
 "Coendou rothschildi","mass","Body_Mass","g",2000,2000,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Coleura afra","mass","Body_Mass","g",11.085,11.085,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Coleura seychellensis","mass","Body_Mass","g",10.57,10.57,4,1,0,FALSE,"Wilman","secondary",NA,NA
+"Colius castanotus","mass","Body_Mass","g",58,58,4,1,0,FALSE,"Ruf","secondary",NA,NA
+"Colius colius","mass","Body_Mass","g",35,35,4,1,0,FALSE,"Ruf","secondary",NA,NA
+"Colius striatus","mass","Body_Mass","g",51,51,4,1,0,FALSE,"Ruf","secondary",NA,NA
 "Colobus angolensis","mass","Body_Mass","g",9079,9670,8,5,0,FALSE,"Burger; Isler; Powell; Wilman; Zilles","secondary",NA,NA
 "Colobus angolensis palliatus","mass","Body_Mass","g",8959.5,8959.5,6,1,0,FALSE,"Granatosky","secondary",NA,NA
 "Colobus guereza","mass","Body_Mass","g",7503,7503,16,7,1,TRUE,"Burger; Genoud; Granatosky; Heldstab; Isler; Powell; Wilman","primary; secondary",NA,NA
@@ -888,7 +909,7 @@
 "Connochaetes taurinus","mass","Body_Mass","g",189774.66,189309.32,8,4,0,FALSE,"Burger; Genoud; Wilman; Wimberly","secondary",NA,NA
 "Cormura brevirostris","mass","Body_Mass","g",8.69,8.69,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Corynorhinus mexicanus","mass","Body_Mass","g",9.71,9.71,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Corynorhinus rafinesquii","mass","Body_Mass","g",9.15,9.15,4,1,0,FALSE,"Wilman","secondary",NA,NA
+"Corynorhinus rafinesquii","mass","Body_Mass","g",9.575,9.575,5,2,0,FALSE,"Ruf; Wilman","secondary",NA,NA
 "Corynorhinus townsendii","mass","Body_Mass","g",10.3,10.3,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Coryphomys buehleri","mass","Body_Mass","g",71.33,71.33,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Craseonycteris thonglongyai","mass","Body_Mass","g",2.355,2.355,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
@@ -917,7 +938,7 @@
 "Cricetulus migratorius","mass","Body_Mass","g",34.6,34.6,6,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
 "Cricetulus sokolovi","mass","Body_Mass","g",37.67,37.67,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Cricetus auratus","mass","Body_Mass","g",500,500,4,1,1,TRUE,"Heffner","primary",NA,NA
-"Cricetus cricetus","mass","Body_Mass","g",385.387,349.16,10,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Cricetus cricetus","mass","Body_Mass","g",389.04,374.58,11,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Cro-Magnon","mass","Body_Mass","g",67550,67550,4,1,1,TRUE,"Weaver","primary",NA,NA
 "Crocidura aleksandrisi","mass","Body_Mass","g",10.35,10.35,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Crocidura allex","mass","Body_Mass","g",10.35,10.35,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -956,7 +977,7 @@
 "Crocidura elongata","mass","Body_Mass","g",17.8,17.8,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Crocidura erica","mass","Body_Mass","g",10.35,10.35,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Crocidura fischeri","mass","Body_Mass","g",10.35,10.35,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Crocidura flavescens","mass","Body_Mass","g",29.02,29.02,10,3,1,TRUE,"Lewitus; Stephan_collection; Wilman","primary; secondary",NA,NA
+"Crocidura flavescens","mass","Body_Mass","g",29.02,29.02,11,4,1,TRUE,"Lewitus; Ruf; Stephan_collection; Wilman","primary; secondary",NA,NA
 "Crocidura floweri","mass","Body_Mass","g",10.35,10.35,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Crocidura foetida","mass","Body_Mass","g",10.42,10.42,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Crocidura foxi","mass","Body_Mass","g",19,19,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -993,7 +1014,7 @@
 "Crocidura latona","mass","Body_Mass","g",10.35,10.35,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Crocidura lea","mass","Body_Mass","g",6.6,6.6,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Crocidura lepidura","mass","Body_Mass","g",10.42,10.42,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Crocidura leucodon","mass","Body_Mass","g",10.76,10.76,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
+"Crocidura leucodon","mass","Body_Mass","g",11.173,11.7,6,3,0,FALSE,"Genoud; Ruf; Wilman","secondary",NA,NA
 "Crocidura levicula","mass","Body_Mass","g",1.77,1.77,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Crocidura littoralis","mass","Body_Mass","g",16,16,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Crocidura longipes","mass","Body_Mass","g",19.3,19.3,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -1052,7 +1073,7 @@
 "Crocidura rhoditis","mass","Body_Mass","g",14,14,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Crocidura roosevelti","mass","Body_Mass","g",10.35,10.35,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Crocidura russala","mass","Body_Mass","g",11.6,11.6,4,1,0,FALSE,"Lewitus","secondary",NA,NA
-"Crocidura russula","mass","Body_Mass","g",11.02,11.02,17,4,1,TRUE,"Burger; Genoud; Stephan_collection; Wilman","primary; secondary",NA,NA
+"Crocidura russula","mass","Body_Mass","g",11.02,11.02,18,5,1,TRUE,"Burger; Genoud; Ruf; Stephan_collection; Wilman","primary; secondary",NA,NA
 "Crocidura selina","mass","Body_Mass","g",10.35,10.35,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Crocidura serezkyensis","mass","Body_Mass","g",10.35,10.35,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Crocidura shantungensis","mass","Body_Mass","g",10.42,10.42,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -1062,7 +1083,7 @@
 "Crocidura smithii","mass","Body_Mass","g",10.35,10.35,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Crocidura somalica","mass","Body_Mass","g",11.5,11.5,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Crocidura stenocephala","mass","Body_Mass","g",21,21,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Crocidura suaveolens","mass","Body_Mass","g",6.437,6.437,9,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
+"Crocidura suaveolens","mass","Body_Mass","g",6.958,7.684,10,3,0,FALSE,"Genoud; Ruf; Wilman","secondary",NA,NA
 "Crocidura susiana","mass","Body_Mass","g",10.35,10.35,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Crocidura tanakae","mass","Body_Mass","g",10.42,10.42,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Crocidura tansaniana","mass","Body_Mass","g",10.35,10.35,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -1221,10 +1242,10 @@
 "Cynomops paranus","mass","Body_Mass","g",12.16,12.16,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Cynomops planirostris","mass","Body_Mass","g",10.045,10.045,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Cynomys gunnisoni","mass","Body_Mass","g",783.65,783.65,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
-"Cynomys leucurus","mass","Body_Mass","g",964.82,964.82,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
-"Cynomys ludovicianus","mass","Body_Mass","g",1113.817,1112.3,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Cynomys leucurus","mass","Body_Mass","g",1143.213,1021.15,6,3,0,FALSE,"Burger; Ruf; Wilman","secondary",NA,NA
+"Cynomys ludovicianus","mass","Body_Mass","g",1085.362,1056.15,7,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Cynomys mexicanus","mass","Body_Mass","g",948.995,948.995,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
-"Cynomys parvidens","mass","Body_Mass","g",737.995,737.995,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
+"Cynomys parvidens","mass","Body_Mass","g",758.663,800,6,3,0,FALSE,"Burger; Ruf; Wilman","secondary",NA,NA
 "Cynopterus brachyotis","mass","Body_Mass","g",33.553,32.11,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
 "Cynopterus horsfieldii","mass","Body_Mass","g",56.445,56.445,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Cynopterus luzoniensis","mass","Body_Mass","g",40.3,40.3,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -1234,6 +1255,7 @@
 "Cynopterus titthaecheilus","mass","Body_Mass","g",58.33,58.33,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Cystophora cristata","mass","Body_Mass","g",285586.75,285586.75,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Cyttarops alecto","mass","Body_Mass","g",5.3,5.3,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
+"Dacelo novaeguineae","mass","Body_Mass","g",350,350,4,1,0,FALSE,"Ruf","secondary",NA,NA
 "Dacnomys millardi","mass","Body_Mass","g",73.99,73.99,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Dactylomys boliviensis","mass","Body_Mass","g",728.8,728.8,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Dactylomys dactylinus","mass","Body_Mass","g",649.99,649.99,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -1249,7 +1271,7 @@
 "Damaliscus pygargus phillipsi","mass","Body_Mass","g",60000,60000,4,1,0,FALSE,"HerculanoHouzel","secondary",NA,NA
 "Damaliscus superstes","mass","Body_Mass","g",120837.92,120837.92,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Dasycercus cristicauda","mass","Body_Mass","g",95.95,97.85,9,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
-"Dasykaluta rosamondae","mass","Body_Mass","g",33.083,35,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Dasykaluta rosamondae","mass","Body_Mass","g",31.562,31.875,7,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Dasymys alleni","mass","Body_Mass","g",102.35,102.35,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Dasymys cabrali","mass","Body_Mass","g",102.35,102.35,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Dasymys foxi","mass","Body_Mass","g",116.59,116.59,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -1276,16 +1298,17 @@
 "Dasypus sabanicola","mass","Body_Mass","g",1265.005,1265.005,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
 "Dasypus septemcinctus","mass","Body_Mass","g",1526.65,1526.65,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Dasypus yepesi","mass","Body_Mass","g",2785.87,2785.87,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Dasyuroides byrnei","mass","Body_Mass","g",110.804,110,12,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Dasyuroides byrnei","mass","Body_Mass","g",113.103,111.471,13,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Dasyurus albopunctatus","mass","Body_Mass","g",632,632,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
-"Dasyurus geoffroii","mass","Body_Mass","g",1172.733,1100,7,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
-"Dasyurus hallucatus","mass","Body_Mass","g",750,750,9,4,1,TRUE,"Burger; Finlay; Genoud; Wilman","primary; secondary",NA,NA
+"Dasyurus geoffroii","mass","Body_Mass","g",1129.55,1100,8,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
+"Dasyurus hallucatus","mass","Body_Mass","g",750,750,10,5,1,TRUE,"Burger; Finlay; Genoud; Ruf; Wilman","primary; secondary",NA,NA
 "Dasyurus maculatus","mass","Body_Mass","g",4093.704,4392.075,9,4,0,FALSE,"Burger; Genoud; Wilman; Wimberly","secondary",NA,NA
 "Dasyurus spartacus","mass","Body_Mass","g",686.335,686.335,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
-"Dasyurus viverrinus","mass","Body_Mass","g",1031.544,1090,8,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Dasyurus viverrinus","mass","Body_Mass","g",1023.658,1045,9,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Daubentonia madagascarensis","mass","Body_Mass","g",2800,2800,4,1,0,FALSE,"MacLarnon","secondary",NA,NA
 "Daubentonia madagascariensis","mass","Body_Mass","g",2800,2800,20,10,2,TRUE,"Burger; Genoud; Granatosky; Isler; Lewitus; Powell; Stephan; Stephan_collection; Wilman; Wimberly","primary; secondary",NA,NA
 "Delanymys brooksi","mass","Body_Mass","g",5,5,4,1,0,FALSE,"Wilman","secondary",NA,NA
+"Delichon urbicum","mass","Body_Mass","g",22,22,4,1,0,FALSE,"Ruf","secondary",NA,NA
 "Delomys collinus","mass","Body_Mass","g",77.94,77.94,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Delomys dorsalis","mass","Body_Mass","g",67.5,67.5,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Delomys sublineatus","mass","Body_Mass","g",90,90,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -1427,7 +1450,8 @@
 "Dremomys pernyi","mass","Body_Mass","g",198.63,198.63,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Dremomys pyrrhomerus","mass","Body_Mass","g",167.73,167.73,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Dremomys rufigenis","mass","Body_Mass","g",220,220,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
-"Dromiciops gliroides","mass","Body_Mass","g",26.011,24,8,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Drepanoptila holosericea","mass","Body_Mass","g",200,200,4,1,0,FALSE,"Ruf","secondary",NA,NA
+"Dromiciops gliroides","mass","Body_Mass","g",29.558,27.867,9,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Dryomys laniger","mass","Body_Mass","g",20,20,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Dryomys niethammeri","mass","Body_Mass","g",25.92,25.92,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Dryomys nitedula","mass","Body_Mass","g",29.35,29.35,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
@@ -1441,7 +1465,7 @@
 "Echimys saturnus","mass","Body_Mass","g",626.9,626.9,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Echimys semivillosus","mass","Body_Mass","g",200,200,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Echinoprocta rufescens","mass","Body_Mass","g",831.8,831.8,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Echinops telfairi","mass","Body_Mass","g",87.517,87.5,18,6,3,TRUE,"Burger; Finlay; Genoud; Stephan; Stephan_collection; Wilman","primary; secondary",NA,NA
+"Echinops telfairi","mass","Body_Mass","g",87.517,87.5,19,7,3,TRUE,"Burger; Finlay; Genoud; Ruf; Stephan; Stephan_collection; Wilman","primary; secondary",NA,NA
 "Echinosorex gymnura","mass","Body_Mass","g",878.333,957,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
 "Echiothrix centrosa","mass","Body_Mass","g",71.33,71.33,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Echiothrix leucura","mass","Body_Mass","g",63.68,63.68,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -1457,15 +1481,15 @@
 "Elaphodus cephalophus","mass","Body_Mass","g",33500,33500,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Elaphurus davidianus","mass","Body_Mass","g",149000,149000,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Elephantulus brachyrhynchus","mass","Body_Mass","g",46.4,46.4,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
-"Elephantulus edwardii","mass","Body_Mass","g",48.9,48.9,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
+"Elephantulus edwardii","mass","Body_Mass","g",47.6,48,6,3,0,FALSE,"Genoud; Ruf; Wilman","secondary",NA,NA
 "Elephantulus fuscipes","mass","Body_Mass","g",57,57,10,4,1,TRUE,"Burger; Lewitus; Stephan_collection; Wilman","primary; secondary",NA,NA
 "Elephantulus fuscus","mass","Body_Mass","g",52.56,52.56,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Elephantulus intufi","mass","Body_Mass","g",48.515,49.5,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
-"Elephantulus myurus","mass","Body_Mass","g",55.605,54.576,9,5,0,FALSE,"Burger; Garwicz; Genoud; HerculanoHouzel; Wilman","secondary",NA,NA
+"Elephantulus myurus","mass","Body_Mass","g",55.838,55.788,10,6,0,FALSE,"Burger; Garwicz; Genoud; HerculanoHouzel; Ruf; Wilman","secondary",NA,NA
 "Elephantulus revoili","mass","Body_Mass","g",32.5,32.5,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Elephantulus rozeti","mass","Body_Mass","g",46.65,46.65,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
+"Elephantulus rozeti","mass","Body_Mass","g",46.1,45.3,6,3,0,FALSE,"Genoud; Ruf; Wilman","secondary",NA,NA
 "Elephantulus rufescens","mass","Body_Mass","g",53.025,53.025,6,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
-"Elephantulus rupestris","mass","Body_Mass","g",63.05,63.05,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
+"Elephantulus rupestris","mass","Body_Mass","g",62.033,60,6,3,0,FALSE,"Genoud; Ruf; Wilman","secondary",NA,NA
 "Elephas maximus","mass","Body_Mass","g",6e+06,6e+06,8,5,1,TRUE,"Burger; Genoud; Heffner; Wilman; Wimberly","primary; secondary",NA,NA
 "Eligmodontia moreni","mass","Body_Mass","g",18,18,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Eligmodontia morgani","mass","Body_Mass","g",16.5,16.5,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -1473,7 +1497,7 @@
 "Eligmodontia typus","mass","Body_Mass","g",17.4,17.4,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
 "Eliomys melanurus","mass","Body_Mass","g",98.7,98.7,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Eliomys munbyanus","mass","Body_Mass","g",106.54,106.54,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Eliomys quercinus","mass","Body_Mass","g",79.65,79.65,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
+"Eliomys quercinus","mass","Body_Mass","g",76.433,70,6,3,0,FALSE,"Genoud; Ruf; Wilman","secondary",NA,NA
 "Eliurus antsingy","mass","Body_Mass","g",77.7,77.7,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Eliurus ellermani","mass","Body_Mass","g",100,100,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Eliurus grandidieri","mass","Body_Mass","g",77.7,77.7,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -1543,7 +1567,7 @@
 "Eptesicus dimissus","mass","Body_Mass","g",14.015,14.015,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Eptesicus floweri","mass","Body_Mass","g",10.17,10.17,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Eptesicus furinalis","mass","Body_Mass","g",7.67,7.67,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
-"Eptesicus fuscus","mass","Body_Mass","g",14.238,15.024,13,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Eptesicus fuscus","mass","Body_Mass","g",14.353,14.862,14,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Eptesicus gobiensis","mass","Body_Mass","g",10.96,10.96,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Eptesicus guadeloupensis","mass","Body_Mass","g",11.42,11.42,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Eptesicus hottentotus","mass","Body_Mass","g",30,30,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -1573,7 +1597,7 @@
 "Erinaceus","mass","Body_Mass","g",750,750,4,1,1,TRUE,"Heffner","primary",NA,NA
 "Erinaceus amurensis","mass","Body_Mass","g",571.88,571.88,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Erinaceus concolor","mass","Body_Mass","g",771,771,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
-"Erinaceus europaeus","mass","Body_Mass","g",867.08,867.08,20,8,2,TRUE,"Burger; Finlay; Garwicz; Genoud; Lewitus; Stephan_collection; Wilman; Wimberly","primary; secondary",NA,NA
+"Erinaceus europaeus","mass","Body_Mass","g",867.08,867.08,21,9,2,TRUE,"Burger; Finlay; Garwicz; Genoud; Lewitus; Ruf; Stephan_collection; Wilman; Wimberly","primary; secondary",NA,NA
 "Erinaceus roumanicus","mass","Body_Mass","g",744.55,744.55,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Eropeplus canus","mass","Body_Mass","g",73.96,73.96,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Erophylla bombifrons","mass","Body_Mass","g",16.345,16.345,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
@@ -1589,6 +1613,8 @@
 "Eudorcas rufifrons","mass","Body_Mass","g",26999.77,26999.77,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Eudorcas rufina","mass","Body_Mass","g",40000,40000,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Eudorcas thomsonii","mass","Body_Mass","g",23638.715,23638.715,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
+"Eugenes fulgens","mass","Body_Mass","g",8,8,4,1,0,FALSE,"Ruf","secondary",NA,NA
+"Eulampis jugularis","mass","Body_Mass","g",8,8,4,1,0,FALSE,"Ruf","secondary",NA,NA
 "Eulemur albifrons","mass","Body_Mass","g",2288.188,2317.75,7,4,0,FALSE,"Burger; Isler; Powell; Wilman","secondary",NA,NA
 "Eulemur albocollaris","mass","Body_Mass","g",2225.79,2140,6,3,0,FALSE,"Burger; Isler; Wilman","secondary",NA,NA
 "Eulemur cinereiceps","mass","Body_Mass","g",2114.06,2114.06,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -1619,6 +1645,7 @@
 "Euoticus elegantulus","mass","Body_Mass","g",275.55,274,9,5,0,FALSE,"Burger; Genoud; Isler; Powell; Wilman","secondary",NA,NA
 "Euoticus pallidus","mass","Body_Mass","g",270.925,276.85,7,4,0,FALSE,"Burger; Isler; Powell; Wilman","secondary",NA,NA
 "Eupetaurus cinereus","mass","Body_Mass","g",2500,2500,4,1,0,FALSE,"Wilman","secondary",NA,NA
+"Eupetomena macroura","mass","Body_Mass","g",8.5,8.5,4,1,0,FALSE,"Ruf","secondary",NA,NA
 "Euphractus sexcinctus","mass","Body_Mass","g",6987.63,7990,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
 "Eupleres goudotii","mass","Body_Mass","g",2425,2425,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Euroscaptor grandis","mass","Body_Mass","g",59.57,59.57,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -1648,7 +1675,7 @@
 "Feroculus feroculus","mass","Body_Mass","g",36,36,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Fossa fossana","mass","Body_Mass","g",1753.333,1500,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
 "Fukomys anselli","mass","Body_Mass","g",86.98,85.59,6,3,0,FALSE,"Genoud; Kverkova; Wilman","secondary",NA,NA
-"Fukomys damarensis","mass","Body_Mass","g",127.485,118.675,9,3,0,FALSE,"Genoud; Kverkova; Wilman","secondary",NA,NA
+"Fukomys damarensis","mass","Body_Mass","g",131.864,131.838,10,4,0,FALSE,"Genoud; Kverkova; Ruf; Wilman","secondary",NA,NA
 "Fukomys darlingi","mass","Body_Mass","g",92.173,95.75,9,3,0,FALSE,"Genoud; Kverkova; Wilman","secondary",NA,NA
 "Fukomys mechowii","mass","Body_Mass","g",269.72,270.16,6,3,0,FALSE,"Genoud; Kverkova; Wilman","secondary",NA,NA
 "Funambulus layardi","mass","Body_Mass","g",113.79,113.79,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -1675,7 +1702,7 @@
 "Galago gallarum","mass","Body_Mass","g",225,225,5,2,0,FALSE,"Powell; Wilman","secondary",NA,NA
 "Galago granti","mass","Body_Mass","g",173.765,173.765,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Galago matschiei","mass","Body_Mass","g",209.75,209.75,7,4,0,FALSE,"Burger; Granatosky; Isler; Wilman","secondary",NA,NA
-"Galago moholi","mass","Body_Mass","g",157.202,159.75,11,5,0,FALSE,"Burger; Genoud; Isler; Powell; Wilman","secondary",NA,NA
+"Galago moholi","mass","Body_Mass","g",161.001,159.875,12,6,0,FALSE,"Burger; Genoud; Isler; Powell; Ruf; Wilman","secondary",NA,NA
 "Galago nyasae","mass","Body_Mass","g",165.68,165.68,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Galago orinus","mass","Body_Mass","g",165.68,165.68,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Galago rondoensis","mass","Body_Mass","g",165.68,165.68,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -1732,7 +1759,7 @@
 "Geocapromys brownii","mass","Body_Mass","g",1978,1978,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
 "Geocapromys ingrahami","mass","Body_Mass","g",764.1,775,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
 "Geocapromys thoracatus","mass","Body_Mass","g",1500,1500,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Geogale aurita","mass","Body_Mass","g",6.95,6.95,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
+"Geogale aurita","mass","Body_Mass","g",6.633,6.9,6,3,0,FALSE,"Genoud; Ruf; Wilman","secondary",NA,NA
 "Geomys arenarius","mass","Body_Mass","g",206,206,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Geomys attwateri","mass","Body_Mass","g",144.06,144.06,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Geomys breviceps","mass","Body_Mass","g",137.635,137.635,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
@@ -1790,7 +1817,7 @@
 "Gerbillus poecilops","mass","Body_Mass","g",31.5,31.5,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Gerbillus principulus","mass","Body_Mass","g",36.05,36.05,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Gerbillus pulvinatus","mass","Body_Mass","g",35.92,35.92,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Gerbillus pusillus","mass","Body_Mass","g",12.6,12.6,6,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
+"Gerbillus pusillus","mass","Body_Mass","g",12.6,12.6,7,3,0,FALSE,"Genoud; Ruf; Wilman","secondary",NA,NA
 "Gerbillus pyramidum","mass","Body_Mass","g",55.98,46.29,7,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
 "Gerbillus rosalinda","mass","Body_Mass","g",33.89,33.89,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Gerbillus syrticus","mass","Body_Mass","g",23.26,23.26,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -1814,7 +1841,7 @@
 "Glauconycteris superba","mass","Body_Mass","g",8.42,8.42,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Glauconycteris variegata","mass","Body_Mass","g",11.25,11.25,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Glironia venusta","mass","Body_Mass","g",114,114,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Glirulus japonicus","mass","Body_Mass","g",62.99,62.99,4,1,0,FALSE,"Wilman","secondary",NA,NA
+"Glirulus japonicus","mass","Body_Mass","g",43.995,43.995,5,2,0,FALSE,"Ruf; Wilman","secondary",NA,NA
 "Glischropus javanus","mass","Body_Mass","g",5.91,5.91,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Glischropus tylopus","mass","Body_Mass","g",4.67,4.67,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Globicephala macrorhynchus","mass","Body_Mass","g",612666.663,725999.99,6,3,0,FALSE,"Burger; Lewitus; Wilman","secondary",NA,NA
@@ -1823,7 +1850,7 @@
 "Glossophaga leachii","mass","Body_Mass","g",10.1,10.1,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Glossophaga longirostris","mass","Body_Mass","g",12.207,11.92,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
 "Glossophaga morenoi","mass","Body_Mass","g",8.4,8.4,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Glossophaga soricina","mass","Body_Mass","g",9.838,9.855,7,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Glossophaga soricina","mass","Body_Mass","g",9.879,9.928,8,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Glyphonycteris behnii","mass","Body_Mass","g",11.32,11.32,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Glyphonycteris daviesi","mass","Body_Mass","g",18.61,18.61,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Glyphonycteris sylvestris","mass","Body_Mass","g",8.91,8.91,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -1832,7 +1859,7 @@
 "Gorilla beringei","mass","Body_Mass","g",126706.298,130000,7,4,0,FALSE,"Burger; Isler; Powell; Wilman","secondary",NA,NA
 "Gorilla gorilla","mass","Body_Mass","g",103482.857,105000,28,15,5,TRUE,"Burger; Garwicz; Granatosky; Heldstab; Isler; Lewitus; Powell; RillingInsel; Seymour; Stephan; Stephan_collection; Weaver; Wilman; Wimberly; Zilles","primary; secondary",NA,NA
 "Gracilinanus aceramarcae","mass","Body_Mass","g",20.5,20.5,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Gracilinanus agilis","mass","Body_Mass","g",26.7,26.7,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
+"Gracilinanus agilis","mass","Body_Mass","g",27.5,29.1,6,3,0,FALSE,"Genoud; Ruf; Wilman","secondary",NA,NA
 "Gracilinanus agricolai","mass","Body_Mass","g",18.9,18.9,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Gracilinanus dryas","mass","Body_Mass","g",18,18,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Gracilinanus emiliae","mass","Body_Mass","g",7.6,7.6,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -1865,9 +1892,9 @@
 "Graphiurus lorraineus","mass","Body_Mass","g",27,27,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Graphiurus microtis","mass","Body_Mass","g",25.18,25.18,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Graphiurus monardi","mass","Body_Mass","g",25.05,25.05,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Graphiurus murinus","mass","Body_Mass","g",28.74,28.74,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
+"Graphiurus murinus","mass","Body_Mass","g",28.493,28,6,3,0,FALSE,"Genoud; Ruf; Wilman","secondary",NA,NA
 "Graphiurus nagtglasii","mass","Body_Mass","g",30,30,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Graphiurus ocularis","mass","Body_Mass","g",49.05,49.05,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
+"Graphiurus ocularis","mass","Body_Mass","g",55.367,67.8,6,3,0,FALSE,"Genoud; Ruf; Wilman","secondary",NA,NA
 "Graphiurus platyops","mass","Body_Mass","g",46.1,46.1,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Graphiurus rupicola","mass","Body_Mass","g",24.53,24.53,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Graphiurus surdus","mass","Body_Mass","g",20.01,20.01,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -2015,6 +2042,7 @@
 "Hipposideros speoris","mass","Body_Mass","g",10.965,10.965,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Hipposideros stenotis","mass","Body_Mass","g",12,12,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Hipposideros sumbae","mass","Body_Mass","g",13.94,13.94,4,1,0,FALSE,"Wilman","secondary",NA,NA
+"Hipposideros terasensis","mass","Body_Mass","g",57,57,4,1,0,FALSE,"Ruf","secondary",NA,NA
 "Hipposideros thomensis","mass","Body_Mass","g",13.94,13.94,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Hipposideros turpis","mass","Body_Mass","g",34.075,34.075,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Hipposideros vittatus","mass","Body_Mass","g",13.94,13.94,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -2022,6 +2050,7 @@
 "Hippotragus equinus","mass","Body_Mass","g",254186.33,254186.33,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Hippotragus leucophaeus","mass","Body_Mass","g",150000,150000,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Hippotragus niger","mass","Body_Mass","g",196249.635,196249.635,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
+"Hirundapus caudacutus","mass","Body_Mass","g",85,85,4,1,0,FALSE,"Ruf","secondary",NA,NA
 "Hirundo rustica","mass","Body_Mass","g",19,19,5,1,0,FALSE,"MacLarnon","secondary",NA,NA
 "Histiotus alienus","mass","Body_Mass","g",10.42,10.42,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Histiotus humboldti","mass","Body_Mass","g",11.1,11.1,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -2073,7 +2102,7 @@
 "Hylobates agilis","mass","Body_Mass","g",5880,5880,10,6,1,TRUE,"Burger; Granatosky; Isler; Powell; Seymour; Wilman","primary; secondary",NA,NA
 "Hylobates albibarbis","mass","Body_Mass","g",5692.08,5692.08,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Hylobates klossii","mass","Body_Mass","g",5796.25,5795,7,4,0,FALSE,"Burger; Isler; Powell; Wilman","secondary",NA,NA
-"Hylobates lar","mass","Body_Mass","g",5755,5700,25,13,4,TRUE,"Burger; Genoud; Granatosky; Heffner; Isler; Lewitus; Powell; RillingInsel; Seymour; Stephan; Stephan_collection; Wilman; Zilles","primary; secondary",NA,NA
+"Hylobates lar","mass","Body_Mass","g",5755,5700,27,14,4,TRUE,"10.1002%2Fcne.24349_Table3.tsv; Burger; Genoud; Granatosky; Heffner; Isler; Lewitus; Powell; RillingInsel; Seymour; Stephan; Stephan_collection; Wilman; Zilles","primary; secondary",NA,NA
 "Hylobates moloch","mass","Body_Mass","g",6497.333,6500,6,3,0,FALSE,"Burger; Powell; Wilman","secondary",NA,NA
 "Hylobates muelleri","mass","Body_Mass","g",5826.656,5821,8,5,0,FALSE,"Burger; Isler; Powell; Wilman; Zilles","secondary",NA,NA
 "Hylobates pileatus","mass","Body_Mass","g",5440,5440,9,6,1,TRUE,"Burger; Granatosky; Heldstab; Isler; Powell; Wilman","primary; secondary",NA,NA
@@ -2143,6 +2172,7 @@
 "Ichthyomys pittieri","mass","Body_Mass","g",69.1,69.1,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Ichthyomys stolzmanni","mass","Body_Mass","g",84.7,84.7,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Ichthyomys tweedii","mass","Body_Mass","g",118.5,118.5,4,1,0,FALSE,"Wilman","secondary",NA,NA
+"Ictidomys tridecemlineatus","mass","Body_Mass","g",140,140,4,1,0,FALSE,"Ruf","secondary",NA,NA
 "Ictonyx libyca","mass","Body_Mass","g",1146.25,1146.25,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Ictonyx striatus","mass","Body_Mass","g",1006.495,1006.495,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Idionycteris phyllotis","mass","Body_Mass","g",12.03,12.03,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -2167,7 +2197,7 @@
 "Isthmomys pirrensis","mass","Body_Mass","g",138,138,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
 "Jaculus blanfordi","mass","Body_Mass","g",54.7,54.7,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Jaculus jaculus","mass","Body_Mass","g",65.083,64.2,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
-"Jaculus orientalis","mass","Body_Mass","g",128.3,138,7,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Jaculus orientalis","mass","Body_Mass","g",138.725,143.45,8,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Juliomys pictipes","mass","Body_Mass","g",22.9,22.9,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Juliomys rimofrons","mass","Body_Mass","g",19.8,19.8,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Juscelinomys candango","mass","Body_Mass","g",97.3,97.3,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -2245,6 +2275,7 @@
 "Lama glama","mass","Body_Mass","g",106509.917,102608.5,7,4,0,FALSE,"Burger; Genoud; Wilman; Wimberly","secondary",NA,NA
 "Lama glama domesticus","mass","Body_Mass","g",107250,107250,4,1,0,FALSE,"Lewitus","secondary",NA,NA
 "Lamottemys okuensis","mass","Body_Mass","g",75.89,75.89,4,1,0,FALSE,"Wilman","secondary",NA,NA
+"Lampornis clemenciae","mass","Body_Mass","g",8,8,4,1,0,FALSE,"Ruf","secondary",NA,NA
 "Lampronycteris brachyotis","mass","Body_Mass","g",10.39,10.39,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Lariscus hosei","mass","Body_Mass","g",180,180,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Lariscus insignis","mass","Body_Mass","g",200,200,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -2258,9 +2289,9 @@
 "Lasiorhinus latifrons","mass","Body_Mass","g",29917,29917,7,4,1,TRUE,"Burger; Genoud; Seymour; Wilman","primary; secondary",NA,NA
 "Lasiurus atratus","mass","Body_Mass","g",14.57,14.57,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Lasiurus blossevillii","mass","Body_Mass","g",9.5,9.5,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Lasiurus borealis","mass","Body_Mass","g",10.213,10.74,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Lasiurus borealis","mass","Body_Mass","g",10.41,10.87,7,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Lasiurus castaneus","mass","Body_Mass","g",13.63,13.63,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Lasiurus cinereus","mass","Body_Mass","g",23.815,23.815,6,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
+"Lasiurus cinereus","mass","Body_Mass","g",26.877,25.28,7,3,0,FALSE,"Genoud; Ruf; Wilman","secondary",NA,NA
 "Lasiurus degelidus","mass","Body_Mass","g",14.57,14.57,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Lasiurus ebenus","mass","Body_Mass","g",14,14,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Lasiurus ega","mass","Body_Mass","g",13.2,13.2,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -2302,7 +2333,7 @@
 "Leontopithecus caissara","mass","Body_Mass","g",572,572,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Leontopithecus chrysomelas","mass","Body_Mass","g",655,655,8,5,1,TRUE,"Burger; Heldstab; Isler; Powell; Wilman","primary; secondary",NA,NA
 "Leontopithecus chrysopygus","mass","Body_Mass","g",700,700,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Leontopithecus rosalia","mass","Body_Mass","g",607.25,607.25,14,10,2,TRUE,"Burger; Genoud; Granatosky; Heldstab; Isler; Powell; Seymour; Wilman; Wimberly; Zilles","primary; secondary",NA,NA
+"Leontopithecus rosalia","mass","Body_Mass","g",607.25,607.25,16,11,2,TRUE,"10.1002%2Fcne.24349_Table3.tsv; Burger; Genoud; Granatosky; Heldstab; Isler; Powell; Seymour; Wilman; Wimberly; Zilles","primary; secondary",NA,NA
 "Leopardus braccatus","mass","Body_Mass","g",5157.94,5157.94,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Leopardus colocolo","mass","Body_Mass","g",5157.94,5157.94,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Leopardus geoffroyi","mass","Body_Mass","g",4373.97,4373.97,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
@@ -2453,7 +2484,7 @@
 "Lycalopex gymnocercus","mass","Body_Mass","g",4446.335,4446.335,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Lycalopex sechurae","mass","Body_Mass","g",4234,4234,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Lycalopex vetulus","mass","Body_Mass","g",4233.47,4233.47,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Lycaon pictus","mass","Body_Mass","g",17616.69,22050,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Lycaon pictus","mass","Body_Mass","g",19787.518,22050.035,8,4,0,FALSE,"10.1002%2Fcne.24349_Table3.tsv; Burger; Genoud; Wilman","secondary",NA,NA
 "Lyncodon patagonicus","mass","Body_Mass","g",225,225,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Lynx canadensis","mass","Body_Mass","g",12171.125,12171.125,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Lynx lynx","mass","Body_Mass","g",17575,17575,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
@@ -2488,7 +2519,7 @@
 "Macaca tonkeana","mass","Body_Mass","g",9000,9000,7,4,1,TRUE,"Burger; Heldstab; Powell; Wilman","primary; secondary",NA,NA
 "Macroderma gigas","mass","Body_Mass","g",124.677,126.43,7,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
 "Macrogalidia musschenbroekii","mass","Body_Mass","g",4000,4000,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Macroglossus minimus","mass","Body_Mass","g",16.467,16.37,8,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Macroglossus minimus","mass","Body_Mass","g",16.35,16.185,9,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Macroglossus sobrinus","mass","Body_Mass","g",21.915,21.915,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Macronycteris commersoni","mass","Body_Mass","g",100.17,100.17,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Macrophyllum macrophyllum","mass","Body_Mass","g",8.35,8.35,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
@@ -2503,7 +2534,7 @@
 "Macropus irma","mass","Body_Mass","g",8000,8000,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Macropus parryi","mass","Body_Mass","g",13500,13500,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Macropus robustus","mass","Body_Mass","g",29500,29500,8,4,1,TRUE,"Burger; Genoud; Seymour; Wilman","primary; secondary",NA,NA
-"Macroscelides proboscideus","mass","Body_Mass","g",38.5,38.5,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
+"Macroscelides proboscideus","mass","Body_Mass","g",41,38.8,6,3,0,FALSE,"Genoud; Ruf; Wilman","secondary",NA,NA
 "Macrotarsomys bastardi","mass","Body_Mass","g",25,25,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Macrotarsomys ingens","mass","Body_Mass","g",59.65,59.65,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
 "Macrotis lagotis","mass","Body_Mass","g",1481.333,1350,7,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
@@ -2534,6 +2565,7 @@
 "Malpaisomys insularis","mass","Body_Mass","g",71.33,71.33,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Mammelomys lanosus","mass","Body_Mass","g",117.1,117.1,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Mammelomys rattoides","mass","Body_Mass","g",209.49,209.49,4,1,0,FALSE,"Wilman","secondary",NA,NA
+"Manacus vitellinus","mass","Body_Mass","g",15.5,15.5,4,1,0,FALSE,"Ruf","secondary",NA,NA
 "Mandrillus leucophaeus","mass","Body_Mass","g",20000,20000,8,5,1,TRUE,"Burger; Isler; Powell; Seymour; Wilman","primary; secondary",NA,NA
 "Mandrillus sphinx","mass","Body_Mass","g",19862.5,19862.5,11,8,2,TRUE,"Burger; Heldstab; Isler; Lewitus; Powell; Seymour; Wilman; Wimberly","primary; secondary",NA,NA
 "Manis crassicaudata","mass","Body_Mass","g",12183.665,12183.665,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
@@ -2550,6 +2582,7 @@
 "Marmosa andersoni","mass","Body_Mass","g",47.4,47.4,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Marmosa lepida","mass","Body_Mass","g",14,14,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Marmosa mexicana","mass","Body_Mass","g",49.475,49.475,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
+"Marmosa microtarsus","mass","Body_Mass","g",13,13,4,1,0,FALSE,"Ruf","secondary",NA,NA
 "Marmosa murina","mass","Body_Mass","g",35.5,35.5,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Marmosa quichua","mass","Body_Mass","g",38.23,38.23,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Marmosa robinsoni","mass","Body_Mass","g",79.557,60,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
@@ -2573,15 +2606,15 @@
 "Marmosops pinheiroi","mass","Body_Mass","g",31.57,31.57,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Marmota baibacina","mass","Body_Mass","g",6437.5,6437.5,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Marmota bobak","mass","Body_Mass","g",5211,5211,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
-"Marmota broweri","mass","Body_Mass","g",3405,3405,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
+"Marmota broweri","mass","Body_Mass","g",3301.333,3405,6,3,0,FALSE,"Burger; Ruf; Wilman","secondary",NA,NA
 "Marmota caligata","mass","Body_Mass","g",6765.015,6765.015,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Marmota camtschatica","mass","Body_Mass","g",3407.25,3407.25,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Marmota caudata","mass","Body_Mass","g",4296,4296,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
-"Marmota flaviventris","mass","Body_Mass","g",3487.228,3350.5,9,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Marmota flaviventris","mass","Body_Mass","g",3240.421,3350.23,10,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Marmota himalayana","mass","Body_Mass","g",5803.75,5803.75,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
-"Marmota marmota","mass","Body_Mass","g",2785.883,2534,8,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Marmota marmota","mass","Body_Mass","g",2864.412,2817,9,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Marmota menzbieri","mass","Body_Mass","g",3132.5,3132.5,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
-"Marmota monax","mass","Body_Mass","g",5300,5300,8,4,1,TRUE,"Burger; Genoud; Heffner; Wilman","primary; secondary",NA,NA
+"Marmota monax","mass","Body_Mass","g",5300,5300,9,5,1,TRUE,"Burger; Genoud; Heffner; Ruf; Wilman","primary; secondary",NA,NA
 "Marmota olympus","mass","Body_Mass","g",4889.395,4889.395,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Marmota sibirica","mass","Body_Mass","g",7250,7250,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Marmota vancouverensis","mass","Body_Mass","g",5274.995,5274.995,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
@@ -2639,7 +2672,7 @@
 "Megaerops kusnotoi","mass","Body_Mass","g",35.94,35.94,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Megaerops niphanae","mass","Body_Mass","g",32.6,32.6,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Megaerops wetmorei","mass","Body_Mass","g",18.5,18.5,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Megaloglossus woermanni","mass","Body_Mass","g",14.98,15.66,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Megaloglossus woermanni","mass","Body_Mass","g",14.235,13.83,7,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Megalomys desmarestii","mass","Body_Mass","g",47.71,47.71,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Megalomys luciae","mass","Body_Mass","g",47.71,47.71,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Megaoryzomys curioi","mass","Body_Mass","g",47.71,47.71,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -2648,10 +2681,11 @@
 "Melanomys caliginosus","mass","Body_Mass","g",41,41,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Melanomys robustulus","mass","Body_Mass","g",53.5,53.5,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Melanomys zunigae","mass","Body_Mass","g",53.5,53.5,4,1,0,FALSE,"Wilman","secondary",NA,NA
+"Melanotrochilus fuscus","mass","Body_Mass","g",6.9,6.9,4,1,0,FALSE,"Ruf","secondary",NA,NA
 "Melasmothrix naso","mass","Body_Mass","g",47.45,47.45,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Meles anakuma","mass","Body_Mass","g",13000,13000,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Meles leucurus","mass","Body_Mass","g",13000,13000,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Meles meles","mass","Body_Mass","g",11383.333,11050,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Meles meles","mass","Body_Mass","g",11787.5,12025,7,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Mellivora capensis","mass","Body_Mass","g",8193.333,8080,6,3,0,FALSE,"Burger; Wilman; Wimberly","secondary",NA,NA
 "Melogale everetti","mass","Body_Mass","g",1500,1500,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Melogale moschata","mass","Body_Mass","g",805.25,805.25,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -2686,7 +2720,7 @@
 "Melursus ursinus","mass","Body_Mass","g",98722.333,93130,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
 "Menetes berdmorei","mass","Body_Mass","g",190,190,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Mephitis macroura","mass","Body_Mass","g",801.25,801.25,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Mephitis mephitis","mass","Body_Mass","g",3029.505,2235.51,7,4,0,FALSE,"Burger; Genoud; Wilman; Wimberly","secondary",NA,NA
+"Mephitis mephitis","mass","Body_Mass","g",2999.604,2386,8,5,0,FALSE,"Burger; Genoud; Ruf; Wilman; Wimberly","secondary",NA,NA
 "Meriones arimalius","mass","Body_Mass","g",89.57,89.57,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Meriones chengi","mass","Body_Mass","g",88.96,88.96,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Meriones crassus","mass","Body_Mass","g",99.885,99.885,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
@@ -2713,8 +2747,8 @@
 "Mesocapromys melanurus","mass","Body_Mass","g",883.14,883.14,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Mesocapromys nanus","mass","Body_Mass","g",583.33,583.33,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Mesocapromys sanfelipensis","mass","Body_Mass","g",554.44,554.44,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Mesocricetus auratus","mass","Body_Mass","g",120.426,115,14,7,0,FALSE,"Burger; Garwicz; Genoud; HerculanoHouzel; Lewitus; Wilman; Wimberly","secondary",NA,NA
-"Mesocricetus brandti","mass","Body_Mass","g",198,198,4,1,0,FALSE,"Wilman","secondary",NA,NA
+"Mesocricetus auratus","mass","Body_Mass","g",116.622,113.14,15,8,0,FALSE,"Burger; Garwicz; Genoud; HerculanoHouzel; Lewitus; Ruf; Wilman; Wimberly","secondary",NA,NA
+"Mesocricetus brandti","mass","Body_Mass","g",174,174,5,2,0,FALSE,"Ruf; Wilman","secondary",NA,NA
 "Mesocricetus newtoni","mass","Body_Mass","g",97.5,97.5,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Mesocricetus raddei","mass","Body_Mass","g",111.73,111.73,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Mesomys hispidus","mass","Body_Mass","g",175,175,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
@@ -2752,16 +2786,16 @@
 "Microcavia niata","mass","Body_Mass","g",255.2,255.2,6,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
 "Microcavia shiptoni","mass","Body_Mass","g",185,185,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Microcebus berthae","mass","Body_Mass","g",33.45,33.45,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Microcebus griseorufus","mass","Body_Mass","g",60.87,60.87,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
-"Microcebus murinus","mass","Body_Mass","g",54,54,23,10,2,TRUE,"Burger; Genoud; Granatosky; HerculanoHouzel; Isler; Lewitus; Powell; Stephan; Stephan_collection; Wilman","primary; secondary",NA,NA
-"Microcebus myoxinus","mass","Body_Mass","g",30,30,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Microcebus ravelobensis","mass","Body_Mass","g",55,55,4,1,0,FALSE,"Wilman","secondary",NA,NA
+"Microcebus griseorufus","mass","Body_Mass","g",57.247,51.5,6,3,0,FALSE,"Genoud; Ruf; Wilman","secondary",NA,NA
+"Microcebus murinus","mass","Body_Mass","g",54,54,24,11,2,TRUE,"Burger; Genoud; Granatosky; HerculanoHouzel; Isler; Lewitus; Powell; Ruf; Stephan; Stephan_collection; Wilman","primary; secondary",NA,NA
+"Microcebus myoxinus","mass","Body_Mass","g",31.5,31.5,5,2,0,FALSE,"Ruf; Wilman","secondary",NA,NA
+"Microcebus ravelobensis","mass","Body_Mass","g",59,59,5,2,0,FALSE,"Ruf; Wilman","secondary",NA,NA
 "Microcebus rufus","mass","Body_Mass","g",42.75,42.75,7,4,0,FALSE,"Burger; Isler; Powell; Wilman","secondary",NA,NA
 "Microcebus sambiranensis","mass","Body_Mass","g",49.06,49.06,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Microcebus tavaratra","mass","Body_Mass","g",68.01,68.01,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Microdillus peeli","mass","Body_Mass","g",35.26,35.26,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Microdipodops megacephalus","mass","Body_Mass","g",11.883,11.35,7,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
-"Microdipodops pallidus","mass","Body_Mass","g",13,12.9,7,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Microdipodops pallidus","mass","Body_Mass","g",12.75,12.7,8,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Microgale brevicaudata","mass","Body_Mass","g",11.3,11.3,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Microgale cowani","mass","Body_Mass","g",15.2,15.2,8,4,1,TRUE,"Burger; Genoud; Stephan_collection; Wilman","primary; secondary",NA,NA
 "Microgale drouhardi","mass","Body_Mass","g",11.2,11.2,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
@@ -2892,7 +2926,7 @@
 "Miniopterus paululus","mass","Body_Mass","g",9.76,9.76,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Miniopterus pusillus","mass","Body_Mass","g",8.605,8.605,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Miniopterus robustior","mass","Body_Mass","g",12.06,12.06,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Miniopterus schreibersii","mass","Body_Mass","g",11.415,11.46,7,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Miniopterus schreibersii","mass","Body_Mass","g",12.311,11.62,8,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Miniopterus shortridgei","mass","Body_Mass","g",9.76,9.76,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Miniopterus tristis","mass","Body_Mass","g",15.675,15.675,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Minopterus macrocneme","mass","Body_Mass","g",9.83,9.83,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -2944,7 +2978,7 @@
 "Monophyllus redmani","mass","Body_Mass","g",8.755,8.755,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
 "Monticolomys koopmani","mass","Body_Mass","g",25,25,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Mops brachypterus","mass","Body_Mass","g",16,16,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Mops condylurus","mass","Body_Mass","g",26.073,26.65,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Mops condylurus","mass","Body_Mass","g",26.805,27.51,7,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Mops congicus","mass","Body_Mass","g",42.95,42.95,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Mops demonstrator","mass","Body_Mass","g",18.65,18.65,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Mops leucostigma","mass","Body_Mass","g",26.79,26.79,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
@@ -2983,7 +3017,7 @@
 "Mosia nigrescens","mass","Body_Mass","g",3.25,3.25,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Mouse lemur","mass","Body_Mass","g",60,60,4,1,0,FALSE,"Burish","review",NA,NA
 "Mungos gambianus","mass","Body_Mass","g",1500,1500,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Mungos mungo","mass","Body_Mass","g",1395,1400,6,3,0,FALSE,"Burger; Wilman; Wimberly","secondary",NA,NA
+"Mungos mungo","mass","Body_Mass","g",1371.25,1350,8,4,0,FALSE,"10.1002%2Fcne.24349_Table3.tsv; Burger; Wilman; Wimberly","secondary",NA,NA
 "Mungotictis decemlineata","mass","Body_Mass","g",650,650,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Muntiacus atherodes","mass","Body_Mass","g",15600,15600,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Muntiacus crinifrons","mass","Body_Mass","g",36140.99,36140.99,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -3036,7 +3070,7 @@
 "Mus mayori","mass","Body_Mass","g",20.78,20.78,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Mus minutoides","mass","Body_Mass","g",7.587,7.587,6,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
 "Mus musculoides","mass","Body_Mass","g",7.115,7.115,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
-"Mus musculus","mass","Body_Mass","g",22.782,20.925,58,8,0,FALSE,"Burger; Garwicz; Genoud; HerculanoHouzel; Lewitus; MacLarnon; Wilman; Wimberly","secondary",NA,NA
+"Mus musculus","mass","Body_Mass","g",24.362,22.25,59,9,0,FALSE,"Burger; Garwicz; Genoud; HerculanoHouzel; Lewitus; MacLarnon; Ruf; Wilman; Wimberly","secondary",NA,NA
 "Mus neavei","mass","Body_Mass","g",9.53,9.53,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Mus orangiae","mass","Body_Mass","g",9.5,9.5,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Mus oubanguii","mass","Body_Mass","g",9.16,9.16,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -3055,7 +3089,7 @@
 "Mus terricolor","mass","Body_Mass","g",9,9,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Mus triton","mass","Body_Mass","g",13.55,13.55,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Mus vulcani","mass","Body_Mass","g",20.2,20.2,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Muscardinus avellanarius","mass","Body_Mass","g",25.53,27.5,7,3,0,FALSE,"Genoud; Wilman; Wimberly","secondary",NA,NA
+"Muscardinus avellanarius","mass","Body_Mass","g",25.023,25.5,8,4,0,FALSE,"Genoud; Ruf; Wilman; Wimberly","secondary",NA,NA
 "Musonycteris harrisoni","mass","Body_Mass","g",13.37,13.37,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Mustela africana","mass","Body_Mass","g",536.99,536.99,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Mustela altaica","mass","Body_Mass","g",180.5,180.5,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
@@ -3070,7 +3104,7 @@
 "Mustela nigripes","mass","Body_Mass","g",859.667,850,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
 "Mustela nivalis","mass","Body_Mass","g",80.293,77,12,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
 "Mustela nudipes","mass","Body_Mass","g",500,500,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Mustela putorius","mass","Body_Mass","g",1053.592,915.185,7,4,0,FALSE,"Burger; Genoud; Lewitus; Wilman","secondary",NA,NA
+"Mustela putorius","mass","Body_Mass","g",1062.874,915.37,9,5,0,FALSE,"10.1002%2Fcne.24349_Table3.tsv; Burger; Genoud; Lewitus; Wilman","secondary",NA,NA
 "Mustela putorius furo","mass","Body_Mass","g",1800,1800,4,1,0,FALSE,"Garwicz","secondary",NA,NA
 "Mustela sibirica","mass","Body_Mass","g",400,400,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Mustela strigidorsa","mass","Body_Mass","g",1500,1500,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -3130,7 +3164,7 @@
 "Myospalax psilurus","mass","Body_Mass","g",259.21,259.21,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Myotis","mass","Body_Mass","g",30,30,4,1,1,TRUE,"Heffner","primary",NA,NA
 "Myotis abei","mass","Body_Mass","g",7.74,7.74,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Myotis adversus","mass","Body_Mass","g",10.9,10.9,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
+"Myotis adversus","mass","Body_Mass","g",9.867,10.55,6,3,0,FALSE,"Burger; Ruf; Wilman","secondary",NA,NA
 "Myotis aelleni","mass","Body_Mass","g",7.26,7.26,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Myotis albescens","mass","Body_Mass","g",4.65,4.65,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Myotis alcathoe","mass","Body_Mass","g",7.74,7.74,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -3184,7 +3218,7 @@
 "Myotis leibii","mass","Body_Mass","g",5.13,5.13,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Myotis levis","mass","Body_Mass","g",5.5,5.5,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Myotis longipes","mass","Body_Mass","g",7.25,7.25,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Myotis lucifugus","mass","Body_Mass","g",7.423,7.65,10,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Myotis lucifugus","mass","Body_Mass","g",6.867,7.135,11,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Myotis macrodactylus","mass","Body_Mass","g",7.2,7.2,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Myotis macropus","mass","Body_Mass","g",7.74,7.74,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Myotis macrotarsus","mass","Body_Mass","g",12.5,12.5,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -3194,9 +3228,9 @@
 "Myotis montivagus","mass","Body_Mass","g",8.3,8.3,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Myotis morrisi","mass","Body_Mass","g",9.01,9.01,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Myotis muricola","mass","Body_Mass","g",4.52,4.52,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
-"Myotis myotis","mass","Body_Mass","g",25.903,25,8,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Myotis myotis","mass","Body_Mass","g",25.678,25,9,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Myotis mystacinus","mass","Body_Mass","g",4.92,4.92,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
-"Myotis nattereri","mass","Body_Mass","g",7.213,7.15,7,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Myotis nattereri","mass","Body_Mass","g",7.66,7.25,8,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Myotis nesopolus","mass","Body_Mass","g",3.5,3.5,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Myotis nigricans","mass","Body_Mass","g",4.13,4.24,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
 "Myotis nipalensis","mass","Body_Mass","g",7.74,7.74,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -3225,7 +3259,7 @@
 "Myotis stalkeri","mass","Body_Mass","g",9.05,9.05,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Myotis thysanodes","mass","Body_Mass","g",8.415,8.415,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
 "Myotis tricolor","mass","Body_Mass","g",13.417,13.6,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
-"Myotis velifer","mass","Body_Mass","g",9.5,9.5,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
+"Myotis velifer","mass","Body_Mass","g",10.333,10.1,6,3,0,FALSE,"Burger; Ruf; Wilman","secondary",NA,NA
 "Myotis vivesi","mass","Body_Mass","g",25,25,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
 "Myotis volans","mass","Body_Mass","g",8.46,8.46,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Myotis welwitschii","mass","Body_Mass","g",15.5,15.5,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -3234,8 +3268,8 @@
 "Myotis yumanensis","mass","Body_Mass","g",5.288,5.39,7,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
 "Myotomys sloggetti","mass","Body_Mass","g",109.775,109.775,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
 "Myotomys unisulcatus","mass","Body_Mass","g",99.25,99.25,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
-"Myoxus glis","mass","Body_Mass","g",138.413,139.15,7,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
-"Myrmecobius fasciatus","mass","Body_Mass","g",487.66,483.85,11,4,0,FALSE,"Burger; Genoud; Wilman; Wimberly","secondary",NA,NA
+"Myoxus glis","mass","Body_Mass","g",153.81,143.575,8,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
+"Myrmecobius fasciatus","mass","Body_Mass","g",490.128,496.2,12,5,0,FALSE,"Burger; Genoud; Ruf; Wilman; Wimberly","secondary",NA,NA
 "Myrmecophaga jubata","mass","Body_Mass","g",20000,20000,4,1,1,TRUE,"Heffner","primary",NA,NA
 "Myrmecophaga tridactyla","mass","Body_Mass","g",25351.245,25932.49,7,4,0,FALSE,"Burger; Genoud; Wilman; Wimberly","secondary",NA,NA
 "Mysateles garridoi","mass","Body_Mass","g",929.09,929.09,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -3284,6 +3318,7 @@
 "Necromys punctulatus","mass","Body_Mass","g",37.3,37.3,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Necromys temchuki","mass","Body_Mass","g",47.2,47.2,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Necromys urichi","mass","Body_Mass","g",44.84,44.84,4,1,0,FALSE,"Wilman","secondary",NA,NA
+"Nectarinia famosa","mass","Body_Mass","g",17,17,4,1,0,FALSE,"Ruf","secondary",NA,NA
 "Nectogale elegans","mass","Body_Mass","g",32.5,32.5,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Nectomys apicalis","mass","Body_Mass","g",217.85,217.85,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Nectomys magdalenae","mass","Body_Mass","g",217.85,217.85,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -3349,7 +3384,7 @@
 "Neovison macrodon","mass","Body_Mass","g",1150,1150,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Nesiotites hidalgo","mass","Body_Mass","g",9.05,9.05,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Nesiotites similis","mass","Body_Mass","g",9.05,9.05,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Nesogale dobsoni","mass","Body_Mass","g",32.6,32.6,8,4,1,TRUE,"Burger; Genoud; Stephan_collection; Wilman","primary; secondary",NA,NA
+"Nesogale dobsoni","mass","Body_Mass","g",32.6,32.6,9,5,1,TRUE,"Burger; Genoud; Ruf; Stephan_collection; Wilman","primary; secondary",NA,NA
 "Nesogale talazaci","mass","Body_Mass","g",50.4,50.4,10,4,1,TRUE,"Burger; Genoud; Stephan_collection; Wilman","primary; secondary",NA,NA
 "Nesokia bunnii","mass","Body_Mass","g",154.48,154.48,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Nesokia indica","mass","Body_Mass","g",178.08,178.08,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -3372,7 +3407,7 @@
 "Nilopegamys plumbeus","mass","Body_Mass","g",84,84,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Ningaui ridei","mass","Body_Mass","g",8.75,8.75,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Ningaui timealeyi","mass","Body_Mass","g",5.7,5.7,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Ningaui yvonnae","mass","Body_Mass","g",8.017,8,7,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Ningaui yvonnae","mass","Body_Mass","g",8.762,8.525,8,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Niviventer andersoni","mass","Body_Mass","g",147,147,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Niviventer brahma","mass","Body_Mass","g",97.3,97.3,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Niviventer cameroni","mass","Body_Mass","g",83.06,83.06,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -3404,7 +3439,7 @@
 "Notamacropus rufogriseus","mass","Body_Mass","g",13387.5,15950,7,4,0,FALSE,"Burger; Genoud; Lewitus; Wilman","secondary",NA,NA
 "Notiomys edwardsii","mass","Body_Mass","g",21.3,21.3,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Notiosorex cockrumi","mass","Body_Mass","g",4.82,4.82,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Notiosorex crawfordi","mass","Body_Mass","g",4.797,4.39,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Notiosorex crawfordi","mass","Body_Mass","g",4.598,4.195,7,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Notiosorex evotis","mass","Body_Mass","g",5.28,5.28,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Notiosorex villai","mass","Body_Mass","g",4.82,4.82,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Notomys alexis","mass","Body_Mass","g",35.592,35,9,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
@@ -3426,7 +3461,7 @@
 "Nyctalus lasiopterus","mass","Body_Mass","g",49.73,49.73,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Nyctalus leisleri","mass","Body_Mass","g",13.28,13.28,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Nyctalus montanus","mass","Body_Mass","g",21.85,21.85,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Nyctalus noctula","mass","Body_Mass","g",24.667,26,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Nyctalus noctula","mass","Body_Mass","g",25.75,27,7,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Nyctalus plancyi","mass","Body_Mass","g",26.44,26.44,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Nyctereutes procyonoides","mass","Body_Mass","g",5211.667,4040,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
 "Nycteris arge","mass","Body_Mass","g",11.3,11.3,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
@@ -3441,7 +3476,7 @@
 "Nycteris major","mass","Body_Mass","g",11.21,11.21,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Nycteris nana","mass","Body_Mass","g",6.95,6.95,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Nycteris parisii","mass","Body_Mass","g",11.86,11.86,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Nycteris thebaica","mass","Body_Mass","g",10.137,9.81,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Nycteris thebaica","mass","Body_Mass","g",10.352,10.405,7,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Nycteris tragata","mass","Body_Mass","g",14.4,14.4,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Nycteris vinsoni","mass","Body_Mass","g",11.86,11.86,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Nycteris woodi","mass","Body_Mass","g",7.55,7.55,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -3455,7 +3490,7 @@
 "Nycticeius humeralis","mass","Body_Mass","g",8.995,8.995,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
 "Nyctiellus lepidus","mass","Body_Mass","g",4.48,4.48,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Nyctimene aello","mass","Body_Mass","g",84.26,84.26,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Nyctimene albiventer","mass","Body_Mass","g",29.71,29.7,7,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Nyctimene albiventer","mass","Body_Mass","g",29.282,29.625,8,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Nyctimene cephalotes","mass","Body_Mass","g",44.47,44.47,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Nyctimene certans","mass","Body_Mass","g",42.1,42.1,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Nyctimene cyclotis","mass","Body_Mass","g",44.2,44.2,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
@@ -3475,9 +3510,9 @@
 "Nyctinomops macrotis","mass","Body_Mass","g",18.4,18.4,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Nyctomys sumichrasti","mass","Body_Mass","g",54.72,54.72,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Nyctophilus arnhemensis","mass","Body_Mass","g",6.65,6.65,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Nyctophilus bifax","mass","Body_Mass","g",9.895,9.895,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
-"Nyctophilus geoffroyi","mass","Body_Mass","g",7.343,7.28,7,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
-"Nyctophilus gouldi","mass","Body_Mass","g",9.858,9.858,7,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
+"Nyctophilus bifax","mass","Body_Mass","g",9.93,9.9,6,3,0,FALSE,"Genoud; Ruf; Wilman","secondary",NA,NA
+"Nyctophilus geoffroyi","mass","Body_Mass","g",7.258,7.24,8,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
+"Nyctophilus gouldi","mass","Body_Mass","g",9.906,10,8,3,0,FALSE,"Genoud; Ruf; Wilman","secondary",NA,NA
 "Nyctophilus heran","mass","Body_Mass","g",7.63,7.63,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Nyctophilus howensis","mass","Body_Mass","g",7.78,7.78,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Nyctophilus microdon","mass","Body_Mass","g",7.63,7.63,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -3577,6 +3612,7 @@
 "Oreamnos americanus","mass","Body_Mass","g",52250.165,52250.165,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
 "Oreonax flavicauda","mass","Body_Mass","g",8229.12,8229.12,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Oreotragus oreotragus","mass","Body_Mass","g",12495.483,12999.9,6,3,0,FALSE,"Burger; Wilman; Wimberly","secondary",NA,NA
+"Oreotrochilus estella","mass","Body_Mass","g",8.5,8.5,4,1,0,FALSE,"Ruf","secondary",NA,NA
 "Ornithorhynchus anatinus","mass","Body_Mass","g",1372.719,1436.625,10,4,0,FALSE,"Burger; Genoud; Wilman; Wimberly","secondary",NA,NA
 "Orthogeomys cavator","mass","Body_Mass","g",650,650,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Orthogeomys cherriei","mass","Body_Mass","g",315,315,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
@@ -3589,6 +3625,7 @@
 "Orthogeomys matagalpae","mass","Body_Mass","g",293,293,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Orthogeomys thaeleri","mass","Body_Mass","g",440.75,440.75,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Orthogeomys underwoodi","mass","Body_Mass","g",250,250,4,1,0,FALSE,"Wilman","secondary",NA,NA
+"Orthorhynchus cristatus","mass","Body_Mass","g",2.9,2.9,4,1,0,FALSE,"Ruf","secondary",NA,NA
 "Orycteropus afer","mass","Body_Mass","g",60000,60000,9,6,1,TRUE,"Burger; Garwicz; Genoud; Heffner; Wilman; Wimberly","primary; secondary",NA,NA
 "Oryctolagus cuniculus","mass","Body_Mass","g",1800,1800,22,7,1,TRUE,"Burger; Genoud; Heffner; HerculanoHouzel; Lewitus; MacLarnon; Wilman","primary; secondary",NA,NA
 "Oryx beisa","mass","Body_Mass","g",187788.26,187788.26,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
@@ -3677,6 +3714,7 @@
 "Otonyctomys hatti","mass","Body_Mass","g",36.2,36.2,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Otopteropus cartilagonodus","mass","Body_Mass","g",16.75,16.75,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Ototylomys phyllotis","mass","Body_Mass","g",91.5,91.5,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
+"Otus senegalensis","mass","Body_Mass","g",61,61,4,1,0,FALSE,"Ruf","secondary",NA,NA
 "Ourebia ourebi","mass","Body_Mass","g",15933.52,15933.52,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Ovibos moschatus","mass","Body_Mass","g",265750.53,265750.53,6,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
 "Ovis ammon","mass","Body_Mass","g",117500,117500,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
@@ -3704,24 +3742,27 @@
 "Ozotoceros bezoarticus","mass","Body_Mass","g",40000,40000,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "P. cynoceph","mass","Body_Mass","g",21900,21900,4,1,1,TRUE,"Weaver","primary",NA,NA
 "Pachyuromys duprasi","mass","Body_Mass","g",47.5,47.5,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Pagophilus groenlandicus","mass","Body_Mass","g",135094.444,132250,8,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Pagophilus groenlandicus","mass","Body_Mass","g",134395.833,132275,10,4,0,FALSE,"10.1002%2Fcne.24349_Table3.tsv; Burger; Genoud; Wilman","secondary",NA,NA
 "Paguma larvata","mass","Body_Mass","g",4550,4550,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Palawanomys furvus","mass","Body_Mass","g",73.91,73.91,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Pan paniscus","mass","Body_Mass","g",45400,45400,15,8,1,TRUE,"Burger; Granatosky; Isler; Powell; RillingInsel; Weaver; Wilman; Zilles","primary; secondary",NA,NA
 "Pan troglodytes","mass","Body_Mass","g",43853.4,46000,50,18,5,TRUE,"Burger; Collins; Garwicz; Genoud; Granatosky; Heffner; Heldstab; Isler; Lewitus; MacLarnon; Powell; RillingInsel; Seymour; Stephan; Stephan_collection; Wilman; Wimberly; Zilles","info; primary; secondary",NA,NA
-"Panthera leo","mass","Body_Mass","g",136244.479,161499.06,8,5,0,FALSE,"Burger; Genoud; Lewitus; Wilman; Wimberly","secondary",NA,NA
+"Panterpe insignis","mass","Body_Mass","g",5,5,4,1,0,FALSE,"Ruf","secondary",NA,NA
+"Panthera leo","mass","Body_Mass","g",139503.732,158649.53,10,6,0,FALSE,"10.1002%2Fcne.24349_Table3.tsv; Burger; Genoud; Lewitus; Wilman; Wimberly","secondary",NA,NA
 "Panthera onca","mass","Body_Mass","g",82312.5,80125,7,4,0,FALSE,"Burger; Genoud; Wilman; Wimberly","secondary",NA,NA
 "Panthera pardus","mass","Body_Mass","g",50019.11,50019.11,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
+"Panthera pardus orientalis","mass","Body_Mass","g",52400,52400,5,1,0,FALSE,"10.1002%2Fcne.24349_Table3.tsv","secondary",NA,NA
 "Panthera tigris","mass","Body_Mass","g",159366,152282,7,4,0,FALSE,"Burger; Genoud; Wilman; Wimberly","secondary",NA,NA
+"Panthera tigris altaica","mass","Body_Mass","g",161000,161000,5,1,0,FALSE,"10.1002%2Fcne.24349_Table3.tsv","secondary",NA,NA
 "Pantholops hodgsonii","mass","Body_Mass","g",27500,27500,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Papagomys armandvillei","mass","Body_Mass","g",73.8,73.8,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Papagomys theodorverhoeveni","mass","Body_Mass","g",71.33,71.33,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Papio anubis","mass","Body_Mass","g",25000,25000,18,9,2,TRUE,"Burger; Genoud; Granatosky; Isler; MacLarnon; Powell; Stephan; Stephan_collection; Wilman","primary; secondary",NA,NA
 "Papio cynocephalus","mass","Body_Mass","g",14023.379,14350,12,7,0,FALSE,"Burger; Genoud; HerculanoHouzel; Isler; Powell; RillingInsel; Wilman","secondary",NA,NA
 "Papio cynocephalus anubis","mass","Body_Mass","g",20375,20375,19,1,0,FALSE,"Young","info",NA,NA
-"Papio hamadryas","mass","Body_Mass","g",16900,16900,11,7,1,TRUE,"Burger; Isler; Lewitus; MacLarnon; Powell; Seymour; Wilman","primary; secondary",NA,NA
+"Papio hamadryas","mass","Body_Mass","g",16900,16900,13,8,1,TRUE,"10.1002%2Fcne.24349_Table3.tsv; Burger; Isler; Lewitus; MacLarnon; Powell; Seymour; Wilman","primary; secondary",NA,NA
 "Papio papio","mass","Body_Mass","g",25000,25000,8,5,1,TRUE,"Burger; Genoud; Heffner; Powell; Wilman","primary; secondary",NA,NA
-"Papio ursinus","mass","Body_Mass","g",16839.813,17054.72,10,6,0,FALSE,"Burger; Genoud; Isler; Powell; Wilman; Wimberly","secondary",NA,NA
+"Papio ursinus","mass","Body_Mass","g",18862.697,17729.44,12,7,0,FALSE,"10.1002%2Fcne.24349_Table3.tsv; Burger; Genoud; Isler; Powell; Wilman; Wimberly","secondary",NA,NA
 "Pappogeomys alcorni","mass","Body_Mass","g",150,150,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Pappogeomys bulleri","mass","Body_Mass","g",150,150,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Paracoelops megalotis","mass","Body_Mass","g",5.67,5.67,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -3795,28 +3836,29 @@
 "Perodicticus potto","mass","Body_Mass","g",1150,1150,24,11,2,TRUE,"Burger; Genoud; Granatosky; Isler; Lewitus; MacLarnon; Powell; Stephan; Stephan_collection; Wilman; Zilles","primary; secondary",NA,NA
 "Perognathus alticolus","mass","Body_Mass","g",23.99,23.99,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Perognathus amplus","mass","Body_Mass","g",11.7,11.7,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Perognathus fasciatus","mass","Body_Mass","g",11.55,11.55,4,1,0,FALSE,"Wilman","secondary",NA,NA
+"Perognathus californicus","mass","Body_Mass","g",21,21,4,1,0,FALSE,"Ruf","secondary",NA,NA
+"Perognathus fasciatus","mass","Body_Mass","g",25.775,25.775,5,2,0,FALSE,"Ruf; Wilman","secondary",NA,NA
 "Perognathus flavescens","mass","Body_Mass","g",8.8,8.8,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Perognathus flavus","mass","Body_Mass","g",8.143,8.3,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
 "Perognathus inornatus","mass","Body_Mass","g",10.88,10.88,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Perognathus longimembris","mass","Body_Mass","g",8.242,8.15,9,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Perognathus longimembris","mass","Body_Mass","g",8.181,8.075,10,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Perognathus merriami","mass","Body_Mass","g",6.85,6.85,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Perognathus parvus","mass","Body_Mass","g",19.427,19.2,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Perognathus parvus","mass","Body_Mass","g",20.57,20.49,7,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Peromyscus attwateri","mass","Body_Mass","g",27.9,27.9,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Peromyscus aztecus","mass","Body_Mass","g",39.865,39.865,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Peromyscus beatae","mass","Body_Mass","g",33,33,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Peromyscus boylii","mass","Body_Mass","g",24.007,23.2,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Peromyscus boylii","mass","Body_Mass","g",26.255,25.335,7,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Peromyscus bullatus","mass","Body_Mass","g",40,40,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Peromyscus californicus","mass","Body_Mass","g",43.691,43.53,9,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
 "Peromyscus caniceps","mass","Body_Mass","g",33.16,33.16,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Peromyscus crinitus","mass","Body_Mass","g",16.638,17.98,9,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Peromyscus crinitus","mass","Body_Mass","g",17.479,18.178,10,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Peromyscus dickeyi","mass","Body_Mass","g",28.6,28.6,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Peromyscus difficilis","mass","Body_Mass","g",28,28,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Peromyscus eremicus","mass","Body_Mass","g",21.472,20.837,13,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Peromyscus eremicus","mass","Body_Mass","g",20.354,20.384,14,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Peromyscus eva","mass","Body_Mass","g",22,22,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Peromyscus fraterculus","mass","Body_Mass","g",33,33,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Peromyscus furvus","mass","Body_Mass","g",33,33,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Peromyscus gossypinus","mass","Body_Mass","g",26.38,28.25,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Peromyscus gossypinus","mass","Body_Mass","g",25.285,25.125,7,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Peromyscus grandis","mass","Body_Mass","g",74.16,74.16,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Peromyscus gratus","mass","Body_Mass","g",27.35,27.35,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Peromyscus guardia","mass","Body_Mass","g",32.13,32.13,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -3826,10 +3868,10 @@
 "Peromyscus hylocetes","mass","Body_Mass","g",33,33,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Peromyscus interparietalis","mass","Body_Mass","g",28,28,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Peromyscus keeni","mass","Body_Mass","g",27.35,27.35,6,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
-"Peromyscus leucopus","mass","Body_Mass","g",21.589,21.21,13,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Peromyscus leucopus","mass","Body_Mass","g",21.192,21.19,14,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Peromyscus levipes","mass","Body_Mass","g",23,23,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Peromyscus madrensis","mass","Body_Mass","g",32.2,32.2,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Peromyscus maniculatus","mass","Body_Mass","g",20.817,21.28,29,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Peromyscus maniculatus","mass","Body_Mass","g",20.113,20.4,30,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Peromyscus mayensis","mass","Body_Mass","g",32,32,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Peromyscus megalops","mass","Body_Mass","g",66.2,66.2,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
 "Peromyscus mekisturus","mass","Body_Mass","g",60,60,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -3879,7 +3921,7 @@
 "Petaurus abidi","mass","Body_Mass","g",281,281,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Petaurus australis","mass","Body_Mass","g",565,565,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Petaurus biacensis","mass","Body_Mass","g",87.74,87.74,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
-"Petaurus breviceps","mass","Body_Mass","g",127,127,11,5,1,TRUE,"Burger; Genoud; Seymour; Wilman; Wimberly","primary; secondary",NA,NA
+"Petaurus breviceps","mass","Body_Mass","g",127,127,12,6,1,TRUE,"Burger; Genoud; Ruf; Seymour; Wilman; Wimberly","primary; secondary",NA,NA
 "Petaurus gracilis","mass","Body_Mass","g",353,353,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Petaurus norfolcensis","mass","Body_Mass","g",230,230,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Petinomys crinitus","mass","Body_Mass","g",113,113,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -3910,7 +3952,7 @@
 "Petrogale xanthopus","mass","Body_Mass","g",8000,8000,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Petromus typicus","mass","Body_Mass","g",224,224,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Petromyscus barbouri","mass","Body_Mass","g",21.49,21.49,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Petromyscus collinus","mass","Body_Mass","g",20.205,20.205,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
+"Petromyscus collinus","mass","Body_Mass","g",19.803,20,6,3,0,FALSE,"Genoud; Ruf; Wilman","secondary",NA,NA
 "Petromyscus monticularis","mass","Body_Mass","g",20.73,20.73,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Petromyscus shortridgei","mass","Body_Mass","g",46.5,46.5,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Petropseudes dahli","mass","Body_Mass","g",1820,1820,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
@@ -3918,6 +3960,7 @@
 "Phacochoerus africanus","mass","Body_Mass","g",74750,74750,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Phaenomys ferrugineus","mass","Body_Mass","g",93.8,93.8,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Phaiomys leucurus","mass","Body_Mass","g",41.87,41.87,4,1,0,FALSE,"Wilman","secondary",NA,NA
+"Phalaenoptilus nuttallii","mass","Body_Mass","g",35,35,4,1,0,FALSE,"Ruf","secondary",NA,NA
 "Phalanger alexandrae","mass","Body_Mass","g",1846.67,1846.67,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Phalanger carmelitae","mass","Body_Mass","g",1479.067,1389.7,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
 "Phalanger gymnotis","mass","Body_Mass","g",2287.797,2597.89,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
@@ -3964,7 +4007,7 @@
 "Phocoenoides dalli","mass","Body_Mass","g",96944.443,98333.33,6,3,0,FALSE,"Burger; MacLarnon; Wilman","secondary",NA,NA
 "Phodopus campbelli","mass","Body_Mass","g",29.35,29.35,6,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
 "Phodopus roborovskii","mass","Body_Mass","g",18.958,18.958,7,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
-"Phodopus sungorus","mass","Body_Mass","g",35.456,35.456,13,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
+"Phodopus sungorus","mass","Body_Mass","g",31.97,33.75,14,3,0,FALSE,"Genoud; Ruf; Wilman","secondary",NA,NA
 "Phoniscus aerosa","mass","Body_Mass","g",5.23,5.23,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Phoniscus atrox","mass","Body_Mass","g",4.505,4.505,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Phoniscus jagorii","mass","Body_Mass","g",4.7,4.7,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -3994,7 +4037,7 @@
 "Phyllotis andium","mass","Body_Mass","g",53,53,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Phyllotis bonariensis","mass","Body_Mass","g",42.5,42.5,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Phyllotis caprinus","mass","Body_Mass","g",50.8,50.8,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Phyllotis darwini","mass","Body_Mass","g",54.389,54.389,13,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
+"Phyllotis darwini","mass","Body_Mass","g",48.259,50.83,14,3,0,FALSE,"Genoud; Ruf; Wilman","secondary",NA,NA
 "Phyllotis definitus","mass","Body_Mass","g",89,89,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Phyllotis haggardi","mass","Body_Mass","g",42.5,42.5,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Phyllotis limatus","mass","Body_Mass","g",48.29,48.29,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -4035,13 +4078,13 @@
 "Pipistrellus papuanus","mass","Body_Mass","g",4.31,4.31,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Pipistrellus paterculus","mass","Body_Mass","g",5.6,5.6,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Pipistrellus permixtus","mass","Body_Mass","g",6.36,6.36,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Pipistrellus pipistrellus","mass","Body_Mass","g",5.712,5.712,7,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
+"Pipistrellus pipistrellus","mass","Body_Mass","g",6.274,5.733,8,3,0,FALSE,"Genoud; Ruf; Wilman","secondary",NA,NA
 "Pipistrellus pygmaeus","mass","Body_Mass","g",5.28,5.28,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Pipistrellus rueppellii","mass","Body_Mass","g",7.07,7.07,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Pipistrellus rusticus","mass","Body_Mass","g",4.55,4.55,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Pipistrellus stenopterus","mass","Body_Mass","g",15.2,15.2,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Pipistrellus sturdeei","mass","Body_Mass","g",5.28,5.28,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Pipistrellus subflavus","mass","Body_Mass","g",5.53,5.53,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
+"Pipistrellus subflavus","mass","Body_Mass","g",5.353,5.3,6,3,0,FALSE,"Burger; Ruf; Wilman","secondary",NA,NA
 "Pipistrellus tenuis","mass","Body_Mass","g",4.95,4.95,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Pipistrellus wattsi","mass","Body_Mass","g",5.28,5.28,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Pipistrellus westralis","mass","Body_Mass","g",3,3,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -4057,11 +4100,11 @@
 "Plagiodontia aedium","mass","Body_Mass","g",1267,1267,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Plagiodontia araeum","mass","Body_Mass","g",1267,1267,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Plagiodontia ipnaeum","mass","Body_Mass","g",1267,1267,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Planigale gilesi","mass","Body_Mass","g",9.173,9.2,10,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
-"Planigale ingrami","mass","Body_Mass","g",5.2,4.25,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
-"Planigale maculata","mass","Body_Mass","g",10.933,11,7,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Planigale gilesi","mass","Body_Mass","g",8.88,9.16,11,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
+"Planigale ingrami","mass","Body_Mass","g",5.8,5.675,7,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
+"Planigale maculata","mass","Body_Mass","g",11.45,11,8,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Planigale novaeguineae","mass","Body_Mass","g",14.9,14.9,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
-"Planigale tenuirostris","mass","Body_Mass","g",6.167,6.05,7,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Planigale tenuirostris","mass","Body_Mass","g",6.375,6.225,8,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Platacanthomys lasiurus","mass","Body_Mass","g",75,75,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Platalina genovensium","mass","Body_Mass","g",16.25,16.25,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Platanista gangetica","mass","Body_Mass","g",87315,87315,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
@@ -4078,7 +4121,7 @@
 "Platyrrhinus umbratus","mass","Body_Mass","g",24.5,24.5,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Platyrrhinus vittatus","mass","Body_Mass","g",39,39,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Plecotus alpinus","mass","Body_Mass","g",7.56,7.56,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Plecotus auritus","mass","Body_Mass","g",8.925,7.83,10,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Plecotus auritus","mass","Body_Mass","g",9.194,8.915,11,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Plecotus austriacus","mass","Body_Mass","g",7.3,7.3,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Plecotus balensis","mass","Body_Mass","g",7.56,7.56,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Plecotus kolombatovici","mass","Body_Mass","g",7.56,7.56,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -4086,6 +4129,7 @@
 "Plecotus taivanus","mass","Body_Mass","g",8.54,8.54,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Plecotus teneriffae","mass","Body_Mass","g",8.33,8.33,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Plerotes anchietae","mass","Body_Mass","g",120.64,120.64,4,1,0,FALSE,"Wilman","secondary",NA,NA
+"Podargus strigoides","mass","Body_Mass","g",500,500,4,1,0,FALSE,"Ruf","secondary",NA,NA
 "Podogymnura aureospinula","mass","Body_Mass","g",247,247,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Podogymnura truei","mass","Body_Mass","g",114,114,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Podomys floridanus","mass","Body_Mass","g",33.157,33.47,7,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
@@ -4167,7 +4211,7 @@
 "Procolobus rufomitratus tephrosceles","mass","Body_Mass","g",7258,7258,4,1,0,FALSE,"Powell","secondary",NA,NA
 "Procolobus verus","mass","Body_Mass","g",4305.5,4427.5,8,5,0,FALSE,"Burger; Granatosky; Isler; Powell; Wilman","secondary",NA,NA
 "Procyon cancrivorus","mass","Body_Mass","g",5013.88,6931.72,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
-"Procyon lotor","mass","Body_Mass","g",12000,12000,11,6,1,TRUE,"Burger; Genoud; Heffner; Lewitus; Wilman; Wimberly","primary; secondary",NA,NA
+"Procyon lotor","mass","Body_Mass","g",12000,12000,13,7,1,TRUE,"10.1002%2Fcne.24349_Table3.tsv; Burger; Genoud; Heffner; Lewitus; Wilman; Wimberly","primary; secondary",NA,NA
 "Procyon pygmaeus","mass","Body_Mass","g",2500,2500,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Proechimys brevicauda","mass","Body_Mass","g",285,285,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Proechimys canicollis","mass","Body_Mass","g",285,285,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -4217,7 +4261,7 @@
 "Prosciurillus murinus","mass","Body_Mass","g",72.9,72.9,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Prosciurillus rosenbergii","mass","Body_Mass","g",90.41,90.41,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Prosciurillus weberi","mass","Body_Mass","g",106.26,106.26,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Proteles cristata","mass","Body_Mass","g",8288.13,8139.39,7,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Proteles cristata","mass","Body_Mass","g",8466.098,8479.695,8,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Protochromys fellowsi","mass","Body_Mass","g",78.99,78.99,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Protoxerus aubinnii","mass","Body_Mass","g",350,350,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Protoxerus stangeri","mass","Body_Mass","g",652.333,639.5,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
@@ -4225,7 +4269,7 @@
 "Psammomys obesus","mass","Body_Mass","g",115.427,127.6,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
 "Psammomys vexillaris","mass","Body_Mass","g",114.79,114.79,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Pseudantechinus bilarni","mass","Body_Mass","g",25.275,25.275,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
-"Pseudantechinus macdonnellensis","mass","Body_Mass","g",36.033,32.5,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Pseudantechinus macdonnellensis","mass","Body_Mass","g",34.775,32.5,7,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Pseudantechinus mimulus","mass","Body_Mass","g",16.5,16.5,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Pseudantechinus ningbing","mass","Body_Mass","g",20,20,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Pseudantechinus roryi","mass","Body_Mass","g",24.28,24.28,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
@@ -4473,7 +4517,7 @@
 "Reithrodontomys hirsutus","mass","Body_Mass","g",20,20,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Reithrodontomys humilis","mass","Body_Mass","g",8.4,8.4,4,1,0,FALSE,"Genoud","secondary",NA,NA
 "Reithrodontomys humulis","mass","Body_Mass","g",8.31,8.31,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Reithrodontomys megalotis","mass","Body_Mass","g",9.772,9.37,9,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Reithrodontomys megalotis","mass","Body_Mass","g",9.329,9.309,10,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Reithrodontomys mexicanus","mass","Body_Mass","g",16,16,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Reithrodontomys microdon","mass","Body_Mass","g",20,20,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Reithrodontomys montanus","mass","Body_Mass","g",10.9,10.9,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -4522,14 +4566,14 @@
 "Rhinolophus eloquens","mass","Body_Mass","g",19.05,19.05,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Rhinolophus euryale","mass","Body_Mass","g",8.15,8.15,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Rhinolophus euryotis","mass","Body_Mass","g",14.3,14.3,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Rhinolophus ferrumequinum","mass","Body_Mass","g",22.28,22.28,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
+"Rhinolophus ferrumequinum","mass","Body_Mass","g",22.52,23,6,3,0,FALSE,"Burger; Ruf; Wilman","secondary",NA,NA
 "Rhinolophus formosae","mass","Body_Mass","g",10.62,10.62,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Rhinolophus fumigatus","mass","Body_Mass","g",12.94,12.94,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Rhinolophus guineensis","mass","Body_Mass","g",9.9,9.9,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Rhinolophus hildebrandtii","mass","Body_Mass","g",27.545,27.545,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Rhinolophus hilli","mass","Body_Mass","g",13.6,13.6,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Rhinolophus hillorum","mass","Body_Mass","g",10.62,10.62,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Rhinolophus hipposideros","mass","Body_Mass","g",4.63,4.63,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
+"Rhinolophus hipposideros","mass","Body_Mass","g",5.087,4.71,6,3,0,FALSE,"Burger; Ruf; Wilman","secondary",NA,NA
 "Rhinolophus imaizumii","mass","Body_Mass","g",10.62,10.62,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Rhinolophus inops","mass","Body_Mass","g",13.5,13.5,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Rhinolophus keyensis","mass","Body_Mass","g",6.26,6.26,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -4585,7 +4629,7 @@
 "Rhinopithecus roxellana","mass","Body_Mass","g",12969.787,13456.8,8,5,0,FALSE,"Burger; Isler; Powell; Wilman; Wimberly","secondary",NA,NA
 "Rhinopoma hardwickii","mass","Body_Mass","g",13,13,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Rhinopoma macinnesi","mass","Body_Mass","g",14.94,14.94,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Rhinopoma microphyllum","mass","Body_Mass","g",27.485,27.485,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
+"Rhinopoma microphyllum","mass","Body_Mass","g",21.657,27.1,6,3,0,FALSE,"Burger; Ruf; Wilman","secondary",NA,NA
 "Rhinopoma muscatellum","mass","Body_Mass","g",9.14,9.14,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Rhinosciurus laticaudatus","mass","Body_Mass","g",234.125,234.125,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Rhipidomys austrinus","mass","Body_Mass","g",89,89,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -4661,7 +4705,7 @@
 "Saccopteryx canescens","mass","Body_Mass","g",3.39,3.39,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Saccopteryx gymnura","mass","Body_Mass","g",4,4,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Saccopteryx leptura","mass","Body_Mass","g",4.607,4.72,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
-"Saccostomus campestris","mass","Body_Mass","g",56.777,51.23,7,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Saccostomus campestris","mass","Body_Mass","g",60.332,60.49,8,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Saccostomus mearnsi","mass","Body_Mass","g",45.5,45.5,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Saguinus bicolor","mass","Body_Mass","g",473,473,6,3,1,TRUE,"Heldstab; Powell; Wilman","primary; secondary",NA,NA
 "Saguinus fuscicollis","mass","Body_Mass","g",383.462,387,11,5,0,FALSE,"Burger; Granatosky; Isler; Powell; Wilman","secondary",NA,NA
@@ -4681,16 +4725,16 @@
 "Saguinus niger","mass","Body_Mass","g",396.783,375,7,4,0,FALSE,"Burger; Isler; Powell; Wilman","secondary",NA,NA
 "Saguinus nigricollis","mass","Body_Mass","g",472.5,476,7,4,0,FALSE,"Burger; Isler; Powell; Wilman","secondary",NA,NA
 "Saguinus nigricollis group","mass","Body_Mass","g",401.143,401.143,24,1,0,FALSE,"Isler","secondary",NA,NA
-"Saguinus oedipus","mass","Body_Mass","g",398.312,393.125,23,12,4,TRUE,"Burger; Genoud; Heffner; Heldstab; Isler; Lewitus; MacLarnon; Powell; Stephan; Stephan_collection; Wilman; Zilles","primary; secondary",NA,NA
+"Saguinus oedipus","mass","Body_Mass","g",398.312,393.125,25,13,4,TRUE,"10.1002%2Fcne.24349_Table3.tsv; Burger; Genoud; Heffner; Heldstab; Isler; Lewitus; MacLarnon; Powell; Stephan; Stephan_collection; Wilman; Zilles","primary; secondary",NA,NA
 "Saguinus oedipus group","mass","Body_Mass","g",446.3,446.3,73,1,0,FALSE,"Isler","secondary",NA,NA
 "Saguinus pileatus","mass","Body_Mass","g",503.877,524.5,6,3,0,FALSE,"Burger; Isler; Wilman","secondary",NA,NA
 "Saguinus tripartitus","mass","Body_Mass","g",393.5,393.5,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Saiga borealis","mass","Body_Mass","g",29000,29000,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Saiga tatarica","mass","Body_Mass","g",33367.005,33367.005,5,2,0,FALSE,"Wilman; Wimberly","secondary",NA,NA
-"Saimiri boliviensis","mass","Body_Mass","g",796.502,810.75,11,6,0,FALSE,"Burger; Genoud; Granatosky; Isler; Powell; Wilman","secondary",NA,NA
+"Saimiri boliviensis","mass","Body_Mass","g",811.287,871.5,13,7,0,FALSE,"10.1002%2Fcne.24349_Table3.tsv; Burger; Genoud; Granatosky; Isler; Powell; Wilman","secondary",NA,NA
 "Saimiri boliviensis group","mass","Body_Mass","g",940,940,5,1,0,FALSE,"Isler","secondary",NA,NA
 "Saimiri oerstedii","mass","Body_Mass","g",628.2,680,9,5,0,FALSE,"Burger; Granatosky; Isler; Powell; Wilman","secondary",NA,NA
-"Saimiri sciureus","mass","Body_Mass","g",764.661,770,32,17,6,TRUE,"Burger; Finlay; Genoud; Granatosky; Heffner; Heldstab; HerculanoHouzel; Isler; Lewitus; MacLarnon; Powell; RillingInsel; Seymour; Stephan; Stephan_collection; Wilman; Wimberly","primary; secondary",NA,NA
+"Saimiri sciureus","mass","Body_Mass","g",764.661,770,36,18,6,TRUE,"Burger; Burish; Finlay; Genoud; Granatosky; Heffner; Heldstab; HerculanoHouzel; Isler; Lewitus; MacLarnon; Powell; RillingInsel; Seymour; Stephan; Stephan_collection; Wilman; Wimberly","primary; review; secondary",NA,NA
 "Saimiri sciureus group","mass","Body_Mass","g",830.538,830.538,83,1,0,FALSE,"Isler","secondary",NA,NA
 "Saimiri ustus","mass","Body_Mass","g",1000,1000,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Saimiri vanzolinii","mass","Body_Mass","g",769.61,769.61,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -4715,6 +4759,7 @@
 "Scapteromys tumidus","mass","Body_Mass","g",146,146,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Scaptochirus moschatus","mass","Body_Mass","g",90.51,90.51,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Scaptonyx fusicaudus","mass","Body_Mass","g",19.41,19.41,4,1,0,FALSE,"Wilman","secondary",NA,NA
+"Scardafella inca","mass","Body_Mass","g",44,44,4,1,0,FALSE,"Ruf","secondary",NA,NA
 "Sciurillus pusillus","mass","Body_Mass","g",39,39,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Sciurocheirus alleni cameronensis","mass","Body_Mass","g",269,269,4,1,0,FALSE,"Powell","secondary",NA,NA
 "Sciurocheirus gabonensis","mass","Body_Mass","g",260,260,4,1,0,FALSE,"Powell","secondary",NA,NA
@@ -4766,10 +4811,11 @@
 "Scotophilus borbonicus","mass","Body_Mass","g",18,18,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Scotophilus celebensis","mass","Body_Mass","g",26.77,26.77,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Scotophilus collinus","mass","Body_Mass","g",28.26,28.26,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Scotophilus dinganii","mass","Body_Mass","g",24.715,24.715,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
+"Scotophilus dinganii","mass","Body_Mass","g",26.143,25.13,6,3,0,FALSE,"Burger; Ruf; Wilman","secondary",NA,NA
 "Scotophilus heathii","mass","Body_Mass","g",33.815,33.815,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Scotophilus kuhlii","mass","Body_Mass","g",20.165,20.165,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Scotophilus leucogaster","mass","Body_Mass","g",20.23,20.23,4,1,0,FALSE,"Wilman","secondary",NA,NA
+"Scotophilus mhlanganii","mass","Body_Mass","g",28,28,4,1,0,FALSE,"Ruf","secondary",NA,NA
 "Scotophilus nigrita","mass","Body_Mass","g",101,101,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Scotophilus nucella","mass","Body_Mass","g",28.26,28.26,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Scotophilus nux","mass","Body_Mass","g",30,30,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -4782,6 +4828,9 @@
 "Scotozous dormeri","mass","Body_Mass","g",6.795,6.795,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "scutisorexãsomereni","mass","Body_Mass","g",91.5,91.5,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Sekeetamys calurus","mass","Body_Mass","g",58.892,58.892,7,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
+"Selasphorus platycercus","mass","Body_Mass","g",3.5,3.5,4,1,0,FALSE,"Ruf","secondary",NA,NA
+"Selasphorus rufus","mass","Body_Mass","g",3.3,3.3,4,1,0,FALSE,"Ruf","secondary",NA,NA
+"Selasphorus sasin","mass","Body_Mass","g",3,3,4,1,0,FALSE,"Ruf","secondary",NA,NA
 "Selevinia betpakdalaensis","mass","Body_Mass","g",28,28,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Semnopithecus ajax","mass","Body_Mass","g",14470.583,16329.75,6,3,0,FALSE,"Burger; Isler; Wilman","secondary",NA,NA
 "Semnopithecus dussumieri","mass","Body_Mass","g",10552.656,10664.146,7,4,0,FALSE,"Burger; Isler; Powell; Wilman","secondary",NA,NA
@@ -4790,7 +4839,7 @@
 "Semnopithecus hypoleucos","mass","Body_Mass","g",10078.325,10078.325,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Semnopithecus priam","mass","Body_Mass","g",8613.143,8561.786,7,4,0,FALSE,"Burger; Isler; Powell; Wilman","secondary",NA,NA
 "Semnopithecus schistaceus","mass","Body_Mass","g",14888,15900,7,4,0,FALSE,"Burger; Isler; Powell; Wilman","secondary",NA,NA
-"Setifer setosus","mass","Body_Mass","g",247.083,247.083,15,5,2,TRUE,"Burger; Genoud; Stephan; Stephan_collection; Wilman","primary; secondary",NA,NA
+"Setifer setosus","mass","Body_Mass","g",247.083,247.083,16,6,2,TRUE,"Burger; Genoud; Ruf; Stephan; Stephan_collection; Wilman","primary; secondary",NA,NA
 "Setonix brachyurus","mass","Body_Mass","g",3500,3500,7,4,1,TRUE,"Burger; Genoud; Heffner; Wilman","primary; secondary",NA,NA
 "Sicista armenica","mass","Body_Mass","g",6.53,6.53,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Sicista betulina","mass","Body_Mass","g",9.75,9.75,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
@@ -4827,9 +4876,9 @@
 "Sminthopsis bindi","mass","Body_Mass","g",15.25,15.25,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Sminthopsis boullangerensis","mass","Body_Mass","g",19.89,19.89,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Sminthopsis butleri","mass","Body_Mass","g",25,25,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Sminthopsis crassicaudata","mass","Body_Mass","g",20,20,16,4,1,TRUE,"Burger; Finlay; Genoud; Wilman","primary; secondary",NA,NA
+"Sminthopsis crassicaudata","mass","Body_Mass","g",20,20,17,5,1,TRUE,"Burger; Finlay; Genoud; Ruf; Wilman","primary; secondary",NA,NA
 "Sminthopsis dolichura","mass","Body_Mass","g",13.6,13.6,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Sminthopsis douglasi","mass","Body_Mass","g",55,55,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
+"Sminthopsis douglasi","mass","Body_Mass","g",56.667,55,6,3,0,FALSE,"Burger; Ruf; Wilman","secondary",NA,NA
 "Sminthopsis fuliginosus","mass","Body_Mass","g",19.89,19.89,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Sminthopsis gilberti","mass","Body_Mass","g",19.5,19.5,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Sminthopsis granulipes","mass","Body_Mass","g",25,25,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -4837,9 +4886,9 @@
 "Sminthopsis hirtipes","mass","Body_Mass","g",17,17,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Sminthopsis leucopus","mass","Body_Mass","g",24.25,24.25,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Sminthopsis longicaudata","mass","Body_Mass","g",18,18,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Sminthopsis macroura","mass","Body_Mass","g",20.654,20,13,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
-"Sminthopsis murina","mass","Body_Mass","g",17.667,17,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
-"Sminthopsis ooldea","mass","Body_Mass","g",10.8,10.8,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
+"Sminthopsis macroura","mass","Body_Mass","g",21.491,20.981,14,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
+"Sminthopsis murina","mass","Body_Mass","g",18,18,7,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
+"Sminthopsis ooldea","mass","Body_Mass","g",10.9,11,6,3,0,FALSE,"Genoud; Ruf; Wilman","secondary",NA,NA
 "Sminthopsis psammophila","mass","Body_Mass","g",38.55,38.55,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
 "Sminthopsis virginiae","mass","Body_Mass","g",40.625,40.625,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Sminthopsis youngsoni","mass","Body_Mass","g",10.1,10.1,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -4917,6 +4966,7 @@
 "Sorex sclateri","mass","Body_Mass","g",7,7,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Sorex shinto","mass","Body_Mass","g",6,6,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Sorex sinalis","mass","Body_Mass","g",9.43,9.43,4,1,0,FALSE,"Wilman","secondary",NA,NA
+"Sorex sinuosus","mass","Body_Mass","g",7.8,7.8,4,1,0,FALSE,"Ruf","secondary",NA,NA
 "Sorex sonomae","mass","Body_Mass","g",8.3,8.3,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Sorex stizodon","mass","Body_Mass","g",7,7,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Sorex tenellus","mass","Body_Mass","g",3.75,3.75,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -4956,44 +5006,44 @@
 "Spermophilus adocetus","mass","Body_Mass","g",140.26,140.26,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Spermophilus alashanicus","mass","Body_Mass","g",233.88,233.88,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Spermophilus annulatus","mass","Body_Mass","g",500,500,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Spermophilus armatus","mass","Body_Mass","g",330.233,313,7,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Spermophilus armatus","mass","Body_Mass","g",372.675,342.05,8,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Spermophilus atricapillus","mass","Body_Mass","g",489.25,489.25,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
-"Spermophilus beecheyi","mass","Body_Mass","g",515.233,564.9,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
-"Spermophilus beldingi","mass","Body_Mass","g",271.317,280.5,7,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Spermophilus beecheyi","mass","Body_Mass","g",536.425,571.7,7,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
+"Spermophilus beldingi","mass","Body_Mass","g",303.488,283.525,8,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Spermophilus brevicauda","mass","Body_Mass","g",284.72,284.72,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Spermophilus brunneus","mass","Body_Mass","g",208.4,208.4,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Spermophilus canus","mass","Body_Mass","g",213.425,213.425,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
-"Spermophilus citellus","mass","Body_Mass","g",273.833,288.5,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
-"Spermophilus columbianus","mass","Body_Mass","g",479.4,479.4,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
-"Spermophilus dauricus","mass","Body_Mass","g",244.033,223.8,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
-"Spermophilus elegans","mass","Body_Mass","g",380.35,380.35,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
+"Spermophilus citellus","mass","Body_Mass","g",267.875,269.25,7,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
+"Spermophilus columbianus","mass","Body_Mass","g",486.267,493,6,3,0,FALSE,"Burger; Ruf; Wilman","secondary",NA,NA
+"Spermophilus dauricus","mass","Body_Mass","g",270.525,285.4,7,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
+"Spermophilus elegans","mass","Body_Mass","g",353.567,307.1,6,3,0,FALSE,"Burger; Ruf; Wilman","secondary",NA,NA
 "Spermophilus erythrogenys","mass","Body_Mass","g",302.905,302.905,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Spermophilus franklinii","mass","Body_Mass","g",471.017,443.05,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
 "Spermophilus fulvus","mass","Body_Mass","g",658,658,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
-"Spermophilus lateralis","mass","Body_Mass","g",192.95,191,10,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Spermophilus lateralis","mass","Body_Mass","g",194.713,195.5,11,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Spermophilus madrensis","mass","Body_Mass","g",213.25,213.25,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Spermophilus major","mass","Body_Mass","g",402.035,402.035,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
-"Spermophilus mexicanus","mass","Body_Mass","g",221.047,199,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Spermophilus mexicanus","mass","Body_Mass","g",215.785,199.5,7,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Spermophilus mohavensis","mass","Body_Mass","g",197.75,190,7,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
 "Spermophilus mollis","mass","Body_Mass","g",141.25,141.25,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Spermophilus musicus","mass","Body_Mass","g",210.36,210.36,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Spermophilus pallidicauda","mass","Body_Mass","g",284.72,284.72,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Spermophilus parryii","mass","Body_Mass","g",688.441,759.99,8,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Spermophilus parryii","mass","Body_Mass","g",678.831,704.995,9,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Spermophilus perotensis","mass","Body_Mass","g",140,140,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Spermophilus pygmaeus","mass","Body_Mass","g",185.6,185.6,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Spermophilus ralli","mass","Body_Mass","g",284.72,284.72,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Spermophilus relictus","mass","Body_Mass","g",470.25,470.25,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
-"Spermophilus richardsonii","mass","Body_Mass","g",331.017,331.5,7,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
-"Spermophilus saturatus","mass","Body_Mass","g",238.3,242.7,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Spermophilus richardsonii","mass","Body_Mass","g",348.262,365.75,8,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
+"Spermophilus saturatus","mass","Body_Mass","g",236.225,236.35,7,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Spermophilus spilosoma","mass","Body_Mass","g",130.922,132.7,8,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
 "Spermophilus suslicus","mass","Body_Mass","g",235.1,235.1,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
-"Spermophilus tereticaudus","mass","Body_Mass","g",146.087,148.46,10,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Spermophilus tereticaudus","mass","Body_Mass","g",140.815,140.88,11,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Spermophilus townsendii","mass","Body_Mass","g",192.45,213,7,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
 "Spermophilus tridecemlineatus","mass","Body_Mass","g",650,650,9,4,1,TRUE,"Burger; Genoud; Heffner; Wilman","primary; secondary",NA,NA
 "Spermophilus undulatus","mass","Body_Mass","g",702.433,677.3,7,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
-"Spermophilus variegatus","mass","Body_Mass","g",697.395,697.395,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
+"Spermophilus variegatus","mass","Body_Mass","g",698.263,700,6,3,0,FALSE,"Burger; Ruf; Wilman","secondary",NA,NA
 "Spermophilus washingtoni","mass","Body_Mass","g",197,197,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
-"Spermophilus xanthoprymnus","mass","Body_Mass","g",278.785,278.785,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
+"Spermophilus xanthoprymnus","mass","Body_Mass","g",285.857,289.67,6,3,0,FALSE,"Burger; Ruf; Wilman","secondary",NA,NA
 "Sphaerias blanfordi","mass","Body_Mass","g",28.84,28.84,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Sphaeronycteris toxophyllum","mass","Body_Mass","g",16.865,16.865,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Sphiggurus ichillus","mass","Body_Mass","g",1242.24,1242.24,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -5014,7 +5064,6 @@
 "Spilogale gracilis","mass","Body_Mass","g",443.25,443.25,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Spilogale putorius","mass","Body_Mass","g",430.333,341,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
 "Spilogale pygmaea","mass","Body_Mass","g",235,235,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Squirrel monkey","mass","Body_Mass","g",858.75,858.75,7,1,0,FALSE,"Burish","review",NA,NA
 "Srilankamys ohiensis","mass","Body_Mass","g",79.25,79.25,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Steatomys bocagei","mass","Body_Mass","g",27.5,27.5,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Steatomys caurinus","mass","Body_Mass","g",44.75,44.75,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -5023,7 +5072,7 @@
 "Steatomys krebsii","mass","Body_Mass","g",20.67,20.67,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Steatomys opimus","mass","Body_Mass","g",40,40,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Steatomys parvus","mass","Body_Mass","g",8.85,8.85,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Steatomys pratensis","mass","Body_Mass","g",40.26,40.26,6,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
+"Steatomys pratensis","mass","Body_Mass","g",36.173,32.52,7,3,0,FALSE,"Genoud; Ruf; Wilman","secondary",NA,NA
 "Stenella attenuata","mass","Body_Mass","g",61507.265,61507.265,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Stenella clymene","mass","Body_Mass","g",68000,68000,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Stenella coeruleoalba","mass","Body_Mass","g",99700,99700,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
@@ -5043,7 +5092,7 @@
 "Sturnira bidens","mass","Body_Mass","g",17.55,17.55,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Sturnira bogotensis","mass","Body_Mass","g",20.8,20.8,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Sturnira erythromos","mass","Body_Mass","g",15.5,15.5,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
-"Sturnira lilium","mass","Body_Mass","g",19.318,19.1,8,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Sturnira lilium","mass","Body_Mass","g",18.488,18.885,9,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Sturnira ludovici","mass","Body_Mass","g",23.46,23.46,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Sturnira luisi","mass","Body_Mass","g",21,21,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Sturnira magna","mass","Body_Mass","g",21.66,21.66,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -5063,7 +5112,7 @@
 "Suncus aequatorius","mass","Body_Mass","g",7.15,7.15,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Suncus ater","mass","Body_Mass","g",11.1,11.1,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Suncus dayi","mass","Body_Mass","g",9.43,9.43,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Suncus etruscus","mass","Body_Mass","g",2.232,2.24,9,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Suncus etruscus","mass","Body_Mass","g",2.174,2.185,10,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Suncus fellowesgordoni","mass","Body_Mass","g",7.64,7.64,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Suncus hosei","mass","Body_Mass","g",7.64,7.64,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Suncus infinitesimus","mass","Body_Mass","g",3,3,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -5111,7 +5160,7 @@
 "Sus scrofa domesticus","mass","Body_Mass","g",116800,116800,5,2,0,FALSE,"HerculanoHouzel; Lewitus","secondary",NA,NA
 "Sus verrucosus","mass","Body_Mass","g",81250,81250,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Swanscombe","mass","Body_Mass","g",65600,65600,4,1,1,TRUE,"Weaver","primary",NA,NA
-"Syconycteris australis","mass","Body_Mass","g",16.64,16.98,10,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Syconycteris australis","mass","Body_Mass","g",16.98,17.04,11,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Syconycteris carolinae","mass","Body_Mass","g",39,39,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Syconycteris hobbit","mass","Body_Mass","g",18.29,18.29,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Sylvicapra grimmia","mass","Body_Mass","g",16062.395,16062.395,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
@@ -5149,7 +5198,7 @@
 "Synaptomys cooperi","mass","Body_Mass","g",27.86,27.86,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Syncerus caffer","mass","Body_Mass","g",622721.34,622721.34,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Syntheosciurus brochus","mass","Body_Mass","g",132.84,132.84,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Tachyglossus aculeatus","mass","Body_Mass","g",4200,4200,20,6,1,TRUE,"Burger; Genoud; Heffner; Lewitus; Wilman; Wimberly","primary; secondary",NA,NA
+"Tachyglossus aculeatus","mass","Body_Mass","g",4200,4200,21,7,1,TRUE,"Burger; Genoud; Heffner; Lewitus; Ruf; Wilman; Wimberly","primary; secondary",NA,NA
 "Tachyoryctes ankoliae","mass","Body_Mass","g",309.95,309.95,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Tachyoryctes annectens","mass","Body_Mass","g",309.95,309.95,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Tachyoryctes audax","mass","Body_Mass","g",235,235,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -5163,16 +5212,16 @@
 "Tachyoryctes spalacinus","mass","Body_Mass","g",309.95,309.95,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Tachyoryctes splendens","mass","Body_Mass","g",212.417,212.25,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
 "Tachyoryctes storeyi","mass","Body_Mass","g",309.95,309.95,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Tadarida aegyptiaca","mass","Body_Mass","g",17.24,17.24,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
+"Tadarida aegyptiaca","mass","Body_Mass","g",17.16,17,6,3,0,FALSE,"Burger; Ruf; Wilman","secondary",NA,NA
 "Tadarida australis","mass","Body_Mass","g",31.8,31.8,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Tadarida brasiliensis","mass","Body_Mass","g",11.657,11.657,8,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
+"Tadarida brasiliensis","mass","Body_Mass","g",11.105,10.825,9,3,0,FALSE,"Genoud; Ruf; Wilman","secondary",NA,NA
 "Tadarida cynocephala","mass","Body_Mass","g",1300,1300,4,1,1,TRUE,"Heffner","primary",NA,NA
 "Tadarida fulminans","mass","Body_Mass","g",35.28,35.28,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Tadarida insignis","mass","Body_Mass","g",23.55,23.55,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Tadarida kuboriensis","mass","Body_Mass","g",26.8,26.8,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Tadarida latouchei","mass","Body_Mass","g",23.55,23.55,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Tadarida lobata","mass","Body_Mass","g",23.62,23.62,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Tadarida teniotis","mass","Body_Mass","g",29.52,29.52,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
+"Tadarida teniotis","mass","Body_Mass","g",31.347,32,6,3,0,FALSE,"Genoud; Ruf; Wilman","secondary",NA,NA
 "Tadarida ventralis","mass","Body_Mass","g",23.62,23.62,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Taeromys arcuatus","mass","Body_Mass","g",227,227,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Taeromys callitrichus","mass","Body_Mass","g",271,271,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -5193,7 +5242,7 @@
 "Tamandua mexicana","mass","Body_Mass","g",4032.49,4032.49,6,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
 "Tamandua tetradactyla","mass","Body_Mass","g",4458.687,4361,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
 "Tamias alpinus","mass","Body_Mass","g",37.825,37.825,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
-"Tamias amoenus","mass","Body_Mass","g",50.7,50.8,8,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Tamias amoenus","mass","Body_Mass","g",51.525,50.8,9,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Tamias bulleri","mass","Body_Mass","g",100,100,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Tamias canipes","mass","Body_Mass","g",70.4,70.4,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Tamias cinereicollis","mass","Body_Mass","g",61.7,61.7,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
@@ -5214,7 +5263,7 @@
 "Tamias siskiyou","mass","Body_Mass","g",75,75,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Tamias sonomae","mass","Body_Mass","g",75,75,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Tamias speciosus","mass","Body_Mass","g",64.2,62,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
-"Tamias striatus","mass","Body_Mass","g",100,100,11,4,1,TRUE,"Burger; Genoud; Heffner; Wilman","primary; secondary",NA,NA
+"Tamias striatus","mass","Body_Mass","g",100,100,12,5,1,TRUE,"Burger; Genoud; Heffner; Ruf; Wilman","primary; secondary",NA,NA
 "Tamias townsendii","mass","Body_Mass","g",82.09,82.09,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Tamias umbrinus","mass","Body_Mass","g",63,63,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Tamiasciurus douglasii","mass","Body_Mass","g",225,225,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -5244,7 +5293,7 @@
 "Tapirus indicus","mass","Body_Mass","g",269486.397,296250,6,3,0,FALSE,"Burger; Wilman; Wimberly","secondary",NA,NA
 "Tapirus pinchaque","mass","Body_Mass","g",148949.83,148949.83,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Tapirus terrestris","mass","Body_Mass","g",178999.183,169496.64,6,3,0,FALSE,"Burger; Wilman; Wimberly","secondary",NA,NA
-"Tarsipes rostratus","mass","Body_Mass","g",8.567,9,7,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Tarsipes rostratus","mass","Body_Mass","g",8.925,9,8,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Tarsius","mass","Body_Mass","g",120,120,4,1,1,TRUE,"Heffner","primary",NA,NA
 "Tarsius bancanus","mass","Body_Mass","g",107.825,113.301,11,6,0,FALSE,"Burger; Granatosky; Isler; Lewitus; Powell; Wilman","secondary",NA,NA
 "Tarsius dentatus","mass","Body_Mass","g",111.98,112.25,7,4,0,FALSE,"Burger; Granatosky; Isler; Wilman","secondary",NA,NA
@@ -5272,9 +5321,9 @@
 "Taterillus tranieri","mass","Body_Mass","g",51.4,51.4,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Taurotragus derbianus","mass","Body_Mass","g",790000,790000,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Taurotragus oryx","mass","Body_Mass","g",436220.099,4e+05,8,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
-"Taxidea taxus","mass","Body_Mass","g",7844.183,7425,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Taxidea taxus","mass","Body_Mass","g",8133.138,8212.5,7,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Tayassu pecari","mass","Body_Mass","g",32233.51,32233.51,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
-"Tenrec ecaudatus","mass","Body_Mass","g",833.429,833.429,14,5,2,TRUE,"Burger; Genoud; Stephan; Stephan_collection; Wilman","primary; secondary",NA,NA
+"Tenrec ecaudatus","mass","Body_Mass","g",833.429,833.429,15,6,2,TRUE,"Burger; Genoud; Ruf; Stephan; Stephan_collection; Wilman","primary; secondary",NA,NA
 "Tetracerus quadricornis","mass","Body_Mass","g",19000,19000,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Thallomys loringi","mass","Body_Mass","g",66.45,66.45,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Thallomys nigricauda","mass","Body_Mass","g",124.7,124.7,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -5340,7 +5389,7 @@
 "Thryonomys swinderianus","mass","Body_Mass","g",2402.51,2402.51,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Thylacinus cynocephalus","mass","Body_Mass","g",29500,29500,4,1,0,FALSE,"Burger","secondary",NA,NA
 "Thylamys cinderella","mass","Body_Mass","g",24.41,24.41,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Thylamys elegans","mass","Body_Mass","g",29.456,28.9,8,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Thylamys elegans","mass","Body_Mass","g",30.092,30.45,9,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Thylamys karimii","mass","Body_Mass","g",24.41,24.41,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Thylamys macrurus","mass","Body_Mass","g",34.43,34.43,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Thylamys pallidior","mass","Body_Mass","g",17.8,17.8,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
@@ -5360,6 +5409,7 @@
 "Thyroptera lavali","mass","Body_Mass","g",3.67,3.67,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Thyroptera tricolor","mass","Body_Mass","g",4.43,4.43,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Tlacuatzin canescens","mass","Body_Mass","g",47.73,47.73,4,1,0,FALSE,"Wilman","secondary",NA,NA
+"Todus mexicanus","mass","Body_Mass","g",6.2,6.2,4,1,0,FALSE,"Ruf","secondary",NA,NA
 "Tokudaia muenninki","mass","Body_Mass","g",177.4,177.4,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Tokudaia osimensis","mass","Body_Mass","g",129.6,129.6,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Tolypeutes matacus","mass","Body_Mass","g",1186.667,1200,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
@@ -5463,6 +5513,8 @@
 "Typhlomys cinereus","mass","Body_Mass","g",31.2,31.2,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Uncia uncia","mass","Body_Mass","g",38333.5,38333.5,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Uranomys ruddi","mass","Body_Mass","g",37.015,37.015,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
+"Urocolius indicus","mass","Body_Mass","g",53,53,4,1,0,FALSE,"Ruf","secondary",NA,NA
+"Urocolius macrourus","mass","Body_Mass","g",49,49,4,1,0,FALSE,"Ruf","secondary",NA,NA
 "Urocyon cinereoargenteus","mass","Body_Mass","g",3791.36,3791.36,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Urocyon littoralis","mass","Body_Mass","g",1896,1896,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Uroderma bilobatum","mass","Body_Mass","g",16.173,16.2,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
@@ -5483,8 +5535,8 @@
 "Uropsilus investigator","mass","Body_Mass","g",25.53,25.53,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Uropsilus soricipes","mass","Body_Mass","g",16,16,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Urotrichus talpoides","mass","Body_Mass","g",45,45,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Ursus americanus","mass","Body_Mass","g",86939.007,105224.68,9,4,0,FALSE,"Burger; Genoud; Wilman; Wimberly","secondary",NA,NA
-"Ursus arctos","mass","Body_Mass","g",165207.648,166760.21,8,4,0,FALSE,"Burger; Genoud; Wilman; Wimberly","secondary",NA,NA
+"Ursus americanus","mass","Body_Mass","g",85551.205,99949.36,10,5,0,FALSE,"Burger; Genoud; Ruf; Wilman; Wimberly","secondary",NA,NA
+"Ursus arctos","mass","Body_Mass","g",152166.118,153000,9,5,0,FALSE,"Burger; Genoud; Ruf; Wilman; Wimberly","secondary",NA,NA
 "Ursus maritimus","mass","Body_Mass","g",322151.134,340635,9,5,0,FALSE,"Burger; Genoud; Lewitus; Wilman; Wimberly","secondary",NA,NA
 "Ursus thibetanus","mass","Body_Mass","g",73680,73680,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Vampyressa bidens","mass","Body_Mass","g",11.6,11.6,4,1,0,FALSE,"Wilman","secondary",NA,NA
@@ -5510,7 +5562,7 @@
 "Vespadelus pumilus","mass","Body_Mass","g",5.425,5.425,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Vespadelus regulus","mass","Body_Mass","g",5.05,5.05,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Vespadelus troughtoni","mass","Body_Mass","g",4.64,4.64,4,1,0,FALSE,"Wilman","secondary",NA,NA
-"Vespadelus vulturnus","mass","Body_Mass","g",3.885,3.885,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
+"Vespadelus vulturnus","mass","Body_Mass","g",3.923,4,6,3,0,FALSE,"Genoud; Ruf; Wilman","secondary",NA,NA
 "Vespertilio murinus","mass","Body_Mass","g",26,26,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Vespertilio sinensis","mass","Body_Mass","g",24.3,24.3,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Vicugna pacos","mass","Body_Mass","g",44400,44400,4,1,0,FALSE,"Wimberly","secondary",NA,NA
@@ -5548,15 +5600,15 @@
 "Xerus inauris","mass","Body_Mass","g",494,529,7,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
 "Xerus princeps","mass","Body_Mass","g",622,622,5,2,0,FALSE,"Genoud; Wilman","secondary",NA,NA
 "Xerus rutilus","mass","Body_Mass","g",317.5,317.5,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
-"Zaedyus pichiy","mass","Body_Mass","g",1620,1740,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Zaedyus pichiy","mass","Body_Mass","g",1490,1560,7,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Zaglossus attenboroughi","mass","Body_Mass","g",8532.39,8532.39,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Zaglossus bartoni","mass","Body_Mass","g",7180,7180,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Zaglossus bruijni","mass","Body_Mass","g",9637.178,9545.605,8,4,0,FALSE,"Burger; Genoud; Wilman; Wimberly","secondary",NA,NA
 "Zalophus californianus","mass","Body_Mass","g",93596.667,85500,9,4,0,FALSE,"Burger; Genoud; Lewitus; Wilman","secondary",NA,NA
 "Zalophus japonicus","mass","Body_Mass","g",80000,80000,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Zalophus wollebaeki","mass","Body_Mass","g",119000,119000,5,2,0,FALSE,"Wilman; Wimberly","secondary",NA,NA
-"Zapus hudsonius","mass","Body_Mass","g",19.786,17.47,8,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
-"Zapus princeps","mass","Body_Mass","g",27,27.5,6,3,0,FALSE,"Burger; Genoud; Wilman","secondary",NA,NA
+"Zapus hudsonius","mass","Body_Mass","g",20.489,20.035,9,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
+"Zapus princeps","mass","Body_Mass","g",28.65,28.25,7,4,0,FALSE,"Burger; Genoud; Ruf; Wilman","secondary",NA,NA
 "Zapus trinotatus","mass","Body_Mass","g",27.5,27.5,5,2,0,FALSE,"Burger; Wilman","secondary",NA,NA
 "Zelotomys hildegardeae","mass","Body_Mass","g",60,60,4,1,0,FALSE,"Wilman","secondary",NA,NA
 "Zelotomys woosnami","mass","Body_Mass","g",54.1,54.1,4,1,0,FALSE,"Wilman","secondary",NA,NA

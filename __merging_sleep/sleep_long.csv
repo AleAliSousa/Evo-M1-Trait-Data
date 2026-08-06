@@ -48,3 +48,576 @@ Bos taurus,Bos taurus,Sleep_h_day,3.19,hours/day,HerculanoHouzel__2015_Table1,He
 Giraffa camelopardalis,Giraffa camelopardalis,Sleep_h_day,3.44,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table,high,dailysleep
 Sus scrofa,Sus scrofa,Sleep_h_day,8.2,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table,high,dailysleep
 Tupaia sp.,Tupaia sp.,Sleep_h_day,15.84,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel_2015,Table,high,dailysleep
+Tursiops truncatus,Tursiops truncatus,SWS_total_pct,33.9,percent of sleep,Lyamin_etal_2008_Table2,Lyamin_2008,Table,high,SWS
+Phocoena phocoena,Phocoena phocoena,SWS_total_pct,46.4,percent of sleep,Lyamin_etal_2008_Table2,Lyamin_2008,Table,high,SWS
+Inia geoffrensis,Inia geoffrensis,SWS_total_pct,57,percent of sleep,Lyamin_etal_2008_Table2,Lyamin_2008,Table,high,SWS
+Delphinapterus leucas,Delphinapterus leucas,SWS_total_pct,43,percent of sleep,Lyamin_etal_2008_Table2,Lyamin_2008,Table,high,SWS
+Tursiops truncatus,Tursiops truncatus,USWS_pctTST,88.2,percent of TST,Lyamin_etal_2008_Table2,Lyamin_2008,Table,high,SWS
+Phocoena phocoena,Phocoena phocoena,USWS_pctTST,67,percent of TST,Lyamin_etal_2008_Table2,Lyamin_2008,Table,high,SWS
+Inia geoffrensis,Inia geoffrensis,USWS_pctTST,71.9,percent of TST,Lyamin_etal_2008_Table2,Lyamin_2008,Table,high,SWS
+Delphinapterus leucas,Delphinapterus leucas,USWS_pctTST,68.1,percent of TST,Lyamin_etal_2008_Table2,Lyamin_2008,Table,high,SWS
+Dacelo novaeguineae,Dacelo novaeguineae,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Todus mexicanus,Todus mexicanus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Colius castanotus,Colius castanotus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Colius colius,Colius colius,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Colius striatus,Colius striatus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Urocolius indicus,Urocolius indicus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Urocolius macrourus,Urocolius macrourus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Aeronautes saxatalis,Aeronautes saxatalis,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Apus apus,Apus apus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Hirundapus caudacutus,Hirundapus caudacutus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Amazilia versicolor,Amazilia versicolor,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Archilochus alexandri,Archilochus alexandri,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Calypte anna,Calypte anna,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Calypte costae,Calypte costae,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Chrysuronia oenone,Chrysuronia oenone,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Clytolaema rubricauda,Clytolaema rubricauda,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Eugenes fulgens,Eugenes fulgens,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Eulampis jugularis,Eulampis jugularis,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Eupetomena macroura,Eupetomena macroura,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Lampornis clemenciae,Lampornis clemenciae,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Melanotrochilus fuscus,Melanotrochilus fuscus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Oreotrochilus estella,Oreotrochilus estella,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Orthorhynchus cristatus,Orthorhynchus cristatus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Panterpe insignis,Panterpe insignis,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Selasphorus platycercus,Selasphorus platycercus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Selasphorus rufus,Selasphorus rufus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Selasphorus sasin,Selasphorus sasin,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Otus senegalensis,Otus senegalensis,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Aegotheles cristatus,Aegotheles cristatus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Caprimulgus europaeus,Caprimulgus europaeus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Caprimulgus guttatus,Caprimulgus guttatus (argus),Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,review,torpor
+Caprimulgus tristigma,Caprimulgus tristigma,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Caprimulgus vociferus,Caprimulgus vociferus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Chordeiles acutipennis,Chordeiles acutipennis,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Chordeiles minor,Chordeiles minor,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Phalaenoptilus nuttallii,Phalaenoptilus nuttallii,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Podargus strigoides,Podargus strigoides,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Drepanoptila holosericea,Drepanoptila holosericea,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Scardafella inca,Scardafella inca,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Artamus cyanopterus,Artamus cyanopterus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Delichon urbicum,Delichon urbicum,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Nectarinia famosa,Nectarinia famosa,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Manacus vitellinus,Manacus vitellinus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Tachyglossus aculeatus,Tachyglossus aculeatus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Acomys russatus,Acomys russatus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Aethomys namaquenesis,Aethomys namaquenesis,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Allactaga euphratica,Allactaga euphratica,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Allactaga williamsi,Allactaga williamsi,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Apodemus peninsulae,Apodemus peninsulae,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Baiomys taylori,Baiomys taylori,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Calomys musculinus,Calomys musculinus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Calomys venustus,Calomys venustus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Cricetus cricetus,Cricetus cricetus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Cynomys leucurus,Cynomys leucurus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Cynomys ludovicianus,Cynomys ludovicianus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Cynomys parvidens,Cynomys parvidens,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Eliomys quercinus,Eliomys quercinus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Fukomys damarensis,Fukomys damarensis,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Gerbillus pusillus,Gerbillus pusillus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Glirulus japonicus,Glirulus japonicus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Glis glis,Glis glis,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Graphiurus murinus,Graphiurus murinus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Graphiurus ocularis,Graphiurus ocularis,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Ictidomys tridecemlineatus,Ictidomys tridecemlineatus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Jaculus orientalis,Jaculus orientalis,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Marmota broweri,Marmota broweri,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Marmota flaviventris,Marmota flaviventris,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Marmota marmota,Marmota marmota,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Marmota monax,Marmota monax,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Mesocricetus auratus,Mesocricetus auratus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Mesocricetus brandti,Mesocricetus brandti,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Microdipodops pallidus,Microdipodops pallidus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Mus musculus,Mus musculus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Muscardinus avellanarius,Muscardinus avellanarius,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Perognathus californicus,Perognathus californicus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Perognathus fasciatus,Perognathus fasciatus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Perognathus longimembris,Perognathus longimembris,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Perognathus parvus,Perognathus parvus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Peromyscus boylii,Peromyscus boylii,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Peromyscus crinitus,Peromyscus crinitus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Peromyscus eremicus,Peromyscus eremicus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Peromyscus gossypinus,Peromyscus gossypinus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Peromyscus leucopus,Peromyscus leucopus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Peromyscus maniculatus,Peromyscus maniculatus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Petromyscus collinus,Petromyscus collinus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Phodopus sungorus,Phodopus sungorus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Phyllotis darwini,Phyllotis darwini,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Reithrodontomys megalotis,Reithrodontomys megalotis,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Saccostomus campestris,Saccostomus campestris,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Spermophilus armatus,Spermophilus armatus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Spermophilus beecheyi,Spermophilus beecheyi,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Spermophilus beldingi,Spermophilus beldingi,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Spermophilus citellus,Spermophilus citellus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Spermophilus columbianus,Spermophilus columbianus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Spermophilus dauricus,Spermophilus dauricus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Spermophilus elegans,Spermophilus elegans,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Spermophilus lateralis,Spermophilus lateralis,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Spermophilus mexicanus,Spermophilus mexicanus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Spermophilus parryii,Spermophilus parryii,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Spermophilus richardsonii,Spermophilus richardsonii,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Spermophilus saturatus,Spermophilus saturatus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Spermophilus tereticaudus,Spermophilus tereticaudus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Spermophilus variegatus,Spermophilus variegatus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Spermophilus xanthoprymnus,Spermophilus xanthoprymnus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Steatomys pratensis,Steatomys pratensis,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Tamias amoenus,Tamias amoenus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Tamias striatus,Tamias striatus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Zapus hudsonius,Zapus hudsonius,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Zapus princeps,Zapus princeps,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Cheirogaleus crossleyi,Cheirogaleus crossleyi,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Cheirogaleus medius,Cheirogaleus medius,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Galago moholi,Galago moholi,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Microcebus griseorufus,Microcebus griseorufus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Microcebus murinus,Microcebus murinus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Microcebus myoxinus,Microcebus myoxinus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Microcebus ravelobensis,Microcebus ravelobensis,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Meles meles,Meles meles,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Mephitis mephitis,Mephitis mephitis,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Proteles cristata,Proteles cristata,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Taxidea taxus,Taxidea taxus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Ursus americanus,Ursus americanus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Ursus arctos,Ursus arctos,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Barbastella barbastellus,Barbastella barbastellus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Carollia perspicillata,Carollia perspicillata,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Chalinolobus gouldii,Chalinolobus gouldii,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Corynorhinus rafinesquii,Corynorhinus rafinesquii,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Eptesicus fuscus,Eptesicus fuscus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Glossophaga soricina,Glossophaga soricina,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Hipposideros terasensis,Hipposideros terasensis,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Lasiurus borealis,Lasiurus borealis,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Lasiurus cinereus,Lasiurus cinereus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Macroglossus minimus,Macroglossus minimus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Megaloglossus woermanni,Megaloglossus woermanni,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Miniopterus schreibersii,Miniopterus schreibersii,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Mops condylurus,Mops condylurus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Myotis adversus,Myotis adversus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Myotis lucifugus,Myotis lucifugus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Myotis myotis,Myotis myotis,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Myotis nattereri,Myotis nattereri,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Myotis velifer,Myotis velifer,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Nyctalus noctula,Nyctalus noctula,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Nycteris thebaica,Nycteris thebaica,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Nyctimene albiventer,Nyctimene albiventer,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Nyctophilus bifax,Nyctophilus bifax,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Nyctophilus geoffroyi,Nyctophilus geoffroyi,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Nyctophilus gouldi,Nyctophilus gouldi,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Pipistrellus pipistrellus,Pipistrellus pipistrellus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Pipistrellus subflavus,Pipistrellus subflavus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Plecotus auritus,Plecotus auritus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Rhinolophus ferrumequinum,Rhinolophus ferrumequinum,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Rhinolophus hipposideros,Rhinolophus hipposideros,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Rhinopoma microphyllum,Rhinopoma microphyllum,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Scotophilus dinganii,Scotophilus dinganii,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Scotophilus mhlanganii,Scotophilus mhlanganii,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Sturnira lilium,Sturnira lilium,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Syconycteris australis,Syconycteris australis,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Tadarida aegyptiaca,Tadarida aegyptiaca,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Tadarida brasiliensis,Tadarida brasiliensis,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Tadarida teniotis,Tadarida teniotis,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Vespadelus vulturnus,Vespadelus vulturnus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Atelerix algirus,Atelerix algirus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Atelerix frontalis,Atelerix frontalis,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Crocidura flavescens,Crocidura flavescens,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Crocidura leucodon,Crocidura leucodon,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Crocidura russula,Crocidura russula,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Crocidura suaveolens,Crocidura suaveolens,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Erinaceus europaeus,Erinaceus europaeus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Notiosorex crawfordi,Notiosorex crawfordi,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Sorex sinuosus,Sorex sinuosus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Suncus etruscus,Suncus etruscus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Zaedyus pichiy,Zaedyus pichiy,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Amblysomus hottentotus,Amblysomus hottentotus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Echinops telfairi,Echinops telfairi,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Geogale aurita,Geogale aurita,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Microgale dobsoni,Microgale dobsoni,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Setifer setosus,Setifer setosus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Tenrec ecaudatus,Tenrec ecaudatus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Elephantulus edwardii,Elephantulus edwardii,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Elephantulus myurus,Elephantulus myurus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Elephantulus rozeti,Elephantulus rozeti,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Elephantulus rupestris,Elephantulus rupestris,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Macroscelides proboscideus,Macroscelides proboscideus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Acrobates pygmaeus,Acrobates pygmaeus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Burramys parvus,Burramys parvus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Cercartetus concinnus,Cercartetus concinnus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Cercartetus lepidus,Cercartetus lepidus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Cercartetus nanus,Cercartetus nanus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Petaurus breviceps,Petaurus breviceps,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Tarsipes rostratus,Tarsipes rostratus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Dromiciops gliroides,Dromiciops gliroides,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Antechinomys laniger,Antechinomys laniger,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Antechinus flavipes,Antechinus flavipes,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Antechinus stuartii,Antechinus stuartii,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Dasykaluta rosamondae,Dasykaluta rosamondae,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Dasyuroides byrnei,Dasyuroides byrnei,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Dasyurus geoffroii,Dasyurus geoffroii,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Dasyurus hallucatus,Dasyurus hallucatus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Dasyurus viverrinus,Dasyurus viverrinus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Myrmecobius fasciatus,Myrmecobius fasciatus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Ningaui yvonnae,Ningaui yvonnae,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Planigale gilesi,Planigale gilesi,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Planigale ingrami,Planigale ingrami,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Planigale maculata,Planigale maculata,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Planigale tenuirostris,Planigale tenuirostris,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Pseudantechinus macdonnellensis,Pseudantechinus macdonnellensis,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Sminthopsis crassicaudata,Sminthopsis crassicaudata,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Sminthopsis douglasi,Sminthopsis douglasi,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Sminthopsis macroura,Sminthopsis macroura,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Sminthopsis murina,Sminthopsis murina,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Sminthopsis ooldea,Sminthopsis ooldea,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Gracilinanus agilis,Gracilinanus agilis,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Marmosa microtarsus,Marmosa microtarsus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Thylamys elegans,Thylamys elegans,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Dacelo novaeguineae,Dacelo novaeguineae,Torpor_Tb_min_C,28.6,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Todus mexicanus,Todus mexicanus,Torpor_Tb_min_C,22.4,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Colius castanotus,Colius castanotus,Torpor_Tb_min_C,18,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Colius colius,Colius colius,Torpor_Tb_min_C,26,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Colius striatus,Colius striatus,Torpor_Tb_min_C,18.2,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Urocolius macrourus,Urocolius macrourus,Torpor_Tb_min_C,22,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Aeronautes saxatalis,Aeronautes saxatalis,Torpor_Tb_min_C,20,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Apus apus,Apus apus,Torpor_Tb_min_C,28,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Hirundapus caudacutus,Hirundapus caudacutus,Torpor_Tb_min_C,28,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Amazilia versicolor,Amazilia versicolor,Torpor_Tb_min_C,21.8,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Archilochus alexandri,Archilochus alexandri,Torpor_Tb_min_C,13.5,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Calypte anna,Calypte anna,Torpor_Tb_min_C,16,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Calypte costae,Calypte costae,Torpor_Tb_min_C,9,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Chrysuronia oenone,Chrysuronia oenone,Torpor_Tb_min_C,18,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Clytolaema rubricauda,Clytolaema rubricauda,Torpor_Tb_min_C,18,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Eugenes fulgens,Eugenes fulgens,Torpor_Tb_min_C,10,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Eulampis jugularis,Eulampis jugularis,Torpor_Tb_min_C,18,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Eupetomena macroura,Eupetomena macroura,Torpor_Tb_min_C,22,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Lampornis clemenciae,Lampornis clemenciae,Torpor_Tb_min_C,19.6,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Melanotrochilus fuscus,Melanotrochilus fuscus,Torpor_Tb_min_C,22,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Oreotrochilus estella,Oreotrochilus estella,Torpor_Tb_min_C,6.5,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Orthorhynchus cristatus,Orthorhynchus cristatus,Torpor_Tb_min_C,20.8,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Panterpe insignis,Panterpe insignis,Torpor_Tb_min_C,10,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Selasphorus platycercus,Selasphorus platycercus,Torpor_Tb_min_C,6.5,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Selasphorus rufus,Selasphorus rufus,Torpor_Tb_min_C,13,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Selasphorus sasin,Selasphorus sasin,Torpor_Tb_min_C,23,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Otus senegalensis,Otus senegalensis,Torpor_Tb_min_C,29,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Aegotheles cristatus,Aegotheles cristatus,Torpor_Tb_min_C,22.4,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Caprimulgus europaeus,Caprimulgus europaeus,Torpor_Tb_min_C,14,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Caprimulgus guttatus,Caprimulgus guttatus (argus),Torpor_Tb_min_C,29.6,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,review,torpor
+Caprimulgus tristigma,Caprimulgus tristigma,Torpor_Tb_min_C,10.5,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Caprimulgus vociferus,Caprimulgus vociferus,Torpor_Tb_min_C,18.5,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Chordeiles acutipennis,Chordeiles acutipennis,Torpor_Tb_min_C,15.7,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Chordeiles minor,Chordeiles minor,Torpor_Tb_min_C,18,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Phalaenoptilus nuttallii,Phalaenoptilus nuttallii,Torpor_Tb_min_C,3,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Podargus strigoides,Podargus strigoides,Torpor_Tb_min_C,29.1,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Drepanoptila holosericea,Drepanoptila holosericea,Torpor_Tb_min_C,24.8,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Scardafella inca,Scardafella inca,Torpor_Tb_min_C,29,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Artamus cyanopterus,Artamus cyanopterus,Torpor_Tb_min_C,29,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Delichon urbicum,Delichon urbicum,Torpor_Tb_min_C,26,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Nectarinia famosa,Nectarinia famosa,Torpor_Tb_min_C,25.4,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Manacus vitellinus,Manacus vitellinus,Torpor_Tb_min_C,26.8,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Tachyglossus aculeatus,Tachyglossus aculeatus,Torpor_Tb_min_C,4,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Acomys russatus,Acomys russatus,Torpor_Tb_min_C,25,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Aethomys namaquenesis,Aethomys namaquenesis,Torpor_Tb_min_C,18.9,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Apodemus peninsulae,Apodemus peninsulae,Torpor_Tb_min_C,20,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Baiomys taylori,Baiomys taylori,Torpor_Tb_min_C,22,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Calomys venustus,Calomys venustus,Torpor_Tb_min_C,16.4,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Cricetus cricetus,Cricetus cricetus,Torpor_Tb_min_C,3.6,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Cynomys leucurus,Cynomys leucurus,Torpor_Tb_min_C,8,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Cynomys ludovicianus,Cynomys ludovicianus,Torpor_Tb_min_C,15,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Cynomys parvidens,Cynomys parvidens,Torpor_Tb_min_C,6,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Eliomys quercinus,Eliomys quercinus,Torpor_Tb_min_C,1,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Fukomys damarensis,Fukomys damarensis,Torpor_Tb_min_C,28.5,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Gerbillus pusillus,Gerbillus pusillus,Torpor_Tb_min_C,16.7,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Glis glis,Glis glis,Torpor_Tb_min_C,1,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Graphiurus murinus,Graphiurus murinus,Torpor_Tb_min_C,1.5,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Ictidomys tridecemlineatus,Ictidomys tridecemlineatus,Torpor_Tb_min_C,1.5,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Jaculus orientalis,Jaculus orientalis,Torpor_Tb_min_C,10,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Marmota flaviventris,Marmota flaviventris,Torpor_Tb_min_C,7.5,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Marmota marmota,Marmota marmota,Torpor_Tb_min_C,2.4,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Marmota monax,Marmota monax,Torpor_Tb_min_C,5,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Mesocricetus auratus,Mesocricetus auratus,Torpor_Tb_min_C,4,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Microdipodops pallidus,Microdipodops pallidus,Torpor_Tb_min_C,6,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Mus musculus,Mus musculus,Torpor_Tb_min_C,16,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Muscardinus avellanarius,Muscardinus avellanarius,Torpor_Tb_min_C,0,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Perognathus californicus,Perognathus californicus,Torpor_Tb_min_C,15,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Perognathus fasciatus,Perognathus fasciatus,Torpor_Tb_min_C,11,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Perognathus longimembris,Perognathus longimembris,Torpor_Tb_min_C,4,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Perognathus parvus,Perognathus parvus,Torpor_Tb_min_C,2,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Peromyscus boylii,Peromyscus boylii,Torpor_Tb_min_C,18,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Peromyscus crinitus,Peromyscus crinitus,Torpor_Tb_min_C,17,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Peromyscus eremicus,Peromyscus eremicus,Torpor_Tb_min_C,16,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Peromyscus gossypinus,Peromyscus gossypinus,Torpor_Tb_min_C,14,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Peromyscus leucopus,Peromyscus leucopus,Torpor_Tb_min_C,16.8,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Peromyscus maniculatus,Peromyscus maniculatus,Torpor_Tb_min_C,13.4,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Petromyscus collinus,Petromyscus collinus,Torpor_Tb_min_C,18,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Phodopus sungorus,Phodopus sungorus,Torpor_Tb_min_C,12.3,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Phyllotis darwini,Phyllotis darwini,Torpor_Tb_min_C,17.5,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Reithrodontomys megalotis,Reithrodontomys megalotis,Torpor_Tb_min_C,13,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Saccostomus campestris,Saccostomus campestris,Torpor_Tb_min_C,25,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Spermophilus beecheyi,Spermophilus beecheyi,Torpor_Tb_min_C,6.1,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Spermophilus citellus,Spermophilus citellus,Torpor_Tb_min_C,-0.7,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Spermophilus columbianus,Spermophilus columbianus,Torpor_Tb_min_C,0,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Spermophilus dauricus,Spermophilus dauricus,Torpor_Tb_min_C,-2.4,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Spermophilus lateralis,Spermophilus lateralis,Torpor_Tb_min_C,-1,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Spermophilus mexicanus,Spermophilus mexicanus,Torpor_Tb_min_C,7,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Spermophilus parryii,Spermophilus parryii,Torpor_Tb_min_C,-2.9,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Spermophilus richardsonii,Spermophilus richardsonii,Torpor_Tb_min_C,2,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Spermophilus saturatus,Spermophilus saturatus,Torpor_Tb_min_C,0.3,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Spermophilus variegatus,Spermophilus variegatus,Torpor_Tb_min_C,8,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Spermophilus xanthoprymnus,Spermophilus xanthoprymnus,Torpor_Tb_min_C,4,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Steatomys pratensis,Steatomys pratensis,Torpor_Tb_min_C,16.4,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Tamias amoenus,Tamias amoenus,Torpor_Tb_min_C,-0.2,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Tamias striatus,Tamias striatus,Torpor_Tb_min_C,4.9,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Zapus princeps,Zapus princeps,Torpor_Tb_min_C,5.5,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Cheirogaleus crossleyi,Cheirogaleus crossleyi,Torpor_Tb_min_C,9,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Cheirogaleus medius,Cheirogaleus medius,Torpor_Tb_min_C,9.3,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Galago moholi,Galago moholi,Torpor_Tb_min_C,21.8,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Microcebus griseorufus,Microcebus griseorufus,Torpor_Tb_min_C,6.5,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Microcebus murinus,Microcebus murinus,Torpor_Tb_min_C,7.8,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Microcebus myoxinus,Microcebus myoxinus,Torpor_Tb_min_C,6.8,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Microcebus ravelobensis,Microcebus ravelobensis,Torpor_Tb_min_C,25,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Meles meles,Meles meles,Torpor_Tb_min_C,28,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Mephitis mephitis,Mephitis mephitis,Torpor_Tb_min_C,26,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Proteles cristata,Proteles cristata,Torpor_Tb_min_C,31,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Taxidea taxus,Taxidea taxus,Torpor_Tb_min_C,28,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Ursus americanus,Ursus americanus,Torpor_Tb_min_C,29.4,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Ursus arctos,Ursus arctos,Torpor_Tb_min_C,32.5,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Carollia perspicillata,Carollia perspicillata,Torpor_Tb_min_C,22,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Chalinolobus gouldii,Chalinolobus gouldii,Torpor_Tb_min_C,5,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Corynorhinus rafinesquii,Corynorhinus rafinesquii,Torpor_Tb_min_C,13.9,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Eptesicus fuscus,Eptesicus fuscus,Torpor_Tb_min_C,1,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Glossophaga soricina,Glossophaga soricina,Torpor_Tb_min_C,21,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Hipposideros terasensis,Hipposideros terasensis,Torpor_Tb_min_C,13.8,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Lasiurus borealis,Lasiurus borealis,Torpor_Tb_min_C,3,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Lasiurus cinereus,Lasiurus cinereus,Torpor_Tb_min_C,2,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Macroglossus minimus,Macroglossus minimus,Torpor_Tb_min_C,21.6,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Megaloglossus woermanni,Megaloglossus woermanni,Torpor_Tb_min_C,26.2,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Miniopterus schreibersii,Miniopterus schreibersii,Torpor_Tb_min_C,5,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Mops condylurus,Mops condylurus,Torpor_Tb_min_C,13,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Myotis adversus,Myotis adversus,Torpor_Tb_min_C,9,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Myotis lucifugus,Myotis lucifugus,Torpor_Tb_min_C,1.3,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Myotis myotis,Myotis myotis,Torpor_Tb_min_C,2,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Myotis nattereri,Myotis nattereri,Torpor_Tb_min_C,7,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Myotis velifer,Myotis velifer,Torpor_Tb_min_C,0.6,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Nyctalus noctula,Nyctalus noctula,Torpor_Tb_min_C,3,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Nycteris thebaica,Nycteris thebaica,Torpor_Tb_min_C,27,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Nyctimene albiventer,Nyctimene albiventer,Torpor_Tb_min_C,25.5,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Nyctophilus bifax,Nyctophilus bifax,Torpor_Tb_min_C,7.3,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Nyctophilus geoffroyi,Nyctophilus geoffroyi,Torpor_Tb_min_C,1.4,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Nyctophilus gouldi,Nyctophilus gouldi,Torpor_Tb_min_C,2.3,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Pipistrellus pipistrellus,Pipistrellus pipistrellus,Torpor_Tb_min_C,3,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Plecotus auritus,Plecotus auritus,Torpor_Tb_min_C,-2,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Rhinolophus ferrumequinum,Rhinolophus ferrumequinum,Torpor_Tb_min_C,9,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Rhinopoma microphyllum,Rhinopoma microphyllum,Torpor_Tb_min_C,23,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Scotophilus dinganii,Scotophilus dinganii,Torpor_Tb_min_C,18.5,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Scotophilus mhlanganii,Scotophilus mhlanganii,Torpor_Tb_min_C,17.2,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Sturnira lilium,Sturnira lilium,Torpor_Tb_min_C,22,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Syconycteris australis,Syconycteris australis,Torpor_Tb_min_C,17.2,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Tadarida aegyptiaca,Tadarida aegyptiaca,Torpor_Tb_min_C,6,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Tadarida brasiliensis,Tadarida brasiliensis,Torpor_Tb_min_C,9,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Tadarida teniotis,Tadarida teniotis,Torpor_Tb_min_C,6.7,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Vespadelus vulturnus,Vespadelus vulturnus,Torpor_Tb_min_C,5,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Atelerix algirus,Atelerix algirus,Torpor_Tb_min_C,9.7,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Atelerix frontalis,Atelerix frontalis,Torpor_Tb_min_C,1,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Crocidura flavescens,Crocidura flavescens,Torpor_Tb_min_C,19,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Crocidura leucodon,Crocidura leucodon,Torpor_Tb_min_C,18.6,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Crocidura russula,Crocidura russula,Torpor_Tb_min_C,17.9,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Crocidura suaveolens,Crocidura suaveolens,Torpor_Tb_min_C,21.6,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Erinaceus europaeus,Erinaceus europaeus,Torpor_Tb_min_C,5.4,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Notiosorex crawfordi,Notiosorex crawfordi,Torpor_Tb_min_C,27.4,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Suncus etruscus,Suncus etruscus,Torpor_Tb_min_C,12,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Zaedyus pichiy,Zaedyus pichiy,Torpor_Tb_min_C,12.5,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Amblysomus hottentotus,Amblysomus hottentotus,Torpor_Tb_min_C,8.6,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Echinops telfairi,Echinops telfairi,Torpor_Tb_min_C,11,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Geogale aurita,Geogale aurita,Torpor_Tb_min_C,16,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Microgale dobsoni,Microgale dobsoni,Torpor_Tb_min_C,20,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Setifer setosus,Setifer setosus,Torpor_Tb_min_C,13,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Tenrec ecaudatus,Tenrec ecaudatus,Torpor_Tb_min_C,15,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Elephantulus edwardii,Elephantulus edwardii,Torpor_Tb_min_C,9.3,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Elephantulus myurus,Elephantulus myurus,Torpor_Tb_min_C,5.5,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Elephantulus rozeti,Elephantulus rozeti,Torpor_Tb_min_C,5.1,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Elephantulus rupestris,Elephantulus rupestris,Torpor_Tb_min_C,12,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Macroscelides proboscideus,Macroscelides proboscideus,Torpor_Tb_min_C,9.4,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Acrobates pygmaeus,Acrobates pygmaeus,Torpor_Tb_min_C,1.6,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Burramys parvus,Burramys parvus,Torpor_Tb_min_C,1.8,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Cercartetus concinnus,Cercartetus concinnus,Torpor_Tb_min_C,4.7,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Cercartetus lepidus,Cercartetus lepidus,Torpor_Tb_min_C,5.9,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Cercartetus nanus,Cercartetus nanus,Torpor_Tb_min_C,1.3,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Petaurus breviceps,Petaurus breviceps,Torpor_Tb_min_C,10.4,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Tarsipes rostratus,Tarsipes rostratus,Torpor_Tb_min_C,5.4,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Dromiciops gliroides,Dromiciops gliroides,Torpor_Tb_min_C,7.1,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Antechinomys laniger,Antechinomys laniger,Torpor_Tb_min_C,11,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Antechinus flavipes,Antechinus flavipes,Torpor_Tb_min_C,24.5,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Antechinus stuartii,Antechinus stuartii,Torpor_Tb_min_C,19.9,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Dasykaluta rosamondae,Dasykaluta rosamondae,Torpor_Tb_min_C,21,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Dasyuroides byrnei,Dasyuroides byrnei,Torpor_Tb_min_C,20.4,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Dasyurus geoffroii,Dasyurus geoffroii,Torpor_Tb_min_C,23.1,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Dasyurus hallucatus,Dasyurus hallucatus,Torpor_Tb_min_C,28.4,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Dasyurus viverrinus,Dasyurus viverrinus,Torpor_Tb_min_C,25,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Myrmecobius fasciatus,Myrmecobius fasciatus,Torpor_Tb_min_C,19.1,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Ningaui yvonnae,Ningaui yvonnae,Torpor_Tb_min_C,15.3,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Planigale gilesi,Planigale gilesi,Torpor_Tb_min_C,14.3,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Planigale maculata,Planigale maculata,Torpor_Tb_min_C,19.6,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Pseudantechinus macdonnellensis,Pseudantechinus macdonnellensis,Torpor_Tb_min_C,15.9,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Sminthopsis crassicaudata,Sminthopsis crassicaudata,Torpor_Tb_min_C,10.8,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Sminthopsis douglasi,Sminthopsis douglasi,Torpor_Tb_min_C,16.9,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Sminthopsis macroura,Sminthopsis macroura,Torpor_Tb_min_C,11.3,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Sminthopsis murina,Sminthopsis murina,Torpor_Tb_min_C,15,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Gracilinanus agilis,Gracilinanus agilis,Torpor_Tb_min_C,20,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Marmosa microtarsus,Marmosa microtarsus,Torpor_Tb_min_C,16,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Thylamys elegans,Thylamys elegans,Torpor_Tb_min_C,14,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Dacelo novaeguineae,Dacelo novaeguineae,Torpor_bout_max_h,11.1,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Colius castanotus,Colius castanotus,Torpor_bout_max_h,11,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Colius striatus,Colius striatus,Torpor_bout_max_h,10,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Urocolius indicus,Urocolius indicus,Torpor_bout_max_h,10,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Urocolius macrourus,Urocolius macrourus,Torpor_bout_max_h,11,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Aeronautes saxatalis,Aeronautes saxatalis,Torpor_bout_max_h,10,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Apus apus,Apus apus,Torpor_bout_max_h,5,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Hirundapus caudacutus,Hirundapus caudacutus,Torpor_bout_max_h,10,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Amazilia versicolor,Amazilia versicolor,Torpor_bout_max_h,10.4,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Eupetomena macroura,Eupetomena macroura,Torpor_bout_max_h,9,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Melanotrochilus fuscus,Melanotrochilus fuscus,Torpor_bout_max_h,11.2,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Selasphorus rufus,Selasphorus rufus,Torpor_bout_max_h,10,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Otus senegalensis,Otus senegalensis,Torpor_bout_max_h,5,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Aegotheles cristatus,Aegotheles cristatus,Torpor_bout_max_h,10.7,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Caprimulgus europaeus,Caprimulgus europaeus,Torpor_bout_max_h,16,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Caprimulgus tristigma,Caprimulgus tristigma,Torpor_bout_max_h,15,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Phalaenoptilus nuttallii,Phalaenoptilus nuttallii,Torpor_bout_max_h,120,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Podargus strigoides,Podargus strigoides,Torpor_bout_max_h,11,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Drepanoptila holosericea,Drepanoptila holosericea,Torpor_bout_max_h,10,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Scardafella inca,Scardafella inca,Torpor_bout_max_h,10,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Artamus cyanopterus,Artamus cyanopterus,Torpor_bout_max_h,12,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Delichon urbicum,Delichon urbicum,Torpor_bout_max_h,12,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Nectarinia famosa,Nectarinia famosa,Torpor_bout_max_h,10,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Manacus vitellinus,Manacus vitellinus,Torpor_bout_max_h,3.5,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Tachyglossus aculeatus,Tachyglossus aculeatus,Torpor_bout_max_h,648,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Acomys russatus,Acomys russatus,Torpor_bout_max_h,10,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Allactaga euphratica,Allactaga euphratica,Torpor_bout_max_h,336,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Allactaga williamsi,Allactaga williamsi,Torpor_bout_max_h,144,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Apodemus peninsulae,Apodemus peninsulae,Torpor_bout_max_h,6.5,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Baiomys taylori,Baiomys taylori,Torpor_bout_max_h,20,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Calomys musculinus,Calomys musculinus,Torpor_bout_max_h,16,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Calomys venustus,Calomys venustus,Torpor_bout_max_h,8,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Cricetus cricetus,Cricetus cricetus,Torpor_bout_max_h,160,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Cynomys leucurus,Cynomys leucurus,Torpor_bout_max_h,199,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Cynomys ludovicianus,Cynomys ludovicianus,Torpor_bout_max_h,214,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Cynomys parvidens,Cynomys parvidens,Torpor_bout_max_h,418,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Eliomys quercinus,Eliomys quercinus,Torpor_bout_max_h,480,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Gerbillus pusillus,Gerbillus pusillus,Torpor_bout_max_h,20,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Glirulus japonicus,Glirulus japonicus,Torpor_bout_max_h,380,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Glis glis,Glis glis,Torpor_bout_max_h,977,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Graphiurus murinus,Graphiurus murinus,Torpor_bout_max_h,192,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Graphiurus ocularis,Graphiurus ocularis,Torpor_bout_max_h,312,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Ictidomys tridecemlineatus,Ictidomys tridecemlineatus,Torpor_bout_max_h,456,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Jaculus orientalis,Jaculus orientalis,Torpor_bout_max_h,158,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Marmota broweri,Marmota broweri,Torpor_bout_max_h,480,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Marmota flaviventris,Marmota flaviventris,Torpor_bout_max_h,360,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Marmota marmota,Marmota marmota,Torpor_bout_max_h,353,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Marmota monax,Marmota monax,Torpor_bout_max_h,185,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Mesocricetus auratus,Mesocricetus auratus,Torpor_bout_max_h,264,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Mesocricetus brandti,Mesocricetus brandti,Torpor_bout_max_h,144,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Microdipodops pallidus,Microdipodops pallidus,Torpor_bout_max_h,84,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Mus musculus,Mus musculus,Torpor_bout_max_h,11,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Muscardinus avellanarius,Muscardinus avellanarius,Torpor_bout_max_h,624,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Perognathus californicus,Perognathus californicus,Torpor_bout_max_h,15.4,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Perognathus fasciatus,Perognathus fasciatus,Torpor_bout_max_h,17,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Perognathus longimembris,Perognathus longimembris,Torpor_bout_max_h,112,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Perognathus parvus,Perognathus parvus,Torpor_bout_max_h,192,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Peromyscus boylii,Peromyscus boylii,Torpor_bout_max_h,8.8,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Peromyscus crinitus,Peromyscus crinitus,Torpor_bout_max_h,9.5,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Peromyscus eremicus,Peromyscus eremicus,Torpor_bout_max_h,11.2,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Peromyscus leucopus,Peromyscus leucopus,Torpor_bout_max_h,13,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Peromyscus maniculatus,Peromyscus maniculatus,Torpor_bout_max_h,10.8,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Phodopus sungorus,Phodopus sungorus,Torpor_bout_max_h,13.8,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Phyllotis darwini,Phyllotis darwini,Torpor_bout_max_h,12,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Reithrodontomys megalotis,Reithrodontomys megalotis,Torpor_bout_max_h,10,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Saccostomus campestris,Saccostomus campestris,Torpor_bout_max_h,2.7,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Spermophilus armatus,Spermophilus armatus,Torpor_bout_max_h,576,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Spermophilus beecheyi,Spermophilus beecheyi,Torpor_bout_max_h,72,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Spermophilus beldingi,Spermophilus beldingi,Torpor_bout_max_h,400,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Spermophilus citellus,Spermophilus citellus,Torpor_bout_max_h,415,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Spermophilus columbianus,Spermophilus columbianus,Torpor_bout_max_h,424,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Spermophilus dauricus,Spermophilus dauricus,Torpor_bout_max_h,377,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Spermophilus elegans,Spermophilus elegans,Torpor_bout_max_h,450,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Spermophilus lateralis,Spermophilus lateralis,Torpor_bout_max_h,504,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Spermophilus mexicanus,Spermophilus mexicanus,Torpor_bout_max_h,60,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Spermophilus parryii,Spermophilus parryii,Torpor_bout_max_h,550,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Spermophilus richardsonii,Spermophilus richardsonii,Torpor_bout_max_h,456,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Spermophilus saturatus,Spermophilus saturatus,Torpor_bout_max_h,360,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Spermophilus tereticaudus,Spermophilus tereticaudus,Torpor_bout_max_h,120,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Spermophilus variegatus,Spermophilus variegatus,Torpor_bout_max_h,172,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Spermophilus xanthoprymnus,Spermophilus xanthoprymnus,Torpor_bout_max_h,468,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Steatomys pratensis,Steatomys pratensis,Torpor_bout_max_h,16.9,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Tamias amoenus,Tamias amoenus,Torpor_bout_max_h,312,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Tamias striatus,Tamias striatus,Torpor_bout_max_h,150,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Zapus hudsonius,Zapus hudsonius,Torpor_bout_max_h,451,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Zapus princeps,Zapus princeps,Torpor_bout_max_h,650,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Cheirogaleus crossleyi,Cheirogaleus crossleyi,Torpor_bout_max_h,168,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Cheirogaleus medius,Cheirogaleus medius,Torpor_bout_max_h,1680,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Galago moholi,Galago moholi,Torpor_bout_max_h,6.5,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Microcebus griseorufus,Microcebus griseorufus,Torpor_bout_max_h,1848,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Microcebus murinus,Microcebus murinus,Torpor_bout_max_h,17.6,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Microcebus myoxinus,Microcebus myoxinus,Torpor_bout_max_h,19.2,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Microcebus ravelobensis,Microcebus ravelobensis,Torpor_bout_max_h,7,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Mephitis mephitis,Mephitis mephitis,Torpor_bout_max_h,20,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Taxidea taxus,Taxidea taxus,Torpor_bout_max_h,22,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Eptesicus fuscus,Eptesicus fuscus,Torpor_bout_max_h,600,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Glossophaga soricina,Glossophaga soricina,Torpor_bout_max_h,17.5,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Hipposideros terasensis,Hipposideros terasensis,Torpor_bout_max_h,456,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Lasiurus borealis,Lasiurus borealis,Torpor_bout_max_h,260,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Lasiurus cinereus,Lasiurus cinereus,Torpor_bout_max_h,135,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Macroglossus minimus,Macroglossus minimus,Torpor_bout_max_h,9.5,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Miniopterus schreibersii,Miniopterus schreibersii,Torpor_bout_max_h,288,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Myotis adversus,Myotis adversus,Torpor_bout_max_h,192,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Myotis lucifugus,Myotis lucifugus,Torpor_bout_max_h,1152,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Myotis myotis,Myotis myotis,Torpor_bout_max_h,2352,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Myotis nattereri,Myotis nattereri,Torpor_bout_max_h,490,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Nyctophilus bifax,Nyctophilus bifax,Torpor_bout_max_h,129,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Nyctophilus geoffroyi,Nyctophilus geoffroyi,Torpor_bout_max_h,362,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Nyctophilus gouldi,Nyctophilus gouldi,Torpor_bout_max_h,259,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Pipistrellus subflavus,Pipistrellus subflavus,Torpor_bout_max_h,1800,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Rhinolophus ferrumequinum,Rhinolophus ferrumequinum,Torpor_bout_max_h,432,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Rhinolophus hipposideros,Rhinolophus hipposideros,Torpor_bout_max_h,2064,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Scotophilus dinganii,Scotophilus dinganii,Torpor_bout_max_h,19,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Scotophilus mhlanganii,Scotophilus mhlanganii,Torpor_bout_max_h,18.5,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Syconycteris australis,Syconycteris australis,Torpor_bout_max_h,8.2,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Tadarida aegyptiaca,Tadarida aegyptiaca,Torpor_bout_max_h,228,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Tadarida teniotis,Tadarida teniotis,Torpor_bout_max_h,192,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Atelerix algirus,Atelerix algirus,Torpor_bout_max_h,168,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Atelerix frontalis,Atelerix frontalis,Torpor_bout_max_h,116,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Crocidura russula,Crocidura russula,Torpor_bout_max_h,3,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Erinaceus europaeus,Erinaceus europaeus,Torpor_bout_max_h,288,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Sorex sinuosus,Sorex sinuosus,Torpor_bout_max_h,1,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Suncus etruscus,Suncus etruscus,Torpor_bout_max_h,7.6,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Zaedyus pichiy,Zaedyus pichiy,Torpor_bout_max_h,112,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Amblysomus hottentotus,Amblysomus hottentotus,Torpor_bout_max_h,96,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Echinops telfairi,Echinops telfairi,Torpor_bout_max_h,264,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Setifer setosus,Setifer setosus,Torpor_bout_max_h,3600,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Tenrec ecaudatus,Tenrec ecaudatus,Torpor_bout_max_h,6480,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Elephantulus edwardii,Elephantulus edwardii,Torpor_bout_max_h,44,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Elephantulus myurus,Elephantulus myurus,Torpor_bout_max_h,39,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Elephantulus rozeti,Elephantulus rozeti,Torpor_bout_max_h,20.1,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Elephantulus rupestris,Elephantulus rupestris,Torpor_bout_max_h,12,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Macroscelides proboscideus,Macroscelides proboscideus,Torpor_bout_max_h,18,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Acrobates pygmaeus,Acrobates pygmaeus,Torpor_bout_max_h,192,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Burramys parvus,Burramys parvus,Torpor_bout_max_h,480,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Cercartetus concinnus,Cercartetus concinnus,Torpor_bout_max_h,264,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Cercartetus lepidus,Cercartetus lepidus,Torpor_bout_max_h,144,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Cercartetus nanus,Cercartetus nanus,Torpor_bout_max_h,840,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Petaurus breviceps,Petaurus breviceps,Torpor_bout_max_h,23,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Tarsipes rostratus,Tarsipes rostratus,Torpor_bout_max_h,14.4,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Dromiciops gliroides,Dromiciops gliroides,Torpor_bout_max_h,144,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Antechinomys laniger,Antechinomys laniger,Torpor_bout_max_h,16,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Antechinus flavipes,Antechinus flavipes,Torpor_bout_max_h,5.5,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Antechinus stuartii,Antechinus stuartii,Torpor_bout_max_h,9,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Dasykaluta rosamondae,Dasykaluta rosamondae,Torpor_bout_max_h,16.4,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Dasyuroides byrnei,Dasyuroides byrnei,Torpor_bout_max_h,7.5,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Myrmecobius fasciatus,Myrmecobius fasciatus,Torpor_bout_max_h,15.3,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Ningaui yvonnae,Ningaui yvonnae,Torpor_bout_max_h,12.3,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Planigale gilesi,Planigale gilesi,Torpor_bout_max_h,15.3,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Planigale ingrami,Planigale ingrami,Torpor_bout_max_h,4,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Planigale maculata,Planigale maculata,Torpor_bout_max_h,1.8,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Planigale tenuirostris,Planigale tenuirostris,Torpor_bout_max_h,4,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Pseudantechinus macdonnellensis,Pseudantechinus macdonnellensis,Torpor_bout_max_h,14.3,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Sminthopsis crassicaudata,Sminthopsis crassicaudata,Torpor_bout_max_h,19.5,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Sminthopsis douglasi,Sminthopsis douglasi,Torpor_bout_max_h,8.8,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Sminthopsis macroura,Sminthopsis macroura,Torpor_bout_max_h,25.9,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Sminthopsis murina,Sminthopsis murina,Torpor_bout_max_h,8,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Marmosa microtarsus,Marmosa microtarsus,Torpor_bout_max_h,9,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor
+Thylamys elegans,Thylamys elegans,Torpor_bout_max_h,20,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor

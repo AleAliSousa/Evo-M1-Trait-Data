@@ -11,10 +11,15 @@ line 1 and the italic binomial on line 2; that single cell is split into two
 columns (Species / Species_binomial) so the file is machine-readable. Both
 printed strings survive verbatim (invariant 3).
 """
+import os
+
 import openpyxl
 from openpyxl.styles import Font, Alignment
 
-OUT = "/sessions/cool-wizardly-archimedes/mnt/Evo-M1-Trait-Data/Jacobs_etal_2018"
+# Derive the output folder from this file's own location so the script runs on any machine
+# (__HOWTO_build_a_dataset_file.md, "Known wrinkles -> Paths"). It previously hardcoded an
+# absolute sandbox path that no longer exists, which made the snapshots unregenerable.
+OUT = os.path.dirname(os.path.abspath(__file__))
 PM = "±"      # +/-
 EN = "–"      # en dash, as printed in ranges
 MU = "µ"      # micro sign

@@ -36,6 +36,17 @@ item_name <- c(
   "HerculanoHouzel_etal_2020_TABLE1",
   "HerculanoHouzel_etal_2020_TABLE2",
   "JardimMesseder_etal_2017_Table1",
+  "Kazu_etal_2015_TABLE1",        # LIVE 2026-08-06. Herculano-Houzel team, so the team rule in
+                                  #   sec 8.2.H resolves it - NO manual de-duplication needed.
+                                  #   Its 5 artiodactyls are also in HH 2015 Tables 1-5; both are
+                                  #   dated 2015, so the date ties and the tie-break on number of
+                                  #   species hands the SHARED whole-structure variables to HH
+                                  #   (many more species). Kazu then contributes only what HH does
+                                  #   not carry: the SUB-STRUCTURES (hippocampus, cortical grey,
+                                  #   diencephalon+basal ganglia, mesencephalon, pons+medulla).
+                                  #   This is the 2015 CORRIGENDUM, which supersedes the 2014
+                                  #   printing (71 of 184 shared cells changed); Kazu_etal_2014_Table1
+                                  #   stays out - see below.
   "Kverkova_etal_2018_TableS1",
   "Kverkova_etal_2018_TableS5"
 
@@ -45,12 +56,15 @@ item_name <- c(
   # time only after its build is real, then re-run standardized_term.R first.
   # See __merging_cellcounts/HH_coverage_gaps_scaffold.md for status and blockers.
   #
-  # , "Kazu_etal_2014_Table1"                      # NEW SPECIES: extra artiodactyls + giraffe primary (standard scheme; use 2015 corrigendum)
+  # Kazu_etal_2014_Table1 is intentionally NOT listed and never will be: it is the printing the
+  #   2015 corrigendum replaces (71 of the 184 cells present in both changed, and its
+  #   N_BR != N_CXT+N_CB+N_RoB by up to -22%). Kazu_etal_2015_TABLE1 is live above instead.
+  #   __ReadMe.xlsx carries the same instruction in its Flags active (skips) column.
   # , "Gabi_etal_2016_Table1"                      # NEW REGIONS: prefrontal vs rest-of-cortex counts (needs regional-term decision)
   # , "HerculanoHouzel_etal_2013_Table1-a"         # NEW REGIONS: mouse 18 cortical areas (data built; needs long->wide area reshape — see WIRING_into_cellcounts.md)
   # , "Ribeiro_etal_2013_Table1"                   # NEW REGIONS: human cortical zones (within-human; granularity + include/reference decision pending)
   # Olkowicz_etal_2016_TableS1 is intentionally NOT listed: non-mammal (28 birds), blocked on
-  #   the MDD/mammal-only taxonomy resolver (SCOPING_backbone_traits_and_taxonomy.md do-first steps 1 & 4).
+  #   the MDD/mammal-only taxonomy resolver (SCOUTING_AND_SCOPING.md (Part 2) do-first steps 1 & 4).
 )
 
 # Initialize an empty list to store data frames with cell counts data

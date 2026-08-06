@@ -2,7 +2,7 @@
 ## doi:10.1073/pnas.1517131113
 ##
 ## SCAFFOLD + BLOCKED: non-mammal. The taxonomy resolver is MDD/mammal-only and will drop
-## birds silently. Do the resolver + Class work in SCOPING_backbone_traits_and_taxonomy.md
+## birds silently. Do the resolver + Class work in SCOUTING_AND_SCOPING.md (Part 2)
 ## (do-first steps 1 & 4) BEFORE building this. This script only sets up paths and stops.
 ## See Olkowicz_etal_2016_TableS1.README.md.
 

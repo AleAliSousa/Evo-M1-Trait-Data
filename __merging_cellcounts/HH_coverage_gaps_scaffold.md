@@ -27,7 +27,7 @@ below, and its entry in `cellcounts_compiled.R` `item_name` is commented out.
 | 2 | Gabi et al. 2016 (prefrontal) | `10.1073/pnas.1610178113` | Prefrontal / rest-of-cortex neuron & other-cell counts (grey+white) for human + primates | **NEW regional** — see design note | Needs PDF + region-scheme decision |
 | 3 | Ribeiro et al. 2013 (human cortical zones) | `10.3389/fnana.2013.00028` | Human cortical grey/white neuronal-distribution zones | **NEW regional**, within-species | Needs PDF + region-scheme decision |
 | 4 | HH, Watson & Paxinos 2013 (mouse, 18 areas) | `10.3389/fnana.2013.00035` | Mouse per-cortical-area neuron/other-cell counts + densities | **NEW regional**, within-species | **Data already built** in `HerculanoHouzel_etal_2013/` — needs only wiring + region-scheme decision |
-| 5 | Olkowicz et al. 2016 (birds) | `10.1073/pnas.1517131113` | 28 avian species (forebrain/cerebellum/rest/tectum); HH is co-author | Bird-specific | **BLOCKED**: non-mammal — the taxonomy resolver is MDD/mammal-only (see `SCOPING_backbone_traits_and_taxonomy.md`, gap #1 / do-first step 4). Do NOT add to the mammal merge until the resolver is de-MDD'd |
+| 5 | Olkowicz et al. 2016 (birds) | `10.1073/pnas.1517131113` | 28 avian species (forebrain/cerebellum/rest/tectum); HH is co-author | Bird-specific | **BLOCKED**: non-mammal — the taxonomy resolver is MDD/mammal-only (see `SCOUTING_AND_SCOPING.md` (Part 2), gap #1 / do-first step 4). Do NOT add to the mammal merge until the resolver is de-MDD'd |
 
 ## Design note — regional cortical cell counts (papers 2, 3, 4)
 

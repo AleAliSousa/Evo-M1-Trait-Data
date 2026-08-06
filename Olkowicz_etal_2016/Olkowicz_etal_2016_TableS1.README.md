@@ -16,7 +16,7 @@ the single biggest raw species gain in the audit and the first non-mammal.
 The dataset's taxonomy backbone is **mammal-only**: `_keys` resolves against the Mammal
 Diversity Database (MDD) and `species_reference.csv` has no `Class` column, so any bird is
 **silently dropped** at taxonomy resolution. This is documented in
-`SCOPING_backbone_traits_and_taxonomy.md` (the four real gaps → #1; do-first checklist →
+`SCOUTING_AND_SCOPING.md` (Part 2) (the four real gaps → #1; do-first checklist →
 step 4: "De-MDD the resolver — add a `Class`-gated non-mammal path — **before** ingesting
 any non-mammal").
 

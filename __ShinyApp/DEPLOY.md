@@ -3,7 +3,71 @@
 A public web app to **search, filter, plot, and download** the comparative
 brain-trait data compiled in this project.
 
-## What it contains
+This is the single reference for the app: how to update it, how it gets its
+data, and how to run it locally.
+
+---
+
+## Updating the app after you change data
+
+Whenever you change any data in this repo (a spreadsheet, a merge, a source
+table), run the updater and it will refresh the live app for you.
+
+- **macOS** — double-click **`Update_ShinyApp.command`** in the repo root
+- **Windows** — double-click **`Update_ShinyApp.bat`** in the repo root
+
+Or, from a terminal in the repo root:
+
+```bash
+Rscript update_shinyapp.R
+```
+
+That's it. A window opens and shows its progress, then says `✅ Finished`.
+
+### What it does (three steps)
+
+1. **Rebuild** the derived data (`__ShinyApp/build_data.R`).
+2. **Push** the changes to GitHub — this is what actually updates the **live
+   data**, because the app reads its data straight from GitHub at runtime.
+3. **Deploy** the app to shinyapps.io (only strictly needed when the app code or
+   its offline fallback data changes; done every run to be safe).
+
+### Options
+
+Add any of these after the command (they also work on the double-click
+launchers if you run them from a terminal):
+
+| Option | Effect |
+|--------|--------|
+| `--no-deploy` | Just refresh the data on GitHub; skip the shinyapps.io upload. Good for a plain data update — the live app picks it up automatically. |
+| `--no-push` | Rebuild + deploy, but don't commit/push to GitHub. |
+| `--no-build` | Skip the data rebuild; push/deploy what's already on disk. |
+| `--help` | Show the built-in help. |
+
+Example — refresh the live data without re-uploading the app:
+
+```bash
+Rscript update_shinyapp.R --no-deploy
+```
+
+### First-time setup (once per computer)
+
+1. Install **R**: https://cran.r-project.org
+2. The updater installs any missing R packages for you the first time it runs.
+3. Configure your shinyapps.io account **once** (needed only for the deploy
+   step). Log in at https://www.shinyapps.io → **Account → Tokens → Show →
+   "Show secret" → Copy to clipboard**, then paste the copied line into R:
+
+   ```r
+   rsconnect::setAccountInfo(name = "...", token = "...", secret = "...")
+   ```
+
+   If you skip this, the updater still refreshes the data on GitHub and just
+   reminds you to do the setup before it can deploy.
+
+---
+
+## What the app contains
 
 - **Compiled database** — harmonized long tables across three dataset families:
   **brain-structure volumes**, **cell counts**, and the **EvoM1 trait table**
@@ -24,9 +88,16 @@ brain-trait data compiled in this project.
 ## Files
 
 ```
+repo root/
+  update_shinyapp.R         the updater: build -> push -> deploy
+  Update_ShinyApp.command   macOS double-click launcher for the updater
+  Update_ShinyApp.bat       Windows double-click launcher for the updater
+
 __ShinyApp/
   app.R                     the whole app (single file)
   build_data.R              regenerates the two derived files + fallback copies
+  DEPLOY.md                 this file
+  PHYLO_SETUP.md            optional mammal tree for PGLS
   data/                     <-- fallback cache only (do not hand-edit)
     evom1_traits_long.csv   DERIVED: melted from ____EvoM1_TraitTable/*.xlsx
     source_manifest.csv     DERIVED: source-table catalogue + citations
@@ -45,18 +116,17 @@ At runtime the app reads its data over HTTP from the public GitHub repo
 | Cell counts | `__merging_cellcounts/cellcounts_long.csv` |
 | EvoM1 traits (derived) | `__ShinyApp/data/evom1_traits_long.csv` |
 | Source-table catalogue (derived) | `__ShinyApp/data/source_manifest.csv` |
-| The 180 source tables | `__Public/comparative-data/…` (fetched on demand) |
+| The source tables | `__Public/comparative-data/…` (fetched on demand) |
 
-Because it reads the repo directly, **the 180 source tables are not duplicated
-in the app at all**, and updating the data is just a `git push` — no redeploy
+Because it reads the repo directly, **the source tables are not duplicated in
+the app at all**, and updating the data is just a `git push` — no redeploy
 needed. If GitHub is briefly unreachable, the app falls back to the small local
 copies in `data/` for the four startup files (the compiled database keeps
 working; individual source-table views need the network).
 
 Only two files are genuinely *derived* (the trait table is melted from `.xlsx`;
 the manifest joins filenames to citations in `__ReadMe.xlsx`), so a small build
-step is still needed. Regenerate them whenever the merge or trait tables change,
-then commit and push:
+step is still needed. The updater above handles this. To do it by hand:
 
 ```r
 install.packages("readxl")            # one time
@@ -79,26 +149,26 @@ shiny::runApp("__ShinyApp")   # reads from GitHub; falls back to data/ if offlin
 shiny::runApp(".") # use this if already in ./__ShinyApp
 ```
 
-## Deploy publicly to shinyapps.io
+**Phylogenetic regression (PGLS)** is an optional Plot feature — it activates
+once a mammal tree is added; see `PHYLO_SETUP.md`.
+
+## Deploying by hand
+
+`update_shinyapp.R` is the supported path and does all of this for you. If you
+ever need to deploy without it — say the updater itself is broken, or you're
+publishing from a machine that only has the app folder:
 
 1. **Push first.** The deployed app reads data from GitHub, so make sure your
    latest data (and the two derived files) are committed and pushed to `main`.
-2. Create a free account at https://www.shinyapps.io. In **Account → Tokens**,
-   click **Show → Show secret → Copy to clipboard** to get the full
-   `setAccountInfo(...)` command with real values, and run it once in R:
-
-   ```r
-   install.packages("rsconnect")
-   rsconnect::setAccountInfo(name = "...", token = "...", secret = "...")
-   ```
-
-3. Deploy (run from the repo root, the folder that contains `__ShinyApp/`):
+2. Set up your shinyapps.io account once, as under **First-time setup** above.
+3. Deploy from the repo root (the folder that contains `__ShinyApp/`):
 
    ```r
    rsconnect::deployApp(
-     appDir   = "__ShinyApp",
-     appName  = "evo-m1-brain-traits",
-     appTitle = "Evo-M1 Comparative Brain-Trait Data"
+     appDir      = "__ShinyApp",
+     appName     = "evo-m1-brain-traits",
+     appTitle    = "Evo-M1 Comparative Brain-Trait Data",
+     forceUpdate = TRUE
    )
    ```
 
@@ -106,9 +176,6 @@ shiny::runApp(".") # use this if already in ./__ShinyApp
    installed it locally, for PGLS) on the server, uploads the tiny `data/`
    fallback, and returns a public URL like
    `https://<your-account>.shinyapps.io/evo-m1-brain-traits/`.
-
-   **Phylogenetic regression (PGLS)** is an optional Plot feature — it activates
-   once a mammal tree is added; see `PHYLO_SETUP.md`.
 
 To update later, re-run the same `deployApp(...)` call.
 

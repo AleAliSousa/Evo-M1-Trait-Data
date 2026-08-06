@@ -1,7 +1,7 @@
 # Corticospinal / corticomotoneuronal termination extent (compile-from-literature)
 
 Scaffold for the most **M1-on-theme** Tier-3 candidate (#8 in
-`SCOUTING_candidate_papers_20260731.md`; kept per curator, 2026-07-31): the *output pathway* of
+`SCOUTING_AND_SCOPING.md`; kept per curator, 2026-07-31): the *output pathway* of
 primary motor cortex. Extends the existing dexterity–corticospinal axis (Heffner & Masterton 1975/
 1983, already in the repo, read by `____EvoM1_TraitTable/EvoM1_read_dexterity_corticospinal*.R`) with
 the **termination-pattern** evidence that the Heffner dexterity scale is a proxy for.

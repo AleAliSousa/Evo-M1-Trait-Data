@@ -30,6 +30,9 @@ Antidorcas marsupialis,Cerebellum_N.p.mg,196999,HerculanoHouzel_etal_2015_Table2
 Antidorcas marsupialis,Cerebellum_O.n,467244676,HerculanoHouzel_etal_2015_Table2
 Antidorcas marsupialis,Cerebellum_O.p.N,0.207,HerculanoHouzel_etal_2015_Table2
 Antidorcas marsupialis,Cerebellum_O.p.mg,40779,HerculanoHouzel_etal_2015_Table2
+Antidorcas marsupialis,CerebralCortexGrey_N.n,293770000,Kazu_etal_2015_TABLE1
+Antidorcas marsupialis,CerebralCortexGrey_N.p.mg,6684,Kazu_etal_2015_TABLE1
+Antidorcas marsupialis,CerebralCortexGrey_O.p.N,7.239,Kazu_etal_2015_TABLE1
 Antidorcas marsupialis,CerebralCortexNoHippocampus_I.p.C,0.0587,DosSantos_etal_2020_unpublished
 Antidorcas marsupialis,CerebralCortex_I.p.C,0.0586341328994011,DosSantos_etal_2020_unpublished
 Antidorcas marsupialis,CerebralCortex_Mass.g,68.806,HerculanoHouzel_etal_2015_Table1
@@ -38,13 +41,29 @@ Antidorcas marsupialis,CerebralCortex_N.p.mg,5768,HerculanoHouzel_etal_2015_Tabl
 Antidorcas marsupialis,CerebralCortex_O.n,4126259275,HerculanoHouzel_etal_2015_Table1
 Antidorcas marsupialis,CerebralCortex_O.p.N,10.396,HerculanoHouzel_etal_2015_Table1
 Antidorcas marsupialis,CerebralCortex_O.p.mg,59969,HerculanoHouzel_etal_2015_Table1
+Antidorcas marsupialis,DiencephalonStriatum_Mass.g,12.194,Kazu_etal_2015_TABLE1
+Antidorcas marsupialis,DiencephalonStriatum_N.n,40120000,Kazu_etal_2015_TABLE1
+Antidorcas marsupialis,DiencephalonStriatum_N.p.mg,3290,Kazu_etal_2015_TABLE1
+Antidorcas marsupialis,DiencephalonStriatum_O.p.N,19.408,Kazu_etal_2015_TABLE1
 Antidorcas marsupialis,Hippocampus_I.p.C,0.057,DosSantos_etal_2020_unpublished
+Antidorcas marsupialis,Hippocampus_Mass.g,3.434,Kazu_etal_2015_TABLE1
+Antidorcas marsupialis,Hippocampus_N.n,20480000,Kazu_etal_2015_TABLE1
+Antidorcas marsupialis,Hippocampus_N.p.mg,5965,Kazu_etal_2015_TABLE1
+Antidorcas marsupialis,Hippocampus_O.p.N,10.111,Kazu_etal_2015_TABLE1
+Antidorcas marsupialis,Mesencephalon_Mass.g,5.304,Kazu_etal_2015_TABLE1
+Antidorcas marsupialis,Mesencephalon_N.n,7520000,Kazu_etal_2015_TABLE1
+Antidorcas marsupialis,Mesencephalon_N.p.mg,1418,Kazu_etal_2015_TABLE1
+Antidorcas marsupialis,Mesencephalon_O.p.N,30.25,Kazu_etal_2015_TABLE1
 Antidorcas marsupialis,OlfactoryBulb_Mass.g,1.2,HerculanoHouzel_etal_2015_Table4
 Antidorcas marsupialis,OlfactoryBulb_N.n,15998400,HerculanoHouzel_etal_2015_Table4
 Antidorcas marsupialis,OlfactoryBulb_N.p.mg,13332,HerculanoHouzel_etal_2015_Table4
 Antidorcas marsupialis,OlfactoryBulb_O.n,105201600,HerculanoHouzel_etal_2015_Table4
 Antidorcas marsupialis,OlfactoryBulb_O.p.N,6.576,HerculanoHouzel_etal_2015_Table4
 Antidorcas marsupialis,OlfactoryBulb_O.p.mg,87668,HerculanoHouzel_etal_2015_Table4
+Antidorcas marsupialis,PonsMedulla_Mass.g,8.312,Kazu_etal_2015_TABLE1
+Antidorcas marsupialis,PonsMedulla_N.n,22840000,Kazu_etal_2015_TABLE1
+Antidorcas marsupialis,PonsMedulla_N.p.mg,2748,Kazu_etal_2015_TABLE1
+Antidorcas marsupialis,PonsMedulla_O.p.N,13.706,Kazu_etal_2015_TABLE1
 Antidorcas marsupialis,RoB_I.p.C,0.0606648880530952,DosSantos_etal_2020_unpublished
 Antidorcas marsupialis,RoB_Mass.g,25.81,HerculanoHouzel_etal_2015_Table3
 Antidorcas marsupialis,RoB_N.n,70485000,HerculanoHouzel_etal_2015_Table3
@@ -52,11 +71,15 @@ Antidorcas marsupialis,RoB_N.p.mg,2731,HerculanoHouzel_etal_2015_Table3
 Antidorcas marsupialis,RoB_O.n,1319280624,HerculanoHouzel_etal_2015_Table3
 Antidorcas marsupialis,RoB_O.p.N,18.71,HerculanoHouzel_etal_2015_Table3
 Antidorcas marsupialis,RoB_O.p.mg,51115,HerculanoHouzel_etal_2015_Table3
+Antidorcas marsupialis,Species_Kazu2015,NA,Kazu_etal_2015_TABLE1
 Antidorcas marsupialis,WholeBrain_C.n,8637379808,HerculanoHouzel_etal_2015_Table5
 Antidorcas marsupialis,WholeBrain_I.p.C,0.0471887746165505,DosSantos_etal_2020_unpublished
 Antidorcas marsupialis,WholeBrain_Mass.g,106.074,HerculanoHouzel_etal_2015_Table5
 Antidorcas marsupialis,WholeBrain_N.n,2724595233,HerculanoHouzel_etal_2015_Table5
 Antidorcas marsupialis,WholeBrain_O.n,5912784575,HerculanoHouzel_etal_2015_Table5
+Antidorcas marsupialis,WholeBrain_O.p.N,2.17,Kazu_etal_2015_TABLE1
+Antidorcas marsupialis,body_mass_approximate,NA,Kazu_etal_2015_TABLE1
+Antidorcas marsupialis,source_printing,NA,Kazu_etal_2015_TABLE1
 Aotus trivirgatus,Body_Mass.g,925,HerculanoHouzel_etal_2015_Table5
 Aotus trivirgatus,Cerebellum_Mass.g,1.732,HerculanoHouzel_etal_2015_Table2
 Aotus trivirgatus,Cerebellum_N.n,1040000000,HerculanoHouzel_etal_2015_Table2
@@ -497,22 +520,37 @@ Damaliscus pygargus phillipsi,Cerebellum_N.p.mg,179206,HerculanoHouzel_etal_2015
 Damaliscus pygargus phillipsi,Cerebellum_O.n,443918456,HerculanoHouzel_etal_2015_Table2
 Damaliscus pygargus phillipsi,Cerebellum_O.p.N,0.184,HerculanoHouzel_etal_2015_Table2
 Damaliscus pygargus phillipsi,Cerebellum_O.p.mg,33123,HerculanoHouzel_etal_2015_Table2
+Damaliscus pygargus phillipsi,CerebralCortexGrey_N.n,361950000,Kazu_etal_2015_TABLE1
+Damaliscus pygargus phillipsi,CerebralCortexGrey_N.p.mg,5142,Kazu_etal_2015_TABLE1
+Damaliscus pygargus phillipsi,CerebralCortexGrey_O.p.N,8.356,Kazu_etal_2015_TABLE1
 Damaliscus pygargus phillipsi,CerebralCortex_Mass.g,111.31,HerculanoHouzel_etal_2015_Table1
 Damaliscus pygargus phillipsi,CerebralCortex_N.n,570673431,HerculanoHouzel_etal_2015_Table1
 Damaliscus pygargus phillipsi,CerebralCortex_N.p.mg,5127,HerculanoHouzel_etal_2015_Table1
 Damaliscus pygargus phillipsi,CerebralCortex_O.n,6762256227,HerculanoHouzel_etal_2015_Table1
 Damaliscus pygargus phillipsi,CerebralCortex_O.p.N,11.851,HerculanoHouzel_etal_2015_Table1
 Damaliscus pygargus phillipsi,CerebralCortex_O.p.mg,60760,HerculanoHouzel_etal_2015_Table1
+Damaliscus pygargus phillipsi,Hippocampus_Mass.g,2.266,Kazu_etal_2015_TABLE1
+Damaliscus pygargus phillipsi,Hippocampus_N.n,22090000,Kazu_etal_2015_TABLE1
+Damaliscus pygargus phillipsi,Hippocampus_N.p.mg,9750,Kazu_etal_2015_TABLE1
+Damaliscus pygargus phillipsi,Hippocampus_O.p.N,9.246,Kazu_etal_2015_TABLE1
+Damaliscus pygargus phillipsi,PonsMedulla_Mass.g,8.06,Kazu_etal_2015_TABLE1
+Damaliscus pygargus phillipsi,PonsMedulla_N.n,20720000,Kazu_etal_2015_TABLE1
+Damaliscus pygargus phillipsi,PonsMedulla_N.p.mg,2570,Kazu_etal_2015_TABLE1
+Damaliscus pygargus phillipsi,PonsMedulla_O.p.N,22.81,Kazu_etal_2015_TABLE1
 Damaliscus pygargus phillipsi,RoB_Mass.g,30.006,HerculanoHouzel_etal_2015_Table3
 Damaliscus pygargus phillipsi,RoB_N.n,86428126,HerculanoHouzel_etal_2015_Table3
 Damaliscus pygargus phillipsi,RoB_N.p.mg,2880,HerculanoHouzel_etal_2015_Table3
 Damaliscus pygargus phillipsi,RoB_O.n,2136071876,HerculanoHouzel_etal_2015_Table3
 Damaliscus pygargus phillipsi,RoB_O.p.N,24.718,HerculanoHouzel_etal_2015_Table3
 Damaliscus pygargus phillipsi,RoB_O.p.mg,71188,HerculanoHouzel_etal_2015_Table3
+Damaliscus pygargus phillipsi,Species_Kazu2015,NA,Kazu_etal_2015_TABLE1
 Damaliscus pygargus phillipsi,WholeBrain_C.n,12402060786,HerculanoHouzel_etal_2015_Table5
 Damaliscus pygargus phillipsi,WholeBrain_Mass.g,154.718,HerculanoHouzel_etal_2015_Table5
 Damaliscus pygargus phillipsi,WholeBrain_N.n,3058814227,HerculanoHouzel_etal_2015_Table5
 Damaliscus pygargus phillipsi,WholeBrain_O.n,9343246559,HerculanoHouzel_etal_2015_Table5
+Damaliscus pygargus phillipsi,WholeBrain_O.p.N,3.054,Kazu_etal_2015_TABLE1
+Damaliscus pygargus phillipsi,body_mass_approximate,NA,Kazu_etal_2015_TABLE1
+Damaliscus pygargus phillipsi,source_printing,NA,Kazu_etal_2015_TABLE1
 Dasyprocta prymnolopha,Body_Mass.g,2843,HerculanoHouzel_etal_2015_Table5
 Dasyprocta prymnolopha,Cerebellum_Mass.g,2.742,HerculanoHouzel_etal_2015_Table2
 Dasyprocta prymnolopha,Cerebellum_N.n,673488085,HerculanoHouzel_etal_2015_Table2
@@ -870,6 +908,9 @@ Giraffa camelopardalis,Cerebellum_N.p.mg,131080,HerculanoHouzel_etal_2015_Table2
 Giraffa camelopardalis,Cerebellum_O.n,5520360938,HerculanoHouzel_etal_2015_Table2
 Giraffa camelopardalis,Cerebellum_O.p.N,0.622,HerculanoHouzel_etal_2015_Table2
 Giraffa camelopardalis,Cerebellum_O.p.mg,81505,HerculanoHouzel_etal_2015_Table2
+Giraffa camelopardalis,CerebralCortexGrey_N.n,1330000000,Kazu_etal_2015_TABLE1
+Giraffa camelopardalis,CerebralCortexGrey_N.p.mg,5882,Kazu_etal_2015_TABLE1
+Giraffa camelopardalis,CerebralCortexGrey_O.p.N,7.763,Kazu_etal_2015_TABLE1
 Giraffa camelopardalis,CerebralCortexNoHippocampus_I.p.C,0.0861,DosSantos_etal_2020_unpublished
 Giraffa camelopardalis,CerebralCortex_I.p.C,0.0863,DosSantos_etal_2020_unpublished
 Giraffa camelopardalis,CerebralCortex_Mass.g,398.808,HerculanoHouzel_etal_2015_Table1
@@ -878,13 +919,29 @@ Giraffa camelopardalis,CerebralCortex_N.p.mg,4339,HerculanoHouzel_etal_2015_Tabl
 Giraffa camelopardalis,CerebralCortex_O.n,27513706540,HerculanoHouzel_etal_2015_Table1
 Giraffa camelopardalis,CerebralCortex_O.p.N,15.9,HerculanoHouzel_etal_2015_Table1
 Giraffa camelopardalis,CerebralCortex_O.p.mg,68990,HerculanoHouzel_etal_2015_Table1
+Giraffa camelopardalis,DiencephalonStriatum_Mass.g,33.322,Kazu_etal_2015_TABLE1
+Giraffa camelopardalis,DiencephalonStriatum_N.n,68630000,Kazu_etal_2015_TABLE1
+Giraffa camelopardalis,DiencephalonStriatum_N.p.mg,2060,Kazu_etal_2015_TABLE1
+Giraffa camelopardalis,DiencephalonStriatum_O.p.N,38.841,Kazu_etal_2015_TABLE1
 Giraffa camelopardalis,Hippocampus_I.p.C,0.0951,DosSantos_etal_2020_unpublished
+Giraffa camelopardalis,Hippocampus_Mass.g,7.486,Kazu_etal_2015_TABLE1
+Giraffa camelopardalis,Hippocampus_N.n,58590000,Kazu_etal_2015_TABLE1
+Giraffa camelopardalis,Hippocampus_N.p.mg,8435,Kazu_etal_2015_TABLE1
+Giraffa camelopardalis,Hippocampus_O.p.N,10.628,Kazu_etal_2015_TABLE1
+Giraffa camelopardalis,Mesencephalon_Mass.g,15.928,Kazu_etal_2015_TABLE1
+Giraffa camelopardalis,Mesencephalon_N.n,26630000,Kazu_etal_2015_TABLE1
+Giraffa camelopardalis,Mesencephalon_N.p.mg,1672,Kazu_etal_2015_TABLE1
+Giraffa camelopardalis,Mesencephalon_O.p.N,41.017,Kazu_etal_2015_TABLE1
 Giraffa camelopardalis,OlfactoryBulb_Mass.g,2.052,HerculanoHouzel_etal_2015_Table4
 Giraffa camelopardalis,OlfactoryBulb_N.n,24678000,HerculanoHouzel_etal_2015_Table4
 Giraffa camelopardalis,OlfactoryBulb_N.p.mg,12026,HerculanoHouzel_etal_2015_Table4
 Giraffa camelopardalis,OlfactoryBulb_O.n,232384500,HerculanoHouzel_etal_2015_Table4
 Giraffa camelopardalis,OlfactoryBulb_O.p.N,9.417,HerculanoHouzel_etal_2015_Table4
 Giraffa camelopardalis,OlfactoryBulb_O.p.mg,113248,HerculanoHouzel_etal_2015_Table4
+Giraffa camelopardalis,PonsMedulla_Mass.g,21.43,Kazu_etal_2015_TABLE1
+Giraffa camelopardalis,PonsMedulla_N.n,47720000,Kazu_etal_2015_TABLE1
+Giraffa camelopardalis,PonsMedulla_N.p.mg,2227,Kazu_etal_2015_TABLE1
+Giraffa camelopardalis,PonsMedulla_O.p.N,23.483,Kazu_etal_2015_TABLE1
 Giraffa camelopardalis,RoB_I.p.C,0.0986,DosSantos_etal_2020_unpublished
 Giraffa camelopardalis,RoB_Mass.g,70.68,HerculanoHouzel_etal_2015_Table3
 Giraffa camelopardalis,RoB_N.n,142697625,HerculanoHouzel_etal_2015_Table3
@@ -892,11 +949,16 @@ Giraffa camelopardalis,RoB_N.p.mg,2019,HerculanoHouzel_etal_2015_Table3
 Giraffa camelopardalis,RoB_O.n,4878864876,HerculanoHouzel_etal_2015_Table3
 Giraffa camelopardalis,RoB_O.p.N,34.19,HerculanoHouzel_etal_2015_Table3
 Giraffa camelopardalis,RoB_O.p.mg,69028,HerculanoHouzel_etal_2015_Table3
+Giraffa camelopardalis,Species_Kazu2015,NA,Kazu_etal_2015_TABLE1
 Giraffa camelopardalis,WholeBrain_C.n,48664220000,HerculanoHouzel_etal_2015_Table5
 Giraffa camelopardalis,WholeBrain_I.p.C,0.0692,DosSantos_etal_2020_unpublished
 Giraffa camelopardalis,WholeBrain_Mass.g,537.218,HerculanoHouzel_etal_2015_Table5
 Giraffa camelopardalis,WholeBrain_N.n,10751287650,HerculanoHouzel_etal_2015_Table5
 Giraffa camelopardalis,WholeBrain_O.n,37912932350,HerculanoHouzel_etal_2015_Table5
+Giraffa camelopardalis,WholeBrain_O.p.N,3.526,Kazu_etal_2015_TABLE1
+Giraffa camelopardalis,body_mass_approximate,NA,Kazu_etal_2015_TABLE1
+Giraffa camelopardalis,consistency_flags,NA,Kazu_etal_2015_TABLE1
+Giraffa camelopardalis,source_printing,NA,Kazu_etal_2015_TABLE1
 Gorilla gorilla,Cerebellum_Mass.g,37.56,HerculanoHouzel_etal_2015_Table2
 Gorilla gorilla,Cerebellum_N.n,26400000000,HerculanoHouzel_etal_2015_Table2
 Gorilla gorilla,Cerebellum_N.p.mg,702875,HerculanoHouzel_etal_2015_Table2
@@ -2172,6 +2234,9 @@ Sus scrofa domesticus,Cerebellum_N.p.mg,228632,HerculanoHouzel_etal_2015_Table2
 Sus scrofa domesticus,Cerebellum_O.n,348710938,HerculanoHouzel_etal_2015_Table2
 Sus scrofa domesticus,Cerebellum_O.p.N,0.188,HerculanoHouzel_etal_2015_Table2
 Sus scrofa domesticus,Cerebellum_O.p.mg,42902,HerculanoHouzel_etal_2015_Table2
+Sus scrofa domesticus,CerebralCortexGrey_N.n,207750000,Kazu_etal_2015_TABLE1
+Sus scrofa domesticus,CerebralCortexGrey_N.p.mg,7375,Kazu_etal_2015_TABLE1
+Sus scrofa domesticus,CerebralCortexGrey_O.p.N,8.544,Kazu_etal_2015_TABLE1
 Sus scrofa domesticus,CerebralCortexNoHippocampus_I.p.C,0.108011310195764,DosSantos_etal_2020_unpublished
 Sus scrofa domesticus,CerebralCortex_I.p.C,0.109832797745959,DosSantos_etal_2020_unpublished
 Sus scrofa domesticus,CerebralCortex_Mass.g,42.404,HerculanoHouzel_etal_2015_Table1
@@ -2180,13 +2245,29 @@ Sus scrofa domesticus,CerebralCortex_N.p.mg,7276,HerculanoHouzel_etal_2015_Table
 Sus scrofa domesticus,CerebralCortex_O.n,3250251354,HerculanoHouzel_etal_2015_Table1
 Sus scrofa domesticus,CerebralCortex_O.p.N,10.585,HerculanoHouzel_etal_2015_Table1
 Sus scrofa domesticus,CerebralCortex_O.p.mg,77016,HerculanoHouzel_etal_2015_Table1
+Sus scrofa domesticus,DiencephalonStriatum_Mass.g,6.728,Kazu_etal_2015_TABLE1
+Sus scrofa domesticus,DiencephalonStriatum_N.n,34400000,Kazu_etal_2015_TABLE1
+Sus scrofa domesticus,DiencephalonStriatum_N.p.mg,5113,Kazu_etal_2015_TABLE1
+Sus scrofa domesticus,DiencephalonStriatum_O.p.N,17.779,Kazu_etal_2015_TABLE1
 Sus scrofa domesticus,Hippocampus_I.p.C,0.1513,DosSantos_etal_2020_unpublished
+Sus scrofa domesticus,Hippocampus_Mass.g,1.928,Kazu_etal_2015_TABLE1
+Sus scrofa domesticus,Hippocampus_N.n,12910000,Kazu_etal_2015_TABLE1
+Sus scrofa domesticus,Hippocampus_N.p.mg,6695,Kazu_etal_2015_TABLE1
+Sus scrofa domesticus,Hippocampus_O.p.N,10.334,Kazu_etal_2015_TABLE1
+Sus scrofa domesticus,Mesencephalon_Mass.g,2.338,Kazu_etal_2015_TABLE1
+Sus scrofa domesticus,Mesencephalon_N.n,12430000,Kazu_etal_2015_TABLE1
+Sus scrofa domesticus,Mesencephalon_N.p.mg,5317,Kazu_etal_2015_TABLE1
+Sus scrofa domesticus,Mesencephalon_O.p.N,15.667,Kazu_etal_2015_TABLE1
 Sus scrofa domesticus,OlfactoryBulb_Mass.g,0.822,HerculanoHouzel_etal_2015_Table4
 Sus scrofa domesticus,OlfactoryBulb_N.n,9195500,HerculanoHouzel_etal_2015_Table4
 Sus scrofa domesticus,OlfactoryBulb_N.p.mg,11187,HerculanoHouzel_etal_2015_Table4
 Sus scrofa domesticus,OlfactoryBulb_O.n,77554500,HerculanoHouzel_etal_2015_Table4
 Sus scrofa domesticus,OlfactoryBulb_O.p.N,8.434,HerculanoHouzel_etal_2015_Table4
 Sus scrofa domesticus,OlfactoryBulb_O.p.mg,94348,HerculanoHouzel_etal_2015_Table4
+Sus scrofa domesticus,PonsMedulla_Mass.g,4.784,Kazu_etal_2015_TABLE1
+Sus scrofa domesticus,PonsMedulla_N.n,11880000,Kazu_etal_2015_TABLE1
+Sus scrofa domesticus,PonsMedulla_N.p.mg,2483,Kazu_etal_2015_TABLE1
+Sus scrofa domesticus,PonsMedulla_O.p.N,24.452,Kazu_etal_2015_TABLE1
 Sus scrofa domesticus,RoB_I.p.C,0.112504786002109,DosSantos_etal_2020_unpublished
 Sus scrofa domesticus,RoB_Mass.g,13.85,HerculanoHouzel_etal_2015_Table3
 Sus scrofa domesticus,RoB_N.n,58709836,HerculanoHouzel_etal_2015_Table3
@@ -2194,11 +2275,16 @@ Sus scrofa domesticus,RoB_N.p.mg,4238,HerculanoHouzel_etal_2015_Table3
 Sus scrofa domesticus,RoB_O.n,1096821414,HerculanoHouzel_etal_2015_Table3
 Sus scrofa domesticus,RoB_O.p.N,18.682,HerculanoHouzel_etal_2015_Table3
 Sus scrofa domesticus,RoB_O.p.mg,79192,HerculanoHouzel_etal_2015_Table3
+Sus scrofa domesticus,Species_Kazu2015,NA,Kazu_etal_2015_TABLE1
 Sus scrofa domesticus,WholeBrain_C.n,6919896258,HerculanoHouzel_etal_2015_Table5
 Sus scrofa domesticus,WholeBrain_I.p.C,0.0873617623254779,DosSantos_etal_2020_unpublished
 Sus scrofa domesticus,WholeBrain_Mass.g,64.18,HerculanoHouzel_etal_2015_Table5
 Sus scrofa domesticus,WholeBrain_N.n,2224112553,HerculanoHouzel_etal_2015_Table5
 Sus scrofa domesticus,WholeBrain_O.n,4695783705,HerculanoHouzel_etal_2015_Table5
+Sus scrofa domesticus,WholeBrain_O.p.N,2.111,Kazu_etal_2015_TABLE1
+Sus scrofa domesticus,body_mass_approximate,NA,Kazu_etal_2015_TABLE1
+Sus scrofa domesticus,parse_flags,NA,Kazu_etal_2015_TABLE1
+Sus scrofa domesticus,source_printing,NA,Kazu_etal_2015_TABLE1
 Tragelaphus strepsiceros,Body_Mass.g,218000,HerculanoHouzel_etal_2015_Table5
 Tragelaphus strepsiceros,Cerebellum_I.p.C,0.0182,DosSantos_etal_2020_unpublished
 Tragelaphus strepsiceros,Cerebellum_Mass.g,31.776,HerculanoHouzel_etal_2015_Table2
@@ -2207,6 +2293,9 @@ Tragelaphus strepsiceros,Cerebellum_N.p.mg,127218,HerculanoHouzel_etal_2015_Tabl
 Tragelaphus strepsiceros,Cerebellum_O.n,1266099609,HerculanoHouzel_etal_2015_Table2
 Tragelaphus strepsiceros,Cerebellum_O.p.N,0.313,HerculanoHouzel_etal_2015_Table2
 Tragelaphus strepsiceros,Cerebellum_O.p.mg,39845,HerculanoHouzel_etal_2015_Table2
+Tragelaphus strepsiceros,CerebralCortexGrey_N.n,596210000,Kazu_etal_2015_TABLE1
+Tragelaphus strepsiceros,CerebralCortexGrey_N.p.mg,4644,Kazu_etal_2015_TABLE1
+Tragelaphus strepsiceros,CerebralCortexGrey_O.p.N,8.754,Kazu_etal_2015_TABLE1
 Tragelaphus strepsiceros,CerebralCortexNoHippocampus_I.p.C,0.0645204852055977,DosSantos_etal_2020_unpublished
 Tragelaphus strepsiceros,CerebralCortex_I.p.C,0.0641181033412503,DosSantos_etal_2020_unpublished
 Tragelaphus strepsiceros,CerebralCortex_Mass.g,213.37,HerculanoHouzel_etal_2015_Table1
@@ -2215,13 +2304,29 @@ Tragelaphus strepsiceros,CerebralCortex_N.p.mg,3574,HerculanoHouzel_etal_2015_Ta
 Tragelaphus strepsiceros,CerebralCortex_O.n,12302304448,HerculanoHouzel_etal_2015_Table1
 Tragelaphus strepsiceros,CerebralCortex_O.p.N,16.133,HerculanoHouzel_etal_2015_Table1
 Tragelaphus strepsiceros,CerebralCortex_O.p.mg,57657,HerculanoHouzel_etal_2015_Table1
+Tragelaphus strepsiceros,DiencephalonStriatum_Mass.g,30.418,Kazu_etal_2015_TABLE1
+Tragelaphus strepsiceros,DiencephalonStriatum_N.n,58880000,Kazu_etal_2015_TABLE1
+Tragelaphus strepsiceros,DiencephalonStriatum_N.p.mg,1936,Kazu_etal_2015_TABLE1
+Tragelaphus strepsiceros,DiencephalonStriatum_O.p.N,31.841,Kazu_etal_2015_TABLE1
 Tragelaphus strepsiceros,Hippocampus_I.p.C,0.0548,DosSantos_etal_2020_unpublished
+Tragelaphus strepsiceros,Hippocampus_Mass.g,10.936,Kazu_etal_2015_TABLE1
+Tragelaphus strepsiceros,Hippocampus_N.n,28360000,Kazu_etal_2015_TABLE1
+Tragelaphus strepsiceros,Hippocampus_N.p.mg,2594,Kazu_etal_2015_TABLE1
+Tragelaphus strepsiceros,Hippocampus_O.p.N,17.868,Kazu_etal_2015_TABLE1
+Tragelaphus strepsiceros,Mesencephalon_Mass.g,12.902,Kazu_etal_2015_TABLE1
+Tragelaphus strepsiceros,Mesencephalon_N.n,26070000,Kazu_etal_2015_TABLE1
+Tragelaphus strepsiceros,Mesencephalon_N.p.mg,2594,Kazu_etal_2015_TABLE1
+Tragelaphus strepsiceros,Mesencephalon_O.p.N,30.546,Kazu_etal_2015_TABLE1
 Tragelaphus strepsiceros,OlfactoryBulb_Mass.g,5.546,HerculanoHouzel_etal_2015_Table4
 Tragelaphus strepsiceros,OlfactoryBulb_N.n,38331562,HerculanoHouzel_etal_2015_Table4
 Tragelaphus strepsiceros,OlfactoryBulb_N.p.mg,6912,HerculanoHouzel_etal_2015_Table4
 Tragelaphus strepsiceros,OlfactoryBulb_O.n,362731438,HerculanoHouzel_etal_2015_Table4
 Tragelaphus strepsiceros,OlfactoryBulb_O.p.N,8.523,HerculanoHouzel_etal_2015_Table4
 Tragelaphus strepsiceros,OlfactoryBulb_O.p.mg,58913,HerculanoHouzel_etal_2015_Table4
+Tragelaphus strepsiceros,PonsMedulla_Mass.g,18.396,Kazu_etal_2015_TABLE1
+Tragelaphus strepsiceros,PonsMedulla_N.n,21640000,Kazu_etal_2015_TABLE1
+Tragelaphus strepsiceros,PonsMedulla_N.p.mg,1176,Kazu_etal_2015_TABLE1
+Tragelaphus strepsiceros,PonsMedulla_O.p.N,34.088,Kazu_etal_2015_TABLE1
 Tragelaphus strepsiceros,RoB_I.p.C,0.0787330731973596,DosSantos_etal_2020_unpublished
 Tragelaphus strepsiceros,RoB_Mass.g,61.716,HerculanoHouzel_etal_2015_Table3
 Tragelaphus strepsiceros,RoB_N.n,106590230,HerculanoHouzel_etal_2015_Table3
@@ -2229,11 +2334,16 @@ Tragelaphus strepsiceros,RoB_N.p.mg,1727,HerculanoHouzel_etal_2015_Table3
 Tragelaphus strepsiceros,RoB_O.n,3408779523,HerculanoHouzel_etal_2015_Table3
 Tragelaphus strepsiceros,RoB_O.p.N,31.98,HerculanoHouzel_etal_2015_Table3
 Tragelaphus strepsiceros,RoB_O.p.mg,55233,HerculanoHouzel_etal_2015_Table3
+Tragelaphus strepsiceros,Species_Kazu2015,NA,Kazu_etal_2015_TABLE1
 Tragelaphus strepsiceros,WholeBrain_C.n,21888835129,HerculanoHouzel_etal_2015_Table5
 Tragelaphus strepsiceros,WholeBrain_I.p.C,0.055273667862973,DosSantos_etal_2020_unpublished
 Tragelaphus strepsiceros,WholeBrain_Mass.g,306.86,HerculanoHouzel_etal_2015_Table5
 Tragelaphus strepsiceros,WholeBrain_N.n,4911651549,HerculanoHouzel_etal_2015_Table5
 Tragelaphus strepsiceros,WholeBrain_O.n,16977183580,HerculanoHouzel_etal_2015_Table5
+Tragelaphus strepsiceros,WholeBrain_O.p.N,3.456,Kazu_etal_2015_TABLE1
+Tragelaphus strepsiceros,body_mass_approximate,NA,Kazu_etal_2015_TABLE1
+Tragelaphus strepsiceros,consistency_flags,NA,Kazu_etal_2015_TABLE1
+Tragelaphus strepsiceros,source_printing,NA,Kazu_etal_2015_TABLE1
 Triaenops persicus,Body_Mass.g,13.7,HerculanoHouzel_etal_2020_TABLE1
 Triaenops persicus,Cerebellum_Mass.g,0.0726599416786038,HerculanoHouzel_etal_2020_TABLE2
 Triaenops persicus,Cerebellum_N.n,59651487,HerculanoHouzel_etal_2020_TABLE2

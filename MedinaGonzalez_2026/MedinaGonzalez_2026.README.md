@@ -1,7 +1,7 @@
 # Medina-González 2026 — joint angular excursion in terrestrial mammals
 
 Source folder for a broad-coverage **locomotion / gait** source feeding `__merging_behaviour`
-(candidate #7 in `SCOUTING_candidate_papers_20260731.md`; kept per curator, 2026-07-31). The
+(candidate #7 in `SCOUTING_AND_SCOPING.md`; kept per curator, 2026-07-31). The
 widest-coverage locomotion source scouted — extends gait/locomotion far beyond the current
 primate-leaning set (Wimberly, Granatosky).
 

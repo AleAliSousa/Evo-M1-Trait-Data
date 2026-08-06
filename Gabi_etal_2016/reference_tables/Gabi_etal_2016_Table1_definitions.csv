@@ -1,8 +1,0 @@
-Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
-Species,species (harmonised binomial),,,,info,Primates (incl. human),Gabi_etal_2016_Table1,,
-Species_Gabi2016,species name as printed in the paper,,,,info,Primates (incl. human),Gabi_etal_2016_Table1,,
-Prefrontal neurons,prefrontal (frontal) cortex neuron number,PrefrontalCortex,N.n,,primary,Primates (incl. human),Gabi_etal_2016_Table1,TODO confirm grey/white split from table,isotropic fractionator (HH lab)
-Prefrontal other cells,prefrontal cortex non-neuronal cell number,PrefrontalCortex,O.n,,primary,Primates (incl. human),Gabi_etal_2016_Table1,TODO,
-Rest-of-cortex neurons,non-prefrontal cortex neuron number,RestOfCortex,N.n,,primary,Primates (incl. human),Gabi_etal_2016_Table1,prefrontal + rest reconcile to whole cortex,
-Rest-of-cortex other cells,non-prefrontal cortex non-neuronal cell number,RestOfCortex,O.n,,primary,Primates (incl. human),Gabi_etal_2016_Table1,,
-Method:region,"regional cortical counts — kept SEPARATE from whole-cortex CerebralCortex_N.n, never pooled (see HH_coverage_gaps_scaffold.md)",,,,method,Primates (incl. human),Gabi_etal_2016_Table1,,

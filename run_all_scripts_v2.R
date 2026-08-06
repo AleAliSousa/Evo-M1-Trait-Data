@@ -42,8 +42,7 @@ TIMEOUT_SEC <- 300
 SKIP_PATTERNS <- c(
   "(^|/)run_all_scripts"        = "this runner",
   "(^|/)safely_guard_setwd"     = "sourced helper, not a standalone script",
-  "(^|/)deploy_shiny\\.R$"      = "publishes to shinyapps.io (rsconnect::deployApp)",
-  "(^|/)update_shinyapp\\.R$"   = "publishes to shinyapps.io",
+  "(^|/)update_shinyapp\\.R$"   = "publishes to shinyapps.io (rsconnect::deployApp)",
   "^__ShinyApp/app\\.R$"        = "ends in shinyApp(); blocks forever under Rscript",
   "(^|/)__edit_all_directories\\.R$" = "mass find/replace + rename utility; run deliberately, not in a sweep"
 )

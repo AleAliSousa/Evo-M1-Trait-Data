@@ -5,9 +5,10 @@ collection against what is already ingested. Generated 2026-07-31.
 
 **Headline:** the collection is essentially complete. The numbered *J. Hirnforsch.* series
 **"Comparison of brain structure volumes in Insectivora and Primates" is fully present at
-I–IX** (there is no Part X). Only one clearly in-scope paper is missing (Matano & Ohta
-1999); everything else is either a scope decision (bats) or superseded by tables already
-held.
+I–IX** (there is no Part X). The genuine in-scope gaps are two **Matano cerebellar-complex
+primaries** — 1986 (vestibular) and 1992 (inferior olive); everything else is either a
+scope decision (bats) or superseded/secondary. (Matano & Ohta 1999 is a secondary re-report
+of already-published data — do **not** ingest; see §1.)
 
 ---
 
@@ -36,15 +37,29 @@ and downstream re-reporting papers (`deSousa_etal_2010`/`2013`, `MacLeod_etal_20
 
 ## Candidate additions (where to put each)
 
-### 1. Matano & Ohta (1999) — RECOMMENDED, in scope
-- **Landing folder:** `Matano_etal_1999/` (scaffolded — README + definitions stub + comparison/ ready).
-- *Volumetric comparisons on some nuclei in the cerebellar complex of prosimians.*
-  Am. J. Primatol. 48(1):31–45. DOI `10.1002/(SICI)1098-2345(1999)48:1<31::AID-AJP3>3.0.CO;2-Y`.
-  PMID 10326769.
-- Direct prosimian extension of the Matano cerebellar series already ingested; same
-  collection, same measurement suite (MCN, ICN, LCN, ventral pons, inferior olive
-  principal + accessory, vestibular complex). Slots straight into `__merging_volumes`.
-- See `Matano_etal_1999/Matano_etal_1999_Table1.README.md` for the ingest checklist.
+### 1. Matano cerebellar-complex primaries — the two the repo is MISSING
+The Matano cerebellar-complex dataset was published as a set of **primary** papers on the
+Stephan collection. Two are already ingested; two are not:
+
+| Paper | Structure | Citation | In repo? |
+|---|---|---|---|
+| Matano, Stephan & Baron 1985 | ventral pons | Folia Primatol. 44:171–181 | ✅ `Matano_etal_1985_b` |
+| Matano, Baron, Stephan & Frahm 1985 | cerebellar nuclei (MCN/ICN/LCN) | Folia Primatol. 44:182–203 | ✅ `Matano_etal_1985_a` |
+| **Matano 1986** | vestibular complex *(title needs confirmation)* | Folia Primatol. 47:189–203 | ❌ **missing** |
+| **Matano 1992** | inferior olivary nuclei | J. Anthropol. Soc. Nippon 100(1):69–82 | ❌ **missing** |
+
+The two missing primaries (1986 vestibular, 1992 inferior olive) are the genuine gaps —
+they are the primary source for those structures. Before ingesting, verify each structure
+isn't already covered by another primary (vestibular also appears in `Baron_etal_1988` and
+`Stephan_etal_1981`) — check for specimen overlap / double-counting.
+
+> **Matano & Ohta (1999)** *Volumetric comparisons on some nuclei in the cerebellar complex
+> of prosimians* (Am. J. Primatol. 48(1):31–45, DOI
+> `10.1002/(SICI)1098-2345(1999)48:1<31::AID-AJP3>3.0.CO;2-Y`, PMID 10326769) is a
+> **SECONDARY re-report — DO NOT ingest.** Per the authors, its raw data were already
+> reported in the four primaries above (1985a, 1985b, 1986, 1992), so ingesting it would
+> double-count. The scaffold that briefly existed at `Matano_etal_1999/` was removed for
+> this reason.
 
 ### 2. Baron, Stephan & Frahm (1996), *Comparative Neurobiology in Chiroptera* — SCOPE DECISION
 - **Landing folder:** `Baron_etal_1996_Chiroptera/` (parked; README explains prerequisites).

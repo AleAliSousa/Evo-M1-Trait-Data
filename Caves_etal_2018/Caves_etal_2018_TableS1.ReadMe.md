@@ -48,6 +48,9 @@
 - Citation ranges printed with an en-dash (e.g. `[30–32]`) are preserved verbatim in the snapshot; if downstream code needs to enumerate the individual references, expand these in the analysis script.
 - Some species names may need updating for NCBI taxonomic consistency (e.g. `Parus carolinensis` is now `Poecile carolinensis`). Species-name standardisation is deferred to a repo-level step, not this table.
 
-## To do before final submission
+## Public export
 
-- Add a row for this table to `__ReadMe.xlsx` (`Item name = Caves_etal_2018_TableS1`; `Item encoded = <DOI-encoded code>`) so the R script can write the public TSV.
+The public TSV `__Public/comparative-data/10.1016%2Fj.tree.2018.03.001_TableS1.tsv`
+is present (DOI-encoded name `10.1016%2Fj.tree.2018.03.001_TableS1`).
+
+- **Maintainer follow-up:** add the matching row to `__ReadMe.xlsx` (`Item name = Caves_etal_2018_TableS1`; `Item encoded = 10.1016%2Fj.tree.2018.03.001_TableS1`) so a future re-run of `Caves_etal_2018_TableS1.R` regenerates the TSV in place instead of warning and skipping.

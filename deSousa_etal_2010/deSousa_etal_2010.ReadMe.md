@@ -25,6 +25,25 @@ snapshot pipeline:
 et al (1981, 1988). Hominoid and M. fascicularis mean values were obtained for this study (see Table 1
 and text for further details)."*
 
+### Supp. Table 2's V1 and LGN are 2 × the LEFT hemisphere (not an error — an author-side estimate)
+
+Everything in this paper was measured on the left side; the hominoid V1 and LGN means in Supp. Table 2
+are the **doubled** figures. Methods, verbatim:
+
+> "In all statistical analyses, left V1 and left LGN volumes were doubled to estimate the total (left
+> plus right hemisphere) volumes of V1 and LGN for each specimen because the volumes of V1 (Amunts et
+> al., 2007a) and LGN (H. Frahm, unpublished observation) apparently do not exhibit major asymmetries."
+
+Checked: Supp. Table 2 V1 = 2 × mean(Table 1 left V1) exactly — Homo 15.2 = 2×7.63, *Pan paniscus*
+11.6 = 2×5.8, *Gorilla* 9.1 = 2×4.55, *Hylobates lar* 4.1 = 2×2.05. The same doubled LGN values are
+carried into **de Sousa et al. 2013 Table 1**, which does not restate the convention.
+
+This is **provenance, kept separate from the error flags above.** The published errors in this table
+(the prosimian neocortex values, the misspelt binomials) are mistakes and are corrected in the dataset;
+the doubling is a deliberate, argued estimator and the values are used exactly as published. It is
+registered in `../__merging_volumes/laterality_known.csv` as `doubling = by_source` and surfaces as
+`published_bilateral_estimate` in `volumes_flags.csv` — never as an `action = skip` veto.
+
 ### Error in the published table (flagged in `__ReadMe.xlsx`)
 - **Value error (neocortex).** The **Neocortex ("Neo. vol.") values for the 17 strepsirrhine + tarsier
   (prosimian) species** were mis-copied from Stephan et al. (1981, 1988). **13 of the 17 exceed the

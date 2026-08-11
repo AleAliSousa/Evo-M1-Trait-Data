@@ -31,7 +31,8 @@ short forms; Young the correct ones), and Young's two *Papio* homotypic-synonym 
 
 | Reference | n_cortical_areas | n_visual | n_somatomotor | surface mm² | role |
 |---|---|---|---|---|---|
-| `Changizi__2001_Figure3` | ✓ (`n_areas`) | | | | primary |
+| `Changizi__2001_Figure3` | ✓ (`n_areas`) | | | | primary⁵ |
+| `Changizi_Shimojo_2005_Table1` | ✓ (`areas_shown`) | | | | primary⁵ |
 | `Finlay_etal_2006_Table6.1` | ✓ (`total_areas`) | ✓ | ✓ | ✓ (`cortical_area_mm2`) | primary¹ |
 | `Collins_etal_2010_DatasetS1` | | | | ✓ (per-hemisphere, from paper) | primary |
 | `Young_etal_2013_Table1` | | | | ✓ **regional (M1 only)** → `M1_Surface_Area.mm2` | primary³ |
@@ -92,6 +93,25 @@ One row per (Species × trait × source) in `_long`. In `_wide`, values from **i
 averaged; large disagreements are **flagged, not silently pooled**. Note: Changizi and Finlay count
 "areas" very differently (e.g. cat 23 vs 30; macaque 28 vs 54), so `n_cortical_areas` conflicts are
 expected and surfaced by `conflict_flag` — a curator decides, they are not auto-reconciled.
+
+⁵ **Changizi lineage supersede.** Changizi & Shimojo 2005 (`areas_shown`) is the same author's revised
+count and **supersedes** Changizi 2001 (`n_areas`) for shared species (11): the 2001 row stays in
+`_long` with `status = superseded_by_Changizi_Shimojo_2005` but is **excluded from `_wide`**. Only
+Changizi 2001's species that C&S 2005 lacks (**Homo sapiens**) stay active from 2001. C&S 2005 also
+adds new species (*Mus musculus, Rattus norvegicus, Tupaia belangeri, Ornithorhynchus anatinus,
+Macroderma gigas, Mustela putorius furo, Soricidae sp.*). Finlay (a different author) is **not**
+superseded — its counts remain independent contributors, so Changizi-vs-Finlay conflicts persist.
+C&S 2005's `n_areas_extrapolated` (modeled), Table 2 `n_areas_reported` (≤5 primary areas), the per-area
+% of neocortex, brain mass/EQ, and the connectivity Tables 3–5 (different measure class) are **not**
+merged here. `_long` carries a `status` column (active / superseded_*).
+
+### Species-name audit (C&S 2005 confirms Changizi 2001)
+Because C&S 2005 prints explicit binomials for the same author's animals, it was used to audit the
+common-name→binomial guesses in `Changizi__2001/common_name_to_species.csv` (see its `CS2005_check`
+column). 10 confirmed; **1 corrected**: Changizi 2001 "hedgehog" was *Erinaceus europaeus* (a
+Finlay-based guess) → **`Atelerix albiventris`** (C&S 2005 Table 1, Krubitzer et al. 1995, brain 3.273 g).
+Finlay 2006's hedgehog remains *Erinaceus europaeus* — a genuinely different species, so the two are
+now kept apart in the merge.
 
 ## Definitions
 `cortical_areas_definitions.csv` documents every standardized term with its **measurement basis**

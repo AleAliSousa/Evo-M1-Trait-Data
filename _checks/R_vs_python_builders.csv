@@ -1,0 +1,9 @@
+folder,python,r_twin,r_sweep_status,verdict,files,detail
+__merging_body_ecology,build_body_ecology_merge.py,body_ecology_compiled.R,SUCCESS,PY_ABSENT,,already removed from the working tree
+__merging_brain_mass,build_brain_mass_merge.py,brain_mass_compiled.R,FAILED,PY_ABSENT,,already removed from the working tree
+__merging_cerebral_metabolic_rate,build_cerebral_metabolic_rate_merge.py,cerebral_metabolic_rate_compiled.R,SUCCESS,PY_ABSENT,,already removed from the working tree
+__merging_fossil_brain_glucose,build_fossil_brain_glucose_merge.py,fossil_brain_glucose_compiled.R,SUCCESS,PY_ABSENT,,already removed from the working tree
+__merging_sleep,build_sleep_merge.py,sleep_compiled.R,SUCCESS,PY_ABSENT,,already removed from the working tree
+__merging_volumes,_verify_volumes_compiled_select.py,volumes_compiled_select.R,SUCCESS,PY_ABSENT,,already removed from the working tree
+__merging_volumes,_verify_species_dtype.py,volumes_compiled.R,SUCCESS,PY_ABSENT,,diagnostic print-only port of volumes_compiled.R steps 1-3; already removed from the working tree
+__ShinyApp,build_data.py,build_data.R,SUCCESS,PY_ABSENT,,5-line stub whose own text says DEPRECATED - replaced by build_data.R; already removed from the working tree

@@ -1,13 +1,13 @@
-Reference,common_name,Species,basis,note
-Changizi__2001_Figure3,star-nosed mole,Condylura cristata,research_model,Only star-nosed mole in the cortical-mapping literature is Condylura cristata (Catania & Kaas 1995). Present in _keys/species_reference.csv.
-Changizi__2001_Figure3,hedgehog,Erinaceus europaeus,collection_match,Matches Finlay et al. 2006 Table 6.1 (same Kaas/Krubitzer mapping source). In _keys/species_reference.csv.
-Changizi__2001_Figure3,tenrec,Echinops telfairi,collection_match,Stated verbatim in Changizi 2001 text ("the tenrec (Echinops telfairi)"); matches Finlay 2006. In _keys/species_reference.csv.
-Changizi__2001_Figure3,echidna,Tachyglossus aculeatus,research_model,Monotreme cortical map is the short-beaked echidna (Krubitzer Manger Pettigrew & Calford 1995). NOT yet in _keys/species_reference.csv (table is not in a merge).
-Changizi__2001_Figure3,opossum,Didelphis marsupialis,collection_match,Matches Finlay 2006 ("North American Opossum"). In _keys/species_reference.csv. NB mapping studies sometimes used Didelphis virginiana; kept marsupialis for repo consistency.
-Changizi__2001_Figure3,quoll,Dasyurus hallucatus,collection_match,Matches Finlay 2006 ("Northern Quoll"). Northern quoll is the mapped species.
-Changizi__2001_Figure3,squirrel,Sciurus carolinensis,research_model,Changizi cites Krubitzer (1995) whose squirrel is Sciurus carolinensis. In _keys/species_reference.csv. Finlay 2006 left this as "Squirrel sp.".
-Changizi__2001_Figure3,marmoset,Callithrix jacchus,collection_match,Matches Finlay 2006. In _keys/species_reference.csv.
-Changizi__2001_Figure3,cat,Felis catus,collection_match,Matches Finlay 2006 (domestic cat). In _keys/species_reference.csv.
-Changizi__2001_Figure3,owl monkey,Aotus trivirgatus,collection_match,Matches Finlay 2006. In _keys/species_reference.csv.
-Changizi__2001_Figure3,macaque,Macaca mulatta,collection_match,Finlay 2006 labels this animal "Rhesus Macaque" (= Macaca mulatta). In _keys/species_reference.csv.
-Changizi__2001_Figure3,human,Homo sapiens,research_model,Only human; area count (50) chosen "somewhat arbitrarily" per Fig. 3 caption. In _keys/species_reference.csv.
+Reference,common_name,Species,basis,note,CS2005_check
+Changizi__2001_Figure3,star-nosed mole,Condylura cristata,research_model,Only star-nosed mole in the cortical-mapping literature is Condylura cristata (Catania & Kaas 1995). Present in _keys/species_reference.csv.,confirmed (C&S 2005 Table1 = Condylura cristata)
+Changizi__2001_Figure3,hedgehog,Atelerix albiventris,author_followup,"CORRECTED 2026: Changizi & Shimojo 2005 Table 1 (SAME author) lists the hedgehog as Atelerix albiventris (Krubitzer et al. 1995), brain 3.273 g ~ Changizi 2001's 3388 mm3. Supersedes the earlier Finlay-based Erinaceus europaeus guess. NB Finlay 2006's hedgehog IS Erinaceus europaeus — a DIFFERENT species; do not merge the two.",corrected: Erinaceus europaeus -> Atelerix albiventris
+Changizi__2001_Figure3,tenrec,Echinops telfairi,collection_match,Stated verbatim in Changizi 2001 text ("the tenrec (Echinops telfairi)"); matches Finlay 2006. In _keys/species_reference.csv.,confirmed (C&S 2005 Table1 = Echinops telfairi)
+Changizi__2001_Figure3,echidna,Tachyglossus aculeatus,research_model,Monotreme cortical map is the short-beaked echidna (Krubitzer Manger Pettigrew & Calford 1995). NOT yet in _keys/species_reference.csv (table is not in a merge).,confirmed (C&S 2005 Table1 = Tachyglossus aculeatus)
+Changizi__2001_Figure3,opossum,Didelphis marsupialis,collection_match,Matches Finlay 2006 ("North American Opossum"). In _keys/species_reference.csv. NB mapping studies sometimes used Didelphis virginiana; kept marsupialis for repo consistency.,confirmed (C&S 2005 Table1 = Didelphis marsupialis)
+Changizi__2001_Figure3,quoll,Dasyurus hallucatus,collection_match,Matches Finlay 2006 ("Northern Quoll"). Northern quoll is the mapped species.,confirmed (C&S 2005 Table1 = Dasyurus hallucatus)
+Changizi__2001_Figure3,squirrel,Sciurus carolinensis,research_model,Changizi cites Krubitzer (1995) whose squirrel is Sciurus carolinensis. In _keys/species_reference.csv. Finlay 2006 left this as "Squirrel sp.".,confirmed (C&S 2005 Table1 = Sciurus carolinensis)
+Changizi__2001_Figure3,marmoset,Callithrix jacchus,collection_match,Matches Finlay 2006. In _keys/species_reference.csv.,confirmed (C&S 2005 Table1 = Callithrix jacchus)
+Changizi__2001_Figure3,cat,Felis catus,collection_match,Matches Finlay 2006 (domestic cat). In _keys/species_reference.csv.,confirmed (C&S 2005 Table1 = Felis catus)
+Changizi__2001_Figure3,owl monkey,Aotus trivirgatus,collection_match,Matches Finlay 2006. In _keys/species_reference.csv.,confirmed (C&S 2005 Table1 = Aotus trivirgatus)
+Changizi__2001_Figure3,macaque,Macaca mulatta,collection_match,Finlay 2006 labels this animal "Rhesus Macaque" (= Macaca mulatta). In _keys/species_reference.csv.,confirmed (C&S 2005 Table1 = Macaca mulatta)
+Changizi__2001_Figure3,human,Homo sapiens,research_model,Only human; area count (50) chosen "somewhat arbitrarily" per Fig. 3 caption. In _keys/species_reference.csv.,not in C&S 2005 (unambiguous)

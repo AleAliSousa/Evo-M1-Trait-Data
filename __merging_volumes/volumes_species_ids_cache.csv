@@ -13,7 +13,7 @@ Ashwell__2020_SupplementaryTable,Bassariscus astutus,NA,55047,Bassariscus astutu
 Ashwell__2020_SupplementaryTable,Bettongia gaimardi,NA,223568,Bettongia gaimardi,Bettongia gaimardi,NCBI
 Ashwell__2020_SupplementaryTable,Bos taurus indicus,NA,9915,Bos indicus,Bos indicus,NCBI
 Ashwell__2020_SupplementaryTable,Burramys parvus,NA,38600,Burramys parvus,Burramys parvus,NCBI
-Ashwell__2020_SupplementaryTable,Callicebus moloch,NA,9523,Plecturocebus moloch,Plecturocebus moloch,NCBI
+Ashwell__2020_SupplementaryTable,Callicebus moloch,Callicebus moloch,9523,Plecturocebus moloch,Callicebus moloch,curated
 Ashwell__2020_SupplementaryTable,Callithrix jacchus,NA,9483,Callithrix jacchus,Callithrix jacchus,NCBI
 Ashwell__2020_SupplementaryTable,Caluromys derbianus,NA,992409,Caluromys derbianus,Caluromys derbianus,NCBI
 Ashwell__2020_SupplementaryTable,Canis familiaris,Canis lupus familiaris,9615,Canis lupus familiaris,Canis lupus familiaris,curated
@@ -163,8 +163,8 @@ Baron_etal_1983_Table1,Alouatta spp.,Alouatta seniculus,NA,NA,Alouatta seniculus
 Baron_etal_1983_Table1,Aotus trivirgatus,NA,9505,Aotus trivirgatus,Aotus trivirgatus,NCBI
 Baron_etal_1983_Table1,Ateles geoffroyi,NA,9509,Ateles geoffroyi,Ateles geoffroyi,NCBI
 Baron_etal_1983_Table1,Avahi laniger laniger,Avahi laniger,NA,NA,Avahi laniger,curated
-Baron_etal_1983_Table1,Avahi laniger occidentalis,NA,NA,NA,Avahi laniger occidentalis,unresolved_raw
-Baron_etal_1983_Table1,Callicebus moloch,NA,9523,Plecturocebus moloch,Plecturocebus moloch,NCBI
+Baron_etal_1983_Table1,Avahi laniger occidentalis,Avahi occidentalis,NA,NA,Avahi occidentalis,curated
+Baron_etal_1983_Table1,Callicebus moloch,Callicebus moloch,9523,Plecturocebus moloch,Callicebus moloch,curated
 Baron_etal_1983_Table1,Callimico goeldii,NA,9495,Callimico goeldii,Callimico goeldii,NCBI
 Baron_etal_1983_Table1,Callithrix jacchus,NA,9483,Callithrix jacchus,Callithrix jacchus,NCBI
 Baron_etal_1983_Table1,Cebuella pygmaea,Callithrix pygmaea,9493,Cebuella pygmaea,Callithrix pygmaea,curated
@@ -238,10 +238,10 @@ Baron_etal_1983_Table1,Varecia variegata,NA,9455,Varecia variegata,Varecia varie
 Baron_etal_1987_Table1,Alouatta seniculus,NA,9503,Alouatta seniculus,Alouatta seniculus,NCBI
 Baron_etal_1987_Table1,Aotus trivirgatus,NA,9505,Aotus trivirgatus,Aotus trivirgatus,NCBI
 Baron_etal_1987_Table1,Ateles geoffroyi,NA,9509,Ateles geoffroyi,Ateles geoffroyi,NCBI
-Baron_etal_1987_Table1,Avahi laniger laniger,NA,NA,NA,Avahi laniger laniger,unresolved_raw
-Baron_etal_1987_Table1,Avahi laniger occidentalis,NA,NA,NA,Avahi laniger occidentalis,unresolved_raw
+Baron_etal_1987_Table1,Avahi laniger laniger,Avahi laniger,NA,NA,Avahi laniger,curated
+Baron_etal_1987_Table1,Avahi laniger occidentalis,Avahi occidentalis,NA,NA,Avahi occidentalis,curated
 Baron_etal_1987_Table1,Blarina brevicauda,NA,9387,Blarina brevicauda,Blarina brevicauda,NCBI
-Baron_etal_1987_Table1,Callicebus moloch,NA,9523,Plecturocebus moloch,Plecturocebus moloch,NCBI
+Baron_etal_1987_Table1,Callicebus moloch,Callicebus moloch,9523,Plecturocebus moloch,Callicebus moloch,curated
 Baron_etal_1987_Table1,Callimico goeldii,NA,9495,Callimico goeldii,Callimico goeldii,NCBI
 Baron_etal_1987_Table1,Callithrix jacchus,NA,9483,Callithrix jacchus,Callithrix jacchus,NCBI
 Baron_etal_1987_Table1,Cebuella pygmaea,Callithrix pygmaea,9493,Cebuella pygmaea,Callithrix pygmaea,curated
@@ -330,7 +330,7 @@ Baron_etal_1988_Table1,Ateles geoffroyi,NA,9509,Ateles geoffroyi,Ateles geoffroy
 Baron_etal_1988_Table1,Avahi laniger laniger,Avahi laniger,NA,NA,Avahi laniger,curated
 Baron_etal_1988_Table1,Avahi laniger occidentalis,Avahi occidentalis,NA,NA,Avahi occidentalis,curated
 Baron_etal_1988_Table1,Blarina brevicauda,NA,9387,Blarina brevicauda,Blarina brevicauda,NCBI
-Baron_etal_1988_Table1,Callicebus moloch,NA,9523,Plecturocebus moloch,Plecturocebus moloch,NCBI
+Baron_etal_1988_Table1,Callicebus moloch,Callicebus moloch,9523,Plecturocebus moloch,Callicebus moloch,curated
 Baron_etal_1988_Table1,Callimico goeldii,NA,9495,Callimico goeldii,Callimico goeldii,NCBI
 Baron_etal_1988_Table1,Callithrix jacchus,NA,9483,Callithrix jacchus,Callithrix jacchus,NCBI
 Baron_etal_1988_Table1,Cebuella pygmaea,Callithrix pygmaea,9493,Cebuella pygmaea,Callithrix pygmaea,curated
@@ -407,7 +407,7 @@ Baron_etal_1990_Table1,Ateles geoffroyi,NA,9509,Ateles geoffroyi,Ateles geoffroy
 Baron_etal_1990_Table1,Avahi laniger laniger,Avahi laniger,NA,NA,Avahi laniger,curated
 Baron_etal_1990_Table1,Avahi laniger occidentalis,Avahi occidentalis,NA,NA,Avahi occidentalis,curated
 Baron_etal_1990_Table1,Blarina brevicauda,NA,9387,Blarina brevicauda,Blarina brevicauda,NCBI
-Baron_etal_1990_Table1,Callicebus moloch,NA,9523,Plecturocebus moloch,Plecturocebus moloch,NCBI
+Baron_etal_1990_Table1,Callicebus moloch,Callicebus moloch,9523,Plecturocebus moloch,Callicebus moloch,curated
 Baron_etal_1990_Table1,Callimico goeldii,NA,9495,Callimico goeldii,Callimico goeldii,NCBI
 Baron_etal_1990_Table1,Callithrix jacchus,NA,9483,Callithrix jacchus,Callithrix jacchus,NCBI
 Baron_etal_1990_Table1,Cebuella pygmaea,Callithrix pygmaea,9493,Cebuella pygmaea,Callithrix pygmaea,curated
@@ -560,7 +560,7 @@ Bush_Allman_2003_Table1,Zalophus californianus,NA,9704,Zalophus californianus,Za
 Bush_Allman_2004_a_Table2,Ailurus fulgens,NA,9649,Ailurus fulgens,Ailurus fulgens,NCBI
 Bush_Allman_2004_a_Table2,Alouatta palliata,NA,30589,Alouatta palliata,Alouatta palliata,NCBI
 Bush_Allman_2004_a_Table2,Aotus trivirgatus,NA,9505,Aotus trivirgatus,Aotus trivirgatus,NCBI
-Bush_Allman_2004_a_Table2,Applodontia rufa,NA,NA,NA,Applodontia rufa,unresolved_raw
+Bush_Allman_2004_a_Table2,Applodontia rufa,Aplodontia rufa,NA,NA,Aplodontia rufa,curated
 Bush_Allman_2004_a_Table2,Ateles sp.,NA,9511,Ateles sp.,Ateles sp.,NCBI
 Bush_Allman_2004_a_Table2,Callicebus sp.,NA,116962,Callicebus sp.,Callicebus sp.,NCBI
 Bush_Allman_2004_a_Table2,Canis latrans,NA,9614,Canis latrans,Canis latrans,NCBI
@@ -568,7 +568,7 @@ Bush_Allman_2004_a_Table2,Cercocebus torquatus,NA,9530,Cercocebus torquatus,Cerc
 Bush_Allman_2004_a_Table2,Cercopithecus nictitans,NA,36228,Cercopithecus nictitans,Cercopithecus nictitans,NCBI
 Bush_Allman_2004_a_Table2,Cheirogaleus medius,NA,9460,Cheirogaleus medius,Cheirogaleus medius,NCBI
 Bush_Allman_2004_a_Table2,Chinchilla laniger,NA,NA,NA,Chinchilla laniger,unresolved_raw
-Bush_Allman_2004_a_Table2,Choloepus didactylis,NA,NA,NA,Choloepus didactylis,unresolved_raw
+Bush_Allman_2004_a_Table2,Choloepus didactylis,Choloepus didactylus,NA,NA,Choloepus didactylus,curated
 Bush_Allman_2004_a_Table2,Crocuta crocuta,NA,9678,Crocuta crocuta,Crocuta crocuta,NCBI
 Bush_Allman_2004_a_Table2,Cynictis penicillata,NA,41010,Cynictis penicillata,Cynictis penicillata,NCBI
 Bush_Allman_2004_a_Table2,Daubentonia madagascariensis,NA,31869,Daubentonia madagascariensis,Daubentonia madagascariensis,NCBI
@@ -576,7 +576,7 @@ Bush_Allman_2004_a_Table2,Didelphis marsupialis,NA,9268,Didelphis marsupialis,Di
 Bush_Allman_2004_a_Table2,Equus burchelli,NA,NA,NA,Equus burchelli,unresolved_raw
 Bush_Allman_2004_a_Table2,Eulemur mongoz,NA,34828,Eulemur mongoz,Eulemur mongoz,NCBI
 Bush_Allman_2004_a_Table2,Galago senegalensis,NA,9465,Galago senegalensis,Galago senegalensis,NCBI
-Bush_Allman_2004_a_Table2,Galictis vitatus,NA,NA,NA,Galictis vitatus,unresolved_raw
+Bush_Allman_2004_a_Table2,Galictis vitatus,Galictis vittatus,NA,NA,Galictis vittatus,curated
 Bush_Allman_2004_a_Table2,Homo sapiens,NA,9606,Homo sapiens,Homo sapiens,NCBI
 Bush_Allman_2004_a_Table2,Hylobates lar,NA,9580,Hylobates lar,Hylobates lar,NCBI
 Bush_Allman_2004_a_Table2,Lemur catta,NA,9447,Lemur catta,Lemur catta,NCBI
@@ -586,7 +586,7 @@ Bush_Allman_2004_a_Table2,Mandrillus sphinx,NA,9561,Mandrillus sphinx,Mandrillus
 Bush_Allman_2004_a_Table2,Marmosa mitis,NA,NA,NA,Marmosa mitis,unresolved_raw
 Bush_Allman_2004_a_Table2,Microcebus murinus,NA,30608,Microcebus murinus,Microcebus murinus,NCBI
 Bush_Allman_2004_a_Table2,Mustela erminea,NA,36723,Mustela erminea,Mustela erminea,NCBI
-Bush_Allman_2004_a_Table2,Mustela putorius,NA,9668,Mustela putorius,Mustela putorius,NCBI
+Bush_Allman_2004_a_Table2,Mustela putorius furo,NA,9669,Mustela putorius furo,Mustela putorius furo,NCBI
 Bush_Allman_2004_a_Table2,Mustela vison,NA,452646,Neogale vison,Neogale vison,NCBI
 Bush_Allman_2004_a_Table2,Myoxus glis,NA,41261,Glis glis,Glis glis,NCBI
 Bush_Allman_2004_a_Table2,Myrmecophaga tridactyla,NA,71006,Myrmecophaga tridactyla,Myrmecophaga tridactyla,NCBI
@@ -638,7 +638,7 @@ Frahm_Zilles_1994_Table1,Aotus trivirgatus,NA,9505,Aotus trivirgatus,Aotus trivi
 Frahm_Zilles_1994_Table1,Ateles geoffroyi,NA,9509,Ateles geoffroyi,Ateles geoffroyi,NCBI
 Frahm_Zilles_1994_Table1,Avahi l. occidentalis,Avahi occidentalis,NA,NA,Avahi occidentalis,curated
 Frahm_Zilles_1994_Table1,Avahi laniger laniger,Avahi laniger,NA,NA,Avahi laniger,curated
-Frahm_Zilles_1994_Table1,Callicebus moloch,NA,9523,Plecturocebus moloch,Plecturocebus moloch,NCBI
+Frahm_Zilles_1994_Table1,Callicebus moloch,Callicebus moloch,9523,Plecturocebus moloch,Callicebus moloch,curated
 Frahm_Zilles_1994_Table1,Callimico goeldi,Callimico goeldii,NA,NA,Callimico goeldii,curated
 Frahm_Zilles_1994_Table1,Callithrix jacchus,NA,9483,Callithrix jacchus,Callithrix jacchus,NCBI
 Frahm_Zilles_1994_Table1,Cebuella pygmaea,Callithrix pygmaea,9493,Cebuella pygmaea,Callithrix pygmaea,curated
@@ -767,7 +767,7 @@ Frahm_etal_1997_Table1,Rattus norvegicus,NA,10116,Rattus norvegicus,Rattus norve
 Frahm_etal_1997_Table1,Spalax ehrenbergi,NA,30637,Nannospalax ehrenbergi,Nannospalax ehrenbergi,NCBI
 Frahm_etal_1998_Table1,Alouatta seniculus,NA,9503,Alouatta seniculus,Alouatta seniculus,NCBI
 Frahm_etal_1998_Table1,Aotus trivirgatus,NA,9505,Aotus trivirgatus,Aotus trivirgatus,NCBI
-Frahm_etal_1998_Table1,Callicebus moloch,NA,9523,Plecturocebus moloch,Plecturocebus moloch,NCBI
+Frahm_etal_1998_Table1,Callicebus moloch,Callicebus moloch,9523,Plecturocebus moloch,Callicebus moloch,curated
 Frahm_etal_1998_Table1,Callimico goeldii,NA,9495,Callimico goeldii,Callimico goeldii,NCBI
 Frahm_etal_1998_Table1,Callithrix jacchus,NA,9483,Callithrix jacchus,Callithrix jacchus,NCBI
 Frahm_etal_1998_Table1,Cebuella pygmaea,Callithrix pygmaea,9493,Cebuella pygmaea,Callithrix pygmaea,curated
@@ -824,7 +824,7 @@ Matano_etal_1985_a_Table1,Aotus trivirgatus,NA,9505,Aotus trivirgatus,Aotus triv
 Matano_etal_1985_a_Table1,Ateles geoffroyi,NA,9509,Ateles geoffroyi,Ateles geoffroyi,NCBI
 Matano_etal_1985_a_Table1,Avahi l. laniger,Avahi laniger,NA,NA,Avahi laniger,curated
 Matano_etal_1985_a_Table1,Avahi l. occidentalis,Avahi occidentalis,NA,NA,Avahi occidentalis,curated
-Matano_etal_1985_a_Table1,Callicebus moloch,NA,9523,Plecturocebus moloch,Plecturocebus moloch,NCBI
+Matano_etal_1985_a_Table1,Callicebus moloch,Callicebus moloch,9523,Plecturocebus moloch,Callicebus moloch,curated
 Matano_etal_1985_a_Table1,Callithrix jacchus,NA,9483,Callithrix jacchus,Callithrix jacchus,NCBI
 Matano_etal_1985_a_Table1,Cebuella pygmaea,Callithrix pygmaea,9493,Cebuella pygmaea,Callithrix pygmaea,curated
 Matano_etal_1985_a_Table1,Cebus albifrons,NA,9514,Cebus albifrons,Cebus albifrons,NCBI
@@ -880,7 +880,7 @@ Matano_etal_1985_b_Table1,Aotus trivirgatus,NA,9505,Aotus trivirgatus,Aotus triv
 Matano_etal_1985_b_Table1,Ateles geoffroyi,NA,9509,Ateles geoffroyi,Ateles geoffroyi,NCBI
 Matano_etal_1985_b_Table1,Avahi l. occidentalis,Avahi occidentalis,NA,NA,Avahi occidentalis,curated
 Matano_etal_1985_b_Table1,Avahi laniger laniger,Avahi laniger,NA,NA,Avahi laniger,curated
-Matano_etal_1985_b_Table1,Callicebus moloch,NA,9523,Plecturocebus moloch,Plecturocebus moloch,NCBI
+Matano_etal_1985_b_Table1,Callicebus moloch,Callicebus moloch,9523,Plecturocebus moloch,Callicebus moloch,curated
 Matano_etal_1985_b_Table1,Callithrix jacchus,NA,9483,Callithrix jacchus,Callithrix jacchus,NCBI
 Matano_etal_1985_b_Table1,Cebuella pygmaea,Callithrix pygmaea,9493,Cebuella pygmaea,Callithrix pygmaea,curated
 Matano_etal_1985_b_Table1,Cebus albifrons,NA,9514,Cebus albifrons,Cebus albifrons,NCBI
@@ -1519,7 +1519,7 @@ Stephan_etal_1982_Table1,Aotus trivirgatus,NA,9505,Aotus trivirgatus,Aotus trivi
 Stephan_etal_1982_Table1,Ateles geoffroyi,NA,9509,Ateles geoffroyi,Ateles geoffroyi,NCBI
 Stephan_etal_1982_Table1,Avahi laniger lan.,Avahi laniger,NA,NA,Avahi laniger,curated
 Stephan_etal_1982_Table1,Avahi laniger occ.,Avahi occidentalis,NA,NA,Avahi occidentalis,curated
-Stephan_etal_1982_Table1,Callicebus moloch,NA,9523,Plecturocebus moloch,Plecturocebus moloch,NCBI
+Stephan_etal_1982_Table1,Callicebus moloch,Callicebus moloch,9523,Plecturocebus moloch,Callicebus moloch,curated
 Stephan_etal_1982_Table1,Callimico goeldii,NA,9495,Callimico goeldii,Callimico goeldii,NCBI
 Stephan_etal_1982_Table1,Callithrix jacchus,NA,9483,Callithrix jacchus,Callithrix jacchus,NCBI
 Stephan_etal_1982_Table1,Cebuella pygmaea,Callithrix pygmaea,9493,Cebuella pygmaea,Callithrix pygmaea,curated
@@ -1581,7 +1581,7 @@ Stephan_etal_1984_Table1,Aotus trivirgatus,NA,9505,Aotus trivirgatus,Aotus trivi
 Stephan_etal_1984_Table1,Ateles geoffroyi,NA,9509,Ateles geoffroyi,Ateles geoffroyi,NCBI
 Stephan_etal_1984_Table1,Avahi l. laniger,Avahi laniger,NA,NA,Avahi laniger,curated
 Stephan_etal_1984_Table1,Avahi l. occidentalis,Avahi occidentalis,NA,NA,Avahi occidentalis,curated
-Stephan_etal_1984_Table1,Callicebus moloch,NA,9523,Plecturocebus moloch,Plecturocebus moloch,NCBI
+Stephan_etal_1984_Table1,Callicebus moloch,Callicebus moloch,9523,Plecturocebus moloch,Callicebus moloch,curated
 Stephan_etal_1984_Table1,Callithrix jacchus,NA,9483,Callithrix jacchus,Callithrix jacchus,NCBI
 Stephan_etal_1984_Table1,Cebus spp.,Cebus albifrons,NA,NA,Cebus albifrons,curated
 Stephan_etal_1984_Table1,Cercocebus albigena,Lophocebus albigena,75567,Lophocebus albigena,Lophocebus albigena,curated
@@ -1634,7 +1634,7 @@ Stephan_etal_1987_Table1,Ateles geoffroyi,NA,9509,Ateles geoffroyi,Ateles geoffr
 Stephan_etal_1987_Table1,Avahi l. laniger,Avahi laniger,NA,NA,Avahi laniger,curated
 Stephan_etal_1987_Table1,Avahi l. occidentalis,Avahi occidentalis,NA,NA,Avahi occidentalis,curated
 Stephan_etal_1987_Table1,Blarina brevicauda,NA,9387,Blarina brevicauda,Blarina brevicauda,NCBI
-Stephan_etal_1987_Table1,Callicebus moloch,NA,9523,Plecturocebus moloch,Plecturocebus moloch,NCBI
+Stephan_etal_1987_Table1,Callicebus moloch,Callicebus moloch,9523,Plecturocebus moloch,Callicebus moloch,curated
 Stephan_etal_1987_Table1,Callimico goeldii,NA,9495,Callimico goeldii,Callimico goeldii,NCBI
 Stephan_etal_1987_Table1,Callithrix jacchus,NA,9483,Callithrix jacchus,Callithrix jacchus,NCBI
 Stephan_etal_1987_Table1,Cebuella pygmaea,Callithrix pygmaea,9493,Cebuella pygmaea,Callithrix pygmaea,curated

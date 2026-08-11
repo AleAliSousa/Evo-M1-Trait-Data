@@ -92,7 +92,10 @@ for (path in files) {
   if (!any(grepl(brain_rx, norm(headers), perl = TRUE))) next
   col <- pick_column(headers); if (is.na(col)) next
   ci <- match(col, headers)
-  vals <- suppressWarnings(as.numeric(vapply(rows[-1], function(r) if (length(r)>=ci) gsub('"',"",r[ci]) else NA, character(1))))
+  # NA_character_, not NA: a short row (fewer fields than ci) returns the fallback, and a bare NA
+  # is logical, which makes vapply(FUN.VALUE = character(1)) abort with
+  # "values must be type 'character', but FUN(X[[1]]) result is type 'logical'".
+  vals <- suppressWarnings(as.numeric(vapply(rows[-1], function(r) if (length(r)>=ci) gsub('"',"",r[ci]) else NA_character_, character(1))))
   vals <- vals[!is.na(vals)]; if (!length(vals)) next
   mi <- man_by_file[[fn]]; author <- if (!is.null(mi)) manifest$first_author[mi] else ""; year <- if (!is.null(mi)) as.character(manifest$year[mi]) else ""
   targets[[length(targets)+1L]] <- list(fn=fn, rows=rows, headers=headers, col=col, ci=ci, author=author, year=year)

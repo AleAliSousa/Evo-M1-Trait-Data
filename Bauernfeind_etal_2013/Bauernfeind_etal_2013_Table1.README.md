@@ -30,6 +30,25 @@ One row per **individual** (43): `Species_Bauernfeind2013, Individual, Collectio
 - The CSV's `Pongo pygmaeus and Pongo abelii` row is reproduced as the **mean of the two Pongo species' means** (n = 4 individuals; *Pongo pygmaeus* "Sabtu" has no left hemisphere, so it contributes brain mass/volume but not insula volumes — matching the CSV exactly).
 - **Body mass is not audited** here: the CSV's body weights are a harmonised external value, not the per-individual Smith & Jungers (1997) estimates printed in Table 1.
 
+## Laterality — measured left, **undoubled by the authors**
+
+Bauernfeind did not double anything. *"Volumes of granular, dysgranular, and agranular insular
+cortices were estimated in the left hemispheres of all specimens"*; the right hemisphere is measured
+separately in Table 2. So both tables are `doubling = none` in
+`../__merging_volumes/laterality_known.csv`, and the `_L` / `_R` suffixes carry through to the
+standardized terms so a one-side value can never be averaged against a both-sides volume.
+
+Where a species has a left value but no right one, the ×2 is **this project's**, applied in step 7 of
+the merge and recorded as `estimated_bilateral_from_unilateral`. That is a **provenance** record in
+the generated `volumes_flags.csv`, not an `action = skip` veto in `volumes_select_value_flags.csv` —
+the estimate is added as a new both-sides variable and never overwrites or removes the measured side.
+
+Worth keeping distinct from the superficially similar de Sousa case: de Sousa 2010 Supp. Table 2 and
+de Sousa 2013 Table 1 publish figures that are *already* 2 × left, doubled by the authors with a
+stated symmetry argument (`doubling = by_source` → `published_bilateral_estimate`). Same arithmetic,
+different author, and only one of the two happens inside this repo. See README__merging.md
+"Hemispheres".
+
 ## Data note
 
-The species set is primate-only (5 hominoid + Old/New-World monkeys + strepsirrhines). FI (frontoinsular cortex, defined by von Economo neurons) is present only in great apes and humans; it is en-dash (NA) in monkeys and strepsirrhines, as printed.
+The species set is primate-only (5 hominoid + Old/New-World monkeys + strepsirrhines). FI (frontoinsular cortex, defined by von Economo neurons) is present only in great apes and humans; it is en-dash (NA) in monkeys and strepsirrhines, as printed. Footnote c marks the specimen whose left hemisphere was unavailable (*Pongo pygmaeus* "Sabtu"), which contributes brain mass/volume but no insula volumes.

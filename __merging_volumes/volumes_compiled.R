@@ -175,22 +175,82 @@ read_item <- function(it) {
 
 ## 2 Standardized terms + 3 reshape/convert -> long (Species, Variable, Value) per paper ----
 terms <- read.csv("standardized_term_volumes.csv", check.names = FALSE)
-# Laterality guard (suffix-only convention; see README__merging.md "Hemispheres"): every column
-# measured from one side only is registered in laterality_known.csv and MUST carry a laterality
-# suffix (_unilateral/_left/_right) in its standardized term, so a one-side value can never be
-# silently merged/averaged with a both-sides volume. Warns if the registry and term map disagree.
+# Laterality guard (see README__merging.md "Hemispheres"). laterality_known.csv records, for every
+# source column measured from ONE SIDE, which side it was and -- crucially -- WHO did any doubling:
+#
+#   doubling = none       the printed number is one side AS MEASURED. Its standardized term MUST
+#                         carry the laterality suffix (_unilateral/_left/_right) so a one-side value
+#                         can never be silently merged/averaged with a both-sides volume. If a
+#                         both-sides partner is wanted, THIS MERGE builds it in step 7 and records
+#                         `estimated_bilateral_from_unilateral`.
+#   doubling = by_source  the PUBLISHED number is already 2x one side -- the paper's authors doubled
+#                         it, with a stated symmetry argument (de Sousa 2010 V1/LGN; de Sousa 2013
+#                         LGN). It is a deliberate both-sides ESTIMATE, so its term must carry NO
+#                         laterality suffix, it is used exactly as published, and it must never be
+#                         doubled a second time. Recorded as `published_bilateral_estimate`.
+#
+# BOTH are PROVENANCE, never vetoes: neither ever drops a value. Vetoes are a different mechanism
+# entirely (volumes_select_value_flags.csv, action = skip).
 lat_known <- tryCatch(read.csv("laterality_known.csv", stringsAsFactors = FALSE),
                       error = function(e) NULL)
+lat_src_doubled <- data.frame(Reference = character(), Standardized_Term = character())
 if (!is.null(lat_known) && nrow(lat_known)) {
+  if (is.null(lat_known$doubling)) lat_known$doubling <- "none"      # pre-`doubling` registries
+  lat_known$doubling[is.na(lat_known$doubling) | !nzchar(lat_known$doubling)] <- "none"
+  bad_dbl <- setdiff(unique(lat_known$doubling), c("none", "by_source"))
+  if (length(bad_dbl))
+    stop("laterality_known.csv: unknown doubling value(s) ", paste(bad_dbl, collapse = ", "),
+         ". Use `none` (one side as measured) or `by_source` (published as 2x one side).",
+         call. = FALSE)
+  # Report only on the tables this merge actually reads, so the counts stay diagnostic.
+  lat_known <- lat_known[lat_known$Reference %in% papers$item, , drop = FALSE]
   chk <- merge(lat_known, terms, by = c("Reference", "Original_Term"), all.x = TRUE)
-  bad <- chk[is.na(chk$Standardized_Term) |
-               !mapply(function(s, suf) !is.na(s) && grepl(suf, s, fixed = TRUE),
-                       chk$Standardized_Term, chk$required_suffix), ]
+  unmapped <- chk[is.na(chk$Standardized_Term), ]
+  if (nrow(unmapped))
+    warning("Laterality guard: ", nrow(unmapped), " registered column(s) have no standardized term -> ",
+            paste(sprintf("%s:%s", unmapped$Reference, unmapped$Original_Term), collapse = "; "))
+  # doubling = none -> the suffix is REQUIRED
+  one <- chk[chk$doubling == "none" & !is.na(chk$Standardized_Term), ]
+  blank <- one[is.na(one$required_suffix) | !nzchar(one$required_suffix), ]
+  if (nrow(blank))                                   # a registry error, not a term-map error
+    warning("Laterality guard: ", nrow(blank), " row(s) have doubling=none but no required_suffix ",
+            "(a one-side column must declare its suffix; use doubling=by_source if the published ",
+            "value already represents both sides) -> ",
+            paste(sprintf("%s:%s", blank$Reference, blank$Original_Term), collapse = "; "))
+  one <- one[!(is.na(one$required_suffix) | !nzchar(one$required_suffix)), ]
+  # Anchored, so the suffix must sit immediately before _Vol.mm3 -- symmetric with the by_source
+  # test below, and it catches a suffix in the wrong position rather than anywhere in the string.
+  bad <- one[!mapply(function(s, suf) grepl(paste0(suf, "_Vol.mm3$"), s),
+                     one$Standardized_Term, one$required_suffix), , drop = FALSE]
   if (nrow(bad))
     warning("Laterality guard: ", nrow(bad), " one-side column(s) missing the required suffix -> ",
             paste(sprintf("%s:%s (want %s, got %s)", bad$Reference, bad$Original_Term,
                           bad$required_suffix, bad$Standardized_Term), collapse = "; "))
-  else message("Laterality guard OK: ", nrow(lat_known), " one-side column(s) correctly suffixed.")
+  # doubling = by_source -> the published value already represents both sides, so the suffix is FORBIDDEN
+  src <- chk[chk$doubling == "by_source" & !is.na(chk$Standardized_Term), ]
+  bad2 <- src[grepl("_(unilateral|left|right)_Vol\\.mm3$", src$Standardized_Term), ]
+  if (nrow(bad2))
+    warning("Laterality guard: ", nrow(bad2), " author-doubled column(s) carry a laterality suffix ",
+            "they should not (the published value already represents both sides) -> ",
+            paste(sprintf("%s:%s (%s)", bad2$Reference, bad2$Original_Term,
+                          bad2$Standardized_Term), collapse = "; "))
+  if (!nrow(bad) && !nrow(bad2) && !nrow(unmapped) && !nrow(blank))
+    message("Laterality guard OK: ", nrow(one), " one-side column(s) correctly suffixed, ",
+            nrow(src), " author-doubled column(s) correctly unsuffixed (of the tables this merge reads).")
+  lat_src_doubled <- unique(src[, c("Reference", "Standardized_Term")])  # stamped in step 7
+  # Step 7b stamps `published_bilateral_estimate` from `long` (every contributing source). That is
+  # sound for Tier-2, where teams are averaged so a contributor always contributes -- but NOT for
+  # Tier-1, where most-recent-wins can discard a source that would still get flagged. Enforce the
+  # assumption rather than leave it implicit.
+  .t1_doubled <- intersect(lat_src_doubled$Reference,
+                           papers$item[papers$team == "Stephan_collection"])
+  if (length(.t1_doubled))
+    stop("laterality_known.csv: `doubling = by_source` on Tier-1 (Stephan_collection) table(s) ",
+         paste(.t1_doubled, collapse = ", "), ". Step 7b stamps from `long`, so a Tier-1 source ",
+         "that loses the most-recent-wins pick would still be flagged. Stamp from `t1res` first.",
+         call. = FALSE)
+  # NOTE the registry is filtered to this merge's tables above, so rows for unselected sources are
+  # not validated here. Registry-wide validation lives in _checks/check_laterality_doubling.py.
 }
 # Species-name normaliser (used by the step-4 curated-override matcher).
 nrm <- function(x) tolower(trimws(gsub("\\s+"," ", gsub("[._]"," ", x))))
@@ -243,7 +303,7 @@ paper_long <- function(row) {
   if (it == "Bush_Allman_2004_a_Table2")                         # derive combined Neocortex (GM+WM) before the generic cm3->mm3 pass picks it up (term map: neocortex_GMWM_cm3 -> Neocortex_Vol.mm3)
     df <- df %>% mutate(neocortex_GMWM_cm3 = num(neocortex_grey_cm3) + num(neocortex_white_cm3),
                         across(ends_with("_cm3"), ~num(.x)*1000))  # whole brain, neocortex grey/white/combined
-  if (it == "deSousa_etal_2010_Table1")                          # per-specimen hominoid volumes: cm3 -> mm3 (per-specimen rows collapse to species mean in step 6). V1/LGN are LEFT-only (see laterality_known.csv); neocortex + whole-brain are both-hemisphere.
+  if (it == "deSousa_etal_2010_Table1")                          # per-specimen hominoid volumes: cm3 -> mm3 (per-specimen rows collapse to species mean in step 6). V1/LGN are LEFT-only and printed UNDOUBLED (laterality_known.csv, doubling = none); neocortex + whole-brain are both-hemisphere. The doubled 2x-left figures are the same paper's Supp. Table 2 (doubling = by_source), not merged here.
     df <- df %>% mutate(across(ends_with("_cm3"), ~num(.x)*1000))
   if (it == "Smaers_etal_2011_SupplementaryTable1") {            # per-individual frontal -> species means of COMBINED L+R (cm3->mm3)
     fix <- c("Cercopithecus ascianus"="Cercopithecus ascanius","Cercocebus albigena"="Lophocebus albigena",
@@ -528,6 +588,33 @@ flags <- bind_rows(flags,
   bilat %>% filter(est) %>%
     transmute(Species, Variable, flag = "estimated_bilateral_from_unilateral",
               detail = paste0("both-hemisphere estimated as 2x ", src, " (only one side measured)")))
+
+## Provenance for the OTHER kind of doubling: values whose PUBLISHED figure is already 2x one side.
+## Not a veto -- the value is used exactly as published; this only records that the both-sides
+## number is an author-side estimate rather than a both-sides measurement, so it is never doubled
+## again and so anyone comparing it to a truly bilateral measurement knows what they are holding.
+## NOTE this merge is multi-team, so a flagged cell is often a CROSS-TEAM MEAN in which the doubled
+## source is one contributor of several (e.g. Corpus_geniculatum_laterale for Homo = de Sousa 2013 +
+## Stephan_collection + Bush). The detail says which, so the flag never overclaims that the merged
+## number is itself 2x one hemisphere.
+if (nrow(lat_src_doubled)) {
+  flags <- bind_rows(flags,
+    long %>%
+      inner_join(lat_src_doubled, by = c("Source" = "Reference", "Variable" = "Standardized_Term")) %>%
+      distinct(Species, Variable, Source) %>%
+      group_by(Species, Variable) %>%                       # 2 refs can share one term -> one row
+      summarise(Source = paste(sort(unique(Source)), collapse = " + "), .groups = "drop") %>%
+      left_join(volumes_long %>% select(Species, Variable, Teams, n_teams),
+                by = c("Species", "Variable")) %>%
+      transmute(Species, Variable, flag = "published_bilateral_estimate",
+                detail = ifelse(
+                  coalesce(n_teams, 1L) > 1L,
+                  paste0("a contributing source publishes its figure as 2x one hemisphere, doubled ",
+                         "by the source (not by this merge): ", Source, "; the merged value is the ",
+                         "mean across ", n_teams, " teams (", Teams, ") -- see laterality_known.csv"),
+                  paste0("published value is 2x one hemisphere, doubled by the source (not by ",
+                         "this merge): ", Source, " -- see laterality_known.csv"))))
+}
 write_csv(flags, "volumes_flags.csv")
 
 volumes_wide <- volumes_long %>% pivot_wider(id_cols=Species, names_from=Variable, values_from=Value) %>% arrange(Species)

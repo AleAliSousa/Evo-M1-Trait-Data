@@ -255,14 +255,11 @@ Aplodontia rufa,Cerebellum_Vol.mm3,821,Ashwell,1
 Aplodontia rufa,Cerebellum_grey_matter_Vol.mm3,665,Bush,1
 Aplodontia rufa,Cerebellum_white_matter_Vol.mm3,131.5,Ashwell; Bush,2
 Aplodontia rufa,FlocculonodularLobe_Vol.mm3,16,Ashwell,1
+Aplodontia rufa,Neocortex_Vol.mm3,1860,Bush,1
 Aplodontia rufa,Neocortex_grey_matter_Vol.mm3,1480,Bush,1
-Aplodontia rufa,Neocortex_white_matter_Vol.mm3,376,Bush,1
+Aplodontia rufa,Neocortex_white_matter_Vol.mm3,378,Bush,1
 Aplodontia rufa,Pontine_and_reticulotegmental_nuclei_Vol.mm3,20.8,Ashwell,1
-Aplodontia rufa,Total_brain_net_volume_Vol.mm3,4373,Ashwell,1
-Applodontia rufa,Neocortex_Vol.mm3,1860,Bush,1
-Applodontia rufa,Neocortex_grey_matter_Vol.mm3,1480,Bush,1
-Applodontia rufa,Neocortex_white_matter_Vol.mm3,380,Bush,1
-Applodontia rufa,Total_brain_net_volume_Vol.mm3,5600,Bush,1
+Aplodontia rufa,Total_brain_net_volume_Vol.mm3,4986.5,Ashwell; Bush,2
 Atelerix algirus,AccessoryOlfactoryBulb_Vol.mm3,1.934,Stephan_collection,1
 Atelerix algirus,AccessoryOlfactoryBulb_layer_6_Vol.mm3,0.508,Stephan_collection,1
 Atelerix algirus,AccessoryOlfactoryBulb_layers_1_2_Vol.mm3,0.676,Stephan_collection,1
@@ -420,13 +417,14 @@ Avahi laniger,Area_striata_grey_matter_Vol.mm3,475,Stephan_collection,1
 Avahi laniger,Area_striata_white_matter_Vol.mm3,66.5,Stephan_collection,1
 Avahi laniger,Body_Mass.g,1285,Stephan_collection,1
 Avahi laniger,Brain_Mass.mg,10490,Stephan_collection,1
-Avahi laniger,Bulbus_olfactorius_Vol.mm3,89.2,Stephan_collection,1
+Avahi laniger,Bulbus_olfactorius_Vol.mm3,89.1,Stephan_collection,1
 Avahi laniger,Bulbus_olfactorius_accessorius_Vol.mm3,3.01,Stephan_collection,1
 Avahi laniger,CA1_Vol.mm3,178.89,Stephan_collection,1
 Avahi laniger,CA2_Vol.mm3,15.29,Stephan_collection,1
 Avahi laniger,CA3_Vol.mm3,112.49,Stephan_collection,1
 Avahi laniger,Cerebellar_nuclei_total_Vol.mm3,37.89,Stephan_collection,1
 Avahi laniger,Cerebellum_Vol.mm3,1489,Stephan_collection,1
+Avahi laniger,Commissura_anterior_Vol.mm3,5.7,Stephan_collection,1
 Avahi laniger,Complexus_centromedialis_Vol.mm3,39.5,Stephan_collection,1
 Avahi laniger,Complexus_corticobasolateralis_Vol.mm3,73.8,Stephan_collection,1
 Avahi laniger,Complexus_sensorius_trigeminalis_Vol.mm3,26.3,Stephan_collection,1
@@ -459,29 +457,20 @@ Avahi laniger,Nucleus_vestibularis_lateralis_Vol.mm3,8.55,Stephan_collection,1
 Avahi laniger,Nucleus_vestibularis_medialis_Vol.mm3,17.1,Stephan_collection,1
 Avahi laniger,Nucleus_vestibularis_superior_Vol.mm3,7.65,Stephan_collection,1
 Avahi laniger,Palaeocortex_plus_amygdala_Vol.mm3,236,Stephan_collection,1
+Avahi laniger,Prepiriform_cortex_Vol.mm3,96.5,Stephan_collection,1
+Avahi laniger,Retrobulbar_cortex_Vol.mm3,14.4,Stephan_collection,1
 Avahi laniger,Schizo_cortex_Vol.mm3,241,Stephan_collection,1
 Avahi laniger,Septum_Vol.mm3,69.7,Stephan_collection,1
 Avahi laniger,Striatum_Vol.mm3,524,Stephan_collection,1
 Avahi laniger,Subiculum_Vol.mm3,48.13,Stephan_collection,1
+Avahi laniger,Substantia_innominata_Vol.mm3,16.8,Stephan_collection,1
 Avahi laniger,Telencephalon_Vol.mm3,6550,Stephan_collection,1
 Avahi laniger,Total_brain_net_volume_Vol.mm3,9798,Stephan_collection,1
+Avahi laniger,Tractus_olfactorius_lateralis_Vol.mm3,4.2,Stephan_collection,1
 Avahi laniger,Trigeminal_motor_nucleus_left_Vol.mm3,0.88,Zilles,1
+Avahi laniger,Tuberculum_olfactorium_Vol.mm3,33,Stephan_collection,1
 Avahi laniger,Ventral_pons_Vol.mm3,60.9,Stephan_collection,1
 Avahi laniger,Ventricles_Vol.mm3,172,Stephan_collection,1
-Avahi laniger laniger,Bulbus_olfactorius_Vol.mm3,89.1,Stephan_collection,1
-Avahi laniger laniger,Commissura_anterior_Vol.mm3,5.7,Stephan_collection,1
-Avahi laniger laniger,Prepiriform_cortex_Vol.mm3,96.5,Stephan_collection,1
-Avahi laniger laniger,Retrobulbar_cortex_Vol.mm3,14.4,Stephan_collection,1
-Avahi laniger laniger,Substantia_innominata_Vol.mm3,16.8,Stephan_collection,1
-Avahi laniger laniger,Tractus_olfactorius_lateralis_Vol.mm3,4.2,Stephan_collection,1
-Avahi laniger laniger,Tuberculum_olfactorium_Vol.mm3,33,Stephan_collection,1
-Avahi laniger occidentalis,Bulbus_olfactorius_Vol.mm3,70,Stephan_collection,1
-Avahi laniger occidentalis,Commissura_anterior_Vol.mm3,6.2,Stephan_collection,1
-Avahi laniger occidentalis,Prepiriform_cortex_Vol.mm3,85.4,Stephan_collection,1
-Avahi laniger occidentalis,Retrobulbar_cortex_Vol.mm3,10.9,Stephan_collection,1
-Avahi laniger occidentalis,Substantia_innominata_Vol.mm3,13.5,Stephan_collection,1
-Avahi laniger occidentalis,Tractus_olfactorius_lateralis_Vol.mm3,3.2,Stephan_collection,1
-Avahi laniger occidentalis,Tuberculum_olfactorium_Vol.mm3,26.8,Stephan_collection,1
 Avahi occidentalis,AccessoryOlfactoryBulb_Vol.mm3,2.553,Stephan_collection,1
 Avahi occidentalis,AccessoryOlfactoryBulb_layer_6_Vol.mm3,0.481,Stephan_collection,1
 Avahi occidentalis,AccessoryOlfactoryBulb_layers_1_2_Vol.mm3,0.828,Stephan_collection,1
@@ -496,7 +485,7 @@ Avahi occidentalis,Area_striata_laminae_2_6_Vol.mm3,385,Stephan_collection,1
 Avahi occidentalis,Area_striata_white_matter_Vol.mm3,77.2,Stephan_collection,1
 Avahi occidentalis,Body_Mass.g,860,Stephan_collection; Zilles,2
 Avahi occidentalis,Brain_Mass.mg,9670,Stephan_collection; Zilles,2
-Avahi occidentalis,Bulbus_olfactorius_Vol.mm3,70.1,Stephan_collection,1
+Avahi occidentalis,Bulbus_olfactorius_Vol.mm3,70,Stephan_collection,1
 Avahi occidentalis,Bulbus_olfactorius_accessorius_Vol.mm3,2.55,Stephan_collection,1
 Avahi occidentalis,CA1_Vol.mm3,175.41,Stephan_collection,1
 Avahi occidentalis,CA2_Vol.mm3,9.13,Stephan_collection,1
@@ -504,6 +493,7 @@ Avahi occidentalis,CA3_Vol.mm3,90.39,Stephan_collection,1
 Avahi occidentalis,Capsula_interna_Vol.mm3,105,Stephan_collection,1
 Avahi occidentalis,Cerebellar_nuclei_total_Vol.mm3,29.66,Stephan_collection,1
 Avahi occidentalis,Cerebellum_Vol.mm3,1383,Stephan_collection,1
+Avahi occidentalis,Commissura_anterior_Vol.mm3,6.2,Stephan_collection,1
 Avahi occidentalis,Complexus_centromedialis_Vol.mm3,34.6,Stephan_collection,1
 Avahi occidentalis,Complexus_corticobasolateralis_Vol.mm3,86.5,Stephan_collection,1
 Avahi occidentalis,Complexus_sensorius_trigeminalis_Vol.mm3,25.9,Stephan_collection,1
@@ -554,16 +544,21 @@ Avahi occidentalis,Nucleus_vestibularis_medialis_unilateral_Vol.mm3,6.86,Stephan
 Avahi occidentalis,Nucleus_vestibularis_superior_Vol.mm3,6.37,Stephan_collection,1
 Avahi occidentalis,Nucleus_vestibularis_superior_unilateral_Vol.mm3,3.1,Stephan_collection,1
 Avahi occidentalis,Pallidum_Vol.mm3,74.5,Stephan_collection,1
+Avahi occidentalis,Prepiriform_cortex_Vol.mm3,85.4,Stephan_collection,1
+Avahi occidentalis,Retrobulbar_cortex_Vol.mm3,10.9,Stephan_collection,1
 Avahi occidentalis,Schizo_cortex_Vol.mm3,222,Stephan_collection,1
 Avahi occidentalis,Septum_Vol.mm3,69.3,Stephan_collection,1
 Avahi occidentalis,Striatum_Vol.mm3,478,Stephan_collection,1
 Avahi occidentalis,Subiculum_Vol.mm3,41.61,Stephan_collection,1
+Avahi occidentalis,Substantia_innominata_Vol.mm3,13.5,Stephan_collection,1
 Avahi occidentalis,Subthalamus_Vol.mm3,80.5,Stephan_collection,1
 Avahi occidentalis,Telencephalon_Vol.mm3,6026,Stephan_collection,1
 Avahi occidentalis,Thalamus_Vol.mm3,489,Stephan_collection,1
 Avahi occidentalis,Total_brain_net_volume_Vol.mm3,9190.4,Stephan_collection; Zilles,2
+Avahi occidentalis,Tractus_olfactorius_lateralis_Vol.mm3,3.2,Stephan_collection,1
 Avahi occidentalis,Tractus_opticus_Vol.mm3,38.3,Stephan_collection,1
 Avahi occidentalis,Trigeminal_motor_nucleus_left_Vol.mm3,0.82,Zilles,1
+Avahi occidentalis,Tuberculum_olfactorium_Vol.mm3,26.8,Stephan_collection,1
 Avahi occidentalis,Ventral_pons_Vol.mm3,60.3,Stephan_collection,1
 Avahi occidentalis,Ventricles_Vol.mm3,73.7,Stephan_collection,1
 Bassariscus astutus,CerebellarCortex_Vol.mm3,1467,Ashwell,1
@@ -620,6 +615,11 @@ Burramys parvus,Cerebellum_white_matter_Vol.mm3,14.4,Ashwell,1
 Burramys parvus,FlocculonodularLobe_Vol.mm3,3.88,Ashwell,1
 Burramys parvus,Pontine_and_reticulotegmental_nuclei_Vol.mm3,3.93,Ashwell,1
 Burramys parvus,Total_brain_net_volume_Vol.mm3,899,Ashwell,1
+Callicebus moloch,AccessoryOlfactoryBulb_Vol.mm3,0.325,Stephan_collection,1
+Callicebus moloch,AccessoryOlfactoryBulb_layer_6_Vol.mm3,0.019,Stephan_collection,1
+Callicebus moloch,AccessoryOlfactoryBulb_layers_1_2_Vol.mm3,0.09,Stephan_collection,1
+Callicebus moloch,AccessoryOlfactoryBulb_layers_3_5_Vol.mm3,0.216,Stephan_collection,1
+Callicebus moloch,Amygdala_Vol.mm3,254.1,Stephan_collection,1
 Callicebus moloch,Area_striata_Vol.mm3,1524,Stephan_collection,1
 Callicebus moloch,Area_striata_grey_matter_Vol.mm3,1201,Stephan_collection,1
 Callicebus moloch,Area_striata_white_matter_Vol.mm3,324,Stephan_collection,1
@@ -627,28 +627,63 @@ Callicebus moloch,Body_Mass.g,900,Stephan_collection,1
 Callicebus moloch,Brain_Mass.mg,19000,Stephan_collection,1
 Callicebus moloch,Bulbus_olfactorius_Vol.mm3,19.2,Stephan_collection,1
 Callicebus moloch,Bulbus_olfactorius_accessorius_Vol.mm3,0.325,Stephan_collection,1
-Callicebus moloch,Cerebellum_Vol.mm3,1622,Stephan_collection,1
-Callicebus moloch,Corpus_geniculatum_laterale_Vol.mm3,53.2,Stephan_collection,1
+Callicebus moloch,CA1_Vol.mm3,174.88,Stephan_collection,1
+Callicebus moloch,CA2_Vol.mm3,22.9,Stephan_collection,1
+Callicebus moloch,CA3_Vol.mm3,129.11,Stephan_collection,1
+Callicebus moloch,CerebellarCortex_Vol.mm3,732,Ashwell,1
+Callicebus moloch,CerebellarHemisphere_Vol.mm3,335,Ashwell,1
+Callicebus moloch,CerebellarVermis_Vol.mm3,384,Ashwell,1
+Callicebus moloch,Cerebellar_nuclei_total_Vol.mm3,49.405,Ashwell; Stephan_collection,2
+Callicebus moloch,Cerebellum_Vol.mm3,1250.5,Ashwell; Stephan_collection,2
+Callicebus moloch,Cerebellum_white_matter_Vol.mm3,110,Ashwell,1
+Callicebus moloch,Commissura_anterior_Vol.mm3,28.6,Stephan_collection,1
+Callicebus moloch,Complexus_centromedialis_Vol.mm3,74.6,Stephan_collection,1
+Callicebus moloch,Complexus_corticobasolateralis_Vol.mm3,179.5,Stephan_collection,1
+Callicebus moloch,Complexus_sensorius_trigeminalis_Vol.mm3,36.2,Stephan_collection,1
+Callicebus moloch,Complexus_vestibularis_Vol.mm3,64.7,Stephan_collection,1
+Callicebus moloch,Corpus_geniculatum_laterale_Vol.mm3,54.2,Stephan_collection,1
 Callicebus moloch,Corpus_pineal_Vol.mm3,2.9,Stephan_collection,1
 Callicebus moloch,Corpus_subcommissurale_Vol.mm3,0.154,Stephan_collection,1
 Callicebus moloch,Corpus_subfornicale_Vol.mm3,0.135,Stephan_collection,1
 Callicebus moloch,Diencephalon_Vol.mm3,1375,Stephan_collection,1
 Callicebus moloch,Facial_motor_nucleus_left_Vol.mm3,1.18,Zilles,1
-Callicebus moloch,Hippocampus_Vol.mm3,588,Stephan_collection,1
+Callicebus moloch,Fascia_dentata_Vol.mm3,79.44,Stephan_collection,1
+Callicebus moloch,FlocculonodularLobe_Vol.mm3,13.7,Ashwell,1
+Callicebus moloch,HP_HS_fibers_Vol.mm3,101.92,Stephan_collection,1
+Callicebus moloch,Hilus_Vol.mm3,37.33,Stephan_collection,1
+Callicebus moloch,Hippocampus_Vol.mm3,588.29,Stephan_collection,1
+Callicebus moloch,Hippocampus_retrocommissuralis_Vol.mm3,486.37,Stephan_collection,1
 Callicebus moloch,Hypoglossal_nucleus_left_Vol.mm3,0.98,Zilles,1
+Callicebus moloch,Interpositus_cerebellar_nuclei_Vol.mm3,19.47,Stephan_collection,1
+Callicebus moloch,Lateral_cerebellar_nuclei_Vol.mm3,21.24,Stephan_collection,1
 Callicebus moloch,Lobus_piriformis_Vol.mm3,454,Stephan_collection,1
+Callicebus moloch,Medial_cerebellar_nuclei_Vol.mm3,20.7,Stephan_collection,1
 Callicebus moloch,Medulla_oblongata_Vol.mm3,786.9100000000001,Stephan_collection; Zilles,2
 Callicebus moloch,Mesencephalon_Vol.mm3,530,Stephan_collection,1
+Callicebus moloch,Middle_temporal_visual_area_Vol.mm3,92.1,Stephan_collection,1
 Callicebus moloch,Neocortex_Vol.mm3,11163,Stephan_collection,1
+Callicebus moloch,Nucleus_amygdalae_basalis_pars_magnocellularis_Vol.mm3,16.3,Stephan_collection,1
 Callicebus moloch,Nucleus_habenularis_medialis_Vol.mm3,2.66,Stephan_collection,1
 Callicebus moloch,Nucleus_septalis_triangularis_Vol.mm3,0.89,Stephan_collection,1
+Callicebus moloch,Nucleus_vestibularis_descendens_Vol.mm3,17.1,Stephan_collection,1
+Callicebus moloch,Nucleus_vestibularis_lateralis_Vol.mm3,10.8,Stephan_collection,1
+Callicebus moloch,Nucleus_vestibularis_medialis_Vol.mm3,25.8,Stephan_collection,1
+Callicebus moloch,Nucleus_vestibularis_superior_Vol.mm3,11,Stephan_collection,1
 Callicebus moloch,Palaeocortex_plus_amygdala_Vol.mm3,425,Stephan_collection,1
+Callicebus moloch,Pontine_and_reticulotegmental_nuclei_Vol.mm3,23.8,Ashwell,1
+Callicebus moloch,Prepiriform_cortex_Vol.mm3,96.7,Stephan_collection,1
+Callicebus moloch,Retrobulbar_cortex_Vol.mm3,4.4,Stephan_collection,1
 Callicebus moloch,Schizo_cortex_Vol.mm3,234,Stephan_collection,1
 Callicebus moloch,Septum_Vol.mm3,86.4,Stephan_collection,1
 Callicebus moloch,Striatum_Vol.mm3,920,Stephan_collection,1
+Callicebus moloch,Subiculum_Vol.mm3,42.71,Stephan_collection,1
+Callicebus moloch,Substantia_innominata_Vol.mm3,27.2,Stephan_collection,1
 Callicebus moloch,Telencephalon_Vol.mm3,13465,Stephan_collection,1
-Callicebus moloch,Total_brain_net_volume_Vol.mm3,17944,Stephan_collection,1
+Callicebus moloch,Total_brain_net_volume_Vol.mm3,16132.5,Ashwell; Stephan_collection,2
+Callicebus moloch,Tractus_olfactorius_lateralis_Vol.mm3,8,Stephan_collection,1
 Callicebus moloch,Trigeminal_motor_nucleus_left_Vol.mm3,1,Zilles,1
+Callicebus moloch,Tuberculum_olfactorium_Vol.mm3,34.7,Stephan_collection,1
+Callicebus moloch,Ventral_pons_Vol.mm3,105.9,Stephan_collection,1
 Callicebus moloch,Ventricles_Vol.mm3,279,Stephan_collection,1
 Callicebus sp.,Area_striata_grey_matter_Vol.mm3,840,Bush,1
 Callicebus sp.,Cerebellum_grey_matter_Vol.mm3,833,Bush,1
@@ -1445,10 +1480,6 @@ Chinchilla laniger,Neocortex_grey_matter_Vol.mm3,1160,Bush,1
 Chinchilla laniger,Neocortex_white_matter_Vol.mm3,269.5,Bush,1
 Chinchilla laniger,Pontine_and_reticulotegmental_nuclei_Vol.mm3,19.4,Ashwell,1
 Chinchilla laniger,Total_brain_net_volume_Vol.mm3,5515.5,Ashwell; Bush,2
-Choloepus didactylis,Neocortex_Vol.mm3,10540,Bush,1
-Choloepus didactylis,Neocortex_grey_matter_Vol.mm3,7910,Bush,1
-Choloepus didactylis,Neocortex_white_matter_Vol.mm3,2630,Bush,1
-Choloepus didactylis,Total_brain_net_volume_Vol.mm3,25560,Bush,1
 Choloepus didactylus,CerebellarCortex_Vol.mm3,1841,Ashwell,1
 Choloepus didactylus,CerebellarHemisphere_Vol.mm3,1029,Ashwell,1
 Choloepus didactylus,CerebellarVermis_Vol.mm3,760,Ashwell,1
@@ -1457,10 +1488,11 @@ Choloepus didactylus,Cerebellum_Vol.mm3,2337,Ashwell,1
 Choloepus didactylus,Cerebellum_grey_matter_Vol.mm3,2300,Bush,1
 Choloepus didactylus,Cerebellum_white_matter_Vol.mm3,551,Ashwell; Bush,2
 Choloepus didactylus,FlocculonodularLobe_Vol.mm3,52,Ashwell,1
+Choloepus didactylus,Neocortex_Vol.mm3,10540,Bush,1
 Choloepus didactylus,Neocortex_grey_matter_Vol.mm3,7910,Bush,1
 Choloepus didactylus,Neocortex_white_matter_Vol.mm3,2630,Bush,1
 Choloepus didactylus,Pontine_and_reticulotegmental_nuclei_Vol.mm3,89.8,Ashwell,1
-Choloepus didactylus,Total_brain_net_volume_Vol.mm3,27404,Ashwell,1
+Choloepus didactylus,Total_brain_net_volume_Vol.mm3,26482,Ashwell; Bush,2
 Chrysochloris asiatica,AccessoryOlfactoryBulb_Vol.mm3,0.132,Stephan_collection,1
 Chrysochloris asiatica,AccessoryOlfactoryBulb_layer_6_Vol.mm3,0.017,Stephan_collection,1
 Chrysochloris asiatica,AccessoryOlfactoryBulb_layers_1_2_Vol.mm3,0.037,Stephan_collection,1
@@ -2627,10 +2659,6 @@ Galemys pyrenaicus,Total_brain_net_volume_Vol.mm3,1230,Stephan_collection,1
 Galemys pyrenaicus,Tractus_olfactorius_lateralis_Vol.mm3,1.8,Stephan_collection,1
 Galemys pyrenaicus,Tuberculum_olfactorium_Vol.mm3,18.8,Stephan_collection,1
 Galemys pyrenaicus,Ventricles_Vol.mm3,27.5,Stephan_collection,1
-Galictis vitatus,Neocortex_Vol.mm3,11810,Bush,1
-Galictis vitatus,Neocortex_grey_matter_Vol.mm3,9090,Bush,1
-Galictis vitatus,Neocortex_white_matter_Vol.mm3,2720,Bush,1
-Galictis vitatus,Total_brain_net_volume_Vol.mm3,19360,Bush,1
 Galictis vittatus,CerebellarCortex_Vol.mm3,1007,Ashwell,1
 Galictis vittatus,CerebellarHemisphere_Vol.mm3,404,Ashwell,1
 Galictis vittatus,CerebellarVermis_Vol.mm3,470,Ashwell,1
@@ -2639,10 +2667,11 @@ Galictis vittatus,Cerebellum_Vol.mm3,1212,Ashwell,1
 Galictis vittatus,Cerebellum_grey_matter_Vol.mm3,1440,Bush,1
 Galictis vittatus,Cerebellum_white_matter_Vol.mm3,244.5,Ashwell; Bush,2
 Galictis vittatus,FlocculonodularLobe_Vol.mm3,133,Ashwell,1
+Galictis vittatus,Neocortex_Vol.mm3,11810,Bush,1
 Galictis vittatus,Neocortex_grey_matter_Vol.mm3,9090,Bush,1
 Galictis vittatus,Neocortex_white_matter_Vol.mm3,2720,Bush,1
 Galictis vittatus,Pontine_and_reticulotegmental_nuclei_Vol.mm3,41.8,Ashwell,1
-Galictis vittatus,Total_brain_net_volume_Vol.mm3,19132,Ashwell,1
+Galictis vittatus,Total_brain_net_volume_Vol.mm3,19246,Ashwell; Bush,2
 Glis glis,Cerebellum_grey_matter_Vol.mm3,245,Bush,1
 Glis glis,Cerebellum_white_matter_Vol.mm3,48.1,Bush,1
 Glis glis,Neocortex_Vol.mm3,560,Bush,1
@@ -4067,11 +4096,14 @@ Mustela putorius,Cerebellum_Vol.mm3,742,Ashwell,1
 Mustela putorius,Cerebellum_grey_matter_Vol.mm3,626,Bush,1
 Mustela putorius,Cerebellum_white_matter_Vol.mm3,101,Ashwell; Bush,2
 Mustela putorius,FlocculonodularLobe_Vol.mm3,20.2,Ashwell,1
-Mustela putorius,Neocortex_Vol.mm3,2710,Bush,1
 Mustela putorius,Neocortex_grey_matter_Vol.mm3,2140,Bush,1
-Mustela putorius,Neocortex_white_matter_Vol.mm3,569.5,Bush,1
+Mustela putorius,Neocortex_white_matter_Vol.mm3,569,Bush,1
 Mustela putorius,Pontine_and_reticulotegmental_nuclei_Vol.mm3,16.4,Ashwell,1
-Mustela putorius,Total_brain_net_volume_Vol.mm3,5433.5,Ashwell; Bush,2
+Mustela putorius,Total_brain_net_volume_Vol.mm3,4987,Ashwell,1
+Mustela putorius furo,Neocortex_Vol.mm3,2710,Bush,1
+Mustela putorius furo,Neocortex_grey_matter_Vol.mm3,2140,Bush,1
+Mustela putorius furo,Neocortex_white_matter_Vol.mm3,570,Bush,1
+Mustela putorius furo,Total_brain_net_volume_Vol.mm3,5880,Bush,1
 Mustela vison,CerebellarCortex_Vol.mm3,836,Ashwell,1
 Mustela vison,CerebellarHemisphere_Vol.mm3,391,Ashwell,1
 Mustela vison,CerebellarVermis_Vol.mm3,392,Ashwell,1
@@ -5380,54 +5412,6 @@ Planigale maculata,Cerebellum_white_matter_Vol.mm3,2.06,Ashwell,1
 Planigale maculata,FlocculonodularLobe_Vol.mm3,0.94,Ashwell,1
 Planigale maculata,Pontine_and_reticulotegmental_nuclei_Vol.mm3,0.45,Ashwell,1
 Planigale maculata,Total_brain_net_volume_Vol.mm3,148,Ashwell,1
-Plecturocebus moloch,AccessoryOlfactoryBulb_Vol.mm3,0.325,Stephan_collection,1
-Plecturocebus moloch,AccessoryOlfactoryBulb_layer_6_Vol.mm3,0.019,Stephan_collection,1
-Plecturocebus moloch,AccessoryOlfactoryBulb_layers_1_2_Vol.mm3,0.09,Stephan_collection,1
-Plecturocebus moloch,AccessoryOlfactoryBulb_layers_3_5_Vol.mm3,0.216,Stephan_collection,1
-Plecturocebus moloch,Amygdala_Vol.mm3,254.1,Stephan_collection,1
-Plecturocebus moloch,Area_striata_grey_matter_Vol.mm3,1201,Stephan_collection,1
-Plecturocebus moloch,Body_Mass.g,900,Stephan_collection,1
-Plecturocebus moloch,Brain_Mass.mg,19000,Stephan_collection,1
-Plecturocebus moloch,Bulbus_olfactorius_Vol.mm3,19.2,Stephan_collection,1
-Plecturocebus moloch,CA1_Vol.mm3,174.88,Stephan_collection,1
-Plecturocebus moloch,CA2_Vol.mm3,22.9,Stephan_collection,1
-Plecturocebus moloch,CA3_Vol.mm3,129.11,Stephan_collection,1
-Plecturocebus moloch,CerebellarCortex_Vol.mm3,732,Ashwell,1
-Plecturocebus moloch,CerebellarHemisphere_Vol.mm3,335,Ashwell,1
-Plecturocebus moloch,CerebellarVermis_Vol.mm3,384,Ashwell,1
-Plecturocebus moloch,Cerebellar_nuclei_total_Vol.mm3,49.405,Ashwell; Stephan_collection,2
-Plecturocebus moloch,Cerebellum_Vol.mm3,879,Ashwell,1
-Plecturocebus moloch,Cerebellum_white_matter_Vol.mm3,110,Ashwell,1
-Plecturocebus moloch,Commissura_anterior_Vol.mm3,28.6,Stephan_collection,1
-Plecturocebus moloch,Complexus_centromedialis_Vol.mm3,74.6,Stephan_collection,1
-Plecturocebus moloch,Complexus_corticobasolateralis_Vol.mm3,179.5,Stephan_collection,1
-Plecturocebus moloch,Complexus_sensorius_trigeminalis_Vol.mm3,36.2,Stephan_collection,1
-Plecturocebus moloch,Complexus_vestibularis_Vol.mm3,64.7,Stephan_collection,1
-Plecturocebus moloch,Corpus_geniculatum_laterale_Vol.mm3,54.2,Stephan_collection,1
-Plecturocebus moloch,Fascia_dentata_Vol.mm3,79.44,Stephan_collection,1
-Plecturocebus moloch,FlocculonodularLobe_Vol.mm3,13.7,Ashwell,1
-Plecturocebus moloch,HP_HS_fibers_Vol.mm3,101.92,Stephan_collection,1
-Plecturocebus moloch,Hilus_Vol.mm3,37.33,Stephan_collection,1
-Plecturocebus moloch,Hippocampus_Vol.mm3,588.29,Stephan_collection,1
-Plecturocebus moloch,Hippocampus_retrocommissuralis_Vol.mm3,486.37,Stephan_collection,1
-Plecturocebus moloch,Interpositus_cerebellar_nuclei_Vol.mm3,19.47,Stephan_collection,1
-Plecturocebus moloch,Lateral_cerebellar_nuclei_Vol.mm3,21.24,Stephan_collection,1
-Plecturocebus moloch,Medial_cerebellar_nuclei_Vol.mm3,20.7,Stephan_collection,1
-Plecturocebus moloch,Middle_temporal_visual_area_Vol.mm3,92.1,Stephan_collection,1
-Plecturocebus moloch,Nucleus_amygdalae_basalis_pars_magnocellularis_Vol.mm3,16.3,Stephan_collection,1
-Plecturocebus moloch,Nucleus_vestibularis_descendens_Vol.mm3,17.1,Stephan_collection,1
-Plecturocebus moloch,Nucleus_vestibularis_lateralis_Vol.mm3,10.8,Stephan_collection,1
-Plecturocebus moloch,Nucleus_vestibularis_medialis_Vol.mm3,25.8,Stephan_collection,1
-Plecturocebus moloch,Nucleus_vestibularis_superior_Vol.mm3,11,Stephan_collection,1
-Plecturocebus moloch,Pontine_and_reticulotegmental_nuclei_Vol.mm3,23.8,Ashwell,1
-Plecturocebus moloch,Prepiriform_cortex_Vol.mm3,96.7,Stephan_collection,1
-Plecturocebus moloch,Retrobulbar_cortex_Vol.mm3,4.4,Stephan_collection,1
-Plecturocebus moloch,Subiculum_Vol.mm3,42.71,Stephan_collection,1
-Plecturocebus moloch,Substantia_innominata_Vol.mm3,27.2,Stephan_collection,1
-Plecturocebus moloch,Total_brain_net_volume_Vol.mm3,14321,Ashwell,1
-Plecturocebus moloch,Tractus_olfactorius_lateralis_Vol.mm3,8,Stephan_collection,1
-Plecturocebus moloch,Tuberculum_olfactorium_Vol.mm3,34.7,Stephan_collection,1
-Plecturocebus moloch,Ventral_pons_Vol.mm3,105.9,Stephan_collection,1
 Pongo sp.,Agranular_insular_cortex_Vol.mm3,717.25,Zilles,1
 Pongo sp.,Agranular_insular_cortex_left_Vol.mm3,254.75,Zilles,1
 Pongo sp.,Agranular_insular_cortex_right_Vol.mm3,462.5,Zilles,1

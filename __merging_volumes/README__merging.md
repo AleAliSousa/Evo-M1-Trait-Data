@@ -38,6 +38,51 @@ Brain-structure volumes are merged as **whole-structure, both-hemisphere** value
 - where a paper reports **left and right separately** (Smaers 2011 `frontal_*_total` = left + right),
   the merge uses **left + right added**.
 
+### Who did the doubling: `doubling` in `laterality_known.csv`
+
+A both-hemisphere number can be a both-hemisphere **measurement** or a **2× estimate from one side**,
+and if it is an estimate the ×2 was applied either by the paper's authors or by this merge. That is
+recorded per source column in `laterality_known.csv`:
+
+| `doubling` | what the printed number is | suffix on its standardized term | how the merge records it |
+|---|---|---|---|
+| `none` | one side, **as measured** | **required** (`_left` / `_right` / `_unilateral`) | if a both-sides partner is wanted, step 7 builds it → `estimated_bilateral_from_unilateral` |
+| `by_source` | **already 2× one side**, doubled by the authors | **forbidden** — the value legitimately stands for both sides | used exactly as published, never doubled again → `published_bilateral_estimate` |
+
+> **Neither of these is a veto.** `estimated_bilateral_from_unilateral` and
+> `published_bilateral_estimate` are *provenance*: they say how a both-sides number came to exist and
+> they never remove a value. A value is only ever dropped by an `action = skip` row in
+> `volumes_select_value_flags.csv`. Both live in the generated `volumes_flags.csv`, not in the
+> hand-edited veto registry, precisely so the two cannot be confused.
+
+**`by_source` columns — de Sousa.** de Sousa et al. (2010) measured the left hemisphere only and
+state in Methods: *"In all statistical analyses, left V1 and left LGN volumes were doubled to estimate
+the total (left plus right hemisphere) volumes of V1 and LGN for each specimen because the volumes of
+V1 (Amunts et al., 2007a) and LGN (H. Frahm, unpublished observation) apparently do not exhibit major
+asymmetries."* This is a deliberate, argued estimator, not an error — hence provenance, not a veto.
+
+- **de Sousa 2010 Table 1** prints the *undoubled* left values → `doubling = none`, `_left` suffix.
+- **de Sousa 2010 Supp. Table 2** prints the doubled figures → `doubling = by_source`. Verified: its
+  hominoid V1 = 2 × mean(Table 1 left V1) exactly (Homo 15.2 = 2×7.63; *Pan paniscus* 11.6 = 2×5.8;
+  *Gorilla* 9.1 = 2×4.55; *Hylobates lar* 4.1 = 2×2.05). Not currently in any merge, but its term map
+  already points V1 at the unsuffixed `Area_striata_grey_matter_Vol.mm3`, so it is a trap if ingested.
+- **de Sousa 2013 Table 1** (LGN) → `doubling = by_source`, and it is the one doubled column that is
+  **live in the merge**: it enters as the unsuffixed `Corpus_geniculatum_laterale_Vol.mm3` and is
+  Tier-2 averaged with the Stephan-collection LGN. The 2013 paper never restates the doubling — its
+  Methods say only *"A minimum of one left hemisphere was investigated per species, although both
+  right and left hemispheres were investigated for most specimens."* The evidence that it inherits
+  the 2010 convention is that its LGN values reproduce 2010 Supp. Table 2 exactly for the species
+  they share (*Homo sapiens* 0.335; *Pongo pygmaeus* 0.259; *Hylobates lar* 0.166).
+
+Because the ×2 is already in those published numbers, `bilateral_stems_exclude` stops step 7 doubling
+`Area_striata_grey_matter` and `Corpus_geniculatum_laterale` a second time.
+
+**Bauernfeind is the other case, not the same one.** Bauernfeind 2013 did *not* double anything:
+Table 1 is the measured left insula and Table 2 the measured right, so both are `doubling = none`.
+Where a species has only a left value, the ×2 is **this project's**, and it is recorded as
+`estimated_bilateral_from_unilateral`. Same arithmetic, different author — which is exactly what the
+`doubling` column exists to keep apart.
+
 ### One-side-only structures (suffix-only laterality convention)
 
 Some sources report a structure from **one side only**. Such a value must never be silently compared,
@@ -48,21 +93,32 @@ variable* that cannot collide with a both-sides column. Current one-side columns
 `laterality_known.csv` and enforced by the **laterality guard** in `volumes_compiled.R` (it warns if the
 registry and the term map disagree):
 
-| Source | Columns | Side | Suffix |
-|---|---|---|---|
-| Stephan 1981 | Complexus vestibularis + 4 vestibular nuclei (codes 35–39) | one side (per Baron 1988) | `_unilateral` |
-| Bauernfeind 2013 | insula: granular, dysgranular, agranular, FI, total | **left** = Table 1 (`_left`); **right** = Table 2 (`_right`) | `_left` / `_right` |
+| Source | Columns | Side measured | `doubling` | Suffix |
+|---|---|---|---|---|
+| Stephan 1981 Tables XII/XIII | Complexus vestibularis + 4 vestibular nuclei (codes 35–39) | one side (per Baron 1988) | `none` | `_unilateral` |
+| Bauernfeind 2013 | insula: granular, dysgranular, agranular, FI, total | **left** = Table 1; **right** = Table 2 | `none` | `_left` / `_right` |
+| Semendeferi 1998 Table 2 | area 13 (orbitofrontal), n = 1/species | right | `none` | `_right` |
+| Semendeferi 2001 Table 2 | area 10 (frontal pole), n = 1/species | right | `none` | `_right` |
+| Sherwood 2005 Table 1 | cranial motor nuclei VII, Vmo, XII | left | `none` | `_left` |
+| de Sousa 2010 Table 1 | V1 (area striata grey), LGN — printed **undoubled** | left | `none` | `_left` |
+| de Sousa 2010 Supp. Table 2 | V1, LGN — printed **already ×2** | left | **`by_source`** | *(none — value stands for both sides)* |
+| de Sousa 2013 Table 1 | LGN — printed **already ×2** | left | **`by_source`** | *(none — value stands for both sides)* |
 
 Left (Table 1) and right (Table 2) are combined into whole-insula both-hemisphere volumes in
 `volumes_compiled.R` (step 7): both sides → left + right; left-only species → 2× left, flagged.
 
-Numeric values are **not** doubled; a both-sides estimate, if needed, is derived downstream as `2 ×` and
-flagged (`estimated_bilateral_from_unilateral = TRUE`), never overwriting the original. Individual-hemisphere
+For `doubling = none` columns the numeric values are **not** doubled in place; a both-sides estimate, if
+needed, is derived downstream as `2 ×` and flagged `estimated_bilateral_from_unilateral`, never overwriting
+the original. For `doubling = by_source` columns the ×2 is already in the published figure, so the merge
+does nothing to the number and only records `published_bilateral_estimate`. Individual-hemisphere
 volumes from both-sides papers (e.g. Smaers `frontal_white_left_cm3`/`_right_cm3`, Barger `amygdaloid_complex_L`/`amygdaloid_complex_R`) are
 preserved in each paper's source CSV/TSV but not carried into the merged table.
 
-**Adding a one-side column:** register it in `laterality_known.csv` and give its standardized term the
-matching suffix; the guard warns at compile time if the two disagree.
+**Adding a one-side column:** register it in `laterality_known.csv` with the side it was measured from
+and who did any doubling. If `doubling = none`, give its standardized term the matching suffix; if
+`doubling = by_source`, give it the plain both-sides term and leave `required_suffix` empty. The guard
+warns at compile time in either direction — a missing suffix on a measured one-side column, or a
+laterality suffix on a value that already represents both sides.
 
 Worked examples: *Microcebus* neocortical grey = mean(Frahm 1982, Bush 2003);
 *Pan troglodytes* LGN = mean(Stephan-collection 356, deSousa-team mean 297) = 327.

@@ -43,16 +43,21 @@ enc    <- function(nm) codes$`Item encoded`[match(nm, codes$`Item name`)]
 ## ---- long: one row per (Species, Standardized_Term, source) ----
 long <- list()
 
-# generic count/surface sources read straight from their TSV (Changizi, Finlay, Young M1)
-for (nm in c("Changizi__2001_Figure3", "Finlay_etal_2006_Table6.1", "Young_etal_2013_Table1")) {
+# generic count/surface sources read straight from their TSV (Changizi 2001, Finlay, Young M1,
+# Changizi & Shimojo 2005). The Species join column is resolved from each source's term map (the
+# Original_Term mapped to Standardized_Term == "Species"), since e.g. C&S 2005 prints it as species_sci.
+for (nm in c("Changizi__2001_Figure3", "Finlay_etal_2006_Table6.1", "Young_etal_2013_Table1",
+             "Changizi_Shimojo_2005_Table1")) {
   tsv <- file.path(tsvdir, paste0(enc(nm), ".tsv"))
   d   <- readr::read_tsv(tsv, show_col_types = FALSE)
+  spcol <- terms$Original_Term[terms$Reference == nm & terms$Standardized_Term == "Species"]
+  spcol <- if (length(spcol) && spcol %in% names(d)) spcol else "Species"
   tm  <- terms |> filter(Reference == nm, Standardized_Term != "Species")
   for (i in seq_len(nrow(tm))) {
     oc <- tm$Original_Term[i]; st <- tm$Standardized_Term[i]
     if (!oc %in% names(d)) next
     long[[paste(nm, st)]] <- tibble(
-      Species = d$Species, Standardized_Term = st,
+      Species = d[[spcol]], Standardized_Term = st,
       value = suppressWarnings(as.numeric(d[[oc]])), source = nm)
   }
 }
@@ -74,12 +79,24 @@ long[["Turner surface"]] <- tibble(Species = ts$Species, Standardized_Term = "Co
 long <- bind_rows(long) |> filter(!is.na(value)) |>
   mutate(Species = unify(Species),                                  # harmonise spelling variants
          trait_class = ifelse(Standardized_Term %in% regional_terms, "regional", "whole_cortex"))
+
+## ---- supersede: within the Changizi lineage, C&S 2005 (areas_shown) supersedes Changizi 2001
+## (Fig.3 n_areas) for the SAME species. Same author, revised counts -> not independent, don't average.
+## Superseded rows are kept in _long with status = "superseded_by_Changizi_Shimojo_2005" but excluded
+## from _wide. Changizi 2001's species that C&S 2005 lacks (e.g. Homo sapiens) stay active.
+newer <- long$Species[long$source == "Changizi_Shimojo_2005_Table1" &
+                       long$Standardized_Term == "n_cortical_areas"]
+long$status <- "active"
+long$status[long$source == "Changizi__2001_Figure3" &
+            long$Standardized_Term == "n_cortical_areas" &
+            long$Species %in% newer] <- "superseded_by_Changizi_Shimojo_2005"
 readr::write_csv(long, "cortical_areas_long.csv")
 
-## ---- wide: species x trait, mean across sources + conflict flag ----
+## ---- wide: species x trait, mean across ACTIVE sources + conflict flag ----
 ## regional traits (e.g. M1_Surface_Area.mm2) are kept as SEPARATE columns, never pooled into
 ## whole-cortex surface.
 wide <- long |>
+  filter(status == "active") |>
   group_by(Species, Standardized_Term) |>
   summarise(value_mean = mean(value), n_sources = n_distinct(source),
             sources = paste(sort(unique(source)), collapse = "; "),

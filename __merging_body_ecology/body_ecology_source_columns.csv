@@ -1,42 +1,50 @@
-file,first_author,year,chosen_column,unit,all_body_columns
-10.1006%2Fjhev.1996.0005_Table1.tsv,MacLarnon,1996,Body weight (g),g,Body weight (g); Body weight (g): Data Source; Body weight (mg); Body weight (mg): Data Source
-10.1006%2Fjhev.1999.0313_Table1.tsv,Rilling,1999,body_weight_kg_mean,kg,body_weight_kg_mean; body_weight_kg_sd; body_weight_kg_note
-10.1016%2Fj.jhevol.2008.08.004_Table7.tsv,Isler,2008,(none/skipped),,Body mass dimorphism
-10.1016%2Fj.jhevol.2008.08.004_TableS1.tsv,Isler,2008,Body mass (g),g,Body mass (g)
-10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Body mass species mean,g,Source of body mass; Body mass male mean; Body mass female mean; Body mass species mean; N body mass male; N body mass female; N body mass species
-10.1016%2Fj.jhevol.2008.08.004_TableS3.tsv,Isler,2008,Body mass (g),g,Body mass (g); Female body mass (g)
-10.1016%2Fj.jhevol.2012.12.003_Table1.tsv,Bauernfeind,2013,body_mass_g,g,body_mass_g
-10.1038%2Fs41598-018-26062-8_TableS1.tsv,Kverkova,2018,Body_Mass.g,g,Body_Mass.g; Body_Mass.g_SD
-10.1038%2Fsrep24528_TableS1.tsv,Heldstab,2016,body_mass_g,g,body_mass_g; brain_assoc_body_mass_g
-10.1073%2Fpnas.0905777106_TableS1.tsv,Garwicz,2009,Body Mass (g),g,Body Mass (g); Body Mass (g) Ref
-10.1073%2Fpnas.1318894110_Table1.tsv,Young,2013,body_weight_kg,kg,body_weight_kg
-10.1073%2Fpnas.1524208113_Table1.tsv,Collins,2016,body_weight_kg,kg,body_weight_kg
-10.1093%2Fjmammal%2Fgyz043_SupplementaryDataSD1.tsv,Burger,2019,Mean_body_mass_g,g,Mean_body_mass_g
-10.1093%2Foso%2F9780198568742.003.0006_Table6.1.tsv,Finlay,2006,bodyweight_g,g,bodyweight_g
-10.1098%2Frsos.170846_TableS1.tsv,Seymour,2017,Body_mass_kg,kg,Body_mass_note; Body_mass_kg; Body_mass_g; Body_mass_ref
-10.1098%2Frspb.2021.0937_MammalGait.tsv,Wimberly,2021,Body_Mass.g,g,Body_Mass.g
-10.1111%2Fbrv.12350_TableS2.tsv,Genoud,2018,Body_mass.g,g,Body_mass.g
-10.1111%2Fjzo.12608_TableS1.tsv,Granatosky,2018,Body_Mass.g,g,Body_Mass.g
-10.1159%2F000006575_Table1.tsv,Rilling,1998,body_weight_kg,kg,body_weight_kg; body_weight_kg_SEM
-10.1159%2F000124401_TableI.tsv,Heffner,1975,Body weight kg,kg,Body weight kg
-10.1159%2F000155963_TableI.tsv,Stephan,1981,Body_weight,g,Body_weight
-10.1159%2F000155963_TableII.tsv,Stephan,1981,Body_weight,g,Body_weight
-10.1159%2F000155963_TableIII.tsv,Stephan,1981,Body_weight,g,Body_weight
-10.1159%2F000155963_TablesI-VI.tsv,Stephan,1981,Body_weight,g,Body_weight
-10.1159%2F000156211_Table1.tsv,Matano,1985,body_weight_g,g,body_weight_g
-10.1159%2F000156212_Table1.tsv,Matano,1985,body_weight_g,g,body_weight_g
-10.1159%2F000319019_SupplementaryTable1.tsv,Burish,2010,body mass (g),g,body mass (g)
-10.1159%2F000437413_Table5.tsv,HerculanoHouzel,2015,"Body mass, g",g,"Body mass, g; Body mass, g SD"
-10.1242%2Fjeb.124826_TableS1.tsv,Seymour,2015,Body_mass_g,g,Body_mass_g; Body_mass_ref; Body_mass_ref_short
-10.1371%2Fjournal.pbio.1002000_TableS1.tsv,Lewitus,2014,Body_weight,g,Body_weight
-10.1890%2F13-1917.1_MamFuncDat.tsv,Wilman,2014,BodyMass.g,g,BodyMass.g; BodyMass_SpecLevel
-10.6084%2Fm9.figshare.c.3899422.v1_Dataset1.tsv,Powell,2017,Body mass,g,logBodyMass; Body mass; N Body mass; Sex Body mass; Source Body mass; Original source Body mass
-ISBN%3A0390672505_TABLE1.tsv,Stephan,1970,body_weight_g,g,body_weight_g
-ISBN%3A0390672505_TABLE2.tsv,Stephan,1970,body_weight_g,g,body_weight_g
-ISBN%3A0390672505_TABLE3.tsv,Stephan,1970,body_weight_g,g,body_weight_g
-ISBN%3A0390672505_Tables1-6.tsv,Stephan,1970,body_weight_g,g,body_weight_g
-ISBN%3A0845140000_TABLE1.tsv,Stephan,1988,BoW_g,g,BoW_g
-NQ%3A61662_APPENDIXI.tsv,MacLeod,2000,body_weight_kg,kg,body_weight_kg; body_weight_raw
-PMID%3A7983368_Table1.tsv,Frahm,1994,body_weight_g,g,body_weight_g
-PMID%3A9672110_Table1.tsv,Frahm,1998,body_weight_g,g,body_weight_g
-UMI%3A3017523_TableA-15.tsv,Weaver,2001,BoMass_kg,kg,BoMass_kg; Body_Mass.g
+"file","first_author","year","chosen_column","unit","all_body_columns"
+"10.1002%2Fcne.24349_Table3.tsv","Jacobs","2018","body_mass_g","g","body_mass_g"
+"10.1002%2Fcne.903580203_TABLE1.tsv","Nudo","1995","Body_Mass.g","g","Body_Mass.g"
+"10.1006%2Fjhev.1996.0005_Table1.tsv","MacLarnon","1996","Body weight (g)","g","Body weight (g); Body weight (g): Data Source; Body weight (mg); Body weight (mg): Data Source"
+"10.1006%2Fjhev.1999.0313_Table1.tsv","Rilling","1999","body_weight_kg_mean","kg","body_weight_kg_mean; body_weight_kg_sd; body_weight_kg_note"
+"10.1016%2Fj.jhevol.2008.08.004_Table7.tsv","Isler","2008","(none/skipped)","","Body mass dimorphism"
+"10.1016%2Fj.jhevol.2008.08.004_TableS1.tsv","Isler","2008","Body mass (g)","g","Body mass (g)"
+"10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv","Isler","2008","Body mass species mean","g","Source of body mass; Body mass male mean; Body mass female mean; Body mass species mean; N body mass male; N body mass female; N body mass species"
+"10.1016%2Fj.jhevol.2008.08.004_TableS3.tsv","Isler","2008","Body mass (g)","g","Body mass (g); Female body mass (g)"
+"10.1016%2Fj.jhevol.2012.12.003_Table1.tsv","Bauernfeind","2013","body_mass_g","g","body_mass_g"
+"10.1016%2Fj.neubiorev.2008.05.023_Table1.tsv","Lyamin","2008","body_mass_kg","kg","body_mass_kg"
+"10.1038%2Fs41598-018-26062-8_TableS1.tsv","Kverkova","2018","Body_Mass.g","g","Body_Mass.g; Body_Mass.g_SD"
+"10.1038%2Fsrep24528_TableS1.tsv","Heldstab","2016","body_mass_g","g","body_mass_g; brain_assoc_body_mass_g"
+"10.1073%2Fpnas.0905777106_TableS1.tsv","Garwicz","2009","Body Mass (g)","g","Body Mass (g); Body Mass (g) Ref"
+"10.1073%2Fpnas.1318894110_Table1.tsv","Young","2013","body_weight_kg","kg","body_weight_kg"
+"10.1073%2Fpnas.1524208113_Table1.tsv","Collins","2016","body_weight_kg","kg","body_weight_kg"
+"10.1093%2Fjmammal%2Fgyz043_SupplementaryDataSD1.tsv","Burger","2019","Mean_body_mass_g","g","Mean_body_mass_g"
+"10.1093%2Foso%2F9780198568742.003.0006_Table6.1.tsv","Finlay","2006","bodyweight_g","g","bodyweight_g"
+"10.1098%2Frsos.170846_TableS1.tsv","Seymour","2017","Body_mass_kg","kg","Body_mass_note; Body_mass_kg; Body_mass_g; Body_mass_ref"
+"10.1098%2Frspb.2021.0937_MammalGait.tsv","Wimberly","2021","Body_Mass.g","g","Body_Mass.g"
+"10.1111%2Fbrv.12137_Table1.tsv","Ruf","2015","body_mass_kg","kg","body_mass_kg"
+"10.1111%2Fbrv.12350_TableS2.tsv","Genoud","2018","Body_mass.g","g","Body_mass.g"
+"10.1111%2Fjzo.12608_TableS1.tsv","Granatosky","2018","Body_Mass.g","g","Body_Mass.g"
+"10.1159%2F000006575_Table1.tsv","Rilling","1998","body_weight_kg","kg","body_weight_kg; body_weight_kg_SEM"
+"10.1159%2F000121494_TableI.tsv","Heffner","1983","body_weight_kg","kg","body_weight_kg"
+"10.1159%2F000124401_TableI.tsv","Heffner","1975","Body weight kg","kg","Body weight kg"
+"10.1159%2F000155963_TableI.tsv","Stephan","1981","Body_weight","g","Body_weight"
+"10.1159%2F000155963_TableII.tsv","Stephan","1981","Body_weight","g","Body_weight"
+"10.1159%2F000155963_TableIII.tsv","Stephan","1981","Body_weight","g","Body_weight"
+"10.1159%2F000155963_TablesI-VI.tsv","Stephan","1981","Body_weight","g","Body_weight"
+"10.1159%2F000156211_Table1.tsv","Matano","1985","body_weight_g","g","body_weight_g"
+"10.1159%2F000156212_Table1.tsv","Matano","1985","body_weight_g","g","body_weight_g"
+"10.1159%2F000319019_SupplementaryTable1.tsv","Burish","2010","body mass (g)","g","body mass (g)"
+"10.1159%2F000437413_Table5.tsv","HerculanoHouzel","2015","Body mass, g","g","Body mass, g; Body mass, g SD"
+"10.1242%2Fjeb.124826_TableS1.tsv","Seymour","2015","Body_mass_g","g","Body_mass_g; Body_mass_ref; Body_mass_ref_short"
+"10.1371%2Fjournal.pbio.1002000_TableS1.tsv","Lewitus","2014","Body_weight","g","Body_weight"
+"10.1537%2Fase1911.100.69_Tables1to4.tsv","Matano","1992","body_weight_g","g","body_weight_g"
+"10.1890%2F13-1917.1_MamFuncDat.tsv","Wilman","2014","BodyMass.g","g","BodyMass.g; BodyMass_SpecLevel"
+"10.3389%2Ffnana.2014.00128_Table1.tsv","Kazu","2014","Body_Mass.g","g","Body_Mass.g; body_mass_approximate"
+"10.3389%2Ffnana.2015.00039_TABLE1.tsv","Kazu","2015","Body_Mass.g","g","Body_Mass.g; body_mass_approximate"
+"10.6084%2Fm9.figshare.c.3899422.v1_Dataset1.tsv","Powell","2017","Body mass","g","logBodyMass; Body mass; N Body mass; Sex Body mass; Source Body mass; Original source Body mass"
+"ISBN%3A0390672505_TABLE1.tsv","Stephan","1970","body_weight_g","g","body_weight_g"
+"ISBN%3A0390672505_TABLE2.tsv","Stephan","1970","body_weight_g","g","body_weight_g"
+"ISBN%3A0390672505_TABLE3.tsv","Stephan","1970","body_weight_g","g","body_weight_g"
+"ISBN%3A0390672505_Tables1-6.tsv","Stephan","1970","body_weight_g","g","body_weight_g"
+"ISBN%3A0845140000_TABLE1.tsv","Stephan","1988","BoW_g","g","BoW_g"
+"NQ%3A61662_APPENDIXI.tsv","MacLeod","2000","body_weight_kg","kg","body_weight_kg; body_weight_raw"
+"PMID%3A7983368_Table1.tsv","Frahm","1994","body_weight_g","g","body_weight_g"
+"PMID%3A9672110_Table1.tsv","Frahm","1998","body_weight_g","g","body_weight_g"
+"UMI%3A3017523_TableA-15.tsv","Weaver","2001","BoMass_kg","kg","BoMass_kg; Body_Mass.g"

@@ -1,26 +1,31 @@
-Reference,Original_Term,side,required_suffix,note
-Bauernfeind_etal_2013_Table1,granular_L_mm3,left,_left,Bauernfeind Table 1 is the LEFT insula; right hemisphere is the paper's Table 2 (now snapshotted as Bauernfeind_etal_2013_Table2)
-Bauernfeind_etal_2013_Table1,dysgranular_L_mm3,left,_left,
-Bauernfeind_etal_2013_Table1,agranular_L_mm3,left,_left,
-Bauernfeind_etal_2013_Table1,FI_L_mm3,left,_left,
-Bauernfeind_etal_2013_Table1,total_insula_L_mm3,left,_left,
-Bauernfeind_etal_2013_Table2,granular_R_mm3,right,_right,Bauernfeind Table 2 is the RIGHT insula (the left is Table 1); combined to both-hemisphere insula in volumes_compiled.R
-Bauernfeind_etal_2013_Table2,dysgranular_R_mm3,right,_right,
-Bauernfeind_etal_2013_Table2,agranular_R_mm3,right,_right,
-Bauernfeind_etal_2013_Table2,FI_R_mm3,right,_right,
-Bauernfeind_etal_2013_Table2,total_insula_R_mm3,right,_right,
-Semendeferi_etal_1998_Table2,area13_volume_mm3,right,_right,Semendeferi 1998 area 13 (orbitofrontal) measured from the right hemisphere only; n=1/species
-Semendeferi_etal_2001_Table2,area10_volume_mm3,right,_right,Semendeferi 2001 area 10 (frontal pole) measured from the right hemisphere only; n=1/species
-Sherwood_etal_2005_Table1,facial_VII_mm3,left,_left,Sherwood 2005 cranial motor nuclei measured on the left side only
-Sherwood_etal_2005_Table1,trigeminal_motor_Vmo_mm3,left,_left,
-Sherwood_etal_2005_Table1,hypoglossal_XII_mm3,left,_left,
-Stephan_etal_1981_TableXII,Complexus_vestibularis_unilateral,unilateral,_unilateral,Baron et al. 1988 states the Stephan 1981 vestibular volumes were measured from one side only (the reformat names the data columns with the _unilateral suffix)
-Stephan_etal_1981_TableXII,Nucleus_vestibularis_superior_unilateral,unilateral,_unilateral,
-Stephan_etal_1981_TableXII,Nucleus_vestibularis_lateralis_unilateral,unilateral,_unilateral,
-Stephan_etal_1981_TableXII,Nucleus_vestibularis_medialis_unilateral,unilateral,_unilateral,
-Stephan_etal_1981_TableXII,Nucleus_vestibularis_descendens_unilateral,unilateral,_unilateral,
-Stephan_etal_1981_TableXIII,Complexus_vestibularis_unilateral,unilateral,_unilateral,Baron et al. 1988 states the Stephan 1981 vestibular volumes were measured from one side only (the reformat names the data columns with the _unilateral suffix)
-Stephan_etal_1981_TableXIII,Nucleus_vestibularis_superior_unilateral,unilateral,_unilateral,
-Stephan_etal_1981_TableXIII,Nucleus_vestibularis_lateralis_unilateral,unilateral,_unilateral,
-Stephan_etal_1981_TableXIII,Nucleus_vestibularis_medialis_unilateral,unilateral,_unilateral,
-Stephan_etal_1981_TableXIII,Nucleus_vestibularis_descendens_unilateral,unilateral,_unilateral,
+Reference,Original_Term,side,doubling,required_suffix,note
+Bauernfeind_etal_2013_Table1,granular_L_mm3,left,none,_left,Bauernfeind Table 1 is the LEFT insula; right hemisphere is the paper's Table 2 (now snapshotted as Bauernfeind_etal_2013_Table2). Printed values are the measured left side; where no right value exists the 2x is done by this project in step 7 (estimated_bilateral_from_unilateral).
+Bauernfeind_etal_2013_Table1,dysgranular_L_mm3,left,none,_left,
+Bauernfeind_etal_2013_Table1,agranular_L_mm3,left,none,_left,
+Bauernfeind_etal_2013_Table1,FI_L_mm3,left,none,_left,
+Bauernfeind_etal_2013_Table1,total_insula_L_mm3,left,none,_left,
+Bauernfeind_etal_2013_Table2,granular_R_mm3,right,none,_right,Bauernfeind Table 2 is the RIGHT insula (the left is Table 1); combined to both-hemisphere insula in volumes_compiled.R
+Bauernfeind_etal_2013_Table2,dysgranular_R_mm3,right,none,_right,
+Bauernfeind_etal_2013_Table2,agranular_R_mm3,right,none,_right,
+Bauernfeind_etal_2013_Table2,FI_R_mm3,right,none,_right,
+Bauernfeind_etal_2013_Table2,total_insula_R_mm3,right,none,_right,
+deSousa_etal_2010_Table1,left_V1_volume_cm3,left,none,_left,"de Sousa 2010 measured the LEFT hemisphere only (""We used sections from the left hemispheres of adult specimens""). Table 1 prints the measured left value UNDOUBLED, so it keeps the _left suffix. The paper's own doubled figures are in its Supplementary Table 2 (doubling = by_source), which is why bilateral_stems_exclude stops step 7 doubling these again."
+deSousa_etal_2010_Table1,left_LGN_volume_cm3,left,none,_left,
+deSousa_etal_2010_SupTable2,V1_area_striata_volume_cm3,left,by_source,,"DOUBLED IN THE PUBLISHED TABLE. de Sousa et al. 2010 Methods, verbatim: ""In all statistical analyses, left V1 and left LGN volumes were doubled to estimate the total (left plus right hemisphere) volumes of V1 and LGN for each specimen because the volumes of V1 (Amunts et al., 2007a) and LGN (H. Frahm, unpublished observation) apparently do not exhibit major asymmetries."" Verified: Sup Table 2 hominoid V1 = 2 x mean(Table 1 left V1) exactly (Homo 15.2 = 2x7.63; Pan paniscus 11.6 = 2x5.8; Gorilla 9.1 = 2x4.55; Hylobates lar 4.1 = 2x2.05). The value is a both-sides ESTIMATE, not a both-sides measurement, so it carries no laterality suffix and must never be doubled again."
+deSousa_etal_2010_SupTable2,LGN_volume_cm3,left,by_source,,"Same author-side doubling as the V1 column. Sup Table 2 LGN = 2 x the unrounded left-LGN mean; it does not reproduce from Table 1's printed LGN because Table 1 prints LGN to 1 decimal place (0.2, 0.3) and the specimen subset with LGN differs from the subset with V1."
+deSousa_etal_2013_Table1,Corpus_geniculatum_laterale_mm3,left,by_source,,"DOUBLED IN THE PUBLISHED TABLE, but the 2013 paper never says so - the convention is stated only in de Sousa et al. 2010. Evidence: 2013 Table 1 LGN reproduces de Sousa 2010 Supplementary Table 2 exactly for the species they share (Homo sapiens 0.335; Pongo pygmaeus 0.259; Hylobates lar 0.166), and 2010 documents those figures as 2 x left. The 2013 Methods only state that ""A minimum of one left hemisphere was investigated per species, although both right and left hemispheres were investigated for most specimens."" This is the one doubled column that is LIVE in the merge: it enters as the unsuffixed both-sides term Corpus_geniculatum_laterale_Vol.mm3 and is Tier-2 averaged with the Stephan-collection LGN."
+Semendeferi_etal_1998_Table2,area13_volume_mm3,right,none,_right,Semendeferi 1998 area 13 (orbitofrontal) measured from the right hemisphere only; n=1/species
+Semendeferi_etal_2001_Table2,area10_volume_mm3,right,none,_right,Semendeferi 2001 area 10 (frontal pole) measured from the right hemisphere only; n=1/species
+Sherwood_etal_2005_Table1,facial_VII_mm3,left,none,_left,Sherwood 2005 cranial motor nuclei measured on the left side only
+Sherwood_etal_2005_Table1,trigeminal_motor_Vmo_mm3,left,none,_left,
+Sherwood_etal_2005_Table1,hypoglossal_XII_mm3,left,none,_left,
+Stephan_etal_1981_TableXII,Complexus_vestibularis_unilateral,unilateral,none,_unilateral,Baron et al. 1988 states the Stephan 1981 vestibular volumes were measured from one side only (the reformat names the data columns with the _unilateral suffix)
+Stephan_etal_1981_TableXII,Nucleus_vestibularis_superior_unilateral,unilateral,none,_unilateral,
+Stephan_etal_1981_TableXII,Nucleus_vestibularis_lateralis_unilateral,unilateral,none,_unilateral,
+Stephan_etal_1981_TableXII,Nucleus_vestibularis_medialis_unilateral,unilateral,none,_unilateral,
+Stephan_etal_1981_TableXII,Nucleus_vestibularis_descendens_unilateral,unilateral,none,_unilateral,
+Stephan_etal_1981_TableXIII,Complexus_vestibularis_unilateral,unilateral,none,_unilateral,Baron et al. 1988 states the Stephan 1981 vestibular volumes were measured from one side only (the reformat names the data columns with the _unilateral suffix)
+Stephan_etal_1981_TableXIII,Nucleus_vestibularis_superior_unilateral,unilateral,none,_unilateral,
+Stephan_etal_1981_TableXIII,Nucleus_vestibularis_lateralis_unilateral,unilateral,none,_unilateral,
+Stephan_etal_1981_TableXIII,Nucleus_vestibularis_medialis_unilateral,unilateral,none,_unilateral,
+Stephan_etal_1981_TableXIII,Nucleus_vestibularis_descendens_unilateral,unilateral,none,_unilateral,

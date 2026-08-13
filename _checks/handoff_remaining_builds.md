@@ -1,5 +1,16 @@
 # Handoff — finish processing Evo-M1-Trait-Data
 
+> **This file answers "how do I finish this folder?"** — the build workflow, what each folder still
+> needs, and the QA pass. It assumes the source is already wanted.
+>
+> **`SCOUTING_AND_SCOPING.md` answers "should this source be here at all?"** — candidate papers,
+> curator/owner inclusion decisions (several are ❌ EXCLUDED or 🚫 OUT OF SCOPE), tier ranking, and the
+> taxonomy/backbone design note that gates non-mammals.
+>
+> Deliberately separate: inclusion is a **decision record** that should stay stable and citable; this
+> is a **working plan** that churns as batches land. **Check the inclusion decision there before
+> building anything here** — a folder with a PDF in it is not evidence that it was wanted.
+
 Master plan for completing the dataset. Work in
 `~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data`.
 This is large (~45 folders to build/finish + ~41 to QA), so run it in **batches across
@@ -85,6 +96,56 @@ Several are behavioural/ecological (Granatosky, Heldstab, ManyPrimates, Wilman, 
 Winkler) — same workflow, the "table" is just behavioural/ecological traits. Some have no
 registry row yet (Smaers_Soligo_2013, Smaers_etal_2018) — add one (don't touch formula cols).
 
+## Phase 3b — registry rows with **no `Item number`** (8)
+
+Surfaced 2026-08-12 while debugging a `volumes_compiled_select.R` failure. These rows exist in
+`__ReadMe.xlsx` with a citation and a DOI but **col D (`Item number`) is empty**, so the K/L formulas
+render `Item name` / `Item encoded` with a **bare trailing underscore** (`Ebinger__1974_`,
+`10.1007%2FBF00522811_`). Nothing looks broken — A, F, J and the K/L formulas are all intact and the
+workbook opens fine — but the row can never resolve to a TSV, and any script that asks for it dies
+with *"no encoding (not in `__ReadMe.xlsx` 'Item name' and no `enc_override`)"*.
+
+**Diagnostic (cheap, run it before any merge):** sweep the cached `Item name` / `Item encoded` for a
+trailing `_`. On 2026-08-12 that returned **9** rows. One — `Matano__1986` — was a real breakage
+(its `10.1159%2F000156277_TableI.tsv` was already exported and the merge had previously cited it);
+D185 has been restored to `Table I` and verified by `soffice` recalc. The other 8 are below: the row
+was registered from the citation and the item never got built.
+
+The tell that separates "broken" from "not built yet" is an **orphaned TSV in
+`__Public/comparative-data/` matching the DOI prefix** — that filename hands you the item number that
+went missing. None of the 8 has one (and no TSV in the folder ends in a bare `_`, so nothing was ever
+built against a blank D).
+
+| Row | Folder | What's there now | Pattern | What it needs |
+|---|---|---|---|---|
+| 65 | `Ebinger__1974` | PDF + `comparison/*.xlsx` (Adobe export, sheet `Table 1`) | **Phase 2 ready-to-build** | snapshot + R + definitions + README, then set D |
+| 207 | `Schleifenbaum__1973` | PDF + `comparison/Schleifenbaum Canis brain region volumes.xlsx` | **Phase 2 ready-to-build** | same (export was cloud-only at time of writing — materialise it first) |
+| 24 | `Baron_etal_1996` | PDF only | **Phase 3 raw-only** | Chiroptera *book* (Birkhäuser), macromorphology + brain-structure tables + atlases. Multi-table, so it needs **one registry row per table**, not one for the book. `DOI (or Alt)` is `#N/A` — assign an ISBN-based identifier before exporting |
+| 193 | `Navarrete_etal_2016` | PDF only | **EXCLUDED — leave alone** | candidate #3 in `SCOUTING_AND_SCOPING.md`: ❌ excluded, technical innovation is sourced from **Reader** instead (curator decision 3). Empty D is **correct**. Do not build. (Distinct from Navarrete **2018**, also excluded, owner-flagged, scaffold deleted — don't conflate them) |
+| 194 | `Nguyen_etal_2019` | PDF only | **Phase 3 raw-only** | comparative neocortical neuromorphology (Sherwood/Manger/Hof) → cell-count / morphology side. Not scouted, no inclusion decision on record — get one before building |
+| 190 | `MedinaGonzalez_2026` | README + `reference_tables/*_definitions.csv` | **blocked, not stalled** | scaffold done; needs the **Zenodo download** (`10.5281/zenodo.15425733`) — egress proxy blocked it in the scaffolding session. Pull locally, check the licence, then write `10.1002%2Fjez.70069_Data.tsv` and set D |
+| 200 | `Olkowicz_etal_2016` | README + `TableS1.R` + definitions | **blocked, deliberately** | birds — the dataset behind the "Premature — non-mammal" hold in `SCOUTING_AND_SCOPING.md` Part 1. Hard-blocked on the de-MDD resolver (Part 2, do-first step 4). Leave D empty until `Class` gating exists — setting it early would publish a row the resolver silently drops |
+| 288 | `Weaver_2005` | PDF + `Weaver_2005_NOTE.md` | **documented skip — leave alone** | no extractable table (Table 1 is qualitative; CQ is a derived index, not transcribed). Its data is `Weaver_2001`, already built. The empty D is **correct here** — do not "fix" it |
+
+So: **2 ready to build**, **2 raw-only**, **2 blocked on prerequisites**, **2 correctly empty** (leave
+them alone). Half of these are cheap to get wrong the same way — an empty `Item number` *looks* like a
+to-do, and for four of the eight it is the recorded answer. **Check `SCOUTING_AND_SCOPING.md` for an
+inclusion decision before building any of them**: that file, not this one, is where "should this source
+be in the dataset" is settled.
+
+When you do set D, follow the Gotchas above — `Item number` exactly as printed, and never write the
+formula columns (E–M) by hand. If you have to repair col D at the XML level rather than in Excel, the
+method and its traps are in the project memory note *"__ReadMe.xlsx col D empties itself"*: check
+`sharedStrings.xml` first (the item string usually already exists, making it a one-cell edit), hand-
+update the cached `<v>` of K and L, leave `<f>` alone, and verify with
+`soffice --headless --convert-to csv` — that recalc is what proves the cached values equal what Excel
+would compute.
+
+**Watch it recur.** Col D on this workbook has emptied itself at least once with no edit from us; the
+OneDrive/Excel rewriter is the suspect (same rewriter documented under "never write
+`<t xml:space="preserve">`"). Re-run the trailing-`_` sweep at the close of each batch alongside the
+variable catalog.
+
 ## Phase 4 — QA the 41 already-built folders
 
 Check each for: (a) the snapshot actually **looks like the source table** (the Smaers 2017
@@ -135,6 +196,14 @@ for every new row), and add the paper PDF to any folder missing it.
 
 ## State at handoff
 
+- **2026-08-12:** `Smaers_etal_2011_SupplementaryTable1` wired into `volumes_compiled_select.R` —
+  total frontal lobe **grey** matter, 19 species incl. *Homo*, grey-only/whole-lobe scope. Everything
+  it needed already existed except the tribble row. Note the finding that prompted it: Smaers 2017
+  `prefrontal_gray` + `frontal_motor_gray` are **not** a partition of the frontal lobe (they sum to
+  ~36% of it), so total frontal grey cannot be rebuilt from the subregions — see
+  `__merging_volumes/Smaers_frontal_grey_FINDINGS.md`. Same session: `__ReadMe.xlsx` D185 repaired
+  (Phase 3b above), and the Smaers 2011 orangutan identified as **YN85-38 = *Pongo abelii*** (a
+  specimen swap out of Smaers 2010's "Harry", not a re-measurement) — `Pongo_specimen_note.md` §4.
 - Done this session: Stephan 1981 (master table), plus prior: Frahm & Stephan 1982, Stephan 1982
   (AOB), Baron 1983/1987/1988, de Sousa 2010/2013, MacLeod 2003, Smaers 2017 (volumes only — to be
   re-done per above).

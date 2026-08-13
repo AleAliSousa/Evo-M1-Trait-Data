@@ -77,6 +77,44 @@ catalog 'Harry'  (CAT-148, Zilles, Yerkes)  = MacLeod HARRY (2/97) / OY 1148
 catalog 'Briggs' (CAT-147, Zilles, Yerkes)  = MacLeod BRIGGS (5/97) / OHDZ / 6728
 ```
 
+### 4. Smaers swapped orangutan between 2010 and 2011 — and the merge takes the Sumatran one
+
+Added 2026-08-12, while wiring total frontal grey matter into
+`volumes_compiled_select.R`.
+
+Smaers' two frontal-lobe tables print *different* orangutans under the same
+label "*Pongo pygmaeus*", and the change is invisible unless you read the
+catalogue numbers:
+
+| source | printed catalogue | = catalog / MacLeod id | brain vol (Smaers) | MacLeod brain g | implied density |
+|---|---|---|---|---|---|
+| Smaers et al. 2010 Table 1 | `297` | CAT-148 `simple code` 297 = **HARRY** / OY 1148 | 424.7 cm³ | 440 | 1.036 g/cm³ |
+| Smaers et al. 2011 Suppl. Table 1 | `yn85 38` | **YN85-38** (candidate CAT-150) | 356.2 cm³ | 369 | 1.036 g/cm³ |
+
+Both identifications land on the same implied brain density (1.036 g/cm³), which
+is what confirms them: the catalogue numbers alone are ambiguous, the
+mass-to-volume ratio is not.
+
+The consequence for the data: **Pongo is the one species whose frontal grey
+matter changes materially between the two Smaers tables — −33% (64.44 → 42.96
+cm³) — and none of that is re-measurement.** Every other species' total brain
+volume agrees between 2010 and 2011 to within 0.01%, so the same brains were
+re-used throughout; only the orangutan was replaced. Reading the −33% as
+measurement drift would be wrong.
+
+Because `volumes_compiled_select.R` selects Smaers 2011 (not 2010), the
+orangutan value in the merge is **YN85-38 = *Pongo abelii*** — the Sumatran
+animal — carried under the lumped label `Pongo sp.`. Smaers et al. 2017 carries
+the same individual forward (its Pongo `prefrontal_gray` 8.596 cm³ = the 2011
+`sec5_grey_total` 8.60 for `yn85 38`), so the `FrontalMotor_grey/white` values
+already in `volumes_wide_select.csv` under `Pongo sp.` are this same Sumatran
+brain.
+
+Note this is a **specimen** case, not a concept case: n = 1, so nothing is
+pooled and nothing needs un-averaging. `Pongo sp.` here is a genus-level *label*
+over a single Sumatran individual, not a genus mean — the do-not-split rule
+below does not apply to it, and `resolved_taxon = Pongo abelii` does.
+
 ## Recommended database treatment
 
 ### Specimen level (`specimen_crosswalk.csv`)

@@ -82,6 +82,7 @@ papers <- tribble(
   "Baron_etal_1990_Table1",               "Stephan_collection", 1990,
   "Matano_etal_1985_a_Table1",            "Stephan_collection", 1985,
   "Matano_etal_1985_b_Table1",            "Stephan_collection", 1985,
+  "Matano__1986_TableI",                  "Stephan_collection", 1986,  # vestibular nuclei, ONE SIDE (_unilateral terms). Data role 'both': 27 spp. are Stephan 1981 TableXIII re-printed (identical to the digit), 19 spp. are new. No suppression needed -- Tier-1 most-recent supersedes 1981, and Baron_etal_1988_Table1 (bilateral, all 46 spp.) supersedes this in turn.
   "Zilles_Rehkämper_1988_Table12-2",      "Stephan_collection", 1988,
   "deSousa_etal_2010_Table1",             "Zilles",             2010,
   "deSousa_etal_2013_Table1",             "Zilles",             2013,
@@ -514,13 +515,18 @@ is_mass <- function(v) v %in% c("Body_Mass.g","Brain_Mass.mg")
 ## 5 Tier-1 resolution (Stephan_collection): most recent; mass -> Stephan 1981; flag deviations ----
 flags <- tibble(Species=character(), Variable=character(), flag=character(), detail=character())
 t1 <- long %>% filter(Team == "Stephan_collection") %>% arrange(Species, Variable, desc(Year))
+## `keep_i` is the index of the row actually taken, so Source/Year can be stamped from the SAME row
+## as Value (never re-derived) -- this is what makes the Sources column in volumes_long.csv the true
+## provenance of the number rather than a plausible-looking guess.
 t1res <- t1 %>% group_by(Species, Variable) %>% summarise(
-  Value = if (is_mass(first(Variable))) {
-            # Mass -> Stephan 1981 reference. Body/brain mass live in the 1981 fundamental tables,
-            # split from the former bundled "Stephan_etal_1981_TablesI-VI" into per-taxon Tables I/II/III.
-            s81 <- Value[grepl("^Stephan_etal_1981_Table(I{1,3})$", Source)]; if (length(s81)) s81[1] else Value[1]
-          } else Value[1],
-  .groups = "drop")
+  keep_i = if (is_mass(first(Variable))) {
+             # Mass -> Stephan 1981 reference. Body/brain mass live in the 1981 fundamental tables,
+             # split from the former bundled "Stephan_etal_1981_TablesI-VI" into per-taxon Tables I/II/III.
+             s81 <- which(grepl("^Stephan_etal_1981_Table(I{1,3})$", Source))
+             if (length(s81)) s81[1] else 1L
+           } else 1L,
+  Value = Value[keep_i], Source = Source[keep_i], Year = Year[keep_i],
+  .groups = "drop") %>% select(-keep_i)
 # flags: newest vs next within Tier-1 (non-mass)
 t1 %>% group_by(Species, Variable) %>% filter(n() > 1, !is_mass(first(Variable))) %>%
   summarise(v0=Value[1], s0=Source[1], v1=Value[2], s1=Source[2], .groups="drop") %>%
@@ -529,14 +535,45 @@ t1 %>% group_by(Species, Variable) %>% filter(n() > 1, !is_mass(first(Variable))
 write_csv(flags, "volumes_flags.csv")
 
 ## 6 Tier-2 (each its own team, mean within team) + cross-team average ----
+## Within a Tier-2 team the value is the MEAN over that team's tables, so its provenance is a SET of
+## item names, not one: keep them all (" + "), plus the newest year among them.
 t2 <- long %>% filter(Team != "Stephan_collection") %>%
-  group_by(Species, Variable, Team) %>% summarise(Value = mean(Value), .groups="drop")
+  group_by(Species, Variable, Team) %>% summarise(
+    Value = mean(Value),
+    Source = paste(sort(unique(Source)), collapse = " + "),
+    Year = max(Year), .groups="drop")
 teamvals <- bind_rows(t1res %>% mutate(Team = "Stephan_collection"), t2)
+
+## ---- 6b Per-cell source provenance ----------------------------------------------------------
+## `Teams` alone cannot be reported in a publication: a team is a lab/collection grouping, not a
+## reference. These columns name the actual TABLES the number came from, so any cell in
+## volumes_long.csv can be cited without re-deriving the merge:
+##   Sources       every contributing item name, "; "-separated (the ones AVERAGED into Value)
+##   n_sources     how many
+##   Source_detail which team contributed which table -- "Team: item + item | Team: item"
+##   Year_used     newest publication year among the contributors
+## Item name -> APA citation + DOI + which table is volumes_source_citations.csv (written below);
+## the fully exploded one-row-per-contributor table is volumes_source_contributions.csv.
 volumes_long <- teamvals %>% group_by(Species, Variable) %>% summarise(
-  Value = if (is_mass(first(Variable)))                       # mass: Stephan reference only (no cross-team avg)
-            { sc <- Value[Team=="Stephan_collection"]; if (length(sc)) sc[1] else Value[1] }
-          else mean(Value),
-  Teams = paste(sort(unique(Team)), collapse="; "), n_teams = n_distinct(Team), .groups="drop") %>%
+  # mass: Stephan reference only (no cross-team avg) -> take that team's row wholesale, so Sources
+  # names the reference table actually used rather than every team that happens to report a mass.
+  keep_i = if (is_mass(first(Variable)))
+             { sc <- which(Team == "Stephan_collection"); if (length(sc)) sc[1] else 1L } else NA_integer_,
+  Value = if (is.na(keep_i)) mean(Value) else Value[keep_i],
+  Teams = if (is.na(keep_i)) paste(sort(unique(Team)), collapse="; ") else Team[keep_i],
+  n_teams = if (is.na(keep_i)) n_distinct(Team) else 1L,
+  # Sources is always a "; " list of INDIVIDUAL item names: a Tier-2 team that averaged several of
+  # its own tables arrives here as "A + B", so split before re-collapsing or the exploded
+  # contributions table would carry "A + B" as if it were one uncitable item.
+  Sources = { s <- if (is.na(keep_i)) Source else Source[keep_i]
+              paste(sort(unique(trimws(unlist(strsplit(s, " + ", fixed = TRUE))))), collapse = "; ") },
+  n_sources = if (is.na(keep_i)) n_distinct(unlist(strsplit(Source, " + ", fixed = TRUE))) else
+                n_distinct(unlist(strsplit(Source[keep_i], " + ", fixed = TRUE))),
+  Source_detail = { i <- if (is.na(keep_i)) order(Team) else keep_i
+                    paste(paste0(Team[i], ": ", Source[i]), collapse = " | ") },
+  Year_used = if (is.na(keep_i)) max(Year) else Year[keep_i],
+  .groups="drop") %>%
+  select(-keep_i) %>%
   arrange(Species, Variable)
 write_csv(volumes_long, "volumes_long.csv")
 
@@ -578,9 +615,12 @@ bilat <- bind_rows(bilat)
 # variable already exists for that species (e.g. Baron 1988 measured the vestibular complex
 # bilaterally, so its real value wins over 2x the Stephan one-side figure).
 bilat <- bilat %>% anti_join(volumes_long %>% distinct(Species, Variable), by = c("Species","Variable"))
-src_meta <- volumes_long %>% transmute(Species, src = Variable, Teams, n_teams)
+## A derived both-sides value inherits the provenance of the one-side variable(s) it was built from --
+## that is the paper a reader must cite for it, even though the arithmetic happened here.
+src_meta <- volumes_long %>% transmute(Species, src = Variable, Teams, n_teams,
+                                       Sources, n_sources, Source_detail, Year_used)
 bilat_long <- bilat %>% left_join(src_meta, by = c("Species","src")) %>%
-  transmute(Species, Variable, Value, Teams, n_teams)
+  transmute(Species, Variable, Value, Teams, n_teams, Sources, n_sources, Source_detail, Year_used)
 volumes_long <- bind_rows(volumes_long, bilat_long) %>% arrange(Species, Variable)
 write_csv(volumes_long, "volumes_long.csv")
 
@@ -622,6 +662,58 @@ write_csv(volumes_wide, "volumes_wide.csv")
 # inventory: which sources contributed each (resolved) species
 long %>% group_by(Species_Name = Species) %>% summarise(n_sources=n_distinct(Source), Sources=paste(sort(unique(Source)),collapse="; ")) %>%
   write_csv("volumes_species_sources.csv")
+
+## ---- 8b Publication provenance: contributions + citations ------------------------------------
+## volumes_long.csv collapses provenance into strings so it stays one row per species x variable.
+## These two files are the un-collapsed form, which is what a supplementary source table needs:
+##   volumes_source_contributions.csv  one row per species x variable x CONTRIBUTING TABLE, with the
+##     per-source value alongside the merged value (so a reader can see what was averaged, and by how
+##     much any single source differs from the published mean).
+##   volumes_source_citations.csv      item name -> APA citation, DOI/ISBN, journal, and WHICH TABLE.
+## Both are keyed on the same `Source` item names that appear in volumes_long.csv / _unfiltered.csv.
+contrib <- volumes_long %>%
+  select(Species, Variable, merged_Value = Value, Teams, n_teams, n_sources, Year_used) %>%
+  # explode the collapsed Sources string back to one row per contributing table, then re-attach the
+  # per-source value from `long` (the pre-resolution table) so nothing is re-derived here.
+  left_join(volumes_long %>% select(Species, Variable, Sources), by = c("Species","Variable")) %>%
+  separate_longer_delim(Sources, delim = "; ") %>%
+  rename(Source = Sources) %>%
+  left_join(long %>% group_by(Species, Variable, Source, Team, Year) %>%
+              summarise(source_Value = mean(Value), n_rows_in_source = n(), .groups = "drop"),
+            by = c("Species","Variable","Source")) %>%
+  mutate(role = case_when(
+           # step 7's both-sides variables are arithmetic on a one-side table (left+right, or 2x),
+           # so that table prints no figure for this term: source_Value is legitimately absent. Say
+           # so explicitly -- a bare NA in a publication-facing file reads as missing data.
+           is.na(source_Value) ~ paste0("derived both-hemisphere value (step 7: left+right, or 2x a ",
+                                        "one-side measurement); cite this source for the one-side figure"),
+           # mass is pinned to the Stephan 1981 reference, so other sources exist but were NOT used
+           # -- say so, or a reader would take the single row as "nobody else measured it".
+           is_mass(Variable) ~ "reference table used (mass rule: other sources not averaged in)",
+           n_sources == 1L   ~ "sole source",
+           TRUE              ~ "averaged into the merged value"),
+         pct_diff_from_merged = ifelse(!is.na(source_Value) & merged_Value != 0,
+                                       round(100 * (source_Value - merged_Value) / merged_Value, 2),
+                                       NA_real_)) %>%
+  select(Species, Variable, Source, Team, Year, source_Value, merged_Value,
+         pct_diff_from_merged, role, n_rows_in_source, Teams, n_teams, n_sources, Year_used) %>%
+  arrange(Species, Variable, Source)
+# Step 7's derived both-sides variables inherit their provenance from the one-side variable, whose
+# item name IS carried, so they explode correctly; rows whose source_Value is NA are exactly those
+# (the value is arithmetic on the inherited source, not a printed figure in that table).
+source(file.path(folder, "source_citations.R"))
+citations <- source_citations(base, unique(c(long$Source, contrib$Source)))
+write_csv(citations, "volumes_source_citations.csv")
+# Attach a short human citation to each contribution row, so the contributions file alone is enough
+# to draft a supplementary source table (the full APA string + DOI stays in the citations file, which
+# is where it belongs -- repeating a 200-character citation on 7,800 rows would be waste).
+contrib <- contrib %>%
+  left_join(citations %>% select(Source, Cited_as, DOI_or_ISBN), by = "Source") %>%
+  relocate(Cited_as, DOI_or_ISBN, .after = Source)
+write_csv(contrib, "volumes_source_contributions.csv")
+message("Provenance: ", nrow(contrib), " species x variable x source contribution(s) from ",
+        nrow(citations), " citable source table(s); ",
+        sum(is.na(citations$Citation)), " without a registry citation.")
 
 message(nrow(volumes_wide), " species x ", ncol(volumes_wide)-1, " variables from ", nrow(papers),
         " tables | flags: ", nrow(flags))

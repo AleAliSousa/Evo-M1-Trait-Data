@@ -273,7 +273,17 @@ and the rule written up in `__merging_cellcounts/README__merging.md`.
 
 `Brodmann__1913_Tabelle1` (placeholder DOI — see above), `Garwicz_etal_2009_TableS2` (published
 inside TableS1 — see above), `Isler_etal_2008_Tree.nex` (a phylogeny), and `Navarrete_etal_2016_`,
-`Manger__2006_Table1`, `Matano__1986_`, `MedinaGonzalez__2026_`, `Weaver__2005_` (no matching folder).
+`Manger__2006_Table1`, `MedinaGonzalez__2026_`, `Weaver__2005_` (no matching folder).
+
+> **Correction (2026-08-10) — `Matano__1986_` was listed here in error.** It appeared under "no
+> matching folder" only because the `Matano__1986/` folder did not exist when this audit ran on
+> 2026-08-05 (it is absent from `folder_audit_20260805.csv`). It is a genuine table build: the folder
+> holds the scanned PDF, the registry row now reads `Matano__1986_TableI` (Item number "Table I"),
+> and the table has since been built — 46 species × 4 vestibular nuclei + complex, OCR'd in two
+> independent passes and audited against the paper's own Table III percentages (0/230 mismatches).
+> It is **not** a re-report: 27 of its species are Stephan et al. 1981 Table XIII re-printed, but 19
+> are new. Merged as Tier-1 `Stephan_collection` 1986 (one-side volumes, `_unilateral` terms). See
+> `Matano__1986/Matano__1986_TableI.README.md`.
 
 ### Registry hygiene, not builds — for the owner
 
@@ -292,8 +302,10 @@ inside TableS1 — see above), `Isler_etal_2008_Tree.nex` (a phylogeny), and `Na
    a primary dataset kept as its own comparison set. The three TSVs were published on that reading;
    the role field looks like a mislabel.
 4. **`Isler_etal_2008_Tree.nex`** is a phylogeny, and **`Navarrete_etal_2016_`**,
-   **`Manger__2006_Table1`**, **`Matano__1986_`**, **`MedinaGonzalez__2026_`**, **`Weaver__2005_`**
+   **`Manger__2006_Table1`**, **`MedinaGonzalez__2026_`**, **`Weaver__2005_`**
    have no matching folder. None of these is a table build.
+   *(**`Matano__1986_` removed 2026-08-10** — see the correction under "Not table builds" above; the
+   folder simply did not exist when this audit ran, and the table has since been built.)*
 
 ### Genuine remaining builds with sources in hand
 

@@ -425,11 +425,15 @@ is_mass <- function(v) v %in% c("Body_Mass.g","Brain_Mass.mg")
 ## 5 Tier-1 resolution (Stephan_collection): most recent; mass -> Stephan 1981; flag deviations ----
 flags <- tibble(Species=character(), Variable=character(), flag=character(), detail=character())
 t1 <- long %>% filter(Team == "Stephan_collection") %>% arrange(Species, Variable, desc(Year))
+## `keep_i` is the index of the row actually taken, so Source/Year can be stamped from the SAME row
+## as Value (never re-derived) -- what makes the Sources column real provenance rather than a guess.
 t1res <- t1 %>% group_by(Species, Variable) %>% summarise(
-  Value = if (is_mass(first(Variable))) {
-            s81 <- Value[Source == "Stephan_etal_1981_TablesI-VI"]; if (length(s81)) s81[1] else Value[1]
-          } else Value[1],
-  .groups = "drop")
+  keep_i = if (is_mass(first(Variable))) {
+             s81 <- which(Source == "Stephan_etal_1981_TablesI-VI")
+             if (length(s81)) s81[1] else 1L
+           } else 1L,
+  Value = Value[keep_i], Source = Source[keep_i], Year = Year[keep_i],
+  .groups = "drop") %>% select(-keep_i)
 # flags: newest vs next within Tier-1 (non-mass)
 t1 %>% group_by(Species, Variable) %>% filter(n() > 1, !is_mass(first(Variable))) %>%
   summarise(v0=Value[1], s0=Source[1], v1=Value[2], s1=Source[2], .groups="drop") %>%
@@ -438,14 +442,38 @@ t1 %>% group_by(Species, Variable) %>% filter(n() > 1, !is_mass(first(Variable))
 write_csv(flags, DeCasien_csv("volumes_flags"))
 
 ## 6 Tier-2 (each its own team, mean within team) + cross-team average ----
+## Within a Tier-2 team the value is the MEAN over that team's tables, so its provenance is a SET of
+## item names, not one: keep them all (" + "), plus the newest year among them.
 t2 <- long %>% filter(Team != "Stephan_collection") %>%
-  group_by(Species, Variable, Team) %>% summarise(Value = mean(Value), .groups="drop")
+  group_by(Species, Variable, Team) %>% summarise(
+    Value = mean(Value),
+    Source = paste(sort(unique(Source)), collapse = " + "),
+    Year = max(Year), .groups="drop")
 teamvals <- bind_rows(t1res %>% mutate(Team = "Stephan_collection"), t2)
+
+## ---- 6b Per-cell source provenance (mirrors step 6b of volumes_compiled.R) --------------------
+## `Teams` is a lab/collection grouping, not a reference, so it cannot be cited. These columns name
+## the actual TABLES behind each number: Sources / n_sources / Source_detail ("Team: item | ...") /
+## Year_used. Item name -> APA citation is volumes_source_citations_DeCasien.csv (step 8b).
 volumes_long <- teamvals %>% group_by(Species, Variable) %>% summarise(
-  Value = if (is_mass(first(Variable)))                       # mass: Stephan reference only (no cross-team avg)
-            { sc <- Value[Team=="Stephan_collection"]; if (length(sc)) sc[1] else Value[1] }
-          else mean(Value),
-  Teams = paste(sort(unique(Team)), collapse="; "), n_teams = n_distinct(Team), .groups="drop") %>%
+  # mass: Stephan reference only (no cross-team avg) -> take that team's row wholesale, so Sources
+  # names the reference table actually used rather than every team that reports a mass.
+  keep_i = if (is_mass(first(Variable)))
+             { sc <- which(Team == "Stephan_collection"); if (length(sc)) sc[1] else 1L } else NA_integer_,
+  Value = if (is.na(keep_i)) mean(Value) else Value[keep_i],
+  Teams = if (is.na(keep_i)) paste(sort(unique(Team)), collapse="; ") else Team[keep_i],
+  n_teams = if (is.na(keep_i)) n_distinct(Team) else 1L,
+  # always a "; " list of INDIVIDUAL item names: a Tier-2 team that averaged several of its own
+  # tables arrives as "A + B", so split before re-collapsing.
+  Sources = { s <- if (is.na(keep_i)) Source else Source[keep_i]
+              paste(sort(unique(trimws(unlist(strsplit(s, " + ", fixed = TRUE))))), collapse = "; ") },
+  n_sources = { s <- if (is.na(keep_i)) Source else Source[keep_i]
+                n_distinct(trimws(unlist(strsplit(s, " + ", fixed = TRUE)))) },
+  Source_detail = { i <- if (is.na(keep_i)) order(Team) else keep_i
+                    paste(paste0(Team[i], ": ", Source[i]), collapse = " | ") },
+  Year_used = if (is.na(keep_i)) max(Year) else Year[keep_i],
+  .groups="drop") %>%
+  select(-keep_i) %>%
   arrange(Species, Variable)
 write_csv(volumes_long, DeCasien_csv("volumes_long"))
 
@@ -496,7 +524,10 @@ bilat <- bind_rows(bilat)
 # variable already exists for that species (e.g. Baron 1988 measured the vestibular complex
 # bilaterally, so its real value wins over 2x the Stephan one-side figure).
 bilat <- bilat %>% anti_join(volumes_long %>% distinct(Species, Variable), by = c("Species","Variable"))
-src_meta <- volumes_long %>% transmute(Species, src = Variable, Teams, n_teams)
+## A derived both-sides value inherits the provenance of the one-side variable it was built from --
+## that is the paper a reader must cite for it, even though the arithmetic happened here.
+src_meta <- volumes_long %>% transmute(Species, src = Variable, Teams, n_teams,
+                                       Sources, n_sources, Source_detail, Year_used)
 bilat_long <- bilat %>% left_join(src_meta, by = c("Species","src")) %>%
   transmute(Species, Variable, Value, Teams, n_teams)
 volumes_long <- bind_rows(volumes_long, bilat_long) %>% arrange(Species, Variable)
@@ -536,6 +567,40 @@ write_csv(volumes_wide, DeCasien_csv("volumes_wide"))
 # inventory: which sources contributed each (resolved) species
 long %>% group_by(Species_Name = Species) %>% summarise(n_sources=n_distinct(Source), Sources=paste(sort(unique(Source)),collapse="; ")) %>%
   write_csv(DeCasien_csv("volumes_species_sources"))
+
+## ---- 8b Publication provenance: contributions + citations (mirrors volumes_compiled.R 8b) -----
+##   volumes_source_contributions_DeCasien.csv  one row per species x variable x CONTRIBUTING TABLE
+##   volumes_source_citations_DeCasien.csv      item name -> APA citation, DOI/ISBN, WHICH TABLE
+contrib <- volumes_long %>%
+  select(Species, Variable, merged_Value = Value, Sources, Teams, n_teams, n_sources, Year_used) %>%
+  separate_longer_delim(Sources, delim = "; ") %>%
+  rename(Source = Sources) %>%
+  left_join(long %>% group_by(Species, Variable, Source, Team, Year) %>%
+              summarise(source_Value = mean(Value), n_rows_in_source = n(), .groups = "drop"),
+            by = c("Species","Variable","Source")) %>%
+  mutate(role = case_when(
+           # step 7's both-sides variables are arithmetic on a one-side table, which prints no figure
+           # for this term: source_Value is legitimately absent, not missing data.
+           is.na(source_Value) ~ paste0("derived both-hemisphere value (step 7: left+right, or 2x a ",
+                                        "one-side measurement); cite this source for the one-side figure"),
+           is_mass(Variable) ~ "reference table used (mass rule: other sources not averaged in)",
+           n_sources == 1L   ~ "sole source",
+           TRUE              ~ "averaged into the merged value"),
+         pct_diff_from_merged = ifelse(!is.na(source_Value) & merged_Value != 0,
+                                       round(100 * (source_Value - merged_Value) / merged_Value, 2),
+                                       NA_real_)) %>%
+  select(Species, Variable, Source, Team, Year, source_Value, merged_Value,
+         pct_diff_from_merged, role, n_rows_in_source, Teams, n_teams, n_sources, Year_used) %>%
+  arrange(Species, Variable, Source)
+source(file.path(folder, "source_citations.R"))
+citations <- source_citations(base, unique(c(long$Source, contrib$Source)))
+write_csv(citations, DeCasien_csv("volumes_source_citations"))
+contrib <- contrib %>%
+  left_join(citations %>% select(Source, Cited_as, DOI_or_ISBN), by = "Source") %>%
+  relocate(Cited_as, DOI_or_ISBN, .after = Source)
+write_csv(contrib, DeCasien_csv("volumes_source_contributions"))
+message("[DeCasien] Provenance: ", nrow(contrib), " contribution(s) from ", nrow(citations),
+        " citable source table(s); ", sum(is.na(citations$Citation)), " without a registry citation.")
 
 message("[DeCasien] ", nrow(volumes_wide), " species x ", ncol(volumes_wide)-1, " variables from ",
         nrow(papers), " tables | flags: ", nrow(flags), " | outputs: volumes_*_DeCasien.csv")

@@ -10,6 +10,17 @@ detail, and what each unfinished source still needs.
 **Part 2** — the design note on wide-coverage "backbone" traits and growing the dataset beyond
 mammals.
 
+> **This file is the inclusion decision record** — *should this source be in the dataset at all?*
+> Several entries are ❌ EXCLUDED or 🚫 OUT OF SCOPE by owner decision; those are answers, not gaps.
+> Treat it as stable and citable — amend it only with an explicit decision.
+>
+> **`_checks/handoff_remaining_builds.md` is the build plan** — *how do I finish a folder we've
+> already decided to keep?* Workflow, per-folder status, phases, QA. It churns as batches land.
+>
+> Where the two touch: **Phase 3b** over there lists registry rows whose `Item number` is empty. For
+> the ones that appear here (Medina-González #7, the bird/non-mammal hold, Navarrete 2016), *this*
+> file is authoritative on whether they should be built at all.
+
 ---
 ---
 
@@ -19,13 +30,59 @@ A literature scout (2026-07-31) for **new comparative data that would extend the
 not a duplicate hunt. Every candidate was checked against the source list in `__ReadMe.xlsx`
 (Sheet1) so none duplicates a registered item.
 
-Scope reminder (see Part 2 and `_keys/species_reference.csv`): the dataset is currently
-**mammal-only** (~215 species; 76 primates + the classic Stephan Insectivora/Scandentia set +
-Rodentia, Carnivora, Chiroptera, Afrosoricida, etc.), centred on **primary motor cortex (M1)
-evolution** and its correlates (dexterity, corticospinal tract, hand morphology, brain-structure
-volumes, cell counts, cortical areas, gyrification, sleep, diet, metabolism, vocal/behavioural
-traits). Non-mammal sources are held as **premature** until the resolver is de-MDD'd (Part 2,
-do-first step 4).
+Scope reminder (see Part 2 and `_keys/species_reference.csv`): the dataset is centred on **primary
+motor cortex (M1) evolution** and its correlates (dexterity, corticospinal tract, hand morphology,
+brain-structure volumes, cell counts, cortical areas, gyrification, sleep, diet, metabolism,
+vocal/behavioural traits) across ~215 mammal species (76 primates + the classic Stephan
+Insectivora/Scandentia set + Rodentia, Carnivora, Chiroptera, Afrosoricida, etc.).
+
+## Non-mammal policy (owner decision, 2026-08-12)
+
+**Register them; don't compile them.** Non-mammal sources **keep their `__ReadMe.xlsx` rows** and may
+be built to snapshot → CSV → public TSV like any other source. They are **excluded from the
+compilations** (`__merging_*`) for now. Registry ≠ merge.
+
+Two things this changes:
+
+- It **decouples building from the resolver.** The older framing held non-mammals as "premature until
+  the resolver is de-MDD'd" (Part 2, do-first step 4). That gate applies to **compiling**, not to
+  building — so e.g. `Olkowicz_etal_2016` (birds) can be built and registered now; it just doesn't
+  enter a merge. The de-MDD work stays a prerequisite for *ingestion*, not for shelf-stocking.
+- It makes the current state **non-compliant**, and knowingly so — see below.
+
+### ⚠️ Known violation: 43 birds are already in the compilations
+
+Audited 2026-08-12. **Ruf & Geiser 2015** (*Daily torpor and hibernation in birds and mammals*) is
+built and wired, and its **43 AVES** rows flowed straight through:
+
+| output | birds | carrying | in the Shiny app? |
+|---|---|---|---|
+| `__merging_body_ecology/body_ecology_long.csv` | 43 | `Body_Mass` (Team `Ruf`, role secondary) | **yes** |
+| `__ShinyApp/data/evom1_traits_long.csv` | 42 | `Torpor_type`, `Torpor_Tb_min_C`, `Torpor_bout_max_h` | **yes** |
+| `__merging_sleep/sleep_long.csv` | 42 | sleep/torpor terms | no (`sleep_long` is not one of the six tables `app.R` loads) |
+
+8 avian orders — hummingbirds, swifts, nightjars, mousebirds, owls, a kingfisher, passerines,
+pigeons. **They were never dropped by the resolver because these merges don't go through it**, and
+**0 of the 43 appear in `_keys/species_reference.csv`** — so they are simultaneously *in the app* and
+*invisible to the taxonomy backbone*. A "mammals only" filter built on `species_reference.csv` would
+silently fail to exclude them.
+
+Bringing this in line is a **merge-side filter**, not a data deletion: the `Ruf_Geiser_2015/` source
+folder keeps all 213 rows (43 birds + 170 mammals) exactly as published; the compile scripts gate on
+class. Not yet implemented — flagged here so the decision and the deviation are on the same page.
+
+### Other non-mammal data held (registry-legal, correctly not compiled)
+
+| source | non-mammal content | built? | in a merge? |
+|---|---|---|---|
+| `Chen_Wiens_2020` Suppl. Data 3 | 1,589 spp — 574 Aves, 508 Amphibia, 490 Lepidosauria, 16 Testudines, 1 Crocodylia | raw supplement TSV only | no |
+| `Caves_etal_2018` Table S1 | 26 of 40 spp — birds, fish (incl. shark, ray), crocodile, turtle, frog, **and invertebrates**: octopus, scallop, shrimp, honeybee, *Drosophila*, ants, butterflies, dragonfly, cockroach, jumping spider | yes | no |
+| `Fritsches_etal_2005` | 3 fish (swordfish, yellowfin + bigeye tuna) | yes | no |
+| `Olkowicz_etal_2016` | birds | no (see Phase 3b in the handoff) | no |
+| `Wilman_etal_2014` | only `MamFuncDat` registered; upstream `BirdFuncDat` not in the repo | n/a | n/a |
+
+Note the Caves invertebrates: the repo's *holdings* already span five vertebrate classes plus
+arthropods and molluscs. That is fine under this policy — it is the compilations that are mammal-only.
 
 Original scouting branch: **`claude/evo-m1-trait-data-q50l6x`**.
 
@@ -87,10 +144,37 @@ registry-coverage count.
    Laland 2002 (PNAS) and its machine-readable extension Reader, Hager & Laland 2011 (Phil Trans;
    Dryad doi:10.5061/dryad.t0q94). See `Reader_etal_2011/Reader_etal_2011.README.md` and
    `____EvoM1_TraitTable/EvoM1_read_innovation_reader.R`.
-4. **Cerebellar folding — OUT OF SCOPE (2026-07-31).** Decided by the repo owner, who is a co-author
-   on the paper. Not scaffolded; not to be revisited unless scope changes. (For the record: that
-   paper used Ashwell 2020 data only as a comparison, and Ashwell is already in the repo via the
-   volumes merge, so nothing to reconcile.)
+4. **Cerebellar folding — ~~OUT OF SCOPE~~ → IN, low priority (owner decision, 2026-08-12).**
+   *Original ruling 2026-07-31: out of scope, deferred to the repo owner because she is a co-author.
+   That deferral is now resolved — the owner has decided to include it.* **Heuer et al. 2023**
+   (eLife 12:e85907) is IN, **not urgent**: build it when capacity allows, and expose it in the Shiny
+   app where it can sit alongside the other Heuer folding work.
+   - **Not yet started:** no `Heuer_etal_2023/` folder, no `__ReadMe.xlsx` row (verified 2026-08-12).
+   - **⚠️ Do NOT combine with Ashwell 2020 — different method (owner, 2026-08-12).** `Ashwell__2020`
+     does carry **`foliation_index`, `cb_ext_surface_esa_mm2`, `cb_pial_surface_psa_mm2` for 150
+     species**, all populated and currently **dropped** (that folder's term map ingests only the
+     `*_Vol.mm3` columns). It is tempting to read that as a ready-made backbone for Heuer 2023. **It
+     is not.** Ashwell's foliation index is *pial surface ÷ external surface* (PSA/ESA), where the
+     external surface is a **multi-sided convex polygon** enclosing the cerebellum — a different
+     measurement procedure from Heuer 2023's. The two quantify the same *concept* and are **not
+     interchangeable values**: keep them as separate `Measure`s, never pooled, never averaged.
+     This is the third instance of the same rule in this file — cf. Zilles 2-D GI vs Heuer 2019 3-D
+     folding (curator decision 5). Surfacing Ashwell's three dropped columns is still worth doing on
+     its own merit, as its **own** Ashwell-method measure; it is not a head start on Heuer 2023.
+     (The 2023 paper cites Ashwell only as a comparison, consistent with this.)
+   - **⚠️ The Heuer-vs-Heuer comparison is blocked on the neocortical side, not the cerebellar one.**
+     `Heuer_etal_2019/` holds only the *sample documentation* (Table 1 = 34 spp/65 individuals;
+     S1 = 66 scans). Its actual folding metrics — absolute GI, folding length, wavelength, depth —
+     live on **Zenodo doi:10.5281/zenodo.2538751**, unreachable at scaffolding time and still not in
+     the repo. Until that is pulled there is nothing on the neocortical side to compare against.
+   - **Keep three things apart** (unchanged from the original entry): cerebellar folding ≠
+     cerebellum **volume** (Ashwell volumes, Smaers 2018, MacLeod 2003, Rilling & Insel, Matano
+     nuclei, Bush & Allman); and ≠ **neocortical GI** (`__merging_gyrification` pools only the
+     Zilles 2-D coronal-contour `GI`, 127 spp, one term). A cerebellar folding/surface slot is its
+     own thing. Housing is still open — own merge vs housed-separately like Heuer 2019 — decide when
+     it is built.
+   - Data type: **histology**, so it does not inherit the MRI inter-observer concern that keeps
+     Navarrete 2018 out.
 5. **Gyrification: keep the two kinds completely separate, never merged.** Zilles-method 2-D GI stays
    in `__merging_gyrification`; Katja Heuer's 3-D MRI folding is useful but housed on its own and
    never combined with Zilles. Method difference verified (3-D convex-hull + folding
@@ -106,7 +190,7 @@ registry-coverage count.
 | 3 | Navarrete et al. 2016 — innovation | ❌ **EXCLUDED** (topic covered via Reader instead) | none | — |
 | 4 | Capellini et al. 2008 — mammalian sleep (REM %, daily sleep) | IN | `Capellini_etal_2008/` (+ sleep standardized-term template) | `__merging_sleep` (extends beyond primate-only REM) |
 | 5 | Heuer et al. 2019 — neocortical folding (34 primates, MRI) | IN, **separate** | `Heuer_etal_2019/` | **none** — housed separately, never pooled with Zilles GI |
-| 6 | Cerebellar folding (eLife 2023) | 🚫 **OUT OF SCOPE** | none | — |
+| 6 | Cerebellar folding — **Heuer et al. 2023** (eLife 12:e85907) | ✅ **IN, low priority** (reversed 2026-08-12; was OUT OF SCOPE) | none yet | its own cerebellar folding/surface slot + the Shiny app. **Never pooled with Ashwell 2020 foliation (different method) or with neocortical GI** |
 | 7 | Medina-González 2026 — limb excursion, 182 mammals | IN | `MedinaGonzalez_2026/` (+ reader `EvoM1_read_gait_excursion_medina.R`) | `__merging_behaviour` (locomotion) |
 | 8 | Corticospinal / CM termination extent | IN | `Corticospinal_terminations/` (compile-from-lit) | behaviour (new `CST_termination_grade`) |
 | 9 | ~~Betz cells (compile-from-lit)~~ → **Jacobs et al. 2018** — gigantopyramidal + M1 pyramidal morphology | IN, **snapshots built 2026-08-04** | `Jacobs_etal_2018/` (Tables 3 + 5) | `__merging_cellcounts` as **regional M1** sub-trait (never pooled with whole-cortex counts) |
@@ -235,10 +319,13 @@ Topic covered instead via Reader — see `Reader_etal_2011/`.
   not the GI merge.
 - Note this is a separate question from **cerebellar** folding (#6), which is out of scope.
 
-### 6. Cerebellar folding in mammals (eLife 2023) — 🚫 OUT OF SCOPE (owner decision, 2026-07-31; owner is co-author)
+### 6. Cerebellar folding in mammals (eLife 2023) — ✅ IN, low priority (owner decision 2026-08-12, reversing the 2026-07-31 out-of-scope ruling)
 
-- **Merge (had it been used):** cortical-areas / a new cerebellar-surface slot (regional, not pooled
-  with neocortical GI). **Role: primary** for cerebellar folding.
+- **Status:** wanted, **not urgent**. Build when capacity allows; the point of building it is to have
+  it **in the Shiny app**, beside the other Heuer folding work. See curator decision 4 for the full
+  reversal note, the Ashwell head-start, and the Zenodo blocker on the Heuer 2019 side.
+- **Merge:** a new cerebellar folding/surface slot (regional; **not** pooled with neocortical GI, and
+  **not** with cerebellum volume). **Role: primary** for cerebellar folding.
 - **Contributes:** comparative **cerebellar folding** (folial structure — the paper's result is that
   individual fold size ≈ constant across species and larger cerebella are disproportionately folded)
   from an open collection of **histological data from 56 mammalian species** (manually segmented
@@ -332,12 +419,15 @@ journal download.
 
 ## Premature — non-mammal (hold until the resolver is de-MDD'd; Part 2, do-first step 4)
 
+*Superseded in part by the non-mammal policy above (2026-08-12): these may now be **built and
+registered** whenever convenient — it is **compilation** that is gated, not shelf-stocking.*
+
 Large isotropic-fractionator neuron-count datasets exist for **squamates + turtles (107 species)**
 and **birds (111 species)**, produced with the same method as the Herculano-Houzel mammal set. They
-are the obvious first non-mammal additions to `__merging_cellcounts`, **but** `resolve_taxonomy.R` is
-MDD-gated and will silently drop non-mammals, and `species_reference.csv` has no `Class` column. Add
-these only after Part 2 do-first steps 1 & 4 (add `Class`; add a non-mammal resolver path). Flagged
-here so they are not lost.
+are the obvious first non-mammal additions to `__merging_cellcounts` **if and when the compilations
+open to non-mammals**, **but** `resolve_taxonomy.R` is MDD-gated and will silently drop non-mammals,
+and `species_reference.csv` has no `Class` column. Ingest only after Part 2 do-first steps 1 & 4
+(add `Class`; add a non-mammal resolver path). Flagged here so they are not lost.
 
 ---
 

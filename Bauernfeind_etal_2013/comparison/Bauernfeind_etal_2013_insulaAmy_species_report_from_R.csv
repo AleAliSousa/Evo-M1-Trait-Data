@@ -1,0 +1,31 @@
+species_key,sheet2_species,n_individuals_cmp,n_individuals_csv,sheet2_insula_cm3,sheet1_mean_doubled_cm3,sheet2_eq_sheet1_mean,sheet2_basis,csv_mean_2x_left_cm3,sheet2_vs_csv_diff_cm3,doubling_bases,note,genus_mean_doubled_cm3,sheet2_eq_genus_mean,n_individuals_genus,congeners
+alouatta caraya,Alouatta caraya,1,1,0.543604,0.543604,TRUE,species mean of the doubled values,0.544,-0.000396000000000063,2 x left,same doubling basis,0.543604,TRUE,1,alouatta caraya
+ateles geoffroyi,NA,NA,1,NA,NA,TRUE,NA,0.832,NA,NA,in Table1 only (not in the comparison file),NA,TRUE,NA,NA
+avahi laniger,NA,NA,1,NA,NA,TRUE,NA,0.076,NA,NA,in Table1 only (not in the comparison file),NA,TRUE,NA,NA
+callithrix pygmaea,Cebuella pygmaea,1,1,0.02357590381584,0.02357590381584,TRUE,species mean of the doubled values,0.022,0.00157590381584,2 x left,same doubling basis,0.02357590381584,TRUE,1,callithrix pygmaea
+cebus albifrons,NA,NA,1,NA,NA,TRUE,NA,0.594,NA,NA,in Table1 only (not in the comparison file),NA,TRUE,NA,NA
+cercocebus agilis,NA,NA,1,NA,NA,TRUE,NA,0.758,NA,NA,in Table1 only (not in the comparison file),NA,TRUE,NA,NA
+cercopithecus kandti,Cercopithecus kandti,1,1,1.228385,1.228385,TRUE,species mean of the doubled values,1.228,0.00038500000000008,2 x left,same doubling basis,1.228385,TRUE,1,cercopithecus kandti
+colobus angolensis,Colobus angolensis,1,1,0.444799,0.444799,TRUE,species mean of the doubled values,0.444,0.00079900000000005,2 x left,same doubling basis,0.444799,TRUE,1,colobus angolensis
+galagoides demidoff,NA,NA,1,NA,NA,TRUE,NA,0.024,NA,NA,in Table1 only (not in the comparison file),NA,TRUE,NA,NA
+gorilla gorilla,Gorilla gorilla,3,4,4.3733392407601,4.3733392407601,TRUE,species mean of the doubled values,4.291,0.0823392407601036,2 x left; L+R,"expected offset: digest doubles as L+R, merge convention doubles the left",4.3733392407601,TRUE,3,gorilla gorilla
+homo sapiens,Homo sapiens,2,5,14.2155352,14.2155352,TRUE,species mean of the doubled values,12.958,1.2575352,L+R,"expected offset: digest doubles as L+R, merge convention doubles the left",14.2155352,TRUE,2,homo sapiens
+hylobates lar,NA,NA,1,NA,NA,TRUE,NA,0.578,NA,NA,in Table1 only (not in the comparison file),0.9628325,FALSE,1,hylobates muelleri
+hylobates muelleri,Hylobates muelleri,1,1,0.9628325,0.9628325,TRUE,species mean of the doubled values,1.078,-0.1151675,2 x left,same doubling basis,0.9628325,TRUE,1,hylobates muelleri
+indri indri,NA,NA,1,NA,NA,TRUE,NA,0.334,NA,NA,in Table1 only (not in the comparison file),NA,TRUE,NA,NA
+leontopithecus rosalia,Leontopithecus rosalia,1,1,0.07427688,0.07427688,TRUE,species mean of the doubled values,0.074,0.000276880000000007,2 x left,same doubling basis,0.07427688,TRUE,1,leontopithecus rosalia
+lophocebus albigena,NA,NA,1,NA,NA,TRUE,NA,1.072,NA,NA,in Table1 only (not in the comparison file),NA,TRUE,NA,NA
+loris tardigradus,NA,NA,1,NA,NA,TRUE,NA,0.024,NA,NA,in Table1 only (not in the comparison file),NA,TRUE,NA,NA
+macaca maura,Macaca maura,1,1,0.98474625,0.98474625,TRUE,species mean of the doubled values,0.984,0.000746250000000059,2 x left,same doubling basis,0.98474625,TRUE,1,macaca maura
+pan paniscus,Pan paniscus,2,3,3.01571024564433,3.01571024564433,TRUE,species mean of the doubled values,3.38066666666667,-0.364956421022334,L+R,"expected offset: digest doubles as L+R, merge convention doubles the left",3.04990265210988,FALSE,4,pan paniscus + pan troglodytes
+pan troglodytes,Pan troglodytes,2,3,3.08409505857542,3.08409505857542,TRUE,species mean of the doubled values,3.20133333333333,-0.117238274757915,2 x left; L+R,"expected offset: digest doubles as L+R, merge convention doubles the left",3.04990265210988,FALSE,4,pan paniscus + pan troglodytes
+perodicticus potto,NA,NA,1,NA,NA,TRUE,NA,0.062,NA,NA,in Table1 only (not in the comparison file),NA,TRUE,NA,NA
+piliocolobus badius,NA,NA,1,NA,NA,TRUE,NA,0.482,NA,NA,in Table1 only (not in the comparison file),NA,TRUE,NA,NA
+pithecia pithecia,Pithecia pithecia,1,1,0.558441,0.558441,TRUE,species mean of the doubled values,0.558,0.000440999999999914,2 x left,same doubling basis,0.558441,TRUE,1,pithecia pithecia
+pongo abelii,NA,2,2,NA,2.31376231585512,FALSE,NA,2.316,NA,2 x left; L+R,no Sheet2 digest row for this species,2.73197446499358,FALSE,3,pongo abelii + pongo pygmaeus
+pongo pygmaeus,Pongo pygmaeus,1,2,2.73197446499358,3.56839876327048,FALSE,GENUS-POOLED (sensu lato) mean over pongo abelii + pongo pygmaeus,3.01,-0.278025535006424,2 x right (left not measured),digest label is broader than the species - do not read as a species mean,2.73197446499358,TRUE,3,pongo abelii + pongo pygmaeus
+saguinus geoffroyi,Saguinus geoffroyi,1,1,0.0468,0.0468,TRUE,species mean of the doubled values,0.046,0.000799999999999995,2 x left,same doubling basis,0.0468,TRUE,1,saguinus geoffroyi
+saguinus oedipus,NA,NA,1,NA,NA,TRUE,NA,0.052,NA,NA,in Table1 only (not in the comparison file),0.0468,FALSE,1,saguinus geoffroyi
+symphalangus syndactylus,Symphalangus syndactylus,1,1,0.832345,0.832345,TRUE,species mean of the doubled values,0.832,0.000344999999999929,2 x left,same doubling basis,0.832345,TRUE,1,symphalangus syndactylus
+trachypithecus francoisi,NA,NA,1,NA,NA,TRUE,NA,1.25,NA,NA,in Table1 only (not in the comparison file),NA,TRUE,NA,NA
+varecia variegata,Varecia variegatus,1,1,0.1994775171732,0.1994775171732,TRUE,species mean of the doubled values,0.2,-0.000522482826800008,2 x left,same doubling basis,0.1994775171732,TRUE,1,varecia variegata

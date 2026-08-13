@@ -1,0 +1,51 @@
+status,join_key,category,species_file,species_v1lgn,n_measure_mismatch,V1_vv_mm3,V1_ref,V1_match,LGN_vv_mm3,LGN_ref,LGN_match,brain_vv_mm3,brain_ref,brain_match
+V1LGN_only_not_in_comparison,avahi occidentalis,NA,NA,Avahi_occidentalis,0,NA,450,NA,NA,29.3,NA,NA,NA,NA
+V1LGN_only_not_in_comparison,colobus angolensis,NA,NA,Colobus_angolensis,0,NA,NA,NA,NA,103,NA,NA,NA,NA
+V1LGN_only_not_in_comparison,erythrocebus patas,NA,NA,Erythrocebus_patas,0,NA,NA,NA,NA,267,NA,NA,NA,NA
+V1LGN_only_not_in_comparison,hylobates muelleri,NA,NA,Hylobates_muelleri,0,NA,NA,NA,NA,162,NA,NA,NA,NA
+V1LGN_only_not_in_comparison,nasalis larvatus,NA,NA,Nasalis_larvatus,0,NA,NA,NA,NA,157,NA,NA,NA,NA
+V1LGN_only_not_in_comparison,pygathrix nemaeus,NA,NA,Pygathrix_nemaeus,0,NA,NA,NA,NA,115,NA,NA,NA,NA
+matched_by_species,alouatta seniculus,Simians,Alouatta seniculus,Alouatta_seniculus,0,1918,1918,TRUE,87.4,87.4,TRUE,50193.0501930502,50193.05,TRUE
+matched_by_species,aotus trivirgatus,Simians,Aotus trivirgatus,Aotus_trivirgatus,0,996,996,TRUE,32.9,32.9,TRUE,16505.7915057915,16505.79,TRUE
+matched_by_species,ateles geoffroyi,Simians,Ateles geoffroyi,Ateles_geoffroyi,0,3753,3753,TRUE,151,151,TRUE,104247.104247104,104247.1,TRUE
+matched_by_species,avahi laniger,Prosimians,Avahi laniger,Avahi_laniger,2,458.333333333333,475,FALSE,28.7333333333333,27.6,FALSE,9597.8120978121,NA,NA
+matched_by_species,callithrix jacchus,Simians,Callithrix jacchus,Callithrix_jacchus,0,566,566,TRUE,25.1,25.1,TRUE,7335.90733590734,7335.91,TRUE
+matched_by_species,callithrix pygmaea,Simians,Cebuella pygmaea,Callithrix_pygmaea,0,363,363,TRUE,16.9,16.9,TRUE,4343.62934362934,4343.63,TRUE
+matched_by_species,cebus albifrons,Simians,Cebus albifrons,Cebus_albifrons,0,3764,3764,TRUE,137,137,TRUE,68532.8185328185,68532.82,TRUE
+matched_by_species,cercopithecus ascanius,Simians,Cercopithecus ascanius,Cercopithecus_ascanius,0,4272,4272,TRUE,147,147,TRUE,64671.8146718147,64671.81,TRUE
+matched_by_species,cercopithecus mitis,Simians,Cercopithecus mitus,Cercopithecus_mitis,0,4232,4232,TRUE,150,150,TRUE,72393.8223938224,72393.82,TRUE
+matched_by_species,cheirogaleus major,Prosimians,Cheirogaleus major,Cheirogaleus_major,0,433,433,TRUE,21.5,21.5,TRUE,6563.70656370656,6563.71,TRUE
+matched_by_species,cheirogaleus medius,Prosimians,Cheirogaleus medius,Cheirogaleus_medius,0,199,199,TRUE,10.8,10.8,TRUE,3030.88803088803,3030.89,TRUE
+matched_by_species,daubentonia madagascariensis,Prosimians,Daubentonia madagascariensis,Daubentonia_madagascariensis,0,1113,1113,TRUE,58.5,58.5,TRUE,43581.0810810811,43581.08,TRUE
+matched_by_species,eulemur fulvus,Prosimians,Eulemur fulvus,Eulemur_fulvus,0,1253,1253,TRUE,51.8,51.8,TRUE,22490.3474903475,22490.35,TRUE
+matched_by_species,galago senegalensis,Prosimians,Galago senegalensis,Galago_senegalensis,0,301,301,TRUE,16,16,TRUE,4633.20463320463,4633.2,TRUE
+matched_by_species,galagoides demidoff,Prosimians,Galagoides demidoff,Galagoides_demidoff,0,214,214,TRUE,10.9,10.9,TRUE,3262.54826254826,3262.55,TRUE
+matched_by_species,gorilla gorilla,Simians,Gorilla gorilla,Gorilla_gorilla,0,9129.02131733286,9129,TRUE,308.524768463104,308.5,TRUE,398648.648648649,398648.65,TRUE
+matched_by_species,homo sapiens,Simians,Homo sapiens,Homo_sapiens,0,15247.5011583012,15247.5,TRUE,335.021920202671,335,TRUE,1258397.68339768,1258397.68,TRUE
+matched_by_species,hylobates lar,Simians,Hylobates lar,Hylobates_lar,0,4086.66130802376,4086.7,TRUE,166.23885567803,166.2,TRUE,102316.602316602,102316.6,TRUE
+matched_by_species,indri indri,Prosimians,Indri indri,Indri_indri,0,1648,1648,TRUE,94.5,94.5,TRUE,36969.111969112,36969.11,TRUE
+matched_by_species,lagothrix lagotricha,Simians,Lagothix lagathricha,Lagothrix_lagotricha,0,4856,4856,TRUE,164,164,TRUE,97490.3474903475,97490.35,TRUE
+matched_by_species,lepilemur ruficaudatus,Prosimians,Lepilemur ruficaudatus,Lepilemur_ruficaudatus,0,326,326,TRUE,15.6,15.6,TRUE,7335.90733590734,7335.91,TRUE
+matched_by_species,lophocebus albigena,Simians,Lophocebus albigena,Lophocebus_albigena,0,5420,5420,TRUE,182,182,TRUE,100386.1003861,100386.1,TRUE
+matched_by_species,loris tardigradus,Prosimians,Loris tardigradius,Loris_tardigradus,0,529,529,TRUE,24.6,24.6,TRUE,6370.65637065637,6370.66,TRUE
+matched_by_species,macaca fascicularis,Simians,Macaca fascicularis,Macaca_fascicularis,0,2713.34622868471,2713.3,TRUE,91.8861076499505,91.9,TRUE,55598.4555984556,55598.46,TRUE
+matched_by_species,macaca mulatta,Simians,Macaca mulatta,Macaca_mulatta,0,5343,5343,TRUE,158,158,TRUE,89768.3397683398,89768.34,TRUE
+matched_by_species,microcebus murinus,Prosimians,Microcebus murinus,Microcebus_murinus,1,139,136,FALSE,7.1,7.1,TRUE,1718.14671814672,1718.15,TRUE
+matched_by_species,miopithecus talapoin,Simians,Miopithecus talapoin,Miopithecus_talapoin,0,2339,2339,TRUE,109,109,TRUE,38610.0386100386,38610.04,TRUE
+matched_by_species,nycticebus coucang,Prosimians,Nycticebus coucang,Nycticebus_coucang,0,696,696,TRUE,35.9,35.9,TRUE,12065.6370656371,12065.64,TRUE
+matched_by_species,otolemur crassicaudatus,Prosimians,Otolemur crassicaudatus,Otolemur_crassicaudatus,0,479,479,TRUE,23.2,23.2,TRUE,9942.08494208494,9942.08,TRUE
+matched_by_species,pan paniscus,Simians,Pan paniscus,Pan_paniscus,0,11606.4643411402,11606.5,TRUE,275.140119058378,275.1,TRUE,338803.088803089,338803.09,TRUE
+matched_by_species,pan troglodytes,Simians,Pan troglodytes,Pan_troglodytes,0,8268.30320913063,8268.3,TRUE,250.738502700026,250.7,TRUE,319670.709140537,319670.71,TRUE
+matched_by_species,papio anubis,Simians,Papio anubis,Papio_anubis,0,10001,10001,TRUE,395,395,TRUE,194015.444015444,194015.44,TRUE
+matched_by_species,perodicticus potto,Prosimians,Perodicticus potto,Perodicticus_potto,0,495,495,TRUE,24.3,24.3,TRUE,13513.5135135135,13513.51,TRUE
+matched_by_species,piliocolobus badius,Simians,Procolobus badius,Piliocolobus_badius,0,3053,3053,TRUE,128,128,TRUE,75289.5752895753,75289.58,TRUE
+matched_by_species,pithecia monachus,Simians,Pithecus monachus,Pithecia_monachus,0,1679,1679,TRUE,76.3,76.3,TRUE,33783.7837837838,33783.78,TRUE
+matched_by_species,plecturocebus moloch,Simians,Callicebus moloch,Plecturocebus_moloch,0,1201,1201,TRUE,54.2,54.2,TRUE,18339.7683397683,18339.77,TRUE
+matched_by_species,pongo pygmaeus,Simians,Pongo pygmaeus,Pongo_pygmaeus,0,8233.71068590795,8233.7,TRUE,259.121098112831,259.1,TRUE,371299.871299871,371299.87,TRUE
+matched_by_species,propithecus verreauxi,Prosimians,Propithecus verreauxi,Propithecus_verreauxi,0,1106,1106,TRUE,64.5,64.5,TRUE,25772.2007722008,25772.2,TRUE
+matched_by_species,saguinus midas,Simians,Sanguinus midas,Saguinus_midas,0,841,841,TRUE,36,36,TRUE,9942.08494208494,9942.08,TRUE
+matched_by_species,saguinus oedipus,Simians,Sanguinus oedipus,Saguinus_oedipus,0,807,807,TRUE,34.2,34.2,TRUE,9652.50965250965,9652.51,TRUE
+matched_by_species,saimiri sciureus,Simians,Saimiri sciureus,Saimiri_sciureus,0,1884,1884,TRUE,62.9,62.9,TRUE,23166.0231660232,23166.02,TRUE
+matched_by_species,symphalangus syndactylus,Simians,Symphalangus syndactylus,Symphalangus_syndactylus,0,5468.91827475393,5468.9,TRUE,NA,NA,TRUE,133880.308880309,133880.31,TRUE
+matched_by_species,tarsius syrichta,Prosimians,Tarsius syrichta,Tarsius_syrichta,0,349,349,TRUE,20.8,20.8,TRUE,3474.90347490347,3474.9,TRUE
+matched_by_species,varecia variegata,Prosimians,Varecia variegata,Varecia_variegata,0,1745,1745,TRUE,68.9,68.9,TRUE,30405.4054054054,30405.41,TRUE

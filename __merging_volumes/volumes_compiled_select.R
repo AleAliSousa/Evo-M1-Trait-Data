@@ -100,6 +100,25 @@ bilateral_stems <- "auto"
 # `estimated_bilateral_from_unilateral`, never silent).
 bilateral_stems_exclude <- c("Area_striata_grey_matter", "Corpus_geniculatum_laterale")
 
+## ---- taxon filter ---------------------------------------------------------------------------
+## Restrict the merge to chosen taxa. The registry is _keys/species_taxonomy.csv (Species, Order,
+## Family), which already carries the project's genus-level labels (Gorilla sp., Pongo sp.,
+## Tarsius sp., Cebus sp. ...), so those are matched like any binomial.
+##   taxa_keep  : values to keep, or "all" for no filter.  e.g. c("Primates")
+##                                                              c("Primates", "Scandentia")
+##                                                              c("Hominidae", "Cercopithecidae")
+##   taxa_rank  : which registry column taxa_keep refers to — "Order" or "Family".
+##   taxa_unmatched : what to do with a species the registry does not cover.
+##                "keep" — keep it and list it in the README (default: a missing registry row is a
+##                         gap in the registry, not evidence the species is out of scope);
+##                "drop" — treat unmatched as out of scope;
+##                "stop" — refuse to run until every species is registered.
+## Excluded species are written to volumes_taxon_excluded_select.csv with the reason, and the
+## filter is applied BEFORE pooling, so long / wide / flags / audit are all consistent.
+taxa_keep      <- c("Primates")
+taxa_rank      <- "Order"
+taxa_unmatched <- "keep"
+
 ## ============================================================================================
 ## 1  THE SELECTION — edit this tribble to re-point the script
 ## ============================================================================================
@@ -144,6 +163,7 @@ select_datasets <- tribble(
   # -- Matano et al. 1985 a (cerebellar nuclei) and b (ventral pons) ---------------------------
   "Matano_etal_1985_a_Table1",            "Selected_collection",  1985,
   "Matano_etal_1985_b_Table1",            "Selected_collection",  1985,
+  "Matano__1986_TableI",                  "Selected_collection",  1986,  # vestibular nuclei, ONE SIDE (_unilateral terms); superseded by Baron_etal_1988_Table1 (bilateral, all 46 spp.) where both are selected
   # -- Zilles & Rehkämper 1988 (Pongo, structure-rows) -----------------------------------------
   "Zilles_Rehkämper_1988_Table12-2",      "Selected_collection",  1988,
   # -- Stephan et al. 1988 Table 1 (body + brain weight, 52 spp) -------------------------------
@@ -163,6 +183,26 @@ select_datasets <- tribble(
   "Bauernfeind_etal_2013_Table2",         "Selected_collection",  2013,
   # -- de Sousa et al. 2013 (bilateral LGN + brain mass) ---------------------------------------
   "deSousa_etal_2013_Table1",             "Selected_collection",  2013,
+  # -- Smaers et al. 2011 Suppl. Table 1 (TOTAL frontal lobe grey matter) ----------------------
+  # The whole-lobe measurement, NOT a subregion: `frontal_grey_total_cm3` = left + right frontal
+  # grey, per individual, 26 individuals -> 19 species (18 anthropoids + Homo, n = 8). Smaers'
+  # OWN primary volumetry on the C. & O. Vogt / Stephan-Collection brains, so it is a Tier-1
+  # source, not a compilation. This is the ONLY total-frontal-grey source anywhere in the merge:
+  # `FrontalCortex_grey_matter_Vol.mm3` is claimed by no other item in standardized_term_volumes.csv,
+  # so nothing is superseded and no species row is added — all 19 species already exist here.
+  #
+  # SCOPE (requested 2026-08-12): grey matter only, whole lobe only.
+  #   * frontal WHITE is deliberately dropped in the reshape below (the term-map row still exists,
+  #     so volumes_compiled.R is unaffected); restore one line there to bring it back.
+  #   * the frontal SUBREGIONS are deliberately not taken: Suppl. Table 2 (`sec5_*`, the cumulative
+  #     anterior-frontal block Smaers 2017 republishes as `prefrontal`) is NOT in this selection and
+  #     is not term-mapped, and Smaers 2017 `frontal_motor` is a posterior section block.
+  #     Those two do NOT partition the lobe — summed they are only ~36% of frontal_grey_total
+  #     (53-68% short in all 19 spp.), so total frontal grey cannot be rebuilt from them.
+  # Superseded by nothing; supersedes nothing. Smaers et al. 2010 Table 1 carries an earlier
+  # vintage of the same column for 18 of these 19 species (no Homo) and is therefore not needed
+  # for coverage — see crosspub_Smaers2017_FINDINGS.md for the 2010 vs 2011 value drift.
+  "Smaers_etal_2011_SupplementaryTable1", "Selected_collection",  2011,
   # -- Smaers et al. 2017 Table S1 part 1 (cortical volumes) -----------------------------------
   # NEWEST table in the selection, so on recency alone it would supersede everything it covers.
   # It is a COMPILATION: primary_visual = de Sousa 2010 = Frahm 1984 area striata (value-matched
@@ -207,7 +247,13 @@ enc_override <- c(
   "MacLeod_etal_2003_Table2"     = "10.1016%2Fs0047-2484(03)00028-9_Table2",
   "Smaers_etal_2011_SupplementaryTable1" = "10.1159%2F000323671_SupplementaryTable1",
   "Smaers_etal_2017_TableS1part1"        = "10.1016%2Fj.cub.2017.01.020_TableS1part1",
-  "Smaers_etal_2017_TableS1part2"        = "10.1016%2Fj.cub.2017.01.020_TableS1part2")
+  "Smaers_etal_2017_TableS1part2"        = "10.1016%2Fj.cub.2017.01.020_TableS1part2",
+  # Matano 1986: __ReadMe.xlsx row 185 lost its "Item number" (col D), so the K/L formulas render
+  # "Matano__1986_" / "10.1159%2F000156277_" with a bare trailing underscore and read_item() cannot
+  # resolve the TSV. D185 has been restored to "Table I", so this override is now inert belt-and-
+  # braces — the OneDrive/Excel rewriter has emptied col D on this workbook before (9 rows were
+  # empty on 2026-08-12). Safe to delete once the registry has held for a while.
+  "Matano__1986_TableI"                  = "10.1159%2F000156277_TableI")
 
 read_item <- function(it) {
   # Match item names CASE-INSENSITIVELY (registry drifts e.g. Table2 vs TABLE2) and strip stray
@@ -358,13 +404,20 @@ paper_long <- function(row) {
   }
   if (it == "deSousa_etal_2010_Table1")                          # per-specimen hominoid volumes: cm3 -> mm3 (specimens collapse to a species mean in step 5a). V1/LGN are LEFT-only and printed UNDOUBLED (laterality_known.csv, doubling = none); neocortex + whole brain are both-hemisphere. The doubled 2x-left figures are the same paper's Supp. Table 2 (doubling = by_source), not in this selection.
     df <- df %>% mutate(across(ends_with("_cm3"), ~num(.x)*1000))
-  if (it == "Smaers_etal_2011_SupplementaryTable1") {            # per-individual frontal -> species means of COMBINED L+R (cm3->mm3)
+  if (it == "Smaers_etal_2011_SupplementaryTable1") {            # per-individual TOTAL frontal -> species means of COMBINED L+R (cm3->mm3)
+    # GREY ONLY, WHOLE LOBE ONLY (see the selection comment above). `frontal_grey_total_cm3` is
+    # already left+right in the printed table, so the *1000 is a pure cm3->mm3 unit change and no
+    # bilateral doubling is involved (nothing to record in laterality_known.csv).
+    # `frontal_white_total_cm3` is dropped here — NOT in volumes_select_value_flags.csv, because a
+    # `skip` row means "this value is unusable"; this is a scope decision, not a data defect. The
+    # term-map row for it stays, so volumes_compiled.R still carries frontal white. To bring white
+    # into THIS merge, re-add the summarise line below; nothing else needs to change.
     fix <- c("Cercopithecus ascianus"="Cercopithecus ascanius","Cercocebus albigena"="Lophocebus albigena",
              "Procolobus badius"="Piliocolobus badius","Lagothrix lagotricha"="Lagothrix lagothricha")
     df <- df %>% mutate(Species = ifelse(Species %in% names(fix), fix[Species], Species)) %>%
       group_by(Species) %>%
-      summarise(frontal_white_total_cm3 = mean(num(frontal_white_total_cm3)*1000, na.rm = TRUE),
-                frontal_grey_total_cm3  = mean(num(frontal_grey_total_cm3) *1000, na.rm = TRUE), .groups = "drop")
+      summarise(frontal_grey_total_cm3  = mean(num(frontal_grey_total_cm3) *1000, na.rm = TRUE), .groups = "drop")
+    #   frontal_white_total_cm3 = mean(num(frontal_white_total_cm3)*1000, na.rm = TRUE)  # <- grey-only scope, 2026-08-12
   }
   if (it == "Smaers_etal_2017_TableS1part1") {
     # Species are printed with underscores and, for the apes, as trinomials
@@ -476,6 +529,68 @@ long <- long %>%
   left_join(resolved %>% select(Source, Species_raw, Species_final),
             by = c("Source", "Species" = "Species_raw")) %>%
   mutate(Species = Species_final) %>% select(-Species_final)
+
+## ============================================================================================
+## 4b  Taxon filter (see `taxa_keep` in the options block)
+## ============================================================================================
+## Applied here, straight after resolution, so every downstream artefact — long, wide, flags,
+## audit, README — describes the same set of species. A species is matched on its accepted name;
+## if that is not in the registry, its GENUS is tried, which catches labels the registry has not
+## caught up with. Anything still unmatched is handled by `taxa_unmatched`.
+taxonomy <- read.csv(file.path(base, "_keys", "species_taxonomy.csv"), stringsAsFactors = FALSE)
+if (!taxa_rank %in% names(taxonomy))
+  stop("taxa_rank = '", taxa_rank, "' is not a column of _keys/species_taxonomy.csv (have: ",
+       paste(names(taxonomy), collapse = ", "), ").", call. = FALSE)
+taxon_excluded <- tibble(Species = character(), Order = character(), Family = character(),
+                         reason = character(), n_values = integer(), Sources = character())
+if (identical(taxa_keep, "all")) {
+  message("Taxon filter: off (taxa_keep = \"all\").")
+} else {
+  genus  <- function(x) sub("^([A-Za-z]+).*$", "\\1", x)
+  by_sp  <- setNames(taxonomy[[taxa_rank]], taxonomy$Species)
+  # genus -> rank, only where a genus maps unambiguously to one value
+  gtab   <- unique(data.frame(g = genus(taxonomy$Species), v = taxonomy[[taxa_rank]]))
+  gtab   <- gtab[!(gtab$g %in% gtab$g[duplicated(gtab$g)]), ]
+  by_gen <- setNames(gtab$v, gtab$g)
+
+  spp  <- sort(unique(long$Species))
+  rank_of <- unname(ifelse(!is.na(by_sp[spp]), by_sp[spp], by_gen[genus(spp)]))
+  matched <- !is.na(rank_of)
+  keep_sp <- spp[matched & rank_of %in% taxa_keep]
+  drop_sp <- spp[matched & !(rank_of %in% taxa_keep)]
+  unmatched_sp <- spp[!matched]
+
+  if (length(unmatched_sp)) {
+    msg <- paste0(length(unmatched_sp), " species not in _keys/species_taxonomy.csv (nor resolvable ",
+                  "by genus): ", paste(head(unmatched_sp, 12), collapse = "; "))
+    if (taxa_unmatched == "stop")
+      stop("Taxon filter: ", msg, ". Add them to the registry, or set taxa_unmatched.", call. = FALSE)
+    warning("Taxon filter: ", msg, " -> ", if (taxa_unmatched == "drop") "DROPPED" else "kept",
+            " (taxa_unmatched = '", taxa_unmatched, "'). See ", sel_csv("volumes_taxon_excluded"), ".")
+    if (taxa_unmatched == "keep") keep_sp <- c(keep_sp, unmatched_sp)
+  }
+
+  gone <- long %>% filter(!(Species %in% keep_sp)) %>%
+    group_by(Species) %>%
+    summarise(n_values = n(), Sources = paste(sort(unique(Source)), collapse = "; "), .groups = "drop")
+  taxon_excluded <- gone %>%
+    left_join(taxonomy, by = "Species") %>%
+    mutate(reason = ifelse(Species %in% unmatched_sp,
+                           "not in species_taxonomy.csv", paste0("not in taxa_keep (", taxa_rank, ")"))) %>%
+    select(Species, Order, Family, reason, n_values, Sources) %>%
+    arrange(reason, Species)
+
+  long <- long %>% filter(Species %in% keep_sp)
+  message("Taxon filter: keeping ", taxa_rank, " ", paste(taxa_keep, collapse = "/"), " -> ",
+          length(keep_sp), " species kept, ", nrow(taxon_excluded), " excluded (",
+          sum(taxon_excluded$reason != "not in species_taxonomy.csv"), " out of scope, ",
+          sum(taxon_excluded$reason == "not in species_taxonomy.csv"), " unregistered).")
+  if (!nrow(long))
+    stop("Taxon filter removed every row — check taxa_keep/taxa_rank spelling against ",
+         "_keys/species_taxonomy.csv.", call. = FALSE)
+}
+write_csv(taxon_excluded, sel_csv("volumes_taxon_excluded"))
+
 write_csv(long, sel_csv("volumes_unfiltered"))
 is_mass <- function(v) v %in% c("Body_Mass.g","Brain_Mass.mg")
 
@@ -581,8 +696,18 @@ volumes_long <- teamres %>% group_by(Species, Variable) %>% summarise(
   keep_i  = if (is_mass(first(Variable)) && mass_rule == "reference")
               which.max(grepl(mass_reference_pattern, Source)) else NA_integer_,
   Value   = if (is.na(keep_i)) mean(Value) else Value[keep_i],
-  Teams   = paste(sort(unique(Team)), collapse = "; "), n_teams = n_distinct(Team),
-  Sources = if (is.na(keep_i)) paste(sort(unique(Source)), collapse = "; ") else Source[keep_i],
+  Teams   = if (is.na(keep_i)) paste(sort(unique(Team)), collapse = "; ") else Team[keep_i],
+  n_teams = if (is.na(keep_i)) n_distinct(Team) else 1L,
+  # `Sources` is always a "; " list of INDIVIDUAL item names. tie_rule = "mean" can write "A + B"
+  # into Source, so split before re-collapsing or the exploded contributions table below would carry
+  # "A + B" as though it were one uncitable item. Mirrors step 6 of volumes_compiled.R.
+  Sources = { s <- if (is.na(keep_i)) Source else Source[keep_i]
+              paste(sort(unique(trimws(unlist(strsplit(s, " + ", fixed = TRUE))))), collapse = "; ") },
+  n_sources = { s <- if (is.na(keep_i)) Source else Source[keep_i]
+                n_distinct(trimws(unlist(strsplit(s, " + ", fixed = TRUE)))) },
+  # which team contributed which table -- `Teams` is a lab/collection grouping, not a reference
+  Source_detail = { i <- if (is.na(keep_i)) order(Team) else keep_i
+                    paste(paste0(Team[i], ": ", Source[i]), collapse = " | ") },
   Year_used = if (is.na(keep_i)) max(Year) else Year[keep_i],
   .groups = "drop") %>%
   select(-keep_i) %>%
@@ -669,10 +794,14 @@ if (do_hemisphere_reconciliation) {
     # a real both-sides value always beats a doubled estimate
     bilat <- bilat %>% anti_join(volumes_long %>% distinct(Species, Variable),
                                  by = c("Species","Variable"))
-    src_meta <- volumes_long %>% transmute(Species, src = Variable, Teams, n_teams, Sources, Year_used)
+    # A derived both-sides value inherits the provenance of the one-side variable it was built from --
+    # that is the paper a reader must cite for it, even though the arithmetic happened here.
+    src_meta <- volumes_long %>% transmute(Species, src = Variable, Teams, n_teams,
+                                           Sources, n_sources, Source_detail, Year_used)
     volumes_long <- bind_rows(volumes_long,
       bilat %>% left_join(src_meta, by = c("Species","src")) %>%
-        transmute(Species, Variable, Value, Teams, n_teams, Sources, Year_used)) %>%
+        transmute(Species, Variable, Value, Teams, n_teams,
+                  Sources, n_sources, Source_detail, Year_used)) %>%
       arrange(Species, Variable)
     flags <- bind_rows(flags, bilat %>% filter(est) %>%
       transmute(Species, Variable, flag = "estimated_bilateral_from_unilateral",
@@ -731,6 +860,49 @@ long %>% group_by(Species_Name = Species) %>%
   summarise(n_sources = n_distinct(Source), Sources = paste(sort(unique(Source)), collapse = "; ")) %>%
   write_csv(sel_csv("volumes_species_sources"))
 
+## ---- 8b Publication provenance: contributions + citations ------------------------------------
+## volumes_long_select.csv collapses provenance into strings to stay one row per species x variable.
+## These two files are the un-collapsed form, which is what a supplementary source table needs:
+##   volumes_source_contributions_select.csv  one row per species x variable x CONTRIBUTING TABLE
+##   volumes_source_citations_select.csv      item name -> APA citation, DOI/ISBN, WHICH TABLE
+## Mirrors step 8b of volumes_compiled.R. Sources that lost the recency pick, or were vetoed by the
+## value-flag registry, are NOT here -- they are the subject of volumes_resolution_audit_select.csv
+## and volumes_flagged_not_used_select.csv; this file is only what the published number rests on.
+contrib <- volumes_long %>%
+  select(Species, Variable, merged_Value = Value, Sources, Teams, n_teams, n_sources, Year_used) %>%
+  separate_longer_delim(Sources, delim = "; ") %>%
+  rename(Source = Sources) %>%
+  # per-source values come from `usable` (the candidates that survived the flag registry), so the
+  # figures here are the ones the merge actually saw -- never re-derived from the merged value.
+  left_join(usable %>% select(Species, Variable, Source, Team, Year,
+                             source_Value = Value, n_rows_in_source = n_obs),
+            by = c("Species","Variable","Source")) %>%
+  mutate(role = case_when(
+           # step 7's both-sides variables are arithmetic on a one-side table, which prints no figure
+           # for this term: source_Value is legitimately absent, not missing data.
+           is.na(source_Value) ~ paste0("derived both-hemisphere value (step 7: left+right, or 2x a ",
+                                        "one-side measurement); cite this source for the one-side figure"),
+           is_mass(Variable) & mass_rule == "reference"
+                            ~ "reference table used (mass rule: other sources not averaged in)",
+           n_sources == 1L  ~ "sole source",
+           TRUE             ~ "averaged into the merged value"),
+         pct_diff_from_merged = ifelse(!is.na(source_Value) & merged_Value != 0,
+                                       round(100 * (source_Value - merged_Value) / merged_Value, 2),
+                                       NA_real_)) %>%
+  select(Species, Variable, Source, Team, Year, source_Value, merged_Value,
+         pct_diff_from_merged, role, n_rows_in_source, Teams, n_teams, n_sources, Year_used) %>%
+  arrange(Species, Variable, Source)
+source(file.path(folder, "source_citations.R"))
+citations <- source_citations(base, unique(c(long$Source, contrib$Source)))
+write_csv(citations, sel_csv("volumes_source_citations"))
+contrib <- contrib %>%
+  left_join(citations %>% select(Source, Cited_as, DOI_or_ISBN), by = "Source") %>%
+  relocate(Cited_as, DOI_or_ISBN, .after = Source)
+write_csv(contrib, sel_csv("volumes_source_contributions"))
+message("Provenance: ", nrow(contrib), " species x variable x source contribution(s) from ",
+        nrow(citations), " citable source table(s); ",
+        sum(is.na(citations$Citation)), " without a registry citation.")
+
 ## ============================================================================================
 ## 9  Generate README__volumes_compiled_select.md
 ## ============================================================================================
@@ -754,7 +926,9 @@ L <- c(
   paste0("**Selection:** ", selection_name),
   paste0("**Tables:** ", nrow(select_datasets), " | **Teams:** ", n_teams_used,
          " | **Result:** ", nrow(volumes_wide), " species x ", ncol(volumes_wide) - 1, " variables",
-         " | **Tie rule:** `", tie_rule, "` | **Mass rule:** `", mass_rule, "`"), "")
+         " | **Tie rule:** `", tie_rule, "` | **Mass rule:** `", mass_rule, "`",
+         " | **Taxa:** ", if (identical(taxa_keep, "all")) "all (no filter)"
+                          else paste0("`", taxa_rank, " = ", paste(taxa_keep, collapse = ", "), "`")), "")
 if (file.exists(readme_intro))
   L <- c(L, readLines(readme_intro, warn = FALSE, encoding = "UTF-8"), "")
 L <- c(L,
@@ -822,7 +996,24 @@ L <- c(L, md_tbl(ti, names(ti)), "",
   "selected, or the Source/Species/Variable spelling has drifted.", "")
 st <- stale %>% transmute(Source, Species, Variable, flag, action)
 L <- c(L, md_tbl(st, names(st)), "",
-  "## Hemisphere reconciliation (step 7)", "")
+  "## Taxon filter", "")
+if (identical(taxa_keep, "all")) {
+  L <- c(L, "_Off — `taxa_keep <- \"all\"`, so every species the sources cover is merged._", "")
+} else {
+  L <- c(L,
+    paste0("Keeping `", taxa_rank, "` = ", paste0("**", taxa_keep, "**", collapse = ", "),
+           ", per `_keys/species_taxonomy.csv` (matched on the accepted name, falling back to the ",
+           "genus). Unmatched species: `taxa_unmatched = \"", taxa_unmatched, "\"`."),
+    paste0(nrow(volumes_wide), " species kept, ", nrow(taxon_excluded),
+           " excluded — full list with sources in `", sel_csv("volumes_taxon_excluded"), "`."), "",
+    md_tbl(taxon_excluded %>%
+             group_by(reason, Order) %>%
+             summarise(`n species` = n(), Species = paste(sort(Species), collapse = ", "),
+                       .groups = "drop") %>%
+             arrange(reason, Order),
+           c("reason", "Order", "n species", "Species")), "")
+}
+L <- c(L, "## Hemisphere reconciliation (step 7)", "")
 .n_flag <- function(f) sum(flags$flag == f)
 # Step 7 (this merge doubling a measured side) can be switched off; step 7b (recording that a SOURCE
 # published its figure already doubled) always runs, so its sentence lives outside the else branch.
@@ -858,6 +1049,7 @@ L <- c(L, md_tbl(se, names(se)), "",
   paste0("- `", sel_csv("volumes_unfiltered"), "` — every value read, before resolution"),
   paste0("- `", sel_csv("volumes_resolution_audit"), "` — every candidate: USED / superseded / skipped"),
   paste0("- `", sel_csv("volumes_flagged_not_used"), "` — machine-readable version of the table above"),
+  paste0("- `", sel_csv("volumes_taxon_excluded"), "` — species removed by the taxon filter, with why"),
   paste0("- `", sel_csv("volumes_source_species_ids"), "` — species-name resolution for sign-off"),
   paste0("- `", sel_csv("volumes_species_sources"), "` — which sources contributed each species"),
   paste0("- `", readme_out, "` — this file"), "",
@@ -870,6 +1062,9 @@ L <- c(L, md_tbl(se, names(se)), "",
 writeLines(L, readme_out, useBytes = TRUE)
 
 message("[select] ", nrow(volumes_wide), " species x ", ncol(volumes_wide) - 1, " variables from ",
-        nrow(select_datasets), " tables | flagged-not-used: ", sum(skipped$more_recent),
+        nrow(select_datasets), " tables | taxa: ",
+        if (identical(taxa_keep, "all")) "all"
+          else paste0(paste(taxa_keep, collapse = "/"), " (", nrow(taxon_excluded), " excluded)"),
+        " | flagged-not-used: ", sum(skipped$more_recent),
         " (of ", nrow(skipped), " skipped) | review: ", nrow(reviewed),
         " | ties: ", nrow(ties), " | outputs: volumes_*", output_suffix, ".csv + ", readme_out)

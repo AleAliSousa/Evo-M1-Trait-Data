@@ -1,0 +1,44 @@
+status,match_basis,species_key,species_file,species_csv,individual,brain_mass_g,brain_mass_g_csv,brain_mass_match,left_mm3,total_insula_L_mm3,left_diff_mm3,left_match,right_mm3,doubling_basis,doubled_cm3,doubled_expected,doubling_ok,collection,n_hemispheres_listed,record_id
+Table1_only_not_in_comparison,NA,ateles geoffroyi,NA,Ateles geoffroyi,3371b,NA,106.4,NA,NA,416,NA,NA,NA,NA,NA,NA,NA,Stephan,NA,NA
+Table1_only_not_in_comparison,NA,avahi laniger,NA,Avahi laniger,3244b,NA,9.6,NA,NA,38,NA,NA,NA,NA,NA,NA,NA,Stephan,NA,NA
+Table1_only_not_in_comparison,NA,cebus albifrons,NA,Cebus albifrons,3317b,NA,79.8,NA,NA,297,NA,NA,NA,NA,NA,NA,NA,Stephan,NA,NA
+Table1_only_not_in_comparison,NA,cercocebus agilis,NA,Cercocebus agilis,980820a,NA,95.3,NA,NA,379,NA,NA,NA,NA,NA,NA,NA,GAAP,NA,NA
+Table1_only_not_in_comparison,NA,galagoides demidoff,NA,Galagoides demidoff,3275b,NA,3.3,NA,NA,12,NA,NA,NA,NA,NA,NA,NA,Stephan,NA,NA
+Table1_only_not_in_comparison,NA,gorilla gorilla,NA,Gorilla gorilla,YN82-140a,NA,376,NA,NA,1910,NA,NA,NA,NA,NA,NA,NA,UCSD,NA,NA
+Table1_only_not_in_comparison,NA,homo sapiens,NA,Homo sapiens,MU-88-65a,NA,1483,NA,NA,6463,NA,NA,NA,NA,NA,NA,NA,Yakovlev-Haleem,NA,NA
+Table1_only_not_in_comparison,NA,homo sapiens,NA,Homo sapiens,W2-2-70a,NA,1320,NA,NA,7222,NA,NA,NA,NA,NA,NA,NA,Yakovlev-Haleem,NA,NA
+Table1_only_not_in_comparison,NA,homo sapiens,NA,Homo sapiens,STD-IIA-54a,NA,1242,NA,NA,4068,NA,NA,NA,NA,NA,NA,NA,Yakovlev-Haleem,NA,NA
+Table1_only_not_in_comparison,NA,hylobates lar,NA,Hylobates lar,YN81-146b,NA,92,NA,NA,289,NA,NA,NA,NA,NA,NA,NA,Stephan,NA,NA
+Table1_only_not_in_comparison,NA,indri indri,NA,Indri indri,3249b,NA,33.7,NA,NA,167,NA,NA,NA,NA,NA,NA,NA,Stephan,NA,NA
+Table1_only_not_in_comparison,NA,lophocebus albigena,NA,Lophocebus albigena,3407b,NA,110.5,NA,NA,536,NA,NA,NA,NA,NA,NA,NA,Stephan,NA,NA
+Table1_only_not_in_comparison,NA,loris tardigradus,NA,Loris tardigradus,3253b,NA,6.9,NA,NA,12,NA,NA,NA,NA,NA,NA,NA,Stephan,NA,NA
+Table1_only_not_in_comparison,NA,pan paniscus,NA,Pan paniscus,Zahliaa,NA,324,NA,NA,1753,NA,NA,NA,NA,NA,NA,NA,UCSD,NA,NA
+Table1_only_not_in_comparison,NA,pan troglodytes,NA,Pan troglodytes,YN01-92a,NA,341.2,NA,NA,1942,NA,NA,NA,NA,NA,NA,NA,GAAP,NA,NA
+Table1_only_not_in_comparison,NA,perodicticus potto,NA,Perodicticus potto,3259b,NA,11.5,NA,NA,31,NA,NA,NA,NA,NA,NA,NA,Stephan,NA,NA
+Table1_only_not_in_comparison,NA,piliocolobus badius,NA,Piliocolobus badius,3477b,NA,75,NA,NA,241,NA,NA,NA,NA,NA,NA,NA,Stephan,NA,NA
+Table1_only_not_in_comparison,NA,pongo pygmaeus,NA,Pongo pygmaeus,Briggsa,NA,345,NA,NA,1505,NA,NA,NA,NA,NA,NA,NA,UCSD,NA,NA
+Table1_only_not_in_comparison,NA,saguinus oedipus,NA,Saguinus oedipus,3311b,NA,9.3,NA,NA,26,NA,NA,NA,NA,NA,NA,NA,Stephan,NA,NA
+Table1_only_not_in_comparison,NA,trachypithecus francoisi,NA,Trachypithecus francoisi,51106a,NA,102.1,NA,NA,625,NA,NA,NA,NA,NA,NA,NA,GAAP,NA,NA
+matched,species + brain mass,alouatta caraya,Alouatta caraya,Alouatta caraya,890708a,55.8,55.8,TRUE,271.802,272,-0.198000000000036,TRUE,NA,2 x left,0.543604,0.543604,TRUE,GAAP,1,18
+matched,species + brain mass,callithrix pygmaea,Cebuella pygmaea,Callithrix pygmaea,3289b,4.15,4.2,TRUE,11.78795190792,11,0.78795190792,TRUE,NA,2 x left,0.02357590381584,0.02357590381584,TRUE,Stephan,1,23
+matched,species + brain mass,cercopithecus kandti,Cercopithecus kandti,Cercopithecus kandti,201202a,71.6,71.6,TRUE,614.1925,614,0.192499999999995,TRUE,NA,2 x left,1.228385,1.228385,TRUE,GAAP,1,17
+matched,species + brain mass,colobus angolensis,Colobus angolensis,Colobus angolensis,M00652a,74.4,74.4,TRUE,222.3995,222,0.399500000000018,TRUE,NA,2 x left,0.444799,0.444799,TRUE,GAAP,1,16
+matched,species + brain mass,gorilla gorilla,Gorilla gorilla,Gorilla gorilla,OON1072b,450,450,TRUE,2510.37804124382,2510,0.378041243819553,TRUE,NA,2 x left,5.02075608248764,5.02075608248764,TRUE,GAAP,2,3
+matched,species + brain mass,gorilla gorilla,Gorilla gorilla,Gorilla gorilla,862094b,420,420,TRUE,1981.72216928274,1982,-0.277830717262077,TRUE,1757.28762754143,L+R,3.73900979682417,3.73900979682417,TRUE,GAAP,2,4
+matched,species + brain mass,gorilla gorilla,Gorilla gorilla,Gorilla gorilla,439b,419,419,TRUE,2180.12592148425,2180,0.125921484251194,TRUE,NA,2 x left,4.3602518429685,4.3602518429685,TRUE,GAAP,2,5
+matched,species + brain mass,homo sapiens,Homo sapiens,Homo sapiens,H9-88a,1639.6,1639.6,TRUE,7734.4768,7734,0.476800000000367,TRUE,7808.6656,L+R,15.5431424,15.5431424,TRUE,UCSD,2,1
+matched,species + brain mass,homo sapiens,Homo sapiens,Homo sapiens,SN207-84a,1349,1349,TRUE,6908.4,6908,0.399999999999636,TRUE,5979.528,L+R,12.887928,12.887928,TRUE,UCSD,2,2
+matched,species + brain mass,hylobates muelleri,Hylobates muelleri,Hylobates muelleri,970431a,101.8,101.8,TRUE,481.41625,539,-57.58375,FALSE,NA,2 x left,0.9628325,0.9628325,TRUE,GAAP,1,14
+matched,species + brain mass,leontopithecus rosalia,Leontopithecus rosalia,Leontopithecus rosalia,950728a,12.7,12.7,TRUE,37.13844,37,0.138440000000003,TRUE,NA,2 x left,0.07427688,0.07427688,TRUE,GAAP,1,21
+matched,species + brain mass,macaca maura,Macaca maura,Macaca maura,M1005a,83.3,83.3,TRUE,492.373125,492,0.373125000000016,TRUE,NA,2 x left,0.98474625,0.98474625,TRUE,GAAP,1,15
+matched,species + brain mass,pan paniscus,Pan paniscus,Pan paniscus,Nambob,395,395,TRUE,1543.07276875364,1543,0.072768753639366,TRUE,1630.97068574213,L+R,3.17404345449576,3.17404345449576,TRUE,GAAP,2,6
+matched,species + brain mass,pan paniscus,Pan paniscus,Pan paniscus,MCZ-2007-52a,337,337,TRUE,1387.024,1775,-387.976,FALSE,1470.3530367929,L+R,2.8573770367929,2.8573770367929,TRUE,GAAP,2,7
+matched,species + brain mass,pan troglodytes,Pan troglodytes,Pan troglodytes,CA0171b,374,374,TRUE,1753.46486499356,1387,366.464864993555,FALSE,1468.21677215728,L+R,3.22168163715084,3.22168163715084,TRUE,GAAP,2,9
+matched,species + brain mass,pan troglodytes,Pan troglodytes,Pan troglodytes,YN00-170a,312.9,312.9,TRUE,1473.25424,1473,0.254240000000209,TRUE,NA,2 x left,2.94650848,2.94650848,TRUE,GAAP,1,10
+matched,species + brain mass,pithecia pithecia,Pithecia pithecia,Pithecia pithecia,M30709a,30,30,TRUE,279.2205,279,0.220499999999959,TRUE,NA,2 x left,0.558441,0.558441,TRUE,GAAP,1,20
+matched,species + brain mass,pongo abelii,Pongo abelli,Pongo abelii,M00305b,358,358,TRUE,1204.33460120614,1204,0.334601206140178,TRUE,1198.73955079403,L+R,2.40307415200017,2.40307415200017,TRUE,GAAP,2,11
+matched,species + brain mass,pongo abelii,Pongo abelli,Pongo abelii,Thelmab,333.8,333.8,TRUE,1112.22523985503,1112,0.225239855034715,TRUE,NA,2 x left,2.22445047971007,2.22445047971007,TRUE,GAAP,1,12
+matched,species + brain mass,pongo pygmaeus,Pongo pygmaeus,Pongo pygmaeus,"Sabtub,c",376,376,TRUE,NA,NA,NA,TRUE,1784.19938163524,2 x right (left not measured),3.56839876327048,3.56839876327048,TRUE,GAAP,2,8
+matched,species + brain mass,saguinus geoffroyi,Saguinus geoffroyi,Saguinus geoffroyi,900722a,10.5,10.5,TRUE,23.4,23,0.399999999999999,TRUE,NA,2 x left,0.0468,0.0468,TRUE,GAAP,1,22
+matched,species + brain mass,symphalangus syndactylus,Symphalangus syndactylus,Symphalangus syndactylus,880804a,138.7,138.7,TRUE,416.1725,416,0.172499999999957,TRUE,NA,2 x left,0.832345,0.832345,TRUE,GAAP,2,13
+matched,species + brain mass,varecia variegata,Varecia variegatus,Varecia variegata,3227b,31.5,31.5,TRUE,99.7387585866,100,-0.261241413400001,TRUE,NA,2 x left,0.1994775171732,0.1994775171732,TRUE,Stephan,1,19

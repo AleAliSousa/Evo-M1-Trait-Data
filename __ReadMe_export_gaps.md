@@ -26,7 +26,7 @@ These 30 catalog rows have **no matching `.tsv` in `__Public/comparative-data/`*
 | Barbeito-Andres et al. 2019 | cell number | `10.1242%2Fjeb.204651_cellnumber.tsv` |
 | Barbeito-Andres et al. 2019 | volumes | `10.1242%2Fjeb.204651_volumes.tsv` |
 | Brodmann 1913 | Tabelle 1 | `10.0000%2Fplaceholder_Tabelle1.tsv` — DOI is a placeholder; assign a real ID |
-| Caves et al. 2018 | Table S1 | `10.1016%2Fj.tree.2018.03.001_TableS1.tsv` |
+| ~~Caves et al. 2018~~ | ~~Table S1~~ | ✅ exported: `10.1016%2Fj.tree.2018.03.001_TableS1.tsv` (registry row still pending in `__ReadMe.xlsx`) |
 | DeCasien & Higham 2019 | Suppl. Data 1 – Activity Period | `10.1038%2Fs41559-019-0969-0_SupplementaryData1-ActivityPeriod.tsv` |
 | DeCasien & Higham 2019 | Suppl. Data 1 – Brain Region | `10.1038%2Fs41559-019-0969-0_SupplementaryData1-BrainRegion.tsv` |
 | DeCasien & Higham 2019 | Suppl. Data 1 – Diet | `10.1038%2Fs41559-019-0969-0_SupplementaryData1-Diet.tsv` |

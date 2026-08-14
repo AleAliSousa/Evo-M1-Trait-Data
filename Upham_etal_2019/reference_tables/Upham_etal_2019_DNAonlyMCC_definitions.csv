@@ -1,0 +1,9 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+tip_label,Tip label exactly as printed in the published tree file,,,,info,mammals,Upham_etal_2019_DNAonlyMCC,printed name preserved verbatim,"format Genus_species_FAMILY_ORDER; family and order upper-case in the source"
+species_sci,Binomial parsed from the first two tokens of the tip label,,,,info,mammals,Upham_etal_2019_DNAonlyMCC,join key,derived in build; follows Mammal Diversity Database taxonomy
+Genus,Genus parsed from the tip label,,,,info,mammals,Upham_etal_2019_DNAonlyMCC,,derived in build
+Family_tip,Family as spelled on the tip label (title-cased in the build),,,,info,mammals,Upham_etal_2019_DNAonlyMCC,"tree's own family, not the project's Family_resolved",derived in build; upper-case in source
+Order_tip,Order as spelled on the tip label (title-cased in the build),,,,info,mammals,Upham_etal_2019_DNAonlyMCC,"tree's own order, not the project's Order_resolved",derived in build; upper-case in source
+terminal_branch_length,Length of the terminal branch subtending this tip,,time,value,data,mammals,Upham_etal_2019_DNAonlyMCC,Ma,from the published dated tree; no unit conversion applied
+root_to_tip_age,Root-to-tip path length for this tip,,time,value,data,mammals,Upham_etal_2019_DNAonlyMCC,Ma; constant across tips if ultrametric,used as the build's ultrametricity check
+in_project,Whether this tip's binomial is one of the project's accepted species,,,,info,mammals,Upham_etal_2019_DNAonlyMCC,TRUE/FALSE,"matched against _keys/species_reference.csv accepted_name only; synonym matching happens in __merging_trees/tree_tip_crosswalk.csv, so FALSE here does not mean the species is absent from the project"

@@ -1,0 +1,279 @@
+accepted_name,candidate_name,candidate_rank,candidate_source,auto_match,family_expected,order_expected,note
+Ailurus fulgens,Ailurus fulgens,1,accepted_name,TRUE,Ailuridae,Carnivora,
+Alouatta caraya,Alouatta caraya,1,accepted_name,TRUE,Atelidae,Primates,
+Alouatta palliata,Alouatta palliata,1,accepted_name,TRUE,Atelidae,Primates,
+Alouatta seniculus,Alouatta seniculus,1,accepted_name,TRUE,Atelidae,Primates,
+Amblysomus hottentotus,Amblysomus hottentotus,1,accepted_name,TRUE,Chrysochloridae,Afrosoricida,
+Antidorcas marsupialis,Antidorcas marsupialis,1,accepted_name,TRUE,Bovidae,Artiodactyla,
+Aotus trivirgatus,Aotus trivirgatus,1,accepted_name,TRUE,Aotidae,Primates,
+Aotus trivirgatus,Aotus trivirgatua,2,species_key_variant,TRUE,Aotidae,Primates,orthographic variant
+Aplodontia rufa,Aplodontia rufa,1,accepted_name,TRUE,Aplodontiidae,Rodentia,
+Atelerix algirus,Atelerix algirus,1,accepted_name,TRUE,Erinaceidae,Eulipotyphla,
+Atelerix algirus,Erinaceus algirus,2,species_key_variant,TRUE,Erinaceidae,Eulipotyphla,"same epithet, generic reassignment (Erinaceus <-> Atelerix)"
+Ateles geoffroyi,Ateles geoffroyi,1,accepted_name,TRUE,Atelidae,Primates,
+Ateles sp.,,,none_possible,FALSE,Atelidae,Primates,genus-level placeholder: no single species tip can represent it
+Avahi laniger,Avahi laniger,1,accepted_name,TRUE,Indriidae,Primates,
+Avahi occidentalis,Avahi occidentalis,1,accepted_name,TRUE,Indriidae,Primates,
+Avahi occidentalis,Avahi laniger,2,species_key_variant,FALSE,Indriidae,Primates,different epithet in same genus -- distinct taxon concept unless verified as a senior synonym
+Balaenoptera acutorostrata,Balaenoptera acutorostrata,1,accepted_name,TRUE,Balaenopteridae,Artiodactyla,
+Bathyergus suillus,Bathyergus suillus,1,accepted_name,TRUE,Bathyergidae,Rodentia,
+Blarina brevicauda,Blarina brevicauda,1,accepted_name,TRUE,Soricidae,Eulipotyphla,
+Callicebus moloch,Callicebus moloch,1,accepted_name,TRUE,Pitheciidae,Primates,
+Callicebus moloch,Plecturocebus moloch,2,mdd_accepted_name,TRUE,Pitheciidae,Primates,Mammal Diversity Database name; Upham 2019 tips follow MDD
+Callicebus sp.,,,none_possible,FALSE,Pitheciidae,Primates,genus-level placeholder: no single species tip can represent it
+Callimico goeldii,Callimico goeldii,1,accepted_name,TRUE,Cebidae,Primates,
+Callithrix jacchus,Callithrix jacchus,1,accepted_name,TRUE,Cebidae,Primates,
+Callithrix pygmaea,Callithrix pygmaea,1,accepted_name,TRUE,Cebidae,Primates,
+Callithrix pygmaea,Cebuella pygmaea,2,mdd_accepted_name,TRUE,Cebidae,Primates,Mammal Diversity Database name; Upham 2019 tips follow MDD
+Canis latrans,Canis latrans,1,accepted_name,TRUE,Canidae,Carnivora,
+Canis lupus familiaris,Canis lupus familiaris,1,accepted_name,TRUE,Canidae,Carnivora,
+Canis lupus familiaris,Canis lupus,2,subspecies_parent,TRUE,Canidae,Carnivora,subspecies -> parent species: a species-level tree has no subspecies tip
+Cardioderma cor,Cardioderma cor,1,accepted_name,TRUE,Megadermatidae,Chiroptera,
+Casinycteris argynnis,Casinycteris argynnis,1,accepted_name,TRUE,Pteropodidae,Chiroptera,
+Cavia porcellus,Cavia porcellus,1,accepted_name,TRUE,Caviidae,Rodentia,
+Cebus albifrons,Cebus albifrons,1,accepted_name,TRUE,Cebidae,Primates,
+Cercocebus agilis,Cercocebus agilis,1,accepted_name,TRUE,Cercopithecidae,Primates,
+Cercocebus torquatus,Cercocebus torquatus,1,accepted_name,TRUE,Cercopithecidae,Primates,
+Cercopithecus ascanius,Cercopithecus ascanius,1,accepted_name,TRUE,Cercopithecidae,Primates,
+Cercopithecus ascanius,Cercopithecus ascianus,2,species_key_variant,FALSE,Cercopithecidae,Primates,different epithet in same genus -- distinct taxon concept unless verified as a senior synonym
+Cercopithecus mitis,Cercopithecus mitis,1,accepted_name,TRUE,Cercopithecidae,Primates,
+Cercopithecus mitis,Cercopithecus kandti,2,species_key_variant,FALSE,Cercopithecidae,Primates,different epithet in same genus -- distinct taxon concept unless verified as a senior synonym
+Cercopithecus mitis,Cercopithecus mitus,3,species_key_variant,TRUE,Cercopithecidae,Primates,orthographic variant
+Cercopithecus nictitans,Cercopithecus nictitans,1,accepted_name,TRUE,Cercopithecidae,Primates,
+Cheirogaleus major,Cheirogaleus major,1,accepted_name,TRUE,Cheirogaleidae,Primates,
+Cheirogaleus medius,Cheirogaleus medius,1,accepted_name,TRUE,Cheirogaleidae,Primates,
+Chinchilla laniger,Chinchilla laniger,1,accepted_name,TRUE,Chinchillidae,Rodentia,
+Chinchilla laniger,Chinchilla lanigera,2,verified_bridge,TRUE,Chinchillidae,Rodentia,lanigera is the correct original spelling
+Choloepus didactylus,Choloepus didactylus,1,accepted_name,TRUE,Megalonychidae,Pilosa,
+Chrysochloris asiatica,Chrysochloris asiatica,1,accepted_name,TRUE,Chrysochloridae,Afrosoricida,
+Chrysochloris stuhlmanni,Chrysochloris stuhlmanni,1,accepted_name,TRUE,Chrysochloridae,Afrosoricida,
+Coleura afra,Coleura afra,1,accepted_name,TRUE,Emballonuridae,Chiroptera,
+Colobus angolensis,Colobus angolensis,1,accepted_name,TRUE,Cercopithecidae,Primates,
+Condylura cristata,Condylura cristata,1,accepted_name,TRUE,Talpidae,Eulipotyphla,
+Crocidura flavescens,Crocidura flavescens,1,accepted_name,TRUE,Soricidae,Eulipotyphla,
+Crocidura flavescens,Crocidura occidentalis,2,species_key_variant,FALSE,Soricidae,Eulipotyphla,different epithet in same genus -- distinct taxon concept unless verified as a senior synonym
+Crocidura hildegardeae,Crocidura hildegardeae,1,accepted_name,TRUE,Soricidae,Eulipotyphla,
+Crocidura jacksoni,Crocidura jacksoni,1,accepted_name,TRUE,Soricidae,Eulipotyphla,
+Crocidura russula,Crocidura russula,1,accepted_name,TRUE,Soricidae,Eulipotyphla,
+Crocuta crocuta,Crocuta crocuta,1,accepted_name,TRUE,Hyaenidae,Carnivora,
+Cryptomys hottentotus,Cryptomys hottentotus,1,accepted_name,TRUE,Bathyergidae,Rodentia,
+Cryptomys hottentotus natalensis,Cryptomys hottentotus natalensis,1,accepted_name,TRUE,Bathyergidae,Rodentia,
+Cryptomys hottentotus natalensis,Cryptomys hottentotus,2,subspecies_parent,TRUE,Bathyergidae,Rodentia,subspecies -> parent species: a species-level tree has no subspecies tip
+Cryptomys hottentotus pretoriae,Cryptomys hottentotus pretoriae,1,accepted_name,TRUE,Bathyergidae,Rodentia,
+Cryptomys hottentotus pretoriae,Cryptomys hottentotus,2,subspecies_parent,TRUE,Bathyergidae,Rodentia,subspecies -> parent species: a species-level tree has no subspecies tip
+Cynictis penicillata,Cynictis penicillata,1,accepted_name,TRUE,Herpestidae,Carnivora,
+Damaliscus pygargus phillipsi,Damaliscus pygargus phillipsi,1,accepted_name,TRUE,Bovidae,Artiodactyla,
+Damaliscus pygargus phillipsi,Damaliscus pygargus,2,subspecies_parent,TRUE,Bovidae,Artiodactyla,subspecies -> parent species: a species-level tree has no subspecies tip
+Daubentonia madagascariensis,Daubentonia madagascariensis,1,accepted_name,TRUE,Daubentoniidae,Primates,
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,1,accepted_name,TRUE,Procaviidae,Hyracoidea,
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,1,accepted_name,TRUE,Macropodidae,Diprotodontia,
+Desmana moschata,Desmana moschata,1,accepted_name,TRUE,Talpidae,Eulipotyphla,
+Didelphis aurita,Didelphis aurita,1,accepted_name,TRUE,Didelphidae,Didelphimorphia,
+Didelphis marsupialis,Didelphis marsupialis,1,accepted_name,TRUE,Didelphidae,Didelphimorphia,
+Echinops telfairi,Echinops telfairi,1,accepted_name,TRUE,Tenrecidae,Afrosoricida,
+Echinosorex gymnura,Echinosorex gymnura,1,accepted_name,TRUE,Erinaceidae,Eulipotyphla,
+Elephantulus fuscipes,Elephantulus fuscipes,1,accepted_name,TRUE,Macroscelididae,Macroscelidea,
+Elephantulus myurus,Elephantulus myurus,1,accepted_name,TRUE,Macroscelididae,Macroscelidea,
+Epomophorus wahlbergi,Epomophorus wahlbergi,1,accepted_name,TRUE,Pteropodidae,Chiroptera,
+Epomops franqueti,Epomops franqueti,1,accepted_name,TRUE,Pteropodidae,Chiroptera,
+Equus burchelli,Equus burchelli,1,accepted_name,TRUE,Equidae,Perissodactyla,
+Equus burchelli,Equus quagga,2,verified_bridge,TRUE,Equidae,Perissodactyla,E. quagga is the senior synonym; bridge already documented in Wilman_etal_2014 README
+Erinaceus europaeus,Erinaceus europaeus,1,accepted_name,TRUE,Erinaceidae,Eulipotyphla,
+Erythrocebus patas,Erythrocebus patas,1,accepted_name,TRUE,Cercopithecidae,Primates,
+Eulemur fulvus,Eulemur fulvus,1,accepted_name,TRUE,Lemuridae,Primates,
+Eulemur fulvus,Lemur albifrons,2,species_key_variant,FALSE,Lemuridae,Primates,different genus and epithet -- verify before use
+Eulemur fulvus,Lemur fulvus,3,species_key_variant,TRUE,Lemuridae,Primates,"same epithet, generic reassignment (Lemur <-> Eulemur)"
+Eulemur mongoz,Eulemur mongoz,1,accepted_name,TRUE,Lemuridae,Primates,
+Felis catus,Felis catus,1,accepted_name,TRUE,Felidae,Carnivora,
+Felis catus,Felis domesticus,2,species_key_variant,FALSE,Felidae,Carnivora,different epithet in same genus -- distinct taxon concept unless verified as a senior synonym
+Fukomys anselli,Fukomys anselli,1,accepted_name,TRUE,Bathyergidae,Rodentia,
+Fukomys anselli,Cryptomys anselli,2,species_key_variant,TRUE,Bathyergidae,Rodentia,"same epithet, generic reassignment (Cryptomys <-> Fukomys)"
+Fukomys damarensis,Fukomys damarensis,1,accepted_name,TRUE,Bathyergidae,Rodentia,
+Fukomys damarensis,Cryptomys damarensis,2,species_key_variant,TRUE,Bathyergidae,Rodentia,"same epithet, generic reassignment (Cryptomys <-> Fukomys)"
+Fukomys darlingi,Fukomys darlingi,1,accepted_name,TRUE,Bathyergidae,Rodentia,
+Fukomys darlingi,Cryptomys darlingi,2,species_key_variant,TRUE,Bathyergidae,Rodentia,"same epithet, generic reassignment (Cryptomys <-> Fukomys)"
+Fukomys mechowii,Fukomys mechowii,1,accepted_name,TRUE,Bathyergidae,Rodentia,
+Fukomys mechowii,Fukomys mechowi,2,verified_bridge,TRUE,Bathyergidae,Rodentia,orthographic variant of the epithet; cf. Wilman_etal_2014 README (mechowii/mechowi)
+Fukomys mechowii,Cryptomys mechowi,3,species_key_variant,TRUE,Bathyergidae,Rodentia,"same epithet, generic reassignment (Cryptomys <-> Fukomys)"
+Galago senegalensis,Galago senegalensis,1,accepted_name,TRUE,Galagidae,Primates,
+Galagoides demidoff,Galagoides demidoff,1,accepted_name,TRUE,Galagidae,Primates,
+Galagoides demidoff,Galagoides demidovii,2,verified_bridge,TRUE,Galagidae,Primates,orthographic variant of the epithet
+Galagoides demidoff,Galago demidoff,3,species_key_variant,TRUE,Galagidae,Primates,"same epithet, generic reassignment (Galago <-> Galagoides)"
+Galagoides demidoff,Galago demidovii,4,species_key_variant,FALSE,Galagidae,Primates,different genus and epithet -- verify before use
+Galemys pyrenaicus,Galemys pyrenaicus,1,accepted_name,TRUE,Talpidae,Eulipotyphla,
+Galictis vittatus,Galictis vittatus,1,accepted_name,TRUE,Mustelidae,Carnivora,
+Galictis vittatus,Galictis vittata,2,verified_bridge,TRUE,Mustelidae,Carnivora,gender agreement of the epithet; bridge already documented in Wilman_etal_2014 README
+Georychus capensis,Georychus capensis,1,accepted_name,TRUE,Bathyergidae,Rodentia,
+Giraffa camelopardalis,Giraffa camelopardalis,1,accepted_name,TRUE,Giraffidae,Artiodactyla,
+Gorilla gorilla,Gorilla gorilla,1,accepted_name,TRUE,Hominidae,Primates,
+Gorilla sp.,,,none_possible,FALSE,Hominidae,Primates,genus-level placeholder: no single species tip can represent it
+Heliophobius argenteocinereus,Heliophobius argenteocinereus,1,accepted_name,TRUE,Bathyergidae,Rodentia,
+Hemicentetes semispinosus,Hemicentetes semispinosus,1,accepted_name,TRUE,Tenrecidae,Afrosoricida,
+Hemiechinus auritus,Hemiechinus auritus,1,accepted_name,TRUE,Erinaceidae,Eulipotyphla,
+Heterocephalus glaber,Heterocephalus glaber,1,accepted_name,TRUE,Bathyergidae,Rodentia,
+Homo sapiens,Homo sapiens,1,accepted_name,TRUE,Hominidae,Primates,
+Hyaena hyaena,Hyaena hyaena,1,accepted_name,TRUE,Hyaenidae,Carnivora,
+Hydrochoerus hydrochaeris,Hydrochoerus hydrochaeris,1,accepted_name,TRUE,Hydrochaeridae,Rodentia,
+Hylobates lar,Hylobates lar,1,accepted_name,TRUE,Hylobatidae,Primates,
+Hylobates muelleri,Hylobates muelleri,1,accepted_name,TRUE,Hylobatidae,Primates,
+Hylomys suillus,Hylomys suillus,1,accepted_name,TRUE,Erinaceidae,Eulipotyphla,
+Hypsignathus monstrosus,Hypsignathus monstrosus,1,accepted_name,TRUE,Pteropodidae,Chiroptera,
+Indri indri,Indri indri,1,accepted_name,TRUE,Indriidae,Primates,
+Lagothrix lagothricha,Lagothrix lagothricha,1,accepted_name,TRUE,Atelidae,Primates,
+Lagothrix lagothricha,Lagothrix lagotricha,2,species_key_variant,TRUE,Atelidae,Primates,orthographic variant
+Lagothrix lagothricha,Lagothrix logotricha,3,species_key_variant,TRUE,Atelidae,Primates,orthographic variant
+Lama glama,Lama glama,1,accepted_name,TRUE,Camelidae,Artiodactyla,
+Lemur catta,Lemur catta,1,accepted_name,TRUE,Lemuridae,Primates,
+Leontopithecus rosalia,Leontopithecus rosalia,1,accepted_name,TRUE,Cebidae,Primates,
+Lepilemur ruficaudatus,Lepilemur ruficaudatus,1,accepted_name,TRUE,Lepilemuridae,Primates,
+Lophocebus albigena,Lophocebus albigena,1,accepted_name,TRUE,Cercopithecidae,Primates,
+Lophocebus albigena,Cercocebus albigena,2,species_key_variant,TRUE,Cercopithecidae,Primates,"same epithet, generic reassignment (Cercocebus <-> Lophocebus)"
+Loris tardigradus,Loris tardigradus,1,accepted_name,TRUE,Lorisidae,Primates,
+Loris tardigradus,Loris gracilis,2,species_key_variant,FALSE,Lorisidae,Primates,different epithet in same genus -- distinct taxon concept unless verified as a senior synonym
+Loxodonta africana,Loxodonta africana,1,accepted_name,TRUE,Elephantidae,Proboscidea,
+Macaca fascicularis,Macaca fascicularis,1,accepted_name,TRUE,Cercopithecidae,Primates,
+Macaca maura,Macaca maura,1,accepted_name,TRUE,Cercopithecidae,Primates,
+Macaca mulatta,Macaca mulatta,1,accepted_name,TRUE,Cercopithecidae,Primates,
+Macaca mulatta,Macaca mulata,2,species_key_variant,TRUE,Cercopithecidae,Primates,orthographic variant
+Macaca nemestrina,Macaca nemestrina,1,accepted_name,TRUE,Cercopithecidae,Primates,
+Macaca radiata,Macaca radiata,1,accepted_name,TRUE,Cercopithecidae,Primates,
+Macronycteris commersoni,Macronycteris commersoni,1,accepted_name,TRUE,Hipposideridae,Chiroptera,
+Macronycteris commersoni,Hipposideros commersoni,2,verified_bridge,TRUE,Hipposideridae,Chiroptera,Macronycteris split from Hipposideros (Foley et al. 2017); bridge already documented in Wilman_etal_2014 README
+Macropus fuliginosus,Macropus fuliginosus,1,accepted_name,TRUE,Macropodidae,Diprotodontia,
+Mandrillus sphinx,Mandrillus sphinx,1,accepted_name,TRUE,Cercopithecidae,Primates,
+Marmosa mitis,Marmosa mitis,1,accepted_name,TRUE,Didelphidae,Didelphimorphia,
+Marmosops incanus,Marmosops incanus,1,accepted_name,TRUE,Didelphidae,Didelphimorphia,
+Megaloglossus woermanni,Megaloglossus woermanni,1,accepted_name,TRUE,Pteropodidae,Chiroptera,
+Mesocricetus auratus,Mesocricetus auratus,1,accepted_name,TRUE,Cricetidae,Rodentia,
+Metachirus nudicaudatus,Metachirus nudicaudatus,1,accepted_name,TRUE,Didelphidae,Didelphimorphia,
+Microcebus murinus,Microcebus murinus,1,accepted_name,TRUE,Cheirogaleidae,Primates,
+Microgale cowani,Microgale cowani,1,accepted_name,TRUE,Tenrecidae,Afrosoricida,
+Microgale mergulus,Microgale mergulus,1,accepted_name,TRUE,Tenrecidae,Afrosoricida,
+Microgale mergulus,Limnogale mergulus,2,verified_bridge,TRUE,Tenrecidae,Afrosoricida,"web-footed tenrec; Limnogale sunk into Microgale/Nesogale (Everson et al. 2016), Upham retains Limnogale"
+Micropotamogale lamottei,Micropotamogale lamottei,1,accepted_name,TRUE,Tenrecidae,Afrosoricida,
+Micropotamogale ruwenzorii,Micropotamogale ruwenzorii,1,accepted_name,TRUE,Tenrecidae,Afrosoricida,
+Microsorex hoyi,Microsorex hoyi,1,accepted_name,TRUE,Soricidae,Soricomorpha,
+Microsorex hoyi,Sorex hoyi,2,mdd_accepted_name,TRUE,Soricidae,Soricomorpha,Mammal Diversity Database name; Upham 2019 tips follow MDD
+Miniopterus schreibersii,Miniopterus schreibersii,1,accepted_name,TRUE,Miniopteridae,Chiroptera,
+Miopithecus talapoin,Miopithecus talapoin,1,accepted_name,TRUE,Cercopithecidae,Primates,
+Miopithecus talapoin,Cercopithecus talapoin,2,species_key_variant,TRUE,Cercopithecidae,Primates,"same epithet, generic reassignment (Cercopithecus <-> Miopithecus)"
+Mops pumilus,Mops pumilus,1,accepted_name,TRUE,Molossidae,Chiroptera,
+Mops pumilus,Chaerephon pumilus,2,verified_bridge,TRUE,Molossidae,Chiroptera,Mops/Chaerephon reassignment; bridge already documented in Wilman_etal_2014 README
+Mungos mungo,Mungos mungo,1,accepted_name,TRUE,Herpestidae,Carnivora,
+Mus musculus,Mus musculus,1,accepted_name,TRUE,Muridae,Rodentia,
+Mustela erminea,Mustela erminea,1,accepted_name,TRUE,Mustelidae,Carnivora,
+Mustela putorius,Mustela putorius,1,accepted_name,TRUE,Mustelidae,Carnivora,
+Mustela putorius furo,Mustela putorius furo,1,accepted_name,TRUE,Mustelidae,Carnivora,
+Mustela putorius furo,Mustela putorius,2,subspecies_parent,TRUE,Mustelidae,Carnivora,subspecies -> parent species: a species-level tree has no subspecies tip
+Mustela vison,Mustela vison,1,accepted_name,TRUE,Mustelidae,Carnivora,
+Mustela vison,Neovison vison,2,verified_bridge,TRUE,Mustelidae,Carnivora,Neovison split from Mustela (Wozencraft 2005); bridge already documented in Wilman_etal_2014 README
+Myosorex babaulti,Myosorex babaulti,1,accepted_name,TRUE,Soricidae,Eulipotyphla,
+Myoxus glis,Myoxus glis,1,accepted_name,TRUE,Gliridae,Rodentia,
+Myoxus glis,Glis glis,2,species_key_variant,TRUE,Gliridae,Rodentia,"same epithet, generic reassignment (Glis <-> Myoxus)"
+Myrmecophaga tridactyla,Myrmecophaga tridactyla,1,accepted_name,TRUE,Myrmecophagidae,Pilosa,
+Nasalis larvatus,Nasalis larvatus,1,accepted_name,TRUE,Cercopithecidae,Primates,
+Nasua narica,Nasua narica,1,accepted_name,TRUE,Procyonidae,Carnivora,
+Neomys fodiens,Neomys fodiens,1,accepted_name,TRUE,Soricidae,Eulipotyphla,
+Nesogale dobsoni,Nesogale dobsoni,1,accepted_name,TRUE,Tenrecidae,Afrosoricida,
+Nesogale dobsoni,Microgale dobsoni,2,species_key_variant,TRUE,Tenrecidae,Afrosoricida,"same epithet, generic reassignment (Microgale <-> Nesogale)"
+Nesogale talazaci,Nesogale talazaci,1,accepted_name,TRUE,Tenrecidae,Afrosoricida,
+Nesogale talazaci,Microgale talazaci,2,species_key_variant,TRUE,Tenrecidae,Afrosoricida,"same epithet, generic reassignment (Microgale <-> Nesogale)"
+Notamacropus parma,Notamacropus parma,1,accepted_name,TRUE,Macropodidae,Diprotodontia,
+Notamacropus parma,Macropus parma,2,species_key_variant,TRUE,Macropodidae,Diprotodontia,"same epithet, generic reassignment (Macropus <-> Notamacropus)"
+Notamacropus rufogriseus,Notamacropus rufogriseus,1,accepted_name,TRUE,Macropodidae,Diprotodontia,
+Notamacropus rufogriseus,Macropus rufogriseus,2,species_key_variant,TRUE,Macropodidae,Diprotodontia,"same epithet, generic reassignment (Macropus <-> Notamacropus)"
+Nycticebus coucang,Nycticebus coucang,1,accepted_name,TRUE,Lorisidae,Primates,
+Odocoileus virginianus,Odocoileus virginianus,1,accepted_name,TRUE,Cervidae,Artiodactyla,
+Oryctolagus cuniculus,Oryctolagus cuniculus,1,accepted_name,TRUE,Leporidae,Lagomorpha,
+Oryzorictes hova,Oryzorictes hova,1,accepted_name,TRUE,Tenrecidae,Afrosoricida,
+Oryzorictes hova,Oryzorictes talpoides,2,species_key_variant,FALSE,Tenrecidae,Afrosoricida,different epithet in same genus -- distinct taxon concept unless verified as a senior synonym
+Osphranter rufus,Osphranter rufus,1,accepted_name,TRUE,Macropodidae,Diprotodontia,
+Osphranter rufus,Macropus rufus,2,verified_bridge,TRUE,Macropodidae,Diprotodontia,Osphranter raised from Macropus subgenus (Celik et al. 2019); Upham predates the split
+Otolemur crassicaudatus,Otolemur crassicaudatus,1,accepted_name,TRUE,Galagidae,Primates,
+Otolemur crassicaudatus,Galago crassicaudatus,2,species_key_variant,TRUE,Galagidae,Primates,"same epithet, generic reassignment (Galago <-> Otolemur)"
+Otolemur garnettii,Otolemur garnettii,1,accepted_name,TRUE,Galagidae,Primates,
+Pan paniscus,Pan paniscus,1,accepted_name,TRUE,Hominidae,Primates,
+Pan troglodytes,Pan troglodytes,1,accepted_name,TRUE,Hominidae,Primates,
+Panthera leo,Panthera leo,1,accepted_name,TRUE,Felidae,Carnivora,
+Papio anubis,Papio anubis,1,accepted_name,TRUE,Cercopithecidae,Primates,
+Papio cynocephalus,Papio cynocephalus,1,accepted_name,TRUE,Cercopithecidae,Primates,
+Papio hamadryas,Papio hamadryas,1,accepted_name,TRUE,Cercopithecidae,Primates,
+Parascalops breweri,Parascalops breweri,1,accepted_name,TRUE,Talpidae,Eulipotyphla,
+Perodicticus potto,Perodicticus potto,1,accepted_name,TRUE,Lorisidae,Primates,
+Petrodromus tetradactylus,Petrodromus tetradactylus,1,accepted_name,TRUE,Macroscelididae,Macroscelidea,
+Piliocolobus badius,Piliocolobus badius,1,accepted_name,TRUE,Cercopithecidae,Primates,
+Piliocolobus badius,Colobus badius,2,species_key_variant,TRUE,Cercopithecidae,Primates,"same epithet, generic reassignment (Colobus <-> Piliocolobus)"
+Piliocolobus badius,Procolobus badius,3,species_key_variant,TRUE,Cercopithecidae,Primates,"same epithet, generic reassignment (Procolobus <-> Piliocolobus)"
+Pithecia monachus,Pithecia monachus,1,accepted_name,TRUE,Pitheciidae,Primates,
+Pithecia monachus,Pithecia monacha,2,species_key_variant,FALSE,Pitheciidae,Primates,different epithet in same genus -- distinct taxon concept unless verified as a senior synonym
+Pithecia pithecia,Pithecia pithecia,1,accepted_name,TRUE,Pitheciidae,Primates,
+Pongo pygmaeus,Pongo pygmaeus,1,accepted_name,TRUE,Hominidae,Primates,
+Pongo sp.,,,none_possible,FALSE,Hominidae,Primates,genus-level placeholder: no single species tip can represent it
+Potamogale velox,Potamogale velox,1,accepted_name,TRUE,Tenrecidae,Afrosoricida,
+Potos flavus,Potos flavus,1,accepted_name,TRUE,Procyonidae,Carnivora,
+Procavia capensis,Procavia capensis,1,accepted_name,TRUE,Procaviidae,Hyracoidea,
+Procyon lotor,Procyon lotor,1,accepted_name,TRUE,Procyonidae,Carnivora,
+Proechimys guyannensis,Proechimys guyannensis,1,accepted_name,TRUE,Echimyidae,Rodentia,
+Propithecus verreauxi,Propithecus verreauxi,1,accepted_name,TRUE,Indriidae,Primates,
+Pygathrix nemaeus,Pygathrix nemaeus,1,accepted_name,TRUE,Cercopithecidae,Primates,
+Rattus norvegicus,Rattus norvegicus,1,accepted_name,TRUE,Muridae,Rodentia,
+Rattus norvegicus,Rattus rattus,2,species_key_variant,FALSE,Muridae,Rodentia,different epithet in same genus -- distinct taxon concept unless verified as a senior synonym
+Rhynchocyon cirnei,Rhynchocyon cirnei,1,accepted_name,TRUE,Macroscelididae,Macroscelidea,
+Rhynchocyon cirnei,Rhynchocyon stuhlmanni,2,display_alias,TRUE,Macroscelididae,Macroscelidea,unified name from species_display_aliases.csv
+Rousettus aegyptiacus,Rousettus aegyptiacus,1,accepted_name,TRUE,Pteropodidae,Chiroptera,
+Ruwenzorisorex suncoides,Ruwenzorisorex suncoides,1,accepted_name,TRUE,Soricidae,Eulipotyphla,
+Saguinus geoffroyi,Saguinus geoffroyi,1,accepted_name,TRUE,Cebidae,Primates,
+Saguinus midas,Saguinus midas,1,accepted_name,TRUE,Cebidae,Primates,
+Saguinus midas,Saguinus tamarin,2,species_key_variant,FALSE,Cebidae,Primates,different epithet in same genus -- distinct taxon concept unless verified as a senior synonym
+Saguinus oedipus,Saguinus oedipus,1,accepted_name,TRUE,Cebidae,Primates,
+Saimiri sciureus,Saimiri sciureus,1,accepted_name,TRUE,Cebidae,Primates,
+Sapajus apella,Sapajus apella,1,accepted_name,TRUE,Cebidae,Primates,
+Sapajus apella,Cebus apella,2,species_key_variant,TRUE,Cebidae,Primates,"same epithet, generic reassignment (Cebus <-> Sapajus)"
+Sarcophilus harrisii,Sarcophilus harrisii,1,accepted_name,TRUE,Dasyuridae,Dasyuromorphia,
+Scalopus aquaticus,Scalopus aquaticus,1,accepted_name,TRUE,Talpidae,Eulipotyphla,
+Sciurus carolinensis,Sciurus carolinensis,1,accepted_name,TRUE,Sciuridae,Rodentia,
+Scotonycteris zenkeri,Scotonycteris zenkeri,1,accepted_name,TRUE,Pteropodidae,Chiroptera,
+scutisorexãsomereni,scutisorexãsomereni,1,accepted_name,TRUE,Soricidae,Soricomorpha,
+scutisorexãsomereni,Scutisorex somereni,2,mdd_accepted_name,TRUE,Soricidae,Soricomorpha,Mammal Diversity Database name; Upham 2019 tips follow MDD
+ScutisorexÊsomereni,ScutisorexÊsomereni,1,accepted_name,TRUE,Soricidae,Soricomorpha,
+Semnopithecus entellus,Semnopithecus entellus,1,accepted_name,TRUE,Cercopithecidae,Primates,
+Setifer setosus,Setifer setosus,1,accepted_name,TRUE,Tenrecidae,Afrosoricida,
+Solenodon paradoxus,Solenodon paradoxus,1,accepted_name,TRUE,Solenodontidae,Eulipotyphla,
+Sorex araneus,Sorex araneus,1,accepted_name,TRUE,Soricidae,Eulipotyphla,
+Sorex cinereus,Sorex cinereus,1,accepted_name,TRUE,Soricidae,Eulipotyphla,
+Sorex fumeus,Sorex fumeus,1,accepted_name,TRUE,Soricidae,Eulipotyphla,
+Sorex minutus,Sorex minutus,1,accepted_name,TRUE,Soricidae,Eulipotyphla,
+Spalax ehrenbergi,Spalax ehrenbergi,1,accepted_name,TRUE,Spalacidae,Rodentia,
+Suncus etruscus,Suncus etruscus,1,accepted_name,TRUE,Soricidae,Eulipotyphla,
+Suncus megalura,Suncus megalura,1,accepted_name,TRUE,Soricidae,Eulipotyphla,
+Suncus megalura,Sylvisorex megalura,2,species_key_variant,TRUE,Soricidae,Eulipotyphla,"same epithet, generic reassignment (Sylvisorex <-> Suncus)"
+Suncus murinus,Suncus murinus,1,accepted_name,TRUE,Soricidae,Eulipotyphla,
+Sus scrofa domesticus,Sus scrofa domesticus,1,accepted_name,TRUE,Suidae,Artiodactyla,
+Sus scrofa domesticus,Sus scrofa,2,subspecies_parent,TRUE,Suidae,Artiodactyla,subspecies -> parent species: a species-level tree has no subspecies tip
+Sylvisorex granti,Sylvisorex granti,1,accepted_name,TRUE,Soricidae,Eulipotyphla,
+Symphalangus syndactylus,Symphalangus syndactylus,1,accepted_name,TRUE,Hylobatidae,Primates,
+Symphalangus syndactylus,Hylobates syndactylus,2,species_key_variant,TRUE,Hylobatidae,Primates,"same epithet, generic reassignment (Hylobates <-> Symphalangus)"
+Talpa europaea,Talpa europaea,1,accepted_name,TRUE,Talpidae,Eulipotyphla,
+Talpa europaea,Talpa europea,2,species_key_variant,TRUE,Talpidae,Eulipotyphla,orthographic variant
+Tamandua tetradactyla,Tamandua tetradactyla,1,accepted_name,TRUE,Myrmecophagidae,Pilosa,
+Tarsius sp.,,,none_possible,FALSE,Tarsiidae,Primates,genus-level placeholder: no single species tip can represent it
+Tarsius syrichta,Tarsius syrichta,1,accepted_name,TRUE,Tarsiidae,Primates,
+Tarsius syrichta,Carlito syrichta,2,display_alias,TRUE,Tarsiidae,Primates,unified name from species_display_aliases.csv
+Tayassu tajacu,Tayassu tajacu,1,accepted_name,TRUE,Tayassuidae,Artiodactyla,
+Tayassu tajacu,Pecari tajacu,2,verified_bridge,TRUE,Tayassuidae,Artiodactyla,collared peccary moved to Pecari (Grubb 2005)
+Tenrec ecaudatus,Tenrec ecaudatus,1,accepted_name,TRUE,Tenrecidae,Afrosoricida,
+Trachypithecus francoisi,Trachypithecus francoisi,1,accepted_name,TRUE,Cercopithecidae,Primates,
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,1,accepted_name,TRUE,Bovidae,Artiodactyla,
+Tragelaphus strepsiceros,Tragelaphus stripceros,2,species_key_variant,FALSE,Bovidae,Artiodactyla,different epithet in same genus -- distinct taxon concept unless verified as a senior synonym
+Triaenops persicus,Triaenops persicus,1,accepted_name,TRUE,Rhinonycteridae,Chiroptera,
+Tupaia glis,Tupaia glis,1,accepted_name,TRUE,Tupaiidae,Scandentia,
+Tupaia minor,Tupaia minor,1,accepted_name,TRUE,Tupaiidae,Scandentia,
+Urogale everetti,Urogale everetti,1,accepted_name,TRUE,Tupaiidae,Scandentia,
+Urogale everetti,Tupaia everetti,2,mdd_accepted_name,TRUE,Tupaiidae,Scandentia,Mammal Diversity Database name; Upham 2019 tips follow MDD
+Ursus arctos,Ursus arctos,1,accepted_name,TRUE,Ursidae,Carnivora,
+Ursus maritimus,Ursus maritimus,1,accepted_name,TRUE,Ursidae,Carnivora,
+Varecia variegata,Varecia variegata,1,accepted_name,TRUE,Lemuridae,Primates,
+Varecia variegata,Lemur variegatus,2,species_key_variant,TRUE,Lemuridae,Primates,"same epithet, generic reassignment (Lemur <-> Varecia)"
+Vulpes zerda,Vulpes zerda,1,accepted_name,TRUE,Canidae,Carnivora,
+Wallabia bicolor,Wallabia bicolor,1,accepted_name,TRUE,Macropodidae,Diprotodontia,
+Zalophus californianus,Zalophus californianus,1,accepted_name,TRUE,Otariidae,Carnivora,

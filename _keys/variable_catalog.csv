@@ -139,6 +139,8 @@ Krubitzer_Kaas_1990,Krubitzer_Kaas_1990_Table1,pct_total_8fields,NA,(structure-a
 deJager_etal_2022,deJager_etal_2022,mean_mm2,NA,(structure-agnostic; see data columns),NA,area.mm2,surface area,mean,primary,Homo sapiens,arithmetic mean cross-sectional area across the sample
 deJager_etal_2022,deJager_etal_2022,min_mm2,NA,(structure-agnostic; see data columns),NA,area.mm2,surface area,min,primary,Homo sapiens,minimum of the observed range
 deJager_etal_2022,deJager_etal_2022,max_mm2,NA,(structure-agnostic; see data columns),NA,area.mm2,surface area,max,primary,Homo sapiens,maximum of the observed range
+Upham_etal_2019,Upham_etal_2019_DNAonlyMCC,terminal_branch_length,NA,(structure-agnostic; see data columns),NA,time,time,value,data,mammals,Length of the terminal branch subtending this tip
+Upham_etal_2019,Upham_etal_2019_DNAonlyMCC,root_to_tip_age,NA,(structure-agnostic; see data columns),NA,time,time,value,data,mammals,Root-to-tip path length for this tip
 Lewitus_etal_2014,Lewitus_etal_2014_TableS1,Neocortex_mm^3,NA,(structure-agnostic; see data columns),NA,value,value,NA,primary,Mammals,Neocortex volume
 Lewitus_etal_2014,Lewitus_etal_2014_TableS1,GI,NA,(structure-agnostic; see data columns),NA,value,value,NA,primary,Mammals,Gyrification index
 Lewitus_etal_2014,Lewitus_etal_2014_TableS1,Ventricle_mm^3,NA,(structure-agnostic; see data columns),NA,value,value,NA,primary,Mammals,Ventricle mm^3

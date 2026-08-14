@@ -1,66 +1,66 @@
-status,join_key,category,species_file,species_sup,n_measure_mismatch,n_expected_correction,species_as_published,neocortex_was_corrected,neo_expected_correction,brain_vv,brain_sup,brain_match,neo_vv,neo_sup,neo_match,V1_vv,V1_sup,V1_match,LGN_vv,LGN_sup,LGN_match
-matched_by_species,alouatta seniculus,Simians,Alouatta seniculus,Alouatta seniculus,0,0,Alouatta seniculus,FALSE,FALSE,50.1930501930502,50.2,TRUE,31.66,31.7,TRUE,1.918,1.9,TRUE,0.0874,0.087,TRUE
-matched_by_species,aotus trivirgatus,Simians,Aotus trivirgatus,Aotus trivirgatus,0,0,Aotus trivirgatus,FALSE,FALSE,16.5057915057915,16.5,TRUE,9.95,10,TRUE,0.996,1,TRUE,0.0329,0.033,TRUE
-matched_by_species,ateles geoffroyi,Simians,Ateles geoffroyi,Ateles geoffroyi,0,0,Ateles geoffroyi,FALSE,FALSE,104.247104247104,104.2,TRUE,70.856,70.9,TRUE,3.753,3.8,TRUE,0.151,0.151,TRUE
-matched_by_species,avahi laniger,Prosimians,Avahi laniger,Avahi laniger,0,1,Avahi laniger,TRUE,TRUE,9.5978120978121,9.6,TRUE,15,4.813,NA,0.458333333333333,0.5,TRUE,0.0287333333333333,0.029,TRUE
-matched_by_species,callithrix jacchus,Simians,Callithrix jacchus,Callithrix jacchus,0,0,Callithrix jacchus,FALSE,FALSE,7.33590733590734,7.3,TRUE,4.371,4.4,TRUE,0.566,0.6,TRUE,0.0251,0.025,TRUE
-matched_by_species,callithrix pygmaea,Simians,Cebuella pygmaea,Cebuella pygmaea,0,0,Cebuella pygmaea,FALSE,FALSE,4.34362934362934,4.3,TRUE,2.535,2.5,TRUE,0.363,0.4,TRUE,0.0169,0.017,TRUE
-matched_by_species,cebus albifrons,Simians,Cebus albifrons,Cebus albifrons,0,0,Cebus albifrons,FALSE,FALSE,68.5328185328185,68.5,TRUE,46.429,46.4,TRUE,3.764,3.8,TRUE,0.137,0.137,TRUE
-matched_by_species,cercopithecus ascanius,Simians,Cercopithecus ascanius,Cercopithecus ascanius,0,0,Cercopithecus ascanius,FALSE,FALSE,64.6718146718147,64.7,TRUE,45.166,45.2,TRUE,4.272,4.3,TRUE,0.147,0.147,TRUE
-matched_by_species,cercopithecus mitis,Simians,Cercopithecus mitus,Cercopithecus mitis,0,0,Cercopithecus mitus,FALSE,FALSE,72.3938223938224,72.4,TRUE,49.933,49.9,TRUE,4.232,4.2,TRUE,0.15,0.15,TRUE
-matched_by_species,cheirogaleus major,Prosimians,Cheirogaleus major,Cheirogaleus major,0,1,Cheirogaleus major,TRUE,TRUE,6.56370656370656,6.6,TRUE,16.3,2.938,NA,0.433,0.4,TRUE,0.0215,0.022,TRUE
-matched_by_species,cheirogaleus medius,Prosimians,Cheirogaleus medius,Cheirogaleus medius,0,1,Cheirogaleus medius,TRUE,TRUE,3.03088803088803,3,TRUE,12.6,1.221,NA,0.199,0.2,TRUE,0.0108,0.011,TRUE
-matched_by_species,daubentonia madagascariensis,Prosimians,Daubentonia madagascariensis,Daubentonia madagascariensis,0,1,Daubentonia madagascariensis,TRUE,TRUE,43.5810810810811,43.6,TRUE,36,22.127,NA,1.113,1.1,TRUE,0.0585,0.059,TRUE
-matched_by_species,eulemur fulvus,Prosimians,Eulemur fulvus,Eulemur fulvus,0,1,Eulemur fulvus,TRUE,TRUE,22.4903474903475,22.5,TRUE,31.6,12.207,NA,1.253,1.3,TRUE,0.0518,0.052,TRUE
-matched_by_species,galago senegalensis,Prosimians,Galago senegalensis,Galago senegalensis,0,1,Galago senegalensis,TRUE,TRUE,4.63320463320463,4.6,TRUE,21.4,2.139,NA,0.301,0.3,TRUE,0.016,0.016,TRUE
-matched_by_species,galagoides demidoff,Prosimians,Galagoides demidoff,Galagoides demidoff,0,1,Galagoides demidoff,TRUE,TRUE,3.26254826254826,3.3,TRUE,27.4,1.568,NA,0.214,0.2,TRUE,0.0109,0.011,TRUE
-matched_by_species,gorilla gorilla,Simians,Gorilla gorilla,Gorilla gorilla,0,0,Gorilla gorilla,FALSE,FALSE,398.648648648649,398.6,TRUE,283.7,283.7,TRUE,9.12902131733286,9.1,TRUE,0.308524768463104,0.309,TRUE
-matched_by_species,homo sapiens,Simians,Homo sapiens,Homo sapiens,0,0,Homo sapiens,FALSE,FALSE,1258.39768339768,1258.4,TRUE,991,991,TRUE,15.2475011583012,15.2,TRUE,0.335021920202671,0.335,TRUE
-matched_by_species,hylobates lar,Simians,Hylobates lar,Hylobates lar,0,0,Hylobates lar,FALSE,FALSE,102.316602316602,102.3,TRUE,68.3,68.3,TRUE,4.08666130802376,4.1,TRUE,0.16623885567803,0.166,TRUE
-matched_by_species,indri indri,Prosimians,Indri indri,Indri indri,0,1,Indri indri,TRUE,TRUE,36.969111969112,37,TRUE,19.1,20.114,NA,1.648,1.6,TRUE,0.0945,0.095,TRUE
-matched_by_species,lagothrix lagotricha,Simians,Lagothix lagathricha,Lagothix lagothricha,0,0,Lagothix lagathricha,FALSE,FALSE,97.4903474903475,97.5,TRUE,65.873,65.9,TRUE,4.856,4.9,TRUE,0.164,0.164,TRUE
-matched_by_species,lepilemur ruficaudatus,Prosimians,Lepilemur ruficaudatus,Lepilemur ruficaudatus,0,1,Lepilemur ruficaudatus,TRUE,TRUE,7.33590733590734,7.3,TRUE,11.3,3.282,NA,0.326,0.3,TRUE,0.0156,0.016,TRUE
-matched_by_species,lophocebus albigena,Simians,Lophocebus albigena,Lophocebus albigena,0,0,Lophocebus albigena,FALSE,FALSE,100.3861003861,100.4,TRUE,68.733,68.7,TRUE,5.42,5.4,TRUE,0.182,0.182,TRUE
-matched_by_species,loris tardigradus,Prosimians,Loris tardigradius,Loris tardigradus,0,1,Loris tardigradius,TRUE,TRUE,6.37065637065637,6.4,TRUE,24.4,3.524,NA,0.529,0.5,TRUE,0.0246,0.025,TRUE
-matched_by_species,macaca fascicularis,Simians,Macaca fascicularis,Macaca fascicularis,0,0,Macaca fascicularis,FALSE,FALSE,55.5984555984556,55.6,TRUE,NA,NA,TRUE,2.71334622868471,2.7,TRUE,0.0918861076499505,0.092,TRUE
-matched_by_species,macaca mulatta,Simians,Macaca mulatta,Macaca mulatta,0,0,Macaca mulatta,FALSE,FALSE,89.7683397683398,89.8,TRUE,63.482,63.5,TRUE,5.343,5.3,TRUE,0.158,0.158,TRUE
-matched_by_species,microcebus murinus,Prosimians,Microcebus murinus,Microcebus murinus,0,1,Microcebus murinus,TRUE,TRUE,1.71814671814672,1.7,TRUE,17,0.74,NA,0.139,0.1,TRUE,0.0071,0.007,TRUE
-matched_by_species,miopithecus talapoin,Simians,Miopithecus talapoin,Miopithecus talapoin,0,0,Miopithecus talapoin,FALSE,FALSE,38.6100386100386,38.6,TRUE,26.427,26.4,TRUE,2.339,2.3,TRUE,0.109,0.109,TRUE
-matched_by_species,nycticebus coucang,Prosimians,Nycticebus coucang,Nycticebus coucang,0,1,Nycticebus coucang,TRUE,TRUE,12.0656370656371,12.1,TRUE,23.3,6.192,NA,0.696,0.7,TRUE,0.0359,0.036,TRUE
-matched_by_species,otolemur crassicaudatus,Prosimians,Otolemur crassicaudatus,Otolemur crassicaudatus,0,1,Otolemur crassicaudatus,TRUE,TRUE,9.94208494208494,9.9,TRUE,17.1,4.723,NA,0.479,0.5,TRUE,0.0232,0.023,TRUE
-matched_by_species,pan paniscus,Simians,Pan paniscus,Pan paniscus,0,0,Pan paniscus,FALSE,FALSE,338.803088803089,338.8,TRUE,246.7,246.7,TRUE,11.6064643411402,11.6,TRUE,0.275140119058378,0.275,TRUE
-matched_by_species,pan troglodytes,Simians,Pan troglodytes,Pan troglodytes,0,0,Pan troglodytes,FALSE,FALSE,319.670709140537,319.7,TRUE,264.65,264.7,TRUE,8.26830320913063,8.3,TRUE,0.250738502700026,0.251,TRUE
-matched_by_species,papio anubis,Simians,Papio anubis,Papio anubis,0,0,Papio anubis,FALSE,FALSE,194.015444015444,194,TRUE,140.142,140.1,TRUE,10.001,10,TRUE,0.395,0.395,TRUE
-matched_by_species,perodicticus potto,Prosimians,Perodicticus potto,Perodicticus potto,0,1,Perodicticus potto,TRUE,TRUE,13.5135135135135,13.5,TRUE,19.7,6.683,NA,0.495,0.5,TRUE,0.0243,0.024,TRUE
-matched_by_species,piliocolobus badius,Simians,Procolobus badius,Procolobus badius,0,0,Procolobus badius,FALSE,FALSE,75.2895752895753,75.3,TRUE,50.906,50.9,TRUE,3.053,3.1,TRUE,0.128,0.128,TRUE
-matched_by_species,pithecia monachus,Simians,Pithecus monachus,Pithecia monachus,0,0,Pithecus monachus,FALSE,FALSE,33.7837837837838,33.8,TRUE,21.028,21,TRUE,1.679,1.7,TRUE,0.0763,0.076,TRUE
-matched_by_species,plecturocebus moloch,Simians,Callicebus moloch,Callicebus moloch,0,0,Callicebus moloch,FALSE,FALSE,18.3397683397683,18.3,TRUE,11.163,11.2,TRUE,1.201,1.2,TRUE,0.0542,0.054,TRUE
-matched_by_species,pongo pygmaeus,Simians,Pongo pygmaeus,Pongo pygmaeus,0,0,Pongo pygmaeus,FALSE,FALSE,371.299871299871,371.3,TRUE,269.233333333333,269.2,TRUE,8.23371068590795,8.2,TRUE,0.259121098112831,0.259,TRUE
-matched_by_species,propithecus verreauxi,Prosimians,Propithecus verreauxi,Propithecus verreauxi,0,1,Propithecus verreauxi,TRUE,TRUE,25.7722007722008,25.8,TRUE,18.5,13.17,NA,1.106,1.1,TRUE,0.0645,0.065,TRUE
-matched_by_species,saguinus midas,Simians,Sanguinus midas,Saguinus midas,0,0,Sanguinus midas,FALSE,FALSE,9.94208494208494,9.9,TRUE,5.883,5.9,TRUE,0.841,0.8,TRUE,0.036,0.036,TRUE
-matched_by_species,saguinus oedipus,Simians,Sanguinus oedipus,Saguinus oedipus,0,0,Sanguinus oedipus,FALSE,FALSE,9.65250965250965,9.7,TRUE,5.894,5.9,TRUE,0.807,0.8,TRUE,0.0342,0.034,TRUE
-matched_by_species,saimiri sciureus,Simians,Saimiri sciureus,Saimiri sciureus,0,0,Saimiri sciureus,FALSE,FALSE,23.1660231660232,23.2,TRUE,15.541,15.5,TRUE,1.884,1.9,TRUE,0.0629,0.063,TRUE
-matched_by_species,symphalangus syndactylus,Simians,Symphalangus syndactylus,Symphalangus syndactylus,0,0,Syndactylus symphalangus,FALSE,FALSE,133.880308880309,133.9,TRUE,NA,NA,TRUE,5.46891827475393,5.5,TRUE,NA,NA,TRUE
-matched_by_species,tarsius syrichta,Prosimians,Tarsius syrichta,Tarsius syrichta,0,1,Tarsius syrichta,TRUE,TRUE,3.47490347490348,3.5,TRUE,23.1,1.768,NA,0.349,0.3,TRUE,0.0208,0.021,TRUE
-matched_by_species,varecia variegata,Prosimians,Varecia variegata,Varecia variegata,0,1,Varecia variegata,TRUE,TRUE,30.4054054054054,30.4,TRUE,23.8,15.293,NA,1.745,1.7,TRUE,0.0689,0.069,TRUE
-outside_deSousa_2010 (Stephan/Frahm rows in the comparison file),crocidura flavescens,0943,Crocidura flavescens,NA,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0.28,NA,NA
+status,join_key,category,species_file,species_sup,n_measure_mismatch,n_expected_correction,brain_vv,neo_vv,V1_vv,LGN_vv,species_as_published,neocortex_was_corrected,brain_sup,neo_sup,V1_sup,LGN_sup,brain_match,neo_match,V1_match,LGN_match,neo_expected_correction
+matched_by_species,alouatta seniculus,Simians,Alouatta seniculus,Alouatta seniculus,0,0,50.1930501930502,31.66,1.9179999999999995,0.08739999999999999,Alouatta seniculus,FALSE,50.2,31.7,1.9,0.087,TRUE,TRUE,TRUE,TRUE,FALSE
+matched_by_species,aotus trivirgatus,Simians,Aotus trivirgatus,Aotus trivirgatus,0,0,16.505791505791503,9.950000000000001,0.996,0.0329,Aotus trivirgatus,FALSE,16.5,10,1,0.033,TRUE,TRUE,TRUE,TRUE,FALSE
+matched_by_species,ateles geoffroyi,Simians,Ateles geoffroyi,Ateles geoffroyi,0,0,104.24710424710428,70.85599999999998,3.753,0.15100000000000002,Ateles geoffroyi,FALSE,104.2,70.9,3.8,0.151,TRUE,TRUE,TRUE,TRUE,FALSE
+matched_by_species,avahi laniger,Prosimians,Avahi laniger,Avahi laniger,0,1,9.597812097812097,15,0.45833333333333326,0.028733333333333336,Avahi laniger,TRUE,9.6,4.813,0.5,0.029,TRUE,NA,TRUE,TRUE,TRUE
+matched_by_species,callithrix jacchus,Simians,Callithrix jacchus,Callithrix jacchus,0,0,7.335907335907336,4.371,0.566,0.025099999999999997,Callithrix jacchus,FALSE,7.3,4.4,0.6,0.025,TRUE,TRUE,TRUE,TRUE,FALSE
+matched_by_species,callithrix pygmaea,Simians,Cebuella pygmaea,Cebuella pygmaea,0,0,4.3436293436293445,2.5349999999999997,0.36300000000000004,0.0169,Cebuella pygmaea,FALSE,4.3,2.5,0.4,0.017,TRUE,TRUE,TRUE,TRUE,FALSE
+matched_by_species,cebus albifrons,Simians,Cebus albifrons,Cebus albifrons,0,0,68.5328185328185,46.429,3.7640000000000002,0.137,Cebus albifrons,FALSE,68.5,46.4,3.8,0.137,TRUE,TRUE,TRUE,TRUE,FALSE
+matched_by_species,cercopithecus ascanius,Simians,Cercopithecus ascanius,Cercopithecus ascanius,0,0,64.67181467181467,45.16600000000001,4.272,0.14700000000000002,Cercopithecus ascanius,FALSE,64.7,45.2,4.3,0.147,TRUE,TRUE,TRUE,TRUE,FALSE
+matched_by_species,cercopithecus mitis,Simians,Cercopithecus mitus,Cercopithecus mitis,0,0,72.39382239382238,49.933,4.232,0.15000000000000002,Cercopithecus mitus,FALSE,72.4,49.9,4.2,0.15,TRUE,TRUE,TRUE,TRUE,FALSE
+matched_by_species,cheirogaleus major,Prosimians,Cheirogaleus major,Cheirogaleus major,0,1,6.563706563706562,16.3,0.43300000000000005,0.0215,Cheirogaleus major,TRUE,6.6,2.938,0.4,0.022,TRUE,NA,TRUE,TRUE,TRUE
+matched_by_species,cheirogaleus medius,Prosimians,Cheirogaleus medius,Cheirogaleus medius,0,1,3.0308880308880304,12.6,0.199,0.0108,Cheirogaleus medius,TRUE,3,1.221,0.2,0.011,TRUE,NA,TRUE,TRUE,TRUE
+matched_by_species,daubentonia madagascariensis,Prosimians,Daubentonia madagascariensis,Daubentonia madagascariensis,0,1,43.58108108108107,36,1.113,0.058499999999999996,Daubentonia madagascariensis,TRUE,43.6,22.127,1.1,0.059,TRUE,NA,TRUE,TRUE,TRUE
+matched_by_species,eulemur fulvus,Prosimians,Eulemur fulvus,Eulemur fulvus,0,1,22.49034749034749,31.6,1.2529999999999997,0.0518,Eulemur fulvus,TRUE,22.5,12.207,1.3,0.052,TRUE,NA,TRUE,TRUE,TRUE
+matched_by_species,galago senegalensis,Prosimians,Galago senegalensis,Galago senegalensis,0,1,4.633204633204634,21.4,0.30100000000000005,0.016,Galago senegalensis,TRUE,4.6,2.139,0.3,0.016,TRUE,NA,TRUE,TRUE,TRUE
+matched_by_species,galagoides demidoff,Prosimians,Galagoides demidoff,Galagoides demidoff,0,1,3.2625482625482625,27.4,0.21400000000000002,0.010900000000000002,Galagoides demidoff,TRUE,3.3,1.568,0.2,0.011,TRUE,NA,TRUE,TRUE,TRUE
+matched_by_species,gorilla gorilla,Simians,Gorilla gorilla,Gorilla gorilla,0,0,398.6486486486487,283.7,9.129021317332858,0.30852476846310395,Gorilla gorilla,FALSE,398.6,283.7,9.1,0.309,TRUE,TRUE,TRUE,TRUE,FALSE
+matched_by_species,homo sapiens,Simians,Homo sapiens,Homo sapiens,0,0,1258.3976833976835,991,15.247501158301157,0.335021920202671,Homo sapiens,FALSE,1258.4,991,15.2,0.335,TRUE,TRUE,TRUE,TRUE,FALSE
+matched_by_species,hylobates lar,Simians,Hylobates lar,Hylobates lar,0,0,102.3166023166023,68.3,4.086661308023756,0.16623885567803018,Hylobates lar,FALSE,102.3,68.3,4.1,0.166,TRUE,TRUE,TRUE,TRUE,FALSE
+matched_by_species,indri indri,Prosimians,Indri indri,Indri indri,0,1,36.96911196911197,19.1,1.6479999999999997,0.09450000000000001,Indri indri,TRUE,37,20.114,1.6,0.095,TRUE,NA,TRUE,TRUE,TRUE
+matched_by_species,lagothrix lagotricha,Simians,Lagothix lagathricha,Lagothix lagothricha,0,0,97.49034749034752,65.87299999999999,4.855999999999999,0.164,Lagothix lagathricha,FALSE,97.5,65.9,4.9,0.164,TRUE,TRUE,TRUE,TRUE,FALSE
+matched_by_species,lepilemur ruficaudatus,Prosimians,Lepilemur ruficaudatus,Lepilemur ruficaudatus,0,1,7.335907335907336,11.3,0.326,0.015599999999999996,Lepilemur ruficaudatus,TRUE,7.3,3.282,0.3,0.016,TRUE,NA,TRUE,TRUE,TRUE
+matched_by_species,lophocebus albigena,Simians,Lophocebus albigena,Lophocebus albigena,0,0,100.38610038610038,68.733,5.42,0.182,Lophocebus albigena,FALSE,100.4,68.7,5.4,0.182,TRUE,TRUE,TRUE,TRUE,FALSE
+matched_by_species,loris tardigradus,Prosimians,Loris tardigradius,Loris tardigradus,0,1,6.37065637065637,24.4,0.529,0.0246,Loris tardigradius,TRUE,6.4,3.524,0.5,0.025,TRUE,NA,TRUE,TRUE,TRUE
+matched_by_species,macaca fascicularis,Simians,Macaca fascicularis,Macaca fascicularis,0,0,55.59845559845561,NA,2.7133462286847085,0.09188610764995048,Macaca fascicularis,FALSE,55.6,NA,2.7,0.092,TRUE,TRUE,TRUE,TRUE,FALSE
+matched_by_species,macaca mulatta,Simians,Macaca mulatta,Macaca mulatta,0,0,89.76833976833977,63.482,5.343,0.15800000000000003,Macaca mulatta,FALSE,89.8,63.5,5.3,0.158,TRUE,TRUE,TRUE,TRUE,FALSE
+matched_by_species,microcebus murinus,Prosimians,Microcebus murinus,Microcebus murinus,0,1,1.718146718146718,17,0.139,0.0070999999999999995,Microcebus murinus,TRUE,1.7,0.74,0.1,0.007,TRUE,NA,TRUE,TRUE,TRUE
+matched_by_species,miopithecus talapoin,Simians,Miopithecus talapoin,Miopithecus talapoin,0,0,38.61003861003861,26.427,2.3389999999999995,0.109,Miopithecus talapoin,FALSE,38.6,26.4,2.3,0.109,TRUE,TRUE,TRUE,TRUE,FALSE
+matched_by_species,nycticebus coucang,Prosimians,Nycticebus coucang,Nycticebus coucang,0,1,12.065637065637066,23.3,0.6959999999999998,0.0359,Nycticebus coucang,TRUE,12.1,6.192,0.7,0.036,TRUE,NA,TRUE,TRUE,TRUE
+matched_by_species,otolemur crassicaudatus,Prosimians,Otolemur crassicaudatus,Otolemur crassicaudatus,0,1,9.942084942084946,17.1,0.47900000000000004,0.023199999999999995,Otolemur crassicaudatus,TRUE,9.9,4.723,0.5,0.023,TRUE,NA,TRUE,TRUE,TRUE
+matched_by_species,pan paniscus,Simians,Pan paniscus,Pan paniscus,0,0,338.8030888030889,246.7,11.6064643411402,0.2751401190583783,Pan paniscus,FALSE,338.8,246.7,11.6,0.275,TRUE,TRUE,TRUE,TRUE,FALSE
+matched_by_species,pan troglodytes,Simians,Pan troglodytes,Pan troglodytes,0,0,319.67070914053664,264.65,8.268303209130629,0.25073850270002573,Pan troglodytes,FALSE,319.7,264.7,8.3,0.251,TRUE,TRUE,TRUE,TRUE,FALSE
+matched_by_species,papio anubis,Simians,Papio anubis,Papio anubis,0,0,194.01544401544405,140.142,10.001000000000001,0.395,Papio anubis,FALSE,194,140.1,10,0.395,TRUE,TRUE,TRUE,TRUE,FALSE
+matched_by_species,perodicticus potto,Prosimians,Perodicticus potto,Perodicticus potto,0,1,13.513513513513512,19.7,0.495,0.0243,Perodicticus potto,TRUE,13.5,6.683,0.5,0.024,TRUE,NA,TRUE,TRUE,TRUE
+matched_by_species,piliocolobus badius,Simians,Procolobus badius,Procolobus badius,0,0,75.2895752895753,50.906000000000006,3.0529999999999995,0.128,Procolobus badius,FALSE,75.3,50.9,3.1,0.128,TRUE,TRUE,TRUE,TRUE,FALSE
+matched_by_species,pithecia monachus,Simians,Pithecus monachus,Pithecia monachus,0,0,33.783783783783775,21.028,1.679,0.07629999999999998,Pithecus monachus,FALSE,33.8,21,1.7,0.076,TRUE,TRUE,TRUE,TRUE,FALSE
+matched_by_species,plecturocebus moloch,Simians,Callicebus moloch,Callicebus moloch,0,0,18.339768339768337,11.163,1.2009999999999998,0.05420000000000001,Callicebus moloch,FALSE,18.3,11.2,1.2,0.054,TRUE,TRUE,TRUE,TRUE,FALSE
+matched_by_species,pongo pygmaeus,Simians,Pongo pygmaeus,Pongo pygmaeus,0,0,371.2998712998713,269.23333333333335,8.23371068590795,0.2591210981128314,Pongo pygmaeus,FALSE,371.3,269.2,8.2,0.259,TRUE,TRUE,TRUE,TRUE,FALSE
+matched_by_species,propithecus verreauxi,Prosimians,Propithecus verreauxi,Propithecus verreauxi,0,1,25.772200772200772,18.5,1.106,0.0645,Propithecus verreauxi,TRUE,25.8,13.17,1.1,0.065,TRUE,NA,TRUE,TRUE,TRUE
+matched_by_species,saguinus midas,Simians,Sanguinus midas,Saguinus midas,0,0,9.942084942084946,5.883,0.8410000000000001,0.036,Sanguinus midas,FALSE,9.9,5.9,0.8,0.036,TRUE,TRUE,TRUE,TRUE,FALSE
+matched_by_species,saguinus oedipus,Simians,Sanguinus oedipus,Saguinus oedipus,0,0,9.652509652509657,5.893999999999999,0.807,0.0342,Sanguinus oedipus,FALSE,9.7,5.9,0.8,0.034,TRUE,TRUE,TRUE,TRUE,FALSE
+matched_by_species,saimiri sciureus,Simians,Saimiri sciureus,Saimiri sciureus,0,0,23.166023166023166,15.540999999999999,1.8839999999999997,0.0629,Saimiri sciureus,FALSE,23.2,15.5,1.9,0.063,TRUE,TRUE,TRUE,TRUE,FALSE
+matched_by_species,symphalangus syndactylus,Simians,Symphalangus syndactylus,Symphalangus syndactylus,0,0,133.8803088803089,NA,5.468918274753932,NA,Syndactylus symphalangus,FALSE,133.9,NA,5.5,NA,TRUE,TRUE,TRUE,TRUE,FALSE
+matched_by_species,tarsius syrichta,Prosimians,Tarsius syrichta,Tarsius syrichta,0,1,3.4749034749034746,23.1,0.349,0.020799999999999996,Tarsius syrichta,TRUE,3.5,1.768,0.3,0.021,TRUE,NA,TRUE,TRUE,TRUE
+matched_by_species,varecia variegata,Prosimians,Varecia variegata,Varecia variegata,0,1,30.405405405405403,23.8,1.7449999999999999,0.0689,Varecia variegata,TRUE,30.4,15.293,1.7,0.069,TRUE,NA,TRUE,TRUE,TRUE
+outside_deSousa_2010 (Stephan/Frahm rows in the comparison file),crocidura flavescens,0943,Crocidura flavescens,NA,0,0,NA,NA,NA,0.28,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 outside_deSousa_2010 (Stephan/Frahm rows in the comparison file),crocidura giffardi,0952,Crocidura giffardi,NA,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-outside_deSousa_2010 (Stephan/Frahm rows in the comparison file),crocidura russula,1071,Crocidura russula,NA,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0.08,NA,NA
+outside_deSousa_2010 (Stephan/Frahm rows in the comparison file),crocidura russula,1071,Crocidura russula,NA,0,0,NA,NA,NA,0.08,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 outside_deSousa_2010 (Stephan/Frahm rows in the comparison file),crocidura suaveolens,1085,Crocidura suaveolens,NA,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 outside_deSousa_2010 (Stephan/Frahm rows in the comparison file),desmana moschata,1205,Desmana moschata,NA,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-outside_deSousa_2010 (Stephan/Frahm rows in the comparison file),echinops telfairi,0585,Echinops telfairi,NA,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0.37,NA,NA
-outside_deSousa_2010 (Stephan/Frahm rows in the comparison file),erinaceus algirus,0689,Erinaceus algirus,NA,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,5.02,NA,NA
-outside_deSousa_2010 (Stephan/Frahm rows in the comparison file),erinaceus europaeus,0695,Erinaceus europaeus,NA,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,3.9,NA,NA
+outside_deSousa_2010 (Stephan/Frahm rows in the comparison file),echinops telfairi,0585,Echinops telfairi,NA,0,0,NA,NA,NA,0.37,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+outside_deSousa_2010 (Stephan/Frahm rows in the comparison file),erinaceus algirus,0689,Erinaceus algirus,NA,0,0,NA,NA,NA,5.02,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+outside_deSousa_2010 (Stephan/Frahm rows in the comparison file),erinaceus europaeus,0695,Erinaceus europaeus,NA,0,0,NA,NA,NA,3.9,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 outside_deSousa_2010 (Stephan/Frahm rows in the comparison file),galemys pyrenaicus,1207,Galemys pyrenaicus,NA,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-outside_deSousa_2010 (Stephan/Frahm rows in the comparison file),hemicentetes semispin.,0581,Hemicentetes semispin.,NA,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0.37,NA,NA
+outside_deSousa_2010 (Stephan/Frahm rows in the comparison file),hemicentetes semispin.,0581,Hemicentetes semispin.,NA,0,0,NA,NA,NA,0.37,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 outside_deSousa_2010 (Stephan/Frahm rows in the comparison file),hemiechinus auritus,0701,Hemiechinus auritus,NA,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 outside_deSousa_2010 (Stephan/Frahm rows in the comparison file),neomys fodiens,0839,Neomys fodiens,NA,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-outside_deSousa_2010 (Stephan/Frahm rows in the comparison file),setifer setosus,0579,Setifer setosus,NA,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1.05,NA,NA
-outside_deSousa_2010 (Stephan/Frahm rows in the comparison file),sorex araneus,0715,Sorex araneus,NA,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0.07,NA,NA
-outside_deSousa_2010 (Stephan/Frahm rows in the comparison file),sorex minutus,0769,Sorex minutus,NA,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0.06,NA,NA
-outside_deSousa_2010 (Stephan/Frahm rows in the comparison file),suncus murinus,1137,Suncus murinus,NA,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0.18,NA,NA
+outside_deSousa_2010 (Stephan/Frahm rows in the comparison file),setifer setosus,0579,Setifer setosus,NA,0,0,NA,NA,NA,1.05,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+outside_deSousa_2010 (Stephan/Frahm rows in the comparison file),sorex araneus,0715,Sorex araneus,NA,0,0,NA,NA,NA,0.07,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+outside_deSousa_2010 (Stephan/Frahm rows in the comparison file),sorex minutus,0769,Sorex minutus,NA,0,0,NA,NA,NA,0.06,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+outside_deSousa_2010 (Stephan/Frahm rows in the comparison file),suncus murinus,1137,Suncus murinus,NA,0,0,NA,NA,NA,0.18,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 outside_deSousa_2010 (Stephan/Frahm rows in the comparison file),talpa europaea,1215,Talpa europaea,NA,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-outside_deSousa_2010 (Stephan/Frahm rows in the comparison file),tenrec ecaudatus,0577,Tenrec ecaudatus,NA,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1.46,NA,NA
-outside_deSousa_2010 (Stephan/Frahm rows in the comparison file),tupaia glis,Scandentia,Tupaia glis,NA,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,0.102,NA,NA,12.9,NA,NA
-outside_deSousa_2010 (Stephan/Frahm rows in the comparison file),tupaia minor,Scandentia,Tupaia minor,NA,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,0.125,NA,NA,9.88,NA,NA
-outside_deSousa_2010 (Stephan/Frahm rows in the comparison file),urogale everetti,Scandentia,Urogale everetti,NA,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,0.127,NA,NA,9.98,NA,NA
+outside_deSousa_2010 (Stephan/Frahm rows in the comparison file),tenrec ecaudatus,0577,Tenrec ecaudatus,NA,0,0,NA,NA,NA,1.46,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+outside_deSousa_2010 (Stephan/Frahm rows in the comparison file),tupaia glis,Scandentia,Tupaia glis,NA,0,0,NA,NA,0.10199999999999998,12.9,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+outside_deSousa_2010 (Stephan/Frahm rows in the comparison file),tupaia minor,Scandentia,Tupaia minor,NA,0,0,NA,NA,0.125,9.88,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+outside_deSousa_2010 (Stephan/Frahm rows in the comparison file),urogale everetti,Scandentia,Urogale everetti,NA,0,0,NA,NA,0.127,9.98,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA

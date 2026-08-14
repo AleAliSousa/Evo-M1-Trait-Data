@@ -1,0 +1,63 @@
+Audio Visual database
+
+Overall goal: create biggest sensory database for mammals. Used in analyses in the project Visual_Auditory_Heffner
+
+
+<<PART 1 VISUAL ACUITY>>
+
+
+Goal 1: visual acuity value* per each species with a reference (primary or secondary), measurement technique, and notes.
+Bonus: also include any other details as additional columns; if more than one value per species include that in additional rows
+
+<<FILES>>
+VA.xlsx
+FOLDER: References visual acuity
+
+<<DATA>>
+1. Colour needs to be removed.  Add this information into a column instead.
+2a. The aim is to have data based on the description of Veilleux and Kirk 2014: maximum behavioural visual acuity, or if that is not available, maximum anatomical visual acuity (see p. 45). So far, this should be the case for all data that are there, but it is worth checking if they are from a different reference.
+2b. If more than one value is available per species, give all values, one row each.
+3. Create separate rows per species for different environmental substrates: air, water
+4a. It is sufficient just to list the secondary references and just to give a mean. However, if there is information about primary references, you can give that in an other column. 
+4b. Primary reference might be useful where things are not clear. For example, Kirk and Kay gave a range of values, so you cannot get a mean from that.
+<<METADATA>>
+Include further information, 
+Full references, 
+Abbreviations e.g.,  MT = measurement type
+
+
+
+<<PART 2 HEARING DATA>>
+
+Goal 2: hearing data values* per each species with a reference (primary or secondary), measurement technique, and notes.
+Bonus: also include any other details as additional columns; if more than one value per species include that in additional rows
+
+<<FILES>>
+hearing data.xlsx
+FOLDER: References hearing etc
+
+<<DATA>>  
+1. Note that some values have 4+ digits after the decimal point. This is because they are estimates from the figures in Koay 1998.  Therefore, please note in all cases where such a value was used, adding a note about the REF. Also, if there is an other similar value from a different source, you could just use that one instead.
+2. Combine Delta t and Functional head size; they are the same thing:
+Delta t in µsec = Functional head size = interaural distance (µs)
+3. Create separate rows per species for different environmental substrates: air, water
+
+<<METADATA>>
+Include further information, 
+Full references, 
+Abbreviations
+
+
+
+
+
+
+<<REFERENCES>> SEE 
+<<ALSO>>
+Behavioural audiograms
+https://www.utoledo.edu/al/psychology/research/psychobio/audiograms2.html
+
+
+
+
+

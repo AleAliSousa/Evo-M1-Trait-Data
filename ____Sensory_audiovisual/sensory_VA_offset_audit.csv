@@ -1,0 +1,128 @@
+SensoryData_excel_row,species,common_name,SensoryData_VA_cdeg,SensoryData_method,SensoryData_substrate,SensoryData_reference,species_present_in_Part1,Part1_VA_for_this_species,Part1_method,Part1_substrate,Part1_secondary_source,status,SensoryData_value_is_Part1_value_of
+2,Acinonyx jubatus,Cheetah,23.02,A,,Veilleaux and Kirk 2014,True,23.02,A,,Veilleaux and Kirk 2014,agree,
+4,Alouatta caraya,Black-and-gold howler monkey,2.8,A,,Veilleaux and Kirk 2014,True,59.61,A,,Veilleaux and Kirk 2014,MISMATCH,Cuniculus paca|Dasyurus hallucatus
+6,Aonyx cinerea,Asian clawless otter,59.61,A,,Veilleaux and Kirk 2014,True,2.2|2.0,B|B,air|water,Kirk and Kay 2004|Kirk and Kay 2004,MISMATCH,Alouatta caraya
+7,Aonyx cinerea,Asian clawless otter,2.2,B,air,Kirk and Kay 2004,True,2.2|2.0,B|B,air|water,Kirk and Kay 2004|Kirk and Kay 2004,agree,Mustela nivalis
+8,Aotus azarae,Azara’s owl monkey,2.0,B,water,Kirk and Kay 2004,True,8.3,A,,Veilleaux and Kirk 2014,MISMATCH,Aonyx cinerea
+9,Aotus trivirgatus,Northern owl monkey,8.3,A,,Veilleaux and Kirk 2014,True,10.0,B,,Veilleaux and Kirk 2014,MISMATCH,Aotus azarae|Canis lupus familiaris
+10,Artibeus cinereus,Gervaif fruit eating bat,10.0,B,,Veilleaux and Kirk 2014,True,1.4,A,,Veilleaux and Kirk 2014,MISMATCH,Aotus trivirgatus|Camelus bactrianus
+11,Artibeus jamaicensis,Jamaican fruit-eating bat,1.4,A,,Veilleaux and Kirk 2014,True,0.167,B,,Veilleaux and Kirk 2014,MISMATCH,Artibeus cinereus
+12,Balaenoptera acutorostrata,Minke whale,0.167,B,,Veilleaux and Kirk 2014,True,4.2,A,water,Kirk and Kay 2004,MISMATCH,Artibeus jamaicensis|Phyllostomus hastatus
+13,Bos taurus,Domestic cow/cattle,4.2,A,water,Kirk and Kay 2004,True,10.31,A,,Veilleaux and Kirk 2014,MISMATCH,Balaenoptera acutorostrata|Enhydra lutris|Eumetopias jubatus|Microcebus murinus
+14,Callithrix jacchus,Common marmoset,10.31,A,,Veilleaux and Kirk 2014,True,30.0,A,,Veilleaux and Kirk 2014,MISMATCH,Bos taurus
+15,Callorhinus ursinus,Northern fur seal,30.0,A,,Veilleaux and Kirk 2014,True,7.1,A,,Kirk and Kay 2004,MISMATCH,Callithrix jacchus
+16,Camelus bactrianus,Bactrian camel,7.1,A,,Kirk and Kay 2004,True,10.0,B,,Veilleaux and Kirk 2014,MISMATCH,Callorhinus ursinus
+17,Camelus dromedarius,Dromedary camel,10.0,B,,Veilleaux and Kirk 2014,True,10.4,A,,Veilleaux and Kirk 2014,MISMATCH,Aotus trivirgatus|Camelus bactrianus
+18,Canis lupus familiaris,Dog,10.4,A,,Veilleaux and Kirk 2014,True,8.3,A,,Heffner and Heffner 1992,MISMATCH,Camelus dromedarius
+19,Canis lupus,Gray wolf,8.3,A,,Heffner and Heffner 1992,True,14.57,A,,Veilleaux and Kirk 2014,MISMATCH,Aotus azarae|Canis lupus familiaris
+20,Capra hircus,Domestic goat,14.57,A,,Veilleaux and Kirk 2014,True,8.43,A,,Veilleaux and Kirk 2014,MISMATCH,Canis lupus
+21,Carollia perspicillata,Seba's short-tailed bat,8.43,A,,Veilleaux and Kirk 2014,True,0.94,A,,Veilleaux and Kirk 2014,MISMATCH,Capra hircus
+23,Cebus apella,Tufted capuchin,0.94,A,,Veilleaux and Kirk 2014,True,54.75,A,,Veilleaux and Kirk 2014,MISMATCH,Carollia perspicillata
+27,Cheirogaleus medius,Fat-tailed dwarf lemur,54.75,A,,Veilleaux and Kirk 2014,True,2.84,A,,Veilleaux and Kirk 2014,MISMATCH,Cebus apella
+29,Chlorocebus aethiops,Grivet monkey,2.84,A,,Veilleaux and Kirk 2014,True,55.23,A,,Veilleaux and Kirk 2014,MISMATCH,Cheirogaleus medius
+30,Choloepus didactylus,Linné's two-toed sloth,55.23,A,,Veilleaux and Kirk 2014,True,1.54,A,,Veilleaux and Kirk 2014,MISMATCH,Chlorocebus aethiops
+32,Crocuta crocuta,Spotted hyena,1.54,A,,Veilleaux and Kirk 2014,True,8.4,A,,Veilleaux and Kirk 2014,MISMATCH,Choloepus didactylus
+33,Cuniculus paca,Spotted paca,8.4,A,,Veilleaux and Kirk 2014,True,2.8,A,,Veilleaux and Kirk 2014,MISMATCH,Crocuta crocuta
+37,Dama dama,Fallow deer,18.48,A,,Veilleaux and Kirk 2014,True,18.48,A,,Veilleaux and Kirk 2014,agree,
+38,Dasyprocta leporina,Red-rumped agouti,6.21,A,,Veilleaux and Kirk 2014,True,6.21,A,,Veilleaux and Kirk 2014,agree,
+39,Dasyurus hallucatus,Quoll,2.8,B,,Veilleaux and Kirk 2014,True,2.8,B,,Veilleaux and Kirk 2014,agree,Cuniculus paca
+40,Delphinapterus leucas,Beluga whale,2.6,A,water,Kirk and Kay 2004,True,2.6,A,water,Kirk and Kay 2004,agree,Phocoenoides dalli
+41,Delphinus delphis,Common dolphin,3.8,A,water,Kirk and Kay 2004,True,3.8,A,water,Kirk and Kay 2004,agree,Odobenus rosmarus|Tursiops truncatus
+42,Desmodus rotundus,Vampire bat,0.625,B,,Veilleaux and Kirk 2014,True,0.625,B,,Veilleaux and Kirk 2014,agree,
+43,Diceros bicornis,Black rhinoceros,6.0,A,,Veilleaux and Kirk 2014,True,6.0,A,,Veilleaux and Kirk 2014,agree,
+44,Didelphis marsupialis,Common opossum,1.25,A,,Veilleaux and Kirk 2014,True,1.25,A,,Veilleaux and Kirk 2014,agree,
+45,Didelphis virginiana,Virginia opossum,2.49,A,,Veilleaux and Kirk 2014,True,2.49,A,,Veilleaux and Kirk 2014,agree,
+47,Eidolon helvum,Straw-colored fruit bat,3.4,A,,Heffner et al 2008,True,3.4,A,,Heffner et al 2008,agree,
+49,Ellobius lutescens,Transcaucasian mole vole,0.4,A,,Veilleaux and Kirk 2014,True,0.4,A,,Veilleaux and Kirk 2014,agree,Rhinolophus rouxii
+50,Ellobius talpinus,Northern mole vole,0.9,A,,Veilleaux and Kirk 2014,True,0.9,A,,Veilleaux and Kirk 2014,agree,Sotalia fluviatilis
+51,Enhydra lutris,Sea otter,4.2,A,,Veilleaux and Kirk 2014,True,4.2,A,,Veilleaux and Kirk 2014,agree,Balaenoptera acutorostrata|Eumetopias jubatus|Microcebus murinus
+52,Eptesicus fuscus,Big brown bat,0.5,B,,Veilleaux and Kirk 2014,True,0.5,B,,Veilleaux and Kirk 2014,agree,Mesocricetus auratus|Mus musculus
+53,Equus caballus,Domestic horse,23.3,B,,Veilleaux and Kirk 2014,True,23.3,B,,Veilleaux and Kirk 2014,agree,
+55,Eschrichtius robustus,Gray whale,2.7,A,water,Kirk and Kay 2004,True,2.7,A,water,Kirk and Kay 2004,agree,Macropus eugenii|Phocoena phocoena
+57,Eulemur macaco,Blue-eyed black lemur,5.14,B,,Veilleaux and Kirk 2014,True,5.14,B,,Veilleaux and Kirk 2014,agree,
+58,Eumetopias jubatus,Stellar sea lion,4.2,B,water,Kirk and Kay 2004,True,4.2,B,water,Kirk and Kay 2004,agree,Balaenoptera acutorostrata|Enhydra lutris|Microcebus murinus
+59,Felis catus,Domestic cat,8.85,B,,Veilleaux and Kirk 2014,True,8.85,B,,Veilleaux and Kirk 2014,agree,
+60,Galago senegalensis,Northern lesser galago/ bushbaby,6.7,B,,Veilleaux and Kirk 2014,True,6.7,B,,Veilleaux and Kirk 2014,agree,Lemur catta
+61,Geomys bursarius,Pocket gopher,1.7,A,,Heffner and Heffner 1992a,True,1.7,A,,Heffner and Heffner 1992,agree,Pteropus giganteus
+62,Giraffa camelopardalis,Giraffe,25.46,A,,Veilleaux and Kirk 2014,True,25.46,A,,Veilleaux and Kirk 2014,agree,
+64,Heterocephalus glaber,Naked mole-rat,0.44,A,,Veilleaux and Kirk 2014,True,0.44,A,,Veilleaux and Kirk 2014,agree,
+65,Homo sapiens,Human,64.0,B,,Veilleaux and Kirk 2014,True,64.0,B,,Veilleaux and Kirk 2014,agree,
+66,Hydrochoerus hydrochaeris,Capybara,5.8,A,,Veilleaux and Kirk 2014,True,5.8,A,,Veilleaux and Kirk 2014,agree,
+67,Inia geoffrensis,Amazon dolphin (boutos),0.6,A,air,Kirk and Kay 2004,True,0.6|0.8,A|A,air|water,Kirk and Kay 2004|Kirk and Kay 2004,agree,Nyctophilus gouldi
+68,Inia geoffrensis,Amazon dolphin (boutos),0.8,A,water,Kirk and Kay 2004,True,0.6|0.8,A|A,air|water,Kirk and Kay 2004|Kirk and Kay 2004,agree,
+69,Lagenorhynchus obliquidens,Pacific white-sided dolphin,5.0,B,,Kirk and Kay 2004,True,5.0,B,,Kirk and Kay 2004,agree,
+70,Lemmus lemmus,Norway lemming,0.83,B,,Veilleaux and Kirk 2014,True,0.83,B,,Veilleaux and Kirk 2014,agree,
+71,Lemur catta,Ring-tailed lemur,6.7,B,,Veilleaux and Kirk 2014,True,6.7,B,,Veilleaux and Kirk 2014,agree,Galago senegalensis
+72,Loxodonta africana,African elephant,13.16,A,,Veilleaux and Kirk 2014,True,13.16,A,,Veilleaux and Kirk 2014,agree,
+73,Lynx lynx,Eurasian lynx,8.0,B,,Veilleaux and Kirk 2014,True,8.0,,,Veilleaux and Kirk 2014,agree,
+74,Macaca fascicularis,Crab-eating macaque,46.0,B,,Veilleaux and Kirk 2014,True,46.0,B,,Veilleaux and Kirk 2014,agree,Macaca nemestrina
+75,Macaca fuscata,Japanese macaque,46.8,,,Heffner and Heffner 1992a,False,,,,,species_absent_from_Part1,
+76,Macaca mulatta,Rhesus macaque,53.6,B,,Veilleaux and Kirk 2014,True,53.6,B,,Veilleaux and Kirk 2014,agree,
+77,Macaca nemestrina,Pig-tailed macaque,46.0,B,,Veilleaux and Kirk 2014,True,46.0,B,,Veilleaux and Kirk 2014,agree,Macaca fascicularis
+78,Macroderma gigas,Australian false vampire bat,1.9,A,,Veilleaux and Kirk 2014,True,1.9,A,,Veilleaux and Kirk 2014,agree,
+79,Macropus eugenii,Tammar wallaby,2.7,B,,Veilleaux and Kirk 2014,True,2.7,B,,Veilleaux and Kirk 2014,agree,Eschrichtius robustus|Phocoena phocoena
+80,Macropus fuliginosus,Western grey kangaroo,11.23,A,,Veilleaux and Kirk 2014,True,11.23,A,,Veilleaux and Kirk 2014,agree,
+83,Megaderma lyra,Greater false vampire bat/ ground-gleaning bat,1.5,A,,Veilleaux and Kirk 2014,True,1.5,A,,Veilleaux and Kirk 2014,agree,
+86,Meriones unguiculatus,Mongolian gerbil,1.8,B,,Veilleaux and Kirk 2014,True,1.8,B,,Veilleaux and Kirk 2014,agree,Ornithorhynchus anatinus
+87,Mesocricetus auratus,Golden hamster,0.5,B,,Veilleaux and Kirk 2014,True,0.5,B,,Veilleaux and Kirk 2014,agree,Eptesicus fuscus|Mus musculus
+88,Microcebus murinus,Gray mouse lemur,4.2,A,,Veilleaux and Kirk 2014,True,4.2,A,,Veilleaux and Kirk 2014,agree,Balaenoptera acutorostrata|Enhydra lutris|Eumetopias jubatus
+90,Monodelphis domestica,Grey short-tailed opossum,0.58,B,,Dooley et al 2012,True,0.58,B,,Dooley et al 2012,agree,
+92,Mus musculus,"House mouse, wild",0.5,B,,Veilleaux and Kirk 2014,True,0.5,B,,Veilleaux and Kirk 2014,agree,Eptesicus fuscus|Mesocricetus auratus
+93,Mus musculus,"House mouse, domestic",0.5,B,,Veilleaux and Kirk 2014,True,0.5,B,,Veilleaux and Kirk 2014,agree,Eptesicus fuscus|Mesocricetus auratus
+94,Mustela nivalis,Least weasel,2.2,A,,Veilleaux and Kirk 2014,True,2.2,,,Veilleaux and Kirk 2014,agree,Aonyx cinerea
+95,Mustela putorius,European polecat/ferret,3.57,B,,Veilleaux and Kirk 2014,True,3.57,B,,Veilleaux and Kirk 2014,agree,
+96,Myotis daubentonii,Daubenton's bat,0.1,B,,Veilleaux and Kirk 2014,True,0.1,B,,Veilleaux and Kirk 2014,agree,Myotis lucifugus|Myotis mystacinus
+97,Myotis lucifugus,Little brown bat,0.1,B,,Kirk and Kay 2004,True,0.1,B,,Kirk and Kay 2004,agree,Myotis daubentonii|Myotis mystacinus
+98,Myotis mystacinus,Whiskered bat,0.1,B,,Veilleaux and Kirk 2014,True,0.1,B,,Veilleaux and Kirk 2014,agree,Myotis daubentonii|Myotis lucifugus
+99,Myrmecobius fasciatus,Numbat,5.2,B,,Veilleaux and Kirk 2014,True,5.2,B,,Veilleaux and Kirk 2014,agree,
+100,Neotoma floridana,Wood rat,2.3,A,,Heffner and Heffner 1992,True,2.3,A,,Heffner and Heffner 1992,agree,Onychomys leucogaster
+103,Nyctophilus gouldi,Gould’s long-eared bat,0.6,A,,Veilleaux and Kirk 2014,True,0.6,A,,Veilleaux and Kirk 2014,agree,Inia geoffrensis
+104,Odobenus rosmarus,Pacific walrus,3.8,A,,Veilleaux and Kirk 2014,True,3.8,A,,Veilleaux and Kirk 2014,agree,Delphinus delphis|Tursiops truncatus
+106,Onychomys leucogaster,Grasshopper mouse,2.3,A,,Heffner and Heffner 1992,True,2.3,A,,Heffner and Heffner 1992,agree,Neotoma floridana
+108,Ornithorhynchus anatinus,Platypus,1.8,A,,Pettigrew 1998,True,1.8,A,,Pettigrew 1998,agree,Meriones unguiculatus
+109,Oryctolagus cuniculus,Old World rabbit,3.0,B,,Veilleaux and Kirk 2014,True,3.0,B,,Veilleaux and Kirk 2014,agree,Rousettus madagascariensis
+110,Otolemur crassicaudatus,Thick-tailed greater galago,4.8,B,,Veilleaux and Kirk 2014,True,4.8,B,,Veilleaux and Kirk 2014,agree,Trichosurus vulpecula
+111,Ovis aries,Domestic sheep,5.61,B,,Veilleaux and Kirk 2014,True,5.61,B,,Veilleaux and Kirk 2014,agree,
+113,Pan troglodytes,Chimpanzee,64.28,B,,Veilleaux and Kirk 2014,True,64.28,B,,Veilleaux and Kirk 2014,agree,
+116,Peromyscus maniculatus,Deer mouse,0.56,B,,Veilleaux and Kirk 2014,True,0.56,B,,Veilleaux and Kirk 2014,agree,
+117,Phascolarctos cinereus,Koala,2.4,A,,Veilleaux and Kirk 2014,True,2.4,A,,Veilleaux and Kirk 2014,agree,Tupaia belangeri
+118,Phoca vitulina,Harbour seal,3.6,B,air,Kirk and Kay 2004,True,3.6|3.6,B|B,2.1 (air)|2.7 (water),Kirk and Kay 2004|Kirk and Kay 2004,agree,
+119,Phoca vitulina,Harbour seal,3.6,B,water,Kirk and Kay 2004,True,3.6|3.6,B|B,2.1 (air)|2.7 (water),Kirk and Kay 2004|Kirk and Kay 2004,agree,
+120,Phocoena phocoena,Harbor porpoise,2.1,A,air,Kirk and Kay 2004,True,2.7,A,2.5–2.6 (water),Kirk and Kay 2004,MISMATCH,
+121,Phocoena phocoena,Harbor porpoise,2.7,A,water,Kirk and Kay 2004,True,2.7,A,2.5–2.6 (water),Kirk and Kay 2004,agree,Eschrichtius robustus|Macropus eugenii
+122,Phocoenoides dalli,Dall’s porpoise,2.6,A,water,Kirk and Kay 2004,True,2.6,A,0.1–0.4,Kirk and Kay 2004,agree,Delphinapterus leucas
+123,Phyllostomus hastatus,Greater spear-nosed bat,0.167,B,,Veilleaux and Kirk 2014,True,0.167,B,,Veilleaux and Kirk 2014,agree,Artibeus jamaicensis
+125,Plecotus auritus,Brown big-eared bat,1.0,B,,Veilleaux and Kirk 2014,True,1.0,B,,Veilleaux and Kirk 2014,agree,Saccopteryx sp.
+126,Pseudorca crassidens,False killer whale,3.3,A,water,Kirk and Kay 2004,True,3.3,A,water,Kirk and Kay 2004,agree,
+127,Pteropus giganteus,Indian flying fox,1.7,B,,Veilleaux and Kirk 2014,True,1.7,B,,Veilleaux and Kirk 2014,agree,Geomys bursarius
+128,Pteropus poliocephalus,Gray-headed flying fox,5.5,A,,Veilleaux and Kirk 2014,True,5.5,A,,Veilleaux and Kirk 2014,agree,
+129,Pteropus scapulatus,Little red flying fox,4.0,A,,Veilleaux and Kirk 2014,True,4.0,A,,Veilleaux and Kirk 2014,agree,Setonix brachyurus|Spermophilus beecheyi
+132,Rattus norvegicus,Pigmented laboratory rat,1.6,B,,Veilleaux and Kirk 2014,True,1.6,B,,Veilleaux and Kirk 2014,agree,
+134,Rattus norvegicus,"Norway rat, hooded",1.5,,,Heffner and Heffner 1992a,True,1.6,B,,Veilleaux and Kirk 2014,MISMATCH,Megaderma lyra
+135,Rhinolophus rouxii,Horseshoe bat,0.4,A,,Veilleaux and Kirk 2014,True,0.4,A,,Veilleaux and Kirk 2014,agree,Ellobius lutescens
+136,Rousettus aegyptiacus,Egyptian fruit bat,3.15,A,,Heffner et al 1999,True,3.15,A,,Heffner et al 1999,agree,
+137,Rousettus madagascariensis,Madagascan rousette,3.0,A,,Veilleaux and Kirk 2014,True,3.0,A,,Veilleaux and Kirk 2014,agree,Oryctolagus cuniculus
+138,Saccopteryx sp.,White-lined bat,1.0,A,,Kirk and Kay 2004,True,1.0,A,,Kirk and Kay 2004,agree,Plecotus auritus
+139,Saguinus midas,Golden-handed tamarin,24.87,A,,Veilleaux and Kirk 2014,True,24.87,A,,Veilleaux and Kirk 2014,agree,
+140,Saimiri sciureus,Squirrel monkey,40.5,B,,Veilleaux and Kirk 2014,True,40.5,B,,Veilleaux and Kirk 2014,agree,
+141,Sarcophilus harrisii,Tasmanian devil,4.75,A,,Veilleaux and Kirk 2014,True,4.75,A,,Veilleaux and Kirk 2014,agree,
+142,Sciurus carolinensis,Eastern gray squirrel,3.9,B,,Veilleaux and Kirk 2014,True,3.9,B,,Veilleaux and Kirk 2014,agree,Sciurus griseus|Sciurus niger
+143,Sciurus griseus,Western gray squirrel,3.9,B,,Kirk and Kay 2004,True,3.9,B,,Kirk and Kay 2004,agree,Sciurus carolinensis|Sciurus niger
+144,Sciurus niger,Fox squirrel,3.9,B,,Veilleaux and Kirk 2014,True,3.9,B,,Veilleaux and Kirk 2014,agree,Sciurus carolinensis|Sciurus griseus
+146,Setonix brachyurus,Quokka,4.0,A,,Veilleaux and Kirk 2014,True,4.0,A,,Veilleaux and Kirk 2014,agree,Pteropus scapulatus|Spermophilus beecheyi
+148,Sminthopsis crassicaudata,Fat-tailed dunnart,2.36,B,,Veilleaux and Kirk 2014,True,2.36,B,,Veilleaux and Kirk 2014,agree,
+149,Sotalia fluviatilis,River dolphin (tucuxi),0.9,A,air,Kirk and Kay 2004,True,0.9|1.2,A|A,air|water,Kirk and Kay 2004|Kirk and Kay 2004,agree,Ellobius talpinus
+150,Sotalia fluviatilis,River dolphin (tucuxi),1.2,A,water,Kirk and Kay 2004,True,0.9|1.2,A|A,air|water,Kirk and Kay 2004|Kirk and Kay 2004,agree,
+152,Spermophilus beecheyi,California ground squirrel,4.0,B,,Veilleaux and Kirk 2014,True,4.0,B,,Veilleaux and Kirk 2014,agree,Pteropus scapulatus|Setonix brachyurus
+153,Suricata suricatta,Meerkat,6.3,B,,Veilleaux and Kirk 2014,True,6.3,B,,Veilleaux and Kirk 2014,agree,
+154,Sus scrofa,Pig,9.92,A,,Veilleaux and Kirk 2014,True,9.92,A,,Veilleaux and Kirk 2014,agree,
+157,Tachyglossus aculeatus,Short-beaked echidna,1.69,A,,Veilleaux and Kirk 2014,True,1.69,A,,Veilleaux and Kirk 2014,agree,
+159,Taphozous georgianus,Brown sheath-tailed bat,1.3,A,,Veilleaux and Kirk 2014,True,1.3,A,,Veilleaux and Kirk 2014,agree,
+160,Tarsipes rostratus,Honey possum,0.63,B,,Veilleaux and Kirk 2014,True,0.63,B,,Veilleaux and Kirk 2014,agree,
+161,Tarsius syrichta,Philippine tarsier,8.89,A,,Veilleaux and Kirk 2014,True,8.89,A,,Veilleaux and Kirk 2014,agree,
+162,Trichosurus vulpecula,Brush-tailed possum,4.8,A,,Veilleaux and Kirk 2014,True,4.8,A,,Veilleaux and Kirk 2014,agree,Otolemur crassicaudatus
+163,Tupaia belangeri,Tree shrew,2.4,B,,Veilleaux and Kirk 2014,True,2.4,B,,Veilleaux and Kirk 2014,agree,Phascolarctos cinereus
+164,Tupaia glis,Common treeshrew,4.7,B,,Veilleaux and Kirk 2014,True,4.7,B,,Veilleaux and Kirk 2014,agree,
+165,Tursiops truncatus,Bottlenose dolphin/porpoise,2.5,B,air,Kirk and Kay 2004,True,2.5|3.8,B|B,air|water,Kirk and Kay 2004|Kirk and Kay 2004,agree,
+166,Tursiops truncatus,Bottlenose dolphin/porpoise,3.8,B,water,Kirk and Kay 2004,True,2.5|3.8,B|B,air|water,Kirk and Kay 2004|Kirk and Kay 2004,agree,Delphinus delphis|Odobenus rosmarus
+168,Zalophus californianus,California sea lion,5.7,B,,Kirk and Kay 2004,True,5.7,B,,Kirk and Kay 2004,agree,

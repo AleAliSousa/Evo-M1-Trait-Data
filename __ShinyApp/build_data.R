@@ -49,6 +49,10 @@ invisible(file.copy(file.path(repo, "__merging_brain_mass", "brain_mass_long.csv
 # locomotion, handedness, manipulation), resolved per species with source keys.
 invisible(file.copy(file.path(repo, "__merging_behaviour", "behaviour_long.csv"),
           file.path(out, "behaviour_long.csv"), overwrite = TRUE))
+# cerebellar folding/surface measurements are method-specific and therefore live
+# in their own merge rather than being pooled with Ashwell foliation or cortical GI.
+invisible(file.copy(file.path(repo, "__merging_cerebellar_folding", "cerebellar_folding_long.csv"),
+          file.path(out, "cerebellar_folding_long.csv"), overwrite = TRUE))
 # species taxonomy lookup (Order/Family) for the plot clade filter
 invisible(file.copy(file.path(repo, "_keys", "species_taxonomy.csv"),
           file.path(out, "species_taxonomy.csv"), overwrite = TRUE))

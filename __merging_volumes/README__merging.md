@@ -27,7 +27,8 @@ Tier-1 result:
 
 > de Sousa 2010 + 2013 (one "deSousa" team), MacLeod 2003, Bauernfeind 2013, Bush & Allman 2003,
 > Smaers 2011 (frontal), **Barger 2007** (amygdala; team `Zilles` = the Semendeferi/Zilles collection,
-> averaged with the Stephan-collection amygdala).
+> averaged with the Stephan-collection amygdala), and **Reep 2007** (an independent University of
+> Wisconsin series of 29 non-primate mammal specimens).
 
 ## Hemispheres: the merge unit is the COMBINED (left + right) volume
 
@@ -77,6 +78,13 @@ asymmetries."* This is a deliberate, argued estimator, not an error — hence pr
 Because the ×2 is already in those published numbers, `bilateral_stems_exclude` stops step 7 doubling
 `Area_striata_grey_matter` and `Corpus_geniculatum_laterale` a second time.
 
+**Reep 2007 is also `by_source`.** Its Table 1 values were calculated from one measured side,
+shrinkage-corrected, and multiplied by two by the authors (right side for 28 specimens; left for
+*Eumetopias jubatus*). All 11 regional columns therefore remain unsuffixed, are used exactly as
+published, and receive `published_bilateral_estimate` provenance. Reep's diencephalon excludes
+globus pallidus while its striatum includes it, so those two columns use definition-specific terms
+rather than colliding with Stephan-style diencephalon and striatum.
+
 **Bauernfeind is the other case, not the same one.** Bauernfeind 2013 did *not* double anything:
 Table 1 is the measured left insula and Table 2 the measured right, so both are `doubling = none`.
 Where a species has only a left value, the ×2 is **this project's**, and it is recorded as
@@ -103,6 +111,7 @@ registry and the term map disagree):
 | de Sousa 2010 Table 1 | V1 (area striata grey), LGN — printed **undoubled** | left | `none` | `_left` |
 | de Sousa 2010 Supp. Table 2 | V1, LGN — printed **already ×2** | left | **`by_source`** | *(none — value stands for both sides)* |
 | de Sousa 2013 Table 1 | LGN — printed **already ×2** | left | **`by_source`** | *(none — value stands for both sides)* |
+| Reep 2007 Table 1 | 11 major brain components — printed **already ×2** | right (28 spp.); left (*Eumetopias jubatus*) | **`by_source`** | *(none — value stands for both sides)* |
 
 Left (Table 1) and right (Table 2) are combined into whole-insula both-hemisphere volumes in
 `volumes_compiled.R` (step 7): both sides → left + right; left-only species → 2× left, flagged.
@@ -189,13 +198,13 @@ single layered pass over the long table:
 
 ## Current state
 
-**30 tables merged → 281 species × volume variables** — the canonical collection only.
+**61 citable source tables merged → 289 species × 129 variables** after the Reep 2007 build.
 Tier 1 (17, Stephan_collection): Stephan 1970/1981/1982/1984/1987,
 Frahm 1982/1984/1994/1997/1998, Baron 1983/1987/1988/1990, Matano 1985a/1985b, Zilles 1988.
 Tier 2 (independent series): de Sousa 2010, de Sousa 2013, MacLeod 2003, Bauernfeind 2013
 (insula = **left**, `_left`), Bush & Allman 2003, Bush & Allman 2004b, Smaers 2011 (combined
 L+R frontal grey/white), Barger 2007 (amygdala, team `Zilles`), Ashwell 2020, Semendeferi
-1998/2001, Sherwood 2005.
+1998/2001, Sherwood 2005, and Reep 2007 (29 specimens × 11 regional volumes; all author-doubled).
 
 **DeCasien comparison is separate (revised 2026-06-28).** The 2026-06-24 expansion that folded the
 DeCasien sources (Sherwood 2004 `_TABLEI`, Barks 2014, Rilling & Insel 1998/1999, Stimpson 2015,

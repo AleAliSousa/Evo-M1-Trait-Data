@@ -1,0 +1,18 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+order,Order printed in Table 1,,,info,,Mammals,Reep_etal_2007_Table1,,Wilson and Reeder 1993 taxonomy
+family,Family printed in Table 1,,,info,,Mammals,Reep_etal_2007_Table1,,Wilson and Reeder 1993 taxonomy
+common_name,Common name printed in Table 1,,,info,,Mammals,Reep_etal_2007_Table1,,
+species,Scientific name printed in Table 1,,,info,,Mammals,Reep_etal_2007_Table1,Preserve source taxonomy verbatim,
+specimen_number,University of Wisconsin specimen number,,,info,,Mammals,Reep_etal_2007_Table1,,Comparative Mammalian Brain Collection
+medulla_mm3,Medulla volume,Medulla oblongata,Vol.mm3,,primary,Mammals,Reep_etal_2007_Table1,Published whole-brain estimate from one side x2,Shrinkage corrected
+cerebellum_mm3,Cerebellum volume,Cerebellum,Vol.mm3,,primary,Mammals,Reep_etal_2007_Table1,Published whole-brain estimate from one side x2,Shrinkage corrected
+mesencephalon_mm3,Mesencephalon volume,Mesencephalon,Vol.mm3,,primary,Mammals,Reep_etal_2007_Table1,Published whole-brain estimate from one side x2,Shrinkage corrected
+diencephalon_mm3,Diencephalon volume,Diencephalon excluding globus pallidus,Vol.mm3,,primary,Mammals,Reep_etal_2007_Table1,Globus pallidus is assigned to striatum unlike Stephan et al. 1981,Shrinkage corrected; one side x2
+striatum_mm3,Striatum volume,Striatum including globus pallidus,Vol.mm3,,primary,Mammals,Reep_etal_2007_Table1,Includes caudate putamen nucleus accumbens globus pallidus and internal capsule,Shrinkage corrected; one side x2
+septum_mm3,Septum volume,Septum,Vol.mm3,,primary,Mammals,Reep_etal_2007_Table1,Boundary details in paper,Shrinkage corrected; one side x2
+amygdala_mm3,Amygdala volume,Amygdala,Vol.mm3,,primary,Mammals,Reep_etal_2007_Table1,Also included within paleocortex,Shrinkage corrected; one side x2
+paleocortex_mm3,Paleocortex volume,Palaeocortex,Vol.mm3,,primary,Mammals,Reep_etal_2007_Table1,Includes the separately reported amygdala,Shrinkage corrected; one side x2
+hippocampus_mm3,Hippocampus volume,Hippocampus,Vol.mm3,,primary,Mammals,Reep_etal_2007_Table1,Includes dentate gyrus cornu Ammonis alveus commissure and fornix-fimbria,Shrinkage corrected; one side x2
+schizocortex_mm3,Schizocortex volume,Schizo cortex,Vol.mm3,,primary,Mammals,Reep_etal_2007_Table1,Includes entorhinal parahippocampal presubicular parasubicular and subicular cortices,Shrinkage corrected; one side x2
+isocortex_mm3,Isocortex volume,Neocortex,Vol.mm3,,primary,Mammals,Reep_etal_2007_Table1,Gray and white matter plus claustrum; lateral ventricles excluded,Shrinkage corrected; one side x2
+source,Dataset source identifier,,,info,,Mammals,Reep_etal_2007_Table1,,

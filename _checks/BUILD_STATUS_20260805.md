@@ -15,7 +15,7 @@ Registry items **without** a public TSV: **57 → 50 → 36 → 24** across thre
 ## Batch 1 — the scouting scaffolds (9 items)
 
 Capellini 2008 ×3, Reader 2011, Liu 2016 Table S1, Jacobs 2018 Tables 3 + 5, Heuer 2019 Table 1 + S1.
-Full account in `../SCOUTING_AND_SCOPING.md`.
+Full account in `../PROJECT_SCOPE_AND_DATASET_ROADMAP.md`.
 
 ## Batch 2 — built-but-unpublished tables (14 items)
 

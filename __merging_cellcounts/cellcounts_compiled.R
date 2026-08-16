@@ -64,7 +64,7 @@ item_name <- c(
   # , "HerculanoHouzel_etal_2013_Table1-a"         # NEW REGIONS: mouse 18 cortical areas (data built; needs long->wide area reshape — see WIRING_into_cellcounts.md)
   # , "Ribeiro_etal_2013_Table1"                   # NEW REGIONS: human cortical zones (within-human; granularity + include/reference decision pending)
   # Olkowicz_etal_2016_TableS1 is intentionally NOT listed: non-mammal (28 birds), blocked on
-  #   the MDD/mammal-only taxonomy resolver (SCOUTING_AND_SCOPING.md (Part 2) do-first steps 1 & 4).
+  #   the MDD/mammal-only taxonomy resolver (PROJECT_SCOPE_AND_DATASET_ROADMAP.md Part 3, steps 1 & 4).
 )
 
 # Initialize an empty list to store data frames with cell counts data
@@ -860,4 +860,3 @@ cellcounts_wide <- arrange(pivot_wider(cellcounts_long, id_cols = Species, names
 # # keep a record of sources for the datapoints
 # cellcounts_sources_wide <- arrange(pivot_wider(cellcounts_long, id_cols = Species, names_from = Variable, values_from = Source), Species)
 write_csv(cellcounts_wide, "cellcounts_wide.csv")
-

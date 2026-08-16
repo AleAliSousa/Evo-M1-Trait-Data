@@ -1,0 +1,15 @@
+order_printed,common_name_printed,scientific_name_printed,panel_A_order,panel_A_top_y_px,panel_A_I_IIIII_boundary_y_px,panel_A_IIIII_IV_boundary_y_px,panel_A_IV_V_boundary_y_px,panel_A_axis_0_y_px,panel_A_axis_3000_y_px,panel_B_order,panel_B_IIIII_top_y_px,panel_B_IIIII_bottom_y_px,panel_B_V_top_y_px,panel_B_axis_0_y_px,panel_B_axis_100_y_px,digitization_flag
+Primate,Human,Homo sapiens,1,58.5,80.5,197.5,212.5,287.5,45.5,1,495.5,617.5,633,711.5,473.5,
+Primate,Gorilla,Gorilla gorilla,2,82.5,102.5,203,218.5,287.5,45.5,3,495.5,613.5,631,711.5,473.5,
+Primate,Chimpanzee,Pan troglodytes,3,113.5,129.5,217.5,228.5,287.5,45.5,2,495.5,614.5,631,711.5,473.5,
+Primate,Rhesus Macaque,Macaca mulatta,4,111.5,125.5,206.5,216.5,287.5,45.5,5,493.5,601.5,616,711.5,473.5,
+Primate,Squirrel Monkey,Saimiri sciureus,5,153.5,160.5,228.5,239.5,287.5,45.5,4,487.5,604.5,625,711.5,473.5,
+Carnivore,Dog,Canis (lupus) familiaris,6,138,157.5,213.5,222.5,287.5,45.5,8,505.5,591.5,607,711.5,473.5,
+Carnivore,Ferret,Mustela furo,7,158.5,165.5,219.5,235.5,287.5,45.5,6,487.5,584.5,614.5,711.5,473.5,
+Carnivore,Cat,Felis silvestris catus,8,155,174.5,228.5,240.5,287.5,45.5,7,509.5,603.5,625,711.5,473.5,
+Rodent,Woodchuck,Marmota monax,9,84.5,99.5,155.5,171.5,287.5,45.5,12,491.5,556.5,575,711.5,473.5,
+Rodent,Porcupine,Erethizon dorsatum,10,76,96.5,143.5,158.5,287.5,45.5,14,495.5,549.5,565,711.5,473.5,
+Rodent,Capybara,Hydrochoerus hydrochaeris,11,132,143.5,192.5,192.5,287.5,45.5,11,492.5,563.5,563.5,711.5,473.5,"Layer IV segment is visually indistinguishable from the boundary line; no positive thickness assigned."
+Rodent,Rat,Rattus rattus norwegicus,12,164.5,174.5,214.5,225,287.5,45.5,9,495.5,569.5,591,711.5,473.5,
+Rodent,Guinea Pig,Cavia porcellus,13,157,169.5,204.5,218.5,287.5,45.5,13,497.5,559.5,584,711.5,473.5,
+Rodent,Mouse,Mus musculus,14,204.5,211.5,238,247,287.5,45.5,10,495.5,566.5,592,711.5,473.5,

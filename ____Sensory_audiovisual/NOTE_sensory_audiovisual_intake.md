@@ -152,7 +152,7 @@ Three consequences:
    non-primate mammal breadth of the species backbone. That is a taxonomy-resolver job before it is
    a merge job.
 2. **It contains non-mammals** — at least *Anas platyrhynchos*, *Columba livia domestica*,
-   budgerigar in the hearing sheets. The non-mammal policy (`SCOUTING_AND_SCOPING.md`, owner
+   budgerigar in the hearing sheets. The non-mammal policy (`PROJECT_SCOPE_AND_DATASET_ROADMAP.md`, owner
    decision 2026-08-12) applies unchanged: **register, don't compile.** Note the standing violation
    documented there (43 Ruf & Geiser birds already in the compilations) — a sensory merge should be
    built with the class gate from the start rather than inheriting the same problem.

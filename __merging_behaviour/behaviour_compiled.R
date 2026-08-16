@@ -43,9 +43,9 @@ istxt <- function(x) !(is.na(x) | trimws(x) == "" | tolower(trimws(x)) %in% c("n
 
 TEAM <- c(schniter="Schniter", manyprimates="ManyPrimates", heffner="Heffner", iwaniuk="Iwaniuk",
           wimberly="Wimberly", granatosky="Granatosky", caspar="Caspar", heldstab="Heldstab",
-          baker="Baker")
+          baker="Baker", reader="Reader", cst="CST_compilation")
 CATEG <- c("Gait","Foot_Posture","Arboreal_terrestrial","Tool_use","Extractive_foraging",
-           "Tool_Manufacture","True_Tool_Use")
+           "Tool_Manufacture","True_Tool_Use","CM_connection_inference")
 
 ## gather raw observations: one row per (Species, Measure, source)
 grab <- function(file, col, measure, srckey) {
@@ -71,6 +71,22 @@ obs <- bind_rows(
   grab("manipulation.xlsx","Manipulation_complexity","Manipulation_complexity","heldstab"),
   grab("manipulation.xlsx","Tool_use","Tool_use","heldstab"),
   grab("manipulation.xlsx","Extractive_foraging","Extractive_foraging","heldstab"),
+  ## Reader 2011 — raw report counts, reduced-count sensitivity variables, and research effort.
+  ## Explicit *_report_count names prevent accidental pooling with categorical Tool_use /
+  ## Extractive_foraging above.
+  grab("innovation_reader.xlsx","Innovation","Innovation_report_count","reader"),
+  grab("innovation_reader.xlsx","Tool_use","Tool_use_report_count","reader"),
+  grab("innovation_reader.xlsx","Extractive_foraging","Extractive_foraging_report_count","reader"),
+  grab("innovation_reader.xlsx","Social_learning","Social_learning_report_count","reader"),
+  grab("innovation_reader.xlsx","Innovation_reduced","Innovation_reduced_report_count","reader"),
+  grab("innovation_reader.xlsx","Tool_use_reduced","Tool_use_reduced_report_count","reader"),
+  grab("innovation_reader.xlsx","Extractive_foraging_reduced","Extractive_foraging_reduced_report_count","reader"),
+  grab("innovation_reader.xlsx","Journal_search_article_count","Journal_search_article_count","reader"),
+  grab("innovation_reader.xlsx","Zoological_record_article_count","Zoological_record_article_count","reader"),
+  ## Curated comparative compilation; the ordinal grade and binary CM field remain separate.
+  grab("corticospinal_terminations.xlsx","CST_termination_grade","CST_termination_grade","cst"),
+  grab("corticospinal_terminations.xlsx","CM_monosynaptic","CM_monosynaptic","cst"),
+  grab("corticospinal_terminations.xlsx","CM_connection_inference","CM_connection_inference","cst"),
   ## Baker 2025 — Tool_use keyed with Heldstab (heldstab primary); the rest Baker-only
   grab("dexterity_baker.xlsx","Tool_Use","Tool_use","baker"),
   grab("dexterity_baker.xlsx","Tool_Manufacture","Tool_Manufacture","baker"),
@@ -105,6 +121,21 @@ META <- tribble(~Measure,~mclass,~Units,~prio,
  "peak_workspace","hand_morphology","index",list(c("baker","primary")),
  "relative_size","hand_morphology","index",list(c("baker","primary")),
  "real_size","hand_morphology","index",list(c("baker","primary")))
+META <- bind_rows(META, tribble(
+ ~Measure,~mclass,~Units,~prio,
+ "Innovation_report_count","behavioural_flexibility","reports",list(c("reader","primary")),
+ "Tool_use_report_count","behavioural_flexibility","reports",list(c("reader","primary")),
+ "Extractive_foraging_report_count","behavioural_flexibility","reports",list(c("reader","primary")),
+ "Social_learning_report_count","behavioural_flexibility","reports",list(c("reader","primary")),
+ "Innovation_reduced_report_count","behavioural_flexibility","reports",list(c("reader","primary")),
+ "Tool_use_reduced_report_count","behavioural_flexibility","reports",list(c("reader","primary")),
+ "Extractive_foraging_reduced_report_count","behavioural_flexibility","reports",list(c("reader","primary")),
+ "Journal_search_article_count","research_effort","articles",list(c("reader","primary")),
+ "Zoological_record_article_count","research_effort","articles",list(c("reader","primary")),
+ "CST_termination_grade","motor_pathway","ordinal 0-2",list(c("cst","secondary")),
+ "CM_monosynaptic","motor_pathway","binary 0/1",list(c("cst","secondary")),
+ "CM_connection_inference","motor_pathway","category",list(c("cst","secondary"))
+))
 ## Baker log10 hand-bone length measures (all single-source, baker primary)
 META <- bind_rows(META, tibble(Measure = bone_cols, mclass = "hand_morphology",
   Units = "log10 mm", prio = lapply(bone_cols, function(x) list(c("baker","primary")))))
@@ -135,8 +166,11 @@ resolve_one <- function(measure, sp_obs) {
          value_min = if (!is_cat && length(nums)) as.character(min(nums)) else "",
          value_max = if (!is_cat && length(nums)) as.character(max(nums)) else "")
 }
-long <- obs |> group_by(Species, Measure) |> group_modify(~ resolve_one(.y$Measure, .x)) |>
-  ungroup() |> relocate(Species) |> arrange(Species, Measure)
+groups <- split(obs, interaction(obs$Species, obs$Measure, drop = TRUE, lex.order = TRUE))
+long <- bind_rows(lapply(groups, function(sp_obs)
+  bind_cols(tibble(Species = sp_obs$Species[1]),
+            resolve_one(sp_obs$Measure[1], sp_obs)))) |>
+  arrange(Species, Measure)
 readr::write_csv(long, "behaviour_long.csv")
 
 ## wide overview: one row per species, resolved Value per Measure

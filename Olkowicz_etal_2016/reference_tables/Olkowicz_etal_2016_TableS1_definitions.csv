@@ -1,8 +1,0 @@
-Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
-Species,species (harmonised binomial),,,,info,Aves,Olkowicz_etal_2016_TableS1,,
-Species_Olkowicz2016,species name as printed in the paper,,,,info,Aves,Olkowicz_etal_2016_TableS1,,
-Telencephalon neurons,telencephalon/pallium neuron number,Telencephalon,N.n,,primary,Aves,Olkowicz_etal_2016_TableS1,TODO confirm printed columns,isotropic fractionator; NON-MAMMAL
-Cerebellum neurons,cerebellum neuron number,Cerebellum,N.n,,primary,Aves,Olkowicz_etal_2016_TableS1,,
-RoB neurons,rest-of-brain neuron number,RoB,N.n,,primary,Aves,Olkowicz_etal_2016_TableS1,,
-OpticTectum neurons,optic tectum neuron number,OpticTectum,N.n,,primary,Aves,Olkowicz_etal_2016_TableS1,bird-specific structure,
-Method:class,"NON-MAMMAL (Aves) — blocked until the taxonomy resolver supports non-mammals (SCOPING do-first steps 1 & 4)",,,,method,Aves,Olkowicz_etal_2016_TableS1,,

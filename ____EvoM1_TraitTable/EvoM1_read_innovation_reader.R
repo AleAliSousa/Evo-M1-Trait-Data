@@ -1,63 +1,57 @@
-# EvoM1: behavioural innovation & technical intelligence (Reader lineage) -> innovation_reader.xlsx
+#!/usr/bin/env Rscript
+# Reader, Hager & Laland 2011 behavioural-flexibility data -> innovation_reader.xlsx
 #
-# Seeds a technical-innovation compilation for the behaviour merge, starting from Simon Reader's
-# classic primate cognition dataset:
-#   - Reader & Laland 2002 (PNAS)         the ORIGINAL "big dataset": innovation / social learning /
-#                                          tool-use report frequencies across 116 primate species.
-#   - Reader, Hager & Laland 2011 (PhilTrans)  the machine-readable multi-domain extension used here:
-#                                          innovation, social learning, tool use, EXTRACTIVE FORAGING,
-#                                          tactical deception for 62 primate species, all corrected
-#                                          for research effort. Archived on Dryad (doi:10.5061/dryad.t0q94,
-#                                          file Data_ReaderHagerLalandPhilTrans2011.csv).
-#
-# Deliberately NOT Navarrete et al. 2016 (per curator: use Reader's own data as the source of record;
-# Navarrete descends from the same lineage and would be citation-dependent, never averaged).
-#
-# Focus columns for the M1/technical axis: behavioural Innovation (the classic measure),
-# Extractive foraging, and Tool use report frequencies. Social learning / tactical deception are
-# carried too (social axis) but are not the technical-intelligence focus.
-#
-# STATUS: scaffold. The frozen source (the Dryad CSV) and its DOI-coded public TSV are NOT yet in the
-# repo — the org network policy blocked the Dryad download in the session that wrote this. Drop the
-# file in per Reader_etal_2011/Reader_etal_2011.README.md, CONFIRM the exact source column names at
-# the two TODO markers below, then this reads exactly like its sibling readers.
+# The source folder already freezes the Dryad CSV and publishes the canonical TSV. This reader
+# deliberately carries raw report counts plus the paper's reduced-count sensitivity variables and
+# research-effort denominators. It does not invent an effort-corrected score. In the behaviour
+# merge, the report-count variables have explicit names so they cannot be pooled with Heldstab's
+# categorical Tool_use / Extractive_foraging variables.
 
-library(readxl); library(writexl)
-setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/")
-folder_path <- "./____EvoM1_TraitTable/"
-item_name   <- "Reader_etal_2011_Data"                     # register this in __ReadMe.xlsx (Sheet1)
+suppressWarnings(suppressMessages({library(readxl); library(writexl)}))
 
-# species resolver (single source of truth = _keys), identical to the sibling readers
-key <- read.csv("_keys/Stephan/species_key.csv", stringsAsFactors = FALSE)
-ref <- read.csv("_keys/species_reference.csv",   stringsAsFactors = FALSE)$accepted_name
-km  <- setNames(key$accepted_name, tolower(trimws(key$variant_name)))
-clean_sp <- function(x) trimws(gsub("\\s+", " ", gsub("_", " ", gsub("\\*", "", x))))
-resolve <- function(x) { c <- clean_sp(x)
-  h <- match(tolower(c), tolower(ref)); if (!is.na(h)) return(ref[h])
-  a <- km[tolower(c)]; if (!is.na(a)) return(unname(a)); c }
+.sp <- local({
+  a <- grep("^--file=", commandArgs(FALSE), value = TRUE)
+  if (length(a)) return(normalizePath(sub("^--file=", "", a[1])))
+  if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable())
+    return(normalizePath(rstudioapi::getActiveDocumentContext()$path))
+  stop("Run with Rscript file.R, or open the saved script in RStudio.", call. = FALSE)
+})
+tt_dir <- dirname(.sp)
+root <- normalizePath(file.path(tt_dir, ".."))
+item_name <- "Reader_etal_2011_Data"
 
-filecodes    <- read_excel("./__ReadMe.xlsx", sheet = "Sheet1")
-item_encoded <- filecodes$"Item encoded"[match(item_name, filecodes$"Item name")]
-if (is.na(item_encoded)) item_encoded <- "10.1098%2Frstb.2010.0342_Data"   # article DOI, %2F-encoded
-d <- read.table(paste0("./__Public/comparative-data/", item_encoded, ".tsv"),
-                header = TRUE, sep = "\t", stringsAsFactors = FALSE, check.names = FALSE)
+filecodes <- read_excel(file.path(root, "__ReadMe.xlsx"), sheet = "Sheet1")
+item_encoded <- filecodes$`Item encoded`[match(item_name, filecodes$`Item name`)]
+if (is.na(item_encoded) || !nzchar(item_encoded))
+  item_encoded <- "10.1098%2Frstb.2010.0342_Data"
 
-# TODO(curator): confirm the species column name in the Dryad CSV (below assumes "Species";
-# it may be a binomial column such as "Genus_species"). Preserve the journal's own name verbatim.
-species_in <- if ("Species" %in% names(d)) d$Species else d[[1]]
-
-# TODO(curator): confirm the exact measure column headers in the Dryad CSV. The 2011 data ship both
-# raw report counts and research-effort-corrected values — expose the RAW counts here (the merge
-# stores raw; effort correction is an analysis step). Map the real headers onto the names on the LHS.
-out <- data.frame(
-  species_sci         = vapply(species_in, resolve, character(1)),
-  Species             = trimws(species_in),
-  Innovation          = d[["Innovation"]],           # behavioural innovation report frequency
-  Extractive_foraging = d[["ExtractiveForaging"]],   # technical / ecological
-  Tool_use            = d[["ToolUse"]],
-  Social_learning     = d[["SocialLearning"]],
-  Tactical_deception  = d[["TacticalDeception"]],
-  stringsAsFactors = FALSE, check.names = FALSE
+src <- file.path(root, "__Public", "comparative-data", paste0(item_encoded, ".tsv"))
+d <- read.delim(src, stringsAsFactors = FALSE, check.names = FALSE)
+required <- c(
+  "Species_Reader2011", "species_sci", "Innovation", "Tool_use",
+  "Extractive_foraging", "Social_learning", "Innovation_reduced", "Tool_use_reduced",
+  "Extractive_foraging_reduced", "Journal_search_article_count",
+  "Zoological_record_article_count"
 )
-write_xlsx(out, paste0(folder_path, "innovation_reader.xlsx"))
-cat("innovation_reader.xlsx:", nrow(out), "rows\n")
+missing <- setdiff(required, names(d))
+if (length(missing)) stop("Reader TSV is missing: ", paste(missing, collapse = ", "))
+
+out <- data.frame(
+  species_sci = d$species_sci,
+  Species = d$Species_Reader2011,
+  Innovation = d$Innovation,
+  Tool_use = d$Tool_use,
+  Extractive_foraging = d$Extractive_foraging,
+  Social_learning = d$Social_learning,
+  Innovation_reduced = d$Innovation_reduced,
+  Tool_use_reduced = d$Tool_use_reduced,
+  Extractive_foraging_reduced = d$Extractive_foraging_reduced,
+  Journal_search_article_count = d$Journal_search_article_count,
+  Zoological_record_article_count = d$Zoological_record_article_count,
+  stringsAsFactors = FALSE,
+  check.names = FALSE
+)
+
+dest <- file.path(tt_dir, "innovation_reader.xlsx")
+write_xlsx(out, dest)
+cat(sprintf("innovation_reader.xlsx: %d species x %d fields\n", nrow(out), ncol(out)))

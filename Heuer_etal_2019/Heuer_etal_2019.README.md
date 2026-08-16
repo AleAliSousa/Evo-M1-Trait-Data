@@ -1,7 +1,7 @@
 # Heuer et al. 2019 — Evolution of neocortical folding (34 primate MRI)
 
 Source folder for a **neocortical folding** source (candidate #5 in
-`SCOUTING_AND_SCOPING.md`; **reinstated** 2026-07-31 — owner reports no known issue
+`PROJECT_SCOPE_AND_DATASET_ROADMAP.md`; **reinstated** 2026-07-31 — owner reports no known issue
 with Heuer). This is **neocortical** folding — a separate question from cerebellar folding, which is
 out of scope.
 

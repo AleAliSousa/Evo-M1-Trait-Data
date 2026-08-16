@@ -1,0 +1,14 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species_row,printed row sequence within Table 32,,,,info,Chiroptera,Baron_etal_1996_Table32,stable 1-272 source-order key,
+Species_Baron1996,stable within-book species wording carried from Table 10,,,,info,Chiroptera,Baron_etal_1996_Table32,used to join the two book tables by verified common row order,
+Species_printed_Table32,species wording as printed in Table 32,,,,info,Chiroptera,Baron_etal_1996_Table32,abbreviations preserved independently of Table 10,
+main_olfactory_bulb_mm3,main olfactory bulb volume,Bulbus_olfactorius,Vol.mm3,mean,primary,Chiroptera,Baron_etal_1996_Table32,,MOB
+paleocortex_mm3,paleocortex volume,Paleocortex,Vol.mm3,mean,primary,Chiroptera,Baron_etal_1996_Table32,,PAL
+striatum_mm3,striatum volume,Striatum,Vol.mm3,mean,primary,Chiroptera,Baron_etal_1996_Table32,,STR
+septum_mm3,septum volume,Septum,Vol.mm3,mean,primary,Chiroptera,Baron_etal_1996_Table32,,SEP
+amygdala_mm3,amygdala volume,Amygdala,Vol.mm3,mean,primary,Chiroptera,Baron_etal_1996_Table32,,AMY
+hippocampus_mm3,hippocampus volume,Hippocampus,Vol.mm3,mean,primary,Chiroptera,Baron_etal_1996_Table32,,HIP
+schizocortex_mm3,schizocortex volume,Schizocortex,Vol.mm3,mean,primary,Chiroptera,Baron_etal_1996_Table32,,SCH
+neocortex_mm3,neocortex volume,Neocortex,Vol.mm3,mean,primary,Chiroptera,Baron_etal_1996_Table32,,NEO
+source_pdf_page,one-based PDF page containing the printed row,,,,info,Chiroptera,Baron_etal_1996_Table32,PDF pages 138-145,
+Method:source,PDF text-layer extraction with literal rendered-page-verified OCR repairs,,,,method,Chiroptera,Baron_etal_1996_Table32,no Table 33 n values or size indices inferred,printed units mm3

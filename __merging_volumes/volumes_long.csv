@@ -576,6 +576,17 @@ Avahi occidentalis,Trigeminal_motor_nucleus_left_Vol.mm3,0.82,Zilles,1,Sherwood_
 Avahi occidentalis,Tuberculum_olfactorium_Vol.mm3,26.8,Stephan_collection,1,Baron_etal_1987_Table1,1,Stephan_collection: Baron_etal_1987_Table1,1987
 Avahi occidentalis,Ventral_pons_Vol.mm3,60.3,Stephan_collection,1,Matano_etal_1985_b_Table1,1,Stephan_collection: Matano_etal_1985_b_Table1,1985
 Avahi occidentalis,Ventricles_Vol.mm3,73.7,Stephan_collection,1,Stephan_etal_1981_TableII,1,Stephan_collection: Stephan_etal_1981_TableII,1981
+Bassaricyon gabbii,Amygdala_Vol.mm3,191.52,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Bassaricyon gabbii,Cerebellum_Vol.mm3,1795.2,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Bassaricyon gabbii,Diencephalon_excluding_globus_pallidus_Vol.mm3,1016.64,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Bassaricyon gabbii,Hippocampus_Vol.mm3,579.36,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Bassaricyon gabbii,Medulla_oblongata_Vol.mm3,683.52,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Bassaricyon gabbii,Mesencephalon_Vol.mm3,496.32,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Bassaricyon gabbii,Neocortex_Vol.mm3,9030.72,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Bassaricyon gabbii,Palaeocortex_Vol.mm3,575.52,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Bassaricyon gabbii,Schizo_cortex_Vol.mm3,512.64,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Bassaricyon gabbii,Septum_Vol.mm3,57.12,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Bassaricyon gabbii,Striatum_including_globus_pallidus_Vol.mm3,811.2,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Bassariscus astutus,CerebellarCortex_Vol.mm3,1467,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Bassariscus astutus,CerebellarHemisphere_Vol.mm3,623,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Bassariscus astutus,CerebellarVermis_Vol.mm3,770,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
@@ -612,14 +623,24 @@ Blarina brevicauda,Retrobulbar_cortex_Vol.mm3,6.9,Stephan_collection,1,Baron_eta
 Blarina brevicauda,Substantia_innominata_Vol.mm3,1.5,Stephan_collection,1,Baron_etal_1987_Table1,1,Stephan_collection: Baron_etal_1987_Table1,1987
 Blarina brevicauda,Tractus_olfactorius_lateralis_Vol.mm3,1.4,Stephan_collection,1,Baron_etal_1987_Table1,1,Stephan_collection: Baron_etal_1987_Table1,1987
 Blarina brevicauda,Tuberculum_olfactorium_Vol.mm3,9.6,Stephan_collection,1,Baron_etal_1987_Table1,1,Stephan_collection: Baron_etal_1987_Table1,1987
+Bos indicus,Amygdala_Vol.mm3,3838.08,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Bos indicus,CerebellarCortex_Vol.mm3,23462,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Bos indicus,CerebellarHemisphere_Vol.mm3,9304,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Bos indicus,CerebellarVermis_Vol.mm3,13830,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Bos indicus,Cerebellar_nuclei_total_Vol.mm3,1383,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
-Bos indicus,Cerebellum_Vol.mm3,31690,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
+Bos indicus,Cerebellum_Vol.mm3,36574.520000000004,Ashwell; Reep,2,Ashwell__2020_SupplementaryTable; Reep_etal_2007_Table1,2,Ashwell: Ashwell__2020_SupplementaryTable | Reep: Reep_etal_2007_Table1,2020
 Bos indicus,Cerebellum_white_matter_Vol.mm3,6845,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
+Bos indicus,Diencephalon_excluding_globus_pallidus_Vol.mm3,20231.04,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Bos indicus,FlocculonodularLobe_Vol.mm3,329,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
+Bos indicus,Hippocampus_Vol.mm3,7708.32,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Bos indicus,Medulla_oblongata_Vol.mm3,17187.84,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Bos indicus,Mesencephalon_Vol.mm3,12054.72,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Bos indicus,Neocortex_Vol.mm3,362993.76,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Bos indicus,Palaeocortex_Vol.mm3,9524.64,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Bos indicus,Pontine_and_reticulotegmental_nuclei_Vol.mm3,556,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
+Bos indicus,Schizo_cortex_Vol.mm3,5050.08,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Bos indicus,Septum_Vol.mm3,444.96,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Bos indicus,Striatum_including_globus_pallidus_Vol.mm3,17609.28,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Bos indicus,Total_brain_net_volume_Vol.mm3,402223,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Burramys parvus,CerebellarCortex_Vol.mm3,74.7,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Burramys parvus,CerebellarHemisphere_Vol.mm3,33,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
@@ -925,6 +946,17 @@ Callithrix pygmaea,Trigeminal_motor_nucleus_left_Vol.mm3,0.28,Zilles,1,Sherwood_
 Callithrix pygmaea,Tuberculum_olfactorium_Vol.mm3,7.8,Stephan_collection,1,Baron_etal_1987_Table1,1,Stephan_collection: Baron_etal_1987_Table1,1987
 Callithrix pygmaea,Ventral_pons_Vol.mm3,17.5,Stephan_collection,1,Matano_etal_1985_b_Table1,1,Stephan_collection: Matano_etal_1985_b_Table1,1985
 Callithrix pygmaea,Ventricles_Vol.mm3,24.5,Stephan_collection,1,Stephan_etal_1981_TableIII,1,Stephan_collection: Stephan_etal_1981_TableIII,1981
+Callorhinus ursinus,Amygdala_Vol.mm3,905.28,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Callorhinus ursinus,Cerebellum_Vol.mm3,40414.56,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Callorhinus ursinus,Diencephalon_excluding_globus_pallidus_Vol.mm3,12811.68,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Callorhinus ursinus,Hippocampus_Vol.mm3,1953.12,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Callorhinus ursinus,Medulla_oblongata_Vol.mm3,10992,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Callorhinus ursinus,Mesencephalon_Vol.mm3,4153.44,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Callorhinus ursinus,Neocortex_Vol.mm3,186232.8,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Callorhinus ursinus,Palaeocortex_Vol.mm3,2115.84,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Callorhinus ursinus,Schizo_cortex_Vol.mm3,1680,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Callorhinus ursinus,Septum_Vol.mm3,391.68,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Callorhinus ursinus,Striatum_including_globus_pallidus_Vol.mm3,6391.2,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Caluromys derbianus,CerebellarCortex_Vol.mm3,495,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Caluromys derbianus,CerebellarHemisphere_Vol.mm3,212,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Caluromys derbianus,CerebellarVermis_Vol.mm3,268,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
@@ -934,11 +966,32 @@ Caluromys derbianus,Cerebellum_white_matter_Vol.mm3,59.2,Ashwell,1,Ashwell__2020
 Caluromys derbianus,FlocculonodularLobe_Vol.mm3,15,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Caluromys derbianus,Pontine_and_reticulotegmental_nuclei_Vol.mm3,22.7,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Caluromys derbianus,Total_brain_net_volume_Vol.mm3,6725,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
+Camelus dromedarius,Amygdala_Vol.mm3,3966.24,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Camelus dromedarius,Cerebellum_Vol.mm3,70519.68,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Camelus dromedarius,Diencephalon_excluding_globus_pallidus_Vol.mm3,19111.68,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Camelus dromedarius,Hippocampus_Vol.mm3,8577.12,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Camelus dromedarius,Medulla_oblongata_Vol.mm3,26781.12,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Camelus dromedarius,Mesencephalon_Vol.mm3,14904,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Camelus dromedarius,Neocortex_Vol.mm3,375959.52,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Camelus dromedarius,Palaeocortex_Vol.mm3,7468.8,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Camelus dromedarius,Schizo_cortex_Vol.mm3,3760.32,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Camelus dromedarius,Septum_Vol.mm3,768.96,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Camelus dromedarius,Striatum_including_globus_pallidus_Vol.mm3,21388.32,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Canis latrans,Amygdala_Vol.mm3,849.12,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Canis latrans,Cerebellum_Vol.mm3,6244.8,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Canis latrans,Cerebellum_grey_matter_Vol.mm3,4170,Bush,1,Bush_Allman_2003_Table1,1,Bush: Bush_Allman_2003_Table1,2003
 Canis latrans,Cerebellum_white_matter_Vol.mm3,1340,Bush,1,Bush_Allman_2003_Table1,1,Bush: Bush_Allman_2003_Table1,2003
-Canis latrans,Neocortex_Vol.mm3,45970,Bush,1,Bush_Allman_2004_a_Table2,1,Bush: Bush_Allman_2004_a_Table2,2004
+Canis latrans,Diencephalon_excluding_globus_pallidus_Vol.mm3,3256.32,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Canis latrans,Hippocampus_Vol.mm3,2158.56,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Canis latrans,Medulla_oblongata_Vol.mm3,3392.64,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Canis latrans,Mesencephalon_Vol.mm3,1818.72,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Canis latrans,Neocortex_Vol.mm3,47702.84,Bush; Reep,2,Bush_Allman_2004_a_Table2; Reep_etal_2007_Table1,2,Bush: Bush_Allman_2004_a_Table2 | Reep: Reep_etal_2007_Table1,2007
 Canis latrans,Neocortex_grey_matter_Vol.mm3,30410,Bush,1,Bush_Allman_2003_Table1; Bush_Allman_2004_a_Table2,2,Bush: Bush_Allman_2003_Table1 + Bush_Allman_2004_a_Table2,2004
 Canis latrans,Neocortex_white_matter_Vol.mm3,15525,Bush,1,Bush_Allman_2003_Table1; Bush_Allman_2004_a_Table2,2,Bush: Bush_Allman_2003_Table1 + Bush_Allman_2004_a_Table2,2004
+Canis latrans,Palaeocortex_Vol.mm3,2272.32,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Canis latrans,Schizo_cortex_Vol.mm3,1603.68,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Canis latrans,Septum_Vol.mm3,144.48,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Canis latrans,Striatum_including_globus_pallidus_Vol.mm3,1847.04,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Canis latrans,Total_brain_net_volume_Vol.mm3,73160,Bush,1,Bush_Allman_2004_a_Table2,1,Bush: Bush_Allman_2004_a_Table2,2004
 Canis lupus familiaris,CerebellarCortex_Vol.mm3,2793,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Canis lupus familiaris,CerebellarHemisphere_Vol.mm3,1442,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
@@ -1515,18 +1568,27 @@ Chinchilla laniger,Neocortex_grey_matter_Vol.mm3,1160,Bush,1,Bush_Allman_2003_Ta
 Chinchilla laniger,Neocortex_white_matter_Vol.mm3,269.5,Bush,1,Bush_Allman_2003_Table1; Bush_Allman_2004_a_Table2,2,Bush: Bush_Allman_2003_Table1 + Bush_Allman_2004_a_Table2,2004
 Chinchilla laniger,Pontine_and_reticulotegmental_nuclei_Vol.mm3,19.4,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Chinchilla laniger,Total_brain_net_volume_Vol.mm3,5515.5,Ashwell; Bush,2,Ashwell__2020_SupplementaryTable; Bush_Allman_2004_a_Table2,2,Ashwell: Ashwell__2020_SupplementaryTable | Bush: Bush_Allman_2004_a_Table2,2020
+Choloepus didactylus,Amygdala_Vol.mm3,241.44,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Choloepus didactylus,CerebellarCortex_Vol.mm3,1841,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Choloepus didactylus,CerebellarHemisphere_Vol.mm3,1029,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Choloepus didactylus,CerebellarVermis_Vol.mm3,760,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Choloepus didactylus,Cerebellar_nuclei_total_Vol.mm3,76.6,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
-Choloepus didactylus,Cerebellum_Vol.mm3,2337,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
+Choloepus didactylus,Cerebellum_Vol.mm3,2495.7,Ashwell; Reep,2,Ashwell__2020_SupplementaryTable; Reep_etal_2007_Table1,2,Ashwell: Ashwell__2020_SupplementaryTable | Reep: Reep_etal_2007_Table1,2020
 Choloepus didactylus,Cerebellum_grey_matter_Vol.mm3,2300,Bush,1,Bush_Allman_2003_Table1,1,Bush: Bush_Allman_2003_Table1,2003
 Choloepus didactylus,Cerebellum_white_matter_Vol.mm3,551,Ashwell; Bush,2,Ashwell__2020_SupplementaryTable; Bush_Allman_2003_Table1,2,Ashwell: Ashwell__2020_SupplementaryTable | Bush: Bush_Allman_2003_Table1,2020
+Choloepus didactylus,Diencephalon_excluding_globus_pallidus_Vol.mm3,1569.6,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Choloepus didactylus,FlocculonodularLobe_Vol.mm3,52,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
-Choloepus didactylus,Neocortex_Vol.mm3,10540,Bush,1,Bush_Allman_2004_a_Table2,1,Bush: Bush_Allman_2004_a_Table2,2004
+Choloepus didactylus,Hippocampus_Vol.mm3,1138.08,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Choloepus didactylus,Medulla_oblongata_Vol.mm3,1009.92,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Choloepus didactylus,Mesencephalon_Vol.mm3,693.12,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Choloepus didactylus,Neocortex_Vol.mm3,9621.2,Bush; Reep,2,Bush_Allman_2004_a_Table2; Reep_etal_2007_Table1,2,Bush: Bush_Allman_2004_a_Table2 | Reep: Reep_etal_2007_Table1,2007
 Choloepus didactylus,Neocortex_grey_matter_Vol.mm3,7910,Bush,1,Bush_Allman_2003_Table1; Bush_Allman_2004_a_Table2,2,Bush: Bush_Allman_2003_Table1 + Bush_Allman_2004_a_Table2,2004
 Choloepus didactylus,Neocortex_white_matter_Vol.mm3,2630,Bush,1,Bush_Allman_2003_Table1; Bush_Allman_2004_a_Table2,2,Bush: Bush_Allman_2003_Table1 + Bush_Allman_2004_a_Table2,2004
+Choloepus didactylus,Palaeocortex_Vol.mm3,1374.24,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Choloepus didactylus,Pontine_and_reticulotegmental_nuclei_Vol.mm3,89.8,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
+Choloepus didactylus,Schizo_cortex_Vol.mm3,354.72,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Choloepus didactylus,Septum_Vol.mm3,84,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Choloepus didactylus,Striatum_including_globus_pallidus_Vol.mm3,1802.88,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Choloepus didactylus,Total_brain_net_volume_Vol.mm3,26482,Ashwell; Bush,2,Ashwell__2020_SupplementaryTable; Bush_Allman_2004_a_Table2,2,Ashwell: Ashwell__2020_SupplementaryTable | Bush: Bush_Allman_2004_a_Table2,2020
 Chrysochloris asiatica,AccessoryOlfactoryBulb_Vol.mm3,0.132,Stephan_collection,1,Stephan_etal_1982_Table1,1,Stephan_collection: Stephan_etal_1982_Table1,1982
 Chrysochloris asiatica,AccessoryOlfactoryBulb_layer_6_Vol.mm3,0.017,Stephan_collection,1,Stephan_etal_1982_Table1,1,Stephan_collection: Stephan_etal_1982_Table1,1982
@@ -1799,18 +1861,27 @@ Crocidura russula,Tractus_olfactorius_lateralis_Vol.mm3,0.64,Stephan_collection,
 Crocidura russula,Tractus_opticus_Vol.mm3,0.116,Stephan_collection,1,Stephan_etal_1981_TableVII,1,Stephan_collection: Stephan_etal_1981_TableVII,1981
 Crocidura russula,Tuberculum_olfactorium_Vol.mm3,4.4,Stephan_collection,1,Baron_etal_1987_Table1,1,Stephan_collection: Baron_etal_1987_Table1,1987
 Crocidura russula,Ventricles_Vol.mm3,1.67,Stephan_collection,1,Stephan_etal_1981_TableI,1,Stephan_collection: Stephan_etal_1981_TableI,1981
+Crocuta crocuta,Amygdala_Vol.mm3,1471.2,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Crocuta crocuta,CerebellarCortex_Vol.mm3,6913,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Crocuta crocuta,CerebellarHemisphere_Vol.mm3,3930,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Crocuta crocuta,CerebellarVermis_Vol.mm3,2667,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Crocuta crocuta,Cerebellar_nuclei_total_Vol.mm3,110,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
-Crocuta crocuta,Cerebellum_Vol.mm3,8649,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
+Crocuta crocuta,Cerebellum_Vol.mm3,11371.86,Ashwell; Reep,2,Ashwell__2020_SupplementaryTable; Reep_etal_2007_Table1,2,Ashwell: Ashwell__2020_SupplementaryTable | Reep: Reep_etal_2007_Table1,2020
 Crocuta crocuta,Cerebellum_grey_matter_Vol.mm3,8340,Bush,1,Bush_Allman_2003_Table1,1,Bush: Bush_Allman_2003_Table1,2003
 Crocuta crocuta,Cerebellum_white_matter_Vol.mm3,2373,Ashwell; Bush,2,Ashwell__2020_SupplementaryTable; Bush_Allman_2003_Table1,2,Ashwell: Ashwell__2020_SupplementaryTable | Bush: Bush_Allman_2003_Table1,2020
+Crocuta crocuta,Diencephalon_excluding_globus_pallidus_Vol.mm3,6756.48,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Crocuta crocuta,FlocculonodularLobe_Vol.mm3,317,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
-Crocuta crocuta,Neocortex_Vol.mm3,85200,Bush,1,Bush_Allman_2004_a_Table2,1,Bush: Bush_Allman_2004_a_Table2,2004
+Crocuta crocuta,Hippocampus_Vol.mm3,3080.64,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Crocuta crocuta,Medulla_oblongata_Vol.mm3,7089.12,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Crocuta crocuta,Mesencephalon_Vol.mm3,3419.52,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Crocuta crocuta,Neocortex_Vol.mm3,88850.4,Bush; Reep,2,Bush_Allman_2004_a_Table2; Reep_etal_2007_Table1,2,Bush: Bush_Allman_2004_a_Table2 | Reep: Reep_etal_2007_Table1,2007
 Crocuta crocuta,Neocortex_grey_matter_Vol.mm3,56185,Bush,1,Bush_Allman_2003_Table1; Bush_Allman_2004_a_Table2,2,Bush: Bush_Allman_2003_Table1 + Bush_Allman_2004_a_Table2,2004
 Crocuta crocuta,Neocortex_white_matter_Vol.mm3,28915,Bush,1,Bush_Allman_2003_Table1; Bush_Allman_2004_a_Table2,2,Bush: Bush_Allman_2003_Table1 + Bush_Allman_2004_a_Table2,2004
+Crocuta crocuta,Palaeocortex_Vol.mm3,3902.88,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Crocuta crocuta,Pontine_and_reticulotegmental_nuclei_Vol.mm3,298,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
+Crocuta crocuta,Schizo_cortex_Vol.mm3,2154.24,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Crocuta crocuta,Septum_Vol.mm3,336,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Crocuta crocuta,Striatum_including_globus_pallidus_Vol.mm3,5801.28,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Crocuta crocuta,Total_brain_net_volume_Vol.mm3,112675.5,Ashwell; Bush,2,Ashwell__2020_SupplementaryTable; Bush_Allman_2004_a_Table2,2,Ashwell: Ashwell__2020_SupplementaryTable | Bush: Bush_Allman_2004_a_Table2,2020
 Cynictis penicillata,CerebellarCortex_Vol.mm3,1154,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Cynictis penicillata,CerebellarHemisphere_Vol.mm3,476,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
@@ -1851,14 +1922,24 @@ Dasykaluta rosamundae,Cerebellum_white_matter_Vol.mm3,4.54,Ashwell,1,Ashwell__20
 Dasykaluta rosamundae,FlocculonodularLobe_Vol.mm3,3.68,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Dasykaluta rosamundae,Pontine_and_reticulotegmental_nuclei_Vol.mm3,0.95,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Dasykaluta rosamundae,Total_brain_net_volume_Vol.mm3,504,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
+Dasypus novemcinctus,Amygdala_Vol.mm3,126.24,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Dasypus novemcinctus,CerebellarCortex_Vol.mm3,2042,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Dasypus novemcinctus,CerebellarHemisphere_Vol.mm3,1172,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Dasypus novemcinctus,CerebellarVermis_Vol.mm3,818,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Dasypus novemcinctus,Cerebellar_nuclei_total_Vol.mm3,88.6,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
-Dasypus novemcinctus,Cerebellum_Vol.mm3,2562,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
+Dasypus novemcinctus,Cerebellum_Vol.mm3,2221.32,Ashwell; Reep,2,Ashwell__2020_SupplementaryTable; Reep_etal_2007_Table1,2,Ashwell: Ashwell__2020_SupplementaryTable | Reep: Reep_etal_2007_Table1,2020
 Dasypus novemcinctus,Cerebellum_white_matter_Vol.mm3,431,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
+Dasypus novemcinctus,Diencephalon_excluding_globus_pallidus_Vol.mm3,628.32,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Dasypus novemcinctus,FlocculonodularLobe_Vol.mm3,51.5,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
+Dasypus novemcinctus,Hippocampus_Vol.mm3,927.84,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Dasypus novemcinctus,Medulla_oblongata_Vol.mm3,883.68,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Dasypus novemcinctus,Mesencephalon_Vol.mm3,432,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Dasypus novemcinctus,Neocortex_Vol.mm3,1718.88,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Dasypus novemcinctus,Palaeocortex_Vol.mm3,949.44,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Dasypus novemcinctus,Pontine_and_reticulotegmental_nuclei_Vol.mm3,63.5,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
+Dasypus novemcinctus,Schizo_cortex_Vol.mm3,303.36,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Dasypus novemcinctus,Septum_Vol.mm3,89.28,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Dasypus novemcinctus,Striatum_including_globus_pallidus_Vol.mm3,491.04,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Dasypus novemcinctus,Total_brain_net_volume_Vol.mm3,10450,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Dasyuroides byrnei,CerebellarCortex_Vol.mm3,101,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Dasyuroides byrnei,CerebellarHemisphere_Vol.mm3,42.6,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
@@ -2233,18 +2314,27 @@ Elephantulus myurus,Cerebellum_white_matter_Vol.mm3,61.7,Ashwell,1,Ashwell__2020
 Elephantulus myurus,FlocculonodularLobe_Vol.mm3,21.1,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Elephantulus myurus,Pontine_and_reticulotegmental_nuclei_Vol.mm3,22.5,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Elephantulus myurus,Total_brain_net_volume_Vol.mm3,1250,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
+Equus burchelli,Amygdala_Vol.mm3,2971.2,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Equus burchelli,CerebellarCortex_Vol.mm3,30943,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Equus burchelli,CerebellarHemisphere_Vol.mm3,15169,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Equus burchelli,CerebellarVermis_Vol.mm3,14478,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Equus burchelli,Cerebellar_nuclei_total_Vol.mm3,1744,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
-Equus burchelli,Cerebellum_Vol.mm3,41084,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
+Equus burchelli,Cerebellum_Vol.mm3,44504.32,Ashwell; Reep,2,Ashwell__2020_SupplementaryTable; Reep_etal_2007_Table1,2,Ashwell: Ashwell__2020_SupplementaryTable | Reep: Reep_etal_2007_Table1,2020
 Equus burchelli,Cerebellum_grey_matter_Vol.mm3,27400,Bush,1,Bush_Allman_2003_Table1,1,Bush: Bush_Allman_2003_Table1,2003
 Equus burchelli,Cerebellum_white_matter_Vol.mm3,8998.5,Ashwell; Bush,2,Ashwell__2020_SupplementaryTable; Bush_Allman_2003_Table1,2,Ashwell: Ashwell__2020_SupplementaryTable | Bush: Bush_Allman_2003_Table1,2020
+Equus burchelli,Diencephalon_excluding_globus_pallidus_Vol.mm3,16176.48,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Equus burchelli,FlocculonodularLobe_Vol.mm3,1296,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
-Equus burchelli,Neocortex_Vol.mm3,237240,Bush,1,Bush_Allman_2004_a_Table2,1,Bush: Bush_Allman_2004_a_Table2,2004
+Equus burchelli,Hippocampus_Vol.mm3,10334.88,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Equus burchelli,Medulla_oblongata_Vol.mm3,18975.36,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Equus burchelli,Mesencephalon_Vol.mm3,12012,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Equus burchelli,Neocortex_Vol.mm3,265751.28,Bush; Reep,2,Bush_Allman_2004_a_Table2; Reep_etal_2007_Table1,2,Bush: Bush_Allman_2004_a_Table2 | Reep: Reep_etal_2007_Table1,2007
 Equus burchelli,Neocortex_grey_matter_Vol.mm3,148940,Bush,1,Bush_Allman_2003_Table1; Bush_Allman_2004_a_Table2,2,Bush: Bush_Allman_2003_Table1 + Bush_Allman_2004_a_Table2,2004
 Equus burchelli,Neocortex_white_matter_Vol.mm3,88380,Bush,1,Bush_Allman_2003_Table1; Bush_Allman_2004_a_Table2,2,Bush: Bush_Allman_2003_Table1 + Bush_Allman_2004_a_Table2,2004
+Equus burchelli,Palaeocortex_Vol.mm3,7879.68,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Equus burchelli,Pontine_and_reticulotegmental_nuclei_Vol.mm3,1120,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
+Equus burchelli,Schizo_cortex_Vol.mm3,3980.16,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Equus burchelli,Septum_Vol.mm3,541.44,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Equus burchelli,Striatum_including_globus_pallidus_Vol.mm3,15858.72,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Equus burchelli,Total_brain_net_volume_Vol.mm3,466400,Ashwell; Bush,2,Ashwell__2020_SupplementaryTable; Bush_Allman_2004_a_Table2,2,Ashwell: Ashwell__2020_SupplementaryTable | Bush: Bush_Allman_2004_a_Table2,2020
 Erethizon dorsatum,CerebellarCortex_Vol.mm3,1800,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Erethizon dorsatum,CerebellarHemisphere_Vol.mm3,1044,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
@@ -2489,6 +2579,17 @@ Eulemur mongoz,Neocortex_grey_matter_Vol.mm3,8210,Bush,1,Bush_Allman_2003_Table1
 Eulemur mongoz,Neocortex_white_matter_Vol.mm3,3830,Bush,1,Bush_Allman_2003_Table1; Bush_Allman_2004_a_Table2; Bush_Allman_2004_b_TABLE1,3,Bush: Bush_Allman_2003_Table1 + Bush_Allman_2004_a_Table2 + Bush_Allman_2004_b_TABLE1,2004
 Eulemur mongoz,Pontine_and_reticulotegmental_nuclei_Vol.mm3,74,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Eulemur mongoz,Total_brain_net_volume_Vol.mm3,20801,Ashwell; Bush,2,Ashwell__2020_SupplementaryTable; Bush_Allman_2004_a_Table2; Bush_Allman_2004_b_TABLE1,3,Ashwell: Ashwell__2020_SupplementaryTable | Bush: Bush_Allman_2004_a_Table2 + Bush_Allman_2004_b_TABLE1,2020
+Eumetopias jubatus,Amygdala_Vol.mm3,1760,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Eumetopias jubatus,Cerebellum_Vol.mm3,93486.8,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Eumetopias jubatus,Diencephalon_excluding_globus_pallidus_Vol.mm3,14465,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Eumetopias jubatus,Hippocampus_Vol.mm3,3530.12,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Eumetopias jubatus,Medulla_oblongata_Vol.mm3,20610.04,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Eumetopias jubatus,Mesencephalon_Vol.mm3,5423,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Eumetopias jubatus,Neocortex_Vol.mm3,359900.2,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Eumetopias jubatus,Palaeocortex_Vol.mm3,3355,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Eumetopias jubatus,Schizo_cortex_Vol.mm3,2509.76,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Eumetopias jubatus,Septum_Vol.mm3,310.2,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Eumetopias jubatus,Striatum_including_globus_pallidus_Vol.mm3,9214.04,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Felis catus,CerebellarCortex_Vol.mm3,1697,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Felis catus,CerebellarHemisphere_Vol.mm3,728,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Felis catus,CerebellarVermis_Vol.mm3,853,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
@@ -3416,14 +3517,24 @@ Lagothrix lagothricha,Trigeminal_motor_nucleus_left_Vol.mm3,2.56,Zilles,1,Sherwo
 Lagothrix lagothricha,Tuberculum_olfactorium_Vol.mm3,115.5,Stephan_collection,1,Baron_etal_1987_Table1,1,Stephan_collection: Baron_etal_1987_Table1,1987
 Lagothrix lagothricha,Ventral_pons_Vol.mm3,725.6,Stephan_collection,1,Matano_etal_1985_b_Table1,1,Stephan_collection: Matano_etal_1985_b_Table1,1985
 Lagothrix lagothricha,Ventricles_Vol.mm3,1090,Stephan_collection,1,Stephan_etal_1981_TableIII,1,Stephan_collection: Stephan_etal_1981_TableIII,1981
+Lama glama,Amygdala_Vol.mm3,1191.36,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Lama glama,CerebellarCortex_Vol.mm3,18291,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Lama glama,CerebellarHemisphere_Vol.mm3,9053,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Lama glama,CerebellarVermis_Vol.mm3,8569,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Lama glama,Cerebellar_nuclei_total_Vol.mm3,1243,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
-Lama glama,Cerebellum_Vol.mm3,24401,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
+Lama glama,Cerebellum_Vol.mm3,23663.379999999997,Ashwell; Reep,2,Ashwell__2020_SupplementaryTable; Reep_etal_2007_Table1,2,Ashwell: Ashwell__2020_SupplementaryTable | Reep: Reep_etal_2007_Table1,2020
 Lama glama,Cerebellum_white_matter_Vol.mm3,4867,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
+Lama glama,Diencephalon_excluding_globus_pallidus_Vol.mm3,7921.92,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Lama glama,FlocculonodularLobe_Vol.mm3,670,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
+Lama glama,Hippocampus_Vol.mm3,3524.16,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Lama glama,Medulla_oblongata_Vol.mm3,8955.36,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Lama glama,Mesencephalon_Vol.mm3,6617.76,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Lama glama,Neocortex_Vol.mm3,99180,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Lama glama,Palaeocortex_Vol.mm3,2737.92,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Lama glama,Pontine_and_reticulotegmental_nuclei_Vol.mm3,515,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
+Lama glama,Schizo_cortex_Vol.mm3,1693.44,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Lama glama,Septum_Vol.mm3,310.56,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Lama glama,Striatum_including_globus_pallidus_Vol.mm3,7429.44,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Lama glama,Total_brain_net_volume_Vol.mm3,232000,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Lasiorhinus latifrons,CerebellarCortex_Vol.mm3,3380,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Lasiorhinus latifrons,CerebellarHemisphere_Vol.mm3,1613,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
@@ -3835,6 +3946,17 @@ Marmosa mitis,Neocortex_Vol.mm3,130,Bush,1,Bush_Allman_2004_a_Table2,1,Bush: Bus
 Marmosa mitis,Neocortex_grey_matter_Vol.mm3,119.5,Bush,1,Bush_Allman_2003_Table1; Bush_Allman_2004_a_Table2,2,Bush: Bush_Allman_2003_Table1 + Bush_Allman_2004_a_Table2,2004
 Marmosa mitis,Neocortex_white_matter_Vol.mm3,10.65,Bush,1,Bush_Allman_2003_Table1; Bush_Allman_2004_a_Table2,2,Bush: Bush_Allman_2003_Table1 + Bush_Allman_2004_a_Table2,2004
 Marmosa mitis,Total_brain_net_volume_Vol.mm3,770,Bush,1,Bush_Allman_2004_a_Table2,1,Bush: Bush_Allman_2004_a_Table2,2004
+Mephitis mephitis,Amygdala_Vol.mm3,116.64,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Mephitis mephitis,Cerebellum_Vol.mm3,1201.92,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Mephitis mephitis,Diencephalon_excluding_globus_pallidus_Vol.mm3,445.92,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Mephitis mephitis,Hippocampus_Vol.mm3,312,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Mephitis mephitis,Medulla_oblongata_Vol.mm3,462.24,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Mephitis mephitis,Mesencephalon_Vol.mm3,206.4,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Mephitis mephitis,Neocortex_Vol.mm3,4053.6,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Mephitis mephitis,Palaeocortex_Vol.mm3,456.96,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Mephitis mephitis,Schizo_cortex_Vol.mm3,180.48,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Mephitis mephitis,Septum_Vol.mm3,28.32,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Mephitis mephitis,Striatum_including_globus_pallidus_Vol.mm3,349.44,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Microcebus murinus,AccessoryOlfactoryBulb_Vol.mm3,1.623,Stephan_collection,1,Stephan_etal_1982_Table1,1,Stephan_collection: Stephan_etal_1982_Table1,1982
 Microcebus murinus,AccessoryOlfactoryBulb_layer_6_Vol.mm3,0.47,Stephan_collection,1,Stephan_etal_1982_Table1,1,Stephan_collection: Stephan_etal_1982_Table1,1982
 Microcebus murinus,AccessoryOlfactoryBulb_layers_1_2_Vol.mm3,0.498,Stephan_collection,1,Stephan_etal_1982_Table1,1,Stephan_collection: Stephan_etal_1982_Table1,1982
@@ -4153,6 +4275,17 @@ Mustela erminea,Neocortex_grey_matter_Vol.mm3,1350,Bush,1,Bush_Allman_2004_a_Tab
 Mustela erminea,Neocortex_white_matter_Vol.mm3,230,Bush,1,Bush_Allman_2004_a_Table2,1,Bush: Bush_Allman_2004_a_Table2,2004
 Mustela erminea,Pontine_and_reticulotegmental_nuclei_Vol.mm3,11.8,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Mustela erminea,Total_brain_net_volume_Vol.mm3,3521.5,Ashwell; Bush,2,Ashwell__2020_SupplementaryTable; Bush_Allman_2004_a_Table2,2,Ashwell: Ashwell__2020_SupplementaryTable | Bush: Bush_Allman_2004_a_Table2,2020
+Mustela nivalis,Amygdala_Vol.mm3,17.28,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Mustela nivalis,Cerebellum_Vol.mm3,298.56,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Mustela nivalis,Diencephalon_excluding_globus_pallidus_Vol.mm3,148.32,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Mustela nivalis,Hippocampus_Vol.mm3,168,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Mustela nivalis,Medulla_oblongata_Vol.mm3,149.76,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Mustela nivalis,Mesencephalon_Vol.mm3,92.16,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Mustela nivalis,Neocortex_Vol.mm3,994.08,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Mustela nivalis,Palaeocortex_Vol.mm3,73.44,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Mustela nivalis,Schizo_cortex_Vol.mm3,42.24,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Mustela nivalis,Septum_Vol.mm3,9.6,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Mustela nivalis,Striatum_including_globus_pallidus_Vol.mm3,74.88,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Mustela putorius,CerebellarCortex_Vol.mm3,628,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Mustela putorius,CerebellarHemisphere_Vol.mm3,318,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Mustela putorius,CerebellarVermis_Vol.mm3,290,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
@@ -4190,18 +4323,27 @@ Myosorex babaulti,Retrobulbar_cortex_Vol.mm3,7.3,Stephan_collection,1,Baron_etal
 Myosorex babaulti,Substantia_innominata_Vol.mm3,1.2,Stephan_collection,1,Baron_etal_1987_Table1,1,Stephan_collection: Baron_etal_1987_Table1,1987
 Myosorex babaulti,Tractus_olfactorius_lateralis_Vol.mm3,1.4,Stephan_collection,1,Baron_etal_1987_Table1,1,Stephan_collection: Baron_etal_1987_Table1,1987
 Myosorex babaulti,Tuberculum_olfactorium_Vol.mm3,11,Stephan_collection,1,Baron_etal_1987_Table1,1,Stephan_collection: Baron_etal_1987_Table1,1987
+Myrmecophaga tridactyla,Amygdala_Vol.mm3,425.28,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Myrmecophaga tridactyla,CerebellarCortex_Vol.mm3,6660,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Myrmecophaga tridactyla,CerebellarHemisphere_Vol.mm3,4097,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Myrmecophaga tridactyla,CerebellarVermis_Vol.mm3,2418,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Myrmecophaga tridactyla,Cerebellar_nuclei_total_Vol.mm3,385,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
-Myrmecophaga tridactyla,Cerebellum_Vol.mm3,8736,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
+Myrmecophaga tridactyla,Cerebellum_Vol.mm3,8525.04,Ashwell; Reep,2,Ashwell__2020_SupplementaryTable; Reep_etal_2007_Table1,2,Ashwell: Ashwell__2020_SupplementaryTable | Reep: Reep_etal_2007_Table1,2020
 Myrmecophaga tridactyla,Cerebellum_grey_matter_Vol.mm3,9020,Bush,1,Bush_Allman_2003_Table1,1,Bush: Bush_Allman_2003_Table1,2003
 Myrmecophaga tridactyla,Cerebellum_white_matter_Vol.mm3,2440.5,Ashwell; Bush,2,Ashwell__2020_SupplementaryTable; Bush_Allman_2003_Table1,2,Ashwell: Ashwell__2020_SupplementaryTable | Bush: Bush_Allman_2003_Table1,2020
+Myrmecophaga tridactyla,Diencephalon_excluding_globus_pallidus_Vol.mm3,3568.8,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Myrmecophaga tridactyla,FlocculonodularLobe_Vol.mm3,144,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
-Myrmecophaga tridactyla,Neocortex_Vol.mm3,28440,Bush,1,Bush_Allman_2004_a_Table2,1,Bush: Bush_Allman_2004_a_Table2,2004
+Myrmecophaga tridactyla,Hippocampus_Vol.mm3,2684.64,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Myrmecophaga tridactyla,Medulla_oblongata_Vol.mm3,3816.96,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Myrmecophaga tridactyla,Mesencephalon_Vol.mm3,1813.92,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Myrmecophaga tridactyla,Neocortex_Vol.mm3,23971.68,Bush; Reep,2,Bush_Allman_2004_a_Table2; Reep_etal_2007_Table1,2,Bush: Bush_Allman_2004_a_Table2 | Reep: Reep_etal_2007_Table1,2007
 Myrmecophaga tridactyla,Neocortex_grey_matter_Vol.mm3,19880,Bush,1,Bush_Allman_2003_Table1; Bush_Allman_2004_a_Table2,2,Bush: Bush_Allman_2003_Table1 + Bush_Allman_2004_a_Table2,2004
 Myrmecophaga tridactyla,Neocortex_white_matter_Vol.mm3,8580,Bush,1,Bush_Allman_2003_Table1; Bush_Allman_2004_a_Table2,2,Bush: Bush_Allman_2003_Table1 + Bush_Allman_2004_a_Table2,2004
+Myrmecophaga tridactyla,Palaeocortex_Vol.mm3,2377.92,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Myrmecophaga tridactyla,Pontine_and_reticulotegmental_nuclei_Vol.mm3,275,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
+Myrmecophaga tridactyla,Schizo_cortex_Vol.mm3,915.84,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Myrmecophaga tridactyla,Septum_Vol.mm3,163.2,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Myrmecophaga tridactyla,Striatum_including_globus_pallidus_Vol.mm3,2063.52,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Myrmecophaga tridactyla,Total_brain_net_volume_Vol.mm3,68991.5,Ashwell; Bush,2,Ashwell__2020_SupplementaryTable; Bush_Allman_2004_a_Table2,2,Ashwell: Ashwell__2020_SupplementaryTable | Bush: Bush_Allman_2004_a_Table2,2020
 Nannospalax ehrenbergi,Amygdala_Vol.mm3,550.67,Stephan_collection,1,Frahm_etal_1997_Table1,1,Stephan_collection: Frahm_etal_1997_Table1,1997
 Nannospalax ehrenbergi,Bulbus_olfactorius_Vol.mm3,176.91,Stephan_collection,1,Frahm_etal_1997_Table1,1,Stephan_collection: Frahm_etal_1997_Table1,1997
@@ -4293,6 +4435,17 @@ Nasua narica,Neocortex_grey_matter_Vol.mm3,12115,Bush,1,Bush_Allman_2003_Table1;
 Nasua narica,Neocortex_white_matter_Vol.mm3,4800,Bush,1,Bush_Allman_2003_Table1; Bush_Allman_2004_a_Table2,2,Bush: Bush_Allman_2003_Table1 + Bush_Allman_2004_a_Table2,2004
 Nasua narica,Pontine_and_reticulotegmental_nuclei_Vol.mm3,74.2,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Nasua narica,Total_brain_net_volume_Vol.mm3,30838,Ashwell; Bush,2,Ashwell__2020_SupplementaryTable; Bush_Allman_2004_a_Table2,2,Ashwell: Ashwell__2020_SupplementaryTable | Bush: Bush_Allman_2004_a_Table2,2020
+Nasua nasua,Amygdala_Vol.mm3,295.2,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Nasua nasua,Cerebellum_Vol.mm3,3335.04,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Nasua nasua,Diencephalon_excluding_globus_pallidus_Vol.mm3,1395.36,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Nasua nasua,Hippocampus_Vol.mm3,494.4,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Nasua nasua,Medulla_oblongata_Vol.mm3,1088.16,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Nasua nasua,Mesencephalon_Vol.mm3,615.36,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Nasua nasua,Neocortex_Vol.mm3,14564.16,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Nasua nasua,Palaeocortex_Vol.mm3,836.16,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Nasua nasua,Schizo_cortex_Vol.mm3,281.28,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Nasua nasua,Septum_Vol.mm3,48.96,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Nasua nasua,Striatum_including_globus_pallidus_Vol.mm3,1239.84,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Neogale vison,Cerebellum_grey_matter_Vol.mm3,859,Bush,1,Bush_Allman_2003_Table1,1,Bush: Bush_Allman_2003_Table1,2003
 Neogale vison,Cerebellum_white_matter_Vol.mm3,217,Bush,1,Bush_Allman_2003_Table1,1,Bush: Bush_Allman_2003_Table1,2003
 Neogale vison,Neocortex_Vol.mm3,5960,Bush,1,Bush_Allman_2004_a_Table2,1,Bush: Bush_Allman_2004_a_Table2,2004
@@ -4551,18 +4704,27 @@ Nycticebus coucang,Trigeminal_motor_nucleus_left_Vol.mm3,1.04,Zilles,1,Sherwood_
 Nycticebus coucang,Tuberculum_olfactorium_Vol.mm3,52.2,Stephan_collection,1,Baron_etal_1987_Table1,1,Stephan_collection: Baron_etal_1987_Table1,1987
 Nycticebus coucang,Ventral_pons_Vol.mm3,63.8,Stephan_collection,1,Matano_etal_1985_b_Table1,1,Stephan_collection: Matano_etal_1985_b_Table1,1985
 Nycticebus coucang,Ventricles_Vol.mm3,142,Stephan_collection,1,Stephan_etal_1981_TableII,1,Stephan_collection: Stephan_etal_1981_TableII,1981
+Odocoileus virginianus,Amygdala_Vol.mm3,1048.8,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Odocoileus virginianus,CerebellarCortex_Vol.mm3,6345,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Odocoileus virginianus,CerebellarHemisphere_Vol.mm3,2065,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Odocoileus virginianus,CerebellarVermis_Vol.mm3,3566,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Odocoileus virginianus,Cerebellar_nuclei_total_Vol.mm3,281,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
-Odocoileus virginianus,Cerebellum_Vol.mm3,8456,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
+Odocoileus virginianus,Cerebellum_Vol.mm3,11459.92,Ashwell; Reep,2,Ashwell__2020_SupplementaryTable; Reep_etal_2007_Table1,2,Ashwell: Ashwell__2020_SupplementaryTable | Reep: Reep_etal_2007_Table1,2020
 Odocoileus virginianus,Cerebellum_grey_matter_Vol.mm3,11100,Bush,1,Bush_Allman_2003_Table1,1,Bush: Bush_Allman_2003_Table1,2003
 Odocoileus virginianus,Cerebellum_white_matter_Vol.mm3,2994.5,Ashwell; Bush,2,Ashwell__2020_SupplementaryTable; Bush_Allman_2003_Table1,2,Ashwell: Ashwell__2020_SupplementaryTable | Bush: Bush_Allman_2003_Table1,2020
+Odocoileus virginianus,Diencephalon_excluding_globus_pallidus_Vol.mm3,7130.4,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Odocoileus virginianus,FlocculonodularLobe_Vol.mm3,714,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
-Odocoileus virginianus,Neocortex_Vol.mm3,76340,Bush,1,Bush_Allman_2004_a_Table2,1,Bush: Bush_Allman_2004_a_Table2,2004
+Odocoileus virginianus,Hippocampus_Vol.mm3,3259.68,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Odocoileus virginianus,Medulla_oblongata_Vol.mm3,6521.28,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Odocoileus virginianus,Mesencephalon_Vol.mm3,5060.16,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Odocoileus virginianus,Neocortex_Vol.mm3,72303.04000000001,Bush; Reep,2,Bush_Allman_2004_a_Table2; Reep_etal_2007_Table1,2,Bush: Bush_Allman_2004_a_Table2 | Reep: Reep_etal_2007_Table1,2007
 Odocoileus virginianus,Neocortex_grey_matter_Vol.mm3,51980,Bush,1,Bush_Allman_2003_Table1; Bush_Allman_2004_a_Table2,2,Bush: Bush_Allman_2003_Table1 + Bush_Allman_2004_a_Table2,2004
 Odocoileus virginianus,Neocortex_white_matter_Vol.mm3,24390,Bush,1,Bush_Allman_2003_Table1; Bush_Allman_2004_a_Table2,2,Bush: Bush_Allman_2003_Table1 + Bush_Allman_2004_a_Table2,2004
+Odocoileus virginianus,Palaeocortex_Vol.mm3,3132.48,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Odocoileus virginianus,Pontine_and_reticulotegmental_nuclei_Vol.mm3,201,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
+Odocoileus virginianus,Schizo_cortex_Vol.mm3,2596.8,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Odocoileus virginianus,Septum_Vol.mm3,406.08,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Odocoileus virginianus,Striatum_including_globus_pallidus_Vol.mm3,3750.72,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Odocoileus virginianus,Total_brain_net_volume_Vol.mm3,136302.5,Ashwell; Bush,2,Ashwell__2020_SupplementaryTable; Bush_Allman_2004_a_Table2,2,Ashwell: Ashwell__2020_SupplementaryTable | Bush: Bush_Allman_2004_a_Table2,2020
 Onychogalea fraenata,CerebellarCortex_Vol.mm3,952,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Onychogalea fraenata,CerebellarHemisphere_Vol.mm3,401,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
@@ -4913,18 +5075,38 @@ Pan troglodytes,Ventricles_Vol.mm3,1899,Stephan_collection,1,Stephan_etal_1981_T
 Pan troglodytes,fronto_insular_cortex_Vol.mm3,179.66666666666669,Zilles,1,Bauernfeind_etal_2013_Table1,1,Zilles: Bauernfeind_etal_2013_Table1,2013
 Pan troglodytes,fronto_insular_cortex_left_Vol.mm3,65.6666666666667,Zilles,1,Bauernfeind_etal_2013_Table1,1,Zilles: Bauernfeind_etal_2013_Table1,2013
 Pan troglodytes,fronto_insular_cortex_right_Vol.mm3,114,Zilles,1,Bauernfeind_etal_2013_Table2,1,Zilles: Bauernfeind_etal_2013_Table2,2013
+Panthera leo,Amygdala_Vol.mm3,1578.72,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Panthera leo,CerebellarCortex_Vol.mm3,18869,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Panthera leo,CerebellarHemisphere_Vol.mm3,9315,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Panthera leo,CerebellarVermis_Vol.mm3,8355,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Panthera leo,Cerebellar_nuclei_total_Vol.mm3,912,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
-Panthera leo,Cerebellum_Vol.mm3,26077,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
+Panthera leo,Cerebellum_Vol.mm3,29282.18,Ashwell; Reep,2,Ashwell__2020_SupplementaryTable; Reep_etal_2007_Table1,2,Ashwell: Ashwell__2020_SupplementaryTable | Reep: Reep_etal_2007_Table1,2020
 Panthera leo,Cerebellum_white_matter_Vol.mm3,6296,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
+Panthera leo,Diencephalon_excluding_globus_pallidus_Vol.mm3,8932.32,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Panthera leo,FlocculonodularLobe_Vol.mm3,1199,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
-Panthera leo,Neocortex_Vol.mm3,121090,Bush,1,Bush_Allman_2004_a_Table2,1,Bush: Bush_Allman_2004_a_Table2,2004
+Panthera leo,Hippocampus_Vol.mm3,4496.16,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Panthera leo,Medulla_oblongata_Vol.mm3,11861.76,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Panthera leo,Mesencephalon_Vol.mm3,6199.2,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Panthera leo,Neocortex_Vol.mm3,139080.2,Bush; Reep,2,Bush_Allman_2004_a_Table2; Reep_etal_2007_Table1,2,Bush: Bush_Allman_2004_a_Table2 | Reep: Reep_etal_2007_Table1,2007
 Panthera leo,Neocortex_grey_matter_Vol.mm3,75300,Bush,1,Bush_Allman_2004_a_Table2,1,Bush: Bush_Allman_2004_a_Table2,2004
 Panthera leo,Neocortex_white_matter_Vol.mm3,45790,Bush,1,Bush_Allman_2004_a_Table2,1,Bush: Bush_Allman_2004_a_Table2,2004
+Panthera leo,Palaeocortex_Vol.mm3,3082.56,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Panthera leo,Pontine_and_reticulotegmental_nuclei_Vol.mm3,700,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
+Panthera leo,Schizo_cortex_Vol.mm3,1324.8,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Panthera leo,Septum_Vol.mm3,422.4,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Panthera leo,Striatum_including_globus_pallidus_Vol.mm3,3633.6,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Panthera leo,Total_brain_net_volume_Vol.mm3,222973,Ashwell; Bush,2,Ashwell__2020_SupplementaryTable; Bush_Allman_2004_a_Table2,2,Ashwell: Ashwell__2020_SupplementaryTable | Bush: Bush_Allman_2004_a_Table2,2020
+Panthera pardus,Amygdala_Vol.mm3,1355.04,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Panthera pardus,Cerebellum_Vol.mm3,16028.16,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Panthera pardus,Diencephalon_excluding_globus_pallidus_Vol.mm3,6180.48,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Panthera pardus,Hippocampus_Vol.mm3,3121.44,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Panthera pardus,Medulla_oblongata_Vol.mm3,7482.24,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Panthera pardus,Mesencephalon_Vol.mm3,4802.4,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Panthera pardus,Neocortex_Vol.mm3,85872.96,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Panthera pardus,Palaeocortex_Vol.mm3,2855.04,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Panthera pardus,Schizo_cortex_Vol.mm3,2155.2,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Panthera pardus,Septum_Vol.mm3,235.68,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Panthera pardus,Striatum_including_globus_pallidus_Vol.mm3,3809.28,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Papio anubis,Amygdala_Vol.mm3,953.5,Stephan_collection,1,Stephan_etal_1987_Table1,1,Stephan_collection: Stephan_etal_1987_Table1,1987
 Papio anubis,Area_striata_Vol.mm3,13741,Stephan_collection,1,Frahm_etal_1984_Table1,1,Stephan_collection: Frahm_etal_1984_Table1,1984
 Papio anubis,Area_striata_grey_matter_Vol.mm3,10001,Stephan_collection,1,Frahm_etal_1998_Table1,1,Stephan_collection: Frahm_etal_1998_Table1,1998
@@ -5026,11 +5208,21 @@ Papio hamadryas,Neocortex_Vol.mm3,118780,Bush,1,Bush_Allman_2004_a_Table2,1,Bush
 Papio hamadryas,Neocortex_grey_matter_Vol.mm3,76533.33333333333,Bush,1,Bush_Allman_2003_Table1; Bush_Allman_2004_a_Table2; Bush_Allman_2004_b_TABLE1,3,Bush: Bush_Allman_2003_Table1 + Bush_Allman_2004_a_Table2 + Bush_Allman_2004_b_TABLE1,2004
 Papio hamadryas,Neocortex_white_matter_Vol.mm3,38820,Bush,1,Bush_Allman_2003_Table1; Bush_Allman_2004_a_Table2; Bush_Allman_2004_b_TABLE1,3,Bush: Bush_Allman_2003_Table1 + Bush_Allman_2004_a_Table2 + Bush_Allman_2004_b_TABLE1,2004
 Papio hamadryas,Total_brain_net_volume_Vol.mm3,159110,Bush,1,Bush_Allman_2004_a_Table2; Bush_Allman_2004_b_TABLE1,2,Bush: Bush_Allman_2004_a_Table2 + Bush_Allman_2004_b_TABLE1,2004
+Pecari tajacu,Amygdala_Vol.mm3,544.32,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Pecari tajacu,Cerebellum_Vol.mm3,6330.24,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Pecari tajacu,Cerebellum_grey_matter_Vol.mm3,4170,Bush,1,Bush_Allman_2003_Table1,1,Bush: Bush_Allman_2003_Table1,2003
 Pecari tajacu,Cerebellum_white_matter_Vol.mm3,1250,Bush,1,Bush_Allman_2003_Table1,1,Bush: Bush_Allman_2003_Table1,2003
-Pecari tajacu,Neocortex_Vol.mm3,25320,Bush,1,Bush_Allman_2004_a_Table2,1,Bush: Bush_Allman_2004_a_Table2,2004
+Pecari tajacu,Diencephalon_excluding_globus_pallidus_Vol.mm3,2726.88,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Pecari tajacu,Hippocampus_Vol.mm3,2667.84,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Pecari tajacu,Medulla_oblongata_Vol.mm3,2386.08,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Pecari tajacu,Mesencephalon_Vol.mm3,1769.28,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Pecari tajacu,Neocortex_Vol.mm3,26874.72,Bush; Reep,2,Bush_Allman_2004_a_Table2; Reep_etal_2007_Table1,2,Bush: Bush_Allman_2004_a_Table2 | Reep: Reep_etal_2007_Table1,2007
 Pecari tajacu,Neocortex_grey_matter_Vol.mm3,18380,Bush,1,Bush_Allman_2003_Table1; Bush_Allman_2004_a_Table2,2,Bush: Bush_Allman_2003_Table1 + Bush_Allman_2004_a_Table2,2004
 Pecari tajacu,Neocortex_white_matter_Vol.mm3,6960,Bush,1,Bush_Allman_2003_Table1; Bush_Allman_2004_a_Table2,2,Bush: Bush_Allman_2003_Table1 + Bush_Allman_2004_a_Table2,2004
+Pecari tajacu,Palaeocortex_Vol.mm3,1881.6,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Pecari tajacu,Schizo_cortex_Vol.mm3,1023.84,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Pecari tajacu,Septum_Vol.mm3,169.92,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Pecari tajacu,Striatum_including_globus_pallidus_Vol.mm3,2506.08,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Pecari tajacu,Total_brain_net_volume_Vol.mm3,48280,Bush,1,Bush_Allman_2004_a_Table2,1,Bush: Bush_Allman_2004_a_Table2,2004
 Perameles gunnii,CerebellarCortex_Vol.mm3,284,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Perameles gunnii,CerebellarHemisphere_Vol.mm3,122,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
@@ -5297,14 +5489,24 @@ Phascolarctos cinereus,Cerebellum_white_matter_Vol.mm3,481,Ashwell,1,Ashwell__20
 Phascolarctos cinereus,FlocculonodularLobe_Vol.mm3,131,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Phascolarctos cinereus,Pontine_and_reticulotegmental_nuclei_Vol.mm3,90.1,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Phascolarctos cinereus,Total_brain_net_volume_Vol.mm3,18323,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
+Phoca vitulina,Amygdala_Vol.mm3,932.06,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Phoca vitulina,CerebellarCortex_Vol.mm3,22087,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Phoca vitulina,CerebellarHemisphere_Vol.mm3,17457,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Phoca vitulina,CerebellarVermis_Vol.mm3,3715,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Phoca vitulina,Cerebellar_nuclei_total_Vol.mm3,714,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
-Phoca vitulina,Cerebellum_Vol.mm3,26904,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
+Phoca vitulina,Cerebellum_Vol.mm3,30227.34,Ashwell; Reep,2,Ashwell__2020_SupplementaryTable; Reep_etal_2007_Table1,2,Ashwell: Ashwell__2020_SupplementaryTable | Reep: Reep_etal_2007_Table1,2020
 Phoca vitulina,Cerebellum_white_matter_Vol.mm3,4103,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
+Phoca vitulina,Diencephalon_excluding_globus_pallidus_Vol.mm3,10289.78,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Phoca vitulina,FlocculonodularLobe_Vol.mm3,914,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
+Phoca vitulina,Hippocampus_Vol.mm3,2113.52,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Phoca vitulina,Medulla_oblongata_Vol.mm3,9209.82,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Phoca vitulina,Mesencephalon_Vol.mm3,3720.12,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Phoca vitulina,Neocortex_Vol.mm3,169256.18,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Phoca vitulina,Palaeocortex_Vol.mm3,1838.02,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Phoca vitulina,Pontine_and_reticulotegmental_nuclei_Vol.mm3,862,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
+Phoca vitulina,Schizo_cortex_Vol.mm3,2545.04,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Phoca vitulina,Septum_Vol.mm3,348.58,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Phoca vitulina,Striatum_including_globus_pallidus_Vol.mm3,6096.96,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Phoca vitulina,Total_brain_net_volume_Vol.mm3,263221,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Piliocolobus badius,Agranular_insular_cortex_Vol.mm3,106,Zilles,1,Bauernfeind_etal_2013_Table1,1,Zilles: Bauernfeind_etal_2013_Table1,2013
 Piliocolobus badius,Agranular_insular_cortex_left_Vol.mm3,53,Zilles,1,Bauernfeind_etal_2013_Table1,1,Zilles: Bauernfeind_etal_2013_Table1,2013
@@ -5619,6 +5821,17 @@ Procavia capensis,Neocortex_grey_matter_Vol.mm3,4190,Bush,1,Bush_Allman_2003_Tab
 Procavia capensis,Neocortex_white_matter_Vol.mm3,1330,Bush,1,Bush_Allman_2003_Table1; Bush_Allman_2004_a_Table2,2,Bush: Bush_Allman_2003_Table1 + Bush_Allman_2004_a_Table2,2004
 Procavia capensis,Pontine_and_reticulotegmental_nuclei_Vol.mm3,44.7,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Procavia capensis,Total_brain_net_volume_Vol.mm3,14850.5,Ashwell; Bush,2,Ashwell__2020_SupplementaryTable; Bush_Allman_2004_a_Table2,2,Ashwell: Ashwell__2020_SupplementaryTable | Bush: Bush_Allman_2004_a_Table2,2020
+Procyon cancrivorus,Amygdala_Vol.mm3,291.84,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Procyon cancrivorus,Cerebellum_Vol.mm3,4155.84,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Procyon cancrivorus,Diencephalon_excluding_globus_pallidus_Vol.mm3,1942.08,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Procyon cancrivorus,Hippocampus_Vol.mm3,1025.76,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Procyon cancrivorus,Medulla_oblongata_Vol.mm3,1596.96,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Procyon cancrivorus,Mesencephalon_Vol.mm3,765.6,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Procyon cancrivorus,Neocortex_Vol.mm3,24555.36,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Procyon cancrivorus,Palaeocortex_Vol.mm3,812.16,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Procyon cancrivorus,Schizo_cortex_Vol.mm3,565.92,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Procyon cancrivorus,Septum_Vol.mm3,107.04,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Procyon cancrivorus,Striatum_including_globus_pallidus_Vol.mm3,1039.68,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Procyon lotor,Neocortex_Vol.mm3,18690,Bush,1,Bush_Allman_2004_a_Table2,1,Bush: Bush_Allman_2004_a_Table2,2004
 Procyon lotor,Neocortex_grey_matter_Vol.mm3,13180,Bush,1,Bush_Allman_2004_a_Table2,1,Bush: Bush_Allman_2004_a_Table2,2004
 Procyon lotor,Neocortex_white_matter_Vol.mm3,5510,Bush,1,Bush_Allman_2004_a_Table2,1,Bush: Bush_Allman_2004_a_Table2,2004
@@ -5803,6 +6016,17 @@ Pteropus giganteus,Cerebellum_white_matter_Vol.mm3,114,Ashwell,1,Ashwell__2020_S
 Pteropus giganteus,FlocculonodularLobe_Vol.mm3,15.9,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Pteropus giganteus,Pontine_and_reticulotegmental_nuclei_Vol.mm3,23.6,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Pteropus giganteus,Total_brain_net_volume_Vol.mm3,8654,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
+Puma concolor,Amygdala_Vol.mm3,855.36,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Puma concolor,Cerebellum_Vol.mm3,12413.28,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Puma concolor,Diencephalon_excluding_globus_pallidus_Vol.mm3,4935.36,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Puma concolor,Hippocampus_Vol.mm3,1798.56,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Puma concolor,Medulla_oblongata_Vol.mm3,5176.32,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Puma concolor,Mesencephalon_Vol.mm3,2940,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Puma concolor,Neocortex_Vol.mm3,70327.68,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Puma concolor,Palaeocortex_Vol.mm3,2014.08,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Puma concolor,Schizo_cortex_Vol.mm3,1082.88,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Puma concolor,Septum_Vol.mm3,259.2,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Puma concolor,Striatum_including_globus_pallidus_Vol.mm3,3000,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Pygathrix nemaeus,Amygdala_Vol.mm3,489.2,Stephan_collection,1,Stephan_etal_1987_Table1,1,Stephan_collection: Stephan_etal_1987_Table1,1987
 Pygathrix nemaeus,Body_Mass.g,7500,Stephan_collection,1,Stephan_etal_1981_TableIII,1,Stephan_collection: Stephan_etal_1981_TableIII,1981
 Pygathrix nemaeus,Brain_Mass.mg,77000,Stephan_collection,1,Stephan_etal_1981_TableIII,1,Stephan_collection: Stephan_etal_1981_TableIII,1981
@@ -6795,18 +7019,27 @@ Talpa europaea,Total_brain_net_volume_Vol.mm3,953,Stephan_collection,1,Stephan_e
 Talpa europaea,Tractus_olfactorius_lateralis_Vol.mm3,2.5,Stephan_collection,1,Baron_etal_1987_Table1,1,Stephan_collection: Baron_etal_1987_Table1,1987
 Talpa europaea,Tuberculum_olfactorium_Vol.mm3,19.1,Stephan_collection,1,Baron_etal_1987_Table1,1,Stephan_collection: Baron_etal_1987_Table1,1987
 Talpa europaea,Ventricles_Vol.mm3,10.9,Stephan_collection,1,Stephan_etal_1981_TableI,1,Stephan_collection: Stephan_etal_1981_TableI,1981
+Tamandua tetradactyla,Amygdala_Vol.mm3,216.48,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Tamandua tetradactyla,CerebellarCortex_Vol.mm3,3155,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Tamandua tetradactyla,CerebellarHemisphere_Vol.mm3,1832,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Tamandua tetradactyla,CerebellarVermis_Vol.mm3,1239,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Tamandua tetradactyla,Cerebellar_nuclei_total_Vol.mm3,166,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
-Tamandua tetradactyla,Cerebellum_Vol.mm3,3834,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
+Tamandua tetradactyla,Cerebellum_Vol.mm3,3627.24,Ashwell; Reep,2,Ashwell__2020_SupplementaryTable; Reep_etal_2007_Table1,2,Ashwell: Ashwell__2020_SupplementaryTable | Reep: Reep_etal_2007_Table1,2020
 Tamandua tetradactyla,Cerebellum_grey_matter_Vol.mm3,2980,Bush,1,Bush_Allman_2003_Table1,1,Bush: Bush_Allman_2003_Table1,2003
 Tamandua tetradactyla,Cerebellum_white_matter_Vol.mm3,595.5,Ashwell; Bush,2,Ashwell__2020_SupplementaryTable; Bush_Allman_2003_Table1,2,Ashwell: Ashwell__2020_SupplementaryTable | Bush: Bush_Allman_2003_Table1,2020
+Tamandua tetradactyla,Diencephalon_excluding_globus_pallidus_Vol.mm3,1439.52,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Tamandua tetradactyla,FlocculonodularLobe_Vol.mm3,84.6,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
-Tamandua tetradactyla,Neocortex_Vol.mm3,9410,Bush,1,Bush_Allman_2004_a_Table2,1,Bush: Bush_Allman_2004_a_Table2,2004
+Tamandua tetradactyla,Hippocampus_Vol.mm3,1070.4,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Tamandua tetradactyla,Medulla_oblongata_Vol.mm3,1287.84,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Tamandua tetradactyla,Mesencephalon_Vol.mm3,720,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Tamandua tetradactyla,Neocortex_Vol.mm3,8742.76,Bush; Reep,2,Bush_Allman_2004_a_Table2; Reep_etal_2007_Table1,2,Bush: Bush_Allman_2004_a_Table2 | Reep: Reep_etal_2007_Table1,2007
 Tamandua tetradactyla,Neocortex_grey_matter_Vol.mm3,7250,Bush,1,Bush_Allman_2003_Table1; Bush_Allman_2004_a_Table2,2,Bush: Bush_Allman_2003_Table1 + Bush_Allman_2004_a_Table2,2004
 Tamandua tetradactyla,Neocortex_white_matter_Vol.mm3,2160,Bush,1,Bush_Allman_2003_Table1; Bush_Allman_2004_a_Table2,2,Bush: Bush_Allman_2003_Table1 + Bush_Allman_2004_a_Table2,2004
+Tamandua tetradactyla,Palaeocortex_Vol.mm3,1189.92,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Tamandua tetradactyla,Pontine_and_reticulotegmental_nuclei_Vol.mm3,100,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
+Tamandua tetradactyla,Schizo_cortex_Vol.mm3,425.28,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Tamandua tetradactyla,Septum_Vol.mm3,94.56,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Tamandua tetradactyla,Striatum_including_globus_pallidus_Vol.mm3,1505.76,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Tamandua tetradactyla,Total_brain_net_volume_Vol.mm3,22226,Ashwell; Bush,2,Ashwell__2020_SupplementaryTable; Bush_Allman_2004_a_Table2,2,Ashwell: Ashwell__2020_SupplementaryTable | Bush: Bush_Allman_2004_a_Table2,2020
 Tarsipes rostratus,CerebellarCortex_Vol.mm3,45.7,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Tarsipes rostratus,CerebellarHemisphere_Vol.mm3,22.8,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
@@ -6905,14 +7138,24 @@ Tarsius syrichta,Cerebellum_grey_matter_Vol.mm3,247,Bush,1,Bush_Allman_2003_Tabl
 Tarsius syrichta,Cerebellum_white_matter_Vol.mm3,47.3,Bush,1,Bush_Allman_2003_Table1,1,Bush: Bush_Allman_2003_Table1,2003
 Tarsius syrichta,Neocortex_grey_matter_Vol.mm3,1470,Bush,1,Bush_Allman_2003_Table1,1,Bush: Bush_Allman_2003_Table1,2003
 Tarsius syrichta,Neocortex_white_matter_Vol.mm3,151,Bush,1,Bush_Allman_2003_Table1,1,Bush: Bush_Allman_2003_Table1,2003
+Taxidea taxus,Amygdala_Vol.mm3,422.4,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Taxidea taxus,CerebellarCortex_Vol.mm3,3321,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Taxidea taxus,CerebellarHemisphere_Vol.mm3,2108,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Taxidea taxus,CerebellarVermis_Vol.mm3,1123,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Taxidea taxus,Cerebellar_nuclei_total_Vol.mm3,240,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
-Taxidea taxus,Cerebellum_Vol.mm3,4605,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
+Taxidea taxus,Cerebellum_Vol.mm3,4370.1,Ashwell; Reep,2,Ashwell__2020_SupplementaryTable; Reep_etal_2007_Table1,2,Ashwell: Ashwell__2020_SupplementaryTable | Reep: Reep_etal_2007_Table1,2020
 Taxidea taxus,Cerebellum_white_matter_Vol.mm3,1044,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
+Taxidea taxus,Diencephalon_excluding_globus_pallidus_Vol.mm3,2561.28,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Taxidea taxus,FlocculonodularLobe_Vol.mm3,89.4,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
+Taxidea taxus,Hippocampus_Vol.mm3,1447.68,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Taxidea taxus,Medulla_oblongata_Vol.mm3,1912.8,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Taxidea taxus,Mesencephalon_Vol.mm3,1037.28,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Taxidea taxus,Neocortex_Vol.mm3,26457.12,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Taxidea taxus,Palaeocortex_Vol.mm3,1641.12,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Taxidea taxus,Pontine_and_reticulotegmental_nuclei_Vol.mm3,171,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
+Taxidea taxus,Schizo_cortex_Vol.mm3,865.92,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Taxidea taxus,Septum_Vol.mm3,118.56,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Taxidea taxus,Striatum_including_globus_pallidus_Vol.mm3,2120.64,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Taxidea taxus,Total_brain_net_volume_Vol.mm3,54755,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Tayassu tajacu,CerebellarCortex_Vol.mm3,4728,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Tayassu tajacu,CerebellarHemisphere_Vol.mm3,2059,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
@@ -7052,6 +7295,17 @@ Trachypithecus francoisi,Granular_insular_cortex_left_Vol.mm3,249,Zilles,1,Bauer
 Trachypithecus francoisi,Insula_Vol.mm3,1250,Zilles,1,Bauernfeind_etal_2013_Table1,1,Zilles: Bauernfeind_etal_2013_Table1,2013
 Trachypithecus francoisi,Insula_left_Vol.mm3,625,Zilles,1,Bauernfeind_etal_2013_Table1,1,Zilles: Bauernfeind_etal_2013_Table1,2013
 Trachypithecus francoisi,Total_brain_net_volume_Vol.mm3,98552,Zilles,1,Bauernfeind_etal_2013_Table1,1,Zilles: Bauernfeind_etal_2013_Table1,2013
+Trichechus manatus,Amygdala_Vol.mm3,1101.6,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Trichechus manatus,Cerebellum_Vol.mm3,44297.28,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Trichechus manatus,Diencephalon_excluding_globus_pallidus_Vol.mm3,12847.68,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Trichechus manatus,Hippocampus_Vol.mm3,3634.2,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Trichechus manatus,Medulla_oblongata_Vol.mm3,13635.54,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Trichechus manatus,Mesencephalon_Vol.mm3,5456.7,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Trichechus manatus,Neocortex_Vol.mm3,188861.22,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Trichechus manatus,Palaeocortex_Vol.mm3,2403.54,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Trichechus manatus,Schizo_cortex_Vol.mm3,1459.08,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Trichechus manatus,Septum_Vol.mm3,194.4,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Trichechus manatus,Striatum_including_globus_pallidus_Vol.mm3,9130.86,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Trichechus manatus latirostris,CerebellarCortex_Vol.mm3,18517,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Trichechus manatus latirostris,CerebellarHemisphere_Vol.mm3,13956,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Trichechus manatus latirostris,CerebellarVermis_Vol.mm3,4182,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
@@ -7269,17 +7523,26 @@ Urogale everetti,Tractus_olfactorius_lateralis_Vol.mm3,12.8,Stephan_collection,1
 Urogale everetti,Tuberculum_olfactorium_Vol.mm3,51.4,Stephan_collection,1,Baron_etal_1987_Table1,1,Stephan_collection: Baron_etal_1987_Table1,1987
 Urogale everetti,Ventral_pons_Vol.mm3,18.6,Stephan_collection,1,Matano_etal_1985_b_Table1,1,Stephan_collection: Matano_etal_1985_b_Table1,1985
 Urogale everetti,Ventricles_Vol.mm3,38.9,Stephan_collection,1,Stephan_etal_1981_TableII,1,Stephan_collection: Stephan_etal_1981_TableII,1981
+Ursus maritimus,Amygdala_Vol.mm3,1947.36,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Ursus maritimus,CerebellarCortex_Vol.mm3,76374,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Ursus maritimus,CerebellarHemisphere_Vol.mm3,53818,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Ursus maritimus,CerebellarVermis_Vol.mm3,20181,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Ursus maritimus,Cerebellar_nuclei_total_Vol.mm3,3265,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
-Ursus maritimus,Cerebellum_Vol.mm3,96472,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
+Ursus maritimus,Cerebellum_Vol.mm3,79235.84,Ashwell; Reep,2,Ashwell__2020_SupplementaryTable; Reep_etal_2007_Table1,2,Ashwell: Ashwell__2020_SupplementaryTable | Reep: Reep_etal_2007_Table1,2020
 Ursus maritimus,Cerebellum_white_matter_Vol.mm3,16833,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
+Ursus maritimus,Diencephalon_excluding_globus_pallidus_Vol.mm3,14129.28,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Ursus maritimus,FlocculonodularLobe_Vol.mm3,2376,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
-Ursus maritimus,Neocortex_Vol.mm3,172080,Bush,1,Bush_Allman_2004_a_Table2,1,Bush: Bush_Allman_2004_a_Table2,2004
+Ursus maritimus,Hippocampus_Vol.mm3,5588.64,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Ursus maritimus,Medulla_oblongata_Vol.mm3,20285.28,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Ursus maritimus,Mesencephalon_Vol.mm3,7129.92,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Ursus maritimus,Neocortex_Vol.mm3,215818.32,Bush; Reep,2,Bush_Allman_2004_a_Table2; Reep_etal_2007_Table1,2,Bush: Bush_Allman_2004_a_Table2 | Reep: Reep_etal_2007_Table1,2007
 Ursus maritimus,Neocortex_grey_matter_Vol.mm3,99070,Bush,1,Bush_Allman_2004_a_Table2,1,Bush: Bush_Allman_2004_a_Table2,2004
 Ursus maritimus,Neocortex_white_matter_Vol.mm3,73010,Bush,1,Bush_Allman_2004_a_Table2,1,Bush: Bush_Allman_2004_a_Table2,2004
+Ursus maritimus,Palaeocortex_Vol.mm3,7370.4,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Ursus maritimus,Pontine_and_reticulotegmental_nuclei_Vol.mm3,2909,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
+Ursus maritimus,Schizo_cortex_Vol.mm3,2806.08,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Ursus maritimus,Septum_Vol.mm3,617.28,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Ursus maritimus,Striatum_including_globus_pallidus_Vol.mm3,9889.92,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Ursus maritimus,Total_brain_net_volume_Vol.mm3,379923,Ashwell; Bush,2,Ashwell__2020_SupplementaryTable; Bush_Allman_2004_a_Table2,2,Ashwell: Ashwell__2020_SupplementaryTable | Bush: Bush_Allman_2004_a_Table2,2020
 Varecia variegata,AccessoryOlfactoryBulb_Vol.mm3,5.267,Stephan_collection,1,Stephan_etal_1982_Table1,1,Stephan_collection: Stephan_etal_1982_Table1,1982
 Varecia variegata,AccessoryOlfactoryBulb_layer_6_Vol.mm3,1.604,Stephan_collection,1,Stephan_etal_1982_Table1,1,Stephan_collection: Stephan_etal_1982_Table1,1982
@@ -7367,11 +7630,32 @@ Vombatus ursinus,Cerebellum_white_matter_Vol.mm3,1106,Ashwell,1,Ashwell__2020_Su
 Vombatus ursinus,FlocculonodularLobe_Vol.mm3,223,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Vombatus ursinus,Pontine_and_reticulotegmental_nuclei_Vol.mm3,98.1,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Vombatus ursinus,Total_brain_net_volume_Vol.mm3,38696,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
+Vulpes vulpes,Amygdala_Vol.mm3,395.52,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Vulpes vulpes,Cerebellum_Vol.mm3,4112.64,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Vulpes vulpes,Diencephalon_excluding_globus_pallidus_Vol.mm3,1966.08,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Vulpes vulpes,Hippocampus_Vol.mm3,1288.32,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Vulpes vulpes,Medulla_oblongata_Vol.mm3,1841.76,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Vulpes vulpes,Mesencephalon_Vol.mm3,1315.68,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Vulpes vulpes,Neocortex_Vol.mm3,24216.48,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Vulpes vulpes,Palaeocortex_Vol.mm3,960.48,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Vulpes vulpes,Schizo_cortex_Vol.mm3,594.72,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Vulpes vulpes,Septum_Vol.mm3,108,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Vulpes vulpes,Striatum_including_globus_pallidus_Vol.mm3,1002.72,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Vulpes zerda,Amygdala_Vol.mm3,213.12,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Vulpes zerda,Cerebellum_Vol.mm3,1860,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Vulpes zerda,Cerebellum_grey_matter_Vol.mm3,1210,Bush,1,Bush_Allman_2003_Table1,1,Bush: Bush_Allman_2003_Table1,2003
 Vulpes zerda,Cerebellum_white_matter_Vol.mm3,271,Bush,1,Bush_Allman_2003_Table1,1,Bush: Bush_Allman_2003_Table1,2003
-Vulpes zerda,Neocortex_Vol.mm3,7260,Bush,1,Bush_Allman_2004_a_Table2,1,Bush: Bush_Allman_2004_a_Table2,2004
+Vulpes zerda,Diencephalon_excluding_globus_pallidus_Vol.mm3,895.68,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Vulpes zerda,Hippocampus_Vol.mm3,485.76,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Vulpes zerda,Medulla_oblongata_Vol.mm3,957.12,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Vulpes zerda,Mesencephalon_Vol.mm3,632.64,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Vulpes zerda,Neocortex_Vol.mm3,7781.04,Bush; Reep,2,Bush_Allman_2004_a_Table2; Reep_etal_2007_Table1,2,Bush: Bush_Allman_2004_a_Table2 | Reep: Reep_etal_2007_Table1,2007
 Vulpes zerda,Neocortex_grey_matter_Vol.mm3,5730,Bush,1,Bush_Allman_2003_Table1; Bush_Allman_2004_a_Table2,2,Bush: Bush_Allman_2003_Table1 + Bush_Allman_2004_a_Table2,2004
 Vulpes zerda,Neocortex_white_matter_Vol.mm3,1530,Bush,1,Bush_Allman_2003_Table1; Bush_Allman_2004_a_Table2,2,Bush: Bush_Allman_2003_Table1 + Bush_Allman_2004_a_Table2,2004
+Vulpes zerda,Palaeocortex_Vol.mm3,510.24,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Vulpes zerda,Schizo_cortex_Vol.mm3,335.04,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Vulpes zerda,Septum_Vol.mm3,51.84,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Vulpes zerda,Striatum_including_globus_pallidus_Vol.mm3,510.72,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Vulpes zerda,Total_brain_net_volume_Vol.mm3,13320,Bush,1,Bush_Allman_2004_a_Table2,1,Bush: Bush_Allman_2004_a_Table2,2004
 Wallabia bicolor,CerebellarCortex_Vol.mm3,4044,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Wallabia bicolor,CerebellarHemisphere_Vol.mm3,1744,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
@@ -7391,16 +7675,25 @@ Zaglossus bruijnii,Cerebellum_white_matter_Vol.mm3,556,Ashwell,1,Ashwell__2020_S
 Zaglossus bruijnii,FlocculonodularLobe_Vol.mm3,26.1,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Zaglossus bruijnii,Pontine_and_reticulotegmental_nuclei_Vol.mm3,118,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Zaglossus bruijnii,Total_brain_net_volume_Vol.mm3,45366,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
+Zalophus californianus,Amygdala_Vol.mm3,1253.28,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Zalophus californianus,CerebellarCortex_Vol.mm3,62919,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Zalophus californianus,CerebellarHemisphere_Vol.mm3,54095,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Zalophus californianus,CerebellarVermis_Vol.mm3,7257,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
 Zalophus californianus,Cerebellar_nuclei_total_Vol.mm3,1770,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
-Zalophus californianus,Cerebellum_Vol.mm3,72986,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
+Zalophus californianus,Cerebellum_Vol.mm3,72999.82,Ashwell; Reep,2,Ashwell__2020_SupplementaryTable; Reep_etal_2007_Table1,2,Ashwell: Ashwell__2020_SupplementaryTable | Reep: Reep_etal_2007_Table1,2020
 Zalophus californianus,Cerebellum_grey_matter_Vol.mm3,67100,Bush,1,Bush_Allman_2003_Table1,1,Bush: Bush_Allman_2003_Table1,2003
 Zalophus californianus,Cerebellum_white_matter_Vol.mm3,10948.5,Ashwell; Bush,2,Ashwell__2020_SupplementaryTable; Bush_Allman_2003_Table1,2,Ashwell: Ashwell__2020_SupplementaryTable | Bush: Bush_Allman_2003_Table1,2020
+Zalophus californianus,Diencephalon_excluding_globus_pallidus_Vol.mm3,12072.48,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Zalophus californianus,FlocculonodularLobe_Vol.mm3,1567,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
-Zalophus californianus,Neocortex_Vol.mm3,302380,Bush,1,Bush_Allman_2004_a_Table2,1,Bush: Bush_Allman_2004_a_Table2,2004
+Zalophus californianus,Hippocampus_Vol.mm3,2328.48,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Zalophus californianus,Medulla_oblongata_Vol.mm3,13046.04,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Zalophus californianus,Mesencephalon_Vol.mm3,5225.22,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Zalophus californianus,Neocortex_Vol.mm3,282766.55,Bush; Reep,2,Bush_Allman_2004_a_Table2; Reep_etal_2007_Table1,2,Bush: Bush_Allman_2004_a_Table2 | Reep: Reep_etal_2007_Table1,2007
 Zalophus californianus,Neocortex_grey_matter_Vol.mm3,213330,Bush,1,Bush_Allman_2003_Table1; Bush_Allman_2004_a_Table2,2,Bush: Bush_Allman_2003_Table1 + Bush_Allman_2004_a_Table2,2004
 Zalophus californianus,Neocortex_white_matter_Vol.mm3,88710,Bush,1,Bush_Allman_2003_Table1; Bush_Allman_2004_a_Table2,2,Bush: Bush_Allman_2003_Table1 + Bush_Allman_2004_a_Table2,2004
+Zalophus californianus,Palaeocortex_Vol.mm3,2638.44,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Zalophus californianus,Pontine_and_reticulotegmental_nuclei_Vol.mm3,2263,Ashwell,1,Ashwell__2020_SupplementaryTable,1,Ashwell: Ashwell__2020_SupplementaryTable,2020
+Zalophus californianus,Schizo_cortex_Vol.mm3,2367.96,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Zalophus californianus,Septum_Vol.mm3,501.06,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
+Zalophus californianus,Striatum_including_globus_pallidus_Vol.mm3,9367.26,Reep,1,Reep_etal_2007_Table1,1,Reep: Reep_etal_2007_Table1,2007
 Zalophus californianus,Total_brain_net_volume_Vol.mm3,402369,Ashwell; Bush,2,Ashwell__2020_SupplementaryTable; Bush_Allman_2004_a_Table2,2,Ashwell: Ashwell__2020_SupplementaryTable | Bush: Bush_Allman_2004_a_Table2,2020

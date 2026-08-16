@@ -1,8 +1,8 @@
 # =============================================================================
 # Evo-M1-Trait-Data explorer  -- public Shiny app
 # Two views:
-#   1. Compiled database  : harmonized long tables (brain-structure volumes +
-#                            cell counts), searchable / filterable / plottable.
+#   1. Compiled database  : harmonized long tables (brain structure, cell counts,
+#                            behaviour, ecology, and folding), searchable / plottable.
 #   2. Source tables      : the per-publication TSVs in __Public/comparative-data,
 #                            each linked to its DOI / PubMed / ISBN source.
 #
@@ -68,6 +68,7 @@ GH <- list(
   body       = "__merging_body_ecology/body_ecology_long.csv",
   brain_mass = "__merging_brain_mass/brain_mass_long.csv",
   behaviour  = "__merging_behaviour/behaviour_long.csv",
+  cerebellar = "__merging_cerebellar_folding/cerebellar_folding_long.csv",
   manifest   = "__ShinyApp/data/source_manifest.csv"
 )
 SRC_DIR <- "__Public/comparative-data/"  # source tables (fetched on demand)
@@ -136,7 +137,9 @@ load_compiled <- function() {
   merges <- rbind(
     std_merge(GH$body,       file.path(data_dir, "body_ecology_long.csv"), "Body & ecology"),
     std_merge(GH$brain_mass, file.path(data_dir, "brain_mass_long.csv"),   "Brain mass"),
-    std_merge(GH$behaviour,  file.path(data_dir, "behaviour_long.csv"),    "Behaviour")
+    std_merge(GH$behaviour,  file.path(data_dir, "behaviour_long.csv"),    "Behaviour"),
+    std_merge(GH$cerebellar, file.path(data_dir, "cerebellar_folding_long.csv"),
+              "Cerebellar folding")
   )
 
   # unify species labels everywhere so synonyms line up
@@ -387,12 +390,9 @@ ui <- page_navbar(
       p("Measurements from many primary sources, harmonized to common species ",
         "names and structure terms. ", strong(format(nrow(compiled), big.mark = ",")),
         " values across ", strong(length(sp_choices)), " species and ",
-        strong(length(var_choices)), " measurements, spanning three datasets: ",
-        strong("brain-structure volumes"), ", ", strong("cell counts"), ", and the ",
-        strong("EvoM1 trait table"), " (dexterity, corticospinal tract, ",
-        "gyrification, interlaminar astrocytes, life-history / ecology, plus ",
-        "locomotion, manipulation complexity, and hand preference — behavioural ",
-        "axes for M1 cell-type correlates)."),
+        strong(length(var_choices)), " measurements spanning brain-structure volumes, ",
+        "cell counts, the EvoM1 trait table, body/ecology, brain mass, behaviour, ",
+        "and cerebellar folding."),
       h5("Source tables"),
       p(strong(nrow(manifest)), " published tables, each shown with its full ",
         "citation and linked to its original DOI, PubMed ID, ISBN, or ",

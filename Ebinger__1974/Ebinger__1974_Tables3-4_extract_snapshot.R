@@ -1,0 +1,40 @@
+# Hand-verified transcription of Ebinger (1974) Tables 3-4.
+# The values below were checked against rendered PDF pages 17-18.  This script
+# freezes the printed, structure-as-rows layout before any reshaping.
+
+.sp <- normalizePath(sub("^--file=", "", grep("^--file=", commandArgs(FALSE), value = TRUE)[1]))
+paper_dir <- dirname(.sp)
+
+txt <- "measure_printed,unit,M1,M2,M3,M4,Sk1,Sk2,Sk3,H1,H2,H3
+Brain weight,g,135.0,132.4,132.5,132.2,125.0,120.0,113.9,102.4,109.6,99.8
+Total brain volume,mm3,130308,127799,127896,127606,120656,115830,109942,98842,105792,96361
+Remaining parts,mm3,1827,2417,2736,2488,4324,3570,3304,3224,2263,2582
+Ventricle,mm3,2240,3097,3409,2625,3531,2447,2447,2281,2056,2359
+Pure brain volume,mm3,126242,122286,121751,122493,112802,109813,104191,93338,101473,91420
+Medulla oblongata,mm3,6501,6689,5677,5588,5830,6752,5248,5505,5953,5247
+Cerebellum,mm3,13688,13563,12723,13879,13495,13647,12879,11635,11008,11473
+Mesencephalon,mm3,6442,5865,5745,5579,5084,5365,4748,5385,5182,4479
+Diencephalon,mm3,8929,8807,8920,8174,7587,7258,7624,7362,8294,6675
+Telencephalon,mm3,90683,87381,88686,89273,80805,76791,73692,63452,71037,63547
+Neocortex,mm3,74495,71231,72655,73980,67074,64066,60730,50674,57431,53274
+Corpus striatum,mm3,4668,4195,4296,4042,3858,3510,3700,3804,4476,2982
+Allocortex,mm3,11520,11955,11736,11251,9874,9214,9262,8974,9129,7292
+Olfactory Allocortex,mm3,5044,5185,4936,5186,4944,4472,4369,4288,4362,3651
+Bulbus olfactorius + B. olf. accessorius,mm3,467,567,564,570,631,544,577,516,563,424
+Regio retrobulbaris,mm3,218,239,238,267,171,150,169,156,211,135
+Regio praepiriformis,mm3,1754,1775,1636,1642,1762,1507,1563,1330,1270,1288
+Regio periamygdalaris + Nucleus amygdalae,mm3,1094,1179,1174,1223,1151,1064,988,861,864,786
+Tuberculum olfactorium,mm3,251,307,255,246,289,335,287,256,247,255
+Basal nuclei + Commissura anterior,mm3,1261,1119,1096,1238,940,871,786,1169,1207,764
+Limbic structures,mm3,6476,6770,6773,6066,4930,4743,4893,4687,4768,3640
+Septum,mm3,764,772,638,693,715,603,604,674,671,595
+Septum nuclei,mm3,556,568,466,523,541,439,444,505,472,409
+Diagonal band,mm3,208,205,171,170,174,164,160,169,199,187
+Hippocampus,mm3,4576,4613,4920,4217,3165,3022,3029,3115,3153,2278
+Schizocortex,mm3,1136,1385,1216,1156,1050,1117,1260,898,944,767"
+
+snapshot <- read.csv(text = txt, check.names = FALSE, stringsAsFactors = FALSE)
+stopifnot(nrow(snapshot) == 26L, ncol(snapshot) == 12L)
+write.csv(snapshot, file.path(paper_dir, "Ebinger__1974_Tables3-4_snapshot.csv"),
+          row.names = FALSE, na = "")
+message("Wrote Ebinger__1974_Tables3-4_snapshot.csv (26 measures x 10 individuals)")

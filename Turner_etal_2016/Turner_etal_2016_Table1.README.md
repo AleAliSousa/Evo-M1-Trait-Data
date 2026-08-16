@@ -35,7 +35,7 @@ footnotes split into their own `taxon_note` / `case_note` columns, and the hemis
 the case id (`12-58 LH` → `case_number` `12-58`). Columns are documented in
 `reference_tables/Turner_etal_2016_Table1_definitions.csv`.
 
-> Note: the registry's `Item in directory FileList` cell is a **formula** and still reads `notfound`
+> Note: the registry's `Item in AUTO Public TSV FileList` cell is a **formula** and still reads `notfound`
 > until `__ReadMe.xlsx` is next opened and recalculated in Excel — the TSV it looks for now exists.
 
 ## Species names

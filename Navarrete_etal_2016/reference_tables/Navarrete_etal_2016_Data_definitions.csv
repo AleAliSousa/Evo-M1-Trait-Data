@@ -1,0 +1,19 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+source_row,row number in the deposited file,,,,info,Primates,Navarrete_etal_2016_Data,1–167,
+parvorder_printed,parvorder label in the deposited file,,Class,,info,Primates,Navarrete_etal_2016_Data,preserved verbatim,
+family_printed,family label in the deposited file,,Class,,info,Primates,Navarrete_etal_2016_Data,preserved verbatim,
+Species_Navarrete2016,species name from Arnold et al. 2010 used by Navarrete et al.,,,,info,Primates,Navarrete_etal_2016_Data,primary source row label,
+Species_Isler2008,species name from Isler et al. 2008,,,,info,Primates,Navarrete_etal_2016_Data,historical alternative taxonomy,
+Species_Reader2011,species name from Reader et al. 2011,,,,info,Primates,Navarrete_etal_2016_Data,historical alternative taxonomy,
+innovator,whether Reader et al. 2011 reported at least one innovation,,Class,,primary,Primates,Navarrete_etal_2016_Data,Yes/No,
+technical_innovation_count,reported innovations involving tool use,,Count,point,primary,Primates,Navarrete_etal_2016_Data,integer count,source header says rate (nr)
+nontechnical_innovation_count,reported innovations not involving tool use,,Count,point,primary,Primates,Navarrete_etal_2016_Data,integer count,source header says rate (nr)
+technical_innovation_plus_extractive_foraging_count,technical innovation count under the broader classification including extractive foraging,,Count,point,primary,Primates,Navarrete_etal_2016_Data,integer count,source header says rate (nr)
+nontechnical_innovation_excluding_extractive_foraging_count,non-technical innovation count under the broader classification excluding extractive foraging,,Count,point,primary,Primates,Navarrete_etal_2016_Data,integer count,source header says rate (nr)
+foraging_innovation_count,reported foraging innovations,,Count,point,primary,Primates,Navarrete_etal_2016_Data,integer count,
+technical_foraging_innovation_count,foraging innovations classified as technical,,Count,point,primary,Primates,Navarrete_etal_2016_Data,integer count,
+nontechnical_foraging_innovation_count,foraging innovations classified as non-technical,,Count,point,primary,Primates,Navarrete_etal_2016_Data,integer count,
+technical_foraging_plus_extractive_foraging_count,technical foraging innovations under the broader classification including extractive foraging,,Count,point,primary,Primates,Navarrete_etal_2016_Data,integer count,
+nontechnical_foraging_excluding_extractive_foraging_count,non-technical foraging innovations under the broader classification excluding extractive foraging,,Count,point,primary,Primates,Navarrete_etal_2016_Data,integer count,source header says rate (nr)
+life_history_composite,phylogenetic principal-component score from six life-history variables,,Composite,score,secondary,Primates,Navarrete_etal_2016_Data,71 non-missing species,source-derived composite
+Method:literature survey,innovation report counts from a published-literature survey,,,,method,Primates,Navarrete_etal_2016_Data,research effort was controlled in source analyses; no effort denominator is deposited,

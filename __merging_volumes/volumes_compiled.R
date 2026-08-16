@@ -99,6 +99,7 @@ papers <- tribble(
   "Semendeferi_etal_2001_Table2",         "Zilles",             2001,
   "Sherwood_etal_2005_Table1",            "Zilles",             2005,
   "Barger_etal_2007_TABLE1",              "Zilles",             2007,
+  "Reep_etal_2007_Table1",                "Reep",               2007,
 
   # --- DeCasien & Higham 2019 brain-volume sources (so this master includes them too) ---
   # The DeCasien-only SUBSET + the merge-vs-DeCasien comparison live in volumes_compiled_DeCasien.R.
@@ -124,6 +125,7 @@ enc_override <- c(# DOI-coded tables: registry resolves them, but keep DOI-encod
                   "Sherwood_etal_2004_TABLEI"   = "10.1002%2Fajp.20048_TABLEI",
                   "Barks_etal_2014_TABLE1"      = "10.1002%2Fajpa.22646_TABLE1",
                   "Bush_Allman_2004_a_Table2"   = "10.1073%2Fpnas.0305760101_Table2",
+                  "Reep_etal_2007_Table1"       = "10.1159%2F000101491_Table1",
                   "Rilling_Insel_1998_Table1"   = "10.1159%2F000006575_Table1",
                   "Stimpson_etal_2015_TableS1"  = "10.1093%2Fscan%2Fnsv128_TableS1",
                   # Stephan 1970 split into 6 per-table items (ISBN-coded; The Primate Brain has no DOI).

@@ -1,6 +1,13 @@
 # Export gaps — rows still "notfound" after the catalog fixes
 
-These 30 catalog rows have **no matching `.tsv` in `__Public/comparative-data/`**. Each needs its table extracted and exported under the target filename below (the encoded name the `Item in directory FileList` lookup expects). Generated 2026-07-20.
+> **Historical snapshot (generated 2026-07-20), not an active build queue.** Some entries have since
+> been built, reclassified, or deliberately skipped. Before acting on a row, check
+> `__ReadMe.xlsx`, `PROJECT_SCOPE_AND_DATASET_ROADMAP.md`, and especially
+> `SOURCE_DISPOSITION_REGISTER.md`. Do not infer “must build” from `notfound` alone.
+
+At generation time, these 30 catalog rows had **no matching `.tsv` in
+`__Public/comparative-data/`**. The filenames below record what the registry expected then; they do
+not establish the current disposition. Generated 2026-07-20.
 
 ## Bucket 2 — sibling tables already exported, this one is missing
 

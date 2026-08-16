@@ -83,5 +83,5 @@ raw (scanned tables) → hand-read snapshot csv → R script → usable csv/tsv.
 - **`variable_catalog.csv`** regenerates from this folder's `definitions.csv` when
   `_keys/build_variable_catalog.R` is run (R). Not run here (no R in the container).
 - **`__ReadMe.xlsx`** already carries the Matano 1992 bibliography row; its
-  `FileList` flips from `notfound` and the public `<DOI>.tsv` export appears once the
-  workbook/export build is run in Excel.
+  `Item in AUTO Public TSV FileList` lookup flips from `notfound` after
+  `_tools/__file_list.R` rebuilds the generated sheet and Excel recalculates the formula.

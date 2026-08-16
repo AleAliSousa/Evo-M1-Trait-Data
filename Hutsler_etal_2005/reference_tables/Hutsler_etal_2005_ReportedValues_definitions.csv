@@ -1,0 +1,19 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+scope,analysis stratum named in the paper,,Scope,,info,14 mammal species,Hutsler_etal_2005_ReportedValues,Separates main S1 regional and abstract/discussion summaries,prose
+region,cortical region or stated aggregation,,Region,,primary,14 mammal species,Hutsler_etal_2005_ReportedValues,,prose
+order,mammalian order or all,,Order,,primary,14 mammal species,Hutsler_etal_2005_ReportedValues,,prose
+layer_or_compartment,layer or composite laminar compartment,Regional cortex,Layer,,primary,14 mammal species,Hutsler_etal_2005_ReportedValues,,prose
+measure,absolute or proportional thickness,Regional cortex,Measure,,primary,14 mammal species,Hutsler_etal_2005_ReportedValues,,prose
+statistic,statistic printed for value,Regional cortex,Statistic,,primary,14 mammal species,Hutsler_etal_2005_ReportedValues,"mean, range_min, or range_max",prose
+value,standardized numeric value,Regional cortex,value,,primary,14 mammal species,Hutsler_etal_2005_ReportedValues,Percent values divided by 100; um unchanged,derived from printed value
+unit,standardized unit,Regional cortex,unit,,primary,14 mammal species,Hutsler_etal_2005_ReportedValues,"proportion or um",derived
+error_type,type of printed uncertainty,Regional cortex,uncertainty,,primary,14 mammal species,Hutsler_etal_2005_ReportedValues,SEM only for abstract/discussion rows,prose
+error_value,standardized error magnitude,Regional cortex,uncertainty,,primary,14 mammal species,Hutsler_etal_2005_ReportedValues,Percent SEM divided by 100,derived
+value_printed,numeric value as printed,Regional cortex,value,,info,14 mammal species,Hutsler_etal_2005_ReportedValues,,prose
+unit_printed,unit form used in the text,Regional cortex,unit,,info,14 mammal species,Hutsler_etal_2005_ReportedValues,,prose
+n_species,species count for the stated scope,Regional cortex,count,,info,14 mammal species,Hutsler_etal_2005_ReportedValues,Blank where aggregation is not specified,Methods / Results
+source_location,page and section location,,Source location,,info,14 mammal species,Hutsler_etal_2005_ReportedValues,,prose
+source_context,short audit note,,Note,,info,14 mammal species,Hutsler_etal_2005_ReportedValues,,curation
+conflict_group_id,identifier tying mutually inconsistent printed summaries,,Conflict,,note,14 mammal species,Hutsler_etal_2005_ReportedValues,No conflicting value is silently selected,QA
+compatibility,intended use and granularity warning,,Compatibility,,note,14 mammal species,Hutsler_etal_2005_ReportedValues,M1 entries are order/region summaries only,curation
+source,repository item identifier,,Source,,info,14 mammal species,Hutsler_etal_2005_ReportedValues,,derived

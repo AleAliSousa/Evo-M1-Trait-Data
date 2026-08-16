@@ -1,0 +1,11 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+order_printed,mammalian order exactly as printed,,Order,,info,14 mammal species,Hutsler_etal_2005_Table1,"Paper uses Primate, Carnivore, Rodent",Table 1
+common_name_printed,common name exactly as printed,,Common name,,info,14 mammal species,Hutsler_etal_2005_Table1,,Table 1
+scientific_name_printed,scientific name exactly as printed,,Scientific name,,info,14 mammal species,Hutsler_etal_2005_Table1,"Retains historical combinations and the printed Rattus spelling",Table 1
+species_sci,project accepted scientific name,,Species,,primary,14 mammal species,Hutsler_etal_2005_Table1,Resolved through Hutsler2005 paper-scoped key rows; proposal remains local pending registry sign-off,not printed
+n_specimens,number of specimens,Specimens,count,,primary,14 mammal species,Hutsler_etal_2005_Table1,32 specimens total,Table 1
+source_printed,tissue source and source-specific quantity exactly as printed,,Source,,info,14 mammal species,Hutsler_etal_2005_Table1,,Table 1
+primary_somatosensory_species_level_figure,whether Figure 3 contains a species-level bar for primary somatosensory cortex,Primary somatosensory cortex,presence,,info,14 mammal species,Hutsler_etal_2005_Table1,TRUE for all 14 species,Methods and Figure 3
+regional_motor_premotor_sensory_subset,whether the species is in the three-region analysis,Motor/premotor/somatosensory cortex,presence,,info,13 mammal species,Hutsler_etal_2005_Table1,TRUE for every species except mouse,Results p.76
+primary_motor_species_level_values_reported,whether species-level primary motor measurements are numerically reported,Primary motor cortex,presence,,info,14 mammal species,Hutsler_etal_2005_Table1,FALSE for all species; only order-level regional bars and summaries are available,Figure 6 and Results p.77
+source,repository item identifier,,Source,,info,14 mammal species,Hutsler_etal_2005_Table1,,derived

@@ -1,0 +1,23 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species_Heuer2023,scientific name used in the author-released final data table,,,,info,Mammals,Heuer_etal_2023_Data,underscores converted to spaces,author repository data/derived/csv/data.csv
+species_sci,project join label after four source-scoped nomenclatural normalizations,,,,info,Mammals,Heuer_etal_2023_Data,printed name retained in Species_Heuer2023,
+Binomial_name_timetree,species label used for the paper's TimeTree phylogeny,,,,info,Mammals,Heuer_etal_2023_Data,,
+English_name,common name printed in the author release,,,,info,Mammals,Heuer_etal_2023_Data,,
+Microdraw_name,specimen/image label used by MicroDraw,,,,info,Mammals,Heuer_etal_2023_Data,,
+Provenance,image collection or project of origin,,,,info,Mammals,Heuer_etal_2023_Data,,
+Cerebellar_section_area_mm2,area of the cerebellar mid-section,Cerebellum,area,mm2,primary,Mammals,Heuer_etal_2023_Data,10^Log10Area.cb,Table 1
+Cerebellar_section_length_mm,perimeter around the cerebellar pial surface of the mid-section,Cerebellum,length,mm,primary,Mammals,Heuer_etal_2023_Data,10^Log10Length.cb,Table 1
+Cerebral_section_area_mm2,area of the cerebral mid-section,Cerebrum,area,mm2,primary,Mammals,Heuer_etal_2023_Data,10^Log10Area.ctx,Table 1
+Cerebral_section_length_mm,perimeter around the cerebral pial surface of the mid-section,Cerebrum,length,mm,primary,Mammals,Heuer_etal_2023_Data,10^Log10Length.ctx,Table 1
+Folial_width_median_mm,median Euclidean distance between the two flanking sulci of a folium,Cerebellum,folial width,mm,primary,Mammals,Heuer_etal_2023_Data,10^Log10WidthMedian,Figure 3b and Table 1
+Folial_perimeter_median_mm,median distance along the cerebellar pial surface between the two flanking sulci of a folium,Cerebellum,folial perimeter,mm,primary,Mammals,Heuer_etal_2023_Data,author code calls this PeriodMedian; 10^Log10PeriodMedian,Figure 3c and Table 1
+Molecular_layer_thickness_median_mm,median thickness of the molecular layer in the cerebellar mid-section,Cerebellum,molecular layer thickness,mm,primary,Mammals,Heuer_etal_2023_Data,10^Log10ThicknessMedian; seven source exclusions,Figure 4 and Table 1
+Log10Area_cb_source,source-released log10 cerebellar section area,Cerebellum,area,log10 mm2,info,Mammals,Heuer_etal_2023_Data,verbatim numeric field,
+Log10Length_cb_source,source-released log10 cerebellar section length,Cerebellum,length,log10 mm,info,Mammals,Heuer_etal_2023_Data,verbatim numeric field,
+Log10Area_ctx_source,source-released log10 cerebral section area,Cerebrum,area,log10 mm2,info,Mammals,Heuer_etal_2023_Data,verbatim numeric field,
+Log10Length_ctx_source,source-released log10 cerebral section length,Cerebrum,length,log10 mm,info,Mammals,Heuer_etal_2023_Data,verbatim numeric field,
+Log10WidthMedian_source,source-released log10 median folial width,Cerebellum,folial width,log10 mm,info,Mammals,Heuer_etal_2023_Data,verbatim numeric field,
+Log10PeriodMedian_source,source-released log10 median folial perimeter,Cerebellum,folial perimeter,log10 mm,info,Mammals,Heuer_etal_2023_Data,verbatim numeric field,
+Log10ThicknessMedian_source,source-released log10 median molecular-layer thickness,Cerebellum,molecular layer thickness,log10 mm,info,Mammals,Heuer_etal_2023_Data,verbatim numeric field,
+LogBodyWeight_source,logged body weight copied verbatim from rosetta.csv,whole body,weight,source log,secondary,Mammals,Heuer_etal_2023_Data,not back-transformed because the author field is LogBodyWeight but load_data.R renames it Log10BodyWeight,
+LogBrainWeight_source,logged brain weight copied verbatim from rosetta.csv,whole brain,weight,source log,secondary,Mammals,Heuer_etal_2023_Data,not back-transformed because the author field is LogBrainWeight but load_data.R renames it Log10BrainWeight,

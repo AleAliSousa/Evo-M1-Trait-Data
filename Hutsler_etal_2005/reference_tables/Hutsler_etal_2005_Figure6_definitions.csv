@@ -1,0 +1,18 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+order_printed,mammalian order exactly as printed,,Order,,info,13 mammal species,Hutsler_etal_2005_Figure6,Mouse excluded,Figure 6
+region_printed,region label exactly as printed in legend,,Region,,info,13 mammal species,Hutsler_etal_2005_Figure6,,Figure 6
+region,standardized cortical region,,Region,,primary,13 mammal species,Hutsler_etal_2005_Figure6,,derived
+layer_or_compartment,laminar compartment represented by both panels,Regional cortex,Layer,,primary,13 mammal species,Hutsler_etal_2005_Figure6,Interpreted as supragranular II/III from axes/bar heights; caption is inconsistent,Figure 6
+n_species,number of species contributing to each order,Regional cortex,count,,info,13 mammal species,Hutsler_etal_2005_Figure6,"Primate 5, carnivore 3, rodent 5",Methods / Results p.76
+absolute_thickness_um,order mean supragranular thickness digitized from panel A,Regional cortex,Thickness.um,mean,primary,13 mammal species,Hutsler_etal_2005_Figure6,Rounded to nearest 5 um; approximate,Figure 6A axis
+proportional_thickness,order mean supragranular proportion digitized from panel B,Regional cortex,proportion,mean,primary,13 mammal species,Hutsler_etal_2005_Figure6,0-1 proportion; approximate,Figure 6B axis
+digitization_uncertainty_um,conservative uncertainty for absolute bar height,Regional cortex,Thickness.um,,note,13 mammal species,Hutsler_etal_2005_Figure6,10 um,derived from pixel scale
+digitization_uncertainty_proportion,conservative uncertainty for proportional bar height,Regional cortex,proportion,,note,13 mammal species,Hutsler_etal_2005_Figure6,0.005 = 0.5 percentage point,derived from pixel scale
+reported_sensory_absolute_um,exact narrative sensory order mean for reconciliation,Primary somatosensory cortex,Thickness.um,mean,secondary,13 mammal species,Hutsler_etal_2005_Figure6,Present only on sensory rows,Results p.74
+reported_sensory_proportion,exact narrative sensory order mean for reconciliation,Primary somatosensory cortex,proportion,mean,secondary,13 mammal species,Hutsler_etal_2005_Figure6,Present only on sensory rows,Results p.74
+value_basis,provenance class of the value,,Basis,,info,13 mammal species,Hutsler_etal_2005_Figure6,,derived
+caption_flag,internal caption/axis inconsistency warning,,Flag,,note,13 mammal species,Hutsler_etal_2005_Figure6,Do not relabel panel B as infragranular without primary clarification,Figure 6 caption and axes
+source,repository item identifier,,Source,,info,13 mammal species,Hutsler_etal_2005_Figure6,,derived
+digitized_minus_reported_sensory_um,digitized sensory bar minus exact narrative sensory mean,Primary somatosensory cortex,Thickness.um,difference,note,13 mammal species,Hutsler_etal_2005_Figure6,QA only; NA outside sensory,derived
+digitized_minus_reported_sensory_proportion,digitized sensory bar minus exact narrative sensory mean,Primary somatosensory cortex,proportion,difference,note,13 mammal species,Hutsler_etal_2005_Figure6,QA only; NA outside sensory,derived
+Method:pixel_calibration,"Panel A: y=348 is 0 um and y=51 is 1600 um; panel B: y=759 is 0 and y=465 is 60%",,,,method,13 mammal species,Hutsler_etal_2005_Figure6,Coordinates refer to the embedded 591 x 788 JPEG,manual reviewed digitization

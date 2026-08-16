@@ -1,7 +1,7 @@
 # Medina-González 2026 — joint angular excursion in terrestrial mammals
 
 Source folder for a broad-coverage **locomotion / gait** source feeding `__merging_behaviour`
-(candidate #7 in `SCOUTING_AND_SCOPING.md`; kept per curator, 2026-07-31). The
+(candidate #7 in `PROJECT_SCOPE_AND_DATASET_ROADMAP.md`; kept per curator, 2026-07-31). The
 widest-coverage locomotion source scouted — extends gait/locomotion far beyond the current
 primate-leaning set (Wimberly, Granatosky).
 
@@ -16,9 +16,10 @@ Efficiency in Terrestrial Mammals", published 2025-05-15; FONDECYT 11231111).
 - **What it contributes:** stance-phase joint angular excursions (touchdown / midstance / toe-off for
   six limb joints) and an **angular utilization index (AUI %)** for **182 terrestrial mammal species
   across 15 orders**, each classified by **limb posture, body mass, top speed, and locomotor habit**.
-- **Frozen source:** the Zenodo dataset (digital-native → download IS the frozen copy). Could not be
-  pulled in the scaffolding session (network policy blocked Zenodo at the egress proxy; no R runtime).
-  Download locally; keep verbatim; write the DOI-coded public TSV
+- **Frozen source:** the Zenodo dataset (digital-native → download IS the frozen copy). Rechecked
+  through the Zenodo API on 2026-08-15: the published record is marked **restricted**, describes
+  seven supplementary files, and returns an empty file list to unauthenticated clients. When access
+  is granted or the files are supplied, keep them verbatim and write the DOI-coded public TSV
   `__Public/comparative-data/10.1002%2Fjez.70069_Data.tsv` (invariant 2). Check the Zenodo license
   before redistributing the TSV.
 
@@ -40,7 +41,7 @@ frozen source**. Expose the species-level summaries in the reader:
    TSV, resolves species via `_keys`, writes `____EvoM1_TraitTable/gait_excursion_medina.xlsx`.
    **Confirm the exact source column headers** at the `TODO(curator)` marker.
 2. `reference_tables/MedinaGonzalez_2026_definitions.csv` (scaffolded).
-3. Register in `__ReadMe.xlsx` Sheet1: `Item name = MedinaGonzalez_2026_Data`,
+3. Registered in `__ReadMe.xlsx` Sheet1 as `Item name = MedinaGonzalez__2026_Data`,
    `Item encoded = 10.1002%2Fjez.70069_Data`, `Data role = primary`
    (`secondary` for the columns compiled from published sources — flag per column if needed),
    `Main Trait(s) = limb kinematics / locomotor posture`, `Taxon group = Mammals`, `Team = Medina`.

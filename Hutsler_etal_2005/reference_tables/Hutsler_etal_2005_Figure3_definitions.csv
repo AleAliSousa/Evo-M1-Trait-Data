@@ -1,0 +1,18 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+order_printed,mammalian order exactly as printed,,Order,,info,14 mammal species,Hutsler_etal_2005_Figure3,,Figure 3
+common_name_printed,common name from Table 1,,Common name,,info,14 mammal species,Hutsler_etal_2005_Figure3,Figure 3 uses abbreviations; Table 1 full labels retained,Table 1 / Figure 3
+scientific_name_printed,scientific name exactly as printed in Table 1,,Scientific name,,info,14 mammal species,Hutsler_etal_2005_Figure3,,Table 1
+species_sci,project accepted scientific name,,Species,,primary,14 mammal species,Hutsler_etal_2005_Figure3,Resolved through Hutsler2005 paper-scoped key rows,not printed
+region,cortical region measured,Primary somatosensory cortex,Region,,primary,14 mammal species,Hutsler_etal_2005_Figure3,Main analysis uses the only region available for all species,Methods / Results p.74
+total_cortical_thickness_um,total cortical thickness digitized from panel A,Primary somatosensory cortex,Thickness.um,,primary,14 mammal species,Hutsler_etal_2005_Figure3,Rounded to nearest 10 um; approximate,Figure 3A
+supragranular_II_III_thickness_um,layers II/III thickness digitized from panel A,Primary somatosensory cortex,Thickness.um,,primary,14 mammal species,Hutsler_etal_2005_Figure3,Rounded to nearest 10 um; approximate and internally inconsistent with narrative order means,Figure 3A
+infragranular_V_VI_thickness_um,layers V/VI combined thickness digitized from panel A,Primary somatosensory cortex,Thickness.um,,primary,14 mammal species,Hutsler_etal_2005_Figure3,Rounded to nearest 10 um; approximate,Figure 3A
+supragranular_II_III_proportion,layers II/III proportion digitized from panel B,Primary somatosensory cortex,proportion,,primary,14 mammal species,Hutsler_etal_2005_Figure3,0-1 proportion; approximate and internally inconsistent with narrative order means,Figure 3B
+infragranular_V_VI_proportion,layers V/VI combined proportion digitized from panel B,Primary somatosensory cortex,proportion,,primary,14 mammal species,Hutsler_etal_2005_Figure3,0-1 proportion; approximate,Figure 3B
+digitization_uncertainty_um,conservative uncertainty assigned to digitized absolute boundaries,Primary somatosensory cortex,Thickness.um,,note,14 mammal species,Hutsler_etal_2005_Figure3,25 um,derived from pixel scale
+digitization_uncertainty_proportion,conservative uncertainty assigned to digitized proportional boundaries,Primary somatosensory cortex,proportion,,note,14 mammal species,Hutsler_etal_2005_Figure3,0.010 = 1 percentage point,derived from pixel scale
+value_basis,provenance class of the value,,Basis,,info,14 mammal species,Hutsler_etal_2005_Figure3,,derived
+digitization_flag,row-specific digitization caveat,,Flag,,note,14 mammal species,Hutsler_etal_2005_Figure3,Capybara layer IV boundary is unresolved,visual QA
+qa_note,paper-level reconciliation warning,,Flag,,note,14 mammal species,Hutsler_etal_2005_Figure3,Prevents silent pooling with exact narrative or Figure 6 summaries,QA
+source,repository item identifier,,Source,,info,14 mammal species,Hutsler_etal_2005_Figure3,,derived
+Method:pixel_calibration,"Panel A: y=287.5 is 0 um and y=45.5 is 3000 um; panel B: y=711.5 is 0 and y=473.5 is 100%",,,,method,14 mammal species,Hutsler_etal_2005_Figure3,Coordinates refer to the embedded 646 x 834 JPEG,manual reviewed digitization

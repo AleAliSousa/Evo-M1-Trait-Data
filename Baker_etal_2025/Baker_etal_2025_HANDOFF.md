@@ -22,7 +22,8 @@ The source table is fully built and reproducible.
 
 **Registry (`__ReadMe.xlsx`, row 5) — FILLED** via surgical inline-string XML edit (deliberately **not** an openpyxl round-trip, because cols E–M are live formulas and M5 is an array formula). Progress=FINISHED, Snapshot, Data-readable file, Source Type=xlsx, Main Trait(s)=hand morphology & dexterity, Data role=secondary, etc. **Team left blank** on purpose, matching the other secondary compilations (Caspar / Heldstab / Granatosky) — Team tags primary collection lineages, not secondary compilations. Backup saved as `__ReadMe.pre_bakerfill.bak.xlsx`.
 
-**Known loose end in the registry:** `Item in directory FileList` still shows `notfound` because the FileList sheet (sheet2) has not been updated with the new TSV. That's a separate manual step.
+**Registry refresh:** run `_tools/__file_list.R`; it rebuilds `AUTO_Public_TSV_FileList` directly
+from `__Public/comparative-data/*.tsv`. Never add the filename to the workbook manually.
 
 ## Species overlap (dexterity combinability)
 

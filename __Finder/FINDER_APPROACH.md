@@ -2,7 +2,7 @@
 
 **Approach document, written 2026-08-14.** Proposal to be reviewed before any code is written.
 Intended home: `__Finder/APPROACH.md` in the repo. Companion to
-`NOTE_project_purpose_and_scope.md` (why the repo exists) and `__ShinyApp/DEPLOY.md` (the existing
+`PROJECT_SCOPE_AND_DATASET_ROADMAP.md` (why the repo exists) and `__ShinyApp/DEPLOY.md` (the existing
 *analysis* app).
 
 ---
@@ -269,7 +269,7 @@ item an `export_status`:
 
 ### 5.4 Region of interest is not yet a field
 
-`NOTE_project_purpose_and_scope.md` calls for tagging items by region (M1 / V1 / entorhinal /
+`PROJECT_SCOPE_AND_DATASET_ROADMAP.md` calls for tagging items by region (M1 / V1 / entorhinal /
 whole-brain), notes that V1 coverage is already substantial but unlabelled, and identifies entorhinal
 as the real gap. The finder is the natural consumer of that tag, and the scope note is right that the
 tag belongs in `_keys/variable_catalog.csv`, not invented here. **The index will read a

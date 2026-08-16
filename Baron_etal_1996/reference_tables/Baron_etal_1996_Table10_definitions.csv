@@ -1,0 +1,11 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species_row,printed row sequence within Table 10,,,,info,Chiroptera,Baron_etal_1996_Table10,stable 1-272 source-order key,
+Species_Baron1996,species wording as printed in Table 10,,,,info,Chiroptera,Baron_etal_1996_Table10,abbreviations and § addendum markers preserved; taxonomy applied later,
+n,number of individuals,,,,info,Chiroptera,Baron_etal_1996_Table10,blank where the table prints no n,
+medulla_oblongata_mm3,medulla oblongata volume,Medulla_oblongata,Vol.mm3,mean,primary,Chiroptera,Baron_etal_1996_Table10,,OBL
+mesencephalon_mm3,mesencephalon volume,Mesencephalon,Vol.mm3,mean,primary,Chiroptera,Baron_etal_1996_Table10,,MES
+cerebellum_mm3,cerebellum volume,Cerebellum,Vol.mm3,mean,primary,Chiroptera,Baron_etal_1996_Table10,,CER
+diencephalon_mm3,diencephalon volume,Diencephalon,Vol.mm3,mean,primary,Chiroptera,Baron_etal_1996_Table10,,DIE
+telencephalon_mm3,telencephalon volume,Telencephalon,Vol.mm3,mean,primary,Chiroptera,Baron_etal_1996_Table10,,TEL
+source_pdf_page,one-based PDF page containing the printed row,,,,info,Chiroptera,Baron_etal_1996_Table10,PDF pages 56-63,
+Method:source,PDF text-layer extraction with literal rendered-page-verified OCR repairs,,,,method,Chiroptera,Baron_etal_1996_Table10,no size indices transcribed,printed units mm3

@@ -1,7 +1,13 @@
 Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
-species_printed,species name exactly as printed in the primary source,,,,info,Mammals,CST_termination_compilation,printed name preserved (invariant 3),
-species_sci,accepted scientific binomial; harmonised via _keys,,,,info,Mammals,CST_termination_compilation,,
-CST_termination_grade,ordinal extent of corticospinal termination in spinal grey (0 = dorsal/intermediate only ... max = direct CM contact on distal motoneuron pools),spinal cord / M1 output,grade,ordinal,secondary,Mammals,CST_termination_compilation,coding rubric MUST be documented; one primary source per datum,ordinal curatorial coding — cite source page/figure per species
-CM_monosynaptic,presence of direct monosynaptic corticomotoneuronal connections (0/1),spinal cord / M1 output,presence,binary,secondary,Mammals,CST_termination_compilation,optional companion to the grade,
-Source,the primary paper the datum was taken from,,,,info,Mammals,CST_termination_compilation,Bortoff&Strick 1993 / Nudo&Masterton 1990 / Lemon 2008 / others,
-Method,comparative tract-tracing & electrophysiology of the corticospinal/corticomotoneuronal system; per-species literature compilation,,,,method,Mammals,CST_termination_compilation,behavioural read-out = Heffner dexterity (kept as a separate variable),this is a compilation of multiple primary studies
+Species_printed,species name exactly as printed in the primary source,,,,info,Mammals,CST_termination_compilation,printed name preserved,
+species_sci,project join label after source-scoped nomenclatural normalization,,,,info,Mammals,CST_termination_compilation,Cebus apella maps to Sapajus apella,
+CST_termination_grade,ordinal extent of primary-motor corticospinal termination in ventral horn or lamina IX,spinal cord / M1 output,grade,ordinal,secondary,Mammals,CST_termination_compilation,0 = absent or virtually absent; 1 = sparse/restricted; 2 = dense/extensive,curatorial code from explicit tract-tracing description
+CM_monosynaptic,direct monosynaptic corticomotoneuronal connection established by the cited method,spinal cord / M1 output,presence,binary,secondary,Mammals,CST_termination_compilation,left blank because light-microscopic terminal fields cannot prove presence or absence,Bortoff & Strick 1993 discussion pp. 5110-5111
+CM_connection_inference,paper's conservative inference about a corticomotoneuronal connection,spinal cord / M1 output,inference,category,secondary,Mammals,CST_termination_compilation,likely or against; not equivalent to a proven binary CM field,
+Segment_summary,spinal levels and pattern summarized from the source,,,,info,Mammals,CST_termination_compilation,,
+Method,experimental method used to observe the termination pattern,,,,method,Mammals,CST_termination_compilation,,
+Source,primary paper from which the row was coded,,,,info,Mammals,CST_termination_compilation,one paper per datum,
+DOI,digital object identifier of the source paper,,,,info,Mammals,CST_termination_compilation,,
+Source_location,exact source pages and figures supporting the code,,,,info,Mammals,CST_termination_compilation,,
+Evidence_summary,short paraphrase of the source evidence,,,,info,Mammals,CST_termination_compilation,no long quotations,
+Curatorial_note,scope or uncertainty note attached to the coding decision,,,,note,Mammals,CST_termination_compilation,,

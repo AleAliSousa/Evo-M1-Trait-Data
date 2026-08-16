@@ -101,4 +101,4 @@ for (i in 1:23) {
   }
   message(sprintf("%-4s %-18s %d rows", tid, strc, nrow(df)))
 }
-message("Done. Refresh FileList with _tools/__file_list.R.")
+message("Done. Rebuild AUTO_Public_TSV_FileList with _tools/__file_list.R.")

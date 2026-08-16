@@ -5,10 +5,10 @@
 # for 182 terrestrial mammals / 15 orders; the per-joint excursion angles stay in the frozen source.
 # Correlatable beside locomotion.xlsx (Granatosky) and gait.xlsx (Wimberly).
 #
-# STATUS: scaffold. Frozen source (Zenodo doi:10.5281/zenodo.15425733) + its DOI-coded public TSV are
-# NOT yet in the repo (org network policy blocked Zenodo in the scaffolding session; no R runtime).
-# Drop the source in per MedinaGonzalez_2026/MedinaGonzalez_2026.README.md, CONFIRM the column names
-# at the TODO(curator) marker, then this reads like its sibling readers.
+# STATUS: externally blocked. The published Zenodo record is restricted and exposes no downloadable
+# files (verified through the API 2026-08-15). Once the seven source files are supplied or access is
+# granted, freeze them per MedinaGonzalez_2026/MedinaGonzalez_2026.README.md, CONFIRM the real column
+# names at the TODO(curator) marker, and then run this reader.
 
 library(readxl); library(writexl)
 setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/")

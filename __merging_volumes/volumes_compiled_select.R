@@ -1,5 +1,5 @@
 # SELECT merge — compile brain-structure VOLUMES from a HAND-CHOSEN subset of tables.
-# Sibling of volumes_compiled.R (full collection) and volumes_compiled_DeCasien.R (DeCasien subset).
+# Sibling of volumes_compiled.R (canonical core collection) and volumes_compiled_DeCasien.R (DeCasien subset).
 # Same engine; what differs is (a) the selection block below, (b) the output suffix, and (c) an
 # explicit, hand-editable VALUE-FLAG registry that can veto a value even when it is the most recent.
 #
@@ -216,6 +216,41 @@ stopifnot(!anyDuplicated(select_datasets$item))
 # `pick` = position in the tribble; used as the deterministic same-year tie-break.
 select_datasets <- select_datasets %>% mutate(pick = row_number())
 
+## ---- ABLATION SWITCH (temporary, 2026-08-17) -----------------------------------------------
+## Purpose: establish a clean baseline against data_raw/Stephan_primates.csv in
+## analyses_metabol_rate_structure, so that any REMAINING Stephan-vs-merge disagreement is a
+## genuine defect rather than expected source precedence. Once that baseline is established,
+## re-admit items one at a time and attribute each changed cell to the item that changed it.
+##
+## Comment out a line to RE-ADMIT that item. Delete this whole block to restore the full merge.
+##
+## Why these two teams and not the other post-Stephan sources: MacLeod and Smaers are the items
+## that exist in this merge but NOT in Stephan_primates.csv. de Sousa 2010/2013 and Bauernfeind
+## 2013 are already folded INTO that file (its LGN_Sousa, ASG_Sousa, Total_insula_volume_L and
+## Granular/Dysgranular/Agranular_volume_L columns), so excluding those would CREATE asymmetry
+## rather than remove it.
+##
+## Filtering here rather than commenting rows out of the tribble above is deliberate:
+##   1. `pick` is already assigned, so the same-year tie-break order of the surviving items is
+##      identical to the full-merge run. Deleting tribble rows renumbers `pick`.
+##   2. The last tribble row carries no trailing comma, so commenting it out leaves a dangling
+##      comma on the line above and the tribble fails to parse.
+EXCLUDE_ITEMS <- c(
+  "MacLeod_etal_2003_Table1",              # cerebellum, Yerkes sample -- overrides Stephan cerebellum
+  "MacLeod_etal_2003_Table2",              # cerebellum, Hirnforschung sample; sole source of 'Cebus sp.'
+  "Smaers_etal_2011_SupplementaryTable1",  # total frontal grey -- 'reference' role only, no compared cell
+  "Smaers_etal_2017_TableS1part1"          # frontal_motor -- 'reference' role only, no compared cell
+)
+if (length(EXCLUDE_ITEMS)) {
+  unknown <- setdiff(EXCLUDE_ITEMS, select_datasets$item)
+  if (length(unknown))
+    stop("EXCLUDE_ITEMS names item(s) not in select_datasets: ", paste(unknown, collapse = ", "))
+  message("ABLATION: excluding ", length(EXCLUDE_ITEMS), " item(s) -- ",
+          paste(EXCLUDE_ITEMS, collapse = ", "))
+  select_datasets <- select_datasets %>% filter(!item %in% EXCLUDE_ITEMS)
+}
+## ---- end ablation switch --------------------------------------------------------------------
+
 ## ============================================================================================
 ## 2  Resolve each item to its TSV
 ## ============================================================================================
@@ -253,7 +288,16 @@ enc_override <- c(
   # resolve the TSV. D185 has been restored to "Table I", so this override is now inert belt-and-
   # braces — the OneDrive/Excel rewriter has emptied col D on this workbook before (9 rows were
   # empty on 2026-08-12). Safe to delete once the registry has held for a while.
-  "Matano__1986_TableI"                  = "10.1159%2F000156277_TableI")
+  "Matano__1986_TableI"                  = "10.1159%2F000156277_TableI",
+  # Zilles & Rehkämper 1988 Table 12-2: the SAME class of registry drift as Matano 1986 above.
+  # __ReadMe.xlsx no longer renders an "Item name" matching "Zilles_Rehkämper_1988_Table12-2", so
+  # the case-insensitive lookup in read_item() finds no row and the item resolves to no encoding —
+  # even though the workbook still carries the encoding for it and the TSV is present on disk as
+  # __Public/comparative-data/ISBN%3A9780195043716_Table12-2.tsv. Book chapter (Orang-Utan Biology,
+  # OUP), so the code is an ISBN, not a DOI.
+  # NB the value below deliberately omits ".tsv" — read_item() appends the extension itself. The
+  # workbook's own cell holds it WITH the extension, which would have produced "...Table12-2.tsv.tsv".
+  "Zilles_Rehkämper_1988_Table12-2"      = "ISBN%3A9780195043716_Table12-2")
 
 read_item <- function(it) {
   # Match item names CASE-INSENSITIVELY (registry drifts e.g. Table2 vs TABLE2) and strip stray

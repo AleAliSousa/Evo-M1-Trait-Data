@@ -4344,8 +4344,8 @@ Saimiri oerstedii,behavioural_flexibility,Tool_use_reduced_report_count,Reader,p
 Saimiri oerstedii,behavioural_flexibility,Tool_use_report_count,Reader,primary,0
 Saimiri oerstedii,research_effort,Zoological_record_article_count,Reader,primary,4
 Saimiri sciureus,locomotion,Arboreal_terrestrial,Granatosky,primary,A
-Saimiri sciureus,motor_pathway,CM_connection_inference,CST_compilation,secondary,against
-Saimiri sciureus,motor_pathway,CST_termination_grade,CST_compilation,secondary,1
+Saimiri sciureus,motor_pathway,CM_connection_inference,Bortoff_Strick,primary,against
+Saimiri sciureus,motor_pathway,CST_termination_grade,Bortoff_Strick,primary,1
 Saimiri sciureus,gait,Duty_Factor,Wimberly,primary,54.255435
 Saimiri sciureus,manipulation,Extractive_foraging,Heldstab,primary,1
 Saimiri sciureus,behavioural_flexibility,Extractive_foraging_reduced_report_count,Reader,primary,0
@@ -4398,8 +4398,8 @@ Saimiri vanzolinii,behavioural_flexibility,Tool_use_reduced_report_count,Reader,
 Saimiri vanzolinii,behavioural_flexibility,Tool_use_report_count,Reader,primary,0
 Saimiri vanzolinii,research_effort,Zoological_record_article_count,Reader,primary,0
 Sapajus apella,locomotion,Arboreal_terrestrial,Granatosky,primary,A
-Sapajus apella,motor_pathway,CM_connection_inference,CST_compilation,secondary,likely
-Sapajus apella,motor_pathway,CST_termination_grade,CST_compilation,secondary,2
+Sapajus apella,motor_pathway,CM_connection_inference,Bortoff_Strick,primary,likely
+Sapajus apella,motor_pathway,CST_termination_grade,Bortoff_Strick,primary,2
 Sapajus apella,dexterity,Dexterity,Heffner,primary,5
 Sapajus apella,dexterity,Dexterity,Iwaniuk,secondary,5
 Sapajus apella,gait,Duty_Factor,Wimberly,primary,65.5979992

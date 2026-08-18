@@ -4287,8 +4287,8 @@ Saimiri oerstedii,behavioural_flexibility,Tool_use_reduced_report_count,reports,
 Saimiri oerstedii,behavioural_flexibility,Tool_use_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
 Saimiri oerstedii,research_effort,Zoological_record_article_count,articles,4,4,1,1,1,TRUE,Reader,primary,4,4
 Saimiri sciureus,locomotion,Arboreal_terrestrial,category,A,,1,1,1,TRUE,Granatosky,primary,,
-Saimiri sciureus,motor_pathway,CM_connection_inference,category,against,,1,1,0,FALSE,CST_compilation,secondary,,
-Saimiri sciureus,motor_pathway,CST_termination_grade,ordinal 0-2,1,1,1,1,0,FALSE,CST_compilation,secondary,1,1
+Saimiri sciureus,motor_pathway,CM_connection_inference,category,against,,1,1,1,TRUE,Bortoff_Strick,primary,,
+Saimiri sciureus,motor_pathway,CST_termination_grade,ordinal 0-2,1,1,1,1,1,TRUE,Bortoff_Strick,primary,1,1
 Saimiri sciureus,gait,Duty_Factor,percent,54.255435,54.255435,1,1,1,TRUE,Wimberly,primary,54.255435,54.255435
 Saimiri sciureus,manipulation,Extractive_foraging,category,1,,1,1,1,TRUE,Heldstab,primary,,
 Saimiri sciureus,behavioural_flexibility,Extractive_foraging_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
@@ -4339,8 +4339,8 @@ Saimiri vanzolinii,behavioural_flexibility,Tool_use_reduced_report_count,reports
 Saimiri vanzolinii,behavioural_flexibility,Tool_use_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
 Saimiri vanzolinii,research_effort,Zoological_record_article_count,articles,0,0,1,1,1,TRUE,Reader,primary,0,0
 Sapajus apella,locomotion,Arboreal_terrestrial,category,A,,1,1,1,TRUE,Granatosky,primary,,
-Sapajus apella,motor_pathway,CM_connection_inference,category,likely,,1,1,0,FALSE,CST_compilation,secondary,,
-Sapajus apella,motor_pathway,CST_termination_grade,ordinal 0-2,2,2,1,1,0,FALSE,CST_compilation,secondary,2,2
+Sapajus apella,motor_pathway,CM_connection_inference,category,likely,,1,1,1,TRUE,Bortoff_Strick,primary,,
+Sapajus apella,motor_pathway,CST_termination_grade,ordinal 0-2,2,2,1,1,1,TRUE,Bortoff_Strick,primary,2,2
 Sapajus apella,dexterity,Dexterity,1-7 scale,5,5,2,2,1,TRUE,Heffner; Iwaniuk,primary; secondary,5,5
 Sapajus apella,gait,Duty_Factor,percent,65.5979992,65.5979992,1,1,1,TRUE,Wimberly,primary,65.5979992,65.5979992
 Sapajus apella,manipulation,Extractive_foraging,category,1,,1,1,1,TRUE,Heldstab,primary,,

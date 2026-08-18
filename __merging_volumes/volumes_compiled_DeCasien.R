@@ -63,12 +63,34 @@ DeCasien_csv  <- function(stem) paste0(stem, output_suffix, ".csv")
 ## volumes_compiled.R.
 papers <- tribble(
   ~item,                                  ~team,                ~year,
-  "Stephan_etal_1970_Tables1-6",          "Stephan_collection", 1970,  # ref 51
-  "Stephan_etal_1981_TablesI-VI",         "Stephan_collection", 1981,  # ref 24
+  # Refs 51 and 24 are stored one item per printed table. Keep the split names in lockstep with
+  # the canonical reader/term maps; the former bundled item names no longer have term-map rows.
+  "Stephan_etal_1970_Table1",             "Stephan_collection", 1970,  # ref 51
+  "Stephan_etal_1970_Table2",             "Stephan_collection", 1970,
+  "Stephan_etal_1970_Table3",             "Stephan_collection", 1970,
+  "Stephan_etal_1970_Table4",             "Stephan_collection", 1970,
+  "Stephan_etal_1970_Table5",             "Stephan_collection", 1970,
+  "Stephan_etal_1970_Table6",             "Stephan_collection", 1970,
+  "Stephan_etal_1981_TableI",             "Stephan_collection", 1981,  # ref 24
+  "Stephan_etal_1981_TableII",            "Stephan_collection", 1981,
+  "Stephan_etal_1981_TableIII",           "Stephan_collection", 1981,
+  "Stephan_etal_1981_TableIV",            "Stephan_collection", 1981,
+  "Stephan_etal_1981_TableV",             "Stephan_collection", 1981,
+  "Stephan_etal_1981_TableVI",            "Stephan_collection", 1981,
+  "Stephan_etal_1981_TableVII",           "Stephan_collection", 1981,
+  "Stephan_etal_1981_TableVIII",          "Stephan_collection", 1981,
+  "Stephan_etal_1981_TableIX",            "Stephan_collection", 1981,
+  "Stephan_etal_1981_TableX",             "Stephan_collection", 1981,
+  "Stephan_etal_1981_TableXI",            "Stephan_collection", 1981,
+  "Stephan_etal_1981_TableXII",           "Stephan_collection", 1981,
+  "Stephan_etal_1981_TableXIII",          "Stephan_collection", 1981,
+  "Stephan_etal_1981_TableXIV",           "Stephan_collection", 1981,
+  "Stephan_etal_1981_TableXV",            "Stephan_collection", 1981,
+  "Stephan_etal_1981_TableXVI",           "Stephan_collection", 1981,
   "Frahm_etal_1984_Table1",               "Stephan_collection", 1984,  # ref 34 (area striata)
   "Zilles_Rehkämper_1988_Table12-2",      "Stephan_collection", 1988,  # ref 59
   "deSousa_etal_2010_Table1",             "Zilles",             2010,  # ref 60
-  "MacLeod_etal_2003_",                   "Zilles",             2003,  # ref 61 (Table1 = Yerkes sample)
+  "MacLeod_etal_2003_Table1",             "Zilles",             2003,  # ref 61 (Table1 = Yerkes sample)
   "MacLeod_etal_2003_Table2",             "Zilles",             2003,  # ref 61 (Table2 = Hirnforschung sample; was omitted -- has Alouatta/Aotus/etc DeCasien needs)
   "Bauernfeind_etal_2013_Table1",         "Zilles",             2013,  # ref 43
   "Bauernfeind_etal_2013_Table2",         "Zilles",             2013,  # ref 43
@@ -89,11 +111,31 @@ filecodes <- read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
 # Fallback encodings for items not yet given a row in __ReadMe.xlsx (the registry sheet is
 # maintained by hand to preserve its formula columns). Remove an entry once its row exists.
 enc_override <- c("Bauernfeind_etal_2013_Table2" = "10.1016%2Fj.jhevol.2012.12.003_Table2",
-                  "Stephan_etal_1970_Tables1-6" = "ISBN%3A0390672505_Tables1-6",
-                  # item names below differ in name/case from their __ReadMe.xlsx rows
-                  # (registry uses MacLeod_..._Table1 / Semendeferi_..._TABLE2), so the
-                  # exact-match lookup returns NA -> resolve them here.
-                  "MacLeod_etal_2003_" = "10.1016%2Fs0047-2484(03)00028-9_Table1",
+                  "Stephan_etal_1970_Table1" = "ISBN%3A0390672505_TABLE1",
+                  "Stephan_etal_1970_Table2" = "ISBN%3A0390672505_TABLE2",
+                  "Stephan_etal_1970_Table3" = "ISBN%3A0390672505_TABLE3",
+                  "Stephan_etal_1970_Table4" = "ISBN%3A0390672505_TABLE4",
+                  "Stephan_etal_1970_Table5" = "ISBN%3A0390672505_TABLE5",
+                  "Stephan_etal_1970_Table6" = "ISBN%3A0390672505_TABLE6",
+                  # All 16 printed Stephan 1981 tables share the paper's single DOI. Pin the
+                  # encodings so registry drift cannot send VIII/IX/X to obsolete DOI variants.
+                  "Stephan_etal_1981_TableI"    = "10.1159%2F000155963_TableI",
+                  "Stephan_etal_1981_TableII"   = "10.1159%2F000155963_TableII",
+                  "Stephan_etal_1981_TableIII"  = "10.1159%2F000155963_TableIII",
+                  "Stephan_etal_1981_TableIV"   = "10.1159%2F000155963_TableIV",
+                  "Stephan_etal_1981_TableV"    = "10.1159%2F000155963_TableV",
+                  "Stephan_etal_1981_TableVI"   = "10.1159%2F000155963_TableVI",
+                  "Stephan_etal_1981_TableVII"  = "10.1159%2F000155963_TableVII",
+                  "Stephan_etal_1981_TableVIII" = "10.1159%2F000155963_TableVIII",
+                  "Stephan_etal_1981_TableIX"   = "10.1159%2F000155963_TableIX",
+                  "Stephan_etal_1981_TableX"    = "10.1159%2F000155963_TableX",
+                  "Stephan_etal_1981_TableXI"   = "10.1159%2F000155963_TableXI",
+                  "Stephan_etal_1981_TableXII"  = "10.1159%2F000155963_TableXII",
+                  "Stephan_etal_1981_TableXIII" = "10.1159%2F000155963_TableXIII",
+                  "Stephan_etal_1981_TableXIV"  = "10.1159%2F000155963_TableXIV",
+                  "Stephan_etal_1981_TableXV"   = "10.1159%2F000155963_TableXV",
+                  "Stephan_etal_1981_TableXVI"  = "10.1159%2F000155963_TableXVI",
+                  "MacLeod_etal_2003_Table1" = "10.1016%2Fs0047-2484(03)00028-9_Table1",
                   "MacLeod_etal_2003_Table2" = "10.1016%2Fs0047-2484(03)00028-9_Table2",
                   "Semendeferi_etal_1998_Table2" = "10.1002%2F(SICI)1096-8644(199806)106%3A2%3C129%3A%3AAID-AJPA3%3E3.0.CO;2-L_TABLE2",
                   "Semendeferi_etal_2001_Table2" = "10.1002%2F1096-8644(200103)114%3A3%3C224%3A%3AAID-AJPA1022%3E3.0.CO;2-I_TABLE2",
@@ -246,7 +288,7 @@ paper_long <- function(row) {
     df  <- spm %>% group_by(lab) %>% summarise(across(all_of(meas), ~mean(.x, na.rm=TRUE)), .groups="drop") %>%
            rename(Species = lab)
   }
-  if (it %in% c("MacLeod_etal_2003_", "MacLeod_etal_2003_Table2")) {  # per-individual -> species means, cm3->mm3
+  if (it %in% c("MacLeod_etal_2003_Table1", "MacLeod_etal_2003_Table2")) {  # per-individual -> species means, cm3->mm3
     meas <- c("cerebellum_volume_cm3","vermis_volume_cm3","hemisphere_volume_cm3","brain_volume_cm3")
     df <- df %>% group_by(Species) %>% summarise(across(all_of(meas), ~mean(num(.x)*1000, na.rm=TRUE)), .groups="drop")
   }
@@ -429,7 +471,7 @@ t1 <- long %>% filter(Team == "Stephan_collection") %>% arrange(Species, Variabl
 ## as Value (never re-derived) -- what makes the Sources column real provenance rather than a guess.
 t1res <- t1 %>% group_by(Species, Variable) %>% summarise(
   keep_i = if (is_mass(first(Variable))) {
-             s81 <- which(Source == "Stephan_etal_1981_TablesI-VI")
+             s81 <- which(grepl("^Stephan_etal_1981_Table(I{1,3})$", Source))
              if (length(s81)) s81[1] else 1L
            } else 1L,
   Value = Value[keep_i], Source = Source[keep_i], Year = Year[keep_i],
@@ -609,5 +651,6 @@ message("[DeCasien] ", nrow(volumes_wide), " species x ", ncol(volumes_wide)-1, 
 ## Reuse the maintained value-match comparison (no duplicated logic), pointed at the DeCasien outputs.
 ## Writes DeCasien_Higham_2019/DeCasien_vs_merge_comparison_DeCasien.csv (+ _DeCasien findings/taxonomy).
 merge_suffix <- output_suffix
-source(file.path(base, "DeCasien_Higham_2019",
-                 "DeCasien_Higham_2019_SupplementaryData1-BrainRegion.R"))
+decasien_comparison_script_path <- file.path(
+  base, "DeCasien_Higham_2019", "DeCasien_Higham_2019_SupplementaryData1-BrainRegion.R")
+source(decasien_comparison_script_path)

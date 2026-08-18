@@ -272,7 +272,7 @@ script had been touched is obsolete.
 | `Heuer_etal_2019_Table1` | 34 species / 65 individuals | printed table → snapshot |
 | `Heuer_etal_2019_S1` | 66 scanned specimens | journal supplement TSV (digital-native) |
 | `Heuer_etal_2023_Data` | 56 species / 383 direct-measure observations | author GitHub release + eLife supplement |
-| `Corticospinal_terminations` | 2 directly compared species | Bortoff & Strick 1993 tract-tracing evidence |
+| `Bortoff_Strick_1993_Table1` | 2 directly compared species | Bortoff & Strick 1993 tract-tracing evidence (curated table) |
 
 **166 species-key rows** added to `_keys/Stephan/species_key.csv` under paper-scoped tokens
 (`Capellini2008` 108, `Heuer2019` 33, `Jacobs2018` 20, `Reader2011` 4, `Liu2016` 1).
@@ -329,9 +329,12 @@ bat block: this repository already holds the cited *Comparative Neurobiology in 
 has built `Baron_etal_1996_Table10` (five fundamental brain parts) and
 `Baron_etal_1996_Table32` (eight telencephalic components), each with 272 source rows. Those two
 tables are the closest recoverable primary form of Willemet's bat data and are already registered and
-public, but they are not yet wired into `__merging_volumes`. Wire them as a 1996
-`Stephan_collection` update only after the existing overlap audit is complete; do not ingest Willemet's
-secondary slopes, PCA loadings, or plot points as a new measurement team.
+public, but they are not yet wired into `__merging_volumes`. The 2026-08-15 audit found **zero**
+Baron species or species × canonical-structure overlaps in the current core merge, so this is a new
+Chiroptera block rather than a duplicate of currently wired Stephan rows. Wiring remains on
+**HOLD** for seven historical taxon concepts and for explicit within-source averaging where
+subspecies/source rows collapse to one species. Do not ingest Willemet's secondary slopes, PCA
+loadings, or plot points as a new measurement team.
 
 The papers also motivate cross-datatype joins rather than only more volumetry: taxon-specific
 allometry and cerebrotype homogeneity; neuron/glia scaling; neurodevelopmental timing; cortical-area,
@@ -359,9 +362,11 @@ figures.
 
 - Registry rows for `Heuer_etal_2023_Data` and the CST compilation were added to `__ReadMe.xlsx` on
   2026-08-15, and the Shiny source manifest was rebuilt with both public tables.
-- `Baron_etal_1996_Table10` and `Baron_etal_1996_Table32` are built and public but still need their
-  Stephan-collection overlap audit, standardized-term maps, and volume-merge wiring. Together they
-  supply the 272-row bat dataset most directly implicated by Willemet 2012.
+- `Baron_etal_1996_Table10` and `Baron_etal_1996_Table32` are built and public. Their reproducible
+  overlap/taxonomy audit is complete: 259 source concepts, zero current core overlap, and seven
+  concepts on manual review. Standardized-term maps and merge wiring wait for those taxon decisions
+  plus the required within-source species averaging. Together the tables supply the 272-row bat
+  dataset most directly implicated by Willemet 2012.
 - The older scout batch still needs a targeted merge audit for Capellini sleep, Liu hand measures,
   and Jacobs regional M1 morphology. Folder existence is not proof that merge wiring is complete.
 
@@ -446,7 +451,7 @@ figures.
 | 5 | Heuer et al. 2019 — neocortical folding (34 primates, MRI) | IN, **separate** | `Heuer_etal_2019/` | **none** — housed separately, never pooled with Zilles GI |
 | 6 | Cerebellar folding — **Heuer et al. 2023** (eLife 12:e85907) | ✅ **BUILT 2026-08-15** | `Heuer_etal_2023/` | dedicated `__merging_cerebellar_folding` + Shiny app; **never pooled with Ashwell 2020 foliation or neocortical GI** |
 | 7 | Medina-González 2026 — limb excursion, 182 mammals | IN, **blocked: restricted source record** | `MedinaGonzalez_2026/` (+ reader scaffold) | `__merging_behaviour` after files become available |
-| 8 | Corticospinal / CM termination extent | ✅ **BUILT 2026-08-15** | `Corticospinal_terminations/` | behaviour (`CST_termination_grade` + cautious CM inference) |
+| 8 | Corticospinal / CM termination extent | ✅ **BUILT 2026-08-15**, renamed to the house pattern + re-keyed to the article DOI same day | `Bortoff_Strick_1993/` (Table 1, curated) | behaviour (`CST_termination_grade` + cautious CM inference), team `Bortoff_Strick`, **primary** |
 | 9 | ~~Betz cells (compile-from-lit)~~ → **Jacobs et al. 2018** — gigantopyramidal + M1 pyramidal morphology | IN, **snapshots built 2026-08-04** | `Jacobs_etal_2018/` (Tables 3 + 5) | `__merging_cellcounts` as **regional M1** sub-trait (never pooled with whole-cortex counts) |
 | — | Reader lineage — technical innovation (2002 classic + 2011 Dryad) | ✅ **BUILT + WIRED 2026-08-15** | `Reader_etal_2011/` (+ `innovation_reader.xlsx`) | `__merging_behaviour` (report counts + effort variables) |
 

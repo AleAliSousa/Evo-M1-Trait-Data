@@ -3,7 +3,7 @@
 
 ## What this is
 
-A third sibling to `volumes_compiled.R` (the full collection) and `volumes_compiled_DeCasien.R`
+A third sibling to `volumes_compiled.R` (the canonical core collection) and `volumes_compiled_DeCasien.R`
 (the DeCasien subset): a merge of a **hand-chosen** set of tables, treated as **one evolving
 dataset**, where the most recent measurement of each species x structure supersedes the older ones
 — *except* where a value has been flagged as one that must not be used, however recent it is.

@@ -7,7 +7,9 @@
 import os, re, zipfile, csv
 from xml.etree import ElementTree as ET
 
-ROOT = "/sessions/cool-wizardly-archimedes/mnt/Evo-M1-Trait-Data"
+# Derived from this script's own location (_tools/ lives at the dataset root), so the audit
+# runs on any machine. It used to hardcode a sandbox path that no longer existed.
+ROOT = os.environ.get("EVOM1_ROOT") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 NS = '{http://schemas.openxmlformats.org/spreadsheetml/2006/main}'
 
 # ---------------------------------------------------------------- registry
@@ -39,7 +41,8 @@ print("registry data rows: %d" % len(reg))
 
 # ---------------------------------------------------------------- folders
 SKIP_PREFIX = ('_', '.')
-NON_PAPER = {'Corticospinal_terminations'}   # thematic, not one publication
+NON_PAPER = set()   # thematic folders that are not one publication (none at present:
+                    # Corticospinal_terminations was renamed to Bortoff_Strick_1993 on 2026-08-15)
 folders = sorted(d for d in os.listdir(ROOT)
                  if os.path.isdir(os.path.join(ROOT, d)) and not d.startswith(SKIP_PREFIX))
 
@@ -123,7 +126,9 @@ show('3) NO ROW IN __ReadMe.xlsx Sheet1',
 print('\n%d folders scanned; %d clean on all three' % (
     len(rows), sum(1 for r in rows if r['paper_pdf'] and r['frozen'] and r['nreg'])))
 
-with open('/sessions/cool-wizardly-archimedes/mnt/outputs/folder_audit.csv', 'w', newline='') as fh:
+OUT = os.path.join(ROOT, '_checks', 'folder_audit.csv')   # was a hardcoded sandbox path
+os.makedirs(os.path.dirname(OUT), exist_ok=True)
+with open(OUT, 'w', newline='') as fh:
     w = csv.writer(fh)
     w.writerow(['folder', 'n_files', 'paper_pdf', 'supp_pdf', 'n_frozen', 'frozen_files',
                 'n_derived', 'derived_files', 'n_registry_rows', 'registry_items', 'source_urls'])
@@ -131,4 +136,4 @@ with open('/sessions/cool-wizardly-archimedes/mnt/outputs/folder_audit.csv', 'w'
         w.writerow([r['folder'], r['files'], r['paper_pdf'], r['supp_pdf'], len(r['frozen']),
                     '; '.join(r['frozen']), len(r['derived']), '; '.join(r['derived']),
                     r['nreg'], '; '.join(r['items']), '; '.join(r['urls'])])
-print('wrote folder_audit.csv')
+print('wrote ' + OUT)

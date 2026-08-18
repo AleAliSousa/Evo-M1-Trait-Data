@@ -43,7 +43,7 @@ istxt <- function(x) !(is.na(x) | trimws(x) == "" | tolower(trimws(x)) %in% c("n
 
 TEAM <- c(schniter="Schniter", manyprimates="ManyPrimates", heffner="Heffner", iwaniuk="Iwaniuk",
           wimberly="Wimberly", granatosky="Granatosky", caspar="Caspar", heldstab="Heldstab",
-          baker="Baker", reader="Reader", cst="CST_compilation")
+          baker="Baker", reader="Reader", cst="Bortoff_Strick")
 CATEG <- c("Gait","Foot_Posture","Arboreal_terrestrial","Tool_use","Extractive_foraging",
            "Tool_Manufacture","True_Tool_Use","CM_connection_inference")
 
@@ -83,7 +83,9 @@ obs <- bind_rows(
   grab("innovation_reader.xlsx","Extractive_foraging_reduced","Extractive_foraging_reduced_report_count","reader"),
   grab("innovation_reader.xlsx","Journal_search_article_count","Journal_search_article_count","reader"),
   grab("innovation_reader.xlsx","Zoological_record_article_count","Zoological_record_article_count","reader"),
-  ## Curated comparative compilation; the ordinal grade and binary CM field remain separate.
+  ## Bortoff & Strick 1993 (Bortoff_Strick_1993_Table1) - PRIMARY WGA-HRP tract tracing; the
+  ## 0-2 grade is a curatorial coding of their own terminal-field description. The ordinal
+  ## grade and the (all-NA) binary CM field are kept as separate measures on purpose.
   grab("corticospinal_terminations.xlsx","CST_termination_grade","CST_termination_grade","cst"),
   grab("corticospinal_terminations.xlsx","CM_monosynaptic","CM_monosynaptic","cst"),
   grab("corticospinal_terminations.xlsx","CM_connection_inference","CM_connection_inference","cst"),
@@ -132,9 +134,9 @@ META <- bind_rows(META, tribble(
  "Extractive_foraging_reduced_report_count","behavioural_flexibility","reports",list(c("reader","primary")),
  "Journal_search_article_count","research_effort","articles",list(c("reader","primary")),
  "Zoological_record_article_count","research_effort","articles",list(c("reader","primary")),
- "CST_termination_grade","motor_pathway","ordinal 0-2",list(c("cst","secondary")),
- "CM_monosynaptic","motor_pathway","binary 0/1",list(c("cst","secondary")),
- "CM_connection_inference","motor_pathway","category",list(c("cst","secondary"))
+ "CST_termination_grade","motor_pathway","ordinal 0-2",list(c("cst","primary")),
+ "CM_monosynaptic","motor_pathway","binary 0/1",list(c("cst","primary")),
+ "CM_connection_inference","motor_pathway","category",list(c("cst","primary"))
 ))
 ## Baker log10 hand-bone length measures (all single-source, baker primary)
 META <- bind_rows(META, tibble(Measure = bone_cols, mclass = "hand_morphology",

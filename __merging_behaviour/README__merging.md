@@ -2,7 +2,9 @@
 
 A keyed comparative **behavioural** merge across several measure classes — **vocal repertoire size**,
 **digital dexterity**, **quadrupedal walking gait**, **locomotor diversity**, **hand preference
-(handedness)**, **manipulation complexity**, and **hand morphology / tool use** (Baker et al. 2025).
+(handedness)**, **manipulation complexity**, **hand morphology / tool use** (Baker et al. 2025),
+**technical innovation / research effort** (Reader et al. 2011), and **motor pathway** — the
+corticospinal / corticomotoneuronal termination grade (Bortoff & Strick 1993).
 It produces the same long-table schema as the other
 keyed merges (`__merging_body_ecology`, `__merging_brain_mass`): **one row per (Species, Measure)**
 with the resolved `Value` plus source provenance (`n_sources`, `Teams`, `roles`, `value_min/max`).
@@ -42,7 +44,9 @@ Binocularity is sensory, not dexterity.
 
 Composes the harmonised, `species_sci`-keyed trait tables in `____EvoM1_TraitTable/`
 (`vocal_repertoire_schniter/manyprimates`, `gait`, `locomotion`, `handedness`, `manipulation`,
-**`dexterity_baker`** — written by `EvoM1_read_dexterity_baker.R`), plus
+**`dexterity_baker`** — written by `EvoM1_read_dexterity_baker.R`; **`innovation_reader`** —
+written by `EvoM1_read_innovation_reader.R`; **`corticospinal_terminations`** — written by
+`EvoM1_read_corticospinal_terminations.R` from the Bortoff & Strick 1993 public TSV), plus
 two dedicated dexterity inputs **`dexterity_heffner.xlsx`** / **`dexterity_iwaniuk.xlsx`** (written by
 `EvoM1_read_dexterity_corticospinal*.R`). Dexterity has its own input tables because the
 corticospinal-tract trait tables the app melts no longer carry the dexterity column — that would
@@ -54,8 +58,8 @@ printed `Species`, cleaned.
 - **`behaviour_long.csv`** — the keyed merge, app-facing. One row per (Species, Measure). Columns:
   `Species, measure_class, Measure, Units, Value, Value_median, n_sources, n_teams,
   n_teams_primary, primary_used, Teams, roles, value_min, value_max` (same schema as
-  `body_ecology_long.csv`). 2,760 rows over 406 species; multi-source rows: Dexterity (24 species),
-  VocalRepertoire (16), Tool_use (27, Heldstab∩Baker).
+  `body_ecology_long.csv`). **4,830 rows over 489 species**; multi-source rows: Dexterity (24
+  species), VocalRepertoire (16), Tool_use (27, Heldstab∩Baker).
 - **`behaviour_observations_long.csv`** — the raw per-source rows behind the resolution
   (`Species, measure_class, Measure, Team, role, Value`).
 - **`behaviour_wide.csv`** — one row per species, resolved value per measure (overview).
@@ -70,7 +74,11 @@ duplicated between datasets.
 
 ## Coverage
 
-406 species. Per measure: Duty_Factor/Gait/Phase 154, Foot_Posture 136, Locomotor_diversity_index
+489 species. By measure class: hand_morphology 1,322 rows, behavioural_flexibility 1,666,
+gait 598, research_effort 401, manipulation 343, locomotion 289, handedness 76, dexterity 66,
+vocalization 65, **motor_pathway 4** (`CST_termination_grade` + `CM_connection_inference` for
+*Sapajus apella* and *Saimiri sciureus*; `CM_monosynaptic` is all-NA at source and so contributes no
+rows). Per measure: Duty_Factor/Gait/Phase 154, Foot_Posture 136, Locomotor_diversity_index
 113, Arboreal_terrestrial 96, Intermembral_index 80, Dexterity 67, VocalRepertoire 65, Handedness
 38, Manipulation/Extractive_foraging 37. Baker et al. 2025: Tool_use 188 (Heldstab 37 + 151 new),
 Tool_Manufacture 41, True_Tool_Use 40, peak_workspace/relative_size/real_size 41, and the 19 log10

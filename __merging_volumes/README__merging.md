@@ -15,8 +15,9 @@ take most recent; Kverkova a different lab → average): a duplicate
 group on the same C&O Vogt specimens). Duplicates resolved by **most recent
 publication date** (the later paper supersedes the earlier), *unless flagged*:
 
-> Stephan 1981 / 1982 / 1984 / 1987, Frahm 1982 / 1984 / 1994 / 1997 / 1998,
-> Baron 1983 / 1987 / 1988 / 1990, Matano 1985a / 1985b, Zilles & Rehkämper 1988.
+> Stephan 1970 / 1981 / 1982 / 1984 / 1987, Frahm 1982 / 1984 / 1994 / 1997 / 1998,
+> Baron 1983 / 1987 / 1988 / 1990, Matano 1985a / 1985b / 1986 / 1992, and
+> Zilles & Rehkämper 1988.
 
 Worked example: the amygdala is taken from **Stephan 1987** (its re-measurement)
 over Stephan 1981 — e.g. *Alouatta seniculus* 426 (1987) not 413 (1981).
@@ -25,10 +26,10 @@ over Stephan 1981 — e.g. *Alouatta seniculus* 426 (1987) not 413 (1981).
 type). Each is its **own team**; across teams the values are **averaged** with the
 Tier-1 result:
 
-> de Sousa 2010 + 2013 (one "deSousa" team), MacLeod 2003, Bauernfeind 2013, Bush & Allman 2003,
-> Smaers 2011 (frontal), **Barger 2007** (amygdala; team `Zilles` = the Semendeferi/Zilles collection,
-> averaged with the Stephan-collection amygdala), and **Reep 2007** (an independent University of
-> Wisconsin series of 29 non-primate mammal specimens).
+> de Sousa 2010 + 2013, MacLeod 2003, Bauernfeind 2013, Bush & Allman 2003/2004,
+> Smaers 2011 Tables 1–2, Semendeferi 1998/2001, Sherwood 2005, **Barger 2007**
+> (amygdala; team `Zilles` = the Semendeferi/Zilles collection), Ashwell 2020,
+> **Reep 2007**, and **Kverkova 2018**.
 
 ## Hemispheres: the merge unit is the COMBINED (left + right) volume
 
@@ -198,29 +199,40 @@ single layered pass over the long table:
 
 ## Current state
 
-**61 citable source tables merged → 289 species × 129 variables** after the Reep 2007 build.
-Tier 1 (17, Stephan_collection): Stephan 1970/1981/1982/1984/1987,
-Frahm 1982/1984/1994/1997/1998, Baron 1983/1987/1988/1990, Matano 1985a/1985b, Zilles 1988.
-Tier 2 (independent series): de Sousa 2010, de Sousa 2013, MacLeod 2003, Bauernfeind 2013
-(insula = **left**, `_left`), Bush & Allman 2003, Bush & Allman 2004b, Smaers 2011 (combined
-L+R frontal grey/white), Barger 2007 (amygdala, team `Zilles`), Ashwell 2020, Semendeferi
-1998/2001, Sherwood 2005, and Reep 2007 (29 specimens × 11 regional volumes; all author-doubled).
+**57 citable source tables merged → 300 species × 135 variables** (2026-08-15).
+Tier 1 comprises 39 printed tables from Stephan 1970/1981/1982/1984/1987,
+Frahm 1982/1984/1994/1997/1998, Baron 1983/1987/1988/1990, Matano 1985a/1985b/1986/1992,
+and Zilles & Rehkämper 1988. Tier 2 comprises 18 independent tables from de Sousa 2010/2013,
+MacLeod 2003, Bauernfeind 2013 (insula sides retained explicitly), Bush & Allman 2003/2004,
+Smaers 2011, Barger 2007, Ashwell 2020, Semendeferi 1998/2001, Sherwood 2005, Reep 2007,
+and Kverkova 2018.
 
-**DeCasien comparison is separate (revised 2026-06-28).** The 2026-06-24 expansion that folded the
+The 2026-08-15 intake added, in order:
+
+- **Matano 1992** — 45 species × four bilateral inferior-olive volumes (180 contributions);
+- **Kverkova 2018 Table S1** — 11 rodent species × 14 regional volumes plus body and brain mass
+  (176 contributions; brain mass converted g→mg), adding all 11 species;
+- **Smaers 2011 Supplementary Table 2** — 19 primates × left, right, and printed-total prefrontal
+  grey/white volumes (114 contributions; per-individual cm³→species-mean mm³). The printed totals
+  equal the retained left + right values after aggregation.
+
+**Canonical contract: core means core-only, and the script now enforces it.**
+`volumes_compiled.R` owns the unsuffixed canonical outputs and stops if a DeCasien/expanded-only
+item enters its `papers` table. The 2026-06-24 expansion that folded the
 DeCasien sources (Sherwood 2004 `_TABLEI`, Barks 2014, Rilling & Insel 1998/1999, Stimpson 2015,
 and the `*_viaDeCasien` tables) *into* this merge was reverted: cross-team averaging shifted
 great-ape values away from DeCasien's single-source figures (44 regressions; see
 `_EXPANSION_FINDINGS.md`). Those papers are no longer compiled here. The merge-vs-DeCasien
 comparison lives in its own scripts. Two ways to compare:
-(1) **value-match** (recommended; needs only the core merge):
+(1) **value-match** (recommended; needs only the canonical core):
 `../DeCasien_Higham_2019/DeCasien_Higham_2019_SupplementaryData1-BrainRegion.R` value-matches
 DeCasien's published MOESM3 numbers against this core merge's `volumes_unfiltered.csv` /
 `volumes_long.csv`. It now takes an optional `merge_suffix` (default `""` = core).
-(2) **expanded-merge build** (`volumes_compiled_DeCasien.R`): a dedicated sibling that mirrors this
-engine but ADDS the DeCasien-overlapping papers, writes `volumes_*_EXPANDED.csv` (never the canonical
-`volumes_*.csv`), then `source()`s script (1) with `merge_suffix <- "_EXPANDED"` to produce
-`DeCasien_vs_merge_comparison_EXPANDED.csv` + `_EXPANDED` findings. Use it only for the comparison;
-the canonical dataset stays core-only here.
+(2) **DeCasien source-subset build** (`volumes_compiled_DeCasien.R`): a dedicated sibling containing
+only the volume-source papers cited by DeCasien & Higham, writing `volumes_*_DeCasien.csv` and
+`DeCasien_vs_merge_comparison_DeCasien.csv`. It is a reproduction/comparison subset, not an
+expanded canonical merge. Historical documentation that called it `EXPANDED` described an obsolete
+experiment; no `volumes_*_EXPANDED.csv` file is canonical or generated now.
 
 Species harmonization: `MacLeod_etal_2003_` and `Smaers_etal_2011_*` now carry species_key tokens
 `MacLeod2003` / `Smaers2011` (added to `_keys/Stephan/species_key.csv`), which lump great apes to the

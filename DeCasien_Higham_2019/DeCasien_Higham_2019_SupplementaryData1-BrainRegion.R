@@ -20,6 +20,11 @@
 
 ## ---- paths: self-contained (Rscript or RStudio; full repo or lone folder) ----
 .sp <- local({
+  # When sourced by volumes_compiled_DeCasien.R, commandArgs() still names the parent Rscript and
+  # may be relative to the parent's changed working directory. The caller supplies this absolute
+  # path so the comparison remains self-locating in both direct and sourced execution.
+  if (exists("decasien_comparison_script_path", inherits = TRUE))
+    return(normalizePath(get("decasien_comparison_script_path", inherits = TRUE)))
   a <- grep("^--file=", commandArgs(FALSE), value = TRUE)             # Rscript file.R
   if (length(a)) return(normalizePath(sub("^--file=", "", a[1])))
   if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
@@ -46,8 +51,8 @@ base <- base
 dec_dir <- file.path(base, "DeCasien_Higham_2019")
 tol <- 0.02
 ## Which merge to compare against. Default "" = the canonical core merge (volumes_*.csv).
-## volumes_compiled_DeCasien.R sets merge_suffix <- "_EXPANDED" before source()-ing this
-## script, to compare the DeCasien-inclusive EXPANDED merge instead. Outputs get the same suffix.
+## volumes_compiled_DeCasien.R sets merge_suffix <- "_DeCasien" before source()-ing this
+## script, to compare the isolated DeCasien source subset. Outputs get the same suffix.
 merge_suffix <- if (exists("merge_suffix")) merge_suffix else ""
 norm  <- function(s) str_squish(tolower(gsub("[._]", " ", s)))
 genus <- function(s) word(norm(s), 1)

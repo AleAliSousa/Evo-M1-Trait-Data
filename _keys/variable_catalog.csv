@@ -1515,9 +1515,9 @@ Johansen_etal_2024,Johansen_etal_2024_Table2,SV2A_R_SD,region,region,NA,SV2A.pmo
 Johansen_etal_2024,Johansen_etal_2024_Table2,LR_ratio,region,region,NA,ratio,ratio,mean,derived,Homo sapiens,left/right ratio of SV2A Bmax (derived)
 Johansen_etal_2024,Johansen_etal_2024_Table2,LR_ratio_SD,region,region,NA,ratio,ratio,sd,info,Homo sapiens,SD of the left/right ratio
 Karbowski__2007,Karbowski__2007_TableS1-S23,CMRgl,see structure col,see structure col,NA,CMR.umol/g/min,CMR.umol/g/min,mean,secondary,Mammals,cerebral metabolic rate of glucose (regional or whole-brain)
-Corticospinal_terminations,CST_termination_compilation,CST_termination_grade,spinal cord / M1 output,spinal cord / M1 output,NA,grade,grade,ordinal,secondary,Mammals,ordinal extent of primary-motor corticospinal termination in ventral horn or lamina IX
-Corticospinal_terminations,CST_termination_compilation,CM_connection_inference,spinal cord / M1 output,spinal cord / M1 output,NA,inference,inference,category,secondary,Mammals,paper's conservative inference about a corticomotoneuronal connection
-Corticospinal_terminations,CST_termination_compilation,CM_monosynaptic,spinal cord / M1 output,spinal cord / M1 output,NA,presence,presence,binary,secondary,Mammals,direct monosynaptic corticomotoneuronal connection established by the cited method
+Bortoff_Strick_1993,Bortoff_Strick_1993_Table1,CST_termination_grade,spinal cord / M1 output,spinal cord / M1 output,NA,grade,grade,ordinal,primary,Primates,ordinal extent of primary-motor corticospinal termination in ventral horn or lamina IX
+Bortoff_Strick_1993,Bortoff_Strick_1993_Table1,CM_connection_inference,spinal cord / M1 output,spinal cord / M1 output,NA,inference,inference,category,primary,Primates,the paper's own conservative inference about a corticomotoneuronal connection
+Bortoff_Strick_1993,Bortoff_Strick_1993_Table1,CM_monosynaptic,spinal cord / M1 output,spinal cord / M1 output,NA,presence,presence,binary,primary,Primates,direct monosynaptic corticomotoneuronal connection established by the cited method
 Semendeferi_Damasio_2000,Semendeferi_Damasio_2000_Table2,Temporal_Vol.mm3,temporal lobe,temporal lobe,NA,Vol.mm3,volume,NA,primary,"Hominoidea (Homo, Pan, Gorilla, Pongo, Hylobates)",temporal lobe volume
 Genoud_etal_2018,Genoud_etal_2018_TableS2,BMR.mlO2_h,whole body,whole body,NA,BMR.mlO2_h,BMR.mlO2_h,mean,secondary,Mammalia,basal metabolic rate
 Genoud_etal_2018,Genoud_etal_2018_TableS2,Body_mass.g,whole body,whole body,NA,Mass.g,mass,mean,secondary,Mammalia,body mass

@@ -1,0 +1,14 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species_printed,species name exactly as printed in the primary source,,,,info,Primates,Bortoff_Strick_1993_Table1,printed name preserved verbatim (invariant 3),paper prints Cebus apella
+species_sci,accepted binomial resolved from _keys/Stephan/species_key.csv under the Bortoff1993 token,,,,info,Primates,Bortoff_Strick_1993_Table1,Cebus apella resolves to Sapajus apella; join key for the behaviour merge,
+CST_termination_grade,ordinal extent of primary-motor corticospinal termination in ventral horn or lamina IX,spinal cord / M1 output,grade,ordinal,primary,Primates,Bortoff_Strick_1993_Table1,0 = absent or virtually absent; 1 = sparse/restricted; 2 = dense/extensive,curatorial 0-2 coding of the paper's own WGA-HRP terminal-field description
+CM_monosynaptic,direct monosynaptic corticomotoneuronal connection established by the cited method,spinal cord / M1 output,presence,binary,primary,Primates,Bortoff_Strick_1993_Table1,all-NA by design - light-microscopic terminal fields can prove neither presence nor absence,Bortoff & Strick 1993 Discussion pp. 5110-5111
+CM_connection_inference,the paper's own conservative inference about a corticomotoneuronal connection,spinal cord / M1 output,inference,category,primary,Primates,Bortoff_Strick_1993_Table1,likely or against; an inference and not a proven binary CM field,
+Segment_summary,spinal levels and termination pattern summarised from the source,,,,info,Primates,Bortoff_Strick_1993_Table1,,
+Method,experimental method used to observe the termination pattern,,,,method,Primates,Bortoff_Strick_1993_Table1,,WGA-HRP injected into primary motor cortex; anterograde transport
+Source,primary paper from which the row was coded,,,,info,Primates,Bortoff_Strick_1993_Table1,one paper per datum,
+DOI,digital object identifier of the source paper,,,,info,Primates,Bortoff_Strick_1993_Table1,,
+Source_location,exact source pages and figures supporting the code,,,,info,Primates,Bortoff_Strick_1993_Table1,every cell is traceable to a named page or figure,
+Evidence_summary,short paraphrase of the source evidence,,,,info,Primates,Bortoff_Strick_1993_Table1,no long quotations,
+Curatorial_note,scope or uncertainty note attached to the coding decision,,,,note,Primates,Bortoff_Strick_1993_Table1,,
+Method:coding,"CST_termination_grade is a 3-level ordinal assigned only from an explicit species-level terminal-field description; no unit conversion applies (sec 6). Broad review or clade-level statements are never coded.",,,,method,Primates,Bortoff_Strick_1993_Table1,rubric printed in Bortoff_Strick_1993_extract_snapshot.R and the README,

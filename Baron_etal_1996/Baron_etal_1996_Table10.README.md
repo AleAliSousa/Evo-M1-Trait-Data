@@ -36,5 +36,7 @@ derived and are not transcribed.
 - the Table 32 component-sum audit has a median absolute difference of 0.06 mm³
   from Table 10 telencephalon (rounding scale). Two much larger differences are
   visibly printed source inconsistencies, documented in the comparison report;
-- merge wiring is deferred until the 272-row Baron1996 taxonomy crosswalk and
-  overlap audit against earlier Stephan-collection bat sources are complete.
+- the 272-row taxonomy/overlap audit is complete and reproducible in
+  `Baron_etal_1996_overlap_taxonomy_audit.R`; it finds zero current core overlap. Merge wiring
+  remains on hold for seven historical taxon concepts and for explicit averaging of source rows
+  that collapse to the same species.

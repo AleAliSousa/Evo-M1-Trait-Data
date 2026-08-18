@@ -36,11 +36,11 @@ if (is.na(base))
        "repository (it reads __Public/comparative-data and _keys).", call. = FALSE)
 setwd(folder)
 
-## 1 Papers: item_name, team, year — the FULL volume collection ----
-## Includes the DeCasien & Higham 2019 brain-volume sources (added at the end) PLUS the rest of the
-## collection. The DeCasien-only subset and the merge-vs-DeCasien comparison live in
-## volumes_compiled_DeCasien.R. No per-paper species token/column: the species COLUMN is found from
-## the term map and species NAMES are resolved in step 4 (NCBI + curated overrides). See README.
+## 1 Papers: item_name, team, year — the canonical CORE volume collection ----
+## DeCasien & Higham 2019 and its source-matched expansion are deliberately excluded from the
+## canonical outputs. The dedicated subset/comparison lives in volumes_compiled_DeCasien.R.
+## No per-paper species token/column: the species COLUMN is found from the term map and species
+## NAMES are resolved in step 4 (NCBI + curated overrides). See README.
 papers <- tribble(
   ~item,                                  ~team,                ~year,
   # Stephan 1970 split one-item-per-printed-table (was bundled Tables1-6). Tables 1-3 =
@@ -83,6 +83,7 @@ papers <- tribble(
   "Matano_etal_1985_a_Table1",            "Stephan_collection", 1985,
   "Matano_etal_1985_b_Table1",            "Stephan_collection", 1985,
   "Matano__1986_TableI",                  "Stephan_collection", 1986,  # vestibular nuclei, ONE SIDE (_unilateral terms). Data role 'both': 27 spp. are Stephan 1981 TableXIII re-printed (identical to the digit), 19 spp. are new. No suppression needed -- Tier-1 most-recent supersedes 1981, and Baron_etal_1988_Table1 (bilateral, all 46 spp.) supersedes this in turn.
+  "Matano__1992_Tables1to4",              "Stephan_collection", 1992,  # inferior olive: four bilateral, fresh-volume-corrected measures; IOAc is the printed sum of IOAcMed + IOAcDors
   "Zilles_Rehkämper_1988_Table12-2",      "Stephan_collection", 1988,
   "deSousa_etal_2010_Table1",             "Zilles",             2010,
   "deSousa_etal_2013_Table1",             "Zilles",             2013,
@@ -94,40 +95,29 @@ papers <- tribble(
   "Bush_Allman_2004_b_TABLE1",            "Bush",               2004,
   "Bush_Allman_2004_a_Table2",            "Bush",               2004,  # ref 55 (frontal/neocortex GM+WM; 55 spp incl. Cheirogaleus/Mandrillus). Derives Neocortex_Vol.mm3 (GM+WM) in the reshape below. Same team 'Bush' as 2003/2004b (Tier-2, averaged).
   "Smaers_etal_2011_SupplementaryTable1", "Zilles",             2011,
+  "Smaers_etal_2011_SupplementaryTable2", "Zilles",             2011,  # raw anterior-frontal/prefrontal block; replaces the 2017 secondary republication
   "Ashwell__2020_SupplementaryTable",     "Ashwell",            2020,
   "Semendeferi_etal_1998_Table2",         "Zilles",             1998,
   "Semendeferi_etal_2001_Table2",         "Zilles",             2001,
   "Sherwood_etal_2005_Table1",            "Zilles",             2005,
   "Barger_etal_2007_TABLE1",              "Zilles",             2007,
   "Reep_etal_2007_Table1",                "Reep",               2007,
-
-  # --- DeCasien & Higham 2019 brain-volume sources (so this master includes them too) ---
-  # The DeCasien-only SUBSET + the merge-vs-DeCasien comparison live in volumes_compiled_DeCasien.R.
-  "Sherwood_etal_2004_TABLEI",            "Sherwood",           2004,  # ref 64
-  "Barks_etal_2014_TABLE1",               "Barks",              2014,  # ref 65
-  "Rilling_Insel_1998_Table1",            "RillingInsel",       1998,  # ref 62
-  "Stimpson_etal_2015_TableS1",           "Stimpson",           2015,  # ref 58
-  # DeCasien-extracted (MOESM3); NB 62-63 NEOCORTEX is Rilling & Insel 1999 (ref 63), not 1998.
-  "Barks_etal_2014_Fig4A",                "Barks",              2014,  # ref 65 regional volumes (Barks Fig 4A; replaces viaDeCasien)
-  "Rilling_Insel_1999_Table1",       "RillingInsel",       1999,  # ref 63 (neocortex)
-  "Stimpson_etal_2015_TableS2",       "Stimpson",           2015   # ref 58 (extra structures)
+  "Kverkova_etal_2018_TableS1",           "Kverkova",           2018
 )
+expanded_only_items <- c(
+  "Sherwood_etal_2004_TABLEI", "Barks_etal_2014_TABLE1", "Barks_etal_2014_Fig4A",
+  "Rilling_Insel_1998_Table1", "Rilling_Insel_1999_Table1",
+  "Stimpson_etal_2015_TableS1", "Stimpson_etal_2015_TableS2",
+  "DeCasien2019_MOESM3_meanvalue"
+)
+if (any(papers$item %in% expanded_only_items))
+  stop("Canonical core contains DeCasien/expanded-only item(s): ",
+       paste(intersect(papers$item, expanded_only_items), collapse = ", "), call. = FALSE)
 filecodes <- read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
 # Fallback encodings for items not yet given a row in __ReadMe.xlsx (the registry sheet is
 # maintained by hand to preserve its formula columns). Remove an entry once its row exists.
-enc_override <- c(# DOI-coded tables: registry resolves them, but keep DOI-encoded fallbacks so a
-                  # registry rename/case-drift can't send them to NA.tsv.
-                  "Rilling_Insel_1999_Table1" = "10.1006%2Fjhev.1999.0313_Table1",
-                  "Barks_etal_2014_Fig4A"          = "10.1002%2Fajpa.22646_Fig4A",
-                  "Stimpson_etal_2015_TableS2" = "10.1093%2Fscan%2Fnsv128_TableS2",
-                  # DeCasien primaries: these DO have __ReadMe.xlsx rows, but keep fallbacks so a
-                  # registry rename/case-drift can't silently send them to NA.tsv.
-                  "Sherwood_etal_2004_TABLEI"   = "10.1002%2Fajp.20048_TABLEI",
-                  "Barks_etal_2014_TABLE1"      = "10.1002%2Fajpa.22646_TABLE1",
-                  "Bush_Allman_2004_a_Table2"   = "10.1073%2Fpnas.0305760101_Table2",
+enc_override <- c("Bush_Allman_2004_a_Table2"   = "10.1073%2Fpnas.0305760101_Table2",
                   "Reep_etal_2007_Table1"       = "10.1159%2F000101491_Table1",
-                  "Rilling_Insel_1998_Table1"   = "10.1159%2F000006575_Table1",
-                  "Stimpson_etal_2015_TableS1"  = "10.1093%2Fscan%2Fnsv128_TableS1",
                   # Stephan 1970 split into 6 per-table items (ISBN-coded; The Primate Brain has no DOI).
                   "Stephan_etal_1970_Table1" = "ISBN%3A0390672505_TABLE1",
                   "Stephan_etal_1970_Table2" = "ISBN%3A0390672505_TABLE2",
@@ -316,6 +306,15 @@ paper_long <- function(row) {
       summarise(frontal_white_total_cm3 = mean(num(frontal_white_total_cm3)*1000, na.rm = TRUE),
                 frontal_grey_total_cm3  = mean(num(frontal_grey_total_cm3) *1000, na.rm = TRUE), .groups = "drop")
   }
+  if (it == "Smaers_etal_2011_SupplementaryTable2") {            # per-individual anterior-frontal section-5 block: preserve L/R and printed totals; cm3->mm3
+    meas <- c("sec5_white_left_cm3", "sec5_grey_left_cm3",
+              "sec5_white_right_cm3", "sec5_grey_right_cm3",
+              "sec5_white_total_cm3", "sec5_grey_total_cm3")
+    df <- df %>% group_by(Species) %>%
+      summarise(across(all_of(meas), ~ mean(num(.x) * 1000, na.rm = TRUE)), .groups = "drop")
+  }
+  if (it == "Kverkova_etal_2018_TableS1")                         # source brain mass is g; canonical merge stores mg
+    df <- df %>% mutate(`Brain_Mass.g` = num(`Brain_Mass.g`) * 1000)
   if (it == "Stephan_etal_1987_Table1")                          # NTO printed "0" = "not determinable with certainty" (data dictionary), not a true zero -> NA
     df <- df %>% mutate(Nucleus_tractus_olfactorius_mm3 =
             ifelse(num(Nucleus_tractus_olfactorius_mm3) == 0, NA_real_, num(Nucleus_tractus_olfactorius_mm3)))
@@ -323,56 +322,6 @@ paper_long <- function(row) {
     meas <- c("hemispheres_cm3","amygdaloid_complex_total","basolateral_total","lateral_total","basal_total","accessory_basal_total")
     df <- df %>% group_by(Species) %>%
       summarise(across(all_of(meas), ~ mean(num(.x) * 1000, na.rm = TRUE)), .groups = "drop")
-  }
-  if (it == "Sherwood_etal_2004_TABLEI") {                       # per-specimen great-ape volumes (cm3): fill species (NA = same as above),
-    meas <- c("Whole Brain","Neocortex","Hippocampus","Striatum","Thalamus","Cerebellum")  #  species-mean, cm3->mm3
-    df <- df %>%
-      mutate(Species = na_if(str_squish(as.character(Species)), "NA")) %>%
-      fill(Species, .direction = "down") %>%
-      mutate(Species = word(Species, 1, 2)) %>%
-      group_by(Species) %>%
-      summarise(across(all_of(meas), ~ mean(num(.x) * 1000, na.rm = TRUE)), .groups = "drop")
-  }
-  if (it == "Barks_etal_2014_TABLE1") {                          # per-specimen gorilla brain volume (cm3): subspecies->binomial, species-mean, cm3->mm3
-    df <- df %>% mutate(Species = word(str_squish(Species), 1, 2)) %>%
-      group_by(Species) %>%
-      summarise(`Brain volume (cm3)` = mean(num(`Brain volume (cm3)`) * 1000, na.rm = TRUE), .groups = "drop")
-  }
-  if (it == "Rilling_Insel_1998_Table1") {                       # one row/species; cc->mm3 (vol) and kg->g (body mass); harmonize Cercocebus
-    df <- df %>%
-      mutate(Species = ifelse(Species == "Cercocebus atys", "Cercocebus torquatus", Species),
-             brain_volume_cc      = num(brain_volume_cc)      * 1000,
-             cerebellum_volume_cc = num(cerebellum_volume_cc) * 1000,
-             body_weight_kg       = num(body_weight_kg)       * 1000)
-  }
-  if (it == "Rilling_Insel_1999_Table1") {                 # one row/species; derive total neocortex grey+white; convert MEANS and SDs
-    # cc->mm3 and kg->g for both the mean and its SD (SD scales linearly). Spinal-cord area
-    # mean/SD are already mm2 -> left for the generic num() (no conversion). No combined-neocortex
-    # SD is derived (SD of GM+WM needs the covariance, which the table does not report).
-    df <- df %>%
-      mutate(Species = ifelse(Species == "Cercocebus atys", "Cercocebus torquatus", Species),
-             Neocortex_GMWM = (num(neocortical_gray_matter_cc_mean) + num(cerebral_white_matter_cc_mean)) * 1000,
-             across(c(neocortical_gray_matter_cc_mean, cerebral_white_matter_cc_mean,
-                      brain_volume_cc_mean, body_weight_kg_mean,
-                      neocortical_gray_matter_cc_sd, cerebral_white_matter_cc_sd,
-                      brain_volume_cc_sd, body_weight_kg_sd), ~ num(.x) * 1000))
-  }
-  if (it == "Stimpson_etal_2015_TableS2") {                 # per-subject one-side amygdala volumes (whole + 4 subnuclei)
-    # The TSV carries one clean volume_cm3 per (subject, structure); SERT axon density is a
-    # separate column (ignored here) and the control regions (MTG, caudate) have no volume.
-    # Species mean of bilateral volume (one-side x2), cm3->mm3. Rows with no volume (control
-    # regions; subjects missing a volume) drop out via the NA filter. Columns pivot back to the
-    # raw structure names, which the term map maps to Amygdala[_<nucleus>]_Vol.mm3 (Barger naming).
-    df <- df %>%
-      mutate(volume_cm3 = num(volume_cm3)) %>%
-      filter(!is.na(volume_cm3)) %>%
-      group_by(Species, structure) %>%
-      summarise(v = mean(volume_cm3 * 2 * 1000, na.rm = TRUE), .groups = "drop") %>%
-      pivot_wider(names_from = structure, values_from = v)
-  }
-  if (it == "Stimpson_etal_2015_TableS1") {                 # per-subject brain MASS (g): species-mean, g->mg
-    df <- df %>% group_by(Species) %>%
-      summarise(brain_mass_g = mean(num(brain_mass_g) * 1000, na.rm = TRUE), .groups = "drop")
   }
   # --- generic wide -> long via standardized terms ---
   # The species column is found from the term map (the Original_Term whose Standardized_Term ==
@@ -484,32 +433,6 @@ long <- long %>%
   left_join(resolved %>% select(Source, Species_raw, Species_final),
             by = c("Source", "Species" = "Species_raw")) %>%
   mutate(Species = Species_final) %>% select(-Species_final)
-
-## 4b DeCasien Tier-2 gap-fill ----
-## DeCasien & Higham 2019 is a COMPILATION of primaries, not an independent measurement, so it is
-## ingested only where it fills a GENUINE coverage gap (a species x structure no primary in this
-## corpus measures). The comparison script (DeCasien_Higham_2019_SupplementaryData1-BrainRegion.R,
-## run separately) writes DeCasien_gapfill_candidates.csv listing exactly those cells (DeCasien mean
-## value, already on our canonical terms). We append them here as team "DeCasien" so they flow
-## through the SAME Tier-2 cross-team average as every other independent series. Because the emitter
-## tests coverage against non-DeCasien sources only, this loop is idempotent: re-running never
-## double-counts, and as new primaries are wired in the corresponding gap-fills drop out on the next
-## comparison run (primaries win). See DeCasien_ingestion_README.md. Missing file = no gap-fill
-## (e.g. first-ever run before the comparison has been executed) -> skipped with a note.
-gapfill_file <- file.path(base, "DeCasien_Higham_2019", "DeCasien_gapfill_candidates.csv")
-if (file.exists(gapfill_file)) {
-  gf <- read_csv(gapfill_file, show_col_types = FALSE)
-  if (nrow(gf)) {
-    gf_long <- gf %>% transmute(Species, Variable, Value,
-                                Source = "DeCasien2019_MOESM3_meanvalue", Team = "DeCasien",
-                                Year = 2019L)
-    # never overwrite a species x variable a primary already provides (belt-and-braces vs the
-    # emitter's own guard): drop any gap-fill row whose Species x Variable already exists in long
-    gf_long <- gf_long %>% anti_join(long %>% distinct(Species, Variable), by = c("Species","Variable"))
-    long <- bind_rows(long, gf_long)
-    message("DeCasien gap-fill: ingested ", nrow(gf_long), " species x structure cell(s) as team 'DeCasien'.")
-  } else message("DeCasien gap-fill: candidate file present but empty -> nothing to ingest.")
-} else message("DeCasien gap-fill: no candidate file yet (run the comparison script) -> skipped.")
 
 write_csv(long, "volumes_unfiltered.csv")
 is_mass <- function(v) v %in% c("Body_Mass.g","Brain_Mass.mg")

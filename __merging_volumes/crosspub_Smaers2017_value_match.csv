@@ -20,7 +20,7 @@ Pithecia_pithecia,frontal_motor_gray,0.819,Stephan_etal_1981_TableVI,Hippocampus
 Pongo_pygmaeus,frontal_motor_gray,6.353,(no match),,NA,NA
 Alouatta_seniculus,frontal_motor_white,0.866,(no match),,NA,NA
 Ateles_geoffroyi,frontal_motor_white,1.586,(no match),,NA,NA
-Cebus_albifrons,frontal_motor_white,1.425,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3,1430,0.35
+Cebus_albifrons,frontal_motor_white,1.425,Smaers_etal_2011_SupplementaryTable2,PrefrontalCortex_grey_matter_Vol.mm3,1430,0.35
 Cercopithecus_ascanius,frontal_motor_white,0.93,Frahm_Zilles_1994_Table1,Hippocampus_retrocommissuralis_Vol.mm3,939.4,1
 Cercopithecus_mitis,frontal_motor_white,0.946,(no match),,NA,NA
 Erythrocebus_patas,frontal_motor_white,1.848,(no match),,NA,NA
@@ -68,41 +68,41 @@ Pan_troglodytes_troglodytes,other_association_white,76.6,(no match),,NA,NA
 Papio_anubis,other_association_white,33.835,Stephan_etal_1981_TableXIII,Nucleus_vestibularis_descendens_unilateral_Vol.mm3,33.9,0.19
 Piliocolobus_badius,other_association_white,9.665,(no match),,NA,NA
 Pithecia_pithecia,other_association_white,4.2,(no match),,NA,NA
-Alouatta_seniculus,prefrontal_gray,1.015,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3,1010,0.5
-Ateles_geoffroyi,prefrontal_gray,2.773,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3,2770,0.11
-Cebus_albifrons,prefrontal_gray,1.434,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3,1430,0.28
+Alouatta_seniculus,prefrontal_gray,1.015,Smaers_etal_2011_SupplementaryTable2,PrefrontalCortex_grey_matter_Vol.mm3,1010,0.5
+Ateles_geoffroyi,prefrontal_gray,2.773,Smaers_etal_2011_SupplementaryTable2,PrefrontalCortex_grey_matter_Vol.mm3,2770,0.11
+Cebus_albifrons,prefrontal_gray,1.434,Smaers_etal_2011_SupplementaryTable2,PrefrontalCortex_grey_matter_Vol.mm3,1430,0.28
 Cercopithecus_ascanius,prefrontal_gray,1.154,Stephan_etal_1970_Table6,Hippocampus_Vol.mm3,1154,0
-Cercopithecus_mitis,prefrontal_gray,1.38,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3,1380,0
-Erythrocebus_patas,prefrontal_gray,1.56,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3,1560,0
+Cercopithecus_mitis,prefrontal_gray,1.38,Smaers_etal_2011_SupplementaryTable2,PrefrontalCortex_grey_matter_Vol.mm3,1380,0
+Erythrocebus_patas,prefrontal_gray,1.56,Smaers_etal_2011_SupplementaryTable2,PrefrontalCortex_grey_matter_Vol.mm3,1560,0
 Gorilla_gorilla_gorilla,prefrontal_gray,11.642,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3,11640,0.02
-Homo_sapiens,prefrontal_gray,46.323,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3,46323.75,0
-Hylobates_lar,prefrontal_gray,2.588,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3,2580,0.31
-Lagothrix_lagotricha,prefrontal_gray,1.887,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3,1890,0.16
-Lophocebus_albigena,prefrontal_gray,2.311,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3,2310,0.04
-Miopithecus_talapoin,prefrontal_gray,1.018,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3,1010,0.79
-Nasalis_larvatus,prefrontal_gray,0.813,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3,820,0.85
-Pan_paniscus,prefrontal_gray,7.956,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3,7950,0.08
-Pan_troglodytes_troglodytes,prefrontal_gray,14.209,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3,14210,0.01
-Papio_anubis,prefrontal_gray,3.921,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3,3920,0.03
-Piliocolobus_badius,prefrontal_gray,1.591,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3,1590,0.06
-Pithecia_pithecia,prefrontal_gray,0.6,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3,600,0
+Homo_sapiens,prefrontal_gray,46.323,Smaers_etal_2011_SupplementaryTable2,PrefrontalCortex_grey_matter_Vol.mm3,46323.75,0
+Hylobates_lar,prefrontal_gray,2.588,Smaers_etal_2011_SupplementaryTable2,PrefrontalCortex_grey_matter_Vol.mm3,2580,0.31
+Lagothrix_lagotricha,prefrontal_gray,1.887,Smaers_etal_2011_SupplementaryTable2,PrefrontalCortex_grey_matter_Vol.mm3,1890,0.16
+Lophocebus_albigena,prefrontal_gray,2.311,Smaers_etal_2011_SupplementaryTable2,PrefrontalCortex_grey_matter_Vol.mm3,2310,0.04
+Miopithecus_talapoin,prefrontal_gray,1.018,Smaers_etal_2011_SupplementaryTable2,PrefrontalCortex_grey_matter_Vol.mm3,1010,0.79
+Nasalis_larvatus,prefrontal_gray,0.813,Smaers_etal_2011_SupplementaryTable2,PrefrontalCortex_grey_matter_Vol.mm3,820,0.85
+Pan_paniscus,prefrontal_gray,7.956,Smaers_etal_2011_SupplementaryTable2,PrefrontalCortex_grey_matter_Vol.mm3,7950,0.08
+Pan_troglodytes_troglodytes,prefrontal_gray,14.209,Smaers_etal_2011_SupplementaryTable2,PrefrontalCortex_grey_matter_Vol.mm3,14210,0.01
+Papio_anubis,prefrontal_gray,3.921,Smaers_etal_2011_SupplementaryTable2,PrefrontalCortex_grey_matter_Vol.mm3,3920,0.03
+Piliocolobus_badius,prefrontal_gray,1.591,Smaers_etal_2011_SupplementaryTable2,PrefrontalCortex_grey_matter_Vol.mm3,1590,0.06
+Pithecia_pithecia,prefrontal_gray,0.6,Smaers_etal_2011_SupplementaryTable2,PrefrontalCortex_grey_matter_Vol.mm3,600,0
 Pongo_pygmaeus,prefrontal_gray,8.596,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3,8600,0.05
 Alouatta_seniculus,prefrontal_white,0.177,(no match),,NA,NA
-Ateles_geoffroyi,prefrontal_white,0.286,Smaers_etal_2011_SupplementaryTable2,sec5_white_total_cm3,290,1.38
+Ateles_geoffroyi,prefrontal_white,0.286,Smaers_etal_2011_SupplementaryTable2,PrefrontalCortex_white_matter_Vol.mm3,290,1.38
 Cebus_albifrons,prefrontal_white,0.257,(no match),,NA,NA
-Cercopithecus_ascanius,prefrontal_white,0.159,Smaers_etal_2011_SupplementaryTable2,sec5_white_total_cm3,160,0.62
+Cercopithecus_ascanius,prefrontal_white,0.159,Smaers_etal_2011_SupplementaryTable2,PrefrontalCortex_white_matter_Vol.mm3,160,0.62
 Cercopithecus_mitis,prefrontal_white,0.205,(no match),,NA,NA
-Erythrocebus_patas,prefrontal_white,0.272,Smaers_etal_2011_SupplementaryTable2,sec5_white_total_cm3,270,0.74
+Erythrocebus_patas,prefrontal_white,0.272,Smaers_etal_2011_SupplementaryTable2,PrefrontalCortex_white_matter_Vol.mm3,270,0.74
 Gorilla_gorilla_gorilla,prefrontal_white,2.608,Smaers_etal_2011_SupplementaryTable2,sec5_white_total_cm3,2610,0.08
-Homo_sapiens,prefrontal_white,28.135,Smaers_etal_2011_SupplementaryTable2,sec5_white_total_cm3,28136.25,0
-Hylobates_lar,prefrontal_white,0.51,Smaers_etal_2011_SupplementaryTable2,sec5_white_total_cm3,510,0
-Lagothrix_lagotricha,prefrontal_white,0.226,Smaers_etal_2011_SupplementaryTable2,sec5_white_total_cm3,230,1.74
+Homo_sapiens,prefrontal_white,28.135,Smaers_etal_2011_SupplementaryTable2,PrefrontalCortex_white_matter_Vol.mm3,28136.25,0
+Hylobates_lar,prefrontal_white,0.51,Smaers_etal_2011_SupplementaryTable2,PrefrontalCortex_white_matter_Vol.mm3,510,0
+Lagothrix_lagotricha,prefrontal_white,0.226,Smaers_etal_2011_SupplementaryTable2,PrefrontalCortex_white_matter_Vol.mm3,230,1.74
 Lophocebus_albigena,prefrontal_white,0.424,Frahm_Zilles_1994_Table1,HP_HS_fibers_Vol.mm3,426.37,0.56
 Miopithecus_talapoin,prefrontal_white,0.152,(no match),,NA,NA
 Nasalis_larvatus,prefrontal_white,0.074,(no match),,NA,NA
-Pan_paniscus,prefrontal_white,2.056,Smaers_etal_2011_SupplementaryTable2,sec5_white_total_cm3,2050,0.29
-Pan_troglodytes_troglodytes,prefrontal_white,4.607,Smaers_etal_2011_SupplementaryTable2,sec5_white_total_cm3,4610,0.07
-Papio_anubis,prefrontal_white,0.845,Smaers_etal_2011_SupplementaryTable2,sec5_white_total_cm3,850,0.59
+Pan_paniscus,prefrontal_white,2.056,Smaers_etal_2011_SupplementaryTable2,PrefrontalCortex_white_matter_Vol.mm3,2050,0.29
+Pan_troglodytes_troglodytes,prefrontal_white,4.607,Smaers_etal_2011_SupplementaryTable2,PrefrontalCortex_white_matter_Vol.mm3,4610,0.07
+Papio_anubis,prefrontal_white,0.845,Smaers_etal_2011_SupplementaryTable2,PrefrontalCortex_white_matter_Vol.mm3,850,0.59
 Piliocolobus_badius,prefrontal_white,0.201,Stephan_etal_1981_TableVIII,Tractus_opticus_Vol.mm3,201,0
 Pithecia_pithecia,prefrontal_white,0.081,(no match),,NA,NA
 Pongo_pygmaeus,prefrontal_white,2.52,Smaers_etal_2011_SupplementaryTable2,sec5_white_total_cm3,2520,0

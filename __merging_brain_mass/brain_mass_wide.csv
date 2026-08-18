@@ -60,6 +60,7 @@
 "Apodemus agrarius",0.2
 "Apodemus flavicollis",0.7
 "Apodemus sylvaticus",0.59
+"Ara ararauna",20.7297
 "Arctictis binturong",40.85
 "Arctocebus aureus",5.8776
 "Arctocebus calabarensis",6.9214
@@ -140,6 +141,8 @@
 "Cabassous unicinctus",23.68
 "Cacajao calvus",74.3
 "Cacajao melanocephalus",64.9
+"Cacatua galerita",10.1307
+"Cacatua goffini",8.2749
 "Caenolestes fuliginosus",0.68
 "Callicebus caligatus",17.25
 "Callicebus cupreus",17.1
@@ -171,8 +174,8 @@
 "Canis adustus",50.8
 "Canis aureus",72.2
 "Canis latrans",85.3675
-"Canis lupus",130
-"Canis lupus familiaris",63.5
+"Canis lupus",111.5267
+"Canis lupus familiaris",52.9258
 "Canis mesomelas",54.8
 "Capra hircus",105
 "Capra hircus domestica",106
@@ -284,12 +287,16 @@
 "Colobus polykomos",70.2
 "Colobus satanas",74.9
 "Colobus vellerosus",73.0708
+"Columba livia",2.0951
 "Condylura cristata",1.077
 "Conepatus chinga",18.7
 "Conepatus humboldtii",12.6
 "Conepatus leuconotus",14.4
 "Connochaetes taurinus",443
 "Cormura brevirostris",0.219
+"Corvus corax",14.1351
+"Corvus frugilegus",8.3571
+"Corvus mondeula",6.0233
 "Craseonycteris thonglongyai",0.087
 "Cratogeomys fumosus",4.19
 "Cremnomys cutchicus",1.67
@@ -310,6 +317,7 @@
 "Cryptotis parva",0.165
 "Cuniculus paca",35.22
 "Cuon alpinus",94.6
+"Cyanopica cyanus",3.3927
 "Cyclopes didactylus",4.29
 "Cynictis penicillata",11.505
 "Cynocephalus volans",6.2
@@ -397,6 +405,7 @@
 "Dorcopsulus macleayi",13.5
 "Dorcopsulus vanheurni",11.8
 "Dremomys rufigenis",5.41
+"Dromaius novaehollandiae",21.8108
 "Dromiciops gliroides",0.81
 "Dugong dugon",264.67
 "Echimys chrysurus",5.02
@@ -458,6 +467,7 @@
 "Felis manul",34.47
 "Felis nigripes",20.1
 "Felis silvestris",35.5
+"Forpus passerinus",1.1464
 "Fossa fossana",19.69
 "Fukomys anselli",1.25
 "Fukomys damarensis",1.39
@@ -486,6 +496,8 @@
 "Galictis cuja",18.8
 "Galictis vittatus",17.97
 "Galidia elegans",10.7
+"Gallus gallus",2.8195
+"Garrulus glandarius",4.5968
 "Gazella dorcas",70.8
 "Genetta angolensis",15.49
 "Genetta genetta",14
@@ -516,6 +528,7 @@
 "Glossophaga soricina",0.4127
 "Gorilla beringei",491.27
 "Gorilla gorilla",401.7371
+"Gracula religiosa",3.6696
 "Grammomys cometes",0.96
 "Grammomys poensis",1.55
 "Grampus griseus",2098.084
@@ -803,6 +816,7 @@
 "Melomys rufescens",1.29
 "Melonycteris melanops",1.288
 "Melonycteris woodfordi",1.0185
+"Melopsittacus undulatus",1.3165
 "Melursus ursinus",267
 "Mephitis mephitis",10.15
 "Meriones hurrianae",0.97
@@ -897,6 +911,7 @@
 "Mustela vison",7
 "Mydaus javanensis",19.49
 "Mydaus marchei",14.87
+"Myiopsitta monachus",3.4204
 "Myocastor coypus",17.09
 "Myodes gapperi",0.56
 "Myodes glareolus",0.52
@@ -956,6 +971,7 @@
 "Neotragus moschatus",32
 "Nesogale dobsoni",0.56
 "Nesogale talazaci",0.79
+"Nestor notabilis",13.5916
 "Neurotrichus gibbsii",0.91
 "Ningaui ridei",0.24
 "Ningaui yvonnae",0.26
@@ -987,6 +1003,7 @@
 "Nyctomys sumichrasti",1.08
 "Nyctophilus geoffroyi",0.167
 "Nyctophilus timoriensis",0.254
+"Nymphicus hollandicus",2.2053
 "Ochotona hyperborea",2.22
 "Ochotona princeps",2.39
 "Ochotona rufescens",2.75
@@ -1029,6 +1046,8 @@
 "Ototylomys phyllotis",1.33
 "Ourebia ourebi",58.3
 "Ovis ammon",140
+"Ovis ammon f. aries",111.7833
+"Ovis ammon musimon",133.025
 "Ovis aries",118
 "P. cynoceph",143.3
 "Pagophilus groenlandicus",275.5
@@ -1058,6 +1077,7 @@
 "Paranyctimene raptor",0.731
 "Parascalops breweri",0.759
 "Paraxerus cepapi",2.85
+"Parus major",0.9403
 "Pecari tajacu",101.5
 "Pectinator spekei",1.93
 "Pelea capreolus",121
@@ -1148,6 +1168,7 @@
 "Phyllostomus elongatus",0.885
 "Phyllostomus hastatus",1.5317
 "Physeter catodon",8183
+"Pica pica",5.4253
 "Piliocolobus badius",76.9625
 "Piliocolobus kirkii",57.25
 "Piliocolobus tephrosceles",70.9519
@@ -1168,6 +1189,7 @@
 "Planigale novaeguineae",0.27
 "Planigale tenuirostris",0.14
 "Platanista gangetica",290.5
+"Platycercus eximius",2.7159
 "Platyrrhinus brachycephalus",0.583
 "Platyrrhinus helleri",0.4897
 "Platyrrhinus infuscus",1.11
@@ -1243,6 +1265,8 @@
 "Pseudomys australis",1.16
 "Pseudomys hermannsburgensis",1.08
 "Pseudorca crassidens",4375.75
+"Psittacula eupatria",5.6994
+"Psittacus erithacus",8.8273
 "Pteromyscus pulverulentus",3.55
 "Pteronotus davyi",0.32
 "Pteronotus gymnonotus",0.343
@@ -1292,6 +1316,7 @@
 "Redunca arundinum",136.8
 "Redunca fulvorufula",109
 "Redunca redunca",123
+"Regulus regulus",0.3566
 "Reithrodontomys megalotis",0.4
 "Rhabdomys pumilio",0.69
 "Rhinoceros unicornis",786
@@ -1468,6 +1493,7 @@
 "Sturnira lilium",0.5843
 "Sturnira ludovici",0.676
 "Sturnira tildae",0.7255
+"Sturnus vulgaris",1.8553
 "Suncus etruscus",0.07
 "Suncus murinus",0.38
 "Sundamys muelleri",3.5
@@ -1477,6 +1503,7 @@
 "Sus scrofa domesticus",60.969
 "Swanscombe",1184.63
 "Syconycteris australis",0.592
+"Sylvia atricapilla",0.7743
 "Sylvicapra grimmia",77.2
 "Sylvilagus audubonii",6.07
 "Sylvilagus bachmani",6.58
@@ -1488,6 +1515,7 @@
 "Tachyglossus aculeatus",11
 "Tachyoryctes splendens",1.88
 "Tadarida aegyptiaca",0.393
+"Taenipygia guttata",0.4935
 "Talpa europaea",1.41
 "Tamandua tetradactyla",27.5
 "Tamias amoenus",1.39
@@ -1572,10 +1600,12 @@
 "Tupaia javanica",2.3
 "Tupaia minor",2.58
 "Tupaia sp.",3.04
+"Turdus merula",1.8872
 "Tursiops aduncus",1498
 "Tursiops truncatus",1531
 "Tylonycteris pachypus",0.077
 "Tylonycteris robustula",0.116
+"Tyto alba",5.6177
 "Uncia uncia",101.5
 "Uranomys ruddi",0.77
 "Urocyon cinereoargenteus",37.28

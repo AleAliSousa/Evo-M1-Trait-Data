@@ -61,6 +61,7 @@ or incompatible measure from entering a compilation.
 | Nudo et al. 1995 Table 3 | item + all merges | `EXCLUDED FROM MERGE` | Arithmetically derived from Table 2 and retained only for provenance. | [`Nudo_etal_1995_TABLE3.README.md`](Nudo_etal_1995/Nudo_etal_1995_TABLE3.README.md) |
 | Balzeau et al. 2012 Tables 3 and 5 | volume merge | `EXCLUDED FROM MERGE` | Size-corrected dimensions and derived percentages, not absolute volume measures. Other paper items remain usable. | [`Balzeau_etal_2012_Table3.ReadMe.md`](Balzeau_etal_2012/Balzeau_etal_2012_Table3.ReadMe.md), [`Balzeau_etal_2012_Table5.ReadMe.md`](Balzeau_etal_2012/Balzeau_etal_2012_Table5.ReadMe.md) |
 | Smaers et al. 2017 prefrontal measure | measure + volume merge | `SUPERSEDED` / duplicate | Duplicates Smaers 2011 Supplementary Table 2; use the earlier/raw source. This does not exclude the paper's other measures. | [`crosspub_Smaers2017_FINDINGS.md`](__merging_volumes/crosspub_Smaers2017_FINDINGS.md) |
+| Baron et al. 1996 Tables 10 and 32 | items + volume merge | `HOLD` | The completed audit finds no overlap with the current canonical core, but seven historical taxon concepts require curator decisions and all same-species source rows must be averaged within each Baron item before Tier-1 recency resolution. Keep both built/public items out of the merge until those gates are implemented. | [`Baron_etal_1996_overlap_taxonomy_audit.md`](Baron_etal_1996/Baron_etal_1996_overlap_taxonomy_audit.md) |
 
 Specimen-level duplicate decisions do **not** belong in this table. Record them in
 `_keys/specimen_crosswalk/` and the specimen notes, where one animal can be followed across papers.
@@ -82,3 +83,5 @@ Specimen-level duplicate decisions do **not** belong in this table. Record them 
 | 2026-08-15 | Navarrete 2016 built from the 167-species Dryad CSV. Source inspection showed integer subtype counts and no effort denominator, so the output does not claim corrected rates. |
 | 2026-08-15 | Olkowicz 2016 Dataset S1 built for all 28 avian species with `Class = Aves`; remains excluded from mammal merges. |
 | 2026-08-15 | Medina-González 2026 recorded as `HOLD` until its restricted Zenodo files are legitimately available. |
+| 2026-08-15 | Canonical volume outputs made explicitly core-only; DeCasien-only papers remain confined to the `_DeCasien` comparison subset. Matano 1992, Kverkova 2018 Table S1, and Smaers 2011 Supplementary Table 2 were added to the core. |
+| 2026-08-15 | Baron 1996 Tables 10/32 overlap/taxonomy audit completed: zero current core overlap; merge remains `HOLD` for seven taxon concepts and within-source aggregation. |

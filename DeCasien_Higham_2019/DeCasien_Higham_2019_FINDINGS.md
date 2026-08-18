@@ -5,11 +5,11 @@ Crosswalk covers the DeCasien regions that have a single clean counterpart in ou
 MOB, 'Striatum (incl. NAcc)' and 'Agranular Insula' are intentionally outside it.
 
 ## II.A value comparison
-- match (same species + same structure, value within tol): **1788**
-- match_taxonomy_variant (same structure + value, species NAME differs): **215** -> see II.B
-- species_mean_match (individuals unpublished, e.g. Barks; DeCasien's group mean == our species mean within tol): **30**
-- value_match_other_structure (value matched a different structure/label): **102**
-- decasien_only (no value match in the merge for that genus): **0**
+- match (same species + same structure, value within tol): **1757**
+- match_taxonomy_variant (same structure + value, species NAME differs): **185** -> see II.B
+- species_mean_match (individuals unpublished, e.g. Barks; DeCasien's group mean == our species mean within tol): **24**
+- value_match_other_structure (value matched a different structure/label): **119**
+- decasien_only (no value match in the merge for that genus): **30**
 - median |pct diff| on value matches: **0%** (most are 0% -> identical underlying Stephan data)
 - merge-only: ~86 Stephan-sourced (species x crosswalked structure) cells not present in DeCasien's sheet.
 

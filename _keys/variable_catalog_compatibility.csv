@@ -505,9 +505,9 @@ limb | percentage (relative),limb,percentage (relative),1,1,MedinaGonzalez_2026,
 medial cerebellum | volume,medial cerebellum,volume,1,1,Smaers_etal_2018,Mammalia (primates + outgroups),secondary,FALSE
 parieto-occipital | volume,parieto-occipital,volume,1,1,Semendeferi_Damasio_2000,"Hominoidea (Homo, Pan, Gorilla, Pongo, Hylobates)",primary,FALSE
 see structure col | CMR.umol/g/min,see structure col,CMR.umol/g/min,1,1,Karbowski__2007,Mammals,secondary,FALSE
-spinal cord / M1 output | grade,spinal cord / M1 output,grade,1,1,Corticospinal_terminations,Mammals,secondary,FALSE
-spinal cord / M1 output | inference,spinal cord / M1 output,inference,1,1,Corticospinal_terminations,Mammals,secondary,FALSE
-spinal cord / M1 output | presence,spinal cord / M1 output,presence,1,1,Corticospinal_terminations,Mammals,secondary,FALSE
+spinal cord / M1 output | grade,spinal cord / M1 output,grade,1,1,Bortoff_Strick_1993,Primates,primary,FALSE
+spinal cord / M1 output | inference,spinal cord / M1 output,inference,1,1,Bortoff_Strick_1993,Primates,primary,FALSE
+spinal cord / M1 output | presence,spinal cord / M1 output,presence,1,1,Bortoff_Strick_1993,Primates,primary,FALSE
 temporal lobe | volume,temporal lobe,volume,1,1,Semendeferi_Damasio_2000,"Hominoidea (Homo, Pan, Gorilla, Pongo, Hylobates)",primary,FALSE
 whole body | BMR.mlO2_h,whole body,BMR.mlO2_h,1,1,Genoud_etal_2018,Mammalia,secondary,FALSE
 whole body | percentage (relative),whole body,percentage (relative),1,1,Genoud_etal_2018,Mammalia,secondary,FALSE

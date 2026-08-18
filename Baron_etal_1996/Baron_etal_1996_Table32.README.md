@@ -33,5 +33,6 @@ size indices and are intentionally excluded.
   difference is 0.06 mm³. Two source inconsistencies exceed 1.5 mm³: *Anoura
   caudifer* (−1.86) and *Vampyrops brachycephalus* (+23.71); rendered pages
   confirm the transcribed values, so they are flagged rather than silently fixed;
-- merge wiring is deferred pending the same Baron1996 taxonomy/overlap audit as
-  Table 10.
+- the shared Baron1996 taxonomy/overlap audit is complete and finds zero current core overlap;
+  merge wiring remains on hold for seven historical taxon concepts and the required within-source
+  species averaging.

@@ -1,30 +1,30 @@
-species,species_as_published,code,collection,brain_mass_g,correction_factor,brain_volume_cm3,left_V1_volume_cm3,left_LGN_volume_cm3,neocortex_volume_cm3,cf_assumed,source,correction
-Homo sapiens,Homo sapiensb,14686,Zilles,1437,2.01,1387.1,9.4,0.2,1116.8,FALSE,deSousa_etal_2010,removed footnote b from species; Homo sapiens values differ slightly from Amunts et al. 2007a because of shrinkage-correction convention
-Homo sapiens,Homo sapiensb,1696,Zilles,1757,2.44,1695.9,10.4,0.3,,FALSE,deSousa_etal_2010,removed footnote b from species; Homo sapiens values differ slightly from Amunts et al. 2007a because of shrinkage-correction convention
-Homo sapiens,Homo sapiensb,18992,Zilles,1270,2.19,1225.9,7.5,0.2,,FALSE,deSousa_etal_2010,removed footnote b from species; Homo sapiens values differ slightly from Amunts et al. 2007a because of shrinkage-correction convention
-Homo sapiens,Homo sapiensb,20784,Zilles,1349,2.14,1302.1,8.5,0.2,,FALSE,deSousa_etal_2010,removed footnote b from species; Homo sapiens values differ slightly from Amunts et al. 2007a because of shrinkage-correction convention
-Homo sapiens,Homo sapiensb,28193,Zilles,1360,2.12,1312.7,9.2,0.2,,FALSE,deSousa_etal_2010,removed footnote b from species; Homo sapiens values differ slightly from Amunts et al. 2007a because of shrinkage-correction convention
-Homo sapiens,Homo sapiensb,295,Zilles,1046,1.6600000000000001,1009.7,5.3,0.1,,FALSE,deSousa_etal_2010,removed footnote b from species; Homo sapiens values differ slightly from Amunts et al. 2007a because of shrinkage-correction convention
-Homo sapiens,Homo sapiensb,SN382/81,Zilles,1142,2.05,1102.3,6,0.1,865.2,FALSE,deSousa_etal_2010,removed footnote b from species; Homo sapiens values differ slightly from Amunts et al. 2007a because of shrinkage-correction convention
-Homo sapiens,Homo sapiensb,54491,Zilles,1350,1.92,1303.1,7.6,0.2,,FALSE,deSousa_etal_2010,removed footnote b from species; Homo sapiens values differ slightly from Amunts et al. 2007a because of shrinkage-correction convention
-Homo sapiens,Homo sapiensb,5694,Zilles,1216,1.81,1173.7,5.4,0.1,,FALSE,deSousa_etal_2010,removed footnote b from species; Homo sapiens values differ slightly from Amunts et al. 2007a because of shrinkage-correction convention
-Homo sapiens,Homo sapiensb,6895,Zilles,1110,1.46,1071.4,7,0.2,,FALSE,deSousa_etal_2010,removed footnote b from species; Homo sapiens values differ slightly from Amunts et al. 2007a because of shrinkage-correction convention
-Pan troglodytes,Pan troglodytes,1548,Zilles,,2.05,265,2.8,0.1,198.3,TRUE,deSousa_etal_2010,removed footnote c from correction_factor; Pan troglodytes mean correction factor used because brain weight unknown
-Pan troglodytes,Pan troglodytes,Bathsheba 4/97,Zilles,359.5,2,347,4.7,0.2,262.8,FALSE,deSousa_etal_2010,
-Pan troglodytes,Pan troglodytes,Schimp 1,Zilles,440,1.99,424.7,4.8,0.2,297.4,FALSE,deSousa_etal_2010,
-Pan troglodytes,Pan troglodytes,YN89–278,Zilles,420,2.24,405.4,5.2,0.2,300.1,FALSE,deSousa_etal_2010,
-Pan troglodytes,Pan troglodytes,3.1.1.0.1,Yakovlev-Haleem,,2.05,261.1,4,0.1,,TRUE,deSousa_etal_2010,removed footnote c from correction_factor; Pan troglodytes mean correction factor used because brain weight unknown
-Pan troglodytes,Pan troglodytes,3.1.1.0.3,Yakovlev-Haleem,,2.05,276.8,3.8,0.1,,TRUE,deSousa_etal_2010,removed footnote c from correction_factor; Pan troglodytes mean correction factor used because brain weight unknown
-Pan troglodytes,Pan troglodytes,56_49,Welker,,2.05,257.7,3.7,,,TRUE,deSousa_etal_2010,removed footnote c from correction_factor; Pan troglodytes mean correction factor used because brain weight unknown
-Pan paniscus,Pan paniscus,YN86–137,Zilles,392,2.6,378.4,7.3,0.2,279,FALSE,deSousa_etal_2010,
-Pan paniscus,Pan paniscus,Zahlia 1/97,Zilles,324,1.6300000000000001,312.7,5.7,0.1,214.4,FALSE,deSousa_etal_2010,
-Pan paniscus,Pan paniscus,MCZ-2007-52,GWU,337,2.74,325.3,4.4,0.1,,FALSE,deSousa_etal_2010,
-Gorilla gorilla,Gorilla gorilla,YN82–140,Zilles,376,2.04,362.9,4,0.2,254.3,FALSE,deSousa_etal_2010,
-Gorilla gorilla,Gorilla gorilla,A375,Stephan,450,1.87,434.4,5.1,0.2,313.1,FALSE,deSousa_etal_2010,
-Pongo pygmaeus,Pongo pygmaeus,Harry 2/97,Zilles,440,2.2800000000000002,424.7,4.2,0.1,298.9,FALSE,deSousa_etal_2010,
-Pongo pygmaeus,Pongo pygmaeus,YN85–38,Zilles,369,2.08,356.2,3.5,0.1,268.5,FALSE,deSousa_etal_2010,
-Pongo pygmaeus,Pongo pygmaeus,Briggs 5/97,Zilles,345,2.15,333,4.7,0.2,240.3,FALSE,deSousa_etal_2010,
-Hylobates lar,Hylobates lar,YN81–146,Zilles,92,2.09,88.8,1.8,0.1,59.6,FALSE,deSousa_etal_2010,
-Hylobates lar,Hylobates lar,Disco 3/97,Zilles,120,2.16,115.8,2.3,0.1,77,FALSE,deSousa_etal_2010,
-Symphalangus syndactylus,Symphalagus syndactylus,880804,GWU,138.7,2.9099999999999997,133.9,2.7,,,FALSE,deSousa_etal_2010,corrected published spelling Symphalagus to Symphalangus
-Macaca fascicularis,Macaca fascicularis,ma22,Zilles,57.6,1.9,55.6,1.4,0.046,,FALSE,deSousa_etal_2010,left LGN printed as 0 (rounds to zero at 1 dp); set to 0.046 cm3 = Supp. Table 2 bilateral LGN 0.092 / 2 (left = bilateral/2)
+species,species_as_published,footnote_ref,code,collection,brain_mass_g,correction_factor,brain_volume_cm3,left_V1_volume_cm3,left_LGN_volume_cm3,neocortex_volume_cm3,cf_assumed,source,correction
+Homo sapiens,Homo sapiens,b,14686,Zilles,1437,2.01,1387.1,9.4,0.2,1116.8,FALSE,deSousa_etal_2010,footnote marker b split out of the species name into footnote_ref; Homo sapiens values differ slightly from Amunts et al. 2007a because of shrinkage-correction convention
+Homo sapiens,Homo sapiens,b,1696,Zilles,1757,2.44,1695.9,10.4,0.3,,FALSE,deSousa_etal_2010,footnote marker b split out of the species name into footnote_ref; Homo sapiens values differ slightly from Amunts et al. 2007a because of shrinkage-correction convention
+Homo sapiens,Homo sapiens,b,18992,Zilles,1270,2.19,1225.9,7.5,0.2,,FALSE,deSousa_etal_2010,footnote marker b split out of the species name into footnote_ref; Homo sapiens values differ slightly from Amunts et al. 2007a because of shrinkage-correction convention
+Homo sapiens,Homo sapiens,b,20784,Zilles,1349,2.14,1302.1,8.5,0.2,,FALSE,deSousa_etal_2010,footnote marker b split out of the species name into footnote_ref; Homo sapiens values differ slightly from Amunts et al. 2007a because of shrinkage-correction convention
+Homo sapiens,Homo sapiens,b,28193,Zilles,1360,2.12,1312.7,9.2,0.2,,FALSE,deSousa_etal_2010,footnote marker b split out of the species name into footnote_ref; Homo sapiens values differ slightly from Amunts et al. 2007a because of shrinkage-correction convention
+Homo sapiens,Homo sapiens,b,295,Zilles,1046,1.6600000000000001,1009.7,5.3,0.1,,FALSE,deSousa_etal_2010,footnote marker b split out of the species name into footnote_ref; Homo sapiens values differ slightly from Amunts et al. 2007a because of shrinkage-correction convention
+Homo sapiens,Homo sapiens,b,SN382/81,Zilles,1142,2.05,1102.3,6,0.1,865.2,FALSE,deSousa_etal_2010,footnote marker b split out of the species name into footnote_ref; Homo sapiens values differ slightly from Amunts et al. 2007a because of shrinkage-correction convention
+Homo sapiens,Homo sapiens,b,54491,Zilles,1350,1.92,1303.1,7.6,0.2,,FALSE,deSousa_etal_2010,footnote marker b split out of the species name into footnote_ref; Homo sapiens values differ slightly from Amunts et al. 2007a because of shrinkage-correction convention
+Homo sapiens,Homo sapiens,b,5694,Zilles,1216,1.81,1173.7,5.4,0.1,,FALSE,deSousa_etal_2010,footnote marker b split out of the species name into footnote_ref; Homo sapiens values differ slightly from Amunts et al. 2007a because of shrinkage-correction convention
+Homo sapiens,Homo sapiens,b,6895,Zilles,1110,1.46,1071.4,7,0.2,,FALSE,deSousa_etal_2010,footnote marker b split out of the species name into footnote_ref; Homo sapiens values differ slightly from Amunts et al. 2007a because of shrinkage-correction convention
+Pan troglodytes,Pan troglodytes,,1548,Zilles,,2.05,265,2.8,0.1,198.3,TRUE,deSousa_etal_2010,removed footnote c from correction_factor; Pan troglodytes mean correction factor used because brain weight unknown
+Pan troglodytes,Pan troglodytes,,Bathsheba 4/97,Zilles,359.5,2,347,4.7,0.2,262.8,FALSE,deSousa_etal_2010,
+Pan troglodytes,Pan troglodytes,,Schimp 1,Zilles,440,1.99,424.7,4.8,0.2,297.4,FALSE,deSousa_etal_2010,
+Pan troglodytes,Pan troglodytes,,YN89–278,Zilles,420,2.24,405.4,5.2,0.2,300.1,FALSE,deSousa_etal_2010,
+Pan troglodytes,Pan troglodytes,,3.1.1.0.1,Yakovlev-Haleem,,2.05,261.1,4,0.1,,TRUE,deSousa_etal_2010,removed footnote c from correction_factor; Pan troglodytes mean correction factor used because brain weight unknown
+Pan troglodytes,Pan troglodytes,,3.1.1.0.3,Yakovlev-Haleem,,2.05,276.8,3.8,0.1,,TRUE,deSousa_etal_2010,removed footnote c from correction_factor; Pan troglodytes mean correction factor used because brain weight unknown
+Pan troglodytes,Pan troglodytes,,56_49,Welker,,2.05,257.7,3.7,,,TRUE,deSousa_etal_2010,removed footnote c from correction_factor; Pan troglodytes mean correction factor used because brain weight unknown
+Pan paniscus,Pan paniscus,,YN86–137,Zilles,392,2.6,378.4,7.3,0.2,279,FALSE,deSousa_etal_2010,
+Pan paniscus,Pan paniscus,,Zahlia 1/97,Zilles,324,1.6300000000000001,312.7,5.7,0.1,214.4,FALSE,deSousa_etal_2010,
+Pan paniscus,Pan paniscus,,MCZ-2007-52,GWU,337,2.74,325.3,4.4,0.1,,FALSE,deSousa_etal_2010,
+Gorilla gorilla,Gorilla gorilla,,YN82–140,Zilles,376,2.04,362.9,4,0.2,254.3,FALSE,deSousa_etal_2010,
+Gorilla gorilla,Gorilla gorilla,,A375,Stephan,450,1.87,434.4,5.1,0.2,313.1,FALSE,deSousa_etal_2010,
+Pongo pygmaeus,Pongo pygmaeus,,Harry 2/97,Zilles,440,2.2800000000000002,424.7,4.2,0.1,298.9,FALSE,deSousa_etal_2010,
+Pongo pygmaeus,Pongo pygmaeus,,YN85–38,Zilles,369,2.08,356.2,3.5,0.1,268.5,FALSE,deSousa_etal_2010,
+Pongo pygmaeus,Pongo pygmaeus,,Briggs 5/97,Zilles,345,2.15,333,4.7,0.2,240.3,FALSE,deSousa_etal_2010,
+Hylobates lar,Hylobates lar,,YN81–146,Zilles,92,2.09,88.8,1.8,0.1,59.6,FALSE,deSousa_etal_2010,
+Hylobates lar,Hylobates lar,,Disco 3/97,Zilles,120,2.16,115.8,2.3,0.1,77,FALSE,deSousa_etal_2010,
+Symphalangus syndactylus,Symphalagus syndactylus,,880804,GWU,138.7,2.9099999999999997,133.9,2.7,,,FALSE,deSousa_etal_2010,corrected published spelling Symphalagus to Symphalangus
+Macaca fascicularis,Macaca fascicularis,,ma22,Zilles,57.6,1.9,55.6,1.4,0.046,,FALSE,deSousa_etal_2010,left LGN printed as 0 (rounds to zero at 1 dp); set to 0.046 cm3 = Supp. Table 2 bilateral LGN 0.092 / 2 (left = bilateral/2)

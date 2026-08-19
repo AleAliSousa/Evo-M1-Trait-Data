@@ -1,25 +1,25 @@
 Species,ref_column,Variable,reference,merged,status,ratio,likely,merge_source,merge_year,beat
 Pongo sp.,Agranular_volume_L,Agranular_insular_cortex_left_Vol.mm3,321.5,254.75,DIFFERS,0.7923794712286159,NA,Bauernfeind_etal_2013_Table1,2013,NA
 Pongo sp.,Agranular_volume_L,Agranular_insular_cortex_left_Vol.mm3,188,254.75,DIFFERS,1.3550531914893618,NA,Bauernfeind_etal_2013_Table1,2013,NA
-Gorilla sp.,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,9129,12062,DIFFERS,1.3212838207908861,NA,Frahm_etal_1984_Table1,1984,Smaers_etal_2017_TableS1part1 (2017) = 12062
-Homo sapiens,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,15247.5,14787,DIFFERS,0.9697983275946876,NA,Frahm_etal_1984_Table1,1984,Smaers_etal_2017_TableS1part1 (2017) = 14787
-Hylobates lar,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,4086.7,4574,DIFFERS,1.1192404629652286,NA,Frahm_etal_1984_Table1,1984,Smaers_etal_2017_TableS1part1 (2017) = 4574
-Pan troglodytes,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,8268.3,10593,DIFFERS,1.2811581582671168,NA,Frahm_etal_1984_Table1,1984,Smaers_etal_2017_TableS1part1 (2017) = 10593
-Pongo sp.,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,8233.7,8400,DIFFERS,1.0201974810838383,NA,Zilles_Rehkämper_1988_Table12-2,1988,Smaers_etal_2017_TableS1part1 (2017) = 7008
-Alouatta seniculus,Primary.visual.White.Smaers,Area_striata_white_matter_Vol.mm3,0.54,543,DIFFERS,1005.5555555555555,x1000 (cm3 vs mm3),Frahm_etal_1984_Table1,1984,Smaers_etal_2017_TableS1part1 (2017) = 543
-Ateles geoffroyi,Primary.visual.White.Smaers,Area_striata_white_matter_Vol.mm3,0.99,985,DIFFERS,994.9494949494949,x1000 (cm3 vs mm3),Frahm_etal_1984_Table1,1984,Smaers_etal_2017_TableS1part1 (2017) = 985
-Cebus albifrons,Primary.visual.White.Smaers,Area_striata_white_matter_Vol.mm3,0.94,939,DIFFERS,998.936170212766,x1000 (cm3 vs mm3),Frahm_etal_1984_Table1,1984,Smaers_etal_2017_TableS1part1 (2017) = 939
-Cercopithecus ascanius,Primary.visual.White.Smaers,Area_striata_white_matter_Vol.mm3,0.83,834,DIFFERS,1004.8192771084338,x1000 (cm3 vs mm3),Frahm_etal_1984_Table1,1984,Smaers_etal_2017_TableS1part1 (2017) = 834
-Cercopithecus mitis,Primary.visual.White.Smaers,Area_striata_white_matter_Vol.mm3,1.04,1042,DIFFERS,1001.9230769230769,x1000 (cm3 vs mm3),Frahm_etal_1984_Table1,1984,Smaers_etal_2017_TableS1part1 (2017) = 1042
-Gorilla sp.,Primary.visual.White.Smaers,Area_striata_white_matter_Vol.mm3,3.12,3123,DIFFERS,1000.9615384615385,x1000 (cm3 vs mm3),Frahm_etal_1984_Table1,1984,Smaers_etal_2017_TableS1part1 (2017) = 3123
-Homo sapiens,Primary.visual.White.Smaers,Area_striata_white_matter_Vol.mm3,5.44,5439,DIFFERS,999.8161764705882,x1000 (cm3 vs mm3),Frahm_etal_1984_Table1,1984,Smaers_etal_2017_TableS1part1 (2017) = 5439
-Hylobates lar,Primary.visual.White.Smaers,Area_striata_white_matter_Vol.mm3,1.18,1176,DIFFERS,996.6101694915254,x1000 (cm3 vs mm3),Frahm_etal_1984_Table1,1984,Smaers_etal_2017_TableS1part1 (2017) = 1176
-Lagothrix lagothricha,Primary.visual.White.Smaers,Area_striata_white_matter_Vol.mm3,1.23,1226,DIFFERS,996.7479674796748,x1000 (cm3 vs mm3),Frahm_etal_1984_Table1,1984,Smaers_etal_2017_TableS1part1 (2017) = 1226
-Lophocebus albigena,Primary.visual.White.Smaers,Area_striata_white_matter_Vol.mm3,1.41,1411,DIFFERS,1000.7092198581561,x1000 (cm3 vs mm3),Frahm_etal_1984_Table1,1984,Smaers_etal_2017_TableS1part1 (2017) = 1411
-Miopithecus talapoin,Primary.visual.White.Smaers,Area_striata_white_matter_Vol.mm3,0.71,709,DIFFERS,998.5915492957747,x1000 (cm3 vs mm3),Frahm_etal_1984_Table1,1984,Smaers_etal_2017_TableS1part1 (2017) = 709
-Pan troglodytes,Primary.visual.White.Smaers,Area_striata_white_matter_Vol.mm3,4,4004,DIFFERS,1001,x1000 (cm3 vs mm3),Frahm_etal_1984_Table1,1984,Smaers_etal_2017_TableS1part1 (2017) = 4004
-Papio anubis,Primary.visual.White.Smaers,Area_striata_white_matter_Vol.mm3,3.74,3740,DIFFERS,999.9999999999999,x1000 (cm3 vs mm3),Frahm_etal_1984_Table1,1984,Smaers_etal_2017_TableS1part1 (2017) = 3740
-Piliocolobus badius,Primary.visual.White.Smaers,Area_striata_white_matter_Vol.mm3,0.93,926,DIFFERS,995.6989247311827,x1000 (cm3 vs mm3),Frahm_etal_1984_Table1,1984,Smaers_etal_2017_TableS1part1 (2017) = 926
+Gorilla sp.,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,9129,12062,DIFFERS,1.3212838207908861,NA,Frahm_etal_1984_Table1,1984,NA
+Homo sapiens,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,15247.5,14787,DIFFERS,0.9697983275946876,NA,Frahm_etal_1984_Table1,1984,NA
+Hylobates lar,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,4086.7,4574,DIFFERS,1.1192404629652286,NA,Frahm_etal_1984_Table1,1984,NA
+Pan troglodytes,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,8268.3,10593,DIFFERS,1.2811581582671168,NA,Frahm_etal_1984_Table1,1984,NA
+Pongo sp.,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,8233.7,8400,DIFFERS,1.0201974810838383,NA,Zilles_Rehkämper_1988_Table12-2,1988,NA
+Alouatta seniculus,Primary.visual.White.Smaers,Area_striata_white_matter_Vol.mm3,0.54,543,DIFFERS,1005.5555555555555,x1000 (cm3 vs mm3),Frahm_etal_1984_Table1,1984,NA
+Ateles geoffroyi,Primary.visual.White.Smaers,Area_striata_white_matter_Vol.mm3,0.99,985,DIFFERS,994.9494949494949,x1000 (cm3 vs mm3),Frahm_etal_1984_Table1,1984,NA
+Cebus albifrons,Primary.visual.White.Smaers,Area_striata_white_matter_Vol.mm3,0.94,939,DIFFERS,998.936170212766,x1000 (cm3 vs mm3),Frahm_etal_1984_Table1,1984,NA
+Cercopithecus ascanius,Primary.visual.White.Smaers,Area_striata_white_matter_Vol.mm3,0.83,834,DIFFERS,1004.8192771084338,x1000 (cm3 vs mm3),Frahm_etal_1984_Table1,1984,NA
+Cercopithecus mitis,Primary.visual.White.Smaers,Area_striata_white_matter_Vol.mm3,1.04,1042,DIFFERS,1001.9230769230769,x1000 (cm3 vs mm3),Frahm_etal_1984_Table1,1984,NA
+Gorilla sp.,Primary.visual.White.Smaers,Area_striata_white_matter_Vol.mm3,3.12,3123,DIFFERS,1000.9615384615385,x1000 (cm3 vs mm3),Frahm_etal_1984_Table1,1984,NA
+Homo sapiens,Primary.visual.White.Smaers,Area_striata_white_matter_Vol.mm3,5.44,5439,DIFFERS,999.8161764705882,x1000 (cm3 vs mm3),Frahm_etal_1984_Table1,1984,NA
+Hylobates lar,Primary.visual.White.Smaers,Area_striata_white_matter_Vol.mm3,1.18,1176,DIFFERS,996.6101694915254,x1000 (cm3 vs mm3),Frahm_etal_1984_Table1,1984,NA
+Lagothrix lagothricha,Primary.visual.White.Smaers,Area_striata_white_matter_Vol.mm3,1.23,1226,DIFFERS,996.7479674796748,x1000 (cm3 vs mm3),Frahm_etal_1984_Table1,1984,NA
+Lophocebus albigena,Primary.visual.White.Smaers,Area_striata_white_matter_Vol.mm3,1.41,1411,DIFFERS,1000.7092198581561,x1000 (cm3 vs mm3),Frahm_etal_1984_Table1,1984,NA
+Miopithecus talapoin,Primary.visual.White.Smaers,Area_striata_white_matter_Vol.mm3,0.71,709,DIFFERS,998.5915492957747,x1000 (cm3 vs mm3),Frahm_etal_1984_Table1,1984,NA
+Pan troglodytes,Primary.visual.White.Smaers,Area_striata_white_matter_Vol.mm3,4,4004,DIFFERS,1001,x1000 (cm3 vs mm3),Frahm_etal_1984_Table1,1984,NA
+Papio anubis,Primary.visual.White.Smaers,Area_striata_white_matter_Vol.mm3,3.74,3740,DIFFERS,999.9999999999999,x1000 (cm3 vs mm3),Frahm_etal_1984_Table1,1984,NA
+Piliocolobus badius,Primary.visual.White.Smaers,Area_striata_white_matter_Vol.mm3,0.93,926,DIFFERS,995.6989247311827,x1000 (cm3 vs mm3),Frahm_etal_1984_Table1,1984,NA
 Pongo sp.,Body_weight,Body_Mass.g,35600,46325,DIFFERS,1.3012640449438202,NA,Bauernfeind_etal_2013_Table1,2013,NA
 Pongo sp.,Body_weight,Body_Mass.g,57050,46325,DIFFERS,0.8120070113935145,NA,Bauernfeind_etal_2013_Table1,2013,NA
 Alouatta caraya,Brain_weight,Brain_Mass.mg,55800,55.8,DIFFERS,0.001,/1000 (mm3 vs cm3),Bauernfeind_etal_2013_Table1,2013,NA
@@ -45,17 +45,6 @@ Cebus albifrons,Bulbus_olfactorius_accessorius,Bulbus_olfactorius_accessorius_Vo
 Pithecia monachus,Bulbus_olfactorius_accessorius,Bulbus_olfactorius_accessorius_Vol.mm3,0.85,0.846,DIFFERS,0.9952941176470588,NA,Stephan_etal_1981_TableVI,1981,NA
 Saguinus oedipus,Bulbus_olfactorius_accessorius,Bulbus_olfactorius_accessorius_Vol.mm3,0.41,0.406,DIFFERS,0.9902439024390245,NA,Stephan_etal_1981_TableVI,1981,NA
 Saimiri sciureus,Bulbus_olfactorius_accessorius,Bulbus_olfactorius_accessorius_Vol.mm3,0.99,0.985,DIFFERS,0.9949494949494949,NA,Stephan_etal_1981_TableVI,1981,NA
-Alouatta seniculus,Cerebellum,Cerebellum_Vol.mm3,5699,4150,DIFFERS,0.728197929461309,NA,MacLeod_etal_2003_Table2,2003,Stephan_etal_1981_TableIII (1981) = 5699
-Aotus trivirgatus,Cerebellum,Cerebellum_Vol.mm3,1873,1750,DIFFERS,0.9343299519487454,NA,MacLeod_etal_2003_Table2,2003,Stephan_etal_1981_TableIII (1981) = 1873
-Erythrocebus patas,Cerebellum,Cerebellum_Vol.mm3,8738,7900,DIFFERS,0.904097047379263,NA,MacLeod_etal_2003_Table2,2003,Stephan_etal_1981_TableIII (1981) = 8738
-Gorilla sp.,Cerebellum,Cerebellum_Vol.mm3,69249,68650,DIFFERS,0.9913500555964707,NA,MacLeod_etal_2003_Table1,2003,MacLeod_etal_2003_Table2 (2003) = 53200 | Stephan_etal_1981_TableIII (1981) = 69249
-Homo sapiens,Cerebellum,Cerebellum_Vol.mm3,137421,137016.666666667,DIFFERS,0.9970577034562913,NA,MacLeod_etal_2003_Table1,2003,MacLeod_etal_2003_Table2 (2003) = 140762.5 | Stephan_etal_1981_TableIII (1981) = 137421
-Hylobates lar,Cerebellum,Cerebellum_Vol.mm3,12078,11625,DIFFERS,0.9624937903626428,NA,MacLeod_etal_2003_Table1,2003,MacLeod_etal_2003_Table2 (2003) = 12640 | Stephan_etal_1981_TableIII (1981) = 12078
-Lophocebus albigena,Cerebellum,Cerebellum_Vol.mm3,10726,11700,DIFFERS,1.0908073839269066,NA,MacLeod_etal_2003_Table2,2003,Stephan_etal_1981_TableIII (1981) = 10726
-Macaca mulatta,Cerebellum,Cerebellum_Vol.mm3,8965,7233.33333333333,DIFFERS,0.8068414203383525,NA,MacLeod_etal_2003_Table1,2003,MacLeod_etal_2003_Table2 (2003) = 9600 | Stephan_etal_1981_TableIII (1981) = 8965
-Pan troglodytes,Cerebellum,Cerebellum_Vol.mm3,43663,47100,DIFFERS,1.0787165334493736,NA,MacLeod_etal_2003_Table1,2003,MacLeod_etal_2003_Table2 (2003) = 46457.1428571429 | Stephan_etal_1981_TableIII (1981) = 43663
-Pongo sp.,Cerebellum,Cerebellum_Vol.mm3,42900,49800,DIFFERS,1.1608391608391608,NA,MacLeod_etal_2003_Table1,2003,MacLeod_etal_2003_Table2 (2003) = 39275 | Zilles_Rehkämper_1988_Table12-2 (1988) = 42900
-Saimiri sciureus,Cerebellum,Cerebellum_Vol.mm3,2260,2050,DIFFERS,0.9070796460176991,NA,MacLeod_etal_2003_Table1,2003,MacLeod_etal_2003_Table2 (2003) = 1900 | Stephan_etal_1981_TableIII (1981) = 2260
 Cercopithecus ascanius,Complexus.vestibularis,Complexus_vestibularis_unilateral_Vol.mm3,52,52.1,DIFFERS,1.001923076923077,NA,Matano__1986_TableI,1986,Stephan_etal_1981_TableXIII (1981) = 52
 Hylobates lar,Complexus.vestibularis,Complexus_vestibularis_unilateral_Vol.mm3,59.3,59.4,DIFFERS,1.0016863406408094,NA,Matano__1986_TableI,1986,Stephan_etal_1981_TableXIII (1981) = 59.3
 Lagothrix lagothricha,Complexus.vestibularis,Complexus_vestibularis_unilateral_Vol.mm3,53,53.1,DIFFERS,1.0018867924528303,NA,Matano__1986_TableI,1986,Stephan_etal_1981_TableXIII (1981) = 53
@@ -154,44 +143,6 @@ Tarsius sp.,Corpus.subfornicale,Corpus_subfornicale_Vol.mm3,0.05,0.0482,DIFFERS,
 Varecia variegata,Corpus.subfornicale,Corpus_subfornicale_Vol.mm3,0.74,0.741,DIFFERS,1.0013513513513514,NA,Stephan_etal_1981_TableXV,1981,NA
 Pongo sp.,Dysgranular_volume_L,Dysgranular_insular_cortex_left_Vol.mm3,599.5,828.25,DIFFERS,1.3815679733110926,NA,Bauernfeind_etal_2013_Table1,2013,NA
 Pongo sp.,Dysgranular_volume_L,Dysgranular_insular_cortex_left_Vol.mm3,1057,828.25,DIFFERS,0.783585619678335,NA,Bauernfeind_etal_2013_Table1,2013,NA
-Alouatta seniculus,Frontal.motor.Gray,FrontalMotor_grey_matter_Vol.mm3,1.08,1077,DIFFERS,997.2222222222222,x1000 (cm3 vs mm3),Smaers_etal_2017_TableS1part1,2017,NA
-Ateles geoffroyi,Frontal.motor.Gray,FrontalMotor_grey_matter_Vol.mm3,3.12,3119,DIFFERS,999.6794871794872,x1000 (cm3 vs mm3),Smaers_etal_2017_TableS1part1,2017,NA
-Cebus albifrons,Frontal.motor.Gray,FrontalMotor_grey_matter_Vol.mm3,1.98,1977,DIFFERS,998.4848484848485,x1000 (cm3 vs mm3),Smaers_etal_2017_TableS1part1,2017,NA
-Cercopithecus ascanius,Frontal.motor.Gray,FrontalMotor_grey_matter_Vol.mm3,1.35,1351,DIFFERS,1000.7407407407406,x1000 (cm3 vs mm3),Smaers_etal_2017_TableS1part1,2017,NA
-Cercopithecus mitis,Frontal.motor.Gray,FrontalMotor_grey_matter_Vol.mm3,1.85,1852,DIFFERS,1001.081081081081,x1000 (cm3 vs mm3),Smaers_etal_2017_TableS1part1,2017,NA
-Erythrocebus patas,Frontal.motor.Gray,FrontalMotor_grey_matter_Vol.mm3,2.55,2552,DIFFERS,1000.7843137254903,x1000 (cm3 vs mm3),Smaers_etal_2017_TableS1part1,2017,NA
-Gorilla sp.,Frontal.motor.Gray,FrontalMotor_grey_matter_Vol.mm3,14.85,14854,DIFFERS,1000.2693602693603,x1000 (cm3 vs mm3),Smaers_etal_2017_TableS1part1,2017,NA
-Homo sapiens,Frontal.motor.Gray,FrontalMotor_grey_matter_Vol.mm3,29.01,29013,DIFFERS,1000.1034126163391,x1000 (cm3 vs mm3),Smaers_etal_2017_TableS1part1,2017,NA
-Hylobates lar,Frontal.motor.Gray,FrontalMotor_grey_matter_Vol.mm3,2.74,2744,DIFFERS,1001.4598540145985,x1000 (cm3 vs mm3),Smaers_etal_2017_TableS1part1,2017,NA
-Lagothrix lagothricha,Frontal.motor.Gray,FrontalMotor_grey_matter_Vol.mm3,2.43,2434,DIFFERS,1001.6460905349794,x1000 (cm3 vs mm3),Smaers_etal_2017_TableS1part1,2017,NA
-Lophocebus albigena,Frontal.motor.Gray,FrontalMotor_grey_matter_Vol.mm3,3.93,3926,DIFFERS,998.9821882951653,x1000 (cm3 vs mm3),Smaers_etal_2017_TableS1part1,2017,NA
-Miopithecus talapoin,Frontal.motor.Gray,FrontalMotor_grey_matter_Vol.mm3,0.91,906,DIFFERS,995.6043956043956,x1000 (cm3 vs mm3),Smaers_etal_2017_TableS1part1,2017,NA
-Nasalis larvatus,Frontal.motor.Gray,FrontalMotor_grey_matter_Vol.mm3,1.75,1749,DIFFERS,999.4285714285714,x1000 (cm3 vs mm3),Smaers_etal_2017_TableS1part1,2017,NA
-Pan paniscus,Frontal.motor.Gray,FrontalMotor_grey_matter_Vol.mm3,8.36,8356,DIFFERS,999.5215311004786,x1000 (cm3 vs mm3),Smaers_etal_2017_TableS1part1,2017,NA
-Pan troglodytes,Frontal.motor.Gray,FrontalMotor_grey_matter_Vol.mm3,13.41,13407,DIFFERS,999.7762863534675,x1000 (cm3 vs mm3),Smaers_etal_2017_TableS1part1,2017,NA
-Papio anubis,Frontal.motor.Gray,FrontalMotor_grey_matter_Vol.mm3,4.69,4686,DIFFERS,999.1471215351811,x1000 (cm3 vs mm3),Smaers_etal_2017_TableS1part1,2017,NA
-Piliocolobus badius,Frontal.motor.Gray,FrontalMotor_grey_matter_Vol.mm3,2.26,2260,DIFFERS,1000.0000000000001,x1000 (cm3 vs mm3),Smaers_etal_2017_TableS1part1,2017,NA
-Pithecia pithecia,Frontal.motor.Gray,FrontalMotor_grey_matter_Vol.mm3,0.82,819,DIFFERS,998.7804878048781,x1000 (cm3 vs mm3),Smaers_etal_2017_TableS1part1,2017,NA
-Pongo sp.,Frontal.motor.Gray,FrontalMotor_grey_matter_Vol.mm3,6.35,6353,DIFFERS,1000.4724409448819,x1000 (cm3 vs mm3),Smaers_etal_2017_TableS1part1,2017,NA
-Alouatta seniculus,Frontal.motor,FrontalMotor_white_matter_Vol.mm3,0.87,866,DIFFERS,995.4022988505748,x1000 (cm3 vs mm3),Smaers_etal_2017_TableS1part1,2017,NA
-Ateles geoffroyi,Frontal.motor,FrontalMotor_white_matter_Vol.mm3,1.59,1586,DIFFERS,997.4842767295597,x1000 (cm3 vs mm3),Smaers_etal_2017_TableS1part1,2017,NA
-Cebus albifrons,Frontal.motor,FrontalMotor_white_matter_Vol.mm3,1.43,1425,DIFFERS,996.5034965034965,x1000 (cm3 vs mm3),Smaers_etal_2017_TableS1part1,2017,NA
-Cercopithecus ascanius,Frontal.motor,FrontalMotor_white_matter_Vol.mm3,0.93,930,DIFFERS,1000,x1000 (cm3 vs mm3),Smaers_etal_2017_TableS1part1,2017,NA
-Cercopithecus mitis,Frontal.motor,FrontalMotor_white_matter_Vol.mm3,0.95,946,DIFFERS,995.7894736842105,x1000 (cm3 vs mm3),Smaers_etal_2017_TableS1part1,2017,NA
-Erythrocebus patas,Frontal.motor,FrontalMotor_white_matter_Vol.mm3,1.85,1848,DIFFERS,998.9189189189188,x1000 (cm3 vs mm3),Smaers_etal_2017_TableS1part1,2017,NA
-Gorilla sp.,Frontal.motor,FrontalMotor_white_matter_Vol.mm3,10.3,10295,DIFFERS,999.514563106796,x1000 (cm3 vs mm3),Smaers_etal_2017_TableS1part1,2017,NA
-Homo sapiens,Frontal.motor,FrontalMotor_white_matter_Vol.mm3,29.76,29755,DIFFERS,999.8319892473118,x1000 (cm3 vs mm3),Smaers_etal_2017_TableS1part1,2017,NA
-Hylobates lar,Frontal.motor,FrontalMotor_white_matter_Vol.mm3,1.74,1743,DIFFERS,1001.7241379310345,x1000 (cm3 vs mm3),Smaers_etal_2017_TableS1part1,2017,NA
-Lagothrix lagothricha,Frontal.motor,FrontalMotor_white_matter_Vol.mm3,1.63,1625,DIFFERS,996.9325153374234,x1000 (cm3 vs mm3),Smaers_etal_2017_TableS1part1,2017,NA
-Lophocebus albigena,Frontal.motor,FrontalMotor_white_matter_Vol.mm3,3.06,3063,DIFFERS,1000.9803921568628,x1000 (cm3 vs mm3),Smaers_etal_2017_TableS1part1,2017,NA
-Miopithecus talapoin,Frontal.motor,FrontalMotor_white_matter_Vol.mm3,0.55,548,DIFFERS,996.3636363636363,x1000 (cm3 vs mm3),Smaers_etal_2017_TableS1part1,2017,NA
-Nasalis larvatus,Frontal.motor,FrontalMotor_white_matter_Vol.mm3,0.93,933,DIFFERS,1003.2258064516128,x1000 (cm3 vs mm3),Smaers_etal_2017_TableS1part1,2017,NA
-Pan paniscus,Frontal.motor,FrontalMotor_white_matter_Vol.mm3,5.24,5243,DIFFERS,1000.5725190839694,x1000 (cm3 vs mm3),Smaers_etal_2017_TableS1part1,2017,NA
-Pan troglodytes,Frontal.motor,FrontalMotor_white_matter_Vol.mm3,12.78,12780,DIFFERS,1000,x1000 (cm3 vs mm3),Smaers_etal_2017_TableS1part1,2017,NA
-Papio anubis,Frontal.motor,FrontalMotor_white_matter_Vol.mm3,3.33,3325,DIFFERS,998.4984984984985,x1000 (cm3 vs mm3),Smaers_etal_2017_TableS1part1,2017,NA
-Piliocolobus badius,Frontal.motor,FrontalMotor_white_matter_Vol.mm3,1.32,1317,DIFFERS,997.7272727272726,x1000 (cm3 vs mm3),Smaers_etal_2017_TableS1part1,2017,NA
-Pithecia pithecia,Frontal.motor,FrontalMotor_white_matter_Vol.mm3,0.5,496,DIFFERS,992,x1000 (cm3 vs mm3),Smaers_etal_2017_TableS1part1,2017,NA
-Pongo sp.,Frontal.motor,FrontalMotor_white_matter_Vol.mm3,4.75,4745,DIFFERS,998.9473684210526,x1000 (cm3 vs mm3),Smaers_etal_2017_TableS1part1,2017,NA
 Pongo sp.,Granular_volume_L,Granular_insular_cortex_left_Vol.mm3,218.5,208.75,DIFFERS,0.9553775743707094,NA,Bauernfeind_etal_2013_Table1,2013,NA
 Pongo sp.,Granular_volume_L,Granular_insular_cortex_left_Vol.mm3,199,208.75,DIFFERS,1.0489949748743719,NA,Bauernfeind_etal_2013_Table1,2013,NA
 Gorilla sp.,Total_insula_volume_L,Insula_left_Vol.mm3,2146,2145.5,DIFFERS,0.999767008387698,NA,Bauernfeind_etal_2013_Table1,2013,NA
@@ -235,26 +186,21 @@ Tarsius sp.,Nucleus_tractus_olfactorius,Nucleus_tractus_olfactorius_Vol.mm3,0.08
 Lepilemur ruficaudatus,Nucleus.vestibularis.lateralis,Nucleus_vestibularis_lateralis_unilateral_Vol.mm3,2.3,2.38,DIFFERS,1.0347826086956522,NA,Matano__1986_TableI,1986,Stephan_etal_1981_TableXIII (1981) = 2.38
 Microcebus murinus,Nucleus.vestibularis.superior,Nucleus_vestibularis_superior_unilateral_Vol.mm3,0.68,0.679,DIFFERS,0.9985294117647059,NA,Matano__1986_TableI,1986,Stephan_etal_1981_TableXIII (1981) = 0.679
 Tarsius sp.,Nucleus.vestibularis.superior,Nucleus_vestibularis_superior_unilateral_Vol.mm3,0.76,0.759,DIFFERS,0.9986842105263158,NA,Matano__1986_TableI,1986,Stephan_etal_1981_TableXIII (1981) = 0.759
-Alouatta seniculus,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,49009,37400,DIFFERS,0.7631251402803567,NA,MacLeod_etal_2003_Table2,2003,Stephan_etal_1981_TableIII (1981) = 49009
-Aotus trivirgatus,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,16195,19125,DIFFERS,1.1809200370484718,NA,MacLeod_etal_2003_Table2,2003,Stephan_etal_1981_TableIII (1981) = 16195
 Ateles geoffroyi,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,101034,102700,DIFFERS,1.0164894985846349,NA,Bauernfeind_etal_2013_Table1,2013,Stephan_etal_1981_TableIII (1981) = 101034
 Avahi occidentalis,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,9124,9256.8,DIFFERS,1.0145550197281894,NA,Bauernfeind_etal_2013_Table1,2013,Stephan_etal_1981_TableII (1981) = 9124
 Cebus albifrons,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,66939,77027,DIFFERS,1.1507043726377746,NA,Bauernfeind_etal_2013_Table1,2013,Stephan_etal_1981_TableIII (1981) = 66939
 Cercopithecus mitis,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,70564,69112,DIFFERS,0.9794229352077547,NA,Bauernfeind_etal_2013_Table1,2013,Stephan_etal_1981_TableIII (1981) = 70564
-Erythrocebus patas,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,103167,89000,DIFFERS,0.8626789574185544,NA,MacLeod_etal_2003_Table2,2003,Stephan_etal_1981_TableIII (1981) = 103167
 Galagoides demidoff,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,3203,3185.3,DIFFERS,0.9944739306899782,NA,Bauernfeind_etal_2013_Table1,2013,Stephan_etal_1981_TableII (1981) = 3203
-Gorilla sp.,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,470359,401785,DIFFERS,0.8542092316719783,NA,Bauernfeind_etal_2013_Table1,2013,deSousa_etal_2010_Table1 (2010) = 398650 | MacLeod_etal_2003_Table1 (2003) = 397300 | MacLeod_etal_2003_Table2 (2003) = 403933.333333333 | Stephan_etal_1981_TableIII (1981) = 470359
-Homo sapiens,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,1251847,1357820,DIFFERS,1.0846533162598944,NA,Bauernfeind_etal_2013_Table1,2013,deSousa_etal_2010_Table1 (2010) = 1258390 | MacLeod_etal_2003_Table1 (2003) = 1298833.33333333 | MacLeod_etal_2003_Table2 (2003) = 1239825 | Stephan_etal_1981_TableIII (1981) = 1251847
-Hylobates lar,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,97505,88803,DIFFERS,0.9107532947028357,NA,Bauernfeind_etal_2013_Table1,2013,deSousa_etal_2010_Table1 (2010) = 102300 | MacLeod_etal_2003_Table1 (2003) = 83025 | MacLeod_etal_2003_Table2 (2003) = 98040 | Stephan_etal_1981_TableIII (1981) = 97505
+Gorilla sp.,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,470359,401785,DIFFERS,0.8542092316719783,NA,Bauernfeind_etal_2013_Table1,2013,deSousa_etal_2010_Table1 (2010) = 398650 | Stephan_etal_1981_TableIII (1981) = 470359
+Homo sapiens,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,1251847,1357820,DIFFERS,1.0846533162598944,NA,Bauernfeind_etal_2013_Table1,2013,deSousa_etal_2010_Table1 (2010) = 1258390 | Stephan_etal_1981_TableIII (1981) = 1251847
+Hylobates lar,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,97505,88803,DIFFERS,0.9107532947028357,NA,Bauernfeind_etal_2013_Table1,2013,deSousa_etal_2010_Table1 (2010) = 102300 | Stephan_etal_1981_TableIII (1981) = 97505
 Indri indri,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,36285,32481,DIFFERS,0.895163290615957,NA,Bauernfeind_etal_2013_Table1,2013,Stephan_etal_1981_TableII (1981) = 36285
-Lophocebus albigena,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,97603,106660,DIFFERS,1.0927942788643792,NA,Bauernfeind_etal_2013_Table1,2013,MacLeod_etal_2003_Table2 (2003) = 112000 | Stephan_etal_1981_TableIII (1981) = 97603
+Lophocebus albigena,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,97603,106660,DIFFERS,1.0927942788643792,NA,Bauernfeind_etal_2013_Table1,2013,Stephan_etal_1981_TableIII (1981) = 97603
 Loris tardigradus,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,6269,6612,DIFFERS,1.0547136704418567,NA,Bauernfeind_etal_2013_Table1,2013,Stephan_etal_1981_TableII (1981) = 6269
-Macaca mulatta,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,87896,84880,DIFFERS,0.9656867206698826,NA,MacLeod_etal_2003_Table1,2003,MacLeod_etal_2003_Table2 (2003) = 104750 | Stephan_etal_1981_TableIII (1981) = 87896
-Pan troglodytes,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,382103,330790,DIFFERS,0.8657089842267661,NA,Bauernfeind_etal_2013_Table1,2013,deSousa_etal_2010_Table1 (2010) = 319671.428571429 | MacLeod_etal_2003_Table1 (2003) = 334500 | MacLeod_etal_2003_Table2 (2003) = 375142.857142857 | Stephan_etal_1981_TableIII (1981) = 382103
+Pan troglodytes,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,382103,330790,DIFFERS,0.8657089842267661,NA,Bauernfeind_etal_2013_Table1,2013,deSousa_etal_2010_Table1 (2010) = 319671.428571429 | Stephan_etal_1981_TableIII (1981) = 382103
 Perodicticus potto,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,13212,11100,DIFFERS,0.8401453224341507,NA,Bauernfeind_etal_2013_Table1,2013,Stephan_etal_1981_TableII (1981) = 13212
 Piliocolobus badius,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,73818,72394,DIFFERS,0.9807093120919017,NA,Bauernfeind_etal_2013_Table1,2013,Stephan_etal_1981_TableIII (1981) = 73818
 Saguinus oedipus,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,9537,8938.2,DIFFERS,0.9372129600503304,NA,Bauernfeind_etal_2013_Table1,2013,Stephan_etal_1981_TableIII (1981) = 9537
-Saimiri sciureus,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,22572,23100,DIFFERS,1.023391812865497,NA,MacLeod_etal_2003_Table1,2003,MacLeod_etal_2003_Table2 (2003) = 19850 | Stephan_etal_1981_TableIII (1981) = 22572
 Varecia variegata,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,29713,30405,DIFFERS,1.0232894692558812,NA,Bauernfeind_etal_2013_Table1,2013,Stephan_etal_1981_TableII (1981) = 29713
 Pongo sp.,FI_volume_L,fronto_insular_cortex_left_Vol.mm3,19.5,39.75,DIFFERS,2.0384615384615383,x2 (one side vs both),Bauernfeind_etal_2013_Table1,2013,NA
 Pongo sp.,FI_volume_L,fronto_insular_cortex_left_Vol.mm3,60,39.75,DIFFERS,0.6625,NA,Bauernfeind_etal_2013_Table1,2013,NA
@@ -263,44 +209,82 @@ Callithrix pygmaea,Agranular_volume_L,Agranular_insular_cortex_left_Vol.mm3,1,NA
 Macaca fascicularis,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,2713.3,NA,only_in_reference,NA,NA,NA,NA,NA
 Pan paniscus,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,11606.5,NA,only_in_reference,NA,NA,NA,NA,NA
 Symphalangus syndactylus,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,5468.9,NA,only_in_reference,NA,NA,NA,NA,NA
-Pithecia pithecia,Primary.visual.White.Smaers,Area_striata_white_matter_Vol.mm3,0.45,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 451
-Alouatta seniculus,Other.cortical.association.areas.Gray,AssociationCortex_grey_matter_Vol.mm3,12.39,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 12394
-Ateles geoffroyi,Other.cortical.association.areas.Gray,AssociationCortex_grey_matter_Vol.mm3,32.93,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 32933
-Cebus albifrons,Other.cortical.association.areas.Gray,AssociationCortex_grey_matter_Vol.mm3,21.02,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 21024
-Cercopithecus ascanius,Other.cortical.association.areas.Gray,AssociationCortex_grey_matter_Vol.mm3,16.06,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 16060
-Cercopithecus mitis,Other.cortical.association.areas.Gray,AssociationCortex_grey_matter_Vol.mm3,19.39,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 19385
-Gorilla sp.,Other.cortical.association.areas.Gray,AssociationCortex_grey_matter_Vol.mm3,125.54,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 125539
-Homo sapiens,Other.cortical.association.areas.Gray,AssociationCortex_grey_matter_Vol.mm3,271.89,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 271891
-Hylobates lar,Other.cortical.association.areas.Gray,AssociationCortex_grey_matter_Vol.mm3,28.42,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 28424
-Lagothrix lagothricha,Other.cortical.association.areas.Gray,AssociationCortex_grey_matter_Vol.mm3,24.19,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 24188
-Lophocebus albigena,Other.cortical.association.areas.Gray,AssociationCortex_grey_matter_Vol.mm3,29.1,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 29102
-Miopithecus talapoin,Other.cortical.association.areas.Gray,AssociationCortex_grey_matter_Vol.mm3,12.22,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 12218
-Pan troglodytes,Other.cortical.association.areas.Gray,AssociationCortex_grey_matter_Vol.mm3,112.75,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 112750
-Papio anubis,Other.cortical.association.areas.Gray,AssociationCortex_grey_matter_Vol.mm3,45.24,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 45240
-Piliocolobus badius,Other.cortical.association.areas.Gray,AssociationCortex_grey_matter_Vol.mm3,22.63,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 22629
-Pithecia pithecia,Other.cortical.association.areas.Gray,AssociationCortex_grey_matter_Vol.mm3,9.24,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 9242
-Pongo sp.,Other.cortical.association.areas.Gray,AssociationCortex_grey_matter_Vol.mm3,76.92,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 76924
-Alouatta seniculus,Other.cortical.association.areas.White,AssociationCortex_white_matter_Vol.mm3,4.21,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 4212
-Ateles geoffroyi,Other.cortical.association.areas.White,AssociationCortex_white_matter_Vol.mm3,10.33,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 10332
-Cebus albifrons,Other.cortical.association.areas.White,AssociationCortex_white_matter_Vol.mm3,12.05,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 12053
-Cercopithecus ascanius,Other.cortical.association.areas.White,AssociationCortex_white_matter_Vol.mm3,8.3,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 8297
-Cercopithecus mitis,Other.cortical.association.areas.White,AssociationCortex_white_matter_Vol.mm3,9.91,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 9911
-Gorilla sp.,Other.cortical.association.areas.White,AssociationCortex_white_matter_Vol.mm3,60.39,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 60386
-Homo sapiens,Other.cortical.association.areas.White,AssociationCortex_white_matter_Vol.mm3,258.22,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 258218
-Hylobates lar,Other.cortical.association.areas.White,AssociationCortex_white_matter_Vol.mm3,12.92,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 12915
-Lagothrix lagothricha,Other.cortical.association.areas.White,AssociationCortex_white_matter_Vol.mm3,12.5,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 12496
-Lophocebus albigena,Other.cortical.association.areas.White,AssociationCortex_white_matter_Vol.mm3,17.09,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 17092
-Miopithecus talapoin,Other.cortical.association.areas.White,AssociationCortex_white_matter_Vol.mm3,4.64,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 4642
-Pan troglodytes,Other.cortical.association.areas.White,AssociationCortex_white_matter_Vol.mm3,76.6,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 76600
-Papio anubis,Other.cortical.association.areas.White,AssociationCortex_white_matter_Vol.mm3,33.84,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 33835
-Piliocolobus badius,Other.cortical.association.areas.White,AssociationCortex_white_matter_Vol.mm3,9.67,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 9665
-Pithecia pithecia,Other.cortical.association.areas.White,AssociationCortex_white_matter_Vol.mm3,4.2,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 4200
+Pithecia pithecia,Primary.visual.White.Smaers,Area_striata_white_matter_Vol.mm3,0.45,NA,only_in_reference,NA,NA,NA,NA,NA
+Alouatta seniculus,Other.cortical.association.areas.Gray,AssociationCortex_grey_matter_Vol.mm3,12.39,NA,only_in_reference,NA,NA,NA,NA,NA
+Ateles geoffroyi,Other.cortical.association.areas.Gray,AssociationCortex_grey_matter_Vol.mm3,32.93,NA,only_in_reference,NA,NA,NA,NA,NA
+Cebus albifrons,Other.cortical.association.areas.Gray,AssociationCortex_grey_matter_Vol.mm3,21.02,NA,only_in_reference,NA,NA,NA,NA,NA
+Cercopithecus ascanius,Other.cortical.association.areas.Gray,AssociationCortex_grey_matter_Vol.mm3,16.06,NA,only_in_reference,NA,NA,NA,NA,NA
+Cercopithecus mitis,Other.cortical.association.areas.Gray,AssociationCortex_grey_matter_Vol.mm3,19.39,NA,only_in_reference,NA,NA,NA,NA,NA
+Gorilla sp.,Other.cortical.association.areas.Gray,AssociationCortex_grey_matter_Vol.mm3,125.54,NA,only_in_reference,NA,NA,NA,NA,NA
+Homo sapiens,Other.cortical.association.areas.Gray,AssociationCortex_grey_matter_Vol.mm3,271.89,NA,only_in_reference,NA,NA,NA,NA,NA
+Hylobates lar,Other.cortical.association.areas.Gray,AssociationCortex_grey_matter_Vol.mm3,28.42,NA,only_in_reference,NA,NA,NA,NA,NA
+Lagothrix lagothricha,Other.cortical.association.areas.Gray,AssociationCortex_grey_matter_Vol.mm3,24.19,NA,only_in_reference,NA,NA,NA,NA,NA
+Lophocebus albigena,Other.cortical.association.areas.Gray,AssociationCortex_grey_matter_Vol.mm3,29.1,NA,only_in_reference,NA,NA,NA,NA,NA
+Miopithecus talapoin,Other.cortical.association.areas.Gray,AssociationCortex_grey_matter_Vol.mm3,12.22,NA,only_in_reference,NA,NA,NA,NA,NA
+Pan troglodytes,Other.cortical.association.areas.Gray,AssociationCortex_grey_matter_Vol.mm3,112.75,NA,only_in_reference,NA,NA,NA,NA,NA
+Papio anubis,Other.cortical.association.areas.Gray,AssociationCortex_grey_matter_Vol.mm3,45.24,NA,only_in_reference,NA,NA,NA,NA,NA
+Piliocolobus badius,Other.cortical.association.areas.Gray,AssociationCortex_grey_matter_Vol.mm3,22.63,NA,only_in_reference,NA,NA,NA,NA,NA
+Pithecia pithecia,Other.cortical.association.areas.Gray,AssociationCortex_grey_matter_Vol.mm3,9.24,NA,only_in_reference,NA,NA,NA,NA,NA
+Pongo sp.,Other.cortical.association.areas.Gray,AssociationCortex_grey_matter_Vol.mm3,76.92,NA,only_in_reference,NA,NA,NA,NA,NA
+Alouatta seniculus,Other.cortical.association.areas.White,AssociationCortex_white_matter_Vol.mm3,4.21,NA,only_in_reference,NA,NA,NA,NA,NA
+Ateles geoffroyi,Other.cortical.association.areas.White,AssociationCortex_white_matter_Vol.mm3,10.33,NA,only_in_reference,NA,NA,NA,NA,NA
+Cebus albifrons,Other.cortical.association.areas.White,AssociationCortex_white_matter_Vol.mm3,12.05,NA,only_in_reference,NA,NA,NA,NA,NA
+Cercopithecus ascanius,Other.cortical.association.areas.White,AssociationCortex_white_matter_Vol.mm3,8.3,NA,only_in_reference,NA,NA,NA,NA,NA
+Cercopithecus mitis,Other.cortical.association.areas.White,AssociationCortex_white_matter_Vol.mm3,9.91,NA,only_in_reference,NA,NA,NA,NA,NA
+Gorilla sp.,Other.cortical.association.areas.White,AssociationCortex_white_matter_Vol.mm3,60.39,NA,only_in_reference,NA,NA,NA,NA,NA
+Homo sapiens,Other.cortical.association.areas.White,AssociationCortex_white_matter_Vol.mm3,258.22,NA,only_in_reference,NA,NA,NA,NA,NA
+Hylobates lar,Other.cortical.association.areas.White,AssociationCortex_white_matter_Vol.mm3,12.92,NA,only_in_reference,NA,NA,NA,NA,NA
+Lagothrix lagothricha,Other.cortical.association.areas.White,AssociationCortex_white_matter_Vol.mm3,12.5,NA,only_in_reference,NA,NA,NA,NA,NA
+Lophocebus albigena,Other.cortical.association.areas.White,AssociationCortex_white_matter_Vol.mm3,17.09,NA,only_in_reference,NA,NA,NA,NA,NA
+Miopithecus talapoin,Other.cortical.association.areas.White,AssociationCortex_white_matter_Vol.mm3,4.64,NA,only_in_reference,NA,NA,NA,NA,NA
+Pan troglodytes,Other.cortical.association.areas.White,AssociationCortex_white_matter_Vol.mm3,76.6,NA,only_in_reference,NA,NA,NA,NA,NA
+Papio anubis,Other.cortical.association.areas.White,AssociationCortex_white_matter_Vol.mm3,33.84,NA,only_in_reference,NA,NA,NA,NA,NA
+Piliocolobus badius,Other.cortical.association.areas.White,AssociationCortex_white_matter_Vol.mm3,9.67,NA,only_in_reference,NA,NA,NA,NA,NA
+Pithecia pithecia,Other.cortical.association.areas.White,AssociationCortex_white_matter_Vol.mm3,4.2,NA,only_in_reference,NA,NA,NA,NA,NA
 Macaca fascicularis,Body_weight,Body_Mass.g,2900,NA,only_in_reference,NA,NA,NA,NA,NA
 Avahi laniger,Capsula_interna,Capsula_interna_Vol.mm3,105,NA,only_in_reference,NA,NA,NA,NA,NA
 Callithrix pygmaea,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,16.9,NA,only_in_reference,NA,NA,NA,NA,NA
 Avahi laniger,Dysgranular_volume_L,Dysgranular_insular_cortex_left_Vol.mm3,18,NA,only_in_reference,NA,NA,NA,NA,NA
 Callithrix pygmaea,Dysgranular_volume_L,Dysgranular_insular_cortex_left_Vol.mm3,7,NA,only_in_reference,NA,NA,NA,NA,NA
 Avahi laniger,Epithalamus,Epithalamus_Vol.mm3,6.52,NA,only_in_reference,NA,NA,NA,NA,NA
+Alouatta seniculus,Frontal.motor.Gray,FrontalMotor_grey_matter_Vol.mm3,1.08,NA,only_in_reference,NA,NA,NA,NA,NA
+Ateles geoffroyi,Frontal.motor.Gray,FrontalMotor_grey_matter_Vol.mm3,3.12,NA,only_in_reference,NA,NA,NA,NA,NA
+Cebus albifrons,Frontal.motor.Gray,FrontalMotor_grey_matter_Vol.mm3,1.98,NA,only_in_reference,NA,NA,NA,NA,NA
+Cercopithecus ascanius,Frontal.motor.Gray,FrontalMotor_grey_matter_Vol.mm3,1.35,NA,only_in_reference,NA,NA,NA,NA,NA
+Cercopithecus mitis,Frontal.motor.Gray,FrontalMotor_grey_matter_Vol.mm3,1.85,NA,only_in_reference,NA,NA,NA,NA,NA
+Erythrocebus patas,Frontal.motor.Gray,FrontalMotor_grey_matter_Vol.mm3,2.55,NA,only_in_reference,NA,NA,NA,NA,NA
+Gorilla sp.,Frontal.motor.Gray,FrontalMotor_grey_matter_Vol.mm3,14.85,NA,only_in_reference,NA,NA,NA,NA,NA
+Homo sapiens,Frontal.motor.Gray,FrontalMotor_grey_matter_Vol.mm3,29.01,NA,only_in_reference,NA,NA,NA,NA,NA
+Hylobates lar,Frontal.motor.Gray,FrontalMotor_grey_matter_Vol.mm3,2.74,NA,only_in_reference,NA,NA,NA,NA,NA
+Lagothrix lagothricha,Frontal.motor.Gray,FrontalMotor_grey_matter_Vol.mm3,2.43,NA,only_in_reference,NA,NA,NA,NA,NA
+Lophocebus albigena,Frontal.motor.Gray,FrontalMotor_grey_matter_Vol.mm3,3.93,NA,only_in_reference,NA,NA,NA,NA,NA
+Miopithecus talapoin,Frontal.motor.Gray,FrontalMotor_grey_matter_Vol.mm3,0.91,NA,only_in_reference,NA,NA,NA,NA,NA
+Nasalis larvatus,Frontal.motor.Gray,FrontalMotor_grey_matter_Vol.mm3,1.75,NA,only_in_reference,NA,NA,NA,NA,NA
+Pan paniscus,Frontal.motor.Gray,FrontalMotor_grey_matter_Vol.mm3,8.36,NA,only_in_reference,NA,NA,NA,NA,NA
+Pan troglodytes,Frontal.motor.Gray,FrontalMotor_grey_matter_Vol.mm3,13.41,NA,only_in_reference,NA,NA,NA,NA,NA
+Papio anubis,Frontal.motor.Gray,FrontalMotor_grey_matter_Vol.mm3,4.69,NA,only_in_reference,NA,NA,NA,NA,NA
+Piliocolobus badius,Frontal.motor.Gray,FrontalMotor_grey_matter_Vol.mm3,2.26,NA,only_in_reference,NA,NA,NA,NA,NA
+Pithecia pithecia,Frontal.motor.Gray,FrontalMotor_grey_matter_Vol.mm3,0.82,NA,only_in_reference,NA,NA,NA,NA,NA
+Pongo sp.,Frontal.motor.Gray,FrontalMotor_grey_matter_Vol.mm3,6.35,NA,only_in_reference,NA,NA,NA,NA,NA
+Alouatta seniculus,Frontal.motor,FrontalMotor_white_matter_Vol.mm3,0.87,NA,only_in_reference,NA,NA,NA,NA,NA
+Ateles geoffroyi,Frontal.motor,FrontalMotor_white_matter_Vol.mm3,1.59,NA,only_in_reference,NA,NA,NA,NA,NA
+Cebus albifrons,Frontal.motor,FrontalMotor_white_matter_Vol.mm3,1.43,NA,only_in_reference,NA,NA,NA,NA,NA
+Cercopithecus ascanius,Frontal.motor,FrontalMotor_white_matter_Vol.mm3,0.93,NA,only_in_reference,NA,NA,NA,NA,NA
+Cercopithecus mitis,Frontal.motor,FrontalMotor_white_matter_Vol.mm3,0.95,NA,only_in_reference,NA,NA,NA,NA,NA
+Erythrocebus patas,Frontal.motor,FrontalMotor_white_matter_Vol.mm3,1.85,NA,only_in_reference,NA,NA,NA,NA,NA
+Gorilla sp.,Frontal.motor,FrontalMotor_white_matter_Vol.mm3,10.3,NA,only_in_reference,NA,NA,NA,NA,NA
+Homo sapiens,Frontal.motor,FrontalMotor_white_matter_Vol.mm3,29.76,NA,only_in_reference,NA,NA,NA,NA,NA
+Hylobates lar,Frontal.motor,FrontalMotor_white_matter_Vol.mm3,1.74,NA,only_in_reference,NA,NA,NA,NA,NA
+Lagothrix lagothricha,Frontal.motor,FrontalMotor_white_matter_Vol.mm3,1.63,NA,only_in_reference,NA,NA,NA,NA,NA
+Lophocebus albigena,Frontal.motor,FrontalMotor_white_matter_Vol.mm3,3.06,NA,only_in_reference,NA,NA,NA,NA,NA
+Miopithecus talapoin,Frontal.motor,FrontalMotor_white_matter_Vol.mm3,0.55,NA,only_in_reference,NA,NA,NA,NA,NA
+Nasalis larvatus,Frontal.motor,FrontalMotor_white_matter_Vol.mm3,0.93,NA,only_in_reference,NA,NA,NA,NA,NA
+Pan paniscus,Frontal.motor,FrontalMotor_white_matter_Vol.mm3,5.24,NA,only_in_reference,NA,NA,NA,NA,NA
+Pan troglodytes,Frontal.motor,FrontalMotor_white_matter_Vol.mm3,12.78,NA,only_in_reference,NA,NA,NA,NA,NA
+Papio anubis,Frontal.motor,FrontalMotor_white_matter_Vol.mm3,3.33,NA,only_in_reference,NA,NA,NA,NA,NA
+Piliocolobus badius,Frontal.motor,FrontalMotor_white_matter_Vol.mm3,1.32,NA,only_in_reference,NA,NA,NA,NA,NA
+Pithecia pithecia,Frontal.motor,FrontalMotor_white_matter_Vol.mm3,0.5,NA,only_in_reference,NA,NA,NA,NA,NA
+Pongo sp.,Frontal.motor,FrontalMotor_white_matter_Vol.mm3,4.75,NA,only_in_reference,NA,NA,NA,NA,NA
 Avahi laniger,Granular_volume_L,Granular_insular_cortex_left_Vol.mm3,13,NA,only_in_reference,NA,NA,NA,NA,NA
 Callithrix pygmaea,Granular_volume_L,Granular_insular_cortex_left_Vol.mm3,3,NA,only_in_reference,NA,NA,NA,NA,NA
 Avahi laniger,Hypothalamus,Hypothalamus_Vol.mm3,137,NA,only_in_reference,NA,NA,NA,NA,NA
@@ -349,50 +333,50 @@ Saguinus oedipus,Pons,Pons_Vol.mm3,50.9,NA,only_in_reference,NA,NA,NA,NA,NA
 Saimiri sciureus,Pons,Pons_Vol.mm3,135.2,NA,only_in_reference,NA,NA,NA,NA,NA
 Tarsius sp.,Pons,Pons_Vol.mm3,16.5,NA,only_in_reference,NA,NA,NA,NA,NA
 Varecia variegata,Pons,Pons_Vol.mm3,168.8,NA,only_in_reference,NA,NA,NA,NA,NA
-Alouatta seniculus,Prefrontal.Gray,PrefrontalCortex_grey_matter_Vol.mm3,1.02,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 1015
-Ateles geoffroyi,Prefrontal.Gray,PrefrontalCortex_grey_matter_Vol.mm3,2.77,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 2773
-Cebus albifrons,Prefrontal.Gray,PrefrontalCortex_grey_matter_Vol.mm3,1.43,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 1434
-Cercopithecus ascanius,Prefrontal.Gray,PrefrontalCortex_grey_matter_Vol.mm3,1.15,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 1154
-Cercopithecus mitis,Prefrontal.Gray,PrefrontalCortex_grey_matter_Vol.mm3,1.38,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 1380
-Erythrocebus patas,Prefrontal.Gray,PrefrontalCortex_grey_matter_Vol.mm3,1.56,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 1560
-Gorilla sp.,Prefrontal.Gray,PrefrontalCortex_grey_matter_Vol.mm3,11.64,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 11642
-Homo sapiens,Prefrontal.Gray,PrefrontalCortex_grey_matter_Vol.mm3,46.32,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 46323
-Hylobates lar,Prefrontal.Gray,PrefrontalCortex_grey_matter_Vol.mm3,2.59,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 2588
-Lagothrix lagothricha,Prefrontal.Gray,PrefrontalCortex_grey_matter_Vol.mm3,1.89,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 1887
-Lophocebus albigena,Prefrontal.Gray,PrefrontalCortex_grey_matter_Vol.mm3,2.31,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 2311
-Miopithecus talapoin,Prefrontal.Gray,PrefrontalCortex_grey_matter_Vol.mm3,1.02,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 1018
-Nasalis larvatus,Prefrontal.Gray,PrefrontalCortex_grey_matter_Vol.mm3,0.81,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 813
-Pan paniscus,Prefrontal.Gray,PrefrontalCortex_grey_matter_Vol.mm3,7.96,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 7956
-Pan troglodytes,Prefrontal.Gray,PrefrontalCortex_grey_matter_Vol.mm3,14.21,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 14209
-Papio anubis,Prefrontal.Gray,PrefrontalCortex_grey_matter_Vol.mm3,3.92,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 3921
-Piliocolobus badius,Prefrontal.Gray,PrefrontalCortex_grey_matter_Vol.mm3,1.59,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 1591
-Pithecia pithecia,Prefrontal.Gray,PrefrontalCortex_grey_matter_Vol.mm3,0.6,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 600
-Pongo sp.,Prefrontal.Gray,PrefrontalCortex_grey_matter_Vol.mm3,8.6,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 8596
-Alouatta seniculus,Prefrontal.White,PrefrontalCortex_white_matter_Vol.mm3,0.18,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 177
-Ateles geoffroyi,Prefrontal.White,PrefrontalCortex_white_matter_Vol.mm3,0.29,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 286
-Cebus albifrons,Prefrontal.White,PrefrontalCortex_white_matter_Vol.mm3,0.26,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 257
-Cercopithecus ascanius,Prefrontal.White,PrefrontalCortex_white_matter_Vol.mm3,0.16,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 159
-Cercopithecus mitis,Prefrontal.White,PrefrontalCortex_white_matter_Vol.mm3,0.21,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 205
-Erythrocebus patas,Prefrontal.White,PrefrontalCortex_white_matter_Vol.mm3,0.27,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 272
-Gorilla sp.,Prefrontal.White,PrefrontalCortex_white_matter_Vol.mm3,2.61,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 2608
-Homo sapiens,Prefrontal.White,PrefrontalCortex_white_matter_Vol.mm3,28.14,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 28135
-Hylobates lar,Prefrontal.White,PrefrontalCortex_white_matter_Vol.mm3,0.51,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 510
-Lagothrix lagothricha,Prefrontal.White,PrefrontalCortex_white_matter_Vol.mm3,0.23,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 226
-Lophocebus albigena,Prefrontal.White,PrefrontalCortex_white_matter_Vol.mm3,0.42,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 424
-Miopithecus talapoin,Prefrontal.White,PrefrontalCortex_white_matter_Vol.mm3,0.15,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 152
-Nasalis larvatus,Prefrontal.White,PrefrontalCortex_white_matter_Vol.mm3,0.07,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 74
-Pan paniscus,Prefrontal.White,PrefrontalCortex_white_matter_Vol.mm3,2.06,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 2056
-Pan troglodytes,Prefrontal.White,PrefrontalCortex_white_matter_Vol.mm3,4.61,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 4607
-Papio anubis,Prefrontal.White,PrefrontalCortex_white_matter_Vol.mm3,0.85,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 845
-Piliocolobus badius,Prefrontal.White,PrefrontalCortex_white_matter_Vol.mm3,0.2,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 201
-Pithecia pithecia,Prefrontal.White,PrefrontalCortex_white_matter_Vol.mm3,0.08,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 81
-Pongo sp.,Prefrontal.White,PrefrontalCortex_white_matter_Vol.mm3,2.52,NA,only_in_reference,NA,NA,NA,NA,Smaers_etal_2017_TableS1part1 (2017) = 2520
+Alouatta seniculus,Prefrontal.Gray,PrefrontalCortex_grey_matter_Vol.mm3,1.02,NA,only_in_reference,NA,NA,NA,NA,NA
+Ateles geoffroyi,Prefrontal.Gray,PrefrontalCortex_grey_matter_Vol.mm3,2.77,NA,only_in_reference,NA,NA,NA,NA,NA
+Cebus albifrons,Prefrontal.Gray,PrefrontalCortex_grey_matter_Vol.mm3,1.43,NA,only_in_reference,NA,NA,NA,NA,NA
+Cercopithecus ascanius,Prefrontal.Gray,PrefrontalCortex_grey_matter_Vol.mm3,1.15,NA,only_in_reference,NA,NA,NA,NA,NA
+Cercopithecus mitis,Prefrontal.Gray,PrefrontalCortex_grey_matter_Vol.mm3,1.38,NA,only_in_reference,NA,NA,NA,NA,NA
+Erythrocebus patas,Prefrontal.Gray,PrefrontalCortex_grey_matter_Vol.mm3,1.56,NA,only_in_reference,NA,NA,NA,NA,NA
+Gorilla sp.,Prefrontal.Gray,PrefrontalCortex_grey_matter_Vol.mm3,11.64,NA,only_in_reference,NA,NA,NA,NA,NA
+Homo sapiens,Prefrontal.Gray,PrefrontalCortex_grey_matter_Vol.mm3,46.32,NA,only_in_reference,NA,NA,NA,NA,NA
+Hylobates lar,Prefrontal.Gray,PrefrontalCortex_grey_matter_Vol.mm3,2.59,NA,only_in_reference,NA,NA,NA,NA,NA
+Lagothrix lagothricha,Prefrontal.Gray,PrefrontalCortex_grey_matter_Vol.mm3,1.89,NA,only_in_reference,NA,NA,NA,NA,NA
+Lophocebus albigena,Prefrontal.Gray,PrefrontalCortex_grey_matter_Vol.mm3,2.31,NA,only_in_reference,NA,NA,NA,NA,NA
+Miopithecus talapoin,Prefrontal.Gray,PrefrontalCortex_grey_matter_Vol.mm3,1.02,NA,only_in_reference,NA,NA,NA,NA,NA
+Nasalis larvatus,Prefrontal.Gray,PrefrontalCortex_grey_matter_Vol.mm3,0.81,NA,only_in_reference,NA,NA,NA,NA,NA
+Pan paniscus,Prefrontal.Gray,PrefrontalCortex_grey_matter_Vol.mm3,7.96,NA,only_in_reference,NA,NA,NA,NA,NA
+Pan troglodytes,Prefrontal.Gray,PrefrontalCortex_grey_matter_Vol.mm3,14.21,NA,only_in_reference,NA,NA,NA,NA,NA
+Papio anubis,Prefrontal.Gray,PrefrontalCortex_grey_matter_Vol.mm3,3.92,NA,only_in_reference,NA,NA,NA,NA,NA
+Piliocolobus badius,Prefrontal.Gray,PrefrontalCortex_grey_matter_Vol.mm3,1.59,NA,only_in_reference,NA,NA,NA,NA,NA
+Pithecia pithecia,Prefrontal.Gray,PrefrontalCortex_grey_matter_Vol.mm3,0.6,NA,only_in_reference,NA,NA,NA,NA,NA
+Pongo sp.,Prefrontal.Gray,PrefrontalCortex_grey_matter_Vol.mm3,8.6,NA,only_in_reference,NA,NA,NA,NA,NA
+Alouatta seniculus,Prefrontal.White,PrefrontalCortex_white_matter_Vol.mm3,0.18,NA,only_in_reference,NA,NA,NA,NA,NA
+Ateles geoffroyi,Prefrontal.White,PrefrontalCortex_white_matter_Vol.mm3,0.29,NA,only_in_reference,NA,NA,NA,NA,NA
+Cebus albifrons,Prefrontal.White,PrefrontalCortex_white_matter_Vol.mm3,0.26,NA,only_in_reference,NA,NA,NA,NA,NA
+Cercopithecus ascanius,Prefrontal.White,PrefrontalCortex_white_matter_Vol.mm3,0.16,NA,only_in_reference,NA,NA,NA,NA,NA
+Cercopithecus mitis,Prefrontal.White,PrefrontalCortex_white_matter_Vol.mm3,0.21,NA,only_in_reference,NA,NA,NA,NA,NA
+Erythrocebus patas,Prefrontal.White,PrefrontalCortex_white_matter_Vol.mm3,0.27,NA,only_in_reference,NA,NA,NA,NA,NA
+Gorilla sp.,Prefrontal.White,PrefrontalCortex_white_matter_Vol.mm3,2.61,NA,only_in_reference,NA,NA,NA,NA,NA
+Homo sapiens,Prefrontal.White,PrefrontalCortex_white_matter_Vol.mm3,28.14,NA,only_in_reference,NA,NA,NA,NA,NA
+Hylobates lar,Prefrontal.White,PrefrontalCortex_white_matter_Vol.mm3,0.51,NA,only_in_reference,NA,NA,NA,NA,NA
+Lagothrix lagothricha,Prefrontal.White,PrefrontalCortex_white_matter_Vol.mm3,0.23,NA,only_in_reference,NA,NA,NA,NA,NA
+Lophocebus albigena,Prefrontal.White,PrefrontalCortex_white_matter_Vol.mm3,0.42,NA,only_in_reference,NA,NA,NA,NA,NA
+Miopithecus talapoin,Prefrontal.White,PrefrontalCortex_white_matter_Vol.mm3,0.15,NA,only_in_reference,NA,NA,NA,NA,NA
+Nasalis larvatus,Prefrontal.White,PrefrontalCortex_white_matter_Vol.mm3,0.07,NA,only_in_reference,NA,NA,NA,NA,NA
+Pan paniscus,Prefrontal.White,PrefrontalCortex_white_matter_Vol.mm3,2.06,NA,only_in_reference,NA,NA,NA,NA,NA
+Pan troglodytes,Prefrontal.White,PrefrontalCortex_white_matter_Vol.mm3,4.61,NA,only_in_reference,NA,NA,NA,NA,NA
+Papio anubis,Prefrontal.White,PrefrontalCortex_white_matter_Vol.mm3,0.85,NA,only_in_reference,NA,NA,NA,NA,NA
+Piliocolobus badius,Prefrontal.White,PrefrontalCortex_white_matter_Vol.mm3,0.2,NA,only_in_reference,NA,NA,NA,NA,NA
+Pithecia pithecia,Prefrontal.White,PrefrontalCortex_white_matter_Vol.mm3,0.08,NA,only_in_reference,NA,NA,NA,NA,NA
+Pongo sp.,Prefrontal.White,PrefrontalCortex_white_matter_Vol.mm3,2.52,NA,only_in_reference,NA,NA,NA,NA,NA
 Avahi laniger,Subthalamus,Subthalamus_Vol.mm3,80.5,NA,only_in_reference,NA,NA,NA,NA,NA
 Avahi laniger,Thalamus,Thalamus_Vol.mm3,489,NA,only_in_reference,NA,NA,NA,NA,NA
 Avahi laniger,Tractus_opticus,Tractus_opticus_Vol.mm3,38.3,NA,only_in_reference,NA,NA,NA,NA,NA
 Avahi occidentalis,Agranular_volume_L,Agranular_insular_cortex_left_Vol.mm3,NA,7,only_in_merge,NA,NA,Bauernfeind_etal_2013_Table1,2013,NA
 Pongo sp.,Amygdala,Amygdala_Vol.mm3,NA,1400,only_in_merge,NA,NA,Zilles_Rehkämper_1988_Table12-2,1988,NA
-Pongo sp.,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,NA,8400,only_in_merge,NA,NA,Zilles_Rehkämper_1988_Table12-2,1988,Smaers_etal_2017_TableS1part1 (2017) = 7008
+Pongo sp.,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,NA,8400,only_in_merge,NA,NA,Zilles_Rehkämper_1988_Table12-2,1988,NA
 Aotus trivirgatus,Primary.visual.White.Smaers,Area_striata_white_matter_Vol.mm3,NA,207,only_in_merge,NA,NA,Frahm_etal_1984_Table1,1984,NA
 Avahi laniger,Primary.visual.White.Smaers,Area_striata_white_matter_Vol.mm3,NA,66.5,only_in_merge,NA,NA,Frahm_etal_1984_Table1,1984,NA
 Avahi occidentalis,Primary.visual.White.Smaers,Area_striata_white_matter_Vol.mm3,NA,77.2,only_in_merge,NA,NA,Frahm_etal_1984_Table1,1984,NA
@@ -421,8 +405,7 @@ Saimiri sciureus,Primary.visual.White.Smaers,Area_striata_white_matter_Vol.mm3,N
 Tarsius sp.,Primary.visual.White.Smaers,Area_striata_white_matter_Vol.mm3,NA,21.3,only_in_merge,NA,NA,Frahm_etal_1984_Table1,1984,NA
 Varecia variegata,Primary.visual.White.Smaers,Area_striata_white_matter_Vol.mm3,NA,367,only_in_merge,NA,NA,Frahm_etal_1984_Table1,1984,NA
 Avahi occidentalis,Capsula_interna,Capsula_interna_Vol.mm3,NA,105,only_in_merge,NA,NA,Stephan_etal_1981_TableVIII,1981,NA
-Pan paniscus,Cerebellum,Cerebellum_Vol.mm3,NA,44175,only_in_merge,NA,NA,MacLeod_etal_2003_Table1,2003,MacLeod_etal_2003_Table2 (2003) = 53550
-Pongo sp.,Cerebellum,Cerebellum_Vol.mm3,NA,49800,only_in_merge,NA,NA,MacLeod_etal_2003_Table1,2003,MacLeod_etal_2003_Table2 (2003) = 39275 | Zilles_Rehkämper_1988_Table12-2 (1988) = 42900
+Pongo sp.,Cerebellum,Cerebellum_Vol.mm3,NA,42900,only_in_merge,NA,NA,Zilles_Rehkämper_1988_Table12-2,1988,NA
 Alouatta seniculus,Complexus.vestibularis,Complexus_vestibularis_unilateral_Vol.mm3,NA,45.9,only_in_merge,NA,NA,Matano__1986_TableI,1986,NA
 Aotus trivirgatus,Complexus.vestibularis,Complexus_vestibularis_unilateral_Vol.mm3,NA,28.1,only_in_merge,NA,NA,Matano__1986_TableI,1986,NA
 Avahi laniger,Complexus.vestibularis,Complexus_vestibularis_unilateral_Vol.mm3,NA,23.7,only_in_merge,NA,NA,Matano__1986_TableI,1986,NA
@@ -445,8 +428,6 @@ Pongo sp.,LGN_Sousa,Corpus_geniculatum_laterale_Vol.mm3,NA,259.1,only_in_merge,N
 Pongo sp.,Diencephalon,Diencephalon_Vol.mm3,NA,13500,only_in_merge,NA,NA,Zilles_Rehkämper_1988_Table12-2,1988,NA
 Avahi occidentalis,Dysgranular_volume_L,Dysgranular_insular_cortex_left_Vol.mm3,NA,18,only_in_merge,NA,NA,Bauernfeind_etal_2013_Table1,2013,NA
 Avahi occidentalis,Epithalamus,Epithalamus_Vol.mm3,NA,6.52,only_in_merge,NA,NA,Stephan_etal_1981_TableVIII,1981,NA
-Pongo sp.,Frontal.motor.Gray,FrontalMotor_grey_matter_Vol.mm3,NA,6353,only_in_merge,NA,NA,Smaers_etal_2017_TableS1part1,2017,NA
-Pongo sp.,Frontal.motor,FrontalMotor_white_matter_Vol.mm3,NA,4745,only_in_merge,NA,NA,Smaers_etal_2017_TableS1part1,2017,NA
 Avahi occidentalis,Granular_volume_L,Granular_insular_cortex_left_Vol.mm3,NA,13,only_in_merge,NA,NA,Bauernfeind_etal_2013_Table1,2013,NA
 Pongo sp.,Hippocampus,Hippocampus_Vol.mm3,NA,2700,only_in_merge,NA,NA,Zilles_Rehkämper_1988_Table12-2,1988,NA
 Avahi occidentalis,Hypothalamus,Hypothalamus_Vol.mm3,NA,137,only_in_merge,NA,NA,Stephan_etal_1981_TableVIII,1981,NA
@@ -546,10 +527,10 @@ Hylobates muelleri,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,NA,9826
 Leontopithecus rosalia,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,NA,12259,only_in_merge,NA,NA,Bauernfeind_etal_2013_Table1,2013,NA
 Macaca fascicularis,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,NA,55600,only_in_merge,NA,NA,deSousa_etal_2010_Table1,2010,NA
 Macaca maura,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,NA,80405,only_in_merge,NA,NA,Bauernfeind_etal_2013_Table1,2013,NA
-Pan paniscus,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,NA,339766.666666667,only_in_merge,NA,NA,Bauernfeind_etal_2013_Table1,2013,deSousa_etal_2010_Table1 (2010) = 338800 | MacLeod_etal_2003_Table1 (2003) = 311200 | MacLeod_etal_2003_Table2 (2003) = 345550
+Pan paniscus,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,NA,339766.666666667,only_in_merge,NA,NA,Bauernfeind_etal_2013_Table1,2013,deSousa_etal_2010_Table1 (2010) = 338800
 Pithecia pithecia,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,NA,28958,only_in_merge,NA,NA,Bauernfeind_etal_2013_Table1,2013,NA
-Pongo sp.,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,NA,340925,only_in_merge,NA,NA,Bauernfeind_etal_2013_Table1,2013,deSousa_etal_2010_Table1 (2010) = 371300 | MacLeod_etal_2003_Table1 (2003) = 406875 | MacLeod_etal_2003_Table2 (2003) = 333725
-Pongo sp.,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,NA,340925,only_in_merge,NA,NA,Bauernfeind_etal_2013_Table1,2013,deSousa_etal_2010_Table1 (2010) = 371300 | MacLeod_etal_2003_Table1 (2003) = 406875 | MacLeod_etal_2003_Table2 (2003) = 333725
+Pongo sp.,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,NA,340925,only_in_merge,NA,NA,Bauernfeind_etal_2013_Table1,2013,deSousa_etal_2010_Table1 (2010) = 371300
+Pongo sp.,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,NA,340925,only_in_merge,NA,NA,Bauernfeind_etal_2013_Table1,2013,deSousa_etal_2010_Table1 (2010) = 371300
 Saguinus geoffroyi,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,NA,10135,only_in_merge,NA,NA,Bauernfeind_etal_2013_Table1,2013,NA
 Symphalangus syndactylus,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,NA,133880,only_in_merge,NA,NA,Bauernfeind_etal_2013_Table1,2013,deSousa_etal_2010_Table1 (2010) = 133900
 Trachypithecus francoisi,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,NA,98552,only_in_merge,NA,NA,Bauernfeind_etal_2013_Table1,2013,NA
@@ -598,17 +579,17 @@ Pongo sp.,Amygdala,Amygdala_Vol.mm3,1400,1400,match,1,NA,Zilles_Rehkämper_1988_
 Propithecus verreauxi,Amygdala,Amygdala_Vol.mm3,251,251,match,1,NA,Stephan_etal_1981_TableXI,1981,NA
 Saimiri sciureus,Amygdala,Amygdala_Vol.mm3,227,227,match,1,NA,Stephan_etal_1981_TableXI,1981,NA
 Tarsius sp.,Amygdala,Amygdala_Vol.mm3,49.8,49.8,match,1,NA,Stephan_etal_1981_TableXI,1981,NA
-Alouatta seniculus,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1918,1918,match,1,NA,Frahm_etal_1984_Table1,1984,Smaers_etal_2017_TableS1part1 (2017) = 1918
+Alouatta seniculus,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1918,1918,match,1,NA,Frahm_etal_1984_Table1,1984,NA
 Aotus trivirgatus,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,996,996,match,1,NA,Frahm_etal_1984_Table1,1984,NA
-Ateles geoffroyi,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,3753,3753,match,1,NA,Frahm_etal_1984_Table1,1984,Smaers_etal_2017_TableS1part1 (2017) = 3753
+Ateles geoffroyi,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,3753,3753,match,1,NA,Frahm_etal_1984_Table1,1984,NA
 Avahi laniger,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,475,475,match,1,NA,Frahm_etal_1984_Table1,1984,NA
 Avahi occidentalis,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,450,450,match,1,NA,Frahm_etal_1984_Table1,1984,NA
 Callicebus moloch,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1201,1201,match,1,NA,Frahm_etal_1984_Table1,1984,NA
 Callithrix jacchus,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,566,566,match,1,NA,Frahm_etal_1984_Table1,1984,NA
 Callithrix pygmaea,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,363,363,match,1,NA,Frahm_etal_1984_Table1,1984,NA
-Cebus albifrons,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,3764,3764,match,1,NA,Frahm_etal_1984_Table1,1984,Smaers_etal_2017_TableS1part1 (2017) = 3764
-Cercopithecus ascanius,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,4272,4272,match,1,NA,Frahm_etal_1984_Table1,1984,Smaers_etal_2017_TableS1part1 (2017) = 4272
-Cercopithecus mitis,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,4232,4232,match,1,NA,Frahm_etal_1984_Table1,1984,Smaers_etal_2017_TableS1part1 (2017) = 4232
+Cebus albifrons,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,3764,3764,match,1,NA,Frahm_etal_1984_Table1,1984,NA
+Cercopithecus ascanius,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,4272,4272,match,1,NA,Frahm_etal_1984_Table1,1984,NA
+Cercopithecus mitis,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,4232,4232,match,1,NA,Frahm_etal_1984_Table1,1984,NA
 Cheirogaleus major,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,433,433,match,1,NA,Frahm_etal_1984_Table1,1984,NA
 Cheirogaleus medius,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,199,199,match,1,NA,Frahm_etal_1984_Table1,1984,NA
 Daubentonia madagascariensis,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1113,1113,match,1,NA,Frahm_etal_1984_Table1,1984,NA
@@ -616,18 +597,18 @@ Eulemur fulvus,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1253,1253,match,1,NA,F
 Galago senegalensis,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,301,301,match,1,NA,Frahm_etal_1984_Table1,1984,NA
 Galagoides demidoff,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,214,214,match,1,NA,Frahm_etal_1984_Table1,1984,NA
 Indri indri,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1648,1648,match,1,NA,Frahm_etal_1984_Table1,1984,NA
-Lagothrix lagothricha,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,4856,4856,match,1,NA,Frahm_etal_1984_Table1,1984,Smaers_etal_2017_TableS1part1 (2017) = 4856
+Lagothrix lagothricha,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,4856,4856,match,1,NA,Frahm_etal_1984_Table1,1984,NA
 Lepilemur ruficaudatus,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,326,326,match,1,NA,Frahm_etal_1984_Table1,1984,NA
-Lophocebus albigena,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,5420,5420,match,1,NA,Frahm_etal_1984_Table1,1984,Smaers_etal_2017_TableS1part1 (2017) = 5420
+Lophocebus albigena,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,5420,5420,match,1,NA,Frahm_etal_1984_Table1,1984,NA
 Loris tardigradus,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,529,529,match,1,NA,Frahm_etal_1984_Table1,1984,NA
 Macaca mulatta,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,5343,5343,match,1,NA,Frahm_etal_1984_Table1,1984,NA
 Microcebus murinus,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,136,136,match,1,NA,Frahm_etal_1984_Table1,1984,NA
-Miopithecus talapoin,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,2339,2339,match,1,NA,Frahm_etal_1984_Table1,1984,Smaers_etal_2017_TableS1part1 (2017) = 2339
+Miopithecus talapoin,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,2339,2339,match,1,NA,Frahm_etal_1984_Table1,1984,NA
 Nycticebus coucang,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,696,696,match,1,NA,Frahm_etal_1984_Table1,1984,NA
 Otolemur crassicaudatus,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,479,479,match,1,NA,Frahm_etal_1984_Table1,1984,NA
-Papio anubis,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,10001,10001,match,1,NA,Frahm_etal_1984_Table1,1984,Smaers_etal_2017_TableS1part1 (2017) = 10001
+Papio anubis,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,10001,10001,match,1,NA,Frahm_etal_1984_Table1,1984,NA
 Perodicticus potto,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,495,495,match,1,NA,Frahm_etal_1984_Table1,1984,NA
-Piliocolobus badius,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,3053,3053,match,1,NA,Frahm_etal_1984_Table1,1984,Smaers_etal_2017_TableS1part1 (2017) = 3053
+Piliocolobus badius,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,3053,3053,match,1,NA,Frahm_etal_1984_Table1,1984,NA
 Pithecia monachus,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1679,1679,match,1,NA,Frahm_etal_1984_Table1,1984,NA
 Propithecus verreauxi,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,1106,1106,match,1,NA,Frahm_etal_1984_Table1,1984,NA
 Saguinus midas,ASG_Sousa,Area_striata_grey_matter_Vol.mm3,841,841,match,1,NA,Frahm_etal_1984_Table1,1984,NA
@@ -886,6 +867,8 @@ Saguinus oedipus,Cerebellar_nuclei_total,Cerebellar_nuclei_total_Vol.mm3,24.6,24
 Saimiri sciureus,Cerebellar_nuclei_total,Cerebellar_nuclei_total_Vol.mm3,73.22,73.22,match,1,NA,Matano_etal_1985_a_Table1,1985,NA
 Tarsius sp.,Cerebellar_nuclei_total,Cerebellar_nuclei_total_Vol.mm3,8.06,8.06,match,1,NA,Matano_etal_1985_a_Table1,1985,NA
 Varecia variegata,Cerebellar_nuclei_total,Cerebellar_nuclei_total_Vol.mm3,94.67,94.67,match,1,NA,Matano_etal_1985_a_Table1,1985,NA
+Alouatta seniculus,Cerebellum,Cerebellum_Vol.mm3,5699,5699,match,1,NA,Stephan_etal_1981_TableIII,1981,NA
+Aotus trivirgatus,Cerebellum,Cerebellum_Vol.mm3,1873,1873,match,1,NA,Stephan_etal_1981_TableIII,1981,NA
 Ateles geoffroyi,Cerebellum,Cerebellum_Vol.mm3,12438,12438,match,1,NA,Stephan_etal_1981_TableIII,1981,NA
 Avahi laniger,Cerebellum,Cerebellum_Vol.mm3,1489,1489,match,1,NA,Stephan_etal_1981_TableII,1981,NA
 Avahi occidentalis,Cerebellum,Cerebellum_Vol.mm3,1383,1383,match,1,NA,Stephan_etal_1981_TableII,1981,NA
@@ -899,26 +882,35 @@ Cercopithecus mitis,Cerebellum,Cerebellum_Vol.mm3,6758,6758,match,1,NA,Stephan_e
 Cheirogaleus major,Cerebellum,Cerebellum_Vol.mm3,947,947,match,1,NA,Stephan_etal_1981_TableII,1981,NA
 Cheirogaleus medius,Cerebellum,Cerebellum_Vol.mm3,437,437,match,1,NA,Stephan_etal_1981_TableII,1981,NA
 Daubentonia madagascariensis,Cerebellum,Cerebellum_Vol.mm3,6461,6461,match,1,NA,Stephan_etal_1981_TableII,1981,NA
+Erythrocebus patas,Cerebellum,Cerebellum_Vol.mm3,8738,8738,match,1,NA,Stephan_etal_1981_TableIII,1981,NA
 Eulemur fulvus,Cerebellum,Cerebellum_Vol.mm3,3328,3328,match,1,NA,Stephan_etal_1981_TableII,1981,NA
 Galago senegalensis,Cerebellum,Cerebellum_Vol.mm3,672,672,match,1,NA,Stephan_etal_1981_TableII,1981,NA
 Galagoides demidoff,Cerebellum,Cerebellum_Vol.mm3,413,413,match,1,NA,Stephan_etal_1981_TableII,1981,NA
+Gorilla sp.,Cerebellum,Cerebellum_Vol.mm3,69249,69249,match,1,NA,Stephan_etal_1981_TableIII,1981,NA
+Homo sapiens,Cerebellum,Cerebellum_Vol.mm3,137421,137421,match,1,NA,Stephan_etal_1981_TableIII,1981,NA
+Hylobates lar,Cerebellum,Cerebellum_Vol.mm3,12078,12078,match,1,NA,Stephan_etal_1981_TableIII,1981,NA
 Indri indri,Cerebellum,Cerebellum_Vol.mm3,5504,5504,match,1,NA,Stephan_etal_1981_TableII,1981,NA
 Lagothrix lagothricha,Cerebellum,Cerebellum_Vol.mm3,11268,11268,match,1,NA,Stephan_etal_1981_TableIII,1981,NA
 Lepilemur ruficaudatus,Cerebellum,Cerebellum_Vol.mm3,1165,1165,match,1,NA,Stephan_etal_1981_TableII,1981,NA
+Lophocebus albigena,Cerebellum,Cerebellum_Vol.mm3,10726,10726,match,1,NA,Stephan_etal_1981_TableIII,1981,NA
 Loris tardigradus,Cerebellum,Cerebellum_Vol.mm3,728,728,match,1,NA,Stephan_etal_1981_TableII,1981,NA
+Macaca mulatta,Cerebellum,Cerebellum_Vol.mm3,8965,8965,match,1,NA,Stephan_etal_1981_TableIII,1981,NA
 Microcebus murinus,Cerebellum,Cerebellum_Vol.mm3,234,234,match,1,NA,Stephan_etal_1981_TableII,1981,NA
 Miopithecus talapoin,Cerebellum,Cerebellum_Vol.mm3,3374,3374,match,1,NA,Stephan_etal_1981_TableIII,1981,NA
 Nasalis larvatus,Cerebellum,Cerebellum_Vol.mm3,12113,12113,match,1,NA,Stephan_etal_1981_TableIII,1981,NA
 Nycticebus coucang,Cerebellum,Cerebellum_Vol.mm3,1310,1310,match,1,NA,Stephan_etal_1981_TableII,1981,NA
 Otolemur crassicaudatus,Cerebellum,Cerebellum_Vol.mm3,1414,1414,match,1,NA,Stephan_etal_1981_TableII,1981,NA
+Pan troglodytes,Cerebellum,Cerebellum_Vol.mm3,43663,43663,match,1,NA,Stephan_etal_1981_TableIII,1981,NA
 Papio anubis,Cerebellum,Cerebellum_Vol.mm3,18683,18683,match,1,NA,Stephan_etal_1981_TableIII,1981,NA
 Perodicticus potto,Cerebellum,Cerebellum_Vol.mm3,1699,1699,match,1,NA,Stephan_etal_1981_TableII,1981,NA
 Piliocolobus badius,Cerebellum,Cerebellum_Vol.mm3,8648,8648,match,1,NA,Stephan_etal_1981_TableIII,1981,NA
 Pithecia monachus,Cerebellum,Cerebellum_Vol.mm3,3908,3908,match,1,NA,Stephan_etal_1981_TableIII,1981,NA
+Pongo sp.,Cerebellum,Cerebellum_Vol.mm3,42900,42900,match,1,NA,Zilles_Rehkämper_1988_Table12-2,1988,NA
 Propithecus verreauxi,Cerebellum,Cerebellum_Vol.mm3,3957,3957,match,1,NA,Stephan_etal_1981_TableII,1981,NA
 Pygathrix nemaeus,Cerebellum,Cerebellum_Vol.mm3,8063,8063,match,1,NA,Stephan_etal_1981_TableIII,1981,NA
 Saguinus midas,Cerebellum,Cerebellum_Vol.mm3,1061,1061,match,1,NA,Stephan_etal_1981_TableIII,1981,NA
 Saguinus oedipus,Cerebellum,Cerebellum_Vol.mm3,984,984,match,1,NA,Stephan_etal_1981_TableIII,1981,NA
+Saimiri sciureus,Cerebellum,Cerebellum_Vol.mm3,2260,2260,match,1,NA,Stephan_etal_1981_TableIII,1981,NA
 Tarsius sp.,Cerebellum,Cerebellum_Vol.mm3,428,428,match,1,NA,Stephan_etal_1981_TableII,1981,NA
 Varecia variegata,Cerebellum,Cerebellum_Vol.mm3,4286,4286,match,1,NA,Stephan_etal_1981_TableII,1981,NA
 Alouatta seniculus,Complexus_centromedialis,Complexus_centromedialis_Vol.mm3,94.9,94.9,match,1,NA,Stephan_etal_1981_TableXI,1981,NA
@@ -2111,6 +2103,8 @@ Propithecus verreauxi,Thalamus,Thalamus_Vol.mm3,1341,1341,match,1,NA,Stephan_eta
 Saguinus oedipus,Thalamus,Thalamus_Vol.mm3,410,410,match,1,NA,Stephan_etal_1981_TableVIII,1981,NA
 Saimiri sciureus,Thalamus,Thalamus_Vol.mm3,731,731,match,1,NA,Stephan_etal_1981_TableVIII,1981,NA
 Tarsius sp.,Thalamus,Thalamus_Vol.mm3,175,175,match,1,NA,Stephan_etal_1981_TableVIII,1981,NA
+Alouatta seniculus,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,49009,49009,match,1,NA,Stephan_etal_1981_TableIII,1981,NA
+Aotus trivirgatus,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,16195,16195,match,1,NA,Stephan_etal_1981_TableIII,1981,NA
 Avahi laniger,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,9798,9798,match,1,NA,Stephan_etal_1981_TableII,1981,NA
 Callicebus moloch,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,17944,17944,match,1,NA,Stephan_etal_1981_TableIII,1981,NA
 Callimico goeldii,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,10510,10510,match,1,NA,Stephan_etal_1981_TableIII,1981,NA
@@ -2120,10 +2114,12 @@ Cercopithecus ascanius,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,635
 Cheirogaleus major,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,6373,6373,match,1,NA,Stephan_etal_1981_TableII,1981,NA
 Cheirogaleus medius,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,2961,2961,match,1,NA,Stephan_etal_1981_TableII,1981,NA
 Daubentonia madagascariensis,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,42611,42611,match,1,NA,Stephan_etal_1981_TableII,1981,NA
+Erythrocebus patas,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,103167,103167,match,1,NA,Stephan_etal_1981_TableIII,1981,NA
 Eulemur fulvus,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,22106,22106,match,1,NA,Stephan_etal_1981_TableII,1981,NA
 Galago senegalensis,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,4512,4512,match,1,NA,Stephan_etal_1981_TableII,1981,NA
 Lagothrix lagothricha,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,95503,95503,match,1,NA,Stephan_etal_1981_TableIII,1981,NA
 Lepilemur ruficaudatus,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,7175,7175,match,1,NA,Stephan_etal_1981_TableII,1981,NA
+Macaca mulatta,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,87896,87896,match,1,NA,Stephan_etal_1981_TableIII,1981,NA
 Microcebus murinus,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,1680,1680,match,1,NA,Stephan_etal_1981_TableII,1981,NA
 Miopithecus talapoin,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,37776,37776,match,1,NA,Stephan_etal_1981_TableIII,1981,NA
 Nasalis larvatus,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,92797,92797,match,1,NA,Stephan_etal_1981_TableIII,1981,NA
@@ -2134,6 +2130,7 @@ Pithecia monachus,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,32867,32
 Propithecus verreauxi,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,25194,25194,match,1,NA,Stephan_etal_1981_TableII,1981,NA
 Pygathrix nemaeus,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,72530,72530,match,1,NA,Stephan_etal_1981_TableIII,1981,NA
 Saguinus midas,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,9569,9569,match,1,NA,Stephan_etal_1981_TableIII,1981,NA
+Saimiri sciureus,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,22572,22572,match,1,NA,Stephan_etal_1981_TableIII,1981,NA
 Tarsius sp.,Total_brain_net_volume,Total_brain_net_volume_Vol.mm3,3393,3393,match,1,NA,Stephan_etal_1981_TableII,1981,NA
 Ateles geoffroyi,Tractus_opticus,Tractus_opticus_Vol.mm3,204,204,match,1,NA,Stephan_etal_1981_TableVIII,1981,NA
 Callithrix pygmaea,Tractus_opticus,Tractus_opticus_Vol.mm3,23.8,23.8,match,1,NA,Stephan_etal_1981_TableVIII,1981,NA

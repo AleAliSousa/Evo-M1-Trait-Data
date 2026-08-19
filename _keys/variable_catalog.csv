@@ -16,6 +16,7 @@ Johnson_etal_2016,Johnson_etal_2016_Table1,age_class,NA,(structure-agnostic; see
 Peruffo_etal_2019,Peruffo_etal_2019_Table2,age_class,NA,(structure-agnostic; see data columns),NA,Age class,Age class,NA,info,Ovis aries,reported life-history age class
 __merging_cortical_layers,__merging_cortical_layers,age_class,NA,(structure-agnostic; see data columns),NA,Age class,Age class,NA,primary,NA,reported age class
 Turner_etal_2016,Turner_etal_2016_Table1,age_years,NA,(structure-agnostic; see data columns),NA,Age.years,Age.years,NA,info,Primates,age of the animal
+deSousa_etal_2009,deSousa_etal_2009_Table1,age_yrs,NA,(structure-agnostic; see data columns),NA,Age.years,Age.years,NA,info,Apes & humans + M. fascicularis,age at death in years as printed (NA = not recorded)
 Hutsler_etal_2005,Hutsler_etal_2005_Figure3,value_basis,NA,(structure-agnostic; see data columns),NA,Basis,Basis,NA,info,14 mammal species,provenance class of the value
 Hutsler_etal_2005,Hutsler_etal_2005_Figure6,value_basis,NA,(structure-agnostic; see data columns),NA,Basis,Basis,NA,info,13 mammal species,provenance class of the value
 BarbeitoAndres_etal_2019,BarbeitoAndres_etal_2019,cell_type,NA,(structure-agnostic; see data columns),NA,CellType,CellType,NA,primary,NA,Total / Neurons / Non-neurons (cell tables only; NA for volumes)
@@ -221,12 +222,15 @@ Balzeau_etal_2012,Balzeau_etal_2012_Table2,Slope,NA,(structure-agnostic; see dat
 Balzeau_etal_2012,Balzeau_etal_2012_Table2,Intercept,NA,(structure-agnostic; see data columns),NA,regression,regression,intercept,secondary,Homo,intercept of the regression
 Balzeau_etal_2012,Balzeau_etal_2012_Table2,Rsquared,NA,(structure-agnostic; see data columns),NA,regression,regression,R2,secondary,Homo,coefficient of determination (R-squared) of the regression
 Burger_etal_2019,Burger_etal_2019_SupplementaryDataSD1,T_resid,NA,(structure-agnostic; see data columns),NA,residual,residual,NA,flagged,mammals,Residual (as printed) — NOT reproducible (see Brain.resid note)
+deSousa_etal_2009,deSousa_etal_2009_Table1,EQ,NA,(structure-agnostic; see data columns),NA,size.index,size index (allometric),NA,info,Apes & humans + M. fascicularis,encephalization quotient exactly as printed
 Balzeau_etal_2012,Balzeau_etal_2012_Table3,Mean_surface_sizecorrected,NA,(structure-agnostic; see data columns),NA,size.corrected.surface,surface area,Mean,secondary,Homo,mean size-corrected surface dimension of the lobe
 Balzeau_etal_2012,Balzeau_etal_2012_Table3,V_star,NA,(structure-agnostic; see data columns),NA,size.corrected.surface,surface area,V*,secondary,Homo,size-corrected coefficient of variation of the lobe surface
 Krubitzer_Kaas_1990,Krubitzer_Kaas_1990_Table1,pct_total_8fields,NA,(structure-agnostic; see data columns),NA,pct.neocortex_surface,surface area,NA,primary,Primates,Total column as printed = sum of the eight visual fields as percent of neocortex
 deJager_etal_2022,deJager_etal_2022,mean_mm2,NA,(structure-agnostic; see data columns),NA,area.mm2,surface area,mean,primary,Homo sapiens,arithmetic mean cross-sectional area across the sample
 deJager_etal_2022,deJager_etal_2022,min_mm2,NA,(structure-agnostic; see data columns),NA,area.mm2,surface area,min,primary,Homo sapiens,minimum of the observed range
 deJager_etal_2022,deJager_etal_2022,max_mm2,NA,(structure-agnostic; see data columns),NA,area.mm2,surface area,max,primary,Homo sapiens,maximum of the observed range
+deSousa_etal_2009,deSousa_etal_2009_Table1,optic_nerve_csa_mm2,NA,(structure-agnostic; see data columns),NA,Area.mm2,surface area,NA,secondary,Apes & humans + M. fascicularis,optic nerve (nervus opticus) cross-sectional area in mm2
+deSousa_etal_2009,deSousa_etal_2009_Table1,eye_half_surface_area_mm2,NA,(structure-agnostic; see data columns),NA,Area.mm2,surface area,NA,secondary,Apes & humans + M. fascicularis,half surface area of the eye in mm2
 Upham_etal_2019,Upham_etal_2019_DNAonlyMCC,terminal_branch_length,NA,(structure-agnostic; see data columns),NA,time,time,value,data,mammals,Length of the terminal branch subtending this tip
 Upham_etal_2019,Upham_etal_2019_DNAonlyMCC,root_to_tip_age,NA,(structure-agnostic; see data columns),NA,time,time,value,data,mammals,Root-to-tip path length for this tip
 Lewitus_etal_2014,Lewitus_etal_2014_TableS1,Neocortex_mm^3,NA,(structure-agnostic; see data columns),NA,value,value,NA,primary,Mammals,Neocortex volume
@@ -331,6 +335,7 @@ Stephan_etal_1981,Stephan_etal_1981_TablesI-VI,Area_striata,Area_striata,Area_st
 Frahm_etal_1984,Frahm_etal_1984_Table1,Area_striata_grey_matter_mm3,Area_striata_grey_matter,Area_striata_grey_matter,brain_structure_volume,Vol.mm3,volume,NA,primary,Insectivora & Primates,Area striata grey matter (Vol.mm3)
 Frahm_etal_1998,Frahm_etal_1998_Table1,Area_striata_grey_matter_mm3,Area_striata_grey_matter,Area_striata_grey_matter,brain_structure_volume,Vol.mm3,volume,NA,primary,Insectivora & Primates,Area striata grey matter (Vol.mm3)
 Zilles__Rehkamper_1988,Zilles__Rehkamper_1988_Table12-2,Area_striata_grey,Area_striata_grey_matter,Area_striata_grey_matter,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates (Pongo),gray matter of area striata (primary visual cortex)
+deSousa_etal_2009,deSousa_etal_2009_Table1,left_V1_volume_mm3,Area_striata_grey_matter,Area_striata_grey_matter,brain_structure_volume,Vol.mm3,volume,NA,secondary,Apes & humans + M. fascicularis,LEFT V1 (area striata) grey matter volume in mm3; printed in mm3 and used as printed
 deSousa_etal_2010,deSousa_etal_2010_Table1,Area_striata_grey_matter_mm3,Area_striata_grey_matter,Area_striata_grey_matter,brain_structure_volume,Vol.mm3,volume,NA,primary,Insectivora & Primates,Area striata grey matter (Vol.mm3)
 Frahm_etal_1984,Frahm_etal_1984_Table1,Area_striata_lamina_1_mm3,Area_striata_lamina_1,Area_striata_lamina_1,brain_structure_volume,Vol.mm3,volume,NA,primary,Insectivora & Primates,Area striata lamina 1 (Vol.mm3)
 Frahm_etal_1984,Frahm_etal_1984_Table1,Area_striata_laminae_2_6_mm3,Area_striata_laminae_2_6,Area_striata_laminae_2_6,brain_structure_volume,Vol.mm3,volume,NA,primary,Insectivora & Primates,Area striata laminae 2 6 (Vol.mm3)
@@ -377,6 +382,7 @@ Matano_etal_1985_b,Matano_etal_1985_b_Table1,body_weight_g,Body_weight,Body_weig
 Schleifenbaum__1973,Schleifenbaum__1973_Tables1-2,body_mass_g,Body_weight,Body_weight,brain_structure_volume,Mass.g,mass,point,primary,Canis,net body mass
 Stephan_etal_1981,Stephan_etal_1981_TablesI-VI,Body_weight,Body_weight,Body_weight,brain_structure_volume,Mass.g,mass,NA,primary,"Insectivora, Scandentia & Primates",body weight
 Stephan_etal_1988,Stephan_etal_1988_Table1,BoW_g,Body_weight,Body_weight,brain_structure_volume,Mass.g,mass,NA,primary,"Insectivora, Scandentia & Primates",body weight in grams
+deSousa_etal_2009,deSousa_etal_2009_Table1,body_mass_g,Body_weight,Body_weight,brain_structure_volume,Mass.g,mass,NA,secondary,Apes & humans + M. fascicularis,body mass; printed in kg and multiplied by 1000
 Zilles_etal_2013,Zilles_etal_2013_Table1,Brain_size,Brain,Brain,cell_counts,Brain.size.mixed,Brain.size.mixed,NA,secondary,Mammals,"Brain size as printed in Table 1 (column header ""Brain (volume, weight)""); a mixed volume-or-weight figure (cm3 or g depending on source), not standardised. Use for ordering only, not as a harmonised volume."
 Karbowski__2007,Karbowski__2007_TableS1,CMRO2,Brain,Brain,cell_counts,CMR.ml/g/min,CMR.ml/g/min,mean,secondary,Mammals,cerebral metabolic rate of oxygen (whole brain; Table S1)
 Karbowski__2007,Karbowski__2007_TableS1,Total_O2_consumption,Brain,Brain,cell_counts,Rate.ml/min,Rate.ml/min,point,secondary,Mammals,whole-brain total oxygen consumption (Table S1)
@@ -571,6 +577,7 @@ Stephan_etal_1981,Stephan_etal_1981_TablesI-VI,Complexus_vestibularis,Complexus_
 Frahm_etal_1998,Frahm_etal_1998_Table1,Corpus_geniculatum_laterale_mm3,Corpus_geniculatum_laterale,Corpus_geniculatum_laterale,brain_structure_volume,Vol.mm3,volume,NA,primary,Insectivora & Primates,Corpus geniculatum laterale (Vol.mm3)
 Stephan_etal_1981,Stephan_etal_1981_TablesI-VI,Corpus_geniculatum_laterale,Corpus_geniculatum_laterale,Corpus_geniculatum_laterale,brain_structure_volume,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",lateral geniculate body
 Stephan_etal_1984,Stephan_etal_1984_Table1,Corpus_geniculatum_laterale_mm3,Corpus_geniculatum_laterale,Corpus_geniculatum_laterale,brain_structure_volume,Vol.mm3,volume,NA,primary,Insectivora & Primates,Corpus geniculatum laterale (Vol.mm3)
+deSousa_etal_2009,deSousa_etal_2009_Table1,left_LGN_volume_mm3,Corpus_geniculatum_laterale,Corpus_geniculatum_laterale,brain_structure_volume,Vol.mm3,volume,NA,secondary,Apes & humans + M. fascicularis,LEFT lateral geniculate nucleus volume in mm3; printed in mm3 and used as printed
 deSousa_etal_2010,deSousa_etal_2010_Table1,Corpus_geniculatum_laterale_mm3,Corpus_geniculatum_laterale,Corpus_geniculatum_laterale,brain_structure_volume,Vol.mm3,volume,NA,primary,Insectivora & Primates,Corpus geniculatum laterale (Vol.mm3)
 deSousa_etal_2013,deSousa_etal_2013_Table1,Corpus_geniculatum_laterale_mm3,Corpus_geniculatum_laterale,Corpus_geniculatum_laterale,brain_structure_volume,Vol.mm3,volume,NA,primary,Insectivora & Primates,Corpus geniculatum laterale (Vol.mm3)
 Stephan_etal_1981,Stephan_etal_1981_TablesI-VI,Corpus_pineal,Corpus_pineal,Corpus_pineal,brain_structure_volume,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",pineal body
@@ -1045,6 +1052,8 @@ Stephan_etal_1981,Stephan_etal_1981_TablesI-VI,Neocortex,Neocortex,Neocortex,cel
 Stephan_etal_1981,Stephan_etal_1981_TablesI-VI,Neocortex,Neocortex,Neocortex,brain_structure_volume,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",neocortex incl. white matter & corpus callosum (NeoWG)
 Zilles__Rehkamper_1988,Zilles__Rehkamper_1988_Table12-2,Neocortex,Neocortex,Neocortex,cell_counts,Vol.mm3,volume,NA,primary,Primates (Pongo),neocortex fresh volume (gray without area striata + gray area striata + white matter)
 Zilles__Rehkamper_1988,Zilles__Rehkamper_1988_Table12-2,Neocortex,Neocortex,Neocortex,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates (Pongo),neocortex fresh volume (gray without area striata + gray area striata + white matter)
+deSousa_etal_2009,deSousa_etal_2009_Table1,neocortex_volume_mm3,Neocortex,Neocortex,cell_counts,Vol.mm3,volume,NA,secondary,Apes & humans + M. fascicularis,neocortex volume; printed in cm3 and multiplied by 1000
+deSousa_etal_2009,deSousa_etal_2009_Table1,neocortex_volume_mm3,Neocortex,Neocortex,brain_structure_volume,Vol.mm3,volume,NA,secondary,Apes & humans + M. fascicularis,neocortex volume; printed in cm3 and multiplied by 1000
 deSousa_etal_2010,deSousa_etal_2010,neocortex_volume_cm3,Neocortex,Neocortex,cell_counts,Volume.cm3,volume,mean,primary,Primates,neocortex volume
 deSousa_etal_2010,deSousa_etal_2010,neocortex_volume_cm3,Neocortex,Neocortex,brain_structure_volume,Volume.cm3,volume,mean,primary,Primates,neocortex volume
 deSousa_etal_2010,deSousa_etal_2010,neocortex_volume_cm3,Neocortex,Neocortex,cell_counts,Volume.cm3,volume,NA,primary,NA,neocortex volume (grey+white; paleocortex removed)
@@ -1448,6 +1457,7 @@ Olkowicz_etal_2016,Olkowicz_etal_2016_DatasetS1,whole_brain_mass_g,WholeBrain,Wh
 Turner_etal_2016,Turner_etal_2016_Table1,brain_weight_g,WholeBrain,WholeBrain,cell_counts,Mass.g,mass,NA,info,Primates,whole brain mass as printed
 Turner_etal_2016,Turner_etal_2016_Table1,Brain_Mass.mg,WholeBrain,WholeBrain,cell_counts,Mass.mg,mass,NA,secondary,Primates,whole brain mass in project units
 Young_etal_2013_b,Young_etal_2013_b_Table1,brain_weight_g,WholeBrain,WholeBrain,cell_counts,Mass.g,mass,NA,info,Primates,brain weight (Table S1)
+deSousa_etal_2009,deSousa_etal_2009_Table1,brain_mass_mg,WholeBrain,WholeBrain,cell_counts,Mass.mg,mass,NA,secondary,Apes & humans + M. fascicularis,fresh brain mass; printed in g and multiplied by 1000
 deSousa_etal_2010,deSousa_etal_2010,brain_mass_g,WholeBrain,WholeBrain,cell_counts,Mass.g,mass,NA,primary,NA,fresh brain mass
 deSousa_etal_2013,deSousa_etal_2013,brain_weight_g,WholeBrain,WholeBrain,cell_counts,Mass.g,mass,NA,primary,NA,species mean brain weight
 Kazu_etal_2014,Kazu_etal_2014_Table1,WholeBrain_O.p.N,WholeBrain,WholeBrain,cell_counts,O.p.N,ratio (per neuron),NA,primary,Artiodactyla,whole-brain other-cell / neuron ratio

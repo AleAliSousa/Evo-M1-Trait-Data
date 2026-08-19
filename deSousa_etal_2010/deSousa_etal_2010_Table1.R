@@ -147,11 +147,21 @@ dat0 <- raw[data_start:last_data_row, ] %>%
 ## ---- clean and standardize ---------------------------------------------------
 final.dataframe <- dat0 %>%
   mutate(
-    species_note = extract_trailing_note(species_as_published),
+    ## The species footnote is a superscript in the PDF; the snapshot loses that
+    ## typography, so the marker arrives glued to the epithet ("Homo sapiensb").
+    ## Matched explicitly rather than with a generic trailing-letter rule, which
+    ## would read the final "a" of "Gorilla gorilla" as a marker.
+    species_note = if_else(str_detect(species_as_published, "sapiensb\\s*$"),
+                           "b", NA_character_),
     cf_note      = extract_trailing_note(correction_factor_raw),
 
-    species = remove_trailing_note(species_as_published),
-    species = recode(species, "Symphalagus syndactylus" = "Symphalangus syndactylus"),
+    ## "as published" means the name as printed WITHOUT its footnote marker: the
+    ## superscript is typography, not part of the name. It is split off here and
+    ## carried in footnote_ref, so the marker is never stored in both places.
+    species_as_published = remove_trailing_note(species_as_published),
+    footnote_ref = species_note,
+
+    species = recode(species_as_published, "Symphalagus syndactylus" = "Symphalangus syndactylus"),
 
     brain_mass_g         = num_from_cell(brain_mass_g_raw),
     correction_factor    = num_from_cell(correction_factor_raw),
@@ -165,7 +175,7 @@ final.dataframe <- dat0 %>%
 
     correction = mapply(
       collapse_notes,
-      if_else(species_note == "b", "removed footnote b from species; Homo sapiens values differ slightly from Amunts et al. 2007a because of shrinkage-correction convention", NA_character_),
+      if_else(!is.na(species_note) & species_note == "b", "footnote marker b split out of the species name into footnote_ref; Homo sapiens values differ slightly from Amunts et al. 2007a because of shrinkage-correction convention", NA_character_),
       if_else(cf_assumed, "removed footnote c from correction_factor; Pan troglodytes mean correction factor used because brain weight unknown", NA_character_),
       if_else(species_as_published == "Symphalagus syndactylus", "corrected published spelling Symphalagus to Symphalangus", NA_character_),
       SIMPLIFY = TRUE,
@@ -175,6 +185,7 @@ final.dataframe <- dat0 %>%
   select(
     species,
     species_as_published,
+    footnote_ref,
     code,
     collection,
     brain_mass_g,
@@ -207,13 +218,25 @@ if (any(.mac)) {
 
 ## ---- validation --------------------------------------------------------------
 expected_cols <- c(
-  "species", "species_as_published", "code", "collection",
+  "species", "species_as_published", "footnote_ref", "code", "collection",
   "brain_mass_g", "correction_factor", "brain_volume_cm3",
   "left_V1_volume_cm3", "left_LGN_volume_cm3", "neocortex_volume_cm3",
   "cf_assumed", "source", "correction"
 )
 if (!identical(names(final.dataframe), expected_cols)) {
   stop("Output columns are not in the expected order.", call. = FALSE)
+}
+
+## No footnote marker may survive in species_as_published: every cell must be a
+## clean binomial. Guards against a snapshot re-extract silently regluing them.
+if (!all(grepl("^[A-Z][a-z]+ [a-z]+$", final.dataframe$species_as_published))) {
+  stop("Footnote marker left glued to species_as_published: ",
+       paste(unique(final.dataframe$species_as_published[
+         !grepl("^[A-Z][a-z]+ [a-z]+$", final.dataframe$species_as_published)]),
+         collapse = ", "), call. = FALSE)
+}
+if (sum(!is.na(final.dataframe$footnote_ref)) != 10L) {
+  stop("Expected 10 Homo sapiens rows carrying footnote_ref == 'b'.", call. = FALSE)
 }
 
 expected_n <- 29L

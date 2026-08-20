@@ -5,20 +5,20 @@ Body_weight,body weight,Body_weight,Mass.g,,primary,"Insectivora, Scandentia & P
 Brain_weight,fresh brain weight,Brain_weight,Mass.mg,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_TablesI-VI,Stephan code 2,
 Ventricles,ventricular system,Ventricles,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_TablesI-VI,Stephan code 3,
 Meninges_hypophysis_nerves_etc,"meninges, hypophysis, nerves etc.",Meninges_hypophysis_nerves_etc,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_TablesI-VI,Stephan code 4,
-Total_brain_net_volume,net brain volume (= codes 6-10),Total_brain_net_volume,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_TablesI-VI,Stephan code 5,
-Medulla_oblongata,medulla oblongata,Medulla_oblongata,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_TablesI-VI,Stephan code 6,
-Cerebellum,cerebellum (incl. brachia & nuclei pontis),Cerebellum,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_TablesI-VI,Stephan code 7,
-Mesencephalon,mesencephalon (without substantia reticularis),Mesencephalon,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_TablesI-VI,Stephan code 8,
-Diencephalon,diencephalon,Diencephalon,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_TablesI-VI,Stephan code 9,
+Total_brain_net_volume,net brain volume (= sum of codes 6-10; excludes ventricles and code-4 non-brain tissues),Total_brain_net_volume,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_TablesI-VI,Stephan code 5; not interchangeable with a generic whole-brain volume,Table I-III footnote 5
+Medulla_oblongata,medulla oblongata including the inseparable substantia reticularis assigned from the mesencephalon,Medulla_oblongata,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_TablesI-VI,Stephan code 6,Table I-III footnote 6
+Cerebellum,cerebellum including brachium and nuclei pontis,Cerebellum,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_TablesI-VI,Stephan code 7; does not make a separately tabulated pons/VPo an alias,Table I-III footnote 7
+Mesencephalon,mesencephalon without substantia reticularis (the inseparable reticular portion is assigned to medulla oblongata),Mesencephalon,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_TablesI-VI,Stephan code 8,Table I-III footnotes 6 and 8
+Diencephalon,diencephalon including pallidum and excluding hypophysis,Diencephalon,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_TablesI-VI,Stephan code 9; hypophysis is assigned to code 4,Table I-III footnote 9
 Telencephalon,telencephalon,Telencephalon,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_TablesI-VI,Stephan code 10,
 Bulbus_olfactorius,main olfactory bulb,Bulbus_olfactorius,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_TablesI-VI,Stephan code 11,
 Bulbus_olfactorius_accessorius,accessory olfactory bulb,Bulbus_olfactorius_accessorius,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_TablesI-VI,Stephan code 12,
-Lobus_piriformis,piriform lobe,Lobus_piriformis,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_TablesI-VI,Stephan code 13,
-Septum,septum,Septum,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_TablesI-VI,Stephan code 14,
-Striatum,striatum,Striatum,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_TablesI-VI,Stephan code 15,
-Schizo_cortex,schizocortex,Schizo_cortex,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_TablesI-VI,Stephan code 16,
-Hippocampus,hippocampus,Hippocampus,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_TablesI-VI,Stephan code 17,
-Neocortex,neocortex incl. white matter & corpus callosum (NeoWG),Neocortex,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_TablesI-VI,Stephan code 18,
+Lobus_piriformis,piriform lobe including palaeocortex (29) and amygdala (30) but excluding schizocortex (16),Lobus_piriformis,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_TablesI-VI,Stephan code 13,Table IV-VI footnote 13
+Septum,"septum including septum pellucidum, septum verum, the whole diagonal band of Broca, and bed nuclei of the anterior commissure and stria terminalis",Septum,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_TablesI-VI,Stephan code 14,Table IV-VI footnote 14
+Striatum,"striatum including caudate, putamen, nucleus accumbens, and internal-capsule portions running through the striatum; excludes pallidum",Striatum,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_TablesI-VI,Stephan code 15,Table IV-VI footnote 15
+Schizo_cortex,"schizocortex: entorhinal, perirhinal, presubicular and parasubicular cortices plus underlying white matter",Schizo_cortex,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_TablesI-VI,Stephan code 16,Table IV-VI footnote 16
+Hippocampus,"retro-/postcommissural, supra- and precommissural hippocampus",Hippocampus,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_TablesI-VI,Stephan code 17,Table IV-VI footnote 17
+Neocortex,"neocortex including underlying white matter, corpus callosum, and insular/subgenual/cingular/retrosplenial transitional cortices",Neocortex,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_TablesI-VI,Stephan code 18 (NeoWG),Table IV-VI footnote 18
 Epithalamus,epithalamus,Epithalamus,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_TablesI-VI,Stephan code 19,
 Thalamus,thalamus,Thalamus,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_TablesI-VI,Stephan code 20,
 Hypothalamus,hypothalamus,Hypothalamus,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_TablesI-VI,Stephan code 21,
@@ -27,13 +27,13 @@ Pallidum,pallidum,Pallidum,Vol.mm3,,primary,"Insectivora, Scandentia & Primates"
 Nucleus_subthalamicus,nucleus subthalamicus,Nucleus_subthalamicus,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_TablesI-VI,Stephan code 24,
 Capsula_interna,internal capsule,Capsula_interna,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_TablesI-VI,Stephan code 25,
 Tractus_opticus,optic tract,Tractus_opticus,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_TablesI-VI,Stephan code 26,
-Area_striata,area striata (primary visual cortex),Area_striata,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_TablesI-VI,Stephan code 27,
+Area_striata,area striata (primary visual cortex) including underlying white matter,Area_striata,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_TablesI-VI,Stephan code 27; not equivalent to area-striata grey matter,Table IX footnote 27
 Corpus_geniculatum_laterale,lateral geniculate body,Corpus_geniculatum_laterale,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_TablesI-VI,Stephan code 28,
-Palaeocortex,palaeocortex,Palaeocortex,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_TablesI-VI,Stephan code 29,
+Palaeocortex,"palaeocortex including retrobulbar cortex (anterior olfactory nucleus), prepiriform cortex, lateral/medial/internal olfactory tracts, anterior commissure, olfactory tubercle, substantia innominata, and basal nucleus of Meynert",Palaeocortex,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_TablesI-VI,Stephan code 29,Table X-XI footnote 29
 Amygdala,amygdala,Amygdala,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_TablesI-VI,Stephan code 30,
-Complexus_centromedialis,centromedial amygdaloid complex,Complexus_centromedialis,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_TablesI-VI,Stephan code 31,
+Complexus_centromedialis,"centromedial amygdaloid complex: central and medial nuclei plus anterior amygdaloid area including nucleus of lateral olfactory tract; intercalated masses assigned here",Complexus_centromedialis,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_TablesI-VI,Stephan code 31,Table X-XI footnote 31
 Nucleus_tractus_olfactorius,nucleus of the olfactory tract,Nucleus_tractus_olfactorius,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_TablesI-VI,Stephan code 32,
-Complexus_corticobasolateralis,corticobasolateral amygdaloid complex,Complexus_corticobasolateralis,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_TablesI-VI,Stephan code 33,
+Complexus_corticobasolateralis,"corticobasolateral amygdaloid complex: lateral, cortical and basal nuclei; basal includes accessory, magnocellular and parvocellular parts",Complexus_corticobasolateralis,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_TablesI-VI,Stephan code 33,Table X-XI footnote 33
 Nucleus_amygdalae_basalis_pars_magnocellularis,"basal amygdaloid nucleus, magnocellular part",Nucleus_amygdalae_basalis_pars_magnocellularis,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_TablesI-VI,Stephan code 34,
 Complexus_vestibularis,vestibular nuclear complex,Complexus_vestibularis,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_TablesI-VI,Stephan code 35,
 Nucleus_vestibularis_superior,superior vestibular nucleus,Nucleus_vestibularis_superior,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_TablesI-VI,Stephan code 36,

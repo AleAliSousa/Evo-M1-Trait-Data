@@ -1,0 +1,53 @@
+"species","common_name","variable","stat","n_specimens","printed","recomputed","pct_diff","agrees_at_printed_precision"
+"Ornithorhynchus anatinus","Platypus","brain_volume_mm3","SD",3,5173,5173.13473630834,-0.0026045389345551,TRUE
+"Ornithorhynchus anatinus","Platypus","brain_volume_mm3","mean",3,11291,11291,0,TRUE
+"Ornithorhynchus anatinus","Platypus","cb_ext_surface_esa_mm2","SD",3,186,186.250727067932,-0.134618034452373,TRUE
+"Ornithorhynchus anatinus","Platypus","cb_ext_surface_esa_mm2","mean",3,408,407.666666666667,0.0817661488143862,TRUE
+"Ornithorhynchus anatinus","Platypus","cb_pial_surface_psa_mm2","SD",3,389,389.131083312552,-0.0336861582569506,TRUE
+"Ornithorhynchus anatinus","Platypus","cb_pial_surface_psa_mm2","mean",3,854,854,0,TRUE
+"Ornithorhynchus anatinus","Platypus","cb_white_matter_mm3","SD",3,74,73.852984593267,0.199064949836019,TRUE
+"Ornithorhynchus anatinus","Platypus","cb_white_matter_mm3","mean",3,127,126.766666666667,0.184065211674994,TRUE
+"Ornithorhynchus anatinus","Platypus","deep_cb_nu_volume_mm3","SD",3,4.72,4.71628384783331,0.0787940736094696,TRUE
+"Ornithorhynchus anatinus","Platypus","deep_cb_nu_volume_mm3","mean",3,23.5,23.4666666666667,0.142045454545462,TRUE
+"Ornithorhynchus anatinus","Platypus","flocculo_nodular_cb_cx_mm3","SD",3,7.09,7.10023473790362,-0.144146472355165,FALSE
+"Ornithorhynchus anatinus","Platypus","flocculo_nodular_cb_cx_mm3","mean",3,22.9,22.9666666666667,-0.29027576197389,FALSE
+"Ornithorhynchus anatinus","Platypus","foliation_index","SD",3,NA,0.167431578064991,NA,FALSE
+"Ornithorhynchus anatinus","Platypus","foliation_index","mean",3,2.1,2.08666666666667,0.638977635782762,TRUE
+"Ornithorhynchus anatinus","Platypus","hemisphere_excl_fl_mm3","SD",3,161,161.016562295105,-0.0102860816729839,TRUE
+"Ornithorhynchus anatinus","Platypus","hemisphere_excl_fl_mm3","mean",3,296,295.333333333333,0.225733634311519,FALSE
+"Ornithorhynchus anatinus","Platypus","pn_rttg_volume_mm3","SD",3,14.9,14.9017896017,-0.0120093072563875,TRUE
+"Ornithorhynchus anatinus","Platypus","pn_rttg_volume_mm3","mean",3,25.9,25.8666666666667,0.128865979381436,TRUE
+"Ornithorhynchus anatinus","Platypus","ratio_hemisph_vermis","SD",3,NA,0.100166528008778,NA,FALSE
+"Ornithorhynchus anatinus","Platypus","ratio_hemisph_vermis","mean",3,0.79,0.793333333333333,-0.420168067226886,TRUE
+"Ornithorhynchus anatinus","Platypus","total_cb_cx_volume_mm3","SD",3,359,358.744105642634,0.0713306095740886,TRUE
+"Ornithorhynchus anatinus","Platypus","total_cb_cx_volume_mm3","mean",3,685,684.666666666667,0.0486854917234719,TRUE
+"Ornithorhynchus anatinus","Platypus","total_cb_volume_mm3","SD",3,438,436.61119240502,0.318087950821868,FALSE
+"Ornithorhynchus anatinus","Platypus","total_cb_volume_mm3","mean",3,835,834.666666666667,0.0399361022364263,TRUE
+"Ornithorhynchus anatinus","Platypus","vermis_excl_cb10_mm3","SD",3,191,190.777357147016,0.116702975821538,TRUE
+"Ornithorhynchus anatinus","Platypus","vermis_excl_cb10_mm3","mean",3,366,366,0,TRUE
+"Tachyglossus aculeatus","Short-beaked echidna","brain_volume_mm3","SD",3,98.4,98.3988482317417,0.00117050989825824,TRUE
+"Tachyglossus aculeatus","Short-beaked echidna","brain_volume_mm3","mean",3,20079,20078.6666666667,0.00166013679526589,TRUE
+"Tachyglossus aculeatus","Short-beaked echidna","cb_ext_surface_esa_mm2","SD",3,73.9,73.8985791473693,0.00192270629170113,TRUE
+"Tachyglossus aculeatus","Short-beaked echidna","cb_ext_surface_esa_mm2","mean",3,539,539,0,TRUE
+"Tachyglossus aculeatus","Short-beaked echidna","cb_pial_surface_psa_mm2","SD",3,182,182.278175691259,-0.15261053069225,TRUE
+"Tachyglossus aculeatus","Short-beaked echidna","cb_pial_surface_psa_mm2","mean",3,1187,1187.33333333333,-0.0280741156653502,TRUE
+"Tachyglossus aculeatus","Short-beaked echidna","cb_white_matter_mm3","SD",3,123,123.293687321506,-0.238201426112232,TRUE
+"Tachyglossus aculeatus","Short-beaked echidna","cb_white_matter_mm3","mean",3,210,210.333333333333,-0.158478605388277,TRUE
+"Tachyglossus aculeatus","Short-beaked echidna","deep_cb_nu_volume_mm3","SD",3,2.49,2.51064400768674,-0.822259453093858,FALSE
+"Tachyglossus aculeatus","Short-beaked echidna","deep_cb_nu_volume_mm3","mean",3,24.4,24.3666666666667,0.136798905608747,TRUE
+"Tachyglossus aculeatus","Short-beaked echidna","flocculo_nodular_cb_cx_mm3","SD",3,8.47,8.50078427754365,-0.362134557689848,FALSE
+"Tachyglossus aculeatus","Short-beaked echidna","flocculo_nodular_cb_cx_mm3","mean",3,31.6,31.5666666666667,0.105596620908136,TRUE
+"Tachyglossus aculeatus","Short-beaked echidna","foliation_index","SD",3,NA,0.141067359796659,NA,FALSE
+"Tachyglossus aculeatus","Short-beaked echidna","foliation_index","mean",3,2.2,2.2,0,TRUE
+"Tachyglossus aculeatus","Short-beaked echidna","hemisphere_excl_fl_mm3","SD",3,39.8,39.9624824053762,-0.406587367941676,FALSE
+"Tachyglossus aculeatus","Short-beaked echidna","hemisphere_excl_fl_mm3","mean",3,344,344,0,TRUE
+"Tachyglossus aculeatus","Short-beaked echidna","pn_rttg_volume_mm3","SD",3,9.02,9.01461775858152,0.0597057086902584,FALSE
+"Tachyglossus aculeatus","Short-beaked echidna","pn_rttg_volume_mm3","mean",3,31.2,31.1666666666667,0.106951871657759,TRUE
+"Tachyglossus aculeatus","Short-beaked echidna","ratio_hemisph_vermis","SD",3,NA,0.242487113059643,NA,FALSE
+"Tachyglossus aculeatus","Short-beaked echidna","ratio_hemisph_vermis","mean",3,0.64,0.64,0,TRUE
+"Tachyglossus aculeatus","Short-beaked echidna","total_cb_cx_volume_mm3","SD",3,259,187.702779237105,37.9841050050905,FALSE
+"Tachyglossus aculeatus","Short-beaked echidna","total_cb_cx_volume_mm3","mean",3,969,968.333333333333,0.0688468158347637,FALSE
+"Tachyglossus aculeatus","Short-beaked echidna","total_cb_volume_mm3","SD",3,385,311.649375634435,23.53626546379,FALSE
+"Tachyglossus aculeatus","Short-beaked echidna","total_cb_volume_mm3","mean",3,1203,1203.33333333333,-0.0277008310249245,TRUE
+"Tachyglossus aculeatus","Short-beaked echidna","vermis_excl_cb10_mm3","SD",3,215,214.795251344158,0.0953227106096326,TRUE
+"Tachyglossus aculeatus","Short-beaked echidna","vermis_excl_cb10_mm3","mean",3,593,593,0,TRUE

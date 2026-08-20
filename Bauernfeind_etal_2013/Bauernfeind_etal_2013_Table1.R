@@ -21,6 +21,20 @@
 # Species means (and the two-Pongo-species merge the CSV uses) are a downstream
 # aggregation -- see the comparison script -- not done here.
 #
+# FOOTNOTE MARKERS SPLIT OUT OF THE SPECIMEN ID (changed 2026-08-19).
+# Every one of the 43 printed specimen labels carries a trailing footnote marker, and the
+# markers are not decoration -- they record the measurement METHOD:
+#     a  Volumes estimated using StereoInvestigator software.   (22 individuals)
+#     b  Volumes estimated using ImageJ software.               (21 individuals)
+#     c  The left hemisphere was unavailable.                   (1: Pongo pygmaeus "Sabtu")
+# Gluing them onto the ID made the ID wrong ("Nambob" for Nambo, "Sabtub,c" for Sabtu) and
+# unjoinable: Table 2 prints the same animals WITHOUT markers, so left and right hemispheres
+# of one brain could not be matched. They are now three real columns -- footnote_ref,
+# measurement_software, left_hemisphere_unavailable -- and `Individual` holds the accession
+# only. Verified: all 15 Table 2 individuals now match a Table 1 individual exactly.
+# See ../__merging_volumes/PLAN__hierarchical_curation.md (specimen identity, step 4) and
+# the house rule that a footnote marker is never part of the value it is attached to.
+#
 # Input  : Bauernfeind_etal_2013_Table1_snapshot.xlsx   sheet: Table1
 # Outputs: Bauernfeind_etal_2013_Table1.csv             one row per individual (43)
 #          <DOI>.tsv in __Public/comparative-data/        named from __ReadMe.xlsx
@@ -73,9 +87,38 @@ dat <- dat %>%
             str_squish(paste(full_genus, word(str_squish(species_disp), 2, -1))),
             str_squish(species_disp)))
 
+# Split the trailing footnote marker(s) off the specimen label. The markers are exactly
+# a / b / c, optionally comma-separated ("b,c"); anchored at the end so an accession that
+# merely contains a letter (STD-IIA-54, MCZ-2007-52, CA0171) is untouched.
+FOOTNOTES <- c(a = "Volumes estimated using StereoInvestigator software",
+               b = "Volumes estimated using ImageJ software",
+               c = "The left hemisphere was unavailable")
+dat <- dat %>%
+  mutate(individual_as_published = str_squish(individual),
+         footnote_ref = str_match(individual_as_published, "((?:a|b|c)(?:,(?:a|b|c))*)$")[, 2],
+         individual   = str_squish(str_replace(individual_as_published,
+                                               "((?:a|b|c)(?:,(?:a|b|c))*)$", "")),
+         measurement_software = case_when(
+           str_detect(footnote_ref, "a") ~ "StereoInvestigator",
+           str_detect(footnote_ref, "b") ~ "ImageJ",
+           TRUE ~ NA_character_),
+         left_hemisphere_unavailable = !is.na(footnote_ref) & str_detect(footnote_ref, "c"))
+
+# Every printed label must carry a method marker (a or b): that is what makes stripping safe.
+# If a future re-snapshot breaks that, fail loudly rather than mangle an accession number.
+stopifnot(
+  all(!is.na(dat$footnote_ref)),
+  all(!is.na(dat$measurement_software)),
+  all(nzchar(dat$individual)),
+  !anyDuplicated(paste(dat$Species, dat$individual)))
+
 final.dataframe <- dat %>% transmute(
   Species,
-  Individual           = str_squish(individual),
+  Individual           = individual,
+  individual_as_published,
+  footnote_ref,
+  measurement_software,
+  left_hemisphere_unavailable,
   Collection           = str_squish(collection),
   section_thickness_mm = num(section_thickness_mm),
   age                  = num(age),
@@ -99,6 +142,13 @@ options(scipen = 999)
 write.csv(final.dataframe, file = paste0(item_name, ".csv"), row.names = FALSE)
 message("Wrote ", item_name, ".csv  (", nrow(final.dataframe), " individuals, ",
         dplyr::n_distinct(final.dataframe$Species), " species)")
+message("  footnotes split off the specimen ID: ",
+        paste(sprintf("%s=%d", names(table(final.dataframe$footnote_ref)),
+                      as.integer(table(final.dataframe$footnote_ref))), collapse = ", "),
+        "  ->  software: ",
+        paste(sprintf("%s=%d", names(table(final.dataframe$measurement_software)),
+                      as.integer(table(final.dataframe$measurement_software))), collapse = ", "))
+for (f in names(FOOTNOTES)) message("    ", f, " = ", FOOTNOTES[[f]])
 
 ## ---- also write the DOI-coded TSV to __Public/comparative-data/ (skipped if shared repo absent) ----
 tsv_dir <- file.path(base, "__Public/comparative-data")

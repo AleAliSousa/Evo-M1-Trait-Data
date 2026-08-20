@@ -26,6 +26,16 @@ Row 1 caption (`TABLE 12-2. Volumes of Brain Components and Their Percentages of
 
 The table is internally consistent: the six top-level components (Medulla 5.5, Cerebellum-without-pons 42.9, Pons 4.3, Mesencephalon 4.0, Diencephalon 13.5, Telencephalon 238.3) sum to the total brain and their percentages to 100; the telencephalic parts (Neocortex 219.8 + Hippocampus 2.7 + Regio entorhinalis 1.3 + Paleocortex 2.4 + Septum 0.6 + Corpus striatum 11.5) sum to 238.3.
 
+### Structure-key implications
+
+`Pons` here is the top-level **whole pons** row and maps to `Pons_Vol.mm3`.
+It must not be treated as Matano 1985b's ventral-pons (`VPo`) term, even though
+the Pongo value in `Stephan_primates` happens to sit in a column whose other
+species were populated from Matano. Likewise, `Cerebellum_without_pons` keeps
+the paper's explicit exclusion in its definition, and `Gray area striata` is a
+grey-only subcomponent distinct from Stephan 1981's area-striata total (which
+includes underlying white matter).
+
 ## Preparation → `Zilles__Rehkamper_1988_Table12-2.csv`
 
 One row per structure (18) for Pongo: `Species_Zilles1988, structure, fresh_volume_cc3, volume_mm3, pct_total_brain`. The R script reads past the caption+header (data from row 3), drops the footnote row (no numeric volume), squishes the structure label (removing the snapshot's indentation), and converts cc³ → mm³ (×1000). There are no species-name superscripts to translate. Also writes an ISBN-named TSV (`ISBN%3A9780195043716_Table12-2.tsv`) to `../__Public/comparative-data/` (Item encoded looked up in `__ReadMe.xlsx` by the registry Item name `Zilles_Rehkämper_1988_Table12-2`; the on-disk files use the ASCII folder spelling).

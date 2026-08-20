@@ -44,8 +44,16 @@ options(scipen = 999)
 DosSantos_etal_2020_Table1 <- read_csv(paste0(folder_path,"DosSantos_etal_2020_Table1.csv"))
 
 # 2. Read the unpublished dataset  
-tabledirectxl <- read_excel(paste0(folder_path,"2020-PublishedDataMammalsMicroglia - cópia.xlsx"))
-
+#    The authors' spreadsheet is data they shared privately, so it is NOT in this public
+#    repository: it lives in the private companion repo Evo-M1-Traits-Data-restricted
+#    (unpublished_data/____Unpublished__DosSantos_microglia_2024/), which also carries the
+#    ReadMe recording how it was received. _tools/restricted_data.R resolves it and stops
+#    with an explanatory message if that repo is not mounted.
+source(file.path(base, "_tools", "restricted_data.R"))
+unpublished_xlsx <- evom1_restricted_file(
+  "unpublished_data", "____Unpublished__DosSantos_microglia_2024",
+  "2020-PublishedDataMammalsMicroglia - cópia.xlsx")
+tabledirectxl <- read_excel(unpublished_xlsx)
 # I. Simplify unpublished dataset for comparison
 # A. Calculate Missing averages
 # Define the specific structure values to check

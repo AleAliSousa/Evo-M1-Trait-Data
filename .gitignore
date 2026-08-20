@@ -13,3 +13,33 @@ ____Unpublished__ProjectKaskan/.Rhistory
 
 # Local agent / editor state — never commit
 .claude/
+
+# --- R's own regression-test artefacts ------------------------------------------
+# tools::testInstalledBasic() / testInstalledPackages() write these into the
+# *current directory*. On 2026-08-19 an R session whose cwd was a repo root left
+# 74 of them there. Root-anchored so a real file of the same name deeper in the
+# tree is unaffected. See REPO_BOUNDARY.md.
+/reg-tests-*.pdf
+/reg-examples-*.pdf
+/reg-plot*.pdf
+/Rplots.pdf
+/PS-*.ps
+/pdf-*.pdf
+/PDF-*.pdf
+/Encoding3.pdf
+/cairo_pdf-encodings*.pdf
+/*.Rout.fail
+/utils.tar*
+/ex.gz
+/pkg.utf8/
+/p-r-random-tests_seed
+/p-qbeta-strict-tst.pdf
+/nls-test.pdf
+/spline-tst.pdf
+/smooth.spline-test.pdf
+/ts-test.pdf
+/matrixView.pdf
+/recordedplot.rds
+/temp.png
+/test.png
+/test[0-9].png

@@ -217,3 +217,39 @@ undercount that named only *Propithecus*).
 1. `Barks_etal_2014/Barks_etal_2014_unpublishedviaDeCasien.R`  → writes Barks Public TSV
 2. `Sherwood_etal_2004/Sherwood_etal_2004_unpublishedviaDeCasien.R`  → writes Sherwood Public TSV
 3. `DeCasien_Higham_2019/DeCasien_Higham_2019_SupplementaryData1-BrainRegion.R`  → comparison outputs
+
+---
+
+# 2026-08-19 — item renamed: `unpublishedviaDeCasien` → `viaDeCasien2019`
+
+The two items carrying the regional volumes that DeCasien & Higham (2019) attribute to Sherwood
+et al. 2004 (ref 64) and Barks et al. 2014 (ref 65) were named `<Paper>_unpublishedviaDeCasien`.
+That label was misleading: **the values are published** — they appear in DeCasien & Higham's
+Supplementary Data 1, which is where this project read them. What DeCasien says is that the *authors*
+provided them as unpublished data, i.e. they are absent from Sherwood's and Barks's own tables. The
+data is published; only its route is unusual.
+
+Renamed to `viaDeCasien2019`, which records the route without the false claim:
+
+| before | after |
+|---|---|
+| `Sherwood_etal_2004_unpublishedviaDeCasien` | `Sherwood_etal_2004_viaDeCasien2019` |
+| `Barks_etal_2014_unpublishedviaDeCasien` | `Barks_etal_2014_viaDeCasien2019` |
+| `10.1002%2Fajp.20048_unpublishedviaDeCasien.tsv` | `10.1002%2Fajp.20048_viaDeCasien2019.tsv` |
+| `10.1002%2Fajpa.22646_unpublishedviaDeCasien.tsv` | `10.1002%2Fajpa.22646_viaDeCasien2019.tsv` |
+
+Each item stays keyed to the **measuring** paper's DOI, per the convention that credits whoever made
+the measurement; the item number carries the route. `Data role` was blank on both rows and is now
+`primary`, with the provenance recorded in the registry `Note`.
+
+Renamed: the `.R`, `_snapshot.xlsx` and `.csv` in `Sherwood_etal_2004/` and `Barks_etal_2014/`; both
+`standardized_term_by_reference/*_standardized_terms.csv` (filename *and* `Reference` column); both
+public TSVs; `__ReadMe.xlsx` col D plus the cached `Item name` / `Item encoded`. The flag classifier in
+`DeCasien_Higham_2019_SupplementaryData1-BrainRegion.R` now matches `viaDeCasien`, so it still
+recognises the pre-rename label in older outputs.
+
+**Needs a re-run to catch up** (all generated, none hand-maintained): `__merging_volumes/standardized_term.R`
+→ `standardized_term_volumes.csv`, `_audit_missing_structures.R`, the DeCasien comparison itself,
+`_tools/__file_list.R` → the registry's `AUTO_Public_TSV_FileList`, and `update_shinyapp.R` →
+`__ShinyApp/data/source_manifest.csv`. Neither item is in a `volumes_compiled` item list, and neither
+appears in `volumes_long.csv`, so no merged value changes.

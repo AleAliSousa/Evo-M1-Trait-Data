@@ -10,8 +10,9 @@ survive verbatim; the reformat (deSousa_etal_2009_Table1.R) does the typing.
 
 Nothing is corrected here. Two things that look wrong are carried as printed and
 flagged in the README instead:
-  * ``ppz`` (Zahlia) neocortex 279 cm3 is the value de Sousa et al. 2010 Table 1
-    prints for a *different* bonobo (YN86-137); Zahlia's own is 214.4.
+  * ``ppz`` (Zahlia) neocortex 279 cm3 belongs to a *different* bonobo, YN86-137.
+    The column comes from Carol MacLeod's anonymously-labelled sheet, where YN86-137
+    is ``PAN PANISCUS H1`` and Zahlia is ``H2`` (214.405): the wrong H-row was taken.
   * brain mass is rounded relative to 2010 Table 1 (58 vs 57.6; 360 vs 359.5).
 
 Run:  python3 deSousa_etal_2009_Table1_extract_snapshot.py [--verify]

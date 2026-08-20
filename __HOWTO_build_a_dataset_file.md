@@ -19,6 +19,7 @@ Source (PDF / journal Excel / Adobe export)
   → analysis CSV    one tidy row per species (or individual)   (..._Table<N>.csv)
   → public TSV      DOI/PMID-named, in __Public/comparative-data/   ← REQUIRED either way
   → comparison      QA: frozen source ↔ curated data, 0 mismatches  (comparison/..._compare_to_*.R)
+                      ** lives in the PRIVATE repo Evo-M1-Traits-Data-restricted — see __COMPARISON_MOVED.md **
   → definitions     data dictionary, one row per variable      (reference_tables/..._definitions.csv)
   → README          source, steps, checks                      (..._Table<N>.README.md)
   → merge           added to __merging_volumes / __merging_cellcounts (if PRIMARY)
@@ -108,7 +109,14 @@ One folder per publication; one set of files per **table** built. `<Folder>` is 
   <Folder>_Table<N>.README.md                source + steps + checks
   reference_tables/
     <Folder>_Table<N>_definitions.csv        data dictionary
-  comparison/
+```
+
+The **comparison folder is no longer part of this tree.** Since 2026-08-19 it lives in the private
+companion repo `Evo-M1-Traits-Data-restricted`, under the same paper-folder name (see
+`__COMPARISON_MOVED.md`, and that repo's `README__comparison_migration.md`):
+
+```
+Evo-M1-Traits-Data-restricted/restricted_checks/<Folder>/comparison/
     <Source>.csv                             the curated/working table, audited only
     <Folder>_Table<N>_compare_to_<Source>_csv.R   QA script
     <Folder>_Table<N>_comparison_report_from_R.csv     (+ _mismatches_from_R.csv)
@@ -249,7 +257,14 @@ scripts need it); it is a fix to reach for on a parse error, not a mandatory wra
 
 ---
 
-## 7. Comparison / QA (`comparison/`)
+## 7. Comparison / QA (`comparison/`, now in the private repo)
+
+> **Location.** Build the comparison folder in `Evo-M1-Traits-Data-restricted/restricted_checks/<Folder>/comparison/`, not
+> here. Start the script from the preamble documented in that repo's
+> `README__comparison_migration.md` (`cmp_dir` / `repo` / `paper_dir` via `_paths.R`) rather than from
+> `../` paths, since the paper folder is no longer its parent. This repo keeps the *statement* of the
+> audit result in the paper README; the script and its reports live there.
+
 
 **When a curated/independent copy of the table exists** (a project CSV, or a TSV prepared elsewhere),
 write a comparison script that audits the snapshot against it and **requires 0 value mismatches** on
@@ -371,7 +386,7 @@ applies this rubric.
 - [ ] analysis CSV = right number of rows (species/individuals)
 - [ ] **DOI/PMID TSV in `__Public/comparative-data/`**; `Item number` set in `__ReadMe.xlsx` *(invariant)*
 - [ ] printed species name preserved; rows added to `species_key.csv`
-- [ ] comparison = **0 value mismatches** *(when a curated source exists)*; `csv_only`/`snapshot_only` explained
+- [ ] comparison = **0 value mismatches** *(when a curated source exists)*; `csv_only`/`snapshot_only` explained — script + reports in the **private** repo, result stated in the paper README here
 - [ ] `definitions.csv` complete (10 cols; canonical Structure + Measure; role/taxon)
 - [ ] README written
 - [ ] `Data role` set (primary/secondary/both); if secondary, **not** merged

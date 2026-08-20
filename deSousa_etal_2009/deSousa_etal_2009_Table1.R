@@ -25,8 +25,9 @@
 ## required_suffix = _left.
 ##
 ## Nothing printed is corrected here. Two printed oddities are carried verbatim and
-## flagged in the README instead: (1) the ppz/Zahlia neocortex 279 cm3 is the value
-## de Sousa 2010 Table 1 prints for a different bonobo; (2) brain mass is rounded
+## flagged in the README instead: (1) the ppz/Zahlia neocortex 279 cm3 belongs to a
+## different bonobo (YN86-137 = "PAN PANISCUS H1" in Carol MacLeod's anonymously
+## labelled source sheet; Zahlia is "H2", 214.405); (2) brain mass is rounded
 ## relative to 2010 Table 1 (58 vs 57.6; 360 vs 359.5).
 ## =============================================================================
 

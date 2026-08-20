@@ -101,6 +101,12 @@ if (n_skip) {
 
 todo <- which(run_log$status == "NOT_RUN")
 
+## A script that writes to a relative path writes into the *runner's* working
+## directory, not its own. Snapshot the root so a stray write is reported at the
+## end instead of being committed. (On 2026-08-19 an unrelated R session with
+## cwd = the private repo's root left 74 artefacts there; see REPO_BOUNDARY.md.)
+root_before <- sort(list.files(root_dir, all.files = TRUE, no.. = TRUE))
+
 for (k in seq_along(todo)) {
   i <- todo[k]
   script <- r_scripts[i]
@@ -112,13 +118,18 @@ for (k in seq_along(todo)) {
   run_log$status[i] <- "RUNNING"
   write.csv(run_log, log_file, row.names = FALSE)
 
-  result <- system2(
-    command = file.path(R.home("bin"), "Rscript"),
-    args = shQuote(script),
-    stdout = TRUE,
-    stderr = TRUE,
-    timeout = TIMEOUT_SEC
-  )
+  ## cwd = the script's own folder, so a relative write lands beside the script
+  result <- local({
+    wd <- setwd(dirname(script))
+    on.exit(setwd(wd), add = TRUE)
+    system2(
+      command = file.path(R.home("bin"), "Rscript"),
+      args = shQuote(script),
+      stdout = TRUE,
+      stderr = TRUE,
+      timeout = TIMEOUT_SEC
+    )
+  })
 
   exit_status <- attr(result, "status")
   if (is.null(exit_status)) exit_status <- 0
@@ -140,6 +151,17 @@ for (k in seq_along(todo)) {
 }
 
 cat("\nFinished. Log saved to:\n", log_file, "\n")
+
+## ---- Root tripwire: did anything new appear at the repo root? ----
+root_new <- setdiff(sort(list.files(root_dir, all.files = TRUE, no.. = TRUE)), root_before)
+if (length(root_new)) {
+  cat("\n!! ", length(root_new), " new entr", if (length(root_new) == 1) "y" else "ies",
+      " at the repo root -- a script wrote to a relative path.\n", sep = "")
+  cat("   Do not commit these until you know which script made them:\n")
+  cat(paste0("     ", root_new, collapse = "\n"), "\n")
+} else {
+  cat("\nroot clean: no new top-level files.\n")
+}
 
 ## ---- Summarise results ----
 

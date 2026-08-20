@@ -33,6 +33,35 @@ A wide table: `code`, `group`, `species`, then the 44 structure-volume columns i
 
 These are the paper's own coarse taxonomic groupings (the terms are dated — "insectivore" here is polyphyletic and "prosimian"/"simian" are grades, not clades — but they are the labels the source tables carry, so they are retained verbatim). Finer, current taxonomy (Order/Family, accepted names) is applied downstream via `../_keys/Stephan/` and `../_keys/species_reference.csv` (`Order_Stephan1981`, `Suborder_Stephan1981`, `Family_Stephan1981`).
 
+## Anatomical definitions used by downstream keys
+
+The names in the 44-column table are not always bare modern structure labels.
+The printed footnotes define their inclusions, and those definitions control
+crosswalks even when another table has a similar value:
+
+- code 5 **net brain volume** is the sum of codes 6-10. It is not a generic
+  whole-brain-volume synonym;
+- code 6 medulla receives the substantia reticularis that could not be
+  separated from mesencephalon, while code 8 mesencephalon excludes it;
+- code 7 cerebellum includes brachium and nuclei pontis;
+- code 9 diencephalon includes pallidum and excludes hypophysis;
+- code 13 piriform lobe includes palaeocortex and amygdala and excludes
+  schizocortex;
+- code 15 striatum includes caudate, putamen, nucleus accumbens, and the parts
+  of internal capsule running through the striatum, but excludes pallidum;
+- code 16 schizocortex contains entorhinal, perirhinal, presubicular and
+  parasubicular cortex plus their underlying white matter;
+- code 18 neocortex includes underlying white matter, corpus callosum, and the
+  insular, subgenual, cingular and retrosplenial transitional cortices;
+- code 27 area striata includes underlying white matter, so it must not be keyed
+  to a grey-matter-only V1 term; and
+- codes 29, 31 and 33 have the detailed olfactory/amygdaloid component lists
+  transcribed in `reference_tables/Stephan_etal_1981_TablesI-VI_definitions.csv`.
+
+These statements were checked against the complete footnotes on printed pages
+11, 15, 20 and 21 of the PDF. The definitions CSV is the compact machine-readable
+record; this section records how those definitions affect keying decisions.
+
 ## Laterality note: Stephan 1981 vestibular structures are unilateral
 
 The 1981 paper lists the vestibular complex and four component nuclei as codes 35-39 in Tables XII and XIII. The paper itself does not label those table values as unilateral. However, Baron, Frahm & Stephan (1988), *Comparison of Brain Structure Volumes in Insectivora and Primates. VIII. Vestibular Complex*, later states that the vestibular nucleus volumes in Stephan et al. (1981) were measured in 39 species **from one side only**, whereas the 1988 vestibular data were new measurements **from both sides**. Therefore the Stephan 1981 values below should be treated as measured unilateral volumes, not bilateral volumes.

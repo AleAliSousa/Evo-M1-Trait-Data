@@ -8,7 +8,7 @@ conversion/crosswalk to match), and **D** (a taxonomy/attribution problem).
 
 This document covers the **B** and **D** findings and the re-sourcing outcome for the two rows
 flagged during review (Propithecus, Loris). The **A** recoveries are delivered as two new datasets
-(`Barks_etal_2014_unpublishedviaDeCasien`, `Sherwood_etal_2004_unpublishedviaDeCasien`); the **C**
+(`Barks_etal_2014_viaDeCasien2019`, `Sherwood_etal_2004_viaDeCasien2019` — renamed 2026-08-19 from `*_unpublishedviaDeCasien`; see CHANGES.md); the **C**
 conversions are wired into `DeCasien_Higham_2019_SupplementaryData1-BrainRegion.R`. Both are
 described in `CHANGES.md`.
 

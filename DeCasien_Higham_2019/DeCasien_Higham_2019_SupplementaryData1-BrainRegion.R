@@ -485,7 +485,8 @@ if (length(hit)) {
 ## unpublished-via-DeCasien recoveries and the new mismatch tier without needing to cross-read source.
 cmp <- cmp %>% mutate(
   flag = case_when(
-    grepl("unpublishedviaDeCasien|_via_DeCasien", matched_source) ~ "matched_unpublished_via_DeCasien",
+    ## "viaDeCasien" matches both viaDeCasien2019 and the pre-2026-08-19 "unpublishedviaDeCasien" label
+    grepl("viaDeCasien|_via_DeCasien", matched_source)            ~ "matched_unpublished_via_DeCasien",
     status == "decasien_duplicate_of_Hylobates_lar_Disco"         ~ "decasien_duplicate_specimen_cross_genus",
     status == "description_match_value_mismatch"                  ~ "description_match_value_differs",
     status == "match"                                             ~ "match",

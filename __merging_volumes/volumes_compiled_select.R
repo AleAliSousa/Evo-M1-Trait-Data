@@ -98,7 +98,25 @@ bilateral_stems <- "auto"
 # Earlier wording called Supp. Table 2 "the real bilateral means" — it is not; it is the authors'
 # bilateral ESTIMATE. Delete a name here to let it be doubled (the result is always flagged
 # `estimated_bilateral_from_unilateral`, never silent).
-bilateral_stems_exclude <- c("Area_striata_grey_matter", "Corpus_geniculatum_laterale")
+#
+# 2026-08-19: `Area_striata_grey_matter` REMOVED from this exclusion list. Rationale, measured
+# against the then-current ledger rather than argued: of the 8 species carrying a de Sousa 2010
+# Table 1 left V1, three (Macaca fascicularis, Pan paniscus, Symphalangus syndactylus) have NO
+# both-sides Area_striata_grey_matter_Vol.mm3 from any source, so excluding the stem was costing
+# three species a bilateral V1 for no benefit. They now gain one, flagged
+# `estimated_bilateral_from_unilateral` as usual (2800, 11600, 5400 mm3).
+#
+# What this does NOT do, so nobody re-litigates it: the other five (Homo, Pan troglodytes, Gorilla,
+# Pongo, Hylobates lar) are unaffected, because step 7's anti_join drops a derived value wherever a
+# both-sides value already exists -- Frahm 1984 (Zilles 1988 for Pongo) holds those slots. That is
+# the deliberate "a real both-sides value always beats a doubled estimate" rule. Whether de Sousa
+# 2010's hominoid re-measurement should supersede Frahm 1984's older bilateral is a SOURCE-PREFERENCE
+# question, not a laterality one, and is not decided here.
+#
+# `Corpus_geniculatum_laterale` STAYS excluded: deSousa_etal_2013_Table1 is selected and already
+# publishes the 2x-left LGN (doubling = by_source), so doubling Table 1's left LGN as well would put
+# a second, redundant 2x estimate of the same measurement into the merge.
+bilateral_stems_exclude <- c("Corpus_geniculatum_laterale")
 
 ## ---- taxon filter ---------------------------------------------------------------------------
 ## Restrict the merge to chosen taxa. The registry is _keys/species_taxonomy.csv (Species, Order,

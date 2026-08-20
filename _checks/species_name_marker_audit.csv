@@ -1,0 +1,95 @@
+source,table,printed_value,marker,marker_class,marker_meaning,legend_location,handled,handled_by_column,action
+deSousa_etal_2010,Table1,Homo sapiensb,b,footnote_letter,"values differ from Amunts et al. 2007 by shrinkage-correction convention",table footnote,yes,footnote_ref,none
+deSousa_etal_2009,Table1,Pan paniscusc,c,footnote_letter,table footnote c,table footnote,yes,footnote_ref,none
+deSousa_etal_2009,Table1,Pan troglodytesd,d,footnote_letter,table footnote d,table footnote,yes,footnote_ref,none
+Barger_etal_2014,Table1,"Homo sapiens*,a","*,a",footnote_letter,* = case in Barger 2007; a = paraffin,table footnote,yes,in_barger2007 + processing,none
+Barger_etal_2014,Table1,"Pan troglodytes*,a","*,a",footnote_letter,* = case in Barger 2007; a = paraffin,table footnote,yes,in_barger2007 + processing,none
+Barger_etal_2014,Table1,Pan troglodytesb,b,footnote_letter,b = cryosectioned,table footnote,yes,processing,none
+Barger_etal_2014,Table1,"Pan paniscus*,a","*,a",footnote_letter,* = case in Barger 2007; a = paraffin,table footnote,yes,in_barger2007 + processing,none
+Barger_etal_2014,Table1,"Gorilla gorilla*,a","*,a",footnote_letter,* = case in Barger 2007; a = paraffin,table footnote,yes,in_barger2007 + processing,none
+Barger_etal_2014,Table1,Gorilla gorillab,b,footnote_letter,b = cryosectioned,table footnote,yes,processing,none
+Barger_etal_2014,Table1,"Pongo pygmaeus*,a","*,a",footnote_letter,* = case in Barger 2007; a = paraffin,table footnote,yes,in_barger2007 + processing,none
+Barger_etal_2014,Table1,Pongo pygmaeusa,a,footnote_letter,a = paraffin,table footnote,yes,processing,none
+Barger_etal_2014,Table1,Pongo pygmaeusb,b,footnote_letter,b = cryosectioned,table footnote,yes,processing,none
+Barger_etal_2014,Table1,"Hylobates lar *,a","*,a",footnote_letter,* = case in Barger 2007; a = paraffin,table footnote,yes,in_barger2007 + processing,none
+Barger_etal_2014,Table1,"Nomascus concolor *,a","*,a",footnote_letter,* = case in Barger 2007; a = paraffin,table footnote,yes,in_barger2007 + processing,none
+Barger_etal_2014,Table1,Hylobates muellerib,b,footnote_letter,b = cryosectioned,table footnote,yes,processing,none
+Bauernfeind_etal_2013,Table3,Total insula (right)a,a,footnote_letter,column-header footnote a,table footnote,yes,ReadMe (footnote rows dropped),none
+Bauernfeind_etal_2013,Table3,Total insula (left)a,a,footnote_letter,column-header footnote a,table footnote,yes,ReadMe (footnote rows dropped),none
+Baron_etal_1983,Table1,Erinaceus algirus1,1,footnote_number,former name Aethechinus algirus,table footnote legend,yes,Species_former_synonym,none
+Baron_etal_1983,Table1,Crocidura flavescens2,2,footnote_number,former name Crocidura occidentalis,table footnote legend,yes,Species_former_synonym,none
+Baron_etal_1983,Table1,Microgale dobsoni3,3,footnote_number,former name Nesogale dobsoni,table footnote legend,yes,Species_former_synonym,none
+Baron_etal_1983,Table1,Microgale talazaci4,4,footnote_number,former name Nesogale talazaci,table footnote legend,yes,Species_former_synonym,none
+Baron_etal_1983,Table1,Chrysochloris stuhlmanni5,5,footnote_number,former name Chlorotalpa stuhlmanni,table footnote legend,yes,Species_former_synonym,none
+Baron_etal_1983,Table1,Lemur albifrons6,6,footnote_number,former name Lemur fulvus,table footnote legend,yes,Species_former_synonym,none
+Baron_etal_1983,Table1,Varecia variegata7,7,footnote_number,former name Lemur variegatus,table footnote legend,yes,Species_former_synonym,none
+Baron_etal_1983,Table1,Otolemur crassicaudatus8,8,footnote_number,former name Galago crassicaudatus,table footnote legend,yes,Species_former_synonym,none
+Baron_etal_1983,Table1,Galagoides demidoff9,9,footnote_number,former name Galago demidovii,table footnote legend,yes,Species_former_synonym,none
+Baron_etal_1983,Table1,Saguinus midas10,10,footnote_number,former name Saguinus tamarin,table footnote legend,yes,Species_former_synonym,none
+Baron_etal_1983,Table1,Miopithecus talapoin11,11,footnote_number,former name Cercopithecus talapoin,table footnote legend,yes,Species_former_synonym,none
+Baron_etal_1983,Table1,Rhynchocyon cirnei12,12,footnote_number,former name Rhynchocyon stuhlmanni,table footnote legend,yes,Species_former_synonym,none
+Stephan_etal_1982,Table1,Erinaceus algirus (sup 1),1,footnote_number,former-name reference (paper-scoped numbering),table footnote legend,yes,former_name_ref + former_name,none
+Stephan_etal_1982,Table1,Crocidura flavesc. (sup 2),2,footnote_number,former-name reference (paper-scoped numbering),table footnote legend,yes,former_name_ref + former_name,none
+Stephan_etal_1982,Table1,Microgale dobsoni (sup 3),3,footnote_number,former-name reference (paper-scoped numbering),table footnote legend,yes,former_name_ref + former_name,none
+Stephan_etal_1982,Table1,Microgale talazaci (sup 4),4,footnote_number,former-name reference (paper-scoped numbering),table footnote legend,yes,former_name_ref + former_name,none
+Stephan_etal_1982,Table1,Rhynchocyon cirnei (sup 6),6,footnote_number,former-name reference (paper-scoped numbering),table footnote legend,yes,former_name_ref + former_name,none
+Stephan_etal_1982,Table1,Lemur albifrons (sup 7),7,footnote_number,former-name reference (paper-scoped numbering),table footnote legend,yes,former_name_ref + former_name,none
+Stephan_etal_1982,Table1,Varecia variegata (sup 8),8,footnote_number,former-name reference (paper-scoped numbering),table footnote legend,yes,former_name_ref + former_name,none
+Stephan_etal_1982,Table1,Otolemur crassic. (sup 9),9,footnote_number,former-name reference (paper-scoped numbering),table footnote legend,yes,former_name_ref + former_name,none
+Stephan_etal_1982,Table1,Galagoides demid. (sup 10),10,footnote_number,former-name reference (paper-scoped numbering),table footnote legend,yes,former_name_ref + former_name,none
+Stephan_etal_1982,Table1,Saguinus midas (sup 11),11,footnote_number,former-name reference (paper-scoped numbering),table footnote legend,yes,former_name_ref + former_name,none
+Frahm_etal_1982,Table1 (NOT ingested),Erinaceus algirus (sup 1),1,footnote_number,former name Aethechinus algirus,PDF footnote legend,n/a,,"NOT A GAP: superscripts are in Table 1, which the repo does not transcribe; the built Table 2 prints no per-species marker"
+Frahm_etal_1984,Table1,Lemur albifrons 1),1),footnote_number,former name Lemur fulvus,"PDF legend: 'Different names used in former papers and in Stephan et al. (1981) are: 1) Lemur fulvus ... 8) Crocidura occidentalis'",NO,,"GAP 2.1: re-snapshot with n) markers; transcribe 8-entry legend (1-6 for Tables 1-3, 7-8 for Table 4); add Species_former_synonym as in Baron_etal_1983_Table1.R"
+Frahm_etal_1984,Table1,Varecia variegata 2),2),footnote_number,former name Lemur variegatus,PDF legend,NO,,GAP 2.1: add Species_former_synonym
+Frahm_etal_1984,Table1,Otolemur crassicaudatus 3),3),footnote_number,former name Galago crassicaudatus,PDF legend,NO,,GAP 2.1: add Species_former_synonym
+Frahm_etal_1984,Table1,Galagoides demidoff 4),4),footnote_number,former name Galago demidovii,PDF legend,NO,,GAP 2.1: add Species_former_synonym
+Frahm_etal_1984,Table1,Saguinus midas 5),5),footnote_number,former name Saguinus tamarin,PDF legend,NO,,GAP 2.1: add Species_former_synonym
+Frahm_etal_1984,Table1,Miopithecus talapoin 6),6),footnote_number,former name Cercopithecus talapoin,PDF legend,NO,,GAP 2.1: add Species_former_synonym
+MacLeod_etal_2003,Table1/2,Gorilla gorilla (A375) dagger,dagger,symbol,from the Stephan Collection,Table 2 legend,yes,stephan_collection,none
+MacLeod_etal_2003,Table1/2,Aotus trivirgatus (888) ddagger,ddagger,symbol,brain weight not known,Table 2 legend,yes,brainweight_known,none
+MacLeod_etal_2003,Table1/2,Homo sapiens (503/81) asterisk,asterisk,symbol,horizontal sections,Table 2 legend,yes,section_plane,none
+MacLeod_etal_2003,Table1/2,Cebus sp. 1 LH section-sign,section-sign,symbol,sagittal sections,Table 2 legend,yes,section_plane,none
+Baron_etal_1988,Table1,Potamogale velox*),*),symbol,semiaquatic species,"caption of baron_etal_1988_scan.pdf: '*) = semiaquatic species'",NO,,"GAP 3.1: add logical semiaquatic column; snapshot was rebuilt from comparison/Baron_1988.csv and never carried the marker"
+Baron_etal_1988,Table1,Micropotamogale ruwenzorii*),*),symbol,semiaquatic species,PDF caption,NO,,GAP 3.1: add logical semiaquatic column
+Baron_etal_1988,Table1,Neomys fodiens*),*),symbol,semiaquatic species,PDF caption,NO,,GAP 3.1: add logical semiaquatic column
+Baron_etal_1988,Table1,Desmana moschata*),*),symbol,semiaquatic species,PDF caption,NO,,GAP 3.1: add logical semiaquatic column
+Baron_etal_1988,Table1,Galemys pyrenaicus*),*),symbol,semiaquatic species,PDF caption,NO,,GAP 3.1: add logical semiaquatic column
+Baron_etal_1996,Table10/32,Pipistrellus papuanus §),§,symbol,"see addendum at end of Volume 3, pp. 1592-1595",book pp. 56/63/138/145,partial,"preserved verbatim in Species_Baron1996","GAP 3.3: transcribe the legend text into the README and decode into a boolean; marker also survives in Baron_etal_1996_taxonomy_crosswalk.csv and both public TSVs"
+Baron_etal_1996,Table10/32,Syconycteris a. australis §),§,symbol,"see addendum at end of Volume 3, pp. 1592-1595",book pp. 56/63/138/145,partial,"preserved verbatim in Species_Baron1996",GAP 3.3: transcribe legend and decode
+Lewitus_etal_2014,TableS1,Oryctolagus_cuniculus*,*,symbol,"GI calculated by the authors from Nissl sections (brainmuseum.org), not from literature",Table S1 footnote (sharedString 146),NO,,"GAP 3.2: R:51 strips * only inside the resolve closure feeding species_sci, so the marker SURVIVES glued to the Species column in the built CSV and the public TSV; add GI_measured_by_authors and clean Species"
+Lewitus_etal_2014,TableS1,Mandrillus_sphinx*,*,symbol,GI calculated by the authors,Table S1 footnote,NO,,GAP: add GI_measured_by_authors
+Lewitus_etal_2014,TableS1,Alouatta_palliata*,*,symbol,GI calculated by the authors,Table S1 footnote,NO,,GAP: add GI_measured_by_authors
+Lewitus_etal_2014,TableS1,Callicebus_moloch*,*,symbol,GI calculated by the authors,Table S1 footnote,NO,,GAP: add GI_measured_by_authors
+Lewitus_etal_2014,TableS1,Cynocephalus_volans*,*,symbol,GI calculated by the authors,Table S1 footnote,NO,,GAP: add GI_measured_by_authors
+Lewitus_etal_2014,TableS1,Tupaia_glis*,*,symbol,GI calculated by the authors,Table S1 footnote,NO,,GAP: add GI_measured_by_authors
+Lewitus_etal_2014,TableS1,Capra_hircus_domestica*,*,symbol,GI calculated by the authors,Table S1 footnote,NO,,GAP: add GI_measured_by_authors
+Lewitus_etal_2014,TableS1,Pteropus_giganteus*,*,symbol,GI calculated by the authors,Table S1 footnote,NO,,GAP: add GI_measured_by_authors
+Lewitus_etal_2014,TableS1,Choloepus_didactylus*,*,symbol,GI calculated by the authors,Table S1 footnote,NO,,GAP: add GI_measured_by_authors
+Lewitus_etal_2014,TableS1,Dasypus_novemcinctus*,*,symbol,GI calculated by the authors,Table S1 footnote,NO,,GAP: add GI_measured_by_authors
+Lewitus_etal_2014,TableS1,Trichechus_manatus*,*,symbol,GI calculated by the authors,Table S1 footnote,NO,,GAP: add GI_measured_by_authors
+Lewitus_etal_2014,TableS1,Procavia_capensis*,*,symbol,GI calculated by the authors,Table S1 footnote,NO,,GAP 3.2: add GI_measured_by_authors
+Lewitus_etal_2014,TableS1,"¶ See Table S2 for column definitions",,ingested_footnote_row,"source rows 105-106 land as species rows with all 39 trait fields NA",n/a,NO,,"GAP 3.2b: true species count is 102, not the 104 claimed by the CSV, public TSV, script comment and README; founder-TSV QA passes only because the founder carries the same phantom rows; does not reach gyrification_long/wide.csv"
+Caspar_etal_2022,Table4 (NOT ingested),Macaca tonkeana dagger,dagger,symbol,"Ages unknown, sex derived from given names",Table 4 legend,n/a,,"NOT A GAP: the dagger is in Table 4 (study-sample composition), which the repo does not ingest; the built Table 1 prints no dagger. Caspar_etal_2022_exportMSexcel.xlsx mislabels the Table 4 OCR sheet as 'Table 1'"
+Ashwell__2020,SupplementaryTable,Ornithorhynchus anatinus 1,1,specimen_code,individual specimen 1,column layout,yes,species_as_published + specimen_number + row_type,none
+Ashwell__2020,SupplementaryTable,Ornithorhynchus anatinus 2,2,specimen_code,individual specimen 2,column layout,yes,species_as_published + specimen_number + row_type,none
+Ashwell__2020,SupplementaryTable,Ornithorhynchus anatinus 3,3,specimen_code,individual specimen 3,column layout,yes,species_as_published + specimen_number + row_type,none
+Ashwell__2020,SupplementaryTable,Tachyglossus aculeatus 1,1,specimen_code,individual specimen 1,column layout,yes,species_as_published + specimen_number + row_type,none
+Ashwell__2020,SupplementaryTable,Tachyglossus aculeatus 2,2,specimen_code,individual specimen 2,column layout,yes,species_as_published + specimen_number + row_type,none
+Ashwell__2020,SupplementaryTable,Tachyglossus aculeatus 3,3,specimen_code,individual specimen 3,column layout,yes,species_as_published + specimen_number + row_type,none
+MacLeod_etal_2003,Table1,Homo sapiens 1-6,1-6,specimen_code,individual human specimens,column layout,yes,specimen,none
+MacLeod_etal_2003,Table1,Cebus sp. 5,5,specimen_code,individual specimen,column layout,yes,specimen,none
+Smaers_etal_2011,SupplementaryTable1,Gorilla gorilla 375,375,specimen_code,Stephan-collection accession number,column layout,yes,catalogue_number,"cross-ref: same brain as MacLeod_etal_2003 'Gorilla gorilla (A375)'"
+Smaers_etal_2011,SupplementaryTable1,Homo sapiens 1696/2431/5694/6895,various,specimen_code,Stephan-collection accession numbers,column layout,yes,catalogue_number,none
+Smaers_etal_2011,SupplementaryTable1,Hylobates lar 1203,1203,specimen_code,Stephan-collection accession number,column layout,yes,catalogue_number,"cross-ref: same brain as MacLeod_etal_2003 'Hylobates lar (1203)'"
+Smaers_etal_2011,SupplementaryTable1,Alouatta seniculus1184,1184,specimen_code,Stephan-collection accession number (no space),column layout,yes,catalogue_number,none
+Smaers_etal_2011,SupplementaryTable1,Pithecia monachus1180,1180,specimen_code,Stephan-collection accession number (no space),column layout,yes,catalogue_number,none
+Baker_etal_2025,SupplementaryData1,Oreopithecus_bambolii_1,_1,specimen_code,individual/specimen identifier,column layout,yes,specimen ID column,none
+Stephan_etal_1981,TableII,Stephan code 1-44,1-44,specimen_code,Stephan numeric species code,column layout,yes,code column,none
+DeCasien_Higham_2019,Group Size Data (from 38),Alouatta_palliata12.2,12.2,composite_key,"group-size value concatenated into a dedup key; header reads 'KEY (species name & group size)'",column header,n/a,Taxon + Group Size are separate columns,"do NOT parse as specimen code or footnote (417 such values)"
+Stephan_etal_1970,raw xlsx,Aclhcchinus algirus,,ocr_error,should be Aethechinus algirus,,raw layer only,,"OCR repair if this sheet is ever ingested"
+Stephan_etal_1970,raw xlsx,Aotes trivirgarus,,ocr_error,should be Aotus trivirgatus,,raw layer only,,OCR repair if ingested
+Matano_etal_1985_a,raw xlsx,Aorus trivirgatus,,ocr_error,should be Aotus trivirgatus,,raw layer only,,OCR repair if ingested
+Iwaniuk_etal_2001,raw xlsx,Apodemus jlavicollis,,ocr_error,fl-ligature read as jl; should be Apodemus flavicollis,,raw layer only,,OCR repair if ingested
+Iwaniuk_etal_2001,raw xlsx Table7,Callimico goeldii + spaces + 0,,ocr_error,merged-cell bleed: value 0 glued into species cell,,raw layer only,,OCR repair if ingested
+various,raw extract,Cercocebus alb1gena,,ocr_error,i read as 1; should be Cercocebus albigena,,raw layer only,,OCR repair if ingested
+various,raw extract,Nycriceb11s coi1ca11g,,ocr_error,should be Nycticebus coucang,,raw layer only,,OCR repair if ingested

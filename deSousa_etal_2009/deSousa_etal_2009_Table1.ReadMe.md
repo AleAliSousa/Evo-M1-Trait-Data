@@ -24,7 +24,8 @@ That "unpublished data" is what became **de Sousa et al. 2010 Table 1**. Column 
 
 | column | primary source |
 |---|---|
-| left V1, left LGN, neocortex, brain mass | `deSousa_etal_2010_Table1` (the same nine specimens) |
+| left V1, left LGN, brain mass | `deSousa_etal_2010_Table1` (the same nine specimens) |
+| **neocortex (whole column)** | **Carol MacLeod's own measurements**, `MacLeod_data.xls` Table II — the workbook she emailed in September 2002. Its brain/cerebellum/vermis/hemisphere columns are the published MacLeod et al. 2003 *J Hum Evol* table, but the **neocortex column was never published**. Held in the private repo `Evo-M1-Traits-Data-restricted` as `unpublished_data/____Unpublished__MacLeod_neocortex/` and subject to her conditions of use |
 | optic nerve cross-sectional area, eye half surface area | Stephan & Frahm 1981 species means (footnote f — the value repeats within a species) |
 | human neocortex (both rows) | MacLeod, unpublished combined-sex human mean, n = 8 (footnote b) |
 | *Homo* body mass | Zilles 1972 same-sex species mean (footnote a) |

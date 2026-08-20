@@ -6,6 +6,14 @@ PDF: `Matano-1985-Volume comparisons i.pdf` (in this folder; scanned image, 11 p
 
 **Table I — body weights and ventral pons (VPo) volumes** for 48 species (Insectivora, Scandentia, Prosimians, Simians). The printed table also carries size indices (VPo, neocortex, cerebellum), VPo:NEO and VPo:CER ratios, and VPo as % of brain stem; those are **derived/relative** and recomputed downstream (and the 1985 scan's index columns are unreliable to OCR), so only the **body-weight and ventral-pons-volume** columns are snapshotted.
 
+**Structure-key rule:** the paper defines VPo as the ventral/basilar part of
+the pons and distinguishes it from the dorsal/tegmental part in the
+Introduction. Therefore `ventral_pons_mm3` maps only to
+`Ventral_pons_Vol.mm3`; it is not a global alias of `Pons_Vol.mm3`. The Pongo
+`Pons = 4300` value in `Stephan_primates` comes instead from Zilles & Rehkamper
+Table 12-2's broader pons row, as the absence of Pongo from Matano Table I also
+shows.
+
 ## Folder ↔ registry (now consistent)
 
 This folder is registry **sequence b** = the ventral-pons paper (DOI 10.1159/000156211), and the data token is **Matano1985b** throughout (comparison CSV, `_keys/Stephan/species_key.csv`, `anatomy_key.csv`). The TSV is named by the standard Item-name lookup → `10.1159%2F000156211_Table1.tsv`. *(This folder previously held the cerebellar-nuclei paper; the a/b labels were flipped to match `__ReadMe.xlsx`.)*

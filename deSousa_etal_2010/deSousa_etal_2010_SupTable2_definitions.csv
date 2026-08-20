@@ -5,9 +5,9 @@ brain_volume_cm3,whole brain volume,WholeBrain,Volume.cm3,mean,primary,Primates,
 brain_N,number of specimens for brain volume,WholeBrain,Count,N,metadata,Primates,deSousa_etal_2010,,
 neocortex_volume_cm3,neocortex volume,Neocortex,Volume.cm3,mean,primary,Primates,deSousa_etal_2010,17 prosimian values corrected (mis-copy from Stephan); see correction column,non-hominoid from Stephan et al 1981/1988
 neocortex_N,number of specimens for neocortex volume,Neocortex,Count,N,metadata,Primates,deSousa_etal_2010,,
-V1_area_striata_volume_cm3,primary visual cortex (area striata) volume,V1_AreaStriata,Volume.cm3,mean,primary,Primates,deSousa_etal_2010,= ASG_Sousa,published mean (N animals)
+V1_area_striata_volume_cm3,primary visual cortex (area striata) grey-matter volume; published bilateral estimate = 2 x measured left V1,V1_AreaStriata,Volume.cm3,mean,primary,Primates,deSousa_etal_2010,= ASG_Sousa; map to unsuffixed Area_striata_grey_matter only; not Stephan 1981 Area_striata (which includes white matter),Methods: left V1 doubled to estimate left + right
 V1_N,number of specimens for V1 volume,V1_AreaStriata,Count,N,metadata,Primates,deSousa_etal_2010,,
-LGN_volume_cm3,lateral geniculate nucleus volume,LGN,Volume.cm3,mean,primary,Primates,deSousa_etal_2010,= LGN_Sousa,published mean (N animals)
+LGN_volume_cm3,lateral geniculate nucleus entire-structure volume; published bilateral estimate = 2 x measured left LGN,LGN,Volume.cm3,mean,primary,Primates,deSousa_etal_2010,= LGN_Sousa; map to unsuffixed Corpus_geniculatum_laterale,Methods: left LGN doubled to estimate left + right
 LGN_N,number of specimens for LGN volume,LGN,Count,N,metadata,Primates,deSousa_etal_2010,,
 source,source identifier,,Source,,provenance,Primates,deSousa_etal_2010,,
 correction,description of any correction applied vs the published table,,Note,,provenance,Primates,deSousa_etal_2010,distinguishes value errors (neocortex) from species-name errors,

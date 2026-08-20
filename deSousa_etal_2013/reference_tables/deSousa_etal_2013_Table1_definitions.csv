@@ -1,4 +1,4 @@
 Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
 Species,species name as printed in the paper,,,info,,,deSousa_etal_2013_Table1,taxonomy applied later via ../_keys/Stephan/,
-Corpus_geniculatum_laterale_mm3,Corpus geniculatum laterale (Vol.mm3),Corpus_geniculatum_laterale,Vol.mm3,,primary,Insectivora & Primates,deSousa_etal_2013_Table1,from comparison CSV column Corpus_geniculatum_laterale_2013,
+Corpus_geniculatum_laterale_mm3,Corpus geniculatum laterale published bilateral estimate (= 2 x measured left LGN),Corpus_geniculatum_laterale,Vol.mm3,,primary,Insectivora & Primates,deSousa_etal_2013_Table1,from comparison CSV column Corpus_geniculatum_laterale_2013; map to unsuffixed term and do not double again,de Sousa 2010 Methods states the carried-forward convention
 brain_weight_mg,Brain weight (Mass.mg),Brain_weight,Mass.mg,,secondary,Insectivora & Primates,deSousa_etal_2013_Table1,from comparison CSV column Brain_weight_2013,

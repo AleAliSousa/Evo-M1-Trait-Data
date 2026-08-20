@@ -5,7 +5,7 @@ leaflets,parvocellular lamination: Y=4 leaflets / N=2 layers,LGN,Lamination,,pri
 n_leaflets,n specimens for lamination,,n,,primary,,deSousa_etal_2013,,
 brain_weight_g,species mean brain weight,WholeBrain,Mass.g,,primary,,deSousa_etal_2013,,
 n_brain,n for brain weight,,n,,primary,,deSousa_etal_2013,,
-LGN_volume_cm3,LGN volume,LGN,Volume.cm3,,primary,,deSousa_etal_2013,,
+LGN_volume_cm3,whole-LGN published bilateral estimate carried from de Sousa 2010 (= 2 x measured left LGN),LGN,Volume.cm3,,primary,,deSousa_etal_2013,map to unsuffixed Corpus_geniculatum_laterale; do not double again,de Sousa 2010 Methods states the laterality convention
 n_LGN,n for LGN volume,,n,,primary,,deSousa_etal_2013,,
 LGN_residual,LGN residual (from paper),LGN,residual,,secondary,,deSousa_etal_2013,derived,
 source,source id,,Source,,primary,,deSousa_etal_2013,,

@@ -60,6 +60,24 @@ with a `Flags pre-addressed` note.
    `primary_source_checks/frontal_lobe_source_and_partition.md`. Note also the frontal-motor column
    is not independently verifiable: Smaers 2011 published only the anterior (prefrontal) section.
 
+### Standardized-key implications
+
+All eight Table S1 volume columns represent **both hemispheres** and therefore
+map to unsuffixed standardized terms after cm3 -> mm3 conversion. They must not
+be keyed to `_left` or `_right` terms. The region names also retain the source's
+operational definitions:
+
+- `prefrontal_*` -> `PrefrontalCortex_*` as the anterior-five-section proxy;
+- `frontal_motor_*` -> `FrontalMotor_*` as the posterior-five-section proxy;
+- `other_association_*` -> `AssociationCortex_*` as the published residual; and
+- `primary_visual_*` -> area-striata grey/white terms.
+
+The residual uses the **whole frontal lobe**, not `prefrontal + frontal_motor`.
+The exact definition and laterality are recorded per column in
+`reference_tables/Smaers_etal_2017_TableS1part1_definitions.csv`. These keys are
+valid for tracing the `Stephan_primates` compilation even though the modern
+volume merge may skip the 2017 secondary/derived rows to avoid double-counting.
+
 ## Reformat → CSV
 
 The R reads past the 3 header rows, names the 9 columns by position, drops empty rows, replaces

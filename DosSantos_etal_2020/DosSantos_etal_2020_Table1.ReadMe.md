@@ -20,7 +20,7 @@ agrees with older publications (e.g. Herculano-Houzel et al. 2015).
 cell-counts dataset** (`__merging_cellcounts/cellcounts_compiled.R`, where this item is commented out).
 This file is retained only as a faithful **snapshot** of the published table, for the audit trail.
 
-- Check script: `DosSantos_etal_2020_Table1_check.R`
+- Check script: `DosSantos_etal_2020_Table1_check.R` — moved to the private repo Evo-M1-Traits-Data-restricted, `restricted_checks/_cross_table/DosSantos_2020_published_vs_authors_unpublished/` (it reads the authors' unpublished spreadsheet, so it cannot be public)
 - Comparison report: `DosSantos_etal_2020_comparison_report.csv` (every species × structure × measure)
 - Narrative summary: `DosSantos_etal_2020_comparison_summary.md`
 

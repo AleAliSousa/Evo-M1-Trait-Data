@@ -68,7 +68,9 @@ if (is.na(item_encoded) || !nzchar(item_encoded)) {
   message("Wrote ", tsv_dir, item_encoded, ".tsv")
 }
 
-## 4. COMPARE to the digitized copy (comparison/bush_neocortex.xls)  -> comparison/check_Table2_vs_digitized.csv
+## 4. COMPARE to the digitized copy in the private companion repo
+##    -> restricted_checks/Bush_Allman_2004_a/comparison/check_Table2_vs_digitized.csv
 ## 5. COMPARE to a SIMILAR dataset: neocortex grey vs Frahm (Stephan_primates.csv NeoG_Frahm, mm3)
-##    -> comparison/compare_NeoG_Bush_vs_Frahm.csv  (Bush runs ~3-12% smaller for shared primates)
+##    -> restricted_checks/Bush_Allman_2004_a/comparison/compare_NeoG_Bush_vs_Frahm.csv
+##       (Bush runs ~3-12% smaller for shared primates)
 ## (both comparison CSVs are written by the accompanying build; see ReadMe.)

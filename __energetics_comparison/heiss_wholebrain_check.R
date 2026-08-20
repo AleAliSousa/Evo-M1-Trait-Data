@@ -16,24 +16,20 @@
 #   from the Karbowski (2007) compilation (Clarke & Sokoloff 1994).
 #
 # DATA (all local to Evo-M1-Trait-Data):
-#   Heiss     : ../Heiss_etal_2004/Heiss_etal_2004_TABLE1.csv   (rates)
-#   Karbowski : ../Karbowski__2007/comparison/
-#                 Karbowski__2007_energetics_long_from_R.csv    (benchmark)
+#   Heiss     : Heiss_etal_2004/Heiss_etal_2004_TABLE1.csv   (rates)
+#   Karbowski : Karbowski__2007/Karbowski__2007_TableS2.csv (benchmark)
 #   Kuzawa    : NOT YET BUILT -- see the hook at the bottom.
 # ============================================================
 
 ## portable base path: find the Evo-M1-Trait-Data root regardless of cwd
-find_evo <- function() {
-  # 1) if sourced with chdir, ofile is available
-  of <- tryCatch(sys.frame(1)$ofile, error = function(e) NULL)
-  if (!is.null(of)) return(normalizePath(file.path(dirname(of), "..")))
-  # 2) known absolute location on this machine
-  cand <- "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data"
-  if (dir.exists(cand)) return(cand)
-  # 3) fall back to cwd's parent
-  normalizePath(file.path(getwd(), ".."))
-}
-evo <- find_evo()
+script_dir <- local({
+  a <- grep("^--file=", commandArgs(FALSE), value = TRUE)
+  if (length(a)) return(dirname(normalizePath(sub("^--file=", "", a[1]))))
+  if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable())
+    return(dirname(normalizePath(rstudioapi::getSourceEditorContext()$path)))
+  normalizePath(getwd())
+})
+evo <- normalizePath(file.path(script_dir, ".."))
 
 GLU_MW    <- 180.16   # g/mol glucose
 DENSITY   <- 1.036    # g/cc brain tissue
@@ -59,10 +55,9 @@ cat(sprintf("Unweighted mean of all %d Heiss rates = %.1f umol/100g/min (meaning
 # ------------------------------------------------------------
 # 2. Published human whole-brain benchmark (Karbowski compilation)
 # ------------------------------------------------------------
-k <- read.csv(file.path(evo, "Karbowski__2007", "comparison",
-                        "Karbowski__2007_energetics_long_from_R.csv"),
+k <- read.csv(file.path(evo, "Karbowski__2007", "Karbowski__2007_TableS2.csv"),
               stringsAsFactors = FALSE, check.names = FALSE)
-kh <- k[k$species_common == "human" & k$region == "Whole brain", ]
+kh <- k[k$species_printed == "human" & k$structure == "Brain", ]
 getk <- function(m) as.numeric(kh$value[kh$measure == m])
 wb_CMRgl <- getk("CMRgl")                       # 0.31 umol/g/min
 wb_total <- getk("Total_glucose_utilization")   # 428.55 umol/min

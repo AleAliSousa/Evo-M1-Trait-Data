@@ -3,7 +3,7 @@
 ##
 ## Build step only: frozen snapshot -> clean analysis CSV -> DOI-coded public TSV.
 ## Species are written exactly as published; harmonisation to the project key happens downstream (__merging_volumes).
-## QA against the compiled/digitised copies lives separately in comparison/ (run those
+## QA against the compiled/digitised copies lives in the private companion repo (run those
 ## scripts on their own; this build does not perform the comparison).
 ##
 ## Input : Bush_Allman_2003_Table1_snapshot.csv   (Group, Species, + 4 cm3 volume cols)

@@ -15,7 +15,7 @@
 # Source : Lewitus_etal_2014/pbio.1002000.s013.xlsx   (sheet "Sheet1")
 # Outputs: Lewitus_etal_2014_TableS1.csv              (104 species)
 #          10.1371%2Fjournal.pbio.1002000_TableS1.tsv in __Public/comparative-data/
-# QA     : comparison/Lewitus_etal_2014_TableS1_compare_to_public_tsv.R
+# QA     : private restricted_checks/Lewitus_etal_2014/comparison/
 #          audits this output against the founder public TSV (0 mismatches).
 
 library(readxl)

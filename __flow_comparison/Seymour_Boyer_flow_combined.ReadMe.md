@@ -11,7 +11,8 @@ overlap cross-check. **This is a flow table, not a glucose table** — see "Next
   Provides `Total_QICA_cm3_s` — flow through the **internal carotid arteries only** (ICA).
   60 species (primates + diprotodont marsupial outgroup).
 - **Boyer & Harrington (2019)** *New estimates of blood flow rates in the vertebral
-  artery of euarchontans...* J Hum Evol. `Boyer_predicting_pBGU.csv` (= SOM Table S6).
+  artery of euarchontans...* J Hum Evol.
+  `Boyer_Harrington_2019/Boyer_Harrington_2019_SOMTableS6.csv` (= SOM Table S6).
   Provides `QICA`, `QVA`, and `QTOT = QICA + QVA` — carotid **plus vertebral** arteries.
   53 species (euarchontans + rodent/lagomorph outgroups).
 

@@ -49,4 +49,8 @@ Because the table is structure-as-rows for one species, the audit is **per-struc
 
 ## Provenance note (why only Pongo)
 
-Zilles & Rehkämper (1988) is the original source of the **orang-utan** brain-structure volumes; indices for Gorilla, Pan, Hylobates and Homo in the chapter's Table 12-3 were computed from Stephan et al. (1981). Pongo data added to several **pre-1988** dataset CSVs without recording this source therefore show up as `csv_only` anachronisms in those papers' comparisons — see `_checks/check_Zilles_Rehkamper_1988_provenance.R`.
+Zilles & Rehkämper (1988) is the original source of the **orang-utan** brain-structure volumes;
+indices for Gorilla, Pan, Hylobates and Homo in the chapter's Table 12-3 were computed from Stephan
+et al. (1981). Pongo data added to several **pre-1988** dataset CSVs without recording this source
+therefore show up as `csv_only` anachronisms in those papers' comparisons — see the private companion
+repo's `restricted_checks/_cross_table/Zilles_Rehkamper_1988_provenance/` audit.

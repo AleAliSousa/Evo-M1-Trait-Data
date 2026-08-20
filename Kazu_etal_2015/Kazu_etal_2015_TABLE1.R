@@ -14,7 +14,7 @@
 ## Deliberately a LINE-FOR-LINE PARALLEL of Kazu_etal_2014_Table1.R — same parser, same label
 ## map, same column schema, same consistency checks. That is what makes the two directly
 ## diffable, which is the job of
-## comparison/Kazu_etal_2015_TABLE1_compare_to_Kazu_2014.R.
+## private restricted_checks/Kazu_etal_2015/comparison/.
 ##
 ## Shape: ONE ROW PER SPECIES (5 artiodactyls, n = 1 specimen each, one hemisphere x 2).
 ## The printed table is transposed (structures as rows, species as columns); the reformat

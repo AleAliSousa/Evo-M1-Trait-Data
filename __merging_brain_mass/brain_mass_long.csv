@@ -527,7 +527,7 @@
 "Glossophaga longirostris","mass","Brain_Mass","g",0.435,0.435,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Glossophaga soricina","mass","Brain_Mass","g",0.4127,0.4127,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Gorilla beringei","mass","Brain_Mass","g",491.27,491.27,3,1,0,FALSE,"Burger","secondary",NA,NA
-"Gorilla gorilla","mass","Brain_Mass","g",401.7371,409.5714,19,7,3,TRUE,"Burger; Garwicz; Lewitus; MacLeod; Stephan_collection; Weaver; Zilles","primary; secondary",NA,NA
+"Gorilla gorilla","mass","Brain_Mass","g",401.7371,409.5714,20,8,3,TRUE,"Burger; deSousa; Garwicz; Lewitus; MacLeod; Stephan_collection; Weaver; Zilles","primary; secondary",NA,NA
 "Gracula religiosa","mass","Brain_Mass","g",3.6696,3.6696,3,1,1,TRUE,"Olkowicz","primary",NA,NA
 "Grammomys cometes","mass","Brain_Mass","g",0.96,0.96,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Grammomys poensis","mass","Brain_Mass","g",1.55,1.55,3,1,0,FALSE,"Burger","secondary",NA,NA
@@ -589,7 +589,7 @@
 "Histriophoca fasciata","mass","Brain_Mass","g",248.75,248.75,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Holochilus chacarius","mass","Brain_Mass","g",1.61,1.61,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Holochilus sciureus","mass","Brain_Mass","g",1.41,1.41,3,1,0,FALSE,"Burger","secondary",NA,NA
-"Homo sapiens","mass","Brain_Mass","g",1374.7979,1335.8937,30,8,3,TRUE,"Brodmann; Burger; Garwicz; HerculanoHouzel; Karl; Lewitus; Stephan_collection; Zilles","primary; secondary",NA,NA
+"Homo sapiens","mass","Brain_Mass","g",1374.7979,1335.8937,32,9,3,TRUE,"Brodmann; Burger; deSousa; Garwicz; HerculanoHouzel; Karl; Lewitus; Stephan_collection; Zilles","primary; secondary",NA,NA
 "Homo sapiens (MRI)","mass","Brain_Mass","g",1302,1302,3,1,1,TRUE,"Weaver","primary",NA,NA
 "Hoplomys gymnurus","mass","Brain_Mass","g",4.13,4.13,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Hyaena brunnea","mass","Brain_Mass","g",106.7,106.7,3,1,0,FALSE,"Burger","secondary",NA,NA
@@ -605,7 +605,7 @@
 "Hylobates","mass","Brain_Mass","g",74.1,74.1,3,1,1,TRUE,"Weaver","primary",NA,NA
 "Hylobates agilis","mass","Brain_Mass","g",88.1,88.1,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Hylobates klossii","mass","Brain_Mass","g",87.9913,87.9913,3,1,0,FALSE,"Burger","secondary",NA,NA
-"Hylobates lar","mass","Brain_Mass","g",102.25,102.25,13,5,2,TRUE,"Burger; Jacobs; Lewitus; Stephan_collection; Zilles","info; primary; secondary",NA,NA
+"Hylobates lar","mass","Brain_Mass","g",102.25,102.25,14,6,2,TRUE,"Burger; deSousa; Jacobs; Lewitus; Stephan_collection; Zilles","info; primary; secondary",NA,NA
 "Hylobates moloch","mass","Brain_Mass","g",103,103,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Hylobates muelleri","mass","Brain_Mass","g",101.8,101.8,5,2,1,TRUE,"Burger; Zilles","primary; secondary",NA,NA
 "Hylobates pileatus","mass","Brain_Mass","g",84.6852,84.6852,3,1,0,FALSE,"Burger","secondary",NA,NA
@@ -732,7 +732,7 @@
 "Macaca arctoides","mass","Brain_Mass","g",100.7,100.7,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Macaca assamensis","mass","Brain_Mass","g",90.5,90.5,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Macaca cyclopis","mass","Brain_Mass","g",82,82,3,1,0,FALSE,"Burger","secondary",NA,NA
-"Macaca fascicularis","mass","Brain_Mass","g",47.815,47.815,7,4,2,TRUE,"Burger; HerculanoHouzel; Nudo; Zilles","primary; secondary",NA,NA
+"Macaca fascicularis","mass","Brain_Mass","g",47.815,47.815,8,5,2,TRUE,"Burger; deSousa; HerculanoHouzel; Nudo; Zilles","primary; secondary",NA,NA
 "Macaca fuscata","mass","Brain_Mass","g",96.8,96.8,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Macaca hecki","mass","Brain_Mass","g",94.6,94.6,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Macaca leonina","mass","Brain_Mass","g",85.5981,85.5981,3,1,0,FALSE,"Burger","secondary",NA,NA
@@ -1052,8 +1052,8 @@
 "P. cynoceph","mass","Brain_Mass","g",143.3,143.3,3,1,1,TRUE,"Weaver","primary",NA,NA
 "Pagophilus groenlandicus","mass","Brain_Mass","g",275.5,275.5,5,2,0,FALSE,"Burger; Jacobs","info; secondary",NA,NA
 "Paguma larvata","mass","Brain_Mass","g",30.9,30.9,3,1,0,FALSE,"Burger","secondary",NA,NA
-"Pan paniscus","mass","Brain_Mass","g",342.8886,342.8886,18,4,2,TRUE,"Burger; Stimpson; Weaver; Zilles","primary; secondary",NA,NA
-"Pan troglodytes","mass","Brain_Mass","g",361.719,379.1571,35,9,3,TRUE,"Brodmann; Burger; Collins; Garwicz; Karl; Lewitus; Stephan_collection; Stimpson; Zilles","info; primary; secondary",NA,NA
+"Pan paniscus","mass","Brain_Mass","g",342.8886,342.8886,19,5,2,TRUE,"Burger; deSousa; Stimpson; Weaver; Zilles","primary; secondary",NA,NA
+"Pan troglodytes","mass","Brain_Mass","g",361.719,379.1571,37,10,3,TRUE,"Brodmann; Burger; Collins; deSousa; Garwicz; Karl; Lewitus; Stephan_collection; Stimpson; Zilles","info; primary; secondary",NA,NA
 "Panthera leo","mass","Brain_Mass","g",259,259,8,4,1,TRUE,"Brodmann; Burger; Jacobs; Lewitus","info; primary; secondary",NA,NA
 "Panthera onca","mass","Brain_Mass","g",149,149,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Panthera pardus","mass","Brain_Mass","g",135,135,3,1,0,FALSE,"Burger","secondary",NA,NA
@@ -1201,7 +1201,7 @@
 "Pogonomys macrourus","mass","Brain_Mass","g",1.43,1.43,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Pogonomys sylvestris","mass","Brain_Mass","g",1.13,1.13,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Pongo","mass","Brain_Mass","g",433.13,433.13,3,1,1,TRUE,"Weaver","primary",NA,NA
-"Pongo pygmaeus","mass","Brain_Mass","g",376.6112,376.6112,10,3,1,TRUE,"Burger; Lewitus; Zilles","primary; secondary",NA,NA
+"Pongo pygmaeus","mass","Brain_Mass","g",376.6112,376.6112,11,4,1,TRUE,"Burger; deSousa; Lewitus; Zilles","primary; secondary",NA,NA
 "Pongo sp.","mass","Brain_Mass","g",345.9,345.9,5,2,1,TRUE,"Burger; Zilles","primary; secondary",NA,NA
 "Potamochoerus porcus","mass","Brain_Mass","g",138,138,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Potamogale velox","mass","Brain_Mass","g",4.13,4.13,8,3,1,TRUE,"Burger; Lewitus; Stephan_collection","primary; secondary",NA,NA

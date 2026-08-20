@@ -24,9 +24,10 @@ That "unpublished data" is what became **de Sousa et al. 2010 Table 1**. Column 
 
 | column | primary source |
 |---|---|
-| left V1, left LGN, neocortex, brain mass | `deSousa_etal_2010_Table1` (the same nine specimens) |
+| left V1, left LGN, brain mass | `deSousa_etal_2010_Table1` (the same nine specimens) |
+| **neocortex (whole column)** | **Carol MacLeod's own measurements**, `MacLeod_data.xls` Table II — the workbook she emailed in September 2002. Its brain/cerebellum/vermis/hemisphere columns are the published MacLeod et al. 2003 *J Hum Evol* table, but the **neocortex column was never published**. Held in the private repo `Evo-M1-Trait-Data-restricted` as `unpublished_data/____Unpublished__MacLeod_neocortex/` and subject to her conditions of use |
 | optic nerve cross-sectional area, eye half surface area | Stephan & Frahm 1981 species means (footnote f — the value repeats within a species) |
-| human neocortex (both rows) | MacLeod, unpublished combined-sex human mean, n = 8 (footnote b) |
+| human neocortex (both rows) | the same MacLeod workbook: 974 cm³ is the mean of her eight humans (973.9987 — reproduced exactly), which is what footnote b's "combined sex mean human neocortex value (n = 8) … unpublished data provided by Carol MacLeod" refers to |
 | *Homo* body mass | Zilles 1972 same-sex species mean (footnote a) |
 | *Pan paniscus* body mass | Jungers & Susman 1984 same-sex species mean (footnote c) |
 | ptd brain + body mass | Herndon et al. 1999 combined-sex species means (footnote d) |
@@ -56,13 +57,18 @@ The printed V1 and LGN volumes are the measured left side, **not** doubled: they
 `deSousa_etal_2009_Table1_compare_to_deSousa_2010_Table1_csv.R` audits three things and writes `..._comparison_report_from_R.csv` (+ `..._mismatches_from_R.csv`). Specimens are matched by archive number after normalising the en dash and the accession fraction (`YN82-140` ↔ `YN82–140`, `Disco` ↔ `Disco 3/97`). Because the two prints have different precision, a value counts as matching when it agrees to **half the last printed digit of the coarser print** (0.05 cm³ against 2010's one decimal place; 0.5 against a whole number).
 
 - **A. values vs de Sousa 2010 Table 1 — 31 match, 1 mismatch, 3 `2009 only` + 1 `both missing`.** All 9 left V1 and all 9 left LGN values agree; brain mass agrees for 8 (the 9th, ptd, has no 2010 value because 2009 prints the Herndon species mean); neocortex agrees for 5, is 2009-only for the two *Homo* rows (MacLeod mean), missing in both for mf2, and mismatches for ppz — see the flag below. The `2009 only` / `both missing` rows are provenance, not errors (`__HOWTO_build_a_dataset_file.md` §7).
-- **B. specimen identity vs `_keys/specimen_crosswalk/collection_specimens_parsed.csv`** — the `code` column *is* the catalog's `my working code`, so all nine rows resolve to a catalogued individual (CAT-070, CAT-080, CAT-082, CAT-095, CAT-111, CAT-131, CAT-133, CAT-134, CAT-150) and the printed sex and age match the catalog in every case. ptd is `NA/NA` in print and `U/blank` in the catalog — consistent.
+- **B. specimen identity vs the restricted master catalog** — the private audit confirms that the
+  paper's `code` field corresponds to the catalog's working-code field and checks the printed sex and
+  age. Exact catalog identifiers and row-level matches are retained in
+  `Evo-M1-Traits-Data-restricted/restricted_checks/deSousa_etal_2009/`, not in this public note.
 - **C. internal consistency of EQ** — recomputing EQ = brain(g) / (11.22 × body(kg)^0.75) reproduces every printed EQ to within **0.055** (worst case *Hylobates lar*, 2.54 printed vs 2.485), the expected effect of the masses being printed rounded.
 
 ## FLAG — the ppz (*Pan paniscus*, Zahlia) neocortex is another bonobo's value
-Table 1 prints **279 cm³** of neocortex for `ppz` / Zahlia. In `deSousa_etal_2010_Table1` Zahlia's own neocortex is **214.4 cm³**, and **279.0 cm³** is the value printed for a *different* bonobo of the same collection, **YN86–137**. Every other Zahlia value in the 2009 row (brain mass 324 g, left V1 5687 mm³ ≈ 5.7 cm³, left LGN 130 mm³ ≈ 0.1 cm³) matches Zahlia, so the mismatch is confined to this one cell.
+Table 1 prints **279 cm³** of neocortex for `ppz` / Zahlia. Zahlia's own neocortex is **214.4 cm³**; **279.0** belongs to a *different* bonobo of the same collection, **YN86–137**. Every other Zahlia value in the 2009 row (brain mass 324 g, left V1 5687 mm³ ≈ 5.7 cm³, left LGN 130 mm³ ≈ 0.1 cm³) matches Zahlia, so the error is confined to this one cell.
 
-It is **kept as printed** in both the snapshot and the CSV, and flagged here, in `reference_tables/…_definitions.csv`, and in `__ReadMe.xlsx` (`Flags pre-addressed`). Unlike the de Sousa 2010 Supplementary Table 2 neocortex error — 13 of 17 values physically impossible, so corrected in the data — this is a plausible value that belongs to a real sibling specimen, and correcting it would mean guessing at the authors' intent. Since the column is secondary and not merged, no value in the project depends on it. The bonobo neocortex the merge does use comes from `deSousa_etal_2010_Table1`.
+**How it happened is now known.** The neocortex column comes from Carol MacLeod's `MacLeod_data.xls` Table II, and that sheet labels its specimens **anonymously** — `PAN PANISCUS H1`, `PAN PANISCUS H2`, and so on, with no archive numbers. `H1` is YN86-137 (278.968) and `H2` is Zahlia (214.405). The 2009 table took the wrong H-row for the bonobo. This is exactly the risk Carol warned about when she asked that "the specimens [be kept] in the same format as the published JHE volumes (i.e., Homo sapiens(139/95)" — the crosswalk that resolves her H-numbers to named specimens is now `unpublished_data/____Unpublished__MacLeod_neocortex/MacLeod_specimen_crosswalk.csv` in the private repo.
+
+The value is **kept as printed** in both the snapshot and the CSV, and flagged here, in `reference_tables/…_definitions.csv`, and in `__ReadMe.xlsx` (`Flags pre-addressed`). Unlike the de Sousa 2010 Supplementary Table 2 neocortex error — 13 of 17 values physically impossible, so corrected in the data — this is a real measurement of a real specimen, printed against the wrong animal. Since the column is secondary and not merged, no value in the project depends on it; the bonobo neocortex the merge uses comes via `deSousa_etal_2010_Table1`, where Zahlia carries her own 214.4.
 
 ## Note
 Two further differences from 2010 Table 1 are rounding, not disagreement, and are carried as printed: brain mass 58 g vs 57.6 g (mf2) and 360 g vs 359.5 g (ptb). Tables 2–4 of this paper are derived statistics and are deliberately not built. If the merge is ever changed to prefer this table's mm³ precision over 2010's rounded cm³ for the nine shared specimens, that is a `__merging_volumes` decision (conflict-resolution rule 1, "revised value") and needs the usual regression re-check — it is **not** done by this build.

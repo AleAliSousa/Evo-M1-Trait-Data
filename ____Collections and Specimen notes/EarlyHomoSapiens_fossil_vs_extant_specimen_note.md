@@ -67,6 +67,10 @@ Each fossil is one `canonical_specimen`, with one alias row per source label
 rows total: 4 EH + 4 NT specimens, with a second row for the four that also
 appear in Weaver A-15.
 
+All twelve rows now carry `specimen_kind = fossil_specimen`. This is the
+authoritative filter: fossil status must not be guessed from `taxon`, because
+early fossil and extant records can share the binomial *Homo sapiens*.
+
 ### Concept level (`taxon_concept_registry.csv`)
 
 Three concepts added, all `sensu = NA`:

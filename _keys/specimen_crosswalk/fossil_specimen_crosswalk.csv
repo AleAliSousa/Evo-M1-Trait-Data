@@ -1,13 +1,13 @@
-canonical_specimen,source_publication,printed_name,taxon_code,taxon,item_reference,match,note
-La Chapelle-aux-Saints 1,Kochiyama_etal_2018,La Chapelle-aux-Saints 1,NT,Neanderthal,Kochiyama_etal_2018_FossilSpecimensText,matched,
-La Chapelle-aux-Saints 1,Weaver__2001,La Chapelle I,NT,Neanderthal (Late Archaic Homo),Weaver__2001_TableA-15,matched,Weaver group 12-LAH
-La Ferrassie 1,Kochiyama_etal_2018,La Ferrassie 1,NT,Neanderthal,Kochiyama_etal_2018_FossilSpecimensText,matched,
-La Ferrassie 1,Weaver__2001,La Ferrassie I,NT,Neanderthal (Late Archaic Homo),Weaver__2001_TableA-15,matched,Weaver group 12-LAH
-Gibraltar 1 (Forbes’ Quarry 1),Kochiyama_etal_2018,Forbes’ Quarry 1,NT,Neanderthal,Kochiyama_etal_2018_FossilSpecimensText,matched,
-Gibraltar 1 (Forbes’ Quarry 1),Weaver__2001,Gibraltar/Forbes Quarry,NT,Neanderthal (Late Archaic Homo),Weaver__2001_TableA-15,matched,Weaver group 12-LAH
-Cro-Magnon 1,Kochiyama_etal_2018,Cro-Magnon 1,EH,early Homo sapiens,Kochiyama_etal_2018_FossilSpecimensText,matched,
-Cro-Magnon 1,Weaver__2001,Cro-Magnon,EH,early Homo sapiens (Early Modern Homo),Weaver__2001_TableA-15,matched,Weaver group 13-EMH
-Amud 1,Kochiyama_etal_2018,Amud 1,NT,Neanderthal,Kochiyama_etal_2018_FossilSpecimensText,Kochiyama-only,no specimen in Weaver A-15
-Qafzeh 9,Kochiyama_etal_2018,Qafzeh 9,EH,early Homo sapiens,Kochiyama_etal_2018_FossilSpecimensText,Kochiyama-only,no specimen in Weaver A-15
-Skhul 5,Kochiyama_etal_2018,Skhul 5,EH,early Homo sapiens,Kochiyama_etal_2018_FossilSpecimensText,Kochiyama-only,no specimen in Weaver A-15
-Mladeč 1,Kochiyama_etal_2018,Mladeč 1,EH,early Homo sapiens,Kochiyama_etal_2018_FossilSpecimensText,Kochiyama-only,no specimen in Weaver A-15
+"canonical_specimen","record_type","specimen_kind","access_class","evidence_source_ids","source_publication","printed_name","taxon_code","taxon","item_reference","match","note"
+"La Chapelle-aux-Saints 1","specimen","fossil_specimen","public","PUB_KOCHIYAMA_2018","Kochiyama_etal_2018","La Chapelle-aux-Saints 1","NT","Neanderthal","Kochiyama_etal_2018_FossilSpecimensText","matched",NA
+"La Chapelle-aux-Saints 1","specimen","fossil_specimen","public","PUB_WEAVER_2001","Weaver__2001","La Chapelle I","NT","Neanderthal (Late Archaic Homo)","Weaver__2001_TableA-15","matched","Weaver group 12-LAH"
+"La Ferrassie 1","specimen","fossil_specimen","public","PUB_KOCHIYAMA_2018","Kochiyama_etal_2018","La Ferrassie 1","NT","Neanderthal","Kochiyama_etal_2018_FossilSpecimensText","matched",NA
+"La Ferrassie 1","specimen","fossil_specimen","public","PUB_WEAVER_2001","Weaver__2001","La Ferrassie I","NT","Neanderthal (Late Archaic Homo)","Weaver__2001_TableA-15","matched","Weaver group 12-LAH"
+"Gibraltar 1 (Forbes’ Quarry 1)","specimen","fossil_specimen","public","PUB_KOCHIYAMA_2018","Kochiyama_etal_2018","Forbes’ Quarry 1","NT","Neanderthal","Kochiyama_etal_2018_FossilSpecimensText","matched",NA
+"Gibraltar 1 (Forbes’ Quarry 1)","specimen","fossil_specimen","public","PUB_WEAVER_2001","Weaver__2001","Gibraltar/Forbes Quarry","NT","Neanderthal (Late Archaic Homo)","Weaver__2001_TableA-15","matched","Weaver group 12-LAH"
+"Cro-Magnon 1","specimen","fossil_specimen","public","PUB_KOCHIYAMA_2018","Kochiyama_etal_2018","Cro-Magnon 1","EH","early Homo sapiens","Kochiyama_etal_2018_FossilSpecimensText","matched",NA
+"Cro-Magnon 1","specimen","fossil_specimen","public","PUB_WEAVER_2001","Weaver__2001","Cro-Magnon","EH","early Homo sapiens (Early Modern Homo)","Weaver__2001_TableA-15","matched","Weaver group 13-EMH"
+"Amud 1","specimen","fossil_specimen","public","PUB_KOCHIYAMA_2018","Kochiyama_etal_2018","Amud 1","NT","Neanderthal","Kochiyama_etal_2018_FossilSpecimensText","Kochiyama-only","no specimen in Weaver A-15"
+"Qafzeh 9","specimen","fossil_specimen","public","PUB_KOCHIYAMA_2018","Kochiyama_etal_2018","Qafzeh 9","EH","early Homo sapiens","Kochiyama_etal_2018_FossilSpecimensText","Kochiyama-only","no specimen in Weaver A-15"
+"Skhul 5","specimen","fossil_specimen","public","PUB_KOCHIYAMA_2018","Kochiyama_etal_2018","Skhul 5","EH","early Homo sapiens","Kochiyama_etal_2018_FossilSpecimensText","Kochiyama-only","no specimen in Weaver A-15"
+"Mladeč 1","specimen","fossil_specimen","public","PUB_KOCHIYAMA_2018","Kochiyama_etal_2018","Mladeč 1","EH","early Homo sapiens","Kochiyama_etal_2018_FossilSpecimensText","Kochiyama-only","no specimen in Weaver A-15"

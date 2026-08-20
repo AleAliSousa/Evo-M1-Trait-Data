@@ -9,13 +9,22 @@ two-layer specimen / taxon-concept model).
 - `Disco_gibbon_specimen_note.md` — gibbon Disco / GPZ-5542: one individual,
   conflicting published taxa (*H. lar* / *N. concolor* / studbook
   *N. leucogenys*). The **one-individual-many-labels** case.
-- `Pongo_specimen_note.md` — orangutan pygmaeus→abelii split: the
-  **one-label-many-individuals** case, plus the Düsseldorf Stephan/Zilles
-  collection overlap. Reference worked example for the two-layer model.
+- `Pongo_specimen_note.md` — public-source account of the orangutan
+  pygmaeus→abelii split. The full catalog-dependent evidence note is restricted.
+- `EarlyHomoSapiens_fossil_vs_extant_specimen_note.md` — why individually
+  named fossils remain specimens but are explicitly filterable from historical
+  biological specimens and living reference samples.
 
-## Source material
+Restricted case notes now include Bush-Allman accession mapping,
+Gorilla/Tarsius catalog interpretation, and the full mixed-source Pongo audit.
+See `_keys/specimen_crosswalk/SPECIMEN_INFORMATION_BOUNDARY.md`.
 
-- `specimens info 151211.xls` — the master specimen catalog (183 rows; parsed to
-  `_keys/specimen_crosswalk/collection_specimens_parsed.csv`).
+## Source material and access
+
 - `Stephan and Zilles Collections specimen lists/` — collection PDFs.
 - `Structural and functional organisation of the brain (INM-1)/` — INM-1 lists.
+
+The unpublished master catalog and its parsed derivative have moved to
+`Evo-M1-Traits-Data-restricted/specimen_registry/`. The collection PDFs remain
+here pending a per-file public-availability and redistribution review; they are
+not a basis for new public identity claims until that review is recorded.

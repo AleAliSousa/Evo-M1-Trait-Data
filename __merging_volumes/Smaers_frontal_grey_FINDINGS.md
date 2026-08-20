@@ -53,16 +53,18 @@ compilation. (Smaers 2017 *is* a compilation; see `crosspub_Smaers2017_FINDINGS.
 17 of 18 species agree within ±6% (median +0.3%); the same brains were re-used and lightly
 re-measured. Every total brain volume agrees to **0.01%** — with one exception.
 
-**Pongo is −33% (64.44 → 42.96 cm³), and none of it is re-measurement: Smaers changed orangutan.**
+**Pongo is −33% (64.44 → 42.96 cm³), and the printed specimen identifier changes between tables.**
 
-| source | printed catalogue | = specimen | brain vol | MacLeod brain g | density |
+| source | printed catalogue | public specimen resolution | brain vol | MacLeod brain g | density |
 |---|---|---|---|---|---|
-| 2010 Table 1 | `297` | CAT-148 = **HARRY** / OY 1148 | 424.7 cm³ | 440 | 1.036 g/cm³ |
-| 2011 Suppl. T1 | `yn85 38` | **YN85-38** (candidate CAT-150) | 356.2 cm³ | 369 | 1.036 g/cm³ |
+| 2010 Table 1 | `297` | unresolved in the public layer | 424.7 cm³ | NA | NA |
+| 2011 Suppl. T1 | `yn85 38` | **YN85-38** (same printed identifier in MacLeod 2000) | 356.2 cm³ | 369 | 1.036 g/cm³ |
 
-Both identifications land on the same implied brain density, which is what confirms them. YN85-38 is
-the repo's known pygmaeus→abelii case: MacLeod 2000 Appendix I prints it as `PONGO PYGMAEUS / ABELII`,
-and it is resolved to ***Pongo abelii*** (Sumatran) in `specimen_crosswalk.csv`.
+The different printed identifiers are sufficient to show that the 2010 and 2011 rows are not a
+simple re-measurement of one labeled specimen. YN85-38 is the repo's public pygmaeus→abelii case:
+MacLeod 2000 Appendix I prints it as `PONGO PYGMAEUS / ABELII`, and it is resolved to
+***Pongo abelii*** (Sumatran) in the public `specimen_crosswalk.csv`. The identity of catalogue `297`
+and its private-catalog links are retained only in the restricted overlay.
 
 **Consequence: the orangutan value now in the merge is a Sumatran animal**, carried under the lumped
 label `Pongo sp.` It is n = 1, a *specimen* measurement — not a pooled *sensu lato* mean — so the
@@ -70,9 +72,10 @@ do-not-split rule does not apply and `resolved_taxon = Pongo abelii` does. Smaer
 individual forward (its Pongo `prefrontal_gray` 8.596 = the 2011 `sec5_grey_total` 8.60), so the
 `FrontalMotor_*` values already in `volumes_wide_select.csv` under `Pongo sp.` are this same brain.
 
-Recorded in `_keys/specimen_crosswalk/specimen_crosswalk.csv` (3 rows),
-`_keys/specimen_crosswalk/pongo_provenance_audit.csv` (3 rows), and
-`____Collections and Specimen notes/Pongo_specimen_note.md` §4.
+The public YN85-38 chain is recorded in `_keys/specimen_crosswalk/specimen_crosswalk.csv`,
+`_keys/specimen_crosswalk/pongo_provenance_audit.csv`, and
+`____Collections and Specimen notes/Pongo_specimen_note.md`. The 2010 catalog match and full finding
+are in `Evo-M1-Traits-Data-restricted/specimen_registry/cases/`.
 
 ## 3. Compatibility: it was already built, just not switched on
 
@@ -139,13 +142,12 @@ Pre-run backup in `_prerun_backup_smaers2011_2026-08-12/`. Checks run against it
   are exact arithmetic of the grey/white pair and should not be ingested separately.
 - **Smaers 2011 Supplementary Table 2** (prefrontal, `sec5_*`) is not term-mapped. Wiring it would let
   prefrontal enter at its true 2011 date instead of being skipped as a 2017 republication.
-- If Smaers 2010 is ever wired on the same team as 2011, recency silently picks 2011 and the Harry
-  orangutan disappears without the specimen change surfacing. Flag it before that happens.
+- If Smaers 2010 is ever wired on the same team as 2011, recency silently picks 2011 and specimen
+  `297` disappears without the specimen change surfacing. Flag it before that happens.
 
 ---
 
 Sources: `Smaers_etal_2010/Smaers_etal_2010_Table1.csv`;
 `Smaers_etal_2011/Smaers_etal_2011_SupplementaryTable{1,2}.csv`;
 `Smaers_etal_2017/Smaers_etal_2017_TableS1part1.csv`;
-`__merging_volumes/crosspub_Smaers2017_FINDINGS.md`;
-`_keys/specimen_crosswalk/collection_specimens_parsed.csv`; MacLeod (2000) Appendix I.
+`__merging_volumes/crosspub_Smaers2017_FINDINGS.md`; MacLeod (2000) Appendix I.

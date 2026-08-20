@@ -1,4 +1,4 @@
-# Specimen tracking — two-layer schema
+# Specimen tracking — identity, source, and access schema
 
 Two record types, two files, one join. This exists because two *different*
 data-integrity problems were being conflated:
@@ -17,17 +17,25 @@ Layer 1 handles case (1); layer 2 handles case (2).
 
 ---
 
-## Layer 1 — `specimen_crosswalk.csv`  (record_type = "specimen")
+## Layer 1 — specimen crosswalks (`record_type = "specimen")
 
 One row per **(individual × source label)**. A physical animal that appears in
 three papers under two names is one `canonical_specimen` with three rows. This
 generalises `fossil_specimen_crosswalk.csv` (which is the same idea for fossils)
 to living-collection specimens.
 
+The public file is `_keys/specimen_crosswalk/specimen_crosswalk.csv`. Private
+rows with the same schema live in the restricted companion repository as
+`specimen_registry/derived/specimen_crosswalk_restricted.csv`. They may be
+combined only in an explicitly restricted build.
+
 | column | meaning |
 |---|---|
 | `canonical_specimen` | stable minted id for one physical individual (the join anchor). One per animal, reused across its source rows. |
 | `record_type` | always `specimen` in this file. |
+| `specimen_kind` | controlled description of what the record represents: `historical_biological_specimen`, `fossil_specimen`, `in_vivo_subject`, or `unknown`. |
+| `access_class` | `public` or `restricted`, determined by the evidence supporting this identity row rather than by the printed-label source alone. |
+| `evidence_source_ids` | `;`-joined foreign keys to `specimen_source_registry.source_id`; includes every source needed to support the identity assertion. |
 | `specimen_name` | house / nick name (`Disco`, `HARRY`, `BRIGGS`) or `NA`. |
 | `primary_identifier` | best single ID (`GPZ-5542`, `YN85-38`, catalog `Art. Nr.`). |
 | `alternate_identifiers` | `;`-joined other IDs seen for this animal. |
@@ -42,6 +50,25 @@ to living-collection specimens.
 | `match` | `matched` / `<source>-only` / `unmatched`. |
 | `sex` | `M`/`F`/`NA`. |
 | `note` | free text: evidence, links, caveats. |
+
+### `specimen_kind` rule
+
+`fossil_specimen` means fossil or archaeological remains, or an endocast or
+reconstruction tied to those remains. It does not imply a known living animal
+record. Fossil rows remain individuals for cross-publication deduplication, but
+consumers must be able to exclude them with a direct field filter and must not
+infer fossil status from taxon names. See `SPECIMEN_INFORMATION_BOUNDARY.md`.
+
+### Source and access rule
+
+`source_publication` records where the row's printed label appears.
+`evidence_source_ids` records what establishes the identity link. These are not
+always the same. For example, a public Bush table can supply a species row while
+an unpublished author workbook supplies the accession mapping; that crosswalk
+row is `restricted`.
+
+All IDs in `evidence_source_ids` must occur in
+`specimen_source_registry.csv`. A public row must not cite a restricted source.
 
 ## Layer 2 — `taxon_concept_registry.csv`
 
@@ -72,6 +99,10 @@ belonged to**. The specimen's *own* best identity lives in `resolved_taxon` and
 can differ from the concept (that is the whole point of YN85-38: printed under
 the *P. pygmaeus s.l.* concept, resolved as *P. abelii*).
 
+External museum, catalog, studbook, or biodiversity identifiers use the
+separate one-to-many table `specimen_external_links.csv`; they are not added as
+repeating columns here.
+
 ## The hard rule for the merge (consumer contract)
 
 - A value that is a **specimen measurement** may be reassigned to a modern
@@ -84,3 +115,8 @@ the *P. pygmaeus s.l.* concept, resolved as *P. abelii*).
 - This is distinct from the DeCasien cross-genus *duplicate* case (Disco): a
   duplicate is one specimen double-entered under two genera (resolve by
   dedup); an s.l. pooled mean is many specimens under one genus (do not split).
+- Fossil versus historical/in-vivo filtering is controlled by `specimen_kind`,
+  independently of this specimen-versus-taxon-concept rule.
+- Public builds use only `access_class = public`. Restricted overlays must be
+  requested explicitly; their presence on disk must not silently change a
+  build.

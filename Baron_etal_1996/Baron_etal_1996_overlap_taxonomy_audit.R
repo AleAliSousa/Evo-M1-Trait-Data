@@ -17,7 +17,7 @@ root_dir <- local({
     stop("Repository root not found above ", paper_dir, call. = FALSE)
   d
 })
-comparison_dir <- file.path(paper_dir, "comparison")
+audit_dir <- paper_dir
 
 t10 <- read.csv(file.path(paper_dir, "Baron_etal_1996_Table10.csv"),
                 check.names = FALSE, stringsAsFactors = FALSE)
@@ -206,7 +206,7 @@ eligible <- baron_long[baron_long$merge_eligible, , drop = FALSE]
 overlap <- merge(eligible, current_key, by = c("Species", "Variable"), all = FALSE)
 overlap <- overlap[order(overlap$Species, overlap$Variable, overlap$Baron_item, overlap$Source), ]
 write.csv(overlap,
-          file.path(comparison_dir, "Baron_etal_1996_overlap_audit.csv"),
+          file.path(audit_dir, "Baron_etal_1996_overlap_audit.csv"),
           row.names = FALSE, na = "")
 
 current_species <- sort(unique(current$Species))
@@ -215,7 +215,7 @@ baron_species$in_current_volume_merge <- baron_species$candidate_name %in% curre
 names(baron_species)[1] <- "Species"
 baron_species <- baron_species[order(baron_species$Species), ]
 write.csv(baron_species,
-          file.path(comparison_dir, "Baron_etal_1996_species_overlap_audit.csv"),
+          file.path(audit_dir, "Baron_etal_1996_species_overlap_audit.csv"),
           row.names = FALSE, na = "")
 
 components <- c("main_olfactory_bulb_mm3", "paleocortex_mm3", "striatum_mm3", "septum_mm3",
@@ -244,7 +244,7 @@ report <- c(
           nrow(overlap), sum(baron_species$in_current_volume_merge & baron_species$merge_eligible)),
   "The current Ashwell 2020 bat, *Pteropus giganteus*, is absent from Baron 1996. The previously anticipated Stephan/Baron overlap is therefore not present in the current canonical inputs: Baron is primarily a new Chiroptera block, not a duplicate block.",
   "",
-  "The machine-readable checks are `comparison/Baron_etal_1996_overlap_audit.csv` (species × structure; empty when no overlaps exist) and `comparison/Baron_etal_1996_species_overlap_audit.csv` (species-only membership).",
+  "The machine-readable checks are `Baron_etal_1996_overlap_audit.csv` (species × structure; empty when no overlaps exist) and `Baron_etal_1996_species_overlap_audit.csv` (species-only membership), beside this report. They use only public inputs and therefore remain public.",
   "",
   "## Taxa still requiring a curator decision",
   "",

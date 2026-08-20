@@ -36,6 +36,11 @@ raw → snapshot → R script → usable csv/tsv.
 
 One row per species (48): `code, Species_Matano1985b, n, body_weight_g, ventral_pons_mm3`. The R script reads past the 3 header rows and keeps the rows with a numeric VPo volume (dropping the grade-header rows). Volumes are already in mm³ (no conversion). Also writes a DOI-named TSV (`10.1159%2F000156211_Table1.tsv`) to `../__Public/comparative-data/`.
 
-## Checking → `comparison/`
+## Checking → private companion repository
 
-Matches snapshot to `Matano_1985b.csv` by species (paper name or canonical, each CSV row resolved once) and compares VPo volume, body weight and n. Verified: **48 matched, 0 value mismatches.** `Pongo sp.` carries a VPo value (4300) but **no paper species name** in the CSV → reported as **csv-only** — an expected post-1985 addition (Matano measured *Pan*, *Gorilla* and *Homo* among the apes, not *Pongo*); see `_checks/check_Zilles_Rehkamper_1988_provenance.R`.
+The private `restricted_checks/Matano_etal_1985_b/comparison/` audit matches the snapshot to
+`Matano_1985b.csv` by species (paper name or canonical, each CSV row resolved once) and compares VPo
+volume, body weight and n. Verified: **48 matched, 0 value mismatches.** `Pongo sp.` carries a VPo
+value (4300) but **no paper species name** in the CSV → reported as **csv-only** — an expected
+post-1985 addition (Matano measured *Pan*, *Gorilla* and *Homo* among the apes, not *Pongo*); see the
+private `restricted_checks/_cross_table/Zilles_Rehkamper_1988_provenance/` audit.

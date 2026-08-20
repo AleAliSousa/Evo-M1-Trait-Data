@@ -13,8 +13,17 @@
 #
 # Common measures: CMRgl (glucose), CMRO2 (oxygen), CBF (blood flow).
 
-suppressPackageStartupMessages({ library(readr); library(readxl); library(dplyr); library(tidyr); library(stringr) })
-base <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data"
+suppressPackageStartupMessages({ library(readr); library(dplyr); library(stringr) })
+
+## ---- self-contained repo root (Rscript or RStudio) -------------------------
+.here <- local({
+  a <- grep("^--file=", commandArgs(FALSE), value = TRUE)
+  if (length(a)) return(dirname(normalizePath(sub("^--file=", "", a[1]))))
+  if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable())
+    return(dirname(normalizePath(rstudioapi::getSourceEditorContext()$path)))
+  normalizePath(getwd())
+})
+base <- normalizePath(file.path(.here, ".."))
 outdir <- file.path(base, "__energetics_comparison")
 dir.create(outdir, showWarnings = FALSE, recursive = TRUE)
 numv <- function(x) suppressWarnings(as.numeric(gsub(",", "", as.character(x))))
@@ -27,31 +36,15 @@ heiss <- read_csv(file.path(base, "Heiss_etal_2004/Heiss_etal_2004_TABLE1.csv"),
             units = "umol_glucose/100g/min", weighting = NA_character_) %>%
   filter(!is.na(value))
 
-## ---- Kaufman 2004: whole-brain + cortex CMRgl/CMRO2/CBF (weighted means) ----
-kauf_long <- function(fn, region_label, region_prefix) {
-  d <- read_csv(file.path(base, fn), show_col_types = FALSE) %>% filter(Weight %in% c("weighted") | weight %in% c("weighted"))
-  d
-}
-read_kauf <- function(fn) read_csv(file.path(base, fn), show_col_types = FALSE)
-wb <- read_kauf("Kaufman__2004/comparison/Kaufman data added to compilation/Kaufman glucose oxygen blood flow/wholebrain_Kaufman2004.csv")
-pb <- read_kauf("Kaufman__2004/comparison/Kaufman data added to compilation/Kaufman glucose oxygen blood flow/partsbrain_Kaufman2004.csv")
-wcol <- if ("weight" %in% names(wb)) "weight" else "Weight"
-pcol <- if ("Weight" %in% names(pb)) "Weight" else "weight"
-pick_means <- function(df, wname, region) {
-  mean_cols <- names(df)[str_detect(names(df), "Mean$")]
-  df %>% filter(.data[[wname]] == "weighted") %>%
-    select(Species, all_of(mean_cols)) %>%
-    pivot_longer(-Species, names_to = "col", values_to = "value") %>%
-    mutate(value = numv(value),
-           measure = case_when(str_detect(col, "CMRgl") ~ "CMRgl",
-                               str_detect(col, "CMR0?2|CMRO2") ~ "CMRO2",
-                               str_detect(col, "CBF") ~ "CBF", TRUE ~ NA_character_),
-           region = str_squish(str_remove(col, "(CMRgl|CMRO2|CMR02|CBF).*$"))) %>%
-    filter(!is.na(value), !is.na(measure))
-}
-kauf <- bind_rows(pick_means(wb, wcol), pick_means(pb, pcol)) %>%
-  transmute(reference = "Kaufman_2004", species = Species, region = ifelse(region == "", "Whole Brain", region),
-            measure, value,
+## ---- Kaufman 2004: whole-brain + regional weighted means -------------------
+## Table A15 is the canonical public long table built from the dissertation's
+## whole-brain and regional summaries. It supersedes the former comparison/
+## helper CSVs that were moved to the restricted companion repository.
+kauf <- read_csv(file.path(base, "Kaufman__2004", "Kaufman__2004_TableA15.csv"),
+                 show_col_types = FALSE) %>%
+  filter(weighting == "weighted", !is.na(Mean)) %>%
+  transmute(reference = "Kaufman_2004", species,
+            region = str_squish(region), measure, value = numv(Mean),
             units = case_when(measure == "CMRgl" ~ "umol_glucose/100g/min",
                               measure == "CMRO2" ~ "umol_O2/100g/min",
                               measure == "CBF"   ~ "mL/100g/min"),

@@ -11,8 +11,7 @@
 #
 # Inputs (repo-relative)
 #   Seymour_etal_2015/Seymour_etal_2015_TableS1.csv
-#   Boyer_Harrington_2019/comparison/Boyer data added to compilation/
-#       Boyer glucose blood flow/Boyer_predicting_pBGU.csv
+#   Boyer_Harrington_2019/Boyer_Harrington_2019_SOMTableS6.csv
 #   _keys/Stephan/species_key.csv   (token Seymour2015 -> accepted names)
 #
 # Outputs (this folder)
@@ -70,13 +69,13 @@ sey <- read_csv(rp("Seymour_etal_2015/Seymour_etal_2015_TableS1.csv"), show_col_
             ECV_ml_Seymour = Brain_volume_ml, Sey_QICA_mLs = Total_QICA_cm3_s)
 
 ## ---- load Boyer & Harrington 2019 (ICA + VA + TOT) ----
-boy_path <- rp("Boyer_Harrington_2019/comparison/Boyer data added to compilation",
-               "Boyer glucose blood flow/Boyer_predicting_pBGU.csv")
+boy_path <- rp("Boyer_Harrington_2019", "Boyer_Harrington_2019_SOMTableS6.csv")
 boy <- read_csv(boy_path, show_col_types = FALSE) %>%
-  filter(!is.na(`Boyer Species`), `Boyer Species` != "") %>%
-  transmute(accepted_species = boyer_accept(`Boyer Species`),
-            BM_g_Boyer = BM, ECV_ml_Boyer = ECV,
-            Boy_QICA_mLs = QICA, Boy_QVA_mLs = QVA, Boy_QTOT_mLs = QTOT)
+  filter(!is.na(Species), Species != "") %>%
+  transmute(accepted_species = boyer_accept(Species),
+            BM_g_Boyer = BM_g, ECV_ml_Boyer = ECV_ml,
+            Boy_QICA_mLs = QICA_ml_s, Boy_QVA_mLs = QVA_ml_s,
+            Boy_QTOT_mLs = QTOT_ml_s)
 
 ## ---- merge (union) ----
 combined <- full_join(sey, boy, by = "accepted_species") %>%

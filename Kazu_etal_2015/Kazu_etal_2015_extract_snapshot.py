@@ -10,7 +10,7 @@ This is the CORRECTED reprint of Kazu et al. 2014 Table 1. The corrigendum state
 the hippocampus had been counted into the rest of brain rather than the cerebral cortex in four
 species, and omitted entirely for Damaliscus, plus "a few other minor mistakes". The 2014 build
 lives in ../Kazu_etal_2014/ and is kept as the historical printing; the cell-by-cell diff between
-the two is produced by comparison/Kazu_etal_2015_TABLE1_compare_to_Kazu_2014.R.
+the two is produced by the private companion repo's Kazu comparison check.
 
 Why coordinate extraction (see __HOWTO_make_a_snapshot.md and the sibling 2014 script): the
 Frontiers text layer stores no space glyphs ("TABLE1|CellularcompositionofArtiodactylabrains")

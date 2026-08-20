@@ -12,9 +12,9 @@ values, some physically impossible (neurons or microglia exceeding total cells; 
 older publications (e.g. Herculano-Houzel et al. 2015). It is therefore used **in place of the
 published Table 1** in the merged cell-counts dataset.
 
-- Checks: `DosSantos_etal_2020_Table1_check.R` (systematic published-vs-unpublished comparison +
+- Checks (now in the private repo Evo-M1-Traits-Data-restricted, `restricted_checks/_cross_table/DosSantos_2020_published_vs_authors_unpublished/`): `DosSantos_etal_2020_Table1_check.R` (systematic published-vs-unpublished comparison +
   internal-consistency scan + broader cross-check against other HH-team papers).
-- Reports: `DosSantos_etal_2020_comparison_report.csv` (published vs unpublished),
+- Reports (same folder there): `DosSantos_etal_2020_comparison_report.csv` (published vs unpublished),
   `DosSantos_etal_2020_crosssource_check.csv` (vs other papers); summary `DosSantos_etal_2020_comparison_summary.md`.
 - **Broader validation:** for the 32 DS2020 species also reported in Herculano-Houzel et al. 2015
   (afrotherians/artiodactyls/primates), Dos Santos et al. 2017 (marsupials) and Jardim-Messeder et al.
@@ -25,7 +25,7 @@ published Table 1** in the merged cell-counts dataset.
 
 ## Source / provenance
 
-Raw unpublished spreadsheet `2020-PublishedDataMammalsMicroglia - cópia.xlsx`, received by email:
+Raw unpublished spreadsheet `2020-PublishedDataMammalsMicroglia - cópia.xlsx` — held in the private repo Evo-M1-Traits-Data-restricted, `unpublished_data/____Unpublished__DosSantos_microglia_2024/`, because it is the authors' unpublished data. The build reaches it via `_tools/restricted_data.R`. Received by email:
 
 - From: Alex W. Tikky \<alex.tikky@gmail.com\>, Fri 22 Mar 2024 — to Orlin S. Todorov \<tdrvorlin@gmail.com\>
 - Forwarded: Orlin S. Todorov → Alexandra de Sousa \<alexandraallisonsousa@gmail.com\>, 21 Mar 2024

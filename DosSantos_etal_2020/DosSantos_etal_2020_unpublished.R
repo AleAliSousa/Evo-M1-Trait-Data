@@ -41,11 +41,21 @@ library(readr)
 options(scipen = 999)
 
 # 1. Read the published dataset (reformatted but before species names were updated)
-DosSantos_etal_2020_Table1 <- read_csv(paste0(folder_path,"DosSantos_etal_2020_Table1.csv"))
+DosSantos_etal_2020_Table1 <- read_csv(
+  paste0(folder_path, "DosSantos_etal_2020_Table1.csv"), show_col_types = FALSE
+)
 
 # 2. Read the unpublished dataset  
-tabledirectxl <- read_excel(paste0(folder_path,"2020-PublishedDataMammalsMicroglia - cópia.xlsx"))
-
+#    The authors' spreadsheet is data they shared privately, so it is NOT in this public
+#    repository: it lives in the private companion repo Evo-M1-Traits-Data-restricted
+#    (unpublished_data/____Unpublished__DosSantos_microglia_2024/), which also carries the
+#    ReadMe recording how it was received. _tools/restricted_data.R resolves it and stops
+#    with an explanatory message if that repo is not mounted.
+source(file.path(base, "_tools", "restricted_data.R"))
+unpublished_xlsx <- evom1_restricted_file(
+  "unpublished_data", "____Unpublished__DosSantos_microglia_2024",
+  "2020-PublishedDataMammalsMicroglia - cópia.xlsx")
+tabledirectxl <- read_excel(unpublished_xlsx)
 # I. Simplify unpublished dataset for comparison
 # A. Calculate Missing averages
 # Define the specific structure values to check
@@ -125,7 +135,6 @@ unique(tabledirect_filtered$Structure_Code)
 
 # D. Extract only the columns needed
 unpublished <- tabledirect_filtered[, c("Species", "Structure_Code", "%Iba1+")]
-unique(unpublished$Structure)
 
 # add a suffix "_I/C"after each string in unpublished$Structure_Code
 unpublished$Structure_Code <- paste0(unpublished$Structure_Code, "_I/C")
@@ -245,11 +254,9 @@ options(scipen = 999)
 final.dataframe <- unpublished_wide
 
 # Get Item name: Get Path of the current script, Extract the file name, Remove the ".R" extension
-library(rstudioapi)
 item_name <- gsub("\\.R$", "", basename(.sp))
 
 # Get Item encoded
-library(readxl) 
 filecodes <- read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
 item_encoded <- filecodes$"Item encoded"[match(item_name, filecodes$"Item name")]
 

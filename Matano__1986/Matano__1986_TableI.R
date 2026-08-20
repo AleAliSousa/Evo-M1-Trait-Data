@@ -34,7 +34,7 @@
 # (Scandentia / Primates, prosimians / Primates, simians). Only the body-weight
 # and volume columns are transcribed; the printed size-index (Table II) and
 # ratio (Table III) columns are derived and recomputed downstream -- they are
-# used only as the QA anchor in comparison/ (see the README).
+# used only as the QA anchor in the private companion repo (see the README).
 #
 # Input  : Matano__1986_TableI_snapshot.xlsx                sheet: TableI
 # Outputs: Matano__1986_TableI.csv                          one row per species (46)

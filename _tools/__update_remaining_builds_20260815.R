@@ -1,13 +1,13 @@
 # One-time registry update for the 2026-08-15 remaining-dataset build pass.
 # This script edits descriptive/status columns only. It never writes E:M, and it
-# never edits AUTO_Public_TSV_FileList (owned by __file_list.R).
+# never edits AUTO_Public_TSV_FileList (owned by file_list.R).
 
 suppressPackageStartupMessages(library(openxlsx))
 
 root <- normalizePath(file.path(dirname(normalizePath(sub("^--file=", "",
   grep("^--file=", commandArgs(FALSE), value = TRUE)[1]))), ".."))
 path <- file.path(root, "__ReadMe.xlsx")
-source(file.path(root, "_tools", "openxlsx_compat.R"))
+source(file.path(root, "_helpers", "openxlsx_compat.R"))
 openxlsx_input <- openxlsx_compatible_copy(path)
 wb <- loadWorkbook(openxlsx_input)
 sheet <- "Sheet1"

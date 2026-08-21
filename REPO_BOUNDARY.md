@@ -18,7 +18,7 @@ spelled out here and nowhere else should be trusted from memory.
 | remote | `github.com/AleAliSousa/Evo-M1-Trait-Data` (public) | `github.com/AleAliSousa/Evo-M1-Traits-Data-restricted` (private) |
 | on this machine | `…/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data` | `…/OneDrive-AllenInstitute/Evo-M1-Traits-Data-restricted` |
 | recognised by | `__ReadMe.xlsx` at its root | `_paths.R` at its root |
-| found from the other side by | `_paths.R` → `evom1_repo()`, override `EVOM1_REPO` | `_tools/restricted_data.R` → `evom1_restricted()`, override `EVOM1_RESTRICTED` |
+| found from the other side by | `_paths.R` → `evom1_repo()`, override `EVOM1_REPO` | `_helpers/restricted_data.R` → `evom1_restricted()`, override `EVOM1_RESTRICTED` |
 | sweep runner | `run_all_scripts_v2.R` | `run_all_restricted_checks.R` |
 
 The two are **not** side by side: the public repo sits one level deeper, inside `Species/`. Both
@@ -83,7 +83,7 @@ comparison unpublishable, however published the other inputs are. This is the ru
 hard cases; the placement table above is just its consequences.
 
 **I2 — Exactly one read crosses the boundary.** A public build may read
-`unpublished_data/`, and only through `_tools/restricted_data.R` (`evom1_restricted_file(...)`), never
+`unpublished_data/`, and only through `_helpers/restricted_data.R` (`evom1_restricted_file(...)`), never
 a hardcoded path. No public script may read anything under `restricted_checks/`. Currently one build
 crosses: `DosSantos_etal_2020/DosSantos_etal_2020_unpublished.R`.
 
@@ -169,6 +169,6 @@ These are live ambiguities, not rules. Each needs a decision; none should be res
 - `__COMPARISON_MOVED.md` — what moved on 2026-08-19, and the git-history caveat
 - `__HOWTO_build_a_dataset_file.md` — the per-folder build procedure
 - `SOURCE_DISPOSITION_REGISTER.md` — which sources are skipped, superseded, or excluded, and why
-- `_tools/restricted_data.R` — the only sanctioned read across the boundary
+- `_helpers/restricted_data.R` — the only sanctioned read across the boundary
 - private `README__comparison_migration.md` — the migration record and the triage table
 - private `_triage_comparison_inputs.csv` — publishable vs restricted, per folder

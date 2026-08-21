@@ -84,4 +84,4 @@ raw (scanned tables) → hand-read snapshot csv → R script → usable csv/tsv.
   `_keys/build_variable_catalog.R` is run (R). Not run here (no R in the container).
 - **`__ReadMe.xlsx`** already carries the Matano 1992 bibliography row; its
   `Item in AUTO Public TSV FileList` lookup flips from `notfound` after
-  `_tools/__file_list.R` rebuilds the generated sheet and Excel recalculates the formula.
+  `_tools/file_list.R` rebuilds the generated sheet and Excel recalculates the formula.

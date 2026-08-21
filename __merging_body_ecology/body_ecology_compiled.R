@@ -21,9 +21,14 @@
 #
 # HISTORY. This was previously a body-mass-only twin of build_body_ecology_merge.py, which carried
 # the other three classes. That Python builder has been retired (2026-08-07) and its full scope
-# folded in here, so this script is now the single implementation. `_checks/` holds a frozen copy of
-# the Python's last output plus `check_body_ecology_against_fixture.py`, which diffs this script's
-# CSVs against it — run that after any change to this file.
+# folded in here, so this script is now the single implementation.
+#
+# A frozen copy of the Python's last output, and a check that diffed this script against it, lived
+# in `_checks/` until 2026-08-20; both are now in
+# `_archive/body_ecology_fixture_check_20260820/`. The check had begun failing because this script
+# had legitimately moved ahead of the 2026-08-07 fixture — it gained Matano 1986 when that registry
+# row was repaired on 2026-08-12, and with it 5 source columns and 134 unfiltered rows. That is
+# recorded in the archive's README; there is no longer a fixture to run this against.
 
 `%||%` <- function(a, b) if (is.null(a) || length(a) == 0) b else a
 

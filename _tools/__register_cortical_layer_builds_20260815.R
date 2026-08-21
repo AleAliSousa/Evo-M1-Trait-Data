@@ -1,13 +1,13 @@
 # Register three already-built cortical-layer sources that the generated public
 # file-list audit identified as uncatalogued. Writes source/descriptive fields;
-# _tools/__file_list.R owns E:M formulas and the generated list sheet.
+# _tools/file_list.R owns E:M formulas and the generated list sheet.
 
 suppressPackageStartupMessages(library(openxlsx))
 
 script <- normalizePath(sub("^--file=", "", grep("^--file=", commandArgs(FALSE), value = TRUE)[1]))
 root <- normalizePath(file.path(dirname(script), ".."))
 path <- file.path(root, "__ReadMe.xlsx")
-source(file.path(root, "_tools", "openxlsx_compat.R"))
+source(file.path(root, "_helpers", "openxlsx_compat.R"))
 openxlsx_input <- openxlsx_compatible_copy(path)
 wb <- loadWorkbook(openxlsx_input)
 sheet <- "Sheet1"
@@ -89,4 +89,4 @@ for (row_name in names(rows)) {
   }
 }
 saveWorkbook(wb, path, overwrite = TRUE)
-message("Registered cortical-layer builds on rows 299–301; run __file_list.R to fill E:M")
+message("Registered cortical-layer builds on rows 299–301; run file_list.R to fill E:M")

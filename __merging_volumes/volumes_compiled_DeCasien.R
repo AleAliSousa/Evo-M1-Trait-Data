@@ -149,7 +149,16 @@ enc_override <- c("Bauernfeind_etal_2013_Table2" = "10.1016%2Fj.jhevol.2012.12.0
                   # DOI-coded/derived sources and non-registry extras resolved here.
                   "Rilling_Insel_1999_Table1" = "10.1006%2Fjhev.1999.0313_Table1",
                   "Barks_etal_2014_Fig4A"           = "10.1002%2Fajpa.22646_Fig4A",
-                  "Stimpson_etal_2015_TableS2" = "10.1093%2Fscan%2Fnsv128_TableS2")
+                  "Stimpson_etal_2015_TableS2" = "10.1093%2Fscan%2Fnsv128_TableS2",
+                  # Matano 1986 and Zilles & Rehkämper 1988: both registry rows have gone missing
+                  # from __ReadMe.xlsx before (the Zilles row on 2026-08-20, which halted this
+                  # script at read_item(); its ISBN was found stranded in the Johnson et al. 2016
+                  # row's column C). Both rows are restored, so these are belt-and-braces --
+                  # they make a future registry loss degrade instead of stop the merge.
+                  # NB the values omit ".tsv"; read_item() appends the extension itself.
+                  # Book chapter (Orang-Utan Biology, OUP), so the code is an ISBN, not a DOI.
+                  "Matano__1986_TableI"             = "10.1159%2F000156277_TableI",
+                  "Zilles_Rehkämper_1988_Table12-2" = "ISBN%3A9780195043716_Table12-2")
 read_item <- function(it) {
   # Match item names CASE-INSENSITIVELY (registry drifts e.g. Table2 vs TABLE2) and
   # strip stray spaces from the encoding (cloud-edit typos like "ISBN%3A 0390..."),

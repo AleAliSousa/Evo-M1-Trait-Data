@@ -47,7 +47,7 @@ restricted specimen_crosswalk_restricted.csv
 ```
 
 The public layer must be usable on its own. A future restricted build may add
-the private overlay through `_tools/restricted_data.R`, but build mode must be
+the private overlay through `_helpers/restricted_data.R`, but build mode must be
 explicit; the result must not change silently just because the companion
 repository happens to be mounted.
 

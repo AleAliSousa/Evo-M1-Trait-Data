@@ -1,5 +1,5 @@
 ## =============================================================================
-## _tools/restricted_data.R  --  resolve the PRIVATE companion repo from this one
+## _helpers/restricted_data.R  --  resolve the PRIVATE companion repo from this one
 ## =============================================================================
 ##
 ## A few builds in this public repository read a source file that cannot be published:
@@ -8,7 +8,7 @@
 ## __COMPARISON_MOVED.md), and the build scripts reach them through this helper rather
 ## than through a hardcoded path.
 ##
-##   source(file.path(base, "_tools", "restricted_data.R"))
+##   source(file.path(base, "_helpers", "restricted_data.R"))
 ##   f <- evom1_restricted_file("unpublished_data/____Unpublished__DosSantos_microglia_2024",
 ##                              "2020-PublishedDataMammalsMicroglia - cópia.xlsx")
 ##

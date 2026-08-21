@@ -42,5 +42,7 @@ The private `restricted_checks/Matano_etal_1985_b/comparison/` audit matches the
 `Matano_1985b.csv` by species (paper name or canonical, each CSV row resolved once) and compares VPo
 volume, body weight and n. Verified: **48 matched, 0 value mismatches.** `Pongo sp.` carries a VPo
 value (4300) but **no paper species name** in the CSV → reported as **csv-only** — an expected
-post-1985 addition (Matano measured *Pan*, *Gorilla* and *Homo* among the apes, not *Pongo*); see the
-private `restricted_checks/_cross_table/Zilles_Rehkamper_1988_provenance/` audit.
+post-1985 addition (Matano measured *Pan*, *Gorilla* and *Homo* among the apes, not *Pongo*). The
+Pongo figure was almost certainly carried in later from Zilles & Rehkämper (1988), the original
+source of the orang-utan volumes; see `Zilles__Rehkamper_1988/Zilles__Rehkamper_1988_Table12-2.README.md`.
+Expected, not a mismatch to reconcile.

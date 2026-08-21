@@ -25,7 +25,7 @@ published Table 1** in the merged cell-counts dataset.
 
 ## Source / provenance
 
-Raw unpublished spreadsheet `2020-PublishedDataMammalsMicroglia - cópia.xlsx` — held in the private repo Evo-M1-Traits-Data-restricted, `unpublished_data/____Unpublished__DosSantos_microglia_2024/`, because it is the authors' unpublished data. The build reaches it via `_tools/restricted_data.R`. Received by email:
+Raw unpublished spreadsheet `2020-PublishedDataMammalsMicroglia - cópia.xlsx` — held in the private repo Evo-M1-Traits-Data-restricted, `unpublished_data/____Unpublished__DosSantos_microglia_2024/`, because it is the authors' unpublished data. The build reaches it via `_helpers/restricted_data.R`. Received by email:
 
 - From: Alex W. Tikky \<alex.tikky@gmail.com\>, Fri 22 Mar 2024 — to Orlin S. Todorov \<tdrvorlin@gmail.com\>
 - Forwarded: Orlin S. Todorov → Alexandra de Sousa \<alexandraallisonsousa@gmail.com\>, 21 Mar 2024

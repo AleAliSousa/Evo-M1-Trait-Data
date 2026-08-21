@@ -44,7 +44,25 @@ SKIP_PATTERNS <- c(
   "(^|/)safely_guard_setwd"     = "sourced helper, not a standalone script",
   "(^|/)update_shinyapp\\.R$"   = "publishes to shinyapps.io (rsconnect::deployApp)",
   "^__ShinyApp/app\\.R$"        = "ends in shinyApp(); blocks forever under Rscript",
-  "(^|/)__edit_all_directories\\.R$" = "mass find/replace + rename utility; run deliberately, not in a sweep"
+  "(^|/)__edit_all_directories\\.R$" = "mass find/replace + rename utility; run deliberately, not in a sweep",
+  ## list.files() below is recursive from the repo root, so a retired script would
+  ## keep running -- and keep failing -- for as long as it sat in _archive/.
+  "^_archive/"                  = "retired; kept for the record, not for running",
+  ## Sourced libraries, not scripts. Running one standalone just defines functions
+  ## and exits -- harmless but meaningless, and it made them look like tools.
+  "^_helpers/"                  = "sourced helper library, not a standalone script",
+  "(^|/)parity_R_vs_py\\.R$"    = "manual R-vs-Python port check; shells out to Rscript and python3",
+  ## DESTRUCTIVE ON RE-RUN. It writes Jacobs/Johnson/Peruffo into __ReadMe.xlsx rows
+  ## 299, 300 and 301 by HARD-CODED number, and Sheet1 re-sorts itself -- so on any
+  ## sweep after a re-sort it overwrites whatever three sources have landed there.
+  ## It also writes only its own field list, so a column it does not name (e.g. C,
+  ## "DOI if different") keeps the OVERWRITTEN row's value: that is how the Zilles &
+  ## Rehkamper 1988 ISBN ended up stranded on the Johnson et al. 2016 row, and why
+  ## rows 302 and 303 are duplicate Johnson and Peruffo entries. Its registration was
+  ## done on 2026-08-15; re-running it can only do harm. Retire it, or rewrite it to
+  ## locate rows with match() on Item name the way __update_remaining_builds does.
+  "(^|/)__register_cortical_layer_builds_20260815\\.R$" =
+    "writes hard-coded Sheet1 rows 299-301; Sheet1 re-sorts, so a re-run overwrites other sources"
 )
 
 r_scripts <- list.files(root_dir, pattern = "\\.R$", recursive = TRUE, full.names = TRUE)

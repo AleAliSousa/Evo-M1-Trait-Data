@@ -53,7 +53,7 @@ Karbowski's per-species averages.
   ground squirrels; only appears in Table S2).
 - Mouse values attributed to Quelven et al 2004 are estimates (Karbowski derived absolute
   values from a corpus-callosum reference frame; see S23 Supplementary Methods).
-- **Generated TSV-list refresh:** run `_tools/__file_list.R` so `__ReadMe.xlsx`
+- **Generated TSV-list refresh:** run `_tools/file_list.R` so `__ReadMe.xlsx`
   `AUTO_Public_TSV_FileList` is rebuilt from the public directory.
 
 ## Checks

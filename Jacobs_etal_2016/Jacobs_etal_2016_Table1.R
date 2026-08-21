@@ -12,7 +12,7 @@ script <- local({
 })
 folder <- dirname(script)
 repo_base <- normalizePath(file.path(folder, ".."))
-source(file.path(repo_base, "_tools", "cortical_layers_source_common.R"))
+source(file.path(repo_base, "_helpers", "cortical_layers_source_common.R"))
 
 item_name <- "Jacobs_etal_2016_Table1"
 raw <- read.csv(file.path(folder, paste0(item_name, "_snapshot.csv")),

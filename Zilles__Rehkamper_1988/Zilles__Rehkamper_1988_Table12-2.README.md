@@ -52,5 +52,10 @@ Because the table is structure-as-rows for one species, the audit is **per-struc
 Zilles & Rehkämper (1988) is the original source of the **orang-utan** brain-structure volumes;
 indices for Gorilla, Pan, Hylobates and Homo in the chapter's Table 12-3 were computed from Stephan
 et al. (1981). Pongo data added to several **pre-1988** dataset CSVs without recording this source
-therefore show up as `csv_only` anachronisms in those papers' comparisons — see the private companion
-repo's `restricted_checks/_cross_table/Zilles_Rehkamper_1988_provenance/` audit.
+therefore show up as `csv_only` anachronisms in those papers' comparisons. A `Pongo` value in a
+pre-1988 formatted CSV that the paper itself never measured almost certainly traces back to this
+chapter — Matano et al. 1985b is the clearest case (see that folder's README). Treat the
+anachronism as evidence of the borrowing, not as a mismatch to reconcile.
+
+*(A cross-table audit of this in the private companion repo was retired on 2026-08-20; the finding
+above is what it established.)*

@@ -43,10 +43,14 @@ Two repository-level leftovers were found outside the paper `comparison/` folder
 the private repo. `_checks/check_Zilles_Rehkamper_1988_provenance.R` and its generated report depend
 on the restricted comparison CSVs; they moved together to
 `restricted_checks/_cross_table/Zilles_Rehkamper_1988_provenance/` and were removed here.
+*(Retired in the private repo on 2026-08-20. What the audit established — that a `Pongo` value in a
+pre-1988 formatted CSV traces back to Zilles & Rehkämper 1988 — now lives in
+`Zilles__Rehkamper_1988/Zilles__Rehkamper_1988_Table12-2.README.md`, so no paper README points at
+the deleted report.)*
 
 **Restricted *source* files, not just checks.** A few sources cannot live here either — data another
 researcher supplied privately. Those sit in the private repo under `unpublished_data/`, and the build
-that needs one reaches it through **`_tools/restricted_data.R`** (`evom1_restricted_file(...)`), which
+that needs one reaches it through **`_helpers/restricted_data.R`** (`evom1_restricted_file(...)`), which
 resolves the private repo from `EVOM1_RESTRICTED` or the default layout and stops with an explanatory
 message if it is not mounted. Current cases: Carol MacLeod's neocortex workbooks, and the Dos Santos
 et al. 2020 authors' corrected microglia spreadsheet (`DosSantos_etal_2020_unpublished.R` reads it

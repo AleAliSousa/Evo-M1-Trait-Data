@@ -47,7 +47,22 @@ unify <- function(s) ifelse(s %in% names(sp_alias), sp_alias[s], s)
 
 terms <- readr::read_csv("standardized_term_gyrification.csv", show_col_types = FALSE)
 codes <- readxl::read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
-enc   <- function(nm) codes$`Item encoded`[match(nm, codes$`Item name`)]
+enc   <- function(nm) {
+  # Fail loudly on an unresolved item name. This used to return NA, and
+  # file.path(tsvdir, paste0(NA, ".tsv")) is "NA.tsv" -- a path that really existed
+  # in __Public/comparative-data/ as a stale artefact of an earlier unresolved
+  # build. So a lost registry row did not stop the merge; it fed it the WRONG
+  # table. (2026-08-20: exactly this happened to Zilles_etal_2013_Table1.)
+  e <- codes$`Item encoded`[match(nm, codes$`Item name`)]
+  if (length(e) != 1L || is.na(e) || !nzchar(e))
+    stop("enc('", nm, "'): no 'Item encoded' in __ReadMe.xlsx 'Item name'. ",
+         "Add or repair the registry row.", call. = FALSE)
+  f <- file.path(tsvdir, paste0(e, ".tsv"))
+  if (!file.exists(f))
+    stop("enc('", nm, "'): registry resolves to a TSV that is not on disk -> ", f,
+         " (run that source's own build script, or fix 'Item encoded').", call. = FALSE)
+  e
+}
 team_of <- c(Lewitus_etal_2014_TableS1 = "Lewitus_2014",
              Lewitus_etal_2014_TableS8 = "Lewitus_2014",
              Zilles_etal_2013_Table1   = "Zilles_2013")

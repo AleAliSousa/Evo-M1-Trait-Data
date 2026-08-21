@@ -76,7 +76,19 @@ filecodes <- read_excel("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/
 # Loop through item names, read tables from TSVs, and store as dataframes in the list
 for (i in seq_along(item_name)) {
   item_encoded <- filecodes$"Item encoded"[match(item_name[i], filecodes$"Item name")]
-  item_data <- read.table(file = paste0("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__Public/comparative-data/", item_encoded, ".tsv"), 
+  # Fail loudly on an unresolved item name. Without this, item_encoded is NA, the
+  # path below becomes ".../comparative-data/NA.tsv", and that file really existed
+  # in this repo as a stale artefact of an earlier unresolved build -- so a lost
+  # registry row would feed the merge the WRONG table instead of stopping it.
+  if (length(item_encoded) != 1L || is.na(item_encoded) || !nzchar(item_encoded))
+    stop("read of '", item_name[i], "': no 'Item encoded' in __ReadMe.xlsx 'Item name'. ",
+         "Add or repair the registry row.", call. = FALSE)
+  item_tsv <- paste0("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__Public/comparative-data/",
+                     item_encoded, ".tsv")
+  if (!file.exists(path.expand(item_tsv)))
+    stop("read of '", item_name[i], "': registry resolves to a TSV that is not on disk -> ",
+         item_tsv, " (run that source's own build script, or fix 'Item encoded').", call. = FALSE)
+  item_data <- read.table(file = item_tsv,
                           header = TRUE, stringsAsFactors = FALSE, check.names = FALSE)
 
   # Store the data frame in the list with the corresponding item name

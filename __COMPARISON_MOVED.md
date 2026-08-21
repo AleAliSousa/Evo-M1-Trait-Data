@@ -5,8 +5,8 @@
 > definition of the public/private split. If this file and that one disagree, that one wins.
 
 **2026-08-19.** Every `<Paper>/comparison/` folder was moved out of this repository into the private
-companion repo **`Evo-M1-Traits-Data-restricted`** — note the plural *Traits*; on this machine it sits
-at `…/OneDrive-AllenInstitute/Evo-M1-Traits-Data-restricted`, one level above this repo's `Species/`
+companion repo **`Evo-M1-Trait-Data-restricted`** — note the singular *Trait*; on this machine it sits
+at `…/OneDrive-AllenInstitute/Evo-M1-Trait-Data-restricted`, one level above this repo's `Species/`
 parent — under `restricted_checks/<Paper>/comparison/`. 43 folders, 214 files.
 
 **Why.** This repository is public. The comparison folders held working QA material that was never
@@ -30,7 +30,7 @@ run after the change and reproduced their prior outputs byte-for-byte; the conso
 reproduced the same 0.31 µmol/g/min and 428.55 µmol/min benchmark values. Remaining mentions of the
 old paths are historical README/code comments or private-audit pointers, not public build reads.
 
-**Where to look for the evidence.** `Evo-M1-Traits-Data-restricted/README__comparison_migration.md`
+**Where to look for the evidence.** `Evo-M1-Trait-Data-restricted/README__comparison_migration.md`
 explains how the audits run now (`_paths.R`, `EVOM1_REPO`), and `MIGRATED_INDEX.csv` there lists all
 214 moved files with their SHA-256.
 

@@ -4,7 +4,7 @@ Public source, build, and merged-data repository for the Evo-M1 traits project. 
 `__ReadMe.xlsx` for the dataset registry.
 
 Private comparison evidence and unpublished source material live in the separate
-`Evo-M1-Traits-Data-restricted` repository. See [`REPO_BOUNDARY.md`](REPO_BOUNDARY.md) for the
+`Evo-M1-Trait-Data-restricted` repository. See [`REPO_BOUNDARY.md`](REPO_BOUNDARY.md) for the
 canonical placement rules and [`__COMPARISON_MOVED.md`](__COMPARISON_MOVED.md) for the 2026-08-19
 migration record.
 

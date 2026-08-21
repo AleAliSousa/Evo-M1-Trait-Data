@@ -14,9 +14,9 @@ spelled out here and nowhere else should be trusted from memory.
 
 | | public | private |
 |---|---|---|
-| folder | `Evo-M1-Trait-Data` — **Trait**, singular | `Evo-M1-Traits-Data-restricted` — **Traits**, plural |
-| remote | `github.com/AleAliSousa/Evo-M1-Trait-Data` (public) | `github.com/AleAliSousa/Evo-M1-Traits-Data-restricted` (private) |
-| on this machine | `…/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data` | `…/OneDrive-AllenInstitute/Evo-M1-Traits-Data-restricted` |
+| folder | `Evo-M1-Trait-Data` — **Trait**, singular | `Evo-M1-Trait-Data-restricted` — **Trait**, singular |
+| remote | `github.com/AleAliSousa/Evo-M1-Trait-Data` (public) | `github.com/AleAliSousa/Evo-M1-Trait-Data-restricted` (private) |
+| on this machine | `…/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data` | `…/OneDrive-AllenInstitute/Evo-M1-Trait-Data-restricted` |
 | recognised by | `__ReadMe.xlsx` at its root | `_paths.R` at its root |
 | found from the other side by | `_paths.R` → `evom1_repo()`, override `EVOM1_REPO` | `_helpers/restricted_data.R` → `evom1_restricted()`, override `EVOM1_RESTRICTED` |
 | sweep runner | `run_all_scripts_v2.R` | `run_all_restricted_checks.R` |
@@ -27,7 +27,7 @@ rather than editing either resolver:
 
 ```
 EVOM1_REPO=/Users/<you>/…/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data
-EVOM1_RESTRICTED=/Users/<you>/…/OneDrive-AllenInstitute/Evo-M1-Traits-Data-restricted
+EVOM1_RESTRICTED=/Users/<you>/…/OneDrive-AllenInstitute/Evo-M1-Trait-Data-restricted
 ```
 
 ## 2. What each repository is for
@@ -112,7 +112,7 @@ whose `cwd` happens to be a repo root will leave its own debris there: on 2026-0
 `tools::testInstalledBasic()` / `testInstalledPackages()` deposited **74 files** (`reg-tests-*.pdf`,
 `PS-*.ps`, `pdf-*.pdf`, `multicore*.Rout.fail`, `utils.tar*`, `pkg.utf8/`, …) in the private repo's
 root, and they reached its first commit. Inventory in
-`Evo-M1-Traits-Data-restricted/_checks/junk_removed_20260819.csv`, and the resolution in
+`Evo-M1-Trait-Data-restricted/_checks/junk_removed_20260819.csv`, and the resolution in
 `_checks/PUSH_NOTE_20260819.md`.
 
 Both `.gitignore` files now carry root-anchored patterns for that family of names, but note what that

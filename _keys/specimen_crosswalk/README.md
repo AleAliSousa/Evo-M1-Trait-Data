@@ -30,7 +30,7 @@ cannot be split into modern species without fabricating its composition.
 | `fossil_specimen_cerebellum_comparison.csv` | published fossil method-offset comparison |
 
 Restricted companions live under
-`Evo-M1-Traits-Data-restricted/specimen_registry/`:
+`Evo-M1-Trait-Data-restricted/specimen_registry/`:
 
 - `source_material/specimens_info_151211.xls` — unpublished master catalog.
 - `derived/collection_specimens_parsed.csv` — parsed private catalog.

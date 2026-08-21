@@ -60,7 +60,7 @@ The printed V1 and LGN volumes are the measured left side, **not** doubled: they
 - **B. specimen identity vs the restricted master catalog** — the private audit confirms that the
   paper's `code` field corresponds to the catalog's working-code field and checks the printed sex and
   age. Exact catalog identifiers and row-level matches are retained in
-  `Evo-M1-Traits-Data-restricted/restricted_checks/deSousa_etal_2009/`, not in this public note.
+  `Evo-M1-Trait-Data-restricted/restricted_checks/deSousa_etal_2009/`, not in this public note.
 - **C. internal consistency of EQ** — recomputing EQ = brain(g) / (11.22 × body(kg)^0.75) reproduces every printed EQ to within **0.055** (worst case *Hylobates lar*, 2.54 printed vs 2.485), the expected effect of the masses being printed rounded.
 
 ## FLAG — the ppz (*Pan paniscus*, Zahlia) neocortex is another bonobo's value

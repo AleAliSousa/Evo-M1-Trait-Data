@@ -47,7 +47,7 @@ DosSantos_etal_2020_Table1 <- read_csv(
 
 # 2. Read the unpublished dataset  
 #    The authors' spreadsheet is data they shared privately, so it is NOT in this public
-#    repository: it lives in the private companion repo Evo-M1-Traits-Data-restricted
+#    repository: it lives in the private companion repo Evo-M1-Trait-Data-restricted
 #    (unpublished_data/____Unpublished__DosSantos_microglia_2024/), which also carries the
 #    ReadMe recording how it was received. _helpers/restricted_data.R resolves it and stops
 #    with an explanatory message if that repo is not mounted.

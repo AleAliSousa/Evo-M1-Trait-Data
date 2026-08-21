@@ -25,6 +25,6 @@ See `_keys/specimen_crosswalk/SPECIMEN_INFORMATION_BOUNDARY.md`.
 - `Structural and functional organisation of the brain (INM-1)/` — INM-1 lists.
 
 The unpublished master catalog and its parsed derivative have moved to
-`Evo-M1-Traits-Data-restricted/specimen_registry/`. The collection PDFs remain
+`Evo-M1-Trait-Data-restricted/specimen_registry/`. The collection PDFs remain
 here pending a per-file public-availability and redistribution review; they are
 not a basis for new public identity claims until that review is recorded.

@@ -4,7 +4,7 @@
 ##
 ## A few builds in this public repository read a source file that cannot be published:
 ## data another researcher supplied privately, or unpublished material shared by email.
-## Those files live in the private repo **Evo-M1-Traits-Data-restricted** (see
+## Those files live in the private repo **Evo-M1-Trait-Data-restricted** (see
 ## __COMPARISON_MOVED.md), and the build scripts reach them through this helper rather
 ## than through a hardcoded path.
 ##
@@ -14,7 +14,7 @@
 ##
 ## Resolution order for the private repo:
 ##   1. the EVOM1_RESTRICTED environment variable (set it in ~/.Renviron)
-##   2. the default side-by-side layout: <parent of this repo's parent>/Evo-M1-Traits-Data-restricted
+##   2. the default side-by-side layout: <parent of this repo's parent>/Evo-M1-Trait-Data-restricted
 ##   3. a plain sibling of this repo
 ## It is identified by its own _paths.R. If it is not mounted, evom1_restricted() returns
 ## NA (with a warning) so a caller can degrade gracefully, and evom1_restricted_file()
@@ -45,12 +45,12 @@ evom1_restricted <- function(quiet = FALSE) {
     if (file.exists(file.path(d, "__ReadMe.xlsx"))) d else NA_character_
   })
   if (!is.na(here)) {
-    for (cand in c(file.path(dirname(dirname(here)), "Evo-M1-Traits-Data-restricted"),
-                   file.path(dirname(here), "Evo-M1-Traits-Data-restricted"))) {
+    for (cand in c(file.path(dirname(dirname(here)), "Evo-M1-Trait-Data-restricted"),
+                   file.path(dirname(here), "Evo-M1-Trait-Data-restricted"))) {
       if (is_res(cand)) return(normalizePath(cand))
     }
   }
-  if (!quiet) warning("The private repo Evo-M1-Traits-Data-restricted is not mounted; ",
+  if (!quiet) warning("The private repo Evo-M1-Trait-Data-restricted is not mounted; ",
                       "set EVOM1_RESTRICTED or clone it beside this one.")
   NA_character_
 }
@@ -61,8 +61,8 @@ evom1_restricted_file <- function(..., must_exist = TRUE) {
   rel <- file.path(...)
   if (is.na(root)) {
     stop("This build needs a restricted source file (", rel, ") that lives in the private repo\n",
-         "  Evo-M1-Traits-Data-restricted, which is not currently reachable.\n",
-         "  Set EVOM1_RESTRICTED=/path/to/Evo-M1-Traits-Data-restricted (or add it to ~/.Renviron).",
+         "  Evo-M1-Trait-Data-restricted, which is not currently reachable.\n",
+         "  Set EVOM1_RESTRICTED=/path/to/Evo-M1-Trait-Data-restricted (or add it to ~/.Renviron).",
          call. = FALSE)
   }
   p <- file.path(root, rel)

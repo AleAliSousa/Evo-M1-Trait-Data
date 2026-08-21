@@ -75,7 +75,7 @@ individual forward (its Pongo `prefrontal_gray` 8.596 = the 2011 `sec5_grey_tota
 The public YN85-38 chain is recorded in `_keys/specimen_crosswalk/specimen_crosswalk.csv`,
 `_keys/specimen_crosswalk/pongo_provenance_audit.csv`, and
 `____Collections and Specimen notes/Pongo_specimen_note.md`. The 2010 catalog match and full finding
-are in `Evo-M1-Traits-Data-restricted/specimen_registry/cases/`.
+are in `Evo-M1-Trait-Data-restricted/specimen_registry/cases/`.
 
 ## 3. Compatibility: it was already built, just not switched on
 

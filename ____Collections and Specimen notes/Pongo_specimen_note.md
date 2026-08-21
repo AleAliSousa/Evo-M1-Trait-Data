@@ -5,7 +5,7 @@
 This public note explains the *Pongo pygmaeus*/*Pongo abelii* taxonomic problem
 using only published sources. The full evidence note includes unpublished
 catalog matches and is held in
-`Evo-M1-Traits-Data-restricted/specimen_registry/cases/pongo/`.
+`Evo-M1-Trait-Data-restricted/specimen_registry/cases/pongo/`.
 
 The public and restricted claims must not be conflated. In particular, a
 specimen label printed in a paper is public, but a match from that label to a

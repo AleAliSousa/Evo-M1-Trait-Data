@@ -1,33 +1,33 @@
 "script","status","error","start_time","end_time","elapsed_seconds"
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_cellcounts_data.R","SUCCESS","","2026-08-20 12:07:54.975604","2026-08-20 12:07:57.19227",2.21666598320007
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_corticospinal_terminations.R","SUCCESS","","2026-08-20 12:07:57.195691","2026-08-20 12:07:58.666633",1.47094178199768
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_dexterity_baker.R","SUCCESS","","2026-08-20 12:07:58.698594","2026-08-20 12:07:59.745734",1.04713988304138
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_dexterity_corticospinal_eco.R","SUCCESS","","2026-08-20 12:07:59.755203","2026-08-20 12:08:01.042146",1.28694295883179
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_dexterity_corticospinal.R","SUCCESS","","2026-08-20 12:08:01.04758","2026-08-20 12:08:02.14021",1.09262990951538
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_diet.R","SUCCESS","","2026-08-20 12:08:02.145274","2026-08-20 12:08:02.821722",0.676448106765747
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_cellcounts_data.R","SUCCESS","","2026-08-20 17:13:10.655252","2026-08-20 17:13:12.51196",1.85670804977417
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_corticospinal_terminations.R","SUCCESS","","2026-08-20 17:13:12.515822","2026-08-20 17:13:13.131632",0.61581015586853
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_dexterity_baker.R","SUCCESS","","2026-08-20 17:13:13.135109","2026-08-20 17:13:13.851472",0.716362953186035
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_dexterity_corticospinal_eco.R","SUCCESS","","2026-08-20 17:13:13.853913","2026-08-20 17:13:14.965339",1.11142587661743
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_dexterity_corticospinal.R","SUCCESS","","2026-08-20 17:13:14.987691","2026-08-20 17:13:15.948373",0.960682153701782
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_diet.R","SUCCESS","","2026-08-20 17:13:15.953735","2026-08-20 17:13:17.09105",1.13731479644775
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_gait_excursion_medina.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
 Calls: read.table -> file
 In addition: Warning message:
 In file(file, ""rt"") :
   cannot open file './__Public/comparative-data/10.1002%2Fjez.70069_Data.tsv': No such file or directory
-Execution halted","2026-08-20 12:08:02.824338","2026-08-20 12:08:03.674064",0.849725961685181
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_gait.R","SUCCESS","","2026-08-20 12:08:03.682044","2026-08-20 12:08:04.506329",0.82428503036499
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_gyrification_etc.R","SUCCESS","","2026-08-20 12:08:04.508528","2026-08-20 12:08:05.753242",1.24471402168274
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_hand_liu.R","SUCCESS","","2026-08-20 12:08:05.760515","2026-08-20 12:08:06.637923",0.877408027648926
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_handedness.R","SUCCESS","","2026-08-20 12:08:06.646646","2026-08-20 12:08:07.257211",0.610564947128296
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_ILAs.R","SUCCESS","","2026-08-20 12:08:07.259596","2026-08-20 12:08:08.414519",1.15492296218872
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_innovation_reader.R","SUCCESS","","2026-08-20 12:08:08.421344","2026-08-20 12:08:09.125322",0.703978061676025
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_locomotion.R","SUCCESS","","2026-08-20 12:08:09.128995","2026-08-20 12:08:09.898994",0.769999027252197
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_manipulation.R","SUCCESS","","2026-08-20 12:08:09.904152","2026-08-20 12:08:10.633041",0.728888988494873
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_sleep.R","SUCCESS","","2026-08-20 12:08:10.640113","2026-08-20 12:08:11.100489",0.460375785827637
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_v1_karl.R","SUCCESS","","2026-08-20 12:08:11.102803","2026-08-20 12:08:11.717765",0.614962100982666
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_vocal_manyprimates.R","SUCCESS","","2026-08-20 12:08:11.720271","2026-08-20 12:08:12.132022",0.411750793457031
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_vocal_schniter.R","SUCCESS","","2026-08-20 12:08:12.136521","2026-08-20 12:08:12.857817",0.721295833587646
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1Gen_NoEstimates.R","SUCCESS","","2026-08-20 12:08:12.862772","2026-08-20 12:08:14.726014",1.86324191093445
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__energetics_comparison/energetics_comparison.R","SUCCESS","","2026-08-20 12:08:14.742114","2026-08-20 12:08:15.725809",0.983695030212402
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__energetics_comparison/energetics_merged.R","SUCCESS","","2026-08-20 12:08:15.728105","2026-08-20 12:08:16.818202",1.09009695053101
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__energetics_comparison/heiss_wholebrain_check.R","SUCCESS","","2026-08-20 12:08:16.828604","2026-08-20 12:08:17.226752",0.398148059844971
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__flow_comparison/Seymour_Boyer_flow_combined.R","SUCCESS","","2026-08-20 12:08:17.230971","2026-08-20 12:08:18.059966",0.828994989395142
+Execution halted","2026-08-20 17:13:17.094871","2026-08-20 17:13:18.257446",1.16257500648499
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_gait.R","SUCCESS","","2026-08-20 17:13:18.271456","2026-08-20 17:13:19.430228",1.15877199172974
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_gyrification_etc.R","SUCCESS","","2026-08-20 17:13:19.43541","2026-08-20 17:13:20.592996",1.15758585929871
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_hand_liu.R","SUCCESS","","2026-08-20 17:13:20.595285","2026-08-20 17:13:21.157622",0.562337160110474
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_handedness.R","SUCCESS","","2026-08-20 17:13:21.160893","2026-08-20 17:13:21.793607",0.632714033126831
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_ILAs.R","SUCCESS","","2026-08-20 17:13:21.796306","2026-08-20 17:13:22.820858",1.0245521068573
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_innovation_reader.R","SUCCESS","","2026-08-20 17:13:22.825918","2026-08-20 17:13:23.447385",0.621467113494873
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_locomotion.R","SUCCESS","","2026-08-20 17:13:23.449522","2026-08-20 17:13:24.635152",1.18563008308411
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_manipulation.R","SUCCESS","","2026-08-20 17:13:24.654907","2026-08-20 17:13:25.863258",1.20835089683533
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_sleep.R","SUCCESS","","2026-08-20 17:13:25.867659","2026-08-20 17:13:26.361498",0.493839025497437
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_v1_karl.R","SUCCESS","","2026-08-20 17:13:26.371439","2026-08-20 17:13:27.257299",0.885859966278076
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_vocal_manyprimates.R","SUCCESS","","2026-08-20 17:13:27.267052","2026-08-20 17:13:27.734764",0.467712163925171
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_vocal_schniter.R","SUCCESS","","2026-08-20 17:13:27.739173","2026-08-20 17:13:28.503216",0.764043092727661
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1Gen_NoEstimates.R","SUCCESS","","2026-08-20 17:13:28.508597","2026-08-20 17:13:30.175348",1.66675114631653
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__energetics_comparison/energetics_comparison.R","SUCCESS","","2026-08-20 17:13:30.178071","2026-08-20 17:13:31.1734",0.995328903198242
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__energetics_comparison/energetics_merged.R","SUCCESS","","2026-08-20 17:13:31.177379","2026-08-20 17:13:32.484701",1.30732202529907
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__energetics_comparison/heiss_wholebrain_check.R","SUCCESS","","2026-08-20 17:13:32.489244","2026-08-20 17:13:32.975453",0.486208915710449
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__flow_comparison/Seymour_Boyer_flow_combined.R","SUCCESS","","2026-08-20 17:13:32.9805","2026-08-20 17:13:33.797792",0.817291975021362
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__imputing_cellcounts/cellcounts_imputations_diagnostic.R","FAILED","|-------------------------------------|
 | misty 0.8.2 (2026-05-16)            |
 | Miscellaneous Functions T. Yanagida |
@@ -367,160 +367,186 @@ Number of logged events: 2379
 Error in density.default(x = c(NA_real_, NA_real_, NA_real_, NA_real_,  : 
   need at least 2 points to select a bandwidth automatically
 Calls: densityplot ... <Anonymous> -> do.call -> <Anonymous> -> density.default
-Execution halted","2026-08-20 12:08:18.063345","2026-08-20 12:08:37.879269",19.8159239292145
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_behaviour/behaviour_compiled.R","SUCCESS","","2026-08-20 12:08:37.894461","2026-08-20 12:08:47.824085",9.92962408065796
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_body_ecology/body_ecology_compiled.R","SUCCESS","","2026-08-20 12:08:47.838784","2026-08-20 12:08:58.474558",10.6357741355896
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_brain_mass/brain_mass_compiled.R","SUCCESS","","2026-08-20 12:08:58.479748","2026-08-20 12:09:03.0754",4.59565210342407
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_cellcounts/cellcounts_compiled.R","SUCCESS","","2026-08-20 12:09:03.081059","2026-08-20 12:09:06.161506",3.08044695854187
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_cellcounts/standardized_term.R","SUCCESS","","2026-08-20 12:09:06.19294","2026-08-20 12:09:07.726265",1.53332495689392
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_cerebellar_folding/cerebellar_folding_compiled.R","SUCCESS","","2026-08-20 12:09:07.729747","2026-08-20 12:09:08.824434",1.09468698501587
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_cerebral_metabolic_rate/cerebral_metabolic_rate_compiled.R","SUCCESS","","2026-08-20 12:09:08.830694","2026-08-20 12:09:10.918081",2.08738708496094
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_cerebral_metabolic_rate/standardized_term.R","SUCCESS","","2026-08-20 12:09:10.924792","2026-08-20 12:09:12.328453",1.40366101264954
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_cortical_areas/cortical_areas_compiled.R","SUCCESS","","2026-08-20 12:09:12.332003","2026-08-20 12:09:13.600461",1.26845788955688
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_cortical_areas/standardized_term.R","SUCCESS","","2026-08-20 12:09:13.616673","2026-08-20 12:09:14.775224",1.15855097770691
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_cortical_layers/cortical_layers_compiled.R","SUCCESS","","2026-08-20 12:09:14.782166","2026-08-20 12:09:15.416094",0.633928060531616
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_fossil_brain_glucose/fossil_brain_glucose_compiled.R","SUCCESS","","2026-08-20 12:09:15.419281","2026-08-20 12:09:16.034823",0.615541934967041
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_gyrification/gyrification_compiled.R","FAILED","Error in `$<-`:
-! Assigned data `suppressWarnings(as.numeric(d$GI))` must be compatible
-  with existing data.
-✖ Existing data has 34 rows.
-✖ Assigned data has 0 rows.
-ℹ Only vectors of size 1 are recycled.
-Caused by error in `vectbl_recycle_rhs_rows()`:
-! Can't recycle input of size 0 to size 34.
-Backtrace:
-    ▆
- 1. ├─base::`$<-`(`*tmp*`, ""GI"", value = `<dbl>`)
- 2. ├─tibble:::`$<-.tbl_df`(`*tmp*`, ""GI"", value = `<dbl>`)
- 3. │ └─tibble:::tbl_subassign(...)
- 4. │   └─tibble:::vectbl_recycle_rhs_rows(value, fast_nrow(xo), i_arg = NULL, value_arg, call)
- 5. │     ├─base::withCallingHandlers(...)
- 6. │     └─vctrs::vec_recycle(value[[j]], nrow)
- 7. └─vctrs:::stop_recycle_incompatible_size(...) at vctrs/R/recycle.R:40:3
- 8.   └─vctrs:::stop_vctrs(...) at vctrs/R/conditions.R:800:3
- 9.     └─rlang::abort(message, class = c(class, ""vctrs_error""), ..., call = call) at vctrs/R/conditions.R:65:3
-Execution halted","2026-08-20 12:09:16.038049","2026-08-20 12:09:17.474601",1.43655204772949
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_gyrification/standardized_term.R","SUCCESS","","2026-08-20 12:09:17.47933","2026-08-20 12:09:18.585774",1.10644388198853
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_sleep/sleep_compiled.R","SUCCESS","","2026-08-20 12:09:18.592962","2026-08-20 12:09:19.816478",1.22351598739624
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_sleep/standardized_term.R","SUCCESS","","2026-08-20 12:09:19.82225","2026-08-20 12:09:21.332683",1.51043319702148
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_trees/build_mammal_tree.R","SUCCESS","","2026-08-20 12:09:21.33582","2026-08-20 12:09:22.235996",0.900176048278809
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/_audit_missing_structures.R","SUCCESS","","2026-08-20 12:09:22.244194","2026-08-20 12:09:24.603404",2.35921001434326
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/check_species_name_splits.R","SUCCESS","","2026-08-20 12:09:24.606277","2026-08-20 12:09:25.065457",0.459180116653442
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/compare_to_reference.R","SUCCESS","","2026-08-20 12:09:25.069338","2026-08-20 12:09:27.026396",1.95705795288086
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/crosspub_value_match.R","SUCCESS","","2026-08-20 12:09:27.046636","2026-08-20 12:09:28.321868",1.27523183822632
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/source_citations.R","SUCCESS","","2026-08-20 12:09:28.326454","2026-08-20 12:09:28.70898",0.382526159286499
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/standardized_term.R","SUCCESS","","2026-08-20 12:09:28.714287","2026-08-20 12:09:30.320248",1.60596084594727
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/volumes_compiled_DeCasien.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.2.1     ✔ readr     2.2.0
-✔ forcats   1.0.1     ✔ stringr   1.6.0
-✔ ggplot2   4.0.3     ✔ tibble    3.3.1
-✔ lubridate 1.9.5     ✔ tidyr     1.3.2
-✔ purrr     1.2.2     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
-Laterality guard OK: 25 one-side column(s) correctly suffixed, 0 author-doubled column(s) correctly unsuffixed (of the tables this merge reads).
-Error: read_item('Zilles_Rehkämper_1988_Table12-2'): no encoding (not in __ReadMe.xlsx 'Item name' and no enc_override). Add a registry row or an enc_override fallback.
-Execution halted","2026-08-20 12:09:30.346957","2026-08-20 12:09:32.24374",1.89678311347961
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/volumes_compiled_select.R","SUCCESS","","2026-08-20 12:09:32.247005","2026-08-20 12:09:35.023147",2.77614212036133
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/volumes_compiled.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.2.1     ✔ readr     2.2.0
-✔ forcats   1.0.1     ✔ stringr   1.6.0
-✔ ggplot2   4.0.3     ✔ tibble    3.3.1
-✔ lubridate 1.9.5     ✔ tidyr     1.3.2
-✔ purrr     1.2.2     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
-Laterality guard OK: 36 one-side column(s) correctly suffixed, 12 author-doubled column(s) correctly unsuffixed (of the tables this merge reads).
-Error: read_item('Zilles_Rehkämper_1988_Table12-2'): no encoding (not in __ReadMe.xlsx 'Item name' and no enc_override). Add a registry row or an enc_override fallback.
-Execution halted","2026-08-20 12:09:35.028897","2026-08-20 12:09:36.693031",1.66413402557373
+Execution halted","2026-08-20 17:13:33.800185","2026-08-20 17:13:53.011465",19.2112801074982
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_behaviour/behaviour_compiled.R","SUCCESS","","2026-08-20 17:13:53.018309","2026-08-20 17:14:01.429829",8.41151976585388
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_body_ecology/body_ecology_compiled.R","SUCCESS","","2026-08-20 17:14:01.433451","2026-08-20 17:14:11.643919",10.2104680538177
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_brain_mass/brain_mass_compiled.R","SUCCESS","","2026-08-20 17:14:11.651765","2026-08-20 17:14:15.966537",4.31477189064026
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_cellcounts/cellcounts_compiled.R","SUCCESS","","2026-08-20 17:14:15.97018","2026-08-20 17:14:19.113257",3.14307689666748
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_cellcounts/standardized_term.R","SUCCESS","","2026-08-20 17:14:19.120419","2026-08-20 17:14:20.557589",1.43717002868652
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_cerebellar_folding/cerebellar_folding_compiled.R","SUCCESS","","2026-08-20 17:14:20.560538","2026-08-20 17:14:21.67508",1.11454200744629
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_cerebral_metabolic_rate/cerebral_metabolic_rate_compiled.R","SUCCESS","","2026-08-20 17:14:21.688794","2026-08-20 17:14:23.818039",2.1292450428009
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_cerebral_metabolic_rate/standardized_term.R","SUCCESS","","2026-08-20 17:14:23.822887","2026-08-20 17:14:25.196725",1.37383794784546
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_cortical_areas/cortical_areas_compiled.R","FAILED","Error: enc('Young_etal_2013_Table1'): no 'Item encoded' in __ReadMe.xlsx 'Item name'. Add or repair the registry row.
+Execution halted","2026-08-20 17:14:25.204745","2026-08-20 17:14:26.545864",1.34111905097961
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_cortical_areas/standardized_term.R","SUCCESS","","2026-08-20 17:14:26.55628","2026-08-20 17:14:27.767144",1.21086406707764
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_cortical_layers/cortical_layers_compiled.R","SUCCESS","","2026-08-20 17:14:27.775489","2026-08-20 17:14:28.411939",0.636449813842773
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_fossil_brain_glucose/fossil_brain_glucose_compiled.R","SUCCESS","","2026-08-20 17:14:28.414883","2026-08-20 17:14:28.864815",0.449932098388672
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_gyrification/gyrification_compiled.R","FAILED","Error: enc('Zilles_etal_2013_Table1'): no 'Item encoded' in __ReadMe.xlsx 'Item name'. Add or repair the registry row.
+Execution halted","2026-08-20 17:14:28.87809","2026-08-20 17:14:30.410771",1.53268098831177
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_gyrification/standardized_term.R","SUCCESS","","2026-08-20 17:14:30.42087","2026-08-20 17:14:31.630328",1.2094578742981
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_sleep/sleep_compiled.R","SUCCESS","","2026-08-20 17:14:31.634213","2026-08-20 17:14:32.859161",1.22494792938232
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_sleep/standardized_term.R","SUCCESS","","2026-08-20 17:14:32.863097","2026-08-20 17:14:34.212514",1.34941697120667
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_trees/build_mammal_tree.R","SUCCESS","","2026-08-20 17:14:34.217922","2026-08-20 17:14:35.168138",0.950216054916382
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/_audit_missing_structures.R","SUCCESS","","2026-08-20 17:14:35.174782","2026-08-20 17:14:38.900885",3.72610306739807
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/check_species_name_splits.R","SUCCESS","","2026-08-20 17:14:38.90608","2026-08-20 17:14:39.524139",0.618058919906616
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/compare_to_reference.R","SUCCESS","","2026-08-20 17:14:39.528923","2026-08-20 17:14:41.391147",1.86222386360168
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/crosspub_value_match.R","SUCCESS","","2026-08-20 17:14:41.403411","2026-08-20 17:14:42.595449",1.19203805923462
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/source_citations.R","SUCCESS","","2026-08-20 17:14:42.599889","2026-08-20 17:14:42.933442",0.333553075790405
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/standardized_term.R","SUCCESS","","2026-08-20 17:14:42.936931","2026-08-20 17:14:44.470591",1.53366017341614
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/volumes_compiled_DeCasien.R","SUCCESS","","2026-08-20 17:14:44.475206","2026-08-20 17:14:59.30609",14.8308842182159
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/volumes_compiled_select.R","SUCCESS","","2026-08-20 17:14:59.323681","2026-08-20 17:15:02.624712",3.30103087425232
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/volumes_compiled.R","SUCCESS","","2026-08-20 17:15:02.63137","2026-08-20 17:15:06.862112",4.23074197769165
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__ShinyApp/app.R","SKIPPED","skipped: ends in shinyApp(); blocks forever under Rscript",NA,NA,NA
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__ShinyApp/build_data.R","SUCCESS","","2026-08-20 12:09:36.696619","2026-08-20 12:09:39.857154",3.16053485870361
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_keys/build_variable_catalog.R","SUCCESS","","2026-08-20 12:09:39.859642","2026-08-20 12:09:41.699266",1.83962392807007
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__ShinyApp/build_data.R","SUCCESS","","2026-08-20 17:15:06.868611","2026-08-20 17:15:10.603616",3.73500490188599
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_item_name_resolution.R","FAILED","registry Item names: 312   |   TSVs on disk: 260   |   NA.tsv present: no
+
+__merging_behaviour/behaviour_compiled.R                     0 item name(s) referenced   OK
+__merging_body_ecology/body_ecology_compiled.R               0 item name(s) referenced   OK
+__merging_brain_mass/brain_mass_compiled.R                   0 item name(s) referenced   OK
+__merging_cellcounts/cellcounts_compiled.R                  15 item name(s) referenced   OK
+__merging_cerebellar_folding/cerebellar_folding_compiled.R   0 item name(s) referenced   OK
+__merging_cerebral_metabolic_rate/cerebral_metabolic_rate_compiled.R   0 item name(s) referenced   OK
+__merging_cortical_areas/cortical_areas_compiled.R           6 item name(s) referenced   1 UNRESOLVED
+      Young_etal_2013_Table1                         -> no encoding (not in __ReadMe.xlsx 'Item name', no enc_override)
+__merging_cortical_layers/cortical_layers_compiled.R         1 item name(s) referenced   OK
+__merging_fossil_brain_glucose/fossil_brain_glucose_compiled.R   0 item name(s) referenced   OK
+__merging_gyrification/gyrification_compiled.R               3 item name(s) referenced   1 UNRESOLVED
+      Zilles_etal_2013_Table1                        -> no encoding (not in __ReadMe.xlsx 'Item name', no enc_override)
+__merging_sleep/sleep_compiled.R                             4 item name(s) referenced   OK
+__merging_volumes/volumes_compiled_DeCasien.R               47 item name(s) referenced   OK
+__merging_volumes/volumes_compiled_select.R                 34 item name(s) referenced   OK
+__merging_volumes/volumes_compiled.R                        64 item name(s) referenced   OK
+
+orphaned TSVs (on disk, claimed by no registry row): 6
+      10.1016%2Fj.tins.2013.01.006_Table1.tsv   <- a registry row was lost after this file was built
+      10.1073%2Fpnas.1318894110_Table1.tsv   <- a registry row was lost after this file was built
+      10.1080%2F09524622.2021.1905065_Figure1.tsv   <- a registry row was lost after this file was built
+      10.1371%2Fjournal.pbio.3000494_DNAonlyMCC.tsv   <- a registry row was lost after this file was built
+      10.3389%2Ffncir.2013.00030_Table1.tsv   <- a registry row was lost after this file was built
+      ISBN%3A9780195043716_Table12-2.tsv   <- a registry row was lost after this file was built
+rows with a citation but no Item name (need _tools/file_list.R): 0
+
+2 unresolved reference(s).
+run _tools/restore_registry_rows.R (adding any new row to its ROWS list), then _tools/file_list.R.","2026-08-20 17:15:10.613753","2026-08-20 17:15:11.574234",0.96048092842102
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_laterality_doubling.R","FAILED","Is every doubled brain-volume value marked, and marked as provenance rather than as a veto?
+
+Registry
+  [PASS] every `doubling` is none|by_source
+  [FAIL] every registered column has a standardized term -- deSousa_etal_2009_Table1:left_V1_volume_mm3; deSousa_etal_2009_Table1:left_LGN_volume_mm3
+  [PASS] doubling=none (36) carry their laterality suffix (anchored)
+  [PASS] doubling=by_source (14) carry NO laterality suffix
+    author-doubled terms: Amygdala_Vol.mm3, Area_striata_grey_matter_Vol.mm3, Cerebellum_Vol.mm3, Corpus_geniculatum_laterale_Vol.mm3, Diencephalon_excluding_globus_pallidus_Vol.mm3, Hippocampus_Vol.mm3, Medulla_oblongata_Vol.mm3, Mesencephalon_Vol.mm3, Neocortex_Vol.mm3, Palaeocortex_Vol.mm3, Schizo_cortex_Vol.mm3, Septum_Vol.mm3, Striatum_including_globus_pallidus_Vol.mm3
+
+No value is doubled twice
+  [FAIL] volumes_compiled_select.R: every author-doubled stem is in `bilateral_stems_exclude` -- Amygdala, Cerebellum, Diencephalon_excluding_globus_pallidus, Hippocampus, Medulla_oblongata, Mesencephalon, Neocortex, Palaeocortex, Schizo_cortex, Septum, Striatum_including_globus_pallidus
+  [PASS] volumes_compiled.R: no author-doubled stem is in `insula_stems`
+  [PASS] volumes_compiled_DeCasien.R: no author-doubled stem is in `bilateral_stems`
+
+Doubling is provenance, never a veto
+  [PASS] no author-doubled column is skipped in the value-flag registry (wildcards expanded)
+
+Predicted `published_bilateral_estimate` rows
+  volumes_compiled.R: expect 338 row(s) from volumes_unfiltered.csv
+  [PASS] volumes_flags.csv matches the prediction -- missing [] extra []
+      e.g. Bassaricyon gabbii | Amygdala_Vol.mm3
+      e.g. Bassaricyon gabbii | Cerebellum_Vol.mm3
+      e.g. Bassaricyon gabbii | Diencephalon_excluding_globus_pallidus_Vol.mm3
+      ... and 335 more
+  volumes_compiled_select.R: expect 19 row(s) from volumes_resolution_audit_select.csv
+  [PASS] volumes_flags_select.csv matches the prediction -- missing [] extra []
+      e.g. Cercopithecus ascanius | Corpus_geniculatum_laterale_Vol.mm3
+      e.g. Cercopithecus mitis | Corpus_geniculatum_laterale_Vol.mm3
+      e.g. Colobus angolensis | Corpus_geniculatum_laterale_Vol.mm3
+      ... and 16 more
+  volumes_compiled_DeCasien.R: expect 0 row(s) from volumes_unfiltered_DeCasien.csv
+  [PASS] volumes_flags_DeCasien.csv matches the prediction -- missing [] extra []
+
+FAILED 2 check(s): every registered column has a standardized term; volumes_compiled_select.R: every author-doubled stem is in `bilateral_stems_exclude`","2026-08-20 17:15:11.57653","2026-08-20 17:15:12.18813",0.611599922180176
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/find_csv_tsv_creators.R","SUCCESS","","2026-08-20 17:15:12.191967","2026-08-20 17:16:56.879592",104.687624931335
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/find_orphan_R_scripts.R","SUCCESS","","2026-08-20 17:16:56.889574","2026-08-20 17:18:10.551903",73.6623289585114
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/parity_R_vs_py.R","SKIPPED","skipped: manual R-vs-Python port check; shells out to Rscript and python3",NA,NA,NA
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/registry_snapshot.R","SUCCESS","","2026-08-20 17:18:10.558689","2026-08-20 17:18:11.523019",0.964329957962036
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_helpers/cortical_layers_source_common.R","SKIPPED","skipped: sourced helper library, not a standalone script",NA,NA,NA
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_helpers/openxlsx_compat.R","SKIPPED","skipped: sourced helper library, not a standalone script",NA,NA,NA
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_helpers/restricted_data.R","SKIPPED","skipped: sourced helper library, not a standalone script",NA,NA,NA
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_keys/build_variable_catalog.R","SUCCESS","","2026-08-20 17:18:11.530797","2026-08-20 17:18:14.596978",3.06618094444275
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_keys/combine_trees.R","FAILED","Error: Need _keys/phylo_placental.* and _keys/phylo_marsupial.* (see PHYLO_SETUP.md).
-Execution halted","2026-08-20 12:09:41.705425","2026-08-20 12:09:43.011635",1.30621004104614
+Execution halted","2026-08-20 17:18:14.603273","2026-08-20 17:18:16.194274",1.59100103378296
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_keys/extend_phylo.R","FAILED","Error: extend_phylo.R is deprecated: use a published source tree (see PHYLO_SETUP.md), not imputation.
-Execution halted","2026-08-20 12:09:43.017375","2026-08-20 12:09:43.337556",0.320180892944336
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_keys/resolve_taxonomy.R","SUCCESS","","2026-08-20 12:09:43.340659","2026-08-20 12:13:32.950671",229.610012054443
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_keys/specimen_crosswalk/validate_specimen_layers.R","SUCCESS","","2026-08-20 12:13:32.961716","2026-08-20 12:13:33.584292",0.622575998306274
+Execution halted","2026-08-20 17:18:16.198389","2026-08-20 17:18:16.49116",0.292770862579346
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_keys/resolve_taxonomy.R","SUCCESS","","2026-08-20 17:18:16.496488","2026-08-20 17:22:40.152037",263.655548810959
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_keys/specimen_crosswalk/validate_specimen_layers.R","SUCCESS","","2026-08-20 17:22:40.159217","2026-08-20 17:22:40.662318",0.503101110458374
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_tools/__edit_all_directories.R","SKIPPED","skipped: mass find/replace + rename utility; run deliberately, not in a sweep",NA,NA,NA
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_tools/__file_list.R","SUCCESS","","2026-08-20 12:13:33.590684","2026-08-20 12:13:35.324498",1.73381400108337
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_tools/__register_cortical_layer_builds_20260815.R","SUCCESS","","2026-08-20 12:13:35.32739","2026-08-20 12:13:36.261973",0.934582948684692
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_tools/__update_remaining_builds_20260815.R","SUCCESS","","2026-08-20 12:13:36.264441","2026-08-20 12:13:37.162075",0.897634029388428
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_tools/build_cortical_layer_definitions.R","SUCCESS","","2026-08-20 12:13:37.164483","2026-08-20 12:13:37.537894",0.373410940170288
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_tools/cortical_layers_source_common.R","SUCCESS","","2026-08-20 12:13:37.541811","2026-08-20 12:13:37.820659",0.278847932815552
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_tools/find_csv_tsv_creators.R","SUCCESS","","2026-08-20 12:13:37.824437","2026-08-20 12:15:24.942963",107.118525981903
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_tools/find_orphan_R_scripts.R","SUCCESS","","2026-08-20 12:15:24.947387","2026-08-20 12:16:38.73073",73.7833430767059
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_tools/openxlsx_compat.R","SUCCESS","","2026-08-20 12:16:38.734484","2026-08-20 12:16:39.143378",0.408894062042236
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_tools/restricted_data.R","SUCCESS","","2026-08-20 12:16:39.145977","2026-08-20 12:16:39.462924",0.316946983337402
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Andelin_etal_2019/Andelin_etal_2019_Table4.R","SUCCESS","","2026-08-20 12:16:39.465472","2026-08-20 12:16:41.88928",2.42380809783936
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Ashwell__2020/Ashwell__2020_SupplementaryTable.R","SUCCESS","","2026-08-20 12:16:41.899157","2026-08-20 12:16:42.950051",1.05089402198792
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/AvelinodeSouza_etal_2025/AvelinodeSouza_etal_2025_TABLE1.R","SUCCESS","","2026-08-20 12:16:42.952786","2026-08-20 12:16:45.521668",2.56888198852539
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Baker_etal_2025/Baker_etal_2025_SupplementaryData1.R","SUCCESS","","2026-08-20 12:16:45.534171","2026-08-20 12:16:46.816058",1.28188681602478
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Balzeau_etal_2012/Balzeau_etal_2012_Table2.R","SUCCESS","","2026-08-20 12:16:46.821723","2026-08-20 12:16:47.383776",0.562052965164185
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Balzeau_etal_2012/Balzeau_etal_2012_Table3.R","SUCCESS","","2026-08-20 12:16:47.39136","2026-08-20 12:16:48.129901",0.738540887832642
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Balzeau_etal_2012/Balzeau_etal_2012_Table5.R","SUCCESS","","2026-08-20 12:16:48.134914","2026-08-20 12:16:48.754106",0.619192123413086
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/BarbeitoAndres_etal_2019/BarbeitoAndres_etal_2019.R","SUCCESS","","2026-08-20 12:16:48.765745","2026-08-20 12:16:49.952889",1.1871440410614
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Barger_etal_2007/Barger_etal_2007_TABLE1.R","SUCCESS","","2026-08-20 12:16:49.955202","2026-08-20 12:16:50.500521",0.545318841934204
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_tools/__register_cortical_layer_builds_20260815.R","SKIPPED","skipped: writes hard-coded Sheet1 rows 299-301; Sheet1 re-sorts, so a re-run overwrites other sources",NA,NA,NA
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_tools/__update_remaining_builds_20260815.R","SUCCESS","","2026-08-20 17:22:40.666662","2026-08-20 17:22:41.644347",0.97768497467041
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_tools/build_cortical_layer_definitions.R","SUCCESS","","2026-08-20 17:22:41.653328","2026-08-20 17:22:42.006229",0.352900981903076
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_tools/file_list.R","SUCCESS","","2026-08-20 17:22:42.010882","2026-08-20 17:22:43.59148",1.58059811592102
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_tools/restore_registry_rows.R","SUCCESS","","2026-08-20 17:22:43.596453","2026-08-20 17:22:45.010521",1.41406798362732
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Andelin_etal_2019/Andelin_etal_2019_Table4.R","SUCCESS","","2026-08-20 17:22:45.015","2026-08-20 17:22:47.472633",2.45763278007507
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Ashwell__2020/Ashwell__2020_SupplementaryTable.R","SUCCESS","","2026-08-20 17:22:47.478233","2026-08-20 17:22:48.601509",1.12327599525452
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/AvelinodeSouza_etal_2025/AvelinodeSouza_etal_2025_TABLE1.R","SUCCESS","","2026-08-20 17:22:48.612932","2026-08-20 17:22:51.689517",3.07658505439758
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Baker_etal_2025/Baker_etal_2025_SupplementaryData1.R","SUCCESS","","2026-08-20 17:22:51.70329","2026-08-20 17:22:53.017254",1.31396412849426
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Balzeau_etal_2012/Balzeau_etal_2012_Table2.R","SUCCESS","","2026-08-20 17:22:53.021177","2026-08-20 17:22:54.028153",1.00697588920593
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Balzeau_etal_2012/Balzeau_etal_2012_Table3.R","SUCCESS","","2026-08-20 17:22:54.046899","2026-08-20 17:22:54.869849",0.822949886322021
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Balzeau_etal_2012/Balzeau_etal_2012_Table5.R","SUCCESS","","2026-08-20 17:22:54.872918","2026-08-20 17:22:55.489817",0.616899013519287
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/BarbeitoAndres_etal_2019/BarbeitoAndres_etal_2019.R","SUCCESS","","2026-08-20 17:22:55.493099","2026-08-20 17:22:56.682215",1.18911600112915
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Barger_etal_2007/Barger_etal_2007_TABLE1.R","SUCCESS","","2026-08-20 17:22:56.686737","2026-08-20 17:22:57.17903",0.492292881011963
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Barger_etal_2012/Barger_etal_2012_Table3.R","FAILED","Error in `[[<-.data.frame`(`*tmp*`, paste0(nuc, ""_neurons""), value = c(`13.27 (3.7)` = 13270000,  : 
   replacement has 5 rows, data has 7
 Calls: [[<- -> [[<-.data.frame
-Execution halted","2026-08-20 12:16:50.50313","2026-08-20 12:16:50.968668",0.465538024902344
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Barger_etal_2014/Barger_etal_2014_Table1.R","SUCCESS","","2026-08-20 12:16:50.973159","2026-08-20 12:16:51.809931",0.836771965026855
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Barks_etal_2014/Barks_etal_2014_Fig4A.R","SUCCESS","","2026-08-20 12:16:51.812489","2026-08-20 12:16:53.057683",1.24519395828247
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Barks_etal_2014/Barks_etal_2014_Fig5A.R","SUCCESS","","2026-08-20 12:16:53.060722","2026-08-20 12:16:54.280429",1.21970677375793
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Barks_etal_2014/Barks_etal_2014_TABLE1.R","SUCCESS","","2026-08-20 12:16:54.282946","2026-08-20 12:16:55.355163",1.07221698760986
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Barks_etal_2014/Barks_etal_2014_TABLE2.R","SUCCESS","","2026-08-20 12:16:55.357654","2026-08-20 12:16:56.395652",1.03799796104431
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Barks_etal_2014/Barks_etal_2014_unpublishedviaDeCasien.R","SUCCESS","","2026-08-20 12:16:56.398185","2026-08-20 12:16:57.409031",1.01084589958191
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Baron_etal_1983/Baron_etal_1983_Table1.R","SUCCESS","","2026-08-20 12:16:57.415318","2026-08-20 12:16:58.188789",0.773470878601074
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Baron_etal_1987/Baron_etal_1987_Table1.R","SUCCESS","","2026-08-20 12:16:58.191134","2026-08-20 12:16:58.99421",0.803076028823853
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Baron_etal_1988/Baron_etal_1988_Table1.R","SUCCESS","","2026-08-20 12:16:59.002182","2026-08-20 12:16:59.756225",0.754043102264404
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Baron_etal_1990/Baron_etal_1990_Table1.R","SUCCESS","","2026-08-20 12:16:59.758653","2026-08-20 12:17:00.529521",0.770868062973022
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Baron_etal_1996/Baron_etal_1996_overlap_taxonomy_audit.R","SUCCESS","","2026-08-20 12:17:00.532692","2026-08-20 12:17:01.677252",1.14456009864807
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Baron_etal_1996/Baron_etal_1996_Table10.R","SUCCESS","","2026-08-20 12:17:01.692945","2026-08-20 12:17:02.268623",0.575678110122681
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Baron_etal_1996/Baron_etal_1996_Table32.R","SUCCESS","","2026-08-20 12:17:02.277241","2026-08-20 12:17:02.954034",0.676793098449707
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Bauernfeind_etal_2013/Bauernfeind_etal_2013_Table1.R","SUCCESS","","2026-08-20 12:17:02.958156","2026-08-20 12:17:04.052732",1.09457588195801
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Bauernfeind_etal_2013/Bauernfeind_etal_2013_Table2.R","SUCCESS","","2026-08-20 12:17:04.055142","2026-08-20 12:17:04.781183",0.726041078567505
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Bauernfeind_etal_2013/Bauernfeind_etal_2013_Table3.R","SUCCESS","","2026-08-20 12:17:04.785659","2026-08-20 12:17:05.574927",0.789268016815186
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Bortoff_Strick_1993/Bortoff_Strick_1993_extract_snapshot.R","SUCCESS","","2026-08-20 12:17:05.583161","2026-08-20 12:17:06.245486",0.662324905395508
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Bortoff_Strick_1993/Bortoff_Strick_1993_Table1.R","SUCCESS","","2026-08-20 12:17:06.248061","2026-08-20 12:17:06.964956",0.71689510345459
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Boyer_Harrington_2018/Boyer_Harrington_2018_Table1.R","SUCCESS","","2026-08-20 12:17:06.967371","2026-08-20 12:17:07.892201",0.924829959869385
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Boyer_Harrington_2019/Boyer_Harrington_2019_SOMTableS6.R","SUCCESS","","2026-08-20 12:17:07.894933","2026-08-20 12:17:08.714172",0.819238901138306
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Brodmann__1913/Brodmann__1913_Table1.R","SUCCESS","","2026-08-20 12:17:08.717946","2026-08-20 12:17:09.317086",0.599139928817749
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Burger_etal_2019/Burger_etal_2019_SupplementaryDataSD1.R","SUCCESS","","2026-08-20 12:17:09.322778","2026-08-20 12:17:10.251307",0.928529024124146
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Burish_etal_2010/Burish_etal_2010_SupplementaryTable1.R","SUCCESS","","2026-08-20 12:17:10.25496","2026-08-20 12:17:12.774404",2.51944398880005
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Burish_etal_2010/Burish_etal_2010_Table1.R","SUCCESS","","2026-08-20 12:17:12.779896","2026-08-20 12:17:14.907303",2.12740707397461
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Bush_Allman_2003/Bush_Allman_2003_Table1.R","SUCCESS","","2026-08-20 12:17:14.914714","2026-08-20 12:17:15.479439",0.564724922180176
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Bush_Allman_2004_a/Bush_Allman_2004_a_Table2.R","SUCCESS","","2026-08-20 12:17:15.484893","2026-08-20 12:17:16.140446",0.655552864074707
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Bush_Allman_2004_b/Bush_Allman_2004_b_Table1.R","SUCCESS","","2026-08-20 12:17:16.14312","2026-08-20 12:17:16.634917",0.491796970367432
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Capellini_etal_2008/Capellini_etal_2008_sleep-data.R","SUCCESS","","2026-08-20 12:17:16.642823","2026-08-20 12:17:17.404267",0.761444091796875
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Caspar_etal_2022/Caspar_etal_2022_Supplementaryfile3.R","SUCCESS","","2026-08-20 12:17:17.409198","2026-08-20 12:17:18.408712",0.999513864517212
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Caspar_etal_2022/Caspar_etal_2022_Table1.R","SUCCESS","","2026-08-20 12:17:18.41236","2026-08-20 12:17:19.369985",0.957625150680542
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Caves_etal_2018/Caves_etal_2018_TableS1.R","SUCCESS","","2026-08-20 12:17:19.375043","2026-08-20 12:17:20.44778",1.07273697853088
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Changizi__2001/Changizi__2001_Figure3.R","SUCCESS","","2026-08-20 12:17:20.450357","2026-08-20 12:17:21.001849",0.551491975784302
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Changizi_Shimojo_2005/Changizi_Shimojo_2005_Table1.R","SUCCESS","","2026-08-20 12:17:21.004756","2026-08-20 12:17:21.777232",0.772475957870483
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Changizi_Shimojo_2005/Changizi_Shimojo_2005_Table2.R","SUCCESS","","2026-08-20 12:17:21.779868","2026-08-20 12:17:22.473464",0.693596124649048
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Changizi_Shimojo_2005/Changizi_Shimojo_2005_Table3.R","SUCCESS","","2026-08-20 12:17:22.483349","2026-08-20 12:17:23.318399",0.835049867630005
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Changizi_Shimojo_2005/Changizi_Shimojo_2005_Table4.R","SUCCESS","","2026-08-20 12:17:23.32369","2026-08-20 12:17:24.047287",0.723597049713135
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Changizi_Shimojo_2005/Changizi_Shimojo_2005_Table5.R","SUCCESS","","2026-08-20 12:17:24.053408","2026-08-20 12:17:24.700612",0.647204160690308
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Collins_etal_2010/Collins_etal_2010_DatasetS1.R","SUCCESS","","2026-08-20 12:17:24.703753","2026-08-20 12:17:25.391697",0.687943935394287
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Collins_etal_2016/Collins_etal_2016_Table1.R","SUCCESS","","2026-08-20 12:17:25.394221","2026-08-20 12:17:26.007802",0.613580942153931
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/DeCasien_Higham_2019/DeCasien_Higham_2019_references_braindata.R","SUCCESS","","2026-08-20 12:17:26.013593","2026-08-20 12:17:26.919467",0.905874013900757
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/DeCasien_Higham_2019/DeCasien_Higham_2019_SupplementaryData1-BrainRegion.R","SUCCESS","","2026-08-20 12:17:26.924453","2026-08-20 12:17:46.86766",19.943207025528
+Execution halted","2026-08-20 17:22:57.181731","2026-08-20 17:22:57.753058",0.571326971054077
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Barger_etal_2014/Barger_etal_2014_Table1.R","SUCCESS","","2026-08-20 17:22:57.75762","2026-08-20 17:22:58.546283",0.788662910461426
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Barks_etal_2014/Barks_etal_2014_Fig4A.R","SUCCESS","","2026-08-20 17:22:58.550189","2026-08-20 17:22:59.733579",1.18338990211487
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Barks_etal_2014/Barks_etal_2014_Fig5A.R","SUCCESS","","2026-08-20 17:22:59.737287","2026-08-20 17:23:01.041815",1.30452799797058
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Barks_etal_2014/Barks_etal_2014_TABLE1.R","SUCCESS","","2026-08-20 17:23:01.059862","2026-08-20 17:23:02.123994",1.06413221359253
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Barks_etal_2014/Barks_etal_2014_TABLE2.R","SUCCESS","","2026-08-20 17:23:02.128516","2026-08-20 17:23:03.236521",1.10800504684448
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Barks_etal_2014/Barks_etal_2014_unpublishedviaDeCasien.R","SUCCESS","","2026-08-20 17:23:03.242757","2026-08-20 17:23:04.177804",0.935046911239624
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Baron_etal_1983/Baron_etal_1983_Table1.R","SUCCESS","","2026-08-20 17:23:04.18239","2026-08-20 17:23:05.05456",0.872169971466064
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Baron_etal_1987/Baron_etal_1987_Table1.R","SUCCESS","","2026-08-20 17:23:05.065966","2026-08-20 17:23:05.864691",0.798725128173828
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Baron_etal_1988/Baron_etal_1988_Table1.R","SUCCESS","","2026-08-20 17:23:05.868025","2026-08-20 17:23:06.682344",0.814318895339966
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Baron_etal_1990/Baron_etal_1990_Table1.R","SUCCESS","","2026-08-20 17:23:06.691902","2026-08-20 17:23:07.448161",0.756258964538574
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Baron_etal_1996/Baron_etal_1996_overlap_taxonomy_audit.R","SUCCESS","","2026-08-20 17:23:07.49544","2026-08-20 17:23:08.57299",1.07754993438721
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Baron_etal_1996/Baron_etal_1996_Table10.R","SUCCESS","","2026-08-20 17:23:08.582155","2026-08-20 17:23:09.213194",0.631038904190063
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Baron_etal_1996/Baron_etal_1996_Table32.R","SUCCESS","","2026-08-20 17:23:09.217417","2026-08-20 17:23:09.886138",0.668720960617065
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Bauernfeind_etal_2013/Bauernfeind_etal_2013_Table1.R","SUCCESS","","2026-08-20 17:23:09.890043","2026-08-20 17:23:10.863312",0.973268985748291
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Bauernfeind_etal_2013/Bauernfeind_etal_2013_Table2.R","SUCCESS","","2026-08-20 17:23:10.868438","2026-08-20 17:23:11.683539",0.815100908279419
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Bauernfeind_etal_2013/Bauernfeind_etal_2013_Table3.R","SUCCESS","","2026-08-20 17:23:11.688567","2026-08-20 17:23:12.498428",0.809861183166504
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Bortoff_Strick_1993/Bortoff_Strick_1993_extract_snapshot.R","SUCCESS","","2026-08-20 17:23:12.502115","2026-08-20 17:23:13.210244",0.708128929138184
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Bortoff_Strick_1993/Bortoff_Strick_1993_Table1.R","SUCCESS","","2026-08-20 17:23:13.212908","2026-08-20 17:23:13.909346",0.696438074111938
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Boyer_Harrington_2018/Boyer_Harrington_2018_Table1.R","SUCCESS","","2026-08-20 17:23:13.92392","2026-08-20 17:23:14.802195",0.878275156021118
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Boyer_Harrington_2019/Boyer_Harrington_2019_SOMTableS6.R","SUCCESS","","2026-08-20 17:23:14.807416","2026-08-20 17:23:15.62304",0.815623998641968
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Brodmann__1913/Brodmann__1913_Table1.R","SUCCESS","","2026-08-20 17:23:15.628465","2026-08-20 17:23:16.261538",0.633073091506958
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Burger_etal_2019/Burger_etal_2019_SupplementaryDataSD1.R","SUCCESS","","2026-08-20 17:23:16.265227","2026-08-20 17:23:17.12504",0.85981297492981
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Burish_etal_2010/Burish_etal_2010_SupplementaryTable1.R","SUCCESS","","2026-08-20 17:23:17.129208","2026-08-20 17:23:19.419716",2.29050779342651
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Burish_etal_2010/Burish_etal_2010_Table1.R","SUCCESS","","2026-08-20 17:23:19.425652","2026-08-20 17:23:21.314558",1.88890600204468
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Bush_Allman_2003/Bush_Allman_2003_Table1.R","SUCCESS","","2026-08-20 17:23:21.327875","2026-08-20 17:23:22.098921",0.771046161651611
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Bush_Allman_2004_a/Bush_Allman_2004_a_Table2.R","SUCCESS","","2026-08-20 17:23:22.102445","2026-08-20 17:23:22.845714",0.743269205093384
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Bush_Allman_2004_b/Bush_Allman_2004_b_Table1.R","SUCCESS","","2026-08-20 17:23:22.854405","2026-08-20 17:23:23.384697",0.53029203414917
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Capellini_etal_2008/Capellini_etal_2008_sleep-data.R","SUCCESS","","2026-08-20 17:23:23.387572","2026-08-20 17:23:24.164835",0.777262926101685
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Caspar_etal_2022/Caspar_etal_2022_Supplementaryfile3.R","SUCCESS","","2026-08-20 17:23:24.175429","2026-08-20 17:23:24.892082",0.716652870178223
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Caspar_etal_2022/Caspar_etal_2022_Table1.R","SUCCESS","","2026-08-20 17:23:24.898596","2026-08-20 17:23:25.708968",0.81037187576294
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Caves_etal_2018/Caves_etal_2018_TableS1.R","SUCCESS","","2026-08-20 17:23:25.712387","2026-08-20 17:23:26.861209",1.14882183074951
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Changizi__2001/Changizi__2001_Figure3.R","SUCCESS","","2026-08-20 17:23:26.864514","2026-08-20 17:23:27.521995",0.657480955123901
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Changizi_Shimojo_2005/Changizi_Shimojo_2005_Table1.R","SUCCESS","","2026-08-20 17:23:27.529571","2026-08-20 17:23:28.298222",0.768651008605957
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Changizi_Shimojo_2005/Changizi_Shimojo_2005_Table2.R","SUCCESS","","2026-08-20 17:23:28.321299","2026-08-20 17:23:29.032396",0.711097002029419
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Changizi_Shimojo_2005/Changizi_Shimojo_2005_Table3.R","SUCCESS","","2026-08-20 17:23:29.036561","2026-08-20 17:23:29.753561",0.717000007629395
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Changizi_Shimojo_2005/Changizi_Shimojo_2005_Table4.R","SUCCESS","","2026-08-20 17:23:29.758845","2026-08-20 17:23:30.486889",0.728043794631958
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Changizi_Shimojo_2005/Changizi_Shimojo_2005_Table5.R","SUCCESS","","2026-08-20 17:23:30.494228","2026-08-20 17:23:31.208143",0.713915109634399
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Collins_etal_2010/Collins_etal_2010_DatasetS1.R","SUCCESS","","2026-08-20 17:23:31.212279","2026-08-20 17:23:31.923095",0.710815906524658
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Collins_etal_2016/Collins_etal_2016_Table1.R","SUCCESS","","2026-08-20 17:23:31.926225","2026-08-20 17:23:32.598114",0.671889066696167
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/DeCasien_Higham_2019/DeCasien_Higham_2019_references_braindata.R","SUCCESS","","2026-08-20 17:23:32.600938","2026-08-20 17:23:33.531001",0.930063009262085
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/DeCasien_Higham_2019/DeCasien_Higham_2019_SupplementaryData1-BrainRegion.R","SUCCESS","","2026-08-20 17:23:33.534937","2026-08-20 17:23:51.228202",17.6932651996613
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/deJager_etal_2022/deJager_etal_2022.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
 Calls: read.csv -> read.table -> file
 In addition: Warning message:
 In file(file, ""rt"") :
   cannot open file 'deJager_etal_2022_calibration.csv': No such file or directory
-Execution halted","2026-08-20 12:17:46.871692","2026-08-20 12:17:47.15072",0.279027938842773
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/deSousa_etal_2009/deSousa_etal_2009_Table1.R","SUCCESS","","2026-08-20 12:17:47.153206","2026-08-20 12:17:48.012314",0.859107971191406
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/deSousa_etal_2010/deSousa_etal_2010_SupTable2.R","SUCCESS","","2026-08-20 12:17:48.014769","2026-08-20 12:17:48.928517",0.913748025894165
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/deSousa_etal_2010/deSousa_etal_2010_Table1.R","SUCCESS","","2026-08-20 12:17:48.940394","2026-08-20 12:17:49.752069",0.811675071716309
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/deSousa_etal_2013/deSousa_etal_2013_Table1.R","SUCCESS","","2026-08-20 12:17:49.756839","2026-08-20 12:17:50.686108",0.929269075393677
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/DosSantos_etal_2017/DosSantos_etal_2017_TableS1.R","SUCCESS","","2026-08-20 12:17:50.69043","2026-08-20 12:17:51.564537",0.874107122421265
+Execution halted","2026-08-20 17:23:51.238304","2026-08-20 17:23:51.657904",0.419600009918213
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/deSousa_etal_2009/deSousa_etal_2009_Table1.R","SUCCESS","","2026-08-20 17:23:51.662035","2026-08-20 17:23:52.644272",0.982237100601196
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/deSousa_etal_2010/deSousa_etal_2010_SupTable2.R","SUCCESS","","2026-08-20 17:23:52.648173","2026-08-20 17:23:53.792134",1.14396095275879
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/deSousa_etal_2010/deSousa_etal_2010_Table1.R","SUCCESS","","2026-08-20 17:23:53.810413","2026-08-20 17:23:54.682178",0.87176513671875
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/deSousa_etal_2013/deSousa_etal_2013_Table1.R","SUCCESS","","2026-08-20 17:23:54.685745","2026-08-20 17:23:55.546708",0.860963106155396
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/DosSantos_etal_2017/DosSantos_etal_2017_TableS1.R","SUCCESS","","2026-08-20 17:23:55.549936","2026-08-20 17:23:56.388631",0.838695049285889
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/DosSantos_etal_2020/DosSantos_etal_2020_Table1_check.R","FAILED","
 Attaching package: ‘dplyr’
 
@@ -533,26 +559,26 @@ The following objects are masked from ‘package:base’:
     intersect, setdiff, setequal, union
 
 Error: `path` does not exist: ‘/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/DosSantos_etal_2020/2020-PublishedDataMammalsMicroglia - cópia.xlsx’
-Execution halted","2026-08-20 12:17:51.567586","2026-08-20 12:17:52.36954",0.801954030990601
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/DosSantos_etal_2020/DosSantos_etal_2020_Table1.R","SUCCESS","","2026-08-20 12:17:52.376581","2026-08-20 12:17:55.514484",3.1379029750824
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/DosSantos_etal_2020/DosSantos_etal_2020_unpublished.R","SUCCESS","","2026-08-20 12:17:55.518439","2026-08-20 12:17:56.577125",1.05868601799011
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Eagleman_Vaughn_2021/Eagleman_Vaughn_2021_TABLE1.R","SUCCESS","","2026-08-20 12:17:56.582177","2026-08-20 12:17:58.847891",2.26571416854858
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Ebinger__1974/Ebinger__1974_Tables3-4_extract_snapshot.R","SUCCESS","","2026-08-20 12:17:58.854073","2026-08-20 12:17:59.283674",0.429600954055786
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Ebinger__1974/Ebinger__1974_Tables3-4.R","SUCCESS","","2026-08-20 12:17:59.288527","2026-08-20 12:17:59.825392",0.536864995956421
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Falcone_etal_2019/Falcone_etal_2019_TABLE1.R","SUCCESS","","2026-08-20 12:17:59.840642","2026-08-20 12:18:01.091871",1.25122904777527
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Falcone_etal_2019/Falcone_etal_2019_TABLE2.R","SUCCESS","","2026-08-20 12:18:01.098569","2026-08-20 12:18:02.510432",1.41186308860779
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Finlay_etal_2006/Finlay_etal_2006_Table6.1.R","SUCCESS","","2026-08-20 12:18:02.515692","2026-08-20 12:18:03.058724",0.543031930923462
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Frahm_etal_1982/Frahm_etal_1982_Table2.R","SUCCESS","","2026-08-20 12:18:03.061567","2026-08-20 12:18:04.102803",1.04123592376709
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Frahm_etal_1984/Frahm_etal_1984_Table1.R","SUCCESS","","2026-08-20 12:18:04.115824","2026-08-20 12:18:05.006922",0.891098022460938
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Frahm_etal_1997/Frahm_etal_1997_Table1.R","SUCCESS","","2026-08-20 12:18:05.011752","2026-08-20 12:18:06.127569",1.11581707000732
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Frahm_etal_1998/Frahm_etal_1998_Table1.R","SUCCESS","","2026-08-20 12:18:06.135396","2026-08-20 12:18:07.039",0.903604030609131
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Frahm_Zilles_1994/Frahm_Zilles_1994_Table1.R","SUCCESS","","2026-08-20 12:18:07.041496","2026-08-20 12:18:08.132459",1.0909628868103
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Fritsches_etal_2005/Fritsches_etal_2005_Fig2.R","SUCCESS","","2026-08-20 12:18:08.142673","2026-08-20 12:18:09.179625",1.03695201873779
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Gabi_etal_2016/Gabi_etal_2016_TableS1.R","SUCCESS","","2026-08-20 12:18:09.182123","2026-08-20 12:18:09.735332",0.553209066390991
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Garwicz_etal_2009/Garwicz_etal_2009_TableS1.R","SUCCESS","","2026-08-20 12:18:09.740514","2026-08-20 12:18:11.463567",1.72305297851562
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Genoud_etal_2018/Genoud_etal_2018_TableS2.R","SUCCESS","","2026-08-20 12:18:11.468372","2026-08-20 12:18:12.685644",1.21727180480957
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Granatosky__2018/Granatosky__2018_TableS1.R","SUCCESS","","2026-08-20 12:18:12.688965","2026-08-20 12:18:13.277157",0.588191986083984
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heffner_Masterton_1975/Heffner_Masterton_1975_TableI.R","SUCCESS","","2026-08-20 12:18:13.283537","2026-08-20 12:18:13.993431",0.709894180297852
+Execution halted","2026-08-20 17:23:56.392555","2026-08-20 17:23:57.179686",0.787131071090698
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/DosSantos_etal_2020/DosSantos_etal_2020_Table1.R","SUCCESS","","2026-08-20 17:23:57.183101","2026-08-20 17:24:00.300024",3.11692309379578
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/DosSantos_etal_2020/DosSantos_etal_2020_unpublished.R","SUCCESS","","2026-08-20 17:24:00.306714","2026-08-20 17:24:01.520102",1.21338796615601
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Eagleman_Vaughn_2021/Eagleman_Vaughn_2021_TABLE1.R","SUCCESS","","2026-08-20 17:24:01.523914","2026-08-20 17:24:03.518166",1.99425196647644
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Ebinger__1974/Ebinger__1974_Tables3-4_extract_snapshot.R","SUCCESS","","2026-08-20 17:24:03.524444","2026-08-20 17:24:03.871282",0.346837997436523
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Ebinger__1974/Ebinger__1974_Tables3-4.R","SUCCESS","","2026-08-20 17:24:03.899412","2026-08-20 17:24:04.624001",0.724589109420776
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Falcone_etal_2019/Falcone_etal_2019_TABLE1.R","SUCCESS","","2026-08-20 17:24:04.62799","2026-08-20 17:24:05.87241",1.24442005157471
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Falcone_etal_2019/Falcone_etal_2019_TABLE2.R","SUCCESS","","2026-08-20 17:24:05.890121","2026-08-20 17:24:07.218497",1.32837605476379
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Finlay_etal_2006/Finlay_etal_2006_Table6.1.R","SUCCESS","","2026-08-20 17:24:07.223397","2026-08-20 17:24:07.803165",0.579767942428589
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Frahm_etal_1982/Frahm_etal_1982_Table2.R","SUCCESS","","2026-08-20 17:24:07.810202","2026-08-20 17:24:08.722507",0.912305116653442
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Frahm_etal_1984/Frahm_etal_1984_Table1.R","SUCCESS","","2026-08-20 17:24:08.726563","2026-08-20 17:24:10.298165",1.57160210609436
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Frahm_etal_1997/Frahm_etal_1997_Table1.R","SUCCESS","","2026-08-20 17:24:10.301248","2026-08-20 17:24:11.122155",0.8209068775177
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Frahm_etal_1998/Frahm_etal_1998_Table1.R","SUCCESS","","2026-08-20 17:24:11.126149","2026-08-20 17:24:11.917504",0.791355133056641
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Frahm_Zilles_1994/Frahm_Zilles_1994_Table1.R","SUCCESS","","2026-08-20 17:24:11.921014","2026-08-20 17:24:12.706582",0.785567998886108
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Fritsches_etal_2005/Fritsches_etal_2005_Fig2.R","SUCCESS","","2026-08-20 17:24:12.709418","2026-08-20 17:24:13.674562",0.965143918991089
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Gabi_etal_2016/Gabi_etal_2016_TableS1.R","SUCCESS","","2026-08-20 17:24:13.680879","2026-08-20 17:24:14.459051",0.77817177772522
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Garwicz_etal_2009/Garwicz_etal_2009_TableS1.R","SUCCESS","","2026-08-20 17:24:14.470541","2026-08-20 17:24:16.029162",1.55862092971802
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Genoud_etal_2018/Genoud_etal_2018_TableS2.R","SUCCESS","","2026-08-20 17:24:16.032798","2026-08-20 17:24:16.902193",0.869395017623901
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Granatosky__2018/Granatosky__2018_TableS1.R","SUCCESS","","2026-08-20 17:24:16.90466","2026-08-20 17:24:17.561526",0.656866073608398
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heffner_Masterton_1975/Heffner_Masterton_1975_TableI.R","SUCCESS","","2026-08-20 17:24:17.565331","2026-08-20 17:24:18.242705",0.677374124526978
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heffner_Masterton_1983/Heffner_Masterton_1983_TableI.R","FAILED","New names:
 • `` -> `...1`
 • `` -> `...2`
@@ -598,87 +624,87 @@ Backtrace:
  24.         └─vctrs:::stop_incompatible(...) at vctrs/R/conditions.R:146:3
  25.           └─vctrs:::stop_vctrs(...) at vctrs/R/conditions.R:95:3
  26.             └─rlang::abort(message, class = c(class, ""vctrs_error""), ..., call = call) at vctrs/R/conditions.R:65:3
-Execution halted","2026-08-20 12:18:13.998017","2026-08-20 12:18:14.885577",0.88755989074707
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heiss_etal_2004/Heiss_etal_2004_TABLE1.R","SUCCESS","","2026-08-20 12:18:14.889691","2026-08-20 12:18:16.057433",1.1677417755127
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heldstab_etal_2016/Heldstab_etal_2016_TableS1.R","SUCCESS","","2026-08-20 12:18:16.062355","2026-08-20 12:18:17.111067",1.04871201515198
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel__2015/HerculanoHouzel__2015_Table1.R","SUCCESS","","2026-08-20 12:18:17.114474","2026-08-20 12:18:18.617358",1.50288391113281
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel__2015/HerculanoHouzel__2015_Table2.R","SUCCESS","","2026-08-20 12:18:18.624238","2026-08-20 12:18:21.978656",3.3544180393219
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel_etal_2013/Herculano-Houzel_etal_2013_Table1-a.R","SUCCESS","","2026-08-20 12:18:21.982839","2026-08-20 12:18:22.793498",0.810658931732178
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel_etal_2013/Herculano-Houzel_etal_2013_Table1-b.R","SUCCESS","","2026-08-20 12:18:22.799009","2026-08-20 12:18:23.447506",0.648496866226196
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel_etal_2015/HerculanoHouzel_etal_2015_Table1.R","SUCCESS","","2026-08-20 12:18:23.451435","2026-08-20 12:18:24.217874",0.766438961029053
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel_etal_2015/HerculanoHouzel_etal_2015_Table2.R","SUCCESS","","2026-08-20 12:18:24.221932","2026-08-20 12:18:25.002558",0.780626058578491
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel_etal_2015/HerculanoHouzel_etal_2015_Table3.R","SUCCESS","","2026-08-20 12:18:25.009184","2026-08-20 12:18:25.830339",0.821155071258545
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel_etal_2015/HerculanoHouzel_etal_2015_Table4.R","SUCCESS","","2026-08-20 12:18:25.832881","2026-08-20 12:18:26.510675",0.677793979644775
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel_etal_2015/HerculanoHouzel_etal_2015_Table5.R","SUCCESS","","2026-08-20 12:18:26.515565","2026-08-20 12:18:27.303706",0.788141012191772
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel_etal_2020/HerculanoHouzel_etal_2020_TABLE1.R","SUCCESS","","2026-08-20 12:18:27.32775","2026-08-20 12:18:29.344697",2.01694703102112
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel_etal_2020/HerculanoHouzel_etal_2020_TABLE2.R","SUCCESS","","2026-08-20 12:18:29.351933","2026-08-20 12:18:31.224505",1.87257194519043
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heuer_etal_2019/Heuer_etal_2019_S1.R","SUCCESS","","2026-08-20 12:18:31.227773","2026-08-20 12:18:31.888459",0.660686016082764
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heuer_etal_2019/Heuer_etal_2019_Table1.R","SUCCESS","","2026-08-20 12:18:31.894869","2026-08-20 12:18:32.67167",0.776800870895386
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heuer_etal_2023/Heuer_etal_2023_Data.R","SUCCESS","","2026-08-20 12:18:32.674486","2026-08-20 12:18:33.283823",0.609337091445923
+Execution halted","2026-08-20 17:24:18.246756","2026-08-20 17:24:19.096551",0.849794864654541
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heiss_etal_2004/Heiss_etal_2004_TABLE1.R","SUCCESS","","2026-08-20 17:24:19.101697","2026-08-20 17:24:20.351531",1.24983406066895
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heldstab_etal_2016/Heldstab_etal_2016_TableS1.R","SUCCESS","","2026-08-20 17:24:20.360233","2026-08-20 17:24:21.198727",0.838493824005127
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel__2015/HerculanoHouzel__2015_Table1.R","SUCCESS","","2026-08-20 17:24:21.202469","2026-08-20 17:24:22.724895",1.52242588996887
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel__2015/HerculanoHouzel__2015_Table2.R","SUCCESS","","2026-08-20 17:24:22.729355","2026-08-20 17:24:25.961158",3.23180294036865
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel_etal_2013/Herculano-Houzel_etal_2013_Table1-a.R","SUCCESS","","2026-08-20 17:24:25.967072","2026-08-20 17:24:26.914294",0.947221994400024
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel_etal_2013/Herculano-Houzel_etal_2013_Table1-b.R","SUCCESS","","2026-08-20 17:24:26.918983","2026-08-20 17:24:27.528034",0.609050989151001
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel_etal_2015/HerculanoHouzel_etal_2015_Table1.R","SUCCESS","","2026-08-20 17:24:27.536944","2026-08-20 17:24:28.402487",0.865543127059937
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel_etal_2015/HerculanoHouzel_etal_2015_Table2.R","SUCCESS","","2026-08-20 17:24:28.419981","2026-08-20 17:24:29.229266",0.809284925460815
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel_etal_2015/HerculanoHouzel_etal_2015_Table3.R","SUCCESS","","2026-08-20 17:24:29.241189","2026-08-20 17:24:30.076789",0.835599899291992
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel_etal_2015/HerculanoHouzel_etal_2015_Table4.R","SUCCESS","","2026-08-20 17:24:30.082307","2026-08-20 17:24:30.908571",0.826263904571533
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel_etal_2015/HerculanoHouzel_etal_2015_Table5.R","SUCCESS","","2026-08-20 17:24:30.917723","2026-08-20 17:24:31.685233",0.767510175704956
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel_etal_2020/HerculanoHouzel_etal_2020_TABLE1.R","SUCCESS","","2026-08-20 17:24:31.6972","2026-08-20 17:24:33.536873",1.83967304229736
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel_etal_2020/HerculanoHouzel_etal_2020_TABLE2.R","SUCCESS","","2026-08-20 17:24:33.551817","2026-08-20 17:24:35.317516",1.7656991481781
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heuer_etal_2019/Heuer_etal_2019_S1.R","SUCCESS","","2026-08-20 17:24:35.322881","2026-08-20 17:24:35.920777",0.597896099090576
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heuer_etal_2019/Heuer_etal_2019_Table1.R","SUCCESS","","2026-08-20 17:24:35.926322","2026-08-20 17:24:36.537379",0.611057043075562
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heuer_etal_2023/Heuer_etal_2023_Data.R","SUCCESS","","2026-08-20 17:24:36.547053","2026-08-20 17:24:37.119151",0.572098016738892
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heuer_etal_2023/source_data/load_data.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
 Calls: read.csv -> read.table -> file
 In addition: Warning message:
 In file(file, ""rt"") :
   cannot open file '../data/derived/csv/01_cb_area_length.csv': No such file or directory
-Execution halted","2026-08-20 12:18:33.287625","2026-08-20 12:18:33.657406",0.369781017303467
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hutsler_etal_2005/Hutsler_etal_2005_Figure3.R","SUCCESS","","2026-08-20 12:18:33.662121","2026-08-20 12:18:34.283597",0.6214759349823
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hutsler_etal_2005/Hutsler_etal_2005_Figure6.R","SUCCESS","","2026-08-20 12:18:34.286163","2026-08-20 12:18:34.866267",0.580103874206543
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hutsler_etal_2005/Hutsler_etal_2005_ReportedValues.R","SUCCESS","","2026-08-20 12:18:34.876064","2026-08-20 12:18:35.442983",0.566918849945068
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hutsler_etal_2005/Hutsler_etal_2005_Table1.R","SUCCESS","","2026-08-20 12:18:35.445656","2026-08-20 12:18:36.012523",0.566866874694824
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Iwaniuk_etal_1999/Iwaniuk_etal_1999_References.R","SUCCESS","","2026-08-20 12:18:36.016264","2026-08-20 12:18:36.625481",0.609216928482056
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Iwaniuk_etal_1999/Iwaniuk_etal_1999_Table1.R","SUCCESS","","2026-08-20 12:18:36.628139","2026-08-20 12:18:37.324552",0.696413040161133
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Iwaniuk_etal_2001/Iwaniuk_etal_2001_Table1.R","SUCCESS","","2026-08-20 12:18:37.327164","2026-08-20 12:18:37.920041",0.592877149581909
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Iwaniuk_etal_2001/Iwaniuk_etal_2001_Table2.R","SUCCESS","","2026-08-20 12:18:37.925205","2026-08-20 12:18:38.599466",0.674261093139648
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Iwaniuk_etal_2001/Iwaniuk_etal_2001_Table3.R","SUCCESS","","2026-08-20 12:18:38.602177","2026-08-20 12:18:39.100778",0.498601198196411
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Iwaniuk_etal_2001/Iwaniuk_etal_2001_Table4.R","SUCCESS","","2026-08-20 12:18:39.103287","2026-08-20 12:18:39.643326",0.5400390625
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jacobs_etal_2015/Jacobs_etal_2015_Table1.R","SUCCESS","","2026-08-20 12:18:39.649128","2026-08-20 12:18:40.244329",0.595201015472412
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jacobs_etal_2016/Jacobs_etal_2016_Table1.R","SUCCESS","","2026-08-20 12:18:40.249492","2026-08-20 12:18:40.791106",0.541614055633545
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jacobs_etal_2018/Jacobs_etal_2018_Table3.R","SUCCESS","","2026-08-20 12:18:40.793655","2026-08-20 12:18:41.600097",0.806442022323608
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jacobs_etal_2018/Jacobs_etal_2018_Table5.R","SUCCESS","","2026-08-20 12:18:41.604552","2026-08-20 12:18:42.632018",1.02746605873108
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/JardimMesseder_etal_2017/JardimMesseder_etal_2017_Table1.R","SUCCESS","","2026-08-20 12:18:42.634641","2026-08-20 12:18:43.484185",0.849544048309326
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Johansen_etal_2024/Johansen_etal_2024_Table2.R","SUCCESS","","2026-08-20 12:18:43.486991","2026-08-20 12:18:44.085607",0.598616123199463
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Johnson_etal_2016/Johnson_etal_2016_Table1.R","SUCCESS","","2026-08-20 12:18:44.089918","2026-08-20 12:18:44.675871",0.585952997207642
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Karbowski__2007/Karbowski__2007_TablesS1-S23.R","SUCCESS","","2026-08-20 12:18:44.678979","2026-08-20 12:18:47.542467",2.86348819732666
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Karl_etal_2024/Karl_etal_2024_TABLE1.R","SUCCESS","","2026-08-20 12:18:47.546961","2026-08-20 12:18:50.333131",2.78617000579834
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kaufman__2004/Kaufman__2004_TableA1.R","SUCCESS","","2026-08-20 12:18:50.335664","2026-08-20 12:18:51.312568",0.976903915405273
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kaufman__2004/Kaufman__2004_TableA10.R","SUCCESS","","2026-08-20 12:18:51.318494","2026-08-20 12:18:52.109802",0.791307926177979
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kaufman__2004/Kaufman__2004_TableA11.R","SUCCESS","","2026-08-20 12:18:52.116059","2026-08-20 12:18:52.814236",0.698176860809326
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kaufman__2004/Kaufman__2004_TableA12.R","SUCCESS","","2026-08-20 12:18:52.852571","2026-08-20 12:18:53.664893",0.812321901321411
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kaufman__2004/Kaufman__2004_TableA13.R","SUCCESS","","2026-08-20 12:18:53.667459","2026-08-20 12:18:54.463208",0.795748949050903
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kaufman__2004/Kaufman__2004_TableA14.R","SUCCESS","","2026-08-20 12:18:54.467763","2026-08-20 12:18:55.354412",0.886649131774902
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kaufman__2004/Kaufman__2004_TableA15.R","SUCCESS","","2026-08-20 12:18:55.368268","2026-08-20 12:18:56.094723",0.726454973220825
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kaufman__2004/Kaufman__2004_TableA2.R","SUCCESS","","2026-08-20 12:18:56.127743","2026-08-20 12:18:56.808179",0.6804358959198
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kaufman__2004/Kaufman__2004_TableA3.R","SUCCESS","","2026-08-20 12:18:56.811374","2026-08-20 12:18:57.511099",0.699725151062012
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kaufman__2004/Kaufman__2004_TableA4.R","SUCCESS","","2026-08-20 12:18:57.513609","2026-08-20 12:18:58.225364",0.711755037307739
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kaufman__2004/Kaufman__2004_TableA5.R","SUCCESS","","2026-08-20 12:18:58.22883","2026-08-20 12:18:58.904944",0.676113843917847
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kaufman__2004/Kaufman__2004_TableA6.R","SUCCESS","","2026-08-20 12:18:58.90751","2026-08-20 12:18:59.574086",0.666575908660889
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kaufman__2004/Kaufman__2004_TableA7.R","SUCCESS","","2026-08-20 12:18:59.576909","2026-08-20 12:19:01.002518",1.42560887336731
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kaufman__2004/Kaufman__2004_TableA8.R","SUCCESS","","2026-08-20 12:19:01.005026","2026-08-20 12:19:01.884922",0.879895925521851
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kaufman__2004/Kaufman__2004_TableA9.R","SUCCESS","","2026-08-20 12:19:01.889084","2026-08-20 12:19:02.518228",0.629143953323364
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kazu_etal_2014/Kazu_etal_2014_Table1.R","SUCCESS","","2026-08-20 12:19:02.522144","2026-08-20 12:19:03.155342",0.633198022842407
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kazu_etal_2015/Kazu_etal_2015_TABLE1.R","SUCCESS","","2026-08-20 12:19:03.169526","2026-08-20 12:19:03.827126",0.657599925994873
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kochiyama_etal_2018/Kochiyama_etal_2018_Figure3A.R","SUCCESS","","2026-08-20 12:19:03.82971","2026-08-20 12:19:04.153078",0.323368072509766
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kochiyama_etal_2018/Kochiyama_etal_2018_Figure3B.R","SUCCESS","","2026-08-20 12:19:04.159593","2026-08-20 12:19:04.407772",0.248178958892822
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kochiyama_etal_2018/Kochiyama_etal_2018_Figure3legend.R","SUCCESS","","2026-08-20 12:19:04.411258","2026-08-20 12:19:04.928804",0.517545938491821
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kochiyama_etal_2018/Kochiyama_etal_2018_FossilSpecimensText.R","SUCCESS","","2026-08-20 12:19:04.934106","2026-08-20 12:19:05.607989",0.673882961273193
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kochiyama_etal_2018/Kochiyama_etal_2018_reconcile_relative_volumes.R","SUCCESS","","2026-08-20 12:19:05.614702","2026-08-20 12:19:05.991466",0.376764059066772
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Krubitzer_Kaas_1990/Krubitzer_Kaas_1990_Table1.R","SUCCESS","","2026-08-20 12:19:05.994152","2026-08-20 12:19:06.568911",0.574759006500244
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kverkova_etal_2018/Kverkova_etal_2018_Table1.R","SUCCESS","","2026-08-20 12:19:06.577737","2026-08-20 12:19:07.679998",1.10226082801819
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kverkova_etal_2018/Kverkova_etal_2018_TableS1.R","SUCCESS","","2026-08-20 12:19:07.682701","2026-08-20 12:19:08.769891",1.08718991279602
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kverkova_etal_2018/Kverkova_etal_2018_TableS5.R","SUCCESS","","2026-08-20 12:19:08.773562","2026-08-20 12:19:12.22886",3.45529794692993
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Lewitus_etal_2013/Lewitus_etal_2013_TableS2partial.R","SUCCESS","","2026-08-20 12:19:12.232146","2026-08-20 12:19:12.757789",0.525642871856689
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Lewitus_etal_2014/Lewitus_etal_2014_TableS1.R","SUCCESS","","2026-08-20 12:19:12.761535","2026-08-20 12:19:13.434621",0.673086166381836
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Lewitus_etal_2014/Lewitus_etal_2014_TableS8.R","SUCCESS","","2026-08-20 12:19:13.437743","2026-08-20 12:19:13.956316",0.518573045730591
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Liu_etal_2016/Liu_etal_2016_TableS1.R","SUCCESS","","2026-08-20 12:19:13.960316","2026-08-20 12:19:14.600147",0.639831066131592
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Lyamin_etal_2008/Lyamin_etal_2008_Table1.R","SUCCESS","","2026-08-20 12:19:14.602531","2026-08-20 12:19:15.524205",0.921674013137817
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Lyamin_etal_2008/Lyamin_etal_2008_Table2.R","SUCCESS","","2026-08-20 12:19:15.527202","2026-08-20 12:19:16.508674",0.981472015380859
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/MacLarnon__1996/MacLarnon__1996_Table1.R","SUCCESS","","2026-08-20 12:19:16.516237","2026-08-20 12:19:17.137937",0.621700048446655
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/MacLeod__2000/MacLeod__2000_APPENDIXI.R","SUCCESS","","2026-08-20 12:19:17.146727","2026-08-20 12:19:18.616893",1.47016596794128
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/MacLeod_etal_2003/MacLeod_etal_2003_Table1.R","SUCCESS","","2026-08-20 12:19:18.619831","2026-08-20 12:19:19.165991",0.546159982681274
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/MacLeod_etal_2003/MacLeod_etal_2003_Table2.R","SUCCESS","","2026-08-20 12:19:19.170533","2026-08-20 12:19:19.700255",0.529721975326538
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Manger_2006/Manger_2006_Table1.R","SUCCESS","","2026-08-20 12:19:19.707542","2026-08-20 12:19:20.630574",0.92303204536438
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/ManyPrimates__2022/ManyPrimates__2022_speciespredictors.R","SUCCESS","","2026-08-20 12:19:20.638301","2026-08-20 12:19:21.230522",0.592221021652222
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Matano__1986/Matano__1986_TableI.R","SUCCESS","","2026-08-20 12:19:21.234279","2026-08-20 12:19:21.926203",0.691924095153809
+Execution halted","2026-08-20 17:24:37.122913","2026-08-20 17:24:37.453918",0.331005096435547
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hutsler_etal_2005/Hutsler_etal_2005_Figure3.R","SUCCESS","","2026-08-20 17:24:37.456174","2026-08-20 17:24:37.984911",0.52873706817627
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hutsler_etal_2005/Hutsler_etal_2005_Figure6.R","SUCCESS","","2026-08-20 17:24:37.98941","2026-08-20 17:24:38.659553",0.670143127441406
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hutsler_etal_2005/Hutsler_etal_2005_ReportedValues.R","SUCCESS","","2026-08-20 17:24:38.663015","2026-08-20 17:24:39.304989",0.641974210739136
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hutsler_etal_2005/Hutsler_etal_2005_Table1.R","SUCCESS","","2026-08-20 17:24:39.324231","2026-08-20 17:24:39.923722",0.599491119384766
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Iwaniuk_etal_1999/Iwaniuk_etal_1999_References.R","SUCCESS","","2026-08-20 17:24:39.930039","2026-08-20 17:24:40.672894",0.742855072021484
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Iwaniuk_etal_1999/Iwaniuk_etal_1999_Table1.R","SUCCESS","","2026-08-20 17:24:40.678229","2026-08-20 17:24:41.500579",0.822350025177002
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Iwaniuk_etal_2001/Iwaniuk_etal_2001_Table1.R","SUCCESS","","2026-08-20 17:24:41.50879","2026-08-20 17:24:42.202231",0.693440914154053
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Iwaniuk_etal_2001/Iwaniuk_etal_2001_Table2.R","SUCCESS","","2026-08-20 17:24:42.219742","2026-08-20 17:24:43.014183",0.794440984725952
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Iwaniuk_etal_2001/Iwaniuk_etal_2001_Table3.R","SUCCESS","","2026-08-20 17:24:43.017895","2026-08-20 17:24:43.669068",0.651173114776611
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Iwaniuk_etal_2001/Iwaniuk_etal_2001_Table4.R","SUCCESS","","2026-08-20 17:24:43.677049","2026-08-20 17:24:44.287592",0.610543012619019
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jacobs_etal_2015/Jacobs_etal_2015_Table1.R","SUCCESS","","2026-08-20 17:24:44.290868","2026-08-20 17:24:44.915852",0.6249840259552
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jacobs_etal_2016/Jacobs_etal_2016_Table1.R","SUCCESS","","2026-08-20 17:24:44.919765","2026-08-20 17:24:45.518146",0.598381042480469
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jacobs_etal_2018/Jacobs_etal_2018_Table3.R","SUCCESS","","2026-08-20 17:24:45.521859","2026-08-20 17:24:46.348131",0.826272010803223
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jacobs_etal_2018/Jacobs_etal_2018_Table5.R","SUCCESS","","2026-08-20 17:24:46.352988","2026-08-20 17:24:47.104742",0.75175404548645
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/JardimMesseder_etal_2017/JardimMesseder_etal_2017_Table1.R","SUCCESS","","2026-08-20 17:24:47.107702","2026-08-20 17:24:47.867489",0.759787082672119
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Johansen_etal_2024/Johansen_etal_2024_Table2.R","SUCCESS","","2026-08-20 17:24:47.871771","2026-08-20 17:24:48.489134",0.617362976074219
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Johnson_etal_2016/Johnson_etal_2016_Table1.R","SUCCESS","","2026-08-20 17:24:48.510453","2026-08-20 17:24:49.192648",0.682194948196411
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Karbowski__2007/Karbowski__2007_TablesS1-S23.R","SUCCESS","","2026-08-20 17:24:49.205761","2026-08-20 17:24:51.707275",2.5015139579773
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Karl_etal_2024/Karl_etal_2024_TABLE1.R","SUCCESS","","2026-08-20 17:24:51.709818","2026-08-20 17:24:54.195446",2.48562812805176
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kaufman__2004/Kaufman__2004_TableA1.R","SUCCESS","","2026-08-20 17:24:54.201006","2026-08-20 17:24:55.065141",0.864135026931763
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kaufman__2004/Kaufman__2004_TableA10.R","SUCCESS","","2026-08-20 17:24:55.06817","2026-08-20 17:24:55.722187",0.654016971588135
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kaufman__2004/Kaufman__2004_TableA11.R","SUCCESS","","2026-08-20 17:24:55.731408","2026-08-20 17:24:56.410567",0.679158926010132
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kaufman__2004/Kaufman__2004_TableA12.R","SUCCESS","","2026-08-20 17:24:56.415721","2026-08-20 17:24:57.065799",0.650078058242798
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kaufman__2004/Kaufman__2004_TableA13.R","SUCCESS","","2026-08-20 17:24:57.079036","2026-08-20 17:24:57.75795",0.678914070129395
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kaufman__2004/Kaufman__2004_TableA14.R","SUCCESS","","2026-08-20 17:24:57.76321","2026-08-20 17:24:58.497793",0.734582901000977
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kaufman__2004/Kaufman__2004_TableA15.R","SUCCESS","","2026-08-20 17:24:58.502549","2026-08-20 17:24:59.131817",0.629268169403076
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kaufman__2004/Kaufman__2004_TableA2.R","SUCCESS","","2026-08-20 17:24:59.13694","2026-08-20 17:24:59.772097",0.635157108306885
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kaufman__2004/Kaufman__2004_TableA3.R","SUCCESS","","2026-08-20 17:24:59.775084","2026-08-20 17:25:00.494663",0.719578981399536
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kaufman__2004/Kaufman__2004_TableA4.R","SUCCESS","","2026-08-20 17:25:00.498885","2026-08-20 17:25:01.305455",0.806570053100586
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kaufman__2004/Kaufman__2004_TableA5.R","SUCCESS","","2026-08-20 17:25:01.311121","2026-08-20 17:25:01.961809",0.65068793296814
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kaufman__2004/Kaufman__2004_TableA6.R","SUCCESS","","2026-08-20 17:25:01.971242","2026-08-20 17:25:02.687972",0.716730117797852
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kaufman__2004/Kaufman__2004_TableA7.R","SUCCESS","","2026-08-20 17:25:02.692813","2026-08-20 17:25:03.29445",0.601637125015259
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kaufman__2004/Kaufman__2004_TableA8.R","SUCCESS","","2026-08-20 17:25:03.304798","2026-08-20 17:25:03.928362",0.623564004898071
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kaufman__2004/Kaufman__2004_TableA9.R","SUCCESS","","2026-08-20 17:25:03.93237","2026-08-20 17:25:04.645495",0.713124990463257
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kazu_etal_2014/Kazu_etal_2014_Table1.R","SUCCESS","","2026-08-20 17:25:04.649737","2026-08-20 17:25:05.349057",0.699320077896118
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kazu_etal_2015/Kazu_etal_2015_TABLE1.R","SUCCESS","","2026-08-20 17:25:05.351896","2026-08-20 17:25:06.104871",0.752974987030029
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kochiyama_etal_2018/Kochiyama_etal_2018_Figure3A.R","SUCCESS","","2026-08-20 17:25:06.112063","2026-08-20 17:25:06.478652",0.366589069366455
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kochiyama_etal_2018/Kochiyama_etal_2018_Figure3B.R","SUCCESS","","2026-08-20 17:25:06.482677","2026-08-20 17:25:06.869012",0.386335134506226
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kochiyama_etal_2018/Kochiyama_etal_2018_Figure3legend.R","SUCCESS","","2026-08-20 17:25:06.875218","2026-08-20 17:25:07.607193",0.731975078582764
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kochiyama_etal_2018/Kochiyama_etal_2018_FossilSpecimensText.R","SUCCESS","","2026-08-20 17:25:07.617834","2026-08-20 17:25:08.221087",0.60325288772583
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kochiyama_etal_2018/Kochiyama_etal_2018_reconcile_relative_volumes.R","SUCCESS","","2026-08-20 17:25:08.226216","2026-08-20 17:25:08.621238",0.395021915435791
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Krubitzer_Kaas_1990/Krubitzer_Kaas_1990_Table1.R","SUCCESS","","2026-08-20 17:25:08.62505","2026-08-20 17:25:09.196633",0.571583032608032
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kverkova_etal_2018/Kverkova_etal_2018_Table1.R","SUCCESS","","2026-08-20 17:25:09.201255","2026-08-20 17:25:10.361108",1.15985298156738
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kverkova_etal_2018/Kverkova_etal_2018_TableS1.R","SUCCESS","","2026-08-20 17:25:10.363988","2026-08-20 17:25:11.484972",1.12098407745361
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kverkova_etal_2018/Kverkova_etal_2018_TableS5.R","SUCCESS","","2026-08-20 17:25:11.489832","2026-08-20 17:25:13.093151",1.60331916809082
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Lewitus_etal_2013/Lewitus_etal_2013_TableS2partial.R","SUCCESS","","2026-08-20 17:25:13.099483","2026-08-20 17:25:13.729645",0.630162000656128
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Lewitus_etal_2014/Lewitus_etal_2014_TableS1.R","SUCCESS","","2026-08-20 17:25:13.733838","2026-08-20 17:25:14.409112",0.675273895263672
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Lewitus_etal_2014/Lewitus_etal_2014_TableS8.R","SUCCESS","","2026-08-20 17:25:14.417481","2026-08-20 17:25:14.95139",0.53390908241272
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Liu_etal_2016/Liu_etal_2016_TableS1.R","SUCCESS","","2026-08-20 17:25:14.964028","2026-08-20 17:25:15.685191",0.721163034439087
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Lyamin_etal_2008/Lyamin_etal_2008_Table1.R","SUCCESS","","2026-08-20 17:25:15.694293","2026-08-20 17:25:16.721396",1.02710294723511
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Lyamin_etal_2008/Lyamin_etal_2008_Table2.R","SUCCESS","","2026-08-20 17:25:16.724623","2026-08-20 17:25:17.735846",1.01122307777405
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/MacLarnon__1996/MacLarnon__1996_Table1.R","SUCCESS","","2026-08-20 17:25:17.740077","2026-08-20 17:25:18.49853",0.758452892303467
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/MacLeod__2000/MacLeod__2000_APPENDIXI.R","SUCCESS","","2026-08-20 17:25:18.502444","2026-08-20 17:25:19.233473",0.731029033660889
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/MacLeod_etal_2003/MacLeod_etal_2003_Table1.R","SUCCESS","","2026-08-20 17:25:19.238341","2026-08-20 17:25:19.817318",0.57897686958313
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/MacLeod_etal_2003/MacLeod_etal_2003_Table2.R","SUCCESS","","2026-08-20 17:25:19.820502","2026-08-20 17:25:20.450101",0.62959885597229
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Manger_2006/Manger_2006_Table1.R","SUCCESS","","2026-08-20 17:25:20.454805","2026-08-20 17:25:21.535714",1.08090901374817
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/ManyPrimates__2022/ManyPrimates__2022_speciespredictors.R","SUCCESS","","2026-08-20 17:25:21.543284","2026-08-20 17:25:22.277932",0.734647989273071
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Matano__1986/Matano__1986_TableI.R","SUCCESS","","2026-08-20 17:25:22.287843","2026-08-20 17:25:23.135656",0.847813129425049
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Matano__1992/Matano__1992_Tables1to4.R","FAILED","Error:
 ! 'Matano__1992_Tables1to4_snapshot.csv' does not exist in current
   working directory: '/Users/crossmodal/Desktop'.
@@ -691,96 +717,96 @@ Backtrace:
  5.   └─vroom:::check_path(path)
  6.     └─cli::cli_abort(msg, call = call)
  7.       └─rlang::abort(...)
-Execution halted","2026-08-20 12:19:21.931798","2026-08-20 12:19:22.591806",0.660007953643799
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Matano__2001/Matano__2001_TABLE2.R","SUCCESS","","2026-08-20 12:19:22.594943","2026-08-20 12:19:23.325321",0.730377912521362
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Matano_etal_1985_a/Matano_etal_1985_a_Table1.R","SUCCESS","","2026-08-20 12:19:23.331637","2026-08-20 12:19:24.030872",0.699235200881958
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Matano_etal_1985_b/Matano_etal_1985_b_Table1.R","SUCCESS","","2026-08-20 12:19:24.034647","2026-08-20 12:19:24.69964",0.664993047714233
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Mota_etal_2015/Mota_etal_2015_TableS1.R","SUCCESS","","2026-08-20 12:19:24.702245","2026-08-20 12:19:25.510039",0.807794094085693
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Mota_etal_2019/Mota_etal_2019_SupplementaryTableS1.R","SUCCESS","","2026-08-20 12:19:25.513346","2026-08-20 12:19:26.229798",0.716452121734619
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Navarrete_etal_2016/Navarrete_etal_2016_Data.R","SUCCESS","","2026-08-20 12:19:26.238587","2026-08-20 12:19:26.747959",0.509371995925903
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Nguyen_etal_2019/Nguyen_etal_2019_Table2_extract_snapshot.R","SUCCESS","","2026-08-20 12:19:26.765762","2026-08-20 12:19:27.08522",0.3194580078125
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Nguyen_etal_2019/Nguyen_etal_2019_Table2.R","SUCCESS","","2026-08-20 12:19:27.089475","2026-08-20 12:19:27.613195",0.523720026016235
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Nudo_etal_1995/Nudo_etal_1995_TABLE1.R","SUCCESS","","2026-08-20 12:19:27.616237","2026-08-20 12:19:28.254846",0.638609170913696
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Nudo_etal_1995/Nudo_etal_1995_TABLE2.R","SUCCESS","","2026-08-20 12:19:28.257557","2026-08-20 12:19:29.01087",0.753313064575195
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Nudo_etal_1995/Nudo_etal_1995_TABLE3.R","SUCCESS","","2026-08-20 12:19:29.013413","2026-08-20 12:19:29.504386",0.490972995758057
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Nudo_etal_1995/Nudo_etal_1995_TABLE4.R","SUCCESS","","2026-08-20 12:19:29.507512","2026-08-20 12:19:30.056028",0.548515796661377
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Nudo_etal_1995/Nudo_etal_1995_TABLE5.R","SUCCESS","","2026-08-20 12:19:30.059852","2026-08-20 12:19:30.812408",0.752556085586548
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Olkowicz_etal_2016/Olkowicz_etal_2016_DatasetS1.R","SUCCESS","","2026-08-20 12:19:30.816637","2026-08-20 12:19:31.448861",0.632223844528198
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Peruffo_etal_2019/Peruffo_etal_2019_Table2.R","SUCCESS","","2026-08-20 12:19:31.453926","2026-08-20 12:19:32.077455",0.623528957366943
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Powell_etal_2017/Powell_etal_2017_Dataset1.R","SUCCESS","","2026-08-20 12:19:32.079979","2026-08-20 12:19:32.610296",0.530317068099976
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Reader_etal_2011/Reader_etal_2011_Data.R","SUCCESS","","2026-08-20 12:19:32.612876","2026-08-20 12:19:33.167028",0.554152011871338
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Reep_etal_2007/Reep_etal_2007_Table1.R","SUCCESS","","2026-08-20 12:19:33.170885","2026-08-20 12:19:34.031676",0.860790967941284
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Ribeiro_etal_2013/Ribeiro_etal_2013_Table1.R","SUCCESS","","2026-08-20 12:19:34.036159","2026-08-20 12:19:34.753178",0.717018842697144
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Rilling_Insel_1998/Rilling_Insel_1998_Table1.R","SUCCESS","","2026-08-20 12:19:34.758097","2026-08-20 12:19:35.477054",0.718957185745239
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Rilling_Insel_1999/Rilling_Insel_1999_Table1.R","SUCCESS","","2026-08-20 12:19:35.483634","2026-08-20 12:19:36.22958",0.745945930480957
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Ruf_Geiser_2015/Ruf_Geiser_2015_Table1.R","SUCCESS","","2026-08-20 12:19:36.232131","2026-08-20 12:19:37.167608",0.935477018356323
+Execution halted","2026-08-20 17:25:23.142333","2026-08-20 17:25:23.826414",0.684081077575684
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Matano__2001/Matano__2001_TABLE2.R","SUCCESS","","2026-08-20 17:25:23.830388","2026-08-20 17:25:24.645178",0.81479001045227
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Matano_etal_1985_a/Matano_etal_1985_a_Table1.R","SUCCESS","","2026-08-20 17:25:24.663148","2026-08-20 17:25:25.427366",0.764218091964722
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Matano_etal_1985_b/Matano_etal_1985_b_Table1.R","SUCCESS","","2026-08-20 17:25:25.430811","2026-08-20 17:25:26.240812",0.810001134872437
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Mota_etal_2015/Mota_etal_2015_TableS1.R","SUCCESS","","2026-08-20 17:25:26.244722","2026-08-20 17:25:27.183278",0.93855619430542
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Mota_etal_2019/Mota_etal_2019_SupplementaryTableS1.R","SUCCESS","","2026-08-20 17:25:27.18638","2026-08-20 17:25:27.939914",0.753534078598022
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Navarrete_etal_2016/Navarrete_etal_2016_Data.R","SUCCESS","","2026-08-20 17:25:27.942803","2026-08-20 17:25:28.590826",0.648023128509521
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Nguyen_etal_2019/Nguyen_etal_2019_Table2_extract_snapshot.R","SUCCESS","","2026-08-20 17:25:28.59928","2026-08-20 17:25:28.899328",0.300047874450684
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Nguyen_etal_2019/Nguyen_etal_2019_Table2.R","SUCCESS","","2026-08-20 17:25:28.902027","2026-08-20 17:25:29.543397",0.641370058059692
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Nudo_etal_1995/Nudo_etal_1995_TABLE1.R","SUCCESS","","2026-08-20 17:25:29.554431","2026-08-20 17:25:30.229659",0.675228118896484
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Nudo_etal_1995/Nudo_etal_1995_TABLE2.R","SUCCESS","","2026-08-20 17:25:30.233207","2026-08-20 17:25:31.042668",0.809461116790771
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Nudo_etal_1995/Nudo_etal_1995_TABLE3.R","SUCCESS","","2026-08-20 17:25:31.048883","2026-08-20 17:25:31.716753",0.667870044708252
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Nudo_etal_1995/Nudo_etal_1995_TABLE4.R","SUCCESS","","2026-08-20 17:25:31.729904","2026-08-20 17:25:32.374143",0.644238948822021
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Nudo_etal_1995/Nudo_etal_1995_TABLE5.R","SUCCESS","","2026-08-20 17:25:32.376744","2026-08-20 17:25:33.082622",0.705878019332886
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Olkowicz_etal_2016/Olkowicz_etal_2016_DatasetS1.R","SUCCESS","","2026-08-20 17:25:33.087049","2026-08-20 17:25:33.802541",0.715492010116577
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Peruffo_etal_2019/Peruffo_etal_2019_Table2.R","SUCCESS","","2026-08-20 17:25:33.806642","2026-08-20 17:25:34.438295",0.63165283203125
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Powell_etal_2017/Powell_etal_2017_Dataset1.R","SUCCESS","","2026-08-20 17:25:34.441529","2026-08-20 17:25:35.093425",0.651895999908447
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Reader_etal_2011/Reader_etal_2011_Data.R","SUCCESS","","2026-08-20 17:25:35.097636","2026-08-20 17:25:35.687057",0.589421033859253
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Reep_etal_2007/Reep_etal_2007_Table1.R","SUCCESS","","2026-08-20 17:25:35.693276","2026-08-20 17:25:36.581318",0.888041973114014
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Ribeiro_etal_2013/Ribeiro_etal_2013_Table1.R","SUCCESS","","2026-08-20 17:25:36.588424","2026-08-20 17:25:37.226681",0.638257026672363
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Rilling_Insel_1998/Rilling_Insel_1998_Table1.R","SUCCESS","","2026-08-20 17:25:37.230799","2026-08-20 17:25:38.004725",0.773926019668579
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Rilling_Insel_1999/Rilling_Insel_1999_Table1.R","SUCCESS","","2026-08-20 17:25:38.01506","2026-08-20 17:25:38.849746",0.834686040878296
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Ruf_Geiser_2015/Ruf_Geiser_2015_Table1.R","SUCCESS","","2026-08-20 17:25:38.855365","2026-08-20 17:25:39.873257",1.0178918838501
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/run_all_scripts_v2.R","SKIPPED","skipped: this runner",NA,NA,NA
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Schleifenbaum__1973/Schleifenbaum__1973_Tables1-2_extract_snapshot.R","SUCCESS","","2026-08-20 12:19:37.1706","2026-08-20 12:19:37.472977",0.302376985549927
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Schleifenbaum__1973/Schleifenbaum__1973_Tables1-2.R","SUCCESS","","2026-08-20 12:19:37.476521","2026-08-20 12:19:38.221708",0.745187044143677
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Schniter_Penaherrera-Aguirre_2026/Schniter_Penaherrera-Aguirre_2026_data.R","SUCCESS","","2026-08-20 12:19:38.224411","2026-08-20 12:19:39.087678",0.863266944885254
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Semendeferi_Damasio_2000/Semendeferi_Damasio_2000_Table2.R","SUCCESS","","2026-08-20 12:19:39.096965","2026-08-20 12:19:39.671932",0.574966907501221
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Semendeferi_etal_1998/Semendeferi_etal_1998_TABLE2.R","SUCCESS","","2026-08-20 12:19:39.675404","2026-08-20 12:19:40.150918",0.475513935089111
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Semendeferi_etal_2001/Semendeferi_etal_2001_TABLE2.R","SUCCESS","","2026-08-20 12:19:40.155027","2026-08-20 12:19:40.803217",0.648190021514893
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Semendeferi_etal_2002/Semendeferi_etal_2002_Table1.R","SUCCESS","","2026-08-20 12:19:40.812303","2026-08-20 12:19:41.445932",0.633628845214844
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Seymour_etal_2015/Seymour_etal_2015_TableS1.R","SUCCESS","","2026-08-20 12:19:41.44935","2026-08-20 12:19:42.367116",0.917765855789185
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Seymour_etal_2017/Seymour_etal_2017_TableS1_snapshot_extract.R","SUCCESS","","2026-08-20 12:19:42.372419","2026-08-20 12:19:43.635562",1.26314282417297
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Seymour_etal_2017/Seymour_etal_2017_TableS1.R","SUCCESS","","2026-08-20 12:19:43.639189","2026-08-20 12:19:44.441693",0.802504062652588
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Seymour_etal_2019/Seymour_etal_2019_rspb20192208si002.R","SUCCESS","","2026-08-20 12:19:44.445062","2026-08-20 12:19:45.193626",0.748564004898071
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Sherwood_etal_2004_I/Sherwood_etal_2004_I.R","SUCCESS","","2026-08-20 12:19:45.197485","2026-08-20 12:19:46.561641",1.36415600776672
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Sherwood_etal_2004/Sherwood_etal_2004_TABLEI.R","SUCCESS","","2026-08-20 12:19:46.5645","2026-08-20 12:19:47.687469",1.12296891212463
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Sherwood_etal_2004/Sherwood_etal_2004_unpublishedviaDeCasien.R","SUCCESS","","2026-08-20 12:19:47.690692","2026-08-20 12:19:48.411108",0.720416069030762
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Sherwood_etal_2005/Sherwood_etal_2005_Table1.R","SUCCESS","","2026-08-20 12:19:48.419603","2026-08-20 12:19:49.46426",1.04465699195862
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Smaers_etal_2010/Smaers_etal_2010_Table1.R","SUCCESS","","2026-08-20 12:19:49.466956","2026-08-20 12:19:50.104063",0.637107133865356
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Smaers_etal_2011/Smaers_etal_2011_SupplementaryTable_extract.R","SUCCESS","","2026-08-20 12:19:50.106845","2026-08-20 12:19:50.799291",0.692445993423462
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Smaers_etal_2011/Smaers_etal_2011_SupplementaryTable1.R","SUCCESS","","2026-08-20 12:19:50.802462","2026-08-20 12:19:51.244332",0.441869974136353
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Smaers_etal_2011/Smaers_etal_2011_SupplementaryTable2.R","SUCCESS","","2026-08-20 12:19:51.246825","2026-08-20 12:19:51.673971",0.427145957946777
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Smaers_etal_2017/_superseded_single_table/Smaers_etal_2017_TableS1.R","SUCCESS","","2026-08-20 12:19:51.678588","2026-08-20 12:19:52.010927",0.33233904838562
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Smaers_etal_2017/Smaers_etal_2017_TableS1part1.R","SUCCESS","","2026-08-20 12:19:52.01478","2026-08-20 12:19:52.717074",0.702293872833252
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Smaers_etal_2017/Smaers_etal_2017_TableS1part2.R","SUCCESS","","2026-08-20 12:19:52.719692","2026-08-20 12:19:53.45705",0.737358093261719
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Smaers_etal_2018/Smaers_etal_2018_Figure2-data1.R","SUCCESS","","2026-08-20 12:19:53.46072","2026-08-20 12:19:54.112503",0.651782989501953
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1970/Stephan_etal_1970_crosstable_QA.R","SUCCESS","","2026-08-20 12:19:54.116356","2026-08-20 12:19:54.829291",0.712935209274292
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1970/Stephan_etal_1970_Table1.R","SUCCESS","","2026-08-20 12:19:54.832732","2026-08-20 12:19:55.921398",1.08866596221924
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1970/Stephan_etal_1970_Table2.R","SUCCESS","","2026-08-20 12:19:55.925223","2026-08-20 12:19:56.988751",1.06352782249451
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1970/Stephan_etal_1970_Table3.R","SUCCESS","","2026-08-20 12:19:56.994128","2026-08-20 12:19:57.988443",0.994314908981323
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1970/Stephan_etal_1970_Table4.R","SUCCESS","","2026-08-20 12:19:57.996004","2026-08-20 12:19:58.922814",0.926809787750244
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1970/Stephan_etal_1970_Table5.R","SUCCESS","","2026-08-20 12:19:58.926407","2026-08-20 12:19:59.88765",0.961242914199829
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1970/Stephan_etal_1970_Table6.R","SUCCESS","","2026-08-20 12:19:59.892174","2026-08-20 12:20:00.990929",1.0987548828125
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1970/Stephan_etal_1970.R","SUCCESS","","2026-08-20 12:20:00.999428","2026-08-20 12:20:01.908063",0.908634901046753
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1981/per_table/Stephan_etal_1981_crosstable_QA.R","SUCCESS","","2026-08-20 12:20:01.911155","2026-08-20 12:20:02.619743",0.708588123321533
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1981/per_table/Stephan_etal_1981_TableI.R","SUCCESS","","2026-08-20 12:20:02.626293","2026-08-20 12:20:03.24752",0.621227025985718
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1981/per_table/Stephan_etal_1981_TableII.R","SUCCESS","","2026-08-20 12:20:03.250849","2026-08-20 12:20:03.874526",0.623677015304565
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1981/per_table/Stephan_etal_1981_TableIII.R","SUCCESS","","2026-08-20 12:20:03.877935","2026-08-20 12:20:04.649159",0.771224021911621
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1981/per_table/Stephan_etal_1981_TableIV.R","SUCCESS","","2026-08-20 12:20:04.654531","2026-08-20 12:20:05.404675",0.750144004821777
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1981/per_table/Stephan_etal_1981_TableIX.R","SUCCESS","","2026-08-20 12:20:05.409412","2026-08-20 12:20:06.082025",0.672613143920898
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1981/per_table/Stephan_etal_1981_TableV.R","SUCCESS","","2026-08-20 12:20:06.085843","2026-08-20 12:20:06.897886",0.812042951583862
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1981/per_table/Stephan_etal_1981_TableVI.R","SUCCESS","","2026-08-20 12:20:06.901175","2026-08-20 12:20:07.529953",0.628777980804443
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1981/per_table/Stephan_etal_1981_TableVII.R","SUCCESS","","2026-08-20 12:20:07.53259","2026-08-20 12:20:08.095427",0.56283712387085
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1981/per_table/Stephan_etal_1981_TableVIII.R","SUCCESS","","2026-08-20 12:20:08.098715","2026-08-20 12:20:08.735592",0.636876821517944
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1981/per_table/Stephan_etal_1981_TableX.R","SUCCESS","","2026-08-20 12:20:08.738836","2026-08-20 12:20:09.428344",0.689507961273193
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1981/per_table/Stephan_etal_1981_TableXI.R","SUCCESS","","2026-08-20 12:20:09.431874","2026-08-20 12:20:10.120993",0.6891188621521
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1981/per_table/Stephan_etal_1981_TableXII.R","SUCCESS","","2026-08-20 12:20:10.131561","2026-08-20 12:20:10.77205",0.640488862991333
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1981/per_table/Stephan_etal_1981_TableXIII.R","SUCCESS","","2026-08-20 12:20:10.775535","2026-08-20 12:20:11.441221",0.665685892105103
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1981/per_table/Stephan_etal_1981_TableXIV.R","SUCCESS","","2026-08-20 12:20:11.445237","2026-08-20 12:20:12.05668",0.611443042755127
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1981/per_table/Stephan_etal_1981_TableXV.R","SUCCESS","","2026-08-20 12:20:12.071384","2026-08-20 12:20:12.800473",0.729089021682739
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1981/per_table/Stephan_etal_1981_TableXVI.R","SUCCESS","","2026-08-20 12:20:12.812323","2026-08-20 12:20:13.534118",0.721794843673706
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1981/Stephan_etal_1981_TablesI-VI.R","SUCCESS","","2026-08-20 12:20:13.543808","2026-08-20 12:20:14.546107",1.00229907035828
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1982/Stephan_etal_1982_Table1.R","SUCCESS","","2026-08-20 12:20:14.549562","2026-08-20 12:20:15.299576",0.750014066696167
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1984/Stephan_etal_1984_Table1.R","SUCCESS","","2026-08-20 12:20:15.302053","2026-08-20 12:20:15.967588",0.665534973144531
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1987/Stephan_etal_1987_Table1.R","SUCCESS","","2026-08-20 12:20:15.971715","2026-08-20 12:20:16.673508",0.70179295539856
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1987/Stephan_etal_1987_Table2.R","SUCCESS","","2026-08-20 12:20:16.676216","2026-08-20 12:20:16.993193",0.316977024078369
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1988/Stephan_etal_1988_Table1.R","SUCCESS","","2026-08-20 12:20:16.998618","2026-08-20 12:20:18.20235",1.20373201370239
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stimpson_etal_2015/Stimpson_etal_2015_TableS1.R","SUCCESS","","2026-08-20 12:20:18.209338","2026-08-20 12:20:19.61059",1.40125203132629
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stimpson_etal_2015/Stimpson_etal_2015_TableS2.R","SUCCESS","","2026-08-20 12:20:19.613716","2026-08-20 12:20:20.890912",1.27719616889954
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Turner_etal_2016/Turner_etal_2016_Table1.R","SUCCESS","","2026-08-20 12:20:20.894304","2026-08-20 12:20:21.723445",0.829140901565552
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Schleifenbaum__1973/Schleifenbaum__1973_Tables1-2_extract_snapshot.R","SUCCESS","","2026-08-20 17:25:39.880403","2026-08-20 17:25:40.232538",0.352134943008423
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Schleifenbaum__1973/Schleifenbaum__1973_Tables1-2.R","SUCCESS","","2026-08-20 17:25:40.236864","2026-08-20 17:25:40.9359",0.699035882949829
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Schniter_Penaherrera-Aguirre_2026/Schniter_Penaherrera-Aguirre_2026_data.R","SUCCESS","","2026-08-20 17:25:40.942038","2026-08-20 17:25:41.793707",0.851668834686279
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Semendeferi_Damasio_2000/Semendeferi_Damasio_2000_Table2.R","SUCCESS","","2026-08-20 17:25:41.801202","2026-08-20 17:25:42.457763",0.656560897827148
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Semendeferi_etal_1998/Semendeferi_etal_1998_TABLE2.R","SUCCESS","","2026-08-20 17:25:42.461168","2026-08-20 17:25:43.101425",0.640256881713867
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Semendeferi_etal_2001/Semendeferi_etal_2001_TABLE2.R","SUCCESS","","2026-08-20 17:25:43.105179","2026-08-20 17:25:43.668212",0.563032865524292
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Semendeferi_etal_2002/Semendeferi_etal_2002_Table1.R","SUCCESS","","2026-08-20 17:25:43.676302","2026-08-20 17:25:44.27496",0.598658084869385
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Seymour_etal_2015/Seymour_etal_2015_TableS1.R","SUCCESS","","2026-08-20 17:25:44.278223","2026-08-20 17:25:45.087193",0.808969974517822
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Seymour_etal_2017/Seymour_etal_2017_TableS1_snapshot_extract.R","SUCCESS","","2026-08-20 17:25:45.091778","2026-08-20 17:25:46.340828",1.24904990196228
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Seymour_etal_2017/Seymour_etal_2017_TableS1.R","SUCCESS","","2026-08-20 17:25:46.343903","2026-08-20 17:25:47.189511",0.845607995986938
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Seymour_etal_2019/Seymour_etal_2019_rspb20192208si002.R","SUCCESS","","2026-08-20 17:25:47.194312","2026-08-20 17:25:48.017362",0.823050022125244
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Sherwood_etal_2004_I/Sherwood_etal_2004_I.R","SUCCESS","","2026-08-20 17:25:48.020136","2026-08-20 17:25:49.415212",1.39507579803467
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Sherwood_etal_2004/Sherwood_etal_2004_TABLEI.R","SUCCESS","","2026-08-20 17:25:49.418582","2026-08-20 17:25:50.648202",1.2296199798584
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Sherwood_etal_2004/Sherwood_etal_2004_unpublishedviaDeCasien.R","SUCCESS","","2026-08-20 17:25:50.651839","2026-08-20 17:25:51.447971",0.79613208770752
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Sherwood_etal_2005/Sherwood_etal_2005_Table1.R","SUCCESS","","2026-08-20 17:25:51.502667","2026-08-20 17:25:52.650917",1.14825010299683
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Smaers_etal_2010/Smaers_etal_2010_Table1.R","SUCCESS","","2026-08-20 17:25:52.659328","2026-08-20 17:25:53.461411",0.802083015441895
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Smaers_etal_2011/Smaers_etal_2011_SupplementaryTable_extract.R","SUCCESS","","2026-08-20 17:25:53.466677","2026-08-20 17:25:54.341739",0.875061988830566
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Smaers_etal_2011/Smaers_etal_2011_SupplementaryTable1.R","SUCCESS","","2026-08-20 17:25:54.345688","2026-08-20 17:25:55.120511",0.774822950363159
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Smaers_etal_2011/Smaers_etal_2011_SupplementaryTable2.R","SUCCESS","","2026-08-20 17:25:55.124358","2026-08-20 17:25:55.685791",0.56143307685852
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Smaers_etal_2017/_superseded_single_table/Smaers_etal_2017_TableS1.R","SUCCESS","","2026-08-20 17:25:55.698516","2026-08-20 17:25:56.028622",0.330106019973755
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Smaers_etal_2017/Smaers_etal_2017_TableS1part1.R","SUCCESS","","2026-08-20 17:25:56.036552","2026-08-20 17:25:56.782423",0.745871067047119
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Smaers_etal_2017/Smaers_etal_2017_TableS1part2.R","SUCCESS","","2026-08-20 17:25:56.788513","2026-08-20 17:25:57.604745",0.816231966018677
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Smaers_etal_2018/Smaers_etal_2018_Figure2-data1.R","SUCCESS","","2026-08-20 17:25:57.612736","2026-08-20 17:25:58.283263",0.67052698135376
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1970/Stephan_etal_1970_crosstable_QA.R","SUCCESS","","2026-08-20 17:25:58.287258","2026-08-20 17:25:59.1096",0.822342157363892
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1970/Stephan_etal_1970_Table1.R","SUCCESS","","2026-08-20 17:25:59.118242","2026-08-20 17:26:00.220379",1.10213708877563
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1970/Stephan_etal_1970_Table2.R","SUCCESS","","2026-08-20 17:26:00.227349","2026-08-20 17:26:01.423596",1.1962468624115
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1970/Stephan_etal_1970_Table3.R","SUCCESS","","2026-08-20 17:26:01.428063","2026-08-20 17:26:02.466414",1.03835105895996
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1970/Stephan_etal_1970_Table4.R","SUCCESS","","2026-08-20 17:26:02.470288","2026-08-20 17:26:03.490925",1.02063703536987
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1970/Stephan_etal_1970_Table5.R","SUCCESS","","2026-08-20 17:26:03.494882","2026-08-20 17:26:04.459232",0.964349985122681
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1970/Stephan_etal_1970_Table6.R","SUCCESS","","2026-08-20 17:26:04.46357","2026-08-20 17:26:05.445924",0.982353925704956
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1970/Stephan_etal_1970.R","SUCCESS","","2026-08-20 17:26:05.450719","2026-08-20 17:26:06.41927",0.96855092048645
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1981/per_table/Stephan_etal_1981_crosstable_QA.R","SUCCESS","","2026-08-20 17:26:06.42382","2026-08-20 17:26:07.253343",0.829523086547852
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1981/per_table/Stephan_etal_1981_TableI.R","SUCCESS","","2026-08-20 17:26:07.267556","2026-08-20 17:26:08.040706",0.773149967193604
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1981/per_table/Stephan_etal_1981_TableII.R","SUCCESS","","2026-08-20 17:26:08.045442","2026-08-20 17:26:08.818485",0.773042917251587
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1981/per_table/Stephan_etal_1981_TableIII.R","SUCCESS","","2026-08-20 17:26:08.824846","2026-08-20 17:26:09.627202",0.802356004714966
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1981/per_table/Stephan_etal_1981_TableIV.R","SUCCESS","","2026-08-20 17:26:09.631359","2026-08-20 17:26:10.273216",0.641856908798218
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1981/per_table/Stephan_etal_1981_TableIX.R","SUCCESS","","2026-08-20 17:26:10.2768","2026-08-20 17:26:10.97754",0.700740098953247
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1981/per_table/Stephan_etal_1981_TableV.R","SUCCESS","","2026-08-20 17:26:10.986391","2026-08-20 17:26:11.789454",0.803062915802002
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1981/per_table/Stephan_etal_1981_TableVI.R","SUCCESS","","2026-08-20 17:26:11.793903","2026-08-20 17:26:12.538536",0.744632959365845
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1981/per_table/Stephan_etal_1981_TableVII.R","SUCCESS","","2026-08-20 17:26:12.545701","2026-08-20 17:26:13.208511",0.66281008720398
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1981/per_table/Stephan_etal_1981_TableVIII.R","SUCCESS","","2026-08-20 17:26:13.211173","2026-08-20 17:26:13.969263",0.758090019226074
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1981/per_table/Stephan_etal_1981_TableX.R","SUCCESS","","2026-08-20 17:26:13.977651","2026-08-20 17:26:14.652175",0.674524068832397
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1981/per_table/Stephan_etal_1981_TableXI.R","SUCCESS","","2026-08-20 17:26:14.678191","2026-08-20 17:26:15.476905",0.79871416091919
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1981/per_table/Stephan_etal_1981_TableXII.R","SUCCESS","","2026-08-20 17:26:15.482094","2026-08-20 17:26:16.160515",0.678421020507812
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1981/per_table/Stephan_etal_1981_TableXIII.R","SUCCESS","","2026-08-20 17:26:16.164791","2026-08-20 17:26:16.834816",0.670024871826172
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1981/per_table/Stephan_etal_1981_TableXIV.R","SUCCESS","","2026-08-20 17:26:16.839265","2026-08-20 17:26:17.584379",0.745113849639893
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1981/per_table/Stephan_etal_1981_TableXV.R","SUCCESS","","2026-08-20 17:26:17.587938","2026-08-20 17:26:18.263847",0.675909042358398
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1981/per_table/Stephan_etal_1981_TableXVI.R","SUCCESS","","2026-08-20 17:26:18.270719","2026-08-20 17:26:19.010965",0.740246057510376
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1981/Stephan_etal_1981_TablesI-VI.R","SUCCESS","","2026-08-20 17:26:19.016533","2026-08-20 17:26:19.992579",0.976046085357666
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1982/Stephan_etal_1982_Table1.R","SUCCESS","","2026-08-20 17:26:19.995383","2026-08-20 17:26:20.823934",0.828551054000854
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1984/Stephan_etal_1984_Table1.R","SUCCESS","","2026-08-20 17:26:20.827307","2026-08-20 17:26:21.625977",0.798670053482056
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1987/Stephan_etal_1987_Table1.R","SUCCESS","","2026-08-20 17:26:21.638416","2026-08-20 17:26:22.445862",0.807446002960205
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1987/Stephan_etal_1987_Table2.R","SUCCESS","","2026-08-20 17:26:22.4487","2026-08-20 17:26:22.759763",0.311063051223755
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1988/Stephan_etal_1988_Table1.R","SUCCESS","","2026-08-20 17:26:22.762987","2026-08-20 17:26:23.943828",1.18084120750427
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stimpson_etal_2015/Stimpson_etal_2015_TableS1.R","SUCCESS","","2026-08-20 17:26:23.950245","2026-08-20 17:26:25.099389",1.14914417266846
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stimpson_etal_2015/Stimpson_etal_2015_TableS2.R","SUCCESS","","2026-08-20 17:26:25.103254","2026-08-20 17:26:26.208692",1.1054379940033
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Turner_etal_2016/Turner_etal_2016_Table1.R","SUCCESS","","2026-08-20 17:26:26.2123","2026-08-20 17:26:26.858512",0.646211862564087
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/update_shinyapp.R","SKIPPED","skipped: publishes to shinyapps.io (rsconnect::deployApp)",NA,NA,NA
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Upham_etal_2019/Upham_etal_2019_DNAonlyMCC.R","SUCCESS","","2026-08-20 12:20:21.742374","2026-08-20 12:20:22.970632",1.22825813293457
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Weaver_2001/Weaver__2001_NotesforTableA-15.R","SUCCESS","","2026-08-20 12:20:22.97541","2026-08-20 12:20:23.868247",0.892837047576904
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Weaver_2001/Weaver__2001_TableA-11.R","SUCCESS","","2026-08-20 12:20:23.891807","2026-08-20 12:20:24.779306",0.88749885559082
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Weaver_2001/Weaver__2001_TableA-15.R","SUCCESS","","2026-08-20 12:20:24.784176","2026-08-20 12:20:25.60091",0.816733837127686
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Wilman_etal_2014/Wilman_etal_2014_MamFuncDat.R","SUCCESS","","2026-08-20 12:20:25.60778","2026-08-20 12:20:27.339208",1.73142790794373
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Wimberly_etal_2021/Wimberly_etal_2021_MammalGait.R","SUCCESS","","2026-08-20 12:20:27.342225","2026-08-20 12:20:27.892601",0.550375938415527
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Winkler_Bryant_2021/Winkler_Bryant_2021_Figure1.R","SUCCESS","","2026-08-20 12:20:27.896195","2026-08-20 12:20:28.492752",0.596557140350342
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Young_etal_2013_b/Young_etal_2013_b_Table1.R","SUCCESS","","2026-08-20 12:20:28.495334","2026-08-20 12:20:28.953486",0.458152055740356
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Young_etal_2013/Young_etal_2013_Table1.R","SUCCESS","","2026-08-20 12:20:28.955771","2026-08-20 12:20:29.501756",0.545984983444214
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Zilles__Rehkamper_1988/Zilles__Rehkamper_1988_Table12-2.R","SUCCESS","","2026-08-20 12:20:29.505985","2026-08-20 12:20:30.167919",0.661933898925781
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Zilles_etal_2013/Zilles_etal_2013_Table1.R","SUCCESS","","2026-08-20 12:20:30.170467","2026-08-20 12:20:30.882348",0.711881160736084
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Upham_etal_2019/Upham_etal_2019_DNAonlyMCC.R","SUCCESS","","2026-08-20 17:26:26.864597","2026-08-20 17:26:27.871561",1.00696396827698
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Weaver_2001/Weaver__2001_NotesforTableA-15.R","SUCCESS","","2026-08-20 17:26:27.875817","2026-08-20 17:26:28.432434",0.556617021560669
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Weaver_2001/Weaver__2001_TableA-11.R","SUCCESS","","2026-08-20 17:26:28.43581","2026-08-20 17:26:28.951358",0.51554799079895
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Weaver_2001/Weaver__2001_TableA-15.R","SUCCESS","","2026-08-20 17:26:28.95485","2026-08-20 17:26:29.514019",0.559169054031372
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Wilman_etal_2014/Wilman_etal_2014_MamFuncDat.R","SUCCESS","","2026-08-20 17:26:29.518675","2026-08-20 17:26:31.01638",1.49770498275757
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Wimberly_etal_2021/Wimberly_etal_2021_MammalGait.R","SUCCESS","","2026-08-20 17:26:31.019582","2026-08-20 17:26:31.648527",0.628944873809814
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Winkler_Bryant_2021/Winkler_Bryant_2021_Figure1.R","SUCCESS","","2026-08-20 17:26:31.651614","2026-08-20 17:26:32.377046",0.72543215751648
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Young_etal_2013_b/Young_etal_2013_b_Table1.R","SUCCESS","","2026-08-20 17:26:32.380635","2026-08-20 17:26:32.997779",0.617143869400024
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Young_etal_2013/Young_etal_2013_Table1.R","SUCCESS","","2026-08-20 17:26:33.001008","2026-08-20 17:26:33.622057",0.621048927307129
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Zilles__Rehkamper_1988/Zilles__Rehkamper_1988_Table12-2.R","SUCCESS","","2026-08-20 17:26:33.625421","2026-08-20 17:26:34.388238",0.762816905975342
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Zilles_etal_2013/Zilles_etal_2013_Table1.R","SUCCESS","","2026-08-20 17:26:34.391736","2026-08-20 17:26:35.144283",0.752547025680542

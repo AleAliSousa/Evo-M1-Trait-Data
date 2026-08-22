@@ -83,7 +83,14 @@ papers <- tribble(
   "Matano_etal_1985_a_Table1",            "Stephan_collection", 1985,
   "Matano_etal_1985_b_Table1",            "Stephan_collection", 1985,
   "Matano__1986_TableI",                  "Stephan_collection", 1986,  # vestibular nuclei, ONE SIDE (_unilateral terms). Data role 'both': 27 spp. are Stephan 1981 TableXIII re-printed (identical to the digit), 19 spp. are new. No suppression needed -- Tier-1 most-recent supersedes 1981, and Baron_etal_1988_Table1 (bilateral, all 46 spp.) supersedes this in turn.
-  "Matano__1992_Tables1to4",              "Stephan_collection", 1992,  # inferior olive: four bilateral, fresh-volume-corrected measures; IOAc is the printed sum of IOAcMed + IOAcDors
+  # Matano 1992 split one-item-per-printed-table (was bundled Tables1to4). Same schema in all
+  # four, split by grade: T1 Scandentia + prosimians (19 spp.), T2 New World monkeys (12),
+  # T3 Old World monkeys (10), T4 apes + Man (4). Inferior olive: four bilateral,
+  # fresh-volume-corrected measures; IOAc is the printed sum of IOAcMed + IOAcDors.
+  "Matano__1992_Table1",                  "Stephan_collection", 1992,
+  "Matano__1992_Table2",                  "Stephan_collection", 1992,
+  "Matano__1992_Table3",                  "Stephan_collection", 1992,
+  "Matano__1992_Table4",                  "Stephan_collection", 1992,
   "Zilles_Rehkämper_1988_Table12-2",      "Stephan_collection", 1988,
   "deSousa_etal_2010_Table1",             "Zilles",             2010,
   "deSousa_etal_2013_Table1",             "Zilles",             2013,
@@ -152,6 +159,11 @@ enc_override <- c("Bush_Allman_2004_a_Table2"   = "10.1073%2Fpnas.0305760101_Tab
                   # NB the values omit ".tsv"; read_item() appends the extension itself.
                   # Book chapter (Orang-Utan Biology, OUP), so the code is an ISBN, not a DOI.
                   "Matano__1986_TableI"             = "10.1159%2F000156277_TableI",
+                  # Matano 1992 split into 4 per-table items; all share the paper's single DOI.
+                  "Matano__1992_Table1"             = "10.1537%2Fase1911.100.69_Table1",
+                  "Matano__1992_Table2"             = "10.1537%2Fase1911.100.69_Table2",
+                  "Matano__1992_Table3"             = "10.1537%2Fase1911.100.69_Table3",
+                  "Matano__1992_Table4"             = "10.1537%2Fase1911.100.69_Table4",
                   "Zilles_Rehkämper_1988_Table12-2" = "ISBN%3A9780195043716_Table12-2")
 read_item <- function(it) {
   # Match item names CASE-INSENSITIVELY (registry drifts e.g. Table2 vs TABLE2) and

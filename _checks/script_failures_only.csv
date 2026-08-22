@@ -4,7 +4,7 @@ Calls: read.table -> file
 In addition: Warning message:
 In file(file, ""rt"") :
   cannot open file './__Public/comparative-data/10.1002%2Fjez.70069_Data.tsv': No such file or directory
-Execution halted","2026-08-20 17:13:17.094871","2026-08-20 17:13:18.257446",1.16257500648499
+Execution halted","2026-08-21 18:14:21.921871","2026-08-21 18:14:22.518099",0.596228122711182
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__imputing_cellcounts/cellcounts_imputations_diagnostic.R","FAILED","|-------------------------------------|
 | misty 0.8.2 (2026-05-16)            |
 | Miscellaneous Functions T. Yanagida |
@@ -344,41 +344,7 @@ Number of logged events: 2379
 Error in density.default(x = c(NA_real_, NA_real_, NA_real_, NA_real_,  : 
   need at least 2 points to select a bandwidth automatically
 Calls: densityplot ... <Anonymous> -> do.call -> <Anonymous> -> density.default
-Execution halted","2026-08-20 17:13:33.800185","2026-08-20 17:13:53.011465",19.2112801074982
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_cortical_areas/cortical_areas_compiled.R","FAILED","Error: enc('Young_etal_2013_Table1'): no 'Item encoded' in __ReadMe.xlsx 'Item name'. Add or repair the registry row.
-Execution halted","2026-08-20 17:14:25.204745","2026-08-20 17:14:26.545864",1.34111905097961
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_gyrification/gyrification_compiled.R","FAILED","Error: enc('Zilles_etal_2013_Table1'): no 'Item encoded' in __ReadMe.xlsx 'Item name'. Add or repair the registry row.
-Execution halted","2026-08-20 17:14:28.87809","2026-08-20 17:14:30.410771",1.53268098831177
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_item_name_resolution.R","FAILED","registry Item names: 312   |   TSVs on disk: 260   |   NA.tsv present: no
-
-__merging_behaviour/behaviour_compiled.R                     0 item name(s) referenced   OK
-__merging_body_ecology/body_ecology_compiled.R               0 item name(s) referenced   OK
-__merging_brain_mass/brain_mass_compiled.R                   0 item name(s) referenced   OK
-__merging_cellcounts/cellcounts_compiled.R                  15 item name(s) referenced   OK
-__merging_cerebellar_folding/cerebellar_folding_compiled.R   0 item name(s) referenced   OK
-__merging_cerebral_metabolic_rate/cerebral_metabolic_rate_compiled.R   0 item name(s) referenced   OK
-__merging_cortical_areas/cortical_areas_compiled.R           6 item name(s) referenced   1 UNRESOLVED
-      Young_etal_2013_Table1                         -> no encoding (not in __ReadMe.xlsx 'Item name', no enc_override)
-__merging_cortical_layers/cortical_layers_compiled.R         1 item name(s) referenced   OK
-__merging_fossil_brain_glucose/fossil_brain_glucose_compiled.R   0 item name(s) referenced   OK
-__merging_gyrification/gyrification_compiled.R               3 item name(s) referenced   1 UNRESOLVED
-      Zilles_etal_2013_Table1                        -> no encoding (not in __ReadMe.xlsx 'Item name', no enc_override)
-__merging_sleep/sleep_compiled.R                             4 item name(s) referenced   OK
-__merging_volumes/volumes_compiled_DeCasien.R               47 item name(s) referenced   OK
-__merging_volumes/volumes_compiled_select.R                 34 item name(s) referenced   OK
-__merging_volumes/volumes_compiled.R                        64 item name(s) referenced   OK
-
-orphaned TSVs (on disk, claimed by no registry row): 6
-      10.1016%2Fj.tins.2013.01.006_Table1.tsv   <- a registry row was lost after this file was built
-      10.1073%2Fpnas.1318894110_Table1.tsv   <- a registry row was lost after this file was built
-      10.1080%2F09524622.2021.1905065_Figure1.tsv   <- a registry row was lost after this file was built
-      10.1371%2Fjournal.pbio.3000494_DNAonlyMCC.tsv   <- a registry row was lost after this file was built
-      10.3389%2Ffncir.2013.00030_Table1.tsv   <- a registry row was lost after this file was built
-      ISBN%3A9780195043716_Table12-2.tsv   <- a registry row was lost after this file was built
-rows with a citation but no Item name (need _tools/file_list.R): 0
-
-2 unresolved reference(s).
-run _tools/restore_registry_rows.R (adding any new row to its ROWS list), then _tools/file_list.R.","2026-08-20 17:15:10.613753","2026-08-20 17:15:11.574234",0.96048092842102
+Execution halted","2026-08-21 18:14:35.669154","2026-08-21 18:14:53.681824",18.0126700401306
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_laterality_doubling.R","FAILED","Is every doubled brain-volume value marked, and marked as provenance rather than as a veto?
 
 Registry
@@ -412,21 +378,21 @@ Predicted `published_bilateral_estimate` rows
   volumes_compiled_DeCasien.R: expect 0 row(s) from volumes_unfiltered_DeCasien.csv
   [PASS] volumes_flags_DeCasien.csv matches the prediction -- missing [] extra []
 
-FAILED 2 check(s): every registered column has a standardized term; volumes_compiled_select.R: every author-doubled stem is in `bilateral_stems_exclude`","2026-08-20 17:15:11.57653","2026-08-20 17:15:12.18813",0.611599922180176
+FAILED 2 check(s): every registered column has a standardized term; volumes_compiled_select.R: every author-doubled stem is in `bilateral_stems_exclude`","2026-08-21 18:16:06.137879","2026-08-21 18:16:06.693181",0.555302143096924
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_keys/combine_trees.R","FAILED","Error: Need _keys/phylo_placental.* and _keys/phylo_marsupial.* (see PHYLO_SETUP.md).
-Execution halted","2026-08-20 17:18:14.603273","2026-08-20 17:18:16.194274",1.59100103378296
+Execution halted","2026-08-21 18:19:00.820317","2026-08-21 18:19:01.951464",1.1311469078064
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_keys/extend_phylo.R","FAILED","Error: extend_phylo.R is deprecated: use a published source tree (see PHYLO_SETUP.md), not imputation.
-Execution halted","2026-08-20 17:18:16.198389","2026-08-20 17:18:16.49116",0.292770862579346
+Execution halted","2026-08-21 18:19:01.954408","2026-08-21 18:19:02.221828",0.267420053482056
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Barger_etal_2012/Barger_etal_2012_Table3.R","FAILED","Error in `[[<-.data.frame`(`*tmp*`, paste0(nuc, ""_neurons""), value = c(`13.27 (3.7)` = 13270000,  : 
   replacement has 5 rows, data has 7
 Calls: [[<- -> [[<-.data.frame
-Execution halted","2026-08-20 17:22:57.181731","2026-08-20 17:22:57.753058",0.571326971054077
+Execution halted","2026-08-21 18:22:37.915498","2026-08-21 18:22:38.866253",0.950754880905151
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/deJager_etal_2022/deJager_etal_2022.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
 Calls: read.csv -> read.table -> file
 In addition: Warning message:
 In file(file, ""rt"") :
   cannot open file 'deJager_etal_2022_calibration.csv': No such file or directory
-Execution halted","2026-08-20 17:23:51.238304","2026-08-20 17:23:51.657904",0.419600009918213
+Execution halted","2026-08-21 18:23:34.46503","2026-08-21 18:23:34.829463",0.36443305015564
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/DosSantos_etal_2020/DosSantos_etal_2020_Table1_check.R","FAILED","
 Attaching package: ‘dplyr’
 
@@ -439,7 +405,7 @@ The following objects are masked from ‘package:base’:
     intersect, setdiff, setequal, union
 
 Error: `path` does not exist: ‘/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/DosSantos_etal_2020/2020-PublishedDataMammalsMicroglia - cópia.xlsx’
-Execution halted","2026-08-20 17:23:56.392555","2026-08-20 17:23:57.179686",0.787131071090698
+Execution halted","2026-08-21 18:23:39.00527","2026-08-21 18:23:39.841013",0.835742950439453
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heffner_Masterton_1983/Heffner_Masterton_1983_TableI.R","FAILED","New names:
 • `` -> `...1`
 • `` -> `...2`
@@ -485,13 +451,13 @@ Backtrace:
  24.         └─vctrs:::stop_incompatible(...) at vctrs/R/conditions.R:146:3
  25.           └─vctrs:::stop_vctrs(...) at vctrs/R/conditions.R:95:3
  26.             └─rlang::abort(message, class = c(class, ""vctrs_error""), ..., call = call) at vctrs/R/conditions.R:65:3
-Execution halted","2026-08-20 17:24:18.246756","2026-08-20 17:24:19.096551",0.849794864654541
+Execution halted","2026-08-21 18:24:00.38278","2026-08-21 18:24:01.246344",0.863564014434814
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heuer_etal_2023/source_data/load_data.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
 Calls: read.csv -> read.table -> file
 In addition: Warning message:
 In file(file, ""rt"") :
   cannot open file '../data/derived/csv/01_cb_area_length.csv': No such file or directory
-Execution halted","2026-08-20 17:24:37.122913","2026-08-20 17:24:37.453918",0.331005096435547
+Execution halted","2026-08-21 18:24:18.733998","2026-08-21 18:24:19.100172",0.366173982620239
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Matano__1992/Matano__1992_Tables1to4.R","FAILED","Error:
 ! 'Matano__1992_Tables1to4_snapshot.csv' does not exist in current
   working directory: '/Users/crossmodal/Desktop'.
@@ -504,4 +470,4 @@ Backtrace:
  5.   └─vroom:::check_path(path)
  6.     └─cli::cli_abort(msg, call = call)
  7.       └─rlang::abort(...)
-Execution halted","2026-08-20 17:25:23.142333","2026-08-20 17:25:23.826414",0.684081077575684
+Execution halted","2026-08-21 18:25:06.450016","2026-08-21 18:25:07.134449",0.684432983398438

@@ -1,8 +1,8 @@
-Species,Species_Barger2012,n_specimens,taxon_concept,Amygdala_neurons,Amygdala_neurons_SD,Lateral_neurons,Lateral_neurons_SD,Basal_neurons,Basal_neurons_SD,AccessoryBasal_neurons,AccessoryBasal_neurons_SD,Central_neurons,Central_neurons_SD
-Homo sapiens,Human,11,,13270000,3700000,4320000,1110000,3590000,1290000,1360000,320000,370000,90000
-Pan troglodytes,Chimpanzee,5,,12050000,5530000,2870000,950000,4100000,1440000,1280000,620000,440000,20000
-Pan paniscus,Bonobo,4,,12280000,2920000,3220000,600000,3820000,1370000,1200000,500000,310000,80000
-Gorilla gorilla,Gorilla,5,,11680000,2370000,2790000,330000,3860000,1270000,1400000,340000,420000,130000
-Pongo pygmaeus,Orangutan,4,Pongo pygmaeus (s.l.); island/subspecies not stated; pooled n=4,13990000,2970000,3090000,380000,3290000,1020000,1220000,230000,500000,90000
-Hylobatidae sp.,Gibbon,3,POOLED Hylobatidae: H. muelleri + white-cheeked (Nomascus) + H. lar; decomposable=FALSE,6610000,2900000,1430000,320000,1780000,570000,780000,500000,240000,60000
-Macaca fascicularis,Macaque,3,,3350000,240000,920000,20000,770000,60000,520000,120000,260000,20000
+"Species","Species_Barger2012","n_specimens","taxon_concept","Amygdala_neurons","Amygdala_neurons_SD","Lateral_neurons","Lateral_neurons_SD","Basal_neurons","Basal_neurons_SD","AccessoryBasal_neurons","AccessoryBasal_neurons_SD","Central_neurons","Central_neurons_SD"
+"Homo sapiens","Human",11,"",13270000,3700000,4320000,1110000,3590000,1290000,1360000,320000,370000,90000
+"Pan troglodytes","Chimpanzee",5,"",12050000,5530000,2870000,950000,4100000,1440000,1280000,620000,440000,20000
+"Pan paniscus","Bonobo",4,"",12280000,2920000,3220000,6e+05,3820000,1370000,1200000,5e+05,310000,80000
+"Gorilla gorilla","Gorilla",5,"",11680000,2370000,2790000,330000,3860000,1270000,1400000,340000,420000,130000
+"Pongo pygmaeus","Orangutan",4,"Pongo pygmaeus (s.l.); island/subspecies not stated; pooled n=4",13990000,2970000,3090000,380000,3290000,1020000,1220000,230000,5e+05,90000
+"Hylobatidae sp.","Gibbon",3,"POOLED Hylobatidae: H. muelleri + white-cheeked (Nomascus) + H. lar; decomposable=FALSE",6610000,2900000,1430000,320000,1780000,570000,780000,5e+05,240000,60000
+"Macaca fascicularis","Macaque",3,"",3350000,240000,920000,20000,770000,60000,520000,120000,260000,20000

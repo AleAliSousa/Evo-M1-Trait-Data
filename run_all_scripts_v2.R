@@ -52,6 +52,12 @@ SKIP_PATTERNS <- c(
   ## and exits -- harmless but meaningless, and it made them look like tools.
   "^_helpers/"                  = "sourced helper library, not a standalone script",
   "(^|/)parity_R_vs_py\\.R$"    = "manual R-vs-Python port check; shells out to Rscript and python3",
+  ## Optional on-demand tool: joins two PUBLISHED trees the curator supplies by hand as
+  ## _keys/phylo_placental.* + _keys/phylo_marsupial.*. Those inputs are deliberately not in the
+  ## repo, so an unattended sweep can only ever hit its input guard and log a false FAILED. The
+  ## app's tree already exists (_keys/mammal_tree.nwk, built by __merging_trees/), so this runs
+  ## only when someone is deliberately rebuilding it. See __ShinyApp/PHYLO_SETUP.md.
+  "(^|/)combine_trees\\.R$"     = "optional tool; needs hand-supplied published source trees",
   ## DESTRUCTIVE ON RE-RUN. It writes Jacobs/Johnson/Peruffo into __ReadMe.xlsx rows
   ## 299, 300 and 301 by HARD-CODED number, and Sheet1 re-sorts itself -- so on any
   ## sweep after a re-sort it overwrites whatever three sources have landed there.
@@ -84,6 +90,17 @@ is_scaffold <- vapply(r_scripts, function(f) {
   any(grepl("SCAFFOLD|\\[STUB\\]", hdr))
 }, logical(1), USE.NAMES = FALSE)
 skip_reason[is_scaffold & is.na(skip_reason)] <- "scaffold/stub -- no data yet"
+
+## Deprecation tombstones are the same story with a different cause: the whole body is a
+## stop() telling you what to use instead (_keys/extend_phylo.R -- imputation, replaced by
+## published source trees). They are KEPT deliberately, because several READMEs cite them as
+## the record of a policy decision, so they cannot simply be deleted -- but running one can
+## only ever "fail". Detected by header, so the next tombstone needs no edit here.
+is_tombstone <- vapply(r_scripts, function(f) {
+  hdr <- tryCatch(readLines(f, n = 40, warn = FALSE), error = function(e) character())
+  any(grepl("DEPRECATED", hdr))
+}, logical(1), USE.NAMES = FALSE)
+skip_reason[is_tombstone & is.na(skip_reason)] <- "deprecated tombstone -- kept for the record, stops on purpose"
 
 ## optional filter: EVOM1_ONLY is a regex; non-matching scripts are dropped entirely
 only <- Sys.getenv("EVOM1_ONLY", "")

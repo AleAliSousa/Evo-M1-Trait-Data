@@ -98,7 +98,22 @@ bilateral_stems <- "auto"
 # Earlier wording called Supp. Table 2 "the real bilateral means" — it is not; it is the authors'
 # bilateral ESTIMATE. Delete a name here to let it be doubled (the result is always flagged
 # `estimated_bilateral_from_unilateral`, never silent).
-bilateral_stems_exclude <- c("Area_striata_grey_matter", "Corpus_geniculatum_laterale")
+# The same argument covers Reep et al. 2007 Table 1, whose eleven structure columns are all
+# `doubling = by_source`: the authors measured ONE side and published a shrinkage-corrected
+# BILATERAL estimate, so those terms already stand for both hemispheres. As with
+# `Area_striata_grey_matter`, the risk is not live today — Reep is cetaceans/sirenians and is
+# outside this script's `taxa_keep = "Primates"` selection, and no selected source contributes a
+# `_left`/`_right` column for any of these eleven stems, so `bilateral_stems = "auto"` never
+# discovers them and excluding them changes nothing in the current output. They are listed for
+# the same reason the de Sousa stems are: the guard has to hold for whatever the selection
+# becomes, not only for what it is now. _checks/check_laterality_doubling.R asserts exactly this
+# (check 4, "no value is doubled twice") and failed on their absence.
+bilateral_stems_exclude <- c("Area_striata_grey_matter", "Corpus_geniculatum_laterale",
+                             # Reep_etal_2007_Table1 — author-doubled, see laterality_known.csv
+                             "Amygdala", "Cerebellum", "Diencephalon_excluding_globus_pallidus",
+                             "Hippocampus", "Medulla_oblongata", "Mesencephalon", "Neocortex",
+                             "Palaeocortex", "Schizo_cortex", "Septum",
+                             "Striatum_including_globus_pallidus")
 
 ## ---- taxon filter ---------------------------------------------------------------------------
 ## Restrict the merge to chosen taxa. The registry is _keys/species_taxonomy.csv (Species, Order,

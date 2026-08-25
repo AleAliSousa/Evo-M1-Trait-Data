@@ -1,0 +1,25 @@
+PJ's suggestion to add information about quality check . This could be with the reference, add a code QC
+
+COULD EITHER 
+
+Add a link after reference to my GitHub folder or   
+Add more info to Katja and Roberto's read me
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Calculate a note in the readme of each table.
+
+The note should explain if there are any values that overlap with pre existing datasets.
+
+Try adding data one by one, starting with the oldest file . If oldest file is completely replaced by new data archive it.
+
+How to label sources? Options:
+1. Add a column after each merge stating reference
+Overwrite each time 
+2. Create a new data frame which tracks the source of the data points used.
+
+For each dataframe create an accompanying blank data frame called DataframeName_DatapointsOmitted
+
+Run comparisons between dataframes in pairs
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Kaskan data - Add a column for reliability / method that can be filtered out.

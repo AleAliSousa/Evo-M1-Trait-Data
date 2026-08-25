@@ -1,6 +1,6 @@
 # Project scope and dataset roadmap
 
-**Single source of truth, updated 2026-08-15.** This document replaces the former
+**Single source of truth, updated 2026-08-24.** This document replaces the former
 `SCOUTING_AND_SCOPING.md`, `_checks/handoff_remaining_builds.md`, and
 `NOTE_project_purpose_and_scope.md`. It combines four questions that had drifted across those files:
 
@@ -314,9 +314,9 @@ regional volume.
 | Loose paper | Extractable target | Status | Build / merge decision |
 |---|---|---|---|
 | Reep, Finlay & Darlington 2007 | Table 1: 29 specimens × 11 regional volumes | **BUILT** — `Reep_etal_2007/` | Frozen snapshot, CSV, definitions, reader, and public TSV. Add to the volume merge as independent team `Reep`; preserve its one-side ×2 provenance. Reep's diencephalon excludes globus pallidus and its striatum includes it, so those two use definition-specific terms. Amygdala also overlaps paleocortex. |
-| Campos & Welker 1976 | Table 1: capybara and guinea-pig brain subdivisions, cortical morphometry, cell density and cell number | **PLANNED** | Mixed datatype. Split regional volume, area/thickness, and cell-density/count outputs during the build; retain the two raw specimen columns and keep the printed multiplication factors derived. |
-| Halley & Krubitzer 2019 | Figure 1: 39-species dorsal-thalamus versus neocortex synthesis | **PLANNED — SOURCE AUDIT FIRST** | Secondary review figure, mostly assembled from upstream volumetric sources. Audit cited primaries and project overlap before plot digitization; the marmoset thalamus point is explicitly estimated and must not be treated as an independent measurement. |
-| Armstrong 1979 | Tables 1–9: thalamic relay-nucleus volume, neuronal density/count, and perikaryal volume | **PLANNED** | Mixed primary series. Build specimen-level regional volumes separately from cell density/count and neuronal-size distributions; create a specimen crosswalk for the abbreviations and label literature-comparison rows as secondary. |
+| Campos & Welker 1976 | Table 1: capybara and guinea-pig brain subdivisions, cortical morphometry, cell density and cell number | **BUILT 2026-08-24** | Frozen 20-measure snapshot; separate volume, cortical-morphometry, and cell-count products plus a long public table. Both specimens and all printed factors retained; three source arithmetic discrepancies are flagged and tested. |
+| Halley & Krubitzer 2019 | Figure 1: 39-species dorsal-thalamus versus neocortex synthesis | **DOCUMENTED SKIP 2026-08-24** | Source audit reconstructs all 39 points from data already held: 37 Stephan 1981 rows plus the two Campos 1976 rodents. No plot digitization/public TSV. The audit also records caption source and marmoset-label contradictions. |
+| Armstrong 1979 | Tables 1-9: thalamic relay-nucleus volume, neuronal density/count, and perikaryal volume | **BUILT 2026-08-24** | Frozen 106-row transcription; separate volume, density/count, and perikaryal products plus a long public table. Specimen crosswalk links `Hylo.-h` and `Hylo.-s` as two hemispheres of one gibbon and identifies the three-brain human count estimate. |
 
 The other staged files already have source folders and registry coverage, so no duplicate rows were
 created: DeCasien & Higham 2019 (including `41559_2019_969_MOESM3_ESM.xlsx`), Frahm et al. 1997,
@@ -354,12 +354,12 @@ figures.
    and returns no downloadable files. The scaffold and reader stay in place. Do not fabricate its
    columns or request access on the owner's behalf; build it when the files are supplied or access
    is granted.
-2. **Campos & Welker 1976:** build Table 1 as separate volume, cortical-morphometry, and cell-count
-   products; do not force the mixed units through the volume merge.
-3. **Halley & Krubitzer 2019:** complete the Figure 1 primary-source and overlap audit before any
-   digitization or dataset creation.
-4. **Armstrong 1979:** transcribe Tables 1–9 into specimen-level, datatype-specific outputs and
-   resolve specimen abbreviations.
+2. **Campos & Welker 1976 - complete 2026-08-24:** Table 1 is built as separate volume,
+   cortical-morphometry, and cell-count products; the mixed units are not wired into one merge.
+3. **Halley & Krubitzer 2019 - audited 2026-08-24:** all 39 Figure 1 points duplicate upstream
+   primary tables already held, so the figure is a documented skip and is not digitized.
+4. **Armstrong 1979 - complete 2026-08-24:** Tables 1-9 are built into specimen-aware,
+   datatype-specific outputs with a specimen crosswalk and secondary comparison rows labeled.
 
 ### Remaining administration and wiring
 

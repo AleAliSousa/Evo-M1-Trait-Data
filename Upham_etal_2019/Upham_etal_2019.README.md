@@ -1,4 +1,4 @@
-# Upham et al. 2019 — mammal phylogeny (MamPhy v1), DNA-only MCC tree
+# Upham et al. 2019 — mammal phylogeny (MamPhy v1): DNA-only MCC + Completed100 sample
 
 Upham NS, Esselstyn JA, Jetz W (2019). *Inferring the mammal tree: species-level sets of
 phylogenies for questions in ecology, evolution, and conservation.*
@@ -11,37 +11,35 @@ This is the project's **source phylogeny**. It is a data source like any other f
 frozen download, script, README, registry row. What makes it unusual is that the merge layer
 (`__merging_trees/`) consumes a *tree* rather than a species × trait table.
 
----
+The folder now holds **two Items** from this one publication:
 
-## ⚠ The tree file is not yet in this folder
+| Item | file | what it is | consumed by |
+|---|---|---|---|
+| `DNAonlyMCC` | `MamPhy_fullPosterior_BDvr_DNAonly_4098sp_topoFree_NDexp_MCC_v2_target.tre` | single MCC summary tree, 4,098 sequence-placed species (+outgroups) | `build_mammal_tree.R` → `_keys/mammal_tree.nwk` (the Shiny app's PGLS tree) |
+| `Completed100` | `Completed100_topoCons_NDexp/output.nex` | **100 complete trees** (all 5,911 species) sampled from the 10k pseudoposterior, set `MamPhy_BDvr_Completed_5911sp_topoCons_NDexp` | `build_mammal_trees_sample.R` → `_keys/mammal_trees_sample100.nwk` (multi-tree PGLS sensitivity) |
 
-`web_fetch` could not reach github.com or data.vertlife.org from the Cowork sandbox, so the
-`.tre` had to be left for a human to download. **One file, one place:**
+Both files were downloaded (2026-08-14 and 2026-08-24) and are frozen. The Completed100
+download came from <https://vertlife.org/phylosubsets> with the **full mammal species list**
+(deliberately *not* subset to project species, so the crosswalk can match synonym tips and the
+sample survives project-list growth); the job id, tree set, and full request are preserved in
+`Completed100_topoCons_NDexp/config.yaml`, and the source tree IDs (e.g. `tree_9002`) in the
+nexus itself and in `__merging_trees/tree_sample_ids.csv`. The original zip
+(`tree-pruner-c6bf9145-….zip`) is kept alongside as the as-delivered artifact.
 
-**File:** `MamPhy_fullPosterior_BDvr_DNAonly_4098sp_topoFree_NDexp_MCC_v2_target.tre`
-**Put it in:** this folder, unchanged (`Upham_etal_2019/`)
-
-Two routes, either is fine:
-
-1. **Author's repo** — <https://github.com/n8upham/MamPhy_v1> → `_DATA/` → that filename.
-2. **VertLife subsetter** — <https://vertlife.org/phylosubsets>, choose the **DNA-only**
-   tree set, and take the **MCC / target** tree (not a posterior sample).
-
-Then, from the repo root:
+To rebuild, from the repo root:
 
 ```bash
-python3 __merging_trees/make_tip_crosswalk_seed.py   # only if _keys/ species files changed
-Rscript  __merging_trees/build_mammal_tree.R         # -> _keys/mammal_tree.nwk + coverage report
+python3 __merging_trees/make_tip_crosswalk_seed.py    # only if _keys/ species files changed
+Rscript  __merging_trees/build_mammal_tree.R          # -> _keys/mammal_tree.nwk
+Rscript  __merging_trees/build_mammal_trees_sample.R  # -> _keys/mammal_trees_sample100.nwk
 ```
-
-Nothing else needs editing — `__ShinyApp/app.R` already looks for `_keys/mammal_tree.nwk`.
 
 ## Which tree variant, and why
 
 | decision | choice | reason |
 |---|---|---|
-| DNA-only vs **completed** | **DNA-only** (~4,098 tips) | The "completed" / DR trees add ~1,800 tips **imputed from taxonomy**, not sequence. Project policy is published, sequence-based placements only — see `__ShinyApp/PHYLO_SETUP.md` and the deliberate deprecation of `_keys/extend_phylo.R`. Using a completed tree would smuggle imputation in through the source file. |
-| one tree vs posterior | **MCC / target tree** | One consensus tree per source. The full posterior is 3.71 GB (Dryad `Data_S7`) and `app.R` reads only the first tree of a `multiPhylo` anyway. Revisit if a paper needs PGLS across topological uncertainty. |
+| DNA-only vs **completed** | **DNA-only** (~4,098 tips) for the app's single tree | The "completed" / DR trees add ~1,800 tips **imputed from taxonomy**, not sequence. Project policy is published, sequence-based placements only — see `__ShinyApp/PHYLO_SETUP.md` and the deliberate deprecation of `_keys/extend_phylo.R`. Upham et al. themselves recommend the DNA-only set where **trait evolution** is the question. *Revisited 2026-08-24 for the multi-tree sample:* the `Completed100` Item uses the completed set **on purpose** — its imputed placements are the authors' own, differ per posterior tree (so placement uncertainty propagates into PGLS instead of being hidden), and they recover the 5 project species with no DNA in the supermatrix. The single canonical tree stays DNA-only. |
+| one tree vs posterior | **both, as separate Items** | One MCC tree per source for the app (`app.R` reads only the first tree of a `multiPhylo`). The 2019 note "revisit if a paper needs PGLS across topological uncertainty" was actioned 2026-08-24: `Completed100` is a 100-tree credible-set sample (the paper's own practice, and the VertLife subsetter's default/minimum) for exactly that. The full posterior (3.71 GB, Dryad `Data_S7`) is still deliberately not stored. |
 | node-dated vs tip-dated backbone | **`NDexp`** (node-dated, expanded fossil set) | The variant the authors treat as the primary result and the one most reused downstream. |
 | topology constrained vs free | **`topoFree`** | No taxonomic topology constraint imposed on the patch clades. |
 | this vs Zoonomia (Foley 2023) | **this** | Zoonomia is **placental-only**; the project has 12 marsupials (6 Diprotodontia, 5 Didelphimorphia, 1 Dasyuromorphia). One source tree covering all clades beats grafting two trees at an assumed Theria age. Zoonomia stays the better choice for consistency with the gene-expression analyses — worth adding later as a **second** source folder, not a replacement. |
@@ -77,31 +75,24 @@ tip set is queryable and diffable like every other source in `__Public/`.
 **Primary** for phylogeny. It is the only source of tree topology and node ages, and nothing
 else in the repo supplies them.
 
-## Registry (action needed)
+## Registry
 
-Add one row to `__ReadMe.xlsx` → `Sheet1` (descriptive columns only; `Item name` / `Item
-encoded` are formulas that fill themselves — and mind the col-D trap: a blank **Item number**
-leaves the name ending in a bare `_`):
-
-| column | value |
-|---|---|
-| Publication name | `Upham_etal_2019` |
-| 1st Author | `Upham` |
-| year | `2019` |
-| DOI (or Alt) | `10.1371/journal.pbio.3000494` |
-| Item number | `DNAonlyMCC` |
-| Source type | `tree` |
-| Team | `Upham` |
-| Main Trait(s) | `phylogeny; divergence times` |
-| Data role (primary/secondary/both) | `primary` |
-
-`Item encoded` resolves to `10.1371%2Fjournal.pbio.3000494_DNAonlyMCC`, which the script uses
-as a fallback until the row exists.
+Both Items have `__ReadMe.xlsx` → `Sheet1` rows. `DNAonlyMCC` (Item name
+`Upham_etal_2019_DNAonlyMCC`, encoded `10.1371%2Fjournal.pbio.3000494_DNAonlyMCC`) was lost in
+the 2026-08-20 row-loss incident and restored — **it currently exists twice** (rows 317/318,
+identical content; harmless to `match()` but should be collapsed to one). `Completed 100`
+(→ `Upham_etal_2019_Completed100`) was added 2026-08-24 with descriptive columns only; its
+F:N naming formulas fill on the next `Rscript _tools/file_list.R` run, per the division of
+labour in `_tools/restore_registry_rows.R`. Nothing consumes `Completed100` by Item encoded —
+`__merging_trees/` reads the nexus directly — so the pending formula fill blocks nothing.
 
 ## Checks
 
-- Tip count ≈ 4,098 (the DNA-only tree; a count near 5,911 means the **completed** tree was
-  downloaded by mistake — do not use it).
+- `DNAonlyMCC`: tip count ≈ 4,098. `Completed100`: exactly 100 trees, 5,911 tips each, one
+  shared tip set (the sample build verifies this and fails loudly otherwise). A 5,911-tip
+  file in the **MCC slot** means the completed tree was downloaded by mistake — the two must
+  not be swapped; `find_tree()` does not recurse into `Completed100_topoCons_NDexp/`, which is
+  what keeps the MCC build pointed at the `.tre`.
 - Tree is ultrametric; the build reports root-to-tip spread and fails loudly if it is not.
 - Marsupials present: the build's coverage report must show non-zero matches in
   Diprotodontia, Didelphimorphia and Dasyuromorphia. Zero there means a placental-only tree.

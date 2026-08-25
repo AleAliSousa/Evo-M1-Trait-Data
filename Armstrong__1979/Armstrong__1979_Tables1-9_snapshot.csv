@@ -1,0 +1,107 @@
+table,source_group,role,specimen_code,species_as_published,structure,measure,unit,value,percent_value,n,mean,sd,se,minimum,maximum,median,note
+Table1,Armstrong_1979,primary,Hylo.-s,Hylobates sp.,LGB,volume,mm3,17.8,4.8,,,,,,,,Percent of total thalamus.
+Table1,Armstrong_1979,primary,Hylo.-s,Hylobates sp.,MGBp,volume,mm3,7.1,1.9,,,,,,,,Percent of total thalamus.
+Table1,Armstrong_1979,primary,Hylo.-s,Hylobates sp.,VB,volume,mm3,41.2,11.2,,,,,,,,Percent of total thalamus.
+Table1,Armstrong_1979,primary,Hylo.-h,Hylobates sp.,LGB,volume,mm3,21,5.6,,,,,,,,Percent of total thalamus.
+Table1,Armstrong_1979,primary,Hylo.-h,Hylobates sp.,MGBp,volume,mm3,8.3,2.2,,,,,,,,Percent of total thalamus.
+Table1,Armstrong_1979,primary,Hylo.-h,Hylobates sp.,VB,volume,mm3,37.5,10.2,,,,,,,,Percent of total thalamus.
+Table1,Armstrong_1979,primary,H. lar-t,Hylobates lar,LGB,volume,mm3,27.1,4.7,,,,,,,,Percent of total thalamus.
+Table1,Armstrong_1979,primary,H. lar-t,Hylobates lar,MGBp,volume,mm3,11.8,2.1,,,,,,,,Percent of total thalamus.
+Table1,Armstrong_1979,primary,H. lar-t,Hylobates lar,VB,volume,mm3,62.4,10.8,,,,,,,,Percent of total thalamus.
+Table1,Armstrong_1979,primary,Gorilla g.,Gorilla gorilla,LGB,volume,mm3,51,3.2,,,,,,,,Percent of total thalamus.
+Table1,Armstrong_1979,primary,Gorilla g.,Gorilla gorilla,MGBp,volume,mm3,29,1.8,,,,,,,,Percent of total thalamus.
+Table1,Armstrong_1979,primary,Gorilla g.,Gorilla gorilla,VB,volume,mm3,178.9,11.2,,,,,,,,Percent of total thalamus.
+Table1,Armstrong_1979,primary,Pan t.,Pan troglodytes,LGB,volume,mm3,56.3,3.8,,,,,,,,Percent of total thalamus.
+Table1,Armstrong_1979,primary,Pan t.,Pan troglodytes,MGBp,volume,mm3,28,1.9,,,,,,,,Percent of total thalamus.
+Table1,Armstrong_1979,primary,Pan t.,Pan troglodytes,VB,volume,mm3,144.8,9.9,,,,,,,,Percent of total thalamus.
+Table1,Armstrong_1979,primary,Homo s.-s,Homo sapiens,LGB,volume,mm3,69.1,1.6,,,,,,,,Percent of total thalamus.
+Table1,Armstrong_1979,primary,Homo s.-s,Homo sapiens,MGBp,volume,mm3,71.2,1.7,,,,,,,,Percent of total thalamus.
+Table1,Armstrong_1979,primary,Homo s.-s,Homo sapiens,VB,volume,mm3,300.3,7.1,,,,,,,,Percent of total thalamus.
+Table1,Armstrong_1979,primary,Homo s.-t,Homo sapiens,LGB,volume,mm3,78,2.3,,,,,,,,Percent of total thalamus.
+Table1,Armstrong_1979,primary,Homo s.-t,Homo sapiens,MGBp,volume,mm3,46.6,1.4,,,,,,,,Percent of total thalamus.
+Table1,Armstrong_1979,primary,Homo s.-t,Homo sapiens,VB,volume,mm3,273.1,8.1,,,,,,,,Percent of total thalamus.
+Table1,Hopf_1965,secondary,Hopf:Pongo p.,Pongo p.,LGB,volume,mm3,165,4,,,,,,,,Literature-comparison value.
+Table1,Hopf_1965,secondary,Hopf:Pongo p.,Pongo p.,MGBp,volume,mm3,50,1.1,,,,,,,,Literature-comparison value.
+Table1,Hopf_1965,secondary,Hopf:Homo S.,Homo S.,LGB,volume,mm3,160,1.7,,,,,,,,Literature-comparison value.
+Table1,Hopf_1965,secondary,Hopf:Homo S.,Homo S.,MGBp,volume,mm3,105,1.1,,,,,,,,Literature-comparison value.
+Table1,Solnitzky_1945,secondary,Solnitzky:Pan t.,Pan t.,LGB,volume,mm3,61.9,,,,,,,,,Literature-comparison value.
+Table1,Solnitzky_1945,secondary,Solnitzky:Homo s.,Homo s.,LGB,volume,mm3,125.2,,,,,,,,,Literature-comparison value.
+Table1,Chacko_1948,secondary,Chacko:Homo s.,Homo s.,LGB,volume,mm3,60.6,,,,,,,,,Literature-comparison value.
+Table1,Blinkov_Zvorykin_1950,secondary,Blinkov:Hylobates,Hylobates,MGB_p_plus_m,volume,mm3,12.2,,,,,,,,,Literature-comparison value; MGBp + MGBm rather than MGBp.
+Table1,Blinkov_Zvorykin_1950,secondary,Blinkov:Pongo,Pongo,MGB_p_plus_m,volume,mm3,33.9,,,,,,,,,Literature-comparison value; MGBp + MGBm rather than MGBp.
+Table1,Blinkov_Zvorykin_1950,secondary,Blinkov:Pan,Pan,MGB_p_plus_m,volume,mm3,36.5,,,,,,,,,Literature-comparison value; MGBp + MGBm rather than MGBp.
+Table1,Blinkov_Zvorykin_1950,secondary,Blinkov:Homo s.,Homo s.,MGB_p_plus_m,volume,mm3,67.9,,,,,,,,,"Mean of 10 hemispheres; MGBp + MGBm rather than MGBp."
+Table2,Armstrong_1979,primary,Hylo.-s,Hylobates sp.,MGBp,neuronal_density,neurons_per_0.01_mm3,,,13,532.1,108.9,30.2,354.2,777.8,503.5,
+Table2,Armstrong_1979,primary,Hylo.-h,Hylobates sp.,MGBp,neuronal_density,neurons_per_0.01_mm3,,,14,479,142.5,38.1,222.2,676.2,518,
+Table2,Armstrong_1979,primary,H. lar-t,Hylobates lar,MGBp,neuronal_density,neurons_per_0.01_mm3,,,16,345.1,89,22.1,193.3,608.3,330.8,
+Table2,Armstrong_1979,primary,Gorilla g.,Gorilla gorilla,MGBp,neuronal_density,neurons_per_0.01_mm3,,,24,243.9,82.9,16.9,64.7,418.7,245.1,
+Table2,Armstrong_1979,primary,Pan t.,Pan troglodytes,MGBp,neuronal_density,neurons_per_0.01_mm3,,,14,325.9,91.3,24.4,224.4,495.6,287,
+Table2,Armstrong_1979,primary,Homo s.-c,Homo sapiens,MGBp,neuronal_density,neurons_per_0.01_mm3,,,30,147.7,42.6,7.8,80,305,142,
+Table3,Armstrong_1979,primary,Hylo.-s,Hylobates sp.,LGBp,neuronal_density,neurons_per_0.01_mm3,,,20,784.7,172.5,38.6,458.3,1083.3,781.3,
+Table3,Armstrong_1979,primary,Hylo.-h,Hylobates sp.,LGBp,neuronal_density,neurons_per_0.01_mm3,,,30,755.5,174.2,31.8,291.7,1000,809,
+Table3,Armstrong_1979,primary,Gorilla g.,Gorilla gorilla,LGBp,neuronal_density,neurons_per_0.01_mm3,,,28,385.3,82.6,15.6,217.6,629.4,370.6,
+Table3,Armstrong_1979,primary,Pan t.,Pan troglodytes,LGBp,neuronal_density,neurons_per_0.01_mm3,,,21,397.7,73.6,16.1,264,540,405.5,
+Table3,Armstrong_1979,primary,Homo s.-c,Homo sapiens,LGBp,neuronal_density,neurons_per_0.01_mm3,,,31,303.9,62.3,11.1,175,415,313.8,
+Table3,Armstrong_1979,primary,Hylo.-s,Hylobates sp.,LGBm,neuronal_density,neurons_per_0.01_mm3,,,7,368,119,45,243.1,579.2,366.3,
+Table3,Armstrong_1979,primary,Hylo.-h,Hylobates sp.,LGBm,neuronal_density,neurons_per_0.01_mm3,,,19,382.7,119.9,27.5,250,652.8,343.8,
+Table3,Armstrong_1979,primary,Gorilla g.,Gorilla gorilla,LGBm,neuronal_density,neurons_per_0.01_mm3,,,10,288.8,121.5,38.4,170.6,506.9,253.4,
+Table3,Armstrong_1979,primary,Pan t.,Pan troglodytes,LGBm,neuronal_density,neurons_per_0.01_mm3,,,11,350.2,80.7,24.3,236,516,346,
+Table3,Armstrong_1979,primary,Homo s.-c,Homo sapiens,LGBm,neuronal_density,neurons_per_0.01_mm3,,,14,181.8,51.4,13.7,120,295,170,
+Table4,Armstrong_1979,primary,Hylo.-s,Hylobates sp.,VB,neuronal_density,neurons_per_0.01_mm3,,,43,142.5,57,8.7,55.6,263.9,138.9,
+Table4,Armstrong_1979,primary,Hylo.-h,Hylobates sp.,VB,neuronal_density,neurons_per_0.01_mm3,,,30,122.1,34.8,6.4,69.4,222.2,116.3,
+Table4,Armstrong_1979,primary,H. lar-t,Hylobates lar,VB,neuronal_density,neurons_per_0.01_mm3,,,40,123.4,32.9,5.2,61.7,213.3,124.6,
+Table4,Armstrong_1979,primary,Gorilla g.,Gorilla gorilla,VB,neuronal_density,neurons_per_0.01_mm3,,,61,60,26,3.3,24.4,129.4,53.8,
+Table4,Armstrong_1979,primary,Pan t.,Pan troglodytes,VB,neuronal_density,neurons_per_0.01_mm3,,,33,84.7,29.1,5.1,36,144,76.3,
+Table4,Armstrong_1979,primary,Homo s.-c,Homo sapiens,VB,neuronal_density,neurons_per_0.01_mm3,,,48,58.8,22,3.4,25,115,57.7,
+Table5,Armstrong_1979,primary,Hylo.-s,Hylobates sp.,LGBp,volume,mm3,11.4,64.1,,,,,,,,Percent of total LGB.
+Table5,Armstrong_1979,primary,Hylo.-s,Hylobates sp.,LGBm,volume,mm3,6.4,35.9,,,,,,,,Percent of total LGB.
+Table5,Armstrong_1979,primary,Hylo.-h,Hylobates sp.,LGBp,volume,mm3,14.2,67.7,,,,,,,,Percent of total LGB.
+Table5,Armstrong_1979,primary,Hylo.-h,Hylobates sp.,LGBm,volume,mm3,6.8,32.3,,,,,,,,Percent of total LGB.
+Table5,Armstrong_1979,primary,H. lar-t,Hylobates lar,LGBp,volume,mm3,21.4,79,,,,,,,,Percent of total LGB.
+Table5,Armstrong_1979,primary,H. lar-t,Hylobates lar,LGBm,volume,mm3,5.7,21,,,,,,,,Percent of total LGB.
+Table5,Armstrong_1979,primary,Gorilla g.,Gorilla gorilla,LGBp,volume,mm3,42.6,83.4,,,,,,,,Percent of total LGB.
+Table5,Armstrong_1979,primary,Gorilla g.,Gorilla gorilla,LGBm,volume,mm3,8.4,16.6,,,,,,,,Percent of total LGB.
+Table5,Armstrong_1979,primary,Pan t.,Pan troglodytes,LGBp,volume,mm3,42.3,75.1,,,,,,,,Percent of total LGB.
+Table5,Armstrong_1979,primary,Pan t.,Pan troglodytes,LGBm,volume,mm3,14,24.9,,,,,,,,Percent of total LGB.
+Table5,Armstrong_1979,primary,Homo s.-s,Homo sapiens,LGBp,volume,mm3,57.7,83.3,,,,,,,,Percent of total LGB.
+Table5,Armstrong_1979,primary,Homo s.-s,Homo sapiens,LGBm,volume,mm3,11.5,16.6,,,,,,,,"Percent of total LGB; printed components sum to 99.9% and 69.2 mm3 versus the 69.1 mm3 Table 1 total."
+Table5,Armstrong_1979,primary,Homo s.-t,Homo sapiens,LGBp,volume,mm3,62.4,80,,,,,,,,Percent of total LGB.
+Table5,Armstrong_1979,primary,Homo s.-t,Homo sapiens,LGBm,volume,mm3,15.6,20,,,,,,,,Percent of total LGB.
+Table6,Armstrong_1979,primary,Hylo.-s,Hylobates sp.,LGB,estimated_neuron_number,neurons,1131000,,,,,,,,,Derived from volume and neuronal density.
+Table6,Armstrong_1979,primary,Hylo.-s,Hylobates sp.,MGBp,estimated_neuron_number,neurons,378000,,,,,,,,,Derived from volume and neuronal density.
+Table6,Armstrong_1979,primary,Hylo.-s,Hylobates sp.,VB,estimated_neuron_number,neurons,587100,,,,,,,,,Derived from volume and neuronal density.
+Table6,Armstrong_1979,primary,Hylo.-h,Hylobates sp.,LGB,estimated_neuron_number,neurons,1333000,,,,,,,,,Derived from volume and neuronal density.
+Table6,Armstrong_1979,primary,Hylo.-h,Hylobates sp.,MGBp,estimated_neuron_number,neurons,413000,,,,,,,,,"Printed value retained; Table 1 volume x Table 2 density implies 397,570."
+Table6,Armstrong_1979,primary,Hylo.-h,Hylobates sp.,VB,estimated_neuron_number,neurons,458000,,,,,,,,,Derived from volume and neuronal density.
+Table6,Armstrong_1979,primary,H. lar-t,Hylobates lar,LGB,estimated_neuron_number,neurons,,,,,,,,,,Not reported.
+Table6,Armstrong_1979,primary,H. lar-t,Hylobates lar,MGBp,estimated_neuron_number,neurons,407000,,,,,,,,,Derived from volume and neuronal density.
+Table6,Armstrong_1979,primary,H. lar-t,Hylobates lar,VB,estimated_neuron_number,neurons,770000,,,,,,,,,Derived from volume and neuronal density.
+Table6,Armstrong_1979,primary,Gorilla g.,Gorilla gorilla,LGB,estimated_neuron_number,neurons,1884000,,,,,,,,,Derived from volume and neuronal density.
+Table6,Armstrong_1979,primary,Gorilla g.,Gorilla gorilla,MGBp,estimated_neuron_number,neurons,707000,,,,,,,,,Derived from volume and neuronal density.
+Table6,Armstrong_1979,primary,Gorilla g.,Gorilla gorilla,VB,estimated_neuron_number,neurons,1070000,,,,,,,,,Derived from volume and neuronal density.
+Table6,Armstrong_1979,primary,Pan t.,Pan troglodytes,LGB,estimated_neuron_number,neurons,2172000,,,,,,,,,Derived from volume and neuronal density.
+Table6,Armstrong_1979,primary,Pan t.,Pan troglodytes,MGBp,estimated_neuron_number,neurons,913000,,,,,,,,,Derived from volume and neuronal density.
+Table6,Armstrong_1979,primary,Pan t.,Pan troglodytes,VB,estimated_neuron_number,neurons,1226300,,,,,,,,,Derived from volume and neuronal density.
+Table6,Armstrong_1979,primary,Homo s.,Homo sapiens,LGB,estimated_neuron_number,neurons,2065000,,,,,,,,,Combines mean nuclear volume from Homo s.-s and Homo s.-t with density from Homo s.-c.
+Table6,Armstrong_1979,primary,Homo s.,Homo sapiens,MGBp,estimated_neuron_number,neurons,870000,,,,,,,,,Combines mean nuclear volume from Homo s.-s and Homo s.-t with density from Homo s.-c.
+Table6,Armstrong_1979,primary,Homo s.,Homo sapiens,VB,estimated_neuron_number,neurons,1690000,,,,,,,,,Combines mean nuclear volume from Homo s.-s and Homo s.-t with density from Homo s.-c.
+Table7,Armstrong_1979,primary,Hylo.-s,Hylobates sp.,MGBp,perikaryal_volume,um3,,,65,1203.6,757,93.9,179.1,4747.3,1050.4,
+Table7,Armstrong_1979,primary,Hylo.-h,Hylobates sp.,MGBp,perikaryal_volume,um3,,,70,1217,570.1,68.1,333.1,3095.7,1095,
+Table7,Armstrong_1979,primary,H. lar-t,Hylobates lar,MGBp,perikaryal_volume,um3,,,18,2022.5,1390.2,327.7,49.7,3807.3,1983,
+Table7,Armstrong_1979,primary,Gorilla g.,Gorilla gorilla,MGBp,perikaryal_volume,um3,,,124,2145.3,1760,158.1,150.1,12679.2,1749.3,
+Table7,Armstrong_1979,primary,Pan t.,Pan troglodytes,MGBp,perikaryal_volume,um3,,,47,2063.2,1117.4,163,207.4,5752.3,1880.5,
+Table7,Armstrong_1979,primary,Homo s.-c,Homo sapiens,MGBp,perikaryal_volume,um3,,,150,2770.7,2087.2,170.4,97.5,10990.1,2569.3,
+Table8,Armstrong_1979,primary,Hylo.-s,Hylobates sp.,LGBp,perikaryal_volume,um3,,,102,1296.3,698.8,69.2,97.5,4747.3,1168.7,
+Table8,Armstrong_1979,primary,Hylo.-h,Hylobates sp.,LGBp,perikaryal_volume,um3,,,150,1405.9,625.4,51.1,238.4,3503.4,1368.9,
+Table8,Armstrong_1979,primary,Gorilla g.,Gorilla gorilla,LGBp,perikaryal_volume,um3,,,140,1792.2,845.3,71.4,275.8,7654.2,1682.2,
+Table8,Armstrong_1979,primary,Pan t.,Pan troglodytes,LGBp,perikaryal_volume,um3,,,19,1649,620.6,142.4,650.7,2776.9,1603.5,
+Table8,Armstrong_1979,primary,Homo s.-c,Homo sapiens,LGBp,perikaryal_volume,um3,,,155,2261.7,1244,99.9,117.8,7679.9,2068.6,
+Table8,Armstrong_1979,primary,Hylo.-s,Hylobates sp.,LGBm,perikaryal_volume,um3,,,35,4225.7,1655.7,279.9,424.6,7994.9,4036.2,
+Table8,Armstrong_1979,primary,Hylo.-h,Hylobates sp.,LGBm,perikaryal_volume,um3,,,95,2634.3,1312.6,134.7,238.4,6815.2,2607.9,
+Table8,Armstrong_1979,primary,Gorilla g.,Gorilla gorilla,LGBm,perikaryal_volume,um3,,,50,4275.1,2912.7,411.9,506.7,18484.5,3993.4,
+Table8,Armstrong_1979,primary,Homo s.-c,Homo sapiens,LGBm,perikaryal_volume,um3,,,72,6256.2,3276.9,386.2,179.1,13848.3,6338.3,
+Table9,Armstrong_1979,primary,Hylo.-s,Hylobates sp.,VB,perikaryal_volume,um3,,,131,4141.8,3264.4,285.2,323.2,22939.8,3510.2,
+Table9,Armstrong_1979,primary,Hylo.-h,Hylobates sp.,VB,perikaryal_volume,um3,,,155,3696.2,2956.1,237.4,179.1,13848.3,2898.1,
+Table9,Armstrong_1979,primary,H. lar-t,Hylobates lar,VB,perikaryal_volume,um3,,,45,4424.3,4160.2,620.2,49.1,17043.5,3286.4,
+Table9,Armstrong_1979,primary,Gorilla g.,Gorilla gorilla,VB,perikaryal_volume,um3,,,306,5912.6,5937.1,339.4,53.1,38871.9,3889.4,
+Table9,Armstrong_1979,primary,Homo s.-c,Homo sapiens,VB,perikaryal_volume,um3,,,238,4305.9,4396.7,285,139.6,26293.7,3075.1,

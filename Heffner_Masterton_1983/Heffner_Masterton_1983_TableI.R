@@ -76,6 +76,20 @@ as_num <- function(x) suppressWarnings(as.numeric(str_replace_all(val_of(x), ","
 
 snap <- read_snapshot(snapshot_file, snapshot_sheet)
 
+# Extract the bracketed references before transmute() replaces the source text
+# columns with parsed numerics. Otherwise later expressions with the same column
+# name see the newly created numeric vector and lose the source reference.
+snap <- snap %>%
+  mutate(
+    area_mm2_ref = ref_of(area_mm2),
+    no_fibers_x10_3_ref = ref_of(no_fibers_x10_3),
+    avg_fiber_size_um_ref = ref_of(avg_fiber_size_um),
+    largest_fiber_size_um_ref = ref_of(largest_fiber_size_um),
+    extension_down_cord_rank_ref = ref_of(extension_down_cord_rank),
+    ventralmost_lamina_ref = ref_of(ventralmost_lamina),
+    densest_lamina_ref = ref_of(densest_lamina)
+  )
+
 final.dataframe <- snap %>%
   transmute(
     common_name              = str_squish(common_name),
@@ -86,19 +100,19 @@ final.dataframe <- snap %>%
     digital_dexterity        = as.integer(as_num(digital_dexterity)),
     body_weight_kg           = as_num(body_weight_kg),
     area_mm2                 = as_num(area_mm2),
-    area_mm2_ref             = ref_of(area_mm2),
+    area_mm2_ref             = area_mm2_ref,
     no_fibers_x10_3          = as_num(no_fibers_x10_3),
-    no_fibers_ref            = ref_of(no_fibers_x10_3),
+    no_fibers_x10_3_ref      = no_fibers_x10_3_ref,
     avg_fiber_size_um        = as_num(avg_fiber_size_um),
-    avg_fiber_size_ref       = ref_of(avg_fiber_size_um),
+    avg_fiber_size_um_ref    = avg_fiber_size_um_ref,
     largest_fiber_size_um    = as_num(largest_fiber_size_um),
-    largest_fiber_size_ref   = ref_of(largest_fiber_size_um),
+    largest_fiber_size_um_ref = largest_fiber_size_um_ref,
     extension_down_cord_rank = as_num(extension_down_cord_rank),
-    extension_down_cord_ref  = ref_of(extension_down_cord_rank),
+    extension_down_cord_rank_ref = extension_down_cord_rank_ref,
     ventralmost_lamina       = as_num(ventralmost_lamina),
-    ventralmost_lamina_ref   = ref_of(ventralmost_lamina),
+    ventralmost_lamina_ref   = ventralmost_lamina_ref,
     densest_lamina           = as_num(densest_lamina),
-    densest_lamina_ref       = ref_of(densest_lamina),
+    densest_lamina_ref       = densest_lamina_ref,
     source                   = "Heffner_Masterton_1983"
   )
 

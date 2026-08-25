@@ -28,7 +28,7 @@
 "Alouatta sara","mass","Brain_Mass","g",59.0833,59.0833,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Alouatta seniculus","mass","Brain_Mass","g",51.6,51.6,9,3,1,TRUE,"Burger; Lewitus; Stephan_collection","primary; secondary",NA,NA
 "Amblonyx cinereus","mass","Brain_Mass","g",38.1,38.1,4,1,0,FALSE,"Jacobs","info",NA,NA
-"Amblysomus hottentotus","mass","Brain_Mass","g",0.812,0.812,3,1,0,FALSE,"HerculanoHouzel","secondary",NA,NA
+"Amblysomus hottentotus","mass","Brain_Mass","g",0.812,0.812,3,1,1,TRUE,"HerculanoHouzel","primary",NA,NA
 "Ametrida centurio","mass","Brain_Mass","g",0.29,0.29,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Ammospermophilus harrisii","mass","Brain_Mass","g",2.405,2.405,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Ammospermophilus insularis","mass","Brain_Mass","g",2.55,2.55,3,1,0,FALSE,"Burger","secondary",NA,NA
@@ -47,7 +47,7 @@
 "Antechinus stuartii","mass","Brain_Mass","g",0.76,0.76,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Antechinus subtropicus","mass","Brain_Mass","g",0.72,0.72,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Antechinus swainsonii","mass","Brain_Mass","g",1.09,1.09,3,1,0,FALSE,"Burger","secondary",NA,NA
-"Antidorcas marsupialis","mass","Brain_Mass","g",104.088,104.088,6,3,1,TRUE,"Burger; HerculanoHouzel; Kazu","primary; secondary",NA,NA
+"Antidorcas marsupialis","mass","Brain_Mass","g",105.081,105.081,6,3,2,TRUE,"Burger; HerculanoHouzel; Kazu","primary; secondary",NA,NA
 "Antilocapra americana","mass","Brain_Mass","g",125.6,125.6,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Antilope cervicapra","mass","Brain_Mass","g",110.8,110.8,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Aonyx capensis","mass","Brain_Mass","g",94.6,94.6,3,1,0,FALSE,"Burger","secondary",NA,NA
@@ -55,7 +55,7 @@
 "Aotus azarae","mass","Brain_Mass","g",20.7,20.7,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Aotus lemurinus","mass","Brain_Mass","g",113.5,113.5,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Aotus sp.","mass","Brain_Mass","g",16.35,16.35,3,1,0,FALSE,"MacLeod","secondary",NA,NA
-"Aotus trivirgatus","mass","Brain_Mass","g",17.0658,16.66,15,6,3,TRUE,"Burger; Changizi; Finlay; HerculanoHouzel; Lewitus; Stephan_collection","primary; secondary",NA,NA
+"Aotus trivirgatus","mass","Brain_Mass","g",16.7344,16.4988,15,6,4,TRUE,"Burger; Changizi; Finlay; HerculanoHouzel; Lewitus; Stephan_collection","primary; secondary",NA,NA
 "Aplodontia rufa","mass","Brain_Mass","g",7.04,7.04,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Apodemus agrarius","mass","Brain_Mass","g",0.2,0.2,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Apodemus flavicollis","mass","Brain_Mass","g",0.7,0.7,3,1,0,FALSE,"Burger","secondary",NA,NA
@@ -121,12 +121,12 @@
 "Berylmys bowersi","mass","Brain_Mass","g",4.63,4.63,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Bettongia gaimardi","mass","Brain_Mass","g",11.7,11.7,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Bettongia lesueur","mass","Brain_Mass","g",10.5,10.5,3,1,0,FALSE,"Burger","secondary",NA,NA
-"Bettongia penicillata","mass","Brain_Mass","g",9.58,9.58,4,2,0,FALSE,"Burger; Karl","secondary",NA,NA
+"Bettongia penicillata","mass","Brain_Mass","g",9.6,9.6,4,2,1,TRUE,"Burger; Karl","primary; secondary",NA,NA
 "Bettongia tropica","mass","Brain_Mass","g",8.92,8.92,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Bison bison","mass","Brain_Mass","g",458,458,3,1,0,FALSE,"Burger","secondary",NA,NA
-"Blarina brevicauda","mass","Brain_Mass","g",0.39,0.39,6,3,1,TRUE,"Burger; Finlay; HerculanoHouzel","primary; secondary",NA,NA
+"Blarina brevicauda","mass","Brain_Mass","g",0.3668,0.3668,6,3,2,TRUE,"Burger; Finlay; HerculanoHouzel","primary; secondary",NA,NA
 "Bos grunniens","mass","Brain_Mass","g",334,334,3,1,0,FALSE,"Burger","secondary",NA,NA
-"Bos taurus","mass","Brain_Mass","g",540,540,7,5,1,TRUE,"Brodmann; Burger; Garwicz; HerculanoHouzel; Lewitus","primary; secondary",NA,NA
+"Bos taurus","mass","Brain_Mass","g",513,513,7,5,2,TRUE,"Brodmann; Burger; Garwicz; HerculanoHouzel; Lewitus","primary; secondary",NA,NA
 "Bos taurus indicus","mass","Brain_Mass","g",462,462,3,1,0,FALSE,"Lewitus","secondary",NA,NA
 "Boselaphus tragocamelus","mass","Brain_Mass","g",271.75,271.75,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Brachyphylla cavernarum","mass","Brain_Mass","g",1.278,1.278,3,1,0,FALSE,"Burger","secondary",NA,NA
@@ -157,10 +157,10 @@
 "Callithrix aurita","mass","Brain_Mass","g",7.2,7.2,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Callithrix geoffroyi","mass","Brain_Mass","g",19.9,19.9,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Callithrix humeralifera","mass","Brain_Mass","g",8.2,8.2,3,1,0,FALSE,"Burger","secondary",NA,NA
-"Callithrix jacchus","mass","Brain_Mass","g",7.1899,7.6898,15,7,4,TRUE,"Burger; Changizi; Finlay; HerculanoHouzel; Lewitus; Nudo; Stephan_collection","primary; secondary",NA,NA
+"Callithrix jacchus","mass","Brain_Mass","g",7.3079,7.7795,15,7,5,TRUE,"Burger; Changizi; Finlay; HerculanoHouzel; Lewitus; Nudo; Stephan_collection","primary; secondary",NA,NA
 "Callithrix penicillata","mass","Brain_Mass","g",7.3,7.3,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Callithrix pygmaea","mass","Brain_Mass","g",4.2917,4.2917,9,4,2,TRUE,"Burger; Jacobs; Stephan_collection; Zilles","info; primary; secondary",NA,NA
-"Callithrix sp.","mass","Brain_Mass","g",7.5,7.5,4,2,1,TRUE,"Brodmann; HerculanoHouzel","primary; secondary",NA,NA
+"Callithrix sp.","mass","Brain_Mass","g",7.64,7.64,4,2,2,TRUE,"Brodmann; HerculanoHouzel","primary",NA,NA
 "Callorhinus ursinus","mass","Brain_Mass","g",331.715,331.715,5,2,0,FALSE,"Burger; Jacobs","info; secondary",NA,NA
 "Callosciurus caniceps","mass","Brain_Mass","g",6.02,6.02,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Callosciurus nigrovittatus","mass","Brain_Mass","g",4.44,4.44,3,1,0,FALSE,"Burger","secondary",NA,NA
@@ -189,7 +189,7 @@
 "Castor fiber","mass","Brain_Mass","g",44.978,44.978,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Catopuma temminckii","mass","Brain_Mass","g",68.03,68.03,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Cavia aperea","mass","Brain_Mass","g",4.04,4.04,3,1,0,FALSE,"Burger","secondary",NA,NA
-"Cavia porcellus","mass","Brain_Mass","g",4.162,4,6,3,0,FALSE,"Burger; Garwicz; HerculanoHouzel","secondary",NA,NA
+"Cavia porcellus","mass","Brain_Mass","g",3.656,3.656,6,3,1,TRUE,"Burger; Garwicz; HerculanoHouzel","primary; secondary",NA,NA
 "Cebus albifrons","mass","Brain_Mass","g",76.9714,76.9714,12,4,2,TRUE,"Burger; Lewitus; Stephan_collection; Zilles","primary; secondary",NA,NA
 "Cebus capucinus","mass","Brain_Mass","g",70.14,70.14,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Cebus libidinosus","mass","Brain_Mass","g",64.6854,64.6854,3,1,0,FALSE,"Burger","secondary",NA,NA
@@ -271,7 +271,7 @@
 "Chlorocebus sabaeus","mass","Brain_Mass","g",64.9133,64.9133,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Choeroniscus godmani","mass","Brain_Mass","g",0.34,0.34,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Choeroniscus minor","mass","Brain_Mass","g",0.389,0.389,3,1,0,FALSE,"Burger","secondary",NA,NA
-"Choloepus didactylus","mass","Brain_Mass","g",35.5167,36,6,3,0,FALSE,"Burger; Karl; Lewitus","secondary",NA,NA
+"Choloepus didactylus","mass","Brain_Mass","g",36,36,6,3,1,TRUE,"Burger; Karl; Lewitus","primary; secondary",NA,NA
 "Choloepus hoffmanni","mass","Brain_Mass","g",24.54,24.54,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Chrotopterus auritus","mass","Brain_Mass","g",1.74,1.74,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Chrysochloris asiatica","mass","Brain_Mass","g",0.7,0.7,5,2,1,TRUE,"Burger; Stephan_collection","primary; secondary",NA,NA
@@ -288,7 +288,7 @@
 "Colobus satanas","mass","Brain_Mass","g",74.9,74.9,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Colobus vellerosus","mass","Brain_Mass","g",73.0708,73.0708,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Columba livia","mass","Brain_Mass","g",2.0951,2.0951,3,1,1,TRUE,"Olkowicz","primary",NA,NA
-"Condylura cristata","mass","Brain_Mass","g",1.077,1.077,6,3,1,TRUE,"Burger; Changizi; HerculanoHouzel","primary; secondary",NA,NA
+"Condylura cristata","mass","Brain_Mass","g",0.9395,0.9395,6,3,2,TRUE,"Burger; Changizi; HerculanoHouzel","primary; secondary",NA,NA
 "Conepatus chinga","mass","Brain_Mass","g",18.7,18.7,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Conepatus humboldtii","mass","Brain_Mass","g",12.6,12.6,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Conepatus leuconotus","mass","Brain_Mass","g",14.4,14.4,3,1,0,FALSE,"Burger","secondary",NA,NA
@@ -341,7 +341,7 @@
 "Dama dama","mass","Brain_Mass","g",224.5,224.5,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Damaliscus lunatus","mass","Brain_Mass","g",290.6,290.6,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Damaliscus pygargus","mass","Brain_Mass","g",254.6,254.6,3,1,0,FALSE,"Burger","secondary",NA,NA
-"Damaliscus pygargus phillipsi","mass","Brain_Mass","g",154.892,154.892,5,2,1,TRUE,"HerculanoHouzel; Kazu","primary; secondary",NA,NA
+"Damaliscus pygargus phillipsi","mass","Brain_Mass","g",154.805,154.805,5,2,2,TRUE,"HerculanoHouzel; Kazu","primary",NA,NA
 "Dasycercus cristicauda","mass","Brain_Mass","g",1.24,1.24,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Dasykaluta rosamondae","mass","Brain_Mass","g",0.54,0.54,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Dasyprocta leporina","mass","Brain_Mass","g",19.23,19.23,4,2,0,FALSE,"Burger; Lewitus","secondary",NA,NA
@@ -359,8 +359,8 @@
 "Delphinapterus leucas","mass","Brain_Mass","g",1921,1921,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Delphinus delphis","mass","Brain_Mass","g",889.13,889.13,4,2,0,FALSE,"Burger; Lewitus","secondary",NA,NA
 "Dendrohyrax arboreus","mass","Brain_Mass","g",12.3,12.3,3,1,0,FALSE,"Burger","secondary",NA,NA
-"Dendrohyrax dorsalis","mass","Brain_Mass","g",12.8,12.8,3,1,0,FALSE,"HerculanoHouzel","secondary",NA,NA
-"Dendrohyrax sp.","mass","Brain_Mass","g",3.328,3.328,3,1,0,FALSE,"HerculanoHouzel","secondary",NA,NA
+"Dendrohyrax dorsalis","mass","Brain_Mass","g",12.8,12.8,3,1,1,TRUE,"HerculanoHouzel","primary",NA,NA
+"Dendrohyrax sp.","mass","Brain_Mass","g",3.328,3.328,3,1,1,TRUE,"HerculanoHouzel","primary",NA,NA
 "Dendrolagus bennettianus","mass","Brain_Mass","g",18.5,18.5,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Dendrolagus dorianus","mass","Brain_Mass","g",32.3,32.3,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Dendrolagus goodfellowi","mass","Brain_Mass","g",28.4,28.4,3,1,0,FALSE,"Burger","secondary",NA,NA
@@ -380,7 +380,7 @@
 "Didelphis marsupialis","mass","Brain_Mass","g",5.736,5.736,6,3,2,TRUE,"Burger; Changizi; Finlay","primary; secondary",NA,NA
 "Didelphis sp.","mass","Brain_Mass","g",5.3,5.3,3,1,1,TRUE,"Brodmann","primary",NA,NA
 "Didelphis virginiana","mass","Brain_Mass","g",4.36,4.36,6,3,1,TRUE,"Burger; Lewitus; Nudo","primary; secondary",NA,NA
-"Dinomys branickii","mass","Brain_Mass","g",31.625,31.625,4,2,0,FALSE,"Burger; Karl","secondary",NA,NA
+"Dinomys branickii","mass","Brain_Mass","g",36.3,36.3,4,2,1,TRUE,"Burger; Karl","primary; secondary",NA,NA
 "Diphylla ecaudata","mass","Brain_Mass","g",0.8015,0.8015,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Dipodillus campestris","mass","Brain_Mass","g",0.9,0.9,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Dipodillus dasyurus","mass","Brain_Mass","g",1.32,1.32,3,1,0,FALSE,"Burger","secondary",NA,NA
@@ -418,7 +418,7 @@
 "Eira barbara","mass","Brain_Mass","g",47.05,47.05,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Elephantulus fuscipes","mass","Brain_Mass","g",1.33,1.33,8,3,1,TRUE,"Burger; Lewitus; Stephan_collection","primary; secondary",NA,NA
 "Elephantulus intufi","mass","Brain_Mass","g",1.14,1.14,3,1,0,FALSE,"Burger","secondary",NA,NA
-"Elephantulus myurus","mass","Brain_Mass","g",1.26,1.37,5,3,0,FALSE,"Burger; Garwicz; HerculanoHouzel","secondary",NA,NA
+"Elephantulus myurus","mass","Brain_Mass","g",1.04,1.04,5,3,1,TRUE,"Burger; Garwicz; HerculanoHouzel","primary; secondary",NA,NA
 "Elephas maximus","mass","Brain_Mass","g",5211.25,5211.25,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Elephas sp.","mass","Brain_Mass","g",4925,4925,3,1,1,TRUE,"Brodmann","primary",NA,NA
 "Emballonura monticola","mass","Brain_Mass","g",0.163,0.163,3,1,0,FALSE,"Burger","secondary",NA,NA
@@ -442,7 +442,7 @@
 "Equus zebra","mass","Brain_Mass","g",548,548,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Erethizon dorsata","mass","Brain_Mass","g",24.6,24.6,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Erignathus barbatus","mass","Brain_Mass","g",460,460,3,1,0,FALSE,"Burger","secondary",NA,NA
-"Erinaceus europaeus","mass","Brain_Mass","g",3.225,3.32,14,8,4,TRUE,"Brodmann; Burger; Finlay; Garwicz; HerculanoHouzel; Lewitus; Nudo; Stephan_collection","primary; secondary",NA,NA
+"Erinaceus europaeus","mass","Brain_Mass","g",3.226,3.29,14,8,5,TRUE,"Brodmann; Burger; Finlay; Garwicz; HerculanoHouzel; Lewitus; Nudo; Stephan_collection","primary; secondary",NA,NA
 "Erythrocebus patas","mass","Brain_Mass","g",108,108,9,4,1,TRUE,"Burger; Lewitus; Stephan_collection; Zilles","primary; secondary",NA,NA
 "Eschrichtius robustus","mass","Brain_Mass","g",4316.67,4316.67,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Eudorcas thomsonii","mass","Brain_Mass","g",91.8,91.8,3,1,0,FALSE,"Burger","secondary",NA,NA
@@ -516,7 +516,7 @@
 "Gerbillus nanus","mass","Brain_Mass","g",0.6,0.6,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Gerbillus pyramidum","mass","Brain_Mass","g",0.88,0.88,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Gibraltar/Forbes Quarry","mass","Brain_Mass","g",1185.58,1185.58,3,1,1,TRUE,"Weaver","primary",NA,NA
-"Giraffa camelopardalis","mass","Brain_Mass","g",532.622,532.622,8,4,1,TRUE,"Burger; HerculanoHouzel; Karl; Kazu","primary; secondary",NA,NA
+"Giraffa camelopardalis","mass","Brain_Mass","g",581.577,537.109,8,4,3,TRUE,"Burger; HerculanoHouzel; Karl; Kazu","primary; secondary",NA,NA
 "Glaucomys sabrinus","mass","Brain_Mass","g",3.01,3.01,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Glaucomys volans","mass","Brain_Mass","g",1.71,1.71,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Glauconycteris beatrix","mass","Brain_Mass","g",0.144,0.144,3,1,0,FALSE,"Burger","secondary",NA,NA
@@ -527,7 +527,7 @@
 "Glossophaga longirostris","mass","Brain_Mass","g",0.435,0.435,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Glossophaga soricina","mass","Brain_Mass","g",0.4127,0.4127,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Gorilla beringei","mass","Brain_Mass","g",491.27,491.27,3,1,0,FALSE,"Burger","secondary",NA,NA
-"Gorilla gorilla","mass","Brain_Mass","g",401.7371,409.5714,20,8,3,TRUE,"Burger; deSousa; Garwicz; Lewitus; MacLeod; Stephan_collection; Weaver; Zilles","primary; secondary",NA,NA
+"Gorilla gorilla","mass","Brain_Mass","g",401.7371,409.5714,36,9,3,TRUE,"Armstrong; Burger; deSousa; Garwicz; Lewitus; MacLeod; Stephan_collection; Weaver; Zilles","primary; secondary",NA,NA
 "Gracula religiosa","mass","Brain_Mass","g",3.6696,3.6696,3,1,1,TRUE,"Olkowicz","primary",NA,NA
 "Grammomys cometes","mass","Brain_Mass","g",0.96,0.96,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Grammomys poensis","mass","Brain_Mass","g",1.55,1.55,3,1,0,FALSE,"Burger","secondary",NA,NA
@@ -560,7 +560,7 @@
 "Herpestes urva","mass","Brain_Mass","g",20.91,20.91,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Herpestes vitticollis","mass","Brain_Mass","g",25.79,25.79,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Hesperoptenus blanfordi","mass","Brain_Mass","g",0.158,0.158,3,1,0,FALSE,"Burger","secondary",NA,NA
-"Heterocephalus glaber","mass","Brain_Mass","g",0.4507,0.44,5,3,0,FALSE,"Burger; HerculanoHouzel; Kverkova","secondary",NA,NA
+"Heterocephalus glaber","mass","Brain_Mass","g",0.392,0.392,5,3,1,TRUE,"Burger; HerculanoHouzel; Kverkova","primary; secondary",NA,NA
 "Heterohyrax brucei","mass","Brain_Mass","g",12.27,12.27,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Heteromys desmarestianus","mass","Brain_Mass","g",1.13,1.13,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Hexaprotodon liberiensis","mass","Brain_Mass","g",215,215,3,1,0,FALSE,"Burger","secondary",NA,NA
@@ -589,7 +589,7 @@
 "Histriophoca fasciata","mass","Brain_Mass","g",248.75,248.75,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Holochilus chacarius","mass","Brain_Mass","g",1.61,1.61,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Holochilus sciureus","mass","Brain_Mass","g",1.41,1.41,3,1,0,FALSE,"Burger","secondary",NA,NA
-"Homo sapiens","mass","Brain_Mass","g",1374.7979,1335.8937,32,9,3,TRUE,"Brodmann; Burger; deSousa; Garwicz; HerculanoHouzel; Karl; Lewitus; Stephan_collection; Zilles","primary; secondary",NA,NA
+"Homo sapiens","mass","Brain_Mass","g",1393.8698,1336,50,10,5,TRUE,"Armstrong; Brodmann; Burger; deSousa; Garwicz; HerculanoHouzel; Karl; Lewitus; Stephan_collection; Zilles","primary; secondary",NA,NA
 "Homo sapiens (MRI)","mass","Brain_Mass","g",1302,1302,3,1,1,TRUE,"Weaver","primary",NA,NA
 "Hoplomys gymnurus","mass","Brain_Mass","g",4.13,4.13,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Hyaena brunnea","mass","Brain_Mass","g",106.7,106.7,3,1,0,FALSE,"Burger","secondary",NA,NA
@@ -597,7 +597,7 @@
 "Hybomys trivirgatus","mass","Brain_Mass","g",1.1,1.1,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Hydrictis maculicollis","mass","Brain_Mass","g",33,33,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Hydrochoeris hydrochaeris","mass","Brain_Mass","g",75,75,3,1,0,FALSE,"Burger","secondary",NA,NA
-"Hydrochoerus hydrochaeris","mass","Brain_Mass","g",69.117,69.117,5,2,0,FALSE,"HerculanoHouzel; Lewitus","secondary",NA,NA
+"Hydrochoerus hydrochaeris","mass","Brain_Mass","g",74.734,74.734,5,2,1,TRUE,"HerculanoHouzel; Lewitus","primary; secondary",NA,NA
 "Hydromys chrysogaster","mass","Brain_Mass","g",4.33,4.33,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Hydropotes inermis","mass","Brain_Mass","g",52,52,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Hydrurga leptonyx","mass","Brain_Mass","g",712.5,712.5,3,1,0,FALSE,"Burger","secondary",NA,NA
@@ -605,7 +605,7 @@
 "Hylobates","mass","Brain_Mass","g",74.1,74.1,3,1,1,TRUE,"Weaver","primary",NA,NA
 "Hylobates agilis","mass","Brain_Mass","g",88.1,88.1,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Hylobates klossii","mass","Brain_Mass","g",87.9913,87.9913,3,1,0,FALSE,"Burger","secondary",NA,NA
-"Hylobates lar","mass","Brain_Mass","g",102.25,102.25,14,6,2,TRUE,"Burger; deSousa; Jacobs; Lewitus; Stephan_collection; Zilles","info; primary; secondary",NA,NA
+"Hylobates lar","mass","Brain_Mass","g",102.25,102.25,26,7,2,TRUE,"Armstrong; Burger; deSousa; Jacobs; Lewitus; Stephan_collection; Zilles","info; primary; secondary",NA,NA
 "Hylobates moloch","mass","Brain_Mass","g",103,103,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Hylobates muelleri","mass","Brain_Mass","g",101.8,101.8,5,2,1,TRUE,"Burger; Zilles","primary; secondary",NA,NA
 "Hylobates pileatus","mass","Brain_Mass","g",84.6852,84.6852,3,1,0,FALSE,"Burger","secondary",NA,NA
@@ -672,7 +672,7 @@
 "Lemmus sibiricus","mass","Brain_Mass","g",1.49,1.49,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Lemmus trimucronatus","mass","Brain_Mass","g",0.9,0.9,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Lemniscomys striatus","mass","Brain_Mass","g",0.85,0.85,3,1,0,FALSE,"Burger","secondary",NA,NA
-"Lemur catta","mass","Brain_Mass","g",22.3267,22.3,5,3,0,FALSE,"Burger; Karl; Lewitus","secondary",NA,NA
+"Lemur catta","mass","Brain_Mass","g",22.3,22.3,5,3,1,TRUE,"Burger; Karl; Lewitus","primary; secondary",NA,NA
 "Leontopithecus chrysomelas","mass","Brain_Mass","g",11.8427,11.8427,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Leontopithecus rosalia","mass","Brain_Mass","g",12.7,12.7,6,3,1,TRUE,"Burger; Jacobs; Zilles","info; primary; secondary",NA,NA
 "Leopardus geoffroyi","mass","Brain_Mass","g",34,34,3,1,0,FALSE,"Burger","secondary",NA,NA
@@ -718,7 +718,7 @@
 "Lophuromys sikapusi","mass","Brain_Mass","g",1.13,1.13,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Loris lydekkerianus","mass","Brain_Mass","g",6.3,6.3,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Loris tardigradus","mass","Brain_Mass","g",6.75,6.75,11,4,2,TRUE,"Burger; Lewitus; Stephan_collection; Zilles","primary; secondary",NA,NA
-"Loxodonta africana","mass","Brain_Mass","g",4924.6531,4835,8,5,0,FALSE,"Burger; Garwicz; HerculanoHouzel; Karl; Lewitus","secondary",NA,NA
+"Loxodonta africana","mass","Brain_Mass","g",4726.655,4726.655,8,5,2,TRUE,"Burger; Garwicz; HerculanoHouzel; Karl; Lewitus","primary; secondary",NA,NA
 "Lutra lutra","mass","Brain_Mass","g",39,39,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Lutreolina crassicaudata","mass","Brain_Mass","g",3.41,3.41,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Lutrogale perspicillata","mass","Brain_Mass","g",61,61,3,1,0,FALSE,"Burger","secondary",NA,NA
@@ -732,16 +732,16 @@
 "Macaca arctoides","mass","Brain_Mass","g",100.7,100.7,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Macaca assamensis","mass","Brain_Mass","g",90.5,90.5,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Macaca cyclopis","mass","Brain_Mass","g",82,82,3,1,0,FALSE,"Burger","secondary",NA,NA
-"Macaca fascicularis","mass","Brain_Mass","g",47.815,47.815,8,5,2,TRUE,"Burger; deSousa; HerculanoHouzel; Nudo; Zilles","primary; secondary",NA,NA
+"Macaca fascicularis","mass","Brain_Mass","g",47.264,46.162,8,5,3,TRUE,"Burger; deSousa; HerculanoHouzel; Nudo; Zilles","primary; secondary",NA,NA
 "Macaca fuscata","mass","Brain_Mass","g",96.8,96.8,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Macaca hecki","mass","Brain_Mass","g",94.6,94.6,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Macaca leonina","mass","Brain_Mass","g",85.5981,85.5981,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Macaca maura","mass","Brain_Mass","g",83.3,83.3,4,2,1,TRUE,"Burger; Zilles","primary; secondary",NA,NA
-"Macaca mulatta","mass","Brain_Mass","g",81.0883,84.6415,20,11,5,TRUE,"Burger; Changizi; Finlay; Garwicz; HerculanoHouzel; Lewitus; Nudo; Stephan_collection; Turner; Weaver; Zilles","info; primary; secondary",NA,NA
+"Macaca mulatta","mass","Brain_Mass","g",82.1313,85.9938,20,11,6,TRUE,"Burger; Changizi; Finlay; Garwicz; HerculanoHouzel; Lewitus; Nudo; Stephan_collection; Turner; Weaver; Zilles","info; primary; secondary",NA,NA
 "Macaca nemestrina","mass","Brain_Mass","g",73.2,73.2,4,2,0,FALSE,"Burger; Turner","info; secondary",NA,NA
 "Macaca nigra","mass","Brain_Mass","g",97.5,97.5,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Macaca ochreata","mass","Brain_Mass","g",97.98,97.98,3,1,0,FALSE,"Burger","secondary",NA,NA
-"Macaca radiata","mass","Brain_Mass","g",51.9233,61.47,7,3,0,FALSE,"Burger; HerculanoHouzel; Turner","info; secondary",NA,NA
+"Macaca radiata","mass","Brain_Mass","g",61.47,61.47,7,3,1,TRUE,"Burger; HerculanoHouzel; Turner","info; primary; secondary",NA,NA
 "Macaca silenus","mass","Brain_Mass","g",85,85,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Macaca sinica","mass","Brain_Mass","g",58.15,58.15,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Macaca sylvanus","mass","Brain_Mass","g",87.7,87.7,3,1,0,FALSE,"Burger","secondary",NA,NA
@@ -823,7 +823,7 @@
 "Meriones unguiculatus","mass","Brain_Mass","g",1.13,1.13,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Mesechinus dauuricus","mass","Brain_Mass","g",2.9,2.9,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Mesembriomys gouldii","mass","Brain_Mass","g",4.59,4.59,3,1,0,FALSE,"Burger","secondary",NA,NA
-"Mesocricetus auratus","mass","Brain_Mass","g",1.0237,1.005,7,4,0,FALSE,"Burger; Garwicz; HerculanoHouzel; Lewitus","secondary",NA,NA
+"Mesocricetus auratus","mass","Brain_Mass","g",0.965,0.965,7,4,1,TRUE,"Burger; Garwicz; HerculanoHouzel; Lewitus","primary; secondary",NA,NA
 "Mesomys hispidus","mass","Brain_Mass","g",2.64,2.64,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Mesophylla macconnelli","mass","Brain_Mass","g",0.3445,0.3445,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Mesoplodon densirostris","mass","Brain_Mass","g",1424.5,1424.5,3,1,0,FALSE,"Burger","secondary",NA,NA
@@ -831,7 +831,7 @@
 "Mesoplodon mirus","mass","Brain_Mass","g",2355,2355,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Metachirus nudicaudatus","mass","Brain_Mass","g",3.5,3.5,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Micaelamys namaquensis","mass","Brain_Mass","g",0.89,0.89,3,1,0,FALSE,"Burger","secondary",NA,NA
-"Microcebus murinus","mass","Brain_Mass","g",1.78,1.78,11,4,1,TRUE,"Burger; HerculanoHouzel; Lewitus; Stephan_collection","primary; secondary",NA,NA
+"Microcebus murinus","mass","Brain_Mass","g",1.7895,1.7895,11,4,2,TRUE,"Burger; HerculanoHouzel; Lewitus; Stephan_collection","primary; secondary",NA,NA
 "Microcebus rufus","mass","Brain_Mass","g",1.7164,1.7164,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Microdipodops megacephalus","mass","Brain_Mass","g",0.56,0.56,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Microdipodops pallidus","mass","Brain_Mass","g",0.55,0.55,3,1,0,FALSE,"Burger","secondary",NA,NA
@@ -895,7 +895,7 @@
 "Murina tubinaris","mass","Brain_Mass","g",0.217,0.217,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Mus booduga","mass","Brain_Mass","g",0.31,0.31,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Mus musculoides","mass","Brain_Mass","g",0.96,0.96,3,1,0,FALSE,"Burger","secondary",NA,NA
-"Mus musculus","mass","Brain_Mass","g",0.6435,0.6435,10,7,2,TRUE,"Brodmann; Burger; Changizi; Garwicz; HerculanoHouzel; Karl; Lewitus","primary; secondary",NA,NA
+"Mus musculus","mass","Brain_Mass","g",0.5222,0.4445,10,7,4,TRUE,"Brodmann; Burger; Changizi; Garwicz; HerculanoHouzel; Karl; Lewitus","primary; secondary",NA,NA
 "Mus platythrix","mass","Brain_Mass","g",0.5,0.5,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Mus sp.","mass","Brain_Mass","g",0.5,0.5,3,1,1,TRUE,"Finlay","primary",NA,NA
 "Mustela altaica","mass","Brain_Mass","g",4.48,4.48,3,1,0,FALSE,"Burger","secondary",NA,NA
@@ -945,7 +945,7 @@
 "Myotis yumanensis","mass","Brain_Mass","g",0.13,0.13,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Myoxus glis","mass","Brain_Mass","g",1.9,1.9,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Myrmecobius fasciatus","mass","Brain_Mass","g",4.25,4.25,3,1,0,FALSE,"Burger","secondary",NA,NA
-"Myrmecophaga tridactyla","mass","Brain_Mass","g",80,80,4,2,0,FALSE,"Burger; Karl","secondary",NA,NA
+"Myrmecophaga tridactyla","mass","Brain_Mass","g",76,76,4,2,1,TRUE,"Burger; Karl","primary; secondary",NA,NA
 "Mystromys albicaudatus","mass","Brain_Mass","g",1.39,1.39,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Nandinia binotata","mass","Brain_Mass","g",17.3,17.3,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Nanger dama","mass","Brain_Mass","g",150,150,3,1,0,FALSE,"Burger","secondary",NA,NA
@@ -955,7 +955,7 @@
 "Nasua narica","mass","Brain_Mass","g",44.17,44.17,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Nasua nasua","mass","Brain_Mass","g",37.5,37.5,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Natalus tumidirostris","mass","Brain_Mass","g",0.245,0.245,3,1,0,FALSE,"Burger","secondary",NA,NA
-"Neofelis nebulosa","mass","Brain_Mass","g",68.5,68.5,4,2,0,FALSE,"Burger; Karl","secondary",NA,NA
+"Neofelis nebulosa","mass","Brain_Mass","g",68.3,68.3,4,2,1,TRUE,"Burger; Karl","primary; secondary",NA,NA
 "Neofiber alleni","mass","Brain_Mass","g",2.72,2.72,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Neomys fodiens","mass","Brain_Mass","g",0.32,0.32,8,3,1,TRUE,"Burger; Lewitus; Stephan_collection","primary; secondary",NA,NA
 "Neophascogale lorentzi","mass","Brain_Mass","g",2.45,2.45,3,1,0,FALSE,"Burger","secondary",NA,NA
@@ -979,7 +979,7 @@
 "Noctilio leporinus","mass","Brain_Mass","g",1.184,1.184,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Nomascus gabriellae","mass","Brain_Mass","g",119.375,119.375,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Notamacropus parma","mass","Brain_Mass","g",18.7,18.7,3,1,0,FALSE,"Burger","secondary",NA,NA
-"Notamacropus rufogriseus","mass","Brain_Mass","g",34,36,5,3,0,FALSE,"Burger; Karl; Lewitus","secondary",NA,NA
+"Notamacropus rufogriseus","mass","Brain_Mass","g",28.2,28.2,5,3,1,TRUE,"Burger; Karl; Lewitus","primary; secondary",NA,NA
 "Notiosorex crawfordi","mass","Brain_Mass","g",0.15,0.15,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Notomys alexis","mass","Brain_Mass","g",0.96,0.96,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Notopteris macdonaldi","mass","Brain_Mass","g",1.4527,1.4527,3,1,0,FALSE,"Burger","secondary",NA,NA
@@ -1029,7 +1029,7 @@
 "Orthogeomys heterodus","mass","Brain_Mass","g",4.31,4.31,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Orthogeomys hispidus","mass","Brain_Mass","g",3.98,3.98,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Orycteropus afer","mass","Brain_Mass","g",75.75,75.75,4,2,0,FALSE,"Burger; Garwicz","secondary",NA,NA
-"Oryctolagus cuniculus","mass","Brain_Mass","g",9.785,9.785,9,5,2,TRUE,"Brodmann; Burger; HerculanoHouzel; Lewitus; Nudo","primary; secondary",NA,NA
+"Oryctolagus cuniculus","mass","Brain_Mass","g",9.2287,8.116,9,5,3,TRUE,"Brodmann; Burger; HerculanoHouzel; Lewitus; Nudo","primary; secondary",NA,NA
 "Oryx beisa","mass","Brain_Mass","g",282,282,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Oryx gazella","mass","Brain_Mass","g",292,292,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Oryzomys palustris","mass","Brain_Mass","g",0.88,0.88,3,1,0,FALSE,"Burger","secondary",NA,NA
@@ -1038,7 +1038,7 @@
 "Otaria flavescens","mass","Brain_Mass","g",506.25,506.25,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Otocyon megalotis","mass","Brain_Mass","g",26.09,26.09,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Otolemur crassicaudatus","mass","Brain_Mass","g",10.3,10.3,10,3,1,TRUE,"Burger; Lewitus; Stephan_collection","primary; secondary",NA,NA
-"Otolemur garnettii","mass","Brain_Mass","g",10.8229,10.8229,4,2,0,FALSE,"Burger; HerculanoHouzel","secondary",NA,NA
+"Otolemur garnettii","mass","Brain_Mass","g",10.15,10.15,4,2,1,TRUE,"Burger; HerculanoHouzel","primary; secondary",NA,NA
 "Otolemur monteiri","mass","Brain_Mass","g",11.4,11.4,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Otomops martiensseni","mass","Brain_Mass","g",0.7555,0.7555,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Otomys angoniensis","mass","Brain_Mass","g",0.42,0.42,3,1,0,FALSE,"Burger","secondary",NA,NA
@@ -1053,15 +1053,15 @@
 "Pagophilus groenlandicus","mass","Brain_Mass","g",275.5,275.5,5,2,0,FALSE,"Burger; Jacobs","info; secondary",NA,NA
 "Paguma larvata","mass","Brain_Mass","g",30.9,30.9,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Pan paniscus","mass","Brain_Mass","g",342.8886,342.8886,19,5,2,TRUE,"Burger; deSousa; Stimpson; Weaver; Zilles","primary; secondary",NA,NA
-"Pan troglodytes","mass","Brain_Mass","g",361.719,379.1571,37,10,3,TRUE,"Brodmann; Burger; Collins; deSousa; Garwicz; Karl; Lewitus; Stephan_collection; Stimpson; Zilles","info; primary; secondary",NA,NA
+"Pan troglodytes","mass","Brain_Mass","g",373.1643,393.3286,51,11,4,TRUE,"Armstrong; Brodmann; Burger; Collins; deSousa; Garwicz; Karl; Lewitus; Stephan_collection; Stimpson; Zilles","info; primary; secondary",NA,NA
 "Panthera leo","mass","Brain_Mass","g",259,259,8,4,1,TRUE,"Brodmann; Burger; Jacobs; Lewitus","info; primary; secondary",NA,NA
 "Panthera onca","mass","Brain_Mass","g",149,149,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Panthera pardus","mass","Brain_Mass","g",135,135,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Panthera pardus orientalis","mass","Brain_Mass","g",125.5,125.5,4,1,0,FALSE,"Jacobs","info",NA,NA
 "Panthera tigris","mass","Brain_Mass","g",269.73,269.73,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Panthera tigris altaica","mass","Brain_Mass","g",279.3,279.3,4,1,0,FALSE,"Jacobs","info",NA,NA
-"Papio anubis","mass","Brain_Mass","g",201,201,8,4,1,TRUE,"Burger; Karl; Stephan_collection; Zilles","primary; secondary",NA,NA
-"Papio cynocephalus","mass","Brain_Mass","g",153.646,153.646,5,2,0,FALSE,"Burger; HerculanoHouzel","secondary",NA,NA
+"Papio anubis","mass","Brain_Mass","g",187.65,187.65,8,4,2,TRUE,"Burger; Karl; Stephan_collection; Zilles","primary; secondary",NA,NA
+"Papio cynocephalus","mass","Brain_Mass","g",151.192,151.192,5,2,1,TRUE,"Burger; HerculanoHouzel","primary; secondary",NA,NA
 "Papio cynocephalus anubis","mass","Brain_Mass","g",109.6417,109.6417,16,2,0,FALSE,"Turner; Young","info",NA,NA
 "Papio hamadryas","mass","Brain_Mass","g",161.0333,159.1,6,3,0,FALSE,"Burger; Jacobs; Lewitus","info; secondary",NA,NA
 "Papio papio","mass","Brain_Mass","g",142.5,142.5,3,1,0,FALSE,"Burger","secondary",NA,NA
@@ -1075,7 +1075,7 @@
 "Paramurexia rothschildi","mass","Brain_Mass","g",1.09,1.09,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Parantechinus apicalis","mass","Brain_Mass","g",1.2,1.2,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Paranyctimene raptor","mass","Brain_Mass","g",0.731,0.731,3,1,0,FALSE,"Burger","secondary",NA,NA
-"Parascalops breweri","mass","Brain_Mass","g",0.759,0.759,3,1,0,FALSE,"HerculanoHouzel","secondary",NA,NA
+"Parascalops breweri","mass","Brain_Mass","g",0.759,0.759,3,1,1,TRUE,"HerculanoHouzel","primary",NA,NA
 "Paraxerus cepapi","mass","Brain_Mass","g",2.85,2.85,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Parus major","mass","Brain_Mass","g",0.9403,0.9403,3,1,1,TRUE,"Olkowicz","primary",NA,NA
 "Pecari tajacu","mass","Brain_Mass","g",101.5,101.5,3,1,0,FALSE,"Burger","secondary",NA,NA
@@ -1119,7 +1119,7 @@
 "Petaurus biacensis","mass","Brain_Mass","g",1.68,1.68,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Petaurus breviceps","mass","Brain_Mass","g",2.09,2.09,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Petaurus norfolcensis","mass","Brain_Mass","g",3.02,3.02,3,1,0,FALSE,"Burger","secondary",NA,NA
-"Petrodromus tetradactylus","mass","Brain_Mass","g",2.44,2.44,3,1,0,FALSE,"HerculanoHouzel","secondary",NA,NA
+"Petrodromus tetradactylus","mass","Brain_Mass","g",2.44,2.44,3,1,1,TRUE,"HerculanoHouzel","primary",NA,NA
 "Petrogale assimilis","mass","Brain_Mass","g",17.5,17.5,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Petrogale brachyotis","mass","Brain_Mass","g",15.75,15.75,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Petrogale concinna","mass","Brain_Mass","g",11,11,3,1,0,FALSE,"Burger","secondary",NA,NA
@@ -1229,13 +1229,13 @@
 "Prionailurus viverrinus","mass","Brain_Mass","g",46.53,46.53,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Prionodon linsang","mass","Brain_Mass","g",8.5,8.5,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Prionodon pardicolor","mass","Brain_Mass","g",9.03,9.03,3,1,0,FALSE,"Burger","secondary",NA,NA
-"Procavia capensis","mass","Brain_Mass","g",12.42,12.42,8,5,1,TRUE,"Burger; HerculanoHouzel; Karl; Lewitus; Nudo","primary; secondary",NA,NA
-"Procavia sp.","mass","Brain_Mass","g",4.317,4.317,3,1,0,FALSE,"HerculanoHouzel","secondary",NA,NA
+"Procavia capensis","mass","Brain_Mass","g",15.791,16.853,8,5,3,TRUE,"Burger; HerculanoHouzel; Karl; Lewitus; Nudo","primary; secondary",NA,NA
+"Procavia sp.","mass","Brain_Mass","g",4.317,4.317,3,1,1,TRUE,"HerculanoHouzel","primary",NA,NA
 "Procolobus verus","mass","Brain_Mass","g",52.6004,52.6004,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Procyon cancrivorus","mass","Brain_Mass","g",61.56,61.56,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Procyon lotor","mass","Brain_Mass","g",31.87,31.87,8,4,1,TRUE,"Burger; Jacobs; Lewitus; Nudo","info; primary; secondary",NA,NA
 "Proechimys brevicauda","mass","Brain_Mass","g",2.95,2.95,3,1,0,FALSE,"Burger","secondary",NA,NA
-"Proechimys guyannensis","mass","Brain_Mass","g",2.078,2.078,3,1,0,FALSE,"HerculanoHouzel","secondary",NA,NA
+"Proechimys guyannensis","mass","Brain_Mass","g",2.078,2.078,3,1,1,TRUE,"HerculanoHouzel","primary",NA,NA
 "Proechimys semispinosus","mass","Brain_Mass","g",6.87,6.87,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Profelis aurata","mass","Brain_Mass","g",57.97,57.97,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Prolemur simus","mass","Brain_Mass","g",27.1449,27.1449,3,1,0,FALSE,"Burger","secondary",NA,NA
@@ -1296,7 +1296,7 @@
 "Pusa sibirica","mass","Brain_Mass","g",187.5,187.5,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Pygathrix nemaeus","mass","Brain_Mass","g",77,77,8,4,1,TRUE,"Burger; Lewitus; Stephan_collection; Zilles","primary; secondary",NA,NA
 "Pygathrix nigripes","mass","Brain_Mass","g",82.7476,82.7476,3,1,0,FALSE,"Burger","secondary",NA,NA
-"Rangifer tarandus","mass","Brain_Mass","g",265.45,265.45,4,2,0,FALSE,"Burger; Karl","secondary",NA,NA
+"Rangifer tarandus","mass","Brain_Mass","g",252.9,252.9,4,2,1,TRUE,"Burger; Karl","primary; secondary",NA,NA
 "Raphicerus campestris","mass","Brain_Mass","g",51.3,51.3,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Raphicerus melanotis","mass","Brain_Mass","g",55,55,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Rattus exulans","mass","Brain_Mass","g",0.89,0.89,3,1,0,FALSE,"Burger","secondary",NA,NA
@@ -1305,7 +1305,7 @@
 "Rattus morotaiensis","mass","Brain_Mass","g",1.92,1.92,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Rattus niobe","mass","Brain_Mass","g",1.1,1.1,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Rattus nitidus","mass","Brain_Mass","g",1.7,1.7,3,1,0,FALSE,"Burger","secondary",NA,NA
-"Rattus norvegicus","mass","Brain_Mass","g",1.6395,1.6395,11,6,2,TRUE,"Burger; Changizi; Garwicz; HerculanoHouzel; Lewitus; Nudo","primary; secondary",NA,NA
+"Rattus norvegicus","mass","Brain_Mass","g",1.6677,1.724,11,6,3,TRUE,"Burger; Changizi; Garwicz; HerculanoHouzel; Lewitus; Nudo","primary; secondary",NA,NA
 "Rattus sordidus","mass","Brain_Mass","g",1.7,1.7,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Rattus sp.","mass","Brain_Mass","g",1.79,1.79,3,1,1,TRUE,"Finlay","primary",NA,NA
 "Rattus tunneyi","mass","Brain_Mass","g",1.41,1.41,3,1,0,FALSE,"Burger","secondary",NA,NA
@@ -1380,15 +1380,15 @@
 "Saguinus pileatus","mass","Brain_Mass","g",9.5552,9.5552,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Saimiri boliviensis","mass","Brain_Mass","g",24.78,24.78,5,2,0,FALSE,"Burger; Jacobs","info; secondary",NA,NA
 "Saimiri oerstedii","mass","Brain_Mass","g",22.45,22.45,3,1,0,FALSE,"Burger","secondary",NA,NA
-"Saimiri sciureus","mass","Brain_Mass","g",21.63,22.74,15,8,4,TRUE,"Burger; Changizi; Finlay; HerculanoHouzel; Karl; Lewitus; Nudo; Stephan_collection","primary; secondary",NA,NA
+"Saimiri sciureus","mass","Brain_Mass","g",23.606,23.5,15,8,6,TRUE,"Burger; Changizi; Finlay; HerculanoHouzel; Karl; Lewitus; Nudo; Stephan_collection","primary; secondary",NA,NA
 "Salanoia concolor","mass","Brain_Mass","g",11.02,11.02,3,1,0,FALSE,"Burger","secondary",NA,NA
-"Sapajus apella","mass","Brain_Mass","g",61.829,61.829,5,2,0,FALSE,"Burger; HerculanoHouzel","secondary",NA,NA
+"Sapajus apella","mass","Brain_Mass","g",52.358,52.358,5,2,1,TRUE,"Burger; HerculanoHouzel","primary; secondary",NA,NA
 "Sarcophilus harrisii","mass","Brain_Mass","g",15.2,15.2,4,2,1,TRUE,"Brodmann; Burger","primary; secondary",NA,NA
-"Scalopus aquaticus","mass","Brain_Mass","g",0.57,0.57,6,3,1,TRUE,"Burger; HerculanoHouzel; Nudo","primary; secondary",NA,NA
+"Scalopus aquaticus","mass","Brain_Mass","g",0.7845,0.7845,6,3,2,TRUE,"Burger; HerculanoHouzel; Nudo","primary; secondary",NA,NA
 "Scapanus townsendii","mass","Brain_Mass","g",2.02,2.02,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Sciurus aberti","mass","Brain_Mass","g",7.44,7.44,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Sciurus aureogaster","mass","Brain_Mass","g",7.81,7.81,3,1,0,FALSE,"Burger","secondary",NA,NA
-"Sciurus carolinensis","mass","Brain_Mass","g",5.817,6,8,5,3,TRUE,"Burger; Changizi; Finlay; HerculanoHouzel; Nudo","primary; secondary",NA,NA
+"Sciurus carolinensis","mass","Brain_Mass","g",5.7498,5.774,8,5,4,TRUE,"Burger; Changizi; Finlay; HerculanoHouzel; Nudo","primary; secondary",NA,NA
 "Sciurus granatensis","mass","Brain_Mass","g",5.91,5.91,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Sciurus niger","mass","Brain_Mass","g",7.91,7.91,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Sciurus vulgaris","mass","Brain_Mass","g",5.93,5.93,3,1,0,FALSE,"Burger","secondary",NA,NA
@@ -1423,7 +1423,7 @@
 "Sorex araneus","mass","Brain_Mass","g",0.2,0.2,9,3,1,TRUE,"Burger; Lewitus; Stephan_collection","primary; secondary",NA,NA
 "Sorex arcticus","mass","Brain_Mass","g",0.27,0.27,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Sorex cinereus","mass","Brain_Mass","g",0.17,0.17,4,2,1,TRUE,"Burger; Finlay","primary; secondary",NA,NA
-"Sorex fumeus","mass","Brain_Mass","g",0.193,0.193,4,2,0,FALSE,"Burger; HerculanoHouzel","secondary",NA,NA
+"Sorex fumeus","mass","Brain_Mass","g",0.176,0.176,4,2,1,TRUE,"Burger; HerculanoHouzel","primary; secondary",NA,NA
 "Sorex hoyi","mass","Brain_Mass","g",0.09,0.09,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Sorex minutus","mass","Brain_Mass","g",0.11,0.11,8,3,1,TRUE,"Burger; Lewitus; Stephan_collection","primary; secondary",NA,NA
 "Sorex monticolus","mass","Brain_Mass","g",0.23,0.23,3,1,0,FALSE,"Burger","secondary",NA,NA
@@ -1499,8 +1499,8 @@
 "Sundamys muelleri","mass","Brain_Mass","g",3.5,3.5,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Surdisorex polulus","mass","Brain_Mass","g",0.4,0.4,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Suricata suricatta","mass","Brain_Mass","g",10.3,10.3,3,1,0,FALSE,"Burger","secondary",NA,NA
-"Sus scrofa","mass","Brain_Mass","g",112,112,6,4,1,TRUE,"Brodmann; Burger; HerculanoHouzel; Lewitus","primary; secondary",NA,NA
-"Sus scrofa domesticus","mass","Brain_Mass","g",60.969,60.969,6,3,1,TRUE,"HerculanoHouzel; Kazu; Lewitus","primary; secondary",NA,NA
+"Sus scrofa","mass","Brain_Mass","g",88.09,88.09,6,4,2,TRUE,"Brodmann; Burger; HerculanoHouzel; Lewitus","primary; secondary",NA,NA
+"Sus scrofa domesticus","mass","Brain_Mass","g",62.5745,62.5745,6,3,2,TRUE,"HerculanoHouzel; Kazu; Lewitus","primary; secondary",NA,NA
 "Swanscombe","mass","Brain_Mass","g",1184.63,1184.63,3,1,1,TRUE,"Weaver","primary",NA,NA
 "Syconycteris australis","mass","Brain_Mass","g",0.592,0.592,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Sylvia atricapilla","mass","Brain_Mass","g",0.7743,0.7743,3,1,1,TRUE,"Olkowicz","primary",NA,NA
@@ -1585,21 +1585,21 @@
 "Tragelaphus imberbis","mass","Brain_Mass","g",219,219,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Tragelaphus scriptus","mass","Brain_Mass","g",165,165,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Tragelaphus spekii","mass","Brain_Mass","g",145,145,3,1,0,FALSE,"Burger","secondary",NA,NA
-"Tragelaphus strepsiceros","mass","Brain_Mass","g",307.691,307.691,6,3,1,TRUE,"Burger; HerculanoHouzel; Kazu","primary; secondary",NA,NA
+"Tragelaphus strepsiceros","mass","Brain_Mass","g",307.2755,307.2755,6,3,2,TRUE,"Burger; HerculanoHouzel; Kazu","primary; secondary",NA,NA
 "Tragulus javanicus","mass","Brain_Mass","g",15.8,15.8,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Tragulus napu","mass","Brain_Mass","g",18.5,18.5,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Triaenops persicus","mass","Brain_Mass","g",0.2705,0.2705,3,1,0,FALSE,"Burger","secondary",NA,NA
-"Trichechus manatus","mass","Brain_Mass","g",365.3333,364,6,3,0,FALSE,"Burger; Karl; Lewitus","secondary",NA,NA
+"Trichechus manatus","mass","Brain_Mass","g",350,350,6,3,1,TRUE,"Burger; Karl; Lewitus","primary; secondary",NA,NA
 "Trichosurus caninus","mass","Brain_Mass","g",11.9,11.9,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Trichosurus vulpecula","mass","Brain_Mass","g",12.5,12.5,4,2,1,TRUE,"Brodmann; Burger","primary; secondary",NA,NA
 "Trichys fasciculata","mass","Brain_Mass","g",13.05,13.05,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Trinil 2/Pith I","mass","Brain_Mass","g",928.2,928.2,3,1,1,TRUE,"Weaver","primary",NA,NA
 "Tscherskia triton","mass","Brain_Mass","g",1.29,1.29,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Tupaia belangeri","mass","Brain_Mass","g",2.806,2.806,6,3,2,TRUE,"Changizi; Finlay; Garwicz","primary; secondary",NA,NA
-"Tupaia glis","mass","Brain_Mass","g",2.8275,2.8275,11,5,2,TRUE,"Burger; HerculanoHouzel; Lewitus; Nudo; Stephan_collection","primary; secondary",NA,NA
+"Tupaia glis","mass","Brain_Mass","g",2.8023,2.752,11,5,3,TRUE,"Burger; HerculanoHouzel; Lewitus; Nudo; Stephan_collection","primary; secondary",NA,NA
 "Tupaia javanica","mass","Brain_Mass","g",2.3,2.3,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Tupaia minor","mass","Brain_Mass","g",2.58,2.58,5,2,1,TRUE,"Burger; Stephan_collection","primary; secondary",NA,NA
-"Tupaia sp.","mass","Brain_Mass","g",3.04,3.04,3,1,0,FALSE,"HerculanoHouzel","secondary",NA,NA
+"Tupaia sp.","mass","Brain_Mass","g",3.04,3.04,3,1,1,TRUE,"HerculanoHouzel","primary",NA,NA
 "Turdus merula","mass","Brain_Mass","g",1.8872,1.8872,3,1,1,TRUE,"Olkowicz","primary",NA,NA
 "Tursiops aduncus","mass","Brain_Mass","g",1498,1498,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Tursiops truncatus","mass","Brain_Mass","g",1531,1531,5,2,0,FALSE,"Burger; Lewitus","secondary",NA,NA
@@ -1613,7 +1613,7 @@
 "Uroderma bilobatum","mass","Brain_Mass","g",0.5773,0.5773,3,1,0,FALSE,"Burger","secondary",NA,NA
 "Urogale everetti","mass","Brain_Mass","g",4.28,4.28,7,2,1,TRUE,"Burger; Stephan_collection","primary; secondary",NA,NA
 "Ursus americanus","mass","Brain_Mass","g",248,248,3,1,0,FALSE,"Burger","secondary",NA,NA
-"Ursus arctos","mass","Brain_Mass","g",360.485,360.485,4,2,0,FALSE,"Burger; Karl","secondary",NA,NA
+"Ursus arctos","mass","Brain_Mass","g",385,385,4,2,1,TRUE,"Burger; Karl","primary; secondary",NA,NA
 "Ursus maritimus","mass","Brain_Mass","g",489.84,489.84,5,2,0,FALSE,"Burger; Lewitus","secondary",NA,NA
 "Ursus sp.","mass","Brain_Mass","g",350,350,3,1,1,TRUE,"Brodmann","primary",NA,NA
 "Ursus thibetanus","mass","Brain_Mass","g",269,269,3,1,0,FALSE,"Burger","secondary",NA,NA

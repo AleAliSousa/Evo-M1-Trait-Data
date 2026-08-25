@@ -47,7 +47,7 @@ combined only in an explicitly restricted build.
 | `resolved_taxon` | current best identity for **this individual** (may be `NA` if unresolved). Reassignable as evidence improves. |
 | `taxon_concept` | FK → `taxon_concept_registry.taxon_concept`. Which concept the *printed* label belongs to (e.g. an old row printed `Pongo pygmaeus` links to `Pongo pygmaeus (s.l.)`). |
 | `taxon_conflict` | `TRUE` if sources disagree on this individual's taxon. |
-| `match` | `matched` / `<source>-only` / `unmatched`. |
+| `match` | `matched` / `probable` / `<source>-only` / `unmatched`. Use `probable` when public evidence strongly supports one animal but no accession or explicit identity statement closes the link. |
 | `sex` | `M`/`F`/`NA`. |
 | `note` | free text: evidence, links, caveats. |
 

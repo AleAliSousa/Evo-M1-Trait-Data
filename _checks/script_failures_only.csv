@@ -1,24 +1,11 @@
 "script","status","error","start_time","end_time","elapsed_seconds"
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_gait_excursion_medina.R","FAILED","New names:
-• `` -> `...3`
-Error in file(file, ""rt"") : cannot open the connection
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_gait_excursion_medina.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
 Calls: read.table -> file
 In addition: Warning message:
 In file(file, ""rt"") :
   cannot open file './__Public/comparative-data/10.1002%2Fjez.70069_Data.tsv': No such file or directory
-Execution halted","2026-08-24 08:06:36.011696","2026-08-24 08:06:36.965113",0.95341682434082
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__ShinyApp/build_data.R","FAILED","repo: /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data
-out:  /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__ShinyApp/data
-Error in unz(zip_path, file_path, open = ""rb"") : 
-  cannot open the connection
-Calls: as.data.frame ... standardise_sheet -> %in% -> sheets_fun -> <Anonymous> -> unz
-In addition: Warning message:
-In unz(zip_path, file_path, open = ""rb"") :
-  cannot open zip file '/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/interlaminar_astrocytes.xlsx'
-Execution halted","2026-08-24 08:08:12.18575","2026-08-24 08:08:14.646342",2.46059203147888
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_item_name_resolution.R","FAILED","New names:
-• `` -> `...3`
-registry Item names: 333   |   TSVs on disk: 264   |   NA.tsv present: no
+Execution halted","2026-08-25 10:23:09.939382","2026-08-25 10:23:10.588083",0.648700952529907
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_item_name_resolution.R","FAILED","registry Item names: 334   |   TSVs on disk: 266   |   NA.tsv present: no
 
 __merging_behaviour/behaviour_compiled.R                     0 item name(s) referenced   OK
 __merging_body_ecology/body_ecology_compiled.R               0 item name(s) referenced   OK
@@ -40,21 +27,41 @@ orphaned TSVs (on disk, claimed by no registry row): 1
 rows with a citation but no Item name (need _tools/file_list.R): 0
 
 all referenced item names resolve to a TSV on disk.
-run _tools/restore_registry_rows.R (adding any new row to its ROWS list), then _tools/file_list.R.","2026-08-24 08:08:14.650999","2026-08-24 08:08:15.674448",1.0234489440918
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_tools/file_list.R","FAILED","Warning message:
-Column L is 'Item.name', not the expected 'Item encoded'. Check column alignment. 
-Error: Non-canonical Sheet1 naming formula(s): F2, G2, H2, I2, J2, K2, L2, M2, I3, K3, I4, K4, I41, K41, I42, K42, F52, G52, H52, I52, J52, K52, L52, M52, F66, G66, H66, I66, J66, K66, L66, M66, F69, G69, H69, I69, J69, K69, L69, M69, I95, K95, I96, K96, F101, G101, H101, J101, L101, M101, I128, K128, F133, G133, H133, J133, L133, M133, I160, K160, F165, G165, H165, J165, L165, M165, I192, K192, F197, G197, H197, J197, L197, M197, F206, G206, H206, I206, J206, K206, L206, M206, F210, G210, H210, I210, J210, K210, L210, M210, I227, F229, G229, H229, I229, J229, K229, L229, M229, F234, G234, H234, I234, J234, K234, L234, M234, I235, K235, F260, G260, H260, I260, J260, K260, L260, M260, F261, G261, H261, J261, L261, M261, I267, K267, I299, K299, I323, K323, I324, K324, F325, G325, H325, I325, J325, K325, L325, M325, I331, K331, F341, G341, H341, I341, J341, K341, L341, M341. Review explicitly; file_list.R will not overwrite them.
-Execution halted","2026-08-24 08:14:28.456355","2026-08-24 08:14:29.375035",0.91867995262146
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_tools/restore_registry_rows.R","FAILED","New names:
-• `` -> `...3`
-Error: column 3 is '...3', not the expected 'DOI if different ...'. Check column alignment before writing.
-Execution halted","2026-08-24 08:14:29.384999","2026-08-24 08:14:30.143907",0.758908033370972
+run _tools/restore_registry_rows.R (adding any new row to its ROWS list), then _tools/file_list.R.","2026-08-25 10:24:43.570555","2026-08-25 10:24:44.37111",0.800554990768433
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_keys/build_variable_catalog.R","FAILED","Error in `transmute()`:
+ℹ In argument: `domain`.
+Caused by error:
+! object 'domain' not found
+Backtrace:
+     ▆
+  1. ├─... %>% arrange(canonical_structure, measure_class, paper)
+  2. ├─dplyr::arrange(., canonical_structure, measure_class, paper)
+  3. ├─dplyr::transmute(...)
+  4. ├─dplyr:::transmute.data.frame(...)
+  5. │ └─dplyr:::mutate_cols(.data, dots, by)
+  6. │   ├─base::withCallingHandlers(...)
+  7. │   └─dplyr:::mutate_col(dots[[i]], data, mask, new_columns)
+  8. │     └─mask$eval_all_mutate(quo)
+  9. │       └─dplyr (local) eval()
+ 10. └─base::.handleSimpleError(...)
+ 11.   └─dplyr (local) h(simpleError(msg, call))
+ 12.     └─rlang::abort(message, class = error_class, parent = parent, call = error_call)
+Warning message:
+In left_join(., anat, by = "".struct_key"") :
+  Detected an unexpected many-to-many relationship between `x` and `y`.
+ℹ Row 1 of `x` matches multiple rows in `y`.
+ℹ Row 41 of `y` matches multiple rows in `x`.
+ℹ If a many-to-many relationship is expected, set `relationship =
+  ""many-to-many""` to silence this warning.
+Execution halted","2026-08-25 10:27:52.126517","2026-08-25 10:27:54.085866",1.95934891700745
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_tools/__register_remaining_builds_20260824.R","FAILED","Error: Registry row guard failed at row 3: expected Item name 'Armstrong__1979_Tables1-9'.
+Execution halted","2026-08-25 10:32:26.101181","2026-08-25 10:32:26.654882",0.553700923919678
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/deJager_etal_2022/deJager_etal_2022.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
 Calls: read.csv -> read.table -> file
 In addition: Warning message:
 In file(file, ""rt"") :
   cannot open file 'deJager_etal_2022_calibration.csv': No such file or directory
-Execution halted","2026-08-24 08:15:34.828454","2026-08-24 08:15:35.095747",0.267292976379395
+Execution halted","2026-08-25 10:33:38.40102","2026-08-25 10:33:38.683439",0.282418966293335
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/DosSantos_etal_2020/DosSantos_etal_2020_Table1_check.R","FAILED","
 Attaching package: ‘dplyr’
 
@@ -67,56 +74,10 @@ The following objects are masked from ‘package:base’:
     intersect, setdiff, setequal, union
 
 Error: `path` does not exist: ‘/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/DosSantos_etal_2020/2020-PublishedDataMammalsMicroglia - cópia.xlsx’
-Execution halted","2026-08-24 08:15:39.331133","2026-08-24 08:15:40.186415",0.855282068252563
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heffner_Masterton_1983/Heffner_Masterton_1983_TableI.R","FAILED","New names:
-• `` -> `...1`
-• `` -> `...2`
-• `` -> `...3`
-• `` -> `...4`
-• `` -> `...5`
-• `` -> `...6`
-• `` -> `...7`
-• `` -> `...8`
-• `` -> `...9`
-• `` -> `...10`
-• `` -> `...11`
-• `` -> `...12`
-Error in `transmute()`:
-ℹ In argument: `area_mm2_ref = ref_of(area_mm2)`.
-Caused by error in `vec_assign()`:
-! Can't convert `replace` <character> to match type of `data` <double>.
-Backtrace:
-     ▆
-  1. ├─snap %>% ...
-  2. ├─dplyr::transmute(...)
-  3. ├─dplyr:::transmute.data.frame(...)
-  4. │ └─dplyr:::mutate_cols(.data, dots, by)
-  5. │   ├─base::withCallingHandlers(...)
-  6. │   └─dplyr:::mutate_col(dots[[i]], data, mask, new_columns)
-  7. │     └─mask$eval_all_mutate(quo)
-  8. │       └─dplyr (local) eval()
-  9. ├─global ref_of(area_mm2)
- 10. │ ├─stringr::str_extract(replace_na(x, """"), ""\\[.*\\]"")
- 11. │ │ └─stringr:::check_lengths(string, pattern)
- 12. │ │   └─vctrs::vec_size_common(...)
- 13. │ │     └─rlang::list2(...) at vctrs/R/size.R:97:3
- 14. │ ├─tidyr::replace_na(x, """")
- 15. │ └─tidyr:::replace_na.default(x, """")
- 16. │   └─vctrs::vec_assign(data, missing, replace, x_arg = ""data"", value_arg = ""replace"")
- 17. └─vctrs (local) `<fn>`() at vctrs/R/slice.R:263:3
- 18.   └─vctrs::vec_default_cast(...)
- 19.     ├─base::withRestarts(...) at vctrs/R/cast.R:236:3
- 20.     │ └─base (local) withOneRestart(expr, restarts[[1L]])
- 21.     │   └─base (local) doWithOneRestart(return(expr), restart)
- 22.     └─vctrs::stop_incompatible_cast(...) at vctrs/R/cast.R:236:3
- 23.       └─vctrs::stop_incompatible_type(...) at vctrs/R/conditions.R:172:3
- 24.         └─vctrs:::stop_incompatible(...) at vctrs/R/conditions.R:146:3
- 25.           └─vctrs:::stop_vctrs(...) at vctrs/R/conditions.R:95:3
- 26.             └─rlang::abort(message, class = c(class, ""vctrs_error""), ..., call = call) at vctrs/R/conditions.R:65:3
-Execution halted","2026-08-24 08:15:59.615432","2026-08-24 08:16:00.360689",0.745256900787354
+Execution halted","2026-08-25 10:33:43.079887","2026-08-25 10:33:43.795705",0.715818166732788
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heuer_etal_2023/source_data/load_data.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
 Calls: read.csv -> read.table -> file
 In addition: Warning message:
 In file(file, ""rt"") :
   cannot open file '../data/derived/csv/01_cb_area_length.csv': No such file or directory
-Execution halted","2026-08-24 08:16:20.856586","2026-08-24 08:16:21.168353",0.311767101287842
+Execution halted","2026-08-25 10:34:37.229176","2026-08-25 10:34:37.54722",0.318043947219849

@@ -21,6 +21,7 @@ cannot be split into modern species without fabricating its composition.
 | `SCHEMA.md` | authoritative column contracts and merge consumer rules |
 | `SPECIMEN_INFORMATION_BOUNDARY.md` | source/access decision, fossil distinction, split architecture, and external-link plan |
 | `specimen_source_registry.csv` | evidence-source inventory with publication status, access class, specimen kind, location, and split action |
+| `via_data_source_registry.csv` | mixed secondary/author-supplied datasets, independence class, and default merge treatment |
 | `specimen_crosswalk.csv` | public identity rows, one per individual × source label, with explicit `specimen_kind` |
 | `taxon_concept_registry.csv` | broad, narrow, fossil-grade, extant, and indeterminate taxon concepts |
 | `specimen_external_links.csv` | initially empty table for later museum, catalog, studbook, and biodiversity-database links |
@@ -51,6 +52,12 @@ depends on a private catalog, workbook, or correspondence.
 The public crosswalk must work by itself. A restricted overlay can be added
 only in an explicitly restricted build. Merely mounting the companion
 repository must not silently change output.
+
+The via-data registry handles a different provenance problem: a paper can be
+mostly secondary while also being the first public route to values supplied by
+an earlier measurement team. Such a publication is not automatically a new
+independent team. Genuine gap-filling values retain both their measuring team
+and their route of access.
 
 ## Fossils
 

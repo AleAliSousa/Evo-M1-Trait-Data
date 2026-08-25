@@ -1,0 +1,21 @@
+field,definition,units_or_transform,provenance
+Species,Species label used in the supplement,underscore-separated binomial,publication supplement
+BoW,Body weight sexual dimorphism,ln(male arithmetic mean/female arithmetic mean),unpublished individual records via Frahm except the female Miopithecus value
+BrW,Brain weight sexual dimorphism,ln(male arithmetic mean/female arithmetic mean),unpublished individual records via Frahm
+BrVol,Brain volume sexual dimorphism,ln(male arithmetic mean/female arithmetic mean),unpublished individual records via Frahm
+VEN,Ventricles sexual dimorphism,ln(male arithmetic mean/female arithmetic mean),unpublished individual records via Frahm
+REST,Rest term sexual dimorphism,ln(male arithmetic mean/female arithmetic mean),unpublished individual records via Frahm
+NET,Total brain net sexual dimorphism,ln(male arithmetic mean/female arithmetic mean),unpublished individual records via Frahm
+OBL,Medulla oblongata sexual dimorphism,ln(male arithmetic mean/female arithmetic mean),unpublished individual records via Frahm
+CER,Cerebellum sexual dimorphism,ln(male arithmetic mean/female arithmetic mean),unpublished individual records via Frahm
+MES,Mesencephalon sexual dimorphism,ln(male arithmetic mean/female arithmetic mean),unpublished individual records via Frahm
+DIE,Diencephalon including globus pallidus and excluding hypophysis sexual dimorphism,ln(male arithmetic mean/female arithmetic mean),unpublished individual records via Frahm
+TEL,Telencephalon sexual dimorphism,ln(male arithmetic mean/female arithmetic mean),unpublished individual records via Frahm
+BOL,Olfactory bulb including accessory olfactory bulb sexual dimorphism,ln(male arithmetic mean/female arithmetic mean),unpublished individual records via Frahm
+PAL,Lobus piriformis including palaeocortex and amygdala sexual dimorphism,ln(male arithmetic mean/female arithmetic mean),unpublished individual records via Frahm
+SEP,Septum sexual dimorphism,ln(male arithmetic mean/female arithmetic mean),unpublished individual records via Frahm
+STR,Striatum sexual dimorphism,ln(male arithmetic mean/female arithmetic mean),unpublished individual records via Frahm
+SCH,Schizocortex sexual dimorphism,ln(male arithmetic mean/female arithmetic mean),unpublished individual records via Frahm
+HIP,Hippocampus sexual dimorphism,ln(male arithmetic mean/female arithmetic mean),unpublished individual records via Frahm
+NEO,Neocortex including white and grey matter sexual dimorphism,ln(male arithmetic mean/female arithmetic mean),unpublished individual records via Frahm
+TOT,Total sexual dimorphism,ln(male arithmetic mean/female arithmetic mean),unpublished individual records via Frahm

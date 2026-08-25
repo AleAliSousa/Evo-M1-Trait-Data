@@ -44,4 +44,12 @@ flow/isotropic-fractionator method. The `specimen_overlap_Collins2010` column re
 whole-cortex surface or whole-cortex cell counts. In `__merging_cortical_areas`, M1 area enters as a
 distinct regional sub-trait `M1_Surface_Area.mm2`, never as `CorticalSurface_Area.mm2`.
 
+## Chimpanzee overlap with Collins et al. 2016
+
+The chimpanzee is registered under `KAAS-PAN-11_38` as a **probable** match to
+the 53-year-old female documented by Collins 2016 and the Turner/Miller
+dissertations. Young prints no age, sex, or case number, so the registry does
+not call this confirmed. It does, however, block treating the two chimp rows as
+independent by default.
+
 Pipeline: Source → Snapshot ✅ → Data readable ✅ → Species note ✅ → Online database ✅

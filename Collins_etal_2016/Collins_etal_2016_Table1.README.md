@@ -20,13 +20,19 @@ Values transcribed from the paper text/figures to `Collins_etal_2016_text_snapsh
 (9.51 billion → 9.51e9), non-breaking spaces stripped, `% neurons` kept as a fraction. Columns in
 `reference_tables/Collins_etal_2016_Table1_definitions.csv`.
 
-## Specimen flag — likely the same chimp as Young 2013 (M1)
-The `specimen_overlap` column marks every row: this chimpanzee is almost certainly the **same
-individual** as the *Pan troglodytes* in **Young et al. 2013 (M1, folder `Young_etal_2013`)** — both
-are the Kaas lab's single female chimpanzee obtained from the Texas Biomedical Research Institute. The
-M1 surface area differs slightly (**2497 mm² here vs 2700 mm² in Young 2013**), consistent with
-different M1 dissection boundaries rather than different animals. **Do not treat Collins 2016 and
-Young 2013 as independent chimpanzees.**
+## Specimen flag — registered as `KAAS-PAN-11_38`
+
+Public dissertation evidence closes the Collins identity link: Turner describes
+the same 53-year-old female Texas Biomedical chimpanzee and right flattened
+cortex, while Miller identifies her left-hemisphere V1 series as case `11_38`.
+Those three source rows are `matched` in
+`_keys/specimen_crosswalk/specimen_crosswalk.csv`.
+
+Young et al. 2013 remains a high-confidence **probable** link to the same chimp,
+not an accession-confirmed one: Young prints the Kaas lab's single Texas
+chimpanzee but omits age, sex, and case number. Its M1 surface area is 2700 mm²
+versus 2497 mm² here, consistent with different M1 boundaries. **Do not count
+the Young and Collins chimp rows as independent without resolving that flag.**
 
 ## Merge note (not added)
 This table is **not** added to `__merging_cortical_areas` here: its whole-cortex surface (341 cm² =

@@ -27,6 +27,9 @@ allowed_kinds <- c(
   "historical_biological_specimen", "fossil_specimen",
   "in_vivo_subject", "unknown"
 )
+allowed_match <- function(x) {
+  x %in% c("matched", "probable", "unmatched") | grepl("-only$", x)
+}
 
 sources <- read_key("specimen_source_registry.csv")
 concepts <- read_key("taxon_concept_registry.csv")
@@ -39,6 +42,7 @@ validate_layer <- function(x, expected_access, label) {
   stopifnot(identical(names(x), required))
   stopifnot(all(x$record_type == "specimen"))
   stopifnot(all(x$specimen_kind %in% allowed_kinds))
+  stopifnot(all(allowed_match(x$match)))
   stopifnot(all(x$access_class == expected_access))
   stopifnot(!anyDuplicated(paste(
     x$canonical_specimen, x$source_publication, x$item_reference, sep = "\r"

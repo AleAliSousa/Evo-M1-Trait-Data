@@ -32,12 +32,17 @@ MacLeod et al. 2003 (their Table 2). So Barger's amygdala values can be merged *
 with Stephan/MacLeod for these individuals — not just at the species mean. Primary stereology
 (Cavalieri, NB hand-traced). n = 1 human, 3 chimpanzee, 2 bonobo, 1 gorilla, 3 orangutan, 2 gibbon.
 
-## Species note (IN PROGRESS)
-Group labels mapped to binomials (Human→Homo sapiens, Chimpanzee→Pan troglodytes, Bonobo→Pan
-paniscus, Gorilla→Gorilla gorilla, Orangutan→Pongo pygmaeus, Gibbon→Hylobates lar); reconcile to
-`_keys/Stephan/species_key.csv` and confirm orangutan species (pygmaeus vs abelii) per specimen.
+## Specimen registration
 
-Pipeline: Source → Snapshot ✅ → Data readable ✅ → Species note ⏳ → Online database ☐
+All 12 rows are registered in
+`_keys/specimen_crosswalk/specimen_crosswalk.csv`. Ten ape rows reuse the
+canonical MacLeod/de Sousa specimen, while human `SN207/84` remains
+`Barger-only`. Orangutans remain attached to the historical *Pongo pygmaeus*
+sensu-lato concept except YN85-38, which public MacLeod evidence resolves as
+*Pongo abelii*. Disco remains taxonomically flagged rather than silently
+rewritten.
+
+Pipeline: Source → Snapshot ✅ → Data readable ✅ → Species/specimen note ✅ → Online database ☐
 
 _Note: Table 2 (literature comparison of AC volume ranges across studies) is secondary and not
 snapshotted here; can be added if wanted._

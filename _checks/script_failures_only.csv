@@ -4,7 +4,7 @@ Calls: read.table -> file
 In addition: Warning message:
 In file(file, ""rt"") :
   cannot open file './__Public/comparative-data/10.1002%2Fjez.70069_Data.tsv': No such file or directory
-Execution halted","2026-08-25 10:23:09.939382","2026-08-25 10:23:10.588083",0.648700952529907
+Execution halted","2026-08-25 23:31:26.239827","2026-08-25 23:31:26.882814",0.642987012863159
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_item_name_resolution.R","FAILED","registry Item names: 334   |   TSVs on disk: 266   |   NA.tsv present: no
 
 __merging_behaviour/behaviour_compiled.R                     0 item name(s) referenced   OK
@@ -13,7 +13,7 @@ __merging_brain_mass/brain_mass_compiled.R                   0 item name(s) refe
 __merging_cellcounts/cellcounts_compiled.R                  15 item name(s) referenced   OK
 __merging_cerebellar_folding/cerebellar_folding_compiled.R   0 item name(s) referenced   OK
 __merging_cerebral_metabolic_rate/cerebral_metabolic_rate_compiled.R   0 item name(s) referenced   OK
-__merging_cortical_areas/cortical_areas_compiled.R           6 item name(s) referenced   OK
+__merging_cortical_areas/cortical_areas_compiled.R           9 item name(s) referenced   OK
 __merging_cortical_layers/cortical_layers_compiled.R         1 item name(s) referenced   OK
 __merging_fossil_brain_glucose/fossil_brain_glucose_compiled.R   0 item name(s) referenced   OK
 __merging_gyrification/gyrification_compiled.R               3 item name(s) referenced   OK
@@ -27,7 +27,7 @@ orphaned TSVs (on disk, claimed by no registry row): 1
 rows with a citation but no Item name (need _tools/file_list.R): 0
 
 all referenced item names resolve to a TSV on disk.
-run _tools/restore_registry_rows.R (adding any new row to its ROWS list), then _tools/file_list.R.","2026-08-25 10:24:43.570555","2026-08-25 10:24:44.37111",0.800554990768433
+run _tools/restore_registry_rows.R (adding any new row to its ROWS list), then _tools/file_list.R.","2026-08-25 23:33:03.703251","2026-08-25 23:33:04.510284",0.807033061981201
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_keys/build_variable_catalog.R","FAILED","Error in `transmute()`:
 ℹ In argument: `domain`.
 Caused by error:
@@ -53,15 +53,15 @@ In left_join(., anat, by = "".struct_key"") :
 ℹ Row 41 of `y` matches multiple rows in `x`.
 ℹ If a many-to-many relationship is expected, set `relationship =
   ""many-to-many""` to silence this warning.
-Execution halted","2026-08-25 10:27:52.126517","2026-08-25 10:27:54.085866",1.95934891700745
+Execution halted","2026-08-25 23:36:22.586292","2026-08-25 23:36:24.602827",2.01653504371643
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_tools/__register_remaining_builds_20260824.R","FAILED","Error: Registry row guard failed at row 3: expected Item name 'Armstrong__1979_Tables1-9'.
-Execution halted","2026-08-25 10:32:26.101181","2026-08-25 10:32:26.654882",0.553700923919678
+Execution halted","2026-08-25 23:39:31.455022","2026-08-25 23:39:32.231145",0.776122808456421
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/deJager_etal_2022/deJager_etal_2022.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
 Calls: read.csv -> read.table -> file
 In addition: Warning message:
 In file(file, ""rt"") :
   cannot open file 'deJager_etal_2022_calibration.csv': No such file or directory
-Execution halted","2026-08-25 10:33:38.40102","2026-08-25 10:33:38.683439",0.282418966293335
+Execution halted","2026-08-25 23:40:47.209606","2026-08-25 23:40:47.607738",0.398132085800171
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/DosSantos_etal_2020/DosSantos_etal_2020_Table1_check.R","FAILED","
 Attaching package: ‘dplyr’
 
@@ -74,10 +74,10 @@ The following objects are masked from ‘package:base’:
     intersect, setdiff, setequal, union
 
 Error: `path` does not exist: ‘/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/DosSantos_etal_2020/2020-PublishedDataMammalsMicroglia - cópia.xlsx’
-Execution halted","2026-08-25 10:33:43.079887","2026-08-25 10:33:43.795705",0.715818166732788
+Execution halted","2026-08-25 23:40:54.921868","2026-08-25 23:40:55.941808",1.01993989944458
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heuer_etal_2023/source_data/load_data.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
 Calls: read.csv -> read.table -> file
 In addition: Warning message:
 In file(file, ""rt"") :
   cannot open file '../data/derived/csv/01_cb_area_length.csv': No such file or directory
-Execution halted","2026-08-25 10:34:37.229176","2026-08-25 10:34:37.54722",0.318043947219849
+Execution halted","2026-08-25 23:41:47.465841","2026-08-25 23:41:48.06065",0.594809055328369

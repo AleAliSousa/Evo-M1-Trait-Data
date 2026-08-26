@@ -34,10 +34,14 @@ chimpanzee but omits age, sex, and case number. Its M1 surface area is 2700 mm²
 versus 2497 mm² here, consistent with different M1 boundaries. **Do not count
 the Young and Collins chimp rows as independent without resolving that flag.**
 
-## Merge note (not added)
-This table is **not** added to `__merging_cortical_areas` here: its whole-cortex surface (341 cm² =
-34,100 mm²) and M1 area (2497 mm²) would need explicit dedupe against Young 2013's chimp first. Left
-as a deliberate decision. Same lineage as Collins 2010 (whole cortex per piece) and the other Kaas
-tables — see the shared-specimen web.
+## Merge note — WIRED into `__merging_cortical_areas` (2026-08-25, owner decision)
+The dedupe hold is resolved: whole-cortex surface (341 cm² → 34,100 mm²), V1 (3,504 mm²) and V2
+(2,869 mm²) enter as active values; **M1 (2,497 mm²) enters as `superseded_by_Young_etal_2013`** —
+same specimen as Young 2013's chimp (boundary difference, 2,700 mm² there), Young is the
+M1-dedicated paper, the two are never averaged. The "somatosensory/premotor block" and "Prefrontal
+Cortex" rows are dissection blocks — provenance only, not wired. The left-hemisphere V1
+serial-section row is a volume and is excluded by the merge's area filter. Cell/neuron **counts**
+in this table are NOT yet in any merge — they await the regional cell-count reshape
+(`__merging_cellcounts/WIRING_into_cellcounts.md`).
 
-Pipeline: Source → Snapshot ✅ → Data readable ✅ → Species note ✅ → Online database ✅
+Pipeline: Source → Snapshot ✅ → Data readable ✅ → Species note ✅ → Online database ✅ → Merge (areas) ✅

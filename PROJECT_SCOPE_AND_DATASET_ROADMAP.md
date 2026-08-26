@@ -711,12 +711,65 @@ Per `__HOWTO_build_a_dataset_file.md`, and spelled out in each folder's README:
    standardized-term rows) — only after the source file exists, or the merge errors.
 6. Re-run the merge's compile script and check species resolve and no double-counting.
 
-## Current order of work
+## Current order of work (refreshed 2026-08-25; audit in `_checks/registry_audit_20260825.md`)
 
-1. Audit and, where still absent, wire Capellini sleep, Liu hand, and Jacobs M1 morphology.
-2. Build Medina-González immediately after its restricted files become available.
-3. Decide on a class-aware destination before compiling Olkowicz or any other avian shelf dataset.
-4. Implement the region tags and per-region coverage audit from Part 1.
+1. **Registry hygiene from the 2026-08-25 folder↔registry audit.**
+   Register the built-but-invisible sources: `Hutsler_etal_2005` (4 products, already cited as a
+   source by the cortical-layer merge README, `PROPOSED_species_key_rows.csv` waiting) and
+   `Todorov_etal_2019_dimorphdata`. Fix the three blank-`Item number` rows whose keys end in `_`
+   (`Shultz_Dunbar_2010_` — also misspelled, folder is Schultz; `Stephan_Pirlot_1970_`;
+   `Weaver__2005_`, the documented skip still needs a well-formed key). Repair the corrupted key
+   `Young_etal_2013_xml:space="preserve">b_Table1`. Rename `Deaner_et_2007/` →
+   `Deaner_etal_2007` and give it a row. Remove or purpose the empty `data_intermediate/` folder
+   and the 15 empty formatting rows at the bottom of Sheet1 (rows 335–349).
+2. **Cell-counts + surface-areas intake — surfaces DONE 2026-08-25.** All five TODO sources were
+   already built; the gap was wiring. `__merging_cortical_areas` now carries Collins 2016 (chimp
+   cortex/V1/V2; M1 superseded by Young — same specimen), Mota 2015 own columns and Mota 2019
+   AT/AE/T, with new terms (exposed surface, thickness, MHH folding index, V1/V2 regional), a
+   Mota-lineage supersede (2019 > 2015), Mota printed-name alias repairs, and an AG=total-surface
+   correction to the 2015 definitions (the old "exposed" reading would have double-folded via
+   AG×FI). Outputs regenerated offline (329 long rows, 66 species) — **re-run
+   `standardized_term.R` + `cortical_areas_compiled.R` in RStudio to confirm.** Remaining from this
+   intake: the regional CELL-COUNT reshape (Kaas V1/M1 densities, HH 2013 mouse areas) — design
+   decision recorded in `__merging_cellcounts/WIRING_into_cellcounts.md` (owner choice: wide
+   per-area columns vs a separate regional product); Mota 2019 VG/VW volumes HELD for a
+   `__merging_volumes` overlap audit.
+   **Surface-area candidates from the Project Kaskan review sheet (2026-08-25).** The restricted
+   Kaskan compilation (`…-restricted/unpublished_data/____Unpublished__ProjectKaskan/Project
+   Kaskan remeasuring/M1 surface.xlsx`) quotes published values whose primaries have no public
+   source folder yet — build from the primaries (verify citations in EndNote first):
+   **Chaplin et al. 2013** (MRI cortical surfaces: marmoset, capuchin, macaque), **Demirci et al.
+   2023** (cortical surfaces: macaque, chimp, human; 2-hemisphere values — halve for the merge's
+   per-hemisphere convention), and **Van Essen & Drury 1997** (human V1 L/R + neocortex; chase its
+   cited Filiminoff 1932 / Stensaas 1974 human V1 primaries). ~~Smaers 2017 Brodmann-1909
+   revisit~~ — **DONE 2026-08-25**: `Smaers_etal_2017_TableS1part2` wired as a SECONDARY
+   (Brodmann-1909-via-Smaers; supersedable by a future 1909 primary build) with three new regional
+   terms, and `Brodmann__1913_Table1` wired as a primary whole-cortex source (34 taxa, one human
+   row: Europäer Durchschnitt). Additivity audit: regions sum exactly to the 1913 totals
+   (marmoset/gibbon/chimp); the mandrill other-association cell is excluded (+10,000 misprint in
+   one of the two sources). Merge now 400 long rows / 82 wide species. **Finlay 2006 is
+   whole-paper FLAGGED (owner, 2026-08-25):** the source-attribution audit
+   (`Finlay_etal_2006/Finlay_etal_2006_Table6.1_source_attribution.csv`) found its traced
+   surfaces systematically low for small mammals/marsupials and several rows without a citable
+   primary; all its rows are held out of the wide table
+   (`flagged_pending_ProjectKaskan_check`) and the registry row carries the flag — verify against
+   the Project Kaskan remeasuring dataset once built, then unflag per column. The sheet's own
+   remeasured values are unpublished and stay restricted (image-analysis pass planned there;
+   see `M1_surface_STATUS_and_PLAN_20260825.md` in the Kaskan folder). Registry rows
+   `Changizi__2001_Figure3` + `Finlay_etal_2006_Table6.1` ("Species -- wait for Project Kaskan")
+   wait on the Kaskan area-name/species tables.
+3. **R-side runs on next RStudio session:** `_tools/file_list.R` (AUTO TSV column; explains
+   `Upham_etal_2019_Completed100` and `DeCasien…SocialSystem` showing FINISHED-but-notfound),
+   `_checks/registry_snapshot.R` (snapshot is 14 rows stale), and the pending Completed100
+   sample-trees R run.
+4. Audit and, where still absent, wire **Liu hand and Jacobs M1 morphology** (Capellini sleep is
+   done — `__merging_sleep` built and wired; neither Liu nor Jacobs appears in any
+   `__merging_*/*.R` yet).
+5. **Baron 1996 bat block** wiring into volumes — blocked on the seven historical taxon-concept
+   decisions plus within-source averaging.
+6. Build Medina-González immediately after its restricted files become available.
+7. Decide on a class-aware destination before compiling Olkowicz or any other avian shelf dataset.
+8. Implement the region tags and per-region coverage audit from Part 1.
 
 *(The original scouting list put "Heuer 2018 volumes" first as the biggest new-species yield. That
 candidate is the excluded Navarrete paper — see curator decisions 1–2. Nothing to do there without

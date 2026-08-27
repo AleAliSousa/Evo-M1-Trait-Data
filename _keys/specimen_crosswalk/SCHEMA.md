@@ -103,6 +103,15 @@ External museum, catalog, studbook, or biodiversity identifiers use the
 separate one-to-many table `specimen_external_links.csv`; they are not added as
 repeating columns here.
 
+The public file contains links supported entirely by public evidence. Links
+whose identity bridge depends on a private memo, catalog, correspondence, or
+other restricted source use the identical schema in the companion repository:
+`specimen_registry/derived/specimen_external_links_restricted.csv`. As with the
+crosswalk, restricted and public links are combined only in an explicitly
+restricted build. `match_status` uses `matched`, `probable`, or `unmatched`;
+studbook links remain `probable` until an accession statement or equivalent
+record explicitly connects the biological specimen to the studbook animal.
+
 ## The hard rule for the merge (consumer contract)
 
 - A value that is a **specimen measurement** may be reassigned to a modern

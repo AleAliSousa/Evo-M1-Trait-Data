@@ -19,7 +19,7 @@ Turner_etal_2016,Turner_etal_2016_Table1,age_years,NA,(structure-agnostic; see d
 deSousa_etal_2009,deSousa_etal_2009_Table1,age_yrs,NA,(structure-agnostic; see data columns),NA,Age.years,Age.years,NA,info,Apes & humans + M. fascicularis,age at death in years as printed (NA = not recorded)
 Hutsler_etal_2005,Hutsler_etal_2005_Figure3,value_basis,NA,(structure-agnostic; see data columns),NA,Basis,Basis,NA,info,14 mammal species,provenance class of the value
 Hutsler_etal_2005,Hutsler_etal_2005_Figure6,value_basis,NA,(structure-agnostic; see data columns),NA,Basis,Basis,NA,info,13 mammal species,provenance class of the value
-BarbeitoAndres_etal_2019,BarbeitoAndres_etal_2019,cell_type,NA,(structure-agnostic; see data columns),NA,CellType,CellType,NA,primary,NA,Total / Neurons / Non-neurons (cell tables only; NA for volumes)
+BarbeitoAndrés_etal_2019,BarbeitoAndrés_etal_2019,cell_type,NA,(structure-agnostic; see data columns),NA,CellType,CellType,NA,primary,NA,Total / Neurons / Non-neurons (cell tables only; NA for volumes)
 Navarrete_etal_2016,Navarrete_etal_2016_Data,parvorder_printed,NA,(structure-agnostic; see data columns),NA,Class,Class,NA,info,Primates,parvorder label in the deposited file
 Navarrete_etal_2016,Navarrete_etal_2016_Data,family_printed,NA,(structure-agnostic; see data columns),NA,Class,Class,NA,info,Primates,family label in the deposited file
 Navarrete_etal_2016,Navarrete_etal_2016_Data,innovator,NA,(structure-agnostic; see data columns),NA,Class,Class,NA,primary,Primates,whether Reader et al. 2011 reported at least one innovation
@@ -30,7 +30,7 @@ Hutsler_etal_2005,Hutsler_etal_2005_Table1,common_name_printed,NA,(structure-agn
 Ashwell__2020,Ashwell__2020,common_name,NA,(structure-agnostic; see data columns),NA,CommonName,CommonName,NA,primary,Mammalia,common English name for the taxon as printed in the supplementary table
 Hutsler_etal_2005,Hutsler_etal_2005_ReportedValues,compatibility,NA,(structure-agnostic; see data columns),NA,Compatibility,Compatibility,NA,note,14 mammal species,intended use and granularity warning
 Navarrete_etal_2016,Navarrete_etal_2016_Data,life_history_composite,NA,(structure-agnostic; see data columns),NA,Composite,Composite,score,secondary,Primates,phylogenetic principal-component score from six life-history variables
-BarbeitoAndres_etal_2019,BarbeitoAndres_etal_2019,group,NA,(structure-agnostic; see data columns),NA,Condition,Condition,NA,primary,NA,nutrition group: C = control / LP = low protein / LCP = low calorie+protein
+BarbeitoAndrés_etal_2019,BarbeitoAndrés_etal_2019,group,NA,(structure-agnostic; see data columns),NA,Condition,Condition,NA,primary,NA,nutrition group: C = control / LP = low protein / LCP = low calorie+protein
 Hutsler_etal_2005,Hutsler_etal_2005_ReportedValues,conflict_group_id,NA,(structure-agnostic; see data columns),NA,Conflict,Conflict,NA,note,14 mammal species,identifier tying mutually inconsistent printed summaries
 deSousa_etal_2010,deSousa_etal_2010,correction_factor,NA,(structure-agnostic; see data columns),NA,CorrectionFactor,CorrectionFactor,NA,primary,NA,shrinkage correction factor (fresh vol / slide vol)
 Jacobs_etal_2015,Jacobs_etal_2015_Table1,doi,NA,(structure-agnostic; see data columns),NA,DOI,DOI,NA,info,Giraffa camelopardalis,digital object identifier
@@ -51,7 +51,7 @@ Johnson_etal_2016,Johnson_etal_2016_Table1,hemisphere,NA,(structure-agnostic; se
 Peruffo_etal_2019,Peruffo_etal_2019_Table2,hemisphere,NA,(structure-agnostic; see data columns),NA,Hemisphere,Hemisphere,NA,info,Ovis aries,hemisphere sampled
 __merging_cortical_layers,__merging_cortical_layers,hemisphere,NA,(structure-agnostic; see data columns),NA,Hemisphere,Hemisphere,NA,info,NA,hemisphere sampled
 Ruf_Geiser_2015,Ruf_Geiser_2015_Table1,latitude_deg,NA,(structure-agnostic; see data columns),NA,Latitude.deg,Latitude.deg,point,info,"Birds & mammals (43 birds, 171 mammals)","latitude of the mid-point of the species' range, in degrees (positive = North, negative = South)"
-BarbeitoAndres_etal_2019,BarbeitoAndres_etal_2019,measure,NA,(structure-agnostic; see data columns),NA,MeasureType,MeasureType,NA,primary,NA,absolute_volume | cell_number | cell_density
+BarbeitoAndrés_etal_2019,BarbeitoAndrés_etal_2019,measure,NA,(structure-agnostic; see data columns),NA,MeasureType,MeasureType,NA,primary,NA,absolute_volume | cell_number | cell_density
 __merging_cortical_layers,__merging_cortical_layers,merge_default,NA,(structure-agnostic; see data columns),NA,Merge status,Merge status,NA,primary,NA,TRUE for the one source summary selected by default
 __merging_cortical_layers,__merging_cortical_layers,observation_id,NA,(structure-agnostic; see data columns),NA,Observation identifier,Observation identifier,NA,primary,NA,stable within-merge observation key
 Jacobs_etal_2015,Jacobs_etal_2015_Table1,observation_level,NA,(structure-agnostic; see data columns),NA,Observation level,Observation level,NA,info,Giraffa camelopardalis,individual versus single-specimen or species summary
@@ -102,8 +102,8 @@ Peruffo_etal_2019,Peruffo_etal_2019_Table2,taxon_level,NA,(structure-agnostic; s
 __merging_cortical_layers,__merging_cortical_layers,taxon_level,NA,(structure-agnostic; see data columns),NA,Taxon level,Taxon level,NA,primary,NA,species order or cross-species summary
 Ashwell__2020,Ashwell__2020,group,NA,(structure-agnostic; see data columns),NA,TaxonGroup,TaxonGroup,NA,primary,Mammalia,higher-level taxonomic/phylogenetic group as printed in the supplementary table
 Eagleman_Vaughn_2021,Eagleman_Vaughn_2021_TABLE1,Phylogenetic_distance_Mya,NA,(structure-agnostic; see data columns),NA,Time.Mya,Time.Mya,point,info,"Primates (25 species, incl. Homo)","divergence time from humans, in millions of years"
-BarbeitoAndres_etal_2019,BarbeitoAndres_etal_2019,units,NA,(structure-agnostic; see data columns),NA,Units,Units,NA,primary,NA,mm3 (volumes); 10^6 cells (cell number); 10^3 cells/mg (density)
-BarbeitoAndres_etal_2019,BarbeitoAndres_etal_2019,value,NA,(structure-agnostic; see data columns),NA,Value,Value,NA,primary,NA,numeric value for the (group x region x measure[x cell_type]) cell
+BarbeitoAndrés_etal_2019,BarbeitoAndrés_etal_2019,units,NA,(structure-agnostic; see data columns),NA,Units,Units,NA,primary,NA,mm3 (volumes); 10^6 cells (cell number); 10^3 cells/mg (density)
+BarbeitoAndrés_etal_2019,BarbeitoAndrés_etal_2019,value,NA,(structure-agnostic; see data columns),NA,Value,Value,NA,primary,NA,numeric value for the (group x region x measure[x cell_type]) cell
 Jacobs_etal_2015,Jacobs_etal_2015_Table1,value_basis,NA,(structure-agnostic; see data columns),NA,Value basis,Value basis,NA,info,Giraffa camelopardalis,relationship of value to printed source
 Jacobs_etal_2016,Jacobs_etal_2016_Table1,value_basis,NA,(structure-agnostic; see data columns),NA,Value basis,Value basis,NA,info,Giraffa camelopardalis and Loxodonta africana,relationship of value to printed source
 Johnson_etal_2016,Johnson_etal_2016_Table1,value_basis,NA,(structure-agnostic; see data columns),NA,Value basis,Value basis,NA,info,Panthera tigris altaica and Neofelis nebulosa,relationship of value to printed source
@@ -326,8 +326,8 @@ Stephan_etal_1987,Stephan_etal_1987_Table1,Amygdala_mm3,Amygdala,Amygdala,cell_c
 Stephan_etal_1987,Stephan_etal_1987_Table1,Amygdala_mm3,Amygdala,Amygdala,brain_structure_volume,Vol.mm3,volume,NA,primary,Insectivora & Primates,Amygdala (Vol.mm3)
 Stephan_etal_1987,Stephan_etal_1987,amygdala_total_mm3,Amygdala,Amygdala,cell_counts,Volume.mm3,volume,mean,primary,Insectivora–Primates (incl. Homo),whole amygdaloid complex volume (AMY); AMY = LAM + MAM
 Stephan_etal_1987,Stephan_etal_1987,amygdala_total_mm3,Amygdala,Amygdala,brain_structure_volume,Volume.mm3,volume,mean,primary,Insectivora–Primates (incl. Homo),whole amygdaloid complex volume (AMY); AMY = LAM + MAM
-Zilles_Rehkamper_1988,Zilles_Rehkamper_1988_Table12-2,Corpus_amygdaloideum,Amygdala,Amygdala,cell_counts,Vol.mm3,volume,NA,primary,Primates (Pongo),corpus amygdaloideum (amygdala) fresh volume
-Zilles_Rehkamper_1988,Zilles_Rehkamper_1988_Table12-2,Corpus_amygdaloideum,Amygdala,Amygdala,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates (Pongo),corpus amygdaloideum (amygdala) fresh volume
+Zilles_Rehkämper_1988,Zilles_Rehkämper_1988_Table12-2,Corpus_amygdaloideum,Amygdala,Amygdala,cell_counts,Vol.mm3,volume,NA,primary,Primates (Pongo),corpus amygdaloideum (amygdala) fresh volume
+Zilles_Rehkämper_1988,Zilles_Rehkämper_1988_Table12-2,Corpus_amygdaloideum,Amygdala,Amygdala,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates (Pongo),corpus amygdaloideum (amygdala) fresh volume
 Barger_etal_2007,Barger_etal_2007,amygdaloid_complex_L,AmygdaloidComplex,AmygdaloidComplex,NA,Volume.cm3,volume,NA,primary,Apes & humans,amygdaloid complex volume left hemisphere
 Barger_etal_2007,Barger_etal_2007,amygdaloid_complex_R,AmygdaloidComplex,AmygdaloidComplex,NA,Volume.cm3,volume,NA,primary,Apes & humans,amygdaloid complex volume right hemisphere
 Barger_etal_2007,Barger_etal_2007,amygdaloid_complex_total,AmygdaloidComplex,AmygdaloidComplex,NA,Volume.cm3,volume,NA,primary,Apes & humans,amygdaloid complex volume both hemispheres (L+R)
@@ -339,7 +339,7 @@ Frahm_etal_1984,Frahm_etal_1984_Table1,Area_striata_mm3,Area_striata,Area_striat
 Stephan_etal_1981,Stephan_etal_1981_TablesI-VI,Area_striata,Area_striata,Area_striata,brain_structure_volume,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",area striata (primary visual cortex) including underlying white matter
 Frahm_etal_1984,Frahm_etal_1984_Table1,Area_striata_grey_matter_mm3,Area_striata_grey_matter,Area_striata_grey_matter,brain_structure_volume,Vol.mm3,volume,NA,primary,Insectivora & Primates,Area striata grey matter (Vol.mm3)
 Frahm_etal_1998,Frahm_etal_1998_Table1,Area_striata_grey_matter_mm3,Area_striata_grey_matter,Area_striata_grey_matter,brain_structure_volume,Vol.mm3,volume,NA,primary,Insectivora & Primates,Area striata grey matter (Vol.mm3)
-Zilles_Rehkamper_1988,Zilles_Rehkamper_1988_Table12-2,Area_striata_grey,Area_striata_grey_matter,Area_striata_grey_matter,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates (Pongo),gray matter of area striata (primary visual cortex)
+Zilles_Rehkämper_1988,Zilles_Rehkämper_1988_Table12-2,Area_striata_grey,Area_striata_grey_matter,Area_striata_grey_matter,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates (Pongo),gray matter of area striata (primary visual cortex)
 deSousa_etal_2009,deSousa_etal_2009_Table1,left_V1_volume_mm3,Area_striata_grey_matter,Area_striata_grey_matter,brain_structure_volume,Vol.mm3,volume,NA,secondary,Apes & humans + M. fascicularis,LEFT V1 (area striata) grey matter volume in mm3; printed in mm3 and used as printed
 deSousa_etal_2010,deSousa_etal_2010_Table1,Area_striata_grey_matter_mm3,Area_striata_grey_matter,Area_striata_grey_matter,brain_structure_volume,Vol.mm3,volume,NA,primary,Insectivora & Primates,Area striata grey matter (Vol.mm3)
 Frahm_etal_1984,Frahm_etal_1984_Table1,Area_striata_lamina_1_mm3,Area_striata_lamina_1,Area_striata_lamina_1,brain_structure_volume,Vol.mm3,volume,NA,primary,Insectivora & Primates,Area striata lamina 1 (Vol.mm3)
@@ -556,8 +556,8 @@ Weaver__2001,Weaver__2001_TableA-15,CBLM_cc,Cerebellum,Cerebellum,cell_counts,Vo
 Weaver__2001,Weaver__2001_TableA-15,CBLM_cc,Cerebellum,Cerebellum,brain_structure_volume,Vol.cc,volume,NA,primary,"monkeys, apes, fossil hominids, humans",cerebellum volume as printed (cc)
 Weaver__2001,Weaver__2001_TableA-15,CBLM_Vol.mm3,Cerebellum,Cerebellum,cell_counts,Vol.mm3,volume,NA,primary,"monkeys, apes, fossil hominids, humans",cerebellum volume in project units (mm3)
 Weaver__2001,Weaver__2001_TableA-15,CBLM_Vol.mm3,Cerebellum,Cerebellum,brain_structure_volume,Vol.mm3,volume,NA,primary,"monkeys, apes, fossil hominids, humans",cerebellum volume in project units (mm3)
-Zilles_Rehkamper_1988,Zilles_Rehkamper_1988_Table12-2,Cerebellum_without_pons,Cerebellum,Cerebellum,cell_counts,Vol.mm3,volume,NA,primary,Primates (Pongo),cerebellum (measured without the pons) fresh volume
-Zilles_Rehkamper_1988,Zilles_Rehkamper_1988_Table12-2,Cerebellum_without_pons,Cerebellum,Cerebellum,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates (Pongo),cerebellum (measured without the pons) fresh volume
+Zilles_Rehkämper_1988,Zilles_Rehkämper_1988_Table12-2,Cerebellum_without_pons,Cerebellum,Cerebellum,cell_counts,Vol.mm3,volume,NA,primary,Primates (Pongo),cerebellum (measured without the pons) fresh volume
+Zilles_Rehkämper_1988,Zilles_Rehkämper_1988_Table12-2,Cerebellum_without_pons,Cerebellum,Cerebellum,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates (Pongo),cerebellum (measured without the pons) fresh volume
 Bush_Allman_2003,Bush_Allman_2003,cer_gray_cm3,CerebellumGrey,CerebellumGrey,brain_structure_volume,Volume.cm3,volume,NA,primary,NA,cerebellar grey matter volume
 Bush_Allman_2003,Bush_Allman_2003,cer_white_cm3,CerebellumWhite,CerebellumWhite,brain_structure_volume,Volume.cm3,volume,NA,primary,NA,cerebellar white matter volume
 HerculanoHouzel__2015,HerculanoHouzel__2015_Table1,D.A..N.mg.1.mm.2.,CerebralCortex,CerebralCortex,cell_counts,Density.ratio.N_mg_mm2,Density.ratio.N_mg_mm2,point,primary,"Mammals (24 species, 6 clades)","D/A: ratio of cortical neuronal density (neurons per mg) to total cortical surface area (mm2), in N mg-1 mm-2"
@@ -655,7 +655,7 @@ Frahm_etal_1997,Frahm_etal_1997_Table1,Diencephalon_mm3,Diencephalon,Diencephalo
 Schleifenbaum__1973,Schleifenbaum__1973_Tables1-2,diencephalon_mm3,Diencephalon,Diencephalon,brain_structure_volume,Vol.mm3,volume,point,primary,Canis,diencephalon volume
 Stephan_etal_1970,Stephan_etal_1970,diencephalon_mm3,Diencephalon,Diencephalon,brain_structure_volume,Volume.mm3,volume,NA,primary,NA,diencephalon volume
 Stephan_etal_1981,Stephan_etal_1981_TablesI-VI,Diencephalon,Diencephalon,Diencephalon,brain_structure_volume,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",diencephalon including pallidum and excluding hypophysis
-Zilles_Rehkamper_1988,Zilles_Rehkamper_1988_Table12-2,Diencephalon,Diencephalon,Diencephalon,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates (Pongo),diencephalon fresh volume
+Zilles_Rehkämper_1988,Zilles_Rehkämper_1988_Table12-2,Diencephalon,Diencephalon,Diencephalon,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates (Pongo),diencephalon fresh volume
 Reep_etal_2007,Reep_etal_2007_Table1,diencephalon_mm3,Diencephalon excluding globus pallidus,Diencephalon excluding globus pallidus,NA,Vol.mm3,volume,NA,primary,Mammals,Diencephalon volume
 Kazu_etal_2014,Kazu_etal_2014_Table1,DiencephalonStriatum_N.n,DiencephalonStriatum,DiencephalonStriatum,cell_counts,N.n,count (number),NA,primary,Artiodactyla,diencephalon + basal ganglia neuron number
 Kazu_etal_2015,Kazu_etal_2015_TABLE1,DiencephalonStriatum_N.n,DiencephalonStriatum,DiencephalonStriatum,cell_counts,N.n,count (number),NA,primary,Artiodactyla,diencephalon + basal ganglia neuron number
@@ -680,7 +680,7 @@ Wilman_etal_2014,Wilman_etal_2014_MamFuncDat,Diet_Seed,Diet,Diet,NA,percent,perc
 Wilman_etal_2014,Wilman_etal_2014_MamFuncDat,Diet_PlantO,Diet,Diet,NA,percent,percentage (relative),NA,primary,mammals,Percent of diet from other plant material (roots/leaves/etc.)
 Bauernfeind_etal_2013,Bauernfeind_etal_2013_Table1,dysgranular_mm3,Dysgranular_insular_cortex,Dysgranular_insular_cortex,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates,volume of dysgranular insular cortex (left) in mm3
 Bauernfeind_etal_2013,Bauernfeind_etal_2013_Table2,dysgranular_R_mm3,Dysgranular_insular_cortex,Dysgranular_insular_cortex,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates,volume of dysgranular insular cortex (right) in mm3
-Zilles_Rehkamper_1988,Zilles_Rehkamper_1988_Table12-2,Regio_entorhinalis,EntorhinalCortex,EntorhinalCortex,cell_counts,Vol.mm3,volume,NA,primary,Primates (Pongo),entorhinal region fresh volume
+Zilles_Rehkämper_1988,Zilles_Rehkämper_1988_Table12-2,Regio_entorhinalis,EntorhinalCortex,EntorhinalCortex,cell_counts,Vol.mm3,volume,NA,primary,Primates (Pongo),entorhinal region fresh volume
 Stephan_etal_1981,Stephan_etal_1981_TablesI-VI,Epithalamus,Epithalamus,Epithalamus,brain_structure_volume,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",epithalamus
 Krubitzer_Kaas_1990,Krubitzer_Kaas_1990_Table1,pct_FST,FST,FST,NA,pct.neocortex_surface,surface area,NA,primary,Primates,fundal superior temporal area (FST) as percent of total neocortex surface
 Sherwood_etal_2005,Sherwood_etal_2005,facial_VII_mm3,Facial_motor_nucleus,Facial_motor_nucleus,NA,Volume.mm3,volume,mean,primary,NA,facial motor nucleus (VII) volume
@@ -764,8 +764,8 @@ Stephan_etal_1970,Stephan_etal_1970,hippocampus_mm3,Hippocampus,Hippocampus,cell
 Stephan_etal_1970,Stephan_etal_1970,hippocampus_mm3,Hippocampus,Hippocampus,brain_structure_volume,Volume.mm3,volume,NA,primary,NA,hippocampus volume
 Stephan_etal_1981,Stephan_etal_1981_TablesI-VI,Hippocampus,Hippocampus,Hippocampus,cell_counts,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates","retro-/postcommissural, supra- and precommissural hippocampus"
 Stephan_etal_1981,Stephan_etal_1981_TablesI-VI,Hippocampus,Hippocampus,Hippocampus,brain_structure_volume,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates","retro-/postcommissural, supra- and precommissural hippocampus"
-Zilles_Rehkamper_1988,Zilles_Rehkamper_1988_Table12-2,Hippocampus,Hippocampus,Hippocampus,cell_counts,Vol.mm3,volume,NA,primary,Primates (Pongo),hippocampus fresh volume
-Zilles_Rehkamper_1988,Zilles_Rehkamper_1988_Table12-2,Hippocampus,Hippocampus,Hippocampus,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates (Pongo),hippocampus fresh volume
+Zilles_Rehkämper_1988,Zilles_Rehkämper_1988_Table12-2,Hippocampus,Hippocampus,Hippocampus,cell_counts,Vol.mm3,volume,NA,primary,Primates (Pongo),hippocampus fresh volume
+Zilles_Rehkämper_1988,Zilles_Rehkämper_1988_Table12-2,Hippocampus,Hippocampus,Hippocampus,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates (Pongo),hippocampus fresh volume
 Frahm_Zilles_1994,Frahm_Zilles_1994_Table1,hippocampus_retrocommissuralis_mm3,Hippocampus_retrocommissuralis,Hippocampus_retrocommissuralis,brain_structure_volume,Vol.mm3,volume,NA,primary,Insectivora & Primates,volume of the retrocommissural hippocampus in mm3 (= sum of the six retrohippocampal subfields)
 Sherwood_etal_2005,Sherwood_etal_2005,hypoglossal_XII_mm3,Hypoglossal_nucleus,Hypoglossal_nucleus,NA,Volume.mm3,volume,mean,primary,NA,hypoglossal nucleus (XII) volume
 Sherwood_etal_2005,Sherwood_etal_2005,hypoglossal_XII_SD,Hypoglossal_nucleus,Hypoglossal_nucleus,NA,Volume.mm3,volume,SD,secondary,NA,SD of XII volume
@@ -937,7 +937,7 @@ Sherwood_etal_2005,Sherwood_etal_2005,medulla_oblongata_mm3,Medulla_oblongata,Me
 Sherwood_etal_2005,Sherwood_etal_2005,medulla_oblongata_SD,Medulla_oblongata,Medulla_oblongata,brain_structure_volume,Volume.mm3,volume,SD,secondary,NA,SD of medulla volume
 Stephan_etal_1970,Stephan_etal_1970,medulla_oblongata_mm3,Medulla_oblongata,Medulla_oblongata,brain_structure_volume,Volume.mm3,volume,NA,primary,NA,medulla oblongata volume (Mesencephalon's reticular substance included here per the paper's footnote)
 Stephan_etal_1981,Stephan_etal_1981_TablesI-VI,Medulla_oblongata,Medulla_oblongata,Medulla_oblongata,brain_structure_volume,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",medulla oblongata including the inseparable substantia reticularis assigned from the mesencephalon
-Zilles_Rehkamper_1988,Zilles_Rehkamper_1988_Table12-2,Medulla_oblongata,Medulla_oblongata,Medulla_oblongata,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates (Pongo),medulla oblongata fresh volume
+Zilles_Rehkämper_1988,Zilles_Rehkämper_1988_Table12-2,Medulla_oblongata,Medulla_oblongata,Medulla_oblongata,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates (Pongo),medulla oblongata fresh volume
 Stephan_etal_1981,Stephan_etal_1981_TablesI-VI,Meninges_hypophysis_nerves_etc,Meninges_hypophysis_nerves_etc,Meninges_hypophysis_nerves_etc.,brain_structure_volume,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates","meninges, hypophysis, nerves etc."
 Kazu_etal_2014,Kazu_etal_2014_Table1,Mesencephalon_N.n,Mesencephalon,Mesencephalon,cell_counts,N.n,count (number),NA,primary,Artiodactyla,mesencephalon neuron number
 Kazu_etal_2014,Kazu_etal_2014_Table1,Mesencephalon_N.n,Mesencephalon,Mesencephalon,brain_structure_volume,N.n,count (number),NA,primary,Artiodactyla,mesencephalon neuron number
@@ -967,8 +967,8 @@ Stephan_etal_1970,Stephan_etal_1970,mesencephalon_mm3,Mesencephalon,Mesencephalo
 Stephan_etal_1970,Stephan_etal_1970,mesencephalon_mm3,Mesencephalon,Mesencephalon,brain_structure_volume,Volume.mm3,volume,NA,primary,NA,mesencephalon volume
 Stephan_etal_1981,Stephan_etal_1981_TablesI-VI,Mesencephalon,Mesencephalon,Mesencephalon,cell_counts,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",mesencephalon without substantia reticularis (the inseparable reticular portion is assigned to medulla oblongata)
 Stephan_etal_1981,Stephan_etal_1981_TablesI-VI,Mesencephalon,Mesencephalon,Mesencephalon,brain_structure_volume,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",mesencephalon without substantia reticularis (the inseparable reticular portion is assigned to medulla oblongata)
-Zilles_Rehkamper_1988,Zilles_Rehkamper_1988_Table12-2,Mesencephalon,Mesencephalon,Mesencephalon,cell_counts,Vol.mm3,volume,NA,primary,Primates (Pongo),mesencephalon (incl. tectum + ventral tegmentum) fresh volume
-Zilles_Rehkamper_1988,Zilles_Rehkamper_1988_Table12-2,Mesencephalon,Mesencephalon,Mesencephalon,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates (Pongo),mesencephalon (incl. tectum + ventral tegmentum) fresh volume
+Zilles_Rehkämper_1988,Zilles_Rehkämper_1988_Table12-2,Mesencephalon,Mesencephalon,Mesencephalon,cell_counts,Vol.mm3,volume,NA,primary,Primates (Pongo),mesencephalon (incl. tectum + ventral tegmentum) fresh volume
+Zilles_Rehkämper_1988,Zilles_Rehkämper_1988_Table12-2,Mesencephalon,Mesencephalon,Mesencephalon,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates (Pongo),mesencephalon (incl. tectum + ventral tegmentum) fresh volume
 Reader_Laland_2002,Reader_Laland_2002,Brainstem_volume,Mesencephalon + Medulla_oblongata,Mesencephalon + Medulla_oblongata,NA,Volume,volume,point,secondary,Primates (116 of 203 species surveyed),"sum of mesencephalon and medulla oblongata volumes, as computed by the authors from the same volumetric sources"
 Frahm_etal_1998,Frahm_etal_1998_Table1,Middle_temporal_visual_area_mm3,Middle_temporal_visual_area,Middle_temporal_visual_area,brain_structure_volume,Vol.mm3,volume,NA,primary,Insectivora & Primates,Middle temporal visual area (Vol.mm3)
 Hutsler_etal_2005,Hutsler_etal_2005_Table1,regional_motor_premotor_sensory_subset,Motor/premotor/somatosensory cortex,Motor/premotor/somatosensory cortex,NA,presence,presence,NA,info,13 mammal species,whether the species is in the three-region analysis
@@ -1136,8 +1136,8 @@ Stephan_etal_1970,Stephan_etal_1970,neocortex_mm3,Neocortex,Neocortex,cell_count
 Stephan_etal_1970,Stephan_etal_1970,neocortex_mm3,Neocortex,Neocortex,brain_structure_volume,Volume.mm3,volume,NA,primary,NA,neocortex volume (underlying white substance included)
 Stephan_etal_1981,Stephan_etal_1981_TablesI-VI,Neocortex,Neocortex,Neocortex,cell_counts,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates","neocortex including underlying white matter, corpus callosum, and insular/subgenual/cingular/retrosplenial transitional cortices"
 Stephan_etal_1981,Stephan_etal_1981_TablesI-VI,Neocortex,Neocortex,Neocortex,brain_structure_volume,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates","neocortex including underlying white matter, corpus callosum, and insular/subgenual/cingular/retrosplenial transitional cortices"
-Zilles_Rehkamper_1988,Zilles_Rehkamper_1988_Table12-2,Neocortex,Neocortex,Neocortex,cell_counts,Vol.mm3,volume,NA,primary,Primates (Pongo),neocortex fresh volume (gray without area striata + gray area striata + white matter)
-Zilles_Rehkamper_1988,Zilles_Rehkamper_1988_Table12-2,Neocortex,Neocortex,Neocortex,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates (Pongo),neocortex fresh volume (gray without area striata + gray area striata + white matter)
+Zilles_Rehkämper_1988,Zilles_Rehkämper_1988_Table12-2,Neocortex,Neocortex,Neocortex,cell_counts,Vol.mm3,volume,NA,primary,Primates (Pongo),neocortex fresh volume (gray without area striata + gray area striata + white matter)
+Zilles_Rehkämper_1988,Zilles_Rehkämper_1988_Table12-2,Neocortex,Neocortex,Neocortex,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates (Pongo),neocortex fresh volume (gray without area striata + gray area striata + white matter)
 deSousa_etal_2009,deSousa_etal_2009_Table1,neocortex_volume_mm3,Neocortex,Neocortex,cell_counts,Vol.mm3,volume,NA,secondary,Apes & humans + M. fascicularis,neocortex volume; printed in cm3 and multiplied by 1000
 deSousa_etal_2009,deSousa_etal_2009_Table1,neocortex_volume_mm3,Neocortex,Neocortex,brain_structure_volume,Vol.mm3,volume,NA,secondary,Apes & humans + M. fascicularis,neocortex volume; printed in cm3 and multiplied by 1000
 deSousa_etal_2010,deSousa_etal_2010,neocortex_volume_cm3,Neocortex,Neocortex,cell_counts,Volume.cm3,volume,mean,primary,Primates,neocortex volume
@@ -1186,13 +1186,13 @@ Bush_Allman_2003,Bush_Allman_2003,neo_white_cm3,NeocortexWhite,NeocortexWhite,br
 Bush_Allman_2004_a,Bush_Allman_2004_a,neocortex_white_cm3,NeocortexWhite,NeocortexWhite,brain_structure_volume,Volume.cm3,volume,NA,primary,NA,neocortex white matter volume
 Bush_Allman_2004_b,Bush_Allman_2004_b,neocortex_white_cm3,NeocortexWhite,NeocortexWhite,brain_structure_volume,Volume.cm3,volume,NA,primary,NA,neocortex white matter volume
 Frahm_etal_1982,Frahm_etal_1982_Table2,grey_matter_mm3,Neocortex_grey_matter,Neocortex_grey_matter,brain_structure_volume,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",neocortical grey matter volume in mm3 (laminae 1-6)
-Zilles_Rehkamper_1988,Zilles_Rehkamper_1988_Table12-2,Neocortex_grey_without_area_striata,Neocortex_grey_matter,Neocortex_grey_matter,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates (Pongo),neocortical gray matter excluding the gray of area striata
+Zilles_Rehkämper_1988,Zilles_Rehkämper_1988_Table12-2,Neocortex_grey_without_area_striata,Neocortex_grey_matter,Neocortex_grey_matter,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates (Pongo),neocortical gray matter excluding the gray of area striata
 Frahm_etal_1982,Frahm_etal_1982_Table2,lamina_1_pct_grey,Neocortex_lamina_1,Neocortex_lamina_1,NA,pct.grey,percentage (relative),NA,primary,"Insectivora, Scandentia & Primates",lamina 1 as a percentage of grey matter
 Frahm_etal_1982,Frahm_etal_1982_Table2,lamina_1_mm3,Neocortex_lamina_1,Neocortex_lamina_1,NA,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",volume of lamina 1 (molecular layer) in mm3
 Frahm_etal_1982,Frahm_etal_1982_Table2,laminae_2_6_mm3,Neocortex_laminae_2_6,Neocortex_laminae_2_6,NA,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",volume of laminae 2-6 (cell-dense layers) in mm3
 Frahm_etal_1982,Frahm_etal_1982_Table2,white_pct_neocortex,Neocortex_white_matter,Neocortex_white_matter,brain_structure_volume,pct.neocortex,percentage (relative),NA,primary,"Insectivora, Scandentia & Primates",white matter as a percentage of total neocortex
 Frahm_etal_1982,Frahm_etal_1982_Table2,white_matter_mm3,Neocortex_white_matter,Neocortex_white_matter,brain_structure_volume,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",neocortical white matter volume in mm3
-Zilles_Rehkamper_1988,Zilles_Rehkamper_1988_Table12-2,Neocortex_white_matter,Neocortex_white_matter,Neocortex_white_matter,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates (Pongo),neocortical white matter fresh volume
+Zilles_Rehkämper_1988,Zilles_Rehkämper_1988_Table12-2,Neocortex_white_matter,Neocortex_white_matter,Neocortex_white_matter,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates (Pongo),neocortical white matter fresh volume
 Weaver__2001,Weaver__2001_TableA-15,NetBrain_g,NetBrain,NetBrain,NA,Mass.g,mass,NA,secondary,"monkeys, apes, fossil hominids, humans",net brain mass as printed (g); NetBrain = BrMass - CBLM
 Weaver__2001,Weaver__2001_TableA-15,NetBrain_Mass.mg,NetBrain,NetBrain,NA,Mass.mg,mass,NA,secondary,"monkeys, apes, fossil hominids, humans",net brain mass in project units (mg)
 Weaver__2001,Weaver__2001_TableA-15,EQ,NetBrain,NetBrain,NA,size.index,size index (allometric),NA,secondary,"monkeys, apes, fossil hominids, humans",encephalization quotient (Martin 1990 regression)
@@ -1253,11 +1253,11 @@ Ebinger__1974,Ebinger__1974_Tables3-4,olfactory_bulbs_mm3,Olfactory_bulbs,Olfact
 Frahm_etal_1997,Frahm_etal_1997_Table1,Palaeocortex_mm3,Palaeocortex,Palaeocortex,brain_structure_volume,Vol.mm3,volume,NA,primary,Rodentia & Insectivora,Palaeocortex (Vol.mm3)
 Reep_etal_2007,Reep_etal_2007_Table1,paleocortex_mm3,Palaeocortex,Palaeocortex,brain_structure_volume,Vol.mm3,volume,NA,primary,Mammals,Paleocortex volume
 Stephan_etal_1981,Stephan_etal_1981_TablesI-VI,Palaeocortex,Palaeocortex,Palaeocortex,brain_structure_volume,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates","palaeocortex including retrobulbar cortex (anterior olfactory nucleus), prepiriform cortex, lateral/medial/internal olfactory tracts, anterior commissure, olfactory tubercle, substantia innominata, and basal nucleus of Meynert"
-Zilles_Rehkamper_1988,Zilles_Rehkamper_1988_Table12-2,Paleocortex,Palaeocortex,Palaeocortex,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates (Pongo),paleocortex fresh volume (regio praepiriformis + corpus amygdaloideum here)
+Zilles_Rehkämper_1988,Zilles_Rehkämper_1988_Table12-2,Paleocortex,Palaeocortex,Palaeocortex,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates (Pongo),paleocortex fresh volume (regio praepiriformis + corpus amygdaloideum here)
 Stephan_etal_1970,Stephan_etal_1970,palaeocortex_plus_amygdala_mm3,Palaeocortex_plus_amygdala,Palaeocortex_plus_amygdala,NA,Volume.mm3,volume,NA,primary,NA,palaeocortex PLUS nucleus amygdalae (NA) volume; the corpus amygdaloideum was not separated from the palaeocortex
 Baron_etal_1996,Baron_etal_1996_Table32,paleocortex_mm3,Paleocortex,Paleocortex,NA,Vol.mm3,volume,mean,primary,Chiroptera,paleocortex volume
 Stephan_etal_1981,Stephan_etal_1981_TablesI-VI,Pallidum,Pallidum,Pallidum,brain_structure_volume,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",pallidum
-Zilles_Rehkamper_1988,Zilles_Rehkamper_1988_Table12-2,Globus_pallidus,Pallidum,Pallidum,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates (Pongo),globus pallidus (pallidum) fresh volume
+Zilles_Rehkämper_1988,Zilles_Rehkämper_1988_Table12-2,Globus_pallidus,Pallidum,Pallidum,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates (Pongo),globus pallidus (pallidum) fresh volume
 Olkowicz_etal_2016,Olkowicz_etal_2016_DatasetS1,pallium_cell_count,Pallium,Pallium,NA,Cells.n,count (number),mean,primary,Aves,mean estimated total cell number in pallium
 Olkowicz_etal_2016,Olkowicz_etal_2016_DatasetS1,pallium_neuron_count,Pallium,Pallium,NA,N.n,count (number),mean,primary,Aves,mean estimated neuron number in pallium
 Olkowicz_etal_2016,Olkowicz_etal_2016_DatasetS1,pallium_nonneuronal_cell_count,Pallium,Pallium,NA,O.n,count (number),mean,primary,Aves,mean estimated non-neuronal cell number in pallium
@@ -1268,7 +1268,7 @@ Balzeau_etal_2012,Balzeau_etal_2012_Table5,Parieto-TemporalLobe,Parieto-Temporal
 Balzeau_etal_2012,Balzeau_etal_2012_Table2,Parieto-TemporalLobe,Parieto-TemporalLobe,Parieto-TemporalLobe,NA,regression,regression,NA,secondary,Homo,regression of parieto-temporal-lobe surface on endocranial volume
 Balzeau_etal_2012,Balzeau_etal_2012_Table3,Parieto-TemporalLobe,Parieto-TemporalLobe,Parieto-TemporalLobe,NA,size.corrected.surface,surface area,Mean,secondary,Homo,size-corrected surface dimension of the parieto-temporal lobe (endocast surface)
 Schleifenbaum__1973,Schleifenbaum__1973_Tables1-2,periventricular_matrix_mm3,Periventricular_matrix,Periventricular_matrix,NA,Vol.mm3,volume,point,primary,Canis,periventricular matrix volume
-Zilles_Rehkamper_1988,Zilles_Rehkamper_1988_Table12-2,Pons,Pons,Pons,cell_counts,Vol.mm3,volume,NA,primary,Primates (Pongo),pons fresh volume
+Zilles_Rehkämper_1988,Zilles_Rehkämper_1988_Table12-2,Pons,Pons,Pons,cell_counts,Vol.mm3,volume,NA,primary,Primates (Pongo),pons fresh volume
 Kazu_etal_2014,Kazu_etal_2014_Table1,PonsMedulla_N.n,PonsMedulla,PonsMedulla,cell_counts,N.n,count (number),NA,primary,Artiodactyla,pons + medulla neuron number
 Kazu_etal_2015,Kazu_etal_2015_TABLE1,PonsMedulla_N.n,PonsMedulla,PonsMedulla,cell_counts,N.n,count (number),NA,primary,Artiodactyla,pons + medulla neuron number
 Kazu_etal_2014,Kazu_etal_2014_Table1,PonsMedulla_N.p.mg,PonsMedulla,PonsMedulla,cell_counts,N.p.mg,density (per mass/volume),NA,primary,Artiodactyla,pons + medulla neuronal density
@@ -1289,7 +1289,7 @@ Smaers_etal_2017,Smaers_etal_2017_TableS1_part2_surfacearea,prefrontal_surface,P
 Smaers_etal_2017,Smaers_etal_2017_TableS1_part1_volumes,prefrontal_gray,PrefrontalCortex,PrefrontalCortex,NA,Volume,volume,NA,both,Primates,prefrontal cortex grey matter proxy summed across both hemispheres
 Smaers_etal_2017,Smaers_etal_2017_TableS1_part1_volumes,prefrontal_white,PrefrontalCortex,PrefrontalCortex,NA,Volume,volume,NA,both,Primates,prefrontal cortex white-matter proxy summed across both hemispheres
 Baron_etal_1987,Baron_etal_1987_Table1,PRPI,PrepiriformCortex,Prepiriform_cortex,brain_structure_volume,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",prepiriform cortex
-Zilles_Rehkamper_1988,Zilles_Rehkamper_1988_Table12-2,Regio_praepiriformis,Prepiriform_cortex,Prepiriform_cortex,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates (Pongo),regio praepiriformis (prepiriform cortex) fresh volume
+Zilles_Rehkämper_1988,Zilles_Rehkämper_1988_Table12-2,Regio_praepiriformis,Prepiriform_cortex,Prepiriform_cortex,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates (Pongo),regio praepiriformis (prepiriform cortex) fresh volume
 Hutsler_etal_2005,Hutsler_etal_2005_Table1,primary_motor_species_level_values_reported,Primary motor cortex,Primary motor cortex,NA,presence,presence,NA,info,14 mammal species,whether species-level primary motor measurements are numerically reported
 __merging_cortical_areas,Young_etal_2013_Table1; Collins_etal_2016_Table1 (superseded),M1_Surface_Area.mm2,Primary motor cortex (M1),Primary motor cortex (M1),NA,Area.mm2,surface area,NA,primary,Primates,REGIONAL sub-trait — surface area of primary motor cortex (M1) ONLY. Never pooled with whole-cortex CorticalSurface_Area.mm2 (trait_class = regional).
 Hutsler_etal_2005,Hutsler_etal_2005_Figure3,region,Primary somatosensory cortex,Primary somatosensory cortex,NA,Region,Region,NA,primary,14 mammal species,cortical region measured
@@ -1443,8 +1443,8 @@ Stephan_etal_1970,Stephan_etal_1970,septum_mm3,Septum,Septum,cell_counts,Volume.
 Stephan_etal_1970,Stephan_etal_1970,septum_mm3,Septum,Septum,brain_structure_volume,Volume.mm3,volume,NA,primary,NA,septum volume (Diagonal band of Broca included)
 Stephan_etal_1981,Stephan_etal_1981_TablesI-VI,Septum,Septum,Septum,cell_counts,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates","septum including septum pellucidum, septum verum, the whole diagonal band of Broca, and bed nuclei of the anterior commissure and stria terminalis"
 Stephan_etal_1981,Stephan_etal_1981_TablesI-VI,Septum,Septum,Septum,brain_structure_volume,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates","septum including septum pellucidum, septum verum, the whole diagonal band of Broca, and bed nuclei of the anterior commissure and stria terminalis"
-Zilles_Rehkamper_1988,Zilles_Rehkamper_1988_Table12-2,Septum,Septum,Septum,cell_counts,Vol.mm3,volume,NA,primary,Primates (Pongo),septum fresh volume
-Zilles_Rehkamper_1988,Zilles_Rehkamper_1988_Table12-2,Septum,Septum,Septum,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates (Pongo),septum fresh volume
+Zilles_Rehkämper_1988,Zilles_Rehkämper_1988_Table12-2,Septum,Septum,Septum,cell_counts,Vol.mm3,volume,NA,primary,Primates (Pongo),septum fresh volume
+Zilles_Rehkämper_1988,Zilles_Rehkämper_1988_Table12-2,Septum,Septum,Septum,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates (Pongo),septum fresh volume
 Hutsler_etal_2005,Hutsler_etal_2005_Table1,n_specimens,Specimens,Specimens,NA,count,count (number),NA,primary,14 mammal species,number of specimens
 Barger_etal_2014,Barger_etal_2014_Table1,striatum_cc,Striatum,Striatum,cell_counts,Volume.cm3,volume,NA,primary,Apes & humans,striatum volume (one hemisphere)
 Barger_etal_2014,Barger_etal_2014_Table1,striatum_cc,Striatum,Striatum,brain_structure_volume,Volume.cm3,volume,NA,primary,Apes & humans,striatum volume (one hemisphere)
@@ -1460,8 +1460,8 @@ Stephan_etal_1970,Stephan_etal_1970,striatum_mm3,Striatum,Striatum,cell_counts,V
 Stephan_etal_1970,Stephan_etal_1970,striatum_mm3,Striatum,Striatum,brain_structure_volume,Volume.mm3,volume,NA,primary,NA,striatum volume (internal capsule included)
 Stephan_etal_1981,Stephan_etal_1981_TablesI-VI,Striatum,Striatum,Striatum,cell_counts,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates","striatum including caudate, putamen, nucleus accumbens, and internal-capsule portions running through the striatum; excludes pallidum"
 Stephan_etal_1981,Stephan_etal_1981_TablesI-VI,Striatum,Striatum,Striatum,brain_structure_volume,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates","striatum including caudate, putamen, nucleus accumbens, and internal-capsule portions running through the striatum; excludes pallidum"
-Zilles_Rehkamper_1988,Zilles_Rehkamper_1988_Table12-2,Corpus_striatum,Striatum,Striatum,cell_counts,Vol.mm3,volume,NA,primary,Primates (Pongo),corpus striatum (nucleus caudatus + putamen) fresh volume
-Zilles_Rehkamper_1988,Zilles_Rehkamper_1988_Table12-2,Corpus_striatum,Striatum,Striatum,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates (Pongo),corpus striatum (nucleus caudatus + putamen) fresh volume
+Zilles_Rehkämper_1988,Zilles_Rehkämper_1988_Table12-2,Corpus_striatum,Striatum,Striatum,cell_counts,Vol.mm3,volume,NA,primary,Primates (Pongo),corpus striatum (nucleus caudatus + putamen) fresh volume
+Zilles_Rehkämper_1988,Zilles_Rehkämper_1988_Table12-2,Corpus_striatum,Striatum,Striatum,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates (Pongo),corpus striatum (nucleus caudatus + putamen) fresh volume
 Reep_etal_2007,Reep_etal_2007_Table1,striatum_mm3,Striatum including globus pallidus,Striatum including globus pallidus,NA,Vol.mm3,volume,NA,primary,Mammals,Striatum volume
 Frahm_Zilles_1994,Frahm_Zilles_1994_Table1,subiculum_mm3,Subiculum,Subiculum,brain_structure_volume,Vol.mm3,volume,NA,primary,Insectivora & Primates,volume of the subiculum in mm3
 Olkowicz_etal_2016,Olkowicz_etal_2016_DatasetS1,subpallium_cell_count,Subpallium,Subpallium,NA,Cells.n,count (number),mean,primary,Aves,mean estimated total cell number in subpallium
@@ -1498,7 +1498,7 @@ Frahm_etal_1997,Frahm_etal_1997_Table1,Telencephalon_mm3,Telencephalon,Telenceph
 Schleifenbaum__1973,Schleifenbaum__1973_Tables1-2,telencephalon_mm3,Telencephalon,Telencephalon,brain_structure_volume,Vol.mm3,volume,point,primary,Canis,telencephalon volume
 Stephan_etal_1970,Stephan_etal_1970,telencephalon_mm3,Telencephalon,Telencephalon,brain_structure_volume,Volume.mm3,volume,NA,primary,NA,telencephalon volume
 Stephan_etal_1981,Stephan_etal_1981_TablesI-VI,Telencephalon,Telencephalon,Telencephalon,brain_structure_volume,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",telencephalon
-Zilles_Rehkamper_1988,Zilles_Rehkamper_1988_Table12-2,Telencephalon,Telencephalon,Telencephalon,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates (Pongo),telencephalon fresh volume (sum of its components below)
+Zilles_Rehkämper_1988,Zilles_Rehkämper_1988_Table12-2,Telencephalon,Telencephalon,Telencephalon,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates (Pongo),telencephalon fresh volume (sum of its components below)
 Campos_Welker_1976,Campos_Welker_1976_Table1,thalamus_volume_mm3,Thalamus,Thalamus,cell_counts,Vol.mm3,volume,value,primary,Hystricomorph rodents,"Dorsal, epithalamic and ventral thalamic volume including fiber tracts; pretectal nuclei excluded"
 Campos_Welker_1976,Campos_Welker_1976_Table1,thalamus_volume_mm3,Thalamus,Thalamus,brain_structure_volume,Vol.mm3,volume,value,primary,Hystricomorph rodents,"Dorsal, epithalamic and ventral thalamic volume including fiber tracts; pretectal nuclei excluded"
 Stephan_etal_1981,Stephan_etal_1981_TablesI-VI,Thalamus,Thalamus,Thalamus,cell_counts,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",thalamus

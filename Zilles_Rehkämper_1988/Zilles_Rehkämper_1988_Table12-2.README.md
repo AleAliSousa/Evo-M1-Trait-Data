@@ -1,4 +1,4 @@
-# Zilles_Rehkamper_1988_Table12-2
+# Zilles_Rehkämper_1988_Table12-2
 
 ## Source
 
@@ -14,11 +14,11 @@ Unlike the species-as-rows tables in the Stephan/Frahm/Baron series, Table 12-2 
 |---|---|
 | `zilles_rehkamper_1988.pdf` | The publication. |
 | `zilles_rehkamper_1988.xlsx` | **Raw** Adobe-PDF-to-Excel export of the whole chapter (all tables across generically-named sheets). Table 12-2 is on the export's sheet `Table 13`. Kept for provenance; not read by the scripts. |
-| `Zilles_Rehkamper_1988_Table12-2_snapshot.xlsx` | **Snapshot** (sheet `Table12-2`): Table 12-2 reproduced to read like the printed page — caption, the two-line header (`Fresh Volume (cc³)` / `Percentage of Total Brain Volume¹`), the 18 structure rows with the printed indentation of sub-components, and the footnote. |
-| `Zilles_Rehkamper_1988_Table12-2.R` | Preparation → `Zilles_Rehkamper_1988_Table12-2.csv` (+ ISBN-named TSV). Reads only the snapshot. |
-| `reference_tables/Zilles_Rehkamper_1988_Table12-2_definitions.csv` | Data dictionary: each structure → canonical structure + measure (Vol.mm3). |
+| `Zilles_Rehkämper_1988_Table12-2_snapshot.xlsx` | **Snapshot** (sheet `Table12-2`): Table 12-2 reproduced to read like the printed page — caption, the two-line header (`Fresh Volume (cc³)` / `Percentage of Total Brain Volume¹`), the 18 structure rows with the printed indentation of sub-components, and the footnote. |
+| `Zilles_Rehkämper_1988_Table12-2.R` | Preparation → `Zilles_Rehkämper_1988_Table12-2.csv` (+ ISBN-named TSV). Reads only the snapshot. |
+| `reference_tables/Zilles_Rehkämper_1988_Table12-2_definitions.csv` | Data dictionary: each structure → canonical structure + measure (Vol.mm3). |
 | `comparison/Zilles_1988.csv` | Pre-existing formatted master table (Pongo row carries this paper's values), audited only. |
-| `comparison/Zilles_Rehkamper_1988_Table12-2_compare_to_Zilles_1988_csv.R` | Checking (QA): snapshot ↔ `Zilles_1988.csv`. |
+| `comparison/Zilles_Rehkämper_1988_Table12-2_compare_to_Zilles_1988_csv.R` | Checking (QA): snapshot ↔ `Zilles_1988.csv`. |
 
 ## Snapshot layout (made to look like the printed table)
 
@@ -36,7 +36,7 @@ the paper's explicit exclusion in its definition, and `Gray area striata` is a
 grey-only subcomponent distinct from Stephan 1981's area-striata total (which
 includes underlying white matter).
 
-## Preparation → `Zilles_Rehkamper_1988_Table12-2.csv`
+## Preparation → `Zilles_Rehkämper_1988_Table12-2.csv`
 
 One row per structure (18) for Pongo: `Species_Zilles1988, structure, fresh_volume_cc3, volume_mm3, pct_total_brain`. The R script reads past the caption+header (data from row 3), drops the footnote row (no numeric volume), squishes the structure label (removing the snapshot's indentation), and converts cc³ → mm³ (×1000). There are no species-name superscripts to translate. Also writes an ISBN-named TSV (`ISBN%3A9780195043716_Table12-2.tsv`) to `../__Public/comparative-data/` (Item encoded looked up in `__ReadMe.xlsx` by the registry Item name `Zilles_Rehkämper_1988_Table12-2`; the on-disk files use the ASCII folder spelling).
 

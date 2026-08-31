@@ -1,5 +1,5 @@
-# Barbeito-Andres et al. 2019 (developmental / experimental mouse dataset)
-Barbeito-Andres J, et al. (2019). *Region-specific changes in Mus musculus brain size and cell
+# Barbeito-Andrés et al. 2019 (developmental / experimental mouse dataset)
+Barbeito-Andrés J, et al. (2019). *Region-specific changes in Mus musculus brain size and cell
 composition under chronic nutrient restriction.* Journal of Experimental Biology.
 
 ## Separate comparison set (NOT in the volume merge)
@@ -16,7 +16,7 @@ sub-tables, frozen here as three faithful snapshots:
 Groups: **C** = control, **LP** = low protein, **LCP** = low calorie + protein (labels as published).
 
 ## Data readable
-`BarbeitoAndres_etal_2019.R` -> `BarbeitoAndres_etal_2019_tidy.csv`: one tidy long table aligned to a
+`BarbeitoAndrés_etal_2019.R` -> `BarbeitoAndrés_etal_2019_tidy.csv`: one tidy long table aligned to a
 generic developmental schema `species, reference, group, specimen, region, cell_type, measure, value,
 units`. `measure` in {absolute_volume (mm3), cell_number, cell_density}.
 

@@ -11,10 +11,10 @@ Pre-edit copies of every file listed below: `pre_underscore_fix_backup_20260829.
 
 | file | change |
 |---|---|
-| `Zilles_Rehkamper_1988/Zilles_Rehkamper_1988_Table12-2.R` | `Zilles__Rehkamper_1988` -> `Zilles_Rehkamper_1988`, 5 occurrences (L1, 22, 23 headers; **L48** `snapshot_file`; **L50** `output_file`) |
-| `RES restricted_checks/.../Zilles_Rehkamper_1988_Table12-2_compare_to_Zilles_1988_csv.R` | same token, 8 occurrences (L1, 15-17 headers; **L42** `paper_dir`; **L50** snapshot path; L53-54 output names) |
+| `Zilles_Rehkämper_1988/Zilles_Rehkämper_1988_Table12-2.R` | `Zilles__Rehkamper_1988` -> `Zilles_Rehkämper_1988`, 5 occurrences (L1, 22, 23 headers; **L48** `snapshot_file`; **L50** `output_file`) |
+| `RES restricted_checks/.../Zilles_Rehkämper_1988_Table12-2_compare_to_Zilles_1988_csv.R` | same token, 8 occurrences (L1, 15-17 headers; **L42** `paper_dir`; **L50** snapshot path; L53-54 output names) |
 
-`snapshot_file` now resolves: `Zilles_Rehkamper_1988_Table12-2_snapshot.xlsx` is present in the
+`snapshot_file` now resolves: `Zilles_Rehkämper_1988_Table12-2_snapshot.xlsx` is present in the
 public folder, and the restricted script's `paper_dir` now points at the real folder name.
 
 ## P2 — hardcoded provenance labels in R
@@ -45,12 +45,12 @@ decision and it is yours.
 
 | repo | before -> after |
 |---|---|
-| PUB | `Zilles_Rehkamper_1988/reference_tables/Zilles__Rehkamper_1988_Table12-2_definitions.csv` -> `Zilles_Rehkamper_1988_Table12-2_definitions.csv` |
+| PUB | `Zilles_Rehkämper_1988/reference_tables/Zilles__Rehkamper_1988_Table12-2_definitions.csv` -> `Zilles_Rehkämper_1988_Table12-2_definitions.csv` |
 | PUB | `MedinaGonzalez__2026/MedinaGonzalez_2026.README.md` -> `MedinaGonzalez__2026.README.md` |
 | PUB | `MedinaGonzalez__2026/reference_tables/MedinaGonzalez_2026_definitions.csv` -> `MedinaGonzalez__2026_definitions.csv` |
 | PUB | `Weaver__2005/Weaver_2005_NOTE.md` -> `Weaver__2005_NOTE.md` |
 | PUB | ~~`Brodmann_1913_Verhandlungen.pdf` -> `Brodmann__1913_Verhandlungen.pdf`~~ **REVERTED** - source PDF, outside the convention |
-| RES | `restricted_checks/Zilles__Rehkamper_1988/` -> `restricted_checks/Zilles_Rehkamper_1988/` (folder) |
+| RES | `restricted_checks/Zilles__Rehkamper_1988/` -> `restricted_checks/Zilles_Rehkämper_1988/` (folder) |
 | RES | `.../comparison/Zilles__Rehkamper_1988_Table12-2_compare_to_Zilles_1988_csv.R` -> single underscore |
 | RES | `.../comparison/Zilles__Rehkamper_1988_Table12-2_comparison_report_from_R.csv` -> single underscore |
 | RES | `.../comparison/Zilles__Rehkamper_1988_Table12-2_comparison_mismatches_from_R.csv` -> single underscore |
@@ -60,7 +60,7 @@ was only flagged because its parent folder was wrong, which the folder rename fi
 
 ## Referrer updates (docs that named a path being renamed, or an already-renamed one)
 
-`Zilles_Rehkamper_1988_Table12-2.README.md` (7), `Matano_etal_1985_b_Table1.README.md` (2),
+`Zilles_Rehkämper_1988_Table12-2.README.md` (7), `Matano_etal_1985_b_Table1.README.md` (2),
 `Mota_etal_2015_TableS1.README.md` (1), `__COMPARISON_MOVED.md` (2),
 `PROJECT_SCOPE_AND_DATASET_ROADMAP.md` (3: 1 Zilles, 2 `MedinaGonzalez_2026/`),
 `MedinaGonzalez__2026.README.md` (1), `Weaver__2005_NOTE.md` (1),
@@ -118,7 +118,7 @@ Applied after the code/rename pass. 76 occurrences in 13 files. Pre-edit copies:
 
 | repo | file | change | n |
 |---|---|---|---|
-| PUB | `Zilles_Rehkamper_1988/reference_tables/Zilles_Rehkamper_1988_Table12-2_definitions.csv` | `Reference`: `Zilles__Rehkamper_1988_Table12-2` -> single underscore | 24 |
+| PUB | `Zilles_Rehkämper_1988/reference_tables/Zilles_Rehkämper_1988_Table12-2_definitions.csv` | `Reference`: `Zilles__Rehkamper_1988_Table12-2` -> single underscore | 24 |
 | PUB | `Ashwell__2020/Ashwell__2020_definitions.csv` | `Reference`: `Ashwell_2020` -> `Ashwell__2020` | 17 |
 | PUB | `Brodmann__1913/reference_tables/Brodmann__1913_Table1_definitions.csv` | `Reference`: `Brodmann_1913_Table1` -> `Brodmann__1913_Table1` | 12 |
 | PUB | `MedinaGonzalez__2026/reference_tables/MedinaGonzalez__2026_definitions.csv` | `Reference`: `MedinaGonzalez_2026_Data` -> `MedinaGonzalez__2026_Data` | 8 |

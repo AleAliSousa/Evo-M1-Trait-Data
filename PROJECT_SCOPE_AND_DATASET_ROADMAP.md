@@ -53,7 +53,7 @@ roughly 25 mammals for:
 
 A V1 and entorhinal counterpart to the M1 trait set is therefore in scope. V1 coverage is already
 better than the repository name suggests: `Stephan_etal_1981` area striata,
-`Zilles_Rehkamper_1988` area-striata grey, `Bush_Allman_2004_b` V1 grey,
+`Zilles_Rehkämper_1988` area-striata grey, `Bush_Allman_2004_b` V1 grey,
 `Smaers_etal_2017` visual cortex grey/white/surface, `Changizi_Shimojo_2005` V1/A1/S1,
 `Frahm_etal_1998` MT, `deSousa_etal_2010` V1–LGN, and `Collins_etal_2010` cortical surface.
 Entorhinal coverage is much thinner; the Stephan schizocortex/hippocampus columns are the obvious

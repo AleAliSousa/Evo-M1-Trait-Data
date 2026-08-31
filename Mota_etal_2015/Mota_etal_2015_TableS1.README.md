@@ -41,7 +41,7 @@ This build adds the house pipeline.
 ## File naming (registry override)
 On-disk files follow the folder (`Mota_etal_2015_TableS1`); the `__ReadMe.xlsx` registry Item name
 is `Mota_Herculano-Houzel_2015_TableS1`. The script sets `registry_item_name` explicitly for the
-Item-encoded (DOI) TSV lookup — same override pattern as `Zilles_Rehkamper_1988`.
+Item-encoded (DOI) TSV lookup — same override pattern as `Zilles_Rehkämper_1988`.
 
 ## Duplicate species
 *Vulpes vulpes* (2 records), *Homo sapiens* (2), *Equus caballus* (2) each appear more than once

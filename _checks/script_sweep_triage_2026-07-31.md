@@ -32,7 +32,7 @@ data.table, and `predates_1988` in the Zilles provenance check) also now pass.
 |---|---|---|
 | `__ShinyApp/app.R` | **Parse error.** Lines 187–188 had `tax_order <- if (...) setNames(...)` with `else` on the next line at top level. R closes the expression at the newline, then hits a bare `else`. The whole app was unsourceable. | Braced the `if`/`else`. |
 | `__flow_comparison/Seymour_Boyer_flow_combined.R` | `deframe()` called; `tibble` never attached (readr/dplyr/tidyr/stringr only). | Added `library(tibble)`. |
-| `_checks/check_Zilles_Rehkamper_1988_provenance.R` | `replace_na()` called; `tidyr` never attached. | Added `library(tidyr)`. |
+| `_checks/check_Zilles_Rehkämper_1988_provenance.R` | `replace_na()` called; `tidyr` never attached. | Added `library(tidyr)`. |
 | `Heffner_Masterton_1983/Heffner_Masterton_1983_TableI.R` | `replace_na()` called; `tidyr` never attached. | Added `library(tidyr)`. |
 | `__merging_body_ecology/body_ecology_compiled.R` | `dirname(sys.frame(1)$ofile)` — no frames exist under `Rscript`, so this errors ("not that many frames on the stack"). It also used `%||%` one line *before* defining it. | Replaced with the house self-locating block, then ascend to the folder containing `__Public`. |
 | `__merging_brain_mass/brain_mass_compiled.R` | `repo <- if (dir.exists("__Public")) "." else ".."` — cwd-dependent, so `Rscript` from anywhere else failed on `../__ShinyApp/data/source_manifest.csv`. | Same self-locating block. |
@@ -153,7 +153,7 @@ setwd("/Users/crossmodal/.../Evo-M1-Trait-Data/<folder>")
 ```
 
 Almost all are `*/comparison/*_compare_to_*.R` QA scripts, plus `_keys/resolve_taxonomy.R`,
-`_keys/build_variable_catalog.R`, and `_checks/check_Zilles_Rehkamper_1988_provenance.R`.
+`_keys/build_variable_catalog.R`, and `_checks/check_Zilles_Rehkämper_1988_provenance.R`.
 The repo already has the portable replacement in 211 other files, and
 `_tools/__edit_all_directories.R` (dry-run by default) is the tool for applying it in bulk.
 Relevant if RAs are contributing via forks.
@@ -170,7 +170,7 @@ Rscript run_all_scripts_v2.R
 To confirm just this pass's fixes without a full sweep:
 
 ```sh
-EVOM1_ONLY='app\.R|Seymour_Boyer_flow_combined|check_Zilles_Rehkamper_1988_provenance|Heffner_Masterton_1983_TableI|body_ecology_compiled|brain_mass_compiled|reconcile_relative_volumes' \
+EVOM1_ONLY='app\.R|Seymour_Boyer_flow_combined|check_Zilles_Rehkämper_1988_provenance|Heffner_Masterton_1983_TableI|body_ecology_compiled|brain_mass_compiled|reconcile_relative_volumes' \
   Rscript run_all_scripts_v2.R
 ```
 

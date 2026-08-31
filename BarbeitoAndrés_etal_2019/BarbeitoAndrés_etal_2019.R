@@ -40,7 +40,7 @@ setwd(folder)
 
 suppressPackageStartupMessages({ library(readxl); library(readr); library(dplyr); library(tidyr); library(stringr) })
 base <- base
-folder <- file.path(base, "BarbeitoAndres_etal_2019")
+folder <- file.path(base, "BarbeitoAndrés_etal_2019")
 xls <- file.path(folder, "data_figshare.xlsx")
 numv <- function(x) suppressWarnings(as.numeric(gsub(",", "", as.character(x))))
 raw <- read_excel(xls, sheet = "Hoja1", col_names = FALSE)
@@ -65,10 +65,10 @@ b1 <- raw[5:30, ]
 names(b1)[1:15] <- c("specimen","group", vol_regions)
 b1 <- b1 %>% filter(!is.na(group)) %>%
   mutate(specimen = as.character(specimen), group = as.character(group))
-write_csv_tsv(b1, "BarbeitoAndres_etal_2019_volumes_snapshot")
+write_csv_tsv(b1, "BarbeitoAndrés_etal_2019_volumes_snapshot")
 vol_long <- b1 %>%
   pivot_longer(all_of(vol_regions), names_to = "region", values_to = "value") %>%
-  transmute(species = "Mus musculus", reference = "BarbeitoAndres_etal_2019",
+  transmute(species = "Mus musculus", reference = "BarbeitoAndrés_etal_2019",
             group, specimen, region, cell_type = NA_character_,
             measure = "absolute_volume", value = numv(value), units = "mm3") %>%
   filter(!is.na(value))
@@ -84,7 +84,7 @@ parse_cell <- function(rows, measure, units) {
   list(snapshot = blk,
        long = blk %>% pivot_longer(all_of(cell_cols), names_to = "rc", values_to = "value") %>%
          separate(rc, into = c("region","cell_type"), sep = "__") %>%
-         transmute(species = "Mus musculus", reference = "BarbeitoAndres_etal_2019",
+         transmute(species = "Mus musculus", reference = "BarbeitoAndrés_etal_2019",
                    group, specimen = NA_character_, region,
                    cell_type = gsub("Non_neurons","Non-neurons", cell_type),
                    measure = measure, value = numv(value), units = units) %>%
@@ -92,8 +92,8 @@ parse_cell <- function(rows, measure, units) {
 }
 n2 <- parse_cell(34:48, "cell_number",  "cells")
 n3 <- parse_cell(55:69, "cell_density", "cells_per_mg (as published; verify against paper)")
-write_csv_tsv(n2$snapshot, "BarbeitoAndres_etal_2019_cellnumber_snapshot")
-write_csv_tsv(n3$snapshot, "BarbeitoAndres_etal_2019_celldensity_snapshot")
+write_csv_tsv(n2$snapshot, "BarbeitoAndrés_etal_2019_cellnumber_snapshot")
+write_csv_tsv(n3$snapshot, "BarbeitoAndrés_etal_2019_celldensity_snapshot")
 
 ## ---- data-readable outputs: split tables + combined tidy; TSVs replicate CSVs ----
 ## Split outputs are the analysis-ready counterparts to the faithful snapshots above.
@@ -104,10 +104,10 @@ barbeito_celldensity <- n3$long
 
 tidy <- bind_rows(barbeito_volumes, barbeito_cellnumber, barbeito_celldensity)
 
-write_csv_tsv(barbeito_volumes,     "BarbeitoAndres_etal_2019_volumes")
-write_csv_tsv(barbeito_cellnumber,  "BarbeitoAndres_etal_2019_cellnumber")
-write_csv_tsv(barbeito_celldensity, "BarbeitoAndres_etal_2019_celldensity")
-write_csv_tsv(tidy,                 "BarbeitoAndres_etal_2019_tidy")
+write_csv_tsv(barbeito_volumes,     "BarbeitoAndrés_etal_2019_volumes")
+write_csv_tsv(barbeito_cellnumber,  "BarbeitoAndrés_etal_2019_cellnumber")
+write_csv_tsv(barbeito_celldensity, "BarbeitoAndrés_etal_2019_celldensity")
+write_csv_tsv(tidy,                 "BarbeitoAndrés_etal_2019_tidy")
 
 message("Barbeito 2019: volumes ", nrow(barbeito_volumes),
         " | cell_number ", nrow(barbeito_cellnumber),
@@ -134,6 +134,6 @@ publish <- function(df, item) {
     message("Wrote ", file.path(tsv_dir, paste0(enc, ".tsv")))
   }
 }
-publish(barbeito_volumes,     "BarbeitoAndres_etal_2019_volumes")
-publish(barbeito_cellnumber,  "BarbeitoAndres_etal_2019_cellnumber")
-publish(barbeito_celldensity, "BarbeitoAndres_etal_2019_celldensity")
+publish(barbeito_volumes,     "BarbeitoAndrés_etal_2019_volumes")
+publish(barbeito_cellnumber,  "BarbeitoAndrés_etal_2019_cellnumber")
+publish(barbeito_celldensity, "BarbeitoAndrés_etal_2019_celldensity")

@@ -12,7 +12,7 @@ Registry state read fresh: 352 named rows, 168 paper folders, 233 paper-folder R
 | `Weaver__2005` | NOT a misname: a **separate 2005 Weaver paper** (PDF + note; the dissertation build lives in `Weaver__2001`, whose rows you already fixed). Needs its own registry row when adopted; currently a stub. |
 | `VanEssen_Drury_1997` | Folder name is right (two authors). The REGISTRY side is off: pub/item say `VanEssen_etal_1997` and the citation contains a reference-manager artifact author — "…Drury, H. A., **& New Collective, A.**". Fix in Excel: citation, Publication name, Item name → `VanEssen_Drury_1997_Table1` (verify in EndNote first, per the house lesson). |
 | `Mota_etal_2015` | OK by design — documented `registry_item_name` override (`Mota_Herculano-Houzel_2015_TableS1`). |
-| `Zilles_Rehkamper_1988` | OK by design — ASCII folder vs umlaut registry, documented; script overrides internally. |
+| `Zilles_Rehkämper_1988` | OK by design — ASCII folder vs umlaut registry, documented; script overrides internally. |
 | `Hutsler_etal_2005` | 4 built products, still zero rows (top of the registration queue; the cortical-layers merge already reads its CSV directly). |
 | `Deaner_etal_2007` | Folder now correctly named (you renamed it); needs a row. |
 | `Reader_Laland_2002` | PDF + definitions stub; needs a row when adopted. |

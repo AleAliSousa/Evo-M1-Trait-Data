@@ -38,11 +38,11 @@ Powell_etal_2017,Powell_etal_2017_Dataset1.csv,%animal prey,118,8,0.067796610169
 Genoud_etal_2018,Genoud_etal_2018_TableS2.csv,No,1739,109,0.06267970097757332,True,False,True,C_rejected_non_identifier_column,0.04370327774583094
 Jacobs_etal_2018,Jacobs_etal_2018_Table5.csv,dendritic_spine_number_M1,52,3,0.057692307692307696,False,False,True,C_rejected_non_identifier_column,0.0
 Wilman_etal_2014,Wilman_etal_2014_MamFuncDat.csv,MSW3_ID,5400,159,0.029444444444444443,False,False,True,C_rejected_non_identifier_column,0.013888888888888888
-BarbeitoAndres_etal_2019,BarbeitoAndres_etal_2019_tidy.tsv,specimen,23,6,0.2608695652173913,True,False,False,C_rejected_row_index_like,
-BarbeitoAndres_etal_2019,BarbeitoAndres_etal_2019_volumes.tsv,specimen,23,6,0.2608695652173913,True,False,False,C_rejected_row_index_like,
+BarbeitoAndrés_etal_2019,BarbeitoAndrés_etal_2019_tidy.tsv,specimen,23,6,0.2608695652173913,True,False,False,C_rejected_row_index_like,
+BarbeitoAndrés_etal_2019,BarbeitoAndrés_etal_2019_volumes.tsv,specimen,23,6,0.2608695652173913,True,False,False,C_rejected_row_index_like,
 Collins_etal_2010,Collins_etal_2010_DatasetS1.csv,piece_id,155,29,0.1870967741935484,True,True,False,C_rejected_row_index_like,0.3032258064516129
 Barger_etal_2014,Barger_etal_2014_Table1.csv,case_index,20,6,0.3,True,False,True,C_rejected_species_code_column,0.7
-BarbeitoAndres_etal_2019,BarbeitoAndres_etal_2019_tidy.csv,specimen,23,6,0.2608695652173913,True,False,False,C_rejected_species_code_column,0.7391304347826086
-BarbeitoAndres_etal_2019,BarbeitoAndres_etal_2019_volumes.csv,specimen,23,6,0.2608695652173913,True,False,False,C_rejected_species_code_column,0.7391304347826086
+BarbeitoAndrés_etal_2019,BarbeitoAndrés_etal_2019_tidy.csv,specimen,23,6,0.2608695652173913,True,False,False,C_rejected_species_code_column,0.7391304347826086
+BarbeitoAndrés_etal_2019,BarbeitoAndrés_etal_2019_volumes.csv,specimen,23,6,0.2608695652173913,True,False,False,C_rejected_species_code_column,0.7391304347826086
 Schleifenbaum__1973,Schleifenbaum__1973_Tables1-2.csv,individual,33,6,0.18181818181818182,True,False,False,C_rejected_species_code_column,0.5757575757575758
 Stephan_etal_1981,Stephan_etal_1981_TablesI-VI.csv,code,76,13,0.17105263157894737,False,False,False,C_rejected_species_code_column,1.0

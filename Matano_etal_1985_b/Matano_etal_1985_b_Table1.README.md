@@ -44,5 +44,5 @@ volume, body weight and n. Verified: **48 matched, 0 value mismatches.** `Pongo 
 value (4300) but **no paper species name** in the CSV → reported as **csv-only** — an expected
 post-1985 addition (Matano measured *Pan*, *Gorilla* and *Homo* among the apes, not *Pongo*). The
 Pongo figure was almost certainly carried in later from Zilles & Rehkämper (1988), the original
-source of the orang-utan volumes; see `Zilles_Rehkamper_1988/Zilles_Rehkamper_1988_Table12-2.README.md`.
+source of the orang-utan volumes; see `Zilles_Rehkämper_1988/Zilles_Rehkämper_1988_Table12-2.README.md`.
 Expected, not a mismatch to reconcile.

@@ -57,7 +57,7 @@ The audit CSV now carries an `in_scope` column recording this distinction.
 - **File contents and filenames: not clean.** 16 non-canonical spellings remain, in
   3,620 places. They are concentrated: 11 publications account for everything, and
   the great majority of occurrences are one label repeated down a built column.
-- **One script is still halting for this reason** (`Zilles_Rehkamper_1988_Table12-2.R`).
+- **One script is still halting for this reason** (`Zilles_Rehkämper_1988_Table12-2.R`).
   The other 10 failures in `_checks/script_execution_log.csv` have other causes.
 
 ## The 16 remaining wrong spellings
@@ -68,7 +68,7 @@ The audit CSV now carries an `in_scope` column recording this distinction.
 | Karbowski_2007 | Karbowski__2007 | 533 | missing |
 | Armstrong_1979 | Armstrong__1979 | 383 | missing |
 | MacLeod_2000 | MacLeod__2000 | 124 | missing |
-| Zilles__Rehkamper_1988 | Zilles_Rehkamper_1988 | 119 | **extra** underscore (two authors) |
+| Zilles__Rehkamper_1988 | Zilles_Rehkämper_1988 | 119 | **extra** underscore (two authors) |
 | HerculanoHouzel_2015 | HerculanoHouzel__2015 | 56 | missing |
 | Ashwell_2020 | Ashwell__2020 | 36 | missing |
 | Brodmann_1913 | Brodmann__1913 | 23 | missing |
@@ -88,9 +88,9 @@ the definitions file, and the entire restricted-side mirror were not.
 
 ## P1 — breaks execution now (3 strings, 2 files)
 
-1. `Zilles_Rehkamper_1988/Zilles_Rehkamper_1988_Table12-2.R`
+1. `Zilles_Rehkämper_1988/Zilles_Rehkämper_1988_Table12-2.R`
    - L48 `snapshot_file <- "Zilles__Rehkamper_1988_Table12-2_snapshot.xlsx"` — on disk it is
-     `Zilles_Rehkamper_1988_Table12-2_snapshot.xlsx`. This is the logged failure
+     `Zilles_Rehkämper_1988_Table12-2_snapshot.xlsx`. This is the logged failure
      (`path does not exist`, 2026-08-29 01:36).
    - L50 `output_file <- "Zilles__Rehkamper_1988_Table12-2.csv"` — would write a second,
      wrongly-named copy beside the correct one.
@@ -140,7 +140,7 @@ The same value has already propagated into the four derived CSVs and the public 
 
 ## P2 — filenames and folders still wrong (11)
 
-    PUB  Zilles_Rehkamper_1988/reference_tables/Zilles__Rehkamper_1988_Table12-2_definitions.csv
+    PUB  Zilles_Rehkämper_1988/reference_tables/Zilles__Rehkamper_1988_Table12-2_definitions.csv
     PUB  MedinaGonzalez__2026/MedinaGonzalez_2026.README.md
     PUB  MedinaGonzalez__2026/reference_tables/MedinaGonzalez_2026_definitions.csv
     PUB  Weaver__2005/Weaver_2005_NOTE.md
@@ -188,7 +188,7 @@ Only one failure is an underscore problem.
 
 | script | cause | underscore? |
 |---|---|---|
-| `Zilles_Rehkamper_1988_Table12-2.R` | reads `Zilles__Rehkamper_..._snapshot.xlsx` | **yes** |
+| `Zilles_Rehkämper_1988_Table12-2.R` | reads `Zilles__Rehkamper_..._snapshot.xlsx` | **yes** |
 | `_tools/file_list.R` | halts: "Non-canonical Sheet1 naming formula(s): K62" | no — see below |
 | `Manger__2006/Manger_2006_Table1.R` | path not found; folder now holds `Manger__2006_Table1.R` and all four files are canonical | no — **stale log entry**, rerun |
 | `deJager_etal_2022/deJager_etal_2022.R` | could not open `deJager_etal_2022_calibration.csv`; the file is present (mtime 2026-07-31) and reads fine now | no — transient (OneDrive materialisation), rerun |
@@ -236,8 +236,8 @@ the three `10.1111%2Fj.1558-5646.2008.00392.x_sleep-data*`,
 ## Not assessed
 
 Nothing was edited or renamed by this audit. Case (`weaver_2005.pdf` vs `Weaver__2005`),
-ASCII vs umlaut (`Zilles_Rehkamper_1988` on disk vs `Zilles_Rehkämper_1988` in Sheet1 rows
+ASCII vs umlaut (`Zilles_Rehkämper_1988` on disk vs `Zilles_Rehkämper_1988` in Sheet1 rows
 342-343 — both single-underscore, so out of scope here), and the nine folders with no Sheet1
 row (`Changizi_He_2005`, `Deaner_etal_2007`, `Hutsler_etal_2005`, `Mota_etal_2015`,
 `Reader_Laland_2002`, `Schultz_Dunbar_2010`, `VanEssen_Drury_1997`, `Weaver__2005`,
-`Zilles_Rehkamper_1988`) are separate questions.
+`Zilles_Rehkämper_1988`) are separate questions.

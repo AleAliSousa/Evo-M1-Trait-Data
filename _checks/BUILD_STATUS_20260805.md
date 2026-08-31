@@ -30,7 +30,7 @@ the merges and the Shiny app.
 | `Semendeferi_etal_2002_Table1` | 8 | `.R` had no public-TSV block — added |
 | `Iwaniuk_etal_1999_References` | 69 | `.R` had no public-TSV block — added |
 | `Sherwood_etal_2004_I_Table{4,5}` | 6 / 6 | no TSV block **and** unparsed numbers (see below) |
-| `BarbeitoAndres_etal_2019_{volumes,cellnumber,celldensity}` | 299 / 211 / 214 | wrote local `.tsv` copies, never the DOI-coded one |
+| `BarbeitoAndrés_etal_2019_{volumes,cellnumber,celldensity}` | 299 / 211 / 214 | wrote local `.tsv` copies, never the DOI-coded one |
 | `deJager_etal_2022_Table1` | 28 | `.R` had no public-TSV block — added |
 | `Matano__1992_Tables1to4` | 45 | registry `Item number` was blank, so the lookup found nothing |
 
@@ -297,7 +297,7 @@ inside TableS1 — see above), `Isler_etal_2008_Tree.nex` (a phylogeny), and `Na
    extracts both printed tables and writes **one** merged CSV (S1 taxonomy + S2 measures) under the
    `TableS1` item. Publishing a separate S2 TSV would double-count. Either record that in the S2
    row's Note, or retire the row.
-3. **`BarbeitoAndres_etal_2019` is flagged `Data role = review`** but its own README describes an
+3. **`BarbeitoAndrés_etal_2019` is flagged `Data role = review`** but its own README describes an
    experimental single-species (*Mus musculus*) nutrition study with per-specimen measurements —
    a primary dataset kept as its own comparison set. The three TSVs were published on that reading;
    the role field looks like a mislabel.

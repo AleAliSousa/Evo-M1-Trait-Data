@@ -1,0 +1,16 @@
+study,file,published_taxon,handle_used,modality,what_it_reports,crosswalk_status,verdict
+MacLeod__2000,MacLeod__2000_APPENDIXI.csv,GIBBON; ZILLES(SEMEND.),DISCO (3/97) / GPZ-5542,histology,"bw 6.8 kg, brain 120 g, age 22, Yerkes",registered,confirmed
+MacLeod_etal_2003,MacLeod_etal_2003_Table2.csv,Hylobates lar,Disco 3/97,histology,"brain 115.8, cerebellum 13.8, vermis 2.3, hemisphere 11.5 cm3",NOT registered,confirmed
+deSousa_dissertation_2008,Table 5.1 (restricted staging),Hylobates lar,hld,histology,V1 / LGN / neocortex,registered,confirmed
+deSousa_etal_2009,deSousa_etal_2009_Table1.csv,Hylobates lar,hld (archive_number = Disco),histology/cytoarchitecture,"brain 120000 mg, left V1 2292 mm3, left LGN 90 mm3, F, 22 yr",NOT registered,confirmed
+deSousa_etal_2010,deSousa_etal_2010_Table1.csv,Hylobates lar (Disco 3/97),Disco 3/97,histology,"brain 120 g, brain vol 115.8 cm3, V1, LGN",registered,confirmed
+Barger_etal_2007,Barger_etal_2007_Table1.csv,Gibbon (no binomial),Disco / GPZ-5542,histology,"amygdala L 0.270 R 0.367 cm3, hemisphere 93.2",registered,confirmed
+Barger_etal_2014,Barger_etal_2014_Table1.csv,Nomascus concolor,NONE - no specimen handle printed,histology,L-hemisphere amygdala values equal Barger 2007 Disco row,NOT registered,value-level only
+DeCasien_Higham_2019,MOESM3 / comparison files,Hylobates_lar AND Nomascus_concolor,Disco (in repo reconciliation only),secondary compilation,BV 115800 and amygdala 637 entered under two genera,NOT registered,confirmed - secondary duplicate
+Semendeferi_Damasio_2000,Semendeferi_Damasio_2000_Table2.csv,Hylobates sp.,NONE - specimens labelled Gibbon 1-4,MRI,"4 gibbons, 79.5/92.6/78.5/78.5 cm3",not registered,CANNOT CONFIRM OR EXCLUDE
+Rilling_Insel_1998,Rilling_Insel_1998_Table1.csv,Hylobates lar,NONE - species means only,MRI,"n=4 (2M 2F), brain 83.0 cc",not registered,CANNOT CONFIRM OR EXCLUDE
+Rilling_Insel_1999,Rilling_Insel_1999_Table1.csv,Hylobates lar,NONE - species means only,MRI,"n=4 (2M 2F), brain 83.0 cc",not registered,CANNOT CONFIRM OR EXCLUDE
+MacLeod_etal_2003 Table 1,MacLeod_etal_2003_Table1.csv,Hylobates lar,Sunny / Cherokee / Cleo / Buddy,histology (Yerkes sample),"4 named gibbons, none is Disco",not registered,EXCLUDED - Disco absent
+Baron_etal_1996,-,-,-,-,"grep hit is ""discolor"" (Callicebus/Pithecia)",n/a,rejected - false positive
+Burger_etal_2019,-,-,-,-,"grep hit is ""discolor""",n/a,rejected - false positive
+Bauernfeind_etal_2013,Bauernfeind_etal_2013_Table1.csv,Hylobates lar,YN81-146b (footnote b; = YN81-146),histology,"insula subdivisions; F, brain 92000 mg, vol 88803 mm3; Collection printed as Stephan (conflicts with Zilles/Semendeferi elsewhere)",NOT registered,"confirmed - YN81-146, not Disco"

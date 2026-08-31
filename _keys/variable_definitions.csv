@@ -29,8 +29,8 @@ Neonate_brain_weight_g,brain structure & size,mass,WholeBrain,Mass.g,g,TRUE,Neon
 SpinalCord_p.C.CNS.mass,brain structure & size,structure_fraction,SpinalCord,p.C.CNS.mass,%,TRUE,SpinalCord: percent of CNS mass,composed,_keys/glossary.csv + _keys/variable_domain.csv,,p.C.CNS.mass
 SpinalCord_Length.mm,brain structure & size,structure_length,SpinalCord,Length.mm,mm,TRUE,SpinalCord: length in millimetres,composed,_keys/glossary.csv + _keys/variable_domain.csv,,Length.mm
 Amygdala_Mass.g,brain structure & size,structure_mass,Amygdala,Mass.g,g,TRUE,Amygdala: mass in grams,composed,_keys/glossary.csv + _keys/variable_domain.csv,,Mass.g
-Body_Mass.g,brain structure & size,structure_mass,Body,Mass.g,g,TRUE,body mass in project units (g),source_definition,Weaver_2001/reference_tables/Weaver__2001_TableA-15_definitions.csv,Body_Mass.g,Mass.g
-Brain_Mass.mg,brain structure & size,structure_mass,WholeBrain,Mass.mg,mg,TRUE,brain mass in project units (mg),source_definition,Weaver_2001/reference_tables/Weaver__2001_TableA-15_definitions.csv,Brain_Mass.mg,Mass
+Body_Mass.g,brain structure & size,structure_mass,Body,Mass.g,g,TRUE,body mass in project units (g),source_definition,Weaver__2001/reference_tables/Weaver__2001_TableA-15_definitions.csv,Body_Mass.g,Mass.g
+Brain_Mass.mg,brain structure & size,structure_mass,WholeBrain,Mass.mg,mg,TRUE,brain mass in project units (mg),source_definition,Weaver__2001/reference_tables/Weaver__2001_TableA-15_definitions.csv,Brain_Mass.mg,Mass
 Cerebellum_Mass.g,brain structure & size,structure_mass,Cerebellum,Mass.g,g,TRUE,cerebellum mass,source_definition,Kazu_etal_2014/reference_tables/Kazu_etal_2014_Table1_definitions.csv,Cerebellum_Mass.g,Mass.g
 CerebralCortex_Mass.g,brain structure & size,structure_mass,CerebralCortex,Mass.g,g,TRUE,cerebral cortex mass (grey matter + white matter + hippocampus),source_definition,Kazu_etal_2014/reference_tables/Kazu_etal_2014_Table1_definitions.csv,CerebralCortex_Mass.g,Mass.g
 CerebralCortexGrey_Mass.g,brain structure & size,structure_mass,CerebralCortexGrey,Mass.g,g,TRUE,CerebralCortexGrey: mass in grams,composed,_keys/glossary.csv + _keys/variable_domain.csv,,Mass.g

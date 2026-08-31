@@ -1,7 +1,7 @@
 "change","registry_key","column","was","now"
-"cell changed","Baron_etal_1996_Table10","Note about item","FINISHED","BUILT 2026-08-15: 272 species; five fundamental brain-part volumes."
-"cell changed","Baron_etal_1996_Table32","Note about item","FINISHED","BUILT 2026-08-15: 272 species; telencephalic component volumes. Two source-level component-sum conflicts are retained and reported."
-"cell changed","Baron_etal_1996_Table10","Snapshot","Source values preserved; seven blank n values retained as missing.","Baron_etal_1996_Table10_snapshot.csv"
-"cell changed","Baron_etal_1996_Table32","Snapshot","Source values preserved; two Table 32 versus Table 10 component-sum conflicts flagged, not corrected.","Baron_etal_1996_Table32_snapshot.csv"
-"cell changed","Baron_etal_1996_Table10","Adjustment made","Baron_etal_1996_Table10.csv","Source values preserved; seven blank n values retained as missing."
-"cell changed","Baron_etal_1996_Table32","Adjustment made","Baron_etal_1996_Table32.csv","Source values preserved; two Table 32 versus Table 10 component-sum conflicts flagged, not corrected."
+"ROW REMOVED","write file name","","",""
+"row added","deSousa_etal_2010_SupTable2","","",""
+"cell changed","Granatosky__2018_TableS1","Note about item","Table S1. Locomotor profiles for the species used in this
+study.","Table S1. Locomotor profiles for the species used in this
+study."
+"cell changed","Finlay_etal_2006_Table6.1","Flags active (skips)","","WHOLE-PAPER FLAG 2026-08-29: traced cortical surfaces systematically low vs independent flattening/planimetry (galago 383 vs Collins 1849-2261 mm2; possum 208 vs Brodmann 1547); several rows lack a citable primary; owl monkey high. All rows held out of __merging_cortical_areas _wide (status flagged_pending_ProjectKaskan_check). Verify against the Project Kaskan remeasuring dataset (restricted repo) once built, then unflag per column. See Finlay_etal_2006/Finlay_etal_2006_Table6.1_source_attribution.csv. (Re-applied 2026-08-29 after an earlier application was lost to a concurrent workbook save.)"

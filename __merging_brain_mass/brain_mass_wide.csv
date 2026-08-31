@@ -108,7 +108,7 @@
 "Balaenoptera acutorostrata",2766.95
 "Balaenoptera borealis",4900
 "Balaenoptera musculus",3636
-"Balaenoptera physalus",5100
+"Balaenoptera physalus",6105.715
 "Balionycteris maculata",0.5107
 "Barbastella barbastellus",0.184
 "Bassaricyon alleni",19.37
@@ -356,8 +356,8 @@
 "Dasyurus spartacus",5.3
 "Dasyurus viverrinus",5.33
 "Daubentonia madagascariensis",45.15
-"Delphinapterus leucas",1921
-"Delphinus delphis",889.13
+"Delphinapterus leucas",2002
+"Delphinus delphis",847.7533
 "Dendrohyrax arboreus",12.3
 "Dendrohyrax dorsalis",12.8
 "Dendrohyrax sp.",3.328
@@ -531,7 +531,7 @@
 "Gracula religiosa",3.6696
 "Grammomys cometes",0.96
 "Grammomys poensis",1.55
-"Grampus griseus",2098.084
+"Grampus griseus",2249.056
 "Gulo gulo",72.5
 "Gymnobelideus leadbeateri",2.85
 "Halichoerus grypus",307.5
@@ -625,7 +625,7 @@
 "Ictonyx libyca",4.48
 "Ictonyx striatus",8.5
 "Indri indri",36
-"Inia geoffrensis",633.645
+"Inia geoffrensis",621.8225
 "Iomys horsfieldii",3.38
 "Isoodon macrourus",4.42
 "Isoodon obesulus",4.03
@@ -645,13 +645,14 @@
 "Kobus ellipsiprymnus",290
 "Kobus kob",204
 "Kobus leche",222.7
-"Kogia breviceps",1019
+"Kogia breviceps",1015.5
 "Kogia sima",622
+"Kogia simus",622
 "La Chapelle I",1516.76
 "La Ferrassie I",1575.83
-"Lagenorhynchus acutus",1103.17
+"Lagenorhynchus acutus",1151.585
 "Lagenorhynchus albirostris",1126
-"Lagenorhynchus obliquidens",1136.75
+"Lagenorhynchus obliquidens",1138.375
 "Lagenorhynchus obscurus",886.1
 "Lagidium viscacia",15.08
 "Lagorchestes conspicillatus",14
@@ -808,7 +809,7 @@
 "Megaerops ecaudatus",0.8223
 "Megaerops niphanae",0.958
 "Megaloglossus woermanni",0.6795
-"Megaptera novaeangliae",6100
+"Megaptera novaeangliae",6269.5
 "Meles meles",45.5
 "Mellivora capensis",72.97
 "Melogale personata",61.4
@@ -826,7 +827,7 @@
 "Mesocricetus auratus",0.965
 "Mesomys hispidus",2.64
 "Mesophylla macconnelli",0.3445
-"Mesoplodon densirostris",1424.5
+"Mesoplodon densirostris",1443.75
 "Mesoplodon europaeus",2149
 "Mesoplodon mirus",2355
 "Metachirus nudicaudatus",3.5
@@ -875,7 +876,7 @@
 "Monachus schauinslandi",370
 "Monodelphis brevicaudata",0.9
 "Monodelphis domestica",0.79
-"Monodon monoceros",2993.7
+"Monodon monoceros",2995.35
 "Monophyllus plethodon",0.4125
 "Mops condylurus",0.4222
 "Mops leucostigma",0.39
@@ -960,6 +961,7 @@
 "Neomys fodiens",0.32
 "Neophascogale lorentzi",2.45
 "Neophoca cinerea",388.75
+"Neophocaena asiaeorientalis",422
 "Neophocaena phocaenoides",468
 "Neoromicia flavescens",0.19
 "Neoromicia nanus",0.1
@@ -1022,7 +1024,7 @@
 "Onychogalea unguifera",16.7
 "Onychomys leucogaster",0.8
 "Onychomys torridus",0.59
-"Orcinus orca",6052
+"Orcinus orca",5834.5
 "Oreotragus oreotragus",59.4
 "Ornithorhynchus anatinus",8.75
 "Orthogeomys cherriei",3.47
@@ -1161,12 +1163,14 @@
 "Phocarctos hookeri",393.75
 "Phocoena phocoena",455
 "Phocoena spinipinnis",597
-"Phocoenoides dalli",833.67
+"Phocoenoides dalli",850.335
+"Phocoenoides truei",876
 "Phoniscus atrox",0.188
 "Phylloderma stenops",1.338
 "Phyllostomus discolor",1.1013
 "Phyllostomus elongatus",0.885
 "Phyllostomus hastatus",1.5317
+"Physeter catadon",7818
 "Physeter catodon",8183
 "Pica pica",5.4253
 "Piliocolobus badius",76.9625
@@ -1188,7 +1192,8 @@
 "Planigale maculata",0.2
 "Planigale novaeguineae",0.27
 "Planigale tenuirostris",0.14
-"Platanista gangetica",290.5
+"Platanista gangetica",292.75
+"Platanista minor",164
 "Platycercus eximius",2.7159
 "Platyrrhinus brachycephalus",0.583
 "Platyrrhinus helleri",0.4897
@@ -1203,6 +1208,7 @@
 "Pongo",433.13
 "Pongo pygmaeus",376.6112
 "Pongo sp.",345.9
+"Pontoporia blainvillei",220
 "Potamochoerus porcus",138
 "Potamogale velox",4.13
 "Potorous platyops",6.3
@@ -1485,7 +1491,7 @@
 "Spilogale gracilis",6.81
 "Spilogale putorius",5
 "Stenella attenuata",779.83
-"Stenella coeruleoalba",883.75
+"Stenella coeruleoalba",851.875
 "Stenella longirostris",450
 "Steno bredanensis",1541.9
 "Strigocuscus pelengensis",6.22
@@ -1602,7 +1608,7 @@
 "Tupaia sp.",3.04
 "Turdus merula",1.8872
 "Tursiops aduncus",1498
-"Tursiops truncatus",1531
+"Tursiops truncatus",1530.6667
 "Tylonycteris pachypus",0.077
 "Tylonycteris robustula",0.116
 "Tyto alba",5.6177

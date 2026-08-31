@@ -7,13 +7,36 @@
 #
 # STATUS: externally blocked. The published Zenodo record is restricted and exposes no downloadable
 # files (verified through the API 2026-08-15). Once the seven source files are supplied or access is
-# granted, freeze them per MedinaGonzalez_2026/MedinaGonzalez_2026.README.md, CONFIRM the real column
+# granted, freeze them per MedinaGonzalez__2026/MedinaGonzalez__2026.README.md, CONFIRM the real column
 # names at the TODO(curator) marker, and then run this reader.
 
 library(readxl); library(writexl)
-setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/")
+## self-locate (fixed 2026-08-29: was a hardcoded absolute setwd, broken on any clone)
+.sp <- local({
+  a <- grep("^--file=", commandArgs(FALSE), value = TRUE)
+  if (length(a)) return(normalizePath(sub("^--file=", "", a[1])))
+  frames <- sys.frames()
+  for (i in rev(seq_along(frames))) {
+    of <- frames[[i]]$ofile
+    if (is.character(of) && length(of) == 1L && nzchar(of)) return(normalizePath(of))
+  }
+  if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+    p <- rstudioapi::getActiveDocumentContext()$path
+    if (nzchar(p)) return(normalizePath(p))
+  }
+  stop("Run with Rscript, or source() in RStudio (save first).", call. = FALSE)
+})
+setwd(dirname(dirname(.sp)))          # repo root (this file lives in ____EvoM1_TraitTable/)
 folder_path <- "./____EvoM1_TraitTable/"
-item_name   <- "MedinaGonzalez_2026_Data"                  # register in __ReadMe.xlsx (Sheet1)
+
+## EXTERNALLY BLOCKED GUARD (2026-08-29): fail with the reason, not a bare file() error.
+.medina_tsv <- "./__Public/comparative-data/10.1002%2Fjez.70069_Data.tsv"
+if (!file.exists(.medina_tsv))
+  stop("Medina-González 2026 source not yet available: ", .medina_tsv, " is not built. ",
+       "The Zenodo record is restricted (verified 2026-08-15) — freeze the source per ",
+       "MedinaGonzalez_2026/ README when access is granted, build the TSV, then run this reader. ",
+       "This script is on run_all_scripts_v2.R's skip list until then.", call. = FALSE)
+item_name   <- "MedinaGonzalez__2026_Data"                  # register in __ReadMe.xlsx (Sheet1)
 
 # species resolver (single source of truth = _keys), identical to the sibling readers
 key <- read.csv("_keys/Stephan/species_key.csv", stringsAsFactors = FALSE)

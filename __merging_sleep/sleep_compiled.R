@@ -16,7 +16,7 @@
 ##
 ## Sources / teams (this build):
 ##   Eagleman_2021        Eagleman_Vaughn_2021_TABLE1   REM_sleep_pct        (25 primates; common names resolved)
-##   HerculanoHouzel_2015 HerculanoHouzel__2015_Table1  Sleep_h_day          (24 mammals)
+##   HerculanoHouzel__2015 HerculanoHouzel__2015_Table1  Sleep_h_day          (24 mammals)
 ##   Lyamin_2008          Lyamin_etal_2008_Table2       SWS_total_pct, USWS  (4 cetaceans)
 ##   RufGeiser_2015       Ruf_Geiser_2015_Table1        Torpor_*             (213 birds & mammals)
 ## The four sources contribute DIFFERENT traits, so no within-trait averaging or citation-dependency
@@ -77,7 +77,7 @@ if (!is.null(d)) {
 d <- read_src("HerculanoHouzel__2015_Table1")
 if (!is.null(d))
   long[["hh"]] <- row_(fix_hh(d$species), d$species, "Sleep_h_day", num(d$`daily.sleep..h.`),
-                       "hours/day", "HerculanoHouzel__2015_Table1", "HerculanoHouzel_2015",
+                       "hours/day", "HerculanoHouzel__2015_Table1", "HerculanoHouzel__2015",
                        "high", "dailysleep")
 ## --- Lyamin Table2 -> SWS_total_pct + USWS_pctTST (low+high amp USWS) -----
 d <- read_src("Lyamin_etal_2008_Table2")

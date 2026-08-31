@@ -88,10 +88,17 @@ for (i in seq_len(nrow(snap))) {
 write.csv(out, final_csv, row.names = FALSE, na = "")
 
 if (!is.na(dataset_root)) {
+  ## Public TSV must carry the DOI-coded name from the registry ('Item encoded'), not the
+  ## plain item name. (Fixed 2026-08-29: this script wrote Barger_etal_2012_Table3.tsv, which
+  ## no registry row can claim — it surfaced as an orphan in check_item_name_resolution.R.)
+  registry     <- readxl::read_excel(file.path(dataset_root, "__ReadMe.xlsx"), sheet = "Sheet1")
+  item_encoded <- registry[["Item encoded"]][match(item_name, registry[["Item name"]])]
+  if (length(item_encoded) != 1L || is.na(item_encoded) || !nzchar(item_encoded))
+    stop("No 'Item encoded' for ", item_name, " in __ReadMe.xlsx — fix the registry row first.")
   dir.create(public_tsv_dir, recursive = TRUE, showWarnings = FALSE)
   write.table(
     out,
-    file.path(public_tsv_dir, paste0(item_name, ".tsv")),
+    file.path(public_tsv_dir, paste0(item_encoded, ".tsv")),
     sep = "\t", row.names = FALSE, quote = FALSE, na = ""
   )
 }

@@ -4,7 +4,7 @@ Brodmann K (1913). *Neue Ergebnisse über die vergleichende histologische Lokali
 Grosshirnrinde…* Verhandlungen der Anatomischen Gesellschaft (Ergänzungsheft zum Anatomischen
 Anzeiger 41), 157–216. (No DOI; catalogued under alt id `OCLC:8777719`.)
 
-Registry (`__ReadMe.xlsx`): Item name **`Brodmann_1913_Table1`**, encoded `OCLC%3A8777719_Table1`.
+Registry (`__ReadMe.xlsx`): Item name **`Brodmann__1913_Table1`**, encoded `OCLC%3A8777719_Table1`.
 
 ## Why this was built (relation to Smaers 2017)
 Smaers et al. 2017 used Brodmann only for a **4-region cortical *surface-area* subset across 10
@@ -37,8 +37,8 @@ determinable (e.g. *Cercopithecus* sp., *Phoca* sp., *Elephas* sp.). A `_keys` h
 (token `Brodmann1913`) should be added before any merge.
 
 ## Source → Snapshot → Data readable  (scanned PDF → snapshot required)
-`Brodmann_1913_Verhandlungen.pdf` p.206 → **`Brodmann_1913_Table1_snapshot.xlsx`** (faithful, German
-names, qmm values) → `Brodmann_1913_Table1.R` (to be run in R) → **`Brodmann_1913_Table1.csv`** (use
+`Brodmann_1913_Verhandlungen.pdf` p.206 → **`Brodmann__1913_Table1_snapshot.xlsx`** (faithful, German
+names, qmm values) → `Brodmann__1913_Table1.R` (to be run in R) → **`Brodmann__1913_Table1.csv`** (use
 this) + the public TSV `__Public/comparative-data/OCLC%3A8777719_Table1.tsv`. Columns:
 `reference_tables/…_definitions.csv`.
 

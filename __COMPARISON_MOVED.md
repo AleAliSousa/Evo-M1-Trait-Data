@@ -45,7 +45,7 @@ on the restricted comparison CSVs; they moved together to
 `restricted_checks/_cross_table/Zilles_Rehkamper_1988_provenance/` and were removed here.
 *(Retired in the private repo on 2026-08-20. What the audit established — that a `Pongo` value in a
 pre-1988 formatted CSV traces back to Zilles & Rehkämper 1988 — now lives in
-`Zilles__Rehkamper_1988/Zilles__Rehkamper_1988_Table12-2.README.md`, so no paper README points at
+`Zilles_Rehkamper_1988/Zilles_Rehkamper_1988_Table12-2.README.md`, so no paper README points at
 the deleted report.)*
 
 **Restricted *source* files, not just checks.** A few sources cannot live here either — data another

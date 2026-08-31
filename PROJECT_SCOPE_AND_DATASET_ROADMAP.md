@@ -53,7 +53,7 @@ roughly 25 mammals for:
 
 A V1 and entorhinal counterpart to the M1 trait set is therefore in scope. V1 coverage is already
 better than the repository name suggests: `Stephan_etal_1981` area striata,
-`Zilles__Rehkamper_1988` area-striata grey, `Bush_Allman_2004_b` V1 grey,
+`Zilles_Rehkamper_1988` area-striata grey, `Bush_Allman_2004_b` V1 grey,
 `Smaers_etal_2017` visual cortex grey/white/surface, `Changizi_Shimojo_2005` V1/A1/S1,
 `Frahm_etal_1998` MT, `deSousa_etal_2010` V1–LGN, and `Collins_etal_2010` cortical surface.
 Entorhinal coverage is much thinner; the Stephan schizocortex/hippocampus columns are the obvious
@@ -453,7 +453,7 @@ figures.
 | 4 | Capellini et al. 2008 — mammalian sleep (REM %, daily sleep) | IN | `Capellini_etal_2008/` (+ sleep standardized-term template) | `__merging_sleep` (extends beyond primate-only REM) |
 | 5 | Heuer et al. 2019 — neocortical folding (34 primates, MRI) | IN, **separate** | `Heuer_etal_2019/` | **none** — housed separately, never pooled with Zilles GI |
 | 6 | Cerebellar folding — **Heuer et al. 2023** (eLife 12:e85907) | ✅ **BUILT 2026-08-15** | `Heuer_etal_2023/` | dedicated `__merging_cerebellar_folding` + Shiny app; **never pooled with Ashwell 2020 foliation or neocortical GI** |
-| 7 | Medina-González 2026 — limb excursion, 182 mammals | IN, **blocked: restricted source record** | `MedinaGonzalez_2026/` (+ reader scaffold) | `__merging_behaviour` after files become available |
+| 7 | Medina-González 2026 — limb excursion, 182 mammals | IN, **blocked: restricted source record** | `MedinaGonzalez__2026/` (+ reader scaffold) | `__merging_behaviour` after files become available |
 | 8 | Corticospinal / CM termination extent | ✅ **BUILT 2026-08-15**, renamed to the house pattern + re-keyed to the article DOI same day | `Bortoff_Strick_1993/` (Table 1, curated) | behaviour (`CST_termination_grade` + cautious CM inference), team `Bortoff_Strick`, **primary** |
 | 9 | ~~Betz cells (compile-from-lit)~~ → **Jacobs et al. 2018** — gigantopyramidal + M1 pyramidal morphology | IN, **snapshots built 2026-08-04** | `Jacobs_etal_2018/` (Tables 3 + 5) | `__merging_cellcounts` as **regional M1** sub-trait (never pooled with whole-cortex counts) |
 | — | Reader lineage — technical innovation (2002 classic + 2011 Dryad) | ✅ **BUILT + WIRED 2026-08-15** | `Reader_etal_2011/` (+ `innovation_reader.xlsx`) | `__merging_behaviour` (report counts + effort variables) |
@@ -613,7 +613,7 @@ counts to Reader totals.
   and evolution of cerebellar folding in mammals.* eLife 12:e85907. DOI **10.7554/eLife.85907**.
   First author is Heuer; **A. A. de Sousa (repo owner) is a co-author** → left for the owner to judge.
 
-### 7. Medina-González 2026 — joint angular excursion in terrestrial mammals (`MedinaGonzalez_2026/`)
+### 7. Medina-González 2026 — joint angular excursion in terrestrial mammals (`MedinaGonzalez__2026/`)
 
 - **Merge:** `__merging_behaviour` (locomotion/gait), beside Granatosky and Wimberly.
 - **Citation:** Medina-González, P. (2026). *Joint Angular Excursions and Angular Range Utilization
@@ -713,15 +713,19 @@ Per `__HOWTO_build_a_dataset_file.md`, and spelled out in each folder's README:
 
 ## Current order of work (refreshed 2026-08-25; audit in `_checks/registry_audit_20260825.md`)
 
-1. **Registry hygiene from the 2026-08-25 folder↔registry audit.**
-   Register the built-but-invisible sources: `Hutsler_etal_2005` (4 products, already cited as a
-   source by the cortical-layer merge README, `PROPOSED_species_key_rows.csv` waiting) and
-   `Todorov_etal_2019_dimorphdata`. Fix the three blank-`Item number` rows whose keys end in `_`
-   (`Shultz_Dunbar_2010_` — also misspelled, folder is Schultz; `Stephan_Pirlot_1970_`;
-   `Weaver__2005_`, the documented skip still needs a well-formed key). Repair the corrupted key
-   `Young_etal_2013_xml:space="preserve">b_Table1`. Rename `Deaner_et_2007/` →
-   `Deaner_etal_2007` and give it a row. Remove or purpose the empty `data_intermediate/` folder
-   and the 15 empty formatting rows at the bottom of Sheet1 (rows 335–349).
+1. **Registry hygiene — refreshed 2026-08-30 (`_checks/name_soundness_audit_20260830.md`
+   is now the canonical list).** Done since 08-25: Weaver rows fixed (→ Weaver__2001),
+   Deaner folder renamed, Todorov row added (but its key `rspb20191712si001` mismatches the
+   `dimorphdata` products — align one side), K62 canonicalized, empty `Schultz_Dunbar_2010/`
+   renamed → `Shultz_Dunbar_2010/` (folder was the typo; the author is Shultz). Remaining
+   one-sitting Excel queue: register Hutsler ×4 + `Stephan_etal_1987_Table2` + Deaner 2007
+   (+ stubs Reader_Laland 2002 / Weaver 2005 / Changizi_He 2005 when adopted); fix the
+   VanEssen row (citation carries a reference-manager artifact author "New Collective, A.";
+   name should be `VanEssen_Drury_1997_Table1` — verify in EndNote); Item numbers for
+   `Shultz_Dunbar_2010_`, `Stephan_Pirlot_1970_`, `Chaplin_etal_2013_`, `Veilleux_Kirk_2014_`;
+   repair the corrupted `Young_etal_2013_xml:space="preserve">b_Table1` key; the Olkowicz
+   figshare/PNAS key decision (`_checks/script_repairs_20260829.md`); remove or purpose
+   `data_intermediate/`.
 2. **Cell-counts + surface-areas intake — surfaces DONE 2026-08-25.** All five TODO sources were
    already built; the gap was wiring. `__merging_cortical_areas` now carries Collins 2016 (chimp
    cortex/V1/V2; M1 superseded by Young — same specimen), Mota 2015 own columns and Mota 2019

@@ -71,7 +71,14 @@ pub_long <- pub_wide %>%
   mutate(sp2 = first2(Species))
 
 # ---- 2. UNPUBLISHED raw -> mean per Animal x Structure -> map codes -> long ----
-unp_raw <- read_excel(paste0(folder, "2020-PublishedDataMammalsMicroglia - cópia.xlsx"))
+## The unpublished spreadsheet moved to the PRIVATE repo (repo boundary; see
+## __COMPARISON_MOVED.md). Resolve it through the house helper — it stops with an
+## actionable message if the private repo is not mounted. (Fixed 2026-08-29: the old
+## line read it from this folder, where it no longer exists.)
+source(file.path(base, "_helpers", "restricted_data.R"))
+unp_raw <- read_excel(evom1_restricted_file(
+  "unpublished_data/____Unpublished__DosSantos_microglia_2024",
+  "2020-PublishedDataMammalsMicroglia - cópia.xlsx"))
 
 meas_map <- tibble::tribble(
   ~unp_col,                 ~Measure,

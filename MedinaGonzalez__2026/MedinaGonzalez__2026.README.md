@@ -40,7 +40,7 @@ frozen source**. Expose the species-level summaries in the reader:
 1. Reader `____EvoM1_TraitTable/EvoM1_read_gait_excursion_medina.R` (scaffolded) — reads the public
    TSV, resolves species via `_keys`, writes `____EvoM1_TraitTable/gait_excursion_medina.xlsx`.
    **Confirm the exact source column headers** at the `TODO(curator)` marker.
-2. `reference_tables/MedinaGonzalez_2026_definitions.csv` (scaffolded).
+2. `reference_tables/MedinaGonzalez__2026_definitions.csv` (scaffolded).
 3. Registered in `__ReadMe.xlsx` Sheet1 as `Item name = MedinaGonzalez__2026_Data`,
    `Item encoded = 10.1002%2Fjez.70069_Data`, `Data role = primary`
    (`secondary` for the columns compiled from published sources — flag per column if needed),

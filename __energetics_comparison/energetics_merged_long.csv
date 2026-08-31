@@ -1,163 +1,163 @@
 Species,Region,Measure,Units,Value,Teams,n_teams,Volume_term
-Canis,Whole_brain,CBF,mL/100g/min,30.8,Kaufman_2004,1,Total_brain_net_volume_Vol.mm3
-Canis,Whole_brain,CMRO2,umol/100g/min,205.4,Kaufman_2004,1,Total_brain_net_volume_Vol.mm3
-Canis,Whole_brain,CMRgl,umol/100g/min,44.5,Kaufman_2004,1,Total_brain_net_volume_Vol.mm3
-Capra,Whole_brain,CBF,mL/100g/min,77,Kaufman_2004,1,Total_brain_net_volume_Vol.mm3
-Capra,Whole_brain,CMRO2,umol/100g/min,182.5,Kaufman_2004,1,Total_brain_net_volume_Vol.mm3
-Equus,Whole_brain,CBF,mL/100g/min,64.27,Kaufman_2004,1,Total_brain_net_volume_Vol.mm3
-Felis,Basal_ganglia,CMRgl,umol/100g/min,55.87,Kaufman_2004,1,NA
-Felis,Cerebellum,CMRgl,umol/100g/min,31.5,Kaufman_2004,1,Cerebellum_Vol.mm3
-Felis,Cingulate_cortex,CMRgl,umol/100g/min,47,Kaufman_2004,1,NA
-Felis,Frontal_cortex,CMRgl,umol/100g/min,49,Kaufman_2004,1,NA
-Felis,Hippocampus,CMRgl,umol/100g/min,50.55,Kaufman_2004,1,Hippocampus_Vol.mm3
-Felis,Neocortex,CMRgl,umol/100g/min,66.47,Kaufman_2004,1,Neocortex_Vol.mm3
-Felis,Occipital_cortex,CMRgl,umol/100g/min,58,Kaufman_2004,1,NA
-Felis,Parietal_cortex,CMRgl,umol/100g/min,45,Kaufman_2004,1,NA
-Felis,Temporal_cortex,CMRgl,umol/100g/min,46,Kaufman_2004,1,NA
-Felis,Thalamus,CMRgl,umol/100g/min,75.44,Kaufman_2004,1,Thalamus_Vol.mm3
-Felis,White_matter,CMRgl,umol/100g/min,12,Kaufman_2004,1,NA
+Canis,Whole_brain,CBF,mL/100g/min,30.8,Kaufman__2004,1,Total_brain_net_volume_Vol.mm3
+Canis,Whole_brain,CMRO2,umol/100g/min,205.4,Kaufman__2004,1,Total_brain_net_volume_Vol.mm3
+Canis,Whole_brain,CMRgl,umol/100g/min,44.5,Kaufman__2004,1,Total_brain_net_volume_Vol.mm3
+Capra,Whole_brain,CBF,mL/100g/min,77,Kaufman__2004,1,Total_brain_net_volume_Vol.mm3
+Capra,Whole_brain,CMRO2,umol/100g/min,182.5,Kaufman__2004,1,Total_brain_net_volume_Vol.mm3
+Equus,Whole_brain,CBF,mL/100g/min,64.27,Kaufman__2004,1,Total_brain_net_volume_Vol.mm3
+Felis,Basal_ganglia,CMRgl,umol/100g/min,55.87,Kaufman__2004,1,NA
+Felis,Cerebellum,CMRgl,umol/100g/min,31.5,Kaufman__2004,1,Cerebellum_Vol.mm3
+Felis,Cingulate_cortex,CMRgl,umol/100g/min,47,Kaufman__2004,1,NA
+Felis,Frontal_cortex,CMRgl,umol/100g/min,49,Kaufman__2004,1,NA
+Felis,Hippocampus,CMRgl,umol/100g/min,50.55,Kaufman__2004,1,Hippocampus_Vol.mm3
+Felis,Neocortex,CMRgl,umol/100g/min,66.47,Kaufman__2004,1,Neocortex_Vol.mm3
+Felis,Occipital_cortex,CMRgl,umol/100g/min,58,Kaufman__2004,1,NA
+Felis,Parietal_cortex,CMRgl,umol/100g/min,45,Kaufman__2004,1,NA
+Felis,Temporal_cortex,CMRgl,umol/100g/min,46,Kaufman__2004,1,NA
+Felis,Thalamus,CMRgl,umol/100g/min,75.44,Kaufman__2004,1,Thalamus_Vol.mm3
+Felis,White_matter,CMRgl,umol/100g/min,12,Kaufman__2004,1,NA
 Homo sapiens,Amygdala,CMRgl,umol/100g/min,22.2,Heiss_etal_2004,1,Amygdala_Vol.mm3
-Homo sapiens,Auditory_cortex,CMRgl,umol/100g/min,40.56,Kaufman_2004,1,NA
+Homo sapiens,Auditory_cortex,CMRgl,umol/100g/min,40.56,Kaufman__2004,1,NA
 Homo sapiens,Basal_forebrain,CMRgl,umol/100g/min,21.4,Heiss_etal_2004,1,NA
-Homo sapiens,Basal_ganglia,CBF,mL/100g/min,43.54,Kaufman_2004,1,NA
-Homo sapiens,Basal_ganglia,CMRO2,umol/100g/min,156.16,Kaufman_2004,1,NA
-Homo sapiens,Basal_ganglia,CMRgl,umol/100g/min,37.63,Kaufman_2004,1,NA
+Homo sapiens,Basal_ganglia,CBF,mL/100g/min,43.54,Kaufman__2004,1,NA
+Homo sapiens,Basal_ganglia,CMRO2,umol/100g/min,156.16,Kaufman__2004,1,NA
+Homo sapiens,Basal_ganglia,CMRgl,umol/100g/min,37.63,Kaufman__2004,1,NA
 Homo sapiens,Capsula_interna,CMRgl,umol/100g/min,25.5,Heiss_etal_2004,1,NA
 Homo sapiens,Caudate_nucleus,CMRgl,umol/100g/min,32.6,Heiss_etal_2004,1,NA
 Homo sapiens,Centrum_semiovale,CMRgl,umol/100g/min,12.3,Heiss_etal_2004,1,NA
 Homo sapiens,Cerebellar_cortex,CMRgl,umol/100g/min,29.8,Heiss_etal_2004,1,NA
-Homo sapiens,Cerebellum,CBF,mL/100g/min,56.99,Kaufman_2004,1,Cerebellum_Vol.mm3
-Homo sapiens,Cerebellum,CMRO2,umol/100g/min,180.09,Kaufman_2004,1,Cerebellum_Vol.mm3
-Homo sapiens,Cerebellum,CMRgl,umol/100g/min,33.91,Kaufman_2004,1,Cerebellum_Vol.mm3
-Homo sapiens,Cingulate_cortex,CMRO2,umol/100g/min,132.9,Kaufman_2004,1,NA
-Homo sapiens,Cingulate_cortex,CMRgl,umol/100g/min,39.19,Kaufman_2004,1,NA
+Homo sapiens,Cerebellum,CBF,mL/100g/min,56.99,Kaufman__2004,1,Cerebellum_Vol.mm3
+Homo sapiens,Cerebellum,CMRO2,umol/100g/min,180.09,Kaufman__2004,1,Cerebellum_Vol.mm3
+Homo sapiens,Cerebellum,CMRgl,umol/100g/min,33.91,Kaufman__2004,1,Cerebellum_Vol.mm3
+Homo sapiens,Cingulate_cortex,CMRO2,umol/100g/min,132.9,Kaufman__2004,1,NA
+Homo sapiens,Cingulate_cortex,CMRgl,umol/100g/min,39.19,Kaufman__2004,1,NA
 Homo sapiens,Colliculus_inferior,CMRgl,umol/100g/min,31.4,Heiss_etal_2004,1,NA
 Homo sapiens,Colliculus_superior,CMRgl,umol/100g/min,24.4,Heiss_etal_2004,1,NA
 Homo sapiens,Corpus_geniculatum_laterale,CMRgl,umol/100g/min,23.1,Heiss_etal_2004,1,Corpus_geniculatum_laterale_Vol.mm3
 Homo sapiens,Corpus_geniculatum_mediale,CMRgl,umol/100g/min,20.2,Heiss_etal_2004,1,NA
-Homo sapiens,Frontal_cortex,CMRO2,umol/100g/min,149.07,Kaufman_2004,1,NA
-Homo sapiens,Frontal_cortex,CMRgl,umol/100g/min,36.32,Heiss_etal_2004; Kaufman_2004,2,NA
-Homo sapiens,Hippocampus,CBF,mL/100g/min,48.96,Kaufman_2004,1,Hippocampus_Vol.mm3
-Homo sapiens,Hippocampus,CMRO2,umol/100g/min,137.05,Kaufman_2004,1,Hippocampus_Vol.mm3
-Homo sapiens,Hippocampus,CMRgl,umol/100g/min,27.475,Heiss_etal_2004; Kaufman_2004,2,Hippocampus_Vol.mm3
+Homo sapiens,Frontal_cortex,CMRO2,umol/100g/min,149.07,Kaufman__2004,1,NA
+Homo sapiens,Frontal_cortex,CMRgl,umol/100g/min,36.32,Heiss_etal_2004; Kaufman__2004,2,NA
+Homo sapiens,Hippocampus,CBF,mL/100g/min,48.96,Kaufman__2004,1,Hippocampus_Vol.mm3
+Homo sapiens,Hippocampus,CMRO2,umol/100g/min,137.05,Kaufman__2004,1,Hippocampus_Vol.mm3
+Homo sapiens,Hippocampus,CMRgl,umol/100g/min,27.475,Heiss_etal_2004; Kaufman__2004,2,Hippocampus_Vol.mm3
 Homo sapiens,Insula,CMRgl,umol/100g/min,30.3,Heiss_etal_2004,1,NA
-Homo sapiens,Neocortex,CBF,mL/100g/min,43.98,Kaufman_2004,1,Neocortex_Vol.mm3
-Homo sapiens,Neocortex,CMRO2,umol/100g/min,143.74,Kaufman_2004,1,Neocortex_Vol.mm3
-Homo sapiens,Neocortex,CMRgl,umol/100g/min,35.14,Heiss_etal_2004; Kaufman_2004,2,Neocortex_Vol.mm3
+Homo sapiens,Neocortex,CBF,mL/100g/min,43.98,Kaufman__2004,1,Neocortex_Vol.mm3
+Homo sapiens,Neocortex,CMRO2,umol/100g/min,143.74,Kaufman__2004,1,Neocortex_Vol.mm3
+Homo sapiens,Neocortex,CMRgl,umol/100g/min,35.14,Heiss_etal_2004; Kaufman__2004,2,Neocortex_Vol.mm3
 Homo sapiens,Nucleus_accumbens,CMRgl,umol/100g/min,32.3,Heiss_etal_2004,1,NA
 Homo sapiens,Nucleus_dentatus_cerebelli,CMRgl,umol/100g/min,24.2,Heiss_etal_2004,1,NA
 Homo sapiens,Nucleus_ruber,CMRgl,umol/100g/min,31,Heiss_etal_2004,1,NA
 Homo sapiens,Nucleus_subthalamicus,CMRgl,umol/100g/min,25.2,Heiss_etal_2004,1,Nucleus_subthalamicus_Vol.mm3
-Homo sapiens,Occipital_cortex,CMRO2,umol/100g/min,165.2,Kaufman_2004,1,NA
-Homo sapiens,Occipital_cortex,CMRgl,umol/100g/min,36.905,Heiss_etal_2004; Kaufman_2004,2,NA
+Homo sapiens,Occipital_cortex,CMRO2,umol/100g/min,165.2,Kaufman__2004,1,NA
+Homo sapiens,Occipital_cortex,CMRgl,umol/100g/min,36.905,Heiss_etal_2004; Kaufman__2004,2,NA
 Homo sapiens,Pallidum,CMRgl,umol/100g/min,21.9,Heiss_etal_2004,1,Pallidum_Vol.mm3
-Homo sapiens,Parietal_cortex,CMRO2,umol/100g/min,148.41,Kaufman_2004,1,NA
-Homo sapiens,Parietal_cortex,CMRgl,umol/100g/min,36.474999999999994,Heiss_etal_2004; Kaufman_2004,2,NA
+Homo sapiens,Parietal_cortex,CMRO2,umol/100g/min,148.41,Kaufman__2004,1,NA
+Homo sapiens,Parietal_cortex,CMRgl,umol/100g/min,36.474999999999994,Heiss_etal_2004; Kaufman__2004,2,NA
 Homo sapiens,Putamen,CMRgl,umol/100g/min,40.2,Heiss_etal_2004,1,NA
-Homo sapiens,Sensorimotor_cortex,CMRO2,umol/100g/min,152.69,Kaufman_2004,1,NA
-Homo sapiens,Sensorimotor_cortex,CMRgl,umol/100g/min,36.79,Kaufman_2004,1,NA
+Homo sapiens,Sensorimotor_cortex,CMRO2,umol/100g/min,152.69,Kaufman__2004,1,NA
+Homo sapiens,Sensorimotor_cortex,CMRgl,umol/100g/min,36.79,Kaufman__2004,1,NA
 Homo sapiens,Substantia_nigra,CMRgl,umol/100g/min,22.8,Heiss_etal_2004,1,NA
-Homo sapiens,Temporal_cortex,CMRO2,umol/100g/min,148.91,Kaufman_2004,1,NA
-Homo sapiens,Temporal_cortex,CMRgl,umol/100g/min,32.364999999999995,Heiss_etal_2004; Kaufman_2004,2,NA
-Homo sapiens,Thalamus,CBF,mL/100g/min,54.15,Kaufman_2004,1,Thalamus_Vol.mm3
-Homo sapiens,Thalamus,CMRO2,umol/100g/min,161.66,Kaufman_2004,1,Thalamus_Vol.mm3
-Homo sapiens,Thalamus,CMRgl,umol/100g/min,37.41,Kaufman_2004,1,Thalamus_Vol.mm3
+Homo sapiens,Temporal_cortex,CMRO2,umol/100g/min,148.91,Kaufman__2004,1,NA
+Homo sapiens,Temporal_cortex,CMRgl,umol/100g/min,32.364999999999995,Heiss_etal_2004; Kaufman__2004,2,NA
+Homo sapiens,Thalamus,CBF,mL/100g/min,54.15,Kaufman__2004,1,Thalamus_Vol.mm3
+Homo sapiens,Thalamus,CMRO2,umol/100g/min,161.66,Kaufman__2004,1,Thalamus_Vol.mm3
+Homo sapiens,Thalamus,CMRgl,umol/100g/min,37.41,Kaufman__2004,1,Thalamus_Vol.mm3
 Homo sapiens,Thalamus_medial_nucleus,CMRgl,umol/100g/min,36.6,Heiss_etal_2004,1,NA
 Homo sapiens,Vermis,CMRgl,umol/100g/min,30.1,Heiss_etal_2004,1,NA
-Homo sapiens,White_matter,CBF,mL/100g/min,23.62,Kaufman_2004,1,NA
-Homo sapiens,White_matter,CMRO2,umol/100g/min,75.68,Kaufman_2004,1,NA
-Homo sapiens,White_matter,CMRgl,umol/100g/min,18.06,Kaufman_2004,1,NA
-Homo sapiens,Whole_brain,CBF,mL/100g/min,53.25,Kaufman_2004,1,Total_brain_net_volume_Vol.mm3
-Homo sapiens,Whole_brain,CMRO2,umol/100g/min,155.44,Kaufman_2004,1,Total_brain_net_volume_Vol.mm3
-Homo sapiens,Whole_brain,CMRgl,umol/100g/min,29.98,Kaufman_2004,1,Total_brain_net_volume_Vol.mm3
-Lepus,Basal_ganglia,CMRgl,umol/100g/min,58.7,Kaufman_2004,1,NA
-Lepus,Hippocampus,CMRgl,umol/100g/min,58.1,Kaufman_2004,1,Hippocampus_Vol.mm3
-Lepus,Neocortex,CMRgl,umol/100g/min,77.42,Kaufman_2004,1,Neocortex_Vol.mm3
-Lepus,Occipital_cortex,CMRgl,umol/100g/min,76.4,Kaufman_2004,1,NA
-Lepus,Parietal_cortex,CMRgl,umol/100g/min,73.1,Kaufman_2004,1,NA
-Lepus,Sensorimotor_cortex,CMRgl,umol/100g/min,82.65,Kaufman_2004,1,NA
-Lepus,Thalamus,CMRgl,umol/100g/min,89.7,Kaufman_2004,1,Thalamus_Vol.mm3
-Lepus,White_matter,CMRgl,umol/100g/min,26.1,Kaufman_2004,1,NA
-Lepus,Whole_brain,CBF,mL/100g/min,48,Kaufman_2004,1,Total_brain_net_volume_Vol.mm3
-Lepus,Whole_brain,CMRO2,umol/100g/min,205.4,Kaufman_2004,1,Total_brain_net_volume_Vol.mm3
-Macaca,Auditory_cortex,CMRgl,umol/100g/min,70.3,Kaufman_2004,1,NA
-Macaca,Basal_ganglia,CBF,mL/100g/min,60.5,Kaufman_2004,1,NA
-Macaca,Basal_ganglia,CMRO2,umol/100g/min,255,Kaufman_2004,1,NA
-Macaca,Basal_ganglia,CMRgl,umol/100g/min,44.33,Kaufman_2004,1,NA
-Macaca,Cerebellum,CBF,mL/100g/min,47.8,Kaufman_2004,1,Cerebellum_Vol.mm3
-Macaca,Cerebellum,CMRgl,umol/100g/min,28.12,Kaufman_2004,1,Cerebellum_Vol.mm3
-Macaca,Cingulate_cortex,CMRgl,umol/100g/min,42.35,Kaufman_2004,1,NA
-Macaca,Frontal_cortex,CMRgl,umol/100g/min,44.86,Kaufman_2004,1,NA
-Macaca,Hippocampus,CBF,mL/100g/min,53.9,Kaufman_2004,1,Hippocampus_Vol.mm3
-Macaca,Hippocampus,CMRgl,umol/100g/min,34.62,Kaufman_2004,1,Hippocampus_Vol.mm3
-Macaca,Neocortex,CBF,mL/100g/min,53,Kaufman_2004,1,Neocortex_Vol.mm3
-Macaca,Neocortex,CMRgl,umol/100g/min,49.99,Kaufman_2004,1,Neocortex_Vol.mm3
-Macaca,Occipital_cortex,CMRgl,umol/100g/min,53.27,Kaufman_2004,1,NA
-Macaca,Parietal_cortex,CMRgl,umol/100g/min,41.62,Kaufman_2004,1,NA
-Macaca,Sensorimotor_cortex,CMRgl,umol/100g/min,51.58,Kaufman_2004,1,NA
-Macaca,Temporal_cortex,CMRgl,umol/100g/min,36.08,Kaufman_2004,1,NA
-Macaca,Thalamus,CMRgl,umol/100g/min,44.82,Kaufman_2004,1,Thalamus_Vol.mm3
-Macaca,White_matter,CMRgl,umol/100g/min,12.34,Kaufman_2004,1,NA
-Macaca,Whole_brain,CBF,mL/100g/min,67.33,Kaufman_2004,1,Total_brain_net_volume_Vol.mm3
-Macaca,Whole_brain,CMRO2,umol/100g/min,214.93,Kaufman_2004,1,Total_brain_net_volume_Vol.mm3
-Macaca,Whole_brain,CMRgl,umol/100g/min,40.66,Kaufman_2004,1,Total_brain_net_volume_Vol.mm3
-Meriones,Basal_ganglia,CBF,mL/100g/min,99.29,Kaufman_2004,1,NA
-Meriones,Basal_ganglia,CMRgl,umol/100g/min,74.88,Kaufman_2004,1,NA
-Meriones,Cerebellum,CBF,mL/100g/min,93,Kaufman_2004,1,Cerebellum_Vol.mm3
-Meriones,Cerebellum,CMRgl,umol/100g/min,44.4,Kaufman_2004,1,Cerebellum_Vol.mm3
-Meriones,Frontal_cortex,CMRgl,umol/100g/min,67.8,Kaufman_2004,1,NA
-Meriones,Hippocampus,CBF,mL/100g/min,109,Kaufman_2004,1,Hippocampus_Vol.mm3
-Meriones,Hippocampus,CMRgl,umol/100g/min,69,Kaufman_2004,1,Hippocampus_Vol.mm3
-Meriones,Neocortex,CBF,mL/100g/min,103.03,Kaufman_2004,1,Neocortex_Vol.mm3
-Meriones,Neocortex,CMRgl,umol/100g/min,73.35,Kaufman_2004,1,Neocortex_Vol.mm3
-Meriones,Occipital_cortex,CMRgl,umol/100g/min,69.4,Kaufman_2004,1,NA
-Meriones,Sensorimotor_cortex,CMRgl,umol/100g/min,67.2,Kaufman_2004,1,NA
-Meriones,Thalamus,CBF,mL/100g/min,117,Kaufman_2004,1,Thalamus_Vol.mm3
-Meriones,Thalamus,CMRgl,umol/100g/min,76.35,Kaufman_2004,1,Thalamus_Vol.mm3
-Meriones,White_matter,CBF,mL/100g/min,62,Kaufman_2004,1,NA
-Meriones,Whole_brain,CBF,mL/100g/min,102,Kaufman_2004,1,Total_brain_net_volume_Vol.mm3
-Mus,Auditory_cortex,CMRgl,umol/100g/min,105.24,Kaufman_2004,1,NA
-Mus,Basal_ganglia,CMRgl,umol/100g/min,85.18,Kaufman_2004,1,NA
-Mus,Cerebellum,CMRgl,umol/100g/min,91.52,Kaufman_2004,1,Cerebellum_Vol.mm3
-Mus,Cingulate_cortex,CMRgl,umol/100g/min,83.33,Kaufman_2004,1,NA
-Mus,Frontal_cortex,CMRgl,umol/100g/min,107.29,Kaufman_2004,1,NA
-Mus,Hippocampus,CMRgl,umol/100g/min,74.54,Kaufman_2004,1,Hippocampus_Vol.mm3
-Mus,Neocortex,CMRgl,umol/100g/min,98.9,Kaufman_2004,1,Neocortex_Vol.mm3
-Mus,Occipital_cortex,CMRgl,umol/100g/min,100.75,Kaufman_2004,1,NA
-Mus,Parietal_cortex,CMRgl,umol/100g/min,126,Kaufman_2004,1,NA
-Mus,Sensorimotor_cortex,CMRgl,umol/100g/min,102.59,Kaufman_2004,1,NA
-Mus,Thalamus,CMRgl,umol/100g/min,114.39,Kaufman_2004,1,Thalamus_Vol.mm3
-Mus,White_matter,CMRgl,umol/100g/min,44.57,Kaufman_2004,1,NA
-Mus,Whole_brain,CBF,mL/100g/min,117,Kaufman_2004,1,Total_brain_net_volume_Vol.mm3
-Mus,Whole_brain,CMRgl,umol/100g/min,67.53,Kaufman_2004,1,Total_brain_net_volume_Vol.mm3
-Ovis,Whole_brain,CBF,mL/100g/min,62.01,Kaufman_2004,1,Total_brain_net_volume_Vol.mm3
-Ovis,Whole_brain,CMRO2,umol/100g/min,217.93,Kaufman_2004,1,Total_brain_net_volume_Vol.mm3
-Rattus,Auditory_cortex,CMRgl,umol/100g/min,125.87,Kaufman_2004,1,NA
-Rattus,Basal_ganglia,CBF,mL/100g/min,119.33,Kaufman_2004,1,NA
-Rattus,Basal_ganglia,CMRgl,umol/100g/min,71.74,Kaufman_2004,1,NA
-Rattus,Cerebellum,CBF,mL/100g/min,112.57,Kaufman_2004,1,Cerebellum_Vol.mm3
-Rattus,Cerebellum,CMRgl,umol/100g/min,54.85,Kaufman_2004,1,Cerebellum_Vol.mm3
-Rattus,Cingulate_cortex,CMRgl,umol/100g/min,97.93,Kaufman_2004,1,NA
-Rattus,Frontal_cortex,CMRgl,umol/100g/min,94.31,Kaufman_2004,1,NA
-Rattus,Hippocampus,CBF,mL/100g/min,94,Kaufman_2004,1,Hippocampus_Vol.mm3
-Rattus,Hippocampus,CMRgl,umol/100g/min,65.36,Kaufman_2004,1,Hippocampus_Vol.mm3
-Rattus,Neocortex,CBF,mL/100g/min,145.58,Kaufman_2004,1,Neocortex_Vol.mm3
-Rattus,Neocortex,CMRO2,umol/100g/min,464.3,Kaufman_2004,1,Neocortex_Vol.mm3
-Rattus,Neocortex,CMRgl,umol/100g/min,98.91,Kaufman_2004,1,Neocortex_Vol.mm3
-Rattus,Occipital_cortex,CMRgl,umol/100g/min,94.2,Kaufman_2004,1,NA
-Rattus,Parietal_cortex,CMRgl,umol/100g/min,94.29,Kaufman_2004,1,NA
-Rattus,Sensorimotor_cortex,CMRgl,umol/100g/min,96.09,Kaufman_2004,1,NA
-Rattus,Temporal_cortex,CMRgl,umol/100g/min,97.46,Kaufman_2004,1,NA
-Rattus,Thalamus,CBF,mL/100g/min,129.92,Kaufman_2004,1,Thalamus_Vol.mm3
-Rattus,Thalamus,CMRgl,umol/100g/min,89.8,Kaufman_2004,1,Thalamus_Vol.mm3
-Rattus,White_matter,CBF,mL/100g/min,35,Kaufman_2004,1,NA
-Rattus,White_matter,CMRgl,umol/100g/min,34.41,Kaufman_2004,1,NA
-Rattus,Whole_brain,CBF,mL/100g/min,103.08,Kaufman_2004,1,Total_brain_net_volume_Vol.mm3
-Rattus,Whole_brain,CMRO2,umol/100g/min,429.41,Kaufman_2004,1,Total_brain_net_volume_Vol.mm3
-Rattus,Whole_brain,CMRgl,umol/100g/min,76.89,Kaufman_2004,1,Total_brain_net_volume_Vol.mm3
-Sus,Basal_ganglia,CBF,mL/100g/min,102.6,Kaufman_2004,1,NA
-Sus,Cerebellum,CBF,mL/100g/min,88.8,Kaufman_2004,1,Cerebellum_Vol.mm3
-Sus,Neocortex,CBF,mL/100g/min,108.2,Kaufman_2004,1,Neocortex_Vol.mm3
-Sus,Neocortex,CMRO2,umol/100g/min,341.96,Kaufman_2004,1,Neocortex_Vol.mm3
-Sus,Thalamus,CBF,mL/100g/min,76.8,Kaufman_2004,1,Thalamus_Vol.mm3
-Sus,White_matter,CBF,mL/100g/min,33.6,Kaufman_2004,1,NA
+Homo sapiens,White_matter,CBF,mL/100g/min,23.62,Kaufman__2004,1,NA
+Homo sapiens,White_matter,CMRO2,umol/100g/min,75.68,Kaufman__2004,1,NA
+Homo sapiens,White_matter,CMRgl,umol/100g/min,18.06,Kaufman__2004,1,NA
+Homo sapiens,Whole_brain,CBF,mL/100g/min,53.25,Kaufman__2004,1,Total_brain_net_volume_Vol.mm3
+Homo sapiens,Whole_brain,CMRO2,umol/100g/min,155.44,Kaufman__2004,1,Total_brain_net_volume_Vol.mm3
+Homo sapiens,Whole_brain,CMRgl,umol/100g/min,29.98,Kaufman__2004,1,Total_brain_net_volume_Vol.mm3
+Lepus,Basal_ganglia,CMRgl,umol/100g/min,58.7,Kaufman__2004,1,NA
+Lepus,Hippocampus,CMRgl,umol/100g/min,58.1,Kaufman__2004,1,Hippocampus_Vol.mm3
+Lepus,Neocortex,CMRgl,umol/100g/min,77.42,Kaufman__2004,1,Neocortex_Vol.mm3
+Lepus,Occipital_cortex,CMRgl,umol/100g/min,76.4,Kaufman__2004,1,NA
+Lepus,Parietal_cortex,CMRgl,umol/100g/min,73.1,Kaufman__2004,1,NA
+Lepus,Sensorimotor_cortex,CMRgl,umol/100g/min,82.65,Kaufman__2004,1,NA
+Lepus,Thalamus,CMRgl,umol/100g/min,89.7,Kaufman__2004,1,Thalamus_Vol.mm3
+Lepus,White_matter,CMRgl,umol/100g/min,26.1,Kaufman__2004,1,NA
+Lepus,Whole_brain,CBF,mL/100g/min,48,Kaufman__2004,1,Total_brain_net_volume_Vol.mm3
+Lepus,Whole_brain,CMRO2,umol/100g/min,205.4,Kaufman__2004,1,Total_brain_net_volume_Vol.mm3
+Macaca,Auditory_cortex,CMRgl,umol/100g/min,70.3,Kaufman__2004,1,NA
+Macaca,Basal_ganglia,CBF,mL/100g/min,60.5,Kaufman__2004,1,NA
+Macaca,Basal_ganglia,CMRO2,umol/100g/min,255,Kaufman__2004,1,NA
+Macaca,Basal_ganglia,CMRgl,umol/100g/min,44.33,Kaufman__2004,1,NA
+Macaca,Cerebellum,CBF,mL/100g/min,47.8,Kaufman__2004,1,Cerebellum_Vol.mm3
+Macaca,Cerebellum,CMRgl,umol/100g/min,28.12,Kaufman__2004,1,Cerebellum_Vol.mm3
+Macaca,Cingulate_cortex,CMRgl,umol/100g/min,42.35,Kaufman__2004,1,NA
+Macaca,Frontal_cortex,CMRgl,umol/100g/min,44.86,Kaufman__2004,1,NA
+Macaca,Hippocampus,CBF,mL/100g/min,53.9,Kaufman__2004,1,Hippocampus_Vol.mm3
+Macaca,Hippocampus,CMRgl,umol/100g/min,34.62,Kaufman__2004,1,Hippocampus_Vol.mm3
+Macaca,Neocortex,CBF,mL/100g/min,53,Kaufman__2004,1,Neocortex_Vol.mm3
+Macaca,Neocortex,CMRgl,umol/100g/min,49.99,Kaufman__2004,1,Neocortex_Vol.mm3
+Macaca,Occipital_cortex,CMRgl,umol/100g/min,53.27,Kaufman__2004,1,NA
+Macaca,Parietal_cortex,CMRgl,umol/100g/min,41.62,Kaufman__2004,1,NA
+Macaca,Sensorimotor_cortex,CMRgl,umol/100g/min,51.58,Kaufman__2004,1,NA
+Macaca,Temporal_cortex,CMRgl,umol/100g/min,36.08,Kaufman__2004,1,NA
+Macaca,Thalamus,CMRgl,umol/100g/min,44.82,Kaufman__2004,1,Thalamus_Vol.mm3
+Macaca,White_matter,CMRgl,umol/100g/min,12.34,Kaufman__2004,1,NA
+Macaca,Whole_brain,CBF,mL/100g/min,67.33,Kaufman__2004,1,Total_brain_net_volume_Vol.mm3
+Macaca,Whole_brain,CMRO2,umol/100g/min,214.93,Kaufman__2004,1,Total_brain_net_volume_Vol.mm3
+Macaca,Whole_brain,CMRgl,umol/100g/min,40.66,Kaufman__2004,1,Total_brain_net_volume_Vol.mm3
+Meriones,Basal_ganglia,CBF,mL/100g/min,99.29,Kaufman__2004,1,NA
+Meriones,Basal_ganglia,CMRgl,umol/100g/min,74.88,Kaufman__2004,1,NA
+Meriones,Cerebellum,CBF,mL/100g/min,93,Kaufman__2004,1,Cerebellum_Vol.mm3
+Meriones,Cerebellum,CMRgl,umol/100g/min,44.4,Kaufman__2004,1,Cerebellum_Vol.mm3
+Meriones,Frontal_cortex,CMRgl,umol/100g/min,67.8,Kaufman__2004,1,NA
+Meriones,Hippocampus,CBF,mL/100g/min,109,Kaufman__2004,1,Hippocampus_Vol.mm3
+Meriones,Hippocampus,CMRgl,umol/100g/min,69,Kaufman__2004,1,Hippocampus_Vol.mm3
+Meriones,Neocortex,CBF,mL/100g/min,103.03,Kaufman__2004,1,Neocortex_Vol.mm3
+Meriones,Neocortex,CMRgl,umol/100g/min,73.35,Kaufman__2004,1,Neocortex_Vol.mm3
+Meriones,Occipital_cortex,CMRgl,umol/100g/min,69.4,Kaufman__2004,1,NA
+Meriones,Sensorimotor_cortex,CMRgl,umol/100g/min,67.2,Kaufman__2004,1,NA
+Meriones,Thalamus,CBF,mL/100g/min,117,Kaufman__2004,1,Thalamus_Vol.mm3
+Meriones,Thalamus,CMRgl,umol/100g/min,76.35,Kaufman__2004,1,Thalamus_Vol.mm3
+Meriones,White_matter,CBF,mL/100g/min,62,Kaufman__2004,1,NA
+Meriones,Whole_brain,CBF,mL/100g/min,102,Kaufman__2004,1,Total_brain_net_volume_Vol.mm3
+Mus,Auditory_cortex,CMRgl,umol/100g/min,105.24,Kaufman__2004,1,NA
+Mus,Basal_ganglia,CMRgl,umol/100g/min,85.18,Kaufman__2004,1,NA
+Mus,Cerebellum,CMRgl,umol/100g/min,91.52,Kaufman__2004,1,Cerebellum_Vol.mm3
+Mus,Cingulate_cortex,CMRgl,umol/100g/min,83.33,Kaufman__2004,1,NA
+Mus,Frontal_cortex,CMRgl,umol/100g/min,107.29,Kaufman__2004,1,NA
+Mus,Hippocampus,CMRgl,umol/100g/min,74.54,Kaufman__2004,1,Hippocampus_Vol.mm3
+Mus,Neocortex,CMRgl,umol/100g/min,98.9,Kaufman__2004,1,Neocortex_Vol.mm3
+Mus,Occipital_cortex,CMRgl,umol/100g/min,100.75,Kaufman__2004,1,NA
+Mus,Parietal_cortex,CMRgl,umol/100g/min,126,Kaufman__2004,1,NA
+Mus,Sensorimotor_cortex,CMRgl,umol/100g/min,102.59,Kaufman__2004,1,NA
+Mus,Thalamus,CMRgl,umol/100g/min,114.39,Kaufman__2004,1,Thalamus_Vol.mm3
+Mus,White_matter,CMRgl,umol/100g/min,44.57,Kaufman__2004,1,NA
+Mus,Whole_brain,CBF,mL/100g/min,117,Kaufman__2004,1,Total_brain_net_volume_Vol.mm3
+Mus,Whole_brain,CMRgl,umol/100g/min,67.53,Kaufman__2004,1,Total_brain_net_volume_Vol.mm3
+Ovis,Whole_brain,CBF,mL/100g/min,62.01,Kaufman__2004,1,Total_brain_net_volume_Vol.mm3
+Ovis,Whole_brain,CMRO2,umol/100g/min,217.93,Kaufman__2004,1,Total_brain_net_volume_Vol.mm3
+Rattus,Auditory_cortex,CMRgl,umol/100g/min,125.87,Kaufman__2004,1,NA
+Rattus,Basal_ganglia,CBF,mL/100g/min,119.33,Kaufman__2004,1,NA
+Rattus,Basal_ganglia,CMRgl,umol/100g/min,71.74,Kaufman__2004,1,NA
+Rattus,Cerebellum,CBF,mL/100g/min,112.57,Kaufman__2004,1,Cerebellum_Vol.mm3
+Rattus,Cerebellum,CMRgl,umol/100g/min,54.85,Kaufman__2004,1,Cerebellum_Vol.mm3
+Rattus,Cingulate_cortex,CMRgl,umol/100g/min,97.93,Kaufman__2004,1,NA
+Rattus,Frontal_cortex,CMRgl,umol/100g/min,94.31,Kaufman__2004,1,NA
+Rattus,Hippocampus,CBF,mL/100g/min,94,Kaufman__2004,1,Hippocampus_Vol.mm3
+Rattus,Hippocampus,CMRgl,umol/100g/min,65.36,Kaufman__2004,1,Hippocampus_Vol.mm3
+Rattus,Neocortex,CBF,mL/100g/min,145.58,Kaufman__2004,1,Neocortex_Vol.mm3
+Rattus,Neocortex,CMRO2,umol/100g/min,464.3,Kaufman__2004,1,Neocortex_Vol.mm3
+Rattus,Neocortex,CMRgl,umol/100g/min,98.91,Kaufman__2004,1,Neocortex_Vol.mm3
+Rattus,Occipital_cortex,CMRgl,umol/100g/min,94.2,Kaufman__2004,1,NA
+Rattus,Parietal_cortex,CMRgl,umol/100g/min,94.29,Kaufman__2004,1,NA
+Rattus,Sensorimotor_cortex,CMRgl,umol/100g/min,96.09,Kaufman__2004,1,NA
+Rattus,Temporal_cortex,CMRgl,umol/100g/min,97.46,Kaufman__2004,1,NA
+Rattus,Thalamus,CBF,mL/100g/min,129.92,Kaufman__2004,1,Thalamus_Vol.mm3
+Rattus,Thalamus,CMRgl,umol/100g/min,89.8,Kaufman__2004,1,Thalamus_Vol.mm3
+Rattus,White_matter,CBF,mL/100g/min,35,Kaufman__2004,1,NA
+Rattus,White_matter,CMRgl,umol/100g/min,34.41,Kaufman__2004,1,NA
+Rattus,Whole_brain,CBF,mL/100g/min,103.08,Kaufman__2004,1,Total_brain_net_volume_Vol.mm3
+Rattus,Whole_brain,CMRO2,umol/100g/min,429.41,Kaufman__2004,1,Total_brain_net_volume_Vol.mm3
+Rattus,Whole_brain,CMRgl,umol/100g/min,76.89,Kaufman__2004,1,Total_brain_net_volume_Vol.mm3
+Sus,Basal_ganglia,CBF,mL/100g/min,102.6,Kaufman__2004,1,NA
+Sus,Cerebellum,CBF,mL/100g/min,88.8,Kaufman__2004,1,Cerebellum_Vol.mm3
+Sus,Neocortex,CBF,mL/100g/min,108.2,Kaufman__2004,1,Neocortex_Vol.mm3
+Sus,Neocortex,CMRO2,umol/100g/min,341.96,Kaufman__2004,1,Neocortex_Vol.mm3
+Sus,Thalamus,CBF,mL/100g/min,76.8,Kaufman__2004,1,Thalamus_Vol.mm3
+Sus,White_matter,CBF,mL/100g/min,33.6,Kaufman__2004,1,NA

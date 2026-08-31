@@ -18,7 +18,7 @@ Reviewed the PDF for an extractable trait table; there is none:
 
 3. The underlying **per-specimen volumetric data (PCF, CBLM, NetBrain)** is the author's PhD
    dissertation, **Weaver 2001**, which is **already built in this repo**:
-   `Weaver_2001/` → `Weaver__2001_TableA-11` (PCF & CBLM volumes from MRI) and
+   `Weaver__2001/` → `Weaver__2001_TableA-11` (PCF & CBLM volumes from MRI) and
    `Weaver__2001_TableA-15` (raw + derived variables). Weaver 2005 re-uses that data, so building it
    would duplicate Weaver 2001.
 

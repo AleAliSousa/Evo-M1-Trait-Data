@@ -43,7 +43,7 @@ heiss <- read_csv(file.path(base, "Heiss_etal_2004/Heiss_etal_2004_TABLE1.csv"),
 kauf <- read_csv(file.path(base, "Kaufman__2004", "Kaufman__2004_TableA15.csv"),
                  show_col_types = FALSE) %>%
   filter(weighting == "weighted", !is.na(Mean)) %>%
-  transmute(reference = "Kaufman_2004", species,
+  transmute(reference = "Kaufman__2004", species,
             region = str_squish(region), measure, value = numv(Mean),
             units = case_when(measure == "CMRgl" ~ "umol_glucose/100g/min",
                               measure == "CMRO2" ~ "umol_O2/100g/min",

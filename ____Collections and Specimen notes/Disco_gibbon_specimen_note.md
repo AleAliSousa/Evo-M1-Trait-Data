@@ -414,3 +414,117 @@ YN81-146 = Hylobates lar in Barger 2014 and multiple related datasets
 - Barger et al. 2014, Table 1, starred rows mapping Barger 2007 values to *Nomascus concolor* and *Hylobates lar*.
 - DeCasien & Higham 2019 MOESM3, Brain Region Data, duplicate `Hylobates_lar` and `Nomascus_concolor` Disco-derived cells.
 - White-Cheeked Gibbon Studbook, *Nomascus leucogenys*, North American Region Studbook, Studbook ID 0050, house name `DISCO`, BROWNSVIL local ID `5542`.
+
+## Addendum, 2026-08-29 — the MRI question, and whether Stephan/Frahm brains reach Semendeferi
+
+*Public account. Restricted evidence — curator-code and catalog linkage, the Bauernfeind
+accession join, and the studbook draft — is in
+`Evo-M1-Trait-Data-restricted/specimen_registry/cases/hylobates/`.
+Companion table: `Disco_study_list_public.csv`.*
+
+---
+
+## 1. Your claim about Semendeferi is supported — and it cannot be falsified from the published tables
+
+**No Stephan/Frahm brain can be traced into any Semendeferi study.** Four checks, all negative:
+
+- **No Semendeferi publication is registered in the specimen crosswalk at all** — zero of the
+  26 `source_publication` values.
+- **`Semendeferi_etal_1998`, `_2001`, `_2002` report species-level values with n = 1 and no
+  specimen identifiers.** Their brain volumes (1,158,300 / 393,000 / 378,400 mm³) match no
+  Frahm individual within 0.5%.
+- **`Semendeferi_Damasio_2000` does have a `Specimen` column with 29 individuals — but the
+  labels are anonymous sequential tags** (`Human 1`, `Gibbon 3`, `Orang-utan 2`). No
+  accession number, no house name. Identifier matching is impossible by construction.
+- **`_keys/team_grouping_crosswalk.csv` files Semendeferi 1998 and 2001 under
+  `registry_Team = Zilles`** — Zilles collection material, not Stephan.
+
+The important qualification: this is **absence of any linkable identifier, not demonstrated
+absence of the brains**. Semendeferi & Damasio 2000 anonymised its sample, so no amount of
+work on the repo side can confirm or refute overlap. Only the authors' own records could.
+
+### Where the "Semendeferi" attribution actually comes from
+
+11 specimens carry a collection string naming Semendeferi (`Zilles/Semendeferi`,
+`Zilles/Semendeferi (ex Yerkes)`). **Every one of those attributions comes from
+`MacLeod_2000` or `Barger_etal_2007`** — other authors describing the shared collection.
+None comes from a Semendeferi-authored table. MacLeod's Appendix I prints the collection as
+`ZILLES(SEMEND.)`, which is the documentary trace of exactly the situation you described:
+Zilles and Semendeferi divided sections from the same brains, so the same animal exists in
+both collections in different physical form.
+
+Those 11 are the Pongo trio (Harry, Briggs, YN85-38), five *Pan*, one *Gorilla*, and the two
+gibbons Disco and YN81-146. They are the shared-brain set.
+
+### The one Stephan gibbon
+
+`MacLeod_etal_2003_Table2` carries a `stephan_collection` boolean, and among its five
+Hirnforschung gibbons **only `1203` is TRUE**. That specimen is `STEPHAN-FRAHM-0200`, also
+published by `Smaers_etal_2010`. It is the single Stephan-collection gibbon in the
+Hirnforschung sample — consistent with the dissertation's description of three chimpanzees,
+one gorilla and one gibbon coming from Stephan.
+
+---
+
+## 2. Disco: 8 studies, 4 registered and 4 not
+
+You remembered the code correctly. **`deSousa_etal_2009_Table1` lists Disco as `hld`**, with
+`archive_number = Disco`, F, 22 yr, brain 120,000 mg, left V1 2,292 mm³, left LGN 90 mm³.
+That study is **not registered in the crosswalk**.
+
+| study | handle used | modality | status |
+|---|---|---|---|
+| `MacLeod_2000` | `DISCO (3/97) / GPZ-5542` | histology | registered |
+| `MacLeod_etal_2003` | `Disco 3/97` | histology | **not registered** |
+| `deSousa_dissertation_2008` | `hld` | histology | registered |
+| `deSousa_etal_2009` | `hld` (archive `Disco`) | histology / cytoarchitecture | **not registered** |
+| `deSousa_etal_2010` | `Disco 3/97` | histology | registered |
+| `Barger_etal_2007` | `Disco` / `GPZ-5542` | histology | registered |
+| `Barger_etal_2014` | **none printed** | histology | **not registered**, value-level only |
+| `DeCasien_Higham_2019` | Disco named only in repo reconciliation | secondary compilation | **not registered** |
+
+Rejected as false positives: `Baron_etal_1996` and `Burger_etal_2019`, where the grep hit is
+*discolor* (a species epithet), not Disco.
+
+`Barger_etal_2014` is the hardest case: it prints no specimen handle at all, and Disco is
+identifiable there only because its *Nomascus concolor* row reproduces the left-hemisphere
+amygdala values of Barger 2007's Disco row. A handle-based search will never find it.
+
+---
+
+## 3. The MRI question: not excluded, and not confirmable by values
+
+Three MRI-or-MRI-adjacent samples could in principle contain Disco.
+
+| sample | modality | gibbons | identifiers printed | verdict |
+|---|---|---|---|---|
+| `MacLeod_etal_2003` Table 1 | histology, Yerkes sample, 47 rows all coronal | Sunny, Cherokee, Cleo, Buddy | house names | **Disco excluded** — named gibbons, none is Disco |
+| `Semendeferi_Damasio_2000` | MRI | `Gibbon 1`–`Gibbon 4`, 79.5 / 92.6 / 78.5 / 78.5 cm³ | none | **cannot confirm or exclude** |
+| `Rilling_Insel_1998` / `_1999` | MRI | n = 4 (2M 2F), mean 83.0 cc | none — species means only | **cannot confirm or exclude** |
+
+Disco is female, and Rilling's gibbon sample contains two females, so she is not excluded on
+sex or count.
+
+**I tested whether the two MRI samples are actually one dataset.** Sample sizes match for
+*Gorilla* (2), *Pan troglodytes* (6) and *Pongo* (4), and the gibbon means agree to 0.87%
+(82.275 vs 83.0 cc) — but the remaining species means differ by 4.9% to 10.9%
+(*Gorilla* +10.9%, *Pongo* +8.9%, *Pan paniscus* +8.1%, *Homo* +7.0%, *Pan troglodytes*
+−4.9%). **They are not the same scans.** The gibbon agreement is an isolated coincidence,
+not evidence of a shared sample.
+
+That negative result matters for method: **cross-modality value matching cannot establish
+specimen identity here.** In vivo or whole-brain MRI volumes and fixed, sectioned,
+shrinkage-corrected histological volumes differ systematically — Disco's histological brain
+volume is 115.8 cm³ against an MRI gibbon maximum of 92.6 cm³. Only identifiers can link a
+brain across modalities, and neither MRI study published any.
+
+### Four named gibbons nobody has registered
+
+`Sunny`, `Cherokee`, `Cleo` and `Buddy` (MacLeod 2003 Table 1, Yerkes sample) appear in
+**neither the catalog nor the crosswalk nor the alias index**. They are named Yerkes animals,
+which makes them the most studbook-tractable specimens in the gibbon set — the same route
+that resolved Kanting. Registering them is a prerequisite for asking whether any of them is
+also an MRI subject.
+
+---
+

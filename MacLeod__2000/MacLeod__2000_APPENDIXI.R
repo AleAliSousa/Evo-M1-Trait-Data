@@ -54,12 +54,9 @@ dataset_root <- find_repo_root(paper_dir)
 snapshot_candidates <- unique(c(
   paste0(table_name, "_snapshot.xlsx"),
   paste0(table_name, "_snapshot.csv"),
-  "MacLeod_2000_APPENDIXI_snapshot.xlsx",
-  "MacLeod_2000_APPENDIXI_snapshot.csv",
   "MacLeod__2000_APPENDIXI_snapshot.xlsx",
   "MacLeod__2000_APPENDIXI_snapshot.csv",
-  "MacLeod__2000_APPENDIXI.csv",
-  "MacLeod_2000_APPENDIXI.csv"
+  "MacLeod__2000_APPENDIXI.csv"
 ))
 
 snapshot_file <- snapshot_candidates[file.exists(snapshot_candidates)][1]
@@ -411,7 +408,7 @@ clean <- data.frame(
   brainweight_known          = !is_na_printed(brain_weight_raw),
   taxonomic_issue            = ambiguous_generic_gibbon | is_disco,
   taxonomic_note             = taxonomic_note,
-  source                     = "MacLeod_2000",
+  source                     = "MacLeod__2000",
   stringsAsFactors = FALSE
 )
 

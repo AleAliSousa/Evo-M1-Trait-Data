@@ -41,6 +41,24 @@
 #
 # ---------------------------------------------------------------------------
 
+## self-locate (fixed 2026-08-29: inputs were read relative to the CALLER's cwd, so the
+## script failed under run_all_scripts_v2.R / Rscript-from-elsewhere)
+.sp <- local({
+  a <- grep("^--file=", commandArgs(FALSE), value = TRUE)
+  if (length(a)) return(normalizePath(sub("^--file=", "", a[1])))
+  frames <- sys.frames()
+  for (i in rev(seq_along(frames))) {
+    of <- frames[[i]]$ofile
+    if (is.character(of) && length(of) == 1L && nzchar(of)) return(normalizePath(of))
+  }
+  if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+    p <- rstudioapi::getActiveDocumentContext()$path
+    if (nzchar(p)) return(normalizePath(p))
+  }
+  "."
+})
+setwd(dirname(.sp))
+
 calib <- read.csv("deJager_etal_2022_calibration.csv", comment.char = "#",
                   stringsAsFactors = FALSE)
 tab1  <- read.csv("deJager_etal_2022_Table1.csv", comment.char = "#",

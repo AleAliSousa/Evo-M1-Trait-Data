@@ -1,4 +1,4 @@
-# Zilles__Rehkamper_1988_Table12-2.R
+# Zilles_Rehkamper_1988_Table12-2.R
 #
 # Preparation step. Turn the journal-faithful snapshot of Zilles & Rehkamper
 # (1988) Table 12-2 -- the fresh volumes of the brain components of the ORANG-
@@ -19,8 +19,8 @@
 # the snapshot uses for the printed sub-rows), converts the printed cc3 volumes to
 # the project unit mm3 (x1000), and writes one row per structure for Pongo.
 #
-# Input  : Zilles__Rehkamper_1988_Table12-2_snapshot.xlsx   sheet: Table12-2
-# Outputs: Zilles__Rehkamper_1988_Table12-2.csv             one row per structure (18)
+# Input  : Zilles_Rehkamper_1988_Table12-2_snapshot.xlsx   sheet: Table12-2
+# Outputs: Zilles_Rehkamper_1988_Table12-2.csv             one row per structure (18)
 #          <DOI/PMID>.tsv in __Public/comparative-data/      named from __ReadMe.xlsx
 
 suppressPackageStartupMessages({
@@ -45,9 +45,9 @@ base      <- local({                                     # repo root; NA if run 
   if (file.exists(file.path(d, "__ReadMe.xlsx"))) d else NA_character_
 })
 setwd(folder)
-snapshot_file  <- "Zilles__Rehkamper_1988_Table12-2_snapshot.xlsx"
+snapshot_file  <- "Zilles_Rehkamper_1988_Table12-2_snapshot.xlsx"
 snapshot_sheet <- "Table12-2"
-output_file    <- "Zilles__Rehkamper_1988_Table12-2.csv"
+output_file    <- "Zilles_Rehkamper_1988_Table12-2.csv"
 header_rows    <- 2L   # row1 caption + row2 header; data (and the footnote) from row 3
 
 pos <- c("structure_disp","fresh_volume_cc3","pct_total_brain")

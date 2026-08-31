@@ -52,6 +52,17 @@ SKIP_PATTERNS <- c(
   ## and exits -- harmless but meaningless, and it made them look like tools.
   "^_helpers/"                  = "sourced helper library, not a standalone script",
   "(^|/)parity_R_vs_py\\.R$"    = "manual R-vs-Python port check; shells out to Rscript and python3",
+  ## Dated one-shot registry editors: applied on their date, and their row guards are DESIGNED
+  ## to fail afterwards (Sheet1 re-sorts, columns get renamed). Same class as the 20260815
+  ## cortical-layer registration below. (Added to the skip list 2026-08-29.)
+  "(^|/)__register_remaining_builds_20260824\\.R$" = "one-shot registry edit, applied 2026-08-24; guard intentionally fails on re-run",
+  "(^|/)__update_remaining_builds_20260815\\.R$"   = "one-shot registry edit, applied 2026-08-15; targets a column since renamed",
+  ## Frozen author code inside a source folder: it is part of the FROZEN SOURCE MATERIAL
+  ## (Heuer 2023 GitHub release) and expects the authors' own repo layout, not ours.
+  "(^|/)source_data/"           = "frozen author code shipped with the source release; never run in a sweep",
+  ## Externally blocked build: reads the Medina-González TSV, which cannot exist until the
+  ## restricted Zenodo record opens. The script itself now stops with that explanation.
+  "(^|/)EvoM1_read_gait_excursion_medina\\.R$" = "Medina-González source restricted on Zenodo; build blocked externally (see roadmap)",
   ## Optional on-demand tool: joins two PUBLISHED trees the curator supplies by hand as
   ## _keys/phylo_placental.* + _keys/phylo_marsupial.*. Those inputs are deliberately not in the
   ## repo, so an unattended sweep can only ever hit its input guard and log a false FAILED. The

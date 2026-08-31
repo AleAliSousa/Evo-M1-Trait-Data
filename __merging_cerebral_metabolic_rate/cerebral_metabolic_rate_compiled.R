@@ -5,9 +5,9 @@
 #
 # Sources (all BRAIN-only; no body/basal metabolic rate):
 #   Heiss_etal_2004  - PRIMARY. Homo sapiens regional CMRgl (PET).
-#   Kaufman_2004     - SECONDARY compilation. Appendix tables A1-A14 = one row per PRIMARY study,
+#   Kaufman__2004     - SECONDARY compilation. Appendix tables A1-A14 = one row per PRIMARY study,
 #                      each carrying its own literature reference + anesthesia state.
-#   Karbowski_2007   - SECONDARY compilation. Suppl. tables S1-S23 = one row per PRIMARY reference
+#   Karbowski__2007   - SECONDARY compilation. Suppl. tables S1-S23 = one row per PRIMARY reference
 #                      (plus the paper's own 'average <species>' rows, which we DROP).
 #
 # Because Kaufman and Karbowski are both compilations of OTHER labs' primary measurements and cite
@@ -90,7 +90,7 @@ kauf <- map_dfr(kauf_files, function(f){
            Species=canon_species(ifelse(Species_printed %in% names(species_canon), Species_printed, genus)),
            Region_raw=str_trim(Region), Region=canon_region(Region_raw),
            conscious=conscious_kauf(Anesthesia), rk=ref_key(Reference),
-           Compilation="Kaufman_2004", ref_raw=as.character(Reference)) %>%
+           Compilation="Kaufman__2004", ref_raw=as.character(Reference)) %>%
     pivot_longer(c(CMRgl_umol_100g_min,CMRO2_umol_100g_min,CBF_ml_100g_min),
                  names_to="mcol", values_to="Value") %>%
     mutate(Measure=recode(mcol, CMRgl_umol_100g_min="CMRgl", CMRO2_umol_100g_min="CMRO2", CBF_ml_100g_min="CBF"),
@@ -106,7 +106,7 @@ karb_files <- list.files(file.path(base,"Karbowski__2007"), pattern="Karbowski__
 karb <- map_dfr(karb_files, function(f){
   read_csv(f, show_col_types=FALSE) %>%
     filter(!as.logical(is_average), measure %in% c("CMRgl","CMRO2")) %>%
-    mutate(Compilation="Karbowski_2007", Table=str_extract(basename(f),"TableS[0-9]+"),
+    mutate(Compilation="Karbowski__2007", Table=str_extract(basename(f),"TableS[0-9]+"),
            Species_printed=str_trim(species_printed), Species=canon_species(str_trim(species)),
            genus=word(Species,1), Region_raw=str_trim(structure), Region=canon_region(Region_raw),
            Measure=measure, Value=suppressWarnings(as.numeric(value))*100,     # per g -> per 100 g
@@ -136,7 +136,7 @@ U %>% select(Species,Species_printed,Compilation,Table,Region,Region_raw,Measure
 F <- U %>% filter(conscious != "anesthetized")
 
 ## ---- 4. compilation-aware dedupe of shared primary studies -----------------------------------
-comp_priority <- c(Kaufman_2004=0, Heiss_etal_2004=1, Karbowski_2007=2)   # keep lower
+comp_priority <- c(Kaufman__2004=0, Heiss_etal_2004=1, Karbowski__2007=2)   # keep lower
 F <- F %>% mutate(.row=row_number())
 long_keys <- F %>% select(.row,Species,Region,Measure,Compilation,ref_keys) %>%
   unnest(ref_keys) %>% filter(!is.na(ref_keys))

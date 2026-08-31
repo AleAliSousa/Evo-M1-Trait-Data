@@ -105,7 +105,7 @@ skipped.
 
 Tokens are **paper-scoped**, shared by all four tables — the split did not change them:
 
-- `_keys/Stephan/anatomy_key.csv` — token **`Matano_1992`**: the four olive nuclei
+- `_keys/Stephan/anatomy_key.csv` — token **`Matano__1992`**: the four olive nuclei
   (`Nucleus_olivaris_inferior_principalis`, `_accessorius_medialis`, `_accessorius_dorsalis`,
   `_accessorius`), plus `Body_weight` and the specimen-count row.
 - `_keys/anatomy_reference.csv` — the four olive canonical structures

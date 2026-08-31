@@ -2,7 +2,7 @@
 # brain metabolic rate. Builds a two-tier merge of the energetics papers from energetics_long.csv.
 #
 # Measures: CMRgl (glucose), CMRO2 (oxygen) in umol/100 g/min; CBF in mL/100 g/min.
-# Sources in energetics_long.csv: Heiss_etal_2004 (Homo sapiens) and Kaufman_2004 (12 genera).
+# Sources in energetics_long.csv: Heiss_etal_2004 (Homo sapiens) and Kaufman__2004 (12 genera).
 #   Karbowski 2007 is NOT in energetics_long.csv (source xlsx headers are OCR-garbled and were not
 #   parsed); it stays excluded and is noted in the ReadMe, not merged here.
 #
@@ -50,7 +50,7 @@ region_canon <- c(
   "Substantia nigra"                = "Substantia_nigra",
   "Temporal lobe"                   = "Temporal_cortex",
   "Vermis"                          = "Vermis",
-  # Kaufman_2004
+  # Kaufman__2004
   "Auditory Cortex"                 = "Auditory_cortex",
   "Basal Ganglia"                   = "Basal_ganglia",
   "Cerebellum"                      = "Cerebellum",
@@ -134,7 +134,7 @@ readme <- c(
   "",
   "## Inputs",
   "- Heiss_etal_2004 - Homo sapiens regional CMRgl (PET).",
-  "- Kaufman_2004 - 12 genera, weighted-mean CMRgl / CMRO2 / CBF.",
+  "- Kaufman__2004 - 12 genera, weighted-mean CMRgl / CMRO2 / CBF.",
   "- Karbowski 2007 - NOT included: the source xlsx headers are OCR-garbled and were never parsed",
   "  into `energetics_long.csv`; it needs a dedicated extraction pass before it can be merged.",
   "",

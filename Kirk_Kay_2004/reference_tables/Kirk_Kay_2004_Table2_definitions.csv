@@ -1,0 +1,12 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species_KK2004,scientific name AS PRINTED,,Species,,primary,Mammalia,Kirk_Kay_2004_Table2,deviations resolved in species_crosswalk,
+common_name_KK2004,common name as printed,,,,info,Mammalia,Kirk_Kay_2004_Table2,,
+binomial,resolved binomial (crosswalk; 'as printed' when no deviation),,Species,,primary,Mammalia,Kirk_Kay_2004_Table2,,
+activity_pattern,Diurnal / Cathemeral / Nocturnal (+ 'Nocturnal or Cathemeral'),,activity pattern,,secondary,Mammalia,Kirk_Kay_2004_Table2,per cited source or Nowak 1991 / Rowe 1996 (table notes),
+method,how acuity was obtained,eye/visual system,,,info,Mammalia,Kirk_Kay_2004_Table2,anatomical: highest acuity theoretically attainable from eye/retina morphology,
+substrate,air / water / air and water; unspecified = air per table notes,,,,info,Mammalia,Kirk_Kay_2004_Table2,one row per printed substrate segment,
+va_cdeg_min,lower bound of printed acuity (equals max when single value),eye/visual system,visual acuity,min c/deg,secondary,Mammalia,Kirk_Kay_2004_Table2,compiled from the per-row cited primaries,
+va_cdeg_max,upper bound of printed acuity,eye/visual system,visual acuity,max c/deg,secondary,Mammalia,Kirk_Kay_2004_Table2,,
+va_as_printed,the full printed acuity string (ranges + substrate qualifiers),,,,provenance,Mammalia,Kirk_Kay_2004_Table2,,
+source_as_printed,the row's printed citation(s),,,,provenance,Mammalia,Kirk_Kay_2004_Table2,per-primary audit hook,
+source,registry item key,,,,provenance,Mammalia,Kirk_Kay_2004_Table2,,

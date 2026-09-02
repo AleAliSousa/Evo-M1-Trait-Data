@@ -1,5 +1,18 @@
 "script","status","error","start_time","end_time","elapsed_seconds"
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_item_name_resolution.R","FAILED","registry Item names: 352   |   TSVs on disk: 267   |   NA.tsv present: no
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_sensory/sensory_compiled.R","FAILED","Warning messages:
+1: In x[nzchar(x)] <- str_split(x, "";"")[[1]][nzchar(str_split(x, "";"")[[1]])] :
+  number of items to replace is not a multiple of replacement length
+2: In x[nzchar(x)] <- str_split(x, "";"")[[1]][nzchar(str_split(x, "";"")[[1]])] :
+  number of items to replace is not a multiple of replacement length
+3: In x[nzchar(x)] <- str_split(x, "";"")[[1]][nzchar(str_split(x, "";"")[[1]])] :
+  number of items to replace is not a multiple of replacement length
+4: In x[nzchar(x)] <- str_split(x, "";"")[[1]][nzchar(str_split(x, "";"")[[1]])] :
+  number of items to replace is not a multiple of replacement length
+5: In x[nzchar(x)] <- str_split(x, "";"")[[1]][nzchar(str_split(x, "";"")[[1]])] :
+  number of items to replace is not a multiple of replacement length
+Error in tmap[[h20$trait[i]]] : subscript out of bounds
+Execution halted","2026-09-02 09:48:26.667074","2026-09-02 09:48:28.096856",1.4297821521759
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_item_name_resolution.R","FAILED","registry Item names: 373   |   TSVs on disk: 298   |   NA.tsv present: no
 
 __merging_behaviour/behaviour_compiled.R                     0 item name(s) referenced   OK
 __merging_body_ecology/body_ecology_compiled.R               0 item name(s) referenced   OK
@@ -11,14 +24,27 @@ __merging_cortical_areas/cortical_areas_compiled.R          11 item name(s) refe
 __merging_cortical_layers/cortical_layers_compiled.R         1 item name(s) referenced   OK
 __merging_fossil_brain_glucose/fossil_brain_glucose_compiled.R   0 item name(s) referenced   OK
 __merging_gyrification/gyrification_compiled.R               3 item name(s) referenced   OK
+__merging_sensory/sensory_compiled.R                         5 item name(s) referenced   1 UNRESOLVED
+      Heffner_Heffner_1992_a                         -> no encoding (not in __ReadMe.xlsx 'Item name', no enc_override)
 __merging_sleep/sleep_compiled.R                             4 item name(s) referenced   OK
 __merging_volumes/volumes_compiled_DeCasien.R               47 item name(s) referenced   OK
 __merging_volumes/volumes_compiled_select.R                 34 item name(s) referenced   OK
 __merging_volumes/volumes_compiled.R                        67 item name(s) referenced   OK
 
-orphaned TSVs (on disk, claimed by no registry row): 1
+orphaned TSVs (on disk, claimed by no registry row): 3
+      10.1007%2F978-1-4419-8873-7_20_Table1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1007%2F978-1-4419-8873-7_20_Table2.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
       10.6084%2Fm9.figshare.c.3899422.v1_Dataset1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
 rows with a citation but no Item name (need _tools/file_list.R): 0
 
-all referenced item names resolve to a TSV on disk.
-run _tools/restore_registry_rows.R (adding any new row to its ROWS list), then _tools/file_list.R.","2026-08-30 10:41:33.048171","2026-08-30 10:41:34.037129",0.98895788192749
+1 unresolved reference(s).
+run _tools/restore_registry_rows.R (adding any new row to its ROWS list), then _tools/file_list.R.","2026-09-02 09:49:17.011324","2026-09-02 09:49:18.618501",1.60717701911926
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_tools/build_dataset_item.R","FAILED","Error in file(filename, ""r"", encoding = encoding) : 
+  cannot open the connection
+Calls: source -> file
+In addition: Warning message:
+In file(filename, ""r"", encoding = encoding) :
+  cannot open file 'validate_dataset_item.R': No such file or directory
+Execution halted","2026-09-02 09:56:50.201521","2026-09-02 09:56:50.89636",0.694839000701904
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Changizi__2003/Changizi__2003_Table1.R","FAILED","Error: sum(clean$row_type == ""order"") == 12 is not TRUE
+Execution halted","2026-09-02 09:58:10.648117","2026-09-02 09:58:11.591569",0.943451881408691

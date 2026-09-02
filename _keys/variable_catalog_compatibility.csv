@@ -1,25 +1,25 @@
 compat_key,canonical_structure,measure_class,n_variables,n_papers,papers,taxa,roles,poolable
 (structure-agnostic; see data columns) | count (number),(structure-agnostic; see data columns),count (number),44,22,__merging_cortical_layers; AvelinodeSouza_etal_2025; Burish_etal_2010; Capellini_etal_2008; Changizi_Shimojo_2005; DosSantos_etal_2017; DosSantos_etal_2020; Gabi_etal_2016; HerculanoHouzel_etal_2015; Heuer_etal_2019; Jacobs_etal_2015; Jacobs_etal_2016; JardimMesseder_etal_2017; Johnson_etal_2016; Kochiyama_etal_2018; Kverkova_etal_2018; Lyamin_etal_2008; Navarrete_etal_2016; Nudo_etal_1995; Peruffo_etal_2019; Reader_etal_2011; Reader_Laland_2002,"9 mammalian orders (the 24 species of TABLE 2 pooled by order); Carnivores & other companion mammals; Cetacea (4 species); Cetaceans & other placental mammals; Giraffa camelopardalis; Giraffa camelopardalis and Loxodonta africana; Mammalia, 16 spp. (monotremes, marsupials, eulipotyphlans, bats, rodents, tree shrew, primates); Mammals; Marsupials; Ovis aries; Panthera tigris altaica and Neofelis nebulosa; Primates; Primates (+ other mammals); Primates (116 of 203 species surveyed); Primates (incl. human); Rodents (African mole-rats +)",both; info; note; primary; review,TRUE
-(structure-agnostic; see data columns) | mass,(structure-agnostic; see data columns),mass,26,17,AvelinodeSouza_etal_2025; Burish_etal_2010; Collins_etal_2010; Collins_etal_2016; DosSantos_etal_2017; DosSantos_etal_2020; Finlay_etal_2006; HerculanoHouzel_etal_2015; Jacobs_etal_2018; JardimMesseder_etal_2017; Kverkova_etal_2018; Lewitus_etal_2014; Seymour_etal_2015; Seymour_etal_2017; Stephan_etal_1970; Weaver__2001; Young_etal_2013_b,"Carnivores & other companion mammals; Carnivores + Primates; Cetaceans & other placental mammals; Fossil Hominins; Mammals; Mammals (marsupial to primate); Marsupials; monkeys, apes, fossil hominids, humans; Primates; Primates (+ other mammals); Primates & Diprotodontia; Rodents (African mole-rats +)",both; info; primary; review; secondary,TRUE
-Cerebellum | volume,Cerebellum,volume,36,14,Ashwell__2020; Baron_etal_1996; Ebinger__1974; Frahm_etal_1997; Kochiyama_etal_2018; MacLeod_etal_2003; Reep_etal_2007; Schleifenbaum__1973; Semendeferi_Damasio_2000; Smaers_etal_2018; Stephan_etal_1970; Stephan_etal_1981; Weaver__2001; Zilles_Rehkämper_1988,"Apes (Hominoidea); Canis; Chiroptera; Hominoidea (Homo, Pan, Gorilla, Pongo, Hylobates); hominoids; Homo; Insectivora, Scandentia & Primates; Mammalia; Mammalia (primates + outgroups); Mammals; monkeys, apes, fossil hominids, humans; Ovis; Primates (Pongo); Rodentia & Insectivora",primary; secondary,TRUE
-Neocortex | volume,Neocortex,volume,30,13,Baron_etal_1996; Campos_Welker_1976; Changizi__2001; deSousa_etal_2009; deSousa_etal_2010; Ebinger__1974; Frahm_etal_1982; Frahm_etal_1997; Reep_etal_2007; Schleifenbaum__1973; Stephan_etal_1970; Stephan_etal_1981; Zilles_Rehkämper_1988,"Apes & humans + M. fascicularis; Canis; Chiroptera; Hystricomorph rodents; Insectivora & Primates; Insectivora, Scandentia & Primates; Mammals; Mammals (monotreme to human); Ovis; Primates; Primates (Pongo); Rodentia & Insectivora",primary; secondary,TRUE
+(structure-agnostic; see data columns) | mass,(structure-agnostic; see data columns),mass,28,18,AvelinodeSouza_etal_2025; Burish_etal_2010; Collins_etal_2010; Collins_etal_2016; DosSantos_etal_2017; DosSantos_etal_2020; Finlay_etal_2006; HerculanoHouzel_etal_2015; Jacobs_etal_2018; JardimMesseder_etal_2017; Kverkova_etal_2018; Lewitus_etal_2014; Seymour_etal_2015; Seymour_etal_2017; Stephan_etal_1970; Veilleux_Kirk_2014; Weaver__2001; Young_etal_2013_b,"Carnivores & other companion mammals; Carnivores + Primates; Cetaceans & other placental mammals; Fossil Hominins; Mammalia (91 spp); Mammals; Mammals (marsupial to primate); Marsupials; monkeys, apes, fossil hominids, humans; Primates; Primates (+ other mammals); Primates & Diprotodontia; Rodents (African mole-rats +)",both; info; primary; review; secondary,TRUE
+Body | mass,Body,mass,19,17,Burger_etal_2019; Chaplin_etal_2013; Granatosky__2018; Haarlem_etal_2026; Heffner_Masterton_1975; Heffner_Masterton_1983; Heldstab_etal_2016; Kazu_etal_2014; Kazu_etal_2015; Nudo_etal_1995; Olkowicz_etal_2016; Ruf_Geiser_2015; Sherwood_etal_2003; Stephan_Pirlot_1970; Weibel_etal_2004; Wilman_etal_2014; Wimberly_etal_2021,"24 mammals: 9 orders / 16 families / 21 genera (Marsupialia + Eutheria); Artiodactyla; Aves; Birds & mammals (43 birds, 171 mammals); Chiroptera; Mammalia; mammals; Mammals; Metazoa; Primates",info; primary; secondary,TRUE
+Cerebellum | volume,Cerebellum,volume,38,15,Ashwell__2020; Baron_etal_1996; Ebinger__1974; Frahm_etal_1997; Kochiyama_etal_2018; MacLeod_etal_2003; Reep_etal_2007; Schleifenbaum__1973; Semendeferi_Damasio_2000; Smaers_etal_2018; Stephan_etal_1970; Stephan_etal_1981; Stephan_Pirlot_1970; Weaver__2001; Zilles_Rehkämper_1988,"Apes (Hominoidea); Canis; Chiroptera; Hominoidea (Homo, Pan, Gorilla, Pongo, Hylobates); hominoids; Homo; Insectivora, Scandentia & Primates; Mammalia; Mammalia (primates + outgroups); Mammals; monkeys, apes, fossil hominids, humans; Ovis; Primates (Pongo); Rodentia & Insectivora",primary; secondary,TRUE
+Neocortex | volume,Neocortex,volume,34,15,Baron_etal_1996; Campos_Welker_1976; Changizi__2001; deSousa_etal_2009; deSousa_etal_2010; Ebinger__1974; Frahm_etal_1982; Frahm_etal_1997; Reep_etal_2007; Schleifenbaum__1973; Sherwood_etal_2003; Stephan_etal_1970; Stephan_etal_1981; Stephan_Pirlot_1970; Zilles_Rehkämper_1988,"Apes & humans + M. fascicularis; Canis; Chiroptera; Hystricomorph rodents; Insectivora & Primates; Insectivora, Scandentia & Primates; Mammals; Mammals (monotreme to human); Ovis; Primates; Primates (Pongo); Rodentia & Insectivora",primary; secondary,TRUE
 WholeBrain | volume,WholeBrain,volume,15,13,Ashwell__2020; Bush_Allman_2004_a; Bush_Allman_2004_b; deSousa_etal_2010; MacLeod_etal_2003; Semendeferi_Damasio_2000; Semendeferi_etal_1998; Semendeferi_etal_2001; Seymour_etal_2015; Seymour_etal_2017; Seymour_etal_2019; Smaers_etal_2011; Smaers_etal_2018,"Apes (Hominoidea); Apes & humans; Fossil Hominins; Great Apes & Homo; Hominoidea (Homo, Pan, Gorilla, Pongo, Hylobates); Mammalia; Mammalia (primates + outgroups); Primates; Primates & Diprotodontia",both; primary; secondary,TRUE
+Hippocampus | volume,Hippocampus,volume,24,12,Barger_etal_2014; Baron_etal_1996; Campos_Welker_1976; Ebinger__1974; Frahm_etal_1997; Frahm_Zilles_1994; Reep_etal_2007; Schleifenbaum__1973; Stephan_etal_1970; Stephan_etal_1981; Stephan_Pirlot_1970; Zilles_Rehkämper_1988,"Apes & humans; Canis; Chiroptera; Hystricomorph rodents; Insectivora & Primates; Insectivora, Scandentia & Primates; Mammals; Ovis; Primates (Pongo); Rodentia & Insectivora",primary,TRUE
 Body_weight | mass,Body_weight,mass,15,12,Bauernfeind_etal_2013; deSousa_etal_2009; Frahm_etal_1997; Frahm_etal_1998; Frahm_Zilles_1994; Matano__1986; Matano__1992; Matano_etal_1985_a; Matano_etal_1985_b; Schleifenbaum__1973; Stephan_etal_1981; Stephan_etal_1988,"Apes & humans; Apes & humans + M. fascicularis; Canis; Insectivora & Primates; Insectivora, Scandentia & Primates; New World monkeys; Old World monkeys; Primates; Rodentia & Insectivora; Scandentia & Primates; Scandentia & prosimians",primary; secondary,TRUE
-Body | mass,Body,mass,13,12,Burger_etal_2019; Granatosky__2018; Heffner_Masterton_1975; Heffner_Masterton_1983; Heldstab_etal_2016; Kazu_etal_2014; Kazu_etal_2015; Nudo_etal_1995; Olkowicz_etal_2016; Ruf_Geiser_2015; Wilman_etal_2014; Wimberly_etal_2021,"24 mammals: 9 orders / 16 families / 21 genera (Marsupialia + Eutheria); Artiodactyla; Aves; Birds & mammals (43 birds, 171 mammals); mammals; Mammals; Primates",primary; secondary,TRUE
 WholeBrain | mass,WholeBrain,mass,13,12,Collins_etal_2016; deSousa_etal_2009; deSousa_etal_2010; deSousa_etal_2013; Finlay_etal_2006; Heuer_etal_2023; Jacobs_etal_2018; Kazu_etal_2014; Kazu_etal_2015; Olkowicz_etal_2016; Turner_etal_2016; Young_etal_2013_b,Apes & humans + M. fascicularis; Artiodactyla; Aves; Carnivores + Primates; Mammals; Mammals (marsupial to primate); Primates,info; primary; secondary,TRUE
 Neocortex | count (number),Neocortex,count (number),56,11,__merging_cortical_areas; Campos_Welker_1976; Changizi__2001; Changizi_Shimojo_2005; Collins_etal_2010; Collins_etal_2016; deSousa_etal_2010; Finlay_etal_2006; Lewitus_etal_2014; Nudo_etal_1995; Young_etal_2013_b,"24 mammals: 9 orders / 16 families / 21 genera (Marsupialia + Eutheria); 9 mammalian orders (the 24 species of TABLE 2 pooled by order); Hystricomorph rodents; Mammalia, 11 spp. (opossum, rat, tree shrew, flying fox, squirrel, bushbaby, marmoset, squirrel monkey, owl monkey, cat, macaque); Mammalia, 19 spp. (monotremes, marsupials, eulipotyphlans, bats, rodents, tree shrew, carnivores, primates); Mammalia, 4 spp. (tree shrew, rat, cat, macaque); Mammals; Mammals (marsupial to primate); Mammals (monotreme to human); Primates",info; metadata; primary; secondary,TRUE
-Hippocampus | volume,Hippocampus,volume,22,11,Barger_etal_2014; Baron_etal_1996; Campos_Welker_1976; Ebinger__1974; Frahm_etal_1997; Frahm_Zilles_1994; Reep_etal_2007; Schleifenbaum__1973; Stephan_etal_1970; Stephan_etal_1981; Zilles_Rehkämper_1988,"Apes & humans; Canis; Chiroptera; Hystricomorph rodents; Insectivora & Primates; Insectivora, Scandentia & Primates; Mammals; Ovis; Primates (Pongo); Rodentia & Insectivora",primary,TRUE
+Septum | volume,Septum,volume,18,9,Baron_etal_1996; Ebinger__1974; Frahm_etal_1997; Reep_etal_2007; Schleifenbaum__1973; Stephan_etal_1970; Stephan_etal_1981; Stephan_Pirlot_1970; Zilles_Rehkämper_1988,"Canis; Chiroptera; Insectivora, Scandentia & Primates; Mammals; Ovis; Primates (Pongo); Rodentia & Insectivora",primary,TRUE
+Striatum | volume,Striatum,volume,18,9,Barger_etal_2014; Baron_etal_1996; Ebinger__1974; Frahm_etal_1997; Schleifenbaum__1973; Stephan_etal_1970; Stephan_etal_1981; Stephan_Pirlot_1970; Zilles_Rehkämper_1988,"Apes & humans; Canis; Chiroptera; Insectivora, Scandentia & Primates; Ovis; Primates (Pongo); Rodentia & Insectivora",primary,TRUE
+Brain | mass,Brain,mass,12,9,Brodmann__1913; Burger_etal_2019; Changizi_Shimojo_2005; HerculanoHouzel__2015; Karl_etal_2024; Lewitus_etal_2013; Nudo_etal_1995; Sherwood_etal_2003; Weaver__2001,"24 mammals: 9 orders / 16 families / 21 genera (Marsupialia + Eutheria); Mammalia (all orders); Mammalia, 11 spp. (opossum, rat, tree shrew, flying fox, squirrel, bushbaby, marmoset, squirrel monkey, owl monkey, cat, macaque); Mammalia, 19 spp. (monotremes, marsupials, eulipotyphlans, bats, rodents, tree shrew, carnivores, primates); mammals; Mammals; Mammals (24 species, 6 clades); Mammals (marsupial to primate); monkeys, apes, fossil hominids, humans; Rattus norvegicus (postnatal development)",primary; secondary,TRUE
+Medulla_oblongata | volume,Medulla_oblongata,volume,10,9,Baron_etal_1996; Ebinger__1974; Reep_etal_2007; Schleifenbaum__1973; Sherwood_etal_2005; Stephan_etal_1970; Stephan_etal_1981; Stephan_Pirlot_1970; Zilles_Rehkämper_1988,"Canis; Chiroptera; Insectivora, Scandentia & Primates; Mammals; Ovis; Primates (Pongo)",primary; secondary,TRUE
 Neocortex | surface area,Neocortex,surface area,36,8,__merging_cortical_areas; Campos_Welker_1976; Collins_etal_2010; Collins_etal_2016; Finlay_etal_2006; Nudo_etal_1995; Turner_etal_2016; Young_etal_2013_b,24 mammals: 9 orders / 16 families / 21 genera (Marsupialia + Eutheria); Hystricomorph rodents; Mammals; Mammals (marsupial to primate); Primates,info; method; primary; secondary,TRUE
-Septum | volume,Septum,volume,16,8,Baron_etal_1996; Ebinger__1974; Frahm_etal_1997; Reep_etal_2007; Schleifenbaum__1973; Stephan_etal_1970; Stephan_etal_1981; Zilles_Rehkämper_1988,"Canis; Chiroptera; Insectivora, Scandentia & Primates; Mammals; Ovis; Primates (Pongo); Rodentia & Insectivora",primary,TRUE
-Striatum | volume,Striatum,volume,16,8,Barger_etal_2014; Baron_etal_1996; Ebinger__1974; Frahm_etal_1997; Schleifenbaum__1973; Stephan_etal_1970; Stephan_etal_1981; Zilles_Rehkämper_1988,"Apes & humans; Canis; Chiroptera; Insectivora, Scandentia & Primates; Ovis; Primates (Pongo); Rodentia & Insectivora",primary,TRUE
-Brain | mass,Brain,mass,11,8,Brodmann__1913; Burger_etal_2019; Changizi_Shimojo_2005; HerculanoHouzel__2015; Karl_etal_2024; Lewitus_etal_2013; Nudo_etal_1995; Weaver__2001,"24 mammals: 9 orders / 16 families / 21 genera (Marsupialia + Eutheria); Mammalia (all orders); Mammalia, 11 spp. (opossum, rat, tree shrew, flying fox, squirrel, bushbaby, marmoset, squirrel monkey, owl monkey, cat, macaque); Mammalia, 19 spp. (monotremes, marsupials, eulipotyphlans, bats, rodents, tree shrew, carnivores, primates); mammals; Mammals; Mammals (24 species, 6 clades); Mammals (marsupial to primate); monkeys, apes, fossil hominids, humans; Rattus norvegicus (postnatal development)",primary; secondary,TRUE
-Medulla_oblongata | volume,Medulla_oblongata,volume,9,8,Baron_etal_1996; Ebinger__1974; Reep_etal_2007; Schleifenbaum__1973; Sherwood_etal_2005; Stephan_etal_1970; Stephan_etal_1981; Zilles_Rehkämper_1988,"Canis; Chiroptera; Insectivora, Scandentia & Primates; Mammals; Ovis; Primates (Pongo)",primary; secondary,TRUE
+Mesencephalon | volume,Mesencephalon,volume,16,8,Baron_etal_1996; Ebinger__1974; Reep_etal_2007; Schleifenbaum__1973; Stephan_etal_1970; Stephan_etal_1981; Stephan_Pirlot_1970; Zilles_Rehkämper_1988,"Canis; Chiroptera; Insectivora, Scandentia & Primates; Mammals; Ovis; Primates (Pongo)",primary,TRUE
 Brain_weight | mass,Brain_weight,mass,8,8,Bauernfeind_etal_2013; deSousa_etal_2013; Ebinger__1974; Frahm_etal_1997; Frahm_etal_1998; Schleifenbaum__1973; Stephan_etal_1981; Stephan_etal_1988,"Canis; Insectivora & Primates; Insectivora, Scandentia & Primates; Ovis; Primates; Rodentia & Insectivora",primary; secondary,TRUE
-Amygdala | volume,Amygdala,volume,16,7,Baron_etal_1996; Ebinger__1974; Frahm_etal_1997; Reep_etal_2007; Stephan_etal_1981; Stephan_etal_1987; Zilles_Rehkämper_1988,"Chiroptera; Insectivora & Primates; Insectivora–Primates (incl. Homo); Insectivora, Scandentia & Primates; Mammals; Ovis; Primates (Pongo); Rodentia & Insectivora",primary,TRUE
-Mesencephalon | volume,Mesencephalon,volume,14,7,Baron_etal_1996; Ebinger__1974; Reep_etal_2007; Schleifenbaum__1973; Stephan_etal_1970; Stephan_etal_1981; Zilles_Rehkämper_1988,"Canis; Chiroptera; Insectivora, Scandentia & Primates; Mammals; Ovis; Primates (Pongo)",primary,TRUE
-Diencephalon | volume,Diencephalon,volume,7,7,Baron_etal_1996; Ebinger__1974; Frahm_etal_1997; Schleifenbaum__1973; Stephan_etal_1970; Stephan_etal_1981; Zilles_Rehkämper_1988,"Canis; Chiroptera; Insectivora, Scandentia & Primates; Ovis; Primates (Pongo); Rodentia & Insectivora",primary,TRUE
-Schizo_cortex | volume,Schizo_cortex,volume,7,7,Baron_etal_1996; Ebinger__1974; Frahm_etal_1997; Reep_etal_2007; Schleifenbaum__1973; Stephan_etal_1970; Stephan_etal_1981,"Canis; Chiroptera; Insectivora, Scandentia & Primates; Mammals; Ovis; Rodentia & Insectivora",primary,TRUE
-Telencephalon | volume,Telencephalon,volume,7,7,Baron_etal_1996; Ebinger__1974; Frahm_etal_1997; Schleifenbaum__1973; Stephan_etal_1970; Stephan_etal_1981; Zilles_Rehkämper_1988,"Canis; Chiroptera; Insectivora, Scandentia & Primates; Ovis; Primates (Pongo); Rodentia & Insectivora",primary,TRUE
+Diencephalon | volume,Diencephalon,volume,8,8,Baron_etal_1996; Ebinger__1974; Frahm_etal_1997; Schleifenbaum__1973; Stephan_etal_1970; Stephan_etal_1981; Stephan_Pirlot_1970; Zilles_Rehkämper_1988,"Canis; Chiroptera; Insectivora, Scandentia & Primates; Ovis; Primates (Pongo); Rodentia & Insectivora",primary,TRUE
+Schizo_cortex | volume,Schizo_cortex,volume,8,8,Baron_etal_1996; Ebinger__1974; Frahm_etal_1997; Reep_etal_2007; Schleifenbaum__1973; Stephan_etal_1970; Stephan_etal_1981; Stephan_Pirlot_1970,"Canis; Chiroptera; Insectivora, Scandentia & Primates; Mammals; Ovis; Rodentia & Insectivora",primary,TRUE
+Telencephalon | volume,Telencephalon,volume,8,8,Baron_etal_1996; Ebinger__1974; Frahm_etal_1997; Schleifenbaum__1973; Stephan_etal_1970; Stephan_etal_1981; Stephan_Pirlot_1970; Zilles_Rehkämper_1988,"Canis; Chiroptera; Insectivora, Scandentia & Primates; Ovis; Primates (Pongo); Rodentia & Insectivora",derived-in-source; primary,TRUE
+Amygdala | volume,Amygdala,volume,16,7,Baron_etal_1996; Ebinger__1974; Frahm_etal_1997; Reep_etal_2007; Stephan_etal_1981; Stephan_etal_1987; Zilles_Rehkämper_1988,"Chiroptera; Insectivora & Primates; Insectivora–Primates (incl. Homo); Insectivora, Scandentia & Primates; Mammals; Ovis; Primates (Pongo); Rodentia & Insectivora",primary,TRUE
 Regional cortex | Layer,Regional cortex,Layer,12,6,__merging_cortical_layers; Hutsler_etal_2005; Jacobs_etal_2015; Jacobs_etal_2016; Johnson_etal_2016; Peruffo_etal_2019,13 mammal species; 14 mammal species; Giraffa camelopardalis; Giraffa camelopardalis and Loxodonta africana; Ovis aries; Panthera tigris altaica and Neofelis nebulosa,info; primary,TRUE
 (structure-agnostic; see data columns) | density (per mass/volume),(structure-agnostic; see data columns),density (per mass/volume),10,6,AvelinodeSouza_etal_2025; Burish_etal_2010; DosSantos_etal_2017; DosSantos_etal_2020; HerculanoHouzel_etal_2015; JardimMesseder_etal_2017,Carnivores & other companion mammals; Cetaceans & other placental mammals; Mammals; Marsupials; Primates (+ other mammals),both; primary; review,TRUE
 Regional cortex | count (number),Regional cortex,count (number),7,6,__merging_cortical_layers; Hutsler_etal_2005; Jacobs_etal_2015; Jacobs_etal_2016; Johnson_etal_2016; Peruffo_etal_2019,13 mammal species; 14 mammal species; Giraffa camelopardalis; Giraffa camelopardalis and Loxodonta africana; Ovis aries; Panthera tigris altaica and Neofelis nebulosa,info,TRUE
@@ -39,7 +39,7 @@ Regional cortex | Uncertainty,Regional cortex,Uncertainty,10,5,__merging_cortica
 (structure-agnostic; see data columns) | Taxon level,(structure-agnostic; see data columns),Taxon level,5,5,__merging_cortical_layers; Jacobs_etal_2015; Jacobs_etal_2016; Johnson_etal_2016; Peruffo_etal_2019,Giraffa camelopardalis; Giraffa camelopardalis and Loxodonta africana; Ovis aries; Panthera tigris altaica and Neofelis nebulosa,info; primary,TRUE
 (structure-agnostic; see data columns) | Value basis,(structure-agnostic; see data columns),Value basis,5,5,__merging_cortical_layers; Jacobs_etal_2015; Jacobs_etal_2016; Johnson_etal_2016; Peruffo_etal_2019,Giraffa camelopardalis; Giraffa camelopardalis and Loxodonta africana; Ovis aries; Panthera tigris altaica and Neofelis nebulosa,info,TRUE
 (structure-agnostic; see data columns) | ratio (per neuron),(structure-agnostic; see data columns),ratio (per neuron),5,5,AvelinodeSouza_etal_2025; DosSantos_etal_2017; DosSantos_etal_2020; HerculanoHouzel_etal_2015; JardimMesseder_etal_2017,Carnivores & other companion mammals; Cetaceans & other placental mammals; Mammals; Marsupials,both; primary,TRUE
-Area_striata_grey_matter | volume,Area_striata_grey_matter,volume,5,5,deSousa_etal_2009; deSousa_etal_2010; Frahm_etal_1984; Frahm_etal_1998; Zilles_Rehkämper_1988,Apes & humans + M. fascicularis; Insectivora & Primates; Primates (Pongo),primary; secondary,TRUE
+Area_striata_grey_matter | volume,Area_striata_grey_matter,volume,5,5,deSousa_etal_2009; deSousa_etal_2010; Frahm_etal_1984; Frahm_etal_1998; Zilles_Rehkämper_1988,Apes & humans + M. fascicularis; Insectivora & Primates; Primates (Pongo),primary; secondary,TRUE
 Bulbus_olfactorius | volume,Bulbus_olfactorius,volume,5,5,Baron_etal_1996; Frahm_etal_1997; Schleifenbaum__1973; Stephan_etal_1970; Stephan_etal_1981,"Canis; Chiroptera; Insectivora, Scandentia & Primates; Rodentia & Insectivora",primary,TRUE
 Regional cortex | Layer status,Regional cortex,Layer status,5,5,__merging_cortical_layers; Jacobs_etal_2015; Jacobs_etal_2016; Johnson_etal_2016; Peruffo_etal_2019,Giraffa camelopardalis; Giraffa camelopardalis and Loxodonta africana; Ovis aries; Panthera tigris altaica and Neofelis nebulosa,primary,TRUE
 Regional cortex | M1 compatibility,Regional cortex,M1 compatibility,5,5,__merging_cortical_layers; Jacobs_etal_2015; Jacobs_etal_2016; Johnson_etal_2016; Peruffo_etal_2019,Giraffa camelopardalis; Giraffa camelopardalis and Loxodonta africana; Ovis aries; Panthera tigris altaica and Neofelis nebulosa,info; primary,TRUE
@@ -50,18 +50,22 @@ Total_brain_net_volume | volume,Total_brain_net_volume,volume,5,5,Bauernfeind_et
 CerebralCortexGrey | density (per mass/volume),CerebralCortexGrey,density (per mass/volume),7,4,HerculanoHouzel__2015; Kazu_etal_2014; Kazu_etal_2015; Ribeiro_etal_2013,"Artiodactyla; Homo sapiens; Mammals (24 species, 6 clades)",primary,TRUE
 WholeBrain | count (number),WholeBrain,count (number),6,4,deSousa_etal_2010; Kazu_etal_2014; Kazu_etal_2015; Olkowicz_etal_2016,Artiodactyla; Aves; Primates,metadata; primary,TRUE
 CerebralCortexGrey | ratio (per neuron),CerebralCortexGrey,ratio (per neuron),5,4,HerculanoHouzel__2015; Kazu_etal_2014; Kazu_etal_2015; Ribeiro_etal_2013,"Artiodactyla; Homo sapiens; Mammals (24 species, 6 clades)",primary,TRUE
-Palaeocortex | volume,Palaeocortex,volume,4,4,Frahm_etal_1997; Reep_etal_2007; Stephan_etal_1981; Zilles_Rehkämper_1988,"Insectivora, Scandentia & Primates; Mammals; Primates (Pongo); Rodentia & Insectivora",primary,TRUE
+(structure-agnostic; see data columns) | time.us,(structure-agnostic; see data columns),time.us,4,4,Heffner_etal_2020; Heffner_Heffner_1992_a; Koay_etal_1998; SensoryData_compiled_check,"Mammalia (24 rows); Mammalia (4 Aves rows registered, not compiled); Mammalia (67 digitised points); Mammalia (79 markers; 34 labelled)",primary; secondary,TRUE
+Palaeocortex | volume,Palaeocortex,volume,4,4,Frahm_etal_1997; Reep_etal_2007; Stephan_etal_1981; Zilles_Rehkämper_1988,"Insectivora, Scandentia & Primates; Mammals; Primates (Pongo); Rodentia & Insectivora",primary,TRUE
 (structure-agnostic; see data columns) | volume,(structure-agnostic; see data columns),volume,11,3,Collins_etal_2016; Kochiyama_etal_2018; Kverkova_etal_2018,Homo neanderthalensis; Homo sapiens; Homo sapiens (early); Primates; Rodents (African mole-rats +),info; primary; secondary,TRUE
 Cerebellum | count (number),Cerebellum,count (number),10,3,Kazu_etal_2014; Kazu_etal_2015; Olkowicz_etal_2016,Artiodactyla; Aves,primary,TRUE
 (structure-agnostic; see data columns) | percentage (relative),(structure-agnostic; see data columns),percentage (relative),9,3,Balzeau_etal_2012; Collins_etal_2016; HerculanoHouzel_etal_2013,Homo; Mus musculus; Primates,secondary,TRUE
 Cerebellum | density (per mass/volume),Cerebellum,density (per mass/volume),8,3,Kazu_etal_2014; Kazu_etal_2015; Olkowicz_etal_2016,Artiodactyla; Aves,primary,TRUE
 Cerebellum | mass,Cerebellum,mass,8,3,Kazu_etal_2014; Kazu_etal_2015; Olkowicz_etal_2016,Artiodactyla; Aves,primary,TRUE
 Neocortex | percentage (relative),Neocortex,percentage (relative),8,3,Changizi_Shimojo_2005; Collins_etal_2016; Young_etal_2013_b,"Mammalia, 19 spp. (monotremes, marsupials, eulipotyphlans, bats, rodents, tree shrew, carnivores, primates); Primates",primary; secondary,TRUE
+(structure-agnostic; see data columns) | freq.kHz,(structure-agnostic; see data columns),freq.kHz,6,3,Heffner_etal_2020; Koay_etal_1998; SensoryData_compiled_check,"Mammalia (4 Aves rows registered, not compiled); Mammalia (67 digitised points); Mammalia (79 markers; 34 labelled)",both; secondary,TRUE
 Neocortex | size index (allometric),Neocortex,size index (allometric),6,3,__merging_cortical_areas; Lewitus_etal_2013; Lewitus_etal_2014,Mammals,primary; secondary,TRUE
 LGN | volume,LGN,volume,5,3,Bush_Allman_2004_b; deSousa_etal_2010; deSousa_etal_2013,Primates,primary,TRUE
 (structure-agnostic; see data columns) | proportion (of CNS/body/brain),(structure-agnostic; see data columns),proportion (of CNS/body/brain),4,3,Burish_etal_2010; HerculanoHouzel_etal_2015; Kverkova_etal_2018,Mammals; Primates (+ other mammals); Rodents (African mole-rats +),both; primary; review,TRUE
 (structure-agnostic; see data columns) | ratio,(structure-agnostic; see data columns),ratio,4,3,DosSantos_etal_2020; Kochiyama_etal_2018; Weaver__2001,hominoids; Homo; Homo sapiens; Mammals,info; primary; secondary,TRUE
 CerebralCortex | count (number),CerebralCortex,count (number),4,3,HerculanoHouzel__2015; Kazu_etal_2014; Kazu_etal_2015,"Artiodactyla; Mammals (24 species, 6 clades); Rattus norvegicus (postnatal development)",primary,TRUE
+OlfactoryBulb | volume,OlfactoryBulb,volume,4,3,Baron_etal_1983; Baron_etal_1987; Stephan_Pirlot_1970,"Chiroptera; Insectivora, Scandentia & Primates",primary,TRUE
+cortex | surface area,cortex,surface area,4,3,Chaplin_etal_2013; Demirci_etal_2023; VanEssen_Drury_1997,Primates,derived-in-source; primary,TRUE
 CerebralCortex | density (per mass/volume),CerebralCortex,density (per mass/volume),3,3,HerculanoHouzel__2015; Kazu_etal_2014; Kazu_etal_2015,Artiodactyla; Rattus norvegicus (postnatal development),primary,TRUE
 CerebralCortex | mass,CerebralCortex,mass,3,3,HerculanoHouzel__2015; Kazu_etal_2014; Kazu_etal_2015,Artiodactyla; Rattus norvegicus (postnatal development),primary,TRUE
 CerebralCortex | ratio (per neuron),CerebralCortex,ratio (per neuron),3,3,HerculanoHouzel__2015; Kazu_etal_2014; Kazu_etal_2015,Artiodactyla; Rattus norvegicus (postnatal development),primary,TRUE
@@ -75,7 +79,9 @@ Neocortex | Density.per_cm2,Neocortex,Density.per_cm2,8,2,Collins_etal_2016; You
 Neocortex | Density.per_g,Neocortex,Density.per_g,8,2,Collins_etal_2010; Collins_etal_2016,Primates,primary,TRUE
 FrontalGrey | volume,FrontalGrey,volume,7,2,Bush_Allman_2004_a; Smaers_etal_2011,Primates,both; primary,TRUE
 (structure-agnostic; see data columns) | Class,(structure-agnostic; see data columns),Class,5,2,Navarrete_etal_2016; Olkowicz_etal_2016,Aves; Primates,info; primary,TRUE
+(structure-agnostic; see data columns) | angle.deg,(structure-agnostic; see data columns),angle.deg,5,2,Heffner_Heffner_1992_a; SensoryData_compiled_check,"Mammalia (20 spp); Mammalia (24 rows, 23 spp; wild + domestic Norway rat separate); Mammalia (4 Aves rows registered, not compiled)",primary; secondary,TRUE
 Insula | volume,Insula,volume,5,2,Bauernfeind_etal_2013; Semendeferi_Damasio_2000,"Hominoidea (Homo, Pan, Gorilla, Pongo, Hylobates); Primates",primary,TRUE
+eye/visual system | visual acuity,eye/visual system,visual acuity,5,2,deSousa_etal_2022; Kirk_Kay_2004,Mammalia,secondary,TRUE
 (structure-agnostic; see data columns) | length,(structure-agnostic; see data columns),length,4,2,Burish_etal_2010; Heuer_etal_2019,Primates; Primates (+ other mammals),info; review,TRUE
 AccessoryBasalNucleus | volume,AccessoryBasalNucleus,volume,4,2,Barger_etal_2007; Barger_etal_2014,Apes & humans,primary,TRUE
 AmygdaloidComplex | volume,AmygdaloidComplex,volume,4,2,Barger_etal_2007; Barger_etal_2014,Apes & humans,primary,TRUE
@@ -98,12 +104,13 @@ Neocortex | length,Neocortex,length,4,2,Campos_Welker_1976; Nudo_etal_1995,24 ma
 Thalamus | volume,Thalamus,volume,4,2,Campos_Welker_1976; Stephan_etal_1981,"Hystricomorph rodents; Insectivora, Scandentia & Primates",primary,TRUE
 Behaviour | count (number),Behaviour,count (number),3,2,ManyPrimates__2022; Schniter_Penaherrera-Aguirre_2026,Primates,primary,TRUE
 CerebralCortex | surface area,CerebralCortex,surface area,3,2,Brodmann__1913; HerculanoHouzel__2015,"Mammalia (all orders); Mammals (24 species, 6 clades); Rattus norvegicus (postnatal development)",primary,TRUE
-OlfactoryBulb | volume,OlfactoryBulb,volume,3,2,Baron_etal_1983; Baron_etal_1987,"Insectivora, Scandentia & Primates",primary,TRUE
 V1 | length,V1,length,3,2,Bush_Allman_2004_b; Karl_etal_2024,Mammals (marsupial to primate),primary,TRUE
+V1 | volume,V1,volume,3,2,Bush_Allman_2004_b; Sherwood_etal_2003,,primary,TRUE
 VisualCortex | density (per mass/volume),VisualCortex,density (per mass/volume),3,2,Lewitus_etal_2013; Lewitus_etal_2014,Mammals,primary; secondary,TRUE
 whole-organism | category,whole-organism,category,3,2,MedinaGonzalez__2026; Ruf_Geiser_2015,"Birds & mammals (43 birds, 171 mammals); Mammals",primary,TRUE
 (structure-agnostic; see data columns) | Age.years,(structure-agnostic; see data columns),Age.years,2,2,deSousa_etal_2009; Turner_etal_2016,Apes & humans + M. fascicularis; Primates,info,TRUE
 (structure-agnostic; see data columns) | Ratio,(structure-agnostic; see data columns),Ratio,2,2,Heuer_etal_2019; Nudo_etal_1995,24 mammals: 9 orders / 16 families / 21 genera (Marsupialia + Eutheria); Primates,info; method,TRUE
+(structure-agnostic; see data columns) | ordinal,(structure-agnostic; see data columns),ordinal,2,2,Heffner_Heffner_1992_a; SensoryData_compiled_check,"Mammalia (24 rows); Mammalia (4 Aves rows registered, not compiled)",primary; secondary,TRUE
 (structure-agnostic; see data columns) | provenance,(structure-agnostic; see data columns),provenance,2,2,Mota_etal_2015; Zilles_etal_2013,Mammals,provenance,TRUE
 Allocortex | volume,Allocortex,volume,2,2,Ebinger__1974; Schleifenbaum__1973,Canis; Ovis,primary,TRUE
 Area_striata | volume,Area_striata,volume,2,2,Frahm_etal_1984; Stephan_etal_1981,"Insectivora & Primates; Insectivora, Scandentia & Primates",primary,TRUE
@@ -122,8 +129,8 @@ DiencephalonStriatum | ratio (per neuron),DiencephalonStriatum,ratio (per neuron
 Internal carotid artery | flow.cm3.s,Internal carotid artery,flow.cm3.s,2,2,Seymour_etal_2015; Seymour_etal_2017,Fossil Hominins; Primates & Diprotodontia,primary,TRUE
 Internal carotid artery | radius.cm,Internal carotid artery,radius.cm,2,2,Seymour_etal_2015; Seymour_etal_2017,Fossil Hominins; Primates & Diprotodontia,primary,TRUE
 Internal carotid foramen | radius.cm,Internal carotid foramen,radius.cm,2,2,Seymour_etal_2015; Seymour_etal_2017,Fossil Hominins; Primates & Diprotodontia,primary,TRUE
-Neocortex_grey_matter | volume,Neocortex_grey_matter,volume,2,2,Frahm_etal_1982; Zilles_Rehkämper_1988,"Insectivora, Scandentia & Primates; Primates (Pongo)",primary,TRUE
-Neocortex_white_matter | volume,Neocortex_white_matter,volume,2,2,Frahm_etal_1982; Zilles_Rehkämper_1988,"Insectivora, Scandentia & Primates; Primates (Pongo)",primary,TRUE
+Neocortex_grey_matter | volume,Neocortex_grey_matter,volume,2,2,Frahm_etal_1982; Zilles_Rehkämper_1988,"Insectivora, Scandentia & Primates; Primates (Pongo)",primary,TRUE
+Neocortex_white_matter | volume,Neocortex_white_matter,volume,2,2,Frahm_etal_1982; Zilles_Rehkämper_1988,"Insectivora, Scandentia & Primates; Primates (Pongo)",primary,TRUE
 Nucleus_amygdalae_basalis_pars_magnocellularis | volume,Nucleus_amygdalae_basalis_pars_magnocellularis,volume,2,2,Stephan_etal_1981; Stephan_etal_1987,"Insectivora & Primates; Insectivora, Scandentia & Primates",primary,TRUE
 Nucleus_tractus_olfactorius | volume,Nucleus_tractus_olfactorius,volume,2,2,Stephan_etal_1981; Stephan_etal_1987,"Insectivora & Primates; Insectivora, Scandentia & Primates",primary,TRUE
 Nucleus_vestibularis_descendens | volume,Nucleus_vestibularis_descendens,volume,2,2,Matano__1986; Stephan_etal_1981,"Insectivora, Scandentia & Primates; Scandentia & Primates",both; primary,TRUE
@@ -135,12 +142,12 @@ OlfactoryBulb | density (per mass/volume),OlfactoryBulb,density (per mass/volume
 OlfactoryBulb | mass,OlfactoryBulb,mass,2,2,Kazu_etal_2014; Kazu_etal_2015,Artiodactyla,primary,TRUE
 OlfactoryBulb | ratio (per neuron),OlfactoryBulb,ratio (per neuron),2,2,Kazu_etal_2014; Kazu_etal_2015,Artiodactyla,primary,TRUE
 Olfactory_allocortex | volume,Olfactory_allocortex,volume,2,2,Ebinger__1974; Schleifenbaum__1973,Canis; Ovis,primary,TRUE
-Pallidum | volume,Pallidum,volume,2,2,Stephan_etal_1981; Zilles_Rehkämper_1988,"Insectivora, Scandentia & Primates; Primates (Pongo)",primary,TRUE
+Pallidum | volume,Pallidum,volume,2,2,Stephan_etal_1981; Zilles_Rehkämper_1988,"Insectivora, Scandentia & Primates; Primates (Pongo)",primary,TRUE
 PonsMedulla | count (number),PonsMedulla,count (number),2,2,Kazu_etal_2014; Kazu_etal_2015,Artiodactyla,primary,TRUE
 PonsMedulla | density (per mass/volume),PonsMedulla,density (per mass/volume),2,2,Kazu_etal_2014; Kazu_etal_2015,Artiodactyla,primary,TRUE
 PonsMedulla | mass,PonsMedulla,mass,2,2,Kazu_etal_2014; Kazu_etal_2015,Artiodactyla,primary,TRUE
 PonsMedulla | ratio (per neuron),PonsMedulla,ratio (per neuron),2,2,Kazu_etal_2014; Kazu_etal_2015,Artiodactyla,primary,TRUE
-Prepiriform_cortex | volume,Prepiriform_cortex,volume,2,2,Baron_etal_1987; Zilles_Rehkämper_1988,"Insectivora, Scandentia & Primates; Primates (Pongo)",primary,TRUE
+Prepiriform_cortex | volume,Prepiriform_cortex,volume,2,2,Baron_etal_1987; Zilles_Rehkämper_1988,"Insectivora, Scandentia & Primates; Primates (Pongo)",primary,TRUE
 RoB | count (number),RoB,count (number),2,2,Kazu_etal_2014; Kazu_etal_2015,Artiodactyla,primary,TRUE
 RoB | density (per mass/volume),RoB,density (per mass/volume),2,2,Kazu_etal_2014; Kazu_etal_2015,Artiodactyla,primary,TRUE
 RoB | mass,RoB,mass,2,2,Kazu_etal_2014; Kazu_etal_2015,Artiodactyla,primary,TRUE
@@ -149,6 +156,7 @@ Total_brain_volume | volume,Total_brain_volume,volume,2,2,Ebinger__1974; Schleif
 Ventricle | volume,Ventricle,volume,2,2,Ebinger__1974; Lewitus_etal_2013,Mammals; Ovis,primary; secondary,TRUE
 WholeBrain | ECV.ml,WholeBrain,ECV.ml,2,2,Caspar_etal_2022; Heldstab_etal_2016,Primates,primary,TRUE
 WholeBrain | ratio (per neuron),WholeBrain,ratio (per neuron),2,2,Kazu_etal_2014; Kazu_etal_2015,Artiodactyla,primary,TRUE
+retina | acuity.cdeg,retina,acuity.cdeg,2,2,Heffner_Heffner_1992_a; Veilleux_Kirk_2014,Mammalia (14 spp); Mammalia (91 spp),both,TRUE
 whole body | mass,whole body,mass,2,2,Genoud_etal_2018; Heuer_etal_2023,Mammalia; Mammals,secondary,TRUE
 (structure-agnostic; see data columns) | value,(structure-agnostic; see data columns),value,32,1,Lewitus_etal_2014,Mammals,primary,FALSE
 Diet | percentage (relative),Diet,percentage (relative),10,1,Wilman_etal_2014,mammals,primary,FALSE
@@ -190,6 +198,7 @@ hand (forefinger) | length,hand (forefinger),length,4,1,Liu_etal_2016,Primates,s
 whole-organism | Time.h,whole-organism,Time.h,4,1,Ruf_Geiser_2015,"Birds & mammals (43 birds, 171 mammals)",primary,FALSE
 (structure-agnostic; see data columns) | Flag,(structure-agnostic; see data columns),Flag,3,1,Hutsler_etal_2005,13 mammal species; 14 mammal species,note,FALSE
 (structure-agnostic; see data columns) | Region,(structure-agnostic; see data columns),Region,3,1,Hutsler_etal_2005,13 mammal species; 14 mammal species,info; primary,FALSE
+(structure-agnostic; see data columns) | binary,(structure-agnostic; see data columns),binary,3,1,SensoryData_compiled_check,"Mammalia (4 Aves rows registered, not compiled)",secondary,FALSE
 (structure-agnostic; see data columns) | regression,(structure-agnostic; see data columns),regression,3,1,Balzeau_etal_2012,Homo,secondary,FALSE
 Activity | binary,Activity,binary,3,1,Wilman_etal_2014,mammals,info,FALSE
 BasolateralDivision | volume,BasolateralDivision,volume,3,1,Barger_etal_2007,Apes & humans,primary,FALSE
@@ -217,6 +226,8 @@ whole-organism | Sleep.text,whole-organism,Sleep.text,3,1,Capellini_etal_2008,Ma
 (structure-agnostic; see data columns) | Common name,(structure-agnostic; see data columns),Common name,2,1,Hutsler_etal_2005,14 mammal species,info,FALSE
 (structure-agnostic; see data columns) | Scientific name,(structure-agnostic; see data columns),Scientific name,2,1,Hutsler_etal_2005,14 mammal species,info,FALSE
 (structure-agnostic; see data columns) | Structure,(structure-agnostic; see data columns),Structure,2,1,Kaufman__2004,Mammals,primary,FALSE
+(structure-agnostic; see data columns) | activity pattern,(structure-agnostic; see data columns),activity pattern,2,1,Kirk_Kay_2004,Mammalia,secondary,FALSE
+(structure-agnostic; see data columns) | categorical,(structure-agnostic; see data columns),categorical,2,1,Veilleux_Kirk_2014,Mammalia (subset),secondary,FALSE
 (structure-agnostic; see data columns) | time,(structure-agnostic; see data columns),time,2,1,Upham_etal_2019,mammals,data,FALSE
 AccessoryOlfactoryBulb | per mille (relative),AccessoryOlfactoryBulb,per mille (relative),2,1,Stephan_etal_1982,"Insectivora, Scandentia & Primates",primary,FALSE
 AccessoryOlfactoryBulb | volume,AccessoryOlfactoryBulb,volume,2,1,Stephan_etal_1982,"Insectivora, Scandentia & Primates",primary,FALSE
@@ -224,6 +235,7 @@ Agranular_insular_cortex | volume,Agranular_insular_cortex,volume,2,1,Bauernfein
 AssociationCortex | volume,AssociationCortex,volume,2,1,Smaers_etal_2017,Primates,both,FALSE
 Behaviour | size index (allometric),Behaviour,size index (allometric),2,1,Caspar_etal_2022,Primates,primary,FALSE
 Body | Temperature.C,Body,Temperature.C,2,1,Ruf_Geiser_2015,"Birds & mammals (43 birds, 171 mammals)",primary,FALSE
+Body | VO2max,Body,VO2max,2,1,Weibel_etal_2004,Mammalia,primary,FALSE
 Brainstem | density (per mass/volume),Brainstem,density (per mass/volume),2,1,Olkowicz_etal_2016,Aves,primary,FALSE
 Brainstem | mass,Brainstem,mass,2,1,Olkowicz_etal_2016,Aves,primary,FALSE
 Caudate-putamen-accumbens | count (number),Caudate-putamen-accumbens,count (number),2,1,Campos_Welker_1976,Hystricomorph rodents,primary,FALSE
@@ -258,6 +270,7 @@ M1 / V1 / frontal cortex | surface area,M1 / V1 / frontal cortex,surface area,2,
 M1 / V1 / frontal cortex | volume,M1 / V1 / frontal cortex,volume,2,1,Nguyen_etal_2019,Felidae,info; primary,FALSE
 M1 | mass,M1,mass,2,1,Young_etal_2013,Primates,info; primary,FALSE
 M1 | surface area,M1,surface area,2,1,Young_etal_2013,Primates,info; primary,FALSE
+M1 | volume,M1,volume,2,1,Sherwood_etal_2003,,primary,FALSE
 M1_cortex | GLI,M1_cortex,GLI,2,1,Sherwood_etal_2004_I,,primary; secondary,FALSE
 M1_layerII | GLI,M1_layerII,GLI,2,1,Sherwood_etal_2004_I,,primary; secondary,FALSE
 M1_layerIII | GLI,M1_layerIII,GLI,2,1,Sherwood_etal_2004_I,,primary; secondary,FALSE
@@ -318,6 +331,7 @@ whole-organism | Time.days,whole-organism,Time.days,2,1,Eagleman_Vaughn_2021,"Pr
 (structure-agnostic; see data columns) | Conflict,(structure-agnostic; see data columns),Conflict,1,1,Hutsler_etal_2005,14 mammal species,note,FALSE
 (structure-agnostic; see data columns) | CorrectionFactor,(structure-agnostic; see data columns),CorrectionFactor,1,1,deSousa_etal_2010,,primary,FALSE
 (structure-agnostic; see data columns) | Diet,(structure-agnostic; see data columns),Diet,1,1,Bush_Allman_2004_a,,secondary,FALSE
+(structure-agnostic; see data columns) | Genus,(structure-agnostic; see data columns),Genus,1,1,Deaner_etal_2006,Primates,primary,FALSE
 (structure-agnostic; see data columns) | Group,(structure-agnostic; see data columns),Group,1,1,Bush_Allman_2003,,primary,FALSE
 (structure-agnostic; see data columns) | GroupSize,(structure-agnostic; see data columns),GroupSize,1,1,Bush_Allman_2004_a,,secondary,FALSE
 (structure-agnostic; see data columns) | Grouping,(structure-agnostic; see data columns),Grouping,1,1,Heiss_etal_2004,Homo sapiens,primary,FALSE
@@ -336,8 +350,13 @@ whole-organism | Time.days,whole-organism,Time.days,2,1,Eagleman_Vaughn_2021,"Pr
 (structure-agnostic; see data columns) | Time.Mya,(structure-agnostic; see data columns),Time.Mya,1,1,Eagleman_Vaughn_2021,"Primates (25 species, incl. Homo)",info,FALSE
 (structure-agnostic; see data columns) | Units,(structure-agnostic; see data columns),Units,1,1,BarbeitoAndrés_etal_2019,,primary,FALSE
 (structure-agnostic; see data columns) | Value,(structure-agnostic; see data columns),Value,1,1,BarbeitoAndrés_etal_2019,,primary,FALSE
+(structure-agnostic; see data columns) | acuity.cdeg,(structure-agnostic; see data columns),acuity.cdeg,1,1,SensoryData_compiled_check,"Mammalia (4 Aves rows registered, not compiled)",secondary,FALSE
+(structure-agnostic; see data columns) | dexterity,(structure-agnostic; see data columns),dexterity,1,1,Sherwood_etal_2003,,secondary,FALSE
+(structure-agnostic; see data columns) | level.dB,(structure-agnostic; see data columns),level.dB,1,1,SensoryData_compiled_check,"Mammalia (4 Aves rows registered, not compiled)",secondary,FALSE
+(structure-agnostic; see data columns) | range.octaves,(structure-agnostic; see data columns),range.octaves,1,1,SensoryData_compiled_check,"Mammalia (4 Aves rows registered, not compiled)",secondary,FALSE
 (structure-agnostic; see data columns) | residual,(structure-agnostic; see data columns),residual,1,1,Burger_etal_2019,mammals,flagged,FALSE
 (structure-agnostic; see data columns) | size index (allometric),(structure-agnostic; see data columns),size index (allometric),1,1,deSousa_etal_2009,Apes & humans + M. fascicularis,info,FALSE
+(structure-agnostic; see data columns) | speed.kph,(structure-agnostic; see data columns),speed.kph,1,1,Veilleux_Kirk_2014,Mammalia (subset; ecological comparison species only),secondary,FALSE
 A1 | percentage (relative),A1,percentage (relative),1,1,Changizi_Shimojo_2005,"Mammalia, 16 spp. (monotremes, marsupials, eulipotyphlans, bats, rodents, tree shrew, primates)",primary,FALSE
 AccessoryOlfactoryBulb | size index (allometric),AccessoryOlfactoryBulb,size index (allometric),1,1,Stephan_etal_1982,"Insectivora, Scandentia & Primates",primary,FALSE
 AccessoryOlfactoryBulb_layer_6 | percentage (relative),AccessoryOlfactoryBulb_layer_6,percentage (relative),1,1,Stephan_etal_1982,"Insectivora, Scandentia & Primates",primary,FALSE
@@ -364,12 +383,16 @@ BasalNucleusMagnocellular | volume,BasalNucleusMagnocellular,volume,1,1,Stephan_
 Basal_nuclei | volume,Basal_nuclei,volume,1,1,Ebinger__1974,Ovis,primary,FALSE
 Behaviour | ManipulationComplexity,Behaviour,ManipulationComplexity,1,1,Heldstab_etal_2016,Primates,primary,FALSE
 Body | length,Body,length,1,1,Wimberly_etal_2021,mammals,secondary,FALSE
+Body | muscle types,Body,muscle types,1,1,Changizi__2003,Mammalia,secondary,FALSE
 Brain | Brain.size.mixed,Brain,Brain.size.mixed,1,1,Zilles_etal_2013,Mammals,secondary,FALSE
 Brain | CMR.ml/g/min,Brain,CMR.ml/g/min,1,1,Karbowski__2007,Mammals,secondary,FALSE
+Brain | EQ,Brain,EQ,1,1,Sherwood_etal_2003,,derived-in-source,FALSE
 Brain | Rate.ml/min,Brain,Rate.ml/min,1,1,Karbowski__2007,Mammals,secondary,FALSE
 Brain | Rate.umol/min,Brain,Rate.umol/min,1,1,Karbowski__2007,Mammals,secondary,FALSE
+Brain | encephalization,Brain,encephalization,1,1,Changizi__2003,Mammalia,derived-in-source,FALSE
 Brain | residual,Brain,residual,1,1,Burger_etal_2019,mammals,flagged,FALSE
 Brain | size index (allometric),Brain,size index (allometric),1,1,Changizi_Shimojo_2005,"Mammalia, 19 spp. (monotremes, marsupials, eulipotyphlans, bats, rodents, tree shrew, carnivores, primates)",secondary,FALSE
+Brain | volume,Brain,volume,1,1,Stephan_Pirlot_1970,Chiroptera,derived-in-source,FALSE
 Brain_weight | size index (allometric),Brain_weight,size index (allometric),1,1,Stephan_etal_1988,"Insectivora, Scandentia & Primates",primary,FALSE
 Bulbus_olfactorius_accessorius | volume,Bulbus_olfactorius_accessorius,volume,1,1,Stephan_etal_1981,"Insectivora, Scandentia & Primates",primary,FALSE
 CA1 | volume,CA1,volume,1,1,Frahm_Zilles_1994,Insectivora & Primates,primary,FALSE
@@ -403,7 +426,7 @@ DeepCerebellarNuclei | volume,DeepCerebellarNuclei,volume,1,1,Ashwell__2020,Mamm
 Diagonal_band_of_Broca | volume,Diagonal_band_of_Broca,volume,1,1,Ebinger__1974,Ovis,primary,FALSE
 Diencephalon excluding globus pallidus | volume,Diencephalon excluding globus pallidus,volume,1,1,Reep_etal_2007,Mammals,primary,FALSE
 Diet | count (number),Diet,count (number),1,1,Wilman_etal_2014,mammals,primary,FALSE
-EntorhinalCortex | volume,EntorhinalCortex,volume,1,1,Zilles_Rehkämper_1988,Primates (Pongo),primary,FALSE
+EntorhinalCortex | volume,EntorhinalCortex,volume,1,1,Zilles_Rehkämper_1988,Primates (Pongo),primary,FALSE
 Epithalamus | volume,Epithalamus,volume,1,1,Stephan_etal_1981,"Insectivora, Scandentia & Primates",primary,FALSE
 FST | surface area,FST,surface area,1,1,Krubitzer_Kaas_1990,Primates,primary,FALSE
 Fascia_dentata | volume,Fascia_dentata,volume,1,1,Frahm_Zilles_1994,Insectivora & Primates,primary,FALSE
@@ -490,7 +513,7 @@ Parieto-TemporalLobe | percentage (relative),Parieto-TemporalLobe,percentage (re
 Parieto-TemporalLobe | regression,Parieto-TemporalLobe,regression,1,1,Balzeau_etal_2012,Homo,secondary,FALSE
 Parieto-TemporalLobe | surface area,Parieto-TemporalLobe,surface area,1,1,Balzeau_etal_2012,Homo,secondary,FALSE
 Periventricular_matrix | volume,Periventricular_matrix,volume,1,1,Schleifenbaum__1973,Canis,primary,FALSE
-Pons | volume,Pons,volume,1,1,Zilles_Rehkämper_1988,Primates (Pongo),primary,FALSE
+Pons | volume,Pons,volume,1,1,Zilles_Rehkämper_1988,Primates (Pongo),primary,FALSE
 PontinePrecerebellarNuclei | volume,PontinePrecerebellarNuclei,volume,1,1,Ashwell__2020,Mammalia,primary,FALSE
 Prefrontal cortex | surface area,Prefrontal cortex,surface area,1,1,__merging_cortical_areas,Primates,secondary,FALSE
 PrefrontalCortex | surface area,PrefrontalCortex,surface area,1,1,Smaers_etal_2017,Primates,both,FALSE
@@ -518,7 +541,6 @@ Tractus_opticus | volume,Tractus_opticus,volume,1,1,Stephan_etal_1981,"Insectivo
 Tuberculum_olfactorium | volume,Tuberculum_olfactorium,volume,1,1,Ebinger__1974,Ovis,primary,FALSE
 V1 | percentage (relative),V1,percentage (relative),1,1,Changizi_Shimojo_2005,"Mammalia, 16 spp. (monotremes, marsupials, eulipotyphlans, bats, rodents, tree shrew, primates)",primary,FALSE
 V1 | surface area,V1,surface area,1,1,Bush_Allman_2004_b,,primary,FALSE
-V1 | volume,V1,volume,1,1,Bush_Allman_2004_b,,primary,FALSE
 V1_AreaStriata | count (number),V1_AreaStriata,count (number),1,1,deSousa_etal_2010,Primates,metadata,FALSE
 V2 | percentage (relative),V2,percentage (relative),1,1,Changizi_Shimojo_2005,"Mammalia, 16 spp. (monotremes, marsupials, eulipotyphlans, bats, rodents, tree shrew, primates)",primary,FALSE
 Ventral_pons | volume,Ventral_pons,volume,1,1,Matano_etal_1985_b,"Insectivora, Scandentia & Primates",primary,FALSE
@@ -532,15 +554,21 @@ VestibularNucleusMedial | volume,VestibularNucleusMedial,volume,1,1,Baron_etal_1
 VestibularNucleusSuperior | volume,VestibularNucleusSuperior,volume,1,1,Baron_etal_1988,"Insectivora, Scandentia & Primates",primary,FALSE
 VisualArea17 | surface area,VisualArea17,surface area,1,1,Krubitzer_Kaas_1990,Primates,primary,FALSE
 VisualArea18 | surface area,VisualArea18,surface area,1,1,Krubitzer_Kaas_1990,Primates,primary,FALSE
+behavior | repertoire size,behavior,repertoire size,1,1,Changizi__2003,Mammalia,secondary,FALSE
+behavior/cognition | cognitive performance rank,behavior/cognition,cognitive performance rank,1,1,Deaner_etal_2006,Primates,secondary,FALSE
+behavior/cognition | paradigm,behavior/cognition,paradigm,1,1,Deaner_etal_2006,Primates,info,FALSE
 cerebral cortex (sulcal) | percentage (relative),cerebral cortex (sulcal),percentage (relative),1,1,Brodmann__1913,Mammalia (all orders),secondary,FALSE
 cerebral cortex (sulcal) | surface area,cerebral cortex (sulcal),surface area,1,1,Brodmann__1913,Mammalia (all orders),primary,FALSE
 cerebral hemisphere | mass,cerebral hemisphere,mass,1,1,Brodmann__1913,Mammalia (all orders),primary,FALSE
 cerebral hemispheres | volume,cerebral hemispheres,volume,1,1,Semendeferi_Damasio_2000,"Hominoidea (Homo, Pan, Gorilla, Pongo, Hylobates)",primary,FALSE
+cerebrum | volume,cerebrum,volume,1,1,Demirci_etal_2023,Primates,primary,FALSE
 core | volume,core,volume,1,1,Semendeferi_Damasio_2000,"Hominoidea (Homo, Pan, Gorilla, Pongo, Hylobates)",primary,FALSE
 cortical area | Density.N_mm2,cortical area,Density.N_mm2,1,1,HerculanoHouzel_etal_2013,Mus musculus,primary,FALSE
 cortical area | Density.N_mm3,cortical area,Density.N_mm3,1,1,HerculanoHouzel_etal_2013,Mus musculus,primary,FALSE
 cortical area | length,cortical area,length,1,1,HerculanoHouzel_etal_2013,Mus musculus,primary,FALSE
 cortical group | count (number),cortical group,count (number),1,1,HerculanoHouzel_etal_2013,Mus musculus,primary,FALSE
+eye | length,eye,length,1,1,Veilleux_Kirk_2014,Mammalia (91 spp),secondary,FALSE
+eye/visual system | temporal resolution,eye/visual system,temporal resolution,1,1,Haarlem_etal_2026,Metazoa,secondary,FALSE
 frontal lobe | volume,frontal lobe,volume,1,1,Semendeferi_Damasio_2000,"Hominoidea (Homo, Pan, Gorilla, Pongo, Hylobates)",primary,FALSE
 hand | manipulability,hand,manipulability,1,1,Liu_etal_2016,Primates,secondary,FALSE
 hand | workspace,hand,workspace,1,1,Liu_etal_2016,Primates,secondary,FALSE
@@ -549,7 +577,9 @@ limb | angle.deg,limb,angle.deg,1,1,MedinaGonzalez__2026,Mammals,info,FALSE
 limb | category,limb,category,1,1,MedinaGonzalez__2026,Mammals,primary,FALSE
 limb | percentage (relative),limb,percentage (relative),1,1,MedinaGonzalez__2026,Mammals,primary,FALSE
 medial cerebellum | volume,medial cerebellum,volume,1,1,Smaers_etal_2018,Mammalia (primates + outgroups),secondary,FALSE
+palaeocortex+amygdala | volume,palaeocortex+amygdala,volume,1,1,Stephan_Pirlot_1970,Chiroptera,primary,FALSE
 parieto-occipital | volume,parieto-occipital,volume,1,1,Semendeferi_Damasio_2000,"Hominoidea (Homo, Pan, Gorilla, Pongo, Hylobates)",primary,FALSE
+retina | angle.deg,retina,angle.deg,1,1,Heffner_Heffner_1992_a,Mammalia (13 spp),primary,FALSE
 see structure col | CMR.umol/g/min,see structure col,CMR.umol/g/min,1,1,Karbowski__2007,Mammals,secondary,FALSE
 spinal cord / M1 output | grade,spinal cord / M1 output,grade,1,1,Bortoff_Strick_1993,Primates,primary,FALSE
 spinal cord / M1 output | inference,spinal cord / M1 output,inference,1,1,Bortoff_Strick_1993,Primates,primary,FALSE

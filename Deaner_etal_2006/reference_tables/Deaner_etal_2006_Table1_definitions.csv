@@ -1,0 +1,7 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Genus,primate genus,,Genus,,primary,Primates,Deaner_etal_2006_Table1,genus-level data,
+procedure,experimental procedure id 1-30,,,,info,Primates,Deaner_etal_2006_Table1,per-procedure primary studies described in the paper's sections,
+paradigm,cognitive paradigm (from the paper's sections),behavior/cognition,paradigm,,info,Primates,Deaner_etal_2006_Table1,DP/PS/ID/TU/DL/RL/OD/SO/DR,
+rank,performance rank (lower = better; fractional = tie),behavior/cognition,cognitive performance rank,rank,secondary,Primates,Deaner_etal_2006_Table1,meta-analytic,
+note,overlap + role warning,,,,provenance,Primates,Deaner_etal_2006_Table1,,
+source,registry item key,,,,provenance,Primates,Deaner_etal_2006_Table1,,

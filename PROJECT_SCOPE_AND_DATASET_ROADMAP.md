@@ -711,7 +711,7 @@ Per `__HOWTO_build_a_dataset_file.md`, and spelled out in each folder's README:
    standardized-term rows) — only after the source file exists, or the merge errors.
 6. Re-run the merge's compile script and check species resolve and no double-counting.
 
-## Current order of work (refreshed 2026-08-25; audit in `_checks/registry_audit_20260825.md`)
+## Current order of work (refreshed 2026-08-31; audit in `_checks/registry_audit_20260831.md`)
 
 1. **Registry hygiene — refreshed 2026-08-30 (`_checks/name_soundness_audit_20260830.md`
    is now the canonical list).** Done since 08-25: Weaver rows fixed (→ Weaver__2001),
@@ -721,7 +721,9 @@ Per `__HOWTO_build_a_dataset_file.md`, and spelled out in each folder's README:
    one-sitting Excel queue: register Hutsler ×4 + `Stephan_etal_1987_Table2` + Deaner 2007
    (+ stubs Reader_Laland 2002 / Weaver 2005 / Changizi_He 2005 when adopted); fix the
    VanEssen row (citation carries a reference-manager artifact author "New Collective, A.";
-   name should be `VanEssen_Drury_1997_Table1` — verify in EndNote); Item numbers for
+   name should be `VanEssen_Drury_1997_Table1` — **verified against the PDF 2026-08-31**: two
+   authors only, artifact confirmed; folder products already carry the corrected name, rename the
+   row to match); Item numbers for
    `Shultz_Dunbar_2010_`, `Stephan_Pirlot_1970_`, `Chaplin_etal_2013_`, `Veilleux_Kirk_2014_`;
    repair the corrupted `Young_etal_2013_xml:space="preserve">b_Table1` key; the Olkowicz
    figshare/PNAS key decision (`_checks/script_repairs_20260829.md`); remove or purpose
@@ -742,10 +744,19 @@ Per `__HOWTO_build_a_dataset_file.md`, and spelled out in each folder's README:
    Kaskan compilation (`…-restricted/unpublished_data/____Unpublished__ProjectKaskan/Project
    Kaskan remeasuring/M1 surface.xlsx`) quotes published values whose primaries have no public
    source folder yet — build from the primaries (verify citations in EndNote first):
-   **Chaplin et al. 2013** (MRI cortical surfaces: marmoset, capuchin, macaque), **Demirci et al.
-   2023** (cortical surfaces: macaque, chimp, human; 2-hemisphere values — halve for the merge's
-   per-hemisphere convention), and **Van Essen & Drury 1997** (human V1 L/R + neocortex; chase its
-   cited Filiminoff 1932 / Stensaas 1974 human V1 primaries). ~~Smaers 2017 Brodmann-1909
+   ~~**Demirci et al. 2023**~~ — **BUILT 2026-08-31** (`Demirci_etal_2023_Fig.1`: SA+V for all 12
+   species from the full-res Fig. 1; both-hemisphere values, halve SA at wiring; R rerun pending);
+   ~~**Van Essen & Drury 1997**~~ — **BUILT 2026-08-31** (`VanEssen_Drury_1997_Table1`: neocortex +
+   5 lobes + sulcal/gyral L/R + text V1 L/R; per-hemisphere as published; R rerun + row rename
+   pending; still chase its cited Filiminoff 1932 / Stensaas 1974 human V1 primaries);
+   ~~**Chaplin et al. 2013**~~ — **BUILT 2026-08-31** (`Chaplin_etal_2013_ResultsText`: the
+   candidate is the J Neurosci differential-expansion paper, doi 10.1523/JNEUROSCI.2909-13.2013 —
+   owner repointed the row + swapped the PDF same day; marmoset 963 / capuchin 6,796 / macaque
+   11,876 mm², n=1 each, mid-thickness not pial, macaque = reused F99 atlas specimen; set the
+   row's Item number to `ResultsText`, then R rerun. The *other* Chaplin 2013 — marmoset V1
+   retinotopy, doi 10.1002/cne.23215, V1 totals 193/214 mm² — is out of the queue unless its V1
+   values are wanted as a separate row).
+   ~~Smaers 2017 Brodmann-1909
    revisit~~ — **DONE 2026-08-25**: `Smaers_etal_2017_TableS1part2` wired as a SECONDARY
    (Brodmann-1909-via-Smaers; supersedable by a future 1909 primary build) with three new regional
    terms, and `Brodmann__1913_Table1` wired as a primary whole-cortex source (34 taxa, one human

@@ -1,0 +1,13 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,species binomial,,Species,,primary,Primates,Demirci_etal_2023_Fig.1,'Homo Sapiens' as printed normalized to 'Homo sapiens',
+common_name,common name as printed in Fig. 1 (lowercased),,,,info,Primates,Demirci_etal_2023_Fig.1,,
+size_group,authors' surface-area bin (Small/Medium/Large/X-Large),,,,info,Primates,Demirci_etal_2023_Fig.1,from Fig. 1 layout,
+n,number of subjects scanned (Table 1),,,n,info,Primates,Demirci_etal_2023_Fig.1,Fig. 1 prints one value regardless of n,
+sex_MF,"sex, or M:F ratio for multi-subject species (Table 1)",,,,info,Primates,Demirci_etal_2023_Fig.1,,
+age_years,age or age span in years (Table 1),,,,info,Primates,Demirci_etal_2023_Fig.1,,
+subject_status,postmortem or in vivo at scan (Table 1),,,,info,Primates,Demirci_etal_2023_Fig.1,,
+specimen_source,imaging data source (Table 1),,,,info,Primates,Demirci_etal_2023_Fig.1,PBB / PRIME-DE / NCBR / ABIDE-I,
+total_surface_area_cm2,"total pial cortical surface area, BOTH hemispheres",cortex,surface area,value cm2,primary,Primates,Demirci_etal_2023_Fig.1,HALVE for per-hemisphere merge convention; MRI surface reconstruction,
+cerebral_volume_cm3,"cerebral volume, both hemispheres",cerebrum,volume,value cm3,primary,Primates,Demirci_etal_2023_Fig.1,cerebellum and brain stem removed,
+note,two-hemisphere warning + representative-value caveat,,,,provenance,Primates,Demirci_etal_2023_Fig.1,,
+source,registry item key,,,,provenance,Primates,Demirci_etal_2023_Fig.1,,

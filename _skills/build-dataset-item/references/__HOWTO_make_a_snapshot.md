@@ -5,7 +5,7 @@ comparable format. For every table we keep four files in the paper's folder:
 
 | file | what it is |
 |---|---|
-| `..._snapshot.csv` *(or `.xlsx`)* | **the snapshot** — a frozen, faithful copy of the table *as published* |
+| `..._snapshot.csv` *(or `.xlsx`, or a born-digital file's original extension)* | **the snapshot** — a frozen, faithful copy of the table *as published* |
 | `....csv` | the cleaned, analysis-ready data ("use this") |
 | `....R` | the script that turns the snapshot into the clean CSV |
 | `....ReadMe.md` | a short note on where the table came from and what was done |
@@ -49,6 +49,38 @@ The most common mistake is saving the snapshot *after* already renaming headers
 or stripping symbols — then it no longer matches the paper, and the whole point
 (comparison to source) is lost. Capture first, clean second.
 
+## Choosing the format (evidence, not product)
+
+**The snapshot is evidence, not product.** Choose the capture that minimizes
+transformation between the publication and the file on disk; all
+standardization happens later, in the scripted build. Fidelity is measured
+against the published page — never against an extraction tool's output.
+
+A format conversion is an edit, and the snapshot exists to precede all edits.
+Converting an Excel capture to a "standard" CSV flattens merged headers,
+coerces types, and drops footnote marks and formatting that carry meaning —
+the file stops being evidence and becomes a derived product pretending to be
+one. So there is no standard snapshot *format*, only a standard *rule*, by
+source type:
+
+1. **Born digital** — the journal or repository supplies the data as
+   `.csv` / `.xlsx` / `.tsv`: the untouched download **is** the snapshot.
+   Copy-rename it to `<Paper>_<locus>_snapshot.<original ext>`, bytes
+   untouched — never open-and-resave, never convert. Record the original
+   filename, URL and download date in the ReadMe.
+2. **Printed table** (PDF or scan) — transcribe it:
+   - flat layout → **`_snapshot.csv`** (the default: plain text, diffable);
+   - layout that CSV cannot hold losslessly (multi-row or merged headers,
+     superscript footnote marks, formatting that carries meaning) →
+     **`_snapshot.xlsx`**. Excel here is not a compromise; it is the more
+     faithful medium.
+3. **No published table** — the values live in a figure or in prose: build a
+   *constructed snapshot* (see *When there is no table*, below).
+
+Never add a conversion step to make snapshots uniform: it duplicates the
+file — and worse, it leaves two frozen copies, and two frozen sources is one
+too many.
+
 ## What the snapshot must keep (fidelity checklist)
 
 Keep everything that is in the printed table, even if it looks messy:
@@ -69,7 +101,8 @@ later, in the script. Not here.
 
 1. **Direct download.** If the journal offers the table/supplement as `.xlsx`
    or `.csv`, download it and use that file as the snapshot. Easiest and most
-   faithful.
+   faithful. Copy-rename it to `..._snapshot.<original ext>` with the bytes
+   untouched — never open-and-resave or convert (see *Choosing the format*).
 
 2. **Web-scrape the publisher's HTML.** Pull the table from the open-access
    HTML version (PMC, journal site) in R with `rvest` — handy when the PDF won't
@@ -97,6 +130,22 @@ later, in the script. Not here.
 Whatever the method, the result is the same kind of file: a faithful, frozen
 copy you can compare to the paper.
 
+## When there is no table (constructed snapshots)
+
+Sometimes the values are published only in a figure or in running text. The
+snapshot is then a table **we** construct — name it by its locus:
+`<Paper>_Figure2_snapshot.csv`, `<Paper>_text_snapshot.csv`. Because the
+tabular form itself is our work, the extraction method is part of the
+provenance and the ReadMe **must** record it:
+
+- **from a figure** — the tool (e.g. WebPlotDigitizer), the calibration
+  points, and the axis assumptions;
+- **from text** — which section and sentences the values come from, quoted or
+  cited precisely.
+
+The fidelity checklist still applies to the values themselves (units,
+footnote marks, `n.a.` as printed). Everything downstream is unchanged.
+
 ## File naming
 
 Inside the paper's folder (e.g. `JardimMesseder_etal_2017/`):
@@ -107,6 +156,9 @@ Inside the paper's folder (e.g. `JardimMesseder_etal_2017/`):
 <Paper>_<Table>.R                # snapshot -> clean
 <Paper>_<Table>.ReadMe.md        # source + steps
 ```
+
+`<Table>` is the **locus**: `Table1`, `TableS2`, `Figure2`, `text`, or the
+original dataset name for a born-digital download.
 
 The ReadMe follows the team pipeline:
 `Source → Snapshot → Data readable → (Transpose / Variables / Species notes) →

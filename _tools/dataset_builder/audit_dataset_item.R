@@ -1,11 +1,11 @@
 ## audit_dataset_item.R — pre-build audit against the 4-file convention.
 ##
 ## Checks (per paper folder):
-##   snapshot   — exactly one *_snapshot.csv (frozen source)
+##   snapshot   — at least one *_snapshot data file (csv/xlsx/xls/tsv; frozen source)
 ##   csv        — at least one analysis CSV (non-snapshot *.csv)
 ##   readme     — at least one *.README.md or README.md
 ##   definitions— at least one reference_tables/*_definitions.csv
-##   orphan_tsv — no *.tsv files inside the paper folder
+##   orphan_tsv — no *.tsv files inside the paper folder (snapshot TSVs excepted)
 ##                (public TSVs belong in __Public/comparative-data/, not here)
 ##
 ## Returns a named list:
@@ -33,14 +33,14 @@ audit_dataset_item <- function(
   )
 
   ## ---- classify files -------------------------------------------------------
-  is_snapshot    <- grepl("_snapshot\\.csv$",   rel, ignore.case = TRUE)
+  is_snapshot    <- grepl("_snapshot\\.(csv|xlsx|xls|tsv)$", rel, ignore.case = TRUE)
   is_csv         <- grepl("\\.csv$",            rel, ignore.case = TRUE) & !is_snapshot
   is_readme      <- grepl("(^|/)README\\.md$",  rel, ignore.case = TRUE) |
                     grepl("\\.README\\.md$",     rel, ignore.case = TRUE)
   is_definitions <- grepl(
     "^reference_tables/.*_definitions\\.csv$",  rel, ignore.case = TRUE
   )
-  is_tsv         <- grepl("\\.tsv$",            rel, ignore.case = TRUE)
+  is_tsv         <- grepl("\\.tsv$",            rel, ignore.case = TRUE) & !is_snapshot
 
   ## ---- 4-file convention checks ---------------------------------------------
   convention <- data.frame(

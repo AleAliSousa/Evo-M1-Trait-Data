@@ -95,12 +95,12 @@ build_dataset_item <- function(
     item_dir,
     recursive = TRUE, pattern = "\\.csv$", full.names = TRUE
   )
-  csv_files <- csv_files[!grepl("_snapshot\\.csv$", csv_files, ignore.case = TRUE)]
+  csv_files <- csv_files[!grepl("_snapshot\\.(csv|xlsx|xls|tsv)$", csv_files, ignore.case = TRUE)]
 
   ## frozen source (snapshot CSV)
   snapshot_files <- list.files(
     item_dir,
-    recursive = TRUE, pattern = "_snapshot\\.csv$", full.names = TRUE
+    recursive = TRUE, pattern = "_snapshot\\.(csv|xlsx|xls|tsv)$", full.names = TRUE
   )
 
   ## public TSV lives in __Public/comparative-data/, not inside the paper folder

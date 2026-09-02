@@ -17,6 +17,9 @@ read (not re-derived) whenever a step below needs more than a sentence:
   folder layout, reformat script pattern, units, species harmonisation,
   comparison/QA, definitions schema, primary/secondary flagging, merges
 
+The repo copies under `_skills/build-dataset-item/references/` are canonical;
+when the repo is mounted, read those — an installed bundle may lag behind them.
+
 ## Tool layer
 
 ```r
@@ -32,12 +35,14 @@ build_dataset_item(item_dir, item_name, dry_run = FALSE)        # 3. build + val
 
 1. **Audit** — `audit_dataset_item(item_dir)`. Confirms the 4-file convention
    (snapshot / CSV / README / definitions) before you touch the build script,
-   and flags any `.tsv` sitting inside the paper folder as an orphan (public
-   TSVs belong in `__Public/comparative-data/`, never in the paper folder).
-2. **Snapshot** — only if the source is printed/scanned (see house rule below).
-   Follow `__HOWTO_make_a_snapshot.md`: freeze the table exactly as printed
-   *before* any cleaning — headers, footnote marks, `n.a.`/blank cells, row
-   order, all preserved.
+   and flags any `.tsv` sitting inside the paper folder — other than a
+   `*_snapshot.tsv` frozen source — as an orphan (public TSVs belong in
+   `__Public/comparative-data/`, never in the paper folder).
+2. **Snapshot** — transcribe only printed/scanned sources; a born-digital
+   download is copy-renamed untouched (house rule below). Follow
+   `__HOWTO_make_a_snapshot.md`: freeze the table exactly as printed *before*
+   any cleaning — headers, footnote marks, `n.a.`/blank cells, row order, all
+   preserved.
 3. **Build** — write/extend `<Folder>_Table<N>.R` per §3 of the build HOWTO:
    read the frozen source, clean, convert to project units, keep the printed
    species name, write the analysis CSV, look up `Item encoded` in
@@ -71,11 +76,16 @@ build_dataset_item(item_dir, item_name, dry_run = FALSE)        # 3. build + val
   points at the wrong item after the next registry edit. `validate_dataset_item()`
   and `build_dataset_item()` both resolve by name for this reason — do the
   same in any ad-hoc script.
-- **Digital-native sources skip the snapshot.** If the source is a
-  journal-supplied CSV/XLSX you can download and script directly, the
-  untouched download *is* the frozen copy — do not make a derived
-  `_snapshot`; a re-save only duplicates the file and risks silent drift
-  (type coercion, re-encoding). Snapshot only printed/scanned/OCR sources.
+- **Digital-native sources skip the transcription, never the suffix.** If
+  the source is a journal-supplied CSV/XLSX/TSV you can download and script
+  directly, the untouched download *is* the frozen copy: copy-rename it to
+  `<Paper>_<locus>_snapshot.<original ext>`, bytes untouched — never
+  open-and-resave or convert; a re-save risks silent drift (type coercion,
+  re-encoding). Transcribe only printed/scanned/OCR sources. In every case
+  the snapshot is **evidence, not product**: choose the capture that
+  minimizes transformation from the publication, and standardize downstream
+  in the build script (`references/__HOWTO_make_a_snapshot.md`,
+  §"Choosing the format").
 - **Check disk state before building — `__ReadMe.xlsx` is edited concurrently.**
   Excel and an assistant session can both have the workbook open; whoever
   saves last wins silently, and columns can shift between edits (a flag set

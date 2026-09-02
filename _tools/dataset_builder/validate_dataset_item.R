@@ -5,7 +5,7 @@
 ##   2. public TSV exists
 ##   3. README exists
 ##   4. definitions file exists
-##   5. frozen source (snapshot CSV) exists
+##   5. frozen source (snapshot data file) exists
 ##   6. registry row found by Item name (never row number)
 ##   7. TSV file name == paste0(item_encoded, ".tsv")  +  trailing-_ guard
 
@@ -14,7 +14,7 @@ validate_dataset_item <- function(
     tsv_file,
     readme_file,
     definitions_file,
-    frozen_source_file = NULL,   ## *_snapshot.csv path
+    frozen_source_file = NULL,   ## *_snapshot.(csv|xlsx|xls|tsv) path
     registry          = NULL,    ## data.frame already read from __ReadMe.xlsx
     item_name         = NULL,    ## character — looked up by name, never row number
     item_encoded      = NULL     ## character — expected TSV stem; also guards trailing _

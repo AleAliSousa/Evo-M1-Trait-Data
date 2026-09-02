@@ -45,7 +45,8 @@ build_dataset_item(item_dir, item_name, dry_run = FALSE)
 2. **tsv** — public TSV exists in `__Public/comparative-data/`
 3. **readme** — README.md (or *.README.md) exists inside the paper folder
 4. **definitions** — `reference_tables/*_definitions.csv` exists
-5. **frozen_source** — `*_snapshot.csv` (frozen source) exists inside the paper folder
+5. **frozen_source** — a `*_snapshot.(csv|xlsx|xls|tsv)` file exists inside the paper
+   folder; born-digital downloads are copy-renamed with bytes untouched, never converted
 6. **registry_row** — item is found in `__ReadMe.xlsx` by `Item name` (never row number)
 7. **tsv_name_match** — TSV file name equals `paste0(Item encoded, ".tsv")`
    - includes **no_trailing_underscore** guard: an `Item encoded` ending with `_`
@@ -79,5 +80,5 @@ _skills/build-dataset-item/references/__HOWTO_make_a_snapshot.md
 - The build-script picker excludes both `*compare*` and `*_extract_snapshot.R`
   files; extract-snapshot scripts are frozen-source helpers, not item builders.
 - Public TSVs live in `__Public/comparative-data/`, not inside paper folders.
-  `audit_dataset_item()` flags any `.tsv` found inside a paper folder as an
-  orphan.
+  `audit_dataset_item()` flags any `.tsv` found inside a paper folder (other
+  than a `*_snapshot.tsv` frozen source) as an orphan.

@@ -1,0 +1,7 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,species binomial AS PUBLISHED,,Species,,primary,Mammalia,Weibel_etal_2004_Table1,"Equus caballlus (sic), Helogale pervula (sic), Agouti paca (historical)",
+n,number of individuals,,,n,info,Mammalia,Weibel_etal_2004_Table1,,
+body_mass_kg,body mass,body,mass,value kg,primary,Mammalia,Weibel_etal_2004_Table1,,
+vo2max_ml_min,maximal oxygen consumption,body,VO2max,value ml/min,primary,Mammalia,Weibel_etal_2004_Table1,Table 1 chipmunk/molerat/rat/mongoose/guineapig block carries a published misalignment - see note col; prefer A.1,
+note,per-row caveat,,,,provenance,Mammalia,Weibel_etal_2004_Table1,species-level pooled,
+source,registry item key,,,,provenance,Mammalia,Weibel_etal_2004_Table1,,

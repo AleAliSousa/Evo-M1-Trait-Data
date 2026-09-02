@@ -21,11 +21,13 @@ cannot be split into modern species without fabricating its composition.
 | `SCHEMA.md` | authoritative column contracts and merge consumer rules |
 | `SPECIMEN_INFORMATION_BOUNDARY.md` | source/access decision, fossil distinction, split architecture, and external-link plan |
 | `specimen_source_registry.csv` | evidence-source inventory with publication status, access class, specimen kind, location, and split action |
+| `via_data_source_registry.csv` | mixed secondary/author-supplied datasets, independence class, and default merge treatment |
 | `specimen_crosswalk.csv` | public identity rows, one per individual × source label, with explicit `specimen_kind` |
 | `taxon_concept_registry.csv` | broad, narrow, fossil-grade, extant, and indeterminate taxon concepts |
 | `specimen_external_links.csv` | initially empty table for later museum, catalog, studbook, and biodiversity-database links |
 | `split_manifest_2026-08-19.csv` | artifact-level record of the initial move/sanitize decisions and row conservation checks |
 | `pongo_provenance_audit.csv` | public-source Pongo entries classified as specimen or taxon concept |
+| `kaas_young_collins_provenance_audit.csv` | Kaas-team Young/Collins/Turner specimen overlaps and merge treatment |
 | `fossil_specimen_crosswalk.csv` | published Kochiyama/Weaver fossil aliases, explicitly typed as fossils |
 | `fossil_specimen_cerebellum_comparison.csv` | published fossil method-offset comparison |
 
@@ -51,6 +53,12 @@ depends on a private catalog, workbook, or correspondence.
 The public crosswalk must work by itself. A restricted overlay can be added
 only in an explicitly restricted build. Merely mounting the companion
 repository must not silently change output.
+
+The via-data registry handles a different provenance problem: a paper can be
+mostly secondary while also being the first public route to values supplied by
+an earlier measurement team. Such a publication is not automatically a new
+independent team. Genuine gap-filling values retain both their measuring team
+and their route of access.
 
 ## Fossils
 
@@ -92,6 +100,15 @@ By contrast, a Zilles/Rehkämper value printed only as `Pongo sp.` remains
 attached to `Pongo pygmaeus (s.l.)`. DeCasien's promotion of that value to
 modern `Pongo pygmaeus` must not be accepted silently. Catalog-only matches
 and metadata stay in the restricted overlay and full evidence note.
+
+## Public Kaas-team example
+
+Young 2013 reports species-level M1 rows without case numbers. Numerical fingerprints and source
+institutions link its owl monkey and normal baboons to Collins/Young/Turner cases, but those Young
+rows remain `probable`; later rows that print case numbers are `matched`. Its three-galago mean is
+explicitly `partial_overlap` and cannot be decomposed. The Young/Collins chimpanzee link is also
+high-confidence `probable`, so consumers must not count it as an independent animal by default.
+See `kaas_young_collins_provenance_audit.csv` and the corresponding public specimen note.
 
 ## Adding a case
 

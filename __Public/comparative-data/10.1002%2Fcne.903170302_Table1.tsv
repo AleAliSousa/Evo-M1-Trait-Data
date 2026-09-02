@@ -1,0 +1,25 @@
+"Species_HH1992a"	"symbol"	"binomial"	"binomial_basis"	"sound_localization_threshold_deg"	"threshold_footnote"	"threshold_source"	"delta_t_us"	"field_of_best_vision_deg"	"visual_acuity_cdeg"	"acuity_footnote"	"acuity_source"	"binocular_field_deg"	"trophic_level"
+"dolphin"	"Do"	"Tursiops truncatus"	"cited_primary"	1.1	"2"	"Renaud and Popper ('75)"	80			""	""		1
+"elephant"	"E"	"Elephas maximus"	"cited_primary_inferred"	1.2	"3"	"R. Heffner and Heffner ('82)"	3350			""	""	80	3
+"man"	"M"	"Homo sapiens"	"unambiguous"	1.3	"4"	"R. Heffner and Heffner ('88c)"	875	0.7	67	"24"	"Cavonius and Robbins ('73)"	105	2
+"seal"	"S"	"Phoca vitulina"	"cited_primary"	3.2	"5"	"Terhune ('74)"	378		3.6	"25"	"Schusterman ('72)"		1
+"opossum"	"Op"	"Didelphis virginiana"	"stated_in_text"	4.6	"6"	"Ravizza and Masterton ('72)"	273	15.8	1.8	"26"	"Average of ganglion cell density and evoked potential measure, Silveira, et al., ('82)"	77	4
+"pig"	"P"	"Sus scrofa"	"stated_in_text"	4.6	"7"	"R. Heffner and Heffner ('89)"	498	11.6	8	""	"Calculated based on peak density of ganglion cells except as otherwise noted"	47	2
+"macaque"	"Mk"	"Macaca sp."	"ambiguous"	5	"8"	"Brown, et al., ('80), H. Heffner and Heffner ('90)"	424	4.3	46.8	"27"	"Cowey and Ellis ('67) and Cavonius and Robbins ('73)"	111	2
+"cat"	"C"	"Felis catus"	"stated_in_text"	5.7	"9"	"Casseday and Neff ('73), R. Heffner and Heffner ('88c)"	258	4.9	9	"28"	"Belleville and Wilkinson ('86) and Jacobson, et al., ('76)"	105	1
+"dog"	"D"	"Canis familiaris"	"stated_in_text"	8	"10"	"R. Heffner and Heffner (in press)"	435	5.1	8.3	""	"Calculated based on peak density of ganglion cells except as otherwise noted"	75	1
+"ferret"	"F"	"Mustela putorius"	"cited_primary"	8.5	"11"	"Kavanagh and Kelly ('87)"	180			""	""		1
+"sea lion"	"Sl"	"Zalophus californianus"	"cited_primary"	8.8	"12"	"Moore ('75)"	392		4.3	"25"	"Schusterman ('72)"		1
+"norway rat domestic"	"Rd"	"Rattus norvegicus"	"stated_in_text"	11.1	"13"	"Kavanagh and Kelly ('86), Kelly ('80)"	150			""	""	76	4
+"least weasel"	"W"	"Mustela nivalis"	"stated_in_text"	12	"14"	"R. Heffner and Heffner ('87)"	76	23	2.2	""	"Calculated based on peak density of ganglion cells except as otherwise noted"	69	1
+"norway rat wild"	"Rw"	"Rattus norvegicus"	"stated_in_text"	12.8	"15"	"H. Heffner and Heffner ('85)"	130	52.8	1.5	""	"Calculated based on peak density of ganglion cells except as otherwise noted"	35	4
+"goat"	"G"	"Capra hircus"	"cited_primary"	18	"10"	"R. Heffner and Heffner (in press)"	680		12.5	"29"	"Based on peak density of ganglion cells in Hughes and Witteridge ('73)"	23	5
+"wood rat"	"Wr"	"Neotoma floridana"	"stated_in_text"	19	"16"	"R. Heffner and Heffner ('88a)"	115	156.2	2.3	""	"Calculated based on peak density of ganglion cells except as otherwise noted"	85	5
+"hedgehog"	"Hh"	"Paraechinus hypomelas"	"cited_primary"	19	"17"	"Chambers ('71)"	167			""	""	35	2
+"spiny mouse"	"Sp"	"Acomys cahirinus"	"cited_primary"	19	"18"	"Mooney ('91)"	64			""	""	75	5
+"grasshopper mouse"	"Gm"	"Onychomys leucogaster"	"stated_in_text"	19.3	"16"	"R. Heffner and Heffner ('88a)"	61	68.5	2.3	""	"Calculated based on peak density of ganglion cells except as otherwise noted"	52	2
+"horse"	"H"	"Equus caballus"	"cited_primary_inferred"	25	"19"	"H. Heffner and Heffner ('84)"	684			""	""	28	5
+"cow"	"Cw"	"Bos taurus"	"stated_in_text"	30	"10"	"R. Heffner and Heffner (in press)"	1281	132	12.4	""	"Calculated based on peak density of ganglion cells except as otherwise noted"	20	5
+"gerbil"	"Gr"	"Meriones unguiculatus"	"stated_in_text"	27	"20"	"R. Heffner and Heffner ('88b)"	87	200	2	"30"	"Baker and Emerson ('83)"	48	4
+"kangaroo rat"	"Kr"	"Dipodomys merriami"	"cited_primary_inferred"	27	"21"	"H. Heffner and Masterton ('80)"	90			""	""	20	5
+"gopher"	"Go"	"Geomys bursarius"	"stated_in_text"	90	"22"	"continuous noise bursts, R. Heffner and Heffner ('90)"	111	166	1.7	""	"Calculated based on peak density of ganglion cells except as otherwise noted"	4	5

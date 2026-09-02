@@ -14,6 +14,9 @@ two-layer specimen / taxon-concept model).
 - `EarlyHomoSapiens_fossil_vs_extant_specimen_note.md` — why individually
   named fossils remain specimens but are explicitly filterable from historical
   biological specimens and living reference samples.
+- `Kaas_Young_Collins_specimen_overlap_note.md` — public evidence connecting
+  Young 2013 M1 rows to Collins/Young/Turner cases, including the probable
+  single Texas chimpanzee and the partially overlapping galago mean.
 
 Restricted case notes now include Bush-Allman accession mapping,
 Gorilla/Tarsius catalog interpretation, and the full mixed-source Pongo audit.

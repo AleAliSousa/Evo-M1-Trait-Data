@@ -1,247 +1,247 @@
 Species,Region,Measure,Units,Value,n_studies,Compilations,Volume_term
-Canis lupus familiaris,Whole_brain,CBF,mL/100g/min,30.8,1,Kaufman_2004,Total_brain_net_volume_Vol.mm3
-Canis lupus familiaris,Whole_brain,CMRO2,umol/100g/min,105.75,2,Karbowski_2007; Kaufman_2004,Total_brain_net_volume_Vol.mm3
-Canis lupus familiaris,Whole_brain,CMRgl,umol/100g/min,44.5,1,Kaufman_2004,Total_brain_net_volume_Vol.mm3
-Capra aegagrus hircus,Whole_brain,CMRgl,umol/100g/min,35,1,Karbowski_2007,Total_brain_net_volume_Vol.mm3
-Equus caballus,Whole_brain,CBF,mL/100g/min,65.4,2,Kaufman_2004,Total_brain_net_volume_Vol.mm3
-Felis catus,Amygdala,CMRgl,umol/100g/min,44,2,Karbowski_2007,Amygdala_Vol.mm3
-Felis catus,Basal_ganglia,CMRgl,umol/100g/min,54.55,2,Kaufman_2004,NA
-Felis catus,Brain_stem,CMRgl,umol/100g/min,135.5,2,Karbowski_2007,NA
-Felis catus,Caudate_nucleus,CMRgl,umol/100g/min,79,3,Karbowski_2007,NA
-Felis catus,Cerebellum,CMRgl,umol/100g/min,55.833,3,Karbowski_2007; Kaufman_2004,Cerebellum_Vol.mm3
-Felis catus,Cingulate_cortex,CMRgl,umol/100g/min,58.5,2,Karbowski_2007; Kaufman_2004,NA
-Felis catus,Frontal_cortex,CMRgl,umol/100g/min,49,1,Kaufman_2004,NA
-Felis catus,Hippocampus,CMRgl,umol/100g/min,52.6,5,Karbowski_2007; Kaufman_2004,Hippocampus_Vol.mm3
-Felis catus,Hypothalamus,CMRgl,umol/100g/min,66.5,2,Karbowski_2007,NA
-Felis catus,Neocortex,CMRgl,umol/100g/min,75.767,6,Karbowski_2007; Kaufman_2004,Neocortex_Vol.mm3
-Felis catus,Occipital_cortex,CMRgl,umol/100g/min,92,2,Karbowski_2007; Kaufman_2004,NA
-Felis catus,Pallidum,CMRgl,umol/100g/min,39.333,3,Karbowski_2007,Pallidum_Vol.mm3
-Felis catus,Parietal_cortex,CMRgl,umol/100g/min,57,2,Karbowski_2007; Kaufman_2004,NA
-Felis catus,Sensorimotor_cortex,CMRgl,umol/100g/min,64,1,Karbowski_2007,NA
-Felis catus,Septum,CMRgl,umol/100g/min,38,2,Karbowski_2007,NA
-Felis catus,Substantia_nigra,CMRgl,umol/100g/min,40,3,Karbowski_2007,NA
-Felis catus,Temporal_cortex,CMRgl,umol/100g/min,91.5,4,Karbowski_2007; Kaufman_2004,NA
-Felis catus,Thalamus,CMRgl,umol/100g/min,79.08,5,Karbowski_2007; Kaufman_2004,Thalamus_Vol.mm3
-Felis catus,Visual_cortex,CMRgl,umol/100g/min,78.667,3,Karbowski_2007,NA
-Felis catus,White_matter,CMRgl,umol/100g/min,16.667,3,Karbowski_2007; Kaufman_2004,NA
-Felis catus,Whole_brain,CMRO2,umol/100g/min,5.8,1,Karbowski_2007,Total_brain_net_volume_Vol.mm3
-Felis catus,Whole_brain,CMRgl,umol/100g/min,69,1,Karbowski_2007,Total_brain_net_volume_Vol.mm3
-Homo sapiens,Amygdala,CMRgl,umol/100g/min,21.6,2,Heiss_etal_2004; Karbowski_2007,Amygdala_Vol.mm3
-Homo sapiens,Auditory_cortex,CMRgl,umol/100g/min,40.225,4,Kaufman_2004,NA
+Canis lupus familiaris,Whole_brain,CBF,mL/100g/min,30.8,1,Kaufman__2004,Total_brain_net_volume_Vol.mm3
+Canis lupus familiaris,Whole_brain,CMRO2,umol/100g/min,105.75,2,Karbowski__2007; Kaufman__2004,Total_brain_net_volume_Vol.mm3
+Canis lupus familiaris,Whole_brain,CMRgl,umol/100g/min,44.5,1,Kaufman__2004,Total_brain_net_volume_Vol.mm3
+Capra aegagrus hircus,Whole_brain,CMRgl,umol/100g/min,35,1,Karbowski__2007,Total_brain_net_volume_Vol.mm3
+Equus caballus,Whole_brain,CBF,mL/100g/min,65.4,2,Kaufman__2004,Total_brain_net_volume_Vol.mm3
+Felis catus,Amygdala,CMRgl,umol/100g/min,44,2,Karbowski__2007,Amygdala_Vol.mm3
+Felis catus,Basal_ganglia,CMRgl,umol/100g/min,54.55,2,Kaufman__2004,NA
+Felis catus,Brain_stem,CMRgl,umol/100g/min,135.5,2,Karbowski__2007,NA
+Felis catus,Caudate_nucleus,CMRgl,umol/100g/min,79,3,Karbowski__2007,NA
+Felis catus,Cerebellum,CMRgl,umol/100g/min,55.833,3,Karbowski__2007; Kaufman__2004,Cerebellum_Vol.mm3
+Felis catus,Cingulate_cortex,CMRgl,umol/100g/min,58.5,2,Karbowski__2007; Kaufman__2004,NA
+Felis catus,Frontal_cortex,CMRgl,umol/100g/min,49,1,Kaufman__2004,NA
+Felis catus,Hippocampus,CMRgl,umol/100g/min,52.6,5,Karbowski__2007; Kaufman__2004,Hippocampus_Vol.mm3
+Felis catus,Hypothalamus,CMRgl,umol/100g/min,66.5,2,Karbowski__2007,NA
+Felis catus,Neocortex,CMRgl,umol/100g/min,75.767,6,Karbowski__2007; Kaufman__2004,Neocortex_Vol.mm3
+Felis catus,Occipital_cortex,CMRgl,umol/100g/min,92,2,Karbowski__2007; Kaufman__2004,NA
+Felis catus,Pallidum,CMRgl,umol/100g/min,39.333,3,Karbowski__2007,Pallidum_Vol.mm3
+Felis catus,Parietal_cortex,CMRgl,umol/100g/min,57,2,Karbowski__2007; Kaufman__2004,NA
+Felis catus,Sensorimotor_cortex,CMRgl,umol/100g/min,64,1,Karbowski__2007,NA
+Felis catus,Septum,CMRgl,umol/100g/min,38,2,Karbowski__2007,NA
+Felis catus,Substantia_nigra,CMRgl,umol/100g/min,40,3,Karbowski__2007,NA
+Felis catus,Temporal_cortex,CMRgl,umol/100g/min,91.5,4,Karbowski__2007; Kaufman__2004,NA
+Felis catus,Thalamus,CMRgl,umol/100g/min,79.08,5,Karbowski__2007; Kaufman__2004,Thalamus_Vol.mm3
+Felis catus,Visual_cortex,CMRgl,umol/100g/min,78.667,3,Karbowski__2007,NA
+Felis catus,White_matter,CMRgl,umol/100g/min,16.667,3,Karbowski__2007; Kaufman__2004,NA
+Felis catus,Whole_brain,CMRO2,umol/100g/min,5.8,1,Karbowski__2007,Total_brain_net_volume_Vol.mm3
+Felis catus,Whole_brain,CMRgl,umol/100g/min,69,1,Karbowski__2007,Total_brain_net_volume_Vol.mm3
+Homo sapiens,Amygdala,CMRgl,umol/100g/min,21.6,2,Heiss_etal_2004; Karbowski__2007,Amygdala_Vol.mm3
+Homo sapiens,Auditory_cortex,CMRgl,umol/100g/min,40.225,4,Kaufman__2004,NA
 Homo sapiens,Basal_forebrain,CMRgl,umol/100g/min,21.4,1,Heiss_etal_2004,NA
-Homo sapiens,Basal_ganglia,CBF,mL/100g/min,45.75,4,Kaufman_2004,NA
-Homo sapiens,Basal_ganglia,CMRO2,umol/100g/min,169.645,11,Kaufman_2004,NA
-Homo sapiens,Basal_ganglia,CMRgl,umol/100g/min,36.885,30,Kaufman_2004,NA
+Homo sapiens,Basal_ganglia,CBF,mL/100g/min,45.75,4,Kaufman__2004,NA
+Homo sapiens,Basal_ganglia,CMRO2,umol/100g/min,169.645,11,Kaufman__2004,NA
+Homo sapiens,Basal_ganglia,CMRgl,umol/100g/min,36.885,30,Kaufman__2004,NA
 Homo sapiens,Capsula_interna,CMRgl,umol/100g/min,25.5,1,Heiss_etal_2004,NA
-Homo sapiens,Caudate_nucleus,CMRgl,umol/100g/min,34.65,4,Heiss_etal_2004; Karbowski_2007,NA
+Homo sapiens,Caudate_nucleus,CMRgl,umol/100g/min,34.65,4,Heiss_etal_2004; Karbowski__2007,NA
 Homo sapiens,Centrum_semiovale,CMRgl,umol/100g/min,12.3,1,Heiss_etal_2004,NA
 Homo sapiens,Cerebellar_cortex,CMRgl,umol/100g/min,29.8,1,Heiss_etal_2004,NA
-Homo sapiens,Cerebellum,CBF,mL/100g/min,57.74,5,Kaufman_2004,Cerebellum_Vol.mm3
-Homo sapiens,Cerebellum,CMRO2,umol/100g/min,183.425,8,Kaufman_2004,Cerebellum_Vol.mm3
-Homo sapiens,Cerebellum,CMRgl,umol/100g/min,32.352,24,Karbowski_2007; Kaufman_2004,Cerebellum_Vol.mm3
-Homo sapiens,Cingulate_cortex,CMRgl,umol/100g/min,36.343,15,Karbowski_2007; Kaufman_2004,NA
+Homo sapiens,Cerebellum,CBF,mL/100g/min,57.74,5,Kaufman__2004,Cerebellum_Vol.mm3
+Homo sapiens,Cerebellum,CMRO2,umol/100g/min,183.425,8,Kaufman__2004,Cerebellum_Vol.mm3
+Homo sapiens,Cerebellum,CMRgl,umol/100g/min,32.352,24,Karbowski__2007; Kaufman__2004,Cerebellum_Vol.mm3
+Homo sapiens,Cingulate_cortex,CMRgl,umol/100g/min,36.343,15,Karbowski__2007; Kaufman__2004,NA
 Homo sapiens,Colliculus_inferior,CMRgl,umol/100g/min,31.4,1,Heiss_etal_2004,NA
 Homo sapiens,Colliculus_superior,CMRgl,umol/100g/min,24.4,1,Heiss_etal_2004,NA
 Homo sapiens,Corpus_geniculatum_laterale,CMRgl,umol/100g/min,23.1,1,Heiss_etal_2004,Corpus_geniculatum_laterale_Vol.mm3
 Homo sapiens,Corpus_geniculatum_mediale,CMRgl,umol/100g/min,20.2,1,Heiss_etal_2004,NA
-Homo sapiens,Frontal_cortex,CMRO2,umol/100g/min,148.809,17,Kaufman_2004,NA
-Homo sapiens,Frontal_cortex,CMRgl,umol/100g/min,36.138,42,Heiss_etal_2004; Karbowski_2007; Kaufman_2004,NA
-Homo sapiens,Hippocampus,CBF,mL/100g/min,47.4,2,Kaufman_2004,Hippocampus_Vol.mm3
-Homo sapiens,Hippocampus,CMRO2,umol/100g/min,137.1,1,Kaufman_2004,Hippocampus_Vol.mm3
-Homo sapiens,Hippocampus,CMRgl,umol/100g/min,28.591,11,Heiss_etal_2004; Karbowski_2007; Kaufman_2004,Hippocampus_Vol.mm3
-Homo sapiens,Hypothalamus,CMRgl,umol/100g/min,27,1,Karbowski_2007,NA
+Homo sapiens,Frontal_cortex,CMRO2,umol/100g/min,148.809,17,Kaufman__2004,NA
+Homo sapiens,Frontal_cortex,CMRgl,umol/100g/min,36.138,42,Heiss_etal_2004; Karbowski__2007; Kaufman__2004,NA
+Homo sapiens,Hippocampus,CBF,mL/100g/min,47.4,2,Kaufman__2004,Hippocampus_Vol.mm3
+Homo sapiens,Hippocampus,CMRO2,umol/100g/min,137.1,1,Kaufman__2004,Hippocampus_Vol.mm3
+Homo sapiens,Hippocampus,CMRgl,umol/100g/min,28.591,11,Heiss_etal_2004; Karbowski__2007; Kaufman__2004,Hippocampus_Vol.mm3
+Homo sapiens,Hypothalamus,CMRgl,umol/100g/min,27,1,Karbowski__2007,NA
 Homo sapiens,Insula,CMRgl,umol/100g/min,30.3,1,Heiss_etal_2004,NA
-Homo sapiens,Neocortex,CBF,mL/100g/min,44.61,10,Kaufman_2004,Neocortex_Vol.mm3
-Homo sapiens,Neocortex,CMRO2,umol/100g/min,150.738,13,Kaufman_2004,Neocortex_Vol.mm3
-Homo sapiens,Neocortex,CMRgl,umol/100g/min,35.467,50,Heiss_etal_2004; Karbowski_2007; Kaufman_2004,Neocortex_Vol.mm3
+Homo sapiens,Neocortex,CBF,mL/100g/min,44.61,10,Kaufman__2004,Neocortex_Vol.mm3
+Homo sapiens,Neocortex,CMRO2,umol/100g/min,150.738,13,Kaufman__2004,Neocortex_Vol.mm3
+Homo sapiens,Neocortex,CMRgl,umol/100g/min,35.467,50,Heiss_etal_2004; Karbowski__2007; Kaufman__2004,Neocortex_Vol.mm3
 Homo sapiens,Nucleus_accumbens,CMRgl,umol/100g/min,32.3,1,Heiss_etal_2004,NA
 Homo sapiens,Nucleus_dentatus_cerebelli,CMRgl,umol/100g/min,24.2,1,Heiss_etal_2004,NA
 Homo sapiens,Nucleus_ruber,CMRgl,umol/100g/min,31,1,Heiss_etal_2004,NA
 Homo sapiens,Nucleus_subthalamicus,CMRgl,umol/100g/min,25.2,1,Heiss_etal_2004,Nucleus_subthalamicus_Vol.mm3
-Homo sapiens,Occipital_cortex,CMRO2,umol/100g/min,167.317,18,Kaufman_2004,NA
-Homo sapiens,Occipital_cortex,CMRgl,umol/100g/min,37.117,33,Heiss_etal_2004; Karbowski_2007; Kaufman_2004,NA
+Homo sapiens,Occipital_cortex,CMRO2,umol/100g/min,167.317,18,Kaufman__2004,NA
+Homo sapiens,Occipital_cortex,CMRgl,umol/100g/min,37.117,33,Heiss_etal_2004; Karbowski__2007; Kaufman__2004,NA
 Homo sapiens,Pallidum,CMRgl,umol/100g/min,21.9,1,Heiss_etal_2004,Pallidum_Vol.mm3
-Homo sapiens,Parietal_cortex,CMRO2,umol/100g/min,155.247,15,Kaufman_2004,NA
-Homo sapiens,Parietal_cortex,CMRgl,umol/100g/min,36.143,37,Heiss_etal_2004; Karbowski_2007; Kaufman_2004,NA
-Homo sapiens,Prefrontal_cortex,CMRgl,umol/100g/min,33,1,Karbowski_2007,NA
+Homo sapiens,Parietal_cortex,CMRO2,umol/100g/min,155.247,15,Kaufman__2004,NA
+Homo sapiens,Parietal_cortex,CMRgl,umol/100g/min,36.143,37,Heiss_etal_2004; Karbowski__2007; Kaufman__2004,NA
+Homo sapiens,Prefrontal_cortex,CMRgl,umol/100g/min,33,1,Karbowski__2007,NA
 Homo sapiens,Putamen,CMRgl,umol/100g/min,40.2,1,Heiss_etal_2004,NA
-Homo sapiens,Sensorimotor_cortex,CMRO2,umol/100g/min,148.434,5,Kaufman_2004,NA
-Homo sapiens,Sensorimotor_cortex,CMRgl,umol/100g/min,36.919,11,Karbowski_2007; Kaufman_2004,NA
-Homo sapiens,Substantia_nigra,CMRgl,umol/100g/min,24.4,2,Heiss_etal_2004; Karbowski_2007,NA
-Homo sapiens,Temporal_cortex,CMRO2,umol/100g/min,155.104,13,Kaufman_2004,NA
-Homo sapiens,Temporal_cortex,CMRgl,umol/100g/min,32.955,40,Heiss_etal_2004; Karbowski_2007; Kaufman_2004,NA
-Homo sapiens,Thalamus,CBF,mL/100g/min,54.237,8,Kaufman_2004,Thalamus_Vol.mm3
-Homo sapiens,Thalamus,CMRO2,umol/100g/min,177.311,9,Kaufman_2004,Thalamus_Vol.mm3
-Homo sapiens,Thalamus,CMRgl,umol/100g/min,36.141,34,Karbowski_2007; Kaufman_2004,Thalamus_Vol.mm3
+Homo sapiens,Sensorimotor_cortex,CMRO2,umol/100g/min,148.434,5,Kaufman__2004,NA
+Homo sapiens,Sensorimotor_cortex,CMRgl,umol/100g/min,36.919,11,Karbowski__2007; Kaufman__2004,NA
+Homo sapiens,Substantia_nigra,CMRgl,umol/100g/min,24.4,2,Heiss_etal_2004; Karbowski__2007,NA
+Homo sapiens,Temporal_cortex,CMRO2,umol/100g/min,155.104,13,Kaufman__2004,NA
+Homo sapiens,Temporal_cortex,CMRgl,umol/100g/min,32.955,40,Heiss_etal_2004; Karbowski__2007; Kaufman__2004,NA
+Homo sapiens,Thalamus,CBF,mL/100g/min,54.237,8,Kaufman__2004,Thalamus_Vol.mm3
+Homo sapiens,Thalamus,CMRO2,umol/100g/min,177.311,9,Kaufman__2004,Thalamus_Vol.mm3
+Homo sapiens,Thalamus,CMRgl,umol/100g/min,36.141,34,Karbowski__2007; Kaufman__2004,Thalamus_Vol.mm3
 Homo sapiens,Thalamus_medial_nucleus,CMRgl,umol/100g/min,36.6,1,Heiss_etal_2004,NA
 Homo sapiens,Vermis,CMRgl,umol/100g/min,30.1,1,Heiss_etal_2004,NA
-Homo sapiens,Visual_cortex,CMRgl,umol/100g/min,38,2,Karbowski_2007,NA
-Homo sapiens,White_matter,CBF,mL/100g/min,23.073,11,Kaufman_2004,NA
-Homo sapiens,White_matter,CMRO2,umol/100g/min,74.8,10,Kaufman_2004,NA
-Homo sapiens,White_matter,CMRgl,umol/100g/min,19.146,13,Kaufman_2004,NA
-Homo sapiens,Whole_brain,CBF,mL/100g/min,52.287,35,Kaufman_2004,Total_brain_net_volume_Vol.mm3
-Homo sapiens,Whole_brain,CMRO2,umol/100g/min,155.383,37,Kaufman_2004,Total_brain_net_volume_Vol.mm3
-Homo sapiens,Whole_brain,CMRgl,umol/100g/min,29.13,24,Karbowski_2007; Kaufman_2004,Total_brain_net_volume_Vol.mm3
-Lepus sp.,Basal_ganglia,CMRgl,umol/100g/min,58.7,1,Kaufman_2004,NA
-Lepus sp.,Hippocampus,CMRgl,umol/100g/min,58.1,1,Kaufman_2004,Hippocampus_Vol.mm3
-Lepus sp.,Neocortex,CMRgl,umol/100g/min,77.4,1,Kaufman_2004,Neocortex_Vol.mm3
-Lepus sp.,Occipital_cortex,CMRgl,umol/100g/min,76.4,1,Kaufman_2004,NA
-Lepus sp.,Parietal_cortex,CMRgl,umol/100g/min,73.1,1,Kaufman_2004,NA
-Lepus sp.,Sensorimotor_cortex,CMRgl,umol/100g/min,82.65,1,Kaufman_2004,NA
-Lepus sp.,Thalamus,CMRgl,umol/100g/min,89.7,1,Kaufman_2004,Thalamus_Vol.mm3
-Lepus sp.,White_matter,CMRgl,umol/100g/min,26.1,1,Kaufman_2004,NA
-Macaca fascicularis,Basal_ganglia,CMRgl,umol/100g/min,45.375,4,Kaufman_2004,NA
-Macaca fascicularis,Cerebellum,CMRgl,umol/100g/min,36,1,Kaufman_2004,Cerebellum_Vol.mm3
-Macaca fascicularis,Cingulate_cortex,CMRgl,umol/100g/min,54.2,2,Kaufman_2004,NA
-Macaca fascicularis,Frontal_cortex,CMRgl,umol/100g/min,49,1,Kaufman_2004,NA
-Macaca fascicularis,Hippocampus,CMRgl,umol/100g/min,34.5,2,Kaufman_2004,Hippocampus_Vol.mm3
-Macaca fascicularis,Neocortex,CMRgl,umol/100g/min,55.8,1,Kaufman_2004,Neocortex_Vol.mm3
-Macaca fascicularis,Occipital_cortex,CMRgl,umol/100g/min,59.4,2,Kaufman_2004,NA
-Macaca fascicularis,Parietal_cortex,CMRgl,umol/100g/min,48.3,1,Kaufman_2004,NA
-Macaca fascicularis,Sensorimotor_cortex,CMRgl,umol/100g/min,56.55,3,Kaufman_2004,NA
-Macaca fascicularis,Temporal_cortex,CMRgl,umol/100g/min,38,1,Kaufman_2004,NA
-Macaca fascicularis,Thalamus,CMRgl,umol/100g/min,46.45,4,Kaufman_2004,Thalamus_Vol.mm3
-Macaca fascicularis,White_matter,CMRgl,umol/100g/min,15.25,2,Kaufman_2004,NA
-Macaca fascicularis,Whole_brain,CBF,mL/100g/min,43,1,Kaufman_2004,Total_brain_net_volume_Vol.mm3
-Macaca fascicularis,Whole_brain,CMRO2,umol/100g/min,136.16,1,Kaufman_2004,Total_brain_net_volume_Vol.mm3
-Macaca fascicularis,Whole_brain,CMRgl,umol/100g/min,31.64,1,Kaufman_2004,Total_brain_net_volume_Vol.mm3
-Macaca mulatta,Amygdala,CMRgl,umol/100g/min,32,3,Karbowski_2007,Amygdala_Vol.mm3
-Macaca mulatta,Basal_ganglia,CBF,mL/100g/min,60.5,1,Kaufman_2004,NA
-Macaca mulatta,Basal_ganglia,CMRO2,umol/100g/min,255,1,Kaufman_2004,NA
-Macaca mulatta,Basal_ganglia,CMRgl,umol/100g/min,43.8,5,Kaufman_2004,NA
-Macaca mulatta,Brain_stem,CMRgl,umol/100g/min,85.75,2,Karbowski_2007,NA
-Macaca mulatta,Caudate_nucleus,CMRgl,umol/100g/min,54.333,3,Karbowski_2007,NA
-Macaca mulatta,Cerebellum,CBF,mL/100g/min,47.8,1,Kaufman_2004,Cerebellum_Vol.mm3
-Macaca mulatta,Cerebellum,CMRgl,umol/100g/min,28.433,6,Karbowski_2007; Kaufman_2004,Cerebellum_Vol.mm3
-Macaca mulatta,Cingulate_cortex,CMRgl,umol/100g/min,38.48,5,Kaufman_2004,NA
-Macaca mulatta,Frontal_cortex,CMRgl,umol/100g/min,47.7,5,Kaufman_2004,NA
-Macaca mulatta,Hippocampus,CBF,mL/100g/min,53.9,1,Kaufman_2004,Hippocampus_Vol.mm3
-Macaca mulatta,Hippocampus,CMRgl,umol/100g/min,35.1,7,Karbowski_2007; Kaufman_2004,Hippocampus_Vol.mm3
-Macaca mulatta,Hypothalamus,CMRgl,umol/100g/min,42.833,3,Karbowski_2007,NA
-Macaca mulatta,Neocortex,CBF,mL/100g/min,53,1,Kaufman_2004,Neocortex_Vol.mm3
-Macaca mulatta,Neocortex,CMRgl,umol/100g/min,46.043,7,Karbowski_2007; Kaufman_2004,Neocortex_Vol.mm3
-Macaca mulatta,Occipital_cortex,CMRgl,umol/100g/min,54.34,5,Kaufman_2004,NA
-Macaca mulatta,Pallidum,CMRgl,umol/100g/min,28,3,Karbowski_2007,Pallidum_Vol.mm3
-Macaca mulatta,Parietal_cortex,CMRgl,umol/100g/min,42.1,2,Karbowski_2007; Kaufman_2004,NA
-Macaca mulatta,Prefrontal_cortex,CMRgl,umol/100g/min,40,1,Karbowski_2007,NA
-Macaca mulatta,Sensorimotor_cortex,CMRgl,umol/100g/min,46,4,Karbowski_2007; Kaufman_2004,NA
-Macaca mulatta,Septum,CMRgl,umol/100g/min,27.667,3,Karbowski_2007,NA
-Macaca mulatta,Substantia_nigra,CMRgl,umol/100g/min,36.667,3,Karbowski_2007,NA
-Macaca mulatta,Temporal_cortex,CMRgl,umol/100g/min,47.55,4,Karbowski_2007; Kaufman_2004,NA
-Macaca mulatta,Thalamus,CMRgl,umol/100g/min,44.312,8,Karbowski_2007; Kaufman_2004,Thalamus_Vol.mm3
-Macaca mulatta,Visual_cortex,CMRgl,umol/100g/min,62.5,2,Karbowski_2007,NA
-Macaca mulatta,White_matter,CMRgl,umol/100g/min,11.36,5,Karbowski_2007; Kaufman_2004,NA
-Macaca mulatta,Whole_brain,CBF,mL/100g/min,85.567,3,Kaufman_2004,Total_brain_net_volume_Vol.mm3
-Macaca mulatta,Whole_brain,CMRO2,umol/100g/min,280.2,3,Kaufman_2004,Total_brain_net_volume_Vol.mm3
-Macaca mulatta,Whole_brain,CMRgl,umol/100g/min,44.02,5,Karbowski_2007; Kaufman_2004,Total_brain_net_volume_Vol.mm3
-Meriones unguiculatus,Basal_ganglia,CMRgl,umol/100g/min,75,1,Kaufman_2004,NA
-Meriones unguiculatus,Cerebellum,CBF,mL/100g/min,93,1,Kaufman_2004,Cerebellum_Vol.mm3
-Meriones unguiculatus,Cerebellum,CMRgl,umol/100g/min,44.4,1,Kaufman_2004,Cerebellum_Vol.mm3
-Meriones unguiculatus,Frontal_cortex,CMRgl,umol/100g/min,67.8,1,Kaufman_2004,NA
-Meriones unguiculatus,Hippocampus,CBF,mL/100g/min,109,1,Kaufman_2004,Hippocampus_Vol.mm3
-Meriones unguiculatus,Hippocampus,CMRgl,umol/100g/min,69,1,Kaufman_2004,Hippocampus_Vol.mm3
-Meriones unguiculatus,Neocortex,CBF,mL/100g/min,112.8,2,Kaufman_2004,Neocortex_Vol.mm3
-Meriones unguiculatus,Neocortex,CMRgl,umol/100g/min,83.7,2,Kaufman_2004,Neocortex_Vol.mm3
-Meriones unguiculatus,Occipital_cortex,CMRgl,umol/100g/min,69.4,1,Kaufman_2004,NA
-Meriones unguiculatus,Sensorimotor_cortex,CMRgl,umol/100g/min,67.2,1,Kaufman_2004,NA
-Meriones unguiculatus,Thalamus,CMRgl,umol/100g/min,74.4,2,Kaufman_2004,Thalamus_Vol.mm3
-Meriones unguiculatus,White_matter,CBF,mL/100g/min,62,1,Kaufman_2004,NA
-Meriones unguiculatus,Whole_brain,CBF,mL/100g/min,102,1,Kaufman_2004,Total_brain_net_volume_Vol.mm3
-Mus musculus,Amygdala,CMRgl,umol/100g/min,58,1,Karbowski_2007,Amygdala_Vol.mm3
-Mus musculus,Auditory_cortex,CMRgl,umol/100g/min,96.1,5,Kaufman_2004,NA
-Mus musculus,Basal_ganglia,CMRO2,umol/100g/min,5.2,1,Kaufman_2004,NA
-Mus musculus,Basal_ganglia,CMRgl,umol/100g/min,75.475,4,Kaufman_2004,NA
-Mus musculus,Brain_stem,CMRgl,umol/100g/min,93,2,Karbowski_2007,NA
-Mus musculus,Caudate_nucleus,CMRgl,umol/100g/min,125,1,Karbowski_2007,NA
-Mus musculus,Cerebellum,CMRgl,umol/100g/min,92,4,Karbowski_2007; Kaufman_2004,Cerebellum_Vol.mm3
-Mus musculus,Cingulate_cortex,CMRgl,umol/100g/min,92.833,3,Karbowski_2007; Kaufman_2004,NA
-Mus musculus,Frontal_cortex,CMRgl,umol/100g/min,98.82,5,Kaufman_2004,NA
-Mus musculus,Hippocampus,CMRgl,umol/100g/min,67.72,5,Kaufman_2004,Hippocampus_Vol.mm3
-Mus musculus,Hypothalamus,CMRgl,umol/100g/min,81.75,2,Karbowski_2007,NA
-Mus musculus,Neocortex,CMRgl,umol/100g/min,94.862,8,Karbowski_2007; Kaufman_2004,Neocortex_Vol.mm3
-Mus musculus,Occipital_cortex,CMRgl,umol/100g/min,84.225,4,Kaufman_2004,NA
-Mus musculus,Pallidum,CMRgl,umol/100g/min,76,1,Karbowski_2007,Pallidum_Vol.mm3
-Mus musculus,Parietal_cortex,CMRgl,umol/100g/min,98.5,2,Kaufman_2004,NA
-Mus musculus,Prefrontal_cortex,CMRgl,umol/100g/min,122,1,Karbowski_2007,NA
-Mus musculus,Sensorimotor_cortex,CMRgl,umol/100g/min,99.42,5,Kaufman_2004,NA
-Mus musculus,Septum,CMRgl,umol/100g/min,73,2,Karbowski_2007,NA
-Mus musculus,Substantia_nigra,CMRgl,umol/100g/min,88,1,Karbowski_2007,NA
-Mus musculus,Temporal_cortex,CMRgl,umol/100g/min,93,1,Karbowski_2007,NA
-Mus musculus,Thalamus,CMRgl,umol/100g/min,101,6,Karbowski_2007; Kaufman_2004,Thalamus_Vol.mm3
-Mus musculus,Visual_cortex,CMRgl,umol/100g/min,111,1,Karbowski_2007,NA
-Mus musculus,White_matter,CMRgl,umol/100g/min,38,6,Karbowski_2007; Kaufman_2004,NA
-Mus musculus,Whole_brain,CBF,mL/100g/min,117,1,Kaufman_2004,Total_brain_net_volume_Vol.mm3
-Mus musculus,Whole_brain,CMRgl,umol/100g/min,73.208,4,Karbowski_2007; Kaufman_2004,Total_brain_net_volume_Vol.mm3
-Oryctolagus cuniculus,Amygdala,CMRgl,umol/100g/min,39,1,Karbowski_2007,Amygdala_Vol.mm3
-Oryctolagus cuniculus,Brain_stem,CMRgl,umol/100g/min,94,1,Karbowski_2007,NA
-Oryctolagus cuniculus,Hippocampus,CMRgl,umol/100g/min,58,1,Karbowski_2007,Hippocampus_Vol.mm3
-Oryctolagus cuniculus,Hypothalamus,CMRgl,umol/100g/min,65,1,Karbowski_2007,NA
-Oryctolagus cuniculus,Neocortex,CMRgl,umol/100g/min,83.5,2,Karbowski_2007,Neocortex_Vol.mm3
-Oryctolagus cuniculus,Pallidum,CMRgl,umol/100g/min,42,1,Karbowski_2007,Pallidum_Vol.mm3
-Oryctolagus cuniculus,Parietal_cortex,CMRgl,umol/100g/min,73,1,Karbowski_2007,NA
-Oryctolagus cuniculus,Sensorimotor_cortex,CMRgl,umol/100g/min,83,1,Karbowski_2007,NA
-Oryctolagus cuniculus,Septum,CMRgl,umol/100g/min,48,1,Karbowski_2007,NA
-Oryctolagus cuniculus,Substantia_nigra,CMRgl,umol/100g/min,48,1,Karbowski_2007,NA
-Oryctolagus cuniculus,Temporal_cortex,CMRgl,umol/100g/min,102,1,Karbowski_2007,NA
-Oryctolagus cuniculus,Thalamus,CMRgl,umol/100g/min,90,1,Karbowski_2007,Thalamus_Vol.mm3
-Oryctolagus cuniculus,Visual_cortex,CMRgl,umol/100g/min,76,1,Karbowski_2007,NA
-Oryctolagus cuniculus,White_matter,CMRgl,umol/100g/min,26,1,Karbowski_2007,NA
-Oryctolagus cuniculus,Whole_brain,CMRgl,umol/100g/min,69,1,Karbowski_2007,Total_brain_net_volume_Vol.mm3
-Ovis aries,Whole_brain,CBF,mL/100g/min,64.85,4,Kaufman_2004,Total_brain_net_volume_Vol.mm3
-Ovis aries,Whole_brain,CMRO2,umol/100g/min,169.075,4,Karbowski_2007; Kaufman_2004,Total_brain_net_volume_Vol.mm3
-Ovis aries,Whole_brain,CMRgl,umol/100g/min,35,1,Karbowski_2007,Total_brain_net_volume_Vol.mm3
-Papio anubis,Caudate_nucleus,CMRgl,umol/100g/min,41,1,Karbowski_2007,NA
-Papio anubis,Cerebellum,CMRgl,umol/100g/min,32,1,Karbowski_2007,Cerebellum_Vol.mm3
-Papio anubis,Cingulate_cortex,CMRgl,umol/100g/min,49,1,Karbowski_2007,NA
-Papio anubis,Hippocampus,CMRgl,umol/100g/min,32,1,Karbowski_2007,Hippocampus_Vol.mm3
-Papio anubis,Neocortex,CMRgl,umol/100g/min,46,2,Karbowski_2007,Neocortex_Vol.mm3
-Papio anubis,Occipital_cortex,CMRgl,umol/100g/min,33,1,Karbowski_2007,NA
-Papio anubis,Parietal_cortex,CMRgl,umol/100g/min,47,1,Karbowski_2007,NA
-Papio anubis,Prefrontal_cortex,CMRgl,umol/100g/min,52,1,Karbowski_2007,NA
-Papio anubis,Sensorimotor_cortex,CMRgl,umol/100g/min,49,1,Karbowski_2007,NA
-Papio anubis,Temporal_cortex,CMRgl,umol/100g/min,47,1,Karbowski_2007,NA
-Papio anubis,Thalamus,CMRgl,umol/100g/min,51,1,Karbowski_2007,Thalamus_Vol.mm3
-Papio anubis,Whole_brain,CMRO2,umol/100g/min,3.4,1,Karbowski_2007,Total_brain_net_volume_Vol.mm3
-Papio anubis,Whole_brain,CMRgl,umol/100g/min,44,1,Karbowski_2007,Total_brain_net_volume_Vol.mm3
-Rattus norvegicus,Amygdala,CMRgl,umol/100g/min,52,5,Karbowski_2007,Amygdala_Vol.mm3
-Rattus norvegicus,Auditory_cortex,CMRgl,umol/100g/min,186.858,31,Kaufman_2004,NA
-Rattus norvegicus,Basal_ganglia,CBF,mL/100g/min,117.5,2,Kaufman_2004,NA
-Rattus norvegicus,Basal_ganglia,CMRO2,umol/100g/min,84.5,1,Kaufman_2004,NA
-Rattus norvegicus,Basal_ganglia,CMRgl,umol/100g/min,120.259,39,Kaufman_2004,NA
-Rattus norvegicus,Brain_stem,CMRgl,umol/100g/min,120.3,5,Karbowski_2007,NA
-Rattus norvegicus,Caudate_nucleus,CMRgl,umol/100g/min,83,6,Karbowski_2007,NA
-Rattus norvegicus,Cerebellum,CBF,mL/100g/min,116.5,2,Kaufman_2004,Cerebellum_Vol.mm3
-Rattus norvegicus,Cerebellum,CMRO2,umol/100g/min,61,1,Kaufman_2004,Cerebellum_Vol.mm3
-Rattus norvegicus,Cerebellum,CMRgl,umol/100g/min,118.883,30,Karbowski_2007; Kaufman_2004,Cerebellum_Vol.mm3
-Rattus norvegicus,Cingulate_cortex,CMRgl,umol/100g/min,98.394,32,Karbowski_2007; Kaufman_2004,NA
-Rattus norvegicus,Frontal_cortex,CMRgl,umol/100g/min,143.654,37,Karbowski_2007; Kaufman_2004,NA
-Rattus norvegicus,Hippocampus,CBF,mL/100g/min,92.6,5,Kaufman_2004,Hippocampus_Vol.mm3
-Rattus norvegicus,Hippocampus,CMRO2,umol/100g/min,79,1,Kaufman_2004,Hippocampus_Vol.mm3
-Rattus norvegicus,Hippocampus,CMRgl,umol/100g/min,105.284,47,Karbowski_2007; Kaufman_2004,Hippocampus_Vol.mm3
-Rattus norvegicus,Hypothalamus,CMRgl,umol/100g/min,57.917,6,Karbowski_2007,NA
-Rattus norvegicus,Neocortex,CBF,mL/100g/min,149.6,3,Kaufman_2004,Neocortex_Vol.mm3
-Rattus norvegicus,Neocortex,CMRO2,umol/100g/min,294.35,2,Kaufman_2004,Neocortex_Vol.mm3
-Rattus norvegicus,Neocortex,CMRgl,umol/100g/min,133.916,52,Karbowski_2007; Kaufman_2004,Neocortex_Vol.mm3
-Rattus norvegicus,Occipital_cortex,CMRgl,umol/100g/min,147.593,35,Karbowski_2007; Kaufman_2004,NA
-Rattus norvegicus,Pallidum,CMRgl,umol/100g/min,46.333,6,Karbowski_2007,Pallidum_Vol.mm3
-Rattus norvegicus,Parietal_cortex,CMRO2,umol/100g/min,110,1,Kaufman_2004,NA
-Rattus norvegicus,Parietal_cortex,CMRgl,umol/100g/min,148.498,33,Karbowski_2007; Kaufman_2004,NA
-Rattus norvegicus,Prefrontal_cortex,CMRgl,umol/100g/min,97.667,3,Karbowski_2007,NA
-Rattus norvegicus,Sensorimotor_cortex,CMRgl,umol/100g/min,143.122,39,Karbowski_2007; Kaufman_2004,NA
-Rattus norvegicus,Septum,CMRgl,umol/100g/min,51.167,6,Karbowski_2007,NA
-Rattus norvegicus,Substantia_nigra,CMRgl,umol/100g/min,53.2,5,Karbowski_2007,NA
-Rattus norvegicus,Temporal_cortex,CMRgl,umol/100g/min,114.7,9,Karbowski_2007; Kaufman_2004,NA
-Rattus norvegicus,Thalamus,CBF,mL/100g/min,131,4,Kaufman_2004,Thalamus_Vol.mm3
-Rattus norvegicus,Thalamus,CMRO2,umol/100g/min,104,1,Kaufman_2004,Thalamus_Vol.mm3
-Rattus norvegicus,Thalamus,CMRgl,umol/100g/min,127.146,48,Karbowski_2007; Kaufman_2004,Thalamus_Vol.mm3
-Rattus norvegicus,Visual_cortex,CMRgl,umol/100g/min,91.25,4,Karbowski_2007,NA
-Rattus norvegicus,White_matter,CBF,mL/100g/min,35,1,Kaufman_2004,NA
-Rattus norvegicus,White_matter,CMRO2,umol/100g/min,36,1,Kaufman_2004,NA
-Rattus norvegicus,White_matter,CMRgl,umol/100g/min,85.62,37,Karbowski_2007; Kaufman_2004,NA
-Rattus norvegicus,Whole_brain,CBF,mL/100g/min,104.9,5,Kaufman_2004,Total_brain_net_volume_Vol.mm3
-Rattus norvegicus,Whole_brain,CMRO2,umol/100g/min,437.5,5,Kaufman_2004,Total_brain_net_volume_Vol.mm3
-Rattus norvegicus,Whole_brain,CMRgl,umol/100g/min,72.508,12,Karbowski_2007; Kaufman_2004,Total_brain_net_volume_Vol.mm3
-Spermophilus tridecemlineatus,Whole_brain,CMRgl,umol/100g/min,60,1,Karbowski_2007,Total_brain_net_volume_Vol.mm3
-Sus scrofa,Basal_ganglia,CBF,mL/100g/min,102.6,1,Kaufman_2004,NA
-Sus scrofa,Cerebellum,CBF,mL/100g/min,88.8,1,Kaufman_2004,Cerebellum_Vol.mm3
-Sus scrofa,White_matter,CBF,mL/100g/min,33.6,1,Kaufman_2004,NA
+Homo sapiens,Visual_cortex,CMRgl,umol/100g/min,38,2,Karbowski__2007,NA
+Homo sapiens,White_matter,CBF,mL/100g/min,23.073,11,Kaufman__2004,NA
+Homo sapiens,White_matter,CMRO2,umol/100g/min,74.8,10,Kaufman__2004,NA
+Homo sapiens,White_matter,CMRgl,umol/100g/min,19.146,13,Kaufman__2004,NA
+Homo sapiens,Whole_brain,CBF,mL/100g/min,52.287,35,Kaufman__2004,Total_brain_net_volume_Vol.mm3
+Homo sapiens,Whole_brain,CMRO2,umol/100g/min,155.383,37,Kaufman__2004,Total_brain_net_volume_Vol.mm3
+Homo sapiens,Whole_brain,CMRgl,umol/100g/min,29.13,24,Karbowski__2007; Kaufman__2004,Total_brain_net_volume_Vol.mm3
+Lepus sp.,Basal_ganglia,CMRgl,umol/100g/min,58.7,1,Kaufman__2004,NA
+Lepus sp.,Hippocampus,CMRgl,umol/100g/min,58.1,1,Kaufman__2004,Hippocampus_Vol.mm3
+Lepus sp.,Neocortex,CMRgl,umol/100g/min,77.4,1,Kaufman__2004,Neocortex_Vol.mm3
+Lepus sp.,Occipital_cortex,CMRgl,umol/100g/min,76.4,1,Kaufman__2004,NA
+Lepus sp.,Parietal_cortex,CMRgl,umol/100g/min,73.1,1,Kaufman__2004,NA
+Lepus sp.,Sensorimotor_cortex,CMRgl,umol/100g/min,82.65,1,Kaufman__2004,NA
+Lepus sp.,Thalamus,CMRgl,umol/100g/min,89.7,1,Kaufman__2004,Thalamus_Vol.mm3
+Lepus sp.,White_matter,CMRgl,umol/100g/min,26.1,1,Kaufman__2004,NA
+Macaca fascicularis,Basal_ganglia,CMRgl,umol/100g/min,45.375,4,Kaufman__2004,NA
+Macaca fascicularis,Cerebellum,CMRgl,umol/100g/min,36,1,Kaufman__2004,Cerebellum_Vol.mm3
+Macaca fascicularis,Cingulate_cortex,CMRgl,umol/100g/min,54.2,2,Kaufman__2004,NA
+Macaca fascicularis,Frontal_cortex,CMRgl,umol/100g/min,49,1,Kaufman__2004,NA
+Macaca fascicularis,Hippocampus,CMRgl,umol/100g/min,34.5,2,Kaufman__2004,Hippocampus_Vol.mm3
+Macaca fascicularis,Neocortex,CMRgl,umol/100g/min,55.8,1,Kaufman__2004,Neocortex_Vol.mm3
+Macaca fascicularis,Occipital_cortex,CMRgl,umol/100g/min,59.4,2,Kaufman__2004,NA
+Macaca fascicularis,Parietal_cortex,CMRgl,umol/100g/min,48.3,1,Kaufman__2004,NA
+Macaca fascicularis,Sensorimotor_cortex,CMRgl,umol/100g/min,56.55,3,Kaufman__2004,NA
+Macaca fascicularis,Temporal_cortex,CMRgl,umol/100g/min,38,1,Kaufman__2004,NA
+Macaca fascicularis,Thalamus,CMRgl,umol/100g/min,46.45,4,Kaufman__2004,Thalamus_Vol.mm3
+Macaca fascicularis,White_matter,CMRgl,umol/100g/min,15.25,2,Kaufman__2004,NA
+Macaca fascicularis,Whole_brain,CBF,mL/100g/min,43,1,Kaufman__2004,Total_brain_net_volume_Vol.mm3
+Macaca fascicularis,Whole_brain,CMRO2,umol/100g/min,136.16,1,Kaufman__2004,Total_brain_net_volume_Vol.mm3
+Macaca fascicularis,Whole_brain,CMRgl,umol/100g/min,31.64,1,Kaufman__2004,Total_brain_net_volume_Vol.mm3
+Macaca mulatta,Amygdala,CMRgl,umol/100g/min,32,3,Karbowski__2007,Amygdala_Vol.mm3
+Macaca mulatta,Basal_ganglia,CBF,mL/100g/min,60.5,1,Kaufman__2004,NA
+Macaca mulatta,Basal_ganglia,CMRO2,umol/100g/min,255,1,Kaufman__2004,NA
+Macaca mulatta,Basal_ganglia,CMRgl,umol/100g/min,43.8,5,Kaufman__2004,NA
+Macaca mulatta,Brain_stem,CMRgl,umol/100g/min,85.75,2,Karbowski__2007,NA
+Macaca mulatta,Caudate_nucleus,CMRgl,umol/100g/min,54.333,3,Karbowski__2007,NA
+Macaca mulatta,Cerebellum,CBF,mL/100g/min,47.8,1,Kaufman__2004,Cerebellum_Vol.mm3
+Macaca mulatta,Cerebellum,CMRgl,umol/100g/min,28.433,6,Karbowski__2007; Kaufman__2004,Cerebellum_Vol.mm3
+Macaca mulatta,Cingulate_cortex,CMRgl,umol/100g/min,38.48,5,Kaufman__2004,NA
+Macaca mulatta,Frontal_cortex,CMRgl,umol/100g/min,47.7,5,Kaufman__2004,NA
+Macaca mulatta,Hippocampus,CBF,mL/100g/min,53.9,1,Kaufman__2004,Hippocampus_Vol.mm3
+Macaca mulatta,Hippocampus,CMRgl,umol/100g/min,35.1,7,Karbowski__2007; Kaufman__2004,Hippocampus_Vol.mm3
+Macaca mulatta,Hypothalamus,CMRgl,umol/100g/min,42.833,3,Karbowski__2007,NA
+Macaca mulatta,Neocortex,CBF,mL/100g/min,53,1,Kaufman__2004,Neocortex_Vol.mm3
+Macaca mulatta,Neocortex,CMRgl,umol/100g/min,46.043,7,Karbowski__2007; Kaufman__2004,Neocortex_Vol.mm3
+Macaca mulatta,Occipital_cortex,CMRgl,umol/100g/min,54.34,5,Kaufman__2004,NA
+Macaca mulatta,Pallidum,CMRgl,umol/100g/min,28,3,Karbowski__2007,Pallidum_Vol.mm3
+Macaca mulatta,Parietal_cortex,CMRgl,umol/100g/min,42.1,2,Karbowski__2007; Kaufman__2004,NA
+Macaca mulatta,Prefrontal_cortex,CMRgl,umol/100g/min,40,1,Karbowski__2007,NA
+Macaca mulatta,Sensorimotor_cortex,CMRgl,umol/100g/min,46,4,Karbowski__2007; Kaufman__2004,NA
+Macaca mulatta,Septum,CMRgl,umol/100g/min,27.667,3,Karbowski__2007,NA
+Macaca mulatta,Substantia_nigra,CMRgl,umol/100g/min,36.667,3,Karbowski__2007,NA
+Macaca mulatta,Temporal_cortex,CMRgl,umol/100g/min,47.55,4,Karbowski__2007; Kaufman__2004,NA
+Macaca mulatta,Thalamus,CMRgl,umol/100g/min,44.312,8,Karbowski__2007; Kaufman__2004,Thalamus_Vol.mm3
+Macaca mulatta,Visual_cortex,CMRgl,umol/100g/min,62.5,2,Karbowski__2007,NA
+Macaca mulatta,White_matter,CMRgl,umol/100g/min,11.36,5,Karbowski__2007; Kaufman__2004,NA
+Macaca mulatta,Whole_brain,CBF,mL/100g/min,85.567,3,Kaufman__2004,Total_brain_net_volume_Vol.mm3
+Macaca mulatta,Whole_brain,CMRO2,umol/100g/min,280.2,3,Kaufman__2004,Total_brain_net_volume_Vol.mm3
+Macaca mulatta,Whole_brain,CMRgl,umol/100g/min,44.02,5,Karbowski__2007; Kaufman__2004,Total_brain_net_volume_Vol.mm3
+Meriones unguiculatus,Basal_ganglia,CMRgl,umol/100g/min,75,1,Kaufman__2004,NA
+Meriones unguiculatus,Cerebellum,CBF,mL/100g/min,93,1,Kaufman__2004,Cerebellum_Vol.mm3
+Meriones unguiculatus,Cerebellum,CMRgl,umol/100g/min,44.4,1,Kaufman__2004,Cerebellum_Vol.mm3
+Meriones unguiculatus,Frontal_cortex,CMRgl,umol/100g/min,67.8,1,Kaufman__2004,NA
+Meriones unguiculatus,Hippocampus,CBF,mL/100g/min,109,1,Kaufman__2004,Hippocampus_Vol.mm3
+Meriones unguiculatus,Hippocampus,CMRgl,umol/100g/min,69,1,Kaufman__2004,Hippocampus_Vol.mm3
+Meriones unguiculatus,Neocortex,CBF,mL/100g/min,112.8,2,Kaufman__2004,Neocortex_Vol.mm3
+Meriones unguiculatus,Neocortex,CMRgl,umol/100g/min,83.7,2,Kaufman__2004,Neocortex_Vol.mm3
+Meriones unguiculatus,Occipital_cortex,CMRgl,umol/100g/min,69.4,1,Kaufman__2004,NA
+Meriones unguiculatus,Sensorimotor_cortex,CMRgl,umol/100g/min,67.2,1,Kaufman__2004,NA
+Meriones unguiculatus,Thalamus,CMRgl,umol/100g/min,74.4,2,Kaufman__2004,Thalamus_Vol.mm3
+Meriones unguiculatus,White_matter,CBF,mL/100g/min,62,1,Kaufman__2004,NA
+Meriones unguiculatus,Whole_brain,CBF,mL/100g/min,102,1,Kaufman__2004,Total_brain_net_volume_Vol.mm3
+Mus musculus,Amygdala,CMRgl,umol/100g/min,58,1,Karbowski__2007,Amygdala_Vol.mm3
+Mus musculus,Auditory_cortex,CMRgl,umol/100g/min,96.1,5,Kaufman__2004,NA
+Mus musculus,Basal_ganglia,CMRO2,umol/100g/min,5.2,1,Kaufman__2004,NA
+Mus musculus,Basal_ganglia,CMRgl,umol/100g/min,75.475,4,Kaufman__2004,NA
+Mus musculus,Brain_stem,CMRgl,umol/100g/min,93,2,Karbowski__2007,NA
+Mus musculus,Caudate_nucleus,CMRgl,umol/100g/min,125,1,Karbowski__2007,NA
+Mus musculus,Cerebellum,CMRgl,umol/100g/min,92,4,Karbowski__2007; Kaufman__2004,Cerebellum_Vol.mm3
+Mus musculus,Cingulate_cortex,CMRgl,umol/100g/min,92.833,3,Karbowski__2007; Kaufman__2004,NA
+Mus musculus,Frontal_cortex,CMRgl,umol/100g/min,98.82,5,Kaufman__2004,NA
+Mus musculus,Hippocampus,CMRgl,umol/100g/min,67.72,5,Kaufman__2004,Hippocampus_Vol.mm3
+Mus musculus,Hypothalamus,CMRgl,umol/100g/min,81.75,2,Karbowski__2007,NA
+Mus musculus,Neocortex,CMRgl,umol/100g/min,94.862,8,Karbowski__2007; Kaufman__2004,Neocortex_Vol.mm3
+Mus musculus,Occipital_cortex,CMRgl,umol/100g/min,84.225,4,Kaufman__2004,NA
+Mus musculus,Pallidum,CMRgl,umol/100g/min,76,1,Karbowski__2007,Pallidum_Vol.mm3
+Mus musculus,Parietal_cortex,CMRgl,umol/100g/min,98.5,2,Kaufman__2004,NA
+Mus musculus,Prefrontal_cortex,CMRgl,umol/100g/min,122,1,Karbowski__2007,NA
+Mus musculus,Sensorimotor_cortex,CMRgl,umol/100g/min,99.42,5,Kaufman__2004,NA
+Mus musculus,Septum,CMRgl,umol/100g/min,73,2,Karbowski__2007,NA
+Mus musculus,Substantia_nigra,CMRgl,umol/100g/min,88,1,Karbowski__2007,NA
+Mus musculus,Temporal_cortex,CMRgl,umol/100g/min,93,1,Karbowski__2007,NA
+Mus musculus,Thalamus,CMRgl,umol/100g/min,101,6,Karbowski__2007; Kaufman__2004,Thalamus_Vol.mm3
+Mus musculus,Visual_cortex,CMRgl,umol/100g/min,111,1,Karbowski__2007,NA
+Mus musculus,White_matter,CMRgl,umol/100g/min,38,6,Karbowski__2007; Kaufman__2004,NA
+Mus musculus,Whole_brain,CBF,mL/100g/min,117,1,Kaufman__2004,Total_brain_net_volume_Vol.mm3
+Mus musculus,Whole_brain,CMRgl,umol/100g/min,73.208,4,Karbowski__2007; Kaufman__2004,Total_brain_net_volume_Vol.mm3
+Oryctolagus cuniculus,Amygdala,CMRgl,umol/100g/min,39,1,Karbowski__2007,Amygdala_Vol.mm3
+Oryctolagus cuniculus,Brain_stem,CMRgl,umol/100g/min,94,1,Karbowski__2007,NA
+Oryctolagus cuniculus,Hippocampus,CMRgl,umol/100g/min,58,1,Karbowski__2007,Hippocampus_Vol.mm3
+Oryctolagus cuniculus,Hypothalamus,CMRgl,umol/100g/min,65,1,Karbowski__2007,NA
+Oryctolagus cuniculus,Neocortex,CMRgl,umol/100g/min,83.5,2,Karbowski__2007,Neocortex_Vol.mm3
+Oryctolagus cuniculus,Pallidum,CMRgl,umol/100g/min,42,1,Karbowski__2007,Pallidum_Vol.mm3
+Oryctolagus cuniculus,Parietal_cortex,CMRgl,umol/100g/min,73,1,Karbowski__2007,NA
+Oryctolagus cuniculus,Sensorimotor_cortex,CMRgl,umol/100g/min,83,1,Karbowski__2007,NA
+Oryctolagus cuniculus,Septum,CMRgl,umol/100g/min,48,1,Karbowski__2007,NA
+Oryctolagus cuniculus,Substantia_nigra,CMRgl,umol/100g/min,48,1,Karbowski__2007,NA
+Oryctolagus cuniculus,Temporal_cortex,CMRgl,umol/100g/min,102,1,Karbowski__2007,NA
+Oryctolagus cuniculus,Thalamus,CMRgl,umol/100g/min,90,1,Karbowski__2007,Thalamus_Vol.mm3
+Oryctolagus cuniculus,Visual_cortex,CMRgl,umol/100g/min,76,1,Karbowski__2007,NA
+Oryctolagus cuniculus,White_matter,CMRgl,umol/100g/min,26,1,Karbowski__2007,NA
+Oryctolagus cuniculus,Whole_brain,CMRgl,umol/100g/min,69,1,Karbowski__2007,Total_brain_net_volume_Vol.mm3
+Ovis aries,Whole_brain,CBF,mL/100g/min,64.85,4,Kaufman__2004,Total_brain_net_volume_Vol.mm3
+Ovis aries,Whole_brain,CMRO2,umol/100g/min,169.075,4,Karbowski__2007; Kaufman__2004,Total_brain_net_volume_Vol.mm3
+Ovis aries,Whole_brain,CMRgl,umol/100g/min,35,1,Karbowski__2007,Total_brain_net_volume_Vol.mm3
+Papio anubis,Caudate_nucleus,CMRgl,umol/100g/min,41,1,Karbowski__2007,NA
+Papio anubis,Cerebellum,CMRgl,umol/100g/min,32,1,Karbowski__2007,Cerebellum_Vol.mm3
+Papio anubis,Cingulate_cortex,CMRgl,umol/100g/min,49,1,Karbowski__2007,NA
+Papio anubis,Hippocampus,CMRgl,umol/100g/min,32,1,Karbowski__2007,Hippocampus_Vol.mm3
+Papio anubis,Neocortex,CMRgl,umol/100g/min,46,2,Karbowski__2007,Neocortex_Vol.mm3
+Papio anubis,Occipital_cortex,CMRgl,umol/100g/min,33,1,Karbowski__2007,NA
+Papio anubis,Parietal_cortex,CMRgl,umol/100g/min,47,1,Karbowski__2007,NA
+Papio anubis,Prefrontal_cortex,CMRgl,umol/100g/min,52,1,Karbowski__2007,NA
+Papio anubis,Sensorimotor_cortex,CMRgl,umol/100g/min,49,1,Karbowski__2007,NA
+Papio anubis,Temporal_cortex,CMRgl,umol/100g/min,47,1,Karbowski__2007,NA
+Papio anubis,Thalamus,CMRgl,umol/100g/min,51,1,Karbowski__2007,Thalamus_Vol.mm3
+Papio anubis,Whole_brain,CMRO2,umol/100g/min,3.4,1,Karbowski__2007,Total_brain_net_volume_Vol.mm3
+Papio anubis,Whole_brain,CMRgl,umol/100g/min,44,1,Karbowski__2007,Total_brain_net_volume_Vol.mm3
+Rattus norvegicus,Amygdala,CMRgl,umol/100g/min,52,5,Karbowski__2007,Amygdala_Vol.mm3
+Rattus norvegicus,Auditory_cortex,CMRgl,umol/100g/min,186.858,31,Kaufman__2004,NA
+Rattus norvegicus,Basal_ganglia,CBF,mL/100g/min,117.5,2,Kaufman__2004,NA
+Rattus norvegicus,Basal_ganglia,CMRO2,umol/100g/min,84.5,1,Kaufman__2004,NA
+Rattus norvegicus,Basal_ganglia,CMRgl,umol/100g/min,120.259,39,Kaufman__2004,NA
+Rattus norvegicus,Brain_stem,CMRgl,umol/100g/min,120.3,5,Karbowski__2007,NA
+Rattus norvegicus,Caudate_nucleus,CMRgl,umol/100g/min,83,6,Karbowski__2007,NA
+Rattus norvegicus,Cerebellum,CBF,mL/100g/min,116.5,2,Kaufman__2004,Cerebellum_Vol.mm3
+Rattus norvegicus,Cerebellum,CMRO2,umol/100g/min,61,1,Kaufman__2004,Cerebellum_Vol.mm3
+Rattus norvegicus,Cerebellum,CMRgl,umol/100g/min,118.883,30,Karbowski__2007; Kaufman__2004,Cerebellum_Vol.mm3
+Rattus norvegicus,Cingulate_cortex,CMRgl,umol/100g/min,98.394,32,Karbowski__2007; Kaufman__2004,NA
+Rattus norvegicus,Frontal_cortex,CMRgl,umol/100g/min,143.654,37,Karbowski__2007; Kaufman__2004,NA
+Rattus norvegicus,Hippocampus,CBF,mL/100g/min,92.6,5,Kaufman__2004,Hippocampus_Vol.mm3
+Rattus norvegicus,Hippocampus,CMRO2,umol/100g/min,79,1,Kaufman__2004,Hippocampus_Vol.mm3
+Rattus norvegicus,Hippocampus,CMRgl,umol/100g/min,105.284,47,Karbowski__2007; Kaufman__2004,Hippocampus_Vol.mm3
+Rattus norvegicus,Hypothalamus,CMRgl,umol/100g/min,57.917,6,Karbowski__2007,NA
+Rattus norvegicus,Neocortex,CBF,mL/100g/min,149.6,3,Kaufman__2004,Neocortex_Vol.mm3
+Rattus norvegicus,Neocortex,CMRO2,umol/100g/min,294.35,2,Kaufman__2004,Neocortex_Vol.mm3
+Rattus norvegicus,Neocortex,CMRgl,umol/100g/min,133.916,52,Karbowski__2007; Kaufman__2004,Neocortex_Vol.mm3
+Rattus norvegicus,Occipital_cortex,CMRgl,umol/100g/min,147.593,35,Karbowski__2007; Kaufman__2004,NA
+Rattus norvegicus,Pallidum,CMRgl,umol/100g/min,46.333,6,Karbowski__2007,Pallidum_Vol.mm3
+Rattus norvegicus,Parietal_cortex,CMRO2,umol/100g/min,110,1,Kaufman__2004,NA
+Rattus norvegicus,Parietal_cortex,CMRgl,umol/100g/min,148.498,33,Karbowski__2007; Kaufman__2004,NA
+Rattus norvegicus,Prefrontal_cortex,CMRgl,umol/100g/min,97.667,3,Karbowski__2007,NA
+Rattus norvegicus,Sensorimotor_cortex,CMRgl,umol/100g/min,143.122,39,Karbowski__2007; Kaufman__2004,NA
+Rattus norvegicus,Septum,CMRgl,umol/100g/min,51.167,6,Karbowski__2007,NA
+Rattus norvegicus,Substantia_nigra,CMRgl,umol/100g/min,53.2,5,Karbowski__2007,NA
+Rattus norvegicus,Temporal_cortex,CMRgl,umol/100g/min,114.7,9,Karbowski__2007; Kaufman__2004,NA
+Rattus norvegicus,Thalamus,CBF,mL/100g/min,131,4,Kaufman__2004,Thalamus_Vol.mm3
+Rattus norvegicus,Thalamus,CMRO2,umol/100g/min,104,1,Kaufman__2004,Thalamus_Vol.mm3
+Rattus norvegicus,Thalamus,CMRgl,umol/100g/min,127.146,48,Karbowski__2007; Kaufman__2004,Thalamus_Vol.mm3
+Rattus norvegicus,Visual_cortex,CMRgl,umol/100g/min,91.25,4,Karbowski__2007,NA
+Rattus norvegicus,White_matter,CBF,mL/100g/min,35,1,Kaufman__2004,NA
+Rattus norvegicus,White_matter,CMRO2,umol/100g/min,36,1,Kaufman__2004,NA
+Rattus norvegicus,White_matter,CMRgl,umol/100g/min,85.62,37,Karbowski__2007; Kaufman__2004,NA
+Rattus norvegicus,Whole_brain,CBF,mL/100g/min,104.9,5,Kaufman__2004,Total_brain_net_volume_Vol.mm3
+Rattus norvegicus,Whole_brain,CMRO2,umol/100g/min,437.5,5,Kaufman__2004,Total_brain_net_volume_Vol.mm3
+Rattus norvegicus,Whole_brain,CMRgl,umol/100g/min,72.508,12,Karbowski__2007; Kaufman__2004,Total_brain_net_volume_Vol.mm3
+Spermophilus tridecemlineatus,Whole_brain,CMRgl,umol/100g/min,60,1,Karbowski__2007,Total_brain_net_volume_Vol.mm3
+Sus scrofa,Basal_ganglia,CBF,mL/100g/min,102.6,1,Kaufman__2004,NA
+Sus scrofa,Cerebellum,CBF,mL/100g/min,88.8,1,Kaufman__2004,Cerebellum_Vol.mm3
+Sus scrofa,White_matter,CBF,mL/100g/min,33.6,1,Kaufman__2004,NA

@@ -1,0 +1,15 @@
+status,collection_group,collection_string,description,evidence_note
+documentation_only_nothing_reads_this_yet,DUSSELDORF_HIRNFORSCHUNG,Stephan,"Stephan collection, Hirnforschung, Duesseldorf","literal collection strings ""Zilles from Stephan"" and ""Hirnforschung / Stephan-Zilles shared collection"""
+documentation_only_nothing_reads_this_yet,DUSSELDORF_HIRNFORSCHUNG,Zilles,"Zilles collection, same institute",physically adjacent to Stephan; codes can drift between them
+documentation_only_nothing_reads_this_yet,DUSSELDORF_HIRNFORSCHUNG,Zilles/Semendeferi,"sections cut from Zilles brains, held by Semendeferi",literal crosswalk collection string; one animal in two collections in different physical form
+documentation_only_nothing_reads_this_yet,DUSSELDORF_HIRNFORSCHUNG,Semendeferi,Semendeferi collection,"attribution appears only via MacLeod__2000 and Barger_etal_2007, never a Semendeferi-authored table"
+documentation_only_nothing_reads_this_yet,DUSSELDORF_HIRNFORSCHUNG,Hirnforschung,institute name used as a sample label,MacLeod__2000 Appendix I prints sample = Hirnforschung for Stephan and Zilles material alike
+documentation_only_nothing_reads_this_yet,DUSSELDORF_HIRNFORSCHUNG,Frahm,Frahm working records over Stephan material,Frahm art_number/specimen_number are the Stephan accession numbers
+documentation_only_nothing_reads_this_yet,WELKER_AFIP,Welker/AFIP,"Welker Wisconsin collection, later NMHM/AFIP",collection transferred institution; provenance qualifier belongs in its own column
+documentation_only_nothing_reads_this_yet,YAKOVLEV,Yakovlev-Haleem,Yakovlev-Haleem human collection,
+documentation_only_nothing_reads_this_yet,GWU,GWU,George Washington University,
+documentation_only_nothing_reads_this_yet,MOUNT_SINAI,Mount Sinai,Mount Sinai School of Medicine,
+documentation_only_nothing_reads_this_yet,GAAP,GAAP,Great Ape Aging Project,
+documentation_only_nothing_reads_this_yet,UCSD,UCSD,University of California San Diego,
+documentation_only_nothing_reads_this_yet,KAAS_VANDERBILT,Kaas laboratory / Vanderbilt,Kaas laboratory,"sub-provenances stay in the collection string, not as separate groups"
+documentation_only_nothing_reads_this_yet,FOSSIL_<site>,fossil hominin (<site>),one group per fossil locality,"fossil designations are international identifiers; match globally, not within a group"

@@ -2,9 +2,10 @@
 ## doi:10.3389/fncir.2013.00030 · Team Kaas (Vanderbilt) · flow/isotropic fractionator.
 ## PRIMARY MOTOR CORTEX (M1) mass, surface area, and cell/neuron densities for 6 primate species
 ## (7 rows: two Papio labels = homotypic synonyms). This is a REGIONAL (M1) companion to
-## Collins et al. 2010 (whole cortex): the Otolemur garnettii and Aotus nancymaae specimens are the
-## same Vanderbilt animals -> flagged `specimen_overlap_Collins2010` so they are NOT double-counted
-## with Collins at the whole-cortex level. Snapshot frozen; all cleaning here (golden rule).
+## Collins et al. 2010 (whole cortex), Young et al. 2013b (baboons), and Collins et al. 2016
+## (chimpanzee). Specimen overlap is explicit below. The snapshot is frozen; its added `Specimen`
+## column contains an older curator assignment, so the analysis-ready institution is reconstructed
+## from the paper's Materials and Methods rather than silently editing the frozen file.
 
 options(scipen = 999)
 ## ---- paths: self-contained ----
@@ -37,12 +38,60 @@ num <- function(x) suppressWarnings(as.numeric(ifelse(trimws(x) %in% c("", "N/A"
 sdn <- function(x) suppressWarnings(as.numeric(sub(".*?([-+]?[0-9]*\\.?[0-9]+).*", "\\1",
                      ifelse(trimws(x) %in% c("", "N/A", "NA"), NA, x))))
 
-sp_fix  <- c("Saimiri sciuresis" = "Saimiri sciureus")           # printed typo
-overlap <- c("Otolemur garnettii" = "likely_same_specimens",     # Vanderbilt = Collins 2010 galagos
-             "Aotus nancymaae"    = "likely_same_specimens",     # Vanderbilt = Collins 2010 owl monkey
-             "Saimiri sciureus"   = "no", "Macaca nemestrina" = "no",
-             "Papio cynocephalus anubis" = "unconfirmed",        # Collins baboon = case 09-27 (Washington)
-             "Papio hamadryas anubis"    = "unconfirmed", "Pan troglodytes" = "no")
+sp_fix <- c("Saimiri sciuresis" = "Saimiri sciureus")            # printed typo
+
+## Provenance stated in Materials and Methods (p. 2), not in printed Table 1:
+## Vanderbilt: galagos + New World monkeys; Washington NPRC: macaques + P. cynocephalus 09-27;
+## Texas Biomedical: P. hamadryas 11-31 + chimpanzee.
+institution <- c(
+  "Otolemur garnettii" = "Vanderbilt University",
+  "Aotus nancymaae" = "Vanderbilt University",
+  "Saimiri sciureus" = "Vanderbilt University",
+  "Macaca nemestrina" = "Washington National Primate Research Center",
+  "Papio cynocephalus anubis" = "Washington National Primate Research Center",
+  "Papio hamadryas anubis" = "Texas Biomedical Research Institute",
+  "Pan troglodytes" = "Texas Biomedical Research Institute"
+)
+
+specimen_identity <- c(
+  "Otolemur garnettii" = "three-animal mean; includes Collins 2010 case 08-07 plus two unresolved galagos",
+  "Aotus nancymaae" = "probable Collins 2010 case 07-78",
+  "Saimiri sciureus" = "single unresolved Vanderbilt squirrel monkey",
+  "Macaca nemestrina" = "two unresolved Washington NPRC macaques",
+  "Papio cynocephalus anubis" = "case 09-27",
+  "Papio hamadryas anubis" = "case 11-31",
+  "Pan troglodytes" = "probable KAAS-PAN-11_38"
+)
+
+match_status <- c(
+  "Otolemur garnettii" = "partial_overlap",
+  "Aotus nancymaae" = "probable",
+  "Saimiri sciureus" = "no_known_overlap",
+  "Macaca nemestrina" = "no_known_overlap",
+  "Papio cynocephalus anubis" = "probable",
+  "Papio hamadryas anubis" = "probable",
+  "Pan troglodytes" = "probable"
+)
+
+overlap <- c(
+  "Otolemur garnettii" = "partial: case 08-07 is one of the three; the species mean is not decomposable",
+  "Aotus nancymaae" = "probable same owl monkey as Collins 2010 case 07-78",
+  "Saimiri sciureus" = "no",
+  "Macaca nemestrina" = "no (Collins 2010 macaque is M. mulatta case 08-59)",
+  "Papio cynocephalus anubis" = "same normal baboon as Collins 2010 case 09-27",
+  "Papio hamadryas anubis" = "no",
+  "Pan troglodytes" = "no"
+)
+
+other_overlap <- c(
+  "Otolemur garnettii" = NA_character_,
+  "Aotus nancymaae" = NA_character_,
+  "Saimiri sciureus" = NA_character_,
+  "Macaca nemestrina" = NA_character_,
+  "Papio cynocephalus anubis" = "same case 09-27 as Young 2013b and Turner 2016",
+  "Papio hamadryas anubis" = "same case 11-31 as Young 2013b and Turner 2016",
+  "Pan troglodytes" = "high-confidence probable same chimp as Collins 2016 (KAAS-PAN-11_38)"
+)
 
 acc <- ifelse(raw$Species %in% names(sp_fix), sp_fix[raw$Species], raw$Species)
 
@@ -50,7 +99,9 @@ clean <- data.frame(
   Species              = acc,
   species_as_published = raw$`Species published`,
   species_note         = raw$`Species note`,
-  specimen_source      = raw$Specimen,
+  specimen_source      = unname(institution[acc]),
+  specimen_identity    = unname(specimen_identity[acc]),
+  specimen_match_status = unname(match_status[acc]),
   n_hemispheres        = num(raw$`n cortical hemispheres`),
   M1_mass_g                 = num(raw$`M1 Mass (g)`),                       M1_mass_g_sd = sdn(raw$`M1 Mass (g) SD`),
   M1_pct_total_mass         = num(raw$`M1 Percent total mass`),             M1_pct_total_mass_sd = sdn(raw$`M1 Percent total mass SD`),
@@ -64,6 +115,7 @@ clean <- data.frame(
   M1_pct_neuron_diff_from_avg = num(raw$`Percent neuron difference from total average (%)`),
   M1_pct_neuron_diff_from_avg_sd = sdn(raw$`Percent neuron difference from total average (%) SD`),
   specimen_overlap_Collins2010 = unname(overlap[acc]),
+  specimen_overlap_other = unname(other_overlap[acc]),
   source = item_name, stringsAsFactors = FALSE, check.names = FALSE
 )
 

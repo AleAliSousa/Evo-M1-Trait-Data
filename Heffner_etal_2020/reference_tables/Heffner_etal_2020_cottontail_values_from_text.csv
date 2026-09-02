@@ -1,0 +1,5 @@
+trait,value,unit,quoted_text_as_printed,location,note
+audible_freq_low_60dBSPL,0.3,kHz,"their hearing ranged from 300 Hz to 32 kHz, a span of 7.5 octaves",Abstract,"low limit is consistent throughout the paper"
+audible_freq_high_60dBSPL,56,kHz,"At a sound pressure level of 60 dB, their hearing range extends from 300 Hz to 56 kHz",Results,"CORRECT VALUE. The Abstract states 32 kHz -- an internal contradiction; 56 kHz is stated twice in Results/Discussion, was confirmed by R. Heffner via email to the Bath curators, and is the only value consistent with the paper's own 7.5-octave span (log2(56000/300) = 7.54; log2(32000/300) = 6.74)"
+hearing_range,7.5,octaves,"a span of 7.5 octaves",Abstract,"arithmetically confirms the 56 kHz high limit, not the Abstract's own 32 kHz"
+sound_localization_threshold,27.6,deg,"The 50% localization threshold (minimum audible angle) averaged 27.6 deg",Results,"broadband noise, conditioned-avoidance procedure"

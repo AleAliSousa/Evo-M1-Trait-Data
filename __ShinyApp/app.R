@@ -196,7 +196,166 @@ clade_choices <- c("All", if (!is.null(taxonomy))
   sort(unique(taxonomy$Order[nzchar(taxonomy$Order)])))
 
 sp_choices  <- sort(unique(compiled$Species))
-var_choices <- sort(unique(compiled$Variable))
+
+# ---- Variable organisation + glossary --------------------------------------
+# The `Dataset` column above says which MERGE a value came from — useful
+# provenance, but a poor way to find a trait: life-history measures sit in two
+# datasets, and "EvoM1 traits" is a single bucket holding gyrification, sleep,
+# torpor, interlaminar astrocytes and corticospinal fibre counts together.
+# So organisation is driven by two authored keys instead:
+#   variable_definitions.csv  label -> domain, measure_class, Structure, Measure,
+#                             Unit, definition (built by
+#                             _keys/build_variable_definitions.R)
+#   glossary.csv              term -> expansion/definition, with `common` marking
+#                             everyday terms that need no tooltip
+# Both are read from GitHub with the usual local fallback. If they are missing the
+# app degrades to the old flat behaviour rather than failing.
+vardef <- tryCatch(
+  read_csv_gh("_keys/variable_definitions.csv",
+              file.path(data_dir, "variable_definitions.csv")),
+  error = function(e) NULL)
+glossary <- tryCatch(
+  read_csv_gh("_keys/glossary.csv", file.path(data_dir, "glossary.csv")),
+  error = function(e) NULL)
+
+have_org <- !is.null(vardef) && nrow(vardef) && all(c("label", "domain") %in% names(vardef))
+
+# label -> attribute lookups
+vd_get <- function(col) {
+  if (!have_org || !col %in% names(vardef)) return(setNames(character(0), character(0)))
+  setNames(trimws(as.character(vardef[[col]])), vardef$label)
+}
+lab_domain <- vd_get("domain");        lab_class  <- vd_get("measure_class")
+lab_def    <- vd_get("definition");    lab_struct <- vd_get("Structure")
+lab_meas   <- vd_get("Measure");       lab_unit   <- vd_get("Unit")
+lab_terms  <- vd_get("glossary_terms")
+lab_defsrc <- vd_get("definition_source")
+lab_ismeas <- vd_get("is_measurement")
+
+look <- function(map, k) {
+  if (!length(map)) return("")
+  v <- unname(map[k]); v[is.na(v)] <- ""; v
+}
+
+# Variables actually present in the data, ordered by domain then class then name
+present <- sort(unique(compiled$Variable))
+var_domain <- look(lab_domain, present)
+var_domain[!nzchar(var_domain)] <- "Unclassified"
+var_class  <- look(lab_class, present)
+
+# QC flags and provenance strings are not measurements; keep them out of the
+# variable pickers (they remain in the table and the download).
+is_meas <- look(lab_ismeas, present)
+meas_ok <- !(toupper(is_meas) == "FALSE")
+
+domain_order <- c("brain structure & size", "cellular composition",
+                  "cortical & cerebellar folding", "body size", "metabolism",
+                  "life history", "diet & ecology", "behaviour & cognition",
+                  "sensorimotor & motor pathways", "hand & limb morphology",
+                  "sleep & torpor", "dataset metadata", "Unclassified")
+dom_present  <- unique(var_domain)
+domain_levels <- c(intersect(domain_order, dom_present),
+                   setdiff(sort(dom_present), domain_order))
+
+# grouped choices for selectize: Domain > Measure class > label
+grouped_choices <- function(labels) {
+  d <- look(lab_domain, labels); d[!nzchar(d)] <- "Unclassified"
+  cl <- look(lab_class, labels); cl[!nzchar(cl)] <- "other"
+  grp <- paste0(d, "  >  ", cl)   # ASCII: the app may be served from a C locale
+  o <- order(match(d, domain_levels), cl, labels)
+  split(labels[o], factor(grp[o], levels = unique(grp[o])))
+}
+
+# All variables, and only the measurement ones, as grouped picker choices
+var_choices      <- grouped_choices(present)
+var_choices_meas <- grouped_choices(present[meas_ok])
+
+# ---- Abbreviation expansion -------------------------------------------------
+# A label's tooltip is its definition plus the expansion of every non-common
+# glossary term it contains, so `Amygdala_O.n` explains `O.n` and
+# `ILA Subpial Ventral` explains ILA. Terms flagged common = TRUE (g, mm, %)
+# are deliberately skipped — the user asked for the ones nobody would know.
+g_term <- if (!is.null(glossary)) trimws(as.character(glossary$term)) else character(0)
+g_exp  <- if (length(g_term)) setNames(trimws(as.character(glossary$expansion)), g_term) else character(0)
+g_def  <- if (length(g_term)) setNames(trimws(as.character(glossary$definition)), g_term) else character(0)
+g_common <- if (length(g_term))
+  setNames(toupper(trimws(as.character(glossary$common))) == "TRUE", g_term) else logical(0)
+g_uncommon <- g_term[!g_common[g_term] %in% TRUE]
+
+# Terms for a label: prefer the precomputed glossary_terms column, else detect.
+terms_for <- function(lab) {
+  pre <- look(lab_terms, lab)
+  if (nzchar(pre)) return(strsplit(pre, "|", fixed = TRUE)[[1]])
+  if (!length(g_uncommon)) return(character(0))
+  parts <- strsplit(gsub("[()]", " ", lab), "[^A-Za-z0-9]+")[[1]]
+  tt <- g_uncommon[order(nchar(g_uncommon), decreasing = TRUE)]
+  hit <- character(0)
+  for (t in tt) {
+    suf <- nchar(lab) > nchar(t) &&
+      substring(lab, nchar(lab) - nchar(t) + 1) == t &&
+      substring(lab, nchar(lab) - nchar(t), nchar(lab) - nchar(t)) %in% c("_", " ")
+    if (suf || t %in% parts)
+      if (!any(grepl(t, hit, fixed = TRUE) & hit != t)) hit <- c(hit, t)
+  }
+  hit
+}
+
+# Plain-text tooltip for a variable label.
+tip_for <- function(lab) {
+  bits <- character(0)
+  d <- look(lab_def, lab); if (nzchar(d)) bits <- c(bits, d)
+  tms <- terms_for(lab)
+  tms <- tms[nzchar(tms) & tms %in% names(g_exp)]
+  # Drop a term the definition already conveys, so `Body_Mass (g)` does not
+  # append "Mass = mass (unit as printed)" beneath a definition that opens
+  # "Whole-animal body mass in grams". Compared on the expansion's content words
+  # (a bare-substring test misses it, since the definition says "body mass" and
+  # the expansion says "mass (unit as printed)").
+  if (length(tms) && nzchar(d)) {
+    dl <- tolower(d)
+    keep <- vapply(tms, function(t) {
+      e <- tolower(unname(g_exp[t]))
+      if (!nzchar(e)) return(TRUE)
+      if (grepl(e, dl, fixed = TRUE)) return(FALSE)
+      w <- strsplit(gsub("[^a-z0-9 ]", " ", e), " +")[[1]]
+      w <- w[nchar(w) > 2 & !w %in% c("the", "and", "per", "unit", "printed", "number", "index")]
+      if (!length(w)) return(TRUE)
+      covered <- all(vapply(w, function(x) grepl(x, dl, fixed = TRUE), logical(1)))
+      !covered            # keep the term only if the definition misses part of it
+    }, logical(1))
+    tms <- tms[keep]
+  }
+  if (length(tms)) {
+    ex <- vapply(tms, function(t) {
+      e <- unname(g_exp[t]); if (is.na(e) || !nzchar(e)) t else paste0(t, " = ", e)
+    }, character(1))
+    bits <- c(bits, paste(ex, collapse = "; "))
+  }
+  u <- look(lab_unit, lab); if (nzchar(u)) bits <- c(bits, paste0("Unit: ", u))
+  paste(bits, collapse = "\n")
+}
+
+# Pre-render every tooltip once (384 labels — cheap, and avoids doing it per row)
+tips <- setNames(vapply(present, tip_for, character(1)), present)
+
+# Wrap a label in a <span title="..."> so the browser shows the tooltip. Escaped
+# because definitions contain quotes and angle-bracket-free but quoted source text.
+esc <- function(x) {
+  x <- gsub("&", "&amp;", x, fixed = TRUE)
+  x <- gsub("<", "&lt;",  x, fixed = TRUE); x <- gsub(">", "&gt;", x, fixed = TRUE)
+  gsub('"', "&quot;", x, fixed = TRUE)
+}
+label_html <- function(labs) {
+  tp <- unname(tips[labs]); tp[is.na(tp)] <- ""
+  has <- nzchar(tp)
+  out <- esc(labs)
+  # A raw newline inside an HTML attribute is collapsed to a space by the parser;
+  # &#10; survives and gives the browser tooltip real line breaks.
+  attr_txt <- gsub("\n", "&#10;", esc(tp[has]), fixed = TRUE)
+  out[has] <- paste0("<span class='evom1-term' title=\"", attr_txt, "\">",
+                     esc(labs[has]), "</span>")
+  out
+}
 
 # ---- Phylogeny (for PGLS phylogenetic regression) ---------------------------
 # Drop a mammal tree at _keys/mammal_tree.<nwk|tre|nex> (e.g. an Upham et al.
@@ -278,26 +437,48 @@ ui <- page_navbar(
   theme = bs_theme(version = 5, bootswatch = "flatly"),
   fillable = FALSE,
 
+  # Dotted underline marks a variable name that carries a definition tooltip, so
+  # a reader can see which labels are hoverable instead of guessing.
+  header = tags$head(tags$style(HTML("
+    .evom1-term { border-bottom: 1px dotted #7b8a8b; cursor: help; }
+    .selectize-dropdown .optgroup-header {
+      font-weight: 600; color: #2c3e50; background: #ecf0f1;
+    }
+  "))),
+
   # ---------------------------------------------------------------- Compiled --
   nav_panel(
     title = "Compiled database",
     layout_sidebar(
       sidebar = sidebar(
         width = 340,
-        helpText("Harmonized cross-species measurements. Filter, then download ",
-                 "or plot the current selection."),
-        selectInput("c_dataset", "Dataset",
-                    choices = sort(unique(compiled$Dataset)),
-                    selected = sort(unique(compiled$Dataset)),
-                    multiple = TRUE),
+        helpText("Harmonized cross-species measurements. Narrow by what the ",
+                 "measurement IS (domain, then measure class), then download or ",
+                 "plot the current selection. Hover any variable name for its ",
+                 "definition and the expansion of any abbreviation it contains."),
+        selectizeInput("c_domain", "Domain (blank = all)",
+                       choices = domain_levels, multiple = TRUE,
+                       options = list(placeholder = "e.g. cellular composition")),
+        selectizeInput("c_class", "Measure class (blank = all in domain)",
+                       choices = NULL, multiple = TRUE,
+                       options = list(placeholder = "narrows within the domain")),
         selectizeInput("c_species", "Species (blank = all)",
                        choices = NULL, multiple = TRUE,
                        options = list(placeholder = "Type to search species...",
                                       maxOptions = 2000)),
-        selectizeInput("c_variable", "Measurement / structure (blank = all)",
+        selectizeInput("c_variable", "Variable (blank = all)",
                        choices = NULL, multiple = TRUE,
                        options = list(placeholder = "Type to search variables...",
                                       maxOptions = 2000)),
+        checkboxInput("c_measonly", "Measurements only (hide QC / provenance flags)",
+                      value = TRUE),
+        hr(),
+        helpText(class = "text-muted small",
+                 "Provenance filters \u2014 which compiled table a value came from."),
+        selectInput("c_dataset", "Source dataset",
+                    choices = sort(unique(compiled$Dataset)),
+                    selected = sort(unique(compiled$Dataset)),
+                    multiple = TRUE),
         textInput("c_source", "Source contains", placeholder = "e.g. Stephan"),
         downloadButton("c_download", "Download current table (CSV)",
                        class = "btn-primary btn-sm")
@@ -331,6 +512,7 @@ ui <- page_navbar(
                                     "Brownian motion" = "Brownian"),
                         selected = "Pagel")
           ),
+          uiOutput("p_axis_defs"),
           uiOutput("p_pgls_note"),
           helpText("Each point is a species with values for both variables ",
                    "(mean if several sources). Filter or colour by taxonomic ",
@@ -378,6 +560,33 @@ ui <- page_navbar(
     )
   ),
 
+  # ----------------------------------------------------------------- Glossary --
+  nav_panel(
+    title = "Glossary",
+    navset_card_tab(
+      nav_panel(
+        "Abbreviations",
+        p(class = "text-muted",
+          "Every abbreviation used in a variable name, with the source that ",
+          "establishes it. Terms marked ", strong("everyday"),
+          " are common enough that the app does not show a tooltip for them; ",
+          "all others are expanded on hover wherever they appear."),
+        DTOutput("g_table")
+      ),
+      nav_panel(
+        "Variables",
+        p(class = "text-muted",
+          "Every variable in the compiled database, its concept domain, and its ",
+          "definition. ", strong("Source"), " definitions are quoted from the ",
+          "originating publication's definitions file; ", strong("composed"),
+          " ones are built from the structure and measure-code glossaries, ",
+          "because the label itself is a composition (e.g. ",
+          tags$code("Amygdala_O.n"), " = Amygdala + number of other cells)."),
+        DTOutput("v_table")
+      )
+    )
+  ),
+
   # -------------------------------------------------------------------- About --
   nav_panel(
     title = "About",
@@ -390,9 +599,22 @@ ui <- page_navbar(
       p("Measurements from many primary sources, harmonized to common species ",
         "names and structure terms. ", strong(format(nrow(compiled), big.mark = ",")),
         " values across ", strong(length(sp_choices)), " species and ",
-        strong(length(var_choices)), " measurements spanning brain-structure volumes, ",
-        "cell counts, the EvoM1 trait table, body/ecology, brain mass, behaviour, ",
-        "and cerebellar folding."),
+        strong(length(present)), " variables."),
+      p("Variables are organised by ", strong("what they measure"),
+        " — ", strong(length(domain_levels)), " concept domains, each split into ",
+        "measure classes — rather than by which compiled table they came from. ",
+        "The source dataset is still available as a provenance filter. Anatomical ",
+        "and behavioural traits relating to body and ecology therefore sit with ",
+        "their own kind (body size, life history, diet & ecology, metabolism, ",
+        "behaviour & cognition) instead of being pooled into one trait bucket."),
+      h5("Abbreviations"),
+      p("Variable names are compositional and many carry paper-specific ",
+        "abbreviations — ", tags$code("ILA"), " for interlaminar astrocytes, ",
+        tags$code("O.n"), " for the number of non-neuronal cells. Hovering a ",
+        "variable name anywhere in the app shows its definition and expands any ",
+        "abbreviation it contains, and the ", strong("Glossary"), " tab lists ",
+        "every term with the publication that establishes it. Everyday units are ",
+        "deliberately left untooltipped."),
       h5("Source tables"),
       p(strong(nrow(manifest)), " published tables, each shown with its full ",
         "citation and linked to its original DOI, PubMed ID, ISBN, or ",
@@ -428,17 +650,49 @@ server <- function(input, output, session) {
   # server-side choices (fast for large lists)
   updateSelectizeInput(session, "c_species", choices = sp_choices, server = TRUE)
   updateSelectizeInput(session, "c_variable", choices = var_choices, server = TRUE)
-  updateSelectizeInput(session, "p_x", choices = var_choices, server = TRUE,
-                       selected = "Body_Mass.g")
-  updateSelectizeInput(session, "p_y", choices = var_choices, server = TRUE,
+  # Plot axes offer measurements only — a QC flag on an axis is never wanted.
+  updateSelectizeInput(session, "p_x", choices = var_choices_meas, server = TRUE,
+                       selected = "Body_Mass (g)")
+  updateSelectizeInput(session, "p_y", choices = var_choices_meas, server = TRUE,
                        selected = "Neocortex_Vol.mm3")
+
+  # Measure-class choices cascade from the chosen domain(s).
+  observeEvent(input$c_domain, ignoreNULL = FALSE, {
+    labs <- present
+    if (length(input$c_domain)) labs <- labs[var_domain %in% input$c_domain]
+    cl <- sort(unique(look(lab_class, labs)))
+    cl <- cl[nzchar(cl)]
+    updateSelectizeInput(session, "c_class", choices = cl,
+                         selected = intersect(input$c_class, cl), server = TRUE)
+  })
+
+  # The variable picker follows the domain / class / measurement-only filters, so
+  # it only ever offers variables the current selection can actually show.
+  observe({
+    labs <- present
+    keep <- rep(TRUE, length(labs))
+    if (length(input$c_domain)) keep <- keep & var_domain %in% input$c_domain
+    if (length(input$c_class))  keep <- keep & var_class  %in% input$c_class
+    if (isTRUE(input$c_measonly)) keep <- keep & meas_ok
+    labs <- labs[keep]
+    updateSelectizeInput(session, "c_variable", choices = grouped_choices(labs),
+                         selected = intersect(input$c_variable, labs), server = TRUE)
+  })
 
   # ---- Compiled: filtered data
   c_filtered <- reactive({
     d <- compiled
-    if (length(input$c_dataset)) d <- d[d$Dataset %in% input$c_dataset, ]
-    if (length(input$c_species))  d <- d[d$Species  %in% input$c_species, ]
+    # concept filters first (domain -> measure class -> variable)
+    if (length(input$c_domain))
+      d <- d[look(lab_domain, d$Variable) %in% input$c_domain, ]
+    if (length(input$c_class))
+      d <- d[look(lab_class, d$Variable) %in% input$c_class, ]
+    if (isTRUE(input$c_measonly))
+      d <- d[!(toupper(look(lab_ismeas, d$Variable)) == "FALSE"), ]
     if (length(input$c_variable)) d <- d[d$Variable %in% input$c_variable, ]
+    if (length(input$c_species))  d <- d[d$Species  %in% input$c_species, ]
+    # provenance filters
+    if (length(input$c_dataset)) d <- d[d$Dataset %in% input$c_dataset, ]
     if (nzchar(input$c_source))
       d <- d[grepl(input$c_source, d$Source, ignore.case = TRUE), ]
     d
@@ -451,22 +705,45 @@ server <- function(input, output, session) {
                if (n == 1) "" else "s", " selected"))
   })
 
-  # columns shown / downloaded (hide the internal numeric-parse column)
+  # Columns shown / downloaded. Domain and Measure class are carried alongside the
+  # variable so the download is self-describing; the internal numeric-parse column
+  # stays hidden. A Definition column is included because the whole point of the
+  # keys is that a downloaded table should not need the app to be readable.
   c_display <- reactive({
     d <- c_filtered()
-    d[, c("Species", "Dataset", "Variable", "Value", "Source", "N_sources")]
+    out <- data.frame(
+      Species  = d$Species,
+      Domain   = look(lab_domain, d$Variable),
+      Class    = look(lab_class,  d$Variable),
+      Variable = d$Variable,
+      Value    = d$Value,
+      Unit     = look(lab_unit, d$Variable),
+      Source   = d$Source,
+      N_sources = d$N_sources,
+      Dataset  = d$Dataset,
+      stringsAsFactors = FALSE)
+    out$Domain[!nzchar(out$Domain)] <- "Unclassified"
+    out
   })
 
   output$c_table <- renderDT({
-    datatable(c_display(),
-              rownames = FALSE, filter = "top",
+    d <- c_display()
+    show <- d
+    show$Variable <- label_html(d$Variable)   # hover = definition + abbreviations
+    datatable(show,
+              rownames = FALSE, filter = "top", escape = FALSE,
               options = list(pageLength = 25, scrollX = TRUE,
                              order = list(list(0, "asc"))))
   })
 
+  # The download carries the definition text too, so the CSV stands alone.
   output$c_download <- downloadHandler(
     filename = function() paste0("evom1_compiled_", Sys.Date(), ".csv"),
-    content  = function(file) write.csv(c_display(), file, row.names = FALSE)
+    content  = function(file) {
+      d <- c_display()
+      d$Definition <- look(lab_def, d$Variable)
+      write.csv(d, file, row.names = FALSE)
+    }
   )
 
   # ---- Compiled: plot
@@ -496,6 +773,27 @@ server <- function(input, output, session) {
     if (!isTRUE(input$p_pgls)) return(NULL)
     w <- p_data(); if (is.null(w) || !nrow(w)) return(NULL)
     pgls_fit(w, input$p_x, input$p_y, input$p_log, input$p_model)
+  })
+
+  # What the two plotted variables actually mean — shown inline, because on a
+  # scatter plot the axis names are the only labels a reader gets.
+  output$p_axis_defs <- renderUI({
+    req(input$p_x, input$p_y)
+    row1 <- function(tag, lab) {
+      d <- look(lab_def, lab); u <- look(lab_unit, lab)
+      dm <- look(lab_domain, lab)
+      if (!nzchar(d)) return(NULL)
+      tags$div(
+        tags$strong(paste0(tag, ": ")), tags$code(lab),
+        if (nzchar(dm)) tags$span(class = "text-muted small", paste0("  [", dm, "]")),
+        tags$br(),
+        tags$span(class = "small", d),
+        if (nzchar(u)) tags$span(class = "text-muted small", paste0("  (unit: ", u, ")")))
+    }
+    a <- row1("X", input$p_x); b <- row1("Y", input$p_y)
+    if (is.null(a) && is.null(b)) return(NULL)
+    div(class = "alert alert-light border py-2 px-2 mb-2", a,
+        if (!is.null(a) && !is.null(b)) tags$hr(class = "my-1"), b)
   })
 
   output$p_pgls_note <- renderUI({
@@ -542,6 +840,46 @@ server <- function(input, output, session) {
       g <- g + geom_abline(intercept = res$intercept, slope = res$slope,
                            colour = "black", linewidth = 0.8)
     g
+  })
+
+  # ---- Glossary: abbreviations
+  output$g_table <- renderDT({
+    validate(need(!is.null(glossary) && nrow(glossary),
+                  "Glossary not available (_keys/glossary.csv could not be loaded)."))
+    g <- glossary
+    tab <- data.frame(
+      Term       = g$term,
+      Expansion  = g$expansion,
+      Definition = g$definition,
+      Kind       = g$kind,
+      `Applies to` = if ("applies_to" %in% names(g)) g$applies_to else "",
+      Everyday   = ifelse(toupper(trimws(as.character(g$common))) == "TRUE",
+                          "yes", ""),
+      Source     = if ("source" %in% names(g)) g$source else "",
+      check.names = FALSE, stringsAsFactors = FALSE)
+    datatable(tab, rownames = FALSE, filter = "top",
+              options = list(pageLength = 40, scrollX = TRUE,
+                             order = list(list(3, "asc"), list(0, "asc"))))
+  })
+
+  # ---- Glossary: variables
+  output$v_table <- renderDT({
+    validate(need(have_org,
+                  "Variable definitions not available (_keys/variable_definitions.csv)."))
+    v <- vardef[vardef$label %in% present, , drop = FALSE]
+    kind <- if ("definition_kind" %in% names(v)) v$definition_kind else ""
+    tab <- data.frame(
+      Variable   = v$label,
+      Domain     = v$domain,
+      Class      = if ("measure_class" %in% names(v)) v$measure_class else "",
+      Definition = if ("definition" %in% names(v)) v$definition else "",
+      Basis      = ifelse(grepl("^source", kind), "source", "composed"),
+      Source     = if ("definition_source" %in% names(v)) v$definition_source else "",
+      stringsAsFactors = FALSE)
+    datatable(tab, rownames = FALSE, filter = "top",
+              options = list(pageLength = 40, scrollX = TRUE,
+                             order = list(list(1, "asc"), list(0, "asc")),
+                             columnDefs = list(list(width = "34%", targets = 3))))
   })
 
   # ---- Source tables: catalogue

@@ -5,7 +5,9 @@ auditable record of which project species reached a tip and how. Same shape as t
 `__merging_*` layers: source folders hold the frozen published data, this folder holds the
 merge logic and the QA report, `_keys/` holds the output the rest of the repo reads.
 
-**Current state** (Upham et al. 2019 DNA-only MCC, 4,100 tips → built 2026-08-14):
+**Current state — two builds from two Upham Items:**
+
+*Single tree* (Upham et al. 2019 DNA-only MCC, 4,100 tips → built 2026-08-14):
 **199 of 214 project species on the tree**, root age 162.2 Ma, ultrametric. Every placement
 is sequence-based. The 15 not on it break down as 5 `sp.` placeholders, 3 subspecies pooled
 onto a parent tip already held by another row, 6 species with no DNA in Upham's supermatrix
@@ -13,26 +15,45 @@ onto a parent tip already held by another row, 6 species with no DNA in Upham's 
 ruwenzorii*, *Nesogale dobsoni*, plus *Marmosa mitis* which must not be bridged to
 *M. robinsoni*), and 1 corrupted duplicate name (see Known data problems).
 
+*Multi-tree sample* (Upham et al. 2019 **Completed100**: 100 complete trees, 5,911 sp,
+`topoCons NDexp`, drawn from the 10k pseudoposterior → built 2026-08-24):
+**204 of 214 project species on every tree** — the completed set recovers the 5 no-DNA
+species via the *authors'* per-tree taxonomic imputation (placements differ across trees, so
+that uncertainty propagates into any PGLS run over the sample). Still off: the 5 `sp.`
+placeholders, the 3 pooled subspecies, *Marmosa mitis* (genuinely not an MDD tip), and the
+corrupted *Scutisorex* duplicate. This sample is for PGLS-across-trees sensitivity analyses;
+the app's canonical tree stays the DNA-only MCC.
+
 ```
-Upham_etal_2019/*.tre                    frozen published tree (the source)
+Upham_etal_2019/*.tre                    frozen published MCC (source 1)
+Upham_etal_2019/Completed100_topoCons_NDexp/output.nex
+                                         frozen 100-tree credible-set sample (source 2)
         │
         ├── tree_tip_crosswalk.csv       accepted_name -> candidate spellings, gated
-        │                                by auto_match
+        │                                by auto_match (shared by both builds)
         ▼
-   build_mammal_tree.R                   canonical build (ape).  .py = offline mirror
-        │
+   build_mammal_tree.R                   canonical single-tree build.  .py = offline mirror
         ├──► _keys/mammal_tree.nwk                     tips = accepted_name  ← app.R reads this
         ├──► mammal_tree_sourcelabels.nwk              tips = published labels, untouched
         └──► tree_coverage_report.csv                  one row per project species
+   build_mammal_trees_sample.R           canonical multi-tree build.  .py = offline mirror
+        ├──► _keys/mammal_trees_sample100.nwk          100 trees, tips = accepted_name
+        ├──► mammal_trees_sample100_sourcelabels.nwk   100 trees, published labels
+        ├──► tree_sample_ids.csv                       line -> Upham posterior tree ID
+        └──► tree_coverage_report_completed100.csv     one row per project species
 ```
 
 ## The one rule
 
-**No grafting, no imputation.** A species that is not in the published source tree is reported
-absent and left off the tree; it still plots and still joins the OLS fit in the app, it just
-does not enter the PGLS fit. This is why `_keys/extend_phylo.R` was deprecated rather than
-fixed, and it is the whole argument of `__ShinyApp/PHYLO_SETUP.md`. To widen coverage, change
-the *source tree*, never the tips.
+**No grafting, no imputation — locally.** A species that is not in the published source tree
+is reported absent and left off the tree; it still plots and still joins the OLS fit in the
+app, it just does not enter the PGLS fit. This is why `_keys/extend_phylo.R` was deprecated
+rather than fixed, and it is the whole argument of `__ShinyApp/PHYLO_SETUP.md`. To widen
+coverage, change the *source tree*, never the tips — which is exactly what the `Completed100`
+sample does: its no-DNA placements are Upham et al.'s own published imputation, not ours.
+If a future analysis needs taxa no published tree carries (fossils, `sp.` anomalies), that
+happens in a clearly named downstream augmentation step with its own log table (species,
+constraint/age, authority, method, decided_by) — never upstream, and never silently.
 
 ## Why a crosswalk instead of just matching names
 
@@ -142,10 +163,29 @@ printed-name-preserved-alongside-harmonised-name pattern
 ## Running it
 
 ```bash
-Rscript  __merging_trees/build_mammal_tree.R          # canonical
-python3  __merging_trees/build_mammal_tree.py         # offline mirror, same outputs
+Rscript  __merging_trees/build_mammal_tree.R          # canonical single tree
+Rscript  __merging_trees/build_mammal_trees_sample.R  # canonical 100-tree sample
+python3  __merging_trees/build_mammal_tree.py         # offline mirrors, same outputs
+python3  __merging_trees/build_mammal_trees_sample.py
 python3  __merging_trees/make_tip_crosswalk_seed.py   # only when _keys/ species files change
 ```
+
+### Using the sample in an analysis
+
+`_keys/mammal_trees_sample100.nwk` is a plain multi-line Newick: `ape::read.tree()` returns a
+`multiPhylo` of 100 trees whose tips are project accepted names (spaces as `_`). To take the
+species subset an analysis actually has data for, prune per tree — never edit the file:
+
+```r
+trees <- ape::read.tree("_keys/mammal_trees_sample100.nwk")
+have  <- gsub(" ", "_", my_data$accepted_name)
+sub   <- lapply(trees, ape::keep.tip, tip = intersect(trees[[1]]$tip.label, have))
+class(sub) <- "multiPhylo"
+fits  <- lapply(sub, function(tr) <PGLS fit against tr>)   # then summarise across fits
+```
+
+Report which posterior trees the lines are via `tree_sample_ids.csv` when citing. Fit results
+should be summarised across the 100 fits (median + spread), not cherry-picked.
 
 Re-seeding the crosswalk **overwrites hand-promoted `auto_match` values** — the seeder rebuilds
 the file from `_keys/`. Diff before committing, or re-apply promotions afterwards.
@@ -175,10 +215,13 @@ Rscript __ShinyApp/build_data.R     # copies the tree into __ShinyApp/data/ as o
   Upham tips follow MDD, finishing that reconciliation is the single highest-yield way to lift
   tip-matching coverage.
 
-## Adding a second source tree later
+## Adding another source tree later
 
-Zoonomia (Foley et al. 2023) is the obvious next one — best consistency with the M1
-gene-expression analyses, but placental-only, so the project's 12 marsupials would need
-`_keys/combine_trees.R` to join a published marsupial tree at a cited Theria age. Add it as its
-own source folder (`Foley_etal_2023/`), point `SOURCE_DIR` at it, and write to a distinct
-output name so the two trees can be compared rather than silently swapped.
+The second source arrived 2026-08-24 as a second **Item in the same folder**
+(`Upham_etal_2019/Completed100_topoCons_NDexp/` — same publication, so no new source folder),
+with its own build script and distinct output names, so the two are compared rather than
+silently swapped. The same pattern applies to the next one: Zoonomia (Foley et al. 2023) —
+best consistency with the M1 gene-expression analyses, but placental-only, so the project's
+12 marsupials would need `_keys/combine_trees.R` to join a published marsupial tree at a cited
+Theria age. Add it as its own source folder (`Foley_etal_2023/`), point a build at it, and
+write to a distinct output name.

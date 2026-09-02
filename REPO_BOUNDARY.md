@@ -167,7 +167,7 @@ These are live ambiguities, not rules. Each needs a decision; none should be res
 ## Where to look next
 
 - `__COMPARISON_MOVED.md` — what moved on 2026-08-19, and the git-history caveat
-- `__HOWTO_build_a_dataset_file.md` — the per-folder build procedure
+- `_skills/build-dataset-item/references/__HOWTO_build_a_dataset_file.md` — the per-folder build procedure
 - `SOURCE_DISPOSITION_REGISTER.md` — which sources are skipped, superseded, or excluded, and why
 - `_helpers/restricted_data.R` — the only sanctioned read across the boundary
 - private `README__comparison_migration.md` — the migration record and the triage table

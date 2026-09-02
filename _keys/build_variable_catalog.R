@@ -43,7 +43,11 @@ measure_class <- function(m) dplyr::case_when(
 norm_struct <- function(x) tolower(str_replace_all(replace_na(x, ""), "[^A-Za-z0-9]", ""))
 
 files <- list.files(root, pattern = "_[Dd]efinitions.*\\.csv$", recursive = TRUE, full.names = TRUE)
-files <- files[!str_detect(files, "__Archive|/_keys/|/_checks/|/\\.git/")]
+## __ShinyApp/data/variable_definitions.csv is an APP EXPORT, not a paper definitions file —
+## and it carries its own `domain` column, which collided with anat's `domain` in the
+## left_join below and broke the catalog transmute ("object 'domain' not found",
+## sweep 2026-08-29). Excluded. (__Public likewise holds only copies.)
+files <- files[!str_detect(files, "__Archive|/_keys/|/_checks/|/\\.git/|/__ShinyApp/|/__Public/")]
 
 read_def <- function(f) {
   d <- tryCatch(suppressWarnings(read_csv(f, col_types = cols(.default = col_character()),

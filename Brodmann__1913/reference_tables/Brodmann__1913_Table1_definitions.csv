@@ -1,13 +1,13 @@
 Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
-Species,best-effort accepted binomial; many entries are genus-level as Brodmann printed them; printed German/Latin name preserved in Species_Brodmann1913 + Genus_printed,,,,info,Mammalia (all orders),Brodmann_1913_Table1,genus-level where species not determinable,
-Species_Brodmann1913,common+Latin name exactly as printed (German),,,,info,Mammalia (all orders),Brodmann_1913_Table1,printed name preserved (invariant),
-Genus_printed,"Latin genus as printed by Brodmann (some are obsolete, e.g. Hapale, Anthropopithecus)",,,,info,Mammalia (all orders),Brodmann_1913_Table1,,
-Order_printed,order grouping as printed (Ordnung),,,,info,Mammalia (all orders),Brodmann_1913_Table1,,
-CorticalSurface_1hemisphere.mm2,total cortical surface area of ONE hemisphere,cerebral cortex,Area.mm2,,primary,Mammalia (all orders),Brodmann_1913_Table1,Rindenfläche; qmm = mm2,one hemisphere
-SulcalCortex.mm2,cortical area buried in sulci/fissures (Furchenrinde),cerebral cortex (sulcal),Area.mm2,,primary,Mammalia (all orders),Brodmann_1913_Table1,blank where Brodmann gave none,
-SulcalCortex_pct,sulcal cortex as % of total cortex,cerebral cortex (sulcal),pct,,secondary,Mammalia (all orders),Brodmann_1913_Table1,% der Gesamtrinde,
-BrainWeight.g,brain weight,brain,Mass.g,,primary,Mammalia (all orders),Brodmann_1913_Table1,Hirngewicht; g,Schnabeltier value measured in alcohol
-HemisphereWeight.g,hemisphere weight (parenthetical value),cerebral hemisphere,Mass.g,,primary,Mammalia (all orders),Brodmann_1913_Table1,printed in parentheses,
-note,"per-row caveat (historical term, obsolete genus, measurement condition)",,,,note,Mammalia (all orders),Brodmann_1913_Table1,,
-Method:units,qmm (Quadratmillimeter) = mm2; surface is per ONE hemisphere; brain weight in g,,,,method,Mammalia (all orders),Brodmann_1913_Table1,,
-Method:source,transcribed from the rendered page image (p.206) because the 1913 Fraktur OCR is unreliable,,,,method,Mammalia (all orders),Brodmann_1913_Table1,,
+Species,best-effort accepted binomial; many entries are genus-level as Brodmann printed them; printed German/Latin name preserved in Species_Brodmann1913 + Genus_printed,,,,info,Mammalia (all orders),Brodmann__1913_Table1,genus-level where species not determinable,
+Species_Brodmann1913,common+Latin name exactly as printed (German),,,,info,Mammalia (all orders),Brodmann__1913_Table1,printed name preserved (invariant),
+Genus_printed,"Latin genus as printed by Brodmann (some are obsolete, e.g. Hapale, Anthropopithecus)",,,,info,Mammalia (all orders),Brodmann__1913_Table1,,
+Order_printed,order grouping as printed (Ordnung),,,,info,Mammalia (all orders),Brodmann__1913_Table1,,
+CorticalSurface_1hemisphere.mm2,total cortical surface area of ONE hemisphere,cerebral cortex,Area.mm2,,primary,Mammalia (all orders),Brodmann__1913_Table1,Rindenfläche; qmm = mm2,one hemisphere
+SulcalCortex.mm2,cortical area buried in sulci/fissures (Furchenrinde),cerebral cortex (sulcal),Area.mm2,,primary,Mammalia (all orders),Brodmann__1913_Table1,blank where Brodmann gave none,
+SulcalCortex_pct,sulcal cortex as % of total cortex,cerebral cortex (sulcal),pct,,secondary,Mammalia (all orders),Brodmann__1913_Table1,% der Gesamtrinde,
+BrainWeight.g,brain weight,brain,Mass.g,,primary,Mammalia (all orders),Brodmann__1913_Table1,Hirngewicht; g,Schnabeltier value measured in alcohol
+HemisphereWeight.g,hemisphere weight (parenthetical value),cerebral hemisphere,Mass.g,,primary,Mammalia (all orders),Brodmann__1913_Table1,printed in parentheses,
+note,"per-row caveat (historical term, obsolete genus, measurement condition)",,,,note,Mammalia (all orders),Brodmann__1913_Table1,,
+Method:units,qmm (Quadratmillimeter) = mm2; surface is per ONE hemisphere; brain weight in g,,,,method,Mammalia (all orders),Brodmann__1913_Table1,,
+Method:source,transcribed from the rendered page image (p.206) because the 1913 Fraktur OCR is unreliable,,,,method,Mammalia (all orders),Brodmann__1913_Table1,,

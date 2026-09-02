@@ -1,0 +1,11 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,species binomial,,Species,,primary,Primates,Chaplin_etal_2013_ResultsText,one individual per species,
+common_name,common name,,,,info,Primates,Chaplin_etal_2013_ResultsText,,
+specimen,specimen / model provenance,,,,info,Primates,Chaplin_etal_2013_ResultsText,marmoset=Paxinos 2012 atlas; capuchin=unpublished Gattass-lab; macaque=F99 atlas,
+structure,structure measured,,,,info,Primates,Chaplin_etal_2013_ResultsText,whole cerebral cortex model,
+hemisphere,hemisphere,,,,info,Primates,Chaplin_etal_2013_ResultsText,single-hemisphere CARET models; L/R not stated in paper,
+method,how the surface was measured,,,,info,Primates,Chaplin_etal_2013_ResultsText,"mid-thickness contour, NOT pial - smaller than pial-surface areas",
+surface_area_mm2,cortical surface area of the model,cortex,surface area,value mm2,primary,Primates,Chaplin_etal_2013_ResultsText,per hemisphere (model); capuchin retains perfusion shrinkage,
+body_mass_g,body mass of the individual as stated,body,mass,value g,info,Primates,Chaplin_etal_2013_ResultsText,macaque not reported,
+note,per-row caveats,,,,provenance,Primates,Chaplin_etal_2013_ResultsText,,
+source,registry item key,,,,provenance,Primates,Chaplin_etal_2013_ResultsText,,

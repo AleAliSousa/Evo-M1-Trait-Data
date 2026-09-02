@@ -1,0 +1,12 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+row_type,order-level mean vs species row,,,,info,Mammalia,Changizi__2003_Table1,,
+order,mammalian order,,,,info,Mammalia,Changizi__2003_Table1,Insectivora as printed (historical),
+Species,latin name AS PRINTED,,Species,,primary,Mammalia,Changizi__2003_Table1,"some truncated ('Meriones unguicul.') or supra-specific (Leporidae, Sciuridae)",
+common_name,common name as printed,,,,info,Mammalia,Changizi__2003_Table1,,
+n_ethobehavior_types,number of behaviors in a published ethogram,behavior,repertoire size,count,secondary,Mammalia,Changizi__2003_Table1,per-row primary citation in behavior_citation,
+behavior_citation,primary ethogram study,,,,provenance,Mammalia,Changizi__2003_Table1,,
+encephalization_index,index of encephalization (Changizi 2001b),brain,encephalization,index,derived-in-source,Mammalia,Changizi__2003_Table1,,
+n_muscle_types,number of muscle types (order-level),body,muscle types,count,secondary,Mammalia,Changizi__2003_Table1,per-row primary citation in muscle_citation,
+muscle_citation,primary anatomy source for muscle count,,,,provenance,Mammalia,Changizi__2003_Table1,,
+note,caveats,,,,provenance,Mammalia,Changizi__2003_Table1,,
+source,registry item key,,,,provenance,Mammalia,Changizi__2003_Table1,,

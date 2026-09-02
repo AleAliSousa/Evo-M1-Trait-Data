@@ -47,7 +47,7 @@ combined only in an explicitly restricted build.
 | `resolved_taxon` | current best identity for **this individual** (may be `NA` if unresolved). Reassignable as evidence improves. |
 | `taxon_concept` | FK → `taxon_concept_registry.taxon_concept`. Which concept the *printed* label belongs to (e.g. an old row printed `Pongo pygmaeus` links to `Pongo pygmaeus (s.l.)`). |
 | `taxon_conflict` | `TRUE` if sources disagree on this individual's taxon. |
-| `match` | `matched` / `<source>-only` / `unmatched`. |
+| `match` | `matched` / `probable` / `<source>-only` / `unmatched`. Use `probable` when public evidence strongly supports one animal but no accession or explicit identity statement closes the link. |
 | `sex` | `M`/`F`/`NA`. |
 | `note` | free text: evidence, links, caveats. |
 
@@ -102,6 +102,15 @@ the *P. pygmaeus s.l.* concept, resolved as *P. abelii*).
 External museum, catalog, studbook, or biodiversity identifiers use the
 separate one-to-many table `specimen_external_links.csv`; they are not added as
 repeating columns here.
+
+The public file contains links supported entirely by public evidence. Links
+whose identity bridge depends on a private memo, catalog, correspondence, or
+other restricted source use the identical schema in the companion repository:
+`specimen_registry/derived/specimen_external_links_restricted.csv`. As with the
+crosswalk, restricted and public links are combined only in an explicitly
+restricted build. `match_status` uses `matched`, `probable`, or `unmatched`;
+studbook links remain `probable` until an accession statement or equivalent
+record explicitly connects the biological specimen to the studbook animal.
 
 ## The hard rule for the merge (consumer contract)
 

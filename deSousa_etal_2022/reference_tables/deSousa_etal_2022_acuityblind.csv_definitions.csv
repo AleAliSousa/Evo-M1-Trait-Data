@@ -1,0 +1,8 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,"species binomial (MSW05, underscores removed)",,Species,,primary,Mammalia,deSousa_etal_2022_acuityblind.csv,as in acuityblind.csv MSW05_Binomial,
+order,MSW05 order,,,,info,Mammalia,deSousa_etal_2022_acuityblind.csv,,
+family,MSW05 family,,,,info,Mammalia,deSousa_etal_2022_acuityblind.csv,,
+visual_acuity_cpd,visual acuity,eye/visual system,visual acuity,value cpd,secondary,Mammalia,deSousa_etal_2022_acuityblind.csv,compiled from primaries; 0 = subcutaneous-eyed blind species,
+acuity_method,how VA was estimated (raw MT: A/B/C),,,,info,Mammalia,deSousa_etal_2022_acuityblind.csv,"A=anatomical n=63, B=behavioral n=51, C=blind-coded-0 n=6; counts match SI Table 2 (mmc4) per order",
+note,secondary-compilation warning,,,,provenance,Mammalia,deSousa_etal_2022_acuityblind.csv,,
+source,registry item key,,,,provenance,Mammalia,deSousa_etal_2022_acuityblind.csv,,

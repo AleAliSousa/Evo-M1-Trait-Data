@@ -1,0 +1,10 @@
+specimen_code,individual_id,species_as_published,interpreted_taxon,sex,age_years,body_mass_kg,brain_mass_g,collection,section_plane,role_in_study,note
+Hylo.-s,Hylobates_unknown_1,Hylobates sp.,Hylobates sp.,unknown,unknown,NA,NA,Thomas Jefferson Medical College,sagittal,"volume; density; perikaryal volume","One hemisphere of the same individual represented by Hylo.-h."
+Hylo.-h,Hylobates_unknown_1,Hylobates sp.,Hylobates sp.,unknown,unknown,NA,NA,Thomas Jefferson Medical College,horizontal,"volume; density; perikaryal volume","One hemisphere of the same individual represented by Hylo.-s."
+H. lar-t,Hylobates_lar_1,Hylobates lar,Hylobates lar,male,unknown,5.93,101.9,Max Planck Institute Frankfurt,transverse,"volume; density; perikaryal volume",Presumably wild animal imported from southeast Asia.
+Gorilla g.,Gorilla_1,Gorilla gorilla,Gorilla gorilla,male,14,203,540,Columbia University / Bronx Zoo,coronal,"volume; density; perikaryal volume",Paper describes the animal as a mountain gorilla but prints Gorilla gorilla.
+Pan t.,Pan_1,Pan troglodytes,Pan troglodytes,male,10-12,63.5,405.5,University of Wisconsin comparative brain collection,coronal,"volume; density; perikaryal volume",Brain was perfused with saline and formalin.
+Homo s.-s,Homo_volume_1,Homo sapiens,Homo sapiens,male,28,NA,1890,Yakovlev Collection,sagittal,volume,Brain mass after fixation in formalin.
+Homo s.-t,Homo_volume_2,Homo sapiens,Homo sapiens,female,32,NA,1200,Yakovlev Collection,transverse,volume,Fresh brain mass.
+Homo s.-c,Homo_cell_1,Homo sapiens,Homo sapiens,male,19,113,1500,not stated,coronal,"density; perikaryal volume",Fresh brain mass; used for cell sizes and counts.
+Homo s.,Homo_combined,Homo sapiens,Homo sapiens,mixed,derived,NA,NA,Yakovlev Collection + cell-count specimen,derived,estimated neuron number,"Combines mean nuclear volumes from Homo s.-s and Homo s.-t with density from Homo s.-c."

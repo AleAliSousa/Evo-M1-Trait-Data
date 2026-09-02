@@ -11,7 +11,15 @@ raw → snapshot → R → usable csv/tsv. Files: `deSousa_etal_2010_Table1_snap
 Structures: Neocortex, Area striata grey matter, Corpus geniculatum laterale, Total brain net volume.
 
 ## Preparation → `deSousa_etal_2010_Table1.csv`
-One row per species. Values are taken from the curated comparison CSV `deSousa_2010.csv` (the audited journal data) and laid out journal-style in the snapshot; the reformat cleans names and types values (already mm³). Verified against the comparison CSV: **0 value mismatches**.
+One row per specimen. Values are taken from the curated comparison CSV `deSousa_2010.csv` (the audited journal data) and laid out journal-style in the snapshot; the reformat cleans names and types values (already mm³). Verified against the comparison CSV: **0 value mismatches**.
+
+The 29 paper rows and their 29 dissertation-code aliases are registered in
+`_keys/specimen_crosswalk/specimen_crosswalk.csv`. Measure provenance is split:
+V1/LGN are de Sousa measurements; 15 neocortex values were supplied by Carol
+MacLeod. The restricted comparison reproduces all 15 MacLeod neocortex and
+brain-volume values within one-decimal publication rounding. Direct Frahm
+identifier overlap is limited to `1548` and `A375`/`375`; it is audited in the
+restricted companion rather than used to relabel every value as Frahm data.
 
 ## Laterality — Table 1 is LEFT and **undoubled**; Supp. Table 2 is the doubled version
 

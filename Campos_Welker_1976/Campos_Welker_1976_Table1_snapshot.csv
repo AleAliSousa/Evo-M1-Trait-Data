@@ -1,0 +1,21 @@
+product,code,source_label,unit,capybara_59_490,guinea_pig_60_1,printed_multiplication_factor,factor_direction,note
+volume,total_prosencephalon_volume_mm3,total pros.,mm3,7365,443.1,16.62,capybara_divided_by_guinea_pig,
+volume,neocortex_volume_mm3,neo-cortex,mm3,3979,170.2,23.38,capybara_divided_by_guinea_pig,
+volume,forebrain_white_matter_volume_mm3,white,mm3,1451,96.26,15.07,capybara_divided_by_guinea_pig,
+volume,thalamus_volume_mm3,thal,mm3,434.1,36.6,11.86,capybara_divided_by_guinea_pig,"Dorsal thalamus, epithalamus and ventral thalamus including fiber tracts; pretectal nuclei excluded."
+volume,caudate_putamen_accumbens_volume_mm3,cau,mm3,413,37.7,10.95,capybara_divided_by_guinea_pig,Caudate-putamen-accumbens complex.
+volume,globus_pallidus_volume_mm3,gp,mm3,41,4.5,9.11,capybara_divided_by_guinea_pig,
+volume,basal_forebrain_volume_mm3,bf,mm3,551.2,61.5,8.96,capybara_divided_by_guinea_pig,"Includes the source-defined basal forebrain structures listed in Figure 11."
+volume,hippocampus_volume_mm3,hip,mm3,278.6,45.5,6.12,capybara_divided_by_guinea_pig,"Includes Ammon's horn, subiculum, dentate gyrus and anterior continuation of hippocampus."
+volume,hypothalamus_volume_mm3,hy,mm3,74.6,13.1,5.69,capybara_divided_by_guinea_pig,Includes hypothalamic nuclei and inclusive fiber bundles.
+volume,corticothalamic_ratio,cortico-thalamic ratio,ratio,9.17,5.15,1.78,capybara_divided_by_guinea_pig,"Printed values retained. The guinea-pig ratio is not reproduced by 170.2 / 36.6 (= 4.65)."
+cortical_morphometry,cortical_surface_area_mm2,total cortex surface,mm2,2501,218.2,11.46,capybara_divided_by_guinea_pig,
+cortical_morphometry,cortical_fissure_area_mm2,cortex in fissures,mm2,760.3,7,108.61,capybara_divided_by_guinea_pig,
+cortical_morphometry,cortical_surface_in_fissures_pct,percent cortex in fissures,percent,30.4,3.2,9.5,capybara_divided_by_guinea_pig,
+cortical_morphometry,cortical_thickness_mm,cortical thickness,mm,1.59,0.78,2.04,capybara_divided_by_guinea_pig,
+cell_count,neocortex_mean_neurons_per_sample,mean number of cells/sample - cortex,neurons_per_162000_um3_sample,10.3,38.53,3.74,guinea_pig_divided_by_capybara,All neurons containing nucleoli were counted.
+cell_count,caudate_mean_neurons_per_sample,mean number of cells/sample - cau,neurons_per_162000_um3_sample,9.169,29.32,3,guinea_pig_divided_by_capybara,"Printed factor 3.0 retained; values imply 3.20."
+cell_count,neocortex_neuronal_density_per_mm3,cell densities - cortex,neurons_per_mm3,63582,237846,3.74,guinea_pig_divided_by_capybara,
+cell_count,caudate_neuronal_density_per_mm3,cell densities - cau,neurons_per_mm3,56600,180992,3,guinea_pig_divided_by_capybara,"Printed factor 3.0 retained; values imply 3.20."
+cell_count,neocortex_total_neuron_number,total cell numbers - cortex,neurons,252992778,40481389,6.25,capybara_divided_by_guinea_pig,
+cell_count,caudate_total_neuron_number,total cell numbers - cau,neurons,23375800,6823398,3.43,capybara_divided_by_guinea_pig,

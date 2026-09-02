@@ -56,6 +56,23 @@ invisible(file.copy(file.path(repo, "__merging_cerebellar_folding", "cerebellar_
 # species taxonomy lookup (Order/Family) for the plot clade filter
 invisible(file.copy(file.path(repo, "_keys", "species_taxonomy.csv"),
           file.path(out, "species_taxonomy.csv"), overwrite = TRUE))
+# ---- organisation + glossary keys -------------------------------------------
+# Three keys drive the app's variable organisation and its abbreviation support.
+# They are authored in _keys/ (not here) so the vocabulary is reviewable in the
+# repo rather than buried in app code:
+#   glossary.csv             term -> expansion/definition, with `common` marking
+#                            the everyday terms whose tooltips are suppressed.
+#   variable_domain.csv      every app-facing label -> concept domain +
+#                            measure_class (+ Structure/Measure/Unit), so the
+#                            app can group by MEANING instead of by source file.
+#   variable_definitions.csv label -> resolved definition. Built by
+#                            build_variable_definitions.R, which walks the
+#                            per-paper *_definitions.csv files and composes
+#                            structure + measure-code definitions from the
+#                            glossary where no whole-label definition exists.
+for (f in c("glossary.csv", "variable_domain.csv", "variable_definitions.csv"))
+  invisible(file.copy(file.path(repo, "_keys", f),
+            file.path(out, f), overwrite = TRUE))
 # mammal phylogeny for PGLS (optional — copy whichever tree file is present)
 for (e in c("nwk", "tre", "newick", "nex", "tree")) {
   src <- file.path(repo, "_keys", paste0("mammal_tree.", e))

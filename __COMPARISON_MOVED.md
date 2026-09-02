@@ -40,12 +40,12 @@ is an open decision, recorded in the private repo's migration README.
 
 Two repository-level leftovers were found outside the paper `comparison/` folders. The obsolete
 `_tools/mirror_new_comparisons.py` sandbox mirror was removed because its canonical R checks are in
-the private repo. `_checks/check_Zilles_Rehkamper_1988_provenance.R` and its generated report depend
+the private repo. `_checks/check_Zilles_Rehkämper_1988_provenance.R` and its generated report depend
 on the restricted comparison CSVs; they moved together to
-`restricted_checks/_cross_table/Zilles_Rehkamper_1988_provenance/` and were removed here.
+`restricted_checks/_cross_table/Zilles_Rehkämper_1988_provenance/` and were removed here.
 *(Retired in the private repo on 2026-08-20. What the audit established — that a `Pongo` value in a
 pre-1988 formatted CSV traces back to Zilles & Rehkämper 1988 — now lives in
-`Zilles__Rehkamper_1988/Zilles__Rehkamper_1988_Table12-2.README.md`, so no paper README points at
+`Zilles_Rehkämper_1988/Zilles_Rehkämper_1988_Table12-2.README.md`, so no paper README points at
 the deleted report.)*
 
 **Restricted *source* files, not just checks.** A few sources cannot live here either — data another
@@ -56,6 +56,7 @@ message if it is not mounted. Current cases: Carol MacLeod's neocortex workbooks
 et al. 2020 authors' corrected microglia spreadsheet (`DosSantos_etal_2020_unpublished.R` reads it
 from there; the audit that used it moved to the private repo's `restricted_checks/_cross_table/`).
 
-**If you are adding a new source:** follow `__HOWTO_build_a_dataset_file.md` as before, and place its
+**If you are adding a new source:** follow
+`_skills/build-dataset-item/references/__HOWTO_build_a_dataset_file.md` as before, and place its
 check by the rules in [`REPO_BOUNDARY.md`](REPO_BOUNDARY.md) §3 — which for most sources means
 creating the comparison folder in the private repo rather than here.

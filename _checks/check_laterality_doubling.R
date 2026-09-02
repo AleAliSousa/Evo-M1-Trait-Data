@@ -21,7 +21,9 @@
 #
 # What it checks
 #   1. laterality_known.csv parses, and every `doubling` is one of {none, by_source}.
-#   2. Every registered column resolves to a standardized term.
+#   2. Every registered column OF A MERGED SOURCE resolves to a standardized term.
+#      A guard registered for a source that is in no merge yet has nothing to
+#      resolve against; it is reported PEND, not FAIL.
 #   3. doubling = none      -> the term CARRIES its required laterality suffix
 #      doubling = by_source -> the term carries NO laterality suffix (it stands
 #                              for both sides).
@@ -114,9 +116,29 @@ cat("Registry\n")
 bad_vals <- srt(setdiff(doubling, VALID))
 report(!length(bad_vals), "every `doubling` is none|by_source", paste(bad_vals, collapse = ", "))
 
-unmapped <- which(!(lat_key %in% names(tmap)))
-report(!length(unmapped), "every registered column has a standardized term",
-       paste(sprintf("%s:%s", lat_ref[unmapped], lat_orig[unmapped]), collapse = "; "))
+## A registered column with no standardized term is one of two very different things, and only
+## one of them is a defect:
+##   * its Reference HAS rows in the term map -> the registry and the term map have drifted apart
+##     (a column renamed on one side only). That is the failure this check exists to catch.
+##   * its Reference has NO rows in the term map at all -> the source is not in any merge, and the
+##     row is a DELIBERATE forward guard: it is registered now so the value can never be averaged
+##     against a both-sides volume, or doubled a second time, if the source is ever ingested
+##     (deSousa_etal_2009_Table1 is exactly this -- Data role = secondary, not merged, and its
+##     laterality note says so). Pre-registering a guard must not be punished as an error, so it
+##     is reported as PEND: informational, and not a failure (see the header, "Exit").
+merged_refs <- unique(sub(paste0(SEP, ".*$"), "", names(tmap)))
+unmapped    <- which(!(lat_key %in% names(tmap)))
+drifted     <- unmapped[lat_ref[unmapped] %in% merged_refs]
+guard_only  <- unmapped[!(lat_ref[unmapped] %in% merged_refs)]
+report(!length(drifted), "every registered column of a merged source has a standardized term",
+       paste(sprintf("%s:%s", lat_ref[drifted], lat_orig[drifted]), collapse = "; "))
+if (length(guard_only)) {
+  lbl <- sprintf("laterality guard pre-registered for %s, which is in no merge yet",
+                 paste(srt(lat_ref[guard_only]), collapse = ", "))
+  cat(sprintf("  [PEND] %s -- %s\n", lbl,
+              paste(sprintf("%s:%s", lat_ref[guard_only], lat_orig[guard_only]), collapse = "; ")))
+  pending <- c(pending, lbl)
+}
 
 st_of  <- unname(tmap[lat_key])
 mapped <- which(!is.na(st_of))

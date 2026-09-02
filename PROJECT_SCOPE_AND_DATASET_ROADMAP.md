@@ -1,6 +1,6 @@
 # Project scope and dataset roadmap
 
-**Single source of truth, updated 2026-08-15.** This document replaces the former
+**Single source of truth, updated 2026-08-24.** This document replaces the former
 `SCOUTING_AND_SCOPING.md`, `_checks/handoff_remaining_builds.md`, and
 `NOTE_project_purpose_and_scope.md`. It combines four questions that had drifted across those files:
 
@@ -12,8 +12,8 @@
 Inclusion decisions are stable and citable: amend an IN / EXCLUDED / OUT-OF-SCOPE decision only
 after an explicit owner decision. Build status is operational and should be updated whenever a
 dataset or merge lands. The detailed per-folder procedure remains
-`__HOWTO_build_a_dataset_file.md`; this file records the queue and the decisions, not a second copy
-of the HOWTO.
+`_skills/build-dataset-item/references/__HOWTO_build_a_dataset_file.md`; this file records the
+queue and the decisions, not a second copy of the HOWTO.
 
 Before adding, removing, or re-scaffolding a reviewed paper, consult
 `SOURCE_DISPOSITION_REGISTER.md`. It is the canonical cross-project log for documented skips,
@@ -53,7 +53,7 @@ roughly 25 mammals for:
 
 A V1 and entorhinal counterpart to the M1 trait set is therefore in scope. V1 coverage is already
 better than the repository name suggests: `Stephan_etal_1981` area striata,
-`Zilles__Rehkamper_1988` area-striata grey, `Bush_Allman_2004_b` V1 grey,
+`Zilles_Rehkämper_1988` area-striata grey, `Bush_Allman_2004_b` V1 grey,
 `Smaers_etal_2017` visual cortex grey/white/surface, `Changizi_Shimojo_2005` V1/A1/S1,
 `Frahm_etal_1998` MT, `deSousa_etal_2010` V1–LGN, and `Collins_etal_2010` cortical surface.
 Entorhinal coverage is much thinner; the Stephan schizocortex/hippocampus columns are the obvious
@@ -314,9 +314,9 @@ regional volume.
 | Loose paper | Extractable target | Status | Build / merge decision |
 |---|---|---|---|
 | Reep, Finlay & Darlington 2007 | Table 1: 29 specimens × 11 regional volumes | **BUILT** — `Reep_etal_2007/` | Frozen snapshot, CSV, definitions, reader, and public TSV. Add to the volume merge as independent team `Reep`; preserve its one-side ×2 provenance. Reep's diencephalon excludes globus pallidus and its striatum includes it, so those two use definition-specific terms. Amygdala also overlaps paleocortex. |
-| Campos & Welker 1976 | Table 1: capybara and guinea-pig brain subdivisions, cortical morphometry, cell density and cell number | **PLANNED** | Mixed datatype. Split regional volume, area/thickness, and cell-density/count outputs during the build; retain the two raw specimen columns and keep the printed multiplication factors derived. |
-| Halley & Krubitzer 2019 | Figure 1: 39-species dorsal-thalamus versus neocortex synthesis | **PLANNED — SOURCE AUDIT FIRST** | Secondary review figure, mostly assembled from upstream volumetric sources. Audit cited primaries and project overlap before plot digitization; the marmoset thalamus point is explicitly estimated and must not be treated as an independent measurement. |
-| Armstrong 1979 | Tables 1–9: thalamic relay-nucleus volume, neuronal density/count, and perikaryal volume | **PLANNED** | Mixed primary series. Build specimen-level regional volumes separately from cell density/count and neuronal-size distributions; create a specimen crosswalk for the abbreviations and label literature-comparison rows as secondary. |
+| Campos & Welker 1976 | Table 1: capybara and guinea-pig brain subdivisions, cortical morphometry, cell density and cell number | **BUILT 2026-08-24** | Frozen 20-measure snapshot; separate volume, cortical-morphometry, and cell-count products plus a long public table. Both specimens and all printed factors retained; three source arithmetic discrepancies are flagged and tested. |
+| Halley & Krubitzer 2019 | Figure 1: 39-species dorsal-thalamus versus neocortex synthesis | **DOCUMENTED SKIP 2026-08-24** | Source audit reconstructs all 39 points from data already held: 37 Stephan 1981 rows plus the two Campos 1976 rodents. No plot digitization/public TSV. The audit also records caption source and marmoset-label contradictions. |
+| Armstrong 1979 | Tables 1-9: thalamic relay-nucleus volume, neuronal density/count, and perikaryal volume | **BUILT 2026-08-24** | Frozen 106-row transcription; separate volume, density/count, and perikaryal products plus a long public table. Specimen crosswalk links `Hylo.-h` and `Hylo.-s` as two hemispheres of one gibbon and identifies the three-brain human count estimate. |
 
 The other staged files already have source folders and registry coverage, so no duplicate rows were
 created: DeCasien & Higham 2019 (including `41559_2019_969_MOESM3_ESM.xlsx`), Frahm et al. 1997,
@@ -354,12 +354,12 @@ figures.
    and returns no downloadable files. The scaffold and reader stay in place. Do not fabricate its
    columns or request access on the owner's behalf; build it when the files are supplied or access
    is granted.
-2. **Campos & Welker 1976:** build Table 1 as separate volume, cortical-morphometry, and cell-count
-   products; do not force the mixed units through the volume merge.
-3. **Halley & Krubitzer 2019:** complete the Figure 1 primary-source and overlap audit before any
-   digitization or dataset creation.
-4. **Armstrong 1979:** transcribe Tables 1–9 into specimen-level, datatype-specific outputs and
-   resolve specimen abbreviations.
+2. **Campos & Welker 1976 - complete 2026-08-24:** Table 1 is built as separate volume,
+   cortical-morphometry, and cell-count products; the mixed units are not wired into one merge.
+3. **Halley & Krubitzer 2019 - audited 2026-08-24:** all 39 Figure 1 points duplicate upstream
+   primary tables already held, so the figure is a documented skip and is not digitized.
+4. **Armstrong 1979 - complete 2026-08-24:** Tables 1-9 are built into specimen-aware,
+   datatype-specific outputs with a specimen crosswalk and secondary comparison rows labeled.
 
 ### Remaining administration and wiring
 
@@ -453,7 +453,7 @@ figures.
 | 4 | Capellini et al. 2008 — mammalian sleep (REM %, daily sleep) | IN | `Capellini_etal_2008/` (+ sleep standardized-term template) | `__merging_sleep` (extends beyond primate-only REM) |
 | 5 | Heuer et al. 2019 — neocortical folding (34 primates, MRI) | IN, **separate** | `Heuer_etal_2019/` | **none** — housed separately, never pooled with Zilles GI |
 | 6 | Cerebellar folding — **Heuer et al. 2023** (eLife 12:e85907) | ✅ **BUILT 2026-08-15** | `Heuer_etal_2023/` | dedicated `__merging_cerebellar_folding` + Shiny app; **never pooled with Ashwell 2020 foliation or neocortical GI** |
-| 7 | Medina-González 2026 — limb excursion, 182 mammals | IN, **blocked: restricted source record** | `MedinaGonzalez_2026/` (+ reader scaffold) | `__merging_behaviour` after files become available |
+| 7 | Medina-González 2026 — limb excursion, 182 mammals | IN, **blocked: restricted source record** | `MedinaGonzalez__2026/` (+ reader scaffold) | `__merging_behaviour` after files become available |
 | 8 | Corticospinal / CM termination extent | ✅ **BUILT 2026-08-15**, renamed to the house pattern + re-keyed to the article DOI same day | `Bortoff_Strick_1993/` (Table 1, curated) | behaviour (`CST_termination_grade` + cautious CM inference), team `Bortoff_Strick`, **primary** |
 | 9 | ~~Betz cells (compile-from-lit)~~ → **Jacobs et al. 2018** — gigantopyramidal + M1 pyramidal morphology | IN, **snapshots built 2026-08-04** | `Jacobs_etal_2018/` (Tables 3 + 5) | `__merging_cellcounts` as **regional M1** sub-trait (never pooled with whole-cortex counts) |
 | — | Reader lineage — technical innovation (2002 classic + 2011 Dryad) | ✅ **BUILT + WIRED 2026-08-15** | `Reader_etal_2011/` (+ `innovation_reader.xlsx`) | `__merging_behaviour` (report counts + effort variables) |
@@ -613,7 +613,7 @@ counts to Reader totals.
   and evolution of cerebellar folding in mammals.* eLife 12:e85907. DOI **10.7554/eLife.85907**.
   First author is Heuer; **A. A. de Sousa (repo owner) is a co-author** → left for the owner to judge.
 
-### 7. Medina-González 2026 — joint angular excursion in terrestrial mammals (`MedinaGonzalez_2026/`)
+### 7. Medina-González 2026 — joint angular excursion in terrestrial mammals (`MedinaGonzalez__2026/`)
 
 - **Merge:** `__merging_behaviour` (locomotion/gait), beside Granatosky and Wimberly.
 - **Citation:** Medina-González, P. (2026). *Joint Angular Excursions and Angular Range Utilization
@@ -638,7 +638,8 @@ counts to Reader totals.
 ## Tier 3 — M1-core traits worth compiling by hand
 
 The most *on-theme* (M1 output pathway) but existing only as scattered per-species values, so each is
-a **hand-built `_snapshot`** per `__HOWTO_build_a_dataset_file.md` (printed/scanned route), not a
+a **hand-built `_snapshot`** per
+`_skills/build-dataset-item/references/__HOWTO_build_a_dataset_file.md` (printed/scanned route), not a
 journal download.
 
 ### 8. Corticomotoneuronal / corticospinal termination extent across primates — ✅ BUILT 2026-08-15
@@ -699,7 +700,8 @@ and `species_reference.csv` has no `Class` column. Ingest only after Part 3 do-f
 
 ## To finish any source (do on the OneDrive copy, with R)
 
-Per `__HOWTO_build_a_dataset_file.md`, and spelled out in each folder's README:
+Per `_skills/build-dataset-item/references/__HOWTO_build_a_dataset_file.md`, and spelled out in
+each folder's README:
 
 1. **Download the frozen source** (DOIs/Zenodo/Dryad IDs are in each README).
 2. **Confirm exact column headers** — never build against a guessed schema. Reader, Navarrete, and
@@ -711,12 +713,80 @@ Per `__HOWTO_build_a_dataset_file.md`, and spelled out in each folder's README:
    standardized-term rows) — only after the source file exists, or the merge errors.
 6. Re-run the merge's compile script and check species resolve and no double-counting.
 
-## Current order of work
+## Current order of work (refreshed 2026-08-31; audit in `_checks/registry_audit_20260831.md`)
 
-1. Audit and, where still absent, wire Capellini sleep, Liu hand, and Jacobs M1 morphology.
-2. Build Medina-González immediately after its restricted files become available.
-3. Decide on a class-aware destination before compiling Olkowicz or any other avian shelf dataset.
-4. Implement the region tags and per-region coverage audit from Part 1.
+1. **Registry hygiene — refreshed 2026-08-30 (`_checks/name_soundness_audit_20260830.md`
+   is now the canonical list).** Done since 08-25: Weaver rows fixed (→ Weaver__2001),
+   Deaner folder renamed, Todorov row added (but its key `rspb20191712si001` mismatches the
+   `dimorphdata` products — align one side), K62 canonicalized, empty `Schultz_Dunbar_2010/`
+   renamed → `Shultz_Dunbar_2010/` (folder was the typo; the author is Shultz). Remaining
+   one-sitting Excel queue: register Hutsler ×4 + `Stephan_etal_1987_Table2` + Deaner 2007
+   (+ stubs Reader_Laland 2002 / Weaver 2005 / Changizi_He 2005 when adopted); fix the
+   VanEssen row (citation carries a reference-manager artifact author "New Collective, A.";
+   name should be `VanEssen_Drury_1997_Table1` — **verified against the PDF 2026-08-31**: two
+   authors only, artifact confirmed; folder products already carry the corrected name, rename the
+   row to match); Item numbers for
+   `Shultz_Dunbar_2010_`, `Stephan_Pirlot_1970_`, `Chaplin_etal_2013_`, `Veilleux_Kirk_2014_`;
+   repair the corrupted `Young_etal_2013_xml:space="preserve">b_Table1` key; the Olkowicz
+   figshare/PNAS key decision (`_checks/script_repairs_20260829.md`); remove or purpose
+   `data_intermediate/`.
+2. **Cell-counts + surface-areas intake — surfaces DONE 2026-08-25.** All five TODO sources were
+   already built; the gap was wiring. `__merging_cortical_areas` now carries Collins 2016 (chimp
+   cortex/V1/V2; M1 superseded by Young — same specimen), Mota 2015 own columns and Mota 2019
+   AT/AE/T, with new terms (exposed surface, thickness, MHH folding index, V1/V2 regional), a
+   Mota-lineage supersede (2019 > 2015), Mota printed-name alias repairs, and an AG=total-surface
+   correction to the 2015 definitions (the old "exposed" reading would have double-folded via
+   AG×FI). Outputs regenerated offline (329 long rows, 66 species) — **re-run
+   `standardized_term.R` + `cortical_areas_compiled.R` in RStudio to confirm.** Remaining from this
+   intake: the regional CELL-COUNT reshape (Kaas V1/M1 densities, HH 2013 mouse areas) — design
+   decision recorded in `__merging_cellcounts/WIRING_into_cellcounts.md` (owner choice: wide
+   per-area columns vs a separate regional product); Mota 2019 VG/VW volumes HELD for a
+   `__merging_volumes` overlap audit.
+   **Surface-area candidates from the Project Kaskan review sheet (2026-08-25).** The restricted
+   Kaskan compilation (`…-restricted/unpublished_data/____Unpublished__ProjectKaskan/Project
+   Kaskan remeasuring/M1 surface.xlsx`) quotes published values whose primaries have no public
+   source folder yet — build from the primaries (verify citations in EndNote first):
+   ~~**Demirci et al. 2023**~~ — **BUILT 2026-08-31** (`Demirci_etal_2023_Fig.1`: SA+V for all 12
+   species from the full-res Fig. 1; both-hemisphere values, halve SA at wiring; R rerun pending);
+   ~~**Van Essen & Drury 1997**~~ — **BUILT 2026-08-31** (`VanEssen_Drury_1997_Table1`: neocortex +
+   5 lobes + sulcal/gyral L/R + text V1 L/R; per-hemisphere as published; R rerun + row rename
+   pending; still chase its cited Filiminoff 1932 / Stensaas 1974 human V1 primaries);
+   ~~**Chaplin et al. 2013**~~ — **BUILT 2026-08-31** (`Chaplin_etal_2013_ResultsText`: the
+   candidate is the J Neurosci differential-expansion paper, doi 10.1523/JNEUROSCI.2909-13.2013 —
+   owner repointed the row + swapped the PDF same day; marmoset 963 / capuchin 6,796 / macaque
+   11,876 mm², n=1 each, mid-thickness not pial, macaque = reused F99 atlas specimen; set the
+   row's Item number to `ResultsText`, then R rerun. The *other* Chaplin 2013 — marmoset V1
+   retinotopy, doi 10.1002/cne.23215, V1 totals 193/214 mm² — is out of the queue unless its V1
+   values are wanted as a separate row).
+   ~~Smaers 2017 Brodmann-1909
+   revisit~~ — **DONE 2026-08-25**: `Smaers_etal_2017_TableS1part2` wired as a SECONDARY
+   (Brodmann-1909-via-Smaers; supersedable by a future 1909 primary build) with three new regional
+   terms, and `Brodmann__1913_Table1` wired as a primary whole-cortex source (34 taxa, one human
+   row: Europäer Durchschnitt). Additivity audit: regions sum exactly to the 1913 totals
+   (marmoset/gibbon/chimp); the mandrill other-association cell is excluded (+10,000 misprint in
+   one of the two sources). Merge now 400 long rows / 82 wide species. **Finlay 2006 is
+   whole-paper FLAGGED (owner, 2026-08-25):** the source-attribution audit
+   (`Finlay_etal_2006/Finlay_etal_2006_Table6.1_source_attribution.csv`) found its traced
+   surfaces systematically low for small mammals/marsupials and several rows without a citable
+   primary; all its rows are held out of the wide table
+   (`flagged_pending_ProjectKaskan_check`) and the registry row carries the flag — verify against
+   the Project Kaskan remeasuring dataset once built, then unflag per column. The sheet's own
+   remeasured values are unpublished and stay restricted (image-analysis pass planned there;
+   see `M1_surface_STATUS_and_PLAN_20260825.md` in the Kaskan folder). Registry rows
+   `Changizi__2001_Figure3` + `Finlay_etal_2006_Table6.1` ("Species -- wait for Project Kaskan")
+   wait on the Kaskan area-name/species tables.
+3. **R-side runs on next RStudio session:** `_tools/file_list.R` (AUTO TSV column; explains
+   `Upham_etal_2019_Completed100` and `DeCasien…SocialSystem` showing FINISHED-but-notfound),
+   `_checks/registry_snapshot.R` (snapshot is 14 rows stale), and the pending Completed100
+   sample-trees R run.
+4. Audit and, where still absent, wire **Liu hand and Jacobs M1 morphology** (Capellini sleep is
+   done — `__merging_sleep` built and wired; neither Liu nor Jacobs appears in any
+   `__merging_*/*.R` yet).
+5. **Baron 1996 bat block** wiring into volumes — blocked on the seven historical taxon-concept
+   decisions plus within-source averaging.
+6. Build Medina-González immediately after its restricted files become available.
+7. Decide on a class-aware destination before compiling Olkowicz or any other avian shelf dataset.
+8. Implement the region tags and per-region coverage audit from Part 1.
 
 *(The original scouting list put "Heuer 2018 volumes" first as the biggest new-species yield. That
 candidate is the excluded Navarrete paper — see curator decisions 1–2. Nothing to do there without

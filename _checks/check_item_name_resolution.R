@@ -174,7 +174,7 @@ claimed <- trimws(reg_enc[!is.na(reg_enc) & nzchar(reg_enc)])
 orphans <- sort(setdiff(sub("\\.tsv$", "", tsv_files), claimed))
 cat(sprintf("\norphaned TSVs (on disk, claimed by no registry row): %d\n", length(orphans)))
 for (o in orphans)
-  cat(sprintf("      %s.tsv   <- a registry row was lost after this file was built\n", o))
+  cat(sprintf("      %s.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)\n", o))
 
 # ---- Rows added without running file_list.R -------------------------------
 half_written <- which(!is.na(reg_cite) & nzchar(trimws(reg_cite)) &

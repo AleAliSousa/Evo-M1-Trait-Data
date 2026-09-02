@@ -1,0 +1,26 @@
+value_id,Species_SensoryData,fixture_value,fixture_method,fixture_substrate,match_row,kk_va_min,kk_va_max,status,true_owner_if_displaced
+SensoryData_r007_visual_acuity_max,Aonyx cinerea,2.2,B,air,Amblonyx cinerea,1.9,2.2,CONFIRMED correct,
+SensoryData_r008_visual_acuity_max,Aotus azarae,2.0,B,water,,,,species/method/substrate absent from KK2004,Aonyx cinereus
+SensoryData_r013_visual_acuity_max,Bos taurus,4.2,A,water,,,,species/method/substrate absent from KK2004,Balaenoptera acutorostrata
+SensoryData_r016_visual_acuity_max,Camelus bactrianus,7.1,A,air,,,,species/method/substrate absent from KK2004,Callorhinus ursinus|Otolemur crassicaudatus
+SensoryData_r040_visual_acuity_max,Delphinapterus leucas,2.6,A,water,Delphinapterus leucas,2.6,2.6,CONFIRMED correct,
+SensoryData_r041_visual_acuity_max,Delphinus delphis,3.8,A,water,Delphinus delphis,3.8,3.8,CONFIRMED correct,
+SensoryData_r055_visual_acuity_max,Eschrichtius robustus,2.7,A,water,Eschrichtius robustus,2.7,2.7,CONFIRMED correct,
+SensoryData_r058_visual_acuity_max,Eumetopias jubatus,4.2,B,water,Eumetopias jubata,4.2,4.2,CONFIRMED correct,
+SensoryData_r067_visual_acuity_max,Inia geoffrensis,0.6,A,air,Inia geoffrensis,0.6,0.6,CONFIRMED correct,
+SensoryData_r068_visual_acuity_max,Inia geoffrensis,0.8,A,water,Inia geoffrensis,0.8,0.8,CONFIRMED correct,
+SensoryData_r069_visual_acuity_max,Lagenorhynchus obliquidens,5.0,B,air,Lagenorhynchus obliquidens,5.0,5.0,CONFIRMED correct,
+SensoryData_r097_visual_acuity_max,Myotis lucifugus,0.1,B,air,Myotis lucifugus,0.05,0.1,CONFIRMED correct,
+SensoryData_r118_visual_acuity_max,Phoca vitulina,3.6,B,air,Phoca vitulina,3.6,3.6,CONFIRMED correct,
+SensoryData_r119_visual_acuity_max,Phoca vitulina,3.6,B,water,,,,species/method/substrate absent from KK2004,Tursiops truncatus
+SensoryData_r120_visual_acuity_max,Phocoena phocoena,2.1,A,air,Phocoena phocoena,2.1,2.1,CONFIRMED correct,
+SensoryData_r121_visual_acuity_max,Phocoena phocoena,2.7,A,water,Phocoena phocoena,2.7,2.7,CONFIRMED correct,
+SensoryData_r122_visual_acuity_max,Phocoenoides dalli,2.6,A,water,Phocoenoides dalli,2.5,2.6,CONFIRMED correct,
+SensoryData_r126_visual_acuity_max,Pseudorca crassidens,3.3,A,water,Pseudorca crassidens,3.3,3.3,CONFIRMED correct,
+SensoryData_r138_visual_acuity_max,Saccopteryx sp.,1.0,A,air,Saccopteryx sp.,1.0,1.0,CONFIRMED correct,
+SensoryData_r143_visual_acuity_max,Sciurus griseus,3.9,B,air,Sciurus griseus,3.9,3.9,CONFIRMED correct,
+SensoryData_r149_visual_acuity_max,Sotalia fluviatilis,0.9,A,air,Sotalia fluviatilis,0.9,0.9,CONFIRMED correct,
+SensoryData_r150_visual_acuity_max,Sotalia fluviatilis,1.2,A,water,Sotalia fluviatilis,1.2,1.2,CONFIRMED correct,
+SensoryData_r165_visual_acuity_max,Tursiops truncatus,2.5,B,air,Tursiops truncatus,1.6,2.5,CONFIRMED correct,
+SensoryData_r166_visual_acuity_max,Tursiops truncatus,3.8,B,water,Tursiops truncatus,2.5,3.8,CONFIRMED correct,
+SensoryData_r168_visual_acuity_max,Zalophus californianus,5.7,B,air,Zalophus californicus,5.4,5.7,CONFIRMED correct,

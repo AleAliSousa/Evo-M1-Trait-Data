@@ -5,7 +5,7 @@ mirroring `__merging_volumes/volumes_long.csv` for the volume data type.
 
 ## Inputs
 - Heiss_etal_2004 - Homo sapiens regional CMRgl (PET).
-- Kaufman_2004 - 12 genera, weighted-mean CMRgl / CMRO2 / CBF.
+- Kaufman__2004 - 12 genera, weighted-mean CMRgl / CMRO2 / CBF.
 - Karbowski 2007 - NOT included: the source xlsx headers are OCR-garbled and were never parsed
   into `energetics_long.csv`; it needs a dedicated extraction pass before it can be merged.
 

@@ -20,18 +20,28 @@ Values transcribed from the paper text/figures to `Collins_etal_2016_text_snapsh
 (9.51 billion → 9.51e9), non-breaking spaces stripped, `% neurons` kept as a fraction. Columns in
 `reference_tables/Collins_etal_2016_Table1_definitions.csv`.
 
-## Specimen flag — likely the same chimp as Young 2013 (M1)
-The `specimen_overlap` column marks every row: this chimpanzee is almost certainly the **same
-individual** as the *Pan troglodytes* in **Young et al. 2013 (M1, folder `Young_etal_2013`)** — both
-are the Kaas lab's single female chimpanzee obtained from the Texas Biomedical Research Institute. The
-M1 surface area differs slightly (**2497 mm² here vs 2700 mm² in Young 2013**), consistent with
-different M1 dissection boundaries rather than different animals. **Do not treat Collins 2016 and
-Young 2013 as independent chimpanzees.**
+## Specimen flag — registered as `KAAS-PAN-11_38`
 
-## Merge note (not added)
-This table is **not** added to `__merging_cortical_areas` here: its whole-cortex surface (341 cm² =
-34,100 mm²) and M1 area (2497 mm²) would need explicit dedupe against Young 2013's chimp first. Left
-as a deliberate decision. Same lineage as Collins 2010 (whole cortex per piece) and the other Kaas
-tables — see the shared-specimen web.
+Public dissertation evidence closes the Collins identity link: Turner describes
+the same 53-year-old female Texas Biomedical chimpanzee and right flattened
+cortex, while Miller identifies her left-hemisphere V1 series as case `11_38`.
+Those three source rows are `matched` in
+`_keys/specimen_crosswalk/specimen_crosswalk.csv`.
 
-Pipeline: Source → Snapshot ✅ → Data readable ✅ → Species note ✅ → Online database ✅
+Young et al. 2013 remains a high-confidence **probable** link to the same chimp,
+not an accession-confirmed one: Young prints the Kaas lab's single Texas
+chimpanzee but omits age, sex, and case number. Its M1 surface area is 2700 mm²
+versus 2497 mm² here, consistent with different M1 boundaries. **Do not count
+the Young and Collins chimp rows as independent without resolving that flag.**
+
+## Merge note — WIRED into `__merging_cortical_areas` (2026-08-25, owner decision)
+The dedupe hold is resolved: whole-cortex surface (341 cm² → 34,100 mm²), V1 (3,504 mm²) and V2
+(2,869 mm²) enter as active values; **M1 (2,497 mm²) enters as `superseded_by_Young_etal_2013`** —
+same specimen as Young 2013's chimp (boundary difference, 2,700 mm² there), Young is the
+M1-dedicated paper, the two are never averaged. The "somatosensory/premotor block" and "Prefrontal
+Cortex" rows are dissection blocks — provenance only, not wired. The left-hemisphere V1
+serial-section row is a volume and is excluded by the merge's area filter. Cell/neuron **counts**
+in this table are NOT yet in any merge — they await the regional cell-count reshape
+(`__merging_cellcounts/WIRING_into_cellcounts.md`).
+
+Pipeline: Source → Snapshot ✅ → Data readable ✅ → Species note ✅ → Online database ✅ → Merge (areas) ✅

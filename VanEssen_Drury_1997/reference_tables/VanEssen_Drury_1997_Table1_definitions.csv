@@ -1,0 +1,11 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,species binomial,,Species,,primary,Primates,VanEssen_Drury_1997_Table1,single digital-atlas individual (Visible Man),
+common_name,common name,,,,info,Primates,VanEssen_Drury_1997_Table1,,
+specimen,specimen description,,,,info,Primates,VanEssen_Drury_1997_Table1,"Visible Man, Visible Human Project (NLM), adult male cadaver",
+structure,cortical region the row describes,,,,info,Primates,VanEssen_Drury_1997_Table1,neocortex / lobes / sulcal / gyral / V1,
+hemisphere,hemisphere measured,,,,info,Primates,VanEssen_Drury_1997_Table1,left / right; values are per-hemisphere,
+method,how the surface was measured,,,,info,Primates,VanEssen_Drury_1997_Table1,tile-area sums on 3-D reconstruction from 1 mm section images; NOT flat-map areas,
+area_cm2,surface area of the structure,cortex,surface area,value cm2,primary,Primates,VanEssen_Drury_1997_Table1,per hemisphere; authors note their total is likely a slight underestimate,
+pct_neocortex,area as percent of that hemisphere's total neocortex,cortex,surface area,percent,derived-in-source,Primates,VanEssen_Drury_1997_Table1,as printed (integer for Table 1 rows; 1 dp for V1 text rows),
+where_in_paper,Table 1 vs text,,,,provenance,Primates,VanEssen_Drury_1997_Table1,,
+source,registry item key,,,,provenance,Primates,VanEssen_Drury_1997_Table1,,

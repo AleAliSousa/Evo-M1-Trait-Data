@@ -5,7 +5,7 @@ Output: `energetics_long.csv` (schema: reference, species, region, measure, valu
 
 ## Coverage
 - Heiss_etal_2004: Homo sapiens
-- Kaufman_2004: Canis, Capra, Equus, Felis, Homo, Lepus, Macaca, Meriones, Mus, Ovis, Rattus, Sus
+- Kaufman__2004: Canis, Capra, Equus, Felis, Homo, Lepus, Macaca, Meriones, Mus, Ovis, Rattus, Sus
 - Karbowski 2007: multi-species regional glucose utilization & oxygen consumption -- the source
   xlsx headers are badly OCR-garbled, so it is described here but not yet parsed into the table;
   it needs a dedicated extraction pass (like Stephan 1970).

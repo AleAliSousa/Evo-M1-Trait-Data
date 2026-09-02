@@ -1,0 +1,13 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species_as_published,Scientific taxon label printed in Table 1.,species,label,raw,info,Mammalia,Heesy__2004 Table1,Preserved verbatim; no taxonomic harmonisation applied.,Table 1 species column.
+common_name,Common name printed in Table 1.,species,label,raw,info,Mammalia,Heesy__2004 Table1,Preserved verbatim.,Table 1 common name column.
+n_specimens,Number of skull specimens used for orbit convergence.,orbit,sample_size,n,primary,Mammalia,Heesy__2004 Table1,,Table 1 n column; methods state 121 specimens across 27 taxa.
+orbit_convergence_mean_deg,"Mean orbit convergence, degrees.",orbit,angle,mean,primary,Mammalia,Heesy__2004 Table1,Defined as the dihedral angle between orbital margin plane and midsagittal plane.,Table 1 orbit convergence column.
+orbit_convergence_sd_deg,"Standard deviation printed in parentheses for orbit convergence, degrees.",orbit,angle,sd,primary,Mammalia,Heesy__2004 Table1,Blank where no parenthetical SD was printed.,Parsed from Table 1 parentheses.
+binocular_visual_field_min_deg,"Minimum binocular visual field overlap, degrees.",visual field,angle,minimum,secondary,Mammalia,Heesy__2004 Table1,Equals maximum for single-valued entries.,Table 1; data derived from cited literature.
+binocular_visual_field_max_deg,"Maximum binocular visual field overlap, degrees.",visual field,angle,maximum,secondary,Mammalia,Heesy__2004 Table1,Equals minimum for single-valued entries.,Table 1; data derived from cited literature.
+binocular_visual_field_midpoint_deg,"Midpoint of printed binocular visual field range, degrees.",visual field,angle,derived midpoint,derived,Mammalia,Heesy__2004 Table1,"For single values, identical to published value. For ranges, arithmetic midpoint.",Derived from min and max.
+binocular_visual_field_reference,Reference(s) given by Heesy for visual field value.,visual field,citation,raw,secondary,Mammalia,Heesy__2004 Table1,Preserved as printed. Joins to Heesy__2004_Table1_references.csv on ref_key; multi-citations in one cell separated by '; '.,Table 1 reference column.
+data_role,Provenance role of variables in this compiled table.,record,provenance,category,info,Mammalia,Heesy__2004 Table1,,Orbit convergence newly measured; visual field values literature-derived.
+note,Curation note for ranges or table footnotes.,record,note,raw,info,Mammalia,Heesy__2004 Table1,,Curator note based on printed table and footnote.
+source,Dataset item identifier.,record,source,raw,info,Mammalia,Heesy__2004 Table1,,Constant source label.

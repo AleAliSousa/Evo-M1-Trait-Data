@@ -1,0 +1,11 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species_as_published,Scientific name used for the wallaby.,species,label,raw,info,Macropus eugenii,Jung et al. 2022,,Article text
+region,Anatomical or visual-field region associated with the observation.,brain/visual system,region,raw,info,Macropus eugenii,Jung et al. 2022,,Article text
+trait,Measured or reported trait.,brain/visual system,trait,raw,info,Macropus eugenii,Jung et al. 2022,,Article text
+value,Numeric result reported in the article.,brain/visual system,value,varies,primary_or_secondary,Macropus eugenii,Jung et al. 2022,See data_role and note.,Article text
+unit,Unit reported or dimensionless designation.,brain/visual system,unit,raw,info,Macropus eugenii,Jung et al. 2022,,Article text
+stat,Statistic represented by value.,brain/visual system,statistic,raw,info,Macropus eugenii,Jung et al. 2022,,Article text
+n,Sample size explicitly associated with the result when reported.,sample,sample_size,n,info,Macropus eugenii,Jung et al. 2022,Blank where not explicitly associated.,Article text
+data_role,Primary measurement or secondary compiled value.,record,provenance,category,info,Macropus eugenii,Jung et al. 2022,,Article text
+note,"Associated individual values, SD, P value, or provenance qualification.",record,note,raw,info,Macropus eugenii,Jung et al. 2022,,Article text
+source_location,Location supporting the record.,record,source,raw,info,Macropus eugenii,Jung et al. 2022,,Article page or figure

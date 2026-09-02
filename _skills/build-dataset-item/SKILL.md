@@ -11,8 +11,9 @@ entry point; the two references carry every procedural detail and should be
 read (not re-derived) whenever a step below needs more than a sentence:
 
 - `references/__HOWTO_make_a_snapshot.md` — what a snapshot is, fidelity
-  checklist, extraction methods (download / scrape / tabulapdf / Adobe export
-  / manual)
+  checklist, choosing the format (evidence, not product), constructed
+  snapshots from figures/text, extraction methods (download / scrape /
+  tabulapdf / Adobe export / manual)
 - `references/__HOWTO_build_a_dataset_file.md` — the full 11-section pipeline:
   folder layout, reformat script pattern, units, species harmonisation,
   comparison/QA, definitions schema, primary/secondary flagging, merges
@@ -52,9 +53,20 @@ build_dataset_item(item_dir, item_name, dry_run = FALSE)        # 3. build + val
    `validate_dataset_item()` automatically and checks all 7 invariants
    (csv / tsv / readme / definitions / frozen_source / registry_row /
    tsv_name_match, with a trailing-underscore guard on the last one).
-5. **Register** — set `Item number` (col D) and the descriptive columns in
-   `__ReadMe.xlsx`; set `Data role` (primary/secondary/both) per §9 of the
-   build HOWTO. Never hand-edit columns E–M (Item name/encoded formulas).
+5. **Register** — emit `<Item>_registry_row.xlsx` in the paper folder, built
+   against the live Sheet1 header row of `__ReadMe.xlsx` (currently A–AN).
+   Fill ONLY column A (citation), C (only if overriding the DOI), D
+   (`Item number`, e.g. "Table 1"), and the descriptive columns N→AN (title,
+   notes, Progress stage, Snapshot, Source Type/format, URLs, Possible
+   Traits, Sample type, Method, Subcategory, Main Trait(s), Taxon group,
+   Data role per §9 of the build HOWTO, Measure type, relevance). Leave B
+   and E–M blank and grey — formula/generated, filled by `_tools/file_list.R`.
+   Include a HOW_TO_PASTE sheet. The **owner** pastes the row as values into
+   the first empty Sheet1 row, runs `file_list.R`, then verifies K/L: Item
+   name matches, Item encoded has no trailing `_` and equals the public TSV
+   stem (rename the TSV if not — the registry is the authority). Never
+   script-edit the workbook for routine registration; scripted edits are for
+   batch restoration only.
 
 ## House rules (live only here)
 
@@ -76,6 +88,28 @@ build_dataset_item(item_dir, item_name, dry_run = FALSE)        # 3. build + val
   points at the wrong item after the next registry edit. `validate_dataset_item()`
   and `build_dataset_item()` both resolve by name for this reason — do the
   same in any ad-hoc script.
+- **Per-row source citations are data: extract them item-scoped and
+  join-ready, never as the full bibliography.** When a table's values cite
+  sources (reference numbers or author-year), build
+  `reference_tables/<Item>_references.csv` with `ref_key` (exactly as the
+  data column prints it, one row per cited work), `cited_in_column`,
+  `citation` (verbatim bibliography entry), `note` — only the works the item
+  actually cites. The analysis CSV keeps the printed keys in their column,
+  multi-citations in one cell separated by `"; "`, so the lookup binds later
+  (split on `"; "`, join on `ref_key`); record that join in the definitions
+  file's Note. When the paper publishes the per-datapoint sources as their
+  own table, snapshot and build that table like any other item file and bind
+  it the same way. Cited-but-absent entries and year mismatches go in
+  `note`, kept verbatim, never silently corrected (Heesy Table 1 cites
+  Dunlop et al. (1998); the bibliography prints only 1997). Numbered-ref
+  variant: `Iwaniuk_etal_1999`. These lookups are a roadmap for primary
+  ingestion — never re-ingest the compiled figures as if primary.
+- **No comparison folder in the public repo.** A founder item (no
+  preexisting `__Public` value to compare against) gets no comparison at
+  all; when a comparison is warranted it lives in
+  `Evo-M1-Trait-Data-restricted` per `REPO_BOUNDARY.md` §3. The build writes
+  its TSV directly to the repo-level `__Public/comparative-data/` — never a
+  nested `__Public/` or `comparison/` inside the paper folder.
 - **Digital-native sources skip the transcription, never the suffix.** If
   the source is a journal-supplied CSV/XLSX/TSV you can download and script
   directly, the untouched download *is* the frozen copy: copy-rename it to

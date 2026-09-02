@@ -1,0 +1,5 @@
+if (!requireNamespace("readxl", quietly=TRUE)) stop("Install readxl")
+if (!requireNamespace("readr", quietly=TRUE)) stop("Install readr")
+x <- readxl::read_excel("Jung_etal_2022_ReportedResults_snapshot.xlsx", skip=1)
+readr::write_csv(x, "Jung_etal_2022_ReportedResults.csv", na="")
+message("Built ", nrow(x), " reported-result records")

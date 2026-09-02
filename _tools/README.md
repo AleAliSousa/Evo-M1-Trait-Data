@@ -14,8 +14,32 @@ dated one-offs still carry it for historical reasons.
 
 Sourced libraries used to live here too. They now have their own folder,
 [`_helpers/`](../_helpers/README.md), because they are neither checks nor tools:
-nothing in here is `source()`d by anything else, and nothing in `_helpers/` is
+nothing in here is `source()`d by anything else *except* `dataset_builder/`
+(below) — its four files are a self-contained library sourced through their
+own entry point, not run as standalone scripts, and nothing in `_helpers/` is
 meant to be run.
+
+## `dataset_builder/` — a sourced library, deliberately bundled here
+
+`dataset_builder/` is the one exception to "a tool acts, a check only looks."
+`audit_dataset_item.R` and `validate_dataset_item.R` only look and report —
+by the letter of the rule above they'd belong in `_checks/`. They stay here
+because they are load-bearing components of `build_dataset_item.R`, which
+does act (it runs a build script and writes files), and splitting a
+four-file library that always loads as one unit across two folders would
+cost more clarity than it buys. If that changes — if audit/validate grow
+uses outside the builder — split them into `_checks/` then.
+
+| File | Role |
+|---|---|
+| `load_dataset_builder.R` | entry point — `source()` this one file; it locates its own directory and sources the other three in dependency order, plus exposes `repo_root()` |
+| `validate_dataset_item.R` | checks the 7 hard invariants for one dataset item |
+| `audit_dataset_item.R` | pre-build audit against the 4-file convention; flags orphan TSVs |
+| `build_dataset_item.R` | runs the item's build script, then calls `validate_dataset_item()` |
+
+Not in the sweep — it is a sourced library with no side effects of its own;
+`run_all_scripts_v2.R` skips the whole folder (see its `SKIP_PATTERNS`). Full
+usage: `_skills/build-dataset-item/SKILL.md`.
 
 ## Action scripts — run deliberately
 

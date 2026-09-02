@@ -56,6 +56,7 @@ message if it is not mounted. Current cases: Carol MacLeod's neocortex workbooks
 et al. 2020 authors' corrected microglia spreadsheet (`DosSantos_etal_2020_unpublished.R` reads it
 from there; the audit that used it moved to the private repo's `restricted_checks/_cross_table/`).
 
-**If you are adding a new source:** follow `__HOWTO_build_a_dataset_file.md` as before, and place its
+**If you are adding a new source:** follow
+`_skills/build-dataset-item/references/__HOWTO_build_a_dataset_file.md` as before, and place its
 check by the rules in [`REPO_BOUNDARY.md`](REPO_BOUNDARY.md) §3 — which for most sources means
 creating the comparison folder in the private repo rather than here.

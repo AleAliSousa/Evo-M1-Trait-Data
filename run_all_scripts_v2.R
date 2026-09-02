@@ -51,6 +51,7 @@ SKIP_PATTERNS <- c(
   ## Sourced libraries, not scripts. Running one standalone just defines functions
   ## and exits -- harmless but meaningless, and it made them look like tools.
   "^_helpers/"                  = "sourced helper library, not a standalone script",
+  "^_tools/dataset_builder/"    = "sourced builder library; entry point load_dataset_builder.R",
   "(^|/)parity_R_vs_py\\.R$"    = "manual R-vs-Python port check; shells out to Rscript and python3",
   ## Dated one-shot registry editors: applied on their date, and their row guards are DESIGNED
   ## to fail afterwards (Sheet1 re-sorts, columns get renamed). Same class as the 20260815

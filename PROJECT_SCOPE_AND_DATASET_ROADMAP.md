@@ -12,8 +12,8 @@
 Inclusion decisions are stable and citable: amend an IN / EXCLUDED / OUT-OF-SCOPE decision only
 after an explicit owner decision. Build status is operational and should be updated whenever a
 dataset or merge lands. The detailed per-folder procedure remains
-`__HOWTO_build_a_dataset_file.md`; this file records the queue and the decisions, not a second copy
-of the HOWTO.
+`_skills/build-dataset-item/references/__HOWTO_build_a_dataset_file.md`; this file records the
+queue and the decisions, not a second copy of the HOWTO.
 
 Before adding, removing, or re-scaffolding a reviewed paper, consult
 `SOURCE_DISPOSITION_REGISTER.md`. It is the canonical cross-project log for documented skips,
@@ -638,7 +638,8 @@ counts to Reader totals.
 ## Tier 3 — M1-core traits worth compiling by hand
 
 The most *on-theme* (M1 output pathway) but existing only as scattered per-species values, so each is
-a **hand-built `_snapshot`** per `__HOWTO_build_a_dataset_file.md` (printed/scanned route), not a
+a **hand-built `_snapshot`** per
+`_skills/build-dataset-item/references/__HOWTO_build_a_dataset_file.md` (printed/scanned route), not a
 journal download.
 
 ### 8. Corticomotoneuronal / corticospinal termination extent across primates — ✅ BUILT 2026-08-15
@@ -699,7 +700,8 @@ and `species_reference.csv` has no `Class` column. Ingest only after Part 3 do-f
 
 ## To finish any source (do on the OneDrive copy, with R)
 
-Per `__HOWTO_build_a_dataset_file.md`, and spelled out in each folder's README:
+Per `_skills/build-dataset-item/references/__HOWTO_build_a_dataset_file.md`, and spelled out in
+each folder's README:
 
 1. **Download the frozen source** (DOIs/Zenodo/Dryad IDs are in each README).
 2. **Confirm exact column headers** — never build against a guessed schema. Reader, Navarrete, and

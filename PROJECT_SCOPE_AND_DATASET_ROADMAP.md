@@ -1,6 +1,6 @@
 # Project scope and dataset roadmap
 
-**Single source of truth, updated 2026-08-24.** This document replaces the former
+**Single source of truth, updated 2026-09-02.** This document replaces the former
 `SCOUTING_AND_SCOPING.md`, `_checks/handoff_remaining_builds.md`, and
 `NOTE_project_purpose_and_scope.md`. It combines four questions that had drifted across those files:
 
@@ -70,16 +70,25 @@ an M1 correlate: it contributes visual acuity, audiograms, sound-localization th
 interaural distance for 157 species. It naturally serves the V1 arm and the broader question of
 whether regional cell-type composition tracks function rather than size alone.
 
+**Merge route decided and built (2026-08-31):** `__merging_sensory` compiles percepts only
+(acuity, audiogram-derived thresholds, sound localization), with compilation-aware study-set
+dedupe and a medium split — ~130 species from HH 1992a, Heffner et al. 2020, Koay et al. 1998,
+and Veilleux & Kirk 2014. `SensoryData_compiled_check/` is the audit fixture (Route-B
+registration reverted by owner). Heesy 2004 and Jung et al. 2022 are built and registered but not
+yet wired into `sensory_compiled.R`; the R run is pending (no R in the build sandbox).
+
 That makes the current repository name historically accurate but increasingly narrow. A
 region-neutral name such as `Evo-Cortex-Trait-Data` is worth considering after the region tags and
 per-region coverage audit exist; renaming first would only move the ambiguity.
 
 ## Immediate scope actions
 
-1. Tag variables by region of interest.
+1. Tag variables by region of interest. *(open — `variable_catalog.csv` still has no
+   region-of-interest column as of 2026-09-02)*
 2. Scout entorhinal / hippocampal-formation volumetrics deliberately.
 3. Reconcile trait coverage against the approximately 25 sequenced species, by region.
-4. Decide the sensory-data merge route and whether performance measures form a new measure class.
+4. ~~Decide the sensory-data merge route~~ **DONE 2026-08-31** — `__merging_sensory` built,
+   percepts as their own measure class (see above).
 5. Revisit the repository name after steps 1–3.
 
 ## Registry-to-public-TSV naming contract
@@ -107,16 +116,19 @@ The naming chain in `Sheet1` is:
 It is a one-way inventory of `__Public/comparative-data/*.tsv`, not a second naming authority. The
 registry remains authoritative; the generated sheet and column M are checks against files on disk.
 
-### Formula and filename audit (2026-08-15)
+### Formula and filename audit (2026-08-15; status notes updated 2026-09-02)
+
+*(The registry has since grown to 380 data rows — counts below are the 2026-08-15 state.)*
 
 The core design is sound. All 304 populated data rows have formulas in every derived column E–M, there are no
 duplicate values in `Item encoded` (L), and independently recomputed E–L values agree with the
 intended chain. The following exceptions need curator attention:
 
-1. **One ambiguous internal `Item name`:** Excel rows 292–293 are two different Young et al. 2013
-   papers, but both produce `Young_etal_2013_Table1` in K. Their DOI-based public filenames in L are
-   unique. Because several R readers match on K and take the first match, assign these rows distinct
-   sequence values in B (for example `a` and `b`) before either is wired into another build.
+1. **One ambiguous internal `Item name` — RESOLVED by 2026-09-02:** the two Young et al. 2013
+   papers now carry distinct sequence values in B (blank vs `b`), producing
+   `Young_etal_2013_Table1` (10.3389/fncir.2013.00030) and `Young_etal_2013_b_Table1`
+   (10.1073/pnas.1318894110). Each name spans two registry rows — that is the legitimate
+   multi-row "#n" convention, not the old ambiguity.
 2. **Encoding is a representation, not another DOI:** J encodes `/`, `:`, `<`, and `>` for stable
    filenames. A generic URL encoder may encode additional characters, but the DOI Handbook permits
    several reserved characters—including semicolons—to remain literal in a DOI URL. The only
@@ -145,10 +157,10 @@ intended chain. The following exceptions need curator attention:
    not depend on someone opening Excel before non-Excel readers see the correct filenames. The
    visible M header identifies both the generated sheet and its owning R script; the list itself is
    still derived only from the public directory.
-7. **Two public files are not represented by an L value:**
-   `10.1371%2Fjournal.pbio.3000494_DNAonlyMCC.tsv` is a documented Upham 2019 fallback, while
-   `NA.tsv` is an orphaned erroneous filename. Resolve these deliberately; do not make the generated
-   inventory authoritative merely to absorb them.
+7. **Two public files are not represented by an L value — RESOLVED by 2026-09-02:**
+   `10.1371%2Fjournal.pbio.3000494_DNAonlyMCC.tsv` now has its registry row (Excel row 356,
+   `Upham_etal_2019_DNAonlyMCC`; column M reads `notfound` only until the next `file_list.R`
+   run), and the orphaned `NA.tsv` has been deleted from `__Public/comparative-data/`.
 
 Rows 296–301 use the canonical row-2 E–M formula family as of 2026-08-15. Repeated row edits have
 nevertheless split E–L into multiple shared-formula blocks per column. That fragmentation is
@@ -185,7 +197,7 @@ registry row per exported table rather than one catch-all row.
 | 65 | Ebinger 1974 | individual wild- and domestic-sheep brain/region volumes | `Tables 3-4` | **BUILT** — 10 individuals; Tables 5–10 are percentages or summaries derived from these primary tables |
 | 190 | Medina-González 2026 | AUI, limb posture, top speed, and locomotor habit; retain joint-level angles in the frozen source | `Data` | **HOLD** — adds quantitative posture and locomotor-performance traits across 182 mammals, but the source deposit is restricted |
 | 193 | Navarrete et al. 2016 | technical/non-technical innovation subtype counts and life-history composite | `Data` | **BUILT** — 167 species; complements Reader 2011, but depends on its report records. Despite “rate” in the source headers, the deposit contains integer counts and no effort denominator, so no corrected rate was invented |
-| 194 | Nguyen et al. 2020 | species × region × neuron-type dendritic and spine summary statistics | `Table 2` | **BUILT** — 49 felid region × neuron-type rows; extends Jacobs-style morphology across frontal cortex, M1, and V1 |
+| 194 | Nguyen et al. 2020 (folder/registry: `Nguyen_etal_2019`, DOI 10.1002/cne.24823) | species × region × neuron-type dendritic and spine summary statistics | `Table 2` | **BUILT** — 49 felid region × neuron-type rows; extends Jacobs-style morphology across frontal cortex, M1, and V1 |
 | 200 | Olkowicz et al. 2016 | complete region-level neuron/non-neuron counts and densities | `Dataset S1` | **BUILT / EXCLUDED FROM MAMMAL MERGE** — 28 avian species and all 75 source measurements; older `TableS1` scaffold aligned to the registered name; `Class = Aves` is explicit |
 | 207 | Schleifenbaum 1973 | individual age/sex/body/brain data plus absolute region volumes | `Tables 1-2` | **BUILT** — 33 canids; Tables 1–2 are primary and Table 3 is relative composition derived from them |
 | 288 | Weaver 2005 | no new public TSV; provenance/analysis check against Weaver 2001 Table A-15 | none — `DOCUMENTED SKIP` | retained in the registry/project to prevent duplicate work; the paper has no new raw table and only derived/reused quantitative content |
@@ -232,7 +244,7 @@ built and wired, and its **43 AVES** rows flowed straight through:
 |---|---|---|---|
 | `__merging_body_ecology/body_ecology_long.csv` | 43 | `Body_Mass` (Team `Ruf`, role secondary) | **yes** |
 | `__ShinyApp/data/evom1_traits_long.csv` | 42 | `Torpor_type`, `Torpor_Tb_min_C`, `Torpor_bout_max_h` | **yes** |
-| `__merging_sleep/sleep_long.csv` | 42 | sleep/torpor terms | no (`sleep_long` is not one of the six tables `app.R` loads) |
+| `__merging_sleep/sleep_long.csv` | 42 | sleep/torpor terms | no (`sleep_long` is not one of the seven tables `app.R` loads directly; sleep/torpor reaches the app via `evom1_traits_long`) |
 
 8 avian orders — hummingbirds, swifts, nightjars, mousebirds, owls, a kingfisher, passerines,
 pigeons. **They were never dropped by the resolver because these merges don't go through it**, and
@@ -287,9 +299,10 @@ script had been touched is obsolete.
   local CSV, variable definitions, README, and DOI/ISBN-coded public TSV. Olkowicz is shelf-stocked
   only; Medina remains restricted; Weaver remains a documented skip.
 - **Registry/file-list audit:** registered the already-built Jacobs 2016, Johnson 2016, and Peruffo
-  2019 cortical-layer TSVs on rows 299–301. The script-owned 260-file public inventory now has 258
-  registry matches; only the documented Upham `DNAonlyMCC` fallback and erroneous `NA.tsv` remain
-  exceptional.
+  2019 cortical-layer TSVs on rows 299–301. The script-owned 260-file public inventory then had 258
+  registry matches. *(2026-09-02: the public directory holds 300 TSVs and the registry 380 rows;
+  `NA.tsv` is deleted, `DNAonlyMCC` is registered, and the current exceptions list lives in
+  `_checks/registry_audit_20260902.md`.)*
 
 - **Reader 2011:** confirmed the actual Dryad schema, rebuilt `innovation_reader.xlsx` (238
   species), and added raw report counts, reduced-count sensitivity measures, and research-effort
@@ -370,8 +383,10 @@ figures.
   concepts on manual review. Standardized-term maps and merge wiring wait for those taxon decisions
   plus the required within-source species averaging. Together the tables supply the 272-row bat
   dataset most directly implicated by Willemet 2012.
-- The older scout batch still needs a targeted merge audit for Capellini sleep, Liu hand measures,
-  and Jacobs regional M1 morphology. Folder existence is not proof that merge wiring is complete.
+- ~~Capellini sleep~~ is done — `__merging_sleep` is built and wired (its torpor/sleep terms reach
+  the app through `evom1_traits_long`). The older scout batch still needs a targeted merge audit
+  for **Liu hand measures and Jacobs regional M1 morphology** (grep 2026-09-02: neither appears in
+  any `__merging_*/*.R`). Folder existence is not proof that merge wiring is complete.
 
 ## Curator decisions — READ FIRST
 
@@ -409,9 +424,9 @@ figures.
    That deferral is now resolved — the owner has decided to include it.* **Heuer et al. 2023**
    (eLife 12:e85907) is IN and was **built 2026-08-15** from the open author release. It now has a
    dedicated merge and appears in the Shiny app.
-   - **Built; registry pending:** `Heuer_etal_2023/` contains the frozen evidence, canonical R
+   - **Built and registered:** `Heuer_etal_2023/` contains the frozen evidence, canonical R
      builder, 56-species analysis/public tables, definitions, and README. Its `__ReadMe.xlsx` row
-     waits for the workbook's pre-existing edits to be reconciled.
+     exists (Excel row 138, `Heuer_etal_2023_Data`, public TSV matched in column M).
    - **⚠️ Do NOT combine with Ashwell 2020 — different method (owner, 2026-08-12).** `Ashwell__2020`
      does carry **`foliation_index`, `cb_ext_surface_esa_mm2`, `cb_pial_surface_psa_mm2` for 150
      species**, all populated and currently **dropped** (that folder's term map ingests only the
@@ -450,7 +465,7 @@ figures.
 | 1 | ~~Heuer et al. 2018 — MRI brain volumes~~ → **Navarrete et al. 2018** (39 primates, ~20 new) | ❌ **EXCLUDED** (misattribution retracted 2026-08-04; owner-flagged paper) | **deleted** | none |
 | 2 | ~~Bardo~~ → **Liu et al. 2016** — hand manipulability (13 anthropoids) | IN (byline corrected 2026-08-04) | `Liu_etal_2016/` (+ reader `EvoM1_read_hand_liu.R`) | `__merging_behaviour` (hand morphology) |
 | 3 | Navarrete et al. 2016 — innovation | ✅ **BUILT 2026-08-15** | `Navarrete_etal_2016/` | public shelf: technical/non-technical subtype counts + life-history composite; do not add its Reader-derived counts to Reader totals |
-| 4 | Capellini et al. 2008 — mammalian sleep (REM %, daily sleep) | IN | `Capellini_etal_2008/` (+ sleep standardized-term template) | `__merging_sleep` (extends beyond primate-only REM) |
+| 4 | Capellini et al. 2008 — mammalian sleep (REM %, daily sleep) | ✅ **BUILT + WIRED** (`__merging_sleep` built; terms reach the app via `evom1_traits_long`) | `Capellini_etal_2008/` (+ sleep standardized-term template) | `__merging_sleep` (extends beyond primate-only REM) |
 | 5 | Heuer et al. 2019 — neocortical folding (34 primates, MRI) | IN, **separate** | `Heuer_etal_2019/` | **none** — housed separately, never pooled with Zilles GI |
 | 6 | Cerebellar folding — **Heuer et al. 2023** (eLife 12:e85907) | ✅ **BUILT 2026-08-15** | `Heuer_etal_2023/` | dedicated `__merging_cerebellar_folding` + Shiny app; **never pooled with Ashwell 2020 foliation or neocortical GI** |
 | 7 | Medina-González 2026 — limb excursion, 182 mammals | IN, **blocked: restricted source record** | `MedinaGonzalez__2026/` (+ reader scaffold) | `__merging_behaviour` after files become available |
@@ -591,8 +606,8 @@ counts to Reader totals.
 ### 6. Cerebellar folding in mammals (eLife 2023) — ✅ BUILT 2026-08-15
 
 - **Status:** built from the open author GitHub release and eLife supplement: 56 species and 383
-  non-missing direct-measure observations. The dedicated merge and Shiny dataset are live; only the
-  registry row/source-manifest refresh remains.
+  non-missing direct-measure observations. The dedicated merge and Shiny dataset are live and the
+  registry row exists (2026-09-02: Excel row 138, public TSV matched).
 - **Merge:** a new cerebellar folding/surface slot (regional; **not** pooled with neocortical GI, and
   **not** with cerebellum volume). **Role: primary** for cerebellar folding.
 - **Contributes:** comparative **cerebellar folding** (folial structure — the paper's result is that
@@ -713,24 +728,32 @@ each folder's README:
    standardized-term rows) — only after the source file exists, or the merge errors.
 6. Re-run the merge's compile script and check species resolve and no double-counting.
 
-## Current order of work (refreshed 2026-08-31; audit in `_checks/registry_audit_20260831.md`)
+## Current order of work (refreshed 2026-09-02; audit in `_checks/registry_audit_20260902.md`)
 
-1. **Registry hygiene — refreshed 2026-08-30 (`_checks/name_soundness_audit_20260830.md`
-   is now the canonical list).** Done since 08-25: Weaver rows fixed (→ Weaver__2001),
-   Deaner folder renamed, Todorov row added (but its key `rspb20191712si001` mismatches the
-   `dimorphdata` products — align one side), K62 canonicalized, empty `Schultz_Dunbar_2010/`
-   renamed → `Shultz_Dunbar_2010/` (folder was the typo; the author is Shultz). Remaining
-   one-sitting Excel queue: register Hutsler ×4 + `Stephan_etal_1987_Table2` + Deaner 2007
-   (+ stubs Reader_Laland 2002 / Weaver 2005 / Changizi_He 2005 when adopted); fix the
-   VanEssen row (citation carries a reference-manager artifact author "New Collective, A.";
-   name should be `VanEssen_Drury_1997_Table1` — **verified against the PDF 2026-08-31**: two
-   authors only, artifact confirmed; folder products already carry the corrected name, rename the
-   row to match); Item numbers for
-   `Shultz_Dunbar_2010_`, `Stephan_Pirlot_1970_`, `Chaplin_etal_2013_`, `Veilleux_Kirk_2014_`;
-   repair the corrupted `Young_etal_2013_xml:space="preserve">b_Table1` key; the Olkowicz
-   figshare/PNAS key decision (`_checks/script_repairs_20260829.md`); remove or purpose
-   `data_intermediate/`.
-2. **Cell-counts + surface-areas intake — surfaces DONE 2026-08-25.** All five TODO sources were
+1. **Registry hygiene — refreshed 2026-09-02 (`_checks/registry_audit_20260902.md` is now the
+   canonical list).** Done since 08-31: the corrupted `Young_etal_2013_xml:…` key repaired; the
+   four blank-Item-number keys (`Shultz_Dunbar_2010_` etc.) filled — zero trailing-`_` keys
+   remain; Heesy 2004 registry row added; Heffner_Heffner_1992 renamed → `_1992_a` (the
+   snapshot's one "missing" key is this rename, not a lost row). Fixed 2026-09-02 (owner-approved):
+   the VanEssen row 357 artifact author removed → row now derives `VanEssen_Drury_1997_Table1`
+   (matches the built products); Jung 2022 products + public TSV renamed to `Reportedresults`
+   (registry casing kept — D preserves the printed label); Todorov products renamed to
+   `Todorov_etal_2019_rspb20191712si001.*` (registry key kept; the frozen supplement's inner
+   `dimorphdata.csv` member untouched; `specimen_source_registry.csv` pointer updated).
+   Remaining one-sitting Excel queue: register Hutsler ×4 + `Stephan_etal_1987_Table2` +
+   Deaner 2007 (+ stubs Reader_Laland 2002 / Weaver 2005 / Changizi_He 2005 when adopted);
+   **de Sousa 2022 double extension** (`acuityblind.csv` as Item number → `…acuityblind.csv.tsv`
+   on disk); the Olkowicz figshare/PNAS key decision (`_checks/script_repairs_20260829.md`);
+   remove or purpose `data_intermediate/`.
+2. **Sensory intake — the active program.** `__merging_sensory` built 2026-08-31 (percepts only,
+   compilation-aware study-set dedupe; ~130 species from HH1992a, Heffner 2020, Koay 1998,
+   Veilleux & Kirk 2014; `SensoryData_compiled_check/` is the audit fixture, Route-B registration
+   reverted by owner). Newly built source folders **Heesy 2004** (snapshot 2nd review pending)
+   and **Jung et al. 2022** (3 items) are registered but **not yet wired** into
+   `sensory_compiled.R`; Kirk & Kay 2004 rows are registered — wire or record the skip. Snapshot
+   handling follows the 09-02 format doctrine (evidence not product; born-digital = copy-rename
+   untouched; Barbeito tsv-twin cleanup still pending).
+3. **Cell-counts + surface-areas intake — surfaces DONE 2026-08-25.** All five TODO sources were
    already built; the gap was wiring. `__merging_cortical_areas` now carries Collins 2016 (chimp
    cortex/V1/V2; M1 superseded by Young — same specimen), Mota 2015 own columns and Mota 2019
    AT/AE/T, with new terms (exposed surface, thickness, MHH folding index, V1/V2 regional), a
@@ -775,18 +798,25 @@ each folder's README:
    see `M1_surface_STATUS_and_PLAN_20260825.md` in the Kaskan folder). Registry rows
    `Changizi__2001_Figure3` + `Finlay_etal_2006_Table6.1` ("Species -- wait for Project Kaskan")
    wait on the Kaskan area-name/species tables.
-3. **R-side runs on next RStudio session:** `_tools/file_list.R` (AUTO TSV column; explains
-   `Upham_etal_2019_Completed100` and `DeCasien…SocialSystem` showing FINISHED-but-notfound),
-   `_checks/registry_snapshot.R` (snapshot is 14 rows stale), and the pending Completed100
-   sample-trees R run.
-4. Audit and, where still absent, wire **Liu hand and Jacobs M1 morphology** (Capellini sleep is
-   done — `__merging_sleep` built and wired; neither Liu nor Jacobs appears in any
-   `__merging_*/*.R` yet).
-5. **Baron 1996 bat block** wiring into volumes — blocked on the seven historical taxon-concept
+4. **R-side runs on next RStudio session:** `_tools/file_list.R` (AUTO TSV column is badly
+   stale — 43 orphaned public TSVs and 16 FINISHED-but-notfound rows, all the 08-31→09-02
+   builds), `_checks/registry_snapshot.R` (snapshot is 7 rows stale), the
+   `standardized_term.R` + `cortical_areas_compiled.R` confirmation rerun, the
+   `sensory_compiled.R` run, and the pending Completed100 sample-trees run.
+5. Audit and, where still absent, wire **Liu hand and Jacobs M1 morphology**, plus the built
+   surface sources **Demirci 2023 / Van Essen & Drury 1997 / Chaplin 2013** into
+   `__merging_cortical_areas` (grep 2026-09-02: none of the five appears in any
+   `__merging_*/*.R` yet; Capellini sleep is done — `__merging_sleep` built and wired).
+6. **Freeze-source pass** on the three invariant-1 folders with derived data but no frozen
+   source: `Fu_etal_2013`, `Rilling_Insel_1998`, `deJager_etal_2022` (Halley & Krubitzer is the
+   documented skip and stays as-is).
+7. **Baron 1996 bat block** wiring into volumes — blocked on the seven historical taxon-concept
    decisions plus within-source averaging.
-6. Build Medina-González immediately after its restricted files become available.
-7. Decide on a class-aware destination before compiling Olkowicz or any other avian shelf dataset.
-8. Implement the region tags and per-region coverage audit from Part 1.
+8. Build Medina-González immediately after its restricted files become available.
+9. Decide on a class-aware destination before compiling Olkowicz or any other avian shelf
+   dataset (`____Spinal_cord_etc/` is the next staging folder to watch as a merge-group
+   candidate).
+10. Implement the region tags and per-region coverage audit from Part 1.
 
 *(The original scouting list put "Heuer 2018 volumes" first as the biggest new-species yield. That
 candidate is the excluded Navarrete paper — see curator decisions 1–2. Nothing to do there without

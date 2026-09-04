@@ -1,0 +1,5 @@
+options(stringsAsFactors = FALSE)
+input <- file.path("snapshot", "Table_S1_subclass_info.csv")
+out <- read.csv(input, check.names = FALSE, fileEncoding = "UTF-8")
+write.csv(out, "Jorstad_etal_2023_Table_S1_subclass_info.csv", row.names = FALSE, na = "", fileEncoding = "UTF-8")
+write.table(out, "Jorstad_etal_2023_Table_S1_subclass_info_public.tsv", sep = "\t", row.names = FALSE, quote = TRUE, na = "", fileEncoding = "UTF-8")

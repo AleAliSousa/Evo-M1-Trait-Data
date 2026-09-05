@@ -1508,6 +1508,9 @@ Stephan_etal_1981,Stephan_etal_1981_TablesI-VI,Septum,Septum,Septum,cell_counts,
 Stephan_etal_1981,Stephan_etal_1981_TablesI-VI,Septum,Septum,Septum,brain_structure_volume,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates","septum including septum pellucidum, septum verum, the whole diagonal band of Broca, and bed nuclei of the anterior commissure and stria terminalis"
 Zilles_Rehkämper_1988,Zilles_Rehkämper_1988_Table12-2,Septum,Septum,Septum,cell_counts,Vol.mm3,volume,NA,primary,Primates (Pongo),septum fresh volume
 Zilles_Rehkämper_1988,Zilles_Rehkämper_1988_Table12-2,Septum,Septum,Septum,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates (Pongo),septum fresh volume
+Heesy__2004,Heesy__2004 Table1,species_as_published,species,Species,cell_counts,label,label,raw,info,Mammalia,Scientific taxon label printed in Table 1.
+Heesy__2004,Heesy__2004 Table1,common_name,species,Species,cell_counts,label,label,raw,info,Mammalia,Common name printed in Table 1.
+Jung_etal_2022,Jung et al. 2022,species_as_published,species,Species,cell_counts,label,label,raw,info,Macropus eugenii,Scientific name used for the wallaby.
 Hutsler_etal_2005,Hutsler_etal_2005_Table1,n_specimens,Specimens,Specimens,NA,count,count (number),NA,primary,14 mammal species,number of specimens
 Barger_etal_2014,Barger_etal_2014_Table1,striatum_cc,Striatum,Striatum,cell_counts,Volume.cm3,volume,NA,primary,Apes & humans,striatum volume (one hemisphere)
 Barger_etal_2014,Barger_etal_2014_Table1,striatum_cc,Striatum,Striatum,brain_structure_volume,Volume.cm3,volume,NA,primary,Apes & humans,striatum volume (one hemisphere)
@@ -1675,6 +1678,11 @@ Barger_etal_2012,Barger_etal_2012_Table3,Lateral_neurons_SD,amygdala lateral nuc
 Changizi__2003,Changizi__2003_Table1,n_ethobehavior_types,behavior,behavior,NA,repertoire size,repertoire size,count,secondary,Mammalia,number of behaviors in a published ethogram
 Deaner_etal_2006,Deaner_etal_2006_Table1,rank,behavior/cognition,behavior/cognition,NA,cognitive performance rank,cognitive performance rank,rank,secondary,Primates,performance rank (lower = better; fractional = tie)
 Deaner_etal_2006,Deaner_etal_2006_Table1,paradigm,behavior/cognition,behavior/cognition,NA,paradigm,paradigm,NA,info,Primates,cognitive paradigm (from the paper's sections)
+Jung_etal_2022,Jung et al. 2022,region,brain/visual system,brain/visual system,NA,region,region,raw,info,Macropus eugenii,Anatomical or visual-field region associated with the observation.
+Jung_etal_2022,Jung et al. 2022,stat,brain/visual system,brain/visual system,NA,statistic,statistic,raw,info,Macropus eugenii,Statistic represented by value.
+Jung_etal_2022,Jung et al. 2022,trait,brain/visual system,brain/visual system,NA,trait,trait,raw,info,Macropus eugenii,Measured or reported trait.
+Jung_etal_2022,Jung et al. 2022,unit,brain/visual system,brain/visual system,NA,unit,unit,raw,info,Macropus eugenii,Unit reported or dimensionless designation.
+Jung_etal_2022,Jung et al. 2022,value,brain/visual system,brain/visual system,NA,value,value,varies,primary_or_secondary,Macropus eugenii,Numeric result reported in the article.
 Brodmann__1913,Brodmann__1913_Table1,SulcalCortex_pct,cerebral cortex (sulcal),cerebral cortex (sulcal),NA,pct,percentage (relative),NA,secondary,Mammalia (all orders),sulcal cortex as % of total cortex
 Brodmann__1913,Brodmann__1913_Table1,SulcalCortex.mm2,cerebral cortex (sulcal),cerebral cortex (sulcal),NA,Area.mm2,surface area,NA,primary,Mammalia (all orders),cortical area buried in sulci/fissures (Furchenrinde)
 Brodmann__1913,Brodmann__1913_Table1,HemisphereWeight.g,cerebral hemisphere,cerebral hemisphere,NA,Mass.g,mass,NA,primary,Mammalia (all orders),hemisphere weight (parenthetical value)
@@ -1717,8 +1725,17 @@ MedinaGonzalez__2026,MedinaGonzalez__2026_Data,joint_excursion_touchdown_midstan
 MedinaGonzalez__2026,MedinaGonzalez__2026_Data,Limb_posture,limb,limb,NA,category,category,point,primary,Mammals,limb posture class
 MedinaGonzalez__2026,MedinaGonzalez__2026_Data,Angular_utilization_index,limb,limb,NA,AUI.pct,percentage (relative),point,primary,Mammals,angular range utilization (AUI %) during stance-phase walking
 Smaers_etal_2018,Smaers_etal_2018_Figure2-data1,MedialCerebellum_Vol.mm3,medial cerebellum,medial cerebellum,NA,Vol.mm3,volume,NA,secondary,Mammalia (primates + outgroups),medial cerebellum volume
+Heesy__2004,Heesy__2004 Table1,orbit_convergence_mean_deg,orbit,orbit,NA,angle,angle,mean,primary,Mammalia,"Mean orbit convergence, degrees."
+Heesy__2004,Heesy__2004 Table1,orbit_convergence_sd_deg,orbit,orbit,NA,angle,angle,sd,primary,Mammalia,"Standard deviation printed in parentheses for orbit convergence, degrees."
+Heesy__2004,Heesy__2004 Table1,n_specimens,orbit,orbit,NA,sample_size,sample_size,n,primary,Mammalia,Number of skull specimens used for orbit convergence.
 Stephan_Pirlot_1970,Stephan_Pirlot_1970_Table1,palaeocortex_plus_amygdala_mm3,palaeocortex+amygdala,palaeocortex+amygdala,NA,volume,volume,value mm3,primary,Chiroptera,"palaeocortex + nucleus amygdalae complex (col 6, 'Palaeocortex + NA')"
 Semendeferi_Damasio_2000,Semendeferi_Damasio_2000_Table2,ParietoOccipital_Vol.mm3,parieto-occipital,parieto-occipital,NA,Vol.mm3,volume,NA,primary,"Hominoidea (Homo, Pan, Gorilla, Pongo, Hylobates)",parieto-occipital volume
+Heesy__2004,Heesy__2004 Table1,note,record,record,NA,note,note,raw,info,Mammalia,Curation note for ranges or table footnotes.
+Jung_etal_2022,Jung et al. 2022,note,record,record,NA,note,note,raw,info,Macropus eugenii,"Associated individual values, SD, P value, or provenance qualification."
+Heesy__2004,Heesy__2004 Table1,data_role,record,record,NA,provenance,provenance,category,info,Mammalia,Provenance role of variables in this compiled table.
+Jung_etal_2022,Jung et al. 2022,data_role,record,record,NA,provenance,provenance,category,info,Macropus eugenii,Primary measurement or secondary compiled value.
+Heesy__2004,Heesy__2004 Table1,source,record,record,NA,source,source,raw,info,Mammalia,Dataset item identifier.
+Jung_etal_2022,Jung et al. 2022,source_location,record,record,NA,source,source,raw,info,Macropus eugenii,Location supporting the record.
 Johansen_etal_2024,Johansen_etal_2024_Table2,SV2A_total.pmol_mL,region,region,NA,SV2A.pmol_mL,SV2A.pmol_mL,mean,primary,Homo sapiens,"SV2A synaptic-density Bmax, whole-region weighted average (both hemispheres)"
 Johansen_etal_2024,Johansen_etal_2024_Table2,SV2A_total_SD,region,region,NA,SV2A.pmol_mL,SV2A.pmol_mL,sd,info,Homo sapiens,SD of the total SV2A Bmax across subjects
 Johansen_etal_2024,Johansen_etal_2024_Table2,SV2A_L.pmol_mL,region,region,NA,SV2A.pmol_mL,SV2A.pmol_mL,mean,primary,Homo sapiens,"SV2A Bmax, left hemisphere"
@@ -1730,11 +1747,16 @@ Johansen_etal_2024,Johansen_etal_2024_Table2,LR_ratio_SD,region,region,NA,ratio,
 Heffner_Heffner_1992_a,Heffner_Heffner_1992_a_Table1,visual_acuity_cdeg,retina,retina,NA,acuity.cdeg,acuity.cdeg,value,both,Mammalia (14 spp),Maximum visual acuity in cycles/degree; calculated from peak ganglion cell density except as otherwise noted (header footnote 23)
 Veilleux_Kirk_2014,Veilleux_Kirk_2014_SupplementalTable1,visual_acuity_cdeg,retina,retina,NA,acuity.cdeg,acuity.cdeg,value,both,Mammalia (91 spp),"Maximum visual acuity (VA), cycles per degree"
 Heffner_Heffner_1992_a,Heffner_Heffner_1992_a_Table1,field_of_best_vision_deg,retina,retina,NA,angle.deg,angle.deg,value,primary,Mammalia (13 spp),Horizontal width of the field of best vision from retinal ganglion cell isodensity contours (75% of maximum density criterion)
+Jung_etal_2022,Jung et al. 2022,n,sample,sample,NA,sample_size,sample_size,n,info,Macropus eugenii,Sample size explicitly associated with the result when reported.
 Karbowski__2007,Karbowski__2007_TableS1-S23,CMRgl,see structure col,see structure col,NA,CMR.umol/g/min,CMR.umol/g/min,mean,secondary,Mammals,cerebral metabolic rate of glucose (regional or whole-brain)
 Bortoff_Strick_1993,Bortoff_Strick_1993_Table1,CST_termination_grade,spinal cord / M1 output,spinal cord / M1 output,NA,grade,grade,ordinal,primary,Primates,ordinal extent of primary-motor corticospinal termination in ventral horn or lamina IX
 Bortoff_Strick_1993,Bortoff_Strick_1993_Table1,CM_connection_inference,spinal cord / M1 output,spinal cord / M1 output,NA,inference,inference,category,primary,Primates,the paper's own conservative inference about a corticomotoneuronal connection
 Bortoff_Strick_1993,Bortoff_Strick_1993_Table1,CM_monosynaptic,spinal cord / M1 output,spinal cord / M1 output,NA,presence,presence,binary,primary,Primates,direct monosynaptic corticomotoneuronal connection established by the cited method
 Semendeferi_Damasio_2000,Semendeferi_Damasio_2000_Table2,Temporal_Vol.mm3,temporal lobe,temporal lobe,NA,Vol.mm3,volume,NA,primary,"Hominoidea (Homo, Pan, Gorilla, Pongo, Hylobates)",temporal lobe volume
+Heesy__2004,Heesy__2004 Table1,binocular_visual_field_min_deg,visual field,visual field,NA,angle,angle,minimum,secondary,Mammalia,"Minimum binocular visual field overlap, degrees."
+Heesy__2004,Heesy__2004 Table1,binocular_visual_field_max_deg,visual field,visual field,NA,angle,angle,maximum,secondary,Mammalia,"Maximum binocular visual field overlap, degrees."
+Heesy__2004,Heesy__2004 Table1,binocular_visual_field_midpoint_deg,visual field,visual field,NA,angle,angle,derived midpoint,derived,Mammalia,"Midpoint of printed binocular visual field range, degrees."
+Heesy__2004,Heesy__2004 Table1,binocular_visual_field_reference,visual field,visual field,NA,citation,citation,raw,secondary,Mammalia,Reference(s) given by Heesy for visual field value.
 Genoud_etal_2018,Genoud_etal_2018_TableS2,BMR.mlO2_h,whole body,whole body,NA,BMR.mlO2_h,BMR.mlO2_h,mean,secondary,Mammalia,basal metabolic rate
 Genoud_etal_2018,Genoud_etal_2018_TableS2,Body_mass.g,whole body,whole body,NA,Mass.g,mass,mean,secondary,Mammalia,body mass
 Heuer_etal_2023,Heuer_etal_2023_Data,LogBodyWeight_source,whole body,whole body,NA,weight,mass,source log,secondary,Mammals,logged body weight copied verbatim from rosetta.csv

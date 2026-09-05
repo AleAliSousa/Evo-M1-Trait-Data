@@ -1,0 +1,4 @@
+column,definition,role,unit
+N_SC,Total number of neurons in the spinal cord,"secondary or derived, per N_SC_status",neurons
+N_SC_status,observed values are from Burish et al. 2010; predicted values use spinal-cord mass from MacLarnon 1996 with the published N_SC x M_SC equation,provenance,
+N_M1_per_N_SC,"Ratio of numbers of neurons in M1 and spinal cord, as printed",derived_in_source,ratio

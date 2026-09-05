@@ -1,4 +1,6 @@
 "script","status","error","start_time","end_time","elapsed_seconds"
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_behaviour/behaviour_compiled.R","FAILED","Error: expected =
+Execution halted","2026-09-04 13:38:51.709827","2026-09-04 13:38:54.376386",2.66655898094177
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_sensory/sensory_compiled.R","FAILED","Warning messages:
 1: In x[nzchar(x)] <- str_split(x, "";"")[[1]][nzchar(str_split(x, "";"")[[1]])] :
   number of items to replace is not a multiple of replacement length
@@ -11,8 +13,20 @@
 5: In x[nzchar(x)] <- str_split(x, "";"")[[1]][nzchar(str_split(x, "";"")[[1]])] :
   number of items to replace is not a multiple of replacement length
 Error in tmap[[h20$trait[i]]] : subscript out of bounds
-Execution halted","2026-09-02 09:48:26.667074","2026-09-02 09:48:28.096856",1.4297821521759
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_item_name_resolution.R","FAILED","registry Item names: 373   |   TSVs on disk: 298   |   NA.tsv present: no
+Execution halted","2026-09-04 13:39:23.397561","2026-09-04 13:39:24.660745",1.26318383216858
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/compare_to_reference.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error: reference_csv not found: /Users/crossmodal/Library/CloudStorage/Dropbox/COLLABORATIVE/Do expensive brain regions increase less in humans/analyses_metabol_rate_structure/data_raw/Stephan_primates.csv
+Execution halted","2026-09-04 13:39:37.675493","2026-09-04 13:39:38.518902",0.843409061431885
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_item_name_resolution.R","FAILED","registry Item names: 384   |   TSVs on disk: 300   |   NA.tsv present: no
 
 __merging_behaviour/behaviour_compiled.R                     0 item name(s) referenced   OK
 __merging_body_ecology/body_ecology_compiled.R               0 item name(s) referenced   OK
@@ -31,20 +45,36 @@ __merging_volumes/volumes_compiled_DeCasien.R               47 item name(s) refe
 __merging_volumes/volumes_compiled_select.R                 34 item name(s) referenced   OK
 __merging_volumes/volumes_compiled.R                        67 item name(s) referenced   OK
 
-orphaned TSVs (on disk, claimed by no registry row): 3
-      10.1007%2F978-1-4419-8873-7_20_Table1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1007%2F978-1-4419-8873-7_20_Table2.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+orphaned TSVs (on disk, claimed by no registry row): 1
       10.6084%2Fm9.figshare.c.3899422.v1_Dataset1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
 rows with a citation but no Item name (need _tools/file_list.R): 0
 
 1 unresolved reference(s).
-run _tools/restore_registry_rows.R (adding any new row to its ROWS list), then _tools/file_list.R.","2026-09-02 09:49:17.011324","2026-09-02 09:49:18.618501",1.60717701911926
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_tools/build_dataset_item.R","FAILED","Error in file(filename, ""r"", encoding = encoding) : 
-  cannot open the connection
-Calls: source -> file
-In addition: Warning message:
-In file(filename, ""r"", encoding = encoding) :
-  cannot open file 'validate_dataset_item.R': No such file or directory
-Execution halted","2026-09-02 09:56:50.201521","2026-09-02 09:56:50.89636",0.694839000701904
+run _tools/restore_registry_rows.R (adding any new row to its ROWS list), then _tools/file_list.R.","2026-09-04 13:40:06.150608","2026-09-04 13:40:07.281631",1.13102293014526
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_tools/file_list.R","FAILED","Warning message:
+Column L is 'Public.TSV.match.from.AUTO_Public_TSV_FileList.(generated.by._tools/file_list.R;.do.not.edit.manually)', not the expected 'Item encoded'. Check column alignment. 
+Error: Non-canonical Sheet1 naming formula(s): E2, F2, G2, H2, I2, J2, K2, L2, E3, F3, G3, H3, I3, J3, K3, L3, E4, F4, G4, H4, I4, J4, L4, E5, F5, G5, H5, I5, J5, L5, E6, F6, G6, H6, I6, J6, K6, L6, E7, F7, G7, H7, I7, J7, K7, L7, E8, F8, G8, H8, I8, J8, K8, L8, E9, F9, G9, H9, I9, J9, K9, L9, E10, F10, G10, H10, I10, J10, K10, L10, E11, F11, G11, H11, I11, J11, K11, L11, E12, F12, G12, H12, I12, J12, K12, L12, E13, F13, G13, H13, I13, J13, K13, L13, E14, F14, G14, H14, I14, J14, K14, L14, E15, F15, G15, H15, I15, J15, L15, E16, F16, G16, H16, I16, J16, L16, E17, F17, G17, H17, I17, J17, L17, E18, F18, G18, H18, I18, J18, L18, E19, F19, G19, H19, I19, J19, L19, E20, F20, G20, H20, I20, J20, K20, L20, E21, F21, G21, H21, I21, J21, K21, L21, E22, F22, G22, H22, I22, J22, L22, E23, F23, G23, H23, I23, J23, L23, E24, F24, G24, H24, I24, J24, L24, E25, F25, G25, H25, I25, J25, L25, E26, F26, G26, H26, I26, J26, K26, L26, E27, F27, G27, H27, I27, J27, K27, L27, E28, F28, G28, H28, I28, J28, 
+Execution halted","2026-09-04 13:47:21.865232","2026-09-04 13:47:23.563842",1.69861006736755
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Changizi__2003/Changizi__2003_Table1.R","FAILED","Error: sum(clean$row_type == ""order"") == 12 is not TRUE
-Execution halted","2026-09-02 09:58:10.648117","2026-09-02 09:58:11.591569",0.943451881408691
+Execution halted","2026-09-04 13:48:52.240905","2026-09-04 13:48:53.129229",0.888324022293091
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heesy__2004/Heesy__2004_Table1.R","FAILED","Error: `path` does not exist: ‘Heesy__2004/Heesy__2004_Table1_snapshot.xlsx’
+Execution halted","2026-09-04 13:50:06.706251","2026-09-04 13:50:07.167752",0.461501121520996
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jorstad_etal_2023/Jorstad_etal_2023_Table_S1_subclass_info.R","FAILED","Error in file(file, ""rt"", encoding = fileEncoding) : 
+  cannot open the connection
+Calls: read.csv -> read.table -> file
+In addition: Warning message:
+In file(file, ""rt"", encoding = fileEncoding) :
+  cannot open file 'snapshot/Table_S1_subclass_info.csv': No such file or directory
+Execution halted","2026-09-04 13:50:41.943319","2026-09-04 13:50:42.286526",0.343206882476807
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jorstad_etal_2023/Jorstad_etal_2023_Table_S5_MERFISH.R","FAILED","Error: `path` does not exist: ‘snapshot/Table_S5_MERFISH_snRNA_prop_EI.xlsx’
+Execution halted","2026-09-04 13:50:42.289933","2026-09-04 13:50:42.618682",0.328748941421509
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jorstad_etal_2023/Jorstad_etal_2023_Table_S5_snRNA_EI.R","FAILED","Error: `path` does not exist: ‘snapshot/Table_S5_MERFISH_snRNA_prop_EI.xlsx’
+Execution halted","2026-09-04 13:50:42.622942","2026-09-04 13:50:42.932723",0.309781074523926
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jorstad_etal_2023/Jorstad_etal_2023_Table_S5_snRNA_prop.R","FAILED","Error: `path` does not exist: ‘snapshot/Table_S5_MERFISH_snRNA_prop_EI.xlsx’
+Execution halted","2026-09-04 13:50:42.93587","2026-09-04 13:50:43.231696",0.295825958251953
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jung_etal_2022/Jung_etal_2022_Reportedresults.R","FAILED","Error: `path` does not exist: ‘Jung_etal_2022_Reportedresults_snapshot.xlsx’
+Execution halted","2026-09-04 13:50:43.235642","2026-09-04 13:50:43.731374",0.495732069015503
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jung_etal_2022/Jung_etal_2022_TableS1.R","FAILED","Error: file.exists(snapshot_file) is not TRUE
+Execution halted","2026-09-04 13:50:43.734262","2026-09-04 13:50:44.032433",0.298171043395996
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jung_etal_2022/Jung_etal_2022_TableS2.R","FAILED","Error: file.exists(snapshot_file) is not TRUE
+Execution halted","2026-09-04 13:50:44.042783","2026-09-04 13:50:44.389786",0.347002983093262

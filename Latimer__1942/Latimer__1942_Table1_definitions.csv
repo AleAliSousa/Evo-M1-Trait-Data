@@ -1,0 +1,14 @@
+column,definition,role,unit
+species_as_published,species as published,info,
+sex,sex,info,
+n,n,info,
+spinal_cord_weight_mean_g,spinal cord weight mean g,measurement,g
+spinal_cord_weight_se_g,spinal cord weight se g,measurement,g
+spinal_cord_weight_cv_pct,spinal cord weight cv pct,measurement,%
+spinal_cord_length_mean_cm,spinal cord length mean cm,measurement,cm
+spinal_cord_length_se_cm,spinal cord length se cm,measurement,cm
+spinal_cord_length_cv_pct,spinal cord length cv pct,measurement,%
+body_weight_mean_kg,body weight mean kg,measurement,kg
+body_length_mean_cm,body length mean cm,measurement,cm
+source_location,source location,info,
+data_role,data role,info,

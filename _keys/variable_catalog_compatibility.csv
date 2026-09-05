@@ -104,6 +104,7 @@ Neocortex | length,Neocortex,length,4,2,Campos_Welker_1976; Nudo_etal_1995,24 ma
 Thalamus | volume,Thalamus,volume,4,2,Campos_Welker_1976; Stephan_etal_1981,"Hystricomorph rodents; Insectivora, Scandentia & Primates",primary,TRUE
 Behaviour | count (number),Behaviour,count (number),3,2,ManyPrimates__2022; Schniter_Penaherrera-Aguirre_2026,Primates,primary,TRUE
 CerebralCortex | surface area,CerebralCortex,surface area,3,2,Brodmann__1913; HerculanoHouzel__2015,"Mammalia (all orders); Mammals (24 species, 6 clades); Rattus norvegicus (postnatal development)",primary,TRUE
+Species | label,Species,label,3,2,Heesy__2004; Jung_etal_2022,Macropus eugenii; Mammalia,info,TRUE
 V1 | length,V1,length,3,2,Bush_Allman_2004_b; Karl_etal_2024,Mammals (marsupial to primate),primary,TRUE
 V1 | volume,V1,volume,3,2,Bush_Allman_2004_b; Sherwood_etal_2003,,primary,TRUE
 VisualCortex | density (per mass/volume),VisualCortex,density (per mass/volume),3,2,Lewitus_etal_2013; Lewitus_etal_2014,Mammals,primary; secondary,TRUE
@@ -156,6 +157,9 @@ Total_brain_volume | volume,Total_brain_volume,volume,2,2,Ebinger__1974; Schleif
 Ventricle | volume,Ventricle,volume,2,2,Ebinger__1974; Lewitus_etal_2013,Mammals; Ovis,primary; secondary,TRUE
 WholeBrain | ECV.ml,WholeBrain,ECV.ml,2,2,Caspar_etal_2022; Heldstab_etal_2016,Primates,primary,TRUE
 WholeBrain | ratio (per neuron),WholeBrain,ratio (per neuron),2,2,Kazu_etal_2014; Kazu_etal_2015,Artiodactyla,primary,TRUE
+record | note,record,note,2,2,Heesy__2004; Jung_etal_2022,Macropus eugenii; Mammalia,info,TRUE
+record | provenance,record,provenance,2,2,Heesy__2004; Jung_etal_2022,Macropus eugenii; Mammalia,info,TRUE
+record | source,record,source,2,2,Heesy__2004; Jung_etal_2022,Macropus eugenii; Mammalia,info,TRUE
 retina | acuity.cdeg,retina,acuity.cdeg,2,2,Heffner_Heffner_1992_a; Veilleux_Kirk_2014,Mammalia (14 spp); Mammalia (91 spp),both,TRUE
 whole body | mass,whole body,mass,2,2,Genoud_etal_2018; Heuer_etal_2023,Mammalia; Mammals,secondary,TRUE
 (structure-agnostic; see data columns) | value,(structure-agnostic; see data columns),value,32,1,Lewitus_etal_2014,Mammals,primary,FALSE
@@ -218,6 +222,7 @@ Telencephalon | percentage (relative),Telencephalon,percentage (relative),3,1,Ol
 Transverse foramen | surface area,Transverse foramen,surface area,3,1,deJager_etal_2022,Homo sapiens,method; primary,FALSE
 V1_AreaStriata | volume,V1_AreaStriata,volume,3,1,deSousa_etal_2010,Primates,primary,FALSE
 hand (thumb) | length,hand (thumb),length,3,1,Liu_etal_2016,Primates,secondary,FALSE
+visual field | angle,visual field,angle,3,1,Heesy__2004,Mammalia,derived; secondary,FALSE
 whole-organism | Sleep.text,whole-organism,Sleep.text,3,1,Capellini_etal_2008,Mammals (marine),info,FALSE
 (per Region) | CBF,(per Region),CBF,2,1,Kaufman__2004,Mammals,primary,FALSE
 (per Region) | CMRO2,(per Region),CMRO2,2,1,Kaufman__2004,Mammals,primary,FALSE
@@ -320,6 +325,7 @@ amygdala basal nucleus | count (number),amygdala basal nucleus,count (number),2,
 amygdala central nucleus | count (number),amygdala central nucleus,count (number),2,1,Barger_etal_2012,Hominidae + Hylobatidae + Cercopithecidae,info; primary,FALSE
 amygdala lateral nucleus | count (number),amygdala lateral nucleus,count (number),2,1,Barger_etal_2012,Hominidae + Hylobatidae + Cercopithecidae,info; primary,FALSE
 fronto_insular_cortex | volume,fronto_insular_cortex,volume,2,1,Bauernfeind_etal_2013,Primates,primary,FALSE
+orbit | angle,orbit,angle,2,1,Heesy__2004,Mammalia,primary,FALSE
 region | ratio,region,ratio,2,1,Johansen_etal_2024,Homo sapiens,derived; info,FALSE
 whole-organism | Time.days,whole-organism,Time.days,2,1,Eagleman_Vaughn_2021,"Primates (25 species, incl. Homo)",primary,FALSE
 (structure-agnostic; see data columns) | ActivityPattern,(structure-agnostic; see data columns),ActivityPattern,1,1,Bush_Allman_2004_a,,secondary,FALSE
@@ -557,6 +563,11 @@ VisualArea18 | surface area,VisualArea18,surface area,1,1,Krubitzer_Kaas_1990,Pr
 behavior | repertoire size,behavior,repertoire size,1,1,Changizi__2003,Mammalia,secondary,FALSE
 behavior/cognition | cognitive performance rank,behavior/cognition,cognitive performance rank,1,1,Deaner_etal_2006,Primates,secondary,FALSE
 behavior/cognition | paradigm,behavior/cognition,paradigm,1,1,Deaner_etal_2006,Primates,info,FALSE
+brain/visual system | region,brain/visual system,region,1,1,Jung_etal_2022,Macropus eugenii,info,FALSE
+brain/visual system | statistic,brain/visual system,statistic,1,1,Jung_etal_2022,Macropus eugenii,info,FALSE
+brain/visual system | trait,brain/visual system,trait,1,1,Jung_etal_2022,Macropus eugenii,info,FALSE
+brain/visual system | unit,brain/visual system,unit,1,1,Jung_etal_2022,Macropus eugenii,info,FALSE
+brain/visual system | value,brain/visual system,value,1,1,Jung_etal_2022,Macropus eugenii,primary_or_secondary,FALSE
 cerebral cortex (sulcal) | percentage (relative),cerebral cortex (sulcal),percentage (relative),1,1,Brodmann__1913,Mammalia (all orders),secondary,FALSE
 cerebral cortex (sulcal) | surface area,cerebral cortex (sulcal),surface area,1,1,Brodmann__1913,Mammalia (all orders),primary,FALSE
 cerebral hemisphere | mass,cerebral hemisphere,mass,1,1,Brodmann__1913,Mammalia (all orders),primary,FALSE
@@ -577,14 +588,17 @@ limb | angle.deg,limb,angle.deg,1,1,MedinaGonzalez__2026,Mammals,info,FALSE
 limb | category,limb,category,1,1,MedinaGonzalez__2026,Mammals,primary,FALSE
 limb | percentage (relative),limb,percentage (relative),1,1,MedinaGonzalez__2026,Mammals,primary,FALSE
 medial cerebellum | volume,medial cerebellum,volume,1,1,Smaers_etal_2018,Mammalia (primates + outgroups),secondary,FALSE
+orbit | sample_size,orbit,sample_size,1,1,Heesy__2004,Mammalia,primary,FALSE
 palaeocortex+amygdala | volume,palaeocortex+amygdala,volume,1,1,Stephan_Pirlot_1970,Chiroptera,primary,FALSE
 parieto-occipital | volume,parieto-occipital,volume,1,1,Semendeferi_Damasio_2000,"Hominoidea (Homo, Pan, Gorilla, Pongo, Hylobates)",primary,FALSE
 retina | angle.deg,retina,angle.deg,1,1,Heffner_Heffner_1992_a,Mammalia (13 spp),primary,FALSE
+sample | sample_size,sample,sample_size,1,1,Jung_etal_2022,Macropus eugenii,info,FALSE
 see structure col | CMR.umol/g/min,see structure col,CMR.umol/g/min,1,1,Karbowski__2007,Mammals,secondary,FALSE
 spinal cord / M1 output | grade,spinal cord / M1 output,grade,1,1,Bortoff_Strick_1993,Primates,primary,FALSE
 spinal cord / M1 output | inference,spinal cord / M1 output,inference,1,1,Bortoff_Strick_1993,Primates,primary,FALSE
 spinal cord / M1 output | presence,spinal cord / M1 output,presence,1,1,Bortoff_Strick_1993,Primates,primary,FALSE
 temporal lobe | volume,temporal lobe,volume,1,1,Semendeferi_Damasio_2000,"Hominoidea (Homo, Pan, Gorilla, Pongo, Hylobates)",primary,FALSE
+visual field | citation,visual field,citation,1,1,Heesy__2004,Mammalia,secondary,FALSE
 whole body | BMR.mlO2_h,whole body,BMR.mlO2_h,1,1,Genoud_etal_2018,Mammalia,secondary,FALSE
 whole body | percentage (relative),whole body,percentage (relative),1,1,Genoud_etal_2018,Mammalia,secondary,FALSE
 whole-organism | MetabolicRate.mlO2_g_h,whole-organism,MetabolicRate.mlO2_g_h,1,1,Ruf_Geiser_2015,"Birds & mammals (43 birds, 171 mammals)",primary,FALSE

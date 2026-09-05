@@ -1,0 +1,8 @@
+column,definition,role,unit
+species_as_printed,Name exactly as printed in Table 2,info,
+source_author,Author credited for the row in Table 2,info,
+body_weight_g,Body weight,measurement,g
+brain_weight_g,Brain weight (E),measurement,g
+spinal_cord_weight_g,Spinal cord weight (Ms),measurement,g
+brain_spinal_cord_ratio,Published E/Ms quotient,derived_in_source,ratio
+data_role,Primary if measured by Krompecher; secondary if credited to another author,provenance,

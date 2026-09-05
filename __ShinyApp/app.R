@@ -16,15 +16,37 @@ library(DT)
 library(ggplot2)
 
 # ---- Data source ------------------------------------------------------------
-# Primary source is the public GitHub repo (single source of truth); a small
-# local copy in ./data acts as a fallback if GitHub is briefly unreachable.
-# Override the branch/base with the EVOM1_GH_BASE env var if needed.
+# Two possible sources: the public GitHub repo, and the local ./data bundle that
+# build_data.R writes. Which one wins is decided ONCE, here, for every file.
+#
+# Why it is decided once. These files are not independent: the compiled tables
+# supply the variable labels and _keys/variable_definitions.csv classifies them.
+# Take the tables from one vintage and the keys from another and labels the keys
+# have not caught up with show as "Unclassified > other" -- data present,
+# meaning missing -- which is exactly what a per-file GitHub-then-local fallback
+# produces the moment a merge exists locally but is not yet pushed.
+#
+# EVOM1_SOURCE: "auto" (default), "local", or "github".
+#   auto   - if this app sits inside a repo checkout (../_keys exists), read
+#            LOCAL: that is the copy the user is editing, and it is the one
+#            build_data.R just regenerated. Otherwise read GITHUB (the deployed
+#            case on shinyapps.io, where only ./data ships alongside the app).
+#   local  - ./data and the repo only; never touch the network.
+#   github - GitHub only, with ./data as a per-file fallback (the old behaviour;
+#            use it to preview what the deployed app will show).
+# EVOM1_GH_BASE overrides the branch/base URL.
 
 GH_BASE <- Sys.getenv(
   "EVOM1_GH_BASE",
   "https://raw.githubusercontent.com/AleAliSousa/Evo-M1-Trait-Data/main/"
 )
 data_dir <- "data"
+repo_dir <- ".."                                   # repo root when checked out
+SOURCE <- {
+  s <- tolower(Sys.getenv("EVOM1_SOURCE", "auto"))
+  if (!s %in% c("auto", "local", "github")) s <- "auto"
+  if (s == "auto") if (dir.exists(file.path(repo_dir, "_keys"))) "local" else "github" else s
+}
 options(timeout = max(60, getOption("timeout")))  # allow slow raw.github reads
 
 # percent-encode a filename for use in a URL path (handles the %2F, <, >, ;,
@@ -39,15 +61,36 @@ pct <- function(s) {
   paste0(out, collapse = "")
 }
 
-# Read a file, trying GitHub first, then the local fallback copy.
-# `reader` is given a URL string (GitHub) or a path (local) and manages its
-# own connection (read.csv/read.delim open and close the URL themselves).
+# Read a file from whichever source SOURCE selected, in that source's order.
+# `reader` is given a URL string (GitHub) or a path (local) and manages its own
+# connection (read.csv/read.delim open and close the URL themselves).
+#
+# SOURCE = "local": the file's own repo path first (gh_rel resolved under
+#   repo_dir, so a merge that has not been pushed is still read), then the
+#   ./data bundle. The network is never touched.
+# SOURCE = "github": GitHub first, ./data as a fallback.
 read_gh <- function(gh_rel, local, reader, required = TRUE) {
-  res <- tryCatch(reader(paste0(GH_BASE, gh_rel)), error = function(e) NULL)
+  try_read <- function(x) tryCatch(reader(x), error = function(e) NULL)
+  if (SOURCE == "local") {
+    in_repo <- file.path(repo_dir, gh_rel)
+    if (file.exists(in_repo)) {
+      res <- try_read(in_repo)
+      if (!is.null(res)) return(res)
+    }
+    if (file.exists(local)) {
+      res <- try_read(local)
+      if (!is.null(res)) return(res)
+    }
+    if (required)
+      stop("Could not load ", gh_rel, " from the repo or ./data. ",
+           "Run build_data.R, or set EVOM1_SOURCE=github.")
+    return(NULL)
+  }
+  res <- try_read(paste0(GH_BASE, gh_rel))
   if (!is.null(res)) return(res)
   if (file.exists(local)) {
     message("GitHub fetch failed for ", gh_rel, " — using local fallback.")
-    return(tryCatch(reader(local), error = function(e) NULL))
+    return(try_read(local))
   }
   if (required) stop("Could not load ", gh_rel, " from GitHub or local fallback.")
   NULL
@@ -69,6 +112,8 @@ GH <- list(
   brain_mass = "__merging_brain_mass/brain_mass_long.csv",
   behaviour  = "__merging_behaviour/behaviour_long.csv",
   cerebellar = "__merging_cerebellar_folding/cerebellar_folding_long.csv",
+  cmr        = "__merging_cerebral_metabolic_rate/cerebral_metabolic_rate_long.csv",
+  ecv        = "__merging_endocranial_volume/endocranial_volume_long.csv",
   manifest   = "__ShinyApp/data/source_manifest.csv"
 )
 SRC_DIR <- "__Public/comparative-data/"  # source tables (fetched on demand)
@@ -126,6 +171,24 @@ load_compiled <- function() {
       stringsAsFactors = FALSE)
   }
 
+  # The cerebral-metabolic-rate merge is keyed Species x REGION x Measure, so its
+  # label has to carry the region: "Neocortex_CMRgl", "Whole_brain_CMRO2". It also
+  # names its provenance columns differently from the other merges (n_studies /
+  # Compilations, because its sources are compilations resolved down to
+  # primary-study level), hence its own loader rather than std_merge().
+  std_cmr <- function(gh_rel, local, dataset) {
+    d <- read_csv_gh(gh_rel, local)
+    lab <- paste0(d$Region, "_", d$Measure, " (", d$Units, ")")
+    data.frame(
+      Species = d$Species, Dataset = dataset, Variable = lab,
+      Value = as.character(d$Value), Value_num = suppressWarnings(as.numeric(d$Value)),
+      Source = paste0("EvoM1 cerebral metabolic rate merge (", d$n_studies,
+                      " primary studies; ", d$Compilations, ")"),
+      N_sources = suppressWarnings(as.integer(d$n_studies)),
+      Variable_raw = lab, Unit = d$Units, Unit_raw = d$Units,
+      stringsAsFactors = FALSE)
+  }
+
   base <- rbind(
     std(GH$volumes,    file.path(data_dir, "volumes_long.csv"),
         "Brain-structure volumes", "Teams", "n_teams"),
@@ -136,10 +199,18 @@ load_compiled <- function() {
   )
   merges <- rbind(
     std_merge(GH$body,       file.path(data_dir, "body_ecology_long.csv"), "Body & ecology"),
+    # Brain mass is emitted as PARALLEL variables, one per measurement basis
+    # (Brain_Mass_measured, Brain_Mass_excl_olfactory_bulb, Brain_Mass_mass_or_volume,
+    # Brain_size_sum_of_structures); nothing is pooled across bases. Endocranial volume
+    # is its own merge, in mL, and is never converted to a mass.
     std_merge(GH$brain_mass, file.path(data_dir, "brain_mass_long.csv"),   "Brain mass"),
+    std_merge(GH$ecv, file.path(data_dir, "endocranial_volume_long.csv"),
+              "Endocranial volume"),
     std_merge(GH$behaviour,  file.path(data_dir, "behaviour_long.csv"),    "Behaviour"),
     std_merge(GH$cerebellar, file.path(data_dir, "cerebellar_folding_long.csv"),
-              "Cerebellar folding")
+              "Cerebellar folding"),
+    std_cmr(GH$cmr, file.path(data_dir, "cerebral_metabolic_rate_long.csv"),
+            "Cerebral metabolic rate")
   )
 
   # unify species labels everywhere so synonyms line up
@@ -231,6 +302,23 @@ lab_meas   <- vd_get("Measure");       lab_unit   <- vd_get("Unit")
 lab_terms  <- vd_get("glossary_terms")
 lab_defsrc <- vd_get("definition_source")
 lab_ismeas <- vd_get("is_measurement")
+# Measurement basis. Whole-brain size is reported on bases that are not the same
+# quantity -- a weighed mass, a mass excluding the olfactory bulbs, a compilation
+# mixing masses with volumes converted at 1 cm3 = 1 g, a sum of sub-structures, an
+# endocranial capacity. Labels that share a poolable_group are the same quantity;
+# labels with different non-empty groups are not, and the plot says so.
+lab_pool   <- vd_get("poolable_group")
+POOL_LABEL <- c(
+  mass_measured             = "weighed brain mass",
+  mass_measured_excl_ob     = "weighed brain mass, olfactory bulbs excluded",
+  mass_or_volume_mixed      = "mass for some species, volume converted at 1 cm3 = 1 g for others",
+  sum_of_parts_incl_ob      = "sum of measured sub-structures, olfactory bulbs included",
+  mass_from_volume_or_ecv   = paste("not weighed: computed from a measured brain volume, or",
+                                    "from an endocranial volume"),
+  volume_total              = "brain volume including the ventricles",
+  volume_net                = "brain volume net of ventricles",
+  endocranial_volume        = "endocranial capacity: brain plus meninges, CSF and vessels",
+  endocranial_volume_female = "endocranial capacity, female-only means")
 
 look <- function(map, k) {
   if (!length(map)) return("")
@@ -240,6 +328,25 @@ look <- function(map, k) {
 # Variables actually present in the data, ordered by domain then class then name
 present <- sort(unique(compiled$Variable))
 var_domain <- look(lab_domain, present)
+
+# Coverage check. A label carried by the compiled tables but absent from
+# variable_definitions.csv is not "Unclassified" in any meaningful sense -- it is
+# a key that has not caught up with the data, and the two are usually of
+# different vintages (a merge regenerated locally against keys still being read
+# from GitHub, or build_data.R not re-run after editing variable_domain.csv).
+# That used to surface only as a stray "Unclassified > other" row in the picker,
+# which is easy to read as a data property rather than a build problem. Name it
+# instead: on the console at startup, and on the Data Directory tab.
+unclassified <- present[!nzchar(var_domain)]
+if (length(unclassified)) {
+  message(sprintf(
+    "%d of %d variables have no row in _keys/variable_definitions.csv (source: %s).",
+    length(unclassified), length(present), SOURCE))
+  message("  ", paste(utils::head(unclassified, 8), collapse = " | "),
+          if (length(unclassified) > 8) sprintf(" ... and %d more",
+                                                length(unclassified) - 8) else "")
+  message("  Fix: Rscript _keys/build_variable_definitions.R && Rscript __ShinyApp/build_data.R")
+}
 var_domain[!nzchar(var_domain)] <- "Unclassified"
 var_class  <- look(lab_class, present)
 
@@ -332,6 +439,10 @@ tip_for <- function(lab) {
     bits <- c(bits, paste(ex, collapse = "; "))
   }
   u <- look(lab_unit, lab); if (nzchar(u)) bits <- c(bits, paste0("Unit: ", u))
+  pg <- look(lab_pool, lab)
+  if (nzchar(pg))
+    bits <- c(bits, paste0("Measurement basis: ",
+                           if (pg %in% names(POOL_LABEL)) POOL_LABEL[[pg]] else pg))
   paste(bits, collapse = "\n")
 }
 
@@ -700,9 +811,23 @@ server <- function(input, output, session) {
 
   output$c_count <- renderUI({
     n <- nrow(c_filtered())
-    div(class = "mb-2 text-muted",
-        paste0(format(n, big.mark = ","), " row",
-               if (n == 1) "" else "s", " selected"))
+    tagList(
+      # Only shown when the keys do not cover the data -- see the coverage check
+      # above. Says which source the keys came from, because that is usually the
+      # cause: keys read from GitHub against tables regenerated locally.
+      if (length(unclassified))
+        div(class = "alert alert-warning py-2 px-2 mb-2 small",
+            tags$b(sprintf("%d of %d variables are unclassified.",
+                           length(unclassified), length(present))),
+            sprintf(" They have no row in _keys/variable_definitions.csv (read from: %s). ",
+                    SOURCE),
+            "Re-run ", tags$code("_keys/build_variable_definitions.R"), " then ",
+            tags$code("__ShinyApp/build_data.R"), ". First few: ",
+            tags$code(paste(utils::head(unclassified, 4), collapse = "  ")))
+      else NULL,
+      div(class = "mb-2 text-muted",
+          paste0(format(n, big.mark = ","), " row",
+                 if (n == 1) "" else "s", " selected")))
   })
 
   # Columns shown / downloaded. Domain and Measure class are carried alongside the
@@ -791,9 +916,24 @@ server <- function(input, output, session) {
         if (nzchar(u)) tags$span(class = "text-muted small", paste0("  (unit: ", u, ")")))
     }
     a <- row1("X", input$p_x); b <- row1("Y", input$p_y)
-    if (is.null(a) && is.null(b)) return(NULL)
-    div(class = "alert alert-light border py-2 px-2 mb-2", a,
-        if (!is.null(a) && !is.null(b)) tags$hr(class = "my-1"), b)
+    # Basis warning: the two axes are whole-brain size on DIFFERENT bases, so the
+    # relationship between them is partly an artefact of what each one includes.
+    px <- look(lab_pool, input$p_x); py <- look(lab_pool, input$p_y)
+    warn <- NULL
+    if (nzchar(px) && nzchar(py) && px != py) {
+      nx <- if (px %in% names(POOL_LABEL)) POOL_LABEL[[px]] else px
+      ny <- if (py %in% names(POOL_LABEL)) POOL_LABEL[[py]] else py
+      warn <- div(class = "alert alert-warning py-1 px-2 small mb-2",
+                  tags$strong("Incompatible measurement bases. "),
+                  sprintf("X is %s; Y is %s. These are not the same quantity, so they are ",
+                          nx, ny),
+                  "kept as separate variables and are not pooled anywhere in the app. ",
+                  "See the Glossary tab and _keys/brain_size_basis.csv.")
+    }
+    if (is.null(a) && is.null(b)) return(warn)
+    tagList(warn,
+      div(class = "alert alert-light border py-2 px-2 mb-2", a,
+          if (!is.null(a) && !is.null(b)) tags$hr(class = "my-1"), b))
   })
 
   output$p_pgls_note <- renderUI({

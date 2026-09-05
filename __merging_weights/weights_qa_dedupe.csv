@@ -1,0 +1,8 @@
+Species,canonical_structure,n_sources,min_mass_mg,max_mass_mg,ratio_max_min,sources,roles,flag
+Canis lupus familiaris,Cerebellum,2,6954.0,7370.0,1.0598,Latimer__1942_TABLEI.csv; Latimer__1956_Table2.csv,primary,agree (<2x)
+Cavia porcellus,Cerebellum,2,500.0,532.0,1.064,HerculanoHouzel_etal_2015_Table2.csv; Latimer__1956_Table2.csv,primary,agree (<2x)
+Heterocephalus glaber,Cerebellum,2,48.0,51.172000000000004,1.0661,HerculanoHouzel_etal_2015_Table2.csv; Kverkova_etal_2018_TableS1.csv,derived; primary,agree (<2x)
+Heterocephalus glaber,OlfactoryBulb,2,21.0,21.648,1.0309,HerculanoHouzel_etal_2015_Table4.csv; Kverkova_etal_2018_TableS1.csv,derived; primary,agree (<2x)
+Homo sapiens,Cerebellum,2,144000.0,154020.0,1.0696,HerculanoHouzel_etal_2015_Table2.csv; Latimer__1956_Table2.csv,primary; secondary,agree (<2x)
+Oryctolagus cuniculus,Cerebellum,2,1381.0,1412.0,1.0224,HerculanoHouzel_etal_2015_Table2.csv; Latimer__1956_Table2.csv,primary,agree (<2x)
+Rattus norvegicus,Cerebellum,2,244.0,272.0,1.1148,HerculanoHouzel_etal_2015_Table2.csv; Latimer__1956_Table2.csv,primary; secondary,agree (<2x)

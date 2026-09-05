@@ -1,8 +1,13 @@
 Species,measure_class,Measure,Units,Value,Value_median,n_sources,n_teams,n_teams_primary,primary_used,Teams,roles,value_min,value_max
+Acinonyx jubatus,locomotion,Angular_utilization_index_FL,percent,62.2093023255814,62.2093023255814,1,1,1,TRUE,Medina,primary,62.2093023255814,62.2093023255814
+Acinonyx jubatus,locomotion,Angular_utilization_index_HL,percent,60.8823529411765,60.8823529411765,1,1,1,TRUE,Medina,primary,60.8823529411765,60.8823529411765
 Acinonyx jubatus,gait,Duty_Factor,percent,70,70,1,1,1,TRUE,Wimberly,primary,70,70
 Acinonyx jubatus,gait,Foot_Posture,category,digitigrade,,1,1,1,TRUE,Wimberly,primary,,
 Acinonyx jubatus,gait,Gait,category,LSLC,,1,1,1,TRUE,Wimberly,primary,,
+Acinonyx jubatus,locomotion,Limb_posture,category,Digitigrade,,1,1,1,TRUE,Medina,primary,,
+Acinonyx jubatus,locomotion,Locomotor_habit,category,Cursorial,,1,1,1,TRUE,Medina,primary,,
 Acinonyx jubatus,gait,Phase,percent,18,18,1,1,1,TRUE,Wimberly,primary,18,18
+Acinonyx jubatus,locomotion,Top_speed,category,Fast,,1,1,1,TRUE,Medina,primary,,
 Acrobates pygmaeus,gait,Duty_Factor,percent,55.35,55.35,1,1,1,TRUE,Wimberly,primary,55.35,55.35
 Acrobates pygmaeus,gait,Foot_Posture,category,plantigrade,,1,1,1,TRUE,Wimberly,primary,,
 Acrobates pygmaeus,gait,Gait,category,LSDC,,1,1,1,TRUE,Wimberly,primary,,
@@ -23,10 +28,15 @@ Aepyceros melampus,gait,Gait,category,LSLC,,1,1,1,TRUE,Wimberly,primary,,
 Aepyceros melampus,gait,Phase,percent,19,19,1,1,1,TRUE,Wimberly,primary,19,19
 Afropithecus turkanensis,manipulation,Tool_use,category,0,,1,1,0,FALSE,Baker,secondary,,
 Afropithecus turkanensis,hand_morphology,log10_pp1_mm,log10 mm,1.45178643552429,1.45178643552429,1,1,1,TRUE,Baker,primary,1.45178643552429,1.45178643552429
+Ailuropoda melanoleuca,locomotion,Angular_utilization_index_FL,percent,38.9873417721519,38.9873417721519,1,1,1,TRUE,Medina,primary,38.9873417721519,38.9873417721519
+Ailuropoda melanoleuca,locomotion,Angular_utilization_index_HL,percent,32.6315789473684,32.6315789473684,1,1,1,TRUE,Medina,primary,32.6315789473684,32.6315789473684
 Ailuropoda melanoleuca,gait,Duty_Factor,percent,66.04377104,66.04377104,1,1,1,TRUE,Wimberly,primary,66.04377104,66.04377104
 Ailuropoda melanoleuca,gait,Foot_Posture,category,plantigrade,,1,1,1,TRUE,Wimberly,primary,,
 Ailuropoda melanoleuca,gait,Gait,category,LSLC,,1,1,1,TRUE,Wimberly,primary,,
+Ailuropoda melanoleuca,locomotion,Limb_posture,category,Plantigrade,,1,1,1,TRUE,Medina,primary,,
+Ailuropoda melanoleuca,locomotion,Locomotor_habit,category,Terrestrial,,1,1,1,TRUE,Medina,primary,,
 Ailuropoda melanoleuca,gait,Phase,percent,20.16835,20.16835,1,1,1,TRUE,Wimberly,primary,20.16835,20.16835
+Ailuropoda melanoleuca,locomotion,Top_speed,category,Slow,,1,1,1,TRUE,Medina,primary,,
 Ailurus fulgens,gait,Duty_Factor,percent,61.16666667,61.16666667,1,1,1,TRUE,Wimberly,primary,61.16666667,61.16666667
 Ailurus fulgens,gait,Foot_Posture,category,plantigrade,,1,1,1,TRUE,Wimberly,primary,,
 Ailurus fulgens,gait,Gait,category,LSLC,,1,1,1,TRUE,Wimberly,primary,,
@@ -547,10 +557,25 @@ Avahi occidentalis,behavioural_flexibility,Social_learning_report_count,reports,
 Avahi occidentalis,behavioural_flexibility,Tool_use_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
 Avahi occidentalis,behavioural_flexibility,Tool_use_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
 Avahi occidentalis,research_effort,Zoological_record_article_count,articles,6,6,1,1,1,TRUE,Reader,primary,6,6
+Bison bison,locomotion,Angular_utilization_index_FL,percent,63.5064935064935,63.5064935064935,1,1,1,TRUE,Medina,primary,63.5064935064935,63.5064935064935
+Bison bison,locomotion,Angular_utilization_index_HL,percent,56.0294117647059,56.0294117647059,1,1,1,TRUE,Medina,primary,56.0294117647059,56.0294117647059
 Bison bison,gait,Duty_Factor,percent,71,71,1,1,1,TRUE,Wimberly,primary,71,71
 Bison bison,gait,Foot_Posture,category,unguligrade,,1,1,1,TRUE,Wimberly,primary,,
 Bison bison,gait,Gait,category,LSLC,,1,1,1,TRUE,Wimberly,primary,,
+Bison bison,locomotion,Limb_posture,category,Unguligrade,,1,1,1,TRUE,Medina,primary,,
+Bison bison,locomotion,Locomotor_habit,category,Cursorial,,1,1,1,TRUE,Medina,primary,,
 Bison bison,gait,Phase,percent,16,16,1,1,1,TRUE,Wimberly,primary,16,16
+Bison bison,locomotion,Top_speed,category,Slow,,1,1,1,TRUE,Medina,primary,,
+Bos primigenius indicus,locomotion,Angular_utilization_index_FL,percent,40.5454545454545,40.5454545454545,1,1,1,TRUE,Medina,primary,40.5454545454545,40.5454545454545
+Bos primigenius indicus,locomotion,Angular_utilization_index_HL,percent,36.7647058823529,36.7647058823529,1,1,1,TRUE,Medina,primary,36.7647058823529,36.7647058823529
+Bos primigenius indicus,locomotion,Limb_posture,category,Unguligrade,,1,1,1,TRUE,Medina,primary,,
+Bos primigenius indicus,locomotion,Locomotor_habit,category,Terrestrial,,1,1,1,TRUE,Medina,primary,,
+Bos primigenius indicus,locomotion,Top_speed,category,Medium,,1,1,1,TRUE,Medina,primary,,
+Bos primigenius taurus,locomotion,Angular_utilization_index_FL,percent,47.1153846153846,47.1153846153846,1,1,1,TRUE,Medina,primary,47.1153846153846,47.1153846153846
+Bos primigenius taurus,locomotion,Angular_utilization_index_HL,percent,63.75,63.75,1,1,1,TRUE,Medina,primary,63.75,63.75
+Bos primigenius taurus,locomotion,Limb_posture,category,Unguligrade,,1,1,1,TRUE,Medina,primary,,
+Bos primigenius taurus,locomotion,Locomotor_habit,category,Terrestrial,,1,1,1,TRUE,Medina,primary,,
+Bos primigenius taurus,locomotion,Top_speed,category,Medium,,1,1,1,TRUE,Medina,primary,,
 Bos taurus,gait,Duty_Factor,percent,69,69,1,1,1,TRUE,Wimberly,primary,69,69
 Bos taurus,gait,Foot_Posture,category,unguligrade,,1,1,1,TRUE,Wimberly,primary,,
 Bos taurus,gait,Gait,category,LSDC,,1,1,1,TRUE,Wimberly,primary,,
@@ -574,10 +599,15 @@ Bradypus variegatus,gait,Duty_Factor,percent,78.56999999999999,78.57,1,1,1,TRUE,
 Bradypus variegatus,gait,Foot_Posture,category,plantigrade,,1,1,1,TRUE,Wimberly,primary,,
 Bradypus variegatus,gait,Gait,category,DSDC,,1,1,1,TRUE,Wimberly,primary,,
 Bradypus variegatus,gait,Phase,percent,52.04,52.04,1,1,1,TRUE,Wimberly,primary,52.04,52.04
+Bubalus bubalis,locomotion,Angular_utilization_index_FL,percent,56.3888888888889,56.3888888888889,1,1,1,TRUE,Medina,primary,56.3888888888889,56.3888888888889
+Bubalus bubalis,locomotion,Angular_utilization_index_HL,percent,95.531914893617,95.531914893617,1,1,1,TRUE,Medina,primary,95.531914893617,95.531914893617
 Bubalus bubalis,gait,Duty_Factor,percent,63.16964286,63.16964286,1,1,1,TRUE,Wimberly,primary,63.16964286,63.16964286
 Bubalus bubalis,gait,Foot_Posture,category,unguligrade,,1,1,1,TRUE,Wimberly,primary,,
 Bubalus bubalis,gait,Gait,category,LSLC,,1,1,1,TRUE,Wimberly,primary,,
+Bubalus bubalis,locomotion,Limb_posture,category,Unguligrade,,1,1,1,TRUE,Medina,primary,,
+Bubalus bubalis,locomotion,Locomotor_habit,category,Terrestrial,,1,1,1,TRUE,Medina,primary,,
 Bubalus bubalis,gait,Phase,percent,16.96429,16.96429,1,1,1,TRUE,Wimberly,primary,16.96429,16.96429
+Bubalus bubalis,locomotion,Top_speed,category,Fast,,1,1,1,TRUE,Medina,primary,,
 Cacajao calvus,locomotion,Arboreal_terrestrial,category,A,,1,1,1,TRUE,Granatosky,primary,,
 Cacajao calvus,behavioural_flexibility,Extractive_foraging_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
 Cacajao calvus,behavioural_flexibility,Extractive_foraging_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
@@ -854,28 +884,58 @@ Caluromys philander,gait,Gait,category,DSDC,,1,1,1,TRUE,Wimberly,primary,,
 Caluromys philander,locomotion,Locomotor_diversity_index,index,1.15402168831365,1.15402168831365,1,1,1,TRUE,Granatosky,primary,1.15402168831365,1.15402168831365
 Caluromys philander,gait,Phase,percent,58,58,1,1,1,TRUE,Wimberly,primary,58,58
 Camelus,dexterity,Dexterity,1-7 scale,1,1,1,1,1,TRUE,Heffner,primary,1,1
+Camelus bactrianus,locomotion,Angular_utilization_index_FL,percent,65.36993243243245,65.3699324324324,1,1,1,TRUE,Medina,primary,65.3699324324324,65.3699324324324
+Camelus bactrianus,locomotion,Angular_utilization_index_HL,percent,49.8035136384651,49.8035136384651,1,1,1,TRUE,Medina,primary,49.8035136384651,49.8035136384651
 Camelus bactrianus,gait,Duty_Factor,percent,72,72,1,1,1,TRUE,Wimberly,primary,72,72
 Camelus bactrianus,gait,Foot_Posture,category,digitigrade,,1,1,1,TRUE,Wimberly,primary,,
 Camelus bactrianus,gait,Gait,category,LSLC,,1,1,1,TRUE,Wimberly,primary,,
+Camelus bactrianus,locomotion,Limb_posture,category,Sub-unguligrade,,1,1,1,TRUE,Medina,primary,,
+Camelus bactrianus,locomotion,Locomotor_habit,category,Cursorial,,1,1,1,TRUE,Medina,primary,,
 Camelus bactrianus,gait,Phase,percent,21,21,1,1,1,TRUE,Wimberly,primary,21,21
+Camelus bactrianus,locomotion,Top_speed,category,Fast,,1,1,1,TRUE,Medina,primary,,
+Camelus dromedarius,locomotion,Angular_utilization_index_FL,percent,77.48747010381675,77.4874701038167,1,1,1,TRUE,Medina,primary,77.4874701038167,77.4874701038167
+Camelus dromedarius,locomotion,Angular_utilization_index_HL,percent,67.698105081826,67.698105081826,1,1,1,TRUE,Medina,primary,67.698105081826,67.698105081826
 Camelus dromedarius,gait,Duty_Factor,percent,75.01622322999999,75.01622323,1,1,1,TRUE,Wimberly,primary,75.01622323,75.01622323
 Camelus dromedarius,gait,Foot_Posture,category,digitigrade,,1,1,1,TRUE,Wimberly,primary,,
 Camelus dromedarius,gait,Gait,category,LSLC,,1,1,1,TRUE,Wimberly,primary,,
+Camelus dromedarius,locomotion,Limb_posture,category,Sub-unguligrade,,1,1,1,TRUE,Medina,primary,,
+Camelus dromedarius,locomotion,Locomotor_habit,category,Cursorial,,1,1,1,TRUE,Medina,primary,,
 Camelus dromedarius,gait,Phase,percent,22.78823,22.78823,1,1,1,TRUE,Wimberly,primary,22.78823,22.78823
+Camelus dromedarius,locomotion,Top_speed,category,Fast,,1,1,1,TRUE,Medina,primary,,
 Canis aureus,gait,Duty_Factor,percent,73.28703704,73.28703704,1,1,1,TRUE,Wimberly,primary,73.28703704,73.28703704
 Canis aureus,gait,Foot_Posture,category,digitigrade,,1,1,1,TRUE,Wimberly,primary,,
 Canis aureus,gait,Gait,category,LSLC,,1,1,1,TRUE,Wimberly,primary,,
 Canis aureus,gait,Phase,percent,24.25926,24.25926,1,1,1,TRUE,Wimberly,primary,24.25926,24.25926
 Canis latrans,dexterity,Dexterity,1-7 scale,2,2,2,2,1,TRUE,Heffner; Iwaniuk,primary; secondary,2,2
+Canis lupus,locomotion,Angular_utilization_index_FL,percent,44.7674418604651,44.7674418604651,1,1,1,TRUE,Medina,primary,44.7674418604651,44.7674418604651
+Canis lupus,locomotion,Angular_utilization_index_HL,percent,73.04347826086961,73.0434782608696,1,1,1,TRUE,Medina,primary,73.0434782608696,73.0434782608696
 Canis lupus,gait,Duty_Factor,percent,60.34,60.34,1,1,1,TRUE,Wimberly,primary,60.34,60.34
 Canis lupus,gait,Foot_Posture,category,digitigrade,,1,1,1,TRUE,Wimberly,primary,,
 Canis lupus,gait,Gait,category,LSLC,,1,1,1,TRUE,Wimberly,primary,,
+Canis lupus,locomotion,Limb_posture,category,Digitigrade,,1,1,1,TRUE,Medina,primary,,
+Canis lupus,locomotion,Locomotor_habit,category,Cursorial,,1,1,1,TRUE,Medina,primary,,
 Canis lupus,gait,Phase,percent,18.965,18.965,1,1,1,TRUE,Wimberly,primary,18.965,18.965
+Canis lupus,locomotion,Top_speed,category,Fast,,1,1,1,TRUE,Medina,primary,,
+Canis lupus familiaris,locomotion,Angular_utilization_index_FL,percent,48.24398657844652,48.2439865784465,1,1,1,TRUE,Medina,primary,48.2439865784465,48.2439865784465
+Canis lupus familiaris,locomotion,Angular_utilization_index_HL,percent,47.37791079156778,47.3779107915678,1,1,1,TRUE,Medina,primary,47.3779107915678,47.3779107915678
+Canis lupus familiaris,locomotion,Limb_posture,category,Digitigrade,,1,1,1,TRUE,Medina,primary,,
+Canis lupus familiaris,locomotion,Locomotor_habit,category,Cursorial,,1,1,1,TRUE,Medina,primary,,
+Canis lupus familiaris,locomotion,Top_speed,category,Fast,,1,1,1,TRUE,Medina,primary,,
 Capra aegagrus,gait,Duty_Factor,percent,72,72,1,1,1,TRUE,Wimberly,primary,72,72
 Capra aegagrus,gait,Foot_Posture,category,unguligrade,,1,1,1,TRUE,Wimberly,primary,,
 Capra aegagrus,gait,Gait,category,LSLC,,1,1,1,TRUE,Wimberly,primary,,
 Capra aegagrus,gait,Phase,percent,23,23,1,1,1,TRUE,Wimberly,primary,23,23
+Capra aegagrus hircus,locomotion,Angular_utilization_index_FL,percent,80.83333333333334,80.8333333333333,1,1,1,TRUE,Medina,primary,80.8333333333333,80.8333333333333
+Capra aegagrus hircus,locomotion,Angular_utilization_index_HL,percent,56.51927437641724,56.5192743764172,1,1,1,TRUE,Medina,primary,56.5192743764172,56.5192743764172
+Capra aegagrus hircus,locomotion,Limb_posture,category,Unguligrade,,1,1,1,TRUE,Medina,primary,,
+Capra aegagrus hircus,locomotion,Locomotor_habit,category,Scansorial,,1,1,1,TRUE,Medina,primary,,
+Capra aegagrus hircus,locomotion,Top_speed,category,Slow,,1,1,1,TRUE,Medina,primary,,
 Capra hircus,dexterity,Dexterity,1-7 scale,1,1,2,2,1,TRUE,Heffner; Iwaniuk,primary; secondary,1,1
+Capreolus capreolus,locomotion,Angular_utilization_index_FL,percent,87.906976744186,87.906976744186,1,1,1,TRUE,Medina,primary,87.906976744186,87.906976744186
+Capreolus capreolus,locomotion,Angular_utilization_index_HL,percent,68.4848484848485,68.4848484848485,1,1,1,TRUE,Medina,primary,68.4848484848485,68.4848484848485
+Capreolus capreolus,locomotion,Limb_posture,category,Unguligrade,,1,1,1,TRUE,Medina,primary,,
+Capreolus capreolus,locomotion,Locomotor_habit,category,Cursorial,,1,1,1,TRUE,Medina,primary,,
+Capreolus capreolus,locomotion,Top_speed,category,Fast,,1,1,1,TRUE,Medina,primary,,
 Caracal caracal,gait,Duty_Factor,percent,65.76364335,65.76364335,1,1,1,TRUE,Wimberly,primary,65.76364335,65.76364335
 Caracal caracal,gait,Foot_Posture,category,digitigrade,,1,1,1,TRUE,Wimberly,primary,,
 Caracal caracal,gait,Gait,category,LSLC,,1,1,1,TRUE,Wimberly,primary,,
@@ -904,11 +964,16 @@ Carpolestes simpsoni,hand_morphology,log10_dp3_mm,log10 mm,0.361727836017593,0.3
 Carpolestes simpsoni,hand_morphology,log10_ip3_mm,log10 mm,0.662757831681574,0.662757831681574,1,1,1,TRUE,Baker,primary,0.662757831681574,0.662757831681574
 Carpolestes simpsoni,hand_morphology,log10_mc3_mm,log10 mm,0.8561244442423001,0.8561244442423,1,1,1,TRUE,Baker,primary,0.8561244442423,0.8561244442423
 Carpolestes simpsoni,hand_morphology,log10_pp3_mm,log10 mm,0.82020145948564,0.82020145948564,1,1,1,TRUE,Baker,primary,0.82020145948564,0.82020145948564
+Castor canadensis,locomotion,Angular_utilization_index_FL,percent,72.1428571428571,72.1428571428571,1,1,1,TRUE,Medina,primary,72.1428571428571,72.1428571428571
+Castor canadensis,locomotion,Angular_utilization_index_HL,percent,27.8645833333333,27.8645833333333,1,1,1,TRUE,Medina,primary,27.8645833333333,27.8645833333333
 Castor canadensis,dexterity,Dexterity,1-7 scale,3,3,1,1,1,TRUE,Heffner,primary,3,3
 Castor canadensis,gait,Duty_Factor,percent,74.15624348999999,74.15624349,1,1,1,TRUE,Wimberly,primary,74.15624349,74.15624349
 Castor canadensis,gait,Foot_Posture,category,plantigrade,,1,1,1,TRUE,Wimberly,primary,,
 Castor canadensis,gait,Gait,category,LSDC,,1,1,1,TRUE,Wimberly,primary,,
+Castor canadensis,locomotion,Limb_posture,category,Plantigrade,,1,1,1,TRUE,Medina,primary,,
+Castor canadensis,locomotion,Locomotor_habit,category,Terrestrial,,1,1,1,TRUE,Medina,primary,,
 Castor canadensis,gait,Phase,percent,36.6823,36.6823,1,1,1,TRUE,Wimberly,primary,36.6823,36.6823
+Castor canadensis,locomotion,Top_speed,category,Fast,,1,1,1,TRUE,Medina,primary,,
 Cavia aperea,dexterity,Dexterity,1-7 scale,2,2,1,1,1,TRUE,Heffner,primary,2,2
 Cebus albifrons,behavioural_flexibility,Extractive_foraging_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
 Cebus albifrons,behavioural_flexibility,Extractive_foraging_report_count,reports,3,3,1,1,1,TRUE,Reader,primary,3,3
@@ -1016,10 +1081,15 @@ Cephalophus silvicultor,gait,Duty_Factor,percent,67.2,67.2,1,1,1,TRUE,Wimberly,p
 Cephalophus silvicultor,gait,Foot_Posture,category,unguligrade,,1,1,1,TRUE,Wimberly,primary,,
 Cephalophus silvicultor,gait,Gait,category,LSLC,,1,1,1,TRUE,Wimberly,primary,,
 Cephalophus silvicultor,gait,Phase,percent,23.12,23.12,1,1,1,TRUE,Wimberly,primary,23.12,23.12
+Ceratotherium simum,locomotion,Angular_utilization_index_FL,percent,49.3975903614458,49.3975903614458,1,1,1,TRUE,Medina,primary,49.3975903614458,49.3975903614458
+Ceratotherium simum,locomotion,Angular_utilization_index_HL,percent,75,75,1,1,1,TRUE,Medina,primary,75,75
 Ceratotherium simum,gait,Duty_Factor,percent,68,68,1,1,1,TRUE,Wimberly,primary,68,68
 Ceratotherium simum,gait,Foot_Posture,category,digitigrade,,1,1,1,TRUE,Wimberly,primary,,
 Ceratotherium simum,gait,Gait,category,LSLC,,1,1,1,TRUE,Wimberly,primary,,
+Ceratotherium simum,locomotion,Limb_posture,category,Unguligrade,,1,1,1,TRUE,Medina,primary,,
+Ceratotherium simum,locomotion,Locomotor_habit,category,Terrestrial,,1,1,1,TRUE,Medina,primary,,
 Ceratotherium simum,gait,Phase,percent,21,21,1,1,1,TRUE,Wimberly,primary,21,21
+Ceratotherium simum,locomotion,Top_speed,category,Fast,,1,1,1,TRUE,Medina,primary,,
 Cercocebus agilis,manipulation,Tool_use,category,0,,1,1,0,FALSE,Baker,secondary,,
 Cercocebus agilis,hand_morphology,log10_ip3_mm,log10 mm,1.25623653320592,1.25623653320592,1,1,1,TRUE,Baker,primary,1.25623653320592,1.25623653320592
 Cercocebus agilis,hand_morphology,log10_mc1_mm,log10 mm,1.38066339634058,1.38066339634058,1,1,1,TRUE,Baker,primary,1.38066339634058,1.38066339634058
@@ -1344,10 +1414,20 @@ Cercopithecus wolfi,behavioural_flexibility,Social_learning_report_count,reports
 Cercopithecus wolfi,behavioural_flexibility,Tool_use_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
 Cercopithecus wolfi,behavioural_flexibility,Tool_use_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
 Cercopithecus wolfi,research_effort,Zoological_record_article_count,articles,7,7,1,1,1,TRUE,Reader,primary,7,7
+Cervus canadensis,locomotion,Angular_utilization_index_FL,percent,83.4615384615385,83.4615384615385,1,1,1,TRUE,Medina,primary,83.4615384615385,83.4615384615385
+Cervus canadensis,locomotion,Angular_utilization_index_HL,percent,37.3737373737374,37.3737373737374,1,1,1,TRUE,Medina,primary,37.3737373737374,37.3737373737374
+Cervus canadensis,locomotion,Limb_posture,category,Unguligrade,,1,1,1,TRUE,Medina,primary,,
+Cervus canadensis,locomotion,Locomotor_habit,category,Cursorial,,1,1,1,TRUE,Medina,primary,,
+Cervus canadensis,locomotion,Top_speed,category,Fast,,1,1,1,TRUE,Medina,primary,,
+Cervus elaphus,locomotion,Angular_utilization_index_FL,percent,47.3939393939394,47.3939393939394,1,1,1,TRUE,Medina,primary,47.3939393939394,47.3939393939394
+Cervus elaphus,locomotion,Angular_utilization_index_HL,percent,37.2357723577236,37.2357723577236,1,1,1,TRUE,Medina,primary,37.2357723577236,37.2357723577236
 Cervus elaphus,gait,Duty_Factor,percent,63.47494553,63.47494553,1,1,1,TRUE,Wimberly,primary,63.47494553,63.47494553
 Cervus elaphus,gait,Foot_Posture,category,unguligrade,,1,1,1,TRUE,Wimberly,primary,,
 Cervus elaphus,gait,Gait,category,LSDC,,1,1,1,TRUE,Wimberly,primary,,
+Cervus elaphus,locomotion,Limb_posture,category,Unguligrade,,1,1,1,TRUE,Medina,primary,,
+Cervus elaphus,locomotion,Locomotor_habit,category,Cursorial,,1,1,1,TRUE,Medina,primary,,
 Cervus elaphus,gait,Phase,percent,28.19172,28.19172,1,1,1,TRUE,Wimberly,primary,28.19172,28.19172
+Cervus elaphus,locomotion,Top_speed,category,Fast,,1,1,1,TRUE,Medina,primary,,
 Cheirogaleus major,locomotion,Arboreal_terrestrial,category,A,,1,1,1,TRUE,Granatosky,primary,,
 Cheirogaleus major,behavioural_flexibility,Extractive_foraging_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
 Cheirogaleus major,behavioural_flexibility,Extractive_foraging_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
@@ -1449,8 +1529,11 @@ Chlorocebus sabaeus,vocalization,VocalRepertoire,count,25,25,1,1,0,FALSE,ManyPri
 Choloepus didactylus,gait,Duty_Factor,percent,72.63339384,72.63339384,1,1,1,TRUE,Wimberly,primary,72.63339384,72.63339384
 Choloepus didactylus,gait,Foot_Posture,category,plantigrade,,1,1,1,TRUE,Wimberly,primary,,
 Choloepus didactylus,gait,Gait,category,LSDC,,1,1,1,TRUE,Wimberly,primary,,
+Choloepus didactylus,locomotion,Limb_posture,category,Mixed,,1,1,1,TRUE,Medina,primary,,
 Choloepus didactylus,locomotion,Locomotor_diversity_index,index,1.16745710622922,1.16745710622922,1,1,1,TRUE,Granatosky,primary,1.16745710622922,1.16745710622922
+Choloepus didactylus,locomotion,Locomotor_habit,category,Arboreal,,1,1,1,TRUE,Medina,primary,,
 Choloepus didactylus,gait,Phase,percent,49.43348146,49.43348146,1,1,1,TRUE,Wimberly,primary,49.43348146,49.43348146
+Choloepus didactylus,locomotion,Top_speed,category,Slow,,1,1,1,TRUE,Medina,primary,,
 Chrysocyon brachyurus,gait,Duty_Factor,percent,62.84858552,62.84858552,1,1,1,TRUE,Wimberly,primary,62.84858552,62.84858552
 Chrysocyon brachyurus,gait,Foot_Posture,category,digitigrade,,1,1,1,TRUE,Wimberly,primary,,
 Chrysocyon brachyurus,gait,Gait,category,LSLC,,1,1,1,TRUE,Wimberly,primary,,
@@ -1551,6 +1634,9 @@ Cryptoprocta ferox,gait,Duty_Factor,percent,70.43010753,70.43010753,1,1,1,TRUE,W
 Cryptoprocta ferox,gait,Foot_Posture,category,digitigrade,,1,1,1,TRUE,Wimberly,primary,,
 Cryptoprocta ferox,gait,Gait,category,LSDC,,1,1,1,TRUE,Wimberly,primary,,
 Cryptoprocta ferox,gait,Phase,percent,27.47909,27.47909,1,1,1,TRUE,Wimberly,primary,27.47909,27.47909
+Cuniculus taczanowskii,locomotion,Limb_posture,category,Digitigrade,,1,1,1,TRUE,Medina,primary,,
+Cuniculus taczanowskii,locomotion,Locomotor_habit,category,Terrestrial,,1,1,1,TRUE,Medina,primary,,
+Cuniculus taczanowskii,locomotion,Top_speed,category,Slow,,1,1,1,TRUE,Medina,primary,,
 Cuon alpinus,gait,Duty_Factor,percent,69.61538462,69.61538462,1,1,1,TRUE,Wimberly,primary,69.61538462,69.61538462
 Cuon alpinus,gait,Foot_Posture,category,digitigrade,,1,1,1,TRUE,Wimberly,primary,,
 Cuon alpinus,gait,Gait,category,LSLC,,1,1,1,TRUE,Wimberly,primary,,
@@ -1578,11 +1664,19 @@ Darwinius masillae,hand_morphology,log10_pp2_mm,log10 mm,1.12548126570059,1.1254
 Darwinius masillae,hand_morphology,log10_pp3_mm,log10 mm,1.19375053333945,1.19375053333945,1,1,1,TRUE,Baker,primary,1.19375053333945,1.19375053333945
 Darwinius masillae,hand_morphology,log10_pp4_mm,log10 mm,1.19479175772192,1.19479175772192,1,1,1,TRUE,Baker,primary,1.19479175772192,1.19479175772192
 Darwinius masillae,hand_morphology,log10_pp5_mm,log10 mm,1.06660542412653,1.06660542412653,1,1,1,TRUE,Baker,primary,1.06660542412653,1.06660542412653
+Dasypus novemcinctus,locomotion,Angular_utilization_index_FL,percent,40.3703703703704,40.3703703703704,1,1,1,TRUE,Medina,primary,40.3703703703704,40.3703703703704
+Dasypus novemcinctus,locomotion,Angular_utilization_index_HL,percent,39.7350993377483,39.7350993377483,1,1,1,TRUE,Medina,primary,39.7350993377483,39.7350993377483
 Dasypus novemcinctus,dexterity,Dexterity,1-7 scale,1,1,2,2,1,TRUE,Heffner; Iwaniuk,primary; secondary,1,1
 Dasypus novemcinctus,gait,Duty_Factor,percent,54.54,54.54,1,1,1,TRUE,Wimberly,primary,54.54,54.54
 Dasypus novemcinctus,gait,Foot_Posture,category,digitigrade,,1,1,1,TRUE,Wimberly,primary,,
 Dasypus novemcinctus,gait,Gait,category,LSDC,,1,1,1,TRUE,Wimberly,primary,,
+Dasypus novemcinctus,locomotion,Limb_posture,category,Digitigrade,,1,1,1,TRUE,Medina,primary,,
+Dasypus novemcinctus,locomotion,Locomotor_habit,category,Terrestrial,,1,1,1,TRUE,Medina,primary,,
 Dasypus novemcinctus,gait,Phase,percent,36.36,36.36,1,1,1,TRUE,Wimberly,primary,36.36,36.36
+Dasypus novemcinctus,locomotion,Top_speed,category,Medium,,1,1,1,TRUE,Medina,primary,,
+Dasyuroides byrnei,locomotion,Limb_posture,category,Plantigrade,,1,1,1,TRUE,Medina,primary,,
+Dasyuroides byrnei,locomotion,Locomotor_habit,category,Terrestrial,,1,1,1,TRUE,Medina,primary,,
+Dasyuroides byrnei,locomotion,Top_speed,category,Slow,,1,1,1,TRUE,Medina,primary,,
 Dasyurus maculatus,gait,Duty_Factor,percent,64.27399,64.27399,1,1,1,TRUE,Wimberly,primary,64.27399,64.27399
 Dasyurus maculatus,gait,Foot_Posture,category,digitigrade,,1,1,1,TRUE,Wimberly,primary,,
 Dasyurus maculatus,gait,Gait,category,LSDC,,1,1,1,TRUE,Wimberly,primary,,
@@ -1623,11 +1717,25 @@ Desmodus rotundus,gait,Duty_Factor,percent,68.15073417000001,68.15073417,1,1,1,T
 Desmodus rotundus,gait,Gait,category,LSDC,,1,1,1,TRUE,Wimberly,primary,,
 Desmodus rotundus,gait,Phase,percent,29.50951127,29.50951127,1,1,1,TRUE,Wimberly,primary,29.50951127,29.50951127
 Desmodus rufus,dexterity,Dexterity,1-7 scale,1,1,1,1,1,TRUE,Heffner,primary,1,1
+Diceros bicornis,locomotion,Angular_utilization_index_FL,percent,91.2068965517241,91.2068965517241,1,1,1,TRUE,Medina,primary,91.2068965517241,91.2068965517241
+Diceros bicornis,locomotion,Angular_utilization_index_HL,percent,44.5454545454545,44.5454545454545,1,1,1,TRUE,Medina,primary,44.5454545454545,44.5454545454545
+Diceros bicornis,locomotion,Limb_posture,category,Unguligrade,,1,1,1,TRUE,Medina,primary,,
+Diceros bicornis,locomotion,Locomotor_habit,category,Terrestrial,,1,1,1,TRUE,Medina,primary,,
+Diceros bicornis,locomotion,Top_speed,category,Medium,,1,1,1,TRUE,Medina,primary,,
 Didelphis virginiana,dexterity,Dexterity,1-7 scale,3,3,2,2,1,TRUE,Heffner; Iwaniuk,primary; secondary,3,3
 Didelphis virginiana,gait,Duty_Factor,percent,76.54000000000001,76.54,1,1,1,TRUE,Wimberly,primary,76.54,76.54
 Didelphis virginiana,gait,Foot_Posture,category,plantigrade,,1,1,1,TRUE,Wimberly,primary,,
 Didelphis virginiana,gait,Gait,category,LSDC,,1,1,1,TRUE,Wimberly,primary,,
 Didelphis virginiana,gait,Phase,percent,34.86,34.86,1,1,1,TRUE,Wimberly,primary,34.86,34.86
+Dinomys branickii,locomotion,Angular_utilization_index_HL,percent,0,0,1,1,1,TRUE,Medina,primary,0,0
+Dinomys branickii,locomotion,Limb_posture,category,Plantigrade,,1,1,1,TRUE,Medina,primary,,
+Dinomys branickii,locomotion,Locomotor_habit,category,Terrestrial,,1,1,1,TRUE,Medina,primary,,
+Dinomys branickii,locomotion,Top_speed,category,Slow,,1,1,1,TRUE,Medina,primary,,
+Dolichotis patagonum,locomotion,Angular_utilization_index_FL,percent,50.8421052631579,50.8421052631579,1,1,1,TRUE,Medina,primary,50.8421052631579,50.8421052631579
+Dolichotis patagonum,locomotion,Angular_utilization_index_HL,percent,42,42,1,1,1,TRUE,Medina,primary,42,42
+Dolichotis patagonum,locomotion,Limb_posture,category,Digitigrade,,1,1,1,TRUE,Medina,primary,,
+Dolichotis patagonum,locomotion,Locomotor_habit,category,Cursorial,,1,1,1,TRUE,Medina,primary,,
+Dolichotis patagonum,locomotion,Top_speed,category,Medium,,1,1,1,TRUE,Medina,primary,,
 Dryomomys szalayi,manipulation,Tool_use,category,0,,1,1,0,FALSE,Baker,secondary,,
 Dryomomys szalayi,hand_morphology,log10_mc5_mm,log10 mm,0.621176281775035,0.621176281775035,1,1,1,TRUE,Baker,primary,0.621176281775035,0.621176281775035
 Eira barbara,locomotion,Locomotor_diversity_index,index,1.31805406764601,1.31805406764601,1,1,1,TRUE,Granatosky,primary,1.31805406764601,1.31805406764601
@@ -1639,11 +1747,16 @@ Ekembo heseloni,hand_morphology,log10_mc2_mm,log10 mm,1.55630250076729,1.5563025
 Ekembo heseloni,hand_morphology,log10_mc4_mm,log10 mm,1.5854607295085,1.5854607295085,1,1,1,TRUE,Baker,primary,1.5854607295085,1.5854607295085
 Ekembo heseloni,hand_morphology,log10_pp1_mm,log10 mm,1.33445375115093,1.33445375115093,1,1,1,TRUE,Baker,primary,1.33445375115093,1.33445375115093
 Ekembo heseloni,hand_morphology,log10_pp4_mm,log10 mm,1.47712125471966,1.47712125471966,1,1,1,TRUE,Baker,primary,1.47712125471966,1.47712125471966
+Elephas maximus,locomotion,Angular_utilization_index_FL,percent,64.2941919191919,64.2941919191919,1,1,1,TRUE,Medina,primary,64.2941919191919,64.2941919191919
+Elephas maximus,locomotion,Angular_utilization_index_HL,percent,42.22789984670415,42.2278998467041,1,1,1,TRUE,Medina,primary,42.2278998467041,42.2278998467041
 Elephas maximus,dexterity,Dexterity,1-7 scale,1,1,1,1,1,TRUE,Heffner,primary,1,1
 Elephas maximus,gait,Duty_Factor,percent,73,73,1,1,1,TRUE,Wimberly,primary,73,73
 Elephas maximus,gait,Foot_Posture,category,plantigrade,,1,1,1,TRUE,Wimberly,primary,,
 Elephas maximus,gait,Gait,category,LSLC,,1,1,1,TRUE,Wimberly,primary,,
+Elephas maximus,locomotion,Limb_posture,category,Sub-unguligrade,,1,1,1,TRUE,Medina,primary,,
+Elephas maximus,locomotion,Locomotor_habit,category,Terrestrial,,1,1,1,TRUE,Medina,primary,,
 Elephas maximus,gait,Phase,percent,19,19,1,1,1,TRUE,Wimberly,primary,19,19
+Elephas maximus,locomotion,Top_speed,category,Slow,,1,1,1,TRUE,Medina,primary,,
 Enhydra lutris,gait,Duty_Factor,percent,67.155,67.155,1,1,1,TRUE,Wimberly,primary,67.155,67.155
 Enhydra lutris,gait,Gait,category,LSDC,,1,1,1,TRUE,Wimberly,primary,,
 Enhydra lutris,gait,Phase,percent,27.285,27.285,1,1,1,TRUE,Wimberly,primary,27.285,27.285
@@ -1656,11 +1769,21 @@ Equus burchelli,gait,Duty_Factor,percent,67,67,1,1,1,TRUE,Wimberly,primary,67,67
 Equus burchelli,gait,Foot_Posture,category,unguligrade,,1,1,1,TRUE,Wimberly,primary,,
 Equus burchelli,gait,Gait,category,LSLC,,1,1,1,TRUE,Wimberly,primary,,
 Equus burchelli,gait,Phase,percent,24,24,1,1,1,TRUE,Wimberly,primary,24,24
+Equus caballus,locomotion,Angular_utilization_index_FL,percent,66.7396978021978,66.7396978021978,1,1,1,TRUE,Medina,primary,66.7396978021978,66.7396978021978
+Equus caballus,locomotion,Angular_utilization_index_HL,percent,46.296393864887,46.296393864887,1,1,1,TRUE,Medina,primary,46.296393864887,46.296393864887
 Equus caballus,dexterity,Dexterity,1-7 scale,1,1,1,1,1,TRUE,Heffner,primary,1,1
 Equus caballus,gait,Duty_Factor,percent,67,67,1,1,1,TRUE,Wimberly,primary,67,67
 Equus caballus,gait,Foot_Posture,category,unguligrade,,1,1,1,TRUE,Wimberly,primary,,
 Equus caballus,gait,Gait,category,LSLC,,1,1,1,TRUE,Wimberly,primary,,
+Equus caballus,locomotion,Limb_posture,category,Unguligrade,,1,1,1,TRUE,Medina,primary,,
+Equus caballus,locomotion,Locomotor_habit,category,Cursorial,,1,1,1,TRUE,Medina,primary,,
 Equus caballus,gait,Phase,percent,24,24,1,1,1,TRUE,Wimberly,primary,24,24
+Equus caballus,locomotion,Top_speed,category,Fast,,1,1,1,TRUE,Medina,primary,,
+Equus ferus caballus,locomotion,Angular_utilization_index_FL,percent,58,58,1,1,1,TRUE,Medina,primary,58,58
+Equus ferus caballus,locomotion,Angular_utilization_index_HL,percent,40.7058823529412,40.7058823529412,1,1,1,TRUE,Medina,primary,40.7058823529412,40.7058823529412
+Equus ferus caballus,locomotion,Limb_posture,category,Unguligrade,,1,1,1,TRUE,Medina,primary,,
+Equus ferus caballus,locomotion,Locomotor_habit,category,Cursorial,,1,1,1,TRUE,Medina,primary,,
+Equus ferus caballus,locomotion,Top_speed,category,Fast,,1,1,1,TRUE,Medina,primary,,
 Erethizon dorsatum,gait,Duty_Factor,percent,75,75,1,1,1,TRUE,Wimberly,primary,75,75
 Erethizon dorsatum,gait,Foot_Posture,category,plantigrade,,1,1,1,TRUE,Wimberly,primary,,
 Erethizon dorsatum,gait,Gait,category,LSDC,,1,1,1,TRUE,Wimberly,primary,,
@@ -1696,6 +1819,11 @@ Erythrocebus patas,hand_morphology,log10_pp1_mm,log10 mm,1.00714455290443,1.0071
 Erythrocebus patas,hand_morphology,log10_pp2_mm,log10 mm,1.24061749602915,1.24061749602915,1,1,1,TRUE,Baker,primary,1.24061749602915,1.24061749602915
 Erythrocebus patas,hand_morphology,log10_pp3_mm,log10 mm,1.30978956360938,1.30978956360938,1,1,1,TRUE,Baker,primary,1.30978956360938,1.30978956360938
 Erythrocebus patas,hand_morphology,log10_pp4_mm,log10 mm,1.29336704941038,1.29336704941038,1,1,1,TRUE,Baker,primary,1.29336704941038,1.29336704941038
+Eudorcas thomsonii,locomotion,Angular_utilization_index_FL,percent,69.8701298701299,69.8701298701299,1,1,1,TRUE,Medina,primary,69.8701298701299,69.8701298701299
+Eudorcas thomsonii,locomotion,Angular_utilization_index_HL,percent,52.7835051546392,52.7835051546392,1,1,1,TRUE,Medina,primary,52.7835051546392,52.7835051546392
+Eudorcas thomsonii,locomotion,Limb_posture,category,Unguligrade,,1,1,1,TRUE,Medina,primary,,
+Eudorcas thomsonii,locomotion,Locomotor_habit,category,Cursorial,,1,1,1,TRUE,Medina,primary,,
+Eudorcas thomsonii,locomotion,Top_speed,category,Fast,,1,1,1,TRUE,Medina,primary,,
 Eulemur coronatus,locomotion,Arboreal_terrestrial,category,A,,1,1,1,TRUE,Granatosky,primary,,
 Eulemur coronatus,manipulation,Extractive_foraging,category,0,,1,1,1,TRUE,Heldstab,primary,,
 Eulemur coronatus,behavioural_flexibility,Extractive_foraging_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
@@ -1716,6 +1844,7 @@ Eulemur coronatus,hand_morphology,log10_ip3_mm,log10 mm,1.02530586526477,1.02530
 Eulemur coronatus,hand_morphology,log10_mc3_mm,log10 mm,1.25285303097989,1.25285303097989,1,1,1,TRUE,Baker,primary,1.25285303097989,1.25285303097989
 Eulemur coronatus,hand_morphology,log10_pp3_mm,log10 mm,1.19865708695442,1.19865708695442,1,1,1,TRUE,Baker,primary,1.19865708695442,1.19865708695442
 Eulemur flavifrons,vocalization,VocalRepertoire,count,10,10,1,1,0,FALSE,ManyPrimates,secondary,10,10
+Eulemur fulvus,locomotion,Angular_utilization_index_HL,percent,46.2962962962963,46.2962962962963,1,1,1,TRUE,Medina,primary,46.2962962962963,46.2962962962963
 Eulemur fulvus,locomotion,Arboreal_terrestrial,category,A,,1,1,1,TRUE,Granatosky,primary,,
 Eulemur fulvus,behavioural_flexibility,Extractive_foraging_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
 Eulemur fulvus,behavioural_flexibility,Extractive_foraging_report_count,reports,3,3,1,1,1,TRUE,Reader,primary,3,3
@@ -1723,12 +1852,15 @@ Eulemur fulvus,behavioural_flexibility,Innovation_reduced_report_count,reports,0
 Eulemur fulvus,behavioural_flexibility,Innovation_report_count,reports,3,3,1,1,1,TRUE,Reader,primary,3,3
 Eulemur fulvus,locomotion,Intermembral_index,ratio,72,72,1,1,1,TRUE,Granatosky,primary,72,72
 Eulemur fulvus,research_effort,Journal_search_article_count,articles,24,24,1,1,1,TRUE,Reader,primary,24,24
+Eulemur fulvus,locomotion,Limb_posture,category,Plantigrade,,1,1,1,TRUE,Medina,primary,,
 Eulemur fulvus,locomotion,Locomotor_diversity_index,index,1.30441240377472,1.30441240377472,1,1,1,TRUE,Granatosky,primary,1.30441240377472,1.30441240377472
+Eulemur fulvus,locomotion,Locomotor_habit,category,Arboreal,,1,1,1,TRUE,Medina,primary,,
 Eulemur fulvus,behavioural_flexibility,Social_learning_report_count,reports,1,1,1,1,1,TRUE,Reader,primary,1,1
 Eulemur fulvus,manipulation,Tool_Manufacture,category,0,,1,1,1,TRUE,Baker,primary,,
 Eulemur fulvus,manipulation,Tool_use,category,1,,1,1,0,FALSE,Baker,secondary,,
 Eulemur fulvus,behavioural_flexibility,Tool_use_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
 Eulemur fulvus,behavioural_flexibility,Tool_use_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
+Eulemur fulvus,locomotion,Top_speed,category,Slow,,1,1,1,TRUE,Medina,primary,,
 Eulemur fulvus,manipulation,True_Tool_Use,category,1,,1,1,1,TRUE,Baker,primary,,
 Eulemur fulvus,vocalization,VocalRepertoire,count,14,12.5,2,2,1,TRUE,Schniter; ManyPrimates,primary; secondary,11,14
 Eulemur fulvus,research_effort,Zoological_record_article_count,articles,81,81,1,1,1,TRUE,Reader,primary,81,81
@@ -1852,6 +1984,11 @@ Felis catus,gait,Duty_Factor,percent,63.8762843,63.8762843,1,1,1,TRUE,Wimberly,p
 Felis catus,gait,Foot_Posture,category,digitigrade,,1,1,1,TRUE,Wimberly,primary,,
 Felis catus,gait,Gait,category,LSLC,,1,1,1,TRUE,Wimberly,primary,,
 Felis catus,gait,Phase,percent,21.71555499,21.71555499,1,1,1,TRUE,Wimberly,primary,21.71555499,21.71555499
+Felis silvestris catus,locomotion,Angular_utilization_index_FL,percent,56.00284134434587,56.0028413443459,1,1,1,TRUE,Medina,primary,56.0028413443459,56.0028413443459
+Felis silvestris catus,locomotion,Angular_utilization_index_HL,percent,59.87490675388767,59.8749067538877,1,1,1,TRUE,Medina,primary,59.8749067538877,59.8749067538877
+Felis silvestris catus,locomotion,Limb_posture,category,Digitigrade,,1,1,1,TRUE,Medina,primary,,
+Felis silvestris catus,locomotion,Locomotor_habit,category,Scansorial,,1,1,1,TRUE,Medina,primary,,
+Felis silvestris catus,locomotion,Top_speed,category,Medium,,1,1,1,TRUE,Medina,primary,,
 Galago alleni,behavioural_flexibility,Extractive_foraging_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
 Galago alleni,behavioural_flexibility,Extractive_foraging_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
 Galago alleni,behavioural_flexibility,Innovation_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
@@ -1953,11 +2090,21 @@ Galagoides zanzibaricus,behavioural_flexibility,Social_learning_report_count,rep
 Galagoides zanzibaricus,behavioural_flexibility,Tool_use_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
 Galagoides zanzibaricus,behavioural_flexibility,Tool_use_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
 Galagoides zanzibaricus,research_effort,Zoological_record_article_count,articles,0,0,1,1,1,TRUE,Reader,primary,0,0
+Galea musteloides,locomotion,Angular_utilization_index_FL,percent,82.91764705882355,82.9176470588235,1,1,1,TRUE,Medina,primary,82.9176470588235,82.9176470588235
+Galea musteloides,locomotion,Angular_utilization_index_HL,percent,57.62407137589267,57.6240713758927,1,1,1,TRUE,Medina,primary,57.6240713758927,57.6240713758927
+Galea musteloides,locomotion,Limb_posture,category,Plantigrade,,1,1,1,TRUE,Medina,primary,,
+Galea musteloides,locomotion,Locomotor_habit,category,Terrestrial,,1,1,1,TRUE,Medina,primary,,
+Galea musteloides,locomotion,Top_speed,category,Slow,,1,1,1,TRUE,Medina,primary,,
 Galeopterus variegatus,locomotion,Locomotor_diversity_index,index,1.24539319229782,1.24539319229782,1,1,1,TRUE,Granatosky,primary,1.24539319229782,1.24539319229782
+Giraffa camelopardalis,locomotion,Angular_utilization_index_FL,percent,63.6659663865546,63.6659663865546,1,1,1,TRUE,Medina,primary,63.6659663865546,63.6659663865546
+Giraffa camelopardalis,locomotion,Angular_utilization_index_HL,percent,60.71700991609455,60.7170099160945,1,1,1,TRUE,Medina,primary,60.7170099160945,60.7170099160945
 Giraffa camelopardalis,gait,Duty_Factor,percent,68,68,1,1,1,TRUE,Wimberly,primary,68,68
 Giraffa camelopardalis,gait,Foot_Posture,category,unguligrade,,1,1,1,TRUE,Wimberly,primary,,
 Giraffa camelopardalis,gait,Gait,category,LSLC,,1,1,1,TRUE,Wimberly,primary,,
+Giraffa camelopardalis,locomotion,Limb_posture,category,Unguligrade,,1,1,1,TRUE,Medina,primary,,
+Giraffa camelopardalis,locomotion,Locomotor_habit,category,Cursorial,,1,1,1,TRUE,Medina,primary,,
 Giraffa camelopardalis,gait,Phase,percent,14,14,1,1,1,TRUE,Wimberly,primary,14,14
+Giraffa camelopardalis,locomotion,Top_speed,category,Fast,,1,1,1,TRUE,Medina,primary,,
 Glaucomys volans,locomotion,Locomotor_diversity_index,index,1.41481405296438,1.41481405296438,1,1,1,TRUE,Granatosky,primary,1.41481405296438,1.41481405296438
 Gorilla beringei,manipulation,Tool_use,category,0,,1,1,0,FALSE,Baker,secondary,,
 Gorilla beringei,hand_morphology,log10_dp1_mm,log10 mm,1.29312568833966,1.29312568833966,1,1,1,TRUE,Baker,primary,1.29312568833966,1.29312568833966
@@ -1969,6 +2116,8 @@ Gorilla beringei,hand_morphology,log10_mc5_mm,log10 mm,1.89756016128198,1.897560
 Gorilla beringei,hand_morphology,log10_pp1_mm,log10 mm,1.45002904523793,1.45002904523793,1,1,1,TRUE,Baker,primary,1.45002904523793,1.45002904523793
 Gorilla beringei,hand_morphology,log10_pp3_mm,log10 mm,1.75836547332291,1.75836547332291,1,1,1,TRUE,Baker,primary,1.75836547332291,1.75836547332291
 Gorilla beringei,hand_morphology,log10_pp4_mm,log10 mm,1.74124166873999,1.74124166873999,1,1,1,TRUE,Baker,primary,1.74124166873999,1.74124166873999
+Gorilla gorilla,locomotion,Angular_utilization_index_FL,percent,47.8486590038314,47.8486590038314,1,1,1,TRUE,Medina,primary,47.8486590038314,47.8486590038314
+Gorilla gorilla,locomotion,Angular_utilization_index_HL,percent,63.57507139942879,63.5750713994288,1,1,1,TRUE,Medina,primary,63.5750713994288,63.5750713994288
 Gorilla gorilla,locomotion,Arboreal_terrestrial,category,T,,1,1,1,TRUE,Granatosky,primary,,
 Gorilla gorilla,gait,Duty_Factor,percent,61.54791155,61.54791155,1,1,1,TRUE,Wimberly,primary,61.54791155,61.54791155
 Gorilla gorilla,manipulation,Extractive_foraging,category,1,,1,1,1,TRUE,Heldstab,primary,,
@@ -1982,7 +2131,9 @@ Gorilla gorilla,behavioural_flexibility,Innovation_reduced_report_count,reports,
 Gorilla gorilla,behavioural_flexibility,Innovation_report_count,reports,25,25,1,1,1,TRUE,Reader,primary,25,25
 Gorilla gorilla,locomotion,Intermembral_index,ratio,116,116,1,1,1,TRUE,Granatosky,primary,116,116
 Gorilla gorilla,research_effort,Journal_search_article_count,articles,112,112,1,1,1,TRUE,Reader,primary,112,112
+Gorilla gorilla,locomotion,Limb_posture,category,Mixed,,1,1,1,TRUE,Medina,primary,,
 Gorilla gorilla,locomotion,Locomotor_diversity_index,index,0.188053654103712,0.188053654103712,1,1,1,TRUE,Granatosky,primary,0.188053654103712,0.188053654103712
+Gorilla gorilla,locomotion,Locomotor_habit,category,Terrestrial,,1,1,1,TRUE,Medina,primary,,
 Gorilla gorilla,manipulation,Manipulation_complexity,score,5,5,1,1,1,TRUE,Heldstab,primary,5,5
 Gorilla gorilla,gait,Phase,percent,43.42752,43.42752,1,1,1,TRUE,Wimberly,primary,43.42752,43.42752
 Gorilla gorilla,behavioural_flexibility,Social_learning_report_count,reports,13,13,1,1,1,TRUE,Reader,primary,13,13
@@ -1990,6 +2141,7 @@ Gorilla gorilla,manipulation,Tool_Manufacture,category,1,,1,1,1,TRUE,Baker,prima
 Gorilla gorilla,manipulation,Tool_use,category,0,,2,2,1,TRUE,Heldstab; Baker,primary; secondary,,
 Gorilla gorilla,behavioural_flexibility,Tool_use_reduced_report_count,reports,3,3,1,1,1,TRUE,Reader,primary,3,3
 Gorilla gorilla,behavioural_flexibility,Tool_use_report_count,reports,21,21,1,1,1,TRUE,Reader,primary,21,21
+Gorilla gorilla,locomotion,Top_speed,category,Medium,,1,1,1,TRUE,Medina,primary,,
 Gorilla gorilla,manipulation,True_Tool_Use,category,1,,1,1,1,TRUE,Baker,primary,,
 Gorilla gorilla,vocalization,VocalRepertoire,count,17,16.5,2,2,1,TRUE,Schniter; ManyPrimates,primary; secondary,16,17
 Gorilla gorilla,research_effort,Zoological_record_article_count,articles,517,517,1,1,1,TRUE,Reader,primary,517,517
@@ -2052,10 +2204,15 @@ Hapalemur simus,behavioural_flexibility,Social_learning_report_count,reports,0,0
 Hapalemur simus,behavioural_flexibility,Tool_use_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
 Hapalemur simus,behavioural_flexibility,Tool_use_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
 Hapalemur simus,research_effort,Zoological_record_article_count,articles,8,8,1,1,1,TRUE,Reader,primary,8,8
+Hippopotamus amphibius,locomotion,Angular_utilization_index_FL,percent,67.7083333333333,67.7083333333333,1,1,1,TRUE,Medina,primary,67.7083333333333,67.7083333333333
+Hippopotamus amphibius,locomotion,Angular_utilization_index_HL,percent,53.8613861386139,53.8613861386139,1,1,1,TRUE,Medina,primary,53.8613861386139,53.8613861386139
 Hippopotamus amphibius,gait,Duty_Factor,percent,76,76,1,1,1,TRUE,Wimberly,primary,76,76
 Hippopotamus amphibius,gait,Foot_Posture,category,digitigrade,,1,1,1,TRUE,Wimberly,primary,,
 Hippopotamus amphibius,gait,Gait,category,LSDC,,1,1,1,TRUE,Wimberly,primary,,
+Hippopotamus amphibius,locomotion,Limb_posture,category,Unguligrade,,1,1,1,TRUE,Medina,primary,,
+Hippopotamus amphibius,locomotion,Locomotor_habit,category,Terrestrial,,1,1,1,TRUE,Medina,primary,,
 Hippopotamus amphibius,gait,Phase,percent,45,45,1,1,1,TRUE,Wimberly,primary,45,45
+Hippopotamus amphibius,locomotion,Top_speed,category,Medium,,1,1,1,TRUE,Medina,primary,,
 HispanopithecusHispanopithecus laietanus,manipulation,Tool_use,category,0,,1,1,0,FALSE,Baker,secondary,,
 HispanopithecusHispanopithecus laietanus,hand_morphology,log10_ip3_mm,log10 mm,1.60205999132796,1.60205999132796,1,1,1,TRUE,Baker,primary,1.60205999132796,1.60205999132796
 HispanopithecusHispanopithecus laietanus,hand_morphology,log10_ip4_mm,log10 mm,1.6159500516564,1.6159500516564,1,1,1,TRUE,Baker,primary,1.6159500516564,1.6159500516564
@@ -2104,9 +2261,12 @@ Homo sapiens,dexterity,Dexterity,1-7 scale,7,7,2,2,1,TRUE,Heffner; Iwaniuk,prima
 Homo sapiens,manipulation,Extractive_foraging,category,1,,1,1,1,TRUE,Heldstab,primary,,
 Homo sapiens,handedness,Handedness_index_mean,HI,0.761,0.761,1,1,1,TRUE,Caspar,primary,0.761,0.761
 Homo sapiens,handedness,Handedness_strength_mean,abs(HI),0.9429999999999999,0.943,1,1,1,TRUE,Caspar,primary,0.943,0.943
+Homo sapiens,locomotion,Limb_posture,category,Plantigrade,,1,1,1,TRUE,Medina,primary,,
+Homo sapiens,locomotion,Locomotor_habit,category,Terrestrial,,1,1,1,TRUE,Medina,primary,,
 Homo sapiens,manipulation,Manipulation_complexity,score,5.4,5.4,1,1,1,TRUE,Heldstab,primary,5.4,5.4
 Homo sapiens,manipulation,Tool_Manufacture,category,1,,1,1,1,TRUE,Baker,primary,,
 Homo sapiens,manipulation,Tool_use,category,1,,2,2,1,TRUE,Heldstab; Baker,primary; secondary,,
+Homo sapiens,locomotion,Top_speed,category,Slow,,1,1,1,TRUE,Medina,primary,,
 Homo sapiens,hand_morphology,log10_dp1_mm,log10 mm,1.34869419026554,1.34869419026554,1,1,1,TRUE,Baker,primary,1.34869419026554,1.34869419026554
 Homo sapiens,hand_morphology,log10_dp2_mm,log10 mm,1.23148043572734,1.23148043572734,1,1,1,TRUE,Baker,primary,1.23148043572734,1.23148043572734
 Homo sapiens,hand_morphology,log10_ip2_mm,log10 mm,1.38056039364046,1.38056039364046,1,1,1,TRUE,Baker,primary,1.38056039364046,1.38056039364046
@@ -2133,10 +2293,15 @@ Hoolock hoolock,hand_morphology,log10_mc4_mm,log10 mm,1.71802395138773,1.7180239
 Hoolock hoolock,hand_morphology,log10_mc5_mm,log10 mm,1.66138669778177,1.66138669778177,1,1,1,TRUE,Baker,primary,1.66138669778177,1.66138669778177
 Hoolock hoolock,hand_morphology,log10_pp3_mm,log10 mm,1.63826456376247,1.63826456376247,1,1,1,TRUE,Baker,primary,1.63826456376247,1.63826456376247
 Horpyiocepalus leucogostra,dexterity,Dexterity,1-7 scale,1,1,1,1,1,TRUE,Heffner,primary,1,1
+Hydrochoerus hydrochaeris,locomotion,Angular_utilization_index_FL,percent,43.9379256155055,43.9379256155055,1,1,1,TRUE,Medina,primary,43.9379256155055,43.9379256155055
+Hydrochoerus hydrochaeris,locomotion,Angular_utilization_index_HL,percent,47.46956521739131,47.4695652173913,1,1,1,TRUE,Medina,primary,47.4695652173913,47.4695652173913
 Hydrochoerus hydrochaeris,gait,Duty_Factor,percent,69.21052632,69.21052632,1,1,1,TRUE,Wimberly,primary,69.21052632,69.21052632
 Hydrochoerus hydrochaeris,gait,Foot_Posture,category,digitigrade,,1,1,1,TRUE,Wimberly,primary,,
 Hydrochoerus hydrochaeris,gait,Gait,category,LSDC,,1,1,1,TRUE,Wimberly,primary,,
+Hydrochoerus hydrochaeris,locomotion,Limb_posture,category,Plantigrade,,1,1,1,TRUE,Medina,primary,,
+Hydrochoerus hydrochaeris,locomotion,Locomotor_habit,category,Terrestrial,,1,1,1,TRUE,Medina,primary,,
 Hydrochoerus hydrochaeris,gait,Phase,percent,28.15789,28.15789,1,1,1,TRUE,Wimberly,primary,28.15789,28.15789
+Hydrochoerus hydrochaeris,locomotion,Top_speed,category,Slow,,1,1,1,TRUE,Medina,primary,,
 Hylobates agilis,locomotion,Arboreal_terrestrial,category,A,,1,1,1,TRUE,Granatosky,primary,,
 Hylobates agilis,behavioural_flexibility,Extractive_foraging_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
 Hylobates agilis,behavioural_flexibility,Extractive_foraging_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
@@ -2361,10 +2526,20 @@ Lagothrix lagothricha,hand_morphology,log10_mc4_mm,log10 mm,1.51982799377572,1.5
 Lagothrix lagothricha,hand_morphology,log10_mc5_mm,log10 mm,1.48429983934679,1.48429983934679,1,1,1,TRUE,Baker,primary,1.48429983934679,1.48429983934679
 Lagothrix lagothricha,hand_morphology,log10_pp3_mm,log10 mm,1.50506854046951,1.50506854046951,1,1,1,TRUE,Baker,primary,1.50506854046951,1.50506854046951
 Lagothrix lagotricha,dexterity,Dexterity,1-7 scale,5,5,2,2,1,TRUE,Heffner; Iwaniuk,primary; secondary,5,5
+Lama glama,locomotion,Angular_utilization_index_FL,percent,82.2222222222222,82.2222222222222,1,1,1,TRUE,Medina,primary,82.2222222222222,82.2222222222222
+Lama glama,locomotion,Angular_utilization_index_HL,percent,73.3333333333333,73.3333333333333,1,1,1,TRUE,Medina,primary,73.3333333333333,73.3333333333333
 Lama glama,gait,Duty_Factor,percent,72,72,1,1,1,TRUE,Wimberly,primary,72,72
 Lama glama,gait,Foot_Posture,category,digitigrade,,1,1,1,TRUE,Wimberly,primary,,
 Lama glama,gait,Gait,category,LSLC,,1,1,1,TRUE,Wimberly,primary,,
+Lama glama,locomotion,Limb_posture,category,Sub-unguligrade,,1,1,1,TRUE,Medina,primary,,
+Lama glama,locomotion,Locomotor_habit,category,Cursorial,,1,1,1,TRUE,Medina,primary,,
 Lama glama,gait,Phase,percent,17,17,1,1,1,TRUE,Wimberly,primary,17,17
+Lama glama,locomotion,Top_speed,category,Fast,,1,1,1,TRUE,Medina,primary,,
+Lama guanicoe,locomotion,Angular_utilization_index_FL,percent,97.17391304347829,97.1739130434783,1,1,1,TRUE,Medina,primary,97.1739130434783,97.1739130434783
+Lama guanicoe,locomotion,Angular_utilization_index_HL,percent,87.0454545454545,87.0454545454545,1,1,1,TRUE,Medina,primary,87.0454545454545,87.0454545454545
+Lama guanicoe,locomotion,Limb_posture,category,Unguligrade,,1,1,1,TRUE,Medina,primary,,
+Lama guanicoe,locomotion,Locomotor_habit,category,Cursorial,,1,1,1,TRUE,Medina,primary,,
+Lama guanicoe,locomotion,Top_speed,category,Fast,,1,1,1,TRUE,Medina,primary,,
 Lasiorhinus krefftii,gait,Duty_Factor,percent,73,73,1,1,1,TRUE,Wimberly,primary,73,73
 Lasiorhinus krefftii,gait,Foot_Posture,category,plantigrade,,1,1,1,TRUE,Wimberly,primary,,
 Lasiorhinus krefftii,gait,Gait,category,LSLC,,1,1,1,TRUE,Wimberly,primary,,
@@ -2454,7 +2629,10 @@ Leontopithecus rosalia,hand_morphology,log10_pp3_mm,log10 mm,1.17897694729317,1.
 Leopardus pardalis,gait,Duty_Factor,percent,60.88318534,60.88318534,1,1,1,TRUE,Wimberly,primary,60.88318534,60.88318534
 Leopardus pardalis,gait,Foot_Posture,category,digitigrade,,1,1,1,TRUE,Wimberly,primary,,
 Leopardus pardalis,gait,Gait,category,LSLC,,1,1,1,TRUE,Wimberly,primary,,
+Leopardus pardalis,locomotion,Limb_posture,category,Digitigrade,,1,1,1,TRUE,Medina,primary,,
+Leopardus pardalis,locomotion,Locomotor_habit,category,Arboreal,,1,1,1,TRUE,Medina,primary,,
 Leopardus pardalis,gait,Phase,percent,19.12393178,19.12393178,1,1,1,TRUE,Wimberly,primary,19.12393178,19.12393178
+Leopardus pardalis,locomotion,Top_speed,category,Fast,,1,1,1,TRUE,Medina,primary,,
 Lepilemur dorsalis,behavioural_flexibility,Extractive_foraging_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
 Lepilemur dorsalis,behavioural_flexibility,Extractive_foraging_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
 Lepilemur dorsalis,behavioural_flexibility,Innovation_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
@@ -2545,7 +2723,15 @@ Leptadapis magnus,hand_morphology,log10_pp5_mm,log10 mm,1.42045085910607,1.42045
 Leptailurus serval,gait,Duty_Factor,percent,58.31083859,58.31083859,1,1,1,TRUE,Wimberly,primary,58.31083859,58.31083859
 Leptailurus serval,gait,Foot_Posture,category,digitigrade,,1,1,1,TRUE,Wimberly,primary,,
 Leptailurus serval,gait,Gait,category,LSLC,,1,1,1,TRUE,Wimberly,primary,,
+Leptailurus serval,locomotion,Limb_posture,category,Digitigrade,,1,1,1,TRUE,Medina,primary,,
+Leptailurus serval,locomotion,Locomotor_habit,category,Cursorial,,1,1,1,TRUE,Medina,primary,,
 Leptailurus serval,gait,Phase,percent,23.49302641,23.49302641,1,1,1,TRUE,Wimberly,primary,23.49302641,23.49302641
+Leptailurus serval,locomotion,Top_speed,category,Fast,,1,1,1,TRUE,Medina,primary,,
+Lepus europaeus,locomotion,Angular_utilization_index_FL,percent,20.0469483568075,20.0469483568075,1,1,1,TRUE,Medina,primary,20.0469483568075,20.0469483568075
+Lepus europaeus,locomotion,Angular_utilization_index_HL,percent,55.3703703703704,55.3703703703704,1,1,1,TRUE,Medina,primary,55.3703703703704,55.3703703703704
+Lepus europaeus,locomotion,Limb_posture,category,Plantigrade,,1,1,1,TRUE,Medina,primary,,
+Lepus europaeus,locomotion,Locomotor_habit,category,Cursorial,,1,1,1,TRUE,Medina,primary,,
+Lepus europaeus,locomotion,Top_speed,category,Fast,,1,1,1,TRUE,Medina,primary,,
 Lophocebus albigena,locomotion,Arboreal_terrestrial,category,A,,1,1,1,TRUE,Granatosky,primary,,
 Lophocebus albigena,behavioural_flexibility,Extractive_foraging_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
 Lophocebus albigena,behavioural_flexibility,Extractive_foraging_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
@@ -2598,10 +2784,18 @@ Loris tardigradus,hand_morphology,log10_pp3_mm,log10 mm,0.925827574624742,0.9258
 Loris tardigradus,hand_morphology,peak_workspace,index,-1.53760200210104,-1.53760200210104,1,1,1,TRUE,Baker,primary,-1.53760200210104,-1.53760200210104
 Loris tardigradus,hand_morphology,real_size,index,0.462397997898956,0.462397997898956,1,1,1,TRUE,Baker,primary,0.462397997898956,0.462397997898956
 Loris tardigradus,hand_morphology,relative_size,index,-1.04575749056068,-1.04575749056068,1,1,1,TRUE,Baker,primary,-1.04575749056068,-1.04575749056068
+Loxodonta africana,locomotion,Angular_utilization_index_FL,percent,53.7837837837838,53.7837837837838,1,1,1,TRUE,Medina,primary,53.7837837837838,53.7837837837838
+Loxodonta africana,locomotion,Angular_utilization_index_HL,percent,88.5106382978723,88.5106382978723,1,1,1,TRUE,Medina,primary,88.5106382978723,88.5106382978723
 Loxodonta africana,gait,Duty_Factor,percent,74,74,1,1,1,TRUE,Wimberly,primary,74,74
 Loxodonta africana,gait,Foot_Posture,category,plantigrade,,1,1,1,TRUE,Wimberly,primary,,
 Loxodonta africana,gait,Gait,category,LSLC,,1,1,1,TRUE,Wimberly,primary,,
+Loxodonta africana,locomotion,Limb_posture,category,Sub-unguligrade,,1,1,1,TRUE,Medina,primary,,
+Loxodonta africana,locomotion,Locomotor_habit,category,Terrestrial,,1,1,1,TRUE,Medina,primary,,
 Loxodonta africana,gait,Phase,percent,17,17,1,1,1,TRUE,Wimberly,primary,17,17
+Loxodonta africana,locomotion,Top_speed,category,Slow,,1,1,1,TRUE,Medina,primary,,
+Lynx canadensis,locomotion,Limb_posture,category,Digitigrade,,1,1,1,TRUE,Medina,primary,,
+Lynx canadensis,locomotion,Locomotor_habit,category,Cursorial,,1,1,1,TRUE,Medina,primary,,
+Lynx canadensis,locomotion,Top_speed,category,Fast,,1,1,1,TRUE,Medina,primary,,
 Lynx rufus,gait,Duty_Factor,percent,71,71,1,1,1,TRUE,Wimberly,primary,71,71
 Lynx rufus,gait,Foot_Posture,category,digitigrade,,1,1,1,TRUE,Wimberly,primary,,
 Lynx rufus,gait,Gait,category,LSLC,,1,1,1,TRUE,Wimberly,primary,,
@@ -2930,6 +3124,11 @@ Macaca tonkeana,vocalization,VocalRepertoire,count,20,20,1,1,0,FALSE,ManyPrimate
 Macaca tonkeana,research_effort,Zoological_record_article_count,articles,26,26,1,1,1,TRUE,Reader,primary,26,26
 Macaca tonkeana,hand_morphology,log10_mc2_mm,log10 mm,1.60465797204787,1.60465797204787,1,1,1,TRUE,Baker,primary,1.60465797204787,1.60465797204787
 Macaca tonkeana,hand_morphology,log10_mc3_mm,log10 mm,1.60195140413352,1.60195140413352,1,1,1,TRUE,Baker,primary,1.60195140413352,1.60195140413352
+Macropus fuliginosus,locomotion,Angular_utilization_index_FL,percent,55.2941176470588,55.2941176470588,1,1,1,TRUE,Medina,primary,55.2941176470588,55.2941176470588
+Macropus fuliginosus,locomotion,Angular_utilization_index_HL,percent,42.1052631578947,42.1052631578947,1,1,1,TRUE,Medina,primary,42.1052631578947,42.1052631578947
+Macropus fuliginosus,locomotion,Limb_posture,category,Plantigrade,,1,1,1,TRUE,Medina,primary,,
+Macropus fuliginosus,locomotion,Locomotor_habit,category,Terrestrial,,1,1,1,TRUE,Medina,primary,,
+Macropus fuliginosus,locomotion,Top_speed,category,Fast,,1,1,1,TRUE,Medina,primary,,
 Mandrillus leucophaeus,behavioural_flexibility,Extractive_foraging_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
 Mandrillus leucophaeus,behavioural_flexibility,Extractive_foraging_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
 Mandrillus leucophaeus,behavioural_flexibility,Innovation_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
@@ -2985,7 +3184,17 @@ Mandrillus sphinx,hand_morphology,log10_mc5_mm,log10 mm,1.7257037861643,1.725703
 Mandrillus sphinx,hand_morphology,log10_pp1_mm,log10 mm,1.23426412437879,1.23426412437879,1,1,1,TRUE,Baker,primary,1.23426412437879,1.23426412437879
 Mandrillus sphinx,hand_morphology,log10_pp3_mm,log10 mm,1.52986648319192,1.52986648319192,1,1,1,TRUE,Baker,primary,1.52986648319192,1.52986648319192
 Mandrillus sphinx,hand_morphology,log10_pp4_mm,log10 mm,1.47055748521727,1.47055748521727,1,1,1,TRUE,Baker,primary,1.47055748521727,1.47055748521727
+Manis javanica,locomotion,Angular_utilization_index_FL,percent,16.0406091370558,16.0406091370558,1,1,1,TRUE,Medina,primary,16.0406091370558,16.0406091370558
+Manis javanica,locomotion,Angular_utilization_index_HL,percent,33.1132075471698,33.1132075471698,1,1,1,TRUE,Medina,primary,33.1132075471698,33.1132075471698
+Manis javanica,locomotion,Limb_posture,category,Mixed,,1,1,1,TRUE,Medina,primary,,
+Manis javanica,locomotion,Locomotor_habit,category,Scansorial,,1,1,1,TRUE,Medina,primary,,
+Manis javanica,locomotion,Top_speed,category,Slow,,1,1,1,TRUE,Medina,primary,,
 Manis pentadactyla,dexterity,Dexterity,1-7 scale,1,1,1,1,1,TRUE,Heffner,primary,1,1
+Manis tricuspis,locomotion,Angular_utilization_index_FL,percent,29.7872340425532,29.7872340425532,1,1,1,TRUE,Medina,primary,29.7872340425532,29.7872340425532
+Manis tricuspis,locomotion,Angular_utilization_index_HL,percent,74.2307692307692,74.2307692307692,1,1,1,TRUE,Medina,primary,74.2307692307692,74.2307692307692
+Manis tricuspis,locomotion,Limb_posture,category,Mixed,,1,1,1,TRUE,Medina,primary,,
+Manis tricuspis,locomotion,Locomotor_habit,category,Scansorial,,1,1,1,TRUE,Medina,primary,,
+Manis tricuspis,locomotion,Top_speed,category,Slow,,1,1,1,TRUE,Medina,primary,,
 Mellivora capensis,gait,Duty_Factor,percent,62.05,62.05,1,1,1,TRUE,Wimberly,primary,62.05,62.05
 Mellivora capensis,gait,Foot_Posture,category,plantigrade,,1,1,1,TRUE,Wimberly,primary,,
 Mellivora capensis,gait,Gait,category,LSDC,,1,1,1,TRUE,Wimberly,primary,,
@@ -3013,6 +3222,7 @@ Microcebus coquereli,behavioural_flexibility,Social_learning_report_count,report
 Microcebus coquereli,behavioural_flexibility,Tool_use_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
 Microcebus coquereli,behavioural_flexibility,Tool_use_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
 Microcebus coquereli,research_effort,Zoological_record_article_count,articles,3,3,1,1,1,TRUE,Reader,primary,3,3
+Microcebus murinus,locomotion,Angular_utilization_index_HL,percent,60.62678062678064,60.6267806267806,1,1,1,TRUE,Medina,primary,60.6267806267806,60.6267806267806
 Microcebus murinus,locomotion,Arboreal_terrestrial,category,A,,1,1,1,TRUE,Granatosky,primary,,
 Microcebus murinus,behavioural_flexibility,Extractive_foraging_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
 Microcebus murinus,behavioural_flexibility,Extractive_foraging_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
@@ -3020,11 +3230,14 @@ Microcebus murinus,behavioural_flexibility,Innovation_reduced_report_count,repor
 Microcebus murinus,behavioural_flexibility,Innovation_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
 Microcebus murinus,locomotion,Intermembral_index,ratio,72,72,1,1,1,TRUE,Granatosky,primary,72,72
 Microcebus murinus,research_effort,Journal_search_article_count,articles,44,44,1,1,1,TRUE,Reader,primary,44,44
+Microcebus murinus,locomotion,Limb_posture,category,Plantigrade,,1,1,1,TRUE,Medina,primary,,
 Microcebus murinus,locomotion,Locomotor_diversity_index,index,1.37713994283633,1.37713994283633,1,1,1,TRUE,Granatosky,primary,1.37713994283633,1.37713994283633
+Microcebus murinus,locomotion,Locomotor_habit,category,Arboreal,,1,1,1,TRUE,Medina,primary,,
 Microcebus murinus,behavioural_flexibility,Social_learning_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
 Microcebus murinus,manipulation,Tool_use,category,0,,1,1,0,FALSE,Baker,secondary,,
 Microcebus murinus,behavioural_flexibility,Tool_use_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
 Microcebus murinus,behavioural_flexibility,Tool_use_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
+Microcebus murinus,locomotion,Top_speed,category,Slow,,1,1,1,TRUE,Medina,primary,,
 Microcebus murinus,research_effort,Zoological_record_article_count,articles,66,66,1,1,1,TRUE,Reader,primary,66,66
 Microcebus murinus,hand_morphology,log10_ip4_mm,log10 mm,0.608526033577194,0.608526033577194,1,1,1,TRUE,Baker,primary,0.608526033577194,0.608526033577194
 Microcebus murinus,hand_morphology,log10_mc3_mm,log10 mm,0.738780558484369,0.738780558484369,1,1,1,TRUE,Baker,primary,0.738780558484369,0.738780558484369
@@ -3091,10 +3304,14 @@ Mirza coquereli,manipulation,Tool_use,category,0,,1,1,0,FALSE,Baker,secondary,,
 Mirza coquereli,hand_morphology,log10_ip3_mm,log10 mm,0.75966784468963,0.75966784468963,1,1,1,TRUE,Baker,primary,0.75966784468963,0.75966784468963
 Mirza coquereli,hand_morphology,log10_mc3_mm,log10 mm,1.02118929906994,1.02118929906994,1,1,1,TRUE,Baker,primary,1.02118929906994,1.02118929906994
 Mirza coquereli,hand_morphology,log10_pp3_mm,log10 mm,0.987219229908005,0.987219229908005,1,1,1,TRUE,Baker,primary,0.987219229908005,0.987219229908005
+Monodelphis domestica,locomotion,Angular_utilization_index_HL,percent,66.40000000000001,66.4,1,1,1,TRUE,Medina,primary,66.4,66.4
 Monodelphis domestica,gait,Duty_Factor,percent,68.60473333,68.60473333,1,1,1,TRUE,Wimberly,primary,68.60473333,68.60473333
 Monodelphis domestica,gait,Foot_Posture,category,plantigrade,,1,1,1,TRUE,Wimberly,primary,,
 Monodelphis domestica,gait,Gait,category,LSDC,,1,1,1,TRUE,Wimberly,primary,,
+Monodelphis domestica,locomotion,Limb_posture,category,Plantigrade,,1,1,1,TRUE,Medina,primary,,
+Monodelphis domestica,locomotion,Locomotor_habit,category,Scansorial,,1,1,1,TRUE,Medina,primary,,
 Monodelphis domestica,gait,Phase,percent,46.31073333,46.31073333,1,1,1,TRUE,Wimberly,primary,46.31073333,46.31073333
+Monodelphis domestica,locomotion,Top_speed,category,Slow,,1,1,1,TRUE,Medina,primary,,
 Moschiola meminna,gait,Duty_Factor,percent,68.17528736,68.17528736,1,1,1,TRUE,Wimberly,primary,68.17528736,68.17528736
 Moschiola meminna,gait,Foot_Posture,category,unguligrade,,1,1,1,TRUE,Wimberly,primary,,
 Moschiola meminna,gait,Gait,category,LSLC,,1,1,1,TRUE,Wimberly,primary,,
@@ -3132,10 +3349,15 @@ Myrmecobius fasciatus,gait,Foot_Posture,category,digitigrade,,1,1,1,TRUE,Wimberl
 Myrmecobius fasciatus,gait,Gait,category,LSDC,,1,1,1,TRUE,Wimberly,primary,,
 Myrmecobius fasciatus,gait,Phase,percent,30,30,1,1,1,TRUE,Wimberly,primary,30,30
 Myrmecophaga jubata,dexterity,Dexterity,1-7 scale,1,1,1,1,1,TRUE,Heffner,primary,1,1
+Myrmecophaga tridactyla,locomotion,Angular_utilization_index_FL,percent,35.2083333333333,35.2083333333333,1,1,1,TRUE,Medina,primary,35.2083333333333,35.2083333333333
+Myrmecophaga tridactyla,locomotion,Angular_utilization_index_HL,percent,71.6417910447761,71.6417910447761,1,1,1,TRUE,Medina,primary,71.6417910447761,71.6417910447761
 Myrmecophaga tridactyla,gait,Duty_Factor,percent,70,70,1,1,1,TRUE,Wimberly,primary,70,70
 Myrmecophaga tridactyla,gait,Foot_Posture,category,plantigrade,,1,1,1,TRUE,Wimberly,primary,,
 Myrmecophaga tridactyla,gait,Gait,category,LSDC,,1,1,1,TRUE,Wimberly,primary,,
+Myrmecophaga tridactyla,locomotion,Limb_posture,category,Mixed,,1,1,1,TRUE,Medina,primary,,
+Myrmecophaga tridactyla,locomotion,Locomotor_habit,category,Terrestrial,,1,1,1,TRUE,Medina,primary,,
 Myrmecophaga tridactyla,gait,Phase,percent,27,27,1,1,1,TRUE,Wimberly,primary,27,27
+Myrmecophaga tridactyla,locomotion,Top_speed,category,Slow,,1,1,1,TRUE,Medina,primary,,
 Mystacina tuberculata,gait,Duty_Factor,percent,60.77757143,60.77757143,1,1,1,TRUE,Wimberly,primary,60.77757143,60.77757143
 Mystacina tuberculata,gait,Gait,category,LSDC,,1,1,1,TRUE,Wimberly,primary,,
 Mystacina tuberculata,gait,Phase,percent,40.67614286,40.67614286,1,1,1,TRUE,Wimberly,primary,40.67614286,40.67614286
@@ -3259,6 +3481,9 @@ Nycticebus pygmaeus,research_effort,Zoological_record_article_count,articles,19,
 Nycticebus pygmaeus,hand_morphology,log10_ip3_mm,log10 mm,0.830588668685144,0.830588668685144,1,1,1,TRUE,Baker,primary,0.830588668685144,0.830588668685144
 Nycticebus pygmaeus,hand_morphology,log10_mc3_mm,log10 mm,0.998259338423699,0.998259338423699,1,1,1,TRUE,Baker,primary,0.998259338423699,0.998259338423699
 Nycticebus pygmaeus,hand_morphology,log10_pp3_mm,log10 mm,1.05690485133647,1.05690485133647,1,1,1,TRUE,Baker,primary,1.05690485133647,1.05690485133647
+Ochotona rufescens,locomotion,Limb_posture,category,Plantigrade,,1,1,1,TRUE,Medina,primary,,
+Ochotona rufescens,locomotion,Locomotor_habit,category,Terrestrial,,1,1,1,TRUE,Medina,primary,,
+Ochotona rufescens,locomotion,Top_speed,category,Slow,,1,1,1,TRUE,Medina,primary,,
 Odocoileus virginianus,gait,Duty_Factor,percent,69,69,1,1,1,TRUE,Wimberly,primary,69,69
 Odocoileus virginianus,gait,Foot_Posture,category,unguligrade,,1,1,1,TRUE,Wimberly,primary,,
 Odocoileus virginianus,gait,Gait,category,LSDC,,1,1,1,TRUE,Wimberly,primary,,
@@ -3283,11 +3508,16 @@ Ornithorhynchus anatinus,gait,Duty_Factor,percent,58.59656149,58.59656149,1,1,1,
 Ornithorhynchus anatinus,gait,Foot_Posture,category,plantigrade,,1,1,1,TRUE,Wimberly,primary,,
 Ornithorhynchus anatinus,gait,Gait,category,LSDC,,1,1,1,TRUE,Wimberly,primary,,
 Ornithorhynchus anatinus,gait,Phase,percent,44.35640697,44.35640697,1,1,1,TRUE,Wimberly,primary,44.35640697,44.35640697
+Orycteropus afer,locomotion,Angular_utilization_index_FL,percent,43.9252336448598,43.9252336448598,1,1,1,TRUE,Medina,primary,43.9252336448598,43.9252336448598
+Orycteropus afer,locomotion,Angular_utilization_index_HL,percent,73.9344262295082,73.9344262295082,1,1,1,TRUE,Medina,primary,73.9344262295082,73.9344262295082
 Orycteropus afer,dexterity,Dexterity,1-7 scale,2,2,1,1,1,TRUE,Heffner,primary,2,2
 Orycteropus afer,gait,Duty_Factor,percent,69.98224148,69.98224148,1,1,1,TRUE,Wimberly,primary,69.98224148,69.98224148
 Orycteropus afer,gait,Foot_Posture,category,digitigrade,,1,1,1,TRUE,Wimberly,primary,,
 Orycteropus afer,gait,Gait,category,LSDC,,1,1,1,TRUE,Wimberly,primary,,
+Orycteropus afer,locomotion,Limb_posture,category,Digitigrade,,1,1,1,TRUE,Medina,primary,,
+Orycteropus afer,locomotion,Locomotor_habit,category,Terrestrial,,1,1,1,TRUE,Medina,primary,,
 Orycteropus afer,gait,Phase,percent,49.46041,49.46041,1,1,1,TRUE,Wimberly,primary,49.46041,49.46041
+Orycteropus afer,locomotion,Top_speed,category,Medium,,1,1,1,TRUE,Medina,primary,,
 Oryctolagus cuniculus,dexterity,Dexterity,1-7 scale,2,2,1,1,1,TRUE,Heffner,primary,2,2
 Oryx gazella,gait,Duty_Factor,percent,66.66,66.66,1,1,1,TRUE,Wimberly,primary,66.66,66.66
 Oryx gazella,gait,Foot_Posture,category,unguligrade,,1,1,1,TRUE,Wimberly,primary,,
@@ -3328,11 +3558,16 @@ Otolemur garnettii,hand_morphology,log10_pp3_mm,log10 mm,1.16136800223497,1.1613
 Otolemur garnettii,hand_morphology,peak_workspace,index,-1.50863830616573,-1.50863830616573,1,1,1,TRUE,Baker,primary,-1.50863830616573,-1.50863830616573
 Otolemur garnettii,hand_morphology,real_size,index,0.643452676486187,0.643452676486187,1,1,1,TRUE,Baker,primary,0.643452676486187,0.643452676486187
 Otolemur garnettii,hand_morphology,relative_size,index,-1.09691001300806,-1.09691001300806,1,1,1,TRUE,Baker,primary,-1.09691001300806,-1.09691001300806
+Ovis aries,locomotion,Angular_utilization_index_FL,percent,64.72727272727271,64.7272727272727,1,1,1,TRUE,Medina,primary,64.7272727272727,64.7272727272727
+Ovis aries,locomotion,Angular_utilization_index_HL,percent,62.3809523809524,62.3809523809524,1,1,1,TRUE,Medina,primary,62.3809523809524,62.3809523809524
 Ovis aries,dexterity,Dexterity,1-7 scale,1,1,1,1,1,TRUE,Heffner,primary,1,1
 Ovis aries,gait,Duty_Factor,percent,68,68,1,1,1,TRUE,Wimberly,primary,68,68
 Ovis aries,gait,Foot_Posture,category,unguligrade,,1,1,1,TRUE,Wimberly,primary,,
 Ovis aries,gait,Gait,category,LSDC,,1,1,1,TRUE,Wimberly,primary,,
+Ovis aries,locomotion,Limb_posture,category,Unguligrade,,1,1,1,TRUE,Medina,primary,,
+Ovis aries,locomotion,Locomotor_habit,category,Cursorial,,1,1,1,TRUE,Medina,primary,,
 Ovis aries,gait,Phase,percent,28,28,1,1,1,TRUE,Wimberly,primary,28,28
+Ovis aries,locomotion,Top_speed,category,Medium,,1,1,1,TRUE,Medina,primary,,
 Ovis canadensis,gait,Duty_Factor,percent,59.44028095,59.44028095,1,1,1,TRUE,Wimberly,primary,59.44028095,59.44028095
 Ovis canadensis,gait,Foot_Posture,category,unguligrade,,1,1,1,TRUE,Wimberly,primary,,
 Ovis canadensis,gait,Gait,category,LSLC,,1,1,1,TRUE,Wimberly,primary,,
@@ -3346,12 +3581,15 @@ Pan paniscus,behavioural_flexibility,Innovation_reduced_report_count,reports,4,4
 Pan paniscus,behavioural_flexibility,Innovation_report_count,reports,10,10,1,1,1,TRUE,Reader,primary,10,10
 Pan paniscus,locomotion,Intermembral_index,ratio,102,102,1,1,1,TRUE,Granatosky,primary,102,102
 Pan paniscus,research_effort,Journal_search_article_count,articles,64,64,1,1,1,TRUE,Reader,primary,64,64
+Pan paniscus,locomotion,Limb_posture,category,Plantigrade,,1,1,1,TRUE,Medina,primary,,
 Pan paniscus,locomotion,Locomotor_diversity_index,index,1.64480703854916,1.64480703854916,1,1,1,TRUE,Granatosky,primary,1.64480703854916,1.64480703854916
+Pan paniscus,locomotion,Locomotor_habit,category,Arboreal,,1,1,1,TRUE,Medina,primary,,
 Pan paniscus,behavioural_flexibility,Social_learning_report_count,reports,5,5,1,1,1,TRUE,Reader,primary,5,5
 Pan paniscus,manipulation,Tool_Manufacture,category,0,,1,1,1,TRUE,Baker,primary,,
 Pan paniscus,manipulation,Tool_use,category,1,,1,1,0,FALSE,Baker,secondary,,
 Pan paniscus,behavioural_flexibility,Tool_use_reduced_report_count,reports,18,18,1,1,1,TRUE,Reader,primary,18,18
 Pan paniscus,behavioural_flexibility,Tool_use_report_count,reports,27,27,1,1,1,TRUE,Reader,primary,27,27
+Pan paniscus,locomotion,Top_speed,category,Medium,,1,1,1,TRUE,Medina,primary,,
 Pan paniscus,manipulation,True_Tool_Use,category,1,,1,1,1,TRUE,Baker,primary,,
 Pan paniscus,vocalization,VocalRepertoire,count,11,24.5,2,2,1,TRUE,Schniter; ManyPrimates,primary; secondary,11,38
 Pan paniscus,research_effort,Zoological_record_article_count,articles,225,225,1,1,1,TRUE,Reader,primary,225,225
@@ -3413,18 +3651,43 @@ Pan troglodytes,hand_morphology,log10_pp4_mm,log10 mm,1.73523395149908,1.7352339
 Pan troglodytes,hand_morphology,peak_workspace,index,-1.55284196865778,-1.55284196865778,1,1,1,TRUE,Baker,primary,-1.55284196865778,-1.55284196865778
 Pan troglodytes,hand_morphology,real_size,index,1.41830129131975,1.41830129131975,1,1,1,TRUE,Baker,primary,1.41830129131975,1.41830129131975
 Pan troglodytes,hand_morphology,relative_size,index,-1,-1,1,1,1,TRUE,Baker,primary,-1,-1
+Panthera leo,locomotion,Angular_utilization_index_FL,percent,53.55818384222157,53.5581838422216,1,1,1,TRUE,Medina,primary,53.5581838422216,53.5581838422216
+Panthera leo,locomotion,Angular_utilization_index_HL,percent,68.10742546926758,68.1074254692676,1,1,1,TRUE,Medina,primary,68.1074254692676,68.1074254692676
 Panthera leo,gait,Duty_Factor,percent,68,68,1,1,1,TRUE,Wimberly,primary,68,68
 Panthera leo,gait,Foot_Posture,category,digitigrade,,1,1,1,TRUE,Wimberly,primary,,
 Panthera leo,gait,Gait,category,LSLC,,1,1,1,TRUE,Wimberly,primary,,
+Panthera leo,locomotion,Limb_posture,category,Digitigrade,,1,1,1,TRUE,Medina,primary,,
+Panthera leo,locomotion,Locomotor_habit,category,Cursorial,,1,1,1,TRUE,Medina,primary,,
 Panthera leo,gait,Phase,percent,15,15,1,1,1,TRUE,Wimberly,primary,15,15
+Panthera leo,locomotion,Top_speed,category,Fast,,1,1,1,TRUE,Medina,primary,,
+Panthera leo × tigris,locomotion,Angular_utilization_index_FL,percent,62.5974025974026,62.5974025974026,1,1,1,TRUE,Medina,primary,62.5974025974026,62.5974025974026
+Panthera leo × tigris,locomotion,Angular_utilization_index_HL,percent,60.4109589041096,60.4109589041096,1,1,1,TRUE,Medina,primary,60.4109589041096,60.4109589041096
+Panthera leo × tigris,locomotion,Limb_posture,category,Digitigrade,,1,1,1,TRUE,Medina,primary,,
+Panthera leo × tigris,locomotion,Locomotor_habit,category,Cursorial,,1,1,1,TRUE,Medina,primary,,
+Panthera leo × tigris,locomotion,Top_speed,category,Fast,,1,1,1,TRUE,Medina,primary,,
+Panthera onca,locomotion,Angular_utilization_index_FL,percent,54.83404524308003,54.83404524308,1,1,1,TRUE,Medina,primary,54.83404524308,54.83404524308
+Panthera onca,locomotion,Angular_utilization_index_HL,percent,67.06111211319546,67.0611121131955,1,1,1,TRUE,Medina,primary,67.0611121131955,67.0611121131955
 Panthera onca,gait,Duty_Factor,percent,64.09999999999999,64.1,1,1,1,TRUE,Wimberly,primary,64.1,64.1
 Panthera onca,gait,Foot_Posture,category,digitigrade,,1,1,1,TRUE,Wimberly,primary,,
 Panthera onca,gait,Gait,category,LSLC,,1,1,1,TRUE,Wimberly,primary,,
+Panthera onca,locomotion,Limb_posture,category,Digitigrade,,1,1,1,TRUE,Medina,primary,,
+Panthera onca,locomotion,Locomotor_habit,category,Scansorial,,1,1,1,TRUE,Medina,primary,,
 Panthera onca,gait,Phase,percent,10.256,10.256,1,1,1,TRUE,Wimberly,primary,10.256,10.256
+Panthera onca,locomotion,Top_speed,category,Fast,,1,1,1,TRUE,Medina,primary,,
+Panthera pardus,locomotion,Angular_utilization_index_FL,percent,42.7333333333333,42.7333333333333,1,1,1,TRUE,Medina,primary,42.7333333333333,42.7333333333333
+Panthera pardus,locomotion,Angular_utilization_index_HL,percent,25.1908396946565,25.1908396946565,1,1,1,TRUE,Medina,primary,25.1908396946565,25.1908396946565
+Panthera pardus,locomotion,Limb_posture,category,Digitigrade,,1,1,1,TRUE,Medina,primary,,
+Panthera pardus,locomotion,Locomotor_habit,category,Scansorial,,1,1,1,TRUE,Medina,primary,,
+Panthera pardus,locomotion,Top_speed,category,Medium,,1,1,1,TRUE,Medina,primary,,
+Panthera tigris,locomotion,Angular_utilization_index_FL,percent,63.7047619047619,63.7047619047619,1,1,1,TRUE,Medina,primary,63.7047619047619,63.7047619047619
+Panthera tigris,locomotion,Angular_utilization_index_HL,percent,52.2261904761905,52.2261904761905,1,1,1,TRUE,Medina,primary,52.2261904761905,52.2261904761905
 Panthera tigris,gait,Duty_Factor,percent,64.41289317,64.41289317,1,1,1,TRUE,Wimberly,primary,64.41289317,64.41289317
 Panthera tigris,gait,Foot_Posture,category,digitigrade,,1,1,1,TRUE,Wimberly,primary,,
 Panthera tigris,gait,Gait,category,LSLC,,1,1,1,TRUE,Wimberly,primary,,
+Panthera tigris,locomotion,Limb_posture,category,Digitigrade,,1,1,1,TRUE,Medina,primary,,
+Panthera tigris,locomotion,Locomotor_habit,category,Cursorial,,1,1,1,TRUE,Medina,primary,,
 Panthera tigris,gait,Phase,percent,20.32129476,20.32129476,1,1,1,TRUE,Wimberly,primary,20.32129476,20.32129476
+Panthera tigris,locomotion,Top_speed,category,Fast,,1,1,1,TRUE,Medina,primary,,
 Papio anubis,locomotion,Arboreal_terrestrial,category,T,,1,1,1,TRUE,Granatosky,primary,,
 Papio anubis,dexterity,Dexterity,1-7 scale,6,6,1,1,1,TRUE,Heffner,primary,6,6
 Papio anubis,behavioural_flexibility,Extractive_foraging_reduced_report_count,reports,3,3,1,1,1,TRUE,Reader,primary,3,3
@@ -3502,16 +3765,21 @@ Papio hamadryas,hand_morphology,log10_pp4_mm,log10 mm,1.43107230693574,1.4310723
 Papio hamadryas,hand_morphology,peak_workspace,index,-1.52287874528034,-1.52287874528034,1,1,1,TRUE,Baker,primary,-1.52287874528034,-1.52287874528034
 Papio hamadryas,hand_morphology,real_size,index,1.19312459835446,1.19312459835446,1,1,1,TRUE,Baker,primary,1.19312459835446,1.19312459835446
 Papio hamadryas,hand_morphology,relative_size,index,-1,-1,1,1,1,TRUE,Baker,primary,-1,-1
+Papio papio,locomotion,Angular_utilization_index_FL,percent,43.47223910545557,43.4722391054556,1,1,1,TRUE,Medina,primary,43.4722391054556,43.4722391054556
+Papio papio,locomotion,Angular_utilization_index_HL,percent,58.54103266382633,58.5410326638263,1,1,1,TRUE,Medina,primary,58.5410326638263,58.5410326638263
 Papio papio,behavioural_flexibility,Extractive_foraging_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
 Papio papio,behavioural_flexibility,Extractive_foraging_report_count,reports,5,5,1,1,1,TRUE,Reader,primary,5,5
 Papio papio,behavioural_flexibility,Innovation_reduced_report_count,reports,4,4,1,1,1,TRUE,Reader,primary,4,4
 Papio papio,behavioural_flexibility,Innovation_report_count,reports,8,8,1,1,1,TRUE,Reader,primary,8,8
 Papio papio,research_effort,Journal_search_article_count,articles,10,10,1,1,1,TRUE,Reader,primary,10,10
+Papio papio,locomotion,Limb_posture,category,Plantigrade,,1,1,1,TRUE,Medina,primary,,
+Papio papio,locomotion,Locomotor_habit,category,Terrestrial,,1,1,1,TRUE,Medina,primary,,
 Papio papio,behavioural_flexibility,Social_learning_report_count,reports,3,3,1,1,1,TRUE,Reader,primary,3,3
 Papio papio,manipulation,Tool_Manufacture,category,0,,1,1,1,TRUE,Baker,primary,,
 Papio papio,manipulation,Tool_use,category,1,,1,1,0,FALSE,Baker,secondary,,
 Papio papio,behavioural_flexibility,Tool_use_reduced_report_count,reports,1,1,1,1,1,TRUE,Reader,primary,1,1
 Papio papio,behavioural_flexibility,Tool_use_report_count,reports,4,4,1,1,1,TRUE,Reader,primary,4,4
+Papio papio,locomotion,Top_speed,category,Medium,,1,1,1,TRUE,Medina,primary,,
 Papio papio,manipulation,True_Tool_Use,category,1,,1,1,1,TRUE,Baker,primary,,
 Papio papio,research_effort,Zoological_record_article_count,articles,8,8,1,1,1,TRUE,Reader,primary,8,8
 Papio papio,hand_morphology,log10_ip3_mm,log10 mm,1.23146959043068,1.23146959043068,1,1,1,TRUE,Baker,primary,1.23146959043068,1.23146959043068
@@ -3748,6 +4016,8 @@ Plesiadapis tricuspidens,manipulation,Tool_use,category,0,,1,1,0,FALSE,Baker,sec
 Plesiadapis tricuspidens,hand_morphology,log10_mc3_mm,log10 mm,1.32428245529769,1.32428245529769,1,1,1,TRUE,Baker,primary,1.32428245529769,1.32428245529769
 Plesiadapis tricuspidens,hand_morphology,log10_mc4_mm,log10 mm,1.39269695325967,1.39269695325967,1,1,1,TRUE,Baker,primary,1.39269695325967,1.39269695325967
 Plesiadapis tricuspidens,hand_morphology,log10_mc5_mm,log10 mm,1.15986784709257,1.15986784709257,1,1,1,TRUE,Baker,primary,1.15986784709257,1.15986784709257
+Pongo pygmaeus,locomotion,Angular_utilization_index_FL,percent,57,57,1,1,1,TRUE,Medina,primary,57,57
+Pongo pygmaeus,locomotion,Angular_utilization_index_HL,percent,48.7647058823529,48.7647058823529,1,1,1,TRUE,Medina,primary,48.7647058823529,48.7647058823529
 Pongo pygmaeus,locomotion,Arboreal_terrestrial,category,A,,1,1,1,TRUE,Granatosky,primary,,
 Pongo pygmaeus,dexterity,Dexterity,1-7 scale,6,6,1,1,1,TRUE,Heffner,primary,6,6
 Pongo pygmaeus,behavioural_flexibility,Extractive_foraging_reduced_report_count,reports,5,5,1,1,1,TRUE,Reader,primary,5,5
@@ -3756,12 +4026,15 @@ Pongo pygmaeus,behavioural_flexibility,Innovation_reduced_report_count,reports,1
 Pongo pygmaeus,behavioural_flexibility,Innovation_report_count,reports,53,53,1,1,1,TRUE,Reader,primary,53,53
 Pongo pygmaeus,locomotion,Intermembral_index,ratio,139,139,1,1,1,TRUE,Granatosky,primary,139,139
 Pongo pygmaeus,research_effort,Journal_search_article_count,articles,47,47,1,1,1,TRUE,Reader,primary,47,47
+Pongo pygmaeus,locomotion,Limb_posture,category,Mixed,,1,1,1,TRUE,Medina,primary,,
 Pongo pygmaeus,locomotion,Locomotor_diversity_index,index,1.38150120846112,1.38150120846112,1,1,1,TRUE,Granatosky,primary,1.38150120846112,1.38150120846112
+Pongo pygmaeus,locomotion,Locomotor_habit,category,Arboreal,,1,1,1,TRUE,Medina,primary,,
 Pongo pygmaeus,behavioural_flexibility,Social_learning_report_count,reports,86,86,1,1,1,TRUE,Reader,primary,86,86
 Pongo pygmaeus,manipulation,Tool_Manufacture,category,1,,1,1,1,TRUE,Baker,primary,,
 Pongo pygmaeus,manipulation,Tool_use,category,1,,1,1,0,FALSE,Baker,secondary,,
 Pongo pygmaeus,behavioural_flexibility,Tool_use_reduced_report_count,reports,60,60,1,1,1,TRUE,Reader,primary,60,60
 Pongo pygmaeus,behavioural_flexibility,Tool_use_report_count,reports,114,114,1,1,1,TRUE,Reader,primary,114,114
+Pongo pygmaeus,locomotion,Top_speed,category,Slow,,1,1,1,TRUE,Medina,primary,,
 Pongo pygmaeus,manipulation,True_Tool_Use,category,1,,1,1,1,TRUE,Baker,primary,,
 Pongo pygmaeus,vocalization,VocalRepertoire,count,10,16.5,2,2,1,TRUE,Schniter; ManyPrimates,primary; secondary,10,23
 Pongo pygmaeus,research_effort,Zoological_record_article_count,articles,321,321,1,1,1,TRUE,Reader,primary,321,321
@@ -3802,6 +4075,9 @@ Pongo sp.,hand_morphology,log10_mc5_mm,log10 mm,1.92766543928285,1.9276654392828
 Pongo sp.,hand_morphology,log10_pp1_mm,log10 mm,1.45429211630417,1.45429211630417,1,1,1,TRUE,Baker,primary,1.45429211630417,1.45429211630417
 Pongo sp.,hand_morphology,log10_pp3_mm,log10 mm,1.86042785130777,1.86042785130777,1,1,1,TRUE,Baker,primary,1.86042785130777,1.86042785130777
 Pongo sp.,hand_morphology,log10_pp4_mm,log10 mm,1.86376882402947,1.86376882402947,1,1,1,TRUE,Baker,primary,1.86376882402947,1.86376882402947
+Pongo spp,locomotion,Limb_posture,category,Plantigrade,,1,1,1,TRUE,Medina,primary,,
+Pongo spp,locomotion,Locomotor_habit,category,Arboreal,,1,1,1,TRUE,Medina,primary,,
+Pongo spp,locomotion,Top_speed,category,Slow,,1,1,1,TRUE,Medina,primary,,
 Potorous apicalis,dexterity,Dexterity,1-7 scale,2,2,1,1,1,TRUE,Heffner,primary,2,2
 Potorous tridactylus,dexterity,Dexterity,1-7 scale,2,2,1,1,0,FALSE,Iwaniuk,secondary,2,2
 Potos flavus,dexterity,Dexterity,1-7 scale,3,3,2,2,1,TRUE,Heffner; Iwaniuk,primary; secondary,3,3
@@ -3912,7 +4188,12 @@ Priodontes maximus,gait,Duty_Factor,percent,59.11835749,59.11835749,1,1,1,TRUE,W
 Priodontes maximus,gait,Foot_Posture,category,digitigrade,,1,1,1,TRUE,Wimberly,primary,,
 Priodontes maximus,gait,Gait,category,DSDC,,1,1,1,TRUE,Wimberly,primary,,
 Priodontes maximus,gait,Phase,percent,64.79469,64.79469,1,1,1,TRUE,Wimberly,primary,64.79469,64.79469
+Procavia capensis,locomotion,Angular_utilization_index_FL,percent,74.95238095238101,74.952380952381,1,1,1,TRUE,Medina,primary,74.952380952381,74.952380952381
+Procavia capensis,locomotion,Angular_utilization_index_HL,percent,66.32653061224489,66.3265306122449,1,1,1,TRUE,Medina,primary,66.3265306122449,66.3265306122449
 Procavia capensis,dexterity,Dexterity,1-7 scale,2,2,1,1,1,TRUE,Heffner,primary,2,2
+Procavia capensis,locomotion,Limb_posture,category,Plantigrade,,1,1,1,TRUE,Medina,primary,,
+Procavia capensis,locomotion,Locomotor_habit,category,Scansorial,,1,1,1,TRUE,Medina,primary,,
+Procavia capensis,locomotion,Top_speed,category,Slow,,1,1,1,TRUE,Medina,primary,,
 Procolobus kirkii,behavioural_flexibility,Extractive_foraging_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
 Procolobus kirkii,behavioural_flexibility,Extractive_foraging_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
 Procolobus kirkii,behavioural_flexibility,Innovation_reduced_report_count,reports,1,1,1,1,1,TRUE,Reader,primary,1,1
@@ -3952,10 +4233,15 @@ Procolobus verus,behavioural_flexibility,Tool_use_report_count,reports,0,0,1,1,1
 Procolobus verus,research_effort,Zoological_record_article_count,articles,3,3,1,1,1,TRUE,Reader,primary,3,3
 Procolobus verus,hand_morphology,log10_mc2_mm,log10 mm,1.46568021159828,1.46568021159828,1,1,1,TRUE,Baker,primary,1.46568021159828,1.46568021159828
 Procolobus verus,hand_morphology,log10_mc3_mm,log10 mm,1.49387611085282,1.49387611085282,1,1,1,TRUE,Baker,primary,1.49387611085282,1.49387611085282
+Procyon lotor,locomotion,Angular_utilization_index_FL,percent,42.9411764705882,42.9411764705882,1,1,1,TRUE,Medina,primary,42.9411764705882,42.9411764705882
+Procyon lotor,locomotion,Angular_utilization_index_HL,percent,53.6363636363636,53.6363636363636,1,1,1,TRUE,Medina,primary,53.6363636363636,53.6363636363636
 Procyon lotor,dexterity,Dexterity,1-7 scale,3,3,2,2,1,TRUE,Heffner; Iwaniuk,primary; secondary,3,3
 Procyon lotor,gait,Duty_Factor,percent,71,71,1,1,1,TRUE,Wimberly,primary,71,71
 Procyon lotor,gait,Gait,category,LSLC,,1,1,1,TRUE,Wimberly,primary,,
+Procyon lotor,locomotion,Limb_posture,category,Digitigrade,,1,1,1,TRUE,Medina,primary,,
+Procyon lotor,locomotion,Locomotor_habit,category,Scansorial,,1,1,1,TRUE,Medina,primary,,
 Procyon lotor,gait,Phase,percent,14,14,1,1,1,TRUE,Wimberly,primary,14,14
+Procyon lotor,locomotion,Top_speed,category,Slow,,1,1,1,TRUE,Medina,primary,,
 Prolemur simus,manipulation,Tool_use,category,0,,1,1,0,FALSE,Baker,secondary,,
 Prolemur simus,hand_morphology,log10_ip3_mm,log10 mm,1.06818586174616,1.06818586174616,1,1,1,TRUE,Baker,primary,1.06818586174616,1.06818586174616
 Prolemur simus,hand_morphology,log10_mc3_mm,log10 mm,1.29003461136252,1.29003461136252,1,1,1,TRUE,Baker,primary,1.29003461136252,1.29003461136252
@@ -4033,6 +4319,16 @@ Ptilocercus lowii,hand_morphology,log10_mc2_mm,log10 mm,0.702430536445525,0.7024
 Ptilocercus lowii,hand_morphology,log10_mc3_mm,log10 mm,0.7604224834232119,0.760422483423212,1,1,1,TRUE,Baker,primary,0.760422483423212,0.760422483423212
 Ptilocercus lowii,hand_morphology,log10_mc4_mm,log10 mm,0.723318821716769,0.723318821716769,1,1,1,TRUE,Baker,primary,0.723318821716769,0.723318821716769
 Ptilocercus lowii,hand_morphology,log10_mc5_mm,log10 mm,0.606202163753863,0.606202163753863,1,1,1,TRUE,Baker,primary,0.606202163753863,0.606202163753863
+Pudu puda,locomotion,Angular_utilization_index_FL,percent,71.95652173913039,71.9565217391304,1,1,1,TRUE,Medina,primary,71.9565217391304,71.9565217391304
+Pudu puda,locomotion,Angular_utilization_index_HL,percent,65.1764705882353,65.1764705882353,1,1,1,TRUE,Medina,primary,65.1764705882353,65.1764705882353
+Pudu puda,locomotion,Limb_posture,category,Unguligrade,,1,1,1,TRUE,Medina,primary,,
+Pudu puda,locomotion,Locomotor_habit,category,Scansorial,,1,1,1,TRUE,Medina,primary,,
+Pudu puda,locomotion,Top_speed,category,Fast,,1,1,1,TRUE,Medina,primary,,
+Puma concolor,locomotion,Angular_utilization_index_FL,percent,81.1688311688312,81.1688311688312,1,1,1,TRUE,Medina,primary,81.1688311688312,81.1688311688312
+Puma concolor,locomotion,Angular_utilization_index_HL,percent,75.49295774647889,75.4929577464789,1,1,1,TRUE,Medina,primary,75.4929577464789,75.4929577464789
+Puma concolor,locomotion,Limb_posture,category,Digitigrade,,1,1,1,TRUE,Medina,primary,,
+Puma concolor,locomotion,Locomotor_habit,category,Scansorial,,1,1,1,TRUE,Medina,primary,,
+Puma concolor,locomotion,Top_speed,category,Medium,,1,1,1,TRUE,Medina,primary,,
 Pygathrix avunculus,behavioural_flexibility,Extractive_foraging_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
 Pygathrix avunculus,behavioural_flexibility,Extractive_foraging_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
 Pygathrix avunculus,behavioural_flexibility,Innovation_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
@@ -4094,11 +4390,16 @@ Pygathrix roxellana,behavioural_flexibility,Social_learning_report_count,reports
 Pygathrix roxellana,behavioural_flexibility,Tool_use_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
 Pygathrix roxellana,behavioural_flexibility,Tool_use_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
 Pygathrix roxellana,research_effort,Zoological_record_article_count,articles,36,36,1,1,1,TRUE,Reader,primary,36,36
+Rattus norvegicus,locomotion,Angular_utilization_index_FL,percent,37.31687062937065,37.3168706293706,1,1,1,TRUE,Medina,primary,37.3168706293706,37.3168706293706
+Rattus norvegicus,locomotion,Angular_utilization_index_HL,percent,72.87208216619983,72.8720821661998,1,1,1,TRUE,Medina,primary,72.8720821661998,72.8720821661998
 Rattus norvegicus,dexterity,Dexterity,1-7 scale,3,3,2,2,1,TRUE,Heffner; Iwaniuk,primary; secondary,3,3
 Rattus norvegicus,gait,Duty_Factor,percent,62,62,1,1,1,TRUE,Wimberly,primary,62,62
 Rattus norvegicus,gait,Foot_Posture,category,plantigrade,,1,1,1,TRUE,Wimberly,primary,,
 Rattus norvegicus,gait,Gait,category,LSDC,,1,1,1,TRUE,Wimberly,primary,,
+Rattus norvegicus,locomotion,Limb_posture,category,Plantigrade,,1,1,1,TRUE,Medina,primary,,
+Rattus norvegicus,locomotion,Locomotor_habit,category,Scansorial,,1,1,1,TRUE,Medina,primary,,
 Rattus norvegicus,gait,Phase,percent,36,36,1,1,1,TRUE,Wimberly,primary,36,36
+Rattus norvegicus,locomotion,Top_speed,category,Slow,,1,1,1,TRUE,Medina,primary,,
 Rhinolophus,dexterity,Dexterity,1-7 scale,1,1,1,1,1,TRUE,Heffner,primary,1,1
 Rhinopithecus roxellana,gait,Duty_Factor,percent,69.43838721,69.43838721,1,1,1,TRUE,Wimberly,primary,69.43838721,69.43838721
 Rhinopithecus roxellana,gait,Foot_Posture,category,plantigrade,,1,1,1,TRUE,Wimberly,primary,,
@@ -4230,6 +4531,7 @@ Saguinus nigricollis,behavioural_flexibility,Social_learning_report_count,report
 Saguinus nigricollis,behavioural_flexibility,Tool_use_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
 Saguinus nigricollis,behavioural_flexibility,Tool_use_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
 Saguinus nigricollis,research_effort,Zoological_record_article_count,articles,3,3,1,1,1,TRUE,Reader,primary,3,3
+Saguinus oedipus,locomotion,Angular_utilization_index_HL,percent,41.1764705882353,41.1764705882353,1,1,1,TRUE,Medina,primary,41.1764705882353,41.1764705882353
 Saguinus oedipus,dexterity,Dexterity,1-7 scale,4,4,2,2,1,TRUE,Heffner; Iwaniuk,primary; secondary,4,4
 Saguinus oedipus,manipulation,Extractive_foraging,category,0,,1,1,1,TRUE,Heldstab,primary,,
 Saguinus oedipus,behavioural_flexibility,Extractive_foraging_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
@@ -4237,12 +4539,15 @@ Saguinus oedipus,behavioural_flexibility,Extractive_foraging_report_count,report
 Saguinus oedipus,behavioural_flexibility,Innovation_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
 Saguinus oedipus,behavioural_flexibility,Innovation_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
 Saguinus oedipus,research_effort,Journal_search_article_count,articles,33,33,1,1,1,TRUE,Reader,primary,33,33
+Saguinus oedipus,locomotion,Limb_posture,category,Plantigrade,,1,1,1,TRUE,Medina,primary,,
+Saguinus oedipus,locomotion,Locomotor_habit,category,Arboreal,,1,1,1,TRUE,Medina,primary,,
 Saguinus oedipus,manipulation,Manipulation_complexity,score,1.7,1.7,1,1,1,TRUE,Heldstab,primary,1.7,1.7
 Saguinus oedipus,behavioural_flexibility,Social_learning_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
 Saguinus oedipus,manipulation,Tool_Manufacture,category,0,,1,1,1,TRUE,Baker,primary,,
 Saguinus oedipus,manipulation,Tool_use,category,0,,2,2,1,TRUE,Heldstab; Baker,primary; secondary,,
 Saguinus oedipus,behavioural_flexibility,Tool_use_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
 Saguinus oedipus,behavioural_flexibility,Tool_use_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
+Saguinus oedipus,locomotion,Top_speed,category,Medium,,1,1,1,TRUE,Medina,primary,,
 Saguinus oedipus,manipulation,True_Tool_Use,category,1,,1,1,1,TRUE,Baker,primary,,
 Saguinus oedipus,vocalization,VocalRepertoire,count,14,14,1,1,1,TRUE,Schniter,primary,14,14
 Saguinus oedipus,research_effort,Zoological_record_article_count,articles,153,153,1,1,1,TRUE,Reader,primary,153,153
@@ -4286,6 +4591,8 @@ Saimiri oerstedii,behavioural_flexibility,Social_learning_report_count,reports,1
 Saimiri oerstedii,behavioural_flexibility,Tool_use_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
 Saimiri oerstedii,behavioural_flexibility,Tool_use_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
 Saimiri oerstedii,research_effort,Zoological_record_article_count,articles,4,4,1,1,1,TRUE,Reader,primary,4,4
+Saimiri sciureus,locomotion,Angular_utilization_index_FL,percent,78.82495481982004,78.82495481982,1,1,1,TRUE,Medina,primary,78.82495481982,78.82495481982
+Saimiri sciureus,locomotion,Angular_utilization_index_HL,percent,54.69965675057207,54.6996567505721,1,1,1,TRUE,Medina,primary,54.6996567505721,54.6996567505721
 Saimiri sciureus,locomotion,Arboreal_terrestrial,category,A,,1,1,1,TRUE,Granatosky,primary,,
 Saimiri sciureus,motor_pathway,CM_connection_inference,category,against,,1,1,1,TRUE,Bortoff_Strick,primary,,
 Saimiri sciureus,motor_pathway,CST_termination_grade,ordinal 0-2,1,1,1,1,1,TRUE,Bortoff_Strick,primary,1,1
@@ -4301,13 +4608,16 @@ Saimiri sciureus,behavioural_flexibility,Innovation_reduced_report_count,reports
 Saimiri sciureus,behavioural_flexibility,Innovation_report_count,reports,3,3,1,1,1,TRUE,Reader,primary,3,3
 Saimiri sciureus,locomotion,Intermembral_index,ratio,80,80,1,1,1,TRUE,Granatosky,primary,80,80
 Saimiri sciureus,research_effort,Journal_search_article_count,articles,73,73,1,1,1,TRUE,Reader,primary,73,73
+Saimiri sciureus,locomotion,Limb_posture,category,Plantigrade,,1,1,1,TRUE,Medina,primary,,
 Saimiri sciureus,locomotion,Locomotor_diversity_index,index,1.52127517730103,1.52127517730103,1,1,1,TRUE,Granatosky,primary,1.52127517730103,1.52127517730103
+Saimiri sciureus,locomotion,Locomotor_habit,category,Arboreal,,1,1,1,TRUE,Medina,primary,,
 Saimiri sciureus,manipulation,Manipulation_complexity,score,1.94,1.94,1,1,1,TRUE,Heldstab,primary,1.94,1.94
 Saimiri sciureus,gait,Phase,percent,58.76699956,58.76699956,1,1,1,TRUE,Wimberly,primary,58.76699956,58.76699956
 Saimiri sciureus,behavioural_flexibility,Social_learning_report_count,reports,1,1,1,1,1,TRUE,Reader,primary,1,1
 Saimiri sciureus,manipulation,Tool_use,category,0,,2,2,1,TRUE,Heldstab; Baker,primary; secondary,,
 Saimiri sciureus,behavioural_flexibility,Tool_use_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
 Saimiri sciureus,behavioural_flexibility,Tool_use_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
+Saimiri sciureus,locomotion,Top_speed,category,Slow,,1,1,1,TRUE,Medina,primary,,
 Saimiri sciureus,vocalization,VocalRepertoire,count,21,21,2,2,1,TRUE,Schniter; ManyPrimates,primary; secondary,21,21
 Saimiri sciureus,research_effort,Zoological_record_article_count,articles,89,89,1,1,1,TRUE,Reader,primary,89,89
 Saimiri sciureus,hand_morphology,log10_ip2_mm,log10 mm,0.908263599446069,0.908263599446069,1,1,1,TRUE,Baker,primary,0.908263599446069,0.908263599446069
@@ -4433,11 +4743,21 @@ Semnopithecus johnii,hand_morphology,log10_mc4_mm,log10 mm,1.66464197555613,1.66
 Semnopithecus johnii,hand_morphology,log10_mc5_mm,log10 mm,1.63848925695464,1.63848925695464,1,1,1,TRUE,Baker,primary,1.63848925695464,1.63848925695464
 Setonix brachyurus,dexterity,Dexterity,1-7 scale,3,3,2,2,1,TRUE,Heffner; Iwaniuk,primary; secondary,3,3
 Spermophilus tridecemlineatus,dexterity,Dexterity,1-7 scale,3,3,1,1,1,TRUE,Heffner,primary,3,3
+Sus scrofa,locomotion,Angular_utilization_index_FL,percent,52.1428571428571,52.1428571428571,1,1,1,TRUE,Medina,primary,52.1428571428571,52.1428571428571
+Sus scrofa,locomotion,Angular_utilization_index_HL,percent,56.578947368421,56.578947368421,1,1,1,TRUE,Medina,primary,56.578947368421,56.578947368421
 Sus scrofa,dexterity,Dexterity,1-7 scale,1,1,1,1,1,TRUE,Heffner,primary,1,1
 Sus scrofa,gait,Duty_Factor,percent,70.80209895,70.80209895,1,1,1,TRUE,Wimberly,primary,70.80209895,70.80209895
 Sus scrofa,gait,Foot_Posture,category,unguligrade,,1,1,1,TRUE,Wimberly,primary,,
 Sus scrofa,gait,Gait,category,LSLC,,1,1,1,TRUE,Wimberly,primary,,
+Sus scrofa,locomotion,Limb_posture,category,Unguligrade,,1,1,1,TRUE,Medina,primary,,
+Sus scrofa,locomotion,Locomotor_habit,category,Terrestrial,,1,1,1,TRUE,Medina,primary,,
 Sus scrofa,gait,Phase,percent,25.74963,25.74963,1,1,1,TRUE,Wimberly,primary,25.74963,25.74963
+Sus scrofa,locomotion,Top_speed,category,Medium,,1,1,1,TRUE,Medina,primary,,
+Sus scrofa domestica,locomotion,Angular_utilization_index_FL,percent,44.5945945945946,44.5945945945946,1,1,1,TRUE,Medina,primary,44.5945945945946,44.5945945945946
+Sus scrofa domestica,locomotion,Angular_utilization_index_HL,percent,34.8039215686275,34.8039215686275,1,1,1,TRUE,Medina,primary,34.8039215686275,34.8039215686275
+Sus scrofa domestica,locomotion,Limb_posture,category,Unguligrade,,1,1,1,TRUE,Medina,primary,,
+Sus scrofa domestica,locomotion,Locomotor_habit,category,Terrestrial,,1,1,1,TRUE,Medina,primary,,
+Sus scrofa domestica,locomotion,Top_speed,category,Slow,,1,1,1,TRUE,Medina,primary,,
 Symphalangus syndactylus,locomotion,Arboreal_terrestrial,category,A,,1,1,1,TRUE,Granatosky,primary,,
 Symphalangus syndactylus,manipulation,Extractive_foraging,category,0,,1,1,1,TRUE,Heldstab,primary,,
 Symphalangus syndactylus,behavioural_flexibility,Extractive_foraging_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
@@ -4488,14 +4808,24 @@ Tapirus bairdii,gait,Duty_Factor,percent,65.0060024,65.0060024,1,1,1,TRUE,Wimber
 Tapirus bairdii,gait,Foot_Posture,category,digitigrade,,1,1,1,TRUE,Wimberly,primary,,
 Tapirus bairdii,gait,Gait,category,LSLC,,1,1,1,TRUE,Wimberly,primary,,
 Tapirus bairdii,gait,Phase,percent,21.96879,21.96879,1,1,1,TRUE,Wimberly,primary,21.96879,21.96879
+Tapirus indicus,locomotion,Angular_utilization_index_FL,percent,62.5242718446602,62.5242718446602,1,1,1,TRUE,Medina,primary,62.5242718446602,62.5242718446602
+Tapirus indicus,locomotion,Angular_utilization_index_HL,percent,58.4931506849315,58.4931506849315,1,1,1,TRUE,Medina,primary,58.4931506849315,58.4931506849315
 Tapirus indicus,gait,Duty_Factor,percent,61,61,1,1,1,TRUE,Wimberly,primary,61,61
 Tapirus indicus,gait,Foot_Posture,category,digitigrade,,1,1,1,TRUE,Wimberly,primary,,
 Tapirus indicus,gait,Gait,category,LSDC,,1,1,1,TRUE,Wimberly,primary,,
+Tapirus indicus,locomotion,Limb_posture,category,Unguligrade,,1,1,1,TRUE,Medina,primary,,
+Tapirus indicus,locomotion,Locomotor_habit,category,Terrestrial,,1,1,1,TRUE,Medina,primary,,
 Tapirus indicus,gait,Phase,percent,26,26,1,1,1,TRUE,Wimberly,primary,26,26
+Tapirus indicus,locomotion,Top_speed,category,Medium,,1,1,1,TRUE,Medina,primary,,
+Tapirus terrestris,locomotion,Angular_utilization_index_FL,percent,55,55,1,1,1,TRUE,Medina,primary,55,55
+Tapirus terrestris,locomotion,Angular_utilization_index_HL,percent,60,60,1,1,1,TRUE,Medina,primary,60,60
 Tapirus terrestris,gait,Duty_Factor,percent,70,70,1,1,1,TRUE,Wimberly,primary,70,70
 Tapirus terrestris,gait,Foot_Posture,category,digitigrade,,1,1,1,TRUE,Wimberly,primary,,
 Tapirus terrestris,gait,Gait,category,LSDC,,1,1,1,TRUE,Wimberly,primary,,
+Tapirus terrestris,locomotion,Limb_posture,category,Unguligrade,,1,1,1,TRUE,Medina,primary,,
+Tapirus terrestris,locomotion,Locomotor_habit,category,Terrestrial,,1,1,1,TRUE,Medina,primary,,
 Tapirus terrestris,gait,Phase,percent,26,26,1,1,1,TRUE,Wimberly,primary,26,26
+Tapirus terrestris,locomotion,Top_speed,category,Medium,,1,1,1,TRUE,Medina,primary,,
 Tarsius,dexterity,Dexterity,1-7 scale,4,4,1,1,1,TRUE,Heffner,primary,4,4
 Tarsius bancanus,locomotion,Arboreal_terrestrial,category,A,,1,1,1,TRUE,Granatosky,primary,,
 Tarsius bancanus,behavioural_flexibility,Extractive_foraging_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0
@@ -4553,6 +4883,11 @@ Tarsius tarsier,manipulation,Tool_use,category,0,,1,1,0,FALSE,Baker,secondary,,
 Tarsius tarsier,hand_morphology,log10_ip3_mm,log10 mm,0.895974732359065,0.895974732359065,1,1,1,TRUE,Baker,primary,0.895974732359065,0.895974732359065
 Tarsius tarsier,hand_morphology,log10_mc3_mm,log10 mm,1.01283722470517,1.01283722470517,1,1,1,TRUE,Baker,primary,1.01283722470517,1.01283722470517
 Tarsius tarsier,hand_morphology,log10_pp3_mm,log10 mm,1.06445798922692,1.06445798922692,1,1,1,TRUE,Baker,primary,1.06445798922692,1.06445798922692
+Taurotragus oryx,locomotion,Angular_utilization_index_FL,percent,72.5714285714286,72.5714285714286,1,1,1,TRUE,Medina,primary,72.5714285714286,72.5714285714286
+Taurotragus oryx,locomotion,Angular_utilization_index_HL,percent,53.8372093023256,53.8372093023256,1,1,1,TRUE,Medina,primary,53.8372093023256,53.8372093023256
+Taurotragus oryx,locomotion,Limb_posture,category,Unguligrade,,1,1,1,TRUE,Medina,primary,,
+Taurotragus oryx,locomotion,Locomotor_habit,category,Cursorial,,1,1,1,TRUE,Medina,primary,,
+Taurotragus oryx,locomotion,Top_speed,category,Medium,,1,1,1,TRUE,Medina,primary,,
 Teilhardina belgica,manipulation,Tool_use,category,0,,1,1,0,FALSE,Baker,secondary,,
 Teilhardina belgica,hand_morphology,log10_dp3_mm,log10 mm,0.298853076409707,0.298853076409707,1,1,1,TRUE,Baker,primary,0.298853076409707,0.298853076409707
 Teilhardina belgica,hand_morphology,log10_ip3_mm,log10 mm,0.7481880270062,0.7481880270062,1,1,1,TRUE,Baker,primary,0.7481880270062,0.7481880270062
@@ -4761,6 +5096,11 @@ Trichosurus vulpecula,gait,Foot_Posture,category,plantigrade,,1,1,1,TRUE,Wimberl
 Trichosurus vulpecula,gait,Gait,category,DSDC,,1,1,1,TRUE,Wimberly,primary,,
 Trichosurus vulpecula,gait,Phase,percent,66.97199999999999,66.972,1,1,1,TRUE,Wimberly,primary,66.972,66.972
 Tupaia belangeri,dexterity,Dexterity,1-7 scale,3,3,2,2,1,TRUE,Heffner; Iwaniuk,primary; secondary,3,3
+Tupaia glis,locomotion,Angular_utilization_index_FL,percent,55.2736842105263,55.2736842105263,1,1,1,TRUE,Medina,primary,55.2736842105263,55.2736842105263
+Tupaia glis,locomotion,Angular_utilization_index_HL,percent,37.24422764227644,37.2442276422764,1,1,1,TRUE,Medina,primary,37.2442276422764,37.2442276422764
+Tupaia glis,locomotion,Limb_posture,category,Plantigrade,,1,1,1,TRUE,Medina,primary,,
+Tupaia glis,locomotion,Locomotor_habit,category,Arboreal,,1,1,1,TRUE,Medina,primary,,
+Tupaia glis,locomotion,Top_speed,category,Slow,,1,1,1,TRUE,Medina,primary,,
 Tupaia minor,locomotion,Locomotor_diversity_index,index,1.16912339604188,1.16912339604188,1,1,1,TRUE,Granatosky,primary,1.16912339604188,1.16912339604188
 Tupaia tana,gait,Duty_Factor,percent,64.62,64.62,1,1,1,TRUE,Wimberly,primary,64.62,64.62
 Tupaia tana,gait,Foot_Posture,category,digitigrade,,1,1,1,TRUE,Wimberly,primary,,
@@ -4771,14 +5111,24 @@ Ursus americanus,gait,Duty_Factor,percent,67,67,1,1,1,TRUE,Wimberly,primary,67,6
 Ursus americanus,gait,Foot_Posture,category,plantigrade,,1,1,1,TRUE,Wimberly,primary,,
 Ursus americanus,gait,Gait,category,LSLC,,1,1,1,TRUE,Wimberly,primary,,
 Ursus americanus,gait,Phase,percent,18,18,1,1,1,TRUE,Wimberly,primary,18,18
+Ursus arctos,locomotion,Angular_utilization_index_FL,percent,36.5486725663717,36.5486725663717,1,1,1,TRUE,Medina,primary,36.5486725663717,36.5486725663717
+Ursus arctos,locomotion,Angular_utilization_index_HL,percent,65.3623188405797,65.3623188405797,1,1,1,TRUE,Medina,primary,65.3623188405797,65.3623188405797
 Ursus arctos,gait,Duty_Factor,percent,65,65,1,1,1,TRUE,Wimberly,primary,65,65
 Ursus arctos,gait,Foot_Posture,category,plantigrade,,1,1,1,TRUE,Wimberly,primary,,
 Ursus arctos,gait,Gait,category,LSLC,,1,1,1,TRUE,Wimberly,primary,,
+Ursus arctos,locomotion,Limb_posture,category,Plantigrade,,1,1,1,TRUE,Medina,primary,,
+Ursus arctos,locomotion,Locomotor_habit,category,Terrestrial,,1,1,1,TRUE,Medina,primary,,
 Ursus arctos,gait,Phase,percent,17,17,1,1,1,TRUE,Wimberly,primary,17,17
+Ursus arctos,locomotion,Top_speed,category,Fast,,1,1,1,TRUE,Medina,primary,,
+Ursus maritimus,locomotion,Angular_utilization_index_FL,percent,71.2,71.2,1,1,1,TRUE,Medina,primary,71.2,71.2
+Ursus maritimus,locomotion,Angular_utilization_index_HL,percent,51.380042462845,51.380042462845,1,1,1,TRUE,Medina,primary,51.380042462845,51.380042462845
 Ursus maritimus,gait,Duty_Factor,percent,68,68,1,1,1,TRUE,Wimberly,primary,68,68
 Ursus maritimus,gait,Foot_Posture,category,plantigrade,,1,1,1,TRUE,Wimberly,primary,,
 Ursus maritimus,gait,Gait,category,LSLC,,1,1,1,TRUE,Wimberly,primary,,
+Ursus maritimus,locomotion,Limb_posture,category,Plantigrade,,1,1,1,TRUE,Medina,primary,,
+Ursus maritimus,locomotion,Locomotor_habit,category,Cursorial,,1,1,1,TRUE,Medina,primary,,
 Ursus maritimus,gait,Phase,percent,16,16,1,1,1,TRUE,Wimberly,primary,16,16
+Ursus maritimus,locomotion,Top_speed,category,Medium,,1,1,1,TRUE,Medina,primary,,
 Varecia rubra,manipulation,Extractive_foraging,category,0,,1,1,1,TRUE,Heldstab,primary,,
 Varecia rubra,manipulation,Manipulation_complexity,score,1.33,1.33,1,1,1,TRUE,Heldstab,primary,1.33,1.33
 Varecia rubra,manipulation,Tool_use,category,0,,1,1,1,TRUE,Heldstab,primary,,
@@ -4814,10 +5164,20 @@ Varecia variegata rubra,locomotion,Locomotor_diversity_index,index,1.49699401198
 Vicugna pacos,gait,Duty_Factor,percent,55.80683333,55.80683333,1,1,1,TRUE,Wimberly,primary,55.80683333,55.80683333
 Vicugna pacos,gait,Gait,category,LSLC,,1,1,1,TRUE,Wimberly,primary,,
 Vicugna pacos,gait,Phase,percent,12.92514634,12.92514634,1,1,1,TRUE,Wimberly,primary,12.92514634,12.92514634
+Vombatus ursinus,locomotion,Angular_utilization_index_FL,percent,66.4655172413793,66.4655172413793,1,1,1,TRUE,Medina,primary,66.4655172413793,66.4655172413793
+Vombatus ursinus,locomotion,Angular_utilization_index_HL,percent,48.6259541984733,48.6259541984733,1,1,1,TRUE,Medina,primary,48.6259541984733,48.6259541984733
 Vombatus ursinus,gait,Duty_Factor,percent,67.33333333,67.33333333,1,1,1,TRUE,Wimberly,primary,67.33333333,67.33333333
 Vombatus ursinus,gait,Foot_Posture,category,plantigrade,,1,1,1,TRUE,Wimberly,primary,,
 Vombatus ursinus,gait,Gait,category,LSLC,,1,1,1,TRUE,Wimberly,primary,,
+Vombatus ursinus,locomotion,Limb_posture,category,Plantigrade,,1,1,1,TRUE,Medina,primary,,
+Vombatus ursinus,locomotion,Locomotor_habit,category,Terrestrial,,1,1,1,TRUE,Medina,primary,,
 Vombatus ursinus,gait,Phase,percent,22.41667,22.41667,1,1,1,TRUE,Wimberly,primary,22.41667,22.41667
+Vombatus ursinus,locomotion,Top_speed,category,Medium,,1,1,1,TRUE,Medina,primary,,
+Vulpes lagopus,locomotion,Angular_utilization_index_FL,percent,61.4814814814815,61.4814814814815,1,1,1,TRUE,Medina,primary,61.4814814814815,61.4814814814815
+Vulpes lagopus,locomotion,Angular_utilization_index_HL,percent,44.5121951219512,44.5121951219512,1,1,1,TRUE,Medina,primary,44.5121951219512,44.5121951219512
+Vulpes lagopus,locomotion,Limb_posture,category,Digitigrade,,1,1,1,TRUE,Medina,primary,,
+Vulpes lagopus,locomotion,Locomotor_habit,category,Cursorial,,1,1,1,TRUE,Medina,primary,,
+Vulpes lagopus,locomotion,Top_speed,category,Medium,,1,1,1,TRUE,Medina,primary,,
 Vulpes vulpes,gait,Duty_Factor,percent,63.69606004,63.69606004,1,1,1,TRUE,Wimberly,primary,63.69606004,63.69606004
 Vulpes vulpes,gait,Foot_Posture,category,digitigrade,,1,1,1,TRUE,Wimberly,primary,,
 Vulpes vulpes,gait,Gait,category,LSDC,,1,1,1,TRUE,Wimberly,primary,,

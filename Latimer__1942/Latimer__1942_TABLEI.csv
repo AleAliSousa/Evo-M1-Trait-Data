@@ -1,0 +1,25 @@
+Species,species_as_published,sex,n,structure_as_published,measure,value_mean_mg,value_se_mg,value_mean_cm,value_se_cm,cv_pct,cv_se_pct,source_location,data_role
+Canis lupus familiaris,dog,male,162,Brain,mass,76918,580,,,14.24,0.54,"Table I panel A, p. 43",primary
+Canis lupus familiaris,dog,male,162,Olfactory bulbs,mass,1542,17,,,21.41,0.84,"Table I panel A, p. 43",primary
+Canis lupus familiaris,dog,male,162,Hemispheres and dien.,mass,61975,480,,,14.61,0.56,"Table I panel A, p. 43",primary
+Canis lupus familiaris,dog,male,162,Prosencephalon,mass,63517,492,,,14.62,0.56,"Table I panel A, p. 43",primary
+Canis lupus familiaris,dog,male,162,Mesencephalon,mass,2045,18,,,16.31,0.63,"Table I panel A, p. 43",primary
+Canis lupus familiaris,dog,male,162,Cerebellum,mass,7369,61,,,15.59,0.6,"Table I panel A, p. 43",primary
+Canis lupus familiaris,dog,male,162,Medulla,mass,3986,36,,,16.94,0.65,"Table I panel A, p. 43",primary
+Canis lupus familiaris,dog,male,162,Rhombencephalon,mass,11355,91,,,15.12,0.58,"Table I panel A, p. 43",primary
+Canis lupus familiaris,dog,male,162,Cord weight,mass,14437,181,,,23.63,0.94,"Table I panel A, p. 43",primary
+Canis lupus familiaris,dog,male,162,Cord length,length,,,51.09,0.37,13.41,0.52,"Table I panel A, p. 43",primary
+Canis lupus familiaris,dog,male,162,Body weight,mass,11000000,260000,,,44.75,1.98,"Table I panel A, p. 43",primary
+Canis lupus familiaris,dog,male,162,Body length,length,,,81.9,0.58,13.4,0.51,"Table I panel A, p. 43",primary
+Canis lupus familiaris,dog,female,159,Brain,mass,73000,570,,,14.6,0.56,"Table I panel A, p. 43",primary
+Canis lupus familiaris,dog,female,159,Olfactory bulbs,mass,1473,18,,,23.31,0.93,"Table I panel A, p. 43",primary
+Canis lupus familiaris,dog,female,159,Hemispheres and dien.,mass,58967,477,,,15.13,0.59,"Table I panel A, p. 43",primary
+Canis lupus familiaris,dog,female,159,Prosencephalon,mass,60438,491,,,15.18,0.59,"Table I panel A, p. 43",primary
+Canis lupus familiaris,dog,female,159,Mesencephalon,mass,1915,14,,,13.52,0.52,"Table I panel A, p. 43",primary
+Canis lupus familiaris,dog,female,159,Cerebellum,mass,6954,53,,,14.2,0.55,"Table I panel A, p. 43",primary
+Canis lupus familiaris,dog,female,159,Medulla,mass,3691,35,,,17.65,0.69,"Table I panel A, p. 43",primary
+Canis lupus familiaris,dog,female,159,Rhombencephalon,mass,10645,83,,,14.51,0.56,"Table I panel A, p. 43",primary
+Canis lupus familiaris,dog,female,159,Cord weight,mass,12955,180,,,25.95,1.05,"Table I panel A, p. 43",primary
+Canis lupus familiaris,dog,female,159,Cord length,length,,,48.02,0.4,15.33,0.61,"Table I panel A, p. 43",primary
+Canis lupus familiaris,dog,female,159,Body weight,mass,8930000,220000,,,46.13,2.08,"Table I panel A, p. 43",primary
+Canis lupus familiaris,dog,female,159,Body length,length,,,76.8,0.61,14.77,0.57,"Table I panel A, p. 43",primary

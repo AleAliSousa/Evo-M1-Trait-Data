@@ -97,7 +97,11 @@ name_correct <- c(
   "Sanguinus midas"          = "Saguinus midas",
   "Sanguinus oedipus"        = "Saguinus oedipus",
   "Pithecus monachus"        = "Pithecia monachus",
-  "Lagothix lagathricha"     = "Lagothix lagothricha",
+  ## The published binomial misspells BOTH parts: the genus is Lagothrix (the r
+  ## was missing) and the epithet lagothricha. An earlier pass corrected only the
+  ## epithet and left "Lagothix", so the row could not be matched to the repo
+  ## canonical name (_keys/species_reference.csv line 95, _keys/Stephan/species_key.csv).
+  "Lagothix lagathricha"     = "Lagothrix lagothricha",
   "Loris tardigradius"       = "Loris tardigradus"
 )
 for (i in seq_along(name_correct)) {

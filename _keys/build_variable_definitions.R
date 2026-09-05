@@ -157,7 +157,17 @@ XW <- rbind(
   # (the merge pools several source columns onto each; see body_ecology_compiled.R
   # LIFE). The Lewitus column is the one that carries a printed definition.
   c("Gestation (days)",                                    "Gestation_days",                  "Lewitus"),
-  c("Female_sexual_maturity (days)",                       "Female_sexual_maturity_days",     "Lewitus"))
+  c("Female_sexual_maturity (days)",                       "Female_sexual_maturity_days",     "Lewitus"),
+  # locomotion measures the behaviour merge renamed off Medina-Gonzalez's column
+  # names. The source's own definitions file carries the meaning of each (the AUI
+  # ones give the formula), so the definition should come from there rather than
+  # being composed from the label. The folder pattern stops before the accented
+  # character on purpose: macOS stores the folder name decomposed (o + combining
+  # acute) while an R source literal is composed, and the match is fixed = TRUE.
+  c("Angular_utilization_index_FL (percent)", "FL_Angular_Excursion_Efficiency_pct", "MedinaGonz"),
+  c("Angular_utilization_index_HL (percent)", "HL_Angular_Excursion_Efficiency_pct", "MedinaGonz"),
+  c("Limb_posture (category)",                "Posture",                             "MedinaGonz"),
+  c("Top_speed (category)",                   "Top_speed_class",                     "MedinaGonz"))
 colnames(XW) <- c("label", "code", "folder")
 XW <- as.data.frame(XW, stringsAsFactors = FALSE)
 
@@ -256,9 +266,13 @@ res <- lapply(seq_len(nrow(dom)), function(i) {
     }
   }
 
+  # poolable_group is passed straight through from variable_domain.csv. The app reads
+  # THIS file, not variable_domain.csv, so a column that stops here never reaches the
+  # tooltips or the Plot tab's incompatible-basis warning.
   data.frame(label = lab, domain = r$domain, measure_class = r$measure_class,
              Structure = r$canonical_structure, Measure = r$Measure, Unit = r$Unit,
              is_measurement = r$is_measurement,
+             poolable_group = if ("poolable_group" %in% names(r)) r$poolable_group else "",
              definition = defn, definition_kind = kind, definition_source = src,
              matched_code = code, glossary_terms = paste(tms, collapse = "|"),
              stringsAsFactors = FALSE)

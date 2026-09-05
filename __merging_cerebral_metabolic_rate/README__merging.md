@@ -13,16 +13,39 @@ measure class.
 
 ## Measures
 
-| Measure | Meaning | Unit (project standard) |
-|---|---|---|
-| `CMRgl`  | cerebral metabolic rate for glucose | µmol / 100 g / min |
-| `CMRO2`  | cerebral metabolic rate for oxygen  | µmol / 100 g / min |
-| `CBF`    | cerebral blood flow (perfusion)     | mL / 100 g / min |
+Two **measure classes** are emitted, tagged in the `measure_class` column. They are never
+pooled with, or averaged against, each other.
+
+### Mass-specific rates — `cerebral_metabolic_rate`, `cerebral_perfusion`
+
+| Measure | Meaning | Unit (project standard) | Species |
+|---|---|---|---|
+| `CMRgl`  | cerebral metabolic rate for glucose | µmol / 100 g / min | 14 |
+| `CMRO2`  | cerebral metabolic rate for oxygen  | µmol / 100 g / min | 9 |
+| `CBF`    | cerebral blood flow (perfusion)     | mL / 100 g / min | 10 |
 
 Karbowski reports CMRgl/CMRO2 per **gram**; the build multiplies by 100 to reach the
-per-100 g project standard. Karbowski's whole-brain *absolute* totals
-(`Total_glucose_utilization` µmol/min, `Total_O2_consumption` mL/min) are a different
-measure class and are **not** merged (they remain in the source tables for provenance).
+per-100 g project standard.
+
+### Absolute whole-brain totals — `cerebral_absolute_rate`
+
+| Measure | Meaning | Unit | Species |
+|---|---|---|---|
+| `Total_glucose_utilization` | whole-brain glucose use | µmol / min | 10 |
+| `Total_O2_consumption`      | whole-brain oxygen use  | mL / min   | 7 |
+
+Printed by Karbowski Tables S1/S2, whole brain only, one row per primary reference. These
+are **derived** quantities — that paper's own mass-specific rate × brain mass — reported by
+Karbowski alone, so they are *not independent* of the rates above and must never be averaged
+against them. They are carried because absolute whole-brain glucose and oxygen use is the
+quantity that compares directly against whole-body BMR (`__merging_body_ecology`,
+`BMR_wholeanimal` mL O2/h) and against the fossil-hominin BGU estimates in
+`__merging_fossil_brain_glucose` (same unit, µmol/min). They are already whole-brain
+quantities and are **not** rescaled.
+
+An earlier version of this merge excluded them on the grounds that they are a different
+measure class. They are — hence the separate `measure_class` value, which is what keeps the
+pooling apart, rather than dropping the data.
 
 ## Sources and their data role
 
@@ -75,7 +98,9 @@ Conscious and unknown-state rows are kept. All rows, including anesthetized, sta
 ## Outputs
 
 - **`cerebral_metabolic_rate_long.csv`** — one row per Species × Region × Measure:
-  `Species, Region, Measure, Units, Value, n_studies, Compilations, Volume_term`.
+  `Species, Region, Measure, measure_class, Units, Value, n_studies, Compilations, Volume_term`.
+  `measure_class` is what keeps the mass-specific rates and the absolute whole-brain totals
+  apart; do not aggregate across it.
   `Volume_term` links to the matching `*_Vol.mm3` term in `__merging_volumes` where one clean
   counterpart exists (else NA), for downstream metabolism-vs-size analysis.
 - **`cerebral_metabolic_rate_wide.csv`** — one row per species, one column per `Region__Measure`.
@@ -84,8 +109,38 @@ Conscious and unknown-state rows are kept. All rows, including anesthetized, sta
 - **`cerebral_metabolic_rate_dedupe_report.csv`** — the shared primary studies removed to avoid double-counting.
 - **`cerebral_metabolic_rate_source_species_ids.csv`** — printed label → accepted species crosswalk.
 
-Coverage: **246 merged cells · 16 species · 39 regions** (CMRgl broadest; CMRO2/CBF mainly
-Kaufman; regional richness mainly Karbowski + Kaufman; *Homo* the only species in all three).
+Coverage: **263 merged cells · 16 species · 39 regions** — 214 mass-specific rate cells,
+32 perfusion, 17 absolute whole-brain totals (11 species). CMRgl broadest; CMRO2/CBF mainly
+Kaufman; regional richness mainly Karbowski + Kaufman; *Homo* the only species in all three.
+
+### Rounding, and three cells that moved by 0.001
+
+The 246 rate cells reproduce the previously shipped values except for **three**, each 0.001
+higher: *Homo sapiens* thalamus CBF (54.238), *Macaca mulatta* thalamus CMRgl (44.313) and
+*Mus musculus* neocortex CMRgl (94.863). All three are 8-study means that land exactly on a
+`.0005` decimal boundary, and the old values were not stable: they came from naive float
+accumulation, whose last bit — and therefore the third decimal — depended on the order the
+source files happened to be read in.
+
+Two changes make the output deterministic:
+
+- **The mean** is accumulated with `math.fsum`, which returns the exactly-rounded sum
+  whatever the order the study values arrive in. R's `sum()` agrees with it bit for bit on
+  these data (verified by running both builders).
+- **The rounding** is an explicit shared rule, `round3()`, written out identically in both
+  builders: format to 9 decimal places with C `printf`, then round half away from zero at the
+  4th decimal using exact integer arithmetic.
+
+`round3()` exists because *neither language's native rounding would do*. Python's `round()`
+rounds the stored double, so 73.2074999… → 73.207; R's `round()` rounds the shortest decimal
+you would print, so 73.2075 → 73.208. Both are defensible, they disagree on a few percent of
+multi-study means, and the twins would have silently diverged. The shared rule was checked
+against 200,000 simulated multi-study means with **zero** R-versus-Python disagreements, and
+running both builders on the real data now gives **263 identical cells with no differing
+column**.
+
+The residual double-rounding window in `round3()` is 5 × 10⁻¹⁰ wide — six orders of magnitude
+below the two or three decimals the sources actually print.
 
 ## Species harmonisation
 

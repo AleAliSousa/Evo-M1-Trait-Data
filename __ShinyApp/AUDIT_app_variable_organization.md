@@ -90,6 +90,52 @@ assigned fresh.
 Nothing about the data changed: the baseline row count is identical at 109,248
 values over 5,797 species.
 
+### Update — metabolism and the brain-size basis split
+
+Two datasets were added and one variable was split, taking the app from 390 to
+**456 live labels** (110,698 values) with 6 unclassified — all six pre-existing
+and none of them new (`Angular_utilization_index_FL/HL`, `Limb_posture`,
+`Locomotor_habit`, `Meninges_hypophysis_nerves_etc_Vol.mm3`, `Top_speed`).
+
+**`metabolism` went from 2 labels to 62.** Body metabolic rate was already there
+(`BMR_wholeanimal` mL O2/h and `BMR_massspecific` mL O2/h/g, 842 species, from
+`__merging_body_ecology`); what was missing was cerebral energetics.
+`__merging_cerebral_metabolic_rate` is now registered — 60 labels of the form
+`<Region>_<Measure> (<unit>)` over whole brain and 38 regions — and the domain
+holds four measure classes that sit together without becoming poolable:
+
+| Measure class | What it is | Labels |
+|---|---|---|
+| `metabolic (body)` | whole-animal and mass-specific BMR | 2 |
+| `cerebral_metabolic_rate` | CMRgl, CMRO2 per 100 g | 51 |
+| `cerebral_perfusion` | CBF per 100 g | 7 |
+| `cerebral_absolute_rate` | whole-brain glucose (µmol/min) and oxygen (mL/min) totals | 2 |
+
+The absolute-rate class is the one that connects the two halves of the domain:
+it is in the same units as whole-body BMR is comparable against, and in the same
+unit (µmol/min) as the fossil-hominin BGU estimates in
+`__merging_fossil_brain_glucose`. It is a *derived* quantity (Karbowski's own
+mass-specific rate × brain mass) and therefore not independent of the rates, which
+is exactly why it is a separate measure class rather than more rows in the same one.
+
+**`Brain_Mass (g)` no longer exists.** It pooled weighed masses, masses excluding
+the olfactory bulbs, and compilations mixing masses with volumes converted at
+1 cm³ = 1 g, into one number for 1,669 species — 80% of which rested entirely on
+the mixed-basis sources. It is replaced by five parallel variables plus a new
+endocranial-volume dataset, none pooled with another. The fifth,
+`Brain_Mass_from_volume_or_ecv (g)`, exists because Weaver 2001's "brain mass" is
+back-calculated from a brain volume — or, for fossils, from an endocranial volume —
+so it is not a weighed mass at all. The reasoning, the quoted
+source definitions and the disagreement numbers are in
+`../AUDIT_brain_size_compatibility.md`.
+
+`variable_domain.csv` gained a **`poolable_group`** column for this, and
+`build_variable_definitions.R` passes it through — the app reads
+`variable_definitions.csv`, not `variable_domain.csv`, so a column that stops at
+the domain key never reaches the UI. Every variable tooltip now ends with a
+"Measurement basis:" line, and the Plot tab warns, naming both bases, when the two
+axes carry different non-empty groups.
+
 Seven labels in `variable_domain.csv` are flagged `is_measurement = FALSE` —
 three provenance strings (`Species_Kazu2015`, `Species_as_printed`,
 `species_basis`) and four QC flags (`body_mass_approximate`,
@@ -148,7 +194,13 @@ Authored keys (reviewable in the repo, not buried in app code):
 
 - `_keys/glossary.csv` — term, expansion, definition, kind, `common`, source.
 - `_keys/variable_domain.csv` — label to domain / measure class / Structure /
-  Measure / Unit / `is_measurement`.
+  Measure / Unit / `is_measurement` / `poolable_group`.
+- `_keys/brain_size_basis.csv` — **generated** by `_keys/build_brain_size_basis.py`;
+  per (paper, column) measurement basis, what is included, the `poolable_group` the app
+  groups by, and the source's own words that establish it. Edit the `ASSIGN` /
+  `SOURCE_STATEMENTS` tables in the builder, not the CSV, then run
+  `_keys/verify_source_statements.py` — it re-extracts each paper's PDF and fails if a
+  statement attributed to a paper is not verbatim in it.
 - `_keys/variable_definitions.csv` — **generated**; do not hand-edit.
 
 Scripts:

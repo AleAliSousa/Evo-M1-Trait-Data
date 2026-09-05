@@ -1,18 +1,49 @@
 Species,species_as_published,canonical_structure,structure_as_published,mass_mg,mass_g,mass_se_mg,n,sex,unit_original,conversion_factor_to_mg,role,derivation,source,citation,mapping_gap
-Canis lupus familiaris,dog,OlfactoryBulb,Olfactory bulbs,1542.0,1.542,17.0,162.0,male,mg,1,primary,measured,Latimer__1942_Table1_brain.csv,Latimer (1942),
-Canis lupus familiaris,dog,,Hemispheres and dien.,61975.0,61.975,480.0,162.0,male,mg,1,primary,measured,Latimer__1942_Table1_brain.csv,Latimer (1942),no canonical structure yet for 'Hemispheres and dien.'
-Canis lupus familiaris,dog,,Prosencephalon,63517.0,63.517,492.0,162.0,male,mg,1,primary,measured,Latimer__1942_Table1_brain.csv,Latimer (1942),no canonical structure yet for 'Prosencephalon'
-Canis lupus familiaris,dog,Mesencephalon,Mesencephalon,2045.0,2.045,18.0,162.0,male,mg,1,primary,measured,Latimer__1942_Table1_brain.csv,Latimer (1942),
-Canis lupus familiaris,dog,Cerebellum,Cerebellum,7369.0,7.369,61.0,162.0,male,mg,1,primary,measured,Latimer__1942_Table1_brain.csv,Latimer (1942),
-Canis lupus familiaris,dog,Medulla,Medulla,3986.0,3.986,36.0,162.0,male,mg,1,primary,measured,Latimer__1942_Table1_brain.csv,Latimer (1942),
-Canis lupus familiaris,dog,,Rhombencephalon,11355.0,11.355,91.0,162.0,male,mg,1,primary,measured,Latimer__1942_Table1_brain.csv,Latimer (1942),no canonical structure yet for 'Rhombencephalon'
-Canis lupus familiaris,dog,OlfactoryBulb,Olfactory bulbs,1473.0,1.473,18.0,159.0,female,mg,1,primary,measured,Latimer__1942_Table1_brain.csv,Latimer (1942),
-Canis lupus familiaris,dog,,Hemispheres and dien.,58967.0,58.967,477.0,159.0,female,mg,1,primary,measured,Latimer__1942_Table1_brain.csv,Latimer (1942),no canonical structure yet for 'Hemispheres and dien.'
-Canis lupus familiaris,dog,,Prosencephalon,60438.0,60.438,491.0,159.0,female,mg,1,primary,measured,Latimer__1942_Table1_brain.csv,Latimer (1942),no canonical structure yet for 'Prosencephalon'
-Canis lupus familiaris,dog,Mesencephalon,Mesencephalon,1915.0,1.915,14.0,159.0,female,mg,1,primary,measured,Latimer__1942_Table1_brain.csv,Latimer (1942),
-Canis lupus familiaris,dog,Cerebellum,Cerebellum,6954.0,6.954,53.0,159.0,female,mg,1,primary,measured,Latimer__1942_Table1_brain.csv,Latimer (1942),
-Canis lupus familiaris,dog,Medulla,Medulla,3691.0,3.691,35.0,159.0,female,mg,1,primary,measured,Latimer__1942_Table1_brain.csv,Latimer (1942),
-Canis lupus familiaris,dog,,Rhombencephalon,10645.0,10.645,83.0,159.0,female,mg,1,primary,measured,Latimer__1942_Table1_brain.csv,Latimer (1942),no canonical structure yet for 'Rhombencephalon'
+Canis lupus familiaris,dog,OlfactoryBulb,Olfactory bulbs,1542.0,1.542,17.0,162.0,male,mg,1,primary,measured,Latimer__1942_TABLEI.csv,Latimer (1942),
+Canis lupus familiaris,dog,,Hemispheres and dien.,61975.0,61.975,480.0,162.0,male,mg,1,primary,measured,Latimer__1942_TABLEI.csv,Latimer (1942),no canonical structure yet for 'Hemispheres and dien.'
+Canis lupus familiaris,dog,,Prosencephalon,63517.0,63.517,492.0,162.0,male,mg,1,primary,measured,Latimer__1942_TABLEI.csv,Latimer (1942),no canonical structure yet for 'Prosencephalon'
+Canis lupus familiaris,dog,Mesencephalon,Mesencephalon,2045.0,2.045,18.0,162.0,male,mg,1,primary,measured,Latimer__1942_TABLEI.csv,Latimer (1942),
+Canis lupus familiaris,dog,Cerebellum,Cerebellum,7369.0,7.369,61.0,162.0,male,mg,1,primary,measured,Latimer__1942_TABLEI.csv,Latimer (1942),
+Canis lupus familiaris,dog,Medulla,Medulla,3986.0,3.986,36.0,162.0,male,mg,1,primary,measured,Latimer__1942_TABLEI.csv,Latimer (1942),
+Canis lupus familiaris,dog,,Rhombencephalon,11355.0,11.355,91.0,162.0,male,mg,1,primary,measured,Latimer__1942_TABLEI.csv,Latimer (1942),no canonical structure yet for 'Rhombencephalon'
+Canis lupus familiaris,dog,SpinalCord,Cord weight,14437.0,14.437,181.0,162.0,male,mg,1,primary,measured,Latimer__1942_TABLEI.csv,Latimer (1942),
+Canis lupus familiaris,dog,OlfactoryBulb,Olfactory bulbs,1473.0,1.473,18.0,159.0,female,mg,1,primary,measured,Latimer__1942_TABLEI.csv,Latimer (1942),
+Canis lupus familiaris,dog,,Hemispheres and dien.,58967.0,58.967,477.0,159.0,female,mg,1,primary,measured,Latimer__1942_TABLEI.csv,Latimer (1942),no canonical structure yet for 'Hemispheres and dien.'
+Canis lupus familiaris,dog,,Prosencephalon,60438.0,60.438,491.0,159.0,female,mg,1,primary,measured,Latimer__1942_TABLEI.csv,Latimer (1942),no canonical structure yet for 'Prosencephalon'
+Canis lupus familiaris,dog,Mesencephalon,Mesencephalon,1915.0,1.915,14.0,159.0,female,mg,1,primary,measured,Latimer__1942_TABLEI.csv,Latimer (1942),
+Canis lupus familiaris,dog,Cerebellum,Cerebellum,6954.0,6.954,53.0,159.0,female,mg,1,primary,measured,Latimer__1942_TABLEI.csv,Latimer (1942),
+Canis lupus familiaris,dog,Medulla,Medulla,3691.0,3.691,35.0,159.0,female,mg,1,primary,measured,Latimer__1942_TABLEI.csv,Latimer (1942),
+Canis lupus familiaris,dog,,Rhombencephalon,10645.0,10.645,83.0,159.0,female,mg,1,primary,measured,Latimer__1942_TABLEI.csv,Latimer (1942),no canonical structure yet for 'Rhombencephalon'
+Canis lupus familiaris,dog,SpinalCord,Cord weight,12955.0,12.955,180.0,159.0,female,mg,1,primary,measured,Latimer__1942_TABLEI.csv,Latimer (1942),
+Frog,Frog,,BrainStem,49.0,0.049,,,,mg,1,primary,measured,Latimer__1956_Table2.csv,Latimer (1956),no canonical structure yet for 'BrainStem' | no binomial given in source for this taxon
+Frog,Frog,,Prosencephalon,48.0,0.048,,,,mg,1,primary,measured,Latimer__1956_Table2.csv,Latimer (1956),no canonical structure yet for 'Prosencephalon' | no binomial given in source for this taxon
+Gallus gallus,Chicken,,BrainStem,1110.0,1.11,,,,mg,1,primary,measured,Latimer__1956_Table2.csv,Latimer (1956),no canonical structure yet for 'BrainStem'
+Gallus gallus,Chicken,,Prosencephalon,1830.0,1.83,,,,mg,1,primary,measured,Latimer__1956_Table2.csv,Latimer (1956),no canonical structure yet for 'Prosencephalon'
+Gallus gallus,Chicken,Cerebellum,Cerebellum,460.0,0.46,,,,mg,1,primary,measured,Latimer__1956_Table2.csv,Latimer (1956),
+Turtle,Turtle,,BrainStem,197.0,0.197,,,,mg,1,primary,measured,Latimer__1956_Table2.csv,Latimer (1956),no canonical structure yet for 'BrainStem' | no binomial given in source for this taxon
+Turtle,Turtle,,Prosencephalon,491.0,0.491,,,,mg,1,primary,measured,Latimer__1956_Table2.csv,Latimer (1956),no canonical structure yet for 'Prosencephalon' | no binomial given in source for this taxon
+Turtle,Turtle,Cerebellum,Cerebellum,38.0,0.038,,,,mg,1,primary,measured,Latimer__1956_Table2.csv,Latimer (1956), | no binomial given in source for this taxon
+Rattus norvegicus,Rat,,BrainStem,337.0,0.337,,,,mg,1,secondary,secondary citation: Donaldson (1924),Latimer__1956_Table2.csv,Latimer (1956),no canonical structure yet for 'BrainStem'
+Rattus norvegicus,Rat,,Prosencephalon,1198.0,1.198,,,,mg,1,secondary,secondary citation: Donaldson (1924),Latimer__1956_Table2.csv,Latimer (1956),no canonical structure yet for 'Prosencephalon'
+Rattus norvegicus,Rat,Cerebellum,Cerebellum,244.0,0.244,,,,mg,1,secondary,secondary citation: Donaldson (1924),Latimer__1956_Table2.csv,Latimer (1956),
+Oryctolagus cuniculus,Rabbit,,BrainStem,1642.0,1.642,,,,mg,1,primary,measured,Latimer__1956_Table2.csv,Latimer (1956),no canonical structure yet for 'BrainStem'
+Oryctolagus cuniculus,Rabbit,,Prosencephalon,6118.0,6.118,,,,mg,1,primary,measured,Latimer__1956_Table2.csv,Latimer (1956),no canonical structure yet for 'Prosencephalon'
+Oryctolagus cuniculus,Rabbit,Cerebellum,Cerebellum,1381.0,1.381,,,,mg,1,primary,measured,Latimer__1956_Table2.csv,Latimer (1956),
+Cavia porcellus,Guinea pig,,BrainStem,671.0,0.671,,,,mg,1,primary,measured,Latimer__1956_Table2.csv,Latimer (1956),no canonical structure yet for 'BrainStem'
+Cavia porcellus,Guinea pig,,Prosencephalon,2803.0,2.803,,,,mg,1,primary,measured,Latimer__1956_Table2.csv,Latimer (1956),no canonical structure yet for 'Prosencephalon'
+Cavia porcellus,Guinea pig,Cerebellum,Cerebellum,532.0,0.532,,,,mg,1,primary,measured,Latimer__1956_Table2.csv,Latimer (1956),
+Felis catus,Cat,,BrainStem,2980.0,2.98,,,,mg,1,primary,measured,Latimer__1956_Table2.csv,Latimer (1956),no canonical structure yet for 'BrainStem'
+Felis catus,Cat,,Prosencephalon,20610.0,20.61,,,,mg,1,primary,measured,Latimer__1956_Table2.csv,Latimer (1956),no canonical structure yet for 'Prosencephalon'
+Felis catus,Cat,Cerebellum,Cerebellum,3960.0,3.96,,,,mg,1,primary,measured,Latimer__1956_Table2.csv,Latimer (1956),
+Canis lupus familiaris,Dog,,BrainStem,6030.0,6.03,,,,mg,1,primary,measured,Latimer__1956_Table2.csv,Latimer (1956),no canonical structure yet for 'BrainStem'
+Canis lupus familiaris,Dog,,Prosencephalon,63520.0,63.52,,,,mg,1,primary,measured,Latimer__1956_Table2.csv,Latimer (1956),no canonical structure yet for 'Prosencephalon'
+Canis lupus familiaris,Dog,Cerebellum,Cerebellum,7370.0,7.37,,,,mg,1,primary,measured,Latimer__1956_Table2.csv,Latimer (1956),
+Papio anubis,Baboon,,BrainStem,3910.0,3.91,,,,mg,1,secondary,secondary citation: Riese & Riese (1952),Latimer__1956_Table2.csv,Latimer (1956),no canonical structure yet for 'BrainStem'
+Papio anubis,Baboon,,Prosencephalon,142140.0,142.14,,,,mg,1,secondary,secondary citation: Riese & Riese (1952),Latimer__1956_Table2.csv,Latimer (1956),no canonical structure yet for 'Prosencephalon'
+Papio anubis,Baboon,Cerebellum,Cerebellum,15490.0,15.49,,,,mg,1,secondary,secondary citation: Riese & Riese (1952),Latimer__1956_Table2.csv,Latimer (1956),
+Homo sapiens,Man,,BrainStem,27000.0,27.0,,,,mg,1,secondary,secondary citation: Donaldson (1909),Latimer__1956_Table2.csv,Latimer (1956),no canonical structure yet for 'BrainStem'
+Homo sapiens,Man,,Prosencephalon,1164000.0,1164.0,,,,mg,1,secondary,secondary citation: Donaldson (1909),Latimer__1956_Table2.csv,Latimer (1956),no canonical structure yet for 'Prosencephalon'
+Homo sapiens,Man,Cerebellum,Cerebellum,144000.0,144.0,,,,mg,1,secondary,secondary citation: Donaldson (1909),Latimer__1956_Table2.csv,Latimer (1956),
 Sorex fumeus,Sorex fumeus,CerebralCortex,Cerebral cortex,84.0,0.084,9.0,,pooled/unspecified,g,1000,primary,measured,HerculanoHouzel_etal_2015_Table1.csv,Herculano-Houzel et al. (2015),
 Mus musculus,Mus musculus,CerebralCortex,Cerebral cortex,173.0,0.173,15.0,,pooled/unspecified,g,1000,primary,measured,HerculanoHouzel_etal_2015_Table1.csv,Herculano-Houzel et al. (2015),
 Blarina brevicauda,Blarina brevicauda,CerebralCortex,Cerebral cortex,197.0,0.197,12.0,,pooled/unspecified,g,1000,primary,measured,HerculanoHouzel_etal_2015_Table1.csv,Herculano-Houzel et al. (2015),

@@ -141,12 +141,41 @@ git commit -m "Refresh Shiny app data" && git push
 > To point the app at a different branch or fork, set the `EVOM1_GH_BASE`
 > environment variable (defaults to the `main` branch of this repo).
 
+### Local repo or GitHub: `EVOM1_SOURCE`
+
+The choice is made **once per run**, for every file, not per file. That matters
+because these files are not independent: the compiled tables supply the variable
+labels and `_keys/variable_definitions.csv` classifies them. Read the tables
+from one vintage and the keys from another and every label the keys have not
+caught up with shows as **"Unclassified → other"** — the data is there, the
+meaning is missing. A per-file GitHub-then-local fallback produces exactly that
+the moment a merge exists locally but has not been pushed.
+
+| `EVOM1_SOURCE` | Reads |
+|---|---|
+| `auto` *(default)* | **local** when the app sits inside a repo checkout (`../_keys` exists) — that is the copy you are editing and the one `build_data.R` just wrote. **GitHub** otherwise, which is the deployed case on shinyapps.io. |
+| `local` | The repo and `./data` only. Never touches the network. |
+| `github` | GitHub only, with `./data` as a per-file fallback. Use this to preview what the **live** app will show before you push. |
+
+So: after changing data, `Rscript __ShinyApp/build_data.R` is enough to see it
+locally, but **the live app only changes when you push** — it has no access to
+your working copy. `EVOM1_SOURCE=github` locally is the honest preview of that.
+
+If the keys do not cover the data, the app now says so instead of leaving stray
+"Unclassified" rows in the picker: a count and the first few labels on the
+console at startup, and a warning banner on the Data Directory tab naming which
+source the keys came from.
+
 ## Run locally
 
 ```r
 install.packages(c("shiny", "bslib", "DT", "ggplot2", "ape"))  # ape = optional, for PGLS
-shiny::runApp("__ShinyApp")   # reads from GitHub; falls back to data/ if offline
+shiny::runApp("__ShinyApp")   # in a repo checkout: reads the repo (EVOM1_SOURCE=auto)
 shiny::runApp(".") # use this if already in ./__ShinyApp
+```
+```bash
+# preview exactly what the deployed app shows (i.e. what is pushed)
+EVOM1_SOURCE=github Rscript -e 'shiny::runApp("__ShinyApp")'
 ```
 
 **Phylogenetic regression (PGLS)** is an optional Plot feature — it activates

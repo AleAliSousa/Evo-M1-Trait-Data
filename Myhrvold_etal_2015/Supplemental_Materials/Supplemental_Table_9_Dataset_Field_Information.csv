@@ -1,0 +1,38 @@
+Field Number,Field Name,Units,Taxonomic Group,Description
+,,,"B=Birds, R=Reptiles, M=Mammals",
+1,class,N/A,"B,R,M",N/A
+2,order,N/A,"B,R,M",N/A
+3,family,N/A,"B,R,M",N/A
+4,genus,N/A,"B,R,M",N/A
+5,species,N/A,"B,R,M",N/A
+6,subspecies,N/A,"B,R,M",N/A
+7,common_name,N/A,"B,R,M","A list of names commonly associated with a given species, not intended to be exhaustive."
+8,female_maturity_d,Days,"B,R,M",Age at first conception.
+9,litter_or_clutch_size_n,Number,"B,R,M",Number of offspring per litter or number of eggs per clutch.
+10,litters_or_clutches_per_y,Number per year,"B,R,M",Number of litters or clutches produced per year.
+11,adult_body_mass_g,Grams,"B,R,M","Body mass using data from males, females, and/or unspecified adults."
+12,maximum_longevity_y,Years,"B,R,M",Maximum recorded longevity for species.
+13,gestation_d,Days,M,Length of time from conception or fertilization to birth.
+14,weaning_d,Days,M,Age at which the species becomes dependent on food other than its mother's milk.
+15,birth_or_hatching_weight_g,Grams,"B,R,M",Weight at birth or at hatching.
+16,weaning_weight_g,Grams,M,Weight at weaning.
+17,egg_mass_g,Grams,"B,R",Egg mass.
+18,incubation_d,Days,"B,R",Length of time between egg oviposition and hatching.
+19,fledging_age_d,Days,B,Age of the bird when it is capable of flight.
+20,longevity_y,Years,"B,R,M",Age at death.
+21,male_maturity_d,Days,"B,R,M",Age of sexual maturity for males.
+22,inter_litter_or_interbirth_interval_y,Years,"B,R,M",Interval between successive births or ovipositions.  This can differ from litter/clutch frequency due to seasonality.
+23,female_body_mass_g,Grams,"B,R,M",Body mass of female adults.
+24,male_body_mass_g,Grams,"B,R,M",Body mass of male adults.
+25,no_sex_body_mass_g,Grams,"B,R,M",Body mass of unspecified adults.
+26,egg_width_mm,Millimeters,"B,R",Egg width.
+27,egg_length_mm,Millimeters,"B,R",Egg length.
+28,fledging_mass_g,Grams,B,Mass of the bird at the time it has developed the feathers necessary for flight.
+29,adult_svl_cm,Centimeters,"B,R,M","Measure from tip of the snout to either the opening of the cloaca (Birds & Reptiles) or tail base (mammals) for male, female, and/or unspecified adults."
+30,male_svl_cm,Centimeters,"B,R,M",Measure from tip of the snout to the opening of the cloaca or tail base for male adults.
+31,female_svl_cm,Centimeters,"B,R,M",Measure from tip of the snout to the opening of the cloaca or tail base for female adults.
+32,birth_or_hatching_svl_cm,Centimeters,"B,R, M","Measure from tip of the snout to the opening of the cloaca or tail base at the time of hatching for male, female, and/or unspecified newborn animals."
+33,female_svl_at_maturity_cm,Centimeters,"B,R,M",Measure from tip of the snout to the opening of the cloaca or tail base at the time of maturity for females.
+34,female_body_mass_at_maturity_g,Grams,"B,R,M",Body mass at the time of maturity for females.
+35,no_sex_svl_cm,Centimeters,"B,R,M",Measure from tip of the snout to the opening of the cloaca or tail base for unspecified adults.
+36,no_sex_maturity_d,Days,"B,R,M",Age at sexual maturity for unspecified adults.

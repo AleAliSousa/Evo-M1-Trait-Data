@@ -1,0 +1,12 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,species binomial,,Species,,primary,Apes & humans & macaque,Semendeferi_etal_1998,reconcile to _keys/Stephan/species_key.csv,
+species_as_published,common name as printed in Table 4,,Species,,primary,Apes & humans & macaque,Semendeferi_etal_1998,,
+specimen_as_published,specimen identifier as printed (species-level; no individual specimen ID given),,Specimen,,primary,Apes & humans & macaque,Semendeferi_etal_1998,one right hemisphere per species quantified,
+area_as_published,cytoarchitectonic area studied,Area13,Area,,primary,Apes & humans & macaque,Semendeferi_etal_1998,posterior orbitofrontal area 13,
+n_specimens,number of hemispheres contributing to the mean,,n,,primary,Apes & humans & macaque,Semendeferi_etal_1998,one right hemisphere per species; SD reflects multiple measurement locations within that hemisphere not multiple specimens,
+GLI_pct_mean_all_layers,mean grey-level index (percent area occupied by cell bodies vs neuropil) across cortical layers II-VI,Area13,GLI.pct,mean,primary,Apes & humans & macaque,Semendeferi_etal_1998,Table 4 column 'Mean',
+GLI_pct_mean_supragranular,mean GLI in layers II/III,Area13,GLI.pct,mean,primary,Apes & humans & macaque,Semendeferi_etal_1998,Table 4 'L II, III',
+GLI_pct_mean_granular,mean GLI in layer IV,Area13,GLI.pct,mean,primary,Apes & humans & macaque,Semendeferi_etal_1998,Table 4 'L IV',
+GLI_pct_mean_infragranular,mean GLI in layers V/VI,Area13,GLI.pct,mean,primary,Apes & humans & macaque,Semendeferi_etal_1998,Table 4 'L V, VI',
+source_location,location of the value in the source publication,,Source,,primary,Apes & humans & macaque,Semendeferi_etal_1998,,
+data_role,primary vs secondary/compiled flag,,Flag,,primary,Apes & humans & macaque,Semendeferi_etal_1998,paper's own measured data,

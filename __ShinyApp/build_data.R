@@ -53,6 +53,15 @@ invisible(file.copy(file.path(repo, "__merging_behaviour", "behaviour_long.csv")
 # in their own merge rather than being pooled with Ashwell foliation or cortical GI.
 invisible(file.copy(file.path(repo, "__merging_cerebellar_folding", "cerebellar_folding_long.csv"),
           file.path(out, "cerebellar_folding_long.csv"), overwrite = TRUE))
+# endocranial volume (cranial capacity), mL. Separate from brain mass on purpose:
+# it is the capacity of the braincase, so it includes meninges, CSF and vessels.
+invisible(file.copy(file.path(repo, "__merging_endocranial_volume", "endocranial_volume_long.csv"),
+          file.path(out, "endocranial_volume_long.csv"), overwrite = TRUE))
+# cerebral metabolic rate: regional + whole-brain glucose (CMRgl), oxygen (CMRO2)
+# and perfusion (CBF), keyed Species x Region x Measure. Absolute whole-brain
+# totals (umol/min, mL/min) are a separate measure class in the same merge.
+invisible(file.copy(file.path(repo, "__merging_cerebral_metabolic_rate", "cerebral_metabolic_rate_long.csv"),
+          file.path(out, "cerebral_metabolic_rate_long.csv"), overwrite = TRUE))
 # species taxonomy lookup (Order/Family) for the plot clade filter
 invisible(file.copy(file.path(repo, "_keys", "species_taxonomy.csv"),
           file.path(out, "species_taxonomy.csv"), overwrite = TRUE))

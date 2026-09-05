@@ -1,0 +1,11 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,"accepted binomial (Stephan-collection key, Latimer1956 token); blank for Frog and Turtle, printed without a species-level identification",,,,info,"10 taxa, see snapshot",Latimer__1956_Table2,,
+species_as_published,common name as printed,,,,info,as above,Latimer__1956_Table2,,
+weight_brain_stem_mg,"weight of the brain stem, converted from printed grams (x1000)",BrainStem,Mass.mg,mean,primary,as above,Latimer__1956_Table2,,
+weight_prosencephalon_mg,"weight of the prosencephalon (forebrain), converted from printed grams",Prosencephalon,Mass.mg,mean,primary,as above,Latimer__1956_Table2,,
+ratio_prosencephalon_to_brainstem,printed ratio of prosencephalon weight to brain-stem weight,,ratio,,primary,as above,Latimer__1956_Table2,,
+weight_cerebellum_mg,"weight of the cerebellum, converted from printed grams; blank for Frog (cerebellum not weighed separately per text)",Cerebellum,Mass.mg,mean,primary,as above,Latimer__1956_Table2,,
+ratio_cerebellum_to_brainstem,printed ratio of cerebellum weight to brain-stem weight; blank for Frog,,ratio,,primary,as above,Latimer__1956_Table2,,
+data_role,primary = Latimer's own dissection; secondary = value taken from the cited external source,,,,info,as above,Latimer__1956_Table2,Rat/Baboon/Man are secondary,
+secondary_source,citation given in the paper's footnote for the secondary-source rows,,,,info,Rat;Baboon;Man,Latimer__1956_Table2,Donaldson (1924) rat; Riese & Riese (1952) baboon; Donaldson (1909) man,
+source_location,page/table location of the printed values,,,,info,as above,Latimer__1956_Table2,,

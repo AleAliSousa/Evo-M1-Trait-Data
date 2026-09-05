@@ -24,7 +24,7 @@ check fixture's VA quarantine for KK-cited values.
 | `reference_tables/…_definitions.csv` ×2 | data dictionaries |
 | `reference_tables/Kirk_Kay_2004_footnotes.csv` | both tables' printed notes, verbatim |
 | `reference_tables/Kirk_Kay_2004_species_crosswalk.csv` | printed-name deviations → binomials (bactrius, californicus, jubata, caroliniensis, Amblonyx cinerea, rouxi; 3 genus-level "sp." rows; "Gervaif" common-name misprint) |
-| `comparison/Kirk_Kay_2004_VA_offset_adjudication.csv` | the check fixture's 25 KK-citing VA rows resolved against these tables |
+| `Kirk_Kay_2004_VA_offset_adjudication.csv` (moved 2026-09-05 to `Evo-M1-Trait-Data-restricted/restricted_checks/Kirk_Kay_2004/comparison/`) | the check fixture's 25 KK-citing VA rows resolved against these tables |
 
 Public TSVs: `10.1007%2F978-1-4419-8873-7_20_Table1.tsv` / `…_Table2.tsv`.
 
@@ -47,7 +47,7 @@ crosswalk. **Data role: secondary-leaning both** — every value carries its pri
 anatomical calculations (methods vary slightly — table notes).
 
 ## Comparisons (VA quarantine)
-`comparison/…_VA_offset_adjudication.csv`: all **25** fixture VA rows citing "Kirk and Kay 2004"
+`…_VA_offset_adjudication.csv` (restricted repo, `restricted_checks/Kirk_Kay_2004/comparison/`): all **25** fixture VA rows citing "Kirk and Kay 2004"
 resolved — **21 CONFIRMED correct** (value within the printed range for that species/method/
 substrate) and **4 = the alphabetical offset pattern** (Aotus azarae B-water 2.0 is *Aonyx*'s
 water value; Bos taurus A-water 4.2 is *Balaenoptera*'s; Camelus bactrianus A 7.1 is

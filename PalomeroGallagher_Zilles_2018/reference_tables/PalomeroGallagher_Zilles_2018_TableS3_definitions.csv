@@ -1,0 +1,12 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,"accepted binomial (Stephan-collection key, PalomeroGallagher2018 token)",,,,info,human;bonobo;chimpanzee;gorilla;orangutan;gibbon;macaque,PalomeroGallagher_Zilles_2018_TableS3,,
+species_as_published,"species/common name, specimen suffix stripped (e.g. human_B01 -> human)",,,,info,as above,PalomeroGallagher_Zilles_2018_TableS3,,
+specimen_as_published,individual specimen code exactly as printed in Table S3 (human has 4 specimens B01/B06/B07/B10; macaque has 2-3 specimens; other species are single-specimen),,,,info,as above,PalomeroGallagher_Zilles_2018_TableS3,,
+area_as_published,cortical area (Broca-homolog region): area44 or area45,BrocaArea44,,,info,as above,PalomeroGallagher_Zilles_2018_TableS3,,
+n_specimens,1 for every row -- Table S3 is already per-specimen; no within-species averaging performed here,,,,info,as above,PalomeroGallagher_Zilles_2018_TableS3,,
+GLI_pct_mean_all_layers,"mean grey level index (%, volume proportion of cell bodies per volume tissue) averaged over cortical layers I-VI, per specimen",BrocaArea44,pct.GLI,mean,primary,as above,PalomeroGallagher_Zilles_2018_TableS3,matches Fig. 12 Panel A,
+GLI_pct_mean_supragranular,"mean GLI (%) in supragranular layers II-III, per specimen",BrocaArea44,pct.GLI,mean,primary,as above,PalomeroGallagher_Zilles_2018_TableS3,matches Fig. 12 Panels B (area44) / C (area45),
+GLI_pct_mean_granular,"mean GLI (%) in granular layer IV, per specimen",BrocaArea44,pct.GLI,mean,primary,as above,PalomeroGallagher_Zilles_2018_TableS3,matches Fig. 12 Panels B/C,
+GLI_pct_mean_infragranular,"mean GLI (%) in infragranular layers V-VI, per specimen",BrocaArea44,pct.GLI,mean,primary,as above,PalomeroGallagher_Zilles_2018_TableS3,matches Fig. 12 Panels B/C,
+source_location,page/table location of the printed values,,,,info,as above,PalomeroGallagher_Zilles_2018_TableS3,,
+data_role,primary (measured) vs secondary (compiled/derived elsewhere),,,,info,as above,PalomeroGallagher_Zilles_2018_TableS3,Table S3 is the paper's own measured per-specimen data,

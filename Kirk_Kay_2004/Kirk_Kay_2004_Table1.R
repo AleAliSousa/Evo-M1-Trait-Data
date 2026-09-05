@@ -92,6 +92,8 @@ if (!is.na(tsv_dir) && dir.exists(tsv_dir)) {
 } else warning("__Public not mounted; TSV not written -- copy later")
 
 ## 5. COMPARISONS ---------------------------------------------------
-## comparison/Kirk_Kay_2004_VA_offset_adjudication.csv resolves all 25 fixture VA rows
+## Moved 2026-09-05 to Evo-M1-Trait-Data-restricted/restricted_checks/Kirk_Kay_2004/
+## comparison/ (all checks live in the restricted repo now, per REPO_BOUNDARY.md).
+## Kirk_Kay_2004_VA_offset_adjudication.csv there resolves all 25 fixture VA rows
 ## citing "Kirk and Kay 2004": 21 confirmed correct; 4 are the alphabetical-offset
 ## pattern (true owners named; Phoca r119 = correct value, displaced substrate label).

@@ -32,16 +32,19 @@ order the pipeline touches them:
 5. **`_keys/volumes_species_overrides.csv`** (`Reference, variant_name, accepted_name, note`) and
    **`_keys/Stephan/species_key.csv`** — curated species-name reconciliation, keyed by
    (Reference, raw name). Curated names win over the NCBI backbone.
-6. **The DeCasien comparison**, `DeCasien_Higham_2019/DeCasien_Higham_2019_SupplementaryData1-BrainRegion.R`,
-   which has its **own** dependencies on the raw TSVs:
+6. **The DeCasien comparison** (moved 2026-09-05 to
+   `Evo-M1-Trait-Data-restricted/restricted_checks/DeCasien_Higham_2019/comparison/
+   DeCasien_Higham_2019_SupplementaryData1-BrainRegion.R` — all checks live in the restricted repo
+   now), which has its **own** dependencies on the raw TSVs:
    - the anatomy **crosswalk** (`xwalk`: DeCasien region → our `*_Vol.mm3` term);
    - the **per-specimen supplement** (`unf_spec`) that reads several raw TSVs directly with
      hard-coded column names and conversions (Bauernfeind Table 1+2, MacLeod Table 1+2,
      Barger 2007, Barger 2014, Sherwood 2004, Bush & Allman);
    - `bilateral_terms` and `stephan_sources`.
 
-**Both compile scripts share files 1–5.** A change you make for the canonical merge almost always
-has to be made (or is automatically inherited) for the DeCasien merge too.
+A change you make to the canonical merge for files 1–5 may also need to be reflected in the
+DeCasien comparison's own copies of the same logic (it reads this repo's live tables, but the
+crosswalk/per-specimen-supplement logic above lives in its own script).
 
 ---
 
@@ -111,13 +114,14 @@ The merge stores **mm³** for volumes, **Brain_Mass.mg**, **Body_Mass.g**.
 From the repo root (the scripts find the root by walking up to `__ReadMe.xlsx`):
 
 ```
-Rscript __merging_volumes/volumes_compiled.R            # canonical merge
-Rscript __merging_volumes/volumes_compiled_DeCasien.R   # DeCasien subset; also runs the comparison
+Rscript __merging_volumes/volumes_compiled.R                                       # canonical merge
+Rscript restricted_checks/DeCasien_Higham_2019/comparison/DeCasien_Higham_2019_SupplementaryData1-BrainRegion.R
+                                                          # (in Evo-M1-Trait-Data-restricted) DeCasien comparison
 ```
 
-`volumes_compiled_DeCasien.R` `source()`s the comparison script at the end, so it refreshes
-`DeCasien_Higham_2019/DeCasien_vs_merge_comparison_DeCasien.csv` and the FINDINGS file in one go.
-`run_all_scripts_v2.R` runs the full set.
+The DeCasien-subset build (`volumes_compiled_DeCasien.R`, a reverted, non-recommended experiment)
+was retired 2026-09-05 along with its outputs; the comparison above always compares against the
+canonical core merge now. `run_all_scripts_v2.R` runs the canonical set (public repo only).
 
 ---
 

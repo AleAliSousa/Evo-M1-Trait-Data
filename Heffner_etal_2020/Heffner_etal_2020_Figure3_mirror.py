@@ -10,7 +10,13 @@ Inputs : Heffner_etal_2020_Figure3_snapshot.csv        (79 markers, vector-extra
          reference_tables/..._cottontail_values_from_text.csv
 Outputs: Heffner_etal_2020_Figure3.csv
          __Public/comparative-data/10.1007%2Fs00359-020-01424-8_Figure3.tsv
-         comparison/..._vs_SensoryData_compiled.csv
+
+NOTE (2026-09-05): this used to also write comparison/..._vs_SensoryData_compiled.csv,
+auditing TEXTVALS against the compiled sensory check fixture. That check now lives in
+the restricted repo's restricted_checks/Heffner_etal_2020/comparison/ (all checks do,
+per the updated REPO_BOUNDARY.md rule) -- see
+Heffner_etal_2020_Figure3_vs_SensoryData_compiled_check.py there. This script keeps only
+the public build.
 """
 import csv, os
 
@@ -22,8 +28,6 @@ TEXTVALS = os.path.join(HERE, "reference_tables", "Heffner_etal_2020_cottontail_
 OUT_CSV = os.path.join(HERE, "Heffner_etal_2020_Figure3.csv")
 OUT_TSV = os.path.join(ROOT, "__Public", "comparative-data",
                        "10.1007%2Fs00359-020-01424-8_Figure3.tsv")
-CHECK = os.path.join(ROOT, "____Sensory_audiovisual", "SensoryData_compiled_check",
-                     "SensoryData_compiled.csv")
 
 # labels that are not species: a group heading, and two adjacent labels the
 # character clustering merged into one block
@@ -112,33 +116,11 @@ def main():
     if os.path.isdir(os.path.dirname(OUT_TSV)):
         write_r_style(OUT_TSV, "\t")
 
-    # ---- comparison vs the compiled sensory check fixture ---------------------
-    os.makedirs(os.path.join(HERE, "comparison"), exist_ok=True)
-    tv = {t["trait"]: t for t in read_csv(TEXTVALS)}
-    check = [c for c in read_csv(CHECK) if "Heffner et al 2020" in c["reference"]]
-    rep = []
-    for c in check:
-        t = tv.get(c["trait"])
-        if t and "%.15g" % float(t["value"]) == "%.15g" % float(c["value_num"]):
-            status = "agree_with_text_value"
-        elif t:
-            status = "differs_from_text_value"
-        else:
-            status = "trait_not_stated_in_text"
-        rep.append([c["value_id"], c["Species_SensoryData"], c["trait"], c["value"],
-                    t["value"] if t else "", status, c["comment"]])
-    with open(os.path.join(HERE, "comparison",
-                           "Heffner_etal_2020_Figure3_vs_SensoryData_compiled.csv"),
-              "w", newline="", encoding="utf-8") as f:
-        w = csv.writer(f, quoting=csv.QUOTE_ALL)
-        w.writerow(["check_value_id", "check_species", "check_trait", "check_value",
-                    "paper_text_value", "status", "check_comment"])
-        w.writerows(rep)
-
     from collections import Counter
     print("markers:", len(out), "| labelled:", sum(1 for r in out if r["species_label_as_printed"]))
     print(Counter(r["label_confidence"] for r in out))
-    print("check rows:", len(rep), Counter(r[5] for r in rep))
+    print("sensory check vs compiled fixture: see restricted_checks/Heffner_etal_2020/"
+          "comparison/ in the restricted repo (moved 2026-09-05).")
 
 if __name__ == "__main__":
     main()

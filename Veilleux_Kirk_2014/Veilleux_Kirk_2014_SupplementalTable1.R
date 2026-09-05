@@ -92,7 +92,9 @@ if (!is.na(tsv_dir) && dir.exists(tsv_dir)) {
 } else warning("__Public not mounted; TSV not written -- copy later")
 
 ## 5. COMPARISONS ---------------------------------------------------
-## comparison/ holds: ..._vs_Part1_sheet.csv (student extraction audit) and
+## Moved 2026-09-05 to Evo-M1-Trait-Data-restricted/restricted_checks/Veilleux_Kirk_2014/
+## comparison/ (all checks live in the restricted repo now, per REPO_BOUNDARY.md).
+## That folder holds: ..._vs_Part1_sheet.csv (student extraction audit) and
 ## ..._VA_offset_adjudication.csv -- the check fixture's 92 VK-citing VA rows
 ## resolved against this primary (74 correct, 18 displaced; the displaced values'
 ## true owners are named). This is the build that lifts the VA quarantine for

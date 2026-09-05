@@ -187,15 +187,15 @@ registry and disk currently agree:
 ### Registered targets from the blank-item audit (2026-08-15)
 
 These choices favour primary measurements that add a new axis or useful taxonomic coverage and
-avoid exporting the same values twice. Seven registered items were built on 2026-08-15; Medina is
-the sole source-level blocker and Weaver is an intentional skip. A multi-table book receives one
+avoid exporting the same values twice. Seven registered items were built on 2026-08-15; Medina was built 2026-09 (from the Wiley
+online supplement, not the still-restricted Zenodo record) and Weaver is an intentional skip. A multi-table book receives one
 registry row per exported table rather than one catch-all row.
 
 | Excel row | source | best first public data | D suffix | status / rationale / constraint |
 |---:|---|---|---|---|
 | 24 and 298 | Baron, Stephan & Frahm 1996 | five fundamental brain-part volumes, then telencephalic components | `Table 10` and `Table 32` | **BUILT** — 272 species rows in each item; registered with volume-specific `ISBN:9783764353704`; two source-level Table 32 component-sum inconsistencies are retained and reported |
 | 65 | Ebinger 1974 | individual wild- and domestic-sheep brain/region volumes | `Tables 3-4` | **BUILT** — 10 individuals; Tables 5–10 are percentages or summaries derived from these primary tables |
-| 190 | Medina-González 2026 | AUI, limb posture, top speed, and locomotor habit; retain joint-level angles in the frozen source | `Data` | **HOLD** — adds quantitative posture and locomotor-performance traits across 182 mammals, but the source deposit is restricted |
+| 190 | Medina-González 2026 | AUI (per-limb), limb posture, top speed, and locomotor habit; retain joint-level angles in the frozen source | `SupplementaryFile1/2/3` | **BUILT 2026-09** — 182 records / 77 species; built from the Wiley online supplement as 3 parallel items, Data role = both (Zenodo deposit remains restricted, unrelated to this build) |
 | 193 | Navarrete et al. 2016 | technical/non-technical innovation subtype counts and life-history composite | `Data` | **BUILT** — 167 species; complements Reader 2011, but depends on its report records. Despite “rate” in the source headers, the deposit contains integer counts and no effort denominator, so no corrected rate was invented |
 | 194 | Nguyen et al. 2020 (folder/registry: `Nguyen_etal_2019`, DOI 10.1002/cne.24823) | species × region × neuron-type dendritic and spine summary statistics | `Table 2` | **BUILT** — 49 felid region × neuron-type rows; extends Jacobs-style morphology across frontal cortex, M1, and V1 |
 | 200 | Olkowicz et al. 2016 | complete region-level neuron/non-neuron counts and densities | `Dataset S1` | **BUILT / EXCLUDED FROM MAMMAL MERGE** — 28 avian species and all 75 source measurements; older `TableS1` scaffold aligned to the registered name; `Class = Aves` is explicit |
@@ -297,7 +297,7 @@ script had been touched is obsolete.
 - **Blank-item audit:** built Baron Tables 10/32, Ebinger Tables 3–4, Navarrete Data, Nguyen Table
   2, Olkowicz Dataset S1, and Schleifenbaum Tables 1–2. Each build has a source-scoped R script,
   local CSV, variable definitions, README, and DOI/ISBN-coded public TSV. Olkowicz is shelf-stocked
-  only; Medina remains restricted; Weaver remains a documented skip.
+  only; Medina was built 2026-09 from the Wiley supplement; Weaver remains a documented skip.
 - **Registry/file-list audit:** registered the already-built Jacobs 2016, Johnson 2016, and Peruffo
   2019 cortical-layer TSVs on rows 299–301. The script-owned 260-file public inventory then had 258
   registry matches. *(2026-09-02: the public directory holds 300 TSVs and the registry 380 rows;
@@ -362,11 +362,13 @@ figures.
 
 ### Remaining source build
 
-1. **Medina-González 2026 is externally blocked.** Zenodo record `15425733` is published and
-   describes seven supplementary files for 182 species, but its current API record is `restricted`
-   and returns no downloadable files. The scaffold and reader stay in place. Do not fabricate its
-   columns or request access on the owner's behalf; build it when the files are supplied or access
-   is granted.
+1. **Medina-González 2026 — built 2026-09.** The Zenodo record (`15425733`) remains `restricted`
+   (rechecked 2026-08-15) and that specific deposit is still not downloadable — but three of the
+   paper's supplementary files (source list, locomotor-habit classification, joint-excursion data)
+   were obtained directly from the published article page (onlinelibrary.wiley.com/doi/10.1002/
+   jez.70069) and built as `MedinaGonzález__2026_SupplementaryFile1/2/3`,
+   wired into `__merging_behaviour`. See the paper folder's README for the per-record granularity
+   and AUI-column notes. Registry paste pending (registry_row.xlsx prepared).
 2. **Campos & Welker 1976 - complete 2026-08-24:** Table 1 is built as separate volume,
    cortical-morphometry, and cell-count products; the mixed units are not wired into one merge.
 3. **Halley & Krubitzer 2019 - audited 2026-08-24:** all 39 Figure 1 points duplicate upstream
@@ -468,7 +470,7 @@ figures.
 | 4 | Capellini et al. 2008 — mammalian sleep (REM %, daily sleep) | ✅ **BUILT + WIRED** (`__merging_sleep` built; terms reach the app via `evom1_traits_long`) | `Capellini_etal_2008/` (+ sleep standardized-term template) | `__merging_sleep` (extends beyond primate-only REM) |
 | 5 | Heuer et al. 2019 — neocortical folding (34 primates, MRI) | IN, **separate** | `Heuer_etal_2019/` | **none** — housed separately, never pooled with Zilles GI |
 | 6 | Cerebellar folding — **Heuer et al. 2023** (eLife 12:e85907) | ✅ **BUILT 2026-08-15** | `Heuer_etal_2023/` | dedicated `__merging_cerebellar_folding` + Shiny app; **never pooled with Ashwell 2020 foliation or neocortical GI** |
-| 7 | Medina-González 2026 — limb excursion, 182 mammals | IN, **blocked: restricted source record** | `MedinaGonzalez__2026/` (+ reader scaffold) | `__merging_behaviour` after files become available |
+| 7 | Medina-González 2026 — limb excursion, 182 mammals | ✅ **BUILT 2026-09** (from the Wiley online supplement, not the still-restricted Zenodo record) | `MedinaGonzález__2026/` | wired into `__merging_behaviour` |
 | 8 | Corticospinal / CM termination extent | ✅ **BUILT 2026-08-15**, renamed to the house pattern + re-keyed to the article DOI same day | `Bortoff_Strick_1993/` (Table 1, curated) | behaviour (`CST_termination_grade` + cautious CM inference), team `Bortoff_Strick`, **primary** |
 | 9 | ~~Betz cells (compile-from-lit)~~ → **Jacobs et al. 2018** — gigantopyramidal + M1 pyramidal morphology | IN, **snapshots built 2026-08-04** | `Jacobs_etal_2018/` (Tables 3 + 5) | `__merging_cellcounts` as **regional M1** sub-trait (never pooled with whole-cortex counts) |
 | — | Reader lineage — technical innovation (2002 classic + 2011 Dryad) | ✅ **BUILT + WIRED 2026-08-15** | `Reader_etal_2011/` (+ `innovation_reader.xlsx`) | `__merging_behaviour` (report counts + effort variables) |
@@ -628,25 +630,26 @@ counts to Reader totals.
   and evolution of cerebellar folding in mammals.* eLife 12:e85907. DOI **10.7554/eLife.85907**.
   First author is Heuer; **A. A. de Sousa (repo owner) is a co-author** → left for the owner to judge.
 
-### 7. Medina-González 2026 — joint angular excursion in terrestrial mammals (`MedinaGonzalez__2026/`)
+### 7. Medina-González 2026 — joint angular excursion in terrestrial mammals (`MedinaGonzález__2026/`) — ✅ BUILT 2026-09
 
 - **Merge:** `__merging_behaviour` (locomotion/gait), beside Granatosky and Wimberly.
 - **Citation:** Medina-González, P. (2026). *Joint Angular Excursions and Angular Range Utilization
   During Stance-Phase Locomotion in Terrestrial Mammals: A Comparative Morphofunctional Data Set.*
-  J Exp Zool A. DOI **10.1002/jez.70069**. Data: **Zenodo doi:10.5281/zenodo.15425733**
-  ("Supplementary Data … Joint Angular Excursion and Efficiency in Terrestrial Mammals", published
-  2025-05-15; FONDECYT 11231111).
+  J Exp Zool A. DOI **10.1002/jez.70069**.
   *(The initial scouting entry filed this under "Grabowski" — that byline was never verified and is
   wrong; the Zenodo record and the linked paper are Medina-González. Corrected when the folder was
   built.)*
-- **Contributes:** stance-phase joint angular excursions and an **angular utilization index (AUI %)**
-  for **182 terrestrial mammal species across 15 orders**, each classified by limb posture, body
-  mass, top speed and locomotor habit — the widest-coverage locomotion source scouted, broadening
-  gait/locomotion far beyond the current primate-leaning set.
-- **Current blocker (verified 2026-08-15):** Zenodo publishes the record metadata but marks access
-  `restricted` and returns no files. Confirm the license and real column schema only after the seven
-  files are supplied; per-joint angles stay frozen and only defensible species-level summaries feed
-  the trait table.
+- **Contributes:** stance-phase joint angular excursions and a **per-limb angular utilization index
+  (AUI %)** for **182 records / 77 terrestrial mammal species across 15+ orders**, each classified by
+  limb posture, body mass, top speed and locomotor habit — the widest-coverage locomotion source
+  scouted, broadening gait/locomotion far beyond the current primate-leaning set.
+- **Built from the Wiley online supplement, not Zenodo (2026-09).** The Zenodo deposit
+  (doi:10.5281/zenodo.15425733) remains restricted (verified 2026-08-15) and that blocker still
+  stands for that specific record. Instead, three supplementary files were obtained directly from
+  the published article page (onlinelibrary.wiley.com/doi/10.1002/jez.70069) and built per house
+  convention (digital-native, no derived snapshot): `MedinaGonzález__2026_SupplementaryFile1/2/3` (all three registered,
+  `Data role = both`). Wired into `__merging_behaviour/behaviour_compiled.R`. Registered in
+  `__ReadMe.xlsx` (rows 258-260) by the owner, accent restored throughout.
 
 ---
 
@@ -719,9 +722,9 @@ Per `_skills/build-dataset-item/references/__HOWTO_build_a_dataset_file.md`, and
 each folder's README:
 
 1. **Download the frozen source** (DOIs/Zenodo/Dryad IDs are in each README).
-2. **Confirm exact column headers** — never build against a guessed schema. Reader, Navarrete, and
-   Olkowicz were confirmed on 2026-08-15; Medina-González remains unknown because the record is
-   restricted. Audit any remaining Capellini derivation markers before merge wiring.
+2. **Confirm exact column headers** — never build against a guessed schema. Reader, Navarrete,
+   Olkowicz, and Medina-González (confirmed 2026-09, from the Wiley online supplement) headers are
+   confirmed. Audit any remaining Capellini derivation markers before merge wiring.
 3. Write the **DOI-coded public TSV** into `__Public/comparative-data/`.
 4. **Register** in `__ReadMe.xlsx` (Item name → Item encoded) with the row given in the README.
 5. **Wire the merge** (add to the `item_name` vector / add `grab()`+`META`+`TEAM` / add
@@ -812,7 +815,8 @@ each folder's README:
    documented skip and stays as-is).
 7. **Baron 1996 bat block** wiring into volumes — blocked on the seven historical taxon-concept
    decisions plus within-source averaging.
-8. Build Medina-González immediately after its restricted files become available.
+8. ~~Build Medina-González immediately after its restricted files become available.~~ ✅ done
+   2026-09 (built from the Wiley online supplement, not the still-restricted Zenodo record).
 9. Decide on a class-aware destination before compiling Olkowicz or any other avian shelf
    dataset (`____Spinal_cord_etc/` is the next staging folder to watch as a merge-group
    candidate).

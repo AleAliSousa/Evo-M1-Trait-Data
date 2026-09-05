@@ -92,7 +92,9 @@ if (!is.na(tsv_dir) && dir.exists(tsv_dir)) {
 } else warning("__Public not mounted; TSV not written -- copy later")
 
 ## 5. COMPARISON -----------------------------------------------------
-## comparison/Koay_etal_1998_Figure6_vs_SensoryData_compiled.csv audits the check
+## Moved 2026-09-05 to Evo-M1-Trait-Data-restricted/restricted_checks/Koay_etal_1998/
+## comparison/ (all checks live in the restricted repo now, per REPO_BOUNDARY.md).
+## Koay_etal_1998_Figure6_vs_SensoryData_compiled.csv there audits the check
 ## fixture's Koay-citing high-frequency & interaural rows against this item:
 ## digitised-origin check values match exactly except 4 that trace to the OLDER
 ## Meeting-23-July digitisation pass or to Figure 7 (beluga); published-origin

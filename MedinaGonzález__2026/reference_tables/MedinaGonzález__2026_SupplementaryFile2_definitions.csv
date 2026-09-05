@@ -1,0 +1,7 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Record_ID,row index as printed (N° column); aligns 1:1 with the Data table's Record_ID,,,,info,Mammals,MedinaGonzález__2026_SupplementaryFile2,printed row order preserved (matches Data table ID column),
+species_printed / Species,"species name exactly as printed (""Specie"" column)",,,,info,Mammals,MedinaGonzález__2026_SupplementaryFile2,printed name preserved (invariant 3),
+species_sci,accepted scientific binomial; resolved via _keys/species_reference.csv + _keys/Stephan/species_key.csv,,,,info,Mammals,MedinaGonzález__2026_SupplementaryFile2,all 182 rows resolved directly,
+Order,taxonomic order as printed,,,,info,Mammals,MedinaGonzález__2026_SupplementaryFile2,,
+Locomotor_habit,locomotor habit class,whole-organism,category,point,primary,Mammals,MedinaGonzález__2026_SupplementaryFile2,Arboreal / Cursorial / Scansorial / Terrestrial; duplicated in the Data table,
+Justification,"free-text justification for the assigned locomotor category, verbatim",whole-organism,text,point,primary,Mammals,MedinaGonzález__2026_SupplementaryFile2,"based on morphological traits, behavioural observations, and literature/audiovisual sources per source Description",

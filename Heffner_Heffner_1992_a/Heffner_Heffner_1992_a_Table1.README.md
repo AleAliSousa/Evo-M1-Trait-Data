@@ -17,7 +17,7 @@ The `_a` suffix distinguishes this from the Heffners' other 1992 papers (the bli
 | `reference_tables/…_definitions.csv` | data dictionary (10-col schema) |
 | `reference_tables/…_footnotes.csv` | the 30 printed footnotes, verbatim |
 | `reference_tables/…_species_crosswalk.csv` | printed common name → binomial, with per-species basis |
-| `comparison/…_compare_to_SensoryData_compiled_csv.R` | QA script for both audits (fixture + student sheet) |
+| `…_compare_to_SensoryData_compiled_csv.R` (moved 2026-09-05 to `Evo-M1-Trait-Data-restricted/restricted_checks/Heffner_Heffner_1992_a/comparison/`) | QA script for both audits (fixture + student sheet) |
 
 Public TSV: `__Public/comparative-data/10.1002%2Fcne.903170302_Table1.tsv`.
 

@@ -34,7 +34,7 @@
 | `reference_tables/…_cottontail_values_from_text.csv` | **the paper's own primary values**, quoted verbatim with locations |
 | `reference_tables/…_label_assignment.csv` | per-label assignment, method, confidence, and the Koay cross-check |
 | `reference_tables/…_definitions.csv` | data dictionary (10-col schema) |
-| `comparison/…_vs_SensoryData_compiled.csv` | audit vs the compiled sensory check fixture |
+| `…_vs_SensoryData_compiled.csv` (moved 2026-09-05 to `Evo-M1-Trait-Data-restricted/restricted_checks/Heffner_etal_2020/comparison/`) | audit vs the compiled sensory check fixture |
 
 Public TSV: `__Public/comparative-data/10.1007%2Fs00359-020-01424-8_Figure3.tsv`.
 

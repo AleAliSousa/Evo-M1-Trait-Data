@@ -1,9 +1,19 @@
 # The public/private boundary
 
-**Canonical definition of what belongs in which of the two repositories, updated 2026-08-20.**
+**Canonical definition of what belongs in which of the two repositories, updated 2026-09-05.**
 `__COMPARISON_MOVED.md` (here) and `README__comparison_migration.md` (private) record *how* the split
 happened on 2026-08-19; this file defines *where things go from now on*. Where they disagree, this
 file wins.
+
+**2026-09-05 rule change: every check now lives in the restricted repo, regardless of whether its
+inputs are public.** The earlier rule sent an all-public-input check beside what it audits, in the
+public repo; that distinction is gone. No check/comparison folder belongs in the public repo any
+more, full stop — see section 3's placement table. This moved `__cerebellum_protocol_comparison`,
+`__energetics_comparison`, `__flow_comparison`, and five sensory-paper `comparison/` folders
+(`Heffner_Heffner_1992_a`, `Heffner_etal_2020`, `Koay_etal_1998`, `Kirk_Kay_2004`,
+`Veilleux_Kirk_2014`) into `restricted_checks/`, and retroactively resolves open question 1 below:
+the "six publishable audits" question is moot, because publishability of the inputs no longer
+decides where a check lives.
 
 ---
 
@@ -64,9 +74,8 @@ unpublished spreadsheet does not.
 | merge and its outputs | public | `__merging_<domain>/` |
 | decision to skip, supersede, or exclude a source | public | `SOURCE_DISPOSITION_REGISTER.md` |
 | species / specimen / taxonomy keys | public | `_keys/` |
-| **check whose every input is already public** | public | beside what it audits — the paper folder, or the merge that pools the data |
-| **check with any non-public input** | private | `restricted_checks/<Paper>/comparison/` |
-| **cross-publication check with any non-public input** | private | `restricted_checks/_cross_table/<a>_vs_<b>/` |
+| **check, single-paper** (any input, public or not) | private | `restricted_checks/<Paper>/comparison/` |
+| **check, cross-publication** (any input, public or not) | private | `restricted_checks/_cross_table/<a>_vs_<b>/` |
 | source data that cannot be published | private | `unpublished_data/____Unpublished__<Set>/` |
 | material being cleaned up before promotion | private | `_<name>_staging/` |
 | sweep log, folder audit, cleanup manifest | either | `_checks/` of that repo |
@@ -127,15 +136,18 @@ working directory.
 
 These are live ambiguities, not rules. Each needs a decision; none should be resolved by guessing.
 
-1. **The six publishable audits.** `_triage_comparison_inputs.csv` finds 6 of 42 check folders whose
-   inputs are all public (`Baron_etal_1996`, `Kazu_etal_2015`, `Lewitus_etal_2014`,
-   `Smaers_etal_2011`, `Turner_etal_2016`, `deSousa_etal_2009`). By I1 they belong in the public
-   repo. Direction of travel is private → public; the trigger is human confirmation, not the
-   classifier, which errs toward "restricted" by design. On moving one: restore its `../` paths and
-   flip its row to `PUBLISHABLE — moved <date>`. Until then a reader cannot tell whether a folder is
-   private because it must be or because nobody has looked. The separate Baron overlap/taxonomy
-   audit already remains public beside its source tables because all its inputs are public; only the
-   migrated Table 32-vs-Table 10 check is part of this open review.
+1. **RESOLVED (moot) 2026-09-05 — the six publishable audits.** Publishability of a check's inputs
+   no longer decides where it lives (see the 2026-09-05 rule change at the top of this file); every
+   check stays in `restricted_checks/`, so `Baron_etal_1996`, `Kazu_etal_2015`, `Lewitus_etal_2014`,
+   `Smaers_etal_2011`, `Turner_etal_2016`, `deSousa_etal_2009` are correctly where they already sat
+   and there is nothing to move. **New open item found while applying that rule:**
+   `Baron_etal_1996_overlap_taxonomy_audit.R` still sits in the public `Baron_etal_1996/` folder (not
+   a `comparison/` folder, so it wasn't caught by the 2026-09-05 sweep) and does double duty: it
+   writes `Baron_etal_1996_taxonomy_crosswalk.csv` (a build input the merge may consume) alongside
+   `Baron_etal_1996_overlap_audit.csv`/`_species_overlap_audit.csv` (audit reports, all-public-input,
+   which under the new rule belong in `restricted_checks/Baron_etal_1996/`). Needs a human decision
+   on whether to split the script (crosswalk stays public, audit output moves) or move it whole and
+   have the merge read the crosswalk across the boundary via `_helpers/restricted_data.R`.
 
 2. **`__merging_<domain>/checks/` does not exist.** Both migration READMEs name it as the home for
    public cross-source checks, but no such folder is present; in practice the DeCasien comparisons sit

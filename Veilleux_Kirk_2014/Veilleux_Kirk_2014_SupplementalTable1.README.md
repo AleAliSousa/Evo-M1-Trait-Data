@@ -18,8 +18,8 @@
 | `reference_tables/…_definitions.csv` | data dictionary (10-col schema) |
 | `reference_tables/…_data_sources.csv` | the paper's numbered Data Sources 1–122, verbatim |
 | `reference_tables/…_species_crosswalk.csv` | 9 printed misspellings/older names → corrected binomials |
-| `comparison/…_vs_Part1_sheet.csv` | audit vs the Bath student extraction |
-| `comparison/…_VA_offset_adjudication.csv` | the check fixture's VK-citing VA rows resolved against this primary |
+| `…_vs_Part1_sheet.csv` (moved 2026-09-05 to `Evo-M1-Trait-Data-restricted/restricted_checks/Veilleux_Kirk_2014/comparison/`) | audit vs the Bath student extraction |
+| `…_VA_offset_adjudication.csv` (same restricted location) | the check fixture's VK-citing VA rows resolved against this primary |
 
 Public TSV: `__Public/comparative-data/10.1159%2F000357830_SupplementalTable1.tsv` (registry row pre-existed; Item number "Supplemental Table 1").
 

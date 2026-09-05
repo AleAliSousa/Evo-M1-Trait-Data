@@ -1,0 +1,5 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Row_ID,row index as printed; row order does NOT align 1:1 with SupplementaryFile2/3 (see README),,,,info,Mammals,MedinaGonzález__2026_SupplementaryFile1,printed row order preserved,
+Order,taxonomic order as printed,,,,info,Mammals,MedinaGonzález__2026_SupplementaryFile1,,
+Specie,species name exactly as printed,,,,info,Mammals,MedinaGonzález__2026_SupplementaryFile1,printed name preserved (invariant 3),
+Source_name,citation of the source used to obtain sagittal joint information for this species (video or article),whole-organism,text,point,secondary,Mammals,MedinaGonzález__2026_SupplementaryFile1,blank cells kept exactly as printed -- not forward-filled/inferred (113 contiguous species-runs vs 77 species; 46 runs cite no source at all),

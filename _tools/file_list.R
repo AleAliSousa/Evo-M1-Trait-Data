@@ -49,9 +49,10 @@ openxlsx_input <- openxlsx_compatible_copy(readme_xlsx)
 # ---- .tsv files in the folder -----------------------------------------------
 tsv_files <- list.files(file_dir, pattern = "\\.tsv$", ignore.case = TRUE)
 
-# ---- Catalogued names from Sheet1 column L ("Item encoded") -----------------
-# Read Sheet1 keeping the exact column positions (skipEmptyCols = FALSE) so that
-# the 12th column is always column L.
+# ---- Catalogued names from Sheet1's "Item encoded" column -------------------
+# Read Sheet1 keeping the exact column positions (skipEmptyCols = FALSE), then
+# locate "Item encoded" by header name rather than assuming a fixed column
+# letter/index (the sheet has drifted from earlier fixed-position assumptions).
 sheet1 <- read.xlsx(
   openxlsx_input,
   sheet         = "Sheet1",
@@ -60,14 +61,11 @@ sheet1 <- read.xlsx(
   skipEmptyRows = FALSE
 )
 
-col_L_index <- 12  # column L
-col_L_name  <- names(sheet1)[col_L_index]
-if (!grepl("Item.?encoded", col_L_name, ignore.case = TRUE)) {
-  warning(sprintf(
-    "Column L is '%s', not the expected 'Item encoded'. Check column alignment.",
-    col_L_name
-  ))
+col_star_index <- which(grepl("Item.?encoded", names(sheet1), ignore.case = TRUE))[1]  # column with the Item encoded
+if (is.na(col_star_index)) {
+  warning("No column matching 'Item encoded' found in Sheet1's header row. Check column alignment.")
 }
+col_star_name <- if (!is.na(col_star_index)) names(sheet1)[col_star_index] else NA_character_
 
 # Reproduce the E:L naming formulas in R. This gives deterministic cache values
 # even when a row was just added and Excel has not opened/recalculated the file.
@@ -141,30 +139,29 @@ wb <- loadWorkbook(openxlsx_input)
 # (non-shared-continuation) formula against the canonical family, and fill only
 # genuinely missing formula cells on rows whose citation in column A is present.
 formula_family <- function(r) c(
-  sprintf("RIGHT(A%d,1)", r),
-  sprintf('G%d & IF(H%d<>"", "_" & H%d, "_") & IF(I%d<>"", "_" & I%d, "_") & IF(B%d<>"", "_" & B%d, "")',
-          r, r, r, r, r, r, r),
-  sprintf('SUBSTITUTE(SUBSTITUTE(_xlfn.TEXTBEFORE(A%d,","), "-", ""), " ", "")', r),
-  paste0(
+  sprintf('SUBSTITUTE(SUBSTITUTE(_xlfn.TEXTBEFORE(A%d,","), "-", ""), " ", "")', r),   # E: 1st Author
+  paste0(                                                                              # F: other author(s)
     "_xlfn.LET(\n",
-    sprintf('_xlpm.authors,_xlfn.TEXTBEFORE(A%d," ("&I%d&")"),\n', r, r),
+    sprintf('_xlpm.authors,_xlfn.TEXTBEFORE(A%d," ("&G%d&")"),\n', r, r),
     '_xlpm.hasAmp,ISNUMBER(SEARCH("&",_xlpm.authors)),\n',
     '_xlpm.commasBeforeAmp,IF(_xlpm.hasAmp,LEN(_xlfn.TEXTBEFORE(_xlpm.authors,"&"))-LEN(SUBSTITUTE(_xlfn.TEXTBEFORE(_xlpm.authors,"&"),",","")),0),\n',
     'IF(NOT(_xlpm.hasAmp),"",IF(_xlpm.commasBeforeAmp>2,"etal",TRIM(_xlfn.TEXTBEFORE(_xlfn.TEXTAFTER(_xlpm.authors,"& "),","))))\n',
     ")"
   ),
-  sprintf('_xlfn.TEXTBEFORE(_xlfn.TEXTAFTER(A%d, "("), ")")', r),
-  paste0(
+  sprintf('_xlfn.TEXTBEFORE(_xlfn.TEXTAFTER(A%d, "("), ")")', r),                       # G: year
+  sprintf('E%d & IF(F%d<>"", "_" & F%d, "_") & IF(G%d<>"", "_" & G%d, "_") & IF(B%d<>"", "_" & B%d, "")',
+          r, r, r, r, r, r, r),                                                        # H: Publication name
+  paste0(                                                                              # I: DOI (or Alt)
     "_xlfn.LET(\n",
     sprintf('_xlpm.doi,IF(C%d<>"",C%d,_xlfn.TEXTAFTER(A%d,"https://doi.org/")),\n', r, r, r),
     "SUBSTITUTE(\nSUBSTITUTE(\nSUBSTITUTE(\nSUBSTITUTE(\n",
     '_xlpm.doi,\n"/","%2F"),\n":","%3A"),\n"<","%3C"),\n">","%3E")\n',
     ")"
   ),
-  sprintf('TRIM(_xlfn.TEXTJOIN("_",FALSE(),F%d,(SUBSTITUTE(SUBSTITUTE(D%d," ",""), "_", ""))))', r, r),
-  sprintf('J%d & "_" & SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(D%d,CHAR(160),"")," ",""),"_","")', r, r),
-  sprintf("IFERROR(INDEX('%s'!$A$1:$A$1000,MATCH(TRUE(),EXACT(L%d,IFERROR(_xlfn.TEXTBEFORE('%s'!$A$1:$A$1000,\".tsv\"),\"\")),0)),\"notfound\")",
-          filelist_sheet, r, filelist_sheet)
+  sprintf('TRIM(_xlfn.TEXTJOIN("_",FALSE(),H%d,(SUBSTITUTE(SUBSTITUTE(D%d," ",""), "_", ""))))', r, r),  # J: Item name
+  sprintf('I%d & "_" & SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(D%d,CHAR(160),""), " ", ""), "_", "")', r, r),   # K: Item encoded
+  sprintf("IFERROR(INDEX('%s'!$A$1:$A$1000,MATCH(TRUE(),EXACT(K%d,IFERROR(_xlfn.TEXTBEFORE('%s'!$A$1:$A$1000,\".tsv\"),\"\")),0)),\"notfound\")",
+          filelist_sheet, r, filelist_sheet)                                           # L: Public TSV match
 )
 normalize_formula <- function(x) {
   x <- gsub("'AUTO_Public_TSV_FileList'!", "AUTO_Public_TSV_FileList!", x, fixed = TRUE)

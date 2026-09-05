@@ -1,9 +1,0 @@
-Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
-species_printed,species name exactly as printed in the Zenodo dataset,,,,info,Mammals,MedinaGonzalez__2026_Data,printed name preserved (invariant 3),confirm species column header
-species_sci,accepted scientific binomial; harmonised via _keys/species_reference.csv + _keys/Stephan/species_key.csv,,,,info,Mammals,MedinaGonzalez__2026_Data,resolved in EvoM1_read_gait_excursion_medina.R,
-Angular_utilization_index,angular range utilization (AUI %) during stance-phase walking,limb,AUI.pct,point,primary,Mammals,MedinaGonzalez__2026_Data,headline morphofunctional summary,confirm header
-Limb_posture,limb posture class,limb,category,point,primary,Mammals,MedinaGonzalez__2026_Data,plantigrade / digitigrade / unguligrade,confirm header/levels
-Top_speed,reported top speed,whole-organism,Speed,point,primary,Mammals,MedinaGonzalez__2026_Data,continuous; confirm units,confirm header/units
-Locomotor_habit,locomotor habit class,whole-organism,category,point,primary,Mammals,MedinaGonzalez__2026_Data,e.g. cursorial / scansorial / fossorial,confirm header/levels
-joint_excursion_touchdown_midstance_toeoff,per-joint stance-phase angles for six limb joints,limb,angle.deg,point,info,Mammals,MedinaGonzalez__2026_Data,too granular for the trait table; kept in the frozen source only,confirm headers
-Method,sagittal-plane video analysis + published sources; joint angles at touchdown/midstance/toe-off across 182 species / 15 orders,,,,method,Mammals,MedinaGonzalez__2026_Data,classified by posture / body mass / top speed / habit,mix of new video measurements and compiled published values (flag per-species role)

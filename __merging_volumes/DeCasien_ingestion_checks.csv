@@ -1,9 +1,0 @@
-check,pass,detail
-volumes_long: species x variable unique,True,0 duplicated keys
-no DeCasien-team overlaps a primary (species x var),True,0 overlaps; DeCasien-team rows=0
-spot values present in unfiltered,True,0 missing; e.g. []
-no rows lost vs pre-run backup,True,0 lost
-changed values confined to expected vars,True,"100 changed, 0 outside /Neocortex|Total_brain/"
-comparison decasien_only == 0,True,0 remain
-Disco cells scripted-reclassified,True,2/2 Disco cell(s) = decasien_duplicate_of_Hylobates_lar_Disco
-no match->non-match regressions,True,0 former-match rows no longer match

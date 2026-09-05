@@ -24,10 +24,11 @@ See `_keys/specimen_crosswalk/SPECIMEN_INFORMATION_BOUNDARY.md`.
 
 ## Source material and access
 
-- `Stephan and Zilles Collections specimen lists/` — collection PDFs.
-- `Structural and functional organisation of the brain (INM-1)/` — INM-1 lists.
-
-The unpublished master catalog and its parsed derivative have moved to
-`Evo-M1-Trait-Data-restricted/specimen_registry/`. The collection PDFs remain
-here pending a per-file public-availability and redistribution review; they are
-not a basis for new public identity claims until that review is recorded.
+The unpublished master catalog and its parsed derivative live in
+`Evo-M1-Trait-Data-restricted/specimen_registry/`. As of 2026-09-05 the raw
+collection-list PDFs ("Stephan and Zilles Collections specimen lists/", incl.
+the INM-1 lists) also moved there, to
+`specimen_registry/source_material/collection_lists_pending_review/`, pending a
+per-file public-availability and redistribution review; they are not a basis
+for new public identity claims until that review is recorded. Only the notes
+above — public accounts drawn from those collections — stay in this repo.

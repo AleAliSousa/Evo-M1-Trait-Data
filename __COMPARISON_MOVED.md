@@ -60,3 +60,28 @@ from there; the audit that used it moved to the private repo's `restricted_check
 `_skills/build-dataset-item/references/__HOWTO_build_a_dataset_file.md` as before, and place its
 check by the rules in [`REPO_BOUNDARY.md`](REPO_BOUNDARY.md) §3 — which for most sources means
 creating the comparison folder in the private repo rather than here.
+
+## 2026-09-05 addendum: repair after a manual move, and a boundary-rule change
+
+This file, `____TODO/`, the four public specimen notes under `____Collections and Specimen notes/`,
+and three top-level cross-publication checks (`__cerebellum_protocol_comparison`,
+`__energetics_comparison`, `__flow_comparison`) were moved by hand into
+`Evo-M1-Trait-Data-restricted`, alongside a correct move/rename of `____Sensory_audiovisual` to
+`unpublished_data/____Unpublished__Sensory_audiovisual/`. This file, `____TODO/`, and the public
+specimen notes have been moved back here, since none of them are checks. Separately, the user
+changed the check-placement rule: **every check now lives in the restricted repo regardless of
+whether its inputs are public** (see `REPO_BOUNDARY.md`, updated 2026-09-05). Under that rule the
+three cross-publication checks above stay in the restricted repo (their path resolution was broken
+by the move and has been fixed there), and five more public `comparison/` folders —
+`Heffner_Heffner_1992_a`, `Heffner_etal_2020`, `Koay_etal_1998`, `Kirk_Kay_2004`,
+`Veilleux_Kirk_2014` — moved into `restricted_checks/` alongside them. Two of those needed live-code
+fixes rather than a plain move: `Heffner_Heffner_1992_a`'s comparison script was rewired to resolve
+the public repo via `_paths.R` and the restricted input via its new
+`unpublished_data/____Unpublished__Sensory_audiovisual/` path; `Heffner_etal_2020_Figure3_mirror.py`
+had its restricted-input check extracted into a new standalone script in the restricted repo,
+leaving only the public build behind. A genuine data-loss bug was also found and fixed in passing:
+12 real (non-placeholder) files were left behind under a stale `unpublished_data/____Sensory_audiovisual/`
+during the rename to `____Unpublished__Sensory_audiovisual/`; they were recovered and moved into the
+correctly-named tree. One further boundary item was flagged but not resolved:
+`Baron_etal_1996_overlap_taxonomy_audit.R` (public repo) writes both a build-relevant crosswalk CSV
+and an audit-report CSV from one script — see `REPO_BOUNDARY.md` §6 item 1.

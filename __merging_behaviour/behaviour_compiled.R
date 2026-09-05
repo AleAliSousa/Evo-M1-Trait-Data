@@ -43,9 +43,10 @@ istxt <- function(x) !(is.na(x) | trimws(x) == "" | tolower(trimws(x)) %in% c("n
 
 TEAM <- c(schniter="Schniter", manyprimates="ManyPrimates", heffner="Heffner", iwaniuk="Iwaniuk",
           wimberly="Wimberly", granatosky="Granatosky", caspar="Caspar", heldstab="Heldstab",
-          baker="Baker", reader="Reader", cst="Bortoff_Strick")
+          baker="Baker", reader="Reader", cst="Bortoff_Strick", medina="Medina")
 CATEG <- c("Gait","Foot_Posture","Arboreal_terrestrial","Tool_use","Extractive_foraging",
-           "Tool_Manufacture","True_Tool_Use","CM_connection_inference")
+           "Tool_Manufacture","True_Tool_Use","CM_connection_inference",
+           "Limb_posture","Top_speed","Locomotor_habit")
 
 ## gather raw observations: one row per (Species, Measure, source)
 grab <- function(file, col, measure, srckey) {
@@ -95,7 +96,16 @@ obs <- bind_rows(
   grab("dexterity_baker.xlsx","True_Tool_Use","True_Tool_Use","baker"),
   grab("dexterity_baker.xlsx","peak_workspace","peak_workspace","baker"),
   grab("dexterity_baker.xlsx","relative_size","relative_size","baker"),
-  grab("dexterity_baker.xlsx","real_size","real_size","baker"))
+  grab("dexterity_baker.xlsx","real_size","real_size","baker"),
+  ## Medina-González 2026 (MedinaGonzález__2026_Data) — species-level summary from
+  ## gait_excursion_medina.xlsx (per-record joint-excursion data aggregated to species means/modes
+  ## in the reader). Single-source, primary. Limb_posture is a distinct Measure from Wimberly's
+  ## Foot_Posture (different codings, different sources — see the paper folder's README).
+  grab("gait_excursion_medina.xlsx","Angular_utilization_index_FL","Angular_utilization_index_FL","medina"),
+  grab("gait_excursion_medina.xlsx","Angular_utilization_index_HL","Angular_utilization_index_HL","medina"),
+  grab("gait_excursion_medina.xlsx","Limb_posture","Limb_posture","medina"),
+  grab("gait_excursion_medina.xlsx","Top_speed","Top_speed","medina"),
+  grab("gait_excursion_medina.xlsx","Locomotor_habit","Locomotor_habit","medina"))
 ## Baker log10 hand-bone lengths (19 measures; Measure name == source column name)
 bone_cols <- grep("^log10_.*_mm$", names(rd("dexterity_baker.xlsx")), value = TRUE)
 obs <- bind_rows(obs, bind_rows(lapply(bone_cols, function(cc)
@@ -136,7 +146,12 @@ META <- bind_rows(META, tribble(
  "Zoological_record_article_count","research_effort","articles",list(c("reader","primary")),
  "CST_termination_grade","motor_pathway","ordinal 0-2",list(c("cst","primary")),
  "CM_monosynaptic","motor_pathway","binary 0/1",list(c("cst","primary")),
- "CM_connection_inference","motor_pathway","category",list(c("cst","primary"))
+ "CM_connection_inference","motor_pathway","category",list(c("cst","primary")),
+ "Angular_utilization_index_FL","locomotion","percent",list(c("medina","primary")),
+ "Angular_utilization_index_HL","locomotion","percent",list(c("medina","primary")),
+ "Limb_posture","locomotion","category",list(c("medina","primary")),
+ "Top_speed","locomotion","category",list(c("medina","primary")),
+ "Locomotor_habit","locomotion","category",list(c("medina","primary"))
 ))
 ## Baker log10 hand-bone length measures (all single-source, baker primary)
 META <- bind_rows(META, tibble(Measure = bone_cols, mclass = "hand_morphology",

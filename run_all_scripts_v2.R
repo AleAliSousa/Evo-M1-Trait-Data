@@ -61,9 +61,6 @@ SKIP_PATTERNS <- c(
   ## Frozen author code inside a source folder: it is part of the FROZEN SOURCE MATERIAL
   ## (Heuer 2023 GitHub release) and expects the authors' own repo layout, not ours.
   "(^|/)source_data/"           = "frozen author code shipped with the source release; never run in a sweep",
-  ## Externally blocked build: reads the Medina-González TSV, which cannot exist until the
-  ## restricted Zenodo record opens. The script itself now stops with that explanation.
-  "(^|/)EvoM1_read_gait_excursion_medina\\.R$" = "Medina-González source restricted on Zenodo; build blocked externally (see roadmap)",
   ## Optional on-demand tool: joins two PUBLISHED trees the curator supplies by hand as
   ## _keys/phylo_placental.* + _keys/phylo_marsupial.*. Those inputs are deliberately not in the
   ## repo, so an unattended sweep can only ever hit its input guard and log a false FAILED. The

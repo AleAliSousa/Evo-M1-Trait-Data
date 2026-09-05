@@ -16,7 +16,7 @@
 | `reference_tables/…_caption_key.csv` | the caption's species key, verbatim (69 entries: Ef/Ml/Nl/Ra/Rf + 1–64), with medium and printed marker |
 | `reference_tables/…_species_crosswalk.csv` | printed misprints/older names → corrected binomials (verified against page images) |
 | `reference_tables/…_definitions.csv` | data dictionary (10-col schema) |
-| `comparison/…_vs_SensoryData_compiled.csv` | audit vs the compiled sensory check fixture |
+| `…_vs_SensoryData_compiled.csv` (moved 2026-09-05 to `Evo-M1-Trait-Data-restricted/restricted_checks/Koay_etal_1998/comparison/`) | audit vs the compiled sensory check fixture |
 
 Public TSV: `__Public/comparative-data/10.1037%2F0735-7036.112.4.371_Figure6.tsv`.
 

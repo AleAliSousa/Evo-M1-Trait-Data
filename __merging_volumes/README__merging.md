@@ -222,17 +222,24 @@ item enters its `papers` table. The 2026-06-24 expansion that folded the
 DeCasien sources (Sherwood 2004 `_TABLEI`, Barks 2014, Rilling & Insel 1998/1999, Stimpson 2015,
 and the `*_viaDeCasien` tables) *into* this merge was reverted: cross-team averaging shifted
 great-ape values away from DeCasien's single-source figures (44 regressions; see
-`_EXPANSION_FINDINGS.md`). Those papers are no longer compiled here. The merge-vs-DeCasien
-comparison lives in its own scripts. Two ways to compare:
-(1) **value-match** (recommended; needs only the canonical core):
-`../DeCasien_Higham_2019/DeCasien_Higham_2019_SupplementaryData1-BrainRegion.R` value-matches
-DeCasien's published MOESM3 numbers against this core merge's `volumes_unfiltered.csv` /
-`volumes_long.csv`. It now takes an optional `merge_suffix` (default `""` = core).
-(2) **DeCasien source-subset build** (`volumes_compiled_DeCasien.R`): a dedicated sibling containing
-only the volume-source papers cited by DeCasien & Higham, writing `volumes_*_DeCasien.csv` and
-`DeCasien_vs_merge_comparison_DeCasien.csv`. It is a reproduction/comparison subset, not an
-expanded canonical merge. Historical documentation that called it `EXPANDED` described an obsolete
-experiment; no `volumes_*_EXPANDED.csv` file is canonical or generated now.
+`_EXPANSION_FINDINGS.md`). Those papers are no longer compiled here.
+
+**2026-09-05: the merge-vs-DeCasien comparison moved to the restricted repo** (all checks live
+there now, per `REPO_BOUNDARY.md`) —
+`Evo-M1-Trait-Data-restricted/restricted_checks/DeCasien_Higham_2019/comparison/
+DeCasien_Higham_2019_SupplementaryData1-BrainRegion.R`. It value-matches DeCasien's published
+MOESM3 numbers against *this* core merge's `volumes_unfiltered.csv` / `volumes_long.csv`, resolving
+this public repo via `_paths.R`/`evom1_repo()` so it always reads the current tables rather than a
+snapshot. The once-parallel **"DeCasien source-subset build"** (`volumes_compiled_DeCasien.R`,
+formerly here, plus its ~20 `*_DeCasien`/`DeCasien_ingestion_*` sibling outputs) was retired in the
+same pass: it rebuilt an isolated DeCasien-only merge under a `merge_suffix`, duplicating this
+folder for a reproduction/comparison subset that was never the canonical path (the value-match
+above was already documented as recommended) and fed a gap-fill mechanism
+(`DeCasien_gapfill_candidates.csv` → `volumes_compiled.R` step 4b) that no longer exists in the
+current `volumes_compiled.R` — the exclusion guard a few lines above is what's live now, and that
+stale documentation shouldn't be trusted if it resurfaces elsewhere. If a DeCasien-subset
+reproduction is needed again, rebuild it from git history rather than resurrecting the deleted
+files as-is.
 
 Species harmonization: `MacLeod_etal_2003_` and `Smaers_etal_2011_*` now carry species_key tokens
 `MacLeod2003` / `Smaers2011` (added to `_keys/Stephan/species_key.csv`), which lump great apes to the

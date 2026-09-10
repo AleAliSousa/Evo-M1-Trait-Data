@@ -12,17 +12,38 @@ comparable format. For every table we keep four files in the paper's folder:
 
 This guide is about the first one.
 
+## The memorable distinction
+
+**The snapshot is for a person checking the paper; the cleaned CSV/TSV is for a
+computer analysing the data.**
+
+Use this side-by-side test: open the snapshot beside the published table. Can you
+find and compare corresponding values easily because the headings, row order, and
+column order remain in the same places? If not, the snapshot has probably been
+cleaned or rearranged too far.
+
+The snapshot does **not** need to reproduce every visual detail exactly. Fonts,
+borders, spacing, merged cells, and difficult symbols may differ when necessary.
+Preserve the published organisation and meaning closely enough for a reliable
+cell-by-cell comparison.
+
 ---
 
 ## What a snapshot is
 
 > **A snapshot is a frozen, faithful digital copy of a published table, saved
-> exactly as it appears in the source — before any cleaning.**
+> before any cleaning.**
 
-Think of it as a photograph of the table. It looks like the paper: same layout,
-same column headers, same values, same footnote marks, same reference numbers,
-same units. It is *digitized* (so R can read it — CSV or Excel) but **not yet
-tidied**.
+Think of it as the spreadsheet an author might have prepared for the publisher,
+or that a publisher might have formatted further for the page. It retains the
+published table's organisation: headings and subheadings, row order, column order,
+values, footnote marks, reference numbers, units, and meaningful blank cells. It
+is digitised as text (CSV or Excel) but **not yet tidied for analysis**.
+
+Published tables often contain features that help a reader but are inconvenient
+for statistical software, such as grouped rows, multi-level headings, notes, and
+footnotes. Those features belong in the snapshot when they preserve meaning or
+make comparison with the paper easier.
 
 ## Why we bother (the point of it)
 
@@ -108,6 +129,26 @@ Keep everything that is in the printed table, even if it looks messy:
 Cleaning (numbers → numeric, splitting columns, NCBI species names, etc.) comes
 later, in the script. Not here.
 
+## What belongs outside the snapshot
+
+Do not force contextual information into the snapshot if it was not part of the
+published table. Keep it accessible elsewhere in the paper folder or collection:
+
+- `reference_tables/<Item>_definitions.csv` defines variables, including acronyms
+  or terms that would otherwise be ambiguous.
+- `reference_tables/<Item>_references.csv` maps secondary-source keys printed in
+  the data to the relevant bibliography entries. Include only references used by
+  the item, not the paper's entire bibliography.
+- Collection-specific `_keys/` files disambiguate species names and anatomical
+  terms. Preserve the name printed by the paper in the analysis data as well.
+- If useful information appears only in prose, create a clearly labelled file such
+  as `<Paper>_data_from_text_snapshot.csv` and record the section or passage and
+  extraction method in the README.
+
+These resources should be join-ready where practical so species binomials, source
+references, definitions, or anatomical mappings can be bound to the analysis data
+without changing the faithful snapshot.
+
 ## How to make one — methods, best first
 
 1. **Direct download.** If the journal offers the table/supplement as `.xlsx`
@@ -189,8 +230,12 @@ Copy the format of any existing `*.README.md`.
 
 ## Quick self-check before you move on
 
-- Could someone open my snapshot next to the PDF and see they're the same table?
-- Did I keep the footnotes and reference numbers?
+- Could someone open my snapshot next to the PDF and compare values easily in the
+  same row and column positions?
+- Did I keep the headings, subheadings, row order, column order, units, footnotes,
+  and reference numbers that matter for interpretation?
+- Did I avoid reproducing decorative formatting that does not help comparison or
+  preserve meaning?
 - Is *every* change to the data written down in the `.R` script (and nothing
   baked silently into the snapshot)?
 - Did I save a local snapshot file, even though the data is online?

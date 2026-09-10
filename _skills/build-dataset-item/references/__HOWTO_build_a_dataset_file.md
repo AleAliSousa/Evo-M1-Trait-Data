@@ -24,6 +24,16 @@ Source (PDF / journal Excel / Adobe export)
   → merge           added to __merging_volumes / __merging_cellcounts (if PRIMARY)
 ```
 
+## The two outputs have different jobs
+
+**Snapshot = published-table view for human audit. CSV/TSV = analysis view for
+software.** The snapshot keeps the published organisation closely enough for a
+side-by-side comparison: headings, subheadings, row order, column order, original
+units, footnotes, and meaningful blanks. It need not reproduce every font, border,
+or difficult symbol exactly. The analysis CSV/TSV removes presentation formatting
+and reshapes or enriches the values as needed for R, Python, SPSS, or another
+analysis program. Every transformation between the two belongs in the R script.
+
 **One golden rule (inherited from the snapshot guide):** freeze the source *before* any cleaning;
 every change after that happens in the `.R` script, never silently in the frozen copy. What counts as
 the frozen copy depends on the source: for a **digital-native** source (a journal-supplied CSV/XLSX)
@@ -127,7 +137,10 @@ no snapshot to make. The steps below apply to **printed/scanned/OCR** sources, w
 the frozen copy.
 
 Reproduce the **specific printed table**, in its **original units and layout**: keep the caption,
-column headers, footnote markers/superscripts, `n.a.`/`—`/blank cells, grouping rows and row order.
+column headers, subheadings, column order, footnote markers/superscripts, `n.a.`/`—`/blank cells,
+grouping rows, and row order. Apply the side-by-side test: can a reviewer find and compare the
+corresponding values easily? Exact fonts, borders, spacing, and difficult symbols are not required
+when they do not affect meaning or comparison.
 Don't impose a template — a species-as-rows table, a structure-as-rows single-specimen table
 (e.g. Zilles 1988), and a per-individual table (e.g. Bauernfeind 2013) each look different. Get the
 values from the curated `comparison/*.csv` when one exists (cleaner than OCR), but lay them out to
@@ -315,6 +328,20 @@ Code, Definition, Structure, Measure, Stat, role, taxon, Reference, Note, Source
 Info/metadata columns (Species, code, n, source) have an empty `Measure` so they aren't counted as
 variables. `_keys/build_variable_catalog.R` reads every `*_definitions.csv` into the variable catalog.
 
+**Related information outside the main table.** Keep relevant information found elsewhere in the
+paper accessible without inserting it into the snapshot:
+
+- Secondary references printed per row or value →
+  `reference_tables/<Item>_references.csv`, item-scoped and join-ready.
+- Species binomials and anatomical disambiguation → the appropriate collection-specific `_keys/`
+  file, while preserving the paper's printed term in the analysis data.
+- Key values described only in prose → a separately named constructed source such as
+  `<Paper>_data_from_text_snapshot.csv`, with the section or passage and extraction method recorded
+  in the README.
+
+Not all contextual information must be repeated in the analysis CSV/TSV, but it should be present
+in the database structure and preferably bindable when needed.
+
 **Naming & location.** Canonical is `reference_tables/<Folder>_Table<N>_definitions.csv` (one per
 built table). Two legacy variants still exist in the tree and are tolerated but being migrated:
 bare `<Folder>_definitions.csv` (no table number) and definitions files at the folder top level
@@ -393,6 +420,10 @@ applies this rubric.
       printed/scanned: `_snapshot` frozen + reads like the PDF (caption, headers, footnotes, units, row order kept)
 - [ ] the `.R` **reads** the frozen source — no table values hardcoded in the script, and the
       snapshot is not just the clean CSV under another name
+- [ ] snapshot passes the side-by-side test: headings, row order, and column order make values easy
+      to compare with the published table
+- [ ] analysis CSV/TSV has no accidental empty first column or other extraction artefact
+- [ ] the R script runs from a clean session and writes the intended CSV and public TSV
 - [ ] cleaning reproducible from the frozen source; names cleaned; units converted + documented
 - [ ] observation level recorded (species / individual / intraspecific group) when rows are not
       species — definitions `Method:observation_level` row + README note

@@ -21,6 +21,20 @@ read (not re-derived) whenever a step below needs more than a sentence:
 The repo copies under `_skills/build-dataset-item/references/` are canonical;
 when the repo is mounted, read those — an installed bundle may lag behind them.
 
+## Mental model
+
+**Snapshot = published-table view for human audit. CSV/TSV = analysis view for
+software.** A reviewer should be able to open the snapshot beside the source and
+compare values easily because headings, row order, and column order remain aligned.
+The snapshot need not reproduce every decorative detail exactly. The R script then
+removes unnecessary presentation formatting, reshapes the data, converts units, and
+writes the analysis-ready CSV/TSV.
+
+Context needed for interpretation but not printed in the table belongs in
+`reference_tables/`, the appropriate collection-specific `_keys/`, or a clearly
+named constructed source such as `<Paper>_data_from_text_snapshot.csv`. Keep these
+resources item-scoped and join-ready where practical.
+
 ## Tool layer
 
 ```r
@@ -49,11 +63,18 @@ build_dataset_item(item_dir, item_name, dry_run = FALSE)        # 3. build + val
    species name, write the analysis CSV, look up `Item encoded` in
    `__ReadMe.xlsx` by `Item name` and write the public TSV to
    `__Public/comparative-data/`.
-4. **Validate** — `build_dataset_item(..., dry_run = FALSE)` calls
+4. **RA visual and script check** — compare the snapshot side-by-side with the
+source; confirm that headings, row order, column order, values, units, and meaningful
+notes remain easy to match. Inspect the analysis CSV/TSV for accidental empty
+columns or extraction artefacts, and run the R script from a clean session. Capture
+essential untabulated information in `reference_tables/`, `_keys/`, or a separately
+named constructed snapshot rather than silently adding it to the published-table
+snapshot.
+5. **Validate** — `build_dataset_item(..., dry_run = FALSE)` calls
    `validate_dataset_item()` automatically and checks all 7 invariants
    (csv / tsv / readme / definitions / frozen_source / registry_row /
    tsv_name_match, with a trailing-underscore guard on the last one).
-5. **Register** — emit `<Item>_registry_row.xlsx` in the paper folder, built
+6. **Register** — emit `<Item>_registry_row.xlsx` in the paper folder, built
    against the live Sheet1 header row of `__ReadMe.xlsx` (currently A–AN).
    Fill ONLY column A (citation), C (only if overriding the DOI), D
    (`Item number`, e.g. "Table 1"), and the descriptive columns N→AN (title,

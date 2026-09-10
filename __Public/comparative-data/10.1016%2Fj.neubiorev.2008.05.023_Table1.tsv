@@ -1,1 +1,8 @@
-"species"	"common_name"	"body_mass_kg"	"brain_mass_g"	"total_sleep_time_h_day"	"unihemispheric_sws_pct"	"bilateral_sws_pct"	"rem_sleep_pct"	"method"	"reference"
+"species"	"species_confidence"	"common_name"	"common_name_printed"	"n_animals"	"age_class"	"age_printed"	"number_of_jerks"	"reference"	"reference_unpublished"	"reference_in_press"
+"Eschrichtius robustus"	"high"	"gray whale"	"Gray whale"	1	"calf"	"One 1-year old calf"	"45 over 6 days"	"Lyamin et al. (2000)"	FALSE	FALSE
+"Tursiops truncatus"	"medium"	"bottlenose dolphin"	"Bottlenose dolphin"	3	"adult"	"Three adult males and one adult female"	"15–98 per day"	"Mukhametov and Lyamin (1997)"	FALSE	FALSE
+"Inia geoffrensis"	"high"	"amazon river dolphin"	"Amazon River dolphin"	2	"adult"	"Two adults"	"26 over 3 days in female, a few/night in male"	"Oleksenko et al. (1996)"	FALSE	FALSE
+"Delphinapterus leucas"	"high"	"beluga"	"Beluga"	1	"adult"	"One adult male"	"144 ± 24, average over 6 nights"	"Lyamin et al. (2002a b c)"	FALSE	FALSE
+"Orcinus orca"	"high"	"killer whale"	"Killer whale"	1	"calf"	"One 1–4 months old calf"	"<29 single and <10 serial per night"	"Lyamin and Siegel (unpublished data)"	TRUE	FALSE
+"Orcinus orca"	"high"	"killer whale"	"Killer whale"	1	"adult"	"One adult female"	"1–6 (2.4 average) per night over 4 nights"	"Lyamin and Siegel (unpublished data)"	TRUE	FALSE
+"Cephalorhynchus commersonii"	"high"	"commerson's dolphin"	"Commerson's dolphin"	3	"adult"	"Three adult males"	"13, 31 and 35/3 days"	"Shpak et al. (in press)"	FALSE	TRUE

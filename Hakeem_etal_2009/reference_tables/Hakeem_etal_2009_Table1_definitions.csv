@@ -1,0 +1,27 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species,binomial harmonized to key,,Species,,primary,Proboscidea,Hakeem_etal_2009_Table1,via _keys/Hof/species_key.csv,
+species_as_published,African elephant,,Species,,primary,,Hakeem_etal_2009_Table1,not printed in the table,"Materials and methods: the African elephant brains were obtained from the Cleveland Metroparks Zoo; Elephant 1 was a wild-born female of about 42 years at death"
+specimen,specimen label as printed,,Specimen,,info,,Hakeem_etal_2009_Table1,Elephant 1,"the paper also examined Elephant 2 and an Indian elephant (Elephas maximus); neither appears in this table"
+ven_n_FI_L,VENs in area FI,fronto_insular_cortex,N.n,,primary,Proboscidea,Hakeem_etal_2009_Table1,left hemisphere,
+ven_n_FI_R,VENs in area FI,fronto_insular_cortex,N.n,,primary,Proboscidea,Hakeem_etal_2009_Table1,right hemisphere,
+ven_n_FI_total,VENs in area FI,fronto_insular_cortex,N.n,,primary,Proboscidea,Hakeem_etal_2009_Table1,left + right; the merge unit,computed in the .R; not printed
+neuron_n_FI_L,total neurons in area FI,fronto_insular_cortex,N.n,,primary,Proboscidea,Hakeem_etal_2009_Table1,left hemisphere,
+neuron_n_FI_R,total neurons in area FI,fronto_insular_cortex,N.n,,primary,Proboscidea,Hakeem_etal_2009_Table1,right hemisphere,"1,300,000 against 348,000 on the left, a 3.7-fold difference within one animal; printed as published and not reconciled"
+neuron_n_FI_total,total neurons in area FI,fronto_insular_cortex,N.n,,primary,Proboscidea,Hakeem_etal_2009_Table1,left + right; the merge unit,computed in the .R; not printed
+ven_pct_FI_L,VENs as a percentage of total neurons in FI,fronto_insular_cortex,pct.neurons,,primary,Proboscidea,Hakeem_etal_2009_Table1,recomputed from the counts; printed as 2.6%,
+ven_pct_FI_R,VENs as a percentage of total neurons in FI,fronto_insular_cortex,pct.neurons,,primary,Proboscidea,Hakeem_etal_2009_Table1,recomputed from the counts; printed as 0.78%,
+ven_pct_FI_total,VENs as a percentage of total neurons in FI,fronto_insular_cortex,pct.neurons,,primary,Proboscidea,Hakeem_etal_2009_Table1,"recomputed as 19310 / 1648000; averaging the two printed percentages gives 1.69% and is wrong",computed in the .R; not printed
+ven_ce_gundersen_L,coefficient of error of the VEN estimate,fronto_insular_cortex,CE,,info,,Hakeem_etal_2009_Table1,Gundersen estimator with m = 1,printed as Gunderson; the estimator is Gundersen
+ven_ce_gundersen_R,coefficient of error of the VEN estimate,fronto_insular_cortex,CE,,info,,Hakeem_etal_2009_Table1,Gundersen estimator with m = 1,printed as Gunderson; the estimator is Gundersen
+ven_ce_schmitzhof_L,coefficient of error of the VEN estimate,fronto_insular_cortex,CE,,info,,Hakeem_etal_2009_Table1,Schmitz-Hof first estimator,
+ven_ce_schmitzhof_R,coefficient of error of the VEN estimate,fronto_insular_cortex,CE,,info,,Hakeem_etal_2009_Table1,Schmitz-Hof first estimator,
+neuron_ce_gundersen_L,coefficient of error of the total neuron estimate,fronto_insular_cortex,CE,,info,,Hakeem_etal_2009_Table1,Gundersen estimator with m = 1,printed as Gunderson; the estimator is Gundersen
+neuron_ce_gundersen_R,coefficient of error of the total neuron estimate,fronto_insular_cortex,CE,,info,,Hakeem_etal_2009_Table1,Gundersen estimator with m = 1,printed as Gunderson; the estimator is Gundersen
+neuron_ce_schmitzhof_L,coefficient of error of the total neuron estimate,fronto_insular_cortex,CE,,info,,Hakeem_etal_2009_Table1,Schmitz-Hof first estimator,
+neuron_ce_schmitzhof_R,coefficient of error of the total neuron estimate,fronto_insular_cortex,CE,,info,,Hakeem_etal_2009_Table1,Schmitz-Hof first estimator,
+n_individuals,individuals in this table,,,,info,,Hakeem_etal_2009_Table1,1,the table covers the two hemispheres of Elephant 1 only
+source,source id,,Source,,primary,,Hakeem_etal_2009_Table1,,
+Method:cell_counting,stereologic counts,fronto_insular_cortex,,,method,,Hakeem_etal_2009_Table1,StereoInvestigator; VENs plotted at 400x in Neurolucida,"frontal-lobe slabs about 20 mm thick frozen and cut at 120 um; every 20th section mounted, every 4th through FI; cresyl violet Nissl"
+Method:observation_level,hemisphere,,,,method,,Hakeem_etal_2009_Table1,"the printed rows are hemispheres, not specimens; _L and _R are kept and _total computed",build HOWTO section 6: keep both sides and compute the combined value
+Method:derived_values,percentages recomputed,,,,method,,Hakeem_etal_2009_Table1,"ven_pct_* is computed from the counts and checked against the printed percentage at the precision it was printed at",both numerator and denominator are printed so the ratio need not be transcribed
+Method:transcription,hand transcription,,,,method,,Hakeem_etal_2009_Table1,"typed into the frozen snapshot by Claude (AI assistant) on 10 September 2026 from page images supplied by M. Windley, and checked by recomputing both printed percentages from the printed counts","the paper is not open access and has no PMC copy, so there is nothing to scrape"

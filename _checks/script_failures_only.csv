@@ -1,5 +1,33 @@
 "script","status","error","start_time","end_time","elapsed_seconds"
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/compare_to_reference.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_item_name_resolution.R","FAILED","registry Item names: 431   |   TSVs on disk: 336   |   NA.tsv present: no
+
+__merging_behaviour/behaviour_compiled.R                     0 item name(s) referenced   OK
+__merging_body_ecology/body_ecology_compiled.R               0 item name(s) referenced   OK
+__merging_brain_mass/brain_mass_compiled.R                   0 item name(s) referenced   OK
+__merging_cellcounts/cellcounts_compiled.R                  15 item name(s) referenced   OK
+__merging_cerebellar_folding/cerebellar_folding_compiled.R   0 item name(s) referenced   OK
+__merging_cortical_areas/cortical_areas_compiled.R          11 item name(s) referenced   OK
+__merging_cortical_layers/cortical_layers_compiled.R         1 item name(s) referenced   OK
+__merging_fossil_brain_glucose/fossil_brain_glucose_compiled.R   0 item name(s) referenced   OK
+__merging_gyrification/gyrification_compiled.R               3 item name(s) referenced   OK
+__merging_sensory/sensory_compiled.R                         4 item name(s) referenced   OK
+__merging_sleep/sleep_compiled.R                             4 item name(s) referenced   OK
+__merging_volumes/volumes_compiled_select.R                 34 item name(s) referenced   OK
+__merging_volumes/volumes_compiled.R                        67 item name(s) referenced   OK
+
+orphaned TSVs (on disk, claimed by no registry row): 5
+      10.1016%2Fj.neurobiolaging.2009.05.013_normative.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1073%2Fpnas.1911264116_ERABIS.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1093%2Fcercor%2Fbhr033_authordata.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1159%2F000121494_TableI.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.6084%2Fm9.figshare.c.3899422.v1_Dataset1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+rows with a citation but no Item name (need _tools/file_list.R): 0
+
+all referenced item names resolve to a TSV on disk.
+run _tools/restore_registry_rows.R (adding any new row to its ROWS list), then _tools/file_list.R.","2026-09-12 10:46:21.603791","2026-09-12 10:46:22.399484",0.795692920684814
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/find_csv_tsv_creators.R","TIMEOUT","
+Execution halted","2026-09-12 10:46:22.917821","2026-09-12 10:51:22.967091",300.049270153046
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Fritsches_etal_2005/Fritsches_etal_2005_Fig2.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
 ✔ dplyr     1.2.1     ✔ readr     2.2.0
 ✔ forcats   1.0.1     ✔ stringr   1.6.0
 ✔ ggplot2   4.0.3     ✔ tibble    3.3.1
@@ -9,62 +37,69 @@
 ✖ dplyr::filter() masks stats::filter()
 ✖ dplyr::lag()    masks stats::lag()
 ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
-Error: reference_csv not found: /Users/crossmodal/Desktop/test_qc/qc_orig_stephan_primates/data_raw/Stephan_primates.csv
-Execution halted","2026-09-09 09:56:22.651669","2026-09-09 09:56:23.818934",1.16726493835449
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_item_name_resolution.R","FAILED","registry Item names: 406   |   TSVs on disk: 323   |   NA.tsv present: no
-
-__merging_behaviour/behaviour_compiled.R                     0 item name(s) referenced   OK
-__merging_body_ecology/body_ecology_compiled.R               0 item name(s) referenced   OK
-__merging_brain_mass/brain_mass_compiled.R                   0 item name(s) referenced   OK
-__merging_cellcounts/cellcounts_compiled.R                  15 item name(s) referenced   OK
-__merging_cerebellar_folding/cerebellar_folding_compiled.R   0 item name(s) referenced   OK
-__merging_cerebral_metabolic_rate/cerebral_metabolic_rate_compiled.R   0 item name(s) referenced   OK
-__merging_cortical_areas/cortical_areas_compiled.R          11 item name(s) referenced   OK
-__merging_cortical_layers/cortical_layers_compiled.R         1 item name(s) referenced   OK
-__merging_fossil_brain_glucose/fossil_brain_glucose_compiled.R   0 item name(s) referenced   OK
-__merging_gyrification/gyrification_compiled.R               3 item name(s) referenced   OK
-__merging_sensory/sensory_compiled.R                         5 item name(s) referenced   1 UNRESOLVED
-      Heffner_Heffner_1992_a                         -> no encoding (not in __ReadMe.xlsx 'Item name', no enc_override)
-__merging_sleep/sleep_compiled.R                             4 item name(s) referenced   OK
-__merging_volumes/volumes_compiled_select.R                 34 item name(s) referenced   OK
-__merging_volumes/volumes_compiled.R                        67 item name(s) referenced   OK
-
-orphaned TSVs (on disk, claimed by no registry row): 10
-      10.1002%2Fdneu.22554_Table2.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1002%2Fdneu.22554_Table3.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1016%2Fj.neurobiolaging.2009.05.013_normative.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1073%2Fpnas.1911264116_ERABIS.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1073%2Fpnas.1911264116_subcortical.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1093%2Fcercor%2Fbhr033_authordata.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1093%2Fcercor%2Fbhr033_reportedvalues.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1093%2Fcercor%2Fbhr033_Table2.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1371%2Fjournal.pone.0110356_DataS1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.6084%2Fm9.figshare.c.3899422.v1_Dataset1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-rows with a citation but no Item name (need _tools/file_list.R): 9
-      Sheet1 row 408: Morgan, J. T., Barger, N., Amaral, D. G., & Schumann, C. M. ...
-      Sheet1 row 409: Hanson, K. L., Lew, C. H., Hrvoj-Mihic, B., Groeniger, K. M....
-      Sheet1 row 410: Hanson, K. L., Lew, C. H., Hrvoj-Mihic, B., Groeniger, K. M....
-      Sheet1 row 411: Karlsen, A. S., & Pakkenberg, B. (2011). Total numbers of ne...
-      Sheet1 row 412: Karlsen, A. S., & Pakkenberg, B. (2011). Total numbers of ne...
-      Sheet1 row 413: Karlsen, A. S., & Pakkenberg, B. (2011). Total numbers of ne...
-      Sheet1 row 414: Walhovd, K. B., Westlye, L. T., Amlien, I., Espeseth, T., Re...
-      Sheet1 row 415: Mackes, N. K., Golm, D., Sarkar, S., Kumsta, R., Rutter, M.,...
-      Sheet1 row 416: Mackes, N. K., Golm, D., Sarkar, S., Kumsta, R., Rutter, M.,...
-
-1 unresolved reference(s).
-run _tools/restore_registry_rows.R (adding any new row to its ROWS list), then _tools/file_list.R.","2026-09-09 09:56:38.050632","2026-09-09 09:56:38.961693",0.91106104850769
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/find_csv_tsv_creators.R","TIMEOUT","
-Execution halted","2026-09-09 09:56:39.516543","2026-09-09 10:01:39.598513",300.081969976425
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_tools/file_list.R","FAILED","Error: Non-canonical Sheet1 naming formula(s): F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12, F13, F14, F15, F16, F17, F18, F19, F20, F21, F22, F23, F24, F25, F26, F27, F28, F29, F30, F31, F32, F33, F34, F35, F36, F37, F38, F39, F40, F41, F42, F43, F44, F45, F46, F47, F48, F49, F50, F51, F52, F53, F54, F55, F56, F57, F58, F59, F60, F61, F62, F63, F64, F65, F66, F67, F68, F69, F70, F71, F72, F73, F74, F75, F76, F77, F78, F79, F80, F81, F82, F83, F84, F85, F86, F87, F88, F89, F90, F91, F92, F93, F94, F95, F96, F97, F98, F99, F100, F101, F102, F103, F104, F105, F106, F107, F108, F109, F110, F111, F112, F113, F114, F115, F116, F117, F118, F119, F120, F121, F122, F123, F124, F125, F126, F127, F128, F129, F130, F131, F132, F133, F134, F135, F136, F137, F138, F139, F140, F141, F142, F143, F144, F145, F146, F147, F148, F149, F150, F151, F152, F153, F154, F155, F156, F157, F158, F159, F160, F161, F162, F163, F164, F165, F166, F167, F168, F169, F170, F171, F172, F173, F174, F175, F176, F177, F17
-Execution halted","2026-09-09 10:06:26.619442","2026-09-09 10:06:27.839339",1.21989703178406
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Halley_Krubitzer_2019/Halley_Krubitzer_2019_Figure1_source_audit.R","FAILED","Error: Stephan species not found: Homo sapiens sapiens
-In addition: Warning messages:
-1: Unknown or uninitialised column: `Species`. 
-2: Unknown or uninitialised column: `Species`. 
-Execution halted","2026-09-09 10:08:11.96394","2026-09-09 10:08:12.983102",1.01916217803955
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jung_etal_2022/Jung_etal_2022_Reportedresults.R","FAILED","Error: `path` does not exist: ‘Jung_etal_2022_Reportedresults_snapshot.xlsx’
-Execution halted","2026-09-09 10:09:00.21021","2026-09-09 10:09:00.758563",0.548352956771851
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jung_etal_2022/Jung_etal_2022_TableS1.R","FAILED","Error: file.exists(snapshot_file) is not TRUE
-Execution halted","2026-09-09 10:09:00.766884","2026-09-09 10:09:01.09235",0.32546591758728
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jung_etal_2022/Jung_etal_2022_TableS2.R","FAILED","Error: file.exists(snapshot_file) is not TRUE
-Execution halted","2026-09-09 10:09:01.135981","2026-09-09 10:09:01.461242",0.325260877609253
+Error in `rename()`:
+! Can't rename columns that don't exist.
+✖ Column `Habitat depth` doesn't exist.
+Backtrace:
+     ▆
+  1. ├─... %>% ...
+  2. ├─dplyr::mutate(...)
+  3. ├─dplyr::rename(...)
+  4. ├─dplyr:::rename.data.frame(...)
+  5. │ └─tidyselect::eval_rename(expr(c(...)), .data)
+  6. │   └─tidyselect:::rename_impl(...)
+  7. │     └─tidyselect:::eval_select_impl(...)
+  8. │       ├─tidyselect:::with_subscript_errors(...)
+  9. │       │ └─base::withCallingHandlers(...)
+ 10. │       └─tidyselect:::vars_select_eval(...)
+ 11. │         └─tidyselect:::walk_data_tree(expr, data_mask, context_mask)
+ 12. │           └─tidyselect:::eval_c(expr, data_mask, context_mask)
+ 13. │             └─tidyselect:::reduce_sels(node, data_mask, context_mask, init = init)
+ 14. │               └─tidyselect:::walk_data_tree(new, data_mask, context_mask)
+ 15. │                 └─tidyselect:::as_indices_sel_impl(...)
+ 16. │                   └─tidyselect:::as_indices_impl(...)
+ 17. │                     └─tidyselect:::chr_as_locations(x, vars, call = call, arg = arg)
+ 18. │                       └─vctrs::vec_as_location(...)
+ 19. └─vctrs (local) `<fn>`() at vctrs/R/subscript-loc.R:84:3
+ 20.   └─vctrs:::stop_subscript_oob(...)
+ 21.     └─vctrs:::stop_subscript(...) at vctrs/R/subscript-loc.R:503:3
+ 22.       └─rlang::abort(...) at vctrs/R/subscript.R:150:3
+Execution halted","2026-09-12 10:57:43.778054","2026-09-12 10:57:44.817917",1.03986310958862
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Lyamin_etal_2008/Lyamin_etal_2008_Table2.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error in `rename()`:
+! Can't rename columns that don't exist.
+✖ Column `Species` doesn't exist.
+Backtrace:
+     ▆
+  1. ├─... %>% ...
+  2. ├─dplyr::mutate(...)
+  3. ├─dplyr::rename(...)
+  4. ├─dplyr:::rename.data.frame(...)
+  5. │ └─tidyselect::eval_rename(expr(c(...)), .data)
+  6. │   └─tidyselect:::rename_impl(...)
+  7. │     └─tidyselect:::eval_select_impl(...)
+  8. │       ├─tidyselect:::with_subscript_errors(...)
+  9. │       │ └─base::withCallingHandlers(...)
+ 10. │       └─tidyselect:::vars_select_eval(...)
+ 11. │         └─tidyselect:::walk_data_tree(expr, data_mask, context_mask)
+ 12. │           └─tidyselect:::eval_c(expr, data_mask, context_mask)
+ 13. │             └─tidyselect:::reduce_sels(node, data_mask, context_mask, init = init)
+ 14. │               └─tidyselect:::walk_data_tree(new, data_mask, context_mask)
+ 15. │                 └─tidyselect:::as_indices_sel_impl(...)
+ 16. │                   └─tidyselect:::as_indices_impl(...)
+ 17. │                     └─tidyselect:::chr_as_locations(x, vars, call = call, arg = arg)
+ 18. │                       └─vctrs::vec_as_location(...)
+ 19. └─vctrs (local) `<fn>`() at vctrs/R/subscript-loc.R:84:3
+ 20.   └─vctrs:::stop_subscript_oob(...)
+ 21.     └─vctrs:::stop_subscript(...) at vctrs/R/subscript-loc.R:503:3
+ 22.       └─rlang::abort(...) at vctrs/R/subscript.R:150:3
+Execution halted","2026-09-12 10:59:14.12271","2026-09-12 10:59:15.245518",1.12280797958374

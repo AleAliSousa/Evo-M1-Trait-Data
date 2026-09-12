@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """build_cerebral_metabolic_rate_merge.py -- the tested builder for the cerebral
-metabolic-rate merge. House twin: cerebral_metabolic_rate_compiled.R (same
-pipeline, tidyverse idiom). See README__merging.md.
+metabolic-rate merge. See README__merging.md.
 
 Sources (all BRAIN-only; whole-body BMR lives in __merging_body_ecology):
   Heiss_etal_2004  PRIMARY    Homo sapiens regional CMRgl (PET)

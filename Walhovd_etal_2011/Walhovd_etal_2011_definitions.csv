@@ -1,10 +1,10 @@
 Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
 Region,Canonical structure name (cross-paper join),see Region,,group,info,Homo sapiens,Walhovd_etal_2011,,
-Group,Normative comparison group (typical, non-adopted),see Region,,group,info,Homo sapiens,Walhovd_etal_2011,Study 2 Non-Stressed group,
+Group,Normative comparison group (typical, non-adopted),see Region,,group,info,Homo sapiens,Walhovd_etal_2011,,
 n,Sample size (18-29 yr subset),see Region,,count,info,Homo sapiens,Walhovd_etal_2011,262 (subset of 883 multi-sample),
 taxon,Species,see Region,,group,info,Homo sapiens,Walhovd_etal_2011,,
 Volume_bilateral.mm3,Mean bilateral structure volume,see Region,Vol.mm3,group mean,primary,Homo sapiens,Walhovd_etal_2011,Voxel counts (1mm3); FreeSurfer aseg,Normative (overall) table
 Volume_bilateral.cm3,Mean bilateral volume in cm3,see Region,Vol.cm3,group mean,primary,Homo sapiens,Walhovd_etal_2011,= mm3/1000,Derived in .R
-Volume_per_hemisphere.cm3,Mean per-hemisphere volume (bilateral/2),see Region,Vol.cm3,group mean,primary,Homo sapiens,Walhovd_etal_2011,Matches ERA per-hemisphere convention used in Study 2; not meaningful for Total brain volume,Derived in .R
+Volume_per_hemisphere.cm3,Mean per-hemisphere volume (bilateral/2),see Region,Vol.cm3,group mean,primary,Homo sapiens,Walhovd_etal_2011,Per-hemisphere = bilateral/2; not meaningful for whole-brain totals,Derived in .R
 Volume_bilateral_SD.mm3,SD of bilateral volume,see Region,Vol.mm3,SD,info,Homo sapiens,Walhovd_etal_2011,,Normative (overall) table
 Method:hemisphere,Per-hemisphere volume computed as bilateral/2 to match ERA adoptee per-hemisphere volumes,see Region,,method,method,Homo sapiens,Walhovd_etal_2011,,

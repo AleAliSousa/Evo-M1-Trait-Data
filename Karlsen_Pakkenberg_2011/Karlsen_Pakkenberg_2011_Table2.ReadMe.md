@@ -1,9 +1,0 @@
-Karlsen & Pakkenberg 2011 - Table 2 (published neocortical volumes/surface/thickness)  [Study 1a]
-DOI: 10.1093/cercor/bhr033
-Source        Karlsen_Pakkenberg_2011.pdf (Table 2)
-Snapshot      Karlsen_Pakkenberg_2011_Table2_snapshot.csv   (Control vs DS; Volume/Surface/Thickness + CV/2p)
-Derived       Karlsen_Pakkenberg_2011_Table2.R -> Karlsen_Pakkenberg_2011_Table2_derived.csv
-Analysis      Karlsen_Pakkenberg_2011_analysis.R -> Karlsen_Pakkenberg_2011_analysis.csv  <-- USE THIS
-Definitions   Karlsen_Pakkenberg_2011_definitions.csv
-Online        __Public/comparative-data/10.1093%2Fcercor%2Fbhr033_Table2.tsv
-Notes         Published Table 2 (shrinkage-corrected bilateral volumes). Study 1a uses Control.

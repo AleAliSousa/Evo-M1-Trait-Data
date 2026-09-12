@@ -1,0 +1,15 @@
+Morgan et al. 2014 - amygdala stereology (human)
+Morgan JT, Barger N, Amaral DG, Schumann CM (2014). Stereological Study of Amygdala Glial
+Populations in Adolescents and Adults with Autism Spectrum Disorder. PLoS ONE 9(10):e110356.
+DOI: 10.1371/journal.pone.0110356  (open access)
+
+Source        Morgan_etal_2014.pdf ; published Data S1 supplement spreadsheet
+Snapshot      Morgan_etal_2014_DataS1_snapshot.xlsx   (verbatim Data S1: per-individual counts,
+              whole amygdala + 5 subnuclei; ASD + Control groups)
+Derived       Morgan_etal_2014_DataS1.R -> Morgan_etal_2014_DataS1_derived.csv   <-- USE THIS
+              (per-individual data rows only; summary rows dropped; numeric)
+Definitions   Morgan_etal_2014_definitions.csv
+Online        __Public/comparative-data/10.1371%2Fjournal.pone.0110356_DataS1.tsv
+
+Notes         Groups ASD / Control as published. Data S1 lists 9 ASD; the paper's glial analysis used
+              8 (CAL-101 carries neuron data only - tissue not available for glia). All rows kept faithfully.

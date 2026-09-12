@@ -88,7 +88,8 @@ Conscious and unknown-state rows are kept. All rows, including anesthetized, sta
    - Input: one term file per source in `standardized_term_by_reference/`
      (`Original_Term, Reference, Standardized_Term`).
    - Output: `standardized_term_cerebral_metabolic_rate.csv` (all stacked).
-2. **Compile** — `cerebral_metabolic_rate_compiled.R` (house-style) **or** `build_cerebral_metabolic_rate_merge.py`
+2. **Compile** — `build_cerebral_metabolic_rate_merge.py`
+  - The historical R builder was retired after the provenance-aware Python builder became the canonical implementation.
    (the tested builder that generated the shipped CSVs; R was unavailable in the build
    environment, same arrangement as the Karbowski build — both implement the same pipeline).
    - Outputs: `cerebral_metabolic_rate_long.csv`, `cerebral_metabolic_rate_wide.csv`.

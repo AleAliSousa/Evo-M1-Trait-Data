@@ -1,7 +1,7 @@
 Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
 Region,Striatal subregion (canonical),see Region,,group,info,Homo sapiens,Hanson_etal_2018,,
 Region_code,Printed region code (dC/mC/aP/NA),see Region,,group,info,Homo sapiens,Hanson_etal_2018,As printed in Tables 2-3,
-Group,TD (typically developing) or WS (Williams syndrome),see Region,,group,info,Homo sapiens,Hanson_etal_2018,Study 1a uses TD,
+Group,TD (typically developing) or WS (Williams syndrome),see Region,,group,info,Homo sapiens,Hanson_etal_2018,,
 n,Sample size per group,see Region,,count,info,Homo sapiens,Hanson_etal_2018,n=5 per group,
 Neuron_density.per.mm3,Average neuron numerical density,see Region,density.per.mm3,group mean,primary,Homo sapiens,Hanson_etal_2018,,Table 2 (stereology optical disector)
 Neuron_density.per.mm3.SD,SD of neuron density,see Region,density.per.mm3,SD,info,Homo sapiens,Hanson_etal_2018,,Table 2

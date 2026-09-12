@@ -1,25 +1,25 @@
-# Heffner & Heffner (1992) — Table 1 ("1992a")
+# Heffner & Heffner (1992) — TABLE 1 ("1992a")
 
 **Source paper.** Heffner, R. S., & Heffner, H. E. (1992). Visual factors in sound localization in mammals. *Journal of Comparative Neurology*, 317(3), 219–232. https://doi.org/10.1002/cne.903170302
 
 The `_a` suffix distinguishes this from the Heffners' other 1992 papers (the blind-mole-rat paper and the *Evolutionary Biology of Hearing* chapter); it matches the "Heffner and Heffner 1992a" short code used throughout the Bath sensory compilation. First Route-A source folder of the sensory ingestion plan (`____Sensory_audiovisual/SENSORY_AUDIOVISUAL_DATA_PLAN.md`).
 
-**Table.** Table 1: *"Values of Parameters Examined as Predictors of Sound Localization Acuity in Mammals"* — 24 rows (23 species; wild and domestic Norway rat are separate rows) × 6 measures: sound localization threshold (deg), functional interaural distance Δt (µsec), width of field of best vision (deg), maximum visual acuity (c/deg), binocular field (deg), trophic level (1–5).
+**Table.** TABLE 1: *"Values of Parameters Examined as Predictors of Sound Localization Acuity in Mammals"* — 24 rows (23 species; wild and domestic Norway rat are separate rows) × 6 measures: sound localization threshold (deg), functional interaural distance Δt (µsec), width of field of best vision (deg), maximum visual acuity (c/deg), binocular field (deg), trophic level (1–5).
 
 ## Files in this folder
 
 | file | what it is |
 | --- | --- |
 | `Heffner-1992-Visual factors in sound localizat.pdf` | the publication (copy of the archive PDF) |
-| `Heffner_Heffner_1992_a_Table1_snapshot.csv` | frozen, hand-verified copy of Table 1 as printed |
-| `Heffner_Heffner_1992_a_Table1.R` | canonical reformat: snapshot → CSV + public TSV |
-| `Heffner_Heffner_1992_a_Table1.csv` | analysis-ready data ("use this") |
+| `Heffner_Heffner_1992_a_TABLE1_snapshot.csv` | frozen, hand-verified copy of Table 1 as printed |
+| `Heffner_Heffner_1992_a_TABLE1.R` | canonical reformat: snapshot → CSV + public TSV |
+| `Heffner_Heffner_1992_a_TABLE1.csv` | analysis-ready data ("use this") |
 | `reference_tables/…_definitions.csv` | data dictionary (10-col schema) |
 | `reference_tables/…_footnotes.csv` | the 30 printed footnotes, verbatim |
 | `reference_tables/…_species_crosswalk.csv` | printed common name → binomial, with per-species basis |
 | `…_compare_to_SensoryData_compiled_csv.R` (moved 2026-09-05 to `Evo-M1-Trait-Data-restricted/restricted_checks/Heffner_Heffner_1992_a/comparison/`) | QA script for both audits (fixture + student sheet) |
 
-Public TSV: `__Public/comparative-data/10.1002%2Fcne.903170302_Table1.tsv`.
+Public TSV: `__Public/comparative-data/10.1002%2Fcne.903170302_TABLE1.tsv`.
 
 ## Snapshot
 

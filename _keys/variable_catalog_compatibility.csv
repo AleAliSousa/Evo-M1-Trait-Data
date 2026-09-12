@@ -75,6 +75,7 @@ CerebralCortex | ratio (per neuron),CerebralCortex,ratio (per neuron),3,3,Hercul
 NeocortexGrey | volume,NeocortexGrey,volume,3,3,Bush_Allman_2003; Bush_Allman_2004_a; Bush_Allman_2004_b,,primary,TRUE
 NeocortexWhite | volume,NeocortexWhite,volume,3,3,Bush_Allman_2003; Bush_Allman_2004_a; Bush_Allman_2004_b,,primary,TRUE
 Amygdala | count (number),Amygdala,count (number),16,2,Barger_etal_2012; Morgan_etal_2014,Hominidae + Hylobatidae + Cercopithecidae; Homo sapiens,info; primary; secondary,TRUE
+fronto_insular_cortex | count (number),fronto_insular_cortex,count (number),14,2,Hakeem_etal_2009; Jacob_etal_2021,Proboscidea; Procyon lotor,primary,TRUE
 whole-organism behaviour | count (number),whole-organism behaviour,count (number),13,2,Reader_etal_2011; Reader_Laland_2002,Primates; Primates (116 of 203 species surveyed),info; primary; secondary,TRUE
 whole-organism | Sleep.h_day,whole-organism,Sleep.h_day,12,2,Capellini_etal_2008; HerculanoHouzel__2015,"Mammals; Mammals (24 species, 6 clades); Mammals (marine)",info; primary,TRUE
 M1 | percentage (relative),M1,percentage (relative),9,2,Changizi_Shimojo_2005; Young_etal_2013,"Mammalia, 16 spp. (monotremes, marsupials, eulipotyphlans, bats, rodents, tree shrew, primates); Primates",info; primary,TRUE
@@ -82,6 +83,7 @@ Cerebellum | surface area,Cerebellum,surface area,8,2,Ashwell__2020; Heuer_etal_
 Neocortex | Density.per_cm2,Neocortex,Density.per_cm2,8,2,Collins_etal_2016; Young_etal_2013_b,Primates,primary; secondary,TRUE
 Neocortex | Density.per_g,Neocortex,Density.per_g,8,2,Collins_etal_2010; Collins_etal_2016,Primates,primary,TRUE
 FrontalGrey | volume,FrontalGrey,volume,7,2,Bush_Allman_2004_a; Smaers_etal_2011,Primates,both; primary,TRUE
+fronto_insular_cortex | percentage (relative),fronto_insular_cortex,percentage (relative),7,2,Hakeem_etal_2009; Jacob_etal_2021,Proboscidea; Procyon lotor,primary,TRUE
 whole-organism | category,whole-organism,category,6,2,MedinaGonzález__2026; Ruf_Geiser_2015,"Birds & mammals (43 birds, 171 mammals); Mammals",primary; secondary,TRUE
 (structure-agnostic; see data columns) | Class,(structure-agnostic; see data columns),Class,5,2,Navarrete_etal_2016; Olkowicz_etal_2016,Aves; Primates,info; primary,TRUE
 Insula | volume,Insula,volume,5,2,Bauernfeind_etal_2013; Semendeferi_Damasio_2000,"Hominoidea (Homo, Pan, Gorilla, Pongo, Hylobates); Primates",primary,TRUE
@@ -172,8 +174,9 @@ Diet | percentage (relative),Diet,percentage (relative),10,1,Wilman_etal_2014,ma
 M1_GLIprofile | GLI.profile.moment,M1_GLIprofile,GLI.profile.moment,10,1,Sherwood_etal_2004_I,,primary,FALSE
 M1 (regional) | count (number),M1 (regional),count (number),8,1,Jacobs_etal_2018,Carnivores + Primates; Mammals (7 orders),info; primary,FALSE
 M1 (regional) | length,M1 (regional),length,8,1,Jacobs_etal_2018,Carnivores + Primates; Mammals (7 orders),info; primary,FALSE
-fronto_insular_cortex | count (number),fronto_insular_cortex,count (number),8,1,Jacob_etal_2021,Procyon lotor,primary,FALSE
+fronto_insular_cortex | CE,fronto_insular_cortex,CE,8,1,Hakeem_etal_2009,,info,FALSE
 limb | percentage (relative),limb,percentage (relative),8,1,MedinaGonzález__2026,Mammals,primary; secondary,FALSE
+Anterior_cingulate_cortex_area_24 | volume,Anterior_cingulate_cortex_area_24,volume,6,1,Nimchinsky_etal_1999,Hominoidea,primary,FALSE
 Cerebellum | percentage (relative),Cerebellum,percentage (relative),6,1,Olkowicz_etal_2016,Aves,primary,FALSE
 Dentate gyrus (hilus) | count (number),Dentate gyrus (hilus),count (number),6,1,Jacob_etal_2021,Procyon lotor,primary,FALSE
 FrontalWhite | volume,FrontalWhite,volume,6,1,Smaers_etal_2011,Primates,both,FALSE
@@ -211,7 +214,6 @@ Nucleus_olivaris_inferior_principalis | volume,Nucleus_olivaris_inferior_princip
 PrefrontalCortex | percentage (relative),PrefrontalCortex,percentage (relative),4,1,Gabi_etal_2016,Primates (incl. human),primary,FALSE
 V1 | Density.per_mm2,V1,Density.per_mm2,4,1,Karl_etal_2024,Mammals (marsupial to primate),primary,FALSE
 cortical area | count (number),cortical area,count (number),4,1,HerculanoHouzel_etal_2013,Mus musculus,info; primary,FALSE
-fronto_insular_cortex | percentage (relative),fronto_insular_cortex,percentage (relative),4,1,Jacob_etal_2021,Procyon lotor,primary,FALSE
 hand (forefinger) | length,hand (forefinger),length,4,1,Liu_etal_2016,Primates,secondary,FALSE
 see Region | density.per.mm3,see Region,density.per.mm3,4,1,Hanson_etal_2018,Homo sapiens,info; primary,FALSE
 whole-organism | Time.h,whole-organism,Time.h,4,1,Ruf_Geiser_2015,"Birds & mammals (43 birds, 171 mammals)",primary,FALSE
@@ -256,6 +258,8 @@ AccessoryOlfactoryBulb | per mille (relative),AccessoryOlfactoryBulb,per mille (
 AccessoryOlfactoryBulb | volume,AccessoryOlfactoryBulb,volume,2,1,Stephan_etal_1982,"Insectivora, Scandentia & Primates",primary,FALSE
 Agranular_insular_cortex | volume,Agranular_insular_cortex,volume,2,1,Bauernfeind_etal_2013,Primates,primary,FALSE
 Amygdala | ratio,Amygdala,ratio,2,1,Morgan_etal_2014,Homo sapiens,primary,FALSE
+Anterior_cingulate_cortex | percentage (relative),Anterior_cingulate_cortex,percentage (relative),2,1,Raghanti_etal_2015,,primary,FALSE
+Anterior_insula | percentage (relative),Anterior_insula,percentage (relative),2,1,Raghanti_etal_2015,,primary,FALSE
 AssociationCortex | volume,AssociationCortex,volume,2,1,Smaers_etal_2017,Primates,both,FALSE
 Behaviour | size index (allometric),Behaviour,size index (allometric),2,1,Caspar_etal_2022,Primates,primary,FALSE
 Body | Temperature.C,Body,Temperature.C,2,1,Ruf_Geiser_2015,"Birds & mammals (43 birds, 171 mammals)",primary,FALSE
@@ -285,6 +289,7 @@ Frontal cortex layer I (ventral) | category,Frontal cortex layer I (ventral),cat
 Frontal cortex layer I | count (number),Frontal cortex layer I,count (number),2,1,Falcone_etal_2019,Therian mammals (marsupial to primate),primary,FALSE
 FrontalCortex | surface area,FrontalCortex,surface area,2,1,Semendeferi_etal_2002,Apes & humans,primary,FALSE
 FrontalMotor | volume,FrontalMotor,volume,2,1,Smaers_etal_2017,Primates,both,FALSE
+Frontal_pole | percentage (relative),Frontal_pole,percentage (relative),2,1,Raghanti_etal_2015,,primary,FALSE
 Granular_insular_cortex | volume,Granular_insular_cortex,volume,2,1,Bauernfeind_etal_2013,Primates,primary,FALSE
 Hypoglossal_nucleus | volume,Hypoglossal_nucleus,volume,2,1,Sherwood_etal_2005,,primary; secondary,FALSE
 Internal carotid foramen | surface area,Internal carotid foramen,surface area,2,1,Seymour_etal_2019,Great Apes & Homo,primary,FALSE
@@ -317,6 +322,7 @@ Neocortex | NeocortexSize.g,Neocortex,NeocortexSize.g,2,1,Heldstab_etal_2016,Pri
 Neocortex | Thickness.mm,Neocortex,Thickness.mm,2,1,__merging_cortical_areas,Mammals,primary,FALSE
 Neocortex | thickness.mm,Neocortex,thickness.mm,2,1,Lewitus_etal_2013,Mammals,primary,FALSE
 NetBrain | mass,NetBrain,mass,2,1,Weaver__2001,"monkeys, apes, fossil hominids, humans",secondary,FALSE
+Occipital_pole | percentage (relative),Occipital_pole,percentage (relative),2,1,Raghanti_etal_2015,,primary,FALSE
 OlfactoryBulb | per mille (relative),OlfactoryBulb,per mille (relative),2,1,Baron_etal_1983,"Insectivora, Scandentia & Primates",primary,FALSE
 Pallium | density (per mass/volume),Pallium,density (per mass/volume),2,1,Olkowicz_etal_2016,Aves,primary,FALSE
 PosteriorCranialFossa | volume,PosteriorCranialFossa,volume,2,1,Weaver__2001,hominoids,primary,FALSE
@@ -405,6 +411,8 @@ AccessoryOlfactoryBulb_layers_3_5 | volume,AccessoryOlfactoryBulb_layers_3_5,vol
 Activity | category,Activity,category,1,1,Wilman_etal_2014,mammals,primary,FALSE
 Agranular frontal cortex | surface area,Agranular frontal cortex,surface area,1,1,__merging_cortical_areas,Primates,secondary,FALSE
 AnteriorCommissure | volume,AnteriorCommissure,volume,1,1,Baron_etal_1987,"Insectivora, Scandentia & Primates",primary,FALSE
+Anterior_cingulate_cortex_area_24 | abundance.class,Anterior_cingulate_cortex_area_24,abundance.class,1,1,Nimchinsky_etal_1999,Primates,primary,FALSE
+Anterior_cingulate_cortex_area_24 | presence,Anterior_cingulate_cortex_area_24,presence,1,1,Nimchinsky_etal_1999,Primates,primary,FALSE
 Area10 | surface area,Area10,surface area,1,1,Semendeferi_etal_2001,Apes & humans & macaque,primary,FALSE
 Area10 | volume,Area10,volume,1,1,Semendeferi_etal_2001,Apes & humans,primary,FALSE
 Area13 | surface area,Area13,surface area,1,1,Semendeferi_etal_1998,Apes & humans & macaque,primary,FALSE

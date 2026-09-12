@@ -1,0 +1,16 @@
+Karlsen & Pakkenberg 2011 - authordata (neocortical cell composition, group means)
+DOI: 10.1093/cercor/bhr033
+
+PERSONAL COMMUNICATION: neocortical neuron/glia-subtype counts & densities derived from raw counting
+  workbooks provided by B. Pakkenberg. Only group-level means are shared here; the raw per-brain data
+  and correspondence are RESTRICTED in ____Unpublished__Karlsen_Pakkenberg_2011/ (not for public
+  release without permission). Group-level values reproduce the published paper.
+
+Source        (raw counting workbooks - restricted; see ____Unpublished__Karlsen_Pakkenberg_2011/)
+Derived       Karlsen_Pakkenberg_2011_authordata_groupmeans.csv   <-- USE THIS
+              (group means per region x group)
+Definitions   Karlsen_Pakkenberg_2011_definitions.csv
+Online        __Public/comparative-data/10.1093%2Fcercor%2Fbhr033_authordata.tsv
+
+Notes         Neocortex (Frontal/Temporal/Parietal/Occipital/total); groups Control / DS. Astrocyte
+              density: author value correct; published temporal 46.7 is an erroneous 2x (author 23.1).

@@ -22,3 +22,16 @@ d <- data.frame(
   stringsAsFactors = FALSE)
 write.csv(d, "Karlsen_Pakkenberg_2011_Table2_derived.csv", row.names = FALSE)
 cat("Table2 derived:", nrow(d), "rows\n")
+
+
+## ---- public TSV (database "online" copy) : regenerate from the derived table ----
+## Written into <repo-root>/__Public/comparative-data when run inside the repo (root = has __ReadMe.xlsx).
+.tsv_base <- local({ d <- folder
+  while (dirname(d) != d && !file.exists(file.path(d, "__ReadMe.xlsx"))) d <- dirname(d)
+  if (file.exists(file.path(d, "__ReadMe.xlsx"))) d else NA_character_ })
+if (!is.na(.tsv_base)) {
+  .td <- file.path(.tsv_base, "__Public", "comparative-data")
+  if (!dir.exists(.td)) dir.create(.td, recursive = TRUE)
+  write.table(read.csv("Karlsen_Pakkenberg_2011_Table2_derived.csv", check.names = FALSE),
+              file.path(.td, "10.1093%2Fcercor%2Fbhr033_Table2.tsv"), sep = "\t", row.names = FALSE)
+}

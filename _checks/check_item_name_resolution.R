@@ -90,6 +90,11 @@ referenced_items <- function(path) {
   hits <- unlist(regmatches(src, gregexpr('"[^"\n]*"', src)))
   hits <- gsub('^"|"$', "", hits)
   hits <- unique(hits[nzchar(hits)])
+  
+  # Exclude top-level publication/source folder names
+  publication_dirs <- basename(list.dirs(root_dir, recursive = FALSE))
+  hits <- setdiff(hits, publication_dirs)
+  
   keep <- grepl("_[0-9]{4}[a-z]?_", hits) &
     !grepl("[[:space:]]", hits) &
     !grepl("_$", hits) &

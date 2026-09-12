@@ -24,3 +24,16 @@ for (cc in setdiff(names(df), idcols)) df[[cc]] <- suppressWarnings(as.numeric(d
 write.csv(df, "Morgan_etal_2014_DataS1_derived.csv", row.names = FALSE)
 cat(sprintf("derived: %d individuals (%d Control, %d ASD), %d cols\n",
             nrow(df), sum(df$Diagnosis=="Control"), sum(df$Diagnosis=="ASD"), ncol(df)))
+
+
+## ---- public TSV (database "online" copy) : regenerate from the derived table ----
+## Written into <repo-root>/__Public/comparative-data when run inside the repo (root = has __ReadMe.xlsx).
+.tsv_base <- local({ d <- folder
+  while (dirname(d) != d && !file.exists(file.path(d, "__ReadMe.xlsx"))) d <- dirname(d)
+  if (file.exists(file.path(d, "__ReadMe.xlsx"))) d else NA_character_ })
+if (!is.na(.tsv_base)) {
+  .td <- file.path(.tsv_base, "__Public", "comparative-data")
+  if (!dir.exists(.td)) dir.create(.td, recursive = TRUE)
+  write.table(read.csv("Morgan_etal_2014_DataS1_derived.csv", check.names = FALSE),
+              file.path(.td, "10.1371%2Fjournal.pone.0110356_DataS1.tsv"), sep = "\t", row.names = FALSE)
+}

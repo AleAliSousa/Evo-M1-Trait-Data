@@ -37,7 +37,7 @@ is **in-air only**; underwater values live in `sensory_long.csv`.
 
 | Source | Role | What it contributes |
 |---|---|---|
-| `Heffner_Heffner_1992_a_Table1` | **both** | *Primary:* field of best vision (13 spp), binocular field (18), and the unfootnoted acuities (its own ganglion-cell estimates). *Compiled:* all 24 localization thresholds and the footnoted acuities, each carrying a printed footnote source. |
+| `Heffner_Heffner_1992_a_TABLE1` | **both** | *Primary:* field of best vision (13 spp), binocular field (18), and the unfootnoted acuities (its own ganglion-cell estimates). *Compiled:* all 24 localization thresholds and the footnoted acuities, each carrying a printed footnote source. |
 | `Veilleux_Kirk_2014_SupplementalTable1` | **both** | *Primary:* `this study` acuities. *Compiled:* bracket-sourced acuities resolving through its 122-entry data-source list. |
 | `Koay_etal_1998_Figure6` | **both** | *Primary:* the *Rousettus aegyptiacus* audiogram ("present report"). *Compiled:* 66 further high-frequency limits, each with a caption audiogram source. All figure-digitised. |
 | `Heffner_etal_2020_Figure3` | **primary** | *Cottontail rabbit only*, from the paper's **text** (300 Hz, 56 kHz, MAA 27.6°). |

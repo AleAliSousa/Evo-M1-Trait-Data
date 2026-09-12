@@ -5,7 +5,7 @@
 ## __HOWTO_build_a_dataset_file.md sections 9-10).
 ##
 ## Sources (all mammal-only at present):
-##   Heffner_Heffner_1992_a_Table1        - BOTH. Own field-of-best-vision, binocular
+##   Heffner_Heffner_1992_a_TABLE1        - BOTH. Own field-of-best-vision, binocular
 ##                                          field and unfootnoted acuities (primary);
 ##                                          localization thresholds + footnoted acuities
 ##                                          compiled, each with a printed footnote source.
@@ -37,7 +37,7 @@ suppressPackageStartupMessages({ library(tidyverse) })
 setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_sensory")
 base <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data"
 
-item <- c(HH1992a  = "Heffner_Heffner_1992_a_Table1",
+item <- c(HH1992a  = "Heffner_Heffner_1992_a_TABLE1",
           VK2014   = "Veilleux_Kirk_2014_SupplementalTable1",
           Koay1998 = "Koay_etal_1998_Figure6",
           H2020    = "Heffner_etal_2020_Figure3")
@@ -108,10 +108,10 @@ addrow <- function(sp, meas, val, it, keys, origin, role, note="", medium="air",
 
 ## Heffner & Heffner 1992a -- study keys are CURATED in the footnotes reference table,
 ## because the printed footnotes mix prose with citations.
-hh   <- read.csv(file.path(base, "Heffner_Heffner_1992_a", "Heffner_Heffner_1992_a_Table1.csv"),
+hh   <- read.csv(file.path(base, "Heffner_Heffner_1992_a", "Heffner_Heffner_1992_a_TABLE1.csv"),
                  stringsAsFactors = FALSE)
 hhfn <- read.csv(file.path(base, "Heffner_Heffner_1992_a", "reference_tables",
-                           "Heffner_Heffner_1992_a_Table1_footnotes.csv"), stringsAsFactors = FALSE)
+                           "Heffner_Heffner_1992_a_TABLE1_footnotes.csv"), stringsAsFactors = FALSE)
 fnkey <- setNames(lapply(hhfn$primary_study_keys, function(x) x[nzchar(x)] <-
                            str_split(x, ";")[[1]][nzchar(str_split(x, ";")[[1]])]),
                   as.character(hhfn$footnote))

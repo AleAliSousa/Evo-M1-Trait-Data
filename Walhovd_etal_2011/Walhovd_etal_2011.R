@@ -27,3 +27,16 @@ d <- data.frame(
   stringsAsFactors = FALSE)
 write.csv(d, "Walhovd_etal_2011_derived.csv", row.names = FALSE)
 cat("derived:", nrow(d), "structures\n")
+
+
+## ---- public TSV (database "online" copy) : regenerate from the derived table ----
+## Written into <repo-root>/__Public/comparative-data when run inside the repo (root = has __ReadMe.xlsx).
+.tsv_base <- local({ d <- folder
+  while (dirname(d) != d && !file.exists(file.path(d, "__ReadMe.xlsx"))) d <- dirname(d)
+  if (file.exists(file.path(d, "__ReadMe.xlsx"))) d else NA_character_ })
+if (!is.na(.tsv_base)) {
+  .td <- file.path(.tsv_base, "__Public", "comparative-data")
+  if (!dir.exists(.td)) dir.create(.td, recursive = TRUE)
+  write.table(read.csv("Walhovd_etal_2011_derived.csv", check.names = FALSE),
+              file.path(.td, "10.1016%2Fj.neurobiolaging.2009.05.013_normative.tsv"), sep = "\t", row.names = FALSE)
+}

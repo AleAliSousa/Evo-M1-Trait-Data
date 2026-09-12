@@ -29,9 +29,9 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 BASE = os.path.dirname(HERE)
 
 SRC = {
-    "HH1992a": os.path.join(BASE, "Heffner_Heffner_1992_a", "Heffner_Heffner_1992_a_Table1.csv"),
+    "HH1992a": os.path.join(BASE, "Heffner_Heffner_1992_a", "Heffner_Heffner_1992_a_TABLE1.csv"),
     "HH1992a_footnotes": os.path.join(BASE, "Heffner_Heffner_1992_a", "reference_tables",
-                                      "Heffner_Heffner_1992_a_Table1_footnotes.csv"),
+                                      "Heffner_Heffner_1992_a_TABLE1_footnotes.csv"),
     "VK2014":  os.path.join(BASE, "Veilleux_Kirk_2014", "Veilleux_Kirk_2014_SupplementalTable1.csv"),
     "VK2014_sources": os.path.join(BASE, "Veilleux_Kirk_2014", "reference_tables",
                                    "Veilleux_Kirk_2014_SupplementalTable1_data_sources.csv"),
@@ -41,7 +41,7 @@ SRC = {
     "H2020_text": os.path.join(BASE, "Heffner_etal_2020", "reference_tables",
                                "Heffner_etal_2020_cottontail_values_from_text.csv"),
 }
-ITEM = {"HH1992a": "Heffner_Heffner_1992_a_Table1",
+ITEM = {"HH1992a": "Heffner_Heffner_1992_a_TABLE1",
         "VK2014": "Veilleux_Kirk_2014_SupplementalTable1",
         "Koay1998": "Koay_etal_1998_Figure6",
         "H2020": "Heffner_etal_2020_Figure3"}

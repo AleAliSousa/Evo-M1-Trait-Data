@@ -3,262 +3,262 @@ Canis lupus familiaris,Whole_brain,CBF,cerebral_perfusion,mL/100g/min,30.8,1,Kau
 Canis lupus familiaris,Whole_brain,CMRO2,cerebral_metabolic_rate,umol/100g/min,105.75,2,Karbowski__2007; Kaufman__2004,Total_brain_net_volume_Vol.mm3
 Canis lupus familiaris,Whole_brain,CMRgl,cerebral_metabolic_rate,umol/100g/min,44.5,1,Kaufman__2004,Total_brain_net_volume_Vol.mm3
 Canis lupus familiaris,Whole_brain,Total_O2_consumption,cerebral_absolute_rate,mL/min,4.392,1,Karbowski__2007,Total_brain_net_volume_Vol.mm3
-Capra aegagrus hircus,Whole_brain,CMRgl,cerebral_metabolic_rate,umol/100g/min,35,1,Karbowski__2007,Total_brain_net_volume_Vol.mm3
+Capra aegagrus hircus,Whole_brain,CMRgl,cerebral_metabolic_rate,umol/100g/min,35.0,1,Karbowski__2007,Total_brain_net_volume_Vol.mm3
 Capra aegagrus hircus,Whole_brain,Total_glucose_utilization,cerebral_absolute_rate,umol/min,40.09,1,Karbowski__2007,Total_brain_net_volume_Vol.mm3
 Equus caballus,Whole_brain,CBF,cerebral_perfusion,mL/100g/min,65.4,2,Kaufman__2004,Total_brain_net_volume_Vol.mm3
-Felis catus,Amygdala,CMRgl,cerebral_metabolic_rate,umol/100g/min,44,2,Karbowski__2007,Amygdala_Vol.mm3
-Felis catus,Basal_ganglia,CMRgl,cerebral_metabolic_rate,umol/100g/min,54.55,2,Kaufman__2004,NA
-Felis catus,Brain_stem,CMRgl,cerebral_metabolic_rate,umol/100g/min,135.5,2,Karbowski__2007,NA
-Felis catus,Caudate_nucleus,CMRgl,cerebral_metabolic_rate,umol/100g/min,79,3,Karbowski__2007,NA
+Felis catus,Amygdala,CMRgl,cerebral_metabolic_rate,umol/100g/min,44.0,2,Karbowski__2007,Amygdala_Vol.mm3
+Felis catus,Basal_ganglia,CMRgl,cerebral_metabolic_rate,umol/100g/min,54.55,2,Kaufman__2004,
+Felis catus,Brain_stem,CMRgl,cerebral_metabolic_rate,umol/100g/min,135.5,2,Karbowski__2007,
+Felis catus,Caudate_nucleus,CMRgl,cerebral_metabolic_rate,umol/100g/min,79.0,3,Karbowski__2007,
 Felis catus,Cerebellum,CMRgl,cerebral_metabolic_rate,umol/100g/min,55.833,3,Karbowski__2007; Kaufman__2004,Cerebellum_Vol.mm3
-Felis catus,Cingulate_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,58.5,2,Karbowski__2007; Kaufman__2004,NA
-Felis catus,Frontal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,49,1,Kaufman__2004,NA
+Felis catus,Cingulate_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,58.5,2,Karbowski__2007; Kaufman__2004,
+Felis catus,Frontal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,49.0,1,Kaufman__2004,
 Felis catus,Hippocampus,CMRgl,cerebral_metabolic_rate,umol/100g/min,52.6,5,Karbowski__2007; Kaufman__2004,Hippocampus_Vol.mm3
-Felis catus,Hypothalamus,CMRgl,cerebral_metabolic_rate,umol/100g/min,66.5,2,Karbowski__2007,NA
+Felis catus,Hypothalamus,CMRgl,cerebral_metabolic_rate,umol/100g/min,66.5,2,Karbowski__2007,
 Felis catus,Neocortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,75.767,6,Karbowski__2007; Kaufman__2004,Neocortex_Vol.mm3
-Felis catus,Occipital_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,92,2,Karbowski__2007; Kaufman__2004,NA
+Felis catus,Occipital_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,92.0,2,Karbowski__2007; Kaufman__2004,
 Felis catus,Pallidum,CMRgl,cerebral_metabolic_rate,umol/100g/min,39.333,3,Karbowski__2007,Pallidum_Vol.mm3
-Felis catus,Parietal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,57,2,Karbowski__2007; Kaufman__2004,NA
-Felis catus,Sensorimotor_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,64,1,Karbowski__2007,NA
-Felis catus,Septum,CMRgl,cerebral_metabolic_rate,umol/100g/min,38,2,Karbowski__2007,NA
-Felis catus,Substantia_nigra,CMRgl,cerebral_metabolic_rate,umol/100g/min,40,3,Karbowski__2007,NA
-Felis catus,Temporal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,91.5,4,Karbowski__2007; Kaufman__2004,NA
+Felis catus,Parietal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,57.0,2,Karbowski__2007; Kaufman__2004,
+Felis catus,Sensorimotor_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,64.0,1,Karbowski__2007,
+Felis catus,Septum,CMRgl,cerebral_metabolic_rate,umol/100g/min,38.0,2,Karbowski__2007,
+Felis catus,Substantia_nigra,CMRgl,cerebral_metabolic_rate,umol/100g/min,40.0,3,Karbowski__2007,
+Felis catus,Temporal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,91.5,4,Karbowski__2007; Kaufman__2004,
 Felis catus,Thalamus,CMRgl,cerebral_metabolic_rate,umol/100g/min,79.08,5,Karbowski__2007; Kaufman__2004,Thalamus_Vol.mm3
-Felis catus,Visual_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,78.667,3,Karbowski__2007,NA
-Felis catus,White_matter,CMRgl,cerebral_metabolic_rate,umol/100g/min,16.667,3,Karbowski__2007; Kaufman__2004,NA
+Felis catus,Visual_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,78.667,3,Karbowski__2007,
+Felis catus,White_matter,CMRgl,cerebral_metabolic_rate,umol/100g/min,16.667,3,Karbowski__2007; Kaufman__2004,
 Felis catus,Whole_brain,CMRO2,cerebral_metabolic_rate,umol/100g/min,5.8,1,Karbowski__2007,Total_brain_net_volume_Vol.mm3
-Felis catus,Whole_brain,CMRgl,cerebral_metabolic_rate,umol/100g/min,69,1,Karbowski__2007,Total_brain_net_volume_Vol.mm3
+Felis catus,Whole_brain,CMRgl,cerebral_metabolic_rate,umol/100g/min,69.0,1,Karbowski__2007,Total_brain_net_volume_Vol.mm3
 Felis catus,Whole_brain,Total_O2_consumption,cerebral_absolute_rate,mL/min,1.844,1,Karbowski__2007,Total_brain_net_volume_Vol.mm3
 Felis catus,Whole_brain,Total_glucose_utilization,cerebral_absolute_rate,umol/min,21.78,1,Karbowski__2007,Total_brain_net_volume_Vol.mm3
 Homo sapiens,Amygdala,CMRgl,cerebral_metabolic_rate,umol/100g/min,21.6,2,Heiss_etal_2004; Karbowski__2007,Amygdala_Vol.mm3
-Homo sapiens,Auditory_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,40.225,4,Kaufman__2004,NA
-Homo sapiens,Basal_forebrain,CMRgl,cerebral_metabolic_rate,umol/100g/min,21.4,1,Heiss_etal_2004,NA
-Homo sapiens,Basal_ganglia,CBF,cerebral_perfusion,mL/100g/min,45.75,4,Kaufman__2004,NA
-Homo sapiens,Basal_ganglia,CMRO2,cerebral_metabolic_rate,umol/100g/min,169.645,11,Kaufman__2004,NA
-Homo sapiens,Basal_ganglia,CMRgl,cerebral_metabolic_rate,umol/100g/min,36.885,30,Kaufman__2004,NA
-Homo sapiens,Capsula_interna,CMRgl,cerebral_metabolic_rate,umol/100g/min,25.5,1,Heiss_etal_2004,NA
-Homo sapiens,Caudate_nucleus,CMRgl,cerebral_metabolic_rate,umol/100g/min,34.65,4,Heiss_etal_2004; Karbowski__2007,NA
-Homo sapiens,Centrum_semiovale,CMRgl,cerebral_metabolic_rate,umol/100g/min,12.3,1,Heiss_etal_2004,NA
-Homo sapiens,Cerebellar_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,29.8,1,Heiss_etal_2004,NA
+Homo sapiens,Auditory_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,40.225,4,Kaufman__2004,
+Homo sapiens,Basal_forebrain,CMRgl,cerebral_metabolic_rate,umol/100g/min,21.4,1,Heiss_etal_2004,
+Homo sapiens,Basal_ganglia,CBF,cerebral_perfusion,mL/100g/min,45.75,4,Kaufman__2004,
+Homo sapiens,Basal_ganglia,CMRO2,cerebral_metabolic_rate,umol/100g/min,169.645,11,Kaufman__2004,
+Homo sapiens,Basal_ganglia,CMRgl,cerebral_metabolic_rate,umol/100g/min,36.885,30,Kaufman__2004,
+Homo sapiens,Capsula_interna,CMRgl,cerebral_metabolic_rate,umol/100g/min,25.5,1,Heiss_etal_2004,
+Homo sapiens,Caudate_nucleus,CMRgl,cerebral_metabolic_rate,umol/100g/min,34.65,4,Heiss_etal_2004; Karbowski__2007,
+Homo sapiens,Centrum_semiovale,CMRgl,cerebral_metabolic_rate,umol/100g/min,12.3,1,Heiss_etal_2004,
+Homo sapiens,Cerebellar_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,29.8,1,Heiss_etal_2004,
 Homo sapiens,Cerebellum,CBF,cerebral_perfusion,mL/100g/min,57.74,5,Kaufman__2004,Cerebellum_Vol.mm3
 Homo sapiens,Cerebellum,CMRO2,cerebral_metabolic_rate,umol/100g/min,183.425,8,Kaufman__2004,Cerebellum_Vol.mm3
 Homo sapiens,Cerebellum,CMRgl,cerebral_metabolic_rate,umol/100g/min,32.352,24,Karbowski__2007; Kaufman__2004,Cerebellum_Vol.mm3
-Homo sapiens,Cingulate_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,36.343,15,Karbowski__2007; Kaufman__2004,NA
-Homo sapiens,Colliculus_inferior,CMRgl,cerebral_metabolic_rate,umol/100g/min,31.4,1,Heiss_etal_2004,NA
-Homo sapiens,Colliculus_superior,CMRgl,cerebral_metabolic_rate,umol/100g/min,24.4,1,Heiss_etal_2004,NA
+Homo sapiens,Cingulate_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,36.343,15,Karbowski__2007; Kaufman__2004,
+Homo sapiens,Colliculus_inferior,CMRgl,cerebral_metabolic_rate,umol/100g/min,31.4,1,Heiss_etal_2004,
+Homo sapiens,Colliculus_superior,CMRgl,cerebral_metabolic_rate,umol/100g/min,24.4,1,Heiss_etal_2004,
 Homo sapiens,Corpus_geniculatum_laterale,CMRgl,cerebral_metabolic_rate,umol/100g/min,23.1,1,Heiss_etal_2004,Corpus_geniculatum_laterale_Vol.mm3
-Homo sapiens,Corpus_geniculatum_mediale,CMRgl,cerebral_metabolic_rate,umol/100g/min,20.2,1,Heiss_etal_2004,NA
-Homo sapiens,Frontal_cortex,CMRO2,cerebral_metabolic_rate,umol/100g/min,148.809,17,Kaufman__2004,NA
-Homo sapiens,Frontal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,36.138,42,Heiss_etal_2004; Karbowski__2007; Kaufman__2004,NA
+Homo sapiens,Corpus_geniculatum_mediale,CMRgl,cerebral_metabolic_rate,umol/100g/min,20.2,1,Heiss_etal_2004,
+Homo sapiens,Frontal_cortex,CMRO2,cerebral_metabolic_rate,umol/100g/min,148.809,17,Kaufman__2004,
+Homo sapiens,Frontal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,36.138,42,Heiss_etal_2004; Karbowski__2007; Kaufman__2004,
 Homo sapiens,Hippocampus,CBF,cerebral_perfusion,mL/100g/min,47.4,2,Kaufman__2004,Hippocampus_Vol.mm3
 Homo sapiens,Hippocampus,CMRO2,cerebral_metabolic_rate,umol/100g/min,137.1,1,Kaufman__2004,Hippocampus_Vol.mm3
 Homo sapiens,Hippocampus,CMRgl,cerebral_metabolic_rate,umol/100g/min,28.591,11,Heiss_etal_2004; Karbowski__2007; Kaufman__2004,Hippocampus_Vol.mm3
-Homo sapiens,Hypothalamus,CMRgl,cerebral_metabolic_rate,umol/100g/min,27,1,Karbowski__2007,NA
-Homo sapiens,Insula,CMRgl,cerebral_metabolic_rate,umol/100g/min,30.3,1,Heiss_etal_2004,NA
+Homo sapiens,Hypothalamus,CMRgl,cerebral_metabolic_rate,umol/100g/min,27.0,1,Karbowski__2007,
+Homo sapiens,Insula,CMRgl,cerebral_metabolic_rate,umol/100g/min,30.3,1,Heiss_etal_2004,
 Homo sapiens,Neocortex,CBF,cerebral_perfusion,mL/100g/min,44.61,10,Kaufman__2004,Neocortex_Vol.mm3
 Homo sapiens,Neocortex,CMRO2,cerebral_metabolic_rate,umol/100g/min,150.738,13,Kaufman__2004,Neocortex_Vol.mm3
 Homo sapiens,Neocortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,35.467,50,Heiss_etal_2004; Karbowski__2007; Kaufman__2004,Neocortex_Vol.mm3
-Homo sapiens,Nucleus_accumbens,CMRgl,cerebral_metabolic_rate,umol/100g/min,32.3,1,Heiss_etal_2004,NA
-Homo sapiens,Nucleus_dentatus_cerebelli,CMRgl,cerebral_metabolic_rate,umol/100g/min,24.2,1,Heiss_etal_2004,NA
-Homo sapiens,Nucleus_ruber,CMRgl,cerebral_metabolic_rate,umol/100g/min,31,1,Heiss_etal_2004,NA
+Homo sapiens,Nucleus_accumbens,CMRgl,cerebral_metabolic_rate,umol/100g/min,32.3,1,Heiss_etal_2004,
+Homo sapiens,Nucleus_dentatus_cerebelli,CMRgl,cerebral_metabolic_rate,umol/100g/min,24.2,1,Heiss_etal_2004,
+Homo sapiens,Nucleus_ruber,CMRgl,cerebral_metabolic_rate,umol/100g/min,31.0,1,Heiss_etal_2004,
 Homo sapiens,Nucleus_subthalamicus,CMRgl,cerebral_metabolic_rate,umol/100g/min,25.2,1,Heiss_etal_2004,Nucleus_subthalamicus_Vol.mm3
-Homo sapiens,Occipital_cortex,CMRO2,cerebral_metabolic_rate,umol/100g/min,167.317,18,Kaufman__2004,NA
-Homo sapiens,Occipital_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,37.117,33,Heiss_etal_2004; Karbowski__2007; Kaufman__2004,NA
+Homo sapiens,Occipital_cortex,CMRO2,cerebral_metabolic_rate,umol/100g/min,167.317,18,Kaufman__2004,
+Homo sapiens,Occipital_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,37.117,33,Heiss_etal_2004; Karbowski__2007; Kaufman__2004,
 Homo sapiens,Pallidum,CMRgl,cerebral_metabolic_rate,umol/100g/min,21.9,1,Heiss_etal_2004,Pallidum_Vol.mm3
-Homo sapiens,Parietal_cortex,CMRO2,cerebral_metabolic_rate,umol/100g/min,155.247,15,Kaufman__2004,NA
-Homo sapiens,Parietal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,36.143,37,Heiss_etal_2004; Karbowski__2007; Kaufman__2004,NA
-Homo sapiens,Prefrontal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,33,1,Karbowski__2007,NA
-Homo sapiens,Putamen,CMRgl,cerebral_metabolic_rate,umol/100g/min,40.2,1,Heiss_etal_2004,NA
-Homo sapiens,Sensorimotor_cortex,CMRO2,cerebral_metabolic_rate,umol/100g/min,148.434,5,Kaufman__2004,NA
-Homo sapiens,Sensorimotor_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,36.919,11,Karbowski__2007; Kaufman__2004,NA
-Homo sapiens,Substantia_nigra,CMRgl,cerebral_metabolic_rate,umol/100g/min,24.4,2,Heiss_etal_2004; Karbowski__2007,NA
-Homo sapiens,Temporal_cortex,CMRO2,cerebral_metabolic_rate,umol/100g/min,155.104,13,Kaufman__2004,NA
-Homo sapiens,Temporal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,32.955,40,Heiss_etal_2004; Karbowski__2007; Kaufman__2004,NA
+Homo sapiens,Parietal_cortex,CMRO2,cerebral_metabolic_rate,umol/100g/min,155.247,15,Kaufman__2004,
+Homo sapiens,Parietal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,36.143,37,Heiss_etal_2004; Karbowski__2007; Kaufman__2004,
+Homo sapiens,Prefrontal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,33.0,1,Karbowski__2007,
+Homo sapiens,Putamen,CMRgl,cerebral_metabolic_rate,umol/100g/min,40.2,1,Heiss_etal_2004,
+Homo sapiens,Sensorimotor_cortex,CMRO2,cerebral_metabolic_rate,umol/100g/min,148.434,5,Kaufman__2004,
+Homo sapiens,Sensorimotor_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,36.919,11,Karbowski__2007; Kaufman__2004,
+Homo sapiens,Substantia_nigra,CMRgl,cerebral_metabolic_rate,umol/100g/min,24.4,2,Heiss_etal_2004; Karbowski__2007,
+Homo sapiens,Temporal_cortex,CMRO2,cerebral_metabolic_rate,umol/100g/min,155.104,13,Kaufman__2004,
+Homo sapiens,Temporal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,32.955,40,Heiss_etal_2004; Karbowski__2007; Kaufman__2004,
 Homo sapiens,Thalamus,CBF,cerebral_perfusion,mL/100g/min,54.238,8,Kaufman__2004,Thalamus_Vol.mm3
 Homo sapiens,Thalamus,CMRO2,cerebral_metabolic_rate,umol/100g/min,177.311,9,Kaufman__2004,Thalamus_Vol.mm3
 Homo sapiens,Thalamus,CMRgl,cerebral_metabolic_rate,umol/100g/min,36.141,34,Karbowski__2007; Kaufman__2004,Thalamus_Vol.mm3
-Homo sapiens,Thalamus_medial_nucleus,CMRgl,cerebral_metabolic_rate,umol/100g/min,36.6,1,Heiss_etal_2004,NA
-Homo sapiens,Vermis,CMRgl,cerebral_metabolic_rate,umol/100g/min,30.1,1,Heiss_etal_2004,NA
-Homo sapiens,Visual_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,38,2,Karbowski__2007,NA
-Homo sapiens,White_matter,CBF,cerebral_perfusion,mL/100g/min,23.073,11,Kaufman__2004,NA
-Homo sapiens,White_matter,CMRO2,cerebral_metabolic_rate,umol/100g/min,74.8,10,Kaufman__2004,NA
-Homo sapiens,White_matter,CMRgl,cerebral_metabolic_rate,umol/100g/min,19.146,13,Kaufman__2004,NA
+Homo sapiens,Thalamus_medial_nucleus,CMRgl,cerebral_metabolic_rate,umol/100g/min,36.6,1,Heiss_etal_2004,
+Homo sapiens,Vermis,CMRgl,cerebral_metabolic_rate,umol/100g/min,30.1,1,Heiss_etal_2004,
+Homo sapiens,Visual_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,38.0,2,Karbowski__2007,
+Homo sapiens,White_matter,CBF,cerebral_perfusion,mL/100g/min,23.073,11,Kaufman__2004,
+Homo sapiens,White_matter,CMRO2,cerebral_metabolic_rate,umol/100g/min,74.8,10,Kaufman__2004,
+Homo sapiens,White_matter,CMRgl,cerebral_metabolic_rate,umol/100g/min,19.146,13,Kaufman__2004,
 Homo sapiens,Whole_brain,CBF,cerebral_perfusion,mL/100g/min,52.287,35,Kaufman__2004,Total_brain_net_volume_Vol.mm3
 Homo sapiens,Whole_brain,CMRO2,cerebral_metabolic_rate,umol/100g/min,155.383,37,Kaufman__2004,Total_brain_net_volume_Vol.mm3
 Homo sapiens,Whole_brain,CMRgl,cerebral_metabolic_rate,umol/100g/min,29.13,24,Karbowski__2007; Kaufman__2004,Total_brain_net_volume_Vol.mm3
 Homo sapiens,Whole_brain,Total_O2_consumption,cerebral_absolute_rate,mL/min,48.615,1,Karbowski__2007,Total_brain_net_volume_Vol.mm3
 Homo sapiens,Whole_brain,Total_glucose_utilization,cerebral_absolute_rate,umol/min,428.55,1,Karbowski__2007,Total_brain_net_volume_Vol.mm3
-Lepus sp.,Basal_ganglia,CMRgl,cerebral_metabolic_rate,umol/100g/min,58.7,1,Kaufman__2004,NA
+Lepus sp.,Basal_ganglia,CMRgl,cerebral_metabolic_rate,umol/100g/min,58.7,1,Kaufman__2004,
 Lepus sp.,Hippocampus,CMRgl,cerebral_metabolic_rate,umol/100g/min,58.1,1,Kaufman__2004,Hippocampus_Vol.mm3
 Lepus sp.,Neocortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,77.4,1,Kaufman__2004,Neocortex_Vol.mm3
-Lepus sp.,Occipital_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,76.4,1,Kaufman__2004,NA
-Lepus sp.,Parietal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,73.1,1,Kaufman__2004,NA
-Lepus sp.,Sensorimotor_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,82.65,1,Kaufman__2004,NA
+Lepus sp.,Occipital_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,76.4,1,Kaufman__2004,
+Lepus sp.,Parietal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,73.1,1,Kaufman__2004,
+Lepus sp.,Sensorimotor_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,82.65,1,Kaufman__2004,
 Lepus sp.,Thalamus,CMRgl,cerebral_metabolic_rate,umol/100g/min,89.7,1,Kaufman__2004,Thalamus_Vol.mm3
-Lepus sp.,White_matter,CMRgl,cerebral_metabolic_rate,umol/100g/min,26.1,1,Kaufman__2004,NA
-Macaca fascicularis,Basal_ganglia,CMRgl,cerebral_metabolic_rate,umol/100g/min,45.375,4,Kaufman__2004,NA
-Macaca fascicularis,Cerebellum,CMRgl,cerebral_metabolic_rate,umol/100g/min,36,1,Kaufman__2004,Cerebellum_Vol.mm3
-Macaca fascicularis,Cingulate_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,54.2,2,Kaufman__2004,NA
-Macaca fascicularis,Frontal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,49,1,Kaufman__2004,NA
+Lepus sp.,White_matter,CMRgl,cerebral_metabolic_rate,umol/100g/min,26.1,1,Kaufman__2004,
+Macaca fascicularis,Basal_ganglia,CMRgl,cerebral_metabolic_rate,umol/100g/min,45.375,4,Kaufman__2004,
+Macaca fascicularis,Cerebellum,CMRgl,cerebral_metabolic_rate,umol/100g/min,36.0,1,Kaufman__2004,Cerebellum_Vol.mm3
+Macaca fascicularis,Cingulate_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,54.2,2,Kaufman__2004,
+Macaca fascicularis,Frontal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,49.0,1,Kaufman__2004,
 Macaca fascicularis,Hippocampus,CMRgl,cerebral_metabolic_rate,umol/100g/min,34.5,2,Kaufman__2004,Hippocampus_Vol.mm3
 Macaca fascicularis,Neocortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,55.8,1,Kaufman__2004,Neocortex_Vol.mm3
-Macaca fascicularis,Occipital_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,59.4,2,Kaufman__2004,NA
-Macaca fascicularis,Parietal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,48.3,1,Kaufman__2004,NA
-Macaca fascicularis,Sensorimotor_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,56.55,3,Kaufman__2004,NA
-Macaca fascicularis,Temporal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,38,1,Kaufman__2004,NA
+Macaca fascicularis,Occipital_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,59.4,2,Kaufman__2004,
+Macaca fascicularis,Parietal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,48.3,1,Kaufman__2004,
+Macaca fascicularis,Sensorimotor_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,56.55,3,Kaufman__2004,
+Macaca fascicularis,Temporal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,38.0,1,Kaufman__2004,
 Macaca fascicularis,Thalamus,CMRgl,cerebral_metabolic_rate,umol/100g/min,46.45,4,Kaufman__2004,Thalamus_Vol.mm3
-Macaca fascicularis,White_matter,CMRgl,cerebral_metabolic_rate,umol/100g/min,15.25,2,Kaufman__2004,NA
-Macaca fascicularis,Whole_brain,CBF,cerebral_perfusion,mL/100g/min,43,1,Kaufman__2004,Total_brain_net_volume_Vol.mm3
+Macaca fascicularis,White_matter,CMRgl,cerebral_metabolic_rate,umol/100g/min,15.25,2,Kaufman__2004,
+Macaca fascicularis,Whole_brain,CBF,cerebral_perfusion,mL/100g/min,43.0,1,Kaufman__2004,Total_brain_net_volume_Vol.mm3
 Macaca fascicularis,Whole_brain,CMRO2,cerebral_metabolic_rate,umol/100g/min,136.16,1,Kaufman__2004,Total_brain_net_volume_Vol.mm3
 Macaca fascicularis,Whole_brain,CMRgl,cerebral_metabolic_rate,umol/100g/min,31.64,1,Kaufman__2004,Total_brain_net_volume_Vol.mm3
-Macaca mulatta,Amygdala,CMRgl,cerebral_metabolic_rate,umol/100g/min,32,3,Karbowski__2007,Amygdala_Vol.mm3
-Macaca mulatta,Basal_ganglia,CBF,cerebral_perfusion,mL/100g/min,60.5,1,Kaufman__2004,NA
-Macaca mulatta,Basal_ganglia,CMRO2,cerebral_metabolic_rate,umol/100g/min,255,1,Kaufman__2004,NA
-Macaca mulatta,Basal_ganglia,CMRgl,cerebral_metabolic_rate,umol/100g/min,43.8,5,Kaufman__2004,NA
-Macaca mulatta,Brain_stem,CMRgl,cerebral_metabolic_rate,umol/100g/min,85.75,2,Karbowski__2007,NA
-Macaca mulatta,Caudate_nucleus,CMRgl,cerebral_metabolic_rate,umol/100g/min,54.333,3,Karbowski__2007,NA
+Macaca mulatta,Amygdala,CMRgl,cerebral_metabolic_rate,umol/100g/min,32.0,3,Karbowski__2007,Amygdala_Vol.mm3
+Macaca mulatta,Basal_ganglia,CBF,cerebral_perfusion,mL/100g/min,60.5,1,Kaufman__2004,
+Macaca mulatta,Basal_ganglia,CMRO2,cerebral_metabolic_rate,umol/100g/min,255.0,1,Kaufman__2004,
+Macaca mulatta,Basal_ganglia,CMRgl,cerebral_metabolic_rate,umol/100g/min,43.8,5,Kaufman__2004,
+Macaca mulatta,Brain_stem,CMRgl,cerebral_metabolic_rate,umol/100g/min,85.75,2,Karbowski__2007,
+Macaca mulatta,Caudate_nucleus,CMRgl,cerebral_metabolic_rate,umol/100g/min,54.333,3,Karbowski__2007,
 Macaca mulatta,Cerebellum,CBF,cerebral_perfusion,mL/100g/min,47.8,1,Kaufman__2004,Cerebellum_Vol.mm3
 Macaca mulatta,Cerebellum,CMRgl,cerebral_metabolic_rate,umol/100g/min,28.433,6,Karbowski__2007; Kaufman__2004,Cerebellum_Vol.mm3
-Macaca mulatta,Cingulate_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,38.48,5,Kaufman__2004,NA
-Macaca mulatta,Frontal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,47.7,5,Kaufman__2004,NA
+Macaca mulatta,Cingulate_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,38.48,5,Kaufman__2004,
+Macaca mulatta,Frontal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,47.7,5,Kaufman__2004,
 Macaca mulatta,Hippocampus,CBF,cerebral_perfusion,mL/100g/min,53.9,1,Kaufman__2004,Hippocampus_Vol.mm3
 Macaca mulatta,Hippocampus,CMRgl,cerebral_metabolic_rate,umol/100g/min,35.1,7,Karbowski__2007; Kaufman__2004,Hippocampus_Vol.mm3
-Macaca mulatta,Hypothalamus,CMRgl,cerebral_metabolic_rate,umol/100g/min,42.833,3,Karbowski__2007,NA
-Macaca mulatta,Neocortex,CBF,cerebral_perfusion,mL/100g/min,53,1,Kaufman__2004,Neocortex_Vol.mm3
+Macaca mulatta,Hypothalamus,CMRgl,cerebral_metabolic_rate,umol/100g/min,42.833,3,Karbowski__2007,
+Macaca mulatta,Neocortex,CBF,cerebral_perfusion,mL/100g/min,53.0,1,Kaufman__2004,Neocortex_Vol.mm3
 Macaca mulatta,Neocortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,46.043,7,Karbowski__2007; Kaufman__2004,Neocortex_Vol.mm3
-Macaca mulatta,Occipital_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,54.34,5,Kaufman__2004,NA
-Macaca mulatta,Pallidum,CMRgl,cerebral_metabolic_rate,umol/100g/min,28,3,Karbowski__2007,Pallidum_Vol.mm3
-Macaca mulatta,Parietal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,42.1,2,Karbowski__2007; Kaufman__2004,NA
-Macaca mulatta,Prefrontal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,40,1,Karbowski__2007,NA
-Macaca mulatta,Sensorimotor_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,46,4,Karbowski__2007; Kaufman__2004,NA
-Macaca mulatta,Septum,CMRgl,cerebral_metabolic_rate,umol/100g/min,27.667,3,Karbowski__2007,NA
-Macaca mulatta,Substantia_nigra,CMRgl,cerebral_metabolic_rate,umol/100g/min,36.667,3,Karbowski__2007,NA
-Macaca mulatta,Temporal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,47.55,4,Karbowski__2007; Kaufman__2004,NA
+Macaca mulatta,Occipital_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,54.34,5,Kaufman__2004,
+Macaca mulatta,Pallidum,CMRgl,cerebral_metabolic_rate,umol/100g/min,28.0,3,Karbowski__2007,Pallidum_Vol.mm3
+Macaca mulatta,Parietal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,42.1,2,Karbowski__2007; Kaufman__2004,
+Macaca mulatta,Prefrontal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,40.0,1,Karbowski__2007,
+Macaca mulatta,Sensorimotor_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,46.0,4,Karbowski__2007; Kaufman__2004,
+Macaca mulatta,Septum,CMRgl,cerebral_metabolic_rate,umol/100g/min,27.667,3,Karbowski__2007,
+Macaca mulatta,Substantia_nigra,CMRgl,cerebral_metabolic_rate,umol/100g/min,36.667,3,Karbowski__2007,
+Macaca mulatta,Temporal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,47.55,4,Karbowski__2007; Kaufman__2004,
 Macaca mulatta,Thalamus,CMRgl,cerebral_metabolic_rate,umol/100g/min,44.313,8,Karbowski__2007; Kaufman__2004,Thalamus_Vol.mm3
-Macaca mulatta,Visual_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,62.5,2,Karbowski__2007,NA
-Macaca mulatta,White_matter,CMRgl,cerebral_metabolic_rate,umol/100g/min,11.36,5,Karbowski__2007; Kaufman__2004,NA
+Macaca mulatta,Visual_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,62.5,2,Karbowski__2007,
+Macaca mulatta,White_matter,CMRgl,cerebral_metabolic_rate,umol/100g/min,11.36,5,Karbowski__2007; Kaufman__2004,
 Macaca mulatta,Whole_brain,CBF,cerebral_perfusion,mL/100g/min,85.567,3,Kaufman__2004,Total_brain_net_volume_Vol.mm3
 Macaca mulatta,Whole_brain,CMRO2,cerebral_metabolic_rate,umol/100g/min,280.2,3,Kaufman__2004,Total_brain_net_volume_Vol.mm3
 Macaca mulatta,Whole_brain,CMRgl,cerebral_metabolic_rate,umol/100g/min,44.02,5,Karbowski__2007; Kaufman__2004,Total_brain_net_volume_Vol.mm3
-Macaca mulatta,Whole_brain,Total_O2_consumption,cerebral_absolute_rate,mL/min,6,1,Karbowski__2007,Total_brain_net_volume_Vol.mm3
+Macaca mulatta,Whole_brain,Total_O2_consumption,cerebral_absolute_rate,mL/min,6.0,1,Karbowski__2007,Total_brain_net_volume_Vol.mm3
 Macaca mulatta,Whole_brain,Total_glucose_utilization,cerebral_absolute_rate,umol/min,35.98,1,Karbowski__2007,Total_brain_net_volume_Vol.mm3
-Meriones unguiculatus,Basal_ganglia,CMRgl,cerebral_metabolic_rate,umol/100g/min,75,1,Kaufman__2004,NA
-Meriones unguiculatus,Cerebellum,CBF,cerebral_perfusion,mL/100g/min,93,1,Kaufman__2004,Cerebellum_Vol.mm3
+Meriones unguiculatus,Basal_ganglia,CMRgl,cerebral_metabolic_rate,umol/100g/min,75.0,1,Kaufman__2004,
+Meriones unguiculatus,Cerebellum,CBF,cerebral_perfusion,mL/100g/min,93.0,1,Kaufman__2004,Cerebellum_Vol.mm3
 Meriones unguiculatus,Cerebellum,CMRgl,cerebral_metabolic_rate,umol/100g/min,44.4,1,Kaufman__2004,Cerebellum_Vol.mm3
-Meriones unguiculatus,Frontal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,67.8,1,Kaufman__2004,NA
-Meriones unguiculatus,Hippocampus,CBF,cerebral_perfusion,mL/100g/min,109,1,Kaufman__2004,Hippocampus_Vol.mm3
-Meriones unguiculatus,Hippocampus,CMRgl,cerebral_metabolic_rate,umol/100g/min,69,1,Kaufman__2004,Hippocampus_Vol.mm3
+Meriones unguiculatus,Frontal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,67.8,1,Kaufman__2004,
+Meriones unguiculatus,Hippocampus,CBF,cerebral_perfusion,mL/100g/min,109.0,1,Kaufman__2004,Hippocampus_Vol.mm3
+Meriones unguiculatus,Hippocampus,CMRgl,cerebral_metabolic_rate,umol/100g/min,69.0,1,Kaufman__2004,Hippocampus_Vol.mm3
 Meriones unguiculatus,Neocortex,CBF,cerebral_perfusion,mL/100g/min,112.8,2,Kaufman__2004,Neocortex_Vol.mm3
 Meriones unguiculatus,Neocortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,83.7,2,Kaufman__2004,Neocortex_Vol.mm3
-Meriones unguiculatus,Occipital_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,69.4,1,Kaufman__2004,NA
-Meriones unguiculatus,Sensorimotor_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,67.2,1,Kaufman__2004,NA
+Meriones unguiculatus,Occipital_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,69.4,1,Kaufman__2004,
+Meriones unguiculatus,Sensorimotor_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,67.2,1,Kaufman__2004,
 Meriones unguiculatus,Thalamus,CMRgl,cerebral_metabolic_rate,umol/100g/min,74.4,2,Kaufman__2004,Thalamus_Vol.mm3
-Meriones unguiculatus,White_matter,CBF,cerebral_perfusion,mL/100g/min,62,1,Kaufman__2004,NA
-Meriones unguiculatus,Whole_brain,CBF,cerebral_perfusion,mL/100g/min,102,1,Kaufman__2004,Total_brain_net_volume_Vol.mm3
-Mus musculus,Amygdala,CMRgl,cerebral_metabolic_rate,umol/100g/min,58,1,Karbowski__2007,Amygdala_Vol.mm3
-Mus musculus,Auditory_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,96.1,5,Kaufman__2004,NA
-Mus musculus,Basal_ganglia,CMRO2,cerebral_metabolic_rate,umol/100g/min,5.2,1,Kaufman__2004,NA
-Mus musculus,Basal_ganglia,CMRgl,cerebral_metabolic_rate,umol/100g/min,75.475,4,Kaufman__2004,NA
-Mus musculus,Brain_stem,CMRgl,cerebral_metabolic_rate,umol/100g/min,93,2,Karbowski__2007,NA
-Mus musculus,Caudate_nucleus,CMRgl,cerebral_metabolic_rate,umol/100g/min,125,1,Karbowski__2007,NA
-Mus musculus,Cerebellum,CMRgl,cerebral_metabolic_rate,umol/100g/min,92,4,Karbowski__2007; Kaufman__2004,Cerebellum_Vol.mm3
-Mus musculus,Cingulate_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,92.833,3,Karbowski__2007; Kaufman__2004,NA
-Mus musculus,Frontal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,98.82,5,Kaufman__2004,NA
+Meriones unguiculatus,White_matter,CBF,cerebral_perfusion,mL/100g/min,62.0,1,Kaufman__2004,
+Meriones unguiculatus,Whole_brain,CBF,cerebral_perfusion,mL/100g/min,102.0,1,Kaufman__2004,Total_brain_net_volume_Vol.mm3
+Mus musculus,Amygdala,CMRgl,cerebral_metabolic_rate,umol/100g/min,58.0,1,Karbowski__2007,Amygdala_Vol.mm3
+Mus musculus,Auditory_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,96.1,5,Kaufman__2004,
+Mus musculus,Basal_ganglia,CMRO2,cerebral_metabolic_rate,umol/100g/min,5.2,1,Kaufman__2004,
+Mus musculus,Basal_ganglia,CMRgl,cerebral_metabolic_rate,umol/100g/min,75.475,4,Kaufman__2004,
+Mus musculus,Brain_stem,CMRgl,cerebral_metabolic_rate,umol/100g/min,93.0,2,Karbowski__2007,
+Mus musculus,Caudate_nucleus,CMRgl,cerebral_metabolic_rate,umol/100g/min,125.0,1,Karbowski__2007,
+Mus musculus,Cerebellum,CMRgl,cerebral_metabolic_rate,umol/100g/min,92.0,4,Karbowski__2007; Kaufman__2004,Cerebellum_Vol.mm3
+Mus musculus,Cingulate_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,92.833,3,Karbowski__2007; Kaufman__2004,
+Mus musculus,Frontal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,98.82,5,Kaufman__2004,
 Mus musculus,Hippocampus,CMRgl,cerebral_metabolic_rate,umol/100g/min,67.72,5,Kaufman__2004,Hippocampus_Vol.mm3
-Mus musculus,Hypothalamus,CMRgl,cerebral_metabolic_rate,umol/100g/min,81.75,2,Karbowski__2007,NA
+Mus musculus,Hypothalamus,CMRgl,cerebral_metabolic_rate,umol/100g/min,81.75,2,Karbowski__2007,
 Mus musculus,Neocortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,94.863,8,Karbowski__2007; Kaufman__2004,Neocortex_Vol.mm3
-Mus musculus,Occipital_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,84.225,4,Kaufman__2004,NA
-Mus musculus,Pallidum,CMRgl,cerebral_metabolic_rate,umol/100g/min,76,1,Karbowski__2007,Pallidum_Vol.mm3
-Mus musculus,Parietal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,98.5,2,Kaufman__2004,NA
-Mus musculus,Prefrontal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,122,1,Karbowski__2007,NA
-Mus musculus,Sensorimotor_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,99.42,5,Kaufman__2004,NA
-Mus musculus,Septum,CMRgl,cerebral_metabolic_rate,umol/100g/min,73,2,Karbowski__2007,NA
-Mus musculus,Substantia_nigra,CMRgl,cerebral_metabolic_rate,umol/100g/min,88,1,Karbowski__2007,NA
-Mus musculus,Temporal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,93,1,Karbowski__2007,NA
-Mus musculus,Thalamus,CMRgl,cerebral_metabolic_rate,umol/100g/min,101,6,Karbowski__2007; Kaufman__2004,Thalamus_Vol.mm3
-Mus musculus,Visual_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,111,1,Karbowski__2007,NA
-Mus musculus,White_matter,CMRgl,cerebral_metabolic_rate,umol/100g/min,38,6,Karbowski__2007; Kaufman__2004,NA
-Mus musculus,Whole_brain,CBF,cerebral_perfusion,mL/100g/min,117,1,Kaufman__2004,Total_brain_net_volume_Vol.mm3
+Mus musculus,Occipital_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,84.225,4,Kaufman__2004,
+Mus musculus,Pallidum,CMRgl,cerebral_metabolic_rate,umol/100g/min,76.0,1,Karbowski__2007,Pallidum_Vol.mm3
+Mus musculus,Parietal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,98.5,2,Kaufman__2004,
+Mus musculus,Prefrontal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,122.0,1,Karbowski__2007,
+Mus musculus,Sensorimotor_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,99.42,5,Kaufman__2004,
+Mus musculus,Septum,CMRgl,cerebral_metabolic_rate,umol/100g/min,73.0,2,Karbowski__2007,
+Mus musculus,Substantia_nigra,CMRgl,cerebral_metabolic_rate,umol/100g/min,88.0,1,Karbowski__2007,
+Mus musculus,Temporal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,93.0,1,Karbowski__2007,
+Mus musculus,Thalamus,CMRgl,cerebral_metabolic_rate,umol/100g/min,101.0,6,Karbowski__2007; Kaufman__2004,Thalamus_Vol.mm3
+Mus musculus,Visual_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,111.0,1,Karbowski__2007,
+Mus musculus,White_matter,CMRgl,cerebral_metabolic_rate,umol/100g/min,38.0,6,Karbowski__2007; Kaufman__2004,
+Mus musculus,Whole_brain,CBF,cerebral_perfusion,mL/100g/min,117.0,1,Kaufman__2004,Total_brain_net_volume_Vol.mm3
 Mus musculus,Whole_brain,CMRgl,cerebral_metabolic_rate,umol/100g/min,73.208,4,Karbowski__2007; Kaufman__2004,Total_brain_net_volume_Vol.mm3
 Mus musculus,Whole_brain,Total_glucose_utilization,cerebral_absolute_rate,umol/min,0.32,1,Karbowski__2007,Total_brain_net_volume_Vol.mm3
-Oryctolagus cuniculus,Amygdala,CMRgl,cerebral_metabolic_rate,umol/100g/min,39,1,Karbowski__2007,Amygdala_Vol.mm3
-Oryctolagus cuniculus,Brain_stem,CMRgl,cerebral_metabolic_rate,umol/100g/min,94,1,Karbowski__2007,NA
-Oryctolagus cuniculus,Hippocampus,CMRgl,cerebral_metabolic_rate,umol/100g/min,58,1,Karbowski__2007,Hippocampus_Vol.mm3
-Oryctolagus cuniculus,Hypothalamus,CMRgl,cerebral_metabolic_rate,umol/100g/min,65,1,Karbowski__2007,NA
+Oryctolagus cuniculus,Amygdala,CMRgl,cerebral_metabolic_rate,umol/100g/min,39.0,1,Karbowski__2007,Amygdala_Vol.mm3
+Oryctolagus cuniculus,Brain_stem,CMRgl,cerebral_metabolic_rate,umol/100g/min,94.0,1,Karbowski__2007,
+Oryctolagus cuniculus,Hippocampus,CMRgl,cerebral_metabolic_rate,umol/100g/min,58.0,1,Karbowski__2007,Hippocampus_Vol.mm3
+Oryctolagus cuniculus,Hypothalamus,CMRgl,cerebral_metabolic_rate,umol/100g/min,65.0,1,Karbowski__2007,
 Oryctolagus cuniculus,Neocortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,83.5,2,Karbowski__2007,Neocortex_Vol.mm3
-Oryctolagus cuniculus,Pallidum,CMRgl,cerebral_metabolic_rate,umol/100g/min,42,1,Karbowski__2007,Pallidum_Vol.mm3
-Oryctolagus cuniculus,Parietal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,73,1,Karbowski__2007,NA
-Oryctolagus cuniculus,Sensorimotor_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,83,1,Karbowski__2007,NA
-Oryctolagus cuniculus,Septum,CMRgl,cerebral_metabolic_rate,umol/100g/min,48,1,Karbowski__2007,NA
-Oryctolagus cuniculus,Substantia_nigra,CMRgl,cerebral_metabolic_rate,umol/100g/min,48,1,Karbowski__2007,NA
-Oryctolagus cuniculus,Temporal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,102,1,Karbowski__2007,NA
-Oryctolagus cuniculus,Thalamus,CMRgl,cerebral_metabolic_rate,umol/100g/min,90,1,Karbowski__2007,Thalamus_Vol.mm3
-Oryctolagus cuniculus,Visual_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,76,1,Karbowski__2007,NA
-Oryctolagus cuniculus,White_matter,CMRgl,cerebral_metabolic_rate,umol/100g/min,26,1,Karbowski__2007,NA
-Oryctolagus cuniculus,Whole_brain,CMRgl,cerebral_metabolic_rate,umol/100g/min,69,1,Karbowski__2007,Total_brain_net_volume_Vol.mm3
+Oryctolagus cuniculus,Pallidum,CMRgl,cerebral_metabolic_rate,umol/100g/min,42.0,1,Karbowski__2007,Pallidum_Vol.mm3
+Oryctolagus cuniculus,Parietal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,73.0,1,Karbowski__2007,
+Oryctolagus cuniculus,Sensorimotor_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,83.0,1,Karbowski__2007,
+Oryctolagus cuniculus,Septum,CMRgl,cerebral_metabolic_rate,umol/100g/min,48.0,1,Karbowski__2007,
+Oryctolagus cuniculus,Substantia_nigra,CMRgl,cerebral_metabolic_rate,umol/100g/min,48.0,1,Karbowski__2007,
+Oryctolagus cuniculus,Temporal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,102.0,1,Karbowski__2007,
+Oryctolagus cuniculus,Thalamus,CMRgl,cerebral_metabolic_rate,umol/100g/min,90.0,1,Karbowski__2007,Thalamus_Vol.mm3
+Oryctolagus cuniculus,Visual_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,76.0,1,Karbowski__2007,
+Oryctolagus cuniculus,White_matter,CMRgl,cerebral_metabolic_rate,umol/100g/min,26.0,1,Karbowski__2007,
+Oryctolagus cuniculus,Whole_brain,CMRgl,cerebral_metabolic_rate,umol/100g/min,69.0,1,Karbowski__2007,Total_brain_net_volume_Vol.mm3
 Oryctolagus cuniculus,Whole_brain,Total_glucose_utilization,cerebral_absolute_rate,umol/min,7.93,1,Karbowski__2007,Total_brain_net_volume_Vol.mm3
 Ovis aries,Whole_brain,CBF,cerebral_perfusion,mL/100g/min,64.85,4,Kaufman__2004,Total_brain_net_volume_Vol.mm3
 Ovis aries,Whole_brain,CMRO2,cerebral_metabolic_rate,umol/100g/min,169.075,4,Karbowski__2007; Kaufman__2004,Total_brain_net_volume_Vol.mm3
-Ovis aries,Whole_brain,CMRgl,cerebral_metabolic_rate,umol/100g/min,35,1,Karbowski__2007,Total_brain_net_volume_Vol.mm3
+Ovis aries,Whole_brain,CMRgl,cerebral_metabolic_rate,umol/100g/min,35.0,1,Karbowski__2007,Total_brain_net_volume_Vol.mm3
 Ovis aries,Whole_brain,Total_O2_consumption,cerebral_absolute_rate,mL/min,5.586,1,Karbowski__2007,Total_brain_net_volume_Vol.mm3
 Ovis aries,Whole_brain,Total_glucose_utilization,cerebral_absolute_rate,umol/min,40.18,1,Karbowski__2007,Total_brain_net_volume_Vol.mm3
-Papio anubis,Caudate_nucleus,CMRgl,cerebral_metabolic_rate,umol/100g/min,41,1,Karbowski__2007,NA
-Papio anubis,Cerebellum,CMRgl,cerebral_metabolic_rate,umol/100g/min,32,1,Karbowski__2007,Cerebellum_Vol.mm3
-Papio anubis,Cingulate_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,49,1,Karbowski__2007,NA
-Papio anubis,Hippocampus,CMRgl,cerebral_metabolic_rate,umol/100g/min,32,1,Karbowski__2007,Hippocampus_Vol.mm3
-Papio anubis,Neocortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,46,2,Karbowski__2007,Neocortex_Vol.mm3
-Papio anubis,Occipital_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,33,1,Karbowski__2007,NA
-Papio anubis,Parietal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,47,1,Karbowski__2007,NA
-Papio anubis,Prefrontal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,52,1,Karbowski__2007,NA
-Papio anubis,Sensorimotor_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,49,1,Karbowski__2007,NA
-Papio anubis,Temporal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,47,1,Karbowski__2007,NA
-Papio anubis,Thalamus,CMRgl,cerebral_metabolic_rate,umol/100g/min,51,1,Karbowski__2007,Thalamus_Vol.mm3
+Papio anubis,Caudate_nucleus,CMRgl,cerebral_metabolic_rate,umol/100g/min,41.0,1,Karbowski__2007,
+Papio anubis,Cerebellum,CMRgl,cerebral_metabolic_rate,umol/100g/min,32.0,1,Karbowski__2007,Cerebellum_Vol.mm3
+Papio anubis,Cingulate_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,49.0,1,Karbowski__2007,
+Papio anubis,Hippocampus,CMRgl,cerebral_metabolic_rate,umol/100g/min,32.0,1,Karbowski__2007,Hippocampus_Vol.mm3
+Papio anubis,Neocortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,46.0,2,Karbowski__2007,Neocortex_Vol.mm3
+Papio anubis,Occipital_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,33.0,1,Karbowski__2007,
+Papio anubis,Parietal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,47.0,1,Karbowski__2007,
+Papio anubis,Prefrontal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,52.0,1,Karbowski__2007,
+Papio anubis,Sensorimotor_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,49.0,1,Karbowski__2007,
+Papio anubis,Temporal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,47.0,1,Karbowski__2007,
+Papio anubis,Thalamus,CMRgl,cerebral_metabolic_rate,umol/100g/min,51.0,1,Karbowski__2007,Thalamus_Vol.mm3
 Papio anubis,Whole_brain,CMRO2,cerebral_metabolic_rate,umol/100g/min,3.4,1,Karbowski__2007,Total_brain_net_volume_Vol.mm3
-Papio anubis,Whole_brain,CMRgl,cerebral_metabolic_rate,umol/100g/min,44,1,Karbowski__2007,Total_brain_net_volume_Vol.mm3
+Papio anubis,Whole_brain,CMRgl,cerebral_metabolic_rate,umol/100g/min,44.0,1,Karbowski__2007,Total_brain_net_volume_Vol.mm3
 Papio anubis,Whole_brain,Total_O2_consumption,cerebral_absolute_rate,mL/min,4.658,1,Karbowski__2007,Total_brain_net_volume_Vol.mm3
 Papio anubis,Whole_brain,Total_glucose_utilization,cerebral_absolute_rate,umol/min,60.4,1,Karbowski__2007,Total_brain_net_volume_Vol.mm3
-Rattus norvegicus,Amygdala,CMRgl,cerebral_metabolic_rate,umol/100g/min,52,5,Karbowski__2007,Amygdala_Vol.mm3
-Rattus norvegicus,Auditory_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,186.858,31,Kaufman__2004,NA
-Rattus norvegicus,Basal_ganglia,CBF,cerebral_perfusion,mL/100g/min,117.5,2,Kaufman__2004,NA
-Rattus norvegicus,Basal_ganglia,CMRO2,cerebral_metabolic_rate,umol/100g/min,84.5,1,Kaufman__2004,NA
-Rattus norvegicus,Basal_ganglia,CMRgl,cerebral_metabolic_rate,umol/100g/min,120.259,39,Kaufman__2004,NA
-Rattus norvegicus,Brain_stem,CMRgl,cerebral_metabolic_rate,umol/100g/min,120.3,5,Karbowski__2007,NA
-Rattus norvegicus,Caudate_nucleus,CMRgl,cerebral_metabolic_rate,umol/100g/min,83,6,Karbowski__2007,NA
+Rattus norvegicus,Amygdala,CMRgl,cerebral_metabolic_rate,umol/100g/min,52.0,5,Karbowski__2007,Amygdala_Vol.mm3
+Rattus norvegicus,Auditory_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,186.858,31,Kaufman__2004,
+Rattus norvegicus,Basal_ganglia,CBF,cerebral_perfusion,mL/100g/min,117.5,2,Kaufman__2004,
+Rattus norvegicus,Basal_ganglia,CMRO2,cerebral_metabolic_rate,umol/100g/min,84.5,1,Kaufman__2004,
+Rattus norvegicus,Basal_ganglia,CMRgl,cerebral_metabolic_rate,umol/100g/min,120.259,39,Kaufman__2004,
+Rattus norvegicus,Brain_stem,CMRgl,cerebral_metabolic_rate,umol/100g/min,120.3,5,Karbowski__2007,
+Rattus norvegicus,Caudate_nucleus,CMRgl,cerebral_metabolic_rate,umol/100g/min,83.0,6,Karbowski__2007,
 Rattus norvegicus,Cerebellum,CBF,cerebral_perfusion,mL/100g/min,116.5,2,Kaufman__2004,Cerebellum_Vol.mm3
-Rattus norvegicus,Cerebellum,CMRO2,cerebral_metabolic_rate,umol/100g/min,61,1,Kaufman__2004,Cerebellum_Vol.mm3
+Rattus norvegicus,Cerebellum,CMRO2,cerebral_metabolic_rate,umol/100g/min,61.0,1,Kaufman__2004,Cerebellum_Vol.mm3
 Rattus norvegicus,Cerebellum,CMRgl,cerebral_metabolic_rate,umol/100g/min,118.883,30,Karbowski__2007; Kaufman__2004,Cerebellum_Vol.mm3
-Rattus norvegicus,Cingulate_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,98.394,32,Karbowski__2007; Kaufman__2004,NA
-Rattus norvegicus,Frontal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,143.654,37,Karbowski__2007; Kaufman__2004,NA
+Rattus norvegicus,Cingulate_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,98.394,32,Karbowski__2007; Kaufman__2004,
+Rattus norvegicus,Frontal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,143.654,37,Karbowski__2007; Kaufman__2004,
 Rattus norvegicus,Hippocampus,CBF,cerebral_perfusion,mL/100g/min,92.6,5,Kaufman__2004,Hippocampus_Vol.mm3
-Rattus norvegicus,Hippocampus,CMRO2,cerebral_metabolic_rate,umol/100g/min,79,1,Kaufman__2004,Hippocampus_Vol.mm3
+Rattus norvegicus,Hippocampus,CMRO2,cerebral_metabolic_rate,umol/100g/min,79.0,1,Kaufman__2004,Hippocampus_Vol.mm3
 Rattus norvegicus,Hippocampus,CMRgl,cerebral_metabolic_rate,umol/100g/min,105.284,47,Karbowski__2007; Kaufman__2004,Hippocampus_Vol.mm3
-Rattus norvegicus,Hypothalamus,CMRgl,cerebral_metabolic_rate,umol/100g/min,57.917,6,Karbowski__2007,NA
+Rattus norvegicus,Hypothalamus,CMRgl,cerebral_metabolic_rate,umol/100g/min,57.917,6,Karbowski__2007,
 Rattus norvegicus,Neocortex,CBF,cerebral_perfusion,mL/100g/min,149.6,3,Kaufman__2004,Neocortex_Vol.mm3
 Rattus norvegicus,Neocortex,CMRO2,cerebral_metabolic_rate,umol/100g/min,294.35,2,Kaufman__2004,Neocortex_Vol.mm3
 Rattus norvegicus,Neocortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,133.916,52,Karbowski__2007; Kaufman__2004,Neocortex_Vol.mm3
-Rattus norvegicus,Occipital_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,147.593,35,Karbowski__2007; Kaufman__2004,NA
+Rattus norvegicus,Occipital_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,147.593,35,Karbowski__2007; Kaufman__2004,
 Rattus norvegicus,Pallidum,CMRgl,cerebral_metabolic_rate,umol/100g/min,46.333,6,Karbowski__2007,Pallidum_Vol.mm3
-Rattus norvegicus,Parietal_cortex,CMRO2,cerebral_metabolic_rate,umol/100g/min,110,1,Kaufman__2004,NA
-Rattus norvegicus,Parietal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,148.498,33,Karbowski__2007; Kaufman__2004,NA
-Rattus norvegicus,Prefrontal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,97.667,3,Karbowski__2007,NA
-Rattus norvegicus,Sensorimotor_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,143.122,39,Karbowski__2007; Kaufman__2004,NA
-Rattus norvegicus,Septum,CMRgl,cerebral_metabolic_rate,umol/100g/min,51.167,6,Karbowski__2007,NA
-Rattus norvegicus,Substantia_nigra,CMRgl,cerebral_metabolic_rate,umol/100g/min,53.2,5,Karbowski__2007,NA
-Rattus norvegicus,Temporal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,114.7,9,Karbowski__2007; Kaufman__2004,NA
-Rattus norvegicus,Thalamus,CBF,cerebral_perfusion,mL/100g/min,131,4,Kaufman__2004,Thalamus_Vol.mm3
-Rattus norvegicus,Thalamus,CMRO2,cerebral_metabolic_rate,umol/100g/min,104,1,Kaufman__2004,Thalamus_Vol.mm3
+Rattus norvegicus,Parietal_cortex,CMRO2,cerebral_metabolic_rate,umol/100g/min,110.0,1,Kaufman__2004,
+Rattus norvegicus,Parietal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,148.498,33,Karbowski__2007; Kaufman__2004,
+Rattus norvegicus,Prefrontal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,97.667,3,Karbowski__2007,
+Rattus norvegicus,Sensorimotor_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,143.122,39,Karbowski__2007; Kaufman__2004,
+Rattus norvegicus,Septum,CMRgl,cerebral_metabolic_rate,umol/100g/min,51.167,6,Karbowski__2007,
+Rattus norvegicus,Substantia_nigra,CMRgl,cerebral_metabolic_rate,umol/100g/min,53.2,5,Karbowski__2007,
+Rattus norvegicus,Temporal_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,114.7,9,Karbowski__2007; Kaufman__2004,
+Rattus norvegicus,Thalamus,CBF,cerebral_perfusion,mL/100g/min,131.0,4,Kaufman__2004,Thalamus_Vol.mm3
+Rattus norvegicus,Thalamus,CMRO2,cerebral_metabolic_rate,umol/100g/min,104.0,1,Kaufman__2004,Thalamus_Vol.mm3
 Rattus norvegicus,Thalamus,CMRgl,cerebral_metabolic_rate,umol/100g/min,127.146,48,Karbowski__2007; Kaufman__2004,Thalamus_Vol.mm3
-Rattus norvegicus,Visual_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,91.25,4,Karbowski__2007,NA
-Rattus norvegicus,White_matter,CBF,cerebral_perfusion,mL/100g/min,35,1,Kaufman__2004,NA
-Rattus norvegicus,White_matter,CMRO2,cerebral_metabolic_rate,umol/100g/min,36,1,Kaufman__2004,NA
-Rattus norvegicus,White_matter,CMRgl,cerebral_metabolic_rate,umol/100g/min,85.62,37,Karbowski__2007; Kaufman__2004,NA
+Rattus norvegicus,Visual_cortex,CMRgl,cerebral_metabolic_rate,umol/100g/min,91.25,4,Karbowski__2007,
+Rattus norvegicus,White_matter,CBF,cerebral_perfusion,mL/100g/min,35.0,1,Kaufman__2004,
+Rattus norvegicus,White_matter,CMRO2,cerebral_metabolic_rate,umol/100g/min,36.0,1,Kaufman__2004,
+Rattus norvegicus,White_matter,CMRgl,cerebral_metabolic_rate,umol/100g/min,85.62,37,Karbowski__2007; Kaufman__2004,
 Rattus norvegicus,Whole_brain,CBF,cerebral_perfusion,mL/100g/min,104.9,5,Kaufman__2004,Total_brain_net_volume_Vol.mm3
 Rattus norvegicus,Whole_brain,CMRO2,cerebral_metabolic_rate,umol/100g/min,437.5,5,Kaufman__2004,Total_brain_net_volume_Vol.mm3
 Rattus norvegicus,Whole_brain,CMRgl,cerebral_metabolic_rate,umol/100g/min,72.508,12,Karbowski__2007; Kaufman__2004,Total_brain_net_volume_Vol.mm3
 Rattus norvegicus,Whole_brain,Total_O2_consumption,cerebral_absolute_rate,mL/min,0.19,1,Karbowski__2007,Total_brain_net_volume_Vol.mm3
 Rattus norvegicus,Whole_brain,Total_glucose_utilization,cerebral_absolute_rate,umol/min,1.52,1,Karbowski__2007,Total_brain_net_volume_Vol.mm3
-Spermophilus tridecemlineatus,Whole_brain,CMRgl,cerebral_metabolic_rate,umol/100g/min,60,1,Karbowski__2007,Total_brain_net_volume_Vol.mm3
+Spermophilus tridecemlineatus,Whole_brain,CMRgl,cerebral_metabolic_rate,umol/100g/min,60.0,1,Karbowski__2007,Total_brain_net_volume_Vol.mm3
 Spermophilus tridecemlineatus,Whole_brain,Total_glucose_utilization,cerebral_absolute_rate,umol/min,3.88,1,Karbowski__2007,Total_brain_net_volume_Vol.mm3
-Sus scrofa,Basal_ganglia,CBF,cerebral_perfusion,mL/100g/min,102.6,1,Kaufman__2004,NA
+Sus scrofa,Basal_ganglia,CBF,cerebral_perfusion,mL/100g/min,102.6,1,Kaufman__2004,
 Sus scrofa,Cerebellum,CBF,cerebral_perfusion,mL/100g/min,88.8,1,Kaufman__2004,Cerebellum_Vol.mm3
-Sus scrofa,White_matter,CBF,cerebral_perfusion,mL/100g/min,33.6,1,Kaufman__2004,NA
+Sus scrofa,White_matter,CBF,cerebral_perfusion,mL/100g/min,33.6,1,Kaufman__2004,

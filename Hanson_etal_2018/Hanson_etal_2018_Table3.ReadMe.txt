@@ -1,0 +1,10 @@
+Hanson et al. 2018 - Table 3 (oligodendrocyte density + % of total glia)
+DOI: 10.1002/dneu.22554
+Source        Hanson_etal_2018.pdf (Table 3)
+Snapshot      Hanson_etal_2018_Table3_snapshot.csv   (verbatim: WS/TD + t/df/p/%increase; mean +/- SD)
+Derived       Hanson_etal_2018_Table3.R -> Hanson_etal_2018_Table3_derived.csv   <-- USE THIS
+              (mean/SD split into numeric columns; stat rows dropped)
+Definitions   Hanson_etal_2018_definitions.csv
+Online        __Public/comparative-data/10.1002%2Fdneu.22554_Table3.tsv
+
+Notes         Dorsal (dC) and medial (mC) caudate only; groups WS / TD.

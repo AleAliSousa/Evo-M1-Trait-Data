@@ -1,4 +1,4 @@
-## Heffner_Heffner_1992_a_Table1.R -- snapshot -> analysis CSV + public TSV
+## Heffner_Heffner_1992_a_TABLE1.R -- snapshot -> analysis CSV + public TSV
 ##
 ## Heffner, R. S., & Heffner, H. E. (1992). Visual factors in sound localization
 ## in mammals. J Comp Neurol 317(3):219-232. doi:10.1002/cne.903170302
@@ -26,7 +26,7 @@
   stop("Run with Rscript file.R, or open in RStudio and click Source (save first).", call. = FALSE)
 })
 folder    <- dirname(.sp)
-item_name <- tools::file_path_sans_ext(basename(.sp))    # "Heffner_Heffner_1992_a_Table1"
+item_name <- tools::file_path_sans_ext(basename(.sp))    # "Heffner_Heffner_1992_a_TABLE1"
 base <- local({
   d <- folder
   while (dirname(d) != d && !file.exists(file.path(d, "__ReadMe.xlsx"))) d <- dirname(d)

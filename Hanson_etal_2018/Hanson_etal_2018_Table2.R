@@ -64,3 +64,16 @@ out <- out[order(match(out$Region_code, codes), out$Group),
              "Soma_area.um2","Soma_area.um2.SD")]
 write.csv(out, "Hanson_etal_2018_Table2_derived.csv", row.names = FALSE)
 cat("Table2 derived:", nrow(out), "rows\n")
+
+
+## ---- public TSV (database "online" copy) : regenerate from the derived table ----
+## Written into <repo-root>/__Public/comparative-data when run inside the repo (root = has __ReadMe.xlsx).
+.tsv_base <- local({ d <- folder
+  while (dirname(d) != d && !file.exists(file.path(d, "__ReadMe.xlsx"))) d <- dirname(d)
+  if (file.exists(file.path(d, "__ReadMe.xlsx"))) d else NA_character_ })
+if (!is.na(.tsv_base)) {
+  .td <- file.path(.tsv_base, "__Public", "comparative-data")
+  if (!dir.exists(.td)) dir.create(.td, recursive = TRUE)
+  write.table(read.csv("Hanson_etal_2018_Table2_derived.csv", check.names = FALSE),
+              file.path(.td, "10.1002%2Fdneu.22554_Table2.tsv"), sep = "\t", row.names = FALSE)
+}

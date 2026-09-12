@@ -1,6 +1,6 @@
 Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
 Region,Neocortical region (Frontal/Temporal/Parietal/Occipital/Neocortex total),see Region,,group,info,Homo sapiens,Karlsen_Pakkenberg_2011,,
-Group,Control or DS (Down syndrome),see Region,,group,info,Homo sapiens,Karlsen_Pakkenberg_2011,Study 1a uses Control,
+Group,Control or DS (Down syndrome),see Region,,group,info,Homo sapiens,Karlsen_Pakkenberg_2011,,
 n_brains,Number of brains in the group mean,see Region,,count,info,Homo sapiens,Karlsen_Pakkenberg_2011,Control 6; DS 4,
 Neuron_N.x10.9,Total neuron number (bilateral) - group mean,see Region,count.x10^9,group mean,primary,Homo sapiens,Karlsen_Pakkenberg_2011,From author data (personal communication),
 Neuron_density.x10.6.per.cm3,Neuron numerical density - group mean,see Region,density.x10^6.per.cm3,group mean,primary,Homo sapiens,Karlsen_Pakkenberg_2011,Reproduces published values,

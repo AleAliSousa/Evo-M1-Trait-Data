@@ -1,11 +1,21 @@
 Karlsen & Pakkenberg 2011 - reported values (published Results-text values)
 DOI: 10.1093/cercor/bhr033
 Source        Karlsen_Pakkenberg_2011.pdf (Results text, incl. Figure 2/3 values)
-Snapshot      Karlsen_Pakkenberg_2011_reported_values_snapshot.csv   (values quoted in text; Control vs DS)
+Snapshot      Karlsen_Pakkenberg_2011_reported_values_snapshot.csv   (values quoted in text; Control vs DS;
+              kept FAITHFUL, including the published astrocyte error below)
+Corrections   One published value is corrected in the derived table (snapshot left faithful):
+              - Control temporal-cortex astrocyte density: published 46.7 -> corrected 23.13 x10^6/cm3.
+                Why: 46.7 is exactly 2x the authors' own counting record (23.13); and 46.7 would make
+                astrocytes ~53% of temporal glial density (88.6), contradicting the paper's OWN stated
+                glial composition (astrocytes ~29% of glia). 23.13 gives ~26%, consistent with the paper.
+              - DS temporal astrocyte density (85.9) is NOT changed - it could not be independently
+                verified (the authors' DS records are the pre-correction version); flagged in the
+                Correction_note column, use with caution.
 Derived       Karlsen_Pakkenberg_2011_reported_values.R -> Karlsen_Pakkenberg_2011_reported_values_derived.csv  <-- USE THIS
+              (numeric; carries the correction above + a Correction_note column)
 Definitions   Karlsen_Pakkenberg_2011_definitions.csv
 Online        __Public/comparative-data/10.1093%2Fcercor%2Fbhr033_reportedvalues.tsv
 
 Notes         Uniquely provides BASAL GANGLIA cell numbers/densities (neuron, astrocyte, oligodendrocyte,
-              microglia) not covered by the neocortical author workbooks; plus global/regional cortical
+              microglia) not covered by the neocortical counting workbooks; plus global/regional cortical
               densities. Groups Control / DS.

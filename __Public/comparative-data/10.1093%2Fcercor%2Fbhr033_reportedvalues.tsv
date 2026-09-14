@@ -1,37 +1,37 @@
-"Region"	"Group"	"Measure"	"Value"	"Unit"	"CV"	"Source"
-"Total neocortex"	"Control"	"Neuron_number"	17.9	"x10^9"	0.12	"p2521 Results"
-"Total neocortex"	"DS"	"Neuron_number"	10.9	"x10^9"	0.1	"p2521 Results"
-"Total neocortex"	"Control"	"Glia_number"	18.2	"x10^9"	0.14	"p2521 Results"
-"Total neocortex"	"DS"	"Glia_number"	12.5	"x10^9"	0.08	"p2521 Results"
-"Total neocortex"	"Control"	"Neuron_density"	82.2	"x10^6/cm3"	0.09	"p2521 (global)"
-"Total neocortex"	"DS"	"Neuron_density"	86.9	"x10^6/cm3"	0.05	"p2521 (global)"
-"Total neocortex"	"Control"	"Glia_density"	88.6	"x10^6/cm3"	0.03	"p2521 (global)"
-"Total neocortex"	"DS"	"Glia_density"	105	"x10^6/cm3"	0.04	"p2521 (global)"
-"Total neocortex"	"Control"	"Glia_Neuron_ratio"	1.03	"ratio"	0.15	"p2521"
-"Total neocortex"	"DS"	"Glia_Neuron_ratio"	1.15	"ratio"	0.05	"p2521"
-"Total neocortex"	"Control"	"Glial_pct_oligodendrocyte"	57.1	"percent"	NA	"p2521"
-"Total neocortex"	"Control"	"Glial_pct_astrocyte"	29.1	"percent"	NA	"p2521"
-"Total neocortex"	"Control"	"Glial_pct_microglia"	13.6	"percent"	NA	"p2521"
-"Total neocortex"	"DS"	"Glial_pct_oligodendrocyte"	53.5	"percent"	NA	"p2521"
-"Total neocortex"	"DS"	"Glial_pct_astrocyte"	34.8	"percent"	NA	"p2521"
-"Total neocortex"	"DS"	"Glial_pct_microglia"	11.3	"percent"	NA	"p2521"
-"Occipital"	"Control"	"Neuron_density"	126	"x10^6/cm3"	0.1	"p2521"
-"Occipital"	"DS"	"Neuron_density"	108	"x10^6/cm3"	0.05	"p2521"
-"Temporal"	"Control"	"Glia_density"	88.6	"x10^6/cm3"	0.07	"p2521"
-"Temporal"	"DS"	"Glia_density"	121	"x10^6/cm3"	0.08	"p2521"
-"Temporal"	"Control"	"Astrocyte_density"	46.7	"x10^6/cm3"	0.12	"p2521"
-"Temporal"	"DS"	"Astrocyte_density"	85.9	"x10^6/cm3"	0.13	"p2521"
-"Basal ganglia"	"Control"	"Neuron_number"	415	"x10^6"	0.24	"p2521-2522"
-"Basal ganglia"	"DS"	"Neuron_number"	373	"x10^6"	0.09	"p2521-2522"
-"Basal ganglia"	"Control"	"Astrocyte_number"	275	"x10^6"	0.26	"p2522"
-"Basal ganglia"	"DS"	"Astrocyte_number"	231	"x10^6"	0.14	"p2522"
-"Basal ganglia"	"Control"	"Oligodendrocyte_number"	816	"x10^6"	0.27	"p2522"
-"Basal ganglia"	"DS"	"Oligodendrocyte_number"	405	"x10^6"	0.24	"p2522"
-"Basal ganglia"	"Control"	"Oligodendrocyte_density"	80.5	"x10^6/cm3"	0.11	"p2522"
-"Basal ganglia"	"DS"	"Oligodendrocyte_density"	54	"x10^6/cm3"	0.34	"p2522"
-"Basal ganglia"	"Control"	"Microglia_number"	129	"x10^6"	0.4	"p2522"
-"Basal ganglia"	"DS"	"Microglia_number"	78.5	"x10^6"	0.2	"p2522"
-"Basal ganglia"	"Control"	"Neuron_density"	41	"x10^6/cm3"	0.1	"p2522"
-"Basal ganglia"	"DS"	"Neuron_density"	54.8	"x10^6/cm3"	0.21	"p2522"
-"Basal ganglia"	"Control"	"Volume_uncorrected"	10.1	"cm3"	0.2	"p2522"
-"Basal ganglia"	"DS"	"Volume_uncorrected"	6.98	"cm3"	0.17	"p2522"
+Region	Group	Measure	Value	Unit	CV	Source	Correction_note
+Total neocortex	Control	Neuron_number	17.9	x10^9	0.12	p2521 Results	
+Total neocortex	DS	Neuron_number	10.9	x10^9	0.1	p2521 Results	
+Total neocortex	Control	Glia_number	18.2	x10^9	0.14	p2521 Results	
+Total neocortex	DS	Glia_number	12.5	x10^9	0.08	p2521 Results	
+Total neocortex	Control	Neuron_density	82.2	x10^6/cm3	0.09	p2521 (global)	
+Total neocortex	DS	Neuron_density	86.9	x10^6/cm3	0.05	p2521 (global)	
+Total neocortex	Control	Glia_density	88.6	x10^6/cm3	0.03	p2521 (global)	
+Total neocortex	DS	Glia_density	105	x10^6/cm3	0.04	p2521 (global)	
+Total neocortex	Control	Glia_Neuron_ratio	1.03	ratio	0.15	p2521	
+Total neocortex	DS	Glia_Neuron_ratio	1.15	ratio	0.05	p2521	
+Total neocortex	Control	Glial_pct_oligodendrocyte	57.1	percent	NA	p2521	
+Total neocortex	Control	Glial_pct_astrocyte	29.1	percent	NA	p2521	
+Total neocortex	Control	Glial_pct_microglia	13.6	percent	NA	p2521	
+Total neocortex	DS	Glial_pct_oligodendrocyte	53.5	percent	NA	p2521	
+Total neocortex	DS	Glial_pct_astrocyte	34.8	percent	NA	p2521	
+Total neocortex	DS	Glial_pct_microglia	11.3	percent	NA	p2521	
+Occipital	Control	Neuron_density	126	x10^6/cm3	0.1	p2521	
+Occipital	DS	Neuron_density	108	x10^6/cm3	0.05	p2521	
+Temporal	Control	Glia_density	88.6	x10^6/cm3	0.07	p2521	
+Temporal	DS	Glia_density	121	x10^6/cm3	0.08	p2521	
+Temporal	Control	Astrocyte_density	23.13	x10^6/cm3	0.12	p2521	Corrected from published 46.7 (2x error; see ReadMe). Value = authors' record 23.13; restores 29% astrocyte fraction.
+Temporal	DS	Astrocyte_density	85.9	x10^6/cm3	0.13	p2521	Published 85.9 kept as-is; not independently verifiable (DS records are pre-correction). Use with caution.
+Basal ganglia	Control	Neuron_number	415	x10^6	0.24	p2521-2522	
+Basal ganglia	DS	Neuron_number	373	x10^6	0.09	p2521-2522	
+Basal ganglia	Control	Astrocyte_number	275	x10^6	0.26	p2522	
+Basal ganglia	DS	Astrocyte_number	231	x10^6	0.14	p2522	
+Basal ganglia	Control	Oligodendrocyte_number	816	x10^6	0.27	p2522	
+Basal ganglia	DS	Oligodendrocyte_number	405	x10^6	0.24	p2522	
+Basal ganglia	Control	Oligodendrocyte_density	80.5	x10^6/cm3	0.11	p2522	
+Basal ganglia	DS	Oligodendrocyte_density	54	x10^6/cm3	0.34	p2522	
+Basal ganglia	Control	Microglia_number	129	x10^6	0.4	p2522	
+Basal ganglia	DS	Microglia_number	78.5	x10^6	0.2	p2522	
+Basal ganglia	Control	Neuron_density	41	x10^6/cm3	0.1	p2522	
+Basal ganglia	DS	Neuron_density	54.8	x10^6/cm3	0.21	p2522	
+Basal ganglia	Control	Volume_uncorrected	10.1	cm3	0.2	p2522	
+Basal ganglia	DS	Volume_uncorrected	6.98	cm3	0.17	p2522	

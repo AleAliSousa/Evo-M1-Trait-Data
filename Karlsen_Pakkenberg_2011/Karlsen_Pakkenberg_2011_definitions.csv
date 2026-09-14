@@ -17,3 +17,4 @@ Volume.cm3,Mean bilateral volume (shrinkage-corrected),see Region,Vol.cm3,group 
 Surface.cm2,Mean cortical surface area,see Region,area.cm2,group mean,secondary,Homo sapiens,Karlsen_Pakkenberg_2011,Published Table 2,
 Thickness.mm,Mean cortical thickness,see Region,length.mm,group mean,secondary,Homo sapiens,Karlsen_Pakkenberg_2011,Published Table 2,
 Value,Reported value (basal ganglia + cortical) as stated in the paper text,Basal ganglia / neocortex,various,group,primary,Homo sapiens,Karlsen_Pakkenberg_2011,In reported_values_derived (long: Region/Group/Measure/Value/Unit),Results text
+Correction_note,Note on any documented correction of a published value in the derived table,,,,note,Homo sapiens,Karlsen_Pakkenberg_2011,Control temporal astrocyte density corrected 46.7 -> 23.13 (see ReadMe),Derived in reported_values.R

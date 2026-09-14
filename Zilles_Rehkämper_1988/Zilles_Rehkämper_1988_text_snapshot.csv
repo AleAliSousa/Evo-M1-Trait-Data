@@ -1,0 +1,7 @@
+Species,summary_group,measure,unit,reported_mean,reported_plus_minus,N,provenance_note
+Pongo sp.,male,brain_weight,g,359,13.9,,reported sex-specific mean
+Pongo sp.,female,brain_weight,g,306,14,,reported sex-specific mean
+Pongo sp.,sex-balanced,brain_weight,g,333,,,reported species value; equals round((359 + 306) / 2)
+Pongo sp.,male,body_weight,g,72000,14000,11,reported sex-specific mean
+Pongo sp.,female,body_weight,g,36000,4000,14,reported sex-specific mean
+Pongo sp.,sex-balanced,body_weight,g,54000,,,reported species value; equals (72000 + 36000) / 2

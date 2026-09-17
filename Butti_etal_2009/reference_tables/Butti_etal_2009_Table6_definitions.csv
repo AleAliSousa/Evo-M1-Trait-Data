@@ -1,0 +1,17 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species,binomial harmonized to key,,Species,,primary,Cetacea,Butti_etal_2009_Table6,via _keys/Hof/species_key.csv,
+species_as_published,as printed,,Species,,primary,,Butti_etal_2009_Table6,the table abbreviates the genus,
+ven_vol_um3_mean,soma volume of layer V VENs,Anterior_cingulate_cortex,Vol.um3,mean,primary,Cetacea,Butti_etal_2009_Table6,,region inferred - see Method:region
+ven_vol_um3_sd,soma volume of layer V VENs,Anterior_cingulate_cortex,Vol.um3,SD,primary,Cetacea,Butti_etal_2009_Table6,,
+pyramidal_vol_um3_mean,soma volume of pyramidal neurons,Anterior_cingulate_cortex,Vol.um3,mean,primary,Cetacea,Butti_etal_2009_Table6,layer V,see Method:layer - the printed title is ambiguous
+pyramidal_vol_um3_sd,soma volume of pyramidal neurons,Anterior_cingulate_cortex,Vol.um3,SD,primary,Cetacea,Butti_etal_2009_Table6,layer V,
+fusiform_vol_um3_mean,soma volume of layer VI fusiform neurons,Anterior_cingulate_cortex,Vol.um3,mean,primary,Cetacea,Butti_etal_2009_Table6,,
+fusiform_vol_um3_sd,soma volume of layer VI fusiform neurons,Anterior_cingulate_cortex,Vol.um3,SD,primary,Cetacea,Butti_etal_2009_Table6,,
+ven_index_as_published,VEN index as printed,Anterior_cingulate_cortex,size.index,,note,Cetacea,Butti_etal_2009_Table6,"a ratio, not a measurement; do not merge",caption: the VEN index is the ratio between the average volume of VEN and the average volume of pyramidal neurons
+ven_index_recomputed,VEN index recomputed from the printed volumes,Anterior_cingulate_cortex,size.index,,note,Cetacea,Butti_etal_2009_Table6,"ven_vol_um3_mean / pyramidal_vol_um3_mean; reproduces all four printed values to 2 dp",recomputed as the caption defines it; doubles as a check on the transcription
+source,source id,,Source,,primary,,Butti_etal_2009_Table6,,
+Method:units,um3 kept as published,,,,method,,Butti_etal_2009_Table6,"not converted to the project's mm3, which is the standard for structure volumes",these are somata; the same call as Nimchinsky_etal_1999_Table2
+Method:volume_estimation,stereologic soma volume,,,,method,,Butti_etal_2009_Table6,"optical rotator; isotropic slabs. VENs: 2 um focal plane separation, 9 um grid line separation, 7 um slab, 4 grid lines. Pyramidal: 3 / 6 / 7 / 4. Fusiform: 2 / 6 / 4 / 4.",parameters from the paper's Table 4
+Method:layer,layer assignment,,,,method,,Butti_etal_2009_Table6,"VENs and pyramidal neurons layer V, fusiform neurons layer VI","the printed title reads ""Volume of Layer V VENs and Pyramidal Cell and Fusiform Cells of Layer VI"", which can be parsed either way; read here as layer V (VENs, pyramidal) and layer VI (fusiform), matching Nimchinsky et al. 1999 Table 2"
+Method:region,region of interest,,,,method,,Butti_etal_2009_Table6,"recorded as ACC; the caption does not name a region","inferred: Table 6 reports all four species, and ACC is the only ROI with data for all four in the paper's Table 2. Confirm against the Results before this is pooled with any other ACC measurement."
+Method:observation_level,species,,,,method,,Butti_etal_2009_Table6,one individual per species,"Materials and methods: five brains, one per species except two humpback whales; the ROI available differs by specimen"

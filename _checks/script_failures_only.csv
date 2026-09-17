@@ -1,5 +1,17 @@
 "script","status","error","start_time","end_time","elapsed_seconds"
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_item_name_resolution.R","FAILED","registry Item names: 431   |   TSVs on disk: 336   |   NA.tsv present: no
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/compare_to_reference.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error: reference_csv not found: /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/test_qc/qc_orig_stephan_primates/data_raw/Stephan_primates.csv
+Execution halted","2026-09-14 12:03:06.792239","2026-09-14 12:03:08.072074",1.27983498573303
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_item_name_resolution.R","FAILED","registry Item names: 433   |   TSVs on disk: 337   |   NA.tsv present: no
 
 __merging_behaviour/behaviour_compiled.R                     0 item name(s) referenced   OK
 __merging_body_ecology/body_ecology_compiled.R               0 item name(s) referenced   OK
@@ -24,9 +36,9 @@ orphaned TSVs (on disk, claimed by no registry row): 5
 rows with a citation but no Item name (need _tools/file_list.R): 0
 
 all referenced item names resolve to a TSV on disk.
-run _tools/restore_registry_rows.R (adding any new row to its ROWS list), then _tools/file_list.R.","2026-09-12 10:46:21.603791","2026-09-12 10:46:22.399484",0.795692920684814
+run _tools/restore_registry_rows.R (adding any new row to its ROWS list), then _tools/file_list.R.","2026-09-14 12:03:28.594345","2026-09-14 12:03:29.944424",1.35007882118225
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/find_csv_tsv_creators.R","TIMEOUT","
-Execution halted","2026-09-12 10:46:22.917821","2026-09-12 10:51:22.967091",300.049270153046
+Execution halted","2026-09-14 12:03:30.667776","2026-09-14 12:08:30.747884",300.080107927322
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Fritsches_etal_2005/Fritsches_etal_2005_Fig2.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
 ✔ dplyr     1.2.1     ✔ readr     2.2.0
 ✔ forcats   1.0.1     ✔ stringr   1.6.0
@@ -64,7 +76,7 @@ Backtrace:
  20.   └─vctrs:::stop_subscript_oob(...)
  21.     └─vctrs:::stop_subscript(...) at vctrs/R/subscript-loc.R:503:3
  22.       └─rlang::abort(...) at vctrs/R/subscript.R:150:3
-Execution halted","2026-09-12 10:57:43.778054","2026-09-12 10:57:44.817917",1.03986310958862
+Execution halted","2026-09-14 12:15:02.519901","2026-09-14 12:15:03.510218",0.990316867828369
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Lyamin_etal_2008/Lyamin_etal_2008_Table2.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
 ✔ dplyr     1.2.1     ✔ readr     2.2.0
 ✔ forcats   1.0.1     ✔ stringr   1.6.0
@@ -102,4 +114,4 @@ Backtrace:
  20.   └─vctrs:::stop_subscript_oob(...)
  21.     └─vctrs:::stop_subscript(...) at vctrs/R/subscript-loc.R:503:3
  22.       └─rlang::abort(...) at vctrs/R/subscript.R:150:3
-Execution halted","2026-09-12 10:59:14.12271","2026-09-12 10:59:15.245518",1.12280797958374
+Execution halted","2026-09-14 12:16:24.615763","2026-09-14 12:16:25.64393",1.02816700935364

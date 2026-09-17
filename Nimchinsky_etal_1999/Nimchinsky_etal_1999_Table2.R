@@ -70,20 +70,26 @@ has_mark <- function(x, mark) grepl(mark, x, fixed = TRUE)
 ## ---- species harmonisation via the collection key (never an inline map) ----
 ## Table 2 abbreviates the binomials ("P. pygmaeus"); those printed forms have
 ## their own rows in the key, so no expansion happens in this script.
-key_path <- if (!is.na(base)) file.path(base, "_keys", "Allman", "species_key.csv") else NA_character_
+key_path <- if (!is.na(base)) file.path(base, "_keys", "Hof", "species_key.csv") else NA_character_
 species_accepted <- rep(NA_character_, nrow(snap))
-if (!is.na(key_path) && file.exists(key_path)) {
+if (is.na(key_path) || !file.exists(key_path)) {
+  stop("Species key not found. Run this script from inside a clone of the ",
+       "repository, so this folder sits under the one holding __ReadMe.xlsx. ",
+       "Run it from a loose folder and the species column comes out empty - ",
+       "which is how the first version of this file was committed with no ",
+       "species names in it.", call. = FALSE)
+}
+{
   key <- read.csv(key_path, stringsAsFactors = FALSE)
   key <- key[key$source_publication == source_name, ]
   lk  <- setNames(key$accepted_name, tolower(key$variant_name))
   species_accepted <- unname(lk[tolower(trimws(snap$Species))])
   missing <- snap$Species[is.na(species_accepted)]
   if (length(missing)) {
-    warning("Not in _keys/Allman/species_key.csv for ", source_name, ": ",
-            paste(missing, collapse = "; "), " -- add the rows there, not here.")
+    stop("Not in _keys/Hof/species_key.csv for ", source_name, ": ",
+         paste(missing, collapse = "; "),
+         "\n  Add the rows to the key file, not to this script.", call. = FALSE)
   }
-} else {
-  warning("_keys/Allman/species_key.csv not reachable; 'species' left empty.")
 }
 
 clean <- data.frame(
@@ -110,6 +116,8 @@ stopifnot(!any(has_mark(snap[["Pyramidal cells"]], "*")),
 ## every row is daggered; the asterisk is on Pongo, P. troglodytes and Homo
 stopifnot(all(clean$spindle_gt_fusiform_p01), sum(clean$spindle_gt_pyramidal_p05) == 3L)
 stopifnot(!any(is.na(clean[, grep("_um3_", names(clean))])))
+
+stopifnot(!anyNA(clean$species))   # never write a file with an empty species column
 
 write.csv(clean, output_csv, row.names = FALSE)
 

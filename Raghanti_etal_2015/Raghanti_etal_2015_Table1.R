@@ -84,18 +84,24 @@ stopifnot(length(species_printed) == 8L)
 ## live in the key as variant_name rows, so no common-to-binomial map appears here.
 key_path <- if (!is.na(base)) file.path(base, "_keys", "Hof", "species_key.csv") else NA_character_
 species_accepted <- rep(NA_character_, length(species_printed))
-if (!is.na(key_path) && file.exists(key_path)) {
+if (is.na(key_path) || !file.exists(key_path)) {
+  stop("Species key not found. Run this script from inside a clone of the ",
+       "repository, so this folder sits under the one holding __ReadMe.xlsx. ",
+       "Run it from a loose folder and the species column comes out empty - ",
+       "which is how the first version of this file was committed with no ",
+       "species names in it.", call. = FALSE)
+}
+{
   key <- read.csv(key_path, stringsAsFactors = FALSE)
   key <- key[key$source_publication == source_name, ]
   lk  <- setNames(key$accepted_name, tolower(key$variant_name))
   species_accepted <- unname(lk[tolower(species_printed)])
   missing <- species_printed[is.na(species_accepted)]
   if (length(missing)) {
-    warning("Not in _keys/Hof/species_key.csv for ", source_name, ": ",
-            paste(missing, collapse = "; "), " -- add the rows there, not here.")
+    stop("Not in _keys/Hof/species_key.csv for ", source_name, ": ",
+         paste(missing, collapse = "; "),
+         "\n  Add the rows to the key file, not to this script.", call. = FALSE)
   }
-} else {
-  warning("_keys/Hof/species_key.csv not reachable; 'species' left empty.")
 }
 
 ## ---- qualifiers from Materials and methods (see header note) ----
@@ -114,6 +120,8 @@ clean <- data.frame(
 )
 stopifnot(sum(!clean$adult) == 1L)
 stopifnot(all(vals[species_printed == "Rock hyrax", ] == 0))   # the paper's key negative
+
+stopifnot(!anyNA(clean$species))   # never write a file with an empty species column
 
 write.csv(clean, output_csv, row.names = FALSE)
 

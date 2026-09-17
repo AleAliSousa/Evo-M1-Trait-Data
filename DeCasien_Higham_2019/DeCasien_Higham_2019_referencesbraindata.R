@@ -13,11 +13,52 @@
 ## Two columns:
 ##   ref_number, citation
 ##
-## Reference ranges such as "51-52" remain ranges. Citations belonging to a
-## range are joined with " | ".
+## One row per individual reference number actually cited, not per printed
+## code: a range such as "51-52" is expanded to two rows, ref_number 51 and
+## ref_number 52, each carrying its own single citation. A number cited alone
+## in one spreadsheet row and inside a range in another (e.g. both "51" and
+## "51-52" appear in the References column) still produces exactly one output
+## row for 51 -- rows are deduplicated by reference number, sorted ascending.
 ## =============================================================================
 
 options(stringsAsFactors = FALSE)
+
+
+## ---- locale ------------------------------------------------------------------
+##
+## In a "C" LC_CTYPE locale, write.csv()/writeLines() cannot represent non-ASCII
+## characters in the current locale and silently substitute a literal
+## "<U+00E4>"-style escape for each one instead of erroring -- so a citation's
+## accented author name (e.g. reference 59, "Rehk\u00e4mper") gets corrupted in
+## the OUTPUT FILE even though the in-memory string is correct UTF-8 throughout
+## extraction. Force a UTF-8 LC_CTYPE before any citation text is read or
+## written, so this cannot happen regardless of the caller's shell locale.
+ctype_ok <- tryCatch(
+  {
+    Sys.setlocale("LC_CTYPE", "en_US.UTF-8")
+    grepl("UTF-8", Sys.getlocale("LC_CTYPE"), fixed = TRUE)
+  },
+  error = function(e) FALSE
+)
+
+if (!ctype_ok) {
+  ctype_ok <- tryCatch(
+    {
+      Sys.setlocale("LC_CTYPE", "C.UTF-8")
+      grepl("UTF-8", Sys.getlocale("LC_CTYPE"), fixed = TRUE)
+    },
+    error = function(e) FALSE
+  )
+}
+
+if (!ctype_ok) {
+  stop(
+    "No UTF-8 LC_CTYPE locale is available (tried en_US.UTF-8, C.UTF-8). ",
+    "Non-ASCII citation text (e.g. author names with diacritics) would be ",
+    "corrupted on write. Install a UTF-8 locale before running this script.",
+    call. = FALSE
+  )
+}
 
 
 ## ---- packages ---------------------------------------------------------------
@@ -114,6 +155,43 @@ if (!file.exists(pdf_file)) {
 
 normalize_space <- function(x) {
   trimws(gsub("\\s+", " ", x))
+}
+
+
+## Some poppler/pdftools builds cannot map a glyph to its font's encoding
+## (visible here as "PDF error: Invalid Font Weight" during extraction) and
+## emit a literal "<U+00E4>"-style placeholder in the extracted text instead
+## of the real character. Decode any such placeholder back to the actual
+## Unicode character so citation text does not silently regress across
+## pdftools/poppler versions. Confirmed against the previously committed CSV:
+## this affected exactly one character (a Umlaut in reference 59) when this
+## script was re-run in a different poppler build.
+decode_unicode_placeholders <- function(x) {
+  pattern <- "<U\\+[0-9A-Fa-f]+>"
+  
+  vapply(
+    x,
+    function(s) {
+      locs <- gregexpr(pattern, s, perl = TRUE)
+      codes <- regmatches(s, locs)[[1]]
+      
+      if (!length(codes)) return(s)
+      
+      replacements <- vapply(
+        codes,
+        function(code) {
+          hex <- sub("^<U\\+([0-9A-Fa-f]+)>$", "\\1", code)
+          intToUtf8(strtoi(hex, base = 16L))
+        },
+        character(1)
+      )
+      
+      regmatches(s, locs) <- list(replacements)
+      s
+    },
+    character(1),
+    USE.NAMES = FALSE
+  )
 }
 
 
@@ -339,6 +417,7 @@ extract_references_from_pdf <- function(path) {
   )
   
   citations <- normalize_space(citations)
+  citations <- decode_unicode_placeholders(citations)
   
   keep <- nzchar(numbers) & nzchar(citations)
   numbers <- numbers[keep]
@@ -390,26 +469,14 @@ if (length(missing_numbers)) {
   )
 }
 
-citation_for_code <- function(code) {
-  numbers <- expand_ref_code(code)
-  citations <- unname(citation_lookup[as.character(numbers)])
-  
-  if (anyNA(citations)) {
-    missing <- numbers[is.na(citations)]
-    
-    stop(
-      "Missing citation text for reference number(s): ",
-      paste(missing, collapse = ", "),
-      call. = FALSE
-    )
-  }
-  
-  paste(citations, collapse = " | ")
-}
-
+## One row per individual reference number, not per printed code: ranges are
+## already expanded into `needed_numbers` above, and that set is already
+## deduplicated (a number cited standalone in one row and inside a range in
+## another still appears once). No "|"-joining -- every row has exactly one
+## citation, for exactly the reference number it names.
 out <- data.frame(
-  ref_number = refs,
-  citation = vapply(refs, citation_for_code, character(1)),
+  ref_number = needed_numbers,
+  citation = unname(citation_lookup[as.character(needed_numbers)]),
   check.names = FALSE
 )
 

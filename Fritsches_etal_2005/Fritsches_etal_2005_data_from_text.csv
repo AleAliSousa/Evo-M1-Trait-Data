@@ -1,0 +1,15 @@
+applies_to,field,value,source_in_paper,note
+Xiphias gladius,n_animals_caught,10,"Experimental Procedures, Source of Animals","""Swordfishes (Xiphias gladius, n = 10)"". Larger than the n = 6 behind the Q10 fit."
+Thunnus obesus,n_animals_caught,6,"Experimental Procedures, Source of Animals","""bigeye tunas (Thunnus obesus, n = 6)"""
+Thunnus albacares,n_animals_caught,5,"Experimental Procedures, Source of Animals","""yellowfin tunas (Thunnus albacares, n = 5)"""
+Xiphias gladius,eye_diameter_max_mm,90,"Results and Discussion, p. 55","""eye diameters of up to 90 mm""; Fig. 1A shows a 90 mm eye"
+Xiphias gladius,body_length_range_cm,130-206,"Results and Discussion, p. 55",jaw-fork length of the animals used in this study
+Xiphias gladius,brain_and_eye_temp_range_c,19-28,"Results and Discussion, p. 55","""Intact swordfishes maintain brain and eye temperatures between 19 C and 28 C"", citing reference 2"
+Xiphias gladius,heater_warming_above_ambient_c,10-15,Summary,"""a highly specialized heating system located in an extraocular muscle specifically warms the eyes and brain up to 10 C-15 C above ambient water temperatures"", citing references 2 and 5"
+Xiphias gladius,fff_at_10c_hz,5 or less,"Results and Discussion, p. 55, from Fig. 2A","approximate, read off the figure by the authors and stated in words - not a tabulated value, which is why it is here and not in the CSV"
+Xiphias gladius,fff_at_20c_hz,over 40,"Results and Discussion, p. 55, from Fig. 2A","approximate, as above"
+Xiphias gladius,fff_example_warm_hz,32 at 21 C,Fig. 1B legend,"a single illustrative retina, not a species value"
+Xiphias gladius,fff_example_cold_hz,6 at 6 C,Fig. 1B legend,the same retina cooled
+Xiphias gladius,fff_at_22c_by_depth_hz,40 at 100 m falling to 2 at 500 m,"Results and Discussion, p. 55, from Fig. 3A","at a retinal temperature of 22 C; depth is an equivalent light level, not a measured depth"
+Xiphias gladius,n_retinas_light_intensity_series,5,Fig. 3A legend,"a second set of experiments, separate from the Q10 series"
+Fritsches_etal_2005_Fig2,thermocline_context_c,23 to 10 within the top 50 m,"Results and Discussion, p. 56","cites reference 15; describes the habitat, not a measurement on these fish"

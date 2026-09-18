@@ -528,3 +528,14 @@ also an MRI subject.
 
 ---
 
+## Registration status (2026-09-18)
+
+`_keys/specimen_crosswalk/specimen_crosswalk.csv` now carries the three labels this note found unregistered, all under `canonical_specimen = ZILLES-HYLOBATES-GPZ-5542`:
+
+| source_publication | item_reference | printed_name | match | basis |
+|---|---|---|---|---|
+| MacLeod_etal_2003 | MacLeod_etal_2003_Table2 | Hylobates lar (Disco 3/97) | matched | printed archive label = de Sousa 2010 Table 1's; brain 115.8 cm3 in both |
+| Barger_etal_2014 | Barger_etal_2014_Table1 | Nomascus concolor | probable | case 19, in_barger2007 = Y; left lateral/basal/accessory basal/total equal Barger 2007 Disco left values; no handle printed |
+| DeCasien_Higham_2019 | DeCasien_Higham_2019_BrainRegion r217 | Nomascus_concolor | probable | Amygdala 637 = Barger 2007 Disco L + R; BV 115800 = MacLeod 2003 / de Sousa 2010 Disco |
+
+`specimen_source_registry.csv` gained `PUB_MACLEOD_2003` and `PUB_BARGER_2014`. The DeCasien BrainRegion refs_check (restricted repo) consumes the crosswalk: its `Nomascus_concolor` Amygdala and BV rows verify as `specimen_identity_match` against Barger 2007 Table 1 and MacLeod 2003 Table 2 respectively, with the note stating that the BV table is not among the row's citations. Taxon handling is unchanged (conflict retained; `resolved_taxon` NA).

@@ -1,19 +1,19 @@
-"Species"	"structure"	"fresh_volume_cc3"	"volume_mm3"	"pct_total_brain"
-"Pongo sp."	"Medulla oblongata"	5.5	5500	1.8
-"Pongo sp."	"Cerebellum (without pons)"	42.9	42900	13.9
-"Pongo sp."	"Pons"	4.3	4300	1.4
-"Pongo sp."	"Mesencephalon"	4	4000	1.3
-"Pongo sp."	"Diencephalon"	13.5	13500	4.4
-"Pongo sp."	"Telencephalon"	238.3	238300	77.2
-"Pongo sp."	"Neocortex"	219.8	219800	71.2
-"Pongo sp."	"Gray (without area striata)"	129.9	129900	42.1
-"Pongo sp."	"Gray area striata"	8.4	8400	2.7
-"Pongo sp."	"White matter"	81.5	81500	26.4
-"Pongo sp."	"Hippocampus"	2.7	2700	0.9
-"Pongo sp."	"Regio entorhinalis"	1.3	1300	0.4
-"Pongo sp."	"Paleocortex"	2.4	2400	0.8
-"Pongo sp."	"Regio praepiriformis"	1	1000	0.3
-"Pongo sp."	"Corpus amygdaloideum"	1.4	1400	0.5
-"Pongo sp."	"Septum"	0.6	600	0.2
-"Pongo sp."	"Corpus striatum"	11.5	11500	3.7
-"Pongo sp."	"Globus pallidus"	1.8	1800	0.6
+"Species"	"structure"	"fresh_volume_cc3"	"volume_mm3"	"pct_total_brain"	"printed_indent"	"parent_structure"
+"Pongo sp."	"Medulla oblongata"	5.5	5500	1.8	0	""
+"Pongo sp."	"Cerebellum (without pons)"	42.9	42900	13.9	0	""
+"Pongo sp."	"Pons"	4.3	4300	1.4	0	""
+"Pongo sp."	"Mesencephalon"	4	4000	1.3	0	""
+"Pongo sp."	"Diencephalon"	13.5	13500	4.4	0	""
+"Pongo sp."	"Telencephalon"	238.3	238300	77.2	0	""
+"Pongo sp."	"Neocortex"	219.8	219800	71.2	0	"Telencephalon"
+"Pongo sp."	"Gray (without area striata)"	129.9	129900	42.1	0	"Neocortex"
+"Pongo sp."	"Gray area striata"	8.4	8400	2.7	1	"Neocortex"
+"Pongo sp."	"White matter"	81.5	81500	26.4	1	"Neocortex"
+"Pongo sp."	"Hippocampus"	2.7	2700	0.9	0	"Telencephalon"
+"Pongo sp."	"Regio entorhinalis"	1.3	1300	0.4	0	"Telencephalon"
+"Pongo sp."	"Paleocortex"	2.4	2400	0.8	0	"Telencephalon"
+"Pongo sp."	"Regio praepiriformis"	1	1000	0.3	1	"Paleocortex"
+"Pongo sp."	"Corpus amygdaloideum"	1.4	1400	0.5	1	"Paleocortex"
+"Pongo sp."	"Septum"	0.6	600	0.2	0	"Telencephalon"
+"Pongo sp."	"Corpus striatum"	11.5	11500	3.7	0	"Telencephalon"
+"Pongo sp."	"Globus pallidus"	1.8	1800	0.6	1	"Corpus striatum"

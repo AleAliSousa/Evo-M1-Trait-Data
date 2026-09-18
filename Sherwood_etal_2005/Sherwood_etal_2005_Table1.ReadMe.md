@@ -29,3 +29,9 @@ oblongata** is the whole (midline) structure and maps to the existing `Medulla_o
   (already registered); the build script writes that DOI-coded TSV into `__Public/comparative-data/`.
 
 Pipeline: Source -> Snapshot OK -> Data readable OK -> Species harmonized (token Sherwood_2005) -> In merge.
+
+## Cited by DeCasien and Higham 2019
+DeCasien and Higham 2019 cite this paper as a source of brain volume data.
+But Sherwood et al do not give brain volume for any species in tables, and say they used brain volume 
+from Stephan et al 1981 "for standardization" (not sure what that is, since they already mention correction 
+factors), but do not give them in the paper.  In text they state brain volumes only for Pongo pygmaeus and Pan paniscus.

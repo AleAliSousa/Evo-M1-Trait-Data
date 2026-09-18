@@ -22,7 +22,7 @@ Unlike the species-as-rows tables in the Stephan/Frahm/Baron series, Table 12-2 
 
 ## Snapshot layout (made to look like the printed table)
 
-Row 1 caption (`TABLE 12-2. Volumes of Brain Components and Their Percentages of Total Brain Volume`); row 2 header (`Structure` | `Fresh Volume (cc³)` | `Percentage of Total Brain Volume¹`); rows 3–20 the 18 structures in printed order; row 21 the footnote (`¹Excluding ventricles and nerves.`). Sub-components are indented in the `Structure` cell exactly as printed: **Gray area striata** and **White matter** under Neocortex; **Regio praepiriformis** and **Corpus amygdaloideum** under Paleocortex; **Globus pallidus** under Corpus striatum. Volumes are kept in the printed unit **cc³ (= cm³)**; the R step converts to mm³.
+Row 1 caption (`TABLE 12-2. Volumes of Brain Components and Their Percentages of Total Brain Volume`); row 2 header (`Structure` | `Fresh Volume (cc³)` | `Percentage of Total Brain Volume¹`); rows 3–20 the 18 structures in printed order; row 21 the footnote (`¹Excluding ventricles and nerves.`). Sub-components are indented in the `Structure` cell exactly as printed: **Gray area striata** and **White matter** under Neocortex (the page prints **Gray (without area striata)** flush-left although it is the third Neocortex component — see the hierarchy columns below); **Regio praepiriformis** and **Corpus amygdaloideum** under Paleocortex; **Globus pallidus** under Corpus striatum. Volumes are kept in the printed unit **cc³ (= cm³)**; the R step converts to mm³.
 
 The table is internally consistent: the six top-level components (Medulla 5.5, Cerebellum-without-pons 42.9, Pons 4.3, Mesencephalon 4.0, Diencephalon 13.5, Telencephalon 238.3) sum to the total brain and their percentages to 100; the telencephalic parts (Neocortex 219.8 + Hippocampus 2.7 + Regio entorhinalis 1.3 + Paleocortex 2.4 + Septum 0.6 + Corpus striatum 11.5) sum to 238.3.
 
@@ -38,7 +38,20 @@ includes underlying white matter).
 
 ## Preparation → `Zilles_Rehkämper_1988_Table12-2.csv`
 
-One row per structure (18) for Pongo: `Species_Zilles1988, structure, fresh_volume_cc3, volume_mm3, pct_total_brain`. The R script reads past the caption+header (data from row 3), drops the footnote row (no numeric volume), squishes the structure label (removing the snapshot's indentation), and converts cc³ → mm³ (×1000). There are no species-name superscripts to translate. Also writes an ISBN-named TSV (`ISBN%3A9780195043716_Table12-2.tsv`) to `../__Public/comparative-data/` (Item encoded looked up in `__ReadMe.xlsx` by the registry Item name `Zilles_Rehkämper_1988_Table12-2`; the on-disk files use the ASCII folder spelling).
+One row per structure (18) for Pongo: `Species, structure, fresh_volume_cc3, volume_mm3, pct_total_brain, printed_indent, parent_structure`. The R script reads past the caption+header (data from row 3), drops the footnote row (no numeric volume), squishes the structure label (removing the snapshot's indentation), and converts cc³ → mm³ (×1000).
+
+### Hierarchy columns (added 2026-09-18)
+
+Squishing the label discarded the printed indentation, and with it the fact that several rows are **components of the row above them**. Two downstream compilations mis-read the table because of that: Stephan_primates took `Paleocortex` 2400 as a Stephan code-29 palaeocortex (it includes the indented `Corpus amygdaloideum` 1400 and corresponds to Stephan's lobus piriformis, code 13) and then derived Lobus_piriformis as 2400 + 1400 = 3800, counting the amygdala twice; DeCasien & Higham 2019 read the same rows correctly (Paleocortex = `Regio praepiriformis` 1000; Neocortex grey = 129900 + 8400 = 138300) but the audit could not see why until the hierarchy was explicit.
+
+| column | meaning |
+|---|---|
+| `printed_indent` | 1 if the label is indented on the printed page (read from the snapshot's leading spaces): Gray area striata, White matter, Regio praepiriformis, Corpus amygdaloideum, Globus pallidus |
+| `parent_structure` | the row this one is a component of; empty for the six brain divisions |
+
+`parent_structure` follows the printed indentation with one addition: **`Gray (without area striata)` is printed flush-left but is a Neocortex component** — 129.9 + 8.4 + 81.5 = 219.8 exactly — so it is recorded under Neocortex (its `printed_indent` stays 0, preserving what the page shows). The build asserts that every parent equals the sum of its printed components (Neocortex, Paleocortex, Telencephalon, and the six divisions = 308.5 cc³ whole brain), except Corpus striatum, under which only Globus pallidus is printed. A parent's volume therefore already **includes** its components.
+
+Structure-key consequences: Zilles' `Paleocortex` = Stephan lobus piriformis (13), not Stephan palaeocortex (29); the code-29 equivalent is `Regio praepiriformis`. `Cerebellum (without pons)` + `Pons` = 47200 is the Stephan code-7 cerebellum. Total neocortical grey = `Gray (without area striata)` + `Gray area striata` = 138300 mm³. The merge's `standardized_term_volumes.csv` still maps `Paleocortex` → `Palaeocortex_Vol.mm3` and `Regio praepiriformis` → `Prepiriform_cortex_Vol.mm3`; that mapping carries the code-29 error into the compiled volumes and is flagged for the owner's decision rather than changed here. There are no species-name superscripts to translate. Also writes an ISBN-named TSV (`ISBN%3A9780195043716_Table12-2.tsv`) to `../__Public/comparative-data/` (Item encoded looked up in `__ReadMe.xlsx` by the registry Item name `Zilles_Rehkämper_1988_Table12-2`; the on-disk files use the ASCII folder spelling).
 
 ## Checking → `comparison/`
 

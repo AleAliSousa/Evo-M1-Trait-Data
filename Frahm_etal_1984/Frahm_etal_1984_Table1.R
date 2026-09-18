@@ -55,6 +55,20 @@ raw <- read_excel(snapshot_xlsx, sheet = "Table1", col_names = FALSE, col_types 
 dat <- raw %>% slice(-(seq_len(header_rows)))
 names(dat)[seq_along(cols)] <- cols
 
+## ---- Table 1 footnote: species-name synonymy vs Stephan et al. (1981) ----
+## Printed footnote (p.1 of the paper): "Classification and species names are
+## adapted to the list given by Corbet and Hill (1980). Different names used
+## in former papers and in Stephan et al. (1981) are: 1) Lemur fulvus;
+## 2) Lemur variegatus; 3) Galago crassicaudatus; 4) Galago demidovii;
+## 5) Saguinus tamarin; 6) Cercopithecus talapoin (for Tables 1-3) and
+## 7) Aethechinus algirus; and 8) Crocidura occidentalis (for Table 4)."
+## Footnotes 1-6 mark species in Table 1 (this table); 7-8 apply to Table 4
+## only. Full mapping: reference_tables/Frahm_etal_1984_Table1_footnotes.csv
+footnotes <- read_csv(
+  file.path("reference_tables", "Frahm_etal_1984_Table1_footnotes.csv"),
+  show_col_types = FALSE
+)
+
 ## ---- clean ----
 clean <- dat %>%
   filter(!is.na(num(Area_striata_mm3))) %>%
@@ -67,6 +81,10 @@ clean <- dat %>%
     Area_striata_laminae_2_6_mm3 = num(Area_striata_laminae_2_6_mm3),
     Area_striata_white_matter_mm3 = num(Area_striata_white_matter_mm3),
     source = source_name
+  ) %>%
+  left_join(
+    footnotes %>% select(species_in_table, former_name_stephan1981),
+    by = c(Species = "species_in_table")
   )
 
 write.csv(clean, output_csv, row.names = FALSE)

@@ -1,0 +1,15 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species_as_published,as printed,,Species,,secondary,Cetacea,Manger__2006_Table1,"binomial as printed; no key needed, the table prints binomials",
+suborder,printed suborder heading,,,,info,,Manger__2006_Table1,unnested from the printed heading rows,Odontocete or Mysticete
+family,printed family heading,,,,info,,Manger__2006_Table1,unnested from the printed heading rows,"the humpback whale sits under a heading printed as ""Megaptera"", not ""Megapteridae""; kept as printed"
+brain_mass_mg,brain mass,Brain,Mass.mg,mean,secondary,Cetacea,Manger__2006_Table1,printed in g; x1000 in the .R for the project unit,taken from the sources keyed in the Source column - see Method:data_role
+brain_mass_g_as_published,brain mass as printed,Brain,Mass.g,mean,secondary,Cetacea,Manger__2006_Table1,kept so the CSV can be read against the page,
+body_mass_g,body mass,Body,Mass.g,mean,secondary,Cetacea,Manger__2006_Table1,printed in g; already the project unit,taken from the sources keyed in the Source column
+encephalisation_quotient_as_published,encephalisation quotient as printed,Brain,size.index,,note,Cetacea,Manger__2006_Table1,"an index, not a measurement; do not merge","caption: calculated from the general mammalian regression in Fig. 2. The regression is not printed, so the value is not recomputed here."
+water_temp_min_c,lower bound of the printed water temperature range,,Temp.C,min,secondary,Cetacea,Manger__2006_Table1,blank where the table prints no range,"caption: water temperatures were derived from the data compiled in Fig. 16, so they are a property of the species range, not of a measured animal"
+water_temp_max_c,upper bound of the printed water temperature range,,Temp.C,max,secondary,Cetacea,Manger__2006_Table1,blank where the table prints no range,
+source_ref_key,printed source number,,,,info,,Manger__2006_Table1,joins to reference_tables/Manger__2006_Table1_references.csv on ref_key,"the caption keys ten sources, 1-10"
+source,source id,,Source,,secondary,,Manger__2006_Table1,,
+Method:data_role,secondary - every value is taken from another paper,,,,method,,Manger__2006_Table1,do not merge; the primaries are in the references table,"caption: ""Sources for brain and body masses are: (1) Gingerich (1998) ... (10) Marino et al. (2004)"""
+Method:scope,extant cetaceans only,,,,method,,Manger__2006_Table1,the snapshot holds the whole printed table; this CSV is the extant section,"the Eocene, Oligocene and Miocene sections are per specimen rather than per species, many in open nomenclature, and have no water temperature. They would be a separate item."
+Method:observation_level,species,,,,method,,Manger__2006_Table1,one row per species in the extant section,

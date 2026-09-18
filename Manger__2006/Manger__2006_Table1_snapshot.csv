@@ -1,35 +1,109 @@
-Species,Suborder,Family,Brain mass (g),Body mass (g),Encephalisation quotient,Water temp. (°C),Source
-Platanista gangetica,Odontocete,Platanistidae,295,59000,1.83,,9
-Platanista minor,Odontocete,Platanistidae,164,18300,2.38,,2
-Lipotes vexillifer,Odontocete,Lipotidae,558,180000,1.53,9–17,2
-Pontoporia blainvillei,Odontocete,Pontoporiidae,220,34900,1.99,15–25,2
-Inia geoffrensis,Odontocete,Iniidae,610,62400,3.63,22–32,2
-Delphinapterus leucas,Odontocete,Monodontidae,2083,636000,2.28,−1–9,3
-Monodon monoceros,Odontocete,Monodontidae,2997,1578330,1.69,−1–7,5
-Phocoena phocoena,Odontocete,Phocoenidae,477,52300,3.23,2–19,2
-Neophocaena phocaenoides,Odontocete,Phocoenidae,468,32400,4.49,12–28,2
-Neophocaena asiaeorientalis,Odontocete,Phocoenidae,422,34000,3.91,,2
-Phocoenoides dalli,Odontocete,Phocoenidae,867,112000,3.36,4–19,9
-Phocoenoides truei,Odontocete,Phocoenidae,876,78400,4.41,,2
-Sotalia fluviatilis,Odontocete,Delphinidae,688,42200,5.44,20–32,2
-Lagenorhynchus albirostris,Odontocete,Delphinidae,1126,67500,6.32,2–17,2
-Lagenorhynchus acutus,Odontocete,Delphinidae,1200,120000,4.43,3–21,2
-Lagenorhynchus obliquidens,Odontocete,Delphinidae,1140,90000,5.19,4–14,2
-Grampus griseus,Odontocete,Delphinidae,2551,400000,3.91,9–29,3
-Tursiops truncatus,Odontocete,Delphinidae,1530,165000,4.47,13–29,4
-Stenella coeruleoalba,Odontocete,Delphinidae,820,56300,5.25,15–29,2
-Delphinus delphis,Odontocete,Delphinidae,765,52000,5.19,13–29,2
-Orcinus orca,Odontocete,Delphinidae,5617,2049000,2.62,,3
-Globicephala melas,Odontocete,Delphinidae,2673,1061000,2.01,4–20,3
-Ziphius cavirostris,Odontocete,Ziphiidae,2004,2273000,0.87,,3
-Mesoplodon mirus,Odontocete,Ziphiidae,2355,929000,1.95,8–18,5
-Mesoplodon europaeus,Odontocete,Ziphiidae,2149,732000,2.12,8–18,5
-Mesoplodon densirostris,Odontocete,Ziphiidae,1463,767000,1.39,18–29,5
-Kogia breviceps,Odontocete,Physeteridae,1012,305000,1.89,13–23,5
-Kogia simus,Odontocete,Physeteridae,622,168500,1.79,18–26,5
-Physeter catadon,Odontocete,Physeteridae,7818,37093000,0.44,15–23,3
-Eschrichtius robustus,Mysticete,Eschrichtiidae,4316.67,30000000,0.28,−1–4,6
-Balaenoptera borealis,Mysticete,Balaenopteridae,4900,20000000,0.43,2–8,8
-Balaenoptera physalus,Mysticete,Balaenopteridae,7111.43,33221430,0.43,,6
-Balaenoptera musculus,Mysticete,Balaenopteridae,3636,50904000,0.16,−1–5,9
-Megaptera novaeangliae,Mysticete,Megapteridae,6439,39311330,0.35,−1–5,6
+Species,Brain mass (g),Body mass (g),Encephalisation quotient,Water temp. (°C),Source
+Eocene Archaeoceti,,,,,
+Saghacetus osiris,388,350 000,0.66,,1
+Dorudon atrox,960,1 140 000,0.69,,1
+Dorudon atrox,1228.1,2 240 000,0.54,,10
+Dorudon intermedius,780,530 000,0.97,,9
+Basilosaurus isis,2520,6 480 000,0.51,,1
+Basilosaurus cetoides,2320.6,6 480 000,0.47,,10
+Basilosaurus cetoides,313.7,730 849,0.31,,10
+Zygorhiza kochii,829.6,2 040 000,0.39,,10
+Rodhocetus kasrani,290,590 000,0.34,,1
+Rodhocetus kasrani,301.5,290 000,0.58,,10
+Dalanistes ahmedi,400,750 000,0.39,,1
+Oligocene cetaceans,,,,,
+indet. indet.,265.9,78 082,1.34,,10
+indet. indet.,525.8,54 811,3.44,,10
+Agorophiidae Genus Y n.sp.,1278.8,594 725,1.47,,10
+Eosqualodontidae n.gen. n.sp.,440.8,50 118,3.07,,10
+Patriocetidae n.gen. n.sp.,888,197 488,2.28,,10
+Simocetus rayi,549.7,94 268,2.42,,10
+Xenorophus n.sp.,892.4,96 849,3.85,,10
+Miocene cetaceans,,,,,
+Aulophyseter morricei,2500,1 100 000,1.83,,9
+Argyrocetus sp.,650,72 000,3.48,,9
+indet. indet.,313.3,78 082,1.58,,10
+Lagenorhynchus n.sp. H,1169.9,98 674,4.98,,10
+Lagenorhynchus sp.,1392.4,112 805,5.37,,10
+Kentriodon pernix,238.6,18 296,3.47,,10
+Kentriodon pernix,285.9,17 037,4.38,,10
+Kentriodon sp.,661,41 653,5.28,,10
+Kentriodon n.sp. W,316.1,49 227,2.23,,10
+Eurhinodelphis bossi,983.5,123 019,3.56,,10
+Eurhinodelphis bossi,648.4,90 009,2.95,,10
+Eurhinodelphis cristatus,797.4,91 676,3.58,,10
+Eurhinodelphis cristatus,845.7,191 867,2.22,,10
+Eurhinodelphis n.sp. M,550.9,64 045,3.21,,10
+Eurhinodelphis sp.,447,57 772,2.81,,10
+Eurhinodelphis sp.,595.2,98 674,2.53,,10
+Eurhinodelphis n.sp. V,562.7,78 082,2.84,,10
+Eurhinodelphis n.sp. V,649.8,184 651,1.75,,10
+Eurhinodelphis sp.,674.2,57 772,4.24,,10
+Schizodelphis n.sp. B,358.6,74 379,1.88,,10
+Schizodelphis n.sp. B,496.1,64 904,2.87,,10
+Schizodelphis n.sp. H,665.8,57 030,4.23,,10
+Schizodelphis n.sp. H,354.4,62 426,2.11,,10
+Schizodelphis n.sp. H,494.1,85 894,2.33,,10
+Schizodelphis longirostris,402.1,94 819,1.76,,10
+Schizodelphis longirostris,512.9,89 984,2.33,,10
+Schizodelphis longirostris,617,84 253,2.95,,10
+Schizodelphis longirostris,374.2,90 009,1.70,,10
+Schizodelphis sp.,339.8,78 082,1.72,,10
+Schizodelphis sp.,431.2,67 363,2.42,,10
+Orycterocetus crocodilinus,2267.7,422 569,3.34,,10
+indet. indet.,635.6,57 470,4.01,,10
+Allodelphis pratti,885.6,170 823,2.53,,10
+indet. indet.,504,57 772,3.17,,10
+Pomatodelphis? sp.,378.5,175 573,1.06,,10
+Squalodon calvertensis,653.4,151 534,2.03,,10
+Squalodon calvertensis,639.4,157 775,1.93,,10
+Squaloziphius emlongi,732.3,164 204,2.15,,10
+Extant cetaceans,,,,,
+Suborder Odontocete,,,,,
+Platanistidae,,,,,
+Platanista gangetica,295,59 000,1.83,,9
+Platanista minor,164,18 300,2.38,,2
+Lipotidae,,,,,
+Lipotes vexillifer,558,180 000,1.53,9–17,2
+Pontoporiidae,,,,,
+Pontoporia blainvillei,220,34 900,1.99,15–25,2
+Iniidae,,,,,
+Inia geoffrensis,610,62 400,3.63,22–32,2
+Monodontidae,,,,,
+Delphinapterus leucas,2083,636 000,2.28,−1–9,3
+Monodon monoceros,2997,1 578 330,1.69,−1–7,5
+Phocoenidae,,,,,
+Phocoena phocoena,477,52 300,3.23,2–19,2
+Neophocaena phocaenoides,468,32 400,4.49,12–28,2
+Neophocaena asiaeorientalis,422,34 000,3.91,,2
+Phocoenoides dalli,867,112 000,3.36,4–19,9
+Phocoenoides truei,876,78 400,4.41,,2
+Delphinidae,,,,,
+Sotalia fluviatilis,688,42 200,5.44,20–32,2
+Lagenorhynchus albirostris,1126,67 500,6.32,2–17,2
+Lagenorhynchus acutus,1200,120 000,4.43,3–21,2
+Lagenorhynchus obliquidens,1140,90 000,5.19,4–14,2
+Grampus griseus,2551,400 000,3.91,9–29,3
+Tursiops truncatus,1530,165 000,4.47,13–29,4
+Stenella coeruleoalba,820,56 300,5.25,15–29,2
+Delphinus delphis,765,52 000,5.19,13–29,2
+Orcinus orca,5617,2 049 000,2.62,,3
+Globicephala melas,2673,1 061 000,2.01,4–20,3
+Ziphiidae,,,,,
+Ziphius cavirostris,2004,2 273 000,0.87,,3
+Mesoplodon mirus,2355,929 000,1.95,8–18,5
+Mesoplodon europaeus,2149,732 000,2.12,8–18,5
+Mesoplodon densirostris,1463,767 000,1.39,18–29,5
+Physeteridae,,,,,
+Kogia breviceps,1012,305 000,1.89,13–23,5
+Kogia simus,622,168 500,1.79,18–26,5
+Physeter catadon,7818,37 093 000,0.44,15–23,3
+Suborder Mysticete,,,,,
+Eschrichtiidae,,,,,
+Eschrichtius robustus,4316.67,30 000 000,0.28,−1–4,6
+Balaenopteridae,,,,,
+Balaenoptera borealis,4900,20 000 000,0.43,2–8,8
+Balaenoptera physalus,7111.43,33 221 430,0.43,,6
+Balaenoptera musculus,3636,50 904 000,0.16,−1–5,9
+Megaptera,,,,,
+Megaptera novaeangliae,6439,39 311 330,0.35,−1–5,6

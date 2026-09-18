@@ -1,0 +1,14 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species,binomial as printed in the text,,Species,,primary,Teleostei,Fritsches_etal_2005_Fig2,,
+common_name_printed,as printed,,Species,,primary,,Fritsches_etal_2005_Fig2,,
+common_name,lowercased common name,,Species,,info,,Fritsches_etal_2005_Fig2,,
+habitat_descriptor,habitat wording used in the text,,,,info,,Fritsches_etal_2005_Fig2,printed for the two tunas only,"text p. 55: ""the surface-living yellowfin tuna"" and ""the deep-diving bigeye tuna""; no descriptor is given for the swordfish"
+retinal_q10_light_adapted,Q10 of flicker fusion frequency in the light-adapted retina,Retina,Q10,,primary,Teleostei,Fritsches_etal_2005_Fig2,the fractional increase in FFF per 10 C,Experimental Procedures: an exponential curve was fitted per species and Q10 = FFF_temp / FFF_(temp-10C)
+n,retinas contributing to the Q10 fit,,,,info,,Fritsches_etal_2005_Fig2,not the number of animals caught - see the data-from-text file,text p. 55 and the Fig. 2 legends
+r_squared,fit of the exponential curve,,,,info,,Fritsches_etal_2005_Fig2,,text p. 55
+source_in_paper,where in the paper the value is printed,,,,info,,Fritsches_etal_2005_Fig2,this item has no printed table; the values are in running text and figure legends,
+source,source id,,Source,,primary,,Fritsches_etal_2005_Fig2,,
+Method:constructed_snapshot,values taken from running text and figure legends,,,,method,,Fritsches_etal_2005_Fig2,"the paper publishes no table, so the tabular form is ours","snapshot HOWTO, ""When there is no table"": the extraction method is part of the provenance, so each value carries the sentence it came from"
+Method:recording,electroretinogram from isolated retina,Retina,,,method,,Fritsches_etal_2005_Fig2,"multiunit Ag-AgCl recording; dorsal retina, about 1 cm2, on a sponge perfused with aerated Fluorinert","fish caught on commercial longline gear from NOAA vessels in the Pacific north of the Hawaiian Islands, 2001-2004; sacrificed by direct brain destruction and the retina removed immediately"
+Method:fff_criterion,how flicker fusion frequency was defined,Retina,,,method,,Fritsches_etal_2005_Fig2,the frequency at which the power of the signal was five times the power of the noise,Experimental Procedures: from the power spectrum of the averaged response at each stimulus frequency
+Method:observation_level,species,,,,method,,Fritsches_etal_2005_Fig2,"one row per species; the Q10 is a curve fit across retinas, not a mean of individuals",

@@ -1,0 +1,10 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species,binomial harmonized to key,,Species,,secondary,Cetacea,Butti_etal_2009_Table1,via _keys/Hof/species_key.csv,
+species_as_published,as printed,,Species,,secondary,,Butti_etal_2009_Table1,the table abbreviates the genus,
+brain_mass_mg,average brain weight,Brain,Mass.mg,mean,secondary,Cetacea,Butti_etal_2009_Table1,printed in g; x1000 in the .R for the project unit,"not measured in this study - see Method:data_role"
+body_mass_g,average body weight,Body,Mass.g,mean,secondary,Cetacea,Butti_etal_2009_Table1,printed in g; already the project unit,"not measured in this study - see Method:data_role"
+eq_as_published,encephalization quotient as printed,Brain,size.index,,note,Cetacea,Butti_etal_2009_Table1,"an index, not a measurement; do not merge",
+eq_recomputed,encephalization quotient recomputed from the printed weights,Brain,size.index,,note,Cetacea,Butti_etal_2009_Table1,"brain_g / (0.12 * body_g^0.67); reproduces all four printed values to 2 dp","the formula is not printed in the paper - it was identified by testing candidates against the four printed values, and is recorded as a check on the transcription, not as the paper's own statement"
+source,source id,,Source,,secondary,,Butti_etal_2009_Table1,,
+Method:data_role,secondary - values taken from other papers,,,,method,,Butti_etal_2009_Table1,"do not merge; the primary sources are Marino et al. (2004) and Hof et al. (2005)","table footnote: ""Brain weight and body weight were unavailable for most of the specimens in this study. These values were taken from Marino et al. (2004) and Hof et al. (2005)."""
+Method:observation_level,species average from the literature,,,,method,,Butti_etal_2009_Table1,"not the specimens counted in Tables 5 and 6, and not tied to any individual","Materials and methods: brain and body weights were not available for the specimens investigated, so average values from the literature are given instead"

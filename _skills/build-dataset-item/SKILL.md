@@ -109,6 +109,21 @@ snapshot.
   points at the wrong item after the next registry edit. `validate_dataset_item()`
   and `build_dataset_item()` both resolve by name for this reason — do the
   same in any ad-hoc script.
+- **Scripts speak the house dialect, and names are derived, never retyped.**
+  `item_name` comes from the script's own filename (§3's self-locating
+  header), and every related filename — the `_snapshot.*`, the analysis
+  `.csv`, the TSV stem — is built from `item_name` / `item_encoded` with
+  `paste0()`, never hand-defined a second time. When editing or extending an
+  existing script, keep its variable names (`folder`, `base`, `item_name`,
+  `item_encoded`, `final.dataframe`) and its output pattern; do not
+  introduce parallel names such as `csv_file`, `registry_file`, or
+  `tsv_directory` for things the house names already denote.
+- **Make the requested edits — and only the requested edits.** If three
+  specific changes are asked for, change exactly those three things. No
+  added checks, new error handling, renames, reformatting, or structural
+  rewrites unless they are the fix or were explicitly requested — small
+  diffs review cleanly in Git; a drive-by improvement belongs in a note to
+  the owner, not in the patch.
 - **Per-row source citations are data: extract them item-scoped and
   join-ready, never as the full bibliography.** When a table's values cite
   sources (reference numbers or author-year), build

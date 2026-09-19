@@ -1,6 +1,6 @@
 "script","status","error","start_time","end_time","elapsed_seconds"
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_brain_mass/brain_mass_compiled.R","FAILED","Error in man_by_file[[fn]] : subscript out of bounds
-Execution halted","2026-09-18 07:32:09.064679","2026-09-18 07:32:10.454357",1.38967800140381
+Execution halted","2026-09-18 17:47:36.393918","2026-09-18 17:47:37.657364",1.26344585418701
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/compare_to_reference.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
 ✔ dplyr     1.2.1     ✔ readr     2.2.0
 ✔ forcats   1.0.1     ✔ stringr   1.6.0
@@ -12,8 +12,8 @@ Execution halted","2026-09-18 07:32:09.064679","2026-09-18 07:32:10.454357",1.38
 ✖ dplyr::lag()    masks stats::lag()
 ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
 Error: reference_csv not found: /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/test_qc/qc_orig_stephan_primates/data_raw/Stephan_primates.csv
-Execution halted","2026-09-18 07:32:36.795114","2026-09-18 07:32:37.675111",0.87999701499939
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_item_name_resolution.R","FAILED","registry Item names: 433   |   TSVs on disk: 340   |   NA.tsv present: no
+Execution halted","2026-09-18 17:48:05.039398","2026-09-18 17:48:06.045371",1.00597310066223
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_item_name_resolution.R","FAILED","registry Item names: 440   |   TSVs on disk: 346   |   NA.tsv present: no
 
 __merging_behaviour/behaviour_compiled.R                     0 item name(s) referenced   OK
 __merging_body_ecology/body_ecology_compiled.R               0 item name(s) referenced   OK
@@ -38,10 +38,14 @@ orphaned TSVs (on disk, claimed by no registry row): 5
 rows with a citation but no Item name (need _tools/file_list.R): 0
 
 all referenced item names resolve to a TSV on disk.
-run _tools/restore_registry_rows.R (adding any new row to its ROWS list), then _tools/file_list.R.","2026-09-18 07:32:52.770961","2026-09-18 07:32:53.349023",0.578062057495117
+run _tools/restore_registry_rows.R (adding any new row to its ROWS list), then _tools/file_list.R.","2026-09-18 17:48:19.093095","2026-09-18 17:48:19.89586",0.802764892578125
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/find_csv_tsv_creators.R","TIMEOUT","
-Execution halted","2026-09-18 07:32:54.149107","2026-09-18 07:37:54.21034",300.061233043671
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Fritsches_etal_2005/Fritsches_etal_2005_Fig2.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+Execution halted","2026-09-18 17:48:20.521466","2026-09-18 17:53:20.572918",300.051451921463
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Nimchinsky_etal_1999/Nimchinsky_etal_1999_extract_snapshot.R","FAILED","fetching: https://pmc.ncbi.nlm.nih.gov/articles/PMC21853/
+Error in read_tbl(doc, ""section#T1 table"") : 
+  table not found on the page: section#T1 table
+Execution halted","2026-09-18 18:18:34.22642","2026-09-18 18:18:35.085811",0.8593909740448
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/vertebrate_opsin_explorer/app.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
 ✔ dplyr     1.2.1     ✔ readr     2.2.0
 ✔ forcats   1.0.1     ✔ stringr   1.6.0
 ✔ ggplot2   4.0.3     ✔ tibble    3.3.1
@@ -51,35 +55,9 @@ Execution halted","2026-09-18 07:32:54.149107","2026-09-18 07:37:54.21034",300.0
 ✖ dplyr::filter() masks stats::filter()
 ✖ dplyr::lag()    masks stats::lag()
 ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
-Error in `rename()`:
-! Can't rename columns that don't exist.
-✖ Column `Habitat depth` doesn't exist.
-Backtrace:
-     ▆
-  1. ├─... %>% ...
-  2. ├─dplyr::mutate(...)
-  3. ├─dplyr::rename(...)
-  4. ├─dplyr:::rename.data.frame(...)
-  5. │ └─tidyselect::eval_rename(expr(c(...)), .data)
-  6. │   └─tidyselect:::rename_impl(...)
-  7. │     └─tidyselect:::eval_select_impl(...)
-  8. │       ├─tidyselect:::with_subscript_errors(...)
-  9. │       │ └─base::withCallingHandlers(...)
- 10. │       └─tidyselect:::vars_select_eval(...)
- 11. │         └─tidyselect:::walk_data_tree(expr, data_mask, context_mask)
- 12. │           └─tidyselect:::eval_c(expr, data_mask, context_mask)
- 13. │             └─tidyselect:::reduce_sels(node, data_mask, context_mask, init = init)
- 14. │               └─tidyselect:::walk_data_tree(new, data_mask, context_mask)
- 15. │                 └─tidyselect:::as_indices_sel_impl(...)
- 16. │                   └─tidyselect:::as_indices_impl(...)
- 17. │                     └─tidyselect:::chr_as_locations(x, vars, call = call, arg = arg)
- 18. │                       └─vctrs::vec_as_location(...)
- 19. └─vctrs (local) `<fn>`() at vctrs/R/subscript-loc.R:84:3
- 20.   └─vctrs:::stop_subscript_oob(...)
- 21.     └─vctrs:::stop_subscript(...) at vctrs/R/subscript-loc.R:503:3
- 22.       └─rlang::abort(...) at vctrs/R/subscript.R:150:3
-Execution halted","2026-09-18 07:45:11.330716","2026-09-18 07:45:12.26857",0.937854051589966
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Lyamin_etal_2008/Lyamin_etal_2008_Table2.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+Error in library(ggtree) : there is no package called ‘ggtree’
+Execution halted","2026-09-18 18:19:52.182954","2026-09-18 18:19:53.275503",1.09254884719849
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/vertebrate_opsin_explorer/setup_data.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
 ✔ dplyr     1.2.1     ✔ readr     2.2.0
 ✔ forcats   1.0.1     ✔ stringr   1.6.0
 ✔ ggplot2   4.0.3     ✔ tibble    3.3.1
@@ -89,31 +67,12 @@ Execution halted","2026-09-18 07:45:11.330716","2026-09-18 07:45:12.26857",0.937
 ✖ dplyr::filter() masks stats::filter()
 ✖ dplyr::lag()    masks stats::lag()
 ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
-Error in `rename()`:
-! Can't rename columns that don't exist.
-✖ Column `Species` doesn't exist.
-Backtrace:
-     ▆
-  1. ├─... %>% ...
-  2. ├─dplyr::mutate(...)
-  3. ├─dplyr::rename(...)
-  4. ├─dplyr:::rename.data.frame(...)
-  5. │ └─tidyselect::eval_rename(expr(c(...)), .data)
-  6. │   └─tidyselect:::rename_impl(...)
-  7. │     └─tidyselect:::eval_select_impl(...)
-  8. │       ├─tidyselect:::with_subscript_errors(...)
-  9. │       │ └─base::withCallingHandlers(...)
- 10. │       └─tidyselect:::vars_select_eval(...)
- 11. │         └─tidyselect:::walk_data_tree(expr, data_mask, context_mask)
- 12. │           └─tidyselect:::eval_c(expr, data_mask, context_mask)
- 13. │             └─tidyselect:::reduce_sels(node, data_mask, context_mask, init = init)
- 14. │               └─tidyselect:::walk_data_tree(new, data_mask, context_mask)
- 15. │                 └─tidyselect:::as_indices_sel_impl(...)
- 16. │                   └─tidyselect:::as_indices_impl(...)
- 17. │                     └─tidyselect:::chr_as_locations(x, vars, call = call, arg = arg)
- 18. │                       └─vctrs::vec_as_location(...)
- 19. └─vctrs (local) `<fn>`() at vctrs/R/subscript-loc.R:84:3
- 20.   └─vctrs:::stop_subscript_oob(...)
- 21.     └─vctrs:::stop_subscript(...) at vctrs/R/subscript-loc.R:503:3
- 22.       └─rlang::abort(...) at vctrs/R/subscript.R:150:3
-Execution halted","2026-09-18 07:46:31.583876","2026-09-18 07:46:32.519902",0.936026096343994
+
+Attaching package: ‘ape’
+
+The following object is masked from ‘package:dplyr’:
+
+    where
+
+Error in library(ggtree) : there is no package called ‘ggtree’
+Execution halted","2026-09-18 18:19:53.278708","2026-09-18 18:19:54.263249",0.984540939331055

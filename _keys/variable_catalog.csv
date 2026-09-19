@@ -104,6 +104,8 @@ Johnson_etal_2016,Johnson_etal_2016_Table1,taxon_level,NA,(structure-agnostic; s
 Peruffo_etal_2019,Peruffo_etal_2019_Table2,taxon_level,NA,(structure-agnostic; see data columns),NA,Taxon level,Taxon level,NA,info,Ovis aries,taxonomic aggregation level
 __merging_cortical_layers,__merging_cortical_layers,taxon_level,NA,(structure-agnostic; see data columns),NA,Taxon level,Taxon level,NA,primary,NA,species order or cross-species summary
 Ashwell__2020,Ashwell__2020,group,NA,(structure-agnostic; see data columns),NA,TaxonGroup,TaxonGroup,NA,primary,Mammalia,higher-level taxonomic/phylogenetic group as printed in the supplementary table
+Manger__2006,Manger__2006_Table1,water_temp_min_c,NA,(structure-agnostic; see data columns),NA,Temp.C,Temp.C,min,secondary,Cetacea,lower bound of the printed water temperature range
+Manger__2006,Manger__2006_Table1,water_temp_max_c,NA,(structure-agnostic; see data columns),NA,Temp.C,Temp.C,max,secondary,Cetacea,upper bound of the printed water temperature range
 Eagleman_Vaughn_2021,Eagleman_Vaughn_2021_TABLE1,Phylogenetic_distance_Mya,NA,(structure-agnostic; see data columns),NA,Time.Mya,Time.Mya,point,info,"Primates (25 species, incl. Homo)","divergence time from humans, in millions of years"
 BarbeitoAndrés_etal_2019,BarbeitoAndrés_etal_2019,units,NA,(structure-agnostic; see data columns),NA,Units,Units,NA,primary,NA,mm3 (volumes); 10^6 cells (cell number); 10^3 cells/mg (density)
 BarbeitoAndrés_etal_2019,BarbeitoAndrés_etal_2019,value,NA,(structure-agnostic; see data columns),NA,Value,Value,NA,primary,NA,numeric value for the (group x region x measure[x cell_type]) cell
@@ -150,6 +152,7 @@ JardimMesseder_etal_2017,JardimMesseder_etal_2017_Table1,O,NA,(structure-agnosti
 Johnson_etal_2016,Johnson_etal_2016_Table1,n_specimens,NA,(structure-agnostic; see data columns),NA,Count,count (number),NA,info,Panthera tigris altaica and Neofelis nebulosa,number of specimens represented
 Kochiyama_etal_2018,Kochiyama_etal_2018_ExtendedDataTable1,n_AAL_regions,NA,(structure-agnostic; see data columns),NA,count,count (number),NA,info,NA,number of AAL sub-regions in the parcel
 Kverkova_etal_2018,Kverkova_etal_2018,N.n,NA,(structure-agnostic; see data columns),NA,N.n,count (number),NA,primary,Rodents (African mole-rats +),number of neurons
+Lyamin_etal_2008,Lyamin_etal_2008_Table1,n_animals,NA,(structure-agnostic; see data columns),NA,Count,count (number),n,info,NA,number of animals in the printed Age entry
 Lyamin_etal_2008,Lyamin_etal_2008_Table2,n_animals,NA,(structure-agnostic; see data columns),NA,Count,count (number),n,info,Cetacea (4 species),number of animals contributing to the species column
 Navarrete_etal_2016,Navarrete_etal_2016_Data,technical_innovation_count,NA,(structure-agnostic; see data columns),NA,Count,count (number),point,primary,Primates,reported innovations involving tool use
 Navarrete_etal_2016,Navarrete_etal_2016_Data,nontechnical_innovation_count,NA,(structure-agnostic; see data columns),NA,Count,count (number),point,primary,Primates,reported innovations not involving tool use
@@ -390,6 +393,14 @@ Barger_etal_2014,Barger_etal_2014_Table1,amygdala_total_cc,AmygdaloidComplex,Amy
 Baron_etal_1987,Baron_etal_1987_Table1,COA,AnteriorCommissure,AnteriorCommissure,NA,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",commissura anterior (anterior commissure)
 Raghanti_etal_2015,Raghanti_etal_2015_Table1,acc_ven_pct,Anterior_cingulate_cortex,Anterior_cingulate_cortex,NA,pct.neurons,percentage (relative),NA,primary,NA,VENs as a percentage of layer V neurons
 Raghanti_etal_2015,Raghanti_etal_2015_Table1,acc_fork_pct,Anterior_cingulate_cortex,Anterior_cingulate_cortex,NA,pct.neurons,percentage (relative),NA,primary,NA,fork cells as a percentage of layer V neurons
+Butti_etal_2009,Butti_etal_2009_Table6,ven_index_as_published,Anterior_cingulate_cortex,Anterior_cingulate_cortex,NA,size.index,size index (allometric),NA,note,Cetacea,VEN index as printed
+Butti_etal_2009,Butti_etal_2009_Table6,ven_index_recomputed,Anterior_cingulate_cortex,Anterior_cingulate_cortex,NA,size.index,size index (allometric),NA,note,Cetacea,VEN index recomputed from the printed volumes
+Butti_etal_2009,Butti_etal_2009_Table6,ven_vol_um3_mean,Anterior_cingulate_cortex,Anterior_cingulate_cortex,NA,Vol.um3,volume,mean,primary,Cetacea,soma volume of layer V VENs
+Butti_etal_2009,Butti_etal_2009_Table6,ven_vol_um3_sd,Anterior_cingulate_cortex,Anterior_cingulate_cortex,NA,Vol.um3,volume,SD,primary,Cetacea,soma volume of layer V VENs
+Butti_etal_2009,Butti_etal_2009_Table6,pyramidal_vol_um3_mean,Anterior_cingulate_cortex,Anterior_cingulate_cortex,NA,Vol.um3,volume,mean,primary,Cetacea,soma volume of pyramidal neurons
+Butti_etal_2009,Butti_etal_2009_Table6,pyramidal_vol_um3_sd,Anterior_cingulate_cortex,Anterior_cingulate_cortex,NA,Vol.um3,volume,SD,primary,Cetacea,soma volume of pyramidal neurons
+Butti_etal_2009,Butti_etal_2009_Table6,fusiform_vol_um3_mean,Anterior_cingulate_cortex,Anterior_cingulate_cortex,NA,Vol.um3,volume,mean,primary,Cetacea,soma volume of layer VI fusiform neurons
+Butti_etal_2009,Butti_etal_2009_Table6,fusiform_vol_um3_sd,Anterior_cingulate_cortex,Anterior_cingulate_cortex,NA,Vol.um3,volume,SD,primary,Cetacea,soma volume of layer VI fusiform neurons
 Nimchinsky_etal_1999,Nimchinsky_etal_1999_Table1,spindle_cells,Anterior_cingulate_cortex_area_24,Anterior_cingulate_cortex_area_24,NA,abundance.class,abundance.class,NA,primary,Primates,abundance of layer Vb spindle cells as printed
 Nimchinsky_etal_1999,Nimchinsky_etal_1999_Table1,spindle_cells_present,Anterior_cingulate_cortex_area_24,Anterior_cingulate_cortex_area_24,NA,presence,presence,NA,primary,Primates,TRUE where spindle_cells is not None
 Nimchinsky_etal_1999,Nimchinsky_etal_1999_Table2,pyramidal_vol_um3_mean,Anterior_cingulate_cortex_area_24,Anterior_cingulate_cortex_area_24,NA,Vol.um3,volume,mean,primary,Hominoidea,soma volume of layer V pyramidal cells
@@ -449,6 +460,7 @@ Weibel_etal_2004,Weibel_etal_2004_Table1,vo2max_ml_min,body,Body,cell_counts,VO2
 Weibel_etal_2004,Weibel_etal_2004_TableA.1,vo2max_ml_min,body,Body,cell_counts,VO2max,VO2max,value ml/min,primary,Mammalia,maximal oxygen consumption
 Wimberly_etal_2021,Wimberly_etal_2021_MammalGait,Hindlimb_Length.mm,Body,Body,cell_counts,Length.mm,length,mean,secondary,mammals,Hindlimb length
 Burger_etal_2019,Burger_etal_2019_SupplementaryDataSD1,Mean_body_mass_g,Body,Body,cell_counts,Mass.g,mass,mean,secondary,mammals,Mean body mass
+Butti_etal_2009,Butti_etal_2009_Table1,body_mass_g,Body,Body,cell_counts,Mass.g,mass,mean,secondary,Cetacea,average body weight
 Chaplin_etal_2013,Chaplin_etal_2013_ResultsText,body_mass_g,body,Body,cell_counts,mass,mass,value g,info,Primates,body mass of the individual as stated
 Granatosky__2018,Granatosky__2018_TableS1,Body_Mass.g,Body,Body,cell_counts,Mass.g,mass,mean,secondary,mammals,Body mass
 Haarlem_etal_2026,Haarlem_etal_2026_CFFdataset,body_mass_g,body,Body,cell_counts,mass,mass,value g,secondary,Metazoa,body mass per authors' dataset
@@ -458,6 +470,7 @@ Heldstab_etal_2016,Heldstab_etal_2016_TableS1,body_mass_g,Body,Body,cell_counts,
 Heldstab_etal_2016,Heldstab_etal_2016_TableS1,brain_assoc_body_mass_g,Body,Body,cell_counts,BodyMass.g,mass,NA,primary,Primates,body mass in grams associated with the neocortex/cerebellum measurements
 Kazu_etal_2014,Kazu_etal_2014_Table1,Body_Mass.g,Body,Body,cell_counts,Mass.g,mass,NA,primary,Artiodactyla,body mass
 Kazu_etal_2015,Kazu_etal_2015_TABLE1,Body_Mass.g,Body,Body,cell_counts,Mass.g,mass,NA,primary,Artiodactyla,body mass
+Manger__2006,Manger__2006_Table1,body_mass_g,Body,Body,cell_counts,Mass.g,mass,mean,secondary,Cetacea,body mass
 Nudo_etal_1995,Nudo_etal_1995_TABLE1,Body_Mass.g,Body,Body,cell_counts,Mass.g,mass,point,primary,24 mammals: 9 orders / 16 families / 21 genera (Marsupialia + Eutheria),body weight of the animal
 Olkowicz_etal_2016,Olkowicz_etal_2016_DatasetS1,body_mass_g,Body,Body,cell_counts,Mass.g,mass,mean,primary,Aves,mean body mass
 Ruf_Geiser_2015,Ruf_Geiser_2015_Table1,body_mass_kg,Body,Body,cell_counts,Mass.kg,mass,point,primary,"Birds & mammals (43 birds, 171 mammals)",body mass of the species in kilograms
@@ -493,6 +506,7 @@ Latimer__1942,Latimer__1942_TABLEI,value_mean_cm,Brain,Brain,cell_counts,Length.
 Latimer__1942,Latimer__1942_TABLEI,value_se_cm,Brain,Brain,cell_counts,Length.cm,length,se,primary,Canis lupus familiaris,"SE of the mean, cm, length rows only"
 Brodmann__1913,Brodmann__1913_Table1,BrainWeight.g,brain,Brain,cell_counts,Mass.g,mass,NA,primary,Mammalia (all orders),brain weight
 Burger_etal_2019,Burger_etal_2019_SupplementaryDataSD1,Mean_brain_mass_g,Brain,Brain,cell_counts,Mass.g,mass,mean,secondary,mammals,Mean brain mass
+Butti_etal_2009,Butti_etal_2009_Table1,brain_mass_mg,Brain,Brain,cell_counts,Mass.mg,mass,mean,secondary,Cetacea,average brain weight
 Changizi_Shimojo_2005,Changizi_Shimojo_2005_Table1,brain_mass_g,Brain,Brain,cell_counts,Mass.g,mass,NA,primary,"Mammalia, 19 spp. (monotremes, marsupials, eulipotyphlans, bats, rodents, tree shrew, carnivores, primates)",brain mass
 Changizi_Shimojo_2005,Changizi_Shimojo_2005_Table5,brain_mass_g,Brain,Brain,cell_counts,Mass.g,mass,NA,primary,"Mammalia, 11 spp. (opossum, rat, tree shrew, flying fox, squirrel, bushbaby, marmoset, squirrel monkey, owl monkey, cat, macaque)",brain mass
 HerculanoHouzel__2015,HerculanoHouzel__2015_Table1,brain.mass..g.or.cm3.,Brain,Brain,cell_counts,Mass.g,mass,point,primary,"Mammals (24 species, 6 clades)","brain mass in grams, or brain volume in cubic centimetres where the cited source reported a volume; values refer to both hemispheres together"
@@ -501,6 +515,8 @@ Karl_etal_2024,Karl_etal_2024_TABLE1,Brain mass (g),Brain,Brain,cell_counts,Mass
 Latimer__1942,Latimer__1942_TABLEI,value_mean_mg,Brain,Brain,cell_counts,Mass.mg,mass,mean,primary,Canis lupus familiaris,"mean value in mg, for mass rows only (project unit; g x1000 or kg x1,000,000 -- see Method row)"
 Latimer__1942,Latimer__1942_TABLEI,value_se_mg,Brain,Brain,cell_counts,Mass.mg,mass,se,primary,Canis lupus familiaris,"SE of the mean, mg, mass rows only"
 Lewitus_etal_2013,Lewitus_etal_2013_TableS2partial,Brain_weight_g,Brain,Brain,cell_counts,Mass.g,mass,NA,secondary,Mammals,Brain weight
+Manger__2006,Manger__2006_Table1,brain_mass_mg,Brain,Brain,cell_counts,Mass.mg,mass,mean,secondary,Cetacea,brain mass
+Manger__2006,Manger__2006_Table1,brain_mass_g_as_published,Brain,Brain,cell_counts,Mass.g,mass,mean,secondary,Cetacea,brain mass as printed
 Nudo_etal_1995,Nudo_etal_1995_TABLE1,Brain_Mass.mg,Brain,Brain,cell_counts,Mass.mg,mass,point,primary,24 mammals: 9 orders / 16 families / 21 genera (Marsupialia + Eutheria),whole brain weight
 Sherwood_etal_2003,Sherwood_etal_2003_Table1,brain_weight_g,brain,Brain,cell_counts,mass,mass,value g,secondary,NA,species mean brain weight from literature
 Weaver__2001,Weaver__2001_TableA-15,BrMass_g,Brain,Brain,cell_counts,Mass.g,mass,NA,primary,"monkeys, apes, fossil hominids, humans",brain mass as printed (g)
@@ -508,7 +524,10 @@ Weaver__2001,Weaver__2001_TableA-15,Brain_Mass.mg,Brain,Brain,cell_counts,Mass.m
 Latimer__1942,Latimer__1942_TABLEI,cv_pct,Brain,Brain,cell_counts,pct.CV,percentage (relative),mean,primary,Canis lupus familiaris,"printed coefficient of variation, percent"
 Latimer__1942,Latimer__1942_TABLEI,cv_se_pct,Brain,Brain,cell_counts,pct.CV,percentage (relative),se,primary,Canis lupus familiaris,"printed SE of the coefficient of variation, percent"
 Burger_etal_2019,Burger_etal_2019_SupplementaryDataSD1,Brain.resid,Brain,Brain,cell_counts,residual,residual,NA,flagged,mammals,Brain-size residual (as printed) — NOT reproducible: authors could not reproduce it and advise deriving anew from a current tree
+Butti_etal_2009,Butti_etal_2009_Table1,eq_as_published,Brain,Brain,cell_counts,size.index,size index (allometric),NA,note,Cetacea,encephalization quotient as printed
+Butti_etal_2009,Butti_etal_2009_Table1,eq_recomputed,Brain,Brain,cell_counts,size.index,size index (allometric),NA,note,Cetacea,encephalization quotient recomputed from the printed weights
 Changizi_Shimojo_2005,Changizi_Shimojo_2005_Table1,EQ,Brain,Brain,cell_counts,index,size index (allometric),NA,secondary,"Mammalia, 19 spp. (monotremes, marsupials, eulipotyphlans, bats, rodents, tree shrew, carnivores, primates)",encephalization quotient
+Manger__2006,Manger__2006_Table1,encephalisation_quotient_as_published,Brain,Brain,cell_counts,size.index,size index (allometric),NA,note,Cetacea,encephalisation quotient as printed
 Stephan_Pirlot_1970,Stephan_Pirlot_1970_Table1,total_brain_mm3,brain,Brain,cell_counts,volume,volume,value mm3,derived-in-source,Chiroptera,total brain volume (col 13) = cols 1-4 + 12
 Latimer__1956,Latimer__1956_Table2,weight_brain_stem_mg,BrainStem,BrainStem,NA,Mass.mg,mass,mean,primary,as above,"weight of the brain stem, converted from printed grams (x1000)"
 Bauernfeind_etal_2013,Bauernfeind_etal_2013_Table1,brain_mass_mg,Brain_weight,Brain_weight,brain_structure_volume,Mass.mg,mass,NA,primary,Primates,brain mass in mg (printed in g; x1000)
@@ -708,6 +727,10 @@ Kazu_etal_2014,Kazu_etal_2014_Table1,CerebralCortexGrey_O.p.N,CerebralCortexGrey
 Kazu_etal_2015,Kazu_etal_2015_TABLE1,CerebralCortexGrey_O.p.N,CerebralCortexGrey,CerebralCortexGrey,cell_counts,O.p.N,ratio (per neuron),NA,primary,Artiodactyla,cortical grey-matter other-cell / neuron ratio
 Ribeiro_etal_2013,Ribeiro_etal_2013_Table1,CorticalGrey_O.p.N,CerebralCortexGrey,CerebralCortexGrey,cell_counts,O.p.N,ratio (per neuron),mean,primary,Homo sapiens,mean other-cell / neuron ratio in the cortical grey matter of that region
 Ribeiro_etal_2013,Ribeiro_etal_2013_Table1,CorticalGrey_O.p.N_SE,CerebralCortexGrey,CerebralCortexGrey,cell_counts,O.p.N,ratio (per neuron),SE,primary,Homo sapiens,dispersion printed after the other-cell / neuron ratio
+Butti_etal_2009,Butti_etal_2009_Table5,ce,Cerebral_cortex_region,Cerebral_cortex_region,NA,CE,CE,NA,info,NA,coefficient of error of the VEN estimate
+Butti_etal_2009,Butti_etal_2009_Table5,ven_n_RH,Cerebral_cortex_region,Cerebral_cortex_region,NA,N.n,count (number),NA,primary,Cetacea,"estimated total VENs, right hemisphere"
+Butti_etal_2009,Butti_etal_2009_Table5,ven_n_LH,Cerebral_cortex_region,Cerebral_cortex_region,NA,N.n,count (number),NA,primary,Cetacea,"estimated total VENs, left hemisphere"
+Butti_etal_2009,Butti_etal_2009_Table5,ven_pct,Cerebral_cortex_region,Cerebral_cortex_region,NA,pct.neurons,percentage (relative),NA,primary,Cetacea,VENs as a percentage of total neurons in the region
 Heuer_etal_2023,Heuer_etal_2023_Data,Cerebral_section_length_mm,Cerebrum,Cerebrum,NA,length,length,mm,primary,Mammals,perimeter around the cerebral pial surface of the mid-section
 Heuer_etal_2023,Heuer_etal_2023_Data,Log10Length_ctx_source,Cerebrum,Cerebrum,NA,length,length,log10 mm,info,Mammals,source-released log10 cerebral section length
 Heuer_etal_2023,Heuer_etal_2023_Data,Cerebral_section_area_mm2,Cerebrum,Cerebrum,NA,area,surface area,mm2,primary,Mammals,area of the cerebral mid-section
@@ -908,6 +931,7 @@ Campos_Welker_1976,Campos_Welker_1976_Table1,hypothalamus_volume_mm3,Hypothalamu
 Campos_Welker_1976,Campos_Welker_1976_Table1,hypothalamus_volume_mm3,Hypothalamus,Hypothalamus,brain_structure_volume,Vol.mm3,volume,value,primary,Hystricomorph rodents,Hypothalamic nuclei and inclusive fiber bundles
 Stephan_etal_1981,Stephan_etal_1981_TablesI-VI,Hypothalamus,Hypothalamus,Hypothalamus,cell_counts,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",hypothalamus
 Stephan_etal_1981,Stephan_etal_1981_TablesI-VI,Hypothalamus,Hypothalamus,Hypothalamus,brain_structure_volume,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",hypothalamus
+Taniguchi_etal_2022,Taniguchi_etal_2022_Findings,present,Insula,Insula,brain_structure_volume,presence,presence,NA,primary,Rodentia,whether the feature was found
 Bauernfeind_etal_2013,Bauernfeind_etal_2013_Table1,total_insula_mm3,Insula,Insula,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates,total left insula volume in mm3 (granular + dysgranular + agranular; + FI where present)
 Bauernfeind_etal_2013,Bauernfeind_etal_2013_Table2,total_insula_R_mm3,Insula,Insula,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates,total right insula volume in mm3 (granular + dysgranular + agranular + FI)
 Bauernfeind_etal_2013,Bauernfeind_etal_2013_Table3,mean_mm3,Insula,Insula,brain_structure_volume,Vol.mm3,volume,Mean,primary,Primates,species mean subdivision volume in mm3 (printed in cm3 as mean +/- SD; x1000)
@@ -1557,6 +1581,7 @@ Olkowicz_etal_2016,Olkowicz_etal_2016_DatasetS1,rest_of_brain_mass_g,RestOfBrain
 Olkowicz_etal_2016,Olkowicz_etal_2016_DatasetS1,rest_of_brain_brain_mass_percent,RestOfBrain,RestOfBrain,NA,pct.brain.mass,mass,mean,primary,Aves,mean percentage of whole-brain mass in rest of brain
 Olkowicz_etal_2016,Olkowicz_etal_2016_DatasetS1,rest_of_brain_brain_neuron_percent,RestOfBrain,RestOfBrain,NA,pct.brain.N,percentage (relative),mean,primary,Aves,mean percentage of whole-brain neurons in rest of brain
 Olkowicz_etal_2016,Olkowicz_etal_2016_DatasetS1,rest_of_brain_brain_nonneuronal_cell_percent,RestOfBrain,RestOfBrain,NA,pct.brain.O,percentage (relative),mean,primary,Aves,mean percentage of whole-brain non-neuronal cells in rest of brain
+Fritsches_etal_2005,Fritsches_etal_2005_Fig2,retinal_q10_light_adapted,Retina,Retina,NA,Q10,Q10,NA,primary,Teleostei,Q10 of flicker fusion frequency in the light-adapted retina
 Baron_etal_1987,Baron_etal_1987_Table1,RB,RetrobulbarCortex,Retrobulbar_cortex,brain_structure_volume,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",retrobulbar cortex (regio retrobulbaris; = anterior olfactory nucleus in Anglo-American usage)
 Kazu_etal_2014,Kazu_etal_2014_Table1,RoB_N.n,RoB,RoB,cell_counts,N.n,count (number),NA,primary,Artiodactyla,rest-of-brain neuron number
 Kazu_etal_2015,Kazu_etal_2015_TABLE1,RoB_N.n,RoB,RoB,cell_counts,N.n,count (number),NA,primary,Artiodactyla,rest-of-brain neuron number
@@ -1802,20 +1827,12 @@ Kirk_Kay_2004,Kirk_Kay_2004_Table2,va_cdeg_min,eye/visual system,eye/visual syst
 Kirk_Kay_2004,Kirk_Kay_2004_Table2,va_cdeg_max,eye/visual system,eye/visual system,NA,visual acuity,visual acuity,max c/deg,secondary,Mammalia,upper bound of printed acuity
 deSousa_etal_2022,deSousa_etal_2022_acuityblind.csv,visual_acuity_cpd,eye/visual system,eye/visual system,NA,visual acuity,visual acuity,value cpd,secondary,Mammalia,visual acuity
 Semendeferi_Damasio_2000,Semendeferi_Damasio_2000_Table2,Frontal_Vol.mm3,frontal lobe,frontal lobe,NA,Vol.mm3,volume,NA,primary,"Hominoidea (Homo, Pan, Gorilla, Pongo, Hylobates)",frontal lobe volume
-Hakeem_etal_2009,Hakeem_etal_2009_Table1,ven_ce_gundersen_L,fronto_insular_cortex,fronto_insular_cortex,brain_structure_volume,CE,CE,NA,info,NA,coefficient of error of the VEN estimate
-Hakeem_etal_2009,Hakeem_etal_2009_Table1,ven_ce_gundersen_R,fronto_insular_cortex,fronto_insular_cortex,brain_structure_volume,CE,CE,NA,info,NA,coefficient of error of the VEN estimate
-Hakeem_etal_2009,Hakeem_etal_2009_Table1,ven_ce_schmitzhof_L,fronto_insular_cortex,fronto_insular_cortex,brain_structure_volume,CE,CE,NA,info,NA,coefficient of error of the VEN estimate
-Hakeem_etal_2009,Hakeem_etal_2009_Table1,ven_ce_schmitzhof_R,fronto_insular_cortex,fronto_insular_cortex,brain_structure_volume,CE,CE,NA,info,NA,coefficient of error of the VEN estimate
-Hakeem_etal_2009,Hakeem_etal_2009_Table1,neuron_ce_gundersen_L,fronto_insular_cortex,fronto_insular_cortex,brain_structure_volume,CE,CE,NA,info,NA,coefficient of error of the total neuron estimate
-Hakeem_etal_2009,Hakeem_etal_2009_Table1,neuron_ce_gundersen_R,fronto_insular_cortex,fronto_insular_cortex,brain_structure_volume,CE,CE,NA,info,NA,coefficient of error of the total neuron estimate
-Hakeem_etal_2009,Hakeem_etal_2009_Table1,neuron_ce_schmitzhof_L,fronto_insular_cortex,fronto_insular_cortex,brain_structure_volume,CE,CE,NA,info,NA,coefficient of error of the total neuron estimate
-Hakeem_etal_2009,Hakeem_etal_2009_Table1,neuron_ce_schmitzhof_R,fronto_insular_cortex,fronto_insular_cortex,brain_structure_volume,CE,CE,NA,info,NA,coefficient of error of the total neuron estimate
-Hakeem_etal_2009,Hakeem_etal_2009_Table1,ven_n_FI_L,fronto_insular_cortex,fronto_insular_cortex,brain_structure_volume,N.n,count (number),NA,primary,Proboscidea,VENs in area FI
-Hakeem_etal_2009,Hakeem_etal_2009_Table1,ven_n_FI_R,fronto_insular_cortex,fronto_insular_cortex,brain_structure_volume,N.n,count (number),NA,primary,Proboscidea,VENs in area FI
-Hakeem_etal_2009,Hakeem_etal_2009_Table1,ven_n_FI_total,fronto_insular_cortex,fronto_insular_cortex,brain_structure_volume,N.n,count (number),NA,primary,Proboscidea,VENs in area FI
-Hakeem_etal_2009,Hakeem_etal_2009_Table1,neuron_n_FI_L,fronto_insular_cortex,fronto_insular_cortex,brain_structure_volume,N.n,count (number),NA,primary,Proboscidea,total neurons in area FI
-Hakeem_etal_2009,Hakeem_etal_2009_Table1,neuron_n_FI_R,fronto_insular_cortex,fronto_insular_cortex,brain_structure_volume,N.n,count (number),NA,primary,Proboscidea,total neurons in area FI
-Hakeem_etal_2009,Hakeem_etal_2009_Table1,neuron_n_FI_total,fronto_insular_cortex,fronto_insular_cortex,brain_structure_volume,N.n,count (number),NA,primary,Proboscidea,total neurons in area FI
+Hakeem_etal_2009,Hakeem_etal_2009_Table1,ven_ce_gundersen,fronto_insular_cortex,fronto_insular_cortex,brain_structure_volume,CE,CE,NA,info,NA,coefficient of error of the VEN estimate
+Hakeem_etal_2009,Hakeem_etal_2009_Table1,ven_ce_schmitzhof,fronto_insular_cortex,fronto_insular_cortex,brain_structure_volume,CE,CE,NA,info,NA,coefficient of error of the VEN estimate
+Hakeem_etal_2009,Hakeem_etal_2009_Table1,neuron_ce_gundersen,fronto_insular_cortex,fronto_insular_cortex,brain_structure_volume,CE,CE,NA,info,NA,coefficient of error of the total neuron estimate
+Hakeem_etal_2009,Hakeem_etal_2009_Table1,neuron_ce_schmitzhof,fronto_insular_cortex,fronto_insular_cortex,brain_structure_volume,CE,CE,NA,info,NA,coefficient of error of the total neuron estimate
+Hakeem_etal_2009,Hakeem_etal_2009_Table1,ven_n_FI,fronto_insular_cortex,fronto_insular_cortex,brain_structure_volume,N.n,count (number),NA,primary,Proboscidea,VENs in area FI
+Hakeem_etal_2009,Hakeem_etal_2009_Table1,neuron_n_FI,fronto_insular_cortex,fronto_insular_cortex,brain_structure_volume,N.n,count (number),NA,primary,Proboscidea,total neurons in area FI
 Jacob_etal_2021,Jacob_etal_2021 TABLE 2,nonneurons_per_field_mean,fronto_insular_cortex,fronto_insular_cortex,brain_structure_volume,count_per_field,count (number),mean,primary,Procyon lotor,Group mean nonneuronal (glial) cell profiles per sampling field.
 Jacob_etal_2021,Jacob_etal_2021 TABLE 2,nonneurons_per_field_sem,fronto_insular_cortex,fronto_insular_cortex,brain_structure_volume,count_per_field,count (number),sem,primary,Procyon lotor,SEM of nonneuronal profiles per field.
 Jacob_etal_2021,Jacob_etal_2021 TABLE 2,neuron_total_per_field_mean,fronto_insular_cortex,fronto_insular_cortex,brain_structure_volume,count_per_field,count (number),mean,primary,Procyon lotor,Group mean total neuron profiles per sampling field.
@@ -1824,9 +1841,7 @@ Jacob_etal_2021,Jacob_etal_2021 TABLE 2,von_economo_neurons_per_field_mean,front
 Jacob_etal_2021,Jacob_etal_2021 TABLE 2,von_economo_neurons_per_field_sem,fronto_insular_cortex,fronto_insular_cortex,brain_structure_volume,count_per_field,count (number),sem,primary,Procyon lotor,SEM of VEN profiles per field.
 Jacob_etal_2021,Jacob_etal_2021 TABLE 2,fork_neurons_per_field_mean,fronto_insular_cortex,fronto_insular_cortex,brain_structure_volume,count_per_field,count (number),mean,primary,Procyon lotor,Group mean fork neuron profiles per sampling field.
 Jacob_etal_2021,Jacob_etal_2021 TABLE 2,fork_neurons_per_field_sem,fronto_insular_cortex,fronto_insular_cortex,brain_structure_volume,count_per_field,count (number),sem,primary,Procyon lotor,SEM of fork neuron profiles per field.
-Hakeem_etal_2009,Hakeem_etal_2009_Table1,ven_pct_FI_L,fronto_insular_cortex,fronto_insular_cortex,brain_structure_volume,pct.neurons,percentage (relative),NA,primary,Proboscidea,VENs as a percentage of total neurons in FI
-Hakeem_etal_2009,Hakeem_etal_2009_Table1,ven_pct_FI_R,fronto_insular_cortex,fronto_insular_cortex,brain_structure_volume,pct.neurons,percentage (relative),NA,primary,Proboscidea,VENs as a percentage of total neurons in FI
-Hakeem_etal_2009,Hakeem_etal_2009_Table1,ven_pct_FI_total,fronto_insular_cortex,fronto_insular_cortex,brain_structure_volume,pct.neurons,percentage (relative),NA,primary,Proboscidea,VENs as a percentage of total neurons in FI
+Hakeem_etal_2009,Hakeem_etal_2009_Table1,ven_pct_FI,fronto_insular_cortex,fronto_insular_cortex,brain_structure_volume,pct.neurons,percentage (relative),NA,primary,Proboscidea,VENs as a percentage of total neurons in FI
 Jacob_etal_2021,Jacob_etal_2021 TABLE 2,pct_von_economo_neurons_mean,fronto_insular_cortex,fronto_insular_cortex,brain_structure_volume,pct,percentage (relative),mean,primary,Procyon lotor,VENs as percent of neurons (header footnote a).
 Jacob_etal_2021,Jacob_etal_2021 TABLE 2,pct_von_economo_neurons_sem,fronto_insular_cortex,fronto_insular_cortex,brain_structure_volume,pct,percentage (relative),sem,primary,Procyon lotor,SEM of percent VENs.
 Jacob_etal_2021,Jacob_etal_2021 TABLE 2,pct_all_neurons_mean,fronto_insular_cortex,fronto_insular_cortex,brain_structure_volume,pct,percentage (relative),mean,primary,Procyon lotor,Neurons (VEN + fork + pyramidal) as percent of total cells (header footnote b).

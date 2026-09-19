@@ -1,0 +1,170 @@
+species_ottid,o_max,o_min,o_range,d_min,d_max,d_avg,d_range,biome,lotic,limnetic,neritic,estuarine,coastal,open_marine,deepwater_aphotic,aquatic,forest,intermediate,open,lake.river,habitat
+Pseudotropheus_ater_ott3636149,351,239,112,NA,NA,NA,NA,Lake,0,1,0,0,0,0,0,TRUE,0,0,0,1,freshwater
+Melanochromis_vermivorus_ott747272,387,239,148,NA,NA,NA,NA,Lake,0,1,0,0,0,0,0,TRUE,0,0,0,1,freshwater
+Tramitichromis_intermedius_ott876087,420,246,174,NA,NA,NA,NA,Lake,0,1,0,0,0,0,0,TRUE,0,0,0,1,freshwater
+Leocottus_kesslerii_ott942680,322,270,52,50,170,110,120,"Lake, river",1,1,0,0,0,0,0,TRUE,0,0,0,1,freshwater
+Paracottus_knerii_ott77105,312,265,47,NA,100,NA,NA,"Lake, river; benthopelagic",1,1,0,0,0,0,0,TRUE,0,0,0,1,freshwater
+Batrachocottus_baicalensis_ott106283,308,257,51,70,130,100,60,Lake river; demersal,1,1,0,0,0,0,0,TRUE,0,0,0,1,freshwater
+Batrachocottus_multiradiatus_ott77068,294,294,0,50,800,425,750,Lake; demersal,0,1,0,0,0,0,0,TRUE,0,0,0,1,freshwater
+Batrachocottus_nikolskii_ott927233,273,269,4,4,1300,652,1296,Lake; demersal,0,1,0,0,0,0,0,TRUE,0,0,0,1,freshwater
+Cottocomephorus_grewingki_ott525311,313,209,104,20,300,160,280,"Lake, river; freshwater, brackish; benthopelagic",1,1,0,0,1,0,0,TRUE,0,0,0,1,NA
+Cottocomephorus_inermis_ott77111,305,301,4,50,500,275,450,Lake; benthopelagic; potamodromous,0,1,0,0,0,0,0,TRUE,0,0,0,1,freshwater
+Procottus_jettelesii_ott651000,306,219,87,0,140,70,140,Lake; benthopelagic,0,1,0,0,0,0,0,TRUE,0,0,0,1,freshwater
+Asprocottus_intermedius_ott3632260,276,276,0,200,800,500,600,,NA,NA,NA,NA,NA,NA,NA,TRUE,0,0,0,NA,NA
+Cyphocottus_eurystomus_ott346623,292,279,13,50,600,325,550,Lake; bathydemersal; deep water,0,1,0,0,0,0,1,TRUE,0,0,0,1,freshwater
+Limnocottus_pallidus_ott650997,214,212,2,150,1000,575,850,Lake; bathydemersal; deep water,0,1,0,0,0,0,1,TRUE,0,0,0,1,freshwater
+Limnocottus_griseus_ott624058,232,232,0,250,1300,775,1050,Lake; bathydemersal; deep water,0,1,0,0,0,0,1,TRUE,0,0,0,1,freshwater
+Limnocottus_bergianus_ott650998,228,228,0,100,1000,550,900,Lake; bathydemersal; deep water,0,1,0,0,0,0,1,TRUE,0,0,0,1,freshwater
+Comephorus_dybowskii_ott231447,205,204,1,NA,NA,NA,NA,Lake; pelagic; potamodromous,0,1,0,0,0,0,0,TRUE,0,0,0,1,freshwater
+Comephorus_baicalensis_ott1019835,219,211,8,0,1600,800,1600,Lake; pelagic; potamodromous,0,1,0,0,0,0,0,TRUE,0,0,0,1,freshwater
+Potamotrygon_motoro_ott151418,209,209,0,NA,NA,NA,NA,River; benthopelagic; potamodromous,1,0,0,0,0,0,0,TRUE,0,0,0,1,freshwater
+Mysis_relicta_ott373483,430,303,127,NA,NA,NA,NA,"marine, brackish, fresh; Lake; shallow water",0,1,0,0,1,0,0,TRUE,0,0,0,1,NA
+Mysis_salemaai_ott657420,372,307,65,NA,NA,NA,NA,"marine, freshwater; Lake",0,1,0,0,1,0,0,TRUE,0,0,0,1,NA
+Mysis_diluviana_ott31479,262,262,0,NA,NA,NA,NA,marine; freshwater; Lake,0,1,0,0,1,0,0,TRUE,0,0,0,1,NA
+Coregonus_lavaretus_ott872355,364,337,27,3,45,24,42,"Lake; freshwater, brackish; demersal",0,1,0,0,1,0,0,TRUE,0,0,0,1,NA
+Salvelinus_alpinus_ott688324,280,271,9,0,75,37.5,75,"Marine, freshwater, brackish; benthopelagic; anadromous; shallow",1,0,0,0,1,0,0,TRUE,0,0,0,1,NA
+Sepia_plangon_ott378950,214,202,12,10,98,54,88,marine; benthic,0,0,0,0,0,1,0,TRUE,0,0,0,0,NA
+Euprymna_tasmanica_ott916326,202,202,0,1,370,185.5,369,,NA,NA,NA,NA,0,NA,NA,TRUE,0,0,0,NA,NA
+Sepioteuthis_lessoniana_ott616360,242,223,19,0,100,50,100,coastal; demersal; brackish,0,0,0,0,1,0,0,TRUE,0,0,0,0,coastal
+Devario_aequipinnatus_ott1083064,395,395,0,NA,NA,NA,NA,Stream; freshwater; pelagic,1,0,0,0,0,0,0,TRUE,0,0,0,1,freshwater
+Danio_rerio_ott1005914,388,214,174,NA,NA,NA,NA,"stream, pond; freshwater; benthopelagic",1,1,0,0,0,0,0,TRUE,0,0,0,1,freshwater
+Oncorhynchus_mykiss_-species_in_domain_Eukaryota-_ott165368,432,277,155,0,200,100,200,"marine, freshwater, brackish; benthopelagic; anadromous; river",1,0,0,0,1,1,0,TRUE,0,0,0,1,NA
+Caranx_hippos_ott78208,209,209,0,1,350,175.5,349,"marine; brackish, estuary (juv), river",1,0,1,0,1,0,0,TRUE,0,0,0,1,NA
+Scomberomorus_sierra_ott266396,333,333,0,10,60,35,50,marine; pelagic-neritic; oceanodromous; coastal,0,0,1,0,1,0,0,TRUE,0,0,0,0,coastal
+Paralabrax_clathratus_ott805781,303,214,89,1,61,31,60,marine; benthopelagic; coastal,0,0,1,0,1,0,0,TRUE,0,0,0,0,coastal
+Enneanectes_carminalis_ott453028,214,214,0,NA,NA,NA,NA,marine; reef; coastal (larvae),0,0,1,0,1,0,0,TRUE,0,0,0,0,coastal
+Acipenser_fulvescens_ott698270,438,356,82,NA,NA,NA,NA,"Lake, bay (coastal?); freshwater, brackish; demersal; potamodromous",0,1,1,0,1,0,0,TRUE,0,0,0,1,NA
+Rhynchophorus_ferrugineus_-species_in_domain_Eukaryota-_ott62699,408,306,102,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,TRUE,0,0,0,NA,NA
+Rhinoptera_bonasus_ott197732,378,218,160,NA,NA,NA,NA,"bay, estuary, continental shelf; benthopelagic; marine; oceanadromous",0,0,1,1,1,1,0,TRUE,0,0,0,0,coastal
+Urobatis_jamaicensis_ott450826,398,208,190,0,25,12.5,25,"coastal, reef; marine",0,0,1,0,1,0,0,TRUE,0,0,0,0,coastal
+Hexagrammos_octogrammus_ott185862,441,333,108,0,200,100,200,coastal; marine; demersal,0,0,1,0,1,0,0,TRUE,0,0,0,0,coastal
+Sphyrna_lewini_ott450134,333,333,0,0,25,12.5,25,marine; brackish; pelagic-oceanic; coastal,0,0,1,0,1,1,0,TRUE,0,0,0,0,coastal
+Glaucostegus_typus_ott463561,396,222,174,0,100,50,100,marine; freshwater; brackish; coastal,0,0,1,0,1,0,0,TRUE,0,0,0,0,coastal
+Aptychotrema_rostrata_ott233377,385,220,165,20,70,45,50,marine; brackish; demersal; estuary; coastal,0,0,1,0,1,0,0,TRUE,0,0,0,0,coastal
+Dugesia_japonica_ott101220,214,214,0,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,TRUE,0,0,0,NA,NA
+Engraulis_japonicus_ott690902,223,223,0,0,400,200,400,marine; coastal; pelagic-neritic; oceanodromus,0,0,1,0,1,0,0,TRUE,0,0,0,0,coastal
+Engraulis_encrasicolus_ott222963,214,214,0,NA,NA,NA,NA,marine; coastal; pelagic-neritic; brackish,0,0,1,0,1,0,0,TRUE,0,0,0,0,coastal
+Syngnathus_typhle_ott251396,217,217,0,1,20,10.5,19,"marine, brackish; coastal, estuary; demersal",0,0,1,1,1,0,0,TRUE,0,0,0,0,coastal
+Pomatoschistus_minutus_ott1048873,258,230,28,4,200,102,196,"marine, brackish; demersal; amphidromous, coastal, estuarine (juv)",0,0,1,1,1,0,0,TRUE,0,0,0,0,coastal
+Pomatoschistus_microps_ott1069642,289,289,0,0,12,6,12,"marine, freshwater, brackish; demersal; amphidromous; estuary, river",1,0,0,1,1,0,0,TRUE,0,0,0,1,NA
+Clupea_harengus_ott1005932,279,227,52,0,364,182,364,"marine, brackish; benthopelagic; oceanodromous",0,0,NA,0,NA,NA,0,TRUE,0,0,0,0,NA
+Zoarces_viviparus_ott752564,281,281,0,0,40,20,40,"marine; brackish; demersal; coastal, tidepool",0,0,1,0,NA,NA,0,TRUE,0,0,0,0,NA
+Platichthys_flesus_ott408331,278,268,10,0,100,50,100,"marine, freshwater, brackish; coastal, estuary; demersal",0,0,1,0,1,0,0,TRUE,0,0,0,0,coastal
+Myoxocephalus_quadricornis_ott443391,278,278,0,0,100,50,100,"marine, freshwater, brackish; demersal; coastal",0,0,1,0,1,0,0,TRUE,0,0,0,0,coastal
+Gasterosteus_aculeatus_ott401066,260,260,0,0,100,50,100,"marine, freshwater, brackish; stream, estuary, coastal; anadromous",1,0,1,1,1,0,0,TRUE,0,0,0,1,NA
+Pungitius_pungitius_ott561269,326,326,0,0,110,55,110,"marine, freshwater, brackish; benthopelagic; anadromous; lake, pond, coastal",1,1,1,0,1,0,0,TRUE,0,0,0,1,NA
+Osmerus_eperlanus_ott987406,368,296,72,NA,NA,NA,NA,"marine, freshwater, brackish; pelagic-neritic; anadromous; estuary, lake",1,1,1,1,1,0,0,TRUE,0,0,0,1,NA
+Scardinius_erythrophthalmus_ott221709,355,343,12,0,NA,NA,NA,"freshwater, brackish; benthopelagic;  river",1,0,0,0,1,0,0,TRUE,0,0,0,1,NA
+Rutilus_rutilus_ott421037,352,315,37,NA,NA,NA,NA,"freshwater, brackish; benthopelagic; river, lake",1,1,0,0,1,0,0,TRUE,0,0,0,1,NA
+Alburnus_alburnus_ott957577,286,286,0,1,NA,NA,NA,"freshwater, brackish; benthopelagic; potamodromous; lakes and rivers",1,1,0,0,1,0,0,TRUE,0,0,0,1,NA
+Carassius_carassius_ott1010092,324,313,11,NA,NA,NA,NA,"freshwater, brackish; demersal; potamodromous; pond, lake, river",1,1,0,0,1,0,0,TRUE,0,0,0,1,NA
+Abramis_brama_ott103921,355,355,0,1,NA,NA,NA,"freshwater, brackish, benthopelagic, potamodromous; lake, river, estuary",1,1,0,1,1,0,0,TRUE,0,0,0,1,NA
+Sander_lucioperca_ott557682,318,318,0,2,30,16,28,"freshwater, brackish; potamodromous; river, lake, estuary",1,1,0,1,1,0,0,TRUE,0,0,0,1,NA
+Gymnocephalus_cernua_ott104323,342,339,3,10,NA,NA,NA,"freshwater, brackish; demersal; potamodromous; lake, river, estuary",1,1,0,1,1,0,0,TRUE,0,0,0,1,NA
+Perca_fluviatilis_ott186488,360,359,1,1,30,15.5,29,"freshwater, brackish; demersal; anadromous; estuary, lake, stream",1,0,0,0,1,0,0,TRUE,0,0,0,1,NA
+Atherinops_affinis_ott396631,265,265,0,NA,26,NA,NA,"marine, brackish; pelagic-neritic; bays and estuaries",0,0,1,1,1,0,0,TRUE,0,0,0,0,coastal
+Mugil_cephalus_ott418648,303,297,6,0,120,60,120,"marine, freshwater, brackish; benthopelagic; catadromous; coastal, estuary, river",1,0,1,1,1,0,0,TRUE,0,0,0,1,NA
+Seriphus_politus_ott827210,235,230,5,1,21,11,20,"marine; demersal; inshore, bays and tidal sloughs",0,0,1,0,1,0,0,TRUE,0,0,0,0,coastal
+Cottus_ott942688,270,270,0,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,TRUE,0,0,0,NA,NA
+Leptocottus_armatus_ott520272,230,202,28,0,156,78,156,"marine, brackish; demersal; amphidromous; bays and estuaries",0,0,1,1,1,0,0,TRUE,0,0,0,0,coastal
+Clevelandia_ios_ott1014036,276,276,0,0,2,1,2,"marine, brackish; demersal; estuary, lagoon, tidal slough",0,0,NA,1,1,0,0,TRUE,0,0,0,0,coastal
+Eucyclogobius_newberryi_ott282688,276,276,0,NA,NA,NA,NA,"marine, brackish; demersal; coastal, bays, stream mouths",0,0,1,0,1,0,0,TRUE,0,0,0,0,coastal
+Sphoeroides_annulatus_ott6406,257,257,0,10,60,35,50,"marine, brackish; reef, estuary (juv)",0,0,NA,1,1,0,0,TRUE,0,0,0,0,coastal
+Mustelus_henlei_ott1035182,209,209,0,0,261,130.5,261,marine; demersal; intertidal to continental shelf,0,0,1,0,1,1,0,TRUE,0,0,0,0,coastal
+Triakis_semifasciata_ott32029,223,223,0,0,156,78,156,"marine, brackish; demersal; estuary, lagoon, bay, intertidal to deeper areas",0,0,1,1,1,0,0,TRUE,0,0,0,0,coastal
+Pachystomias_microdon_ott988976,361,282,79,660,4000,2330,3340,marine; bathypelagic,0,0,0,0,0,1,1,TRUE,0,0,0,0,NA
+Malacosteus_niger_ott190410,356,306,50,500,3886,2193,3386,marine; bathypelagic; deepwater,0,0,0,0,0,1,1,TRUE,0,0,0,0,NA
+Dolicholagus_longirostris_ott297146,223,223,0,NA,NA,NA,NA,marine; bathypelagic; deepwater,0,0,0,0,0,1,1,TRUE,0,0,0,0,NA
+Lysiosquillina_maculata_ott98210,219,219,0,0,NA,NA,NA,marine; reef,0,0,0,0,NA,NA,0,TRUE,0,0,0,0,NA
+Etroplus_suratensis_ott640316,377,333,44,10,NA,NA,NA,"brackish; benthopelagic; river, estuary",1,0,0,1,1,0,0,TRUE,0,0,0,1,NA
+Procambarus_milleri_ott876594,310,310,0,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,TRUE,0,0,0,NA,NA
+Engaeus_cunicularius_ott548591,325,325,0,NA,NA,NA,NA,freshwater,NA,NA,0,0,0,0,0,TRUE,0,0,0,NA,NA
+Lacunicambarus_ludovicianus_ott876592,329,329,0,NA,NA,NA,NA,freshwater,NA,NA,0,0,0,0,0,TRUE,0,0,0,NA,NA
+Cambarellus_shufeldtii_ott876603,325,325,0,NA,NA,NA,NA,"swamps, ditches, lakes, ponds, shallow streams",1,1,0,0,0,0,0,TRUE,0,0,0,1,freshwater
+Holmesimysis_costata_ott108885,276,276,0,NA,NA,NA,NA,marine; intertidal (shallow),0,0,1,0,1,0,0,TRUE,0,0,0,0,coastal
+Neomysis_americana_ott523831,303,303,0,NA,NA,NA,NA,"marine; intertidal, coastal (shallow)",0,0,1,0,1,0,0,TRUE,0,0,0,0,coastal
+Sergia_grandis_ott2970934,214,214,0,NA,NA,NA,NA,marine; pelagic,0,0,0,0,0,1,0,TRUE,0,0,0,0,NA
+Neogonodactylus_oerstedii_ott311373,378,230,148,0,76,38,76,"marine; benthic; reef, intertidal and subtidal (shallow)",0,0,1,0,1,0,0,TRUE,0,0,0,0,coastal
+Pseudosquilla_ciliata_ott122975,363,203,160,0,33,16.5,33,"marine; reef flats, seagrass beds, mudflats; coastal, shallow",0,0,1,0,1,0,0,TRUE,0,0,0,0,coastal
+Limulus_polyphemus_ott511973,303,303,0,3,11,7,8,marine; benthic (shallow),0,0,NA,0,1,0,0,TRUE,0,0,0,0,coastal
+Pseudopleuronectes_americanus_ott261419,374,249,125,5,143,74,138,marine; demersal; oceanodromus,0,0,0,0,0,1,0,TRUE,0,0,0,0,NA
+Melanolagus_bericoides_ott3642871,214,214,0,100,1700,900,1600,marine; bathypelagic; deepwater,0,0,0,0,0,1,1,TRUE,0,0,0,0,NA
+Bonapartia_pedaliota_ott713651,285,285,0,100,1200,650,1100,marine; bathypelagic; deepwater,0,0,0,0,0,1,1,TRUE,0,0,0,0,NA
+Pundamilia_nyererei_ott7106,419,243,176,1,4,2.5,3,freshwater; benthopelagic; lake (shallow),0,1,0,0,0,0,0,TRUE,0,0,0,1,freshwater
+Pundamilia_azurea_ott7109,404,232,172,NA,NA,NA,NA,freshwater; demersal; lake,0,1,0,0,0,0,0,TRUE,0,0,0,1,freshwater
+Pundamilia_ott750942,415,231,184,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,TRUE,0,0,0,NA,NA
+Procambarus_clarkii_ott79864,422,422,0,NA,NA,NA,NA,"freshwater; river, lake, pond, swamp",1,1,0,0,0,0,0,TRUE,0,0,0,1,freshwater
+Homarus_americanus_ott28247,311,311,0,NA,NA,NA,NA,marine; neritic-oceanic,0,0,1,0,1,0,0,TRUE,0,0,0,0,coastal
+Ardenna_pacifica_ott471653,414,223,191,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,TRUE,0,0,0,NA,NA
+Phoca_vitulina_ott698422,266,219,47,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,TRUE,0,0,0,NA,NA
+Phoca_groenlandica_ott664062,202,202,0,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,TRUE,0,0,0,NA,NA
+Trichechus_manatus_ott226178,388,223,165,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,TRUE,0,0,0,NA,NA
+Synodus_variegatus_ott252111,230,230,0,NA,NA,NA,NA,"marine; reef, lagoon",0,0,0,0,NA,NA,0,TRUE,0,0,0,0,NA
+Myripristis_berndti_ott375898,285,249,36,NA,NA,NA,NA,marine; reef; benthopelagic,0,0,0,0,NA,NA,0,TRUE,0,0,0,0,NA
+Neoniphon_sammara_ott63608,276,223,53,NA,NA,NA,NA,"marine; reef, seagrass beds, lagoon (shallow)",0,0,0,0,NA,NA,0,TRUE,0,0,0,0,NA
+Sargocentron_xantherythrum_ott63628,290,261,29,NA,NA,NA,NA,"marine; reef, seagrass beds, lagoon (shallow)",0,0,0,0,NA,NA,0,TRUE,0,0,0,0,NA
+Kuhlia_sandvicensis_ott622696,297,297,0,NA,NA,NA,NA,"marine, freshwater, brackish; benthopelagic; amphidromous",0,0,0,0,NA,NA,0,TRUE,0,0,0,0,NA
+Pristiapogon_kallopterus_ott833756,290,290,0,NA,NA,NA,NA,"marine, brackish; reef, lagoon; benthopelagic",0,0,0,0,NA,NA,0,TRUE,0,0,0,0,NA
+Mulloidichthys_flavolineatus_ott234770,313,313,0,NA,NA,NA,NA,marine; reef (shallow); benthopelagic,0,0,0,0,NA,NA,0,TRUE,0,0,0,0,NA
+Parupeneus_multifasciatus_ott295485,297,287,10,NA,NA,NA,NA,"marine; reef, lagoon (shallow)",0,0,0,0,NA,NA,0,TRUE,0,0,0,0,NA
+Chaetodon_unimaculatus_ott1044089,333,333,0,NA,NA,NA,NA,"marine; reef, lagoon; benthopelagic",0,0,0,0,NA,NA,0,TRUE,0,0,0,0,NA
+Chaetodon_kleinii_ott955790,333,333,0,NA,NA,NA,NA,"marine; reef, lagoon, channel",0,0,0,0,NA,NA,0,TRUE,0,0,0,0,NA
+Forcipiger_flavissimus_ott403161,328,328,0,NA,NA,NA,NA,"marine; reef, lagoon; benthopelagic",0,0,0,0,NA,NA,0,TRUE,0,0,0,0,NA
+Bodianus_bilunulatus_ott201328,370,325,45,NA,NA,NA,NA,"marine, reef (adults deep, juv shallow)",0,0,0,0,NA,NA,0,TRUE,0,0,0,0,NA
+Asterropteryx_semipunctata_ott37552,356,202,154,NA,NA,NA,NA,"marine; reef, turbid lagoons; benthic",0,0,0,0,NA,NA,0,TRUE,0,0,0,0,NA
+Zanclus_cornutus_ott199070,293,293,0,NA,NA,NA,NA,"marine; reef, turbid lagoons, clear reefs; benthopelagic",0,0,0,0,NA,NA,0,TRUE,0,0,0,0,NA
+Naso_lituratus_ott250289,306,287,19,NA,NA,NA,NA,"marine; reef, lagoon",0,0,0,0,NA,NA,0,TRUE,0,0,0,0,NA
+Naso_unicornis_ott47509,255,255,0,NA,NA,NA,NA,"marine; reef, channels, lagoon; benthopelagic",0,0,0,0,NA,NA,0,TRUE,0,0,0,0,NA
+Ctenochaetus_strigosus_ott917242,375,219,156,NA,NA,NA,NA,marine; reef; benthopelagic,0,0,0,0,NA,NA,0,TRUE,0,0,0,0,NA
+Zebrasoma_flavescens_ott467289,300,265,35,NA,NA,NA,NA,marine; reef,0,0,0,0,NA,NA,0,TRUE,0,0,0,0,NA
+Zebrasoma_velifer_ott3638940,313,270,43,NA,NA,NA,NA,"marine; reef, lagoon (shallow juv)",0,0,0,0,NA,NA,0,TRUE,0,0,0,0,NA
+Acanthurus_triostegus_ott467300,297,297,0,NA,NA,NA,NA,"marine; reef, lagoon, (juv) tidepool",0,0,1,0,NA,NA,0,TRUE,0,0,0,0,NA
+Acanthurus_nigroris_ott467316,356,313,43,NA,NA,NA,NA,"marine; reef, clear lagoon",0,0,0,0,NA,NA,0,TRUE,0,0,0,0,NA
+Acanthurus_achilles_ott347408,340,219,121,NA,NA,NA,NA,"marine; reef, clear lagoon",0,0,0,0,NA,NA,0,TRUE,0,0,0,0,NA
+Sufflamen_bursa_ott383036,230,230,0,NA,NA,NA,NA,"marine; reef, clear lagoon",0,0,0,0,NA,NA,0,TRUE,0,0,0,0,NA
+Pervagor_aspricaudus_ott758997,290,290,0,NA,NA,NA,NA,"marine; reef, clear lagoon; benthopelagic",0,0,0,0,NA,NA,0,TRUE,0,0,0,0,NA
+Pervagor_spilosoma_ott366035,265,265,0,NA,NA,NA,NA,marine; reef; benthopelagic,0,0,0,0,NA,NA,0,TRUE,0,0,0,0,NA
+Arothron_meleagris_ott143361,320,255,65,NA,NA,NA,NA,"marine; reef, lagoon, oceanic",0,0,0,0,NA,NA,0,TRUE,0,0,0,0,NA
+Ostracion_meleagris_ott314508,303,303,0,NA,NA,NA,NA,"marine; reef, clear lagoon",0,0,0,0,NA,NA,0,TRUE,0,0,0,0,NA
+Oncorhynchus_mykiss_(species_in_domain Eukaryota)_ott165368,428,265,163,NA,NA,NA,NA,"marine, freshwater, brackish; benthopelagic; anadromous; lake, river, sea",1,1,0,0,1,1,0,TRUE,0,0,0,1,NA
+Petromyzon_marinus_ott227494,219,219,0,NA,NA,NA,NA,"marine, freshwater, brackish; anadromous; lake, river, ocean; benthic pelagic",1,1,0,0,1,1,0,TRUE,0,0,0,1,NA
+Neotrygon_kuhlii_ott688899,379,210,169,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,TRUE,0,0,0,NA,NA
+Geotria_australis_ott703422,436,231,205,NA,NA,NA,NA,"marine, freshwater, brackish; anadromous; coastal stream (juv)",1,0,1,0,1,1,0,TRUE,0,0,0,1,NA
+Acanthopagrus_schlegelii_ott380194,402,209,193,NA,NA,NA,NA,"marine, brackish; demersal",0,0,0,0,1,1,0,TRUE,0,0,0,0,coastal
+Acanthopagrus_berda_ott889379,414,219,195,NA,NA,NA,NA,"marine, freshwater, brackish; demersal; oceanodromous",0,0,0,0,1,1,0,TRUE,0,0,0,0,coastal
+Acanthopagrus_latus_ott760733,320,320,0,NA,NA,NA,NA,marine; demersal; oceanodromous,NA,NA,0,0,0,1,0,TRUE,0,0,0,NA,NA
+Oreochromis_niloticus_ott288063,435,331,104,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,TRUE,0,0,0,NA,NA
+Gasterosteus_ott401070,237,237,0,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,TRUE,0,0,0,NA,NA
+Orconectes_virilis_ott876593,398,265,133,NA,NA,NA,NA,demersal,0,0,0,0,NA,NA,0,TRUE,0,0,0,0,NA
+Pagothenia_borchgrevinki_ott781792,207,207,0,NA,NA,NA,NA,marine; pelagic-oceanic,0,0,1,0,0,1,0,TRUE,0,0,0,0,NA
+Trematomus_loennbergii_ott985377,214,214,0,NA,NA,NA,NA,marine; bathydemersal; deepwater\,0,0,0,0,0,1,1,TRUE,0,0,0,0,NA
+Trematomus_hansoni_ott708983,219,219,0,NA,NA,NA,NA,marine; demersal,0,0,0,0,0,1,0,TRUE,0,0,0,0,NA
+Trematomus_bernacchii_ott985361,225,225,0,NA,NA,NA,NA,marine; demersal,0,0,0,0,0,1,0,TRUE,0,0,0,0,NA
+Dissostichus_mawsoni_ott504786,234,234,0,NA,NA,NA,NA,marine; pelagic-oceanic,0,0,1,0,0,1,NA,TRUE,0,0,0,0,NA
+Squalus_suckleyi_ott1019106,200,200,0,12,110,61,98,"marine, brackish, benthopelagic",0,0,0,0,1,0,NA,TRUE,0,0,0,0,coastal
+Aristostomias_tittmanni_ott988979,378,297,81,15,2000,1007.5,1985,marine; bathypelagic,0,0,0,0,0,1,1,TRUE,0,0,0,0,NA
+Leptograpsus_variegatus_ott43264,282,282,0,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,TRUE,0,0,0,NA,NA
+Zalophus_californianus_ott95364,221,221,0,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,TRUE,0,0,0,NA,NA
+Hemisquilla_ensigera_ott159028,350,202,148,75,75,75,0,marine; demersal; benthic,0,0,0,0,0,1,0,TRUE,0,0,0,0,NA
+Odontodactylus_scyllarus_ott122980,329,230,99,10,58,34,48,marine; benthic; reef,0,0,0,0,NA,NA,0,TRUE,0,0,0,0,NA
+Odontodactylus_brevirostris_ott5090872,350,270,80,49,640,344.5,591,marine; benthic,0,0,0,0,0,1,0,TRUE,0,0,0,0,NA
+Acanthephyra_smithi_ott2974246,265,265,0,200,900,550,700,marine; bathypelagic; deepwater,0,0,0,0,0,1,1,TRUE,0,0,0,0,NA
+Acanthephyra_curtirostris_ott563063,265,265,0,500,1200,850,700,marine; bathypelagic; deepwater,0,0,0,0,0,1,1,TRUE,0,0,0,0,NA
+Systellaspis_debilis_ott512575,214,202,12,100,900,500,800,marine; bathypelagic; deepwater,0,0,0,0,0,1,1,TRUE,0,0,0,0,NA
+Janicella_spinicauda_ott1051663,214,214,0,30,600,315,570,marine; benthic; coastal (and shelf),0,0,1,0,1,1,0,TRUE,0,0,0,0,coastal
+Pleuroncodes_planipes_ott2976704,313,230,83,100.5,100.5,100.5,0,,NA,NA,NA,NA,NA,NA,NA,TRUE,0,0,0,NA,NA
+Pandalus_borealis_ott28236,214,214,0,NA,NA,NA,NA,marine; benthopelagic,0,0,0,0,0,1,0,TRUE,0,0,0,0,NA
+Callinectes_sapidus_ott182906,257,214,43,0,72,36,72,"marine, freshwater, brackish; benthic (epibentic); benthopelagic; estuarine",0,0,0,1,1,1,0,TRUE,0,0,0,0,coastal
+Amphibalanus_amphitrite_ott186242,422,422,0,0,4177,2088.5,4177,brackish; intertidal (shalllow),0,0,1,0,1,0,0,TRUE,0,0,0,0,coastal
+Amphibalanus_eburneus_ott1042705,422,422,0,0.25,34.75,17.5,34.5,brackish; intertidal (shalllow),0,0,1,0,1,0,0,TRUE,0,0,0,0,coastal
+Otolemur_crassicaudatus_ott863763,219,219,0,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,TRUE,0,0,0,NA,NA
+Rana_temporaria_ott14718,223,223,0,NA,NA,NA,NA,freshwater; water surface,NA,NA,NA,NA,0,0,NA,TRUE,0,0,0,NA,NA
+Fejervarya_cancrivora_ott787583,223,223,0,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,TRUE,0,0,0,NA,NA
+Coregonus_clupeoides_ott3642553,352,303,49,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,TRUE,0,0,0,NA,NA
+Cyprinus_carpio_ott429083,313,313,0,NA,NA,NA,NA,"freshwater; brackish; benthopelagic; potamodromous; lakes, rivers",1,1,0,0,1,0,0,TRUE,0,0,0,1,NA
+Clibanarius_vittatus_ott706438,264,264,0,NA,NA,NA,NA,"(marine, freshwater, brackish?); benthic; estuary, bay, river",1,1,1,1,1,0,0,TRUE,0,0,0,1,NA
+Coenobita_clypeatus_ott2974729,250,250,0,0.5,80,40.25,79.5,benthic; brackish; intertidal,0,0,1,0,1,0,0,TRUE,0,0,0,0,coastal
+Pagurus_longicarpus_ott155682,284,284,0,0,175,87.5,175,marine; benthic,0,0,0,0,0,1,0,TRUE,0,0,0,0,NA
+Callinectes_ornatus_ott454973,207,207,0,0,18,9,18,"marine; benthopelagic; intertidal, sometimes brackish (mostly marine)",0,0,1,0,NA,NA,0,TRUE,0,0,0,0,NA
+Minuca_pugnax_ott509873,257,257,0,0,1,0.5,1,brackish; benthic; marshes,0,0,0,1,1,0,0,TRUE,0,0,0,0,coastal
+Leptuca_pugilator_ott757104,257,257,0,0,1.8,0.9,1.8,"brackish; benthic; intertidal, mangroves",0,0,1,1,1,0,0,TRUE,0,0,0,0,coastal

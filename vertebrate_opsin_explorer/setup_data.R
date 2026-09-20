@@ -1,8 +1,21 @@
 library(tidyverse)
 library(ape)
-library(ggtree)
+#library(ggtree)
 library(rtrees)
 library(piggyback)
+
+## Run from this folder regardless of the caller's working directory (Rscript from the repo root,
+## source() from RStudio): all paths below (raw_VPOD/, opsin_explorer_data.RData) are relative to it.
+.sp <- local({
+  a <- grep("^--file=", commandArgs(FALSE), value = TRUE)
+  if (length(a)) return(normalizePath(sub("^--file=", "", a[1])))
+  if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+    p <- rstudioapi::getActiveDocumentContext()$path
+    if (nzchar(p)) return(normalizePath(p))
+  }
+  NA_character_
+})
+if (!is.na(.sp)) setwd(dirname(.sp))
 
 if (!file.exists("raw_VPOD/vert_meta.tsv")) {
   stop("raw_VPOD/vert_meta.tsv not found.")

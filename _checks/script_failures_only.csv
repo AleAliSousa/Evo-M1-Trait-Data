@@ -1,7 +1,66 @@
 "script","status","error","start_time","end_time","elapsed_seconds"
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_brain_mass/brain_mass_compiled.R","FAILED","Error in man_by_file[[fn]] : subscript out of bounds
-Execution halted","2026-09-18 17:47:36.393918","2026-09-18 17:47:37.657364",1.26344585418701
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/compare_to_reference.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Andelin_etal_2019/Andelin_etal_2019_Table4.R","FAILED","Error in library(rJava) : there is no package called ‘rJava’
+Execution halted","2026-09-19 00:21:19.09682","2026-09-19 00:21:19.920328",0.823507785797119
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/AvelinodeSouza_etal_2025/AvelinodeSouza_etal_2025_TABLE1.R","FAILED","Error in library(rJava) : there is no package called ‘rJava’
+Execution halted","2026-09-19 00:21:23.094117","2026-09-19 00:21:23.843955",0.74983811378479
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Baron_etal_1996/Baron_etal_1996_overlap_taxonomy_audit.R","FAILED","Error in library(taxizedb) : there is no package called ‘taxizedb’
+Calls: suppressPackageStartupMessages -> withCallingHandlers -> library
+Execution halted","2026-09-19 00:22:15.533039","2026-09-19 00:22:16.27772",0.744680881500244
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Burish_etal_2010/Burish_etal_2010_SupplementaryTable1.R","FAILED","Error in library(rJava) : there is no package called ‘rJava’
+Execution halted","2026-09-19 00:22:31.531431","2026-09-19 00:22:32.335929",0.804497957229614
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Burish_etal_2010/Burish_etal_2010_Table1.R","FAILED","Error in library(rJava) : there is no package called ‘rJava’
+Execution halted","2026-09-19 00:22:32.338257","2026-09-19 00:22:33.325402",0.987144947052002
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Caspar_etal_2022/Caspar_etal_2022_Table1.R","FAILED","New names:
+• `` -> `...2`
+• `` -> `...3`
+• `` -> `...4`
+• `` -> `...5`
+• `` -> `...6`
+• `` -> `...7`
+• `` -> `...8`
+• `` -> `...9`
+• `` -> `...10`
+• `` -> `...11`
+• `` -> `...12`
+Error in library(zoo) : there is no package called ‘zoo’
+Execution halted","2026-09-19 00:22:45.19486","2026-09-19 00:22:46.285081",1.09022092819214
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/DosSantos_etal_2020/DosSantos_etal_2020_Table1.R","FAILED","Error in library(rJava) : there is no package called ‘rJava’
+Execution halted","2026-09-19 00:23:25.488901","2026-09-19 00:23:26.139922",0.651021003723145
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Eagleman_Vaughn_2021/Eagleman_Vaughn_2021_TABLE1.R","FAILED","Error in library(rJava) : there is no package called ‘rJava’
+Execution halted","2026-09-19 00:23:29.202763","2026-09-19 00:23:29.988797",0.786033868789673
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Garwicz_etal_2009/Garwicz_etal_2009_TableS1.R","FAILED","Error in library(rJava) : there is no package called ‘rJava’
+Execution halted","2026-09-19 00:23:47.272554","2026-09-19 00:23:48.139065",0.866511106491089
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel__2015/HerculanoHouzel__2015_Table2.R","FAILED","Error in library(rJava) : there is no package called ‘rJava’
+Execution halted","2026-09-19 00:24:09.62116","2026-09-19 00:24:10.371706",0.750545978546143
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel_etal_2020/HerculanoHouzel_etal_2020_TABLE1.R","FAILED","Error in library(rJava) : there is no package called ‘rJava’
+Execution halted","2026-09-19 00:24:20.453276","2026-09-19 00:24:21.070219",0.616943120956421
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel_etal_2020/HerculanoHouzel_etal_2020_TABLE2.R","FAILED","Error in library(rJava) : there is no package called ‘rJava’
+Execution halted","2026-09-19 00:24:21.072686","2026-09-19 00:24:21.896649",0.823962926864624
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Karl_etal_2024/Karl_etal_2024_TABLE1.R","FAILED","Error in library(rJava) : there is no package called ‘rJava’
+Execution halted","2026-09-19 00:25:02.270261","2026-09-19 00:25:02.909143",0.638881921768188
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kverkova_etal_2018/Kverkova_etal_2018_TableS1.R","FAILED","New names:
+• `` -> `...2`
+• `` -> `...3`
+• `` -> `...4`
+• `` -> `...5`
+• `` -> `...6`
+• `` -> `...7`
+• `` -> `...8`
+• `` -> `...9`
+Error in library(zoo) : there is no package called ‘zoo’
+Execution halted","2026-09-19 00:25:39.637313","2026-09-19 00:25:40.724356",1.08704304695129
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kverkova_etal_2018/Kverkova_etal_2018_TableS5.R","FAILED","Error in library(docxtractr) : there is no package called ‘docxtractr’
+Execution halted","2026-09-19 00:25:40.729676","2026-09-19 00:25:41.515546",0.78587007522583
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Raghanti_etal_2015/Raghanti_etal_2015_extract_snapshot.R","FAILED","fetching: https://link.springer.com/article/10.1007/s00429-014-0792-y/tables/1
+Error in open.connection(x, ""rb"") : cannot open the connection
+Calls: read_html -> read_html.default
+Execution halted","2026-09-19 00:26:36.794889","2026-09-19 00:26:38.645296",1.85040712356567
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Seymour_etal_2017/Seymour_etal_2017_TableS1_snapshot_extract.R","FAILED","Error in library(officer) : there is no package called ‘officer’
+Calls: suppressPackageStartupMessages -> withCallingHandlers -> library
+Execution halted","2026-09-19 00:27:01.792975","2026-09-19 00:27:02.524564",0.731589078903198
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Smaers_etal_2018/Smaers_etal_2018_Figure2-data1.R","FAILED","Error in library(docxtractr) : there is no package called ‘docxtractr’
+Execution halted","2026-09-19 00:27:20.660842","2026-09-19 00:27:21.359102",0.698260068893433
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1Gen_NoEstimates.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
 ✔ dplyr     1.2.1     ✔ readr     2.2.0
 ✔ forcats   1.0.1     ✔ stringr   1.6.0
 ✔ ggplot2   4.0.3     ✔ tibble    3.3.1
@@ -11,9 +70,370 @@ Execution halted","2026-09-18 17:47:36.393918","2026-09-18 17:47:37.657364",1.26
 ✖ dplyr::filter() masks stats::filter()
 ✖ dplyr::lag()    masks stats::lag()
 ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
-Error: reference_csv not found: /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/test_qc/qc_orig_stephan_primates/data_raw/Stephan_primates.csv
-Execution halted","2026-09-18 17:48:05.039398","2026-09-18 17:48:06.045371",1.00597310066223
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_item_name_resolution.R","FAILED","registry Item names: 440   |   TSVs on disk: 346   |   NA.tsv present: no
+Processing item: Latimer__1942_TABLEI 
+Processing item: Semendeferi_etal_1998_TABLE2 
+Processing item: Semendeferi_etal_1998_TABLE4 
+Processing item: Matano__2001_TABLE2 
+Processing item: Semendeferi_etal_2001_TABLE2 
+Processing item: Semendeferi_etal_2001_TABLE3 
+Processing item: Sherwood_etal_2004_TABLEI 
+Processing item: Sherwood_etal_2004_unpublishedviaDeCasien 
+Processing item: Armstrong__1979_Tables1-9 
+Processing item: Barger_etal_2007_TABLE1 
+Processing item: Barks_etal_2014_Fig4A 
+Processing item: Barks_etal_2014_Fig5A 
+Processing item: Barks_etal_2014_TABLE1 
+Processing item: Barks_etal_2014_TABLE2 
+Processing item: Barks_etal_2014_unpublishedviaDeCasien 
+Processing item: Hakeem_etal_2009_Table1 
+Processing item: Bush_Allman_2004_b_TABLE1 
+Processing item: Heesy__2004_Table1 
+Processing item: Butti_etal_2009_Table1 
+Processing item: Butti_etal_2009_Table5 
+Processing item: Butti_etal_2009_Table6 
+Processing item: Barger_etal_2012_Table3 
+Processing item: HerculanoHouzel_etal_2016_Table2 
+Processing item: Jacobs_etal_2016_Table1 
+Processing item: Dell_etal_2016_Table4 
+Processing item: Johnson_etal_2016_Table1 
+Processing item: Jacobs_etal_2018_Table3 
+Processing item: Jacobs_etal_2018_Table5 
+Processing item: Falcone_etal_2019_TABLE1 
+Processing item: Falcone_etal_2019_TABLE2 
+Processing item: Nguyen_etal_2019_Table2 
+Processing item: HerculanoHouzel_etal_2020_TABLE1 
+Processing item: HerculanoHouzel_etal_2020_TABLE2 
+Processing item: Jacob_etal_2021_FIGURE4 
+Processing item: Jacob_etal_2021_TABLE1 
+Processing item: Jacob_etal_2021_TABLE2 
+Processing item: Jacob_etal_2021_TABLE3 
+Processing item: Karl_etal_2024_TABLE1 
+Processing item: AvelinodeSouza_etal_2025_TABLE1 
+Processing item: Krompecher_Lipak_1966_Table2 
+Processing item: Heffner_Heffner_1992_a_TABLE1 
+Processing item: Nudo_etal_1995_TABLE1 
+Processing item: Nudo_etal_1995_TABLE2 
+Processing item: Nudo_etal_1995_TABLE3 
+Processing item: Nudo_etal_1995_TABLE4 
+Processing item: Nudo_etal_1995_TABLE5 
+Processing item: Hanson_etal_2018_Table2 
+Processing item: Hanson_etal_2018_Table3 
+Processing item: MedinaGonzález__2026_SupplementaryFile1 
+Processing item: MedinaGonzález__2026_SupplementaryFile2 
+Processing item: MedinaGonzález__2026_SupplementaryFile3 
+Processing item: MacLarnon__1996_Table1 
+Processing item: Rilling_Insel_1999_Table1 
+Processing item: Semendeferi_Damasio_2000_Table2 
+Processing item: Changizi__2003_Table1 
+Processing item: Kirk_Kay_2004_Table1 
+Processing item: Kirk_Kay_2004_Table2 
+Processing item: Schleifenbaum__1973_Tables1-2 
+Processing item: Ebinger__1974_Tables3-4 
+Processing item: Heffner_etal_2020_Figure3 
+Processing item: Changizi__2001_Figure3 
+Processing item: Raghanti_etal_2015_Table1 
+Processing item: Jacobs_etal_2015_Table1 
+Processing item: Peruffo_etal_2019_Table2 
+Processing item: Schniter_Penaherrera-Aguirre_2026_data 
+Processing item: PalomeroGallagher_Zilles_2018_TableS3 
+Processing item: Heuer_etal_2019_S1 
+Processing item: Heuer_etal_2019_Table1 
+Processing item: Fritsches_etal_2005_Fig2 
+Processing item: Smaers_etal_2017_TableS1part1 
+Processing item: Smaers_etal_2017_TableS1part2 
+Processing item: Sherwood_etal_2005_Table1 
+Processing item: Isler_etal_2008_Table2 
+Processing item: Isler_etal_2008_Table7 
+Processing item: Isler_etal_2008_TableS1 
+Processing item: Isler_etal_2008_TableS2 
+Processing item: Isler_etal_2008_TableS3 
+Processing item: deSousa_etal_2010_SupTable2 
+Processing item: deSousa_etal_2010_Table1 
+Processing item: Balzeau_etal_2012_Table2 
+Processing item: Balzeau_etal_2012_Table3 
+Processing item: Balzeau_etal_2012_Table5 
+Processing item: Bauernfeind_etal_2013_Table1 
+Processing item: Bauernfeind_etal_2013_Table2 
+Processing item: Bauernfeind_etal_2013_Table3 
+Processing item: Boyer_Harrington_2018_Table1 
+Processing item: Boyer_Harrington_2019_SOMTableS6 
+Processing item: Lyamin_etal_2008_Table1 
+Processing item: Lyamin_etal_2008_Table2 
+Processing item: deSousa_etal_2022_acuityblind.csv 
+Processing item: Walhovd_etal_2011_normativevolumes 
+Processing item: Demirci_etal_2023_Fig.1 
+Processing item: Weibel_etal_2004_Table1 
+Processing item: Weibel_etal_2004_TableA.1 
+Processing item: Zilles_etal_2013_Table1 
+Processing item: Caves_etal_2018_TableS1 
+Processing item: Ashwell__2020_SupplementaryTable 
+Processing item: MacLeod_etal_2003_Table1 
+Processing item: MacLeod_etal_2003_Table2 
+Processing item: Iwaniuk_etal_1999_References 
+Processing item: Iwaniuk_etal_1999_Table1 
+Processing item: Krubitzer_Kaas_1990_Table1 
+Processing item: Manger__2006_Table1 
+Processing item: Koay_etal_1998_Figure6 
+Processing item: Iwaniuk_etal_2001_Table1 
+Processing item: Iwaniuk_etal_2001_Table2 
+Processing item: Iwaniuk_etal_2001_Table3 
+Processing item: Iwaniuk_etal_2001_Table4 
+Processing item: Semendeferi_etal_2002_Table1 
+Processing item: Chen_Wiens_2020_SupplementaryData3 
+Processing item: DeCasien_Higham_2019_ActivityPeriodData 
+Processing item: DeCasien_Higham_2019_BrainRegionDatamm3 
+Processing item: DeCasien_Higham_2019_BrainRegionDataNotes 
+Processing item: DeCasien_Higham_2019_DietData 
+Processing item: DeCasien_Higham_2019_DQIdata 
+Processing item: DeCasien_Higham_2019_GroupSizeDataaggregated 
+Processing item: DeCasien_Higham_2019_GroupSizeDatafrom38 
+Processing item: DeCasien_Higham_2019_SocialSystemData 
+Processing item: DeCasien_Higham_2019_SourceRefsfrom38 
+Processing item: Haarlem_etal_2026_CFFdataset 
+Processing item: Kochiyama_etal_2018_ExtendedDataFigure4 
+Processing item: Kochiyama_etal_2018_ExtendedDataTable1 
+Processing item: Kochiyama_etal_2018_ExtendedDataTable3 
+Processing item: Kochiyama_etal_2018_Figure3A 
+Processing item: Kochiyama_etal_2018_Figure3B 
+Processing item: Kochiyama_etal_2018_Figure3legend 
+Processing item: Kochiyama_etal_2018_FossilSpecimensText 
+Processing item: Kverkova_etal_2018_Table1 
+Processing item: Kverkova_etal_2018_TableS1 
+Processing item: Kverkova_etal_2018_TableS5 
+Processing item: Baker_etal_2025_SupplementaryData1 
+Processing item: Heldstab_etal_2016_TableS1 
+Processing item: Bush_Allman_2004_a_Table2 
+Processing item: Garwicz_etal_2009_TableS1 
+Processing item: Collins_etal_2010_DatasetS1 
+Processing item: Young_etal_2013_b_Table1 
+Processing item: Olkowicz_etal_2016_DatasetS1 
+Processing item: Collins_etal_2016_Table1 
+Processing item: Gabi_etal_2016_TableS1 
+Processing item: Mota_etal_2019_SupplementaryTableS1 
+Processing item: Mackes_etal_2020_subcortical 
+Processing item: Nimchinsky_etal_1999_Table1 
+Processing item: Nimchinsky_etal_1999_Table2 
+Processing item: Winkler_Bryant_2021_Figure1 
+Processing item: deSousa_etal_2009_Table1 
+Processing item: deSousa_etal_2009_Table2 
+Processing item: Karlsen_Pakkenberg_2011_reportedvalues 
+Processing item: Karlsen_Pakkenberg_2011_Table2 
+Processing item: Andelin_etal_2019_Table4 
+Processing item: Burger_etal_2019_SupplementaryDataSD1 
+Processing item: Finlay_etal_2006_Table6.1 
+Processing item: Stimpson_etal_2015_TableS1 
+Processing item: Stimpson_etal_2015_TableS2 
+Processing item: Seymour_etal_2017_TableS1 
+Processing item: HerculanoHouzel__2015_Table1 
+Processing item: HerculanoHouzel__2015_Table2 
+Processing item: Liu_etal_2016_TableS1 
+Processing item: Powell_etal_2017_Dataset1 
+Processing item: Seymour_etal_2019_rspb20192208si002 
+Processing item: Wimberly_etal_2021_MammalGait 
+Processing item: Reader_etal_2011_Data 
+Processing item: Navarrete_etal_2016_Data 
+Processing item: Ruf_Geiser_2015_Table1 
+Processing item: Genoud_etal_2018_TableS2 
+Processing item: Stephan_Pirlot_1970_Table1 
+Processing item: Capellini_etal_2008_sleep-dataFemale 
+Processing item: Capellini_etal_2008_sleep-dataMale 
+Processing item: Capellini_etal_2008_sleep-dataMixed 
+Processing item: deJager_etal_2022_Table1 
+Processing item: Granatosky__2018_TableS1 
+Processing item: Jung_etal_2022_Reportedresults 
+Processing item: Mota_Herculano-Houzel_2015_TableS1 
+Processing item: Rilling_Insel_1998_Table1 
+Processing item: Sherwood_etal_2003_Table1 
+Processing item: Bush_Allman_2003_Table1 
+Processing item: Sherwood_etal_2004_I_Table4 
+Processing item: Sherwood_etal_2004_I_Table5 
+Processing item: Changizi_Shimojo_2005_Table1 
+Processing item: Changizi_Shimojo_2005_Table2 
+Processing item: Changizi_Shimojo_2005_Table3 
+Processing item: Changizi_Shimojo_2005_Table4 
+Processing item: Changizi_Shimojo_2005_Table5 
+Processing item: Reep_etal_2007_Table1 
+Processing item: Campos_Welker_1976_Table1 
+Processing item: Heffner_Masterton_1975_TableI 
+Processing item: Stephan_etal_1981_TableI 
+Processing item: Stephan_etal_1981_TableII 
+Processing item: Stephan_etal_1981_TableIII 
+Processing item: Stephan_etal_1981_TableIV 
+Processing item: Stephan_etal_1981_TableIX 
+Processing item: Stephan_etal_1981_TableV 
+Processing item: Stephan_etal_1981_TableVI 
+Processing item: Stephan_etal_1981_TableVII 
+Processing item: Stephan_etal_1981_TableVIII 
+Processing item: Stephan_etal_1981_TableX 
+Processing item: Stephan_etal_1981_TableXI 
+Processing item: Stephan_etal_1981_TableXII 
+Processing item: Stephan_etal_1981_TableXIII 
+Processing item: Stephan_etal_1981_TableXIV 
+Processing item: Stephan_etal_1981_TableXV 
+Processing item: Stephan_etal_1981_TableXVI 
+Processing item: Matano_etal_1985_b_Table1 
+Processing item: Matano_etal_1985_a_Table1 
+Processing item: Matano__1986_TableI 
+Processing item: Burish_etal_2010_SupplementaryTable1 
+Processing item: Burish_etal_2010_Table1 
+Processing item: Smaers_etal_2011_SupplementaryTable1 
+Processing item: Smaers_etal_2011_SupplementaryTable2 
+Processing item: deSousa_etal_2013_Table1 
+Processing item: Veilleux_Kirk_2014_SupplementalTable1 
+Processing item: HerculanoHouzel_etal_2015_Table1 
+Processing item: HerculanoHouzel_etal_2015_Table2 
+Processing item: HerculanoHouzel_etal_2015_Table3 
+Processing item: HerculanoHouzel_etal_2015_Table4 
+Processing item: HerculanoHouzel_etal_2015_Table5 
+Processing item: Turner_etal_2016_Table1 
+Processing item: DosSantos_etal_2017_TableS1 
+Processing item: Deaner_etal_2006_Table1 
+Processing item: Karbowski__2007_TableS1 
+Processing item: Karbowski__2007_TableS10 
+Processing item: Karbowski__2007_TableS11 
+Processing item: Karbowski__2007_TableS12 
+Processing item: Karbowski__2007_TableS13 
+Processing item: Karbowski__2007_TableS14 
+Processing item: Karbowski__2007_TableS15 
+Processing item: Karbowski__2007_TableS16 
+Processing item: Karbowski__2007_TableS17 
+Processing item: Karbowski__2007_TableS18 
+Processing item: Karbowski__2007_TableS19 
+Processing item: Karbowski__2007_TableS2 
+Processing item: Karbowski__2007_TableS20 
+Processing item: Karbowski__2007_TableS21 
+Processing item: Karbowski__2007_TableS22 
+Processing item: Karbowski__2007_TableS23 
+Processing item: Karbowski__2007_TableS3 
+Processing item: Karbowski__2007_TableS4 
+Processing item: Karbowski__2007_TableS5 
+Processing item: Karbowski__2007_TableS6 
+Processing item: Karbowski__2007_TableS7 
+Processing item: Karbowski__2007_TableS8 
+Processing item: Karbowski__2007_TableS9 
+Processing item: McDowell_etal_2024_Table1 
+Processing item: Seymour_etal_2015_TableS1 
+Processing item: BarbeitoAndrés_etal_2019_celldensity 
+Processing item: BarbeitoAndrés_etal_2019_cellnumber 
+Processing item: BarbeitoAndrés_etal_2019_volumes 
+Processing item: Lewitus_etal_2014_TableS1 
+Processing item: Lewitus_etal_2014_TableS8 
+Processing item: Upham_etal_2019_DNAonlyMCC 
+Processing item: Smaers_etal_2010_Table1 
+Processing item: Morgan_etal_2014_DataS1 
+Processing item: Taniguchi_etal_2022_Findings 
+Processing item: Bortoff_Strick_1993_Table1 
+Processing item: VanEssen_Drury_1997_Table1 
+Processing item: Johansen_etal_2024_Table2 
+Processing item: DosSantos_etal_2020_Table1 
+Processing item: DosSantos_etal_2020_unpublished 
+Processing item: Chaplin_etal_2013_ResultsText 
+Processing item: Matano__1992_Table1 
+Processing item: Matano__1992_Table2 
+Processing item: Matano__1992_Table3 
+Processing item: Matano__1992_Table4 
+Processing item: Wilman_etal_2014_MamFuncDat 
+Processing item: Latimer__1956_Table2 
+Processing item: ManyPrimates__2022_speciespredictors 
+Processing item: Ribeiro_etal_2013_Table1 
+Processing item: HerculanoHouzel_etal_2013_Figure2TopLeft 
+Processing item: HerculanoHouzel_etal_2013_Table1-a 
+Processing item: HerculanoHouzel_etal_2013_Table1-b 
+Processing item: Kazu_etal_2014_Table1 
+Processing item: Kazu_etal_2015_TABLE1 
+Processing item: JardimMesseder_etal_2017_Table1 
+Processing item: Young_etal_2013_Table1 
+Processing item: Lewitus_etal_2013_TableS2partial 
+Processing item: Barger_etal_2014_Table1 
+Processing item: Eagleman_Vaughn_2021_TABLE1 
+Processing item: Smaers_etal_2018_Figure2-data1 
+Processing item: Caspar_etal_2022_Supplementaryfile3 
+Processing item: Caspar_etal_2022_Table1 
+Processing item: Heuer_etal_2023_Data 
+Processing item: Stephan_etal_1970_TABLE1 
+Processing item: Stephan_etal_1970_TABLE2 
+Processing item: Stephan_etal_1970_TABLE3 
+Processing item: Stephan_etal_1970_TABLE4 
+Processing item: Stephan_etal_1970_TABLE5 
+Processing item: Stephan_etal_1970_TABLE6 
+Processing item: Stephan_etal_1970_Tables1-6 
+Processing item: Stephan_etal_1988_TABLE1 
+Processing item: Zilles_Rehkämper_1988_Table12-1 
+Processing item: Zilles_Rehkämper_1988_Table12-2 
+Processing item: Zilles_Rehkämper_1988_Table12-3 
+Processing item: Zilles_Rehkämper_1988_text 
+Processing item: Baron_etal_1996_Table10 
+Processing item: Baron_etal_1996_Table13 
+Processing item: Baron_etal_1996_Table16 
+Processing item: Baron_etal_1996_Table19 
+Processing item: Baron_etal_1996_Table22 
+Processing item: Baron_etal_1996_Table25 
+Processing item: Baron_etal_1996_Table28 
+Processing item: Baron_etal_1996_Table30 
+Processing item: Baron_etal_1996_Table32 
+Processing item: Baron_etal_1996_Table36 
+Processing item: Baron_etal_1996_Table39 
+Processing item: Baron_etal_1996_Table42 
+Processing item: Baron_etal_1996_Table45 
+Processing item: Baron_etal_1996_Table48 
+Processing item: Baron_etal_1996_Table51 
+Processing item: Baron_etal_1996_Table8 
+Processing item: MacLeod__2000_APPENDIXI 
+Processing item: Brodmann__1913_Table1 
+Processing item: Heiss_etal_2004_TABLE1 
+Processing item: Baron_etal_1990_Table1 
+Processing item: Baron_etal_1987_Table1 
+Processing item: Baron_etal_1988_Table1 
+Processing item: Stephan_etal_1987_Table1 
+Processing item: Stephan_etal_1984_Table1 
+Processing item: Frahm_etal_1984_Table1 
+Processing item: Baron_etal_1983_Table1 
+Processing item: Frahm_etal_1982_Table2 
+Processing item: Stephan_etal_1982_Table1 
+Processing item: Frahm_Zilles_1994_Table1 
+Processing item: Frahm_Zilles_1994_Table2 
+Processing item: Frahm_etal_1997_Table1 
+Processing item: Frahm_etal_1998_Table1 
+Processing item: Weaver__2001_NotesforTableA-15 
+Processing item: Weaver__2001_TableA-11 
+Processing item: Weaver__2001_TableA-15 
+Processing item: Kaufman__2004_TableA1 
+Processing item: Kaufman__2004_TableA10 
+Processing item: Kaufman__2004_TableA11 
+Processing item: Kaufman__2004_TableA12 
+Processing item: Kaufman__2004_TableA13 
+Processing item: Kaufman__2004_TableA14 
+Processing item: Kaufman__2004_TableA15 
+Processing item: Kaufman__2004_TableA2 
+Processing item: Kaufman__2004_TableA3 
+Processing item: Kaufman__2004_TableA4 
+Processing item: Kaufman__2004_TableA5 
+Processing item: Kaufman__2004_TableA6 
+Processing item: Kaufman__2004_TableA7 
+Processing item: Kaufman__2004_TableA8 
+Processing item: Kaufman__2004_TableA9 
+Warning messages:
+1: Skipping '10.1073%2Fpnas.1911264116_ERABIS.tsv': no matching 'Item name' found in __ReadMe.xlsx for its 'Item encoded'. 
+2: Skipping '10.1093%2Fcercor%2Fbhr033_authordata.tsv': no matching 'Item name' found in __ReadMe.xlsx for its 'Item encoded'. 
+3: Skipping '10.1159%2F000121494_TableI.tsv': no matching 'Item name' found in __ReadMe.xlsx for its 'Item encoded'. 
+4: In scan(file = file, what = what, sep = sep, quote = quote, dec = dec,  :
+  EOF within quoted string
+<environment: R_GlobalEnv>
+Error: `path` does not exist: ‘/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Mammalian M1 Evo - Species metadata.xlsx’
+Execution halted","2026-09-19 00:28:46.752054","2026-09-19 00:28:49.945612",3.19355797767639
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_cellcounts/cellcounts_compiled.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error in library(taxizedb) : there is no package called ‘taxizedb’
+Execution halted","2026-09-19 00:29:43.266174","2026-09-19 00:29:45.128193",1.86201882362366
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_item_name_resolution.R","FAILED","registry Item names: 440   |   TSVs on disk: 345   |   NA.tsv present: no
 
 __merging_behaviour/behaviour_compiled.R                     0 item name(s) referenced   OK
 __merging_body_ecology/body_ecology_compiled.R               0 item name(s) referenced   OK
@@ -29,50 +449,14 @@ __merging_sleep/sleep_compiled.R                             4 item name(s) refe
 __merging_volumes/volumes_compiled_select.R                 34 item name(s) referenced   OK
 __merging_volumes/volumes_compiled.R                        67 item name(s) referenced   OK
 
-orphaned TSVs (on disk, claimed by no registry row): 5
-      10.1016%2Fj.neurobiolaging.2009.05.013_normative.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+orphaned TSVs (on disk, claimed by no registry row): 3
       10.1073%2Fpnas.1911264116_ERABIS.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
       10.1093%2Fcercor%2Fbhr033_authordata.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
       10.1159%2F000121494_TableI.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.6084%2Fm9.figshare.c.3899422.v1_Dataset1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
 rows with a citation but no Item name (need _tools/file_list.R): 0
 
 all referenced item names resolve to a TSV on disk.
-run _tools/restore_registry_rows.R (adding any new row to its ROWS list), then _tools/file_list.R.","2026-09-18 17:48:19.093095","2026-09-18 17:48:19.89586",0.802764892578125
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/find_csv_tsv_creators.R","TIMEOUT","
-Execution halted","2026-09-18 17:48:20.521466","2026-09-18 17:53:20.572918",300.051451921463
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Nimchinsky_etal_1999/Nimchinsky_etal_1999_extract_snapshot.R","FAILED","fetching: https://pmc.ncbi.nlm.nih.gov/articles/PMC21853/
-Error in read_tbl(doc, ""section#T1 table"") : 
-  table not found on the page: section#T1 table
-Execution halted","2026-09-18 18:18:34.22642","2026-09-18 18:18:35.085811",0.8593909740448
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/vertebrate_opsin_explorer/app.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.2.1     ✔ readr     2.2.0
-✔ forcats   1.0.1     ✔ stringr   1.6.0
-✔ ggplot2   4.0.3     ✔ tibble    3.3.1
-✔ lubridate 1.9.5     ✔ tidyr     1.3.2
-✔ purrr     1.2.2     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
-Error in library(ggtree) : there is no package called ‘ggtree’
-Execution halted","2026-09-18 18:19:52.182954","2026-09-18 18:19:53.275503",1.09254884719849
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/vertebrate_opsin_explorer/setup_data.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.2.1     ✔ readr     2.2.0
-✔ forcats   1.0.1     ✔ stringr   1.6.0
-✔ ggplot2   4.0.3     ✔ tibble    3.3.1
-✔ lubridate 1.9.5     ✔ tidyr     1.3.2
-✔ purrr     1.2.2     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
-
-Attaching package: ‘ape’
-
-The following object is masked from ‘package:dplyr’:
-
-    where
-
-Error in library(ggtree) : there is no package called ‘ggtree’
-Execution halted","2026-09-18 18:19:53.278708","2026-09-18 18:19:54.263249",0.984540939331055
+run _tools/restore_registry_rows.R (adding any new row to its ROWS list), then _tools/file_list.R.","2026-09-19 00:30:36.190986","2026-09-19 00:30:37.542923",1.35193705558777
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_keys/resolve_taxonomy.R","FAILED","Error in library(rentrez) : there is no package called ‘rentrez’
+Calls: suppressPackageStartupMessages -> withCallingHandlers -> library
+Execution halted","2026-09-19 00:33:20.147595","2026-09-19 00:33:21.547417",1.39982199668884

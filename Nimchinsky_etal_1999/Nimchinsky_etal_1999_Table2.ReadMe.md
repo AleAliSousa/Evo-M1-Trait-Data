@@ -4,6 +4,7 @@ Full title (`__ReadMe.xlsx`): **"Table 2. Volumes of layer V spindle and pyramid
 
 ## Source->Snapshot
 Open-access HTML, `https://pmc.ncbi.nlm.nih.gov/articles/PMC21853/`, `section#T2` (snapshot HOWTO method 2). `Nimchinsky_etal_1999_extract_snapshot.R` -> `..._Table2_snapshot.csv`: 5 rows, flat layout, cells verbatim including the thousands commas, the `±`, and the significance markers (`6,648 ± 2,667*†`).
+Frozen page: `Nimchinsky_etal_1999_PMC21853.html` (PMC HTML as served 18 September 2026; both tables and the bold verified identical to the snapshots). The script prefers this local copy, so re-runs are offline; it was added after the 2026-09-18 sweep failed on a transient non-article response from PMC.
 
 Transcription: read from the PMC HTML by the script (no table values are typed into it) on 10 September 2026; the script was written by Claude (AI assistant) and its output was checked cell by cell against a page image of the printed table supplied by M. Windley. Re-running the script re-reads the page and stops rather than overwrite if the frozen copy has drifted.
 

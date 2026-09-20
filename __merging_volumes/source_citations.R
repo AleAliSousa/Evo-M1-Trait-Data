@@ -34,8 +34,12 @@ source_citations <- function(base, sources, registry = NULL) {
   if (is.null(registry))
     registry <- readxl::read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
 
-  # same normalizer as read_item(): case- and space-insensitive item-name match
-  norm <- function(x) tolower(gsub(" ", "", as.character(x)))
+  # same normalizer as read_item(): case- and space-insensitive item-name match.
+  # useBytes = TRUE: under the C locale (e.g. a non-interactive Rscript with no LANG
+  # set) gsub() throws "input string ... is invalid" trying to validate a source name
+  # containing non-ASCII characters (e.g. "Zilles_Rehk\u00e4mper_1988...") against the C
+  # charset; useBytes skips that locale-dependent validation and matches literal bytes.
+  norm <- function(x) tolower(gsub(" ", "", as.character(x), useBytes = TRUE))
   # registry column names carry trailing spaces in places; fetch defensively and
   # return NA rather than erroring, so a renamed column degrades to a blank cell
   # instead of breaking the merge.

@@ -180,7 +180,11 @@ ASSIGN = {
     ("Sherwood_etal_2003", "brain_weight_g"): A,
     ("Lewitus_etal_2014", "Brain_weight_g"): A,
     ("Lewitus_etal_2013", "Brain_weight_g"): A,
-    ("Manger__2006", "brain_mass_g"): A,
+    # NB: key was "brain_mass_g" until the harvested column was confirmed to be
+    # "brain_mass_mg" (the project-unit column; see reference_tables definitions
+    # file -- "printed in g; x1000 in the .R for the project unit"), so the old
+    # key never matched and this basis silently never fired. Fixed 2026-09-19.
+    ("Manger__2006", "brain_mass_mg"): A,
     ("Garwicz_etal_2009", "Absolute Brain Mass (g)"): A,
     ("Armstrong__1979", "brain_mass_g"): A,
     ("Stimpson_etal_2015", "brain_mass_g"): A,
@@ -346,7 +350,7 @@ RESOLVED = {
     ("Changizi_Shimojo_2005", "brain_mass_g"):
         ("mass", "mass_compilation_unspecified", "unknown", "unknown", "unknown",
          "unknown", "mass_measured", True, "quoted", P),
-    ("Manger__2006", "brain_mass_g"):
+    ("Manger__2006", "brain_mass_mg"):
         ("mass", "mass_compilation_unspecified", "unknown", "unknown", "unknown",
          "unknown", "mass_measured", True, "quoted", T),
     ("Baron_etal_1996", "brain_weight_mg"):
@@ -361,6 +365,18 @@ RESOLVED = {
     ("Sherwood_etal_2003", "brain_weight_g"):
         ("mass", "mass_compilation_unspecified", "unknown", "unknown", "unknown",
          "unknown", "mass_measured", True, "quoted", C),
+    # secondary column: table footnote states these species averages were not measured in
+    # this study but taken from Marino et al. (2004) and Hof et al. (2005) -- a compilation
+    # of unstated fixation state, same class as the other mass_compilation_unspecified rows.
+    ("Butti_etal_2009", "brain_mass_mg"):
+        ("mass", "mass_compilation_unspecified", "unknown", "unknown", "unknown",
+         "unknown", "mass_measured", True, "quoted", D),
+    # Table 12-1 "Brain and Body Weights from Literature" compiles orang-utan values from
+    # multiple 19th/20th-century sources; the chapter text explicitly flags uncertainty
+    # about whether the compiled brain weights are fresh -- textbook case for "unspecified".
+    ("Zilles_Rehkämper_1988", "Brain_weight_g"):
+        ("mass", "mass_compilation_unspecified", "unknown", "unknown", "unknown",
+         "unknown", "mass_measured", True, "quoted", P),
     # ---- volume columns ---------------------------------------------------
     ("Ashwell__2020", "brain_volume_mm3"):
         ("volume", "volume_shrinkage_corrected", "shrinkage_corrected", "unknown",

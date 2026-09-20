@@ -2,7 +2,7 @@
 Bush EC, Allman JM (2004). *Three-dimensional structure and evolution of primate primary visual cortex.* Anat Rec A 281(1):1088-1094.
 Full title (`__ReadMe.xlsx`): **"TABLE 1. Measurements in V1 and the rest of the brain for a sample of primates"**
 ## Source->Snapshot
-PDF p.3 (text layer). `..._TABLE1_snapshot.csv` = 21 species x V1G, LGN, V1surf, Hmerid, Wb, NeoW, NeoG.
+PDF p.3 (text layer). `..._TABLE1_snapshot.csv` = 22 species x V1G, LGN, V1surf, Hmerid, Wb, NeoW, NeoG (Propithecus verreauxi, the paper's last row, had been dropped from the snapshot; restored from `bush_allman_2004b.xlsx` Table 1).
 ## Data readable
 `..._TABLE1.R` -> `..._TABLE1.csv`/`.tsv`: species harmonized; columns renamed (V1_grey_cm3, LGN_cm3, V1_surface_cm2, horizontal_meridian_mm, whole_brain_cm3, neocortex_white/grey_cm3).
 ## Comparisons (comparison copy/)

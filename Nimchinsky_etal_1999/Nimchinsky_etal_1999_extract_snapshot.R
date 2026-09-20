@@ -27,6 +27,15 @@ library(readxl)
 
 options(stringsAsFactors = FALSE)
 
+## The live page (and this script's own literal non-breaking-space character) uses
+## non-ASCII whitespace (NBSP, EM SPACE tree indentation, THIN SPACE around "+/-"). Under
+## the C locale, gsub()/grepl() on a literal multibyte pattern -- or [[:space:]] trying to
+## classify one -- errors or silently fails to match. Try common UTF-8 locale names; a
+## failure here is non-fatal (a later gsub will raise a clearer error if it actually matters).
+for (loc in c("en_US.UTF-8", "en_GB.UTF-8", "C.UTF-8", "UTF-8")) {
+  if (isTRUE(tryCatch(Sys.setlocale("LC_CTYPE", loc), error = function(e) FALSE) == loc)) break
+}
+
 ## ---- paths: self-contained (Rscript or RStudio) ----
 .sp <- local({
   a <- grep("^--file=", commandArgs(FALSE), value = TRUE)
@@ -47,12 +56,35 @@ t1_xlsx   <- "Nimchinsky_etal_1999_Table1_snapshot.xlsx"
 t2_csv    <- "Nimchinsky_etal_1999_Table2_snapshot.csv"
 
 ## ---- 1. get the page (local copy preferred, so the build survives the URL) ----
+## Sweep 2026-09-18 failed here with "table not found on the page: section#T1 table" while the
+## live page still carried the section (verified the same evening): PMC had answered the
+## unattended request with a non-article page (rate-limit / bot interstitial). read_html() on a
+## URL swallows the HTTP status, so that page parsed "fine" and only the selector failed. Now:
+## fetch with an explicit status check, retry once, and FREEZE the page as `local_html` on the
+## first good fetch so every later run is offline and deterministic (snapshot HOWTO method 2).
+fetch_html <- function(url, tries = 2L) {
+  for (i in seq_len(tries)) {
+    r <- tryCatch(curl::curl_fetch_memory(url), error = function(e) NULL)
+    if (!is.null(r) && r$status_code == 200L) {
+      html <- rawToChar(r$content); Encoding(html) <- "UTF-8"
+      if (grepl('id="T1"', html, fixed = TRUE)) return(html)
+      message("  fetched page has no Table 1 section (non-article response from PMC)")
+    } else message("  HTTP ", if (is.null(r)) "error" else r$status_code, " from PMC")
+    if (i < tries) Sys.sleep(5)
+  }
+  stop("could not fetch the article page from ", url,
+       "\n  PMC rate-limits unattended clients. Re-run later, or save the page from a browser as\n  ",
+       local_html, " next to this script (the local copy is always preferred).", call. = FALSE)
+}
 doc <- if (file.exists(local_html)) {
   message("reading local copy: ", local_html)
   read_html(local_html, encoding = "UTF-8")
 } else {
   message("fetching: ", src_url)
-  read_html(src_url)
+  html <- fetch_html(src_url)
+  writeLines(html, local_html, useBytes = TRUE)
+  message("frozen page written: ", local_html)
+  read_html(html)
 }
 
 ## ---- 2. read a table element into text + bold flags, nothing else ----
@@ -64,7 +96,7 @@ read_tbl <- function(doc, css) {
     cells <- html_elements(r, "td, th")
     txt <- vapply(cells, function(c) {
       s <- html_text2(c)
-      s <- gsub(" ", " ", s)          # non-breaking space -> space
+      s <- gsub("\u00a0", " ", s)          # non-breaking space -> space
       trimws(gsub("[[:space:]]+", " ", s))
     }, character(1))
     bold <- vapply(cells, function(c) length(html_elements(c, "b, strong")) > 0, logical(1))
@@ -85,6 +117,9 @@ stopifnot(nrow(t1$txt) == 49L)                       # header + 48 printed rows
 
 body_txt  <- t1$txt[-1, , drop = FALSE]
 body_bold <- t1$bold[-1, , drop = FALSE]
+# read_tbl() pads short rows (clade/family header rows with only 1 printed cell) with
+# "" via pad(), not NA, so nzchar() (FALSE for "") is the right species/non-species test
+# here -- confirmed against a fresh run, not assumed.
 is_species <- nzchar(body_txt[, 2])
 stopifnot(sum(is_species) == 28L)                    # "28 primate species" (Specimens)
 

@@ -37,7 +37,6 @@ FACTOR <- c(g = 1, kg = 1000, mg = 0.001)
 
 read_csv <- function(p) read.csv(p, stringsAsFactors = FALSE, check.names = FALSE)
 manifest <- read_csv(file.path(repo, "__ShinyApp", "data", "source_manifest.csv"))
-man_by_file <- setNames(seq_len(nrow(manifest)), manifest$file)
 xwalk <- read_csv(file.path(repo, "_keys", "team_grouping_crosswalk.csv"))
 team_ay <- list()
 for (i in seq_len(nrow(xwalk))) {
@@ -103,7 +102,14 @@ for (path in files) {
   # "values must be type 'character', but FUN(X[[1]]) result is type 'logical'".
   vals <- suppressWarnings(as.numeric(vapply(rows[-1], function(r) if (length(r)>=ci) gsub('"',"",r[ci]) else NA_character_, character(1))))
   vals <- vals[!is.na(vals)]; if (!length(vals)) next
-  mi <- man_by_file[[fn]]; author <- if (!is.null(mi)) manifest$first_author[mi] else ""; year <- if (!is.null(mi)) as.character(manifest$year[mi]) else ""
+  ## match(), not man_by_file[[fn]]: `[[` on a NAMED ATOMIC vector errors with "subscript out
+  ## of bounds" for a name that is absent (only lists return NULL), so the first public TSV
+  ## not yet listed in __ShinyApp/data/source_manifest.csv halted the whole build
+  ## (sweep 2026-09-18). A TSV without a manifest row is legitimate -- the manifest is an
+  ## app export that lags new sources -- so it falls through to blank author/year as intended.
+  mi <- match(fn, manifest$file)
+  author <- if (!is.na(mi)) manifest$first_author[mi] else ""
+  year   <- if (!is.na(mi)) as.character(manifest$year[mi]) else ""
   targets[[length(targets)+1L]] <- list(fn=fn, rows=rows, headers=headers, col=col, ci=ci, author=author, year=year)
   if (is.na(named_unit(col))) { k <- paste(tolower(author), norm(col)); gmax[[k]] <- max(gmax[[k]] %||% 0, max(vals)) }
 }

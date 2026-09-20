@@ -5,6 +5,35 @@ Pipeline for compiling the comparative brain **volume** dataset — the counterp
 only**: volumes from sectioned, stained, shrinkage-corrected brains. (Cell-count /
 optical-fractionator data live in `../__merging_cellcounts/`.)
 
+## Companion output: areal (laminar) proportions are NOT mm3 volumes
+
+`volumes_areal_proportions_zilles1986.csv` holds `Zilles_etal_1986_Table1` — "Volumetric
+Proportions of the Different Areas and Layers" for the posterior cingulate cortex (areas 29, 30,
+23, 31; molecular / outer-main / granular-where-present / inner-main laminae; 17 species). The
+source file `Zilles_etal_1986/Zilles_etal_1986_Table1.csv` was re-verified cell-by-cell against
+the source PDF (Table 1, p.519) and is an exact transcription match; no corrections were needed.
+
+Despite the paper's own title, every value is a **percent-of-area laminar proportion** (each
+area's four/three layer percentages sum to ~100), not an absolute mm3 volume — there is no total
+area volume in the paper to convert a percentage into one. That breaks this folder's "one data
+type only" rule for `volumes_long.csv`/`volumes_wide.csv` (which are on an mm3 scale and feed the
+Tier 1/Tier 2 averaging logic in `volumes_compiled.R`), so rather than injecting percentages into
+those files, Table 1 is kept as this separate, clearly-labeled long-format CSV:
+`Species, species_as_published, area_as_published, layer, areal_proportion_pct, n_specimens,
+source, source_location, data_role` (238 rows = 17 species x 14 area/layer cells:
+3 layers x areas 29/30 + 4 layers x areas 23/31). `n_specimens` is per the paper's Materials and
+Methods (2 for *Perodicticus potto*, *Callithrix jacchus*, *Macaca mulatta*, *Papio* sp.; 3 for
+*Cercopithecus mitis*; 1 otherwise; `Papio sp.` is kept genus-level as published). This file is
+not read by `volumes_compiled.R` and does not participate in Tier 1/Tier 2 averaging — it is a
+standalone reference table for anyone specifically wanting the posterior-cingulate laminar-
+proportion data. The companion GLI values from the same paper (Table 2) are merged separately in
+`../__merging_GLI/` (see that folder's README).
+
+Per repo convention, `__ReadMe.xlsx` registry rows for both `Zilles_etal_1986_Table1` and
+`_Table2` are staged (not written directly to the workbook) in
+`Zilles_etal_1986/__ReadMe_rows_to_add_Zilles_etal_1986.csv` — the owner should paste each as
+values into the first empty `Sheet1` row and run `_tools/file_list.R`.
+
 ## Teams and the two-tier resolution rule
 
 By analogy to the cell-count merge (Herculano-Houzel updating her own collection →
@@ -84,7 +113,10 @@ shrinkage-corrected, and multiplied by two by the authors (right side for 28 spe
 *Eumetopias jubatus*). All 11 regional columns therefore remain unsuffixed, are used exactly as
 published, and receive `published_bilateral_estimate` provenance. Reep's diencephalon excludes
 globus pallidus while its striatum includes it, so those two columns use definition-specific terms
-rather than colliding with Stephan-style diencephalon and striatum.
+rather than colliding with Stephan-style diencephalon and striatum. Zilles & Rehkämper (1988)'s Pongo
+data has the same split in the same direction, but its term map has not yet been switched onto the
+definition-specific names — see `Zilles_Pongo_Pallidum_Striatum_FINDINGS.md` for the evidence and the
+fix.
 
 **Bauernfeind is the other case, not the same one.** Bauernfeind 2013 did *not* double anything:
 Table 1 is the measured left insula and Table 2 the measured right, so both are `doubling = none`.

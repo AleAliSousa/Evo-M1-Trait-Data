@@ -12,6 +12,22 @@
 ##   TIMEOUT  exceeded TIMEOUT_SEC (exit 124)
 ##   SKIPPED  matched SKIP_PATTERNS -- never executed (see `error` for the reason)
 
+## Repo paths/filenames contain non-ASCII characters (e.g. "BarbeitoAndr\u00e9s_etal_2019").
+## Under the C locale (the default for a non-interactive Rscript with no LANG/LC_ALL set, as
+## under some CI/sandbox runners) system2() cannot translate a shQuote()'d path containing one
+## to UTF-8 and the whole sweep halts (not just the one script). Sys.setlocale() alone is not
+## enough: each child Rscript this runner spawns via system2() starts its own process and
+## inherits locale from the environment, not from this parent session's C-library state -- so
+## the UTF-8 locale is set both ways: Sys.setlocale() for this process's own string handling,
+## and Sys.setenv(LANG=, LC_ALL=) so every spawned child sees it too. A failure here is
+## non-fatal (per-script issues would surface individually downstream).
+for (.loc in c("en_US.UTF-8", "en_GB.UTF-8", "C.UTF-8", "UTF-8")) {
+  if (isTRUE(tryCatch(Sys.setlocale("LC_CTYPE", .loc), error = function(e) FALSE) == .loc)) {
+    Sys.setenv(LANG = .loc, LC_ALL = .loc)
+    break
+  }
+}
+
 ## project root = nearest ancestor containing __ReadMe.xlsx (clone-safe; Rscript/source/RStudio)
 .script_path <- local({
   argv <- commandArgs(FALSE)
@@ -67,6 +83,17 @@ SKIP_PATTERNS <- c(
   ## app's tree already exists (_keys/mammal_tree.nwk, built by __merging_trees/), so this runs
   ## only when someone is deliberately rebuilding it. See __ShinyApp/PHYLO_SETUP.md.
   "(^|/)combine_trees\\.R$"     = "optional tool; needs hand-supplied published source trees",
+  ## Same class: an on-demand QC differ whose reference table is an EXTERNAL hand-assembled CSV
+  ## kept outside the repo (path in the script / EVOM1_REFERENCE_CSV). Without it the script
+  ## can only hit its input guard, which is what the 2026-09-18 sweep logged as FAILED.
+  "^__merging_volumes/compare_to_reference\\.R$" =
+    "optional QC differ; needs an external hand-supplied reference CSV (EVOM1_REFERENCE_CSV)",
+  ## Contributed Shiny app (VPOD opsin explorer) with its one-time data setup. app.R ends in
+  ## shinyApp() like __ShinyApp/app.R; setup_data.R needs Bioconductor ggtree plus rtrees and
+  ## piggyback (GitHub-release downloads) and its VPOD input is not in the repo. Both are run
+  ## deliberately from their own folder, never in a sweep. (Added 2026-09-18.)
+  "^vertebrate_opsin_explorer/" =
+    "contributed Shiny app + its data setup; needs ggtree/rtrees/piggyback and runs from its own folder",
   ## DESTRUCTIVE ON RE-RUN. It writes Jacobs/Johnson/Peruffo into __ReadMe.xlsx rows
   ## 299, 300 and 301 by HARD-CODED number, and Sheet1 re-sorts itself -- so on any
   ## sweep after a re-sort it overwrites whatever three sources have landed there.

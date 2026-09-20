@@ -61,6 +61,7 @@ simply not been extracted into this repo yet. Both have now been built as new pr
 | `Semendeferi_etal_1998_TABLE4` (renamed from `..._TABLE4_GLI` to match the registry row already added to `__ReadMe.xlsx`) | 13 | human, chimpanzee, bonobo, gorilla, orangutan, gibbon, macaque (*Macaca mulatta*, "rhesus monkey") | species-level (one right hemisphere/species; SD = across measurement locations, not specimens) | primary |
 | `Semendeferi_etal_2001_TABLE3` (renamed, same reason) | 10 | same 7 species as the 1998 companion paper | species-level (one right hemisphere/species) | primary |
 | `Sherwood_etal_2004_I_Table4` (**pre-existing item, already FINISHED before this session** -- folded in this pass; note this is the `Sherwood_etal_2004_I` folder, a *different* item from the plain `Sherwood_etal_2004` volumetric item checked in the gap-check above) | 4 / M1 | macaque (*Macaca fascicularis*), *Papio anubis*, orangutan, gorilla, chimpanzee, human | species-level, agranular cortex (layers II/III/V/VI only -- **no granular/layer-IV stratum**, `GLI_pct_mean_granular = NA` for every row) | primary |
+| `Zilles_etal_1986_Table2` | 29, 30, 23, 31 (posterior cingulate: allocortex -> proisocortex -> isocortex) | 17 species, prosimian through human (verified transcription-exact against the source PDF, Table 2, p.521) | species-level; O (outer main lamina) mapped to `supragranular`, I (inner main lamina) to `infragranular`, G (granular, areas 23/31 only) to `granular`; areas 29/30 are allo-/proisocortex with **no granular layer** (`GLI_pct_mean_granular = NA`); no `all_layers` mean is printed in Table 2, so that stratum is absent for every Zilles row; `n_specimens` from the paper's Materials and Methods (2 for *Perodicticus potto*, *Callithrix jacchus*, *Macaca mulatta*, *Papio* sp.; 3 for *Cercopithecus mitis*; 1 otherwise) | primary |
 
 ## Update: Sherwood and de Sousa, added on request
 
@@ -86,9 +87,10 @@ Sherwood, and de Sousa, re-checked both:
 
 ## Outputs
 
-- `GLI_long.csv` — **166 rows** (148 from the three founder/Semendeferi sources + 18 from
-  Sherwood_etal_2004_I): one row per (species, specimen, area, stratum), reshaped from the
-  three sources' wide `GLI_pct_mean_*` columns into long `stratum` values
+- `GLI_long.csv` — **336 rows** (148 from the three founder/Semendeferi sources + 18 from
+  Sherwood_etal_2004_I + 170 from Zilles_etal_1986_Table2 [17 species x (2 strata for areas
+  29/30 + 3 strata for areas 23/31) = 17 x 10]): one row per (species, specimen, area, stratum),
+  reshaped from each source's wide `GLI_pct_mean_*` columns into long `stratum` values
   (`all_layers`/`supragranular`/`granular`/`infragranular`). Carries `Species`,
   `species_as_published`, `specimen_as_published`, `area_as_published`, `n_specimens`, `stratum`,
   `GLI_pct`, `source`, `source_role` (`founder` vs `added_this_pass`), `source_location`,
@@ -131,6 +133,24 @@ Sherwood, and de Sousa, re-checked both:
    values into the first empty `Sheet1` row and run `_tools/file_list.R`.
 6. **No public TSV has been written yet** for the two new items — that step requires the workbook's
    `Item encoded` lookup, which in turn requires the registry rows above to be inserted first.
+
+## Update: Zilles et al. 1986 (posterior cingulate), added on request
+
+`Zilles_etal_1986_Table1.csv` and `Zilles_etal_1986_Table2.csv` were re-verified cell-by-cell
+against the source PDF (Table 1, p.519; Table 2, p.521) -- both are exact transcription matches,
+so no corrections to either file were needed. Table 2 (GLI) is folded into `GLI_long.csv` as
+described in the sources table above. Table 1 ("Volumetric Proportions of the Different Areas and
+Layers") reports **percent areal proportions**, not a GLI value, and is out of scope for this
+merge; it is instead added to `__merging_volumes` as its own labeled companion output (see that
+folder's README) rather than mixed into `GLI_long.csv`.
+
+7. **Zilles et al. 1986 adds a fifth region family (posterior cingulate areas 29/30/23/31)** and
+   the first allocortex/proisocortex GLI values in this merge (areas 29 and 30 respectively) --
+   all prior sources are strict isocortex. Cross-area, cross-source GLI comparisons involving
+   areas 29/30 should account for this: the paper's own finding is that GLI falls from allo- to
+   isocortex in the outer main lamina and rises in the inner main lamina (their Fig. 6), a trend
+   that is about allocortex-vs-isocortex organization, not directly comparable to the
+   area-13/area-10/area-44/45/M1 isocortex-only comparisons elsewhere in this merge.
 
 ## Rebuild
 

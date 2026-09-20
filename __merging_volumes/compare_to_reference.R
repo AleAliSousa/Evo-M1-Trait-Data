@@ -25,8 +25,15 @@
 library(tidyverse)
 
 ## ---- options ---------------------------------------------------------------------------------
-reference_csv <- "~/Library/CloudStorage/OneDrive-AllenInstitute/test_qc/qc_orig_stephan_primates/data_raw/Stephan_primates.csv"
-reference_name <- "Stephan_primates.csv"
+# The reference table is an EXTERNAL, hand-assembled file that lives outside the repo (it is a
+# QC input, not source material), so its location is machine-specific. Set it here, or -- without
+# editing the script -- via the environment variable EVOM1_REFERENCE_CSV. The last known
+# location is kept as the default; the guard below says exactly what to do when it is absent.
+# (This is also why run_all_scripts_v2.R skip-lists this script: an unattended sweep on a
+# machine without the file can only ever hit that guard and log a false FAILED.)
+reference_csv <- Sys.getenv("EVOM1_REFERENCE_CSV",
+  "~/Library/CloudStorage/OneDrive-AllenInstitute/test_qc/qc_orig_stephan_primates/data_raw/Stephan_primates.csv")
+reference_name <- basename(reference_csv)
 merge_suffix   <- "_select"          # which merge to compare against: "" (canonical) or "_select"
 # Where the merge output lives. Default "" = this script's own folder, i.e. the __merging_volumes
 # copy that volumes_compiled_select.R actually writes. Set it only if you deliberately want to
@@ -60,7 +67,10 @@ mpath   <- function(stem) file.path(mdir, out_csv(stem))
 
 reference_csv <- path.expand(reference_csv)
 if (!file.exists(reference_csv))
-  stop("reference_csv not found: ", reference_csv, call. = FALSE)
+  stop("reference_csv not found: ", reference_csv,
+       "\n  This is an external QC table kept outside the repo. Either put the file there, or point",
+       "\n  at it with  EVOM1_REFERENCE_CSV=/path/to/reference.csv Rscript compare_to_reference.R",
+       "\n  (or edit `reference_csv` at the top of this script).", call. = FALSE)
 if (!file.exists(mpath("volumes_wide")))
   stop("merge output not found: ", mpath("volumes_wide"),
        " — run volumes_compiled_select.R first, or set merge_dir.", call. = FALSE)

@@ -32,8 +32,11 @@ lowland), Macaca fascicularis (long-tailed macaque). Printed labels preserved in
 Table 3 (PDF) → **`Barger_etal_2012_Table3_snapshot.xlsx`** (sheet "Table3"; "mean (SD)" ×10⁶ as
 printed) → `Barger_etal_2012_Table3.R` → **`Barger_etal_2012_Table3.csv`** (use this) + the public
 TSV `__Public/comparative-data/10.1002%2Fcne.23118_Table3.tsv`. Columns:
-`reference_tables/…_definitions.csv`. (Table 1 = specimen list; Table 2 = stereology grid sizes,
-methods only, not extracted.)
+**`reference_tables/Barger_etal_2012_definitions.csv`** — one data dictionary for the whole paper
+(bare, no table number), since Table 3 is the only extracted table that introduces anatomical/measure
+variables; Table 1 is a specimen list with no anatomy to define, and Table 2 (stereology grid sizes)
+is methods only and not extracted. Each row's `Reference` still names the specific Item
+(`Barger_etal_2012_Table3`) that the variable came from.
 
 Units: neuron numbers stored as **absolute counts** (Table 3 ×10⁶ × 1,000,000).
 

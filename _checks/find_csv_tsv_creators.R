@@ -115,7 +115,7 @@ classify_hit <- function(lines, hit_lines, file_name) {
 
   if (any(grepl(paste(writer_patterns, collapse = "|"), nearby))) return("likely writer")
   if (any(grepl(paste(reader_patterns, collapse = "|"), nearby))) return("likely reader")
-  if (any(grepl(regex_escape(file_name), nearby, fixed = FALSE))) return("mentions exact filename")
+  if (any(grepl(regex_escape(file_name), nearby, fixed = FALSE, useBytes = TRUE))) return("mentions exact filename")
   "mentions related name"
 }
 
@@ -125,6 +125,16 @@ classify_hit <- function(lines, hit_lines, file_name) {
 results <- list()
 k <- 0L
 
+## Read every script ONCE, up front. The loop below is data_files x r_scripts (~1500 x ~420 =
+## ~630k pairs); the previous version called readLines() inside the inner loop, i.e. re-read
+## every script from the OneDrive mount once per data file, and the sweep's 300 s limit was hit
+## (TIMEOUT, 2026-09-18). One blob per script also lets a cheap whole-file grepl() skip the
+## scripts that cannot match before any line-level work is done.
+script_lines <- lapply(r_scripts, read_text)
+script_blob  <- vapply(script_lines, paste, character(1), collapse = "\n")
+script_rel   <- sub(paste0("^", regex_escape(project_root), "/?"), "", normalizePath(r_scripts))
+has_text     <- lengths(script_lines) > 0L
+
 for (data_file in data_files) {
   file_name <- basename(data_file)
   file_stem <- sub("\\.(csv|tsv)$", "", file_name, ignore.case = TRUE)
@@ -133,12 +143,17 @@ for (data_file in data_files) {
   exact_pat <- regex_escape(file_name)
   stem_pat  <- regex_escape(file_stem)
 
-  for (script in r_scripts) {
-    lines <- read_text(script)
-    if (!length(lines)) next
+  ## a script that does not mention the stem anywhere cannot match the filename either
+    # useBytes = TRUE: stem_pat/exact_pat come from regex_escape() on filenames that can
+  # contain non-ASCII (e.g. "BarbeitoAndr\u00e9s..."); under the C locale grepl() otherwise
+  # throws "invalid regular expression" trying to interpret the pattern as multibyte text.
+  candidates <- which(has_text & grepl(stem_pat, script_blob, useBytes = TRUE))
 
-    exact_hits <- grep(exact_pat, lines)
-    stem_hits  <- grep(stem_pat, lines)
+  for (si in candidates) {
+    lines <- script_lines[[si]]
+
+    exact_hits <- grep(exact_pat, lines, useBytes = TRUE)
+    stem_hits  <- grep(stem_pat, lines, useBytes = TRUE)
     hit_lines  <- sort(unique(c(exact_hits, stem_hits)))
 
     if (!length(hit_lines)) next
@@ -147,7 +162,7 @@ for (data_file in data_files) {
     results[[k]] <- data.frame(
       data_file = rel_data_file,
       data_filename = file_name,
-      candidate_script = sub(paste0("^", regex_escape(project_root), "/?"), "", normalizePath(script)),
+      candidate_script = script_rel[si],
       match_type = classify_hit(lines, hit_lines, file_name),
       exact_filename_match = length(exact_hits) > 0L,
       stem_match = length(stem_hits) > 0L,

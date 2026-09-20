@@ -7,6 +7,9 @@ Sources (all data_role = primary):
   - Semendeferi_etal_2001_TABLE3.csv            (area 10, species-level)
   - Sherwood_etal_2004_I_Table4.csv             (area 4/M1, species-level, agranular
                                                   -- no granular-layer stratum)
+  - Zilles_etal_1986_Table2.csv                 (posterior cingulate areas 29/30/23/31,
+                                                  species-level, 17 species; areas 29/30
+                                                  are agranular -- no granular-layer stratum)
 
 Run from repo root:  python __merging_GLI/GLI_compiled.py
 """
@@ -55,7 +58,46 @@ sherwood_wide = pd.DataFrame({
 sherwood_wide["source"] = "Sherwood_etal_2004_I_Table4"
 sherwood_wide["source_role"] = "added_this_pass"
 
-wide = pd.concat([pg, sem98, sem01, sherwood_wide], ignore_index=True)
+## Zilles et al. 1986 Table 2: grey-level indices for outer-main (O), granular (G, areas 23/31
+## only), and inner-main (I) laminae of the posterior cingulate areas 29, 30, 23, and 31, 17
+## species. No overall "all layers" mean is printed. The molecular layer (Table 1's "M" column)
+## has no GLI in Table 2 -- the paper states it was too low/high-error to measure (p.519) -- so
+## there is no molecular-layer stratum to carry here. O is mapped to supragranular and I to
+## infragranular, matching this merge's layer-group convention (areas 29/30 are allo-/proiso-
+## cortex and have no granular layer, so GLI_pct_mean_granular is NA for those two areas, same
+## treatment as Sherwood's agranular M1). "Papio sp." is kept as published (genus-level only,
+## not resolved to a binomial) -- a known limitation, not an error.
+zilles2 = pd.read_csv(os.path.join(ROOT, "Zilles_etal_1986", "Zilles_etal_1986_Table2.csv"))
+zilles_n_specimens = {
+    "Perodicticus potto": 2, "Callithrix jacchus": 2, "Cercopithecus mitis": 3,
+    "Macaca mulatta": 2, "Papio sp.": 2,
+}  ## from Materials and Methods (p.514); all other species n=1.
+zilles_areas = {
+    "area29": ("area29_outer_main_GLI", None, "area29_inner_main_GLI", "area29_posterior_cingulate"),
+    "area30": ("area30_outer_main_GLI", None, "area30_inner_main_GLI", "area30_posterior_cingulate"),
+    "area23": ("area23_outer_main_GLI", "area23_granular_GLI", "area23_inner_main_GLI", "area23_posterior_cingulate"),
+    "area31": ("area31_outer_main_GLI", "area31_granular_GLI", "area31_inner_main_GLI", "area31_posterior_cingulate"),
+}
+zilles_blocks = []
+for area_key, (o_col, g_col, i_col, area_label) in zilles_areas.items():
+    zilles_blocks.append(pd.DataFrame({
+        "Species": zilles2["Species"],
+        "species_as_published": zilles2["Species"],
+        "specimen_as_published": zilles2["Species"],
+        "area_as_published": area_label,
+        "n_specimens": zilles2["Species"].map(lambda s: zilles_n_specimens.get(s, 1)),
+        "GLI_pct_mean_all_layers": np.nan,
+        "GLI_pct_mean_supragranular": zilles2[o_col],
+        "GLI_pct_mean_granular": zilles2[g_col] if g_col else np.nan,
+        "GLI_pct_mean_infragranular": zilles2[i_col],
+        "source_location": f"Table 2, {area_key}",
+        "data_role": "primary",
+    }))
+zilles_wide = pd.concat(zilles_blocks, ignore_index=True)
+zilles_wide["source"] = "Zilles_etal_1986_Table2"
+zilles_wide["source_role"] = "added_this_pass"
+
+wide = pd.concat([pg, sem98, sem01, sherwood_wide, zilles_wide], ignore_index=True)
 
 STRATUM_COLS = {
     "GLI_pct_mean_all_layers": "all_layers",

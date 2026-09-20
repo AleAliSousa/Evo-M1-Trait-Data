@@ -31,12 +31,25 @@ cat("derived:", nrow(d), "structures\n")
 
 ## ---- public TSV (database "online" copy) : regenerate from the derived table ----
 ## Written into <repo-root>/__Public/comparative-data when run inside the repo (root = has __ReadMe.xlsx).
+## The file is named by the registry's cached 'Item encoded' value (Olkowicz/Heffner pattern), NOT by a
+## literal: this script used to write `..._normative.tsv` while the registry key for Item number
+## "normative volumes" is `..._normativevolumes`, so check_item_name_resolution.R reported the TSV as
+## orphaned (sweep 2026-09-18). Same defect class as Barger_etal_2012 (see _checks/script_repairs_20260829.md).
+item_name <- "Walhovd_etal_2011_normativevolumes"
 .tsv_base <- local({ d <- folder
   while (dirname(d) != d && !file.exists(file.path(d, "__ReadMe.xlsx"))) d <- dirname(d)
   if (file.exists(file.path(d, "__ReadMe.xlsx"))) d else NA_character_ })
 if (!is.na(.tsv_base)) {
-  .td <- file.path(.tsv_base, "__Public", "comparative-data")
-  if (!dir.exists(.td)) dir.create(.td, recursive = TRUE)
-  write.table(read.csv("Walhovd_etal_2011_derived.csv", check.names = FALSE),
-              file.path(.td, "10.1016%2Fj.neurobiolaging.2009.05.013_normative.tsv"), sep = "\t", row.names = FALSE)
+  filecodes    <- readxl::read_excel(file.path(.tsv_base, "__ReadMe.xlsx"), sheet = "Sheet1")
+  norm_key     <- function(x) tolower(gsub("[ _]", "", as.character(x)))
+  item_encoded <- filecodes$"Item encoded"[match(norm_key(item_name), norm_key(filecodes$"Item name"))]
+  if (is.na(item_encoded) || !nzchar(item_encoded)) {
+    warning("No 'Item encoded' for '", item_name, "' in __ReadMe.xlsx; public TSV skipped.")
+  } else {
+    .td <- file.path(.tsv_base, "__Public", "comparative-data")
+    if (!dir.exists(.td)) dir.create(.td, recursive = TRUE)
+    write.table(read.csv("Walhovd_etal_2011_derived.csv", check.names = FALSE),
+                file.path(.td, paste0(item_encoded, ".tsv")), sep = "\t", row.names = FALSE)
+    message("Wrote ", file.path(.td, paste0(item_encoded, ".tsv")))
+  }
 }

@@ -3,7 +3,9 @@ Raghanti MA, Spurlock LB, Treichler FR, Weigel SE, Stimmelmayr R, Butti C, Thewi
 Full title (`__ReadMe.xlsx`): **"Table 1. Percentage of VENs and fork cells in layer V of each cortical region"**
 
 ## Source->Snapshot
-Publisher HTML table page, `https://link.springer.com/article/10.1007/s00429-014-0792-y/tables/1` (snapshot HOWTO method 2). `Raghanti_etal_2015_extract_snapshot.R` -> `..._Table1_snapshot.xlsx` (sheet `Table1`): two header rows, then eight species, row order kept.
+Publisher HTML table page, `https://link.springer.com/article/10.1007/s00429-014-0792-y/tables/1` (snapshot HOWTO method 2) -> `..._Table1_snapshot.xlsx` (sheet `Table1`): two header rows, then eight species, row order kept.
+
+Extraction and build are one script, `..._Table1.R`, in two sections. Section 1 reads the source page and compares it with the frozen copy: writes it if absent, reports a verification if identical, writes `..._REBUILD.xlsx` and stops if it differs, and warns and carries on if the page cannot be read. Section 2 always reads the frozen `.xlsx` from disk — never the object parsed in section 1 — so what is published is always what is committed. (Until 21 September 2026 the extract step was a separate file, `Raghanti_etal_2015_extract_snapshot.R`; once the frozen copy existed that script took its "already matches" branch on every run and produced no output, so it has been removed.)
 
 `.xlsx`, not `.csv`: the header is two tiers deep — each of the four cortical regions spans a `% VEN` and a `% Fork cells` column, and `Species` spans both header rows. CSV flattens that. The merges are reproduced.
 

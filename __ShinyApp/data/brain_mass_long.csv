@@ -751,6 +751,9 @@
 "Isthmomys pirrensis","mass","Brain_Mass_mass_or_volume","g",1.71,1.71,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",1.71,1.71
 "Jaculus jaculus","mass","Brain_Mass_mass_or_volume","g",1.53,1.53,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",1.53,1.53
 "Jaculus orientalis","mass","Brain_Mass_mass_or_volume","g",2.5,2.5,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",2.5,2.5
+"Kerivoula papillosa","mass","Brain_Mass_mass_or_volume","g",0.31,0.31,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.31,0.31
+"Kerivoula pellucida","mass","Brain_Mass_mass_or_volume","g",0.203,0.203,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.203,0.203
+"Kerivoula phalaena","mass","Brain_Mass_mass_or_volume","g",0.116,0.116,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.116,0.116
 "KNM-ER 1470","mass","Brain_Mass_from_volume_or_ecv","g",710.95,710.95,1,1,1,TRUE,"Weaver","primary","mass_from_volume_or_ecv",710.95,710.95
 "KNM-ER 1805","mass","Brain_Mass_from_volume_or_ecv","g",546.07,546.07,1,1,1,TRUE,"Weaver","primary","mass_from_volume_or_ecv",546.07,546.07
 "KNM-ER 1813","mass","Brain_Mass_from_volume_or_ecv","g",495.28,495.28,1,1,1,TRUE,"Weaver","primary","mass_from_volume_or_ecv",495.28,495.28
@@ -758,9 +761,6 @@
 "KNM-ER 3733","mass","Brain_Mass_from_volume_or_ecv","g",765.1,765.1,1,1,1,TRUE,"Weaver","primary","mass_from_volume_or_ecv",765.1,765.1
 "KNM-ER 3883","mass","Brain_Mass_from_volume_or_ecv","g",722.47,722.47,1,1,1,TRUE,"Weaver","primary","mass_from_volume_or_ecv",722.47,722.47
 "KNM-WT 15000","mass","Brain_Mass_from_volume_or_ecv","g",823.52,823.52,1,1,1,TRUE,"Weaver","primary","mass_from_volume_or_ecv",823.52,823.52
-"Kerivoula papillosa","mass","Brain_Mass_mass_or_volume","g",0.31,0.31,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.31,0.31
-"Kerivoula pellucida","mass","Brain_Mass_mass_or_volume","g",0.203,0.203,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.203,0.203
-"Kerivoula phalaena","mass","Brain_Mass_mass_or_volume","g",0.116,0.116,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.116,0.116
 "Kobus ellipsiprymnus","mass","Brain_Mass_mass_or_volume","g",290,290,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",290,290
 "Kobus kob","mass","Brain_Mass_mass_or_volume","g",204,204,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",204,204
 "Kobus leche","mass","Brain_Mass_mass_or_volume","g",222.7,222.7,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",222.7,222.7
@@ -1595,7 +1595,6 @@
 "Rousettus amplexicaudatus","mass","Brain_Mass_mass_or_volume","g",1.6273,1.6273,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",1.6273,1.6273
 "Rupicapra rupicapra","mass","Brain_Mass_mass_or_volume","g",117.8,117.8,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",117.8,117.8
 "S. sciureus","mass","Brain_Mass_from_volume_or_ecv","g",23.1,23.1,1,1,1,TRUE,"Weaver","primary","mass_from_volume_or_ecv",23.1,23.1
-"STS 19","mass","Brain_Mass_from_volume_or_ecv","g",450.59,450.59,1,1,1,TRUE,"Weaver","primary","mass_from_volume_or_ecv",450.59,450.59
 "Saccolaimus saccolaimus","mass","Brain_Mass_mass_or_volume","g",0.6705,0.6705,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.6705,0.6705
 "Saccopteryx bilineata","mass","Brain_Mass_mass_or_volume","g",0.2252,0.2252,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.2252,0.2252
 "Saccopteryx canescens","mass","Brain_Mass_mass_or_volume","g",0.13,0.13,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.13,0.13
@@ -1747,6 +1746,7 @@
 "Stenella longirostris","mass","Brain_Mass_mass_or_volume","g",450,450,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",450,450
 "Steno bredanensis","mass","Brain_Mass_mass_or_volume","g",1541.9,1541.9,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",1541.9,1541.9
 "Strigocuscus pelengensis","mass","Brain_Mass_mass_or_volume","g",6.22,6.22,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",6.22,6.22
+"STS 19","mass","Brain_Mass_from_volume_or_ecv","g",450.59,450.59,1,1,1,TRUE,"Weaver","primary","mass_from_volume_or_ecv",450.59,450.59
 "Sturnira lilium","mass","Brain_Mass_mass_or_volume","g",0.5843,0.5843,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.5843,0.5843
 "Sturnira ludovici","mass","Brain_Mass_mass_or_volume","g",0.676,0.676,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.676,0.676
 "Sturnira tildae","mass","Brain_Mass_mass_or_volume","g",0.7255,0.7255,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.7255,0.7255

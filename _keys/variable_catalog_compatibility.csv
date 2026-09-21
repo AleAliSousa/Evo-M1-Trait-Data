@@ -629,16 +629,24 @@ cortical area | Density.N_mm2,cortical area,Density.N_mm2,1,1,HerculanoHouzel_et
 cortical area | Density.N_mm3,cortical area,Density.N_mm3,1,1,HerculanoHouzel_etal_2013,Mus musculus,primary,FALSE
 cortical area | length,cortical area,length,1,1,HerculanoHouzel_etal_2013,Mus musculus,primary,FALSE
 cortical group | count (number),cortical group,count (number),1,1,HerculanoHouzel_etal_2013,Mus musculus,primary,FALSE
+dorsal frontal cortex | volume,dorsal frontal cortex,volume,1,1,Schenker_etal_2005,Hominidae + Hylobatidae,primary,FALSE
+dorsal frontal gyral white matter | volume,dorsal frontal gyral white matter,volume,1,1,Schenker_etal_2005,Hominidae + Hylobatidae,primary,FALSE
 eye | length,eye,length,1,1,Veilleux_Kirk_2014,Mammalia (91 spp),secondary,FALSE
 eye/visual system | temporal resolution,eye/visual system,temporal resolution,1,1,Haarlem_etal_2026,Metazoa,secondary,FALSE
+frontal core white matter | volume,frontal core white matter,volume,1,1,Schenker_etal_2005,Hominidae + Hylobatidae,primary,FALSE
+frontal cortex | volume,frontal cortex,volume,1,1,Schenker_etal_2005,Hominidae + Hylobatidae,secondary,FALSE
 frontal lobe | volume,frontal lobe,volume,1,1,Semendeferi_Damasio_2000,"Hominoidea (Homo, Pan, Gorilla, Pongo, Hylobates)",primary,FALSE
 hand | manipulability,hand,manipulability,1,1,Liu_etal_2016,Primates,secondary,FALSE
 hand | workspace,hand,workspace,1,1,Liu_etal_2016,Primates,secondary,FALSE
 lateral cerebellum | volume,lateral cerebellum,volume,1,1,Smaers_etal_2018,Mammalia (primates + outgroups),derived,FALSE
 limb | category,limb,category,1,1,MedinaGonzález__2026,Mammals,primary,FALSE
 medial cerebellum | volume,medial cerebellum,volume,1,1,Smaers_etal_2018,Mammalia (primates + outgroups),secondary,FALSE
+mesial frontal cortex | volume,mesial frontal cortex,volume,1,1,Schenker_etal_2005,Hominidae + Hylobatidae,primary,FALSE
+mesial frontal gyral white matter | volume,mesial frontal gyral white matter,volume,1,1,Schenker_etal_2005,Hominidae + Hylobatidae,primary,FALSE
 non-adopted) | see Region,non-adopted),see Region,1,1,Walhovd_etal_2011,info,group,FALSE
 orbit | sample_size,orbit,sample_size,1,1,Heesy__2004,Mammalia,primary,FALSE
+orbital frontal cortex | volume,orbital frontal cortex,volume,1,1,Schenker_etal_2005,Hominidae + Hylobatidae,primary,FALSE
+orbital frontal gyral white matter | volume,orbital frontal gyral white matter,volume,1,1,Schenker_etal_2005,Hominidae + Hylobatidae,primary,FALSE
 palaeocortex+amygdala | volume,palaeocortex+amygdala,volume,1,1,Stephan_Pirlot_1970,Chiroptera,primary,FALSE
 parieto-occipital | volume,parieto-occipital,volume,1,1,Semendeferi_Damasio_2000,"Hominoidea (Homo, Pan, Gorilla, Pongo, Hylobates)",primary,FALSE
 retina | angle.deg,retina,angle.deg,1,1,Heffner_Heffner_1992_a,Mammalia (13 spp),primary,FALSE
@@ -648,6 +656,9 @@ see structure col | CMR.umol/g/min,see structure col,CMR.umol/g/min,1,1,Karbowsk
 spinal cord / M1 output | grade,spinal cord / M1 output,grade,1,1,Bortoff_Strick_1993,Primates,primary,FALSE
 spinal cord / M1 output | inference,spinal cord / M1 output,inference,1,1,Bortoff_Strick_1993,Primates,primary,FALSE
 spinal cord / M1 output | presence,spinal cord / M1 output,presence,1,1,Bortoff_Strick_1993,Primates,primary,FALSE
+temporal core white matter | volume,temporal core white matter,volume,1,1,Schenker_etal_2005,Hominidae + Hylobatidae,primary,FALSE
+temporal cortex | volume,temporal cortex,volume,1,1,Schenker_etal_2005,Hominidae + Hylobatidae,primary,FALSE
+temporal gyral white matter | volume,temporal gyral white matter,volume,1,1,Schenker_etal_2005,Hominidae + Hylobatidae,primary,FALSE
 temporal lobe | volume,temporal lobe,volume,1,1,Semendeferi_Damasio_2000,"Hominoidea (Homo, Pan, Gorilla, Pongo, Hylobates)",primary,FALSE
 visual field | citation,visual field,citation,1,1,Heesy__2004,Mammalia,secondary,FALSE
 whole body | BMR.mlO2_h,whole body,BMR.mlO2_h,1,1,Genoud_etal_2018,Mammalia,secondary,FALSE

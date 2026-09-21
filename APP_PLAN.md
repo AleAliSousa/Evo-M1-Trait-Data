@@ -196,7 +196,7 @@ Maintenance: the index is derived — rebuild whenever `__ReadMe.xlsx`, `_keys/`
 (valid only within a collection GROUP), collection, species, publication, or dataset; return
 canonical specimen identity, species, collection, source datasets, publications, measured
 traits, and reuse across studies. Builds directly on `_keys/specimen_crosswalk`,
-`taxon_concept_registry`, and `____Collections and Specimen notes/`. Example uses: how many
+`taxon_concept_registry`, and `_keys/specimen_crosswalk/`. Example uses: how many
 studies include a particular chimpanzee specimen; which publications reused specimens from an
 earlier study. Build only after the Finder ships — its species/item edge tables and `lib_gh.R`
 are prerequisites, and the Finder's specimen-note links are the interim answer.

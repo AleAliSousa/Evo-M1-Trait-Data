@@ -1,0 +1,153 @@
+source_row,catalogue_number,sex,age,body_weight_g,brain_weight_fresh_g,brain_material,staining,section_thickness_um,plane_of_sectioning,distance_between_sections,developmental_group
+1,H 3/86,,7 weeks,0.65,---,whole brain,Cresylviolet,10,coronal,0,prenatal
+2,H 2/82,m,76 days,---,---,whole brain,Cresylviolet,5,horizontal,20,prenatal
+3,H 4/86,m,11 weeks,3.43,---,whole brain,Hematoxylin-Eosin,7,coronal,20,prenatal
+4,H 6/86,m,11 weeks,5.49,---,whole brain,Hematoxylin-Eosin,7,coronal,10,prenatal
+5,H 7/86,m,11 weeks,---,---,whole brain,Hematoxylin-Eosin,7,coronal,20,prenatal
+6,H 2/86,m,12 weeks,16.49,---,whole brain,Hematoxylin-Eosin,7,coronal,20,prenatal
+7,H 1/86,f,15 weeks,---,---,whole brain,Cresylviolet,10,coronal,10,prenatal
+8,RK 261/80,m,116 days,1070,445,both hemispheres brain stem,Cresylviolet Merker Cell body Merker Cell body Gallyas Myelin,20 20,coronal coronal,15 15 15 15,prenatal
+9,H 4/79,m,118 days,248,---,left hemisphere right hemisphere brain stem,Cresylviolet Cresylviolet Merker Cell body Gallyas Myelin,20 20 20,coronal coronal coronal,10 10 15 15,prenatal
+10,SN 24/85,f,25 weeks,630,79,right hemisphere left hemisphere,Cresylviolet Cresylviolet,10,coronal coronal,10 10,prenatal
+11,SN 385/81,m,26 weeks,598,115,left hemisphere right hemisphere,Cresylviolet Cresylviolet,20,coronal coronal,10 10,prenatal
+12,SN 225/85,m,29 weeks,---,153,right hemisphere left hemisphere,Merker Cell body Merker Cell body,20,coronal coronal,15 15,prenatal
+13,H 75/79,m,30 weeks,1356,190,left hemisphere 1 left hemisphere 2 left hemisphere 3 left hemisphere 4 left hemisphere 5 left hemisphere 6,Cresylviolet Cresylviolet Cresylviolet Cresylviolet Cresylviolet Cresylviolet,10 10 10 10 10 10,coronal coronal coronal coronal coronal coronal,10 10 10 10 10 10,prenatal
+14,H 75/79,,,,,right hemisphere 1 right hemisphere 2 right hemisphere 3 right hemisphere 4 right hemisphere 5 right hemisphere 6 brain stem,Cresylviolet Cresylviolet Cresylviolet Cresylviolet Cresylviolet Cresylviolet Merker Cell body Gallyas Myelin,10 10 10 10 10 10 20,coronal coronal coronal coronal coronal coronal coronal,10 10 10 10 10 10 15 15,prenatal
+15,SN 16/87,m,34 weeks,---,274,whole brain,Merker Cell body,20,coronal,15,prenatal
+16,H 1/85,m,36 weeks,---,---,whole brain,Cresylviolet,20,coronal,10,prenatal
+17,SN 102/86,m,40 weeks,---,485,right hemisphere left hemisphere brain stem,Merker Cell body Merker Cell body Merker Cell body Gallyas Myelin,20 20 20,coronal coronal coronal,15 15 15 15,prenatal
+18,H 4/88,?,fetus,106,---,whole brain,Cresylviolet,10,coronal,15,prenatal
+19,H 5/88,?,fetus,94,---,whole brain,Cresylviolet,10,coronal,15,prenatal
+20,H 7/88,?,fetus,50,---,whole brain,Cresylviolet,10,coronal,10,prenatal
+21,H 8/88,?,fetus,30,---,whole brain,Cresylviolet,10,coronal,15,prenatal
+22,M 19,m,neonat,4500,---,whole brain,Cresylviolet,20,coronal,15,prenatal
+23,M 23,f,neonat,3100,---,whole brain,Merker Cell body,20,coronal,15,prenatal
+24,PK 789/79,f,neonat,3082,380,left hemisphere 1 left hemisphere 2 left hemisphere 3 brain stem,Cresylviolet Cresylviolet Cresylviolet Merker Cell body Gallyas Myelin,35 35 35,horizontal horizontal horizontal coronal,10 10 10 15 15,prenatal
+25,546/80,f,neonat,2190,373,left hemisphere 1 left hemisphere 2,Cresylviolet Cresylviolet,20 20,coronal coronal,20 20,prenatal
+26,142/81,m,neonat,4400,426,right hemisphere 1 right hemisphere 2 left hemisphere 1 left hemisphere 2 left hemisphere 3 brain stem,Cresylviolet Cresylviolet Cresylviolet Cresylviolet Cresylviolet Merker Cell body Gallyas Myelin,20 20 20 20 20 20,horizontal horizontal coronal coronal coronal coronal,20 20 20 20 20 15 15,prenatal
+27,H 17/79,m,1 day,1510,---,left hemisphere 1 left hemisphere 2 left hemisphere 3 left hemisphere 4 left hemisphere 5 right hemisphere 1 right hemisphere 2 right hemisphere 3 right hemisphere 4 right hemisphere 5 brain stem,Cresylviolet Cresylviolet Cresylviolet Cresylviolet Cresylviolet Cresylviolet Cresylviolet Cresylviolet Cresylviolet Cresylviolet Merker Cell body Gallyas Myelin,20 20 20 20 20 10 10 10 10 10 20,coronal coronal coronal coronal coronal coronal coronal coronal coronal coronal coronal,10 10 10 10 10 20 20 20 20 20 15 15,prenatal
+28,SN 72/81,f,1 day,920,114,whole brain,Cresylviolet,20,coronal,20,prenatal
+29,SN 269/81,m,1 day,1186,161,right hemisphere left hemisphere,Merker Cell body Merker Cell body,20 20,coronal coronal,5 5,prenatal
+30,153/84,m,1 day,2800,362,left hemisphere,Cresylviolet Merker Cell body,20,coronal,15 15,prenatal
+31,SN 238/84,f,1 day,2046,347,right hemisphere,Cresylviolet Merker Cell body,20,coronal,15 15,prenatal
+32,SN 163/81,m,2 days,2460,404,brain stem,Merker Cell body Gallyas Myelin,20,coronal,15 15,prenatal
+33,229/84,m,4 days,1200,376,right hemisphere,Cresylviolet Merker Cell body,20,coronal,15 15,prenatal
+34,257/81,m,7 days,4971,456,left hemisphere 2,Cresylviolet,20,horizontal,10,prenatal
+35,M 104,m,6 weeks,---,---,whole brain,Merker Cell body,20,coronal,15,prenatal
+36,RK 419/84,m,1.5 months,5200,510,right hemisphere brain stem,Merker Cell body Merker Cell body Gallyas Myelin,20 20,coronal coronal,15 15 15,prenatal
+37,RK 596/84,f,1.5 months,4080,500,brain stem,Merker Cell body Gallyas Myelin,20,coronal,15 15,prenatal
+38,M 50,m,7 weeks,---,---,whole brain,Merker Cell body,20,coronal,15,prenatal
+39,SN 24/86,m,2 months,---,337,right hemisphere left hemisphere brain stem,Merker Cell body Merker Cell body Merker Cell body Gallyas Myelin,20 20 20,coronal coronal coronal,15 15 15 15,prenatal
+40,RK 820/83,m,3 months,5400,---,brain stem,Merker Cell body Gallyas Myelin,20,coronal,15 15,prenatal
+41,RK 808/84,f,3 months,4200,630,left hemisphere brain stem,Merker Cell body Erichrome Myelin Heidenhain-Woelcke Myelin Merker Cell body Gallyas Myelin,20 20,coronal coronal,15 15 15 20 20,prenatal
+42,RK 44/85,m,3 months,---,547,right hemisphere left hemisphere brain stem,Merker Cell body Erichrome Myelin Merker Cell body Erichrome Myelin Merker Cell body Gallyas Myelin,20 20 20,coronal coronal coronal,15 15 15 15 15 15,prenatal
+43,SN 186/86,f,3.5 months,---,635,right hemisphere left hemisphere brain stem,Merker Cell body Erichrome Myelin Merker Cell body Erichrome Myelin Merker Cell body Gallyas Myelin,20 20 20,coronal coronal coronal,15 15 15 15 15 15,prenatal
+44,275/74,m,4 months,5800,635,left hemisphere 1 left hemisphere 2 left hemisphere 3 left hemisphere 4 right hemisphere,Cresylviolet Cresylviolet Cresylviolet Cresylviolet Merker Cell body,20 20 20 20 20,coronal coronal coronal coronal coronal,20 20 20 20 15,prenatal
+45,RK 21/82,m,4 months,---,662,right hemisphere 1 right hemisphere 2 left hemisphere 1 left hemisphere 2,Merker Cell body Heidenhain-Woelcke Myelin Merker Cell body Heidenhain-Woelcke Myelin Merker Cell body Heidenhain-Woelcke Myelin Merker Cell body Heidenhain-Woelcke Myelin,20 20 20 20,coronal coronal coronal coronal,15 15 15 15 15 15 15 15,prenatal
+46,RK 169/82,m,4 months,---,662,right hemisphere 1 right hemisphere 2 left hemisphere 1 left hemisphere 2,Merker Cell body Merker Cell body Merker Cell body Merker Cell body,20 20 20 20,coronal coronal coronal coronal,15 15 15 15,prenatal
+47,RK 53/85,m,4 months,---,432,right hemisphere left hemisphere brain stem,Merker Cell body Merker Cell body Merker Cell body Gallyas Myelin,20 20 20,coronal coronal coronal,15 15 15 15,prenatal
+48,SN 163/86,m,4 months,---,619,right hemisphere left hemisphere brain stem,Merker Cell body Erichrome Myelin Merker Cell body Merker Cell body Gallyas Myelin,20 20 20 20,coronal coronal coronal,15 15 15 15 15,prenatal
+49,M 28,M,4.5 months,---,---,whole brain,Merker Cell body,20,coronal,15,prenatal
+50,H 3/82,m,140 days,---,240,left hemisphere brain stem,Cresylviolet Cresylviolet,5 5,coronal coronal,50 20,prenatal
+51,L 592/87,m,5 months,---,690,brain stem,Merker Cell body Gallyas Myelin,20,coronal,15 15,prenatal
+52,SN 206/80,m,6 months,7060,785,right hemisphere 1 right hemisphere 2 right hemisphere 3 right hemisphere 4 rihem 5 li hem 1 li hem 2 li hem 3 brain stem,Cresylviolet Cresylviolet Cresylviolet Cresylviolet Cresylviolet Cresylviolet Cresylviolet Cresylviolet Merker Cell body Gallyas Myelin,20 20 20 20 20 20 20 20 20,coronal coronal coronal coronal horizontal horizontal horizontal horizontal coronal,20 20 20 20 20 20 20 20 15 15,prenatal
+53,SN 60/84,m,6 months,6354,886,brain stem,Merker Cell body Gallyas Myelin,20,coronal,15 15,prenatal
+54,RK 180/84,m,6.5 months,7900,900,brain stem,Merker Cell body Gallyas Myelin,20,coronal,15 15,prenatal
+55,373/83,m,8 months,7733,---,right hemisphere left hemisphere brain stem,Merker Cell body Heidenhain-Woelcke Myelin Merker Cell body Heidenhain-Woelcke Myelin Merker Cell body Gallyas Myelin,20 20 20,coronal coronal coronal,30 15 30 15 15 15,prenatal
+56,RK 412/84,m,8 months,8600,750,left hemisphere brain stem,Merker Cell body Merker Cell body Gallyas Myelin,20 20,coronal coronal,15 15 15,prenatal
+57,RK 185/87,f,8 months,6800,765,right hemisphere left hemisphere brain stem,Merker Cell body Merker Cell body Merker Cell body Gallyas Myelin,20 20 20,coronal coronal coronal,15 15 15 15,prenatal
+58,RK 258/87,f,8 months,---,942.9,left hemisphere right hemisphere brain stem,Merker Cell body Merker Cell body Merker Cell body Gallyas Myelin,20 20 20,coronal coronal coronal,15 15 15 15,prenatal
+59,RK 172/82,f,10 month,---,791.5,right hemisphere 1 right hemisphere 2 left hemisphere 1 left hemisphere 2,Merker Cell body Merker Cell body Merker Cell body Merker Cell body,20 20 20 20,coronal coronal coronal coronal,15 15 15 15,prenatal
+60,RK 101/85,f,10 month,---,970,right hemisphere left hemisphere brain stem,Merker Cell body Merker Cell body Erichrome Myelin Merker Cell body Gallyas Myelin,20 20 20,coronal coronal coronal,15 15 15 15 15,prenatal
+61,SN 506/84,f,11 month,7100,920,brain stem,Merker Cell body Gallyas Myelin,20,coronal,15 15,prenatal
+62,RK 303/84,m,12 month,8400,950,brain stem,Merker Cell body Gallyas Myelin,20,coronal,15 15,prenatal
+63,SN 48/84,m,13 month,9576,1099,right hemisphere brain stem,Merker Cell body Merker Cell body Gallyas Myelin,20 20,coronal coronal,15 15 15,prenatal
+64,M 65,f,2 years,---,---,whole brain,Merker Cell body,20,coronal,15,prenatal
+65,M 167,f,2 years,---,---,whole brain,Merker Cell body,20,coronal,15,prenatal
+66,M 168,m,3 years,---,---,whole brain,Merker Cell body,20,coronal,15,prenatal
+67,M 100,f,4 years,---,---,whole brain,Merker Cell body,20,coronal,15,prenatal
+68,M 178,m,5 years,---,---,whole brain,Merker Cell body,20,coronal,15,prenatal
+69,PK 69/80,m,10 years,---,---,left hemisphere 1 left hemisphere 2 left hemisphere 3 left hemisphere 4 left hemisphere 5 left hemisphere 6 right hemisphere 1 right hemisphere 2 right hemisphere 3 brain stem,Cresylviolet Cresylviolet Cresylviolet Cresylviolet Cresylviolet Cresylviolet Cresylviolet Cresylviolet Cresylviolet Merker Cell body Gallyas Myelin,35 35 35 35 35 35 35 35 35 20 20,coronal coronal coronal coronal coronal coronal coronal coronal coronal coronal,20 20 20 20 20 20 20 20 20 15 15,prenatal
+70,SN 78/84,f,13 years,61300,1464,left hemisphere brain stem,Merker Cell body Merker Cell body Gallyas Myelin,20 20,coronal coronal,15 15 15,prenatal
+71,SN 371/81,m,20 years,5700,1607,left hemisphere 1 left hemisphere 2 right hemisphere brain stem,Cresylviolet Cresylviolet Cresylviolet Merker Cell body Merker Cell body Gallyas Myelin,20 20 20 20,sagittal sagittal coronal coronal,15 15 15 15 15 15,prenatal
+72,SN 53/84,f,21 years,---,1367,right hemisphere 1 right hemisphere 2 left hemisphere 1 left hemisphere 2 brain stem,Cresylviolet Merker Cell body Merker Cell body Merker Cell body Merker Cell body Merker Cell body Gallyas Myelin,20 20 20 20 20,coronal coronal coronal coronal coronal,15 15 15 15 15 15 15,prenatal
+73,H 9/88,m,21 years,---,---,whole brain,Merker Cell body,20,coronal,50,prenatal
+74,296/83,m,28 years,---,1198,right hemisphere left hemisphere brain stem,Merker Cell body Merker Cell body Merker Cell body Gallyas Myelin,20 20 20,coronal coronal coronal,15 15 15 15,prenatal
+75,SN 17/84,m,35 years,61200,1456,left hemisphere right hemisphere brain stem,Merker Cell body Merker Cell body Merker Cell body Gallyas Myelin,20 20 20,coronal horizontal coronal,20 15 15 15,prenatal
+76,131/81,m,41 years,88400,1320,right hemisphere 1 right hemisphere 2 left hemisphere 1 left hemisphere 2 left hemisphere 3,Merker Cell body Merker Cell body Merker Cell body Merker Cell body Merker Cell body,20 20 20 20 20,coronal coronal coronal coronal coronal,15 15 15 15 15,prenatal
+77,55/85,f,42 years,---,1374,ri handknobs le handknobs,Merker Cell body Merker Cell body,20 20,special special,60 60,prenatal
+78,357/81,m,42 years,57800,1471,right hemisphere 1 right hemisphere 2 left hemisphere 1 left hemisphere 2 left hemisphere 3 left hemisphere 4 brain stem,Cresylviolet Cresylviolet Cresylviolet Cresylviolet Cresylviolet Cresylviolet Merker Cell body Gallyas Myelin,20 20 20 20 20 20 20,horizontal horizontal coronal coronal coronal coronal coronal,15 15 15 15 15 15 15 15,prenatal
+79,SN 112/81,m,43 years,72400,1464,right hemisphere 1 right hemisphere 1 right hemisphere 2 right hemisphere 2 left hemisphere left hemisphere,Cresylviolet Merker Cell body Cresylviolet Merker Cell body Cresylviolet Merker Cell body,20 20 20 20 20 20,coronal coronal coronal coronal horizontal horizontal,15 15 15 15 15 15,prenatal
+80,SN 215/81,m,43 years,71400,1423,left hemisphere 1 left hemisphere 2 left hemisphere 3 left hemisphere 4 right hemisphere 1 right hemisphere 2 brain stem,Cresylviolet Cresylviolet Cresylviolet Cresylviolet Cresylviolet Cresylviolet Merker Cell body Gallyas Myelin,20 20 20 20 20 20 20,coronal coronal coronal coronal coronal coronal coronal,15 15 15 15 15 15 15 15,prenatal
+81,SN 267/84,m,45 years,72800,1411,left hemisphere,Merker Cell body,20,sagittal,15,prenatal
+82,SN 471/81,m,47 years,69800,1441,right hemisphere left hemisphere,Merker Cell body Merker Cell body,20 20,coronal coronal,15 20,prenatal
+83,178/86,f,48 years,---,1370,ri handknob le handknob,Merker Cell body Merker Cell body,20 20,special special,60 60,prenatal
+84,135/85,m,48 years,92300,1305,ri handknob le handknob,Merker Cell body Merker Cell body,20 20,special special,60 60,prenatal
+85,11/87,m,49 years,---,1330,ri handknob le handknob,Merker Cell body Merker Cell body,20 20,special special,60 60,prenatal
+86,SN 292/80,m,50 years,94600,1453,right hemisphere 1 right hemisphere 4 left hemisphere 1 left hemisphere 2 left hemisphere 3 left hemisphere 4 Brain Stem,Cresylviolet Cresylviolet Cresylviolet Cresylviolet Cresylviolet Cresylviolet Merker Cell body Gallyas Myelin,35 35 35 35 35 35 20,horizontal horizontal coronal coronal coronal coronal coronal,20 20 20 20 20 20 15 15,prenatal
+87,SN 464/81,m,51 years,72400,1541,right hemisphere 1 right hemisphere 2 left hemisphere 1 left hemisphere 2 brain stem,Cresylviolet Merker Cell body Cresylviolet Merker Cell body Cresylviolet Cresylviolet Merker Cell body Gallyas Myelin,20 20 20 20 20,coronal coronal coronal coronal coronal,15 15 15 15 15 15 15 15,prenatal
+88,SN 66/84,m,51 years,84200,1458,right hemisphere,Merker Cell body,20,horizontal,30,prenatal
+89,SN 96/84,m,51 years,75300,1542,right hemisphere,Merker Cell body,20,coronal,15,prenatal
+90,231/80,m,52 years,74200,1454,left hemisphere 1 left hemisphere 2,Cresylviolet Merker Cell body Merker Cell body,20 20,coronal coronal,15 15 15,prenatal
+91,SN 12/84,m,56 years,98000,1579,right hemisphere,Merker Cell body,20,coronal,15,prenatal
+92,SN 31/84,m,56 years,80300,1603,left hemisphere,Merker Cell body,20,sagittal,15,prenatal
+93,235/84,m,56 years,69700,1361,left hemisphere,Merker Cell body,20,coronal,15,prenatal
+94,SN 87/85,m,58 years,79800,1482,left hemisphere,Merker Cell body,20,horizontal,15,prenatal
+95,SN 81/84,m,59 years,91400,1415,ri handknobs le handknobs,Merker Cell body Merker Cell body,20 20,special special,10 complete,prenatal
+96,33/94,m,61 years,---,---,ri handknobs le handknobs,Merker Cell body,20 20,special special,60 60,prenatal
+97,199/86,f,61 years,---,---,ri handknobs le handknobs,Merker Cell body Merker Cell body,20 20,special special,60 60,prenatal
+98,SN 77/84,m,61 years,---,---,ri occ-pol enu,Cresylviolet,20,coronal,2,prenatal
+99,H 75/87,f,62 years,---,1164,right hemisphere left hemisphere brain stem,Merker Cell body Gallyas Myelin Merker Cell body Gallyas Myelin Merker Cell body Gallyas Myelin,20 20 20,coronal coronal coronal,15 15 15 15 15 15,prenatal
+100,H 216/84,m,65 years,---,---,le occ-pol enu,Cresylviolet,20,sagittal,20,prenatal
+101,38/81,m,70 years,61200,1370,left hemisphere 1 left hemisphere 2 left hemisphere 3 right hemisphere 1 right hemisphere 2,Cresylviolet Merker Cell body Merker Cell body Merker Cell body Merker Cell body Merker Cell body,20 20 20 20 20 20,coronal coronal coronal coronal coronal,15 15 15 15 15 15,prenatal
+102,SN 456/81,m,70 years,---,1329,ri hHem 1 right hemisphere 2 left hemisphere brain stem,Merker Cell body Merker Cell body Merker Cell body Merker Cell body Gallyas Myelin,20 20 20 20,coronal coronal coronal coronal,15 15 15 15 15,prenatal
+103,64/94,f,74 years,---,---,ri occ-pol le occ-pol,Merker Cell body Gallyas Myelin Merker Cell body Gallyas Myelin,20 20,coronal coronal,50 50 50 50,prenatal
+104,199/83,f,75 years,61200,1460,brain stem,Merker Cell body,20,coronal,15,prenatal
+105,H 1/89,m,75 years,---,1209,whole brain,Merker Cell body Gallyas Myelin,20 20,coronal coronal,15 15,prenatal
+106,543/79,m,77 years,---,1332,ri handknobs le handknobs,Merker Cell body Merker Cell body,20 20,special special,60 60,prenatal
+107,SN 4/84,m,78 years,86300,1343,both Hem,Merker Cell body,20,coronal,15,prenatal
+108,166/81,m,79 years,89500,1550,ri handknobs le handknobs,Merker Cell body Merker Cell body,20 20,special special,60 60,prenatal
+109,10/95,f,86 years,---,1172,ri occ-pol le occ-pol,Merker Cell body Gallyas Myelin Merker Cell body Gallyas Myelin,20 20,horizontal sagttal,15 15 15 15,prenatal
+110,Human brains with postmortem MRI (3-D FLASH) before histological processing,,,,,,,,,,prenatal
+111,G 4/99,m,25 years,88500,1380,whole brain,Merker Cell body Heidenhain-Woelcke Myelin Heidenhain-Woelcke*Myelin,20,coronal,15 60 60,prenatal
+112,496/92,m,30 years,62000,1409,whole brain,Merker Cell body,20,coronal,complete,prenatal
+113,G 1/99,m,35 years,77500,1420,whole brain,Merker Cell body Heidenhain-Woelcke* Myelin,20,coronal,15 60,prenatal
+114,146/86,m,37 years,---,1437,whole brain,Merker Cell body Heidenhain-Woelcke* Myelin,20,coronal,15 60,prenatal
+115,2431,m,39 years,---,1234,ri+left hemisphere,Merker Cell body Heidenhain-Woelcke* Myelin,20,coronal,15 15,prenatal
+116,G 3/99,f,40 years,74000,1010,whole brain,Merker Cell body Heidenhain-Woelcke Myelin,20,sagittal,15 45,prenatal
+117,332/98,f,42 years,---,1334,whole brain,Merker Cell body Heidenhain-Woelcke* Myelin,20,coronal,15 60,prenatal
+118,14/94,f,43 years,---,1198,whole brain,Merker Cell body Heidenhain-Woelcke* Myelin,20,coronal,15 60,prenatal
+119,7/94,f,51 years,---,---,ri occ-pol le occ-pol,Merker Cell body Merker Cell body,2o 20,coronal coronal,15 15,prenatal
+120,32/97,m,50 years,---,1328,whole brain,Merker Cell body Heidenhain-Woelcke Myelin,20,horizontal,15 45,prenatal
+121,G 6/99,m,54 years,122000,1260,whole brain,Merker Cell body Heidenhain-Woelcke Myelin,20,horizontal,15 45,prenatal
+122,84/96,m,54 years,---,1560,whole brain,Merker Cell body Heidenhain-Woelcke* Myelin,20,coronal,15 60,prenatal
+123,16/96,m,54 years,---,1622,whole brain,Merker Cell body Heidenhain-Woelcke* Myelin,20,coronal,15 60,prenatal
+124,SN 31/84,m,56 years,---,---,li hem,Merker Cell body,20,sagittal,15,prenatal
+125,189/92,m,56 years,---,1270,ri+left hemisphere,Merker Cell body Gallyas Myelin,20,coronal,15 15,prenatal
+126,8/94,f,56 xears,---,---,ri occ-pol le occ-pol,Merker Cell body Merker Cell body,20 20,coronal coronal,15 15,prenatal
+127,49/98,m,59 years,---,---,whole brain,Merker Cell body Heidenhain-Woelcke Myelin,20,sagittal,14 45,prenatal
+128,382/81,f,59 years,61400,1142,whole brain,Merker Cell body Heidenhain-Woelcke* Myelin,20,coronal,15 60,prenatal
+129,28/94,m,61 years,---,---,whole brain,Merker Cell body,20,horizontal,15,prenatal
+130,80/99,f,63 years,---,1040,whole brain,Merker Cell body Heidenhain-Woelcke Myelin,20,horizontal,15 45,prenatal
+131,G 9/99,m,63 years,99000,1340,whole brain,Merker Cell body Heidenhain-Woelcke Myelin,20,horizontal,15 45,prenatal
+132,39/03,m,65 years,---,1392,whole brain,Merker Cell body,20,coronal,complete,prenatal
+133,281/93,m,69 years,---,1360,ri+left hemisphere,Merker Cell body Heidenhain-Woelcke* Myelin,20,coronal,15 60,prenatal
+134,30/98,m,72 years,---,---,whole brain,Merker Cell body Heidenhain-Woelcke Myelin,20,coronal,15 60,prenatal
+135,56/94,f,72 years,---,1216,whole brain,Merker Cell body Heidenhain-Woelcke* Myelin,20,coronal,15 60,prenatal
+136,98/92,f,72 years,---,1569,whole brain,Merker Cell body Heidenhain-Woelcke Myelin,20,horizontal,15 45,prenatal
+137,201/86,m,72 years,---,1519,whole brain,Merker Cell body,20,horizontal,15,prenatal
+138,19/84,m,73 years,69200,1363,ri+left hemisphere,Merker Cell body Heidenhain-Woelcke* Myelin Eriochrome Myelin,20,coronal,15 15 15,prenatal
+139,37/93,f,74 years,---,---,whole brain,Merker Cell body,20,sagittal,15,prenatal
+140,139/95,m,74 years,---,1381,whole brain,Merker Cell body Heidenhain-Woelcke Myelin,20,coronal,15 60,prenatal
+141,207/84,m,75 years,85000,1349,ri+left hemisphere,Merker Cell body Heidenhain-Woelcke* Myelin Heidenhain-Woelcke Myelin,20,coronal,15 15 15,prenatal
+142,503/81,f,75 years,---,1310,whole brain,Merker Cell body Heidenhain-Woelcke Myelin,20,horizontal,15 45,prenatal
+143,646/79,m,76 years,67100,1351,whole brain,Merker Cell body Heidenhain-Woelcke Myelin,20,sagittal,15 45,prenatal
+144,71/84,f,77 years,67200,---,whole brain,Merker Cell body Heidenhain-Woelcke Myelin,20,horizontal,15 45,prenatal
+145,340/83,f,79 years,63200,1351,whole brain,Merker Cell body Heidenhain-Woelcke* Myelin Heidenhain-Woelcke Myelin,20,sagittal,15 45 45,prenatal
+146,68/95,f,79 years,---,1110,whole brain,Merker Cell body Heidenhain-Woelcke* Myelin,20,coronal,15 60,prenatal
+147,544/91,f,79 years,---,1350,ri+left hemisphere,Merker Cell body Heidenhain-Woelcke* Myelin Gallyas Myelin,20,coronal,15 60 15,prenatal
+148,103/94,f,84 years,---,1288,whole brain,Merker Cell body,20,coronal,15,prenatal
+149,67/94,m,85 years,---,1302,whole brain,Merker Cell body Heidenhain-Woelcke Myelin,20,horizontal,15 45,prenatal
+150,2/95,f,85 years,---,1046,whole brain,Merker Cell body Heidenhain-Woelcke* Myelin,20,coronal,15 60,prenatal
+151,71/86,f,86 years,---,1113,whole brain,Merker Cell body Heidenhain-Woelcke* Myelin,20,coronal,15 60,prenatal
+152,W60/94,f,95 Years,---,---,whole brain,Merker Cell body Heidenhain-Woelcke* Myelin,20,coronal,15 60,prenatal

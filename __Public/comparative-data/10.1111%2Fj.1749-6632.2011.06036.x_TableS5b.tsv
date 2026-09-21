@@ -1,0 +1,102 @@
+source_row	animal_number	common_name	stains	plane	non_mammal_clade	number_of_slides	comments
+1	L243	Lampreys	Thionin	x-sect	CYCLOSTOME	21	
+2	L-II	Lamprey	Pyridine Sliver		CYCLOSTOME	100	“Lamprey Between Segment II” ; x-sect.
+3	L-GL/2	Fish	Silver		BONY FISH	33	
+4	L-G/1	Goldfish	Pyridine Silver	x-sect	BONY FISH	38	whole head; well preserved
+5	L-G/2	Goldfish Experiments			BONY FISH	33=FB1; 18=FB2; 22=FB4	
+6	L256	Sturgeon	Pyridine Silver	Coronal	BONY FISH	100	
+7	L255	Yellow Perch	Thionin	Coronal	BONY FISH	13	
+8	L-Axolotl	Axolotl	Pyridine Silver		AMPHIBIAN		?unstained sections (200 serial sections)
+9	L219	Frog (Rana pipiens )	Thionin and Weil		AMPHIBIAN	28	
+10	L258	Frog (Rana pipiens )	Pyridine Silver		AMPHIBIAN	24	in box with 219
+11	L297	Frog (Rana pipiens )	Pyridine Silver	Coronal (?)	AMPHIBIAN	12	in box with 219
+12	L230	Red-spotted Newts	Pyridine Silver		AMPHIBIAN	25	
+13	L562	Alligator	Thionin and Weil		REPTILE	44	
+14	L550	Alligator	Golgi		REPTILE	50	
+15	L556	Snake	Pyridine Silver		REPTILE		
+16	L533 (L533a)	Mud Turtle	Pyridine Silver		REPTILE	79	
+17	L538	Turtle	Thionin and Weil		REPTILE	19	
+18	L539	Turtle	Rapid Golgi		REPTILE	11	in box with 538
+19	L540	Turtle	Pyridine Silver		REPTILE	24	in box with 538
+20	L221	Chicken	Pyridine Silver		BIRD	54	
+21	L529	Chicken	Thionin and Weil		BIRD	166	
+22	L531	Chicken	Thionin and Weil		BIRD	200	
+23	L397	Mourning Dove	Pyridine Silver	Horizontal	BIRD	140	whole head; poor preservation
+24	L537	Night Hawk	Rapid Golgi		BIRD	43	
+25	L365	Parakeet	Pyridine Silver		BIRD	65	
+26	L534	Parakeet	Rapid Golgi		BIRD	36	
+27	L536	Parakeet	Thionin and Weil		BIRD	40	
+28	L293	Pheasant	Pyridine Silver		BIRD	64	
+29	L294	Pheasant	Pyridine Silver	Coronal (?)	BIRD	200	
+30	L-P4	Pigeon			BIRD	100	
+31	L-P2	Pigeon CS			BIRD	83	
+32	L-P5	Pigeon T			BIRD	82	
+33	L528	Sparrow	Pyridine Silver		BIRD	65	
+34	L445	“Ichomiljzon”	Golgi			63	
+35	L532	Bat	Pyridine Silver			17	
+36	L561	Bat	Thionin and Weil				
+37	L125	Cat	Thionin and Weil	Coronal		400	
+38	L548	Chinchilla	Pyridine Silver			163	
+39	L549	Chinchilla	Thionin, Weil, and Luxol Fast Blue			200	
+40	L171b	Dog	Thionin and Weil	Coronal (?)		480	slides out of order
+41	L-D	Dog	Thionin and Weil	Coronal		500	front pole to septum
+42	L158	Ferret	Thionin and Weil			260	
+43	L129	Human	Thionin and Weil	Horizontal		1000	
+44	L207	Human	Thionin and Weil			572	Incomplete
+45	L507	Human	Golgi			63	
+46	L535	Human	Marchi			100	
+47	L605	Human	Thionin and Weil			100	Otto Buffe
+48	L-D.L.	Human	Silver			300	“Dean’s Larynx”
+49	L-K.A.	Human	Thionin and Weil			600	Nerve; original box nos. out of order; all slides included 1-600; E.A. Kahn, “9th nerve etc.” 1957
+50	L606	Human Path Specimen	Hematoxylin & Eosin				in box with 605
+51	L129	Human Subthalamic Nuc.	Thionin and Weil	Horizontal			
+52	L-M.P.1	HumanM				97	“Max Peet’s V Nerve” ; Bradley and Hafer
+53	L-M.P.2	HumanM				97	
+54	L101	Monkey	Pyridine Silver			48	Nerve; record with slides
+55	L102	Monkey	Pyridine Silver			16	Nerve; record with slides
+56	L124	Monkey	Thionin			200	
+57	L126	Monkey	Marchi	Coronal		177	Incomplete
+58	L130	Monkey	Thionin and Weil	Coronal		1300	Crosby/Schneider; Specimen 762; 1958
+59	L178	Monkey	Marchi			200	
+60	L181	Monkey	Weil			211	spinal cord to pons; V3 rhizotomy; T-181; (5091)
+61	L185	Monkey	Marchi			100	
+62	L200	Monkey	Marchi			200	
+63	L218	Monkey	Weil			370	
+64	L226	Monkey	Marchi			187	
+65	L232	Monkey	Thionin and Weil			100	Incomplete
+66	L233	Monkey	Thionin and Weil			400	Incomplete
+67	L-Dr. Gosch	Monkey	Hematoxylin & Eosin			95	Spinal cord
+68	L132	Monkey (Macaque ?)	Thionin and Weil	Coronal		1000	Hemispherectomy
+69	L154	Monkey (Macaque ?)	Thionin and Weil	Coronal		1314	Crosby/Schneider “monkey b” ; hemispherectomy
+70	L245	Monkey (Macaque)	Thionin and Weil	Coronal		1200	monkey 5175; cortical ablation
+71	L128	Monkey(Macaque)	Marchi	Coronal		231	“Bhuket B128”
+72	L544	Mouse	Thionin and Weil			45	
+73	L545	Mouse	Pyridine Silver			98	
+74	L545a	Mouse	Pyridine Silver				in box with 545
+75	L546	Mouse	Rapid Golgi				in box with 545
+76	L547	Mouse	Thionin and Weil				in box with 544
+77	L198	Opossum	Thionin and Weil	Coronal		133	
+78	L609	Panda, Greater, Ailuropoda melanoleuca	Cresyl Violet and Weil	coronal			sections 428-760 = Weil; 428a-760a = Cresyl Violet (on trays and in small boxes)
+79	L519	Rabbit	Thionin and Weil			230	
+80	L520	Rabbit	Thionin and Weil			200	
+81	L522	Rabbit	Thionin and Weil	Coronal		195	
+82	L551a	Sheep	Thionin and Weil			100	
+83	L551b	Sheep	Thionin and Weil			200	
+84	L155	Squirrel (Sciurus niger )	Thionin and Weil			300	female; 1959
+85	L552	Squirrel Monkey	Thionin, Weil, and Luxol Fast Blue	Coronal		600	
+86	L114	Squirrel Monkey	Thionin and Weil				
+87	L114a	Squirrel Monkey	Thionin and Weil	Coronal		363	
+88	L114b	Squirrel Monkey	Thionin and Weil	Coronal		363	
+89	L166	Squirrel Monkey	Weil	Coronal		200	1959; detailed surgical records
+90	L408	Squirrel Monkey				400	
+91	L408a	Squirrel Monkey				190	
+92	L459	Squirrel Monkey	Pyridine Silver	Coronal		756	
+93	L372	unknown					in box with 243
+94	L157	Woodchuck	Thionin and Weil			300	
+95	L-AI						?unstained sections (200 serial sections)
+96	L656	Pri Di CVs (7827)	Cresyl Violet				In small cardboard box primate diencephalon?
+97	L657	PriBr SPWt	Pal Weigert ?				appears to be related to 658; has same label, but sections have different set of numbers: odd # sections 1-143; even # sections 144-220
+98	L658	PriBr SPWt	Pal Weigert ?				on label reads “Human, Pal-Weigert Trans. Scharenberg” --Block 1: sl 1-48 --Block 2: 1-64 --Block 3: sl 1-70 --Block ?: sl 2-136 (even numbers)
+99	L726 (N1)	PriBr CVt and PriBr LCVt					on trays; alternating CV and CV plus Luxol; sections 122-171
+100	L726 (N2)	PriBr CVt and PriBr LCVt					on trays; alternating CV and CV plus Luxol; sections 226-243
+101	L-R.J. Allen						2 boxes wrapped with string and accompanied by “Summary of 5 Experiments on Corical Ablation” to Dr. Crosby

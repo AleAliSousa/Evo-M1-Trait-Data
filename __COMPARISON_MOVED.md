@@ -63,7 +63,7 @@ creating the comparison folder in the private repo rather than here.
 
 ## 2026-09-05 addendum: repair after a manual move, and a boundary-rule change
 
-This file, `____TODO/`, the four public specimen notes under `____Collections and Specimen notes/`,
+This file, `____TODO/`, the four public specimen notes under `_keys/specimen_crosswalk/`,
 and three top-level cross-publication checks (`__cerebellum_protocol_comparison`,
 `__energetics_comparison`, `__flow_comparison`) were moved by hand into
 `Evo-M1-Trait-Data-restricted`, alongside a correct move/rename of `____Sensory_audiovisual` to

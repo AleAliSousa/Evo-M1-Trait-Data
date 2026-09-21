@@ -1,0 +1,433 @@
+source_row,diagnostic_category,subcategory_1,age_at_death,gestational_age,time_unit,crown_to_rump_length_mm,crown_to_heel_length_mm,postnatal_survival,sex,plane_of_section
+1,Normative Control,embryos/fetuses,,6,wks,14,unknown,stillborn,unknown,Transverse
+2,Normative Control,embryos/fetuses,,7,wks,20,unknown,stillborn,unknown,Transverse
+3,Normative Control,embryos/fetuses,,8,wks,32,unknown,stillborn,unknown,Horizontal
+4,Normative Control,embryos/fetuses,,8,wks,34,unknown,stillborn,unknown,Transverse
+5,Normative Control,embryos/fetuses,,9,wks,30,unknown,stillborn,unknown,Horizontal
+6,Normative Control,embryos/fetuses,,9,wks,34,unknown,stillborn,male,Frontal
+7,Normative Control,embryos/fetuses,,10,wks,45,unknown,stillborn,unknown,Transverse
+8,Normative Control,embryos/fetuses,,10,wks,46,65,stillborn,female,Sagittal
+9,Normative Control,embryos/fetuses,,10,wks,45,54,stillborn,male,Horizontal
+10,Normative Control,embryos/fetuses,,10,wks,45,51,stillborn,male,Horizontal
+11,Normative Control,embryos/fetuses,,10,wks,56,unknown,stillborn,male,Horizontal
+12,Normative Control,embryos/fetuses,,11,wks,45,55,stillborn,unknown,Transverse
+13,Normative Control,embryos/fetuses,,11,wks,55,unknown,stillborn,unknown,Transverse
+14,Normative Control,embryos/fetuses,,11,wks,55,73,stillborn,unknown,Transverse
+15,Normative Control,embryos/fetuses,,11,wks,60,82,stillborn,unknown,Transverse
+16,Normative Control,embryos/fetuses,,11,wks,60,82,stillborn,unknown,Frontal
+17,Normative Control,embryos/fetuses,,11,wks,64,unknown,stillborn,unknown,Transverse
+18,Normative Control,embryos/fetuses,,12,wks,96,130,stillborn,male,Frontal
+19,Normative Control,embryos/fetuses,,12,wks,96,130,stillborn,male,Frontal
+20,Normative Control,embryos/fetuses,,13,wks,90,unknown,stillborn,male,Frontal
+21,Normative Control,embryos/fetuses,,13,wks,80,unknown,stillborn,unknown,Frontal
+22,Normative Control,embryos/fetuses,,13,wks,73,unknown,stillborn,unknown,Frontal
+23,Normative Control,embryos/fetuses,,13,wks,60,unknown,stillborn,female,Frontal
+24,Normative Control,embryos/fetuses,,14,wks,110,unknown,stillborn,unknown,Transverse
+25,Normative Control,embryos/fetuses,,14,wks,79,unknown,stillborn,unknown,Transverse
+26,Normative Control,embryos/fetuses,,14,wks,93,unknown,stillborn,unknown,Transverse
+27,Normative Control,embryos/fetuses,,14,wks,51,64,stillborn,male,Transverse
+28,Normative Control,embryos/fetuses,,14,wks,85,unknown,stillborn,male,Frontal
+29,Normative Control,embryos/fetuses,,15,wks,98,unknown,stillborn,male,Transverse
+30,Normative Control,embryos/fetuses,,16,wks,145,210,stillborn,unknown,Transverse
+31,Normative Control,embryos/fetuses,,16,wks,108,165,stillborn,female,Transverse
+32,Normative Control,embryos/fetuses,,17,wks,145,unknown,stillborn,male,Transverse
+33,Normative Control,embryos/fetuses,,17,wks,115,175,stillborn,female,Sagittal
+34,Normative Control,embryos/fetuses,,17,wks,140,unknown,stillborn,female,Frontal
+35,Normative Control,embryos/fetuses,,17,wks,170,235,stillborn,female,Horizontal
+36,Normative Control,embryos/fetuses,,17,wks,140,260,stillborn,female,Frontal
+37,Normative Control,embryos/fetuses,,17,wks,170,255,stillborn,male,Horizontal
+38,Normative Control,embryos/fetuses,,17,wks,145,218,stillborn,unknown,Frontal
+39,Normative Control,embryos/fetuses,,18,wks,145,218,stillborn,unknown,Sagittal
+40,Normative Control,embryos/fetuses,,18,wks,145,unknown,stillborn,male,Frontal
+41,Normative Control,embryos/fetuses,,18,wks,160,230,stillborn,male,Frontal
+42,Normative Control,embryos/fetuses,,19,wks,150,225,stillborn,unknown,Frontal
+43,Normative Control,embryos/fetuses,,19,wks,145,unknown,stillborn,male,Sagittal
+44,Normative Control,embryos/fetuses,,19,wks,148,unknown,stillborn,female,Horizontal
+45,Normative Control,embryos/fetuses,,19,wks,150,unknown,stillborn,female,Frontal
+46,Normative Control,embryos/fetuses,,19,wks,100,200,stillborn,female,Frontal
+47,Normative Control,embryos/fetuses,,19,wks,170,250,stillborn,female,Sagittal
+48,Normative Control,embryos/fetuses,,19,wks,130,unknown,stillborn,female,Frontal
+49,Normative Control,stillborn/neonates,,20,wks,160,unknown,stillborn,unknown,Frontal
+50,Normative Control,stillborn/neonates,,20,wks,165,unknown,stillborn,unknown,Frontal
+51,Normative Control,stillborn/neonates,,20,wks,210,310,stillborn,female,Frontal
+52,Normative Control,stillborn/neonates,,20,wks,121,200,stillborn,male,Frontal
+53,Normative Control,stillborn/neonates,,20,wks,160,unknown,stillborn,male,Sagittal
+54,Normative Control,stillborn/neonates,,20,wks,190,310,stillborn,female,Frontal
+55,Normative Control,stillborn/neonates,,20,wks,160,230,01 hr,female,Sagittal
+56,Normative Control,stillborn/neonates,,20,wks,165,unknown,01 hr,male,Frontal
+57,Normative Control,stillborn/neonates,,21,wks,180,265,stillborn,unknown,Frontal
+58,Normative Control,stillborn/neonates,,21,wks,190,260,01 hr,male,Frontal
+59,Normative Control,stillborn/neonates,,21,wks,200,290,04 hs,female,Frontal
+60,Normative Control,stillborn/neonates,,21,wks,170,250,02 hs,female,Sagittal
+61,Normative Control,stillborn/neonates,,21,wks,190,280,stillborn,female,Frontal
+62,Normative Control,stillborn/neonates,,22,wks,200,300,01 hr,male,Frontal
+63,Normative Control,stillborn/neonates,,22,wks,250,370,stillborn,female,Frontal
+64,Normative Control,stillborn/neonates,,22,wks,unknown,unknown,09 hs,female,Horizontal
+65,Normative Control,stillborn/neonates,,22,wks,unknown,unknown,stillborn,male,Frontal
+66,Normative Control,stillborn/neonates,,22,wks,210,310,01 hr,male,Sagittal
+67,Normative Control,stillborn/neonates,,22,wks,170,260,04 hs,female,Sagittal
+68,Normative Control,stillborn/neonates,,22,wks,160,250,01 hr,female,Frontal
+69,Normative Control,stillborn/neonates,,22,wks,200,300,01 hr,male,Sagittal
+70,Normative Control,stillborn/neonates,,22,wks,185,260,01 hr,male,Frontal
+71,Normative Control,stillborn/neonates,,22,wks,190,265,02 hs,female,Horizontal
+72,Normative Control,stillborn/neonates,,22,wks,185,280,03 hs,female,Frontal
+73,Normative Control,stillborn/neonates,,22,wks,190,280,04 hs,male,Frontal
+74,Normative Control,stillborn/neonates,,22,wks,180,240,01 hr,male,Frontal
+75,Normative Control,stillborn/neonates,,22,wks,170,250,stillborn,male,Horizontal
+76,Normative Control,stillborn/neonates,,22,wks,190,290,stillborn,female,Frontal
+77,Normative Control,stillborn/neonates,,22,wks,210,310,01 hr,male,Frontal
+78,Normative Control,stillborn/neonates,,22,wks,164,260,stillborn,female,Frontal
+79,Normative Control,stillborn/neonates,,22,wks,200,290,stillborn,female,Horizontal
+80,Normative Control,stillborn/neonates,,23,wks,unknown,370,27 hs,female,Frontal
+81,Normative Control,stillborn/neonates,,23,wks,200,270,01 hr,male,Frontal
+82,Normative Control,stillborn/neonates,,23,wks,190,300,stillborn,female,Horizontal
+83,Normative Control,stillborn/neonates,,23,wks,190,280,36 hs,female,Horizontal
+84,Normative Control,stillborn/neonates,,23,wks,205,295,stillborn,female,Sagittal
+85,Normative Control,stillborn/neonates,,23,wks,190,280,01 hr,female,Horizontal
+86,Normative Control,stillborn/neonates,,23,wks,240,360,06 hs,male,Sagittal
+87,Normative Control,stillborn/neonates,,23,wks,190,275,30 hs,female,Horizontal
+88,Normative Control,stillborn/neonates,,23,wks,180,290,stillborn,female,Horizontal
+89,Normative Control,stillborn/neonates,,23,wks,200,280,02 hs,male,Horizontal
+90,Normative Control,stillborn/neonates,,23,wks,210,295,stillborn,male,Frontal
+91,Normative Control,stillborn/neonates,,23,wks,220,230,27 hs,female,Sagittal
+92,Normative Control,stillborn/neonates,,23,wks,220,unknown,stillborn,male,Frontal
+93,Normative Control,stillborn/neonates,,24,wks,215,310,01 hr,female,Frontal
+94,Normative Control,stillborn/neonates,,24,wks,155,225,01 hr,male,Sagittal
+95,Normative Control,stillborn/neonates,,24,wks,220,355,08 hs,male,Frontal
+96,Normative Control,stillborn/neonates,,24,wks,190,270,03 hs,male,Frontal
+97,Normative Control,stillborn/neonates,,24,wks,200,300,02 hs,male,Frontal
+98,Normative Control,stillborn/neonates,,24,wks,218,330,01 hr,female,Frontal
+99,Normative Control,stillborn/neonates,,24,wks,230,330,06 hs,female,Horizontal
+100,Normative Control,stillborn/neonates,,24,wks,220,310,02 hs,male,Frontal
+101,Normative Control,stillborn/neonates,,24,wks,210,310,12 hs,female,Horizontal
+102,Normative Control,stillborn/neonates,,24,wks,210,unknown,stillborn,female,Frontal
+103,Normative Control,stillborn/neonates,,24,wks,210,285,stillborn,male,Horizontal
+104,Normative Control,stillborn/neonates,,25,wks,265,380,08 ds,male,Sagittal
+105,Normative Control,stillborn/neonates,,25,wks,225,330,07 hs,female,Sagittal
+106,Normative Control,stillborn/neonates,,25,wks,210,unknown,05 hs,female,Horizontal
+107,Normative Control,stillborn/neonates,,25,wks,215,310,12 hs,male,Horizontal
+108,Normative Control,stillborn/neonates,,25,wks,240,unknown,01 hs,female,Frontal
+109,Normative Control,stillborn/neonates,,25,wks,220,330,03 hs,male,Horizontal
+110,Normative Control,stillborn/neonates,,25,wks,210,unknown,10 hs,female,Horizontal
+111,Normative Control,stillborn/neonates,,25,wks,230,330,02 hs,female,Frontal
+112,Normative Control,stillborn/neonates,,25,wks,230,355,04 hs,male,Sagittal
+113,Normative Control,stillborn/neonates,,25,wks,200,305,40 hs,female,Sagittal
+114,Normative Control,stillborn/neonates,,25,wks,230,320,12 hs,female,Frontal
+115,Normative Control,stillborn/neonates,,25,wks,220,320,15 hs,female,Frontal
+116,Normative Control,stillborn/neonates,,26,wks,210,310,02 hs,male,Sagittal
+117,Normative Control,stillborn/neonates,,26,wks,240,350,12 hs,female,Horizontal
+118,Normative Control,stillborn/neonates,,26,wks,210,330,31 hs,female,Frontal
+119,Normative Control,stillborn/neonates,,26,wks,210,290,43 hs,female,Sagittal
+120,Normative Control,stillborn/neonates,,26,wks,250,unknown,01 hr,male,Frontal
+121,Normative Control,stillborn/neonates,,26,wks,260,380,96 hs,male,Sagittal
+122,Normative Control,stillborn/neonates,,26,wks,230,340,06 ds,female,Horizontal
+123,Normative Control,stillborn/neonates,,26,wks,230,340,05 hs,female,Horizontal
+124,Normative Control,stillborn/neonates,,26,wks,260,400,16 hs,female,Frontal
+125,Normative Control,stillborn/neonates,,26,wks,240,330,stillborn,female,Frontal
+126,Normative Control,stillborn/neonates,,26,wks,230,370,15 hs,male,Frontal
+127,Normative Control,stillborn/neonates,,26,wks,unknown,unknown,stillborn,female,Horizontal
+128,Normative Control,stillborn/neonates,,26,wks,230,350,07 hs,male,Horizontal
+129,Normative Control,stillborn/neonates,,26,wks,220,330,32 hs,female,Frontal
+130,Normative Control,stillborn/neonates,,26,wks,260,330,10 hs,female,Frontal
+131,Normative Control,stillborn/neonates,,26,wks,230,320,12 ds,male,Horizontal
+132,Normative Control,stillborn/neonates,,26,wks,250,350,01 hr,male,Frontal
+133,Normative Control,stillborn/neonates,,26,wks,220,340,18 hs,male,Frontal
+134,Normative Control,stillborn/neonates,,26,wks,235,330,05 hs,female,Frontal
+135,Normative Control,stillborn/neonates,,26,wks,190,270,14 hs,male,Horizontal
+136,Normative Control,stillborn/neonates,,26,wks,225,330,02 ds,female,Sagittal
+137,Normative Control,stillborn/neonates,,26,wks,225,385,27 ds,female,Sagittal
+138,Normative Control,stillborn/neonates,,26,wks,230,unknown,stillborn,male,Frontal
+139,Normative Control,stillborn/neonates,,26,wks,Unknown,unknown,stillborn,female,Horizontal
+140,Normative Control,stillborn/neonates,,26,wks,250,350,15 hs,female,Frontal
+141,Normative Control,stillborn/neonates,,26,wks,220,320,09 hs,male,Horizontal
+142,Normative Control,stillborn/neonates,,26,wks,230,340,06 hs,male,Frontal
+143,Normative Control,stillborn/neonates,,26,wks,230,320,12 hs,male,Sagittal
+144,Normative Control,stillborn/neonates,,27,wks,220,335,05 hs,female,Frontal
+145,Normative Control,stillborn/neonates,,27,wks,240,330,01 hr,female,Sagittal
+146,Normative Control,stillborn/neonates,,27,wks,260,320,stillborn,female,Frontal
+147,Normative Control,stillborn/neonates,,27,wks,240,350,38 hs,female,Frontal
+148,Normative Control,stillborn/neonates,,27,wks,240,350,stillborn,male,Horizontal
+149,Normative Control,stillborn/neonates,,27,wks,230,350,01 hr,female,Frontal
+150,Normative Control,stillborn/neonates,,27,wks,unknown,390,05 ds,male,Horizontal
+151,Normative Control,stillborn/neonates,,27,wks,250,unknown,stillborn,female,Sagittal
+152,Normative Control,stillborn/neonates,,27,wks,200,305,84 hs,female,Sagittal
+153,Normative Control,stillborn/neonates,,27,wks,240,355,09 hs,male,Sagittal
+154,Normative Control,stillborn/neonates,,27,wks,220,unknown,stillborn,male,Sagittal
+155,Normative Control,stillborn/neonates,,27,wks,250,370,11 hs,male,Sagittal
+156,Normative Control,stillborn/neonates,,27,wks,220,unknown,stillborn,male,Sagittal
+157,Normative Control,stillborn/neonates,,27,wks,230,360,02 hs,female,Frontal
+158,Normative Control,stillborn/neonates,,27,wks,250,355,10 hs,male,Horizontal
+159,Normative Control,stillborn/neonates,,27,wks,250,350,05 hs,male,Horizontal
+160,Normative Control,stillborn/neonates,,28,wks,unknown,unknown,18 ds,female,Frontal
+161,Normative Control,stillborn/neonates,,28,wks,unknown,360,11 hs,female,Frontal
+162,Normative Control,stillborn/neonates,,28,wks,240,340,05 ds,female,Horizontal
+163,Normative Control,stillborn/neonates,,28,wks,240,370,02 hs,female,Sagittal
+164,Normative Control,stillborn/neonates,,28,wks,240,340,28 hs,female,Frontal
+165,Normative Control,stillborn/neonates,,28,wks,260,370,01 hr,male,Horizontal
+166,Normative Control,stillborn/neonates,,28,wks,250,400,04 ds,male,Sagittal
+167,Normative Control,stillborn/neonates,,28,wks,255,360,stillborn,male,Horizontal
+168,Normative Control,stillborn/neonates,,28,wks,220,330,09 hs,female,Frontal
+169,Normative Control,stillborn/neonates,,28,wks,250,350,22 hs,female,Sagittal
+170,Normative Control,stillborn/neonates,,28,wks,220,340,stillborn,male,Frontal
+171,Normative Control,stillborn/neonates,,28,wks,250,370,48 hs,male,Frontal
+172,Normative Control,stillborn/neonates,,28,wks,225,360,09 hs,female,Horizontal
+173,Normative Control,stillborn/neonates,,28,wks,220,350,03 hs,male,Frontal
+174,Normative Control,stillborn/neonates,,28,wks,210,300,01 hr,male,Horizontal
+175,Normative Control,stillborn/neonates,,28,wks,200,290,06 hs,male,Horizontal
+176,Normative Control,stillborn/neonates,,28,wks,290,430,26 hs,male,Frontal
+177,Normative Control,stillborn/neonates,,28,wks,260,370,04 hs,male,Sagittal
+178,Normative Control,stillborn/neonates,,28,wks,240,330,08 hs,male,Sagittal
+179,Normative Control,stillborn/neonates,,28,wks,230,340,48 hs,male,Frontal
+180,Normative Control,stillborn/neonates,,28,wks,250,360,06 hs,female,Sagittal
+181,Normative Control,stillborn/neonates,,28,wks,240,330,stillborn,male,Sagittal
+182,Normative Control,stillborn/neonates,,28,wks,230,295,17 hs,male,Sagittal
+183,Normative Control,stillborn/neonates,,28,wks,240,355,12 hs,female,Horizontal
+184,Normative Control,stillborn/neonates,,28,wks,240,355,09 hs,male,Horizontal
+185,Normative Control,stillborn/neonates,,28,wks,230,340,12 hs,male,Sagittal
+186,Normative Control,stillborn/neonates,,29,wks,230,350,08 ds,female,Frontal
+187,Normative Control,stillborn/neonates,,29,wks,280,420,11 hs,male,Horizontal
+188,Normative Control,stillborn/neonates,,29,wks,unknown,470,09 ds,male,Frontal
+189,Normative Control,stillborn/neonates,,29,wks,270,405,24 hs,male,Sagittal
+190,Normative Control,stillborn/neonates,,29,wks,240,380,10 hs,male,Frontal
+191,Normative Control,stillborn/neonates,,29,wks,270,400,01 hr,female,Sagittal
+192,Normative Control,stillborn/neonates,,29,wks,300,425,24 hs,male,Sagittal
+193,Normative Control,stillborn/neonates,,29,wks,240,360,48 hs,female,Frontal
+194,Normative Control,stillborn/neonates,,29,wks,260,380,32 hs,male,Frontal
+195,Normative Control,stillborn/neonates,,29,wks,260,380,03 ds,male,Horizontal
+196,Normative Control,stillborn/neonates,,29,wks,260,unknown,17 hs,female,Sagittal
+197,Normative Control,stillborn/neonates,,29,wks,260,380,stillborn,female,Frontal
+198,Normative Control,stillborn/neonates,,29,wks,230,unknown,20 hs,male,Frontal
+199,Normative Control,stillborn/neonates,,29,wks,240,365,07 ds,female,Frontal
+200,Normative Control,stillborn/neonates,,29,wks,290,390,24 hs,male,Horizontal
+201,Normative Control,stillborn/neonates,,29,wks,200,300,07 hs,female,Horizontal
+202,Normative Control,stillborn/neonates,,29,wks,250,360,29 hs,female,Frontal
+203,Normative Control,stillborn/neonates,,29,wks,265,365,stillborn,female,Horizontal
+204,Normative Control,stillborn/neonates,,30,wks,270,375,07 hs,male,Frontal
+205,Normative Control,stillborn/neonates,,30,wks,280,440,06 hs,female,Frontal
+206,Normative Control,stillborn/neonates,,30,wks,260,390,stillborn,female,Horizontal
+207,Normative Control,stillborn/neonates,,30,wks,270,365,24 hs,male,Sagittal
+208,Normative Control,stillborn/neonates,,30,wks,270,380,stillborn,female,Frontal
+209,Normative Control,stillborn/neonates,,30,wks,235,350,17 hs,female,Frontal
+210,Normative Control,stillborn/neonates,,30,wks,260,380,stillborn,male,Horizontal
+211,Normative Control,stillborn/neonates,,30,wks,295,425,28 hs,male,Horizontal
+212,Normative Control,stillborn/neonates,,30,wks,260,375,17 hs,male,Horizontal
+213,Normative Control,stillborn/neonates,,30,wks,300,unknown,stillborn,male,Frontal
+214,Normative Control,stillborn/neonates,,31,wks,250,420,48 hs,male,Frontal
+215,Normative Control,stillborn/neonates,,31,wks,280,420,stillborn,male,Sagittal
+216,Normative Control,stillborn/neonates,,31,wks,270,420,stillborn,female,Frontal
+217,Normative Control,stillborn/neonates,,31,wks,288,410,48 hs,male,Frontal
+218,Normative Control,stillborn/neonates,,31,wks,260,400,01 hr,female,Horizontal
+219,Normative Control,stillborn/neonates,,31,wks,280,unknown,10 hs,male,Frontal
+220,Normative Control,stillborn/neonates,,31,wks,300,425,16 hs,male,Frontal
+221,Normative Control,stillborn/neonates,,31,wks,285,unknown,07 ds,male,Frontal
+222,Normative Control,stillborn/neonates,,31,wks,265,unknown,05 hs,male,Frontal
+223,Normative Control,stillborn/neonates,,32,wks,280,420,89 hs,male,Frontal
+224,Normative Control,stillborn/neonates,,32,wks,300,420,02 ds,male,Sagittal
+225,Normative Control,stillborn/neonates,,32,wks,240,370,02 ds,female,Horizontal
+226,Normative Control,stillborn/neonates,,32,wks,300,unknown,stillborn,female,Horizontal
+227,Normative Control,stillborn/neonates,,32,wks,270,416,06 ds,male,Frontal
+228,Normative Control,stillborn/neonates,,32,wks,260,380,08 hs,male,Frontal
+229,Normative Control,stillborn/neonates,,32,wks,300,440,14 hs,female,Frontal
+230,Normative Control,stillborn/neonates,,32,wks,230,370,62 hs,female,Frontal
+231,Normative Control,stillborn/neonates,,32,wks,230,390,10 hs,male,Frontal
+232,Normative Control,stillborn/neonates,,32,wks,270,400,03 hs,female,Sagittal
+233,Normative Control,stillborn/neonates,,32,wks,255,375,38 hs,female,Frontal
+234,Normative Control,stillborn/neonates,,32,wks,275,390,18 hs,female,Sagittal
+235,Normative Control,stillborn/neonates,,32,wks,290,400,08 hs,female,Frontal
+236,Normative Control,stillborn/neonates,,32,wks,294,420,21 hs,male,Horizontal
+237,Normative Control,stillborn/neonates,,32,wks,285,385,stillborn,female,Frontal
+238,Normative Control,stillborn/neonates,,32,wks,290,440,07 hs,male,Horizontal
+239,Normative Control,stillborn/neonates,,32,wks,295,440,29 hs,female,Horizontal
+240,Normative Control,stillborn/neonates,,32,wks,270,400,30 hs,male,Frontal
+241,Normative Control,stillborn/neonates,,32,wks,270,400,24 hs,male,Horizontal
+242,Normative Control,stillborn/neonates,,32,wks,320,470,24 hs,male,Sagittal
+243,Normative Control,stillborn/neonates,,32,wks,300,410,stillborn,female,Frontal
+244,Normative Control,stillborn/neonates,,33,wks,240,340,30 hs,female,Frontal
+245,Normative Control,stillborn/neonates,,33,wks,270,410,01 hr,female,Horizontal
+246,Normative Control,stillborn/neonates,,33,wks,315,455,03 hs,male,Sagittal
+247,Normative Control,stillborn/neonates,,33,wks,300,455,48 hs,male,Frontal
+248,Normative Control,stillborn/neonates,,33,wks,310,440,48 hs,female,Frontal
+249,Normative Control,stillborn/neonates,,33,wks,330,unknown,17 hs,female,Sagittal
+250,Normative Control,stillborn/neonates,,33,wks,310,470,48 hs,male,Frontal
+251,Normative Control,stillborn/neonates,,33,wks,335,unknown,04 hs,female,Sagittal
+252,Normative Control,stillborn/neonates,,33,wks,280,415,stillborn,female,Horizontal
+253,Normative Control,stillborn/neonates,,34,wks,280,350,22 hs,male,Horizontal
+254,Normative Control,stillborn/neonates,,34,wks,320,410,stillborn,female,Frontal
+255,Normative Control,stillborn/neonates,,34,wks,260,350,09 ds,female,Frontal
+256,Normative Control,stillborn/neonates,,34,wks,295,440,46 hs,female,Frontal
+257,Normative Control,stillborn/neonates,,34,wks,310,420,96 hs,male,Frontal
+258,Normative Control,stillborn/neonates,,34,wks,350,490,36 hs,male,Frontal
+259,Normative Control,stillborn/neonates,,34,wks,340,450,34 hs,male,Frontal
+260,Normative Control,stillborn/neonates,,34,wks,320,unknown,53 hs,male,Horizontal
+261,Normative Control,stillborn/neonates,,34,wks,260,390,stillborn,male,Sagittal
+262,Normative Control,stillborn/neonates,,34,wks,300,440,18 hs,male,Sagittal
+263,Normative Control,stillborn/neonates,,35,wks,280,420,07 ds,male,Frontal
+264,Normative Control,stillborn/neonates,,35,wks,330,490,24 hs,male,Sagittal
+265,Normative Control,stillborn/neonates,,35,wks,315,465,03 hs,male,Horizontal
+266,Normative Control,stillborn/neonates,,35,wks,300,unknown,72 hs,male,Frontal
+267,Normative Control,stillborn/neonates,,35,wks,340,475,stillborn,female,Frontal
+268,Normative Control,stillborn/neonates,,35,wks,320,470,54 hs,male,Frontal
+269,Normative Control,stillborn/neonates,,35,wks,340,unknown,12 hs,female,Frontal
+270,Normative Control,stillborn/neonates,,35,wks,355,490,10 hs,female,Sagittal
+271,Normative Control,stillborn/neonates,,35,wks,295,425,48 hs,female,Horizontal
+272,Normative Control,stillborn/neonates,,35,wks,295,430,03 hs,male,Horizontal
+273,Normative Control,stillborn/neonates,,35,wks,290,400,stillborn,female,Frontal
+274,Normative Control,stillborn/neonates,,35,wks,315,455,23 hs,male,Frontal
+275,Normative Control,stillborn/neonates,,35,wks,310,unknown,24 hs,male,Sagittal
+276,Normative Control,stillborn/neonates,,36,wks,290,465,Stillborn,male,Sagittal
+277,Normative Control,newborn/infants,,36,wks,390,550,53 ds,male,Horizontal
+278,Normative Control,stillborn/neonates,,36,wks,330,500,stillborn,male,Horizontal
+279,Normative Control,stillborn/neonates,,36,wks,315,455,12 hs,male,Sagittal
+280,Normative Control,stillborn/neonates,,36,wks,320,unknown,stillborn,male,Horizontal
+281,Normative Control,stillborn/neonates,,36,wks,480,unknown,04 ds,female,Sagittal
+282,Normative Control,stillborn/neonates,,36,wks,340,490,02 hs,female,Frontal
+283,Normative Control,stillborn/neonates,,36,wks,350,500,26 hs,male,Horizontal
+284,Normative Control,stillborn/neonates,,36,wks,300,440,22 hs,female,Frontal
+285,Normative Control,stillborn/neonates,,36,wks,300,unknown,48 hs,female,Frontal
+286,Normative Control,stillborn/neonates,,36,wks,unknown,310,stillborn,female,Frontal
+287,Normative Control,stillborn/neonates,,36,wks,290,430,48 hs,female,Frontal
+288,Normative Control,stillborn/neonates,,36,wks,350,500,29 hs,male,Frontal
+289,Normative Control,stillborn/neonates,,36,wks,365,unknown,03 ds,male,Frontal
+290,Normative Control,stillborn/neonates,,36,wks,310,460,stillborn,female,Frontal
+291,Normative Control,stillborn/neonates,,36,wks,310,410,stillborn,male,Horizontal
+292,Normative Control,stillborn/neonates,,36,wks,330,470,30 hs,male,Horizontal
+293,Normative Control,newborn/infants,,36,wks,unknown,480,28 ds,female,Frontal
+294,Normative Control,newborn/infants,,37,wks,440,600,07 ms,male,Frontal
+295,Normative Control,stillborn/neonates,,37,wks,310,440,01 hr,female,Sagittal
+296,Normative Control,stillborn/neonates,,37,wks,320,430,stillborn,male,Horizontal
+297,Normative Control,newborn/infants,,37,wks,500,unknown,09 ms,male,Horizontal
+298,Normative Control,stillborn/neonates,,37,wks,340,440,21 hs,male,Frontal
+299,Normative Control,stillborn/neonates,,37,wks,320,470,43 hs,male,Horizontal
+300,Normative Control,stillborn/neonates,,37,wks,350,unknown,stillborn,male,Frontal
+301,Normative Control,stillborn/neonates,,37,wks,400,550,15 hs,male,Frontal
+302,Normative Control,stillborn/neonates,,37,wks,310,unknown,72 hs,female,Frontal
+303,Normative Control,stillborn/neonates,,37,wks,350,unknown,stillborn,male,Frontal
+304,Normative Control,stillborn/neonates,,37,wks,354,490,84 hs,female,Horizontal
+305,Normative Control,stillborn/neonates,,37,wks,350,490,44 hs,male,Frontal
+306,Normative Control,stillborn/neonates,,37,wks,280,425,stillborn,female,Frontal
+307,Normative Control,stillborn/neonates,,37,wks,310,450,stillborn,male,Horizontal
+308,Normative Control,stillborn/neonates,,37,wks,350,480,stillborn,male,Frontal
+309,Normative Control,stillborn/neonates,,37,wks,340,450,72 hs,female,Sagittal
+310,Normative Control,stillborn/neonates,,37,wks,350,470,60 hs,male,Horizontal
+311,Normative Control,stillborn/neonates,,38,wks,340,490,stillborn,female,Frontal
+312,Normative Control,newborn/infants,,38,wks,390,550,45 ds,female,Sagittal
+313,Normative Control,stillborn/neonates,,38,wks,320,450,stillborn,female,Sagittal
+314,Normative Control,stillborn/neonates,,38,wks,330,480,25 ds,male,Horizontal
+315,Normative Control,stillborn/neonates,,38,wks,390,500,15 hs,male,Horizontal
+316,Normative Control,stillborn/neonates,,38,wks,330,480,11 hs,female,Frontal
+317,Normative Control,stillborn/neonates,,38,wks,310,440,stillborn,female,Frontal
+318,Normative Control,stillborn/neonates,,38,wks,unknown,480,16 ds,female,Frontal
+319,Normative Control,stillborn/neonates,,38,wks,300,490,03 hs,female,Horizontal
+320,Normative Control,stillborn/neonates,,38,wks,300,440,48 hs,female,Frontal
+321,Normative Control,stillborn/neonates,,38,wks,330,unknown,01 hr,female,Frontal
+322,Normative Control,stillborn/neonates,,38,wks,320,470,stillborn,female,Frontal
+323,Normative Control,stillborn/neonates,,38,wks,320,460,04 hs,female,Frontal
+324,Normative Control,stillborn/neonates,,38,wks,360,unknown,27 hs,male,Horizontal
+325,Normative Control,stillborn/neonates,,39,wks,320,470,stillborn,female,Frontal
+326,Normative Control,stillborn/neonates,,39,wks,365,520,stillborn,male,Frontal
+327,Normative Control,stillborn/neonates,,39,wks,350,490,stillborn,female,Frontal
+328,Normative Control,stillborn/neonates,,39,wks,340,480,03 hs,female,Horizontal
+329,Normative Control,stillborn/neonates,,39,wks,340,500,stillborn,male,Horizontal
+330,Normative Control,stillborn/neonates,,39,wks,325,480,48 hs,female,Frontal
+331,Normative Control,stillborn/neonates,,39,wks,330,500,stillborn,female,Frontal
+332,Normative Control,stillborn/neonates,,39,wks,320,330,stillborn,male,Horizontal
+333,Normative Control,stillborn/neonates,,39,wks,380,unknown,12 hs,female,Frontal
+334,Normative Control,stillborn/neonates,,39,wks,340,480,13 hs,female,Sagittal
+335,Normative Control,stillborn/neonates,,39,wks,310,420,03 hs,male,Sagittal
+336,Normative Control,stillborn/neonates,,39,wks,340,unknown,stillborn,female,Horizontal
+337,Normative Control,stillborn/neonates,,39,wks,320,unknown,stillborn,male,Horizontal
+338,Normative Control,stillborn/neonates,,40,wks,330,500,24 hs,male,Frontal
+339,Normative Control,stillborn/neonates,,40,wks,unknown,520,stillborn,female,Sagittal
+340,Normative Control,newborn/infants,,40,wks,370,530,33 ds,female,Horizontal
+341,Normative Control,stillborn/neonates,,40,wks,350,500,01 hr,female,Sagittal
+342,Normative Control,newborn/infants,,40,wks,430,635,04 ms,male,Frontal
+343,Normative Control,stillborn/neonates,,40,wks,340,515,stillborn,male,Frontal
+344,Normative Control,stillborn/neonates,,40,wks,340,unknown,02 ds,male,Sagittal
+345,Normative Control,stillborn/neonates,,40,wks,360,unknown,01 hr,male,Frontal
+346,Normative Control,stillborn/neonates,,40,wks,unknown,unknown,stillborn,female,Sagittal
+347,Normative Control,stillborn/neonates,,40,wks,350,500,96 hs,female,Sagittal
+348,Normative Control,stillborn/neonates,,40,wks,unknown,520,stillborn,male,Frontal
+349,Normative Control,stillborn/neonates,,40,wks,315,465,14 ds,female,Horizontal
+350,Normative Control,stillborn/neonates,,40,wks,320,470,stillborn,male,Frontal
+351,Normative Control,stillborn/neonates,,40,wks,350,500,12 hs,female,Frontal
+352,Normative Control,stillborn/neonates,,40,wks,335,545,48 hs,male,Frontal
+353,Normative Control,stillborn/neonates,,40,wks,370,490,stillborn,female,Frontal
+354,Normative Control,stillborn/neonates,,40,wks,370,480,07 hs,male,Frontal
+355,Normative Control,stillborn/neonates,,40,wks,330,480,03 hs,female,Frontal
+356,Normative Control,stillborn/neonates,,40,wks,unknown,480,stillborn,male,Frontal
+357,Normative Control,stillborn/neonates,,40,wks,350,510,stillborn,female,Frontal
+358,Normative Control,stillborn/neonates,,40,wks,345,500,stillborn,female,Horizontal
+359,Normative Control,stillborn/neonates,,40,wks,370,530,68 hs,male,Frontal
+360,Normative Control,stillborn/neonates,,40,wks,340,495,06 hs,male,Horizontal
+361,Normative Control,stillborn/neonates,,40,wks,340,unknown,01 hr,female,Sagittal
+362,Normative Control,stillborn/neonates,,40,wks,360,470,28 hs,female,Frontal
+363,Normative Control,stillborn/neonates,,40,wks,360,510,stillborn,female,Sagittal
+364,Normative Control,stillborn/neonates,,40,wks,370,520,stillborn,male,Sagittal
+365,Normative Control,stillborn/neonates,,40,wks,340,500,stillborn,male,Horizontal
+366,Normative Control,newborn/infants,,41,wks,380,570,48 ds,female,Frontal
+367,Normative Control,stillborn/neonates,,41,wks,360,500,stillborn,female,Sagittal
+368,Normative Control,stillborn/neonates,,41,wks,320,490,11 ds,male,Frontal
+369,Normative Control,stillborn/neonates,,41,wks,370,unknown,stillborn,female,Frontal
+370,Normative Control,stillborn/neonates,,41,wks,350,unknown,01 hr,male,Sagittal
+371,Normative Control,newborn/infants,,41,wks,440,690,04 ms,male,Frontal
+372,Normative Control,stillborn/neonates,,41,wks,340,500,stillborn,male,Horizontal
+373,Normative Control,stillborn/neonates,,41,wks,360,520,stillborn,female,Frontal
+374,Normative Control,stillborn/neonates,,41,wks,350,520,stillborn,male,Frontal
+375,Normative Control,stillborn/neonates,,41,wks,340,490,48 hs,male,Frontal
+376,Normative Control,stillborn/neonates,,41,wks,310,unknown,02 ds,female,Sagittal
+377,Normative Control,stillborn/neonates,,41,wks,310,450,stillborn,female,Sagittal
+378,Normative Control,stillborn/neonates,,42,wks,unknown,unknown,11 hs,male,Frontal
+379,Normative Control,stillborn/neonates,,42,wks,390,500,Stillborn,female,Frontal
+380,Normative Control,stillborn/neonates,,42,wks,370,530,17 hs,female,Frontal
+381,Normative Control,newborn/infants,,42,wks,500,730,11 ms,male,Sagittal
+382,Normative Control,stillborn/neonates,,42,wks,360,500,72 hs,female,Frontal
+383,Normative Control,stillborn/neonates,,42,wks,370,540,05 hs,female,Frontal
+384,Normative Control,stillborn/neonates,,42,wks,unknown,unknown,stillborn,male,Frontal
+385,Normative Control,stillborn/neonates,,42,wks,350,480,stillborn,male,Frontal
+386,Normative Control,stillborn/neonates,,42,wks,380,480,10 hs,male,Frontal
+387,Normative Control,stillborn/neonates,,42,wks,380,540,stillborn,male,Horizontal
+388,Normative Control,stillborn/neonates,,42,wks,370,510,stillborn,female,Horizontal
+389,Normative Control,stillborn/neonates,,42,wks,360,520,04 hs,female,Frontal
+390,Normative Control,stillborn/neonates,,43,wks,380,550,31 hs,male,Horizontal
+391,Normative Control,stillborn/neonates,,43,wks,330,480,24 hs,female,Frontal
+392,Normative Control,stillborn/neonates,,43,wks,370,510,stillborn,female,Sagittal
+393,Normative Control,stillborn/neonates,,43,wks,370,unknown,stillborn,female,Sagittal
+394,Normative Control,stillborn/neonates,,43,wks,410,550,stillborn,female,Sagittal
+395,Normative Control,stillborn/neonates,,43,wks,370,520,stillborn,male,Frontal
+396,Normative Control,stillborn/neonates,,43,wks,370,550,01 hr,female,Frontal
+397,Normative Control,stillborn/neonates,,43,wks,335,485,stillborn,male,Horizontal
+398,Normative Control,newborn/infants,unknown,--,unk,unknown,unknown,04 ms,male,Frontal
+399,Normative Control,newborn/infants,unknown,--,unk,unknown,unknown,60 ds,male,Horizontal
+400,Normative Control,newborn/infants,unknown,--,unk,unknown,unknown,70 ds,male,Frontal
+401,Normative Control,newborn/infants,unknown,unk,unk,unknown,unknown,08 ms,male,Frontal
+402,Normative Control,children,3,--,yrs,,,,male,Frontal
+403,Normative Control,children,4,--,yrs,,,,female,Sagittal
+404,Normative Control,children,4,--,yrs,,,,female,Frontal
+405,Normative Control,children,5,--,yrs,,,,male,Sagittal
+406,Normative Control,children,6,--,yrs,,,,female,Sagittal
+407,Normative Control,children,6,--,yrs,,,,male,Frontal
+408,Normative Control,children,6,--,yrs,,,,male,Sagittal
+409,Normative Control,children,8,--,yrs,,,,female,Sagittal
+410,Normative Control,children,9,--,yrs,,,,female,Sagittal
+411,Normative Control,children,9,--,yrs,,,,male,Frontal
+412,Normative Control,young adults,11,--,yrs,,,,female,Frontal
+413,Normative Control,young adults,16,--,yrs,,,,female,Sagittal
+414,Normative Control,young adults,19,--,yrs,,,,male,Frontal
+415,Normative Control,adults,50,--,yrs,,,,male,Frontal
+416,Normative Control,adults,53,--,yrs,,,,male,Sagittal
+417,Normative Control,adults,58,--,yrs,,,,male,Frontal
+418,Normative Control,adults,66,--,yrs,,,,male,Sagittal
+419,Normative Control,adults,75,--,yrs,,,,male,Horizontal
+420,Normative Control,adults,86,--,yrs,,,,male,Frontal
+421,Normative Control,adults,89,--,yrs,,,,male,Sagittal
+422,Normative Control,adults,92,--,yrs,,,,female,Sagittal
+423,Normative Control,adults,92,--,yrs,,,,male,Sagittal
+424,Normative Control,adults,94,--,yrs,,,,female,Frontal
+425,Normative Control,adults,101,--,yrs,,,,male,Celloidin Block
+426,Geographic origin set,,12,--,yrs,,,,male,Frontal
+427,Geographic origin set,,22,--,yrs,,,,male,Frontal
+428,Geographic origin set,,30,--,yrs,,,,male,Frontal
+429,Geographic origin set,,30,--,yrs,,,,male,Frontal
+430,Geographic origin set,,32,--,yrs,,,,male,Frontal
+431,Geographic origin set,,38,--,yrs,,,,male,Frontal
+432,Geographic origin set,,45,--,yrs,,,,male,Sagittal/Frontal

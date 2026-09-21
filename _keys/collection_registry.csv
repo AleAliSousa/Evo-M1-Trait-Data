@@ -1,15 +1,24 @@
 status,collection_group,collection_string,description,evidence_note
-documentation_only_nothing_reads_this_yet,DUSSELDORF_HIRNFORSCHUNG,Stephan,"Stephan collection, Hirnforschung, Duesseldorf","literal collection strings ""Zilles from Stephan"" and ""Hirnforschung / Stephan-Zilles shared collection"""
-documentation_only_nothing_reads_this_yet,DUSSELDORF_HIRNFORSCHUNG,Zilles,"Zilles collection, same institute",physically adjacent to Stephan; codes can drift between them
-documentation_only_nothing_reads_this_yet,DUSSELDORF_HIRNFORSCHUNG,Zilles/Semendeferi,"sections cut from Zilles brains, held by Semendeferi",literal crosswalk collection string; one animal in two collections in different physical form
-documentation_only_nothing_reads_this_yet,DUSSELDORF_HIRNFORSCHUNG,Semendeferi,Semendeferi collection,"attribution appears only via MacLeod__2000 and Barger_etal_2007, never a Semendeferi-authored table"
-documentation_only_nothing_reads_this_yet,DUSSELDORF_HIRNFORSCHUNG,Hirnforschung,institute name used as a sample label,MacLeod__2000 Appendix I prints sample = Hirnforschung for Stephan and Zilles material alike
-documentation_only_nothing_reads_this_yet,DUSSELDORF_HIRNFORSCHUNG,Frahm,Frahm working records over Stephan material,Frahm art_number/specimen_number are the Stephan accession numbers
-documentation_only_nothing_reads_this_yet,WELKER_AFIP,Welker/AFIP,"Welker Wisconsin collection, later NMHM/AFIP",collection transferred institution; provenance qualifier belongs in its own column
-documentation_only_nothing_reads_this_yet,YAKOVLEV,Yakovlev-Haleem,Yakovlev-Haleem human collection,
-documentation_only_nothing_reads_this_yet,GWU,GWU,George Washington University,
-documentation_only_nothing_reads_this_yet,MOUNT_SINAI,Mount Sinai,Mount Sinai School of Medicine,
-documentation_only_nothing_reads_this_yet,GAAP,GAAP,Great Ape Aging Project,
-documentation_only_nothing_reads_this_yet,UCSD,UCSD,University of California San Diego,
-documentation_only_nothing_reads_this_yet,KAAS_VANDERBILT,Kaas laboratory / Vanderbilt,Kaas laboratory,"sub-provenances stay in the collection string, not as separate groups"
-documentation_only_nothing_reads_this_yet,FOSSIL_<site>,fossil hominin (<site>),one group per fossil locality,"fossil designations are international identifiers; match globally, not within a group"
+active,DUSSELDORF_HIRNFORSCHUNG,Stephan,"Stephan collection, Hirnforschung, Duesseldorf","co-located and specimen-sharing collections at one institute; codes drift between them, so they must be matched as one group"
+active,DUSSELDORF_HIRNFORSCHUNG,Zilles,"Zilles collection, same institute","co-located and specimen-sharing collections at one institute; codes drift between them, so they must be matched as one group"
+active,DUSSELDORF_HIRNFORSCHUNG,Zilles/Semendeferi,"sections cut from Zilles brains, held by Semendeferi","co-located and specimen-sharing collections at one institute; codes drift between them, so they must be matched as one group"
+active,DUSSELDORF_HIRNFORSCHUNG,Semendeferi,Semendeferi collection,"co-located and specimen-sharing collections at one institute; codes drift between them, so they must be matched as one group"
+active,DUSSELDORF_HIRNFORSCHUNG,Hirnforschung,institute name used as a sample label,"co-located and specimen-sharing collections at one institute; codes drift between them, so they must be matched as one group"
+active,DUSSELDORF_HIRNFORSCHUNG,Hirnforschung / Stephan-Zilles shared collection,explicit shared-collection label,"co-located and specimen-sharing collections at one institute; codes drift between them, so they must be matched as one group"
+active,DUSSELDORF_HIRNFORSCHUNG,Frahm,Frahm working records over Stephan material,"co-located and specimen-sharing collections at one institute; codes drift between them, so they must be matched as one group"
+active,DUSSELDORF_HIRNFORSCHUNG,Stephan/Frahm,Stephan material in Frahm working records,"co-located and specimen-sharing collections at one institute; codes drift between them, so they must be matched as one group"
+active,DUSSELDORF_HIRNFORSCHUNG,Zilles from Stephan,Stephan material held by Zilles,"co-located and specimen-sharing collections at one institute; codes drift between them, so they must be matched as one group"
+active,WELKER_AFIP,Welker,"Welker Wisconsin collection, later NMHM/AFIP","collection transferred institution; the qualifier (AFIP / NMHM) belongs in collection_qualifier, not the group"
+active,WELKER_AFIP,Welker / University of Wisconsin comparative collection,"same collection, spelled out","collection transferred institution; the qualifier (AFIP / NMHM) belongs in collection_qualifier, not the group"
+active,YAKOVLEV,Yakovlev-Haleem,Yakovlev-Haleem human collection,
+active,GWU,GWU,George Washington University,
+active,MOUNT_SINAI,Mount Sinai,Mount Sinai School of Medicine,
+active,GAAP,GAAP,Great Ape Aging Project,
+active,UCSD,UCSD,University of California San Diego,
+active,KAAS_VANDERBILT,Kaas laboratory / Vanderbilt,Kaas laboratory,"""; from <institution>"" records the supplying colony, not a second collection; it is a qualifier"
+active,YERKES,Yerkes,Yerkes National Primate Research Center,"Yerkes is primarily a SOURCE institution; it also appears as a holder string, so it gets its own group. A Yerkes-scoped match means same source colony, not necessarily same holding collection."
+active,UNKNOWN,unknown,collection not established by the available source,never treat as a match: two UNKNOWN rows are not the same collection
+active,FOSSIL_<SITE>,"fossil hominin (<site>, <country>)","RULE: one group per fossil locality, slug of the site name before the first comma, ASCII-folded","fossil designations are international identifiers; match globally, not within a group"
+active,<parse rule>,A; B,RULE: split on top-level semicolons only (never inside parentheses); map each component; the row carries every group matched,"""Welker (University of Wisconsin comparative collection; later NMHM/AFIP)"" is ONE component"
+active,<parse rule>,X (qualifier),"RULE: a trailing parenthetical is a qualifier, not part of the collection name; it moves to collection_qualifier","""Zilles (ex Yerkes)"" and ""Zilles"" are the same collection"
+active,<parse rule>,...; from <institution>,"RULE: a component beginning ""from "" is a supplying-colony qualifier, not a collection",

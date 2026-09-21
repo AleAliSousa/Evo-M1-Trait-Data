@@ -1,0 +1,740 @@
+source_row,specimen_number,species,common_name,material,stain,plane,section_thickness_micrometers,number_of_slides,number_of_sections,collection_group,continuation_note
+1,1,Entosphenus Appendiz,lamprey,Brain,Tol. blue,Transverse,,15,450,CYCLOSTOMES,
+2,2,Petromyzon marinus unicolor,Sea lamprey,Brain,Tol. blue,Transverse,,20,368,CYCLOSTOMES,
+3,3,Ichthyomyzon unicolor,lamprey,Brain,Tol. blue,Transverse,20,5,213,CYCLOSTOMES,
+4,4,Ichthyomyzon unicolor,lamprey,Brain,Tol. blue,Sagittal,30,8,104,CYCLOSTOMES,
+5,5,Petromyzon marinus unicolor,Sea lamprey,Brain,Tol. blue,Sagittal,40?,20,160,CYCLOSTOMES,
+6,6,Ichthyomyzon unicolor,lamprey,Brain,Tol. blue,Horizontal,30,7,120,CYCLOSTOMES,
+7,7,Petromyzon marinus unicolor,Sea lamprey,Brain,Tol. blue,Horizontal,40,11,72,CYCLOSTOMES,
+8,8,Entosphenus appendiz,lamprey,Brain,Pyr. silver,Transverse,25,8,433,CYCLOSTOMES,
+9,9,Petromyzon marinus unicolor,Sea lamprey,Brain,Pyr. silver,Transverse,30,12,291,CYCLOSTOMES,
+10,10,Ichthyomyzon unicolor,lamprey,Brain,Pyr. silver,Transverse,30,5,281,CYCLOSTOMES,
+11,11,Ichthyomyzon unicolor,lamprey,Brain,Pyr. silver,Transverse,30,5,265,CYCLOSTOMES,
+12,12,Ichthyomyzon unicolor,lamprey,Brain,Pyr. silver,Transverse,30,8,337,CYCLOSTOMES,
+13,13,Petromyzon marinus unicolor,Sea lamprey,Brain,Pyr. silver,Sagittal,25,10,123,CYCLOSTOMES,
+14,14,Petromyzon marinus unicolor,Sea lamprey,Brain,Pyr. silver,Horizontal,25,10,105,CYCLOSTOMES,
+15,15,Entosphenus appendiz,lamprey,Brain,Pyr. silver,Horizontal,30,10,102,CYCLOSTOMES,
+16,16,Mustelus canis,Smooth Dogfish,Brain,Tol. blue,Transverse,15,135,3164,ELASMOBRANCHS,
+17,17,Mustelus canis,Smooth Dogfish,Brain,Pyr. silver,Transverse,20,119,1875,ELASMOBRANCHS,
+18,18,Mustelus canis,Smooth Dogfish,Brain,Pyr. silver,Horizontal,20,211,663,ELASMOBRANCHS,
+19,19,Mustelus canis,Smooth Dogfish,Brain,Pyr. silver,Horizontal,20,270,546,ELASMOBRANCHS,
+20,696,Mustela canis,Smooth Dogfish?,Brain,Tol. blue,Transverse,25,139,1530,ELASMOBRANCHS,
+21,20,Amia calva,Bowfin,Brain,Tol. blue,Transverse,40,20,795,PISCES,
+22,21,Amia calva,Bowfin,Brain,Pyr. silver,Transverse,25,16,917,PISCES,
+23,22,Amia calva,Bowfin,Brain,Pyr. silver,Sagittal,25,16,252,PISCES,
+24,23,Eupomotis gibbosus,Sunfish,Brain,Tol. blue,Transverse,40,3,184,PISCES,
+25,24,Eupomotis gibbosus,Sunfish,Brain,Tol. blue,Sagittal,40,4,112,PISCES,
+26,25,Salmo salar sobago,Atlantic salmon,Brain,Tol. blue,Transverse,25,10,486,PISCES,
+27,26,Salmo salar sobago,Atlantic salmon,Brain,Pyr. Silver,Sagittal,10,9,528,PISCES,
+28,27,Salmo gairdnieri iradeus,Native steelhead or Rainbow trout,Brain,Tol. blue,Transverse,25,8,400,PISCES,
+29,28,Salvelinus fontinalis,Brook trout,Brain,Tol. blue,Transverse,25,7,316,PISCES,
+30,29,Salvelinus fontinalis,Brook trout,Brain,Tol. blue,Horizontal,25,5,155,PISCES,
+31,30,Cyprinus carpio,Carp,Brain,Pyr. silver,Transverse,,19,794,PISCES,
+32,31,Cyprinus carpio,Carp,Brain,Pyr. silver,Sagittal,25,23,349,PISCES,
+33,32,Cyprinus carpio,Carp,Brain,Weigert,Transverse,40,20,534,PISCES,
+34,635,Cyprinus carpio,Carp,Brain,Thion.,Transverse,,106,1060,PISCES,
+35,636,Cyprinus carpio,Carp,Brain,Thion.,Horizontal,,80,655,PISCES,
+36,637,Cyprinus carpio,Carp,Brain,Pyr. silver,Sagittal,,33,281,PISCES,
+37,638,Cyprinus carpio,Carp,Brain,Pyr. silver,Horizontal,,29,348,PISCES,
+38,639,Cyprinus carpio,Carp,Brain,Pyr. silver,Horizontal,,30,254,PISCES,
+39,33,Amoirus sp.,,Brain & cord,H & E,Sagittal,20,15,259,AMPHIBIANS,
+40,34,Amblystoma tigrinum,Tiger Salamander,Brain,Tol. blue,Transverse,20,6,369,AMPHIBIANS,
+41,35,Amblystoma tigrinum,Tiger Salamander,Brain,Tol. blue,Sagittal,20,4,136,AMPHIBIANS,
+42,36,Amblystoma tigrinum,Tiger Salamander,Brain,Tol. blue,Sagittal,40,3,82,AMPHIBIANS,
+43,37,Amblystoma tigrinum,Tiger Salamander,Brain,Tol. blue,Horizontal,20,3,107,AMPHIBIANS,
+44,38,Amblystoma tigrinum,Tiger Salamander,Brain,Pyr. silver,Transverse,15 to 20,5,400,AMPHIBIANS,
+45,39,Amblystoma tigrinum,Tiger Salamander,Brain,Pyr. silver,Transverse,15 to 20,4,383,AMPHIBIANS,
+46,40,Amblystoma tigrinum,Tiger Salamander,Brain,Pyr. silver,Sagittal,15 to 20,3,140,AMPHIBIANS,
+47,42,Amblystoma tigrinum,Tiger Salamander,Brain,Pyr. silver,Horizontal,15 to 20,4,135,AMPHIBIANS,
+48,43,Necturus marculosus,Mudpuppy,Brain,Tol. blue,Transverse,40,15,416,AMPHIBIANS,
+49,44,Necturus marculosus,Mudpuppy,Brain,Tol. blue,Sagittal,30,12,144,AMPHIBIANS,
+50,45,Necturus marculosus,Mudpuppy,Brain,Tol. blue,Sagittal,20,10,176,AMPHIBIANS,
+51,46,Necturus marculosus,Mudpuppy,Brain,Tol. blue,Horizontal,40,5,72,AMPHIBIANS,
+52,47,Necturus marculosus,Mudpuppy,Brain,Pyr. silver,Transverse,25,7,,AMPHIBIANS,
+53,48,Necturus marculosus,Mudpuppy,Brain,Pyr. silver,Sagittal,25,5,,AMPHIBIANS,
+54,49,Necturus marculosus,Mudpuppy,Brain,Pyr. silver,Horizontal,15 to 20,7,,AMPHIBIANS,
+55,50,Necturus marculosus,Mudpuppy,Brain,Pyr. silver,Horizontal,15 to 20,4,,AMPHIBIANS,
+56,51,Necturus marculosus,Mudpuppy,Brain,Weigert,Horizontal,,5,,AMPHIBIANS,
+57,52,Necturus marculosus,Mudpuppy,Spinal cord,Tol. blue,Transverse,50,30,,AMPHIBIANS,
+58,53,Necturus marculosus,Mudpuppy,Spinal cord,Tol. blue,Horizontal,40,7,,AMPHIBIANS,
+59,54,Necturus marculosus,Mudpuppy,Spinal cord,Tol. blue,Horizontal,40,8,,AMPHIBIANS,
+60,55,Siren lacertina,Greater Siren,Brain,Tol. blue,Transverse,25,8,,AMPHIBIANS,
+61,56,Hyla sp.,Tree frog,Brain,Tol. blue,Transverse,20,16,,AMPHIBIANS,
+62,57,Hyla sp.,Tree frog,Brain,Tol. blue,Sagittal,15,9,,AMPHIBIANS,
+63,58,Rana sp.,frog,Spinal cord,Tol. blue,Horizontal,40,5,,AMPHIBIANS,
+64,59,Rana sp.,frog,Spinal cord,Tol. blue,Horizontal,25,7,,AMPHIBIANS,
+65,60,Rana pipiens,Northern Leopard Frog,Brain,Tol. blue,Transverse,25,7,,AMPHIBIANS,
+66,61,Rana catesbiana,Bullfrog,Brain,Tol. blue,Transverse,25,15,,AMPHIBIANS,
+67,62,Rana catesbiana,Bullfrog,Brain,Tol. blue,Sagittal,30,12,,AMPHIBIANS,
+68,63,Rana catesbiana,Bullfrog,Brain,Tol. blue,Sagittal,40,10,,AMPHIBIANS,
+69,64,Rana catesbiana,Bullfrog,Brain,Tol. blue,Horizontal,25,14,,AMPHIBIANS,
+70,65,Rana catesbiana,Bullfrog,Brain,Tol. blue,Horizontal,20,10,,AMPHIBIANS,
+71,66,Rana catesbiana,Bullfrog,Brain,Tol. blue,Horizontal,25 to 30,11,,AMPHIBIANS,
+72,67,Rana catesbiana,Bullfrog,Brain,Weigert,Transverse,25,23,,AMPHIBIANS,
+73,68,Rana catesbiana,Bullfrog,Brain,Pal - Weigert,Sagittal,25,24,,AMPHIBIANS,
+74,69,Rana catesbiana,Bullfrog,Brain,Weigert,Sagittal,25,10,,AMPHIBIANS,
+75,70,Rana catesbiana,Bullfrog,Brain,Pal - Weigert,Horizontal,25,26,,AMPHIBIANS,
+76,71,Rana catesbiana,Bullfrog,Brain,Weigert,Horizontal,30,10,,AMPHIBIANS,
+77,72,Rana pipiens,Northern Leopard Frog,Brain,Weigert,Transverse,25,15,,AMPHIBIANS,
+78,73,Rana catesbiana,Bullfrog,Brain,Pyr. silver,Transverse,20,10,,AMPHIBIANS,
+79,74,Rana catesbiana,Bullfrog,Brain,Pyr. silver,Transverse,15 to 20,9,,AMPHIBIANS,
+80,75,Rana catesbiana,Bullfrog,Brain (Head),Pyr. silver,Sagittal,15,55,,AMPHIBIANS,
+81,76,Rana catesbiana,Bullfrog,Brain (Head),Pyr. silver,Sagittal,20,35,,AMPHIBIANS,
+82,77,Rana catesbiana,Bullfrog,Brain,Pyr. silver,Sagittal,15 to 20,11,,AMPHIBIANS,
+83,78,Rana catesbiana,Bullfrog,Brain,Pyr. silver,Sagittal,20,12,,AMPHIBIANS,
+84,79,Rana catesbiana,Bullfrog,Brain,Pyr. silver,Horizontal,15 to 20,12,,AMPHIBIANS,
+85,665,Rana catesbiana,Bullfrog,Whole head,Congo red & ?,Transverse,100,328,681,AMPHIBIANS,
+86,80,Chelhydra serpentina,Snapping Turtle,Brain,Tol. blue,Transverse,40,18,,REPTILES,
+87,81,Chelhydra serpentina (6 day),Snapping Turtle,Brain,Tol. blue,Transverse,20,6,,REPTILES,
+88,82,Chelhydra serpentina,Snapping Turtle,Spinal cord,Tol. blue,Horizontal,40,41,,REPTILES,
+89,83,Chelhydra serpentina,Snapping Turtle,Brain & cord,Pyr. silver,Transverse,12 to 15,27,,REPTILES,
+90,84,Chelhydra serpentina (6 day),Snapping Turtle,Brain,Pyr. silver,Transverse(?),12 to 15,4,,REPTILES,
+91,85,Chelhydra serpentina (1 day),Snapping Turtle,Brain,Pyr. silver,Transverse,12,3,,REPTILES,
+92,86,Chelhydra serpentina (3 day),Snapping Turtle,Brain,Pyr. silver,Transverse,10,4,,REPTILES,
+93,87,Chelhydra serpentina (3 day),Snapping Turtle,Brain,Pyr. silver,Sagittal,8 to 10,4,,REPTILES,
+94,88,Chelhydra serpentina (6 day),Snapping Turtle,Brain,Pyr. silver,Horizontal,10,3,,REPTILES,
+95,89,Chelhydra serpentina (3 day),Snapping Turtle,Brain,Pyr. silver,Horizontal,10,3,,REPTILES,
+96,90,Chelhydra serpentina,Snapping Turtle,Brain,Pyr. silver,Horizontal,20,35,,REPTILES,
+97,91,Sternotherus odoratus,Stinkpot,Brain,Pyr. silver,Transverse,25,6,,REPTILES,
+98,92,Sternotherus odoratus-9 cm.,Stinkpot,Brain,Pyr. silver,Transverse,15,18,,REPTILES,
+99,93,Sternotherus odoratus,Stinkpot,Brain,Pyr. silver,Sagittal,20,9,,REPTILES,
+100,94,Sternotherus odoratus,Stinkpot,Brain,Pyr. silver,Sagittal,20,23,,REPTILES,
+101,95,Emys melageris,turtle,Brain,Tol. blue,Transverse,40,13,,REPTILES,
+102,96,Graptemys pseudogeographica,False map turtle,Brain,Tol. blue,Transverse,25,6,,REPTILES,
+103,97,Graptemys pseudogeographica,False map turtle,Brain,Tol. blue,Transverse,25,6,,REPTILES,
+104,98,Chrysemys marginata,Midland painted turtle,Brain,Tol. blue,Sagittal,30,41,,REPTILES,
+105,99,Chrysemys marginata,Midland painted turtle,Brain,Tol. blue,Sagittal,,10,,REPTILES,
+106,100,Chrysemys marginata,Midland painted turtle,Brain,Tol. blue,Horizontal,50,11,,REPTILES,
+107,101,Chrysemys marginata,Midland painted turtle,Spinal cord,Tol. blue,Horizontal,30,16,,REPTILES,
+108,102,Chrysemys marginata,Midland painted turtle,Spinal cord,Tol. blue,Horizontal,40,35,,REPTILES,
+109,103,Ichthyomyzon unicolor,lamprey,Brain,Tol. blue,Transverse,30,5,263,REPTILES,
+110,104,Entosphenus appendiz,lamprey,Brain,Tol. blue,Horizontal,25,10,100,REPTILES,
+111,105,Ichthyomyzon unicolor,lamprey,Brain,Pyr. silver,Horizontal,40,4,50,REPTILES,
+112,106,Chrysemys picta,Painted turtle,Brain,Pyr. silver,Transverse,16,24,894,REPTILES,
+113,107,Chrysemys picta,Painted turtle,Brain,Pyr. silver,Horizontal,15,10,231,REPTILES,
+114,108,Chrysemys punctata,turtle,Brain,Tol. blue,Transverse,40,14,549,REPTILES,
+115,109,Chrysemys punctata,turtle,Brain,Pyr. silver,Transverse,20 to 25,17,775,REPTILES,
+116,110,Chrysemys punctata,turtle,Brain,Pyr. silver,Sagittal,15,53,321,REPTILES,
+117,111,Chrysemys punctata,turtle,Brain,Pyr. silver,Sagittal,20,60,455,REPTILES,
+118,112,Chrysemys punctata,turtle,Brain,Pyr. silver,Sagittal,20 to 25,22,402,REPTILES,
+119,113,Chrysemys punctata,turtle,Brain,Pyr. silver,Horizontal,20 to 25,18,292,REPTILES,
+120,114,Chrysemys punctata,turtle,Brain,Weigert,Transverse,25,57,793,REPTILES,
+121,115,Chrysemys punctata,turtle,Brain,Pal - Weigert,Sagittal,25,50,348,REPTILES,
+122,116,Chrysemys punctata,turtle,Brain,Weigert,Horizontal,,16,262,REPTILES,
+123,117,Chrysemys punctata,turtle,Brain,Weigert,Horizontal,25,19,239,REPTILES,
+124,118,Pseudemys elegans,Pond turtle,Brain,,Transverse,25,7,478,REPTILES,
+125,119,Pseudemys elegans,Pond turtle,Brain,Tol. blue,Horizontal,25,5,153,REPTILES,
+126,120,Pseudemys elegans,Pond turtle,Brain,Pyr. silver,Transverse,18,32,792,REPTILES,
+127,121,Pseudemys elegans,Pond turtle,Brain,Pyr. silver,Sagittal,20,53,378,REPTILES,
+128,122,Pseudemys elegans,Pond turtle,Brain,Pyr. silver,Horizontal,20,50,306,REPTILES,
+129,123,Pseudemys elegans,Pond turtle,Brain,Golgi,Sagittal,,3,53,REPTILES,
+130,124,Pseudemys elegans,Pond turtle,Brain,Golgi,Sagittal,,3,77,REPTILES,
+131,125,Anolis carolinensis,Green Anole,Brain,Tol. blue,Transverse,20,3,297,REPTILES,
+132,126,Anolis carolinensis,Green Anole,Brain,Tol. blue,Horizontal,20,2,219,REPTILES,
+133,127,Anolis carolinensis,Green Anole,Brain,Tol. blue,Sagittal,20,2,163,REPTILES,
+134,128,Anolis carolinensis,Green Anole,Brain,Iron - hemat.,Transverse,30,3,227,REPTILES,
+135,129,Anolis carolinensis,Green Anole,Brain,Pyr. silver,Transverse,15,4,309,REPTILES,
+136,130,Anolis carolinensis,Green Anole,Brain,Pyr. silver,Transverse,10 to 20,3,260,REPTILES,
+137,131,Anolis carolinensis,Green Anole,Brain,Pyr. silver,Transverse,10 to 20,3,318,REPTILES,
+138,132,Anolis carolinensis,Green Anole,Brain,Pyr. silver,Horizontal,15,3,190,REPTILES,
+139,133,Anolis carolinensis,Green Anole,Brain,Pyr. silver,Horizontal,18,2,137,REPTILES,
+140,134,Anolis carolinensis,Green Anole,Brain,Pyr. silver,Horizontal,10 to 15,2,190,REPTILES,
+141,135,Anolis carolinensis,Green Anole,Brain,Pyr. silver,Sagittal,10 to 15,2,180,REPTILES,
+142,136,Holbrookia maculata,Lesser earless lizard,Brain,Tol. blue,Sagittal,,3,153,REPTILES,
+143,137,Holbrookia maculata,Lesser earless lizard,Brain,Pyr. silver,Transverse,14,9,434,REPTILES,
+144,138,Callisaurus draconoides ventralis,Zebratail lizard,Brain,Pyr. silver,Transverse,14,9,434,REPTILES,
+145,139,Sceloporus magister magister,Desert spiny lizard,Brain,Pyr. silver,Transverse,15,13,525,REPTILES,
+146,140,Sceloporus magister magister,Desert spiny lizard,Brain,Pyr. silver,Sagittal,15,12,259,REPTILES,
+147,141,Sceloporus occidentalus riseriatus,Fence lizard,Brain,Pyr. silver,Sagittal,14,10,276,REPTILES,
+148,142,Chameleo sp.,Chameleon,Brain,Cresyl violet,Transverse,15,11,495,REPTILES,
+149,143,Phrynosoma platyrhinos platyrhinos,Desert horned lizard,Brain,Pyr. silver,Transverse,15,11,432,REPTILES,
+150,144,Phrynosoma sp.,Horned toad,Brain,Tol. blue,Transverse,20,6,367,REPTILES,
+151,145,Phrynosoma sp.,Horned toad,Brain,Tol. blue,Horizontal,20,3,144,REPTILES,
+152,146,Phrynosoma sp.,Horned toad,Brain,Tol. blue,Sagittal,20,4,212,REPTILES,
+153,147,Phrynosoma sp.,Horned toad,Brain,Iron - Hemat.,Transverse,,4,255,REPTILES,
+154,148,Phrynosoma sp.,Horned toad,Brain,Pyr. silver,Transverse,15 to 20,6,416,REPTILES,
+155,149,Phrynosoma sp.,Horned toad,Brain,Pyr. silver,Transverse,15 to 20,4,295,REPTILES,
+156,150,Phrynosoma sp.,Horned toad,Brain,Pyr. silver,Transverse,,5,391,REPTILES,
+157,151,Phrynosoma sp.,Horned toad,Brain,Pyr. silver,Transverse,,3,227,REPTILES,
+158,152,Phrynosoma sp.,Horned toad,Brain,Pyr. silver,Sagittal,10 to 20,3,196,REPTILES,
+159,153,Phrynosoma sp.,Horned toad,Brain,Pyr. silver,Sagittal,10 to 15,4,266,REPTILES,
+160,154,Varanus griseus,Desert monitor lizard,Brain,Tol. blue,Transverse,40,20,751,REPTILES,
+161,155,Heloderma suspectum,Gila monster,Brain,Tol. blue,Transverse,30,18,789,REPTILES,
+162,156,Heloderma suspectum,Gila monster,Brain,Tol. blue,Horizontal,30,17,160,REPTILES,
+163,157,Heloderma suspectum,Gila monster,Brain,Tol. blue,Sagittal,25 to 30,25,245,REPTILES,
+164,158,Heloderma suspectum,Gila monster,Brain,Pyr. silver,Transverse,15 to 30,15,914,REPTILES,
+165,159,Heloderma suspectum,Gila monster,Brain,Pyr. silver,Transverse,15 to 20,18,1016,REPTILES,
+166,160,Heloderma suspectum,Gila monster,Brain,Pyr. silver,Sagittal,25,15,272,REPTILES,
+167,161,Phrynosoma platyrhinos platyrhinos,Desert horned lizard,Brain,Pyr. silver,Sagittal,15,10,287,REPTILES,
+168,162,Python molurus,Python,Brain,Pyr. silver,Transverse,10 to 20,31,1559,REPTILES,
+169,163,Boa sp.,Boa,Brain,Pyr. silver,Transverse,20,5,398,REPTILES,
+170,164,Boa sp.,Boa,Brain,Pyr. silver,Transverse,30,6,358,REPTILES,
+171,165,Boa sp.,Boa,Brain,Pyr. silver,Horizontal,20,6,171,REPTILES,
+172,166,Boa sp.,Boa,Brain,Pyr. silver,Horizontal,15,5,199,REPTILES,
+173,167,Boa sp.,Boa,Brain,Pyr. silver,Sagittal,15,5,298,REPTILES,
+174,168,Natrix sp.,Ringed or Grass snake,Brain,Wei - gert,Transverse,,7,471,REPTILES,
+175,169,Natrix sp.,Ringed or Grass snake,Brain,Pyr. silver,Transverse,20,8,677,REPTILES,
+176,170,Natrix sp.,Ringed or Grass snake,Brain,Pyr. silver,Horizontal,20,7,189,REPTILES,
+177,171,Natrix sp.,Ringed or Grass snake,Brain,Pyr. silver,Sagittal,20,6,216,REPTILES,
+178,172,Tramnophis sp.,Garter snake,Brain,Tol. blue,Transverse,20,6,468,REPTILES,
+179,173,Tramnophis sp.,Garter snake,Brain,Tol. blue,Horizontal,20,5,154,REPTILES,
+180,174,Tramnophis sp.,Garter snake,Brain,Tol. blue,Sagittal,20,8,231,REPTILES,
+181,175,Agkistrodon mokasen,Copperhead,Brain,Pyr. silver,Transverse,10,8,826,REPTILES,
+182,176,Alligator mississippiensis,American Alligator,Brain,Tol. blue,Transverse,,50,1375,REPTILES,
+183,177,Alligator mississippiensis,American Alligator,Brain,Tol. blue,Transverse,,60,1290,REPTILES,
+184,178,Alligator mississippiensis,American Alligator,Brain,Tol. blue,Transverse,40,40,1012,REPTILES,
+185,179,Alligator mississippiensis,American Alligator,Brain,Tol. blue,Horizontal,50,36,200,REPTILES,
+186,180,Alligator mississippiensis,American Alligator,Brain,Tol. blue,Horizontal,,45,422,REPTILES,
+187,181,Alligator mississippiensis,American Alligator,Brain,Tol. blue,Sagittal,40,35,287,REPTILES,
+188,182,Alligator mississippiensis,American Alligator,Brain,Tol. blue,Sagittal,,49,390,REPTILES,
+189,183,Alligator mississippiensis,American Alligator,Brain,Wei - gert,Transverse,,73,1365,REPTILES,
+190,184,Alligator mississippiensis,American Alligator,Brain,Wei - gert,Sagittal,,59,464,REPTILES,
+191,185,Alligator mississippiensis,American Alligator,Brain,Wei - gert,Sagittal,,30,327,REPTILES,
+192,186,Alligator mississippiensis,American Alligator,Brain,Wei - gert,Sagittal,40,23,253,REPTILES,
+193,187,Alligator mississippiensis,American Alligator,Brain & cord,Pyr. silver,Transverse,15 to 20,29,1483,REPTILES,
+194,188,Alligator mississippiensis,American Alligator,Brain & cord,Pyr. silver,Transverse,15 to 20,35,1598,REPTILES,
+195,189,Alligator mississippiensis,American Alligator,Brain,Pyr. silver,Transverse,25,21,574,REPTILES,
+196,190,Alligator mississippiensis,American Alligator,Brain,Pyr. silver,Transverse,15 to 30,19,476,REPTILES,
+197,191,A. mississippiensis-25cm,American Alligator,Brain,Silver,Transverse,,32,1627,REPTILES,
+198,192,Alligator mississippiensis,American Alligator,Brain,Pyr. silver,Horizontal,15 to 20,20,235,REPTILES,
+199,193,Alligator mississippiensis,American Alligator,Brain,Silver,Horizontal,18,48,307,REPTILES,
+200,194,Alligator mississippiensis,American Alligator,Brain,Pyr. silver,Sagittal,15 to25,25,366,REPTILES,
+201,195,Alligator mississippiensis,American Alligator,Brain (Head),Pyr. silver,Sagittal,,50,339,REPTILES,
+202,196,Alligator mississippiensis,American Alligator,Brain (Head),Pyr. silver,Sagittal,,59,284,REPTILES,
+203,197,Alligator mississippiensis,American Alligator,Brain,Cox. Chr. silver,Transverse,,18,303,REPTILES,
+204,198,Alligator mississippiensis,American Alligator,Brain,Cox. Chr. silver,Sagittal,50,23,185,REPTILES,
+205,199,Alligator mississippiensis,American Alligator,Brain,Golgi,Transverse,,23,288,REPTILES,
+206,200,Alligator mississippiensis,American Alligator,Brain,Golgi,Sagittal,,17,70,REPTILES,
+207,660,Caiman,,Brain,Thion.,Transverse,25,173,1930,REPTILES,
+208,666,Chrysemys punctata,turtle,Whole head,Van Giesen,Transverse,50,26,181,REPTILES,
+209,201,Anas platyrhychus,Duck,Brain,Tol. blue,Transverse,40,79,773,BIRDS,
+210,202,Anas platyrhychus,Duck,Spinal cord,Tol. blue,Transverse,50,88,3000,BIRDS,
+211,203,Anas platyrhychus,Duck,Brain,Tol. blue,Horizontal,50,58,350,BIRDS,
+212,204,Anas platyrhychus,Duck,Spinal cord,Tol. blue,Longitudinal,40,85,408,BIRDS,
+213,205,Gallus domesticus,Domestic Chicken,Brain,Tol. blue,Transverse,20,11,445,BIRDS,(10 day embry.)
+214,206,Gallus domesticus,Domestic Chicken,Brain,Tol. blue,Transverse,25,8,388,BIRDS,(10 day embry.)
+215,207,Gallus domesticus,Domestic Chicken,Brain,Tol. blue,Transverse,20,11,465,BIRDS,(11 day embry.)
+216,208,Gallus domesticus,Domestic Chicken,Brain,Tol. blue,Transverse,,13,493,BIRDS,(12 day embry.)
+217,209,Gallus domesticus,Domestic Chicken,Brain,Tol. blue,Transverse,20,17,547,BIRDS,(14 day embry.)
+218,210,Gallus domesticus,Domestic Chicken,Brain,Tol. blue,Transverse,20,19,551,BIRDS,(16 day embry.)
+219,211,Gallus domesticus,Domestic Chicken,Brain,Tol. blue,Transverse,30,20,580,BIRDS,(19 day embry.)
+220,212,Gallus domesticus,Domestic Chicken,Brain,Tol. blue,Transverse,,20,553,BIRDS,(21day embry.)
+221,213,Gallus domesticus,Domestic Chicken,Brain,Tol. blue,Transverse,25 - 40,54,553,BIRDS,(Adult)
+222,214,Gallus domesticus,Domestic Chicken,Spinal cord,Tol. blue,Transverse,50,85,688,BIRDS,
+223,215,Gallus domesticus,Domestic Chicken,Brain,Tol. blue,Horizontal,20,8,177,BIRDS,(10 day embry.)
+224,216,Gallus domesticus,Domestic Chicken,Brain,Tol. blue,Horizontal,25,8,185,BIRDS,(11 day embry.)
+225,217,Gallus domesticus,Domestic Chicken,Brain,Tol. blue,Horizontal,20,10,216,BIRDS,(11 day embry.)
+226,218,Gallus domesticus,Domestic Chicken,Brain,Tol. blue,Horizontal,20,11,207,BIRDS,(12 day embry.)
+227,219,Gallus domesticus,Domestic Chicken,Brain,Tol. blue,Horizontal,20,18,282,BIRDS,(14 day embry.)
+228,220,Gallus domesticus,Domestic Chicken,Brain,Tol. blue,Horizontal,25,15,219,BIRDS,(16 day embry.)
+229,221,Gallus domesticus,Domestic Chicken,Brain,Tol. blue,Horizontal,25,20,317,BIRDS,(19 day embry.)
+230,222,Gallus domesticus,Domestic Chicken,Brain,Tol. blue,Horizontal,25,24,25,BIRDS,(21day embry.)
+231,223,Gallus domesticus,Domestic Chicken,Brain,Tol. blue,Sagittal,40,63,481,BIRDS,(Adult)
+232,224,Gallus domesticus,Domestic Chicken,Brain,Tol. blue,Sagittal,50,44,389,BIRDS,
+233,225,Gallus domesticus,Domestic Chicken,Spinal cord,Tol. blue,Longitudinal,40,70,350,BIRDS,
+234,226,,,,,,,,,BIRDS,
+235,227,Gallus domesticus,Domestic Chicken,Brain,Wei - gert,Horizontal,50,96,342,BIRDS,
+236,228,Gallus domesticus,Domestic Chicken,Brain,Pyr. silver,Transverse,10,9,672,BIRDS,(10 day embry.)
+237,229,Gallus domesticus,Domestic Chicken,Brain,Pyr. silver,Olbique,,5,358,BIRDS,(10 day embry.)
+238,230,Gallus domesticus,Domestic Chicken,Brain,Pyr. silver,Transverse,15,6,406,BIRDS,(11 day embry.)
+239,231,Gallus domesticus,Domestic Chicken,Brain,Pyr. silver,Transverse,10,8,624,BIRDS,(11 day embry.)
+240,232,Gallus domesticus,Domestic Chicken,Brain,Pyr. silver,Transverse,10 to 12,10,632,BIRDS,(14 day embry.)
+241,233,Gallus domesticus,Domestic Chicken,Brain,Pyr. silver,Transverse,12 to15,12,694,BIRDS,(16 day embry.)
+242,234,Gallus domesticus,Domestic Chicken,Brain,Pyr. silver,Transverse,10 to 12,17,915,BIRDS,(18 day embry.)
+243,235,Gallus domesticus,Domestic Chicken,Brain,Pyr. silver,Transverse,10 to 15,19,766,BIRDS,(19 day embry.)
+244,236,Gallus domesticus,Domestic Chicken,Brain,Pyr. silver,Transverse,10,20,968,BIRDS,(21day embry.)
+245,237,Gallus domesticus,Domestic Chicken,Spinal cord,Pyr. silver,Transverse,10 to 20,10,2800,BIRDS,(18day embry.)
+246,238,Gallus domesticus,Domestic Chicken,Spinal cord,Pyr. silver,Transverse,10 to 15,18,4924,BIRDS,(20day embry.)
+247,239,Gallus domesticus,Domestic Chicken,Spinal cord,Pyr. silver,Transverse,8 to 10,17,5269,BIRDS,(21day embry.)
+248,240,Gallus domesticus,Domestic Chicken,Spinal cord,Pyr. silver,Transverse,,13,5456,BIRDS,(21day embry.)
+249,241,Gallus domesticus,Domestic Chicken,Brain,Pyr. silver,Horizontal,10 to 15,2,192,BIRDS,(2-4 day embry.)
+250,242,Gallus domesticus,Domestic Chicken,Brain,Pyr. silver,Horizontal,15,3,240,BIRDS,(4 day embry.)
+251,243,Gallus domesticus,Domestic Chicken,Brain,Pyr. silver,Horizontal,10 to 15,8,381,BIRDS,(5day embry.)
+252,244,Gallus domesticus,Domestic Chicken,Brain,Pyr. silver,Horizontal,10,7,184,BIRDS,(10 day embry.)
+253,245,Gallus domesticus,Domestic Chicken,Brain,Pyr. silver,Horizontal,15,6,209,BIRDS,(11 day embry.)
+254,246,Gallus domesticus,Domestic Chicken,Brain,Pyr. silver,Horizontal,12 to15,7,238,BIRDS,(11 day embry.)
+255,247,Gallus domesticus,Domestic Chicken,Brain,Pyr. silver,Horizontal,,8,275,BIRDS,(12 day embry.)
+256,248,Gallus domesticus,Domestic Chicken,Brain,Pyr. silver,Horizontal,12 to 15,11,310,BIRDS,(16 day embry.)
+257,249,Gallus domesticus,Domestic Chicken,Brain,Pyr. silver,Horizontal,15,16,380,BIRDS,(19 day embry.)
+258,250,Gallus domesticus,Domestic Chicken,Brain,Pyr. silver,Horizontal,10,22,562,BIRDS,(21 day embry.)
+259,251,Gallus domesticus,Domestic Chicken,Brain,Pyr. silver,Sagittal,,3,179,BIRDS,(2-4 day embry.)
+260,252,Gallus domesticus,Domestic Chicken,Brain,Pyr. silver,Sagittal,10 to 15,4,162,BIRDS,(4 day embry.)
+261,253,Gallus domesticus,Domestic Chicken,Brain,Pyr. silver,Sagittal,10 to 15,2,158,BIRDS,(2-4 day embry.)
+262,254,Gallus domesticus,Domestic Chicken,Brain,Pyr. silver,Sagittal,15,3,237,BIRDS,(4 day embry.)
+263,255,Gallus domesticus,Domestic Chicken,Brain,Pyr. silver,Sagittal,15,5,230,BIRDS,(5 day embry.)
+264,255,Gallus domesticus,Domestic Chicken,Brain,Pyr. silver,Sagittal,15,5,230,BIRDS,(5 day embry.)
+265,256,Gallus domesticus,Domestic Chicken,Brain,Pyr. silver,Sagittal,15,5,217,BIRDS,(5 day embry.)
+266,257,Gallus domesticus,Domestic Chicken,Brain,Pyr. silver,Sagittal,15,6,249,BIRDS,(5 day embry.)
+267,258,Gallus domesticus,Domestic Chicken,Brain,Pyr. silver,Sagittal,,9,307,BIRDS,(8 day embry.)
+268,259,Gallus domesticus,Domestic Chicken,Brain,Pyr. silver,Sagittal,,5,421,BIRDS,(10 day embry.)
+269,260,Gallus domesticus,Domestic Chicken,Brain,Pyr. silver,Sagittal,15,5,435,BIRDS,(11 day embry.)
+270,261,Gallus domesticus,Domestic Chicken,Brain,Pyr. silver,Sagittal,15,5,331,BIRDS,(11 day embry.)
+271,262,Gallus domesticus,Domestic Chicken,Brain,Pyr. silver,Sagittal,10,15,698,BIRDS,(19 day embry.)
+272,263,Gallus domesticus,Domestic Chicken,Spinal cord,Pyr. silver,Longitudinal,15,6,45,BIRDS,(19 day embry.)
+273,264,Gallus domesticus,Domestic Chicken,Spinal cord,Pyr. silver,Longitudinal,15,7,95,BIRDS,(19 day embry.)
+274,265,Gallus domesticus,Domestic Chicken,Spinal cord,Pyr. silver,Longitudinal,7 to 10,11,230,BIRDS,(20 day embry.)
+275,266,Gallus domesticus,Domestic Chicken,Spinal cord,Pyr. silver,Longitudinal,10,11,210,BIRDS,(21day embry.)
+276,267,Gallus domesticus,Domestic Chicken,Spinal cord,Pyr. silver,Longitudinal,10,11,124,BIRDS,(21day embry.)
+277,268,Gallus domesticus,Domestic Chicken,Spinal cord,Pyr. silver,Longitudinal,10,12,216,BIRDS,(21day embry.)
+278,269,Columba livia,Dove Ida,Brain,Tol. blue,Transverse,15,20,682,BIRDS,
+279,270,Columba livia,Dove Ida,Brain,Tol. blue,Transverse,20,30,689,BIRDS,(8 days)
+280,271,Columba livia,Dove Ida,Brain,Tol. blue,Transverse,20,40,720,BIRDS,(10 days)
+281,272,Columba livia,Dove Ida,Brain,Tol. blue,Transverse,40,32,421,BIRDS,
+282,273,Columba livia,Dove Ida,Brain,Tol. blue,Horizontal,40,30,325,BIRDS,
+283,274,Columba livia,Dove Ida,Brain,Tol. blue,Horizontal,50,32,219,BIRDS,
+284,275,Columba livia,Dove Ida,Brain,Tol. blue,Sagittal,40,34,361,BIRDS,
+285,276,Columba livia,Dove Ida,Brain,Tol. blue,Sagittal,50,31,317,BIRDS,
+286,277,Columba livia,Dove Ida,Spinal cord,Tol. blue,Transverse,50,27,2600,BIRDS,
+287,278,Columba livia,Dove Ida,Spinal cord,Tol. blue,Transverse,40,29,2700,BIRDS,
+288,279,Columba livia,Dove Ida,Spinal cord,Tol. blue,Transverse,40,10,1040,BIRDS,
+289,280,Columba livia,Dove Ida,Spinal cord,Tol. blue,Longitudinal,40,29,221,BIRDS,
+290,281,Columba livia,Dove Ida,Spinal cord,Tol. blue,Longitudinal,40,31,193,BIRDS,
+291,282,Columba livia,Dove Ida,Spinal cord,Tol. blue,Longitudinal,25,39,351,BIRDS,
+292,283,Columba livia,Dove Ida,Spinal cord,Tol. blue,Longitudinal,30,28,251,BIRDS,
+293,284,Columba livia,Dove Ida,Spinal cord,Tol. blue,Longitudinal,50,15,150,BIRDS,
+294,285,Columba livia,Dove Ida,Brain,Cox Chr - Silver,Transverse,,83,900,BIRDS,
+295,286,Columba livia,Dove Ida,Brain,Cox Chr - Silver,Transverse,,64,1136,BIRDS,
+296,287,Columba livia 1 day,Dove Ida,Brain,Cox Chr - Silver,Sagittal,,13,362,BIRDS,
+297,288,Columba livia,Dove Ida,Brain,Cox Chr - Silver,Sagittal,15,76,934,BIRDS,
+298,289,Columba livia,Dove Ida,Spinal cord,Pyr. silver,Transverse,15,20,3780,BIRDS,
+299,290,Forpus passerinus,"Parrokeet,Parrotlet",Brain,Tol. blue,Transverse,40,21,340,BIRDS,
+300,291,Forpus passerinus,"Parrokeet,Parrotlet",Brain,Tol. blue,Sagittal,40,30,297,BIRDS,
+301,292,Forpus passerinus,"Parrokeet,Parrotlet",Spinal cord,Tol. blue,Transverse,40,18,1290,BIRDS,
+302,293,Forpus passerinus,"Parrokeet,Parrotlet",Spinal cord,Tol. blue,Longitudinal,40,9,98,BIRDS,
+303,294,Corvus brachyrhynchos,Crow,Brain,Tol. blue,Transverse,20,15,196,BIRDS,
+304,295,Sturnus vulgaris,Starling,Brain,Tol. blue,Sagittal,20,37,465,BIRDS,
+305,296,Sterna hirundo,Common tern,Brain,Tol. blue,Transverse,20,44,810,BIRDS,
+306,297,Passer domesticus,Sparrow,Brain,Tol. blue,Transverse,40,17,308,BIRDS,
+307,298,Passer domesticus,Sparrow,Brain,Tol. blue,Transverse,40,14,290,BIRDS,
+308,299,Passer domesticus,Sparrow,Brain,Tol. blue,Transverse,,24,499,BIRDS,
+309,300,Passer domesticus,Sparrow,Brain,Tol. blue,Horizontal,40,15,241,BIRDS,
+310,301,Passer domesticus,Sparrow,Brain,Tol. blue,Horizontal,,30,339,BIRDS,
+311,302,Passer domesticus,Sparrow,Brain,Tol. blue,Horizontal,40,13,225,BIRDS,
+312,303,Passer domesticus,Sparrow,Brain,Tol. blue,Horizontal,40,20,309,BIRDS,
+313,304,Passer domesticus,Sparrow,Brain,Tol. blue,Sagittal,40,22,310,BIRDS,
+314,305,Passer domesticus,Sparrow,Brain,Tol. blue,Sagittal,40,21,476,BIRDS,
+315,306,Passer domesticus,Sparrow,Brain,Tol. blue,Sagittal,40,22,286,BIRDS,
+316,307,Passer domesticus,Sparrow,Brain,Iron - hema.,Sagittal,20,45,590,BIRDS,
+317,308,Passer domesticus,Sparrow,Brain,Cox Chr. - Silver,Transverse,,24,742,BIRDS,
+318,309,Passer domesticus,Sparrow,Brain,Cox Chr. - Silver,Transverse,,22,656,BIRDS,
+319,310,Passer domesticus,Sparrow,Brain,Cox Chr. - Silver,Transverse,15,28,870,BIRDS,
+320,311,Passer domesticus,Sparrow,Brain,Cox Chr. - Silver,Transverse,15,23,761,BIRDS,
+321,312,Passer domesticus,Sparrow,Brain,Cox Chr. - Silver,Horizontal,10,20,420,BIRDS,
+322,313,Passer domesticus,Sparrow,Brain,Cox Chr. - Silver,Sagittal,10,34,1077,BIRDS,
+323,314,Passer domesticus,Sparrow,Brain,Cox Chr. - Silver,Sagittal,15,31,956,BIRDS,
+324,667,Gallus domesticus,Domestic Chicken,Whole head,Van Giesen,Transverse,100,325,541,BIRDS,
+325,676,Meleagris galloparvo merriami,Wild turkey,Brain,Cres. violet,Transverse,20,199,845,BIRDS,
+326,682,Gallus domesticus,Domestic Chicken,Brain,Weil,Sagittal,,98,1013,BIRDS,
+327,686,Columba livia,Pigeon,Brain,Hema. & cosin,Sagittal,,102,1191,BIRDS,
+328,687,Columba livia,Pigeon,Brain,Silver,Sagittal,,50,825,BIRDS,
+329,688,Columba livia,Pigeon,Brain,Silver,Transverse,15,57,989,BIRDS,
+330,689,Columba livia,Pigeon,Brain,Silver,Transverse,15,56,659,BIRDS,
+331,690,Columba livia,Pigeon,Brain,Tol. blue,Transverse,12,86,1528,BIRDS,
+332,691,Columba livia,Pigeon,Brain,Azur I,Horizontal,,109,976,BIRDS,
+333,692,Sturnus vulgaris,Starling,Brain,Tol. blue,Transverse,25,60,641,BIRDS,
+334,693,Sturnus vulgaris,Starling,Brain,Tol. blue,Sagittal,25,44,496,BIRDS,
+335,694,,Tree swallow,Brain,Tol. blue,Transverse,25,30,156,BIRDS,
+336,695,,Sand piper,Brain,Tol. blue,Transverse,25,35,470,BIRDS,
+337,701,Phasianus colchicus torquatus,Pheasant,Brain,Thion.,Transverse,25,102,856,BIRDS,
+338,702,Phasianus colchicus torquatus,Pheasant,Brain,Weil,Transverse,25,94,880,BIRDS,
+339,676,Meleagris galloparvo merriami,Wild turkey,Brain,Cres. violet,Transverse,20,199,845,BIRDS,
+340,703,Meleagris galloparvo merriami,Wild turkey,Brain,Thion.,Transverse,25,151,884,BIRDS,
+341,315,Didelphis virginiana,Possum,Brain,Tol. blue,Transverse,60,61,843,MAMMALS,
+342,316,Didelphis virginiana,Possum,Brain,Tol. blue,Horizontal,40,87,304,MAMMALS,
+343,317,Didelphis virginiana,Possum,Brain,Tol. blue,Sagittal,30,61,349,MAMMALS,
+344,318,Didelphis virginiana,Possum,Spinal cord,Tol. blue,Transverse,50,67,5123,MAMMALS,
+345,319,Didelphis virginiana,Possum,Spinal cord,Tol. blue,Longitudinal,50,41,268,MAMMALS,
+346,320,Didelphis virginiana,Possum,Brain,Wei - gert,Transverse,50,125,857,MAMMALS,
+347,321,Didelphis virginiana,Possum,Brain,Pal - Weigert,Transverse,50,127,764,MAMMALS,
+348,322,Didelphis virginiana,Possum,Brain,Pal - Weigert,Horizontal,50,149,314,MAMMALS,
+349,323,Didelphis virginiana,Possum,Brain,Pal - Weigert,Sagittal,50,96,296,MAMMALS,
+350,324,Didelphis virginiana,Possum,Brain,Pyr. silver,Transverse,30,115,956,MAMMALS,
+351,325,Didelphis virginiana,Possum,Brain,Pyr. silver,Transverse,,74,1581,MAMMALS,
+352,326,Scalopus aquaticus,Mole,Brain,Tol. blue,Transverse,25,25,690,MAMMALS,
+353,327,Scalopus aquaticus,Mole,Brain,Tol. blue,Sagittal,25,26,546,MAMMALS,
+354,328,Blarina brevicauda,Shrew,Brain,Tol. blue,Transverse,,8,389,MAMMALS,
+355,329,Blarina brevicauda,Shrew,Brain,Tol. blue,Horizontal,30,7,175,MAMMALS,
+356,330,Blarina brevicauda,Shrew,Brain,Tol. blue,Sagittal,30,7,221,MAMMALS,
+357,331,Blarina brevicauda,Shrew,Brain,Pyr. silver,Transverse,10,12,613,MAMMALS,
+358,332,Blarina brevicauda,Shrew,Brain,Pyr. silver,Sagittal,10,13,566,MAMMALS,
+359,333,Eptesicus fuscus,Big brown bat,Brain,Weil,Transverse,20,16,423,MAMMALS,
+360,334,Eptesicus fuscus,Big brown bat,Brain,Weil,Horizontal,20,15,293,MAMMALS,
+361,335,Eptesicus fuscus,Big brown bat,Brain,Weil,Sagittal,20,17,387,MAMMALS,
+362,336,Tadarida mexicana,Free-tailed bat,Brain,Tol. blue,Transverse,20,12,472,MAMMALS,
+363,337,Tadarida mexicana,Free-tailed bat,Brain,Tol. blue,Transverse,,6,244,MAMMALS,
+364,338,Tadarida mexicana,Free-tailed bat,Brain,Tol. blue,Transverse,,6,280,MAMMALS,
+365,339,Tadarida mexicana,Free-tailed bat,Brain,Tol. blue,Horizontal,25,5,247,MAMMALS,
+366,340,Tadarida mexicana,Free-tailed bat,Brain,Tol. blue,Horizontal,25,7,200,MAMMALS,
+367,341,Tadarida mexicana,Free-tailed bat,Brain,Tol. blue,Horizontal,25,8,255,MAMMALS,
+368,342,Tadarida mexicana,Free-tailed bat,Brain,Tol. blue,Horizontal,25,5,144,MAMMALS,
+369,343,Tadarida mexicana,Free-tailed bat,Brain,Tol. blue,Sagittal,,5,227,MAMMALS,
+370,344,Dasypus nivemcincta,Armadillo,Brain,Tol. blue,Transverse,25,235,1813,MAMMALS,
+371,345,Tadarida mexicana,Free-tailed bat,Brain,Tol. blue,Sagittal,20,12,367,MAMMALS,
+372,346,Tadarida mexicana,Free-tailed bat,Brain,Wei - gert,Transverse,,7,328,MAMMALS,
+373,347,Tadarida mexicana,Free-tailed bat,Brain,Wei - gert,Transverse,,16,465,MAMMALS,
+374,348,Tadarida mexicana,Free-tailed bat,Brain,Pyr. silver,Transverse,12,11,716,MAMMALS,
+375,349,Tadarida mexicana,Free-tailed bat,Brain,Pyr. silver,Horizontal,10,3,100,MAMMALS,
+376,350,Tadarida mexicana,Free-tailed bat,Brain,Pyr. silver,Horizontal,,11,310,MAMMALS,
+377,351,Tadarida mexicana,Free-tailed bat,Brain,Pyr. silver,Sagittal,10,12,548,MAMMALS,
+378,352,,,,,,,,,MAMMALS,
+379,353,Tadarida mexicana,Free-tailed bat,Brain,Pyr. silver,Sagittal,20,13,305,MAMMALS,
+380,354,Oryctolagus cuniculus,Rabbit,Brain,Tol. blue,Transverse,50,109,1038,MAMMALS,
+381,355,Oryctolagus cuniculus,Rabbit,Brain,Tol. blue,Sagittal,50,135,495,MAMMALS,
+382,356,Oryctolagus cuniculus,Rabbit,Brain,Weil,Transverse,30,70,671,MAMMALS,
+383,357,Oryctolagus cuniculus,Rabbit,Brain,Iron - hemat.,Transverse,10,36,708,MAMMALS,
+384,358,Oryctolagus cuniculus,Rabbit,Brain,Iron - hemat.,Sagittal,10,50,800,MAMMALS,
+385,359,Oryctolagus cuniculus,Rabbit,Brain,Pyr. silver,Transverse,8,5,493,MAMMALS,(11 day embryo)
+386,360,Oryctolagus cuniculus,Rabbit,Brain,Pyr. silver,Transverse,8,7,681,MAMMALS,(12 day embryo)
+387,361,Oryctolagus cuniculus,Rabbit,Brain,Pyr. silver,Transverse,8,5,579,MAMMALS,(12 day embryo)
+388,362,Oryctolagus cuniculus,Rabbit,Brain,Pyr. silver,Transverse,6,8,610,MAMMALS,(13 day embryo)
+389,363,Oryctolagus cuniculus,Rabbit,Brain,Pyr. silver,Transverse,,8,525,MAMMALS,(13 day embryo)
+390,364,Oryctolagus cuniculus,Rabbit,Brain,Pyr. silver,Transverse,10,8,682,MAMMALS,(14 day embryo)
+391,365,Oryctolagus cuniculus,Rabbit,Brain,Pyr. silver,Transverse,10,9,518,MAMMALS,(14 day embryo)
+392,366,Oryctolagus cuniculus,Rabbit,Brain,Pyr. silver,Transverse,,9,555,MAMMALS,(15 day embryo)
+393,367,Oryctolagus cuniculus,Rabbit,Brain,Pyr. silver,Transverse,,10,775,MAMMALS,(15 day embryo)
+394,368,Oryctolagus cuniculus,Rabbit,Brain,Pyr. silver,Transverse,10,17,1138,MAMMALS,(15 day embryo)
+395,369,Oryctolagus cuniculus,Rabbit,Brain,Pyr. silver,Transverse,10,11,302,MAMMALS,(3 cm. )
+396,370,Oryctolagus cuniculus,Rabbit,Brain,Pyr. silver,Transverse,10,19,452,MAMMALS,(3 cm. )
+397,371,Oryctolagus cuniculus,Rabbit,Brain,Pyr. silver,Transverse,10,20,484,MAMMALS,(3 cm. )
+398,372,Oryctolagus cuniculus,Rabbit,Brain,Pyr. silver,Transverse,10,8,192,MAMMALS,(3 cm. )
+399,373,Oryctolagus cuniculus,Rabbit,Brain,Pyr. silver,Transverse,8,30,1686,MAMMALS,(17 day embryo)
+400,374,Oryctolagus cuniculus,Rabbit,Brain,Pyr. silver,Transverse,8,6,460,MAMMALS,
+401,375,Oryctolagus cuniculus,Rabbit,Brain,Pyr. silver,Transverse,30,17,520,MAMMALS,(1 day old)
+402,376,Oryctolagus cuniculus,Rabbit,Brain,Pyr. silver,Sagittal,8,3,192,MAMMALS,(11 day embyro)
+403,377,Oryctolagus cuniculus,Rabbit,Brain,Pyr. silver,Sagittal,8,3,233,MAMMALS,(11 day embyro)
+404,378,Oryctolagus cuniculus,Rabbit,Brain,Pyr. silver,Sagittal,8,3,208,MAMMALS,(11 day embyro)
+405,379,Oryctolagus cuniculus,Rabbit,Brain,Pyr. silver,Sagittal,8,3,208,MAMMALS,(11 day embyro)
+406,380,Oryctolagus cuniculus,Rabbit,Brain,Pyr. silver,Sagittal,8,5,271,MAMMALS,(12 day embyro)
+407,381,Oryctolagus cuniculus,Rabbit,Brain,Pyr. silver,Sagittal,8,5,250,MAMMALS,(12 day embyro)
+408,382,Oryctolagus cuniculus,Rabbit,Brain,Pyr. silver,Sagittal,15,4,144,MAMMALS,(13 day embyro)
+409,383,Oryctolagus cuniculus,Rabbit,Brain,Pyr. silver,Sagittal,,6,259,MAMMALS,(13 day embyro)
+410,384,Oryctolagus cuniculus,Rabbit,Brain,Pyr. silver,Sagittal,12,5,205,MAMMALS,(13 day embyro)
+411,385,Oryctolagus cuniculus,Rabbit,Brain,Pyr. silver,Sagittal,,9,312,MAMMALS,(14 day embyro)
+412,386,Oryctolagus cuniculus,Rabbit,Brain,Pyr. silver,Sagittal,,7,246,MAMMALS,(14 day embyro)
+413,387,Oryctolagus cuniculus,Rabbit,Brain,Pyr. silver,Sagittal,,8,302,MAMMALS,(14 day embyro)
+414,388,Oryctolagus cuniculus,Rabbit,Brain,Pyr. silver,Sagittal,20,9,230,MAMMALS,(15 day embyro)
+415,389,Oryctolagus cuniculus,Rabbit,Brain,Pyr. silver,Sagittal,,9,321,MAMMALS,(15 day embyro)
+416,390,Oryctolagus cuniculus,Rabbit,Brain,Pyr. silver,Sagittal,8,15,381,MAMMALS,(15 day embyro)
+417,391,Oryctolagus cuniculus,Rabbit,Brain,Pyr. silver,Sagittal,10,15,386,MAMMALS,(15 day embyro)
+418,392,Oryctolagus cuniculus,Rabbit,Brain,Pyr. silver,Sagittal,8,23,478,MAMMALS,(16 day embyro)
+419,393,Oryctolagus cuniculus,Rabbit,Brain,Pyr. silver,Sagittal,15,63,378,MAMMALS,(1 day old)
+420,394,Oryctolagus cuniculus,Rabbit,Brain,Cox - Chr. Silver,Transverse,,70,571,MAMMALS,(1 week before birth)
+421,395,Oryctolagus cuniculus,Rabbit,Brain,Cox - Chr. Silver,Transverse,,5,160,MAMMALS,(1 day old)
+422,396,Oryctolagus cuniculus,Rabbit,Brain,Cox - Chr. Silver,Transverse,,2,36,MAMMALS,(2 day old)
+423,397,Oryctolagus cuniculus,Rabbit,Brain,Cox - Chr. Silver,Transverse,15,8,120,MAMMALS,(6 day old)
+424,398,Oryctolagus cuniculus,Rabbit,Brain,Cox - Chr. Silver,Transverse,20,11,181,MAMMALS,(6 day old)
+425,399,Oryctolagus cuniculus,Rabbit,Brain,Cox - Chr. Silver,Sagittal,12,62,639,MAMMALS,(1 week before birth)
+426,400,Oryctolagus cuniculus,Rabbit,Brain,Cox - Chr. Silver,Sagittal,20,110,442,MAMMALS,(1 day old )
+427,401,Oryctolagus cuniculus,Rabbit,Brain,Cox - Chr. Silver,Sagittal,10 to 20,95,380,MAMMALS,
+428,402,Oryctolagus cuniculus,Rabbit,Brain,Cox - Chr. Silver,Sagittal,20,59,265,MAMMALS,(1day old)
+429,403,Oryctolagus cuniculus,Rabbit,Brain,Cox - Chr. Silver,Sagittal,20,40,191,MAMMALS,(1day old)
+430,404,Oryctolagus cuniculus,Rabbit,Brain,Cox - Chr. Silver,Sagittal,20,125,428,MAMMALS,(6 day old)
+431,405,Oryctolagus cuniculus,Rabbit,Brain,Cox - Chr. Silver,Sagittal,20,5,105,MAMMALS,(6 day old)
+432,406,Oryctolagus cuniculus,Rabbit,Brain,Cox - Chr. Silver,Sagittal,10,30,360,MAMMALS,(6 day old)
+433,407,Oryctolagus cuniculus,Rabbit,Brain,Cox - Chr. Silver,Sagittal,20,42,211,MAMMALS,(6 day old)
+434,408,Sciurus hudsonicus,Red Squirrel,Brain,Tol. blue,Transverse,15,25,559,MAMMALS,
+435,409,Mus sp.,mouse,Brain,Tol. blue,Transverse,30,12,425,MAMMALS,
+436,410,Mus sp.,mouse,Brain,Tol. blue,Transverse,,11,421,MAMMALS,
+437,411,Mus sp.,mouse,Brain,Tol. blue,Transverse,,11,412,MAMMALS,
+438,412,Mus sp.,mouse,Brain,Tol. blue,Transverse,30,10,396,MAMMALS,
+439,413,Mus sp.,mouse,Brain,Tol. blue,Transverse,30,10,405,MAMMALS,
+440,414,Mus sp.,mouse,Brain,Tol. blue,Transverse,30,12,378,MAMMALS,
+441,415,Mus sp.,mouse,Brain,Tol. blue,Horizontal,30,10,177,MAMMALS,
+442,416,Mus sp.,mouse,Brain,Tol. blue,Horizontal,40,8,148,MAMMALS,
+443,417,Mus sp.,mouse,Brain,Tol. blue,Horizontal,40,7,122,MAMMALS,
+444,418,Mus sp.,mouse,Brain,Tol. blue,Sagittal,30,10,253,MAMMALS,
+445,419,Mus sp.,mouse,Brain,Tol. blue,Sagittal,30,10,258,MAMMALS,
+446,420,Mus sp.,mouse,Brain,Tol. blue,Sagittal,30,9,243,MAMMALS,
+447,421,Mus sp.,mouse,Brain,Tol. blue,Sagittal,30,10,254,MAMMALS,
+448,422,Mus sp.,mouse,Brain,Tol. blue,Sagittal,,8,208,MAMMALS,
+449,423,Mus sp.,mouse,Brain & cord,Tol. blue,Longitudinal,40,22,138,MAMMALS,
+450,424,Mus sp.,mouse,Brain & cord,Tol. blue,Longitudinal,30,24,131,MAMMALS,
+451,425,Mus sp.,mouse,Spinal cord,Tol. blue,Transverse,40,8,972,MAMMALS,
+452,426,Mus sp.,mouse,Spinal cord,Tol. blue,Transverse,40,7,903,MAMMALS,
+453,427,Mus sp.,mouse,Spinal cord,Tol. blue,Transverse,30,14,1235,MAMMALS,
+454,428,Mus sp.,mouse,Spinal cord,Tol. blue,Transverse,30,15,1336,MAMMALS,
+455,429,Mus sp.,mouse,Spinal cord,Tol. blue,Transverse,30,20,1430,MAMMALS,
+456,430,Mus sp.,mouse,Spinal cord,Tol. blue,Transverse,30,17,1270,MAMMALS,
+457,431,Mus sp.,mouse,Spinal cord,Tol. blue,Horizontal,30,13,70,MAMMALS,
+458,432,Mus sp.,mouse,Spinal cord,Tol. blue,Horizontal,30,13,73,MAMMALS,
+459,433,Mus sp.,mouse,Spinal cord,Tol. blue,Horizontal,30,10,50,MAMMALS,
+460,434,Mus sp.,mouse,Spinal cord,Tol. blue,Horizontal,30,6,37,MAMMALS,
+461,435,Mus sp.,mouse,Spinal cord,Tol. blue,Horizontal,30,9,45,MAMMALS,
+462,436,Mus sp.,mouse,Spinal cord,Tol. blue,Longitudinal,30,9,49,MAMMALS,
+463,437,Mus sp.,mouse,Spinal cord,Tol. blue,Longitudinal,30,8,41,MAMMALS,
+464,438,Mus sp.,mouse,Spinal cord,Tol. blue,Longitudinal,30,10,49,MAMMALS,
+465,439,Mus sp.,mouse,Spinal cord,Tol. blue,Longitudinal,30,9,45,MAMMALS,
+466,440,Mus sp.,mouse,Spinal cord,Tol. blue,Longitudinal,30,9,45,MAMMALS,
+467,441,Mus sp.,mouse,Spinal cord,Tol. blue,Longitudinal,30,9,46,MAMMALS,
+468,442,Mus sp.,mouse,Spinal cord,Tol. blue,Longitudinal,30,6,36,MAMMALS,
+469,443,Mus sp.,mouse,Spinal cord,Tol. blue,Longitudinal,30,5,28,MAMMALS,
+470,444,Mus sp.,mouse,Spinal cord,Tol. blue,Longitudinal,30,6,41,MAMMALS,
+471,445,Mus sp.,mouse,Spinal cord,Tol. blue,Longitudinal,30,6,40,MAMMALS,
+472,446,Mus sp.,mouse,Spinal cord,Tol. blue,Longitudinal,30,8,41,MAMMALS,
+473,447,Mus sp.,mouse,Spinal cord,Tol. blue,Longitudinal,30,6,38,MAMMALS,
+474,448,Mus sp.,mouse,Spinal cord,Tol. blue,Longitudinal,30,5,32,MAMMALS,
+475,449,Mus sp.,mouse,Spinal cord,Tol. blue,Longitudinal,40,10,70,MAMMALS,
+476,450,Mus sp.,mouse,Spinal cord,Tol. blue,Longitudinal,30,7,39,MAMMALS,
+477,451,Mus sp.,mouse,Spinal cord,Tol. blue,Longitudinal,40,9,60,MAMMALS,
+478,452,Mus sp.,mouse,Spinal cord,Tol. blue,Longitudinal,40,7,35,MAMMALS,
+479,453,Mus sp.,mouse,Spinal cord,Tol. blue,Longitudinal,40,9,43,MAMMALS,
+480,454,Mus sp.,mouse,Spinal cord,Tol. blue,Longitudinal,40,6,30,MAMMALS,
+481,455,Mus sp.,mouse,Spinal cord,Tol. blue,Longitudinal,40,6,37,MAMMALS,
+482,456,Mus sp.,mouse,Spinal cord,Tol. blue,Longitudinal,40,8,45,MAMMALS,
+483,457,Mus sp.,mouse,Brain,Pyr. silver,Transverse,,16,912,MAMMALS,
+484,458,Mus sp.,mouse,Brain,Pyr. silver,Transverse,,12,759,MAMMALS,
+485,459,Mus sp.,mouse,Brain,Pyr. silver,Transverse,30,13,689,MAMMALS,
+486,460,Mus sp.,mouse,Brain,Pyr. silver,Transverse,,14,500,MAMMALS,
+487,461,Mus sp.,mouse,Brain,Pyr. silver,Sagittal,,12,496,MAMMALS,
+488,462,Mus sp.,mouse,Brain,Cox - Chr. Silver,Horizontal,15,13,520,MAMMALS,
+489,463,Mus sp.,mouse,Brain,Cox - Chr. Silver,Horizontal,15,10,300,MAMMALS,
+490,464,Mus sp.,mouse,Brain,Cox - Chr. Silver,Sagittal,15,12,321,MAMMALS,
+491,465,Mus sp.,mouse,Brain & head,Cox - Chr. Silver,Sagittal,15,25,242,MAMMALS,
+492,466,Rattus norwegicus,Brown rat,Brain,Tol. blue,Transverse,25,14,516,MAMMALS,(3 days old )
+493,467,Rattus norwegicus,Brown rat,Brain,Tol. blue,Transverse,,10,631,MAMMALS,(3 days old )
+494,468,Rattus norwegicus,Brown rat,Brain,Tol. blue,Transverse,25,44,,MAMMALS,(3 days old )
+495,469,Rattus norwegicus,Brown rat,Brain,Tol. blue,Transverse,20,44,1067,MAMMALS,(3 days old )
+496,470,Rattus norwegicus,Brown rat,Brain,Tol. blue,Transverse,50,21,474,MAMMALS,(3 days old )
+497,471,Rattus norwegicus,Brown rat,Brain,Tol. blue,Transverse,20,30,494,MAMMALS,(3 days old )
+498,472,,,,,,,,,MAMMALS,
+499,473,,,,,,,,,MAMMALS,
+500,474,,,,,,,,,MAMMALS,
+501,475,Rattus norwegicus,Brown rat,Brain,Tol. blue,Horizontal,40,26,Dis- carded,MAMMALS,
+502,476,,,,,,,,,MAMMALS,
+503,477,Rattus norwegicus,Brown rat,Brain,Tol. blue,Sagittal,20,17,334,MAMMALS,(1 day old )
+504,478,Rattus norwegicus,Brown rat,Brain,Tol. blue,Sagittal,50,24,,MAMMALS,(1 day old )
+505,479,Rattus norwegicus,Brown rat,Brain,Tol. blue,Sagittal,20,38,459,MAMMALS,(1 day old )
+506,480,Rattus norwegicus,Brown rat,Spinal cord,Tol. blue,Transverse,40,30,718,MAMMALS,(1 day old )
+507,481,Rattus norwegicus,Brown rat,Spinal cord,Tol. blue,Horizontal,40,18,87,MAMMALS,(1 day old )
+508,482,Rattus norwegicus,Brown rat,Spinal cord,Tol. blue,Horizontal,40,13,60,MAMMALS,(1 day old )
+509,483,Rattus norwegicus,Brown rat,Spinal cord,Tol. blue,Horizontal,40,32,127,MAMMALS,(1 day old )
+510,484,Rattus norwegicus,Brown rat,Spinal cord,Tol. blue,Horizontal,40,29,115,MAMMALS,(1 day old )
+511,485,Rattus norwegicus,Brown rat,Spinal cord,Tol. blue,Horizontal,40,27,118,MAMMALS,(1 day old )
+512,486,Rattus norwegicus,Brown rat,Spinal cord,Tol. blue,Horizontal,40,25,98,MAMMALS,(1 day old )
+513,487,Rattus norwegicus,Brown rat,Spinal cord,Tol. blue,Sagittal,40,29,158,MAMMALS,(1 day old )
+514,488,Rattus norwegicus,Brown rat,Brain,Pal- Weigert,Transverse,50,69,668,MAMMALS,
+515,489,Rattus norwegicus,Brown rat,Brain,Pal- Weigert,Sagittal,50,40,270,MAMMALS,
+516,490,Rattus norwegicus,Brown rat,Brain,Wei- gert,Sagittal,,45,484,MAMMALS,
+517,491,Rattus norwegicus,Brown rat,Brain,Weil,Sagittal,20,68,656,MAMMALS,
+518,492,Rattus norwegicus,Brown rat,Brain,Weil,Transverse,,40,984,MAMMALS,
+519,493,Rattus norwegicus,Brown rat,Brain,Cox - Golgi,Transverse,,37,390,MAMMALS,
+520,494,Rattus norwegicus,Brown rat,Brain,Cox - Golgi,Transverse,,32,642,MAMMALS,
+521,495,Rattus norwegicus,Brown rat,Brain,Cox - Golgi,Sagittal,,99,547,MAMMALS,
+522,496,Rattus norwegicus,Brown rat,Brain,Pyr. silver,Transverse,,8,417,MAMMALS,
+523,497,Rattus norwegicus,Brown rat,Brain & cord,Pyr. silver,Transverse,,13,751,MAMMALS,
+524,498,Rattus norwegicus,Brown rat,Brain,Pyr. silver,Transverse,25,26,700,MAMMALS,
+525,499,Rattus norwegicus,Brown rat,Brain & head,Pyr. silver,Transverse,20,28,796,MAMMALS,
+526,500,Rattus norwegicus,Brown rat,Brain,Pyr. silver,Transverse,20,75,1564,MAMMALS,
+527,501,Rattus norwegicus,Brown rat,Brain,Pyr. silver,Transverse,20,31,,MAMMALS,
+528,502,Rattus norwegicus,Brown rat,Brain,Pyr. silver,Transverse,20,34,1378,MAMMALS,
+529,503,Rattus norwegicus,Brown rat,Brain,Pyr. silver,Transverse,20,36,1042,MAMMALS,
+530,504,Rattus norwegicus,Brown rat,Brain,Pyr. silver,Horizontal,,25,332,MAMMALS,
+531,505,Rattus norwegicus,Brown rat,Brain,Pyr. silver,Horizontal,,24,319,MAMMALS,
+532,506,Rattus norwegicus,Brown rat,Brain,Pyr. silver,Horizontal,,33,336,MAMMALS,
+533,507,Rattus norwegicus,Brown rat,Brain,Pyr. silver,Horizontal,,41,419,MAMMALS,
+534,508,Rattus norwegicus,Brown rat,Brain,Pyr. silver,Horizontal,,47,411,MAMMALS,
+535,509,Rattus norwegicus,Brown rat,Brain,Pyr. silver,Horizontal,,48,365,MAMMALS,
+536,510,Rattus norwegicus,Brown rat,Brain,Pyr. silver,Sagittal,,10,292,MAMMALS,
+537,511,Rattus norwegicus,Brown rat,Brain,Pyr. silver,Sagittal,18,39,451,MAMMALS,
+538,512,Rattus norwegicus,Brown rat,Brain,Pyr. silver,Sagittal,,47,692,MAMMALS,
+539,513,Rattus norwegicus,Brown rat,Brain,Pyr. silver,Sagittal,20,97,605,MAMMALS,
+540,514,Rattus norwegicus,Brown rat,Brain,Cox - Chr. Silver,Sagittal,20,40,447,MAMMALS,( 3 days old )
+541,515,Rattus norwegicus,Brown rat,Brain & head,Cox - Chr. Silver,Sagittal,20,30,342,MAMMALS,( 3 days old )
+542,516,Rattus norwegicus,Brown rat,Brain & head,Cox - Chr. Silver,Sagittal,,36,488,MAMMALS,
+543,517,Rattus norwegicus,Brown rat,Brain,Altern.Weil & Tol. blue,Transverse,,28,588,MAMMALS,
+544,518,Rattus norwegicus,Brown rat,Brain,Altern.Weil & Tol. blue,Transverse,,32,579,MAMMALS,
+545,519,Cavia cobaya,Guinea pig,Brain,Tol. blue,Transverse,25,92,1138,MAMMALS,
+546,520,Cavia cobaya,Guinea pig,Brain,Tol. blue,Transverse,,99,1970,MAMMALS,
+547,521,Cavia cobaya,Guinea pig,Brain,Wei - gert,Transverse,50,92,777,MAMMALS,
+548,522,Cavia cobaya,Guinea pig,Spinal cord,Tol. blue,Longitudinal,40,25,150,MAMMALS,
+549,523,Cavia cobaya,Guinea pig,Spinal cord,Tol. blue,Transverse,40,40,3115,MAMMALS,
+550,524,Canis familiaris,Dog,Brain,Tol. blue,Transverse,40,88,773,MAMMALS,
+551,525,Canis familiaris,Dog,Brain,Tol. blue,Transverse,40,50,587,MAMMALS,
+552,526,Canis familiaris,Dog,Brain,Tol. blue,Transverse,50,375,927,MAMMALS,
+553,527,Canis familiaris,Dog,Brain,Tol. blue,Sagittal,50,400,539,MAMMALS,
+554,528,Canis familiaris,Dog,Brain,Weil,Transverse,20,203,1493,MAMMALS,
+555,529,Canis familiaris,Dog,Brain,Pyr. silver,Transverse,,117,1591,MAMMALS,(3 days old)
+556,530,Canis familiaris,Dog,Brain,Pyr. silver,Transverse,,111,1178,MAMMALS,
+557,531,Canis familiaris,Dog,Brain,Pyr. silver,Horizontal,,47,392,MAMMALS,( 3 days old )
+558,532,Canis familiaris,Dog,Brain,Pyr. silver,Sagittal,,108,911,MAMMALS,( 3 days old )
+559,533,Canis familiaris,Dog,Motor cortex,Tol. blue,Radial,10 to 25,5,15,MAMMALS,
+560,534,Canis familiaris,Dog,Cerebrum,Pyr. silver,Radial,25,4,32,MAMMALS,
+561,535,Canis familiaris,Dog,Cerebellum,Pyr. silver,Radial,5 to 15,9,71,MAMMALS,
+562,536,Canis familiaris,Dog,Spinal cord C1,Tol. blue,Transverse,,9,264,MAMMALS,
+563,537,Canis familiaris,Dog,Spinal cord C2,Tol. blue,Transverse,40,15,528,MAMMALS,
+564,538,Canis familiaris,Dog,Spinal cord C3,Tol. blue,Transverse,40,15,630,MAMMALS,
+565,539,Canis familiaris,Dog,Spinal cord C5,Tol. blue,Transverse,40,15,519,MAMMALS,
+566,540,Canis familiaris,Dog,Spinal cord C6,Tol. blue,Transverse,40,13,394,MAMMALS,
+567,541,Canis familiaris,Dog,Spinal cord C7,Tol. blue,Transverse,40,12,360,MAMMALS,
+568,542,Canis familiaris,Dog,Spinal cord C8,Tol. blue,Transverse,,11,350,MAMMALS,
+569,543,Canis familiaris,Dog,Spinal cord T1,Tol. blue,Transverse,30,6,258,MAMMALS,
+570,544,Canis familiaris,Dog,Spinal cord T2,Tol. blue,Transverse,50,5,273,MAMMALS,
+571,545,Canis familiaris,Dog,Spinal cord Sac.,Tol. blue,Transverse,50,24,1288,MAMMALS,
+572,546,Canis familiaris,Dog,Spinal cord L3 - S1,Tol. blue,Transverse,50,34,1492,MAMMALS,
+573,547,Canis familiaris,Dog,Spinal cord T10 - L2,Tol. blue,Transverse,50,28,526,MAMMALS,
+574,548,Canis familiaris,Dog,Spinal cord T7 - T10,Tol. blue,Transverse,50,27,1428,MAMMALS,
+575,549,Canis familiaris,Dog,Spinal cord T3 - T6,Tol. blue,Transverse,50,28,1379,MAMMALS,
+576,550,Canis familiaris,Dog,Spinal cord C1 - C2,Tol. blue,Longitudinal,40,29,116,MAMMALS,
+577,551,Canis familiaris,Dog,Spinal cord C3,Tol. blue,Longitudinal,40,27,108,MAMMALS,
+578,552,Canis familiaris,Dog,Spinal cord C5,Tol. blue,Longitudinal,50,26,105,MAMMALS,
+579,553,Canis familiaris,Dog,Spinal cord T1,Tol. blue,Longitudinal,50,20,80,MAMMALS,
+580,554,Canis familiaris,Dog,Spinal cord T4 - T7,Tol. blue,Longitudinal,50,13,65,MAMMALS,
+581,555,Canis familiaris,Dog,Spinal cord T4 - T7,Tol. blue,Longitudinal,50,15,75,MAMMALS,
+582,556,,,,,,,,,MAMMALS,
+583,557,Canis familiaris,Dog,Spinal cord T8 - T11,Tol. blue,Longitudinal,50,10,70,MAMMALS,
+584,558,Canis familiaris,Dog,Spinal cord T8 - T11,Tol. blue,Longitudinal,50,10,69,MAMMALS,
+585,559,Canis familiaris,Dog,Spinal cord T12 - L3,Tol. blue,Longitudinal,50,11,78,MAMMALS,
+586,560,Canis familiaris,Dog,Spinal cord T12 - L3,Tol. blue,Longitudinal,50,15,75,MAMMALS,
+587,561,Canis familiaris,Dog,Spinal cord L4 - L5,Tol. blue,Longitudinal,50,15,90,MAMMALS,
+588,562,Canis familiaris,Dog,Spinal cord S1 - S4,Tol. blue,Longitudinal,50,16,73,MAMMALS,
+589,563,Canis familiaris,Dog,Spinal cord,Pyr. silver,Transverse,5 to 15,12,,MAMMALS,
+590,564,Canis familiaris,Dog,Spinal ganglia,Tol. silver,Transverse,25,13,798,MAMMALS,
+591,565,Canis familiaris,Dog,Spinal ganglia,Pyr. blue,Longitudinal,,17,336,MAMMALS,
+592,566,Canis familiaris,Dog,Symp. ganglia,Pyr. blue,Longitudinal,15,15,274,MAMMALS,
+593,567,Canis familiaris,Dog,Symp. ganglia,Pyr. blue,Longitudinal,10 to 15,8,126,MAMMALS,
+594,568,Canis familiaris,Dog,Symp. ganglia,Pyr. blue,Longitudinal,10,7,197,MAMMALS,
+595,569,Canis familiaris,Dog,Symp. ganglia,Pyr. blue,Longitudinal,15,8,170,MAMMALS,
+596,570,Canis familiaris,Dog,Submax. ganglia,Pyr. blue,Longitudinal,15,5,40,MAMMALS,
+597,571,,,,,,,,,MAMMALS,
+598,572,Mustela novebordensis,Weasel,Brain,Tol. blue & Eosine,Transverse,15,168,2666,MAMMALS,
+599,573,Mustela vison,Mink,Brain,Tol. blue,Transverse,25,272,1212,MAMMALS,
+600,574,Mustela vison,Mink,Brain,Weigert,Transverse,25,221,1378,MAMMALS,
+601,575,Mustela vison,Mink,Brain,Pyr. silver,Transverse,,267,1752,MAMMALS,
+602,576,Mustela vison,Mink,Brain,Tol. blue,Sagittal,25,123,730,MAMMALS,
+603,577,Felis domestica,Cat,Brain,Tol. blue,Transverse,,237,1629,MAMMALS,
+604,578,Felis domestica,Cat,Brain,Tol. blue,Transverse,50,321,1151,MAMMALS,
+605,579,Felis domestica,Cat,Brain,Tol. blue,Sagittal,50,250,633,MAMMALS,
+606,580,Felis domestica,Cat,Brain,Weigert,Transverse,,456,1772,MAMMALS,
+607,581,Felis domestica,Cat,Medulla & Pons,Iron - Hema.,Transverse,10,15,584,MAMMALS,
+608,582,Felis domestica,Cat,Brain stem,Iron - Hema.,Sagittal,10,31,658,MAMMALS,
+609,583,Felis domestica,Cat,Brain,Cajal silver,Transverse,,117,1100,MAMMALS,
+610,584,Felis domestica,Cat,Brain,Pyr. silver,Transverse,15,123,1500,MAMMALS,
+611,585,Felis domestica,Cat,Brain,Pyr. silver,Transverse,,300,1573,MAMMALS,
+612,586,Felis domestica,Cat,Brain,Pyr. silver,Transverse,20,262,1895,MAMMALS,
+613,587,Felis domestica,Cat,Brain,Pyr. silver,Transverse,40,175,1625,MAMMALS,
+614,588,Felis domestica,Cat,Brain,Pyr. silver,Horizontal,20,64,611,MAMMALS,
+615,589,Felis domestica,Cat,Brain,Pyr. silver,Sagittal,20,45,526,MAMMALS,
+616,590,Felis domestica,Cat,Brain,Pyr. silver,Sagittal,,502,1375,MAMMALS,
+617,591,Felis domestica,Cat,Spinal cord,Tol. blue,Transverse,50,63,3235,MAMMALS,(6 weeks old )
+618,592,Felis domestica,Cat,Spinal cord,Tol. blue,Transverse,50,150,3457,MAMMALS,
+619,593,Felis domestica,Cat,Spinal cord,Tol. blue,Longitudinal,50,50,257,MAMMALS,(6 weeks old )
+620,594,Felis domestica,Cat,Spinal cord,Tol. blue,Longitudinal,50,120,536,MAMMALS,
+621,595,Felis domestica,Cat,Spinal cord,Tol. blue,Longitudinal,30,114,530,MAMMALS,
+622,596,Felis leo,,Brain,Pal. - Weigert,Transverse,35,290,435,MAMMALS,
+623,597,Sus scrofa,Pig,Brain,Cresyl violet,Transverse,10,42,633,MAMMALS,(28 mm. embr.)
+624,598,Sus scrofa,Pig,Brain,Cresyl violet,Transverse,10,42,977,MAMMALS,(28 mm. embr.)
+625,599,Sus scrofa,Pig,Brain,Cresyl violet,Transverse,10,15,312,MAMMALS,(35 mm. embr.)
+626,600,Sus scrofa,Pig,Brain,Cresyl violet,Transverse,15,29,862,MAMMALS,(40 mm. embr.)
+627,601,Sus scrofa,Pig,Brain,Cresyl violet,Transverse,10,35,761,MAMMALS,(42 mm. embr.)
+628,602,Sus scrofa,Pig,Brain,Cresyl violet,Transverse,15,35,927,MAMMALS,(50 mm. embr.)
+629,603,Sus scrofa,Pig,Brain,Cresyl violet,Transverse,20,36,729,MAMMALS,(65 mm. embr.)
+630,604,Sus scrofa,Pig,Brain,Cresyl violet,Transverse,25,36,572,MAMMALS,(70 mm. embr.)
+631,605,Sus scrofa,Pig,Brain,Cresyl violet,Transverse,25,45,,MAMMALS,(70 mm. embr.)
+632,606,Sus scrofa,Pig,Brain,Tol. blue,Transverse,15,174,2051,MAMMALS,(16 cm. embr.)
+633,607,Sus scrofa,Pig,Brain,Tol. blue,Transverse,25,260,1229,MAMMALS,(25 cm. embr.)
+634,608,Sus scrofa,Pig,Brain,Tol. blue,Transverse,20,416,2318,MAMMALS,
+635,609,Ailuropoda melanoleuca,Giant Panda,Brain,Altern. Weil & Cres. violet,Transverse,30,2582,3852,MAMMALS,
+636,610,Macropus sp.,Kangaroo,Brain,Tol. blue & Weil,Transverse,20,438,2951,MAMMALS,
+637,611,Didelphis aurita,,Brain,Tol. blue,Transverse,25,35,517,MAMMALS,
+638,612,Ornithorhynchus anatinus,Platypus,Brain,Altern. Weil & Cres. violet,Transverse,25,199,1288,MAMMALS,
+639,613,,Porcupine,Brain,Cresyl. violet,Transverse,25,613,2445,MAMMALS,
+640,713,Tupaia (?),Fisher (??),Brain,Pyr. silver,Transverse,25,235,246,MAMMALS,
+641,614,Tarsius spectrum,"Spectral, Celebesian, or Eastern tarsier",Brain,Weil. & Tol. blue,Transverse,25,80,886,MAMMALS,
+642,725,Tupaia,,Brain,Weil & Cres. violet,Transverse,25,25,280,MAMMALS,
+643,726,Nycticebus,,Brain,CV & Lux.Cr.Violet,Transverse,25,187,898,MAMMALS,
+644,615,Macaca mulatta,Macaque,Brain,Cresyl. violet,Transverse,,1390,1390,MAMMALS,
+645,616,Macaca mulatta,Macaque,Brain,Tol. blue,Transverse,,570,1149,MAMMALS,
+646,617,Macaca mulatta,Macaque,Brain,Weil.,Transverse,,2180,4835,MAMMALS,
+647,618,Macaca mulatta,Macaque,Brain,Weil.,Transverse,,1712,2365,MAMMALS,
+648,619,Macaca mulatta,Macaque,Brain,Weil.,Transverse,,1612,1753,MAMMALS,
+649,627,Macaca mulatta,Macaque,Brain,Weil & Cresyl. violet,Transverse,,1438,2176,MAMMALS,
+650,628,Macaca mulatta,Macaque,Brain,Weil & Thion.,Transverse,25,1438,1503,MAMMALS,
+651,634,Macaca mulatta,Macaque,Brain,Pyr. silver,Transverse,,780,1814,MAMMALS,(stillborn fetus)
+652,700,Macaca mulatta,Macaque,Spinal cord,Thion.,Transverse,25,197,5955,MAMMALS,
+653,620,Sus scrofa,Pig,Brain,Cresyl. violet,Transverse,,62,873,MAMMALS,( 20 mm. embr. )
+654,621,Sus scrofa,Pig,Brain,Cresyl. violet,Transverse,,70,1140,MAMMALS,( 25 mm. embr. )
+655,622,Sus scrofa,Pig,Brain,Cresyl. violet,Transverse,,81,990,MAMMALS,( 95 mm. embr. )
+656,623,Sus scrofa,Pig,Brain,Cresyl. violet,Transverse,,87,1067,MAMMALS,( 95 mm. embr. )
+657,624,Sus scrofa,Pig,Brain,Cresyl. violet,Transverse,,82,1045,MAMMALS,( 100 mm. embr. )
+658,625,,Hyrax,Brain,Cresyl. violet & Weil.,Transverse,25,260,1405,MAMMALS,
+659,626,Sus scrofa,Pig,Brain,Cresyl. violet,Transverse,,230,1415,MAMMALS,(70mm. embryo)
+660,627,Macaca mulatta,Macaque,Brain,Weil & Cresyl. violet,Transverse,,1438,2176,MAMMALS,
+661,628,Macaca mulatta,Macaque,Brain,Weil & Thion.,Transverse,25,1438,1503,MAMMALS,
+662,629,,Rat,Brain,Thion.,Transverse,25,45,772,MAMMALS,
+663,630,,Rat,Brain,Weil,Transverse,25,53,1012,MAMMALS,
+664,631,,Rat,Brain,Pyr. silver,Transverse,25,65,1390,MAMMALS,
+665,632,,Rat,Brain,Pyr. silver,Horizontal,20,14,226,MAMMALS,
+666,633,Cavia cobaya,Guinea pig,Brain,Hansen,Sagittal,,136,1355,MAMMALS,
+667,634,Macaca mulatta,Macaque,Brain,Pyr. silver,Transverse,,780,1814,MAMMALS,(stillborn fetus)
+668,640,Sus scrofa,Pig,Brain,Thion.,Transverse,25,43,582,MAMMALS,(33 mm. embryo)
+669,641,Sus scrofa,Pig,Brain,Thion.,Horizontal,25,35,492,MAMMALS,(25 mm. embryo)
+670,642,Sus scrofa,Pig,Brain,Weil,Transverse,25,297,1249,MAMMALS,
+671,643,Sus scrofa,Pig,Brain,Thion.,Horizontal,25,35,504,MAMMALS,(30 mm. embryo)
+672,644,Homo sapien,Human,Brain stem,,,,,,MAMMALS,
+673,645,Saimiri sciurea,Squirrel monkey,Brain,Thion.,Transverse,25,599,1469,MAMMALS,
+674,647,Homo sapien,Human,Brain,Cres. violet,Transverse,25,65,736,MAMMALS,(71 mm. embryo)
+675,648,Homo sapien,Human,Brain,Cres. violet,Transverse,25,265,1165,MAMMALS,(4.5 month embr.)
+676,649,Homo sapien,Human,Brain,Cres. violet,Transverse,20,317,837,MAMMALS,(13.5 cm. embr.)
+677,650,Homo sapien,Human,Brain,Tol. blue,Transverse,20,550,1769,MAMMALS,(13.5 cm. embr.)
+678,651,Homo sapien,Human,Brain,Hansen,Sagittal,10,124,992,MAMMALS,(72 mm. embr.)
+679,652,Homo sapien,Human,Brain,Hansen,Sagittal,15,494,1074,MAMMALS,(14.5 cm. embr.)
+680,653,Homo sapien,Human,Brain stem,Tol. blue,Transverse,50,865,1294,MAMMALS,
+681,654,Homo sapien,Human,Brain stem,Tol. blue,Transverse,50,375,1143,MAMMALS,
+682,655,Homo sapien,Human,Diencephalon,Cres. violet,Transverse,,135,135,MAMMALS,
+683,656,Homo sapien,Human,Diencephalon,Cres. violet,Sagittal,,127,127,MAMMALS,
+684,657,Homo sapien,Human,Brain stem,Weigert,Transverse,,119,119,MAMMALS,
+685,658,Homo sapien,Human,Brain stem,Pal. Weigert,Transverse,,259,259,MAMMALS,
+686,659,,Anteater,Brain,Weil,Transverse,25,340,947,MAMMALS,
+687,661,Capybara,,Brain,Weil & Thion.,Transverse,25,1725,2572,MAMMALS,
+688,646,Sus scrofa,Pig,Brain,Thion.,Transverse,25,46,460,MAMMALS,(38mm. embryo)
+689,662,Sus scrofa,Pig,Brain,Cres. violet,Transverse,,31,645,MAMMALS,( embryo)
+690,663,Sus scrofa,Pig,Brain,Cres. violet,Transverse,,39,648,MAMMALS,( 30 mm. embryo)
+691,664,,,,,,,,,MAMMALS,
+692,668,Ovibos moschatus,Musk ox,Brain & Cerv. cord,Alter. Weil & Thion.,Transverse,25,2060,6635,MAMMALS,
+693,669,,Water buffalo,Brain,Alter. Weil & Thion.,Transverse,25,2436,3928,MAMMALS,
+694,670,Macaca mulatta,Macaque,Brain stem,Tol. blue,Coronal,50,298,760,MAMMALS,
+695,671,Macaca mulatta,Macaque,Brain stem,Tol. blue,Transverse,,130,557,MAMMALS,
+696,672,Mus sp.,mouse,Brain,Pyr. silver,Transverse,,18,339,MAMMALS,
+697,673,Homo sapien,Human,Tub. olf. & Amygdala,,,,,,MAMMALS,
+698,674,Mustela novebordensis,Weasel,Brain,Alter. Weil & Thion.,Transverse,25,86,971,MAMMALS,
+699,675,Sus scrofa,Pig,Brain,Pyr. silver,Transverse,30,24,577,MAMMALS,(30 mm. embryo)
+700,677,Sus scrofa,Pig,Brain,Cres. violet,Transverse,,24,507,MAMMALS,(10 mm. embryo)
+701,678,Sus scrofa,Pig,Brain,Cres. violet,Transverse,,20,607,MAMMALS,(12 mm. embryo)
+702,679,Sus scrofa,Pig,Brain,Cres. violet,Transverse,,23,774,MAMMALS,(15 mm. embryo)
+703,680,Equus caballus,Horse,Brain,Tol. blue,Transverse,40,410,548,MAMMALS,
+704,681,Equus caballus,Horse,Brain,Weigert,Transverse,40,546,553,MAMMALS,
+705,683,Ovis aries,Sheep,Brain,Thion.,Transverse,25,1331,,MAMMALS,
+706,684,Ovis aries,Sheep,Brain,Weil,Transverse,25,1318,,MAMMALS,
+707,685,Antilocapra americana,Pronghorn,Brain,Alter. Weil & Thion.,Transverse,25,,,MAMMALS,
+708,696,Mustela canis,Smooth Dogfish?,Brain,Tol. blue,Transverse,25,139,1530,MAMMALS,
+709,697,Scalopus aquaticus,Mole,Brain,Pyr. silver,Sagittal,25,22,534,MAMMALS,
+710,698,Odocoileus virgianus,White-tailed deer,Brain,Thion.,Transverse,25,2436,4634,MAMMALS,
+711,699,Odocoileus virgianus,White-tailed deer,Brain,Weil,Transverse,25,1879,3552,MAMMALS,
+712,700,Macaca mulatta,Macaque,Spinal cord,Thion.,Transverse,25,197,5955,MAMMALS,
+713,704,Felis onca,True jaguar,Brain,Alter. Weil & Thion.,Transverse,25,2569,3371,MAMMALS,
+714,705,Scalopus aquaticus,Mole,Brain,Tol. blue,Transverse,25,50,622,MAMMALS,
+715,706,Scalopus aquaticus,Mole,Brain,Tol. blue,Sagittal,25,50,607,MAMMALS,
+716,707,Scalopus aquaticus,Mole,Brain,Weil,Sagittal,25,60,626,MAMMALS,
+717,708,Scalopus aquaticus,Mole,Brain,Pyr. silver,Transverse,25,33,589,MAMMALS,
+718,709,Scalopus aquaticus,Mole,Brain,Pyr. silver,Horizontal,25,28,270,MAMMALS,
+719,710,Odocoileus virgianus,White-tailed deer,Brain,Alter. Weil & Thion.,Transverse,25,2453,3826,MAMMALS,
+720,711,Martes martes,Marten,Brain,Alter. Weil & Thion.,Transverse,25,,1579,MAMMALS,
+721,712,Martes pennanti,Fisher,Brain,Alter. Weil & Thion.,Transverse,25,700,2419,MAMMALS,
+722,713,Tupaia (?),Fisher (??),Brain,Pyr. silver,Transverse,25,235,246,MAMMALS,
+723,714,Felis domesticus,Cat,Brain,Alter. Weil & Thion.,Transverse,25,428,1469,MAMMALS,
+724,715,Camelus,,Brain,Alter. Weil & Thion.,Transverse,25,320,348,MAMMALS,
+725,716,Trichosurus vulpecula,,Brain,Thion.,Transverse,25,126,1121,MAMMALS,
+726,717,,Wolverine,Brain,Weil & Thion. Lux.Cr.violet,Transverse,25,404,760,MAMMALS,
+727,718,,Giraffe,Brain,Weil,Transverse,25,T207 H67,T207 H67,MAMMALS,
+728,719,Canis occidentalis,Timber wolf,Brain,Weil & Thion. Lux.Cr.violet,Transverse,25,667,806,MAMMALS,
+729,720,Rangifer montanus,Caribou,Brain,Weil & Thion. Lux.Cr.violet,Transverse,25,834,1113,MAMMALS,
+730,721,Ursus horribilis,Grizzly bear,Brain,Weil & Thion. Lux.Cr.violet,Transverse,25,1020,1300,MAMMALS,
+731,722,,Fox Squirrel,Brain,Weil & Thion. Lux.Cr.violet,Transverse,25,70,448,MAMMALS,
+732,723,,Fox Squirrel,Brain,Weil & Thion. Lux.Cr.violet,Transverse,25,136,752,MAMMALS,
+733,724,,Gerbil,Brain,Weil,Transverse,25,30,606,MAMMALS,
+734,725,Tupaia,,Brain,Weil & Cres. violet,Transverse,25,25,280,MAMMALS,
+735,726,Nycticebus,,Brain,CV & Lux.Cr.Violet,Transverse,25,187,898,MAMMALS,
+736,727,,Horse,Brain,Weil & Thion.& Lux.Cr.Violet,Transverse,25,,,MAMMALS,
+737,728,,Moose,Brain,Weil & Thion.& Lux.Cr.Violet,Transverse,25,,,MAMMALS,
+738,729,,Brahma Bull,Brain Hypophysis,Weil & Thion.& Lux.Cr.Violet,Transverse,25,,,MAMMALS,
+739,730,Ursus gygas,Alaskan brown bear,Brain,Weil & Thion.& Lux.Cr.Violet,Transverse,25,,,MAMMALS,

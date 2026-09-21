@@ -99,7 +99,7 @@ A generic column giving the within-species temporal level of a specimen, for
 taxa that have such levels (only *H. sapiens* is graded in this dataset; extend
 `GRADE_BY_SPECIMEN` in the builder for other taxa). It exists because the source
 labels conflate fossils with living humans — see
-`../____Collections and Specimen notes/EarlyHomoSapiens_fossil_vs_extant_specimen_note.md`.
+`../_keys/specimen_crosswalk/EarlyHomoSapiens_fossil_vs_extant_specimen_note.md`.
 
 | value | meaning |
 |---|---|

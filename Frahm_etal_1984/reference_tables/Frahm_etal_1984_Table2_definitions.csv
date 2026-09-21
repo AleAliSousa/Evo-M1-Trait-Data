@@ -1,0 +1,13 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,species name as printed in the paper,,,info,,,Frahm_etal_1984_Table2,taxonomy applied later via ../_keys/Stephan/,
+ASV_percent_BrW,total area striata relative to brain weight,Area_striata,percent of brain weight,,primary,Scandentia & Primates,Frahm_etal_1984_Table2,,BrW data from Stephan et al. 1981
+ASV_percent_TV,total area striata relative to telencephalon volume,Area_striata,percent of telencephalon volume,,primary,Scandentia & Primates,Frahm_etal_1984_Table2,,TV data from Stephan et al. 1981
+ASV_percent_NV,total area striata relative to neocortex volume,Area_striata,percent of neocortex volume,,primary,Scandentia & Primates,Frahm_etal_1984_Table2,,NV data from Frahm et al. 1982
+ASW_percent_NW,area striata white matter relative to neocortex white matter,Area_striata_white_matter,percent of neocortex white matter,,primary,Scandentia & Primates,Frahm_etal_1984_Table2,,NW data from Frahm et al. 1982
+ASG_percent_NG,area striata grey matter relative to neocortex grey matter,Area_striata_grey_matter,percent of neocortex grey matter,,primary,Scandentia & Primates,Frahm_etal_1984_Table2,,NG data from Frahm et al. 1982
+ASG1_percent_NG1,area striata lamina 1 relative to neocortex lamina 1,Area_striata_lamina_1,percent of neocortex lamina 1,,primary,Scandentia & Primates,Frahm_etal_1984_Table2,,NG1 data from Frahm et al. 1982
+ASG2_6_percent_NG2_6,area striata laminae 2-6 relative to neocortex laminae 2-6,Area_striata_laminae_2_6,percent of neocortex laminae 2-6,,primary,Scandentia & Primates,Frahm_etal_1984_Table2,,NG2-6 data from Frahm et al. 1982
+ASG_percent_ASV,area striata grey matter relative to total area striata,Area_striata_grey_matter,percent of total area striata,,derived in source table,Scandentia & Primates,Frahm_etal_1984_Table2,,
+ASG1_percent_ASG,area striata lamina 1 relative to area striata grey matter,Area_striata_lamina_1,percent of area striata grey matter,,derived in source table,Scandentia & Primates,Frahm_etal_1984_Table2,,
+ASG_to_CGL_ratio,ratio of area striata grey matter to dorsal lateral geniculate nucleus,Area_striata_grey_matter,ratio to CGL,,primary,Scandentia & Primates,Frahm_etal_1984_Table2,,CGL data from Stephan et al. 1984
+former_name_stephan1981,name used in Stephan et al. 1981 and former papers,,,info,,,Frahm_etal_1984_Table2,NA where footnote does not apply,shared Tables 1-3 footnote

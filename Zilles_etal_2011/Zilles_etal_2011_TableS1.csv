@@ -1,0 +1,1364 @@
+source_row,species,sex,catalogue_number,body_weight_g,brain_weight_fresh_mg,plane_of_sectioning,section_thickness_um,staining,distance_between_sections,collection_group
+1,Solenodon paradoxus,F,1087,674,5000,coronal,15,Gallocyanin Heidenhain-Woelke,8 16,Insectivora
+2,Solenodon paradoxus,F,1088,426,4570,sagittal,10,Cresylviolet Heidenhain-Woelke,5 10,Insectivora
+3,Solenodon paradoxus,M,1089,640,4450,coronal,15,Cresylviolet Heidenhain-Woelke,10 20,Insectivora
+4,Solenodon paradoxus,F,1273,682,4850,coronal,20,Cresylviolet Heidenhain-Woelke,6 12,Insectivora
+5,Solenodon paradoxus,F,1276,,4590,sagittal,20,Cresylviolet,10,Insectivora
+6,Tenrec ecaudatus,M,M 96,915,2660,coronal,20,Cresylviolet Heidenhain-Woelke,5 10,Insectivora
+7,Tenrec ecaudatus,F,M 101,465,2320,sagittal,15,Cresylviolet Heidenhain-Woelke,4 8,Insectivora
+8,Tenrec ecaudatus,M,M 152,1010,3080,coronal,20,Cresylviolet Heidenhain-Woelke,5 10,Insectivora
+9,Tenrec ecaudatus,M,1003,366,2240,horizontal,20,Cresylviolet Heidenhain-Woelke,5 10,Insectivora
+10,Tenrec ecaudatus,M,1004,691,2460,sagittal,10,Cresylviolet Heidenhain-Woelke,10 20,Insectivora
+11,Tenrec ecaudatus,F,1005,761,2370,coronal,10,Cresylviolet Heidenhain-Woelke,7 14,Insectivora
+12,Tenrec ecaudatus,M,1015,176,1800,coronal,10,Cresylviolet Heidenhain-Woelke,10 20,Insectivora
+13,Setifer setosus,F,M 6,192,1400,coronal,20,Hematoxylin Heidenhain-Woelke,4 8,Insectivora
+14,Setifer setosus,F,M 37,303,1570,horizontal,20,Gallocyanin,5,Insectivora
+15,Setifer setosus,M,931,190,1320,coronal,10,Cresylviolet Thionin Heidenhain-Woelcke,5 5 5,Insectivora
+16,Setifer setosus,M,932,185,1530,coronal,10,Cresylviolet Heidenhain-Woelke,5 5,Insectivora
+17,Setifer setosus,M,958,212,1430,sagittal,15,Cresylviolet Heidenhain-Woelke Palmgren,10 incomplete incomplete,Insectivora
+18,Setifer setosus,M,959,162,1470,sagittal,10,Cresylviolet Heidenhain-Woelke Gomori Palmgren Goldner Perdrau,10 20 incomplete incomplete incomplete incomplete,Insectivora
+19,Setifer setosus,M,1010,24.7,50,coronal,10,Cresylviolet,5,Insectivora
+20,Setifer setosus,F,1012,309,1460,coronal,10,Cresylviolet Heidenhain-Woelke,8 16,Insectivora
+21,Setifer setosus,F,1013,172,1260,horizontal,10,Cresylviolet Heidenhain-Woelke,4 8,Insectivora
+22,Hemicentetes semispinosus,F,M 46,120,840,coronal,20,Gallocyanin,3,Insectivora
+23,Hemicentetes semispinosus,F,M 47,104.9,830,coronal,10,Cresylviolet Heidenhain-Woelke,6 12,Insectivora
+24,Hemicentetes semispinosus,F,M 156,123.5,860,coronal,10,Cresylviolet Heidenhain-Woelke,6 12,Insectivora
+25,Hemicentetes semispinosus,M,M 157,116.4,890,sagittal,10,Cresylviolet Heidenhain-Woelke,6 12,Insectivora
+26,Echinops telfairi,F,1048,80.7,650,coronal,10,Cresylviolet Hematoxylin,6 12,Insectivora
+27,Echinops telfairi,M,1049,57.1,570,horizontal,20,Cresylviolet,4,Insectivora
+28,Echinops telfairi,F,1050,120,730,coronal,20,Cresylviolet Heidenhain-Woelke,3 6,Insectivora
+29,Echinops telfairi,M,1055,76,550,sagittal,20,Cresylviolet Heidenhain-Woelke,2 4,Insectivora
+30,Echinops telfairi,F,1056,107.5,620,sagittal,10,Cresylviolet Heidenhain-Woelke,3 6,Insectivora
+31,Echinops telfairi,M,1057,84,620,coronal,10,Cresylviolet Heidenhain-Woelke,6 12,Insectivora
+32,Oryzorictes talpoides,F,M 34,44.2,580,coronal,10,Cresylviolet Heidenhain-Woelke,5 10,Insectivora
+33,Microgale cowani,F,M 180,15.2,420,coronal,10,Cresylviolet Heidenhain-Woelke,4 8,Insectivora
+34,Microgale dobsoni,M,M 60,35.3,550,coronal,10,Cresylviolet,5,Insectivora
+35,Microgale dobsoni,F,M 64,29.4,560,sagittal,10,Cresylviolet Heidenhain-Woelke,4 8,Insectivora
+36,Microgale dobsoni,M,M 65,31,560,coronal,15,Cresylviolet Heidenhain-Woelke,5 5,Insectivora
+37,Microgale talazaci,M,M 11,47.5,790,coronal,10,Cresylviolet,6,Insectivora
+38,Microgale talazaci,F,M 15,53.4,830,sagittal,10,Cresylviolet Heidenhain-Woelke,4 8,Insectivora
+39,Microgale talazaci,M,M 17,53.5,810,sagittal,10,Cresylviolet Heidenhain- Woelke,4 8,Insectivora
+40,Microgale talazaci,F,M 32,62.3,910,coronal,20,Gallocyanin,4,Insectivora
+41,Microgale talazaci,F,M 132,56.9,780,coronal,10,Cresylviolet,5,Insectivora
+42,Limnogale mergulus,U,1047,92,1150,coronal,10,Cresylviolet Heidenhain-Woelke,7 14,Insectivora
+43,Limnogale mergulus,M,1065,80,,sagittal,10,Cresylviolet Heidenhain-Woelke,5 10,Insectivora
+44,Limnogale mergulus,F,1067,99,,coronal,10,Cresylviolet Heidenhain-Woelke,4 8,Insectivora
+45,Potamogale velox,M,A 240,780,4700,coronal,20,Cresylviolet Heidenhain-Woelke,5 5,Insectivora
+46,Potamogale velox,M,A 339,,,coronal,20,Cresylviolet Heidenhain-Woelke,3 incomplete,Insectivora
+47,Potamogale velox,M,A 345,743,4500,horizontal,20,Cresylviolet Heidenhain-Woelke,2 4,Insectivora
+48,Potamogale velox,M,A 357,668,4100,sagittal,10,Cresylviolet Heidenhain-Woelke Gomori Perdrau Palmgren,10 10 incomplete incomplete incomplete,Insectivora
+49,Potamogale velox,F,A 365,592,3820,sagittal,10,Cresylviolet Heidenhain-Woelke Gomori Perdrau Azan Rogers,10 incomplete incomplete incomplete incomplete incomplete,Insectivora
+50,Potamogale velox,M,A 367,517,3700,coronal,10,Cresylviolet,"5, 10",Insectivora
+51,Potamogale velox,F,3661,640,3931,coronal,20,Cresylviolet,5,Insectivora
+52,Potamogale velox,F,3662,578,4056,coronal,20,Gallocyanin,5,Insectivora
+53,Potamogale velox,M,3665,595,4029,coronal,20,Cresylviolet,5,Insectivora
+54,Micropotamogale lamottei,F,1728,67.3,630,coronal,20,Cresylviolet Heidenhain-Woelke,3 6,Insectivora
+55,Micropotamogale ruwenzorii,M,3666,117.3,1237,coronal,20,Cresylviolet,4,Insectivora
+56,Micropotamogale ruwenzorii,F,3667,102.8,1221,coronal,20,Cresylviolet,4,Insectivora
+57,Micropotamogale ruwenzorii,F,3668,87.7,1014,coronal,20,Cresylviolet,4,Insectivora
+58,Micropotamogale ruwenzorii,M,3669,86,1063,coronal,20,Gallocyanin,3,Insectivora
+59,Chrysochloris asiatica,M,973,49,700,coronal,10,Cresylviolet Heidenhain-Woelke,5 10,Insectivora
+60,Chrysochloris stuhlmanni,M,A 195,43,820,sagittal,10,Cresylviolet Heidenhain-Woelke Azan Perdrau Gomori Palmgren,10 incomplete incomplete incomplete incomplete incomplete,Insectivora
+61,Chrysochloris stuhlmanni,F,A 205,32.5,720,coronal,10,Cresylviolet,4,Insectivora
+62,Chrysochloris stuhlmanni,M,A 206,47,750,coronal,10,Cresylviolet Heidenhain-Woelke,4 8,Insectivora
+63,Chrysochloris stuhlmanni,M,A 207,40.5,800,sagittal,10,Cresylviolet Gomori Perdrau Azan Heidenhain-Woelke Bodian,10 incomplete incomplete incomplete incomplete incomplete,Insectivora
+64,Chrysochloris stuhlmanni,M,A 210,50.5,800,horizontal,10,Cresylviolet Heidenhain-Woelke,3 6,Insectivora
+65,Chrysochloris stuhlmanni,F,A 211,35,680,coronal,10,Cresylviolet Heidenhain-Woelke,4 8,Insectivora
+66,Chlorotalpa leucorhina,F,1042,60,520,coronal,10,Cresylviolet Heidenhain-Woelke,4 8,Insectivora
+67,Echinosorex gymnurus,F,4415,408,4458,coronal,20,Gallocyanin,5,Insectivora
+68,Echinosorex gymnurus,M,4819,750,5956,coronal,20,Gallocyanin,7,Insectivora
+69,Echinosorex gymnurus,M,4820,895,6460,coronal,20,Gallocyanin,7,Insectivora
+70,Echinosorex gymnurus,M,4821,630,5766,sagittal,20,Gallocyanin Heidenhain-Woelke Myelin Gallyas,20 incomplete incomlpete,Insectivora
+71,Hylomys suillus,M,4822,57,1200,coronal,20,Gallocyanin,4,Insectivora
+72,Aethechinus algirus,F,1191,574,3230,sagittal,20,Cresylviolet Heidenhain-Woelke,3 6,Insectivora
+73,Aethechinus algirus,M,1192,810,3380,coronal,20,Cresylviolet Heidenhain-Woelke,5 10,Insectivora
+74,Aethechinus algirus,M,1193,472,3040,coronal,20,Cresylviolet Heidenhain-Woelke,5 10,Insectivora
+75,Aethechinus algirus,M,1402,785,3210,coronal,20,Cresylviolet Heidenhain-Woelke,5 10,Insectivora
+76,Aethechinus algirus,F,1404,779,3160,sagittal,20,Cresylviolet Heidenhain-Woelke,3 6,Insectivora
+77,Aethechinus algirus,M,4988,780,2745,"sagittal, horizontal",20,Gallocyanin Myelin Gallyas Heidenhain-Woelke,"8, 12 incomplete incomplete",Insectivora
+78,Aethechinus algirus,F,4989,730,2629,coronal,20,Gallocyanin,10,Insectivora
+79,Aethechinus algirus,M,4990,730,2939,coronal,20,Gallocyanin,10,Insectivora
+80,Erinaceus europaeus,M,320,,2730,coronal,20,Cresylviolet,3,Insectivora
+81,Erinaceus europaeus,U,427,,,coronal,20,Cresylviolet,3,Insectivora
+82,Erinaceus europaeus,U,428,,,coronal,20,Cresylviolet Heidenhain-Woelke Gomori,3 6,Insectivora
+83,Erinaceus europaeus,M,518,864,3220,sagittal,"10, 20",Cresylviolet Azan Gomori Bodian Heidenhain-Woelke Hematoxylin,10 incomplete incomplete incomplete 10 incomplete,Insectivora
+84,Erinaceus europaeus,M,519,740,3310,coronal,10,Cresylviolet,10,Insectivora
+85,Erinaceus europaeus,F,922,890,,coronal,10,Cresylviolet,8,Insectivora
+86,Erinaceus europaeus,F,927,946,3500,horizontal,10,Cresylviolet,4,Insectivora
+87,Erinaceus europaeus,M,939,1190,3520,coronal,10,Cresylviolet Heidenhain-Woelke,6 12,Insectivora
+88,Erinaceus europaeus,M,1070,730,3120,coronal,20,Cresylviolet Heidenhain-Woelke,6 12,Insectivora
+89,Erinaceus europaeus,M,1071,775,3040,horizontal,20,Cresylviolet Heidenhain-Woelke,2 4,Insectivora
+90,Hemiechinus auritus,M,1377,222,1920,coronal,20,Cresylviolet Heidenhain-Woelke,4 8,Insectivora
+91,Hemiechinus auritus,M,1379,216,1990,sagittal,20,Cresylviolet Heidenhain-Woelke,3 6,Insectivora
+92,Hemiechinus auritus,M,1380,191,1980,sagittal,20,Cresylviolet Heidenhain-Woelke,3 6,Insectivora
+93,Hemiechinus auritus,M,1381,218,1910,coronal,20,Cresylviolet Heidenhain-Woelke,4 8,Insectivora
+94,Hemiechinus auritus,M,1382,193.5,1670,sagittal,20,Cresylviolet Heidenhain-Woelke,4 8,Insectivora
+95,Hemiechinus auritus,M,1401,370,2040,sagittal,20,Cresylviolet Heidenhain-Woelke,2 4,Insectivora
+96,Sorex alpinus,F,3603,7.7,258,coronal,"10, 20",Cresylviolet,2,Insectivora
+97,Sorex alpinus,M,3604,8.1,266,coronal,20,Cresylviolet,2,Insectivora
+98,Sorex alpinus,M,3606,12.6,246,sagittal,"10, 20",Gallocyanin Heidenhain-Woelke Myelin Gallyas,18 incomplete incomplete,Insectivora
+99,Sorex alpinus,M,3608,12.4,249,coronal,10,Cresylviolet,4,Insectivora
+100,Sorex araneus,M,345,7.5,,coronal,20,Cresylviolet,complete,Insectivora
+101,Sorex araneus,U,346,7,,coronal,20,Cresylviolet,complete,Insectivora
+102,Sorex araneus,F,353,7,,coronal,20,Cresylviolet,complete,Insectivora
+103,Sorex araneus,M,460,6,210,coronal,20,Cresylviolet,complete,Insectivora
+104,Sorex araneus,M,461,6.5,210,coronal,20,Cresylviolet,complete,Insectivora
+105,Sorex araneus,F,462,6,190,coronal,20,Cresylviolet,complete,Insectivora
+106,Sorex araneus,M,463,6,190,coronal,20,Cresylviolet,complete,Insectivora
+107,Sorex araneus,F,506,9.460000000000001,200,sagittal,10,Gomori Cresylviolet Perdrau Azan Hematoxylin Bodian,20 incomplete incomplete incomplete incomplete incomplete,Insectivora
+108,Sorex araneus,M,513,11.6,200,sagittal,10,Gomori,incomplete,Insectivora
+109,Sorex araneus,F,947,8.74,220,coronal,10,Cresylviolet Heidenhain-Woelke,2 4,Insectivora
+110,Sorex araneus,M,951,6.6,220,horizontal,10,Cresylviolet,5,Insectivora
+111,Sorex araneus,M,966,9.98,200,sagittal,10,Cresylviolet Heidenhain- Woelke,20 incomplete,Insectivora
+112,Sorex araneus,M,967,10.59,190,horizontal,10,Cresylviolet Heidenhain-Woelke,5 10,Insectivora
+113,Sorex cinereus,F,3058,4,173,coronal,10,Cresylviolet Heidenhain-Woelke,3 6,Insectivora
+114,Sorex cinereus,F,3062,3.8,173,coronal,10,Cresylviolet Heidenhain-Woelke,3 6,Insectivora
+115,Sorex cinereus,M,3074,3.8,173,coronal,10,Cresylviolet Heidenhain-Woelke,4 8,Insectivora
+116,Sorex cinereus,F,3082,4,176,sagittal,10,Gallocyanin Heidenhain-Woelke,16 incomplete,Insectivora
+117,Sorex fumeus,F,3083,5.5,235,coronal,10,Cresylviolet Heidenhain-Woelke,4 8,Insectivora
+118,Sorex fumeus,M,3084,5.9,247,coronal,10,Cresylviolet Heidenhain-Woelke,3 6,Insectivora
+119,Sorex minutus,F,356,4,110,coronal,20,Cresylviolet,complete,Insectivora
+120,Sorex minutus,F,488,5.5,105,coronal,20,Cresylviolet,complete,Insectivora
+121,Sorex minutus,M,3609,4.8,133,coronal,"10, 20",Cresylviolet,2,Insectivora
+122,Sorex minutus,F,3610,3.6,114,sagittal,10,Gallocyanin Cresylviolet,12 incomplete,Insectivora
+123,Sorex minutus,M,3613,3.3,147,coronal,10,Cresylviolet,4,Insectivora
+124,Sorex minutus,F,3617,3,140,coronal,"10, 20",Cresylviolet,2,Insectivora
+125,Microsorex hoyi,F,3085,2.6,107,coronal,10,Gallocyanin,3,Insectivora
+126,Microsorex hoyi,M,3088,2.8,104,coronal,10,Cresylviolet Heidenhain-Woelke,3 6,Insectivora
+127,Microsorex hoyi,M,3089,2.4,99,coronal,10,Cresylviolet,3,Insectivora
+128,Microsorex hoyi,M,3992,2.93,85,sagittal,10,Gallocyanin Heidenhain-Woelke Myelin Gallyas,12 incomplete incomplete,Insectivora
+129,Neomys anomalus,M,3596,9.199999999999999,281,sagittal,10,Gallocyanin MyelinGallyas,16 incomplete,Insectivora
+130,Neomys anomalus,M,3597,9.699999999999999,277,coronal,20,2Cresylviolet,2,Insectivora
+131,Neomys anomalus,F,3599,9.199999999999999,270,coronal,10,Cresylviolet,4,Insectivora
+132,Neomys anomalus,F,3600,9.4,286,coronal,10,Cresylviolet,4,Insectivora
+133,Neomys fodiens,M,399,14,350,coronal,20,Cresylviolet,complete,Insectivora
+134,Neomys fodiens,M,464,15,310,coronal,20,Cresylviolet,2,Insectivora
+135,Neomys fodiens,M,465,16,310,coronal,20,Cresylviolet,2,Insectivora
+136,Neomys fodiens,M,993,15,300,coronal,11,Cresylviolet Heidenhain-Woelke,3 6,Insectivora
+137,Neomys fodiens,M,994,162,315,coronal,10,Cresylviolet Heidenhain-Woelke,3 6,Insectivora
+138,Neomys fodiens,M,997,15,300,sagittal,10,Cresylviolet Heidenhain-Woelke,3 6,Insectivora
+139,Blarina brevicauda,F,3021,20.4,407,sagittal,20,Gallocyanin Heidenhain-Woelke,12 incomplete,Insectivora
+140,Blarina brevicauda,F,3025,17.5,385,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Insectivora
+141,Blarina brevicauda,F,3034,17.6,405,coronal,10,Cresylviolet,3,Insectivora
+142,Blarina brevicauda,M,3043,18.6,402,coronal,10,Cresylviolet,3,Insectivora
+143,Cryptotis parva,M,3997,9.300000000000001,242,coronal,"10, 20",Cresylviolet,2,Insectivora
+144,Cryptotis parva,M,4000,8.300000000000001,247,coronal,10,Cresylviolet,4,Insectivora
+145,Cryptotis parva,M,4001,10.2,250,coronal,10,Cresylviolet,4,Insectivora
+146,Cryptotis parva,F,4003,10.2,241,sagittal,10,Gallocyanin Heidenhain-Woelke,20 incomplete,Insectivora
+147,Crocidura attenuata,M,4416,9.300000000000001,209,coronal,20,Gallocyanin,2,Insectivora
+148,Crocidura flavescens,M,A 10,40.6,470,sagittal,10,Cresylviolet Heidenhain-Woelke,10 incomplete,Insectivora
+149,Crocidura flavescens,M,A 23,37,430,sagittal,10,Cresylviolet Heidenhain-Woelke,10 incomplete,Insectivora
+150,Crocidura flavescens,M,A 25,40.5,460,coronal,10,Cresylviolet,4,Insectivora
+151,Crocidura flavescens,M,A 31,29.5,440,sagittal,10,Cresylviolet Heidenhain-Woelke,20 incomplete,Insectivora
+152,Crocidura flavescens,M,A 53,36,450,coronal,10,Cresylviolet,3,Insectivora
+153,Crocidura flavescens,M,A 57,37.5,440,sagittal,15,Hematoxylin Heidenhain-Woelke Thionin,10 incomplete incomplete,Insectivora
+154,Crocidura flavescens,M,A 63,19.5,480,horizontal,10,Cresylviolet,5,Insectivora
+155,Crocidura flavescens,F,A 66,22.5,420,sagittal,15,Hematoxylin Heidenhain-Woelke,incomplete incomplete,Insectivora
+156,Crocidura flavescens,M,A 156,25,450,coronal,"10, 20",Cresylviolet Heidenhain-Woelke,"3, 6 6, 12",Insectivora
+157,Crocidura flavescens,M,162,32,420,coronal,10,Cresylviolet Heidenhain-Woelke,3 6,Insectivora
+158,Crocidura hildegardeae,M,A 30,11.3,240,coronal,10,Gallocyanin Heidenhain-Woelke,4 8,Insectivora
+159,Crocidura hildegardeae,M,3697,9.6,227,coronal,20,Cresylviolet,2,Insectivora
+160,Crocidura hildegardeae,F,3698,6.9,198,coronal,20,Cresylviolet,2,Insectivora
+161,Crocidura hildegardeae,M,3699,5.8,195,coronal,20,Cresylviolet,2,Insectivora
+162,Crocidura jacksoni,F,A 363,10.3,250,coronal,10,Gallocyanin,4,Insectivora
+163,Crocidura russula,M,491,10.95,190,coronal,20,Cresylviolet Gomori,2 incomplete,Insectivora
+164,Crocidura russula,M,492,9.800000000000001,170,coronal,20,Cresylviolet,2,Insectivora
+165,Crocidura russula,F,730,11,180,coronal,8,Cresylviolet Heidenhain-Woelke,5 20,Insectivora
+166,Crocidura russula,M,731,11,190,sagittal,8,Cresylviolet Heidenhain-Woelke Azan Bodian,5 incomplete incomplete incomplete,Insectivora
+167,Crocidura russula,F,940,10.7,200,coronal,10,Cresylviolet Heidenhain-Woelke,3 6,Insectivora
+168,Crocidura russula,F,2997,8.699999999999999,210,coronal,20,Gallocyanin Heidenhain-Woelke,2 4,Insectivora
+169,Crocidura russula,F,2998,7.1,209,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Insectivora
+170,Crocidura russula,M,3001,8.6,205,coronal,10,Cresylviolet Heidenhain-Woelke,4 8,Insectivora
+171,Crocidura suaveolens,F,4061,7.5,181,coronal,20,Gallocyanin,2,Insectivora
+172,Crocidura suaveolens,M,4062,7.6,196,coronal,20,Gallocyanin,2,Insectivora
+173,Crocidura suaveolens,M,4063,10.3,190,coronal,20,Cresylviolet,2,Insectivora
+174,Suncus etruscus,F,3004,2.15,62,sagittal,10,Gallocyanin Heidenhain-Woelke Azan,4 8 incomplete,Insectivora
+175,Suncus etruscus,F,3005,1.72,59,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Insectivora
+176,Suncus etruscus,F,3006,1.94,61,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Insectivora
+177,Suncus etruscus,M,3007,2.28,62,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Insectivora
+178,Suncus murinus,M,10,38.6,350,sagittal,10,Cresylviolet Heidenhain-Woelke,5 incomplete,Insectivora
+179,Suncus murinus,F,M 51,29.8,340,coronal,10,Cresylviolet Heidenhain-Woelke,6 12,Insectivora
+180,Suncus murinus,M,M 62,49.6,430,sagittal,10,Gallocyanin Heidenhain-Woelke,20 incomplete,Insectivora
+181,Suncus murinus,M,M 67,44.4,430,coronal,"10, 20",Cresylviolet Heidenhain-Woelke,5 10,Insectivora
+182,Suncus murinus,F,M 151,25.1,360,coronal,15,Cresylviolet Heidenhain-Woelke,4 8,Insectivora
+183,Suncus murinus,M,M 190,43,360,coronal,10,Cresylviolet Heidenhain-Woelke,5 10,Insectivora
+184,Sylvisorex granti,F,3700,3.8,162,coronal,20,Cresylviolet,2,Insectivora
+185,Sylvisorex granti,M,3701,4,165,coronal,20,Cresylviolet,2,Insectivora
+186,Sylvisorex granti,F,3703,4.1,162,coronal,20,Cresylviolet,2,Insectivora
+187,Sylvisorex granti,M,3704,3.5,159,sagittal,10,Gallocyanin Heidenhain-Woelke,16 incomplete,Insectivora
+188,Sylvisorex megalura,M,3711,6.3,192,coronal,20,Cresylviolet,2,Insectivora
+189,Sylvisorex megalura,M,3713,6.3,192,coronal,20,Cresylviolet,2,Insectivora
+190,Sylvisorex megalura,F,3714,5.5,185,coronal,20,Cresylviolet,2,Insectivora
+191,Sylvisorex megalura,M,3716,5.4,188,sagittal,10,Gallocyanin Heidenhain-Woelke Myelin Gallyas,16 incomplete incomplete,Insectivora
+192,Ruwenzorisorex suncoides,M,3717,18.2,370,coronal,20,Cresylviolet,2,Insectivora
+193,Myosorex babaulti,F,3718,17,360,coronal,20,Cresylviolet,2,Insectivora
+194,Anourosorex squamipes,M,4432,18.8,384,sagittal,10,Gallocyanin Heidenhain-Woelke,20 incomplete,Insectivora
+195,Anourosorex squamipes,F,4434,18.9,395,coronal,20,Gallocyanin,2,Insectivora
+196,Anourosorex squamipes,F,4435,18.3,420,coronal,20,Gallocyanin,2,Insectivora
+197,Anourosorex squamipes,M,4436,22.3,403,coronal,20,Cresylviolet,2,Insectivora
+198,Anourosorex squamipes,M,4438,22.2,394,coronal,20,Gallocyanin,2,Insectivora
+199,Scutisorex somereni,M,3719,69.09999999999999,660,sagittal,10,Gallocyanin Heidenhain-Woelke,24 incomplete,Insectivora
+200,Scutisorex somereni,M,3720,38.4,604,coronal,20,Cresylviolet,3,Insectivora
+201,Scutisorex somereni,M,3722,49.9,643,coronal,20,Cresylviolet,3,Insectivora
+202,Scutisorex somereni,M,3723,65.09999999999999,634,coronal,20,Cresylviolet,3,Insectivora
+203,Desmana moschata,F,1031,420,4100,coronal,15,Cresylviolet Heidenhain-Woelke,6 12,Insectivora
+204,Desmana moschata,M,1040,498,3900,sagittal,15,Cresylviolet Heidenhain-Woelke,5 10,Insectivora
+205,Desmana moschata,M,1041,410,4000,coronal,15,Cresylviolet Heidenhain-Woelke,5 10,Insectivora
+206,Galemys pyrenaicus,M,935,63,1270,sagittal,10,Cresylviolet Gomori Azan Palmgren Heidenhain-Woelke Perdrau,10 incomplete incomplete incomplete incomplete incomplete,Insectivora
+207,Galemys pyrenaicus,F,936,70,1310,coronal,10,Cresylviolet Heidenhain-Woelke,5 10,Insectivora
+208,Galemys pyrenaicus,F,995,62.4,1360,coronal,10,Cresylviolet Heidenhain-Woelke,6 10,Insectivora
+209,Galemys pyrenaicus,F,996,57.85,1355,horizontal,10,Cresylviolet Heidenhain-Woelke,4 8,Insectivora
+210,Galemys pyrenaicus,M,998,48.35,1350,sagittal,10,Cresylviolet Heidenhain-Woelke Azan Hematoxylin Perdrau Palmgren Holzer,10 10 incomplete incomplete incomplete incomplete incomplete,Insectivora
+211,Talpa europaea,F,323,72,1050,coronal,20,Cresylviolet,complete,Insectivora
+212,Talpa europaea,F,396,78,,coronal,20,Cresylviolet,2,Insectivora
+213,Talpa europaea,M,479,94.40000000000001,980,coronal,20,Cresylviolet,3,Insectivora
+214,Talpa europaea,M,480,95.75,1160,sagittal,"10, 20",Cresylviolet Heidenhain-Woelke Azan Gomori Perdrau v. Giesen Bodian Hematoxylin Holzner,10 10 incomplete incomplete incomplete incomplete incomplete incomplete incomplete,Insectivora
+215,Talpa europaea,F,481,73.40000000000001,940,coronal,10,Gomori,10,Insectivora
+216,Talpa europaea,F,743,58,1020,coronal,10,Cresylviolet Heidenhain-Woelke Gomori Goldner,5 5 incomplete incomplete,Insectivora
+217,Talpa europaea,M,1563,92.5,1060,coronal,20,Cresylviolet Heidenhain-Woelke,10 10,Insectivora
+218,Talpa micrura,M,4824,41.4,816,coronal,20,Gallocyanin,3,Insectivora
+219,Talpa micrura,F,4825,34,747,coronal,20,Gallocyanin,3,Insectivora
+220,Parascalops breweri,M,3090,54.9,826,sagittal,"10, 20",Gallocyanin Heidenhain-Woelke,24 incomplete,Insectivora
+221,Parascalops breweri,F,3091,56.9,855,coronal,20,Cresylviolet,3,Insectivora
+222,Parascalops breweri,M,3092,53.2,881,coronal,20,Gallocyanin,2,Insectivora
+223,Parascalops breweri,M,3093,48,885,coronal,20,Gallocyanin,3,Insectivora
+224,Scalopus aquaticus,M,4004,115,1310,coronal,20,Cresylviolet,3,Insectivora
+225,Tupaia glis,U,2,,,coronal,8,Cresylviolet Heidenhain-Woelke Azan Gomori,5 10 incomplete incomplete,Scandentia
+226,Tupaia glis,U,3,,,sagittal,8,Cresylviolet Heidenhain-Woelke,5 10,Scandentia
+227,Tupaia glis,M,969,165,2930,coronal,20,Cresylviolet Heidenhain-Woelke,5 10,Scandentia
+228,Tupaia glis,M,970,149,3400,sagittal,20,Cresylviolet Heidenhain-Woelke Gomori Azan Palmgren Perdrau,5 10 5 5 10 10,Scandentia
+229,Tupaia glis,F,999,143.3,3130,coronal,10,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+230,Tupaia glis,F,1016,,,horizontal,10,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+231,Tupaia glis,M,1073,200,3210,coronal,20,Cresylviolet Heidenhain-Woelke,5 10,Scandentia
+232,Tupaia glis,M,1109,133,3770,coronal,15,Cresylviolet Heidenhain-Woelke,6 12,Scandentia
+233,Tupaia glis,F,1576,180,3520,coronal,20,Cresylviolet Heidenhain-Woelke,5 10,Scandentia
+234,Tupaia glis,F,1577,198,3380,coronal,22.5,Cresylviolet Heidenhain-Woelke,5 10,Scandentia
+235,Tupaia glis,F,1578,181,3480,coronal,100,Golgi-Cox,6,Scandentia
+236,Tupaia glis,M,1582,203,3260,coronal,10,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+237,Tupaia glis,F,1583,178,3120,coronal,25,Cresylviolet Heidenhain-Woelke,4 8,Scandentia
+238,Tupaia glis,F,1584,177,3320,coronal,80,Golgi-Cox,6,Scandentia
+239,Tupaia glis,M,1609,164.2,3040,coronal,20,Cresylviolet Heidenhain-Woelke,6 12,Scandentia
+240,Tupaia glis,M,1610,166,3050,coronal,20,Cresylviolet Heidenhain-Woelke,6 12,Scandentia
+241,Tupaia glis,M,1627,221,3060,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+242,Tupaia glis,M,1628,193,3020,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+243,Tupaia glis,F,1629,179,3070,coronal,20,Cresylviolet Heidenhain-Woelke,10 10,Scandentia
+244,Tupaia glis,F,1630,141,3040,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+245,Tupaia glis,M,1632,153,3070,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+246,Tupaia glis,F,1633,155,3410,coronal,20,Hematxylin Heidenhain-Woelke,10 20,Scandentia
+247,Tupaia glis,M,1634,163,3380,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+248,Tupaia glis,F,1635,165,3140,coronal,20,Hematoxylin,10,Scandentia
+249,Tupaia glis,M,1636,167,3120,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+250,Tupaia glis,F,1637,158,3240,coronal,20,Hematoxylin Heidenhain-Woelke,10 20,Scandentia
+251,Tupaia glis,F,1639,139,2820,coronal,"20, 10, 4",Hematoxylin Heidenhain-Woelke,10 20,Scandentia
+252,Tupaia glis,M,1640,160,3120,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+253,Tupaia glis,F,1641,131,3080,coronal,"20, 10, 6",Cresylviolet Heidenhain-Woelke Hematoxylin,10 20 incomplete,Scandentia
+254,Tupaia glis,F,1642,154,3040,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+255,Tupaia glis,F,1643,160,3210,coronal,20,Hematoxylin Heidenhain-Woelke,10 20,Scandentia
+256,Tupaia glis,M,1644,212,3270,coronal,5,Hematoxylin,complete,Scandentia
+257,Tupaia glis,M,1645,175,3210,coronal,"4, 10, 20",Cresylviolet Heidenhain-Woelke Hematoxylin,10 20 5,Scandentia
+258,Tupaia glis,F,1646,175,3330,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+259,Tupaia glis,M,1647,211,3200,coronal,"4, 10, 20",Hematoxylin Heidenhain-Woelke,incomplete 20,Scandentia
+260,Tupaia glis,F,1648,196,3340,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+261,Tupaia glis,F,1651,184,3120,coronal,20,Hematoxylin Heidenhain-Woelke,10 20,Scandentia
+262,Tupaia glis,F,1652,178,3160,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+263,Tupaia glis,M,1654,168,3470,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+264,Tupaia glis,F,1655,146,3430,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+265,Tupaia glis,F,1656,143,3260,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+266,Tupaia glis,F,1657,129,3060,coronal,"20, 10, 4",Cresylviolet Heidenhain-Woelke Hematoxylin,10 20 20,Scandentia
+267,Tupaia glis,F,1681,161.1,3600,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+268,Tupaia glis,M,1682,177.5,3450,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+269,Tupaia glis,M,1683,180.3,3700,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+270,Tupaia glis,F,1684,160.7,3730,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+271,Tupaia glis,F,1689,176.4,3340,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+272,Tupaia glis,F,1692,180.2,3520,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+273,Tupaia glis,F,1693,165.5,3530,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+274,Tupaia glis,F,1696,159.1,3640,coronal,20,Hematoxylin Heidenhain-Woelke,10 20,Scandentia
+275,Tupaia glis,F,1698,137,3450,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+276,Tupaia glis,F,1699,176.9,3270,coronal,20,Hematoxylin Heidenhain-Woelke,10 20,Scandentia
+277,Tupaia glis,M,1701,192.7,3370,coronal,20,Hematoxylin Heidenhain-Woelke,10 20,Scandentia
+278,Tupaia glis,M,1706,91,2910,coronal,20,Hematoxylin Heidenhain-Woelke,10 20,Scandentia
+279,Tupaia glis,M,1709,180,3470,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+280,Tupaia glis,M,1713,67.09999999999999,2770,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+281,Tupaia glis,F,1715,1.14,1140,coronal,20,Cresylviolet Heidenhain-Woelke,4 8,Scandentia
+282,Tupaia glis,M,1720,245,3170,coronal,20,Hematoxylin Heidenhain-Woelke,10 20,Scandentia
+283,Tupaia glis,F,1735,192,3500,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+284,Tupaia glis,M,1740,181.8,3650,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+285,Tupaia glis,F,1741,173,3390,coronal,20,Hematoxylin Heidenhain-Woelke,10 20,Scandentia
+286,Tupaia glis,M,1742,202.3,3490,coronal,20,Hematoxylin Heidenhain-Woelke,10 20,Scandentia
+287,Tupaia glis,F,1743,171.5,3230,coronal,20,Hematoxylin Heidenhain-Woelke,10 20,Scandentia
+288,Tupaia glis,M,1768,210.2,3390,coronal,20,Hematoxylin Heidenhain-Woelke,10 20,Scandentia
+289,Tupaia glis,F,1769,178.4,3330,coronal,20,Hematoxylin Heidenhain-Woelke,10 20,Scandentia
+290,Tupaia glis,F,1771,159.4,3400,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+291,Tupaia glis,F,1772,178.4,3270,coronal,20,Hematoxylin Heidenhain-Woelke,10 20,Scandentia
+292,Tupaia glis,M,1774,188.4,3540,coronal,20,Hematoxylin Heidenhain-Woelke,10 20,Scandentia
+293,Tupaia glis,F,1775,157.6,3340,coronal,20,Hematoxylin Heidenhain-Woelke,10 20,Scandentia
+294,Tupaia glis,F,1776,161.2,3270,coronal,20,Hematoxylin Heidenhain-Woelke,10 20,Scandentia
+295,Tupaia glis,F,1780,178.3,3290,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+296,Tupaia glis,M,1783,201.4,3700,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+297,Tupaia glis,F,1785,161.7,3360,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+298,Tupaia glis,M,1787,231,3520,coronal,20,Hematoxylin Heidenhain-Woelke,10 20,Scandentia
+299,Tupaia glis,F,1790,175.7,3510,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+300,Tupaia glis,F,1803,168.5,3600,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+301,Tupaia glis,F,1817,155.2,3200,coronal,20,Hematoxylin Heidenhain-Woelke,10 20,Scandentia
+302,Tupaia glis,F,1818,203.5,3360,coronal,20,Hematoxylin Heidenhain-Woelke,10 20,Scandentia
+303,Tupaia glis,M,1826,223.1,3470,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+304,Tupaia glis,M,1827,197.8,3280,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+305,Tupaia glis,F,1828,171.7,3170,coronal,20,Hematoxylin Heidenhain-Woelke,10 20,Scandentia
+306,Tupaia glis,F,1829,167.9,3390,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+307,Tupaia glis,M,1836,198.5,3650,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+308,Tupaia glis,F,1843,171.8,3230,coronal,20,Hematoxylin Heidenhain-Woelke,10 20,Scandentia
+309,Tupaia glis,M,1844,186,3290,coronal,20,Cresylviolet Heidenhain-Woelke,6 12,Scandentia
+310,Tupaia glis,F,1851,203,3150,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+311,Tupaia glis,M,1852,227.6,3350,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+312,Tupaia glis,M,1853,212.2,3370,coronal,20,Hematoxylin Heidenhain-Woelke,10 20,Scandentia
+313,Tupaia glis,F,1854,181.1,3350,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+314,Tupaia glis,F,1855,224.3,3010,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+315,Tupaia glis,M,1901,206.3,3270,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+316,Tupaia glis,F,1907,183.8,3440,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+317,Tupaia glis,M,1908,216.6,3270,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+318,Tupaia glis,F,1909,169.4,3110,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+319,Tupaia glis,F,1910,157,3300,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+320,Tupaia glis,F,1911,174.4,3430,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+321,Tupaia glis,M,1915,189.5,3340,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+322,Tupaia glis,F,1916,171.1,3260,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+323,Tupaia glis,M,1917,206,3200,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+324,Tupaia glis,F,1918,164.7,3290,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+325,Tupaia glis,F,1919,175.1,3180,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+326,Tupaia glis,F,1925,214,3630,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+327,Tupaia glis,M,1926,231.4,3870,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+328,Tupaia glis,M,1927,195,3590,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+329,Tupaia glis,F,1953,162.8,3310,coronal,20,Gallocyanin Heidenhain-Woelke,10 20,Scandentia
+330,Tupaia glis,M,1954,194.4,3420,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+331,Tupaia glis,,1959/19,,,coronal,8,Heidenhain-Woelke Azan Gabe Goldner Gomori Palmgren Perdrau,10 10 10 20 10 incomplete 10,Scandentia
+332,Tupaia glis,M,1959/20,,,sagittal,8,Cresylviolet Heidenhain-Woelke Goldner Azan Gabe Gomori Bodian Palmgren,2 incomplete incomplete incomplete incomplete incomplete incomplete incomplete,Scandentia
+333,Tupaia glis,M,1959/21,,,coronal,8,Goldner,20,Scandentia
+334,Tupaia glis,F,1959/33,,,horizontal,12,Cresylviolet Eisenalaun Gomori Heidenhain-Woelke Azan Goldner Palmgren,10 10 10 incomplete incomplete incomplete incomplete,Scandentia
+335,Tupaia glis,M,1960/77,,,coronal,15,Azan Gabe Gomori Bielschowsky,incomplete incomplete incomplete incomplete,Scandentia
+336,Tupaia glis,M,1961/11,,,coronal,15,Azan Gabe Bielschowsky Klüver-Barrera,10 incomplete incomplete incomplete,Scandentia
+337,Tupaia glis,M,1963/70,,,sagittal,12,Cresylviolet Heidenhain-Woelke Gomori,10 10 incomplete,Scandentia
+338,Tupaia glis,F,1964/48,,,horizontal,10,Klüver-Barrera Heidenhain-Woelke Palmgren,10 5 incomplete,Scandentia
+339,Tupaia glis,F,1985,171.8,3830,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+340,Tupaia glis,F,1986,189.6,3580,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+341,Tupaia glis,F,2049,172.2,3260,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+342,Tupaia glis,F,2165,147.2,3210,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+343,Tupaia glis,M,2273,227,3590,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+344,Tupaia glis,M,2589,205.8,3519,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+345,Tupaia glis,M,2597,184.7,3430,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+346,Tupaia glis,M,2966,207.9,3080,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+347,Tupaia glis,M,2967,204.1,3730,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Scandentia
+348,Tupaia glis,M,3168,198,3310,coronal,20,Cresylviolet Myelin Gallyas,10 20,Scandentia
+349,Tupaia minor,M,1752,65,2615,coronal,20,Hematoxylin Heidenhain-Woelke,4 8,Scandentia
+350,Tupaia minor,U,1770,70,2580,coronal,20,Hematoxylin Heidenhain-Woelke,4 8,Scandentia
+351,Urogale everetti,M,1034,235,4400,sagittal,15,Cresylviolet Heidenhain-Woelke,4 8,Scandentia
+352,Urogale everetti,M,1036,315.1,4160,coronal,15,Cresylviolet Heidenhain-Woelke,8 16,Scandentia
+353,Eidolon helvum,M,2691,265,4553,coronal,20,Cresylviolet Heidenhain-Woelke,6 12,Chiroptera
+354,Eidolon helvum,F,2694,251,4303,coronal,20,Gallocyanin,6,Chiroptera
+355,Eidolon helvum,F,2695,230,4019,coronal,20,Cresylviolet Heidenhain-Woelke,6 12,Chiroptera
+356,Rousettus aegyptiacus,F,2630,126,2194,coronal,20,Cresylviolet Heidenhain-Woelke,5 10,Chiroptera
+357,Rousettus aegyptiacus,M,2631,168.9,2298,coronal,20,Cresylviolet Heidenhain-Woelke,5 10,Chiroptera
+358,Rousettus amplexicaudatus,M,3196,65.3,1364,coronal,20,Gallocyanin,4,Chiroptera
+359,Rousettus amplexicaudatus,F,3197,53.6,1356,coronal,20,Gallocyanin,4,Chiroptera
+360,Rousettus amplexicaudatus,F,3199,46.7,1355,coronal,20,Gallocyanin,4,Chiroptera
+361,Rousettus leschenaulti,M,3182,124,1679,coronal,20,Gallocyanin,4,Chiroptera
+362,Rouserrus leschenaulti,M,3183,93.5,1742,coronal,20,Gallocyanin,5,Chiroptera
+363,Rousettus leschenaulti,F,3184,78.8,1646,coronal,20,Gallocyanin,4,Chiroptera
+364,Myonycteris torquata,M,3733,34.5,1101,coronal,20,Cresylviolet,3,Chiroptera
+365,Myonycteris torquata,F,3734,32.9,1239,coronal,20,Cresylviolet,4,Chiroptera
+366,Myonycteris torquata,M,3735,42.7,1221,coronal,20,Cresylviolet,4,Chiroptera
+367,Pteropus alecto,F,1859,655,6990,coronal,20,Cresylviolet Heidenhain-Woelke,8 16,Chiroptera
+368,Pteropus alecto,F,1860,595,6825,coronal,20,Cresylviolet Heidenhain-Woelke,8 16,Chiroptera
+369,Pteropus conspicillatus,M,1858,750,8350,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Chiroptera
+370,Peteropus gilliardi,M,3201,385,5302,coronal,20,Gallocyanin,6,Chiroptera
+371,Pteropus lylei,M,1449,284,6100,coronal,20,Cresylviolet Heidenhain-Woelke,6 12,Chiroptera
+372,Pteropus lylei,F,1453,324,6300,coronal,20,Cresylviolet Heidenhain-Woelke,6 12,Chiroptera
+373,Pteropus lylei,M,1454,383.5,6410,sagittal,20,Cresylviolet Heidenhain-Woelke,3 6,Chiroptera
+374,Pteropus lylei,M,1455,322,6330,coronal,20,Cresylviolet Heidenhain-Woelke,6 12,Chiroptera
+375,Pteropus lylei,F,1456,296,6190,coronal,20,Cresylviolet Heidenhain-Woelke,7 14,Chiroptera
+376,Pteropus lylei,F,1461,307,5920,sagittal,20,Cresylviolet Heidenhain-Woelke,3 6,Chiroptera
+377,Pteropus lylei,M,1462,283.5,5650,horizontal,20,Cresylviolet Heidenhain-Woelke,3 6,Chiroptera
+378,Pteropus mahaganus,M,3203,460,5258,coronal,20,Gallocyanin,6,Chiroptera
+379,Pteropus mahaganus,M,3204,470,5302,coronal,20,Gallocyanin,6,Chiroptera
+380,Pteropus neohibernicus,F,3205,870,7933,coronal,20,Gallocyanin,8,Chiroptera
+381,Pteropus neohibernicus,F,3206,810,10295,coronal,20,Gallocyanin,6,Chiroptera
+382,Pteropus poliocephalus,M,1863,830,7527,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Chiroptera
+383,Pteropus poliocephalus,F,1864,560,6932,coronal,20,Cresylviolet Heidenhain-Woelke,6 12,Chiroptera
+384,Pteropus samoensis,M,3207,310,5792,coronal,20,Gallocyanin,4,Chiroptera
+385,Pteropus scapulatus,M,1861,400,5820,coronal,20,Cresylviolet Heidenhain-Woelke,8 16,Chiroptera
+386,Pteropus scapulatus,M,1862,390,5000,coronal,20,Cresylviolet Heidenhain-Woelke,8 16,Chiroptera
+387,Pteropus temmincki,M,3208,224,4904,coronal,20,Gallocyanin,6,Chiroptera
+388,Pteropus temmincki,F,3209,275,4875,coronal,20,Gallocyanin,6,Chiroptera
+389,Pteropus tonganus,F,3213,345,6305,coronal,20,Gallocyanin,6,Chiroptera
+390,Pteropus tonganus,M,3216,530,5885,coronal,20,Gallocyanin,6,Chiroptera
+391,Pteropus tonganus,M,3219,384,5880,coronal,20,Gallocyanin,6,Chiroptera
+392,Pteropus vampyrus,M,1856,1029,8900,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Chiroptera
+393,Pteropus vampyrus,F,1857,898,7750,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Chiroptera
+394,Dobsonia inermis,M,3222,180,2623,coronal,20,Cresylviolet,5,Chiroptera
+395,Dobsonia inermis,M,3223,165,2734,coronal,20,Cresylviolet,4,Chiroptera
+396,Dobsonia inermis,M,3225,133,2785,coronal,20,Gallocyanin,5,Chiroptera
+397,Dobsonia moluccensis,M,3229,487,5353,coronal,20,Gallocyanin,7,Chiroptera
+398,Dobsonia moluccensis,M,3232,482,5332,coronal,20,Cresylviolet,6,Chiroptera
+399,Dobsonia spec?,F,3235,219.3,3842,coronal,20,Cresylviolet,5,Chiroptera
+400,Dobsonia spec?,M,3237,234.5,4069,coronal,20,Cresylviolet,5,Chiroptera
+401,Dobsonia spec?,F,3238,199.4,3762,coronal,20,Cresylviolet,5,Chiroptera
+402,Dobsonia praedatrix,M,3243,237,2878,coronal,20,Cresylviolet,5,Chiroptera
+403,Dobsonia praedatrix,F,3245,156,2927,coronal,20,Cresylviolet,5,Chiroptera
+404,Dobsonia praedatrix,F,3246,172,2741,sagittal,20,Cresylviolet,5,Chiroptera
+405,Dobsonia praedatrix,F,3248,177,3014,coronal,20,Cresylviolet,5,Chiroptera
+406,Hypsignathus monstrosus,F,3736,253,3767,coronal,20,Cresylviolet,5,Chiroptera
+407,Epomops franqueti,F,3739,94.8,2133,coronal,20,Cresylviolet,5,Chiroptera
+408,Epomops franqueti,M,3742,151,2262,coronal,20,Cresylviolet,5,Chiroptera
+409,Epomops franqueti,F,3748,112.3,2112,coronal,20,Cresylviolet,5,Chiroptera
+410,Epomophorus labiatus,F,2645,62.7,1566,coronal,21.5,Cresylviolet Heidenhain-Woelke,4 8,Chiroptera
+411,Epomophorus labiatus,M,2653,72.2,1591,coronal,20,Cresylviolet Heidenhain-Woelke,4 8,Chiroptera
+412,Epomophorus labiatus,F,2656,60.6,1512,coronal,20,Cresylviolet Heidenhain-Woelke,4 8,Chiroptera
+413,Micropteropus pusillus,F,2680,23.9,792,coronal,20,Cresylviolet Heidenhain-Woelke,3 6,Chiroptera
+414,Micropteropus pusillus,M,2682,23.1,865,coronal,20,Cresylviolet Heidenhain-Woelke,3 6,Chiroptera
+415,Micropteropus pusillus,M,2683,23,829,coronal,20,Cresylviolet Heidenhain-Woelke,3 6,Chiroptera
+416,Scotonycteris zenkeri,M,3755,21.6,735,coronal,20,Cresylviolet,3,Chiroptera
+417,Scotonycteris zenkeri,F,3757,20.2,707,coronal,20,Cresylviolet,3,Chiroptera
+418,Casinycteris argynnis,F,3758,23.7,950,coronal,20,Cresylviolet,3,Chiroptera
+419,Casinycteris argynnis,F,3761,30.5,917,coronal,20,Cresylviolet,3,Chiroptera
+420,Casinycteris argynnis,M,3763,22.8,736,coronal,20,Cresylviolet,3,Chiroptera
+421,Casinycteris argynnis,M,3764,25.1,772,coronal,20,Cresylviolet,3,Chiroptera
+422,Cynopterus brachyotis,M,1889,36.8,1070,coronal,20,Hematoxylin Heidenhain-Woelke,3 6,Chiroptera
+423,Cynopterus brachyotis,M,1890,39.9,1160,coronal,20,Gallocyanin Heidenhain-Woelke,4 8,Chiroptera
+424,Cynopterus brachyotis,F,1891,35.6,980,coronal,20,Cresylviolet Heidenhain-Woelke,3 6,Chiroptera
+425,Cynopterus horsfieldi,M,1892,54.4,1450,coronal,20,Cresylviolet,4,Chiroptera
+426,Cynopterus horsfieldi,F,1893,58.3,1360,coronal,20,Cresylviolet Heidenhain-Woelke,4 8,Chiroptera
+427,Cynopterus horsfieldi,F,1894,56.8,1350,coronal,20,Cresylviolet Heidenhain-Woelke,4 8,Chiroptera
+428,Cynopterus sphinx sphinx,M,4459,63.2,1239,coronal,20,Gallocyanin,4,Chiroptera
+429,Cynopterus sphinx sphinx,F,4460,54.2,1275,coronal,20,Gallocyanin,4,Chiroptera
+430,Cynopterus sphinx sphinx,F,4461,48.6,1211,coronal,20,Gallocyanin,4,Chiroptera
+431,Megaerops ecaudatus,M,1897,23.4,895,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+432,Megaerops ecaudatus,F,1898,24.8,870,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+433,Chironax melanocephalus,M,1895,17.4,625,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+434,Chironax melanocephalus,F,1896,18.2,605,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+435,Chironax melanocephalus,F,4474,17.6,606,coronal,20,Gallocyanin,3,Chiroptera
+436,Sphaerias blanfordi,F,4480,26,842,coronal,20,Gallocyanin,3,Chiroptera
+437,Sphaerias blanfordi,M,4834,30.3,837,,20,Gallocyanin,3,Chiroptera
+438,Sphaerias blanfordi,M,4836,29,831,coronal,20,Gallocyanin,3,Chiroptera
+439,Sphaerias blanfordi,F,4939,30.3,851,coronal,20,Gallocyanin,3,Chiroptera
+440,Balionycteris maculata,F,1899,15.3,540,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+441,Balionycteris maculata,F,1900,13.7,480,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+442,Nyctimene albiventer,F,3250,29.8,739,coronal,20,Gallocyanin,3,Chiroptera
+443,Nyctimene albiventer,M,3251,29.6,911,coronal,20,Gallocyanin,3,Chiroptera
+444,Nyctimene major,M,3253,33.2,965,coronal,20,Gallocyanin,3,Chiroptera
+445,Nyctimene major,F,3255,36.2,1047,coronal,20,Gallocyanin,4,Chiroptera
+446,Nyctimene major,M,3257,34.2,1026,coronal,20,Gallocyanin,4,Chiroptera
+447,Nyctimene robinsoni,F,1866,48.6,1280,coronal,20,Cresylviolet Heidenhain-Woelke,4 8,Chiroptera
+448,Nyctimene robinsoni,M,1867,44.1,1110,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+449,Paranyctimene raptor,M,3258,26.5,739,coronal,20,Gallocyanin,3,Chiroptera
+450,Paranyctimene raptor,M,3261,20.7,748,coronal,20,Gallocyanin,3,Chiroptera
+451,Paranyctimene raptor,F,3264,26.7,701,coronal,20,Gallocyanin,3,Chiroptera
+452,Eonycteris spelaea,U,P 86,,,coronal,10,Cresylviolet,2,Chiroptera
+453,Eonycteris spelaea,M,1902,57.3,1280,coronal,20,Gallocyanin Heidenhain-Woelke,3 6,Chiroptera
+454,Eonycteris spelaea,F,1903,57.6,1210,coronal,20,Hematoxylin Heidenhain-Woelke,3 6,Chiroptera
+455,Eonycteris spelaea,F,1904,58.8,1280,coronal,20,Gallocyanin Heidenhain-Woelke,4 8,Chiroptera
+456,Megaloglossus woermanni,F,3771,16.9,690,coronal,20,Cresylviolet,3,Chiroptera
+457,Megaloglossus woermanni,F,3774,17.9,667,coronal,20,Cresylviolet,3,Chiroptera
+458,Megaloglossus woermanni,F,3778,18.3,694,coronal,20,Cresylviolet,3,Chiroptera
+459,Macroglossus minimus,F,3266,15.4,535,coronal,20,Gallocyanin,2,Chiroptera
+460,Macroglossus minimus,F,3272,14,559,coronal,20,Gallocyanin,3,Chiroptera
+461,Macroglossus minimus,M,3275,14.2,548,coronal,20,Cresylviolet,3,Chiroptera
+462,Macroglossus sobrinus,M,1905,15.1,580,coronal,20,Cresylviolet Heidenhain-Woelke,3 6,Chiroptera
+463,Macroglossus sobrinus,M,2031,22.8,700,coronal,20,Gallocyanin Heidenhain-Woelke,2 4,Chiroptera
+464,Macroglossus sobrinus,M,2032,20.6,690,coronal,20,Gallocyanin Heidenhain-Woelke,3 6,Chiroptera
+465,Macroglossus sobrinus,F,2042,22.3,720,coronal,20,Gallocyanin Heidenhain-Woelke,3 6,Chiroptera
+466,Syconycteris australis,F,1865,14.7,570,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+467,Syconycteris crassa,M,3282,17.3,621,coronal,20,Gallocyanin,3,Chiroptera
+468,Syconycteris crassa,F,3285,18.5,612,coronal,20,Gallocyanin,3,Chiroptera
+469,Syconycteris crassa,F,3288,16.2,615,coronal,20,Gallocyanin,3,Chiroptera
+470,Melonycteris melanops,F,3296,46.4,1305,coronal,20,Cresylviolet,4,Chiroptera
+471,Melonycteris melanops,M,3302,49.3,1296,coronal,20,Gallocyanin,4,Chiroptera
+472,Melonycteris melanops,M,3304,49,1316,coronal,20,Cresylviolet,4,Chiroptera
+473,Nesonycteris woodfordi,F,3310,37.8,1037,coronal,20,Cresylviolet,3,Chiroptera
+474,Nesonycteris woodfordi,F,3311,38.8,1028,coronal,20,Cresylviolet,3,Chiroptera
+475,Nesonycteris woodfordi,F,3312,32,1049,coronal,20,Gallocyanin,3,Chiroptera
+476,Notopteris macdonaldi,F,3313,71.2,1349,coronal,20,Gallocyanin,4,Chiroptera
+477,Notopteris macdonaldi,F,3319,61.5,1440,coronal,20,Gallocyanin,4,Chiroptera
+478,Notopteris macdonaldi,M,3320,81,1553,coronal,20,Cresylviolet,4,Chiroptera
+479,Rhinopoma hardwickei I,F,4494,11.1,274,coronal,20,Gallocyanin,2,Chiroptera
+480,Rhinopoma hardwickei I,F,4496,11.4,285,coronal,20,Gallocyanin,2,Chiroptera
+481,Rhinopoma hardwickei II,M,4501,18.8,283,coronal,20,Gallocyanin,2,Chiroptera
+482,Rhinopoma microphyllum I,F,1941,23,395,coronal,20,Gallocyanin Heidenhain-Woelke,2 4,Chiroptera
+483,Rhinopoma microphyllum I,M,1944,27,470,coronal,20,Cresylviolet Heidenhain-Woelke,4 4,Chiroptera
+484,Rhinopoma microphyllum II,F,4504,28.8,396,sagittal,20,Cell body Merker Cresylviolet,4 4,Chiroptera
+485,Rhinopoma microphyllum II,M,4508,28.9,373,coronal,20,Gallocyanin,3,Chiroptera
+486,Rhinopoma microphyllum II,F,4510,30.3,374,coronal,20,Gallocyanin,3,Chiroptera
+487,Rhinopoma microphyllum II,F,4511,31.3,394,coronal,20,Gallocyanin,2,Chiroptera
+488,Emballonura beccarii,F,3323,6,173,coronal,20,Gallocyanin,2,Chiroptera
+489,Emballonura beccarii,M,3326,5.7,161,sagittal,10,Cell body Merker Cresylviolet,3 3,Chiroptera
+490,Emballonura beccarii,M,3327,5.7,174,coronal,20,Gallocyanin,2,Chiroptera
+491,Emballonura beccarii,M,3328,5.5,171,coronal,20,Gallocyanin,2,Chiroptera
+492,Emballonura monticola,M,2053,5.4,170,coronal,20,Hematoxylin Heidenhain-Woelke,2 2,Chiroptera
+493,Emballonura monticola,M,2054,5.6,165,coronal,20,Gallocyanin,2,Chiroptera
+494,Emballonura monticola,F,2059,5.7,150,coronal,20,Gallocyanin,2,Chiroptera
+495,Emballonura nigrescens,M,3329,2.5,123,coronal,20,Gallocyanin,2,Chiroptera
+496,Emballonura nigrescens,F,3331,2.8,133,coronal,20,Gallocyanin,2,Chiroptera
+497,Emballonura nigrescens,F,3332,2.9,135,coronal,20,Gallocyanin,2,Chiroptera
+498,Emballonura semicaudata,F,3334,7.7,186,coronal,20,Gallocyanin,2,Chiroptera
+499,Emballonura semicaudata,M,3335,6.2,195,coronal,20,Gallocyanin,2,Chiroptera
+500,Emballonura semicaudata,F,3337,7.4,180,coronal,20,Gallocyanin,2,Chiroptera
+501,Coleura afra,F,2702,12.7,261,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+502,Coleura afra,F,2706,11.4,258,coronal,20,Gallocyanin Heidenhain-Woelke,2 4,Chiroptera
+503,Coleura afra,F,2708,12.1,258,coronal,20,Gallocyanin Myelin Gallyas,4 8,Chiroptera
+504,Rhynchonycteris naso,M,K 288,3.9,120,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+505,Rhynchonycteris naso,M,K 289,3.7,116,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+506,Rhynchonycteris naso,M,K 292,3.6,127,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+507,Saccopteryx bilineata,F,K 12,10.4,260,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+508,Saccopteryx bilineata,F,K 243,8.300000000000001,225,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+509,Saccopteryx bilineata,F,K 245,7.6,225,coronal,20,Hematoxylin,2,Chiroptera
+510,Saccopteryx bilineata,F,K 247,6.9,220,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+511,Saccopteryx canescens,M,K 282,3.4,130,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+512,Saccopteryx leptura,M,K 235,5.4,160,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+513,Saccopteryx leptura,M,K 237,4,160,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+514,Saccopteryx leptura,F,4109,4.9,162,coronal,20,Gallocyanin,2,Chiroptera
+515,Cormura brevirostris,M,4110,7.8,226,coronal,20,Gallocyanin,2,Chiroptera
+516,Cormura brevirostris,F,4111,7.6,221,coronal,20,Gallocyanin,2,Chiroptera
+517,Cormura brevirostris,F,4112,9.1,211,coronal,20,Gallocyanin,2,Chiroptera
+518,Peropteryx macrotis,M,K 42,5.2,160,coronal,20,Hematoxylin,2,Chiroptera
+519,Peropteryx macrotis,F,K 44,6.5,170,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+520,Peropteryx macrotis,M,K 45,5.4,170,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+521,Peropteryx trinitatis,F,4122,4.2,131,coronal,20,Gallocyanin,2,Chiroptera
+522,Peropteryx trinitatis,F,4124,4.4,129,coronal,20,Gallocyanin,2,Chiroptera
+523,Peropteryx trinitatis,F,4126,4.3,136,coronal,20,Gallocyanin,2,Chiroptera
+524,Taphozous australis,M,1868,25,514,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+525,Taphozous australis,M,1869,21.8,514,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+526,Taphozous hildegardeae,M,2712,29.6,558,coronal,20,Gallocyanin Heidenhain-Woelke,3 6,Chiroptera
+527,Taphozous hildegardeae,F,2713,28,511,coronal,20,Gallocyanin Heidenhain-Woelke,3 6,Chiroptera
+528,Taphozous hildegardeae,M,2714,26.4,549,coronal,20,Gallocyanin,3,Chiroptera
+529,Taphozous mauritianus,F,2709,29.5,604,coronal,20,Cresylviolet Heidenhain-Woelke,3 6,Chiroptera
+530,Taphozous mauritianus,F,2710,28.6,497,coronal,20,Cresylviolet Heidenhain-Woelke,3 6,Chiroptera
+531,Taphozous melanopogon,M,4521,21.6,518,coronal,20,Gallocyanin,3,Chiroptera
+532,Taphozous melanopogon,M,4526,23.3,548,coronal,20,Gallocyanin,3,Chiroptera
+533,Taphozous melanopogon,F,4527,23.1,556,coronal,20,Gallocyanin,3,Chiroptera
+534,Taphozous theobaldi,M,4529,42.1,679,coronal,20,Gallocyanin,3,Chiroptera
+535,Taphozous theobaldi,M,4530,39.9,683,coronal,20,Gallocyanin,3,Chiroptera
+536,Taphozous theobaldi,F,4532,40,664,coronal,20,Gallocyanin,3,Chiroptera
+537,Taphozous saccolaimus I,M,2067,40,705,coronal,20,Gallocyanin Heidenhain-Woelke,2 4,Chiroptera
+538,Taphozous saccolaimus I,F,2068,43,650,coronal,20,Gallocyanin Heidenhain-Woelke,3 6,Chiroptera
+539,Taphozous saccolaimus I,F,2070,42.1,670,coronal,20,Gallocyanin Heidenhain-Woelke,2 4,Chiroptera
+540,Cyttarops alecto,M,4120,5.3,175,coronal,20,Gallocyanin,2,Chiroptera
+541,Craseonycteris thonglongyai,F,4845,2.7,89,coronal,20,Gallocyanin,2,Chiroptera
+542,Craseonycteris thonglongyai,M,4847,2.4,82,coronal,20,Gallocyanin,2,Chiroptera
+543,Nycteris arge,M,3780,11,349,coronal,20,Cresylviolet,2,Chiroptera
+544,Nycteris arge,M,3781,10.5,333,coronal,20,Cresylviolet,2,Chiroptera
+545,Nycteris grandis,M,2723,29,762,coronal,20,Cresylviolet,3,Chiroptera
+546,Nycteris grandis,M,3782,28.2,706,sagittal,10,Cell body Merker Cresylviolet,4 4,Chiroptera
+547,Nycteris grandis,M,3785,30.7,706,coronal,20,Cresylviolet,3,Chiroptera
+548,Nycteris grandis,F,3787,31.4,689,coronal,20,Cresylviolet,2,Chiroptera
+549,Nycteris grandis,M,3790,28.4,750,coronal,20,Cresylviolet,2,Chiroptera
+550,Nycteris hispida,F,2718,7.8,284,coronal,20,Cresylviolet,2,Chiroptera
+551,Nycteris javanica,M,2075,18.4,470,coronal,20,Gallocyanin Heidenhain-Woelke,2 4,Chiroptera
+552,Nycteris javanica,M,2076,14.9,485,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+553,Nycteris macrotis,M,2720,14.4,400,coronal,20,Gallocyanin,2,Chiroptera
+554,Nycteris macrotis,F,2721,15.8,362,coronal,20,Gallocyanin,2,Chiroptera
+555,Nycteris macrotis,F,2722,13.4,403,coronal,20,Gallocyanin,2,Chiroptera
+556,Nycteris nana,F,2726,7.4,236,coronal,20,Gallocyanin,2,Chiroptera
+557,Nycteris nana,M,2727,7,237,coronal,20,Gallocyanin,2,Chiroptera
+558,Nycteris nana,M,2728,6,248,coronal,20,Gallocyanin,2,Chiroptera
+559,Nycteris thebaica,M,2719,7.7,306,coronal,20,Gallocyanin,2,Chiroptera
+560,Nycteris thebaica,F,2724,9.9,342,coronal,20,Gallocyanin,2,Chiroptera
+561,Nycteris thebaica,F,2725,9.199999999999999,322,coronal,20,Gallocyanin,2,Chiroptera
+562,Nycteris tragata,M,4848,13.8,434,coronal,20,Gallocyanin,2,Chiroptera
+563,Megaderma lyra,F,1947,34,820,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+564,Megaderma lyra,M,1948,29.2,925,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+565,Megaderma lyra,F,4551,39.4,904,coronal,20,Gallocyanin,3,Chiroptera
+566,Megaderma lyra,M,4557,36.3,879,coronal,20,Gallocyanin,3,Chiroptera
+567,Megaderma lyra,F,4561,44,981,coronal,20,Gallocyanin,3,Chiroptera
+568,Megaderma lyra,M,4562,41.6,970,coronal,20,Gallocyanin,3,Chiroptera
+569,Megaderma spasma,M,2080,24.4,680,coronal,20,Gallocyanin Heidenhain-Woelke,3 6,Chiroptera
+570,Megaderma spasma,M,2082,25.3,700,coronal,20,Gallocyanin Heidenhain-Woelke,3 6,Chiroptera
+571,Megaderma spasma,F,2085,27,710,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+572,Macroderma gigas,F,1930,124,1800,coronal,20,Cresylviolet Heidenhain-Woelke,4 8,Chiroptera
+573,Macroderma gigas,M,2455,115.2,1644,coronal,20,Cresylviolet Heidenhain-Woelke,4 8,Chiroptera
+574,Macroderma gigas,M,2456,120.3,1672,coronal,20,Cresylviolet Heidenhain-Woelke,4 8,Chiroptera
+575,Cardioderma cor,M,2729,24.5,670,sagittal,10,Cell body Merker Cresylviolet,4 4,Chiroptera
+576,Cardioderma cor,F,2732,24.3,657,coronal,20,Gallocyanin Heidenhain-Woelke,3 6,Chiroptera
+577,Cardioderma cor,M,2735,24.2,695,coronal,20,Gallocyanin Heidenhain-Woelke,2 4,Chiroptera
+578,Cardioderma cor,F,2736,28.2,685,coronal,20,Gallocyanin Heidenhain-Woelke,2 4,Chiroptera
+579,Lavia frons,M,2740,23,625,coronal,20,Cresylviolet Heidenhain-Woelke,3 6,Chiroptera
+580,Lavia frons,M,2741,24.2,663,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+581,Rhinolophus cornutus,F,4587,6.8,199,coronal,20,Gallocyanin,2,Chiroptera
+582,Rhinolophus cornutus,F,4588,6.4,204,coronal,20,Gallocyanin,2,Chiroptera
+583,Rhinolophus eloquens,F,2756,19.6,436,coronal,20,Cresylviolet,3,Chiroptera
+584,Rhinolophus eloquens,F,2757,18.5,373,coronal,20,Cresylviolet,3,Chiroptera
+585,Rhinolophus hipposideros,M,810,5,135,coronal,10,Cresylviolet,3,Chiroptera
+586,Rhinolophus hipposideros,M,819,4.5,,sagittal,10,Cresylviolet Heidenhain-Woelke Gomori Hematoxylin Azan Palmgren,10 incomplete incomplete incomplete incomplete incomplete,Chiroptera
+587,Rhinolophus hipposideros,M,821,4.5,,coronal,10,Cresylviolet,3,Chiroptera
+588,Rhinolophus landeri,F,2744,9.300000000000001,265,coronal,20,Gallocyanin,2,Chiroptera
+589,Rhinolophus landeri,M,2745,10,280,coronal,20,Gallocyanin,2,Chiroptera
+590,Rhinolophus landeri,F,2747,9.800000000000001,265,coronal,20,Gallocyanion,2,Chiroptera
+591,Rhinolophus lepidus,M,4590,5.7,183,coronal,20,Gallocyanin,2,Chiroptera
+592,Rhinolophus lepidus,F,4592,5.8,182,coronal,20,Gallocyanin,2,Chiroptera
+593,Rhinolophus lepidus,M,4593,6.1,181,coronal,20,Gallocyanin,2,Chiroptera
+594,Rhinolophus luctus,F,2086,36,545,coronal,20,Gallocyanin Heidenhain-Woelke,3 6,Chiroptera
+595,Rhinolophus luctus,F,2087,33.8,575,coronal,20,Gallocyanin Heidenhain-Woelke,2 4,Chiroptera
+596,Rhinolophus luctus,M,4861,28.7,742,coronal,20,Gallocaynin,3,Chiroptera
+597,Rhinolophus macrotis,M,4601,6,210,coronal,20,Gallocyanin,2,Chiroptera
+598,Rhinolophus macrotis,F,4602,6.8,209,coronal,20,Gallocyanin,2,Chiroptera
+599,Rhinolophus malayanus,M,4607,6.5,203,coronal,20,Gallocyanin,2,Chiroptera
+600,Rhinolophus malayanus,M,4610,6.2,201,coronal,20,Gallocyanin,2,Chiroptera
+601,Rhinolophus megaphyllus,M,1870,9.5,252,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+602,Rhinolophus megaphyllus,M,1871,10.75,270,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+603,Rhinolophus megaphyllus ssp.,M,3348,7.6,234,coronal,20,Gallocyanin,2,Chiroptera
+604,Rhinolophus megaphyllus ssp.,M,3349,7.4,238,coronal,20,Gallocyanin,2,Chiroptera
+605,Rhinolophus megaphyllus ssp.,F,3350,5.9,219,coronal,20,Gallocyanin,2,Chiroptera
+606,Rhinolophus paradoxolophus,M,4611,9.300000000000001,267,coronal,20,Gallocyanin,2,Chiroptera
+607,Rhinolophus personi,M,4612,10.5,347,coronal,20,Gallocyanin,2,Chiroptera
+608,Rhinolophus pusillus,F,4615,5,169,coronal,20,Gallocyanin,2,Chiroptera
+609,Rhinolophus pusillus,F,4616,4.5,160,coronal,20,Gallocyanin,2,Chiroptera
+610,Rhinolophus pusillus,M,4619,4.6,162,coronal,20,Gallocyanin,2,Chiroptera
+611,Rhinolophus trifoliatus,M,2103,12.8,360,coronal,20,Gallocyanin,2,Chiroptera
+612,Rhinolophus trifoliatus,M,2104,13.6,310,coronal,20,Gallocyanin,3,Chiroptera
+613,Rhinolophus trifoliatus,F,2106,18.9,395,coronal,20,Gallocyanin,2,Chiroptera
+614,Rhinolophus yunanensis,M,4641,21.4,428,coronal,20,Gallocyanin,3,Chiroptera
+615,Rhinolophus yunanensis,M,4642,25.5,449,coronal,20,Gallocyanin,3,Chiroptera
+616,Hipposideros armiger,M,4643,56.7,816,coronal,20,Gallocyanin,3,Chiroptera
+617,Hipposideros armiger,M,4645,60.5,809,coronal,20,Gallocyanin,4,Chiroptera
+618,Hipposideros armiger,F,4652,57.3,800,coronal,20,Gallocyanin,3,Chiroptera
+619,Hipposideros ater saevus,F,4660,4.2,183,coronal,20,Gallocyanin,2,Chiroptera
+620,Hipposideros ater saevus,M,4661,4.1,184,coronal,20,Gallocyanin,2,Chiroptera
+621,Hipposideros ater saevus,M,4662,4.3,184,coronal,20,Gallocyanin,2,Chiroptera
+622,Hipposideros ater,F,1872,8.199999999999999,210,coronal,20,Gallocyanin Heidenhain-Woelke,2 4,Chiroptera
+623,Hipposideros ater,F,1873,6.8,220,coronal,20,"Gallocyanin, Heidenhain-Woelke",2 4,Chiroptera
+624,Hipposideros caffer,F,2760,10.9,314,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+625,Hipposideros caffer,F,2770,11.3,294,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+626,Hipposideros caffer,M,2771,11.8,297,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+627,Hipposideros calcaratus,F,3352,15.5,466,coronal,20,Gallocyanin,3,Chiroptera
+628,Hipposideros calcaratus,F,3353,15.3,434,coronal,20,Gallocyanin,3,Chiroptera
+629,Hipposideros calcaratus,F,3355,16.8,446,coronal,20,Gallocyanin,3,Chiroptera
+630,Hipposideros calcaratus ssp.,F,3357,12.3,385,coronal,20,Gallocyanin,3,Chiroptera
+631,Hipposideros calcaratus ssp.,F,3358,13.3,396,coronal,20,Gallocyanin,3,Chiroptera
+632,Hipposideros calcaratus ssp.,M,3360,13.4,413,coronal,20,Gallocyanin,3,Chiroptera
+633,Hipposideros cineraceus,M,4664,3.8,189,coronal,20,Gallocyanin,2,Chiroptera
+634,Hipposideros cineraceus,F,4665,3.2,162,coronal,20,Gallocyanin,2,Chiroptera
+635,Hipposideros commersoni,F,2778,71.59999999999999,750,coronal,20,Gallocyanin Heidenhain-Woelke,3 6,Chiroptera
+636,Hipposideros commersoni,M,2780,115.6,780,coronal,20,Cresylviolet Heidenhain-Woelke,4 8,Chiroptera
+637,Hipposideros commersoni,M,2781,117,761,coronal,20,Hematoxylin Heidenhain-Woelke,4 8,Chiroptera
+638,Hipposideros cupidus,F,3364,10.5,336,coronal,20,Gallocyanin,2,Chiroptera
+639,Hipposideros cupidus,F,3365,9.699999999999999,350,coronal,20,Gallocyanin,2,Chiroptera
+640,Hipposideros cupidus,F,3367,7.8,319,coronal,20,Gallcyanin,2,Chiroptera
+641,Hipposideros diadema,M,2118,49.6,715,coronal,20,Gallocyanin Heidenhain-Woelke,2 4,Chiroptera
+642,Hipposideros diadema,M,2119,51,830,coronal,20,Cresylviolet Heidenhain-Woelke,4 8,Chiroptera
+643,Hipposideros diadema,F,2121,44.4,670,coronal,20,Gallocyanin Heidenhain-Woelke,3 6,Chiroptera
+644,Hipposideros diadema,F,3378,39.5,692,coronal,20,Gallocyanin,3,Chiroptera
+645,Hipposideros fulvus,F,4668,7.6,249,coronal,20,Gallocyanin,2,Chiroptera
+646,Hipposideros fulvus,M,4673,6,232,coronal,20,Gallocyanin,2,Chiroptera
+647,Hipposideros galeritus ssp.,M,3389,6.7,215,coronal,20,Gallocyanin,2,Chiroptera
+648,Hipposideros galeritus ssp.,F,3393,6.6,205,coronal,20,Gallocyanin,2,Chiroptera
+649,Hipposideros galeritus ssp.,F,3395,8.699999999999999,218,coronal,20,Gallocyanin,2,Chiroptera
+650,Hipposideros halophyllus,F,4677,3.7,150,coronal,20,Gallocyanin,2,Chiroptera
+651,Hipposideros halophyllus,F,4678,4.2,153,coronal,20,Gallocyanin,2,Chiroptera
+652,Hipposideros lankadiva,M,4680,49.7,738,coronal,20,Gallocyanin,4,Chiroptera
+653,Hipposideros lankadiva,F,4685,46.7,725,coronal,20,Gallocyanin,4,Chiroptera
+654,Hipposideros lankadiva,F,4687,45.3,735,coronal,20,Gallocyanin,3,Chiroptera
+655,Hipposideros larvatus,M,2125,19,425,coronal,20,Gallocyanin,2,Chiroptera
+656,Hipposideros larvatus,M,2127,17.2,420,coronal,20,Gallocyanin,3,Chiroptera
+657,Hipposideros larvatus,F,2132,20.6,445,coronal,20,Gallocyanin,3,Chiroptera
+658,Hipposideros lekaguli,F,4700,30.7,596,sagittal,10,Cell body Merker Cresylviolet,4 4,Chiroptera
+659,Hipposideros lekaguli,F,4703,29.1,582,coronal,20,Gallocyanin,3,Chiroptera
+660,Hipposideros lekaguli,M,4704,29.2,578,coronal,20,Gallocyanin,3,Chiroptera
+661,Hipposideros maggietaylorae,F,3398,24.9,634,coronal,20,Galocyanin,3,Chiroptera
+662,Hipposideros muscinus,F,3399,5.4,192,coronal,20,Gallocyanin,2,Chiroptera
+663,Hipposideros muscinus,F,3400,5.6,187,coronal,20,Gallocyanin,2,Chiroptera
+664,Hipposideros ridleyi,M,2135,9.699999999999999,240,coronal,20,Gallocyanin Heidenhain-Woelke,2 4,Chiroptera
+665,Hipposideros ridleyi,F,2136,9.9,285,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+666,Hipposideros ridleyi,F,2140,9.800000000000001,280,coronal,20,Gallocyanin Heidenhain-Woelke,2 4,Chiroptera
+667,Hipposideros speoris,M,4706,12,285,coronal,20,Gallocyanin,3,Chiroptera
+668,Hipposideros speoris,F,4710,10.5,283,coronal,20,Gallocyanin,2,Chiroptera
+669,Hipposideros turpis,F,4713,32.7,597,coronal,20,Gallocyanin,3,Chiroptera
+670,Hipposideros turpis,F,4714,35,602,coronal,20,Gallocyanin,3,Chiroptera
+671,Hipposideros turpis,M,4715,30.9,613,coronal,20,Gallocyanin,3,Chiroptera
+672,Hipposideros tridens,U,P 106,,,coronal,10,Cresylviolet Heidenhain-Woelke,4 8,Chiroptera
+673,Hipposideros tridens,F,P 114,14,270,coronal,10,Cresylviolet Heidenhain-Woelke,4 10,Chiroptera
+674,Aselliscus stoliczkanus,F,4716,4.8,157,coronal,20,Gallocyanin,2,Chiroptera
+675,Aselliscus stoliczkanus,F,4717,4.8,139,coronal,20,Gallocyanin,2,Chiroptera
+676,Aselliscus stoliczkanus,F,4718,5.1,155,coronal,20,Gallocyanin,2,Chiroptera
+677,Aselliscus tricuspidatus,F,3401,4.6,135,coronal,20,Gallocyanin,2,Chiroptera
+678,Aselliscus tricuspidatus,M,3408,4.3,136,coronal,20,Gallocyanin,2,Chiroptera
+679,Aselliscus tricuspidatus,M,3409,4.3,133,coronal,20,Gallocyanin,2,Chiroptera
+680,Rhinonycteris aurantius,M,2905,9,255,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+681,Rhinonycteris aurantius,M,2906,8.4,238,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+682,Rhinonycteris aurantius,F,2907,8.5,251,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+683,Triaenops persicus,M,2785,13.5,283,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+684,Triaenops persicus,M,2790,14.7,252,coronal,20,Gallocyanin Heidenhain-Woelke,2 4,Chiroptera
+685,Triaenops persicus,M,2791,13.2,285,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+686,Noctilio albiventris,F,4127,28.9,614,coronal,20,Cresylviolet,2,Chiroptera
+687,Noctilio albiventris,F,4130,28.4,610,coronal,20,Gallocyanin,2,Chiroptera
+688,Noctilio albiventris,M,4131,26.1,631,coronal,20,Cresylviolet,2,Chiroptera
+689,Noctilio leporinus,U,P 111,,,coronal,10,Cresylviolet Heidenhain-Woelke,5 10,Chiroptera
+690,Noctilio leporinus,M,4137,56.8,1152,coronal,20,Gallocyanin,3,Chiroptera
+691,Noctilio leporinus,F,4138,51.4,1098,sagittal,10,Cell body Merker Cresylviolet,5 5,Chiroptera
+692,Noctilio leporinus,M,4139,71.5,1229,coronal,20,Cresylviolet,3,Chiroptera
+693,Noctilio leporinus,F,4141,54.3,1085,coronal,20,Cresylviolet,2,Chiroptera
+694,Pteronotus gymnonotus,F,4146,13.7,351,coronal,20,Gallocyanin,2,Chiroptera
+695,Pteronotus gymnonotus,M,4149,13.7,345,coronal,20,Gallocyanin,2,Chiroptera
+696,Pteronotus gymnonotus,F,4150,13.3,330,coronal,20,Gallocyanin,2,Chiroptera
+697,Pteronotus personatus,M,K 259,7.7,240,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+698,Pteronotus personatus,M,K 261,7.6,240,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+699,Pteronotus personatus,M,K 279,7.3,250,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+700,Pteronotus parnelli,M,K 272,19.9,560,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+701,Pteronotus parnelli,M,K 273,17.7,560,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+702,Pteronotus parnelli,M,K 275,17.8,560,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+703,Pteronotus parnelli,F,4164,24.7,521,sagittal,10,Cell body Merker,5,Chiroptera
+704,Mormoops megalophylla,F,K 264,16.7,395,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+705,Mormoops megalophylla,F,K 265,15.2,400,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+706,Mormoops megalophylla,F,K 267,14.7,400,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+707,Mormoops megalophylla,M,4168,18.3,369,sagittal,10,Cell body Merker Myelin Gallyas,10 10,Chiroptera
+708,Micronycteris megalotis,M,4182,5.9,278,coronal,20,Gallocyanin,2,Chiroptera
+709,Micronycteris megalotis,F,4187,6.4,274,coronal,20,Cresylviolet,2,Chiroptera
+710,Micronycteris megalotis,F,4188,6.8,279,coronal,20,Gallocyanin,2,Chiroptera
+711,Micronycteris minuta,F,4402,6.9,286,coronal,20,Gallocyanin,2,Chiroptera
+712,Micronycteris schmidtorum,M,4173,7.6,311,coronal,20,Gallocyanin,2,Chiroptera
+713,Micronycteris schmidtorum,F,4175,8.1,303,coronal,20,Gallocyanin,2,Chiroptera
+714,Micronycteris schmidtorum,F,4177,8.1,311,coronal,20,Gallocyanin,2,Chiroptera
+715,Micronycteris brachyotis,F,4189,14.7,408,coronal,20,Gallocyanin,2,Chiroptera
+716,Macrophyllum macrophyllum,M,4190,8.4,320,coronal,20,Gallocyanin,2,Chiroptera
+717,Macrophyllum macrophyllum,F,4194,9.4,308,coronal,20,Gallocyanin,2,Chiroptera
+718,Macrophyllum macrophyllum,F,4195,9.4,328,coronal,20,Cresylviolet,2,Chiroptera
+719,Tonatia bidens,M,4203,26.8,811,coronal,20,Cresylviolet,3,Chiroptera
+720,Tonatia bidens,F,4204,30.2,768,coronal,20,Gallocyanin,3,Chiroptera
+721,Tonatia bidens,F,4208,31.4,747,coronal,20,Cresylviolet,3,Chiroptera
+722,Tonatia schulzi,F,4210,21.3,510,coronal,20,Cresylviolet,3,Chiroptera
+723,Tonatia sylvicola,F,4207,32.3,756,coronal,20,Cresylviolet,3,Chiroptera
+724,Mimon crenulatum,F,4211,11.6,326,coronal,20,Cresylviolet,2,Chiroptera
+725,Mimon crenulatum,M,4212,11.9,325,coronal,20,Gallocyanin,2,Chiroptera
+726,Phyllostomus discolor,U,P 102,,,coronal,10,Cresylviolet,5,Chiroptera
+727,Phyllostomus discolor,M,K 138,36.5,1100,coronal,20,Cresylviolet Heidenhain-Woelke,3 6,Chiroptera
+728,Phyllostomus discolor,F,K 254,40.1,1080,coronal,20,Hematoxylin Heidenhain-Woelke,3 6,Chiroptera
+729,Phyllostomus discolor,F,K 256,34.7,1060,coronal,20,Cresylviolet Heidenhain-Woelke,3 6,Chiroptera
+730,Phyllostomus discolor,M,4213,35,1084,coronal,10,Cell body Merker,8,Chiroptera
+731,Phyllostomus elongatus,F,4214,46.6,872,coronal,20,Gallocyanin,3,Chiroptera
+732,Phyllostomus elongatus,M,4215,47.6,905,coronal,20,Gallocyanin,3,Chiroptera
+733,Phyllostomus elongatus,F,4221,45.6,897,coronal,20,Cresylviolet,3,Chiroptera
+734,Phyllostomus hastatus,M,K 111,99.90000000000001,1600,coronal,20,Cresylviolet Heidenhain-Woelke,4 8,Chiroptera
+735,Phyllostomus hastatus,M,K 122,78.59999999999999,1580,coronal,20,Cresylviolet Heidenhain-Woelke,3 6,Chiroptera
+736,Phyllostomus hastatus,F,K 132,82.40000000000001,1470,sagittal,20,Cresylviolet Heidenhain-Woelke,5 10,Chiroptera
+737,Phyllostomus hastatus,F,K 137,79.7,1570,coronal,20,Cresylviolet Heidenhain-Woelke,3 6,Chiroptera
+738,Phylloderma stenops,M,4229,44.6,1314,coronal,20,Cresylviolet,4,Chiroptera
+739,Phylloderma stenops,F,4230,47.6,1362,coronal,20,Cresylviolet,4,Chiroptera
+740,Trachops cirrhosus,F,4231,34.2,1014,coronal,20,Cresylviolet,3,Chiroptera
+741,Trachops cirrhosus,M,4232,39.6,991,coronal,20,Cresylviolet,3,Chiroptera
+742,Vampyrum spectrum,M,4233,162,2537,coronal,20,Cresylviolet,5,Chiroptera
+743,Vampyrum spectrum,F,4234,184,2637,coronal,20,Cresylviolet,5,Chiroptera
+744,Glossophaga longirostris,F,K 236,10.6,400,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+745,Glossophaga soricina,M,K 71,8.800000000000001,400,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+746,Glossophaga soricina,U,P 101,,,coronal,10,Cresylviolet,3,Chiroptera
+747,Glossophaga soricina,U,P 105,,,coronal,10,Cresylviolet,3,Chiroptera
+748,Glossophaga soricina,F,K 194,8.6,390,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+749,Glossophaga soricina,M,K 238,9.4,420,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+750,Glossophaga soricina,F,2319,10.8,380,coronal,6,Cell body Merker,3,Chiroptera
+751,Glossophaga soricina,M,4235,10,396,coronal,10,Cell body Merker,5,Chiroptera
+752,Glossophaga soricina,M,4236,9.1,376,sagittal,6,Cresylviolet Cell body Merker,5 5,Chiroptera
+753,Glossophaga soricina,M,4240,8.800000000000001,379,coronal,6,Cresylviolet Cell body Merker,8 8,Chiroptera
+754,Monophyllus plethodon,M,4241,15.9,452,coronal,20,Gallocyanin,3,Chiroptera
+755,Monophyllus plethodon,F,4242,14,438,coronal,20,Gallocyanin,3,Chiroptera
+756,Leptonycteris curasoae,M,K 271,24.5,610,coronal,20,Hematoxylin Heidenhain-Woelke,3 6,Chiroptera
+757,Leptonycteris nivalis,M,2349,22.8,565,sagittal,10,Cell body Merker,5,Chiroptera
+758,Leptonycteris nivalis,M,2372,25.1,630,coronal,20,Gallocyanin,3,Chiroptera
+759,Leptonycteris nivalis,M,2373,21.7,560,coronal,20,Gallocyanin,3,Chiroptera
+760,Leptonycteris nivalis,M,2375,21.6,590,coronal,20,Gallocyanin,3,Chiroptera
+761,Lonchophylla mordax,M,5015,10.7,432,coronal,20,Gallocyanin,3,Chiroptera
+762,Lonchophylla thomasi,M,4243,6.9,337,coronal,20,Gallocyanin,2,Chiroptera
+763,Lionycteris spurrelli,M,K 67,7.9,360,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+764,Lionycteris spurrelli,F,K 68,8.1,350,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+765,Lionycteris spurrelli,F,K 69,7.9,370,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+766,Anoura caudifer,F,K 186,10.4,440,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+767,Anoura caudifer,F,4245,10.9,391,coronal,20,Gallocyanin,2,Chiroptera
+768,Anoura caudifer,M,4246,10.8,420,coronal,20,Gallocyanin,3,Chiroptera
+769,Anoura caudifer,F,4247,9.800000000000001,387,sagittal,10,Cell body Merker Cresylviolet,3 3,Chiroptera
+770,Anoura geoffroyi,M,K 27,15.4,620,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+771,Anoura geoffroyi,M,K 218,15.1,550,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+772,Anoura geoffroyi,F,K 299,12.6,590,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+773,Anoura geoffroyi,F,4251,16.9,596,coronal,10,Cell body Merker Cresylviolet Myelin Gallyas,6 6 6,Chiroptera
+774,Anoura geoffroyi,M,4255,17.2,592,sagittal,10,Cell body Merker Myelin Gallyas,10 10,Chiroptera
+775,Choeroniscus godmani,M,K 295,6.1,340,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+776,Choeroniscus minor,F,4257,9.6,389,coronal,20,Gallocyanin,2,Chiroptera
+777,Carollia castanea,M,K 151,13.2,460,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+778,Carollia castanea,F,K 152,10.7,430,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+779,Carollia castanea,M,5020,12,445,coronal,20,Gallocyanin,3,Chiroptera
+780,Carollia castanea,M,5023,14.4,467,coronal,20,Gallocyanin,3,Chiroptera
+781,Carollia castanea,F,5024,13.6,416,coronal,20,Gallocyanin,2,Chiroptera
+782,Carollia perspicillata,M,K 19,16.6,510,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+783,Carollia perspicillata,F,K 21,16.6,510,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+784,Carollia perspicillata,F,K 29,15.3,540,coronal,20,Hematoxylin Heidenhain-Woelke,3 6,Chiroptera
+785,Carollia perspicillata,U,P 100,,,coronal,10,Cresylviolet,3,Chiroptera
+786,Rhinophylla pumilio,F,4270,8.800000000000001,314,coronal,20,Gallocyanin,2,Chiroptera
+787,Rhinophylla pumilio,F,4271,8.699999999999999,357,coronal,20,Gallocyanin,2,Chiroptera
+788,Rhinophylla pumilio,M,4272,8.9,332,coronal,20,Gallocyanin,2,Chiroptera
+789,Sturnira lilium,U,P 92,,,coronal,10,Cresylviolet,5,Chiroptera
+790,Sturnira lilium,M,K 97,18.2,590,coronal,,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+791,Sturnira lilium,F,K 209,18.1,610,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+792,Sturnira lilium,M,K 251,19.6,590,coronal,20,Hematoxylin Heidenhain-Woelke,3 6,Chiroptera
+793,Sturnira ludovici,M,5026,25.5,665,coronal,20,Gallocyanin,3,Chiroptera
+794,Sturnira ludovici,F,5027,24.8,660,coronal,20,Gallocyanin,3,Chiroptera
+795,Sturnira tildae,F,K 226,22.8,730,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+796,Sturnira tildae,M,K 227,24.3,770,coronal,20,Hematoxylin Heidenhain-Woelke,3 6,Chiroptera
+797,Sturnira tildae,M,4285,24.3,699,coronal,20,Gallocyanin,3,Chiroptera
+798,Uroderma bilobatum,F,K 129,13.9,620,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+799,Uroderma bilobatum,F,K 160,15.7,590,coronal,20,Hematoxylin Heidenhain-Woelke,3 6,Chiroptera
+800,Uroderma bilobatum,M,K 203,14.3,650,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+801,Vampyrops brachycephalus,M,K 49,14.7,580,coronal,15,Gallocyanin,4,Chiroptera
+802,Vampyrops brachycephalus,M,210,12.9,560,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+803,Vampyrops helleri,M,K 26,13,500,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+804,Vampyrops helleri,U,P 84,,,coronal,10,Cresylviolet,5,Chiroptera
+805,Vampyrops helleri,M,K 162,11.9,480,coronal,20,Gallocyanin,2,Chiroptera
+806,Vampyrops helleri,F,K 230,14.1,540,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+807,Vampyrops infuscus,F,5032,50.2,1110,coronal,20,Gallocyanin,4,Chiroptera
+808,Vampyrops lineatus,F,5034,21.2,743,coronal,20,Gallocyanin,3,Chiroptera
+809,Vampyrops lineatus,F,5035,20.8,731,coronal,20,Gallocyanin,3,Chiroptera
+810,Vampyrops lineatus,F,5037,24.9,765,coronal,20,Gallocyanin,3,Chiroptera
+811,Vampyrops vittatus,F,K 038,36.6,1200,coronal,20,Hematoxylin Heidenhain-Woelke,3 6,Chiroptera
+812,Vampyrops vittatus,M,K 215,36.6,1150,coronal,20,Hematoxylin Heidenhain-Woelke,3 6,Chiroptera
+813,Vampyrodes caraccioloi,F,4303,39.7,947,coronal,20,Gallocyanin,3,Chiroptera
+814,Vampyressa pusilla,M,K 144,8,460,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+815,Vampyressa pusilla,F,K 224,9.6,370,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+816,Chiroderma salvini,F,2358,24,740,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+817,Chiroderma salvini,M,2367,21.3,780,coronal,20,Cresylviolet Heidenhain-Woelke,3 6,Chiroptera
+818,Chiroderma salvini,F,5044,29.1,804,coronal,20,Gallocyanin,3,Chiroptera
+819,Chiroderma salvini,M,5045,29.9,931,coronal,20,Gallocyanin,3,Chiroptera
+820,Chiroderma trinitatum,M,4302,13.2,559,coronal,20,Gallocyanin,3,Chiroptera
+821,Chiroderma trinitatum,F,4400,14.2,515,coronal,20,Gallocyanin,3,Chiroptera
+822,Chiroderma villosum,F,4304,26.9,708,coronal,20,Gallocyanin,3,Chiroptera
+823,Chiroderma villosum,M,4305,22.5,706,coronal,20,Gallocyanin,3,Chiroptera
+824,Chiroderma villosum,F,4306,25.1,703,coronal,20,Gallocyanin,3,Chiroptera
+825,Chiroderma villosum ssp.,F,4307,31.7,835,coronal,20,Gallocyanin,3,Chiroptera
+826,Ectophylla macconnelli,F,K 92,7.7,340,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+827,Ectophylla macconnelli,M,K 213,7.3,340,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+828,Artibeus cinereus,M,K 94,11.1,470,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+829,Artibeus cinereus,F,K 146,12,460,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+830,Artibeus cinereus,M,K 159,11.5,470,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+831,Artibeus cinereus,F,4311,13.8,468,sagittal,10,Cell body Merker Cresylviolet,4 4,Chiroptera
+832,Artibeus concolor,F,4318,20.2,645,coronal,20,Gallocyanin,3,Chiroptera
+833,Artibeus concolor,F,4319,18.5,621,coronal,20,Gallocyanin,3,Chiroptera
+834,Artibeus jamaicensis,U,P 98,,,coronal,10,Cresylviolet,4,Chiroptera
+835,Artibeus jamaicensis,F,K 175,39.3,1090,coronal,20,Hematoxylin Heidenhain-Woelke,3 6,Chiroptera
+836,Artibeus jamaicensis,M,K 176,42.1,1000,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+837,Artibeus jamaicensis,M,K 179,40.7,1050,coronal,20,Cresylviolet Heidenhain-Woelke,3 6,Chiroptera
+838,Artibeus lituratus,F,K 31,62.2,1290,coronal,20,Cresylviolet Heidenhain-Woelke,3 6,Chiroptera
+839,Artibeus lituratus,M,K 34,56.6,1180,coronal,20,Cresylviolet Heidenhain-Woelke,3 6,Chiroptera
+840,Artibeus lituratus,U,P 91,,,coronal,10,Cresylviolet Heidenhain-Woelke,5 5,Chiroptera
+841,Artibeus lituratus,M,K 168,44.9,1260,coronal,20,Hematoxylin Heidenhain-Woelke,3 6,Chiroptera
+842,Artibeus lituratus,M,4327,68.40000000000001,1350,coronal,20,Gallocyanin,4,Chiroptera
+843,Enchisthenes harti,M,K 297,12.3,510,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+844,Enchisthenes harti,F,5057,15.9,524,coronal,30,Gallocyanin,3,Chiroptera
+845,Enchisthenes harti,F,5059,19.3,533,coronal,20,Gallocyanin,3,Chiroptera
+846,Enchisthenes harti,F,5061,18,508,coronal,20,Gallocyanin,3,Chiroptera
+847,Ardops nichollsi,F,4332,26.4,534,coronal,20,Gallocyanin,3,Chiroptera
+848,Ardops nichollsi,F,4333,26.8,510,coronal,20,Gallocyanin,3,Chiroptera
+849,Ardops nichollsi,F,4334,21.7,606,coronal,20,Gallocyanin,3,Chiroptera
+850,Sphaeronycteris toxophyllum,M,K 91,16.7,550,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+851,Brachyphylla cavernarum,M,5084,42.1,1105,coronal,"10, 20",Cresylviolet Gallocyanin,6 6,Chiroptera
+852,Brachyphylla cavernarum,M,5085,45.1,1209,coronal,20,Cresylviolet Gallocyanin,incomplete 3,Chiroptera
+853,Brachyphylla cavernarum,M,5087,43.8,1287,coronal,20,Gallocyanin,6,Chiroptera
+854,Brachyphylla cavernarum,M,5089,43.9,1117,coronal,20,Cresylviolet,3,Chiroptera
+855,Desmodus rotundus,U,P 99,,,coronal,10,Cresylviolet,5,Chiroptera
+856,Desmodus rotundus,M,K 101,34.9,1020,coronal,20,Cresylviolet Heidenhain-Woelke,3 6,Chiroptera
+857,Desmodus rotundus,F,K 102,40.6,990,coronal,20,Cresylviolet Heidenhain-Woelke,3 6,Chiroptera
+858,Desmodus rotundus,F,K 103,41.7,990,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+859,Desmodus rotundus,M,4340,29.1,1025,sagittal,10,Cell body Merker Cresylviolet,5 5,Chiroptera
+860,Diphylla ecaudata,M,K 60,29,650,coronal,20,Cresy Heidenhain-Woelke,2 4,Chiroptera
+861,Diphylla ecaudata,M,2281,31.3,795,coronal,20,Cresylviolet Heidenhain-Woelke,3 6,Chiroptera
+862,Diphylla ecaudata,F,2282,29.3,800,coronal,20,Cresylviolet Heidenhain-Woelke,3 6,Chiroptera
+863,Diphylla ecaudata,M,2329,33.4,830,coronal,20,Gallocyanin Heidenhain-Woelke,2 4,Chiroptera
+864,Natalus tumidirostris,M,4342,7.1,248,coronal,20,Gallocyanin,2,Chiroptera
+865,Natalus tumidirostris,M,4346,7.3,251,coronal,20,Cresylviolet,2,Chiroptera
+866,Natalus tumidirostris,F,4347,6.5,245,sagittal,10,Cell body Merker Cresylviolet,4 4,Chiroptera
+867,Natalus tumidirostris,F,4350,6.5,239,coronal,20,Gallocyanin,2,Chiroptera
+868,Furipterus horrens,M,4351,3.4,130,coronal,20,Cresylviolet,2,Chiroptera
+869,Furipterus horrens,M,4352,3.4,126,coronal,20,Gallocyanin,2,Chiroptera
+870,Furipterus horrens,M,4353,3.5,131,coronal,20,Gallocyanin,2,Chiroptera
+871,Furipterus horrens,M,4354,3.3,125,coronal,20,Cresylviolet,2,Chiroptera
+872,Furipterus horrens,M,4356,3.6,127,coronal,20,Gallocyanin,2,Chiroptera
+873,Myotis adversus,M,1874,10.9,257,coronal,20,Gallocyanin Heidenhain-Woelke,2 4,Chiroptera
+874,Myotis adversus,F,1875,11.2,253,coronal,20,Gallocyanin Heidenhain-Woelke,2 4,Chiroptera
+875,Myotis albescens,F,4357,4.1,127,coronal,20,Cresylviolet,2,Chiroptera
+876,Myotis albescens,M,4358,3.9,122,coronal,20,Gallocyanin,2,Chiroptera
+877,Myotis albescens,M,4359,4.1,128,coronal,20,Gallocyanin,2,Chiroptera
+878,Myotis altarium,M,4720,12.3,244,coronal,20,Gallocyanin,2,Chiroptera
+879,Myotis altarium,M,4721,10.4,243,coronal,20,Gallocyanin,2,Chiroptera
+880,Myotis altarium,M,4868,9.9,233,coronal,20,Gallocyanin,2,Chiroptera
+881,Myotis annectans,F,4869,9.699999999999999,232,coronal,20,Gallocyanin,2,Chiroptera
+882,Myotis annectans,F,4870,9.9,210,coronal,20,Gallocyanin,2,Chiroptera
+883,Myotis bechsteini,M,807,8,265,coronal,10,Cresylviolet,3,Chiroptera
+884,Myotis bocagei,F,2794,7.3,181,coronal,20,Cresylviolet,2,Chiroptera
+885,Myotis bocagei,M,3799,6.6,191,coronal,20,Gallocyanin,2,Chiroptera
+886,Myotis bocagei,F,3800,6.9,186,coronal,20,Cresylviolet,2,Chiroptera
+887,Myotis dasycneme,M,804,15,310,coronal,10,Cresylviolet Perdrau,3 incomplete,Chiroptera
+888,Myotis myotis,M,803,28,490,coronal,20,Cresylviolet Heidenhain-Woelke,3 3,Chiroptera
+889,Myotis myotis,M,805,25,480,coronal,10,Cresylviolet,5,Chiroptera
+890,Myotis myotis,M,806,25,500,sagittal,10,Cresylviolet Heidenhain-Woelke Azan Hematoxylin Gomori Palmgren Perdrau,10 incomplete incomplete incomplete incomplete incomplete incomplete,Chiroptera
+891,Myotis myotis,F,811,25,480,coronal,10,Cresylviolet,5,Chiroptera
+892,Myotis myotis,M,812,20,450,coronal,10,Cresylviolet,5,Chiroptera
+893,Myotis nattereri,M,808,7,220,coronal,10,Cresylviolet Perdrau,3 incomplete,Chiroptera
+894,Myotis nigricans,F,K 86,4.7,140,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+895,Myotis nigricans,M,K 171,4.4,140,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+896,Myotis nigricans,F,K 195,3.9,140,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+897,Myotis nigricans ssp.,F,4360,7.4,163,coronal,20,Gallocyanin,2,Chiroptera
+898,Myotis nigricans ssp.,M,4365,5.7,153,coronal,20,Gallocyanin,2,Chiroptera
+899,Myotis nigricans ssp.,F,4366,6.2,154,coronal,20,Gallocyanin,2,Chiroptera
+900,Myotis siligorensis,F,4724,3.8,116,coronal,20,Gallocyanin,2,Chiroptera
+901,Myotis siligorensis,F,4725,3,101,coronal,20,Gallocyanin,2,Chiroptera
+902,Myotis siligorensis,F,4918,3.1,97,coronal,20,Gallocyanin,2,Chiroptera
+903,Pipistrellus babu,F,4726,5.7,103,coronal,20,Gallocyanin,2,Chiroptera
+904,Pipistrellus babu,F,4727,4.6,98,coronal,20,Gallocyanin,2,Chiroptera
+905,Pipistrellus babu,F,4728,4.6,87,coronal,20,Gallocyanin,2,Chiroptera
+906,Pipistrellus ceylonicus,M,4730,10.4,179,coronal,20,Gallocyanin,2,Chiroptera
+907,Pipistrellus ceylonicus,M,4731,10,196,coronal,20,Gallocyanin,2,Chiroptera
+908,Pipistrellus ceylonicus,F,4736,9.9,178,coronal,20,Gallocyanin,2,Chiroptera
+909,Pipistrellus circumdatus,M,4922,10,249,coronal,20,Gallocyanin,2,Chiroptera
+910,Pipistrellus circumdatus,M,4923,9.5,219,coronal,20,Gallocyanin,2,Chiroptera
+911,Pipistrellus circumdatus,F,4926,9.699999999999999,228,coronal,20,Gallocyanin,2,Chiroptera
+912,Pipistrellus crassulus,F,3803,6.5,131,coronal,20,Cresylviolet,2,Chiroptera
+913,Pipistrellus crassulus,M,3804,5.8,137,coronal,20,Cresylviolet,2,Chiroptera
+914,Pipistrellus crassulus,M,3805,6,135,coronal,20,Cresylviolet,2,Chiroptera
+915,Pipistrellus imbricatus,F,2174,6.4,140,coronal,20,Hematoxylin,2,Chiroptera
+916,Pipistrellus imbricatus,F,2176,7.1,130,coronal,20,Gallocyanin,2,Chiroptera
+917,Pipistrellus imbricatus,F,2179,7.5,140,coronal,20,Gallocyanin,2,Chiroptera
+918,Pipistrellus javanicus,M,4738,4.9,120,coronal,20,Gallocyanin,2,Chiroptera
+919,Pipistrellus javanicus,M,4739,4.2,113,coronal,20,Gallocyanin,2,Chiroptera
+920,Pipistrellus javanicus,F,4740,4.4,124,coronal,20,Gallocyanin,2,Chiroptera
+921,Pipistrellus mimus,M,4741,3.6,105,coronal,20,Gallocyanin,2,Chiroptera
+922,Pipistrellus mimus,F,4745,3.6,85,coronal,20,Gallocyanin,2,Chiroptera
+923,Pipistrellus mimus,F,4747,4.9,97,coronal,20,Gallocyanin,2,Chiroptera
+924,Pipistrellus nanus,F,2796,3.9,107,coronal,20,Gallocyanin,2,Chiroptera
+925,Pipistrellus nanus,M,2798,3.9,102,coronal,20,Gallocyanin,2,Chiroptera
+926,Pipistrellus nanus,F,2800,3.7,95,coronal,20,Cresylviolet,2,Chiroptera
+927,Pipistrellus pulveratus,M,4752,4.4,144,coronal,20,Gallocyanin,2,Chiroptera
+928,Pipistrellus pulveratus,M,4753,5.4,147,coronal,20,Gallocyanin,2,Chiroptera
+929,Pipistrellus pulveratus,F,4756,5.6,144,coronal,20,Gallocyanin,2,Chiroptera
+930,Pipistrellus subflavus,F,4005,5.7,122,coronal,20,Gallocyanin,2,Chiroptera
+931,Pipistrellus subflavus,M,4006,4.9,127,coronal,20,Gallocyanin,2,Chiroptera
+932,Pipistrellus tenuis,F,3417,5.5,116,coronal,20,Gallocyanin,2,Chiroptera
+933,Pipistrellus tenuis,F,3418,5.2,119,coronal,20,Gallocyanin,2,Chiroptera
+934,Pipistrellus tenuis,M,3422,5.2,110,coronal,20,Gallocyanin,2,Chiroptera
+935,Scotozous dormeri,M,4761,6.3,141,coronal,20,Gallocyanin,2,Chiroptera
+936,Scotozous dormeri,F,4764,6.4,140,coronal,20,Gallocyanin,2,Chiroptera
+937,Scotozous dormeri,F,4766,7.2,154,coronal,20,Gallocyanin,2,Chiroptera
+938,Nyctalus noctula,M,4938,26.5,351,coronal,20,Gallocyanin,2,Chiroptera
+939,Nyctalus noctula,M,4942,30.4,377,coronal,20,Gallocyanin,2,Chiroptera
+940,Nyctalus noctula,M,4943,29.3,380,coronal,20,Gallocyanin,2,Chiroptera
+941,Nyctalus stenopterus,M,2185,21.9,245,coronal,20,Gallocyanin,2,Chiroptera
+942,Nyctalus stenopterus,F,2187,15.7,260,coronal,20,Gallocyanin,2,Chiroptera
+943,Nyctalus stenopterus,F,2188,13.9,240,coronal,20,Gallocyanin,2,Chiroptera
+944,Glischropus tylopus,M,2162,4.3,100,coronal,20,Gallocyanin Heidenhain-Woelke,2 4,Chiroptera
+945,Glischropus tylopus,F,2163,5.3,90,coronal,20,Gallocyanin Heidenhain-Woelke,2 4,Chiroptera
+946,Glischropus tylopus,F,2164,5.8,95,coronal,20,Gallocyanin Heidenhain-Woelke,2 4,Chiroptera
+947,Eptesicus brasiliensis,F,K 116,8.9,180,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+948,Eptesicus brasiliensis,M,K 169,9,210,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+949,Eptesicus brasiliensis,F,K 191,9,210,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+950,Eptesicus brasil. melanopterus,F,4368,8.199999999999999,196,coronal,20,Gallocyanin,2,Chiroptera
+951,Eptesicus brasil. melanopterus,M,4369,9.199999999999999,183,coronal,20,Gallocyanin,2,Chiroptera
+952,Eptesicus brasil. melanopterus,M,4370,9.300000000000001,180,coronal,20,Gallocyanin,2,Chiroptera
+953,Eptesicus flavescens,M,2803,9.1,191,coronal,20,Cresylviolet,2,Chiroptera
+954,Eptesicus flavescens,F,2804,11.8,188,coronal,20,Gallocyanin,2,Chiroptera
+955,Eptesicus fuscus,M,3108,13.6,238,coronal,20,Gallocyanin,2,Chiroptera
+956,Eptesicus pumilus,F,1876,5.5,144,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+957,Eptesicus pumilus,F,1877,5.8,116,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+958,Eptesicus serotinus andersoni,M,4946,18.8,321,coronal,20,Gallocyanin,2,Chiroptera
+959,Eptesicus serotinus andersoni,M,4947,22.8,340,coronal,20,Gallocyanin,2,Chiroptera
+960,Eptesicus serotinus andersoni,M,4948,21.8,361,coronal,20,Gallocyanin,3,Chiroptera
+961,Ia io,M,4768,53.3,761,coronal,20,Gallocyanin,3,Chiroptera
+962,Tylonycteris minor,M,4951,3,61,coronal,20,Gallocyanin,2,Chiroptera
+963,Tylonycteris minor,M,4954,3.1,62,coronal,20,Gallocyanin,2,Chiroptera
+964,Tylonycteris minor,M,4956,3.6,63,coronal,20,Gallocyanin,2,Chiroptera
+965,Tylonycteris pachypus,M,2195,4.1,70,coronal,20,Gallocyanin Heidenhain-Woelke,2 4,Chiroptera
+966,Tylonycteris pachypus,M,2196,4.3,74,coronal,20,Gallocyanin Heidenhain-Woelke,2 4,Chiroptera
+967,Tylonycteris pachypus,F,2203,5.1,73,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+968,Tylonycteris pachypus,F,2204,4.7,80,coronal,20,Gallocyanin Heidenhain-Woelke,2 4,Chiroptera
+969,Tylonycteris robustula,M,2207,10.5,125,coronal,20,Gallocyanin Heidenhain-Woelke,2 4,Chiroptera
+970,Tylonycteris robustula,M,2208,8.9,125,coronal,20,Gallocyanin Heidenhain-Woelke,2 4,Chiroptera
+971,Tylonycteris robustula,F,2218,7.9,112,coronal,6,Cell body Merker,4,Chiroptera
+972,Tylonycteris robustula,F,2219,8.4,120,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+973,Hesperoptenus blanfordi,M,4873,7.5,158,coronal,20,Gallocyanin,2,Chiroptera
+974,Hesperoptenus blanfordi,M,4880,6.7,159,coronal,20,Gallocyanin,2,Chiroptera
+975,Hesperoptenus blanfordi,F,4881,7.8,164,coronal,20,Gallocyanin,2,Chiroptera
+976,Glauconycteris humeralis,F,3816,5.4,152,coronal,20,Cresylviolet,2,Chiroptera
+977,Glauconycteris humeralis,M,3817,5.5,134,coronal,20,Cresylviolet,2,Chiroptera
+978,Glauconycteris humeralis,M,3818,5.6,145,coronal,20,Gallocyanin,2,Chiroptera
+979,Glauconycteris poensis,M,3819,8.6,205,coronal,20,Cresylviolet,2,Chiroptera
+980,Chalinolobus gouldi,M,1878,11.6,239,coronal,20,Cresylviolet Heidenhain -Woelke,2 4,Chiroptera
+981,Chalinolobus gouldi,F,1937,11.8,252,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+982,Chalinolobus morio,F,1879,7.9,180,coronal,20,Gallocyanin Heidenhain-Woelke,2 4,Chiroptera
+983,Chalinolobus morio,F,1880,8.4,185,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+984,Nycticeius balstoni,F,3423,9.1,158,coronal,20,Gallocyanin,2,Chiroptera
+985,Rhogeessa parvula,F,K 115,3.8,100,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+986,Rhogeessa parvula,F,K 127,3.7,120,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+987,Rhogeessa parvula,F,K 214,5.1,110,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+988,Rhogeessa parvula,F,5073,6.1,139,coronal,20,Gallocyanin,2,Chiroptera
+989,Scotomanes ornatus,M,4882,23.9,396,coronal,20,Gallocyanin,3,Chiroptera
+990,Scotomanes ornatus,M,4883,19.6,372,coronal,20,Gallocyanin,3,Chiroptera
+991,Thainycteris aureocallaris,M,5080,14.6,322,coronal,20,Gallocyanin,2,Chiroptera
+992,Thainycteris aureocallaris,M,5081,18,318,coronal,20,Gallocyanin,2,Chiroptera
+993,Thainycteris aureocallaris,M,5082,16.5,373,coronal,20,Gallocyanin,2,Chiroptera
+994,Scotophilus dinganii,M,2807,23.4,450,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+995,Scotophilus dinganii,M,2808,20.1,435,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+996,Scotophilus dinganii,M,2815,25.8,437,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+997,Scotophilus heathi,F,4776,32.1,475,coronal,20,Gallocyanin,3,Chiroptera
+998,Scotophilus heathi,M,4780,31.7,474,coronal,20,Gallocyanin,3,Chiroptera
+999,Scotophilus heathi,M,4781,31.2,474,coronal,20,Gallocyanin,2,Chiroptera
+1000,Scotophilus kuhli,M,2227,20.2,340,coronal,20,Gallocyanin,2,Chiroptera
+1001,Scotophilus kuhli,M,2232,20.1,340,coronal,20,Gallocyanin,2,Chiroptera
+1002,Scotophilus kuhli,M,2236,20.2,340,coronal,20,Gallocyanin,2,Chiroptera
+1003,Scotophilus kuhli,F,2238,17.7,310,coronal,20,Gallocyanin,2,Chiroptera
+1004,Lasiurus borealis,F,K 276,7.8,170,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+1005,Miniopterus australis,M,1883,7,203,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+1006,Miniopterus australis,F,1884,7.1,205,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+1007,Miniopterus haradai,M,4791,8.6,219,coronal,20,Gallocyanin,2,Chiroptera
+1008,Miniopterus haradai,F,4793,8.6,223,coronal,20,Gallocyanin,2,Chiroptera
+1009,Miniopterus haradai,M,4794,8.699999999999999,241,coronal,20,Gallocyanin,2,Chiroptera
+1010,Miniopterus inflatus,M,2819,15.2,325,coronal,20,Cresylviolet,2,Chiroptera
+1011,Miniopterus inflatus,F,2821,15.6,317,coronal,20,Gallocyanin,2,Chiroptera
+1012,Miniopterus inflatus,F,2822,16.5,339,coronal,20,Gallocyanin,2,Chiroptera
+1013,Miniopterus magnater,M,4798,16.2,319,sagittal,10,Cell body Merker,5,Chiroptera
+1014,Miniopterus magnater,F,4799,14.4,342,coronal,20,Gallocyanin,2,Chiroptera
+1015,Miniopterus magnater,M,4803,13.7,335,coronal,20,Gallocyanin,2,Chiroptera
+1016,Miniopterus magnater,M,4804,13.9,322,coronal,20,Gallocyanin,2,Chiroptera
+1017,Miniopterus medius,M,3426,8.9,219,coronal,20,Gallocyanin,2,Chiroptera
+1018,Miniopterus medius,M,3427,8.6,213,coronal,22,Gallocyanin,2,Chiroptera
+1019,Miniopterus medius,F,3428,8.6,218,coronal,20,Gallocyanin,2,Chiroptera
+1020,Miniopterus schreibersi ssp.,M,3434,11.7,269,coronal,20,Gallocyanin,2,Chiroptera
+1021,Miniopterus schreibersi ssp.,M,3438,11.2,259,coronal,20,Gallocyanin,2,Chiroptera
+1022,Miniopterus schreibersi ssp.,F,3439,12.7,266,coronal,20,Gallocyanin,2,Chiroptera
+1023,Miniopterus schreib. arenarius,M,2831,10,234,coronal,20,Gallocyanin,2,Chiroptera
+1024,Miniopterus schreib. arenarius,F,2833,9.800000000000001,240,coronal,20,Cresylviolet,2,Chiroptera
+1025,Miniopterus schreib. arenarius,F,2835,11.6,253,coronal,20,Cresylviolet,2,Chiroptera
+1026,Miniopterus schreib. blepotis,M,1881,13.5,314,coronal,20,Cresylviolet,2,Chiroptera
+1027,Miniopterus schreib. blepotis,F,1882,15.1,313,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+1028,Miniopterus tristis,M,3445,17.3,340,coronal,20,Cresylviolet,2,Chiroptera
+1029,Miniopterus tristis,M,3446,17.3,341,coronal,20,Gallocyanin,2,Chiroptera
+1030,Miniopterus tristis,F,3448,12.6,327,coronal,20,Gallocyanin,2,Chiroptera
+1031,Murina cyclotis cyclotis,F,4805,8.1,238,coronal,20,Gallocyanin,2,Chiroptera
+1032,Murina cyclotis cyclotis,M,4981,6.1,259,coronal,20,Gallocyanin,2,Chiroptera
+1033,Murina cyclotis peninsularis,M,4975,8.5,289,coronal,20,Gallocyanin,2,Chiroptera
+1034,Murina cyclotis peninsularis,F,4976,8.800000000000001,274,coronal,20,Gallocyanin,2,Chiroptera
+1035,Murina huttoni rubella,F,4977,9,251,coronal,20,Gallocyanin,2,Chiroptera
+1036,Murina huttoni rubella,F,4978,9,256,coronal,20,Gallocyanin,2,Chiroptera
+1037,Murina huttoni rubella,F,4980,8.699999999999999,268,coronal,20,Gallocyanin,2,Chiroptera
+1038,Murina tubinaris,F,4806,4.5,205,coronal,20,Gallocyanin,2,Chiroptera
+1039,Murina tubinaris,F,4895,6.4,229,coronal,20,Gallocyanin,2,Chiroptera
+1040,Harpiocephalus harpia,M,4894,13.5,442,coronal,20,Gallocyanin,3,Chiroptera
+1041,Kerivoula papillosa,M,2161,10.1,310,coronal,20,Cresylviolet Heidenhain-Woelke Gallocyanin,2 4 incomplete,Chiroptera
+1042,Kerivoula pellucida,F,4896,4.1,203,coronal,20,Gallocyanin,2,Chiroptera
+1043,Kerivoula phalaena,F,3820,3,116,coronal,20,Gallocyanin,2,Chiroptera
+1044,Phoniscus atrox,F,4807,4.2,188,coronal,20,Cresylviolet,2,Chiroptera
+1045,Nyctophilus geoffroyi,F,1932,8.699999999999999,173,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+1046,Nyctophilus geoffroyi,M,1933,6.8,156,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+1047,Nyctophilus timoriensis,M,1885,9.9,260,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+1048,Nyctophilus timoriensis,F,1886,10.9,270,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+1049,Tadarida aegyptiaca,M,4808,18.6,401,coronal,20,Gallocyanin,3,Chiroptera
+1050,Tadarida aegyptiaca,F,4812,16.6,381,coronal,20,Gallocyanin,2,Chiroptera
+1051,Tadarida aegyptiaca,F,4813,16.8,393,coronal,20,Gallocyanin,3,Chiroptera
+1052,Tadarida condylura,M,2865,35.3,465,coronal,20,Gallocyanin,2,Chiroptera
+1053,Tadarida condylura,F,2868,24.5,443,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+1054,Tadarida condylura,M,2871,28.9,475,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+1055,Tadarida mops,M,2265,31.5,485,coronal,20,Gallocyanin,2,Chiroptera
+1056,Tadarida mops,M,2267,31.9,470,coronal,20,Gallocyanin,3,Chiroptera
+1057,Tadarida mops,M,2268,28.6,465,coronal,20,Gallocyanin,3,Chiroptera
+1058,Tadarida niveiventer,M,2857,21.2,458,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+1059,Tadarida niveiventer,M,2861,21,440,coronal,20,Gallocyanin,2,Chiroptera
+1060,Tadarida niveiventer,F,2862,20.9,405,coronal,20,Gallocyanin Heidenhain-Woelke,2 4,Chiroptera
+1061,Tadarida beccarii,M,1887,14.8,260,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+1062,Tadarida beccarii,F,1888,13,240,coronal,20,Cresylviolet Heidenhain-Woelke,2 4,Chiroptera
+1063,Tadarida jobensis,M,3452,16.5,360,coronal,20,Gallocyanin,2,Chiroptera
+1064,Tadarida leucostigma,M,M 143,25.1,380,coronal,10,Cresylviolet Heidenhain-Woelke,5 10,Chiroptera
+1065,Tadarida plicata plicata,M,4814,17.7,348,coronal,20,Gallocyanin,2,Chiroptera
+1066,Tadarida plicata plicata,M,4815,17.5,303,coronal,20,Gallocyanin,2,Chiroptera
+1067,Tadarida plicata plicata,M,4816,17.1,324,coronal,20,Gallocyanin,2,Chiroptera
+1068,Tadarida pumila,F,2847,10.3,252,coronal,20,Gallocyanin,2,Chiroptera
+1069,Tadarida pumila,F,2848,10.9,242,sagittal,10,Cell body Merker Hematoxylin,4 4,Chiroptera
+1070,Tadarida pumila,M,2853,10.2,254,coronal,20,Gallocyanin,2,Chiroptera
+1071,Tadarida pumila,M,2855,9.5,240,coronal,20,Gallocyanin Heidenhain-Woelke,2 4,Chiroptera
+1072,Otomops martiensseni,F,2877,44.8,730,coronal,20,Gallocyanin Heidenhain-Woelke,3 6,Chiroptera
+1073,Otomops martiensseni,M,2882,41.2,787,coronal,20,Hematoxylin,3,Chiroptera
+1074,Otomops martiensseni,M,2884,40.2,776,coronal,20,Gallocyanin Heidenhain-Woelke,3 6,Chiroptera
+1075,Molossops abrasus,F,4403,32.7,398,coronal,20,Gallocyanin Heidenhain-Woelke,2 2,Chiroptera
+1076,Molossops abrasus,F,4404,32.9,441,coronal,20,Gallocyanin,2,Chiroptera
+1077,Molossops abrasus,F,4406,33.2,404,coronal,20,Gallocyanin,2,Chiroptera
+1078,Molossops greenhalli,M,K 130,17.5,300,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+1079,Molossops planirostris,F,K 292,7.1,180,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+1080,Molossops planirostris,M,K 293,7.4,190,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+1081,Eumops auripendulus,M,4371,30.8,580,coronal,20,Gallocyanin,3,Chiroptera
+1082,Eumops auripendulus,F,4373,32.7,595,coronal,20,Gallocyanin,3,Chiroptera
+1083,Eumops auripendulus,F,4376,34.8,613,coronal,20,Gallocyanin,3,Chiroptera
+1084,Eumops glaucinus,F,K 199,34.8,660,coronal,20,Hematoxylin Heidenhain-Woelke,3 6,Chiroptera
+1085,Eumops glaucinus,M,K 201,38.9,670,coronal,20,Hematoxylin Heidenhain-Woelke,3 6,Chiroptera
+1086,Molossus ater,M,K 63,40.1,530,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+1087,Molossus ater,F,K 73,26.7,490,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+1088,Molossus ater,M,K 147,39.8,550,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+1089,Molossus molossus,F,K 80,13.5,310,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+1090,Molossus molossus,M,K 113,15,330,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+1091,Molossus molossus,M,K 181,14.6,340,coronal,20,Hematoxylin Heidenhain-Woelke,2 4,Chiroptera
+1092,Molossus trinitatis,F,4394,19.1,428,coronal,20,Gallocyanin,3,Chiroptera
+1093,Molossus trinitatis,F,4396,19.3,441,coronal,20,Gallocyanin,3,Chiroptera
+1094,Cheiromeles torquatus,M,2251,183,1430,coronal,20,Gallocyanin Heidenhain-Woelke,3 6,Chiroptera
+1095,Cheiromeles torquatus,M,2252,173,1370,coronal,20,Gallocyanin Heidenhain-Woelke,4 8,Chiroptera
+1096,Cheiromeles torquatus,F,2258,168,1355,coronal,20,Gallocyanin Heidenhain-Woelke,3 6,Chiroptera
+1097,Microcebus coquereli,,956,,3300,coronal,20,Hematoxylin Heidenhain-Woelke v. Gieson,10 incomplete incomplete,Primates
+1098,Microcebus murinus,F,M 19,42.2,1830,coronal,15,Cresylvioletviolet Heidenhain-Woelke,5 10,Primates
+1099,Microcebus murinus,M,M 40,52.4,1640,coronal,20,Cresylvioletviolet Heidenhain-Woelke,5 10,Primates
+1100,Microcebus murinus,M,M 49,54,2000,sagittal,10,Cresylvioletviolet Heidenhain-Woelke,5 10,Primates
+1101,Microcebus murinus,F,M 54,45.5,1860,coronal,10,Cresylvioletviolet Heidenhain-Woelke,5 10,Primates
+1102,Microcebus murinus,F,M 87,57.5,1720,coronal,20,Cresylvioletviolet Heidenhain-Woelke,4 8,Primates
+1103,Microcebus murinus,F,1051,29.8,1680,coronal,15,Cresylvioletviolet Heidenhain-Woelke,5 10,Primates
+1104,Microcebus murinus,F,1078,70.40000000000001,1730,coronal,15,Cresylvioletviolet Heidenhain-Woelke,5 10,Primates
+1105,Cheirogaleus major,F,M 14,490,6980,sagittal,20,Cresylvioletviolet Heidenhain-Woelke,4 8,Primates
+1106,Cheirogaleus major,M,M 56,465,8210,coronal,15,Cresylvioletviolet Heidenhain-Woelke,8 16,Primates
+1107,Cheirogaleus major,M,M 136,277,6500,horizontal,25,Cresylvioletviolet Heidenhain-Woelke,2 4,Primates
+1108,Cheirogaleus major,M,1058,572,6720,sagittal,20,Cresylvioletviolet Heidenhain-Woelke,4 8,Primates
+1109,Cheirogaleus major,M,1062,300,6400,coronal,15,Cresylvioletviolet Heidenhain-Woelke,8 16,Primates
+1110,Cheirogaleus medius,M,M 70,167,2980,coronal,20,Hematoxylin Heidenhain-Woelke,5 10,Primates
+1111,Cheirogaleus medius,M,M 71,187,3200,coronal,15,Cresylvioletviolet Heidenhain-Woelke,7 14,Primates
+1112,Cheirogaleus medius,M,M 99,81,3230,sagittal,20,Cresylvioletviolet Heidenhain-Woelke,3 6,Primates
+1113,Lemur catta,M,1962/25,,,coronal,20,Cresylvioletviolet Heidenhain-Woelke,8 16,Primates
+1114,Lemur albifrons fulvus,M,M 7,1260,22640,coronal,25,Cresylvioletviolet Heidenhain-Woelke,6 12,Primates
+1115,Lemur albifrons fulvus,M,M 78,1200,23850,coronal,15,Cresylvioletviolet Heidenhain-Woelke,10 20,Primates
+1116,Lemur albifrons fulvus,M,M 82,1385,23850,coronal,15,Cresylvioletviolet Heidenhain-Woelke,10 20,Primates
+1117,Lemur albifrons fulvus,M,M 85,975,20260,horizontal,15,Cresylvioletviolet Heidenhain-Woelke,5 10,Primates
+1118,Lemur albifrons fulvus,M,M 86,1390,21980,sagittal,15,Cresylvioletviolet Heidenhain-Woelke,8 16,Primates
+1119,Lemur mongoz,M,M 77,900,17660,coronal,20,Gomori,8,Primates
+1120,Lemur spec?,U,1966/46,,,sagittal,10,Cresylvioletviolet Heidenhain-Woelke Gabe Azan Gomori Palmgren Perdrau,incomplete incomplete incomplete incomplete incomplete incomplete incomplete,Primates
+1121,Varecia variegata,M,M 191,3000,31460,coronal,15,Cresylvioletviolet Heidenhain-Woelke,12 24,Primates
+1122,Varecia variegata,M,M 194,3700,32000,sagittal,25,Cresylvioletviolet Heidenhain-Woelke,4 8,Primates
+1123,Lepilemur ruficaudatus,F,M 73,607,7350,coronal,15,Cresylvioletviolet Heidenhain-Woelke,8 16,Primates
+1124,Lepilemur ruficaudatus,M,M 75,925,7120,horizontal,25,Cresylvioletviolet Heidenhain-Woelke,2 4,Primates
+1125,Lepilemur ruficaudatus,F,M 81,995,7730,coronal,15,Cresylvioletviolet Heidenhain-Woelke,10 20,Primates
+1126,Lepilemur ruficaudatus,F,M 83,930,7850,sagittal,15,Cresylvioletviolet Heidenhain-Woelke,5 10,Primates
+1127,Lepilemur ruficaudatus,F,M 84,850,8230,coronal,25,Cresylvioletviolet Heidenhain-Woelke,5 10,Primates
+1128,Avahi laniger laniger,F,M 129,1270,11450,coronal,20,Cresylvioletviolet Heidenhain-Woelke,6 12,Primates
+1129,Avahi laniger laniger,F,M 135,1300,9530,coronal,15,Cresylvioletviolet Heidenhain-Woelke,8 16,Primates
+1130,Avahi laniger occidentalis,F,M 69,875,9660,coronal,15,Cresylvioletviolet Heidenhain-Woelke,10 20,Primates
+1131,Avahi laniger occidentalis,M,M 103,855,9340,sagittal,15,Cresylvioletviolet Heidenhain-Woelke,5 10,Primates
+1132,Avahi laniger occidentalis,M,M 108,845,10070,horizontal,25,Cresylvioletviolet Heidenhain-Woelke,3 6,Primates
+1133,Avahi laniger occidentalis,M,M 109,860,9590,coronal,15,Cresylvioletviolet Heidenhain-Woelke,8 16,Primates
+1134,Propithecus verreauxi,F,M 88,3600,25610,horizontal,25,Cresylvioletviolet Heidenhain-Woelke,4 8,Primates
+1135,Propithecus verreauxi,M,M 89,3540,27030,coronal,15,Cresylvioletviolet Heidenhain-Woelke,10 20,Primates
+1136,Propithecus verreauxi,M,M 92,3630,26400,sagittal,15,Cresylvioletviolet Heidenhain-Woelke,8 16,Primates
+1137,Propithecus verreauxi,F,M 100,3200,26850,coronal,15,Cresylvioletviolet Heidenhain-Woelke,10 20,Primates
+1138,Indri indri,F,M 192,6250,38300,coronal,20,Cresylvioletviolet Heidenhain-Woelke,10 20,Primates
+1139,Indri indri,M,M 193,4600,33650,coronal,15,Cresylvioletviolet Heidenhain-Woelke,12 24,Primates
+1140,Daubentonia madagascariensis,F,M 53,2800,45150,coronal,15,Cresylvioletviolet Heidenhain-Woelke,12 24,Primates
+1141,Loris tardigradus,M,964,347,6850,coronal,20,Cresylvioletviolet Heidenhain-Woelke,5 10,Primates
+1142,Loris tardigradus,M,965,195,6270,sagittal,10,Cresy Heidenhain-Woelke Gomori Azan Palmgren Perdrau Goldner,10 20 incomplete incomplete incomplete incomplete incomplete,Primates
+1143,Loris tardigradus,F,1218,275,7180,coronal,20,Cresylvioletviolet Heidenhain-Woelke,5 10,Primates
+1144,Loris tardigradus,M,1714,294,6790,sagittal,20,Cresylvioletviolet Heidenhain-Woelke,10 20,Primates
+1145,Nycticebus coucang,F,1153,454.5,9430,coronal,15,Cresy Heidenhain-Woelke,8 16,Primates
+1146,Nycticebus coucang,F,1187,880,11980,coronal,20,Cresylvioletviolet Heidenhain-Woelke,6 12,Primates
+1147,Nycticebus coucang,F,1219,787,10180,sagittal,20,Cresylvioletviolet Heidenhain-Woelke,5 10,Primates
+1148,Nycticebus coucang,M,1228,1060,11460,sagittal,20,Cresylvioletviolet Heidenhain-Woelke,5 10,Primates
+1149,Nycticebus coucang,M,1960/67,,,sagittal,10,Cresylvioletviolet Eisenalaun Perdrau Gomori Azan Goldner Palmgren,incomplete incomplete incomplete incomplete incomplete incomplete incomplete,Primates
+1150,Nycticebus coucang,F,1966/44,,,coronal,10,Cresylvioletviolet,20,Primates
+1151,Nycticebus coucang,U,1966/45,,,sagittal,8,Cresylvioletviolet Heidenhain-Woelke Gabe Azan Gomori Palmgren Perdrau,10 incomplete incomplete incomplete incomplete incomplete incomplete,Primates
+1152,Perodicticus potto,M,A 70,700,11900,coronal,20,Cresylvioletviolet Heidenhain-Woelke,6 12,Primates
+1153,Perodicticus potto,M,A 173,750,14400,horizontal,15,Cresylvioletviolet Heidenhain-Woelke,5 20,Primates
+1154,Perodicticus potto,M,A 233,1250,16200,coronal,10,Cresylvioletviolet Heidenhain-Woelke,12 24,Primates
+1155,Perodicticus potto,F,A 234,1250,13900,sagittal,10,Cresylvioletviolet Heidenhain-Woelke,10 20,Primates
+1156,Perodicticus potto,U,924,,,coronal,20,Cresylvioletviolet Heidenhain-Woelke Perdrau,7 14 incomplete,Primates
+1157,Galago senegalensis,F,A 337,,,sagittal,10,Cresylvioletviolet Heidenhain-Woelke,10 20,Primates
+1158,Galago senegalensis,F,A 338,,,coronal,20,Cresylvioletviolet Heidenhain-Woelke,5 10,Primates
+1159,Galago senegalensis,U,925,,,sagittal,"10, 20",Cresylvioletviolet Heidenhain-Woelke Gomori Palmgren Perdrau Goldner,10 10 incomplete incomplete incomplete incomplete,Primates
+1160,Galago senegalensis,M,1185,134,3620,sagittal,20,Cresylvioletviolet Heidenhain-Woelke,3 6,Primates
+1161,Galago senegalensis,M,1186,138,4080,coronal,20,Cresylvioletviolet Heidenhain-Woelke,4 8,Primates
+1162,Galago senegalensis,U,1959/16,,,sagittal,8,Cresylvioletviolet Gomori Gabe Palmgren Goldner Azan Perdrau,incomplete incomplete incomplete incomplete incomplete incomplete incomplete,Primates
+1163,Galago senegalensis,,1962/40,,,coronal,15,Azan,complete,Primates
+1164,Galago senegalensis,,1962/51,,,sagittal,15,Azan,complete,Primates
+1165,Galago senegalensis,M,1967/117,26.6,,sagittal,10,Azan Heidenhain-Woelke Gabe,10 10 10,Primates
+1166,Otolemur crassicaudatus,M,963,950,10720,sagittal,"12, 15",Cresylvioletviolet Heidenhain-Woelke Bodian Gomori Azan Palmgren Gabe Holzer,10 20 incomplete incomplete incomplete incomplete icomplete incomplete,Primates
+1167,Otolemur crassicaudatus,M,1100,625,10420,coronal,20,Cresylvioletviolet Heidenhain-Woelke,8 16,Primates
+1168,Otolemur crassicaudatus,F,1101,630,9770,horizontal,20,Cresylvioletviolet Heidenhain-Woelke,4 8,Primates
+1169,Otolemur crassicaudatus,M,1123,540,10830,sagittal,20,Cresylvioletviolet Heidenhain-Woelke,5 10,Primates
+1170,Otolemur crassicaudatus,U,1136,445,8780,coronal,20,Cresylvioletviolet,5,Primates
+1171,Otolemur crassicaudatus,M,1173,795,10370,coronal,15,Cresylvioletviolet Heidenhain-Woelke,8 16,Primates
+1172,Otolemur crassicaudatus,M,1175,810,,sagittal,30,Marchi,5,Primates
+1173,Otolemur crassicaudatus,F,1176,720,,horizontal,30,Marchi,5,Primates
+1174,Otolemur crassicaudatus,U,1434,,,sagittal,"10, 20",Cresylvioletviolet Heidenhain-Woelke,10,Primates
+1175,Otolemur crassicaudatus,U,1965/27,,,coronal,"10, 20",Cresylvioletviolet Heidenhain-Woelke Azan Gomori Bodian,10 incomplete incomplete incomplete incomplete,Primates
+1176,Galagoides demidoff,F,A 41,59,3100,sagittal,"10, 20",Cresylvioletviolet Heidenhain-Woelke Perdrau Azan Palmgren,10 10 incomplete incomplete incomplete,Primates
+1177,Galagoides demidoff,M,A 87,54,3300,coronal,20,Cresylvioletviolet Heidenhain-Woelke Perdrau Gomori Soler Gabe,4 4 incomplete incomplete incomplete incomplete,Primates
+1178,Galagoides demidoff,F,102,76.5,3520,coronal,20,Cresylvioletviolet Heidenhain-Woelke Gomori Palmgren,4 8 incomplete incomplete,Primates
+1179,Galagoides demidoff,F,120,102,3300,sagittal,10,Cresylvioletviolet Heidenhain-Woelke Perdrau Azan Palmgren Goldner Gomori,5 10 incomplete incomplete incomplete incomplete incomplete,Primates
+1180,Galagoides demidoff,F,A 125,92,3600,horizontal,20,Cresylvioletviolet Heidenhain-Woelke,10 incomplete,Primates
+1181,Galagoides demidoff,M,3826,87.59999999999999,2910,coronal,20,Cresylvioletviolet Heidenhain-Woelke,4 incomplete,Primates
+1182,Tarsius bancanus,M,1229,130,38,coronal,10,Cresylvioletviolet Heidenhain-Woelke,8 16,Primates
+1183,Tarsius bancanus,F,1333,115,2980,coronal,20,Cresylvioletviolet Heidenhain-Woelke,4 8,Primates
+1184,Tarsius bancanus,U,1963/13,,,coronal,15,Azan,complete,Primates
+1185,Tarsius bancanus,M,1963/20,,2220,coronal,20,Cresylvioletviolet Heidenhain-Woelke,4 8,Primates
+1186,Tarsius bancanus,F,1963/81,116,2050,sagittal,10,Cresylvioletviolet Heidenhain-Woelke Gomori Azan Gabe Perdrau Palmgren,10 10 20 incomplete incomplete incomplete incomplete,Primates
+1187,Tarsius syrichta,M,1032,,2450,sagittal,15,Cresylvioletviolet Heidenhain-Woelke,5 10,Primates
+1188,Tarsius syrichta,F,1033,86.8,4160,coronal,15,Cresylvioletviolet Heidenhain-Woelke,5 10,Primates
+1189,Tarsius syrichta,F,1035,78.34,3220,coronal,15,Hematoxylin Heidenhain-Woelke,5 10,Primates
+1190,Tarsius syrichta,F,1038,97.5,3510,coronal,15,Hematoxylin Heidenhain-Woelke,6 12,Primates
+1191,Callithrix jacchus,U,475,280,7600,coronal,10,Cresylvioletviolet Heidenhain-Woelke Gomori Perdrau Palmgren,10 10 incomplete incomplete incomplete,Primates
+1192,Callithrix jacchus,F,1014,,,coronal,10,Cresylvioletviolet Heidenhain-Woelke,10 20,Primates
+1193,Callithrix jacchus,F,1043,285,7280,coronal,15,Cresylvioletviolet Heidenhain-Woelke,8 16,Primates
+1194,Callithrix jacchus,F,1072,237.8,7510,sagittal,15,Cresylvioletviolet Heidenhain-Woelke,5 10,Primates
+1195,Callithrix jacchus,M,1091,285,8100,coronal,15,Cresylvioletviolet Heidenhain-Woelke,8 16,Primates
+1196,Callithrix jacchus,M,1356,,,sagittal,8,Cresylvioletviolet Heidenhain-Woelke Goldner Azan Gomori Palmgren Tolouidin,incomplete incomplete incomplete incomplete incomplete incomplete incomplete,Primates
+1197,Callithrix jacchus,M,1955,271,7660,coronal,20,Cresylvioletviolet,10,Primates
+1198,Callithrix jacchus,M,2543,350,8050,coronal,20,Cresylvioletviolet Heidenhain-Woelke,10 20,Primates
+1199,Callithrix jacchus,M,2544,371,7340,sagittal horizontal,20,Cresylvioletviolet Heidenhain-Woelke,10 20,Primates
+1200,Callithrix jacchus,M,2545,308,7170,coronal,20,Gallocyanin Heidenhain-Woelke,10 20,Primates
+1201,Callithrix jacchus,,2909,,2340,coronal,20,Cresylvioletviolet Heidenhain-Woelke Hematoxylin-Eosin,10 20 40,Primates
+1202,Cebuella pygmaea,M,1959/23,140,4500,coronal,20,Cresylvioletviolet Heidenhain-Woelke,3 6,Primates
+1203,Cebuella pygmaea,M,1959/25,,,coronal,20,Cresylvioletviolet Heidenhain-Woelke,5 10,Primates
+1204,Cebuella pygmaea,F,1929/27,,,coronal,10,Azan,20,Primates
+1205,Saguinus midas tamarin,F,1182,320,10720,coronal,20,Cresylvioletviolet Heidenhain-Woelke,6 12,Primates
+1206,Saguinus midas tamarin,M,1183,310,10960,coronal,20,Cresylvioletviolet Heidenhain-Woelke,5 10,Primates
+1207,Saguinus midas tamarin,M,1188,335,9940,sagittal,20,Cresylvioletviolet Heidenhain-Woelke,4 8,Primates
+1208,Saguinus midas tamarin,M,1189,415,9520,horizontal,20,Cresylvioletviolet Heidenhain-Woelke,4 8,Primates
+1209,Saguinus oedipus,M,979,347.5,9260,coronal,15,Cresylvioletviolet Heidenhain-Woelke,10 20,Primates
+1210,Saguinus oedipus,M,1220,413,9800,coronal,20,Cresylvioletviolet Heidenhain-Woelke,6 12,Primates
+1211,Saguinus oedipus,F,1222,244,9610,coronal,20,Cresylvioletviolet Heidenhain-Woelke,5 10,Primates
+1212,Callimico goeldii,U,1962/1,,,coronal,20,Cresylvioletviolet Heidenhain-Woelke,6 12,Primates
+1213,Cebus albifrons,U,1200,3100,71000,coronal,20,Cresylvioletviolet Heidenhain-Woelke,10 20,Primates
+1214,Cebus capucinus,M,474,,,coronal,20,Cresylvioletviolet Heidenhain-Woelke,10 20,Primates
+1215,Cebus spec.,U,1347,,,coronal,10,Azan,20,Primates
+1216,Cebus spec.,U,1348,,,sagittal,10,Gomori Gabe Azan Heidenhain-Woelke Goldner Thionin Palmgren,incomplete incomplete incomplete incomplete incomplete incomplete incomplete,Primates
+1217,Cebus spec.,F,1960/62,1215,,coronal,"15, 20",Cresylvioletviolet Heidenhain-Woelke,"15,20 15,20",Primates
+1218,Aotus trivirgatus,U,387,,,coronal,"10, 20",Cresylvioletviolet,"5,10",Primates
+1219,Aotus trivirgatus,F,1076,560,16500,coronal,15,Cresylvioletviolet Heidenhain-Woelke,10 20,Primates
+1220,Aotus trivirgatus,U,1084,520,16170,coronal,15,Cresylvioletviolet Heidenhain-Woelke,8 16,Primates
+1221,Aotus trivirgatus,U,1350,,,sagittal,8,Cresylvioletviolet Heidenhain-Woelke Azan Gomori v.Gieson Goldner Methylen-Eosin,incomplete incomplete incomplete incomplete incomplete incomplete incomplete,Primates
+1222,Aotus trivirgatus,U,1351,,,coronal,10,Cresylvioletviolet Gomori Azan Thionin,incomplete incomplete incomplete incomplete,Primates
+1223,Aotus trivirgatus,U,1418,,,coronal,10,Azan,10,Primates
+1224,Aotus trivirgatus,M,1960/112,,,coronal,10,Cresylvioletviolet Heidenhain-Woelke Perdrau Gomori Gabe,50 25 incomplete incomplete incomplete,Primates
+1225,Callicebus moloch,M,1181,670,17650,coronal,20,Cresylvioletviolet Heidenhain-Woelke,6 12,Primates
+1226,Callicebus moloch,F,1190,592,13130,coronal,20,Cresylvioletviolet Heidenhain-Woelke,6 12,Primates
+1227,Saimiri sciureus,M,1039,406.7,20420,coronal,15,Cresylvioletviolet Heidenhain-Woelke,10 20,Primates
+1228,Saimiri sciureus,F,1045,327,22180,sagittal,15,Cresylvioletviolet Heidenhain-Woelke,8 16,Primates
+1229,Saimiri sciureus,M,1085,630,24800,coronal,20,Cresylvioletviolet Heidenhain-Woelke,8 17,Primates
+1230,Saimiri sciureus,M,1103,544,21210,sagittal,20,Cresylvioletviolet Heidenhain-Woelke,6 12,Primates
+1231,Saimiri sciureus,M,1155,560,24120,horizontal,20,Cresylvioletviolet Heidenhain-Woelke,5 10,Primates
+1232,Saimiri sciureus,U,1432,,,coronal,10,Gomori,20,Primates
+1233,Saimiri sciureus,F,1433,,,sagittal,10,"Gomori, Goldner",incomplete incomplete,Primates
+1234,Pithecia monachus,M,1180,1540,34000,coronal,20,Cresylvioletviolet Heidenhain-Woelke,8 16,Primates
+1235,Pithecia monachus,M,1194,510,21730,coronal,20,Cresylvioletviolet Heidenhain-Woelke,4 8,Primates
+1236,Alouatta seniculus,F,1170,,43600,sagittal,20,Cresylvioletviolet Heidenhain-Woelke,8 16,Primates
+1237,Alouatta seniculus,M,1172,,43730,coronal,20,Cresylvioletviolet Heidenhain-Woelke,10 20,Primates
+1238,Alouatta seniculus,M,1184,3560,46800,coronal,20,Cresylvioletviolet Heidenhain-Woelke,10 20,Primates
+1239,Alouatta seniculus,M,1960/51,,,sagittal,10,Eisenalaun Cresylvioletviolet Azan Perdrau Goldner Gomori Palmgren,incomplete incomplete incomplete incomplete incomplete incomplete incomplete,Primates
+1240,Alouatta seniculus,F,1961/2,,,sagittal,10,Cresylvioletviolet Gomori Perdrau Palmgren Goldner Gabe,incomplete incomplete incomplete incomplete incomplete incomplete,Primates
+1241,Ateles geoffroyi,M,1000,7400,1064,coronal,20,Cresylvioletviolet Heidenhain-Woelke,10 20,Primates
+1242,Ateles spec.,,1086,1635,870,saggital,20,Cresylvioletviolet Heidenhain-Woelke,10 20,Primates
+1243,Ateles spec.,U,1344,,,sagittal,"8, 10",Cresylviolet Azan Gomori,incomplete incomplete incomplete,Primates
+1244,Ateles spec.,,1420,,,,12,Gomori Bodian Azan Heidenhain-Woelke,incomplete incomplete incomplete incomplete,Primates
+1245,Lagothrix lagothricha,U,1142,4000,97400,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Primates
+1246,Lagothrix lagothricha,U,1164,4190,1023,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Primates
+1247,Lagothrix lagothricha,F,1571,4010,91330,coronal,20,Cresylviolet Heidenhain-Woelke,12 24,Primates
+1248,Lagothrix lagothricha,M,1961/29,,,coronal,12,Cresylviolet Gomori Heidenhain-Woelke Klüver-Barrera Gabe Azan Goldner Perdrau,50 incomplete incomplete incomplete incomplete incomplete incomplete incomplete,Primates
+1249,Macaca fascicularis,U,1436,,,sagittal,8,Azan Gomori Gabe,incomplete incomplete incomplete,Primates
+1250,Macaca fascicularis,U,1437,,,sagittal,8,Azan Gabe,incomplete incomplete,Primates
+1251,Macaca fascicularis,U,1960/64,,,sagittal,8,Azan Gabe Goldner,incomplete incomplete incomplete,Primates
+1252,Macaca mulatta,U,476,,78000,coronal,20,Cresylviolet Heidenhain-Woelke,10 incomplete,Primates
+1253,Macaca mulatta,U,1104,2350,85400,coronal,20,Cresylviolet Heidenhain-Woelke,12 24,Primates
+1254,Macaca mulatta,U,1345,,,horizontal,8,Goldner Gabe Palmgren Thionin Gomori Azan Heidenhain-Woelke Perdrau,incomplete incomplete incomplete incomplete incomplete incomplete incomplete incomplete,Primates
+1255,Macaca mulatta,U,1357,,,coronal,8,Goldner Gabe Palmgren Thionin Gomori Azan Heidenhain-Woelke Perdrau,incomplete incomplete incomplete incomplete incomplete incomplete incomplete incomplete,Primates
+1256,Macaca mulatta,F,1358,,,sagittal,10,Goldner Gabe Palmgren Thionin Gomori Azan Heidenhain-Woelke Perdrau,incomplete incomplete incomplete incomplete incomplete incomplete incomplete incomplete,Primates
+1257,Cercocebus albigena,F,A 99,6250,95000,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Primates
+1258,Cercocebus albigena,F,A 220,6500,95500,sagittal,20,Cresylviolet Heidenhain-Woelke,10 20,Primates
+1259,Cercocebus albigena,M,A 242,9260,110500,coronal,20,Cresylviolet Heidenhain-Woelke,12 24,Primates
+1260,Cercocebus torquatus,M,1960/106,,,sagittal,8,Azan Goldner Gomori,incomplete incomplete incomplete,Primates
+1261,Papio anubis,F,A 97,21000,191000,coronal,20,Cresylviolet,10,Primates
+1262,Papio anubis,F,A 176,12000,201000,sagittal,20,Cresylviolet Heidenhain-Woelke,20 40,Primates
+1263,Papio anubis,M,A 251,35000,222000,coronal,20,Cresylviolet Heidenhain-Woelke,15 30,Primates
+1264,Cercopithecus ascanius,F,A 43,3400,56600,horizontal,20,Cresylviolet Heidenhain-Woelke,10 20,Primates
+1265,Cercopithecus ascanius,F,A 58,3000,59400,coronal,20,Cresylviolet Heidenhain-Woelke Azan Gomori,10 20 incomplete incomplete,Primates
+1266,Cercopithecus ascanius,F,A 219,3300,61500,coronal,10 20,Cresylviolet Heidenhain-Woelke,10 20,Primates
+1267,Cercopithecus ascanius,M,A 359,2800,59200,sagittal,20,Cresylviolet Heidenhain-Woelke Azan Gomori Perdrau Palmgren,10 20 incomplete incomplete incomplete incomplete,Primates
+1268,Cercopithecus mitis,M,A 261,7000,75000,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Primates
+1269,Cercopithecus spec.,,1359,,,sagittal,6.8,Gomori,incomplete,Primates
+1270,Miopithecus talapoin,M,1171,1380,41100,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Primates
+1271,Miopithecus talapoin,F,1201,741,39700,coronal,20,Cresylviolet Heidenhain-Woelke,8 16,Primates
+1272,Miopithecus talapoin,F,1202,630,35500,sagittal,20,Cresylviolet Heidenhain-Woelke,6 12,Primates
+1273,Erythrocebus patas,F,1340,5800,94200,coronal,20,Cresylviolet Heidenhain-Woelke,12 24,Primates
+1274,Erythrocebus patas,F,1341,6700,97100,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Primates
+1275,Colobus badius,F,A 213,7500,78700,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Primates
+1276,Colobus badius,F,A 216,8250,75000,coronal,15,Cresylviolet Heidenhain-Woelke,10 20,Primates
+1277,Colobus badius,F,A 228,7800,90000,sagittal,15,Cresylviolet Heidenhain-Woelke,10 20,Primates
+1278,Pygathrix nemacus,F,1364,3200,69000,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Primates
+1279,Nasalis larvatus,F,1365,,64250,coronal,20,Hematoxylin Heidenhain-Woelke,12 24,Primates
+1280,Hylobates lar,M,1203,5930,101900,coronal,20,Cresylviolet Heidenhain-Woelke,8 16,Primates
+1281,Pan troglodytes,M,A 269,18400,345500,horizontal,20,Cresylviolet Heidenhain-Woelke,10 20,Primates
+1282,Pan troglodytes,F,A 278,43500,420000,sagittal,20,Cresylviolet Heidenhain-Woelke,4 4,Primates
+1283,Pan troglodytes,M,A 280,49000,461000,coronal,20,Cresylviolet Heidenhain-Woelke,20 40,Primates
+1284,Pan troglodytes,F,1961/4,,,sagittal,"12, 15",Klüver-Barera Gomori Azan Perdrau Goldner,incomplete incomplete incomplete incomplete incomplete,Primates
+1285,Pan troglodytes,F,1964/9,,,sagittal,12,Cresylviolet Azan Gomori Bodian,incomplete incomplete incomplete incomplete,Primates
+1286,Gorilla gorilla no protokoll,,1965/58,,,,12,Azan Gabe Heidenhain-Woelke,2 incomplete 2,Primates
+1287,Gorilla gorilla,M,A 374,168000,542000,sagittal,20,Cresylviolet Gomori Palmgren Perdrau,20 incomplete incomplete incomplete,Primates
+1288,Gorilla gorilla,M,A 375,22000,450000,coronal,20,Cresylviolet Heidenhain-Woelke,20 40,Primates
+1289,Gorilla gorilla,U,1001,,429400,coronal,20,Cresylviolet Heidenhain-Woelke,20 40,Primates
+1290,Homo sapiens,U,A 56,,,coronal,20,Cresylviolet Heidenhain-Woelke,irregular irregular,Primates
+1291,Homo sapiens,U,A 58,,,coronal,20,Cresylviolet Heidenhain-Woelke,irregular irregular,Primates
+1292,Homo sapiens,U,A 62,,,coronal,20,Cresylviolet Heidenhain-Woelke,irregular irregular,Primates
+1293,Homo sapiens,U,A 64,,,coronal,20,Cresylviolet,irregular,Primates
+1294,Homo sapiens,M,1044,,,coronal,20,Cresylviolet Heidenhain-Woelke,20 40,Primates
+1295,Homo sapiens,F,1226,3300,122500,coronal,20,Cresylviolet Heidenhain-Woelke,20 40,Primates
+1296,Homo Allocortex,U,---,,,coronal,20,Cresylviolet Heidenhain-Woelke,10 10,Primates
+1297,Canis lupus f.d.,U,8,,,coronal,?,Cresylviolet,10,Miscellaneous species
+1298,Canis lupus f.d.,U,9,,,coronal,?,Cresylviolet,10,Miscellaneous species
+1299,Felis silvestris f.d.,F,971,2520,28850,coronal,15,Cresylviolet Heidenhain-Woelke,10 20,Miscellaneous species
+1300,Felis silvestris f.d.,M,974,2400,29370,sagittal,15,Cresylviolet Heidenhain-Woelke,10 20,Miscellaneous species
+1301,Felis silvestris f.d.,M,975,3200,29050,sagittal,15,Cresylviolet,10,Miscellaneous species
+1302,Felis silvestris f.d.,F,976,3220,31250,coronal,15,Cresylviolet Heidenhain-Woelke,10 20,Miscellaneous species
+1303,Felis silvestris f.d.,M,977,3350,27100,horizontal,15,Cresylviolet Heidenhain-Woelke,10 20,Miscellaneous species
+1304,Felis silvestris f.d.,M,980,3020,31800,sagittal,15,Cresylviolet Heidenhain-Woelke,10 20,Miscellaneous species
+1305,Loxodonta africana,U,II,adult,,coronal/sag.,20,Cresylviolet Heidenhain-Woelke,50 50,Miscellaneous species
+1306,Dendrohyrax arboreus,M,A 186,2250,18450,sagittal,15,Cresylviolet Heidenhain-Woelke,6 12,Miscellaneous species
+1307,Dendrohyrax arboreus,M,A 189,2250,18780,coronal,15,Cresylviolet Heidenhain-Woelke,12 24,Miscellaneous species
+1308,Dendrohyrax arboreus,M,A 193,1550,19050,sagittal,15,Cresylviolet Heidenhain-Woelke,6 12,Miscellaneous species
+1309,Dendrohyrax arboreus,M,A 199,,17400,coronal,15,Cresylviolet Heidenhain-Woelke,10 20,Miscellaneous species
+1310,Manis tricuspis,F,A 92,1460,11600,sagittal,10,Cresylviolet Heidenhain-Woelke Gomori Azan Rogers Palmgren,10 20 incomplete incomplete incomplete incomplete,Miscellaneous species
+1311,Manis tricuspis,F,A 103,1500,11400,coronal,10,Cresylviolet Heidenhain-Woelke,10 20,Miscellaneous species
+1312,Manis tricuspis,M,A 230,2000,12500,coronal,10,Cresylviolet Heidenhain-Woelke Klüver-Barera,10 20 incomplete,Miscellaneous species
+1313,Manis tricuspis,M,A 231,1000,10000,horizontal,10,Cresylviolet Heidenhain-Woelke,8 15,Miscellaneous species
+1314,Sciurus carolinensis,,1963/51,,,coronal,10,Klüver-Barrera,20,Miscellaneous species
+1315,Sciurus carolinensis,,1963/51 I,,,horizontal,10,Klüver-Barrera,20,Miscellaneous species
+1316,Sciurus carolinensis,F,1963/57,,,sagittal,10,Cresylviolet Heidenhain-Woelke Bielschowsky,20 20 incomplete,Miscellaneous species
+1317,Sciurus vulgaris,M,101,,5600,coronal,20,Cresylviolet,5,Miscellaneous species
+1318,Sciurus vulgaris,M,102,,5700,coronal,20,Cresylviolet,5,Miscellaneous species
+1319,Mesocricetus auratus,M,99,,1030,coronal,20,Cresylviolet,5,Miscellaneous species
+1320,Clethrionomys glareolus,F,296,16,540,coronal,20,Cresylviolet,2,Miscellaneous species
+1321,Apodemus flavicollis,F,300,,770,coronal,20,Cresylviolet,2,Miscellaneous species
+1322,Rattus norvegicus f.d.,M,1792,203.3,1650,coronal,20,Hematoxylin Heidenhain-Woelke,10 20,Miscellaneous species
+1323,Rattus norvegicus f.d.,M,1793,224.1,1660,coronal,20,Hematoxylin Heidenhain-Woelke,6 12,Miscellaneous species
+1324,Rattus norvegicus f.d.,M,1794,219.5,1770,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Miscellaneous species
+1325,Rattus norvegicus f.d.,M,1796,216,1690,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Miscellaneous species
+1326,Rattus norvegicus f.d.,M,1800,259.3,1820,coronal,20,Hematoxylin Heidenhain-Woelke,6 12,Miscellaneous species
+1327,Rattus norvegicus f.d.,M,1801,225.4,1660,coronal,20,Hematoxylin Heidenhain-Woelke,6 12,Miscellaneous species
+1328,Rattus norvegicus f.d.,M,1802,259.3,1830,coronal,20,Hematoxylin Heidenhain-Woelke,6 12,Miscellaneous species
+1329,Rattus norvegicus f.d.,F,1805,200.3,1810,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Miscellaneous species
+1330,Rattus norvegicus f.d.,F,1806,198.6,1698,coronal,20,Cresylviolet Heidenhain-Woelke,5 10,Miscellaneous species
+1331,Rattus norvegicus f.d.,F,1807,190.1,1680,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Miscellaneous species
+1332,Rattus norvegicus f.d.,F,1809,202.4,1670,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Miscellaneous species
+1333,Rattus norvegicus f.d.,F,1811,168.9,1510,coronal,20,Gallocyanin Heidenhain-Woelke,10 20,Miscellaneous species
+1334,Rattus norvegicus f.d.,F,1812,173.8,1780,coronal,20,Hematoxylin Heidenhain-Woelke,10 20,Miscellaneous species
+1335,Rattus norvegicus f.d.,F,1813,168.6,1640,coronal,20,Gallocyanin Heidenhain-Woelke,10 20,Miscellaneous species
+1336,Rattus norvegicus f.d.,F,1814,193.9,1700,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Miscellaneous species
+1337,Rattus norvegicus f.d.,F,1815,145.5,1520,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Miscellaneous species
+1338,Rattus norvegicus f.d.,M,1832,298,2040,coronal,20,Hematoxylin Heidenhain-Woelke,10 20,Miscellaneous species
+1339,Rattus norvegicus f.d.,F,1833,183.9,1760,coronal,20,Hematoxylin Heidenhain-Woelke,10 20,Miscellaneous species
+1340,Rattus norvegicus f.d.,F,1834,191.1,1810,coronal,20,Hematoxylin Heidenhain-Woelke,10 20,Miscellaneous species
+1341,Rattus norvegicus var.alba,F,2564,247,1889,coronal,20,Cresylviolet,10,Miscellaneous species
+1342,Uromys caudimaculatus,M,N 154,800,5888,coronal,30,Thionin,4,Miscellaneous species
+1343,Colomys goslingi,M,3954,57.7,1351,coronal,20,Cresylviolet,4,Miscellaneous species
+1344,Hydromys chrysogaster,M,N 73,748,4034,coronal,30,Thionin,4,Miscellaneous species
+1345,Muscardinus avellanarius,U,98,,450,coronal,20,Cresylviolet,5,Miscellaneous species
+1346,Cavia cobaya f.d.,U,388,,3780,coronal,20,Cresylviolet Heidenhain-Woelke,5 incomplete,Miscellaneous species
+1347,Cavia cobaya f.d.,F,403,,,coronal,20,Heidenhain-Woelke,incomplete,Miscellaneous species
+1348,Oryctolagus cuniculus f.d.,U,319,,7800,coronal,20,Cresylviolet Gomori,5 20,Miscellaneous species
+1349,Oryctolagus cuniculus f.d.,F,960,1830,9320,sagittal,20,Cresylviolet,5,Miscellaneous species
+1350,Oryctolagus cuniculus f.d.,M,961,2360,11160,coronal,20,Cresylviolet Heidenhain-Woelke,10 20,Miscellaneous species
+1351,Oryctolagus cuniculus f.d.,U,1439,,,sagittal,20,Azan Perdrau Palmgren Tuscheinjektion,incomplete incomplete incomplete incomplete,Miscellaneous species
+1352,Elephantulus fuscipes,M,300,54.5,1330,horizontal,10,Cresylviolet Heidenhain-Woelke,4 8,Miscellaneous species
+1353,Elephantulus fuscipes,M,301,52.5,1330,coronal,10,Cresylviolet Heidenhain-Woelke,6 12,Miscellaneous species
+1354,Elephantulus fuscipes,M,302,52.5,1260,coronal,10,Cresylviolet,5,Miscellaneous species
+1355,Elephantulus fuscipes,F,304,60.5,1400,sagittal,10,Cresylviolet Heidenhain-Woelke Bodian Azan Gomori Perdrau,10 incomplete incomplete incomplete incomplete incomplete,Miscellaneous species
+1356,Elephantulus fuscipes,F,307,35.5,1100,coronal,10,Cresylviolet Heidenhain-Woelke Gomori Palmgren Azan,5 10 incomplete incomplete incomplete,Miscellaneous species
+1357,Elephantulus fuscipes,M,309,52,1210,sagittal,10,Cresylviolet Heidenhain-Woelke Gomori Palmgren Azan Bodian,10 incomplete incomplete incomplete incomplete incomplete,Miscellaneous species
+1358,Rhynchocyon cirnei,F,257,525,5700,coronal,10,Cresylviolet Heidenhain-Woelke,10 20,Miscellaneous species
+1359,Rhynchocyon cirnei,F,259,500,6200,coronal,10,Cresylviolet Heidenhain-Woelke Gomori Palmgren,10 20 incomplete incomplete,Miscellaneous species
+1360,Rhynchocyon cirnei,M,260,493,6500,horizontal,10,Cresylviolet Heidenhain-Woelke,5 10,Miscellaneous species
+1361,Rhynchocyon cirnei,F,263,497,6400,sagittal,10,Cresylviolet Heidenhain-Woelke Gomori Perdrau Azan Bodian Palmgren,10 incomplete incomplete incomplete incomplete incomplete incomplete,Miscellaneous species
+1362,Rhynchocyon cirnei,F,277,485,5500,coronal,10,Cresylviolet,20,Miscellaneous species
+1363,Rhynchocyon cirnei,F,282,504,6000,sagittal,10,Cresylviolet Heidenhain-Woelke Gomori Bodian Azan Perdrau Palmgren,10 incomplete incomplete incomplete incomplete incomplete incomplete,Miscellaneous species

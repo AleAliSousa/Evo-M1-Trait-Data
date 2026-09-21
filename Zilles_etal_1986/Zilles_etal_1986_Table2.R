@@ -37,8 +37,15 @@ dataset_root <- local({
 })
 
 snapshot_file <- "Zilles_etal_1986_Table2_snapshot.xlsx"
-raw <- read_excel(snapshot_file, sheet = "Table2", skip = 2, col_names = TRUE, col_types = "text") %>%
-  filter(!is.na(Species), nzchar(str_squish(Species)))
+## .name_repair = "minimal": Table 2's header row repeats O/G/I across the four cortical
+## areas (Species, O,I, O,I, O,G,I, O,G,I) on purpose -- readxl's default
+## .name_repair = "unique" would rename the duplicates to O...2, I...3, etc., which then never
+## matches `expected` below. Keep the literal duplicate names so the identical-header check works.
+## Read with the literal duplicate header names first (before any dplyr verb -- dplyr::filter()
+## and friends refuse to operate on a data frame with duplicate names), validate them, then
+## rename to unique columns. Only after that is it safe to pipe into dplyr.
+raw <- read_excel(snapshot_file, sheet = "Table2", skip = 2, col_names = TRUE, col_types = "text",
+                   .name_repair = "minimal")
 
 expected <- c("Species", "O", "I", "O", "I", "O", "G", "I", "O", "G", "I")
 if (!identical(names(raw), expected)) {
@@ -46,7 +53,12 @@ if (!identical(names(raw), expected)) {
 }
 
 names(raw) <- c("Species", "area29_outer_main_GLI", "area29_inner_main_GLI", "area30_outer_main_GLI", "area30_inner_main_GLI", "area23_outer_main_GLI", "area23_granular_GLI", "area23_inner_main_GLI", "area31_outer_main_GLI", "area31_granular_GLI", "area31_inner_main_GLI")
+## The sheet has a trailing blank row and a footnote row ("\u00b9 Abbreviations as in Table 1")
+## below the 17 data rows; the footnote's Species cell is non-blank text, so nzchar(Species)
+## alone does not exclude it. Every genuine data row has a numeric area29_outer_main_GLI; the
+## blank and footnote rows do not, so require that column too.
 final.dataframe <- raw %>%
+  filter(!is.na(Species), nzchar(str_squish(Species)), !is.na(area29_outer_main_GLI)) %>%
   mutate(Species = str_squish(Species), across(-Species, parse_double))
 
 if (nrow(final.dataframe) != 17L) stop("Expected 17 species rows; found ", nrow(final.dataframe), ".", call. = FALSE)

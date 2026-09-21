@@ -30,6 +30,15 @@ cannot be split into modern species without fabricating its composition.
 | `kaas_young_collins_provenance_audit.csv` | Kaas-team Young/Collins/Turner specimen overlaps and merge treatment |
 | `fossil_specimen_crosswalk.csv` | published Kochiyama/Weaver fossil aliases, explicitly typed as fossils |
 | `fossil_specimen_cerebellum_comparison.csv` | published fossil method-offset comparison |
+| `Disco_gibbon_specimen_note.md` | public account of the gibbon Disco / GPZ-5542 one-individual-many-labels case, with the MRI and Semendeferi addendum |
+| `Disco_study_list_public.csv` | the studies that used Disco, public handles only |
+| `Pongo_specimen_note.md` | public-source account of the pygmaeus→abelii split; the catalog-dependent evidence note is restricted |
+| `EarlyHomoSapiens_fossil_vs_extant_specimen_note.md` | why named fossils stay specimens but remain filterable from extant reference samples |
+| `Kaas_Young_Collins_specimen_overlap_note.md` | public evidence linking Young 2013 M1 rows to Collins/Young/Turner cases |
+
+The four public specimen notes above were consolidated here from the former
+`____Collections and Specimen notes/` folder, which no longer exists; each now
+sits beside the provenance audit it explains.
 
 Restricted companions live under
 `Evo-M1-Trait-Data-restricted/specimen_registry/`:
@@ -121,3 +130,57 @@ See `kaas_young_collins_provenance_audit.csv` and the corresponding public speci
 4. For an old broad pooled label, add or reference a non-decomposable row in
    `taxon_concept_registry.csv` rather than pretending it is one modern species.
 5. Write a source-appropriate note and audit where the value enters the merge.
+
+## File roles
+
+Every file here is one of three things, and the distinction is load-bearing:
+a **source** is hand-authored here and is the authority for its content; an
+**output** is the public half of work done in
+`Evo-M1-Trait-Data-restricted/specimen_registry/` and should be regenerated
+there rather than edited here; a **contract** defines how consumers read the
+rest. Machinery that combines the public and restricted layers does not live
+here at all — it lives restricted-side, because only that side can see both.
+
+| file | role |
+|---|---|
+| `specimen_crosswalk.csv` | source |
+| `fossil_specimen_crosswalk.csv` | source |
+| `taxon_concept_registry.csv` | source |
+| `specimen_source_registry.csv` | source (also the boundary record) |
+| `specimen_external_links.csv` | source |
+| `via_data_source_registry.csv` | source — **no script reads it**; wire or retire |
+| `SCHEMA.md` | contract |
+| `SPECIMEN_INFORMATION_BOUNDARY.md` | contract |
+| `IDENTIFIER_MATCHING_RULES.md` | contract |
+| `README.md` | contract |
+| `split_manifest_2026-08-19.csv` | historical record |
+| `IDENTIFIER_JOIN_PASS_METHOD.md` | output (method half; results are restricted) |
+| `audit/*.csv` | output (public rows of the restricted join pass) |
+| `Disco_gibbon_specimen_note.md`, `Disco_study_list_public.csv` | output (public half; restricted half in `cases/hylobates/`) |
+| `Pongo_specimen_note.md` | output (public half; restricted half in `cases/pongo/`) |
+| `EarlyHomoSapiens_fossil_vs_extant_specimen_note.md` | output (no restricted half — fossils carry none) |
+| `Kaas_Young_Collins_specimen_overlap_note.md` | output (no restricted half — published evidence) |
+| `early_homo_sapiens_provenance_audit.csv`, `kaas_young_collins_provenance_audit.csv`, `pongo_provenance_audit.csv`, `fossil_specimen_cerebellum_comparison.csv` | output |
+
+The crosswalk is a **source, not a generated view**, and should stay one: 99 of
+its 134 rows concern specimens with no restricted counterpart, and for 13
+specimens it holds a published `sex` value the restricted layer does not have.
+Regenerating it from the restricted side would delete those.
+
+`validate_specimen_layers.R` moved to
+`Evo-M1-Trait-Data-restricted/specimen_registry/` on 2026-09-20: it validates
+both layers together and its only caller is `build_combined_specimen_registry.R`.
+
+## Collection vocabulary
+
+`_keys/collection_registry.csv` is **active** as of 2026-09-20 — it is no longer
+documentation. `specimen_registry/normalise_collections.R` reads it with both
+specimen layers and writes `specimen_registry/derived/collection_group_map.csv`,
+mapping all 29 attested collection strings to 15 groups with zero unmapped. It
+**fails** rather than warns when a string is not covered.
+
+The attested `collection` text is never rewritten — `collection_group` is a
+companion for joining and `collection_qualifier` keeps the rest, because
+"ex Yerkes" and "later NMHM/AFIP" are information a controlled vocabulary would
+destroy. Two rows may be treated as the same collection only when their
+`collection_group` sets intersect; `UNKNOWN` never matches `UNKNOWN`.

@@ -1,0 +1,5 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species,as printed,,Species,,primary,Primates,Bush_Allman_2004_b,,
+retinal_ganglion_cell_count,retinal ganglion cell count,RetinalGanglionCells,Count,,primary,,Bush_Allman_2004_b,count compiled from cited literature,
+reference,reference(s) printed for the count,,Reference,,primary,,Bush_Allman_2004_b,semicolon-separated where multiple sources are printed,
+source,source id,,Source,,primary,,Bush_Allman_2004_b,,

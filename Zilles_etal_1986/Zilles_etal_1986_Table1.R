@@ -37,8 +37,15 @@ dataset_root <- local({
 })
 
 snapshot_file <- "Zilles_etal_1986_Table1_snapshot.xlsx"
-raw <- read_excel(snapshot_file, sheet = "Table1", skip = 2, col_names = TRUE, col_types = "text") %>%
-  filter(!is.na(Species), nzchar(str_squish(Species)))
+## .name_repair = "minimal": Table 1's header row repeats M/O/I/G across the four cortical
+## areas (Species, M,O,I, M,O,I, M,O,G,I, M,O,G,I) on purpose -- readxl's default
+## .name_repair = "unique" would rename the duplicates to M...2, O...3, etc., which then never
+## matches `expected` below. Keep the literal duplicate names so the identical-header check works.
+## Read with the literal duplicate header names first (before any dplyr verb -- dplyr::filter()
+## and friends refuse to operate on a data frame with duplicate names), validate them, then
+## rename to unique columns. Only after that is it safe to pipe into dplyr.
+raw <- read_excel(snapshot_file, sheet = "Table1", skip = 2, col_names = TRUE, col_types = "text",
+                   .name_repair = "minimal")
 
 expected <- c("Species", "M", "O", "I", "M", "O", "I", "M", "O", "G", "I", "M", "O", "G", "I")
 if (!identical(names(raw), expected)) {
@@ -46,7 +53,12 @@ if (!identical(names(raw), expected)) {
 }
 
 names(raw) <- c("Species", "area29_molecular_pct", "area29_outer_main_pct", "area29_inner_main_pct", "area30_molecular_pct", "area30_outer_main_pct", "area30_inner_main_pct", "area23_molecular_pct", "area23_outer_main_pct", "area23_granular_pct", "area23_inner_main_pct", "area31_molecular_pct", "area31_outer_main_pct", "area31_granular_pct", "area31_inner_main_pct")
+## The sheet has a trailing blank row and a footnote row ("\u00b9 Abbreviations: ...") below the
+## 17 data rows; the footnote's Species cell is non-blank text, so nzchar(Species) alone does not
+## exclude it. Every genuine data row has a numeric area29_molecular_pct; the blank and footnote
+## rows do not, so require that column too.
 final.dataframe <- raw %>%
+  filter(!is.na(Species), nzchar(str_squish(Species)), !is.na(area29_molecular_pct)) %>%
   mutate(Species = str_squish(Species), across(-Species, parse_double))
 
 if (nrow(final.dataframe) != 17L) stop("Expected 17 species rows; found ", nrow(final.dataframe), ".", call. = FALSE)

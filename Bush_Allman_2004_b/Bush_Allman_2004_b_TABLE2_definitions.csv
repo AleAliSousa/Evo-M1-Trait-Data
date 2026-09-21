@@ -1,0 +1,7 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species,as printed,,Species,,primary,Primates,Bush_Allman_2004_b,,
+LGN_magnocellular_neuron_count,magnocellular LGN neuron count,LGN magnocellular layer,Count,,primary,,Bush_Allman_2004_b,one individual per species,
+LGN_magnocellular_coefficient_of_error,coefficient of error for magnocellular LGN neuron count,LGN magnocellular layer,CoefficientOfError,,primary,,Bush_Allman_2004_b,optical fractionator estimate,
+LGN_parvocellular_neuron_count,parvocellular LGN neuron count,LGN parvocellular layer,Count,,primary,,Bush_Allman_2004_b,one individual per species,
+LGN_parvocellular_coefficient_of_error,coefficient of error for parvocellular LGN neuron count,LGN parvocellular layer,CoefficientOfError,,primary,,Bush_Allman_2004_b,optical fractionator estimate,
+source,source id,,Source,,primary,,Bush_Allman_2004_b,,

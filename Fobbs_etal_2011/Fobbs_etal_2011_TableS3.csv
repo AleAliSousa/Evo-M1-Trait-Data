@@ -1,0 +1,177 @@
+source_row,animal_number,common_name,scientific_name,plane_of_section,total_number_of_sections,slide_size
+1,64008,Spotted Catshark,Brachaelurus waddi,Coronal,1331,1x3
+2,73283,Tilapia,Tilapia mossambica,Horizontal,104,2x3
+3,75202,Trout *1s,Salmo gairdneri,Coronal,384,1x3
+4,75209,Trout *1s,Salmo gairdneri,Coronal,464,1x3
+5,75294,Trout *1s,Salmo gairdneri,Sagittal,59,2x3
+6,75292,Trout *1s,Salmo gairdneri,Horizontal,54,2x3
+7,75291,"Trout *IC,1s",Salmo gairdneri,Horizontal,164,2x3
+8,66204,"Frog *IC,1s",Rana pipiens,Coronal,424,1x3
+9,73288,Frog *1s,Rana pipiens,Coronal,200,1x3
+10,73825,Frog,Rana pipiens,Horizontal,130,2x3
+11,64024,"Python, Diamond-back",Morelia spilotes,Coronal,879,2x3
+12,71255,"Turtle, Painted",Chrysemys picta,Coronal,485,2x3
+13,73286,"Turtle, Painted",Chrysemys picta,Horizontal,250,2x3
+14,75203,"Lizard, Anolis",Anolis carolinensis,Coronal,579,1x3
+15,64006s,Emu,Dromaius novae-hollandiae,Coronal,612,2x3
+16,64006h,Emu,Dromaius novae-hollandiae,Horizontal,746,2x3
+17,66206,Bobwhite Quail,Colinus virginianus,Coronal,689,1x3
+18,69230,Chicken,Gallus domesticus,Coronal,599,2x3
+19,65054c,Echidna,Tachyglossus aculeatus,Coronal,1360,2x3
+20,65054s,Echidna,Tachyglossus aculeatus,Sagittal,580,2x3
+21,73004,Platypus,Ornithorhynchus anatinus,Coronal,940,2x3
+22,73003s,Platypus,Ornithorhynchus anatinus,Sagittal,324,2x3
+23,73003h,Platypus,Ornithorhynchus anatinus,Horizontal,404,2x3
+24,66070,Woolly Opossum,Caluromys lanatus,Coronal,1279,2x3
+25,66074,Woolly Opossum,Caluromys lanatus,Sagittal,530,2x3
+26,66071,Woolly Opossum,Caluromys lanatus,Horizontal,458,2x3
+27,65069s,Gamba,Didelphis albiventris,Sagittal,230,2x3
+28,65069h,Gamba,Didelphis albiventris,Horizontal,579,2x3
+29,66073,"Opossum, Virginia",Didelphis virginiana,Horizontal,591,2x3
+30,66075,"Opossum, Virginia",Didelphis virginiana,Coronal,2071,2x3
+31,69501,"Opossum, Virginia",Didelphis virginiana,Sagttal,765,2x3
+32,70096,Monito del monte,Dromiciops gliroides,Sagittal,389,2x3
+33,65067,Cuica,Marmosa murina,Coronal,561,2x3
+34,70092c,Cuica,Thylamys velutinus,Coronal,1049,2x3
+35,70092s,Cuica,Thylamys velutinus,Sagittal,303,2x3
+36,66076,Four-eyed Opossum,Philander opossum,Coronal,1061,2x3
+37,66077,Four-eyed Opossum,Philander opossum,Coronal,508,2x3
+38,65060,Native Cat,Dasyurus viverrinus,Coronal,1200,2x3
+39,65062,Native Cat,Dasyurus viverrinus,Sagittal,601,2x3
+40,65061,Native Cat,Dasyurus viverrinus,Horizontal,547,2x3
+41,65065,Tasmanian Devil,Sarcophilus laniarus,Coronal,1821,2x3
+42,65063s,Tasmanian Devil,Sarcophilus laniarus,Sagittal,364,2x3
+43,65063h,Tasmanian Devil,Sarcophilus laniarus,Horizontal,706,2x3
+44,65047,Marsupial Mouse,Antechinus flavipes,Coronal,565,2x3
+45,65046,Marsupial Mouse,Antechinus flavipes,Sagittal,350,2x3
+46,65048,Marsupial Mouse,Antechinus flavipes,Horizontal,237,2x3
+47,64017c,Common Dunnart,Sminthopsis murina,Coronal,504,2x3
+48,64017s,Common Dunnart,Sminthopsis murina,Sagittal,182,2x3
+49,64031,"Bandicoot, Broad-nosed",Isoodon obesulus,Coronal,1152,2x3
+50,65066,"Bandicoot, Broad-nosed",Isoodon obesulus,Sagittal,561,2x3
+51,64032,"Bandicoot, Broad-nosed",Isoodon obesulus,Horizontal,415,2x3
+52,65043,"Bandicoot, Long-nosed",Perameles nasuta,Coronal,1171,2x3
+53,65049s,"Bandicoot, Long-nosed",Perameles nasuta,Sagittal,360,2x3
+54,65049h,"Bandicoot, Long-nosed",Perameles nasuta,Horizontal,481,2x3
+55,69087,"Raton Runcho, Shrew Opossum",Caenolestes obscurus,Coronal,333,2x3
+56,69089,"Raton Runcho, Shrew Opossum",Caenolestes obscurus,Sagittal,346,2x3
+57,70094,"Raton Runcho Peruano, Shrew",Lestoros inca,Coronal,616,2x3
+58,70095s,"Raton Runcho Peruano, Shrew",Lestoros inca,Sagittal,170,2x3
+59,70095h,"Raton Runcho Peruano, Shrew",Lestoros inca,Horizontal,350,2x3
+60,64040,Brushtail Possum,Trichosurus vulpecula,Coronal,1600,2x3
+61,64029,Brushtail Possum,Trichosurus vulpecula,Sagittal,677,2x3
+62,64027,Brushtail Possum,Trichosurus vulpecula,Horizontal,454,2x3
+63,64020,Sugar Glider,Petaurus breviceps,Coronal,899,2x3
+64,64053s,Sugar Glider,Petaurus breviceps,Sagittal,249,2x3
+65,64053h,Sugar Glider,Petaurus breviceps,Horizontal,386,2x3
+66,64028,Squirrel Glider,Petaurus norfolcensis,Horizontal,476,2x3
+67,64038,Ringtail Possum,Pseudocheirus peregrinus,Coronal,1223,2x3
+68,64019,Ringtail Possum,Pseudocheirus peregrinus,Coronal,534,2x3
+69,64026,Ringtail Possum,Pseudocheirus peregrinus,Coronal,404,
+70,64037c,Greater Glider,Petauroides volans,Coronal,1166,2x3
+71,64037s,Greater Glider,Petauroides volans,Sagittal,270,2x3
+72,JW,Honey Possum,Tarsipes rostratus,Sagittal,498,2x3
+73,64011,Wombat,Vombatus ursinus,Coronal,1923,2x3
+74,64014,Wombat,Vombatus ursinus,Sagittal,1121,2x3
+75,64013,Wombat,Vombatus ursinus,Horizontal,915,2x3
+76,65055,Rat Kangaroo,Potorous tridactylus,Horizontal,1419,2x3
+77,65056s,Rat Kangaroo,Potorous tridactylus,Sagittal,375,2x3
+78,65056h,Rat Kangaroo,Potorous tridactylus,Horizontal,685,2x3
+79,64023c,"Kangaroo, Western Gray",Macropus fuliginosus,Coronal,2221,2x3
+80,64023s,"Kangaroo, Western Gray",Macropus fuliginosus,Sagittal,352,2x3
+81,64033,Tammar,Macropus eugenii,Coronal,1437,2x3
+82,64034,Tammar,Macropus eugenii,Coronal,1469,2x3
+83,65064,Bennett’s Wallaby,Macropus rufogriseus fruticus,Coronal,1799,2x3
+84,67081,Bennett’s Wallaby,Macropus rufogriseus fruticus,Sagittal,414,2x3
+85,69083,Bennett’s Wallaby,Macropus rufogriseus fruticus,Sagittal,414,
+86,64022,"Red Kangaroo, f",Macropus rufus,Coronal,2060,2x3
+87,64021s,Red Kangaroo,Macropus rufus,Sagittal,633,2x3
+88,64021h,Red Kangaroo,Macropus rufus,Horizontal,1171,2x3
+89,67079,Quokka,Setonix brachyurus,Coronal,2030,2x3
+90,67080,Quokka,Setonix brachyurus,Coronal,704,2x3
+91,65057,Rufous Wallaby,Thylogale billardieri,Coronal,1987,2x3
+92,65058,Rufous Wallaby,Thylogale billardieri,Sagittal,714,2x3
+93,65059,Rufous Wallaby,Thylogale billardieri,Sagittal,974,2x3
+94,71257,Star-nosed Mole,Condylura cristata,Sagittal,230,
+95,70240,"Mole, Eastern American",Scalopus aquaticus,Sagittal,279,2x3
+96,70242,Short-tailed Shrew,Blarina brevicauda,Sagittal,365,
+97,P289,"Bat, White-lined",Saccopteryx bilineata,Coronal,82,1x3
+98,P258,"Bat, Bulldog",Noctilio leporinus,Coronal,83,1x3
+99,P182,"Bat, Old World Leafnose",Hippososideros armiger,Coronal,60,1x3
+100,P160,"Bat, Fringe-lipped",Trachops cirrhosus,Coronal,263,1x3
+101,P287,"Bat, Linnaeus’s False Vampire",Vampyrum spectrum,Coronal,122,1x3
+102,P275,"Bat, West Indian long-tongued",Monophyllus redmani,Coronal,80,1x3
+103,P50,"Bat, Short-tailed Leafnose",Carollia perspicillata,Coronal,67,1x3
+104,P197,"Bat embryo, Neotropical Fruit",Artibeus jamaicensis,Coronal,46,1x3
+105,P193,"Bat, Cavern Leaf-nosed",Brachyphylla cavernarum,Coronal,131,1x3
+106,P291,"Bat, Funnel-eared",Natalus micropus,Coronal,46,1x3
+107,P196,"Bat, Velvety Free-tailed",Molossus molossus,Coronal,74,1x3
+108,67213s,"Bat, Big Brown",Eptesicus fuscus,Sagittal,143,2x3
+109,67213h,"Bat, Big Brown",Eptesicus fuscus,Horizontal,217,2x3
+110,66811c,Owl Monkey,Aotus trivirgatus,Coronal,436,2x3
+111,66811s,Owl Monkey,Aotus trivirgatus,Sagittal,175,2x3
+112,64-55,Rhesus Monkey,Macaca mulatta,Sagittal,629,2x3
+113,RH-A49,Macaque -HH,Macaca mulatta,Coronal,1191,3x4
+114,RH-A51,Macaque -HH,Macaca mulatta,Coronal,1061,3x4
+115,RH-A55,Macaque -HH,Macaca mulatta,Coronal,1451,3x4
+116,RH-A85,Macaque -HH,Macaca mulatta,Coronal,1276,3x4
+117,RH-B48,Macaque -HH,Macaca mulatta,Coronal,1266,3x4
+118,RH-B49,Macaque -HH,Macaca mulatta,Coronal,1276,3x4
+119,RH-B81,Macaque -HH,Macaca mulatta,Coronal,1971,3x4
+120,RH-B83,Macaque -HH,Macaca mulatta,Coronal,1701,3x4
+121,RH-B87,Macaque -HH,Macaca mulatta,Coronal,2001,3x4
+122,RH-B90,Macaque -HH,Macaca mulatta,Coronal,1921,3x4
+123,RH-510,Macaque -HH,Macaca mulatta,Coronal,1181,3x4
+124,RH-511,Macaque -HH,Macaca mulatta,Coronal,1281,3x4
+125,RH-512,Macaque -HH,Macaca mulatta,Coronal,1061,3x4
+126,W64-12,Baboon -UW,Papio hamadryas,Coronal,1990,2x3
+127,W63-397,Chimpanzee -UW,Pan troglodytes,Coronal,2324,3x4
+128,70237,Woodchuck,Marmota monax,Coronal,690,2x3
+129,H-KR1,Kangaroo Rat,Dipodomys spectabilis,Coronal,375,2x3
+130,H-KR2,Kangaroo Rat,Dipodomys spectabilis,Coronal,303,2x3
+131,H-KR3,Kangaroo Rat,Dipodomys spectabilis,Coronal,675,2x3
+132,70238,Kangaroo Rat,Dipodomys merriami,Coronal,300,2x3
+133,66217,"Deer Mouse, Cactus",Peromyscus eremicus,Sagittal,325,2x3
+134,66225,"Deer Mouse, Cactus",Peromyscus eremicus,Sagittal,290,2x3
+135,66216,"Deer Mouse, Cactus",Peromyscus eremicus,Horizontal,310,2x3
+136,66219,"Deer Mouse, Florida",Podomys floridanus,Sagittal,369,2x3
+137,66218,"Deer Mouse, Florida",Podomys floridanus,Horizontal,225,2x3
+138,71258,"Deer Mouse, Cotton",Peromyscus gossypinus,Sagittal,330,2x3
+139,71259,"Deer Mouse, Cotton",Peromyscus gossypinus,Horizontal,260,2x3
+140,66203,"Deer Mouse, White-footed",Peromyscus leucopus,Sagittal,305,2x3
+141,66202,"Deer Mouse, White-footed",Peromyscus leucopus,Horizontal,372,2x3
+142,67221s,"Deer Mouse, White-footed",Peromyscus leucopus,Sagittal,248,2x3
+143,67221h,"Deer Mouse, White-footed",Peromyscus leucopus,Horizontal,142,2x3
+144,66215,"Gerbil, Mongolian",Meriones unguiculatus,Sagittal,338,2x3
+145,66214,"Gerbil, Mongolian",Meriones unguiculatus,Horizontal,245,2x3
+146,69231,House Mouse,Mus musculus,Sagittal,264,2x3
+147,69226,House Mouse,Mus musculus,Horizontal,262,2x3
+148,89204,Albino Rat,Rattus norvegicus,Coronal,504,2x3
+149,89202,Albino Rat,Rattus norvegicus,Sagittal,293,2x3
+150,89201,Albino Rat,Rattus norvegicus,Coronal,494,2x3
+151,89203,Albino Rat,Rattus norvegicus,Horizontal,103,2x3
+152,89205,Albino Rat,Rattus norvegicus,Horizontal,172,2x3
+153,89206,Albino Rat,Rattus norvegicus,Horizontal,150,2x3
+154,89207,Albino Rat,Rattus norvegicus,Sagittal,333,2x3
+155,70591,Agouti,Dasyprocta leporina,Coronal,452,2x3
+156,70592s,Agouti,Dasyprocta leporina,Sagittal,699,2x3
+157,W62-256,Polar Bear -UW,Ursus maritimus,Coronal,3092,3x4
+158,77201s,Raccoon,Procyon lotor,Sagittal,555,2x3
+159,77201h,Raccoon,Procyon lotor,Horizontal,572,2x3
+160,75500,Skunk,Mephitis mephitis,Coronal,361,2x3
+161,88202,Ferret,Mustela putorius,Sagittal,486,2x3
+162,88201,Ferret,Mustela putorius,Coronal,757,2x3
+163,88203,Ferret,Mustela putorius,,,
+164,88204,Ferret,Mustela putorius,,,
+165,W64-352,Hyaena -UW,Crocuta crocuta,Coronal,500,2x3
+166,68324b,Cat,Felis silvestris,Coronal,1547,2x3
+167,69384b,Cat,Felis silvestris,Sagittal,908,2x3
+168,69378b,Cat,Felis silvestris,Horizontal,821,2x3
+169,W62-79,African Lion -UW,Panthera leo,Coronal,2572,2x3
+170,W61-820,Zebra -UW,Equus burchelli,Coronal,3322,3x4
+171,66107,Sheep,Ovis aries,Coronal,1187,3x4
+172,66106,Sheep,Ovis aries,Sagittal,976,3x4
+173,66105,Sheep,Ovis aries,Horizontal,1267,3x4
+174,89101,Calf Hypothalamus,Bos taurus,Coronal & Horizontal,491,2x3
+175,89102,Calf Hypothalamus,Bos taurus,Horizontal,426,2x3
+176,89103,Calf Hypothalamus,Bos taurus,Coronal & Sagittal,774,2x3

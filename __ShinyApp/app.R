@@ -254,8 +254,8 @@ load_compiled <- function() {
   # estimate (and its modern-human-relative ratio) shows as its own point.
   std_fossil_bgu <- function(gh_rel, local, dataset) {
     d <- read_csv_gh(gh_rel, local)
-    lab_bgu   <- paste0("Fossil_", d$Measure, " (", d$Units, ") — ", d$Team)
-    lab_ratio <- paste0("Fossil_", d$Measure, "_Ratio_MH — ", d$Team)
+    lab_bgu   <- paste0("Fossil_", d$Measure, " (", d$Units, ") - ", d$Team)
+    lab_ratio <- paste0("Fossil_", d$Measure, "_Ratio_MH - ", d$Team)
     rbind(
       data.frame(
         Species = d$Species, Dataset = dataset, Variable = lab_bgu,
@@ -291,7 +291,10 @@ load_compiled <- function() {
   # provenance columns (n_studies / Sources instead of n_sources / Teams).
   std_sensory <- function(gh_rel, local, dataset) {
     d <- read_csv_gh(gh_rel, local)
-    lab <- paste0(d$Measure, " (", d$Units, ")")
+    # Measure names here already carry the unit as a dot suffix (Visual_acuity.cdeg,
+    # Audible_freq_high_60dB.kHz, ...) -- unlike other merges' bare Measure names, so
+    # do NOT also append " (Units)" or the unit shows twice.
+    lab <- d$Measure
     data.frame(
       Species = d$Species, Dataset = dataset, Variable = lab,
       Value = as.character(d$Value), Value_num = suppressWarnings(as.numeric(d$Value)),

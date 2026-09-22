@@ -217,15 +217,27 @@ load_compiled <- function() {
   base$Species   <- unalias(base$Species)
   merges$Species <- unalias(merges$Species)
 
-  # supersede raw body/brain-mass columns with the merges (merge-first + fallback)
+  # Supersede raw columns with authoritative compiled labels (compiled-first +
+  # fallback). Coverage is checked across the compiled output already loaded
+  # above, not just the later merge files: brain-structure volumes are loaded as
+  # a base table but are still the canonical source for raw trait-table volumes.
   if (!is.null(canon) && nrow(canon)) {
     sup <- canon[!is.na(canon$action) & canon$action == "supersede", ]
-    cov <- split(merges$Species, merges$Variable)   # species each merge covers
+    coverage <- rbind(base, merges)
+    cov <- split(coverage$Species, coverage$Variable)   # species each compiled label covers
+    label_for <- function(v, u) {
+      if (v %in% names(cov)) return(v)
+      lab_unit <- paste0(v, " (", u, ")")
+      if (lab_unit %in% names(cov)) return(lab_unit)
+      lab_unit
+    }
     keep <- rep(TRUE, nrow(base))
     for (i in seq_len(nrow(sup))) {
-      lab <- paste0(sup$canonical_variable[i], " (", sup$canonical_unit[i], ")")
+      lab <- label_for(sup$canonical_variable[i], sup$canonical_unit[i])
       f   <- suppressWarnings(as.numeric(sup$to_canonical_factor[i])); if (is.na(f)) f <- 1
       sel <- base$Variable_raw == sup$raw_variable[i]
+      ds  <- trimws(as.character(sup$match_dataset[i]))
+      if (!is.na(ds) && nzchar(ds)) sel <- sel & base$Dataset == ds
       if (!any(sel)) next
       conv <- base$Value_num[sel] * f
       base$Variable[sel]  <- lab

@@ -91,9 +91,11 @@ private sources alongside the public paper. Per the repository's public/
 restricted boundary rule, an accession-level identity link is restricted
 whenever it depends on such a source, even though the species value it
 supports is itself printed in a public paper. That is the case here for all
-61 individual accessions the restricted audit resolves. The restricted
-companion repository already carries the full crosswalk-schema rows for those
-61 animals (`specimen_registry/derived/specimen_crosswalk_restricted.csv`);
+59 individual accessions the author workbook resolves (plus the two separate
+Brainmuseum/de Sousa cross-check specimens discussed above, neither of which
+the audit treats as an established Bush accession). The restricted companion
+repository already carries the full crosswalk-schema rows for those animals
+(`specimen_registry/derived/specimen_crosswalk_restricted.csv`);
 nothing further belongs in the public file until a public, specimen-level
 bridge (an institutional accession record, for example) becomes available.
 

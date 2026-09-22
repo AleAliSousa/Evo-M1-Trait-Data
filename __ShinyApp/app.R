@@ -114,6 +114,13 @@ GH <- list(
   cerebellar = "__merging_cerebellar_folding/cerebellar_folding_long.csv",
   cmr        = "__merging_cerebral_metabolic_rate/cerebral_metabolic_rate_long.csv",
   ecv        = "__merging_endocranial_volume/endocranial_volume_long.csv",
+  gli        = "__merging_GLI/GLI_long.csv",
+  cortical_areas  = "__merging_cortical_areas/cortical_areas_long.csv",
+  cortical_layers = "__merging_cortical_layers/cortical_layers_m1_long.csv",
+  fossil_bgu = "__merging_fossil_brain_glucose/fossil_brain_glucose_long.csv",
+  gyrification = "__merging_gyrification/gyrification_long.csv",
+  sensory    = "__merging_sensory/sensory_long.csv",
+  weights    = "__merging_weights/weights_long.csv",
   manifest   = "__ShinyApp/data/source_manifest.csv"
 )
 SRC_DIR <- "__Public/comparative-data/"  # source tables (fetched on demand)
@@ -189,6 +196,127 @@ load_compiled <- function() {
       stringsAsFactors = FALSE)
   }
 
+  # ---- 2026-09-22: seven merges built but never wired into the app ----------
+  # Each has a schema that does not match std()/std_merge()/std_cmr(), so each
+  # gets its own small loader, following the same output-shape contract
+  # (Species, Dataset, Variable, Value, Value_num, Source, N_sources,
+  # Variable_raw, Unit, Unit_raw).
+
+  # Cytoarchitectonic grey-level index (GLI): Species x area x cortical stratum.
+  std_gli <- function(gh_rel, local, dataset) {
+    d <- read_csv_gh(gh_rel, local)
+    lab <- paste0("GLI_", d$area_as_published, "_", d$stratum, " (%)")
+    data.frame(
+      Species = d$Species, Dataset = dataset, Variable = lab,
+      Value = as.character(d$GLI_pct), Value_num = suppressWarnings(as.numeric(d$GLI_pct)),
+      Source = d$source,
+      N_sources = suppressWarnings(as.integer(d$n_specimens)),
+      Variable_raw = lab, Unit = "%", Unit_raw = "%",
+      stringsAsFactors = FALSE)
+  }
+
+  # Cortical-area count / surface / thickness / folding-index merge. `status`
+  # marks rows superseded by a later source or held pending an unresolved
+  # check (e.g. Finlay 2006 vs Project Kaskan) -- only "active" rows are shown.
+  std_cortical_areas <- function(gh_rel, local, dataset) {
+    d <- read_csv_gh(gh_rel, local)
+    d <- d[!is.na(d$status) & d$status == "active", ]
+    lab <- d$Standardized_Term
+    data.frame(
+      Species = d$Species, Dataset = dataset, Variable = lab,
+      Value = as.character(d$value), Value_num = suppressWarnings(as.numeric(d$value)),
+      Source = d$source,
+      N_sources = NA_integer_,
+      Variable_raw = lab, Unit = NA_character_, Unit_raw = NA_character_,
+      stringsAsFactors = FALSE)
+  }
+
+  # M1 cortical-layer thickness. `merge_default` marks the one row per
+  # species/layer/measure meant for cross-species use when a source offers
+  # more than one observation level (individual vs species summary, etc.).
+  std_cortical_layers <- function(gh_rel, local, dataset) {
+    d <- read_csv_gh(gh_rel, local)
+    d <- d[!is.na(d$merge_default) & d$merge_default & !is.na(d$value), ]
+    meas <- ifelse(d$measure == "absolute thickness", "Thickness_abs", "Thickness_prop")
+    layer <- gsub("[^A-Za-z0-9]+", "_", d$layer)
+    lab <- paste0("M1_Layer", layer, "_", meas, " (", d$unit, ")")
+    data.frame(
+      Species = d$Species, Dataset = dataset, Variable = lab,
+      Value = as.character(d$value), Value_num = suppressWarnings(as.numeric(d$value)),
+      Source = d$source,
+      N_sources = NA_integer_,
+      Variable_raw = lab, Unit = d$unit, Unit_raw = d$unit,
+      stringsAsFactors = FALSE)
+  }
+
+  # Fossil-hominin whole-brain glucose utilization (BGU): per specimen, per
+  # estimator team -- rows are NOT averaged across teams, so each team's
+  # estimate (and its modern-human-relative ratio) shows as its own point.
+  std_fossil_bgu <- function(gh_rel, local, dataset) {
+    d <- read_csv_gh(gh_rel, local)
+    lab_bgu   <- paste0("Fossil_", d$Measure, " (", d$Units, ") — ", d$Team)
+    lab_ratio <- paste0("Fossil_", d$Measure, "_Ratio_MH — ", d$Team)
+    rbind(
+      data.frame(
+        Species = d$Species, Dataset = dataset, Variable = lab_bgu,
+        Value = as.character(d$Value), Value_num = suppressWarnings(as.numeric(d$Value)),
+        Source = d$Source, N_sources = NA_integer_,
+        Variable_raw = lab_bgu, Unit = d$Units, Unit_raw = d$Units,
+        stringsAsFactors = FALSE),
+      data.frame(
+        Species = d$Species, Dataset = dataset, Variable = lab_ratio,
+        Value = as.character(d$Ratio_MH), Value_num = suppressWarnings(as.numeric(d$Ratio_MH)),
+        Source = d$Source, N_sources = NA_integer_,
+        Variable_raw = lab_ratio, Unit = "ratio to modern human", Unit_raw = "ratio",
+        stringsAsFactors = FALSE)
+    )
+  }
+
+  # Zilles-method gyrification index (GI). Supersedes the raw Lewitus et al.
+  # 2014 "GI" column in EvoM1 traits via variable_canonical.csv (broader
+  # source coverage; see __merging_gyrification/README__merging.md).
+  std_gyrification <- function(gh_rel, local, dataset) {
+    d <- read_csv_gh(gh_rel, local)
+    data.frame(
+      Species = d$Species, Dataset = dataset, Variable = "GI",
+      Value = as.character(d$GI), Value_num = suppressWarnings(as.numeric(d$GI)),
+      Source = d$source,
+      N_sources = NA_integer_,
+      Variable_raw = "GI", Unit = "ratio", Unit_raw = "ratio",
+      stringsAsFactors = FALSE)
+  }
+
+  # Sensory psychophysics (percepts only -- see README__merging.md for what is
+  # deliberately excluded). Shape matches std_merge() except for its
+  # provenance columns (n_studies / Sources instead of n_sources / Teams).
+  std_sensory <- function(gh_rel, local, dataset) {
+    d <- read_csv_gh(gh_rel, local)
+    lab <- paste0(d$Measure, " (", d$Units, ")")
+    data.frame(
+      Species = d$Species, Dataset = dataset, Variable = lab,
+      Value = as.character(d$Value), Value_num = suppressWarnings(as.numeric(d$Value)),
+      Source = ifelse(!is.na(d$Sources) & nzchar(d$Sources), d$Sources,
+                      paste0("EvoM1 sensory merge (", d$n_studies, " studies)")),
+      N_sources = suppressWarnings(as.integer(d$n_studies)),
+      Variable_raw = lab, Unit = d$Units, Unit_raw = d$Units,
+      stringsAsFactors = FALSE)
+  }
+
+  # Brain-part (sub-regional) wet mass. Rows with no canonical_structure yet
+  # assigned (see mapping_gap) are dropped rather than shown as blank labels.
+  std_weights <- function(gh_rel, local, dataset) {
+    d <- read_csv_gh(gh_rel, local)
+    d <- d[!is.na(d$canonical_structure) & nzchar(trimws(d$canonical_structure)), ]
+    lab <- paste0(d$canonical_structure, "_Mass (g)")
+    data.frame(
+      Species = d$Species, Dataset = dataset, Variable = lab,
+      Value = as.character(d$mass_g), Value_num = suppressWarnings(as.numeric(d$mass_g)),
+      Source = ifelse(!is.na(d$citation) & nzchar(d$citation), d$citation, d$source),
+      N_sources = NA_integer_,
+      Variable_raw = lab, Unit = "g", Unit_raw = d$unit_original,
+      stringsAsFactors = FALSE)
+  }
+
   base <- rbind(
     std(GH$volumes,    file.path(data_dir, "volumes_long.csv"),
         "Brain-structure volumes", "Teams", "n_teams"),
@@ -210,7 +338,21 @@ load_compiled <- function() {
     std_merge(GH$cerebellar, file.path(data_dir, "cerebellar_folding_long.csv"),
               "Cerebellar folding"),
     std_cmr(GH$cmr, file.path(data_dir, "cerebral_metabolic_rate_long.csv"),
-            "Cerebral metabolic rate")
+            "Cerebral metabolic rate"),
+    std_gli(GH$gli, file.path(data_dir, "GLI_long.csv"),
+            "Grey-level index"),
+    std_cortical_areas(GH$cortical_areas, file.path(data_dir, "cortical_areas_long.csv"),
+            "Cortical areas & surfaces"),
+    std_cortical_layers(GH$cortical_layers, file.path(data_dir, "cortical_layers_m1_long.csv"),
+            "Cortical layer thickness"),
+    std_fossil_bgu(GH$fossil_bgu, file.path(data_dir, "fossil_brain_glucose_long.csv"),
+            "Fossil brain glucose"),
+    std_gyrification(GH$gyrification, file.path(data_dir, "gyrification_long.csv"),
+            "Gyrification (GI)"),
+    std_sensory(GH$sensory, file.path(data_dir, "sensory_long.csv"),
+            "Sensory performance"),
+    std_weights(GH$weights, file.path(data_dir, "weights_long.csv"),
+            "Brain-part weights")
   )
 
   # unify species labels everywhere so synonyms line up

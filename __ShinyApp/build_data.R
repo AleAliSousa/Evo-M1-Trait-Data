@@ -65,6 +65,21 @@ invisible(file.copy(file.path(repo, "__merging_cerebral_metabolic_rate", "cerebr
 # species taxonomy lookup (Order/Family) for the plot clade filter
 invisible(file.copy(file.path(repo, "_keys", "species_taxonomy.csv"),
           file.path(out, "species_taxonomy.csv"), overwrite = TRUE))
+# 2026-09-22: seven merges newly wired into the app (see app.R load_compiled()).
+invisible(file.copy(file.path(repo, "__merging_GLI", "GLI_long.csv"),
+          file.path(out, "GLI_long.csv"), overwrite = TRUE))
+invisible(file.copy(file.path(repo, "__merging_cortical_areas", "cortical_areas_long.csv"),
+          file.path(out, "cortical_areas_long.csv"), overwrite = TRUE))
+invisible(file.copy(file.path(repo, "__merging_cortical_layers", "cortical_layers_m1_long.csv"),
+          file.path(out, "cortical_layers_m1_long.csv"), overwrite = TRUE))
+invisible(file.copy(file.path(repo, "__merging_fossil_brain_glucose", "fossil_brain_glucose_long.csv"),
+          file.path(out, "fossil_brain_glucose_long.csv"), overwrite = TRUE))
+invisible(file.copy(file.path(repo, "__merging_gyrification", "gyrification_long.csv"),
+          file.path(out, "gyrification_long.csv"), overwrite = TRUE))
+invisible(file.copy(file.path(repo, "__merging_sensory", "sensory_long.csv"),
+          file.path(out, "sensory_long.csv"), overwrite = TRUE))
+invisible(file.copy(file.path(repo, "__merging_weights", "weights_long.csv"),
+          file.path(out, "weights_long.csv"), overwrite = TRUE))
 # ---- organisation + glossary keys -------------------------------------------
 # Three keys drive the app's variable organisation and its abbreviation support.
 # They are authored in _keys/ (not here) so the vocabulary is reviewable in the

@@ -5,8 +5,23 @@ Requires LibreOffice and python-docx. The source .doc remains authoritative.
 """
 from pathlib import Path
 from copy import copy
-import subprocess, sys, tempfile, re
+import shutil, subprocess, sys, tempfile, re
 from docx import Document
+
+## Locate a LibreOffice CLI binary. On Linux the command is usually `libreoffice`
+## (sometimes `soffice`); on macOS neither is normally on PATH -- only the binary
+## inside LibreOffice.app is, so fall back to that fixed install location.
+def _find_soffice():
+    for name in ('libreoffice', 'soffice'):
+        found = shutil.which(name)
+        if found:
+            return found
+    mac_default = '/Applications/LibreOffice.app/Contents/MacOS/soffice'
+    if Path(mac_default).exists():
+        return mac_default
+    raise SystemExit('LibreOffice not found (checked PATH for libreoffice/soffice and '
+                      f'{mac_default}).')
+SOFFICE = _find_soffice()
 from openpyxl import Workbook
 from openpyxl.styles import Font, Alignment, PatternFill, Border, Side
 from openpyxl.utils import get_column_letter
@@ -28,7 +43,7 @@ def main(stem):
     folder=Path(__file__).resolve().parent; src=folder/src_name
     if not src.exists(): raise SystemExit('Missing source: '+str(src))
     with tempfile.TemporaryDirectory() as td:
-        subprocess.run(['libreoffice','--headless','--convert-to','docx','--outdir',td,str(src)],check=True,stdout=subprocess.DEVNULL)
+        subprocess.run([SOFFICE,'--headless','--convert-to','docx','--outdir',td,str(src)],check=True,stdout=subprocess.DEVNULL)
         d=Document(Path(td)/(src.stem+'.docx'))
         if len(d.tables)!=1: raise SystemExit(f'Expected one table; found {len(d.tables)}')
         t=d.tables[0]

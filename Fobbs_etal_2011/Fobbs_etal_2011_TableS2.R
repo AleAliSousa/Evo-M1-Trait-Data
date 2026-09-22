@@ -40,9 +40,14 @@ if (rebuild_snapshot || !file.exists(snapshot_xlsx)) {
   if (!identical(status, 0L) || !file.exists(snapshot_xlsx)) stop("Snapshot build failed.", call.=FALSE)
 }
 
+## The snapshot's 13th column (both header cell and all 408 data rows) is entirely blank --
+## a vestigial empty column carried over from the .doc -> docx table conversion, not a real
+## "source_extra" field. readxl drops a fully-empty trailing column when reading, so this
+## reads as 12 columns; expect that instead of fabricating content for a column that never
+## held any.
 raw <- read_excel(snapshot_xlsx, sheet="TableS2", skip=1, col_names=TRUE, col_types="text")
-if (ncol(raw) != 13L) stop("Expected 13 columns; found ", ncol(raw), ".", call.=FALSE)
-names(raw) <- c("animal_number", "common_name", "brain_part", "stains_used", "plane_of_section", "age", "section_thickness", "total_number_of_sections", "total_number_of_slides", "embedding_medium", "slide_size", "number_of_sections_stained", "source_extra")
+if (ncol(raw) != 12L) stop("Expected 12 columns; found ", ncol(raw), ".", call.=FALSE)
+names(raw) <- c("animal_number", "common_name", "brain_part", "stains_used", "plane_of_section", "age", "section_thickness", "total_number_of_sections", "total_number_of_slides", "embedding_medium", "slide_size", "number_of_sections_stained")
 clean_text <- function(x) {
   x <- str_squish(as.character(x)); x[x %in% c("", "NA")] <- NA_character_; x
 }

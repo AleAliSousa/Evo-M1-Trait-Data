@@ -93,6 +93,7 @@ see Region | volume,see Region,volume,5,2,Karlsen_Pakkenberg_2011; Walhovd_etal_
 (structure-agnostic; see data columns) | length,(structure-agnostic; see data columns),length,4,2,Burish_etal_2010; Heuer_etal_2019,Primates; Primates (+ other mammals),info; review,TRUE
 AccessoryBasalNucleus | volume,AccessoryBasalNucleus,volume,4,2,Barger_etal_2007; Barger_etal_2014,Apes & humans,primary,TRUE
 AmygdaloidComplex | volume,AmygdaloidComplex,volume,4,2,Barger_etal_2007; Barger_etal_2014,Apes & humans,primary,TRUE
+Area_striata | volume,Area_striata,volume,4,2,Frahm_etal_1984; Stephan_etal_1981,"Insectivora & Primates; Insectivora, Scandentia & Primates; Scandentia & Primates",primary,TRUE
 BasalNucleus | volume,BasalNucleus,volume,4,2,Barger_etal_2007; Barger_etal_2014,Apes & humans,primary,TRUE
 Cerebellum | ratio (per neuron),Cerebellum,ratio (per neuron),4,2,Kazu_etal_2014; Kazu_etal_2015,Artiodactyla,primary,TRUE
 Cerebellum | size index (allometric),Cerebellum,size index (allometric),4,2,Ashwell__2020; Weaver__2001,"Mammalia; monkeys, apes, fossil hominids, humans",derived; secondary,TRUE
@@ -118,10 +119,10 @@ see Region | ratio,see Region,ratio,3,2,Hanson_etal_2018; Karlsen_Pakkenberg_201
 see Region | surface area,see Region,surface area,3,2,Hanson_etal_2018; Karlsen_Pakkenberg_2011,Homo sapiens,info; secondary,TRUE
 (structure-agnostic; see data columns) | Age.years,(structure-agnostic; see data columns),Age.years,2,2,deSousa_etal_2009; Turner_etal_2016,Apes & humans + M. fascicularis; Primates,info,TRUE
 (structure-agnostic; see data columns) | Ratio,(structure-agnostic; see data columns),Ratio,2,2,Heuer_etal_2019; Nudo_etal_1995,24 mammals: 9 orders / 16 families / 21 genera (Marsupialia + Eutheria); Primates,info; method,TRUE
+(structure-agnostic; see data columns) | Reference,(structure-agnostic; see data columns),Reference,2,2,Bush_Allman_2004_b; Kaufman__2004,Mammals,info; primary,TRUE
 (structure-agnostic; see data columns) | freq.kHz,(structure-agnostic; see data columns),freq.kHz,2,2,Heffner_etal_2020; Koay_etal_1998,Mammalia (67 digitised points); Mammalia (79 markers; 34 labelled),both; secondary,TRUE
 (structure-agnostic; see data columns) | provenance,(structure-agnostic; see data columns),provenance,2,2,Mota_etal_2015; Zilles_etal_2013,Mammals,provenance,TRUE
 Allocortex | volume,Allocortex,volume,2,2,Ebinger__1974; Schleifenbaum__1973,Canis; Ovis,primary,TRUE
-Area_striata | volume,Area_striata,volume,2,2,Frahm_etal_1984; Stephan_etal_1981,"Insectivora & Primates; Insectivora, Scandentia & Primates",primary,TRUE
 CerebellarHemisphere | volume,CerebellarHemisphere,volume,2,2,Ashwell__2020; MacLeod_etal_2003,Apes (Hominoidea); Mammalia,primary,TRUE
 CerebellarVermis | volume,CerebellarVermis,volume,2,2,Ashwell__2020; MacLeod_etal_2003,Apes (Hominoidea); Mammalia,primary,TRUE
 CerebralCortexGrey | count (number),CerebralCortexGrey,count (number),2,2,Kazu_etal_2014; Kazu_etal_2015,Artiodactyla,primary,TRUE
@@ -384,7 +385,6 @@ whole-organism | text,whole-organism,text,2,1,MedinaGonzález__2026,Mammals,pri
 (structure-agnostic; see data columns) | MeasureType,(structure-agnostic; see data columns),MeasureType,1,1,BarbeitoAndrés_etal_2019,,primary,FALSE
 (structure-agnostic; see data columns) | Merge status,(structure-agnostic; see data columns),Merge status,1,1,__merging_cortical_layers,,primary,FALSE
 (structure-agnostic; see data columns) | Observation identifier,(structure-agnostic; see data columns),Observation identifier,1,1,__merging_cortical_layers,,primary,FALSE
-(structure-agnostic; see data columns) | Reference,(structure-agnostic; see data columns),Reference,1,1,Kaufman__2004,Mammals,info,FALSE
 (structure-agnostic; see data columns) | Scope,(structure-agnostic; see data columns),Scope,1,1,Hutsler_etal_2005,14 mammal species,info,FALSE
 (structure-agnostic; see data columns) | Score,(structure-agnostic; see data columns),Score,1,1,Capellini_etal_2008,Mammals,info,FALSE
 (structure-agnostic; see data columns) | SocialGroup,(structure-agnostic; see data columns),SocialGroup,1,1,Bush_Allman_2004_a,,secondary,FALSE
@@ -422,8 +422,16 @@ Area10 | surface area,Area10,surface area,1,1,Semendeferi_etal_2001,Apes & human
 Area10 | volume,Area10,volume,1,1,Semendeferi_etal_2001,Apes & humans,primary,FALSE
 Area13 | surface area,Area13,surface area,1,1,Semendeferi_etal_1998,Apes & humans & macaque,primary,FALSE
 Area13 | volume,Area13,volume,1,1,Semendeferi_etal_1998,Apes & humans,primary,FALSE
+Area_striata | mass,Area_striata,mass,1,1,Frahm_etal_1984,Scandentia & Primates,primary,FALSE
+Area_striata_grey_matter | percentage (relative),Area_striata_grey_matter,percentage (relative),1,1,Frahm_etal_1984,Scandentia & Primates,primary,FALSE
+Area_striata_grey_matter | ratio to CGL,Area_striata_grey_matter,ratio to CGL,1,1,Frahm_etal_1984,Scandentia & Primates,primary,FALSE
+Area_striata_grey_matter | surface area,Area_striata_grey_matter,surface area,1,1,Frahm_etal_1984,Scandentia & Primates,derived in source table,FALSE
+Area_striata_lamina_1 | percentage (relative),Area_striata_lamina_1,percentage (relative),1,1,Frahm_etal_1984,Scandentia & Primates,primary,FALSE
+Area_striata_lamina_1 | surface area,Area_striata_lamina_1,surface area,1,1,Frahm_etal_1984,Scandentia & Primates,derived in source table,FALSE
 Area_striata_lamina_1 | volume,Area_striata_lamina_1,volume,1,1,Frahm_etal_1984,Insectivora & Primates,primary,FALSE
+Area_striata_laminae_2_6 | percentage (relative),Area_striata_laminae_2_6,percentage (relative),1,1,Frahm_etal_1984,Scandentia & Primates,primary,FALSE
 Area_striata_laminae_2_6 | volume,Area_striata_laminae_2_6,volume,1,1,Frahm_etal_1984,Insectivora & Primates,primary,FALSE
+Area_striata_white_matter | percentage (relative),Area_striata_white_matter,percentage (relative),1,1,Frahm_etal_1984,Scandentia & Primates,primary,FALSE
 Area_striata_white_matter | volume,Area_striata_white_matter,volume,1,1,Frahm_etal_1984,Insectivora & Primates,primary,FALSE
 Association cortex (residual) | surface area,Association cortex (residual),surface area,1,1,__merging_cortical_areas,Primates,secondary,FALSE
 AssociationCortex | surface area,AssociationCortex,surface area,1,1,Smaers_etal_2017,Primates,both,FALSE
@@ -505,6 +513,10 @@ Insula | presence,Insula,presence,1,1,Taniguchi_etal_2022,Rodentia,primary,FALSE
 Internal carotid artery | shear.dyne.cm2,Internal carotid artery,shear.dyne.cm2,1,1,Seymour_etal_2015,Primates & Diprotodontia,primary,FALSE
 Internal carotid artery | volume,Internal carotid artery,volume,1,1,Seymour_etal_2015,Primates & Diprotodontia,primary,FALSE
 Interpositus_cerebellar_nuclei | volume,Interpositus_cerebellar_nuclei,volume,1,1,Matano_etal_1985_a,"Insectivora, Scandentia & Primates",primary,FALSE
+LGN magnocellular layer | CoefficientOfError,LGN magnocellular layer,CoefficientOfError,1,1,Bush_Allman_2004_b,,primary,FALSE
+LGN magnocellular layer | count (number),LGN magnocellular layer,count (number),1,1,Bush_Allman_2004_b,,primary,FALSE
+LGN parvocellular layer | CoefficientOfError,LGN parvocellular layer,CoefficientOfError,1,1,Bush_Allman_2004_b,,primary,FALSE
+LGN parvocellular layer | count (number),LGN parvocellular layer,count (number),1,1,Bush_Allman_2004_b,,primary,FALSE
 LGN | Lamination,LGN,Lamination,1,1,deSousa_etal_2013,,primary,FALSE
 LGN | count (number),LGN,count (number),1,1,deSousa_etal_2010,Primates,metadata,FALSE
 LGN | residual,LGN,residual,1,1,deSousa_etal_2013,,secondary,FALSE
@@ -582,6 +594,7 @@ Regio_praepiriformis | volume,Regio_praepiriformis,volume,1,1,Ebinger__1974,Ovis
 Regio_retrobulbaris | volume,Regio_retrobulbaris,volume,1,1,Ebinger__1974,Ovis,primary,FALSE
 Remaining_brain_parts | volume,Remaining_brain_parts,volume,1,1,Ebinger__1974,Ovis,primary,FALSE
 Retina | Q10,Retina,Q10,1,1,Fritsches_etal_2005,Teleostei,primary,FALSE
+RetinalGanglionCells | count (number),RetinalGanglionCells,count (number),1,1,Bush_Allman_2004_b,,primary,FALSE
 Retrobulbar_cortex | volume,Retrobulbar_cortex,volume,1,1,Baron_etal_1987,"Insectivora, Scandentia & Primates",primary,FALSE
 S1 | percentage (relative),S1,percentage (relative),1,1,Changizi_Shimojo_2005,"Mammalia, 16 spp. (monotremes, marsupials, eulipotyphlans, bats, rodents, tree shrew, primates)",primary,FALSE
 Second visual area (V2) | surface area,Second visual area (V2),surface area,1,1,__merging_cortical_areas,Primates,primary,FALSE

@@ -1,0 +1,68 @@
+structure,source_paper,ref_numbers,includes,excludes,derivation_rule,comparability_note,used_in_analysis,pdf_page,verbatim
+Whole brain,Stephan_etal,"24,51-52",ventricles; meninges,,total fresh brain volume = fresh brain mass / 1.036 g/cm3,,yes,13,"calculated total fresh brain volume (including ventricles and meninges) from fresh brain mass divided by 1.036, the density of fresh brain tissue"
+Whole brain,Zilles_Rehkampfer,59,,,species-typical brain masses collated from the literature; volumes corrected to that species-typical value,,yes,13,collating data from the literature to estimate species typical brain masses and correcting volumes to this species typical value
+Whole brain,Frahm_etal,34,,,BV = V1 volume / (V1 as % of brain weight) / 1.036,,yes,13,"provide V1 measurements and their % of brain weight, so we calculated brain volumes by dividing the former by the latter and dividing by 1.036"
+Whole brain,Stimpson_etal,58,,,BV = fresh brain weight / 1.036,,yes,13,"provide fresh brain weights, so we calculated brain volumes by dividing weight measurements by 1.036"
+Whole brain,Sherwood_etal_2005,53,,,brain volumes taken from the SOURCE MATERIALS for individuals in the Stephan and Zilles collections; for a handful of individuals brain weights or volumes were supplied by the author,regional measurements only; the paper itself publishes no brain-volume table,yes,13,"provide regional measurements from individuals in the Stephan and Zilles collections, so brain volumes were taken from the source materials. For a handful of individuals, brain weights or volumes were provided by the author (Sherwood 2018, personal communication)"
+Whole brain,Rilling_Insel,62-63,,cerebrospinal fluid; meninges; blood vessels; muscle; fat; bone,,may not be exactly comparable to Stephan et al. net volume,yes,13,calculate whole brain volume by separating brain tissue from surrounding tissues
+Whole brain,Sherwood_etal,64,"total grey matter; white matter; ventricular space of cerebral hemispheres, cerebellum, midbrain, brainstem",,,,yes,13,
+Whole brain,Barks_etal,65,,,procedure similar to Sherwood et al. 64,,yes,13,
+Whole brain,Barger_etal,56-57,,,converted from previously reported or measured fresh brain weights; no further detail,,yes,13,
+Whole brain,Bauernfeind_etal,43,,,converted from previously reported or measured fresh brain weights; no further detail,,yes,13,
+Whole brain,Bush_Allman,54-55,,,converted from previously reported or measured fresh brain weights; no further detail,,yes,13,
+Whole brain,deSousa_etal,60,,,converted from previously reported or measured fresh brain weights; no further detail,,yes,13,
+Whole brain,MacLeod_etal,61,,,brain-weight conversion for the histological set; Rilling & Insel method for the MRI set,,yes,13,
+Whole brain,Semendeferi_Damasio,66,,medulla; pons; greater part of the midbrain,,NOT comparable to the other datasets,no -- dataset excluded from the analysis,13,"this is not comparable the other datasets, as it excludes the medulla, pons, and the 'greater part of the midbrain'"
+Telencephalon,Stephan_etal,"24,51-52",olfactory bulbs; piriform lobe; septum; striatum; schizocortex; hippocampus; neocortex,,,,yes,13,
+Telencephalon,Zilles_Rehkampfer,59,assumed same regions as Stephan et al.,,,"ASSUMED, not stated by the source",yes,13,
+Neocortex,Stephan_etal,"24,51-52","underlying white matter incl. corpus callosum; insular, subgenual, cingulate and retrosplenial transitional cortices",,,,yes (GM+WM arm),13,
+Neocortex,deSousa_etal,60,,,"neocortex and corpus callosum measured separately, then COMBINED to match Stephan et al.",,yes (GM+WM arm),13,
+Neocortex,Rilling_Insel,63,,subcortical grey matter; internal capsule (from white matter),GM and WM measured separately,,yes (both arms),13,
+Neocortex,Zilles_Rehkampfer,59,,,"neocortex and V1 grey matter measured separately, then COMBINED to give total neocortical grey matter",,yes (both arms),13,
+Neocortex,Bush_Allman,54-55,,,GM and WM measured separately,,yes (both arms),13,
+Neocortex,Barks_etal,65,,,GM and WM measured separately,,yes (both arms),13,
+Neocortex,Sherwood_etal,64,entire cortical mantle,cortex mesial to the rhinal sulcus; entorhinal cortex; olfactory cortex; hippocampus,,"grey matter only; includes proisocortex, cingulate gyrus, rostral insula, temporal pole",yes (GM arm only),14,
+Visual cortex (V1),Stephan_etal,"24,51-52",underlying white matter,,,white-matter borders arbitrarily defined by the shortest distance between grey-matter borders,no -- excluded; Frahm V1 grey matter used instead,14,"these measurements are not included in our analyses; rather, V1 grey matter measurements in Frahm et al. taken on many of the same specimens are included"
+Visual cortex (V1),Frahm_etal,34,grey matter,,,no delineation detail given,yes,14,
+Visual cortex (V1),Bush_Allman,54,grey matter only,,,,yes,14,
+Visual cortex (V1),Zilles_Rehkampfer,59,grey matter only,,,no delineation detail given,yes,14,
+Visual cortex (V1),deSousa_etal,60,grey matter only,,"left hemisphere only, so DOUBLED; one individual shared with Frahm et al. -- the more recent de Sousa measurement used",,yes,14,
+Insula (GM),Bauernfeind_etal,43,,,"some individuals one hemisphere only, so DOUBLED",bounded by superior/inferior limiting sulci; claustrum adjacency a landmark,yes,14,
+Insula (GM),Barks_etal,65,,,,"bounded laterally by the circular sulcus, mesially by a line joining its two deepest ends",yes,14,
+Insula (GM),Semendeferi_Damasio,66,,,,,no -- incomparable whole-brain measure,14,
+Paleocortex,Stephan_etal,"24,51-52","retrobullar cortex (anterior olfactory nucleus); prepiriform cortex; lateral, medial and internal olfactory tracts; anterior commissure; olfactory tubercle; substantia innominata; basal nucleus of Meynert",,,,yes,14,
+Paleocortex,Zilles_Rehkampfer,59,"praepiriformis (prepiriform cortex, retrobullar cortex, olfactory tubercle) AND amygdala",,,only the praepiriformis measurement is comparable to Stephan et al.,praepiriformis only,15,"Accordingly, only the praepiriformis measurement from Zilles & Rehkamper is comparable to the Stephan et al. measurements"
+Hippocampus,Stephan_etal,"24,51-52",pre- and postcommissural hippocampus (paraterminal and supracallosal gyri),,,,yes,15,
+Hippocampus,Barger_etal,57,cornu ammonis; dentate gyrus; prosubiculum; subiculum proper; presubiculum,,,,yes,15,
+Hippocampus,Sherwood_etal,64,dentate gyrus; hippocampus proper; subiculum,,,,yes,15,
+Hippocampus,Barks_etal,65,dentate gyrus; hippocampus proper; subiculum,,,,yes,15,
+Hippocampus,Zilles_Rehkampfer,59,,,,no detail provided,yes,15,
+Schizocortex,Stephan_etal,"24,51-52","entorhinal, perirhinal, presubicular and parasubicular cortices; underlying white matter",,,,yes,15,
+Striatum,Stephan_etal,"24,51-52",caudate nucleus; putamen; NUCLEUS ACCUMBENS; parts of internal capsule running through the striatum,,,,yes (both arms),15,
+Striatum,Barger_etal,57,caudate nucleus; putamen,nucleus accumbens,,,yes (all-measurements arm only),15,
+Striatum,Sherwood_etal,64,caudate nucleus; putamen,nucleus accumbens,,,yes (all-measurements arm only),15,
+Striatum,Zilles_Rehkampfer,59,caudate nucleus; putamen,nucleus accumbens,,,yes (all-measurements arm only),15,
+Striatum,Barks_etal,65,assumed caudate and putamen only,,,ASSUMED; no detail provided,yes (all-measurements arm only),15,
+Thalamus,Sherwood_etal,64,main body; medial and lateral geniculate nuclei,,,"bordered medially by the third ventricle, dorsally by the lateral ventricles, laterally by the internal capsule",yes,15,
+Thalamus,Barks_etal,65,,posterior portions of the thalamus,,,no -- excluded from the analysis,15,"Barks et al. did not include the posterior portions of the thalamus in their measurements (Sherwood 2018, personal communication) so these measurements were not included"
+Thalamus,Stephan_etal,"24,51-52",,,,no detail provided,yes,15,
+LGN,deSousa_etal,60,entire structure; all dorsal LGN laminae and interlaminar space,,"left hemisphere only, so DOUBLED",,yes,15,
+LGN,Stephan_etal,"24,51-52",assumed whole structure,,,ASSUMED; no detail provided,yes,15,
+LGN,Bush_Allman,55,assumed whole structure,,,ASSUMED; no detail provided,yes,15,
+Subthalamus,Stephan_etal,"24,51-52",pallidum; subthalamic nucleus,,,,yes,15,
+Septum,Stephan_etal,"24,51-52",septum pellucidum; septum verum; diagonal band of Broca; bed nuclei of anterior commissure and stria terminalis,,,,yes,15,
+Septum,Zilles_Rehkampfer,59,,,,no detail provided,yes,15,
+Amygdala,Stephan_etal,"24,51-52","centro-medial complex (central, medial, anterior amygdaloid area incl. nucleus of the lateral olfactory tract); cortico-basolateral complex (lateral, cortical, basal nuclei)",,,,yes,15,
+Amygdala,Barger_etal,56-57,"whole amygdala (also publishes central, lateral, basal, accessory basal separately)",,,delineated by basolateral nuclei at rostral pole; internal capsule laterally; piriform cortex medially/rostrally; putamen and substantia innominata posteriorly; sulcus semiannularis caudally,yes,15,
+Amygdala,Stimpson_etal,58,,,"left hemisphere only, so DOUBLED",procedure similar to Barger et al.,yes,16,
+Amygdala,Zilles_Rehkampfer,59,,,,no detail provided,yes,16,
+Amygdala,Barks_etal,65,,,,no detail provided,yes,16,
+Cerebellum,Stephan_etal,"24,51-52",peduncles; basal pons,,,,yes,16,
+Cerebellum,Sherwood_etal,64,deep nuclei; peduncles,,,,yes,16,
+Cerebellum,MacLeod_etal,61,,peduncles; all brainstem structures,"hemispheres and vermis measured separately, then COMBINED",authors argue comparable to Stephan et al. because pontine volume is small relative to cerebellum,yes,16,
+Cerebellum,Barks_etal,65,,,"hemispheres and vermis measured separately, then COMBINED",,yes,16,
+Cerebellum,Zilles_Rehkampfer,59,,pons,total cerebellum and pons measured separately; only the cerebellum used,,cerebellum only,16,"measured total cerebellum and pons separately, so only the former was included to make these measurements comparable to other studies"
+Cerebellum,Rilling_Insel,62,,,,no detail provided,yes,16,
+Cerebellum,Semendeferi_Damasio,66,,,,,no -- incomparable whole-brain measure,16,
+Medulla,Sherwood_etal_2005,53,,,included only where the measure covered all individuals in Stephan et al.,identical anatomical boundaries to Stephan et al.,yes,16,
+Medulla,Zilles_Rehkampfer,59,,,,no detail provided,yes,16,

@@ -1,5 +1,7 @@
 "script","status","error","start_time","end_time","elapsed_seconds"
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_item_name_resolution.R","FAILED","registry Item names: 444   |   TSVs on disk: 347   |   NA.tsv present: no
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_brain_mass/brain_mass_compiled.R","FAILED","Error: no measurement basis on record for 10.1038%2Fs41559-017-0112_BrainData.tsv / Brain Mass (paper folder 'Andelin_etal_2019'). Add it to ASSIGN in _keys/build_brain_size_basis.py and re-run that builder.
+Execution halted","2026-09-21 11:59:59.328984","2026-09-21 12:00:00.871402",1.54241800308228
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_item_name_resolution.R","FAILED","registry Item names: 460   |   TSVs on disk: 364   |   NA.tsv present: no
 
 __merging_behaviour/behaviour_compiled.R                     0 item name(s) referenced   OK
 __merging_body_ecology/body_ecology_compiled.R               0 item name(s) referenced   OK
@@ -22,36 +24,6 @@ orphaned TSVs (on disk, claimed by no registry row): 3
 rows with a citation but no Item name (need _tools/file_list.R): 0
 
 all referenced item names resolve to a TSV on disk.
-run _tools/restore_registry_rows.R (adding any new row to its ROWS list), then _tools/file_list.R.","2026-09-20 07:15:47.575143","2026-09-20 07:15:48.381025",0.805881977081299
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Barger_etal_2012/Barger_etal_2012_Table1.R","FAILED","Error: No 'Item encoded' for Barger_etal_2012_Table1 in __ReadMe.xlsx — fix the registry row first.
-Execution halted","2026-09-20 07:21:39.449345","2026-09-20 07:21:40.177351",0.728005886077881
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Zilles_etal_1986/Zilles_etal_1986_Table1.R","FAILED","New names:
-• `M` -> `M...2`
-• `O` -> `O...3`
-• `I` -> `I...4`
-• `M` -> `M...5`
-• `O` -> `O...6`
-• `I` -> `I...7`
-• `M` -> `M...8`
-• `O` -> `O...9`
-• `G` -> `G...10`
-• `I` -> `I...11`
-• `M` -> `M...12`
-• `O` -> `O...13`
-• `G` -> `G...14`
-• `I` -> `I...15`
-Error: Unexpected Table1 headers: Species, M...2, O...3, I...4, M...5, O...6, I...7, M...8, O...9, G...10, I...11, M...12, O...13, G...14, I...15
-Execution halted","2026-09-20 07:26:09.888231","2026-09-20 07:26:10.632282",0.744050979614258
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Zilles_etal_1986/Zilles_etal_1986_Table2.R","FAILED","New names:
-• `O` -> `O...2`
-• `I` -> `I...3`
-• `O` -> `O...4`
-• `I` -> `I...5`
-• `O` -> `O...6`
-• `G` -> `G...7`
-• `I` -> `I...8`
-• `O` -> `O...9`
-• `G` -> `G...10`
-• `I` -> `I...11`
-Error: Unexpected Table2 headers: Species, O...2, I...3, O...4, I...5, O...6, G...7, I...8, O...9, G...10, I...11
-Execution halted","2026-09-20 07:26:10.636554","2026-09-20 07:26:11.386132",0.74957799911499
+run _tools/restore_registry_rows.R (adding any new row to its ROWS list), then _tools/file_list.R.","2026-09-21 12:00:40.831583","2026-09-21 12:00:41.572111",0.740527868270874
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Fobbs_etal_2011/Fobbs_etal_2011_TableS2.R","FAILED","Error: Expected 13 columns; found 12.
+Execution halted","2026-09-21 12:09:04.633535","2026-09-21 12:09:05.213157",0.579622030258179

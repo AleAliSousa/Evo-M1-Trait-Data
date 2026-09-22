@@ -1,7 +1,7 @@
 "script","status","error","start_time","end_time","elapsed_seconds"
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_brain_mass/brain_mass_compiled.R","FAILED","Error: no measurement basis on record for 10.1038%2Fs41559-017-0112_BrainData.tsv / Brain Mass (paper folder 'Andelin_etal_2019'). Add it to ASSIGN in _keys/build_brain_size_basis.py and re-run that builder.
-Execution halted","2026-09-21 11:59:59.328984","2026-09-21 12:00:00.871402",1.54241800308228
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_item_name_resolution.R","FAILED","registry Item names: 460   |   TSVs on disk: 364   |   NA.tsv present: no
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_brain_mass/brain_mass_compiled.R","FAILED","Error: no measurement basis on record for 10.1038%2Fs41559-017-0112_BrainData.tsv / Brain Mass (paper folder 'DeCasien_etal_2017'). Add it to ASSIGN in _keys/build_brain_size_basis.py and re-run that builder.
+Execution halted","2026-09-22 11:19:36.609985","2026-09-22 11:19:38.134007",1.52402186393738
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_item_name_resolution.R","FAILED","registry Item names: 470   |   TSVs on disk: 366   |   NA.tsv present: no
 
 __merging_behaviour/behaviour_compiled.R                     0 item name(s) referenced   OK
 __merging_body_ecology/body_ecology_compiled.R               0 item name(s) referenced   OK
@@ -24,6 +24,4 @@ orphaned TSVs (on disk, claimed by no registry row): 3
 rows with a citation but no Item name (need _tools/file_list.R): 0
 
 all referenced item names resolve to a TSV on disk.
-run _tools/restore_registry_rows.R (adding any new row to its ROWS list), then _tools/file_list.R.","2026-09-21 12:00:40.831583","2026-09-21 12:00:41.572111",0.740527868270874
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Fobbs_etal_2011/Fobbs_etal_2011_TableS2.R","FAILED","Error: Expected 13 columns; found 12.
-Execution halted","2026-09-21 12:09:04.633535","2026-09-21 12:09:05.213157",0.579622030258179
+run _tools/restore_registry_rows.R (adding any new row to its ROWS list), then _tools/file_list.R.","2026-09-22 11:20:14.291117","2026-09-22 11:20:14.927684",0.636567115783691

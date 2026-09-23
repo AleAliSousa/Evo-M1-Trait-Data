@@ -30,7 +30,7 @@ Fields
 
 Run: python3 _keys/build_brain_size_basis.py
 """
-import csv, glob, os, re, sys
+import csv, glob, os, re, sys, unicodedata
 from collections import defaultdict
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -165,8 +165,18 @@ ASSIGN = {
     ("deSousa_etal_2009", "brain_mass_mg"):
         ("mass", "mass_fresh", "fresh", "unknown", "unknown", "unknown",
          "mass_measured", True, "quoted", C),
+    ("Zilles_etal_2011", "brain_weight_fresh_mg"):
+        ("mass", "mass_fresh", "fresh", "unknown", "unknown", "unknown",
+         "mass_measured", True, "quoted", T),
+    ("Zilles_etal_2011", "brain_weight_fresh_g"):
+        ("mass", "mass_fresh", "fresh", "unknown", "unknown", "unknown",
+         "mass_measured", True, "quoted", T),
+    ("Lewitus_etal_2013", "brain_weight_g"):
+        ("mass", "mass_fresh", "fresh", "unknown", "unknown", "unknown",
+         "mass_measured", True, "quoted", D),
     # ---- weighed mass, nothing further stated -----------------------------
     ("Stephan_etal_1970", "brain_weight_mg"): A,
+    ("Pirlot__1981", "brain_weight_mg"): A,
     ("Frahm_etal_1998", "brain_weight_mg"): A,
     ("deSousa_etal_2013", "brain_weight_mg"): A,
     ("Brodmann__1913", "BrainWeight.g"): A,
@@ -218,6 +228,20 @@ ASSIGN = {
          "mass_measured_excl_ob", True, "quoted", F),
     # ---- mass and volume mixed, unresolvable per row ----------------------
     ("Burger_etal_2019", "Mean_brain_mass_g"):
+        ("mass", "mass_or_volume_mixed", "unknown", "unknown", "unknown", "unknown",
+         "mass_or_volume_mixed", True, "quoted", D),
+    # The supplement mixes reported masses with masses calculated from its
+    # Brain Vol column (for example 59.070213... cm3 * 1.036 = 61.196741... g).
+    # The row-level provenance does not distinguish the original measurement
+    # basis beyond the paired columns, so it belongs with the other mixed
+    # mass/volume compilations rather than with weighed masses.
+    ("DeCasien_etal_2017", "Brain Mass"):
+        ("mass", "mass_or_volume_mixed", "unknown", "unknown", "unknown", "unknown",
+         "mass_or_volume_mixed", True, "quoted", T),
+    # A literature compilation whose underlying database mixes reported brain
+    # masses with rows converted from volumes (the row Notes retain conversions
+    # such as the Ashwell values at 1.036 g/cm3).
+    ("Boddy_etal_2012", "Brain Mass (g)"):
         ("mass", "mass_or_volume_mixed", "unknown", "unknown", "unknown", "unknown",
          "mass_or_volume_mixed", True, "quoted", D),
     ("HerculanoHouzel__2015", "brain.mass..g.or.cm3."):
@@ -295,9 +319,22 @@ ASSIGN = {
 # quoted inclusion evidence that lives in a FOLDER definitions file rather than
 # in variable_catalog.csv, so the key can cite the exact wording
 FOLDER_QUOTES = {
+    ("Zilles_etal_2011", "brain_weight_fresh_mg"):
+        "brain_weight_fresh_mg -- supplementary table header explicitly identifies fresh brain weight",
+    ("Zilles_etal_2011", "brain_weight_fresh_g"):
+        "brain_weight_fresh_g -- supplementary table header explicitly identifies fresh brain weight",
+    ("Lewitus_etal_2013", "brain_weight_g"):
+        "Brain weight -- Table A1 footnote a attributes these values to Stephan et al. (1981), "
+        "whose source definition records fresh brain weight",
     ("Burger_etal_2019", "Mean_brain_mass_g"):
         "Mean brain mass -- compilation; 1 g = 1 cm3 conversion used when volumes reported "
         "(per source methods)",
+    ("DeCasien_etal_2017", "Brain Mass"):
+        "Brain Mass -- compiled mass values mixed with values calculated from the paired "
+        "Brain Vol column using 1.036 g/cm3 (as shown by the supplementary workbook)",
+    ("Boddy_etal_2012", "Brain Mass (g)"):
+        "Brain Mass (g) -- literature compilation; source-row notes identify brain masses "
+        "calculated from volumes as well as reported brain weights",
     ("HerculanoHouzel_etal_2015", "Brain mass, g"):
         "whole brain (both sides), NOT including the olfactory bulbs "
         "[Herculano-Houzel whole-brain definition, per AvelinodeSouza_etal_2025 definitions]",
@@ -404,6 +441,14 @@ RESOLVED = {
          "unknown", "unknown", "volume_mri_or_histological_mixed", True, "quoted", P),
 }
 ASSIGN.update(RESOLVED)
+
+# macOS and CSV sources do not agree on whether accented folder names use NFC
+# or decomposed Unicode (notably Rehkamper). Canonicalize keys before emitting
+# the CSV so the R merge's folder basename can resolve the recorded basis.
+ASSIGN = {(unicodedata.normalize("NFC", paper), col): value
+          for (paper, col), value in ASSIGN.items()}
+FOLDER_QUOTES = {(unicodedata.normalize("NFC", paper), col): value
+                 for (paper, col), value in FOLDER_QUOTES.items()}
 
 # ---- pull role + quoted definition out of variable_catalog.csv --------------
 cat_def, cat_role = {}, {}

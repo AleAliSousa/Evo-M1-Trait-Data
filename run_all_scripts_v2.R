@@ -83,6 +83,11 @@ SKIP_PATTERNS <- c(
   ## app's tree already exists (_keys/mammal_tree.nwk, built by __merging_trees/), so this runs
   ## only when someone is deliberately rebuilding it. See __ShinyApp/PHYLO_SETUP.md.
   "(^|/)combine_trees\\.R$"     = "optional tool; needs hand-supplied published source trees",
+  ## Curator action tool, not a build. When a proposal exists, running this script without
+  ## --dry-run applies accepted canonical-variable decisions and removes them from the proposal;
+  ## when no proposal exists it necessarily stops. Either outcome is inappropriate in a sweep.
+  "^_keys/apply_variable_canonical_proposed\\.R$" =
+    "curator action tool; applies adjudicated proposal rows and must be run deliberately",
   ## Same class: an on-demand QC differ whose reference table is an EXTERNAL hand-assembled CSV
   ## kept outside the repo (path in the script / EVOM1_REFERENCE_CSV). Without it the script
   ## can only hit its input guard, which is what the 2026-09-18 sweep logged as FAILED.

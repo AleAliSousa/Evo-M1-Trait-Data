@@ -131,6 +131,45 @@ for (i in seq_along(trait_files)) {
   }
 }
 traits <- unique(do.call(rbind, trait_rows))
+
+# ---- 2b. vetoes: traits_select_value_flags.csv ------------------------------
+# The same mechanism __merging_volumes/volumes_select_value_flags.csv gives the
+# volumes merge, with the same schema and the same `skip` action, applied to the
+# trait melt. It exists because superseding is not always enough: a column can
+# be a republication of an earlier source AND carry defects of its own (a
+# mis-cited source, an anatomy label the values contradict, a unit error), and
+# where its species labels do not collide with the merge's it slips past
+# variable_canonical.csv entirely and reaches the app as apparently new data.
+#
+# Source = trait file name, `*` = all species. A flagged row that matches
+# nothing is fatal: a veto silently doing nothing is how a defect comes back.
+flags_path <- file.path(TT, "traits_select_value_flags.csv")
+if (file.exists(flags_path)) {
+  fl <- read.csv(flags_path, stringsAsFactors = FALSE, check.names = FALSE,
+                 colClasses = "character", encoding = "UTF-8")
+  bad_action <- setdiff(unique(trim(fl$action)), c("skip", ""))
+  if (length(bad_action))
+    stop("traits_select_value_flags.csv: unknown action(s) ",
+         paste(bad_action, collapse = ", "), ". Only `skip` is implemented.")
+  fl <- fl[trim(fl$action) == "skip", , drop = FALSE]
+  # Map the flag's trait-file name to the Source label the melt stamped on rows.
+  for (i in seq_len(nrow(fl))) {
+    fsrc <- trim(fl$Source[i]); fsp <- trim(fl$Species[i]); fvar <- trim(fl$Variable[i])
+    label <- unname(trait_files[fsrc])
+    if (is.na(label))
+      stop("traits_select_value_flags.csv row ", i, ": Source '", fsrc,
+           "' is not one of the melted trait files.")
+    sel <- traits$Variable == fvar & traits$Source == label
+    if (fsp != "*") sel <- sel & traits$Species == fsp
+    if (!any(sel))
+      stop("traits_select_value_flags.csv row ", i, " (", fsrc, " / ", fvar,
+           ") matched no melted rows. A veto that matches nothing is a broken ",
+           "veto -- fix the Source/Variable spelling or remove the row.")
+    message("  veto: dropped ", sum(sel), " row(s) -- ", fvar, " [", fsrc, "]")
+    traits <- traits[!sel, , drop = FALSE]
+  }
+}
+
 write.csv(traits, file.path(out, "evom1_traits_long.csv"),
           row.names = FALSE, fileEncoding = "UTF-8")
 message("evom1 traits rows: ", nrow(traits))

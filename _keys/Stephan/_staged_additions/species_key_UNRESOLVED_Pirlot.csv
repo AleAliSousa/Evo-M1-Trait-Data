@@ -1,0 +1,8 @@
+source_publication,variant_name,reason_needs_review
+Pirlot1981,Marmosa (Thylamys) sp.,"genus-level only, printed as 'sp.' - no species epithet given; author notes body wt 170g"
+Pirlot1981,Metachirops (?) sp.,"author's OWN taxonomic uncertainty (see specimen note) - genus now synonymized with Philander; specimen resembles Cabrera & Yepez' Metachirops per author, not typical Philander - needs specimen-level review, see specimen-taxon-tracking"
+Pirlot1981,Dasyurus quoll,"'quoll' is a common name, not a valid specific epithet; likely OCR corruption of the true epithet (4 candidate species: hallucatus/maculatus/geoffroii/viverrinus) - re-check against clean PDF/original print"
+Pirlot1981_TableII,Marmosa domina,printed genus-only+epithet combo not matched to a confident current binomial by name lookup alone - cross-check against Table I's 'Marmosa (m.) domina' and confirm current accepted name before adding
+Pirlot1981_TableII,Marmosa thylamys,genus Thylamys now separate from Marmosa; species-level identity unclear from 'thylamys' alone (may be a subgeneric label rather than a species epithet) - verify
+Pirlot1981_TableII,Metachirops,same author-flagged identity problem as Table I row (8); Table II omits the '(?)' - do not silently treat as resolved
+Pirlot1981_TableII,Dasyurus,genus-only in Table II; same underlying identity question as the 'Dasyurus quoll' flag above

@@ -1,0 +1,56 @@
+reference,canonical_structure,measure,anatomy_code,original_column
+Pirlot_1981,Bulbus_olfactorius,Volume_mm3,BO,BO_mm3
+Pirlot_1981,Neocortex,Volume_mm3,N,N_mm3
+Pirlot_1981,Rhinencephalon,Volume_mm3,RH,RH_mm3
+Pirlot_1981,Pyriform_cortex,Volume_mm3,PY,PY_mm3
+Pirlot_1981,Septum,Volume_mm3,S,S_mm3
+Pirlot_1981,Diencephalon,Volume_mm3,Di,Di_mm3
+Pirlot_1981,Striatum,Volume_mm3,STR,STR_mm3
+Pirlot_1981,Hippocampus,Volume_mm3,Hi,Hi_mm3
+Pirlot_1981,Mesencephalon,Volume_mm3,M,M_mm3
+Pirlot_1981,Cerebellum,Volume_mm3,C,C_mm3
+Pirlot_1981,Medulla_oblongata,Volume_mm3,O,O_mm3
+Pirlot_1981,Schizocortex,Volume_mm3,Sz,Sz_mm3
+Pirlot_1981,Body_weight,Mass,,body_weight_g
+Pirlot_1981,Brain_weight,Mass,,brain_weight_mg
+Pirlot_Nelson_1978,Neocortex,Volume_mm3,Neo,component=Neo
+Pirlot_Nelson_1978,Schizocortex,Volume_mm3,Scz,component=Scz
+Pirlot_Nelson_1978,Hippocampus,Volume_mm3,Hip,component=Hip
+Pirlot_Nelson_1978,Septum,Volume_mm3,Sep,component=Sep
+Pirlot_Nelson_1978,Palaeocortex_plus_amygdala,Volume_mm3,Pal,component=Pal
+Pirlot_Nelson_1978,Bulbus_olfactorius,Volume_mm3,Bul,component=Bul
+Pirlot_Nelson_1978,Striatum,Volume_mm3,Str,component=Str
+Pirlot_Nelson_1978,Diencephalon,Volume_mm3,Di,component=Di
+Pirlot_Nelson_1978,Mesencephalon,Volume_mm3,Mes,component=Mes
+Pirlot_Nelson_1978,Cerebellum,Volume_mm3,CbI,component=CbI
+Pirlot_Nelson_1978,Medulla_oblongata,Volume_mm3,Med,component=Med
+Pirlot_Nelson_1978,Mesocortex,Volume_mm3,Mesocortex,component=Mesocortex
+Kamiya_Pirlot_1988,Bulbus_olfactorius,Progression_index,BO,component=BO
+Kamiya_Pirlot_1988,Neocortex,Progression_index,N,component=N
+Kamiya_Pirlot_1988,Rhinencephalon,Progression_index,RH,component=RH
+Kamiya_Pirlot_1988,Septum,Progression_index,S,component=S
+Kamiya_Pirlot_1988,Diencephalon,Progression_index,D,component=D
+Kamiya_Pirlot_1988,Striatum,Progression_index,ST,component=ST
+Kamiya_Pirlot_1988,Hippocampus,Progression_index,H,component=H
+Kamiya_Pirlot_1988,Mesencephalon,Progression_index,M,component=M
+Kamiya_Pirlot_1988,Cerebellum,Progression_index,C,component=C
+Kamiya_Pirlot_1988,Medulla_oblongata,Progression_index,O,component=O
+Pirlot_Jiao_1985,Bulbus_olfactorius,Volume_mm3,BO,*_volume_mm3 (row BO)
+Pirlot_Jiao_1985,Neocortex,Volume_mm3,N,*_volume_mm3 (row N)
+Pirlot_Jiao_1985,Rhinencephalon,Volume_mm3,RH,*_volume_mm3 (row RH)
+Pirlot_Jiao_1985,Septum,Volume_mm3,S,*_volume_mm3 (row S)
+Pirlot_Jiao_1985,Diencephalon,Volume_mm3,D,*_volume_mm3 (row D)
+Pirlot_Jiao_1985,Striatum,Volume_mm3,ST,*_volume_mm3 (row ST)
+Pirlot_Jiao_1985,Hippocampus,Volume_mm3,H,*_volume_mm3 (row H)
+Pirlot_Jiao_1985,Mesencephalon,Volume_mm3,M,*_volume_mm3 (row M)
+Pirlot_Jiao_1985,Cerebellum,Volume_mm3,C,*_volume_mm3 (row C)
+Pirlot_Jiao_1985,Medulla_oblongata,Volume_mm3,O,*_volume_mm3 (row O)
+Kamiya_Pirlot_1980,Neocortex,Volume_mm3 (also % + progression_index columns),N,"component=N [UNCONFIRMED - source PDF is an unreadable scan, definitions inferred by analogy to Kamiya_Pirlot_1988/Pirlot_Jiao_1985's identical code set - verify against a legible copy of Kamiya & Pirlot 1980 before use]"
+Kamiya_Pirlot_1980,Rhinencephalon,Volume_mm3 (also % + progression_index columns),Rh,"component=Rh [UNCONFIRMED - source PDF is an unreadable scan, definitions inferred by analogy to Kamiya_Pirlot_1988/Pirlot_Jiao_1985's identical code set - verify against a legible copy of Kamiya & Pirlot 1980 before use]"
+Kamiya_Pirlot_1980,Septum,Volume_mm3 (also % + progression_index columns),S,"component=S [UNCONFIRMED - source PDF is an unreadable scan, definitions inferred by analogy to Kamiya_Pirlot_1988/Pirlot_Jiao_1985's identical code set - verify against a legible copy of Kamiya & Pirlot 1980 before use]"
+Kamiya_Pirlot_1980,Diencephalon,Volume_mm3 (also % + progression_index columns),D,"component=D [UNCONFIRMED - source PDF is an unreadable scan, definitions inferred by analogy to Kamiya_Pirlot_1988/Pirlot_Jiao_1985's identical code set - verify against a legible copy of Kamiya & Pirlot 1980 before use]"
+Kamiya_Pirlot_1980,Striatum,Volume_mm3 (also % + progression_index columns),St,"component=St [UNCONFIRMED - source PDF is an unreadable scan, definitions inferred by analogy to Kamiya_Pirlot_1988/Pirlot_Jiao_1985's identical code set - verify against a legible copy of Kamiya & Pirlot 1980 before use]"
+Kamiya_Pirlot_1980,Hippocampus,Volume_mm3 (also % + progression_index columns),H,"component=H [UNCONFIRMED - source PDF is an unreadable scan, definitions inferred by analogy to Kamiya_Pirlot_1988/Pirlot_Jiao_1985's identical code set - verify against a legible copy of Kamiya & Pirlot 1980 before use]"
+Kamiya_Pirlot_1980,Mesencephalon,Volume_mm3 (also % + progression_index columns),M,"component=M [UNCONFIRMED - source PDF is an unreadable scan, definitions inferred by analogy to Kamiya_Pirlot_1988/Pirlot_Jiao_1985's identical code set - verify against a legible copy of Kamiya & Pirlot 1980 before use]"
+Kamiya_Pirlot_1980,Cerebellum,Volume_mm3 (also % + progression_index columns),C,"component=C [UNCONFIRMED - source PDF is an unreadable scan, definitions inferred by analogy to Kamiya_Pirlot_1988/Pirlot_Jiao_1985's identical code set - verify against a legible copy of Kamiya & Pirlot 1980 before use]"
+Kamiya_Pirlot_1980,Medulla_oblongata,Volume_mm3 (also % + progression_index columns),O,"component=O [UNCONFIRMED - source PDF is an unreadable scan, definitions inferred by analogy to Kamiya_Pirlot_1988/Pirlot_Jiao_1985's identical code set - verify against a legible copy of Kamiya & Pirlot 1980 before use]"

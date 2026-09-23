@@ -1,0 +1,9 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species,species binomial/genus AS PUBLISHED,,Species,,primary,Marsupialia (South America + Australia),Pirlot__1981_TABLEI,Metachirops (?) sp. (row 8): author's own uncertainty - 'raises a problem that I cannot discuss here...my specimen was fairly different from the usual Philander type...a Brazilian zoologist told me he considered it Metachirops' (p.230-231); Marmosa (Thylamys) sp. is genus-level only,
+collection,museum/collection specimen code,,id,,primary,Marsupialia,Pirlot__1981_TABLEI,,
+sex,M/F/? as printed,,sex,,primary,Marsupialia,Pirlot__1981_TABLEI,,
+use,S or W code,,use,,primary,Marsupialia,Pirlot__1981_TABLEI,S = sectioned and used for component analysis as well as for encephalization estimate; W = weighed and used for encephalization estimate only (p.230 footnote),
+body_weight_g,"body weight (col 'Body-weight', g)",body,mass,value g,primary,Marsupialia,Pirlot__1981_TABLEI,Specimen (11) Marmosa (Thylamys) sp. value (2200) printed in parentheses - retained as printed per README,
+brain_weight_mg,"brain weight (col 'Brain-weight', mg)",brain,mass,value mg,primary,Marsupialia,Pirlot__1981_TABLEI,,
+note,Antechinus flavipes marked (x): collector could not say whether adult or young (p.230 footnote),,,,provenance,Marsupialia,Pirlot__1981_TABLEI,,
+source,registry item key,,,,provenance,Marsupialia,Pirlot__1981_TABLEI,,

@@ -93,6 +93,24 @@ sheet       <- "Sheet1"
 # -----------------------------------------------------------------------------
 ROWS <- list(
   list(
+    item_name = "Heffner_Masterton_1983_TableI",
+    item_encoded = "10.1159%2F000121494_TableI",
+    fields = list(
+      `Citation (APA 7th-Annotated)` = paste0(
+        "Heffner, R. S., & Masterton, R. B. (1983). The role of the corticospinal tract ",
+        "in the evolution of human digital dexterity. Brain Behav Evol, 23(3-4), ",
+        "165-183. https://doi.org/10.1159/000121494"),
+      `Item number` = "Table I",
+      `Item full original title` =
+        "Table I. Animals and descriptive data on which all correlations are based",
+      `N.B.` = paste0(
+        "RESTORED: the fully built source folder and public TSV remained after this Sheet1 ",
+        "row was lost. 21-species secondary compilation of digital-dexterity ranks and ",
+        "corticospinal-tract measurements; see the folder ReadMe and definitions."),
+      `Progress stage` = "FINISHED",
+      `Snapshot name if unchanged` = "Heffner_Masterton_1983_TableI_snapshot.xlsx",
+      `Source format` = "PDF table")),
+  list(
     item_name = "Zilles_Rehkämper_1988_Table12-2",
     item_encoded = "ISBN%3A9780195043716_Table12-2",
     fields = list(

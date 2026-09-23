@@ -12,7 +12,9 @@ active,DUSSELDORF_HIRNFORSCHUNG,Zilles/Amunts,"human developmental (prenatal/adu
 active,DUSSELDORF_HIRNFORSCHUNG,Zilles-Amunts,"same sub-collection, hyphenated form",Zilles et al. (2011) names this the third of its 'three brain collections'; catalogue codes (e.g. H x/xx) overlap the Hirnforschung/Stephan-Zilles shared collection's human codes
 active,WELKER_AFIP,Welker,"Welker Wisconsin collection, later NMHM/AFIP","collection transferred institution; the qualifier (AFIP / NMHM) belongs in collection_qualifier, not the group"
 active,WELKER_AFIP,Welker / University of Wisconsin comparative collection,"same collection, spelled out","collection transferred institution; the qualifier (AFIP / NMHM) belongs in collection_qualifier, not the group"
+active,WELKER_AFIP,University of Wisconsin comparative brain collection,"same collection, fuller phrasing with 'brain'","Armstrong 1979 uses this fuller phrasing; same collection as Welker / University of Wisconsin comparative collection."
 active,YAKOVLEV,Yakovlev-Haleem,Yakovlev-Haleem human collection,
+active,YAKOVLEV,Yakovlev Collection,"same collection, alternate short form","Armstrong 1979 uses this shorthand for the Yakovlev-Haleem collection."
 active,GWU,GWU,George Washington University,
 active,MOUNT_SINAI,Mount Sinai,Mount Sinai School of Medicine,
 active,GAAP,GAAP,Great Ape Aging Project,
@@ -31,3 +33,4 @@ active,<parse rule>,...; from <institution>,"RULE: a component beginning ""from 
 active,THOMAS_JEFFERSON_MEDICAL,Thomas Jefferson Medical College,Thomas Jefferson Medical College comparative brain collection,"New for Armstrong 1979 (Hylo.-s / Hylo.-h, one gibbon brain sectioned two ways); no other repo source cites this collection yet."
 active,MPI_FRANKFURT,Max Planck Institute Frankfurt,"Max Planck Institute for Brain Research, Frankfurt","New for Armstrong 1979 (H. lar-t, presumably wild-caught Hylobates lar); no other repo source cites this collection yet."
 active,COLUMBIA_BRONX_ZOO,Columbia University / Bronx Zoo,Columbia University / Bronx Zoo gorilla specimen,New for Armstrong 1979 (Gorilla g.); no other repo source cites this collection yet.
+active,IOWA_NEUROLOGY,University of Iowa (Department of Neurology),"University of Iowa comparative brain collection, Department of Neurology","New for Semendeferi & Damasio 2000 (10 specimens); no other repo source cites this collection yet."

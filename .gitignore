@@ -1,16 +1,19 @@
 
+# R / editor / OS working-state junk -- never commit, in any folder
 .Rhistory
 .DS_Store
-____zz_tablewrangling_unused_saved_stuff/.DS_Store
-__Public/.DS_Store
-.Rhistory
-.DS_Store
-____Unpublished__ProjectKaskan/.Rhistory
-____Unpublished__ProjectKaskan/.Rhistory
-HerculanoHouzel_etal_2020/.RData
-____Unpublished__ProjectKaskan/.Rhistory
-____Unpublished__ProjectKaskan/.Rhistory
+.Rproj.user
+
+# FUSE-mounted-filesystem temp files (created when a program deletes an open
+# file on a network/cloud-sync mount, e.g. OneDrive's fuse layer): arbitrary
+# leftover bytes, never meant to be read. 34 of these had been committed.
+.fuse_hidden*
+
+# R session-workspace dumps: personal working state, not a data product.
+# opsin_explorer_data.RData is the one exception -- it's a real, used data
+# bundle (built by setup_data.R, loaded by vertebrate_opsin_explorer/app.R).
+*.RData
+!vertebrate_opsin_explorer/opsin_explorer_data.RData
 
 # Local agent / editor state — never commit
 .claude/
-.Rproj.user

@@ -100,7 +100,11 @@ strip_trailing_paren <- function(text) {
   else list(base = text, qualifier = "")
 }
 
-NA_VALUES <- c("na", "nan", "n/a", "?", "-", "unknown", "not stated", "")
+# Only genuinely blank/placeholder tokens with no registry row of their own.
+# "unknown" and "not stated" are NOT here -- both have explicit UNKNOWN rows
+# in collection_registry.csv and must resolve through that lookup like any
+# other string, not be silently skipped.
+NA_VALUES <- c("na", "nan", "n/a", "?", "-", "")
 
 # ---- 4. resolve one raw collection string -----------------------------------
 resolve_group <- function(text, depth = 0L) {

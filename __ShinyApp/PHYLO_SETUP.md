@@ -72,13 +72,16 @@ many dataset species end up on the combined tree.
 install.packages("ape")              # one time, for PGLS
 ```
 ```bash
-Rscript __ShinyApp/build_data.R      # copies the tree into __ShinyApp/data/ too
-git add _keys/mammal_tree.* __ShinyApp/data/mammal_tree.*
+git add _keys/mammal_tree.*
 git commit -m "Add source phylogeny for PGLS" && git push
 ```
 
-The app loads the tree from GitHub (`_keys/mammal_tree.*`) with the bundled
-`data/` copy as offline fallback.
+The app loads the tree from GitHub (`_keys/mammal_tree.*`). It is **not** copied
+into `__ShinyApp/data/` — that folder holds only files which exist nowhere else
+(see DEPLOY.md, "Why `data/` holds only two files"), and `build_data.R` will
+abort if a copy is put there. The practical consequence: if GitHub is
+unreachable, PGLS quietly disables rather than erroring, since the tree is
+optional.
 
 ## How it works
 

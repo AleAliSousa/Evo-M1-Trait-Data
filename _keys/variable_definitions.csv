@@ -272,6 +272,16 @@ ILA Subpial Dorsal,cellular composition,interlaminar_astrocytes,CerebralCortex,I
 ILA Subpial Ventral,cellular composition,interlaminar_astrocytes,CerebralCortex,ILA_presence,category,True,,"presence of subpial ILA in the VENTRAL frontal cortex, same three-level scoring as ILA Subpial Dorsal",source_definition,Falcone_etal_2019/Falcone_etal_2019_TABLE1_definitions.csv,ILA Subpial Ventral,ILA
 ILA total length,cellular composition,interlaminar_astrocytes,CerebralCortex,ILA_total_length,um,True,,"summed length of all processes of a pial ILA, in micrometres, averaged over the cells reconstructed per species",source_definition,Falcone_etal_2019/Falcone_etal_2019_TABLE2_definitions.csv,ILA total length,ILA
 ILA total processes,cellular composition,interlaminar_astrocytes,CerebralCortex,ILA_total_processes,count,True,,"total number of processes per pial ILA (counted as branching nodes), averaged over the cells reconstructed per species",source_definition,Falcone_etal_2019/Falcone_etal_2019_TABLE2_definitions.csv,ILA total processes,ILA
+Cerebellum_I.p.mg,cellular composition,microglia_density,Cerebellum,I.p.mg,cells/mg,True,,Cerebellum: microglia per milligram,composed,_keys/glossary.csv + _keys/variable_domain.csv,,I.p.mg
+CerebralCortex_I.p.mg,cellular composition,microglia_density,CerebralCortex,I.p.mg,cells/mg,True,,CerebralCortex: microglia per milligram,composed,_keys/glossary.csv + _keys/variable_domain.csv,,I.p.mg
+Hippocampus_I.p.mg,cellular composition,microglia_density,Hippocampus,I.p.mg,cells/mg,True,,Hippocampus: microglia per milligram,composed,_keys/glossary.csv + _keys/variable_domain.csv,,I.p.mg
+RoB_I.p.mg,cellular composition,microglia_density,RoB,I.p.mg,cells/mg,True,,rest of brain: microglia per milligram,composed,_keys/glossary.csv + _keys/variable_domain.csv,,I.p.mg|RoB
+WholeBrain_I.p.mg,cellular composition,microglia_density,WholeBrain,I.p.mg,cells/mg,True,,WholeBrain: microglia per milligram,composed,_keys/glossary.csv + _keys/variable_domain.csv,,I.p.mg
+Cerebellum_I.n,cellular composition,microglia_number,Cerebellum,I.n,count,True,,Cerebellum: number of microglia,composed,_keys/glossary.csv + _keys/variable_domain.csv,,I.n
+CerebralCortex_I.n,cellular composition,microglia_number,CerebralCortex,I.n,count,True,,CerebralCortex: number of microglia,composed,_keys/glossary.csv + _keys/variable_domain.csv,,I.n
+Hippocampus_I.n,cellular composition,microglia_number,Hippocampus,I.n,count,True,,Hippocampus: number of microglia,composed,_keys/glossary.csv + _keys/variable_domain.csv,,I.n
+RoB_I.n,cellular composition,microglia_number,RoB,I.n,count,True,,rest of brain: number of microglia,composed,_keys/glossary.csv + _keys/variable_domain.csv,,I.n|RoB
+WholeBrain_I.n,cellular composition,microglia_number,WholeBrain,I.n,count,True,,WholeBrain: number of microglia,composed,_keys/glossary.csv + _keys/variable_domain.csv,,I.n
 Cerebellum_I.p.C,cellular composition,microglia_per_cell,Cerebellum,I.p.C,ratio,True,,Cerebellum: microglia per cell,composed,_keys/glossary.csv + _keys/variable_domain.csv,,I.p.C
 CerebralCortex_I.p.C,cellular composition,microglia_per_cell,CerebralCortex,I.p.C,ratio,True,,CerebralCortex: microglia per cell,composed,_keys/glossary.csv + _keys/variable_domain.csv,,I.p.C
 CerebralCortexNoHippocampus_I.p.C,cellular composition,microglia_per_cell,CerebralCortexNoHippocampus,I.p.C,ratio,True,,CerebralCortexNoHippocampus: microglia per cell,composed,_keys/glossary.csv + _keys/variable_domain.csv,,I.p.C
@@ -294,7 +304,22 @@ PonsMedulla_N.p.mg,cellular composition,neuron_density,PonsMedulla,N.p.mg,cells/
 RoB_N.p.mg,cellular composition,neuron_density,RoB,N.p.mg,cells/mg,True,,rest-of-brain neuronal density,source_definition,Kazu_etal_2014/reference_tables/Kazu_etal_2014_Table1_definitions.csv,RoB_N.p.mg,N.p.mg|RoB
 SpinalCord_N.p.mg,cellular composition,neuron_density,SpinalCord,N.p.mg,cells/mg,True,,SpinalCord: neurons per milligram,composed,_keys/glossary.csv + _keys/variable_domain.csv,,N.p.mg
 WholeBrain_N.p.mg,cellular composition,neuron_density,WholeBrain,N.p.mg,cells/mg,True,,WholeBrain: neurons per milligram,composed,_keys/glossary.csv + _keys/variable_domain.csv,,N.p.mg
+WholeBrainOlfactoryBulb_N.p.mg,cellular composition,neuron_density,WholeBrainOlfactoryBulb,N.p.mg,cells/mg,True,,WholeBrainOlfactoryBulb: neurons per milligram,composed,_keys/glossary.csv + _keys/variable_domain.csv,,N.p.mg
+Amygdala_p.C.N,cellular composition,neuron_fraction,Amygdala,p.C.N,%,True,,Amygdala: percent neurons,composed,_keys/glossary.csv + _keys/variable_domain.csv,,p.C.N
+Cerebellum_p.C.N,cellular composition,neuron_fraction,Cerebellum,p.C.N,%,True,,Cerebellum: percent neurons,composed,_keys/glossary.csv + _keys/variable_domain.csv,,p.C.N
+CerebralCortex_p.C.N,cellular composition,neuron_fraction,CerebralCortex,p.C.N,%,True,,CerebralCortex: percent neurons,composed,_keys/glossary.csv + _keys/variable_domain.csv,,p.C.N
+CerebralCortexGrey_p.C.N,cellular composition,neuron_fraction,CerebralCortexGrey,p.C.N,%,True,,CerebralCortexGrey: percent neurons,composed,_keys/glossary.csv + _keys/variable_domain.csv,,p.C.N
+CerebralCortexWhite_p.C.N,cellular composition,neuron_fraction,CerebralCortexWhite,p.C.N,%,True,,CerebralCortexWhite: percent neurons,composed,_keys/glossary.csv + _keys/variable_domain.csv,,p.C.N
+DiencephalonStriatum_p.C.N,cellular composition,neuron_fraction,DiencephalonStriatum,p.C.N,%,True,,DiencephalonStriatum: percent neurons,composed,_keys/glossary.csv + _keys/variable_domain.csv,,p.C.N
+Hippocampus_p.C.N,cellular composition,neuron_fraction,Hippocampus,p.C.N,%,True,,Hippocampus: percent neurons,composed,_keys/glossary.csv + _keys/variable_domain.csv,,p.C.N
+Medulla_p.C.N,cellular composition,neuron_fraction,Medulla,p.C.N,%,True,,Medulla: percent neurons,composed,_keys/glossary.csv + _keys/variable_domain.csv,,p.C.N
+Mesencephalon_p.C.N,cellular composition,neuron_fraction,Mesencephalon,p.C.N,%,True,,Mesencephalon: percent neurons,composed,_keys/glossary.csv + _keys/variable_domain.csv,,p.C.N
+OlfactoryBulb_p.C.N,cellular composition,neuron_fraction,OlfactoryBulb,p.C.N,%,True,,OlfactoryBulb: percent neurons,composed,_keys/glossary.csv + _keys/variable_domain.csv,,p.C.N
+Pons_p.C.N,cellular composition,neuron_fraction,Pons,p.C.N,%,True,,Pons: percent neurons,composed,_keys/glossary.csv + _keys/variable_domain.csv,,p.C.N
+RoB_p.C.N,cellular composition,neuron_fraction,RoB,p.C.N,%,True,,rest of brain: percent neurons,composed,_keys/glossary.csv + _keys/variable_domain.csv,,p.C.N|RoB
 SpinalCord_p.C.CNS.neurons,cellular composition,neuron_fraction,SpinalCord,p.C.CNS.neurons,%,True,,SpinalCord: percent of CNS neurons,composed,_keys/glossary.csv + _keys/variable_domain.csv,,p.C.CNS.neurons
+SpinalCord_p.C.N,cellular composition,neuron_fraction,SpinalCord,p.C.N,%,True,,SpinalCord: percent neurons,composed,_keys/glossary.csv + _keys/variable_domain.csv,,p.C.N
+WholeBrain_p.C.N,cellular composition,neuron_fraction,WholeBrain,p.C.N,%,True,,WholeBrain: percent neurons,composed,_keys/glossary.csv + _keys/variable_domain.csv,,p.C.N
 Amygdala_N.n,cellular composition,neuron_number,Amygdala,N.n,count,True,,Amygdala: number of neurons,composed,_keys/glossary.csv + _keys/variable_domain.csv,,N.n
 Cerebellum_N.n,cellular composition,neuron_number,Cerebellum,N.n,count,True,,cerebellum neuron number,source_definition,Kazu_etal_2014/reference_tables/Kazu_etal_2014_Table1_definitions.csv,Cerebellum_N.n,N.n
 CerebralCortex_N.n,cellular composition,neuron_number,CerebralCortex,N.n,count,True,,cerebral cortex neuron number (grey + white + hippocampus),source_definition,Kazu_etal_2014/reference_tables/Kazu_etal_2014_Table1_definitions.csv,CerebralCortex_N.n,N.n
@@ -356,8 +381,21 @@ OlfactoryBulb_O.p.N,cellular composition,other_cell_per_neuron,OlfactoryBulb,O.p
 Pons_O.p.N,cellular composition,other_cell_per_neuron,Pons,O.p.N,ratio,True,,Pons: other cells per neuron,composed,_keys/glossary.csv + _keys/variable_domain.csv,,O.p.N
 PonsMedulla_O.p.N,cellular composition,other_cell_per_neuron,PonsMedulla,O.p.N,ratio,True,,pons + medulla other-cell / neuron ratio,source_definition,Kazu_etal_2014/reference_tables/Kazu_etal_2014_Table1_definitions.csv,PonsMedulla_O.p.N,O.p.N
 RoB_O.p.N,cellular composition,other_cell_per_neuron,RoB,O.p.N,ratio,True,,rest-of-brain other-cell / neuron ratio,source_definition,Kazu_etal_2014/reference_tables/Kazu_etal_2014_Table1_definitions.csv,RoB_O.p.N,O.p.N|RoB
+SpinalCord_O.p.N,cellular composition,other_cell_per_neuron,SpinalCord,O.p.N,ratio,True,,SpinalCord: other cells per neuron,composed,_keys/glossary.csv + _keys/variable_domain.csv,,O.p.N
 WholeBrain_O.p.N,cellular composition,other_cell_per_neuron,WholeBrain,O.p.N,ratio,True,,whole-brain other-cell / neuron ratio,source_definition,Kazu_etal_2014/reference_tables/Kazu_etal_2014_Table1_definitions.csv,WholeBrain_O.p.N,O.p.N
 SpinalCord_p.C.Body.mass,cellular composition,structure_fraction,SpinalCord,p.C.Body.mass,%,True,,SpinalCord: percent of body mass,composed,_keys/glossary.csv + _keys/variable_domain.csv,,p.C.Body.mass
+Amygdala_C.n,cellular composition,total_cell_number,Amygdala,C.n,count,True,,Amygdala: total number of cells,composed,_keys/glossary.csv + _keys/variable_domain.csv,,C.n
+Cerebellum_C.n,cellular composition,total_cell_number,Cerebellum,C.n,count,True,,Cerebellum: total number of cells,composed,_keys/glossary.csv + _keys/variable_domain.csv,,C.n
+CerebralCortex_C.n,cellular composition,total_cell_number,CerebralCortex,C.n,count,True,,CerebralCortex: total number of cells,composed,_keys/glossary.csv + _keys/variable_domain.csv,,C.n
+CerebralCortexGrey_C.n,cellular composition,total_cell_number,CerebralCortexGrey,C.n,count,True,,CerebralCortexGrey: total number of cells,composed,_keys/glossary.csv + _keys/variable_domain.csv,,C.n
+CerebralCortexWhite_C.n,cellular composition,total_cell_number,CerebralCortexWhite,C.n,count,True,,CerebralCortexWhite: total number of cells,composed,_keys/glossary.csv + _keys/variable_domain.csv,,C.n
+DiencephalonStriatum_C.n,cellular composition,total_cell_number,DiencephalonStriatum,C.n,count,True,,DiencephalonStriatum: total number of cells,composed,_keys/glossary.csv + _keys/variable_domain.csv,,C.n
+Hippocampus_C.n,cellular composition,total_cell_number,Hippocampus,C.n,count,True,,Hippocampus: total number of cells,composed,_keys/glossary.csv + _keys/variable_domain.csv,,C.n
+Medulla_C.n,cellular composition,total_cell_number,Medulla,C.n,count,True,,Medulla: total number of cells,composed,_keys/glossary.csv + _keys/variable_domain.csv,,C.n
+Mesencephalon_C.n,cellular composition,total_cell_number,Mesencephalon,C.n,count,True,,Mesencephalon: total number of cells,composed,_keys/glossary.csv + _keys/variable_domain.csv,,C.n
+OlfactoryBulb_C.n,cellular composition,total_cell_number,OlfactoryBulb,C.n,count,True,,OlfactoryBulb: total number of cells,composed,_keys/glossary.csv + _keys/variable_domain.csv,,C.n
+Pons_C.n,cellular composition,total_cell_number,Pons,C.n,count,True,,Pons: total number of cells,composed,_keys/glossary.csv + _keys/variable_domain.csv,,C.n
+RoB_C.n,cellular composition,total_cell_number,RoB,C.n,count,True,,rest of brain: total number of cells,composed,_keys/glossary.csv + _keys/variable_domain.csv,,C.n|RoB
 SpinalCord_C.n,cellular composition,total_cell_number,SpinalCord,C.n,count,True,,SpinalCord: total number of cells,composed,_keys/glossary.csv + _keys/variable_domain.csv,,C.n
 WholeBrain_C.n,cellular composition,total_cell_number,WholeBrain,C.n,count,True,,WholeBrain: total number of cells,composed,_keys/glossary.csv + _keys/variable_domain.csv,,C.n
 V1_mitochondria_density_per_mm2,cellular composition,v1_ultrastructure,V1,MitochondriaDensity.p.mm2,1/mm2,True,,"project standardized term: mitochondria density in area V1, mitochondria per mm2",source_definition,Karl_etal_2024/Karl_etal_2024_TABLE1_definitions.csv,V1_mitochondria_density_per_mm2,V1

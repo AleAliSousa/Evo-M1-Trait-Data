@@ -1,14 +1,14 @@
 #!/usr/bin/env Rscript
 # =============================================================================
 # build_data.R  --  regenerate the Shiny app's derived data from the canonical
-# repo files. data/ holds only:
+# repo files. data/ holds ONLY the two files that exist nowhere else:
 #   * evom1_traits_long.csv  (DERIVED: melted from ____EvoM1_TraitTable/*.xlsx)
 #   * source_manifest.csv    (DERIVED: source-table catalogue + citations)
-#   * volumes_long.csv, cellcounts_long.csv  (small fallback copies)
 #
-# The app reads everything from GitHub at runtime; these files are the fallback
-# plus the two things that don't exist anywhere else. Re-run whenever the merge
-# or trait tables change, then commit + push:
+# Everything else the app needs is read from its canonical home (_keys/,
+# __merging_*/) over GitHub at runtime -- there are no fallback copies, by
+# design; see section 1 below. Re-run whenever the merge or trait tables
+# change, then commit + push:
 #
 #     Rscript __ShinyApp/build_data.R
 #
@@ -29,80 +29,33 @@ message("out:  ", out)
 
 trim <- function(x) trimws(as.character(x))
 
-# ---- 1. fallback copies of the two compiled long tables ---------------------
-invisible(file.copy(file.path(repo, "__merging_volumes", "volumes_long.csv"),
-          file.path(out, "volumes_long.csv"), overwrite = TRUE))
-invisible(file.copy(file.path(repo, "__merging_cellcounts", "cellcounts_long.csv"),
-          file.path(out, "cellcounts_long.csv"), overwrite = TRUE))
-# canonical variable map + species aliases (fallback copies for offline mode)
-invisible(file.copy(file.path(repo, "_keys", "variable_canonical.csv"),
-          file.path(out, "variable_canonical.csv"), overwrite = TRUE))
-invisible(file.copy(file.path(repo, "_keys", "species_display_aliases.csv"),
-          file.path(out, "species_display_aliases.csv"), overwrite = TRUE))
-# authoritative body-mass & brain-mass merges (single source of truth for those
-# measures; the app supersedes the raw body/brain-mass columns with these)
-invisible(file.copy(file.path(repo, "__merging_body_ecology", "body_ecology_long.csv"),
-          file.path(out, "body_ecology_long.csv"), overwrite = TRUE))
-invisible(file.copy(file.path(repo, "__merging_brain_mass", "brain_mass_long.csv"),
-          file.path(out, "brain_mass_long.csv"), overwrite = TRUE))
-# behavioural traits: one keyed merge (vocal repertoire, dexterity, gait,
-# locomotion, handedness, manipulation), resolved per species with source keys.
-invisible(file.copy(file.path(repo, "__merging_behaviour", "behaviour_long.csv"),
-          file.path(out, "behaviour_long.csv"), overwrite = TRUE))
-# cerebellar folding/surface measurements are method-specific and therefore live
-# in their own merge rather than being pooled with Ashwell foliation or cortical GI.
-invisible(file.copy(file.path(repo, "__merging_cerebellar_folding", "cerebellar_folding_long.csv"),
-          file.path(out, "cerebellar_folding_long.csv"), overwrite = TRUE))
-# endocranial volume (cranial capacity), mL. Separate from brain mass on purpose:
-# it is the capacity of the braincase, so it includes meninges, CSF and vessels.
-invisible(file.copy(file.path(repo, "__merging_endocranial_volume", "endocranial_volume_long.csv"),
-          file.path(out, "endocranial_volume_long.csv"), overwrite = TRUE))
-# cerebral metabolic rate: regional + whole-brain glucose (CMRgl), oxygen (CMRO2)
-# and perfusion (CBF), keyed Species x Region x Measure. Absolute whole-brain
-# totals (umol/min, mL/min) are a separate measure class in the same merge.
-invisible(file.copy(file.path(repo, "__merging_cerebral_metabolic_rate", "cerebral_metabolic_rate_long.csv"),
-          file.path(out, "cerebral_metabolic_rate_long.csv"), overwrite = TRUE))
-# species taxonomy lookup (Order/Family) for the plot clade filter
-invisible(file.copy(file.path(repo, "_keys", "species_taxonomy.csv"),
-          file.path(out, "species_taxonomy.csv"), overwrite = TRUE))
-# 2026-09-22: seven merges newly wired into the app (see app.R load_compiled()).
-invisible(file.copy(file.path(repo, "__merging_GLI", "GLI_long.csv"),
-          file.path(out, "GLI_long.csv"), overwrite = TRUE))
-invisible(file.copy(file.path(repo, "__merging_cortical_areas", "cortical_areas_long.csv"),
-          file.path(out, "cortical_areas_long.csv"), overwrite = TRUE))
-invisible(file.copy(file.path(repo, "__merging_cortical_layers", "cortical_layers_m1_long.csv"),
-          file.path(out, "cortical_layers_m1_long.csv"), overwrite = TRUE))
-invisible(file.copy(file.path(repo, "__merging_fossil_brain_glucose", "fossil_brain_glucose_long.csv"),
-          file.path(out, "fossil_brain_glucose_long.csv"), overwrite = TRUE))
-invisible(file.copy(file.path(repo, "__merging_gyrification", "gyrification_long.csv"),
-          file.path(out, "gyrification_long.csv"), overwrite = TRUE))
-invisible(file.copy(file.path(repo, "__merging_sensory", "sensory_long.csv"),
-          file.path(out, "sensory_long.csv"), overwrite = TRUE))
-invisible(file.copy(file.path(repo, "__merging_weights", "weights_long.csv"),
-          file.path(out, "weights_long.csv"), overwrite = TRUE))
-# ---- organisation + glossary keys -------------------------------------------
-# Three keys drive the app's variable organisation and its abbreviation support.
-# They are authored in _keys/ (not here) so the vocabulary is reviewable in the
-# repo rather than buried in app code:
-#   glossary.csv             term -> expansion/definition, with `common` marking
-#                            the everyday terms whose tooltips are suppressed.
-#   variable_domain.csv      every app-facing label -> concept domain +
-#                            measure_class (+ Structure/Measure/Unit), so the
-#                            app can group by MEANING instead of by source file.
-#   variable_definitions.csv label -> resolved definition. Built by
-#                            build_variable_definitions.R, which walks the
-#                            per-paper *_definitions.csv files and composes
-#                            structure + measure-code definitions from the
-#                            glossary where no whole-label definition exists.
-for (f in c("glossary.csv", "variable_domain.csv", "variable_definitions.csv"))
-  invisible(file.copy(file.path(repo, "_keys", f),
-            file.path(out, f), overwrite = TRUE))
-# mammal phylogeny for PGLS (optional — copy whichever tree file is present)
-for (e in c("nwk", "tre", "newick", "nex", "tree")) {
-  src <- file.path(repo, "_keys", paste0("mammal_tree.", e))
-  if (file.exists(src))
-    invisible(file.copy(src, file.path(out, paste0("mammal_tree.", e)), overwrite = TRUE))
+# ---- 1. no copies live here ------------------------------------------------
+# 2026-09-22: data/ used to hold 22 byte-identical copies of files whose real
+# home is _keys/ or __merging_*/ -- an offline fallback for the deployed app.
+# They were removed deliberately. The reason is not disk space (13 MB) but
+# silence: when a copy drifted from its source, the app served the stale copy
+# and said so only in the server log, so the UI showed old numbers with nothing
+# on screen to say they were old. Reading one canonical copy per file means a
+# GitHub outage now fails loudly instead of quietly serving data of unknown
+# vintage. See DEPLOY.md "Why data/ holds only two files".
+#
+# Anything added back here must be a file that exists NOWHERE else in the repo.
+# The guard below enforces that, so the copies cannot creep back unnoticed.
+canonical_elsewhere <- function(fn) {
+  hits <- c(file.path(repo, "_keys", fn),
+            Sys.glob(file.path(repo, "__merging_*", fn)))
+  hits[file.exists(hits)]
 }
+dupes <- Filter(function(fn) length(canonical_elsewhere(fn)) > 0,
+                setdiff(list.files(out), c("source-tables", ".DS_Store")))
+if (length(dupes))
+  stop("data/ must not duplicate canonical repo files, but these do:\n  ",
+       paste(sprintf("%s  (canonical: %s)", dupes,
+                     vapply(dupes, function(f)
+                       paste(sub(paste0("^", repo, "/"), "", canonical_elsewhere(f)),
+                             collapse = ", "), character(1))),
+             collapse = "\n  "),
+       "\nDelete them from data/ and let the app read the canonical copy.")
 
 # ---- 2. melt the EvoM1 trait tables -> evom1_traits_long.csv -----------------
 TT <- file.path(repo, "____EvoM1_TraitTable")

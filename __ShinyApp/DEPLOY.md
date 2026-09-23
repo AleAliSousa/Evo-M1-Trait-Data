@@ -95,15 +95,35 @@ repo root/
 
 __ShinyApp/
   app.R                     the whole app (single file)
-  build_data.R              regenerates the two derived files + fallback copies
+  build_data.R              regenerates the two derived files
   DEPLOY.md                 this file
   PHYLO_SETUP.md            optional mammal tree for PGLS
-  data/                     <-- fallback cache only (do not hand-edit)
+  data/                     <-- ONLY files that exist nowhere else (see below)
     evom1_traits_long.csv   DERIVED: melted from ____EvoM1_TraitTable/*.xlsx
     source_manifest.csv     DERIVED: source-table catalogue + citations
-    volumes_long.csv        fallback copy of __merging_volumes/volumes_long.csv
-    cellcounts_long.csv     fallback copy of __merging_cellcounts/cellcounts_long.csv
 ```
+
+### Why `data/` holds only two files
+
+Until 2026-09-22 this folder also carried 22 byte-identical copies of files
+whose real home is `_keys/` or `__merging_*/`, as an offline fallback. They were
+removed deliberately.
+
+The problem was not the 13 MB — it was that the duplication could go stale
+*silently*. When a copy drifted from its source, the app served the copy and
+said so only via `message()`, which lands in the shinyapps.io log, not the UI.
+A visitor would see old numbers with nothing on screen indicating it. The
+duplication also doubled these files in git history for every commit.
+
+Now every file has exactly one canonical copy. If GitHub is unreachable the app
+**stops with an explicit error** naming the file and the reason, rather than
+quietly serving data of unknown vintage. It recovers by itself once GitHub is
+reachable again.
+
+`build_data.R` enforces this: it aborts if any file in `data/` also exists in
+`_keys/` or `__merging_*/`, so the copies cannot creep back unnoticed. The one
+functional trade-off is that PGLS silently disables during an outage, because
+`mammal_tree.nwk` is now fetched from `_keys/` rather than bundled.
 
 ## Where the data comes from (GitHub, single source of truth)
 
@@ -118,11 +138,14 @@ At runtime the app reads its data over HTTP from the public GitHub repo
 | Source-table catalogue (derived) | `__ShinyApp/data/source_manifest.csv` |
 | The source tables | `__Public/comparative-data/…` (fetched on demand) |
 
-Because it reads the repo directly, **the source tables are not duplicated in
-the app at all**, and updating the data is just a `git push` — no redeploy
-needed. If GitHub is briefly unreachable, the app falls back to the small local
-copies in `data/` for the four startup files (the compiled database keeps
-working; individual source-table views need the network).
+The table above lists the two startup files that live in `data/`; every other
+merge and key is read from its canonical folder (`__merging_*/`, `_keys/`) the
+same way.
+
+Because it reads the repo directly, **nothing is duplicated in the app**, and
+updating the data is just a `git push` — no redeploy needed. If GitHub is
+unreachable the app stops with an explicit error rather than falling back to a
+possibly-stale copy; see "Why `data/` holds only two files" above.
 
 Only two files are genuinely *derived* (the trait table is melted from `.xlsx`;
 the manifest joins filenames to citations in `__ReadMe.xlsx`), so a small build
@@ -133,8 +156,7 @@ install.packages("readxl")            # one time
 ```
 ```bash
 Rscript __ShinyApp/build_data.R
-git add __ShinyApp/data/evom1_traits_long.csv __ShinyApp/data/source_manifest.csv \
-        __ShinyApp/data/volumes_long.csv __ShinyApp/data/cellcounts_long.csv
+git add __ShinyApp/data/evom1_traits_long.csv __ShinyApp/data/source_manifest.csv
 git commit -m "Refresh Shiny app data" && git push
 ```
 
@@ -155,7 +177,7 @@ the moment a merge exists locally but has not been pushed.
 |---|---|
 | `auto` *(default)* | **local** when the app sits inside a repo checkout (`../_keys` exists) — that is the copy you are editing and the one `build_data.R` just wrote. **GitHub** otherwise, which is the deployed case on shinyapps.io. |
 | `local` | The repo and `./data` only. Never touches the network. |
-| `github` | GitHub only, with `./data` as a per-file fallback. Use this to preview what the **live** app will show before you push. |
+| `github` | GitHub only. `./data` supplies just the two derived files that live there; everything else must come from GitHub or the app stops. Use this to preview what the **live** app will show before you push. |
 
 So: after changing data, `Rscript __ShinyApp/build_data.R` is enough to see it
 locally, but **the live app only changes when you push** — it has no access to
@@ -202,8 +224,8 @@ publishing from a machine that only has the app folder:
    ```
 
    `rsconnect` scans `app.R`, installs shiny/bslib/DT/ggplot2 (and `ape`, if you
-   installed it locally, for PGLS) on the server, uploads the tiny `data/`
-   fallback, and returns a public URL like
+   installed it locally, for PGLS) on the server, uploads the two derived files
+   in `data/`, and returns a public URL like
    `https://<your-account>.shinyapps.io/evo-m1-brain-traits/`.
 
 To update later, re-run the same `deployApp(...)` call.
@@ -211,7 +233,7 @@ To update later, re-run the same `deployApp(...)` call.
 ### Notes for shinyapps.io
 
 - The free tier allows a limited number of active hours per month; the bundle
-  here (~1.6 MB, the four `data/` fallback files) is well within limits.
+  here (~0.9 MB, the two derived `data/` files) is well within limits.
 - No secrets or credentials are needed — all data is static and public.
 - If you prefer an institutional server (Posit Connect / self-hosted Shiny
   Server), the same `__ShinyApp/` folder deploys there unchanged.

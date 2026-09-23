@@ -32,8 +32,11 @@ library(ggplot2)
 #            build_data.R just regenerated. Otherwise read GITHUB (the deployed
 #            case on shinyapps.io, where only ./data ships alongside the app).
 #   local  - ./data and the repo only; never touch the network.
-#   github - GitHub only, with ./data as a per-file fallback (the old behaviour;
-#            use it to preview what the deployed app will show).
+#   github - GitHub only. ./data is NOT a general fallback: it holds just the
+#            two derived files that live nowhere else. Every other file has one
+#            canonical copy (_keys/, __merging_*/), so if GitHub is unreachable
+#            the app stops with an explicit error instead of serving a stale
+#            copy invisibly. See build_data.R section 1.
 # EVOM1_GH_BASE overrides the branch/base URL.
 
 GH_BASE <- Sys.getenv(
@@ -88,11 +91,21 @@ read_gh <- function(gh_rel, local, reader, required = TRUE) {
   }
   res <- try_read(paste0(GH_BASE, gh_rel))
   if (!is.null(res)) return(res)
+  # A local copy is only consulted for files whose canonical home IS ./data
+  # (evom1_traits_long.csv, source_manifest.csv). Copies of _keys/ and
+  # __merging_*/ files were removed on purpose -- see build_data.R section 1:
+  # a stale fallback showed old numbers with nothing on screen to say so.
   if (file.exists(local)) {
-    message("GitHub fetch failed for ", gh_rel, " — using local fallback.")
+    message("GitHub fetch failed for ", gh_rel, " — using ./data copy.")
     return(try_read(local))
   }
-  if (required) stop("Could not load ", gh_rel, " from GitHub or local fallback.")
+  if (required)
+    stop("Could not load ", gh_rel, " from GitHub (", GH_BASE, ").\n",
+         "This app reads one canonical copy of each file and keeps no offline ",
+         "fallback for it, so it stops here rather than showing data of ",
+         "unknown vintage. Most likely raw.githubusercontent.com is ",
+         "unreachable or the file is not on the target branch; the app should ",
+         "recover on its own once GitHub is reachable again.")
   NULL
 }
 

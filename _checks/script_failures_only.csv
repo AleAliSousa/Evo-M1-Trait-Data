@@ -1,7 +1,7 @@
 "script","status","error","start_time","end_time","elapsed_seconds"
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_brain_mass/brain_mass_compiled.R","FAILED","Error: no measurement basis on record for 10.1038%2Fs41559-017-0112_BrainData.tsv / Brain Mass (paper folder 'DeCasien_etal_2017'). Add it to ASSIGN in _keys/build_brain_size_basis.py and re-run that builder.
-Execution halted","2026-09-22 11:19:36.609985","2026-09-22 11:19:38.134007",1.52402186393738
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_item_name_resolution.R","FAILED","registry Item names: 470   |   TSVs on disk: 366   |   NA.tsv present: no
+Execution halted","2026-09-23 10:07:23.333361","2026-09-23 10:07:24.931118",1.59775710105896
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_item_name_resolution.R","FAILED","registry Item names: 470   |   TSVs on disk: 374   |   NA.tsv present: no
 
 __merging_behaviour/behaviour_compiled.R                     0 item name(s) referenced   OK
 __merging_body_ecology/body_ecology_compiled.R               0 item name(s) referenced   OK
@@ -17,11 +17,14 @@ __merging_sleep/sleep_compiled.R                             4 item name(s) refe
 __merging_volumes/volumes_compiled_select.R                 34 item name(s) referenced   OK
 __merging_volumes/volumes_compiled.R                        67 item name(s) referenced   OK
 
-orphaned TSVs (on disk, claimed by no registry row): 3
+orphaned TSVs (on disk, claimed by no registry row): 4
       10.1073%2Fpnas.1911264116_ERABIS.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
       10.1093%2Fcercor%2Fbhr033_authordata.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
       10.1159%2F000121494_TableI.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.3389%2Ffnhum.2013.00424_TableS2partial.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
 rows with a citation but no Item name (need _tools/file_list.R): 0
 
 all referenced item names resolve to a TSV on disk.
-run _tools/restore_registry_rows.R (adding any new row to its ROWS list), then _tools/file_list.R.","2026-09-22 11:20:14.291117","2026-09-22 11:20:14.927684",0.636567115783691
+run _tools/restore_registry_rows.R (adding any new row to its ROWS list), then _tools/file_list.R.","2026-09-23 10:08:02.087139","2026-09-23 10:08:02.779268",0.692129135131836
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_keys/apply_variable_canonical_proposed.R","FAILED","Error: Missing variable_canonical_PROPOSED.csv in /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_keys
+Execution halted","2026-09-23 10:10:57.371963","2026-09-23 10:10:57.630738",0.258774995803833

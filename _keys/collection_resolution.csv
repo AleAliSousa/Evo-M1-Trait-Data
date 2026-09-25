@@ -1,38 +1,44 @@
-collection,n_specimens,collection_group,collection_qualifier,resolution_status
-Huber-Crosby,739,CROSBY_UMICH,,resolved
-Yakovlev-Haleem,606,YAKOVLEV,,resolved
-Welker,412,WELKER_AFIP,,resolved
-Stephan,346,DUSSELDORF_HIRNFORSCHUNG,,resolved
-Meyer Phipps,283,MEYER_PHIPPS_JHU,,resolved
-Johnson Michigan State,176,JOHNSON_MSU,,resolved
-Zilles/Amunts,144,DUSSELDORF_HIRNFORSCHUNG,,resolved
-,115,,,UNGROUPED
-Crosby-Lauer,101,CROSBY_UMICH,,resolved
-Hirnforschung / Stephan-Zilles shared collection,94,DUSSELDORF_HIRNFORSCHUNG,,resolved
-Zilles,88,DUSSELDORF_HIRNFORSCHUNG,,resolved
-Yerkes,83,YERKES,,resolved
-GAAP,28,GAAP,,resolved
-Zilles/Semendeferi,13,DUSSELDORF_HIRNFORSCHUNG,,resolved
-UCSD,10,UCSD,,resolved
-University of Iowa (Department of Neurology),10,IOWA_NEUROLOGY,Department of Neurology,resolved
-Kaas laboratory / Vanderbilt; from Texas Biomedical Research Institute,7,KAAS_VANDERBILT,from Texas Biomedical Research Institute,resolved
-GWU,4,GWU,,resolved
-Kaas laboratory / Vanderbilt,4,KAAS_VANDERBILT,,resolved
-Kaas laboratory / Vanderbilt; from Washington National Primate Research Center,4,KAAS_VANDERBILT,from Washington National Primate Research Center,resolved
-Zilles/Semendeferi (ex Yerkes; Kanting),3,DUSSELDORF_HIRNFORSCHUNG,ex Yerkes; Kanting,resolved
-Thomas Jefferson Medical College,2,THOMAS_JEFFERSON_MEDICAL,,resolved
-Yakovlev Collection,2,YAKOVLEV,,resolved
-Zilles/Semendeferi (ex Yerkes),2,DUSSELDORF_HIRNFORSCHUNG,ex Yerkes,resolved
-"fossil hominin (Cro-Magnon, France)",2,FOSSIL_CRO_MAGNON,,resolved
-"fossil hominin (Forbes' Quarry, Gibraltar)",2,FOSSIL_FORBES_QUARRY,,resolved
-"fossil hominin (La Chapelle-aux-Saints, France)",2,FOSSIL_LA_CHAPELLE_AUX_SAINTS,,resolved
-"fossil hominin (La Ferrassie, France)",2,FOSSIL_LA_FERRASSIE,,resolved
-"fossil hominin (Skhul-Qafzeh, Israel)",2,FOSSIL_SKHUL_QAFZEH,,resolved
-Columbia University / Bronx Zoo,1,COLUMBIA_BRONX_ZOO,,resolved
-Hirnforschung,1,DUSSELDORF_HIRNFORSCHUNG,,resolved
-Max Planck Institute Frankfurt,1,MPI_FRANKFURT,,resolved
-University of Wisconsin comparative brain collection,1,WELKER_AFIP,,resolved
-Welker / University of Wisconsin comparative collection (NMHM/AFIP),1,WELKER_AFIP,NMHM/AFIP,resolved
-"fossil hominin (Amud, Israel)",1,FOSSIL_AMUD,,resolved
-"fossil hominin (Mladeč, Czechia)",1,FOSSIL_MLADEC,,resolved
-not stated,1,UNKNOWN,,resolved
+"collection","collection_group","collection_qualifier","layers"
+"Columbia University / Bronx Zoo","COLUMBIA_BRONX_ZOO","","public"
+"Crosby-Lauer","CROSBY_UMICH","","public"
+"GAAP","GAAP","","public"
+"GWU","GWU","","public;restricted"
+"Hirnforschung","DUSSELDORF_HIRNFORSCHUNG","","public"
+"Hirnforschung / Stephan-Zilles shared collection","DUSSELDORF_HIRNFORSCHUNG","","public"
+"Huber-Crosby","CROSBY_UMICH","","public"
+"Johnson Michigan State","JOHNSON_MSU","","public"
+"Kaas laboratory / Vanderbilt","KAAS_VANDERBILT","","public"
+"Kaas laboratory / Vanderbilt; from Texas Biomedical Research Institute","KAAS_VANDERBILT","from Texas Biomedical Research Institute","public"
+"Kaas laboratory / Vanderbilt; from Washington National Primate Research Center","KAAS_VANDERBILT","from Washington National Primate Research Center","public"
+"Max Planck Institute Frankfurt","MPI_FRANKFURT","","public"
+"Meyer Phipps","MEYER_PHIPPS_JHU","","public"
+"Mount Sinai","MOUNT_SINAI","","restricted"
+"Stephan","DUSSELDORF_HIRNFORSCHUNG","","public;restricted"
+"Stephan/Frahm","DUSSELDORF_HIRNFORSCHUNG","","restricted"
+"Thomas Jefferson Medical College","THOMAS_JEFFERSON_MEDICAL","","public"
+"UCSD","UCSD","","public"
+"University of Iowa (Department of Neurology)","IOWA_NEUROLOGY","Department of Neurology","public"
+"University of Wisconsin comparative brain collection","WELKER_AFIP","","public"
+"Welker","WELKER_AFIP","","public"
+"Welker (AFIP)","WELKER_AFIP","AFIP","restricted"
+"Welker (University of Wisconsin comparative collection; later NMHM/AFIP)","WELKER_AFIP","University of Wisconsin comparative collection; later NMHM/AFIP","restricted"
+"Welker / University of Wisconsin comparative collection (NMHM/AFIP)","WELKER_AFIP","NMHM/AFIP","public"
+"Yakovlev Collection","YAKOVLEV","","public"
+"Yakovlev-Haleem","YAKOVLEV","","public"
+"Yerkes","YERKES","","public;restricted"
+"Yerkes; Zilles/Semendeferi","DUSSELDORF_HIRNFORSCHUNG;YERKES","","restricted"
+"Zilles","DUSSELDORF_HIRNFORSCHUNG","","public;restricted"
+"Zilles (ex Yerkes)","DUSSELDORF_HIRNFORSCHUNG","ex Yerkes","restricted"
+"Zilles/Amunts","DUSSELDORF_HIRNFORSCHUNG","","public"
+"Zilles/Semendeferi","DUSSELDORF_HIRNFORSCHUNG","","public"
+"Zilles/Semendeferi (ex Yerkes)","DUSSELDORF_HIRNFORSCHUNG","ex Yerkes","public;restricted"
+"Zilles/Semendeferi (ex Yerkes; Kanting)","DUSSELDORF_HIRNFORSCHUNG","ex Yerkes; Kanting","public"
+"fossil hominin (Amud, Israel)","FOSSIL_AMUD","Amud, Israel","public"
+"fossil hominin (Cro-Magnon, France)","FOSSIL_CRO_MAGNON","Cro-Magnon, France","public"
+"fossil hominin (Forbes' Quarry, Gibraltar)","FOSSIL_FORBES_QUARRY","Forbes' Quarry, Gibraltar","public"
+"fossil hominin (La Chapelle-aux-Saints, France)","FOSSIL_LA_CHAPELLE_AUX_SAINTS","La Chapelle-aux-Saints, France","public"
+"fossil hominin (La Ferrassie, France)","FOSSIL_LA_FERRASSIE","La Ferrassie, France","public"
+"fossil hominin (Mladeč, Czechia)","FOSSIL_MLADEC","Mladeč, Czechia","public"
+"fossil hominin (Skhul-Qafzeh, Israel)","FOSSIL_SKHUL_QAFZEH","Skhul-Qafzeh, Israel","public"
+"not stated","UNKNOWN","","public"
+"unknown","UNKNOWN","","restricted"

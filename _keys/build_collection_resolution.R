@@ -1,4 +1,31 @@
 #!/usr/bin/env Rscript
+
+## DEPRECATED 2026-09-25 -- do not run. The project owner decided to retire
+## this script in favor of specimen_registry/normalise_collections.R in the
+## restricted companion repo: that version resolves collection strings across
+## the public, fossil, AND restricted specimen layers together and fails
+## loudly on any string collection_registry.csv doesn't cover, whereas this
+## script only ever saw the public layer and could silently drift from the
+## restricted layer's own resolution -- which is exactly what happened (see
+## the specimen-taxon-tracking skill's kernel.py history: a hand-copied needle
+## list here had drifted ~40% out of sync with collection_registry.csv before
+## this script existed, and after this script existed it still diverged from
+## the restricted repo's independently-computed groups for any collection
+## string that only appears in restricted-layer rows).
+##
+## _keys/collection_resolution.csv is now the exported output of that
+## restricted-repo script (see its "Public-repo export" section) and is
+## refreshed by re-running it there -- the public repo alone cannot
+## regenerate this file, since doing so requires restricted-repo access by
+## design. This script is kept only for its parse-rule logic (paren_aware_split,
+## fossil_group, resolve_group/resolve_qualifier), in case it is ever wanted
+## for a one-off audit; it must not be wired back into a routine rebuild.
+stop("build_collection_resolution.R is deprecated -- see the note at the ",
+     "top of this file. _keys/collection_resolution.csv is now exported by ",
+     "specimen_registry/normalise_collections.R in the restricted repo; ",
+     "do not regenerate it here.", call. = FALSE)
+
+## ---- retired body below, unreachable --------------------------------------
 # =============================================================================
 # build_collection_resolution.R
 #

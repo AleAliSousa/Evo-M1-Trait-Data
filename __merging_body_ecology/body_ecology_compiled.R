@@ -128,6 +128,19 @@ pick_column <- function(headers) {
        unit = if (grepl("kg", n)) "kg" else if (grepl("\\bmg\\b|\\(mg\\)|_mg", n)) "mg" else "g")
 }
 
+# Tables that carry no per-row species column because every row is the same
+# species (documented in the source itself, not inferrable from headers).
+# 10.1111%2Fj.1749-6632.2011.05978.x_TableS3.tsv (Zilles et al. 2011, "Three
+# brain collections") is titled "Zilles-Amunts collection Homo sapiens" in
+# its own supplementary-table caption -- a developmental series of
+# prenatal/perinatal human specimens (catalogue numbers "H <n>/<year>"), not
+# a multi-species table. Before this override existed, species_col()'s
+# fallback to column 1 (source_row, 1..152) silently mislabeled every row's
+# species as a row-index number.
+SPECIES_OVERRIDE <- c(
+  "10.1111%2Fj.1749-6632.2011.05978.x_TableS3.tsv" = "Homo sapiens"
+)
+
 binom <- "^[A-Z][a-z]+ [a-z][a-z-]+"
 species_col <- function(headers, sample) {
   # Which column holds the binomial? Score every column on the sample rows by how often its value
@@ -144,8 +157,22 @@ species_col <- function(headers, sample) {
     return(function(rows) trimws(paste(cell(rows, gi), cell(rows, si)))) }
   h <- which(norm(headers) %in% c("species","scientific","scientific name","taxon","binomial",
                                   "genus species","species name","species_name","animal"))
-  i <- if (length(h)) h[1] else 1
-  function(rows) cell(rows, i)
+  if (length(h)) { i <- h[1]; return(function(rows) cell(rows, i)) }
+  # No species-identifying column found. Column 1 is whatever the source
+  # happens to start with (often a row index or catalogue number, not a
+  # taxon) -- returning it as "species" fabricates a label rather than
+  # reporting one. Blank so keep_rows() drops these rows instead of
+  # mislabeling them; add a SPECIES_OVERRIDE entry for a genuinely
+  # single-species table with no per-row column.
+  function(rows) rep(NA_character_, length(rows))
+}
+
+# Wraps species_col() with SPECIES_OVERRIDE: some source files are known to be
+# single-species with no per-row species column at all (see SPECIES_OVERRIDE
+# above), so check the override before falling back to header-sniffing.
+get_species <- function(fn, headers, sample, rows) {
+  if (fn %in% names(SPECIES_OVERRIDE)) return(rep(unname(SPECIES_OVERRIDE[[fn]]), length(rows)))
+  species_col(headers, sample)(rows)
 }
 
 # One harvested block. `value` is already in the canonical unit.
@@ -188,7 +215,7 @@ for (path in sort(list.files(pub, pattern = "\\.tsv$", full.names = TRUE))) {
   ci <- match(pc$col, headers); drows <- rows[-1]; if (!length(drows)) next
   raw <- cell(drows, ci); val <- suppressWarnings(as.numeric(raw))
   ok <- !is.na(val); if (!any(ok)) next
-  sp <- species_col(headers, drows[seq_len(min(length(drows), 59))])(drows)
+  sp <- get_species(fn, headers, drows[seq_len(min(length(drows), 59))], drows)
   team <- team_ay[[m$ay]] %||% (if (nzchar(m$author)) m$author else fn)
   role <- role_ay[[m$ay]] %||% "secondary"
   uf[[length(uf) + 1L]] <- keep_rows(blk(sp[ok], val[ok] * FACTOR[[pc$unit]], raw[ok], pc$unit,
@@ -212,7 +239,7 @@ for (s in BMR) {
   raw <- cell(drows, bi); bval <- suppressWarnings(as.numeric(raw))
   ok <- !is.na(bval); if (!any(ok)) next
   wa <- if (bunit == "kcal_day") bval * KCAL_DAY_TO_MLO2H else bval
-  sp <- species_col(headers, drows[seq_len(min(length(drows), 59))])(drows)
+  sp <- get_species(fn, headers, drows[seq_len(min(length(drows), 59))], drows)
   m <- src_meta(fn); team <- team_ay[[m$ay]] %||% (if (nzchar(m$author)) m$author else fn)
   uf[[length(uf) + 1L]] <- keep_rows(blk(sp[ok], wa[ok], raw[ok], bunit, "metabolic (body)",
                                          "BMR_wholeanimal", "mL O2/h", fn, m$author, m$year, team, "secondary"))
@@ -250,7 +277,7 @@ for (L in LIFE) {
     ci <- match(col, headers); drows <- rows[-1]; if (!length(drows)) next
     raw <- cell(drows, ci); v <- suppressWarnings(as.numeric(raw))
     ok <- !is.na(v) & v > 0; if (!any(ok)) next        # non-positive life-history values dropped
-    sp <- species_col(headers, drows[seq_len(min(length(drows), 59))])(drows)
+    sp <- get_species(fn, headers, drows[seq_len(min(length(drows), 59))], drows)
     m <- src_meta(fn); team <- team_ay[[m$ay]] %||% (if (nzchar(m$author)) m$author else fn)
     uf[[length(uf) + 1L]] <- keep_rows(blk(sp[ok], v[ok], raw[ok], units, "life_history",
                                            measure, units, fn, m$author, m$year, team, "secondary"))
@@ -265,8 +292,11 @@ DIET_NUM <- c(DIET_PCT, "Diet_breadth")
 DIET_CAT <- c("Diet_dominant","Trophic_guild","ForStrat_stratum","Activity_pattern")
 wp <- file.path(pub, WILMAN)
 if (file.exists(wp)) {
+  fn <- WILMAN  # get_species() checks SPECIES_OVERRIDE by filename; without
+                # this, fn would still hold whatever file the LIFE loop above
+                # last visited.
   rows <- read_tsv_rows(wp); headers <- gsub('"', "", rows[[1]]); drows <- rows[-1]
-  sp <- species_col(headers, drows[seq_len(min(length(drows), 59))])(drows)
+  sp <- get_species(fn, headers, drows[seq_len(min(length(drows), 59))], drows)
   m <- src_meta(WILMAN); team <- team_ay[[m$ay]] %||% (if (nzchar(m$author)) m$author else "Wilman")
   for (col in c(DIET_NUM, DIET_CAT)) {
     ci <- match(col, headers); if (is.na(ci)) next

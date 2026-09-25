@@ -43,6 +43,18 @@ EXCLUDE = ["neonat", "fetal", "cerebel", "cortex", "cortic", "olfact", "rest of 
            "_sd", " sd", ": data", "%", "index", "relative"]
 FACTOR = {"g": 1.0, "kg": 1000.0, "mg": 0.001}
 BINOM_RX = re.compile(r"^[A-Z][a-z]+ [a-z][a-z-]+")
+# Tables that carry no per-row species column because every row is the same
+# species (documented in the source itself, not inferrable from headers).
+# 10.1111%2Fj.1749-6632.2011.05978.x_TableS3.tsv (Zilles et al. 2011,
+# "Three brain collections") is titled "Zilles-Amunts collection Homo
+# sapiens" in its own supplementary-table caption -- a developmental series
+# of prenatal/perinatal human specimens (catalogue numbers "H <n>/<year>"),
+# not a multi-species table. Before this override existed, species_getter's
+# fallback to column 0 (source_row, 1..152) silently mislabeled every row's
+# species as a row-index number.
+SPECIES_OVERRIDE = {
+    "10.1111%2Fj.1749-6632.2011.05978.x_TableS3.tsv": "Homo sapiens",
+}
 # poolable_group in brain_size_basis.csv -> the Measure emitted for it
 FAMILY = {
     "mass_measured": "Brain_Mass_measured",
@@ -207,7 +219,13 @@ def species_getter(headers, sample):
         if c in low:
             i = low.index(c)
             return lambda r: val(r, i)
-    return lambda r: val(r, 0)
+    # No species-identifying column found. Column 0 is whatever the source
+    # happens to start with (often a row index or catalogue number, not a
+    # taxon) -- returning it as "species" fabricates a label rather than
+    # reporting one. Blank so the harvest loop's `if not sp: continue` drops
+    # these rows instead of mislabeling them; add a SPECIES_OVERRIDE entry
+    # for a genuinely single-species table with no per-row column.
+    return lambda r: ""
 
 
 # ---- pass 1: locate column + per (author, column) magnitude for unit-less cols
@@ -247,7 +265,9 @@ for t in targets:
     role = role_ay.get(ay, "secondary")
     folder = folder_of(t["author"], t["year"], t["col"])
     grp = basis_grp.get((folder, t["col"]), "")
-    get_sp = species_getter(t["headers"], t["rows"][1:60])
+    fixed_species = SPECIES_OVERRIDE.get(t["fn"])
+    get_sp = (lambda r, _s=fixed_species: _s) if fixed_species else \
+        species_getter(t["headers"], t["rows"][1:60])
     for r in t["rows"][1:]:
         if len(r) <= t["ci"]:
             continue

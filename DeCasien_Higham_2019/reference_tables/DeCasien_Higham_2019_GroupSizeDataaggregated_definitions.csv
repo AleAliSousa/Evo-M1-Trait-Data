@@ -1,0 +1,7 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species_sci,Harmonised accepted binomial (project species key),,,,info,primates (72 spp.),DeCasien_Higham_2019_GroupSizeDataaggregated,added in build via project species key,
+Taxon,Species name as printed (Genus_species, underscore-joined),,,,info,primates,DeCasien_Higham_2019_GroupSizeDataaggregated,printed name preserved,
+Mean Group Size,Species-level mean social group size used by the study,Social_group,count,mean,secondary,primates,DeCasien_Higham_2019_GroupSizeDataaggregated,"aggregated from the underlying per-record data in the sibling GroupSizeDatafrom38 item (for taxa sourced from reference 38) and/or other cited literature",count
+References,Numeric reference code(s) supporting the row (as printed; '38' denotes the aggregate is (partly) drawn from reference 38's underlying records),,,,info,primates,DeCasien_Higham_2019_GroupSizeDataaggregated,per-row citation key,
+Method:frozen_source,"41559_2019_969_MOESM3_ESM.xlsx (worksheet 'Group Size Data (aggregated)') is a digital-native journal supplementary workbook -- it IS the frozen source (kept verbatim, no derived snapshot)",,,,method,primates,DeCasien_Higham_2019_GroupSizeDataaggregated,,
+Method:aggregation,"This is the already-aggregated (one row per species) group-size table used directly by the published analysis; the sibling GroupSizeDatafrom38 item holds the underlying per-record data (936 rows) that a subset of these means were computed from",,,,method,primates,DeCasien_Higham_2019_GroupSizeDataaggregated,,

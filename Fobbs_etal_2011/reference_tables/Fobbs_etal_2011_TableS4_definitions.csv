@@ -1,0 +1,11 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+source_row,printed row sequence within Table S4 after cleaning,,,,info,various (multi-taxon catalog; see item scope),Fobbs_etal_2011_TableS4,stable source-order key added in build,
+box_number,"Storage box number/identifier, as printed",,,,info,various (multi-taxon catalog; see item scope),Fobbs_etal_2011_TableS4,,
+specimens,Free-text specimen description printed for the box (e.g. 'Chimpanzee I Horizontal Fiber'),,,,info,various (multi-taxon catalog; see item scope),Fobbs_etal_2011_TableS4,,
+plane,"Histological plane of section, where printed",,,,info,various (multi-taxon catalog; see item scope),Fobbs_etal_2011_TableS4,,
+stain,"Histological stain, where printed",,,,info,various (multi-taxon catalog; see item scope),Fobbs_etal_2011_TableS4,,
+clade,"Taxonomic clade label, where printed",,,,info,various (multi-taxon catalog; see item scope),Fobbs_etal_2011_TableS4,,
+detail,Additional free-text detail printed for the box,,,,info,various (multi-taxon catalog; see item scope),Fobbs_etal_2011_TableS4,,
+collection_group,Collection/grouping label carried down from a printed section heading (build-added; not a per-row printed column),,,,info,various (multi-taxon catalog; see item scope),Fobbs_etal_2011_TableS4,,
+Method:frozen_source,"nyas_6036_sm_table4.doc (legacy journal Word supplement) is the frozen source, converted losslessly to a snapshot workbook by Fobbs_etal_2011_build_snapshot.py; the snapshot is not rebuilt unless explicitly requested (rebuild_snapshot=FALSE guards the audited snapshot)",,,,method,,,,
+Method:scope,Storage-box inventory of primate (and other) brain sections by box number. 283 catalog records after cleaning (printed section-label/blank rows removed).,,,,method,,,Fobbs_etal_2011_TableS4,

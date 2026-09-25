@@ -1,0 +1,13 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species Name,Species name as printed in Table S1,,,,info,mammals (630 spp. across 21 orders),Boddy_etal_2012_TableS1,printed name preserved,
+Order,Taxonomic order (as printed),,,,info,mammals,Boddy_etal_2012_TableS1,"broad mammalian sample; Rodentia (258) and Primates (76) are the largest groups",
+Brain Mass (g),Brain mass,Brain,Mass.g,mean,secondary,mammals,Boddy_etal_2012_TableS1,"compiled from the primary literature named in Reference; unit as printed",g
+Body Mass (g),Body mass,Body,Mass.g,mean,secondary,mammals,Boddy_etal_2012_TableS1,"compiled; unit as printed",g
+EQ,Encephalization quotient (observed brain mass relative to that expected for body mass, from the paper's own allometric equation),Brain,index.EQ,,secondary,mammals,Boddy_etal_2012_TableS1,"derived by the source paper, not recomputed here",
+Independent contrast derived EQ,EQ recalculated using phylogenetic independent contrasts,Brain,index.EQ,,secondary,mammals,Boddy_etal_2012_TableS1,"derived by the source paper's phylogenetic comparative analysis",
+PGLS-ML dervived EQ,"EQ recalculated using phylogenetic generalized least squares (PGLS), maximum-likelihood branch-length transformation",Brain,index.EQ,,secondary,mammals,Boddy_etal_2012_TableS1,"derived by the source paper's phylogenetic comparative analysis; column name/typo ('dervived') kept verbatim as printed",
+Reference,Primary-literature citation(s) for the row's brain/body mass values (author-year, semicolon-separated where multiple),,,,info,mammals,Boddy_etal_2012_TableS1,"verbatim as printed; item-scoped source list, not a numbered-reference key (no reference_tables/*_references.csv built -- the printed citations are already human-readable author-year strings, not numeric codes needing a lookup)",
+Notes,Free-text note printed alongside some rows,,,,info,mammals,Boddy_etal_2012_TableS1,verbatim as printed; sparse (201 of 630 rows populated),
+source,Build-added provenance tag (constant 'Boddy_etal_2012_TableS1'),,,,info,mammals,Boddy_etal_2012_TableS1,"added by the build script, not printed in the source",
+Method:frozen_source,"jeb_2491_sm_tables1.xlsx is a digital-native, already-tabulated journal supplementary workbook -- it IS the frozen source (kept verbatim, no derived snapshot per __HOWTO_build_a_dataset_file.md S0a invariant 1)",,,,method,mammals,Boddy_etal_2012_TableS1,,
+Method:compilation,"Boddy et al. 2012 pooled brain/body mass values from the primary literature named per-row in Reference, then derived three EQ variants from their own allometric model -- this item is a secondary compilation, not new specimen measurements",,,,method,mammals,Boddy_etal_2012_TableS1,,

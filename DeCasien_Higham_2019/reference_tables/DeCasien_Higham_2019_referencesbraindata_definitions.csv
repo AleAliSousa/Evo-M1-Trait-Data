@@ -1,0 +1,3 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+ref_number,numeric reference code as printed in the References column of the sibling BrainRegionDatamm3 worksheet,,,info,,,DeCasien_Higham_2019_referencesbraindata,resolves one individual reference number; a printed range (e.g. 51-52) is expanded to one row per number,
+citation,full bibliographic citation for the reference number,,,info,,,DeCasien_Higham_2019_referencesbraindata,transcribed verbatim from the article's own bibliography,

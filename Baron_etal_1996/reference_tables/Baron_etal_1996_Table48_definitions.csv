@@ -1,0 +1,12 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species_row,printed row sequence within Table 48,,,,info,Chiroptera,Baron_etal_1996_Table48,stable source-order key,
+Species_Baron1996,species wording as printed in Table 48,,,,info,Chiroptera,Baron_etal_1996_Table48,abbreviations preserved; taxonomy applied later,
+total_cortex_mm2,Total cortex surface area (Brodmann 1913),Total_cortex,Area.mm2,mean,secondary,Chiroptera,Baron_etal_1996_Table48,,
+neocortex_mm2,Neocortex surface area,Neocortex,Area.mm2,mean,secondary,Chiroptera,Baron_etal_1996_Table48,,
+visual_cortex_mm2,Visual cortex surface area,Visual_cortex,Area.mm2,mean,secondary,Chiroptera,Baron_etal_1996_Table48,,
+precentral_cortex_mm2,Precentral cortex surface area,Precentral_cortex,Area.mm2,mean,secondary,Chiroptera,Baron_etal_1996_Table48,,
+prefrontal_cortex_mm2,Prefrontal cortex surface area,Prefrontal_cortex,Area.mm2,mean,secondary,Chiroptera,Baron_etal_1996_Table48,,
+frontal_lobe_mm2,Frontal lobe surface area,Frontal_lobe,Area.mm2,mean,secondary,Chiroptera,Baron_etal_1996_Table48,,
+allocortex_mm2,Allocortex surface area,Allocortex,Area.mm2,mean,secondary,Chiroptera,Baron_etal_1996_Table48,,
+source_pdf_page,one-based PDF page containing the printed row,,,,info,Chiroptera,Baron_etal_1996_Table48,PDF pages 164,
+Method:source,PDF text-layer extraction with literal rendered-page-verified OCR repairs,,,,method,Chiroptera,Baron_etal_1996_Table48,"Brodmann's (1913) cortical surface-area measurements, reprinted in the book: one Chiroptera row plus 14 non-Chiroptera species. Secondary, and probably redundant against the repo's own Brodmann__1913_Table1 build -- diff before use.",printed units as coded in column suffix (mm3/mm2/g/mg)

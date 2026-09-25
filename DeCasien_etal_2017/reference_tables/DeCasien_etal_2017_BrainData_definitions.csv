@@ -1,0 +1,20 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+CHECK,Workbook QA flag column (as printed; always 0 in this export),,,,info,primates,DeCasien_etal_2017_BrainData,verbatim from source workbook; meaning of the flag not documented by the source,
+KEY,Workbook taxon identifier (Genus_species, underscore-joined; the workbook's own primary key -- all 838 rows carry a value even when Genus/Species below are blank),,,,info,primates,DeCasien_etal_2017_BrainData,"source's own join key; used here since Genus/Species are blank for 169 rows",
+Genus,Genus (as printed; blank for 169 rows where only KEY carries the taxon),,,,info,primates,DeCasien_etal_2017_BrainData,printed name preserved,
+Species,Species epithet (as printed; blank for 169 rows where only KEY carries the taxon),,,,info,primates,DeCasien_etal_2017_BrainData,printed name preserved,
+Brain Vol,Brain volume,Brain,Vol.mm3,mean,secondary,primates,DeCasien_etal_2017_BrainData,"compiled from Boddy et al. 2012 / Isler et al. 2008 (see Reference column); unit as printed in source workbook (not independently verified against the primary studies)",as printed
+BV SD,Standard deviation of brain volume,Brain,Vol.mm3,sd,secondary,primates,DeCasien_etal_2017_BrainData,sparse (11 of 838 rows populated),as printed
+Brain Mass,Brain mass,Brain,Mass.g,mean,secondary,primates,DeCasien_etal_2017_BrainData,"compiled; unit as printed in source workbook",as printed
+BM SD,Standard deviation of brain mass,Brain,Mass.g,sd,secondary,primates,DeCasien_etal_2017_BrainData,sparse (35 of 838 rows populated),as printed
+Body,Body mass,Body,Mass.g,mean,secondary,primates,DeCasien_etal_2017_BrainData,"compiled; unit as printed in source workbook",as printed
+Body SD,Standard deviation of body mass,Body,Mass.g,sd,secondary,primates,DeCasien_etal_2017_BrainData,sparse (35 of 838 rows populated),as printed
+Sex,Sex of the specimen/sample (as printed; blank/NA mixed per source),,,,info,primates,DeCasien_etal_2017_BrainData,verbatim as printed,
+N,Sample size for the row,,count,,info,primates,DeCasien_etal_2017_BrainData,"printed sample size; not always 1 (compiled means)",
+Age,Age class of the specimen/sample (Adult / Not Adult / blank, as printed),,,,info,primates,DeCasien_etal_2017_BrainData,verbatim as printed,
+Reference,"Workbook's own numeric reference code (47 or 48), keying into DeCasien_etal_2017_referencesbraindata.csv (ref_number)",,,,info,primates,DeCasien_etal_2017_BrainData,"join key: split not needed (single value per row, unlike multi-citation columns elsewhere in this repo); see reference_tables sibling item",
+Source,"Primary-literature label for the row's origin, as printed in the workbook (author/year short-form, e.g. 'Spitzka 1903', 'Isler et al 2008')",,,,info,primates,DeCasien_etal_2017_BrainData,"this is the underlying primary source, distinct from the compilation-level Reference code; full bibliographic form not distributed for most of these (only the two compilation references are resolved, in the sibling references item)",
+Notes,Free-text note printed alongside some rows,,,,info,primates,DeCasien_etal_2017_BrainData,verbatim as printed; sparse (63 of 838 rows populated),
+Method:frozen_source,"41559_2017_BFs415590170112_MOESM250_ESM.xls (worksheet 'Brain Data') is a digital-native journal supplementary workbook -- it IS the frozen source (kept verbatim, no derived snapshot per __HOWTO_build_a_dataset_file.md S0a invariant 1)",,,,method,primates,DeCasien_etal_2017_BrainData,,
+Method:row_filter,"Rows filtered to those with a non-blank KEY (the workbook's own taxon identifier); this drops only empty formatting rows, not data",,,,method,primates,DeCasien_etal_2017_BrainData,,
+Method:compilation,"This is a secondary compilation: DeCasien et al. 2017 pooled brain/body data from Boddy et al. 2012 and Isler et al. 2008 (workbook Reference 47/48) rather than measuring new specimens themselves",,,,method,primates,DeCasien_etal_2017_BrainData,,

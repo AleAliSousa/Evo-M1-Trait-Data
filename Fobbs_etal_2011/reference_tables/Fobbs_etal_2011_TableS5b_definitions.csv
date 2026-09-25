@@ -1,0 +1,11 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+source_row,printed row sequence within Table S5b after cleaning,,,,info,various (multi-taxon catalog; see item scope),Fobbs_etal_2011_TableS5b,stable source-order key added in build,
+animal_number,"Catalog/accession number for the specimen, as printed",,,,info,various (multi-taxon catalog; see item scope),Fobbs_etal_2011_TableS5b,,
+common_name,"Common species name, as printed (e.g. 'Lampreys')",,,,info,various (multi-taxon catalog; see item scope),Fobbs_etal_2011_TableS5b,,
+stains,"Histological stain(s) used, as printed",,,,info,various (multi-taxon catalog; see item scope),Fobbs_etal_2011_TableS5b,,
+plane,Histological plane of section,,,,info,various (multi-taxon catalog; see item scope),Fobbs_etal_2011_TableS5b,,
+non_mammal_clade,"Non-mammalian taxonomic clade label, as printed (e.g. 'CYCLOSTOME')",,,,info,various (multi-taxon catalog; see item scope),Fobbs_etal_2011_TableS5b,,
+number_of_slides,Number of slides prepared,,count,,primary,various (multi-taxon catalog; see item scope),Fobbs_etal_2011_TableS5b,,
+comments,Free-text comment printed alongside some rows,,,,info,various (multi-taxon catalog; see item scope),Fobbs_etal_2011_TableS5b,,
+Method:frozen_source,"nyas_6036_sm_table5b.doc (legacy journal Word supplement) is the frozen source, converted losslessly to a snapshot workbook by Fobbs_etal_2011_build_snapshot.py; the snapshot is not rebuilt unless explicitly requested (rebuild_snapshot=FALSE guards the audited snapshot)",,,,method,,,,
+Method:scope,Non-mammal comparative brain-sections catalog (companion to Table S5a). 101 catalog records after cleaning (printed section-label/blank rows removed).,,,,method,,,Fobbs_etal_2011_TableS5b,

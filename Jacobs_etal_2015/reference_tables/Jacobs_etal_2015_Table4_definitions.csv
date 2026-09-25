@@ -1,0 +1,13 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,species included in the cross-species pyramidal-neuron comparison,,,info,,Mammalia,Jacobs_etal_2015_Table4,,arranged by brain mass (high to low) as printed
+Source Ref,footnote code identifying the source study for non-giraffe species (a = Jacobs et al. 2011; b = Butti et al. 2014b),,,info,,,Jacobs_etal_2015_Table4,blank for Giraffe (this paper's own data),
+Age/sex,reported age class/sex and sample size of the specimen(s),,,info,,Mammalia,Jacobs_etal_2015_Table4,,
+Fixation method,tissue fixation method (Perfusion or Immersion),,,info,,Mammalia,Jacobs_etal_2015_Table4,,
+Fixation method note,autolysis time (AT) for immersion-fixed specimens,,duration,,info,,Jacobs_etal_2015_Table4,blank for perfusion-fixed specimens,
+Region sampled,cortical region(s) sampled per specimen; RH = right hemisphere; LH = left hemisphere,,,info,,Mammalia,Jacobs_etal_2015_Table4,,
+Mean Soma depth (um),mean pyramidal-neuron soma depth in micrometers,Pyramidal_neuron_soma,depth_um,mean,primary,Mammalia,Jacobs_etal_2015_Table4,"in the elephant this is lower because only superficial (not deeper) pyramidal neurons were included",
+Mean Soma depth SD (um),standard deviation of Mean Soma depth (um),Pyramidal_neuron_soma,depth_um SD,SD,primary,Mammalia,Jacobs_etal_2015_Table4,,
+Mean Brain mass (g),mean brain mass of the sampled specimens in grams,Brain,mass_g,mean,primary,Mammalia,Jacobs_etal_2015_Table4,,
+Mean Soma size (um2),mean pyramidal-neuron soma cross-sectional size in square micrometers,Pyramidal_neuron_soma,size_um2,mean,primary,Mammalia,Jacobs_etal_2015_Table4,,
+Mean Soma size SD (um2),standard deviation of Mean Soma size (um2),Pyramidal_neuron_soma,size_um2 SD,SD,primary,Mammalia,Jacobs_etal_2015_Table4,,
+n Pyramidal neurons,number of pyramidal neurons quantified for the species,Pyramidal_neuron,count,,primary,Mammalia,Jacobs_etal_2015_Table4,,

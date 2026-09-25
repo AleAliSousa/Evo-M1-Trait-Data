@@ -1,0 +1,10 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species_row,printed row sequence within Table 30,,,,info,Chiroptera,Baron_etal_1996_Table30,stable source-order key,
+Species_Baron1996,species wording as printed in Table 30,,,,info,Chiroptera,Baron_etal_1996_Table30,abbreviations preserved; taxonomy applied later,
+nuclei_lemnisci_lateralis_mm3,Lateral lemniscus nuclei volume,Nuclei_lemnisci_lateralis,Vol.mm3,mean,primary,Chiroptera,Baron_etal_1996_Table30,,
+corpus_geniculatum_mediale_mm3,Medial geniculate body volume,Corpus_geniculatum_mediale,Vol.mm3,mean,primary,Chiroptera,Baron_etal_1996_Table30,,
+corpus_geniculatum_laterale_mm3,Lateral geniculate body volume (total),Corpus_geniculatum_laterale,Vol.mm3,mean,primary,Chiroptera,Baron_etal_1996_Table30,,
+cgl_dorsal_part_mm3,"Lateral geniculate body, dorsal part volume",CGL_dorsal_part,Vol.mm3,mean,primary,Chiroptera,Baron_etal_1996_Table30,,
+cgl_ventral_part_mm3,"Lateral geniculate body, ventral part volume",CGL_ventral_part,Vol.mm3,mean,primary,Chiroptera,Baron_etal_1996_Table30,,
+source_pdf_page,one-based PDF page containing the printed row,,,,info,Chiroptera,Baron_etal_1996_Table30,PDF pages 136,
+Method:source,PDF text-layer extraction with literal rendered-page-verified OCR repairs,,,,method,Chiroptera,Baron_etal_1996_Table30,Covers the lateral lemniscus nuclei and the geniculate bodies with the dorsal/ventral split of CGL.,printed units as coded in column suffix (mm3/mm2/g/mg)

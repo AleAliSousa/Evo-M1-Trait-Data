@@ -1,0 +1,9 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species_sci,Harmonised accepted binomial (project species key),,,,info,primates (72 spp.),DeCasien_Higham_2019_DietData,added in build via project species key,
+Taxon,Species name as printed (Genus_species, underscore-joined),,,,info,primates,DeCasien_Higham_2019_DietData,printed name preserved,
+Diet,Diet category (e.g. Folivore / Frugivore / Omnivore, as printed),,,,secondary,primates,DeCasien_Higham_2019_DietData,compiled from primary literature per row Reference,
+References,Numeric reference code(s) supporting the row (as printed; '38' denotes inheritance from reference 38 -- see the sibling GroupSizeDatafrom38/SourceRefsfrom38 items for that reference's own sub-sources),,,,info,primates,DeCasien_Higham_2019_DietData,per-row citation key,
+Notes,Free-text note printed alongside some rows,,,,info,primates,DeCasien_Higham_2019_DietData,verbatim as printed; sparse,
+Reference from 38 (see last tab),"Author-year label for the specific sub-source within reference 38 that this row's diet category was drawn from",,,,info,primates,DeCasien_Higham_2019_DietData,"only populated when References = 38; resolves against the sibling SourceRefsfrom38 item's bibliography",
+Method:frozen_source,"41559_2019_969_MOESM3_ESM.xlsx (worksheet 'Diet Data') is a digital-native journal supplementary workbook -- it IS the frozen source (kept verbatim, no derived snapshot)",,,,method,primates,DeCasien_Higham_2019_DietData,,
+Method:compilation,"Secondary compilation from primary literature identified per-row in References (or, when References=38, in 'Reference from 38')",,,,method,primates,DeCasien_Higham_2019_DietData,,

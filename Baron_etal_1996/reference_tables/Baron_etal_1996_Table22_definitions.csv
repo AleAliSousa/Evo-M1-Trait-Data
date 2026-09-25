@@ -1,0 +1,10 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species_row,printed row sequence within Table 22,,,,info,Chiroptera,Baron_etal_1996_Table22,stable source-order key,
+Species_Baron1996,species wording as printed in Table 22,,,,info,Chiroptera,Baron_etal_1996_Table22,abbreviations preserved; taxonomy applied later,
+auditory_nuclei_mm3,Auditory nuclei volume (total),Auditory_nuclei,Vol.mm3,mean,primary,Chiroptera,Baron_etal_1996_Table22,,
+cochlear_nuclei_mm3,Cochlear nuclei volume (total),Cochlear_nuclei,Vol.mm3,mean,primary,Chiroptera,Baron_etal_1996_Table22,,
+nucleus_cochlearis_dorsalis_mm3,Dorsal cochlear nucleus volume,Nucleus_cochlearis_dorsalis,Vol.mm3,mean,primary,Chiroptera,Baron_etal_1996_Table22,,
+nucleus_cochlearis_ventralis_mm3,Ventral cochlear nucleus volume,Nucleus_cochlearis_ventralis,Vol.mm3,mean,primary,Chiroptera,Baron_etal_1996_Table22,,
+complexus_olivaris_superior_mm3,Superior olivary complex volume,Complexus_olivaris_superior,Vol.mm3,mean,primary,Chiroptera,Baron_etal_1996_Table22,,
+source_pdf_page,one-based PDF page containing the printed row,,,,info,Chiroptera,Baron_etal_1996_Table22,PDF pages 110-114,
+Method:source,PDF text-layer extraction with literal rendered-page-verified OCR repairs,,,,method,Chiroptera,Baron_etal_1996_Table22,,printed units as coded in column suffix (mm3/mm2/g/mg)

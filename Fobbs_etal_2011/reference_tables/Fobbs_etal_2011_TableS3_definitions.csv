@@ -1,0 +1,10 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+source_row,printed row sequence within Table S3 after cleaning,,,,info,various (multi-taxon catalog; see item scope),Fobbs_etal_2011_TableS3,stable source-order key added in build,
+animal_number,"Catalog/accession number for the specimen, as printed",,,,info,various (multi-taxon catalog; see item scope),Fobbs_etal_2011_TableS3,,
+common_name,"Common species name, as printed (e.g. 'Spotted Catshark')",,,,info,various (multi-taxon catalog; see item scope),Fobbs_etal_2011_TableS3,,
+scientific_name,"Scientific (binomial) name, as printed",,,,info,various (multi-taxon catalog; see item scope),Fobbs_etal_2011_TableS3,,
+plane_of_section,Histological plane of section,,,,info,various (multi-taxon catalog; see item scope),Fobbs_etal_2011_TableS3,,
+total_number_of_sections,Total number of histological sections prepared,,count,,primary,various (multi-taxon catalog; see item scope),Fobbs_etal_2011_TableS3,,
+slide_size,Printed slide size/format,,,,info,various (multi-taxon catalog; see item scope),Fobbs_etal_2011_TableS3,,
+Method:frozen_source,"nyas_6036_sm_table3.doc (legacy journal Word supplement) is the frozen source, converted losslessly to a snapshot workbook by Fobbs_etal_2011_build_snapshot.py; the snapshot is not rebuilt unless explicitly requested (rebuild_snapshot=FALSE guards the audited snapshot)",,,,method,,,,
+Method:scope,Non-mammalian (fish/elasmobranch and related) comparative brain sections catalog. 176 catalog records after cleaning (printed section-label/blank rows removed).,,,,method,,,Fobbs_etal_2011_TableS3,

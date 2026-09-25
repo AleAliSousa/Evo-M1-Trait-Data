@@ -1,0 +1,11 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species_row,printed row sequence within Table 13,,,,info,Chiroptera,Baron_etal_1996_Table13,stable source-order key,
+Species_Baron1996,species wording as printed in Table 13,,,,info,Chiroptera,Baron_etal_1996_Table13,abbreviations preserved; taxonomy applied later,
+trigeminal_sensory_complex_mm3,Sensory trigeminal complex volume,Trigeminal_sensory_complex,Vol.mm3,mean,primary,Chiroptera,Baron_etal_1996_Table13,,
+nucleus_tractus_solitarii_mm3,Nucleus tractus solitarii volume,Nucleus_tractus_solitarii,Vol.mm3,mean,primary,Chiroptera,Baron_etal_1996_Table13,,
+funicular_nuclei_mm3,Funicular nuclei volume (total),Funicular_nuclei,Vol.mm3,mean,primary,Chiroptera,Baron_etal_1996_Table13,,
+nucleus_fascicularis_gracilis_mm3,Nucleus fascicularis gracilis volume,Nucleus_fascicularis_gracilis,Vol.mm3,mean,primary,Chiroptera,Baron_etal_1996_Table13,,
+nucleus_fascicularis_cuneatus_medialis_mm3,Nucleus fascicularis cuneatus medialis volume,Nucleus_fascicularis_cuneatus_medialis,Vol.mm3,mean,primary,Chiroptera,Baron_etal_1996_Table13,,
+nucleus_fascicularis_cuneatus_externus_mm3,Nucleus fascicularis cuneatus externus volume,Nucleus_fascicularis_cuneatus_externus,Vol.mm3,mean,primary,Chiroptera,Baron_etal_1996_Table13,,
+source_pdf_page,one-based PDF page containing the printed row,,,,info,Chiroptera,Baron_etal_1996_Table13,PDF pages 74-78,
+Method:source,PDF text-layer extraction with literal rendered-page-verified OCR repairs,,,,method,Chiroptera,Baron_etal_1996_Table13,,printed units as coded in column suffix (mm3/mm2/g/mg)

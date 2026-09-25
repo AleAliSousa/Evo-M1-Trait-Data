@@ -1,0 +1,13 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+source_row,printed row sequence within Table S1b after cleaning,,,,info,various (multi-taxon catalog; see item scope),Fobbs_etal_2011_TableS1b,stable source-order key added in build,
+species,Common species/group name as printed (e.g. 'Cat'),,,,info,various (multi-taxon catalog; see item scope),Fobbs_etal_2011_TableS1b,,
+specifics,Additional specimen detail printed alongside the species (e.g. investigator/strain),,,,info,various (multi-taxon catalog; see item scope),Fobbs_etal_2011_TableS1b,,
+experimental,Marks the row as an experimental (non-normative) specimen when printed,,,,info,various (multi-taxon catalog; see item scope),Fobbs_etal_2011_TableS1b,,
+normative_controls,Marks the row as a normative-control specimen when printed,,,,info,various (multi-taxon catalog; see item scope),Fobbs_etal_2011_TableS1b,,
+age_at_death,Age at death as printed (e.g. 'adult'),,,,info,various (multi-taxon catalog; see item scope),Fobbs_etal_2011_TableS1b,,
+time_unit,Unit qualifying age_at_death where printed,,,,info,various (multi-taxon catalog; see item scope),Fobbs_etal_2011_TableS1b,,
+sex,"Sex of the specimen, as printed ('unknown' where not recorded)",,,,info,various (multi-taxon catalog; see item scope),Fobbs_etal_2011_TableS1b,,
+plane,Histological plane of section,,,,info,various (multi-taxon catalog; see item scope),Fobbs_etal_2011_TableS1b,,
+study,Study/investigator name printed alongside some rows,,,,info,various (multi-taxon catalog; see item scope),Fobbs_etal_2011_TableS1b,,
+Method:frozen_source,"nyas_6036_sm_table1b.doc (legacy journal Word supplement) is the frozen source, converted losslessly to a snapshot workbook by Fobbs_etal_2011_build_snapshot.py; the snapshot is not rebuilt unless explicitly requested (rebuild_snapshot=FALSE guards the audited snapshot)",,,,method,,,,
+Method:scope,Non-human comparative specimens catalogued alongside the human collection (Table S1a). 164 catalog records after cleaning (printed section-label/blank rows removed).,,,,method,,,Fobbs_etal_2011_TableS1b,

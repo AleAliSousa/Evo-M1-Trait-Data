@@ -1,0 +1,10 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species_row,printed row sequence within Table 42,,,,info,Chiroptera,Baron_etal_1996_Table42,stable source-order key,
+Species_Baron1996,species wording as printed in Table 42,,,,info,Chiroptera,Baron_etal_1996_Table42,abbreviations preserved; taxonomy applied later,
+semicortex_mm2,Semicortex surface area (total); same measure as Table 39's semicortex,Semicortex,Area.mm2,mean,secondary,Chiroptera,Baron_etal_1996_Table42,,
+PRPI_mm2,Semicortex sub-region 'PRPI' surface area (abbreviation printed verbatim; not expanded in the book's Table 1 key),Semicortex_PRPI,Area.mm2,mean,secondary,Chiroptera,Baron_etal_1996_Table42,,
+TOL_mm2,Semicortex sub-region 'TOL' surface area (abbreviation printed verbatim),Semicortex_TOL,Area.mm2,mean,secondary,Chiroptera,Baron_etal_1996_Table42,,
+PSD_mm2,Semicortex sub-region 'PSD' surface area (abbreviation printed verbatim),Semicortex_PSD,Area.mm2,mean,secondary,Chiroptera,Baron_etal_1996_Table42,,
+PAM_mm2,Semicortex sub-region 'PAM' surface area (abbreviation printed verbatim),Semicortex_PAM,Area.mm2,mean,secondary,Chiroptera,Baron_etal_1996_Table42,,
+source_pdf_page,one-based PDF page containing the printed row,,,,info,Chiroptera,Baron_etal_1996_Table42,PDF pages 162,
+Method:source,PDF text-layer extraction with literal rendered-page-verified OCR repairs,,,,method,Chiroptera,Baron_etal_1996_Table42,"Lutgemeier's (1962) subdivision of the semicortex, reprinted in the book. Secondary. The four sub-region keys are printed as abbreviations only and are not expanded in the book's Table 1 abbreviation key, so they are carried verbatim.",printed units as coded in column suffix (mm3/mm2/g/mg)

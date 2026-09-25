@@ -1,0 +1,9 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species_sci,Harmonised accepted binomial (project species key),,,,info,primates (72 spp.),DeCasien_Higham_2019_SocialSystemData,added in build via project species key,
+Taxon,Species name as printed (Genus_species, underscore-joined),,,,info,primates,DeCasien_Higham_2019_SocialSystemData,printed name preserved,
+Ref [94],"Social-system classification as printed by reference 94 (mating-system abbreviation codes, e.g. 'UM, MMMF')",,,,info,primates,DeCasien_Higham_2019_SocialSystemData,"verbatim source-specific codes; not decoded further in this build",
+Ref [38],"Social-system classification as printed by reference 38 (e.g. 'Polygynandry')",,,,info,primates,DeCasien_Higham_2019_SocialSystemData,verbatim as printed,
+Social System,Harmonised social-system category used by the published analysis (e.g. 'Group'),,,,secondary,primates,DeCasien_Higham_2019_SocialSystemData,"reconciles the two source-specific classifications (Ref [94], Ref [38]) into the category actually analysed",
+System Notes,Free-text note explaining the harmonisation or any source disagreement,,,,info,primates,DeCasien_Higham_2019_SocialSystemData,verbatim as printed; sparse,
+Method:frozen_source,"41559_2019_969_MOESM3_ESM.xlsx (worksheet 'Social System Data') is a digital-native journal supplementary workbook -- it IS the frozen source (kept verbatim, no derived snapshot)",,,,method,primates,DeCasien_Higham_2019_SocialSystemData,,
+Method:compilation,"Secondary compilation reconciling two independently classified sources (references 94 and 38) into one harmonised 'Social System' category per species",,,,method,primates,DeCasien_Higham_2019_SocialSystemData,,

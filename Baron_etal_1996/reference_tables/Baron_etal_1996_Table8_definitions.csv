@@ -1,0 +1,12 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species_row,printed row sequence within Table 8,,,,info,Chiroptera,Baron_etal_1996_Table8,stable source-order key,
+Species_Baron1996,species wording as printed in Table 8,,,,info,Chiroptera,Baron_etal_1996_Table8,abbreviations preserved; taxonomy applied later,
+n,Number of individuals,,,,info,Chiroptera,Baron_etal_1996_Table8,,
+net_brain_mm3,Net brain volume (brain minus ventricles and rests),Net_brain,Vol.mm3,mean,primary,Chiroptera,Baron_etal_1996_Table8,,
+net_brain_pct_of_standard,Net brain volume as percent of the book's standard brain volume,Net_brain,pct.standard,mean,derived in source table,Chiroptera,Baron_etal_1996_Table8,,
+ventricles_mm3,Ventricle volume,Ventricles,Vol.mm3,mean,primary,Chiroptera,Baron_etal_1996_Table8,,
+ventricles_pct_of_standard,Ventricle volume as percent of the standard brain volume,Ventricles,pct.standard,mean,derived in source table,Chiroptera,Baron_etal_1996_Table8,,
+rests_mm3,'Rests' volume (unassigned tissue remainder),Rests,Vol.mm3,mean,primary,Chiroptera,Baron_etal_1996_Table8,,
+rests_pct_of_standard,Rests volume as percent of the standard brain volume,Rests,pct.standard,mean,derived in source table,Chiroptera,Baron_etal_1996_Table8,,
+source_pdf_page,one-based PDF page containing the printed row,,,,info,Chiroptera,Baron_etal_1996_Table8,PDF pages 46-53,
+Method:source,PDF text-layer extraction with literal rendered-page-verified OCR repairs,,,,method,Chiroptera,Baron_etal_1996_Table8,Only the mm3 columns are printed measurements; the percentage columns are the book's own derivation against the standard brain volume and are carried for reference.,printed units as coded in column suffix (mm3/mm2/g/mg)

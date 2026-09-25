@@ -1,0 +1,35 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+HAGRID,"Human Ageing Genomic Resources internal species ID (reshuffled at every AnAge build; not stable across builds)",,,,info,all taxa,deMagalhães_etal_2024_anagedata.txt,build-specific ID; do not join across AnAge builds by HAGRID,
+Kingdom,Taxonomic kingdom (as printed),,,,info,all taxa,deMagalhães_etal_2024_anagedata.txt,,
+Phylum,Taxonomic phylum (as printed),,,,info,all taxa,deMagalhães_etal_2024_anagedata.txt,,
+Class,Taxonomic class (as printed),,,,info,all taxa,deMagalhães_etal_2024_anagedata.txt,"1,349 of 4,645 rows are Mammalia",
+Order,Taxonomic order (as printed),,,,info,all taxa,deMagalhães_etal_2024_anagedata.txt,,
+Family,Taxonomic family (as printed),,,,info,all taxa,deMagalhães_etal_2024_anagedata.txt,,
+Genus,Genus (as printed; AnAge's own curated taxonomy),,,,info,all taxa,deMagalhães_etal_2024_anagedata.txt,printed name preserved; no project species_key applied (source is already canonical),
+Species,Species epithet (as printed),,,,info,all taxa,deMagalhães_etal_2024_anagedata.txt,printed name preserved,
+Common_name,Common name as printed,,,,info,all taxa,deMagalhães_etal_2024_anagedata.txt,,
+Female_maturity_days,Age at female sexual maturity,Life history,Time.days,,secondary,all taxa,deMagalhães_etal_2024_anagedata.txt,compiled from primary literature per HAGRID entry,days
+Male_maturity_days,Age at male sexual maturity,Life history,Time.days,,secondary,all taxa,deMagalhães_etal_2024_anagedata.txt,compiled from primary literature per HAGRID entry,days
+Gestation_Incubation_days,Gestation (mammals) or incubation (birds/reptiles) period,Life history,Time.days,,secondary,all taxa,deMagalhães_etal_2024_anagedata.txt,compiled,days
+Weaning_days,Age at weaning,Life history,Time.days,,secondary,all taxa,deMagalhães_etal_2024_anagedata.txt,compiled,days
+Litter_Clutch_size,Number of offspring per litter/clutch,Life history,count,,secondary,all taxa,deMagalhães_etal_2024_anagedata.txt,compiled,count
+Litters_Clutches_per_year,Number of litters/clutches produced per year,Life history,rate.per_year,,secondary,all taxa,deMagalhães_etal_2024_anagedata.txt,compiled,per year
+Inter_litter_Interbirth_interval_yrs,Interval between litters/births,Life history,Time.yrs,,secondary,all taxa,deMagalhães_etal_2024_anagedata.txt,compiled,years
+Birth_weight_g,Weight at birth/hatching,Body,Mass.g,,secondary,all taxa,deMagalhães_etal_2024_anagedata.txt,compiled,g
+Weaning_weight_g,Weight at weaning,Body,Mass.g,,secondary,all taxa,deMagalhães_etal_2024_anagedata.txt,compiled,g
+Adult_weight_g,Adult body weight,Body,Mass.g,,secondary,all taxa,deMagalhães_etal_2024_anagedata.txt,compiled; distinct from Body_mass_g (metabolic-rate pairing column below),g
+Growth_rate_per_day,Growth-rate constant (von Bertalanffy K or similar),Life history,rate.per_day,,secondary,all taxa,deMagalhães_etal_2024_anagedata.txt,compiled; method varies by source study,1/days
+Maximum_longevity_yrs,Maximum recorded lifespan,Longevity,Time.yrs,,secondary,all taxa,deMagalhães_etal_2024_anagedata.txt,compiled from oldest verified record per species,years
+Source_ref,Numeric reference code(s) for the longevity record (semicolon/comma-separated; keys into AnAge's own bibliography -- not distributed in this file),,,,info,all taxa,deMagalhães_etal_2024_anagedata.txt,"AnAge's internal reference numbering; full bibliography not included in this download",
+Specimen_origin,Whether the longevity record is from wild / captivity / unknown specimens,,,,info,all taxa,deMagalhães_etal_2024_anagedata.txt,,
+Sample_size,Qualitative sample-size bin for the longevity record (tiny/small/medium/large/huge),,,,info,all taxa,deMagalhães_etal_2024_anagedata.txt,AnAge's own qualitative bin; not a raw N,
+Data_quality,AnAge's own curator-assigned confidence in the longevity record (low/questionable/acceptable/high),,,,info,all taxa,deMagalhães_etal_2024_anagedata.txt,,
+IMR_per_yr,Initial mortality rate (Gompertz/Weibull model parameter),Mortality,rate.per_year,,secondary,all taxa,deMagalhães_etal_2024_anagedata.txt,"sparse (43 of 4,645 rows populated); model-fit output, not observed",per year
+MRDT_yrs,Mortality Rate Doubling Time,Mortality,Time.yrs,,secondary,all taxa,deMagalhães_etal_2024_anagedata.txt,"sparse (43 of 4,645 rows populated); model-fit output paired with IMR_per_yr",years
+Metabolic_rate_W,Basal/resting metabolic rate,Metabolism,Power.W,,secondary,all taxa,deMagalhães_etal_2024_anagedata.txt,"sparse (627 of 4,645 rows populated)",Watts
+Body_mass_g,Body mass paired with the metabolic-rate measurement (may differ from Adult_weight_g; not always the same individual/study),Body,Mass.g,,secondary,all taxa,deMagalhães_etal_2024_anagedata.txt,"paired with Metabolic_rate_W; keep distinct from Adult_weight_g",g
+Temperature_K,Body temperature paired with the metabolic-rate measurement,Metabolism,Temp.K,,secondary,all taxa,deMagalhães_etal_2024_anagedata.txt,"sparse (494 of 4,645 rows populated)",Kelvin
+References,Numeric reference code(s) supporting the row overall (semicolon/comma-separated; keys into AnAge's own bibliography -- not distributed in this file),,,,info,all taxa,deMagalhães_etal_2024_anagedata.txt,"per-row citation key, item-scoped; full bibliography not published in this download so no reference_tables/*_references.csv could be built (nothing to look up the numbers against)",
+Method:frozen_source,"anage_data.txt is a digital-native, tab-delimited database export -- it IS the frozen source (kept verbatim, no derived snapshot per __HOWTO_build_a_dataset_file.md S0a invariant 1)",,,,method,all taxa,deMagalhães_etal_2024_anagedata.txt,,
+Method:numeric_parsing,"Thousands-separator commas stripped before numeric parsing; blank / '-' / 'n.a.' treated as missing",,,,method,all taxa,deMagalhães_etal_2024_anagedata.txt,,
+Method:compilation,"AnAge (Human Ageing Genomic Resources) is itself a compiled database: every life-history value is drawn from primary literature identified by Source_ref / References; this item is a secondary compilation, not a primary measurement",,,,method,all taxa,deMagalhães_etal_2024_anagedata.txt,,

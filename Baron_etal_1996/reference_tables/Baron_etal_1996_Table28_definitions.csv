@@ -1,0 +1,10 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species_row,printed row sequence within Table 28,,,,info,Chiroptera,Baron_etal_1996_Table28,stable source-order key,
+Species_Baron1996,species wording as printed in Table 28,,,,info,Chiroptera,Baron_etal_1996_Table28,abbreviations preserved; taxonomy applied later,
+cerebellum_mm3,Cerebellum volume; same measure as Table 10's cerebellum,Cerebellum,Vol.mm3,mean,primary,Chiroptera,Baron_etal_1996_Table28,,
+total_cerebellar_nuclei_mm3,Total cerebellar (deep) nuclei volume,Cerebellar_nuclei,Vol.mm3,mean,primary,Chiroptera,Baron_etal_1996_Table28,,
+nucleus_medialis_cerebelli_mm3,Medial cerebellar nucleus (fastigial) volume,Nucleus_medialis_cerebelli,Vol.mm3,mean,primary,Chiroptera,Baron_etal_1996_Table28,,
+nucleus_interpositus_cerebelli_mm3,Interposed cerebellar nucleus volume,Nucleus_interpositus_cerebelli,Vol.mm3,mean,primary,Chiroptera,Baron_etal_1996_Table28,,
+nucleus_lateralis_cerebelli_mm3,Lateral cerebellar nucleus (dentate) volume,Nucleus_lateralis_cerebelli,Vol.mm3,mean,primary,Chiroptera,Baron_etal_1996_Table28,,
+source_pdf_page,one-based PDF page containing the printed row,,,,info,Chiroptera,Baron_etal_1996_Table28,PDF pages 134,
+Method:source,PDF text-layer extraction with literal rendered-page-verified OCR repairs,,,,method,Chiroptera,Baron_etal_1996_Table28,The CER column is the same measure as Table 10's cerebellum.,printed units as coded in column suffix (mm3/mm2/g/mg)

@@ -1,0 +1,11 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species_row,printed row sequence within Table 39,,,,info,Chiroptera,Baron_etal_1996_Table39,stable source-order key,
+Species_Baron1996,species wording as printed in Table 39,,,,info,Chiroptera,Baron_etal_1996_Table39,abbreviations preserved; taxonomy applied later,
+total_cortex_mm2,Total cortex surface area (Lutgemeier 1962),Total_cortex,Area.mm2,mean,secondary,Chiroptera,Baron_etal_1996_Table39,,
+neocortex_mm2,Neocortex surface area,Neocortex,Area.mm2,mean,secondary,Chiroptera,Baron_etal_1996_Table39,,
+allocortex_mm2,Allocortex surface area,Allocortex,Area.mm2,mean,secondary,Chiroptera,Baron_etal_1996_Table39,,
+semicortex_mm2,Semicortex surface area,Semicortex,Area.mm2,mean,secondary,Chiroptera,Baron_etal_1996_Table39,,
+schizocortex_mm2,Schizocortex surface area,Schizocortex,Area.mm2,mean,secondary,Chiroptera,Baron_etal_1996_Table39,,
+bicortex_mm2,Bicortex surface area,Bicortex,Area.mm2,mean,secondary,Chiroptera,Baron_etal_1996_Table39,,
+source_pdf_page,one-based PDF page containing the printed row,,,,info,Chiroptera,Baron_etal_1996_Table39,PDF pages 161,
+Method:source,PDF text-layer extraction with literal rendered-page-verified OCR repairs,,,,method,Chiroptera,Baron_etal_1996_Table39,"Lutgemeier's (1962) cortical surface-area measurements, reprinted in the book. Secondary.",printed units as coded in column suffix (mm3/mm2/g/mg)

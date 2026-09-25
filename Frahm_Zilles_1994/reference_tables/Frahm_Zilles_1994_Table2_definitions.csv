@@ -1,0 +1,9 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,species name as printed in Frahm & Zilles 1994 Table 2,,,,info,Insectivora & Primates,Frahm_Zilles_1994_Table2,"journal names kept; taxonomy applied later via ../_keys/Stephan/",
+subiculum_mm3,volume of the subiculum in mm3,Subiculum,Vol.mm3,,primary,Insectivora & Primates,Frahm_Zilles_1994_Table2,,mm3
+CA1_mm3,volume of hippocampal field CA1 in mm3,CA1,Vol.mm3,,primary,Insectivora & Primates,Frahm_Zilles_1994_Table2,,mm3
+CA2_mm3,volume of hippocampal field CA2 in mm3,CA2,Vol.mm3,,primary,Insectivora & Primates,Frahm_Zilles_1994_Table2,,mm3
+CA3_mm3,"volume of hippocampal field CA3 in mm3 (CA4 cells of the hilus measured with the hilus region)",CA3,Vol.mm3,,primary,Insectivora & Primates,Frahm_Zilles_1994_Table2,,mm3
+hilus_mm3,volume of the hilus region of the fascia dentata in mm3 (includes CA4),Hilus,Vol.mm3,,primary,Insectivora & Primates,Frahm_Zilles_1994_Table2,,mm3
+fascia_dentata_mm3,volume of the fascia dentata (dentate gyrus) in mm3,Fascia_dentata,Vol.mm3,,primary,Insectivora & Primates,Frahm_Zilles_1994_Table2,,mm3
+Method:structure,"These six retrohippocampal subfields sum to the paper's 'Hippocampus retrocommissuralis' (see the sibling Table1 item, which reports the full hippocampal hierarchy for the same 48 species). No conversion applied -- printed directly in mm3.",,,,method,Insectivora & Primates,Frahm_Zilles_1994_Table2,"48 species (4 Insectivora + 44 primates) in printed taxonomic order; blank separator rows between grades dropped in the build, not the printed table.",

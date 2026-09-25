@@ -1,0 +1,14 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species_row,printed row sequence within Table 36,,,,info,Chiroptera,Baron_etal_1996_Table36,stable source-order key,
+Species_Baron1996,species wording as printed in Table 36,,,,info,Chiroptera,Baron_etal_1996_Table36,abbreviations preserved; taxonomy applied later,
+total_cortex_mm2,Total cortex surface area (Schneider 1957b),Total_cortex,Area.mm2,mean,secondary,Chiroptera,Baron_etal_1996_Table36,,
+total_minus_bulb_mm2,Total cortex surface area minus olfactory bulb,Total_cortex_minus_bulb,Area.mm2,mean,secondary,Chiroptera,Baron_etal_1996_Table36,,
+allocortex_minus_bulb_mm2,Allocortex surface area minus olfactory bulb,Allocortex_minus_bulb,Area.mm2,mean,secondary,Chiroptera,Baron_etal_1996_Table36,,
+neocortex_mm2,Neocortex surface area,Neocortex,Area.mm2,mean,secondary,Chiroptera,Baron_etal_1996_Table36,,
+allocortex_mm2,Allocortex surface area,Allocortex,Area.mm2,mean,secondary,Chiroptera,Baron_etal_1996_Table36,,
+paleocortex_plus_bulb_mm2,Paleocortex surface area plus olfactory bulb,Paleocortex_plus_bulb,Area.mm2,mean,secondary,Chiroptera,Baron_etal_1996_Table36,,
+schizocortex_mm2,Schizocortex surface area,Schizocortex,Area.mm2,mean,secondary,Chiroptera,Baron_etal_1996_Table36,,
+hippocampus_mm2,Hippocampus surface area,Hippocampus,Area.mm2,mean,secondary,Chiroptera,Baron_etal_1996_Table36,,
+cingulate_mm2,Cingulate cortex surface area,Cingulate,Area.mm2,mean,secondary,Chiroptera,Baron_etal_1996_Table36,,
+source_pdf_page,one-based PDF page containing the printed row,,,,info,Chiroptera,Baron_etal_1996_Table36,PDF pages 159,
+Method:source,PDF text-layer extraction with literal rendered-page-verified OCR repairs,,,,method,Chiroptera,Baron_etal_1996_Table36,"Schneider's (1957b) cortical surface-area measurements, reprinted in the book. Secondary: not a Frankfurt-collection measurement.",printed units as coded in column suffix (mm3/mm2/g/mg)

@@ -1,0 +1,11 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species_sci,Harmonised accepted binomial (project species key),,,,info,primates (72 spp.),DeCasien_Higham_2019_DQIdata,added in build via project species key,
+Taxon,Species name as printed (Genus_species, underscore-joined),,,,info,primates,DeCasien_Higham_2019_DQIdata,printed name preserved,
+DQI,"Diet Quality Index (weighted score reflecting the digestibility/energy density of the diet; higher = higher-quality diet)",Diet,index.DQI,,secondary,primates,DeCasien_Higham_2019_DQIdata,compiled from primary literature per row Reference,
+References,Numeric reference code(s) supporting the row (as printed),,,,info,primates,DeCasien_Higham_2019_DQIdata,per-row citation key,
+% plant structural parts,Percent of diet composed of plant structural parts (e.g. leaves/stems),Diet,percent,,secondary,primates,DeCasien_Higham_2019_DQIdata,"sparse; 'NA' as printed where not reported, not blank",percent
+% plant reproductive parts,Percent of diet composed of plant reproductive parts (e.g. fruit/seeds),Diet,percent,,secondary,primates,DeCasien_Higham_2019_DQIdata,"sparse; 'NA' as printed where not reported",percent
+% animal prey in the diet,Percent of diet composed of animal prey,Diet,percent,,secondary,primates,DeCasien_Higham_2019_DQIdata,"sparse; 'NA' as printed where not reported",percent
+Notes,Free-text note printed alongside some rows (e.g. explaining a missing percentage breakdown),,,,info,primates,DeCasien_Higham_2019_DQIdata,verbatim as printed,
+Method:frozen_source,"41559_2019_969_MOESM3_ESM.xlsx (worksheet 'DQI data') is a digital-native journal supplementary workbook -- it IS the frozen source (kept verbatim, no derived snapshot)",,,,method,primates,DeCasien_Higham_2019_DQIdata,,
+Method:compilation,"Secondary compilation from primary literature identified per-row in References",,,,method,primates,DeCasien_Higham_2019_DQIdata,,

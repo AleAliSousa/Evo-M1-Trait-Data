@@ -1,0 +1,42 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species_sci,Harmonised accepted binomial (project species key),,,,info,primates (72 spp.; 399 rows -- multiple rows per taxon where sources differ),DeCasien_Higham_2019_BrainRegionDatamm3,added in build via project species key,
+Notes (re: gray cells; see next tab),"Replacement-note code (A-F) flagging a value substituted from a different source than the row's main Reference; decoded in the sibling BrainRegionDataNotes item",,,,info,primates,DeCasien_Higham_2019_BrainRegionDatamm3,"grey-cell formatting itself is not represented in CSV/TSV, only this code",
+Taxon,Species name as printed (Genus_species, underscore-joined),,,,info,primates,DeCasien_Higham_2019_BrainRegionDatamm3,printed name preserved,
+References,Numeric reference code(s) supporting the row (as printed; may be a range e.g. '54-55'; keys into the article's own bibliography, not distributed in this worksheet),,,,info,primates,DeCasien_Higham_2019_BrainRegionDatamm3,per-row citation key,
+N,Sample size for the row (as printed),,count,,info,primates,DeCasien_Higham_2019_BrainRegionDatamm3,,
+BV,Total brain volume,Brain,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,compiled,mm3
+Medulla,Medulla volume,Medulla,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,compiled,mm3
+Cerebellum,Cerebellum volume,Cerebellum,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,compiled,mm3
+Mesencephalon,Mesencephalon (midbrain) volume,Mesencephalon,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,compiled,mm3
+Diencephalon,Diencephalon volume,Diencephalon,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,compiled,mm3
+Telencephalon,Telencephalon volume,Telencephalon,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,compiled,mm3
+MOB,Main olfactory bulb volume,Main_olfactory_bulb,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,compiled,mm3
+AOB,Accessory olfactory bulb volume,Accessory_olfactory_bulb,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,compiled,mm3
+Piriform Lobe,Piriform lobe volume,Piriform_lobe,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,compiled,mm3
+Septum,Septum volume,Septum,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,compiled,mm3
+Striatum,Striatum volume (excluding nucleus accumbens; see also 'Striatum (incl. NAcc)'),Striatum,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,"compiled; kept as a distinct column from the NAcc-inclusive variant, not merged",mm3
+Striatum (incl. NAcc),Striatum volume including the nucleus accumbens,Striatum_incl_NAcc,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,"compiled; some source studies report this combined value instead of Striatum alone",mm3
+Schizocortex,Schizocortex volume,Schizocortex,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,compiled,mm3
+Hippocampus,Hippocampus volume,Hippocampus,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,compiled,mm3
+Neocortex (GM+WM),Neocortex volume (grey + white matter combined),Neocortex_total,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,compiled,mm3
+Neocortex (GM),Neocortex grey-matter volume only,Neocortex_GM,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,compiled,mm3
+Epithalamus,Epithalamus volume,Epithalamus,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,compiled,mm3
+Thalamus,Thalamus volume,Thalamus,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,compiled,mm3
+Hypothalamus,Hypothalamus volume,Hypothalamus,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,compiled,mm3
+Subthalamus,Subthalamus volume,Subthalamus,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,compiled,mm3
+Pallidum,Pallidum (globus pallidus) volume,Pallidum,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,compiled,mm3
+Subthalamic Nucleus,Subthalamic nucleus volume,Subthalamic_nucleus,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,compiled,mm3
+Optic Tract,Optic tract volume,Optic_tract,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,compiled,mm3
+V1 (GM),Primary visual cortex (area striata) grey-matter volume,V1_GM,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,compiled,mm3
+LGN,Lateral geniculate nucleus volume,LGN,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,compiled,mm3
+Paleocortex,Paleocortex volume,Paleocortex,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,compiled,mm3
+Amygdala,Amygdala volume,Amygdala,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,compiled,mm3
+Vmo,Motor trigeminal nucleus volume,Vmo,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,compiled,mm3
+VII,Facial nerve nucleus volume,VII,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,compiled,mm3
+XII,Hypoglossal nucleus volume,XII,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,compiled,mm3
+Granular Insula,Granular insula volume,Granular_insula,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,compiled,mm3
+Dysgranular Insula,Dysgranular insula volume,Dysgranular_insula,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,compiled,mm3
+Agranular Insula,Agranular insula volume,Agranular_insula,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,compiled,mm3
+Insula (GM),Total insula grey-matter volume,Insula_GM,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,compiled,mm3
+Method:frozen_source,"41559_2019_969_MOESM3_ESM.xlsx (worksheet 'Brain Region Data (mm3)') is a digital-native journal supplementary workbook -- it IS the frozen source (kept verbatim, no derived snapshot)",,,,method,primates,DeCasien_Higham_2019_BrainRegionDatamm3,,
+Method:aggregation,"The published analysis sample-size-weights these values across studies per taxon before use; this build preserves the 399 raw worksheet rows (multiple rows per taxon) and does NOT perform that weighting -- apply it explicitly downstream, per the item README",,,,method,primates,DeCasien_Higham_2019_BrainRegionDatamm3,,

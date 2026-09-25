@@ -67,7 +67,6 @@ trait_files <- c(
   "corticospinaltract_etc.xlsx"       = "Iwaniuk et al. 1999 (corticospinal tract & ecology)",
   "glia_gyrification.xlsx"            = "Lewitus et al. 2014 (glia, gyrification & life history)",
   "interlaminar_astrocytes.xlsx"      = "Falcone et al. 2019 (interlaminar astrocytes)",
-  "diet_foraging.xlsx"               = "Wilman et al. 2014 (EltonTraits diet & foraging)",
   "v1_synapses_karl.xlsx"            = "Karl et al. 2024 (V1 synapses & mitochondria)",
   "sleep.xlsx"                       = "Eagleman & Vaughn 2021 / Herculano-Houzel 2015 (sleep)"
   # NB: behavioural traits (vocal repertoire, dexterity, gait, locomotion,
@@ -76,6 +75,23 @@ trait_files <- c(
   # std_merge() like body_ecology / brain_mass. The dexterity_* and
   # locomotion/gait/manipulation/handedness trait tables feed that merge, not the
   # app melt.
+  #
+  # NB 2026-09-25: diet_foraging.xlsx (Wilman et al. 2014 EltonTraits) is no
+  # longer melted, for the same reason. __merging_body_ecology ingests Wilman
+  # directly, so all 15 of the file's columns (Diet_* x12, Diet_breadth,
+  # Diet_dominant, Trophic_guild, ForStrat_stratum, Activity_pattern) were
+  # already superseded onto body_ecology_long by _keys/variable_canonical.csv --
+  # and unlike the life-history columns below, the supersede left ZERO fallback
+  # species: every species the melt carried is covered by the merge, so the melt
+  # contributed 2,946 rows that the app then discarded at startup. The xlsx is
+  # still built by EvoM1_read_diet.R and remains the harmonised per-paper table;
+  # it just no longer reaches the app twice.
+  #
+  # Where a trait column IS still the only source for some species (the Lewitus
+  # 2014 life-history and body/brain-mass columns, Heffner's body weight), the
+  # supersede-plus-fallback in variable_canonical.csv is the right mechanism and
+  # the column stays in the melt. Per-column exceptions within a melted file go
+  # in ____EvoM1_TraitTable/traits_select_value_flags.csv (section 2b).
 )
 # Columns skipped when melting: species identifiers + taxonomy. Taxonomy
 # (Order/Suborder/Family/…) is NOT a measurement — it lives in the separate

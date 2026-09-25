@@ -1,0 +1,10 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species_row,printed row sequence within Table 25,,,,info,Chiroptera,Baron_etal_1996_Table25,stable source-order key,
+Species_Baron1996,species wording as printed in Table 25,,,,info,Chiroptera,Baron_etal_1996_Table25,abbreviations preserved; taxonomy applied later,
+mesencephalon_mm3,Mesencephalon (midbrain) volume; agrees with Table 10's mesencephalon to printed rounding,Mesencephalon,Vol.mm3,mean,primary,Chiroptera,Baron_etal_1996_Table25,,
+tegmentum_mesencephali_mm3,Mesencephalic tegmentum volume,Tegmentum_mesencephali,Vol.mm3,mean,primary,Chiroptera,Baron_etal_1996_Table25,,
+tectum_mesencephali_mm3,Mesencephalic tectum volume,Tectum_mesencephali,Vol.mm3,mean,primary,Chiroptera,Baron_etal_1996_Table25,,
+colliculi_inferiores_mm3,Inferior colliculi volume,Colliculi_inferiores,Vol.mm3,mean,primary,Chiroptera,Baron_etal_1996_Table25,,
+colliculi_superiores_mm3,Superior colliculi volume,Colliculi_superiores,Vol.mm3,mean,primary,Chiroptera,Baron_etal_1996_Table25,,
+source_pdf_page,one-based PDF page containing the printed row,,,,info,Chiroptera,Baron_etal_1996_Table25,PDF pages 122-126,
+Method:source,PDF text-layer extraction with literal rendered-page-verified OCR repairs,,,,method,Chiroptera,Baron_etal_1996_Table25,The MES column is the same measure as Table 10's mesencephalon and agrees with it to the printed rounding scale.,printed units as coded in column suffix (mm3/mm2/g/mg)

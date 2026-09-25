@@ -1,0 +1,14 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species (lay term),common (lay) name of the species as printed in the table; no binomial name is merged in for this item,,,info,,Mammalia,Garwicz_etal_2009_TableS2,,see sibling item Garwicz_etal_2009_TableS1 for binomial names by lay term
+Absolute Brain Mass (g),whole-brain mass in grams,Brain,mass_g,,primary,Mammalia,Garwicz_etal_2009_TableS2,,
+Absolute Brain Mass (g) Ref,literature reference code(s) for Absolute Brain Mass,,,info,,,Garwicz_etal_2009_TableS2,,printed footnote number(s) in parentheses; see paper's reference list
+Neonatal Brain Mass (g),brain mass in grams at birth,Brain,mass_g,,primary,Mammalia,Garwicz_etal_2009_TableS2,blank where not reported (printed as an em dash in the source),
+Body Mass (g),adult body mass in grams,Body,mass_g,,primary,Mammalia,Garwicz_etal_2009_TableS2,,
+Body Mass (g) Ref,literature reference code(s) for Body Mass,,,info,,,Garwicz_etal_2009_TableS2,,printed footnote number(s) in parentheses; see paper's reference list
+Gestation (days),gestation length in days,,duration_days,,primary,Mammalia,Garwicz_etal_2009_TableS2,,
+Gestation (days) Ref,literature reference code(s) for Gestation,,,info,,,Garwicz_etal_2009_TableS2,,printed footnote number(s) in parentheses; see paper's reference list
+Walking onset (Postnatal days),age at walking onset counted from birth (postnatal days),,duration_days,,primary,Mammalia,Garwicz_etal_2009_TableS2,,
+Walking onset (Postnatal days) Ref,literature reference code(s) for Walking onset (Postnatal days),,,info,,,Garwicz_etal_2009_TableS2,,printed footnote number(s) in parentheses; see paper's reference list
+Walking onset (Postconception days),age at walking onset counted from conception (= Gestation + Postnatal walking-onset days),,duration_days,,derived in source table,Mammalia,Garwicz_etal_2009_TableS2,,sum of Gestation (days) and Walking onset (Postnatal days) as printed
+Precocial/Altricial,developmental strategy at birth (Pre = precocial; Alt = altricial),,,info,,Mammalia,Garwicz_etal_2009_TableS2,,
+Hindlimb Standing Position,diet-related hindlimb/standing-posture category as printed (Plant. = plantigrade; Nonplant. = non-plantigrade),,,info,,Mammalia,Garwicz_etal_2009_TableS2,,column header abbreviated "HSP" in the source table

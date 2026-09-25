@@ -1,0 +1,8 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Dependent variable,dendritic/spine measure code modeled (DSC/DSD/DSN/MSL/TDL/Vol; defined in the paper's Table 2),,,info,,Giraffa camelopardalis,Jacobs_etal_2015_Table3,,abbreviations: dendritic spine count (DSC); dendritic spine density (DSD); dendritic spine number (DSN); mean segment length (MSL); total dendritic length (TDL); dendritic volume (Vol)
+Overall model vs intercept-only (Wald),Wald chi-square test of the full GENLIN model against an intercept-only model; a significant result rejects the null that the model is no better than the intercept alone,,statistic,Wald chi-square,primary,Giraffa camelopardalis,Jacobs_etal_2015_Table3,"n.s. = not significant",
+Model fit Pearson chi2,Pearson chi-square goodness-of-fit statistic for the model,,statistic,Pearson chi-square,primary,Giraffa camelopardalis,Jacobs_etal_2015_Table3,,a significant result rejects the null that the model adequately fits the data (i.e. indicates poor fit)
+Model fit conclusion,text conclusion drawn from the Model fit Pearson chi2 test,,,info,,,Jacobs_etal_2015_Table3,,
+Intercept Wald chi2,Wald chi-square test for the model intercept term,,statistic,Wald chi-square,primary,Giraffa camelopardalis,Jacobs_etal_2015_Table3,,
+Brain main effect Wald chi2,Wald chi-square test for the main effect of Brain (individual subject) on the dependent variable,,statistic,Wald chi-square,primary,Giraffa camelopardalis,Jacobs_etal_2015_Table3,"n.s. = not significant",
+Block within Brain Wald chi2,Wald chi-square test for the effect of cortical Region (block) nested within Brain,,statistic,Wald chi-square,primary,Giraffa camelopardalis,Jacobs_etal_2015_Table3,"n.s. = not significant",

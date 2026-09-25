@@ -1,0 +1,10 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species_row,printed row sequence within Table 45,,,,info,Chiroptera,Baron_etal_1996_Table45,stable source-order key,
+Species_Baron1996,species wording as printed in Table 45,,,,info,Chiroptera,Baron_etal_1996_Table45,abbreviations preserved; taxonomy applied later,
+bicortex_mm2,Bicortex surface area (total); same measure as Table 39's bicortex,Bicortex,Area.mm2,mean,secondary,Chiroptera,Baron_etal_1996_Table45,,
+RB_mm2,Bicortex sub-region 'RB' surface area (abbreviation printed verbatim),Bicortex_RB,Area.mm2,mean,secondary,Chiroptera,Baron_etal_1996_Table45,,
+TT_mm2,Bicortex sub-region 'TT' surface area (abbreviation printed verbatim),Bicortex_TT,Area.mm2,mean,secondary,Chiroptera,Baron_etal_1996_Table45,,
+CA_mm2,Bicortex sub-region 'CA' surface area (abbreviation printed verbatim),Bicortex_CA,Area.mm2,mean,secondary,Chiroptera,Baron_etal_1996_Table45,,
+FD_mm2,Bicortex sub-region 'FD' surface area (abbreviation printed verbatim),Bicortex_FD,Area.mm2,mean,secondary,Chiroptera,Baron_etal_1996_Table45,,
+source_pdf_page,one-based PDF page containing the printed row,,,,info,Chiroptera,Baron_etal_1996_Table45,PDF pages 163,
+Method:source,PDF text-layer extraction with literal rendered-page-verified OCR repairs,,,,method,Chiroptera,Baron_etal_1996_Table45,"Lutgemeier's (1962) subdivision of the 'bicortex', reprinted in the book. Secondary. The four sub-region keys are printed as abbreviations only and are carried verbatim.",printed units as coded in column suffix (mm3/mm2/g/mg)

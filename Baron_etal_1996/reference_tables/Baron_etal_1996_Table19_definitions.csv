@@ -1,0 +1,10 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species_row,printed row sequence within Table 19,,,,info,Chiroptera,Baron_etal_1996_Table19,stable source-order key,
+Species_Baron1996,species wording as printed in Table 19,,,,info,Chiroptera,Baron_etal_1996_Table19,abbreviations preserved; taxonomy applied later,
+vestibular_complex_mm3,Vestibular nuclear complex volume (total),Vestibular_complex,Vol.mm3,mean,primary,Chiroptera,Baron_etal_1996_Table19,,
+nucleus_vestibularis_medialis_mm3,Medial vestibular nucleus volume,Nucleus_vestibularis_medialis,Vol.mm3,mean,primary,Chiroptera,Baron_etal_1996_Table19,,
+nucleus_vestibularis_inferior_mm3,Inferior vestibular nucleus volume,Nucleus_vestibularis_inferior,Vol.mm3,mean,primary,Chiroptera,Baron_etal_1996_Table19,,
+nucleus_vestibularis_lateralis_mm3,Lateral vestibular nucleus volume,Nucleus_vestibularis_lateralis,Vol.mm3,mean,primary,Chiroptera,Baron_etal_1996_Table19,,
+nucleus_vestibularis_superior_mm3,Superior vestibular nucleus volume,Nucleus_vestibularis_superior,Vol.mm3,mean,primary,Chiroptera,Baron_etal_1996_Table19,,
+source_pdf_page,one-based PDF page containing the printed row,,,,info,Chiroptera,Baron_etal_1996_Table19,PDF pages 98-102,
+Method:source,PDF text-layer extraction with literal rendered-page-verified OCR repairs,,,,method,Chiroptera,Baron_etal_1996_Table19,,printed units as coded in column suffix (mm3/mm2/g/mg)

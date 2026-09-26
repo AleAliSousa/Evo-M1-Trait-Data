@@ -731,6 +731,120 @@ each folder's README:
    standardized-term rows) — only after the source file exists, or the merge errors.
 6. Re-run the merge's compile script and check species resolve and no double-counting.
 
+## Build status update (2026-09-26)
+
+**Sensory/hearing batch — all 7 items built and registered.** A fresh registry audit turned up 7
+unbuilt sensory/hearing items (Heffner-authored/related). All are now complete with full file sets
+(snapshot, analysis CSV, R script, README, definitions, registry row): `Heffner_etal_2008`,
+`Heffner_etal_2015`, `Heffner_Heffner_1992_c`, `Pettigrew_etal_1998_Table2` (platypus visual-cortex
+magnification, 13 species), `Heffner__1998_Table1` (19-species domestic hearing table),
+`Mooney_etal_2012_Table4.1` (31 published odontocete audiograms, 18 species), and
+`Heffner__2004_Table1` — the last **image-verified**: its OCR text layer had scrambled footnote
+superscripts into numeric cells and silently dropped several minus signs, so the source PDF page was
+rendered to an image and all 19 rows re-transcribed by eye, then cross-checked by recomputing each
+row's hearing-range-in-octaves from its printed high/low limits. **Public TSV mirrors for all 7 (plus
+6 built earlier the same week) remain unwritten** — `__Public/comparative-data` uploads have timed
+out on every attempt (5+ tries across two sessions); this looks like a destination-specific
+infrastructure limit, not a retry problem, and is unresolved.
+
+**Folder/file naming cleanup.** A folder-vs-registry naming audit found 4 mismatches, since corrected
+— folder **and** the files inside each, not just the folder object:
+- `Kamiya_Pilot_1980` → `Kamiya_Pirlot_1980` (spelling)
+- `Ketten_2012` → `Ketten__2012` (single-author double-underscore convention; folder holds only the
+  unbuilt source PDF)
+- `Mota_etal_2015` → `Mota_HerculanoHouzel_2015` (dropped the internal hyphen in
+  "Herculano-Houzel" to match the no-hyphen convention used everywhere else for this author —
+  `HerculanoHouzel__2015`, `HerculanoHouzel_etal_2013/2015/2016/2020`; an intermediate rename to
+  `Mota_Herculano-Houzel_2015` briefly existed and was itself corrected)
+- `Siegel_2022` → `Siegel__2022` (single-author double-underscore convention)
+
+**⚠️ Known live breakage — `Mota_HerculanoHouzel_2015` registry row (Excel row 330).** `Publication
+name` (H) and `Item name` (J) are not stored text — every row computes them with a formula chain
+from columns A/E/F/G/B. Tracing the Mota hyphen bug found its root cause: the **first**-author
+surname formula (E) strips hyphens (`SUBSTITUTE(...,"-","")`), but the **second**-author surname
+formula (F) does not, so any second author with a hyphenated surname keeps the hyphen. **This same
+bug affects `Schniter_Penaherrera-Aguirre_2026` (row 371)** — not touched, since only the Mota row
+was in scope this session.
+Attempting to patch row 330's F-cell (formula and then plain value) to fix this did not take —
+repeated writes silently reverted to the original content. Clearing the cell to force a clean rewrite
+made things worse: **F330 is now empty**, and no subsequent write (restoring the original formula, the
+corrected formula, or any plain value, including on an unrelated scratch cell elsewhere in the sheet)
+has landed, across two sessions and after the owner's own test scripts had stopped running. The
+workbook is not erroring, it is just not persisting writes to this file right now. Net effect: row
+330 currently computes `Publication name = "Mota__2015"` and `Item name = "Mota__2015_TableS1"` —
+missing the author token entirely — until someone with working write access (Excel desktop/online, or
+a future session where the Graph write path is unblocked) restores F330 and applies the hyphen-strip
+fix. The corrected formula (paste into F330):
+`=LET(authors,TEXTBEFORE(A330," ("&G330&")"),hasAmp,ISNUMBER(SEARCH("&",authors)),hasEllipsis,ISNUMBER(SEARCH(UNICHAR(8230),authors)),commasBeforeAmp,IF(hasAmp,LEN(TEXTBEFORE(authors,"&"))-LEN(SUBSTITUTE(TEXTBEFORE(authors,"&"),",","")),0),IF(hasEllipsis,"etal",IF(NOT(hasAmp),"",IF(commasBeforeAmp>2,"etal",SUBSTITUTE(TRIM(TEXTBEFORE(TEXTAFTER(authors,"& "),",")),"-","")))))`
+— apply the same fix (with `330` → `371`) to the Schniter row while in there.
+
+**Fresh folder-vs-registry audit (2026-09-26).** Registry rows with **no matching folder** (7,
+unchanged from the 2026-09 audit plus one): `Kaskan_etal_2005`, `Kruska_Rohrs_1974`, `Kruska__2014`,
+`Pirlot_Kamiya_1982`, `Pirlot_Kamiya_1985`, `Ridgway__1990`, `Tschudin__1998` — all awaiting source
+PDF, no action taken pending owner direction. Folders with **no registry row** (8): `Changizi_He_2005`,
+`Deaner_etal_2007`, `Reader_Laland_2002`, `Weaver__2005` are deliberate per
+`SOURCE_DISPOSITION_REGISTER.md`; `Mota_HerculanoHouzel_2015` is the row-330 breakage above (folder is
+fine, only the live formula output is wrong); but **`Hutsler_etal_2005`** (23 files), **`Jacobs_etal_1997`**,
+and **`Jacobs_etal_2018`** are genuine gaps — `Jacobs_etal_2018` in particular is documented elsewhere
+in this file (Tier 3, candidate #9) as "✅ SNAPSHOTS BUILT" but has no `__ReadMe.xlsx` row at all under
+any name. Worth a registration pass.
+
+**Other data-quality anomalies surfaced by this audit (pre-existing, not caused by this session's
+edits) — flagged for curator attention, not yet touched:**
+- Row 201: `Publication name` reads literal `#N/A`, `Progress stage = FINISHED`.
+- Row 203: a bare `Heffner_Heffner_1992` row (no `_a`/`_b`/`_c` suffix) with `Item name =
+  Heffner_Heffner_1992_TableI`, separate from the three properly-suffixed rows (159–163) — looks like
+  a leftover pre-rename duplicate.
+- Row 305 (`Lyamin_etal_2008`) and rows 338–339 (`Nimchinsky_etal_1999`, both items) carry `Progress
+  stage = "BROKEN CODE"` / `"BROKEN CODE - FIRST COLUMN EMPTY"`.
+- Row 244 (`Karbowski__2007_TableS2`) is marked `PLACEHOLDER`.
+- A cluster of rows near the sheet's end — `Morgan_etal_2014`, `Hanson_etal_2018` (×2),
+  `Karlsen_Pakkenberg_2011` (×3), `Mackes_etal_2020` (×2) — duplicate publication names already
+  registered earlier in the sheet, but with `Item full original title` (M) empty and content shifted
+  into `Source format` (N) / `N.B.` (O) / `Progress stage` (P), e.g. `Progress stage` reading `"Control
+  group"` or `"TD group"` instead of `FINISHED`/blank. Either legitimate group-specific sub-items added
+  with a column off-by-one, or accidental duplicate rows — needs an owner call, not a guess.
+
+## Build status update (2026-09-26, second pass) — the 7 registry-rows-without-folders batch
+
+Following the 2026-09-26 audit above, the owner supplied source PDFs for 5 of the 7 unbuilt
+registry rows. All 5 are now fully built (snapshot, analysis CSV, definitions, README, R script),
+verified, and uploaded — **but registry rows could not be written this session** (see the
+`__ReadMe.xlsx` write-lock note below); the exact rows to paste in are documented per-item below.
+
+| Item | Status | Verification |
+|---|---|---|
+| `Pirlot_Kamiya_1982_Table1` | ✅ Built | 11 brain components × 4 taxa (3 individual specimens + a 7-species Pteropodid average); all % sum to 100.00, volumes match printed totals within 0.2 mm³ rounding |
+| `Pirlot_Kamiya_1985_Table1` | ✅ Built | 9 brain components, 1 *Dugong dugong* specimen; volumes sum exactly to the printed total (223002.14 mm³), % sums exact |
+| `Kruska_Rohrs_1974_Tables2–3` | ✅ Built | 4 feral Galapagos pigs + 6 domestic pigs, 21 structures each; sub-hierarchy sums verified exact, but **total brain volume is consistently 3,000–4,300 mm³ higher than the sum of the 5 major divisions across all 10 specimens** — a genuine, systematic source discrepancy, retained and flagged rather than silently reconciled |
+| `Kruska__2014_Tables2–3` | ✅ Built | 6 wild cavies + 6 guinea pigs, 24 structures each; **every level of the hierarchy reconciles exactly** (unlike the 1974 table above) |
+| `Kaskan_etal_2005_TableS2` | ✅ Built, **different item than pre-registered** | Retinal area + rod/cone counts, 19 specimens across 5 primate species (Electronic Appendix B); all 5 species' printed means/SDs recomputed exactly. The pre-existing registry rows `Kaskan_etal_2005_Figure2`/`Figure3` were placeholders with no supporting data — Figure 2/3 plot regression contrasts, not this table, so this is registered as a new, third item |
+| `Kaskan_etal_2005_TableS1` | ✅ Built (owner-requested add, not pre-registered) | Full 30-species roster with cortical-area naming per species (Electronic Appendix A) — nomenclature/presence data, not area measurements |
+| `Kaskan_etal_2005_Figure3` | ✅ Built (owner-requested exception) | **Digitized, not transcribed** — pixel-calibrated coordinates read off the published scatter plot (Figure 3 panels a/b), since this is the one Kaskan figure that plots actual per-species points rather than only fitted contrast lines. ±0.05–0.1 log-unit precision; diurnal (8/8) and monotremata (2/2) counts matched the paper exactly, nocturnal undercounted (13–16/20) due to visual overlap. 4 species individually identified by their printed arrow-labels (*Aotus trivirgatus*, *Callithrix jacchus*, *Galago senegalensis*, *Saimiri sciureus*); the rest are `unidentified_NN` placeholders pending a follow-up cross-reference against `Kaskan_etal_2005_TableS1`'s species roster |
+| `Ridgway__1990`, `Tschudin__1998` | ⏳ Still empty | Folders created, awaiting source PDF |
+
+**Registry write-lock (unresolved as of 2026-09-26):** `__ReadMe.xlsx` has rejected every write
+attempt for an extended period this session — confirmed not to be a local file-sync issue (the
+owner paused OneDrive sync and later restarted entirely; neither changed anything), and not
+specific to one row (an unrelated scratch cell elsewhere in the sheet also silently rejects
+writes). The exact registry rows below are ready to paste in once write access returns:
+
+- **Row 356** (`Pirlot_Kamiya_1982`): Progress stage → `FINISHED`
+- **Row 357** (`Pirlot_Kamiya_1985`): Progress stage → `FINISHED`
+- **Row 294** (`Kruska_Rohrs_1974`): Progress stage → `FINISHED`
+- **Row 293** (`Kruska__2014`): Progress stage → `FINISHED`
+- **Row 261** (`Kaskan_etal_2005_Figure3`): Progress stage → `FINISHED`; N.B. should note the
+  digitization method/caveat above
+- **New rows needed:** `Kaskan_etal_2005_TableS1` and `Kaskan_etal_2005_TableS2`, DOI
+  `10.1098%2Frspb.2004.2925` (same as the paper's existing rows), Item encoded suffixes
+  `_TableS1` and `_TableS2`
+
+**File-naming note:** two of the newly built items had to be renamed post-hoc to match the
+registry's own pre-existing Item name spelling — `Tables2-3` (hyphen) → `Tables2–3` (en dash) for
+both `Kruska_Rohrs_1974` and `Kruska__2014` — and the Kaskan Figure 3 file was renamed from
+`..._Figure3_digitized.csv` to `..._Figure3.csv` to match the pre-existing registry row exactly
+(the digitization caveat lives in the README/N.B., not the filename).
+
 ## Current order of work (refreshed 2026-09-02; audit in `_checks/registry_audit_20260902.md`)
 
 1. **Registry hygiene — refreshed 2026-09-02 (`_checks/registry_audit_20260902.md` is now the

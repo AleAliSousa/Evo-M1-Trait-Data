@@ -17,31 +17,33 @@ sources only. AG (exposed surface area) belongs with the cortical-surface data, 
 
 ## Why this was built
 The paper was present as raw supplement (`mota.sm.xlsx`, `mota.sm.pdf`) and registered in
-`__ReadMe.xlsx` as `Mota_Herculano-Houzel_2015_TableS1`, but had no snapshot, script, or CSV/TSV.
+`__ReadMe.xlsx` as `Mota_HerculanoHouzel_2015_TableS1`, but had no snapshot, script, or CSV/TSV.
 This build adds the house pipeline.
 
 ## Source → snapshot → CSV
 - **Source:** `mota.sm.xlsx` (sheet "Table 2" = the supplement's Table S1), in this folder.
-- **Snapshot:** `Mota_etal_2015_TableS1_snapshot.xlsx` (sheet `TableS1`) — a **verbatim** copy of
+- **Snapshot:** `Mota_HerculanoHouzel_2015_TableS1_snapshot.xlsx` (sheet `TableS1`) — a **verbatim** copy of
   the supplement sheet, preserving the two-tier header ("Our dataset" / "Other datasets"), the
   taxonomic section-header rows, the species *Globicephala macrorhyncha* printed **split across two
   rows**, an in-cell newline in *Cercopithecus aethiops*, `n.a.` for missing values, and the
   paper's trailing reference list.
-- **Reformat:** `Mota_etal_2015_TableS1.R` drops the title/group/header rows, tracks the running
+- **Reformat:** `Mota_HerculanoHouzel_2015_TableS1.R` drops the title/group/header rows, tracks the running
   `taxon_group`, re-joins the split Globicephala row, repairs the newline, maps `n.a.`→NA, resolves
   species (`species_sci` = accepted binomial, `Species` = printed), keeps one row per printed
   record (duplicate species with >1 record kept), stops at the reference list, and writes:
-  - `Mota_etal_2015_TableS1.csv` (66 records, 63 species)
+  - `Mota_HerculanoHouzel_2015_TableS1.csv` (66 records, 63 species)
   - `__Public/comparative-data/10.1126%2Fscience.aaa9101_TableS1.tsv`
 
 ## Columns
 `species_sci`, `Species`, `taxon_group`, `AG_own_mm2`, `FI_own`, `T_own_mm`,
 `AG_other_mm2`, `FI_other`, `T_other_mm`, `Reference`.
 
-## File naming (registry override)
-On-disk files follow the folder (`Mota_etal_2015_TableS1`); the `__ReadMe.xlsx` registry Item name
-is `Mota_Herculano-Houzel_2015_TableS1`. The script sets `registry_item_name` explicitly for the
-Item-encoded (DOI) TSV lookup — same override pattern as `Zilles_Rehkämper_1988`.
+## File naming
+On-disk files, the folder, and the `__ReadMe.xlsx` registry Item name all match:
+`Mota_HerculanoHouzel_2015_TableS1` (no internal hyphen in "Herculano-Houzel", consistent with the
+`HerculanoHouzel` convention used across this registry's other entries for the same author, e.g.
+`HerculanoHouzel__2015`). An earlier version of this folder briefly used a hyphenated
+`Mota_Herculano-Houzel_2015` name; it was corrected to drop the hyphen (2026-09-26).
 
 ## Duplicate species
 *Vulpes vulpes* (2 records), *Homo sapiens* (2), *Equus caballus* (2) each appear more than once
@@ -53,7 +55,7 @@ repaired, `n.a.`→NA) + `species_sci`. 36 of 63 species resolve to a canonical 
 `_keys/species_reference.csv`; the rest (mostly non-primate) pass through as cleaned printed names.
 
 ## Correction (2026-08-25) — AG is the TOTAL surface, not the exposed surface
-`Mota_etal_2015_definitions.csv` originally defined AG as "exposed (pial)" surface. The paper
+`Mota_HerculanoHouzel_2015_definitions.csv` originally defined AG as "exposed (pial)" surface. The paper
 defines the folding index as *"the ratio of total surface area AG to exposed surface area AE"*
 (FI = AG/AE), so **AG is the total (pial incl. sulcal) grey surface of one hemisphere**; AE = AG
 only for lissencephalic species (FI = 1). The definitions file is corrected (Measure now

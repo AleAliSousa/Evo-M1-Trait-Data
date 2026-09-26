@@ -1,0 +1,45 @@
+species,species_sci,specimen_type,body_weight_g,brain_weight_g,brain_component_code,brain_component_name,pct_of_total_brain,volume_mm3,volume_mm3_min,volume_mm3_max,total_brain_volume_mm3
+Cynocephalus,Cynocephalus variegatus,individual,810,6.2,BO,bulbus olfactorius,2.25,130.5,NA,NA,5781.1
+Cynocephalus,Cynocephalus variegatus,individual,810,6.2,N,neocortex,37.65,2175.2,NA,NA,5781.1
+Cynocephalus,Cynocephalus variegatus,individual,810,6.2,RH,rhinencephalon,10.33,599,NA,NA,5781.1
+Cynocephalus,Cynocephalus variegatus,individual,810,6.2,S,septum,0.77,44.5,NA,NA,5781.1
+Cynocephalus,Cynocephalus variegatus,individual,810,6.2,D,diencephalon,11.17,645.5,NA,NA,5781.1
+Cynocephalus,Cynocephalus variegatus,individual,810,6.2,St,striatum,4.2,242.4,NA,NA,5781.1
+Cynocephalus,Cynocephalus variegatus,individual,810,6.2,H,hippocampus,5.79,335.1,NA,NA,5781.1
+Cynocephalus,Cynocephalus variegatus,individual,810,6.2,M,mesencephalon,6.19,357.8,NA,NA,5781.1
+Cynocephalus,Cynocephalus variegatus,individual,810,6.2,C,cerebellum,11.02,636.8,NA,NA,5781.1
+Cynocephalus,Cynocephalus variegatus,individual,810,6.2,O,medulla oblongata,7.21,416.5,NA,NA,5781.1
+Cynocephalus,Cynocephalus variegatus,individual,810,6.2,Sz,schizocortex,3.42,198,NA,NA,5781.1
+Iomys,Iomys horsfieldii,individual,119,2.2,BO,bulbus olfactorius,2.08,43.5,NA,NA,2094.6
+Iomys,Iomys horsfieldii,individual,119,2.2,N,neocortex,33.68,705.3,NA,NA,2094.6
+Iomys,Iomys horsfieldii,individual,119,2.2,RH,rhinencephalon,6.44,135,NA,NA,2094.6
+Iomys,Iomys horsfieldii,individual,119,2.2,S,septum,1.11,23.2,NA,NA,2094.6
+Iomys,Iomys horsfieldii,individual,119,2.2,D,diencephalon,10.59,221.9,NA,NA,2094.6
+Iomys,Iomys horsfieldii,individual,119,2.2,St,striatum,6.13,128.4,NA,NA,2094.6
+Iomys,Iomys horsfieldii,individual,119,2.2,H,hippocampus,7.88,165.1,NA,NA,2094.6
+Iomys,Iomys horsfieldii,individual,119,2.2,M,mesencephalon,6.96,145.7,NA,NA,2094.6
+Iomys,Iomys horsfieldii,individual,119,2.2,C,cerebellum,13.7,287.1,NA,NA,2094.6
+Iomys,Iomys horsfieldii,individual,119,2.2,O,medulla oblongata,9.79,205.1,NA,NA,2094.6
+Iomys,Iomys horsfieldii,individual,119,2.2,Sz,schizocortex,1.64,34.2,NA,NA,2094.6
+Glaucomys,Glaucomys sabrinus,individual (immature),49.5,0.938,BO,bulbus olfactorius,2.7,24.2,NA,NA,899.3
+Glaucomys,Glaucomys sabrinus,individual (immature),49.5,0.938,N,neocortex,35.1,315.8,NA,NA,899.3
+Glaucomys,Glaucomys sabrinus,individual (immature),49.5,0.938,RH,rhinencephalon,7.97,71.7,NA,NA,899.3
+Glaucomys,Glaucomys sabrinus,individual (immature),49.5,0.938,S,septum,0.95,8.5,NA,NA,899.3
+Glaucomys,Glaucomys sabrinus,individual (immature),49.5,0.938,D,diencephalon,11.53,103.7,NA,NA,899.3
+Glaucomys,Glaucomys sabrinus,individual (immature),49.5,0.938,St,striatum,5.51,49.5,NA,NA,899.3
+Glaucomys,Glaucomys sabrinus,individual (immature),49.5,0.938,H,hippocampus,7.57,68,NA,NA,899.3
+Glaucomys,Glaucomys sabrinus,individual (immature),49.5,0.938,M,mesencephalon,4.99,44.9,NA,NA,899.3
+Glaucomys,Glaucomys sabrinus,individual (immature),49.5,0.938,C,cerebellum,11.71,105.4,NA,NA,899.3
+Glaucomys,Glaucomys sabrinus,individual (immature),49.5,0.938,O,medulla oblongata,9.42,84.7,NA,NA,899.3
+Glaucomys,Glaucomys sabrinus,individual (immature),49.5,0.938,Sz,schizocortex,2.55,22.9,NA,NA,899.3
+Pteropodids,"(average, 7 spp. Megachiroptera)","species-average (secondary, from Stephan et al. 1974)",NA,NA,BO,bulbus olfactorius,4.15,NA,31,206,822-5701
+Pteropodids,"(average, 7 spp. Megachiroptera)","species-average (secondary, from Stephan et al. 1974)",NA,NA,N,neocortex,34.7,NA,223,2385,822-5701
+Pteropodids,"(average, 7 spp. Megachiroptera)","species-average (secondary, from Stephan et al. 1974)",NA,NA,RH,rhinencephalon,7.18,NA,64,376,822-5701
+Pteropodids,"(average, 7 spp. Megachiroptera)","species-average (secondary, from Stephan et al. 1974)",NA,NA,S,septum,1.48,NA,15,69,822-5701
+Pteropodids,"(average, 7 spp. Megachiroptera)","species-average (secondary, from Stephan et al. 1974)",NA,NA,D,diencephalon,9.45,NA,79,514,822-5701
+Pteropodids,"(average, 7 spp. Megachiroptera)","species-average (secondary, from Stephan et al. 1974)",NA,NA,St,striatum,6.13,NA,38,392,822-5701
+Pteropodids,"(average, 7 spp. Megachiroptera)","species-average (secondary, from Stephan et al. 1974)",NA,NA,H,hippocampus,6.72,NA,81,287,822-5701
+Pteropodids,"(average, 7 spp. Megachiroptera)","species-average (secondary, from Stephan et al. 1974)",NA,NA,M,mesencephalon,5.43,NA,47,238,822-5701
+Pteropodids,"(average, 7 spp. Megachiroptera)","species-average (secondary, from Stephan et al. 1974)",NA,NA,C,cerebellum,13.6,NA,117,710,822-5701
+Pteropodids,"(average, 7 spp. Megachiroptera)","species-average (secondary, from Stephan et al. 1974)",NA,NA,O,medulla oblongata,7.6,NA,78,325,822-5701
+Pteropodids,"(average, 7 spp. Megachiroptera)","species-average (secondary, from Stephan et al. 1974)",NA,NA,Sz,schizocortex,3.56,NA,25,186,822-5701

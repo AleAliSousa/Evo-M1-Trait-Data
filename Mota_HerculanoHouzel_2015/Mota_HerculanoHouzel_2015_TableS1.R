@@ -1,4 +1,4 @@
-# Mota_etal_2015_TableS1.R
+# Mota_HerculanoHouzel_2015_TableS1.R
 #
 # Preparation step. Turn the journal-faithful snapshot of Mota & Herculano-Houzel
 # (2015) Table S1 -- "Datasets used in this study. All values refer to one
@@ -24,8 +24,8 @@
 # row per printed species record (duplicate species with >1 record are kept),
 # and stops at the reference list.
 #
-# Input  : Mota_etal_2015_TableS1_snapshot.xlsx   sheet: TableS1
-# Outputs: Mota_etal_2015_TableS1.csv             one row per species record (66)
+# Input  : Mota_HerculanoHouzel_2015_TableS1_snapshot.xlsx   sheet: TableS1
+# Outputs: Mota_HerculanoHouzel_2015_TableS1.csv             one row per species record (66)
 #          <DOI>_TableS1.tsv in __Public/comparative-data/  (registry override key)
 
 suppressPackageStartupMessages({
@@ -44,8 +44,8 @@ suppressPackageStartupMessages({
   stop("Run with Rscript file.R, or open in RStudio and click Source (save first).", call. = FALSE)
 })
 folder    <- dirname(.sp)
-item_name <- tools::file_path_sans_ext(basename(.sp))              # = "Mota_etal_2015_TableS1"
-registry_item_name <- "Mota_Herculano-Houzel_2015_TableS1"         # __ReadMe.xlsx Item name (override)
+item_name <- tools::file_path_sans_ext(basename(.sp))              # = "Mota_HerculanoHouzel_2015_TableS1"
+registry_item_name <- item_name         # filename now matches __ReadMe.xlsx Item name exactly; no override needed
 base      <- local({
   d <- folder
   while (dirname(d) != d && !file.exists(file.path(d, "__ReadMe.xlsx"))) d <- dirname(d)

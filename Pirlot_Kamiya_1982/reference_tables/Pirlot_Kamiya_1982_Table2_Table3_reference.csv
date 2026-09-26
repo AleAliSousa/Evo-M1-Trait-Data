@@ -1,0 +1,14 @@
+# Reference only - NOT a registered registry item. Derived from Table 1's absolute volumes; kept here for convenience.
+# Table 2. Percentage data on the telencephalon (Tel=telencephalon, Br=total brain, N=neocortex, RH=rhinencephalon, St=striatum, H=hippocampus)
+species,Tel/Br,N/Tel,RH/Tel,St/Tel,H/Tel
+Cynocephalus,64.07,62.49,17.93,6.55,8.30
+Iomys,58.96,57.12,10.92,10.39,13.36
+Glaucomys,62.35,58.72,12.78,8.83,12.14
+Pteropodids (avg, range),"61.98 (59-68)","50.03 (44-61)","12.22 (9-14)","9.36 (7-11)","12.93 (7-16)"
+
+# Table 3. Progression indices for brain components (relative to basal-insectivore reference, Stephan 1967 method)
+species,BO,N,RH,S,D,St,H,M,C,O,Sz
+Cynocephalus,44,582,129,105,315,203,165,250,171,126,302
+Iomys,51,657,92,167,356,347,242,304,284,186,156
+Glaucomys,49,520,83,102,286,229,165,154,189,126,173
+"Pteropodids (avg, range)","104 (69-144)","621 (471-1182)","105 (76-143)","233 (184-285)","323 (244-452)","333 (213-588)","229 (174-266)","247 (220-286)","285 (234-364)","152 (140-169)","294 (232-410)"

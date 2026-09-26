@@ -1,0 +1,8 @@
+Variable,Definition,Topic,Measure,Units,Data role,Taxon,Item name,N.B.,Source
+species,Species name as printed (5 New World primates),Taxonomy,Species,,provenance,Mammals,Kaskan_etal_2005_TableS2,,Electronic Appendix B Table 2
+case_number,"Individual specimen index within species (1-7 depending on species sample size); means/SD rows from the snapshot are not included here, only individual cases",provenance,Case_number,,provenance,Mammals,Kaskan_etal_2005_TableS2,,Electronic Appendix B Table 2
+retinal_area_mm2,Total retinal area of the specimen,Eye,RetinalArea.mm2,mm2,primary,Mammals,Kaskan_etal_2005_TableS2,,Electronic Appendix B Table 2
+total_number_of_cones,Total cone photoreceptor count across the retina,Eye,ConeCount,count,primary,Mammals,Kaskan_etal_2005_TableS2,"Counted via a 256 mm2 foveal sampling area (to 0.1mm) plus 1024 mm2 for locations up to 2mm from the fovea, and 6400 mm2 beyond 2mm (per main-text Methods)",Electronic Appendix B Table 2
+total_number_of_rods,Total rod photoreceptor count across the retina,Eye,RodCount,count,primary,Mammals,Kaskan_etal_2005_TableS2,"Counted via a constant 1024 mm2 sampling area throughout (per main-text Methods)",Electronic Appendix B Table 2
+cone_density_per_mm2,Derived: total_number_of_cones / retinal_area_mm2,Eye,ConeDensity.per_mm2,cones/mm2,secondary (derived),Mammals,Kaskan_etal_2005_TableS2,Computed here from the two printed primary columns; not printed in the source,Derived
+rod_density_per_mm2,Derived: total_number_of_rods / retinal_area_mm2,Eye,RodDensity.per_mm2,rods/mm2,secondary (derived),Mammals,Kaskan_etal_2005_TableS2,Computed here from the two printed primary columns; not printed in the source,Derived

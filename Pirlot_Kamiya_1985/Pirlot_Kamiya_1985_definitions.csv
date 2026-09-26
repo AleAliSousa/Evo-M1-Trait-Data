@@ -1,0 +1,10 @@
+Variable,Definition,Topic,Measure,Units,Data role,Taxon,Item name,N.B.,Source
+species,Common name as printed (Dugong),Taxonomy,Species,,provenance,Mammals,Pirlot_Kamiya_1985_Table1,Single specimen; Sirenian,Table 1
+species_sci,Scientific binomial for the specimen studied,Taxonomy,Species_sci,,provenance,Mammals,Pirlot_Kamiya_1985_Table1,"Halicore dugong = Dugong dugong per text",Introduction
+specimen_type,individual = single specimen (n=1); no sample size given beyond this one dissected brain,provenance,Specimen_type,,provenance,Mammals,Pirlot_Kamiya_1985_Table1,,Abstract/Methods
+brain_component_code,"Abbreviation as printed: N neocortex; RH rhinencephalon; S septum; D diencephalon; St striatum; H hippocampus; M mesencephalon; C cerebellum; O medulla oblongata",Brain,Component_code,,provenance,Mammals,Pirlot_Kamiya_1985_Table1,"Same Stephan-lineage abbreviation scheme as Kamiya_Pirlot_1980 and Pirlot_Kamiya_1982",Table 1 footnote
+brain_component_name,Full name of the brain component,Brain,Component_name,,provenance,Mammals,Pirlot_Kamiya_1985_Table1,,Table 1 footnote
+volume_mm3,Absolute volume of the component in mm3,Brain,Volume.mm3,mm3,primary,Mammals,Pirlot_Kamiya_1985_Table1,"Verified: the 9 component volumes sum exactly to the printed total (223002.14 mm3)",Table 1
+pct_of_total_brain,Component volume as % of total brain volume,Brain,PctOfBrain,%,primary,Mammals,Pirlot_Kamiya_1985_Table1,"Verified: sums exactly to 100.00%",Table 1
+pct_of_telencephalon,"Component volume as % of telencephalon volume; printed only for the 5 telencephalic components (N RH S St H), which sum exactly to 100.00%; blank (printed as ""-"") for non-telencephalic components (D, M, C, O)",Brain,PctOfTelencephalon,%,primary,Mammals,Pirlot_Kamiya_1985_Table1,,Table 1
+total_brain_volume_mm3,Total brain volume for the specimen,Brain,TotalBrainVolume.mm3,mm3,primary,Mammals,Pirlot_Kamiya_1985_Table1,,Table 1

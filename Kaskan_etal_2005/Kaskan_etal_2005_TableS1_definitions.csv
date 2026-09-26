@@ -1,0 +1,15 @@
+Variable,Definition,Topic,Measure,Units,Data role,Taxon,Item name,N.B.,Source
+species,Scientific binomial as printed,Taxonomy,Species,,provenance,Mammals,Kaskan_etal_2005_TableS1,,Electronic Appendix A Table 1
+common_name,Common name as printed (superscript reference letter stripped into its own column),Taxonomy,Common_name,,provenance,Mammals,Kaskan_etal_2005_TableS1,,Electronic Appendix A Table 1
+ref,"Superscript reference letter(s) keying to the paper's own reference list (a=Krubitzer & Kaas 1993 ... t=Krubitzer et al. 1997 -- see snapshot header for the full key)",provenance,Reference_key,,provenance,Mammals,Kaskan_etal_2005_TableS1,,Electronic Appendix A Table 1
+V1,Author-specific name used for primary visual cortex in that species' original source map,Brain,V1_areaname,,provenance,Mammals,Kaskan_etal_2005_TableS1,"'-' = not present/not mapped in that study. This column records NAMES, not sizes -- no surface-area measurements are given anywhere in this table",Electronic Appendix A Table 1
+V2,Author-specific name for secondary visual cortex,Brain,V2_areaname,,provenance,Mammals,Kaskan_etal_2005_TableS1,,Electronic Appendix A Table 1
+visual_other,Other visual areas identified,Brain,VisualOther_areaname,,provenance,Mammals,Kaskan_etal_2005_TableS1,,Electronic Appendix A Table 1
+A1,Author-specific name for primary auditory cortex,Brain,A1_areaname,,provenance,Mammals,Kaskan_etal_2005_TableS1,,Electronic Appendix A Table 1
+R,Author-specific name for the rostral auditory field,Brain,R_areaname,,provenance,Mammals,Kaskan_etal_2005_TableS1,,Electronic Appendix A Table 1
+aud_other,Other auditory areas identified,Brain,AudOther_areaname,,provenance,Mammals,Kaskan_etal_2005_TableS1,,Electronic Appendix A Table 1
+SI_3b,Author-specific name for primary somatosensory cortex (area 3b or SI),Brain,SI_areaname,,provenance,Mammals,Kaskan_etal_2005_TableS1,,Electronic Appendix A Table 1
+SII,Author-specific name for secondary somatosensory cortex,Brain,SII_areaname,,provenance,Mammals,Kaskan_etal_2005_TableS1,,Electronic Appendix A Table 1
+SS_other,Other somatosensory areas identified,Brain,SSOther_areaname,,provenance,Mammals,Kaskan_etal_2005_TableS1,,Electronic Appendix A Table 1
+M,Author-specific name for primary motor cortex,Brain,M_areaname,,provenance,Mammals,Kaskan_etal_2005_TableS1,,Electronic Appendix A Table 1
+motor_other,Other motor areas identified,Brain,MotorOther_areaname,,provenance,Mammals,Kaskan_etal_2005_TableS1,,Electronic Appendix A Table 1

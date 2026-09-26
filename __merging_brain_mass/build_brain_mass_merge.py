@@ -28,7 +28,7 @@ __merging_endocranial_volume/.
 
 Run: python3 __merging_brain_mass/build_brain_mass_merge.py
 """
-import csv, glob, os, re, sys
+import csv, glob, os, re, sys, unicodedata
 from collections import defaultdict
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -181,8 +181,17 @@ def resolve(x):
 basis_rows = read_csv_rows(os.path.join(KEYS, "brain_size_basis.csv"))
 basis_grp = {(r["paper"], r["column"]): r["poolable_group"] for r in basis_rows}
 basis_col = {(r["paper"], r["column"]): r for r in basis_rows}
-folders = sorted(d for d in os.listdir(REPO) if os.path.isdir(os.path.join(REPO, d))
-                 and not d.startswith((".", "_")))
+# os.listdir() on macOS returns filesystem-native NFD-decomposed names (e.g.
+# combining diaeresis for "a" + umlaut), while brain_size_basis.csv's `paper`
+# text is NFC-composed (a single precomposed character) -- same string
+# visually, different bytes, so a (folder, column) tuple built from the raw
+# listdir() name never matches basis_grp/basis_col even when the CSV row
+# exists (e.g. "Zilles_Rehk\u00e4mper_1988" / NFC vs "Zilles_Rehka\u0308mper_1988" / NFD).
+# Same bug family as the fossil-site-slug ASCII-fold fix in
+# normalise_collections.R. Normalize to NFC once here so every folder string
+# this script uses downstream matches the CSV text.
+folders = sorted(unicodedata.normalize("NFC", d) for d in os.listdir(REPO)
+                 if os.path.isdir(os.path.join(REPO, d)) and not d.startswith((".", "_")))
 
 
 def folder_of(author, year, col):

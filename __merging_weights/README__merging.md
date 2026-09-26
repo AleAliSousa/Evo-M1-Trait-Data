@@ -126,12 +126,18 @@ Checked against `_keys/anatomy_reference.csv`. Mapped:
   as the 1942 item, plus a new gap for brain stem, which has no canonical token either)
 
 These are retained in `weights_long.csv` for completeness but excluded from `weights_wide.csv` and
-the QA report, since a wide table needs a canonical column key. **TODO for whoever extends
-`_keys/anatomy_reference.csv`:** add `Prosencephalon`, `Rhombencephalon`, `BrainStem`, and a
-`HemispheresAndDiencephalon` (or similarly named) canonical token if this merge is to be extended
-with other classical brain-part literature that uses the same higher-order groupings. Latimer
-1956's Frog and Turtle rows carry an additional gap note (`| no binomial given in source for this
-taxon`) since the paper does not print a species-level identification for those two.
+the QA report, since a wide table needs a canonical column key. **Vocabulary registered (2026-09):**
+the four higher-order groupings now exist as canonical tokens in `_keys/anatomy_reference.csv`
+(domain `brain_structure_volume`, `measures_seen = Mass`): `Prosencephalon`, `Rhombencephalon`,
+`BrainStem`, and `HemispheresAndDiencephalon`. These are classical macro-structure siblings of the
+`Telencephalon` / `Diencephalon` / `Mesencephalon` tokens already in that domain, added so this
+merge can be extended with other classical brain-part literature that uses the same higher-order
+groupings. **Still to do when such a source is ingested:** map Latimer's printed names to these
+tokens in the merge's structure-mapping step, clear the `canonical_structure` blanks in
+`weights_long.csv`, and re-run the build so the affected rows flow into `weights_wide.csv` and the
+QA report. Latimer 1956's Frog and Turtle rows carry an additional gap note (`| no binomial given
+in source for this taxon`) since the paper does not print a species-level identification for those
+two.
 
 ## De-duplication against `__merging_brain_mass`
 

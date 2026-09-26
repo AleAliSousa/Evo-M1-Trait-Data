@@ -64,7 +64,7 @@ g_def <- setNames(trim(glos$definition), trim(glos$term))
 g_com <- setNames(toupper(trim(glos$common)) == "TRUE", trim(glos$term))
 # `[[` on a named character vector ERRORS on a missing name rather than
 # returning NULL, so every glossary read goes through these instead.
-gx  <- function(tbl, k) { if (!nzchar(k)) return("")
+gx  <- function(tbl, k) { if (length(k) != 1L || is.na(k) || !nzchar(k)) return("")
                           v <- tbl[match(k, names(tbl))]
                           if (is.na(v)) "" else unname(v) }
 gis <- function(k) isTRUE(unname(g_com[match(k, names(g_com))]))
@@ -81,7 +81,11 @@ def_files <- unique(def_files)
 pool <- list()
 add <- function(code, defn, folder, file, role = "") {
   code <- trim(code); defn <- trim(defn)
-  if (!nzchar(code) || !nzchar(defn) || tolower(code) == "nan") return()
+  ## A blank CSV cell reads back as NA, and trimws(as.character(NA)) is still NA:
+  ## nzchar(NA) is TRUE and tolower(NA) == "nan" is NA, so `if` stopped with
+  ## "missing value where TRUE/FALSE needed". Skip empty/NA/absent values first.
+  if (length(code) != 1L || length(defn) != 1L || is.na(code) || is.na(defn)) return()
+  if (!nzchar(code) || !nzchar(defn) || tolower(code) %in% c("nan", "na")) return()
   key <- paste0(code, "\r", folder)
   # keep the longest definition per (code, folder), preferring role=primary
   rl    <- tolower(trim(role)); if (is.na(rl)) rl <- ""

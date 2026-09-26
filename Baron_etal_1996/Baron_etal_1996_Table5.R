@@ -58,14 +58,21 @@ snapshot <- read.csv(
 ## species_printed has its leading hierarchy-indent whitespace trimmed,
 ## species_row is renumbered 1..342 over species rows alone, and columns
 ## are restored to this item's original (pre-header-preservation) order.
-dat <- snapshot[snapshot$is_header != "TRUE", ]
+## Compare as text: read.csv() types a "TRUE"/"" column as logical TRUE/NA, so
+## `is_header != "TRUE"` is NA on species rows and NA-indexing blanked every one
+## of them (the CSV/TSV were being written as 342 empty rows).
+is_hdr <- toupper(trimws(as.character(snapshot$is_header)))
+is_hdr <- !is.na(is_hdr) & is_hdr == "TRUE"
+dat <- snapshot[!is_hdr, , drop = FALSE]
 dat$species_printed <- trimws(dat$species_printed)
 dat$species_row <- seq_len(nrow(dat))
+if (nrow(dat) != 342L || any(is.na(dat$species_printed) | !nzchar(dat$species_printed)))
+  stop("Baron_etal_1996_Table5: expected 342 named species rows after dropping headers, got ", nrow(dat), call. = FALSE)
 dat <- dat[, c("species_row", "source_pdf_page", "species_printed",
                "BoW_g", "CV_BoW_pct", "BrW_mg", "CV_BrW_pct",
                "n_BoW", "n_BrW", "Source")]
 
-message("Section headers preserved in snapshot: ", sum(snapshot$is_header == "TRUE"))
+message("Section headers preserved in snapshot: ", sum(is_hdr))
 
 csv_file <- paste0(item_name, ".csv")
 

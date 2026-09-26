@@ -89,12 +89,35 @@ result <- wide %>%
          brain_weight_g, total_brain_volume_mm3, note)
 
 ## ---- checks (see README for the systematic total-volume non-reconciliation) ----
+## Every printed value is rounded to the nearest mm3, so a printed total can differ
+## from the sum of its k printed parts by up to (k + 1) / 2 mm3 through rounding
+## alone: 1 for a 2-part sum, 2 for a 3-part sum. The old fixed tolerance of 1 was
+## too tight for the 3-part sums: the paper itself prints limbic structures 2 mm3
+## above Septum + Hippocampus + Schizocortex for Sd5 (628 + 2943 + 900 = 4471 vs
+## 4473) and Sd31 (772 + 3314 + 1080 = 5166 vs 5168) -- checked against the PDF,
+## Table 3, p. 66. These are the paper's own rounding, not transcription errors,
+## and are kept as printed.
+round_tol <- function(k) (k + 1) / 2
 chk <- wide %>% mutate(
-  telenc_check = abs(neocortex_mm3 + corpus_striatum_mm3 + allocortex_mm3 - telencephalon_mm3) <= 1,
-  limbic_check = abs(septum_mm3 + hippocampus_mm3 + schizocortex_mm3 - limbic_structures_mm3) <= 1,
-  amyg_check = abs(amygdaloid_centromedial_mm3 + amygdaloid_basolateral_mm3 - amygdaloid_complex_mm3) <= 1
+  telenc_diff = neocortex_mm3 + corpus_striatum_mm3 + allocortex_mm3 - telencephalon_mm3,
+  limbic_diff = septum_mm3 + hippocampus_mm3 + schizocortex_mm3 - limbic_structures_mm3,
+  amyg_diff   = amygdaloid_centromedial_mm3 + amygdaloid_basolateral_mm3 - amygdaloid_complex_mm3,
+  telenc_check = abs(telenc_diff) <= round_tol(3),
+  limbic_check = abs(limbic_diff) <= round_tol(3),
+  amyg_check   = abs(amyg_diff)   <= round_tol(2)
 )
-stopifnot(all(chk$telenc_check), all(chk$limbic_check), all(chk$amyg_check))
+off <- chk %>% filter(telenc_diff != 0 | limbic_diff != 0 | amyg_diff != 0) %>%
+  select(specimen_id, telenc_diff, limbic_diff, amyg_diff)
+if (nrow(off)) {
+  message("Printed sums that differ from their parts by rounding (mm3):")
+  print(as.data.frame(off), row.names = FALSE)
+}
+if (!all(chk$telenc_check, chk$limbic_check, chk$amyg_check)) {
+  print(as.data.frame(chk %>% filter(!(telenc_check & limbic_check & amyg_check)) %>%
+                        select(specimen_id, telenc_diff, limbic_diff, amyg_diff)), row.names = FALSE)
+  stop("a printed sum differs from its parts by more than rounding can explain -- ",
+       "check the transcription against the PDF", call. = FALSE)
+}
 
 out_path <- file.path(folder, paste0(item_name, ".csv"))
 write_csv(result, out_path)

@@ -31,7 +31,14 @@ table10 <- read.csv(file.path(paper_dir, "Baron_etal_1996_Table10_snapshot.csv")
 ## filtered to species-only rows before the row-for-row species_row alignment
 ## between the two tables is re-established.
 if (!is.null(snapshot$is_header)) {
-  snapshot <- snapshot[snapshot$is_header != "TRUE", ]
+  ## read.csv() types an is_header column holding only "TRUE"/"" as LOGICAL
+  ## (TRUE/NA), and an all-blank one as all-NA. `is_header != "TRUE"` is then
+  ## NA on every species row, and indexing with NA turns those rows into all-NA
+  ## rows -- which is what tripped the missing-species stop below. Compare as
+  ## text and treat blank/NA as "not a header".
+  hdr <- toupper(trimws(as.character(snapshot$is_header)))
+  hdr <- !is.na(hdr) & hdr == "TRUE"
+  snapshot <- snapshot[!hdr, , drop = FALSE]
   snapshot$species_row <- seq_len(nrow(snapshot))
 }
 if (!is.null(table10$is_header)) {

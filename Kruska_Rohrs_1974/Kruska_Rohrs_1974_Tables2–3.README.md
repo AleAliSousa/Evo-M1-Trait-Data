@@ -31,11 +31,18 @@ same volumes — not separately registered, see below).
 ## Verification
 
 Checked by script across all 10 specimens:
-- **Telencephalon = Neocortex + Corpus striatum + Allocortex** — exact for 9/10 specimens, off by
-  1 mm³ for A26 (rounding).
-- **limbic structures = Septum + Hippocampus + Schizocortex** — exact for all 10.
+- **Telencephalon = Neocortex + Corpus striatum + Allocortex** — exact for 6/10 specimens; off by
+  1 mm³ for A26, Sd5, Sd31 and Sd19 (rounding).
+- **limbic structures = Septum + Hippocampus + Schizocortex** — exact for 6/10 (all 4 feral pigs and
+  Sd9, Sd19); the printed total is 1 mm³ above the parts for Sd17 and Sd12 and 2 mm³ above for Sd5
+  and Sd31. Re-checked against the PDF (Table 3, p. 66): these are the printed values, i.e. the
+  paper's own rounding, and are kept as printed. (An earlier version of this README said "exact for
+  all 10"; that was wrong, and the build's 1 mm³ tolerance stopped the script on Sd5/Sd31.)
 - **Amygdaloid complex = centromedial group + basolateral group** — exact for 9/10, off by 1 mm³
   for A22 (rounding).
+- **Tolerance used by the build:** a printed total may differ from the sum of its *k* printed
+  (integer-rounded) parts by up to (*k* + 1)/2 mm³ from rounding alone — 2 mm³ for the 3-part
+  sums, 1 mm³ for the 2-part amygdaloid sum. Anything larger stops the build.
 - **Total brain volume ≠ sum of the 5 major divisions** (Medulla + Cerebellum + Mesencephalon +
   Diencephalon + Telencephalon) for any specimen — consistently 3,000–4,300 mm³ *higher* than that
   sum across all 10 specimens. This is a genuine, systematic feature of the source table (implying

@@ -14,19 +14,26 @@
 ##   repo_root()              — walk up to the directory containing __ReadMe.xlsx
 
 ## ---- locate this file's own directory (Rscript / source() / RStudio) -------
+## This file is normally source()d FROM a build script, so the innermost
+## source() frame -- not Rscript's --file= (that is the calling build script) and
+## not sys.frames()[[1]] (the outermost source) -- is the one that points here.
+## Checking --file= first made .ldb_dir the caller's paper folder, so the three
+## component scripts below were looked for in the wrong directory.
 .ldb_dir <- local({
+  me <- "load_dataset_builder.R"
+  fr <- sys.frames()
+  for (k in rev(seq_along(fr))) {
+    of <- tryCatch(fr[[k]]$ofile, error = function(e) NULL)
+    if (is.character(of) && length(of) == 1L && basename(of) == me && file.exists(of))
+      return(dirname(normalizePath(of)))
+  }
   argv <- commandArgs(FALSE)
   f    <- sub("^--file=", "", argv[grep("^--file=", argv)])
-  if (length(f) == 1L && nzchar(f)) return(dirname(normalizePath(f)))
-  sf <- tryCatch(
-    dirname(normalizePath(sys.frames()[[1]]$ofile)),
-    error = function(e) NULL
-  )
-  if (!is.null(sf) && nzchar(sf)) return(sf)
+  if (length(f) == 1L && nzchar(f) && basename(f) == me) return(dirname(normalizePath(f)))
   if (requireNamespace("rstudioapi", quietly = TRUE) &&
       rstudioapi::isAvailable()) {
     p <- rstudioapi::getActiveDocumentContext()$path
-    if (nzchar(p)) return(dirname(normalizePath(p)))
+    if (nzchar(p) && basename(p) == me) return(dirname(normalizePath(p)))
   }
   ## last resort: assume the caller's cwd contains this script
   normalizePath(getwd())

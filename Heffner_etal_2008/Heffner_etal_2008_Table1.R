@@ -59,6 +59,15 @@ write.csv(final.dataframe, final_csv, row.names = FALSE, na = "")
 if (!is.na(tsv_dir) && dir.exists(tsv_dir)) {
   filecodes    <- read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
   item_encoded <- filecodes$`Item encoded`[match(item_name, filecodes$`Item name`)]
+  ## Without this guard a missing registry row made paste0(NA, ".tsv") = "NA.tsv":
+  ## this item's Sheet1 row had been overwritten with "TEST_PROBE_VALUE", and the
+  ## script wrote __Public/comparative-data/NA.tsv (flagged by
+  ## _checks/check_item_name_resolution.R, sweep 2026-09-25).
+  if (length(item_encoded) != 1L || is.na(item_encoded) || !nzchar(item_encoded) ||
+      grepl("_$", item_encoded))
+    stop("No usable 'Item encoded' in __ReadMe.xlsx for ", item_name,
+         " -- refusing to write NA.tsv. Run _tools/restore_registry_rows.R, then _tools/file_list.R.",
+         call. = FALSE)
   write.table(final.dataframe, file.path(tsv_dir, paste0(item_encoded, ".tsv")),
               sep = "\t", row.names = FALSE, na = "")
 } else warning("__Public not mounted; TSV not written -- copy later")

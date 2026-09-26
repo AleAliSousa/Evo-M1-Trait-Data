@@ -25,7 +25,14 @@ root_dir <- local({
 snapshot <- read.csv(file.path(paper_dir, paste0(item_name, "_snapshot.csv")),
                      check.names = FALSE, stringsAsFactors = FALSE)
 if (!is.null(snapshot$is_header)) {
-  snapshot <- snapshot[snapshot$is_header != "TRUE", ]
+  ## read.csv() types an is_header column holding only "TRUE"/"" as LOGICAL
+  ## (TRUE/NA), and an all-blank one as all-NA. `is_header != "TRUE"` is then
+  ## NA on every species row, and indexing with NA turns those rows into all-NA
+  ## rows -- which is what tripped the missing-species stop below. Compare as
+  ## text and treat blank/NA as "not a header".
+  hdr <- toupper(trimws(as.character(snapshot$is_header)))
+  hdr <- !is.na(hdr) & hdr == "TRUE"
+  snapshot <- snapshot[!hdr, , drop = FALSE]
   snapshot$species_row <- seq_len(nrow(snapshot))
 }
 stopifnot(nrow(snapshot) == 6L, identical(snapshot$species_row, seq_len(6L)))

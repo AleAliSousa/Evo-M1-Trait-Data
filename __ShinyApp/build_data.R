@@ -111,12 +111,33 @@ clean_sp <- function(x) {
   trimws(gsub("\\s+", " ", x))
 }
 
+# read_excel() surfaces a malformed workbook as a bare XML-parser message with no
+# file name (sweep 2026-09-25 halted on just "Error: expected ="). The trait
+# workbooks are rewritten by the ____EvoM1_TraitTable/EvoM1_read_*.R scripts
+# seconds before this runs in a full sweep, and on a OneDrive-synced folder a file
+# can briefly be a partial write or a cloud-only placeholder. So: retry a few
+# times, then stop naming the workbook and the parser's own message.
+read_sheet_text <- function(path, sheet, tries = 3L, wait = 3) {
+  for (k in seq_len(tries)) {
+    res <- tryCatch(
+      as.data.frame(read_excel(path, sheet = sheet, col_types = "text",
+                               .name_repair = "minimal"),
+                    stringsAsFactors = FALSE, check.names = FALSE),
+      error = function(e) e)
+    if (!inherits(res, "error")) return(res)
+    if (k < tries) Sys.sleep(wait)
+  }
+  stop(sprintf(paste0("could not read %s (sheet '%s'): %s\n  The workbook is unreadable ",
+                      "or was mid-sync. Open it in Excel and re-save, or re-run the ",
+                      "EvoM1_read_*.R script that writes it, then re-run build_data.R."),
+               sub(paste0("^", repo, "/"), "", path), sheet, conditionMessage(res)),
+       call. = FALSE)
+}
+
 trait_rows <- vector("list", 0L)
 for (i in seq_along(trait_files)) {
   fn <- names(trait_files)[i]; label <- unname(trait_files[i])
-  d  <- as.data.frame(read_excel(file.path(TT, fn), sheet = "Sheet1",
-                                 col_types = "text", .name_repair = "minimal"),
-                      stringsAsFactors = FALSE, check.names = FALSE)
+  d  <- read_sheet_text(file.path(TT, fn), sheet = "Sheet1")
   cols <- names(d)
   src_map <- list()
   for (cn in cols) if (nzchar(cn) && is_src(cn)) src_map[[base_of(cn)]] <- cn
@@ -197,10 +218,7 @@ mds  <- list.files(pub, pattern = "\\.ReadMe\\.md$")
 message("source tables indexed (served from GitHub): ", length(tsvs))
 
 # ---- 4. build source_manifest.csv (filenames + citations from __ReadMe.xlsx) -
-readme <- as.data.frame(read_excel(file.path(repo, "__ReadMe.xlsx"),
-                                   sheet = "Sheet1", col_types = "text",
-                                   .name_repair = "minimal"),
-                        stringsAsFactors = FALSE, check.names = FALSE)
+readme <- read_sheet_text(file.path(repo, "__ReadMe.xlsx"), sheet = "Sheet1")
 enc_col  <- "Item encoded"
 cit_col  <- "Citation (APA 7th-Annotated)"
 auth_col <- "1st Author"; year_col <- "year"

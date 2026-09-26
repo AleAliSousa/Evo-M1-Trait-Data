@@ -108,8 +108,15 @@ for (path in files) {
   ## (sweep 2026-09-18). A TSV without a manifest row is legitimate -- the manifest is an
   ## app export that lags new sources -- so it falls through to blank author/year as intended.
   mi <- match(fn, manifest$file)
-  author <- if (!is.na(mi)) manifest$first_author[mi] else ""
-  year   <- if (!is.na(mi)) as.character(manifest$year[mi]) else ""
+  ## A manifest row can exist with BLANK first_author/year: build_data.R writes one for
+  ## every public TSV, and leaves the citation fields empty when the TSV has no
+  ## __ReadMe.xlsx row. read.csv() reads those blanks back as NA (year is all-numeric, so
+  ## the column is integer), and NA then flowed into folder_of(): startsWith(x, NA) is NA,
+  ## so the "paper folder" came back NA and the basis lookup failed with the misleading
+  ## "paper folder 'NA'" message (sweep 2026-09-25, 10.1002%2Fcne.24349_Table3.tsv).
+  blank_na <- function(x) { x <- trimws(as.character(x)); if (length(x) != 1L || is.na(x) || x == "NA") "" else x }
+  author <- if (!is.na(mi)) blank_na(manifest$first_author[mi]) else ""
+  year   <- if (!is.na(mi)) blank_na(manifest$year[mi]) else ""
   targets[[length(targets)+1L]] <- list(fn=fn, rows=rows, headers=headers, col=col, ci=ci, author=author, year=year)
   if (is.na(named_unit(col))) { k <- paste(tolower(author), norm(col)); gmax[[k]] <- max(gmax[[k]] %||% 0, max(vals)) }
 }
@@ -155,6 +162,9 @@ round_n <- function(x, d) vapply(x, function(v) {
 folders <- basename(list.dirs(repo, recursive = FALSE))
 folders <- folders[!grepl("^[._]", folders)]
 folder_of <- function(author, year, col) {
+  ## No author/year means no registry row -- never guess a folder (startsWith(x, "") is
+  ## TRUE for every folder, so a blank author would silently pick the first one).
+  if (!nzchar(author) || !nzchar(year)) return("")
   h <- folders[startsWith(tolower(folders), tolower(author)) & grepl(year, folders, fixed = TRUE)]
   if (length(h) > 1) { k <- h[!is.na(vapply(h, grp_of, character(1), col = col))]
                        if (length(k)) return(k[1]) }
@@ -172,6 +182,11 @@ for (t in targets) {
   get_sp <- species_getter(t$headers, t$rows[2:min(length(t$rows),60)])
   paper <- folder_of(t$author, t$year, t$col)
   grp   <- grp_of(paper, t$col)
+  if (!nzchar(t$author) || !nzchar(t$year))
+    stop(sprintf(paste0("%s has no citation in __ShinyApp/data/source_manifest.csv, so its paper folder ",
+                        "(and measurement basis) cannot be resolved. Its __ReadMe.xlsx row is missing: run ",
+                        "_tools/restore_registry_rows.R, then _tools/file_list.R, then __ShinyApp/build_data.R, ",
+                        "and re-run this script."), t$fn), call. = FALSE)
   if (is.na(grp))
     stop(sprintf("no measurement basis on record for %s / %s (paper folder '%s'). Add it to ASSIGN in _keys/build_brain_size_basis.py and re-run that builder.",
                  t$fn, t$col, paper), call. = FALSE)

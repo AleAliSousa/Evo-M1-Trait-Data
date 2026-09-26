@@ -197,9 +197,27 @@ dat <- pdf_data(PDF, font_info = FALSE)
 stopifnot(length(dat) == 170L)
 
 # ------------------------------------------------------------ regression guard
+# The frozen snapshots were later re-laid-out to mirror the printed page: the
+# book's family/subfamily headings were inserted as their own rows
+# (is_header = "TRUE") and species names were indented. The extractor emits
+# species rows only, so compare against the species rows of the frozen copy.
+# (Before this, Table10 compared 272 re-derived rows with 309 = 272 + 37 headers.)
+is_header_row <- function(x) {
+  if (is.null(x)) return(logical(0))
+  x <- toupper(trimws(as.character(x)))   # read.csv types "TRUE"/"" as logical
+  !is.na(x) & x == "TRUE"
+}
+read_frozen <- function(item) {
+  read.csv(file.path(HERE, paste0("Baron_etal_1996_", item, "_snapshot.csv")),
+           check.names = FALSE, stringsAsFactors = FALSE)
+}
+read_frozen_species_rows <- function(item) {
+  old <- read_frozen(item)
+  if (!is.null(old$is_header)) old <- old[!is_header_row(old$is_header), , drop = FALSE]
+  old
+}
 guard <- function(item, pages, cols, y1) {
-  old <- read.csv(file.path(HERE, paste0("Baron_etal_1996_", item, "_snapshot.csv")),
-                  check.names = FALSE, stringsAsFactors = FALSE)
+  old <- read_frozen_species_rows(item)
   new <- assemble(dat, pages, length(cols), cols, y1)
   if (nrow(new) != nrow(old)) stop(item, ": ", nrow(new), " rows re-derived, frozen snapshot has ", nrow(old))
   bad <- sum(iconv(trimws(old$species_printed), "UTF-8", "UTF-8") != new$species_printed, na.rm = TRUE)
@@ -232,6 +250,25 @@ for (item in names(SPECS)) {
   if (nrow(df) != s$N)
     stop(item, ": ", nrow(df), " rows extracted, the book's Table 1 key gives N = ", s$N)
   out <- file.path(HERE, paste0("Baron_etal_1996_", item, "_snapshot.csv"))
+  # A frozen snapshot that already carries the printed section headings
+  # (is_header column) is the hand-checked, page-faithful copy: never overwrite
+  # it with the header-less extraction. Verify the extraction reproduces its
+  # species rows instead, and leave the file untouched.
+  if (file.exists(out) && !is.null(read_frozen(item)$is_header)) {
+    old <- read_frozen_species_rows(item)
+    if (nrow(old) != nrow(df))
+      stop(item, ": ", nrow(df), " rows extracted, frozen snapshot has ", nrow(old), " species rows")
+    bad <- sum(iconv(trimws(old$species_printed), "UTF-8", "UTF-8") != df$species_printed, na.rm = TRUE)
+    for (v in intersect(names(df), names(old))) {
+      if (v %in% c("species_row", "species_printed", "source_pdf_page", "is_header")) next
+      a <- suppressWarnings(as.numeric(old[[v]])); b <- suppressWarnings(as.numeric(df[[v]]))
+      bad <- bad + sum(!(is.na(a) & is.na(b)) & (is.na(a) != is.na(b) | abs(a - b) > 1e-9))
+    }
+    if (bad) stop(item, ": ", bad, " cells differ from the frozen snapshot (left untouched)")
+    message(sprintf("  kept   %-42s %3d species rows (frozen copy with headers; extraction matches)",
+                    basename(out), nrow(df)))
+    next
+  }
   write.csv(df, out, row.names = FALSE, na = "")
   message(sprintf("  wrote %-42s %3d rows, %d empty cells",
                   basename(out), nrow(df),

@@ -91,6 +91,20 @@ sheet       <- "Sheet1"
 # from A, B and D -- it is recorded here so this script can tell whether the row
 # is already present, and so the file documents what each row is FOR.
 # -----------------------------------------------------------------------------
+JACOB_2021_CITE <- "Jacob, J., Kent, M., Benson-Amram, S., Herculano-Houzel, S., Raghanti, M. A., Ploppert, E., Drake, J., Hindi, B., Natale, N. R., Daniels, S., Fanelli, R., Miller, A., Landis, T., Gilbert, A., Johnson, S., Lai, A., Hyer, M., Rzucidlo, A., Anchor, C.,…Lambert, K. (2021). Cytoarchitectural characteristics associated with cognitive flexibility in raccoons. J Comp Neurol, 529(14), 3375-3388. https://doi.org/10.1002/cne.25197"
+JACOBS_2018_CITE <- paste0(
+  "Jacobs, B., Garcia, M. E., Shea-Shumsky, N. B., Tennison, M. E., Schall, M., Saviano, M. S., ",
+  "Tummino, T. A., Bull, A. J., Driscoll, L. L., Raghanti, M. A., Lewandowski, A. H., Wicinski, B., ",
+  "Ki Chui, H., Bertelsen, M. F., Walsh, T., Bhagwandin, A., Spocter, M. A., Hof, P. R., ",
+  "Sherwood, C. C., & Manger, P. R. (2018). Comparative morphology of gigantopyramidal neurons in ",
+  "primary motor cortex across mammals. J Comp Neurol, 526(3), 496-536. ",
+  "https://doi.org/10.1002/cne.24349")
+JACOBS_1997_CITE <- paste0(
+  "Jacobs, B., Driscoll, L., & Schall, M. (1997). Life-span dendritic and spine changes in areas 10 ",
+  "and 18 of human cortex: a quantitative Golgi study. J Comp Neurol, 386(4), 661-680. ",
+  "https://doi.org/10.1002/(SICI)1096-9861(19971006)386:4<661::AID-CNE11>3.0.CO;2-N")
+JACOBS_1997_DOI_AS_BUILT <- "10.1002/(sici)1096-9861(19971006)386:4<661::Aid-cne11>3.0.Co;2-n"
+
 ROWS <- list(
   list(
     item_name = "Heffner_Masterton_1983_TableI",
@@ -246,7 +260,115 @@ ROWS <- list(
       `Data readable file, can use this` = "Winkler_Bryant_2021_Figure1.csv",
       `Source Type` = "Journal article",
       `Source format` = "figure")
-  )
+  ),
+  ## ---- added 2026-09-26: rows found missing by the 2026-09-25 sweep --------
+  ## check_item_name_resolution.R reported 7 orphaned TSVs (all built, all on
+  ## disk, no Sheet1 row) plus one Sheet1 row whose citation had been overwritten
+  ## with "TEST_PROBE_VALUE". Consequences: Jacob_etal_2021_TABLE1/2/3.R stopped
+  ## ("Registry rows matching ...: 0"); build_data.R wrote blank author/year for
+  ## the Jacobs 2018 TSVs, so brain_mass_compiled.R could not find the paper folder
+  ## of 10.1002%2Fcne.24349_Table3.tsv; and Heffner_etal_2008_Table1.R wrote NA.tsv.
+  ## Citations are copied from the surviving Jacob_etal_2021_FIGURE4 row, the
+  ## folder READMEs, and the Heffner_etal_2008_ResultsText row.
+  list(
+    item_name = "Jacob_etal_2021_TABLE1",
+    item_encoded = "10.1002%2Fcne.25197_TABLE1",
+    fields = list(
+      `Citation (APA 7th-Annotated)` = JACOB_2021_CITE,
+      `Item number` = "TABLE 1",
+      `Item full original title` = "TABLE 1 Hemisphere and brain area weights",
+      `N.B.` = "RESTORED 2026-09-26: built item (snapshot, CSV, R, ReadMe, TSV) whose Sheet1 row was lost.",
+      `Progress stage` = "FINISHED",
+      `Source format` = "table")),
+  list(
+    item_name = "Jacob_etal_2021_TABLE2",
+    item_encoded = "10.1002%2Fcne.25197_TABLE2",
+    fields = list(
+      `Citation (APA 7th-Annotated)` = JACOB_2021_CITE,
+      `Item number` = "TABLE 2",
+      `Item full original title` = paste0(
+        "TABLE 2 Cytoarchitecture analysis of sampled regions from the anterior ",
+        "frontoinsular region in raccoons"),
+      `N.B.` = "RESTORED 2026-09-26: built item (snapshot, CSV, R, ReadMe, TSV) whose Sheet1 row was lost.",
+      `Progress stage` = "FINISHED",
+      `Source format` = "table")),
+  list(
+    item_name = "Jacob_etal_2021_TABLE3",
+    item_encoded = "10.1002%2Fcne.25197_TABLE3",
+    fields = list(
+      `Citation (APA 7th-Annotated)` = JACOB_2021_CITE,
+      `Item number` = "TABLE 3",
+      `Item full original title` = paste0(
+        "TABLE 3 Cytoarchitecture analysis of the hilus of the dentate gyrus region in raccoons"),
+      `N.B.` = "RESTORED 2026-09-26: built item (snapshot, CSV, R, ReadMe, TSV) whose Sheet1 row was lost.",
+      `Progress stage` = "FINISHED",
+      `Source format` = "table")),
+  list(
+    item_name = "Jacobs_etal_2018_Table3",
+    item_encoded = "10.1002%2Fcne.24349_Table3",
+    fields = list(
+      `Citation (APA 7th-Annotated)` = JACOBS_2018_CITE,
+      `Item number` = "Table 3",
+      `Item full original title` = paste0(
+        "Table 3. Layer V pyramidal and gigantopyramidal soma size in M1 ",
+        "(unbiased stereology, 20 species)"),
+      `N.B.` = paste0(
+        "RESTORED 2026-09-26: built item whose Sheet1 row was lost (see Jacobs_etal_2018/README.md). ",
+        "Carries brain_mass_mg, harvested by __merging_brain_mass (basis mass_measured_specimen)."),
+      `Progress stage` = "FINISHED",
+      `Snapshot name if unchanged` = "Jacobs_etal_2018_Table3_snapshot.xlsx",
+      `Source format` = "table")),
+  list(
+    item_name = "Jacobs_etal_2018_Table5",
+    item_encoded = "10.1002%2Fcne.24349_Table5",
+    fields = list(
+      `Citation (APA 7th-Annotated)` = JACOBS_2018_CITE,
+      `Item number` = "Table 5",
+      `Item full original title` = paste0(
+        "Table 5. Golgi somatodendritic morphology of three M1 neuron types (19 species)"),
+      `N.B.` = "RESTORED 2026-09-26: built item whose Sheet1 row was lost (see Jacobs_etal_2018/README.md).",
+      `Progress stage` = "FINISHED",
+      `Snapshot name if unchanged` = "Jacobs_etal_2018_Table5_snapshot.xlsx",
+      `Source format` = "table")),
+  list(
+    item_name = "Jacobs_etal_1997_Table1",
+    item_encoded = "10.1002%2F(sici)1096-9861(19971006)386%3A4%3C661%3A%3AAid-cne11%3E3.0.Co;2-n_Table1",
+    fields = list(
+      `Citation (APA 7th-Annotated)` = JACOBS_1997_CITE,
+      ## Column C pins the DOI spelling the TSV on disk was built with (lower-case
+      ## EndNote form), so Item encoded reproduces its file name exactly.
+      `DOI if different from article or doi Alt` = JACOBS_1997_DOI_AS_BUILT,
+      `Item number` = "Table 1",
+      `Item full original title` = "Table 1. Subject Summary",
+      `N.B.` = "RESTORED 2026-09-26: built item (snapshot, CSV, R, README, TSV) whose Sheet1 row was lost.",
+      `Progress stage` = "FINISHED",
+      `Source format` = "table")),
+  list(
+    item_name = "Jacobs_etal_1997_Table2",
+    item_encoded = "10.1002%2F(sici)1096-9861(19971006)386%3A4%3C661%3A%3AAid-cne11%3E3.0.Co;2-n_Table2",
+    fields = list(
+      `Citation (APA 7th-Annotated)` = JACOBS_1997_CITE,
+      `DOI if different from article or doi Alt` = JACOBS_1997_DOI_AS_BUILT,
+      `Item number` = "Table 2",
+      `Item full original title` =
+        "Table 2. Laminar and Sampled Soma Depths (\u03bcm) and Soma Size (\u03bcm\u00b2)",
+      `N.B.` = "RESTORED 2026-09-26: built item (snapshot, CSV, R, README, TSV) whose Sheet1 row was lost.",
+      `Progress stage` = "FINISHED",
+      `Source format` = "table")),
+  ## Not appended: this row still exists, but its citation cell was overwritten
+  ## with "TEST_PROBE_VALUE" (every other field survived). `repair_probe` makes
+  ## the script write the citation back INTO that row instead of adding a copy.
+  list(
+    item_name = "Heffner_etal_2008_Table1",
+    item_encoded = "10.1016%2Fj.heares.2008.05.001_Table1",
+    repair_probe = list(source_url = "https://doi.org/10.1016/j.heares.2008.05.001",
+                        item_number = "Table 1"),
+    fields = list(
+      `Citation (APA 7th-Annotated)` = paste0(
+        "Heffner, R. S., Koay, G., & Heffner, H. E. (2008). Sound localization acuity and its ",
+        "relation to vision in large and small fruit-eating bats: II. Non-echolocating species, ",
+        "Eidolon helvum and Cynopterus brachyotis. Hearing Research, 241(1\u20132), 80\u201386. ",
+        "https://doi.org/10.1016/j.heares.2008.05.001")))
 )
 
 # Column A of the Johnson row carries a real DOI, so clearing C is the whole fix.
@@ -270,6 +392,30 @@ norm <- function(x) tolower(gsub(" ", "", x))
 present <- norm(reg_name[!is.na(reg_name) & nzchar(reg_name)])
 missing <- Filter(function(r) !(norm(r$item_name) %in% present), ROWS)
 
+## A row whose citation was overwritten by a test write ("TEST_PROBE_VALUE") is
+## not lost -- its other fields survive -- so it is repaired in place rather than
+## appended again. Matched on the row's surviving Source URL + Item number.
+PROBE <- "TEST_PROBE_VALUE"
+reg_url <- if ("Source URL link" %in% names(registry)) as.character(registry[["Source URL link"]]) else rep(NA_character_, nrow(registry))
+reg_num <- as.character(registry[["Item number"]])
+probe_fix <- list()   # sheet row -> spec
+for (spec in missing) {
+  rp <- spec$repair_probe; if (is.null(rp)) next
+  hit <- which(!is.na(reg_cite) & trimws(reg_cite) == PROBE &
+               !is.na(reg_url) & trimws(reg_url) == rp$source_url &
+               !is.na(reg_num) & trimws(reg_num) == rp$item_number)
+  if (length(hit) > 1L) stop("more than one ", PROBE, " row matches ", spec$item_name, "; resolve by hand")
+  if (length(hit) == 1L) probe_fix[[as.character(hit + 1L)]] <- spec   # +1 for the header row
+}
+repaired <- vapply(probe_fix, function(p) p$item_name, character(1))
+missing  <- Filter(function(r) !(r$item_name %in% repaired), missing)
+leftover <- which(!is.na(reg_cite) & trimws(reg_cite) == PROBE)
+if (length(leftover) > length(probe_fix))
+  warning(length(leftover) - length(probe_fix), " '", PROBE, "' row(s) in Sheet1 match no ROWS entry; ",
+          "left as-is -- identify them by hand (sheet row(s) ",
+          paste(setdiff(leftover + 1L, as.integer(names(probe_fix))), collapse = ", "), ")",
+          call. = FALSE)
+
 ## Sheet1 re-sorts itself, so never cache a row number -- find the Johnson row by
 ## its DOI, now, and only if column C still holds the stranded ISBN.
 johnson <- which(!is.na(reg_cite) & grepl(JOHNSON_DOI, reg_cite, fixed = TRUE) &
@@ -281,7 +427,7 @@ if (length(johnson) > 1L)
 ## return from at top level, and falling through would call saveWorkbook() on a
 ## no-op. This workbook is fragile enough that an unnecessary openxlsx round-trip
 ## is itself a risk, so it is only ever rewritten when there is a change to make.
-if (!length(missing) && !length(johnson)) {
+if (!length(missing) && !length(johnson) && !length(probe_fix)) {
   message(sprintf("nothing to do: all %d row(s) present, no stranded ISBN.", length(ROWS)))
 } else {
 
@@ -321,6 +467,14 @@ for (i in seq_along(missing)) {
                     "" else "   (TSV NOT BUILT YET)"))
 }
 
+for (rw in names(probe_fix)) {
+  spec <- probe_fix[[rw]]
+  for (field in names(spec$fields))
+    writeData(wb, sheet = sheet, x = spec$fields[[field]],
+              startRow = as.integer(rw), startCol = find_col(field), colNames = FALSE)
+  message(sprintf("  row %s  %-32s repaired in place (citation was %s)", rw, spec$item_name, PROBE))
+}
+
 if (length(johnson)) {
   deleteData(wb, sheet = sheet, cols = find_col("DOI if different from article or doi Alt"),
              rows = johnson + 1L, gridExpand = FALSE)
@@ -334,13 +488,13 @@ saveWorkbook(wb, readme_xlsx, overwrite = TRUE)
 # ---- Verify ------------------------------------------------------------------
 after <- read_excel(readme_xlsx, sheet = sheet)
 written <- as.character(after[[1]])
-for (spec in missing) {
+for (spec in c(missing, unname(probe_fix))) {
   cite <- spec$fields[["Citation (APA 7th-Annotated)"]]
   if (!any(!is.na(written) & written == cite))
     stop("row did not survive the save: ", spec$item_name)
 }
 
-message(sprintf("\nrestored %d row(s).", length(missing)))
+message(sprintf("\nrestored %d row(s), repaired %d in place.", length(missing), length(probe_fix)))
 message("NEXT: Rscript _tools/file_list.R          # fills E:M and refreshes their caches")
 message("THEN: Rscript _checks/check_item_name_resolution.R   # expect exit 0")
 

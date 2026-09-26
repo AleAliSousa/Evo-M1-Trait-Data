@@ -1,0 +1,19 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,species the row's values pertain to (Chimpanzee or Human),,,info,,"Pan troglodytes, Homo sapiens",Bianchi_etal_2012_Table2,,
+Area,cortical Brodmann area sampled (3b; 4; 18; 10),,,info,,,Bianchi_etal_2012_Table2,,
+Cell_soma_area_um2_mean,mean layer III pyramidal-neuron cell soma cross-sectional area in square micrometers,Pyramidal_neuron_soma,area_um2,mean,primary,,Bianchi_etal_2012_Table2,,
+Cell_soma_area_um2_SD,standard deviation of Cell_soma_area_um2_mean,Pyramidal_neuron_soma,area_um2 SD,SD,primary,,Bianchi_etal_2012_Table2,,
+Cell_soma_depth_um_mean,mean depth of the sampled neuron's soma within the cortex in micrometers,Pyramidal_neuron_soma,depth_um,mean,primary,,Bianchi_etal_2012_Table2,,
+Cell_soma_depth_um_SD,standard deviation of Cell_soma_depth_um_mean,Pyramidal_neuron_soma,depth_um SD,SD,primary,,Bianchi_etal_2012_Table2,,
+TDL_um_mean,mean total dendritic length (sum of individual basilar dendritic segment lengths) in micrometers,Pyramidal_neuron_dendrite,length_um,mean,primary,,Bianchi_etal_2012_Table2,,basilar dendrites only; apical dendrites often incomplete due to sectioning
+TDL_um_SD,standard deviation of TDL_um_mean,Pyramidal_neuron_dendrite,length_um SD,SD,primary,,Bianchi_etal_2012_Table2,,
+MSL_um_mean,mean segment length (TDL / dendritic segment count) in micrometers,Pyramidal_neuron_dendrite,segment_length_um,mean,derived in source table,,Bianchi_etal_2012_Table2,,
+MSL_um_SD,standard deviation of MSL_um_mean,Pyramidal_neuron_dendrite,segment_length_um SD,SD,derived in source table,,Bianchi_etal_2012_Table2,,
+DSC_mean,mean dendritic segment count (number of all basilar dendritic segments),Pyramidal_neuron_dendrite,segment_count,mean,primary,,Bianchi_etal_2012_Table2,,
+DSC_SD,standard deviation of DSC_mean,Pyramidal_neuron_dendrite,segment_count SD,SD,primary,,Bianchi_etal_2012_Table2,,
+DSN_mean,mean dendritic spine number (count of all spines marked on the basilar dendritic arbor),Pyramidal_neuron_dendrite,spine_count,mean,primary,,Bianchi_etal_2012_Table2,,
+DSN_SD,standard deviation of DSN_mean,Pyramidal_neuron_dendrite,spine_count SD,SD,primary,,Bianchi_etal_2012_Table2,,
+DSD_mean,mean dendritic spine density (spines per 1 mm of dendritic length),Pyramidal_neuron_dendrite,spine_density_per_mm,mean,primary,,Bianchi_etal_2012_Table2,,calculated for both basilar and apical dendrites in the source; this table reports the combined/basilar value as printed
+DSD_SD,standard deviation of DSD_mean,Pyramidal_neuron_dendrite,spine_density_per_mm SD,SD,primary,,Bianchi_etal_2012_Table2,,
+Dendritic_trees_count_mean,mean number of dendritic trees per neuron,Pyramidal_neuron_dendrite,tree_count,mean,primary,,Bianchi_etal_2012_Table2,reported for chimpanzees only; blank for humans in the printed table,
+Dendritic_trees_count_SD,standard deviation of Dendritic_trees_count_mean,Pyramidal_neuron_dendrite,tree_count SD,SD,primary,,Bianchi_etal_2012_Table2,reported for chimpanzees only; blank for humans in the printed table,

@@ -1,0 +1,8 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Subject,subject code combining sex (M/F) and age in years as printed,,,info,,Homo sapiens,Jacobs_etal_2001_Table1,,
+Sex,sex of the subject (M or F),,,info,,Homo sapiens,Jacobs_etal_2001_Table1,,
+Age_years,age at death in years,,age_years,,info,,Jacobs_etal_2001_Table1,,N=10 (5 male, 5 female)
+Body_weight_kg,body weight in kilograms,,mass_kg,,info,,Jacobs_etal_2001_Table1,blank where not reported (printed as an em dash in the source),
+Autolysis_time_h,autolysis time in hours,,duration_h,,info,,Jacobs_etal_2001_Table1,,mean 12 +/- 6 hours, range 1-22 hours across the sample
+Cause_of_death,cause of death as recorded in autopsy report,,,info,,,Jacobs_etal_2001_Table1,,
+Occupation_education,occupation and/or education level as printed; MS = middle school, HS = high school, UNI = university,,,info,,,Jacobs_etal_2001_Table1,blank where not reported,per the table's own footnote, BA10 tissue from all subjects except F11 and F15 was previously used in Jacobs et al. (1997)

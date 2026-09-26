@@ -1,0 +1,3 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Structure,brain structure/tissue-class name as printed in the table,,,info,,Loxodonta africana,Hakeem_etal_2005_Table2,,
+Volume_cm3,volume of the structure/tissue class,varies by row (see Structure),volume_cm3,single specimen,measure,,Hakeem_etal_2005_Table2,"Single adult female elephant specimen; no SD/replicate values are printed. Volumes derived from postmortem MRI segmented in Amira (manual + semiautomated), estimated accurate to within ~2% per the paper's own validation against known-volume test shapes (p. 1119).",

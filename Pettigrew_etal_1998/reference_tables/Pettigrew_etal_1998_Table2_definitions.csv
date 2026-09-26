@@ -1,0 +1,9 @@
+variable,definition,units,notes
+species_row,Row number after removing header/blank lines,integer,Printed order (increasing acuity/magnification ratio)
+common_name,Common name as printed in Table 2,text,
+binomial,Species binomial,text,"Genus-level for species the table names only generically (aotus, agouti, hedgehog, ferret, flying fox); the paper does not specify the exact species for these"
+pathway_group,Printed grouping by dominant visual pathway (retinogeniculate vs retinotectal),text,
+linear_magnification_mm_per_deg,Visual cortical magnification factor,mm cortex per degree of visual angle,Computed by the paper's authors from cortical mapping data (own for platypus; cited literature for the rest)
+ganglion_cell_acuity_cyc_per_deg,Maximum theoretical resolvable spatial frequency from peak retinal ganglion-cell density (Shannon sampling theorem),cycles per degree,
+ratio_cyc_per_mm,Acuity-to-magnification ratio,cycles per mm cortex,"Table's own derived column; ratio = ganglion_cell_acuity_cyc_per_deg / linear_magnification_mm_per_deg approximately, as printed"
+data_role,Whether the row is this paper's own new measurement (platypus) or a value cited from prior literature,text,

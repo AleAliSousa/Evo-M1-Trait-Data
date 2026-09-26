@@ -1,0 +1,9 @@
+variable,definition,units,notes
+species_row,Row number after removing header/blank lines,integer,Printed order (descending high-frequency limit)
+common_name,Common name as printed in Table 1,text,
+binomial,Standard binomial for the common/domestic species named,text,Unambiguous for all 19 rows (single standard domestic/lab species per common name)
+low_frequency_limit_Hz,Lowest frequency audible at 60 dB SPL,Hz,"Left BLANK for the four bird rows (zebra finch, turkey, pigeon, mallard duck): the source PDF's text layer extracts a leading minus sign (-250, -250, -125, -300 Hz respectively), which cannot be a real negative frequency. This is almost certainly an OCR/glyph misread of a printed '>' (greater-than) symbol -- i.e. the true lower limit could not be determined and is only known to exceed that value -- but the snapshot preserves the literal extracted character rather than silently converting it, and this column is left blank in the analysis CSV rather than guessed. See README."
+high_frequency_limit_Hz,Highest frequency audible at 60 dB SPL,Hz,
+best_sensitivity_dB,Lowest threshold (species' best sensitivity),dB re 20 microPa,
+best_frequency_Hz,Frequency of best sensitivity,Hz,
+data_role,"All rows are secondary: reviewed/compiled by this paper from Fay (1988) and Heffner & Heffner (1992a), not new data",text,

@@ -1,0 +1,9 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,species sampled (Marmoset, Macaque, or Human),,,info,,"Callithrix (marmoset), Macaca (macaque), Homo sapiens",Elston_etal_2001_Table1,,
+Region,cortical region sampled (Occipital, Temporal, or Prefrontal),,,info,,,Elston_etal_2001_Table1,,layer III pyramidal cells
+Peak_branching_complexity_mean,mean peak number of dendritic branch intersections (Sholl analysis) at whichever distance from the soma produced the maximum count,Pyramidal_neuron_basal_dendritic_field,branch_count,mean,primary,,Elston_etal_2001_Table1,,
+Peak_branching_complexity_SD,standard deviation of Peak_branching_complexity_mean,Pyramidal_neuron_basal_dendritic_field,branch_count SD,SD,primary,,Elston_etal_2001_Table1,,
+Basal_dendritic_field_area_1e4um2_mean,mean basal dendritic field area (area of the polygon joining the outermost distal dendrite tips) in units of 10^4 square micrometers,Pyramidal_neuron_basal_dendritic_field,area_1e4um2,mean,primary,,Elston_etal_2001_Table1,,multiply by 10000 for absolute um2
+Basal_dendritic_field_area_1e4um2_SD,standard deviation of Basal_dendritic_field_area_1e4um2_mean,Pyramidal_neuron_basal_dendritic_field,area_1e4um2 SD,SD,primary,,Elston_etal_2001_Table1,,
+Max_spine_density_per_10um_mean,mean maximum dendritic spine density (spines per 10 micrometers of dendrite),Pyramidal_neuron_basal_dendritic_field,spine_density_per_10um,mean,primary,,Elston_etal_2001_Table1,,
+Max_spine_density_per_10um_SEM,standard error of the mean of Max_spine_density_per_10um_mean,Pyramidal_neuron_basal_dendritic_field,spine_density_per_10um SEM,SEM,primary,,Elston_etal_2001_Table1,,note this row reports SEM not SD (as printed in the source table's own header)

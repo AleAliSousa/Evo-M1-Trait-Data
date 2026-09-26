@@ -1,0 +1,20 @@
+Animal,Low-frequency limit (Hz) as extracted,High-frequency limit (Hz),Best sensitivity (dB),Best frequency (Hz)
+Laboratory mouse,900,79000,5,15000
+Cat,55,79000,-10,8000
+Laboratory rat,530,70500,0,8000
+Rabbit,96,49000,4,4000
+Guinea pig,47,49000,-6,8000
+Dog,67,44000,-1,8000
+Sheep,125,42000,-6,10000
+Pig,42,40500,9,8000
+Goat,78,37000,-11,2000
+Cattle,23,37000,-11,8000
+Horse,55,33500,7,2000
+Chinchilla,50,33000,1,1000
+Human,31,17600,-10,4000
+Canary,250,10000,8,2800
+Budgerigar,125,8000,2,2800
+Zebra finch,-250,7000,21,4000
+Turkey,-250,7000,17,1000
+Pigeon,-125,6600,10,3000
+Mallard duck,-300,6000,15,2000

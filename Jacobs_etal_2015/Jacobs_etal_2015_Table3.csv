@@ -1,7 +1,7 @@
-Dependent variable,Overall model vs intercept-only (Wald),Model fit Pearson chi2,Model fit conclusion,Intercept Wald chi2,Brain main effect Wald chi2,Block within Brain Wald chi2
-DSC,n.s.,"chi2(137) = 25940.9, p <= 0.000",Model does not fit the data,"chi2(1) = 775.5, p <= 0.000",n.s.,n.s.
-DSD,"chi2(5) = 64.5, p <= 0.000","chi2(137) = 2.9, p > 0.05",Model fits the data,"chi2(1) = 5207.0, p <= 0.000","chi2(2) = 58.4, p <= 0.000","chi2(3) = 19.7, p <= 0.000"
-DSN,"chi2(5) = 28.7, p <= 0.000","chi2(137) = 2.1E8, p <= 0.000",Model does not fit the data,"chi2(1) = 662.8, p <= 0.000","chi2(2) = 15.6, p <= 0.000","chi2(3) = 20.8, p <= 0.000"
-MSL,"chi2(5) = 16.7, p <= 0.000","chi2(137) = 19160.3, p <= 0.000",Model does not fit the data,"chi2(1) = 7525.9, p <= 0.000","chi2(2) = 19.1, p <= 0.000",n.s.
-TDL,n.s.,"chi2(137) = 2.1E8, p <= 0.000",Model does not fit the data,"chi2(1) = 811.2, p <= 0.000",n.s.,n.s.
-Vol,"chi2(5) = 51.2, p <= 0.000","chi2(137) = 4.5E9, p <= 0.000",Model does not fit the data,"chi2(1) = 480.2, p <= 0.000","chi2(2) = 26.2, p <= 0.000","chi2(3) = 35.2, p <= 0.000"
+"Dependent variable","Overall model vs intercept-only (Wald)","Model fit Pearson chi2","Model fit conclusion","Intercept Wald chi2","Brain main effect Wald chi2","Block within Brain Wald chi2"
+"DSC","n.s.","chi2(137) = 25940.9, p <= 0.000","Model does not fit the data","chi2(1) = 775.5, p <= 0.000","n.s.","n.s."
+"DSD","chi2(5) = 64.5, p <= 0.000","chi2(137) = 2.9, p > 0.05","Model fits the data","chi2(1) = 5207.0, p <= 0.000","chi2(2) = 58.4, p <= 0.000","chi2(3) = 19.7, p <= 0.000"
+"DSN","chi2(5) = 28.7, p <= 0.000","chi2(137) = 2.1E8, p <= 0.000","Model does not fit the data","chi2(1) = 662.8, p <= 0.000","chi2(2) = 15.6, p <= 0.000","chi2(3) = 20.8, p <= 0.000"
+"MSL","chi2(5) = 16.7, p <= 0.000","chi2(137) = 19160.3, p <= 0.000","Model does not fit the data","chi2(1) = 7525.9, p <= 0.000","chi2(2) = 19.1, p <= 0.000","n.s."
+"TDL","n.s.","chi2(137) = 2.1E8, p <= 0.000","Model does not fit the data","chi2(1) = 811.2, p <= 0.000","n.s.","n.s."
+"Vol","chi2(5) = 51.2, p <= 0.000","chi2(137) = 4.5E9, p <= 0.000","Model does not fit the data","chi2(1) = 480.2, p <= 0.000","chi2(2) = 26.2, p <= 0.000","chi2(3) = 35.2, p <= 0.000"

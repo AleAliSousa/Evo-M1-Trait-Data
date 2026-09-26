@@ -1,0 +1,11 @@
+variable,definition,units,notes
+species_row,Row number after removing header/blank lines,integer,
+binomial,Species binomial as printed in Table I,text,
+common_name,Common name as printed in Table I,text,
+echolocation_group,Echolocation category as grouped in Table I,text,Rousettus is a tongue-click echolocator used for cave orientation only
+functional_head_size_us,Time for sound to travel around the head from one ear to the other,microseconds,Proxy for interaural distance / magnitude of binaural time cue
+minimum_audible_angle_deg,Passive sound-localization threshold for a 100-ms broadband noise burst,degrees,50% corrected-detection performance
+phase_cue_upper_limit_kHz,Highest pure-tone frequency at which the species could localize using the binaural phase-difference (time) cue,kHz,Blank where the species could not use the phase cue at any tested frequency (see phase_cue_used)
+phase_cue_used,Whether the species demonstrated any use of the binaural phase-difference cue,boolean,"printed as ""Cue not used"" in the source for FALSE rows"
+data_role,Whether the row is this paper's own new measurement or a comparison value drawn from a cited prior study,text,primary = measured in this paper (Desmodus rotundus); secondary = cited from an earlier paper for comparison
+source,Citation for the value as given in Table I,text,

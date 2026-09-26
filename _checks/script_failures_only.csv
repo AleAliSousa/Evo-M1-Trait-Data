@@ -1,7 +1,7 @@
 "script","status","error","start_time","end_time","elapsed_seconds"
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_brain_mass/brain_mass_compiled.R","FAILED","Error: no measurement basis on record for 10.1038%2Fs41559-017-0112_BrainData.tsv / Brain Mass (paper folder 'DeCasien_etal_2017'). Add it to ASSIGN in _keys/build_brain_size_basis.py and re-run that builder.
-Execution halted","2026-09-23 10:07:23.333361","2026-09-23 10:07:24.931118",1.59775710105896
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_item_name_resolution.R","FAILED","registry Item names: 470   |   TSVs on disk: 374   |   NA.tsv present: no
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_brain_mass/brain_mass_compiled.R","FAILED","Error: no measurement basis on record for 10.1007%2Fs00429-014-0830-9_Table4.tsv / Mean Brain mass (g) (paper folder 'Andelin_etal_2019'). Add it to ASSIGN in _keys/build_brain_size_basis.py and re-run that builder.
+Execution halted","2026-09-25 16:23:43.648061","2026-09-25 16:23:46.248478",2.60041689872742
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_item_name_resolution.R","FAILED","registry Item names: 493   |   TSVs on disk: 397   |   NA.tsv present: no
 
 __merging_behaviour/behaviour_compiled.R                     0 item name(s) referenced   OK
 __merging_body_ecology/body_ecology_compiled.R               0 item name(s) referenced   OK
@@ -17,14 +17,65 @@ __merging_sleep/sleep_compiled.R                             4 item name(s) refe
 __merging_volumes/volumes_compiled_select.R                 34 item name(s) referenced   OK
 __merging_volumes/volumes_compiled.R                        67 item name(s) referenced   OK
 
-orphaned TSVs (on disk, claimed by no registry row): 4
-      10.1073%2Fpnas.1911264116_ERABIS.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1093%2Fcercor%2Fbhr033_authordata.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1159%2F000121494_TableI.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.3389%2Ffnhum.2013.00424_TableS2partial.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+orphaned TSVs (on disk, claimed by no registry row): 7
+      10.1002%2F(sici)1096-9861(19971006)386%3A4%3C661%3A%3AAid-cne11%3E3.0.Co;2-n_Table1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1002%2F(sici)1096-9861(19971006)386%3A4%3C661%3A%3AAid-cne11%3E3.0.Co;2-n_Table2.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1002%2Fcne.24349_Table3.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1002%2Fcne.24349_Table5.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1002%2Fcne.25197_TABLE1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1002%2Fcne.25197_TABLE2.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1002%2Fcne.25197_TABLE3.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
 rows with a citation but no Item name (need _tools/file_list.R): 0
 
 all referenced item names resolve to a TSV on disk.
-run _tools/restore_registry_rows.R (adding any new row to its ROWS list), then _tools/file_list.R.","2026-09-23 10:08:02.087139","2026-09-23 10:08:02.779268",0.692129135131836
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_keys/apply_variable_canonical_proposed.R","FAILED","Error: Missing variable_canonical_PROPOSED.csv in /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_keys
-Execution halted","2026-09-23 10:10:57.371963","2026-09-23 10:10:57.630738",0.258774995803833
+run _tools/restore_registry_rows.R (adding any new row to its ROWS list), then _tools/file_list.R.","2026-09-25 16:24:31.665829","2026-09-25 16:24:32.649085",0.983256101608276
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Baron_etal_1996/Baron_etal_1996_extract_snapshots.R","FAILED","Reading word coordinates from the PDF ...
+Checking the extractor against the two frozen snapshots ...
+Error in guard(""Table10"", 56:63, c(""n"", ""OBL"", ""MES"", ""CER"", ""DIE"", ""TEL""),  : 
+  Table10: 272 rows re-derived, frozen snapshot has 309
+Execution halted","2026-09-25 16:32:08.427881","2026-09-25 16:32:09.453356",1.025475025177
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Baron_etal_1996/Baron_etal_1996_Table10.R","FAILED","Error: Unexpected missing species or volume in Table 10
+Execution halted","2026-09-25 16:32:10.516939","2026-09-25 16:32:10.88171",0.364771127700806
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Baron_etal_1996/Baron_etal_1996_Table13.R","FAILED","Error: Unexpected missing species or measurement in Baron_etal_1996_Table13
+Execution halted","2026-09-25 16:32:10.885251","2026-09-25 16:32:11.157118",0.271867036819458
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Baron_etal_1996/Baron_etal_1996_Table16.R","FAILED","Error: Unexpected missing species or measurement in Baron_etal_1996_Table16
+Execution halted","2026-09-25 16:32:11.160796","2026-09-25 16:32:11.453513",0.292716979980469
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Baron_etal_1996/Baron_etal_1996_Table19.R","FAILED","Error: Unexpected missing species or measurement in Baron_etal_1996_Table19
+Execution halted","2026-09-25 16:32:11.463755","2026-09-25 16:32:11.913373",0.449618101119995
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Baron_etal_1996/Baron_etal_1996_Table22.R","FAILED","Error: Unexpected missing species or measurement in Baron_etal_1996_Table22
+Execution halted","2026-09-25 16:32:12.476057","2026-09-25 16:32:12.765474",0.289417028427124
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Baron_etal_1996/Baron_etal_1996_Table25.R","FAILED","Error: Unexpected missing species or measurement in Baron_etal_1996_Table25
+Execution halted","2026-09-25 16:32:12.772506","2026-09-25 16:32:13.163284",0.390778064727783
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Baron_etal_1996/Baron_etal_1996_Table28.R","FAILED","Error: Unexpected missing species or measurement in Baron_etal_1996_Table28
+Execution halted","2026-09-25 16:32:13.16658","2026-09-25 16:32:13.42474",0.25816011428833
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Baron_etal_1996/Baron_etal_1996_Table30.R","FAILED","Error: Unexpected missing species or measurement in Baron_etal_1996_Table30
+Execution halted","2026-09-25 16:32:13.431124","2026-09-25 16:32:13.679957",0.248832941055298
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Baron_etal_1996/Baron_etal_1996_Table32.R","FAILED","Error: Unexpected missing species or volume in Table 32
+Execution halted","2026-09-25 16:32:13.684669","2026-09-25 16:32:13.978301",0.293632030487061
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Baron_etal_1996/Baron_etal_1996_Table36.R","FAILED","Error: Unexpected missing species or measurement in Baron_etal_1996_Table36
+Execution halted","2026-09-25 16:32:14.480951","2026-09-25 16:32:14.785649",0.30469799041748
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Baron_etal_1996/Baron_etal_1996_Table39.R","FAILED","Error: Unexpected missing species or measurement in Baron_etal_1996_Table39
+Execution halted","2026-09-25 16:32:14.791789","2026-09-25 16:32:15.055572",0.263782978057861
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Baron_etal_1996/Baron_etal_1996_Table42.R","FAILED","Error: Unexpected missing species or measurement in Baron_etal_1996_Table42
+Execution halted","2026-09-25 16:32:15.058968","2026-09-25 16:32:15.334172",0.275203943252563
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Baron_etal_1996/Baron_etal_1996_Table45.R","FAILED","Error: Unexpected missing species or measurement in Baron_etal_1996_Table45
+Execution halted","2026-09-25 16:32:15.337634","2026-09-25 16:32:15.603934",0.266299962997437
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Baron_etal_1996/Baron_etal_1996_Table48.R","FAILED","Error: Unexpected missing species or measurement in Baron_etal_1996_Table48
+Execution halted","2026-09-25 16:32:15.611203","2026-09-25 16:32:15.908212",0.297008991241455
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Baron_etal_1996/Baron_etal_1996_Table51.R","FAILED","Error: Unexpected missing species or measurement in Baron_etal_1996_Table51
+Execution halted","2026-09-25 16:32:16.434997","2026-09-25 16:32:16.715322",0.280324935913086
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Baron_etal_1996/Baron_etal_1996_Table8.R","FAILED","Error: Unexpected missing species or measurement in Baron_etal_1996_Table8
+Execution halted","2026-09-25 16:32:16.720388","2026-09-25 16:32:17.012257",0.291869163513184
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/deMagalhães_etal_2024/deMagalhães_etal_2024_anagedata.txt.R","FAILED","Error in file(filename, ""r"", encoding = encoding) : 
+  cannot open the connection
+Calls: source -> file
+In addition: Warning message:
+In file(filename, ""r"", encoding = encoding) :
+  cannot open file '_tools/dataset_builder/load_dataset_builder.R': No such file or directory
+Execution halted","2026-09-25 16:32:59.214869","2026-09-25 16:32:59.504611",0.289741992950439
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jacob_etal_2021/Jacob_etal_2021_TABLE1.R","FAILED","Error: Registry rows matching 'Jacob_etal_2021_TABLE1': 0
+Execution halted","2026-09-25 16:34:32.632025","2026-09-25 16:34:33.110606",0.478580951690674
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jacob_etal_2021/Jacob_etal_2021_TABLE2.R","FAILED","Error: Registry rows matching 'Jacob_etal_2021_TABLE2': 0
+Execution halted","2026-09-25 16:34:33.129652","2026-09-25 16:34:33.620941",0.491288900375366
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jacob_etal_2021/Jacob_etal_2021_TABLE3.R","FAILED","Error: Registry rows matching 'Jacob_etal_2021_TABLE3': 0
+Execution halted","2026-09-25 16:34:33.623602","2026-09-25 16:34:34.148042",0.524440050125122

@@ -24,6 +24,10 @@ root_dir <- local({
 
 snapshot <- read.csv(file.path(paper_dir, paste0(item_name, "_snapshot.csv")),
                      check.names = FALSE, stringsAsFactors = FALSE)
+if (!is.null(snapshot$is_header)) {
+  snapshot <- snapshot[snapshot$is_header != "TRUE", ]
+  snapshot$species_row <- seq_len(nrow(snapshot))
+}
 stopifnot(nrow(snapshot) == 150L, identical(snapshot$species_row, seq_len(150L)))
 
 final.dataframe <- data.frame(

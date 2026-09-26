@@ -1,0 +1,14 @@
+variable,definition,units,notes
+species_row,Row number after removing header/blank lines,integer,Printed order (chronological by species' first hearing test)
+common_name,Common name for the species,text,Not printed in the source table (which uses genus-abbreviated binomials only); added for readability
+binomial,Species binomial,text,"Expanded from the source's genus-abbreviated form (e.g. ""T. truncatus"") using the paper's own prose, which names each species in full on first mention"
+n,Number of individuals tested,integer,
+hearing_range_low_kHz,Lower bound of the reported hearing range,kHz,
+hearing_range_high_kHz,Upper bound of the reported hearing range,kHz,
+best_sensitivity_low_kHz,Lower bound of the frequency range of best sensitivity,kHz,"Column is labelled ""Best sensitivity (kHz)"" in the source -- despite the name, it reports a FREQUENCY range, not a dB threshold. Blank for Steno bredanensis, printed as ""Unclear""."
+best_sensitivity_high_kHz,Upper bound of the frequency range of best sensitivity,kHz,Same caveat as best_sensitivity_low_kHz
+footnote,Footnote letter as printed,text,
+footnote_text,Footnote text as printed under the table,text,
+method,Behavioural vs. electrophysiological (AEP) testing method,text,
+reference,Citation for that row's data as printed in the table,text,
+data_role,"All rows are secondary: this is Mooney, Yamato & Branstetter's own compiled review table, not new data from this paper",text,

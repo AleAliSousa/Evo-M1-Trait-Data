@@ -1,0 +1,13 @@
+variable,definition,units,notes
+species_row,Row number after removing header/blank lines,integer,Printed order (grouped by strepsirrhines, New/Old World monkeys, apes, human)
+common_name,Common name for the species,text,Not printed in the source table; added for readability
+binomial,Species binomial as printed in Table 1,text,
+species_footnote,Footnote marker attached to the species name itself,text,e.g. footnote 1 (personal communication) and 4 (published under a different name) annotate the SPECIES, not a measured value
+species_footnote_text,Footnote text for species_footnote,text,
+high_frequency_limit_kHz,Highest frequency audible at 60 dB SPL,kHz,
+hf_footnote / lf_footnote / bf_footnote / bs_footnote / range_footnote,Footnote marker on that specific value,text,Mostly footnote 2 (extrapolated) or 3 (tested using headphones)
+low_frequency_limit_kHz,Lowest frequency audible at 60 dB SPL,kHz,"Blank for 6 species (Callithrix jacchus, Aotus trivirgatus, Macaca fascicularis, Macaca mulatta, Macaca nemestrina, Pan troglodytes) -- genuinely not printed in the source, confirmed by page-image inspection, not an OCR gap"
+best_frequency_kHz,Frequency of best sensitivity,kHz,
+best_sensitivity_dB,Lowest threshold (species' best sensitivity),dB re 20 microPa,"Several values are negative (e.g. Eulemur fulvus -1, Cercopithecus aethiops -4, Callithrix jacchus -9, Aotus trivirgatus -8, Homo sapiens -10); the PDF's raw text layer drops these minus signs on extraction. Every negative value in this column was individually confirmed against a 300-dpi page-image render (see README) before being entered here."
+hearing_range_octaves,Difference between high- and low-frequency limits in octaves,octaves,Blank wherever low_frequency_limit_kHz is blank (range cannot be computed without both limits)
+data_role,"All 19 rows are secondary: this is Heffner & Heffner's own compiled review table of prior published/personal-communication audiograms, not new data of this paper's own",text,

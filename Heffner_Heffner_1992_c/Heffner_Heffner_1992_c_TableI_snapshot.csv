@@ -1,0 +1,18 @@
+Group,Animal,Footnote,Low-frequency limit (kHz),High-frequency limit (kHz),Best frequency (kHz),Lowest threshold (dB)
+Low-frequency rodents,Prairie dog,1,0.029,26.0,4,20
+Low-frequency rodents,Gerbil,2,0.036,58.0,2.9,3
+Low-frequency rodents,Chipmunk,1,0.039,52.0,1.0,17
+Low-frequency rodents,Groundhog,3,0.040,27.5,4.0,21
+Low-frequency rodents,Kangaroo rat,4,0.042,52.0,1.0,9
+Low-frequency rodents,Guinea pig,5,0.047,49.0,8.0,-6
+Low-frequency rodents,Chinchilla,6,0.050,33.0,1.0,1
+Subterranean rodents,Blind mole rat,7,0.054,5.9,1.0,32
+Subterranean rodents,Naked mole rat,8,0.065,11.5,4.0,35
+Subterranean rodents,Pocket gopher,9,0.270,8.7,2.0,24
+High-frequency rodents,Norway rat,10,0.520,72.0,8.0,0
+High-frequency rodents,Woodrat,11,0.940,56.0,8.0,-3
+High-frequency rodents,Cotton rat,4,1.00,72.0,8.0,-6
+High-frequency rodents,Darwin's mouse,12,1.55,73.5,11.0,-3
+High-frequency rodents,Grasshopper mouse,11,1.85,68,8.0,9
+High-frequency rodents,Spiny mouse,12,2.30,71.0,8.0,14
+High-frequency rodents,House mouse (wild),4,2.30,92.0,16.0,-10

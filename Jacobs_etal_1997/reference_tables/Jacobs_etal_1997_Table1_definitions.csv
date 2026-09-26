@@ -1,0 +1,9 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Subject,subject code combining sex (M/F) and age in years as printed; two 69-year-old males are distinguished as M69.1/M69.2,,,info,,Homo sapiens,Jacobs_etal_1997_Table1,,
+Sex,sex of the subject (M or F),,,info,,Homo sapiens,Jacobs_etal_1997_Table1,,
+Age_years,age at death in years,,age_years,,info,,Jacobs_etal_1997_Table1,,range 14-106 years; N=26 (13 male, 13 female)
+Body_weight_kg,body weight in kilograms,,mass_kg,,info,,Jacobs_etal_1997_Table1,blank where not reported (printed as an em dash in the source),
+Autolysis_time_h,autolysis time in hours,,duration_h,,info,,Jacobs_etal_1997_Table1,,mean 11 +/- 6 hours, range 1-23 hours across the sample
+Cause_of_death,cause of death as recorded in autopsy report,,,info,,,Jacobs_etal_1997_Table1,,
+Occupation_education,occupation and/or education level as printed; HS = high school, UNI = university,,,info,,,Jacobs_etal_1997_Table1,blank where not reported,
+Ethnicity,ethnicity of the subject,,,info,,Homo sapiens,Jacobs_etal_1997_Table1,,all subjects Caucasian except M69.2 (Hispanic) and F106 (African-American), per the table's own footnote

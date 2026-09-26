@@ -26,6 +26,18 @@ snapshot <- read.csv(file.path(paper_dir, paste0(item_name, "_snapshot.csv")),
                      check.names = FALSE, stringsAsFactors = FALSE)
 table10 <- read.csv(file.path(paper_dir, "Baron_etal_1996_Table10_snapshot.csv"),
                     check.names = FALSE, stringsAsFactors = FALSE)
+## Both snapshots now preserve the source's own printed family/subfamily
+## section headings as their own rows (is_header == "TRUE"), so both must be
+## filtered to species-only rows before the row-for-row species_row alignment
+## between the two tables is re-established.
+if (!is.null(snapshot$is_header)) {
+  snapshot <- snapshot[snapshot$is_header != "TRUE", ]
+  snapshot$species_row <- seq_len(nrow(snapshot))
+}
+if (!is.null(table10$is_header)) {
+  table10 <- table10[table10$is_header != "TRUE", ]
+  table10$species_row <- seq_len(nrow(table10))
+}
 stopifnot(nrow(snapshot) == 272L, nrow(table10) == 272L,
           identical(snapshot$species_row, table10$species_row))
 

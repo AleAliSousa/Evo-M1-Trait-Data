@@ -1,0 +1,7 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,species of the sampled specimen (Chimpanzee or Human),,,info,,"Pan troglodytes, Homo sapiens",Bianchi_etal_2012_Table1,,
+Individual,specimen number within species as printed in the table,,,info,,,Bianchi_etal_2012_Table1,,
+Age_years,age of the individual at death in years,,age_years,,info,,Bianchi_etal_2012_Table1,,
+Sex,sex of the individual (M or F),,,info,,,Bianchi_etal_2012_Table1,,
+PMI_h,post-mortem interval in hours,,duration_h,,info,,Bianchi_etal_2012_Table1,"chimpanzee PMI values of ""~4"" are printed as approximate in the source",
+Length_of_fixation,duration the specimen was fixed prior to processing,,duration,,info,,Bianchi_etal_2012_Table1,,units (days/months) as printed per row

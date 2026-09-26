@@ -1,0 +1,8 @@
+variable,definition,units,notes
+species_row,Row number after removing header/blank lines,integer,
+binomial,Species binomial as printed in Table 1,text,
+common_name,Common name as printed in Table 1,text,
+echolocation_status,Echolocation category as grouped in Table 1 (Non-echolocators / Atypical echolocator / Echolocators),text,Rousettus is a tongue-click echolocator used for cave orientation only
+localization_threshold_deg,Passive sound-localization threshold (minimum audible angle),degrees,Broadband 100-ms noise burst; threshold = angle at 50% corrected-detection performance
+data_role,Whether the row is this paper's own new measurement or a comparison value drawn from a cited prior study,text,primary = measured in this paper; secondary = cited from an earlier paper for comparison
+source,Citation for the value as given in Table 1,text,

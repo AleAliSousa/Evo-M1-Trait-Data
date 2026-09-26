@@ -1,0 +1,11 @@
+variable,definition,units,notes
+species_row,Row number after removing header/blank lines,integer,Printed order (descending low-frequency hearing ability)
+common_name,Common name as printed in Table I,text,
+binomial,Species binomial,text,"Filled in only where confirmable from this paper's own reference list or an unambiguous common-lab-species mapping (blind mole rat / naked mole rat / pocket gopher / Darwin's mouse / spiny mouse are explicitly named elsewhere in the paper's own text or reference list). Left blank rather than guessed for prairie dog, gerbil, chipmunk, kangaroo rat, woodrat, grasshopper mouse and cotton rat, whose exact species is not stated in this paper."
+rodent_group,"Printed grouping (Low-frequency / Subterranean / High-frequency rodents), based on 60-dB low-frequency hearing limit",text,
+low_frequency_limit_kHz,Lowest frequency audible at 60 dB SPL,kHz,
+high_frequency_limit_kHz,Highest frequency audible at 60 dB SPL,kHz,
+best_frequency_kHz,Frequency of greatest sensitivity,kHz,
+lowest_threshold_dB,Best (lowest) absolute threshold,dB SPL,
+data_role,Whether the row is this paper's own new measurement (blind mole rat) or a comparison value cited from a prior study,text,
+source,Citation for the value as printed in Table I's footnotes,text,

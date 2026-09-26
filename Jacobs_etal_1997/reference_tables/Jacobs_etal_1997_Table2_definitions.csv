@@ -1,0 +1,15 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+AgeGroup,artificial age grouping used to summarize life-span trends (Younger <=50 years; Older >50 years),,,info,,Homo sapiens,Jacobs_etal_1997_Table2,,younger group n=10 (mean age 34+/-12y); older group n=16 (mean age 71+/-13y)
+Area,Brodmann cortical area sampled (10 or 18),,,info,,Homo sapiens,Jacobs_etal_1997_Table2,,
+Layer_I_II_junction_um_mean,mean depth of the layer I/II junction from the pial surface in micrometers,Cortex,depth_um,mean,primary,Homo sapiens,Jacobs_etal_1997_Table2,,
+Layer_I_II_junction_um_SD,standard deviation of Layer_I_II_junction_um_mean,Cortex,depth_um SD,SD,primary,Homo sapiens,Jacobs_etal_1997_Table2,,
+Layer_II_III_junction_um_mean,mean depth of the layer II/III junction from the pial surface in micrometers,Cortex,depth_um,mean,primary,Homo sapiens,Jacobs_etal_1997_Table2,,
+Layer_II_III_junction_um_SD,standard deviation of Layer_II_III_junction_um_mean,Cortex,depth_um SD,SD,primary,Homo sapiens,Jacobs_etal_1997_Table2,,
+Sampled_soma_depth_um_mean,mean depth of the sampled pyramidal-neuron somata from the pial surface in micrometers,Pyramidal_neuron_soma,depth_um,mean,primary,Homo sapiens,Jacobs_etal_1997_Table2,,based on 520 sampled neurons across the full study
+Sampled_soma_depth_um_SD,standard deviation of Sampled_soma_depth_um_mean,Pyramidal_neuron_soma,depth_um SD,SD,primary,Homo sapiens,Jacobs_etal_1997_Table2,,
+Sampled_soma_size_um2_mean,mean cross-sectional size of the sampled pyramidal-neuron somata in square micrometers,Pyramidal_neuron_soma,size_um2,mean,primary,Homo sapiens,Jacobs_etal_1997_Table2,,printed in parentheses alongside soma depth in the source table
+Sampled_soma_size_um2_SD,standard deviation of Sampled_soma_size_um2_mean,Pyramidal_neuron_soma,size_um2 SD,SD,primary,Homo sapiens,Jacobs_etal_1997_Table2,,
+Layer_III_IV_junction_um_mean,mean depth of the layer III/IV junction from the pial surface in micrometers,Cortex,depth_um,mean,primary,Homo sapiens,Jacobs_etal_1997_Table2,,
+Layer_III_IV_junction_um_SD,standard deviation of Layer_III_IV_junction_um_mean,Cortex,depth_um SD,SD,primary,Homo sapiens,Jacobs_etal_1997_Table2,,
+Gray_white_matter_junction_um_mean,mean depth of the gray/white matter junction from the pial surface in micrometers,Cortex,depth_um,mean,primary,Homo sapiens,Jacobs_etal_1997_Table2,,
+Gray_white_matter_junction_um_SD,standard deviation of Gray_white_matter_junction_um_mean,Cortex,depth_um SD,SD,primary,Homo sapiens,Jacobs_etal_1997_Table2,,

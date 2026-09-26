@@ -1,0 +1,9 @@
+Species,Area,Cell_soma_area_um2_mean,Cell_soma_area_um2_SD,Cell_soma_depth_um_mean,Cell_soma_depth_um_SD,TDL_um_mean,TDL_um_SD,MSL_um_mean,MSL_um_SD,DSC_mean,DSC_SD,DSN_mean,DSN_SD,DSD_mean,DSD_SD,Dendritic_trees_count_mean,Dendritic_trees_count_SD
+Chimpanzee,Area3b,183,88,796,209,894,429,27.5,8.2,21,8,148,78,0.16,0.04,4.18,0.88
+Chimpanzee,Area4,185,62,707,247,966,377,46.7,11.7,21,6,166,101,0.17,0.07,4.49,1.09
+Chimpanzee,Area18,167,75,692,241,851,406,39.9,11.8,21,7,169,84,0.19,0.04,4.28,1.16
+Chimpanzee,Area10,190,63,733,224,1329,705,49.1,15.7,27,10,401,203,0.33,0.22,4.88,1.43
+Human,Area3b,235,79,847,164,3179,1071,62.4,9.8,51,15,738,457,0.17,0.06,,
+Human,Area4,273,88,822,191,3563,1191,66.9,12.3,53,15,818,326,0.19,0.05,,
+Human,Area18,212,89,785,156,3465,760,63.8,9.5,54,13,1023,424,0.23,0.09,,
+Human,Area10,288,81,784,166,4187,1329,70.7,12.8,59,16,1340,600,0.26,0.1,,

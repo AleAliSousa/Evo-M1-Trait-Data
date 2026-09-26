@@ -1,0 +1,12 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species_row,printed row sequence within Table 2 (page order 266-273),,,,info,Chiroptera,Baron_etal_1996_Table2,stable 1-303 source-order key,
+species_printed,species/subspecies wording as printed in Table 2,,,,info,Chiroptera,Baron_etal_1996_Table2,"abbreviations (e.g. ""R.""), addendum markers (§), and ssp./cont. wording preserved as printed; taxonomy applied later",
+n,number of individuals for the BL/HL/HW/HH measures,,,,info,Chiroptera,Baron_etal_1996_Table2,blank where the table prints no n (shown as ""-"" in source),
+BL,brain length,Whole_brain,Length_mm,mean,primary,Chiroptera,Baron_etal_1996_Table2,,
+HL,hemisphere length,Cerebral_hemisphere,Length_mm,mean,primary,Chiroptera,Baron_etal_1996_Table2,,
+HW,hemisphere width,Cerebral_hemisphere,Width_mm,mean,primary,Chiroptera,Baron_etal_1996_Table2,,
+HH,hemisphere height,Cerebral_hemisphere,Height_mm,mean,primary,Chiroptera,Baron_etal_1996_Table2,blank where the table prints no HH value (dashed out independent of n/n2/CCL),
+n2,number of individuals for the CCL measure (independent sample size from the n column above),,,,info,Chiroptera,Baron_etal_1996_Table2,"blank where the table prints no n2; whenever CCL is present n2 is also present in the source - 8 rows where the text layer had silently dropped both are individually corrected and documented in Baron_etal_1996_Table2_extract.py's CELL_FIXES",
+CCL,corpus callosum length,Corpus_callosum,Length_mm,mean,primary,Chiroptera,Baron_etal_1996_Table2,,
+source_pdf_page,one-based PDF page containing the printed row,,,,info,Chiroptera,Baron_etal_1996_Table2,PDF pages 4-11 (printed pp. 266-273); PDF page 7/printed p. 269 has no text layer and was hand-transcribed from the rendered image,
+Method:source,PDF text-layer extraction (one page hand-transcribed from its rendered image) with a documented OCR digit/letter repair table and 8 individually image-confirmed cell fixes,,,,method,Chiroptera,Baron_etal_1996_Table2,no size indices transcribed (see Table 3/4 for those),printed units mm

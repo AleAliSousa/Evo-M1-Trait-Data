@@ -42,6 +42,20 @@ EXCLUDE = ["neonat", "fetal", "cerebel", "cortex", "cortic", "olfact", "rest of 
            "gray", "region", "residual", "resid", "net", "ratio", "source", "ref", "note",
            "_sd", " sd", ": data", "%", "index", "relative"]
 FACTOR = {"g": 1.0, "kg": 1000.0, "mg": 0.001}
+# Files whose own README documents them as SECONDARY / "not added to any
+# merge" -- ingesting them would double-count against the primary table that
+# already carries the same specimens' brain mass. Unlike body_ecology_compiled.R's
+# SKIP (a body-mass dimorphism ratio, not a mass itself), this script had no
+# exclusion mechanism at all, so these two leaked in via the generic
+# brain-mass-column scan and aborted the pooling step.
+#   UMI%3A3311323_Table4.1.tsv / _Table5.1.tsv (deSousa 2008 dissertation):
+#   deSousa__2008_Table4.1.README.md / _Table5.1.README.md, "Data role --
+#   SECONDARY, not merged" -- the same specimens' brain mass is already
+#   merged via deSousa_etal_2009_Table1 / deSousa_etal_2010_Table1.
+SKIP = {
+    "UMI%3A3311323_Table4.1.tsv",
+    "UMI%3A3311323_Table5.1.tsv",
+}
 BINOM_RX = re.compile(r"^[A-Z][a-z]+ [a-z][a-z-]+")
 # Tables that carry no per-row species column because every row is the same
 # species (documented in the source itself, not inferrable from headers).
@@ -78,6 +92,16 @@ def round_n(x, d):
     builders are to agree. Format at d+6 dp with C printf (same libc routine in both), then
     round with exact integer arithmetic. See brain_mass_compiled.R, which carries the twin.
     """
+    # A min(vals) of exactly 0 (e.g. a literal "0" in a source TSV that almost
+    # certainly means missing-value, not a real zero-gram brain) makes
+    # max/min spread infinite. R's own round() returns Inf/-Inf/NaN for
+    # non-finite input rather than erroring; "%.*f" on inf/nan produces the
+    # string "inf"/"nan" with no ".", which the split() below can't handle.
+    # Match R's behavior instead of crashing -- this is a data-quality flag
+    # (a likely-bogus zero value) to raise with the project owner, not a
+    # reason to abort the whole pooling run.
+    if x != x or x in (float("inf"), float("-inf")):  # NaN or +/-Inf
+        return x
     s = "%.*f" % (d + 6, x)
     neg = s.startswith("-")
     i, f = s.lstrip("-").split(".")
@@ -241,6 +265,8 @@ def species_getter(headers, sample):
 targets, gmax = [], defaultdict(float)
 for path in sorted(glob.glob(os.path.join(PUB, "*.tsv"))):
     fn = os.path.basename(path)
+    if fn in SKIP:
+        continue
     with open(path, encoding="utf-8", errors="replace") as fh:
         lines = fh.read().splitlines()
     if not lines:

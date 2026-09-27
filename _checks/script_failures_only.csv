@@ -1,194 +1,9 @@
 "script","status","error","start_time","end_time","elapsed_seconds"
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_brain_mass/brain_mass_compiled.R","FAILED","Error: no measurement basis on record for 10.1016%2FB978-0-12-440280-5.50008-1_Table1.tsv / brain_weight_kg (paper folder 'Ridgway__1990'). Add it to ASSIGN in _keys/build_brain_size_basis.py and re-run that builder.
-Execution halted","2026-09-27 13:21:07.620885","2026-09-27 13:21:10.497591",2.87670612335205
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/volumes_compiled_select_DeCasien.R","FAILED","Error: Review template created as volumes_select_DeCasien_curation.csv. Complete its decisions and region-specific Ns, then rerun. No compiled values have been written.
-Execution halted","2026-09-27 13:21:51.535008","2026-09-27 13:21:51.988936",0.453927993774414
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/_tmp_copilot_reads_DELETE_ME/__merging_brain_mass_brain_mass_compiled.R","FAILED","Error: no measurement basis on record for 10.1016%2FB978-0-12-440280-5.50008-1_Table1.tsv / brain_weight_kg (paper folder 'Ridgway__1990'). Add it to ASSIGN in _keys/build_brain_size_basis.py and re-run that builder.
-Execution halted","2026-09-27 13:22:13.685423","2026-09-27 13:22:15.640666",1.95524311065674
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/_tmp_copilot_reads_DELETE_ME/__ShinyApp_build_data.R","FAILED","repo: /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks
-out:  /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/_tmp_copilot_reads_DELETE_ME/data
-Error: could not read ____EvoM1_TraitTable/dexterity_corticospinaltract.xlsx (sheet 'Sheet1'): `path` does not exist: ‘/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/____EvoM1_TraitTable/dexterity_corticospinaltract.xlsx’
-  The workbook is unreadable or was mid-sync. Open it in Excel and re-save, or re-run the EvoM1_read_*.R script that writes it, then re-run build_data.R.
-Execution halted","2026-09-27 13:22:15.648289","2026-09-27 13:22:22.060408",6.41211915016174
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/_tmp_copilot_reads_DELETE_ME/_checks_check_laterality_doubling.R","FAILED","Is every doubled brain-volume value marked, and marked as provenance rather than as a veto?
-
-laterality_known.csv or standardized_term_volumes.csv not found -- run from the repo.","2026-09-27 13:22:22.067749","2026-09-27 13:22:22.454897",0.387147903442383
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/_tmp_copilot_reads_DELETE_ME/_keys_build_variable_definitions.R","FAILED","repo: /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks
-Warning message:
-In file(file, ""rt"") :
-  cannot open file '/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/_tmp_copilot_reads_DELETE_ME/glossary.csv': No such file or directory
-Warning message:
-In file(file, ""rt"") :
-  cannot open file '/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/_tmp_copilot_reads_DELETE_ME/variable_domain.csv': No such file or directory
-Error: glossary.csv and variable_domain.csv are required.
-Execution halted","2026-09-27 13:22:22.459237","2026-09-27 13:22:23.045739",0.586501836776733
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/_tmp_copilot_reads_DELETE_ME/_tools_dataset_builder_load_dataset_builder.R","FAILED","Error in file(filename, ""r"", encoding = encoding) : 
-  cannot open the connection
-Calls: source -> file
-In addition: Warning message:
-In file(filename, ""r"", encoding = encoding) :
-  cannot open file '/Users/crossmodal/validate_dataset_item.R': No such file or directory
-Execution halted","2026-09-27 13:22:23.05073","2026-09-27 13:22:23.888672",0.837942123413086
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/_tmp_copilot_reads_DELETE_ME/Baron_etal_1996_Baron_etal_1996_extract_snapshots.R","FAILED","Reading word coordinates from the PDF ...
-Error in normalizePath(pdf, mustWork = TRUE) : 
-  path[1]=""/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/_tmp_copilot_reads_DELETE_ME/baron_etal_1996 book Comparative Neurobiology.pdf"": No such file or directory
-Calls: pdf_data -> poppler_pdf_data -> loadfile -> normalizePath
-Execution halted","2026-09-27 13:22:25.501155","2026-09-27 13:22:25.97464",0.473484992980957
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/_tmp_copilot_reads_DELETE_ME/Baron_etal_1996_Baron_etal_1996_Table10.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
-Calls: read.csv -> read.table -> file
-In addition: Warning message:
-In file(file, ""rt"") :
-  cannot open file '/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/_tmp_copilot_reads_DELETE_ME/Baron_etal_1996_Baron_etal_1996_Table10_snapshot.csv': No such file or directory
-Execution halted","2026-09-27 13:22:25.982882","2026-09-27 13:22:26.771519",0.788636922836304
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/_tmp_copilot_reads_DELETE_ME/Baron_etal_1996_Baron_etal_1996_Table13.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
-Calls: read.csv -> read.table -> file
-In addition: Warning message:
-In file(file, ""rt"") :
-  cannot open file '/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/_tmp_copilot_reads_DELETE_ME/Baron_etal_1996_Baron_etal_1996_Table13_snapshot.csv': No such file or directory
-Execution halted","2026-09-27 13:22:26.779113","2026-09-27 13:22:27.14279",0.363677024841309
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/_tmp_copilot_reads_DELETE_ME/Baron_etal_1996_Baron_etal_1996_Table16.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
-Calls: read.csv -> read.table -> file
-In addition: Warning message:
-In file(file, ""rt"") :
-  cannot open file '/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/_tmp_copilot_reads_DELETE_ME/Baron_etal_1996_Baron_etal_1996_Table16_snapshot.csv': No such file or directory
-Execution halted","2026-09-27 13:22:27.153475","2026-09-27 13:22:27.540645",0.38716983795166
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/_tmp_copilot_reads_DELETE_ME/Baron_etal_1996_Baron_etal_1996_Table19.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
-Calls: read.csv -> read.table -> file
-In addition: Warning message:
-In file(file, ""rt"") :
-  cannot open file '/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/_tmp_copilot_reads_DELETE_ME/Baron_etal_1996_Baron_etal_1996_Table19_snapshot.csv': No such file or directory
-Execution halted","2026-09-27 13:22:27.54541","2026-09-27 13:22:28.452532",0.907122135162354
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/_tmp_copilot_reads_DELETE_ME/Baron_etal_1996_Baron_etal_1996_Table22.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
-Calls: read.csv -> read.table -> file
-In addition: Warning message:
-In file(file, ""rt"") :
-  cannot open file '/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/_tmp_copilot_reads_DELETE_ME/Baron_etal_1996_Baron_etal_1996_Table22_snapshot.csv': No such file or directory
-Execution halted","2026-09-27 13:22:28.45647","2026-09-27 13:22:28.810073",0.353602886199951
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/_tmp_copilot_reads_DELETE_ME/Baron_etal_1996_Baron_etal_1996_Table25.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
-Calls: read.csv -> read.table -> file
-In addition: Warning message:
-In file(file, ""rt"") :
-  cannot open file '/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/_tmp_copilot_reads_DELETE_ME/Baron_etal_1996_Baron_etal_1996_Table25_snapshot.csv': No such file or directory
-Execution halted","2026-09-27 13:22:28.813872","2026-09-27 13:22:29.189462",0.375589847564697
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/_tmp_copilot_reads_DELETE_ME/Baron_etal_1996_Baron_etal_1996_Table28.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
-Calls: read.csv -> read.table -> file
-In addition: Warning message:
-In file(file, ""rt"") :
-  cannot open file '/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/_tmp_copilot_reads_DELETE_ME/Baron_etal_1996_Baron_etal_1996_Table28_snapshot.csv': No such file or directory
-Execution halted","2026-09-27 13:22:29.195063","2026-09-27 13:22:29.601102",0.406038999557495
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/_tmp_copilot_reads_DELETE_ME/Baron_etal_1996_Baron_etal_1996_Table30.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
-Calls: read.csv -> read.table -> file
-In addition: Warning message:
-In file(file, ""rt"") :
-  cannot open file '/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/_tmp_copilot_reads_DELETE_ME/Baron_etal_1996_Baron_etal_1996_Table30_snapshot.csv': No such file or directory
-Execution halted","2026-09-27 13:22:29.607992","2026-09-27 13:22:29.959276",0.351284027099609
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/_tmp_copilot_reads_DELETE_ME/Baron_etal_1996_Baron_etal_1996_Table32.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
-Calls: read.csv -> read.table -> file
-In addition: Warning message:
-In file(file, ""rt"") :
-  cannot open file '/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/_tmp_copilot_reads_DELETE_ME/Baron_etal_1996_Baron_etal_1996_Table32_snapshot.csv': No such file or directory
-Execution halted","2026-09-27 13:22:29.96649","2026-09-27 13:22:30.330597",0.364106893539429
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/_tmp_copilot_reads_DELETE_ME/Baron_etal_1996_Baron_etal_1996_Table36.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
-Calls: read.csv -> read.table -> file
-In addition: Warning message:
-In file(file, ""rt"") :
-  cannot open file '/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/_tmp_copilot_reads_DELETE_ME/Baron_etal_1996_Baron_etal_1996_Table36_snapshot.csv': No such file or directory
-Execution halted","2026-09-27 13:22:30.334956","2026-09-27 13:22:30.71207",0.377114057540894
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/_tmp_copilot_reads_DELETE_ME/Baron_etal_1996_Baron_etal_1996_Table39.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
-Calls: read.csv -> read.table -> file
-In addition: Warning message:
-In file(file, ""rt"") :
-  cannot open file '/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/_tmp_copilot_reads_DELETE_ME/Baron_etal_1996_Baron_etal_1996_Table39_snapshot.csv': No such file or directory
-Execution halted","2026-09-27 13:22:30.728678","2026-09-27 13:22:31.061733",0.333055019378662
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/_tmp_copilot_reads_DELETE_ME/Baron_etal_1996_Baron_etal_1996_Table42.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
-Calls: read.csv -> read.table -> file
-In addition: Warning message:
-In file(file, ""rt"") :
-  cannot open file '/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/_tmp_copilot_reads_DELETE_ME/Baron_etal_1996_Baron_etal_1996_Table42_snapshot.csv': No such file or directory
-Execution halted","2026-09-27 13:22:31.067719","2026-09-27 13:22:31.445316",0.377597093582153
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/_tmp_copilot_reads_DELETE_ME/Baron_etal_1996_Baron_etal_1996_Table45.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
-Calls: read.csv -> read.table -> file
-In addition: Warning message:
-In file(file, ""rt"") :
-  cannot open file '/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/_tmp_copilot_reads_DELETE_ME/Baron_etal_1996_Baron_etal_1996_Table45_snapshot.csv': No such file or directory
-Execution halted","2026-09-27 13:22:31.461769","2026-09-27 13:22:32.013058",0.551288843154907
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/_tmp_copilot_reads_DELETE_ME/Baron_etal_1996_Baron_etal_1996_Table48.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
-Calls: read.csv -> read.table -> file
-In addition: Warning message:
-In file(file, ""rt"") :
-  cannot open file '/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/_tmp_copilot_reads_DELETE_ME/Baron_etal_1996_Baron_etal_1996_Table48_snapshot.csv': No such file or directory
-Execution halted","2026-09-27 13:22:32.021099","2026-09-27 13:22:32.422843",0.40174388885498
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/_tmp_copilot_reads_DELETE_ME/Baron_etal_1996_Baron_etal_1996_Table5.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
-Calls: read.csv -> read.table -> file
-In addition: Warning message:
-In file(file, ""rt"") :
-  cannot open file 'Baron_etal_1996_Baron_etal_1996_Table5_snapshot.csv': No such file or directory
-Execution halted","2026-09-27 13:22:32.435091","2026-09-27 13:22:32.820148",0.385056972503662
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/_tmp_copilot_reads_DELETE_ME/Baron_etal_1996_Baron_etal_1996_Table51.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
-Calls: read.csv -> read.table -> file
-In addition: Warning message:
-In file(file, ""rt"") :
-  cannot open file '/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/_tmp_copilot_reads_DELETE_ME/Baron_etal_1996_Baron_etal_1996_Table51_snapshot.csv': No such file or directory
-Execution halted","2026-09-27 13:22:32.824639","2026-09-27 13:22:33.227452",0.402812957763672
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/_tmp_copilot_reads_DELETE_ME/Baron_etal_1996_Baron_etal_1996_Table8.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
-Calls: read.csv -> read.table -> file
-In addition: Warning message:
-In file(file, ""rt"") :
-  cannot open file '/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/_tmp_copilot_reads_DELETE_ME/Baron_etal_1996_Baron_etal_1996_Table8_snapshot.csv': No such file or directory
-Execution halted","2026-09-27 13:22:33.262533","2026-09-27 13:22:33.594253",0.331720113754272
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/_tmp_copilot_reads_DELETE_ME/Heffner_etal_1969_Heffner_etal_1969_ResultsText.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.2.1     ✔ readr     2.2.0
-✔ forcats   1.0.1     ✔ stringr   1.6.0
-✔ ggplot2   4.0.3     ✔ tibble    3.3.1
-✔ lubridate 1.9.5     ✔ tidyr     1.3.2
-✔ purrr     1.2.2     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
-Error in read.table(file = file, header = header, sep = sep, quote = quote,  : 
-  more columns than column names
-Calls: read.csv -> read.table
-Execution halted","2026-09-27 13:22:33.600385","2026-09-27 13:22:34.582727",0.982342004776001
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/_tmp_copilot_reads_DELETE_ME/r_1790538518__keys_build_trait_authority.R","FAILED","Error: Cannot find __ShinyApp/app.R at /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/__ShinyApp/app.R
-Execution halted","2026-09-27 13:22:34.594221","2026-09-27 13:22:35.396247",0.80202579498291
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/_tmp_copilot_reads_DELETE_ME/r_1790538532__checks_check_trait_authority.R","FAILED","Error: FAIL: _keys/trait_authority.csv is missing. Run _keys/build_trait_authority.R.
-Execution halted","2026-09-27 13:22:35.401772","2026-09-27 13:22:35.82757",0.425797939300537
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/_tmp_copilot_reads_DELETE_ME/r_1790538545___ShinyApp_app.R","TIMEOUT","
-Attaching package: ‘bslib’
-
-The following object is masked from ‘package:utils’:
-
-    page
-
-
-Attaching package: ‘DT’
-
-The following objects are masked from ‘package:shiny’:
-
-    dataTableOutput, renderDataTable
-
-270 of 829 variables have no row in _keys/variable_definitions.csv (source: github).
-  ACC_fork_cell_fork_pct [nissl_count] (percent) | ACC_fusiform_L6_soma_volume [stereology] (um3) | ACC_pyramidal_L5_soma_volume [stereology] (um3) | ACC_subgenual_ven_ven_count [fractionator] (count) | ACC_subgenual_ven_ven_pct [fractionator] (percent) | ACC_ven_soma_volume [stereology] (um3) | ACC_ven_ven_count [fractionator] (count) | ACC_ven_ven_index [stereology] (ratio) ... and 262 more
-  Fix: Rscript _keys/build_variable_definitions.R && Rscript __ShinyApp/build_data.R
-
-Listening on http://127.0.0.1:4476
-
-
-Execution halted","2026-09-27 13:22:35.834192","2026-09-27 13:27:35.959658",300.125465869904
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/_tmp_copilot_reads_DELETE_ME/Ridgway__1990_Ridgway__1990_Table1.R","FAILED","Warning message:
-There were 8 warnings in `summarise()`.
-The first warning was:
-ℹ In argument: `mean_BdW = round(mean(body_weight_kg), 0)`.
-ℹ In group 1: `geographic_category = ""Category""`.
-Caused by warning in `mean.default()`:
-! argument is not numeric or logical: returning NA
-ℹ Run `dplyr::last_dplyr_warnings()` to see the 7 remaining warnings. 
-Error in chk$mean_BdW - chk$body_weight_kg : 
-  non-numeric argument to binary operator
-Calls: stopifnot
-Execution halted","2026-09-27 13:27:35.976572","2026-09-27 13:27:37.358627",1.38205504417419
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_item_name_resolution.R","FAILED","registry Item names: 563   |   TSVs on disk: 461   |   NA.tsv present: YES -- REMOVE IT
+Execution halted","2026-09-27 14:38:37.111265","2026-09-27 14:38:38.933486",1.82222104072571
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/volumes_compiled_select_DeCasien.R","FAILED","Error: 2121 species-region cell(s) still need review. The candidate audit and cell-status report were written; NO final long/wide table was produced in this run. Neither row counts nor a blanket latest-year rule were substituted for specimen evidence.
+Execution halted","2026-09-27 14:39:12.567703","2026-09-27 14:39:14.141709",1.57400608062744
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_item_name_resolution.R","FAILED","registry Item names: 563   |   TSVs on disk: 455   |   NA.tsv present: YES -- REMOVE IT
 
 __merging_behaviour/behaviour_compiled.R                     0 item name(s) referenced   OK
 __merging_body_ecology/body_ecology_compiled.R               0 item name(s) referenced   OK
@@ -205,22 +20,16 @@ __merging_sleep/sleep_compiled.R                             4 item name(s) refe
 __merging_volumes/volumes_compiled_select.R                 34 item name(s) referenced   OK
 __merging_volumes/volumes_compiled.R                        67 item name(s) referenced   OK
 
-orphaned TSVs (on disk, claimed by no registry row): 14
+orphaned TSVs (on disk, claimed by no registry row): 8
       10.1002%2Fajpa.1330380234_ResultsText.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
       10.1002%2Far.20829 _Table1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
       10.1007%2Fs00429-014-0792-y _Table1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
       10.1016%2FB978-012370880-9.00004-9_ResultsText.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
       10.1037%2F0735-7036.102.2.99_Table1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1073%2Fpnas.96.9.5268 _Table1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1073%2Fpnas.96.9.5268 _Table2.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
       10.1121%2F1.1903415_Table1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
       10.1121%2F1.3284546_ResultsText.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      JAudRes%3A8%3A27-38_Table2.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      JAudRes%3A9%3A1-7_ResultsText.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
       NA.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      zz_DELETE_ME_test_upload_simplename.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      zz_DELETE_ME_test_upload2.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
 rows with a citation but no Item name (need _tools/file_list.R): 0
 
 all referenced item names resolve to a TSV on disk.
-run _tools/restore_registry_rows.R (adding any new row to its ROWS list), then _tools/file_list.R.","2026-09-27 13:27:39.145248","2026-09-27 13:27:40.032764",0.887516021728516
+run _tools/restore_registry_rows.R (adding any new row to its ROWS list), then _tools/file_list.R.","2026-09-27 14:39:32.715407","2026-09-27 14:39:33.469093",0.753686189651489

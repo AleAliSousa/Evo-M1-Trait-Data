@@ -77,10 +77,14 @@ final.dataframe <- tibble(
 write.csv(final.dataframe, final_csv, row.names = FALSE, na = "")
 if (!is.na(tsv_dir) && dir.exists(tsv_dir)) {
   filecodes    <- read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
-  item_encoded <- filecodes$`Item encoded`[match(item_name, filecodes$`Item name`)]
+  ## Registry lookup name differs from this file's name (added 2026-09-27): the registry spells the author Møhl and keeps the printed "Table II".
+  ## Only the lookup uses it; the local files keep this folder's naming.
+  registry_item_name <- "Møhl__1968_TableII"
+  nfc <- function(x) if (requireNamespace("stringi", quietly = TRUE)) stringi::stri_trans_nfc(x) else x
+  item_encoded <- filecodes$`Item encoded`[match(nfc(registry_item_name), nfc(filecodes$`Item name`))]
   if (length(item_encoded) != 1L || is.na(item_encoded) || !nzchar(item_encoded) ||
       grepl("_$", item_encoded))
-    stop("No usable 'Item encoded' in __ReadMe.xlsx for ", item_name,
+    stop("No usable 'Item encoded' in __ReadMe.xlsx for ", registry_item_name,
          " -- refusing to write NA.tsv.", call. = FALSE)
   write.table(final.dataframe, file.path(tsv_dir, paste0(item_encoded, ".tsv")),
               sep = "\t", row.names = FALSE, na = "")

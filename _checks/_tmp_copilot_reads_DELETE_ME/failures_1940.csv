@@ -1,0 +1,447 @@
+"script","status","error","start_time","end_time","elapsed_seconds"
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Dalland__1965/Dalland__1965_ResultsText.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error: No usable 'Item encoded' in __ReadMe.xlsx for Dalland__1965_ResultsText -- refusing to write NA.tsv.
+Execution halted","2026-09-27 10:26:32.01308","2026-09-27 10:26:32.901992",0.888912200927734
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Gillette_etal_1973/Gillette_etal_1973_ResultsText.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error: No usable 'Item encoded' in __ReadMe.xlsx for Gillette_etal_1973_ResultsText -- refusing to write NA.tsv.
+Execution halted","2026-09-27 10:27:26.296946","2026-09-27 10:27:27.264059",0.967113018035889
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heffner_etal_1969/Heffner_etal_1969_ResultsText.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error in read.table(file = file, header = header, sep = sep, quote = quote,  : 
+  no lines available in input
+Calls: read.csv -> read.table
+Execution halted","2026-09-27 10:27:33.699517","2026-09-27 10:27:35.571891",1.87237405776978
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heffner_etal_1994_a/Heffner_etal_1994_a_Figure1.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error: No usable 'Item encoded' in __ReadMe.xlsx for Heffner_etal_1994_a_Figure1 -- refusing to write NA.tsv.
+Execution halted","2026-09-27 10:27:35.577948","2026-09-27 10:27:36.475072",0.89712381362915
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heffner_etal_1994_a/Heffner_etal_1994_a_Figure2.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error: No usable 'Item encoded' in __ReadMe.xlsx for Heffner_etal_1994_a_Figure2 -- refusing to write NA.tsv.
+Execution halted","2026-09-27 10:27:36.483096","2026-09-27 10:27:37.354584",0.871488094329834
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heffner_etal_1994_b/Heffner_etal_1994_b_Figure3.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error: No usable 'Item encoded' in __ReadMe.xlsx for Heffner_etal_1994_b_Figure3 -- refusing to write NA.tsv.
+Execution halted","2026-09-27 10:27:37.357831","2026-09-27 10:27:38.237218",0.879386901855469
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heffner_etal_1994_c/Heffner_etal_1994_c_Table1.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error: No usable 'Item encoded' in __ReadMe.xlsx for Heffner_etal_1994_c_Table1 -- refusing to write NA.tsv.
+Execution halted","2026-09-27 10:27:38.240447","2026-09-27 10:27:39.16569",0.925242900848389
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heffner_etal_2001/Heffner_etal_2001_ResultsText.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error: No usable 'Item encoded' in __ReadMe.xlsx for Heffner_etal_2001_ResultsText -- refusing to write NA.tsv.
+Execution halted","2026-09-27 10:27:39.174832","2026-09-27 10:27:40.102658",0.927825927734375
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heffner_etal_2006/Heffner_etal_2006_ResultsText.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error: No usable 'Item encoded' in __ReadMe.xlsx for Heffner_etal_2006_ResultsText -- refusing to write NA.tsv.
+Execution halted","2026-09-27 10:27:41.0162","2026-09-27 10:27:41.900211",0.884011030197144
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heffner_Heffner_1982/Heffner_Heffner_1982_ResultsText.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error: No usable 'Item encoded' in __ReadMe.xlsx for Heffner_Heffner_1982_ResultsText -- refusing to write NA.tsv.
+Execution halted","2026-09-27 10:27:49.239711","2026-09-27 10:27:50.166334",0.926622867584229
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heffner_Heffner_2003/Heffner_Heffner_2003_ResultsText.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error: No usable 'Item encoded' in __ReadMe.xlsx for Heffner_Heffner_2003_ResultsText -- refusing to write NA.tsv.
+Execution halted","2026-09-27 10:27:52.869863","2026-09-27 10:27:53.842521",0.972657918930054
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heffner_Heffner_2010_b/Heffner_Heffner_2010_b_Table1.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error: No usable 'Item encoded' in __ReadMe.xlsx for Heffner_Heffner_2010_b_Table1 -- refusing to write NA.tsv.
+Execution halted","2026-09-27 10:27:53.849495","2026-09-27 10:27:54.712619",0.863124132156372
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heffner_Heffner_2010/Heffner_Heffner_2010_ResultsText.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error: No usable 'Item encoded' in __ReadMe.xlsx for Heffner_Heffner_2010_ResultsText -- refusing to write NA.tsv.
+Execution halted","2026-09-27 10:27:54.715741","2026-09-27 10:27:55.697635",0.981894016265869
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jackson_etal_1997/Jackson_etal_1997_ResultsText.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error: No usable 'Item encoded' in __ReadMe.xlsx for Jackson_etal_1997_ResultsText -- refusing to write NA.tsv.
+Execution halted","2026-09-27 10:28:23.558029","2026-09-27 10:28:24.461035",0.903006076812744
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kastak_Schusterman_1999/Kastak_Schusterman_1999_ResultsText.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error: No usable 'Item encoded' in __ReadMe.xlsx for Kastak_Schusterman_1999_ResultsText -- refusing to write NA.tsv.
+Execution halted","2026-09-27 10:28:48.034658","2026-09-27 10:28:48.985142",0.950484037399292
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kastelein_etal_2010_b/Kastelein_etal_2010_b_TableI.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error: No usable 'Item encoded' in __ReadMe.xlsx for Kastelein_etal_2010_b_TableI -- refusing to write NA.tsv.
+Execution halted","2026-09-27 10:28:48.988838","2026-09-27 10:28:49.908905",0.920067071914673
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kelly_etal_1986/Kelly_etal_1986_ResultsText.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error: No usable 'Item encoded' in __ReadMe.xlsx for Kelly_etal_1986_ResultsText -- refusing to write NA.tsv.
+Execution halted","2026-09-27 10:29:00.411632","2026-09-27 10:29:01.272068",0.860435962677002
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Koay_etal_1998_b/Koay_etal_1998_b_Resultstext.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error: No usable 'Item encoded' in __ReadMe.xlsx for Koay_etal_1998_b_Resultstext -- refusing to write NA.tsv.
+Execution halted","2026-09-27 10:29:03.080667","2026-09-27 10:29:03.953961",0.873293876647949
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Koay_etal_2003/Koay_etal_2003_ResultsText.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error: No usable 'Item encoded' in __ReadMe.xlsx for Koay_etal_2003_ResultsText -- refusing to write NA.tsv.
+Execution halted","2026-09-27 10:29:05.819252","2026-09-27 10:29:06.670067",0.850815057754517
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Mohl__1968/Mohl__1968_Table2.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error: No usable 'Item encoded' in __ReadMe.xlsx for Mohl__1968_Table2 -- refusing to write NA.tsv.
+Execution halted","2026-09-27 10:29:31.181223","2026-09-27 10:29:32.084338",0.903115034103394
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Owren_etal_1988/Owren_etal_1988_Table1.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error: No usable 'Item encoded' in __ReadMe.xlsx for Owren_etal_1988_Table1 -- refusing to write NA.tsv.
+Execution halted","2026-09-27 10:29:42.494384","2026-09-27 10:29:43.449376",0.954992055892944
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Ravizza_etal_1969/Ravizza_etal_1969_ResultsText.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error: No usable 'Item encoded' in __ReadMe.xlsx for Ravizza_etal_1969_ResultsText -- refusing to write NA.tsv.
+Execution halted","2026-09-27 10:29:51.975511","2026-09-27 10:29:52.890907",0.915395975112915
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Ravizza_Masterton_1972/Ravizza_Masterton_1972_ResultsText.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error: No usable 'Item encoded' in __ReadMe.xlsx for Ravizza_Masterton_1972_ResultsText -- refusing to write NA.tsv.
+Execution halted","2026-09-27 10:29:52.894492","2026-09-27 10:29:54.112579",1.2180871963501
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Schusterman__1974/Schusterman__1974_Table1.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Warning message:
+There was 1 warning in `mutate()`.
+ℹ In argument: `hearing_loss_air_vs_water_dB = ifelse(raw_value == ""..."",
+  NA_real_, as.numeric(raw_value))`.
+Caused by warning in `ifelse()`:
+! NAs introduced by coercion 
+Error: No usable 'Item encoded' in __ReadMe.xlsx for Schusterman__1974_Table1 -- refusing to write NA.tsv.
+Execution halted","2026-09-27 10:30:02.887638","2026-09-27 10:30:03.835011",0.947372913360596
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Schusterman_Moore_1980/Schusterman_Moore_1980_ResultsText.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error: No usable 'Item encoded' in __ReadMe.xlsx for Schusterman_Moore_1980_ResultsText -- refusing to write NA.tsv.
+Execution halted","2026-09-27 10:30:04.722446","2026-09-27 10:30:05.599019",0.876573085784912
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_cortical_areas/cortical_areas_compiled.R","FAILED","Error in `filter()`:
+ℹ In argument: `Reference == nm`.
+Caused by error:
+! object 'Reference' not found
+Backtrace:
+     ▆
+  1. ├─dplyr::filter(terms, Reference == nm, Standardized_Term != ""Species"")
+  2. ├─dplyr:::filter.data.frame(terms, Reference == nm, Standardized_Term != ""Species"")
+  3. │ └─dplyr:::filter_impl(...)
+  4. │   └─dplyr:::filter_rows(...)
+  5. │     └─dplyr:::filter_eval(...)
+  6. │       ├─base::withCallingHandlers(...)
+  7. │       └─mask$eval_all_filter(dots_expanded, invert, env_filter)
+  8. │         └─dplyr (local) eval()
+  9. └─base::.handleSimpleError(...)
+ 10.   └─dplyr (local) h(simpleError(msg, call))
+ 11.     └─rlang::abort(message, class = error_class, parent = parent, call = error_call)
+Warning messages:
+1: Unknown or uninitialised column: `Original_Term`. 
+2: Unknown or uninitialised column: `Reference`. 
+3: Unknown or uninitialised column: `Standardized_Term`. 
+Execution halted","2026-09-27 10:31:54.604604","2026-09-27 10:31:57.571035",2.96643090248108
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_cortical_areas/standardized_term.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error: cannot open the connection
+In addition: Warning message:
+In open.connection(con, open_mode) :
+  cannot open file '/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_cortical_areas/standardized_term_cortical_areas.csv': Operation timed out
+Execution halted","2026-09-27 10:31:57.574849","2026-09-27 10:32:02.271832",4.69698309898376
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_keys/build_trait_authority.R","FAILED","270 of 829 variables have no row in _keys/variable_definitions.csv (source: local).
+  ACC_fork_cell_fork_pct [nissl_count] (percent) | ACC_fusiform_L6_soma_volume [stereology] (um3) | ACC_pyramidal_L5_soma_volume [stereology] (um3) | ACC_subgenual_ven_ven_count [fractionator] (count) | ACC_subgenual_ven_ven_pct [fractionator] (percent) | ACC_ven_soma_volume [stereology] (um3) | ACC_ven_ven_count [fractionator] (count) | ACC_ven_ven_index [stereology] (ratio) ... and 262 more
+  Fix: Rscript _keys/build_variable_definitions.R && Rscript __ShinyApp/build_data.R
+Error: Dataset(s) with no folder mapping: Cell type, size & morphology
+Add them to DS in this script -- an unmapped dataset would silently become its own bogus 'authority'.
+Execution halted","2026-09-27 10:32:32.812823","2026-09-27 10:32:35.21004",2.39721703529358
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_item_name_resolution.R","FAILED","registry Item names: 563   |   TSVs on disk: 453   |   NA.tsv present: YES -- REMOVE IT
+
+__merging_behaviour/behaviour_compiled.R                     0 item name(s) referenced   OK
+__merging_body_ecology/body_ecology_compiled.R               0 item name(s) referenced   OK
+__merging_brain_mass/brain_mass_compiled.R                   0 item name(s) referenced   OK
+__merging_cell_morphology/cell_morphology_compiled.R        18 item name(s) referenced   2 UNRESOLVED
+      Hakeem_etal_2009_Table1                        -> TSV not on disk  [10.1002%2Far.20829_Table1]
+      Raghanti_etal_2015_Table1                      -> TSV not on disk  [10.1007%2Fs00429-014-0792-y_Table1]
+__merging_cellcounts/cellcounts_compiled.R                  15 item name(s) referenced   OK
+__merging_cerebellar_folding/cerebellar_folding_compiled.R   0 item name(s) referenced   OK
+__merging_cortical_areas/cortical_areas_compiled.R          11 item name(s) referenced   OK
+__merging_cortical_layers/cortical_layers_compiled.R         1 item name(s) referenced   OK
+__merging_fossil_brain_glucose/fossil_brain_glucose_compiled.R   0 item name(s) referenced   OK
+__merging_gyrification/gyrification_compiled.R               3 item name(s) referenced   OK
+__merging_sensory/sensory_compiled.R                         5 item name(s) referenced   OK
+__merging_sleep/sleep_compiled.R                             4 item name(s) referenced   OK
+__merging_volumes/volumes_compiled_select.R                 34 item name(s) referenced   OK
+__merging_volumes/volumes_compiled.R                        67 item name(s) referenced   OK
+
+orphaned TSVs (on disk, claimed by no registry row): 22
+      10.1002%2Fajpa.1330380234_ResultsText.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1016%2F0378-5955(86)90025-0_ResultsText.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1016%2FB978-012370880-9.00004-9_ResultsText.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1016%2Fj.heares.2006.06.008_ResultsText.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1016%2FS0378-5955(01)00298-2_ResultsText.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1016%2FS0378-5955(03)00025-X_ResultsText.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1037%2F0735-7036.102.2.99_Table1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1037%2F0735-7036.111.1.100_ResultsText.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1037%2F0735-7036.96.6.926_ResultsText.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1073%2Fpnas.96.9.5268 _Table1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1073%2Fpnas.96.9.5268 _Table2.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1121%2F1.1903415_Table1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1121%2F1.2004876_ResultsText.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1121%2F1.3284546_ResultsText.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1126%2Fscience.150.3700.1185_ResultsText.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1139%2Fz99-151_ResultsText.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1152%2Fjn.1972.35.3.344_ResultsText.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      JAudRes%3A8%3A27-38_Table2.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      JAudRes%3A9%3A1-7_ResultsText.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      NA.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      zz_DELETE_ME_test_upload_simplename.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      zz_DELETE_ME_test_upload2.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+rows with a citation but no Item name (need _tools/file_list.R): 0
+
+2 unresolved reference(s).
+run _tools/restore_registry_rows.R (adding any new row to its ROWS list), then _tools/file_list.R.","2026-09-27 10:32:55.891384","2026-09-27 10:32:58.660628",2.76924419403076
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_trait_authority.R","FAILED","270 of 829 variables have no row in _keys/variable_definitions.csv (source: local).
+  ACC_fork_cell_fork_pct [nissl_count] (percent) | ACC_fusiform_L6_soma_volume [stereology] (um3) | ACC_pyramidal_L5_soma_volume [stereology] (um3) | ACC_subgenual_ven_ven_count [fractionator] (count) | ACC_subgenual_ven_ven_pct [fractionator] (percent) | ACC_ven_soma_volume [stereology] (um3) | ACC_ven_ven_count [fractionator] (count) | ACC_ven_ven_index [stereology] (ratio) ... and 262 more
+  Fix: Rscript _keys/build_variable_definitions.R && Rscript __ShinyApp/build_data.R
+trait_authority.csv: 564 rows | app labels: 829
+
+                    adjudicated adopted_from_variable_canonical 
+                             11                              19 
+           auto_single_producer 
+                            534 
+
+----------------------------------------------------------------------
+FAIL  COMPLETENESS: 275 label(s) the app serves have no authority row:
+    ACC_fork_cell_fork_pct [nissl_count] (percent)
+    ACC_fusiform_L6_soma_volume [stereology] (um3)
+    ACC_pyramidal_L5_soma_volume [stereology] (um3)
+    ACC_subgenual_ven_ven_count [fractionator] (count)
+    ACC_subgenual_ven_ven_pct [fractionator] (percent)
+    ACC_ven_soma_volume [stereology] (um3)
+    ACC_ven_ven_count [fractionator] (count)
+    ACC_ven_ven_index [stereology] (ratio)
+    ACC_ven_ven_pct [fractionator] (percent)
+    ACC_ven_ven_pct [nissl_count] (percent)
+    anterior_insula_fork_cell_fork_pct [nissl_count] (percent)
+    anterior_insula_ven_ven_count [fractionator] (count)
+    anterior_insula_ven_ven_pct [fractionator] (percent)
+    anterior_insula_ven_ven_pct [nissl_count] (percent)
+    CFF_behavioural.Hz
+    CFF_electrophysiological.Hz
+    cortex_corticospinal_field_corticospinal_soma_diameter [HRP] (um)
+    FI_all_neurons_reference_neuron_count [fractionator] (count)
+    FI_ven_ven_count [fractionator] (count)
+    FI_ven_ven_pct [fractionator] (percent)
+    ... and 255 more
+
+FAIL  COMPLETENESS: 10 registry row(s) name a label the app no longer serves:
+    ILA complexity
+    ILA linear density
+    ILA Pial Dorsal
+    ILA Pial Ventral
+    ILA primary processes
+    ILA Subpial Dorsal
+    ILA Subpial Ventral
+    ILA total length
+    ILA total processes
+    Visual_acuity.cdeg
+  (a vetoed or renamed label -- regenerate, or remove the row deliberately)
+
+Error: check_trait_authority.R: 2 guard(s) failed.
+Execution halted","2026-09-27 10:32:59.089855","2026-09-27 10:33:01.265201",2.17534613609314

@@ -61,8 +61,7 @@ DS <- c("Brain-structure volumes"="__merging_volumes","Cell counts"="__merging_c
         "Cortical areas & surfaces"="__merging_cortical_areas",
         "Cortical layer thickness"="__merging_cortical_layers",
         "Fossil brain glucose"="__merging_fossil_brain_glucose","Gyrification (GI)"="__merging_gyrification",
-        "Sensory performance"="__merging_sensory",
-        "Cell type, size & morphology"="__merging_cell_morphology")  # added 2026-09-27
+        "Sensory performance"="__merging_sensory")
 pairs <- unique(compiled[, c("Variable", "Dataset")])
 pairs$folder <- unname(DS[pairs$Dataset])
 producers <- split(pairs$folder, pairs$Variable)

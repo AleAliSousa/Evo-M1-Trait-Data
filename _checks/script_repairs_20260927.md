@@ -33,3 +33,22 @@ The fixes were checked against the data files, the registry workbook and the sou
 - **Delete from `__Public/comparative-data/`:** `NA.tsv`, `zz_DELETE_ME_test_upload_simplename.tsv`, `zz_DELETE_ME_test_upload2.tsv`.
 - **Delete** the temporary folder `_checks/_tmp_copilot_reads_DELETE_ME` and the file `_checks/script_failures_only_20260927_read_copy.csv`. They hold read-only copies I made for reading.
 - **Trait authority:** `trait_authority.csv` has a row for `Brain_Mass_from_volume_or_ecv (g)`, but the app no longer serves this label. Rerun `_keys/build_trait_authority.R` after the brain-mass merge succeeds. If the label still doesn't come back, remove the row deliberately.
+
+## Update 2026-09-27 evening: second sweep (30 failed)
+**26 paper-folder scripts failed with "No usable 'Item encoded' ... refusing to write NA.tsv".** The registry had rows for all 26 items, but their formula-derived Item names didn't match the script and file names. I fixed the registry's hand-entered columns so the names match:
+- **Column D "Results text" changed to "Results Text"** (13 rows, e.g. Dalland 1965, Gillette 1973, Heffner 1969/1982/2001/2006, Jackson 1997, Kastak 1999, Kelly 1986, Koay 2003, Ravizza 1969/1972, Schusterman & Moore 1980). This gives `_ResultsText`, which matches the folders. It follows the Heffner 2008 precedent ("Results Text").
+- **Column B sequence set** to match the `_a`/`_b`/`_c` folders: Heffner et al. 1994 a (Fig 1, 2), b (Fig 3), c (Table 1, Fig 7); Koay et al. 1998 b (Results text, Fig 8, Fig 9); Heffner & Heffner 2010 b (Table 1); Kastelein et al. 2010 b (Table I). Some of these folder READMEs say an earlier session "corrected H/J/K". Those are formula columns, so that correction never took effect; column B is the mechanism that does.
+- I read the workbook back and checked all 23 rows: each now gives the script's own name.
+
+**5 scripts now look up the registry name explicitly**, because their registry names differ for good reasons. Only the lookup changed; the files keep their folder naming:
+- `Schusterman__1974_Table1.R` looks up `Schusterman__1974_TableI` (the printed Roman numeral).
+- `Owren_etal_1988_Table1.R` looks up `Owren_etal_1988_Table1+Table3`.
+- `Mohl__1968_Table2.R` looks up `Møhl__1968_TableII`.
+- `Heffner_Heffner_2010_ResultsText.R` looks up `Heffner_etal_2010_Resultstext`. The first author is "Heffner, Jr., H.", and the extra comma makes the formula read the author list as "etal".
+- `Heffner_Heffner_2003_ResultsText.R` looks up `Heffner_Heffner_2008_Resultstext`. The PDF is the 2008 chapter; see its README.
+
+**Other failures**
+- `build_trait_authority.R` and `check_trait_authority.R`: added the app's new dataset "Cell type, size & morphology" (`__merging_cell_morphology`) to their dataset mapping.
+- `Heffner_etal_1969_ResultsText.R` ("no lines available"), `standardized_term.R` ("Operation timed out") and `cortical_areas_compiled.R` (term columns missing): the online files are intact (snapshot 906 bytes with 2 lines; the term file has the Original_Term/Reference/Standardized_Term header). **These are local OneDrive sync problems on the Mac**, not code bugs. Set the Evo-M1-Trait-Data folder to "Always keep on this device", let OneDrive finish syncing, then rerun.
+- `check_trait_authority.R` also listed 10 leftover rows (ILA …, `Visual_acuity.cdeg`). Rerun `build_trait_authority.R` to regenerate them.
+- `check_item_name_resolution.R`: its only remaining problems are the files you need to delete (`NA.tsv`, the two `zz_DELETE_ME` files, the two Nimchinsky files with a space).

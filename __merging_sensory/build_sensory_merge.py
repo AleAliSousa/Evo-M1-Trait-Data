@@ -40,14 +40,42 @@ SRC = {
     "Koay1998": os.path.join(BASE, "Koay_etal_1998", "Koay_etal_1998_Figure6.csv"),
     "H2020_text": os.path.join(BASE, "Heffner_etal_2020", "reference_tables",
                                "Heffner_etal_2020_cottontail_values_from_text.csv"),
+    "Haarlem2026": os.path.join(BASE, "Haarlem_etal_2026", "Haarlem_etal_2026_CFFdataset.csv"),
+    "basis_key": os.path.join(BASE, "_keys", "sensory_method_basis.csv"),
 }
 ITEM = {"HH1992a": "Heffner_Heffner_1992_a_TABLE1",
         "VK2014": "Veilleux_Kirk_2014_SupplementalTable1",
         "Koay1998": "Koay_etal_1998_Figure6",
-        "H2020": "Heffner_etal_2020_Figure3"}
+        "H2020": "Heffner_etal_2020_Figure3",
+        "Haarlem2026": "Haarlem_etal_2026_CFFdataset"}
+
+# ---- MEASUREMENT METHOD IS PART OF THE MEASURE NAME -------------------------------
+# A behavioural threshold and a number computed from retinal cell density are not the
+# same measurement, so they are emitted as PARALLEL measures and never averaged into
+# one species value. Which basis each source column carries is recorded, with the
+# source's own words, in _keys/sensory_method_basis.csv (built by
+# _keys/build_sensory_method_basis.py); this pipeline reads that key and aborts on a
+# harvested row whose basis is not on record, so the two cannot drift apart.
+#
+# Only visual acuity and CFF actually need splitting -- the other five measures each
+# carry one basis. Acuity splits three ways because Heffner & Heffner's footnotes do:
+# the column default is a ganglion-cell computation, one row is an average of an
+# anatomical estimate with an evoked potential, and five rows cite another study
+# without saying how it measured.
+BASIS_MEASURE = {
+    "acuity_anatomical":                          "Visual_acuity_anatomical.cdeg",
+    "acuity_mixed_anatomical_electrophysiological": "Visual_acuity_mixed_method.cdeg",
+    "acuity_method_unstated":                     "Visual_acuity_method_unstated.cdeg",
+    "cff_behavioural":                            "CFF_behavioural.Hz",
+    "cff_electrophysiological":                   "CFF_electrophysiological.Hz",
+}
 
 UNITS = {"Audible_freq_high_60dB.kHz": "kHz", "Audible_freq_low_60dB.kHz": "kHz",
-         "Sound_localization_threshold.deg": "deg", "Visual_acuity.cdeg": "c/deg",
+         "Sound_localization_threshold.deg": "deg",
+         "Visual_acuity_anatomical.cdeg": "c/deg",
+         "Visual_acuity_mixed_method.cdeg": "c/deg",
+         "Visual_acuity_method_unstated.cdeg": "c/deg",
+         "CFF_behavioural.Hz": "Hz", "CFF_electrophysiological.Hz": "Hz",
          "Field_of_best_vision.deg": "deg", "Binocular_field.deg": "deg"}
 
 # printed / older names -> the name used in the merge (from each source's own crosswalk)
@@ -157,16 +185,51 @@ def num(x):
 def main():
     rows = []   # study-level rows, before dedupe
 
+    # measurement-method basis, from the authored key. `col_basis` is the column-level
+    # basis; `row_basis` holds the per-row rules for the columns that carry more than
+    # one (keyed by the selector value the source prints).
+    basis_key = read_csv(SRC["basis_key"])
+    col_basis, row_basis, basis_group = {}, {}, {}
+    for b in basis_key:
+        k = (b["item"], b["column"])
+        basis_group[b["method_basis"]] = b["poolable_group"]
+        if b["row_rule"] == "TRUE" and b["selector"]:
+            for v in b["selector_value"].split("|"):
+                row_basis[(k[0], k[1], v)] = (b["method_basis"], b["poolable_group"])
+        elif b["row_rule"] == "FALSE":
+            col_basis[k] = (b["method_basis"], b["poolable_group"])
+
+    def basis_of(item, column, selector_value=None):
+        """Resolve a harvested value's method basis, or abort. Never guess a basis:
+        an unrecorded (item, column) is a key that has not caught up with the data."""
+        if selector_value is not None:
+            hit = row_basis.get((item, column, selector_value))
+            if hit:
+                return hit
+        hit = col_basis.get((item, column))
+        if hit:
+            return hit
+        raise SystemExit(
+            f"no measurement-method basis on record for {item} / {column}"
+            + (f" (selector value {selector_value!r})" if selector_value is not None else "")
+            + ". Add it to _keys/build_sensory_method_basis.py and re-run that builder.")
+
     def add(species, measure, value, item, study_keys, origin, role, note="", medium="air",
-            population=""):
+            population="", basis=None, group=None, column=None, selector=None):
         v = num(value) if not isinstance(value, float) else value
         if v is None or not species:
             return
+        if basis is None:
+            basis, group = basis_of(item, column, selector)
+        # a split measure takes its name from the basis, so two methods can never be
+        # averaged into one species value downstream
+        measure = BASIS_MEASURE.get(group, measure)
         rows.append({"Species": canon_species(species), "Measure": measure, "Value": v,
                      "Medium": medium, "Source_item": item,
                      "Study_keys_list": list(study_keys),
                      "Study_key": "+".join(study_keys) if study_keys else "SELF",
-                     "population": population,
+                     "population": population, "method_basis": basis,
+                     "poolable_group": group,
                      "value_origin": origin, "Data_role": role, "note": note})
 
     # ---- 1. Heffner & Heffner 1992a Table 1 --------------------------------------------
@@ -182,20 +245,27 @@ def main():
             continue
         # own measurements (primary)
         add(sp, "Field_of_best_vision.deg", r["field_of_best_vision_deg"], ITEM["HH1992a"],
-            [], "published", "primary", population=pop)
+            [], "published", "primary", population=pop, column="field_of_best_vision_deg")
         add(sp, "Binocular_field.deg", r["binocular_field_deg"], ITEM["HH1992a"],
-            [], "published", "primary", population=pop)
+            [], "published", "primary", population=pop, column="binocular_field_deg")
         # localization thresholds: all compiled, each with its printed footnote source
         add(sp, "Sound_localization_threshold.deg", r["sound_localization_threshold_deg"],
             ITEM["HH1992a"], hh_keys.get(r["threshold_footnote"], []),
-            "published", "secondary", population=pop)
-        # acuity: unfootnoted = this paper's own ganglion-cell estimate; footnoted = compiled
-        if r["acuity_footnote"].strip():
+            "published", "secondary", population=pop,
+            column="sound_localization_threshold_deg")
+        # acuity: unfootnoted = this paper's own ganglion-cell estimate; footnoted = compiled.
+        # The printed footnote also decides the METHOD BASIS, so it is passed as the
+        # selector: footnote 29 is another ganglion-cell count (pools with the default),
+        # 26 is an anatomical/evoked-potential average, and 24/25/27/28/30 state no method.
+        fn = r["acuity_footnote"].strip()
+        if fn:
             add(sp, "Visual_acuity.cdeg", r["visual_acuity_cdeg"], ITEM["HH1992a"],
-                hh_keys.get(r["acuity_footnote"], []), "published", "secondary", population=pop)
+                hh_keys.get(fn, []), "published", "secondary", population=pop,
+                column="visual_acuity_cdeg", selector=fn)
         else:
             add(sp, "Visual_acuity.cdeg", r["visual_acuity_cdeg"], ITEM["HH1992a"],
-                [], "published", "primary", population=pop)
+                [], "published", "primary", population=pop,
+                column="visual_acuity_cdeg", selector="")
 
     # ---- 2. Veilleux & Kirk 2014 Supplemental Table 1 ----------------------------------
     vk_src = {s["source_number"]: s["citation"] for s in read_csv(SRC["VK2014_sources"])}
@@ -204,9 +274,10 @@ def main():
     for r in read_csv(SRC["VK2014"]):
         sp = vk_xw.get(r["Species_VK2014"].lower(), r["Species_VK2014"])
         src = r["src_VA"]
+        cone = r["va_cone_density_footnote2"].strip() or "FALSE"
         if r["va_this_study"] == "TRUE":
             add(sp, "Visual_acuity.cdeg", r["visual_acuity_cdeg"], ITEM["VK2014"],
-                [], "published", "primary")
+                [], "published", "primary", column="visual_acuity_cdeg", selector=cone)
         else:
             nums = re.findall(r"\d+", src)
             keys = []
@@ -216,7 +287,7 @@ def main():
                     k = ref_key(c)
                     if k and k not in keys: keys.append(k)
             add(sp, "Visual_acuity.cdeg", r["visual_acuity_cdeg"], ITEM["VK2014"],
-                keys, "published", "secondary")
+                keys, "published", "secondary", column="visual_acuity_cdeg", selector=cone)
 
     # ---- 3. Koay et al 1998 Figure 6 ----------------------------------------------------
     for r in read_csv(SRC["Koay1998"]):
@@ -226,7 +297,8 @@ def main():
         add(sp, "Audible_freq_high_60dB.kHz", r["high_freq_hearing_limit_60dB_kHz"],
             ITEM["Koay1998"], [] if primary else [k for k in keys if k != "SELF"],
             "digitised_from_figure", "primary" if primary else "secondary",
-            medium=r["medium"] or "air", population=r["common_name_Koay1998"])
+            medium=r["medium"] or "air", population=r["common_name_Koay1998"],
+            column="high_freq_hearing_limit_60dB_kHz")
 
     # ---- 4. Heffner et al 2020 -- Cottontail values FROM TEXT ---------------------------
     tmap = {"audible_freq_high_60dBSPL": "Audible_freq_high_60dB.kHz",
@@ -237,7 +309,69 @@ def main():
         if not meas:
             continue                              # hearing_range is derived -- recomputed below
         add("Sylvilagus floridanus", meas, t["value"], ITEM["H2020"], [], "published", "primary",
-            "value stated in the paper's text, not read off Figure 3")
+            "value stated in the paper's text, not read off Figure 3",
+            basis="behavioural_audiogram" if meas.startswith("Audible") else "behavioural_threshold",
+            group="audiogram_behavioural" if meas.startswith("Audible")
+                  else "localization_behavioural")
+
+    # ---- 4b. van Haarlem et al 2026 -- critical flicker fusion --------------------------
+    # A SECONDARY compilation: 280 published CFF measurements, each row naming the primary
+    # study it came from in `primary_reference`. Handled like Kaufman/Karbowski in the
+    # cerebral-metabolic-rate merge -- pulled down to primary-study level so that a value
+    # this compilation shares with a future directly-harvested primary dedupes rather than
+    # being averaged twice. No CFF primaries are built in the repo yet, so every value here
+    # is currently compilation-sourced with its primary named; per the folder README the
+    # high-value primaries should be built from `primary_reference` and preferred, at which
+    # point this item becomes the comparison fixture.
+    #
+    # The `method` column splits the measure in two: a behavioural CFF is a psychophysical
+    # threshold, a flicker electroretinogram is an evoked electrical response, and the two
+    # are not averaged. MAMMAL GATE: the source spans 16 classes (insects, fish and
+    # crustaceans outnumber mammals), and this repo is mammal-scoped, so non-mammals stay
+    # in the source table -- they are not harvested here.
+    for r in read_csv(SRC["Haarlem2026"]):
+        if r["class"].strip().lower() != "mammalia":
+            continue
+        meth = r["method"].strip()
+        prim = ref_key(r["primary_reference"])
+        add(r["Species"], "CFF.Hz", r["cff_hz"], ITEM["Haarlem2026"],
+            [prim] if prim else [], "published", "secondary",
+            population=r["common_name"], column="cff_hz", selector=meth)
+
+    # ---- 4c. resolve an unstated method from another source that states it --------------
+    # A primary study's method does not change depending on which compilation cites it.
+    # Heffner & Heffner's footnoted acuities name the study they took each value from but
+    # not how it measured, while Veilleux & Kirk's printed cone-density footnote asserts a
+    # basis for every acuity it carries, including the ones it compiled. Where the two
+    # report the SAME primary study for the same species, the stated basis resolves the
+    # unstated one -- otherwise the same measurement sits under two different measures and
+    # escapes the dedupe below, which is how it behaved before this pass existed
+    # (Felis catus via jacobson1976, Meriones unguiculatus via baker1983).
+    #
+    # Recorded, not silent: every upgrade goes to sensory_method_resolution_report.csv.
+    stated = defaultdict(set)     # (species, measure family) -> stated (basis, group)
+    for r in rows:
+        if r["method_basis"] != "unstated_external_source":
+            for k in r["Study_keys_list"]:
+                stated[(r["Species"], r["Measure"].split("_")[0], key_of(k))].add(
+                    (r["method_basis"], r["poolable_group"]))
+    resolved = []
+    for r in rows:
+        if r["method_basis"] != "unstated_external_source":
+            continue
+        cands = set()
+        for k in r["Study_keys_list"]:
+            cands |= stated.get((r["Species"], r["Measure"].split("_")[0], key_of(k)), set())
+        if len(cands) == 1:                       # unambiguous: adopt it
+            basis, group = cands.pop()
+            resolved.append(dict(Species=r["Species"], Measure_before=r["Measure"],
+                                 Source_item=r["Source_item"], Study_key=r["Study_key"],
+                                 basis_before=r["method_basis"], basis_after=basis,
+                                 Measure_after=BASIS_MEASURE.get(group, r["Measure"]),
+                                 basis_stated_by="another source reporting the same "
+                                                 "primary study"))
+            r["method_basis"], r["poolable_group"] = basis, group
+            r["Measure"] = BASIS_MEASURE.get(group, r["Measure"])
 
     # ---- 5. dedupe studies reported by more than one source ----------------------------
     for r in rows:
@@ -267,7 +401,10 @@ def main():
                         clash = q; break
             if clash is not None:
                 dropped.append({**r, "kept_from": clash["Source_item"],
-                                "kept_value": clash["Value"],
+                                # match R's write.csv, which prints an integral double
+                                # without a trailing ".0"
+                                "kept_value": int(clash["Value"])
+                                if float(clash["Value"]).is_integer() else clash["Value"],
                                 "shared_study": next(key_of(a) for a in mine
                                                      for b in clash["Study_keys_list"]
                                                      if compatible(a, b)),
@@ -331,6 +468,8 @@ def main():
                          else ("secondary" if all(r["Data_role"] == "secondary" for r in rs) else "mixed"),
             "value_origin": "; ".join(sorted({r["value_origin"] for r in rs})),
             "value_range": "" if len(set(vals)) == 1 else "%g-%g" % (min(vals), max(vals)),
+            "method_basis": "; ".join(sorted({r["method_basis"] for r in rs})),
+            "poolable_group": "; ".join(sorted({r["poolable_group"] for r in rs})),
         })
 
     # derived measure: hearing range in octaves, recomputed from the merged limits
@@ -345,7 +484,10 @@ def main():
                 "Species": sp, "Measure": "Hearing_range.octaves", "Units": "octaves", "Medium": "air",
                 "Value": round(math.log2(hi / lo), 6), "n_studies": 0,
                 "Sources": "DERIVED from the merged limits", "Study_keys": "",
-                "Data_role": "derived", "value_origin": "recomputed", "value_range": ""})
+                "Data_role": "derived", "value_origin": "recomputed", "value_range": "",
+                # recomputed from two behavioural audiogram limits, so it inherits their basis
+                "method_basis": "behavioural_audiogram",
+                "poolable_group": "audiogram_behavioural"})
 
     long_rows.sort(key=lambda r: (r["Species"], r["Measure"], r["Medium"]))
 
@@ -355,10 +497,15 @@ def main():
             wr = csv.DictWriter(f, fieldnames=fieldnames, extrasaction="ignore")
             wr.writeheader(); wr.writerows(data)
 
-    w("sensory_long.csv", ["Species", "Measure", "Units", "Value", "Medium", "n_studies",
-                           "Sources", "Study_keys", "Data_role", "value_origin", "value_range"], long_rows)
-    w("sensory_unfiltered.csv", ["Species", "Measure", "Value", "Medium", "population",
-                                 "Source_item", "Study_key", "value_origin", "Data_role", "note"], rows)
+    w("sensory_long.csv", ["Species", "Measure", "Units", "Value", "Medium", "method_basis",
+                           "poolable_group", "n_studies", "Sources", "Study_keys", "Data_role",
+                           "value_origin", "value_range"], long_rows)
+    w("sensory_unfiltered.csv", ["Species", "Measure", "Value", "Medium", "method_basis",
+                                 "poolable_group", "population", "Source_item", "Study_key",
+                                 "value_origin", "Data_role", "note"], rows)
+    w("sensory_method_resolution_report.csv",
+      ["Species", "Measure_before", "Measure_after", "Source_item", "Study_key",
+       "basis_before", "basis_after", "basis_stated_by"], resolved)
     w("sensory_superseded_report.csv", ["Species", "Measure", "Value", "Medium", "Source_item",
                                         "Study_key", "superseded_by_year", "kept_value"], superseded)
     w("sensory_dedupe_report.csv", ["Species", "Measure", "Value", "Medium", "Source_item",

@@ -105,7 +105,7 @@ derive_formula_values <- function(data_row) {
     other_author <- if (comma_count > 2L) {
       "etal"
     } else {
-      trimws(text_before(text_after(authors, "& "), ","))
+      gsub("-", "", trimws(text_before(text_after(authors, "& "), ",")), fixed = TRUE)
     }
   }
   publication_name <- paste0(
@@ -174,7 +174,13 @@ formula_family <- function(r) c(
     '_xlpm.hasEllipsis,ISNUMBER(SEARCH(_xlfn.UNICHAR(8230),_xlpm.authors)),\n',
   # '_xlpm.hasEllipsis,ISNUMBER(SEARCH("…",_xlpm.authors)),\n',
     '_xlpm.commasBeforeAmp,IF(_xlpm.hasAmp,LEN(_xlfn.TEXTBEFORE(_xlpm.authors,"&"))-LEN(SUBSTITUTE(_xlfn.TEXTBEFORE(_xlpm.authors,"&"),",","")),0),\n',
-    'IF(_xlpm.hasEllipsis,"etal",IF(NOT(_xlpm.hasAmp),"",IF(_xlpm.commasBeforeAmp>2,"etal",TRIM(_xlfn.TEXTBEFORE(_xlfn.TEXTAFTER(_xlpm.authors,"& "),",")))))\n',
+    ## 2026-09-27: the second-author name now has hyphens stripped, like column E
+    ## already did for the first author (Herculano-Houzel -> HerculanoHouzel,
+    ## Penaherrera-Aguirre -> PenaherreraAguirre), so Item names match the renamed
+    ## folders Mota_HerculanoHouzel_2015 / Schniter_PenaherreraAguirre_2026. The
+    ## workbook's F cells were updated to this form in Excel; before this change the
+    ## audit rejected every one of them as "non-canonical".
+    'IF(_xlpm.hasEllipsis,"etal",IF(NOT(_xlpm.hasAmp),"",IF(_xlpm.commasBeforeAmp>2,"etal",SUBSTITUTE(TRIM(_xlfn.TEXTBEFORE(_xlfn.TEXTAFTER(_xlpm.authors,"& "),",")),"-",""))))\n',
     ")"
   ),
   sprintf('_xlfn.TEXTBEFORE(_xlfn.TEXTAFTER(A%d, "("), ")")', r),                       # G: year
@@ -260,10 +266,22 @@ for (r in populated_rows) {
     ")"
   )
   
+  ## The ellipsis-aware family as it stood until 2026-09-27 (no hyphen strip).
+  prev_f <- paste0(
+    "_xlfn.LET(\n",
+    sprintf('_xlpm.authors,_xlfn.TEXTBEFORE(A%d," ("&G%d&")"),\n', r, r),
+    '_xlpm.hasAmp,ISNUMBER(SEARCH("&",_xlpm.authors)),\n',
+    '_xlpm.hasEllipsis,ISNUMBER(SEARCH(_xlfn.UNICHAR(8230),_xlpm.authors)),\n',
+    '_xlpm.commasBeforeAmp,IF(_xlpm.hasAmp,LEN(_xlfn.TEXTBEFORE(_xlpm.authors,"&"))-LEN(SUBSTITUTE(_xlfn.TEXTBEFORE(_xlpm.authors,"&"),",","")),0),\n',
+    'IF(_xlpm.hasEllipsis,"etal",IF(NOT(_xlpm.hasAmp),"",IF(_xlpm.commasBeforeAmp>2,"etal",TRIM(_xlfn.TEXTBEFORE(_xlfn.TEXTAFTER(_xlpm.authors,"& "),",")))))\n',
+    ")"
+  )
+
   new_f <- formula_family(r)[2]
   
-  # Replace only formulas that exactly match the known historical family.
-  if (identical(normalize_formula(actual), normalize_formula(old_f))) {
+  # Replace only formulas that exactly match a known historical family.
+  if (identical(normalize_formula(actual), normalize_formula(old_f)) ||
+      identical(normalize_formula(actual), normalize_formula(prev_f))) {
     writeFormula(
       wb,
       sheet = "Sheet1",
@@ -282,7 +300,7 @@ sheet_data <- wb$worksheets[[sheet1_index]]$sheet_data
 if (length(migrated_f)) {
   message(
     "Migrated ", length(migrated_f),
-    " historical column-F formula(s) to the Unicode-ellipsis-aware family."
+    " historical column-F formula(s) to the current (ellipsis-aware, hyphen-stripping) family."
   )
 }
 # Formula audit

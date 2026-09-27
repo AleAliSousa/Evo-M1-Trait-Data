@@ -2,9 +2,56 @@
 
 Pipeline for compiling the comparative **sensory performance** dataset — the psychophysical
 counterpart of `__merging_volumes/` (structure) and `__merging_cellcounts/` (cells), built on
-the **compilation-aware** pattern of `__merging_cerebral_metabolic_rate/`. It opens a measure
-class the repo did not previously have: *performance / psychophysics*, as distinct from
-volumetrics and cell counts.
+the **compilation-aware** pattern of `__merging_cerebral_metabolic_rate/`.
+
+## Measurement method is part of the measure name
+
+The merge originally filed all seven measures under one measure class, `psychophysics`. By the
+sources' own definitions that was wrong for most of them: visual acuity is "Calculated based on
+peak density of ganglion cells except as otherwise noted", the field of best vision comes "from
+retinal ganglion cell isodensity contours", and the binocular field is the "Width of the angle
+of overlap of the left and right retinal fields" — three retinal or optical quantities, not
+behavioural thresholds. Only the audiogram limits and the sound-localization threshold are
+psychophysics, each with a stated criterion (60 dB SPL; 75% correct / 50% detection).
+
+A behavioural threshold and a number computed from cell density are not the same measurement,
+so **values are pooled only within a method**, exactly as `__merging_brain_mass/` pools only
+within a measurement basis. The basis of every source column is recorded — with the source's
+own words — in `_keys/sensory_method_basis.csv`, built by `_keys/build_sensory_method_basis.py`.
+This pipeline reads that key and **aborts** on a harvested row whose basis is not on record.
+
+Two measures needed splitting; the other five carry one basis each:
+
+| Measure | Species | Method basis |
+|---|---|---|
+| `Visual_acuity_anatomical.cdeg` | 95 | computed from peak retinal sampling density — ganglion cells by default, cone density where retinal summation is absent (Veilleux & Kirk's printed footnote 2) |
+| `Visual_acuity_mixed_method.cdeg` | 1 | Heffner & Heffner footnote 26: "Average of ganglion cell density and evoked potential measure" — the components are not recoverable |
+| `Visual_acuity_method_unstated.cdeg` | 3 | footnotes 24, 25, 27, 28, 30 name the study the value came from without saying how it measured |
+| `CFF_behavioural.Hz` | 10 | behavioural flicker-fusion threshold |
+| `CFF_electrophysiological.Hz` | 15 | flicker electroretinogram — an evoked response, not a behavioural report |
+
+`Visual_acuity.cdeg` no longer exists. The three acuity variables are never averaged together.
+
+### Resolving an unstated method
+
+A primary study's method does not change depending on which compilation cites it. Where Heffner
+& Heffner cite a study without stating its method and Veilleux & Kirk report the **same primary
+study** with a stated basis, the stated basis resolves the unstated one — otherwise one
+measurement sits under two different measures and escapes the dedupe. Two rows are resolved this
+way (*Felis catus* via `jacobson1976`, *Meriones unguiculatus* via `baker1983`), and both are
+listed in `sensory_method_resolution_report.csv` rather than being changed silently. Without
+that pass the dedupe found 0 shared studies instead of 2.
+
+Method basis is **not** `value_origin`. That column records how the number was read off the page
+(published / digitised from a figure / recomputed), which is a different question.
+
+## Why there is no psychophysics merge
+
+Because the method varies *inside* a variable, a folder cannot hold the distinction: van
+Haarlem's CFF is 221 electrophysiological rows and 59 behavioural ones, and Heffner & Heffner's
+acuity column is anatomical by default with footnoted exceptions. Splitting by folder would put
+half of one variable in each. Method is a per-row property, so it lives in a key and in the
+measure name.
 
 **Scope: percepts only.** What an animal can detect or resolve. It deliberately excludes the
 morphological covariates that travel with these data (functional interaural distance, eye
@@ -41,6 +88,7 @@ is **in-air only**; underwater values live in `sensory_long.csv`.
 | `Veilleux_Kirk_2014_SupplementalTable1` | **both** | *Primary:* `this study` acuities. *Compiled:* bracket-sourced acuities resolving through its 122-entry data-source list. |
 | `Koay_etal_1998_Figure6` | **both** | *Primary:* the *Rousettus aegyptiacus* audiogram ("present report"). *Compiled:* 66 further high-frequency limits, each with a caption audiogram source. All figure-digitised. |
 | `Heffner_etal_2020_Figure3` | **primary** | *Cottontail rabbit only*, from the paper's **text** (300 Hz, 56 kHz, MAA 27.6°). |
+| `Haarlem_etal_2026_CFFdataset` | **secondary** | Critical flicker fusion. 38 mammal rows / 21 species out of its 280 rows / 237 species; each row names its primary study in `primary_reference`, and its `method` column splits the measure into behavioural and electrophysiological. |
 
 ### What is deliberately excluded
 
@@ -48,8 +96,12 @@ is **in-air only**; underwater values live in `sensory_long.csv`.
   reference**, so its ~79 values have no traceable primary and fail the repo's "no value
   without a traceable source" rule. Only its text values enter. (Contrast Koay Fig. 6, whose
   caption sources every point — which is exactly why Koay's points *can* be used.)
-- **Non-mammals.** A class gate is part of the design; all four current sources are
-  mammal-only, so it does not bite yet. Keep it when adding sources.
+- **Non-mammals.** A class gate is part of the design, and with van Haarlem it now bites hard:
+  that source spans 16 classes and mammals are only 38 of its 280 rows (insects 58, fish 50,
+  crustaceans 48 all outnumber them). The non-mammal rows stay in the source table. Widening
+  this merge beyond Mammalia is a scope decision for the whole repo, not for one source.
+- **van Haarlem's own ecology covariates** (habitat, foraging light level, mode of life) and its
+  body mass, which reaches `__merging_body_ecology/` instead — 279 rows of `Body_Mass (g)`.
 - **`Macaca sp.`** — HH1992a's macaque row is not resolvable to a species (its cited
   primaries mix macaques), so it is dropped rather than assigned.
 
@@ -85,7 +137,8 @@ where they are auditable, rather than being regex-guessed at merge time.
 
 ## Current state (first run, 4 sources)
 
-**130 species, 217 merged rows** from 230 study-level rows: 97 visual acuity, 65 high-frequency
+**135 species, 244 merged rows** from 268 study-level rows: 99 visual acuity (95 anatomical,
+3 method-unstated, 1 mixed-method), 25 CFF (15 electrophysiological, 10 behavioural), 65 high-frequency
 limit, 23 localization threshold, 18 binocular field, 12 field of best vision, 1 low-frequency
 limit, 1 derived hearing range. 50 rows are wholly primary, 162 wholly secondary, 4 mixed.
 2 shared studies deduped, 1 superseded within the Heffner lab.
@@ -123,12 +176,14 @@ limits (and of the 56 kHz reading over the abstract's erroneous 32 kHz).
 | file | what it is |
 |---|---|
 | `build_sensory_merge.py` | the script that generated the shipped CSVs (no R in the build environment) |
-| `sensory_compiled.R` | canonical house-style R equivalent of the same pipeline |
+| `sensory_compiled.R` | canonical house-style R equivalent. Verified cell-for-cell identical to the `.py` across all four tables. Holding that required reading every source with `colClasses = "character"` (Python's csv reader yields strings, while `read.csv` typed the acuity footnote numerically, so a blank became `NA` — and `nzchar(NA)` is `TRUE`, which sent every unfootnoted row down the footnoted branch), `sort(..., method = "radix")` for byte order, computing `value_range` before `summarise` overwrites `Value`, and a `split_refs()` for source cells naming several studies. |
 | `standardized_term.R` + `standardized_term_by_reference/` | per-source term files → `standardized_term_sensory.csv` |
 | `sensory_long.csv` | merged values, one row per Species × Measure × Medium |
 | `sensory_wide.csv` | in-air species × measure matrix |
 | `sensory_unfiltered.csv` | every study-level row before dedupe/supersede, with population + study key |
 | `sensory_dedupe_report.csv` | shared primary studies removed |
+| `sensory_method_resolution_report.csv` | rows whose unstated method was resolved from another source reporting the same primary study |
+| `_keys/sensory_method_basis.csv` | **the method basis of every source column**, with the source's own words; built by `_keys/build_sensory_method_basis.py`, which fails if a quoted statement is not verbatim in the file it is credited to |
 | `sensory_superseded_report.csv` | within-lab values superseded by a later measurement |
 | `comparison_vs_SensoryData_compiled.csv` | audit vs the Bath compilation check fixture |
 

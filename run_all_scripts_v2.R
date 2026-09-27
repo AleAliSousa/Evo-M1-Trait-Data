@@ -83,6 +83,10 @@ SKIP_PATTERNS <- c(
   ## app's tree already exists (_keys/mammal_tree.nwk, built by __merging_trees/), so this runs
   ## only when someone is deliberately rebuilding it. See __ShinyApp/PHYLO_SETUP.md.
   "(^|/)combine_trees\\.R$"     = "optional tool; needs hand-supplied published source trees",
+  ## Web-lookup tool (NCBI/ITIS/GBIF, ~215 species): cannot finish inside TIMEOUT_SEC and
+  ## rewrites _keys/species_reference.csv from live services. Run it deliberately.
+  ## (Added 2026-09-27 after the 2026-09-26 sweep timed out at 185/215.)
+  "^_keys/resolve_taxonomy\\.R$" = "on-demand web lookup (NCBI/ITIS/GBIF); exceeds the sweep timeout",
   ## Curator action tool, not a build. When a proposal exists, running this script without
   ## --dry-run applies accepted canonical-variable decisions and removes them from the proposal;
   ## when no proposal exists it necessarily stops. Either outcome is inappropriate in a sweep.
@@ -117,6 +121,30 @@ r_scripts <- list.files(root_dir, pattern = "\\.R$", recursive = TRUE, full.name
 ## plain substring is safer here than regex-escaping the root path.
 
 rel_paths <- substring(r_scripts, nchar(root_dir) + 2L)
+
+## ---- run order: producers before consumers ----------------------------------
+## list.files() order ran the merges (__merging_*) and checks (_checks/) BEFORE the
+## registry tools (_tools/) and the per-paper builds (paper folders sort last), so
+## each sweep checked the previous sweep's outputs -- e.g. 2026-09-26: the Jacob 2021
+## scripts and check_item_name_resolution.R failed on registry rows that
+## restore_registry_rows.R restored later in the same sweep, and brain_mass_compiled.R
+## read a source_manifest.csv that build_data.R only refreshed afterwards. Order is
+## stable within each stage (list.files order kept).
+##   1 registry tools   2 paper builds   3 trait tables   4 app data export
+##   5 merges           6 keys + other tools              7 checks (last)
+stage_of <- function(p) {
+  if (p %in% c("_tools/restore_registry_rows.R", "_tools/file_list.R"))
+    return(match(p, c("_tools/restore_registry_rows.R", "_tools/file_list.R")) / 10 + 1)
+  if (!startsWith(p, "_")) return(2)
+  if (startsWith(p, "____EvoM1_TraitTable/")) return(3)
+  if (p == "__ShinyApp/build_data.R") return(4)
+  if (startsWith(p, "__merging_")) return(5)
+  if (startsWith(p, "_checks/")) return(7)
+  6
+}
+.ord <- order(vapply(rel_paths, stage_of, numeric(1)), seq_along(rel_paths))
+r_scripts <- r_scripts[.ord]
+rel_paths <- rel_paths[.ord]
 
 skip_reason <- rep(NA_character_, length(r_scripts))
 for (pat in names(SKIP_PATTERNS)) {

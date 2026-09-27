@@ -51,8 +51,20 @@ out_path      <- file.path(folder, paste0(item_name, ".csv"))
 ## header row, one row per animal (category printed only on the first row of
 ## each group, as in the source), a Mean row and an S.D. row per group, a
 ## blank line, then the lettered footnote. Read only the data block.
-raw <- read_csv(snapshot_path, skip = 2, n_max = 33, show_col_types = FALSE,
-                 col_names = c("Category", "Sex", "BdL_cm", "BdW_kg", "BrnW_kg", "Source"))
+## Locate the block by content rather than fixed skip/n_max: the old
+## `skip = 2, n_max = 33` read the printed header row as data (a "Category"
+## group whose numbers were text, so mean() failed) and cut off the last two
+## summary rows. The data block is the header line through the next blank line.
+lines <- readLines(snapshot_path, warn = FALSE, encoding = "UTF-8")
+hdr_i <- grep("^Category,", lines)
+if (length(hdr_i) != 1L) stop("Expected one 'Category,...' header line in ", basename(snapshot_path), call. = FALSE)
+blank <- which(!nzchar(trimws(lines)) & seq_along(lines) > hdr_i)
+end_i <- if (length(blank)) blank[1] - 1L else length(lines)
+raw <- read_csv(I(paste(lines[(hdr_i + 1L):end_i], collapse = "\n")), col_names = FALSE,
+                col_types = cols(.default = col_character()), na = character())
+names(raw) <- c("Category", "Sex", "BdL_cm", "BdW_kg", "BrnW_kg", "Source")
+raw <- raw %>% mutate(across(c(BdL_cm, BdW_kg, BrnW_kg), as.numeric))
+stopifnot(nrow(raw) == 35L)   # 29 animals + a Mean and an S.D. row for each of 3 groups
 
 ## ---- carry the category label down through its group (printed once per group) ----
 raw <- raw %>%

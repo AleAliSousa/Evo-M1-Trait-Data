@@ -37,6 +37,19 @@ FACTOR <- c(g = 1, kg = 1000, mg = 0.001)
 
 read_csv <- function(p) read.csv(p, stringsAsFactors = FALSE, check.names = FALSE)
 manifest <- read_csv(file.path(repo, "__ShinyApp", "data", "source_manifest.csv"))
+## Registry fallback for author/year. source_manifest.csv is an export written by
+## __ShinyApp/build_data.R, and in a sweep that can run AFTER this script -- so a
+## registry row restored since the last export was still invisible here (2026-09-26
+## sweep: Jacobs 2018 Table 3). Read __ReadMe.xlsx directly for any TSV the manifest
+## leaves without an author or year.
+reg_ay <- tryCatch({
+  r <- as.data.frame(readxl::read_excel(file.path(repo, "__ReadMe.xlsx"), sheet = "Sheet1",
+                                        col_types = "text", .name_repair = "minimal"),
+                     stringsAsFactors = FALSE, check.names = FALSE)
+  r <- r[!is.na(r[["Item encoded"]]) & nzchar(r[["Item encoded"]]), , drop = FALSE]
+  data.frame(file = paste0(r[["Item encoded"]], ".tsv"), author = r[["1st Author"]],
+             year = r[["year"]], stringsAsFactors = FALSE)
+}, error = function(e) data.frame(file = character(), author = character(), year = character()))
 xwalk <- read_csv(file.path(repo, "_keys", "team_grouping_crosswalk.csv"))
 team_ay <- list()
 for (i in seq_len(nrow(xwalk))) {
@@ -117,6 +130,13 @@ for (path in files) {
   blank_na <- function(x) { x <- trimws(as.character(x)); if (length(x) != 1L || is.na(x) || x == "NA") "" else x }
   author <- if (!is.na(mi)) blank_na(manifest$first_author[mi]) else ""
   year   <- if (!is.na(mi)) blank_na(manifest$year[mi]) else ""
+  if (!nzchar(author) || !nzchar(year)) {
+    ri <- match(fn, reg_ay$file)
+    if (!is.na(ri)) {
+      if (!nzchar(author)) author <- blank_na(reg_ay$author[ri])
+      if (!nzchar(year))   year   <- blank_na(reg_ay$year[ri])
+    }
+  }
   targets[[length(targets)+1L]] <- list(fn=fn, rows=rows, headers=headers, col=col, ci=ci, author=author, year=year)
   if (is.na(named_unit(col))) { k <- paste(tolower(author), norm(col)); gmax[[k]] <- max(gmax[[k]] %||% 0, max(vals)) }
 }
@@ -183,7 +203,7 @@ for (t in targets) {
   paper <- folder_of(t$author, t$year, t$col)
   grp   <- grp_of(paper, t$col)
   if (!nzchar(t$author) || !nzchar(t$year))
-    stop(sprintf(paste0("%s has no citation in __ShinyApp/data/source_manifest.csv, so its paper folder ",
+    stop(sprintf(paste0("%s has no author/year in __ShinyApp/data/source_manifest.csv or __ReadMe.xlsx, so its paper folder ",
                         "(and measurement basis) cannot be resolved. Its __ReadMe.xlsx row is missing: run ",
                         "_tools/restore_registry_rows.R, then _tools/file_list.R, then __ShinyApp/build_data.R, ",
                         "and re-run this script."), t$fn), call. = FALSE)

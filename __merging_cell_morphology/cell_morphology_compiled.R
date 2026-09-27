@@ -235,11 +235,38 @@ long <- long |>
                "; printed 'SD' equals the SEM of the Elston 2001 SD for the same cells (19900/sqrt(29) = 3695) - label suspect", "")),
       TRUE ~ curation_note))
 
+## ---- method class + app-ready variable label -------------------------------------------------
+## The Shiny app averages every row that shares (Species, Variable), so the label must carry
+## everything that must NOT be pooled: region, cell type, measure, and the METHOD CLASS (a Golgi
+## soma area and a nucleator soma area are not the same quantity). Layer is implied by cell_type
+## except for Falcone's pial (I) vs subpial (II) interlaminar astrocytes, which get a `variant`.
+long <- long |>
+  mutate(
+    method_class = case_when(
+      source %in% c("Jacobs_etal_2018_Table5", "Nguyen_etal_2019_Table2",
+                    "Bianchi_etal_2012_Table2", "Jacobs_etal_2015_Table4") ~ "golgi",
+      team == "Elston"                                                 ~ "LYinj",
+      source %in% c("Jacobs_etal_2018_Table3", "Sherwood_etal_2003_Table1",
+                    "Nimchinsky_etal_1999_Table2", "Butti_etal_2009_Table6") ~ "stereology",
+      source %in% c("Butti_etal_2009_Table5", "Hakeem_etal_2009_Table1") ~ "fractionator",
+      source == "Raghanti_etal_2015_Table1"  ~ "nissl_count",
+      source == "Armstrong__1979_Tables1-9"  ~ "nissl_perikaryal",
+      source == "Nudo_etal_1995_TABLE2"      ~ "HRP",
+      grepl("^Falcone", source)              ~ "GFAP",
+      TRUE ~ "unclassified"),
+    variant = ifelse(source == "Falcone_etal_2019_TABLE1",
+                     tolower(gsub(" ", "_", sub("^ILA ", "", Original_Term))), NA_character_),
+    variable_label = paste0(region, "_", cell_type, "_", measure,
+                            ifelse(is.na(variant), "", paste0("_", variant)),
+                            " [", method_class, "]"))
+stopifnot(!any(long$method_class == "unclassified"))
+
 ## ---- final column order --------------------------------------------------------------------
 long <- long |>
   transmute(source, doi, team, Species, species_printed, taxon_level, observation_level, specimen_id,
             region, region_printed, layer, cell_type, cell_type_printed,
-            measure, statistic, value, value_text, unit, n, n_basis, hemisphere, method,
+            measure, statistic, value, value_text, unit, n, n_basis, hemisphere, method, method_class,
+            variant, variable_label,
             data_role, dependency, merge_default, ref, source_note, term_note, curation_note) |>
   arrange(source, Species, region, cell_type, measure, statistic)
 

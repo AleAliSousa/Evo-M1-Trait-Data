@@ -6,7 +6,11 @@
 # back with the source recorded, and flags where the resolved order disagrees
 # with the MDD order already in the table.
 #
-# Run from the _keys/ folder. Needs internet (works from your machine; the
+# ON-DEMAND ONLY: run_all_scripts_v2.R skips it. ~215 species x up to four web
+# lookups does not fit the sweep's 300 s timeout (2026-09-26 sweep: TIMEOUT at
+# 185/215), and it rewrites species_reference.csv from live web services.
+#
+# Needs internet (works from your machine; the
 # sandbox could not reach NCBI's eutils reliably, which is why this is a script).
 #
 # Packages: install.packages(c("readr","dplyr","stringr","xml2","rentrez","taxize"))
@@ -18,8 +22,17 @@ suppressPackageStartupMessages({
   library(xml2); library(rentrez); library(taxize)
 })
 
-## Set working directory to this script folder
-setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_keys")
+## Work from this script's own folder (was a hard-coded /Users/crossmodal/... path)
+.sp <- local({
+  a <- grep("^--file=", commandArgs(FALSE), value = TRUE)
+  if (length(a)) return(normalizePath(sub("^--file=", "", a[1])))
+  if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+    p <- rstudioapi::getActiveDocumentContext()$path
+    if (nzchar(p)) return(normalizePath(p))
+  }
+  stop("Run with Rscript file.R, or open it in RStudio and click Source.", call. = FALSE)
+})
+setwd(dirname(.sp))
 ref <- read_csv("species_reference.csv", show_col_types = FALSE)
 
 # pull a given rank's name out of a (ranks, names) lineage
@@ -67,10 +80,14 @@ for (i in seq_len(n)) {
   Sys.sleep(if (nzchar(Sys.getenv("ENTREZ_KEY"))) 0.12 else 0.34)  # respect NCBI rate limit
 }
 
-ref$Order_resolved   <- ord
-ref$Family_resolved  <- fam
-ref$taxonomy_source  <- src
+## A lookup that failed this time (network down, rate-limited, timed out) must not
+## wipe a value an earlier run resolved: keep the previous value where this run got NA.
+keep_prev <- function(new, old) if (is.null(old)) new else ifelse(is.na(new), as.character(old), new)
+ref$Order_resolved   <- keep_prev(ord, ref$Order_resolved)
+ref$Family_resolved  <- keep_prev(fam, ref$Family_resolved)
+ref$taxonomy_source  <- keep_prev(src, ref$taxonomy_source)
 # QA: does the freshly resolved order match the MDD order already recorded?
+ord <- ref$Order_resolved
 ref$order_matches_MDD <- ifelse(is.na(ref$Order_MDD) | ref$Order_MDD == "", NA,
                                 tolower(ref$Order_MDD) == tolower(ref$Order_resolved))
 

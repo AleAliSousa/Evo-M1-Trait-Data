@@ -130,6 +130,7 @@ GH <- list(
   gli        = "__merging_GLI/GLI_long.csv",
   cortical_areas  = "__merging_cortical_areas/cortical_areas_long.csv",
   cortical_layers = "__merging_cortical_layers/cortical_layers_m1_long.csv",
+  cell_morphology = "__merging_cell_morphology/cell_morphology_long.csv",
   fossil_bgu = "__merging_fossil_brain_glucose/fossil_brain_glucose_long.csv",
   gyrification = "__merging_gyrification/gyrification_long.csv",
   sensory    = "__merging_sensory/sensory_long.csv",
@@ -262,6 +263,37 @@ load_compiled <- function() {
       stringsAsFactors = FALSE)
   }
 
+  # Cell type x soma size x dendritic / spine morphology (soma volume, dendritic
+  # length, spine density, VEN counts, interlaminar astrocytes, ...). The merge is
+  # long over species x region x layer x cell_type x measure x statistic and is
+  # never pooled across methods (a Golgi soma AREA and a nucleator soma AREA are
+  # different quantities), so the merge itself supplies `variable_label` =
+  # region_cellType_measure[_variant] [method_class]; the app only appends the
+  # unit. Rows kept: merge_default (drops values already merged from their own
+  # table, e.g. Elston 2006 footnote-t re-reports), central statistics only
+  # (mean / estimate / value / category -- never sd, sem, min, max, cv, ce),
+  # species-level taxa (Hylobates sp. stays out). Individual-level rows
+  # (Armstrong 1979 specimens, Hakeem 2009 hemispheres) are kept because no
+  # species summary exists for them; the plot's per-species mean averages them.
+  # Categorical values (Falcone ILA presence) keep Value as text, Value_num NA.
+  # See __merging_cell_morphology/README__merging.md.
+  std_cell_morphology <- function(gh_rel, local, dataset) {
+    d <- read_csv_gh(gh_rel, local)
+    d <- d[!is.na(d$merge_default) & d$merge_default &
+             d$statistic %in% c("mean", "estimate", "value", "category") &
+             !is.na(d$taxon_level) & d$taxon_level == "species", ]
+    val <- ifelse(!is.na(d$value), as.character(d$value), as.character(d$value_text))
+    d <- d[!is.na(val) & nzchar(val), ]; val <- val[!is.na(val) & nzchar(val)]
+    lab <- paste0(d$variable_label, " (", d$unit, ")")
+    data.frame(
+      Species = d$Species, Dataset = dataset, Variable = lab,
+      Value = val, Value_num = suppressWarnings(as.numeric(d$value)),
+      Source = d$source,
+      N_sources = NA_integer_,
+      Variable_raw = lab, Unit = d$unit, Unit_raw = d$unit,
+      stringsAsFactors = FALSE)
+  }
+
   # Fossil-hominin whole-brain glucose utilization (BGU): per specimen, per
   # estimator team -- rows are NOT averaged across teams, so each team's
   # estimate (and its modern-human-relative ratio) shows as its own point.
@@ -361,6 +393,8 @@ load_compiled <- function() {
             "Cortical areas & surfaces"),
     std_cortical_layers(GH$cortical_layers, file.path(data_dir, "cortical_layers_m1_long.csv"),
             "Cortical layer thickness"),
+    std_cell_morphology(GH$cell_morphology, file.path(data_dir, "cell_morphology_long.csv"),
+            "Cell type, size & morphology"),
     std_fossil_bgu(GH$fossil_bgu, file.path(data_dir, "fossil_brain_glucose_long.csv"),
             "Fossil brain glucose"),
     std_gyrification(GH$gyrification, file.path(data_dir, "gyrification_long.csv"),
@@ -478,6 +512,8 @@ lab_ismeas <- vd_get("is_measurement")
 # endocranial capacity. Labels that share a poolable_group are the same quantity;
 # labels with different non-empty groups are not, and the plot says so.
 lab_pool   <- vd_get("poolable_group")
+# comparability family: which variables are candidate estimates of the same thing
+lab_family <- vd_get("poolable_family")
 POOL_LABEL <- c(
   mass_measured             = "weighed brain mass",
   mass_measured_excl_ob     = "weighed brain mass, olfactory bulbs excluded",
@@ -486,6 +522,21 @@ POOL_LABEL <- c(
   mass_from_volume_or_ecv   = paste("not weighed: computed from a measured brain volume, or",
                                     "from an endocranial volume"),
   volume_total              = "brain volume including the ventricles",
+  # sensory measures: the method is the basis, because a behavioural threshold and a
+  # number computed from retinal cell density are not the same measurement
+  audiogram_behavioural     = "behavioural audiogram threshold at a stated sound-pressure level",
+  localization_behavioural  = "behavioural discrimination threshold at a stated criterion",
+  cff_behavioural           = "behavioural flicker-fusion threshold",
+  cff_electrophysiological  = "flicker electroretinogram: an evoked response, not a behavioural report",
+  acuity_anatomical         = paste("not a measured percept: computed from peak retinal",
+                                     "sampling density (ganglion cells, or cones where",
+                                     "retinal summation is absent)"),
+  acuity_mixed_anatomical_electrophysiological =
+    "one printed value averaging an anatomical estimate with an evoked potential",
+  acuity_method_unstated    = "the source names the study the value came from but not its method",
+  field_of_best_vision_anatomical =
+    "not a measured percept: from retinal ganglion cell isodensity contours",
+  binocular_field_optical   = "not a measured percept: angular overlap of the two retinal fields",
   volume_net                = "brain volume net of ventricles",
   endocranial_volume        = "endocranial capacity: brain plus meninges, CSF and vessels",
   endocranial_volume_female = "endocranial capacity, female-only means")
@@ -1088,9 +1139,16 @@ server <- function(input, output, session) {
     a <- row1("X", input$p_x); b <- row1("Y", input$p_y)
     # Basis warning: the two axes are whole-brain size on DIFFERENT bases, so the
     # relationship between them is partly an artefact of what each one includes.
-    px <- look(lab_pool, input$p_x); py <- look(lab_pool, input$p_y)
+    # Scoped by COMPARABILITY FAMILY, not just by group. Two variables warn when they are
+    # candidate estimates of the SAME thing measured differently -- a weighed brain mass
+    # against an endocranial capacity, a behavioural flicker threshold against a flicker
+    # electroretinogram. Two different quantities do not warn even though their groups
+    # differ: a hearing limit against a sound-localization threshold is an ordinary
+    # comparison, and warning on it would be noise that teaches users to ignore the banner.
+    px <- look(lab_pool, input$p_x);   py <- look(lab_pool, input$p_y)
+    fx <- look(lab_family, input$p_x); fy <- look(lab_family, input$p_y)
     warn <- NULL
-    if (nzchar(px) && nzchar(py) && px != py) {
+    if (nzchar(fx) && fx == fy && nzchar(px) && nzchar(py) && px != py) {
       nx <- if (px %in% names(POOL_LABEL)) POOL_LABEL[[px]] else px
       ny <- if (py %in% names(POOL_LABEL)) POOL_LABEL[[py]] else py
       warn <- div(class = "alert alert-warning py-1 px-2 small mb-2",

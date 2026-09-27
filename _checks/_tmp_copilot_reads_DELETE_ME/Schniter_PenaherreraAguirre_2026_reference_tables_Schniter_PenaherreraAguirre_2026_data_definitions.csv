@@ -1,0 +1,11 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,contemporary binomial nomenclature as printed in the Zenodo data sheet,,Species,,primary,Primates,Schniter_Penaherrera-Aguirre_2026_data,reconcile to _keys/Stephan/species_key.csv,
+Species_alt,contemporary binomial alternative(s) where given,,,info,Primates,Schniter_Penaherrera-Aguirre_2026_data,e.g. Plecturocebus moloch for Callicebus moloch,,
+Species_MS,binomial nomenclature used by McComb & Semple (2005),,,info,Primates,Schniter_Penaherrera-Aguirre_2026_data,the name under which the original repertoire size was recorded,,
+Clade,clade (Platyrrhine / Catarrhine / Strepsirrhine / ...),,,info,Primates,Schniter_Penaherrera-Aguirre_2026_data,,,
+Family,family,,,info,Primates,Schniter_Penaherrera-Aguirre_2026_data,,,
+vocal_repertoire_size_MS2005,vocal repertoire size (number of distinct vocalization types) from McComb & Semple 2005,Behaviour,count.vocalizations,,primary,Primates,Schniter_Penaherrera-Aguirre_2026_data,original values compiled by McComb & Semple 2005,
+vocal_repertoire_size_updated,"vocal repertoire size (number of distinct vocalization types), contemporary update",Behaviour,count.vocalizations,,primary,Primates,Schniter_Penaherrera-Aguirre_2026_data,equals the MS2005 value where no update was available,
+repertoire_update_reference,reference for the contemporary update to vocal repertoire size (if any),,,info,Primates,Schniter_Penaherrera-Aguirre_2026_data,NA where the value is unchanged from McComb & Semple 2005,,
+source,source identifier,,Source,,info,Primates,Schniter_Penaherrera-Aguirre_2026_data,,
+Method:count.vocalizations,repertoire size = count of distinct call/vocalization types catalogued for the species; a discrete count not a rate,Behaviour,,,method,Primates,Schniter_Penaherrera-Aguirre_2026_data,shared definition with ManyPrimates 2022 vocal_repertoire_types,

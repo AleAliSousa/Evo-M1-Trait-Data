@@ -1,6 +1,12 @@
 # Merging cell type, cell size and cell morphology data — DRAFT
 
-**Status: DRAFT scaffold, 2026-09-27. Nothing here is wired into `evom1_traits_long` or the app.**
+**Status: DRAFT merge, 2026-09-27 — wired into the Shiny app the same day.** `__ShinyApp/app.R`
+loads `cell_morphology_long.csv` through `std_cell_morphology()` (dataset label "Cell type, size &
+morphology"; 1,700 rows, 270 variables, 115 species after the app's filters), and the legacy
+`interlaminar_astrocytes.xlsx` melt was retired from `__ShinyApp/build_data.R` so Falcone 2019
+reaches the app once, via this merge. The 270 labels have **no rows yet in
+`_keys/variable_domain.csv`**, so the app lists them under "Unclassified" until that key is extended
+(`Rscript _keys/build_variable_definitions.R && Rscript __ShinyApp/build_data.R`).
 The folder follows the `__merging_gyrification` / `__merging_cortical_layers` pattern
 (`standardized_term_by_reference/` → `standardized_term.R` → `<trait>_compiled.R` → long CSV + QA),
 and it is the sibling that `__merging_cortical_layers/README__merging.md` anticipates when it says the
@@ -84,6 +90,7 @@ One row per (source × species × specimen × region × layer × cell type × me
 | `observation_level`, `specimen_id`, `hemisphere` | `species summary` or `individual` (Armstrong 1979; Hakeem 2009 hemispheres); hemisphere carried, **never doubled** |
 | `region`, `region_printed`, `layer` | controlled region code via `region_crosswalk.csv`; layer from the term map, the cell-type crosswalk, or the printed column |
 | `cell_type`, `cell_type_printed` | controlled code via `cell_type_definitions.csv` / `cell_type_crosswalk.csv` |
+| `method_class`, `variant`, `variable_label` | pooling key for the app: `golgi`, `LYinj`, `stereology`, `fractionator`, `nissl_count`, `nissl_perikaryal`, `HRP`, `GFAP`; `variant` = pial/subpial × dorsal/ventral for Falcone Table 1; `variable_label` = `region_cellType_measure[_variant] [method_class]` — the app appends ` (unit)` and averages only rows sharing this label |
 | `measure`, `statistic`, `value`, `value_text`, `unit` | measure code from `cell_morphology_definitions.csv`; statistic ∈ mean, sd, sem, min, max, cv, ce, estimate, value, category; `value_text` keeps categorical values (ILA presence) and the printed string |
 | `n`, `n_basis` | sample size and what it counts (neurons, individuals, neurons per layer per case) |
 | `method` | source-stated or lineage default (Golgi tracing, Lucifer-Yellow injection, nucleator/rotator stereology, Nissl perikaryal volumetry, optical fractionator, GFAP + Neurolucida) |

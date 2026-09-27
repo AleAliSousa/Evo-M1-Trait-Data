@@ -6,7 +6,9 @@
 library(readxl); library(writexl)
 setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/")
 folder_path <- "./____EvoM1_TraitTable/"
-item_name   <- "Schniter_Penaherrera-Aguirre_2026_data"
+## Registry Item name. Column F of __ReadMe.xlsx now strips hyphens from the second
+## author, so the name is PenaherreraAguirre (was "Schniter_Penaherrera-Aguirre_2026_data").
+item_name   <- "Schniter_PenaherreraAguirre_2026_data"
 MS_REF <- "McComb, K., & Semple, S. (2005). Coevolution of vocal communication and sociality in primates. Biology Letters, 1(4), 381-385."
 
 # species resolver (single source of truth = _keys)
@@ -20,8 +22,18 @@ resolve <- function(x) { c <- clean_sp(x)
 
 filecodes    <- read_excel("./__ReadMe.xlsx", sheet = "Sheet1")
 item_encoded <- filecodes$"Item encoded"[match(item_name, filecodes$"Item name")]
+## Without this guard an unmatched name read __Public/comparative-data/NA.tsv -- an
+## unrelated stale table -- and failed later with "differing number of rows: 0, 1".
+if (length(item_encoded) != 1L || is.na(item_encoded) || !nzchar(item_encoded))
+  stop("No 'Item encoded' in __ReadMe.xlsx for Item name '", item_name, "'", call. = FALSE)
 d <- read.table(paste0("./__Public/comparative-data/", item_encoded, ".tsv"),
                 header = TRUE, sep = "\t", stringsAsFactors = FALSE, check.names = FALSE)
+
+need <- c("Species", "vocal_repertoire_size_MS2005", "vocal_repertoire_size_updated",
+          "repertoire_update_reference")
+if (!all(need %in% names(d)) || !nrow(d))
+  stop(item_encoded, ".tsv is not the Schniter & Penaherrera-Aguirre table (missing: ",
+       paste(setdiff(need, names(d)), collapse = ", "), ")", call. = FALSE)
 
 upd_src <- ifelse(is.na(d$repertoire_update_reference) |
                     !nzchar(trimws(d$repertoire_update_reference)),

@@ -134,7 +134,30 @@ source definitions and the disagreement numbers are in
 `variable_definitions.csv`, not `variable_domain.csv`, so a column that stops at
 the domain key never reaches the UI. Every variable tooltip now ends with a
 "Measurement basis:" line, and the Plot tab warns, naming both bases, when the two
-axes carry different non-empty groups.
+axes are estimates of the same thing measured differently.
+
+### Update — the sensory split, and why the warning needed a family
+
+The same treatment was applied to `__merging_sensory`, where `measure_class =
+psychophysics` had been applied to all seven measures although, by the sources'
+own definitions, visual acuity is computed from peak ganglion-cell density, the
+field of best vision from retinal isodensity contours, and the binocular field
+from the overlap of the two retinal fields. Only the audiogram limits and the
+localization threshold are behavioural. `psychophysics` is now reserved for
+those; the rest are `sensory_anatomy_derived`, `sensory_electrophysiology`,
+`sensory_mixed_method` and `sensory_method_unstated`. Critical flicker fusion
+arrives split in two, because van Haarlem's `method` column is 221
+electrophysiological rows and 59 behavioural ones.
+
+That exposed a flaw in the basis warning. Comparing groups alone made it fire on
+a hearing limit against a sound-localization threshold — two different quantities,
+an ordinary comparison, and a false positive of the kind that teaches users to
+ignore the banner. `variable_domain.csv` therefore gained **`poolable_family`**:
+the set of variables that are candidate estimates of the same underlying thing.
+The warning fires only when the family matches and the group differs. Brain mass
+against endocranial capacity still warns (family `brain_size`); behavioural
+against electrophysiological CFF warns (family `cff`); a hearing limit against a
+localization threshold does not. Eight cases are checked in the app test.
 
 Seven labels in `variable_domain.csv` are flagged `is_measurement = FALSE` —
 three provenance strings (`Species_Kazu2015`, `Species_as_printed`,

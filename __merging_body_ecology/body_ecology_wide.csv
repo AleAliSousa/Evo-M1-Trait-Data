@@ -211,7 +211,7 @@
 "American pika","109",,,,,,,,,,,,,,,,,,,,,,
 "American toad","21.6",,,,,,,,,,,,,,,,,,,,,,
 "American woodcock","156.7",,,,,,,,,,,,,,,,,,,,,,
-"Ametrida centurio","10.4433","21.9","2.0857",,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
+"Ametrida centurio","10.5","21.9","2.0857",,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Ametrida centurio (STE)","10.5",,,,,,,,,,,,,,,,,,,,,,
 "Ammodillus imbellis","50",,,,,,,,"10","0","0","0","0","0","10","0","20","60","4","Other plant","Herbivore","Ground","Nocturnal"
 "Ammodorcas clarkei","28049.81",,,,,,,,"0","0","0","0","0","0","0","0","0","100","1","Other plant","Herbivore","Ground","Diurnal"
@@ -250,9 +250,9 @@
 "Anomalurus pusillus","250",,,,,,,,"10","0","0","0","0","0","40","10","0","40","4","Fruit","Herbivore","Arboreal","Nocturnal"
 "Anonymomys mindorensis","76.5",,,,,,,,"10","0","0","0","0","0","10","0","20","60","4","Other plant","Herbivore","Arboreal","Nocturnal"
 "Anotomys leander","66.4",,,,,,,,"20","0","0","0","0","0","10","0","40","30","4","Seed","Herbivore","Ground","Nocturnal"
-"Anoura caudifer","10.7962","31.6","2.7694",,,,,,"30","0","0","0","0","0","30","40","0","0","3","Nectar","Herbivore","Arboreal","Nocturnal"
+"Anoura caudifer","10.6","31.6","2.7694",,,,,,"30","0","0","0","0","0","30","40","0","0","3","Nectar","Herbivore","Arboreal","Nocturnal"
 "Anoura cultrata","16.85",,,,,,,,"30","0","0","0","0","0","30","40","0","0","3","Nectar","Herbivore","Arboreal","Nocturnal"
-"Anoura geoffroyi","15.02",,,,,,,,"30","0","0","0","0","0","30","40","0","0","3","Nectar","Herbivore","Arboreal","Nocturnal"
+"Anoura geoffroyi","16",,,,,,,,"30","0","0","0","0","0","30","40","0","0","3","Nectar","Herbivore","Arboreal","Nocturnal"
 "Anoura latidens","14.075","36.6","2.7111",,,,,,"30","0","0","0","0","0","30","40","0","0","3","Nectar","Herbivore","Arboreal","Nocturnal"
 "Anoura luismanueli","14.05",,,,,,,,"30","0","0","0","0","0","30","40","0","0","3","Nectar","Herbivore","Arboreal","Nocturnal"
 "Anourosorex assamensis","20",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Ground","Nocturnal"
@@ -345,6 +345,7 @@
 "Arctonyx collaris","8423",,,,,,,,"50","10","10","0","0","0","10","0","0","20","5","Invertebrates","Faunivore","Ground","Nocturnal"
 "Ardops annectans (STE)","15",,,,,,,,,,,,,,,,,,,,,,
 "Ardops nichollsi","19.0422",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
+"Ardops spp.","22.5",,,,,,,,,,,,,,,,,,,,,,
 "Ariadne ariadne ariadne","0.2",,,,,,,,,,,,,,,,,,,,,,
 "Arielulus aureocollaris","10.4",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Arielulus circumdatus","10.4",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
@@ -356,19 +357,20 @@
 "Artibeus amplus","60",,,,,,,,"10","0","0","0","0","0","80","10","0","0","3","Fruit","Herbivore","Arboreal","Nocturnal"
 "Artibeus anderseni","138",,,,,,,,"10","0","0","0","0","0","80","10","0","0","3","Fruit","Herbivore","Arboreal","Nocturnal"
 "Artibeus aztecus","20.38",,,,,,,,"10","0","0","0","0","0","80","10","0","0","3","Fruit","Herbivore","Arboreal","Nocturnal"
-"Artibeus cinereus","23.526","21.9","2.0857",,,,,,"10","0","0","0","0","0","80","10","0","0","3","Fruit","Herbivore","Arboreal","Nocturnal"
-"Artibeus concolor","19.45","32.9","1.6701",,,,,,"10","0","0","0","0","0","80","10","0","0","3","Fruit","Herbivore","Arboreal","Nocturnal"
+"Artibeus cinereus","12.6","21.9","2.0857",,,,,,"10","0","0","0","0","0","80","10","0","0","3","Fruit","Herbivore","Arboreal","Nocturnal"
+"Artibeus cinereus toltecus","16.6",,,,,,,,,,,,,,,,,,,,,,
+"Artibeus concolor","19.4","32.9","1.6701",,,,,,"10","0","0","0","0","0","80","10","0","0","3","Fruit","Herbivore","Arboreal","Nocturnal"
 "Artibeus fimbriatus","63.9","77.96","1.22",,,,,,"10","0","0","0","0","0","80","10","0","0","3","Fruit","Herbivore","Arboreal","Nocturnal"
 "Artibeus fraterculus","36",,,,,,,,"10","0","0","0","0","0","80","10","0","0","3","Fruit","Herbivore","Arboreal","Nocturnal"
-"Artibeus glaucus","11.63",,,,,,,,"10","0","0","0","0","0","80","10","0","0","3","Fruit","Herbivore","Arboreal","Nocturnal"
+"Artibeus glaucus","12.2",,,,,,,,"10","0","0","0","0","0","80","10","0","0","3","Fruit","Herbivore","Arboreal","Nocturnal"
 "Artibeus gnomus","10.06",,,,,,,,"10","0","0","0","0","0","80","10","0","0","3","Fruit","Herbivore","Arboreal","Nocturnal"
 "Artibeus hirsutus","45.115","121.5","2.3592",,,,,,"10","0","0","0","0","0","80","10","0","0","3","Fruit","Herbivore","Arboreal","Nocturnal"
 "Artibeus incomitatus","26.52",,,,,,,,"10","0","0","0","0","0","80","10","0","0","3","Fruit","Herbivore","Arboreal","Nocturnal"
 "Artibeus inopinatus","29.3",,,,,,,,"10","0","0","0","0","0","80","10","0","0","3","Fruit","Herbivore","Arboreal","Nocturnal"
-"Artibeus jamaicensis","37.5","56.5","1.25",,,,,,"10","0","0","0","0","0","80","10","0","0","3","Fruit","Herbivore","Arboreal","Nocturnal"
-"Artibeus lituratus","58.7","89.5667","1.2568",,,,,,"10","0","0","0","0","0","80","10","0","0","3","Fruit","Herbivore","Arboreal","Nocturnal"
+"Artibeus jamaicensis","38.6667","56.5","1.25",,,,,,"10","0","0","0","0","0","80","10","0","0","3","Fruit","Herbivore","Arboreal","Nocturnal"
+"Artibeus lituratus","57.8","89.5667","1.2568",,,,,,"10","0","0","0","0","0","80","10","0","0","3","Fruit","Herbivore","Arboreal","Nocturnal"
 "Artibeus obscurus","35.2",,,,,,,,"10","0","0","0","0","0","80","10","0","0","3","Fruit","Herbivore","Arboreal","Nocturnal"
-"Artibeus phaeotis","11.695",,,,,,,,"10","0","0","0","0","0","80","10","0","0","3","Fruit","Herbivore","Arboreal","Nocturnal"
+"Artibeus phaeotis","11.8",,,,,,,,"10","0","0","0","0","0","80","10","0","0","3","Fruit","Herbivore","Arboreal","Nocturnal"
 "Artibeus toltecus","15.925",,,,,,,,"10","0","0","0","0","0","80","10","0","0","3","Fruit","Herbivore","Arboreal","Nocturnal"
 "Artibeus watsoni","11.2",,,,,,,,"10","0","0","0","0","0","80","10","0","0","3","Fruit","Herbivore","Arboreal","Nocturnal"
 "Arvicanthis abyssinicus","77.1",,,,,,,,"0","0","0","0","0","0","0","0","30","70","2","Other plant","Herbivore","Ground","Cathemeral"
@@ -385,7 +387,7 @@
 "Asellia patrizii","14.1",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Asellia tridens","12.8",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Aselliscus stoliczkanus","4.9",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Aselliscus tricuspidatus","4.275","7.14","1.7",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Aselliscus tricuspidatus","4.4","7.14","1.7",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Asellus aquaticus","0.02",,,,,,,,,,,,,,,,,,,,,,
 "Asian house shrew","39.7",,,,,,,,,,,,,,,,,,,,,,
 "Asian palm civet","3282.6",,,,,,,,,,,,,,,,,,,,,,
@@ -447,7 +449,7 @@
 "Balantiopteryx infusca","4.38",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Balantiopteryx io","4.3",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Balantiopteryx plicata","6.39",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Balionycteris maculata","14.0633",,,,,,,,"0","0","0","0","0","0","80","20","0","0","2","Fruit","Herbivore","Arboreal","Nocturnal"
+"Balionycteris maculata","14.4",,,,,,,,"0","0","0","0","0","0","80","20","0","0","2","Fruit","Herbivore","Arboreal","Nocturnal"
 "Baltimore oriole","37.5",,,,,,,,,,,,,,,,,,,,,,
 "Baluchistan gerbil","29.7",,,,,,,,,,,,,,,,,,,,,,
 "Bandicota bengalensis","188.5",,,,,,,,"20","0","0","0","0","0","0","0","0","80","2","Other plant","Herbivore","Ground","Nocturnal"
@@ -456,7 +458,7 @@
 "Bank swallow","13.6",,,,,,,,,,,,,,,,,,,,,,
 "Bank vole","21.5",,,,,,,,,,,,,,,,,,,,,,
 "Barbary macaque",,,,,,"258",,,,,,,,,,,,,,,,,
-"Barbastella barbastellus","7",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Barbastella barbastellus","6.4",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Barbastella leucomelas","15.05",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Barn swallow","18",,,,,,,,,,,,,,,,,,,,,,
 "Bassaricyon alleni","1235.005",,,,,,,,"20","10","0","0","0","0","70","0","0","0","3","Fruit","Herbivore","Arboreal","Nocturnal"
@@ -552,7 +554,7 @@
 "Botta's pocket gopher","143",,,,,,,,,,,,,,,,,,,,,,
 "Brachiones przewalskii","61.11",,,,,,,,"10","0","0","0","0","0","10","0","20","60","4","Other plant","Herbivore","Ground","Nocturnal"
 "Brachylagus idahoensis","426.67","384.5","0.89",,,,,,"0","0","0","0","0","0","0","0","0","100","1","Other plant","Herbivore","Ground","Nocturnal"
-"Brachyphylla cavernarum","45.5483",,,,,,,,"10","0","0","0","0","0","70","10","0","10","4","Fruit","Herbivore","Arboreal","Nocturnal"
+"Brachyphylla cavernarum","44.5",,,,,,,,"10","0","0","0","0","0","70","10","0","10","4","Fruit","Herbivore","Arboreal","Nocturnal"
 "Brachyphylla nana","35.83",,,,,,,,"10","0","0","0","0","0","70","10","0","10","4","Fruit","Herbivore","Arboreal","Nocturnal"
 "Brachytarsomys albicauda","200",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Ground","Nocturnal"
 "Brachytarsomys villosa","220",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
@@ -799,14 +801,14 @@
 "Cardiac arrhythmia","47000",,,,,,,,,,,,,,,,,,,,,,
 "Cardiac arrythmia","84000",,,,,,,,,,,,,,,,,,,,,,
 "Cardiocranius paradoxus","8.6",,,,,,,,"0","0","0","0","0","0","0","0","100","0","1","Seed","Herbivore","Ground","Nocturnal"
-"Cardioderma cor","26.2133",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Ground","Nocturnal"
+"Cardioderma cor","26",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Ground","Nocturnal"
 "Caretta caretta HBS112700","79000",,,,,,,,,,,,,,,,,,,,,,
 "Caribou, or Reindeer","85000",,,,,,,,,,,,,,,,,,,,,,
 "Carlito syrichta","127",,,,,,,,,,,,,,,,,,,,,,
 "Carollia brevicauda","14.4",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
-"Carollia castanea","12.8667",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
+"Carollia castanea","13.1",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Carollia colombiana","15.47",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
-"Carollia perspicillata","16.6667","31.91","2.0029",,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
+"Carollia perspicillata","16.95","31.91","2.0029",,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Carollia sowelli","16.5",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Carollia subrufa","15.59",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Carpitalpa arendsi","52.34",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Ground","Cathemeral"
@@ -818,6 +820,7 @@
 "Caryomys inez","47.71",,,,,,,,"0","0","0","0","0","0","0","0","20","80","2","Other plant","Herbivore","Ground","Cathemeral"
 "Cascade golden-mantled ground squirrel","256.6",,,,,,,,,,,,,,,,,,,,,,
 "Casinycteris argynnis","40.5",,,,,,,,"0","0","0","0","0","0","80","20","0","0","2","Fruit","Herbivore","Arboreal","Nocturnal"
+"Casinycteris argynnis )","26.8",,,,,,,,,,,,,,,,,,,,,,
 "Cassin's finch","27.4",,,,,,,,,,,,,,,,,,,,,,
 "Castor Myeer","6633.3333",,,,,,,,,,,,,,,,,,,,,,
 "Castor canadensis","20335","4972","0.2933","23.4","128","60","3.2","639","0","0","0","0","0","0","0","0","0","100","1","Other plant","Herbivore","Ground","Nocturnal"
@@ -964,7 +967,7 @@
 "Chalinolobus dwyeri","9.03",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Chalinolobus gouldi","11.7",,,,,,,,,,,,,,,,,,,,,,
 "Chalinolobus gouldii","18","25.2","1.44",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Chalinolobus morio","8.4233",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Chalinolobus morio","8.3",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Chalinolobus neocaledonicus","8.71",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Chalinolobus nigrogriseus","8.8",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Chalinolobus picatus","5.1",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
@@ -979,7 +982,7 @@
 "Cheirogaleus ravus","285.39",,,,,,,,"10","0","0","0","0","0","50","0","0","40","3","Fruit","Herbivore","Arboreal","Nocturnal"
 "Cheirogaleus sibreei","352.75",,,,,,,,"10","0","0","0","0","0","50","0","0","40","3","Fruit","Herbivore","Arboreal","Nocturnal"
 "Cheiromeles parvidens","163.5",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Cheiromeles torquatus","168.8889",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Cheiromeles torquatus","167",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Chelemys delfini","61.02",,,,,,,,"30","0","0","0","0","0","0","0","0","70","2","Other plant","Herbivore","Ground","Cathemeral"
 "Chelemys macronyx","67.65","84.32","1.36",,,,,,"30","0","0","0","0","0","0","0","0","70","2","Other plant","Herbivore","Ground","Cathemeral"
 "Chelemys megalonyx","50.8",,,,,,,,"30","0","0","0","0","0","0","0","0","70","2","Other plant","Herbivore","Ground","Cathemeral"
@@ -1008,12 +1011,12 @@
 "Chipping sparrow","11.9",,,,,,,,,,,,,,,,,,,,,,
 "Chiroderma doriae","19.9","31.1","1.5628",,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Chiroderma improvisum","35",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
-"Chiroderma salvini","25.2983",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
-"Chiroderma trinitatum","13.6933",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
-"Chiroderma villosum","24.2511",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
+"Chiroderma salvini","26.1",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
+"Chiroderma trinitatum","13.7",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
+"Chiroderma villosum","24.8",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Chiroderma villosum ssp.","31.7",,,,,,,,,,,,,,,,,,,,,,
 "Chiromyscus chiropus","77.8",,,,,,,,"10","0","0","0","0","0","10","0","20","60","4","Other plant","Herbivore","Arboreal","Nocturnal"
-"Chironax melanocephalus","17.3444",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
+"Chironax melanocephalus","17.7",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Chironectes minimus","881.4833","457.6","0.4886",,,,,,"50","0","0","30","0","0","0","0","0","20","3","Invertebrates","Faunivore","Ground","Nocturnal"
 "Chiropodomys calamianensis","40.5",,,,,,,,"0","0","0","0","0","0","0","0","0","100","1","Other plant","Herbivore","Arboreal","Nocturnal"
 "Chiropodomys gliroides","25.3",,,,,,,,"0","0","0","0","0","0","0","0","0","100","1","Other plant","Herbivore","Arboreal","Nocturnal"
@@ -1048,7 +1051,7 @@
 "Chodsigoa smithii","5.49",,,,,,,,"70","0","0","0","0","30","0","0","0","0","2","Invertebrates","Faunivore","Ground","Nocturnal"
 "Chodsigoa sodalis","5.49",,,,,,,,"70","0","0","0","0","30","0","0","0","0","2","Invertebrates","Faunivore","Ground","Nocturnal"
 "Choeroniscus godmani","7.55","19.1","1.8911",,,,,,"30","0","0","0","0","0","40","30","0","0","3","Fruit","Herbivore","Arboreal","Nocturnal"
-"Choeroniscus minor","9.31",,,,,,,,"30","0","0","0","0","0","40","30","0","0","3","Fruit","Herbivore","Arboreal","Nocturnal"
+"Choeroniscus minor","9.6",,,,,,,,"30","0","0","0","0","0","40","30","0","0","3","Fruit","Herbivore","Arboreal","Nocturnal"
 "Choeroniscus periosus","11.57",,,,,,,,"30","0","0","0","0","0","40","30","0","0","3","Fruit","Herbivore","Arboreal","Nocturnal"
 "Choeronycteris mexicana","16.6",,,,,,,,"20","0","0","0","0","0","40","40","0","0","3","Fruit","Herbivore","Arboreal","Nocturnal"
 "Choloepus didactylus","5070",,,"36.8","279","152","1","1279","0","0","0","0","0","0","30","0","0","70","2","Other plant","Herbivore","Arboreal","Nocturnal"
@@ -1091,7 +1094,7 @@
 "Coendou nycthemera","2999.98",,,,,,,,"0","0","0","0","0","0","30","0","0","70","2","Other plant","Herbivore","Arboreal","Nocturnal"
 "Coendou prehensilis","4026.6567","925","0.282",,,,,,"0","0","0","0","0","0","30","0","0","70","2","Other plant","Herbivore","Arboreal","Nocturnal"
 "Coendou rothschildi","2000",,,,,,,,"0","0","0","0","0","0","30","0","0","70","2","Other plant","Herbivore","Arboreal","Nocturnal"
-"Coleura afra","11.4122",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Coleura afra","11.5",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Coleura seychellensis","10.57",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Colius castanotus","58",,,,,,,,,,,,,,,,,,,,,,
 "Colius colius","35",,,,,,,,,,,,,,,,,,,,,,
@@ -1142,7 +1145,7 @@
 "Conilurus penicillatus","182.9","162.6","0.7659",,,,,,"10","0","0","0","0","0","10","0","20","60","4","Other plant","Herbivore","Arboreal","Nocturnal"
 "Connochaetes gnou","179998.96",,,,,,,,"0","0","0","0","0","0","0","0","0","100","1","Other plant","Herbivore","Ground","Diurnal"
 "Connochaetes taurinus","157115","34341","0.2029",,,,,,"0","0","0","0","0","0","0","0","0","100","1","Other plant","Herbivore","Ground","Diurnal"
-"Cormura brevirostris","8.5156",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Cormura brevirostris","8.2",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Coronary artery heart disease","78500",,,,,,,,,,,,,,,,,,,,,,
 "Coruro","126.2",,,,,,,,,,,,,,,,,,,,,,
 "Corvus corax","1070.6667",,,,,,,,,,,,,,,,,,,,,,
@@ -1156,7 +1159,7 @@
 "Coyote","10148.9",,,,,,,,,,,,,,,,,,,,,,
 "Crab-eating fox","5444",,,,,,,,,,,,,,,,,,,,,,
 "Crab-eating raccoon","1160",,,,,,,,,,,,,,,,,,,,,,
-"Craseonycteris thonglongyai","2.42",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Craseonycteris thonglongyai","2.56",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Crateromys australis","445",,,,,,,,"0","0","0","0","0","0","60","0","0","40","2","Fruit","Herbivore","Arboreal","Nocturnal"
 "Crateromys heaneyi","572.22",,,,,,,,"0","0","0","0","0","0","50","0","0","50","2","Fruit","Herbivore","Arboreal","Nocturnal"
 "Crateromys paulus","401",,,,,,,,"0","0","0","0","0","0","60","0","0","40","2","Fruit","Herbivore","Arboreal","Nocturnal"
@@ -1494,19 +1497,22 @@
 "Cynomys mexicanus","948.995",,,,,,,,"0","0","0","0","0","0","0","0","0","100","1","Other plant","Herbivore","Ground","Diurnal"
 "Cynomys parvidens","800",,,,,,,,"0","0","0","0","0","0","0","0","0","100","1","Other plant","Herbivore","Ground","Diurnal"
 "Cynomys sp.","1515",,,,,,,,,,,,,,,,,,,,,,
-"Cynopterus brachyotis","29","47.5","1.2701",,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
-"Cynopterus horsfieldi","53",,,,,,,,,,,,,,,,,,,,,,
+"Cynopterus brachyotis","30.6333","47.5","1.2701",,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
+"Cynopterus horsfieldi","56.15",,,,,,,,,,,,,,,,,,,,,,
 "Cynopterus horsfieldii","53",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Cynopterus luzoniensis","40.3",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Cynopterus minutus","26.45",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Cynopterus nusatenggara","36.44",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
+"Cynopterus sph. angulatus","33.1",,,,,,,,,,,,,,,,,,,,,,
 "Cynopterus sphinx","43.03",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
-"Cynopterus sphinx sphinx","55.3333",,,,,,,,,,,,,,,,,,,,,,
+"Cynopterus sphinx sphinx","51.7",,,,,,,,,,,,,,,,,,,,,,
 "Cynopterus titthaecheilus","58.33",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Cynoscion nebulosus","565.39",,,,,,,,,,,,,,,,,,,,,,
 "Cynoscion regalis","1187.5",,,,,,,,,,,,,,,,,,,,,,
 "Cystophora cristata","282840",,,,,,,,"20","0","0","80","0","0","0","0","0","0","2","Fish","Faunivore","Marine","Diurnal"
 "Cyttarops alecto","5.3",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"D. molucc. anderseni ) §)","234",,,,,,,,,,,,,,,,,,,,,,
+"D. molucc. magna §)","465",,,,,,,,,,,,,,,,,,,,,,
 "Dacelo novaeguineae","350",,,,,,,,,,,,,,,,,,,,,,
 "Dacnomys millardi","73.99",,,,,,,,"10","0","0","0","0","0","10","0","20","60","4","Other plant","Herbivore","Ground","Nocturnal"
 "Dactylomys boliviensis","728.8",,,,,,,,"0","0","0","0","0","0","0","0","0","100","1","Other plant","Herbivore","Arboreal","Nocturnal"
@@ -1624,7 +1630,7 @@
 "Desmarest's hutia","2630",,,,,,,,,,,,,,,,,,,,,,
 "Desmodilliscus braueri","10",,,,,,,,"0","0","0","0","0","0","0","0","100","0","1","Seed","Herbivore","Ground","Nocturnal"
 "Desmodillus auricularis","62.6","87.72","1.22",,,,,,"30","0","0","0","0","0","0","0","70","0","2","Seed","Herbivore","Ground","Nocturnal"
-"Desmodus rotundus","29.5","26.8","0.9116",,,,,,"0","100","0","0","0","0","0","0","0","0","1","Endotherm vertebrates","Faunivore","Ground","Nocturnal"
+"Desmodus rotundus","31.7667","26.8","0.9116",,,,,,"0","100","0","0","0","0","0","0","0","0","1","Endotherm vertebrates","Faunivore","Ground","Nocturnal"
 "Desmodus rufus","33",,,,,,,,,,,,,,,,,,,,,,
 "Desmomys harringtoni","90",,,,,,,,"10","0","0","0","0","0","10","0","20","60","4","Other plant","Herbivore","Scansorial","Nocturnal"
 "Desmomys yaldeni","90",,,,,,,,"10","0","0","0","0","0","10","0","20","60","4","Other plant","Herbivore","Scansorial","Nocturnal"
@@ -1658,7 +1664,7 @@
 "Dinaromys bogdanovi","56",,,,,,,,"0","0","0","0","0","0","0","0","0","100","1","Other plant","Herbivore","Ground","Nocturnal"
 "Dinomys branickii","14000",,,,,,,,"0","0","0","0","0","0","40","0","0","60","2","Other plant","Herbivore","Ground","Nocturnal"
 "Diomys crumpi","73.85",,,,,,,,"10","0","0","0","0","0","10","0","20","60","4","Other plant","Herbivore","Ground","Nocturnal"
-"Diphylla ecaudata","29.725","33.9","1.2194",,,,,,"0","100","0","0","0","0","0","0","0","0","1","Endotherm vertebrates","Faunivore","Ground","Nocturnal"
+"Diphylla ecaudata","30.9","33.9","1.2194",,,,,,"0","100","0","0","0","0","0","0","0","0","1","Endotherm vertebrates","Faunivore","Ground","Nocturnal"
 "Diplogale hosei","3124.89",,,,,,,,"60","0","0","0","40","0","0","0","0","0","2","Invertebrates","Faunivore","Ground","Nocturnal"
 "Diplomesodon pulchellum","11",,,,,,,,"50","0","50","0","0","0","0","0","0","0","2","Invertebrates","Faunivore","Ground","Cathemeral"
 "Diplomys caniceps","394.5",,,,,,,,"0","0","0","0","0","0","50","0","50","0","2","Fruit","Herbivore","Scansorial","Nocturnal"
@@ -1706,13 +1712,14 @@
 "Dobsonia crenulata","218.21",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Dobsonia emersa","195.5",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Dobsonia exoleta","249",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
-"Dobsonia inermis","152.7778",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
+"Dobsonia inermis","149",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Dobsonia magna","465",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Dobsonia minor","79.29","92","1.1346",,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Dobsonia moluccensis","398.81","367.9","0.91",,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Dobsonia pannietensis","267.7",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Dobsonia peronii","226.51",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Dobsonia praedatrix","186.05","142.5","0.7939",,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
+"Dobsonia praedatrix )","178",,,,,,,,,,,,,,,,,,,,,,
 "Dobsonia spec?","217.7333",,,,,,,,,,,,,,,,,,,,,,
 "Dobsonia viridis","238",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Dolichotis patagonum","8000",,,,,,,,"0","0","0","0","0","0","0","0","0","100","1","Other plant","Herbivore","Ground","Diurnal"
@@ -1783,7 +1790,7 @@
 "Ectophylla macconnelli","7.5",,,,,,,,,,,,,,,,,,,,,,
 "Egyptian rousette","146",,,,,,,,,,,,,,,,,,,,,,
 "Eidolon dupreanum","283.75",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Cathemeral"
-"Eidolon helvum","256.2422",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Cathemeral"
+"Eidolon helvum","262",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Cathemeral"
 "Eira barbara","3176.01","1221.3","0.414",,,,,,"0","90","0","0","0","0","10","0","0","0","2","Endotherm vertebrates","Faunivore","Ground","Cathemeral"
 "Eland","141404",,,,,,,,,,,,,,,,,,,,,,
 "Elaphodus cephalophus","33500",,,,,,,,"0","0","0","0","0","0","0","0","0","100","1","Other plant","Herbivore","Ground","Cathemeral"
@@ -1827,13 +1834,13 @@
 "Emballonura beccarii","4.9625",,,,,,,,"90","0","0","0","0","0","10","0","0","0","2","Invertebrates","Faunivore","Aerial","Diurnal"
 "Emballonura dianae","7.97",,,,,,,,"90","0","0","0","0","0","10","0","0","0","2","Invertebrates","Faunivore","Aerial","Diurnal"
 "Emballonura furax","11.15",,,,,,,,"90","0","0","0","0","0","10","0","0","0","2","Invertebrates","Faunivore","Aerial","Diurnal"
-"Emballonura monticola","5.5489",,,,,,,,"90","0","0","0","0","0","10","0","0","0","2","Invertebrates","Faunivore","Aerial","Diurnal"
+"Emballonura monticola","5.3",,,,,,,,"90","0","0","0","0","0","10","0","0","0","2","Invertebrates","Faunivore","Aerial","Diurnal"
 "Emballonura nigrescens","2.7333",,,,,,,,,,,,,,,,,,,,,,
-"Emballonura raffrayana","5.75",,,,,,,,"90","0","0","0","0","0","10","0","0","0","2","Invertebrates","Faunivore","Aerial","Diurnal"
-"Emballonura semicaudata","6.8",,,,,,,,"90","0","0","0","0","0","10","0","0","0","2","Invertebrates","Faunivore","Aerial","Diurnal"
+"Emballonura raffrayana","5.9",,,,,,,,"90","0","0","0","0","0","10","0","0","0","2","Invertebrates","Faunivore","Aerial","Diurnal"
+"Emballonura semicaudata","7",,,,,,,,"90","0","0","0","0","0","10","0","0","0","2","Invertebrates","Faunivore","Aerial","Diurnal"
 "Emballonura serii","5.75",,,,,,,,"80","0","0","0","0","0","20","0","0","0","2","Invertebrates","Faunivore","Aerial","Diurnal"
 "Emphysema, antitrypsin deficiency","75000",,,,,,,,,,,,,,,,,,,,,,
-"Enchisthenes harti","16.375",,,,,,,,,,,,,,,,,,,,,,
+"Enchisthenes harti","16.1",,,,,,,,,,,,,,,,,,,,,,
 "Enchisthenes hartii","16.99",,,,,,,,"10","0","0","0","0","0","80","10","0","0","3","Fruit","Herbivore","Arboreal","Nocturnal"
 "Enhydra lutris","25998.8527","20115","0.7193",,,,,,"50","0","0","50","0","0","0","0","0","0","2","Invertebrates","Faunivore","Marine","Diurnal"
 "Eoglaucomys fimbriatus","510",,,,,,,,"20","0","20","0","0","0","0","0","20","40","4","Other plant","Omnivore","Arboreal","Nocturnal"
@@ -1841,7 +1848,7 @@
 "Eolagurus przewalskii","28.03",,,,,,,,"0","0","0","0","0","0","0","0","30","70","2","Other plant","Herbivore","Ground","Diurnal"
 "Eonycteris major","72.75",,,,,,,,"0","0","0","0","0","0","0","100","0","0","1","Nectar","Herbivore","Arboreal","Nocturnal"
 "Eonycteris robusta","78.36",,,,,,,,"0","0","0","0","0","0","0","100","0","0","1","Nectar","Herbivore","Arboreal","Nocturnal"
-"Eonycteris spelaea","50","48","0.9302",,,,,,"0","0","0","0","0","0","0","100","0","0","1","Nectar","Herbivore","Arboreal","Nocturnal"
+"Eonycteris spelaea","52.9","48","0.9302",,,,,,"0","0","0","0","0","0","0","100","0","0","1","Nectar","Herbivore","Arboreal","Nocturnal"
 "Eospalax fontanierii","256.76",,,,,,,,"0","0","0","0","0","0","0","0","50","50","2","Seed","Herbivore","Ground","Nocturnal"
 "Eospalax rothschildi","256.76",,,,,,,,"0","0","0","0","0","0","0","0","50","50","2","Seed","Herbivore","Ground","Nocturnal"
 "Eospalax smithii","256.76",,,,,,,,"0","0","0","0","0","0","0","0","50","50","2","Seed","Herbivore","Ground","Nocturnal"
@@ -1861,27 +1868,31 @@
 "Epixerus ebii","526","241.7","0.5254",,,,,,"20","0","0","0","0","0","80","0","0","0","2","Fruit","Herbivore","Ground","Diurnal"
 "Epomophorus angolensis","68.15",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Epomophorus crypturus","95.04",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
-"Epomophorus gambianus","218.935",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
+"Epomophorus gambianus","309",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Epomophorus grandis","48.58",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
-"Epomophorus labiatus","64.0722",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
+"Epomophorus labiatus","63.9",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Epomophorus minimus","68.15",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Epomophorus minor","44.76",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
-"Epomophorus wahlbergi","89.4189","112.0967","1.1755",,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
+"Epomophorus wahlbergi","74.1","112.0967","1.1755",,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Epomops buettikoferi","133.84",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Epomops dobsonii","122.08",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Epomops franqueti","118.8489",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
+"Epomops franqueti )","118",,,,,,,,,,,,,,,,,,,,,,
 "Eptesicus andinus","10.96",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Eptesicus bobrinskoi","7.55",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Eptesicus bottae","14.23",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Eptesicus br. melanopterus","8.8",,,,,,,,,,,,,,,,,,,,,,
 "Eptesicus brasil. melanopterus","8.9",,,,,,,,,,,,,,,,,,,,,,
-"Eptesicus brasiliensis","9.1556",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Eptesicus brasiliensis","9.2",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Eptesicus chiriquinus","11.25",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Eptesicus demissus","15",,,,,,,,,,,,,,,,,,,,,,
 "Eptesicus diminutus","6",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Eptesicus dimissus","14.015",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Eptesicus flavescens","10.45",,,,,,,,,,,,,,,,,,,,,,
+"Eptesicus flavescens","10.5",,,,,,,,,,,,,,,,,,,,,,
 "Eptesicus floweri","10.17",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Eptesicus furinalis","7.67",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Eptesicus fuscus","14.7","16.5325","1.0916",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Eptesicus fuscus","14.15","16.5325","1.0916",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Eptesicus gaumeri","7.6",,,,,,,,,,,,,,,,,,,,,,
 "Eptesicus gobiensis","10.96",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Eptesicus guadeloupensis","11.42",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Eptesicus hottentotus","30",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
@@ -1891,10 +1902,11 @@
 "Eptesicus matroka","6.57",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Eptesicus nasutus","7.91",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Eptesicus nilssonii","10.72",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Eptesicus pachyotis","7.44",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Eptesicus pachyotis","6.6",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Eptesicus platyops","11.42",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Eptesicus pumilus","5.65",,,,,,,,,,,,,,,,,,,,,,
-"Eptesicus serotinus","24.0033","43.1","1.5963",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Eptesicus pumilus","5.4",,,,,,,,,,,,,,,,,,,,,,
+"Eptesicus s. andersoni","20.9",,,,,,,,,,,,,,,,,,,,,,
+"Eptesicus serotinus","23.4","43.1","1.5963",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Eptesicus serotinus andersoni","21.1333",,,,,,,,,,,,,,,,,,,,,,
 "Eptesicus tatei","11.42",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Equus","250000",,,,,,,,,,,,,,,,,,,,,,
@@ -1952,14 +1964,14 @@
 "Eulemur rufus","2224.78","435","0.16",,,,,,"0","0","0","0","0","0","30","0","0","70","2","Other plant","Herbivore","Arboreal","Diurnal"
 "Eulemur sanfordi","2394.03",,,,,,,,"0","0","0","0","0","0","80","0","0","20","2","Fruit","Herbivore","Arboreal","Diurnal"
 "Eumetopias jubatus","643775","71284","0.4912",,,,,,"0","0","0","100","0","0","0","0","0","0","1","Fish","Faunivore","Marine","Nocturnal"
-"Eumops auripendulus","31.6722",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Eumops auripendulus","33.8",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Eumops bonariensis","11.9",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Eumops dabbenei","104.35",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Eumops glaucinus","36.36",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Eumops glaucinus","36.5",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Eumops hansae","15.05",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Eumops maurus","29.38",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Eumops patagonicus","34.01",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Eumops perotis","51.5433","39.8","0.7107",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Eumops perotis","47.5","39.8","0.7107",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Eumops trumbulli","34.01",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Eumops underwoodi","54.7",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Eumunida picta","8.6",,,,,,,,,,,,,,,,,,,,,,
@@ -2071,7 +2083,7 @@
 "Funisciurus leucogenys","250",,,,,,,,"10","0","0","0","0","0","40","0","50","0","3","Seed","Herbivore","Arboreal","Diurnal"
 "Funisciurus pyrropus","200","184.7","0.7198",,,,,,"10","0","0","0","0","0","40","0","50","0","3","Seed","Herbivore","Arboreal","Diurnal"
 "Funisciurus substriatus","186",,,,,,,,"10","0","0","0","0","0","40","0","50","0","3","Seed","Herbivore","Arboreal","Diurnal"
-"Furipterus horrens","3.35",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Furipterus horrens","3.43",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Galago","1111.8",,,,,,,,,,,,,,,,,,,,,,
 "Galago alleni","266.5",,,,,,,,"40","0","0","0","0","0","0","60","0","0","2","Nectar","Omnivore","Arboreal","Nocturnal"
 "Galago alleni group","251.5",,,,,,,,,,,,,,,,,,,,,,
@@ -2232,25 +2244,25 @@
 "Glauconycteris curryae","8.11",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Glauconycteris egeria","8.42",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Glauconycteris gleni","10.81",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Glauconycteris humeralis","5.495",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Glauconycteris humeralis","5.5",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Glauconycteris kenyacola","7.17",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Glauconycteris machadoi","8.11",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Glauconycteris poensis","8.0367",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Glauconycteris poensis","8.6",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Glauconycteris superba","8.42",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Glauconycteris variegata","11.25",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Glironia venusta","114",,,,,,,,"40","0","0","0","20","0","20","0","20","0","4","Invertebrates","Omnivore","Arboreal","Nocturnal"
 "Glirulus japonicus","25",,,,,,,,"30","0","0","0","20","0","30","0","20","0","4","Invertebrates","Omnivore","Arboreal","Nocturnal"
 "Glischropus javanus","5.91",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Glischropus tylopus","4.8244",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Glischropus tylopus","4.9",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Globicephala macrorhynchus","612666.6633",,,"63","452","730","1","3470","90","0","0","10","0","0","0","0","0","0","2","Invertebrates","Faunivore","Marine","Nocturnal"
 "Globicephala melas","974000",,,,,,,,"90","0","0","10","0","0","0","0","0","0","2","Invertebrates","Faunivore","Marine","Nocturnal"
 "Glossina morsitans morsitans","0.02",,,,,,,,,,,,,,,,,,,,,,
 "Glossina pallidipes","0.0092",,,,,,,,,,,,,,,,,,,,,,
 "Glossophaga commissarisi","8.9",,,,,,,,"40","0","0","0","0","0","30","30","0","0","3","Invertebrates","Omnivore","Arboreal","Nocturnal"
 "Glossophaga leachii","10.1",,,,,,,,"40","0","0","0","0","0","30","30","0","0","3","Invertebrates","Omnivore","Arboreal","Nocturnal"
-"Glossophaga longirostris","11.805","26.5","1.963",,,,,,"40","0","0","0","0","0","30","30","0","0","3","Invertebrates","Omnivore","Arboreal","Nocturnal"
+"Glossophaga longirostris","11.3","26.5","1.963",,,,,,"40","0","0","0","0","0","30","30","0","0","3","Invertebrates","Omnivore","Arboreal","Nocturnal"
 "Glossophaga morenoi","8.4",,,,,,,,"40","0","0","0","0","0","30","30","0","0","3","Invertebrates","Omnivore","Arboreal","Nocturnal"
-"Glossophaga soricina","10.8","23.945","2.4252",,,,,,"40","0","0","0","0","0","30","30","0","0","3","Invertebrates","Omnivore","Arboreal","Nocturnal"
+"Glossophaga soricina","10.575","23.945","2.4252",,,,,,"40","0","0","0","0","0","30","30","0","0","3","Invertebrates","Omnivore","Arboreal","Nocturnal"
 "Glyphonycteris behnii","11.32",,,,,,,,"80","0","0","0","0","0","20","0","0","0","2","Invertebrates","Faunivore","Scansorial","Nocturnal"
 "Glyphonycteris daviesi","18.61",,,,,,,,"80","0","0","0","0","0","20","0","0","0","2","Invertebrates","Faunivore","Scansorial","Nocturnal"
 "Glyphonycteris sylvestris","8.91",,,,,,,,"80","0","0","0","0","0","20","0","0","0","2","Invertebrates","Faunivore","Scansorial","Nocturnal"
@@ -2342,6 +2354,8 @@
 "Gulo gulo","13437.52","5842","0.46",,,,,,"0","20","0","0","20","40","20","0","0","0","4","Carrion/scavenge","Faunivore","Ground","Nocturnal"
 "Gymnobelideus leadbeateri","90.5","103.1","0.62",,,,,,"50","0","0","0","0","0","0","50","0","0","2","Invertebrates","Omnivore","Arboreal","Nocturnal"
 "Gymnuromys roberti","97.5",,,,,,,,"20","0","0","0","0","0","30","0","40","10","4","Seed","Herbivore","Ground","Nocturnal"
+"H. magg. maggietaylorae §)","24.9",,,,,,,,,,,,,,,,,,,,,,
+"H. maggietaylorae erroris §)","16.1",,,,,,,,,,,,,,,,,,,,,,
 "Habromys chinanteco","40",,,,,,,,"50","0","0","0","0","10","20","0","20","0","4","Invertebrates","Omnivore","Ground","Nocturnal"
 "Habromys delicatulus","48.29",,,,,,,,"50","0","0","0","0","10","20","0","20","0","4","Invertebrates","Omnivore","Ground","Nocturnal"
 "Habromys ixtlani","48.29",,,,,,,,"50","0","0","0","0","10","20","0","20","0","4","Invertebrates","Omnivore","Ground","Nocturnal"
@@ -2369,7 +2383,7 @@
 "Haplonycteris fischeri","17.96",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Harbor seal","27400",,,,,,,,,,,,,,,,,,,,,,
 "Harmothoe imbricata","0.2",,,,,,,,,,,,,,,,,,,,,,
-"Harpiocephalus harpia","14.4367",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Harpiocephalus harpia","13.5",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Harpiocephalus mordax","16.31",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Harpyionycteris celebensis","104",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Harpyionycteris whiteheadi","110.5",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
@@ -2414,7 +2428,7 @@
 "Herpestes urva","2111.6",,,,,,,,"30","20","30","10","0","0","10","0","0","0","5","Invertebrates","Faunivore","Ground","Cathemeral"
 "Herpestes vitticollis","2432.795",,,,,,,,"30","20","30","10","0","0","10","0","0","0","5","Invertebrates","Faunivore","Ground","Cathemeral"
 "Herring gull","1000",,,,,,,,,,,,,,,,,,,,,,
-"Hesperoptenus blanfordi","7.0544",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Hesperoptenus blanfordi","7.3",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Hesperoptenus doriae","9.56",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Hesperoptenus gaskelli","13.07",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Hesperoptenus tickelli","16.3",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
@@ -2437,22 +2451,30 @@
 "Hexaprotodon liberiensis","158000.58",,,,,,,,"0","0","0","0","0","0","10","0","0","90","2","Other plant","Herbivore","Ground","Nocturnal"
 "Hexolobodon phenax","1350.1",,,,,,,,"0","0","0","0","0","0","30","0","0","70","2","Other plant","Herbivore","Ground","Nocturnal"
 "Highland gerbil mouse","17.5",,,,,,,,,,,,,,,,,,,,,,
+"Hipp. calcar. calcaratus §)","13.1",,,,,,,,,,,,,,,,,,,,,,
+"Hipp. calcar. cupidus §)","9.6",,,,,,,,,,,,,,,,,,,,,,
 "Hippocamelus antisensis","68599.35",,,,,,,,"0","0","0","0","0","0","0","0","0","100","1","Other plant","Herbivore","Ground","Cathemeral"
 "Hippocamelus bisulcus","70000.32",,,,,,,,"0","0","0","0","0","0","0","0","0","100","1","Other plant","Herbivore","Ground","Cathemeral"
 "Hippopotamus amphibius","1375500",,,,"240",,,,"0","0","0","0","0","0","0","0","0","100","1","Other plant","Herbivore","Ground","Nocturnal"
 "Hipposideros abae","9.31",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Hipposideros armiger","55.0667","32.9","0.6196",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Hipposideros ater","6.3733",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Hipposideros armiger","56","32.9","0.6196",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Hipposideros ater","6.9",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Hipposideros ater aruensis","5.5",,,,,,,,,,,,,,,,,,,,,,
 "Hipposideros ater saevus","4.2",,,,,,,,,,,,,,,,,,,,,,
+"Hipposideros ater ssp.","7.2",,,,,,,,,,,,,,,,,,,,,,
 "Hipposideros beatus","6.65",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Hipposideros bicolor","8.4",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Hipposideros bicolor atrox","8.3",,,,,,,,,,,,,,,,,,,,,,
+"Hipposideros bicolor gentilis","6.2",,,,,,,,,,,,,,,,,,,,,,
 "Hipposideros breviceps","9.31",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Hipposideros caffer","10.7",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Hipposideros caffer","10.85",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Hipposideros caffer ssp.","10.4",,,,,,,,,,,,,,,,,,,,,,
 "Hipposideros calcaratus","12.8556",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Hipposideros calcaratus ssp.","13",,,,,,,,,,,,,,,,,,,,,,
 "Hipposideros camerunensis","23.28",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Hipposideros cervinus","8.3","8.96","1.0795",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Hipposideros cervinus","7.3","8.96","1.0795",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Hipposideros cineraceus","4.11",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Hipposideros commersoni )","99.2",,,,,,,,,,,,,,,,,,,,,,
 "Hipposideros coronatus","10.59",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Hipposideros corynophyllus","14.5",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Hipposideros coxi","9.25",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
@@ -2462,26 +2484,27 @@
 "Hipposideros cyclops","33.5",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Hipposideros demissus","13.94",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Hipposideros diadema","42.6712","33","0.8871",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Hipposideros diadema )","41.9",,,,,,,,,,,,,,,,,,,,,,
 "Hipposideros dinops","74.5",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Hipposideros doriae","4.24",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Hipposideros durgadasi","13.94",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Hipposideros dyacorum","6.05",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Hipposideros edwardshilli","13.94",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Hipposideros fuliginosus","9.31",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Hipposideros fulvus","7.4333",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Hipposideros galeritus","9.0267","9.35","1.1",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Hipposideros fulvus","7",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Hipposideros galeritus","10.4","9.35","1.1",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Hipposideros galeritus ssp.","7.3333",,,,,,,,,,,,,,,,,,,,,,
 "Hipposideros gigas","115.42",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Hipposideros grandis","13.94",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Hipposideros halophyllus","3.9833",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Hipposideros halophyllus","4",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Hipposideros hypophyllus","13.94",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Hipposideros inexpectatus","21.41",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Hipposideros inornatus","25.9",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Hipposideros jonesi","5.5",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Hipposideros lamottei","9.78",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Hipposideros lankadiva","49.3778",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Hipposideros larvatus","19.5444",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Hipposideros lekaguli","30.3556",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Hipposideros lankadiva","48.5",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Hipposideros larvatus","20.5",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Hipposideros lekaguli","30.3",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Hipposideros lylei","40",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Hipposideros macrobullatus","9.31",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Hipposideros madurae","13.94",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
@@ -2497,19 +2520,19 @@
 "Hipposideros pomona","6.2",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Hipposideros pratti","31.8",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Hipposideros pygmaeus","3.5",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Hipposideros ridleyi","9.4267",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Hipposideros ridleyi","9.6",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Hipposideros rotalis","13.94",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Hipposideros ruber","8.705",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Hipposideros ruber","7.3",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Hipposideros scutinares","13.94",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Hipposideros semoni","14",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Hipposideros sorenseni","13.94",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Hipposideros speoris","11.06",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Hipposideros speoris","11.5",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Hipposideros stenotis","12",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Hipposideros sumbae","13.94",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Hipposideros terasensis","57",,,,,,,,,,,,,,,,,,,,,,
 "Hipposideros thomensis","13.94",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Hipposideros tridens","14",,,,,,,,,,,,,,,,,,,,,,
-"Hipposideros turpis","33.6722",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Hipposideros turpis","34.8",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Hipposideros vittatus","13.94",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Hipposideros wollastoni","6.75",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Hippotion irregularis","1",,,,,,,,,,,,,,,,,,,,,,
@@ -2612,7 +2635,7 @@
 "Hyperoodon planifrons","3e+06",,,,,,,,"80","0","0","20","0","0","0","0","0","0","2","Invertebrates","Faunivore","Marine","Cathemeral"
 "Hypogeomys antimena","1250",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Ground","Nocturnal"
 "Hypolimnas bolina jacintha","0.2",,,,,,,,,,,,,,,,,,,,,,
-"Hypsignathus monstrosus","340",,,,,,,,"0","10","0","0","0","0","90","0","0","0","2","Fruit","Herbivore","Arboreal","Nocturnal"
+"Hypsignathus monstrosus","325",,,,,,,,"0","10","0","0","0","0","90","0","0","0","2","Fruit","Herbivore","Arboreal","Nocturnal"
 "Hypsiprymnodon moschatus","520",,,,,,,,"70","0","0","0","0","0","20","0","0","10","3","Invertebrates","Faunivore","Ground","Diurnal"
 "Hypsugo alaschanicus","5.12",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Hypsugo anchietae","9.56",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
@@ -2704,8 +2727,8 @@
 "Kerivoula minuta","2.07",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Kerivoula muscina","5.15",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Kerivoula myrella","6.5",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Kerivoula papillosa","10",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Kerivoula pellucida","4.11",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Kerivoula papillosa","10.1",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Kerivoula pellucida","4.1",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Kerivoula phalaena","3",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Kerivoula picta","4.5",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Kerivoula smithii","5.03",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
@@ -2782,7 +2805,7 @@
 "Lasiorhinus latifrons","29917","2525","0.1",,,,,,"0","0","0","0","0","0","0","0","0","100","1","Other plant","Herbivore","Ground","Nocturnal"
 "Lasiurus atratus","14.57",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Lasiurus blossevillii","9.5",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Lasiurus borealis","11","17.45","1.4303",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Lasiurus borealis","9.4","17.45","1.4303",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Lasiurus castaneus","13.63",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Lasiurus cinereus","33","28.26","1.2215",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Lasiurus degelidus","14.57",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
@@ -2799,6 +2822,7 @@
 "Lasiurus xanthinus","14.57",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Latidens salimalii","44",,,,,,,,"0","0","0","0","0","0","80","20","0","0","2","Fruit","Herbivore","Arboreal","Nocturnal"
 "Lavia frons","23.6767",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Scansorial","Cathemeral"
+"Laviafrons","23.4",,,,,,,,,,,,,,,,,,,,,,
 "Laysan albatross","2522",,,,,,,,,,,,,,,,,,,,,,
 "Leadbeater's possum","166",,,,,,,,,,,,,,,,,,,,,,
 "Least chipmunk","49.3",,,,,,,,,,,,,,,,,,,,,,
@@ -2869,7 +2893,7 @@
 "Leptomys signatus","52.04",,,,,,,,"50","0","0","0","50","0","0","0","0","0","2","Invertebrates","Faunivore","Ground","Nocturnal"
 "Leptonychotes weddellii","378666.6667","83674.6667","0.2227",,,,,,"40","0","0","60","0","0","0","0","0","0","2","Fish","Faunivore","Marine","Diurnal"
 "Leptonycteris curasoae","24.5","34.1","1.4208",,,,,,"20","0","0","0","0","0","40","40","0","0","3","Fruit","Herbivore","Arboreal","Nocturnal"
-"Leptonycteris nivalis","23.78",,,,,,,,"20","0","0","0","0","0","40","40","0","0","3","Fruit","Herbivore","Arboreal","Nocturnal"
+"Leptonycteris nivalis","22.8",,,,,,,,"20","0","0","0","0","0","40","40","0","0","3","Fruit","Herbivore","Arboreal","Nocturnal"
 "Leptonycteris yerbabuenae","22.12","36.5","1.6591",,,,,,"20","0","0","0","0","0","40","40","0","0","3","Fruit","Herbivore","Arboreal","Nocturnal"
 "Lepus alleni","3433.01","1583","0.5005",,,,,,"0","0","0","0","0","0","0","0","0","100","1","Other plant","Herbivore","Ground","Nocturnal"
 "Lepus americanus","1500","1295","0.8579",,,,,,"0","0","0","0","0","0","0","0","0","100","1","Other plant","Herbivore","Ground","Nocturnal"
@@ -2927,11 +2951,11 @@
 "Liomys salvini","44.9","51.0333","1.1652",,,,,,"0","0","0","0","0","0","0","0","50","50","2","Seed","Herbivore","Ground","Nocturnal"
 "Liomys spectabilis","65",,,,,,,,"0","0","0","0","0","0","0","0","50","50","2","Seed","Herbivore","Ground","Nocturnal"
 "Lion","98000",,,,,,,,,,,,,,,,,,,,,,
-"Lionycteris spurrelli","7.9656",,,,,,,,"30","0","0","0","0","0","60","10","0","0","3","Fruit","Herbivore","Arboreal","Nocturnal"
+"Lionycteris spurrelli","7.55",,,,,,,,"30","0","0","0","0","0","60","10","0","0","3","Fruit","Herbivore","Arboreal","Nocturnal"
 "Lipotes vexillifer","147833.3333",,,,,,,,"0","0","0","100","0","0","0","0","0","0","1","Fish","Faunivore","Marine","Diurnal"
 "Lissodelphis borealis","93000",,,,,,,,"40","0","0","60","0","0","0","0","0","0","2","Fish","Faunivore","Marine","Cathemeral"
 "Lissodelphis peronii","116000",,,,,,,,"40","0","0","60","0","0","0","0","0","0","2","Fish","Faunivore","Marine","Cathemeral"
-"Lissonycteris angolensis","76.23",,,,,,,,"0","0","0","0","0","0","60","40","0","0","2","Fruit","Herbivore","Arboreal","Nocturnal"
+"Lissonycteris angolensis","84.3",,,,,,,,"0","0","0","0","0","0","60","40","0","0","2","Fruit","Herbivore","Arboreal","Nocturnal"
 "Litocranius walleri","38874.845",,,,,,,,"0","0","0","0","0","0","0","0","0","100","1","Other plant","Herbivore","Ground","Cathemeral"
 "Little brown bat","5.8",,,,,,,,,,,,,,,,,,,,,,
 "Little golden-mantled flying fox","194.2",,,,,,,,,,,,,,,,,,,,,,
@@ -2949,8 +2973,8 @@
 "Lonchophylla hesperia","11.8",,,,,,,,"40","0","0","0","0","0","30","30","0","0","3","Invertebrates","Omnivore","Arboreal","Nocturnal"
 "Lonchophylla mordax","10.7",,,,,,,,"40","0","0","0","0","0","30","30","0","0","3","Invertebrates","Omnivore","Arboreal","Nocturnal"
 "Lonchophylla robusta","13",,,,,,,,"40","0","0","0","0","0","30","30","0","0","3","Invertebrates","Omnivore","Arboreal","Nocturnal"
-"Lonchophylla thomasi","6.9833",,,,,,,,"40","0","0","0","0","0","30","30","0","0","3","Invertebrates","Omnivore","Arboreal","Nocturnal"
-"Lonchorhina aurita","16.85",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Scansorial","Nocturnal"
+"Lonchophylla thomasi","6.9",,,,,,,,"40","0","0","0","0","0","30","30","0","0","3","Invertebrates","Omnivore","Arboreal","Nocturnal"
+"Lonchorhina aurita","18",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Scansorial","Nocturnal"
 "Lonchorhina aurita (PHN)","18",,,,,,,,,,,,,,,,,,,,,,
 "Lonchorhina fernandezi","14.32",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Scansorial","Nocturnal"
 "Lonchorhina inusitata","13.29",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Scansorial","Nocturnal"
@@ -3063,13 +3087,13 @@
 "Macaca thibetana","12400",,,,,,,,"10","0","0","0","0","0","30","0","20","40","4","Other plant","Herbivore","Scansorial","Diurnal"
 "Macaca tonkeana","9000",,,,,,,,"10","0","0","0","0","0","30","0","20","40","4","Other plant","Herbivore","Scansorial","Diurnal"
 "Macrobrachium rosenbergii-Australia","200",,,,,,,,,,,,,,,,,,,,,,
-"Macroderma gigas","128.7727","116.7","0.9098",,,,,,"20","70","10","0","0","0","0","0","0","0","3","Endotherm vertebrates","Faunivore","Ground","Nocturnal"
+"Macroderma gigas","119.8","116.7","0.9098",,,,,,"20","70","10","0","0","0","0","0","0","0","3","Endotherm vertebrates","Faunivore","Ground","Nocturnal"
 "Macrogalidia musschenbroekii","4000",,,,,,,,"0","60","0","0","0","0","40","0","0","0","2","Endotherm vertebrates","Omnivore","Scansorial","Nocturnal"
 "Macroglossum limata","1",,,,,,,,,,,,,,,,,,,,,,
-"Macroglossus minimus","16","19.3433","1.2151",,,,,,"0","0","0","0","0","0","20","80","0","0","2","Nectar","Herbivore","Arboreal","Nocturnal"
-"Macroglossus sobrinus","21.3433",,,,,,,,"0","0","0","0","0","0","20","80","0","0","2","Nectar","Herbivore","Arboreal","Nocturnal"
+"Macroglossus minimus","15.3","19.3433","1.2151",,,,,,"0","0","0","0","0","0","20","80","0","0","2","Nectar","Herbivore","Arboreal","Nocturnal"
+"Macroglossus sobrinus","21.8",,,,,,,,"0","0","0","0","0","0","20","80","0","0","2","Nectar","Herbivore","Arboreal","Nocturnal"
 "Macronycteris commersoni","100.58",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Macrophyllum macrophyllum","8.5889",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Macrophyllum macrophyllum","8.6",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Macropus agilis","15000",,,,,,,,"0","0","0","0","0","0","0","0","0","100","1","Other plant","Herbivore","Ground","Nocturnal"
 "Macropus antilopinus","31286",,,,,,,,"0","0","0","0","0","0","0","0","0","100","1","Other plant","Herbivore","Ground","Nocturnal"
 "Macropus bernardus","17000",,,,,,,,"0","0","0","0","0","0","0","0","0","100","1","Other plant","Herbivore","Ground","Nocturnal"
@@ -3225,16 +3249,16 @@
 "Meadow vole","38.2",,,,,,,,,,,,,,,,,,,,,,
 "Meerkat","850",,,,,,,,,,,,,,,,,,,,,,
 "Megadendromus nikolausi","52",,,,,,,,"20","0","0","0","0","0","30","0","40","10","4","Seed","Herbivore","Ground","Nocturnal"
-"Megaderma lyra","42.0642",,,,,,,,"40","30","20","10","0","0","0","0","0","0","4","Invertebrates","Faunivore","Ground","Nocturnal"
-"Megaderma spasma","24.9156",,,,,,,,"40","30","20","10","0","0","0","0","0","0","4","Invertebrates","Faunivore","Ground","Nocturnal"
+"Megaderma lyra","38.6",,,,,,,,"40","30","20","10","0","0","0","0","0","0","4","Invertebrates","Faunivore","Ground","Nocturnal"
+"Megaderma spasma","22.6",,,,,,,,"40","30","20","10","0","0","0","0","0","0","4","Invertebrates","Faunivore","Ground","Nocturnal"
 "Megadontomys cryophilus","76.56",,,,,,,,"0","0","0","0","0","0","80","0","0","20","2","Fruit","Herbivore","Ground","Nocturnal"
 "Megadontomys nelsoni","76.55",,,,,,,,"0","0","0","0","0","0","80","0","0","20","2","Fruit","Herbivore","Ground","Nocturnal"
 "Megadontomys thomasi","111","124","1.1191",,,,,,"0","0","0","0","0","0","80","0","0","20","2","Fruit","Herbivore","Ground","Nocturnal"
-"Megaerops ecaudatus","24.48",,,,,,,,"0","0","0","0","0","0","80","20","0","0","2","Fruit","Herbivore","Arboreal","Nocturnal"
+"Megaerops ecaudatus","24",,,,,,,,"0","0","0","0","0","0","80","20","0","0","2","Fruit","Herbivore","Arboreal","Nocturnal"
 "Megaerops kusnotoi","35.94",,,,,,,,"0","0","0","0","0","0","80","20","0","0","2","Fruit","Herbivore","Arboreal","Nocturnal"
 "Megaerops niphanae","32.6",,,,,,,,"0","0","0","0","0","0","80","20","0","0","2","Fruit","Herbivore","Arboreal","Nocturnal"
 "Megaerops wetmorei","18.5",,,,,,,,"0","0","0","0","0","0","80","20","0","0","2","Fruit","Herbivore","Arboreal","Nocturnal"
-"Megaloglossus woermanni","12","18","1.5957",,,,,,"0","0","0","0","0","0","0","100","0","0","1","Nectar","Herbivore","Arboreal","Nocturnal"
+"Megaloglossus woermanni","14.95","18","1.5957",,,,,,"0","0","0","0","0","0","0","100","0","0","1","Nectar","Herbivore","Arboreal","Nocturnal"
 "Megalomys desmarestii","47.71",,,,,,,,"20","0","0","0","0","0","10","0","40","30","4","Seed","Herbivore","Ground","Nocturnal"
 "Megalomys luciae","47.71",,,,,,,,"20","0","0","0","0","0","10","0","40","30","4","Seed","Herbivore","Ground","Nocturnal"
 "Meganyctiphanes norvegica","0.43",,,,,,,,,,,,,,,,,,,,,,
@@ -3282,7 +3306,7 @@
 "Melomys spechti","86.68",,,,,,,,"0","0","0","0","0","0","60","0","0","40","2","Fruit","Herbivore","Ground","Nocturnal"
 "Melomys talaudium","86.68",,,,,,,,"0","0","0","0","0","0","60","0","0","40","2","Fruit","Herbivore","Ground","Nocturnal"
 "Melonycteris fardoulisi","42.53",,,,,,,,"0","0","0","0","0","0","30","70","0","0","2","Nectar","Herbivore","Arboreal","Nocturnal"
-"Melonycteris melanops","49.5058","43.2","0.8105",,,,,,"0","0","0","0","0","0","30","70","0","0","2","Nectar","Herbivore","Arboreal","Nocturnal"
+"Melonycteris melanops","47.3","43.2","0.8105",,,,,,"0","0","0","0","0","0","30","70","0","0","2","Nectar","Herbivore","Arboreal","Nocturnal"
 "Melonycteris woodfordi","36.19",,,,,,,,"0","0","0","0","0","0","30","70","0","0","2","Nectar","Herbivore","Arboreal","Nocturnal"
 "Melopsittacus undulatus","35.33",,,,,,,,,,,,,,,,,,,,,,
 "Melursus ursinus","136080","8437","0.126",,,,,,"70","0","0","0","0","0","10","0","0","20","3","Invertebrates","Faunivore","Ground","Nocturnal"
@@ -3393,11 +3417,11 @@
 "Micronycteris hirsuta","12.01",,,,,,,,"80","0","0","0","0","0","20","0","0","0","2","Invertebrates","Faunivore","Scansorial","Nocturnal"
 "Micronycteris homezi","6.8",,,,,,,,"80","0","0","0","0","0","20","0","0","0","2","Invertebrates","Faunivore","Scansorial","Nocturnal"
 "Micronycteris matses","6.85",,,,,,,,"80","0","0","0","0","0","20","0","0","0","2","Invertebrates","Faunivore","Scansorial","Nocturnal"
-"Micronycteris megalotis","6.3256",,,,,,,,"80","0","0","0","0","0","20","0","0","0","2","Invertebrates","Faunivore","Scansorial","Nocturnal"
+"Micronycteris megalotis","6.5",,,,,,,,"80","0","0","0","0","0","20","0","0","0","2","Invertebrates","Faunivore","Scansorial","Nocturnal"
 "Micronycteris microtis","6.5",,,,,,,,"80","0","0","0","0","0","20","0","0","0","2","Invertebrates","Faunivore","Scansorial","Nocturnal"
-"Micronycteris minuta","6.7667",,,,,,,,"80","0","0","0","0","0","20","0","0","0","2","Invertebrates","Faunivore","Scansorial","Nocturnal"
+"Micronycteris minuta","6.9",,,,,,,,"80","0","0","0","0","0","20","0","0","0","2","Invertebrates","Faunivore","Scansorial","Nocturnal"
 "Micronycteris sanborni","6.3",,,,,,,,"80","0","0","0","0","0","20","0","0","0","2","Invertebrates","Faunivore","Scansorial","Nocturnal"
-"Micronycteris schmidtorum","7.7544",,,,,,,,"80","0","0","0","0","0","20","0","0","0","2","Invertebrates","Faunivore","Scansorial","Nocturnal"
+"Micronycteris schmidtorum","7.8",,,,,,,,"80","0","0","0","0","0","20","0","0","0","2","Invertebrates","Faunivore","Scansorial","Nocturnal"
 "Microperoryctes longicauda","538",,,,,,,,"60","0","0","0","10","0","0","0","0","30","3","Invertebrates","Faunivore","Ground","Nocturnal"
 "Microperoryctes murina","817.52",,,,,,,,"60","0","0","0","10","0","0","0","0","30","3","Invertebrates","Faunivore","Ground","Nocturnal"
 "Microperoryctes papuensis","158",,,,,,,,"60","0","0","0","10","0","0","0","0","30","3","Invertebrates","Faunivore","Ground","Nocturnal"
@@ -3405,7 +3429,7 @@
 "Micropotamogale lamottei","64.2",,,,,,,,"60","0","20","20","0","0","0","0","0","0","3","Invertebrates","Faunivore","Ground","Nocturnal"
 "Micropotamogale ruwenzorii","98.475",,,,,,,,"60","0","20","20","0","0","0","0","0","0","3","Invertebrates","Faunivore","Ground","Nocturnal"
 "Micropteropus intermedius","59.17",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
-"Micropteropus pusillus","25.0344",,,,,,,,"0","0","0","0","0","0","90","10","0","0","2","Fruit","Herbivore","Arboreal","Nocturnal"
+"Micropteropus pusillus","25.1",,,,,,,,"0","0","0","0","0","0","90","10","0","0","2","Fruit","Herbivore","Arboreal","Nocturnal"
 "Microryzomys altissimus","13.5",,,,,,,,"20","0","0","0","0","0","10","0","40","30","4","Seed","Herbivore","Ground","Nocturnal"
 "Microryzomys minutus","13.5",,,,,,,,"20","0","0","0","0","0","10","0","40","30","4","Seed","Herbivore","Ground","Nocturnal"
 "Microsciurus alfari","87.5",,,,,,,,"0","0","0","0","0","0","50","0","50","0","2","Fruit","Herbivore","Arboreal","Diurnal"
@@ -3482,32 +3506,35 @@
 "Mimetillus moloneyi","8.8",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Mimon bennettii","25.2",,,,,,,,"30","0","20","20","0","0","30","0","0","0","4","Invertebrates","Faunivore","Scansorial","Nocturnal"
 "Mimon cozumelae","18.61",,,,,,,,"60","10","0","0","0","0","30","0","0","0","3","Invertebrates","Faunivore","Scansorial","Nocturnal"
-"Mimon crenulatum","14.8",,,,,,,,"50","0","0","0","0","0","50","0","0","0","2","Invertebrates","Omnivore","Scansorial","Nocturnal"
+"Mimon crenulatum","13.3",,,,,,,,"50","0","0","0","0","0","50","0","0","0","2","Invertebrates","Omnivore","Scansorial","Nocturnal"
 "Mimon koepckeae","18.61",,,,,,,,"60","10","0","0","0","0","30","0","0","0","3","Invertebrates","Faunivore","Scansorial","Nocturnal"
 "Mindanao tree shrew","260.6",,,,,,,,,,,,,,,,,,,,,,
 "Miniopterus africanus","9.76",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Miniopterus australis","6.7667",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Miniopterus australis","7.1",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Miniopterus fraterculus","7.3",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Miniopterus fuscus","11.065",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Miniopterus gleni","9",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Miniopterus haradai","8.6333",,,,,,,,,,,,,,,,,,,,,,
-"Miniopterus inflatus","15.0056",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Miniopterus magnater","14.54",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Miniopterus haradai","8.3",,,,,,,,,,,,,,,,,,,,,,
+"Miniopterus inflatus","14.9",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Miniopterus magnater","15",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Miniopterus majori","9",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Miniopterus manavi","7",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Miniopterus medius","10.6033",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Miniopterus medius","11.4",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Miniopterus minor","7.01",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Miniopterus natalensis","10.1","4.89","0.5005",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Miniopterus paululus","9.76",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Miniopterus pusillus","8.605",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Miniopterus pusillus","8.6",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Miniopterus robustior","12.06",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Miniopterus s. arenarius","10.2",,,,,,,,,,,,,,,,,,,,,,
+"Miniopterus s. blepotis","14.3",,,,,,,,,,,,,,,,,,,,,,
+"Miniopterus s. schreibersi","12.5",,,,,,,,,,,,,,,,,,,,,,
 "Miniopterus schreib. arenarius","10.4667",,,,,,,,,,,,,,,,,,,,,,
 "Miniopterus schreib. blepotis","14.3",,,,,,,,,,,,,,,,,,,,,,
-"Miniopterus schreibersi","12.7",,,,,,,,,,,,,,,,,,,,,,
+"Miniopterus schreibersi","12.05",,,,,,,,,,,,,,,,,,,,,,
 "Miniopterus schreibersi ssp.","11.8667",,,,,,,,,,,,,,,,,,,,,,
 "Miniopterus schreibersii","15","25.685","2.3343",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Miniopterus shortridgei","9.76",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Miniopterus tristis","15.6944",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Miniopterus tristis","15.6",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Minopterus macrocneme","9.83",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Miopithecus ogouensis","1577.5",,,,,,,,"20","0","0","0","0","0","80","0","0","0","2","Fruit","Herbivore","Arboreal","Diurnal"
 "Miopithecus talapoin","1171.4286",,,,"164.5","168.3333","1","1395","50","0","0","0","0","0","50","0","0","0","2","Invertebrates","Omnivore","Arboreal","Diurnal"
@@ -3521,19 +3548,20 @@
 "Mogera uchidai","75.85",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Ground","Cathemeral"
 "Mogera wogura","111.5",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Ground","Cathemeral"
 "Mohave ground squirrel","240",,,,,,,,,,,,,,,,,,,,,,
-"Molossops abrasus","32.9333",,,,,,,,,,,,,,,,,,,,,,
+"Molossops abrasus","33.3",,,,,,,,,,,,,,,,,,,,,,
 "Molossops aequatorianus","14.51",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Molossops greenhalli","17.5",,,,,,,,,,,,,,,,,,,,,,
 "Molossops mattogrossensis","6.83",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Molossops neglectus","11",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Molossops planirostris","7.25",,,,,,,,,,,,,,,,,,,,,,
 "Molossops temminckii","6.35",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Molossus ater","35.5333",,,,,,,,,,,,,,,,,,,,,,
+"Molossus ater","33.6",,,,,,,,,,,,,,,,,,,,,,
 "Molossus aztecus","14.86",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Molossus barnesi","14.8",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Molossus coibensis","18.73",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Molossus currentium","17.79",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Molossus molossus","13","20.1","1.2182",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Molossus major","13",,,,,,,,,,,,,,,,,,,,,,
+"Molossus molossus","13.35","20.1","1.2182",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Molossus pretiosus","27",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Molossus rufus","25",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Molossus sinaloae","22.58",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
@@ -3565,7 +3593,8 @@
 "Monodelphis umbristriata","61.54",,,,,,,,"20","20","0","0","0","20","20","0","20","0","5","Invertebrates","Omnivore","Ground","Nocturnal"
 "Monodelphis unistriata","55.3",,,,,,,,"20","20","0","0","0","20","20","0","20","0","5","Invertebrates","Omnivore","Ground","Nocturnal"
 "Monodon monoceros","1352219.9993",,,,,,,,"40","0","0","60","0","0","0","0","0","0","2","Fish","Faunivore","Marine","Cathemeral"
-"Monophyllus plethodon","14.8867",,,,,,,,"20","0","0","0","0","0","40","40","0","0","3","Fruit","Herbivore","Arboreal","Nocturnal"
+"Monophyllus luciae","14.8",,,,,,,,,,,,,,,,,,,,,,
+"Monophyllus plethodon","15",,,,,,,,"20","0","0","0","0","0","40","40","0","0","3","Fruit","Herbivore","Arboreal","Nocturnal"
 "Monophyllus redmani","8.755","11.3","1.2826",,,,,,"20","0","0","0","0","0","40","40","0","0","3","Fruit","Herbivore","Arboreal","Nocturnal"
 "Monticolomys koopmani","25",,,,,,,,"10","0","0","0","0","0","20","0","50","20","4","Seed","Herbivore","Scansorial","Nocturnal"
 "Moonrat","721.2",,,,,,,,,,,,,,,,,,,,,,
@@ -3590,7 +3619,7 @@
 "Mordacia praecox","264.5",,,,,,,,,,,,,,,,,,,,,,
 "Mormoops blainvillei","8.8","8.29","0.9304",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Mormoops magna","11.72",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Mormoops megalophylla","15.6","24.4","1.4788",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Mormoops megalophylla","15.65","24.4","1.4788",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Mormopterus acetabulosus","11",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Mormopterus beccarii","14.525",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Mormopterus doriae","12.5",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
@@ -3643,6 +3672,7 @@
 "Muriculus imberbis","18.5",,,,,,,,"10","0","0","0","0","0","10","0","20","60","4","Other plant","Herbivore","Ground","Nocturnal"
 "Murina aenea","7.38",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Murina aurata","5.74",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Murina c. peninsularis","8.65",,,,,,,,,,,,,,,,,,,,,,
 "Murina cyclotis","8.58",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Murina cyclotis cyclotis","7.1",,,,,,,,,,,,,,,,,,,,,,
 "Murina cyclotis peninsularis","8.65",,,,,,,,,,,,,,,,,,,,,,
@@ -3651,7 +3681,7 @@
 "Murina grisea","6.58",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Murina hilgendorfi","5.92",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Murina huttoni","8.2",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Murina huttoni rubella","8.9",,,,,,,,,,,,,,,,,,,,,,
+"Murina huttoni rubella","8.8",,,,,,,,,,,,,,,,,,,,,,
 "Murina leucogaster","7.55",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Murina puta","6.73",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Murina rozendaali","4.55",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
@@ -3758,7 +3788,7 @@
 "Myomyscus yemeni","52.7",,,,,,,,"80","0","0","0","0","0","0","0","0","20","2","Invertebrates","Faunivore","Ground","Cathemeral"
 "Myonycteris brachycephala","53.39",,,,,,,,"0","0","0","0","0","0","80","20","0","0","2","Fruit","Herbivore","Arboreal","Nocturnal"
 "Myonycteris relicta","52",,,,,,,,"0","0","0","0","0","0","80","20","0","0","2","Fruit","Herbivore","Arboreal","Nocturnal"
-"Myonycteris torquata","38.4433",,,,,,,,"0","0","0","0","0","0","80","20","0","0","2","Fruit","Herbivore","Arboreal","Nocturnal"
+"Myonycteris torquata","36.4",,,,,,,,"0","0","0","0","0","0","80","20","0","0","2","Fruit","Herbivore","Arboreal","Nocturnal"
 "Myoprocta acouchy","757","502.7","0.55",,,,,,"10","0","0","0","0","0","40","0","0","50","3","Other plant","Herbivore","Ground","Diurnal"
 "Myoprocta pratti","966.73",,,,,,,,"20","0","0","0","0","0","40","0","0","40","3","Fruit","Herbivore","Ground","Diurnal"
 "Myopterus daubentonii","23.62",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
@@ -3784,11 +3814,11 @@
 "Myospalax psilurus","259.21",,,,,,,,"0","0","0","0","0","0","0","0","50","50","2","Seed","Herbivore","Ground","Nocturnal"
 "Myotis","30",,,,,,,,,,,,,,,,,,,,,,
 "Myotis abei","7.74",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Myotis adversus","7.8",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Ground","Nocturnal"
+"Myotis adversus","9.5",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Ground","Nocturnal"
 "Myotis aelleni","7.26",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Myotis albescens","4.4444",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Myotis albescens","4",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Myotis alcathoe","7.74",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Myotis altarium","10.9556",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Myotis altarium","11",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Myotis anjouanensis","7.74",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Myotis annamiticus","7.74",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Myotis annectans","9.8",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
@@ -3797,10 +3827,10 @@
 "Myotis auriculus","36.99",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Scansorial","Nocturnal"
 "Myotis australis","5.62",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Myotis austroriparius","7.17","8.625","1.15",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Myotis bechsteini","7.5",,,,,,,,,,,,,,,,,,,,,,
+"Myotis bechsteini","8.5",,,,,,,,,,,,,,,,,,,,,,
 "Myotis bechsteinii","9.2067","9.555","1.0452",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Scansorial","Nocturnal"
 "Myotis blythii","22.47",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Myotis bocagei","7.6",,,,,,,,,,,,,,,,,,,,,,
+"Myotis bocagei","7.3",,,,,,,,,,,,,,,,,,,,,,
 "Myotis bocagii","7.615",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Myotis bombinus","9.46",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Myotis brandtii","5.3",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
@@ -3824,14 +3854,16 @@
 "Myotis fimbriatus","7.74",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Myotis findleyi","5.9",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Myotis formosus","7",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Myotis fortidens","4.35",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Myotis fortidens","4.3",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Myotis frater","7.55",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Myotis gomantongensis","7.74",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Myotis goudoti","5.56",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Myotis grisescens","10.54",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Myotis hajastanicus","7.74",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Myotis hasselti","7.5",,,,,,,,,,,,,,,,,,,,,,
 "Myotis hasseltii","8.125",,,,,,,,"90","0","0","10","0","0","0","0","0","0","2","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Myotis hermani","7.74",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Myotis horsfieldi","6.3",,,,,,,,,,,,,,,,,,,,,,
 "Myotis horsfieldii","6.28",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Myotis hosonoi","7.74",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Myotis ikonnikovi","5.62",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
@@ -3842,7 +3874,7 @@
 "Myotis leibii","5.13",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Myotis levis","5.5",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Myotis longipes","7.25",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Myotis lucifugus","5.2","13.894","2.0645",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Myotis lucifugus","6.55","13.894","2.0645",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Myotis macrodactylus","7.2",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Myotis macropus","7.74",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Myotis macrotarsus","12.5",,,,,,,,"90","0","0","10","0","0","0","0","0","0","2","Invertebrates","Faunivore","Aerial","Nocturnal"
@@ -3851,13 +3883,13 @@
 "Myotis moluccarum","7.74",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Myotis montivagus","8.3",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Myotis morrisi","9.01",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Myotis muricola","4.52",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Myotis myotis","25","47.95","1.918",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Scansorial","Nocturnal"
-"Myotis mystacinus","4",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Myotis nattereri","7.6667","8.27","1.1285",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Scansorial","Nocturnal"
+"Myotis muricola","4.8",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Myotis myotis","25.15","47.95","1.918",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Scansorial","Nocturnal"
+"Myotis mystacinus","4.625",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Myotis nattereri","7.5","8.27","1.1285",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Scansorial","Nocturnal"
 "Myotis nesopolus","3.5",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Myotis nigricans","4.5","4.81","1.3",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Myotis nigricans ssp.","6.4333",,,,,,,,,,,,,,,,,,,,,,
+"Myotis nigricans","4.55","4.81","1.3",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Myotis nigricans ssp.","6.6",,,,,,,,,,,,,,,,,,,,,,
 "Myotis nipalensis","7.74",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Myotis occultus","8.79",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Myotis oreias","8.31",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
@@ -3871,19 +3903,20 @@
 "Myotis punicus","7.74",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Myotis ricketti","7.74",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Myotis ridleyi","4.5",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Myotis riparius","6.75",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Myotis riparius","7.95",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Myotis rosseti","3.29",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Myotis ruber","5",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Myotis schaubi","9.46",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Myotis scotti","6.86",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Myotis septentrionalis","7.74",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Myotis sicarius","17.43",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Myotis siligorensis","3.1533",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Myotis siligorensis","3.46",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Myotis simus","8.2",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Myotis sodalis","6.91",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Myotis sp.?","4.2",,,,,,,,,,,,,,,,,,,,,,
 "Myotis stalkeri","9.05",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Myotis thysanodes","8.415","15.1","1.7356",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Myotis tricolor","13.4167","6.36","0.5004",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Myotis tricolor","13.6","6.36","0.5004",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Myotis velifer","12",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Myotis vivesi","25","35.8","1.432",,,,,,"80","0","0","20","0","0","0","0","0","0","2","Invertebrates","Faunivore","Ground","Nocturnal"
 "Myotis volans","8.46",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
@@ -3935,7 +3968,7 @@
 "Natalus major","5.76",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Natalus primus","5.76",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Natalus stramineus","5.48",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Natalus tumidirostris","6.3","8.32","1.5407",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Natalus tumidirostris","6.9","8.32","1.5407",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Neacomys dubosti","17.31",,,,,,,,"20","0","0","0","0","0","10","0","40","30","4","Seed","Herbivore","Ground","Nocturnal"
 "Neacomys guianae","14.2",,,,,,,,"20","0","0","0","0","0","20","0","20","40","4","Other plant","Herbivore","Ground","Nocturnal"
 "Neacomys minutus","17.31",,,,,,,,"20","0","0","0","0","0","20","0","20","40","4","Other plant","Herbivore","Ground","Nocturnal"
@@ -4037,7 +4070,7 @@
 "Nesomys audeberti","212.5",,,,,,,,"0","0","0","0","0","0","50","0","50","0","2","Fruit","Herbivore","Ground","Diurnal"
 "Nesomys lambertoni","155",,,,,,,,"0","0","0","0","0","0","50","0","50","0","2","Fruit","Herbivore","Ground","Diurnal"
 "Nesomys rufus","162.5",,,,,,,,"0","0","0","0","0","0","50","0","50","0","2","Fruit","Herbivore","Ground","Diurnal"
-"Nesonycteris woodfordi","36.2",,,,,,,,,,,,,,,,,,,,,,
+"Nesonycteris woodfordi","35.4",,,,,,,,,,,,,,,,,,,,,,
 "Nesoromys ceramicus","67.38",,,,,,,,"40","0","0","0","0","0","0","0","30","30","3","Invertebrates","Omnivore","Scansorial","Nocturnal"
 "Nesoryzomys darwini","55.26",,,,,,,,"20","0","0","0","0","0","10","0","40","30","4","Seed","Herbivore","Ground","Nocturnal"
 "Nesoryzomys fernandinae","32.5",,,,,,,,"20","0","0","0","0","0","10","0","40","30","4","Seed","Herbivore","Ground","Nocturnal"
@@ -4073,8 +4106,9 @@
 "Niviventer niviventer","100",,,,,,,,"20","0","0","0","0","0","20","0","20","40","4","Other plant","Herbivore","Scansorial","Nocturnal"
 "Niviventer rapit","86.75",,,,,,,,"20","0","0","0","0","0","20","0","20","40","4","Other plant","Herbivore","Scansorial","Nocturnal"
 "Niviventer tenaster","103",,,,,,,,"20","0","0","0","0","0","20","0","20","40","4","Other plant","Herbivore","Scansorial","Nocturnal"
-"Noctilio albiventris","38.5","31.01","0.9358",,,,,,"80","0","0","20","0","0","0","0","0","0","2","Invertebrates","Faunivore","Ground","Nocturnal"
+"Noctilio albiventris","35.6","31.01","0.9358",,,,,,"80","0","0","20","0","0","0","0","0","0","2","Invertebrates","Faunivore","Ground","Nocturnal"
 "Noctilio leporinus","58.5","47","0.7705",,,,,,"50","0","0","50","0","0","0","0","0","0","2","Invertebrates","Faunivore","Ground","Nocturnal"
+"Noctilio leporinus )","58",,,,,,,,,,,,,,,,,,,,,,
 "Nomascus concolor","6455.235",,,,,,,,"10","0","0","0","0","0","80","0","0","10","3","Fruit","Herbivore","Arboreal","Diurnal"
 "Nomascus gabriellae","7129.69",,,,,,,,"10","0","0","0","0","0","80","0","0","10","3","Fruit","Herbivore","Arboreal","Diurnal"
 "Nomascus hainanus","6850.16",,,,,,,,"10","0","0","0","0","0","80","0","0","10","3","Fruit","Herbivore","Arboreal","Diurnal"
@@ -4121,6 +4155,7 @@
 "Notomys mitchellii","52",,,,,,,,"0","0","0","0","0","0","40","0","30","30","3","Fruit","Herbivore","Ground","Nocturnal"
 "Notomys mordax","90",,,,,,,,"0","0","0","0","0","0","40","0","30","30","3","Fruit","Herbivore","Ground","Nocturnal"
 "Notopteris macdonaldi","68.8511",,,,,,,,"0","0","0","0","0","0","40","60","0","0","2","Nectar","Herbivore","Arboreal","Nocturnal"
+"Notopteris macdonaldi )","69.3",,,,,,,,,,,,,,,,,,,,,,
 "Notopteris neocaledonica","65.14",,,,,,,,"0","0","0","0","0","0","40","60","0","0","2","Nectar","Herbivore","Arboreal","Nocturnal"
 "Notoryctes caurinus","41","21.42","0.63",,,,,,"90","0","0","0","0","0","0","0","10","0","2","Invertebrates","Faunivore","Ground","Cathemeral"
 "Notoryctes typhlops","55",,,,,,,,"90","0","0","0","0","0","0","0","10","0","2","Invertebrates","Faunivore","Ground","Cathemeral"
@@ -4131,24 +4166,24 @@
 "Nyctalus lasiopterus","49.73",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Nyctalus leisleri","13.28",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Nyctalus montanus","21.85",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Nyctalus noctula","29","15","0.75",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Nyctalus noctula","28","15","0.75",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Nyctalus plancyi","26.44",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Nyctalus stenopterus","17.1667",,,,,,,,,,,,,,,,,,,,,,
+"Nyctalus stenopterus","16.1",,,,,,,,,,,,,,,,,,,,,,
 "Nyctereutes procyonoides","5211.6667","3045","0.402",,,,,,"20","10","30","0","0","0","30","0","10","0","5","Ectotherm vertebrates","Omnivore","Ground","Nocturnal"
 "Nycteris arge","10.6",,,,,,,,"80","10","10","0","0","0","0","0","0","0","3","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Nycteris aurita","11.86",,,,,,,,"60","20","20","0","0","0","0","0","0","0","3","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Nycteris gambiensis","6.95",,,,,,,,"80","10","10","0","0","0","0","0","0","0","3","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Nycteris grandis","29.7",,,,,,,,"40","30","20","10","0","0","0","0","0","0","4","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Nycteris hispida","8.0767",,,,,,,,"80","10","10","0","0","0","0","0","0","0","3","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Nycteris grandis","29.8",,,,,,,,"40","30","20","10","0","0","0","0","0","0","4","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Nycteris hispida","7.8",,,,,,,,"80","10","10","0","0","0","0","0","0","0","3","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Nycteris intermedia","10.65",,,,,,,,"80","10","10","0","0","0","0","0","0","0","3","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Nycteris javanica","17.35",,,,,,,,"80","10","10","0","0","0","0","0","0","0","3","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Nycteris macrotis","14.4978",,,,,,,,"80","10","10","0","0","0","0","0","0","0","3","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Nycteris javanica","18.4",,,,,,,,"80","10","10","0","0","0","0","0","0","0","3","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Nycteris macrotis","14.5",,,,,,,,"80","10","10","0","0","0","0","0","0","0","3","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Nycteris madagascariensis","17.69",,,,,,,,"60","20","20","0","0","0","0","0","0","0","3","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Nycteris major","11.21",,,,,,,,"80","10","10","0","0","0","0","0","0","0","3","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Nycteris nana","6.9",,,,,,,,"80","10","10","0","0","0","0","0","0","0","3","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Nycteris parisii","11.86",,,,,,,,"60","20","20","0","0","0","0","0","0","0","3","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Nycteris thebaica","11","18.76","1.6103",,,,,,"80","10","10","0","0","0","0","0","0","0","3","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Nycteris tragata","14.2",,,,,,,,"80","10","10","0","0","0","0","0","0","0","3","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Nycteris thebaica","9.95","18.76","1.6103",,,,,,"80","10","10","0","0","0","0","0","0","0","3","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Nycteris tragata","14.4",,,,,,,,"80","10","10","0","0","0","0","0","0","0","3","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Nycteris vinsoni","11.86",,,,,,,,"60","20","20","0","0","0","0","0","0","0","3","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Nycteris woodi","7.55",,,,,,,,"80","10","10","0","0","0","0","0","0","0","3","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Nycticebus bengalensis","1126.3556",,,,,,,,"40","30","10","0","0","0","20","0","0","0","4","Invertebrates","Faunivore","Arboreal","Nocturnal"
@@ -4162,7 +4197,7 @@
 "Nycticeius humeralis","8.995","10.7","1.1889",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Nyctiellus lepidus","4.48",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Nyctimene aello","84.26",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
-"Nyctimene albiventer","28","33.8","1.1563",,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
+"Nyctimene albiventer","28.85","33.8","1.1563",,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Nyctimene cephalotes","44.47",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Nyctimene certans","42.1",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Nyctimene cyclotis","44.2","64.6","1.599",,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
@@ -4173,9 +4208,9 @@
 "Nyctimene masalai","52.3",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Nyctimene minutus","45.56",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Nyctimene rabori","67.5",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
-"Nyctimene robinsoni","49.415","54.7","0.9982",,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
+"Nyctimene robinsoni","47.1","54.7","0.9982",,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Nyctimene sanctacrucis","51.64",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
-"Nyctimene vizcaccia","37.7",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
+"Nyctimene vizcaccia","35.4",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Nyctinomops aurispinosus","17.95",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Nyctinomops femorosaccus","14.63",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Nyctinomops laticaudatus","12.22",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
@@ -4183,14 +4218,14 @@
 "Nyctomys sumichrasti","60",,,,,,,,"0","0","0","0","0","0","40","0","40","20","3","Fruit","Herbivore","Ground","Nocturnal"
 "Nyctophilus arnhemensis","6.65",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Nyctophilus bifax","10","12.67","1.2798",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Nyctophilus geoffroyi","7","10.53","1.3928",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Nyctophilus geoffroyi","7.1","10.53","1.3928",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Nyctophilus gouldi","10","15.2733","1.5868",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Nyctophilus heran","7.63",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Nyctophilus howensis","7.78",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Nyctophilus microdon","7.63",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Nyctophilus microtis","7.1",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Nyctophilus nebulosus","7.78",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Nyctophilus timoriensis","11.6575","20.4","1.5",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Nyctophilus timoriensis","10.9","20.4","1.5",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Nyctophilus walkeri","4.34",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Nymphicus hollandicus","100.9767",,,,,,,,,,,,,,,,,,,,,,
 "Ocelot","10500",,,,,,,,,,,,,,,,,,,,,,
@@ -4375,7 +4410,7 @@
 "Otomops formosus","21.4",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Otomops johnstonei","24.19",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Otomops madagascariensis","25",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Otomops martiensseni","39.3722",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Otomops martiensseni","41.5",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Otomops papuensis","16.5",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Otomops secundus","21.4",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Otomops wroughtoni","21.4",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
@@ -4428,6 +4463,7 @@
 "Oxymycterus roberti","83.45","91.02","1.0901",,,,,,"90","0","0","0","0","0","0","0","0","10","2","Invertebrates","Faunivore","Ground","Diurnal"
 "Oxymycterus rufus","75.4",,,,,,,,"90","0","0","0","0","0","0","0","0","10","2","Invertebrates","Faunivore","Ground","Diurnal"
 "Ozotoceros bezoarticus","40000",,,,,,,,"0","0","0","0","0","0","0","0","0","100","1","Other plant","Herbivore","Ground","Cathemeral"
+"P. papuanus + angulatus §)","5.2",,,,,,,,,,,,,,,,,,,,,,
 "Pachyuromys duprasi","47.5",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Ground","Nocturnal"
 "Pagophilus groenlandicus","135741.6667","29988.6667","0.2134",,,,,,"40","0","0","60","0","0","0","0","0","0","2","Fish","Faunivore","Marine","Diurnal"
 "Paguma larvata","4550",,,,,,,,"20","60","0","0","0","0","20","0","0","0","3","Endotherm vertebrates","Faunivore","Ground","Nocturnal"
@@ -4497,7 +4533,7 @@
 "Paramelomys steini","84.49",,,,,,,,"0","0","0","0","0","0","60","0","0","40","2","Fruit","Herbivore","Ground","Nocturnal"
 "Paramurexia rothschildi","57.885",,,,,,,,"60","20","20","0","0","0","0","0","0","0","3","Invertebrates","Faunivore","Ground","Cathemeral"
 "Parantechinus apicalis","60.5",,,,,,,,"70","0","0","0","0","0","0","30","0","0","2","Invertebrates","Faunivore","Arboreal","Cathemeral"
-"Paranyctimene raptor","24.3733","26.95","1.2092",,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
+"Paranyctimene raptor","26.1","26.95","1.2092",,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Paranyctimene tenax","24.31",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Parascalops breweri","51.1375","130.8","2.2708",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Ground","Cathemeral"
 "Parascaptor leucura","45.6",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Ground","Cathemeral"
@@ -4537,7 +4573,7 @@
 "Pelomys minor","50",,,,,,,,"0","0","0","0","0","0","0","0","0","100","1","Other plant","Herbivore","Ground","Cathemeral"
 "Pen-tailed tree shrew","57.5",,,,,,,,,,,,,,,,,,,,,,
 "Pentalagus furnessi","2396.25",,,,,,,,"0","0","0","0","0","0","0","0","50","50","2","Seed","Herbivore","Ground","Nocturnal"
-"Penthetor lucasi","36.585",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
+"Penthetor lucasi","35",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Penthetor lucasi (PTN)","35",,,,,,,,,,,,,,,,,,,,,,
 "Peponocephala electra","206000",,,,,,,,"40","0","0","60","0","0","0","0","0","0","2","Fish","Faunivore","Marine","Cathemeral"
 "Perameles bougainville","457","161","0.6314",,,,,,"70","10","10","0","0","0","0","0","0","10","4","Invertebrates","Faunivore","Ground","Nocturnal"
@@ -4616,7 +4652,8 @@
 "Peropteryx kappleri","9.42",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Peropteryx leucoptera","6",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Peropteryx macrotis","5.405","11.78","2.3098",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Peropteryx trinitatis","4.4967",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Peropteryx macrotis )","5.6",,,,,,,,,,,,,,,,,,,,,,
+"Peropteryx trinitatis","4.2",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Peroryctes broadbenti","4800",,,,,,,,"60","0","0","0","0","0","40","0","0","0","2","Invertebrates","Omnivore","Ground","Nocturnal"
 "Peroryctes raffrayana","977",,,,,,,,"60","0","0","0","0","0","40","0","0","0","2","Invertebrates","Omnivore","Ground","Nocturnal"
 "Petaurillus emiliae","13.5",,,,,,,,"20","0","20","0","0","0","0","0","20","40","4","Other plant","Omnivore","Arboreal","Nocturnal"
@@ -4729,13 +4766,13 @@
 "Phodopus roborovskii","18.9583","43","2.324",,,,,,"0","0","0","0","0","0","0","0","70","30","2","Seed","Herbivore","Ground","Nocturnal"
 "Phodopus sungorus","25","59.4522","1.6207",,,,,,"0","0","0","0","0","0","0","0","70","30","2","Seed","Herbivore","Ground","Nocturnal"
 "Phoniscus aerosa","5.23",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Phoniscus atrox","4.4033",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Phoniscus atrox","4.2",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Phoniscus jagorii","4.7",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Phoniscus papuensis","6.32",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Scansorial","Nocturnal"
 "Photinus pyralis","0.03",,,,,,,,,,,,,,,,,,,,,,
 "Phronima sedentaria","0.249",,,,,,,,,,,,,,,,,,,,,,
 "Phrynosoma cornutum","27.335",,,,,,,,,,,,,,,,,,,,,,
-"Phylloderma stenops","48.6267",,,,,,,,"10","0","0","0","0","0","20","10","60","0","4","Seed","Herbivore","Arboreal","Nocturnal"
+"Phylloderma stenops","46.1",,,,,,,,"10","0","0","0","0","0","20","10","60","0","4","Seed","Herbivore","Arboreal","Nocturnal"
 "Phyllomys blainvillii","243.3",,,,,,,,"0","0","0","0","0","0","80","0","0","20","2","Fruit","Herbivore","Ground","Nocturnal"
 "Phyllomys brasiliensis","312.49",,,,,,,,"0","0","0","0","0","0","80","0","0","20","2","Fruit","Herbivore","Ground","Nocturnal"
 "Phyllomys dasythrix","260",,,,,,,,"0","0","0","0","0","0","80","0","0","20","2","Fruit","Herbivore","Ground","Nocturnal"
@@ -4752,9 +4789,10 @@
 "Phyllonycteris major","14.15",,,,,,,,"30","0","0","0","0","0","40","30","0","0","3","Fruit","Herbivore","Arboreal","Nocturnal"
 "Phyllonycteris poeyi","15.36",,,,,,,,"30","0","0","0","0","0","40","30","0","0","3","Fruit","Herbivore","Arboreal","Nocturnal"
 "Phyllops falcatus","20.91",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
-"Phyllostomus discolor","33","34.5","1.0299",,,,,,"30","0","0","0","0","0","40","30","0","0","3","Fruit","Herbivore","Scansorial","Nocturnal"
-"Phyllostomus elongatus","41.8825","38.8","1.0899",,,,,,"70","0","10","0","0","0","10","10","0","0","4","Invertebrates","Faunivore","Scansorial","Nocturnal"
+"Phyllostomus discolor","34.2","34.5","1.0299",,,,,,"30","0","0","0","0","0","40","30","0","0","3","Fruit","Herbivore","Scansorial","Nocturnal"
+"Phyllostomus elongatus","44.9","38.8","1.0899",,,,,,"70","0","10","0","0","0","10","10","0","0","4","Invertebrates","Faunivore","Scansorial","Nocturnal"
 "Phyllostomus hastatus","91.312","70.7","0.8397",,,,,,"40","0","50","0","0","0","10","0","0","0","3","Ectotherm vertebrates","Faunivore","Scansorial","Nocturnal"
+"Phyllostomus hastatus )","91.8",,,,,,,,,,,,,,,,,,,,,,
 "Phyllostomus latifolius","134",,,,,,,,"70","0","10","0","0","0","10","10","0","0","4","Invertebrates","Faunivore","Scansorial","Nocturnal"
 "Phyllotis amicus","20.2",,,,,,,,"0","0","0","0","0","0","0","0","40","60","2","Other plant","Herbivore","Ground","Cathemeral"
 "Phyllotis andium","53",,,,,,,,"0","0","0","0","0","0","0","0","40","60","2","Other plant","Herbivore","Ground","Cathemeral"
@@ -4791,9 +4829,9 @@
 "Pipistrellus adamsi","4.2",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Pipistrellus aero","6.2",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Pipistrellus angulatus","3.35",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Pipistrellus babu","4.9667",,,,,,,,,,,,,,,,,,,,,,
-"Pipistrellus ceylonicus","9.53",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Pipistrellus circumdatus","9.7333",,,,,,,,,,,,,,,,,,,,,,
+"Pipistrellus babu","4.8",,,,,,,,,,,,,,,,,,,,,,
+"Pipistrellus ceylonicus","10.1",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Pipistrellus circumdatus","10.4",,,,,,,,,,,,,,,,,,,,,,
 "Pipistrellus collinus","6.75",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Pipistrellus coromandra","4.6",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Pipistrellus crassulus","6.1",,,,,,,,,,,,,,,,,,,,,,
@@ -4801,27 +4839,28 @@
 "Pipistrellus endoi","5.6",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Pipistrellus hesperidus","5.28",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Pipistrellus hesperus","3.7",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Pipistrellus imbricatus","7",,,,,,,,,,,,,,,,,,,,,,
+"Pipistrellus imbricatus","6.3",,,,,,,,,,,,,,,,,,,,,,
 "Pipistrellus inexspectatus","6.2",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Pipistrellus javanicus","4.7633",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Pipistrellus javanicus","4.5",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Pipistrellus kuhli","6.3",,,,,,,,,,,,,,,,,,,,,,
 "Pipistrellus kuhlii","6.4067","9.31","1.3319",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Pipistrellus maderensis","6.2",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Pipistrellus mimus","4.0333",,,,,,,,,,,,,,,,,,,,,,
+"Pipistrellus mimus","3.9",,,,,,,,,,,,,,,,,,,,,,
 "Pipistrellus minahassae","7.45",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Pipistrellus nanulus","2.5",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Pipistrellus nanus","3.8333",,,,,,,,,,,,,,,,,,,,,,
+"Pipistrellus nanus","3.9",,,,,,,,,,,,,,,,,,,,,,
 "Pipistrellus nathusii","7.31",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Pipistrellus papuanus","4.31",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Pipistrellus paterculus","5.6",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Pipistrellus permixtus","6.36",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Pipistrellus pipistrellus","7.4","10.9667","1.9019",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Pipistrellus pulveratus","5.1333",,,,,,,,,,,,,,,,,,,,,,
+"Pipistrellus pulveratus","5.3",,,,,,,,,,,,,,,,,,,,,,
 "Pipistrellus pygmaeus","5.28",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Pipistrellus rueppellii","7.07",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Pipistrellus rusticus","4.55",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Pipistrellus stenopterus","15.2",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Pipistrellus sturdeei","5.28",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Pipistrellus subflavus","5",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Pipistrellus subflavus","5.15",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Pipistrellus tenuis","5.0667",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Pipistrellus wattsi","5.28",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Pipistrellus westralis","3",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
@@ -4861,7 +4900,7 @@
 "Platyrrhinus umbratus","24.5",,,,,,,,"10","0","0","0","0","0","90","0","0","0","2","Fruit","Herbivore","Arboreal","Nocturnal"
 "Platyrrhinus vittatus","39",,,,,,,,"10","0","0","0","0","0","90","0","0","0","2","Fruit","Herbivore","Arboreal","Nocturnal"
 "Plecotus alpinus","7.56",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Scansorial","Nocturnal"
-"Plecotus auritus","10","12.906","1.1885",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Scansorial","Nocturnal"
+"Plecotus auritus","8.3","12.906","1.1885",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Scansorial","Nocturnal"
 "Plecotus austriacus","7.3",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Scansorial","Nocturnal"
 "Plecotus balensis","7.56",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Scansorial","Nocturnal"
 "Plecotus kolombatovici","7.56",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Scansorial","Nocturnal"
@@ -5092,17 +5131,17 @@
 "Pteromys volans","143.75",,,,,,,,"10","0","0","0","0","0","30","0","30","30","4","Fruit","Herbivore","Arboreal","Nocturnal"
 "Pteromyscus pulverulentus","400",,,,,,,,"0","0","0","0","0","0","30","0","20","50","3","Other plant","Herbivore","Arboreal","Cathemeral"
 "Pteronotus davyi","10.6","15.3","1.6277",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Pteronotus gymnonotus","13.8656",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Pteronotus gymnonotus","13.6",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Pteronotus macleayii","5.35",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Pteronotus parnelli","20.025",,,,,,,,,,,,,,,,,,,,,,
+"Pteronotus parnelli","20.2",,,,,,,,,,,,,,,,,,,,,,
 "Pteronotus parnellii","19.3233","30.7","1.599",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Pteronotus personatus","9.5108","23","1.6429",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Pteronotus personatus","8.1","23","1.6429",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Pteronotus pristinus","9.25",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Pteronotus quadridens","4.98","6","1.25",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Pteronura brasiliensis","23999.965",,,,,,,,"40","0","0","60","0","0","0","0","0","0","2","Fish","Faunivore","Ground","Diurnal"
 "Pteropus admiralitatum","299.9",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Pteropus aldabrensis","305",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
-"Pteropus alecto","621.19",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
+"Pteropus alecto","595",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Pteropus anetianus","426",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Pteropus aruensis","361.25",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Pteropus banakrisi","225",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
@@ -5111,16 +5150,17 @@
 "Pteropus capistratus","247.5",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Pteropus chrysoproctus","710",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Pteropus cognatus","361.25",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
-"Pteropus conspicillatus","758.5667",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
+"Pteropus conspicillatus","750",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Pteropus dasymallus","435",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Pteropus edulis","900",,,,,,,,,,,,,,,,,,,,,,
+"Pteropus edwardsi","361",,,,,,,,,,,,,,,,,,,,,,
 "Pteropus faunulus","344.76",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Pteropus fundatus","205.65",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Pteropus giganteus","776.424","334.95","0.4411","40","145","120","1","365","0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Pteropus gilliardorum","406.94",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Pteropus griseus","269",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Pteropus howensis","232.93",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
-"Pteropus hypomelanus","446.3133","290.1","0.557",,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
+"Pteropus hypomelanus","390","290.1","0.557",,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Pteropus insularis","282.86",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Pteropus intermedius","361.25",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Pteropus keyensis","361.25",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
@@ -5128,14 +5168,14 @@
 "Pteropus livingstonii","734.27",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Pteropus lombocensis","250.3",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Pteropus loochoensis","361.25",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
-"Pteropus lylei","314.2857",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
-"Pteropus macrotis","361.5",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
-"Pteropus mahaganus","393.8",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
+"Pteropus lylei","314.1429",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
+"Pteropus macrotis","366",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
+"Pteropus mahaganus","465",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Pteropus mariannus","453.5",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Pteropus melanopogon","860",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Pteropus melanotus","803.08",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Pteropus molossinus","284.21",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
-"Pteropus neohibernicus","882.2633",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
+"Pteropus neohibernicus","840",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Pteropus niger","456.25",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Pteropus nitendiensis","265",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Pteropus ocularis","220",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
@@ -5145,6 +5185,7 @@
 "Pteropus pilosus","361.25",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Pteropus pohlei","343",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Pteropus poliocephalus","695","263.45","0.685",,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
+"Pteropus poliocephalus )","695",,,,,,,,,,,,,,,,,,,,,,
 "Pteropus pselaphon","282.86",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Pteropus pumilus","188.775","126.4","0.6509",,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Pteropus rayneri","724.5",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
@@ -5152,17 +5193,19 @@
 "Pteropus rodricensis","254.165","134.9","0.5301",,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Pteropus rufus","374.8571",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Pteropus samoensis","310",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
-"Pteropus scapulatus","379.592","242.5","0.6699",,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
+"Pteropus scapulatus","375","242.5","0.6699",,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Pteropus seychellensis","457",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Pteropus speciosus","344.76",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Pteropus subniger","361.25",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
-"Pteropus temmincki","249.5",,,,,,,,,,,,,,,,,,,,,,
+"Pteropus temmincki","250",,,,,,,,,,,,,,,,,,,,,,
 "Pteropus temminckii","305.625",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Pteropus tokudae","152",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Pteropus tonganus","422.2489",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
+"Pteropus tonganus )","449",,,,,,,,,,,,,,,,,,,,,,
 "Pteropus tuberculatus","282.86",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Pteropus ualanus","361.25",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Pteropus vampyrus","1005.858","804.1","0.785",,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
+"Pteropus vampyrus )","1065",,,,,,,,,,,,,,,,,,,,,,
 "Pteropus vetulus","148",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Pteropus voeltzkowi","527.5",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Pteropus woodfordi","119.33",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
@@ -5194,6 +5237,8 @@
 "Pygoderma bilabiatum","18.5",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Pyrrhuloxia","32",,,,,,,,,,,,,,,,,,,,,,
 "Quokka","2702.3",,,,,,,,,,,,,,,,,,,,,,
+"R. a. stresem. + leschen. ) §)","88.1",,,,,,,,,,,,,,,,,,,,,,
+"R. amplexicaud. brach. §)","55.4",,,,,,,,,,,,,,,,,,,,,,
 "Rabbit-bandicoot, or Bilby","1245.5",,,,,,,,,,,,,,,,,,,,,,
 "Rachycentron canadum","9305.31",,,,,,,,,,,,,,,,,,,,,,
 "Rana clamitans","50",,,,,,,,,,,,,,,,,,,,,,
@@ -5333,9 +5378,9 @@
 "Rhinoceros sondaicus","1750000",,,,,,,,"0","0","0","0","0","0","30","0","0","70","2","Other plant","Herbivore","Ground","Nocturnal"
 "Rhinoceros unicornis","1926166.5",,,,,,,,"0","0","0","0","0","0","20","0","0","80","2","Other plant","Herbivore","Ground","Cathemeral"
 "Rhinolophus","16",,,,,,,,,,,,,,,,,,,,,,
-"Rhinolophus acuminatus","12.115",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Rhinolophus acuminatus","12.1",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Rhinolophus adami","10.4",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Rhinolophus affinis","13.565",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Rhinolophus affinis","13.7",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Rhinolophus alcyone","18.75",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Rhinolophus arcuatus","8.75",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Rhinolophus beddomei","10.62",,,,,,,,"80","0","0","0","0","0","0","0","10","10","3","Invertebrates","Faunivore","Aerial","Nocturnal"
@@ -5343,55 +5388,58 @@
 "Rhinolophus bocharicus","15.05",,,,,,,,"80","0","0","0","0","0","0","0","10","10","3","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Rhinolophus borneensis","7.9",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Rhinolophus canuti","10.75",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Rhinolophus capensis","12.5","7.14","0.6",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Rhinolophus capensis","12.8","7.14","0.6",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Rhinolophus celebensis","10.4",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Rhinolophus clivosus","17.53","13.46","0.7998",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Rhinolophus coelophyllus","7.4",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Rhinolophus clivosus","20.1","13.46","0.7998",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Rhinolophus coelophyllus","7.7",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Rhinolophus cognatus","10.49",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Rhinolophus convexus","10.62",,,,,,,,"80","0","0","0","0","0","0","0","10","10","3","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Rhinolophus cornutus","6.8",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Rhinolophus cornutus","6.6",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Rhinolophus creaghi","12",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Rhinolophus darlingi","9.45",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Rhinolophus deckenii","10.4",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Rhinolophus denti","6.15",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Rhinolophus eloquens","19.05",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Rhinolophus eloquens","19.1",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Rhinolophus euryale","8.15",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Rhinolophus euryotis","14.3",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Rhinolophus ferrumequinum","23",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Rhinolophus ferrumequinum","23.25",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Rhinolophus formosae","10.62",,,,,,,,"80","0","0","0","0","0","0","0","10","10","3","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Rhinolophus fumigatus","12.94",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Rhinolophus guineensis","9.9",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Rhinolophus hildebrandti","29.1",,,,,,,,,,,,,,,,,,,,,,
 "Rhinolophus hildebrandtii","27.545",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Rhinolophus hilli","13.6",,,,,,,,"80","0","0","0","0","0","0","0","10","10","3","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Rhinolophus hillorum","10.62",,,,,,,,"80","0","0","0","0","0","0","0","10","10","3","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Rhinolophus hipposideros","5.9167",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Rhinolophus hipposideros","5.5875",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Rhinolophus imaizumii","10.62",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Rhinolophus inops","13.5",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Rhinolophus keyensis","6.26",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Rhinolophus landeri","9.4033",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Rhinolophus lepidus","5.7222",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Rhinolophus luctus","33.3944",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Rhinolophus landeri","9.7",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Rhinolophus lepidus","6",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Rhinolophus luctus","32.8",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Rhinolophus maclaudi","13.08",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Rhinolophus macrotis","6.2833",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Rhinolophus macrotis","6.3",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Rhinolophus madurensis","10.62",,,,,,,,"80","0","0","0","0","0","0","0","10","10","3","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Rhinolophus maendeleo","10.62",,,,,,,,"80","0","0","0","0","0","0","0","10","10","3","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Rhinolophus malayanus","6.4833",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Rhinolophus malayanus","6.4",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Rhinolophus marshalli","5.02",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Rhinolophus megaphyllus","9.995",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Rhinolophus megaphyllus ssp.","6.9667",,,,,,,,,,,,,,,,,,,,,,
-"Rhinolophus mehelyi","11.015",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Rhinolophus megaphyllus","9.8",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Rhinolophus megaphyllus ssp.","7",,,,,,,,,,,,,,,,,,,,,,
+"Rhinolophus mehelyi","9.7",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Rhinolophus mitratus","10.4",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Rhinolophus monoceros","10.62",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Rhinolophus montanus","10.62",,,,,,,,"80","0","0","0","0","0","0","0","10","10","3","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Rhinolophus nereis","9.62",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Rhinolophus osgoodi","10.62",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Rhinolophus paradoxolophus","8.9467",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Rhinolophus paradoxolophus","9.3",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Rhinolophus pearsoni","13.9",,,,,,,,,,,,,,,,,,,,,,
 "Rhinolophus pearsonii","12.725",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Rhinolophus personi","10.5",,,,,,,,,,,,,,,,,,,,,,
 "Rhinolophus philippinensis","10.33",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Rhinolophus pusillus","4.85",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Rhinolophus pusillus","4.7",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Rhinolophus refulgens","5.4",,,,,,,,,,,,,,,,,,,,,,
 "Rhinolophus rex","10.4",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Rhinolophus robinsoni","8.5",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Rhinolophus robinsoni","8.4",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Rhinolophus rouxi","14",,,,,,,,,,,,,,,,,,,,,,
 "Rhinolophus rouxii","12.25",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Rhinolophus rufus","30",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
@@ -5405,28 +5453,31 @@
 "Rhinolophus simulator","8.1",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Rhinolophus sinicus","10.62",,,,,,,,"80","0","0","0","0","0","0","0","10","10","3","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Rhinolophus stheno","8.2",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Rhinolophus stheno ssp.","7",,,,,,,,,,,,,,,,,,,,,,
+"Rhinolophus stheno stheno","8.5",,,,,,,,,,,,,,,,,,,,,,
 "Rhinolophus subbadius","10.49",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Rhinolophus subrufus","10.4",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Rhinolophus swinnyi","7.13",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Rhinolophus thomasi","8.65",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Rhinolophus trifoliatus","14.81",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Rhinolophus thomasi","9",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Rhinolophus trifoliatus","14.6",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Rhinolophus virgo","6",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Rhinolophus yunanensis","22.2167",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Rhinolophus yunanensis","23.5",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Rhinolophus ziama","10.62",,,,,,,,"80","0","0","0","0","0","0","0","10","10","3","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Rhinonicteris aurantia","8.5633","16.2","1.9589",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Rhinonycteris aurantius","8.6333",,,,,,,,,,,,,,,,,,,,,,
+"Rhinonycteris aurantius","8.6",,,,,,,,,,,,,,,,,,,,,,
 "Rhinophylla alethina","13.57",,,,,,,,"10","0","0","0","0","0","90","0","0","0","2","Fruit","Herbivore","Arboreal","Nocturnal"
 "Rhinophylla fischerae","9.6",,,,,,,,"10","0","0","0","0","0","90","0","0","0","2","Fruit","Herbivore","Arboreal","Nocturnal"
-"Rhinophylla pumilio","9.1875","16.2","1.7053",,,,,,"10","0","0","0","0","0","90","0","0","0","2","Fruit","Herbivore","Arboreal","Nocturnal"
+"Rhinophylla pumilio","8.9","16.2","1.7053",,,,,,"10","0","0","0","0","0","90","0","0","0","2","Fruit","Herbivore","Arboreal","Nocturnal"
 "Rhinopithecus avunculus","8793.095",,,,,,,,"0","0","0","0","0","0","20","0","10","70","3","Other plant","Herbivore","Arboreal","Diurnal"
 "Rhinopithecus bieti","10050.27",,,,,,,,"0","0","0","0","0","0","0","0","0","100","1","Other plant","Herbivore","Arboreal","Diurnal"
 "Rhinopithecus brelichi","12267.15",,,,,,,,"0","0","0","0","0","0","20","0","10","70","3","Other plant","Herbivore","Arboreal","Diurnal"
 "Rhinopithecus roxellana","12969.7867",,,,,,,,"0","0","0","0","0","0","10","0","10","80","3","Other plant","Herbivore","Arboreal","Diurnal"
+"Rhinopoma hardwickei","12.9",,,,,,,,,,,,,,,,,,,,,,
 "Rhinopoma hardwickei I","11.25",,,,,,,,,,,,,,,,,,,,,,
 "Rhinopoma hardwickei II","18.8",,,,,,,,,,,,,,,,,,,,,,
 "Rhinopoma hardwickii","13",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Rhinopoma macinnesi","14.94",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Rhinopoma microphyllum","10",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Rhinopoma microphyllum","19.7",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Rhinopoma microphyllum I","25",,,,,,,,,,,,,,,,,,,,,,
 "Rhinopoma microphyllum II","29.825",,,,,,,,,,,,,,,,,,,,,,
 "Rhinopoma muscatellum","9.14",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
@@ -5460,8 +5511,8 @@
 "Rhogeessa io","4.22",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Rhogeessa minutilla","3.75",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Rhogeessa mira","4.91",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Rhogeessa parvula","4.465",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Rhogeessa tumida","4.815",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Rhogeessa parvula","4.5",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Rhogeessa tumida","5.1",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Rhombomys opimus","144",,,,,,,,"0","0","0","0","0","0","0","0","0","100","1","Other plant","Herbivore","Ground","Diurnal"
 "Rhynchocyon chrysopygus","540",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Ground","Diurnal"
 "Rhynchocyon cirnei","498.75",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Ground","Diurnal"
@@ -5471,7 +5522,7 @@
 "Rhynchomeles prattorum","862.26",,,,,,,,"60","0","0","0","10","0","0","0","0","30","3","Invertebrates","Faunivore","Ground","Nocturnal"
 "Rhynchomys isarogensis","122.5",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Ground","Nocturnal"
 "Rhynchomys soricoides","187",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Ground","Nocturnal"
-"Rhynchonycteris naso","4.3",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Rhynchonycteris naso","4.05",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Rhynchophorus ferrugineus","0.94",,,,,,,,,,,,,,,,,,,,,,
 "Ribbon seal","54000",,,,,,,,,,,,,,,,,,,,,,
 "Richardson's ground squirrel","266.3",,,,,,,,,,,,,,,,,,,,,,
@@ -5485,6 +5536,7 @@
 "Round-tailed ground squirrel","125.1",,,,,,,,,,,,,,,,,,,,,,
 "Rouserrus leschenaulti","93.5",,,,,,,,,,,,,,,,,,,,,,
 "Rousettus aegyptiacus","138.8275","122.6","0.8397",,,,,,"0","0","0","0","0","0","60","40","0","0","2","Fruit","Herbivore","Arboreal","Nocturnal"
+"Rousettus aegyptiacus )","129",,,,,,,,,,,,,,,,,,,,,,
 "Rousettus amplexicaudatus","77.3875","104.3","1.1399",,,,,,"0","0","0","0","0","0","60","40","0","0","2","Fruit","Herbivore","Arboreal","Nocturnal"
 "Rousettus bidens","62.39",,,,,,,,"0","0","0","0","0","0","60","40","0","0","2","Fruit","Herbivore","Arboreal","Nocturnal"
 "Rousettus celebensis","56.3",,,,,,,,"0","0","0","0","0","0","60","40","0","0","2","Fruit","Herbivore","Arboreal","Nocturnal"
@@ -5513,15 +5565,17 @@
 "Rusa timorensis","66375.5",,,,,,,,"0","0","0","0","0","0","0","0","0","100","1","Other plant","Herbivore","Ground","Nocturnal"
 "Rusa unicolor","177522.9",,,,,,,,"0","0","0","0","0","0","10","0","0","90","2","Other plant","Herbivore","Ground","Nocturnal"
 "Ruwenzorisorex suncoides","18.2",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Ground","Nocturnal"
+"S. a. papuana + finschi §)","17.5",,,,,,,,,,,,,,,,,,,,,,
 "Saccolaimus flaviventris","42.13",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Saccolaimus mixtus","23.03",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Saccolaimus peli","100",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Saccolaimus saccolaimus","42.4",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Saccopteryx antioquensis","4.72",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Saccopteryx bilineata","8","14.5","1.859",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Saccopteryx canescens","3.3933",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Saccopteryx bilineata )","8.4",,,,,,,,,,,,,,,,,,,,,,
+"Saccopteryx canescens","3.4",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Saccopteryx gymnura","4",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Saccopteryx leptura","4.6467","9.49","2.2595",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Saccopteryx leptura","5.1","9.49","2.2595",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Saccostomus campestris","60.175","47.76","0.6939",,,,,,"10","0","0","0","0","0","20","0","70","0","3","Seed","Herbivore","Ground","Nocturnal"
 "Saccostomus mearnsi","45.5",,,,,,,,"10","0","0","0","0","0","20","0","70","0","3","Seed","Herbivore","Ground","Nocturnal"
 "Saguinus bicolor","473",,,,,,,,"40","0","0","0","0","0","30","30","0","0","3","Invertebrates","Omnivore","Arboreal","Diurnal"
@@ -5632,29 +5686,32 @@
 "Scotoecus hindei","10.41",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Scotoecus hirundo","9.34",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Scotoecus pallidus","7.43",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Scotomanes ornatus","21.7833",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Scotomanes ornatus","21.8",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Scotomanes sp.?","16.4",,,,,,,,,,,,,,,,,,,,,,
 "Scotonycteris ophiodon","67.5",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
-"Scotonycteris zenkeri","21.0267",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
+"Scotonycteris zenkeri","21.3",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Scotophilus borbonicus","18",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Scotophilus celebensis","26.77",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Scotophilus collinus","28.26",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Scotophilus dinganii","29",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Scotophilus heathi","31.6667",,,,,,,,,,,,,,,,,,,,,,
+"Scotophilus dinganii","26.65",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Scotophilus heathi","31.5",,,,,,,,,,,,,,,,,,,,,,
 "Scotophilus heathii","33.815",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Scotophilus kuhli","19.55",,,,,,,,,,,,,,,,,,,,,,
+"Scotophilus kuhli","20.4",,,,,,,,,,,,,,,,,,,,,,
 "Scotophilus kuhlii","20.165",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Scotophilus leucogaster","20.23",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Scotophilus mhlanganii","28",,,,,,,,,,,,,,,,,,,,,,
 "Scotophilus nigrita","101",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Scotophilus nigrita (gigas)","101.3",,,,,,,,,,,,,,,,,,,,,,
 "Scotophilus nucella","28.26",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Scotophilus nux","30",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Scotophilus robustus","26.03",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Scotophilus temmincki","18.4",,,,,,,,,,,,,,,,,,,,,,
 "Scotophilus viridis","19.6",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Scotorepens balstoni","11.92",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Scotorepens greyii","10",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Scotorepens orion","11.83",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Scotorepens sanborni","8.615",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Scotozous dormeri","6.7411",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Scotorepens sanborni","9.1",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Scotozous dormeri","6.8",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Screaming hairy armadillo","1110",,,,,,,,,,,,,,,,,,,,,,
 "ScutisorexÃsomereni","55.625",,,,,,,,,,,,,,,,,,,,,,
 "Scyliorhinus canicula","781.51",,,,,,,,,,,,,,,,,,,,,,
@@ -5924,9 +5981,9 @@
 "Spermophilus variegatus","700",,,,,,,,"20","0","0","0","0","0","0","0","40","40","3","Seed","Herbivore","Ground","Diurnal"
 "Spermophilus washingtoni","197",,,,,,,,"20","0","0","0","0","0","0","0","40","40","3","Seed","Herbivore","Ground","Diurnal"
 "Spermophilus xanthoprymnus","300",,,,,,,,"20","0","0","0","0","0","0","0","40","40","3","Seed","Herbivore","Ground","Diurnal"
-"Sphaerias blanfordi","28.86",,,,,,,,"0","0","0","0","0","0","80","20","0","0","2","Fruit","Herbivore","Arboreal","Nocturnal"
+"Sphaerias blanfordi","29.5",,,,,,,,"0","0","0","0","0","0","80","20","0","0","2","Fruit","Herbivore","Arboreal","Nocturnal"
 "Sphaerodactylus gaigeae","0.53",,,,,,,,,,,,,,,,,,,,,,
-"Sphaeronycteris toxophyllum","16.81",,,,,,,,"30","0","0","0","0","0","60","10","0","0","3","Fruit","Herbivore","Arboreal","Nocturnal"
+"Sphaeronycteris toxophyllum","18.4",,,,,,,,"30","0","0","0","0","0","60","10","0","0","3","Fruit","Herbivore","Arboreal","Nocturnal"
 "Sphenodon punctatus","490.5",,,,,,,,,,,,,,,,,,,,,,
 "Sphiggurus ichillus","1242.24",,,,,,,,"0","0","0","0","0","0","30","0","0","70","2","Other plant","Herbivore","Arboreal","Nocturnal"
 "Sphiggurus insidiosus","1000",,,,,,,,"0","0","0","0","0","0","30","0","0","70","2","Other plant","Herbivore","Arboreal","Nocturnal"
@@ -5992,8 +6049,8 @@
 "Sturnira bidens","17.55",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Sturnira bogotensis","20.8",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Sturnira erythromos","15.5","39.9","2.5094",,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
-"Sturnira lilium","16.7333","41.8333","2.0689",,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
-"Sturnira ludovici","24.0233",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
+"Sturnira lilium","17.6","41.8333","2.0689",,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
+"Sturnira ludovici","25.9",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Sturnira luisi","21",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Sturnira magna","21.66",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Sturnira mistratensis","22.27",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
@@ -6001,7 +6058,7 @@
 "Sturnira nana","18.47",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Sturnira oporaphilum","21.99",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Sturnira thomasi","21.66",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
-"Sturnira tildae","23.085","39.9","1.9463",,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
+"Sturnira tildae","24.4","39.9","1.9463",,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Sturnus vulgaris","73.0733",,,,,,,,,,,,,,,,,,,,,,
 "Stylocheiron maximum","0.0827",,,,,,,,,,,,,,,,,,,,,,
 "Styloctenium wallacei","173",,,,,,,,"0","0","0","0","0","0","80","20","0","0","2","Fruit","Herbivore","Arboreal","Nocturnal"
@@ -6066,6 +6123,7 @@
 "Sus verrucosus","81250",,,,,,,,"10","0","0","0","10","10","0","0","10","60","5","Other plant","Herbivore","Ground","Nocturnal"
 "Swamp sparrow","14.9",,,,,,,,,,,,,,,,,,,,,,
 "Swift fox","1769",,,,,,,,,,,,,,,,,,,,,,
+"Syconycteris a. australis §)","14.7",,,,,,,,,,,,,,,,,,,,,,
 "Syconycteris australis","18","25.534","1.504",,,,,,"0","0","0","0","0","0","10","90","0","0","2","Nectar","Herbivore","Arboreal","Nocturnal"
 "Syconycteris carolinae","39",,,,,,,,"0","0","0","0","0","0","10","90","0","0","2","Nectar","Herbivore","Arboreal","Nocturnal"
 "Syconycteris crassa","17.3333",,,,,,,,,,,,,,,,,,,,,,
@@ -6122,23 +6180,27 @@
 "Tachyoryctes spalacinus","309.95",,,,,,,,"0","0","0","0","0","0","0","0","0","100","1","Other plant","Herbivore","Ground","Nocturnal"
 "Tachyoryctes splendens","234","150.9","0.7901",,,,,,"0","0","0","0","0","0","0","0","0","100","1","Other plant","Herbivore","Ground","Nocturnal"
 "Tachyoryctes storeyi","309.95",,,,,,,,"0","0","0","0","0","0","0","0","0","100","1","Other plant","Herbivore","Ground","Nocturnal"
-"Tadarida aegyptiaca","17",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Tadarida aegyptiaca","17.35",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Tadarida australis","31.8",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Tadarida beccarii","13.9",,,,,,,,,,,,,,,,,,,,,,
+"Tadarida beccarii","14.2",,,,,,,,,,,,,,,,,,,,,,
 "Tadarida brasiliensis","10","15.2","1.4167",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Tadarida condylura","29.5667",,,,,,,,,,,,,,,,,,,,,,
+"Tadarida condylura","27.2",,,,,,,,,,,,,,,,,,,,,,
 "Tadarida cynocephala","1300",,,,,,,,,,,,,,,,,,,,,,
 "Tadarida fulminans","35.28",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Tadarida insignis","23.55",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Tadarida jobensis","16.5",,,,,,,,,,,,,,,,,,,,,,
+"Tadarida jugularis","11.5",,,,,,,,,,,,,,,,,,,,,,
 "Tadarida kuboriensis","26.8",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Tadarida latouchei","23.55",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Tadarida leucostigma","25.1",,,,,,,,,,,,,,,,,,,,,,
+"Tadarida leucostigma","26.5",,,,,,,,,,,,,,,,,,,,,,
+"Tadarida limbatus","13.3",,,,,,,,,,,,,,,,,,,,,,
 "Tadarida lobata","23.62",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Tadarida mops","30.6667",,,,,,,,,,,,,,,,,,,,,,
-"Tadarida niveiventer","21.0333",,,,,,,,,,,,,,,,,,,,,,
-"Tadarida plicata plicata","17.4333",,,,,,,,,,,,,,,,,,,,,,
-"Tadarida pumila","10.225",,,,,,,,,,,,,,,,,,,,,,
+"Tadarida mops","30.9",,,,,,,,,,,,,,,,,,,,,,
+"Tadarida niveiventer","21.7",,,,,,,,,,,,,,,,,,,,,,
+"Tadarida plicata","23.6",,,,,,,,,,,,,,,,,,,,,,
+"Tadarida plicata plicata","17.4",,,,,,,,,,,,,,,,,,,,,,
+"Tadarida pumila","10.3",,,,,,,,,,,,,,,,,,,,,,
+"Tadarida pumila ssp.","11",,,,,,,,,,,,,,,,,,,,,,
 "Tadarida teniotis","35","34.4","1.075",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Tadarida ventralis","23.62",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Taeniopygia guttata","11.9333",,,,,,,,,,,,,,,,,,,,,,
@@ -6201,19 +6263,21 @@
 "Tammar wallaby","4796",,,,,,,,,,,,,,,,,,,,,,
 "Tapecomys primus","62.33",,,,,,,,"20","0","0","0","0","0","10","0","40","30","4","Seed","Herbivore","Ground","Nocturnal"
 "Taphozous achates","26.96",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Taphozous australis","23.0667",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Taphozous australis","24",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Taphozous georgianus","28.83",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Taphozous hamiltoni","22",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Taphozous hildegardeae","28.35",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Taphozous hildegardeae","27.4",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Taphozous hilli","22",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Taphozous kapalgensis","26",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Taphozous longimanus","25.06",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Taphozous mauritianus","27.8925","31.14","1.1899",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Taphozous melanopogon","23.7689",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Taphozous longimanus","23.2",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Taphozous mauritianus","29","31.14","1.1899",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Taphozous melanopogon","22.7",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Taphozous nudiventris","30.07",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Taphozous perforatus","27.33",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Taphozous saccolaimus","43",,,,,,,,,,,,,,,,,,,,,,
 "Taphozous saccolaimus I","41.7",,,,,,,,,,,,,,,,,,,,,,
-"Taphozous theobaldi","40.0889",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Taphozous saccolaimus ssp.","51.4",,,,,,,,,,,,,,,,,,,,,,
+"Taphozous theobaldi","39.8",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Taphozous troughtoni","26.96",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Tapirus","250000",,,,,,,,,,,,,,,,,,,,,,
 "Tapirus bairdii","14260",,,,,,,,"0","0","0","0","0","0","0","0","0","100","1","Other plant","Herbivore","Ground","Nocturnal"
@@ -6349,7 +6413,7 @@
 "Thylogale thetis","3694",,,,,,,,"0","0","0","0","0","0","0","0","0","100","1","Other plant","Herbivore","Ground","Nocturnal"
 "Thyroptera discifera","3.1",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Thyroptera lavali","3.67",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Thyroptera tricolor","4.43",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Thyroptera tricolor","4.5",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Thyroptera tricolor (THY)","4.5",,,,,,,,,,,,,,,,,,,,,,
 "Tiger","137900",,,,,,,,,,,,,,,,,,,,,,
 "Tiger quoll, or Australian tiger cat","1782",,,,,,,,,,,,,,,,,,,,,,
@@ -6362,13 +6426,13 @@
 "Tolypeutes tricinctus","1487",,,,,,,,"80","0","0","0","0","0","20","0","0","0","2","Invertebrates","Faunivore","Ground","Cathemeral"
 "Tome's spiny rat, or Spiny rat","498",,,,,,,,,,,,,,,,,,,,,,
 "Tomopeas ravus","2.54",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Tonatia bidens","28.3692","39.2","1.4307",,,,,,"90","0","0","0","0","0","10","0","0","0","2","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Tonatia bidens","29.4","39.2","1.4307",,,,,,"90","0","0","0","0","0","10","0","0","0","2","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Tonatia saurophila","30",,,,,,,,"90","0","0","0","0","0","10","0","0","0","2","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Tonatia schulzi","21.3",,,,,,,,,,,,,,,,,,,,,,
 "Tonatia sylvicola","32.3",,,,,,,,,,,,,,,,,,,,,,
 "Torrea candida","1",,,,,,,,,,,,,,,,,,,,,,
 "Trachemys sscripta HBS108687","313",,,,,,,,,,,,,,,,,,,,,,
-"Trachops cirrhosus","37.0067",,,,,,,,"50","0","40","0","0","0","10","0","0","0","3","Invertebrates","Faunivore","Ground","Nocturnal"
+"Trachops cirrhosus","36.9",,,,,,,,"50","0","40","0","0","0","10","0","0","0","3","Invertebrates","Faunivore","Ground","Nocturnal"
 "Trachypithecus auratus","7908.3333",,,,,,,,"0","0","0","0","0","0","30","0","0","70","2","Other plant","Herbivore","Arboreal","Diurnal"
 "Trachypithecus barbei","8516.46",,,,,,,,"0","0","0","0","0","0","30","0","0","70","2","Other plant","Herbivore","Arboreal","Diurnal"
 "Trachypithecus cristatus","6715.9187",,,,,,,,"0","0","0","0","0","0","30","0","0","70","2","Other plant","Herbivore","Arboreal","Diurnal"
@@ -6407,7 +6471,7 @@
 "Tremarctos ornatus","140000.63",,,,,,,,"0","0","0","0","0","0","80","0","0","20","2","Fruit","Herbivore","Ground","Nocturnal"
 "Triaenops auritus","8.6",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Triaenops furculus","5.56",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Triaenops persicus","13.36",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Triaenops persicus","13.7",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Triaenops rufus","9.1",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Trichechus inunguis","324937.5","8405.5","0.0495",,,,,,"0","0","0","0","0","0","0","0","0","100","1","Other plant","Herbivore","Marine","Cathemeral"
 "Trichechus manatus","756000","20496","0.0583","56","335","456","1","2251","0","0","0","0","0","0","0","0","0","100","1","Other plant","Herbivore","Marine","Cathemeral"
@@ -6453,7 +6517,7 @@
 "Tupaia tana","190.08",,,,,,,,"90","0","0","0","0","0","0","0","0","10","2","Invertebrates","Faunivore","Ground","Diurnal"
 "Turdus merula","85.0167",,,,,,,,,,,,,,,,,,,,,,
 "Tursiops aduncus","158075",,,,,,,,"20","0","0","80","0","0","0","0","0","0","2","Fish","Faunivore","Marine","Diurnal"
-"Tursiops truncatus","170480","53908","0.3243","51.6","362.5","548","1","2831","20","0","0","80","0","0","0","0","0","0","2","Fish","Faunivore","Marine","Diurnal"
+"Tursiops truncatus",,"53908","0.3243","51.6","362.5","548","1","2831","20","0","0","80","0","0","0","0","0","0","2","Fish","Faunivore","Marine","Diurnal"
 "Two-toed amphiuma","199",,,,,,,,,,,,,,,,,,,,,,
 "Tylomys bullaris","280",,,,,,,,"0","0","0","0","0","0","10","0","80","10","3","Seed","Herbivore","Ground","Cathemeral"
 "Tylomys fulviventer","170.53",,,,,,,,"0","0","0","0","0","0","10","0","80","10","3","Seed","Herbivore","Ground","Cathemeral"
@@ -6463,8 +6527,8 @@
 "Tylomys tumbalensis","280",,,,,,,,"0","0","0","0","0","0","10","0","80","10","3","Seed","Herbivore","Ground","Cathemeral"
 "Tylomys watsoni","240",,,,,,,,"0","0","0","0","0","0","10","0","80","10","3","Seed","Herbivore","Ground","Cathemeral"
 "Tylonycteris minor","3.2333",,,,,,,,,,,,,,,,,,,,,,
-"Tylonycteris pachypus","4.2433",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
-"Tylonycteris robustula","8.0483",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Tylonycteris pachypus","4.8",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Tylonycteris robustula","7.2",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Tympanoctomys barrerae","70.7","76.8","1.0756",,,,,,"0","0","0","0","0","0","0","0","0","100","1","Other plant","Herbivore","Ground","Nocturnal"
 "Typhlomys cinereus","31.2",,,,,,,,"0","0","0","0","0","0","40","0","30","30","3","Fruit","Herbivore","Arboreal","Nocturnal"
 "Tyto alba","369.6667",,,,,,,,,,,,,,,,,,,,,,
@@ -6476,7 +6540,7 @@
 "Urocolius macrourus","49",,,,,,,,,,,,,,,,,,,,,,
 "Urocyon cinereoargenteus","3749",,,,,,,,"10","0","0","0","30","0","20","0","20","20","5","Vertebrates (unknown)","Omnivore","Ground","Nocturnal"
 "Urocyon littoralis","1896",,,,,,,,"10","0","0","0","30","0","20","0","20","20","5","Vertebrates (unknown)","Omnivore","Ground","Nocturnal"
-"Uroderma bilobatum","16.4","26.6","1.642",,,,,,"10","0","0","0","0","0","80","10","0","0","3","Fruit","Herbivore","Arboreal","Nocturnal"
+"Uroderma bilobatum","16.3","26.6","1.642",,,,,,"10","0","0","0","0","0","80","10","0","0","3","Fruit","Herbivore","Arboreal","Nocturnal"
 "Uroderma magnirostrum","16.85",,,,,,,,"10","0","0","0","0","0","80","10","0","0","3","Fruit","Herbivore","Arboreal","Nocturnal"
 "Urogale everetti","275","229.7","0.8701",,,,,,"60","0","0","0","20","0","10","0","0","10","4","Invertebrates","Faunivore","Scansorial","Diurnal"
 "Uromys anak","664.5",,,,,,,,"0","0","0","0","0","0","50","0","30","20","3","Fruit","Herbivore","Scansorial","Diurnal"
@@ -6504,16 +6568,17 @@
 "Vampyressa brocki","10",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Vampyressa melissa","16.3",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Vampyressa nymphaea","11.15","21.9","2.0857",,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
-"Vampyressa pusilla","8.695","18.6","2.1136",,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
+"Vampyressa pusilla","8.6","18.6","2.1136",,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Vampyressa thyone","7.17",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Vampyrodes caraccioli","37.2",,,,,,,,"0","0","0","0","0","0","100","0","0","0","1","Fruit","Herbivore","Arboreal","Nocturnal"
 "Vampyrodes caraccioloi","39.7",,,,,,,,,,,,,,,,,,,,,,
-"Vampyrops brachycephalus","13.8",,,,,,,,,,,,,,,,,,,,,,
-"Vampyrops helleri","11.6",,,,,,,,,,,,,,,,,,,,,,
+"Vampyrops brachyceph. ssp.","19.3",,,,,,,,,,,,,,,,,,,,,,
+"Vampyrops brachycephalus","12.9",,,,,,,,,,,,,,,,,,,,,,
+"Vampyrops helleri","12.7",,,,,,,,,,,,,,,,,,,,,,
 "Vampyrops infuscus","50.2",,,,,,,,,,,,,,,,,,,,,,
-"Vampyrops lineatus","22.3",,,,,,,,,,,,,,,,,,,,,,
+"Vampyrops lineatus","22.6",,,,,,,,,,,,,,,,,,,,,,
 "Vampyrops vittatus","36.6",,,,,,,,,,,,,,,,,,,,,,
-"Vampyrum spectrum","173.8833",,,,,,,,"10","80","0","0","0","0","10","0","0","0","3","Endotherm vertebrates","Faunivore","Ground","Nocturnal"
+"Vampyrum spectrum","173",,,,,,,,"10","80","0","0","0","0","10","0","0","0","3","Endotherm vertebrates","Faunivore","Ground","Nocturnal"
 "Vanadis formosa","1.7",,,,,,,,,,,,,,,,,,,,,,
 "Vandeleuria nilagirica","23.79",,,,,,,,"0","0","0","0","0","0","40","0","0","60","2","Other plant","Herbivore","Arboreal","Nocturnal"
 "Vandeleuria nolthenii","56.6",,,,,,,,"0","0","0","0","0","0","40","0","0","60","2","Other plant","Herbivore","Arboreal","Nocturnal"
@@ -6537,6 +6602,7 @@
 "Vespadelus vulturnus","4","4.08","1.02",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Vesper sparrow","21.5",,,,,,,,,,,,,,,,,,,,,,
 "Vespertilio murinus","26",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
+"Vespertilio murinus )","33.3",,,,,,,,,,,,,,,,,,,,,,
 "Vespertilio sinensis","24.3",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Vicugna pacos","44400",,,,,,,,,,,,,,,,,,,,,,
 "Vicugna vicugna","46857.305",,,,,,,,"0","0","0","0","0","0","0","0","0","100","1","Other plant","Herbivore","Ground","Diurnal"

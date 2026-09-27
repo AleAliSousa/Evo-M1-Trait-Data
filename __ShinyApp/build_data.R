@@ -66,7 +66,6 @@ trait_files <- c(
   "dexterity_corticospinaltract.xlsx" = "Heffner & Masterton 1975 (corticospinal tract)",
   "corticospinaltract_etc.xlsx"       = "Iwaniuk et al. 1999 (corticospinal tract & ecology)",
   "glia_gyrification.xlsx"            = "Lewitus et al. 2014 (glia, gyrification & life history)",
-  "interlaminar_astrocytes.xlsx"      = "Falcone et al. 2019 (interlaminar astrocytes)",
   "v1_synapses_karl.xlsx"            = "Karl et al. 2024 (V1 synapses & mitochondria)",
   "sleep.xlsx"                       = "Eagleman & Vaughn 2021 / Herculano-Houzel 2015 (sleep)"
   # NB: behavioural traits (vocal repertoire, dexterity, gait, locomotion,
@@ -86,6 +85,17 @@ trait_files <- c(
   # contributed 2,946 rows that the app then discarded at startup. The xlsx is
   # still built by EvoM1_read_diet.R and remains the harmonised per-paper table;
   # it just no longer reaches the app twice.
+  #
+  # NB 2026-09-27: interlaminar_astrocytes.xlsx (Falcone et al. 2019) is no
+  # longer melted, for the same reason again. __merging_cell_morphology ingests
+  # both Falcone tables directly from their public TSVs (TABLE1 presence
+  # classes, TABLE2 density / process morphology), and the app loads that merge
+  # via std_cell_morphology(). Unlike Wilman there is no supersede row in
+  # variable_canonical.csv: the merge's labels are new
+  # (frontal_interlaminar_astrocyte_ila_* [GFAP]), so the melt's nine
+  # "ILA ..." labels simply disappear from the app rather than being renamed,
+  # and every species the melt carried (47) is covered by the merge. The xlsx
+  # itself stays in ____EvoM1_TraitTable/ as the harmonised per-paper table.
   #
   # Where a trait column IS still the only source for some species (the Lewitus
   # 2014 life-history and body/brain-mass columns, Heffner's body weight), the

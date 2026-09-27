@@ -1,253 +1,28 @@
 "script","status","error","start_time","end_time","elapsed_seconds"
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_vocal_schniter.R","FAILED","Error in data.frame(species_sci = vapply(d$Species, resolve, character(1)),  : 
-  arguments imply differing number of rows: 0, 1
-Execution halted","2026-09-26 22:05:40.867428","2026-09-26 22:05:41.586058",0.718629837036133
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_brain_mass/brain_mass_compiled.R","FAILED","Error: 10.1002%2Fcne.24349_Table3.tsv has no citation in __ShinyApp/data/source_manifest.csv, so its paper folder (and measurement basis) cannot be resolved. Its __ReadMe.xlsx row is missing: run _tools/restore_registry_rows.R, then _tools/file_list.R, then __ShinyApp/build_data.R, and re-run this script.
-Execution halted","2026-09-26 22:06:30.547316","2026-09-26 22:06:31.913372",1.36605596542358
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_cortical_areas/cortical_areas_compiled.R","FAILED","Error: enc('Mota_Herculano-Houzel_2015_TableS1'): no 'Item encoded' in __ReadMe.xlsx 'Item name'. Add or repair the registry row.
-Execution halted","2026-09-26 22:06:43.406419","2026-09-26 22:06:44.596539",1.19011998176575
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_item_name_resolution.R","FAILED","registry Item names: 560   |   TSVs on disk: 424   |   NA.tsv present: YES -- REMOVE IT
-
-__merging_behaviour/behaviour_compiled.R                     0 item name(s) referenced   OK
-__merging_body_ecology/body_ecology_compiled.R               0 item name(s) referenced   OK
-__merging_brain_mass/brain_mass_compiled.R                   0 item name(s) referenced   OK
-__merging_cell_morphology/cell_morphology_compiled.R        18 item name(s) referenced   3 UNRESOLVED
-      Hakeem_etal_2009_Table1                        -> TSV not on disk  [10.1002%2Far.20829_Table1]
-      Nimchinsky_etal_1999_Table2                    -> TSV not on disk  [10.1073%2Fpnas.96.9.5268_Table2]
-      Raghanti_etal_2015_Table1                      -> TSV not on disk  [10.1007%2Fs00429-014-0792-y_Table1]
-__merging_cellcounts/cellcounts_compiled.R                  15 item name(s) referenced   OK
-__merging_cerebellar_folding/cerebellar_folding_compiled.R   0 item name(s) referenced   OK
-__merging_cortical_areas/cortical_areas_compiled.R          11 item name(s) referenced   1 UNRESOLVED
-      Mota_Herculano-Houzel_2015_TableS1             -> no encoding (not in __ReadMe.xlsx 'Item name', no enc_override)
-__merging_cortical_layers/cortical_layers_compiled.R         1 item name(s) referenced   OK
-__merging_fossil_brain_glucose/fossil_brain_glucose_compiled.R   0 item name(s) referenced   OK
-__merging_gyrification/gyrification_compiled.R               3 item name(s) referenced   OK
-__merging_sensory/sensory_compiled.R                         4 item name(s) referenced   OK
-__merging_sleep/sleep_compiled.R                             4 item name(s) referenced   OK
-__merging_volumes/volumes_compiled_select.R                 34 item name(s) referenced   OK
-__merging_volumes/volumes_compiled.R                        67 item name(s) referenced   OK
-
-orphaned TSVs (on disk, claimed by no registry row): 8
-      10.1002%2Fcne.25197_TABLE1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1002%2Fcne.25197_TABLE2.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1002%2Fcne.25197_TABLE3.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1073%2Fpnas.96.9.5268 _Table1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1073%2Fpnas.96.9.5268 _Table2.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      NA.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      zz_DELETE_ME_test_upload_simplename.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      zz_DELETE_ME_test_upload2.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-rows with a citation but no Item name (need _tools/file_list.R): 0
-
-4 unresolved reference(s).
-run _tools/restore_registry_rows.R (adding any new row to its ROWS list), then _tools/file_list.R.","2026-09-26 22:07:50.054031","2026-09-26 22:07:50.704061",0.650030136108398
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_trait_authority.R","FAILED","trait_authority.csv: 565 rows | app labels: 564
-
-                    adjudicated adopted_from_variable_canonical 
-                             11                              19 
-           auto_single_producer 
-                            535 
-
-----------------------------------------------------------------------
-FAIL  COMPLETENESS: 1 registry row(s) name a label the app no longer serves:
-    Brain_Mass_from_volume_or_ecv (g)
-  (a vetoed or renamed label -- regenerate, or remove the row deliberately)
-
-Error: check_trait_authority.R: 1 guard(s) failed.
-Execution halted","2026-09-26 22:07:51.479021","2026-09-26 22:07:54.535032",3.05601096153259
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_keys/resolve_taxonomy.R","TIMEOUT","[1/215] Ailurus fulgens                    -> Carnivora        Ailuridae        (ITIS)
-[2/215] Alouatta caraya                    -> Primates         Atelidae         (NCBI:name)
-[3/215] Alouatta palliata                  -> Primates         Atelidae         (NCBI:name)
-[4/215] Alouatta seniculus                 -> Primates         Atelidae         (ITIS)
-[5/215] Amblysomus hottentotus             -> Afrosoricida     Chrysochloridae  (NCBI:taxid)
-[6/215] Antidorcas marsupialis             -> Artiodactyla     Bovidae          (NCBI:taxid)
-[7/215] Aotus trivirgatus                  -> Primates         Aotidae          (NCBI:taxid)
-[8/215] Aplodontia rufa                    -> Rodentia         Aplodontiidae    (NCBI:name)
-[9/215] Atelerix algirus                   -> Eulipotyphla     Erinaceidae      (ITIS)
-[10/215] Ateles geoffroyi                   -> Primates         Atelidae         (ITIS)
-[11/215] Ateles sp.                         -> Primates         Atelidae         (NCBI:name)
-[12/215] Avahi laniger                      -> Primates         Indriidae        (NCBI:name)
-[13/215] Avahi occidentalis                 -> Primates         Indriidae        (ITIS)
-[14/215] Balaenoptera acutorostrata         -> Artiodactyla     Balaenopteridae  (NCBI:taxid)
-[15/215] Bathyergus suillus                 -> Rodentia         Bathyergidae     (NCBI:taxid)
-[16/215] Blarina brevicauda                 -> Eulipotyphla     Soricidae        (NCBI:taxid)
-[17/215] Callicebus moloch                  -> Primates         Pitheciidae      (NCBI:name)
-[18/215] Callicebus sp.                     -> Primates         Pitheciidae      (GBIF)
-[19/215] Callimico goeldii                  -> Primates         Cebidae          (NCBI:taxid)
-[20/215] Callithrix jacchus                 -> Primates         Cebidae          (NCBI:taxid)
-[21/215] Callithrix pygmaea                 -> Primates         Callitrichidae   (GBIF)
-[22/215] Canis latrans                      -> Carnivora        Canidae          (ITIS)
-[23/215] Canis lupus familiaris             -> Carnivora        Canidae          (NCBI:taxid)
-[24/215] Cardioderma cor                    -> Chiroptera       Megadermatidae   (NCBI:taxid)
-[25/215] Casinycteris argynnis              -> Chiroptera       Pteropodidae     (NCBI:taxid)
-[26/215] Cavia porcellus                    -> Rodentia         Caviidae         (NCBI:taxid)
-[27/215] Cebus albifrons                    -> Primates         Cebidae          (NCBI:name)
-[28/215] Cercocebus agilis                  -> Primates         Cercopithecidae  (ITIS)
-[29/215] Cercocebus torquatus               -> Primates         Cercopithecidae  (NCBI:name)
-[30/215] Cercopithecus ascanius             -> Primates         Cercopithecidae  (NCBI:name)
-[31/215] Cercopithecus mitis                -> Primates         Cercopithecidae  (NCBI:name)
-[32/215] Cercopithecus nictitans            -> Primates         Cercopithecidae  (ITIS)
-[33/215] Cheirogaleus major                 -> Primates         Cheirogaleidae   (ITIS)
-[34/215] Cheirogaleus medius                -> Primates         Cheirogaleidae   (NCBI:name)
-[35/215] Chinchilla laniger                 -> Rodentia         Chinchillidae    (GBIF)
-[36/215] Choloepus didactylus               -> Pilosa           Megalonychidae   (NCBI:name)
-[37/215] Chrysochloris asiatica             -> Afrosoricida     Chrysochloridae  (NCBI:name)
-[38/215] Chrysochloris stuhlmanni           -> Afrosoricida     Chrysochloridae  (ITIS)
-[39/215] Coleura afra                       -> Chiroptera       Emballonuridae   (NCBI:taxid)
-[40/215] Colobus angolensis                 -> Primates         Cercopithecidae  (ITIS)
-[41/215] Condylura cristata                 -> Eulipotyphla     Talpidae         (NCBI:taxid)
-[42/215] Crocidura flavescens               -> Eulipotyphla     Soricidae        (ITIS)
-[43/215] Crocidura hildegardeae             -> Eulipotyphla     Soricidae        (NCBI:name)
-[44/215] Crocidura jacksoni                 -> Eulipotyphla     Soricidae        (ITIS)
-[45/215] Crocidura russula                  -> Eulipotyphla     Soricidae        (ITIS)
-[46/215] Crocuta crocuta                    -> Carnivora        Hyaenidae        (NCBI:name)
-[47/215] Cryptomys hottentotus              -> Rodentia         Bathyergidae     (NCBI:taxid)
-[48/215] Cryptomys hottentotus natalensis   -> Rodentia         Bathyergidae     (NCBI:taxid)
-[49/215] Cryptomys hottentotus pretoriae    -> Rodentia         Bathyergidae     (NCBI:taxid)
-[50/215] Cynictis penicillata               -> Carnivora        Herpestidae      (ITIS)
-[51/215] Damaliscus pygargus phillipsi      -> Artiodactyla     Bovidae          (NCBI:taxid)
-[52/215] Daubentonia madagascariensis       -> Primates         Daubentoniidae   (ITIS)
-[53/215] Dendrohyrax dorsalis               -> Hyracoidea       Procaviidae      (NCBI:taxid)
-[54/215] Dendrolagus goodfellowi            -> Diprotodontia    Macropodidae     (NCBI:taxid)
-[55/215] Desmana moschata                   -> Eulipotyphla     Talpidae         (NCBI:name)
-[56/215] Didelphis aurita                   -> Didelphimorphia  Didelphidae      (NCBI:taxid)
-[57/215] Didelphis marsupialis              -> Didelphimorphia  Didelphidae      (NCBI:name)
-[58/215] Echinops telfairi                  -> Afrosoricida     Tenrecidae       (NCBI:name)
-[59/215] Echinosorex gymnura                -> Erinaceomorpha   Erinaceidae      (GBIF)
-[60/215] Elephantulus fuscipes              -> Macroscelidea    Macroscelididae  (ITIS)
-[61/215] Elephantulus myurus                -> Macroscelidea    Macroscelididae  (NCBI:taxid)
-[62/215] Epomophorus wahlbergi              -> Chiroptera       Pteropodidae     (NCBI:taxid)
-[63/215] Epomops franqueti                  -> Chiroptera       Pteropodidae     (NCBI:taxid)
-[64/215] Equus burchelli                    -> Perissodactyla   Equidae          (GBIF)
-[65/215] Erinaceus europaeus                -> Eulipotyphla     Erinaceidae      (NCBI:name)
-[66/215] Erythrocebus patas                 -> Primates         Cercopithecidae  (NCBI:name)
-[67/215] Eulemur fulvus                     -> Primates         Lemuridae        (ITIS)
-[68/215] Eulemur mongoz                     -> Primates         Lemuridae        (ITIS)
-[69/215] Felis catus                        -> Carnivora        Felidae          (NCBI:taxid)
-[70/215] Fukomys anselli                    -> Rodentia         Bathyergidae     (NCBI:taxid)
-[71/215] Fukomys damarensis                 -> Rodentia         Bathyergidae     (NCBI:taxid)
-[72/215] Fukomys darlingi                   -> Rodentia         Bathyergidae     (NCBI:taxid)
-[73/215] Fukomys mechowii                   -> Rodentia         Bathyergidae     (NCBI:taxid)
-[74/215] Galago senegalensis                -> Primates         Galagidae        (ITIS)
-[75/215] Galagoides demidoff                -> Primates         Galagidae        (ITIS)
-[76/215] Galemys pyrenaicus                 -> Eulipotyphla     Talpidae         (NCBI:name)
-[77/215] Galictis vittatus                  -> Carnivora        Mustelidae       (GBIF)
-[78/215] Georychus capensis                 -> Rodentia         Bathyergidae     (NCBI:taxid)
-[79/215] Giraffa camelopardalis             -> Artiodactyla     Giraffidae       (NCBI:taxid)
-[80/215] Gorilla gorilla                    -> Primates         Hominidae        (NCBI:taxid)
-[81/215] Gorilla sp.                        -> Primates         Hominidae        (GBIF)
-[82/215] Heliophobius argenteocinereus      -> Rodentia         Bathyergidae     (NCBI:taxid)
-[83/215] Hemicentetes semispinosus          -> Afrosoricida     Tenrecidae       (ITIS)
-[84/215] Hemiechinus auritus                -> Eulipotyphla     Erinaceidae      (ITIS)
-[85/215] Heterocephalus glaber              -> Rodentia         Bathyergidae     (NCBI:taxid)
-[86/215] Homo sapiens                       -> Primates         Hominidae        (NCBI:taxid)
-[87/215] Hyaena hyaena                      -> Carnivora        Hyaenidae        (NCBI:taxid)
-[88/215] Hydrochoerus hydrochaeris          -> Rodentia         Hydrochaeridae   (NCBI:taxid)
-[89/215] Hylobates lar                      -> Primates         Hylobatidae      (ITIS)
-[90/215] Hylobates muelleri                 -> Primates         Hylobatidae      (ITIS)
-[91/215] Hylomys suillus                    -> Eulipotyphla     Erinaceidae      (ITIS)
-[92/215] Hypsignathus monstrosus            -> Chiroptera       Pteropodidae     (NCBI:taxid)
-[93/215] Indri indri                        -> Primates         Indriidae        (ITIS)
-[94/215] Lagothrix lagothricha              -> Primates         Atelidae         (ITIS)
-[95/215] Lama glama                         -> Artiodactyla     Camelidae        (ITIS)
-[96/215] Lemur catta                        -> Primates         Lemuridae        (ITIS)
-[97/215] Leontopithecus rosalia             -> Primates         Callitrichidae   (ITIS)
-[98/215] Lepilemur ruficaudatus             -> Primates         Lepilemuridae    (ITIS)
-[99/215] Lophocebus albigena                -> Primates         Cercopithecidae  (ITIS)
-[100/215] Loris tardigradus                  -> Primates         Lorisidae        (ITIS)
-[101/215] Loxodonta africana                 -> Proboscidea      Elephantidae     (NCBI:taxid)
-[102/215] Macaca fascicularis                -> Primates         Cercopithecidae  (NCBI:taxid)
-[103/215] Macaca maura                       -> Primates         Cercopithecidae  (ITIS)
-[104/215] Macaca mulatta                     -> Primates         Cercopithecidae  (NCBI:taxid)
-[105/215] Macaca nemestrina                  -> Primates         Cercopithecidae  (NCBI:taxid)
-[106/215] Macaca radiata                     -> Primates         Cercopithecidae  (NCBI:taxid)
-[107/215] Macronycteris commersoni           -> Chiroptera       Hipposideridae   (NCBI:taxid)
-[108/215] Macropus fuliginosus               -> Diprotodontia    Macropodidae     (NCBI:taxid)
-[109/215] Mandrillus sphinx                  -> Primates         Cercopithecidae  (ITIS)
-[110/215] Marmosa mitis                      -> Didelphimorphia  Didelphidae      (GBIF)
-[111/215] Marmosops incanus                  -> Didelphimorphia  Didelphidae      (NCBI:taxid)
-[112/215] Megaloglossus woermanni            -> Chiroptera       Pteropodidae     (NCBI:taxid)
-[113/215] Mesocricetus auratus               -> Rodentia         Cricetidae       (NCBI:taxid)
-[114/215] Metachirus nudicaudatus            -> Didelphimorphia  Didelphidae      (NCBI:taxid)
-[115/215] Microcebus murinus                 -> Primates         Cheirogaleidae   (NCBI:taxid)
-[116/215] Microgale cowani                   -> Afrosoricida     Tenrecidae       (ITIS)
-[117/215] Microgale mergulus                 -> Afrosoricida     Tenrecidae       (ITIS)
-[118/215] Micropotamogale lamottei           -> Afrosoricida     Potamogalidae    (ITIS)
-[119/215] Micropotamogale ruwenzorii         -> Afrosoricida     Potamogalidae    (ITIS)
-[120/215] Microsorex hoyi                    -> Soricomorpha     Soricidae        (GBIF)
-[121/215] Miniopterus schreibersii           -> Chiroptera       Miniopteridae    (NCBI:taxid)
-[122/215] Miopithecus talapoin               -> Primates         Cercopithecidae  (ITIS)
-[123/215] Mops pumilus                       -> Chiroptera       Molossidae       (NCBI:taxid)
-[124/215] Mungos mungo                       -> Carnivora        Herpestidae      (NCBI:taxid)
-[125/215] Mus musculus                       -> Rodentia         Muridae          (NCBI:taxid)
-[126/215] Mustela erminea                    -> Carnivora        Mustelidae       (ITIS)
-[127/215] Mustela putorius                   -> Carnivora        Mustelidae       (ITIS)
-[128/215] Mustela putorius furo              -> Carnivora        Mustelidae       (NCBI:taxid)
-[129/215] Mustela vison                      -> Carnivora        Mustelidae       (GBIF)
-[130/215] Myosorex babaulti                  -> Eulipotyphla     Soricidae        (ITIS)
-[131/215] Myoxus glis                        -> Rodentia         Gliridae         (NCBI:name)
-[132/215] Myrmecophaga tridactyla            -> Pilosa           Myrmecophagidae  (ITIS)
-[133/215] NA                                 -> ?                ?                (UNRESOLVED)
-[134/215] Nasalis larvatus                   -> Primates         Cercopithecidae  (ITIS)
-[135/215] Nasua narica                       -> Carnivora        Procyonidae      (NCBI:name)
-[136/215] Neomys fodiens                     -> Eulipotyphla     Soricidae        (ITIS)
-[137/215] Nesogale dobsoni                   -> Afrosoricida     Tenrecidae       (ITIS)
-[138/215] Nesogale talazaci                  -> Afrosoricida     Tenrecidae       (NCBI:name)
-[139/215] Notamacropus parma                 -> Diprotodontia    Macropodidae     (NCBI:taxid)
-[140/215] Notamacropus rufogriseus           -> Diprotodontia    Macropodidae     (NCBI:taxid)
-[141/215] Nycticebus coucang                 -> Primates         Lorisidae        (NCBI:name)
-[142/215] Odocoileus virginianus             -> Artiodactyla     Cervidae         (NCBI:name)
-[143/215] Oryctolagus cuniculus              -> Lagomorpha       Leporidae        (NCBI:taxid)
-[144/215] Oryzorictes hova                   -> Afrosoricida     Tenrecidae       (ITIS)
-[145/215] Osphranter rufus                   -> Diprotodontia    Macropodidae     (NCBI:taxid)
-[146/215] Otolemur crassicaudatus            -> Primates         Galagidae        (ITIS)
-[147/215] Otolemur garnettii                 -> Primates         Galagidae        (NCBI:taxid)
-[148/215] Pan paniscus                       -> Primates         Hominidae        (ITIS)
-[149/215] Pan troglodytes                    -> Primates         Hominidae        (ITIS)
-[150/215] Panthera leo                       -> Carnivora        Felidae          (NCBI:taxid)
-[151/215] Papio anubis                       -> Primates         Cercopithecidae  (ITIS)
-[152/215] Papio cynocephalus                 -> Primates         Cercopithecidae  (NCBI:taxid)
-[153/215] Papio hamadryas                    -> Primates         Cercopithecidae  (ITIS)
-[154/215] Parascalops breweri                -> Eulipotyphla     Talpidae         (NCBI:taxid)
-[155/215] Perodicticus potto                 -> Primates         Lorisidae        (ITIS)
-[156/215] Petrodromus tetradactylus          -> Macroscelidea    Macroscelididae  (NCBI:taxid)
-[157/215] Piliocolobus badius                -> Primates         Cercopithecidae  (ITIS)
-[158/215] Pithecia monachus                  -> Primates         Pitheciidae      (ITIS)
-[159/215] Pithecia pithecia                  -> Primates         Pitheciidae      (ITIS)
-[160/215] Pongo pygmaeus                     -> Primates         Hominidae        (NCBI:taxid)
-[161/215] Pongo sp.                          -> Primates         Hominidae        (GBIF)
-[162/215] Potamogale velox                   -> Afrosoricida     Potamogalidae    (ITIS)
-[163/215] Potos flavus                       -> Carnivora        Procyonidae      (ITIS)
-[164/215] Procavia capensis                  -> Hyracoidea       Procaviidae      (NCBI:taxid)
-[165/215] Procyon lotor                      -> Carnivora        Procyonidae      (NCBI:taxid)
-[166/215] Proechimys guyannensis             -> Rodentia         Echimyidae       (NCBI:taxid)
-[167/215] Propithecus verreauxi              -> Primates         Indriidae        (ITIS)
-[168/215] Pygathrix nemaeus                  -> Primates         Cercopithecidae  (ITIS)
-[169/215] Rattus norvegicus                  -> Rodentia         Muridae          (NCBI:taxid)
-[170/215] Rhynchocyon cirnei                 -> Macroscelidea    Macroscelididae  (ITIS)
-[171/215] Rousettus aegyptiacus              -> Chiroptera       Pteropodidae     (NCBI:taxid)
-[172/215] Ruwenzorisorex suncoides           -> Eulipotyphla     Soricidae        (ITIS)
-[173/215] Saguinus geoffroyi                 -> Primates         Callitrichidae   (GBIF)
-[174/215] Saguinus midas                     -> Primates         Cebidae          (NCBI:taxid)
-[175/215] Saguinus oedipus                   -> Primates         Callitrichidae   (GBIF)
-[176/215] Saimiri sciureus                   -> Primates         Cebidae          (NCBI:taxid)
-[177/215] Sapajus apella                     -> Primates         Cebidae          (NCBI:taxid)
-[178/215] Sarcophilus harrisii               -> Dasyuromorphia   Dasyuridae       (NCBI:taxid)
-[179/215] Scalopus aquaticus                 -> Eulipotyphla     Talpidae         (NCBI:taxid)
-[180/215] Sciurus carolinensis               -> Rodentia         Sciuridae        (NCBI:taxid)
-[181/215] Scotonycteris zenkeri              -> Chiroptera       Pteropodidae     (NCBI:taxid)
-[182/215] scutisorexãsomereni             -> Soricomorpha     Soricidae        (GBIF)
-[183/215] ScutisorexÊsomereni               -> Soricomorpha     Soricidae        (GBIF)
-[184/215] Semnopithecus entellus             -> Primates         Cercopithecidae  (ITIS)
-[185/215] Setifer setosus                    -> Afrosoricida     Tenrecidae       (ITIS)
-
-Warning message:
-Giving up on query after 3 tries. NAs will be returned. 
-
-Execution halted","2026-09-26 22:12:16.49272","2026-09-26 22:17:16.54658",300.05386018753
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_tools/file_list.R","FAILED","Error: Non-canonical Sheet1 naming formula(s): F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12, F13, F14, F15, F16, F17, F18, F19, F20, F21, F22, F23, F24, F25, F26, F27, F28, F29, F30, F31, F32, F33, F34, F35, F36, F37, F38, F39, F40, F41, F42, F43, F44, F45, F46, F47, F48, F49, F50, F51, F52, F53, F54, F55, F56, F57, F58, F59, F60, F61, F62, F63, F64, F65, F66, F67, F68, F69, F70, F71, F72, F73, F74, F75, F76, F77, F78, F79, F80, F81, F82, F83, F84, F85, F86, F87, F88, F89, F90, F91, F92, F93, F94, F95, F96, F97, F98, F99, F100, F101, F102, F103, F104, F105, F106, F107, F108, F109, F110, F111, F112, F113, F114, F115, F116, F117, F118, F119, F120, F121, F122, F123, F124, F125, F126, F127, F128, F129, F130, F131, F132, F133, F134, F135, F136, F137, F138, F139, F140, F141, F142, F143, F144, F145, F146, F147, F148, F149, F150, F151, F152, F153, F154, F155, F156, F157, F158, F159, F160, F161, F162, F163, F164, F165, F166, F167, F168, F169, F170, F171, F172, F173, F174, F175, F176, F177, F17
-Execution halted","2026-09-26 22:17:16.823094","2026-09-26 22:17:18.222652",1.39955806732178
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Baron_etal_1996/Baron_etal_1996_Table32.R","FAILED","Error: Unexpected missing species or volume in Table 32
-Execution halted","2026-09-26 22:17:50.709355","2026-09-26 22:17:51.008667",0.299311876296997
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Dalland__1965/Dalland__1965_ResultsText.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error: No usable 'Item encoded' in __ReadMe.xlsx for Dalland__1965_ResultsText -- refusing to write NA.tsv.
+Execution halted","2026-09-27 10:26:32.01308","2026-09-27 10:26:32.901992",0.888912200927734
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Gillette_etal_1973/Gillette_etal_1973_ResultsText.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error: No usable 'Item encoded' in __ReadMe.xlsx for Gillette_etal_1973_ResultsText -- refusing to write NA.tsv.
+Execution halted","2026-09-27 10:27:26.296946","2026-09-27 10:27:27.264059",0.967113018035889
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heffner_etal_1969/Heffner_etal_1969_ResultsText.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
 ✔ dplyr     1.2.1     ✔ readr     2.2.0
 ✔ forcats   1.0.1     ✔ stringr   1.6.0
@@ -259,45 +34,414 @@ Execution halted","2026-09-26 22:17:50.709355","2026-09-26 22:17:51.008667",0.29
 ✖ dplyr::lag()    masks stats::lag()
 ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
 Error in read.table(file = file, header = header, sep = sep, quote = quote,  : 
-  more columns than column names
+  no lines available in input
 Calls: read.csv -> read.table
-Execution halted","2026-09-26 22:19:45.201088","2026-09-26 22:19:47.215941",2.01485300064087
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jacob_etal_2021/Jacob_etal_2021_TABLE1.R","FAILED","Error: Registry rows matching 'Jacob_etal_2021_TABLE1': 0
-Execution halted","2026-09-26 22:21:02.336097","2026-09-26 22:21:02.867174",0.531076908111572
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jacob_etal_2021/Jacob_etal_2021_TABLE2.R","FAILED","Error: Registry rows matching 'Jacob_etal_2021_TABLE2': 0
-Execution halted","2026-09-26 22:21:02.871268","2026-09-26 22:21:03.510502",0.639234066009521
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jacob_etal_2021/Jacob_etal_2021_TABLE3.R","FAILED","Error: Registry rows matching 'Jacob_etal_2021_TABLE3': 0
-Execution halted","2026-09-26 22:21:03.515378","2026-09-26 22:21:04.173511",0.658133029937744
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Ridgway__1990/Ridgway__1990_Table1.R","FAILED","Warning message:
-There were 8 warnings in `summarise()`.
-The first warning was:
-ℹ In argument: `mean_BdW = round(mean(body_weight_kg), 0)`.
-ℹ In group 1: `geographic_category = ""Category""`.
-Caused by warning in `mean.default()`:
-! argument is not numeric or logical: returning NA
-ℹ Run `dplyr::last_dplyr_warnings()` to see the 7 remaining warnings. 
-Error in chk$mean_BdW - chk$body_weight_kg : 
-  non-numeric argument to binary operator
-Calls: stopifnot
-Execution halted","2026-09-26 22:23:12.033824","2026-09-26 22:23:12.821813",0.787989139556885
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Schniter_PenaherreraAguirre_2026/Schniter_PenaherreraAguirre_2026_data.R","FAILED","Error: `path` does not exist: ‘Schniter_Penaherrera-Aguirre_2026_data_snapshot.xlsx’
-Execution halted","2026-09-26 22:23:19.610372","2026-09-26 22:23:20.095041",0.484668970108032
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Tschudin__1998/Tschudin__1998_Table2.5.R","FAILED","Error in `mutate()`:
-ℹ In argument: `sum_diff = abs((neocortex_volume_cm3 +
-  posterior_fossa_volume_cm3) - total_brain_volume_cm3)`.
-Caused by error in `neocortex_volume_cm3 + posterior_fossa_volume_cm3`:
-! non-numeric argument to binary operator
+Execution halted","2026-09-27 10:27:33.699517","2026-09-27 10:27:35.571891",1.87237405776978
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heffner_etal_1994_a/Heffner_etal_1994_a_Figure1.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error: No usable 'Item encoded' in __ReadMe.xlsx for Heffner_etal_1994_a_Figure1 -- refusing to write NA.tsv.
+Execution halted","2026-09-27 10:27:35.577948","2026-09-27 10:27:36.475072",0.89712381362915
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heffner_etal_1994_a/Heffner_etal_1994_a_Figure2.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error: No usable 'Item encoded' in __ReadMe.xlsx for Heffner_etal_1994_a_Figure2 -- refusing to write NA.tsv.
+Execution halted","2026-09-27 10:27:36.483096","2026-09-27 10:27:37.354584",0.871488094329834
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heffner_etal_1994_b/Heffner_etal_1994_b_Figure3.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error: No usable 'Item encoded' in __ReadMe.xlsx for Heffner_etal_1994_b_Figure3 -- refusing to write NA.tsv.
+Execution halted","2026-09-27 10:27:37.357831","2026-09-27 10:27:38.237218",0.879386901855469
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heffner_etal_1994_c/Heffner_etal_1994_c_Table1.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error: No usable 'Item encoded' in __ReadMe.xlsx for Heffner_etal_1994_c_Table1 -- refusing to write NA.tsv.
+Execution halted","2026-09-27 10:27:38.240447","2026-09-27 10:27:39.16569",0.925242900848389
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heffner_etal_2001/Heffner_etal_2001_ResultsText.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error: No usable 'Item encoded' in __ReadMe.xlsx for Heffner_etal_2001_ResultsText -- refusing to write NA.tsv.
+Execution halted","2026-09-27 10:27:39.174832","2026-09-27 10:27:40.102658",0.927825927734375
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heffner_etal_2006/Heffner_etal_2006_ResultsText.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error: No usable 'Item encoded' in __ReadMe.xlsx for Heffner_etal_2006_ResultsText -- refusing to write NA.tsv.
+Execution halted","2026-09-27 10:27:41.0162","2026-09-27 10:27:41.900211",0.884011030197144
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heffner_Heffner_1982/Heffner_Heffner_1982_ResultsText.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error: No usable 'Item encoded' in __ReadMe.xlsx for Heffner_Heffner_1982_ResultsText -- refusing to write NA.tsv.
+Execution halted","2026-09-27 10:27:49.239711","2026-09-27 10:27:50.166334",0.926622867584229
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heffner_Heffner_2003/Heffner_Heffner_2003_ResultsText.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error: No usable 'Item encoded' in __ReadMe.xlsx for Heffner_Heffner_2003_ResultsText -- refusing to write NA.tsv.
+Execution halted","2026-09-27 10:27:52.869863","2026-09-27 10:27:53.842521",0.972657918930054
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heffner_Heffner_2010_b/Heffner_Heffner_2010_b_Table1.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error: No usable 'Item encoded' in __ReadMe.xlsx for Heffner_Heffner_2010_b_Table1 -- refusing to write NA.tsv.
+Execution halted","2026-09-27 10:27:53.849495","2026-09-27 10:27:54.712619",0.863124132156372
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heffner_Heffner_2010/Heffner_Heffner_2010_ResultsText.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error: No usable 'Item encoded' in __ReadMe.xlsx for Heffner_Heffner_2010_ResultsText -- refusing to write NA.tsv.
+Execution halted","2026-09-27 10:27:54.715741","2026-09-27 10:27:55.697635",0.981894016265869
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jackson_etal_1997/Jackson_etal_1997_ResultsText.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error: No usable 'Item encoded' in __ReadMe.xlsx for Jackson_etal_1997_ResultsText -- refusing to write NA.tsv.
+Execution halted","2026-09-27 10:28:23.558029","2026-09-27 10:28:24.461035",0.903006076812744
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kastak_Schusterman_1999/Kastak_Schusterman_1999_ResultsText.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error: No usable 'Item encoded' in __ReadMe.xlsx for Kastak_Schusterman_1999_ResultsText -- refusing to write NA.tsv.
+Execution halted","2026-09-27 10:28:48.034658","2026-09-27 10:28:48.985142",0.950484037399292
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kastelein_etal_2010_b/Kastelein_etal_2010_b_TableI.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error: No usable 'Item encoded' in __ReadMe.xlsx for Kastelein_etal_2010_b_TableI -- refusing to write NA.tsv.
+Execution halted","2026-09-27 10:28:48.988838","2026-09-27 10:28:49.908905",0.920067071914673
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kelly_etal_1986/Kelly_etal_1986_ResultsText.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error: No usable 'Item encoded' in __ReadMe.xlsx for Kelly_etal_1986_ResultsText -- refusing to write NA.tsv.
+Execution halted","2026-09-27 10:29:00.411632","2026-09-27 10:29:01.272068",0.860435962677002
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Koay_etal_1998_b/Koay_etal_1998_b_Resultstext.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error: No usable 'Item encoded' in __ReadMe.xlsx for Koay_etal_1998_b_Resultstext -- refusing to write NA.tsv.
+Execution halted","2026-09-27 10:29:03.080667","2026-09-27 10:29:03.953961",0.873293876647949
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Koay_etal_2003/Koay_etal_2003_ResultsText.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error: No usable 'Item encoded' in __ReadMe.xlsx for Koay_etal_2003_ResultsText -- refusing to write NA.tsv.
+Execution halted","2026-09-27 10:29:05.819252","2026-09-27 10:29:06.670067",0.850815057754517
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Mohl__1968/Mohl__1968_Table2.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error: No usable 'Item encoded' in __ReadMe.xlsx for Mohl__1968_Table2 -- refusing to write NA.tsv.
+Execution halted","2026-09-27 10:29:31.181223","2026-09-27 10:29:32.084338",0.903115034103394
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Owren_etal_1988/Owren_etal_1988_Table1.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error: No usable 'Item encoded' in __ReadMe.xlsx for Owren_etal_1988_Table1 -- refusing to write NA.tsv.
+Execution halted","2026-09-27 10:29:42.494384","2026-09-27 10:29:43.449376",0.954992055892944
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Ravizza_etal_1969/Ravizza_etal_1969_ResultsText.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error: No usable 'Item encoded' in __ReadMe.xlsx for Ravizza_etal_1969_ResultsText -- refusing to write NA.tsv.
+Execution halted","2026-09-27 10:29:51.975511","2026-09-27 10:29:52.890907",0.915395975112915
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Ravizza_Masterton_1972/Ravizza_Masterton_1972_ResultsText.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error: No usable 'Item encoded' in __ReadMe.xlsx for Ravizza_Masterton_1972_ResultsText -- refusing to write NA.tsv.
+Execution halted","2026-09-27 10:29:52.894492","2026-09-27 10:29:54.112579",1.2180871963501
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Schusterman__1974/Schusterman__1974_Table1.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Warning message:
+There was 1 warning in `mutate()`.
+ℹ In argument: `hearing_loss_air_vs_water_dB = ifelse(raw_value == ""..."",
+  NA_real_, as.numeric(raw_value))`.
+Caused by warning in `ifelse()`:
+! NAs introduced by coercion 
+Error: No usable 'Item encoded' in __ReadMe.xlsx for Schusterman__1974_Table1 -- refusing to write NA.tsv.
+Execution halted","2026-09-27 10:30:02.887638","2026-09-27 10:30:03.835011",0.947372913360596
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Schusterman_Moore_1980/Schusterman_Moore_1980_ResultsText.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error: No usable 'Item encoded' in __ReadMe.xlsx for Schusterman_Moore_1980_ResultsText -- refusing to write NA.tsv.
+Execution halted","2026-09-27 10:30:04.722446","2026-09-27 10:30:05.599019",0.876573085784912
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_cortical_areas/cortical_areas_compiled.R","FAILED","Error in `filter()`:
+ℹ In argument: `Reference == nm`.
+Caused by error:
+! object 'Reference' not found
 Backtrace:
      ▆
-  1. ├─result %>% ...
-  2. ├─dplyr::mutate(...)
-  3. ├─dplyr:::mutate.data.frame(...)
-  4. │ └─dplyr:::mutate_cols(.data, dplyr_quosures(...), by)
-  5. │   ├─base::withCallingHandlers(...)
-  6. │   └─dplyr:::mutate_col(dots[[i]], data, mask, new_columns)
-  7. │     └─mask$eval_all_mutate(quo)
-  8. │       └─dplyr (local) eval()
+  1. ├─dplyr::filter(terms, Reference == nm, Standardized_Term != ""Species"")
+  2. ├─dplyr:::filter.data.frame(terms, Reference == nm, Standardized_Term != ""Species"")
+  3. │ └─dplyr:::filter_impl(...)
+  4. │   └─dplyr:::filter_rows(...)
+  5. │     └─dplyr:::filter_eval(...)
+  6. │       ├─base::withCallingHandlers(...)
+  7. │       └─mask$eval_all_filter(dots_expanded, invert, env_filter)
+  8. │         └─dplyr (local) eval()
   9. └─base::.handleSimpleError(...)
  10.   └─dplyr (local) h(simpleError(msg, call))
  11.     └─rlang::abort(message, class = error_class, parent = parent, call = error_call)
-Execution halted","2026-09-26 22:24:15.281629","2026-09-26 22:24:16.282485",1.00085592269897
+Warning messages:
+1: Unknown or uninitialised column: `Original_Term`. 
+2: Unknown or uninitialised column: `Reference`. 
+3: Unknown or uninitialised column: `Standardized_Term`. 
+Execution halted","2026-09-27 10:31:54.604604","2026-09-27 10:31:57.571035",2.96643090248108
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_cortical_areas/standardized_term.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error: cannot open the connection
+In addition: Warning message:
+In open.connection(con, open_mode) :
+  cannot open file '/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_cortical_areas/standardized_term_cortical_areas.csv': Operation timed out
+Execution halted","2026-09-27 10:31:57.574849","2026-09-27 10:32:02.271832",4.69698309898376
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_keys/build_trait_authority.R","FAILED","270 of 829 variables have no row in _keys/variable_definitions.csv (source: local).
+  ACC_fork_cell_fork_pct [nissl_count] (percent) | ACC_fusiform_L6_soma_volume [stereology] (um3) | ACC_pyramidal_L5_soma_volume [stereology] (um3) | ACC_subgenual_ven_ven_count [fractionator] (count) | ACC_subgenual_ven_ven_pct [fractionator] (percent) | ACC_ven_soma_volume [stereology] (um3) | ACC_ven_ven_count [fractionator] (count) | ACC_ven_ven_index [stereology] (ratio) ... and 262 more
+  Fix: Rscript _keys/build_variable_definitions.R && Rscript __ShinyApp/build_data.R
+Error: Dataset(s) with no folder mapping: Cell type, size & morphology
+Add them to DS in this script -- an unmapped dataset would silently become its own bogus 'authority'.
+Execution halted","2026-09-27 10:32:32.812823","2026-09-27 10:32:35.21004",2.39721703529358
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_item_name_resolution.R","FAILED","registry Item names: 563   |   TSVs on disk: 453   |   NA.tsv present: YES -- REMOVE IT
+
+__merging_behaviour/behaviour_compiled.R                     0 item name(s) referenced   OK
+__merging_body_ecology/body_ecology_compiled.R               0 item name(s) referenced   OK
+__merging_brain_mass/brain_mass_compiled.R                   0 item name(s) referenced   OK
+__merging_cell_morphology/cell_morphology_compiled.R        18 item name(s) referenced   2 UNRESOLVED
+      Hakeem_etal_2009_Table1                        -> TSV not on disk  [10.1002%2Far.20829_Table1]
+      Raghanti_etal_2015_Table1                      -> TSV not on disk  [10.1007%2Fs00429-014-0792-y_Table1]
+__merging_cellcounts/cellcounts_compiled.R                  15 item name(s) referenced   OK
+__merging_cerebellar_folding/cerebellar_folding_compiled.R   0 item name(s) referenced   OK
+__merging_cortical_areas/cortical_areas_compiled.R          11 item name(s) referenced   OK
+__merging_cortical_layers/cortical_layers_compiled.R         1 item name(s) referenced   OK
+__merging_fossil_brain_glucose/fossil_brain_glucose_compiled.R   0 item name(s) referenced   OK
+__merging_gyrification/gyrification_compiled.R               3 item name(s) referenced   OK
+__merging_sensory/sensory_compiled.R                         5 item name(s) referenced   OK
+__merging_sleep/sleep_compiled.R                             4 item name(s) referenced   OK
+__merging_volumes/volumes_compiled_select.R                 34 item name(s) referenced   OK
+__merging_volumes/volumes_compiled.R                        67 item name(s) referenced   OK
+
+orphaned TSVs (on disk, claimed by no registry row): 22
+      10.1002%2Fajpa.1330380234_ResultsText.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1016%2F0378-5955(86)90025-0_ResultsText.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1016%2FB978-012370880-9.00004-9_ResultsText.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1016%2Fj.heares.2006.06.008_ResultsText.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1016%2FS0378-5955(01)00298-2_ResultsText.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1016%2FS0378-5955(03)00025-X_ResultsText.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1037%2F0735-7036.102.2.99_Table1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1037%2F0735-7036.111.1.100_ResultsText.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1037%2F0735-7036.96.6.926_ResultsText.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1073%2Fpnas.96.9.5268 _Table1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1073%2Fpnas.96.9.5268 _Table2.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1121%2F1.1903415_Table1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1121%2F1.2004876_ResultsText.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1121%2F1.3284546_ResultsText.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1126%2Fscience.150.3700.1185_ResultsText.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1139%2Fz99-151_ResultsText.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1152%2Fjn.1972.35.3.344_ResultsText.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      JAudRes%3A8%3A27-38_Table2.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      JAudRes%3A9%3A1-7_ResultsText.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      NA.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      zz_DELETE_ME_test_upload_simplename.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      zz_DELETE_ME_test_upload2.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+rows with a citation but no Item name (need _tools/file_list.R): 0
+
+2 unresolved reference(s).
+run _tools/restore_registry_rows.R (adding any new row to its ROWS list), then _tools/file_list.R.","2026-09-27 10:32:55.891384","2026-09-27 10:32:58.660628",2.76924419403076
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_trait_authority.R","FAILED","270 of 829 variables have no row in _keys/variable_definitions.csv (source: local).
+  ACC_fork_cell_fork_pct [nissl_count] (percent) | ACC_fusiform_L6_soma_volume [stereology] (um3) | ACC_pyramidal_L5_soma_volume [stereology] (um3) | ACC_subgenual_ven_ven_count [fractionator] (count) | ACC_subgenual_ven_ven_pct [fractionator] (percent) | ACC_ven_soma_volume [stereology] (um3) | ACC_ven_ven_count [fractionator] (count) | ACC_ven_ven_index [stereology] (ratio) ... and 262 more
+  Fix: Rscript _keys/build_variable_definitions.R && Rscript __ShinyApp/build_data.R
+trait_authority.csv: 564 rows | app labels: 829
+
+                    adjudicated adopted_from_variable_canonical 
+                             11                              19 
+           auto_single_producer 
+                            534 
+
+----------------------------------------------------------------------
+FAIL  COMPLETENESS: 275 label(s) the app serves have no authority row:
+    ACC_fork_cell_fork_pct [nissl_count] (percent)
+    ACC_fusiform_L6_soma_volume [stereology] (um3)
+    ACC_pyramidal_L5_soma_volume [stereology] (um3)
+    ACC_subgenual_ven_ven_count [fractionator] (count)
+    ACC_subgenual_ven_ven_pct [fractionator] (percent)
+    ACC_ven_soma_volume [stereology] (um3)
+    ACC_ven_ven_count [fractionator] (count)
+    ACC_ven_ven_index [stereology] (ratio)
+    ACC_ven_ven_pct [fractionator] (percent)
+    ACC_ven_ven_pct [nissl_count] (percent)
+    anterior_insula_fork_cell_fork_pct [nissl_count] (percent)
+    anterior_insula_ven_ven_count [fractionator] (count)
+    anterior_insula_ven_ven_pct [fractionator] (percent)
+    anterior_insula_ven_ven_pct [nissl_count] (percent)
+    CFF_behavioural.Hz
+    CFF_electrophysiological.Hz
+    cortex_corticospinal_field_corticospinal_soma_diameter [HRP] (um)
+    FI_all_neurons_reference_neuron_count [fractionator] (count)
+    FI_ven_ven_count [fractionator] (count)
+    FI_ven_ven_pct [fractionator] (percent)
+    ... and 255 more
+
+FAIL  COMPLETENESS: 10 registry row(s) name a label the app no longer serves:
+    ILA complexity
+    ILA linear density
+    ILA Pial Dorsal
+    ILA Pial Ventral
+    ILA primary processes
+    ILA Subpial Dorsal
+    ILA Subpial Ventral
+    ILA total length
+    ILA total processes
+    Visual_acuity.cdeg
+  (a vetoed or renamed label -- regenerate, or remove the row deliberately)
+
+Error: check_trait_authority.R: 2 guard(s) failed.
+Execution halted","2026-09-27 10:32:59.089855","2026-09-27 10:33:01.265201",2.17534613609314

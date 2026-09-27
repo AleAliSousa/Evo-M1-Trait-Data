@@ -22,7 +22,7 @@ item_name <- c("Changizi__2001_Figure3",
                "Young_etal_2013_Table1",            # REGIONAL M1 surface area (M1_Surface_Area.mm2)
                "Turner_etal_2016_Table1",           # whole-cortex surface via turner_2016_surface.csv (case dedupe)
                "Collins_etal_2016_Table1",          # ADDED 2026-08-25: chimp cortex/V1/V2/M1 areas (bespoke block; M1 superseded by Young 2013 — same specimen KAAS-PAN-11_38)
-               "Mota_Herculano-Houzel_2015_TableS1",# ADDED 2026-08-25: OWN columns only (AG total surface, MHH folding index, thickness; per ONE hemisphere). "_other" columns are secondary compilations — never merged.
+               "Mota_HerculanoHouzel_2015_TableS1",# ADDED 2026-08-25: OWN columns only (AG total surface, MHH folding index, thickness; per ONE hemisphere). "_other" columns are secondary compilations — never merged.
                "Mota_etal_2019_SupplementaryTableS1",# ADDED 2026-08-25: AT/AE/T only (per one hemisphere). VT/VG/VW volumes HELD for a __merging_volumes overlap audit; N (cortical neurons) skipped as a compilation.
                "Smaers_etal_2017_TableS1part2",     # ADDED 2026-08-25 (owner decision): SECONDARY — Brodmann 1909 regional surfaces via Smaers 2017. Ingested deliberately (primary not built); a future Brodmann-1909 build supersedes it.
                "Brodmann__1913_Table1")             # ADDED 2026-08-25: PRIMARY — Brodmann 1913 total cortical surface, one hemisphere, 38 taxa (bespoke block: one human row kept).
@@ -64,6 +64,11 @@ regional_terms <- c("M1_Surface_Area.mm2", "V1_Surface_Area.mm2", "V2_Surface_Ar
 ## CorticalSurface_Area.mm2 and CorticalExposedSurface_Area.mm2 are PER-HEMISPHERE values —
 ## do not double to whole-brain without recording it (see laterality/doubling provenance policy).
 
+## NB 2026-09-27: the Mota & Herculano-Houzel 2015 item is keyed as
+## "Mota_HerculanoHouzel_2015_TableS1" (registry column F now strips hyphens; the paper
+## folder is Mota_HerculanoHouzel_2015). Its term file keeps its old file name,
+## standardized_term_by_reference/Mota_Herculano-Houzel_2015_TableS1_standardized_terms.csv,
+## but its Reference column carries the new key.
 terms  <- readr::read_csv("standardized_term_cortical_areas.csv", show_col_types = FALSE)
 codes  <- readxl::read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
 enc    <- function(nm) {
@@ -91,7 +96,7 @@ long <- list()
 # Original_Term mapped to Standardized_Term == "Species"), since e.g. C&S 2005 prints it as species_sci.
 for (nm in c("Changizi__2001_Figure3", "Finlay_etal_2006_Table6.1", "Young_etal_2013_Table1",
              "Changizi_Shimojo_2005_Table1",
-             "Mota_Herculano-Houzel_2015_TableS1",     # own columns only (term map maps nothing else)
+             "Mota_HerculanoHouzel_2015_TableS1",     # own columns only (term map maps nothing else)
              "Mota_etal_2019_SupplementaryTableS1")) { # AT/AE/T only (term map maps nothing else)
   tsv <- file.path(tsvdir, paste0(enc(nm), ".tsv"))
   d   <- readr::read_tsv(tsv, show_col_types = FALSE)
@@ -235,7 +240,7 @@ long$status[long$source == "Collins_etal_2016_Table1" &
 for (tt in c("CorticalSurface_Area.mm2", "CorticalThickness.mm")) {
   m19 <- long$Species[long$source == "Mota_etal_2019_SupplementaryTableS1" &
                       long$Standardized_Term == tt]
-  long$status[long$source == "Mota_Herculano-Houzel_2015_TableS1" &
+  long$status[long$source == "Mota_HerculanoHouzel_2015_TableS1" &
               long$Standardized_Term == tt &
               long$Species %in% m19] <- "superseded_by_Mota_etal_2019"
 }

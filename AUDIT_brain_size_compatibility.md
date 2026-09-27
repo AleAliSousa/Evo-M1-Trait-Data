@@ -163,6 +163,17 @@ a paper does not occur verbatim in it. It exists because an inference written in
 is indistinguishable from a quotation once it is in the CSV — the check caught three of my own,
 including one that was a paraphrase and one that had been trimmed past an OCR artefact.
 
+## The same pattern elsewhere
+
+`__merging_sensory` had the same defect in a different domain: `measure_class =
+psychophysics` covering measures that are retinal anatomy by their own sources' definitions.
+It now carries `_keys/sensory_method_basis.csv` on this key's pattern, with visual acuity and
+critical flicker fusion split into parallel variables by measurement method. Wiring it
+revealed that comparing `poolable_group` alone is too blunt — it fired on two different
+quantities — so `variable_domain.csv` now also carries `poolable_family`, and the app warns
+only when the family matches and the group differs. The brain-size family is `brain_size`,
+which is why brain mass against endocranial capacity still warns.
+
 ## Still open
 
 - **8 mass columns have no stated basis**: `Bauernfeind_etal_2013`, `Brodmann__1913`,

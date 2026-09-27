@@ -1,0 +1,10 @@
+variable,definition,units,notes
+species_row,Row number after removing header/blank lines,integer,
+binomial,Species binomial as printed in Table I,text,
+common_name,Common name as printed in Table I,text,
+lowest_freq_audible_60dB_kHz,Lowest frequency audible at 60 dB SPL (defines the low edge of the binaural-phase-cue availability window),kHz,
+phase_ambiguity_freq_kHz,Frequency at which the interaural phase-difference cue becomes physically ambiguous (defines the high edge of the availability window),kHz,
+available_phase_cue_range_octaves,Octave span between the two frequencies above; the physically-available range of the interaural phase-difference cue,octaves,Computed by the paper's authors at a 30-degree angle from midline (Table I footnote a)
+uses_binaural_time_cue,Whether the species is known to behaviorally use the interaural phase/time-difference cue for localization,text,Yes/No as printed
+source,Citation for the row's values as given by Table I's lettered footnotes,text,"this study" for the paper's own two new measurements (Cynopterus brachyotis, Eidolon helvum)
+data_role,Whether the row is this paper's own new measurement or cited from a prior study,text,primary = measured in this paper; secondary = cited from an earlier paper for comparison

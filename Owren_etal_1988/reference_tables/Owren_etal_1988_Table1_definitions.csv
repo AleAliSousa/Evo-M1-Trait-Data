@@ -1,0 +1,13 @@
+variable,definition,units,notes
+row_id,Row number after removing header/blank lines,integer,
+table_source,Which printed table the row comes from (Table1 = up to 32.0 kHz all 4 groups; Table3 = above 32.0 kHz monkeys only),text,
+frequency_kHz,Test tone frequency as printed,kHz,
+binomial,Species binomial (or Homo sapiens for the human group) as printed,text,
+common_name,Common name for the species,text,not printed in source; added for readability
+n,Number of subjects contributing to that cell as printed (or footnoted),integer,see note column for footnoted exceptions
+mean_threshold_dB_SPL,Mean auditory threshold as printed,dB SPL (re 0.0002 dyne/cm^2),"kept as text because 2 cells print "">72"" (no response at loudest producible signal)"
+sd_dB,Standard deviation of the threshold as printed,dB,blank where no SD was printed (n=1 or n=0 cells)
+range_dB_as_printed,Min-max range across subjects as printed in the source table,text,preserved verbatim before parsing
+range_low_dB,Lower bound of range_dB_as_printed,dB,parsed by the R script; blank where no range was printed
+range_high_dB,Upper bound of range_dB_as_printed,dB,parsed by the R script; blank where no range was printed
+note,Footnote or curatorial note for that cell (e.g. reduced n, no-response ceiling),text,

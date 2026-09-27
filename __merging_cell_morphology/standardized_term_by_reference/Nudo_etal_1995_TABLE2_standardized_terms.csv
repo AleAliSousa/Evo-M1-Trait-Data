@@ -1,0 +1,27 @@
+Original_Term,Reference,Standardized_Term,cell_type,region,layer,statistic,unit,hemisphere,note
+species_sci,Nudo_etal_1995_TABLE2,Species,,,,,,,
+Animal_Nudo1995,Nudo_etal_1995_TABLE2,species_printed,,,,,,,
+hemisphere_used,Nudo_etal_1995_TABLE2,hemisphere,,,,,,,
+method,Nudo_etal_1995_TABLE2,method,,,,,,,
+soma_diameter.um,Nudo_etal_1995_TABLE2,soma_diameter,corticospinal,cortex_all_CS,V,mean,um,,mean CS soma diameter used for the Abercrombie correction; counts/densities in this table -> sensorimotor-pathway scope
+parse_flags,Nudo_etal_1995_TABLE2,note,,,,,,,
+animal_common_Nudo1995,Nudo_etal_1995_TABLE2,DROP,,,,,,,corticospinal counts/percentages -> sensorimotor & motor pathways scope (not yet wired anywhere; see inventory)
+gs_initials_Nudo1995,Nudo_etal_1995_TABLE2,DROP,,,,,,,corticospinal counts/percentages -> sensorimotor & motor pathways scope (not yet wired anywhere; see inventory)
+Order_Nudo1995,Nudo_etal_1995_TABLE2,DROP,,,,,,,corticospinal counts/percentages -> sensorimotor & motor pathways scope (not yet wired anywhere; see inventory)
+Order_resolved,Nudo_etal_1995_TABLE2,DROP,,,,,,,corticospinal counts/percentages -> sensorimotor & motor pathways scope (not yet wired anywhere; see inventory)
+CS_profiles_contralateral,Nudo_etal_1995_TABLE2,DROP,,,,,,,corticospinal counts/percentages -> sensorimotor & motor pathways scope (not yet wired anywhere; see inventory)
+CS_profiles_ipsilateral,Nudo_etal_1995_TABLE2,DROP,,,,,,,corticospinal counts/percentages -> sensorimotor & motor pathways scope (not yet wired anywhere; see inventory)
+CS_profiles_bracket_printed,Nudo_etal_1995_TABLE2,DROP,,,,,,,corticospinal counts/percentages -> sensorimotor & motor pathways scope (not yet wired anywhere; see inventory)
+CS_profiles_used,Nudo_etal_1995_TABLE2,DROP,,,,,,,corticospinal counts/percentages -> sensorimotor & motor pathways scope (not yet wired anywhere; see inventory)
+correction_term,Nudo_etal_1995_TABLE2,DROP,,,,,,,corticospinal counts/percentages -> sensorimotor & motor pathways scope (not yet wired anywhere; see inventory)
+CS_somata_total,Nudo_etal_1995_TABLE2,DROP,,,,,,,corticospinal counts/percentages -> sensorimotor & motor pathways scope (not yet wired anywhere; see inventory)
+CS_somata_A,Nudo_etal_1995_TABLE2,DROP,,,,,,,corticospinal counts/percentages -> sensorimotor & motor pathways scope (not yet wired anywhere; see inventory)
+CS_somata_pct_A,Nudo_etal_1995_TABLE2,DROP,,,,,,,corticospinal counts/percentages -> sensorimotor & motor pathways scope (not yet wired anywhere; see inventory)
+CS_somata_B,Nudo_etal_1995_TABLE2,DROP,,,,,,,corticospinal counts/percentages -> sensorimotor & motor pathways scope (not yet wired anywhere; see inventory)
+CS_somata_pct_B,Nudo_etal_1995_TABLE2,DROP,,,,,,,corticospinal counts/percentages -> sensorimotor & motor pathways scope (not yet wired anywhere; see inventory)
+CS_somata_C,Nudo_etal_1995_TABLE2,DROP,,,,,,,corticospinal counts/percentages -> sensorimotor & motor pathways scope (not yet wired anywhere; see inventory)
+CS_somata_pct_C,Nudo_etal_1995_TABLE2,DROP,,,,,,,corticospinal counts/percentages -> sensorimotor & motor pathways scope (not yet wired anywhere; see inventory)
+CS_somata_Cprime,Nudo_etal_1995_TABLE2,DROP,,,,,,,corticospinal counts/percentages -> sensorimotor & motor pathways scope (not yet wired anywhere; see inventory)
+CS_somata_pct_Cprime,Nudo_etal_1995_TABLE2,DROP,,,,,,,corticospinal counts/percentages -> sensorimotor & motor pathways scope (not yet wired anywhere; see inventory)
+CS_somata_other,Nudo_etal_1995_TABLE2,DROP,,,,,,,corticospinal counts/percentages -> sensorimotor & motor pathways scope (not yet wired anywhere; see inventory)
+CS_somata_pct_other,Nudo_etal_1995_TABLE2,DROP,,,,,,,corticospinal counts/percentages -> sensorimotor & motor pathways scope (not yet wired anywhere; see inventory)

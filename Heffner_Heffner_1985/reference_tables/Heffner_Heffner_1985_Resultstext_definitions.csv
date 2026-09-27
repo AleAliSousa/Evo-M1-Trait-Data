@@ -1,0 +1,12 @@
+variable,definition,units,notes
+species_row,Row number after removing header/blank lines,integer,
+binomial,Species binomial as printed,text,
+common_name,Common name for the species,text,
+audible_freq_low_60dBSPL_khz,Low-frequency hearing limit at 60 dB SPL as interpolated from Fig. 3 and stated in the Results text,kHz,Printed as 51 Hz; converted to 0.051 kHz here
+audible_freq_high_60dBSPL_khz,High-frequency hearing limit (highest frequency audible at 60 dB SPL) as stated in the Results text,kHz,
+region_best_hearing_low_khz,Low edge of the broad region of best hearing stated in the Results text,kHz,
+region_best_hearing_high_khz,High edge of the broad region of best hearing stated in the Results text,kHz,
+best_frequency_khz,Best frequency of hearing (frequency of lowest absolute threshold) as stated in the Results text,kHz,
+best_sensitivity_db,Best sensitivity (lowest absolute threshold) as stated in the Results text,dB SPL (re 20 uN/m^2),
+data_role,Whether this row's values are used by SensoryData_compiled (primary) or not,text,
+source,Citation / section of the paper the value comes from,text,

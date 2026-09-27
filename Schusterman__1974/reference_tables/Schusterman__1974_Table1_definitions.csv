@@ -1,0 +1,9 @@
+variable,definition,units,notes
+row_id,Row number after removing header/blank lines,integer,
+frequency_kHz,Test tone frequency as printed,kHz,
+species_label,Species label exactly as printed as the column heading,text,"Zalophus; Pagophilus; Phoca v."
+binomial,Full species binomial,text,added for readability; not printed in source table
+common_name,Common name,text,added for readability; not printed in source table
+family,Pinniped family (Otariidae = eared seals/sea lions; Phocidae = earless/true seals),text,added for readability
+hearing_loss_air_vs_water_dB,Airborne threshold minus underwater threshold at that frequency,dB,positive = poorer sensitivity in air than water; blank where not tested/reported
+flag,Flags a cell printed as "..." (not tested or not reported) in the source table,text,not_tested_or_not_reported

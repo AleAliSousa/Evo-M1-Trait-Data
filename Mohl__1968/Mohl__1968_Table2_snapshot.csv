@@ -1,0 +1,21 @@
+Medium,Frequency (kc/s),Threshold (db),Reference,Standard deviation (db),Number of Catch Trials,% Correct Catch Trials
+Water,1,(-16),re 1 uBar,9,67,96
+Water,2,(-25),re 1 uBar,5,78,96
+Water,4,-27,re 1 uBar,7,63,100
+Water,8,-33,re 1 uBar,4,60,98
+Water,16,-36,re 1 uBar,5,68,91
+Water,32,-37,re 1 uBar,5,76,95
+Water,45,-28,re 1 uBar,3,66,98
+Water,64,6,re 1 uBar,5,82,96
+Water,90,20,re 1 uBar,4,50,100
+Water,128,25,re 1 uBar,(4),66,100
+Water,180,(33),re 1 uBar,2,74,97
+Air,1,36,re 2x10^-4 uBar,4,61,97
+Air,1.42,34,re 2x10^-4 uBar,5,47,100
+Air,2,19,re 2x10^-4 uBar,3,64,91
+Air,2.83,22,re 2x10^-4 uBar,5,57,98
+Air,4,26,re 2x10^-4 uBar,4,50,96
+Air,8,19,re 2x10^-4 uBar,4,52,100
+Air,11.25,16,re 2x10^-4 uBar,5,48,100
+Air,16,26,re 2x10^-4 uBar,2,70,100
+Air,22.5,(58),re 2x10^-4 uBar,4,39,87

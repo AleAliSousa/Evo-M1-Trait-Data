@@ -1,0 +1,13 @@
+Original_Term,Reference,Standardized_Term,cell_type,region,layer,statistic,unit,hemisphere,note
+Species,Jacobs_etal_2015_Table4,species_printed,,,,,,,
+Source Ref,Jacobs_etal_2015_Table4,ref,,,,,,,"blank = this paper (giraffe, primary); a = Jacobs et al. 2011 elephant; b = Butti et al. 2014 cetaceans (secondary)"
+Age/sex,Jacobs_etal_2015_Table4,note,,,,,,,
+Fixation method,Jacobs_etal_2015_Table4,DROP,,,,,,,
+Fixation method note,Jacobs_etal_2015_Table4,DROP,,,,,,,
+Region sampled,Jacobs_etal_2015_Table4,region_printed,,,,,,,pooled multi-region Golgi sample; compile sets region = pooled_multiregion
+Mean Soma depth (um),Jacobs_etal_2015_Table4,soma_depth,pyramidal_unspecified,,not reported,mean,um,,
+Mean Soma depth SD (um),Jacobs_etal_2015_Table4,soma_depth,pyramidal_unspecified,,not reported,sd,um,,
+Mean Brain mass (g),Jacobs_etal_2015_Table4,DROP,,,,,,,-> __merging_brain_mass scope
+Mean Soma size (um2),Jacobs_etal_2015_Table4,soma_area,pyramidal_unspecified,,not reported,mean,um2,,
+Mean Soma size SD (um2),Jacobs_etal_2015_Table4,soma_area,pyramidal_unspecified,,not reported,sd,um2,,
+n Pyramidal neurons,Jacobs_etal_2015_Table4,n,pyramidal_unspecified,,,n,neurons,,

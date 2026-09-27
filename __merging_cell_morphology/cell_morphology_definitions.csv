@@ -1,0 +1,28 @@
+measure,definition,unit,applies_to,note
+soma_volume,cell-body (perikaryal) volume,um3,neuron soma,"nucleator/planar-rotator stereology or Nissl perikaryal volumetry; Golgi-derived soma sizes are areas, not volumes"
+soma_area,cross-sectional soma area in the plane of section/tracing,um2,neuron soma,Jacobs-lineage Golgi 'soma size' and stereological nucleator area both map here; method column separates them
+soma_length,maximum soma length (longest axis),um,neuron soma,
+soma_diameter,mean soma diameter,um,neuron soma,Nudo 1995: mean corticospinal soma diameter used for Abercrombie correction
+soma_depth,depth of soma below pial surface,um,neuron soma,laminar position proxy
+dendritic_volume,total dendritic volume of the traced arbor,um3,dendritic arbor,Golgi 2-D tracing
+total_dendritic_length,summed length of all dendritic segments,um,dendritic arbor,TDL
+mean_segment_length,mean length of a dendritic segment,um,dendritic arbor,MSL
+dendritic_segment_count,number of dendritic segments,count,dendritic arbor,DSC
+dendritic_tree_count,number of primary dendritic trees leaving the soma,count,dendritic arbor,
+basal_dendritic_field_area,area of the basal dendritic field (convex/polygon area of the tangential basal arbor),um2,basal dendritic arbor,Elston lineage; Elston 2001 prints x10^4 um2 and is rescaled to um2 in the compile (flagged)
+peak_branching_complexity,peak number of Sholl-annulus intersections of the basal dendrites,intersections,basal dendritic arbor,Elston 2001
+branches_at_75um,maximum number of basal dendritic branches intersecting the Sholl annulus 75 um from the soma,count,basal dendritic arbor,Elston 2000; stated for areas 10 and 11 only
+spine_count,total dendritic spine number on the traced arbor (or estimated for the 'average' neuron),count,dendritic spines,"Jacobs DSN; Elston TNS (estimated, basal arbor only)"
+spine_density,spines per micrometre of dendrite,spines/um,dendritic spines,Jacobs DSD
+max_spine_density,maximum spine density along the basal dendrite,spines/10um,dendritic spines,"Elston 2001 prints per 10 um; NOT rescaled to spines/um because it is a maximum, not a mean"
+ven_count,number of von Economo neurons (spindle cells) in the region,count,VEN,"stereological estimate; hemisphere basis is carried, never doubled"
+ven_pct,VENs as a percentage of layer V neurons in the region,percent,VEN,
+fork_pct,fork cells as a percentage of layer V neurons in the region,percent,fork cell,Raghanti 2015
+ven_index,ratio of mean VEN soma volume to mean layer V pyramidal soma volume,ratio,VEN,derived-in-source; Butti 2009
+reference_neuron_count,total neuron number in the region used as the denominator for ven_pct,count,all neurons,"Hakeem 2009 FI layer V neurons; context for ven_pct, not a cell-count trait"
+ila_presence,presence class of interlaminar astrocytes (No / rudimentary / Yes) by pial/subpial position and dorsal/ventral frontal cortex,category,interlaminar astrocyte,Falcone 2019 Table 1; categorical
+ila_linear_density,pial interlaminar astrocytes per mm of pial length,cells/mm,interlaminar astrocyte,Falcone 2019 Table 2
+ila_primary_processes,primary processes per pial interlaminar astrocyte,count,interlaminar astrocyte,
+ila_total_processes,total processes (branching nodes) per pial interlaminar astrocyte,count,interlaminar astrocyte,
+ila_total_length,summed process length per pial interlaminar astrocyte,um,interlaminar astrocyte,
+ila_complexity,Neurolucida complexity index of the pial interlaminar astrocyte arbor,index,interlaminar astrocyte,after Pillai et al. 2012

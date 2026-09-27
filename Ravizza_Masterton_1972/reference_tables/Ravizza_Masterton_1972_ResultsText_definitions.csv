@@ -1,0 +1,7 @@
+variable,definition,units,notes
+row_id,Row number after removing header/blank lines,integer,
+group,Experimental group (Normal or Decorticate = bilateral neocortex ablation),text,
+performance_criterion,Psychophysical detection criterion used to define threshold from the suppression-ratio function,proportion (0-1),0.5 = paper's headline criterion; 0.2 = supplementary check
+maa_threshold_deg,Minimum audible angle (azimuth localization threshold),degrees,mean across subjects in that group
+n,Number of subjects contributing to that group mean,integer,4 decorticate; 2 normal (per Fig. 8/9 legends)
+quoted_source_text,Verbatim quotation(s) supporting this value,text,from Results text (Test II) and/or the Fig. 8/9 legends and axis labels

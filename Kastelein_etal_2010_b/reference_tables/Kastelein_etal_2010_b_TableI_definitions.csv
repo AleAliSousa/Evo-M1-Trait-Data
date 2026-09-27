@@ -1,0 +1,9 @@
+variable,definition,units,notes
+obs_row,Row number after removing header/blank lines,integer,
+binomial,Species binomial as printed in the paper,text,
+common_name,Common name as printed in the paper,text,
+center_frequency_khz,Center frequency of the tonal/FM test signal,kHz,
+signal_duration_ms,Duration of the test signal,ms,"1700 ms rows are the Kastelein et al. 2002 (corrected) comparison column, not this study's own duration series"
+threshold_db_re_1uPa,Mean 50% detection threshold,dB re 1 uPa,
+source_study,Which study/animal the threshold comes from,text,"present study (this paper's subject) or Kastelein et al. 2002 (corrected)"
+data_role,Whether the row is this paper's own new measurement or cited from a prior study,text,

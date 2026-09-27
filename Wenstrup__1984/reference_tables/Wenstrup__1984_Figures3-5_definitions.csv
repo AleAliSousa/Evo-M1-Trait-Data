@@ -1,0 +1,12 @@
+variable,definition,units,notes
+subject_row,Row number (one per bat),integer,
+binomial,Species binomial,text,
+common_name,Common name,text,
+subject_id,Individual bat identifier as printed (NL7/NL9/NL21),text,
+cf_frequency_kHz,Approximate frequency of the bat's own resting sonar CF component (peak-sensitivity region),kHz,Text states 56-58 kHz for the group; not broken out to a single precise value per bat
+threshold_at_cf_dB_low,Lower bound of the -1 to +4 dB SPL sensitivity range stated for the group at the CF region,dB SPL,Not broken out per individual bat in the Results text -- same range applies to all three
+threshold_at_cf_dB_high,Upper bound of the same range,dB SPL,See threshold_at_cf_dB_low
+audible_freq_low_60dBSPL_kHz,Lowest frequency audible at 60 dB SPL,kHz,"Text states this averaged 7 kHz across the three bats, not broken out per animal"
+audible_freq_high_60dBSPL_kHz,Highest frequency audible at 60 dB SPL,kHz,"101 kHz for NL9 and 115 kHz for NL21, explicitly printed; NL7 not tested at this edge (blank)"
+data_role,Whether this paper's own new measurement,text,primary throughout
+source_location,Section/page in the source paper,text,

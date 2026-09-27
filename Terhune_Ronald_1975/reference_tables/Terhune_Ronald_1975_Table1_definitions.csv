@@ -1,0 +1,11 @@
+variable,definition,units,notes
+determination_row,Row number after reshaping the printed wide table (female/male columns) to long format,integer,
+sex,Sex of the tested subject,text,"female or male; two ringed seals total"
+frequency_khz,Test tone frequency,kHz,"15 frequencies from 1.0 to 90.0 kHz, as printed in Table 1"
+threshold_db_re_1ubar,Underwater hearing threshold as printed in Table 1,dB re 1 microbar,Add 100 to convert to dB re 1 microPa. Lower (more negative) value = more sensitive
+sd_db,Standard deviation of the threshold estimate,dB,
+catch_trials_pct_correct,Percentage of catch trials (no-signal presentations) correctly rejected,percent,
+value_is_parenthetical_estimate,Whether the source table printed this threshold/SD in parentheses,boolean,TRUE only for the female 90.0 kHz row; the paper notes the apparatus was near its range limit at this frequency
+subject_species,Species tested,text,Pusa hispida (ringed seal) -- NOT the same species as the companion Terhune_Ronald_1972 folder (harp seal); see README flag
+data_role,Whether the row is this paper's own new measurement or cited from a prior study,text,All rows are primary (this study)
+source,Citation for the value as given in Table 1,text,

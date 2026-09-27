@@ -1,0 +1,14 @@
+variable,definition,units,notes
+species_row,Row number after removing header/blank lines,integer,
+binomial,Species binomial name expanded from the printed abbreviation,text,
+common_name,Common name for the species,text,
+mass_kg,Species average mass as printed in Table IV,kg,"For O. orca this is the mean weight of the study subjects; for the other three species this is from Read et al. (1993) / National Marine Fisheries Service (2016) as cited in the table caption"
+best_frequency_khz,Frequency at which the species composite audiogram shows its lowest (best) threshold; printed under the column header 'Best sensitivity (kHz)',kHz,"Column header is potentially confusing -- despite being labelled 'Best sensitivity (kHz)' this column holds a frequency, not a dB value"
+best_sensitivity_db,Lowest threshold (absolute best sensitivity) of the species composite audiogram; printed under 'Lowest threshold (dB)',dB re 1 uPa,
+best_range_low_khz,Low-frequency edge of the 'Best hearing range' printed in Table IV,kHz,Distinct from the 60-dB-SPL cutoff below
+best_range_high_khz,High-frequency edge of the 'Best hearing range' printed in Table IV,kHz,Distinct from the 60-dB-SPL cutoff below
+audible_freq_low_60dBSPL_khz,Low-frequency cutoff (lowest frequency with composite-model threshold below 60 dB SPL),kHz,Printed column 'Low-frequency cutoff (kHz)'
+audible_freq_high_60dBSPL_khz,High-frequency cutoff (highest frequency with composite-model threshold below 60 dB SPL),kHz,Printed column 'High-frequency cutoff (kHz)'
+n_subjects,Number of individual animals contributing to the species composite audiogram,integer,
+data_role,Whether this row is the value SensoryData_compiled draws on for this paper (primary) or an additional table row not currently used downstream (secondary),text,
+source,Data provenance for the row as stated in the table caption,text,

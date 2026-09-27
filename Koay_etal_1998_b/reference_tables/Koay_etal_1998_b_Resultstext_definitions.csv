@@ -1,0 +1,10 @@
+variable,definition,units,notes
+species_row,Row number after removing header/blank lines,integer,
+binomial,Species binomial,text,
+common_name,Common name for the species,text,
+sound_localization_threshold_deg,Minimum audible angle (passive sound-localization threshold); mean of 3 individual bats (16;12;13 deg),degrees,Secondary/contextual in this item -- not currently used by SensoryData_compiled
+binaural_intensity_difference_cue,Whether the species could use the binaural intensity-difference cue for localization (Y/N) as determined by pure-tone localization testing,text (Y/N),Secondary/contextual in this item
+binaural_phase_cue,Whether the species could use the binaural time/phase-difference cue for localization (Y/N) as determined by pure-tone localization testing,text (Y/N),Secondary/contextual in this item
+field_of_best_vision_width_deg,Width of the field of best vision (isodensity contour at >=75% of peak retinal ganglion-cell density),degrees,Primary -- this is the value used by SensoryData_compiled
+data_role,Whether the row is used by SensoryData_compiled (primary) or not,text,
+source,Citation / section of the paper the values come from,text,

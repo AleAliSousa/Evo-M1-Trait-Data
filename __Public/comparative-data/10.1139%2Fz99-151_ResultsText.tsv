@@ -1,0 +1,3 @@
+"obs_row"	"binomial"	"common_name"	"subject"	"medium"	"best_range_low_khz"	"best_range_high_khz"	"best_frequency_khz"	"best_threshold_db"	"reference_pressure"	"upper_freq_limit_khz"	"upper_freq_is_approx"	"underwater_vs_air_pressure_diff_db"	"underwater_vs_air_intensity_diff_db"	"data_role"	"source"
+1	"Mirounga angustirostris"	"Northern elephant seal"	"Burnyce"	"Air"	3.2	15	6.3	43	"dB re 20 uPa"	20	TRUE	19	52	"primary"	"this study"
+2	"Mirounga angustirostris"	"Northern elephant seal"	"Burnyce"	"Underwater"	3.2	45	6.4	58	"dB re 1 uPa"	55	TRUE	19	52	"primary"	"this study"

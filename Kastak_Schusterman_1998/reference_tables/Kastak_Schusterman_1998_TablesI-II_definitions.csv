@@ -1,0 +1,12 @@
+variable,definition,units,notes
+obs_row,Row number after removing header/blank lines,integer,
+binomial,Species binomial as printed in the table caption,text,
+common_name,Common name for the species,text,
+subject_id,Individual animal name as printed in the table,text,"Rocky and Rio are both Zalophus californianus (sea lions); Rio was tested only underwater"
+medium,Test medium,text,"Aerial (Table I) or Underwater (Table II)"
+frequency_hz,Test tone frequency,Hz,
+threshold_db,Sound-detection threshold,dB,"Reference pressure differs by medium -- see reference_pressure column"
+reference_pressure,Reference pressure used for the dB threshold,text,"20 uPa for aerial (Table I); 1 uPa for underwater (Table II), as printed"
+false_alarm_pct,False-alarm rate during the sessions used for threshold determination,percent of catch trials,
+data_role,Whether the row is this paper's own new measurement or cited from a prior study,text,All rows are primary (this study)
+source,Citation for the value as given in the table,text,

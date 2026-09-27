@@ -1,0 +1,19 @@
+TABLE I. Beluga hearing threshold data in decibels. Reference pressure = 1 uPa; here, N = number of ascending series used for determining thresholds and the total number of "catch" series; FA = number of false alarms.
+
+Subject,Statistic,125 Hz,250 Hz,500 Hz,1 kHz,2 kHz,4 kHz,8 kHz,Catch
+Adult male,Mean,124,126,108,102,99,78,66,
+Adult male,Range,121-127,125-127,104-112,97-111,97-99,76-80,65-67,
+Adult male,N,2,2,18,20,7,8,3,28
+Adult male,FA,,,,,,,,4
+Adult female,Mean,122,122,109,102,103,76,65,
+Adult female,Range,121-123,121-123,94-116,97-107,101-111,76-78,63-67,
+Adult female,N,7,3,14,7,6,5,5,25
+Adult female,FA,,,,,,,,2
+Juvenile male,Mean,118,114,106,100,101,77,65,
+Juvenile male,Range,115-121,111-121,100-114,97-107,99-103,76-78,63-67,
+Juvenile male,N,7,9,13,18,11,5,7,30
+Juvenile male,FA,,,,,,,,3
+Combined,Mean,121,118,108,101,101,77,65,
+Combined,Range,115-127,111-127,94-116,97-111,97-111,76-80,63-67,
+Combined,N,16,15,41,46,26,17,15,83
+Combined,FA,,,,,,,,9

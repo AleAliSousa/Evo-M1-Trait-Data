@@ -1,0 +1,9 @@
+metric,frequency_khz,threshold_db_spl,source_phrase
+threshold_at_4kHz,4,72,"Beginning with a mean threshold of 72 dB at 4 kHz"
+best_sensitivity,25,0,"the audiogram shows a comparatively rapid improvement in sensitivity up to 25 kHz, the frequency of best hearing, with a mean threshold of 0 dB SPL"
+threshold_at_50kHz,50,36.5,"Hearing sensitivity then steadily decreased to 36.5 dB at 50 kHz"
+secondary_peak,71,16.5,"improved again as frequency further increased to 71 kHz, forming a secondary peak of sensitivity with an average threshold of 16.5 dB"
+threshold_at_125kHz,125,29,"sensitivity again declined slowly with increasing frequency up to 125 kHz (29 dB)"
+threshold_at_160kHz,160,80,"then steeply to 80 dB at 160 kHz, the highest frequency tested"
+hearing_range_60dB_low,5.2,60,"at an intensity of 60 dB SPL, C. perspicillata can hear frequencies from 5.2 kHz to 150 kHz, a range of 4.85 octaves"
+hearing_range_60dB_high,150,60,"(same sentence as above)"

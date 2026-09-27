@@ -1,0 +1,14 @@
+variable,definition,units,notes
+species_sci,Scientific binomial (whole table is one species),text,Delphinapterus leucas
+common_name,Common name,text,beluga
+subject_id,Which of the four printed rows this observation belongs to (three individual whales plus the combined mean),text,"adult_male / adult_female / juvenile_male / combined"
+row_type,individual = one whale's own mean threshold; group_mean = the printed Combined row across all three whales,text,
+frequency_hz,Test frequency as printed,Hz,"125, 250, 500, 1000, 2000, 4000, 8000"
+frequency_khz,Test frequency converted to kHz for convenience,kHz,derived (frequency_hz / 1000)
+threshold_mean_db_re_1uPa,Mean hearing threshold (50% probability estimate) at this frequency as printed,dB re 1 uPa,
+threshold_range_low_db,Lower bound of the printed threshold range across ascending series,dB re 1 uPa,
+threshold_range_high_db,Upper bound of the printed threshold range across ascending series,dB re 1 uPa,
+n_ascending_series,Number of ascending method-of-limits series used to determine the threshold at this frequency,integer,
+catch_series_n,Total number of silent "catch" series presented to this subject across the whole test (constant across a subject's 7 rows),integer,Printed once per subject in the table's Catch column
+catch_false_alarms,Total number of false alarms (responses during catch series) for this subject across the whole test (constant across a subject's 7 rows),integer,Printed once per subject in the table's Catch column
+source,Citation for the value as given in Table I,text,Awbrey et al. (1988) Table I

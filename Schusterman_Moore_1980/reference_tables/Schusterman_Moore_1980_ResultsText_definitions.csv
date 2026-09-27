@@ -1,0 +1,9 @@
+variable,definition,units,notes
+species_row,Row number after removing header/blank lines,integer,
+binomial,Species binomial as printed in the Results text,text,
+common_name,Common name as printed in the Results text,text,
+n_subjects,Number and description of subjects contributing to the mean threshold at each frequency,text,"2 yearling females (mean) for Callorhinus ursinus; 1 subject for Zalophus californianus"
+frequency_khz,Test tone frequency,kHz,"Frequencies tested: 1, 2, 4, 8, 16, 24, 32 kHz"
+threshold_db_re_0.0002dyncm2,Average behavioral (aerial) hearing threshold,dB re 0.0002 dyn/cm2 (= dB re 20 microPa),Lower value = more sensitive hearing
+data_role,Whether the row is this paper's own new measurement or cited from a prior study,text,All rows are primary (this study)
+source,Citation for the value as given in the abstract,text,

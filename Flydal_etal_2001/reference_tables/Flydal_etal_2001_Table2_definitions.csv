@@ -1,0 +1,10 @@
+variable,definition,units,notes
+species_sci,Scientific trinomial (whole table is one species/subspecies),text,Rangifer tarandus tarandus
+common_name,Common name,text,reindeer
+animal_id,Which of the two tested reindeer this row belongs to,text,Reindeer_1 / Reindeer_2
+sound_direction,Whether the test speaker was placed in front of or behind the animal,text,front / behind
+frequency_hz,Test frequency as printed,Hz,"63, 125, 250, 500, 1000, 2000, 4000, 8000, 16000, 32000, 38000"
+frequency_khz,Test frequency converted to kHz for convenience,kHz,derived (frequency_hz / 1000)
+threshold_db_re_20uPa,Hearing threshold as printed,dB re 20 uPa,"Negative values indicate a threshold below the reference, i.e. high sensitivity"
+data_role,Whether this is the paper's own new measurement,text,All rows primary
+source,Citation for the value as given in Table 2,text,Flydal et al. (2001) Table 2

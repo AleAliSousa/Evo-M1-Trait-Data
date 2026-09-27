@@ -1,0 +1,11 @@
+variable,definition,units,notes
+determination_row,Row number after reshaping the printed wide table (J9/WAU columns) to long format,integer,
+frequency_khz,Test tone frequency,kHz,"10 frequencies from 2 to 115 kHz, as printed in Table I"
+transducer,Which underwater transducer was used for this measurement,text,"J9 (used at 2-85 kHz) or WAU (used at 64-115 kHz); both used at 64 and 85 kHz"
+n_reversals_tested,Number of staircase reversals tested for this frequency,integer,
+threshold_db_re_1upa,Overall behavioral hearing threshold as printed in Table I,dB re 1 microPa,Lower value = more sensitive. Minimum printed value is 39 at 64 kHz (J9)
+session_range_low_db,Lower bound of the range of session-mean thresholds,dB re 1 microPa,
+session_range_high_db,Upper bound of the range of session-mean thresholds,dB re 1 microPa,
+subject_species,Species tested,text,"Pseudorca crassidens (false killer whale), single adult male subject"
+data_role,Whether the row is this paper's own new measurement or cited from a prior study,text,All rows are primary (this study)
+source,Citation for the value as given in Table I,text,

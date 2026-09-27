@@ -1,0 +1,10 @@
+metric,subject,value,unit,evidence,source_phrase
+hearing_range_60dB_low,mean (97 & 98),37,Hz,text,"both animals had very good low frequency hearing, with a mean lower limit of 37 Hz at 60 dB SPL"
+hearing_range_60dB_high,mean (97 & 98),44,kHz,text,"an average interpolated upper limit of 44 kHz at 60 dB SPL"
+best_region_low,mean (97 & 98),8,kHz,text,"narrowly tuned regions of maximum sensitivity in the 8-12 kHz range"
+best_region_high,mean (97 & 98),12,kHz,text,"narrowly tuned regions of maximum sensitivity in the 8-12 kHz range"
+best_threshold_approx,ferret 97,-10,dB SPL,figure (digitized from Fig. 2),"minimum of curve for ferret 97 (circle symbol) read from Fig. 2, near 8 kHz"
+best_frequency_approx,ferret 97,8,kHz,figure (digitized from Fig. 2),"frequency of minimum threshold for ferret 97 read from Fig. 2"
+best_threshold_approx,ferret 98,-5,dB SPL,figure (digitized from Fig. 2),"minimum of curve for ferret 98 (x symbol) read from Fig. 2, near 12 kHz"
+best_frequency_approx,ferret 98,12,kHz,figure (digitized from Fig. 2),"frequency of minimum threshold for ferret 98 read from Fig. 2"
+mid_freq_discrepancy_8kHz,ferret 97 vs 98,27,dB,text,"some variability was noted in the middle frequency range, particularly at 8 kHz where thresholds were separated by 27 dB"

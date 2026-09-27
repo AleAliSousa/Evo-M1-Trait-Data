@@ -1,0 +1,9 @@
+variable,definition,units,notes
+row,Row number,integer,Only one row exists for this item
+relationship,Plain-language description of the two variables being correlated,text,Functional head size vs. 60-dB-SPL high-frequency hearing limit
+correlation_r,Pearson correlation coefficient as printed in the text,dimensionless,Negative sign indicates smaller functional head size associates with a higher hearing limit
+p_value,Significance threshold as printed in the text,text,Printed as an inequality (<0.0001) not an exact value
+approx_n_species,Approximate number of mammal species the correlation is stated to hold for,text,Printed as '>60'; exact species list not given in this chapter
+source_figure,The chapter figure the statistic is discussed alongside,text,Figure 1 (scatterplot; not digitized -- see README)
+data_role,Whether the row is new primary data or a citation from elsewhere,text,"primary(review synthesis) = the authors' own cross-paper synthesis statistic, not raw new data and not a single external citation"
+source,Citation for the value as given in the text,text,

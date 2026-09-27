@@ -1,0 +1,12 @@
+variable,definition,units,notes
+obs_row,Row number after removing header/blank lines,integer,
+binomial,Species binomial as printed in the paper,text,
+common_name,Common name as printed in the paper,text,
+subject,Which animal(s) the value applies to,text,"mean (97 & 98) = both ferrets averaged; ferret 97 / ferret 98 = individual"
+metric,Which reported or digitized quantity this row captures,text,"hearing_range_60dB_low/high (text); best_sensitivity_region_low/high (text, qualitative); best_threshold_approx (digitized from Fig. 2); mid_freq_discrepancy_8kHz (text)"
+frequency_khz,Frequency associated with the reported/digitized value,kHz,Converted from Hz where the paper printed Hz
+value,The reported or digitized numeric value,see value_unit,"NA for the two best_sensitivity_region_* rows, which are frequency bounds with no separate dB value"
+value_unit,Unit / nature of the value column,text,"For the two hearing_range_60dB_* rows this is the fixed 60-dB SPL criterion, not a separately measured threshold"
+evidence_type,Whether the row's value is stated verbatim in text or was digitized from a printed figure,text,"figure (digitized, Fig. 2) rows are explicitly flagged approximate"
+data_role,Whether the row is this paper's own new measurement or cited from a prior study,text,All rows are primary (this study)
+source,Citation for the value as given in the text,text,

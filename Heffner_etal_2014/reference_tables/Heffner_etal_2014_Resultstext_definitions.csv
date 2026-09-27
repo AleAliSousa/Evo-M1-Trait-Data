@@ -1,0 +1,10 @@
+variable,definition,units,notes
+trait_row,Row number after removing header/blank lines,integer,
+binomial,Species binomial,text,
+common_name,Common name,text,
+measure,Standardized trait name matching project SensoryData convention,text,
+value,Numeric value for the trait (blank for Y/N traits),numeric,
+value_chr,Y/N value for categorical traits (blank for numeric traits),text,
+unit,Unit of measurement,text,
+data_role,Whether this paper's own new measurement or cited from elsewhere,text,primary throughout
+source_location,Section/page in the source paper where the value is printed,text,

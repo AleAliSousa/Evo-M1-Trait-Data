@@ -1,0 +1,5 @@
+"species_row"	"binomial"	"common_name"	"figure_key"	"n_individuals"	"best_hearing_point1_kHz"	"best_hearing_point2_kHz_range"	"hearing_range_low_60dBSPL_Hz"	"hearing_range_high_60dBSPL_kHz"	"quantified_in_text"	"data_role"	"source"
+1	" Long-Evans hooded)"	"Hooded Norway rat"	"H"	4	8	"32-38"	530	68	TRUE	"primary"	"Heffner et al. (1994b) Results and discussion p. 246"
+2	" Sprague-Dawley)"	"Albino Norway rat"	"A"		8	"32-38"	400	76	TRUE	"secondary"	"Kelly and Masterton (1977), as reported in Heffner et al. (1994b) p. 246"
+3	"Cotton rat"	"C"							FALSE	"secondary"	""
+4	"Wood rat"	"W"							FALSE	"secondary"	""

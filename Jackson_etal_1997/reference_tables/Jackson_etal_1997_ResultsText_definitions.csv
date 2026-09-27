@@ -1,0 +1,11 @@
+variable,definition,units,notes
+obs_row,Row number after removing header/blank lines,integer,
+binomial,Species binomial as printed in the paper,text,
+common_name,Common name as printed in the paper,text,
+subject,Which animal(s) the value applies to (individual squirrel or mean of both),text,
+metric,Which reported quantity this row captures,text,"one of low_frequency_threshold, best_sensitivity, high_frequency_threshold, hearing_range_60dB_low, hearing_range_60dB_high"
+frequency_khz,Frequency associated with the reported value,kHz,Converted from Hz where the paper printed Hz
+threshold_db,Sound-pressure-level threshold associated with the reported value,dB SPL,"For the two hearing_range_60dB_* rows this is the fixed 60-dB SPL criterion, not a separately measured threshold"
+data_role,Whether the row is this paper's own new measurement or cited from a prior study,text,All rows are primary (this study)
+notes,Free-text clarification of what the value represents,text,
+source,Citation for the value as given in the text,text,

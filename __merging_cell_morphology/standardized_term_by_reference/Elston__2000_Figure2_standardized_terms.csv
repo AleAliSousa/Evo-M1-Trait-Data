@@ -1,0 +1,8 @@
+Original_Term,Reference,Standardized_Term,cell_type,region,layer,statistic,unit,hemisphere,note
+Area,Elston__2000_Figure2,region_printed,,,,,,,
+n,Elston__2000_Figure2,n,pyramidal_L3,,III,n,neurons,,
+Basal_dendritic_field_area_um2_mean,Elston__2000_Figure2,basal_dendritic_field_area,pyramidal_L3,,III,mean,um2,,
+Basal_dendritic_field_area_um2_SD,Elston__2000_Figure2,basal_dendritic_field_area,pyramidal_L3,,III,sd,um2,,
+Max_branches_at_75um_from_soma_mean,Elston__2000_Figure2,branches_at_75um,pyramidal_L3,,III,mean,count,,
+Max_branches_at_75um_from_soma_SD,Elston__2000_Figure2,branches_at_75um,pyramidal_L3,,III,sd,count,,
+Total_spines_basal_dendritic_field_avg_neuron,Elston__2000_Figure2,spine_count,pyramidal_L3,,III,estimate,count,,"estimated total for the 'average' neuron, basal arbor only (Elston method)"

@@ -1,0 +1,287 @@
+Original_Term,Reference,Standardized_Term,cell_type,region,layer,statistic,unit,hemisphere,note
+interpreted_taxon,Armstrong__1979_Tables1-9,Species,,,,,,,
+species_as_published,Armstrong__1979_Tables1-9,species_printed,,,,,,,
+specimen_code,Armstrong__1979_Tables1-9,specimen_id,,,,,,,
+structure,Armstrong__1979_Tables1-9,region_printed,,,,,,,
+measure,Armstrong__1979_Tables1-9,FILTER,,,,,,,compile keeps rows with measure == perikaryal_volume only; volumes/densities/counts belong to __merging_volumes / __merging_cellcounts
+mean,Armstrong__1979_Tables1-9,soma_volume,thalamic_relay,,not applicable,mean,um3,,
+sd,Armstrong__1979_Tables1-9,soma_volume,thalamic_relay,,not applicable,sd,um3,,
+n,Armstrong__1979_Tables1-9,n,thalamic_relay,,,n,neurons,,
+sex,Armstrong__1979_Tables1-9,note,,,,,,,
+age_years,Armstrong__1979_Tables1-9,note,,,,,,,
+note,Armstrong__1979_Tables1-9,note,,,,,,,
+table,Armstrong__1979_Tables1-9,DROP,,,,,,,"not a perikaryal-volume field, or out of scope here (volumes -> __merging_volumes; densities/counts -> __merging_cellcounts)"
+source_group,Armstrong__1979_Tables1-9,DROP,,,,,,,"not a perikaryal-volume field, or out of scope here (volumes -> __merging_volumes; densities/counts -> __merging_cellcounts)"
+role,Armstrong__1979_Tables1-9,DROP,,,,,,,"not a perikaryal-volume field, or out of scope here (volumes -> __merging_volumes; densities/counts -> __merging_cellcounts)"
+individual_id,Armstrong__1979_Tables1-9,DROP,,,,,,,"not a perikaryal-volume field, or out of scope here (volumes -> __merging_volumes; densities/counts -> __merging_cellcounts)"
+body_mass_kg,Armstrong__1979_Tables1-9,DROP,,,,,,,"not a perikaryal-volume field, or out of scope here (volumes -> __merging_volumes; densities/counts -> __merging_cellcounts)"
+brain_mass_g,Armstrong__1979_Tables1-9,DROP,,,,,,,"not a perikaryal-volume field, or out of scope here (volumes -> __merging_volumes; densities/counts -> __merging_cellcounts)"
+collection,Armstrong__1979_Tables1-9,DROP,,,,,,,"not a perikaryal-volume field, or out of scope here (volumes -> __merging_volumes; densities/counts -> __merging_cellcounts)"
+section_plane,Armstrong__1979_Tables1-9,DROP,,,,,,,"not a perikaryal-volume field, or out of scope here (volumes -> __merging_volumes; densities/counts -> __merging_cellcounts)"
+unit,Armstrong__1979_Tables1-9,DROP,,,,,,,"not a perikaryal-volume field, or out of scope here (volumes -> __merging_volumes; densities/counts -> __merging_cellcounts)"
+value,Armstrong__1979_Tables1-9,DROP,,,,,,,"not a perikaryal-volume field, or out of scope here (volumes -> __merging_volumes; densities/counts -> __merging_cellcounts)"
+percent_value,Armstrong__1979_Tables1-9,DROP,,,,,,,"not a perikaryal-volume field, or out of scope here (volumes -> __merging_volumes; densities/counts -> __merging_cellcounts)"
+se,Armstrong__1979_Tables1-9,DROP,,,,,,,"not a perikaryal-volume field, or out of scope here (volumes -> __merging_volumes; densities/counts -> __merging_cellcounts)"
+minimum,Armstrong__1979_Tables1-9,DROP,,,,,,,"not a perikaryal-volume field, or out of scope here (volumes -> __merging_volumes; densities/counts -> __merging_cellcounts)"
+maximum,Armstrong__1979_Tables1-9,DROP,,,,,,,"not a perikaryal-volume field, or out of scope here (volumes -> __merging_volumes; densities/counts -> __merging_cellcounts)"
+median,Armstrong__1979_Tables1-9,DROP,,,,,,,"not a perikaryal-volume field, or out of scope here (volumes -> __merging_volumes; densities/counts -> __merging_cellcounts)"
+source,Armstrong__1979_Tables1-9,DROP,,,,,,,"not a perikaryal-volume field, or out of scope here (volumes -> __merging_volumes; densities/counts -> __merging_cellcounts)"
+Species,Bianchi_etal_2012_Table2,species_printed,,,,,,,
+Area,Bianchi_etal_2012_Table2,region_printed,,,,,,,
+Cell_soma_area_um2_mean,Bianchi_etal_2012_Table2,soma_area,pyramidal_L3,,III,mean,um2,,
+Cell_soma_area_um2_SD,Bianchi_etal_2012_Table2,soma_area,pyramidal_L3,,III,sd,um2,,
+Cell_soma_depth_um_mean,Bianchi_etal_2012_Table2,soma_depth,pyramidal_L3,,III,mean,um,,
+Cell_soma_depth_um_SD,Bianchi_etal_2012_Table2,soma_depth,pyramidal_L3,,III,sd,um,,
+TDL_um_mean,Bianchi_etal_2012_Table2,total_dendritic_length,pyramidal_L3,,III,mean,um,,
+TDL_um_SD,Bianchi_etal_2012_Table2,total_dendritic_length,pyramidal_L3,,III,sd,um,,
+MSL_um_mean,Bianchi_etal_2012_Table2,mean_segment_length,pyramidal_L3,,III,mean,um,,
+MSL_um_SD,Bianchi_etal_2012_Table2,mean_segment_length,pyramidal_L3,,III,sd,um,,
+DSC_mean,Bianchi_etal_2012_Table2,dendritic_segment_count,pyramidal_L3,,III,mean,count,,
+DSC_SD,Bianchi_etal_2012_Table2,dendritic_segment_count,pyramidal_L3,,III,sd,count,,
+DSN_mean,Bianchi_etal_2012_Table2,spine_count,pyramidal_L3,,III,mean,count,,
+DSN_SD,Bianchi_etal_2012_Table2,spine_count,pyramidal_L3,,III,sd,count,,
+DSD_mean,Bianchi_etal_2012_Table2,spine_density,pyramidal_L3,,III,mean,spines/um,,
+DSD_SD,Bianchi_etal_2012_Table2,spine_density,pyramidal_L3,,III,sd,spines/um,,
+Dendritic_trees_count_mean,Bianchi_etal_2012_Table2,dendritic_tree_count,pyramidal_L3,,III,mean,count,,
+Dendritic_trees_count_SD,Bianchi_etal_2012_Table2,dendritic_tree_count,pyramidal_L3,,III,sd,count,,
+species,Butti_etal_2009_Table5,Species,,,,,,,
+species_as_published,Butti_etal_2009_Table5,species_printed,,,,,,,
+roi,Butti_etal_2009_Table5,region_printed,,,,,,,
+ven_n_RH,Butti_etal_2009_Table5,ven_count,ven,,V,estimate,count,R,
+ven_n_LH,Butti_etal_2009_Table5,ven_count,ven,,V,estimate,count,L,
+ven_pct,Butti_etal_2009_Table5,ven_pct,ven,,V,value,percent,,
+ce,Butti_etal_2009_Table5,ven_count,ven,,V,ce,ratio,,coefficient of error of the stereological estimate
+hemisphere_available,Butti_etal_2009_Table5,DROP,,,,,,,
+underestimate,Butti_etal_2009_Table5,note,,,,,,,TRUE = authors state the count is an underestimate
+source,Butti_etal_2009_Table5,DROP,,,,,,,
+species,Butti_etal_2009_Table6,Species,,,,,,,
+species_as_published,Butti_etal_2009_Table6,species_printed,,,,,,,
+ven_vol_um3_mean,Butti_etal_2009_Table6,soma_volume,ven,ACC,V,mean,um3,,
+ven_vol_um3_sd,Butti_etal_2009_Table6,soma_volume,ven,ACC,V,sd,um3,,
+pyramidal_vol_um3_mean,Butti_etal_2009_Table6,soma_volume,pyramidal_L5,ACC,V,mean,um3,,
+pyramidal_vol_um3_sd,Butti_etal_2009_Table6,soma_volume,pyramidal_L5,ACC,V,sd,um3,,
+fusiform_vol_um3_mean,Butti_etal_2009_Table6,soma_volume,fusiform_L6,ACC,VI,mean,um3,,
+fusiform_vol_um3_sd,Butti_etal_2009_Table6,soma_volume,fusiform_L6,ACC,VI,sd,um3,,
+ven_index_as_published,Butti_etal_2009_Table6,ven_index,ven,ACC,V,value,ratio,,derived-in-source
+ven_index_recomputed,Butti_etal_2009_Table6,DROP,,,,,,,check column
+source,Butti_etal_2009_Table6,DROP,,,,,,,
+Area,Elston__2000_Figure2,region_printed,,,,,,,
+n,Elston__2000_Figure2,n,pyramidal_L3,,III,n,neurons,,
+Basal_dendritic_field_area_um2_mean,Elston__2000_Figure2,basal_dendritic_field_area,pyramidal_L3,,III,mean,um2,,
+Basal_dendritic_field_area_um2_SD,Elston__2000_Figure2,basal_dendritic_field_area,pyramidal_L3,,III,sd,um2,,
+Max_branches_at_75um_from_soma_mean,Elston__2000_Figure2,branches_at_75um,pyramidal_L3,,III,mean,count,,
+Max_branches_at_75um_from_soma_SD,Elston__2000_Figure2,branches_at_75um,pyramidal_L3,,III,sd,count,,
+Total_spines_basal_dendritic_field_avg_neuron,Elston__2000_Figure2,spine_count,pyramidal_L3,,III,estimate,count,,"estimated total for the 'average' neuron, basal arbor only (Elston method)"
+Species,Elston_etal_2001_Table1,species_printed,,,,,,,
+Region,Elston_etal_2001_Table1,region_printed,,,,,,,
+Peak_branching_complexity_mean,Elston_etal_2001_Table1,peak_branching_complexity,pyramidal_L3,,III,mean,intersections,,
+Peak_branching_complexity_SD,Elston_etal_2001_Table1,peak_branching_complexity,pyramidal_L3,,III,sd,intersections,,
+Basal_dendritic_field_area_1e4um2_mean,Elston_etal_2001_Table1,basal_dendritic_field_area,pyramidal_L3,,III,mean,1e4 um2,,printed x10^4 um2; compile rescales to um2 (x10000) and flags
+Basal_dendritic_field_area_1e4um2_SD,Elston_etal_2001_Table1,basal_dendritic_field_area,pyramidal_L3,,III,sd,1e4 um2,,printed x10^4 um2; compile rescales to um2 (x10000) and flags
+Max_spine_density_per_10um_mean,Elston_etal_2001_Table1,max_spine_density,pyramidal_L3,,III,mean,spines/10um,,
+Max_spine_density_per_10um_SEM,Elston_etal_2001_Table1,max_spine_density,pyramidal_L3,,III,sem,spines/10um,,
+Cortex,Elston_etal_2006_Table1,region_printed,,,,,,,
+Species,Elston_etal_2006_Table1,species_printed,,,,,,,
+CSA,Elston_etal_2006_Table1,DROP,,,,,mm2,,"cortical surface area -> __merging_cortical_areas (regional surface), not a cell trait"
+CSA_Ref,Elston_etal_2006_Table1,DROP,,,,,,,
+BDFA,Elston_etal_2006_Table1,basal_dendritic_field_area,pyramidal_L3,,III,mean,um2,,
+BDFA_Ref,Elston_etal_2006_Table1,ref,,,,,,,footnote letter: w = present results (primary); t = Elston et al. 2001 (already merged from its own table); a-s = earlier Elston papers (secondary)
+TNS,Elston_etal_2006_Table1,spine_count,pyramidal_L3,,III,estimate,count,,"estimated total spines, basal arbor of the 'average' neuron"
+TNS_Ref,Elston_etal_2006_Table1,ref,,,,,,,
+Infraclass,Falcone_etal_2019_TABLE1,DROP,,,,,,,
+Order,Falcone_etal_2019_TABLE1,DROP,,,,,,,
+Suborder,Falcone_etal_2019_TABLE1,DROP,,,,,,,
+Parvorder,Falcone_etal_2019_TABLE1,DROP,,,,,,,
+Family,Falcone_etal_2019_TABLE1,DROP,,,,,,,
+Scientific name,Falcone_etal_2019_TABLE1,species_printed,,,,,,,
+ILA Pial Dorsal,Falcone_etal_2019_TABLE1,ila_presence,interlaminar_astrocyte,frontal cortex layer I,I,category,category,,"pial ILA, dorsal frontal cortex"
+ILA Pial Ventral,Falcone_etal_2019_TABLE1,ila_presence,interlaminar_astrocyte,frontal cortex layer I,I,category,category,,"pial ILA, ventral frontal cortex"
+ILA Subpial Dorsal,Falcone_etal_2019_TABLE1,ila_presence,interlaminar_astrocyte,frontal cortex layer I,II,category,category,,"subpial ILA, dorsal frontal cortex"
+ILA Subpial Ventral,Falcone_etal_2019_TABLE1,ila_presence,interlaminar_astrocyte,frontal cortex layer I,II,category,category,,"subpial ILA, ventral frontal cortex"
+Scientific name,Falcone_etal_2019_TABLE2,species_printed,,,,,,,
+ILA linear density,Falcone_etal_2019_TABLE2,ila_linear_density,interlaminar_astrocyte,frontal cortex layer I,I,mean,cells/mm,,
+ILA primary processes,Falcone_etal_2019_TABLE2,ila_primary_processes,interlaminar_astrocyte,frontal cortex layer I,I,mean,count,,
+ILA total processes,Falcone_etal_2019_TABLE2,ila_total_processes,interlaminar_astrocyte,frontal cortex layer I,I,mean,count,,
+ILA total length,Falcone_etal_2019_TABLE2,ila_total_length,interlaminar_astrocyte,frontal cortex layer I,I,mean,um,,
+ILA complexity,Falcone_etal_2019_TABLE2,ila_complexity,interlaminar_astrocyte,frontal cortex layer I,I,mean,index,,
+species,Hakeem_etal_2009_Table1,Species,,,,,,,
+species_as_published,Hakeem_etal_2009_Table1,species_printed,,,,,,,
+specimen_as_published,Hakeem_etal_2009_Table1,DROP,,,,,,,
+specimen,Hakeem_etal_2009_Table1,specimen_id,,,,,,,
+hemisphere,Hakeem_etal_2009_Table1,hemisphere,,,,,,,
+ven_n_FI,Hakeem_etal_2009_Table1,ven_count,ven,FI,V,estimate,count,,
+ven_ce_gundersen,Hakeem_etal_2009_Table1,ven_count,ven,FI,V,ce,ratio,,
+ven_ce_schmitzhof,Hakeem_etal_2009_Table1,DROP,,,,,,,
+neuron_n_FI,Hakeem_etal_2009_Table1,reference_neuron_count,all_neurons,FI,V,estimate,count,,
+neuron_ce_gundersen,Hakeem_etal_2009_Table1,reference_neuron_count,all_neurons,FI,V,ce,ratio,,
+neuron_ce_schmitzhof,Hakeem_etal_2009_Table1,DROP,,,,,,,
+ven_pct_FI,Hakeem_etal_2009_Table1,ven_pct,ven,FI,V,value,percent,,
+n_individuals,Hakeem_etal_2009_Table1,n,,,,n,individuals,,
+source,Hakeem_etal_2009_Table1,DROP,,,,,,,
+Species,Jacobs_etal_2015_Table4,species_printed,,,,,,,
+Source Ref,Jacobs_etal_2015_Table4,ref,,,,,,,"blank = this paper (giraffe, primary); a = Jacobs et al. 2011 elephant; b = Butti et al. 2014 cetaceans (secondary)"
+Age/sex,Jacobs_etal_2015_Table4,note,,,,,,,
+Fixation method,Jacobs_etal_2015_Table4,DROP,,,,,,,
+Fixation method note,Jacobs_etal_2015_Table4,DROP,,,,,,,
+Region sampled,Jacobs_etal_2015_Table4,region_printed,,,,,,,pooled multi-region Golgi sample; compile sets region = pooled_multiregion
+Mean Soma depth (um),Jacobs_etal_2015_Table4,soma_depth,pyramidal_unspecified,,not reported,mean,um,,
+Mean Soma depth SD (um),Jacobs_etal_2015_Table4,soma_depth,pyramidal_unspecified,,not reported,sd,um,,
+Mean Brain mass (g),Jacobs_etal_2015_Table4,DROP,,,,,,,-> __merging_brain_mass scope
+Mean Soma size (um2),Jacobs_etal_2015_Table4,soma_area,pyramidal_unspecified,,not reported,mean,um2,,
+Mean Soma size SD (um2),Jacobs_etal_2015_Table4,soma_area,pyramidal_unspecified,,not reported,sd,um2,,
+n Pyramidal neurons,Jacobs_etal_2015_Table4,n,pyramidal_unspecified,,,n,neurons,,
+species_sci,Jacobs_etal_2018_Table3,Species,,,,,,,
+Species,Jacobs_etal_2018_Table3,species_printed,,,,,,,
+Species_binomial,Jacobs_etal_2018_Table3,DROP,,,,,,,duplicate of species_sci
+clade_printed,Jacobs_etal_2018_Table3,DROP,,,,,,,
+neuron_class,Jacobs_etal_2018_Table3,cell_type_printed,,M1,V,,,,
+method,Jacobs_etal_2018_Table3,method,,,,,,,
+body_mass_g,Jacobs_etal_2018_Table3,DROP,,,,,,,-> __merging_brain_mass / body scope
+brain_mass_mg,Jacobs_etal_2018_Table3,DROP,,,,,,,-> __merging_brain_mass scope
+n_length,Jacobs_etal_2018_Table3,soma_length,,M1,V,n,neurons,,
+n_area,Jacobs_etal_2018_Table3,soma_area,,M1,V,n,neurons,,
+n_volume,Jacobs_etal_2018_Table3,soma_volume,,M1,V,n,neurons,,
+soma_length_M1,Jacobs_etal_2018_Table3,soma_length,,M1,V,mean,um,,
+soma_length_M1_sd,Jacobs_etal_2018_Table3,soma_length,,M1,V,sd,um,,
+soma_length_M1_min,Jacobs_etal_2018_Table3,soma_length,,M1,V,min,um,,
+soma_length_M1_max,Jacobs_etal_2018_Table3,soma_length,,M1,V,max,um,,
+soma_area_M1,Jacobs_etal_2018_Table3,soma_area,,M1,V,mean,um2,,
+soma_area_M1_sd,Jacobs_etal_2018_Table3,soma_area,,M1,V,sd,um2,,
+soma_area_M1_min,Jacobs_etal_2018_Table3,soma_area,,M1,V,min,um2,,
+soma_area_M1_max,Jacobs_etal_2018_Table3,soma_area,,M1,V,max,um2,,
+soma_volume_M1,Jacobs_etal_2018_Table3,soma_volume,,M1,V,mean,um3,,
+soma_volume_M1_sd,Jacobs_etal_2018_Table3,soma_volume,,M1,V,sd,um3,,
+soma_volume_M1_min,Jacobs_etal_2018_Table3,soma_volume,,M1,V,min,um3,,
+soma_volume_M1_max,Jacobs_etal_2018_Table3,soma_volume,,M1,V,max,um3,,
+parse_flags,Jacobs_etal_2018_Table3,note,,,,,,,
+species_sci,Jacobs_etal_2018_Table5,Species,,,,,,,
+Species,Jacobs_etal_2018_Table5,species_printed,,,,,,,
+clade_printed,Jacobs_etal_2018_Table5,DROP,,,,,,,
+neuron_type,Jacobs_etal_2018_Table5,cell_type_printed,,M1,,,,,
+n_cells,Jacobs_etal_2018_Table5,n,,M1,,n,neurons,,
+method,Jacobs_etal_2018_Table5,method,,,,,,,
+gigantopyramidal_absent,Jacobs_etal_2018_Table5,note,,,,,,,"TRUE = species lacks gigantopyramidal cells; row is a documented absence, not missing data"
+dendritic_volume_M1,Jacobs_etal_2018_Table5,dendritic_volume,,M1,,mean,um3,,
+dendritic_volume_M1_sd,Jacobs_etal_2018_Table5,dendritic_volume,,M1,,sd,um3,,
+total_dendritic_length_M1,Jacobs_etal_2018_Table5,total_dendritic_length,,M1,,mean,um,,
+total_dendritic_length_M1_sd,Jacobs_etal_2018_Table5,total_dendritic_length,,M1,,sd,um,,
+mean_segment_length_M1,Jacobs_etal_2018_Table5,mean_segment_length,,M1,,mean,um,,
+mean_segment_length_M1_sd,Jacobs_etal_2018_Table5,mean_segment_length,,M1,,sd,um,,
+dendritic_segment_count_M1,Jacobs_etal_2018_Table5,dendritic_segment_count,,M1,,mean,count,,
+dendritic_segment_count_M1_sd,Jacobs_etal_2018_Table5,dendritic_segment_count,,M1,,sd,count,,
+dendritic_spine_number_M1,Jacobs_etal_2018_Table5,spine_count,,M1,,mean,count,,
+dendritic_spine_number_M1_sd,Jacobs_etal_2018_Table5,spine_count,,M1,,sd,count,,
+dendritic_spine_density_M1,Jacobs_etal_2018_Table5,spine_density,,M1,,mean,spines/um,,
+dendritic_spine_density_M1_sd,Jacobs_etal_2018_Table5,spine_density,,M1,,sd,spines/um,,
+soma_size_M1,Jacobs_etal_2018_Table5,soma_area,,M1,,mean,um2,,
+soma_size_M1_sd,Jacobs_etal_2018_Table5,soma_area,,M1,,sd,um2,,
+soma_depth_M1,Jacobs_etal_2018_Table5,soma_depth,,M1,,mean,um,,
+soma_depth_M1_sd,Jacobs_etal_2018_Table5,soma_depth,,M1,,sd,um,,
+parse_flags,Jacobs_etal_2018_Table5,note,,,,,,,
+Species,Nguyen_etal_2019_Table2,Species,,,,,,,
+Species_scientific_printed,Nguyen_etal_2019_Table2,species_printed,,,,,,,
+Species_Nguyen2019,Nguyen_etal_2019_Table2,DROP,,,,,,,
+region_printed,Nguyen_etal_2019_Table2,DROP,,,,,,,
+region_code,Nguyen_etal_2019_Table2,DROP,,,,,,,
+region,Nguyen_etal_2019_Table2,region_printed,,,,,,,
+neuron_type,Nguyen_etal_2019_Table2,cell_type_printed,,,,,,,
+n,Nguyen_etal_2019_Table2,n,,,,n,neurons,,
+source_note,Nguyen_etal_2019_Table2,note,,,,,,,
+dendritic_volume_um3_mean,Nguyen_etal_2019_Table2,dendritic_volume,,,,mean,um3,,
+dendritic_volume_um3_sem,Nguyen_etal_2019_Table2,dendritic_volume,,,,sem,um3,,
+total_dendritic_length_um_mean,Nguyen_etal_2019_Table2,total_dendritic_length,,,,mean,um,,
+total_dendritic_length_um_sem,Nguyen_etal_2019_Table2,total_dendritic_length,,,,sem,um,,
+mean_segment_length_um_mean,Nguyen_etal_2019_Table2,mean_segment_length,,,,mean,um,,
+mean_segment_length_um_sem,Nguyen_etal_2019_Table2,mean_segment_length,,,,sem,um,,
+dendritic_segment_count_mean,Nguyen_etal_2019_Table2,dendritic_segment_count,,,,mean,count,,
+dendritic_segment_count_sem,Nguyen_etal_2019_Table2,dendritic_segment_count,,,,sem,count,,
+dendritic_spine_count_mean,Nguyen_etal_2019_Table2,spine_count,,,,mean,count,,
+dendritic_spine_count_sem,Nguyen_etal_2019_Table2,spine_count,,,,sem,count,,
+dendritic_spine_density_per_um_mean,Nguyen_etal_2019_Table2,spine_density,,,,mean,spines/um,,
+dendritic_spine_density_per_um_sem,Nguyen_etal_2019_Table2,spine_density,,,,sem,spines/um,,
+soma_area_um2_mean,Nguyen_etal_2019_Table2,soma_area,,,,mean,um2,,
+soma_area_um2_sem,Nguyen_etal_2019_Table2,soma_area,,,,sem,um2,,
+soma_depth_um_mean,Nguyen_etal_2019_Table2,soma_depth,,,,mean,um,,
+soma_depth_um_sem,Nguyen_etal_2019_Table2,soma_depth,,,,sem,um,,
+species,Nimchinsky_etal_1999_Table2,Species,,,,,,,
+species_as_published,Nimchinsky_etal_1999_Table2,species_printed,,,,,,,
+pyramidal_vol_um3_mean,Nimchinsky_etal_1999_Table2,soma_volume,pyramidal_L5,ACC,V,mean,um3,,
+pyramidal_vol_um3_sd,Nimchinsky_etal_1999_Table2,soma_volume,pyramidal_L5,ACC,V,sd,um3,,
+spindle_vol_um3_mean,Nimchinsky_etal_1999_Table2,soma_volume,ven,ACC,V,mean,um3,,
+spindle_vol_um3_sd,Nimchinsky_etal_1999_Table2,soma_volume,ven,ACC,V,sd,um3,,
+fusiform_vol_um3_mean,Nimchinsky_etal_1999_Table2,soma_volume,fusiform_L6,ACC,VI,mean,um3,,
+fusiform_vol_um3_sd,Nimchinsky_etal_1999_Table2,soma_volume,fusiform_L6,ACC,VI,sd,um3,,
+spindle_gt_pyramidal_p05,Nimchinsky_etal_1999_Table2,DROP,,,,,,,
+spindle_gt_fusiform_p01,Nimchinsky_etal_1999_Table2,DROP,,,,,,,
+n_neurons_per_layer,Nimchinsky_etal_1999_Table2,n,,ACC,,n,neurons per layer per case,,
+source,Nimchinsky_etal_1999_Table2,DROP,,,,,,,
+species_sci,Nudo_etal_1995_TABLE2,Species,,,,,,,
+Animal_Nudo1995,Nudo_etal_1995_TABLE2,species_printed,,,,,,,
+hemisphere_used,Nudo_etal_1995_TABLE2,hemisphere,,,,,,,
+method,Nudo_etal_1995_TABLE2,method,,,,,,,
+soma_diameter.um,Nudo_etal_1995_TABLE2,soma_diameter,corticospinal,cortex_all_CS,V,mean,um,,mean CS soma diameter used for the Abercrombie correction; counts/densities in this table -> sensorimotor-pathway scope
+parse_flags,Nudo_etal_1995_TABLE2,note,,,,,,,
+animal_common_Nudo1995,Nudo_etal_1995_TABLE2,DROP,,,,,,,corticospinal counts/percentages -> sensorimotor & motor pathways scope (not yet wired anywhere; see inventory)
+gs_initials_Nudo1995,Nudo_etal_1995_TABLE2,DROP,,,,,,,corticospinal counts/percentages -> sensorimotor & motor pathways scope (not yet wired anywhere; see inventory)
+Order_Nudo1995,Nudo_etal_1995_TABLE2,DROP,,,,,,,corticospinal counts/percentages -> sensorimotor & motor pathways scope (not yet wired anywhere; see inventory)
+Order_resolved,Nudo_etal_1995_TABLE2,DROP,,,,,,,corticospinal counts/percentages -> sensorimotor & motor pathways scope (not yet wired anywhere; see inventory)
+CS_profiles_contralateral,Nudo_etal_1995_TABLE2,DROP,,,,,,,corticospinal counts/percentages -> sensorimotor & motor pathways scope (not yet wired anywhere; see inventory)
+CS_profiles_ipsilateral,Nudo_etal_1995_TABLE2,DROP,,,,,,,corticospinal counts/percentages -> sensorimotor & motor pathways scope (not yet wired anywhere; see inventory)
+CS_profiles_bracket_printed,Nudo_etal_1995_TABLE2,DROP,,,,,,,corticospinal counts/percentages -> sensorimotor & motor pathways scope (not yet wired anywhere; see inventory)
+CS_profiles_used,Nudo_etal_1995_TABLE2,DROP,,,,,,,corticospinal counts/percentages -> sensorimotor & motor pathways scope (not yet wired anywhere; see inventory)
+correction_term,Nudo_etal_1995_TABLE2,DROP,,,,,,,corticospinal counts/percentages -> sensorimotor & motor pathways scope (not yet wired anywhere; see inventory)
+CS_somata_total,Nudo_etal_1995_TABLE2,DROP,,,,,,,corticospinal counts/percentages -> sensorimotor & motor pathways scope (not yet wired anywhere; see inventory)
+CS_somata_A,Nudo_etal_1995_TABLE2,DROP,,,,,,,corticospinal counts/percentages -> sensorimotor & motor pathways scope (not yet wired anywhere; see inventory)
+CS_somata_pct_A,Nudo_etal_1995_TABLE2,DROP,,,,,,,corticospinal counts/percentages -> sensorimotor & motor pathways scope (not yet wired anywhere; see inventory)
+CS_somata_B,Nudo_etal_1995_TABLE2,DROP,,,,,,,corticospinal counts/percentages -> sensorimotor & motor pathways scope (not yet wired anywhere; see inventory)
+CS_somata_pct_B,Nudo_etal_1995_TABLE2,DROP,,,,,,,corticospinal counts/percentages -> sensorimotor & motor pathways scope (not yet wired anywhere; see inventory)
+CS_somata_C,Nudo_etal_1995_TABLE2,DROP,,,,,,,corticospinal counts/percentages -> sensorimotor & motor pathways scope (not yet wired anywhere; see inventory)
+CS_somata_pct_C,Nudo_etal_1995_TABLE2,DROP,,,,,,,corticospinal counts/percentages -> sensorimotor & motor pathways scope (not yet wired anywhere; see inventory)
+CS_somata_Cprime,Nudo_etal_1995_TABLE2,DROP,,,,,,,corticospinal counts/percentages -> sensorimotor & motor pathways scope (not yet wired anywhere; see inventory)
+CS_somata_pct_Cprime,Nudo_etal_1995_TABLE2,DROP,,,,,,,corticospinal counts/percentages -> sensorimotor & motor pathways scope (not yet wired anywhere; see inventory)
+CS_somata_other,Nudo_etal_1995_TABLE2,DROP,,,,,,,corticospinal counts/percentages -> sensorimotor & motor pathways scope (not yet wired anywhere; see inventory)
+CS_somata_pct_other,Nudo_etal_1995_TABLE2,DROP,,,,,,,corticospinal counts/percentages -> sensorimotor & motor pathways scope (not yet wired anywhere; see inventory)
+species,Raghanti_etal_2015_Table1,Species,,,,,,,
+species_as_published,Raghanti_etal_2015_Table1,species_printed,,,,,,,
+cortical_layer,Raghanti_etal_2015_Table1,layer_printed,,,,,,,
+n_individuals,Raghanti_etal_2015_Table1,n,,,,n,individuals,,
+adult,Raghanti_etal_2015_Table1,note,,,,,,,FALSE = non-adult specimen
+source,Raghanti_etal_2015_Table1,DROP,,,,,,,
+frontal_pole_ven_pct,Raghanti_etal_2015_Table1,ven_pct,ven,frontal_pole,V,value,percent,,
+frontal_pole_fork_pct,Raghanti_etal_2015_Table1,fork_pct,fork_cell,frontal_pole,V,value,percent,,
+acc_ven_pct,Raghanti_etal_2015_Table1,ven_pct,ven,acc,V,value,percent,,
+acc_fork_pct,Raghanti_etal_2015_Table1,fork_pct,fork_cell,acc,V,value,percent,,
+anterior_insula_ven_pct,Raghanti_etal_2015_Table1,ven_pct,ven,anterior_insula,V,value,percent,,
+anterior_insula_fork_pct,Raghanti_etal_2015_Table1,fork_pct,fork_cell,anterior_insula,V,value,percent,,
+occipital_pole_ven_pct,Raghanti_etal_2015_Table1,ven_pct,ven,occipital_pole,V,value,percent,,
+occipital_pole_fork_pct,Raghanti_etal_2015_Table1,fork_pct,fork_cell,occipital_pole,V,value,percent,,
+Species,Sherwood_etal_2003_Table1,Species,,,,,,,
+n,Sherwood_etal_2003_Table1,n,,,,n,individuals,,
+motor_pyramid_soma_um3_mean,Sherwood_etal_2003_Table1,soma_volume,pyramidal_L5,M1,V,mean,um3,,
+motor_pyramid_soma_um3_sd,Sherwood_etal_2003_Table1,soma_volume,pyramidal_L5,M1,V,sd,um3,,
+motor_pyramid_cv_pct,Sherwood_etal_2003_Table1,soma_volume,pyramidal_L5,M1,V,cv,percent,,
+betz_soma_um3_mean,Sherwood_etal_2003_Table1,soma_volume,gigantopyramidal,M1,V,mean,um3,,
+betz_soma_um3_sd,Sherwood_etal_2003_Table1,soma_volume,gigantopyramidal,M1,V,sd,um3,,
+betz_cv_pct,Sherwood_etal_2003_Table1,soma_volume,gigantopyramidal,M1,V,cv,percent,,
+visual_pyramid_soma_um3_mean,Sherwood_etal_2003_Table1,soma_volume,pyramidal_L5,V1,V,mean,um3,,
+visual_pyramid_soma_um3_sd,Sherwood_etal_2003_Table1,soma_volume,pyramidal_L5,V1,V,sd,um3,,
+visual_pyramid_cv_pct,Sherwood_etal_2003_Table1,soma_volume,pyramidal_L5,V1,V,cv,percent,,
+meynert_soma_um3_mean,Sherwood_etal_2003_Table1,soma_volume,meynert,V1,V/VI,mean,um3,,
+meynert_soma_um3_sd,Sherwood_etal_2003_Table1,soma_volume,meynert,V1,V/VI,sd,um3,,
+meynert_cv_pct,Sherwood_etal_2003_Table1,soma_volume,meynert,V1,V/VI,cv,percent,,
+neocortex_vol_mm3,Sherwood_etal_2003_Table1,DROP,,,,,,,secondary literature column -> its own merge (__merging_volumes); primaries already held
+neocortex_vol_ref,Sherwood_etal_2003_Table1,DROP,,,,,,,secondary literature column -> its own merge (__merging_volumes); primaries already held
+brain_weight_g,Sherwood_etal_2003_Table1,DROP,,,,,,,secondary literature column -> its own merge (__merging_brain_mass); primaries already held
+brain_weight_ref,Sherwood_etal_2003_Table1,DROP,,,,,,,secondary literature column -> its own merge (__merging_brain_mass); primaries already held
+body_weight_g,Sherwood_etal_2003_Table1,DROP,,,,,,,secondary literature column -> its own merge (__merging_body_ecology/behaviour); primaries already held
+body_weight_ref,Sherwood_etal_2003_Table1,DROP,,,,,,,secondary literature column -> its own merge (__merging_body_ecology/behaviour); primaries already held
+EQ,Sherwood_etal_2003_Table1,DROP,,,,,,,secondary literature column -> its own merge (__merging_body_ecology/behaviour); primaries already held
+diet_category,Sherwood_etal_2003_Table1,DROP,,,,,,,secondary literature column -> its own merge (__merging_body_ecology/behaviour); primaries already held
+diet_ref,Sherwood_etal_2003_Table1,DROP,,,,,,,secondary literature column -> its own merge (__merging_body_ecology/behaviour); primaries already held
+habitat_category,Sherwood_etal_2003_Table1,DROP,,,,,,,secondary literature column -> its own merge (__merging_body_ecology/behaviour); primaries already held
+habitat_ref,Sherwood_etal_2003_Table1,DROP,,,,,,,secondary literature column -> its own merge (__merging_body_ecology/behaviour); primaries already held
+group_size,Sherwood_etal_2003_Table1,DROP,,,,,,,secondary literature column -> its own merge (__merging_body_ecology/behaviour); primaries already held
+group_size_ref,Sherwood_etal_2003_Table1,DROP,,,,,,,secondary literature column -> its own merge (__merging_body_ecology/behaviour); primaries already held
+dexterity_index,Sherwood_etal_2003_Table1,DROP,,,,,,,secondary literature column -> its own merge (__merging_body_ecology/behaviour); primaries already held
+note,Sherwood_etal_2003_Table1,DROP,,,,,,,
+source,Sherwood_etal_2003_Table1,DROP,,,,,,,

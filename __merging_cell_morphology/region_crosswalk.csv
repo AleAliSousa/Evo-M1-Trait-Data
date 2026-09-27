@@ -1,0 +1,40 @@
+Reference,region_printed,region,note
+*,M1,M1,primary motor cortex (Brodmann area 4)
+*,Area4,M1,Bianchi 2012
+*,Motor,M1,Nguyen 2019 printed label
+*,V1,V1,primary visual cortex (area 17)
+*,Visual,V1,Nguyen 2019 printed label
+*,V2,V2,second visual area (area 18)
+*,Area18,V2,Bianchi 2012
+*,Area3b,S1_3b,"primary somatosensory cortex, area 3b"
+*,Area10,PFC_area10,frontal pole / area 10
+*,Area11,PFC_area11,orbitofrontal area 11
+*,Area12,PFC_area12,orbitofrontal area 12
+*,gPFC,PFC_granular,granular prefrontal cortex (Elston 2006)
+*,Prefrontal,PFC,Elston 2001 regional label (area 10/12 material)
+*,frontal cortex,frontal,Nguyen 2019 printed 'Frontal'
+*,Frontal,frontal,Nguyen 2019 printed label
+*,Occipital,occipital,Elston 2001 regional label (V1/V2 material)
+*,Temporal,temporal,Elston 2001 regional label (inferotemporal TE material)
+*,TE,temporal_TE,"inferotemporal cortex, cytoarchitectonic area TE"
+*,7a,parietal_7a,posterior parietal area 7a
+*,ACC,ACC,anterior cingulate cortex
+*,FI,FI,frontoinsular cortex
+*,SUBG,ACC_subgenual,Butti 2009 subgenual ROI (verify against paper Table 2)
+*,frontal_pole,PFC_area10,Raghanti 2015
+*,acc,ACC,Raghanti 2015
+*,anterior_insula,anterior_insula,Raghanti 2015
+*,occipital_pole,occipital_pole,Raghanti 2015
+*,LGBp,thal_LGN_parvocellular,"Armstrong 1979 lateral geniculate body, parvocellular"
+*,LGBm,thal_LGN_magnocellular,"Armstrong 1979 lateral geniculate body, magnocellular"
+*,MGBp,thal_MGN_parvocellular,"Armstrong 1979 medial geniculate body, parvocellular"
+*,VB,thal_VB,Armstrong 1979 ventrobasal complex
+*,cortex_all_CS,cortex_corticospinal_field,"Nudo 1995: all retrogradely labelled corticospinal somata, whole cortex"
+*,frontal cortex layer I,frontal,Falcone 2019 ILA sampled from dorsal + ventral frontal cortex
+*,pooled_multiregion,pooled_multiregion,Jacobs 2015 Table 4: pooled sample across the regions named in region_printed
+Butti_etal_2009_Table5,AI,anterior_insula,Butti 2009 ROI
+Butti_etal_2009_Table5,FP,PFC_area10,Butti 2009 frontal pole ROI
+*,primary motor cortex,M1,Nguyen 2019 region column
+*,primary visual cortex,V1,Nguyen 2019 region column
+*,Area7a,parietal_7a,Elston 2000
+*,AreaTE,temporal_TE,Elston 2000

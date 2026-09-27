@@ -1,0 +1,15 @@
+Original_Term,Reference,Standardized_Term,cell_type,region,layer,statistic,unit,hemisphere,note
+species,Raghanti_etal_2015_Table1,Species,,,,,,,
+species_as_published,Raghanti_etal_2015_Table1,species_printed,,,,,,,
+cortical_layer,Raghanti_etal_2015_Table1,layer_printed,,,,,,,
+n_individuals,Raghanti_etal_2015_Table1,n,,,,n,individuals,,
+adult,Raghanti_etal_2015_Table1,note,,,,,,,FALSE = non-adult specimen
+source,Raghanti_etal_2015_Table1,DROP,,,,,,,
+frontal_pole_ven_pct,Raghanti_etal_2015_Table1,ven_pct,ven,frontal_pole,V,value,percent,,
+frontal_pole_fork_pct,Raghanti_etal_2015_Table1,fork_pct,fork_cell,frontal_pole,V,value,percent,,
+acc_ven_pct,Raghanti_etal_2015_Table1,ven_pct,ven,acc,V,value,percent,,
+acc_fork_pct,Raghanti_etal_2015_Table1,fork_pct,fork_cell,acc,V,value,percent,,
+anterior_insula_ven_pct,Raghanti_etal_2015_Table1,ven_pct,ven,anterior_insula,V,value,percent,,
+anterior_insula_fork_pct,Raghanti_etal_2015_Table1,fork_pct,fork_cell,anterior_insula,V,value,percent,,
+occipital_pole_ven_pct,Raghanti_etal_2015_Table1,ven_pct,ven,occipital_pole,V,value,percent,,
+occipital_pole_fork_pct,Raghanti_etal_2015_Table1,fork_pct,fork_cell,occipital_pole,V,value,percent,,

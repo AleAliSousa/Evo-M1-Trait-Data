@@ -1,0 +1,13 @@
+Original_Term,Reference,Standardized_Term,cell_type,region,layer,statistic,unit,hemisphere,note
+species,Nimchinsky_etal_1999_Table2,Species,,,,,,,
+species_as_published,Nimchinsky_etal_1999_Table2,species_printed,,,,,,,
+pyramidal_vol_um3_mean,Nimchinsky_etal_1999_Table2,soma_volume,pyramidal_L5,ACC,V,mean,um3,,
+pyramidal_vol_um3_sd,Nimchinsky_etal_1999_Table2,soma_volume,pyramidal_L5,ACC,V,sd,um3,,
+spindle_vol_um3_mean,Nimchinsky_etal_1999_Table2,soma_volume,ven,ACC,V,mean,um3,,
+spindle_vol_um3_sd,Nimchinsky_etal_1999_Table2,soma_volume,ven,ACC,V,sd,um3,,
+fusiform_vol_um3_mean,Nimchinsky_etal_1999_Table2,soma_volume,fusiform_L6,ACC,VI,mean,um3,,
+fusiform_vol_um3_sd,Nimchinsky_etal_1999_Table2,soma_volume,fusiform_L6,ACC,VI,sd,um3,,
+spindle_gt_pyramidal_p05,Nimchinsky_etal_1999_Table2,DROP,,,,,,,
+spindle_gt_fusiform_p01,Nimchinsky_etal_1999_Table2,DROP,,,,,,,
+n_neurons_per_layer,Nimchinsky_etal_1999_Table2,n,,ACC,,n,neurons per layer per case,,
+source,Nimchinsky_etal_1999_Table2,DROP,,,,,,,

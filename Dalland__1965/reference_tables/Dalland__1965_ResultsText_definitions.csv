@@ -1,0 +1,11 @@
+variable,definition,units,notes
+species_sci,Scientific binomial,text,
+common_name,Common name as printed,text,
+best_sensitivity_db_re_1dyne_cm2,Maximum sensitivity (lowest threshold) stated in the Results text; negative = below (more sensitive than) the 1 dyne/cm2 reference,dB re 1 dyne/cm2,Older acoustics reference unit; see README for conversion context
+best_frequency_khz,Frequency at which best sensitivity was obtained,kHz,
+secondary_peak_frequency_khz,A second sharply-tuned minimum-threshold region reported only for Eptesicus,kHz,Blank/NA for Myotis (not reported)
+audible_range_low_khz,Lower bound of the frequency range over which the animal audibly responded under the stated criterion,kHz,See range_criterion for the exact printed condition
+audible_range_high_khz,Upper bound of the frequency range over which the animal audibly responded under the stated criterion,kHz,"For Myotis the true value at the low end (10 kHz) is flagged by the authors as uncertain"
+range_criterion,"The exact printed intensity/criterion under which the audible range was established (the two bats used slightly different stated criteria)",text,Verbatim from Results text
+data_role,Whether this is the paper's own new measurement,text,Both rows primary (n=1 animal per species)
+source,Citation for the values as given in the Results text,text,Dalland (1965) Results text

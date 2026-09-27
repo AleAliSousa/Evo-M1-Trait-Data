@@ -1,0 +1,12 @@
+variable,definition,units,notes
+species_row,Row number (single row for this item),integer,
+binomial,Species binomial as printed in the paper,text,
+common_name,Common name as printed in the paper,text,
+n_individuals,Number of animals tested,integer,
+best_sensitivity_dB_SPL,Lowest (best) absolute threshold reported in the Results text,dB SPL re 20 uN/m2,Stated as "only 24 dB SPL" at the animal's best frequency
+best_frequency_kHz,Frequency at which the best sensitivity was measured,kHz,
+lowest_frequency_tested_Hz,Lowest frequency for which a threshold was determined for this animal,Hz,Testing did not extend below this frequency for the white-tailed individual
+hearing_range_low_60dBSPL_Hz,Low-frequency edge of the 60-dB SPL hearing range as stated in text,Hz,
+hearing_range_high_60dBSPL_kHz,High-frequency edge of the 60-dB SPL hearing range as stated in text,kHz,
+data_role,Whether the row is this paper's own new measurement or cited from a prior study,text,
+source,Citation and location for the value as given in the paper,text,

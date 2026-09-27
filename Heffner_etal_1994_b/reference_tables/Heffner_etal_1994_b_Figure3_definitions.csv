@@ -1,0 +1,13 @@
+variable,definition,units,notes
+species_row,Row number after removing header/blank lines,integer,
+binomial,Species/strain binomial as identified in the paper,text,
+common_name,Common name as printed in the paper,text,
+figure_key,Single-letter key used to label this curve in Fig. 3,text,
+n_individuals,Number of animals tested (this study only; blank for cited curves),integer,
+best_hearing_point1_kHz,First (lower) frequency of best hearing described in text,kHz,Shared by hooded and albino rats
+best_hearing_point2_kHz_range,Second (higher) frequency range of best hearing described in text,kHz,Shared by hooded and albino rats
+hearing_range_low_60dBSPL_Hz,Low-frequency edge of the 60-dB SPL hearing range as stated in text,Hz,Blank where not quantified in text
+hearing_range_high_60dBSPL_kHz,High-frequency edge of the 60-dB SPL hearing range as stated in text,kHz,Albino value is stated as an estimate in the source
+quantified_in_text,Whether the source states numeric threshold values for this curve (vs. showing it only for qualitative comparison),boolean,
+data_role,Whether the row is this paper's own new measurement or cited from a prior study,text,
+source,Citation for the value/curve as given in the paper,text,

@@ -1,0 +1,6 @@
+variable,definition,units,notes
+row,Row number after reshaping to long format,integer,
+frequency_Hz,Test tone frequency as printed in Table 1,Hz,
+individual_id,Individual budgerigar identifier (P1/P2/P3) or 'mean' for the across-bird average row,text,
+sex,Sex of the individual bird (female for P1/P3; male for P2); blank for mean rows,text,
+threshold_dB_SPL,Pure-tone threshold at that frequency for that individual/mean,dB SPL,Mean rows independently recomputed from P1/P2/P3 and confirmed to match the printed Mean column

@@ -1,0 +1,13 @@
+variable,definition,units,notes
+species_row,Row number (2 rows for this item),integer,
+binomial,Species binomial,text,
+common_name,Common name as printed in the paper,text,
+n_individuals,Number of animals tested,integer,Blank for the derived Phyllostomus hastatus row (no new individuals tested here)
+best_sensitivity_dB,Lowest mean absolute threshold reported in Results text,dB SPL,"""the average best hearing of three Common vampire bats of 5 dB at 20 kHz""; blank for the derived row"
+best_frequency_kHz,Frequency at which the best sensitivity was measured,kHz,Blank for the derived row
+hearing_range_low_60dBSPL_kHz,Low-frequency edge of the 60-dB SPL hearing range,kHz,"D. rotundus: 716 Hz as stated in Abstract/Results (flagged 710 Hz inconsistency in Discussion, see README); P. hastatus: ~1.77 kHz stated in Discussion text"
+hearing_range_high_60dBSPL_kHz,High-frequency edge of the 60-dB SPL hearing range,kHz,"D. rotundus: 113 kHz stated in text; P. hastatus: 105.0 kHz from this paper's own Table 1"
+hearing_range_octaves,Hearing range span in octaves,octaves,"D. rotundus: 7.3 as printed, verified log2(113/0.716)=7.30; P. hastatus: 5.9 DERIVED here as log2(105.0/1.77)=5.89, not directly printed as a single figure"
+interaural_distance_functional_us,Functional interaural distance (time for sound to travel around the head between the ears),microseconds,"D. rotundus: 61 us (OCR text layer misread mu as 'm'; image-verified); P. hastatus: 108 us, Fig. 4 label p. 46, cross-confirmed against the same value in Heffner_etal_2003 Fig. 4"
+data_role,Whether the row is this paper's own new measurement or a derived/secondary value,text,
+source,Citation and location for the value(s) as given in the paper,text,

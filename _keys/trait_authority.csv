@@ -54,7 +54,6 @@ BMR_massspecific (mL O2/h/g),__merging_body_ecology,auto_single_producer,active,
 BMR_wholeanimal (mL O2/h),__merging_body_ecology,adopted_from_variable_canonical,active,2,____EvoM1_TraitTable (melted); __merging_body_ecology,____EvoM1_TraitTable (melted),authority already declared by superseded_by; adopted unchanged
 Body_Mass (g),__merging_body_ecology,adopted_from_variable_canonical,active,3,____EvoM1_TraitTable (melted); __merging_body_ecology; __merging_volumes,____EvoM1_TraitTable (melted); __merging_volumes,authority already declared by superseded_by; adopted unchanged
 Brain_Mass_excl_olfactory_bulb (g),__merging_brain_mass,adopted_from_variable_canonical,active,2,__merging_brain_mass; __merging_cellcounts,__merging_cellcounts,authority already declared by superseded_by; adopted unchanged
-Brain_Mass_from_volume_or_ecv (g),__merging_brain_mass,auto_single_producer,active,1,__merging_brain_mass,,
 Brain_Mass_mass_or_volume (g),__merging_brain_mass,auto_single_producer,active,1,__merging_brain_mass,,
 Brain_Mass_measured (g),__merging_brain_mass,adopted_from_variable_canonical,active,3,____EvoM1_TraitTable (melted); __merging_brain_mass; __merging_volumes,____EvoM1_TraitTable (melted); __merging_volumes,authority already declared by superseded_by; adopted unchanged
 Brain_size_sum_of_structures (g),__merging_brain_mass,auto_single_producer,active,1,__merging_brain_mass,,

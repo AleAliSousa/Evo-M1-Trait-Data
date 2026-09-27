@@ -1,0 +1,13 @@
+variable,definition,units,notes
+species_row,Row number after removing header/blank lines,integer,
+binomial,Species binomial as printed in the Results text,text,
+common_name,Common name as printed in the paper,text,
+best_frequency_kHz,Frequency of the species' most sensitive (lowest) threshold,kHz,
+best_threshold_dB_SPL,The species' lowest (most sensitive) threshold value,dB SPL,
+low_freq_limit_60dB_kHz,Low-frequency edge of the hearing range at the 60-dB-SPL criterion,kHz,
+high_freq_limit_60dB_kHz,High-frequency edge of the hearing range at the 60-dB-SPL criterion,kHz,
+hearing_range_60dB_octaves,Octave span between the low- and high-frequency 60-dB limits as printed,octaves,"For Eidolon helvum, the printed 4.82 does not exactly recompute from the printed rounded boundary values (recomputes to ~4.89); kept as printed, see README"
+lowest_freq_tested_kHz,Lowest stimulus frequency at which a threshold was obtained,kHz,
+threshold_at_lowest_freq_dB_SPL,Threshold(s) at the lowest frequency tested,dB SPL,For E. helvum given per-individual (Bat A; Bat B); for C. brachyotis given as the average
+data_role,Whether the row is this paper's own new measurement or cited from a prior study,text,Both rows are primary (this study)
+source,Citation for the value as given in the text,text,

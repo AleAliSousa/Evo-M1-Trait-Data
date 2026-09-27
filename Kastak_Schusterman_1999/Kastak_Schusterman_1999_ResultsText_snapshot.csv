@@ -1,0 +1,3 @@
+medium,best_range_low_khz,best_range_high_khz,best_frequency_khz,best_threshold_value,best_threshold_unit,upper_freq_limit_khz,upper_freq_is_approx,source_phrase
+Air,3.2,15,6.3,43,dB re 20 uPa,20,TRUE,"best for frequencies between 3.2 and 15 kHz, and showed greatest sensitivity at 6.3 kHz (43 dB re: 20 uPa). The upper frequency limit in air was approximately 20 kHz."
+Underwater,3.2,45,6.4,58,dB re 1 uPa,55,TRUE,"sensitivity was best between 3.2 and 45 kHz, with greatest sensitivity at 6.4 kHz (58 dB re: 1 uPa) and an upper frequency cutoff of approximately 55 kHz."

@@ -1,0 +1,11 @@
+variable,definition,units,notes
+species_row,Row number after removing header/blank lines,integer,
+binomial,Species binomial as printed in the Results text,text,
+common_name,Common name as used in the paper,text,
+best_frequency_kHz,Frequency of the animal's most sensitive (lowest) threshold,kHz,"Most sensitive point of the audiogram is at 1 kHz per the paper's own ""Best frequency of hearing"" subsection"
+best_threshold_dB_SPL,The animal's lowest (most sensitive) threshold value,dB SPL,
+low_freq_limit_60dB_Hz,Low-frequency edge of the hearing range at the 60-dB-SPL criterion,Hz,Calculated by the paper's authors; stated directly in text as 17 Hz
+high_freq_limit_60dB_kHz,High-frequency edge of the hearing range at the 60-dB-SPL criterion,kHz,Stated directly in text as 10.5 kHz
+additional_detail,Supplementary threshold values quoted in the same Results paragraphs,text,Bracketing points near the low- and high-frequency limits
+data_role,Whether the row is this paper's own new measurement or cited from a prior study,text,primary (this study)
+source,Citation for the value as given in the text,text,

@@ -1,0 +1,14 @@
+variable,definition,units,notes
+row_id,Row number after removing header/blank lines,integer,
+group,Pinniped family group as printed as the sub-table heading,text,Otariids (eared seals/sea lions) or Phocids (earless/true seals)
+common_name,Common name as printed in Table 1,text,
+binomial,Species binomial,text,added for readability; not printed in the source table
+n_subjects,Number of subjects tested in the underlying (cited) primary study,integer,
+best_range_freq_low_kHz,Lower bound of the frequency range over which the species showed its best sensitivity,kHz,
+best_range_freq_high_kHz,Upper bound of the frequency range over which the species showed its best sensitivity,kHz,
+best_range_threshold_low_dB,Lower bound of the corresponding threshold range,dB re 1 uBar,per source table footnote a
+best_range_threshold_high_dB,Upper bound of the corresponding threshold range,dB re 1 uBar,per source table footnote a
+high_freq_cutoff_low_kHz,Lower bound of the approximate high-frequency hearing cutoff,kHz,single printed values are stored as low=high
+high_freq_cutoff_high_kHz,Upper bound of the approximate high-frequency hearing cutoff,kHz,single printed values are stored as low=high
+primary_source_cited,The original (primary) study this review row's data are drawn from,text,this review does not report new data itself -- see README N.B.
+notes,Curatorial notes (e.g. evoked-potential vs behavioral audiogram),text,

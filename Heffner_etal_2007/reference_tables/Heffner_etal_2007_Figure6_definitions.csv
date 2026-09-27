@@ -1,0 +1,8 @@
+variable,definition,units,notes
+species_row,Row number after removing header/blank lines,integer,
+binomial,Species binomial,text,
+common_name,Common name as printed in the paper (rows 1-2) or conventionally used (rows 3-6),text,
+field_of_best_vision_width_deg,Horizontal width of the retinal field of best vision (>=75% of maximum ganglion-cell density),degrees,Rows 1-2 stated in this paper's text; rows 3-6 carried from SensoryData_compiled, not independently confirmed from this PDF
+stated_in_this_papers_text,Whether this specific PDF's Results/Discussion text states this numeric value,boolean,FALSE for rows 3-6 -- see README
+data_role,Whether the row is this paper's own new measurement or a cited/comparison value,text,
+source,Citation/provenance for the value,text,Rows 5-6 source paper not identified in this PDF at all

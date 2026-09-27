@@ -845,6 +845,259 @@ both `Kruska_Rohrs_1974` and `Kruska__2014` — and the Kaskan Figure 3 file was
 `..._Figure3_digitized.csv` to `..._Figure3.csv` to match the pre-existing registry row exactly
 (the digitization caveat lives in the README/N.B., not the filename).
 
+## Build status update (2026-09-26, third pass) — registry writes fixed; full re-audit
+
+**Root cause of the "write-lock" found and fixed.** It was never a workbook lock — `graph-QueryGraph`
+(read-only, GET) had been called with a `method: "PATCH"` parameter all session; the tool silently
+ignored the unrecognized parameter and executed a harmless read every time, which is why every
+"write" appeared to succeed on inspection but never persisted. The write-capable tool is
+`graph-CallGraph`. Confirmed working with a round-tripped test value. **The registry was never
+actually locked; every "FINISHED" flip and formula fix described as pending above is now applied.**
+
+**Applied this pass:**
+- All 10 rows across the 5 papers above (`Pirlot_Kamiya_1982`, `Pirlot_Kamiya_1985`,
+  `Kruska_Rohrs_1974`, `Kruska__2014`, and Kaskan's 4 rows — the registry itself had already
+  auto-split Kaskan into `Figure3a`/`Figure3b`/`ElectronicAppendixA:Table1`/`ElectronicAppendixB`
+  and the two Kruska papers into separate `Table2`/`Table3` rows by the time writes were confirmed
+  working) → Progress stage set to `FINISHED`.
+- **Mota_HerculanoHouzel_2015 hyphen bug — fixed for real this time.** Confirmed F334 (second-author
+  surname formula) still had the unfixed hyphen-stripping bug; applied the corrected formula and
+  verified H334/J334 now read `Mota_HerculanoHouzel_2015` / `..._TableS1` (no hyphen), matching the
+  real folder.
+- **Caught and reverted a near-miss on `Schniter_Penaherrera-Aguirre_2026`.** This row has the
+  *identical* formula bug, but unlike Mota, its folder and all built files are already real and
+  `FINISHED` **using the hyphenated name** (`Schniter_Penaherrera-Aguirre_2026`) — a second author
+  whose surname is genuinely hyphenated, not a compound-name convention case. Applying the "fix"
+  would have broken a working item by changing the registry's computed name to
+  `Schniter_PenaherreraAguirre_2026`, no longer matching the real folder. Applied, caught via
+  cross-check against the actual folder contents, immediately reverted. **Lesson: the hyphen-strip
+  behavior is only a bug when the folder was deliberately renamed to drop the hyphen (Mota); it is
+  correct default behavior otherwise. Don't mass-apply this fix to other two-author hyphenated-name
+  rows without checking each one's real folder first.**
+
+**Fresh full folder-vs-registry audit — new findings, none caused by this session's edits:**
+
+- **Row 201: `#N/A` — root cause found.** Cell A201 (the citation text every downstream formula
+  parses) contains the literal string `"TEST_PROBE_VALUE"` instead of a real citation. Every derived
+  column (E–K) errors to `#N/A`. Progress stage is nonetheless `FINISHED` and the row's `N.B.`/title
+  describe a real item ("Table 1. Passive sound-localization thresholds... of bats"), so this is a
+  **real, built item whose citation cell was overwritten with placeholder text** — needs the actual
+  citation restored from whatever source has it (its own README, most likely) before it can be
+  trusted again.
+- **Row 203: confirmed duplicate, not a new item.** Same citation as row 162
+  (`Heffner_Heffner_1992_b`, "Hearing and sound localization in blind mole rats", "TABLE I"), but
+  missing the sequence letter `b` in column B — so its formula computes `Heffner_Heffner_1992_TableI`
+  (no suffix) instead of `Heffner_Heffner_1992_b_TABLEI`, matching no real file. Marked `FINISHED`
+  despite this. Likely a stale leftover from before the row was properly suffixed; recommend deleting
+  row 203 outright once confirmed harmless (row 162 already carries this paper's Table I correctly).
+- **Pre-existing "BROKEN CODE" / "PLACEHOLDER" rows, unchanged:** row 244
+  (`Karbowski__2007_TableS2`, `PLACEHOLDER`), row 309 (`Lyamin_etal_2008_Table2`, `BROKEN CODE`), rows
+  342–343 (`Nimchinsky_etal_1999` both items, `BROKEN CODE - FIRST COLUMN EMPTY`). Not investigated
+  further this pass — flagged for owner triage.
+- **Built-but-unregistered folders — genuine gaps, not documented skips.** Three folders have real,
+  substantial builds (confirmed via file listing — snapshot/analysis-CSV/R/README sets, all present)
+  but **no `__ReadMe.xlsx` row at all**:
+  - `Hutsler_etal_2005` — 4 sub-items built (`Figure3`, `Figure6`, `ReportedValues`, `Table1`), each
+    with a full snapshot/CSV/R/README set.
+  - `Jacobs_etal_1997` — 2 sub-items built (`Table1`, `Table2`).
+  - `Jacobs_etal_2018` — 2 sub-items built (`Table3`, `Table5`) — this is the item the roadmap's own
+    Tier 3 candidate #9 entry already describes as "✅ SNAPSHOTS BUILT", so this is a known gap, not
+    a new discovery; it simply was never carried through to a registry row.
+  
+  None of these are on the `SOURCE_DISPOSITION_REGISTER.md` documented-skip list (that list is
+  `Changizi_He_2005`, `Deaner_etal_2007`, `Reader_Laland_2002`, `Weaver__2005` — all confirmed still
+  correctly unregistered, deliberate skips). Registering these 8 sub-items (Hutsler ×4, Jacobs_1997
+  ×2, Jacobs_2018 ×2) is the next concrete action, pending owner go-ahead.
+
+## Build status update (2026-09-26, fourth pass) — column-F consistency, Schniter rename, and every outstanding item from the third pass resolved
+
+Follows directly from the third pass above. All open items from that pass are now closed.
+
+**Jacobs sub-item registration (the genuine folder-vs-registry gaps).** `Jacobs_etal_1997` (2
+sub-items: `Table1`, `Table2`) and `Jacobs_etal_2018` (2 sub-items: `Table3`, `Table5`) are now
+registered as rows 505–508, full formula chains (H–L) and static metadata (M–P), independently
+verified via read-back — all four found real public-TSV matches (not `notfound`). `Hutsler_etal_2005`
+was **not** registered: its own folder README explicitly states rows were deliberately withheld
+pending curatorial sign-off on real internal data conflicts, so leaving it unregistered is correct,
+not a gap.
+
+**Column-F hyphen formula — made fully consistent across every row (2–508).** The user asked to
+resolve the inconsistency the third pass flagged directly: strip hyphens from the second-author
+surname (column F) on every row, matching column E's existing universal strip, and rename the one
+folder this affects to match. Applied in 8 batches (F2:F61 through F447:F508), each verified via the
+PATCH response's own echoed recomputed values (spot-checked names appearing correctly throughout:
+Pakkenberg, Kay, Dunbar, Soligo, Pirlot, Drury, Kirk, Bryant, Rehkämper, and more). A prior
+independent check (Python emulation of the formula logic across the whole sheet) had already shown
+only two rows in the entire registry have a hyphenated second-author surname, so this was a
+low-blast-radius change:
+- **Mota_HerculanoHouzel_2015** — unaffected in practice; its real folder already has no hyphen, so
+  this row was the one pre-existing exception already being stripped (from an earlier session's
+  ad-hoc single-row patch, now superseded by the universal formula).
+- **Schniter_Penaherrera-Aguirre_2026** — now computes `PenaherreraAguirre` (hyphen stripped),
+  changing its `Item name`. Per the user's explicit instruction, the real SharePoint folder and all
+  5 contained files were renamed to match: `Schniter_Penaherrera-Aguirre_2026` →
+  `Schniter_PenaherreraAguirre_2026`. Verified after rename: the registry's computed `Item name` for
+  this row (`Schniter_PenaherreraAguirre_2026`) now matches the renamed folder exactly, and the Mota
+  row is unchanged and still correct.
+
+**Row 203 (duplicate) — deleted.** Confirmed via drive search that no real folder backs the
+unsuffixed `Heffner_Heffner_1992_TableI` this row computed — the real content for this citation
+lives correctly under `Heffner_Heffner_1992_b` (distinguished from `_a`/`_c`, the same author pair's
+other 1992 papers). Row deleted; sheet rows shifted up cleanly, confirmed via read-back of the
+surrounding rows.
+
+**All 3 "BROKEN CODE" rows — root-caused and fixed, not just reformatted:**
+- **`Lyamin_etal_2008_Table2`** (`BROKEN CODE`) — the R script's own header comment documented a
+  species-as-columns vs. species-as-rows transpose bug, already rewritten and fixed 2026-09-17.
+  Verified the actual output CSV: correctly transposed, 4 species (*Tursiops truncatus*, *Phocoena
+  phocoena*, *Inia geoffrensis*, *Delphinapterus leucas*), all internal percentage-sum checks
+  passing. Progress stage corrected to `FINISHED`.
+- **`Nimchinsky_etal_1999_Table1` and `_Table2`** (`BROKEN CODE - FIRST COLUMN EMPTY`) —
+  cross-referenced against `_checks/script_repairs_20260918.md`, which documented the root cause: an
+  unattended PMC fetch was served a non-article page, so the `section#T1`/`#T2` selectors silently
+  failed and produced an empty species column; fixed 2026-09-18 (fetch now goes through
+  `curl::curl_fetch_memory` with a status check and retry, and the good fetch is frozen as
+  `Nimchinsky_etal_1999_PMC21853.html`, now in the folder). Verified both output CSVs: `Table1.csv`
+  has 28 populated species rows, `Table2.csv` has 5, matching the frozen snapshot's bolded taxa.
+  Also caught and trimmed a genuine trailing space baked into this citation's DOI in column A, which
+  had been propagating into the `Item encoded`/TSV filename columns. Both rows corrected to
+  `FINISHED`.
+
+**Row 201 (`TEST_PROBE_VALUE`) — real citation identified and restored, confirmed against the source
+PDF itself.** The row's title/N.B. ("Table 1. Passive sound-localization thresholds (minimum audible
+angles) of bats") pointed at a real, already-built item whose citation cell had been overwritten
+with placeholder text. Matched to **Heffner, R. S., Koay, G., & Heffner, H. E. (2008). Sound
+localization acuity and its relation to vision in large and small fruit-eating bats: II.
+Non-echolocating species, *Eidolon helvum* and *Cynopterus brachyotis*. Hearing Research, 241(1–2),
+80–86.** — confirmed three ways before writing: (1) the folder's own `Heffner_etal_2008_Table1.README.md`
+describes exactly this table and its mixed primary/secondary data roles; (2) the built
+`Heffner_etal_2008_Table1.csv` contains exactly 7 bat species with degree-valued MAA thresholds,
+matching the row's description; (3) the source PDF's own Table 1 (semantically searched directly)
+reproduces the same 7 species and the same thresholds verbatim, printed on p. 84. Citation restored
+in column A; verified all downstream formula columns (E–K) now resolve correctly (`Heffner` /
+`etal` / `2008` / `Heffner_etal_2008` / `Heffner_etal_2008_Table1`, no more `#N/A`).
+
+**Confirmed via full-column re-scan:** no `BROKEN` status remains anywhere in the registry after this
+pass.
+
+**Still open, unchanged from the third pass:** row 244 (`Karbowski__2007_TableS2`, `PLACEHOLDER`) —
+not investigated this pass. Public TSV mirror uploads to `__Public/comparative-data` for the
+sensory/hearing batch and the Route-A batch above remain unwritten (destination-specific timeout,
+unresolved).
+
+## Build status update (2026-09-26, fifth pass) — the last two registered-but-unbuilt tables
+
+The user supplied source PDFs for the two items still listed as "still empty, awaiting source
+PDF" after the second pass (`Ridgway__1990`, `Tschudin__1998`); a fresh sweep of the whole
+registry (every row with `Public TSV match` = `notfound` and `Progress stage` blank, excluding the
+32-row sensory "candidate" queue below, which is proposed/undecided rather than committed) found
+no other registered item with zero build files. Both are now fully built:
+
+| Item | Verification |
+|---|---|
+| `Ridgway__1990_Table1` — "Brain and Body Size of Adult Bottlenose Dolphins" | Source is a scanned photocopy book-chapter reprint with **no text layer** (confirmed: a semantic search of the PDF returns only page images) — transcribed by hand from a 150 dpi render of PDF p. 72. 29 individual *Tursiops truncatus* across 3 geographic groups (E. North Atlantic/Mediterranean, E. North Pacific, W. North Atlantic coastal) plus the printed per-group Mean/S.D. rows. All 3 groups' recomputed means matched the printed Mean rows within rounding (e.g. E. Atlantic/Mediterranean BdW: recomputed 234.7 vs. printed 235) |
+| `Tschudin__1998_Table2.5` — "Odontocete neuroanatomical volumes and ratios from MRI" | Source is an Adobe Paper Capture OCR scan of a 243-page dissertation; all 44 rows cross-checked against a 200 dpi render of the two source pages (pp. 58–59). Species resolved from the dissertation's own abbreviation appendix (p. 84), not assumed. Internal arithmetic (total = neocortex + posterior fossa; posterior fossa = brainstem + cerebellum; ratio = neocortex/posterior fossa) reconciles exactly or within print rounding for every row **except BOT 9**, which prints a posterior fossa volume 10.00 cm³ higher than its own brainstem+cerebellum sum — re-verified against the page image (not a transcription error) and kept as printed, flagged rather than corrected. "HUM 7" is printed twice as two distinct rows with different values — kept verbatim, both retained. The prose text's "CaM 5"/"CaM 9" outlier mention matches no code in the paper's own abbreviation key and is almost certainly an OCR rendering of "COM 5"/"COM 9" (which do exist and are comparatively extreme) — recorded as a note, not silently substituted; all 44 rows (including the disputed ones) are retained since Table 2.5 itself is the pre-exclusion listing |
+
+Both follow the full pipeline: snapshot → analysis CSV → R script (self-locating, house
+`item_name`/`base` pattern, `stopifnot` checks) → definitions.csv → README (naming the reader:
+AI assistant, 2026-09-26, transcription method and cross-check stated) → public TSV uploaded to
+`__Public/comparative-data/` → registry `Progress stage` set to `FINISHED`, `Public TSV match`
+(col L) set to the uploaded filename (not yet re-generated by `_tools/file_list.R`, so this was
+set by hand to reflect the file now actually present — the next `file_list.R` run should confirm
+it matches).
+
+**Not in scope for this pass — the 32-row sensory "candidate" queue.** The registry carries 32
+rows (mostly Heffner/Koay/Wenstrup bat- and mammal-hearing papers, plus a few others) with
+`Progress stage = candidate` and fully resolved `Item name`/`Item encoded` values but no build
+files. These are explicitly **proposed, not committed** — each carries a priority tag (1–3) and a
+cross-reference to which `SensoryData_compiled` values it would supply, evidently prepared as a
+scoping list for a future decision, not a "ready to build" queue. Distinguished from Ridgway/
+Tschudin (blank status = committed-but-not-yet-built, matching the pattern of every other item
+built this week) by the explicit `candidate` tag. Left untouched pending an owner decision on
+which (if any) to promote to committed builds.
+
+## Build status update (2026-09-27, sixth pass) — 43 new source PDFs (sensory/hearing cluster), recovered after a mid-run interruption
+
+The user added source PDFs into 43 previously-empty folders in a single batch (mostly
+Heffner-lab/Koay/Kastak/Schusterman/Terhune-style mammalian-hearing audiogram papers,
+plus a few marine-mammal and primate hearing papers). Work was split across 7 parallel
+build passes; one pass (Heffner_etal_2006/2010/2016, Heffner_Heffner_1982/2003/2010)
+completed cleanly end-to-end. The other 6 passes were interrupted mid-run by an
+unrelated session event before they reached their own registry-write step, even though
+most had already finished transcribing and uploading their snapshot/CSV/R/README/
+definitions files. This pass audited every one of the 43 folders directly against the
+live registry and the `__Public/comparative-data` file listing (never trusting a
+sub-agent's own end-of-run summary), completed the 3 items that had zero work done
+(`Heffner_etal_2014_Resultstext`, `Koay_etal_2002_Resultstext`,
+`Wenstrup__1984_Figures3-5`), fixed two files that had landed under a temporary
+placeholder DOI name (renamed to the correct Alt-identifier filenames), and wrote all
+55 affected registry rows (32 existing "candidate" rows fixed/promoted, 23 brand-new
+rows added for previously-unregistered papers) by hand via direct Excel-range PATCH,
+using the exact citation/DOI text confirmed from each item's own README.
+
+**Registered-and-built (FINISHED), items with confirmed public TSV**:
+Branstetter_etal_2017_TableIV, Frost_Masterton_1994_Resultstext, Heffner_Heffner_1985_Resultstext,
+Heffner_Heffner_2010_b_Table1, Heffner_etal_1994_a_Figure1/Figure2, Heffner_etal_1994_b_Figure3,
+Heffner_etal_1994_c_Table1, Heffner_etal_2003_Resultstext, Heffner_etal_2007_Figure6,
+Heffner_etal_2013_Resultstext, Koay_etal_1998_b_Resultstext, Mohl__1968_Table2,
+Owren_etal_1988_Table1, Ravizza_etal_1969_ResultsText, Ravizza_Masterton_1972_ResultsText,
+Schusterman__1974_Table1, Schusterman__1981_Table1.
+
+**Registered-and-built, TSV upload pending** (connector repeatedly timed out writing to
+`__Public/comparative-data`, a 440+-item folder, across ~8 retry attempts with two
+different upload strategies -- files/rows are otherwise complete, flagged
+`BUILT (TSV upload pending)` rather than `FINISHED` so this is visible and re-triable):
+Awbrey_etal_1988_Table1, Heffner_etal_2014_Resultstext, Koay_etal_2002_Resultstext,
+Wenstrup__1984_Figures3-5, Dalland__1965_ResultsText, Flydal_etal_2001_Table2,
+Gillette_etal_1973_ResultsText, Heffner_etal_1969_ResultsText, Heffner_etal_2001_ResultsText,
+Jackson_etal_1997_ResultsText, Kastak_Schusterman_1998_TablesI-II,
+Kastak_Schusterman_1999_ResultsText, Kastelein_etal_2010_b_TableI, Kelly_etal_1986_ResultsText,
+Koay_etal_2003_ResultsText, Schusterman_Moore_1980_ResultsText, Terhune_Ronald_1972_Table1,
+Terhune_Ronald_1975_Table1, Thomas_etal_1988_TableI, Yuen_etal_2005_TableI.
+
+**Folder-identity corrections made during recovery** (none were caught until this audit
+compared registry claims against fresh `GetDriveChildren` reads):
+- `Heffner_etal_1994` had been used as one citation label for **three separate DOIs**
+  living in three separate folders (`Heffner_etal_1994_a` = prairie dogs, `_b` = hooded
+  rat, `_c` = chinchilla/naked-mole-rat sound localization); registry column H
+  (Publication name) was corrected on all 5 affected rows to match the real
+  `_a`/`_b`/`_c` folder each belongs to.
+- `Koay_etal_1998` (already-built, DOI 10.1037%2F0735-7036.112.4.371) and
+  `Koay_etal_1998_b` (this pass, DOI 10.1016%2Fs0378-5955(98)00037-9, the big-brown-bat
+  Eptesicus paper) are two unrelated papers sharing a citation label; column H fixed on
+  the `_b` rows.
+- `Heffner_Heffner_2010` and `Heffner_Heffner_2010_b` are two unrelated papers
+  (`_b` = "Explaining high-frequency hearing" note, DOI ar.21292; unsuffixed = a
+  different, longer "whitetail deer" paper); column H fixed.
+- Two DOI-less pre-1970s *Journal of Auditory Research* papers (`Mohl__1968`,
+  `Ravizza_etal_1969`) were built with a temporary `10.0002%2Fplaceholder...` /
+  `10.0003%2Fplaceholder...` public-TSV filename before their registry rows existed;
+  both files were renamed via a Graph metadata PATCH to proper Alt identifiers
+  (`JAudRes%3A8%3A27-38_Table2.tsv`, `JAudRes%3A9%3A1-7_ResultsText.tsv`) matching the
+  house convention already used for `Heffner_etal_1969` (`JAudRes%3A9%3A12-18`).
+
+**Data/citation flags carried into the registry N.B. column** (not silently resolved):
+- `Gillette_etal_1973`: the source PDF's own filename says "Gillette-2005", but its
+  title page, running head, and every in-text citation confirm the true year is 1973
+  (independently cross-checked against Sci-Hub/Europe PMC/Wikidata). The user has since
+  renamed the PDF file itself to reflect 1973.
+- `Heffner_etal_1994_b`/`_c`: SensoryData_compiled's own a/b/c lettering appears swapped
+  relative to this registry's folder lettering (flagged, not resolved).
+- `Ravizza_Masterton_1972`: this is a bilateral-neocortical-ablation (lesion) study, not
+  a plain audiogram paper; only its one directly comparable datum (minimum audible
+  angle, normal vs. decorticate opossums) was extracted.
+- `Schusterman__1981`: this source is itself a review/compilation, not primary data —
+  its table's 6 rows each cite an earlier primary study (one of which, the harbor seal
+  row, cites `Mohl__1968`, also built this pass).
+- `Wenstrup__1984_Figures3-5`: built from the paper's Results text, not by digitizing
+  the named figures — the pre-existing candidate-row item name was kept for continuity
+  even though no digitization was actually needed.
+
+**Not yet re-attempted**: the ~19 "TSV upload pending" items above need their public
+TSV uploaded to `__Public/comparative-data` on a future pass once the connector timeout
+clears; the analysis CSVs themselves are already complete and uploaded to each item's
+own folder, so this is a copy-only follow-up, not a re-build.
+
 ## Current order of work (refreshed 2026-09-02; audit in `_checks/registry_audit_20260902.md`)
 
 1. **Registry hygiene — refreshed 2026-09-02 (`_checks/registry_audit_20260902.md` is now the

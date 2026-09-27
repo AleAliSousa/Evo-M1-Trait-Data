@@ -1,0 +1,11 @@
+Original_Term,Reference,Standardized_Term,cell_type,region,layer,statistic,unit,hemisphere,note
+species,Butti_etal_2009_Table5,Species,,,,,,,
+species_as_published,Butti_etal_2009_Table5,species_printed,,,,,,,
+roi,Butti_etal_2009_Table5,region_printed,,,,,,,
+ven_n_RH,Butti_etal_2009_Table5,ven_count,ven,,V,estimate,count,R,
+ven_n_LH,Butti_etal_2009_Table5,ven_count,ven,,V,estimate,count,L,
+ven_pct,Butti_etal_2009_Table5,ven_pct,ven,,V,value,percent,,
+ce,Butti_etal_2009_Table5,ven_count,ven,,V,ce,ratio,,coefficient of error of the stereological estimate
+hemisphere_available,Butti_etal_2009_Table5,DROP,,,,,,,
+underestimate,Butti_etal_2009_Table5,note,,,,,,,TRUE = authors state the count is an underestimate
+source,Butti_etal_2009_Table5,DROP,,,,,,,

@@ -1,0 +1,7 @@
+"obs_row","binomial","common_name","subject","metric","frequency_khz","threshold_db","data_role","notes","source"
+1,"Sciurus niger","Fox squirrel","mean (A & B)","low_freq_threshold",0.063,79,"primary","audible low-frequency point reported in Results text","this study"
+2,"Sciurus niger","Fox squirrel","mean (A & B)","best_sensitivity",8,1,"primary","best threshold; frequency of best hearing","this study"
+3,"Sciurus niger","Fox squirrel","Squirrel A","high_freq_threshold_A",50,69,"primary","highest frequency tested for Squirrel A","this study"
+4,"Sciurus niger","Fox squirrel","Squirrel B","high_freq_threshold_B",56,85,"primary","highest frequency tested for Squirrel B","this study"
+5,"Sciurus niger","Fox squirrel","mean (A & B)","range_60dB_low",0.113,60,"primary","60-dB SPL low-frequency cutoff (criterion threshold = 60 dB)","this study"
+6,"Sciurus niger","Fox squirrel","mean (A & B)","range_60dB_high",49,60,"primary","60-dB SPL high-frequency cutoff (criterion threshold = 60 dB)","this study"

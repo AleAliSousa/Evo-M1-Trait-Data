@@ -1,0 +1,12 @@
+variable,definition,units,notes
+determination_row,Row number after removing header/blank/footnote lines,integer,
+frequency_khz,Test tone frequency,kHz,"Half-octave steps from 0.76 to 100 kHz; some frequencies tested twice on different dates"
+threshold_db_re_1ubar,Behavioral hearing threshold as printed in Table 1,dB re 1 microbar,"Add 100 to convert to dB re 1 microPa. Lower (more negative) value = more sensitive. Lowest printed value is -37 at 22.9 kHz; see README N.B. re: text's differing claim of -32.9 dB at 15.0 kHz"
+sd_db,Standard deviation of the threshold estimate,dB,
+ambient_noise_db_re_1ubar_spectrum_level,Ambient noise level at the spectrum level at the time of the determination,dB re 1 microbar,Blank for rows above 8 kHz where no ambient level is printed
+ambient_noise_is_upper_bound,Whether the printed ambient noise value carries a "less-than" sign in the source table,boolean,TRUE only for the 5.6 and 8.0 kHz rows (printed as "<-77" and "<-78")
+catch_trials_pct_correct,Percentage of catch trials (no-signal presentations) correctly rejected,percent,
+test_date,Date of the testing session,date (ISO 8601),Converted from the printed MM-DD-YY format
+subject,Description of the animal tested,text,Single 4-year-old immature female harp seal (used previously for the companion air-audiogram study)
+data_role,Whether the row is this paper's own new measurement or cited from a prior study,text,All rows are primary (this study)
+source,Citation for the value as given in Table 1,text,

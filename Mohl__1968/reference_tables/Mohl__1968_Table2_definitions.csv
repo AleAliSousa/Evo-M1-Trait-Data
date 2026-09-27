@@ -1,0 +1,13 @@
+variable,definition,units,notes
+row_id,Row number after removing header/blank lines,integer,
+medium,Test medium (Water or Air) as printed as the sub-table heading,text,
+frequency_kHz,Test tone frequency (printed as kc/s; numerically identical to kHz),kHz,
+threshold_dB,Mean sound-detection threshold as printed in Table II,dB (see reference_level),Water and Air use different reference levels -- not directly comparable without conversion
+threshold_flag,Flags a threshold printed in parentheses in the source table,text,"parenthetical_in_source = author considered this value less certain (see README)"
+reference_level,The dB reference level printed in the column header for that medium,text,"Water = re 1 uBar; Air = re 2x10^-4 uBar (standard 0.0002 dyne/cm^2 SPL reference)"
+sd_dB,Standard deviation of the threshold estimate as printed,dB,computed by Guilford's (1954) normal graphic method per the source paper
+sd_flag,Flags an SD value printed in parentheses in the source table,text,parenthetical_in_source
+n_catch_trials,Number of catch (no-sound) trials at that frequency as printed,integer,
+pct_correct_catch_trials,Percent of catch trials correctly rejected as printed,percent,
+data_role,Whether the row is this paper's own new measurement or cited from a prior study,text,all rows are primary (this paper's own data)
+source,Citation for the value as given in Table II,text,

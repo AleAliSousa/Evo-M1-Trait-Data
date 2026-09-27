@@ -1,0 +1,28 @@
+Original_Term,Reference,Standardized_Term,cell_type,region,layer,statistic,unit,hemisphere,note
+interpreted_taxon,Armstrong__1979_Tables1-9,Species,,,,,,,
+species_as_published,Armstrong__1979_Tables1-9,species_printed,,,,,,,
+specimen_code,Armstrong__1979_Tables1-9,specimen_id,,,,,,,
+structure,Armstrong__1979_Tables1-9,region_printed,,,,,,,
+measure,Armstrong__1979_Tables1-9,FILTER,,,,,,,compile keeps rows with measure == perikaryal_volume only; volumes/densities/counts belong to __merging_volumes / __merging_cellcounts
+mean,Armstrong__1979_Tables1-9,soma_volume,thalamic_relay,,not applicable,mean,um3,,
+sd,Armstrong__1979_Tables1-9,soma_volume,thalamic_relay,,not applicable,sd,um3,,
+n,Armstrong__1979_Tables1-9,n,thalamic_relay,,,n,neurons,,
+sex,Armstrong__1979_Tables1-9,note,,,,,,,
+age_years,Armstrong__1979_Tables1-9,note,,,,,,,
+note,Armstrong__1979_Tables1-9,note,,,,,,,
+table,Armstrong__1979_Tables1-9,DROP,,,,,,,"not a perikaryal-volume field, or out of scope here (volumes -> __merging_volumes; densities/counts -> __merging_cellcounts)"
+source_group,Armstrong__1979_Tables1-9,DROP,,,,,,,"not a perikaryal-volume field, or out of scope here (volumes -> __merging_volumes; densities/counts -> __merging_cellcounts)"
+role,Armstrong__1979_Tables1-9,DROP,,,,,,,"not a perikaryal-volume field, or out of scope here (volumes -> __merging_volumes; densities/counts -> __merging_cellcounts)"
+individual_id,Armstrong__1979_Tables1-9,DROP,,,,,,,"not a perikaryal-volume field, or out of scope here (volumes -> __merging_volumes; densities/counts -> __merging_cellcounts)"
+body_mass_kg,Armstrong__1979_Tables1-9,DROP,,,,,,,"not a perikaryal-volume field, or out of scope here (volumes -> __merging_volumes; densities/counts -> __merging_cellcounts)"
+brain_mass_g,Armstrong__1979_Tables1-9,DROP,,,,,,,"not a perikaryal-volume field, or out of scope here (volumes -> __merging_volumes; densities/counts -> __merging_cellcounts)"
+collection,Armstrong__1979_Tables1-9,DROP,,,,,,,"not a perikaryal-volume field, or out of scope here (volumes -> __merging_volumes; densities/counts -> __merging_cellcounts)"
+section_plane,Armstrong__1979_Tables1-9,DROP,,,,,,,"not a perikaryal-volume field, or out of scope here (volumes -> __merging_volumes; densities/counts -> __merging_cellcounts)"
+unit,Armstrong__1979_Tables1-9,DROP,,,,,,,"not a perikaryal-volume field, or out of scope here (volumes -> __merging_volumes; densities/counts -> __merging_cellcounts)"
+value,Armstrong__1979_Tables1-9,DROP,,,,,,,"not a perikaryal-volume field, or out of scope here (volumes -> __merging_volumes; densities/counts -> __merging_cellcounts)"
+percent_value,Armstrong__1979_Tables1-9,DROP,,,,,,,"not a perikaryal-volume field, or out of scope here (volumes -> __merging_volumes; densities/counts -> __merging_cellcounts)"
+se,Armstrong__1979_Tables1-9,DROP,,,,,,,"not a perikaryal-volume field, or out of scope here (volumes -> __merging_volumes; densities/counts -> __merging_cellcounts)"
+minimum,Armstrong__1979_Tables1-9,DROP,,,,,,,"not a perikaryal-volume field, or out of scope here (volumes -> __merging_volumes; densities/counts -> __merging_cellcounts)"
+maximum,Armstrong__1979_Tables1-9,DROP,,,,,,,"not a perikaryal-volume field, or out of scope here (volumes -> __merging_volumes; densities/counts -> __merging_cellcounts)"
+median,Armstrong__1979_Tables1-9,DROP,,,,,,,"not a perikaryal-volume field, or out of scope here (volumes -> __merging_volumes; densities/counts -> __merging_cellcounts)"
+source,Armstrong__1979_Tables1-9,DROP,,,,,,,"not a perikaryal-volume field, or out of scope here (volumes -> __merging_volumes; densities/counts -> __merging_cellcounts)"

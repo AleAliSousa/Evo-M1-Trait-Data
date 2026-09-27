@@ -1,0 +1,8 @@
+variable,definition,units,notes
+species_row,Row number after removing header/blank lines,integer,Table order as printed (surface dwellers then subterranean)
+group,Table sub-heading grouping (surface dwellers vs subterranean),text,As printed in Table 1
+binomial,Species binomial where independently confirmable from this paper's text/reference list,text,Blank for kangaroo rat (species not specified in source)
+common_name,Common name as printed in Table 1,text,
+localization_threshold_deg,Minimum-audible-angle left/right sound-localization threshold,degrees,Blank/NA for pocket gopher (no threshold obtainable per footnote b; printed as a dash)
+data_role,Whether the row is this paper's own new measurement or cited from a prior study,text,Only chinchilla ("Present report") is primary
+source,Citation for the value as printed in Table 1's Source column,text,Wood rat and grasshopper mouse share an identical printed citation -- see README flag 1

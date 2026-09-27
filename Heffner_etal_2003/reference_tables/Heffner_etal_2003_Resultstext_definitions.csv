@@ -1,0 +1,13 @@
+variable,definition,units,notes
+species_row,Row number (single row for this item),integer,
+binomial,Species binomial as printed in the paper,text,
+common_name,Common name as printed in the paper,text,
+n_individuals,Number of animals tested,integer,Bats A/B/C
+best_sensitivity_dB,Lowest mean absolute threshold reported in Results text,dB SPL,"""the lowest mean threshold of 8.5 dB at 16 kHz"""
+best_frequency_kHz,Frequency at which the best sensitivity was measured,kHz,
+hearing_range_low_60dBSPL_kHz,Low-frequency edge of the 60-dB SPL hearing range as stated in text,kHz,
+hearing_range_high_60dBSPL_kHz,High-frequency edge of the 60-dB SPL hearing range as stated in text,kHz,
+hearing_range_octaves,Hearing range span in octaves as stated in text,octaves,Independently verified: log2(131/2.8) = 5.55
+interaural_distance_functional_us,Functional interaural distance (time for sound to travel around the head between the ears),microseconds,"Read from the Fig. 4 label (96 us); flagged discrepancy with previously-assumed 89 us, see README"
+data_role,Whether the row is this paper's own new measurement or cited from a prior study,text,
+source,Citation and location for the value as given in the paper,text,

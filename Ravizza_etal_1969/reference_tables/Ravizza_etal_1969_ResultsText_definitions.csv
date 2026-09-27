@@ -1,0 +1,7 @@
+variable,definition,units,notes
+row_id,Row number after removing header/blank lines,integer,
+metric,Short label for the quantity being reported,text,
+value,The numeric (or ambiguous printed) value for that metric,see units column,"kept as text because one row prints ""70 or 80"" rather than a single number"
+units,Units for value as stated in the source text,text,
+individual,Which subject(s) the value applies to,text,"pooled (2 opossums); per-individual (unspecified which); or between-subject difference"
+quoted_source_text,Verbatim quotation from the Results/Discussion section supporting this value,text,includes a parenthetical pointer to the section (Discussion)

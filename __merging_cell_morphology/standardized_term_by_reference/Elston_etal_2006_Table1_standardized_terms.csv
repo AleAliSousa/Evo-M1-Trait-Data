@@ -1,0 +1,9 @@
+Original_Term,Reference,Standardized_Term,cell_type,region,layer,statistic,unit,hemisphere,note
+Cortex,Elston_etal_2006_Table1,region_printed,,,,,,,
+Species,Elston_etal_2006_Table1,species_printed,,,,,,,
+CSA,Elston_etal_2006_Table1,DROP,,,,,mm2,,"cortical surface area -> __merging_cortical_areas (regional surface), not a cell trait"
+CSA_Ref,Elston_etal_2006_Table1,DROP,,,,,,,
+BDFA,Elston_etal_2006_Table1,basal_dendritic_field_area,pyramidal_L3,,III,mean,um2,,
+BDFA_Ref,Elston_etal_2006_Table1,ref,,,,,,,footnote letter: w = present results (primary); t = Elston et al. 2001 (already merged from its own table); a-s = earlier Elston papers (secondary)
+TNS,Elston_etal_2006_Table1,spine_count,pyramidal_L3,,III,estimate,count,,"estimated total spines, basal arbor of the 'average' neuron"
+TNS_Ref,Elston_etal_2006_Table1,ref,,,,,,,

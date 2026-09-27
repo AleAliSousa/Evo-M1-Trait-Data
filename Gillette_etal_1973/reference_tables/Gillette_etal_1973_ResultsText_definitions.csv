@@ -1,0 +1,10 @@
+variable,definition,units,notes
+species_sci,Scientific binomial,text,Lemur catta
+common_name,Common name,text,Ring-tailed lemur
+sensitivity_criterion_db_below_1dyne_cm2,"The dB criterion (below the 1 dyne/cm2 reference) used to define the reported hearing range, as stated in the Abstract",dB below 1 dyne/cm2,Older acoustics reference unit; see README
+range_low_khz,Lower bound of the frequency range meeting the 60-dB sensitivity criterion,kHz,From Abstract: "from 1 kHz to 32 kHz"
+range_high_khz,Upper bound of the frequency range meeting the 60-dB sensitivity criterion,kHz,From Abstract: "from 1 kHz to 32 kHz"
+tested_range_low_khz,Lower bound of the full frequency range over which thresholds were tested (any sensitivity),kHz,100 Hz to 75 kHz combined across studies 2 and 3
+tested_range_high_khz,Upper bound of the full frequency range over which thresholds were tested (any sensitivity),kHz,100 Hz to 75 kHz combined across studies 2 and 3
+data_role,Whether this is the paper's own measurement,text,primary
+source,Citation for the value as given,text,Gillette et al. (1973) Abstract/Discussion

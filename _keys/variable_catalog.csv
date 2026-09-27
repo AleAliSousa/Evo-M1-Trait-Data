@@ -21,6 +21,7 @@ Turner_etal_2016,Turner_etal_2016_Table1,age_years,NA,(structure-agnostic; see d
 deSousa_etal_2009,deSousa_etal_2009_Table1,age_yrs,NA,(structure-agnostic; see data columns),NA,Age.years,Age.years,NA,info,Apes & humans + M. fascicularis,age at death in years as printed (NA = not recorded)
 Hutsler_etal_2005,Hutsler_etal_2005_Figure3,value_basis,NA,(structure-agnostic; see data columns),NA,Basis,Basis,NA,info,14 mammal species,provenance class of the value
 Hutsler_etal_2005,Hutsler_etal_2005_Figure6,value_basis,NA,(structure-agnostic; see data columns),NA,Basis,Basis,NA,info,13 mammal species,provenance class of the value
+Ridgway__1990,Ridgway__1990,NA,NA,(structure-agnostic; see data columns),NA,Category,Category,NA,NA,NA,One of three printed geographic groupings: E. North Atlantic and Mediterranean; E. North Pacific; W. North Atlantic coastal (footnote clarifies this includes the Gulf of Mexico)
 BarbeitoAndrés_etal_2019,BarbeitoAndrés_etal_2019,cell_type,NA,(structure-agnostic; see data columns),NA,CellType,CellType,NA,primary,NA,Total / Neurons / Non-neurons (cell tables only; NA for volumes)
 Navarrete_etal_2016,Navarrete_etal_2016_Data,parvorder_printed,NA,(structure-agnostic; see data columns),NA,Class,Class,NA,info,Primates,parvorder label in the deposited file
 Navarrete_etal_2016,Navarrete_etal_2016_Data,family_printed,NA,(structure-agnostic; see data columns),NA,Class,Class,NA,info,Primates,family label in the deposited file
@@ -31,6 +32,7 @@ Hutsler_etal_2005,Hutsler_etal_2005_Figure3,common_name_printed,NA,(structure-ag
 Hutsler_etal_2005,Hutsler_etal_2005_Table1,common_name_printed,NA,(structure-agnostic; see data columns),NA,Common name,Common name,NA,info,14 mammal species,common name exactly as printed
 Ashwell__2020,Ashwell__2020,common_name,NA,(structure-agnostic; see data columns),NA,CommonName,CommonName,NA,primary,Mammalia,common English name for the taxon as printed in the supplementary table
 Kaskan_etal_2005,Kaskan_etal_2005,NA,NA,(structure-agnostic; see data columns),NA,Common_name,Common_name,NA,NA,NA,Common name as printed (superscript reference letter stripped into its own column)
+Tschudin__1998,Tschudin__1998,NA,NA,(structure-agnostic; see data columns),NA,Common_name,Common_name,NA,NA,NA,Common name resolved the same way
 Hutsler_etal_2005,Hutsler_etal_2005_ReportedValues,compatibility,NA,(structure-agnostic; see data columns),NA,Compatibility,Compatibility,NA,note,14 mammal species,intended use and granularity warning
 Pirlot_Kamiya_1982,Pirlot_Kamiya_1982,NA,NA,(structure-agnostic; see data columns),NA,Component_code,Component_code,NA,NA,NA,Abbreviation as printed: BO bulbus olfactorius; N neocortex; RH rhinencephalon; S septum; D diencephalon; St striatum; H hippocampus; M mesencephalon; C cerebellum; O medulla oblongata; Sz schizocortex
 Pirlot_Kamiya_1985,Pirlot_Kamiya_1985,NA,NA,(structure-agnostic; see data columns),NA,Component_code,Component_code,NA,NA,NA,Abbreviation as printed: N neocortex; RH rhinencephalon; S septum; D diencephalon; St striatum; H hippocampus; M mesencephalon; C cerebellum; O medulla oblongata
@@ -72,6 +74,8 @@ Kaskan_etal_2005,Kaskan_etal_2005,NA,NA,(structure-agnostic; see data columns),N
 Kaskan_etal_2005,Kaskan_etal_2005,NA,NA,(structure-agnostic; see data columns),NA,LogY,LogY,NA,NA,NA,Digitized (pixel-estimated) y-axis value: log10 V1 area (panel a) or log10 total visual cortex area (panel b)
 BarbeitoAndrés_etal_2019,BarbeitoAndrés_etal_2019,measure,NA,(structure-agnostic; see data columns),NA,MeasureType,MeasureType,NA,primary,NA,absolute_volume | cell_number | cell_density
 __merging_cortical_layers,__merging_cortical_layers,merge_default,NA,(structure-agnostic; see data columns),NA,Merge status,Merge status,NA,primary,NA,TRUE for the one source summary selected by default
+Ridgway__1990,Ridgway__1990,NA,NA,(structure-agnostic; see data columns),NA,N,N,NA,NA,NA,"Number of individual animals in the geographic category, tallied from the individual rows (not printed explicitly in the source; only used on the group_mean/group_sd rows)"
+Tschudin__1998,Tschudin__1998,NA,NA,(structure-agnostic; see data columns),NA,NeocortexRatio,NeocortexRatio,NA,NA,NA,"Neocortex ratio = neocortex_volume_cm3 / posterior_fossa_volume_cm3, as printed"
 __merging_cortical_layers,__merging_cortical_layers,observation_id,NA,(structure-agnostic; see data columns),NA,Observation identifier,Observation identifier,NA,primary,NA,stable within-merge observation key
 Jacobs_etal_2015,Jacobs_etal_2015_Table1,observation_level,NA,(structure-agnostic; see data columns),NA,Observation level,Observation level,NA,info,Giraffa camelopardalis,individual versus single-specimen or species summary
 Jacobs_etal_2016,Jacobs_etal_2016_Table1,observation_level,NA,(structure-agnostic; see data columns),NA,Observation level,Observation level,NA,info,Giraffa camelopardalis and Loxodonta africana,individual versus single-specimen or species summary
@@ -96,6 +100,7 @@ Hutsler_etal_2005,Hutsler_etal_2005_Figure6,region,NA,(structure-agnostic; see d
 Hutsler_etal_2005,Hutsler_etal_2005_ReportedValues,region,NA,(structure-agnostic; see data columns),NA,Region,Region,NA,primary,14 mammal species,cortical region or stated aggregation
 Kruska__2014,Kruska__2014,NA,NA,(structure-agnostic; see data columns),NA,RestTissue.mm3,RestTissue.mm3,NA,NA,NA,"Non-brain rest tissue included in the raw serial-section reconstruction, subtracted to obtain pure brain tissue"
 Kaskan_etal_2005,Kaskan_etal_2005,NA,NA,(structure-agnostic; see data columns),NA,RodDensity.per_mm2,RodDensity.per_mm2,NA,NA,NA,Derived: total_number_of_rods / retinal_area_mm2
+Ridgway__1990,Ridgway__1990,NA,NA,(structure-agnostic; see data columns),NA,Row_type,Row_type,NA,NA,NA,individual = one animal's own measurements; group_mean = the printed Mean row for that category; group_sd = the printed S.D. row for that category
 Jacobs_etal_2015,Jacobs_etal_2015_Table1,sampling_detail,NA,(structure-agnostic; see data columns),NA,Sampling,Sampling,NA,info,Giraffa camelopardalis,sampling and aggregation details
 Jacobs_etal_2016,Jacobs_etal_2016_Table1,sampling_detail,NA,(structure-agnostic; see data columns),NA,Sampling,Sampling,NA,info,Giraffa camelopardalis and Loxodonta africana,sampling and aggregation details
 Johnson_etal_2016,Johnson_etal_2016_Table1,sampling_detail,NA,(structure-agnostic; see data columns),NA,Sampling,Sampling,NA,info,Panthera tigris altaica and Neofelis nebulosa,sampling and aggregation details
@@ -120,6 +125,8 @@ __merging_cortical_layers,__merging_cortical_layers,source_table,NA,(structure-a
 Kaskan_etal_2005,Kaskan_etal_2005,NA,NA,(structure-agnostic; see data columns),NA,Species_label,Species_label,NA,NA,NA,"Species name where identifiable (4 species are explicitly arrow-labelled in panel b: Aotus trivirgatus, Callithrix jacchus, Galago senegalensis, Saimiri sciureus); all other points are 'unidentified_NN' placeholders pending species assignment against Kaskan_etal_2005_TableS1's 30-species roster"
 Pirlot_Kamiya_1982,Pirlot_Kamiya_1982,NA,NA,(structure-agnostic; see data columns),NA,Species_sci,Species_sci,NA,NA,NA,"Best-available scientific name for the individual specimen; Pteropodids is an average across 7 species, not a single binomial"
 Pirlot_Kamiya_1985,Pirlot_Kamiya_1985,NA,NA,(structure-agnostic; see data columns),NA,Species_sci,Species_sci,NA,NA,NA,Scientific binomial for the specimen studied
+Ridgway__1990,Ridgway__1990,NA,NA,(structure-agnostic; see data columns),NA,Species_sci,Species_sci,NA,NA,NA,Scientific binomial (Tursiops truncatus)
+Tschudin__1998,Tschudin__1998,NA,NA,(structure-agnostic; see data columns),NA,Species_sci,Species_sci,NA,NA,NA,Scientific binomial resolved from the subject-code prefix via the dissertation's own appendix table of abbreviations (p. 84)
 Kruska_Rohrs_1974,Kruska_Rohrs_1974,NA,NA,(structure-agnostic; see data columns),NA,Specimen_id,Specimen_id,NA,NA,NA,Specimen code as printed (A23/A21/A26/A22 = feral; Sd5/Sd9/Sd31/Sd19/Sd17/Sd12 = domestic)
 Kruska__2014,Kruska__2014,NA,NA,(structure-agnostic; see data columns),NA,Specimen_id,Specimen_id,NA,NA,NA,Preparation number as printed
 Pirlot_Kamiya_1982,Pirlot_Kamiya_1982,NA,NA,(structure-agnostic; see data columns),NA,Specimen_type,Specimen_type,NA,NA,NA,"individual = single perfused specimen (n=1 per genus); species-average = Pteropodids row, averaged across 7 species from Stephan et al. (1974), not a specimen"
@@ -135,6 +142,7 @@ Kruska_Rohrs_1974,Kruska_Rohrs_1974,NA,NA,(structure-agnostic; see data columns)
 Kruska__2014,Kruska__2014,NA,NA,(structure-agnostic; see data columns),NA,Structure_label,Structure_label,NA,NA,NA,"Structure name as printed (including the paper's own spelling """"Nucleus amygaloideus"""")"
 Kruska_Rohrs_1974,Kruska_Rohrs_1974,NA,NA,(structure-agnostic; see data columns),NA,Structure_var,Structure_var,NA,NA,NA,Machine-readable snake_case structure key
 Kruska__2014,Kruska__2014,NA,NA,(structure-agnostic; see data columns),NA,Structure_var,Structure_var,NA,NA,NA,Machine-readable snake_case structure key
+Tschudin__1998,Tschudin__1998,NA,NA,(structure-agnostic; see data columns),NA,Subject_id,Subject_id,NA,NA,NA,"Subject code exactly as printed (species prefix + specimen number, e.g. 'BOT 1')"
 Stephan_etal_1987,Stephan_etal_1987,group,NA,(structure-agnostic; see data columns),NA,Taxon,Taxon,NA,primary,Insectivora–Primates (incl. Homo),printed taxonomic section (Macroscelidea/Insectivora/Scandentia/Prosimii/Simiae)
 Jacobs_etal_2015,Jacobs_etal_2015_Table1,taxon_level,NA,(structure-agnostic; see data columns),NA,Taxon level,Taxon level,NA,info,Giraffa camelopardalis,taxonomic aggregation level
 Jacobs_etal_2016,Jacobs_etal_2016_Table1,taxon_level,NA,(structure-agnostic; see data columns),NA,Taxon level,Taxon level,NA,info,Giraffa camelopardalis and Loxodonta africana,taxonomic aggregation level
@@ -258,6 +266,7 @@ Dunbar__1992,Dunbar__1992_Table1,day_journey_m,NA,(structure-agnostic; see data 
 Heuer_etal_2019,Heuer_etal_2019_S1,voxel_size_x_mm,NA,(structure-agnostic; see data columns),NA,Length.mm,length,point,info,Primates,voxel size along x
 Heuer_etal_2019,Heuer_etal_2019_S1,voxel_size_y_mm,NA,(structure-agnostic; see data columns),NA,Length.mm,length,point,info,Primates,voxel size along y
 Heuer_etal_2019,Heuer_etal_2019_S1,voxel_size_z_mm,NA,(structure-agnostic; see data columns),NA,Length.mm,length,point,info,Primates,voxel size along z
+Ridgway__1990,Ridgway__1990,NA,NA,(structure-agnostic; see data columns),NA,Body_Length.cm,length,NA,NA,NA,Body length (BdL as printed)
 AvelinodeSouza_etal_2025,AvelinodeSouza_etal_2025_TABLE1,"Mass, g",NA,(structure-agnostic; see data columns),NA,Mass.g,mass,NA,primary,Cetaceans & other placental mammals,mass (g)
 Burish_etal_2010,Burish_etal_2010,M,NA,(structure-agnostic; see data columns),NA,Mass.g,mass,NA,review,Primates (+ other mammals),average mass of the structure (in grams)
 Burish_etal_2010,Burish_etal_2010,%MBD,NA,(structure-agnostic; see data columns),NA,p.C.Body.mass,mass,NA,review,Primates (+ other mammals),average structure mass fraction (expressed as percentage of the whole body mass)
@@ -281,6 +290,8 @@ Kverkova_etal_2018,Kverkova_etal_2018_FigS1,mass,NA,(structure-agnostic; see dat
 Lewitus_etal_2014,Lewitus_etal_2014_TableS1,Neonate_brain_weight_g,NA,(structure-agnostic; see data columns),NA,Mass.g,mass,NA,secondary,Mammals,Neonate brain weight g
 Pirlot_Kamiya_1982,Pirlot_Kamiya_1982,NA,NA,(structure-agnostic; see data columns),NA,Body_Mass.g,mass,NA,NA,NA,Body weight of the individual specimen in grams
 Pirlot_Kamiya_1982,Pirlot_Kamiya_1982,NA,NA,(structure-agnostic; see data columns),NA,Brain_Mass.g,mass,NA,NA,NA,Brain weight of the individual specimen in grams
+Ridgway__1990,Ridgway__1990,NA,NA,(structure-agnostic; see data columns),NA,Body_Mass.kg,mass,NA,NA,NA,Body weight (BdW as printed)
+Ridgway__1990,Ridgway__1990,NA,NA,(structure-agnostic; see data columns),NA,Brain_Mass.kg,mass,NA,NA,NA,Brain weight (BrnW as printed)
 Seymour_etal_2015,Seymour_etal_2015_TableS1,Body_mass_g,NA,(structure-agnostic; see data columns),NA,Mass.g,mass,NA,primary,Primates & Diprotodontia,body mass in grams
 Seymour_etal_2017,Seymour_etal_2017_TableS1,Body_mass_kg,NA,(structure-agnostic; see data columns),NA,Mass.kg,mass,NA,info,Fossil Hominins,body mass in kilograms as printed (footnote letter removed)
 Seymour_etal_2017,Seymour_etal_2017_TableS1,Body_mass_g,NA,(structure-agnostic; see data columns),NA,Mass.g,mass,NA,primary,Fossil Hominins,body mass in grams (project unit)
@@ -394,6 +405,11 @@ Pirlot_Kamiya_1982,Pirlot_Kamiya_1982,NA,NA,(structure-agnostic; see data column
 Pirlot_Kamiya_1982,Pirlot_Kamiya_1982,NA,NA,(structure-agnostic; see data columns),NA,TotalBrainVolume.mm3,volume,NA,NA,NA,"Total brain volume for the specimen/group (or range for Pteropodids), mm3"
 Pirlot_Kamiya_1985,Pirlot_Kamiya_1985,NA,NA,(structure-agnostic; see data columns),NA,Volume.mm3,volume,NA,NA,NA,Absolute volume of the component in mm3
 Pirlot_Kamiya_1985,Pirlot_Kamiya_1985,NA,NA,(structure-agnostic; see data columns),NA,TotalBrainVolume.mm3,volume,NA,NA,NA,Total brain volume for the specimen
+Tschudin__1998,Tschudin__1998,NA,NA,(structure-agnostic; see data columns),NA,TotalBrainVolume.cm3,volume,NA,NA,NA,Total brain volume from MRI
+Tschudin__1998,Tschudin__1998,NA,NA,(structure-agnostic; see data columns),NA,NeocortexVolume.cm3,volume,NA,NA,NA,Neocortex volume from MRI
+Tschudin__1998,Tschudin__1998,NA,NA,(structure-agnostic; see data columns),NA,PosteriorFossaVolume.cm3,volume,NA,NA,NA,Posterior fossa volume (the non-neocortical remainder: brainstem + cerebellum)
+Tschudin__1998,Tschudin__1998,NA,NA,(structure-agnostic; see data columns),NA,BrainstemVolume.cm3,volume,NA,NA,NA,Brainstem volume from MRI
+Tschudin__1998,Tschudin__1998,NA,NA,(structure-agnostic; see data columns),NA,CerebellumVolume.cm3,volume,NA,NA,NA,Cerebellum volume from MRI
 Dell_etal_2016,Dell_etal_2016,Density_Score,+ =1,+ =1,NA,++ =2,++ =2,+++ =3),Calcium-binding protein expression,ordinal.0_3,Numeric encoding of the printed density symbol (- =0
 Changizi_Shimojo_2005,Changizi_Shimojo_2005_Table2,A1_pct_neocortex,A1,A1,NA,pct.neocortex,percentage (relative),NA,primary,"Mammalia, 16 spp. (monotremes, marsupials, eulipotyphlans, bats, rodents, tree shrew, primates)",relative size of A1 (primary auditory area) as a percentage of neocortex
 Barger_etal_2007,Barger_etal_2007,accessory_basal_L,AccessoryBasalNucleus,AccessoryBasalNucleus,NA,Volume.cm3,volume,NA,primary,Apes & humans,accessory basal nucleus volume left
@@ -572,8 +588,8 @@ Barger_etal_2007,Barger_etal_2007,basolateral_R,BasolateralDivision,BasolateralD
 Barger_etal_2007,Barger_etal_2007,basolateral_total,BasolateralDivision,BasolateralDivision,NA,Volume.cm3,volume,NA,primary,Apes & humans,basolateral division volume both hemispheres
 Heldstab_etal_2016,Heldstab_etal_2016_TableS1,MC,Behaviour,Behaviour,NA,ManipulationComplexity,ManipulationComplexity,mean,primary,Primates,manipulation complexity (mean score across bouts)
 ManyPrimates__2022,ManyPrimates__2022_speciespredictors,vocal_repertoire_types,Behaviour,Behaviour,NA,count.vocalizations,count (number),NA,primary,Primates,vocal repertoire size = number of vocalization types
-Schniter_Penaherrera-Aguirre_2026,Schniter_Penaherrera-Aguirre_2026_data,vocal_repertoire_size_MS2005,Behaviour,Behaviour,NA,count.vocalizations,count (number),NA,primary,Primates,vocal repertoire size (number of distinct vocalization types) from McComb & Semple 2005
-Schniter_Penaherrera-Aguirre_2026,Schniter_Penaherrera-Aguirre_2026_data,vocal_repertoire_size_updated,Behaviour,Behaviour,NA,count.vocalizations,count (number),NA,primary,Primates,"vocal repertoire size (number of distinct vocalization types), contemporary update"
+Schniter_PenaherreraAguirre_2026,Schniter_Penaherrera-Aguirre_2026_data,vocal_repertoire_size_MS2005,Behaviour,Behaviour,NA,count.vocalizations,count (number),NA,primary,Primates,vocal repertoire size (number of distinct vocalization types) from McComb & Semple 2005
+Schniter_PenaherreraAguirre_2026,Schniter_Penaherrera-Aguirre_2026_data,vocal_repertoire_size_updated,Behaviour,Behaviour,NA,count.vocalizations,count (number),NA,primary,Primates,"vocal repertoire size (number of distinct vocalization types), contemporary update"
 Caspar_etal_2022,Caspar_etal_2022_Table1,MeanHI,Behaviour,Behaviour,NA,HandednessIndex,size index (allometric),mean,primary,Primates,"mean handedness index (signed; positive = right-biased, negative = left-biased)"
 Caspar_etal_2022,Caspar_etal_2022_Table1,MeanAbsHI,Behaviour,Behaviour,NA,HandednessIndex,size index (allometric),mean,primary,Primates,"mean absolute handedness index (strength of lateralization, direction ignored)"
 Baron_etal_1996,Baron_etal_1996_Table39,bicortex_mm2,Bicortex,Bicortex,NA,Area.mm2,surface area,mean,secondary,Chiroptera,Bicortex surface area

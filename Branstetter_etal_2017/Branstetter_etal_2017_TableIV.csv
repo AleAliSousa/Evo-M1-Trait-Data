@@ -1,0 +1,5 @@
+"species_row","binomial","common_name","mass_kg","best_frequency_khz","best_sensitivity_db","best_range_low_khz","best_range_high_khz","audible_freq_low_60dBSPL_khz","audible_freq_high_60dBSPL_khz","n_subjects","data_role","source"
+1,"Orcinus orca","Killer whale",3222,34,49,5,81,0.6,114,8,"primary","this study"
+2,"Delphinapterus leucas","Beluga whale",1500,54,52,5,103,0.75,120,8,"secondary","this study (composite audiogram; see Table III for reference sources)"
+3,"Tursiops truncatus","Bottlenose dolphin",259,86,57,3,135,0.7,144,4,"secondary","this study (composite audiogram; see Table III for reference sources)"
+4,"Phocoena phocoena","Harbor porpoise",31,118,47,3,150,0.45,160,3,"secondary","this study (composite audiogram; see Table III for reference sources)"

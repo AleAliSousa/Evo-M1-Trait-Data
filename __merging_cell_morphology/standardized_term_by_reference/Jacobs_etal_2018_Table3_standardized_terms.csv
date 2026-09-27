@@ -1,0 +1,25 @@
+Original_Term,Reference,Standardized_Term,cell_type,region,layer,statistic,unit,hemisphere,note
+species_sci,Jacobs_etal_2018_Table3,Species,,,,,,,
+Species,Jacobs_etal_2018_Table3,species_printed,,,,,,,
+Species_binomial,Jacobs_etal_2018_Table3,DROP,,,,,,,duplicate of species_sci
+clade_printed,Jacobs_etal_2018_Table3,DROP,,,,,,,
+neuron_class,Jacobs_etal_2018_Table3,cell_type_printed,,M1,V,,,,
+method,Jacobs_etal_2018_Table3,method,,,,,,,
+body_mass_g,Jacobs_etal_2018_Table3,DROP,,,,,,,-> __merging_brain_mass / body scope
+brain_mass_mg,Jacobs_etal_2018_Table3,DROP,,,,,,,-> __merging_brain_mass scope
+n_length,Jacobs_etal_2018_Table3,soma_length,,M1,V,n,neurons,,
+n_area,Jacobs_etal_2018_Table3,soma_area,,M1,V,n,neurons,,
+n_volume,Jacobs_etal_2018_Table3,soma_volume,,M1,V,n,neurons,,
+soma_length_M1,Jacobs_etal_2018_Table3,soma_length,,M1,V,mean,um,,
+soma_length_M1_sd,Jacobs_etal_2018_Table3,soma_length,,M1,V,sd,um,,
+soma_length_M1_min,Jacobs_etal_2018_Table3,soma_length,,M1,V,min,um,,
+soma_length_M1_max,Jacobs_etal_2018_Table3,soma_length,,M1,V,max,um,,
+soma_area_M1,Jacobs_etal_2018_Table3,soma_area,,M1,V,mean,um2,,
+soma_area_M1_sd,Jacobs_etal_2018_Table3,soma_area,,M1,V,sd,um2,,
+soma_area_M1_min,Jacobs_etal_2018_Table3,soma_area,,M1,V,min,um2,,
+soma_area_M1_max,Jacobs_etal_2018_Table3,soma_area,,M1,V,max,um2,,
+soma_volume_M1,Jacobs_etal_2018_Table3,soma_volume,,M1,V,mean,um3,,
+soma_volume_M1_sd,Jacobs_etal_2018_Table3,soma_volume,,M1,V,sd,um3,,
+soma_volume_M1_min,Jacobs_etal_2018_Table3,soma_volume,,M1,V,min,um3,,
+soma_volume_M1_max,Jacobs_etal_2018_Table3,soma_volume,,M1,V,max,um3,,
+parse_flags,Jacobs_etal_2018_Table3,note,,,,,,,

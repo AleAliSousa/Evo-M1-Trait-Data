@@ -1,0 +1,12 @@
+variable,definition,units,notes
+species_sci,Scientific binomial,text,"Tamias striatus, Marmota monax, Mesocricetus auratus, Phyllotis darwinii, Acomys cahirinus"
+common_name,Common name as printed,text,
+hearing_range_low_khz,Lowest frequency at which the species' average threshold was <=60 dB SPL,kHz,As stated in the species' own Results subsection
+hearing_range_high_khz,Highest frequency at which the species' average threshold was <=60 dB SPL,kHz,As stated in the species' own Results subsection
+hearing_range_octaves_printed,Octave span of the 60-dB hearing range as explicitly printed by the authors,octaves,"log2(high/low), as stated in text"
+hearing_range_octaves_computed,Octave span independently recomputed from the printed low/high limits (verification only; does not replace the printed value),octaves,See README verification section
+best_sensitivity_db_spl,Average best (lowest) threshold for the species,dB SPL,
+best_frequency_khz,Frequency at which the average best sensitivity was obtained,kHz,
+range_criterion_db_spl,The dB SPL criterion used to define hearing range (constant across all rows),dB SPL,60 for all species; the paper's own stated convention
+data_role,Whether this is the paper's own new measurement,text,All rows primary
+source,Citation for the values as given,text,Heffner et al. (2001) Results text

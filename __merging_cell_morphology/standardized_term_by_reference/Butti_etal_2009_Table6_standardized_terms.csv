@@ -1,0 +1,12 @@
+Original_Term,Reference,Standardized_Term,cell_type,region,layer,statistic,unit,hemisphere,note
+species,Butti_etal_2009_Table6,Species,,,,,,,
+species_as_published,Butti_etal_2009_Table6,species_printed,,,,,,,
+ven_vol_um3_mean,Butti_etal_2009_Table6,soma_volume,ven,ACC,V,mean,um3,,
+ven_vol_um3_sd,Butti_etal_2009_Table6,soma_volume,ven,ACC,V,sd,um3,,
+pyramidal_vol_um3_mean,Butti_etal_2009_Table6,soma_volume,pyramidal_L5,ACC,V,mean,um3,,
+pyramidal_vol_um3_sd,Butti_etal_2009_Table6,soma_volume,pyramidal_L5,ACC,V,sd,um3,,
+fusiform_vol_um3_mean,Butti_etal_2009_Table6,soma_volume,fusiform_L6,ACC,VI,mean,um3,,
+fusiform_vol_um3_sd,Butti_etal_2009_Table6,soma_volume,fusiform_L6,ACC,VI,sd,um3,,
+ven_index_as_published,Butti_etal_2009_Table6,ven_index,ven,ACC,V,value,ratio,,derived-in-source
+ven_index_recomputed,Butti_etal_2009_Table6,DROP,,,,,,,check column
+source,Butti_etal_2009_Table6,DROP,,,,,,,

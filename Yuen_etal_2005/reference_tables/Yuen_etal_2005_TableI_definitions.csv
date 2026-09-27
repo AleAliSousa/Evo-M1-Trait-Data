@@ -1,0 +1,8 @@
+variable,definition,units,notes
+determination_row,Row number after reshaping the printed wide table (2001/2004 columns) to long format and dropping untested year x frequency cells,integer,
+frequency_khz,Test tone frequency,kHz,"16 frequencies from 4 to 45 kHz, as printed in Table I"
+audiogram_year,Year the behavioral audiogram was collected,integer,"2001 (preliminary, 5 frequencies) or 2004 (complete, 16 frequencies)"
+threshold_db_re_1upa,Behavioral hearing threshold as printed in Table I,dB re 1 microPa,"Average of the reversal values of two consecutive sessions within 3 dB of each other. Lower value = more sensitive. Minimum printed value is 69.5 at 20 kHz (2004)"
+subject_species,Species tested,text,"Pseudorca crassidens (false killer whale), single subject tested in both 2001 and 2004"
+data_role,Whether the row is this paper's own new measurement or cited from a prior study,text,All rows are primary (this study)
+source,Citation for the value as given in Table I,text,

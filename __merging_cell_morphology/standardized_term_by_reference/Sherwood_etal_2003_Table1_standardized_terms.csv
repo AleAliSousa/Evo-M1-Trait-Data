@@ -1,0 +1,31 @@
+Original_Term,Reference,Standardized_Term,cell_type,region,layer,statistic,unit,hemisphere,note
+Species,Sherwood_etal_2003_Table1,Species,,,,,,,
+n,Sherwood_etal_2003_Table1,n,,,,n,individuals,,
+motor_pyramid_soma_um3_mean,Sherwood_etal_2003_Table1,soma_volume,pyramidal_L5,M1,V,mean,um3,,
+motor_pyramid_soma_um3_sd,Sherwood_etal_2003_Table1,soma_volume,pyramidal_L5,M1,V,sd,um3,,
+motor_pyramid_cv_pct,Sherwood_etal_2003_Table1,soma_volume,pyramidal_L5,M1,V,cv,percent,,
+betz_soma_um3_mean,Sherwood_etal_2003_Table1,soma_volume,gigantopyramidal,M1,V,mean,um3,,
+betz_soma_um3_sd,Sherwood_etal_2003_Table1,soma_volume,gigantopyramidal,M1,V,sd,um3,,
+betz_cv_pct,Sherwood_etal_2003_Table1,soma_volume,gigantopyramidal,M1,V,cv,percent,,
+visual_pyramid_soma_um3_mean,Sherwood_etal_2003_Table1,soma_volume,pyramidal_L5,V1,V,mean,um3,,
+visual_pyramid_soma_um3_sd,Sherwood_etal_2003_Table1,soma_volume,pyramidal_L5,V1,V,sd,um3,,
+visual_pyramid_cv_pct,Sherwood_etal_2003_Table1,soma_volume,pyramidal_L5,V1,V,cv,percent,,
+meynert_soma_um3_mean,Sherwood_etal_2003_Table1,soma_volume,meynert,V1,V/VI,mean,um3,,
+meynert_soma_um3_sd,Sherwood_etal_2003_Table1,soma_volume,meynert,V1,V/VI,sd,um3,,
+meynert_cv_pct,Sherwood_etal_2003_Table1,soma_volume,meynert,V1,V/VI,cv,percent,,
+neocortex_vol_mm3,Sherwood_etal_2003_Table1,DROP,,,,,,,secondary literature column -> its own merge (__merging_volumes); primaries already held
+neocortex_vol_ref,Sherwood_etal_2003_Table1,DROP,,,,,,,secondary literature column -> its own merge (__merging_volumes); primaries already held
+brain_weight_g,Sherwood_etal_2003_Table1,DROP,,,,,,,secondary literature column -> its own merge (__merging_brain_mass); primaries already held
+brain_weight_ref,Sherwood_etal_2003_Table1,DROP,,,,,,,secondary literature column -> its own merge (__merging_brain_mass); primaries already held
+body_weight_g,Sherwood_etal_2003_Table1,DROP,,,,,,,secondary literature column -> its own merge (__merging_body_ecology/behaviour); primaries already held
+body_weight_ref,Sherwood_etal_2003_Table1,DROP,,,,,,,secondary literature column -> its own merge (__merging_body_ecology/behaviour); primaries already held
+EQ,Sherwood_etal_2003_Table1,DROP,,,,,,,secondary literature column -> its own merge (__merging_body_ecology/behaviour); primaries already held
+diet_category,Sherwood_etal_2003_Table1,DROP,,,,,,,secondary literature column -> its own merge (__merging_body_ecology/behaviour); primaries already held
+diet_ref,Sherwood_etal_2003_Table1,DROP,,,,,,,secondary literature column -> its own merge (__merging_body_ecology/behaviour); primaries already held
+habitat_category,Sherwood_etal_2003_Table1,DROP,,,,,,,secondary literature column -> its own merge (__merging_body_ecology/behaviour); primaries already held
+habitat_ref,Sherwood_etal_2003_Table1,DROP,,,,,,,secondary literature column -> its own merge (__merging_body_ecology/behaviour); primaries already held
+group_size,Sherwood_etal_2003_Table1,DROP,,,,,,,secondary literature column -> its own merge (__merging_body_ecology/behaviour); primaries already held
+group_size_ref,Sherwood_etal_2003_Table1,DROP,,,,,,,secondary literature column -> its own merge (__merging_body_ecology/behaviour); primaries already held
+dexterity_index,Sherwood_etal_2003_Table1,DROP,,,,,,,secondary literature column -> its own merge (__merging_body_ecology/behaviour); primaries already held
+note,Sherwood_etal_2003_Table1,DROP,,,,,,,
+source,Sherwood_etal_2003_Table1,DROP,,,,,,,

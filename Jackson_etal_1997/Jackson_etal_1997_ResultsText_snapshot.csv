@@ -1,0 +1,7 @@
+metric,frequency_value,frequency_unit,threshold_value,threshold_unit,subject,source_phrase
+low_freq_threshold,63,Hz,79,dB SPL,mean (A & B),"squirrels were able to hear 63 Hz with an average threshold of 79 dB SPL"
+best_sensitivity,8,kHz,1,dB,mean (A & B),"their best threshold of 1 dB at 8 kHz"
+high_freq_threshold_A,50,kHz,69,dB,Squirrel A,"Squirrel A able to hear 50 kHz at a level of 69 dB"
+high_freq_threshold_B,56,kHz,85,dB,Squirrel B,"Squirrel B able to hear as high as 56 kHz at a level of 85 dB"
+range_60dB_low,113,Hz,60,dB SPL criterion,mean (A & B),"at an intensity of 60 dB, the average range of hearing for the two squirrels extended from 113 Hz to 49 kHz"
+range_60dB_high,49,kHz,60,dB SPL criterion,mean (A & B),"(same sentence as above)"

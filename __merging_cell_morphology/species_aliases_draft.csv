@@ -1,0 +1,20 @@
+Reference,species_printed,Species,taxon_level,note
+Elston_etal_2001_Table1,Marmoset,Callithrix jacchus,species,named in the paper's Methods (PDF text check 2026-09-27)
+Elston_etal_2001_Table1,Macaque,Macaca fascicularis,species,named in the paper's Methods (PDF text check 2026-09-27)
+Elston_etal_2001_Table1,Human,Homo sapiens,species,
+Elston__2000_Figure2,(none printed),Macaca fascicularis,species,"paper says only 'macaque monkey'; resolved to M. fascicularis 2026-09-27 by data identity: the area-10 cells (n=29, BDFA 133.2e3 um2, 32.35 branches, TNS 8766) are re-tabulated as the M. fascicularis prefrontal row of Elston et al. 2001 Table 1 and Elston et al. 2006 Table 1 (footnote t). See ELSTON_2000_SPECIES_EVIDENCE.md"
+Elston_etal_2006_Table1,Otolemur,Otolemur garnettii,species,paper Methods: 'Otolemur garnetti' (sic)
+Elston_etal_2006_Table1,Callithrix,Callithrix jacchus,species,paper Methods
+Elston_etal_2006_Table1,Aotus,Aotus trivirgatus,species,paper Methods
+Elston_etal_2006_Table1,Cercopithecus,Chlorocebus pygerythrus,species,paper prints Cercopithecus pygerythrus; MDD accepted genus is Chlorocebus - confirm against _keys/species_reference.csv
+Elston_etal_2006_Table1,Macaca,Macaca fascicularis,species,paper Methods (gPFC); V1/V2 values compiled from earlier Elston macaque work - verify same species
+Elston_etal_2006_Table1,Papio,Papio ursinus,species,paper Methods
+Elston_etal_2006_Table1,Homo,Homo sapiens,species,
+Bianchi_etal_2012_Table2,Chimpanzee,Pan troglodytes,species,
+Bianchi_etal_2012_Table2,Human,Homo sapiens,species,values reused from Jacobs 1997/2001
+Jacobs_etal_2015_Table4,Elephant,Loxodonta africana,species,Source Ref a = Jacobs et al. 2011 (African elephant)
+Jacobs_etal_2015_Table4,Humpback Whale,Megaptera novaeangliae,species,Source Ref b
+Jacobs_etal_2015_Table4,Minke Whale,Balaenoptera acutorostrata,species,Source Ref b
+Jacobs_etal_2015_Table4,Bottlenose Dolphin,Tursiops truncatus,species,Source Ref b
+Jacobs_etal_2015_Table4,Giraffe,Giraffa camelopardalis,species,this paper's own data (primary)
+Armstrong__1979_Tables1-9,Hylobates sp.,Hylobates sp.,genus,gibbon of unknown species; keep at genus

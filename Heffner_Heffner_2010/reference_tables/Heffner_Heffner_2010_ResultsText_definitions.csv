@@ -1,0 +1,14 @@
+variable,definition,units,notes
+species_row,Row number after removing header/blank lines,integer,
+binomial,Species binomial as printed in the Abstract/Results text,text,
+common_name,Common name as used in the paper,text,
+best_frequency_kHz,Frequency of the species' most sensitive (lowest) threshold,kHz,
+best_threshold_dB_SPL,The species' lowest (most sensitive) threshold value,dB SPL,Printed as -3 dB (i.e. 3 dB below the 0 dB SPL reference)
+low_freq_limit_60dB_Hz,Low-frequency edge of the hearing range at the standard 60-dB-SPL criterion,Hz,
+high_freq_limit_60dB_kHz,High-frequency edge of the hearing range at the standard 60-dB-SPL criterion,kHz,
+low_freq_limit_maxintensity_Hz,Lowest frequency detectable at all (at the maximum intensity tested),Hz,Paper's own wider 'absolute limit' figure, not the 60-dB comparison figure
+max_intensity_for_low_limit_dB,Intensity at which the low-frequency absolute limit was measured,dB SPL,
+high_freq_limit_maxintensity_kHz,Highest frequency detectable at all (at the maximum intensity tested),kHz,Paper's own wider 'absolute limit' figure, not the 60-dB comparison figure
+max_intensity_for_high_limit_dB,Intensity at which the high-frequency absolute limit was measured,dB SPL,
+data_role,Whether the row is this paper's own new measurement or cited from a prior study,text,primary (this study)
+source,Citation for the value as given in the text,text,

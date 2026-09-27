@@ -1,0 +1,17 @@
+variable,definition,units,notes
+obs_row,Row number after removing header/blank lines,integer,
+binomial,Species binomial as printed in the paper,text,
+common_name,Common name as printed in the paper,text,
+subject,Subject animal name,text,Single female northern elephant seal
+medium,Test medium for this row,text,"Air or Underwater"
+best_range_low_khz,Lower bound of the frequency range described as the region of best hearing,kHz,
+best_range_high_khz,Upper bound of the frequency range described as the region of best hearing,kHz,
+best_frequency_khz,Single frequency of greatest sensitivity as stated in the Abstract,kHz,
+best_threshold_db,Threshold at the frequency of greatest sensitivity,dB,See reference_pressure for the medium-specific reference value
+reference_pressure,Reference pressure for the dB threshold,text,"20 uPa in air; 1 uPa underwater, as printed"
+upper_freq_limit_khz,Upper frequency cutoff for this medium,kHz,
+upper_freq_is_approx,Whether the paper itself qualifies the upper frequency limit as approximate,boolean,Paper states both cutoffs as \"approximately\"
+underwater_vs_air_pressure_diff_db,Overall difference between underwater and in-air thresholds in terms of sound pressure,dB,Underwater lower (more sensitive) than air by this amount; same value on both rows
+underwater_vs_air_intensity_diff_db,Overall difference between underwater and in-air thresholds in terms of sound intensity (impedance-corrected),dB,Underwater lower (more sensitive) than air by this amount; same value on both rows
+data_role,Whether the row is this paper's own new measurement or cited from a prior study,text,Both rows are primary (this study)
+source,Citation for the value as given in the text,text,

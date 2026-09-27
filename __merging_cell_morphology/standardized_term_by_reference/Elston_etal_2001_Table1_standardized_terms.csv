@@ -1,0 +1,9 @@
+Original_Term,Reference,Standardized_Term,cell_type,region,layer,statistic,unit,hemisphere,note
+Species,Elston_etal_2001_Table1,species_printed,,,,,,,
+Region,Elston_etal_2001_Table1,region_printed,,,,,,,
+Peak_branching_complexity_mean,Elston_etal_2001_Table1,peak_branching_complexity,pyramidal_L3,,III,mean,intersections,,
+Peak_branching_complexity_SD,Elston_etal_2001_Table1,peak_branching_complexity,pyramidal_L3,,III,sd,intersections,,
+Basal_dendritic_field_area_1e4um2_mean,Elston_etal_2001_Table1,basal_dendritic_field_area,pyramidal_L3,,III,mean,1e4 um2,,printed x10^4 um2; compile rescales to um2 (x10000) and flags
+Basal_dendritic_field_area_1e4um2_SD,Elston_etal_2001_Table1,basal_dendritic_field_area,pyramidal_L3,,III,sd,1e4 um2,,printed x10^4 um2; compile rescales to um2 (x10000) and flags
+Max_spine_density_per_10um_mean,Elston_etal_2001_Table1,max_spine_density,pyramidal_L3,,III,mean,spines/10um,,
+Max_spine_density_per_10um_SEM,Elston_etal_2001_Table1,max_spine_density,pyramidal_L3,,III,sem,spines/10um,,

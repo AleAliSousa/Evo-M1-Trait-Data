@@ -28,8 +28,25 @@
 # Exit non-zero on failure. Run after _keys/build_trait_authority.R.
 # -----------------------------------------------------------------------------
 
-file_arg <- grep("^--file=", commandArgs(FALSE), value = TRUE)
-checks_dir <- if (length(file_arg)) dirname(normalizePath(sub("^--file=", "", file_arg[1]))) else getwd()
+## Locate this script: Rscript (--file=), source() (the ofile of the innermost
+## source() frame), or RStudio. getwd() was the only fallback before, so
+## source()-ing from the console looked for the repo relative to the working
+## directory ("Cannot find __ShinyApp/app.R at /Users/__ShinyApp/app.R").
+.self_dir <- local({
+  a <- grep("^--file=", commandArgs(FALSE), value = TRUE)
+  if (length(a)) return(dirname(normalizePath(sub("^--file=", "", a[1]))))
+  for (fr in rev(sys.frames())) {
+    of <- tryCatch(fr$ofile, error = function(e) NULL)
+    if (is.character(of) && length(of) == 1L && nzchar(of) && file.exists(of))
+      return(dirname(normalizePath(of)))
+  }
+  if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+    p <- rstudioapi::getActiveDocumentContext()$path
+    if (nzchar(p)) return(dirname(normalizePath(p)))
+  }
+  normalizePath(getwd())
+})
+checks_dir <- .self_dir
 repo <- normalizePath(file.path(checks_dir, ".."))
 reg_path <- file.path(repo, "_keys", "trait_authority.csv")
 if (!file.exists(reg_path))

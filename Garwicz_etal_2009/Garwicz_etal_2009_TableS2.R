@@ -101,6 +101,16 @@ for (col in numeric_cols) {
   dat[[col]] <- as.numeric(gsub(",", "", dat[[col]]))
 }
 
+## Binomial for each printed lay term, from the item-scoped lookup
+## reference_tables/<item>_taxa.csv (built from the paper's own Table S1 taxonomy
+## list); the printed lay term itself is kept unchanged in `Species (lay term)`.
+taxa <- read.csv(file.path("reference_tables", paste0(item_name, "_taxa.csv")),
+                 stringsAsFactors = FALSE, check.names = FALSE, na.strings = c("", "NA"))
+ti <- match(dat$`Species (lay term)`, taxa$printed_name)
+stopifnot(!anyNA(ti))
+dat$Species_binomial <- taxa$Species_binomial[ti]
+dat$species_basis    <- taxa$species_basis[ti]
+
 csv_file <- paste0(item_name, ".csv")
 
 write.csv(

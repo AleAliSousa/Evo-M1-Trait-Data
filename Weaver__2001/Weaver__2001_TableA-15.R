@@ -88,6 +88,17 @@ stopifnot(!any(is.na(clean$Group_label)))
 ## sanity: NetBrain should equal BrMass - CBLM (within rounding)
 stopifnot(all(abs(clean$NetBrain_g - (clean$BrMass_g - clean$CBLM_cc)) < 0.05))
 
+## ---- binomial for the abbreviated / specimen labels -------------------------
+## Specimen_printed keeps the cell as printed. The binomial is expanded from the
+## dissertation's own species lists (Tables A-10 / A-11) or, for fossils, from the
+## printed group code; basis per row in reference_tables/<item>_taxa.csv.
+taxa <- read.csv(file.path("reference_tables", paste0(item_name, "_taxa.csv")),
+                 stringsAsFactors = FALSE, na.strings = c("", "NA"))
+ti <- match(clean$Specimen, taxa$printed_name)
+stopifnot(!anyNA(ti))
+clean$Species_binomial <- taxa$Species_binomial[ti]
+clean$species_basis    <- taxa$species_basis[ti]
+
 csv_file <- file.path(folder, paste0(item_name, ".csv"))
 write.csv(clean, csv_file, row.names = FALSE)
 message(item_name, ": ", nrow(clean), " rows written to ", basename(csv_file))

@@ -1,0 +1,12 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species_printed,species name exactly as printed in the xlsx (Genus_species with underscore),,,,info,Tetrapoda,Chen_Wiens_2020_SupplementaryData3,printed name preserved (invariant 3),"sheet 'Supplementary Data_3', column 'Species'"
+Species_binomial,species name with the printed underscore replaced by a space,,,,info,Tetrapoda,Chen_Wiens_2020_SupplementaryData3,formatting only; no harmonisation to accepted names (SPECIES_NAMING §2),
+species_basis,constant 'spelling' (underscore -> space is the only change from the printed name),,,,info,Tetrapoda,Chen_Wiens_2020_SupplementaryData3,controlled vocabulary: verbatim | spelling | synonym | reident | subspecies_assign | hypothesis | our_judgment | unspecified_in_source (per _keys/SPECIES_NAMING.md 7c-label),
+Family,family as printed,,,,info,Tetrapoda,Chen_Wiens_2020_SupplementaryData3,,
+Order,order as printed,,,,info,Tetrapoda,Chen_Wiens_2020_SupplementaryData3,,
+Class,"class as printed (Amphibia, Aves, Crocodylia, Lepidosauria, Mammalia, Testudines)",,,,info,Tetrapoda,Chen_Wiens_2020_SupplementaryData3,,
+State,"acoustic communication: 0 = absent, 1 = present (Metadata sheet)",whole-organism,presence.absence,,secondary,Tetrapoda,Chen_Wiens_2020_SupplementaryData3,binary trait state compiled by the authors from the cited sources,"sheet 'Supplementary Data_3', column 'State'"
+References,"source(s) for the state as printed, multi-citations separated by '; '",,,,info,Tetrapoda,Chen_Wiens_2020_SupplementaryData3,full entries on the xlsx sheet 'References',
+source,folder/paper key (Chen_Wiens_2020),,,,provenance,Tetrapoda,Chen_Wiens_2020_SupplementaryData3,,
+Method:frozen_source,"41467_2020_14356_MOESM6_ESM.xlsx (journal supplement, born digital) copy-renamed bytes-untouched to Chen_Wiens_2020_SupplementaryData3_snapshot.xlsx; the earlier public TSV was a Numbers export whose 'Table 1' title line made it parse as one column",,,,method,,Chen_Wiens_2020_SupplementaryData3,rebuilt 2026-09-28 by Chen_Wiens_2020_SupplementaryData3.R,
+Method:scope,"1799 tetrapod species (508 Amphibia, 549 Aves, 1 Crocodylia, 490 Lepidosauria, 235 Mammalia, 16 Testudines); secondary compilation",,,,method,,Chen_Wiens_2020_SupplementaryData3,,

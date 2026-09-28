@@ -53,6 +53,8 @@ final.dataframe <- final.dataframe %>% filter(!is.na(diagnostic_category), !is.n
 
 if (!nrow(final.dataframe)) stop("No catalog records remained after cleaning.", call.=FALSE)
 final.dataframe <- final.dataframe %>% mutate(source_row = row_number(), .before=1)
+# Table S1a is the human developmental/clinical collection (source states human); no species column is printed.
+final.dataframe <- final.dataframe %>% mutate(Species_binomial = "Homo sapiens", species_basis = "verbatim")
 write_csv(final.dataframe, paste0(item_name, ".csv"), na="")
 
 base <- local({

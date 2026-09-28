@@ -42,11 +42,15 @@ hh2 = pd.read_csv(f"{root}/HerculanoHouzel_etal_2015/HerculanoHouzel_etal_2015_T
 hh3 = pd.read_csv(f"{root}/HerculanoHouzel_etal_2015/HerculanoHouzel_etal_2015_Table3.csv")
 hh4 = pd.read_csv(f"{root}/HerculanoHouzel_etal_2015/HerculanoHouzel_etal_2015_Table4.csv")
 kverkova = pd.read_csv(f"{root}/Kverkova_etal_2018/Kverkova_etal_2018_TableS1.csv")
-hhkey = pd.read_csv(f"{root}/_keys/HerculanoHouzel/species_key.csv")
-
-hh_map = dict(zip(hhkey.variant_name, hhkey.accepted_name))
-def hh_species(name):
-    return hh_map.get(name, name)
+# Species identity: the shared resolver (_keys/resolve_species.py, mirror of resolve_species.R;
+# SPECIES_NAMING.md v1). Replaces the former direct read of _keys/HerculanoHouzel/species_key.csv
+# (2026-09-28): rows are keyed by (paper folder, printed variant) and carry a basis.
+import sys
+sys.path.insert(0, f"{root}/_keys")
+from resolve_species import resolve_species, paper_folder_of_item  # noqa: E402
+def hh_species(name, paper="HerculanoHouzel_etal_2015"):
+    a = resolve_species([name], paper).accepted_name.iloc[0]
+    return name if a is None else a
 
 structure_map_latimer = {
     "Brain": None,                    # whole brain -- covered by __merging_brain_mass
@@ -159,7 +163,7 @@ for _, r in kverkova.iterrows():
             continue
         mass_g_derived = brain_mass_g * frac
         rows.append({
-            "Species": hh_species(r["Species"]), "species_as_published": r["Species"],
+            "Species": hh_species(r["Species"], "Kverkova_etal_2018"), "species_as_published": r["Species"],
             "canonical_structure": canon, "structure_as_published": printed,
             "mass_mg": mass_g_derived * 1000, "mass_se_mg": np.nan, "n": np.nan,
             "sex": "pooled/unspecified",
@@ -178,6 +182,15 @@ cols = ["Species", "species_as_published", "canonical_structure", "structure_as_
         "mass_mg", "mass_g", "mass_se_mg", "n", "sex", "unit_original", "conversion_factor_to_mg",
         "role", "derivation", "source", "citation", "mapping_gap"]
 long_df = long_df[cols]
+## Species naming columns (SPECIES_NAMING.md v1): Species stays as produced above (Latimer rows keep
+## the source's own Species; HH/Kverkova rows come from the resolver); the four columns are added
+## from the printed name, keyed by the source table's paper folder.
+rs = resolve_species(list(long_df["species_as_published"]),
+                     paper_folder_of_item([str(s)[:-4] if str(s).endswith(".csv") else s for s in long_df["source"]]))
+long_df["species_printed"] = long_df["species_as_published"]
+long_df["accepted_name"] = rs["accepted_name"].values
+long_df["species_basis"] = rs["species_basis"].values
+long_df["reidentified"] = rs["reidentified"].values
 long_df.to_csv(f"{root}/__merging_weights/weights_long.csv", index=False)
 
 # ---- wide summary + QA/dedupe report ----

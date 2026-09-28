@@ -1,0 +1,30 @@
+printed_name,printed_column,Species_binomial,taxon_rank,species_basis,taxon_type,note
+C. atys,Specimen,Cercocebus atys,species,our_judgment,extant,genus expanded from the abbreviated printed name; epithet unique among primates; consistent with the Rilling & Insel MRI sample Weaver cites (Table A-10). NB printed group 01-NW although Cercocebus is an Old World monkey
+C. apella,Specimen,Cebus apella,species,our_judgment,extant,"genus expanded from the abbreviated printed name; epithet unique among primates (Cebus apella s.l., now Sapajus apella)"
+S. sciureus,Specimen,Saimiri sciureus,species,our_judgment,extant,genus expanded from the abbreviated printed name; epithet unique among primates
+P. cynoceph,Specimen,Papio cynocephalus,species,our_judgment,extant,abbreviated/truncated printed name 'P. cynoceph' expanded; Papio cynocephalus s.l.
+M. mulatta,Specimen,Macaca mulatta,species,our_judgment,extant,genus expanded from the abbreviated printed name
+Hylobates,Specimen,Hylobates,genus,unspecified_in_source,extant,printed at genus level ('Hylobates (gibbon)' in Table A-11); species not stated
+Pongo,Specimen,Pongo,genus,unspecified_in_source,extant,printed at genus level ('Pongo (orangutan)' in Table A-11); species not stated
+Gorilla,Specimen,Gorilla,genus,unspecified_in_source,extant,printed at genus level; species not stated
+Bonobo,Specimen,Pan paniscus,species,verbatim,extant,binomial given in the paper's own Table A-11 ('Pan paniscus (bonobo)')
+Chimp I,Specimen,Pan troglodytes,species,verbatim,extant,"binomial given in the paper's own Table A-10 sample list (Pan troglodytes, group 07-PanS)"
+STS 19,Specimen,Australopithecus,genus,hypothesis,fossil_group,group 08-Aust; the paper assigns only to Australopithecus (no species given; commonly A. africanus)
+KNM-ER 23000,Specimen,Australopithecus,genus,hypothesis,fossil_group,group 08-Aust; the paper assigns only to Australopithecus (specimen commonly attributed to Paranthropus boisei -- not adopted here)
+KNM-ER 1813,Specimen,Homo habilis,species,hypothesis,fossil_group,group 09-HH (Homo habilis) as printed
+KNM-ER 1805,Specimen,Homo habilis,species,hypothesis,fossil_group,group 09-HH (Homo habilis) as printed
+KNM-ER 1470,Specimen,Homo habilis,species,hypothesis,fossil_group,group 09-HH (Homo habilis) as printed (specimen commonly attributed to H. rudolfensis -- not adopted here)
+Zh Loc E /III,Specimen,Homo erectus,species,hypothesis,fossil_group,group 10-HE (Homo erectus) as printed
+KNM-WT 15000,Specimen,Homo erectus,species,hypothesis,fossil_group,group 10-HE (Homo erectus) as printed
+Pith VIII /Sangiran 17,Specimen,Homo erectus,species,hypothesis,fossil_group,group 10-HE (Homo erectus) as printed
+KNM-ER 3733,Specimen,Homo erectus,species,hypothesis,fossil_group,group 10-HE (Homo erectus) as printed
+KNM-ER 3883,Specimen,Homo erectus,species,hypothesis,fossil_group,group 10-HE (Homo erectus) as printed
+Trinil 2/Pith I,Specimen,Homo erectus,species,hypothesis,fossil_group,group 10-HE (Homo erectus) as printed
+Zhoukoudian Locus LI,Specimen,Homo erectus,species,hypothesis,fossil_group,group 10-HE (Homo erectus) as printed
+Broken Hill/Kabwe,Specimen,Homo sapiens,species,hypothesis,fossil_group,group 11-EAH 'Early Archaic Homo sapiens' per Weaver's taxonomy (specimen often assigned to H. heidelbergensis/rhodesiensis today -- not adopted here)
+Swanscombe,Specimen,Homo sapiens,species,hypothesis,fossil_group,group 11-EAH 'Early Archaic Homo sapiens' per Weaver's taxonomy (often H. heidelbergensis today -- not adopted here)
+La Chapelle I,Specimen,Homo neanderthalensis,species,hypothesis,fossil_group,group 12-LAH 'Late Archaic Homo sapiens (Neanderthals)'; Weaver treats Neanderthals within H. sapiens; binomial per current usage
+La Ferrassie I,Specimen,Homo neanderthalensis,species,hypothesis,fossil_group,group 12-LAH 'Late Archaic Homo sapiens (Neanderthals)'; binomial per current usage
+Gibraltar/Forbes Quarry,Specimen,Homo neanderthalensis,species,hypothesis,fossil_group,group 12-LAH 'Late Archaic Homo sapiens (Neanderthals)'; binomial per current usage
+Cro-Magnon,Specimen,Homo sapiens,species,hypothesis,fossil_group,group 13-EMH 'Early Modern Homo sapiens' as printed
+Homo sapiens (MRI),Specimen,Homo sapiens,species,verbatim,extant,binomial printed; recent Homo sapiens (group 14-RH)

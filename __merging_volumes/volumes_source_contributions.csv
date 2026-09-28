@@ -379,7 +379,8 @@ Ateles geoffroyi,Agranular_insular_cortex_Vol.mm3,Bauernfeind_etal_2013_Table1,B
 Ateles geoffroyi,Agranular_insular_cortex_left_Vol.mm3,Bauernfeind_etal_2013_Table1,Bauernfeind et al. (2013) Table 1,10.1016/j.jhevol.2012.12.003,Zilles,2013,135,135,0,sole source,1,Zilles,1,1,2013
 Ateles geoffroyi,Amygdala_Vol.mm3,Stephan_etal_1987_Table1,Stephan et al. (1987) Table 1,PMID:3693895,Stephan_collection,1987,868.8,868.8,0,sole source,1,Stephan_collection,1,1,1987
 Ateles geoffroyi,Area_striata_Vol.mm3,Frahm_etal_1984_Table1,Frahm et al. (1984) Table 1,PMID:6501869,Stephan_collection,1984,4738,4738,0,sole source,1,Stephan_collection,1,1,1984
-Ateles geoffroyi,Area_striata_grey_matter_Vol.mm3,Frahm_etal_1984_Table1,Frahm et al. (1984) Table 1,PMID:6501869,Stephan_collection,1984,3753,3753,0,sole source,1,Stephan_collection,1,1,1984
+Ateles geoffroyi,Area_striata_grey_matter_Vol.mm3,Bush_Allman_2004_b_TABLE1,Bush & Allman (2004) TABLE 1,10.1002/ar.a.20114,Bush,2004,3130,3441.5,-9.05,averaged into the merged value,1,Bush; Stephan_collection,2,2,2004
+Ateles geoffroyi,Area_striata_grey_matter_Vol.mm3,Frahm_etal_1984_Table1,Frahm et al. (1984) Table 1,PMID:6501869,Stephan_collection,1984,3753,3441.5,9.05,averaged into the merged value,1,Bush; Stephan_collection,2,2,2004
 Ateles geoffroyi,Area_striata_white_matter_Vol.mm3,Frahm_etal_1984_Table1,Frahm et al. (1984) Table 1,PMID:6501869,Stephan_collection,1984,985,985,0,sole source,1,Stephan_collection,1,1,1984
 Ateles geoffroyi,Body_Mass.g,Stephan_etal_1981_TableIII,Stephan et al. (1981) Table III,10.1159/000155963,Stephan_collection,1981,8000,8000,0,reference table used (mass rule: other sources not averaged in),1,Stephan_collection,1,1,1981
 Ateles geoffroyi,Brain_Mass.mg,Stephan_etal_1981_TableIII,Stephan et al. (1981) Table III,10.1159/000155963,Stephan_collection,1981,108000,108000,0,reference table used (mass rule: other sources not averaged in),1,Stephan_collection,1,1,1981
@@ -397,7 +398,8 @@ Ateles geoffroyi,Complexus_corticobasolateralis_Vol.mm3,Stephan_etal_1987_Table1
 Ateles geoffroyi,Complexus_sensorius_trigeminalis_Vol.mm3,Baron_etal_1990_Table1,Baron et al. (1990) Table 1,PMID:2358663,Stephan_collection,1990,89.2,89.2,0,sole source,1,Stephan_collection,1,1,1990
 Ateles geoffroyi,Complexus_vestibularis_Vol.mm3,Baron_etal_1988_Table1,Baron et al. (1988) Table 1,PMID:3216099,Stephan_collection,1988,96.4,96.4,0,sole source,1,Stephan_collection,1,1,1988
 Ateles geoffroyi,Complexus_vestibularis_unilateral_Vol.mm3,Matano__1986_TableI,Matano (1986) Table I,10.1159/000156277,Stephan_collection,1986,49.7,49.7,0,sole source,1,Stephan_collection,1,1,1986
-Ateles geoffroyi,Corpus_geniculatum_laterale_Vol.mm3,Stephan_etal_1984_Table1,Stephan et al. (1984) Table 1,PMID:6481154,Stephan_collection,1984,151,151,0,sole source,1,Stephan_collection,1,1,1984
+Ateles geoffroyi,Corpus_geniculatum_laterale_Vol.mm3,Bush_Allman_2004_b_TABLE1,Bush & Allman (2004) TABLE 1,10.1002/ar.a.20114,Bush,2004,120,135.5,-11.44,averaged into the merged value,1,Bush; Stephan_collection,2,2,2004
+Ateles geoffroyi,Corpus_geniculatum_laterale_Vol.mm3,Stephan_etal_1984_Table1,Stephan et al. (1984) Table 1,PMID:6481154,Stephan_collection,1984,151,135.5,11.44,averaged into the merged value,1,Bush; Stephan_collection,2,2,2004
 Ateles geoffroyi,Corpus_pineal_Vol.mm3,Stephan_etal_1981_TableXVI,Stephan et al. (1981) Table XVI,10.1159/000155963,Stephan_collection,1981,3.1,3.1,0,sole source,1,Stephan_collection,1,1,1981
 Ateles geoffroyi,Corpus_subcommissurale_Vol.mm3,Stephan_etal_1981_TableXVI,Stephan et al. (1981) Table XVI,10.1159/000155963,Stephan_collection,1981,0.608,0.608,0,sole source,1,Stephan_collection,1,1,1981
 Ateles geoffroyi,Corpus_subfornicale_Vol.mm3,Stephan_etal_1981_TableXVI,Stephan et al. (1981) Table XVI,10.1159/000155963,Stephan_collection,1981,0.443,0.443,0,sole source,1,Stephan_collection,1,1,1981
@@ -427,6 +429,8 @@ Ateles geoffroyi,Medulla_oblongata_Vol.mm3,Sherwood_etal_2005_Table1,Sherwood et
 Ateles geoffroyi,Medulla_oblongata_Vol.mm3,Stephan_etal_1981_TableIII,Stephan et al. (1981) Table III,10.1159/000155963,Stephan_collection,1981,1834,1833.835,0.01,averaged into the merged value,1,Stephan_collection; Zilles,2,2,2005
 Ateles geoffroyi,Mesencephalon_Vol.mm3,Stephan_etal_1981_TableIII,Stephan et al. (1981) Table III,10.1159/000155963,Stephan_collection,1981,1482,1482,0,sole source,1,Stephan_collection,1,1,1981
 Ateles geoffroyi,Neocortex_Vol.mm3,Stephan_etal_1981_TableVI,Stephan et al. (1981) Table VI,10.1159/000155963,Stephan_collection,1981,70856,70856,0,sole source,1,Stephan_collection,1,1,1981
+Ateles geoffroyi,Neocortex_grey_matter_Vol.mm3,Bush_Allman_2004_b_TABLE1,Bush & Allman (2004) TABLE 1,10.1002/ar.a.20114,Bush,2004,30930,30930,0,sole source,1,Bush,1,1,2004
+Ateles geoffroyi,Neocortex_white_matter_Vol.mm3,Bush_Allman_2004_b_TABLE1,Bush & Allman (2004) TABLE 1,10.1002/ar.a.20114,Bush,2004,17950,17950,0,sole source,1,Bush,1,1,2004
 Ateles geoffroyi,Nucleus_amygdalae_basalis_pars_magnocellularis_Vol.mm3,Stephan_etal_1987_Table1,Stephan et al. (1987) Table 1,PMID:3693895,Stephan_collection,1987,74.7,74.7,0,sole source,1,Stephan_collection,1,1,1987
 Ateles geoffroyi,Nucleus_habenularis_medialis_Vol.mm3,Stephan_etal_1981_TableXVI,Stephan et al. (1981) Table XVI,10.1159/000155963,Stephan_collection,1981,7.29,7.29,0,sole source,1,Stephan_collection,1,1,1981
 Ateles geoffroyi,Nucleus_olivaris_inferior_accessorius_Vol.mm3,Matano__1992_Table2,Matano (1992) Table 2,10.1537/ase1911.100.69,Stephan_collection,1992,9.14,9.14,0,sole source,1,Stephan_collection,1,1,1992
@@ -461,8 +465,9 @@ Ateles geoffroyi,Substantia_innominata_Vol.mm3,Baron_etal_1987_Table1,Baron et a
 Ateles geoffroyi,Subthalamus_Vol.mm3,Stephan_etal_1981_TableVIII,Stephan et al. (1981) Table VIII,10.1159/000155963,Stephan_collection,1981,860,860,0,sole source,1,Stephan_collection,1,1,1981
 Ateles geoffroyi,Telencephalon_Vol.mm3,Stephan_etal_1981_TableIII,Stephan et al. (1981) Table III,10.1159/000155963,Stephan_collection,1981,79946,79946,0,sole source,1,Stephan_collection,1,1,1981
 Ateles geoffroyi,Thalamus_Vol.mm3,Stephan_etal_1981_TableVIII,Stephan et al. (1981) Table VIII,10.1159/000155963,Stephan_collection,1981,2930,2930,0,sole source,1,Stephan_collection,1,1,1981
-Ateles geoffroyi,Total_brain_net_volume_Vol.mm3,Bauernfeind_etal_2013_Table1,Bauernfeind et al. (2013) Table 1,10.1016/j.jhevol.2012.12.003,Zilles,2013,102700,101867,0.82,averaged into the merged value,1,Stephan_collection; Zilles,2,2,2013
-Ateles geoffroyi,Total_brain_net_volume_Vol.mm3,Stephan_etal_1981_TableIII,Stephan et al. (1981) Table III,10.1159/000155963,Stephan_collection,1981,101034,101867,-0.82,averaged into the merged value,1,Stephan_collection; Zilles,2,2,2013
+Ateles geoffroyi,Total_brain_net_volume_Vol.mm3,Bauernfeind_etal_2013_Table1,Bauernfeind et al. (2013) Table 1,10.1016/j.jhevol.2012.12.003,Zilles,2013,102700,92048,11.57,averaged into the merged value,1,Bush; Stephan_collection; Zilles,3,3,2013
+Ateles geoffroyi,Total_brain_net_volume_Vol.mm3,Bush_Allman_2004_b_TABLE1,Bush & Allman (2004) TABLE 1,10.1002/ar.a.20114,Bush,2004,72410,92048,-21.33,averaged into the merged value,1,Bush; Stephan_collection; Zilles,3,3,2013
+Ateles geoffroyi,Total_brain_net_volume_Vol.mm3,Stephan_etal_1981_TableIII,Stephan et al. (1981) Table III,10.1159/000155963,Stephan_collection,1981,101034,92048,9.76,averaged into the merged value,1,Bush; Stephan_collection; Zilles,3,3,2013
 Ateles geoffroyi,Tractus_olfactorius_lateralis_Vol.mm3,Baron_etal_1987_Table1,Baron et al. (1987) Table 1,PMID:3116076,Stephan_collection,1987,26.3,26.3,0,sole source,1,Stephan_collection,1,1,1987
 Ateles geoffroyi,Tractus_opticus_Vol.mm3,Stephan_etal_1981_TableVIII,Stephan et al. (1981) Table VIII,10.1159/000155963,Stephan_collection,1981,204,204,0,sole source,1,Stephan_collection,1,1,1981
 Ateles geoffroyi,Trigeminal_motor_nucleus_left_Vol.mm3,Sherwood_etal_2005_Table1,Sherwood et al. (2005) Table 1,10.1016/j.jhevol.2004.10.003,Zilles,2005,1.8,1.8,0,sole source,1,Zilles,1,1,2005
@@ -473,19 +478,14 @@ Ateles paniscus,CerebellarHemisphere_Vol.mm3,MacLeod_etal_2003_Table2,MacLeod et
 Ateles paniscus,CerebellarVermis_Vol.mm3,MacLeod_etal_2003_Table2,MacLeod et al. (2003) Table 2,10.1016/s0047-2484(03)00028-9,Zilles,2003,3033.33333333333,3033.33333333333,0,sole source,1,Zilles,1,1,2003
 Ateles paniscus,Cerebellum_Vol.mm3,MacLeod_etal_2003_Table2,MacLeod et al. (2003) Table 2,10.1016/s0047-2484(03)00028-9,Zilles,2003,10366.6666666667,10366.6666666667,0,sole source,1,Zilles,1,1,2003
 Ateles paniscus,Total_brain_net_volume_Vol.mm3,MacLeod_etal_2003_Table2,MacLeod et al. (2003) Table 2,10.1016/s0047-2484(03)00028-9,Zilles,2003,90700,90700,0,sole source,1,Zilles,1,1,2003
-Ateles sp.,Area_striata_grey_matter_Vol.mm3,Bush_Allman_2004_b_TABLE1,Bush & Allman (2004) TABLE 1,10.1002/ar.a.20114,Bush,2004,3130,3130,0,sole source,1,Bush,1,1,2004
 Ateles sp.,Cerebellum_grey_matter_Vol.mm3,Bush_Allman_2003_Table1,Bush & Allman (2003) Table 1,10.1159/000068880,Bush,2003,5970,5970,0,sole source,1,Bush,1,1,2003
 Ateles sp.,Cerebellum_white_matter_Vol.mm3,Bush_Allman_2003_Table1,Bush & Allman (2003) Table 1,10.1159/000068880,Bush,2003,1680,1680,0,sole source,1,Bush,1,1,2003
-Ateles sp.,Corpus_geniculatum_laterale_Vol.mm3,Bush_Allman_2004_b_TABLE1,Bush & Allman (2004) TABLE 1,10.1002/ar.a.20114,Bush,2004,120,120,0,sole source,1,Bush,1,1,2004
 Ateles sp.,Neocortex_Vol.mm3,Bush_Allman_2004_a_Table2,Bush & Allman (2004) Table 2,10.1073/pnas.0305760101,Bush,2004,48880,48880,0,sole source,1,Bush,1,1,2004
-Ateles sp.,Neocortex_grey_matter_Vol.mm3,Bush_Allman_2003_Table1,Bush & Allman (2003) Table 1,10.1159/000068880,Bush,2003,28900,30253.333333333332,-4.47,averaged into the merged value,1,Bush,1,3,2004
-Ateles sp.,Neocortex_grey_matter_Vol.mm3,Bush_Allman_2004_a_Table2,Bush & Allman (2004) Table 2,10.1073/pnas.0305760101,Bush,2004,30930,30253.333333333332,2.24,averaged into the merged value,1,Bush,1,3,2004
-Ateles sp.,Neocortex_grey_matter_Vol.mm3,Bush_Allman_2004_b_TABLE1,Bush & Allman (2004) TABLE 1,10.1002/ar.a.20114,Bush,2004,30930,30253.333333333332,2.24,averaged into the merged value,1,Bush,1,3,2004
-Ateles sp.,Neocortex_white_matter_Vol.mm3,Bush_Allman_2003_Table1,Bush & Allman (2003) Table 1,10.1159/000068880,Bush,2003,17700,17866.666666666668,-0.93,averaged into the merged value,1,Bush,1,3,2004
-Ateles sp.,Neocortex_white_matter_Vol.mm3,Bush_Allman_2004_a_Table2,Bush & Allman (2004) Table 2,10.1073/pnas.0305760101,Bush,2004,17950,17866.666666666668,0.47,averaged into the merged value,1,Bush,1,3,2004
-Ateles sp.,Neocortex_white_matter_Vol.mm3,Bush_Allman_2004_b_TABLE1,Bush & Allman (2004) TABLE 1,10.1002/ar.a.20114,Bush,2004,17950,17866.666666666668,0.47,averaged into the merged value,1,Bush,1,3,2004
-Ateles sp.,Total_brain_net_volume_Vol.mm3,Bush_Allman_2004_a_Table2,Bush & Allman (2004) Table 2,10.1073/pnas.0305760101,Bush,2004,72410,72410,0,averaged into the merged value,1,Bush,1,2,2004
-Ateles sp.,Total_brain_net_volume_Vol.mm3,Bush_Allman_2004_b_TABLE1,Bush & Allman (2004) TABLE 1,10.1002/ar.a.20114,Bush,2004,72410,72410,0,averaged into the merged value,1,Bush,1,2,2004
+Ateles sp.,Neocortex_grey_matter_Vol.mm3,Bush_Allman_2003_Table1,Bush & Allman (2003) Table 1,10.1159/000068880,Bush,2003,28900,29915,-3.39,averaged into the merged value,1,Bush,1,2,2004
+Ateles sp.,Neocortex_grey_matter_Vol.mm3,Bush_Allman_2004_a_Table2,Bush & Allman (2004) Table 2,10.1073/pnas.0305760101,Bush,2004,30930,29915,3.39,averaged into the merged value,1,Bush,1,2,2004
+Ateles sp.,Neocortex_white_matter_Vol.mm3,Bush_Allman_2003_Table1,Bush & Allman (2003) Table 1,10.1159/000068880,Bush,2003,17700,17825,-0.7,averaged into the merged value,1,Bush,1,2,2004
+Ateles sp.,Neocortex_white_matter_Vol.mm3,Bush_Allman_2004_a_Table2,Bush & Allman (2004) Table 2,10.1073/pnas.0305760101,Bush,2004,17950,17825,0.7,averaged into the merged value,1,Bush,1,2,2004
+Ateles sp.,Total_brain_net_volume_Vol.mm3,Bush_Allman_2004_a_Table2,Bush & Allman (2004) Table 2,10.1073/pnas.0305760101,Bush,2004,72410,72410,0,sole source,1,Bush,1,1,2004
 Avahi laniger,AccessoryOlfactoryBulb_Vol.mm3,Stephan_etal_1982_Table1,Stephan et al. (1982) Table 1,PMID:7161483,Stephan_collection,1982,3.013,3.013,0,sole source,1,Stephan_collection,1,1,1982
 Avahi laniger,AccessoryOlfactoryBulb_layer_6_Vol.mm3,Stephan_etal_1982_Table1,Stephan et al. (1982) Table 1,PMID:7161483,Stephan_collection,1982,0.708,0.708,0,sole source,1,Stephan_collection,1,1,1982
 Avahi laniger,AccessoryOlfactoryBulb_layers_1_2_Vol.mm3,Stephan_etal_1982_Table1,Stephan et al. (1982) Table 1,PMID:7161483,Stephan_collection,1982,0.816,0.816,0,sole source,1,Stephan_collection,1,1,1982
@@ -545,7 +545,6 @@ Avahi laniger,Nucleus_vestibularis_medialis_Vol.mm3,Baron_etal_1988_Table1,Baron
 Avahi laniger,Nucleus_vestibularis_medialis_unilateral_Vol.mm3,Matano__1986_TableI,Matano (1986) Table I,10.1159/000156277,Stephan_collection,1986,9.21,9.21,0,sole source,1,Stephan_collection,1,1,1986
 Avahi laniger,Nucleus_vestibularis_superior_Vol.mm3,Baron_etal_1988_Table1,Baron et al. (1988) Table 1,PMID:3216099,Stephan_collection,1988,7.65,7.65,0,sole source,1,Stephan_collection,1,1,1988
 Avahi laniger,Nucleus_vestibularis_superior_unilateral_Vol.mm3,Matano__1986_TableI,Matano (1986) Table I,10.1159/000156277,Stephan_collection,1986,4.27,4.27,0,sole source,1,Stephan_collection,1,1,1986
-Avahi laniger,Palaeocortex_plus_amygdala_Vol.mm3,Stephan_etal_1970_Table5,Stephan et al. (1970) TABLE 5,ISBN:0390672505,Stephan_collection,1970,236,236,0,sole source,1,Stephan_collection,1,1,1970
 Avahi laniger,Prepiriform_cortex_Vol.mm3,Baron_etal_1987_Table1,Baron et al. (1987) Table 1,PMID:3116076,Stephan_collection,1987,96.5,96.5,0,sole source,1,Stephan_collection,1,1,1987
 Avahi laniger,Retrobulbar_cortex_Vol.mm3,Baron_etal_1987_Table1,Baron et al. (1987) Table 1,PMID:3116076,Stephan_collection,1987,14.4,14.4,0,sole source,1,Stephan_collection,1,1,1987
 Avahi laniger,Schizo_cortex_Vol.mm3,Stephan_etal_1981_TableV,Stephan et al. (1981) Table V,10.1159/000155963,Stephan_collection,1981,241,241,0,sole source,1,Stephan_collection,1,1,1981
@@ -633,6 +632,7 @@ Avahi occidentalis,Nucleus_vestibularis_medialis_Vol.mm3,Baron_etal_1988_Table1,
 Avahi occidentalis,Nucleus_vestibularis_medialis_unilateral_Vol.mm3,Matano__1986_TableI,Matano (1986) Table I,10.1159/000156277,Stephan_collection,1986,6.86,6.86,0,sole source,1,Stephan_collection,1,1,1986
 Avahi occidentalis,Nucleus_vestibularis_superior_Vol.mm3,Baron_etal_1988_Table1,Baron et al. (1988) Table 1,PMID:3216099,Stephan_collection,1988,6.37,6.37,0,sole source,1,Stephan_collection,1,1,1988
 Avahi occidentalis,Nucleus_vestibularis_superior_unilateral_Vol.mm3,Matano__1986_TableI,Matano (1986) Table I,10.1159/000156277,Stephan_collection,1986,3.1,3.1,0,sole source,1,Stephan_collection,1,1,1986
+Avahi occidentalis,Palaeocortex_plus_amygdala_Vol.mm3,Stephan_etal_1970_Table5,Stephan et al. (1970) TABLE 5,ISBN:0390672505,Stephan_collection,1970,236,236,0,sole source,1,Stephan_collection,1,1,1970
 Avahi occidentalis,Pallidum_Vol.mm3,Stephan_etal_1981_TableVIII,Stephan et al. (1981) Table VIII,10.1159/000155963,Stephan_collection,1981,74.5,74.5,0,sole source,1,Stephan_collection,1,1,1981
 Avahi occidentalis,Prepiriform_cortex_Vol.mm3,Baron_etal_1987_Table1,Baron et al. (1987) Table 1,PMID:3116076,Stephan_collection,1987,85.4,85.4,0,sole source,1,Stephan_collection,1,1,1987
 Avahi occidentalis,Retrobulbar_cortex_Vol.mm3,Baron_etal_1987_Table1,Baron et al. (1987) Table 1,PMID:3116076,Stephan_collection,1987,10.9,10.9,0,sole source,1,Stephan_collection,1,1,1987
@@ -750,7 +750,8 @@ Callicebus moloch,AccessoryOlfactoryBulb_layers_1_2_Vol.mm3,Stephan_etal_1982_Ta
 Callicebus moloch,AccessoryOlfactoryBulb_layers_3_5_Vol.mm3,Stephan_etal_1982_Table1,Stephan et al. (1982) Table 1,PMID:7161483,Stephan_collection,1982,0.216,0.216,0,sole source,1,Stephan_collection,1,1,1982
 Callicebus moloch,Amygdala_Vol.mm3,Stephan_etal_1987_Table1,Stephan et al. (1987) Table 1,PMID:3693895,Stephan_collection,1987,254.1,254.1,0,sole source,1,Stephan_collection,1,1,1987
 Callicebus moloch,Area_striata_Vol.mm3,Frahm_etal_1984_Table1,Frahm et al. (1984) Table 1,PMID:6501869,Stephan_collection,1984,1524,1524,0,sole source,1,Stephan_collection,1,1,1984
-Callicebus moloch,Area_striata_grey_matter_Vol.mm3,Frahm_etal_1998_Table1,Frahm et al. (1998) Table 1,PMID:9672110,Stephan_collection,1998,1201,1201,0,sole source,1,Stephan_collection,1,1,1998
+Callicebus moloch,Area_striata_grey_matter_Vol.mm3,Bush_Allman_2004_b_TABLE1,Bush & Allman (2004) TABLE 1,10.1002/ar.a.20114,Bush,2004,840,1020.5,-17.69,averaged into the merged value,1,Bush; Stephan_collection,2,2,2004
+Callicebus moloch,Area_striata_grey_matter_Vol.mm3,Frahm_etal_1998_Table1,Frahm et al. (1998) Table 1,PMID:9672110,Stephan_collection,1998,1201,1020.5,17.69,averaged into the merged value,1,Bush; Stephan_collection,2,2,2004
 Callicebus moloch,Area_striata_white_matter_Vol.mm3,Frahm_etal_1984_Table1,Frahm et al. (1984) Table 1,PMID:6501869,Stephan_collection,1984,324,324,0,sole source,1,Stephan_collection,1,1,1984
 Callicebus moloch,Body_Mass.g,Stephan_etal_1981_TableIII,Stephan et al. (1981) Table III,10.1159/000155963,Stephan_collection,1981,900,900,0,reference table used (mass rule: other sources not averaged in),1,Stephan_collection,1,1,1981
 Callicebus moloch,Brain_Mass.mg,Stephan_etal_1981_TableIII,Stephan et al. (1981) Table III,10.1159/000155963,Stephan_collection,1981,19000,19000,0,reference table used (mass rule: other sources not averaged in),1,Stephan_collection,1,1,1981
@@ -766,14 +767,17 @@ Callicebus moloch,Cerebellar_nuclei_total_Vol.mm3,Ashwell__2020_SupplementaryTab
 Callicebus moloch,Cerebellar_nuclei_total_Vol.mm3,Matano_etal_1985_a_Table1,Matano et al. (1985) Table 1,10.1159/000156212,Stephan_collection,1985,61.41,49.405,24.3,averaged into the merged value,1,Ashwell; Stephan_collection,2,2,2020
 Callicebus moloch,Cerebellum_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,879,1250.5,-29.71,averaged into the merged value,1,Ashwell; Stephan_collection,2,2,2020
 Callicebus moloch,Cerebellum_Vol.mm3,Stephan_etal_1981_TableIII,Stephan et al. (1981) Table III,10.1159/000155963,Stephan_collection,1981,1622,1250.5,29.71,averaged into the merged value,1,Ashwell; Stephan_collection,2,2,2020
-Callicebus moloch,Cerebellum_white_matter_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,110,110,0,sole source,1,Ashwell,1,1,2020
+Callicebus moloch,Cerebellum_grey_matter_Vol.mm3,Bush_Allman_2003_Table1,Bush & Allman (2003) Table 1,10.1159/000068880,Bush,2003,833,833,0,sole source,1,Bush,1,1,2003
+Callicebus moloch,Cerebellum_white_matter_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,110,179.5,-38.72,averaged into the merged value,1,Ashwell; Bush,2,2,2020
+Callicebus moloch,Cerebellum_white_matter_Vol.mm3,Bush_Allman_2003_Table1,Bush & Allman (2003) Table 1,10.1159/000068880,Bush,2003,249,179.5,38.72,averaged into the merged value,1,Ashwell; Bush,2,2,2020
 Callicebus moloch,Commissura_anterior_Vol.mm3,Baron_etal_1987_Table1,Baron et al. (1987) Table 1,PMID:3116076,Stephan_collection,1987,28.6,28.6,0,sole source,1,Stephan_collection,1,1,1987
 Callicebus moloch,Complexus_centromedialis_Vol.mm3,Stephan_etal_1987_Table1,Stephan et al. (1987) Table 1,PMID:3693895,Stephan_collection,1987,74.6,74.6,0,sole source,1,Stephan_collection,1,1,1987
 Callicebus moloch,Complexus_corticobasolateralis_Vol.mm3,Stephan_etal_1987_Table1,Stephan et al. (1987) Table 1,PMID:3693895,Stephan_collection,1987,179.5,179.5,0,sole source,1,Stephan_collection,1,1,1987
 Callicebus moloch,Complexus_sensorius_trigeminalis_Vol.mm3,Baron_etal_1990_Table1,Baron et al. (1990) Table 1,PMID:2358663,Stephan_collection,1990,36.2,36.2,0,sole source,1,Stephan_collection,1,1,1990
 Callicebus moloch,Complexus_vestibularis_Vol.mm3,Baron_etal_1988_Table1,Baron et al. (1988) Table 1,PMID:3216099,Stephan_collection,1988,64.7,64.7,0,sole source,1,Stephan_collection,1,1,1988
 Callicebus moloch,Complexus_vestibularis_unilateral_Vol.mm3,Matano__1986_TableI,Matano (1986) Table I,10.1159/000156277,Stephan_collection,1986,33.1,33.1,0,sole source,1,Stephan_collection,1,1,1986
-Callicebus moloch,Corpus_geniculatum_laterale_Vol.mm3,Frahm_etal_1998_Table1,Frahm et al. (1998) Table 1,PMID:9672110,Stephan_collection,1998,54.2,54.2,0,sole source,1,Stephan_collection,1,1,1998
+Callicebus moloch,Corpus_geniculatum_laterale_Vol.mm3,Bush_Allman_2004_b_TABLE1,Bush & Allman (2004) TABLE 1,10.1002/ar.a.20114,Bush,2004,30,42.1,-28.74,averaged into the merged value,1,Bush; Stephan_collection,2,2,2004
+Callicebus moloch,Corpus_geniculatum_laterale_Vol.mm3,Frahm_etal_1998_Table1,Frahm et al. (1998) Table 1,PMID:9672110,Stephan_collection,1998,54.2,42.1,28.74,averaged into the merged value,1,Bush; Stephan_collection,2,2,2004
 Callicebus moloch,Corpus_pineal_Vol.mm3,Stephan_etal_1981_TableXVI,Stephan et al. (1981) Table XVI,10.1159/000155963,Stephan_collection,1981,2.9,2.9,0,sole source,1,Stephan_collection,1,1,1981
 Callicebus moloch,Corpus_subcommissurale_Vol.mm3,Stephan_etal_1981_TableXVI,Stephan et al. (1981) Table XVI,10.1159/000155963,Stephan_collection,1981,0.154,0.154,0,sole source,1,Stephan_collection,1,1,1981
 Callicebus moloch,Corpus_subfornicale_Vol.mm3,Stephan_etal_1981_TableXVI,Stephan et al. (1981) Table XVI,10.1159/000155963,Stephan_collection,1981,0.135,0.135,0,sole source,1,Stephan_collection,1,1,1981
@@ -795,6 +799,10 @@ Callicebus moloch,Medulla_oblongata_Vol.mm3,Stephan_etal_1981_TableIII,Stephan e
 Callicebus moloch,Mesencephalon_Vol.mm3,Stephan_etal_1981_TableIII,Stephan et al. (1981) Table III,10.1159/000155963,Stephan_collection,1981,530,530,0,sole source,1,Stephan_collection,1,1,1981
 Callicebus moloch,Middle_temporal_visual_area_Vol.mm3,Frahm_etal_1998_Table1,Frahm et al. (1998) Table 1,PMID:9672110,Stephan_collection,1998,92.1,92.1,0,sole source,1,Stephan_collection,1,1,1998
 Callicebus moloch,Neocortex_Vol.mm3,Stephan_etal_1981_TableVI,Stephan et al. (1981) Table VI,10.1159/000155963,Stephan_collection,1981,11163,11163,0,sole source,1,Stephan_collection,1,1,1981
+Callicebus moloch,Neocortex_grey_matter_Vol.mm3,Bush_Allman_2003_Table1,Bush & Allman (2003) Table 1,10.1159/000068880,Bush,2003,5120,5120,0,averaged into the merged value,1,Bush,1,2,2004
+Callicebus moloch,Neocortex_grey_matter_Vol.mm3,Bush_Allman_2004_b_TABLE1,Bush & Allman (2004) TABLE 1,10.1002/ar.a.20114,Bush,2004,5120,5120,0,averaged into the merged value,1,Bush,1,2,2004
+Callicebus moloch,Neocortex_white_matter_Vol.mm3,Bush_Allman_2003_Table1,Bush & Allman (2003) Table 1,10.1159/000068880,Bush,2003,1940,1940,0,averaged into the merged value,1,Bush,1,2,2004
+Callicebus moloch,Neocortex_white_matter_Vol.mm3,Bush_Allman_2004_b_TABLE1,Bush & Allman (2004) TABLE 1,10.1002/ar.a.20114,Bush,2004,1940,1940,0,averaged into the merged value,1,Bush,1,2,2004
 Callicebus moloch,Nucleus_amygdalae_basalis_pars_magnocellularis_Vol.mm3,Stephan_etal_1987_Table1,Stephan et al. (1987) Table 1,PMID:3693895,Stephan_collection,1987,16.3,16.3,0,sole source,1,Stephan_collection,1,1,1987
 Callicebus moloch,Nucleus_habenularis_medialis_Vol.mm3,Stephan_etal_1981_TableXVI,Stephan et al. (1981) Table XVI,10.1159/000155963,Stephan_collection,1981,2.66,2.66,0,sole source,1,Stephan_collection,1,1,1981
 Callicebus moloch,Nucleus_olivaris_inferior_accessorius_Vol.mm3,Matano__1992_Table2,Matano (1992) Table 2,10.1537/ase1911.100.69,Stephan_collection,1992,4.13,4.13,0,sole source,1,Stephan_collection,1,1,1992
@@ -820,26 +828,18 @@ Callicebus moloch,Striatum_Vol.mm3,Stephan_etal_1981_TableVI,Stephan et al. (198
 Callicebus moloch,Subiculum_Vol.mm3,Frahm_Zilles_1994_Table1,Frahm & Zilles (1994) Table 1,PMID:7983368,Stephan_collection,1994,42.71,42.71,0,sole source,1,Stephan_collection,1,1,1994
 Callicebus moloch,Substantia_innominata_Vol.mm3,Baron_etal_1987_Table1,Baron et al. (1987) Table 1,PMID:3116076,Stephan_collection,1987,27.2,27.2,0,sole source,1,Stephan_collection,1,1,1987
 Callicebus moloch,Telencephalon_Vol.mm3,Stephan_etal_1981_TableIII,Stephan et al. (1981) Table III,10.1159/000155963,Stephan_collection,1981,13465,13465,0,sole source,1,Stephan_collection,1,1,1981
-Callicebus moloch,Total_brain_net_volume_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,14321,16132.5,-11.23,averaged into the merged value,1,Ashwell; Stephan_collection,2,2,2020
-Callicebus moloch,Total_brain_net_volume_Vol.mm3,Stephan_etal_1981_TableIII,Stephan et al. (1981) Table III,10.1159/000155963,Stephan_collection,1981,17944,16132.5,11.23,averaged into the merged value,1,Ashwell; Stephan_collection,2,2,2020
+Callicebus moloch,Total_brain_net_volume_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,14321,14721.666666666666,-2.72,averaged into the merged value,1,Ashwell; Bush; Stephan_collection,3,3,2020
+Callicebus moloch,Total_brain_net_volume_Vol.mm3,Bush_Allman_2004_b_TABLE1,Bush & Allman (2004) TABLE 1,10.1002/ar.a.20114,Bush,2004,11900,14721.666666666666,-19.17,averaged into the merged value,1,Ashwell; Bush; Stephan_collection,3,3,2020
+Callicebus moloch,Total_brain_net_volume_Vol.mm3,Stephan_etal_1981_TableIII,Stephan et al. (1981) Table III,10.1159/000155963,Stephan_collection,1981,17944,14721.666666666666,21.89,averaged into the merged value,1,Ashwell; Bush; Stephan_collection,3,3,2020
 Callicebus moloch,Tractus_olfactorius_lateralis_Vol.mm3,Baron_etal_1987_Table1,Baron et al. (1987) Table 1,PMID:3116076,Stephan_collection,1987,8,8,0,sole source,1,Stephan_collection,1,1,1987
 Callicebus moloch,Trigeminal_motor_nucleus_left_Vol.mm3,Sherwood_etal_2005_Table1,Sherwood et al. (2005) Table 1,10.1016/j.jhevol.2004.10.003,Zilles,2005,1,1,0,sole source,1,Zilles,1,1,2005
 Callicebus moloch,Tuberculum_olfactorium_Vol.mm3,Baron_etal_1987_Table1,Baron et al. (1987) Table 1,PMID:3116076,Stephan_collection,1987,34.7,34.7,0,sole source,1,Stephan_collection,1,1,1987
 Callicebus moloch,Ventral_pons_Vol.mm3,Matano_etal_1985_b_Table1,Matano et al. (1985) Table 1,10.1159/000156211,Stephan_collection,1985,105.9,105.9,0,sole source,1,Stephan_collection,1,1,1985
 Callicebus moloch,Ventricles_Vol.mm3,Stephan_etal_1981_TableIII,Stephan et al. (1981) Table III,10.1159/000155963,Stephan_collection,1981,279,279,0,sole source,1,Stephan_collection,1,1,1981
-Callicebus sp.,Area_striata_grey_matter_Vol.mm3,Bush_Allman_2004_b_TABLE1,Bush & Allman (2004) TABLE 1,10.1002/ar.a.20114,Bush,2004,840,840,0,sole source,1,Bush,1,1,2004
-Callicebus sp.,Cerebellum_grey_matter_Vol.mm3,Bush_Allman_2003_Table1,Bush & Allman (2003) Table 1,10.1159/000068880,Bush,2003,833,833,0,sole source,1,Bush,1,1,2003
-Callicebus sp.,Cerebellum_white_matter_Vol.mm3,Bush_Allman_2003_Table1,Bush & Allman (2003) Table 1,10.1159/000068880,Bush,2003,249,249,0,sole source,1,Bush,1,1,2003
-Callicebus sp.,Corpus_geniculatum_laterale_Vol.mm3,Bush_Allman_2004_b_TABLE1,Bush & Allman (2004) TABLE 1,10.1002/ar.a.20114,Bush,2004,30,30,0,sole source,1,Bush,1,1,2004
 Callicebus sp.,Neocortex_Vol.mm3,Bush_Allman_2004_a_Table2,Bush & Allman (2004) Table 2,10.1073/pnas.0305760101,Bush,2004,7060,7060,0,sole source,1,Bush,1,1,2004
-Callicebus sp.,Neocortex_grey_matter_Vol.mm3,Bush_Allman_2003_Table1,Bush & Allman (2003) Table 1,10.1159/000068880,Bush,2003,5120,5120,0,averaged into the merged value,1,Bush,1,3,2004
-Callicebus sp.,Neocortex_grey_matter_Vol.mm3,Bush_Allman_2004_a_Table2,Bush & Allman (2004) Table 2,10.1073/pnas.0305760101,Bush,2004,5120,5120,0,averaged into the merged value,1,Bush,1,3,2004
-Callicebus sp.,Neocortex_grey_matter_Vol.mm3,Bush_Allman_2004_b_TABLE1,Bush & Allman (2004) TABLE 1,10.1002/ar.a.20114,Bush,2004,5120,5120,0,averaged into the merged value,1,Bush,1,3,2004
-Callicebus sp.,Neocortex_white_matter_Vol.mm3,Bush_Allman_2003_Table1,Bush & Allman (2003) Table 1,10.1159/000068880,Bush,2003,1940,1940,0,averaged into the merged value,1,Bush,1,3,2004
-Callicebus sp.,Neocortex_white_matter_Vol.mm3,Bush_Allman_2004_a_Table2,Bush & Allman (2004) Table 2,10.1073/pnas.0305760101,Bush,2004,1940,1940,0,averaged into the merged value,1,Bush,1,3,2004
-Callicebus sp.,Neocortex_white_matter_Vol.mm3,Bush_Allman_2004_b_TABLE1,Bush & Allman (2004) TABLE 1,10.1002/ar.a.20114,Bush,2004,1940,1940,0,averaged into the merged value,1,Bush,1,3,2004
-Callicebus sp.,Total_brain_net_volume_Vol.mm3,Bush_Allman_2004_a_Table2,Bush & Allman (2004) Table 2,10.1073/pnas.0305760101,Bush,2004,11900,11900,0,averaged into the merged value,1,Bush,1,2,2004
-Callicebus sp.,Total_brain_net_volume_Vol.mm3,Bush_Allman_2004_b_TABLE1,Bush & Allman (2004) TABLE 1,10.1002/ar.a.20114,Bush,2004,11900,11900,0,averaged into the merged value,1,Bush,1,2,2004
+Callicebus sp.,Neocortex_grey_matter_Vol.mm3,Bush_Allman_2004_a_Table2,Bush & Allman (2004) Table 2,10.1073/pnas.0305760101,Bush,2004,5120,5120,0,sole source,1,Bush,1,1,2004
+Callicebus sp.,Neocortex_white_matter_Vol.mm3,Bush_Allman_2004_a_Table2,Bush & Allman (2004) Table 2,10.1073/pnas.0305760101,Bush,2004,1940,1940,0,sole source,1,Bush,1,1,2004
+Callicebus sp.,Total_brain_net_volume_Vol.mm3,Bush_Allman_2004_a_Table2,Bush & Allman (2004) Table 2,10.1073/pnas.0305760101,Bush,2004,11900,11900,0,sole source,1,Bush,1,1,2004
 Callimico goeldii,AccessoryOlfactoryBulb_Vol.mm3,Stephan_etal_1982_Table1,Stephan et al. (1982) Table 1,PMID:7161483,Stephan_collection,1982,0.512,0.512,0,sole source,1,Stephan_collection,1,1,1982
 Callimico goeldii,AccessoryOlfactoryBulb_layer_6_Vol.mm3,Stephan_etal_1982_Table1,Stephan et al. (1982) Table 1,PMID:7161483,Stephan_collection,1982,0.034,0.034,0,sole source,1,Stephan_collection,1,1,1982
 Callimico goeldii,AccessoryOlfactoryBulb_layers_1_2_Vol.mm3,Stephan_etal_1982_Table1,Stephan et al. (1982) Table 1,PMID:7161483,Stephan_collection,1982,0.166,0.166,0,sole source,1,Stephan_collection,1,1,1982
@@ -3240,21 +3240,6 @@ Glis glis,Neocortex_grey_matter_Vol.mm3,Bush_Allman_2004_a_Table2,Bush & Allman 
 Glis glis,Neocortex_white_matter_Vol.mm3,Bush_Allman_2003_Table1,Bush & Allman (2003) Table 1,10.1159/000068880,Bush,2003,67.8,68.9,-1.6,averaged into the merged value,1,Bush,1,2,2004
 Glis glis,Neocortex_white_matter_Vol.mm3,Bush_Allman_2004_a_Table2,Bush & Allman (2004) Table 2,10.1073/pnas.0305760101,Bush,2004,70,68.9,1.6,averaged into the merged value,1,Bush,1,2,2004
 Glis glis,Total_brain_net_volume_Vol.mm3,Bush_Allman_2004_a_Table2,Bush & Allman (2004) Table 2,10.1073/pnas.0305760101,Bush,2004,2000,2000,0,sole source,1,Bush,1,1,2004
-Gorilla gorilla,Body_Mass.g,Stephan_etal_1970_Table3,Stephan et al. (1970) TABLE 3,ISBN:0390672505,Stephan_collection,1970,125000,125000,0,reference table used (mass rule: other sources not averaged in),1,Stephan_collection,1,1,1970
-Gorilla gorilla,Brain_Mass.mg,Stephan_etal_1970_Table3,Stephan et al. (1970) TABLE 3,ISBN:0390672505,Stephan_collection,1970,465000,465000,0,reference table used (mass rule: other sources not averaged in),1,Stephan_collection,1,1,1970
-Gorilla gorilla,Bulbus_olfactorius_Vol.mm3,Stephan_etal_1970_Table6,Stephan et al. (1970) TABLE 6,ISBN:0390672505,Stephan_collection,1970,294,294,0,sole source,1,Stephan_collection,1,1,1970
-Gorilla gorilla,Cerebellum_Vol.mm3,Stephan_etal_1970_Table3,Stephan et al. (1970) TABLE 3,ISBN:0390672505,Stephan_collection,1970,64402,64402,0,sole source,1,Stephan_collection,1,1,1970
-Gorilla gorilla,Diencephalon_Vol.mm3,Stephan_etal_1970_Table3,Stephan et al. (1970) TABLE 3,ISBN:0390672505,Stephan_collection,1970,18014,18014,0,sole source,1,Stephan_collection,1,1,1970
-Gorilla gorilla,Hippocampus_Vol.mm3,Stephan_etal_1970_Table6,Stephan et al. (1970) TABLE 6,ISBN:0390672505,Stephan_collection,1970,4446,4446,0,sole source,1,Stephan_collection,1,1,1970
-Gorilla gorilla,Medulla_oblongata_Vol.mm3,Stephan_etal_1970_Table3,Stephan et al. (1970) TABLE 3,ISBN:0390672505,Stephan_collection,1970,6983,6983,0,sole source,1,Stephan_collection,1,1,1970
-Gorilla gorilla,Mesencephalon_Vol.mm3,Stephan_etal_1970_Table3,Stephan et al. (1970) TABLE 3,ISBN:0390672505,Stephan_collection,1970,4047,4047,0,sole source,1,Stephan_collection,1,1,1970
-Gorilla gorilla,Neocortex_Vol.mm3,Stephan_etal_1970_Table6,Stephan et al. (1970) TABLE 6,ISBN:0390672505,Stephan_collection,1970,317542,317542,0,sole source,1,Stephan_collection,1,1,1970
-Gorilla gorilla,Palaeocortex_plus_amygdala_Vol.mm3,Stephan_etal_1970_Table6,Stephan et al. (1970) TABLE 6,ISBN:0390672505,Stephan_collection,1970,4530,4530,0,sole source,1,Stephan_collection,1,1,1970
-Gorilla gorilla,Schizo_cortex_Vol.mm3,Stephan_etal_1970_Table6,Stephan et al. (1970) TABLE 6,ISBN:0390672505,Stephan_collection,1970,2537,2537,0,sole source,1,Stephan_collection,1,1,1970
-Gorilla gorilla,Septum_Vol.mm3,Stephan_etal_1970_Table6,Stephan et al. (1970) TABLE 6,ISBN:0390672505,Stephan_collection,1970,1090,1090,0,sole source,1,Stephan_collection,1,1,1970
-Gorilla gorilla,Striatum_Vol.mm3,Stephan_etal_1970_Table6,Stephan et al. (1970) TABLE 6,ISBN:0390672505,Stephan_collection,1970,13547,13547,0,sole source,1,Stephan_collection,1,1,1970
-Gorilla gorilla,Telencephalon_Vol.mm3,Stephan_etal_1970_Table3,Stephan et al. (1970) TABLE 3,ISBN:0390672505,Stephan_collection,1970,343987,343987,0,sole source,1,Stephan_collection,1,1,1970
-Gorilla gorilla,Total_brain_net_volume_Vol.mm3,Stephan_etal_1970_Table3,Stephan et al. (1970) TABLE 3,ISBN:0390672505,Stephan_collection,1970,437433,437433,0,sole source,1,Stephan_collection,1,1,1970
 Gorilla sp.,Agranular_insular_cortex_Vol.mm3,Bauernfeind_etal_2013_Table1,Bauernfeind et al. (2013) Table 1,10.1016/j.jhevol.2012.12.003,NA,NA,NA,1107,NA,"derived both-hemisphere value (step 7: left+right, or 2x a one-side measurement); cite this source for the one-side figure",NA,Zilles,1,1,2013
 Gorilla sp.,Agranular_insular_cortex_left_Vol.mm3,Bauernfeind_etal_2013_Table1,Bauernfeind et al. (2013) Table 1,10.1016/j.jhevol.2012.12.003,Zilles,2013,570,570,0,sole source,1,Zilles,1,1,2013
 Gorilla sp.,Agranular_insular_cortex_right_Vol.mm3,Bauernfeind_etal_2013_Table2,Bauernfeind et al. (2013) Table 2,10.1016/j.jhevol.2012.12.003,Zilles,2013,537,537,0,sole source,1,Zilles,1,1,2013
@@ -3345,6 +3330,7 @@ Gorilla sp.,Nucleus_vestibularis_medialis_Vol.mm3,Baron_etal_1988_Table1,Baron e
 Gorilla sp.,Nucleus_vestibularis_medialis_unilateral_Vol.mm3,Matano__1986_TableI,Matano (1986) Table I,10.1159/000156277,Stephan_collection,1986,58.4,58.4,0,sole source,1,Stephan_collection,1,1,1986
 Gorilla sp.,Nucleus_vestibularis_superior_Vol.mm3,Baron_etal_1988_Table1,Baron et al. (1988) Table 1,PMID:3216099,Stephan_collection,1988,61.7,61.7,0,sole source,1,Stephan_collection,1,1,1988
 Gorilla sp.,Nucleus_vestibularis_superior_unilateral_Vol.mm3,Matano__1986_TableI,Matano (1986) Table I,10.1159/000156277,Stephan_collection,1986,34.7,34.7,0,sole source,1,Stephan_collection,1,1,1986
+Gorilla sp.,Palaeocortex_plus_amygdala_Vol.mm3,Stephan_etal_1970_Table6,Stephan et al. (1970) TABLE 6,ISBN:0390672505,Stephan_collection,1970,4530,4530,0,sole source,1,Stephan_collection,1,1,1970
 Gorilla sp.,Pallidum_Vol.mm3,Stephan_etal_1981_TableVIII,Stephan et al. (1981) Table VIII,10.1159/000155963,Stephan_collection,1981,2604,2604,0,sole source,1,Stephan_collection,1,1,1981
 Gorilla sp.,PrefrontalCortex_grey_matter_Vol.mm3,Smaers_etal_2011_SupplementaryTable2,Smaers et al. (2011) SupplementaryTable2,10.1159/000323671,Zilles,2011,11640,11640,0,sole source,1,Zilles,1,1,2011
 Gorilla sp.,PrefrontalCortex_grey_matter_left_Vol.mm3,Smaers_etal_2011_SupplementaryTable2,Smaers et al. (2011) SupplementaryTable2,10.1159/000323671,Zilles,2011,5870,5870,0,sole source,1,Zilles,1,1,2011
@@ -4060,13 +4046,17 @@ Lama glama,FlocculonodularLobe_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell 
 Lama glama,Hippocampus_Vol.mm3,Reep_etal_2007_Table1,Reep et al. (2007) Table 1,10.1159/000101491,Reep,2007,3524.16,3524.16,0,sole source,1,Reep,1,1,2007
 Lama glama,Medulla_oblongata_Vol.mm3,Reep_etal_2007_Table1,Reep et al. (2007) Table 1,10.1159/000101491,Reep,2007,8955.36,8955.36,0,sole source,1,Reep,1,1,2007
 Lama glama,Mesencephalon_Vol.mm3,Reep_etal_2007_Table1,Reep et al. (2007) Table 1,10.1159/000101491,Reep,2007,6617.76,6617.76,0,sole source,1,Reep,1,1,2007
-Lama glama,Neocortex_Vol.mm3,Reep_etal_2007_Table1,Reep et al. (2007) Table 1,10.1159/000101491,Reep,2007,99180,99180,0,sole source,1,Reep,1,1,2007
+Lama glama,Neocortex_Vol.mm3,Bush_Allman_2004_a_Table2,Bush & Allman (2004) Table 2,10.1073/pnas.0305760101,Bush,2004,163620,131400,24.52,averaged into the merged value,1,Bush; Reep,2,2,2007
+Lama glama,Neocortex_Vol.mm3,Reep_etal_2007_Table1,Reep et al. (2007) Table 1,10.1159/000101491,Reep,2007,99180,131400,-24.52,averaged into the merged value,1,Bush; Reep,2,2,2007
+Lama glama,Neocortex_grey_matter_Vol.mm3,Bush_Allman_2004_a_Table2,Bush & Allman (2004) Table 2,10.1073/pnas.0305760101,Bush,2004,104950,104950,0,sole source,1,Bush,1,1,2004
+Lama glama,Neocortex_white_matter_Vol.mm3,Bush_Allman_2004_a_Table2,Bush & Allman (2004) Table 2,10.1073/pnas.0305760101,Bush,2004,58670,58670,0,sole source,1,Bush,1,1,2004
 Lama glama,Palaeocortex_Vol.mm3,Reep_etal_2007_Table1,Reep et al. (2007) Table 1,10.1159/000101491,Reep,2007,2737.92,2737.92,0,sole source,1,Reep,1,1,2007
 Lama glama,Pontine_and_reticulotegmental_nuclei_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,515,515,0,sole source,1,Ashwell,1,1,2020
 Lama glama,Schizo_cortex_Vol.mm3,Reep_etal_2007_Table1,Reep et al. (2007) Table 1,10.1159/000101491,Reep,2007,1693.44,1693.44,0,sole source,1,Reep,1,1,2007
 Lama glama,Septum_Vol.mm3,Reep_etal_2007_Table1,Reep et al. (2007) Table 1,10.1159/000101491,Reep,2007,310.56,310.56,0,sole source,1,Reep,1,1,2007
 Lama glama,Striatum_including_globus_pallidus_Vol.mm3,Reep_etal_2007_Table1,Reep et al. (2007) Table 1,10.1159/000101491,Reep,2007,7429.44,7429.44,0,sole source,1,Reep,1,1,2007
-Lama glama,Total_brain_net_volume_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,232000,232000,0,sole source,1,Ashwell,1,1,2020
+Lama glama,Total_brain_net_volume_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,232000,256635,-9.6,averaged into the merged value,1,Ashwell; Bush,2,2,2020
+Lama glama,Total_brain_net_volume_Vol.mm3,Bush_Allman_2004_a_Table2,Bush & Allman (2004) Table 2,10.1073/pnas.0305760101,Bush,2004,281270,256635,9.6,averaged into the merged value,1,Ashwell; Bush,2,2,2020
 Lasiorhinus latifrons,CerebellarCortex_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,3380,3380,0,sole source,1,Ashwell,1,1,2020
 Lasiorhinus latifrons,CerebellarHemisphere_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,1613,1613,0,sole source,1,Ashwell,1,1,2020
 Lasiorhinus latifrons,CerebellarVermis_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,1561,1561,0,sole source,1,Ashwell,1,1,2020
@@ -4189,10 +4179,6 @@ Lepilemur ruficaudatus,Trigeminal_motor_nucleus_left_Vol.mm3,Sherwood_etal_2005_
 Lepilemur ruficaudatus,Tuberculum_olfactorium_Vol.mm3,Baron_etal_1987_Table1,Baron et al. (1987) Table 1,PMID:3116076,Stephan_collection,1987,27.1,27.1,0,sole source,1,Stephan_collection,1,1,1987
 Lepilemur ruficaudatus,Ventral_pons_Vol.mm3,Matano_etal_1985_b_Table1,Matano et al. (1985) Table 1,10.1159/000156211,Stephan_collection,1985,26.2,26.2,0,sole source,1,Stephan_collection,1,1,1985
 Lepilemur ruficaudatus,Ventricles_Vol.mm3,Stephan_etal_1981_TableII,Stephan et al. (1981) Table II,10.1159/000155963,Stephan_collection,1981,76.5,76.5,0,sole source,1,Stephan_collection,1,1,1981
-Llama glama,Neocortex_Vol.mm3,Bush_Allman_2004_a_Table2,Bush & Allman (2004) Table 2,10.1073/pnas.0305760101,Bush,2004,163620,163620,0,sole source,1,Bush,1,1,2004
-Llama glama,Neocortex_grey_matter_Vol.mm3,Bush_Allman_2004_a_Table2,Bush & Allman (2004) Table 2,10.1073/pnas.0305760101,Bush,2004,104950,104950,0,sole source,1,Bush,1,1,2004
-Llama glama,Neocortex_white_matter_Vol.mm3,Bush_Allman_2004_a_Table2,Bush & Allman (2004) Table 2,10.1073/pnas.0305760101,Bush,2004,58670,58670,0,sole source,1,Bush,1,1,2004
-Llama glama,Total_brain_net_volume_Vol.mm3,Bush_Allman_2004_a_Table2,Bush & Allman (2004) Table 2,10.1073/pnas.0305760101,Bush,2004,281270,281270,0,sole source,1,Bush,1,1,2004
 Lophocebus albigena,Agranular_insular_cortex_Vol.mm3,Bauernfeind_etal_2013_Table1,Bauernfeind et al. (2013) Table 1,10.1016/j.jhevol.2012.12.003,NA,NA,NA,190,NA,"derived both-hemisphere value (step 7: left+right, or 2x a one-side measurement); cite this source for the one-side figure",NA,Zilles,1,1,2013
 Lophocebus albigena,Agranular_insular_cortex_left_Vol.mm3,Bauernfeind_etal_2013_Table1,Bauernfeind et al. (2013) Table 1,10.1016/j.jhevol.2012.12.003,Zilles,2013,95,95,0,sole source,1,Zilles,1,1,2013
 Lophocebus albigena,Amygdala_Vol.mm3,Stephan_etal_1987_Table1,Stephan et al. (1987) Table 1,PMID:3693895,Stephan_collection,1987,781.3,781.3,0,sole source,1,Stephan_collection,1,1,1987
@@ -7332,19 +7318,19 @@ Scutisorex somereni,Bulbus_olfactorius_Vol.mm3,Baron_etal_1987_Table1,Baron et a
 Scutisorex somereni,Commissura_anterior_Vol.mm3,Baron_etal_1987_Table1,Baron et al. (1987) Table 1,PMID:3116076,Stephan_collection,1987,2.2,2.2,0,sole source,1,Stephan_collection,1,1,1987
 Scutisorex somereni,Complexus_centromedialis_Vol.mm3,Stephan_etal_1987_Table1,Stephan et al. (1987) Table 1,PMID:3693895,Stephan_collection,1987,8,8,0,sole source,1,Stephan_collection,1,1,1987
 Scutisorex somereni,Complexus_corticobasolateralis_Vol.mm3,Stephan_etal_1987_Table1,Stephan et al. (1987) Table 1,PMID:3693895,Stephan_collection,1987,9.8,9.8,0,sole source,1,Stephan_collection,1,1,1987
+Scutisorex somereni,Complexus_sensorius_trigeminalis_Vol.mm3,Baron_etal_1990_Table1,Baron et al. (1990) Table 1,PMID:2358663,Stephan_collection,1990,15.5,15.5,0,sole source,1,Stephan_collection,1,1,1990
+Scutisorex somereni,Complexus_vestibularis_Vol.mm3,Baron_etal_1988_Table1,Baron et al. (1988) Table 1,PMID:3216099,Stephan_collection,1988,3.55,3.55,0,sole source,1,Stephan_collection,1,1,1988
 Scutisorex somereni,Nucleus_amygdalae_basalis_pars_magnocellularis_Vol.mm3,Stephan_etal_1987_Table1,Stephan et al. (1987) Table 1,PMID:3693895,Stephan_collection,1987,1.7,1.7,0,sole source,1,Stephan_collection,1,1,1987
 Scutisorex somereni,Nucleus_tractus_olfactorius_Vol.mm3,Stephan_etal_1987_Table1,Stephan et al. (1987) Table 1,PMID:3693895,Stephan_collection,1987,0.79,0.79,0,sole source,1,Stephan_collection,1,1,1987
+Scutisorex somereni,Nucleus_vestibularis_descendens_Vol.mm3,Baron_etal_1988_Table1,Baron et al. (1988) Table 1,PMID:3216099,Stephan_collection,1988,1.07,1.07,0,sole source,1,Stephan_collection,1,1,1988
+Scutisorex somereni,Nucleus_vestibularis_lateralis_Vol.mm3,Baron_etal_1988_Table1,Baron et al. (1988) Table 1,PMID:3216099,Stephan_collection,1988,0.613,0.613,0,sole source,1,Stephan_collection,1,1,1988
+Scutisorex somereni,Nucleus_vestibularis_medialis_Vol.mm3,Baron_etal_1988_Table1,Baron et al. (1988) Table 1,PMID:3216099,Stephan_collection,1988,1.42,1.42,0,sole source,1,Stephan_collection,1,1,1988
+Scutisorex somereni,Nucleus_vestibularis_superior_Vol.mm3,Baron_etal_1988_Table1,Baron et al. (1988) Table 1,PMID:3216099,Stephan_collection,1988,0.448,0.448,0,sole source,1,Stephan_collection,1,1,1988
 Scutisorex somereni,Prepiriform_cortex_Vol.mm3,Baron_etal_1987_Table1,Baron et al. (1987) Table 1,PMID:3116076,Stephan_collection,1987,48.9,48.9,0,sole source,1,Stephan_collection,1,1,1987
 Scutisorex somereni,Retrobulbar_cortex_Vol.mm3,Baron_etal_1987_Table1,Baron et al. (1987) Table 1,PMID:3116076,Stephan_collection,1987,13,13,0,sole source,1,Stephan_collection,1,1,1987
 Scutisorex somereni,Substantia_innominata_Vol.mm3,Baron_etal_1987_Table1,Baron et al. (1987) Table 1,PMID:3116076,Stephan_collection,1987,1.9,1.9,0,sole source,1,Stephan_collection,1,1,1987
 Scutisorex somereni,Tractus_olfactorius_lateralis_Vol.mm3,Baron_etal_1987_Table1,Baron et al. (1987) Table 1,PMID:3116076,Stephan_collection,1987,3.5,3.5,0,sole source,1,Stephan_collection,1,1,1987
 Scutisorex somereni,Tuberculum_olfactorium_Vol.mm3,Baron_etal_1987_Table1,Baron et al. (1987) Table 1,PMID:3116076,Stephan_collection,1987,13.8,13.8,0,sole source,1,Stephan_collection,1,1,1987
-ScutisorexÊsomereni,Complexus_sensorius_trigeminalis_Vol.mm3,Baron_etal_1990_Table1,Baron et al. (1990) Table 1,PMID:2358663,Stephan_collection,1990,15.5,15.5,0,sole source,1,Stephan_collection,1,1,1990
-ScutisorexÊsomereni,Complexus_vestibularis_Vol.mm3,Baron_etal_1988_Table1,Baron et al. (1988) Table 1,PMID:3216099,Stephan_collection,1988,3.55,3.55,0,sole source,1,Stephan_collection,1,1,1988
-ScutisorexÊsomereni,Nucleus_vestibularis_descendens_Vol.mm3,Baron_etal_1988_Table1,Baron et al. (1988) Table 1,PMID:3216099,Stephan_collection,1988,1.07,1.07,0,sole source,1,Stephan_collection,1,1,1988
-ScutisorexÊsomereni,Nucleus_vestibularis_lateralis_Vol.mm3,Baron_etal_1988_Table1,Baron et al. (1988) Table 1,PMID:3216099,Stephan_collection,1988,0.613,0.613,0,sole source,1,Stephan_collection,1,1,1988
-ScutisorexÊsomereni,Nucleus_vestibularis_medialis_Vol.mm3,Baron_etal_1988_Table1,Baron et al. (1988) Table 1,PMID:3216099,Stephan_collection,1988,1.42,1.42,0,sole source,1,Stephan_collection,1,1,1988
-ScutisorexÊsomereni,Nucleus_vestibularis_superior_Vol.mm3,Baron_etal_1988_Table1,Baron et al. (1988) Table 1,PMID:3216099,Stephan_collection,1988,0.448,0.448,0,sole source,1,Stephan_collection,1,1,1988
 Semnopithecus entellus,Area_striata_grey_matter_Vol.mm3,Bush_Allman_2004_b_TABLE1,Bush & Allman (2004) TABLE 1,10.1002/ar.a.20114,Bush,2004,4320,4320,0,sole source,1,Bush,1,1,2004
 Semnopithecus entellus,CerebellarCortex_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,9431,9431,0,sole source,1,Ashwell,1,1,2020
 Semnopithecus entellus,CerebellarHemisphere_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,6456,6456,0,sole source,1,Ashwell,1,1,2020

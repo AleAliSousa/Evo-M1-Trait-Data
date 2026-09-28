@@ -14,3 +14,4 @@ Helarctos,column = Helarctos malayanus (Malayan bear),,Species,,primary,Carnivor
 Ailuropoda,column = Ailuropoda melanoleuca (giant panda),,Species,,primary,Carnivora,Kamiya_Pirlot_1988_Table1,,
 Ursus,column = Ursus americanus (American black bear),,Species,,primary,Carnivora,Kamiya_Pirlot_1988_Table1,,
 source,registry item key,,,,provenance,Carnivora,Kamiya_Pirlot_1988_Table1,,
+Method:species_lookup,"wide table (one column per taxon: Helarctos | Ailuropoda | Ursus); the binomial each printed column header stands for, with basis and note, is recorded in reference_tables/Kamiya_Pirlot_1988_Table1_taxa.csv",,,,method,,Kamiya_Pirlot_1988_Table1,binomials stated in the paper's text (basis = verbatim); wide analysis columns unchanged for existing consumers,

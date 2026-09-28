@@ -1,8 +1,12 @@
 # Species naming — one way for the whole dataset
 
-**Status:** proposed design (no code changed yet). This spec defines a single, shared way to
+**Status:** v1 implemented 2026-09-28 — `_keys/resolve_species.R` (identity resolver, §3c), all
+spokes on the unified schema (§3b) incl. the new `_keys/General/species_key.csv` for papers with no
+registered collection, and every `__merging_*` build script (13 R + 4 Python, via
+`resolve_species.py`) sourcing the resolver (the resolving merges set `Species` from it; every long
+table carries `species_printed`, `accepted_name`, `species_basis`, `reidentified`). This spec defines a single, shared way to
 resolve species names so the *same per-paper table* can feed any sub-dataset (volumes, cell counts,
-metabolic, …) and get **the same accepted name every time**. Review this, then we migrate the code.
+metabolic, …) and get **the same accepted name every time**.
 
 It refines the hub-and-spoke design already described in `_keys/README.md` — that design stays;
 this fixes the part that drifted (two resolution mechanisms and two key schemas).
@@ -37,9 +41,10 @@ Sections below marked **(v2)** describe the later stage; everything else is v1.
 Today a species name is resolved in **two different ways**, so the same species can come out
 differently depending on which sub-dataset it lands in:
 
-- **Volumes** (`__merging_volumes/volumes_compiled.R`, step 4) maps each paper's printed name through
-  `_keys/Stephan/species_key.csv` using a per-paper `token` and an `accepted(token, name)` function.
-  It reads **only the Stephan key** (not Allman or HerculanoHouzel).
+- **Volumes** (`__merging_volumes/volumes_compiled.R`, step 4) — pre-migration it no longer used the
+  Stephan key at all: it resolved names through an NCBI backbone cache
+  (`volumes_species_ids_cache.csv`) plus `_keys/volumes_species_overrides.csv` keyed by item name
+  (both migrated into the spokes on 2026-09-28 and no longer read for resolution).
 - **Cell counts** (`__merging_cellcounts/cellcounts_compiled.R`, step 4) ignores the spoke keys and
   resolves names with a **live NCBI `name2taxid()` lookup** to an NCBI "preferred name".
 - A few per-paper build scripts (the `Bush_Allman_*` ones) *also* harmonise in-script, against
@@ -150,7 +155,10 @@ variant_name, accepted_name, source_publication, collection, ncbi_taxid, basis, 
 
 ### 3c. Resolver — `_keys/resolve_species.R` (NEW)
 
-A small file that loads once and exposes one function. **Proposed contract:**
+A small file that loads once and exposes one function; `_keys/resolve_species.py` is its
+stdlib+pandas mirror with the identical contract (same normalisation, match order and return
+columns; `python _keys/resolve_species.py --selftest` asserts agreement with the R resolver), used by
+the Python-built merges (GLI, weights, endocranial_volume, cerebral_metabolic_rate). **Contract:**
 
 ```r
 # resolve_species(printed, source_publication = NULL,

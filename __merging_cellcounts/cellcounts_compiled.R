@@ -4,7 +4,7 @@ setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/
 ## 1 Get data for cell count analyses
 ## 2 Change to standardized terminology for all variables in those dataframes
 ## 3 Calculate variables to match them across datasets before filtering
-## 4 Rename Species using NCBI Taxonomy as the standard
+## 4 Rename Species via the shared resolver (_keys/resolve_species.R)
 ## 5 Filter: Remove flagged data in cellcounts_data_list
 ## 6 Filter: Annex to Metadata any contingent variables
 ## 7 Filter: Consider averaging variables if samples differ between teams  ## Check for variables measured by more than one team
@@ -449,129 +449,39 @@ for (i in seq_along(cellcounts_data_list)) {
 #   item_name (above) and the authors' unpublished data is used instead. Verification:
 #   DosSantos_etal_2020/DosSantos_etal_2020_Table1_check.R + DosSantos_etal_2020_comparison_summary.md.
   
-## 4 Rename Species using NCBI Taxonomy as the standard
+## 4 Rename Species using the shared resolver (_keys/resolve_species.R; SPECIES_NAMING.md v1)
+## The former live NCBI name2taxid()/taxid2name() lookup and the hand edits below it were migrated
+## into the spoke keys (_keys/HerculanoHouzel/species_key.csv etc., basis/note per row) on
+## 2026-09-28. cellcounts_source_species_ids.csv is left on disk as the pre-migration record and is
+## no longer read or written here; the reviewable mapping now goes to cellcounts_species_resolution.csv.
 
-# 4.1 Compare full source_species_list to NCBI Taxonomy ID 
-library(taxizedb)
-# Get a full list of species in alphabetical order to examine
-source_species_list <- character(0)
-for (i in seq_along(cellcounts_data_list)) {
-  source_species_list <- sort(unique(c(source_species_list, cellcounts_data_list[[i]]$Species)))
-}
+# 4.1 Resolve every (item, printed name) pair through the spoke keys + hub -- offline, source-aware
+source(file.path("..", "_keys/resolve_species.R"))
+source_species_ids <- do.call(rbind, lapply(names(cellcounts_data_list), function(item) {
+  printed <- sort(unique(cellcounts_data_list[[item]]$Species))
+  r <- resolve_species(printed, source_publication = paper_folder_of_item(item, ".."))
+  data.frame(Source_Species = item, source_publication = paper_folder_of_item(item, ".."),
+             Species_Name_Source = printed, Species_Name = r$accepted_name,
+             species_basis = r$species_basis, reidentified = r$reidentified,
+             match_level = r$match_level, unresolved = r$unresolved, stringsAsFactors = FALSE)
+}))
+# Save the data frame as a CSV file (one row per item x printed name)
+write.csv(source_species_ids, "cellcounts_species_resolution.csv", row.names = FALSE)
+if (any(source_species_ids$unresolved))
+  warning("cellcounts species resolution: ", sum(source_species_ids$unresolved),
+          " (item, printed name) pair(s) matched no spoke row or hub name -> kept the printed name. ",
+          "See cellcounts_species_resolution.csv.")
 
-# Get NCBI Taxonomic IDs for source_species_list
-ids <- name2taxid(source_species_list, out_type = "summary")
-# Get NCBI Preferred Names for those Taxonomic IDs
-preferred_names <- taxid2name(ids$id, out_type = "summary")
-
-# Identify any names not listed
-names_not_listed <- setdiff(source_species_list, ids$name)
-
-# Create a data frame with Species Name in Source, Preferred Name and Taxonomic ID
-source_species_ids <- data.frame(
-  Species_Name_Source = source_species_list,
-  Preferred_Name = NA,
-  Taxonomic_ID = NA
-)
-
-# Update Taxonomic_Name and Taxonomic_ID for listed species
-source_species_ids$Taxonomic_ID[source_species_list %in% ids$name] <- ids$id
-source_species_ids$Preferred_Name[source_species_list %in% ids$name] <- preferred_names
-
-# Include names_not_listed in the Species_Name_Source column with "NA"
-source_species_ids <- rbind(source_species_ids, data.frame(
-  Species_Name_Source = names_not_listed,
-  Preferred_Name = NA,
-  Taxonomic_ID = NA
-))
-
-# Sort source_species_ids by the same order as source_species_list
-source_species_ids <- source_species_ids[match(source_species_list, source_species_ids$Species_Name_Source), ]
-
-# Add a column to check if Preferred_Name is different from Original_Species_Name or if it's NA and Original_Species_Name is from names_not_listed
-source_species_ids$different <- ifelse(source_species_ids$Preferred_Name != source_species_ids$Species_Name_Source | (is.na(source_species_ids$Preferred_Name) & source_species_ids$Species_Name_Source %in% names_not_listed), TRUE, "")
-
-# Add a column called Reference_Note to source_species_ids
-source_species_ids$Reference_Note <- ifelse(
-  source_species_ids$Preferred_Name == source_species_ids$Species_Name_Source, 
-  "NCBI exact",
-  ifelse(
-    !is.na(source_species_ids$Preferred_Name),
-    "NCBI",
-    NA
-  )
-)
-
-# Add a column with the dataframes that are the source of the 
-source_species_source <- list()
-# Loop through each dataframe in cellcounts_data_list
-for (i in seq_along(cellcounts_data_list)) {
-  current_species <- sort(unique(cellcounts_data_list[[i]]$Species))
-  source_species_list <- sort(unique(c(source_species_list, current_species)))
-  # Create a mapping of species to the dataframes that include them
-  for (species in current_species) {
-    if (!(species %in% names(source_species_source))) {
-      source_species_source[[species]] <- character(0)
-    }
-    source_species_source[[species]] <- sort(unique(c(source_species_source[[species]], names(cellcounts_data_list)[i])))
-  }
-}
-source_species_ids$Source_Species = sapply(source_species_list, function(species) paste(source_species_source[[species]], collapse = ", "))
-
-## 4.2 Create a new column for updated species names if they are not all are the NCBI default Preferred Name for their Taxonomic ID
-
-# Add a column called Species_Name with the Preferred_Name. If NA, leave blank.
-source_species_ids$Species_Name <- ifelse(
-  !is.na(source_species_ids$Preferred_Name), 
-  source_species_ids$Preferred_Name,
-  NA
-)
-
-# Add information about the remaining species: Species_Name to use and reference note
-source_species_ids$Species_Name[source_species_ids$Species_Name_Source == "Cryptomys pretoriae"] <- "Cryptomys hottentotus pretoriae"
-source_species_ids$Reference_Note[source_species_ids$Species_Name_Source == "Cryptomys pretoriae"] <- "ITIS invalid synonym"
-source_species_ids$Species_Name[source_species_ids$Species_Name_Source == "Cynomys sp."] <- "Cynomys sp."
-source_species_ids$Reference_Note[source_species_ids$Species_Name_Source == "Cynomys sp."] <- "Genus, species unknown"
-source_species_ids$Species_Name[source_species_ids$Species_Name_Source == "Dasyprocta prymnolopha"] <- "Dasyprocta prymnolopha"
-source_species_ids$Reference_Note[source_species_ids$Species_Name_Source == "Dasyprocta prymnolopha"] <- "ITIS valid, missing from NCBI"
-source_species_ids$Species_Name[source_species_ids$Species_Name_Source == "Homo sapiens sapiens"] <- "Homo sapiens"
-source_species_ids$Reference_Note[source_species_ids$Species_Name_Source == "Homo sapiens sapiens"] <- "GBIF for subspecies"
-source_species_ids$Species_Name[source_species_ids$Species_Name_Source == "Papio anubis cynocephalus"] <- "Papio cynocephalus"
-source_species_ids$Reference_Note[source_species_ids$Species_Name_Source == "Papio anubis cynocephalus"] <- "referenced papers call these Papio cynocephalus (Gabi 2010), Papio sp (HH 2008)"
-
-# Automatically add Taxonomic_IDs and Preferred_Name if NA (unless exempt from this step)
-# These are exempt, because NCBI Taxon ID doesn't apply at species level: Dasyprocta prymnolopha, Cynomys sp.
-# Create species_list with updated names
-species_list <- source_species_ids$Species_Name
-# Update Taxonomic IDs for species_list
-ids <- name2taxid(species_list, out_type = "summary")
-# Update Preferred Names for those Taxonomic IDs
-preferred_names <- taxid2name(ids$id, out_type = "summary")
-# Update Taxonomic_ID for listed species
-source_species_ids$Taxonomic_ID <- ifelse(
-  is.na(source_species_ids$Taxonomic_ID),
-  ids$id[match(source_species_ids$Species_Name, ids$name)],
-  source_species_ids$Taxonomic_ID
-)
-# Update Preferred_Name for listed species
-source_species_ids$Preferred_Name <- ifelse(
-  is.na(source_species_ids$Preferred_Name),
-  ids$name[match(source_species_ids$Taxonomic_ID, ids$id)],
-  source_species_ids$Preferred_Name
-)
-
-# Save the data frame as a CSV file
-write.csv(source_species_ids, "cellcounts_source_species_ids.csv", row.names = FALSE)
-
-# 4.3 If there are species without NCBI ID, duplicate "Species" in all dataframes in cellcounts_data_list and call it "Species_Source", so that "Species" can be edited
+# 4.3 Duplicate "Species" in all dataframes in cellcounts_data_list and call it "Species_Source", so that "Species" can be edited
 # Loop through each data frame in the list. Duplicate the "Species" column and rename it to "Species_Source"
 for (i in seq_along(cellcounts_data_list)) {
   cellcounts_data_list[[i]]$Species_Source <- cellcounts_data_list[[i]]$Species
 }
 
-# Loop through each data frame in the list and update the "Species" column by matching cellcounts_data_list "Species_Source" to source_species_ids "Species_Name_Source", and then using the value from source_species_ids "Species_Name"
+# Loop through each data frame in the list and update the "Species" column from the item's own resolution rows
 for (i in seq_along(cellcounts_data_list)) {
-  cellcounts_data_list[[i]]$Species <- source_species_ids$Species_Name[match(cellcounts_data_list[[i]]$Species_Source, source_species_ids$Species_Name_Source)]
+  m <- source_species_ids[source_species_ids$Source_Species == names(cellcounts_data_list)[i], ]
+  cellcounts_data_list[[i]]$Species <- m$Species_Name[match(cellcounts_data_list[[i]]$Species_Source, m$Species_Name_Source)]
 }
 
 # 4.4 Save a long unfiltered list for conflict check
@@ -1063,6 +973,17 @@ cellcounts_long <- stacked_long_dataframe %>%
   group_by(Species, Variable) %>%
   summarize(Value = mean(Value),
             Source = paste0(unique(Source), collapse = "_"))
+## Species naming columns (SPECIES_NAMING.md v1): cellcounts_long is one row per species x variable
+## with sources collapsed, so species_printed / species_basis list every distinct printed name / basis
+## that resolved to this Species across the items (from source_species_ids, step 4.1);
+## accepted_name == Species; reidentified = any of those rows was a reident.
+sp_cols <- species_columns_summary(
+  transform(source_species_ids, species_printed = Species_Name_Source, accepted_name = Species_Name,
+            Species = Species_Name), "Species")
+cellcounts_long <- cellcounts_long %>%
+  left_join(sp_cols %>% select(Species, species_printed, species_basis, reidentified), by = "Species") %>%
+  mutate(accepted_name = Species) %>%
+  relocate(species_printed, accepted_name, species_basis, reidentified, .after = Source)
 write_csv(cellcounts_long, "cellcounts_long.csv")
 
 # Convert to wide dataframe

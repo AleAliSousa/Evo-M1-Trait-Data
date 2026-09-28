@@ -177,8 +177,15 @@ long[["Brodmann 1913 surface"]] <- tibble(
   value = b13$`CorticalSurface_1hemisphere.mm2`, source = "Brodmann__1913_Table1")
 
 long <- bind_rows(long) |> filter(!is.na(value)) |>
-  mutate(Species = unify(Species),                                  # harmonise spelling variants
+  mutate(species_printed = Species,                                 # name before this merge's unify()
+         Species = unify(Species),                                  # harmonise spelling variants
          trait_class = ifelse(Standardized_Term %in% regional_terms, "regional", "whole_cortex"))
+## Species naming columns (SPECIES_NAMING.md v1): Species keeps this merge's unify() label; the shared
+## resolver adds the identity anchor + basis from the printed name, keyed by paper folder.
+source(file.path(base, "_keys", "resolve_species.R"))
+rs <- resolve_species(long$species_printed, source_publication = paper_folder_of_item(long$source, base))
+long <- long |> mutate(accepted_name = rs$accepted_name, species_basis = rs$species_basis,
+                       reidentified = rs$reidentified)
 
 ## Mota 2019 printed-thickness repair (2026-08-25). The paper defines mean thickness as
 ## T = VG/AG (gray volume / total surface), and 31 of 38 printed T values satisfy VG/AT exactly.
@@ -260,6 +267,7 @@ long$status[long$source == "Finlay_etal_2006_Table6.1"] <- "flagged_pending_Proj
 long$status[long$source == "Smaers_etal_2017_TableS1part2" &
             long$Standardized_Term == "OtherAssociation_Surface_Area.mm2" &
             long$Species == "Mandrillus sphinx"] <- "excluded_additivity_vs_Brodmann1913"
+long <- long |> relocate(species_printed, accepted_name, species_basis, reidentified, .after = last_col())
 readr::write_csv(long, "cortical_areas_long.csv")
 
 ## ---- wide: species x trait, mean across ACTIVE sources + conflict flag ----

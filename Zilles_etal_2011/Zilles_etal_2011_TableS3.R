@@ -49,6 +49,8 @@ final.dataframe <- rows %>% filter(!is_group, !is.na(catalogue_number))
 
 if (!nrow(final.dataframe)) stop("No specimen records remained after cleaning.", call.=FALSE)
 final.dataframe <- final.dataframe %>% mutate(source_row=row_number(), .before=1)
+# Table S3 is the human brain collection (source states human); no species column is printed.
+final.dataframe <- final.dataframe %>% mutate(Species_binomial="Homo sapiens", species_basis="verbatim")
 write_csv(final.dataframe, paste0(item_name, ".csv"), na="")
 base <- local({d <- folder; while(dirname(d)!=d && !file.exists(file.path(d,"__ReadMe.xlsx"))) d <- dirname(d); if(file.exists(file.path(d,"__ReadMe.xlsx"))) d else NA_character_})
 if (is.na(base)) warning("Repository root containing __ReadMe.xlsx was not found; public TSV skipped.") else {{

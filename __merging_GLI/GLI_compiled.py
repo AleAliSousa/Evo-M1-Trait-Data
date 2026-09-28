@@ -126,13 +126,29 @@ for _, row in wide.iterrows():
             "data_role": row["data_role"],
         })
 gli_long = pd.DataFrame(long_rows)
+## Species naming columns (SPECIES_NAMING.md v1): Species stays as this merge produces it; the shared
+## resolver (_keys/resolve_species.py, mirror of resolve_species.R) adds the identity anchor + basis
+## from the printed name, keyed by the source item's paper folder.
+import sys
+sys.path.insert(0, os.path.join(ROOT, "_keys"))
+from resolve_species import resolve_species, paper_folder_of_item  # noqa: E402
+rs = resolve_species(list(gli_long["species_as_published"]), paper_folder_of_item(list(gli_long["source"])))
+gli_long["species_printed"] = gli_long["species_as_published"]
+gli_long["accepted_name"] = rs["accepted_name"].values
+gli_long["species_basis"] = rs["species_basis"].values
+gli_long["reidentified"] = rs["reidentified"].values
 gli_long.to_csv(os.path.join(OUT, "GLI_long.csv"), index=False)
 print(f"GLI_long.csv: {len(gli_long)} rows")
 
 qa = (gli_long.groupby(["Species", "area_as_published", "stratum"], as_index=False)
       .agg(GLI_pct_species_mean=("GLI_pct", "mean"),
            n_specimens_contributing=("GLI_pct", "size"),
-           source=("source", "first")))
+           source=("source", "first"),
+           # species x area x stratum pools specimens: list the distinct printed names / bases
+           species_printed=("species_printed", lambda x: "; ".join(sorted(set(map(str, x))))),
+           accepted_name=("accepted_name", lambda x: "; ".join(sorted(set(map(str, x))))),
+           species_basis=("species_basis", lambda x: "; ".join(sorted(set(map(str, x))))),
+           reidentified=("reidentified", "any")))
 qa.to_csv(os.path.join(OUT, "GLI_species_area_stratum_comparison_qa_long.csv"), index=False)
 
 qa_wide = qa.pivot_table(index=["Species", "source"], columns=["area_as_published", "stratum"],

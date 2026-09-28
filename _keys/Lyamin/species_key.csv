@@ -1,8 +1,8 @@
-accepted_name,source_publication,variant_name,species_confidence,note
-Cephalorhynchus commersonii,Lyamin_etal_2008,Commerson's dolphin,high,
-Delphinapterus leucas,Lyamin_etal_2008,Beluga,high,monotypic genus
-Eschrichtius robustus,Lyamin_etal_2008,Gray whale,high,monotypic genus
-Inia geoffrensis,Lyamin_etal_2008,Amazon River dolphin,high,
-Orcinus orca,Lyamin_etal_2008,Killer whale,high,monotypic genus
-Phocoena phocoena,Lyamin_etal_2008,Harbor porpoise,high,
-Tursiops truncatus,Lyamin_etal_2008,Bottlenose dolphin,medium,"Tursiops aduncus is also called bottlenose dolphin; T. truncatus taken from the cited primary, Mukhametov and Lyamin (1997)"
+variant_name,accepted_name,source_publication,collection,ncbi_taxid,basis,note
+Amazon River dolphin,Inia geoffrensis,Lyamin_etal_2008,Lyamin,,synonym:legacy_key,species_confidence: high; migrated from pre-2026-09-28 key
+Beluga,Delphinapterus leucas,Lyamin_etal_2008,Lyamin,,synonym:legacy_key,species_confidence: high; monotypic genus; migrated from pre-2026-09-28 key
+Bottlenose dolphin,Tursiops truncatus,Lyamin_etal_2008,Lyamin,,synonym:legacy_key,"species_confidence: medium; Tursiops aduncus is also called bottlenose dolphin; T. truncatus taken from the cited primary, Mukhametov and Lyamin (1997); migrated from pre-2026-09-28 key"
+Commerson's dolphin,Cephalorhynchus commersonii,Lyamin_etal_2008,Lyamin,,synonym:legacy_key,species_confidence: high; migrated from pre-2026-09-28 key
+Gray whale,Eschrichtius robustus,Lyamin_etal_2008,Lyamin,,synonym:legacy_key,species_confidence: high; monotypic genus; migrated from pre-2026-09-28 key
+Harbor porpoise,Phocoena phocoena,Lyamin_etal_2008,Lyamin,9742,synonym:legacy_key,species_confidence: high; migrated from pre-2026-09-28 key
+Killer whale,Orcinus orca,Lyamin_etal_2008,Lyamin,9733,synonym:legacy_key,species_confidence: high; monotypic genus; migrated from pre-2026-09-28 key

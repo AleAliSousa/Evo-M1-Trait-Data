@@ -269,6 +269,14 @@ long <- long |>
             variant, variable_label,
             data_role, dependency, merge_default, ref, source_note, term_note, curation_note) |>
   arrange(source, Species, region, cell_type, measure, statistic)
+## Species naming columns (SPECIES_NAMING.md v1): Species / species_printed stay as harmonised above
+## (source accepted column or draft alias table); the shared resolver adds the identity anchor + basis
+## from the printed name (or Species where nothing was printed), keyed by paper folder.
+source(file.path(base, "_keys", "resolve_species.R"))
+rs <- resolve_species(coalesce(long$species_printed, long$Species),
+                      source_publication = paper_folder_of_item(long$source, base))
+long <- long |> mutate(accepted_name = rs$accepted_name, species_basis = rs$species_basis,
+                       reidentified = rs$reidentified)
 
 readr::write_csv(long, "cell_morphology_long.csv", na = "")
 

@@ -63,7 +63,7 @@ for (i in seq_len(nrow(data_rows))) {
   for (s in seq_along(samples)) {
     off <- 1 + (s - 1) * 3
     out[[length(out) + 1]] <- data.frame(
-      Sample                  = samples[s],
+      Sample_printed          = samples[s],
       Structure_Balzeau2012   = lobe_printed,
       Structure               = unname(lobe_map[lobe_printed]),
       n                       = as.integer(as_num(data_rows[i, off + 1])),
@@ -77,6 +77,18 @@ for (i in seq_len(nrow(data_rows))) {
 clean <- do.call(rbind, out)
 
 stopifnot(nrow(clean) == length(samples) * nrow(data_rows))  # 15 rows
+
+## ---- taxon assignment for the printed sample labels -------------------------
+## Printed labels are fossil-group hypotheses (s.l.), kept verbatim in Sample_printed.
+## The binomial, its basis and the taxon type come from the item-scoped lookup
+## reference_tables/<item>_taxa.csv (one row per printed label).
+taxa <- read.csv(file.path("reference_tables", paste0(item_name, "_taxa.csv")),
+                 stringsAsFactors = FALSE, na.strings = c("", "NA"))
+ti <- match(clean$Sample_printed, taxa$printed_name)
+stopifnot(!anyNA(ti))
+clean$Taxon_binomial <- taxa$Taxon_binomial[ti]
+clean$species_basis  <- taxa$species_basis[ti]
+clean$taxon_type     <- taxa$taxon_type[ti]
 
 csv_file <- file.path(folder, paste0(item_name, ".csv"))
 write.csv(clean, csv_file, row.names = FALSE)

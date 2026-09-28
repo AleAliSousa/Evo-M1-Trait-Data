@@ -25,3 +25,18 @@ Note:
 (found association with acoustic communication)
 
 2. Consider deleting because too encompassing. Almost all mammals, including all mammals in the sample for which there is data, have acoustic communication.
+
+
+Rebuild (2026-09-28, AI assistant session; species-column fix)
+
+- Frozen source: `Chen_Wiens_2020_SupplementaryData3_snapshot.xlsx` = byte-identical copy (cp) of
+  `41467_2020_14356_MOESM6_ESM.xlsx` (sha256 9b803880...44694). The original download is kept too.
+- Build: `Chen_Wiens_2020_SupplementaryData3.R` reads sheet "Supplementary Data_3" and writes
+  `Chen_Wiens_2020_SupplementaryData3.csv` + `__Public/comparative-data/<Item encoded>.tsv`
+  (Item encoded looked up by Item name in `__ReadMe.xlsx`). 1799 rows.
+- Why: the earlier public TSV (step 2-3 above, Numbers export) carried a "Table 1" title line and
+  parsed as a single column. The Numbers export subfolder `41467_2020_14356_MOESM6_ESM/` is left
+  in place as provenance of that earlier copy; it is no longer used.
+- Columns: `Species_printed` (as printed, Genus_species), `Species_binomial` (underscore -> space,
+  `species_basis = spelling`), Family, Order, Class, State (0/1), References, source.
+  Definitions: `reference_tables/Chen_Wiens_2020_SupplementaryData3_definitions.csv`.

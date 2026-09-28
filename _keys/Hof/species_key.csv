@@ -1,47 +1,51 @@
-accepted_name,source_publication,variant_name
-Aotus trivirgatus,Nimchinsky_etal_1999,Aotus trivirgatus
-Balaena mysticetus,Raghanti_etal_2015,Bowhead whale
-Bos taurus,Raghanti_etal_2015,Cow
-Callithrix jacchus,Nimchinsky_etal_1999,Callithrix jacchus
-Cebus apella,Nimchinsky_etal_1999,Cebus apella
-Cheirogaleus medius,Nimchinsky_etal_1999,Cheirogaleus medius
-Delphinapterus leucas,Butti_etal_2009,D. leucas
-Equus ferus caballus,Raghanti_etal_2015,Horse
-Erythrocebus patas,Nimchinsky_etal_1999,Erythrocebus patas
-Eulemur fulvus,Nimchinsky_etal_1999,Eulemur fulvus
-Galago senegalensis,Nimchinsky_etal_1999,Galago senegalensis
-Galagoides demidoff,Nimchinsky_etal_1999,Galagoides demidoff
-Gorilla gorilla,Nimchinsky_etal_1999,G. g. gorilla
-Gorilla gorilla,Nimchinsky_etal_1999,Gorilla gorilla gorilla
-Grampus griseus,Butti_etal_2009,G. griseus
-Homo sapiens,Nimchinsky_etal_1999,H. sapiens
-Homo sapiens,Nimchinsky_etal_1999,Homo sapiens
-Homo sapiens,Raghanti_etal_2015,Human
-Hylobates lar,Nimchinsky_etal_1999,Hylobates lar
-Lemur catta,Nimchinsky_etal_1999,Lemur catta
-Loris tardigradus,Nimchinsky_etal_1999,Loris tardigradus
-Loxodonta africana,Hakeem_etal_2009,African elephant
-Macaca fascicularis,Nimchinsky_etal_1999,Macaca fascicularis
-Macaca fuscata,Nimchinsky_etal_1999,Macaca fuscata
-Macaca mulatta,Nimchinsky_etal_1999,Macaca mulatta
-Macaca nemestrina,Nimchinsky_etal_1999,Macaca nemestrina
-Macaca nigra,Nimchinsky_etal_1999,Macaca nigra
-Megaptera novaeangliae,Butti_etal_2009,M. novaeangliae
-Microcebus murinus,Nimchinsky_etal_1999,Microcebus murinus
-Nycticebus coucang,Nimchinsky_etal_1999,Nycticebus coucang
-Odocoileus virginianus,Raghanti_etal_2015,Deer
-Ovis aries,Raghanti_etal_2015,Sheep
-Pan paniscus,Nimchinsky_etal_1999,P. paniscus
-Pan paniscus,Nimchinsky_etal_1999,Pan paniscus
-Pan troglodytes,Nimchinsky_etal_1999,P. troglodytes
-Pan troglodytes,Nimchinsky_etal_1999,Pan troglodytes
-Papio cynocephalus,Nimchinsky_etal_1999,Papio hamadryas cynocephalus
-Perodicticus potto,Nimchinsky_etal_1999,Perodicticus potto
-Pongo pygmaeus,Nimchinsky_etal_1999,P. pygmaeus
-Pongo pygmaeus,Nimchinsky_etal_1999,Pongo pygmaeus
-Procavia capensis,Raghanti_etal_2015,Rock hyrax
-Propithecus verreauxi,Nimchinsky_etal_1999,Propithecus verreauxi
-Saimiri sciureus,Nimchinsky_etal_1999,Saimiri sciureus
-Sus scrofa domesticus,Raghanti_etal_2015,Pig
-Tarsius syrichta,Nimchinsky_etal_1999,Tarsius syrichta
-Tursiops truncatus,Butti_etal_2009,T. truncatus
+variant_name,accepted_name,source_publication,collection,ncbi_taxid,basis,note
+D. leucas,Delphinapterus leucas,Butti_etal_2009,Hof,,synonym:legacy_key,migrated from pre-2026-09-28 key
+G. griseus,Grampus griseus,Butti_etal_2009,Hof,,synonym:legacy_key,migrated from pre-2026-09-28 key
+M. novaeangliae,Megaptera novaeangliae,Butti_etal_2009,Hof,,synonym:legacy_key,migrated from pre-2026-09-28 key
+T. truncatus,Tursiops truncatus,Butti_etal_2009,Hof,,synonym:legacy_key,migrated from pre-2026-09-28 key
+African elephant,Loxodonta africana,Hakeem_etal_2009,Hof,9785,synonym:legacy_key,migrated from pre-2026-09-28 key
+Aotus trivirgatus,Aotus trivirgatus,Nimchinsky_etal_1999,Hof,9505,verbatim,migrated from pre-2026-09-28 key
+Callithrix jacchus,Callithrix jacchus,Nimchinsky_etal_1999,Hof,9483,verbatim,migrated from pre-2026-09-28 key
+Cebus apella,Cebus apella,Nimchinsky_etal_1999,Hof,,verbatim,migrated from pre-2026-09-28 key
+Cheirogaleus medius,Cheirogaleus medius,Nimchinsky_etal_1999,Hof,,verbatim,migrated from pre-2026-09-28 key
+Erythrocebus patas,Erythrocebus patas,Nimchinsky_etal_1999,Hof,,verbatim,migrated from pre-2026-09-28 key
+Eulemur fulvus,Eulemur fulvus,Nimchinsky_etal_1999,Hof,,verbatim,migrated from pre-2026-09-28 key
+G. g. gorilla,Gorilla gorilla,Nimchinsky_etal_1999,Hof,9593,synonym:legacy_key,migrated from pre-2026-09-28 key
+Galago senegalensis,Galago senegalensis,Nimchinsky_etal_1999,Hof,,verbatim,migrated from pre-2026-09-28 key
+Galagoides demidoff,Galagoides demidoff,Nimchinsky_etal_1999,Hof,,verbatim,migrated from pre-2026-09-28 key
+Gorilla gorilla gorilla,Gorilla gorilla,Nimchinsky_etal_1999,Hof,9593,subspecies_assign,migrated from pre-2026-09-28 key
+H. sapiens,Homo sapiens,Nimchinsky_etal_1999,Hof,9606,synonym:legacy_key,migrated from pre-2026-09-28 key
+Homo sapiens,Homo sapiens,Nimchinsky_etal_1999,Hof,9606,verbatim,migrated from pre-2026-09-28 key
+Hylobates lar,Hylobates lar,Nimchinsky_etal_1999,Hof,,verbatim,migrated from pre-2026-09-28 key
+Lemur catta,Lemur catta,Nimchinsky_etal_1999,Hof,,verbatim,migrated from pre-2026-09-28 key
+Loris tardigradus,Loris tardigradus,Nimchinsky_etal_1999,Hof,,verbatim,migrated from pre-2026-09-28 key
+Macaca fascicularis,Macaca fascicularis,Nimchinsky_etal_1999,Hof,9541,verbatim,migrated from pre-2026-09-28 key
+Macaca fuscata,Macaca fuscata,Nimchinsky_etal_1999,Hof,,verbatim,migrated from pre-2026-09-28 key
+Macaca mulatta,Macaca mulatta,Nimchinsky_etal_1999,Hof,9544,verbatim,migrated from pre-2026-09-28 key
+Macaca nemestrina,Macaca nemestrina,Nimchinsky_etal_1999,Hof,9545,verbatim,migrated from pre-2026-09-28 key
+Macaca nigra,Macaca nigra,Nimchinsky_etal_1999,Hof,,verbatim,migrated from pre-2026-09-28 key
+Microcebus murinus,Microcebus murinus,Nimchinsky_etal_1999,Hof,30608,verbatim,migrated from pre-2026-09-28 key
+Nycticebus coucang,Nycticebus coucang,Nimchinsky_etal_1999,Hof,,verbatim,migrated from pre-2026-09-28 key
+P. paniscus,Pan paniscus,Nimchinsky_etal_1999,Hof,,spelling,migrated from pre-2026-09-28 key
+P. pygmaeus,Pongo pygmaeus,Nimchinsky_etal_1999,Hof,9600,synonym:legacy_key,migrated from pre-2026-09-28 key
+P. troglodytes,Pan troglodytes,Nimchinsky_etal_1999,Hof,,spelling,migrated from pre-2026-09-28 key
+Pan paniscus,Pan paniscus,Nimchinsky_etal_1999,Hof,,verbatim,migrated from pre-2026-09-28 key
+Pan troglodytes,Pan troglodytes,Nimchinsky_etal_1999,Hof,,verbatim,migrated from pre-2026-09-28 key
+Papio hamadryas cynocephalus,Papio cynocephalus,Nimchinsky_etal_1999,Hof,9556,synonym:legacy_key,migrated from pre-2026-09-28 key
+Perodicticus potto,Perodicticus potto,Nimchinsky_etal_1999,Hof,,verbatim,migrated from pre-2026-09-28 key
+Pongo pygmaeus,Pongo pygmaeus,Nimchinsky_etal_1999,Hof,9600,verbatim,migrated from pre-2026-09-28 key
+Propithecus verreauxi,Propithecus verreauxi,Nimchinsky_etal_1999,Hof,,verbatim,migrated from pre-2026-09-28 key
+Saimiri sciureus,Saimiri sciureus,Nimchinsky_etal_1999,Hof,9521,verbatim,migrated from pre-2026-09-28 key
+Tarsius syrichta,Tarsius syrichta,Nimchinsky_etal_1999,Hof,,verbatim,migrated from pre-2026-09-28 key
+Bowhead whale,Balaena mysticetus,Raghanti_etal_2015,Hof,,synonym:legacy_key,migrated from pre-2026-09-28 key
+Cow,Bos taurus,Raghanti_etal_2015,Hof,9913,synonym:legacy_key,migrated from pre-2026-09-28 key
+Deer,Odocoileus virginianus,Raghanti_etal_2015,Hof,,synonym:legacy_key,migrated from pre-2026-09-28 key
+Horse,Equus ferus caballus,Raghanti_etal_2015,Hof,,synonym:legacy_key,migrated from pre-2026-09-28 key
+Human,Homo sapiens,Raghanti_etal_2015,Hof,9606,synonym:legacy_key,migrated from pre-2026-09-28 key
+Pig,Sus scrofa domesticus,Raghanti_etal_2015,Hof,9825,synonym:legacy_key,migrated from pre-2026-09-28 key
+Rock hyrax,Procavia capensis,Raghanti_etal_2015,Hof,9813,synonym:legacy_key,migrated from pre-2026-09-28 key
+Sheep,Ovis aries,Raghanti_etal_2015,Hof,9940,synonym:legacy_key,migrated from pre-2026-09-28 key
+Gorilla beringei,Gorilla sp.,Sherwood_etal_2004,Hof,,lump,"DeCasien source; post-reshape word(1, 2) binomial; item: Sherwood_etal_2004_TABLEI; migrated from _keys/volumes_species_overrides.csv"
+Gorilla beringei beringei,Gorilla beringei,Sherwood_etal_2004,Hof,499232,subspecies_assign,high confidence; authority=NCBI; evidence=NCBI taxid 1159185 rank=subspecies (Gorilla beringei beringei); species=Gorilla beringei; rolled to species; accepted not yet in hub; files: Sherwood_etal_2004_TABLEI
+Gorilla gorilla,Gorilla sp.,Sherwood_etal_2004,Hof,,lump,"DeCasien source; post-reshape word(1, 2) binomial; item: Sherwood_etal_2004_TABLEI; migrated from _keys/volumes_species_overrides.csv"
+Pongo pygmaeus,Pongo sp.,Sherwood_etal_2004,Hof,,lump,"DeCasien source; post-reshape word(1, 2) binomial; item: Sherwood_etal_2004_TABLEI; migrated from _keys/volumes_species_overrides.csv"

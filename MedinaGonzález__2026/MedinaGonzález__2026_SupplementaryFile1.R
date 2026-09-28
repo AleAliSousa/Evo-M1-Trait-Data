@@ -27,7 +27,7 @@ raw <- raw[!is.na(raw$Specie) & nzchar(trimws(raw$Specie)), ]
 df <- data.frame(
   Row_ID      = seq_len(nrow(raw)),
   Order       = raw$Order,
-  Specie      = raw$Specie,
+  Species_printed = raw$Specie,   # printed column header is "Specie"; values kept verbatim
   Source_name = raw$"Source name",   # NA/blank kept exactly as printed -- see header note
   stringsAsFactors = FALSE, check.names = FALSE
 )

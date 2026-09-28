@@ -83,26 +83,23 @@ for (i in seq_len(nrow(vc))) {
   m <- regmatches(vc$paper[i], regexec("([A-Za-z]+).*?((?:19|20)[0-9]{2})", vc$paper[i]))[[1]]
   if (length(m) == 3) { k <- paste(tolower(m[2]), m[3]); if (is.null(role_ay[[k]])) role_ay[[k]] <- vc$role[i] }
 }
-ref   <- read.csv(file.path(repo, "_keys", "species_reference.csv"), stringsAsFactors = FALSE)$accepted_name
-ref_l <- setNames(ref, tolower(ref))
-variant_l <- c()                                    # named character: lower variant -> accepted
-for (kf in list.files(file.path(repo, "_keys"), pattern = "species_key.csv",
-                      recursive = TRUE, full.names = TRUE)) {
-  k <- read.csv(kf, stringsAsFactors = FALSE)
-  if (all(c("variant_name", "accepted_name") %in% names(k))) {
-    v <- tolower(trimws(k$variant_name)); a <- k$accepted_name
-    ok <- nzchar(v) & nzchar(a) & !duplicated(v) & !(v %in% names(variant_l))
-    variant_l <- c(variant_l, setNames(a[ok], v[ok]))       # first key wins, as in the Python
-  }
-}
-clean_sp <- function(x) trimws(gsub("\\s+", " ", gsub("_", " ", gsub("\\*", "", x))))
-# Vectorised: the Wilman table alone is 5,403 rows, so a scalar resolver is far too slow.
-resolve <- function(x) {
-  c0 <- clean_sp(x); lc <- tolower(c0)
-  o <- unname(ref_l[lc])
-  o2 <- unname(variant_l[lc])
-  ifelse(!is.na(o), o, ifelse(!is.na(o2), o2, c0))
-}
+## Species identity: the shared resolver (_keys/resolve_species.R; SPECIES_NAMING.md v1). Replaces the
+## former inline hub-then-first-key lookup (2026-09-28): rows are keyed by (paper folder, printed
+## variant) and carry a basis; unresolved names fall back to the cleaned printed string as before.
+source(file.path(repo, "_keys", "resolve_species.R"))
+# public TSV file -> paper folder, via the registry (Item encoded -> Item name), read from __ReadMe.xlsx
+reg_folder <- tryCatch({
+  r <- as.data.frame(readxl::read_excel(file.path(repo, "__ReadMe.xlsx"), sheet = "Sheet1",
+                                        col_types = "text", .name_repair = "minimal"),
+                     stringsAsFactors = FALSE, check.names = FALSE)
+  r <- r[!is.na(r[["Item encoded"]]) & nzchar(r[["Item encoded"]]), , drop = FALSE]
+  setNames(paper_folder_of_item(r[["Item name"]], repo), paste0(r[["Item encoded"]], ".tsv"))
+}, error = function(e) { message("body_ecology: registry not readable (", conditionMessage(e),
+                                 ") -> species resolved without paper scope"); character() })
+folder_of_file <- function(fn) { f <- unname(reg_folder[fn]); if (is.null(f) || !length(f)) NA_character_ else f }
+clean_sp <- species_normalise
+# Vectorised: the Wilman table alone is 5,403 rows; resolve_species() is vectorised over x.
+resolve <- function(x, fn = NA_character_) resolve_species(x, source_publication = folder_of_file(fn))
 
 # ---- readers ---------------------------------------------------------------
 read_tsv_rows <- function(path) {                   # -> list of character vectors, header first
@@ -178,10 +175,13 @@ get_species <- function(fn, headers, sample, rows) {
 # One harvested block. `value` is already in the canonical unit.
 blk <- function(species_raw, value, raw_value, raw_unit, mclass, measure, units,
                 fn, author, year, team, role) {
-  data.frame(Species = resolve(species_raw), Species_raw = species_raw,
+  rs <- resolve(species_raw, fn)
+  data.frame(Species = rs$accepted_name, Species_raw = species_raw,
              measure_class = mclass, Measure = measure, Units = units,
              Value_canonical = as.character(value), raw_value = raw_value, raw_unit = raw_unit,
              Source = fn, first_author = author, Year = year, Team = team, role = role,
+             species_printed = species_raw, accepted_name = rs$accepted_name,
+             species_basis = rs$species_basis, reidentified = rs$reidentified,
              stringsAsFactors = FALSE)
 }
 keep_rows <- function(d) {                          # drop unusable species labels
@@ -396,6 +396,13 @@ long <- data.frame(Species = k[, 1], measure_class = k[, 2], Measure = k[, 3], U
                    Teams = g("Teams"), roles = g("roles"),
                    value_min = g("value_min"), value_max = g("value_max"),
                    stringsAsFactors = FALSE, row.names = NULL)
+## Species naming columns (SPECIES_NAMING.md v1): long is pooled per species x measure, so
+## species_printed / species_basis list the distinct printed names / bases of the unfiltered rows that
+## resolved to this Species; accepted_name == Species; reidentified = any such row was a reident.
+sp_cols <- as.data.frame(species_columns_summary(uf, "Species"))
+ix <- match(long$Species, sp_cols$Species)
+long$species_printed <- sp_cols$species_printed[ix]; long$accepted_name <- long$Species
+long$species_basis   <- sp_cols$species_basis[ix];   long$reidentified  <- sp_cols$reidentified[ix]
 
 multi <- long$n_sources > 1
 dedupe <- data.frame(Species = long$Species[multi], Measure = long$Measure[multi],

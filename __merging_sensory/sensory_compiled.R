@@ -144,7 +144,8 @@ ref_key <- function(text){
 rows <- tibble(Species=character(), Measure=character(), Value=double(), Medium=character(),
                method_basis=character(), poolable_group=character(),
                population=character(), Source_item=character(), Study_keys=list(),
-               value_origin=character(), Data_role=character(), note=character())
+               value_origin=character(), Data_role=character(), note=character(),
+               species_printed=character())
 addrow <- function(sp, meas, val, it, keys, origin, role, note="", medium="air", pop="",
                    basis=NULL, group=NULL, column=NULL, sel=NULL){
   v <- suppressWarnings(as.numeric(val))
@@ -154,7 +155,8 @@ addrow <- function(sp, meas, val, it, keys, origin, role, note="", medium="air",
   rows <<- add_row(rows, Species=canon_sp(sp), Measure=meas, Value=v, Medium=medium,
                    method_basis=basis, poolable_group=group,
                    population=pop, Source_item=it, Study_keys=list(keys),
-                   value_origin=origin, Data_role=role, note=note)
+                   value_origin=origin, Data_role=role, note=note,
+                   species_printed=as.character(sp))
 }
 
 ## Heffner & Heffner 1992a -- study keys are CURATED in the footnotes reference table,
@@ -379,6 +381,13 @@ long <- long %>% arrange(Species, Measure, Medium) %>%
   select(Species, Measure, Units, Value, Medium, method_basis, poolable_group,
          n_studies, Sources, Study_keys,
          Data_role, value_origin, value_range)
+## Species naming columns (SPECIES_NAMING.md v1): Species keeps this merge's canon_sp() label; the
+## shared resolver adds the identity anchor + basis from the printed name at study-row level (keyed by
+## the source item's paper folder), collapsed per Species because long is pooled per species x measure.
+source(file.path(base, "_keys", "resolve_species.R"))
+rs <- resolve_species(rows$species_printed, source_publication = paper_folder_of_item(rows$Source_item, base))
+rows$accepted_name <- rs$accepted_name; rows$species_basis <- rs$species_basis; rows$reidentified <- rs$reidentified
+long <- long %>% left_join(species_columns_summary(rows, "Species"), by = "Species")
 
 ## ---- 5. write ---------------------------------------------------------------------------
 write.csv(long, "sensory_long.csv", row.names = FALSE, na = "")

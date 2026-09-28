@@ -1,0 +1,50 @@
+printed_name,printed_column,Species_binomial,taxon_rank,species_basis,taxon_type,note
+Monkey,common_name,,infraorder,unspecified_in_source,extant,Simiiformes; genus not stated
+Squirrel Monkey,common_name,Saimiri,genus,unspecified_in_source,extant,species not stated
+Human,common_name,Homo sapiens,species,our_judgment,extant,
+HumanM,common_name,Homo sapiens,species,our_judgment,extant,'HumanM' as printed (suffix unexplained)
+Human Path Specimen,common_name,Homo sapiens,species,our_judgment,extant,pathology specimen
+Human Subthalamic Nuc.,common_name,Homo sapiens,species,our_judgment,extant,row is a part (subthalamic nucleus)
+Mouse,common_name,Mus musculus,species,our_judgment,extant,unqualified 'Mouse' in a laboratory/comparative collection
+Parakeet,common_name,,order,unspecified_in_source,extant,Psittaciformes; probably Melopsittacus undulatus but not stated
+Frog (Rana pipiens ),common_name,Rana pipiens,species,verbatim,extant,binomial printed in the cell (current name Lithobates pipiens)
+Rabbit,common_name,Oryctolagus cuniculus,species,our_judgment,extant,unqualified 'Rabbit' = domestic/laboratory rabbit
+Turtle,common_name,,order,unspecified_in_source,extant,Testudines
+Chicken,common_name,Gallus gallus,species,our_judgment,extant,domestic fowl (G. g. domesticus)
+Dog,common_name,Canis familiaris,species,our_judgment,extant,unqualified 'Dog' = domestic dog (= Canis lupus familiaris)
+Chinchilla,common_name,Chinchilla,genus,unspecified_in_source,extant,probably C. lanigera but not stated
+Bat,common_name,,order,unspecified_in_source,extant,Chiroptera
+Monkey (Macaque ?),common_name,Macaca,genus,unspecified_in_source,extant,identification queried in the source ('?')
+Monkey(Macaque),common_name,Macaca,genus,unspecified_in_source,extant,
+Monkey (Macaque),common_name,Macaca,genus,unspecified_in_source,extant,
+Pheasant,common_name,,family,unspecified_in_source,extant,Phasianidae; probably Phasianus colchicus but not stated
+PriBr CVt and PriBr LCVt,common_name,,,unspecified_in_source,extant,"slide/series code, not a taxon name"
+Sheep,common_name,Ovis aries,species,our_judgment,extant,
+Alligator,common_name,Alligator,genus,unspecified_in_source,extant,probably A. mississippiensis but not stated
+PriBr SPWt,common_name,,,unspecified_in_source,extant,"slide/series code, not a taxon name"
+Opossum,common_name,,order,unspecified_in_source,extant,Didelphimorphia
+Squirrel (Sciurus niger ),common_name,Sciurus niger,species,verbatim,extant,binomial printed in the cell
+unknown,common_name,,,unspecified_in_source,extant,'unknown' as printed
+Woodchuck,common_name,Marmota monax,species,our_judgment,extant,
+Pri Di CVs (7827),common_name,,,unspecified_in_source,extant,"slide/series code, not a taxon name"
+"Panda, Greater, Ailuropoda melanoleuca",common_name,Ailuropoda melanoleuca,species,verbatim,extant,binomial printed in the cell
+Lampreys,common_name,,order,unspecified_in_source,extant,Petromyzontiformes
+Lamprey,common_name,,order,unspecified_in_source,extant,Petromyzontiformes
+Ferret,common_name,Mustela furo,species,our_judgment,extant,domestic ferret (= M. putorius furo)
+Snake,common_name,,suborder,unspecified_in_source,extant,Serpentes
+Fish,common_name,,,unspecified_in_source,extant,'Fish' (paraphyletic); not resolvable
+Goldfish,common_name,Carassius auratus,species,our_judgment,extant,
+Goldfish Experiments,common_name,Carassius auratus,species,our_judgment,extant,experimental series
+Sturgeon,common_name,,family,unspecified_in_source,extant,Acipenseridae
+Yellow Perch,common_name,Perca flavescens,species,our_judgment,extant,
+Axolotl,common_name,Ambystoma mexicanum,species,our_judgment,extant,
+Red-spotted Newts,common_name,Notophthalmus viridescens,species,our_judgment,extant,
+Mud Turtle,common_name,Kinosternon,genus,unspecified_in_source,extant,mud turtle; species not stated
+Mourning Dove,common_name,Zenaida macroura,species,our_judgment,extant,
+Night Hawk,common_name,Chordeiles,genus,unspecified_in_source,extant,nighthawk; probably C. minor but not stated
+Pigeon,common_name,Columba,genus,unspecified_in_source,extant,probably domestic C. livia but not stated
+Pigeon CS,common_name,Columba,genus,unspecified_in_source,extant,probably domestic C. livia; 'CS' as printed
+Pigeon T,common_name,Columba,genus,unspecified_in_source,extant,probably domestic C. livia; 'T' as printed
+Sparrow,common_name,,,unspecified_in_source,extant,Passeridae or Passerellidae; not resolvable
+“Ichomiljzon”,common_name,,,unspecified_in_source,extant,illegible/unknown label reproduced as printed
+Cat,common_name,Felis catus,species,our_judgment,extant,unqualified 'Cat' = domestic cat

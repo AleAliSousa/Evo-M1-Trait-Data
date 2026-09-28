@@ -102,6 +102,12 @@ if (!is.null(d)) {
 }
 
 long <- bind_rows(long)
+## Species naming columns (SPECIES_NAMING.md v1): Species keeps this merge's own label; the shared
+## resolver adds the identity anchor + basis from the printed name (Species_printed), keyed by paper.
+source(file.path(base, "_keys", "resolve_species.R"))
+rs <- resolve_species(long$Species_printed, source_publication = paper_folder_of_item(long$source, base))
+long <- long |> mutate(species_printed = Species_printed, accepted_name = rs$accepted_name,
+                       species_basis = rs$species_basis, reidentified = rs$reidentified)
 readr::write_csv(long, "sleep_long.csv")
 readr::write_csv(long |> transmute(source, Species, Species_printed, Standardized_Term, Value, species_confidence),
                  "sleep_source_species_ids.csv")

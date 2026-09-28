@@ -75,6 +75,18 @@ if (file.exists(hutsler_path)) {
   )
 }
 
+## Species naming columns (SPECIES_NAMING.md v1): Species / species_printed stay as the source builds
+## carry them; the shared resolver adds the identity anchor + basis, keyed by paper folder.
+source(file.path(repo_base, "_keys", "resolve_species.R"))
+add_species_cols <- function(d) {
+  printed <- ifelse(is.na(d$species_printed) | d$species_printed == "", d$Species, d$species_printed)
+  rs <- resolve_species(printed, source_publication = paper_folder_of_item(d$source, repo_base))
+  d$accepted_name <- rs$accepted_name; d$species_basis <- rs$species_basis; d$reidentified <- rs$reidentified
+  d
+}
+all_regions <- add_species_cols(all_regions)
+if (!is.null(hutsler_m1)) hutsler_m1 <- add_species_cols(hutsler_m1)
+
 all_regions$merge_default <- !(all_regions$source == "Peruffo_etal_2019_Table2" &
                                  all_regions$observation_level == "individual")
 all_regions$status <- "active"
@@ -99,7 +111,8 @@ make_observation_id <- function(d) {
 m1_species$observation_id <- make_observation_id(m1_species)
 
 make_wide <- function(d) {
-  meta_cols <- c("observation_id", "source", "doi", "Species", "species_printed", "specimen_id",
+  meta_cols <- c("observation_id", "source", "doi", "Species", "species_printed",
+                 "accepted_name", "species_basis", "reidentified", "specimen_id",
                  "observation_level", "n_specimens", "age_class", "age_detail", "sex",
                  "hemisphere", "region", "merge_default")
   meta <- d[!duplicated(d$observation_id), meta_cols, drop = FALSE]

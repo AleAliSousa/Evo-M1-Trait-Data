@@ -57,6 +57,16 @@ final.dataframe <- final.dataframe %>%
 
 if (!nrow(final.dataframe)) stop("No catalog records remained after cleaning.", call.=FALSE)
 final.dataframe <- final.dataframe %>% mutate(source_row = row_number(), .before=1)
+
+# Binomial for each printed free-text 'specimens' string from the item-scoped lookup
+# reference_tables/<item>_taxa.csv (printed_name -> Species_binomial, species_basis),
+# assigned from the leading taxon word of the string; specimens itself is kept as
+# printed. Genus-only or NA where the text does not identify a species
+# (species_basis = unspecified_in_source).
+taxa <- read_csv(file.path("reference_tables", paste0(item_name, "_taxa.csv")), col_types = cols(.default = "c"), na = c("", "NA"))
+ti <- match(final.dataframe$specimens, taxa$printed_name)
+if (any(is.na(ti) & !is.na(final.dataframe$specimens))) stop("specimens value(s) missing from the taxa lookup.", call.=FALSE)
+final.dataframe <- final.dataframe %>% mutate(Species_binomial = taxa$Species_binomial[ti], species_basis = if_else(is.na(specimens), "unspecified_in_source", taxa$species_basis[ti]))  # blank printed cell -> no species stated
 write_csv(final.dataframe, paste0(item_name, ".csv"), na="")
 
 base <- local({

@@ -1,0 +1,4 @@
+printed_name,printed_column,Taxon_binomial,taxon_rank,species_basis,taxon_type,note
+NT,Group_code,Homo neanderthalensis,species,hypothesis,fossil_group,NT = Neanderthal (paper's group label); fossil group hypothesis; binomial per current usage
+EH,Group_code,Homo sapiens,species,hypothesis,fossil_group,"EH = early Homo sapiens (fossil sample, e.g. Qafzeh/Skhul/Mladec in the paper); group hypothesis"
+MH,Group_code,Homo sapiens,species,verbatim,extant,MH = modern Homo sapiens (living human MRI sample)

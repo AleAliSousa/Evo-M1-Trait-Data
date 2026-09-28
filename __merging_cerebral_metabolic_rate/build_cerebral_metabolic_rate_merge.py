@@ -127,7 +127,21 @@ KAUF_GENUS_ASSIGNED = {"Homo", "Papio", "Canis", "Felis", "Rattus", "Mus", "Meri
                        "Gerbil", "Ovis", "Capra", "Sus", "Equus", "Lepus", "Saimiri"}
 COMP_PRIORITY = {"Kaufman__2004": 0, "Heiss_etal_2004": 1, "Karbowski__2007": 2}
 
-canon_species = lambda s: SPECIES_CANON.get(s, s)
+# Species identity: the shared resolver (_keys/resolve_species.py, mirror of resolve_species.R;
+# SPECIES_NAMING.md v1). SPECIES_CANON above is retained as documentation of the lab-species
+# convention; its (compilation, printed) -> species pairs were migrated into the spoke keys on
+# 2026-09-28 (basis our_judgment / spelling, note per row) and resolution now goes through them.
+sys.path.insert(0, os.path.join(BASE, "_keys"))
+from resolve_species import resolve_species  # noqa: E402
+_RS = {}
+def canon_species(printed, compilation):
+    """-> (accepted_name, species_basis, reidentified) for one printed label of one compilation."""
+    k = (compilation, printed)
+    if k not in _RS:
+        r = resolve_species([printed], compilation)
+        a = r.accepted_name.iloc[0]
+        _RS[k] = ("" if a is None else a, r.species_basis.iloc[0], bool(r.reidentified.iloc[0]))
+    return _RS[k]
 canon_region = lambda s: REGION_CANON.get(s, s)
 SURNAME_RX = re.compile(r"[A-Za-z\u00c0-\u017f']+")
 YEAR_RX = re.compile(r"(1[89][0-9]{2}|20[0-9]{2})")
@@ -179,9 +193,8 @@ for f in kauf_files:
         printed = (r.get("Species") or "").strip()
         if not printed:
             continue
-        genus = ("Macaca" if printed in ("M mulatta", "M fascic")
-                 else "Meriones" if printed == "Gerbil" else printed.split()[0])
-        species = canon_species(printed if printed in SPECIES_CANON else genus)
+        species, sp_basis, sp_reid = canon_species(printed, "Kaufman__2004")
+        genus = species.split()[0] if species else printed.split()[0]
         reg_raw = (r.get("Region") or "").strip()
         for col, meas in (("CMRgl_umol_100g_min", "CMRgl"),
                           ("CMRO2_umol_100g_min", "CMRO2"),
@@ -192,7 +205,8 @@ for f in kauf_files:
             unit, mclass, _ = MEASURES[meas]
             # Kaufman columns are already in the project standard units (per 100 g).
             U.append(dict(Compilation="Kaufman__2004", Species_printed=printed,
-                          Species=species, genus=genus, Region_raw=reg_raw,
+                          Species=species, species_basis=sp_basis, reidentified=sp_reid,
+                          genus=genus, Region_raw=reg_raw,
                           Subregion_raw="",
                           Region=canon_region(reg_raw), Measure=meas, measure_class=mclass,
                           Value=v, Value_raw=(r.get(col) or "").strip(),
@@ -221,11 +235,12 @@ for f in karb_files:
         # The absolute totals (umol/min, mL/min) are already whole-brain: no scaling.
         scale = 100.0 if mclass in ("cerebral_metabolic_rate", "cerebral_perfusion") else 1.0
         sd = num(r.get("sd"))
-        species = canon_species((r.get("species") or "").strip())
+        species, sp_basis, sp_reid = canon_species((r.get("species_printed") or "").strip(), "Karbowski__2007")
         reg_raw = (r.get("structure") or "").strip()
         U.append(dict(Compilation="Karbowski__2007",
                       Species_printed=(r.get("species_printed") or "").strip(),
-                      Species=species, genus=species.split()[0] if species else "",
+                      Species=species, species_basis=sp_basis, reidentified=sp_reid,
+                      genus=species.split()[0] if species else "",
                       Region_raw=reg_raw, Subregion_raw=(r.get("subregion") or "").strip(),
                       Region=canon_region(reg_raw),
                       Measure=meas, measure_class=mclass, Value=v * scale,
@@ -243,7 +258,8 @@ for src_row, r in enumerate(
         continue
     reg_raw = (r.get("Region") or "").strip()
     U.append(dict(Compilation="Heiss_etal_2004", Species_printed="Homo sapiens",
-                  Species="Homo sapiens", genus="Homo", Region_raw=reg_raw,
+                  Species="Homo sapiens", species_basis=canon_species("Homo sapiens", "Heiss_etal_2004")[1],
+                  reidentified=False, genus="Homo", Region_raw=reg_raw,
                   Subregion_raw="",
                   Region=canon_region(reg_raw), Measure="CMRgl",
                   measure_class="cerebral_metabolic_rate", Value=v,
@@ -364,6 +380,7 @@ UF_COLS = [
     "source_reference_levels", "source_reference_types", "reference_resolution_status",
     # Legacy names retained for backward compatibility.
     "ref_raw", "ref_keys_str",
+    "species_basis", "reidentified",
 ]
 uf = sorted(U, key=lambda u: (u["Measure"], u["Species"], u["Region"], u["Compilation"]))
 for rec_id, u in enumerate(uf, 1):
@@ -388,14 +405,23 @@ for (sp, reg, meas, unit, mclass, sid), s in study.items():
     c["vals"].append(mean(s["vals"]))
     c["sids"].add(sid)
     c["comps"] |= s["comps"]
+# Species naming columns (SPECIES_NAMING.md v1): merged cells pool rows across compilations, so
+# species_printed / species_basis list the distinct printed labels / bases that resolved to the Species.
+sp_cols = defaultdict(lambda: {"printed": set(), "basis": set(), "reid": False})
+for u in U:
+    sp_cols[u["Species"]]["printed"].add(u["Species_printed"]); sp_cols[u["Species"]]["basis"].add(u["species_basis"])
+    sp_cols[u["Species"]]["reid"] |= bool(u["reidentified"])
 merged = [dict(Species=sp, Region=reg, Measure=meas, measure_class=mclass, Units=unit,
                Value=round3(mean(c["vals"])), n_studies=len(c["sids"]),
                Compilations="; ".join(sorted(c["comps"])),
-               Volume_term=VOLUME_TERM.get(reg, ""))
+               Volume_term=VOLUME_TERM.get(reg, ""),
+               species_printed="; ".join(sorted(sp_cols[sp]["printed"])), accepted_name=sp,
+               species_basis="; ".join(sorted(sp_cols[sp]["basis"])), reidentified=sp_cols[sp]["reid"])
           for (sp, reg, meas, unit, mclass), c in cells.items()]
 merged.sort(key=lambda m: (m["Species"], m["Region"], m["Measure"]))
 LONG_COLS = ["Species", "Region", "Measure", "measure_class", "Units", "Value",
-             "n_studies", "Compilations", "Volume_term"]
+             "n_studies", "Compilations", "Volume_term",
+             "species_printed", "accepted_name", "species_basis", "reidentified"]
 with open(os.path.join(HERE, "cerebral_metabolic_rate_long.csv"), "w", newline="",
           encoding="utf-8") as fh:
     w = csv.DictWriter(fh, fieldnames=LONG_COLS)

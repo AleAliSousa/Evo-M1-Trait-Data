@@ -49,11 +49,15 @@ CATEG <- c("Gait","Foot_Posture","Arboreal_terrestrial","Tool_use","Extractive_f
            "Limb_posture","Top_speed","Locomotor_habit")
 
 ## gather raw observations: one row per (Species, Measure, source)
+spraw <- function(d) { sci <- if ("species_sci" %in% names(d)) d[["species_sci"]] else rep(NA, nrow(d))
+  spp <- if ("Species" %in% names(d)) d[["Species"]] else d[[1]]
+  ifelse(!is.na(sci) & nzchar(trimws(sci)) & tolower(trimws(sci)) != "none", sci, spp) }   # printed, uncleaned
 grab <- function(file, col, measure, srckey) {
   d <- rd(file); k <- spkey(d); v <- d[[col]]
   keep <- istxt(v) & nzchar(trimws(k))
   if (!any(keep)) return(NULL)
-  tibble(Species = k[keep], Measure = measure, src = srckey, Value = trimws(v[keep]))
+  tibble(Species = k[keep], Measure = measure, src = srckey, Value = trimws(v[keep]),
+         species_printed = spraw(d)[keep])
 }
 obs <- bind_rows(
   grab("vocal_repertoire_schniter.xlsx","vocal_repertoire_size_updated","VocalRepertoire","schniter"),
@@ -162,8 +166,21 @@ role_of <- function(measure, src) { p <- META$prio[[match(measure, META$Measure)
   for (pr in p) if (pr[1] == src) return(pr[2]); NA_character_ }
 obs$role <- mapply(role_of, obs$Measure, obs$src)
 obs$Team <- TEAM[obs$src]
+## Species naming columns (SPECIES_NAMING.md v1): Species keeps this merge's cleaned label; the shared
+## resolver adds the identity anchor + basis from the printed name (per observation, then per Species). Trait tables are keyed by source
+## key, so the paper scope is the folder where one key maps to one repo paper (else variant/hub only).
+source(file.path(base, "_keys", "resolve_species.R"))
+SRC_FOLDER <- c(manyprimates = "ManyPrimates__2022", granatosky = "Granatosky__2018", caspar = "Caspar_etal_2022",
+                heldstab = "Heldstab_etal_2016", baker = "Baker_etal_2025",
+                cst = "Bortoff_Strick_1993", medina = "MedinaGonzález__2026", wimberly = "Wimberly_etal_2021",
+                schniter = "Schniter_PenaherreraAguirre_2026")
+## heffner (29 Heffner_* folders), iwaniuk (1999/2001) and reader (Reader_Laland_2002 / Reader_etal_2011)
+## each map to several repo papers -> no paper scope (NA): variant-only / hub matching for those rows.
+rs <- resolve_species(obs$species_printed, source_publication = unname(SRC_FOLDER[obs$src]))
+obs$accepted_name <- rs$accepted_name; obs$species_basis <- rs$species_basis; obs$reidentified <- rs$reidentified
 obs_out <- obs |> transmute(Species, measure_class = META$mclass[match(Measure, META$Measure)],
-                            Measure, Team, role, Value) |> arrange(Species, Measure, Team)
+                            Measure, Team, role, Value,
+                            species_printed, accepted_name, species_basis, reidentified) |> arrange(Species, Measure, Team)
 readr::write_csv(obs_out, "behaviour_observations_long.csv")
 
 ## resolve to one value per (Species, Measure), keyed with provenance
@@ -188,6 +205,8 @@ long <- bind_rows(lapply(groups, function(sp_obs)
   bind_cols(tibble(Species = sp_obs$Species[1]),
             resolve_one(sp_obs$Measure[1], sp_obs)))) |>
   arrange(Species, Measure)
+sp_cols <- species_columns_summary(obs, "Species")      # long is one row per Species x Measure
+long <- long |> left_join(sp_cols, by = "Species")
 readr::write_csv(long, "behaviour_long.csv")
 
 ## wide overview: one row per species, resolved Value per Measure

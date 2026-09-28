@@ -2,3 +2,4 @@ Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
 Region_code,parcellated region abbreviation,,,,info,,Kochiyama_etal_2018_ExtendedDataTable1,,Ext Data Table 1
 AAL_atlas_regions,AAL atlas sub-regions composing the parcel,,,,info,,Kochiyama_etal_2018_ExtendedDataTable1,semicolon-separated,Ext Data Table 1
 n_AAL_regions,number of AAL sub-regions in the parcel,,count,,info,,Kochiyama_etal_2018_ExtendedDataTable1,,
+Method:build,built by Kochiyama_etal_2018_ExtendedDataTable1.R from Kochiyama_etal_2018_ExtendedDataTable1_snapshot.csv; public TSV named from __ReadMe.xlsx Item encoded,,,,method,,Kochiyama_etal_2018_ExtendedDataTable1,"script added 2026-09-28 (previously no producing script); atlas-correspondence table: no per-taxon rows, so no species column applies",

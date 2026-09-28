@@ -40,7 +40,7 @@ setwd(folder)
 ## DeCasien & Higham 2019 and its source-matched expansion are deliberately excluded from the
 ## canonical outputs. The dedicated subset/comparison lives in volumes_compiled_DeCasien.R.
 ## No per-paper species token/column: the species COLUMN is found from the term map and species
-## NAMES are resolved in step 4 (NCBI + curated overrides). See README.
+## NAMES are resolved in step 4 by the shared _keys/resolve_species.R (spoke keys + hub). See README.
 papers <- tribble(
   ~item,                                  ~team,                ~year,
   # Stephan 1970 split one-item-per-printed-table (was bundled Tables1-6). Tables 1-3 =
@@ -375,85 +375,36 @@ paper_long <- function(row) {
 }
 long <- bind_rows(lapply(seq_len(nrow(papers)), function(i) paper_long(papers[i, ])))
 
-## 4 Species resolution: NCBI backbone + curated, source-aware overrides ----
-## Mirrors ../__merging_cellcounts §4 (NCBI preferred names via taxizedb) but ADDS:
-##  (i)   curated project decisions WIN over NCBI (e.g. Gorilla sp., subspecies->binomial, synonyms);
-##  (ii)  resolution is SOURCE-AWARE — curated overrides are keyed by Reference (= item name) AND the
-##        raw variant name, so the same label can resolve differently in different papers;
-##  (iii) a reviewable mapping table is written (raw -> NCBI -> curated -> final, with flags);
-##  (iv)  variants that now collapse to one accepted name are aggregated/averaged in steps 5-6.
-raw  <- long %>% distinct(Source, Species) %>% rename(Species_raw = Species)
-uniq <- sort(unique(raw$Species_raw))
-
-# (a) NCBI backbone (source-independent): preferred scientific name per raw name (NA if unmatched).
-# OFFLINE FALLBACK: taxizedb needs a live NCBI taxdump. When it (or the network) is unavailable, read
-# the committed backbone cache volumes_species_ids_cache.csv (raw -> NCBI_id/NCBI_name), so the merge
-# regenerates without network. The cache is refreshed automatically on any successful live run (below).
-cache_file <- "volumes_species_ids_cache.csv"
-have_taxizedb <- suppressWarnings(requireNamespace("taxizedb", quietly = TRUE))
-ncbi_live <- if (have_taxizedb) tryCatch({
-  library(taxizedb)
-  ids <- name2taxid(uniq, out_type = "summary")
-  nm  <- tibble(Species_raw = uniq, NCBI_id = ids$id[match(uniq, ids$name)])
-  nv  <- taxid2name(unique(na.omit(nm$NCBI_id)), out_type = "summary")
-  names(nv) <- unique(na.omit(nm$NCBI_id))
-  nm %>% mutate(NCBI_name = unname(nv[as.character(NCBI_id)]))
-}, error = function(e) { message("taxizedb live resolution failed (", conditionMessage(e),
-                                 ") -> using cache ", cache_file); NULL }) else {
-  message("taxizedb not installed -> using NCBI backbone cache ", cache_file); NULL }
-if (is.null(ncbi_live)) {
-  if (!file.exists(cache_file))
-    stop("Offline species resolution needs ", cache_file, " (taxizedb unavailable and no cache). ",
-         "Run once with taxizedb installed to build it.", call. = FALSE)
-  cache <- read.csv(cache_file, stringsAsFactors = FALSE, na.strings = c("NA", ""))
-  # read.csv turns blank NCBI_name into "" unless na.strings catches it; force real NA so the
-  # coalesce(curated, NCBI_name, Species_raw) below cannot be shadowed by an empty string
-  # (that bug silently dropped every unresolved_raw name to Species_final = "").
-  ncbi  <- cache %>% mutate(NCBI_name = ifelse(is.na(NCBI_name) | !nzchar(NCBI_name), NA_character_, NCBI_name)) %>%
-    distinct(Species_raw, NCBI_id, NCBI_name)
-  miss  <- setdiff(uniq, ncbi$Species_raw)
-  if (length(miss))
-    stop("NCBI backbone cache ", cache_file, " is missing ", length(miss), " raw name(s): ",
-         paste(head(miss, 8), collapse = "; "), ". Refresh the cache with a live taxizedb run.",
-         call. = FALSE)
-  ncbi <- tibble(Species_raw = uniq) %>% left_join(ncbi, by = "Species_raw")
-} else {
-  ncbi <- ncbi_live
-}
-
-# (b) curated overrides (source-aware), keyed by Reference (= item name) + variant name
-ov <- read.csv(file.path(base, "_keys/volumes_species_overrides.csv"), stringsAsFactors = FALSE) %>%
-  transmute(Source = Reference, key = nrm(variant_name), curated = accepted_name) %>%
-  distinct(Source, key, .keep_all = TRUE)
-
-# (c) resolve: curated WINS, else NCBI preferred, else the raw name (flagged)
+## 4 Species resolution: the shared resolver (_keys/resolve_species.R; SPECIES_NAMING.md v1) ----
+## One identity step for every merge: resolve_species(printed, source_publication = <paper folder>)
+## reads ALL _keys/*/species_key.csv spokes (paper-scoped variant rows, basis/note per row) + the hub.
+##  (i)   resolution is SOURCE-AWARE — rows are keyed by (paper folder, printed variant), so the same
+##        label can resolve differently in different papers; the former NCBI backbone cache and
+##        _keys/volumes_species_overrides.csv were migrated into the spokes (2026-09-28) and are no
+##        longer read here;
+##  (ii)  a reviewable mapping table is still written (raw -> accepted, with basis/match_level/flags);
+##  (iii) variants that collapse to one accepted name are aggregated/averaged in steps 5-6.
+source(file.path(base, "_keys/resolve_species.R"))
+raw  <- long %>% distinct(Source, Species) %>% rename(Species_raw = Species) %>%
+  mutate(source_publication = paper_folder_of_item(Source, base))
+res  <- resolve_species(raw$Species_raw, source_publication = raw$source_publication)
 resolved <- raw %>%
-  mutate(key = nrm(Species_raw)) %>%
-  left_join(ov,   by = c("Source", "key")) %>%
-  left_join(ncbi, by = "Species_raw") %>%
-  mutate(Species_final = dplyr::coalesce(curated, NCBI_name, Species_raw),
-         name_source   = dplyr::case_when(!is.na(curated)   ~ "curated",
-                                          !is.na(NCBI_name) ~ "NCBI",
-                                          TRUE              ~ "unresolved_raw"),
-         flag_curated_overrides_ncbi = !is.na(curated) & !is.na(NCBI_name) & nrm(curated) != nrm(NCBI_name),
-         flag_unresolved             = is.na(curated) & is.na(NCBI_name)) %>%
-  select(-key)
+  mutate(Species_final   = res$accepted_name,
+         species_basis   = res$species_basis,
+         reidentified    = res$reidentified,
+         match_level     = res$match_level,
+         flag_unresolved = res$unresolved)
 write_csv(resolved %>% arrange(Source, Species_raw), "volumes_source_species_ids.csv")
-# Refresh the offline backbone cache ONLY on a successful live taxizedb run (never overwrite the
-# committed cache from a cache-driven run, which would be circular).
-if (!is.null(ncbi_live))
-  write_csv(resolved %>% transmute(Source, Species_raw, curated, NCBI_id, NCBI_name,
-                                   Species_final, name_source) %>% arrange(Source, Species_raw),
-            cache_file)
 if (any(resolved$flag_unresolved))
   warning("Species resolution: ", sum(resolved$flag_unresolved), " (source, name) pair(s) had no ",
-          "curated override and no NCBI match -> kept raw. See volumes_source_species_ids.csv.")
+          "spoke or hub match -> kept the printed name. See volumes_source_species_ids.csv.")
 
-# (d) apply resolved accepted names back to the long table (source-aware)
+# (d) apply resolved accepted names back to the long table (source-aware); keep the printed name
 long <- long %>%
-  left_join(resolved %>% select(Source, Species_raw, Species_final),
+  left_join(resolved %>% select(Source, Species_raw, Species_final, species_basis, reidentified),
             by = c("Source", "Species" = "Species_raw")) %>%
-  mutate(Species = Species_final) %>% select(-Species_final)
+  mutate(species_printed = Species, Species = Species_final, accepted_name = Species_final) %>%
+  select(-Species_final)
 
 write_csv(long, "volumes_unfiltered.csv")
 is_mass <- function(v) v %in% c("Body_Mass.g","Brain_Mass.mg")
@@ -568,6 +519,20 @@ src_meta <- volumes_long %>% transmute(Species, src = Variable, Teams, n_teams,
 bilat_long <- bilat %>% left_join(src_meta, by = c("Species","src")) %>%
   transmute(Species, Variable, Value, Teams, n_teams, Sources, n_sources, Source_detail, Year_used)
 volumes_long <- bind_rows(volumes_long, bilat_long) %>% arrange(Species, Variable)
+## Species naming columns (SPECIES_NAMING.md v1): volumes_long is one row per species x variable, so
+## species_printed / species_basis list every distinct printed name / basis among the contributing
+## rows of `long` for that species x variable (falling back to the species' rows for the step-7
+## derived variables); accepted_name == Species; reidentified = any contributing row was a reident.
+sp_sv <- species_columns_summary(long, c("Species", "Variable"))
+sp_s  <- species_columns_summary(long, "Species")
+volumes_long <- volumes_long %>%
+  left_join(sp_sv, by = c("Species", "Variable")) %>%
+  left_join(sp_s %>% rename_with(~ paste0(.x, "_s"), -Species), by = "Species") %>%
+  mutate(species_printed = coalesce(species_printed, species_printed_s),
+         accepted_name   = Species,
+         species_basis   = coalesce(species_basis, species_basis_s),
+         reidentified    = coalesce(reidentified, reidentified_s)) %>%
+  select(-accepted_name_s, -species_printed_s, -species_basis_s, -reidentified_s)
 write_csv(volumes_long, "volumes_long.csv")
 
 flags <- bind_rows(flags,

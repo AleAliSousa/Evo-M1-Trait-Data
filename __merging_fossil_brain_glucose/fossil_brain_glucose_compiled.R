@@ -118,6 +118,13 @@ for (i in seq_len(nrow(s4))) {
       "s4_volume", s4$budget_umol_min[i], s4$budget_ratio_MH[i])
 }
 long_all <- do.call(rbind, recs); rownames(long_all) <- NULL
+## Species naming columns (SPECIES_NAMING.md v1): Species keeps this merge's label (fossil hypodigm
+## names from the inputs); the shared resolver adds the identity anchor + basis, keyed by the
+## estimator's source paper where that is a repo folder.
+source(file.path(here, "..", "_keys", "resolve_species.R"))
+rs <- resolve_species(long_all$Species, source_publication = paper_folder_of_item(long_all$Source, file.path(here, "..")))
+long_all$species_printed <- long_all$Species; long_all$accepted_name <- rs$accepted_name
+long_all$species_basis <- rs$species_basis; long_all$reidentified <- rs$reidentified
 long_all$note <- ifelse(long_all$Team=="Boyer_ACA_ecvpred",
                         "ECV-predicted ACA (upper bound; unfiltered only)", "")
 long_filt <- long_all[long_all$filtered, setdiff(names(long_all), c("filtered","note"))]

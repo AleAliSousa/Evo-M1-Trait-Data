@@ -63,21 +63,11 @@ for (i in seq_len(nrow(vc))) {
   m <- regmatches(vc$paper[i], regexec("([A-Za-z]+).*?((?:19|20)[0-9]{2})", vc$paper[i]))[[1]]
   if (length(m) == 3) { k <- paste(tolower(m[2]), m[3]); if (is.null(role_ay[[k]])) role_ay[[k]] <- vc$role[i] }
 }
-ref <- read_csv(file.path(repo, "_keys", "species_reference.csv"))$accepted_name
-ref_l <- setNames(ref, tolower(ref)); variant <- list()
-for (kf in list.files(file.path(repo, "_keys"), "species_key.csv", recursive = TRUE, full.names = TRUE)) {
-  k <- read_csv(kf); if (!all(c("variant_name","accepted_name") %in% names(k))) next
-  # Skip rows with a BLANK accepted_name. HerculanoHouzel/species_key.csv carries several
-  # (Cynomys sp., Dasyprocta prymnolopha) awaiting taxonomy review; letting them through blanks
-  # the species label and the row is then silently dropped. Falling through to the printed name
-  # keeps the datum. See APP_PLAN.md ("skip blank keys in the build, surface on Coverage").
-  for (i in seq_len(nrow(k))) { v <- tolower(trimws(k$variant_name[i]))
-    acc <- trimws(as.character(k$accepted_name[i]))
-    if (nzchar(v) && !is.na(acc) && nzchar(acc) && acc != "NA" && is.null(variant[[v]]))
-      variant[[v]] <- acc }
-}
-resolve <- function(x) { c <- trimws(gsub("\\s+"," ",gsub("_"," ",gsub("\\*","",x)))); lc <- tolower(c)
-  if (!is.na(ref_l[lc])) return(unname(ref_l[lc])); if (!is.null(variant[[lc]])) return(variant[[lc]]); c }
+## Species identity: the shared resolver (_keys/resolve_species.R; SPECIES_NAMING.md v1). Replaces the
+## former inline hub-then-first-key lookup (2026-09-28): rows are keyed by (paper folder, printed
+## variant) and carry a basis; unresolved names fall back to the cleaned printed string as before.
+source(file.path(repo, "_keys", "resolve_species.R"))
+resolve <- function(x, paper = NA_character_) resolve_species(x, source_publication = paper)
 
 pick_column <- function(headers) {
   cand <- headers[grepl(brain_rx, norm(headers), perl = TRUE)]
@@ -215,8 +205,10 @@ for (t in targets) {
   for (r in t$rows[-1]) {
     if (length(r) < t$ci) next
     v <- suppressWarnings(as.numeric(gsub('"',"",r[t$ci]))); if (is.na(v)) next
-    sp <- resolve(get_sp(r)); if (!nzchar(sp) || tolower(sp) %in% c("na","none")) next
-    uf[[length(uf)+1L]] <- data.frame(Species=sp, Measure="Brain_Mass", Units="g",
+    sp_printed <- get_sp(r); rs <- resolve(sp_printed, if (nzchar(paper)) paper else NA_character_)
+    sp <- rs$accepted_name; if (is.na(sp) || !nzchar(sp) || tolower(sp) %in% c("na","none")) next
+    uf[[length(uf)+1L]] <- data.frame(Species=sp, species_printed=sp_printed, accepted_name=sp,
+      species_basis=rs$species_basis, reidentified=rs$reidentified, Measure="Brain_Mass", Units="g",
       # 10 significant digits: the mg->g conversion leaves float noise (3550 * 0.001 =
       # 3.5500000000000003) that R and Python would then write out differently.
       Value_g=as.numeric(sprintf("%.10g", v*FACTOR[[unit]])), raw_value=gsub('"',"",r[t$ci]), raw_unit=unit,
@@ -248,6 +240,13 @@ for (key in sort(unique(paste(uf$Species, uf$measure_emitted, sep = "\r")))) {
 }
 long <- do.call(rbind, long); dedupe <- do.call(rbind, dedupe); dedupe <- dedupe[order(-dedupe$n_sources),]
 long <- long[order(long$Species, long$Measure), ]
+## Species naming columns (SPECIES_NAMING.md v1): long is pooled per species x measure, so
+## species_printed / species_basis list the distinct printed names / bases of the unfiltered rows that
+## resolved to this Species; accepted_name == Species; reidentified = any such row was a reident.
+sp_cols <- as.data.frame(species_columns_summary(uf, "Species"))
+ix <- match(long$Species, sp_cols$Species)
+long$species_printed <- sp_cols$species_printed[ix]; long$accepted_name <- long$Species
+long$species_basis   <- sp_cols$species_basis[ix];   long$reidentified  <- sp_cols$reidentified[ix]
 
 # Cross-basis comparison: the one thing the split makes unreadable from the long table alone.
 # One row per species carrying more than one basis, so a reader can see how far the bases

@@ -83,30 +83,19 @@ def num(x):
         return None
 
 
-# ---- species resolution (same rule as the other merges) --------------------
-ref_l = {}
-for r in read_rows(os.path.join(KEYS, "species_reference.csv"), ","):
-    a = (r.get("accepted_name") or "").strip()
-    if a:
-        ref_l[a.lower()] = a
-variant = {}
-for kf in sorted(glob.glob(os.path.join(KEYS, "**", "*species_key.csv"), recursive=True)):
-    rows = read_rows(kf, ",")
-    if not rows or not {"variant_name", "accepted_name"} <= set(rows[0]):
-        continue
-    for r in rows:
-        v = (r["variant_name"] or "").strip().lower()
-        acc = (r["accepted_name"] or "").strip()
-        # a blank accepted_name is written as the literal "NA" in
-        # HerculanoHouzel/species_key.csv; letting it through blanks the label and
-        # silently drops the row
-        if v and acc and acc.upper() != "NA":
-            variant.setdefault(v, acc)
+# ---- species resolution: the shared resolver (_keys/resolve_species.py, mirror of resolve_species.R;
+# SPECIES_NAMING.md v1). Replaces the former inline hub-then-first-key lookup (2026-09-28): rows are
+# keyed by (paper folder, printed variant) and carry a basis; unresolved names fall back to the
+# cleaned printed string as before.
+sys.path.insert(0, KEYS)
+from resolve_species import resolve_species, paper_folder_of_author_year  # noqa: E402
 
 
-def resolve(x):
-    c = re.sub(r"\s+", " ", str(x).replace("*", "").replace("_", " ")).strip()
-    return ref_l.get(c.lower()) or variant.get(c.lower()) or c
+def resolve(x, paper=None):
+    """-> (accepted_name, species_basis, reidentified) for one printed name."""
+    r = resolve_species([x], paper)
+    a = r.accepted_name.iloc[0]
+    return ("" if a is None else a), r.species_basis.iloc[0], bool(r.reidentified.iloc[0])
 
 
 # ---- harvest ---------------------------------------------------------------
@@ -119,7 +108,8 @@ for s in SOURCES:
         v = num(r.get(s["col"]))
         if v is None:
             continue
-        sp = resolve(r.get(s["species_col"], ""))
+        sp, sp_basis, sp_reid = resolve(r.get(s["species_col"], ""),
+                                        paper_folder_of_author_year(s["author"], s["year"], REPO))
         if not sp or sp.lower() in ("na", "none", "nan"):
             continue
         # NB no genus-level filter. Genus buckets like "Macaca sp." and "Pongo sp." are
@@ -137,7 +127,8 @@ for s in SOURCES:
                       Source=s["file"], first_author=s["author"], Year=s["year"],
                       Team=s["team"], role=s["role"], source_of_value=src,
                       upstream_team=up, sex_scope=sex_scope,
-                      reprint_of="; ".join(s.get("reprint_of", ()))))
+                      reprint_of="; ".join(s.get("reprint_of", ())),
+                      species_basis=sp_basis, reidentified=sp_reid))
 
 # Second pass for `reprint_of`: now that every source is loaded, a row is a reprint if one of
 # the named carrier teams already has that species. Marked in upstream_team so it flows into
@@ -154,7 +145,8 @@ for r in U:
         r["upstream_team"] = carrier
 
 UF_COLS = ["Species", "Species_printed", "Measure", "Units", "Value", "Source", "first_author",
-           "Year", "Team", "role", "source_of_value", "upstream_team", "reprint_of", "sex_scope"]
+           "Year", "Team", "role", "source_of_value", "upstream_team", "reprint_of", "sex_scope",
+           "species_basis", "reidentified"]
 U.sort(key=lambda r: (r["Species"], r["Team"]))
 with open(os.path.join(HERE, "endocranial_volume_unfiltered.csv"), "w", newline="",
           encoding="utf-8") as fh:
@@ -205,7 +197,13 @@ for (sp, meas) in sorted(by_sp):
                           primary_used=len(prim) > 0, Teams="; ".join(sorted(tv)),
                           roles="; ".join(sorted({r["role"] for r in d})),
                           sex_scope="; ".join(sorted({r["sex_scope"] for r in d})),
-                          value_min=round(min(vals), 3), value_max=round(max(vals), 3)))
+                          value_min=round(min(vals), 3), value_max=round(max(vals), 3),
+                          # Species naming columns (SPECIES_NAMING.md v1): pooled per species x
+                          # measure, so printed names / bases are the distinct values of the pooled rows
+                          species_printed="; ".join(sorted({r["Species_printed"] for r in d})),
+                          accepted_name=sp,
+                          species_basis="; ".join(sorted({r["species_basis"] for r in d})),
+                          reidentified=any(r["reidentified"] for r in d)))
     if len(tv) > 1:
         spread = max(tmean.values()) / min(tmean.values()) if min(tmean.values()) else ""
         cmp_rows.append(dict(Species=sp, Measure=meas, n_teams=len(tv),
@@ -217,7 +215,7 @@ for (sp, meas) in sorted(by_sp):
 
 LONG_COLS = ["Species", "measure_class", "Measure", "Units", "Value", "n_sources", "n_teams",
              "n_teams_primary", "primary_used", "Teams", "roles", "sex_scope",
-             "value_min", "value_max"]
+             "value_min", "value_max", "species_printed", "accepted_name", "species_basis", "reidentified"]
 with open(os.path.join(HERE, "endocranial_volume_long.csv"), "w", newline="",
           encoding="utf-8") as fh:
     w = csv.DictWriter(fh, fieldnames=LONG_COLS)

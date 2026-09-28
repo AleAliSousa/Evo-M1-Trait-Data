@@ -78,9 +78,16 @@ for (nm in item_name) {
   long[[nm]] <- tibble(
     Species = unify(d$species_sci), Standardized_Term = "GI",
     GI = d$GI, source = nm, team = team_of[[nm]],
-    ref = refcol, dependency_group = "Zilles_GI_lineage")
+    ref = refcol, dependency_group = "Zilles_GI_lineage",
+    species_printed = d$species_sci)
 }
 long <- bind_rows(long)
+## Species naming columns (SPECIES_NAMING.md v1): Species keeps this merge's unify() label; the shared
+## resolver adds the identity anchor + basis from the printed name, keyed by paper folder.
+source(file.path(base, "_keys", "resolve_species.R"))
+rs <- resolve_species(long$species_printed, source_publication = paper_folder_of_item(long$source, base))
+long <- long |> mutate(accepted_name = rs$accepted_name, species_basis = rs$species_basis,
+                       reidentified = rs$reidentified)
 readr::write_csv(long, "gyrification_long.csv")
 readr::write_csv(long |> transmute(source, Species, GI), "gyrification_source_species_ids.csv")
 

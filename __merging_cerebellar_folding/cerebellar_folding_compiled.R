@@ -44,6 +44,12 @@ long <- bind_rows(lapply(seq_len(nrow(meta)), function(i) {
     value_max = format(v[keep], scientific = FALSE, trim = TRUE, digits = 12)
   )
 })) |> arrange(Species, Measure)
+## Species naming columns (SPECIES_NAMING.md v1): Species stays the printed species_sci; the shared
+## resolver adds the identity anchor + basis without changing the join column of this merge.
+source(file.path(root, "_keys", "resolve_species.R"))
+rs <- resolve_species(long$Species, source_publication = "Heuer_etal_2023")
+long <- long |> mutate(species_printed = Species, accepted_name = rs$accepted_name,
+                       species_basis = rs$species_basis, reidentified = rs$reidentified)
 
 write_csv(long, file.path(merge_dir, "cerebellar_folding_long.csv"))
 wide <- long |> select(Species, Measure, Value) |>

@@ -14,3 +14,4 @@ panda,"column pair = Ailuropoda melanoleuca (giant panda, one male, ~7 yr)",,Spe
 raccoon,"column pair = Procyon lotor (raccoon, one female)",,Species,,primary,Carnivora,Pirlot_Jiao_1985_Table1,,
 bear,"column pair = Ursus americanus (black bear, one male juvenile)",,Species,,primary,Carnivora,Pirlot_Jiao_1985_Table1,,
 source,registry item key,,,,provenance,Carnivora,Pirlot_Jiao_1985_Table1,,
+Method:species_lookup,"wide table (one column per taxon: panda_* | raccoon_* | bear_*); the binomial each printed column header stands for, with basis and note, is recorded in reference_tables/Pirlot_Jiao_1985_Table1_taxa.csv",,,,method,,Pirlot_Jiao_1985_Table1,binomials stated in the paper's text (basis = verbatim); wide analysis columns unchanged for existing consumers,

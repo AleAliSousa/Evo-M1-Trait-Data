@@ -1,216 +1,961 @@
-accepted_name,ncbi_taxid,in_Stephan,in_HerculanoHouzel,in_Allman,Order_Stephan1981,Suborder_Stephan1981,Family_Stephan1981,code_Stephan1981,Order_MDD,Family_MDD,mdd_accepted_name,needs_taxonomy_review,Order_resolved,Family_resolved,taxonomy_source,order_matches_MDD
-Ailurus fulgens,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Ailuridae,NCBI:name,NA
-Alouatta caraya,NA,TRUE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Atelidae,NCBI:name,NA
-Alouatta palliata,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Atelidae,NCBI:name,NA
-Alouatta seniculus,NA,TRUE,FALSE,FALSE,Primates,Simians,NA,179,Primates,Atelidae,Alouatta seniculus,FALSE,Primates,Atelidae,NCBI:name,TRUE
-Amblysomus hottentotus,9391,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Afrosoricida,Chrysochloridae,NCBI:taxid,NA
-Antidorcas marsupialis,59523,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Bovidae,NCBI:taxid,NA
-Aotus trivirgatus,9505,TRUE,TRUE,TRUE,Primates,Simians,NA,171,Primates,Aotidae,Aotus trivirgatus,FALSE,Primates,Aotidae,NCBI:taxid,TRUE
-Aplodontia rufa,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Aplodontiidae,NCBI:name,NA
-Atelerix algirus,NA,TRUE,FALSE,FALSE,Insectivora,Basal Insectivora,Erinaceidae,21,Eulipotyphla,Erinaceidae,Atelerix algirus,FALSE,Eulipotyphla,Erinaceidae,NCBI:name,TRUE
-Ateles geoffroyi,NA,TRUE,FALSE,FALSE,Primates,Simians,NA,184,Primates,Atelidae,Ateles geoffroyi,FALSE,Primates,Atelidae,NCBI:name,TRUE
-Ateles sp.,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Atelidae,NCBI:name,NA
-Avahi laniger,NA,TRUE,FALSE,FALSE,Primates,Prosimians,Indriidae,130,Primates,Indriidae,Avahi laniger,FALSE,Primates,Indriidae,NCBI:name,TRUE
-Avahi occidentalis,NA,TRUE,FALSE,FALSE,Primates,Prosimians,Indriidae,131,Primates,Indriidae,Avahi occidentalis,FALSE,Primates,Indriidae,NCBI:name,TRUE
-Balaenoptera acutorostrata,9767,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Balaenopteridae,NCBI:taxid,NA
-Bathyergus suillus,10172,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Bathyergidae,NCBI:taxid,NA
-Blarina brevicauda,9387,TRUE,TRUE,FALSE,Insectivora,NA,NA,NA,Eulipotyphla,Soricidae,Blarina brevicauda,FALSE,Eulipotyphla,Soricidae,NCBI:taxid,TRUE
-Callicebus moloch,NA,TRUE,FALSE,FALSE,Primates,Simians,NA,172,Primates,Pitheciidae,Plecturocebus moloch,FALSE,Primates,Pitheciidae,NCBI:name,TRUE
-Callicebus sp.,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Pitheciidae,NCBI:name,NA
-Callimico goeldii,9495,TRUE,TRUE,FALSE,Primates,Simians,NA,166,Primates,Callitrichidae,Callimico goeldii,FALSE,Primates,Cebidae,NCBI:taxid,TRUE
-Callithrix jacchus,9483,TRUE,TRUE,FALSE,Primates,Simians,NA,151,Primates,Callitrichidae,Callithrix jacchus,FALSE,Primates,Cebidae,NCBI:taxid,TRUE
-Callithrix pygmaea,NA,TRUE,FALSE,FALSE,Primates,Simians,NA,156,Primates,Callitrichidae,Cebuella pygmaea,FALSE,Primates,Cebidae,NCBI:name,TRUE
-Canis latrans,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Canidae,NCBI:name,NA
-Canis lupus familiaris,9615,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Canidae,NCBI:taxid,NA
-Cardioderma cor,270764,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Megadermatidae,NCBI:taxid,NA
-Casinycteris argynnis,1091509,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Pteropodidae,NCBI:taxid,NA
-Cavia porcellus,10141,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Caviidae,NCBI:taxid,NA
-Cebus albifrons,NA,TRUE,FALSE,FALSE,Primates,Simians,NA,191,Primates,Cebidae,Cebus albifrons,FALSE,Primates,Cebidae,NCBI:name,TRUE
-Cercocebus agilis,NA,TRUE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:name,NA
-Cercocebus torquatus,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:name,NA
-Cercopithecus ascanius,NA,TRUE,FALSE,FALSE,Primates,Simians,NA,231,Primates,Cercopithecidae,Cercopithecus ascanius,FALSE,Primates,Cercopithecidae,NCBI:name,TRUE
-Cercopithecus mitis,NA,TRUE,FALSE,FALSE,Primates,Simians,NA,227,Primates,Cercopithecidae,Cercopithecus mitis,FALSE,Primates,Cercopithecidae,NCBI:name,TRUE
-Cercopithecus nictitans,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:name,NA
-Cheirogaleus major,NA,TRUE,FALSE,FALSE,Primates,Prosimians,Cheirogaleiclae,111,Primates,Cheirogaleidae,Cheirogaleus major,FALSE,Primates,Cheirogaleidae,NCBI:name,TRUE
-Cheirogaleus medius,NA,TRUE,FALSE,TRUE,Primates,Prosimians,Cheirogaleiclae,112,Primates,Cheirogaleidae,Cheirogaleus medius,FALSE,Primates,Cheirogaleidae,NCBI:name,TRUE
-Chinchilla laniger,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Chinchillidae,NCBI:name,NA
-Choloepus didactylus,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Pilosa,Megalonychidae,NCBI:name,NA
-Chrysochloris asiatica,NA,TRUE,FALSE,FALSE,Insectivora,Progressive Insectivora,NA,17,Afrosoricida,Chrysochloridae,Chrysochloris asiatica,FALSE,Afrosoricida,Chrysochloridae,NCBI:name,TRUE
-Chrysochloris stuhlmanni,NA,TRUE,FALSE,FALSE,Insectivora,Progressive Insectivora,NA,16,Afrosoricida,Chrysochloridae,Chrysochloris stuhlmanni,FALSE,Afrosoricida,Chrysochloridae,NCBI:name,TRUE
-Coleura afra,907075,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Emballonuridae,NCBI:taxid,NA
-Colobus angolensis,NA,TRUE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:name,NA
-Condylura cristata,143302,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Eulipotyphla,Talpidae,NCBI:taxid,NA
-Crocidura flavescens,NA,TRUE,FALSE,FALSE,Insectivora,Basal Insectivora,Soricidae,59,Eulipotyphla,Soricidae,Crocidura flavescens,FALSE,Eulipotyphla,Soricidae,NCBI:name,TRUE
-Crocidura hildegardeae,NA,TRUE,FALSE,FALSE,Insectivora,NA,NA,NA,Eulipotyphla,Soricidae,Crocidura hildegardeae,FALSE,Eulipotyphla,Soricidae,NCBI:name,TRUE
-Crocidura jacksoni,NA,TRUE,FALSE,FALSE,Insectivora,NA,NA,NA,Eulipotyphla,Soricidae,Crocidura jacksoni,FALSE,Eulipotyphla,Soricidae,ITIS,TRUE
-Crocidura russula,NA,TRUE,FALSE,FALSE,Insectivora,Basal Insectivora,Soricidae,60,Eulipotyphla,Soricidae,Crocidura russula,FALSE,Eulipotyphla,Soricidae,NCBI:name,TRUE
-Crocuta crocuta,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Hyaenidae,NCBI:name,NA
-Cryptomys hottentotus,10175,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Bathyergidae,NCBI:taxid,NA
-Cryptomys hottentotus natalensis,63621,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Bathyergidae,NCBI:taxid,NA
-Cryptomys hottentotus pretoriae,63619,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Bathyergidae,NCBI:taxid,NA
-Cynictis penicillata,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Herpestidae,NCBI:name,NA
-Damaliscus pygargus phillipsi,37172,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Bovidae,NCBI:taxid,NA
-Daubentonia madagascariensis,NA,TRUE,FALSE,TRUE,Prosimians,Prosimians,Daubentoniidae,136,Primates,Daubentoniidae,Daubentonia madagascariensis,FALSE,Primates,Daubentoniidae,NCBI:name,TRUE
-Dendrohyrax dorsalis,42325,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Hyracoidea,Procaviidae,NCBI:taxid,NA
-Dendrolagus goodfellowi,69260,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Diprotodontia,Macropodidae,NCBI:taxid,NA
-Desmana moschata,NA,TRUE,FALSE,FALSE,Insectivora,Progressive Insectivora,NA,83,Eulipotyphla,Talpidae,Desmana moschata,FALSE,Eulipotyphla,Talpidae,NCBI:name,TRUE
-Didelphis aurita,85694,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Didelphimorphia,Didelphidae,NCBI:taxid,NA
-Didelphis marsupialis,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Didelphimorphia,Didelphidae,NCBI:name,NA
-Echinops telfairi,NA,TRUE,FALSE,FALSE,Insectivora,Basal Insectivora,Tenrecinae,5,Afrosoricida,Tenrecidae,Echinops telfairi,FALSE,Afrosoricida,Tenrecidae,NCBI:name,TRUE
-Echinosorex gymnura,NA,TRUE,FALSE,FALSE,Insectivora,NA,NA,NA,NA,NA,NA,TRUE,Eulipotyphla,Erinaceidae,NCBI:name,NA
-Elephantulus fuscipes,NA,TRUE,FALSE,FALSE,Macroscelidea,NA,NA,31,Macroscelidea,Macroscelididae,Elephantulus fuscipes,FALSE,Macroscelidea,Macroscelididae,NCBI:name,TRUE
-Elephantulus myurus,113277,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Macroscelidea,Macroscelididae,NCBI:taxid,NA
-Epomophorus wahlbergi,58067,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Pteropodidae,NCBI:taxid,NA
-Epomops franqueti,77231,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Pteropodidae,NCBI:taxid,NA
-Equus burchelli,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Perissodactyla,Equidae,NCBI:name,NA
-Erinaceus europaeus,NA,TRUE,FALSE,FALSE,Insectivora,Basal Insectivora,Erinaceidae,22,Eulipotyphla,Erinaceidae,Erinaceus europaeus,FALSE,Eulipotyphla,Erinaceidae,NCBI:name,TRUE
-Erythrocebus patas,NA,TRUE,FALSE,FALSE,Primates,Simians,NA,234,Primates,Cercopithecidae,Erythrocebus patas,FALSE,Primates,Cercopithecidae,NCBI:name,TRUE
-Eulemur fulvus,NA,TRUE,FALSE,FALSE,Primates,Prosimians,Lemuridae,118,Primates,Lemuridae,Eulemur fulvus,FALSE,Primates,Lemuridae,NCBI:name,TRUE
-Eulemur mongoz,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Lemuridae,NCBI:name,NA
-Felis catus,9685,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Felidae,NCBI:taxid,NA
-Fukomys anselli,261002,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Bathyergidae,NCBI:taxid,NA
-Fukomys damarensis,885580,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Bathyergidae,NCBI:taxid,NA
-Fukomys darlingi,63616,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Bathyergidae,NCBI:taxid,NA
-Fukomys mechowii,423607,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Bathyergidae,NCBI:taxid,NA
-Galago senegalensis,NA,TRUE,FALSE,TRUE,Primates,Prosimians,Lorisidae,143,Primates,Galagidae,Galago senegalensis,FALSE,Primates,Galagidae,NCBI:name,TRUE
-Galagoides demidoff,NA,TRUE,FALSE,FALSE,Primates,Prosimians,Lorisidae,142,Primates,Galagidae,Galagoides demidoff,FALSE,Primates,Galagidae,NCBI:name,TRUE
-Galemys pyrenaicus,NA,TRUE,FALSE,FALSE,Insectivora,Progressive Insectivora,NA,84,Eulipotyphla,Talpidae,Galemys pyrenaicus,FALSE,Eulipotyphla,Talpidae,NCBI:name,TRUE
-Galictis vittatus,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Mustelidae,GBIF,NA
-Georychus capensis,10177,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Bathyergidae,NCBI:taxid,NA
-Giraffa camelopardalis,9894,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Giraffidae,NCBI:taxid,NA
-Gorilla gorilla,9593,FALSE,TRUE,FALSE,NA,NA,NA,NA,Primates,Hominidae,Gorilla gorilla,FALSE,Primates,Hominidae,NCBI:taxid,TRUE
-Gorilla sp.,NA,TRUE,FALSE,FALSE,Primates,Simians,NA,279,Primates,Hominidae,Gorilla gorilla,FALSE,Primates,Hominidae,GBIF,TRUE
-Heliophobius argenteocinereus,10179,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Bathyergidae,NCBI:taxid,NA
-Hemicentetes semispinosus,NA,TRUE,FALSE,FALSE,Insectivora,Basal Insectivora,Tenrecinae,4,Afrosoricida,Tenrecidae,Hemicentetes semispinosus,FALSE,Afrosoricida,Tenrecidae,NCBI:name,TRUE
-Hemiechinus auritus,NA,TRUE,FALSE,FALSE,Insectivora,Basal Insectivora,Erinaceidae,23,Eulipotyphla,Erinaceidae,Hemiechinus auritus,FALSE,Eulipotyphla,Erinaceidae,NCBI:name,TRUE
-Heterocephalus glaber,10181,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Bathyergidae,NCBI:taxid,NA
-Homo sapiens,9606,TRUE,TRUE,TRUE,Primates,Simians,NA,280,Primates,Hominidae,Homo sapiens,FALSE,Primates,Hominidae,NCBI:taxid,TRUE
-Hyaena hyaena,95912,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Hyaenidae,NCBI:taxid,NA
-Hydrochoerus hydrochaeris,10149,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Hydrochaeridae,NCBI:taxid,NA
-Hylobates lar,NA,TRUE,FALSE,TRUE,Primates,Simians,NA,271,Primates,Hylobatidae,Hylobates lar,FALSE,Primates,Hylobatidae,NCBI:name,TRUE
-Hylobates muelleri,NA,TRUE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Hylobatidae,NCBI:name,NA
-Hylomys suillus,NA,TRUE,FALSE,FALSE,Insectivora,NA,NA,NA,NA,NA,NA,TRUE,Eulipotyphla,Erinaceidae,NCBI:name,NA
-Hypsignathus monstrosus,448084,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Pteropodidae,NCBI:taxid,NA
-Indri indri,NA,TRUE,FALSE,FALSE,Primates,Prosimians,Indriidae,133,Primates,Indriidae,Indri indri,FALSE,Primates,Indriidae,NCBI:name,TRUE
-Lagothrix lagothricha,NA,TRUE,FALSE,FALSE,Primates,Simians,NA,186,Primates,Atelidae,Lagothrix lagothricha,FALSE,Primates,Atelidae,NCBI:name,TRUE
-Lama glama,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Camelidae,NCBI:name,NA
-Lemur catta,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Lemuridae,NCBI:name,NA
-Leontopithecus rosalia,NA,TRUE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cebidae,NCBI:name,NA
-Lepilemur ruficaudatus,NA,TRUE,FALSE,FALSE,Primates,Prosimians,Lemuridae,117,Primates,Lepilemuridae,Lepilemur ruficaudatus,FALSE,Primates,Lepilemuridae,NCBI:name,TRUE
-Lophocebus albigena,NA,TRUE,FALSE,FALSE,Primates,Simians,NA,209,Primates,Cercopithecidae,Lophocebus albigena,FALSE,Primates,Cercopithecidae,NCBI:name,TRUE
-Loris tardigradus,NA,TRUE,FALSE,FALSE,Primates,Prosimians,Lorisidae,137,Primates,Lorisidae,Loris tardigradus,FALSE,Primates,Lorisidae,NCBI:name,TRUE
-Loxodonta africana,9785,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Proboscidea,Elephantidae,NCBI:taxid,NA
-Macaca fascicularis,9541,TRUE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:taxid,NA
-Macaca maura,NA,TRUE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:name,NA
-Macaca mulatta,9544,TRUE,TRUE,TRUE,Primates,Simians,NA,202,Primates,Cercopithecidae,Macaca mulatta,FALSE,Primates,Cercopithecidae,NCBI:taxid,TRUE
-Macaca nemestrina,9545,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:taxid,NA
-Macaca radiata,9548,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:taxid,NA
-Macronycteris commersoni,110941,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Hipposideridae,NCBI:taxid,NA
-Macropus fuliginosus,9316,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Diprotodontia,Macropodidae,NCBI:taxid,NA
-Mandrillus sphinx,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:name,NA
-Marmosa mitis,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Didelphimorphia,Didelphidae,GBIF,NA
-Marmosops incanus,225404,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Didelphimorphia,Didelphidae,NCBI:taxid,NA
-Megaloglossus woermanni,58073,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Pteropodidae,NCBI:taxid,NA
-Mesocricetus auratus,10036,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Cricetidae,NCBI:taxid,NA
-Metachirus nudicaudatus,42725,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Didelphimorphia,Didelphidae,NCBI:taxid,NA
-Microcebus murinus,30608,TRUE,TRUE,TRUE,Primates,Prosimians,Cheirogaleiclae,114,Primates,Cheirogaleidae,Microcebus murinus,FALSE,Primates,Cheirogaleidae,NCBI:taxid,TRUE
-Microgale cowani,NA,TRUE,FALSE,FALSE,Insectivora,Progressive Insectivora,NA,7,Afrosoricida,Tenrecidae,Microgale cowani,FALSE,Afrosoricida,Tenrecidae,NCBI:name,TRUE
-Microgale mergulus,NA,TRUE,FALSE,FALSE,Insectivora,Progressive Insectivora,NA,8,Afrosoricida,Tenrecidae,Microgale mergulus,FALSE,Afrosoricida,Tenrecidae,NCBI:name,TRUE
-Micropotamogale lamottei,NA,TRUE,FALSE,FALSE,Insectivora,Progressive Insectivora,NA,14,Afrosoricida,Potamogalidae,Micropotamogale lamottei,FALSE,Afrosoricida,Tenrecidae,NCBI:name,TRUE
-Micropotamogale ruwenzorii,NA,TRUE,FALSE,FALSE,Insectivora,NA,NA,NA,Afrosoricida,Potamogalidae,Micropotamogale ruwenzorii,FALSE,Afrosoricida,Tenrecidae,NCBI:name,TRUE
-Microsorex hoyi,NA,TRUE,FALSE,FALSE,Insectivora,NA,NA,NA,Eulipotyphla,Soricidae,Sorex hoyi,FALSE,Soricomorpha,Soricidae,GBIF,FALSE
-Miniopterus schreibersii,9433,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Miniopteridae,NCBI:taxid,NA
-Miopithecus talapoin,NA,TRUE,FALSE,FALSE,Primates,Simians,NA,232,Primates,Cercopithecidae,Miopithecus talapoin,FALSE,Primates,Cercopithecidae,NCBI:name,TRUE
-Mops pumilus,242384,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Molossidae,NCBI:taxid,NA
-Mungos mungo,210652,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Herpestidae,NCBI:taxid,NA
-Mus musculus,10090,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Muridae,NCBI:taxid,NA
-Mustela erminea,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Mustelidae,NCBI:name,NA
-Mustela putorius,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Mustelidae,NCBI:name,NA
-Mustela putorius furo,9669,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Mustelidae,NCBI:taxid,NA
-Mustela vison,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Mustelidae,NCBI:name,NA
-Myosorex babaulti,NA,TRUE,FALSE,FALSE,Insectivora,NA,NA,NA,Eulipotyphla,Soricidae,Myosorex babaulti,FALSE,Eulipotyphla,Soricidae,NCBI:name,TRUE
-Myoxus glis,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Gliridae,NCBI:name,NA
-Myrmecophaga tridactyla,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Pilosa,Myrmecophagidae,NCBI:name,NA
-NA,NA,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,NA,NA,NA
-Nasalis larvatus,NA,TRUE,FALSE,FALSE,Primates,Simians,NA,243,Primates,Cercopithecidae,Nasalis larvatus,FALSE,Primates,Cercopithecidae,NCBI:name,TRUE
-Nasua narica,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Procyonidae,NCBI:name,NA
-Neomys fodiens,NA,TRUE,FALSE,FALSE,Insectivora,Progressive Insectivora,NA,43,Eulipotyphla,Soricidae,Neomys fodiens,FALSE,Eulipotyphla,Soricidae,NCBI:name,TRUE
-Nesogale dobsoni,NA,TRUE,FALSE,FALSE,Insectivora,Progressive Insectivora,NA,9,Afrosoricida,Tenrecidae,Nesogale dobsoni,FALSE,Afrosoricida,Tenrecidae,NCBI:name,TRUE
-Nesogale talazaci,NA,TRUE,FALSE,FALSE,Insectivora,Progressive Insectivora,NA,10,Afrosoricida,Tenrecidae,Nesogale talazaci,FALSE,Afrosoricida,Tenrecidae,NCBI:name,TRUE
-Notamacropus parma,413582,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Diprotodontia,Macropodidae,NCBI:taxid,NA
-Notamacropus rufogriseus,1960652,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Diprotodontia,Macropodidae,NCBI:taxid,NA
-Nycticebus coucang,NA,TRUE,FALSE,TRUE,Primates,Prosimians,Lorisidae,138,Primates,Lorisidae,Nycticebus coucang,FALSE,Primates,Lorisidae,NCBI:name,TRUE
-Odocoileus virginianus,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Cervidae,NCBI:name,NA
-Oryctolagus cuniculus,9986,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Lagomorpha,Leporidae,NCBI:taxid,NA
-Oryzorictes hova,NA,TRUE,FALSE,FALSE,Insectivora,Progressive Insectivora,NA,6,Afrosoricida,Tenrecidae,Oryzorictes hova,FALSE,Afrosoricida,Tenrecidae,NCBI:name,TRUE
-Osphranter rufus,9321,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Diprotodontia,Macropodidae,NCBI:taxid,NA
-Otolemur crassicaudatus,NA,TRUE,FALSE,TRUE,Primates,Prosimians,Lorisidae,141,Primates,Galagidae,Otolemur crassicaudatus,FALSE,Primates,Galagidae,NCBI:name,TRUE
-Otolemur garnettii,30611,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Galagidae,NCBI:taxid,NA
-Pan paniscus,NA,TRUE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Hominidae,NCBI:name,NA
-Pan troglodytes,NA,TRUE,FALSE,TRUE,Primates,Simians,NA,277,Primates,Hominidae,Pan troglodytes,FALSE,Primates,Hominidae,NCBI:name,TRUE
-Panthera leo,9689,FALSE,TRUE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Felidae,NCBI:taxid,NA
-Papio anubis,NA,TRUE,FALSE,FALSE,Primates,Simians,NA,212,Primates,Cercopithecidae,Papio anubis,FALSE,Primates,Cercopithecidae,NCBI:name,TRUE
-Papio cynocephalus,9556,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:taxid,NA
-Papio hamadryas,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:name,NA
-Parascalops breweri,94437,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Eulipotyphla,Talpidae,NCBI:taxid,NA
-Perodicticus potto,NA,TRUE,FALSE,TRUE,Primates,Prosimians,Lorisidae,139,Primates,Lorisidae,Perodicticus potto,FALSE,Primates,Lorisidae,NCBI:name,TRUE
-Petrodromus tetradactylus,113272,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Macroscelidea,Macroscelididae,NCBI:taxid,NA
-Piliocolobus badius,NA,TRUE,FALSE,FALSE,Primates,Simians,NA,246,Primates,Cercopithecidae,Piliocolobus badius,FALSE,Primates,Cercopithecidae,NCBI:name,TRUE
-Pithecia monachus,NA,TRUE,FALSE,FALSE,Primates,Simians,NA,174,Primates,Pitheciidae,Pithecia monachus,FALSE,Primates,Pitheciidae,NCBI:name,TRUE
-Pithecia pithecia,NA,TRUE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Pitheciidae,NCBI:name,NA
-Pongo pygmaeus,9600,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Hominidae,NCBI:taxid,NA
-Pongo sp.,NA,TRUE,FALSE,FALSE,Primates,Simians,NA,NA,NA,NA,NA,TRUE,Primates,Hominidae,NCBI:name,NA
-Potamogale velox,NA,TRUE,FALSE,FALSE,Insectivora,Progressive Insectivora,NA,15,Afrosoricida,Potamogalidae,Potamogale velox,FALSE,Afrosoricida,Tenrecidae,NCBI:name,TRUE
-Potos flavus,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Procyonidae,NCBI:name,NA
-Procavia capensis,9813,FALSE,TRUE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Hyracoidea,Procaviidae,NCBI:taxid,NA
-Procyon lotor,9654,FALSE,TRUE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Procyonidae,NCBI:taxid,NA
-Proechimys guyannensis,128105,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Echimyidae,NCBI:taxid,NA
-Propithecus verreauxi,NA,TRUE,FALSE,TRUE,Primates,Prosimians,Indriidae,132,Primates,Indriidae,Propithecus verreauxi,FALSE,Primates,Indriidae,NCBI:name,TRUE
-Pygathrix nemaeus,NA,TRUE,FALSE,FALSE,Primates,Simians,NA,242,Primates,Cercopithecidae,Pygathrix nemaeus,FALSE,Primates,Cercopithecidae,NCBI:name,TRUE
-Rattus norvegicus,10116,TRUE,TRUE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Muridae,NCBI:taxid,NA
-Rhynchocyon cirnei,NA,TRUE,FALSE,FALSE,Macroscelidea,Insectivora,NA,33,Macroscelidea,Macroscelididae,Rhynchocyon cirnei,FALSE,Macroscelidea,Macroscelididae,NCBI:name,TRUE
-Rousettus aegyptiacus,9407,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Pteropodidae,NCBI:taxid,NA
-Ruwenzorisorex suncoides,NA,TRUE,FALSE,FALSE,Insectivora,NA,NA,NA,Eulipotyphla,Soricidae,Ruwenzorisorex suncoides,FALSE,Eulipotyphla,Soricidae,NCBI:name,TRUE
-Saguinus geoffroyi,NA,TRUE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cebidae,NCBI:name,NA
-Saguinus midas,30586,TRUE,TRUE,FALSE,Primates,Simians,NA,165,Primates,Callitrichidae,Saguinus midas,FALSE,Primates,Cebidae,NCBI:taxid,TRUE
-Saguinus oedipus,NA,TRUE,FALSE,FALSE,Primates,Simians,NA,164,Primates,Callitrichidae,Saguinus oedipus,FALSE,Primates,Cebidae,NCBI:name,TRUE
-Saimiri sciureus,9521,TRUE,TRUE,TRUE,Primates,Simians,NA,192,Primates,Cebidae,Saimiri sciureus,FALSE,Primates,Cebidae,NCBI:taxid,TRUE
-Sapajus apella,9515,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cebidae,NCBI:taxid,NA
-Sarcophilus harrisii,9305,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Dasyuromorphia,Dasyuridae,NCBI:taxid,NA
-Scalopus aquaticus,71119,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Eulipotyphla,Talpidae,NCBI:taxid,NA
-Sciurus carolinensis,30640,FALSE,TRUE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Sciuridae,NCBI:taxid,NA
-Scotonycteris zenkeri,1001563,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Pteropodidae,NCBI:taxid,NA
-scutisorexãsomereni,NA,TRUE,FALSE,FALSE,NA,NA,NA,NA,Eulipotyphla,Soricidae,Scutisorex somereni,FALSE,Soricomorpha,Soricidae,GBIF,FALSE
-ScutisorexÊsomereni,NA,TRUE,FALSE,FALSE,Insectivora,NA,NA,NA,NA,NA,NA,TRUE,Soricomorpha,Soricidae,GBIF,NA
-Semnopithecus entellus,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:name,NA
-Setifer setosus,NA,TRUE,FALSE,FALSE,Insectivora,Basal Insectivora,Tenrecinae,3,Afrosoricida,Tenrecidae,Setifer setosus,FALSE,Afrosoricida,Tenrecidae,NCBI:name,TRUE
-Solenodon paradoxus,NA,TRUE,FALSE,FALSE,Insectivora,Progressive Insectivora,NA,1,Eulipotyphla,Solenodontidae,Solenodon paradoxus,FALSE,Eulipotyphla,Solenodontidae,NCBI:name,TRUE
-Sorex araneus,NA,TRUE,FALSE,FALSE,Insectivora,Basal Insectivora,Soricidae,42,Eulipotyphla,Soricidae,Sorex araneus,FALSE,Eulipotyphla,Soricidae,NCBI:name,TRUE
-Sorex cinereus,NA,TRUE,FALSE,FALSE,Insectivora,NA,NA,NA,Eulipotyphla,Soricidae,Sorex cinereus,FALSE,Eulipotyphla,Soricidae,NCBI:name,TRUE
-Sorex fumeus,62283,TRUE,TRUE,FALSE,Insectivora,NA,NA,NA,Eulipotyphla,Soricidae,Sorex fumeus,FALSE,Eulipotyphla,Soricidae,NCBI:taxid,TRUE
-Sorex minutus,NA,TRUE,FALSE,FALSE,Insectivora,Basal Insectivora,Soricidae,41,Eulipotyphla,Soricidae,Sorex minutus,FALSE,Eulipotyphla,Soricidae,NCBI:name,TRUE
-Spalax ehrenbergi,NA,TRUE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Spalacidae,NCBI:name,NA
-Suncus etruscus,NA,TRUE,FALSE,FALSE,Insectivora,NA,NA,NA,Eulipotyphla,Soricidae,Suncus etruscus,FALSE,Eulipotyphla,Soricidae,NCBI:name,TRUE
-Suncus megalura,NA,TRUE,FALSE,FALSE,Insectivora,NA,NA,NA,Eulipotyphla,Soricidae,Suncus megalura,FALSE,Eulipotyphla,Soricidae,NCBI:name,TRUE
-Suncus murinus,NA,TRUE,FALSE,FALSE,Insectivora,Basal Insectivora,Soricidae,63,Eulipotyphla,Soricidae,Suncus murinus,FALSE,Eulipotyphla,Soricidae,NCBI:name,TRUE
-Sus scrofa domesticus,9825,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Suidae,NCBI:taxid,NA
-Sylvisorex granti,NA,TRUE,FALSE,FALSE,Insectivora,NA,NA,NA,Eulipotyphla,Soricidae,Sylvisorex granti,FALSE,Eulipotyphla,Soricidae,NCBI:name,TRUE
-Symphalangus syndactylus,NA,TRUE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Hylobatidae,NCBI:name,NA
-Talpa europaea,NA,TRUE,FALSE,FALSE,Insectivora,Progressive Insectivora,NA,81,Eulipotyphla,Talpidae,Talpa europaea,FALSE,Eulipotyphla,Talpidae,NCBI:name,TRUE
-Tamandua tetradactyla,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Pilosa,Myrmecophagidae,NCBI:name,NA
-Tarsius sp.,NA,TRUE,FALSE,FALSE,Primates,Prosimians,Tarsiidae,147,Primates,Tarsiidae,Tarsius sp.,FALSE,Primates,Tarsiidae,NCBI:name,TRUE
-Tarsius syrichta,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Tarsiidae,NCBI:name,NA
-Tayassu tajacu,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Tayassuidae,NCBI:name,NA
-Tenrec ecaudatus,NA,TRUE,FALSE,FALSE,Insectivora,Basal Insectivora,Tenrecinae,2,Afrosoricida,Tenrecidae,Tenrec ecaudatus,FALSE,Afrosoricida,Tenrecidae,NCBI:name,TRUE
-Trachypithecus francoisi,NA,TRUE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:name,NA
-Tragelaphus strepsiceros,9946,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Bovidae,NCBI:taxid,NA
-Triaenops persicus,329870,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Rhinonycteridae,NCBI:taxid,NA
-Tupaia glis,9395,TRUE,TRUE,FALSE,Scandentia,Prosimians,NA,102,Scandentia,Tupaiidae,Tupaia glis,FALSE,Scandentia,Tupaiidae,NCBI:taxid,TRUE
-Tupaia minor,NA,TRUE,FALSE,FALSE,Scandentia,Prosimians,NA,104,Scandentia,Tupaiidae,Tupaia minor,FALSE,Scandentia,Tupaiidae,NCBI:name,TRUE
-Urogale everetti,NA,TRUE,FALSE,FALSE,Scandentia,Prosimians,NA,106,Scandentia,Tupaiidae,Tupaia everetti,FALSE,Scandentia,Tupaiidae,NCBI:name,TRUE
-Ursus arctos,9644,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Ursidae,NCBI:taxid,NA
-Ursus maritimus,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Ursidae,NCBI:name,NA
-Varecia variegata,NA,TRUE,FALSE,FALSE,Primates,Prosimians,Lemuridae,124,Primates,Lemuridae,Varecia variegata,FALSE,Primates,Lemuridae,NCBI:name,TRUE
-Vulpes zerda,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Canidae,NCBI:name,NA
-Wallabia bicolor,9330,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Diprotodontia,Macropodidae,NCBI:taxid,NA
-Zalophus californianus,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Otariidae,NCBI:name,NA
+accepted_name,ncbi_taxid,in_Stephan,in_HerculanoHouzel,in_Allman,Order_Stephan1981,Suborder_Stephan1981,Family_Stephan1981,code_Stephan1981,Order_MDD,Family_MDD,mdd_accepted_name,needs_taxonomy_review,Order_resolved,Family_resolved,taxonomy_source,order_matches_MDD,rank,taxon_type
+Ailurus fulgens,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Ailuridae,NCBI:name,NA,species,extant
+Alouatta caraya,NA,TRUE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Atelidae,NCBI:name,NA,species,extant
+Alouatta palliata,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Atelidae,NCBI:name,NA,species,extant
+Alouatta seniculus,NA,TRUE,FALSE,FALSE,Primates,Simians,NA,179,Primates,Atelidae,Alouatta seniculus,FALSE,Primates,Atelidae,NCBI:name,TRUE,species,extant
+Amblysomus hottentotus,9391,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Afrosoricida,Chrysochloridae,NCBI:taxid,NA,species,extant
+Antidorcas marsupialis,59523,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Bovidae,NCBI:taxid,NA,species,extant
+Aotus trivirgatus,9505,TRUE,TRUE,TRUE,Primates,Simians,NA,171,Primates,Aotidae,Aotus trivirgatus,FALSE,Primates,Aotidae,NCBI:taxid,TRUE,species,extant
+Aplodontia rufa,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Aplodontiidae,NCBI:name,NA,species,extant
+Atelerix algirus,NA,TRUE,FALSE,FALSE,Insectivora,Basal Insectivora,Erinaceidae,21,Eulipotyphla,Erinaceidae,Atelerix algirus,FALSE,Eulipotyphla,Erinaceidae,NCBI:name,TRUE,species,extant
+Ateles geoffroyi,NA,TRUE,FALSE,FALSE,Primates,Simians,NA,184,Primates,Atelidae,Ateles geoffroyi,FALSE,Primates,Atelidae,NCBI:name,TRUE,species,extant
+Ateles sp.,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Atelidae,NCBI:name,NA,genus,extant
+Australopithecus sp.,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Hominidae,manual fossil hominin genus; NCBI Taxonomy esearch 2026-09-28: no entry; label source Weaver__2001 TableA-15 group 08-Aust 'Australopithecus' (STS 19; KNM-ER 23000),NA,genus,fossil
+Avahi laniger,NA,TRUE,FALSE,FALSE,Primates,Prosimians,Indriidae,130,Primates,Indriidae,Avahi laniger,FALSE,Primates,Indriidae,NCBI:name,TRUE,species,extant
+Avahi occidentalis,NA,TRUE,FALSE,FALSE,Primates,Prosimians,Indriidae,131,Primates,Indriidae,Avahi occidentalis,FALSE,Primates,Indriidae,NCBI:name,TRUE,species,extant
+Balaenoptera acutorostrata,9767,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Balaenopteridae,NCBI:taxid,NA,species,extant
+Bathyergus suillus,10172,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Bathyergidae,NCBI:taxid,NA,species,extant
+Blarina brevicauda,9387,TRUE,TRUE,FALSE,Insectivora,NA,NA,NA,Eulipotyphla,Soricidae,Blarina brevicauda,FALSE,Eulipotyphla,Soricidae,NCBI:taxid,TRUE,species,extant
+Callicebus moloch,NA,TRUE,FALSE,FALSE,Primates,Simians,NA,172,Primates,Pitheciidae,Plecturocebus moloch,FALSE,Primates,Pitheciidae,NCBI:name,TRUE,species,extant
+Callicebus sp.,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Pitheciidae,NCBI:name,NA,genus,extant
+Callimico goeldii,9495,TRUE,TRUE,FALSE,Primates,Simians,NA,166,Primates,Callitrichidae,Callimico goeldii,FALSE,Primates,Cebidae,NCBI:taxid,TRUE,species,extant
+Callithrix jacchus,9483,TRUE,TRUE,FALSE,Primates,Simians,NA,151,Primates,Callitrichidae,Callithrix jacchus,FALSE,Primates,Cebidae,NCBI:taxid,TRUE,species,extant
+Callithrix pygmaea,NA,TRUE,FALSE,FALSE,Primates,Simians,NA,156,Primates,Callitrichidae,Cebuella pygmaea,FALSE,Primates,Cebidae,NCBI:name,TRUE,species,extant
+Canis latrans,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Canidae,NCBI:name,NA,species,extant
+Canis lupus familiaris,9615,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Canidae,NCBI:taxid,NA,subspecies,extant
+Cardioderma cor,270764,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Megadermatidae,NCBI:taxid,NA,species,extant
+Casinycteris argynnis,1091509,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Pteropodidae,NCBI:taxid,NA,species,extant
+Cavia porcellus,10141,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Caviidae,NCBI:taxid,NA,species,extant
+Cebus albifrons,NA,TRUE,FALSE,FALSE,Primates,Simians,NA,191,Primates,Cebidae,Cebus albifrons,FALSE,Primates,Cebidae,NCBI:name,TRUE,species,extant
+Cercocebus agilis,NA,TRUE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:name,NA,species,extant
+Cercocebus torquatus,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:name,NA,species,extant
+Cercopithecus ascanius,NA,TRUE,FALSE,FALSE,Primates,Simians,NA,231,Primates,Cercopithecidae,Cercopithecus ascanius,FALSE,Primates,Cercopithecidae,NCBI:name,TRUE,species,extant
+Cercopithecus mitis,NA,TRUE,FALSE,FALSE,Primates,Simians,NA,227,Primates,Cercopithecidae,Cercopithecus mitis,FALSE,Primates,Cercopithecidae,NCBI:name,TRUE,species,extant
+Cercopithecus nictitans,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:name,NA,species,extant
+Cheirogaleus major,NA,TRUE,FALSE,FALSE,Primates,Prosimians,Cheirogaleiclae,111,Primates,Cheirogaleidae,Cheirogaleus major,FALSE,Primates,Cheirogaleidae,NCBI:name,TRUE,species,extant
+Cheirogaleus medius,NA,TRUE,FALSE,TRUE,Primates,Prosimians,Cheirogaleiclae,112,Primates,Cheirogaleidae,Cheirogaleus medius,FALSE,Primates,Cheirogaleidae,NCBI:name,TRUE,species,extant
+Chinchilla laniger,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Chinchillidae,NCBI:name,NA,species,extant
+Choloepus didactylus,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Pilosa,Megalonychidae,NCBI:name,NA,species,extant
+Chrysochloris asiatica,NA,TRUE,FALSE,FALSE,Insectivora,Progressive Insectivora,NA,17,Afrosoricida,Chrysochloridae,Chrysochloris asiatica,FALSE,Afrosoricida,Chrysochloridae,NCBI:name,TRUE,species,extant
+Chrysochloris stuhlmanni,NA,TRUE,FALSE,FALSE,Insectivora,Progressive Insectivora,NA,16,Afrosoricida,Chrysochloridae,Chrysochloris stuhlmanni,FALSE,Afrosoricida,Chrysochloridae,NCBI:name,TRUE,species,extant
+Coleura afra,907075,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Emballonuridae,NCBI:taxid,NA,species,extant
+Colobus angolensis,NA,TRUE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:name,NA,species,extant
+Condylura cristata,143302,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Eulipotyphla,Talpidae,NCBI:taxid,NA,species,extant
+Crocidura flavescens,NA,TRUE,FALSE,FALSE,Insectivora,Basal Insectivora,Soricidae,59,Eulipotyphla,Soricidae,Crocidura flavescens,FALSE,Eulipotyphla,Soricidae,NCBI:name,TRUE,species,extant
+Crocidura hildegardeae,NA,TRUE,FALSE,FALSE,Insectivora,NA,NA,NA,Eulipotyphla,Soricidae,Crocidura hildegardeae,FALSE,Eulipotyphla,Soricidae,NCBI:name,TRUE,species,extant
+Crocidura jacksoni,NA,TRUE,FALSE,FALSE,Insectivora,NA,NA,NA,Eulipotyphla,Soricidae,Crocidura jacksoni,FALSE,Eulipotyphla,Soricidae,ITIS,TRUE,species,extant
+Crocidura russula,NA,TRUE,FALSE,FALSE,Insectivora,Basal Insectivora,Soricidae,60,Eulipotyphla,Soricidae,Crocidura russula,FALSE,Eulipotyphla,Soricidae,NCBI:name,TRUE,species,extant
+Crocuta crocuta,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Hyaenidae,NCBI:name,NA,species,extant
+Cryptomys hottentotus,10175,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Bathyergidae,NCBI:taxid,NA,species,extant
+Cryptomys hottentotus natalensis,63621,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Bathyergidae,NCBI:taxid,NA,subspecies,extant
+Cryptomys hottentotus pretoriae,63619,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Bathyergidae,NCBI:taxid,NA,subspecies,extant
+Cynictis penicillata,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Herpestidae,NCBI:name,NA,species,extant
+Damaliscus pygargus phillipsi,37172,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Bovidae,NCBI:taxid,NA,subspecies,extant
+Daubentonia madagascariensis,NA,TRUE,FALSE,TRUE,Prosimians,Prosimians,Daubentoniidae,136,Primates,Daubentoniidae,Daubentonia madagascariensis,FALSE,Primates,Daubentoniidae,NCBI:name,TRUE,species,extant
+Dendrohyrax dorsalis,42325,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Hyracoidea,Procaviidae,NCBI:taxid,NA,species,extant
+Dendrolagus goodfellowi,69260,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Diprotodontia,Macropodidae,NCBI:taxid,NA,species,extant
+Desmana moschata,NA,TRUE,FALSE,FALSE,Insectivora,Progressive Insectivora,NA,83,Eulipotyphla,Talpidae,Desmana moschata,FALSE,Eulipotyphla,Talpidae,NCBI:name,TRUE,species,extant
+Didelphis aurita,85694,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Didelphimorphia,Didelphidae,NCBI:taxid,NA,species,extant
+Didelphis marsupialis,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Didelphimorphia,Didelphidae,NCBI:name,NA,species,extant
+Echinops telfairi,NA,TRUE,FALSE,FALSE,Insectivora,Basal Insectivora,Tenrecinae,5,Afrosoricida,Tenrecidae,Echinops telfairi,FALSE,Afrosoricida,Tenrecidae,NCBI:name,TRUE,species,extant
+Echinosorex gymnura,NA,TRUE,FALSE,FALSE,Insectivora,NA,NA,NA,NA,NA,NA,TRUE,Eulipotyphla,Erinaceidae,NCBI:name,NA,species,extant
+Elephantulus fuscipes,NA,TRUE,FALSE,FALSE,Macroscelidea,NA,NA,31,Macroscelidea,Macroscelididae,Elephantulus fuscipes,FALSE,Macroscelidea,Macroscelididae,NCBI:name,TRUE,species,extant
+Elephantulus myurus,113277,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Macroscelidea,Macroscelididae,NCBI:taxid,NA,species,extant
+Epomophorus wahlbergi,58067,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Pteropodidae,NCBI:taxid,NA,species,extant
+Epomops franqueti,77231,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Pteropodidae,NCBI:taxid,NA,species,extant
+Equus burchelli,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Perissodactyla,Equidae,NCBI:name,NA,species,extant
+Erinaceus europaeus,NA,TRUE,FALSE,FALSE,Insectivora,Basal Insectivora,Erinaceidae,22,Eulipotyphla,Erinaceidae,Erinaceus europaeus,FALSE,Eulipotyphla,Erinaceidae,NCBI:name,TRUE,species,extant
+Erythrocebus patas,NA,TRUE,FALSE,FALSE,Primates,Simians,NA,234,Primates,Cercopithecidae,Erythrocebus patas,FALSE,Primates,Cercopithecidae,NCBI:name,TRUE,species,extant
+Eulemur fulvus,NA,TRUE,FALSE,FALSE,Primates,Prosimians,Lemuridae,118,Primates,Lemuridae,Eulemur fulvus,FALSE,Primates,Lemuridae,NCBI:name,TRUE,species,extant
+Eulemur mongoz,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Lemuridae,NCBI:name,NA,species,extant
+Felis catus,9685,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Felidae,NCBI:taxid,NA,species,extant
+Fukomys anselli,261002,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Bathyergidae,NCBI:taxid,NA,species,extant
+Fukomys damarensis,885580,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Bathyergidae,NCBI:taxid,NA,species,extant
+Fukomys darlingi,63616,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Bathyergidae,NCBI:taxid,NA,species,extant
+Fukomys mechowii,423607,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Bathyergidae,NCBI:taxid,NA,species,extant
+Galago senegalensis,NA,TRUE,FALSE,TRUE,Primates,Prosimians,Lorisidae,143,Primates,Galagidae,Galago senegalensis,FALSE,Primates,Galagidae,NCBI:name,TRUE,species,extant
+Galagoides demidoff,NA,TRUE,FALSE,FALSE,Primates,Prosimians,Lorisidae,142,Primates,Galagidae,Galagoides demidoff,FALSE,Primates,Galagidae,NCBI:name,TRUE,species,extant
+Galemys pyrenaicus,NA,TRUE,FALSE,FALSE,Insectivora,Progressive Insectivora,NA,84,Eulipotyphla,Talpidae,Galemys pyrenaicus,FALSE,Eulipotyphla,Talpidae,NCBI:name,TRUE,species,extant
+Galictis vittatus,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Mustelidae,GBIF,NA,species,extant
+Georychus capensis,10177,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Bathyergidae,NCBI:taxid,NA,species,extant
+Giraffa camelopardalis,9894,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Giraffidae,NCBI:taxid,NA,species,extant
+Gorilla gorilla,9593,FALSE,TRUE,FALSE,NA,NA,NA,NA,Primates,Hominidae,Gorilla gorilla,FALSE,Primates,Hominidae,NCBI:taxid,TRUE,species,extant
+Gorilla sp.,NA,TRUE,FALSE,FALSE,Primates,Simians,NA,279,Primates,Hominidae,Gorilla gorilla,FALSE,Primates,Hominidae,GBIF,TRUE,genus,extant
+Heliophobius argenteocinereus,10179,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Bathyergidae,NCBI:taxid,NA,species,extant
+Hemicentetes semispinosus,NA,TRUE,FALSE,FALSE,Insectivora,Basal Insectivora,Tenrecinae,4,Afrosoricida,Tenrecidae,Hemicentetes semispinosus,FALSE,Afrosoricida,Tenrecidae,NCBI:name,TRUE,species,extant
+Hemiechinus auritus,NA,TRUE,FALSE,FALSE,Insectivora,Basal Insectivora,Erinaceidae,23,Eulipotyphla,Erinaceidae,Hemiechinus auritus,FALSE,Eulipotyphla,Erinaceidae,NCBI:name,TRUE,species,extant
+Heterocephalus glaber,10181,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Bathyergidae,NCBI:taxid,NA,species,extant
+Homo erectus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Hominidae,manual fossil hominin; NCBI Taxonomy esearch 2026-09-28: no entry; label source Balzeau_etal_2012 Table3/5 'Asian Homo erectus' and Weaver__2001 TableA-15 group 10-HE 'Homo erectus',NA,species,fossil
+Homo erectus s.l.,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Hominidae,hypothesis group label; Balzeau_etal_2012 Table3/5 'African and Georgian Homo erectus s.l.'; sensu lato hypodigm incl. Georgian (Dmanisi) material; no NCBI entry for Homo erectus,NA,group,fossil_group
+Homo habilis,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Hominidae,manual fossil hominin; NCBI Taxonomy esearch 2026-09-28: no entry; label source Weaver__2001 TableA-15 group 09-HH 'Homo habilis' (KNM-ER 1813 / 1805 / 1470),NA,species,fossil
+Homo habilis s.l.,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Hominidae,hypothesis group label; Balzeau_etal_2012 Table3/5 'Homo habilis s.l.'; sensu lato hypodigm; no NCBI entry for Homo habilis,NA,group,fossil_group
+Homo neanderthalensis,63221,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Hominidae,NCBI Taxonomy esearch 2026-09-28: taxid 63221 is ranked subspecies 'Homo sapiens neanderthalensis' with synonym Homo neanderthalensis; anchor kept at species rank as used by Kochiyama_etal_2018 (Species column) and Weaver__2001,NA,species,fossil
+Homo neanderthalensis s.l.,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Hominidae,hypothesis group label; Balzeau_etal_2012 Table3/5 'Neandertals s.l.'; sensu lato hypodigm; species-level taxid 63221 sits on the Homo neanderthalensis row,NA,group,fossil_group
+Homo sapiens,9606,TRUE,TRUE,TRUE,Primates,Simians,NA,280,Primates,Hominidae,Homo sapiens,FALSE,Primates,Hominidae,NCBI:taxid,TRUE,species,extant
+Homo sapiens (archaic),NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Hominidae,grade/hypothesis label; Weaver__2001 TableA-15 group 11-EAH 'Early Archaic Homo sapiens' (Broken Hill/Kabwe; Swanscombe); not a recognised taxon; specimens often referred to Homo heidelbergensis (NCBI 1425170) but no re-identification made here,NA,group,hypothesis
+Homo sapiens (early),NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Hominidae,hypothesis group label for early/fossil anatomically modern Homo sapiens; Kochiyama_etal_2018 Figure3B 'early Homo sapiens' (Qafzeh 9; Skhul 5; Mladec 1; Cro-Magnon 1) and Weaver__2001 TableA-15 group 13-EMH 'Early Modern Homo sapiens' (Cro-Magnon); species taxid 9606 sits on the Homo sapiens row,NA,group,fossil_group
+Hyaena hyaena,95912,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Hyaenidae,NCBI:taxid,NA,species,extant
+Hydrochoerus hydrochaeris,10149,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Hydrochaeridae,NCBI:taxid,NA,species,extant
+Hylobates lar,NA,TRUE,FALSE,TRUE,Primates,Simians,NA,271,Primates,Hylobatidae,Hylobates lar,FALSE,Primates,Hylobatidae,NCBI:name,TRUE,species,extant
+Hylobates muelleri,NA,TRUE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Hylobatidae,NCBI:name,NA,species,extant
+Hylomys suillus,NA,TRUE,FALSE,FALSE,Insectivora,NA,NA,NA,NA,NA,NA,TRUE,Eulipotyphla,Erinaceidae,NCBI:name,NA,species,extant
+Hypsignathus monstrosus,448084,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Pteropodidae,NCBI:taxid,NA,species,extant
+Indri indri,NA,TRUE,FALSE,FALSE,Primates,Prosimians,Indriidae,133,Primates,Indriidae,Indri indri,FALSE,Primates,Indriidae,NCBI:name,TRUE,species,extant
+Lagothrix lagothricha,NA,TRUE,FALSE,FALSE,Primates,Simians,NA,186,Primates,Atelidae,Lagothrix lagothricha,FALSE,Primates,Atelidae,NCBI:name,TRUE,species,extant
+Lama glama,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Camelidae,NCBI:name,NA,species,extant
+Lemur catta,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Lemuridae,NCBI:name,NA,species,extant
+Leontopithecus rosalia,NA,TRUE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cebidae,NCBI:name,NA,species,extant
+Lepilemur ruficaudatus,NA,TRUE,FALSE,FALSE,Primates,Prosimians,Lemuridae,117,Primates,Lepilemuridae,Lepilemur ruficaudatus,FALSE,Primates,Lepilemuridae,NCBI:name,TRUE,species,extant
+Lophocebus albigena,NA,TRUE,FALSE,FALSE,Primates,Simians,NA,209,Primates,Cercopithecidae,Lophocebus albigena,FALSE,Primates,Cercopithecidae,NCBI:name,TRUE,species,extant
+Loris tardigradus,NA,TRUE,FALSE,FALSE,Primates,Prosimians,Lorisidae,137,Primates,Lorisidae,Loris tardigradus,FALSE,Primates,Lorisidae,NCBI:name,TRUE,species,extant
+Loxodonta africana,9785,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Proboscidea,Elephantidae,NCBI:taxid,NA,species,extant
+Macaca fascicularis,9541,TRUE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:taxid,NA,species,extant
+Macaca maura,NA,TRUE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:name,NA,species,extant
+Macaca mulatta,9544,TRUE,TRUE,TRUE,Primates,Simians,NA,202,Primates,Cercopithecidae,Macaca mulatta,FALSE,Primates,Cercopithecidae,NCBI:taxid,TRUE,species,extant
+Macaca nemestrina,9545,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:taxid,NA,species,extant
+Macaca radiata,9548,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:taxid,NA,species,extant
+Macronycteris commersoni,110941,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Hipposideridae,NCBI:taxid,NA,species,extant
+Macropus fuliginosus,9316,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Diprotodontia,Macropodidae,NCBI:taxid,NA,species,extant
+Mandrillus sphinx,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:name,NA,species,extant
+Marmosa mitis,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Didelphimorphia,Didelphidae,GBIF,NA,species,extant
+Marmosops incanus,225404,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Didelphimorphia,Didelphidae,NCBI:taxid,NA,species,extant
+Megaloglossus woermanni,58073,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Pteropodidae,NCBI:taxid,NA,species,extant
+Mesocricetus auratus,10036,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Cricetidae,NCBI:taxid,NA,species,extant
+Metachirus nudicaudatus,42725,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Didelphimorphia,Didelphidae,NCBI:taxid,NA,species,extant
+Microcebus murinus,30608,TRUE,TRUE,TRUE,Primates,Prosimians,Cheirogaleiclae,114,Primates,Cheirogaleidae,Microcebus murinus,FALSE,Primates,Cheirogaleidae,NCBI:taxid,TRUE,species,extant
+Microgale cowani,NA,TRUE,FALSE,FALSE,Insectivora,Progressive Insectivora,NA,7,Afrosoricida,Tenrecidae,Microgale cowani,FALSE,Afrosoricida,Tenrecidae,NCBI:name,TRUE,species,extant
+Microgale mergulus,NA,TRUE,FALSE,FALSE,Insectivora,Progressive Insectivora,NA,8,Afrosoricida,Tenrecidae,Microgale mergulus,FALSE,Afrosoricida,Tenrecidae,NCBI:name,TRUE,species,extant
+Micropotamogale lamottei,NA,TRUE,FALSE,FALSE,Insectivora,Progressive Insectivora,NA,14,Afrosoricida,Potamogalidae,Micropotamogale lamottei,FALSE,Afrosoricida,Tenrecidae,NCBI:name,TRUE,species,extant
+Micropotamogale ruwenzorii,NA,TRUE,FALSE,FALSE,Insectivora,NA,NA,NA,Afrosoricida,Potamogalidae,Micropotamogale ruwenzorii,FALSE,Afrosoricida,Tenrecidae,NCBI:name,TRUE,species,extant
+Microsorex hoyi,NA,TRUE,FALSE,FALSE,Insectivora,NA,NA,NA,Eulipotyphla,Soricidae,Sorex hoyi,FALSE,Soricomorpha,Soricidae,GBIF,FALSE,species,extant
+Miniopterus schreibersii,9433,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Miniopteridae,NCBI:taxid,NA,species,extant
+Miopithecus talapoin,NA,TRUE,FALSE,FALSE,Primates,Simians,NA,232,Primates,Cercopithecidae,Miopithecus talapoin,FALSE,Primates,Cercopithecidae,NCBI:name,TRUE,species,extant
+Mops pumilus,242384,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Molossidae,NCBI:taxid,NA,species,extant
+Mungos mungo,210652,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Herpestidae,NCBI:taxid,NA,species,extant
+Mus musculus,10090,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Muridae,NCBI:taxid,NA,species,extant
+Mustela erminea,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Mustelidae,NCBI:name,NA,species,extant
+Mustela putorius,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Mustelidae,NCBI:name,NA,species,extant
+Mustela putorius furo,9669,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Mustelidae,NCBI:taxid,NA,subspecies,extant
+Mustela vison,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Mustelidae,NCBI:name,NA,species,extant
+Myosorex babaulti,NA,TRUE,FALSE,FALSE,Insectivora,NA,NA,NA,Eulipotyphla,Soricidae,Myosorex babaulti,FALSE,Eulipotyphla,Soricidae,NCBI:name,TRUE,species,extant
+Myoxus glis,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Gliridae,NCBI:name,NA,species,extant
+Myrmecophaga tridactyla,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Pilosa,Myrmecophagidae,NCBI:name,NA,species,extant
+Nasalis larvatus,NA,TRUE,FALSE,FALSE,Primates,Simians,NA,243,Primates,Cercopithecidae,Nasalis larvatus,FALSE,Primates,Cercopithecidae,NCBI:name,TRUE,species,extant
+Nasua narica,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Procyonidae,NCBI:name,NA,species,extant
+Neomys fodiens,NA,TRUE,FALSE,FALSE,Insectivora,Progressive Insectivora,NA,43,Eulipotyphla,Soricidae,Neomys fodiens,FALSE,Eulipotyphla,Soricidae,NCBI:name,TRUE,species,extant
+Nesogale dobsoni,NA,TRUE,FALSE,FALSE,Insectivora,Progressive Insectivora,NA,9,Afrosoricida,Tenrecidae,Nesogale dobsoni,FALSE,Afrosoricida,Tenrecidae,NCBI:name,TRUE,species,extant
+Nesogale talazaci,NA,TRUE,FALSE,FALSE,Insectivora,Progressive Insectivora,NA,10,Afrosoricida,Tenrecidae,Nesogale talazaci,FALSE,Afrosoricida,Tenrecidae,NCBI:name,TRUE,species,extant
+Notamacropus parma,413582,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Diprotodontia,Macropodidae,NCBI:taxid,NA,species,extant
+Notamacropus rufogriseus,1960652,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Diprotodontia,Macropodidae,NCBI:taxid,NA,species,extant
+Nycticebus coucang,NA,TRUE,FALSE,TRUE,Primates,Prosimians,Lorisidae,138,Primates,Lorisidae,Nycticebus coucang,FALSE,Primates,Lorisidae,NCBI:name,TRUE,species,extant
+Odocoileus virginianus,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Cervidae,NCBI:name,NA,species,extant
+Oryctolagus cuniculus,9986,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Lagomorpha,Leporidae,NCBI:taxid,NA,species,extant
+Oryzorictes hova,NA,TRUE,FALSE,FALSE,Insectivora,Progressive Insectivora,NA,6,Afrosoricida,Tenrecidae,Oryzorictes hova,FALSE,Afrosoricida,Tenrecidae,NCBI:name,TRUE,species,extant
+Osphranter rufus,9321,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Diprotodontia,Macropodidae,NCBI:taxid,NA,species,extant
+Otolemur crassicaudatus,NA,TRUE,FALSE,TRUE,Primates,Prosimians,Lorisidae,141,Primates,Galagidae,Otolemur crassicaudatus,FALSE,Primates,Galagidae,NCBI:name,TRUE,species,extant
+Otolemur garnettii,30611,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Galagidae,NCBI:taxid,NA,species,extant
+Pan paniscus,NA,TRUE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Hominidae,NCBI:name,NA,species,extant
+Pan troglodytes,NA,TRUE,FALSE,TRUE,Primates,Simians,NA,277,Primates,Hominidae,Pan troglodytes,FALSE,Primates,Hominidae,NCBI:name,TRUE,species,extant
+Panthera leo,9689,FALSE,TRUE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Felidae,NCBI:taxid,NA,species,extant
+Papio anubis,NA,TRUE,FALSE,FALSE,Primates,Simians,NA,212,Primates,Cercopithecidae,Papio anubis,FALSE,Primates,Cercopithecidae,NCBI:name,TRUE,species,extant
+Papio cynocephalus,9556,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:taxid,NA,species,extant
+Papio hamadryas,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:name,NA,species,extant
+Parascalops breweri,94437,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Eulipotyphla,Talpidae,NCBI:taxid,NA,species,extant
+Perodicticus potto,NA,TRUE,FALSE,TRUE,Primates,Prosimians,Lorisidae,139,Primates,Lorisidae,Perodicticus potto,FALSE,Primates,Lorisidae,NCBI:name,TRUE,species,extant
+Petrodromus tetradactylus,113272,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Macroscelidea,Macroscelididae,NCBI:taxid,NA,species,extant
+Piliocolobus badius,NA,TRUE,FALSE,FALSE,Primates,Simians,NA,246,Primates,Cercopithecidae,Piliocolobus badius,FALSE,Primates,Cercopithecidae,NCBI:name,TRUE,species,extant
+Pithecia monachus,NA,TRUE,FALSE,FALSE,Primates,Simians,NA,174,Primates,Pitheciidae,Pithecia monachus,FALSE,Primates,Pitheciidae,NCBI:name,TRUE,species,extant
+Pithecia pithecia,NA,TRUE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Pitheciidae,NCBI:name,NA,species,extant
+Pongo pygmaeus,9600,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Hominidae,NCBI:taxid,NA,species,extant
+Pongo sp.,NA,TRUE,FALSE,FALSE,Primates,Simians,NA,NA,NA,NA,NA,TRUE,Primates,Hominidae,NCBI:name,NA,genus,extant
+Potamogale velox,NA,TRUE,FALSE,FALSE,Insectivora,Progressive Insectivora,NA,15,Afrosoricida,Potamogalidae,Potamogale velox,FALSE,Afrosoricida,Tenrecidae,NCBI:name,TRUE,species,extant
+Potos flavus,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Procyonidae,NCBI:name,NA,species,extant
+Procavia capensis,9813,FALSE,TRUE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Hyracoidea,Procaviidae,NCBI:taxid,NA,species,extant
+Procyon lotor,9654,FALSE,TRUE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Procyonidae,NCBI:taxid,NA,species,extant
+Proechimys guyannensis,128105,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Echimyidae,NCBI:taxid,NA,species,extant
+Propithecus verreauxi,NA,TRUE,FALSE,TRUE,Primates,Prosimians,Indriidae,132,Primates,Indriidae,Propithecus verreauxi,FALSE,Primates,Indriidae,NCBI:name,TRUE,species,extant
+Pygathrix nemaeus,NA,TRUE,FALSE,FALSE,Primates,Simians,NA,242,Primates,Cercopithecidae,Pygathrix nemaeus,FALSE,Primates,Cercopithecidae,NCBI:name,TRUE,species,extant
+Rattus norvegicus,10116,TRUE,TRUE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Muridae,NCBI:taxid,NA,species,extant
+Rhynchocyon cirnei,NA,TRUE,FALSE,FALSE,Macroscelidea,Insectivora,NA,33,Macroscelidea,Macroscelididae,Rhynchocyon cirnei,FALSE,Macroscelidea,Macroscelididae,NCBI:name,TRUE,species,extant
+Rousettus aegyptiacus,9407,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Pteropodidae,NCBI:taxid,NA,species,extant
+Ruwenzorisorex suncoides,NA,TRUE,FALSE,FALSE,Insectivora,NA,NA,NA,Eulipotyphla,Soricidae,Ruwenzorisorex suncoides,FALSE,Eulipotyphla,Soricidae,NCBI:name,TRUE,species,extant
+Saguinus geoffroyi,NA,TRUE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cebidae,NCBI:name,NA,species,extant
+Saguinus midas,30586,TRUE,TRUE,FALSE,Primates,Simians,NA,165,Primates,Callitrichidae,Saguinus midas,FALSE,Primates,Cebidae,NCBI:taxid,TRUE,species,extant
+Saguinus oedipus,NA,TRUE,FALSE,FALSE,Primates,Simians,NA,164,Primates,Callitrichidae,Saguinus oedipus,FALSE,Primates,Cebidae,NCBI:name,TRUE,species,extant
+Saimiri sciureus,9521,TRUE,TRUE,TRUE,Primates,Simians,NA,192,Primates,Cebidae,Saimiri sciureus,FALSE,Primates,Cebidae,NCBI:taxid,TRUE,species,extant
+Sapajus apella,9515,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cebidae,NCBI:taxid,NA,species,extant
+Sarcophilus harrisii,9305,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Dasyuromorphia,Dasyuridae,NCBI:taxid,NA,species,extant
+Scalopus aquaticus,71119,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Eulipotyphla,Talpidae,NCBI:taxid,NA,species,extant
+Sciurus carolinensis,30640,FALSE,TRUE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Sciuridae,NCBI:taxid,NA,species,extant
+Scotonycteris zenkeri,1001563,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Pteropodidae,NCBI:taxid,NA,species,extant
+Scutisorex somereni,NA,TRUE,FALSE,FALSE,Insectivora,NA,NA,NA,Eulipotyphla,Soricidae,Scutisorex somereni,TRUE,Soricomorpha,Soricidae,GBIF,FALSE,species,extant
+Semnopithecus entellus,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:name,NA,species,extant
+Setifer setosus,NA,TRUE,FALSE,FALSE,Insectivora,Basal Insectivora,Tenrecinae,3,Afrosoricida,Tenrecidae,Setifer setosus,FALSE,Afrosoricida,Tenrecidae,NCBI:name,TRUE,species,extant
+Solenodon paradoxus,NA,TRUE,FALSE,FALSE,Insectivora,Progressive Insectivora,NA,1,Eulipotyphla,Solenodontidae,Solenodon paradoxus,FALSE,Eulipotyphla,Solenodontidae,NCBI:name,TRUE,species,extant
+Sorex araneus,NA,TRUE,FALSE,FALSE,Insectivora,Basal Insectivora,Soricidae,42,Eulipotyphla,Soricidae,Sorex araneus,FALSE,Eulipotyphla,Soricidae,NCBI:name,TRUE,species,extant
+Sorex cinereus,NA,TRUE,FALSE,FALSE,Insectivora,NA,NA,NA,Eulipotyphla,Soricidae,Sorex cinereus,FALSE,Eulipotyphla,Soricidae,NCBI:name,TRUE,species,extant
+Sorex fumeus,62283,TRUE,TRUE,FALSE,Insectivora,NA,NA,NA,Eulipotyphla,Soricidae,Sorex fumeus,FALSE,Eulipotyphla,Soricidae,NCBI:taxid,TRUE,species,extant
+Sorex minutus,NA,TRUE,FALSE,FALSE,Insectivora,Basal Insectivora,Soricidae,41,Eulipotyphla,Soricidae,Sorex minutus,FALSE,Eulipotyphla,Soricidae,NCBI:name,TRUE,species,extant
+Spalax ehrenbergi,NA,TRUE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Spalacidae,NCBI:name,NA,species,extant
+Suncus etruscus,NA,TRUE,FALSE,FALSE,Insectivora,NA,NA,NA,Eulipotyphla,Soricidae,Suncus etruscus,FALSE,Eulipotyphla,Soricidae,NCBI:name,TRUE,species,extant
+Suncus megalura,NA,TRUE,FALSE,FALSE,Insectivora,NA,NA,NA,Eulipotyphla,Soricidae,Suncus megalura,FALSE,Eulipotyphla,Soricidae,NCBI:name,TRUE,species,extant
+Suncus murinus,NA,TRUE,FALSE,FALSE,Insectivora,Basal Insectivora,Soricidae,63,Eulipotyphla,Soricidae,Suncus murinus,FALSE,Eulipotyphla,Soricidae,NCBI:name,TRUE,species,extant
+Sus scrofa domesticus,9825,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Suidae,NCBI:taxid,NA,subspecies,extant
+Sylvisorex granti,NA,TRUE,FALSE,FALSE,Insectivora,NA,NA,NA,Eulipotyphla,Soricidae,Sylvisorex granti,FALSE,Eulipotyphla,Soricidae,NCBI:name,TRUE,species,extant
+Symphalangus syndactylus,NA,TRUE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Hylobatidae,NCBI:name,NA,species,extant
+Talpa europaea,NA,TRUE,FALSE,FALSE,Insectivora,Progressive Insectivora,NA,81,Eulipotyphla,Talpidae,Talpa europaea,FALSE,Eulipotyphla,Talpidae,NCBI:name,TRUE,species,extant
+Tamandua tetradactyla,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Pilosa,Myrmecophagidae,NCBI:name,NA,species,extant
+Tarsius sp.,NA,TRUE,FALSE,FALSE,Primates,Prosimians,Tarsiidae,147,Primates,Tarsiidae,Tarsius sp.,FALSE,Primates,Tarsiidae,NCBI:name,TRUE,genus,extant
+Tarsius syrichta,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Tarsiidae,NCBI:name,NA,species,extant
+Tayassu tajacu,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Tayassuidae,NCBI:name,NA,species,extant
+Tenrec ecaudatus,NA,TRUE,FALSE,FALSE,Insectivora,Basal Insectivora,Tenrecinae,2,Afrosoricida,Tenrecidae,Tenrec ecaudatus,FALSE,Afrosoricida,Tenrecidae,NCBI:name,TRUE,species,extant
+Trachypithecus francoisi,NA,TRUE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:name,NA,species,extant
+Tragelaphus strepsiceros,9946,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Bovidae,NCBI:taxid,NA,species,extant
+Triaenops persicus,329870,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Rhinonycteridae,NCBI:taxid,NA,species,extant
+Tupaia glis,9395,TRUE,TRUE,FALSE,Scandentia,Prosimians,NA,102,Scandentia,Tupaiidae,Tupaia glis,FALSE,Scandentia,Tupaiidae,NCBI:taxid,TRUE,species,extant
+Tupaia minor,NA,TRUE,FALSE,FALSE,Scandentia,Prosimians,NA,104,Scandentia,Tupaiidae,Tupaia minor,FALSE,Scandentia,Tupaiidae,NCBI:name,TRUE,species,extant
+Urogale everetti,NA,TRUE,FALSE,FALSE,Scandentia,Prosimians,NA,106,Scandentia,Tupaiidae,Tupaia everetti,FALSE,Scandentia,Tupaiidae,NCBI:name,TRUE,species,extant
+Ursus arctos,9644,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Ursidae,NCBI:taxid,NA,species,extant
+Ursus maritimus,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Ursidae,NCBI:name,NA,species,extant
+Varecia variegata,NA,TRUE,FALSE,FALSE,Primates,Prosimians,Lemuridae,124,Primates,Lemuridae,Varecia variegata,FALSE,Primates,Lemuridae,NCBI:name,TRUE,species,extant
+Vulpes zerda,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Canidae,NCBI:name,NA,species,extant
+Wallabia bicolor,9330,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Diprotodontia,Macropodidae,NCBI:taxid,NA,species,extant
+Zalophus californianus,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Otariidae,NCBI:name,NA,species,extant
+Acomys cahirinus,10068,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Muridae,NCBI:taxid,NA,species,extant
+Aeshna grandis,126236,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Odonata,Aeshnidae,NCBI:taxid; class=Insecta,NA,species,extant
+Agapornis personatus,60466,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Psittaciformes,Psittacidae,NCBI:taxid; class=Aves,NA,species,extant
+Agkistrodon contortrix,8720,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Squamata,Viperidae,NCBI:taxid; class=Lepidosauria,NA,species,extant
+Alces alces,9852,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Cervidae,NCBI:taxid,NA,species,extant
+Allenopithecus nigroviridis,54135,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:taxid,NA,species,extant
+Alligator mississippiensis,8496,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Crocodylia,Alligatoridae,NCBI:taxid; class=Crocodylia,NA,species,extant
+Allochrocebus lhoesti,100224,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:taxid,NA,species,extant
+Allochrocebus preussi,147649,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:taxid,NA,species,extant
+Alouatta belzebul,30590,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Atelidae,NCBI:taxid,NA,species,extant
+Alouatta guariba,182256,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Atelidae,NCBI:taxid,NA,species,extant
+Alouatta sara,121123,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Atelidae,NCBI:taxid,NA,species,extant
+Alouatta sp.,9499,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Atelidae,NCBI:taxid,NA,genus,extant
+Amazilia tzacatl,57392,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Apodiformes,Trochilidae,NCBI:taxid; class=Aves,NA,species,extant
+Ambystoma tigrinum,8305,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Caudata,Ambystomatidae,NCBI:taxid; class=Amphibia,NA,species,extant
+Ameiurus sp.,50384,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Siluriformes,Ictaluridae,NCBI:taxid; class=Actinopterygii,NA,genus,extant
+Amia calva,7924,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Amiiformes,Amiidae,NCBI:taxid; class=Actinopterygii,NA,species,extant
+Anas platyrhynchos,8839,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Anseriformes,Anatidae,NCBI:taxid; class=Aves,NA,species,extant
+Anolis carolinensis,28377,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Squamata,Anolidae,NCBI:taxid; class=Lepidosauria,NA,species,extant
+Anoura caudifer,27642,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Anoura geoffroyi,148021,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Antechinus flavipes,38775,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Dasyuromorphia,Dasyuridae,NCBI:taxid,NA,species,extant
+Antechinus stuartii,9283,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Dasyuromorphia,Dasyuridae,NCBI:taxid,NA,species,extant
+Aonyx cinereus,452597,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Mustelidae,NCBI:taxid,NA,species,extant
+Aotus azarai,30591,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Aotidae,NCBI:taxid,NA,species,extant
+Aotus lemurinus,43147,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Aotidae,NCBI:taxid,NA,species,extant
+Aotus nancymaae,37293,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Aotidae,NCBI:taxid,NA,species,extant
+Aotus nigriceps,57175,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Aotidae,NCBI:taxid,NA,species,extant
+Aotus sp.,9504,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Aotidae,NCBI:taxid,NA,genus,extant
+Aotus vociferans,57176,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Aotidae,NCBI:taxid,NA,species,extant
+Apis mellifera,7460,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Hymenoptera,Apidae,NCBI:taxid; class=Insecta,NA,species,extant
+Apodemus sylvaticus,10129,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Muridae,NCBI:taxid,NA,species,extant
+Aquarana catesbeiana,8400,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Anura,Ranidae,NCBI:taxid; class=Amphibia,NA,species,extant
+Aquila audax,8961,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Accipitriformes,Accipitridae,NCBI:taxid; class=Aves,NA,species,extant
+Ara ararauna,9226,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Psittaciformes,Psittacidae,NCBI:taxid; class=Aves,NA,species,extant
+Ardops nichollsi,148034,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Artibeus cinereus,40224,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Artibeus concolor,40225,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Artibeus jamaicensis,9417,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Artibeus lituratus,27634,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Asellia tridens,578340,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Hipposideridae,NCBI:taxid,NA,species,extant
+Axis axis,30531,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Cervidae,NCBI:taxid,NA,species,extant
+Baiomys taylori,56219,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Cricetidae,NCBI:taxid,NA,species,extant
+Balaenoptera borealis,9768,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Balaenopteridae,NCBI:taxid,NA,species,extant
+Balaenoptera musculus,9771,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Balaenopteridae,NCBI:taxid,NA,species,extant
+Balaenoptera physalus,9770,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Balaenopteridae,NCBI:taxid,NA,species,extant
+Bassaricyon gabbii,48422,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Procyonidae,NCBI:taxid,NA,species,extant
+Blarina carolinensis,183658,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Eulipotyphla,Soricidae,NCBI:taxid,NA,species,extant
+Boa sp.,8573,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Squamata,Boidae,NCBI:taxid; class=Lepidosauria,NA,genus,extant
+Bos indicus,9915,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Bovidae,NCBI:taxid,NA,species,extant
+Bos taurus,9913,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Bovidae,NCBI:taxid,NA,species,extant
+Brachaelurus waddi,582434,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Orectolobiformes,Brachaeluridae,NCBI:taxid; class=Chondrichthyes,NA,species,extant
+Brachyphylla cavernarum,9421,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Brachyteles arachnoides,30594,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Atelidae,NCBI:taxid,NA,species,extant
+Bramus lutescens,3370998,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Cricetidae,NCBI:taxid,NA,species,extant
+Cacajao melanocephalus,70825,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Pitheciidae,NCBI:taxid,NA,species,extant
+Cacatua galerita,141274,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Psittaciformes,Cacatuidae,NCBI:taxid; class=Aves,NA,species,extant
+Cacatua goffiniana,12983,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Psittaciformes,Cacatuidae,NCBI:taxid; class=Aves,NA,species,extant
+Caenolestes fuliginosus,37696,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Paucituberculata,Caenolestidae,NCBI:taxid,NA,species,extant
+Caligo memnon,191409,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Lepidoptera,Nymphalidae,NCBI:taxid; class=Insecta,NA,species,extant
+Callicebus personatus,70814,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Pitheciidae,NCBI:taxid,NA,species,extant
+Callisaurus draconoides,43586,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Squamata,Phrynosomatidae,NCBI:taxid; class=Lepidosauria,NA,species,extant
+Callithrix aurita,57375,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cebidae,NCBI:taxid,NA,species,extant
+Callorhinus ursinus,34884,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Otariidae,NCBI:taxid,NA,species,extant
+Caluromys lanatus,42713,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Didelphimorphia,Didelphidae,NCBI:taxid,NA,species,extant
+Camelus bactrianus,9837,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Camelidae,NCBI:taxid,NA,species,extant
+Canis lupus,9612,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Canidae,NCBI:taxid,NA,species,extant
+Capreolus capreolus,9858,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Cervidae,NCBI:taxid,NA,species,extant
+Carassius auratus,7957,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Cypriniformes,Cyprinidae,NCBI:taxid; class=Actinopterygii,NA,species,extant
+Carollia castanea,138696,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Cebus sp.,9513,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cebidae,NCBI:taxid,NA,genus,extant
+Cephalopachus bancanus,9477,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Tarsiidae,NCBI:taxid,NA,species,extant
+Cercocebus galeritus,9532,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:taxid,NA,species,extant
+Cercopithecus albogularis,867370,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:taxid,NA,species,extant
+Cercopithecus diana,36224,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:taxid,NA,species,extant
+Cercopithecus erythrogaster,161496,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:taxid,NA,species,extant
+Cercopithecus erythrotis,167130,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:taxid,NA,species,extant
+Cercopithecus mona,36226,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:taxid,NA,species,extant
+Cercopithecus pogonias,102108,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:taxid,NA,species,extant
+Cercopithecus sp.,9533,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:taxid,NA,genus,extant
+Cercopithecus wolfi,263448,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:taxid,NA,species,extant
+Cervus canadensis,1574408,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Cervidae,NCBI:taxid,NA,species,extant
+Chamaeleo sp.,51754,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Squamata,Chamaeleonidae,NCBI:taxid; class=Lepidosauria,NA,genus,extant
+Cheirogaleus sp.,9459,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cheirogaleidae,NCBI:taxid,NA,genus,extant
+Chelydra serpentina,8475,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Testudines,Chelydridae,NCBI:taxid; class=Testudines,NA,species,extant
+Chilonatalus micropus,155039,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Natalidae,NCBI:taxid,NA,species,extant
+Chiroderma salvini,27646,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Chiroderma trinitatum,27647,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Chiroderma villosum,33546,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Chlorocebus aethiops,9534,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:taxid,NA,species,extant
+Chlorocebus pygerythrus,60710,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:taxid,NA,species,extant
+Choeroniscus minor,249003,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Chrysemys picta,8479,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Testudines,Emydidae,NCBI:taxid; class=Testudines,NA,species,extant
+Colinus virginianus,9014,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Galliformes,Odontophoridae,NCBI:taxid; class=Aves,NA,species,extant
+Columba livia,8932,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Columbiformes,Columbidae,NCBI:taxid; class=Aves,NA,species,extant
+Corvus brachyrhynchos,85066,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Passeriformes,Corvidae,NCBI:taxid; class=Aves,NA,species,extant
+Corvus corax,56781,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Passeriformes,Corvidae,NCBI:taxid; class=Aves,NA,species,extant
+Corvus cornix,181096,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Passeriformes,Corvidae,NCBI:taxid; class=Aves,NA,species,extant
+Corvus frugilegus,75140,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Passeriformes,Corvidae,NCBI:taxid; class=Aves,NA,species,extant
+Corvus monedula,30423,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Passeriformes,Corvidae,NCBI:taxid; class=Aves,NA,species,extant
+Cricetiscus campbelli,47665,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Cricetidae,NCBI:taxid,NA,species,extant
+Cricetomys gambianus,10085,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Nesomyidae,NCBI:taxid,NA,species,extant
+Cricetus cricetus,10034,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Cricetidae,NCBI:taxid,NA,species,extant
+Crocodylus porosus,8502,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Crocodylia,Crocodylidae,NCBI:taxid; class=Crocodylia,NA,species,extant
+Cuniculus paca,108852,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Cuniculidae,NCBI:taxid,NA,species,extant
+Cuniculus taczanowskii,143288,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Cuniculidae,NCBI:taxid,NA,species,extant
+Cyanopica cyanus,193059,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Passeriformes,Corvidae,NCBI:taxid; class=Aves,NA,species,extant
+Cynomys leucurus,99825,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Sciuridae,NCBI:taxid,NA,species,extant
+Cynomys ludovicianus,45480,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Sciuridae,NCBI:taxid,NA,species,extant
+Cynopterus brachyotis,58060,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Pteropodidae,NCBI:taxid,NA,species,extant
+Cynopterus horsfieldii,298109,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Pteropodidae,NCBI:taxid,NA,species,extant
+Cyprinus carpio,7962,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Cypriniformes,Cyprinidae,NCBI:taxid; class=Actinopterygii,NA,species,extant
+Dactylopsila trivirgata,38616,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Diprotodontia,Petauridae,NCBI:taxid,NA,species,extant
+Dama dama,30532,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Cervidae,NCBI:taxid,NA,species,extant
+Damaliscus pygargus,9931,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Bovidae,NCBI:taxid,NA,species,extant
+Dasycercus cristicauda,32542,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Dasyuromorphia,Dasyuridae,NCBI:taxid,NA,species,extant
+Dasyprocta leporina,42152,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Dasyproctidae,NCBI:taxid,NA,species,extant
+Dasyprocta prymnolopha,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,NA,none (name not in NCBI Taxonomy),NA,species,extant
+Dasypus novemcinctus,9361,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Cingulata,Dasypodidae,NCBI:taxid,NA,species,extant
+Dasypus sp.,9360,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Cingulata,Dasypodidae,NCBI:taxid,NA,genus,extant
+Dasyurus viverrinus,9279,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Dasyuromorphia,Dasyuridae,NCBI:taxid,NA,species,extant
+Diceros bicornis,9805,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Perissodactyla,Rhinocerotidae,NCBI:taxid,NA,species,extant
+Didelphis albiventris,42716,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Didelphimorphia,Didelphidae,NCBI:taxid,NA,species,extant
+Didelphis sp.,9266,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Didelphimorphia,Didelphidae,NCBI:taxid,NA,genus,extant
+Didelphis virginiana,9267,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Didelphimorphia,Didelphidae,NCBI:taxid,NA,species,extant
+Diphylla ecaudata,148089,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Dipodomys merriami,94247,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Heteromyidae,NCBI:taxid,NA,species,extant
+Dipodomys spectabilis,105255,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Heteromyidae,NCBI:taxid,NA,species,extant
+Dolichotis patagonum,29091,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Caviidae,NCBI:taxid,NA,species,extant
+Dolichotis sp.,29090,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Caviidae,NCBI:taxid,NA,genus,extant
+Dromaius novaehollandiae,8790,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Casuariiformes,Dromaiidae,NCBI:taxid; class=Aves,NA,species,extant
+Drosophila melanogaster,7227,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Diptera,Drosophilidae,NCBI:taxid; class=Insecta,NA,species,extant
+Eidolon helvum,77214,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Pteropodidae,NCBI:taxid,NA,species,extant
+Elephas sp.,9782,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Proboscidea,Elephantidae,NCBI:taxid,NA,genus,extant
+Ellobius talpinus,329620,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Cricetidae,NCBI:taxid,NA,species,extant
+Emydoidea blandingii,85613,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Testudines,Emydidae,NCBI:taxid; class=Testudines,NA,species,extant
+Enchisthenes hartii,27654,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Eonycteris spelaea,58065,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Pteropodidae,NCBI:taxid,NA,species,extant
+Eptesicus fuscus,29078,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Vespertilionidae,NCBI:taxid,NA,species,extant
+Eptesicus sp.,3371007,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Vespertilionidae,NCBI:taxid,NA,genus,extant
+Equus caballus,9796,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Perissodactyla,Equidae,NCBI:taxid,NA,species,extant
+Eremitalpa granti,481707,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Afrosoricida,Chrysochloridae,NCBI:taxid,NA,species,extant
+Eudorcas thomsonii,69308,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Bovidae,NCBI:taxid,NA,species,extant
+Eudyptula minor,37083,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Sphenisciformes,Spheniscidae,NCBI:taxid; class=Aves,NA,species,extant
+Eulemur macaco,30602,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Lemuridae,NCBI:taxid,NA,species,extant
+Eulemur rufus,859983,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Lemuridae,NCBI:taxid,NA,species,extant
+Eumetopias jubatus,34886,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Otariidae,NCBI:taxid,NA,species,extant
+Felis silvestris,9683,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Felidae,NCBI:taxid,NA,species,extant
+Forpus passerinus,69957,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Psittaciformes,Psittacidae,NCBI:taxid; class=Aves,NA,species,extant
+Galago alleni,34830,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Galagidae,NCBI:taxid,NA,species,extant
+Galago moholi,30609,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Galagidae,NCBI:taxid,NA,species,extant
+Galago sp.,9462,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Galagidae,NCBI:taxid,NA,genus,extant
+Galea musteloides,10146,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Caviidae,NCBI:taxid,NA,species,extant
+Gallus gallus,9031,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Galliformes,Phasianidae,NCBI:taxid; class=Aves,NA,species,extant
+Gardnerycteris crenulata,148071,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Garrulus glandarius,56783,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Passeriformes,Corvidae,NCBI:taxid; class=Aves,NA,species,extant
+Genetta tigrina,220101,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Viverridae,NCBI:taxid,NA,species,extant
+Geomys bursarius,27682,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Geomyidae,NCBI:taxid,NA,species,extant
+Globicephala macrorhynchus,38241,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Delphinidae,NCBI:taxid,NA,species,extant
+Globicephala melas,9731,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Delphinidae,NCBI:taxid,NA,species,extant
+Glossophaga longirostris,177161,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Gorilla beringei,499232,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Hominidae,NCBI:taxid,NA,species,extant
+Gracula religiosa,116992,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Passeriformes,Sturnidae,NCBI:taxid; class=Aves,NA,species,extant
+Graptemys pseudogeographica,33571,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Testudines,Emydidae,NCBI:taxid; class=Testudines,NA,species,extant
+Gymnorhina tibicen,9132,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Passeriformes,Artamidae,NCBI:taxid; class=Aves,NA,species,extant
+Halichoerus grypus,9711,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Phocidae,NCBI:taxid,NA,species,extant
+Hapalemur aureus,122222,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Lemuridae,NCBI:taxid,NA,species,extant
+Heloderma suspectum,8554,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Squamata,Helodermatidae,NCBI:taxid; class=Lepidosauria,NA,species,extant
+Helogale parvula,210647,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Herpestidae,NCBI:taxid,NA,species,extant
+Herpestes ichneumon,9700,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Herpestidae,NCBI:taxid,NA,species,extant
+Hipposideros armiger,186990,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Hipposideridae,NCBI:taxid,NA,species,extant
+Hipposideros bicolor,157961,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Hipposideridae,NCBI:taxid,NA,species,extant
+Holbrookia maculata,43597,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Squamata,Phrynosomatidae,NCBI:taxid; class=Lepidosauria,NA,species,extant
+Hoolock hoolock,61851,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Hylobatidae,NCBI:taxid,NA,species,extant
+Hsunycteris thomasi,138705,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Hyla sp.,8421,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Anura,Hylidae,NCBI:taxid; class=Amphibia,NA,genus,extant
+Hylobates klossii,9587,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Hylobatidae,NCBI:taxid,NA,species,extant
+Hylobates sp.,9578,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Hylobatidae,NCBI:taxid,NA,genus,extant
+Kobus ellipsiprymnus,9962,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Bovidae,NCBI:taxid,NA,species,extant
+Kogia breviceps,27615,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Physeteridae,NCBI:taxid,NA,species,extant
+Kogia sima,9752,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Physeteridae,NCBI:taxid,NA,species,extant
+Lagenodelphis hosei,103594,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Delphinidae,NCBI:taxid,NA,species,extant
+Lagenorhynchus albirostris,27610,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Delphinidae,NCBI:taxid,NA,species,extant
+Lama guanicoe,9840,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Camelidae,NCBI:taxid,NA,species,extant
+Lampronycteris brachyotis,148063,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Lemmus lemmus,79949,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Cricetidae,NCBI:taxid,NA,species,extant
+Leontocebus fuscicollis,9487,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cebidae,NCBI:taxid,NA,species,extant
+Leopardus wiedii,61382,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Felidae,NCBI:taxid,NA,species,extant
+Lepilemur dorsalis,78583,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Lepilemuridae,NCBI:taxid,NA,species,extant
+Lepilemur leucopus,100475,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Lepilemuridae,NCBI:taxid,NA,species,extant
+Lepilemur microdon,185457,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Lepilemuridae,NCBI:taxid,NA,species,extant
+Lepilemur mustelinus,9453,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Lepilemuridae,NCBI:taxid,NA,species,extant
+Lepilemur sp.,9452,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Lepilemuridae,NCBI:taxid,NA,genus,extant
+Lepomis gibbosus,270329,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Centrarchiformes,Centrarchidae,NCBI:taxid; class=Actinopterygii,NA,species,extant
+Leptonycteris curasoae,55054,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Leptonycteris nivalis,59456,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Lepus europaeus,9983,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Lagomorpha,Leporidae,NCBI:taxid,NA,species,extant
+Lepus sp.,9980,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Lagomorpha,Leporidae,NCBI:taxid,NA,genus,extant
+Lestoros inca,42731,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Paucituberculata,Caenolestidae,NCBI:taxid,NA,species,extant
+Lethenteron appendix,104630,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Petromyzontiformes,Petromyzontidae,NCBI:taxid; class=Hyperoartia,NA,species,extant
+Leucopleurus acutus,3371109,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Delphinidae,NCBI:taxid,NA,species,extant
+Lionycteris spurrelli,148090,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Lipotes vexillifer,118797,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Lipotidae,NCBI:taxid,NA,species,extant
+Lithobates pipiens,8404,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Anura,Ranidae,NCBI:taxid; class=Amphibia,NA,species,extant
+Lonchophylla mordax,190508,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Lophocebus aterrimus,75566,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:taxid,NA,species,extant
+Lophostoma schulzi,409033,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Lophostoma silvicola,3370180,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Lynx canadensis,61383,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Felidae,NCBI:taxid,NA,species,extant
+Lynx lynx,13125,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Felidae,NCBI:taxid,NA,species,extant
+Lyroderma lyra,3371112,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Megadermatidae,NCBI:taxid,NA,species,extant
+Lysmata amboinensis,575568,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Decapoda,Hippolytidae,NCBI:taxid; class=Malacostraca,NA,species,extant
+Macaca assamensis,9551,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:taxid,NA,species,extant
+Macaca cyclopis,78449,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:taxid,NA,species,extant
+Macaca sinica,9552,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:taxid,NA,species,extant
+Macaca sp.,9539,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:taxid,NA,genus,extant
+Macaca sylvanus,9546,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:taxid,NA,species,extant
+Macaca thibetana,54602,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:taxid,NA,species,extant
+Macrophyllum macrophyllum,148062,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Macropus giganteus,9317,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Diprotodontia,Macropodidae,NCBI:taxid,NA,species,extant
+Macropus sp.,9312,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Diprotodontia,Macropodidae,NCBI:taxid,NA,genus,extant
+Macrotis lagotis,92651,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Peramelemorphia,Peramelidae,NCBI:taxid,NA,species,extant
+Madoqua kirkii,66434,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Bovidae,NCBI:taxid,NA,species,extant
+Makaira nigricans,13604,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Istiophoriformes,Istiophoridae,NCBI:taxid; class=Actinopterygii,NA,species,extant
+Manis javanica,9974,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Pholidota,Manidae,NCBI:taxid,NA,species,extant
+Marmosa demerarae,42719,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Didelphimorphia,Didelphidae,NCBI:taxid,NA,species,extant
+Marmosa murina,126295,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Didelphimorphia,Didelphidae,NCBI:taxid,NA,species,extant
+Marmosa sp.,9269,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Didelphimorphia,Didelphidae,NCBI:taxid,NA,genus,extant
+Martes foina,9659,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Mustelidae,NCBI:taxid,NA,species,extant
+Martes martes,29065,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Mustelidae,NCBI:taxid,NA,species,extant
+Meleagris gallopavo,9103,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Galliformes,Phasianidae,NCBI:taxid; class=Aves,NA,species,extant
+Meles meles,9662,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Mustelidae,NCBI:taxid,NA,species,extant
+Melopsittacus undulatus,13146,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Psittaciformes,Psittaculidae,NCBI:taxid; class=Aves,NA,species,extant
+Meriones unguiculatus,10047,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Muridae,NCBI:taxid,NA,species,extant
+Mesophylla macconnelli,148094,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Mesoplodon densirostris,48708,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Ziphiidae,NCBI:taxid,NA,species,extant
+Mesoplodon europaeus,27616,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Ziphiidae,NCBI:taxid,NA,species,extant
+Mesoplodon mirus,52113,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Ziphiidae,NCBI:taxid,NA,species,extant
+Mico argentatus,9482,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cebidae,NCBI:taxid,NA,species,extant
+Mico humeralifer,52232,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cebidae,NCBI:taxid,NA,species,extant
+Microcebus rufus,122232,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cheirogaleidae,NCBI:taxid,NA,species,extant
+Microcebus sp.,13149,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cheirogaleidae,NCBI:taxid,NA,genus,extant
+Micronycteris megalotis,148066,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Micronycteris minuta,148067,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Micronycteris schmidtorum,148069,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Microtus agrestis,29092,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Cricetidae,NCBI:taxid,NA,species,extant
+Miniopterus australis,117605,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Miniopteridae,NCBI:taxid,NA,species,extant
+Miniopterus inflatus,221087,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Miniopteridae,NCBI:taxid,NA,species,extant
+Miniopterus magnater,438766,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Miniopteridae,NCBI:taxid,NA,species,extant
+Miniopterus medius,867841,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Miniopteridae,NCBI:taxid,NA,species,extant
+Miniopterus pusillus,258934,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Miniopteridae,NCBI:taxid,NA,species,extant
+Miniopterus tristis,221088,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Miniopteridae,NCBI:taxid,NA,species,extant
+Mirounga angustirostris,9716,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Phocidae,NCBI:taxid,NA,species,extant
+Mirza sp.,83691,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cheirogaleidae,NCBI:taxid,NA,genus,extant
+Molossus molossus,27622,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Molossidae,NCBI:taxid,NA,species,extant
+Monodon monoceros,40151,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Monodontidae,NCBI:taxid,NA,species,extant
+Monophyllus plethodon,177163,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Monophyllus redmani,148052,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Morelia spilota,51896,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Squamata,Pythonidae,NCBI:taxid; class=Lepidosauria,NA,species,extant
+Mormoops megalophylla,59460,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Mormoopidae,NCBI:taxid,NA,species,extant
+Morpho helenor,64456,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Lepidoptera,Nymphalidae,NCBI:taxid; class=Insecta,NA,species,extant
+Mus sp.,10088,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Muridae,NCBI:taxid,NA,genus,extant
+Mustela nigripes,77151,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Mustelidae,NCBI:taxid,NA,species,extant
+Mustela nivalis,36239,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Mustelidae,NCBI:taxid,NA,species,extant
+Mustelus canis,7812,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carcharhiniformes,Triakidae,NCBI:taxid; class=Chondrichthyes,NA,species,extant
+Myiopsitta monachus,176066,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Psittaciformes,Psittacidae,NCBI:taxid; class=Aves,NA,species,extant
+Myotis daubentonii,98922,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Vespertilionidae,NCBI:taxid,NA,species,extant
+Myotis lucifugus,59463,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Vespertilionidae,NCBI:taxid,NA,species,extant
+Myotis myotis,51298,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Vespertilionidae,NCBI:taxid,NA,species,extant
+Myotis mystacinus,109479,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Vespertilionidae,NCBI:taxid,NA,species,extant
+Myotis nattereri,109481,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Vespertilionidae,NCBI:taxid,NA,species,extant
+Nanger granti,27591,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Bovidae,NCBI:taxid,NA,species,extant
+Natrix sp.,8583,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Squamata,Natricidae,NCBI:taxid; class=Lepidosauria,NA,genus,extant
+Necturus maculosus,42757,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Caudata,Proteidae,NCBI:taxid; class=Amphibia,NA,species,extant
+Neogale frenata,3370370,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Mustelidae,NCBI:taxid,NA,species,extant
+Neophocaena asiaeorientalis,189058,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Phocoenidae,NCBI:taxid,NA,species,extant
+Neophocaena phocaenoides,34892,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Phocoenidae,NCBI:taxid,NA,species,extant
+Neotoma albigula,42408,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Cricetidae,NCBI:taxid,NA,species,extant
+Neotoma floridana,42409,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Cricetidae,NCBI:taxid,NA,species,extant
+Neotragus moschatus,66442,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Bovidae,NCBI:taxid,NA,species,extant
+Neotrygon kuhlii,651721,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Myliobatiformes,Dasyatidae,NCBI:taxid; class=Chondrichthyes,NA,species,extant
+Nestor notabilis,176057,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Psittaciformes,Psittacidae,NCBI:taxid; class=Aves,NA,species,extant
+Neurotrichus gibbsii,182677,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Eulipotyphla,Talpidae,NCBI:taxid,NA,species,extant
+Noctilio leporinus,94963,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Noctilionidae,NCBI:taxid,NA,species,extant
+Nomascus concolor,29089,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Hylobatidae,NCBI:taxid,NA,species,extant
+Nomascus leucogenys,61853,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Hylobatidae,NCBI:taxid,NA,species,extant
+Notomys alexis,184396,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Muridae,NCBI:taxid,NA,species,extant
+Notomys sp.,184395,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Muridae,NCBI:taxid,NA,genus,extant
+Notoryctes typhlops,37699,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Notoryctemorphia,Notoryctidae,NCBI:taxid,NA,species,extant
+Nyctophilus gouldi,59471,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Vespertilionidae,NCBI:taxid,NA,species,extant
+Nymphicus hollandicus,13180,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Psittaciformes,Cacatuidae,NCBI:taxid; class=Aves,NA,species,extant
+Ochotona rufescens,42346,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Lagomorpha,Ochotonidae,NCBI:taxid,NA,species,extant
+Octopus vulgaris,6645,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Octopoda,Octopodidae,NCBI:taxid; class=Cephalopoda,NA,species,extant
+Odobenus rosmarus,9707,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Odobenidae,NCBI:taxid,NA,species,extant
+Oncorhynchus mykiss,8022,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Salmoniformes,Salmonidae,NCBI:taxid; class=Actinopterygii,NA,species,extant
+Ondatra zibethicus,10060,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Cricetidae,NCBI:taxid,NA,species,extant
+Orcinus orca,9733,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Delphinidae,NCBI:taxid,NA,species,extant
+Oreochromis mossambicus,8127,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Cichliformes,Cichlidae,NCBI:taxid; class=Actinopterygii,NA,species,extant
+Otocolobus manul,61408,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Felidae,NCBI:taxid,NA,species,extant
+Otocyon megalotis,9624,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Canidae,NCBI:taxid,NA,species,extant
+Otospermophilus beecheyi,34862,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Sciuridae,NCBI:taxid,NA,species,extant
+Ovibos moschatus,37176,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Bovidae,NCBI:taxid,NA,species,extant
+Ovis aries,9940,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Bovidae,NCBI:taxid,NA,species,extant
+Panthera onca,9690,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Felidae,NCBI:taxid,NA,species,extant
+Panthera pardus,9691,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Felidae,NCBI:taxid,NA,species,extant
+Papio papio,100937,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:taxid,NA,species,extant
+Papio sp.,9554,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:taxid,NA,genus,extant
+Paragalago zanzibaricus,2604443,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Galagidae,NCBI:taxid,NA,species,extant
+Parus major,9157,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Passeriformes,Paridae,NCBI:taxid; class=Aves,NA,species,extant
+Passer domesticus,48849,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Passeriformes,Passeridae,NCBI:taxid; class=Aves,NA,species,extant
+Pecten maximus,6579,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Pectinida,Pectinidae,NCBI:taxid; class=Bivalvia,NA,species,extant
+Pedetes capensis,10023,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Pedetidae,NCBI:taxid,NA,species,extant
+Pekania pennanti,76720,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Mustelidae,NCBI:taxid,NA,species,extant
+Perameles gunnii,37737,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Peramelemorphia,Peramelidae,NCBI:taxid,NA,species,extant
+Periplaneta americana,6978,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Blattodea,Blattidae,NCBI:taxid; class=Insecta,NA,species,extant
+Peromyscus maniculatus,10042,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Cricetidae,NCBI:taxid,NA,species,extant
+Petauroides volans,146632,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Diprotodontia,Pseudocheiridae,NCBI:taxid,NA,species,extant
+Petrogale assimilis,41893,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Diprotodontia,Macropodidae,NCBI:taxid,NA,species,extant
+Petromyzon marinus,7757,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Petromyzontiformes,Petromyzontidae,NCBI:taxid; class=Hyperoartia,NA,species,extant
+Phaner furcifer,261734,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cheirogaleidae,NCBI:taxid,NA,species,extant
+Phasianus colchicus,9054,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Galliformes,Phasianidae,NCBI:taxid; class=Aves,NA,species,extant
+Phataginus tricuspis,358128,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Pholidota,Manidae,NCBI:taxid,NA,species,extant
+Philantomba monticola,907742,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Bovidae,NCBI:taxid,NA,species,extant
+Phoca groenlandica,39089,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Phocidae,NCBI:taxid,NA,species,extant
+Phoca sp.,9717,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Phocidae,NCBI:taxid,NA,genus,extant
+Phoca vitulina,9720,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Phocidae,NCBI:taxid,NA,species,extant
+Phocoena phocoena,9742,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Phocoenidae,NCBI:taxid,NA,species,extant
+Phocoenoides dalli,9744,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Phocoenidae,NCBI:taxid,NA,species,extant
+Phrynosoma platyrhinos,52577,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Squamata,Phrynosomatidae,NCBI:taxid; class=Lepidosauria,NA,species,extant
+Phrynosoma sp.,43608,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Squamata,Phrynosomatidae,NCBI:taxid; class=Lepidosauria,NA,genus,extant
+Phylloderma stenops,148072,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Phyllostomus discolor,89673,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Phyllostomus elongatus,187005,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Phyllostomus hastatus,9423,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Phyllotis darwinii,3370561,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Cricetidae,NCBI:taxid,NA,species,extant
+Physeter macrocephalus,9755,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Physeteridae,NCBI:taxid,NA,species,extant
+Pica pica,34924,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Passeriformes,Corvidae,NCBI:taxid; class=Aves,NA,species,extant
+Piliocolobus kirkii,591937,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:taxid,NA,species,extant
+Piliocolobus rufomitratus,591934,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:taxid,NA,species,extant
+Pithecia irrorata,30598,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Pitheciidae,NCBI:taxid,NA,species,extant
+Planigale ingrami,34895,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Dasyuromorphia,Dasyuridae,NCBI:taxid,NA,species,extant
+Platanista gangetica,118798,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Platanistidae,NCBI:taxid,NA,species,extant
+Platanista minor,48752,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Platanistidae,NCBI:taxid,NA,species,extant
+Platycercus eximius,141282,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Psittaciformes,Psittacidae,NCBI:taxid; class=Aves,NA,species,extant
+Platyrrhinus brachycephalus,249009,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Platyrrhinus helleri,27658,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Platyrrhinus infuscus,574060,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Platyrrhinus lineatus,410852,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Platyrrhinus vittatus,574065,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Plecotus auritus,61862,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Vespertilionidae,NCBI:taxid,NA,species,extant
+Plecturocebus donacophilus,230833,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Pitheciidae,NCBI:taxid,NA,species,extant
+Podomys floridanus,56323,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Cricetidae,NCBI:taxid,NA,species,extant
+Poecile carolinensis,48892,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Passeriformes,Paridae,NCBI:taxid; class=Aves,NA,species,extant
+Polyrhachis sokolova,252371,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Hymenoptera,Formicidae,NCBI:taxid; class=Insecta,NA,species,extant
+Pontoporia blainvillei,48723,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Pontoporiidae,NCBI:taxid,NA,species,extant
+Portia fimbriata,426831,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Araneae,Salticidae,NCBI:taxid; class=Arachnida,NA,species,extant
+Presbytis comata,78452,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:taxid,NA,species,extant
+Presbytis frontata,1046092,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:taxid,NA,species,extant
+Presbytis potenziani,1046098,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:taxid,NA,species,extant
+Presbytis rubicunda,1046101,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:taxid,NA,species,extant
+Presbytis thomasi,1046103,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:taxid,NA,species,extant
+Procyon cancrivorus,92522,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Procyonidae,NCBI:taxid,NA,species,extant
+Prolemur simus,1328070,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Lemuridae,NCBI:taxid,NA,species,extant
+Pseudomys albocinereus,442603,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Muridae,NCBI:taxid,NA,species,extant
+Pseudomys shortridgei,442619,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Muridae,NCBI:taxid,NA,species,extant
+Pseudorca crassidens,82174,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Delphinidae,NCBI:taxid,NA,species,extant
+Psittacula eupatria,232655,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Psittaciformes,Psittacidae,NCBI:taxid; class=Aves,NA,species,extant
+Psittacus erithacus,57247,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Psittaciformes,Psittacidae,NCBI:taxid; class=Aves,NA,species,extant
+Psyllipsocus ramburii,1924570,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Psocodea,Psyllipsocidae,NCBI:taxid; class=Insecta,NA,species,extant
+Pteronotus gymnonotus,118855,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Mormoopidae,NCBI:taxid,NA,species,extant
+Pteronotus parnellii,59476,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Mormoopidae,NCBI:taxid,NA,species,extant
+Pteronotus personatus,118856,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Mormoopidae,NCBI:taxid,NA,species,extant
+Pteropus livingstonii,589508,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Pteropodidae,NCBI:taxid,NA,species,extant
+Pteropus scapulatus,94117,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Pteropodidae,NCBI:taxid,NA,species,extant
+Ptilocercus lowii,320338,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Scandentia,Tupaiidae,NCBI:taxid,NA,species,extant
+Pudu puda,163861,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Cervidae,NCBI:taxid,NA,species,extant
+Puma concolor,9696,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Felidae,NCBI:taxid,NA,species,extant
+Pusa hispida,9718,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Phocidae,NCBI:taxid,NA,species,extant
+Python molurus,51750,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Squamata,Pythonidae,NCBI:taxid; class=Lepidosauria,NA,species,extant
+Rana sp.,8399,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Anura,Ranidae,NCBI:taxid; class=Amphibia,NA,genus,extant
+Rangifer tarandus,9870,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Cervidae,NCBI:taxid,NA,species,extant
+Rattus sp.,10114,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Muridae,NCBI:taxid,NA,genus,extant
+Regulus regulus,68468,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Passeriformes,Regulidae,NCBI:taxid; class=Aves,NA,species,extant
+Rhinolophus ferrumequinum,59479,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Rhinolophidae,NCBI:taxid,NA,species,extant
+Rhinolophus hipposideros,77218,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Rhinolophidae,NCBI:taxid,NA,species,extant
+Rhinolophus rouxii,89398,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Rhinolophidae,NCBI:taxid,NA,species,extant
+Rhinophylla pumilio,138707,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Rhynchocyon stuhlmanni,3036954,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Macroscelidea,Macroscelididae,NCBI:taxid,NA,species,extant
+Rousettus madagascariensis,77223,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Pteropodidae,NCBI:taxid,NA,species,extant
+Rousettus sp.,9406,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Pteropodidae,NCBI:taxid,NA,genus,extant
+Saccopteryx bilineata,59482,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Emballonuridae,NCBI:taxid,NA,species,extant
+Saccopteryx sp.,59481,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Emballonuridae,NCBI:taxid,NA,genus,extant
+Saguinus leucopus,290597,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cebidae,NCBI:taxid,NA,species,extant
+Salmo salar,8030,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Salmoniformes,Salmonidae,NCBI:taxid; class=Actinopterygii,NA,species,extant
+Salvelinus fontinalis,8038,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Salmoniformes,Salmonidae,NCBI:taxid; class=Actinopterygii,NA,species,extant
+Sapajus libidinosus,1126382,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cebidae,NCBI:taxid,NA,species,extant
+Sapajus nigritus,867366,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cebidae,NCBI:taxid,NA,species,extant
+Sceloporus magister,43627,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Squamata,Phrynosomatidae,NCBI:taxid; class=Lepidosauria,NA,species,extant
+Sceloporus occidentalis,8519,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Squamata,Phrynosomatidae,NCBI:taxid; class=Lepidosauria,NA,species,extant
+Sciurus niger,34861,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Sciuridae,NCBI:taxid,NA,species,extant
+Setonix brachyurus,30670,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Diprotodontia,Macropodidae,NCBI:taxid,NA,species,extant
+Sigmodon hispidus,42415,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Cricetidae,NCBI:taxid,NA,species,extant
+Siren lacertina,307977,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Caudata,Sirenidae,NCBI:taxid; class=Amphibia,NA,species,extant
+Sminthopsis crassicaudata,9301,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Dasyuromorphia,Dasyuridae,NCBI:taxid,NA,species,extant
+Sorex longirostris,144776,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Eulipotyphla,Soricidae,NCBI:taxid,NA,species,extant
+Sorex palustris,46219,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Eulipotyphla,Soricidae,NCBI:taxid,NA,species,extant
+Sorex sp.,9379,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Eulipotyphla,Soricidae,NCBI:taxid,NA,genus,extant
+Sotalia fluviatilis,103598,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Delphinidae,NCBI:taxid,NA,species,extant
+Sousa chinensis,103600,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Delphinidae,NCBI:taxid,NA,species,extant
+Sphaeronycteris toxophyllum,148038,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Sphyrna mokarran,195334,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carcharhiniformes,Carcharhinidae,NCBI:taxid; class=Chondrichthyes,NA,species,extant
+Stenella attenuata,9735,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Delphinidae,NCBI:taxid,NA,species,extant
+Stenella coeruleoalba,9737,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Delphinidae,NCBI:taxid,NA,species,extant
+Stenella frontalis,103590,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Delphinidae,NCBI:taxid,NA,species,extant
+Sterna hirundo,108405,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Charadriiformes,Laridae,NCBI:taxid; class=Aves,NA,species,extant
+Sternotherus odoratus,142480,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Testudines,Kinosternidae,NCBI:taxid; class=Testudines,NA,species,extant
+Struthio camelus,8801,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Struthioniformes,Struthionidae,NCBI:taxid; class=Aves,NA,species,extant
+Sturnira lilium,27660,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Sturnira ludovici,192405,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Sturnira tildae,27661,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Sturnus vulgaris,9172,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Passeriformes,Sturnidae,NCBI:taxid; class=Aves,NA,species,extant
+Suricata suricatta,37032,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Herpestidae,NCBI:taxid,NA,species,extant
+Sus scrofa,9823,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Suidae,NCBI:taxid,NA,species,extant
+Sylvia atricapilla,48155,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Passeriformes,Sylviidae,NCBI:taxid; class=Aves,NA,species,extant
+Sylvilagus floridanus,9988,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Lagomorpha,Leporidae,NCBI:taxid,NA,species,extant
+Tachyglossus aculeatus,9261,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Monotremata,Tachyglossidae,NCBI:taxid,NA,species,extant
+Tadarida brasiliensis,9438,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Molossidae,NCBI:taxid,NA,species,extant
+Taeniopygia guttata,59729,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Passeriformes,Estrildidae,NCBI:taxid; class=Aves,NA,species,extant
+Talpa caeca,109473,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Eulipotyphla,Talpidae,NCBI:taxid,NA,species,extant
+Talpa occidentalis,50954,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Eulipotyphla,Talpidae,NCBI:taxid,NA,species,extant
+Tamiasciurus hudsonicus,10009,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Sciuridae,NCBI:taxid,NA,species,extant
+Taphozous georgianus,13281,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Emballonuridae,NCBI:taxid,NA,species,extant
+Tarsius tarsier,662464,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Tarsiidae,NCBI:taxid,NA,species,extant
+Thamnophis sp.,34999,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Squamata,Natricidae,NCBI:taxid; class=Lepidosauria,NA,genus,extant
+Thunnus albacares,8236,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Scombriformes,Scombridae,NCBI:taxid; class=Actinopterygii,NA,species,extant
+Thunnus obesus,8241,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Scombriformes,Scombridae,NCBI:taxid; class=Actinopterygii,NA,species,extant
+Thylamys elegans,191871,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Didelphimorphia,Didelphidae,NCBI:taxid,NA,species,extant
+Thylamys velutinus,416366,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Didelphimorphia,Didelphidae,NCBI:taxid,NA,species,extant
+Thylogale billardierii,9327,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Diprotodontia,Macropodidae,NCBI:taxid,NA,species,extant
+Tonatia bidens,9426,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Trachemys scripta,34903,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Testudines,Emydidae,NCBI:taxid; class=Testudines,NA,species,extant
+Trachops cirrhosus,148073,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Trachypithecus geei,164650,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:taxid,NA,species,extant
+Trachypithecus hatinhensis,867383,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:taxid,NA,species,extant
+Trachypithecus johnii,66063,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:taxid,NA,species,extant
+Trachypithecus pileatus,164651,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:taxid,NA,species,extant
+Tragelaphus oryx,9945,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Bovidae,NCBI:taxid,NA,species,extant
+Turdus merula,9187,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Passeriformes,Turdidae,NCBI:taxid; class=Aves,NA,species,extant
+Tursiops aduncus,79784,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Delphinidae,NCBI:taxid,NA,species,extant
+Tyto alba,56313,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Strigiformes,Tytonidae,NCBI:taxid; class=Aves,NA,species,extant
+Uroderma bilobatum,27663,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Ursus sp.,9639,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Ursidae,NCBI:taxid,NA,genus,extant
+Urva edwardsii,39705,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Herpestidae,NCBI:taxid,NA,species,extant
+Vampyressa pusilla,148040,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Vampyrodes caraccioli,148041,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Vampyrum spectrum,148074,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Phyllostomidae,NCBI:taxid,NA,species,extant
+Varanus griseus,52184,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Squamata,Varanidae,NCBI:taxid; class=Lepidosauria,NA,species,extant
+Varecia sp.,9454,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Lemuridae,NCBI:taxid,NA,genus,extant
+Vombatus ursinus,29139,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Diprotodontia,Vombatidae,NCBI:taxid,NA,species,extant
+Vulpes lagopus,494514,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Canidae,NCBI:taxid,NA,species,extant
+Xiphias gladius,8245,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Istiophoriformes,Xiphiidae,NCBI:taxid; class=Actinopterygii,NA,species,extant
+Zaglossus sp.,33542,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Monotremata,Tachyglossidae,NCBI:taxid,NA,genus,extant
+Ziphius cavirostris,9760,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Ziphiidae,NCBI:taxid,NA,species,extant
+Acrobates pygmaeus,190720,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Acrobatidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Aepyprymnus rufescens,38598,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Potoroidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Alouatta pigra,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Atelidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Antechinomys laniger,60701,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Dasyuridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Antechinus minimus,71386,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Dasyuridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Antechinus swainsonii,9284,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Dasyuridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Arctocephalus pusillus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Otariidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Atelerix albiventris,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Erinaceidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Ateles belzebuth,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Atelidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Ateles fusciceps,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Atelidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Ateles hybridus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Atelidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Ateles paniscus,9510,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Atelidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Australopithecus afarensis,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,NA,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline),NA,species,fossil
+Australopithecus africanus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,NA,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline),NA,species,fossil
+Balaena mysticetus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Balaenidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Bassariscus astutus,55047,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Procyonidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Bettongia gaimardi,223568,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Potoroidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Bettongia lesueur,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Potoroidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Bradypus tridactylus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Bradypodidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Burramys parvus,38600,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Burramyidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Cacajao calvus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Pitheciidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Callicebus brunneus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Pitheciidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Callicebus cupreus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Pitheciidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Callicebus torquatus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Pitheciidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Callithrix geoffroyi,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cebidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Callithrix penicillata,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cebidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Calomys callosus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cricetidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Caluromys derbianus,992409,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Didelphidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Caluromys philander,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Didelphidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Camelus dromedarius,9838,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Camelidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Capra aegagrus hircus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Bovidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,subspecies,extant
+Capra hircus domestica,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Bovidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,subspecies,extant
+Caracal caracal,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Felidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Carlito syrichta,1868482,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Tarsiidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Castor canadensis,51338,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Castoridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Cebuella pygmaea,9493,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Callitrichidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Cebus apella,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cebidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Cebus capucinus,9516,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cebidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Cebus olivaceus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cebidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Cephalorhynchus commersonii,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Delphinidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Cercartetus concinnus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Burramyidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Cercartetus lepidus,190652,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Burramyidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Cercartetus nanus,190653,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Burramyidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Cercocebus atys,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cercopithecidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Cercopithecus campbelli,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cercopithecidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Cercopithecus campbelli lowei,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cercopithecidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,subspecies,extant
+Cercopithecus cephus cephus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cercopithecidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,subspecies,extant
+Cercopithecus hamlyni,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cercopithecidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Cercopithecus lhoesti,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cercopithecidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Cercopithecus neglectus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cercopithecidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Cercopithecus petaurista,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cercopithecidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Chaetophractus villosus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Dasypodidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Chiropotes satanus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Pitheciidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Chlorocebus sabaeus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cercopithecidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Colobus angolensis palliatus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cercopithecidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,subspecies,extant
+Colobus guereza,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cercopithecidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Colobus polykomos,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cercopithecidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Colobus satanas,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cercopithecidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Colobus vellerosus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cercopithecidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Connochaetes taurinus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Bovidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Crocidura olivieri,214449,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Soricidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Cryptotis parva,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Soricidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Cynocephalus volans,110931,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cynocephalidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Cynomys sp.,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Sciuridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,genus,extant
+Dasycercus blythi,1981332,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Dasyuridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Dasykaluta rosamundae,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Dasyuridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Dasyuroides byrnei,32544,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Dasyuridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Dasyurus geoffroyi,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Dasyuridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Dasyurus hallucatus,9280,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Dasyuridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Dasyurus maculatus,9281,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Dasyuridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Delphinapterus leucas,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Monodontidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Dendrolagus dorianus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Macropodidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Dendrolagus lumholtzi,168240,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Macropodidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Dendrolagus matschiei,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Macropodidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Distoechurus pennatus,38614,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Acrobatidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Dorcopsis luctuosa,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Macropodidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Dromiciops gliroides,33562,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Microbiotheriidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Echymipera kalubu,42733,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Peramelidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Eira barbara,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Mustelidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Elephas maximus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Elephantidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Enhydra lutris,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Mustelidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Equus ferus caballus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Equidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,subspecies,extant
+Equus zebra,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Equidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Erethizon dorsatum,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Erethizontidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Eschrichtius robustus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Eschrichtiidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Eulemur albifrons,1215604,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Lemuridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Eulemur coronatus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Lemuridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Eulemur rubriventer,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Lemuridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Eutamias dorsalis,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,NA,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline),NA,species,extant
+Eutamias sibiricus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,NA,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline),NA,species,extant
+Galago demidoff,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Galagidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Galago matschiei,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Galagidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Galagoides thomasi,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Galagidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Galeopterus variegatus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cynocephalidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Glaucomys volans,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Sciuridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Glis glis,41261,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Gliridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Globicephala scammoni,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Delphinidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Grampus griseus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Delphinidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Gymnobelideus leadbeateri,38618,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Petauridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Hapalemur griseus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Lemuridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Hemibelideus lemuroides,596256,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Pseudocheiridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Homo floresiensis,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Hominidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,fossil
+Homo georgicus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Hominidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,fossil
+Homo heidelbergensis,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Hominidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,fossil
+Homo naledi,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Hominidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,fossil
+Homo rudolfensis,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Hominidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,fossil
+Hylobates agilis,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Hylobatidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Hylobates moloch,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Hylobatidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Hylobates pileatus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Hylobatidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Hylobates syndactylus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Hylobatidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Hylobatidae sp.,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,NA,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline),NA,group,extant
+Hypsiprymnodon moschatus,65631,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Hypsiprymnodontidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Inia geoffrensis,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Iniidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Isoodon macrourus,37698,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Peramelidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Isoodon obesulus,65612,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Peramelidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Lagenorhynchus obliquidens,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Delphinidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Lagorchestes conspicillatus,65624,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Macropodidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Lagothrix lagotricha,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Atelidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Lasiorhinus latifrons,30668,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Vombatidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Leontopithecus chrysomelas,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cebidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Leontopithecus chrysopygus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cebidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Lepilemur edwardsi,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Lepilemuridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Lycaon pictus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Canidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Macaca arctoides,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cercopithecidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Macaca fuscata,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cercopithecidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Macaca nigra,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cercopithecidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Macaca ochreata,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cercopithecidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Macaca silenus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cercopithecidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Macaca tonkeana,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cercopithecidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Macroderma gigas,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Megadermatidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Macropus dorsalis,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Macropodidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Macropus parryi,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Macropodidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Macropus robustus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Macropodidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Macropus rufus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Macropodidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Mandrillus leucophaeus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cercopithecidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Marmosa impavida,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Didelphidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Marmota flaviventris,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Sciuridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Megaptera novaeangliae,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Balaenopteridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Mephitis mephitis,30548,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Mephitidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Micromys minutus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Muridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Microsciurus flaviventer,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Sciuridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Microtus canicaudus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cricetidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Microtus montanus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cricetidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Microtus ochrogaster,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cricetidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Microtus pennsylvanicus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cricetidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Microtus pinetorum,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cricetidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Mirza coquereli,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cheirogaleidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Monodelphis brevicaudata,203680,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Didelphidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Monodelphis domestica,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Didelphidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Nannospalax ehrenbergi,30637,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Spalacidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Nasua nasua,9651,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Procyonidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Neofelis nebulosa,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Felidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Neofiber alleni,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cricetidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Neogale vison,452646,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Mustelidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Neotomodon alstoni,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cricetidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Nomascus gabriellae,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Hylobatidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Nomascus nasutus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Hylobatidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Notamacropus agilis,9313,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Macropodidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Notamacropus dorsalis,651581,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Macropodidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Notamacropus eugenii,9315,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Macropodidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Notamacropus irma,196387,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Macropodidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Octodon degus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Octodontidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Onychogalea fraenata,114227,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Macropodidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Onychogalea unguifera,65626,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Macropodidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Onychomys leucogaster,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cricetidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Ornithorhynchus anatinus,9258,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Ornithorhynchidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Osphranter antilopinus,9314,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Macropodidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Osphranter bernardus,9323,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Macropodidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Otaria byronia,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Otariidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Pagophilus groenlandicus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Phocidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Pan sp.,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Hominidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,genus,extant
+Pan troglodytes troglodytes,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Hominidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,subspecies,extant
+Panthera tigris altaica,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Felidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,subspecies,extant
+Papio cynocephalus anubis,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cercopithecidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,subspecies,extant
+Papio ursinus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cercopithecidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Pecari tajacu,9829,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Tayassuidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Perameles nasuta,9344,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Peramelidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Perognathus longimembris,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Heteromyidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Peromyscus eremicus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cricetidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Peromyscus gossypinus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cricetidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Peromyscus leucopus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cricetidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Peromyscus polionotus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cricetidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Petaurista leucogenys,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Sciuridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Petaurus australis,282342,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Petauridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Petaurus breviceps,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Petauridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Petaurus norfolcensis,122272,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Petauridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Petrogale brachyotis,54079,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Macropodidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Petrogale concinna,859894,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Macropodidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Petrogale godmani,54082,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Macropodidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Petrogale herberti,54083,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Macropodidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Petrogale inornata,54084,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Macropodidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Petrogale lateralis,54085,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Macropodidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Petrogale penicillata,54088,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Macropodidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Petrogale puella (assimilis),NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Macropodidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Petrogale purpureicollis,175627,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Macropodidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Petropseudes dahli,596258,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Pseudocheiridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Phalanger gymnotis,65615,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Phalangeridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Phalanger maculatus,88213,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Phalangeridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Phalanger vestitus,175809,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Phalangeridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Phascogale tapoatafa,9293,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Dasyuridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Phascolarctos cinereus,38626,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Phascolarctidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Phoca caspica,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Phocidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Phodopus sungorus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cricetidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Planigale maculata,9297,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Dasyuridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Pongo abelii,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Hominidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Potorous apicalis,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Potoroidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Potorous tridactylus,9310,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Potoroidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Presbytis melalophos,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cercopithecidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Presbytis siamensis,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cercopithecidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Procolobus verus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cercopithecidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Propithecus diadema,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Indriidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Propithecus verreauxi verreauxi,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Indriidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,subspecies,extant
+Pseudantechinus bilarni,479705,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Dasyuridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Pseudocheirus canescens,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Pseudocheiridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Pseudocheirus cinereus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Pseudocheiridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Pseudocheirus peregrinus,9333,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Pseudocheiridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Pseudocheirus peregrinus notialis,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Pseudocheiridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,subspecies,extant
+Pseudochirops archeri,38621,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Pseudocheiridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Pseudochirops cupreus,37702,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Pseudocheiridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Pseudochirulus forbesi,65616,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Pseudocheiridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Pseudochirulus herbertensis,596260,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Pseudocheiridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Pteropus giganteus,143291,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Pteropodidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Pteropus poliocephalus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Pteropodidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Pygathrix cinerea,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cercopithecidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Rhabdomys pumilio,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Muridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Rhinopithecus roxellana,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cercopithecidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Rhyncholestes raphanurus,33559,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Caenolestidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Saguinus bicolor,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cebidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Saguinus fuscicollis,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cebidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Saguinus imperator,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cebidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Saguinus labiatus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cebidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Saguinus mystax,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cebidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Saimiri boliviensis,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cebidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Saimiri oerstedii,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cebidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Sapajus flavius,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cebidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Sapajus xanthosternos,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cebidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Sciurillus pusillus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Sciuridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Sciurus igniventris,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Sciuridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Sciurus vulgaris,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Sciuridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Sminthopsis leucopus,90761,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Dasyuridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Sminthopsis murina,32560,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Dasyuridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Soricidae sp.,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,NA,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline),NA,group,extant
+Spermophilus citellus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Sciuridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Spermophilus tridecemlineatus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Sciuridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Tamias sibiricus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Sciuridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Tamias striatus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Sciuridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Tarsipes rostratus,38632,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Tarsipedidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Tarsius bancanus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Tarsiidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Tarsius dentatus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Tarsiidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Taxidea taxus,30554,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Mustelidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Theropithecus gelada,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cercopithecidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Thomomys talpoides,35660,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Geomyidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Thylogale stigmatica,9328,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Macropodidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Thylogale thetis,442964,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Macropodidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Trachypithecus auratus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cercopithecidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Trachypithecus cristatus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cercopithecidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Trachypithecus delacouri,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cercopithecidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Trachypithecus germaini,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cercopithecidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Trachypithecus leucocephalus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cercopithecidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Trachypithecus obscurus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cercopithecidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Trachypithecus vetulus,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Cercopithecidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Trichechus inunguis,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Trichechidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Trichechus manatus,9778,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Trichechidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Trichechus manatus latirostris,127582,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Trichechidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,subspecies,extant
+Trichosurus arnhemensis,175811,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Phalangeridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Trichosurus caninus,128432,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Phalangeridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Trichosurus vulpecula,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Phalangeridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Tupaia belangeri,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Tupaiidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Tupaia tana,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Tupaiidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Tursiops truncatus,9739,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Delphinidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Varecia rubra,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Lemuridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Varecia variegata rubra,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Lemuridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,subspecies,extant
+Varecia variegata variegata,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Lemuridae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,subspecies,extant
+Vulpes vulpes,9627,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Canidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant
+Zaglossus bruijnii,NA,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,Tachyglossidae,spoke_accepted_name_backfill 2026-09-28 (no taxonomy lookup; offline); family via _keys/genus_family.csv,NA,species,extant

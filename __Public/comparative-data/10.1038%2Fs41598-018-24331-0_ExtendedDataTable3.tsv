@@ -1,14 +1,14 @@
 Region_code	Structure	Subregion	F_2_1190	p	t_NTvsEH	t_NTvsMH	t_EHvsMH	significant_ANOVA	source
-Fr SM	FrontalLobe	superior and middle	1.015	0.363				False	Kochiyama_etal_2018
-Fr I	FrontalLobe	inferior	0.181	0.834				False	Kochiyama_etal_2018
-Fr O	FrontalLobe	orbitofrontal	0.252	0.777				False	Kochiyama_etal_2018
-Sm	SensorimotorCortex	whole (sensorimotor)	3.646	0.026	0.64	1.407	2.31	True	Kochiyama_etal_2018
-Pa SI	ParietalLobe	superior and inferior	9.313	0.0	0.902	3.626	2.353	True	Kochiyama_etal_2018
-Pa TP	ParietalLobe	temporo-parietal junction	0.87	0.419				False	Kochiyama_etal_2018
-Te SM	TemporalLobe	superior and middle	2.932	0.054				False	Kochiyama_etal_2018
-Te I	TemporalLobe	inferior/medial	2.437	0.088				False	Kochiyama_etal_2018
-Oc SM	OccipitalLobe	superior and middle	8.149	0.0	0.043	2.89	2.829	True	Kochiyama_etal_2018
-Oc I	OccipitalLobe	inferior	5.639	0.004	0.796	1.749	2.873	True	Kochiyama_etal_2018
-Ce A	Cerebellum	anterior	0.689	0.502				False	Kochiyama_etal_2018
-Ce P	Cerebellum	posterior	6.699	0.001	2.331	3.644	0.354	True	Kochiyama_etal_2018
-Ce V	Cerebellum	vermis	7.339	0.001	3.413	3.642	1.176	True	Kochiyama_etal_2018
+Fr SM	FrontalLobe	superior and middle	1.015	0.363				FALSE	Kochiyama_etal_2018
+Fr I	FrontalLobe	inferior	0.181	0.834				FALSE	Kochiyama_etal_2018
+Fr O	FrontalLobe	orbitofrontal	0.252	0.777				FALSE	Kochiyama_etal_2018
+Sm	SensorimotorCortex	whole (sensorimotor)	3.646	0.026	0.64	1.407	2.31	TRUE	Kochiyama_etal_2018
+Pa SI	ParietalLobe	superior and inferior	9.313	0	0.902	3.626	2.353	TRUE	Kochiyama_etal_2018
+Pa TP	ParietalLobe	temporo-parietal junction	0.87	0.419				FALSE	Kochiyama_etal_2018
+Te SM	TemporalLobe	superior and middle	2.932	0.054				FALSE	Kochiyama_etal_2018
+Te I	TemporalLobe	inferior/medial	2.437	0.088				FALSE	Kochiyama_etal_2018
+Oc SM	OccipitalLobe	superior and middle	8.149	0	0.043	2.89	2.829	TRUE	Kochiyama_etal_2018
+Oc I	OccipitalLobe	inferior	5.639	0.004	0.796	1.749	2.873	TRUE	Kochiyama_etal_2018
+Ce A	Cerebellum	anterior	0.689	0.502				FALSE	Kochiyama_etal_2018
+Ce P	Cerebellum	posterior	6.699	0.001	2.331	3.644	0.354	TRUE	Kochiyama_etal_2018
+Ce V	Cerebellum	vermis	7.339	0.001	3.413	3.642	1.176	TRUE	Kochiyama_etal_2018

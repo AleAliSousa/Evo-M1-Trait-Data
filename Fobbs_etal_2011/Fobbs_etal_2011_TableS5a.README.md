@@ -45,3 +45,25 @@ project `species_key.csv` mapping was applied, consistent with the build script'
 The snapshot, reformat script, CSV, and public TSV were already in place and working. This README
 and the definitions file were added by Microsoft Copilot (AI assistant) on 2026-09-25, reading the
 existing `.R` script and CSV to document the pipeline. No values were re-transcribed or changed.
+
+## Post-build correction (Phase-1 species-metadata fix)
+An audit found 10 rows (specimen_number 81, 84–89, 92, 191, 287) where an age or body-size
+qualifier was baked directly into the printed `species` cell (e.g. `Chelhydra serpentina (6 day)`,
+`Sternotherus odoratus-9 cm.`, `A. mississippiensis-25cm`, `Columba livia 1 day`), plus one
+misspelled genus (`Chelhydra` for `Chelydra`). These strings were propagating verbatim into
+`_keys/specimen_crosswalk/specimen_crosswalk.csv`'s `resolved_taxon`/`published_taxon`, where they
+surfaced as fake species in downstream taxon filters.
+
+Microsoft Copilot (AI assistant) hand-patched `Fobbs_etal_2011_TableS5a.csv` and the mirrored
+`__Public/comparative-data/10.1111%2Fj.1749-6632.2011.06036.x_TableS5a.tsv` on 2026-09-27: `species`
+was reduced to the bare, correctly spelled binomial for these 10 rows, and the original qualifier
+was moved verbatim into `continuation_note` (the same column already used elsewhere in this file
+for printed age/size annotations, e.g. the `Gallus domesticus (10 day embry.)` rows). The matching
+`specimen_crosswalk.csv` rows for these specimens were corrected the same way, appending an
+explanatory note rather than deleting the original printed-value record.
+
+This was a targeted, hand-applied correction, not a script change: `Fobbs_etal_2011_TableS5a.R`
+only splits a continuation note when it was printed on its own row in the source document, so it
+would not have caught these in-cell suffixes on a rerun. If the frozen snapshot is ever rebuilt or
+the CSV regenerated from `Fobbs_etal_2011_TableS5a.R`, this same set of 10 rows will need the fix
+reapplied.

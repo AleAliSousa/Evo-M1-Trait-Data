@@ -1,58 +1,5 @@
 Species,region,layer,cell_type,measure,source,team,method,value,unit,n,data_role
-Caracal caracal,M1,V,gigantopyramidal,soma_area,Jacobs_etal_2018_Table3,Jacobs,"unbiased stereology (nucleator probe, StereoInvestigator)",775,um2,41,primary
-Caracal caracal,M1,V,gigantopyramidal,soma_area,Jacobs_etal_2018_Table5,Jacobs,Golgi 2-D somatodendritic tracing,2000,um2,10,primary
-Caracal caracal,M1,V,pyramidal_L5,soma_area,Jacobs_etal_2018_Table3,Jacobs,"unbiased stereology (nucleator probe, StereoInvestigator)",258.3,um2,285,primary
-Caracal caracal,M1,V,pyramidal_L5,soma_area,Jacobs_etal_2018_Table5,Jacobs,Golgi 2-D somatodendritic tracing,448,um2,9,primary
-Homo sapiens,M1,III,pyramidal_L3,dendritic_segment_count,Bianchi_etal_2012_Table2,Jacobs,Golgi somatodendritic tracing (Jacobs protocol),53,count,,secondary
-Homo sapiens,M1,III,pyramidal_L3,dendritic_segment_count,Jacobs_etal_2018_Table5,Jacobs,Golgi 2-D somatodendritic tracing,92,count,10,primary
-Homo sapiens,M1,III,pyramidal_L3,mean_segment_length,Bianchi_etal_2012_Table2,Jacobs,Golgi somatodendritic tracing (Jacobs protocol),66.9,um,,secondary
-Homo sapiens,M1,III,pyramidal_L3,mean_segment_length,Jacobs_etal_2018_Table5,Jacobs,Golgi 2-D somatodendritic tracing,66,um,10,primary
-Homo sapiens,M1,III,pyramidal_L3,soma_area,Bianchi_etal_2012_Table2,Jacobs,Golgi somatodendritic tracing (Jacobs protocol),273,um2,,secondary
-Homo sapiens,M1,III,pyramidal_L3,soma_area,Jacobs_etal_2018_Table5,Jacobs,Golgi 2-D somatodendritic tracing,452,um2,10,primary
-Homo sapiens,M1,III,pyramidal_L3,soma_depth,Bianchi_etal_2012_Table2,Jacobs,Golgi somatodendritic tracing (Jacobs protocol),822,um,,secondary
-Homo sapiens,M1,III,pyramidal_L3,soma_depth,Jacobs_etal_2018_Table5,Jacobs,Golgi 2-D somatodendritic tracing,1255,um,10,primary
-Homo sapiens,M1,III,pyramidal_L3,spine_count,Bianchi_etal_2012_Table2,Jacobs,Golgi somatodendritic tracing (Jacobs protocol),818,count,,secondary
-Homo sapiens,M1,III,pyramidal_L3,spine_count,Jacobs_etal_2018_Table5,Jacobs,Golgi 2-D somatodendritic tracing,2213,count,10,primary
-Homo sapiens,M1,III,pyramidal_L3,spine_density,Bianchi_etal_2012_Table2,Jacobs,Golgi somatodendritic tracing (Jacobs protocol),0.19,spines/um,,secondary
-Homo sapiens,M1,III,pyramidal_L3,spine_density,Jacobs_etal_2018_Table5,Jacobs,Golgi 2-D somatodendritic tracing,0.32,spines/um,10,primary
-Homo sapiens,M1,III,pyramidal_L3,total_dendritic_length,Bianchi_etal_2012_Table2,Jacobs,Golgi somatodendritic tracing (Jacobs protocol),3563,um,,secondary
-Homo sapiens,M1,III,pyramidal_L3,total_dendritic_length,Jacobs_etal_2018_Table5,Jacobs,Golgi 2-D somatodendritic tracing,6121,um,10,primary
-Leontopithecus rosalia,M1,V,gigantopyramidal,soma_area,Jacobs_etal_2018_Table3,Jacobs,"unbiased stereology (nucleator probe, StereoInvestigator)",183.1,um2,32,primary
-Leontopithecus rosalia,M1,V,gigantopyramidal,soma_area,Jacobs_etal_2018_Table5,Jacobs,Golgi 2-D somatodendritic tracing,954,um2,19,primary
-Leontopithecus rosalia,M1,V,pyramidal_L5,soma_area,Jacobs_etal_2018_Table3,Jacobs,"unbiased stereology (nucleator probe, StereoInvestigator)",107.7,um2,130,primary
-Leontopithecus rosalia,M1,V,pyramidal_L5,soma_area,Jacobs_etal_2018_Table5,Jacobs,Golgi 2-D somatodendritic tracing,268,um2,10,primary
-Lycaon pictus,M1,V,gigantopyramidal,soma_area,Jacobs_etal_2018_Table3,Jacobs,"unbiased stereology (nucleator probe, StereoInvestigator)",586.4,um2,76,primary
-Lycaon pictus,M1,V,gigantopyramidal,soma_area,Jacobs_etal_2018_Table5,Jacobs,Golgi 2-D somatodendritic tracing,2662,um2,9,primary
-Lycaon pictus,M1,V,pyramidal_L5,soma_area,Jacobs_etal_2018_Table3,Jacobs,"unbiased stereology (nucleator probe, StereoInvestigator)",286.4,um2,167,primary
-Lycaon pictus,M1,V,pyramidal_L5,soma_area,Jacobs_etal_2018_Table5,Jacobs,Golgi 2-D somatodendritic tracing,428,um2,31,primary
 Macaca fascicularis,V1,III,pyramidal_L3,spine_count,Elston__2000_Figure2,Elston,"intracellular Lucifer Yellow injection, tangential slices (Elston protocol)",643,count,136,secondary
 Macaca fascicularis,V1,III,pyramidal_L3,spine_count,Elston_etal_2006_Table1,Elston,"intracellular Lucifer Yellow injection, tangential slices (Elston protocol)",735,count,,secondary
-Mungos mungo,M1,V,pyramidal_L5,soma_area,Jacobs_etal_2018_Table3,Jacobs,"unbiased stereology (nucleator probe, StereoInvestigator)",187.5,um2,509,primary
-Mungos mungo,M1,V,pyramidal_L5,soma_area,Jacobs_etal_2018_Table5,Jacobs,Golgi 2-D somatodendritic tracing,484,um2,14,primary
-Panthera leo,M1,V,gigantopyramidal,dendritic_segment_count,Jacobs_etal_2018_Table5,Jacobs,Golgi 2-D somatodendritic tracing,72,count,10,primary
-Panthera leo,M1,V,gigantopyramidal,dendritic_segment_count,Nguyen_etal_2019_Table2,Jacobs,Golgi somatodendritic tracing (Jacobs protocol),35,count,16,primary
-Panthera leo,M1,V,gigantopyramidal,dendritic_volume,Jacobs_etal_2018_Table5,Jacobs,Golgi 2-D somatodendritic tracing,88381,um3,10,primary
-Panthera leo,M1,V,gigantopyramidal,dendritic_volume,Nguyen_etal_2019_Table2,Jacobs,Golgi somatodendritic tracing (Jacobs protocol),49253,um3,16,primary
-Panthera leo,M1,V,gigantopyramidal,mean_segment_length,Jacobs_etal_2018_Table5,Jacobs,Golgi 2-D somatodendritic tracing,120,um,10,primary
-Panthera leo,M1,V,gigantopyramidal,mean_segment_length,Nguyen_etal_2019_Table2,Jacobs,Golgi somatodendritic tracing (Jacobs protocol),53,um,16,primary
 Panthera leo,M1,V,gigantopyramidal,soma_area,Jacobs_etal_2018_Table3,Jacobs,"unbiased stereology (nucleator probe, StereoInvestigator)",1416.2,um2,16,primary
-Panthera leo,M1,V,gigantopyramidal,soma_area,Jacobs_etal_2018_Table5,Jacobs,Golgi 2-D somatodendritic tracing,2824,um2,10,primary
 Panthera leo,M1,V,gigantopyramidal,soma_area,Nguyen_etal_2019_Table2,Jacobs,Golgi somatodendritic tracing (Jacobs protocol),1771,um2,16,primary
-Panthera leo,M1,V,pyramidal_L5,soma_area,Jacobs_etal_2018_Table3,Jacobs,"unbiased stereology (nucleator probe, StereoInvestigator)",268.9,um2,134,primary
-Panthera leo,M1,V,pyramidal_L5,soma_area,Jacobs_etal_2018_Table5,Jacobs,Golgi 2-D somatodendritic tracing,525,um2,10,primary
-Panthera leo,M1,V,gigantopyramidal,soma_depth,Jacobs_etal_2018_Table5,Jacobs,Golgi 2-D somatodendritic tracing,1558,um,10,primary
-Panthera leo,M1,V,gigantopyramidal,soma_depth,Nguyen_etal_2019_Table2,Jacobs,Golgi somatodendritic tracing (Jacobs protocol),1885,um,16,primary
-Panthera leo,M1,V,gigantopyramidal,spine_count,Jacobs_etal_2018_Table5,Jacobs,Golgi 2-D somatodendritic tracing,1099,count,10,primary
-Panthera leo,M1,V,gigantopyramidal,spine_count,Nguyen_etal_2019_Table2,Jacobs,Golgi somatodendritic tracing (Jacobs protocol),210,count,16,primary
-Panthera leo,M1,V,gigantopyramidal,spine_density,Jacobs_etal_2018_Table5,Jacobs,Golgi 2-D somatodendritic tracing,0.1,spines/um,10,primary
-Panthera leo,M1,V,gigantopyramidal,spine_density,Nguyen_etal_2019_Table2,Jacobs,Golgi somatodendritic tracing (Jacobs protocol),0.1,spines/um,16,primary
-Panthera leo,M1,V,gigantopyramidal,total_dendritic_length,Jacobs_etal_2018_Table5,Jacobs,Golgi 2-D somatodendritic tracing,8600,um,10,primary
-Panthera leo,M1,V,gigantopyramidal,total_dendritic_length,Nguyen_etal_2019_Table2,Jacobs,Golgi somatodendritic tracing (Jacobs protocol),1872,um,16,primary
-Panthera tigris altaica,M1,V,gigantopyramidal,soma_area,Jacobs_etal_2018_Table3,Jacobs,"unbiased stereology (nucleator probe, StereoInvestigator)",1040,um2,12,primary
-Panthera tigris altaica,M1,V,gigantopyramidal,soma_area,Jacobs_etal_2018_Table5,Jacobs,Golgi 2-D somatodendritic tracing,2844,um2,8,primary
-Panthera tigris altaica,M1,V,pyramidal_L5,soma_area,Jacobs_etal_2018_Table3,Jacobs,"unbiased stereology (nucleator probe, StereoInvestigator)",245.9,um2,128,primary
-Panthera tigris altaica,M1,V,pyramidal_L5,soma_area,Jacobs_etal_2018_Table5,Jacobs,Golgi 2-D somatodendritic tracing,350,um2,3,primary
-Papio ursinus,M1,V,gigantopyramidal,soma_area,Jacobs_etal_2018_Table3,Jacobs,"unbiased stereology (nucleator probe, StereoInvestigator)",223.7,um2,19,primary
-Papio ursinus,M1,V,gigantopyramidal,soma_area,Jacobs_etal_2018_Table5,Jacobs,Golgi 2-D somatodendritic tracing,1018,um2,9,primary
-Papio ursinus,M1,V,pyramidal_L5,soma_area,Jacobs_etal_2018_Table3,Jacobs,"unbiased stereology (nucleator probe, StereoInvestigator)",143.8,um2,35,primary
-Papio ursinus,M1,V,pyramidal_L5,soma_area,Jacobs_etal_2018_Table5,Jacobs,Golgi 2-D somatodendritic tracing,389,um2,10,primary

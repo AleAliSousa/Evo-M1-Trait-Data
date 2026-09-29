@@ -1,14 +1,14 @@
 table	structure	subregion	species_printed	species	is_average	measure	value	sd	units	n_areas	reference
-S8	Sensorimotor cortex	Sensorimotor cortex	mouse	Mus musculus	FALSE	CMRgl	1.21	0.09	umol/g/min	NA	Bouilleret et al 2000
-S8	Sensorimotor cortex	Sensorimotor cortex	rat	Rattus norvegicus	FALSE	CMRgl	0.84	0.13	umol/g/min	NA	Dube et al 2001
-S8	Sensorimotor cortex	Sensorimotor cortex	rat	Rattus norvegicus	FALSE	CMRgl	0.89	0.07	umol/g/min	NA	Waschke et al 1993
-S8	Sensorimotor cortex	Sensorimotor cortex	rat	Rattus norvegicus	FALSE	CMRgl	0.9	0.07	umol/g/min	NA	Zocchi et al 2001
-S8	Sensorimotor cortex	Sensorimotor cortex	rat	Rattus norvegicus	FALSE	CMRgl	0.9	0.09	umol/g/min	NA	Nehlig et al 2000
-S8	Sensorimotor cortex	Sensorimotor cortex	average rat	Rattus norvegicus	TRUE	CMRgl	0.88	0.09	umol/g/min	NA	
-S8	Sensorimotor cortex	Sensorimotor cortex	rabbit	Oryctolagus cuniculus	FALSE	CMRgl	0.83	0.07	umol/g/min	NA	Passero et al 1981
-S8	Sensorimotor cortex	Sensorimotor cortex	cat	Felis catus	FALSE	CMRgl	0.64	0.03	umol/g/min	NA	Sokoloff 1984
-S8	Sensorimotor cortex	Sensorimotor cortex	monkey	Macaca mulatta	FALSE	CMRgl	0.44	0.03	umol/g/min	NA	Kennedy et al 1978
-S8	Sensorimotor cortex	Sensorimotor cortex	baboon	Papio anubis	FALSE	CMRgl	0.49	0.08	umol/g/min	NA	Meguro et al 1999
-S8	Sensorimotor cortex	Sensorimotor cortex	human	Homo sapiens	FALSE	CMRgl	0.42	0.03	umol/g/min	NA	Heiss et al 1985
-S8	Sensorimotor cortex	Sensorimotor cortex	human	Homo sapiens	FALSE	CMRgl	0.33	0.03	umol/g/min	NA	Blin et al 1991
-S8	Sensorimotor cortex	Sensorimotor cortex	average human	Homo sapiens	TRUE	CMRgl	0.38	0.03	umol/g/min	NA	
+S8	Sensorimotor cortex	Sensorimotor cortex	mouse	NA	FALSE	CMRgl	1.21	0.09	umol/g/min	NA	Bouilleret et al 2000
+S8	Sensorimotor cortex	Sensorimotor cortex	rat	NA	FALSE	CMRgl	0.84	0.13	umol/g/min	NA	Dube et al 2001
+S8	Sensorimotor cortex	Sensorimotor cortex	rat	NA	FALSE	CMRgl	0.89	0.07	umol/g/min	NA	Waschke et al 1993
+S8	Sensorimotor cortex	Sensorimotor cortex	rat	NA	FALSE	CMRgl	0.9	0.07	umol/g/min	NA	Zocchi et al 2001
+S8	Sensorimotor cortex	Sensorimotor cortex	rat	NA	FALSE	CMRgl	0.9	0.09	umol/g/min	NA	Nehlig et al 2000
+S8	Sensorimotor cortex	Sensorimotor cortex	average rat	NA	TRUE	CMRgl	0.88	0.09	umol/g/min	NA	
+S8	Sensorimotor cortex	Sensorimotor cortex	rabbit	NA	FALSE	CMRgl	0.83	0.07	umol/g/min	NA	Passero et al 1981
+S8	Sensorimotor cortex	Sensorimotor cortex	cat	NA	FALSE	CMRgl	0.64	0.03	umol/g/min	NA	Sokoloff 1984
+S8	Sensorimotor cortex	Sensorimotor cortex	monkey	NA	FALSE	CMRgl	0.44	0.03	umol/g/min	NA	Kennedy et al 1978
+S8	Sensorimotor cortex	Sensorimotor cortex	baboon	NA	FALSE	CMRgl	0.49	0.08	umol/g/min	NA	Meguro et al 1999
+S8	Sensorimotor cortex	Sensorimotor cortex	human	NA	FALSE	CMRgl	0.42	0.03	umol/g/min	NA	Heiss et al 1985
+S8	Sensorimotor cortex	Sensorimotor cortex	human	NA	FALSE	CMRgl	0.33	0.03	umol/g/min	NA	Blin et al 1991
+S8	Sensorimotor cortex	Sensorimotor cortex	average human	NA	TRUE	CMRgl	0.38	0.03	umol/g/min	NA	

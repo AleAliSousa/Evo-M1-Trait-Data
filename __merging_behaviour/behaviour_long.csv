@@ -864,18 +864,14 @@ Callithrix penicillata,research_effort,Journal_search_article_count,articles,1,1
 Callithrix penicillata,behavioural_flexibility,Social_learning_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Callithrix penicillata,Callithrix penicillata,hub,FALSE
 Callithrix penicillata,behavioural_flexibility,Tool_use_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Callithrix penicillata,Callithrix penicillata,hub,FALSE
 Callithrix penicillata,behavioural_flexibility,Tool_use_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Callithrix penicillata,Callithrix penicillata,hub,FALSE
-Callithrix pygmaea,locomotion,Arboreal_terrestrial,category,A,,1,1,1,TRUE,Granatosky,primary,,,Callithrix pygmaea,Callithrix pygmaea,hub,FALSE
 Callithrix pygmaea,behavioural_flexibility,Extractive_foraging_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Callithrix pygmaea,Callithrix pygmaea,hub,FALSE
 Callithrix pygmaea,behavioural_flexibility,Extractive_foraging_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Callithrix pygmaea,Callithrix pygmaea,hub,FALSE
 Callithrix pygmaea,behavioural_flexibility,Innovation_reduced_report_count,reports,1,1,1,1,1,TRUE,Reader,primary,1,1,Callithrix pygmaea,Callithrix pygmaea,hub,FALSE
 Callithrix pygmaea,behavioural_flexibility,Innovation_report_count,reports,1,1,1,1,1,TRUE,Reader,primary,1,1,Callithrix pygmaea,Callithrix pygmaea,hub,FALSE
-Callithrix pygmaea,locomotion,Intermembral_index,ratio,69,69,1,1,1,TRUE,Granatosky,primary,69,69,Callithrix pygmaea,Callithrix pygmaea,hub,FALSE
 Callithrix pygmaea,research_effort,Journal_search_article_count,articles,5,5,1,1,1,TRUE,Reader,primary,5,5,Callithrix pygmaea,Callithrix pygmaea,hub,FALSE
-Callithrix pygmaea,locomotion,Locomotor_diversity_index,index,1.32325697190067,1.32325697190067,1,1,1,TRUE,Granatosky,primary,1.32325697190067,1.32325697190067,Callithrix pygmaea,Callithrix pygmaea,hub,FALSE
 Callithrix pygmaea,behavioural_flexibility,Social_learning_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Callithrix pygmaea,Callithrix pygmaea,hub,FALSE
 Callithrix pygmaea,behavioural_flexibility,Tool_use_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Callithrix pygmaea,Callithrix pygmaea,hub,FALSE
 Callithrix pygmaea,behavioural_flexibility,Tool_use_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Callithrix pygmaea,Callithrix pygmaea,hub,FALSE
-Callithrix pygmaea,vocalization,VocalRepertoire,count,16,16,1,1,1,TRUE,Schniter,primary,16,16,Callithrix pygmaea,Callithrix pygmaea,hub,FALSE
 Callithrix pygmaea,research_effort,Zoological_record_article_count,articles,36,36,1,1,1,TRUE,Reader,primary,36,36,Callithrix pygmaea,Callithrix pygmaea,hub,FALSE
 Callorhinus ursinus,dexterity,Dexterity,1-7 scale,1,1,1,1,1,TRUE,Heffner,primary,1,1,Callorhinus ursinus,Callorhinus ursinus,verbatim,FALSE
 Caluromys philander,gait,Duty_Factor,percent,67.03085345,67.03085345,1,1,1,TRUE,Wimberly,primary,67.03085345,67.03085345,Caluromys philander,Caluromys philander,verbatim,FALSE
@@ -975,6 +971,10 @@ Castor canadensis,locomotion,Locomotor_habit,category,Terrestrial,,1,1,1,TRUE,Me
 Castor canadensis,gait,Phase,percent,36.6823,36.6823,1,1,1,TRUE,Wimberly,primary,36.6823,36.6823,Castor canadensis,Castor canadensis,verbatim,FALSE
 Castor canadensis,locomotion,Top_speed,category,Fast,,1,1,1,TRUE,Medina,primary,,,Castor canadensis,Castor canadensis,verbatim,FALSE
 Cavia aperea,dexterity,Dexterity,1-7 scale,2,2,1,1,1,TRUE,Heffner,primary,2,2,Cavia aperea,Cavia aperea,unresolved,FALSE
+Cebuella pygmaea,locomotion,Arboreal_terrestrial,category,A,,1,1,1,TRUE,Granatosky,primary,,,Cebuella pygmaea,Callithrix pygmaea,synonym:legacy_key; synonym:legacy_override,FALSE
+Cebuella pygmaea,locomotion,Intermembral_index,ratio,69,69,1,1,1,TRUE,Granatosky,primary,69,69,Cebuella pygmaea,Callithrix pygmaea,synonym:legacy_key; synonym:legacy_override,FALSE
+Cebuella pygmaea,locomotion,Locomotor_diversity_index,index,1.32325697190067,1.32325697190067,1,1,1,TRUE,Granatosky,primary,1.32325697190067,1.32325697190067,Cebuella pygmaea,Callithrix pygmaea,synonym:legacy_key; synonym:legacy_override,FALSE
+Cebuella pygmaea,vocalization,VocalRepertoire,count,16,16,1,1,1,TRUE,Schniter,primary,16,16,Cebuella pygmaea,Callithrix pygmaea,synonym:legacy_key; synonym:legacy_override,FALSE
 Cebus albifrons,behavioural_flexibility,Extractive_foraging_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Cebus albifrons,Cebus albifrons,verbatim,FALSE
 Cebus albifrons,behavioural_flexibility,Extractive_foraging_report_count,reports,3,3,1,1,1,TRUE,Reader,primary,3,3,Cebus albifrons,Cebus albifrons,verbatim,FALSE
 Cebus albifrons,behavioural_flexibility,Innovation_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Cebus albifrons,Cebus albifrons,verbatim,FALSE
@@ -1004,6 +1004,15 @@ Cebus albifrons,hand_morphology,log10_pp4_mm,log10 mm,1.30937047351314,1.3093704
 Cebus albifrons,hand_morphology,peak_workspace,index,-1.53760200210104,-1.53760200210104,1,1,1,TRUE,Baker,primary,-1.53760200210104,-1.53760200210104,Cebus albifrons,Cebus albifrons,verbatim,FALSE
 Cebus albifrons,hand_morphology,real_size,index,0.939519252618618,0.939519252618618,1,1,1,TRUE,Baker,primary,0.939519252618618,0.939519252618618,Cebus albifrons,Cebus albifrons,verbatim,FALSE
 Cebus albifrons,hand_morphology,relative_size,index,-1.09691001300806,-1.09691001300806,1,1,1,TRUE,Baker,primary,-1.09691001300806,-1.09691001300806,Cebus albifrons,Cebus albifrons,verbatim,FALSE
+Cebus apella,behavioural_flexibility,Extractive_foraging_reduced_report_count,reports,7,7,1,1,1,TRUE,Reader,primary,7,7,Cebus apella,Cebus apella,hub,FALSE
+Cebus apella,behavioural_flexibility,Extractive_foraging_report_count,reports,56,56,1,1,1,TRUE,Reader,primary,56,56,Cebus apella,Cebus apella,hub,FALSE
+Cebus apella,behavioural_flexibility,Innovation_reduced_report_count,reports,3,3,1,1,1,TRUE,Reader,primary,3,3,Cebus apella,Cebus apella,hub,FALSE
+Cebus apella,behavioural_flexibility,Innovation_report_count,reports,39,39,1,1,1,TRUE,Reader,primary,39,39,Cebus apella,Cebus apella,hub,FALSE
+Cebus apella,research_effort,Journal_search_article_count,articles,111,111,1,1,1,TRUE,Reader,primary,111,111,Cebus apella,Cebus apella,hub,FALSE
+Cebus apella,behavioural_flexibility,Social_learning_report_count,reports,17,17,1,1,1,TRUE,Reader,primary,17,17,Cebus apella,Cebus apella,hub,FALSE
+Cebus apella,behavioural_flexibility,Tool_use_reduced_report_count,reports,11,11,1,1,1,TRUE,Reader,primary,11,11,Cebus apella,Cebus apella,hub,FALSE
+Cebus apella,behavioural_flexibility,Tool_use_report_count,reports,64,64,1,1,1,TRUE,Reader,primary,64,64,Cebus apella,Cebus apella,hub,FALSE
+Cebus apella,research_effort,Zoological_record_article_count,articles,249,249,1,1,1,TRUE,Reader,primary,249,249,Cebus apella,Cebus apella,hub,FALSE
 Cebus capucinus,locomotion,Arboreal_terrestrial,category,A,,1,1,1,TRUE,Granatosky,primary,,,Cebus capucinus,Cebus capucinus,verbatim,FALSE
 Cebus capucinus,gait,Duty_Factor,percent,59.37513743,59.37513743,1,1,1,TRUE,Wimberly,primary,59.37513743,59.37513743,Cebus capucinus,Cebus capucinus,verbatim,FALSE
 Cebus capucinus,behavioural_flexibility,Extractive_foraging_reduced_report_count,reports,1,1,1,1,1,TRUE,Reader,primary,1,1,Cebus capucinus,Cebus capucinus,verbatim,FALSE
@@ -2471,6 +2480,15 @@ Hylobates pileatus,hand_morphology,log10_mc4_mm,log10 mm,1.73878055848437,1.7387
 Hylobates pileatus,hand_morphology,log10_pp1_mm,log10 mm,1.32633586092875,1.32633586092875,1,1,1,TRUE,Baker,primary,1.32633586092875,1.32633586092875,Hylobates pileatus,Hylobates pileatus,verbatim,FALSE
 Hylobates pileatus,hand_morphology,log10_pp4_mm,log10 mm,1.62013605497376,1.62013605497376,1,1,1,TRUE,Baker,primary,1.62013605497376,1.62013605497376,Hylobates pileatus,Hylobates pileatus,verbatim,FALSE
 Hylobates syndactylus,dexterity,Dexterity,1-7 scale,6,6,1,1,1,TRUE,Heffner,primary,6,6,Hylobates syndactylus,Hylobates syndactylus,hub,FALSE
+Hylobates syndactylus,behavioural_flexibility,Extractive_foraging_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Hylobates syndactylus,Hylobates syndactylus,hub,FALSE
+Hylobates syndactylus,behavioural_flexibility,Extractive_foraging_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Hylobates syndactylus,Hylobates syndactylus,hub,FALSE
+Hylobates syndactylus,behavioural_flexibility,Innovation_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Hylobates syndactylus,Hylobates syndactylus,hub,FALSE
+Hylobates syndactylus,behavioural_flexibility,Innovation_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Hylobates syndactylus,Hylobates syndactylus,hub,FALSE
+Hylobates syndactylus,research_effort,Journal_search_article_count,articles,8,8,1,1,1,TRUE,Reader,primary,8,8,Hylobates syndactylus,Hylobates syndactylus,hub,FALSE
+Hylobates syndactylus,behavioural_flexibility,Social_learning_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Hylobates syndactylus,Hylobates syndactylus,hub,FALSE
+Hylobates syndactylus,behavioural_flexibility,Tool_use_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Hylobates syndactylus,Hylobates syndactylus,hub,FALSE
+Hylobates syndactylus,behavioural_flexibility,Tool_use_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Hylobates syndactylus,Hylobates syndactylus,hub,FALSE
+Hylobates syndactylus,research_effort,Zoological_record_article_count,articles,40,40,1,1,1,TRUE,Reader,primary,40,40,Hylobates syndactylus,Hylobates syndactylus,hub,FALSE
 Indri indri,behavioural_flexibility,Extractive_foraging_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Indri indri,Indri indri,verbatim,FALSE
 Indri indri,behavioural_flexibility,Extractive_foraging_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Indri indri,Indri indri,verbatim,FALSE
 Indri indri,behavioural_flexibility,Innovation_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Indri indri,Indri indri,verbatim,FALSE
@@ -2504,28 +2522,29 @@ Lagothrix flavicauda,behavioural_flexibility,Social_learning_report_count,report
 Lagothrix flavicauda,behavioural_flexibility,Tool_use_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Lagothrix flavicauda,Lagothrix flavicauda,unresolved,FALSE
 Lagothrix flavicauda,behavioural_flexibility,Tool_use_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Lagothrix flavicauda,Lagothrix flavicauda,unresolved,FALSE
 Lagothrix flavicauda,research_effort,Zoological_record_article_count,articles,2,2,1,1,1,TRUE,Reader,primary,2,2,Lagothrix flavicauda,Lagothrix flavicauda,unresolved,FALSE
-Lagothrix lagothricha,locomotion,Arboreal_terrestrial,category,A,,1,1,1,TRUE,Granatosky,primary,,,Lagothrix lagothricha,Lagothrix lagothricha,verbatim,FALSE
-Lagothrix lagothricha,behavioural_flexibility,Extractive_foraging_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Lagothrix lagothricha,Lagothrix lagothricha,verbatim,FALSE
-Lagothrix lagothricha,behavioural_flexibility,Extractive_foraging_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Lagothrix lagothricha,Lagothrix lagothricha,verbatim,FALSE
-Lagothrix lagothricha,behavioural_flexibility,Innovation_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Lagothrix lagothricha,Lagothrix lagothricha,verbatim,FALSE
-Lagothrix lagothricha,behavioural_flexibility,Innovation_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Lagothrix lagothricha,Lagothrix lagothricha,verbatim,FALSE
-Lagothrix lagothricha,locomotion,Intermembral_index,ratio,98,98,1,1,1,TRUE,Granatosky,primary,98,98,Lagothrix lagothricha,Lagothrix lagothricha,verbatim,FALSE
-Lagothrix lagothricha,research_effort,Journal_search_article_count,articles,12,12,1,1,1,TRUE,Reader,primary,12,12,Lagothrix lagothricha,Lagothrix lagothricha,verbatim,FALSE
-Lagothrix lagothricha,locomotion,Locomotor_diversity_index,index,1.67997850986382,1.67997850986382,1,1,1,TRUE,Granatosky,primary,1.67997850986382,1.67997850986382,Lagothrix lagothricha,Lagothrix lagothricha,verbatim,FALSE
-Lagothrix lagothricha,behavioural_flexibility,Social_learning_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Lagothrix lagothricha,Lagothrix lagothricha,verbatim,FALSE
-Lagothrix lagothricha,manipulation,Tool_use,category,0,,1,1,0,FALSE,Baker,secondary,,,Lagothrix lagothricha,Lagothrix lagothricha,verbatim,FALSE
-Lagothrix lagothricha,behavioural_flexibility,Tool_use_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Lagothrix lagothricha,Lagothrix lagothricha,verbatim,FALSE
-Lagothrix lagothricha,behavioural_flexibility,Tool_use_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Lagothrix lagothricha,Lagothrix lagothricha,verbatim,FALSE
-Lagothrix lagothricha,vocalization,VocalRepertoire,count,8,7,2,2,1,TRUE,Schniter; ManyPrimates,primary; secondary,6,8,Lagothrix lagothricha,Lagothrix lagothricha,verbatim,FALSE
-Lagothrix lagothricha,research_effort,Zoological_record_article_count,articles,34,34,1,1,1,TRUE,Reader,primary,34,34,Lagothrix lagothricha,Lagothrix lagothricha,verbatim,FALSE
-Lagothrix lagothricha,hand_morphology,log10_ip3_mm,log10 mm,1.31783359924359,1.31783359924359,1,1,1,TRUE,Baker,primary,1.31783359924359,1.31783359924359,Lagothrix lagothricha,Lagothrix lagothricha,verbatim,FALSE
-Lagothrix lagothricha,hand_morphology,log10_mc1_mm,log10 mm,1.34537373055909,1.34537373055909,1,1,1,TRUE,Baker,primary,1.34537373055909,1.34537373055909,Lagothrix lagothricha,Lagothrix lagothricha,verbatim,FALSE
-Lagothrix lagothricha,hand_morphology,log10_mc2_mm,log10 mm,1.50242711998443,1.50242711998443,1,1,1,TRUE,Baker,primary,1.50242711998443,1.50242711998443,Lagothrix lagothricha,Lagothrix lagothricha,verbatim,FALSE
-Lagothrix lagothricha,hand_morphology,log10_mc3_mm,log10 mm,1.52439612210384,1.52439612210384,1,1,1,TRUE,Baker,primary,1.52439612210384,1.52439612210384,Lagothrix lagothricha,Lagothrix lagothricha,verbatim,FALSE
-Lagothrix lagothricha,hand_morphology,log10_mc4_mm,log10 mm,1.51982799377572,1.51982799377572,1,1,1,TRUE,Baker,primary,1.51982799377572,1.51982799377572,Lagothrix lagothricha,Lagothrix lagothricha,verbatim,FALSE
-Lagothrix lagothricha,hand_morphology,log10_mc5_mm,log10 mm,1.48429983934679,1.48429983934679,1,1,1,TRUE,Baker,primary,1.48429983934679,1.48429983934679,Lagothrix lagothricha,Lagothrix lagothricha,verbatim,FALSE
-Lagothrix lagothricha,hand_morphology,log10_pp3_mm,log10 mm,1.50506854046951,1.50506854046951,1,1,1,TRUE,Baker,primary,1.50506854046951,1.50506854046951,Lagothrix lagothricha,Lagothrix lagothricha,verbatim,FALSE
+Lagothrix lagothricha,vocalization,VocalRepertoire,count,8,8,1,1,1,TRUE,Schniter,primary,8,8,Lagothrix lagothricha,Lagothrix lagothricha,verbatim,FALSE
+Lagothrix lagotricha,locomotion,Arboreal_terrestrial,category,A,,1,1,1,TRUE,Granatosky,primary,,,Lagothrix lagotricha,Lagothrix lagothricha,spelling,FALSE
 Lagothrix lagotricha,dexterity,Dexterity,1-7 scale,5,5,2,2,1,TRUE,Heffner; Iwaniuk,primary; secondary,5,5,Lagothrix lagotricha,Lagothrix lagothricha,spelling,FALSE
+Lagothrix lagotricha,behavioural_flexibility,Extractive_foraging_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Lagothrix lagotricha,Lagothrix lagothricha,spelling,FALSE
+Lagothrix lagotricha,behavioural_flexibility,Extractive_foraging_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Lagothrix lagotricha,Lagothrix lagothricha,spelling,FALSE
+Lagothrix lagotricha,behavioural_flexibility,Innovation_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Lagothrix lagotricha,Lagothrix lagothricha,spelling,FALSE
+Lagothrix lagotricha,behavioural_flexibility,Innovation_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Lagothrix lagotricha,Lagothrix lagothricha,spelling,FALSE
+Lagothrix lagotricha,locomotion,Intermembral_index,ratio,98,98,1,1,1,TRUE,Granatosky,primary,98,98,Lagothrix lagotricha,Lagothrix lagothricha,spelling,FALSE
+Lagothrix lagotricha,research_effort,Journal_search_article_count,articles,12,12,1,1,1,TRUE,Reader,primary,12,12,Lagothrix lagotricha,Lagothrix lagothricha,spelling,FALSE
+Lagothrix lagotricha,locomotion,Locomotor_diversity_index,index,1.67997850986382,1.67997850986382,1,1,1,TRUE,Granatosky,primary,1.67997850986382,1.67997850986382,Lagothrix lagotricha,Lagothrix lagothricha,spelling,FALSE
+Lagothrix lagotricha,behavioural_flexibility,Social_learning_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Lagothrix lagotricha,Lagothrix lagothricha,spelling,FALSE
+Lagothrix lagotricha,manipulation,Tool_use,category,0,,1,1,0,FALSE,Baker,secondary,,,Lagothrix lagotricha,Lagothrix lagothricha,spelling,FALSE
+Lagothrix lagotricha,behavioural_flexibility,Tool_use_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Lagothrix lagotricha,Lagothrix lagothricha,spelling,FALSE
+Lagothrix lagotricha,behavioural_flexibility,Tool_use_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Lagothrix lagotricha,Lagothrix lagothricha,spelling,FALSE
+Lagothrix lagotricha,vocalization,VocalRepertoire,count,6,6,1,1,0,FALSE,ManyPrimates,secondary,6,6,Lagothrix lagotricha,Lagothrix lagothricha,spelling,FALSE
+Lagothrix lagotricha,research_effort,Zoological_record_article_count,articles,34,34,1,1,1,TRUE,Reader,primary,34,34,Lagothrix lagotricha,Lagothrix lagothricha,spelling,FALSE
+Lagothrix lagotricha,hand_morphology,log10_ip3_mm,log10 mm,1.31783359924359,1.31783359924359,1,1,1,TRUE,Baker,primary,1.31783359924359,1.31783359924359,Lagothrix lagotricha,Lagothrix lagothricha,spelling,FALSE
+Lagothrix lagotricha,hand_morphology,log10_mc1_mm,log10 mm,1.34537373055909,1.34537373055909,1,1,1,TRUE,Baker,primary,1.34537373055909,1.34537373055909,Lagothrix lagotricha,Lagothrix lagothricha,spelling,FALSE
+Lagothrix lagotricha,hand_morphology,log10_mc2_mm,log10 mm,1.50242711998443,1.50242711998443,1,1,1,TRUE,Baker,primary,1.50242711998443,1.50242711998443,Lagothrix lagotricha,Lagothrix lagothricha,spelling,FALSE
+Lagothrix lagotricha,hand_morphology,log10_mc3_mm,log10 mm,1.52439612210384,1.52439612210384,1,1,1,TRUE,Baker,primary,1.52439612210384,1.52439612210384,Lagothrix lagotricha,Lagothrix lagothricha,spelling,FALSE
+Lagothrix lagotricha,hand_morphology,log10_mc4_mm,log10 mm,1.51982799377572,1.51982799377572,1,1,1,TRUE,Baker,primary,1.51982799377572,1.51982799377572,Lagothrix lagotricha,Lagothrix lagothricha,spelling,FALSE
+Lagothrix lagotricha,hand_morphology,log10_mc5_mm,log10 mm,1.48429983934679,1.48429983934679,1,1,1,TRUE,Baker,primary,1.48429983934679,1.48429983934679,Lagothrix lagotricha,Lagothrix lagothricha,spelling,FALSE
+Lagothrix lagotricha,hand_morphology,log10_pp3_mm,log10 mm,1.50506854046951,1.50506854046951,1,1,1,TRUE,Baker,primary,1.50506854046951,1.50506854046951,Lagothrix lagotricha,Lagothrix lagothricha,spelling,FALSE
 Lama glama,locomotion,Angular_utilization_index_FL,percent,82.2222222222222,82.2222222222222,1,1,1,TRUE,Medina,primary,82.2222222222222,82.2222222222222,Lama glama,Lama glama,verbatim,FALSE
 Lama glama,locomotion,Angular_utilization_index_HL,percent,73.3333333333333,73.3333333333333,1,1,1,TRUE,Medina,primary,73.3333333333333,73.3333333333333,Lama glama,Lama glama,verbatim,FALSE
 Lama glama,gait,Duty_Factor,percent,72,72,1,1,1,TRUE,Wimberly,primary,72,72,Lama glama,Lama glama,verbatim,FALSE
@@ -3879,21 +3898,12 @@ Phocoena phocoena,dexterity,Dexterity,1-7 scale,1,1,1,1,1,TRUE,Heffner,primary,1
 Pierolapithecus catalaunicus,manipulation,Tool_use,category,0,,1,1,0,FALSE,Baker,secondary,,,Pierolapithecus catalaunicus,Pierolapithecus catalaunicus,unresolved,FALSE
 Pierolapithecus catalaunicus,hand_morphology,log10_dp1_mm,log10 mm,1.27415784926368,1.27415784926368,1,1,1,TRUE,Baker,primary,1.27415784926368,1.27415784926368,Pierolapithecus catalaunicus,Pierolapithecus catalaunicus,unresolved,FALSE
 Piliocolobus badius,locomotion,Arboreal_terrestrial,category,A,,1,1,1,TRUE,Granatosky,primary,,,Piliocolobus badius,Piliocolobus badius,verbatim,FALSE
-Piliocolobus badius,behavioural_flexibility,Extractive_foraging_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Piliocolobus badius,Piliocolobus badius,verbatim,FALSE
-Piliocolobus badius,behavioural_flexibility,Extractive_foraging_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Piliocolobus badius,Piliocolobus badius,verbatim,FALSE
-Piliocolobus badius,behavioural_flexibility,Innovation_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Piliocolobus badius,Piliocolobus badius,verbatim,FALSE
-Piliocolobus badius,behavioural_flexibility,Innovation_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Piliocolobus badius,Piliocolobus badius,verbatim,FALSE
 Piliocolobus badius,locomotion,Intermembral_index,ratio,79,79,1,1,1,TRUE,Granatosky,primary,79,79,Piliocolobus badius,Piliocolobus badius,verbatim,FALSE
-Piliocolobus badius,research_effort,Journal_search_article_count,articles,11,11,1,1,1,TRUE,Reader,primary,11,11,Piliocolobus badius,Piliocolobus badius,verbatim,FALSE
 Piliocolobus badius,locomotion,Locomotor_diversity_index,index,1.27618355697741,1.27618355697741,1,1,1,TRUE,Granatosky,primary,1.27618355697741,1.27618355697741,Piliocolobus badius,Piliocolobus badius,verbatim,FALSE
-Piliocolobus badius,behavioural_flexibility,Social_learning_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Piliocolobus badius,Piliocolobus badius,verbatim,FALSE
 Piliocolobus badius,manipulation,Tool_Manufacture,category,1,,1,1,1,TRUE,Baker,primary,,,Piliocolobus badius,Piliocolobus badius,verbatim,FALSE
 Piliocolobus badius,manipulation,Tool_use,category,1,,1,1,0,FALSE,Baker,secondary,,,Piliocolobus badius,Piliocolobus badius,verbatim,FALSE
-Piliocolobus badius,behavioural_flexibility,Tool_use_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Piliocolobus badius,Piliocolobus badius,verbatim,FALSE
-Piliocolobus badius,behavioural_flexibility,Tool_use_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Piliocolobus badius,Piliocolobus badius,verbatim,FALSE
 Piliocolobus badius,manipulation,True_Tool_Use,category,1,,1,1,1,TRUE,Baker,primary,,,Piliocolobus badius,Piliocolobus badius,verbatim,FALSE
 Piliocolobus badius,vocalization,VocalRepertoire,count,17,17,1,1,1,TRUE,Schniter,primary,17,17,Piliocolobus badius,Piliocolobus badius,verbatim,FALSE
-Piliocolobus badius,research_effort,Zoological_record_article_count,articles,52,52,1,1,1,TRUE,Reader,primary,52,52,Piliocolobus badius,Piliocolobus badius,verbatim,FALSE
 Piliocolobus badius,hand_morphology,log10_ip2_mm,log10 mm,1.15587269963883,1.15587269963883,1,1,1,TRUE,Baker,primary,1.15587269963883,1.15587269963883,Piliocolobus badius,Piliocolobus badius,verbatim,FALSE
 Piliocolobus badius,hand_morphology,log10_ip3_mm,log10 mm,1.30828907792733,1.30828907792733,1,1,1,TRUE,Baker,primary,1.30828907792733,1.30828907792733,Piliocolobus badius,Piliocolobus badius,verbatim,FALSE
 Piliocolobus badius,hand_morphology,log10_ip4_mm,log10 mm,1.29884322785227,1.29884322785227,1,1,1,TRUE,Baker,primary,1.29884322785227,1.29884322785227,Piliocolobus badius,Piliocolobus badius,verbatim,FALSE
@@ -4016,6 +4026,24 @@ Plesiadapis tricuspidens,manipulation,Tool_use,category,0,,1,1,0,FALSE,Baker,sec
 Plesiadapis tricuspidens,hand_morphology,log10_mc3_mm,log10 mm,1.32428245529769,1.32428245529769,1,1,1,TRUE,Baker,primary,1.32428245529769,1.32428245529769,Plesiadapis tricuspidens,Plesiadapis tricuspidens,unresolved,FALSE
 Plesiadapis tricuspidens,hand_morphology,log10_mc4_mm,log10 mm,1.39269695325967,1.39269695325967,1,1,1,TRUE,Baker,primary,1.39269695325967,1.39269695325967,Plesiadapis tricuspidens,Plesiadapis tricuspidens,unresolved,FALSE
 Plesiadapis tricuspidens,hand_morphology,log10_mc5_mm,log10 mm,1.15986784709257,1.15986784709257,1,1,1,TRUE,Baker,primary,1.15986784709257,1.15986784709257,Plesiadapis tricuspidens,Plesiadapis tricuspidens,unresolved,FALSE
+Pongo abelii,locomotion,Arboreal_terrestrial,category,A,,1,1,1,TRUE,Granatosky,primary,,,Pongo abelii,Pongo abelii; Pongo sp.,hub; lump,FALSE
+Pongo abelii,manipulation,Extractive_foraging,category,1,,1,1,1,TRUE,Heldstab,primary,,,Pongo abelii,Pongo abelii; Pongo sp.,hub; lump,FALSE
+Pongo abelii,locomotion,Intermembral_index,ratio,139,139,1,1,1,TRUE,Granatosky,primary,139,139,Pongo abelii,Pongo abelii; Pongo sp.,hub; lump,FALSE
+Pongo abelii,locomotion,Locomotor_diversity_index,index,2.03067787197455,2.03067787197455,1,1,1,TRUE,Granatosky,primary,2.03067787197455,2.03067787197455,Pongo abelii,Pongo abelii; Pongo sp.,hub; lump,FALSE
+Pongo abelii,manipulation,Manipulation_complexity,score,3.89,3.89,1,1,1,TRUE,Heldstab,primary,3.89,3.89,Pongo abelii,Pongo abelii; Pongo sp.,hub; lump,FALSE
+Pongo abelii,manipulation,Tool_Manufacture,category,1,,1,1,1,TRUE,Baker,primary,,,Pongo abelii,Pongo abelii; Pongo sp.,hub; lump,FALSE
+Pongo abelii,manipulation,Tool_use,category,1,,2,2,1,TRUE,Heldstab; Baker,primary; secondary,,,Pongo abelii,Pongo abelii; Pongo sp.,hub; lump,FALSE
+Pongo abelii,manipulation,True_Tool_Use,category,1,,1,1,1,TRUE,Baker,primary,,,Pongo abelii,Pongo abelii; Pongo sp.,hub; lump,FALSE
+Pongo abelii,vocalization,VocalRepertoire,count,17,17,1,1,0,FALSE,ManyPrimates,secondary,17,17,Pongo abelii,Pongo abelii; Pongo sp.,hub; lump,FALSE
+Pongo abelii,hand_morphology,log10_dp1_mm,log10 mm,1.21817431823764,1.21817431823764,1,1,1,TRUE,Baker,primary,1.21817431823764,1.21817431823764,Pongo abelii,Pongo abelii; Pongo sp.,hub; lump,FALSE
+Pongo abelii,hand_morphology,log10_ip3_mm,log10 mm,1.67904158435619,1.67904158435619,1,1,1,TRUE,Baker,primary,1.67904158435619,1.67904158435619,Pongo abelii,Pongo abelii; Pongo sp.,hub; lump,FALSE
+Pongo abelii,hand_morphology,log10_ip4_mm,log10 mm,1.68057344885365,1.68057344885365,1,1,1,TRUE,Baker,primary,1.68057344885365,1.68057344885365,Pongo abelii,Pongo abelii; Pongo sp.,hub; lump,FALSE
+Pongo abelii,hand_morphology,log10_mc1_mm,log10 mm,1.66903780088516,1.66903780088516,1,1,1,TRUE,Baker,primary,1.66903780088516,1.66903780088516,Pongo abelii,Pongo abelii; Pongo sp.,hub; lump,FALSE
+Pongo abelii,hand_morphology,log10_mc4_mm,log10 mm,1.97969250863071,1.97969250863071,1,1,1,TRUE,Baker,primary,1.97969250863071,1.97969250863071,Pongo abelii,Pongo abelii; Pongo sp.,hub; lump,FALSE
+Pongo abelii,hand_morphology,log10_mc5_mm,log10 mm,1.92766543928285,1.92766543928285,1,1,1,TRUE,Baker,primary,1.92766543928285,1.92766543928285,Pongo abelii,Pongo abelii; Pongo sp.,hub; lump,FALSE
+Pongo abelii,hand_morphology,log10_pp1_mm,log10 mm,1.45429211630417,1.45429211630417,1,1,1,TRUE,Baker,primary,1.45429211630417,1.45429211630417,Pongo abelii,Pongo abelii; Pongo sp.,hub; lump,FALSE
+Pongo abelii,hand_morphology,log10_pp3_mm,log10 mm,1.86042785130777,1.86042785130777,1,1,1,TRUE,Baker,primary,1.86042785130777,1.86042785130777,Pongo abelii,Pongo abelii; Pongo sp.,hub; lump,FALSE
+Pongo abelii,hand_morphology,log10_pp4_mm,log10 mm,1.86376882402947,1.86376882402947,1,1,1,TRUE,Baker,primary,1.86376882402947,1.86376882402947,Pongo abelii,Pongo abelii; Pongo sp.,hub; lump,FALSE
 Pongo pygmaeus,locomotion,Angular_utilization_index_FL,percent,57,57,1,1,1,TRUE,Medina,primary,57,57,Pongo pygmaeus,Pongo pygmaeus,hub; verbatim,FALSE
 Pongo pygmaeus,locomotion,Angular_utilization_index_HL,percent,48.7647058823529,48.7647058823529,1,1,1,TRUE,Medina,primary,48.7647058823529,48.7647058823529,Pongo pygmaeus,Pongo pygmaeus,hub; verbatim,FALSE
 Pongo pygmaeus,locomotion,Arboreal_terrestrial,category,A,,1,1,1,TRUE,Granatosky,primary,,,Pongo pygmaeus,Pongo pygmaeus,hub; verbatim,FALSE
@@ -4055,26 +4083,8 @@ Pongo pygmaeus,hand_morphology,log10_pp4_mm,log10 mm,1.84011864613901,1.84011864
 Pongo pygmaeus,hand_morphology,peak_workspace,index,-1.65757731917779,-1.65757731917779,1,1,1,TRUE,Baker,primary,-1.65757731917779,-1.65757731917779,Pongo pygmaeus,Pongo pygmaeus,hub; verbatim,FALSE
 Pongo pygmaeus,hand_morphology,real_size,index,1.57403126772772,1.57403126772772,1,1,1,TRUE,Baker,primary,1.57403126772772,1.57403126772772,Pongo pygmaeus,Pongo pygmaeus,hub; verbatim,FALSE
 Pongo pygmaeus,hand_morphology,relative_size,index,-0.853871964321762,-0.853871964321762,1,1,1,TRUE,Baker,primary,-0.853871964321762,-0.853871964321762,Pongo pygmaeus,Pongo pygmaeus,hub; verbatim,FALSE
-Pongo sp.,locomotion,Arboreal_terrestrial,category,A,,1,1,1,TRUE,Granatosky,primary,,,Pongo sp.,Pongo sp.,verbatim,FALSE
-Pongo sp.,manipulation,Extractive_foraging,category,1,,1,1,1,TRUE,Heldstab,primary,,,Pongo sp.,Pongo sp.,verbatim,FALSE
 Pongo sp.,handedness,Handedness_index_mean,HI,-0.225,-0.225,1,1,1,TRUE,Caspar,primary,-0.225,-0.225,Pongo sp.,Pongo sp.,verbatim,FALSE
 Pongo sp.,handedness,Handedness_strength_mean,abs(HI),0.487,0.487,1,1,1,TRUE,Caspar,primary,0.487,0.487,Pongo sp.,Pongo sp.,verbatim,FALSE
-Pongo sp.,locomotion,Intermembral_index,ratio,139,139,1,1,1,TRUE,Granatosky,primary,139,139,Pongo sp.,Pongo sp.,verbatim,FALSE
-Pongo sp.,locomotion,Locomotor_diversity_index,index,2.03067787197455,2.03067787197455,1,1,1,TRUE,Granatosky,primary,2.03067787197455,2.03067787197455,Pongo sp.,Pongo sp.,verbatim,FALSE
-Pongo sp.,manipulation,Manipulation_complexity,score,3.89,3.89,1,1,1,TRUE,Heldstab,primary,3.89,3.89,Pongo sp.,Pongo sp.,verbatim,FALSE
-Pongo sp.,manipulation,Tool_Manufacture,category,1,,1,1,1,TRUE,Baker,primary,,,Pongo sp.,Pongo sp.,verbatim,FALSE
-Pongo sp.,manipulation,Tool_use,category,1,,2,2,1,TRUE,Heldstab; Baker,primary; secondary,,,Pongo sp.,Pongo sp.,verbatim,FALSE
-Pongo sp.,manipulation,True_Tool_Use,category,1,,1,1,1,TRUE,Baker,primary,,,Pongo sp.,Pongo sp.,verbatim,FALSE
-Pongo sp.,vocalization,VocalRepertoire,count,17,17,1,1,0,FALSE,ManyPrimates,secondary,17,17,Pongo sp.,Pongo sp.,verbatim,FALSE
-Pongo sp.,hand_morphology,log10_dp1_mm,log10 mm,1.21817431823764,1.21817431823764,1,1,1,TRUE,Baker,primary,1.21817431823764,1.21817431823764,Pongo sp.,Pongo sp.,verbatim,FALSE
-Pongo sp.,hand_morphology,log10_ip3_mm,log10 mm,1.67904158435619,1.67904158435619,1,1,1,TRUE,Baker,primary,1.67904158435619,1.67904158435619,Pongo sp.,Pongo sp.,verbatim,FALSE
-Pongo sp.,hand_morphology,log10_ip4_mm,log10 mm,1.68057344885365,1.68057344885365,1,1,1,TRUE,Baker,primary,1.68057344885365,1.68057344885365,Pongo sp.,Pongo sp.,verbatim,FALSE
-Pongo sp.,hand_morphology,log10_mc1_mm,log10 mm,1.66903780088516,1.66903780088516,1,1,1,TRUE,Baker,primary,1.66903780088516,1.66903780088516,Pongo sp.,Pongo sp.,verbatim,FALSE
-Pongo sp.,hand_morphology,log10_mc4_mm,log10 mm,1.97969250863071,1.97969250863071,1,1,1,TRUE,Baker,primary,1.97969250863071,1.97969250863071,Pongo sp.,Pongo sp.,verbatim,FALSE
-Pongo sp.,hand_morphology,log10_mc5_mm,log10 mm,1.92766543928285,1.92766543928285,1,1,1,TRUE,Baker,primary,1.92766543928285,1.92766543928285,Pongo sp.,Pongo sp.,verbatim,FALSE
-Pongo sp.,hand_morphology,log10_pp1_mm,log10 mm,1.45429211630417,1.45429211630417,1,1,1,TRUE,Baker,primary,1.45429211630417,1.45429211630417,Pongo sp.,Pongo sp.,verbatim,FALSE
-Pongo sp.,hand_morphology,log10_pp3_mm,log10 mm,1.86042785130777,1.86042785130777,1,1,1,TRUE,Baker,primary,1.86042785130777,1.86042785130777,Pongo sp.,Pongo sp.,verbatim,FALSE
-Pongo sp.,hand_morphology,log10_pp4_mm,log10 mm,1.86376882402947,1.86376882402947,1,1,1,TRUE,Baker,primary,1.86376882402947,1.86376882402947,Pongo sp.,Pongo sp.,verbatim,FALSE
 Pongo spp,locomotion,Limb_posture,category,Plantigrade,,1,1,1,TRUE,Medina,primary,,,Pongo spp,Pongo sp.,spelling,FALSE
 Pongo spp,locomotion,Locomotor_habit,category,Arboreal,,1,1,1,TRUE,Medina,primary,,,Pongo spp,Pongo sp.,spelling,FALSE
 Pongo spp,locomotion,Top_speed,category,Slow,,1,1,1,TRUE,Medina,primary,,,Pongo spp,Pongo sp.,spelling,FALSE
@@ -4194,6 +4204,15 @@ Procavia capensis,dexterity,Dexterity,1-7 scale,2,2,1,1,1,TRUE,Heffner,primary,2
 Procavia capensis,locomotion,Limb_posture,category,Plantigrade,,1,1,1,TRUE,Medina,primary,,,Procavia capensis,Procavia capensis,verbatim,FALSE
 Procavia capensis,locomotion,Locomotor_habit,category,Scansorial,,1,1,1,TRUE,Medina,primary,,,Procavia capensis,Procavia capensis,verbatim,FALSE
 Procavia capensis,locomotion,Top_speed,category,Slow,,1,1,1,TRUE,Medina,primary,,,Procavia capensis,Procavia capensis,verbatim,FALSE
+Procolobus badius,behavioural_flexibility,Extractive_foraging_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Procolobus badius,Piliocolobus badius,synonym:NCBI,FALSE
+Procolobus badius,behavioural_flexibility,Extractive_foraging_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Procolobus badius,Piliocolobus badius,synonym:NCBI,FALSE
+Procolobus badius,behavioural_flexibility,Innovation_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Procolobus badius,Piliocolobus badius,synonym:NCBI,FALSE
+Procolobus badius,behavioural_flexibility,Innovation_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Procolobus badius,Piliocolobus badius,synonym:NCBI,FALSE
+Procolobus badius,research_effort,Journal_search_article_count,articles,11,11,1,1,1,TRUE,Reader,primary,11,11,Procolobus badius,Piliocolobus badius,synonym:NCBI,FALSE
+Procolobus badius,behavioural_flexibility,Social_learning_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Procolobus badius,Piliocolobus badius,synonym:NCBI,FALSE
+Procolobus badius,behavioural_flexibility,Tool_use_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Procolobus badius,Piliocolobus badius,synonym:NCBI,FALSE
+Procolobus badius,behavioural_flexibility,Tool_use_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Procolobus badius,Piliocolobus badius,synonym:NCBI,FALSE
+Procolobus badius,research_effort,Zoological_record_article_count,articles,52,52,1,1,1,TRUE,Reader,primary,52,52,Procolobus badius,Piliocolobus badius,synonym:NCBI,FALSE
 Procolobus kirkii,behavioural_flexibility,Extractive_foraging_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Procolobus kirkii,Procolobus kirkii,unresolved,FALSE
 Procolobus kirkii,behavioural_flexibility,Extractive_foraging_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Procolobus kirkii,Procolobus kirkii,unresolved,FALSE
 Procolobus kirkii,behavioural_flexibility,Innovation_reduced_report_count,reports,1,1,1,1,1,TRUE,Reader,primary,1,1,Procolobus kirkii,Procolobus kirkii,unresolved,FALSE
@@ -4654,26 +4673,17 @@ Sapajus apella,motor_pathway,CST_termination_grade,ordinal 0-2,2,2,1,1,1,TRUE,Bo
 Sapajus apella,dexterity,Dexterity,1-7 scale,5,5,2,2,1,TRUE,Heffner; Iwaniuk,primary; secondary,5,5,Sapajus apella,Sapajus apella,verbatim,FALSE
 Sapajus apella,gait,Duty_Factor,percent,65.5979992,65.5979992,1,1,1,TRUE,Wimberly,primary,65.5979992,65.5979992,Sapajus apella,Sapajus apella,verbatim,FALSE
 Sapajus apella,manipulation,Extractive_foraging,category,1,,1,1,1,TRUE,Heldstab,primary,,,Sapajus apella,Sapajus apella,verbatim,FALSE
-Sapajus apella,behavioural_flexibility,Extractive_foraging_reduced_report_count,reports,7,7,1,1,1,TRUE,Reader,primary,7,7,Sapajus apella,Sapajus apella,verbatim,FALSE
-Sapajus apella,behavioural_flexibility,Extractive_foraging_report_count,reports,56,56,1,1,1,TRUE,Reader,primary,56,56,Sapajus apella,Sapajus apella,verbatim,FALSE
 Sapajus apella,gait,Gait,category,LSDC,,1,1,1,TRUE,Wimberly,primary,,,Sapajus apella,Sapajus apella,verbatim,FALSE
 Sapajus apella,handedness,Handedness_index_mean,HI,-0.028,-0.028,1,1,1,TRUE,Caspar,primary,-0.028,-0.028,Sapajus apella,Sapajus apella,verbatim,FALSE
 Sapajus apella,handedness,Handedness_strength_mean,abs(HI),0.6870000000000001,0.687,1,1,1,TRUE,Caspar,primary,0.687,0.687,Sapajus apella,Sapajus apella,verbatim,FALSE
-Sapajus apella,behavioural_flexibility,Innovation_reduced_report_count,reports,3,3,1,1,1,TRUE,Reader,primary,3,3,Sapajus apella,Sapajus apella,verbatim,FALSE
-Sapajus apella,behavioural_flexibility,Innovation_report_count,reports,39,39,1,1,1,TRUE,Reader,primary,39,39,Sapajus apella,Sapajus apella,verbatim,FALSE
 Sapajus apella,locomotion,Intermembral_index,ratio,81,81,1,1,1,TRUE,Granatosky,primary,81,81,Sapajus apella,Sapajus apella,verbatim,FALSE
-Sapajus apella,research_effort,Journal_search_article_count,articles,111,111,1,1,1,TRUE,Reader,primary,111,111,Sapajus apella,Sapajus apella,verbatim,FALSE
 Sapajus apella,locomotion,Locomotor_diversity_index,index,1.83687468245124,1.83687468245124,1,1,1,TRUE,Granatosky,primary,1.83687468245124,1.83687468245124,Sapajus apella,Sapajus apella,verbatim,FALSE
 Sapajus apella,manipulation,Manipulation_complexity,score,2.54,2.54,1,1,1,TRUE,Heldstab,primary,2.54,2.54,Sapajus apella,Sapajus apella,verbatim,FALSE
 Sapajus apella,gait,Phase,percent,49.53562611,49.53562611,1,1,1,TRUE,Wimberly,primary,49.53562611,49.53562611,Sapajus apella,Sapajus apella,verbatim,FALSE
-Sapajus apella,behavioural_flexibility,Social_learning_report_count,reports,17,17,1,1,1,TRUE,Reader,primary,17,17,Sapajus apella,Sapajus apella,verbatim,FALSE
 Sapajus apella,manipulation,Tool_Manufacture,category,1,,1,1,1,TRUE,Baker,primary,,,Sapajus apella,Sapajus apella,verbatim,FALSE
 Sapajus apella,manipulation,Tool_use,category,1,,2,2,1,TRUE,Heldstab; Baker,primary; secondary,,,Sapajus apella,Sapajus apella,verbatim,FALSE
-Sapajus apella,behavioural_flexibility,Tool_use_reduced_report_count,reports,11,11,1,1,1,TRUE,Reader,primary,11,11,Sapajus apella,Sapajus apella,verbatim,FALSE
-Sapajus apella,behavioural_flexibility,Tool_use_report_count,reports,64,64,1,1,1,TRUE,Reader,primary,64,64,Sapajus apella,Sapajus apella,verbatim,FALSE
 Sapajus apella,manipulation,True_Tool_Use,category,1,,1,1,1,TRUE,Baker,primary,,,Sapajus apella,Sapajus apella,verbatim,FALSE
 Sapajus apella,vocalization,VocalRepertoire,count,31,31,1,1,0,FALSE,ManyPrimates,secondary,31,31,Sapajus apella,Sapajus apella,verbatim,FALSE
-Sapajus apella,research_effort,Zoological_record_article_count,articles,249,249,1,1,1,TRUE,Reader,primary,249,249,Sapajus apella,Sapajus apella,verbatim,FALSE
 Sapajus apella,hand_morphology,log10_dp1_mm,log10 mm,0.91343538222303,0.91343538222303,1,1,1,TRUE,Baker,primary,0.91343538222303,0.91343538222303,Sapajus apella,Sapajus apella,verbatim,FALSE
 Sapajus apella,hand_morphology,log10_dp2_mm,log10 mm,0.876025291494317,0.876025291494317,1,1,1,TRUE,Baker,primary,0.876025291494317,0.876025291494317,Sapajus apella,Sapajus apella,verbatim,FALSE
 Sapajus apella,hand_morphology,log10_ip2_mm,log10 mm,1.05935737021345,1.05935737021345,1,1,1,TRUE,Baker,primary,1.05935737021345,1.05935737021345,Sapajus apella,Sapajus apella,verbatim,FALSE
@@ -4753,29 +4763,15 @@ Sus scrofa,locomotion,Limb_posture,category,Unguligrade,,1,1,1,TRUE,Medina,prima
 Sus scrofa,locomotion,Locomotor_habit,category,Terrestrial,,1,1,1,TRUE,Medina,primary,,,Sus scrofa,Sus scrofa,hub,FALSE
 Sus scrofa,gait,Phase,percent,25.74963,25.74963,1,1,1,TRUE,Wimberly,primary,25.74963,25.74963,Sus scrofa,Sus scrofa,hub,FALSE
 Sus scrofa,locomotion,Top_speed,category,Medium,,1,1,1,TRUE,Medina,primary,,,Sus scrofa,Sus scrofa,hub,FALSE
-Sus scrofa domestica,locomotion,Angular_utilization_index_FL,percent,44.5945945945946,44.5945945945946,1,1,1,TRUE,Medina,primary,44.5945945945946,44.5945945945946,Sus scrofa domestica,Sus scrofa,subspecies_assign,FALSE
-Sus scrofa domestica,locomotion,Angular_utilization_index_HL,percent,34.8039215686275,34.8039215686275,1,1,1,TRUE,Medina,primary,34.8039215686275,34.8039215686275,Sus scrofa domestica,Sus scrofa,subspecies_assign,FALSE
-Sus scrofa domestica,locomotion,Limb_posture,category,Unguligrade,,1,1,1,TRUE,Medina,primary,,,Sus scrofa domestica,Sus scrofa,subspecies_assign,FALSE
-Sus scrofa domestica,locomotion,Locomotor_habit,category,Terrestrial,,1,1,1,TRUE,Medina,primary,,,Sus scrofa domestica,Sus scrofa,subspecies_assign,FALSE
-Sus scrofa domestica,locomotion,Top_speed,category,Slow,,1,1,1,TRUE,Medina,primary,,,Sus scrofa domestica,Sus scrofa,subspecies_assign,FALSE
 Symphalangus syndactylus,locomotion,Arboreal_terrestrial,category,A,,1,1,1,TRUE,Granatosky,primary,,,Symphalangus syndactylus,Symphalangus syndactylus,verbatim,FALSE
 Symphalangus syndactylus,manipulation,Extractive_foraging,category,0,,1,1,1,TRUE,Heldstab,primary,,,Symphalangus syndactylus,Symphalangus syndactylus,verbatim,FALSE
-Symphalangus syndactylus,behavioural_flexibility,Extractive_foraging_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Symphalangus syndactylus,Symphalangus syndactylus,verbatim,FALSE
-Symphalangus syndactylus,behavioural_flexibility,Extractive_foraging_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Symphalangus syndactylus,Symphalangus syndactylus,verbatim,FALSE
 Symphalangus syndactylus,handedness,Handedness_index_mean,HI,-0.048,-0.048,1,1,1,TRUE,Caspar,primary,-0.048,-0.048,Symphalangus syndactylus,Symphalangus syndactylus,verbatim,FALSE
 Symphalangus syndactylus,handedness,Handedness_strength_mean,abs(HI),0.482,0.482,1,1,1,TRUE,Caspar,primary,0.482,0.482,Symphalangus syndactylus,Symphalangus syndactylus,verbatim,FALSE
-Symphalangus syndactylus,behavioural_flexibility,Innovation_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Symphalangus syndactylus,Symphalangus syndactylus,verbatim,FALSE
-Symphalangus syndactylus,behavioural_flexibility,Innovation_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Symphalangus syndactylus,Symphalangus syndactylus,verbatim,FALSE
 Symphalangus syndactylus,locomotion,Intermembral_index,ratio,147,147,1,1,1,TRUE,Granatosky,primary,147,147,Symphalangus syndactylus,Symphalangus syndactylus,verbatim,FALSE
-Symphalangus syndactylus,research_effort,Journal_search_article_count,articles,8,8,1,1,1,TRUE,Reader,primary,8,8,Symphalangus syndactylus,Symphalangus syndactylus,verbatim,FALSE
 Symphalangus syndactylus,locomotion,Locomotor_diversity_index,index,0.6390318596501769,0.639031859650177,1,1,1,TRUE,Granatosky,primary,0.639031859650177,0.639031859650177,Symphalangus syndactylus,Symphalangus syndactylus,verbatim,FALSE
 Symphalangus syndactylus,manipulation,Manipulation_complexity,score,3.08,3.08,1,1,1,TRUE,Heldstab,primary,3.08,3.08,Symphalangus syndactylus,Symphalangus syndactylus,verbatim,FALSE
-Symphalangus syndactylus,behavioural_flexibility,Social_learning_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Symphalangus syndactylus,Symphalangus syndactylus,verbatim,FALSE
 Symphalangus syndactylus,manipulation,Tool_use,category,0,,2,2,1,TRUE,Heldstab; Baker,primary; secondary,,,Symphalangus syndactylus,Symphalangus syndactylus,verbatim,FALSE
-Symphalangus syndactylus,behavioural_flexibility,Tool_use_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Symphalangus syndactylus,Symphalangus syndactylus,verbatim,FALSE
-Symphalangus syndactylus,behavioural_flexibility,Tool_use_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Symphalangus syndactylus,Symphalangus syndactylus,verbatim,FALSE
 Symphalangus syndactylus,vocalization,VocalRepertoire,count,9,9,1,1,0,FALSE,ManyPrimates,secondary,9,9,Symphalangus syndactylus,Symphalangus syndactylus,verbatim,FALSE
-Symphalangus syndactylus,research_effort,Zoological_record_article_count,articles,40,40,1,1,1,TRUE,Reader,primary,40,40,Symphalangus syndactylus,Symphalangus syndactylus,verbatim,FALSE
 Symphalangus syndactylus,hand_morphology,log10_dp1_mm,log10 mm,1.05690485133647,1.05690485133647,1,1,1,TRUE,Baker,primary,1.05690485133647,1.05690485133647,Symphalangus syndactylus,Symphalangus syndactylus,verbatim,FALSE
 Symphalangus syndactylus,hand_morphology,log10_ip2_mm,log10 mm,1.40910278537459,1.40910278537459,1,1,1,TRUE,Baker,primary,1.40910278537459,1.40910278537459,Symphalangus syndactylus,Symphalangus syndactylus,verbatim,FALSE
 Symphalangus syndactylus,hand_morphology,log10_ip3_mm,log10 mm,1.50435889598921,1.50435889598921,1,1,1,TRUE,Baker,primary,1.50435889598921,1.50435889598921,Symphalangus syndactylus,Symphalangus syndactylus,verbatim,FALSE
@@ -5133,7 +5129,6 @@ Varecia rubra,manipulation,Extractive_foraging,category,0,,1,1,1,TRUE,Heldstab,p
 Varecia rubra,manipulation,Manipulation_complexity,score,1.33,1.33,1,1,1,TRUE,Heldstab,primary,1.33,1.33,Varecia rubra,Varecia rubra,verbatim,FALSE
 Varecia rubra,manipulation,Tool_use,category,0,,1,1,1,TRUE,Heldstab,primary,,,Varecia rubra,Varecia rubra,verbatim,FALSE
 Varecia rubra,vocalization,VocalRepertoire,count,13,13,1,1,0,FALSE,ManyPrimates,secondary,13,13,Varecia rubra,Varecia rubra,verbatim,FALSE
-Varecia variegata,locomotion,Arboreal_terrestrial,category,A,,1,1,1,TRUE,Granatosky,primary,,,Varecia variegata,Varecia variegata,verbatim,FALSE
 Varecia variegata,gait,Duty_Factor,percent,57.19757351,57.19757351,1,1,1,TRUE,Wimberly,primary,57.19757351,57.19757351,Varecia variegata,Varecia variegata,verbatim,FALSE
 Varecia variegata,behavioural_flexibility,Extractive_foraging_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Varecia variegata,Varecia variegata,verbatim,FALSE
 Varecia variegata,behavioural_flexibility,Extractive_foraging_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Varecia variegata,Varecia variegata,verbatim,FALSE
@@ -5141,9 +5136,7 @@ Varecia variegata,gait,Foot_Posture,category,plantigrade,,1,1,1,TRUE,Wimberly,pr
 Varecia variegata,gait,Gait,category,DSDC,,1,1,1,TRUE,Wimberly,primary,,,Varecia variegata,Varecia variegata,verbatim,FALSE
 Varecia variegata,behavioural_flexibility,Innovation_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Varecia variegata,Varecia variegata,verbatim,FALSE
 Varecia variegata,behavioural_flexibility,Innovation_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Varecia variegata,Varecia variegata,verbatim,FALSE
-Varecia variegata,locomotion,Intermembral_index,ratio,72,72,1,1,1,TRUE,Granatosky,primary,72,72,Varecia variegata,Varecia variegata,verbatim,FALSE
 Varecia variegata,research_effort,Journal_search_article_count,articles,13,13,1,1,1,TRUE,Reader,primary,13,13,Varecia variegata,Varecia variegata,verbatim,FALSE
-Varecia variegata,locomotion,Locomotor_diversity_index,index,1.40007561095226,1.40007561095226,1,1,1,TRUE,Granatosky,primary,1.40007561095226,1.40007561095226,Varecia variegata,Varecia variegata,verbatim,FALSE
 Varecia variegata,gait,Phase,percent,64.53997173,64.53997173,1,1,1,TRUE,Wimberly,primary,64.53997173,64.53997173,Varecia variegata,Varecia variegata,verbatim,FALSE
 Varecia variegata,behavioural_flexibility,Social_learning_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Varecia variegata,Varecia variegata,verbatim,FALSE
 Varecia variegata,manipulation,Tool_use,category,0,,1,1,0,FALSE,Baker,secondary,,,Varecia variegata,Varecia variegata,verbatim,FALSE
@@ -5161,6 +5154,9 @@ Varecia variegata,hand_morphology,relative_size,index,-1,-1,1,1,1,TRUE,Baker,pri
 Varecia variegata rubra,locomotion,Arboreal_terrestrial,category,A,,1,1,1,TRUE,Granatosky,primary,,,Varecia variegata rubra,Varecia variegata rubra,verbatim,FALSE
 Varecia variegata rubra,locomotion,Intermembral_index,ratio,72,72,1,1,1,TRUE,Granatosky,primary,72,72,Varecia variegata rubra,Varecia variegata rubra,verbatim,FALSE
 Varecia variegata rubra,locomotion,Locomotor_diversity_index,index,1.49699401198051,1.49699401198051,1,1,1,TRUE,Granatosky,primary,1.49699401198051,1.49699401198051,Varecia variegata rubra,Varecia variegata rubra,verbatim,FALSE
+Varecia variegata variegata,locomotion,Arboreal_terrestrial,category,A,,1,1,1,TRUE,Granatosky,primary,,,Varecia variegata variegata,Varecia variegata,subspecies_assign,FALSE
+Varecia variegata variegata,locomotion,Intermembral_index,ratio,72,72,1,1,1,TRUE,Granatosky,primary,72,72,Varecia variegata variegata,Varecia variegata,subspecies_assign,FALSE
+Varecia variegata variegata,locomotion,Locomotor_diversity_index,index,1.40007561095226,1.40007561095226,1,1,1,TRUE,Granatosky,primary,1.40007561095226,1.40007561095226,Varecia variegata variegata,Varecia variegata,subspecies_assign,FALSE
 Vicugna pacos,gait,Duty_Factor,percent,55.80683333,55.80683333,1,1,1,TRUE,Wimberly,primary,55.80683333,55.80683333,Vicugna pacos,Vicugna pacos,unresolved,FALSE
 Vicugna pacos,gait,Gait,category,LSLC,,1,1,1,TRUE,Wimberly,primary,,,Vicugna pacos,Vicugna pacos,unresolved,FALSE
 Vicugna pacos,gait,Phase,percent,12.92514634,12.92514634,1,1,1,TRUE,Wimberly,primary,12.92514634,12.92514634,Vicugna pacos,Vicugna pacos,unresolved,FALSE

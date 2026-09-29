@@ -1,17 +1,17 @@
 table,structure,subregion,species_printed,species,is_average,measure,value,sd,units,n_areas,reference
-S17,Amygdala,Amygdala,mouse,Mus musculus,FALSE,CMRgl,0.58,0.1,umol/g/min,NA,Bouilleret et al 2000
-S17,Amygdala,Amygdala,rat,Rattus norvegicus,FALSE,CMRgl,0.67,0.07,umol/g/min,NA,Dube et al 2001
-S17,Amygdala,Amygdala,rat,Rattus norvegicus,FALSE,CMRgl,0.52,0.02,umol/g/min,NA,Nehling et al 1988
-S17,Amygdala,Amygdala,rat,Rattus norvegicus,FALSE,CMRgl,0.44,0.03,umol/g/min,NA,Levant et al 2004
-S17,Amygdala,Amygdala,rat,Rattus norvegicus,FALSE,CMRgl,0.57,0.06,umol/g/min,NA,Nehling et al 2000
-S17,Amygdala,Amygdala,rat,Rattus norvegicus,FALSE,CMRgl,0.4,0.07,umol/g/min,NA,Waschke et al 1993
-S17,Amygdala,Amygdala,average rat,Rattus norvegicus,TRUE,CMRgl,0.52,0.05,umol/g/min,NA,
-S17,Amygdala,Amygdala,rabbit,Oryctolagus cuniculus,FALSE,CMRgl,0.39,0.01,umol/g/min,NA,Passero et al 1981
-S17,Amygdala,Amygdala,cat,Felis catus,FALSE,CMRgl,0.54,0.06,umol/g/min,NA,Chugani et al 1991
-S17,Amygdala,Amygdala,cat,Felis catus,FALSE,CMRgl,0.34,0.04,umol/g/min,NA,Sokoloff 1984
-S17,Amygdala,Amygdala,average cat,Felis catus,TRUE,CMRgl,0.44,0.05,umol/g/min,NA,
-S17,Amygdala,Amygdala,monkey,Macaca mulatta,FALSE,CMRgl,0.33,0.01,umol/g/min,NA,Porrino et al 2002
-S17,Amygdala,Amygdala,monkey,Macaca mulatta,FALSE,CMRgl,0.38,0.02,umol/g/min,NA,Palombo et al 1990
-S17,Amygdala,Amygdala,monkey,Macaca mulatta,FALSE,CMRgl,0.25,0.02,umol/g/min,NA,Kennedy et al 1978
-S17,Amygdala,Amygdala,average monkey,Macaca mulatta,TRUE,CMRgl,0.32,0.02,umol/g/min,NA,
-S17,Amygdala,Amygdala,human,Homo sapiens,FALSE,CMRgl,0.21,0.03,umol/g/min,NA,Blin et al 1991
+S17,Amygdala,Amygdala,mouse,NA,FALSE,CMRgl,0.58,0.1,umol/g/min,NA,Bouilleret et al 2000
+S17,Amygdala,Amygdala,rat,NA,FALSE,CMRgl,0.67,0.07,umol/g/min,NA,Dube et al 2001
+S17,Amygdala,Amygdala,rat,NA,FALSE,CMRgl,0.52,0.02,umol/g/min,NA,Nehling et al 1988
+S17,Amygdala,Amygdala,rat,NA,FALSE,CMRgl,0.44,0.03,umol/g/min,NA,Levant et al 2004
+S17,Amygdala,Amygdala,rat,NA,FALSE,CMRgl,0.57,0.06,umol/g/min,NA,Nehling et al 2000
+S17,Amygdala,Amygdala,rat,NA,FALSE,CMRgl,0.4,0.07,umol/g/min,NA,Waschke et al 1993
+S17,Amygdala,Amygdala,average rat,NA,TRUE,CMRgl,0.52,0.05,umol/g/min,NA,
+S17,Amygdala,Amygdala,rabbit,NA,FALSE,CMRgl,0.39,0.01,umol/g/min,NA,Passero et al 1981
+S17,Amygdala,Amygdala,cat,NA,FALSE,CMRgl,0.54,0.06,umol/g/min,NA,Chugani et al 1991
+S17,Amygdala,Amygdala,cat,NA,FALSE,CMRgl,0.34,0.04,umol/g/min,NA,Sokoloff 1984
+S17,Amygdala,Amygdala,average cat,NA,TRUE,CMRgl,0.44,0.05,umol/g/min,NA,
+S17,Amygdala,Amygdala,monkey,NA,FALSE,CMRgl,0.33,0.01,umol/g/min,NA,Porrino et al 2002
+S17,Amygdala,Amygdala,monkey,NA,FALSE,CMRgl,0.38,0.02,umol/g/min,NA,Palombo et al 1990
+S17,Amygdala,Amygdala,monkey,NA,FALSE,CMRgl,0.25,0.02,umol/g/min,NA,Kennedy et al 1978
+S17,Amygdala,Amygdala,average monkey,NA,TRUE,CMRgl,0.32,0.02,umol/g/min,NA,
+S17,Amygdala,Amygdala,human,NA,FALSE,CMRgl,0.21,0.03,umol/g/min,NA,Blin et al 1991

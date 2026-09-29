@@ -1,19 +1,19 @@
 table,structure,subregion,species_printed,species,is_average,measure,value,sd,units,n_areas,reference
-S23,White matter,Corpus callosum,mouse,Mus musculus,FALSE,CMRgl,0.47,0.1,umol/g/min,NA,"Quelven et al 2004, estim."
-S23,White matter,Corpus callosum,rat,Rattus norvegicus,FALSE,CMRgl,0.29,0.03,umol/g/min,NA,Waschke et al 1993
-S23,White matter,Corpus callosum,rat,Rattus norvegicus,FALSE,CMRgl,0.22,0.02,umol/g/min,NA,Nehlig et al 2000
-S23,White matter,Corpus callosum,average rat,Rattus norvegicus,TRUE,CMRgl,0.26,0.03,umol/g/min,NA,
-S23,White matter,Corpus callosum,cat,Felis catus,FALSE,CMRgl,0.15,0.02,umol/g/min,NA,Sokoloff 1984
-S23,White matter,Corpus callosum,cat,Felis catus,FALSE,CMRgl,0.22,0.02,umol/g/min,NA,Chugani et al 1991
-S23,White matter,Corpus callosum,average cat,Felis catus,TRUE,CMRgl,0.19,0.02,umol/g/min,NA,
-S23,White matter,Corpus callosum,monkey,Macaca mulatta,FALSE,CMRgl,0.11,0,umol/g/min,NA,Kennedy et al 1978
-S23,White matter,Corpus callosum,monkey,Macaca mulatta,FALSE,CMRgl,0.11,0.01,umol/g/min,NA,Palombo et al 1990
-S23,White matter,Corpus callosum,average monkey,Macaca mulatta,TRUE,CMRgl,0.11,0.01,umol/g/min,NA,
-S23,White matter,Internal capsule,rat,Rattus norvegicus,FALSE,CMRgl,0.25,0.04,umol/g/min,NA,Waschke et al 1993
-S23,White matter,Internal capsule,rat,Rattus norvegicus,FALSE,CMRgl,0.32,0.03,umol/g/min,NA,Nehlig et al 1988
-S23,White matter,Internal capsule,average rat,Rattus norvegicus,TRUE,CMRgl,0.29,0.04,umol/g/min,NA,
-S23,White matter,Internal capsule,rabbit,Oryctolagus cuniculus,FALSE,CMRgl,0.26,0.03,umol/g/min,NA,Passero et al 1981
-S23,White matter,Internal capsule,cat,Felis catus,FALSE,CMRgl,0.17,0.02,umol/g/min,NA,Sokoloff et al 1984
-S23,White matter,Internal capsule,monkey,Macaca mulatta,FALSE,CMRgl,0.13,0.01,umol/g/min,NA,Kennedy et al 1978
-S23,White matter,Internal capsule,monkey,Macaca mulatta,FALSE,CMRgl,0.11,0.02,umol/g/min,NA,Palombo et al 1990
-S23,White matter,Internal capsule,average monkey,Macaca mulatta,TRUE,CMRgl,0.12,0.02,umol/g/min,NA,
+S23,White matter,Corpus callosum,mouse,NA,FALSE,CMRgl,0.47,0.1,umol/g/min,NA,"Quelven et al 2004, estim."
+S23,White matter,Corpus callosum,rat,NA,FALSE,CMRgl,0.29,0.03,umol/g/min,NA,Waschke et al 1993
+S23,White matter,Corpus callosum,rat,NA,FALSE,CMRgl,0.22,0.02,umol/g/min,NA,Nehlig et al 2000
+S23,White matter,Corpus callosum,average rat,NA,TRUE,CMRgl,0.26,0.03,umol/g/min,NA,
+S23,White matter,Corpus callosum,cat,NA,FALSE,CMRgl,0.15,0.02,umol/g/min,NA,Sokoloff 1984
+S23,White matter,Corpus callosum,cat,NA,FALSE,CMRgl,0.22,0.02,umol/g/min,NA,Chugani et al 1991
+S23,White matter,Corpus callosum,average cat,NA,TRUE,CMRgl,0.19,0.02,umol/g/min,NA,
+S23,White matter,Corpus callosum,monkey,NA,FALSE,CMRgl,0.11,0,umol/g/min,NA,Kennedy et al 1978
+S23,White matter,Corpus callosum,monkey,NA,FALSE,CMRgl,0.11,0.01,umol/g/min,NA,Palombo et al 1990
+S23,White matter,Corpus callosum,average monkey,NA,TRUE,CMRgl,0.11,0.01,umol/g/min,NA,
+S23,White matter,Internal capsule,rat,NA,FALSE,CMRgl,0.25,0.04,umol/g/min,NA,Waschke et al 1993
+S23,White matter,Internal capsule,rat,NA,FALSE,CMRgl,0.32,0.03,umol/g/min,NA,Nehlig et al 1988
+S23,White matter,Internal capsule,average rat,NA,TRUE,CMRgl,0.29,0.04,umol/g/min,NA,
+S23,White matter,Internal capsule,rabbit,NA,FALSE,CMRgl,0.26,0.03,umol/g/min,NA,Passero et al 1981
+S23,White matter,Internal capsule,cat,NA,FALSE,CMRgl,0.17,0.02,umol/g/min,NA,Sokoloff et al 1984
+S23,White matter,Internal capsule,monkey,NA,FALSE,CMRgl,0.13,0.01,umol/g/min,NA,Kennedy et al 1978
+S23,White matter,Internal capsule,monkey,NA,FALSE,CMRgl,0.11,0.02,umol/g/min,NA,Palombo et al 1990
+S23,White matter,Internal capsule,average monkey,NA,TRUE,CMRgl,0.12,0.02,umol/g/min,NA,

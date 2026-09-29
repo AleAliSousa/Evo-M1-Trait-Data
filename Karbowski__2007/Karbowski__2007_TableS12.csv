@@ -1,24 +1,24 @@
 table,structure,subregion,species_printed,species,is_average,measure,value,sd,units,n_areas,reference
-S12,Cerebral cortex,Cerebral cortex,mouse,Mus musculus,FALSE,CMRgl,1.07,0.1,umol/g/min,5,Bouilleret et al 2000
-S12,Cerebral cortex,Cerebral cortex,rat,Rattus norvegicus,FALSE,CMRgl,0.97,0.04,umol/g/min,8,Nehling et al 1988
-S12,Cerebral cortex,Cerebral cortex,rat,Rattus norvegicus,FALSE,CMRgl,0.83,0.13,umol/g/min,10,Dube et al 2001
-S12,Cerebral cortex,Cerebral cortex,rat,Rattus norvegicus,FALSE,CMRgl,0.88,0.06,umol/g/min,9,Levant et al 2004
-S12,Cerebral cortex,Cerebral cortex,rat,Rattus norvegicus,FALSE,CMRgl,0.95,0.13,umol/g/min,7,Zocchi et al 2001
-S12,Cerebral cortex,Cerebral cortex,rat,Rattus norvegicus,FALSE,CMRgl,0.88,0.1,umol/g/min,5,Waschke et al 1993
-S12,Cerebral cortex,Cerebral cortex,average rat,Rattus norvegicus,TRUE,CMRgl,0.9,0.09,umol/g/min,NA,
-S12,Cerebral cortex,Cerebral cortex,rabbit,Oryctolagus cuniculus,FALSE,CMRgl,0.83,0.08,umol/g/min,5,Passero et al 1981
-S12,Cerebral cortex,Cerebral cortex,cat,Felis catus,FALSE,CMRgl,0.78,0.12,umol/g/min,5,Chugani et al 1991
-S12,Cerebral cortex,Cerebral cortex,cat,Felis catus,FALSE,CMRgl,0.87,0.06,umol/g/min,4,Sokoloff 1984
-S12,Cerebral cortex,Cerebral cortex,cat,Felis catus,FALSE,CMRgl,0.79,0.04,umol/g/min,5,Schwartzman et al 1986
-S12,Cerebral cortex,Cerebral cortex,average cat,Felis catus,TRUE,CMRgl,0.81,0.11,umol/g/min,NA,
-S12,Cerebral cortex,Cerebral cortex,monkey,Macaca mulatta,FALSE,CMRgl,0.43,0.03,umol/g/min,11,Porrino et al 2002
-S12,Cerebral cortex,Cerebral cortex,monkey,Macaca mulatta,FALSE,CMRgl,0.51,0.03,umol/g/min,10,Palombo et al 1990
-S12,Cerebral cortex,Cerebral cortex,monkey,Macaca mulatta,FALSE,CMRgl,0.37,0.08,umol/g/min,3,Noda et al 2002
-S12,Cerebral cortex,Cerebral cortex,monkey,Macaca mulatta,FALSE,CMRgl,0.57,0.03,umol/g/min,4,Kennedy et al 1978
-S12,Cerebral cortex,Cerebral cortex,average monkey,Macaca mulatta,TRUE,CMRgl,0.47,0.04,umol/g/min,NA,
-S12,Cerebral cortex,Cerebral cortex,baboon,Papio anubis,FALSE,CMRgl,0.46,0.1,umol/g/min,6,Meguro et al 1999
-S12,Cerebral cortex,Cerebral cortex,human,Homo sapiens,FALSE,CMRgl,0.37,0.07,umol/g/min,4,De Volder et al 1997
-S12,Cerebral cortex,Cerebral cortex,human,Homo sapiens,FALSE,CMRgl,0.26,0.02,umol/g/min,4,Blomqvist et al 1998
-S12,Cerebral cortex,Cerebral cortex,human,Homo sapiens,FALSE,CMRgl,0.39,0.03,umol/g/min,9,Heiss et al 1985
-S12,Cerebral cortex,Cerebral cortex,human,Homo sapiens,FALSE,CMRgl,0.33,0.04,umol/g/min,6,Blin et al 1991
-S12,Cerebral cortex,Cerebral cortex,average human,Homo sapiens,TRUE,CMRgl,0.34,0.04,umol/g/min,NA,
+S12,Cerebral cortex,Cerebral cortex,mouse,NA,FALSE,CMRgl,1.07,0.1,umol/g/min,5,Bouilleret et al 2000
+S12,Cerebral cortex,Cerebral cortex,rat,NA,FALSE,CMRgl,0.97,0.04,umol/g/min,8,Nehling et al 1988
+S12,Cerebral cortex,Cerebral cortex,rat,NA,FALSE,CMRgl,0.83,0.13,umol/g/min,10,Dube et al 2001
+S12,Cerebral cortex,Cerebral cortex,rat,NA,FALSE,CMRgl,0.88,0.06,umol/g/min,9,Levant et al 2004
+S12,Cerebral cortex,Cerebral cortex,rat,NA,FALSE,CMRgl,0.95,0.13,umol/g/min,7,Zocchi et al 2001
+S12,Cerebral cortex,Cerebral cortex,rat,NA,FALSE,CMRgl,0.88,0.1,umol/g/min,5,Waschke et al 1993
+S12,Cerebral cortex,Cerebral cortex,average rat,NA,TRUE,CMRgl,0.9,0.09,umol/g/min,NA,
+S12,Cerebral cortex,Cerebral cortex,rabbit,NA,FALSE,CMRgl,0.83,0.08,umol/g/min,5,Passero et al 1981
+S12,Cerebral cortex,Cerebral cortex,cat,NA,FALSE,CMRgl,0.78,0.12,umol/g/min,5,Chugani et al 1991
+S12,Cerebral cortex,Cerebral cortex,cat,NA,FALSE,CMRgl,0.87,0.06,umol/g/min,4,Sokoloff 1984
+S12,Cerebral cortex,Cerebral cortex,cat,NA,FALSE,CMRgl,0.79,0.04,umol/g/min,5,Schwartzman et al 1986
+S12,Cerebral cortex,Cerebral cortex,average cat,NA,TRUE,CMRgl,0.81,0.11,umol/g/min,NA,
+S12,Cerebral cortex,Cerebral cortex,monkey,NA,FALSE,CMRgl,0.43,0.03,umol/g/min,11,Porrino et al 2002
+S12,Cerebral cortex,Cerebral cortex,monkey,NA,FALSE,CMRgl,0.51,0.03,umol/g/min,10,Palombo et al 1990
+S12,Cerebral cortex,Cerebral cortex,monkey,NA,FALSE,CMRgl,0.37,0.08,umol/g/min,3,Noda et al 2002
+S12,Cerebral cortex,Cerebral cortex,monkey,NA,FALSE,CMRgl,0.57,0.03,umol/g/min,4,Kennedy et al 1978
+S12,Cerebral cortex,Cerebral cortex,average monkey,NA,TRUE,CMRgl,0.47,0.04,umol/g/min,NA,
+S12,Cerebral cortex,Cerebral cortex,baboon,NA,FALSE,CMRgl,0.46,0.1,umol/g/min,6,Meguro et al 1999
+S12,Cerebral cortex,Cerebral cortex,human,NA,FALSE,CMRgl,0.37,0.07,umol/g/min,4,De Volder et al 1997
+S12,Cerebral cortex,Cerebral cortex,human,NA,FALSE,CMRgl,0.26,0.02,umol/g/min,4,Blomqvist et al 1998
+S12,Cerebral cortex,Cerebral cortex,human,NA,FALSE,CMRgl,0.39,0.03,umol/g/min,9,Heiss et al 1985
+S12,Cerebral cortex,Cerebral cortex,human,NA,FALSE,CMRgl,0.33,0.04,umol/g/min,6,Blin et al 1991
+S12,Cerebral cortex,Cerebral cortex,average human,NA,TRUE,CMRgl,0.34,0.04,umol/g/min,NA,

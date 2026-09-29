@@ -85,18 +85,18 @@ source_row	specimen_number	species	common_name	material	stain	plane	section_thic
 84	79	Rana catesbiana	Bullfrog	Brain	Pyr. silver	Horizontal	15 to 20	12		AMPHIBIANS	
 85	665	Rana catesbiana	Bullfrog	Whole head	Congo red & ?	Transverse	100	328	681	AMPHIBIANS	
 86	80	Chelhydra serpentina	Snapping Turtle	Brain	Tol. blue	Transverse	40	18		REPTILES	
-87	81	Chelydra serpentina	Snapping Turtle	Brain	Tol. blue	Transverse	20	6		REPTILES	(6 day)
+87	81	Chelhydra serpentina (6 day)	Snapping Turtle	Brain	Tol. blue	Transverse	20	6		REPTILES	
 88	82	Chelhydra serpentina	Snapping Turtle	Spinal cord	Tol. blue	Horizontal	40	41		REPTILES	
 89	83	Chelhydra serpentina	Snapping Turtle	Brain & cord	Pyr. silver	Transverse	12 to 15	27		REPTILES	
-90	84	Chelydra serpentina	Snapping Turtle	Brain	Pyr. silver	Transverse(?)	12 to 15	4		REPTILES	(6 day)
-91	85	Chelydra serpentina	Snapping Turtle	Brain	Pyr. silver	Transverse	12	3		REPTILES	(1 day)
-92	86	Chelydra serpentina	Snapping Turtle	Brain	Pyr. silver	Transverse	10	4		REPTILES	(3 day)
-93	87	Chelydra serpentina	Snapping Turtle	Brain	Pyr. silver	Sagittal	8 to 10	4		REPTILES	(3 day)
-94	88	Chelydra serpentina	Snapping Turtle	Brain	Pyr. silver	Horizontal	10	3		REPTILES	(6 day)
-95	89	Chelydra serpentina	Snapping Turtle	Brain	Pyr. silver	Horizontal	10	3		REPTILES	(3 day)
+90	84	Chelhydra serpentina (6 day)	Snapping Turtle	Brain	Pyr. silver	Transverse(?)	12 to 15	4		REPTILES	
+91	85	Chelhydra serpentina (1 day)	Snapping Turtle	Brain	Pyr. silver	Transverse	12	3		REPTILES	
+92	86	Chelhydra serpentina (3 day)	Snapping Turtle	Brain	Pyr. silver	Transverse	10	4		REPTILES	
+93	87	Chelhydra serpentina (3 day)	Snapping Turtle	Brain	Pyr. silver	Sagittal	8 to 10	4		REPTILES	
+94	88	Chelhydra serpentina (6 day)	Snapping Turtle	Brain	Pyr. silver	Horizontal	10	3		REPTILES	
+95	89	Chelhydra serpentina (3 day)	Snapping Turtle	Brain	Pyr. silver	Horizontal	10	3		REPTILES	
 96	90	Chelhydra serpentina	Snapping Turtle	Brain	Pyr. silver	Horizontal	20	35		REPTILES	
 97	91	Sternotherus odoratus	Stinkpot	Brain	Pyr. silver	Transverse	25	6		REPTILES	
-98	92	Sternotherus odoratus	Stinkpot	Brain	Pyr. silver	Transverse	15	18		REPTILES	(9 cm.)
+98	92	Sternotherus odoratus-9 cm.	Stinkpot	Brain	Pyr. silver	Transverse	15	18		REPTILES	
 99	93	Sternotherus odoratus	Stinkpot	Brain	Pyr. silver	Sagittal	20	9		REPTILES	
 100	94	Sternotherus odoratus	Stinkpot	Brain	Pyr. silver	Sagittal	20	23		REPTILES	
 101	95	Emys melageris	turtle	Brain	Tol. blue	Transverse	40	13		REPTILES	
@@ -195,7 +195,7 @@ source_row	specimen_number	species	common_name	material	stain	plane	section_thic
 194	188	Alligator mississippiensis	American Alligator	Brain & cord	Pyr. silver	Transverse	15 to 20	35	1598	REPTILES	
 195	189	Alligator mississippiensis	American Alligator	Brain	Pyr. silver	Transverse	25	21	574	REPTILES	
 196	190	Alligator mississippiensis	American Alligator	Brain	Pyr. silver	Transverse	15 to 30	19	476	REPTILES	
-197	191	Alligator mississippiensis	American Alligator	Brain	Silver	Transverse		32	1627	REPTILES	(25cm)
+197	191	A. mississippiensis-25cm	American Alligator	Brain	Silver	Transverse		32	1627	REPTILES	
 198	192	Alligator mississippiensis	American Alligator	Brain	Pyr. silver	Horizontal	15 to 20	20	235	REPTILES	
 199	193	Alligator mississippiensis	American Alligator	Brain	Silver	Horizontal	18	48	307	REPTILES	
 200	194	Alligator mississippiensis	American Alligator	Brain	Pyr. silver	Sagittal	15 to25	25	366	REPTILES	
@@ -294,7 +294,7 @@ source_row	specimen_number	species	common_name	material	stain	plane	section_thic
 293	284	Columba livia	Dove Ida	Spinal cord	Tol. blue	Longitudinal	50	15	150	BIRDS	
 294	285	Columba livia	Dove Ida	Brain	Cox Chr - Silver	Transverse		83	900	BIRDS	
 295	286	Columba livia	Dove Ida	Brain	Cox Chr - Silver	Transverse		64	1136	BIRDS	
-296	287	Columba livia	Dove Ida	Brain	Cox Chr - Silver	Sagittal		13	362	BIRDS	(1 day)
+296	287	Columba livia 1 day	Dove Ida	Brain	Cox Chr - Silver	Sagittal		13	362	BIRDS	
 297	288	Columba livia	Dove Ida	Brain	Cox Chr - Silver	Sagittal	15	76	934	BIRDS	
 298	289	Columba livia	Dove Ida	Spinal cord	Pyr. silver	Transverse	15	20	3780	BIRDS	
 299	290	Forpus passerinus	Parrokeet,Parrotlet	Brain	Tol. blue	Transverse	40	21	340	BIRDS	

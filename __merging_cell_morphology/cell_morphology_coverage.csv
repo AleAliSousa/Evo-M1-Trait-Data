@@ -45,22 +45,23 @@ Panthera pardus,species,V1,not reported,extraverted,dendritic_segment_count,coun
 Panthera leo,species,frontal,not reported,extraverted,dendritic_segment_count,count,1,Nguyen_etal_2019_Table2,1
 Panthera pardus,species,frontal,not reported,extraverted,dendritic_segment_count,count,1,Nguyen_etal_2019_Table2,1
 Acinonyx jubatus,species,M1,V,gigantopyramidal,dendritic_segment_count,count,1,Nguyen_etal_2019_Table2,1
-Canis lupus familiaris,species,M1,V,gigantopyramidal,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
-Caracal caracal,species,M1,V,gigantopyramidal,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
-Connochaetes taurinus,species,M1,V,gigantopyramidal,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
-Equus burchelli,species,M1,V,gigantopyramidal,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
-Equus zebra,species,M1,V,gigantopyramidal,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
-Giraffa camelopardalis,species,M1,V,gigantopyramidal,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
-Homo sapiens,species,M1,V,gigantopyramidal,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
-Lemur catta,species,M1,V,gigantopyramidal,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
-Leontopithecus rosalia,species,M1,V,gigantopyramidal,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
-Lycaon pictus,species,M1,V,gigantopyramidal,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
-Neofelis nebulosa,species,M1,V,gigantopyramidal,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
-Panthera leo,species,M1,V,gigantopyramidal,dendritic_segment_count,count,2,Jacobs_etal_2018_Table5 | Nguyen_etal_2019_Table2,2
+African lion,species,M1,V,gigantopyramidal,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+African wild dog,species,M1,V,gigantopyramidal,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+Blue wildebeest,species,M1,V,gigantopyramidal,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+Caracal,species,M1,V,gigantopyramidal,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+Chacma baboon,species,M1,V,gigantopyramidal,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+Clouded leopard,species,M1,V,gigantopyramidal,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+Domestic dog,species,M1,V,gigantopyramidal,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+Giraffe,species,M1,V,gigantopyramidal,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+Golden lion tamarin,species,M1,V,gigantopyramidal,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+Human,species,M1,V,gigantopyramidal,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+Kudu,species,M1,V,gigantopyramidal,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+Mountain zebra,species,M1,V,gigantopyramidal,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+Panthera leo,species,M1,V,gigantopyramidal,dendritic_segment_count,count,1,Nguyen_etal_2019_Table2,1
 Panthera pardus,species,M1,V,gigantopyramidal,dendritic_segment_count,count,1,Nguyen_etal_2019_Table2,1
-Panthera tigris altaica,species,M1,V,gigantopyramidal,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
-Papio ursinus,species,M1,V,gigantopyramidal,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
-Tragelaphus strepsiceros,species,M1,V,gigantopyramidal,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+Plains zebra,species,M1,V,gigantopyramidal,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+Ring-tailed lemur,species,M1,V,gigantopyramidal,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+Siberian tiger,species,M1,V,gigantopyramidal,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
 Acinonyx jubatus,species,M1,not reported,horizontal,dendritic_segment_count,count,1,Nguyen_etal_2019_Table2,1
 Panthera pardus,species,M1,not reported,horizontal,dendritic_segment_count,count,1,Nguyen_etal_2019_Table2,1
 Panthera pardus,species,V1,not reported,horizontal,dendritic_segment_count,count,1,Nguyen_etal_2019_Table2,1
@@ -82,51 +83,52 @@ Panthera pardus,species,frontal,not reported,multiapical,dendritic_segment_count
 Panthera pardus,species,V1,not reported,neurogliaform,dendritic_segment_count,count,1,Nguyen_etal_2019_Table2,1
 Acinonyx jubatus,species,frontal,not reported,neurogliaform,dendritic_segment_count,count,1,Nguyen_etal_2019_Table2,1
 Panthera pardus,species,frontal,not reported,neurogliaform,dendritic_segment_count,count,1,Nguyen_etal_2019_Table2,1
-Canis lupus familiaris,species,M1,III,pyramidal_L3,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
-Caracal caracal,species,M1,III,pyramidal_L3,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
-Connochaetes taurinus,species,M1,III,pyramidal_L3,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
-Equus burchelli,species,M1,III,pyramidal_L3,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
-Equus zebra,species,M1,III,pyramidal_L3,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
-Giraffa camelopardalis,species,M1,III,pyramidal_L3,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
-Homo sapiens,species,M1,III,pyramidal_L3,dendritic_segment_count,count,2,Bianchi_etal_2012_Table2 | Jacobs_etal_2018_Table5,2
-Lemur catta,species,M1,III,pyramidal_L3,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
-Leontopithecus rosalia,species,M1,III,pyramidal_L3,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
-Lycaon pictus,species,M1,III,pyramidal_L3,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
-Mungos mungo,species,M1,III,pyramidal_L3,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
-Neofelis nebulosa,species,M1,III,pyramidal_L3,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
-Notamacropus rufogriseus,species,M1,III,pyramidal_L3,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
-Oryctolagus cuniculus,species,M1,III,pyramidal_L3,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+African lion,species,M1,III,pyramidal_L3,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+African wild dog,species,M1,III,pyramidal_L3,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+Banded mongoose,species,M1,III,pyramidal_L3,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+Bennett’s wallaby,species,M1,III,pyramidal_L3,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+Blue wildebeest,species,M1,III,pyramidal_L3,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+Caracal,species,M1,III,pyramidal_L3,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+Chacma baboon,species,M1,III,pyramidal_L3,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+Clouded leopard,species,M1,III,pyramidal_L3,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+Domestic dog,species,M1,III,pyramidal_L3,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+Flemish giant rabbit,species,M1,III,pyramidal_L3,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+Giraffe,species,M1,III,pyramidal_L3,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+Golden lion tamarin,species,M1,III,pyramidal_L3,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+Homo sapiens,species,M1,III,pyramidal_L3,dendritic_segment_count,count,1,Bianchi_etal_2012_Table2,1
+Human,species,M1,III,pyramidal_L3,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+Kudu,species,M1,III,pyramidal_L3,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+Mountain zebra,species,M1,III,pyramidal_L3,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
 Pan troglodytes,species,M1,III,pyramidal_L3,dendritic_segment_count,count,1,Bianchi_etal_2012_Table2,1
-Panthera leo,species,M1,III,pyramidal_L3,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
-Panthera tigris altaica,species,M1,III,pyramidal_L3,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
-Papio ursinus,species,M1,III,pyramidal_L3,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
-Rattus norvegicus,species,M1,III,pyramidal_L3,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
-Tragelaphus strepsiceros,species,M1,III,pyramidal_L3,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+Plains zebra,species,M1,III,pyramidal_L3,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+Rat,species,M1,III,pyramidal_L3,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+Ring-tailed lemur,species,M1,III,pyramidal_L3,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+Siberian tiger,species,M1,III,pyramidal_L3,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
 Homo sapiens,species,PFC_area10,III,pyramidal_L3,dendritic_segment_count,count,1,Bianchi_etal_2012_Table2,1
 Pan troglodytes,species,PFC_area10,III,pyramidal_L3,dendritic_segment_count,count,1,Bianchi_etal_2012_Table2,1
 Homo sapiens,species,S1_3b,III,pyramidal_L3,dendritic_segment_count,count,1,Bianchi_etal_2012_Table2,1
 Pan troglodytes,species,S1_3b,III,pyramidal_L3,dendritic_segment_count,count,1,Bianchi_etal_2012_Table2,1
 Homo sapiens,species,V2,III,pyramidal_L3,dendritic_segment_count,count,1,Bianchi_etal_2012_Table2,1
 Pan troglodytes,species,V2,III,pyramidal_L3,dendritic_segment_count,count,1,Bianchi_etal_2012_Table2,1
-Canis lupus familiaris,species,M1,V,pyramidal_L5,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
-Caracal caracal,species,M1,V,pyramidal_L5,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
-Connochaetes taurinus,species,M1,V,pyramidal_L5,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
-Equus burchelli,species,M1,V,pyramidal_L5,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
-Equus zebra,species,M1,V,pyramidal_L5,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
-Giraffa camelopardalis,species,M1,V,pyramidal_L5,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
-Homo sapiens,species,M1,V,pyramidal_L5,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
-Lemur catta,species,M1,V,pyramidal_L5,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
-Leontopithecus rosalia,species,M1,V,pyramidal_L5,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
-Lycaon pictus,species,M1,V,pyramidal_L5,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
-Mungos mungo,species,M1,V,pyramidal_L5,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
-Neofelis nebulosa,species,M1,V,pyramidal_L5,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
-Notamacropus rufogriseus,species,M1,V,pyramidal_L5,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
-Oryctolagus cuniculus,species,M1,V,pyramidal_L5,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
-Panthera leo,species,M1,V,pyramidal_L5,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
-Panthera tigris altaica,species,M1,V,pyramidal_L5,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
-Papio ursinus,species,M1,V,pyramidal_L5,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
-Rattus norvegicus,species,M1,V,pyramidal_L5,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
-Tragelaphus strepsiceros,species,M1,V,pyramidal_L5,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+African lion,species,M1,V,pyramidal_L5,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+African wild dog,species,M1,V,pyramidal_L5,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+Banded mongoose,species,M1,V,pyramidal_L5,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+Bennett’s wallaby,species,M1,V,pyramidal_L5,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+Blue wildebeest,species,M1,V,pyramidal_L5,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+Caracal,species,M1,V,pyramidal_L5,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+Chacma baboon,species,M1,V,pyramidal_L5,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+Clouded leopard,species,M1,V,pyramidal_L5,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+Domestic dog,species,M1,V,pyramidal_L5,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+Flemish giant rabbit,species,M1,V,pyramidal_L5,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+Giraffe,species,M1,V,pyramidal_L5,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+Golden lion tamarin,species,M1,V,pyramidal_L5,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+Human,species,M1,V,pyramidal_L5,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+Kudu,species,M1,V,pyramidal_L5,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+Mountain zebra,species,M1,V,pyramidal_L5,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+Plains zebra,species,M1,V,pyramidal_L5,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+Rat,species,M1,V,pyramidal_L5,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+Ring-tailed lemur,species,M1,V,pyramidal_L5,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
+Siberian tiger,species,M1,V,pyramidal_L5,dendritic_segment_count,count,1,Jacobs_etal_2018_Table5,1
 Acinonyx jubatus,species,M1,not reported,pyramidal_unspecified,dendritic_segment_count,count,1,Nguyen_etal_2019_Table2,1
 Panthera leo,species,M1,not reported,pyramidal_unspecified,dendritic_segment_count,count,1,Nguyen_etal_2019_Table2,1
 Panthera pardus,species,M1,not reported,pyramidal_unspecified,dendritic_segment_count,count,1,Nguyen_etal_2019_Table2,1
@@ -157,22 +159,23 @@ Panthera pardus,species,V1,not reported,extraverted,dendritic_volume,um3,1,Nguye
 Panthera leo,species,frontal,not reported,extraverted,dendritic_volume,um3,1,Nguyen_etal_2019_Table2,1
 Panthera pardus,species,frontal,not reported,extraverted,dendritic_volume,um3,1,Nguyen_etal_2019_Table2,1
 Acinonyx jubatus,species,M1,V,gigantopyramidal,dendritic_volume,um3,1,Nguyen_etal_2019_Table2,1
-Canis lupus familiaris,species,M1,V,gigantopyramidal,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
-Caracal caracal,species,M1,V,gigantopyramidal,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
-Connochaetes taurinus,species,M1,V,gigantopyramidal,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
-Equus burchelli,species,M1,V,gigantopyramidal,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
-Equus zebra,species,M1,V,gigantopyramidal,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
-Giraffa camelopardalis,species,M1,V,gigantopyramidal,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
-Homo sapiens,species,M1,V,gigantopyramidal,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
-Lemur catta,species,M1,V,gigantopyramidal,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
-Leontopithecus rosalia,species,M1,V,gigantopyramidal,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
-Lycaon pictus,species,M1,V,gigantopyramidal,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
-Neofelis nebulosa,species,M1,V,gigantopyramidal,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
-Panthera leo,species,M1,V,gigantopyramidal,dendritic_volume,um3,2,Jacobs_etal_2018_Table5 | Nguyen_etal_2019_Table2,2
+African lion,species,M1,V,gigantopyramidal,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+African wild dog,species,M1,V,gigantopyramidal,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+Blue wildebeest,species,M1,V,gigantopyramidal,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+Caracal,species,M1,V,gigantopyramidal,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+Chacma baboon,species,M1,V,gigantopyramidal,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+Clouded leopard,species,M1,V,gigantopyramidal,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+Domestic dog,species,M1,V,gigantopyramidal,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+Giraffe,species,M1,V,gigantopyramidal,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+Golden lion tamarin,species,M1,V,gigantopyramidal,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+Human,species,M1,V,gigantopyramidal,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+Kudu,species,M1,V,gigantopyramidal,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+Mountain zebra,species,M1,V,gigantopyramidal,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+Panthera leo,species,M1,V,gigantopyramidal,dendritic_volume,um3,1,Nguyen_etal_2019_Table2,1
 Panthera pardus,species,M1,V,gigantopyramidal,dendritic_volume,um3,1,Nguyen_etal_2019_Table2,1
-Panthera tigris altaica,species,M1,V,gigantopyramidal,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
-Papio ursinus,species,M1,V,gigantopyramidal,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
-Tragelaphus strepsiceros,species,M1,V,gigantopyramidal,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+Plains zebra,species,M1,V,gigantopyramidal,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+Ring-tailed lemur,species,M1,V,gigantopyramidal,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+Siberian tiger,species,M1,V,gigantopyramidal,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
 Acinonyx jubatus,species,M1,not reported,horizontal,dendritic_volume,um3,1,Nguyen_etal_2019_Table2,1
 Panthera pardus,species,M1,not reported,horizontal,dendritic_volume,um3,1,Nguyen_etal_2019_Table2,1
 Panthera pardus,species,V1,not reported,horizontal,dendritic_volume,um3,1,Nguyen_etal_2019_Table2,1
@@ -194,44 +197,44 @@ Panthera pardus,species,frontal,not reported,multiapical,dendritic_volume,um3,1,
 Panthera pardus,species,V1,not reported,neurogliaform,dendritic_volume,um3,1,Nguyen_etal_2019_Table2,1
 Acinonyx jubatus,species,frontal,not reported,neurogliaform,dendritic_volume,um3,1,Nguyen_etal_2019_Table2,1
 Panthera pardus,species,frontal,not reported,neurogliaform,dendritic_volume,um3,1,Nguyen_etal_2019_Table2,1
-Canis lupus familiaris,species,M1,III,pyramidal_L3,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
-Caracal caracal,species,M1,III,pyramidal_L3,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
-Connochaetes taurinus,species,M1,III,pyramidal_L3,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
-Equus burchelli,species,M1,III,pyramidal_L3,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
-Equus zebra,species,M1,III,pyramidal_L3,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
-Giraffa camelopardalis,species,M1,III,pyramidal_L3,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
-Homo sapiens,species,M1,III,pyramidal_L3,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
-Lemur catta,species,M1,III,pyramidal_L3,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
-Leontopithecus rosalia,species,M1,III,pyramidal_L3,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
-Lycaon pictus,species,M1,III,pyramidal_L3,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
-Mungos mungo,species,M1,III,pyramidal_L3,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
-Neofelis nebulosa,species,M1,III,pyramidal_L3,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
-Notamacropus rufogriseus,species,M1,III,pyramidal_L3,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
-Oryctolagus cuniculus,species,M1,III,pyramidal_L3,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
-Panthera leo,species,M1,III,pyramidal_L3,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
-Panthera tigris altaica,species,M1,III,pyramidal_L3,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
-Papio ursinus,species,M1,III,pyramidal_L3,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
-Rattus norvegicus,species,M1,III,pyramidal_L3,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
-Tragelaphus strepsiceros,species,M1,III,pyramidal_L3,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
-Canis lupus familiaris,species,M1,V,pyramidal_L5,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
-Caracal caracal,species,M1,V,pyramidal_L5,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
-Connochaetes taurinus,species,M1,V,pyramidal_L5,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
-Equus burchelli,species,M1,V,pyramidal_L5,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
-Equus zebra,species,M1,V,pyramidal_L5,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
-Giraffa camelopardalis,species,M1,V,pyramidal_L5,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
-Homo sapiens,species,M1,V,pyramidal_L5,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
-Lemur catta,species,M1,V,pyramidal_L5,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
-Leontopithecus rosalia,species,M1,V,pyramidal_L5,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
-Lycaon pictus,species,M1,V,pyramidal_L5,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
-Mungos mungo,species,M1,V,pyramidal_L5,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
-Neofelis nebulosa,species,M1,V,pyramidal_L5,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
-Notamacropus rufogriseus,species,M1,V,pyramidal_L5,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
-Oryctolagus cuniculus,species,M1,V,pyramidal_L5,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
-Panthera leo,species,M1,V,pyramidal_L5,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
-Panthera tigris altaica,species,M1,V,pyramidal_L5,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
-Papio ursinus,species,M1,V,pyramidal_L5,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
-Rattus norvegicus,species,M1,V,pyramidal_L5,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
-Tragelaphus strepsiceros,species,M1,V,pyramidal_L5,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+African lion,species,M1,III,pyramidal_L3,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+African wild dog,species,M1,III,pyramidal_L3,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+Banded mongoose,species,M1,III,pyramidal_L3,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+Bennett’s wallaby,species,M1,III,pyramidal_L3,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+Blue wildebeest,species,M1,III,pyramidal_L3,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+Caracal,species,M1,III,pyramidal_L3,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+Chacma baboon,species,M1,III,pyramidal_L3,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+Clouded leopard,species,M1,III,pyramidal_L3,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+Domestic dog,species,M1,III,pyramidal_L3,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+Flemish giant rabbit,species,M1,III,pyramidal_L3,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+Giraffe,species,M1,III,pyramidal_L3,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+Golden lion tamarin,species,M1,III,pyramidal_L3,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+Human,species,M1,III,pyramidal_L3,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+Kudu,species,M1,III,pyramidal_L3,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+Mountain zebra,species,M1,III,pyramidal_L3,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+Plains zebra,species,M1,III,pyramidal_L3,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+Rat,species,M1,III,pyramidal_L3,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+Ring-tailed lemur,species,M1,III,pyramidal_L3,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+Siberian tiger,species,M1,III,pyramidal_L3,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+African lion,species,M1,V,pyramidal_L5,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+African wild dog,species,M1,V,pyramidal_L5,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+Banded mongoose,species,M1,V,pyramidal_L5,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+Bennett’s wallaby,species,M1,V,pyramidal_L5,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+Blue wildebeest,species,M1,V,pyramidal_L5,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+Caracal,species,M1,V,pyramidal_L5,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+Chacma baboon,species,M1,V,pyramidal_L5,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+Clouded leopard,species,M1,V,pyramidal_L5,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+Domestic dog,species,M1,V,pyramidal_L5,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+Flemish giant rabbit,species,M1,V,pyramidal_L5,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+Giraffe,species,M1,V,pyramidal_L5,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+Golden lion tamarin,species,M1,V,pyramidal_L5,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+Human,species,M1,V,pyramidal_L5,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+Kudu,species,M1,V,pyramidal_L5,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+Mountain zebra,species,M1,V,pyramidal_L5,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+Plains zebra,species,M1,V,pyramidal_L5,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+Rat,species,M1,V,pyramidal_L5,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+Ring-tailed lemur,species,M1,V,pyramidal_L5,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
+Siberian tiger,species,M1,V,pyramidal_L5,dendritic_volume,um3,1,Jacobs_etal_2018_Table5,1
 Acinonyx jubatus,species,M1,not reported,pyramidal_unspecified,dendritic_volume,um3,1,Nguyen_etal_2019_Table2,1
 Panthera leo,species,M1,not reported,pyramidal_unspecified,dendritic_volume,um3,1,Nguyen_etal_2019_Table2,1
 Panthera pardus,species,M1,not reported,pyramidal_unspecified,dendritic_volume,um3,1,Nguyen_etal_2019_Table2,1
@@ -619,22 +622,23 @@ Panthera pardus,species,V1,not reported,extraverted,mean_segment_length,um,1,Ngu
 Panthera leo,species,frontal,not reported,extraverted,mean_segment_length,um,1,Nguyen_etal_2019_Table2,1
 Panthera pardus,species,frontal,not reported,extraverted,mean_segment_length,um,1,Nguyen_etal_2019_Table2,1
 Acinonyx jubatus,species,M1,V,gigantopyramidal,mean_segment_length,um,1,Nguyen_etal_2019_Table2,1
-Canis lupus familiaris,species,M1,V,gigantopyramidal,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
-Caracal caracal,species,M1,V,gigantopyramidal,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
-Connochaetes taurinus,species,M1,V,gigantopyramidal,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
-Equus burchelli,species,M1,V,gigantopyramidal,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
-Equus zebra,species,M1,V,gigantopyramidal,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
-Giraffa camelopardalis,species,M1,V,gigantopyramidal,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
-Homo sapiens,species,M1,V,gigantopyramidal,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
-Lemur catta,species,M1,V,gigantopyramidal,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
-Leontopithecus rosalia,species,M1,V,gigantopyramidal,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
-Lycaon pictus,species,M1,V,gigantopyramidal,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
-Neofelis nebulosa,species,M1,V,gigantopyramidal,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
-Panthera leo,species,M1,V,gigantopyramidal,mean_segment_length,um,2,Jacobs_etal_2018_Table5 | Nguyen_etal_2019_Table2,2
+African lion,species,M1,V,gigantopyramidal,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+African wild dog,species,M1,V,gigantopyramidal,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+Blue wildebeest,species,M1,V,gigantopyramidal,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+Caracal,species,M1,V,gigantopyramidal,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+Chacma baboon,species,M1,V,gigantopyramidal,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+Clouded leopard,species,M1,V,gigantopyramidal,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+Domestic dog,species,M1,V,gigantopyramidal,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+Giraffe,species,M1,V,gigantopyramidal,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+Golden lion tamarin,species,M1,V,gigantopyramidal,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+Human,species,M1,V,gigantopyramidal,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+Kudu,species,M1,V,gigantopyramidal,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+Mountain zebra,species,M1,V,gigantopyramidal,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+Panthera leo,species,M1,V,gigantopyramidal,mean_segment_length,um,1,Nguyen_etal_2019_Table2,1
 Panthera pardus,species,M1,V,gigantopyramidal,mean_segment_length,um,1,Nguyen_etal_2019_Table2,1
-Panthera tigris altaica,species,M1,V,gigantopyramidal,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
-Papio ursinus,species,M1,V,gigantopyramidal,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
-Tragelaphus strepsiceros,species,M1,V,gigantopyramidal,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+Plains zebra,species,M1,V,gigantopyramidal,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+Ring-tailed lemur,species,M1,V,gigantopyramidal,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+Siberian tiger,species,M1,V,gigantopyramidal,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
 Acinonyx jubatus,species,M1,not reported,horizontal,mean_segment_length,um,1,Nguyen_etal_2019_Table2,1
 Panthera pardus,species,M1,not reported,horizontal,mean_segment_length,um,1,Nguyen_etal_2019_Table2,1
 Panthera pardus,species,V1,not reported,horizontal,mean_segment_length,um,1,Nguyen_etal_2019_Table2,1
@@ -656,51 +660,52 @@ Panthera pardus,species,frontal,not reported,multiapical,mean_segment_length,um,
 Panthera pardus,species,V1,not reported,neurogliaform,mean_segment_length,um,1,Nguyen_etal_2019_Table2,1
 Acinonyx jubatus,species,frontal,not reported,neurogliaform,mean_segment_length,um,1,Nguyen_etal_2019_Table2,1
 Panthera pardus,species,frontal,not reported,neurogliaform,mean_segment_length,um,1,Nguyen_etal_2019_Table2,1
-Canis lupus familiaris,species,M1,III,pyramidal_L3,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
-Caracal caracal,species,M1,III,pyramidal_L3,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
-Connochaetes taurinus,species,M1,III,pyramidal_L3,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
-Equus burchelli,species,M1,III,pyramidal_L3,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
-Equus zebra,species,M1,III,pyramidal_L3,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
-Giraffa camelopardalis,species,M1,III,pyramidal_L3,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
-Homo sapiens,species,M1,III,pyramidal_L3,mean_segment_length,um,2,Bianchi_etal_2012_Table2 | Jacobs_etal_2018_Table5,2
-Lemur catta,species,M1,III,pyramidal_L3,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
-Leontopithecus rosalia,species,M1,III,pyramidal_L3,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
-Lycaon pictus,species,M1,III,pyramidal_L3,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
-Mungos mungo,species,M1,III,pyramidal_L3,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
-Neofelis nebulosa,species,M1,III,pyramidal_L3,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
-Notamacropus rufogriseus,species,M1,III,pyramidal_L3,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
-Oryctolagus cuniculus,species,M1,III,pyramidal_L3,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+African lion,species,M1,III,pyramidal_L3,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+African wild dog,species,M1,III,pyramidal_L3,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+Banded mongoose,species,M1,III,pyramidal_L3,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+Bennett’s wallaby,species,M1,III,pyramidal_L3,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+Blue wildebeest,species,M1,III,pyramidal_L3,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+Caracal,species,M1,III,pyramidal_L3,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+Chacma baboon,species,M1,III,pyramidal_L3,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+Clouded leopard,species,M1,III,pyramidal_L3,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+Domestic dog,species,M1,III,pyramidal_L3,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+Flemish giant rabbit,species,M1,III,pyramidal_L3,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+Giraffe,species,M1,III,pyramidal_L3,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+Golden lion tamarin,species,M1,III,pyramidal_L3,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+Homo sapiens,species,M1,III,pyramidal_L3,mean_segment_length,um,1,Bianchi_etal_2012_Table2,1
+Human,species,M1,III,pyramidal_L3,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+Kudu,species,M1,III,pyramidal_L3,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+Mountain zebra,species,M1,III,pyramidal_L3,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
 Pan troglodytes,species,M1,III,pyramidal_L3,mean_segment_length,um,1,Bianchi_etal_2012_Table2,1
-Panthera leo,species,M1,III,pyramidal_L3,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
-Panthera tigris altaica,species,M1,III,pyramidal_L3,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
-Papio ursinus,species,M1,III,pyramidal_L3,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
-Rattus norvegicus,species,M1,III,pyramidal_L3,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
-Tragelaphus strepsiceros,species,M1,III,pyramidal_L3,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+Plains zebra,species,M1,III,pyramidal_L3,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+Rat,species,M1,III,pyramidal_L3,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+Ring-tailed lemur,species,M1,III,pyramidal_L3,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+Siberian tiger,species,M1,III,pyramidal_L3,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
 Homo sapiens,species,PFC_area10,III,pyramidal_L3,mean_segment_length,um,1,Bianchi_etal_2012_Table2,1
 Pan troglodytes,species,PFC_area10,III,pyramidal_L3,mean_segment_length,um,1,Bianchi_etal_2012_Table2,1
 Homo sapiens,species,S1_3b,III,pyramidal_L3,mean_segment_length,um,1,Bianchi_etal_2012_Table2,1
 Pan troglodytes,species,S1_3b,III,pyramidal_L3,mean_segment_length,um,1,Bianchi_etal_2012_Table2,1
 Homo sapiens,species,V2,III,pyramidal_L3,mean_segment_length,um,1,Bianchi_etal_2012_Table2,1
 Pan troglodytes,species,V2,III,pyramidal_L3,mean_segment_length,um,1,Bianchi_etal_2012_Table2,1
-Canis lupus familiaris,species,M1,V,pyramidal_L5,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
-Caracal caracal,species,M1,V,pyramidal_L5,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
-Connochaetes taurinus,species,M1,V,pyramidal_L5,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
-Equus burchelli,species,M1,V,pyramidal_L5,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
-Equus zebra,species,M1,V,pyramidal_L5,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
-Giraffa camelopardalis,species,M1,V,pyramidal_L5,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
-Homo sapiens,species,M1,V,pyramidal_L5,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
-Lemur catta,species,M1,V,pyramidal_L5,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
-Leontopithecus rosalia,species,M1,V,pyramidal_L5,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
-Lycaon pictus,species,M1,V,pyramidal_L5,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
-Mungos mungo,species,M1,V,pyramidal_L5,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
-Neofelis nebulosa,species,M1,V,pyramidal_L5,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
-Notamacropus rufogriseus,species,M1,V,pyramidal_L5,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
-Oryctolagus cuniculus,species,M1,V,pyramidal_L5,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
-Panthera leo,species,M1,V,pyramidal_L5,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
-Panthera tigris altaica,species,M1,V,pyramidal_L5,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
-Papio ursinus,species,M1,V,pyramidal_L5,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
-Rattus norvegicus,species,M1,V,pyramidal_L5,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
-Tragelaphus strepsiceros,species,M1,V,pyramidal_L5,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+African lion,species,M1,V,pyramidal_L5,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+African wild dog,species,M1,V,pyramidal_L5,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+Banded mongoose,species,M1,V,pyramidal_L5,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+Bennett’s wallaby,species,M1,V,pyramidal_L5,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+Blue wildebeest,species,M1,V,pyramidal_L5,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+Caracal,species,M1,V,pyramidal_L5,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+Chacma baboon,species,M1,V,pyramidal_L5,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+Clouded leopard,species,M1,V,pyramidal_L5,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+Domestic dog,species,M1,V,pyramidal_L5,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+Flemish giant rabbit,species,M1,V,pyramidal_L5,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+Giraffe,species,M1,V,pyramidal_L5,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+Golden lion tamarin,species,M1,V,pyramidal_L5,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+Human,species,M1,V,pyramidal_L5,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+Kudu,species,M1,V,pyramidal_L5,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+Mountain zebra,species,M1,V,pyramidal_L5,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+Plains zebra,species,M1,V,pyramidal_L5,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+Rat,species,M1,V,pyramidal_L5,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+Ring-tailed lemur,species,M1,V,pyramidal_L5,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
+Siberian tiger,species,M1,V,pyramidal_L5,mean_segment_length,um,1,Jacobs_etal_2018_Table5,1
 Acinonyx jubatus,species,M1,not reported,pyramidal_unspecified,mean_segment_length,um,1,Nguyen_etal_2019_Table2,1
 Panthera leo,species,M1,not reported,pyramidal_unspecified,mean_segment_length,um,1,Nguyen_etal_2019_Table2,1
 Panthera pardus,species,M1,not reported,pyramidal_unspecified,mean_segment_length,um,1,Nguyen_etal_2019_Table2,1
@@ -737,36 +742,42 @@ Panthera pardus,species,V1,not reported,extraverted,soma_area,um2,1,Nguyen_etal_
 Panthera leo,species,frontal,not reported,extraverted,soma_area,um2,1,Nguyen_etal_2019_Table2,1
 Panthera pardus,species,frontal,not reported,extraverted,soma_area,um2,1,Nguyen_etal_2019_Table2,1
 Acinonyx jubatus,species,M1,V,gigantopyramidal,soma_area,um2,1,Nguyen_etal_2019_Table2,1
+African lion,species,M1,V,gigantopyramidal,soma_area,um2,1,Jacobs_etal_2018_Table5,1
+African wild dog,species,M1,V,gigantopyramidal,soma_area,um2,1,Jacobs_etal_2018_Table5,1
 Amblonyx cinereus,species,M1,V,gigantopyramidal,soma_area,um2,1,Jacobs_etal_2018_Table3,1
-Callithrix pygmaea,species,M1,V,gigantopyramidal,soma_area,um2,1,Jacobs_etal_2018_Table3,1
+Blue wildebeest,species,M1,V,gigantopyramidal,soma_area,um2,1,Jacobs_etal_2018_Table5,1
 Callorhinus ursinus,species,M1,V,gigantopyramidal,soma_area,um2,1,Jacobs_etal_2018_Table3,1
-Canis lupus familiaris,species,M1,V,gigantopyramidal,soma_area,um2,1,Jacobs_etal_2018_Table5,1
-Caracal caracal,species,M1,V,gigantopyramidal,soma_area,um2,2,Jacobs_etal_2018_Table3 | Jacobs_etal_2018_Table5,2
+Caracal,species,M1,V,gigantopyramidal,soma_area,um2,1,Jacobs_etal_2018_Table5,1
+Caracal caracal,species,M1,V,gigantopyramidal,soma_area,um2,1,Jacobs_etal_2018_Table3,1
+Cebuella pygmaea,species,M1,V,gigantopyramidal,soma_area,um2,1,Jacobs_etal_2018_Table3,1
 Cercopithecus ascanius,species,M1,V,gigantopyramidal,soma_area,um2,1,Jacobs_etal_2018_Table3,1
+Chacma baboon,species,M1,V,gigantopyramidal,soma_area,um2,1,Jacobs_etal_2018_Table5,1
 Chlorocebus pygerythrus,species,M1,V,gigantopyramidal,soma_area,um2,1,Jacobs_etal_2018_Table3,1
-Connochaetes taurinus,species,M1,V,gigantopyramidal,soma_area,um2,1,Jacobs_etal_2018_Table5,1
-Equus burchelli,species,M1,V,gigantopyramidal,soma_area,um2,1,Jacobs_etal_2018_Table5,1
-Equus zebra,species,M1,V,gigantopyramidal,soma_area,um2,1,Jacobs_etal_2018_Table5,1
-Giraffa camelopardalis,species,M1,V,gigantopyramidal,soma_area,um2,1,Jacobs_etal_2018_Table5,1
-Homo sapiens,species,M1,V,gigantopyramidal,soma_area,um2,1,Jacobs_etal_2018_Table5,1
+Clouded leopard,species,M1,V,gigantopyramidal,soma_area,um2,1,Jacobs_etal_2018_Table5,1
+Domestic dog,species,M1,V,gigantopyramidal,soma_area,um2,1,Jacobs_etal_2018_Table5,1
+Giraffe,species,M1,V,gigantopyramidal,soma_area,um2,1,Jacobs_etal_2018_Table5,1
+Golden lion tamarin,species,M1,V,gigantopyramidal,soma_area,um2,1,Jacobs_etal_2018_Table5,1
+Human,species,M1,V,gigantopyramidal,soma_area,um2,1,Jacobs_etal_2018_Table5,1
 Hylobates lar,species,M1,V,gigantopyramidal,soma_area,um2,1,Jacobs_etal_2018_Table3,1
-Lemur catta,species,M1,V,gigantopyramidal,soma_area,um2,1,Jacobs_etal_2018_Table5,1
-Leontopithecus rosalia,species,M1,V,gigantopyramidal,soma_area,um2,2,Jacobs_etal_2018_Table3 | Jacobs_etal_2018_Table5,2
-Lycaon pictus,species,M1,V,gigantopyramidal,soma_area,um2,2,Jacobs_etal_2018_Table3 | Jacobs_etal_2018_Table5,2
+Kudu,species,M1,V,gigantopyramidal,soma_area,um2,1,Jacobs_etal_2018_Table5,1
+Leontopithecus rosalia,species,M1,V,gigantopyramidal,soma_area,um2,1,Jacobs_etal_2018_Table3,1
+Lycaon pictus,species,M1,V,gigantopyramidal,soma_area,um2,1,Jacobs_etal_2018_Table3,1
+Mountain zebra,species,M1,V,gigantopyramidal,soma_area,um2,1,Jacobs_etal_2018_Table5,1
 Mungos mungo,species,M1,V,gigantopyramidal,soma_area,um2,1,Jacobs_etal_2018_Table3,1
 Mustela putorius,species,M1,V,gigantopyramidal,soma_area,um2,1,Jacobs_etal_2018_Table3,1
-Neofelis nebulosa,species,M1,V,gigantopyramidal,soma_area,um2,1,Jacobs_etal_2018_Table5,1
 Pagophilus groenlandicus,species,M1,V,gigantopyramidal,soma_area,um2,1,Jacobs_etal_2018_Table3,1
-Panthera leo,species,M1,V,gigantopyramidal,soma_area,um2,3,Jacobs_etal_2018_Table3 | Jacobs_etal_2018_Table5 | Nguyen_etal_2019_Table2,3
+Panthera leo,species,M1,V,gigantopyramidal,soma_area,um2,2,Jacobs_etal_2018_Table3 | Nguyen_etal_2019_Table2,2
 Panthera pardus,species,M1,V,gigantopyramidal,soma_area,um2,1,Nguyen_etal_2019_Table2,1
 Panthera pardus orientalis,species,M1,V,gigantopyramidal,soma_area,um2,1,Jacobs_etal_2018_Table3,1
-Panthera tigris altaica,species,M1,V,gigantopyramidal,soma_area,um2,2,Jacobs_etal_2018_Table3 | Jacobs_etal_2018_Table5,2
+Panthera tigris altaica,species,M1,V,gigantopyramidal,soma_area,um2,1,Jacobs_etal_2018_Table3,1
 Papio hamadryas,species,M1,V,gigantopyramidal,soma_area,um2,1,Jacobs_etal_2018_Table3,1
-Papio ursinus,species,M1,V,gigantopyramidal,soma_area,um2,2,Jacobs_etal_2018_Table3 | Jacobs_etal_2018_Table5,2
+Papio ursinus,species,M1,V,gigantopyramidal,soma_area,um2,1,Jacobs_etal_2018_Table3,1
+Plains zebra,species,M1,V,gigantopyramidal,soma_area,um2,1,Jacobs_etal_2018_Table5,1
 Procyon lotor,species,M1,V,gigantopyramidal,soma_area,um2,1,Jacobs_etal_2018_Table3,1
+Ring-tailed lemur,species,M1,V,gigantopyramidal,soma_area,um2,1,Jacobs_etal_2018_Table5,1
 Saguinus oedipus,species,M1,V,gigantopyramidal,soma_area,um2,1,Jacobs_etal_2018_Table3,1
 Saimiri boliviensis,species,M1,V,gigantopyramidal,soma_area,um2,1,Jacobs_etal_2018_Table3,1
-Tragelaphus strepsiceros,species,M1,V,gigantopyramidal,soma_area,um2,1,Jacobs_etal_2018_Table5,1
+Siberian tiger,species,M1,V,gigantopyramidal,soma_area,um2,1,Jacobs_etal_2018_Table5,1
 Acinonyx jubatus,species,M1,not reported,horizontal,soma_area,um2,1,Nguyen_etal_2019_Table2,1
 Panthera pardus,species,M1,not reported,horizontal,soma_area,um2,1,Nguyen_etal_2019_Table2,1
 Panthera pardus,species,V1,not reported,horizontal,soma_area,um2,1,Nguyen_etal_2019_Table2,1
@@ -788,64 +799,72 @@ Panthera pardus,species,frontal,not reported,multiapical,soma_area,um2,1,Nguyen_
 Panthera pardus,species,V1,not reported,neurogliaform,soma_area,um2,1,Nguyen_etal_2019_Table2,1
 Acinonyx jubatus,species,frontal,not reported,neurogliaform,soma_area,um2,1,Nguyen_etal_2019_Table2,1
 Panthera pardus,species,frontal,not reported,neurogliaform,soma_area,um2,1,Nguyen_etal_2019_Table2,1
-Canis lupus familiaris,species,M1,III,pyramidal_L3,soma_area,um2,1,Jacobs_etal_2018_Table5,1
-Caracal caracal,species,M1,III,pyramidal_L3,soma_area,um2,1,Jacobs_etal_2018_Table5,1
-Connochaetes taurinus,species,M1,III,pyramidal_L3,soma_area,um2,1,Jacobs_etal_2018_Table5,1
-Equus burchelli,species,M1,III,pyramidal_L3,soma_area,um2,1,Jacobs_etal_2018_Table5,1
-Equus zebra,species,M1,III,pyramidal_L3,soma_area,um2,1,Jacobs_etal_2018_Table5,1
-Giraffa camelopardalis,species,M1,III,pyramidal_L3,soma_area,um2,1,Jacobs_etal_2018_Table5,1
-Homo sapiens,species,M1,III,pyramidal_L3,soma_area,um2,2,Bianchi_etal_2012_Table2 | Jacobs_etal_2018_Table5,2
-Lemur catta,species,M1,III,pyramidal_L3,soma_area,um2,1,Jacobs_etal_2018_Table5,1
-Leontopithecus rosalia,species,M1,III,pyramidal_L3,soma_area,um2,1,Jacobs_etal_2018_Table5,1
-Lycaon pictus,species,M1,III,pyramidal_L3,soma_area,um2,1,Jacobs_etal_2018_Table5,1
-Mungos mungo,species,M1,III,pyramidal_L3,soma_area,um2,1,Jacobs_etal_2018_Table5,1
-Neofelis nebulosa,species,M1,III,pyramidal_L3,soma_area,um2,1,Jacobs_etal_2018_Table5,1
-Notamacropus rufogriseus,species,M1,III,pyramidal_L3,soma_area,um2,1,Jacobs_etal_2018_Table5,1
-Oryctolagus cuniculus,species,M1,III,pyramidal_L3,soma_area,um2,1,Jacobs_etal_2018_Table5,1
+African lion,species,M1,III,pyramidal_L3,soma_area,um2,1,Jacobs_etal_2018_Table5,1
+African wild dog,species,M1,III,pyramidal_L3,soma_area,um2,1,Jacobs_etal_2018_Table5,1
+Banded mongoose,species,M1,III,pyramidal_L3,soma_area,um2,1,Jacobs_etal_2018_Table5,1
+Bennett’s wallaby,species,M1,III,pyramidal_L3,soma_area,um2,1,Jacobs_etal_2018_Table5,1
+Blue wildebeest,species,M1,III,pyramidal_L3,soma_area,um2,1,Jacobs_etal_2018_Table5,1
+Caracal,species,M1,III,pyramidal_L3,soma_area,um2,1,Jacobs_etal_2018_Table5,1
+Chacma baboon,species,M1,III,pyramidal_L3,soma_area,um2,1,Jacobs_etal_2018_Table5,1
+Clouded leopard,species,M1,III,pyramidal_L3,soma_area,um2,1,Jacobs_etal_2018_Table5,1
+Domestic dog,species,M1,III,pyramidal_L3,soma_area,um2,1,Jacobs_etal_2018_Table5,1
+Flemish giant rabbit,species,M1,III,pyramidal_L3,soma_area,um2,1,Jacobs_etal_2018_Table5,1
+Giraffe,species,M1,III,pyramidal_L3,soma_area,um2,1,Jacobs_etal_2018_Table5,1
+Golden lion tamarin,species,M1,III,pyramidal_L3,soma_area,um2,1,Jacobs_etal_2018_Table5,1
+Homo sapiens,species,M1,III,pyramidal_L3,soma_area,um2,1,Bianchi_etal_2012_Table2,1
+Human,species,M1,III,pyramidal_L3,soma_area,um2,1,Jacobs_etal_2018_Table5,1
+Kudu,species,M1,III,pyramidal_L3,soma_area,um2,1,Jacobs_etal_2018_Table5,1
+Mountain zebra,species,M1,III,pyramidal_L3,soma_area,um2,1,Jacobs_etal_2018_Table5,1
 Pan troglodytes,species,M1,III,pyramidal_L3,soma_area,um2,1,Bianchi_etal_2012_Table2,1
-Panthera leo,species,M1,III,pyramidal_L3,soma_area,um2,1,Jacobs_etal_2018_Table5,1
-Panthera tigris altaica,species,M1,III,pyramidal_L3,soma_area,um2,1,Jacobs_etal_2018_Table5,1
-Papio ursinus,species,M1,III,pyramidal_L3,soma_area,um2,1,Jacobs_etal_2018_Table5,1
-Rattus norvegicus,species,M1,III,pyramidal_L3,soma_area,um2,1,Jacobs_etal_2018_Table5,1
-Tragelaphus strepsiceros,species,M1,III,pyramidal_L3,soma_area,um2,1,Jacobs_etal_2018_Table5,1
+Plains zebra,species,M1,III,pyramidal_L3,soma_area,um2,1,Jacobs_etal_2018_Table5,1
+Rat,species,M1,III,pyramidal_L3,soma_area,um2,1,Jacobs_etal_2018_Table5,1
+Ring-tailed lemur,species,M1,III,pyramidal_L3,soma_area,um2,1,Jacobs_etal_2018_Table5,1
+Siberian tiger,species,M1,III,pyramidal_L3,soma_area,um2,1,Jacobs_etal_2018_Table5,1
 Homo sapiens,species,PFC_area10,III,pyramidal_L3,soma_area,um2,1,Bianchi_etal_2012_Table2,1
 Pan troglodytes,species,PFC_area10,III,pyramidal_L3,soma_area,um2,1,Bianchi_etal_2012_Table2,1
 Homo sapiens,species,S1_3b,III,pyramidal_L3,soma_area,um2,1,Bianchi_etal_2012_Table2,1
 Pan troglodytes,species,S1_3b,III,pyramidal_L3,soma_area,um2,1,Bianchi_etal_2012_Table2,1
 Homo sapiens,species,V2,III,pyramidal_L3,soma_area,um2,1,Bianchi_etal_2012_Table2,1
 Pan troglodytes,species,V2,III,pyramidal_L3,soma_area,um2,1,Bianchi_etal_2012_Table2,1
+African lion,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table5,1
+African wild dog,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table5,1
 Amblonyx cinereus,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table3,1
-Callithrix pygmaea,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table3,1
+Banded mongoose,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table5,1
+Bennett’s wallaby,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table5,1
+Blue wildebeest,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table5,1
 Callorhinus ursinus,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table3,1
-Canis lupus familiaris,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table5,1
-Caracal caracal,species,M1,V,pyramidal_L5,soma_area,um2,2,Jacobs_etal_2018_Table3 | Jacobs_etal_2018_Table5,2
+Caracal,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table5,1
+Caracal caracal,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table3,1
+Cebuella pygmaea,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table3,1
 Cercopithecus ascanius,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table3,1
+Chacma baboon,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table5,1
 Chlorocebus pygerythrus,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table3,1
-Connochaetes taurinus,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table5,1
-Equus burchelli,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table5,1
-Equus zebra,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table5,1
-Giraffa camelopardalis,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table5,1
-Homo sapiens,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table5,1
+Clouded leopard,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table5,1
+Domestic dog,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table5,1
+Flemish giant rabbit,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table5,1
+Giraffe,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table5,1
+Golden lion tamarin,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table5,1
+Human,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table5,1
 Hylobates lar,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table3,1
-Lemur catta,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table5,1
-Leontopithecus rosalia,species,M1,V,pyramidal_L5,soma_area,um2,2,Jacobs_etal_2018_Table3 | Jacobs_etal_2018_Table5,2
-Lycaon pictus,species,M1,V,pyramidal_L5,soma_area,um2,2,Jacobs_etal_2018_Table3 | Jacobs_etal_2018_Table5,2
-Mungos mungo,species,M1,V,pyramidal_L5,soma_area,um2,2,Jacobs_etal_2018_Table3 | Jacobs_etal_2018_Table5,2
+Kudu,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table5,1
+Leontopithecus rosalia,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table3,1
+Lycaon pictus,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table3,1
+Mountain zebra,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table5,1
+Mungos mungo,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table3,1
 Mustela putorius,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table3,1
-Neofelis nebulosa,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table5,1
-Notamacropus rufogriseus,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table5,1
-Oryctolagus cuniculus,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table5,1
 Pagophilus groenlandicus,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table3,1
-Panthera leo,species,M1,V,pyramidal_L5,soma_area,um2,2,Jacobs_etal_2018_Table3 | Jacobs_etal_2018_Table5,2
+Panthera leo,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table3,1
 Panthera pardus orientalis,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table3,1
-Panthera tigris altaica,species,M1,V,pyramidal_L5,soma_area,um2,2,Jacobs_etal_2018_Table3 | Jacobs_etal_2018_Table5,2
+Panthera tigris altaica,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table3,1
 Papio hamadryas,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table3,1
-Papio ursinus,species,M1,V,pyramidal_L5,soma_area,um2,2,Jacobs_etal_2018_Table3 | Jacobs_etal_2018_Table5,2
+Papio ursinus,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table3,1
+Plains zebra,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table5,1
 Procyon lotor,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table3,1
-Rattus norvegicus,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table5,1
+Rat,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table5,1
+Ring-tailed lemur,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table5,1
 Saguinus oedipus,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table3,1
 Saimiri boliviensis,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table3,1
-Tragelaphus strepsiceros,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table5,1
+Siberian tiger,species,M1,V,pyramidal_L5,soma_area,um2,1,Jacobs_etal_2018_Table5,1
 Acinonyx jubatus,species,M1,not reported,pyramidal_unspecified,soma_area,um2,1,Nguyen_etal_2019_Table2,1
 Panthera leo,species,M1,not reported,pyramidal_unspecified,soma_area,um2,1,Nguyen_etal_2019_Table2,1
 Panthera pardus,species,M1,not reported,pyramidal_unspecified,soma_area,um2,1,Nguyen_etal_2019_Table2,1
@@ -877,22 +896,23 @@ Panthera pardus,species,V1,not reported,extraverted,soma_depth,um,1,Nguyen_etal_
 Panthera leo,species,frontal,not reported,extraverted,soma_depth,um,1,Nguyen_etal_2019_Table2,1
 Panthera pardus,species,frontal,not reported,extraverted,soma_depth,um,1,Nguyen_etal_2019_Table2,1
 Acinonyx jubatus,species,M1,V,gigantopyramidal,soma_depth,um,1,Nguyen_etal_2019_Table2,1
-Canis lupus familiaris,species,M1,V,gigantopyramidal,soma_depth,um,1,Jacobs_etal_2018_Table5,1
-Caracal caracal,species,M1,V,gigantopyramidal,soma_depth,um,1,Jacobs_etal_2018_Table5,1
-Connochaetes taurinus,species,M1,V,gigantopyramidal,soma_depth,um,1,Jacobs_etal_2018_Table5,1
-Equus burchelli,species,M1,V,gigantopyramidal,soma_depth,um,1,Jacobs_etal_2018_Table5,1
-Equus zebra,species,M1,V,gigantopyramidal,soma_depth,um,1,Jacobs_etal_2018_Table5,1
-Giraffa camelopardalis,species,M1,V,gigantopyramidal,soma_depth,um,1,Jacobs_etal_2018_Table5,1
-Homo sapiens,species,M1,V,gigantopyramidal,soma_depth,um,1,Jacobs_etal_2018_Table5,1
-Lemur catta,species,M1,V,gigantopyramidal,soma_depth,um,1,Jacobs_etal_2018_Table5,1
-Leontopithecus rosalia,species,M1,V,gigantopyramidal,soma_depth,um,1,Jacobs_etal_2018_Table5,1
-Lycaon pictus,species,M1,V,gigantopyramidal,soma_depth,um,1,Jacobs_etal_2018_Table5,1
-Neofelis nebulosa,species,M1,V,gigantopyramidal,soma_depth,um,1,Jacobs_etal_2018_Table5,1
-Panthera leo,species,M1,V,gigantopyramidal,soma_depth,um,2,Jacobs_etal_2018_Table5 | Nguyen_etal_2019_Table2,2
+African lion,species,M1,V,gigantopyramidal,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+African wild dog,species,M1,V,gigantopyramidal,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+Blue wildebeest,species,M1,V,gigantopyramidal,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+Caracal,species,M1,V,gigantopyramidal,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+Chacma baboon,species,M1,V,gigantopyramidal,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+Clouded leopard,species,M1,V,gigantopyramidal,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+Domestic dog,species,M1,V,gigantopyramidal,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+Giraffe,species,M1,V,gigantopyramidal,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+Golden lion tamarin,species,M1,V,gigantopyramidal,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+Human,species,M1,V,gigantopyramidal,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+Kudu,species,M1,V,gigantopyramidal,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+Mountain zebra,species,M1,V,gigantopyramidal,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+Panthera leo,species,M1,V,gigantopyramidal,soma_depth,um,1,Nguyen_etal_2019_Table2,1
 Panthera pardus,species,M1,V,gigantopyramidal,soma_depth,um,1,Nguyen_etal_2019_Table2,1
-Panthera tigris altaica,species,M1,V,gigantopyramidal,soma_depth,um,1,Jacobs_etal_2018_Table5,1
-Papio ursinus,species,M1,V,gigantopyramidal,soma_depth,um,1,Jacobs_etal_2018_Table5,1
-Tragelaphus strepsiceros,species,M1,V,gigantopyramidal,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+Plains zebra,species,M1,V,gigantopyramidal,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+Ring-tailed lemur,species,M1,V,gigantopyramidal,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+Siberian tiger,species,M1,V,gigantopyramidal,soma_depth,um,1,Jacobs_etal_2018_Table5,1
 Acinonyx jubatus,species,M1,not reported,horizontal,soma_depth,um,1,Nguyen_etal_2019_Table2,1
 Panthera pardus,species,M1,not reported,horizontal,soma_depth,um,1,Nguyen_etal_2019_Table2,1
 Panthera pardus,species,V1,not reported,horizontal,soma_depth,um,1,Nguyen_etal_2019_Table2,1
@@ -914,51 +934,52 @@ Panthera pardus,species,frontal,not reported,multiapical,soma_depth,um,1,Nguyen_
 Panthera pardus,species,V1,not reported,neurogliaform,soma_depth,um,1,Nguyen_etal_2019_Table2,1
 Acinonyx jubatus,species,frontal,not reported,neurogliaform,soma_depth,um,1,Nguyen_etal_2019_Table2,1
 Panthera pardus,species,frontal,not reported,neurogliaform,soma_depth,um,1,Nguyen_etal_2019_Table2,1
-Canis lupus familiaris,species,M1,III,pyramidal_L3,soma_depth,um,1,Jacobs_etal_2018_Table5,1
-Caracal caracal,species,M1,III,pyramidal_L3,soma_depth,um,1,Jacobs_etal_2018_Table5,1
-Connochaetes taurinus,species,M1,III,pyramidal_L3,soma_depth,um,1,Jacobs_etal_2018_Table5,1
-Equus burchelli,species,M1,III,pyramidal_L3,soma_depth,um,1,Jacobs_etal_2018_Table5,1
-Equus zebra,species,M1,III,pyramidal_L3,soma_depth,um,1,Jacobs_etal_2018_Table5,1
-Giraffa camelopardalis,species,M1,III,pyramidal_L3,soma_depth,um,1,Jacobs_etal_2018_Table5,1
-Homo sapiens,species,M1,III,pyramidal_L3,soma_depth,um,2,Bianchi_etal_2012_Table2 | Jacobs_etal_2018_Table5,2
-Lemur catta,species,M1,III,pyramidal_L3,soma_depth,um,1,Jacobs_etal_2018_Table5,1
-Leontopithecus rosalia,species,M1,III,pyramidal_L3,soma_depth,um,1,Jacobs_etal_2018_Table5,1
-Lycaon pictus,species,M1,III,pyramidal_L3,soma_depth,um,1,Jacobs_etal_2018_Table5,1
-Mungos mungo,species,M1,III,pyramidal_L3,soma_depth,um,1,Jacobs_etal_2018_Table5,1
-Neofelis nebulosa,species,M1,III,pyramidal_L3,soma_depth,um,1,Jacobs_etal_2018_Table5,1
-Notamacropus rufogriseus,species,M1,III,pyramidal_L3,soma_depth,um,1,Jacobs_etal_2018_Table5,1
-Oryctolagus cuniculus,species,M1,III,pyramidal_L3,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+African lion,species,M1,III,pyramidal_L3,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+African wild dog,species,M1,III,pyramidal_L3,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+Banded mongoose,species,M1,III,pyramidal_L3,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+Bennett’s wallaby,species,M1,III,pyramidal_L3,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+Blue wildebeest,species,M1,III,pyramidal_L3,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+Caracal,species,M1,III,pyramidal_L3,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+Chacma baboon,species,M1,III,pyramidal_L3,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+Clouded leopard,species,M1,III,pyramidal_L3,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+Domestic dog,species,M1,III,pyramidal_L3,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+Flemish giant rabbit,species,M1,III,pyramidal_L3,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+Giraffe,species,M1,III,pyramidal_L3,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+Golden lion tamarin,species,M1,III,pyramidal_L3,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+Homo sapiens,species,M1,III,pyramidal_L3,soma_depth,um,1,Bianchi_etal_2012_Table2,1
+Human,species,M1,III,pyramidal_L3,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+Kudu,species,M1,III,pyramidal_L3,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+Mountain zebra,species,M1,III,pyramidal_L3,soma_depth,um,1,Jacobs_etal_2018_Table5,1
 Pan troglodytes,species,M1,III,pyramidal_L3,soma_depth,um,1,Bianchi_etal_2012_Table2,1
-Panthera leo,species,M1,III,pyramidal_L3,soma_depth,um,1,Jacobs_etal_2018_Table5,1
-Panthera tigris altaica,species,M1,III,pyramidal_L3,soma_depth,um,1,Jacobs_etal_2018_Table5,1
-Papio ursinus,species,M1,III,pyramidal_L3,soma_depth,um,1,Jacobs_etal_2018_Table5,1
-Rattus norvegicus,species,M1,III,pyramidal_L3,soma_depth,um,1,Jacobs_etal_2018_Table5,1
-Tragelaphus strepsiceros,species,M1,III,pyramidal_L3,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+Plains zebra,species,M1,III,pyramidal_L3,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+Rat,species,M1,III,pyramidal_L3,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+Ring-tailed lemur,species,M1,III,pyramidal_L3,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+Siberian tiger,species,M1,III,pyramidal_L3,soma_depth,um,1,Jacobs_etal_2018_Table5,1
 Homo sapiens,species,PFC_area10,III,pyramidal_L3,soma_depth,um,1,Bianchi_etal_2012_Table2,1
 Pan troglodytes,species,PFC_area10,III,pyramidal_L3,soma_depth,um,1,Bianchi_etal_2012_Table2,1
 Homo sapiens,species,S1_3b,III,pyramidal_L3,soma_depth,um,1,Bianchi_etal_2012_Table2,1
 Pan troglodytes,species,S1_3b,III,pyramidal_L3,soma_depth,um,1,Bianchi_etal_2012_Table2,1
 Homo sapiens,species,V2,III,pyramidal_L3,soma_depth,um,1,Bianchi_etal_2012_Table2,1
 Pan troglodytes,species,V2,III,pyramidal_L3,soma_depth,um,1,Bianchi_etal_2012_Table2,1
-Canis lupus familiaris,species,M1,V,pyramidal_L5,soma_depth,um,1,Jacobs_etal_2018_Table5,1
-Caracal caracal,species,M1,V,pyramidal_L5,soma_depth,um,1,Jacobs_etal_2018_Table5,1
-Connochaetes taurinus,species,M1,V,pyramidal_L5,soma_depth,um,1,Jacobs_etal_2018_Table5,1
-Equus burchelli,species,M1,V,pyramidal_L5,soma_depth,um,1,Jacobs_etal_2018_Table5,1
-Equus zebra,species,M1,V,pyramidal_L5,soma_depth,um,1,Jacobs_etal_2018_Table5,1
-Giraffa camelopardalis,species,M1,V,pyramidal_L5,soma_depth,um,1,Jacobs_etal_2018_Table5,1
-Homo sapiens,species,M1,V,pyramidal_L5,soma_depth,um,1,Jacobs_etal_2018_Table5,1
-Lemur catta,species,M1,V,pyramidal_L5,soma_depth,um,1,Jacobs_etal_2018_Table5,1
-Leontopithecus rosalia,species,M1,V,pyramidal_L5,soma_depth,um,1,Jacobs_etal_2018_Table5,1
-Lycaon pictus,species,M1,V,pyramidal_L5,soma_depth,um,1,Jacobs_etal_2018_Table5,1
-Mungos mungo,species,M1,V,pyramidal_L5,soma_depth,um,1,Jacobs_etal_2018_Table5,1
-Neofelis nebulosa,species,M1,V,pyramidal_L5,soma_depth,um,1,Jacobs_etal_2018_Table5,1
-Notamacropus rufogriseus,species,M1,V,pyramidal_L5,soma_depth,um,1,Jacobs_etal_2018_Table5,1
-Oryctolagus cuniculus,species,M1,V,pyramidal_L5,soma_depth,um,1,Jacobs_etal_2018_Table5,1
-Panthera leo,species,M1,V,pyramidal_L5,soma_depth,um,1,Jacobs_etal_2018_Table5,1
-Panthera tigris altaica,species,M1,V,pyramidal_L5,soma_depth,um,1,Jacobs_etal_2018_Table5,1
-Papio ursinus,species,M1,V,pyramidal_L5,soma_depth,um,1,Jacobs_etal_2018_Table5,1
-Rattus norvegicus,species,M1,V,pyramidal_L5,soma_depth,um,1,Jacobs_etal_2018_Table5,1
-Tragelaphus strepsiceros,species,M1,V,pyramidal_L5,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+African lion,species,M1,V,pyramidal_L5,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+African wild dog,species,M1,V,pyramidal_L5,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+Banded mongoose,species,M1,V,pyramidal_L5,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+Bennett’s wallaby,species,M1,V,pyramidal_L5,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+Blue wildebeest,species,M1,V,pyramidal_L5,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+Caracal,species,M1,V,pyramidal_L5,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+Chacma baboon,species,M1,V,pyramidal_L5,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+Clouded leopard,species,M1,V,pyramidal_L5,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+Domestic dog,species,M1,V,pyramidal_L5,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+Flemish giant rabbit,species,M1,V,pyramidal_L5,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+Giraffe,species,M1,V,pyramidal_L5,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+Golden lion tamarin,species,M1,V,pyramidal_L5,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+Human,species,M1,V,pyramidal_L5,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+Kudu,species,M1,V,pyramidal_L5,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+Mountain zebra,species,M1,V,pyramidal_L5,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+Plains zebra,species,M1,V,pyramidal_L5,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+Rat,species,M1,V,pyramidal_L5,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+Ring-tailed lemur,species,M1,V,pyramidal_L5,soma_depth,um,1,Jacobs_etal_2018_Table5,1
+Siberian tiger,species,M1,V,pyramidal_L5,soma_depth,um,1,Jacobs_etal_2018_Table5,1
 Acinonyx jubatus,species,M1,not reported,pyramidal_unspecified,soma_depth,um,1,Nguyen_etal_2019_Table2,1
 Panthera leo,species,M1,not reported,pyramidal_unspecified,soma_depth,um,1,Nguyen_etal_2019_Table2,1
 Panthera pardus,species,M1,not reported,pyramidal_unspecified,soma_depth,um,1,Nguyen_etal_2019_Table2,1
@@ -998,9 +1019,9 @@ Sciurus carolinensis,species,cortex_corticospinal_field,V,corticospinal,soma_dia
 Spermophilus tridecemlineatus,species,cortex_corticospinal_field,V,corticospinal,soma_diameter,um,1,Nudo_etal_1995_TABLE2,1
 Tupaia glis,species,cortex_corticospinal_field,V,corticospinal,soma_diameter,um,1,Nudo_etal_1995_TABLE2,1
 Amblonyx cinereus,species,M1,V,gigantopyramidal,soma_length,um,1,Jacobs_etal_2018_Table3,1
-Callithrix pygmaea,species,M1,V,gigantopyramidal,soma_length,um,1,Jacobs_etal_2018_Table3,1
 Callorhinus ursinus,species,M1,V,gigantopyramidal,soma_length,um,1,Jacobs_etal_2018_Table3,1
 Caracal caracal,species,M1,V,gigantopyramidal,soma_length,um,1,Jacobs_etal_2018_Table3,1
+Cebuella pygmaea,species,M1,V,gigantopyramidal,soma_length,um,1,Jacobs_etal_2018_Table3,1
 Cercopithecus ascanius,species,M1,V,gigantopyramidal,soma_length,um,1,Jacobs_etal_2018_Table3,1
 Chlorocebus pygerythrus,species,M1,V,gigantopyramidal,soma_length,um,1,Jacobs_etal_2018_Table3,1
 Hylobates lar,species,M1,V,gigantopyramidal,soma_length,um,1,Jacobs_etal_2018_Table3,1
@@ -1018,9 +1039,9 @@ Procyon lotor,species,M1,V,gigantopyramidal,soma_length,um,1,Jacobs_etal_2018_Ta
 Saguinus oedipus,species,M1,V,gigantopyramidal,soma_length,um,1,Jacobs_etal_2018_Table3,1
 Saimiri boliviensis,species,M1,V,gigantopyramidal,soma_length,um,1,Jacobs_etal_2018_Table3,1
 Amblonyx cinereus,species,M1,V,pyramidal_L5,soma_length,um,1,Jacobs_etal_2018_Table3,1
-Callithrix pygmaea,species,M1,V,pyramidal_L5,soma_length,um,1,Jacobs_etal_2018_Table3,1
 Callorhinus ursinus,species,M1,V,pyramidal_L5,soma_length,um,1,Jacobs_etal_2018_Table3,1
 Caracal caracal,species,M1,V,pyramidal_L5,soma_length,um,1,Jacobs_etal_2018_Table3,1
+Cebuella pygmaea,species,M1,V,pyramidal_L5,soma_length,um,1,Jacobs_etal_2018_Table3,1
 Cercopithecus ascanius,species,M1,V,pyramidal_L5,soma_length,um,1,Jacobs_etal_2018_Table3,1
 Chlorocebus pygerythrus,species,M1,V,pyramidal_L5,soma_length,um,1,Jacobs_etal_2018_Table3,1
 Hylobates lar,species,M1,V,pyramidal_L5,soma_length,um,1,Jacobs_etal_2018_Table3,1
@@ -1049,9 +1070,9 @@ Tursiops truncatus,species,ACC,VI,fusiform_L6,soma_volume,um3,1,Butti_etal_2009_
 Alouatta seniculus,species,M1,V,gigantopyramidal,soma_volume,um3,1,Sherwood_etal_2003_Table1,1
 Amblonyx cinereus,species,M1,V,gigantopyramidal,soma_volume,um3,1,Jacobs_etal_2018_Table3,1
 Aotus trivirgatus,species,M1,V,gigantopyramidal,soma_volume,um3,1,Sherwood_etal_2003_Table1,1
-Callithrix pygmaea,species,M1,V,gigantopyramidal,soma_volume,um3,1,Jacobs_etal_2018_Table3,1
 Callorhinus ursinus,species,M1,V,gigantopyramidal,soma_volume,um3,1,Jacobs_etal_2018_Table3,1
 Caracal caracal,species,M1,V,gigantopyramidal,soma_volume,um3,1,Jacobs_etal_2018_Table3,1
+Cebuella pygmaea,species,M1,V,gigantopyramidal,soma_volume,um3,1,Jacobs_etal_2018_Table3,1
 Cercopithecus ascanius,species,M1,V,gigantopyramidal,soma_volume,um3,1,Jacobs_etal_2018_Table3,1
 Chlorocebus pygerythrus,species,M1,V,gigantopyramidal,soma_volume,um3,1,Jacobs_etal_2018_Table3,1
 Daubentonia madagascariensis,species,M1,V,gigantopyramidal,soma_volume,um3,1,Sherwood_etal_2003_Table1,1
@@ -1125,9 +1146,9 @@ Tursiops truncatus,species,ACC,V,pyramidal_L5,soma_volume,um3,1,Butti_etal_2009_
 Alouatta seniculus,species,M1,V,pyramidal_L5,soma_volume,um3,1,Sherwood_etal_2003_Table1,1
 Amblonyx cinereus,species,M1,V,pyramidal_L5,soma_volume,um3,1,Jacobs_etal_2018_Table3,1
 Aotus trivirgatus,species,M1,V,pyramidal_L5,soma_volume,um3,1,Sherwood_etal_2003_Table1,1
-Callithrix pygmaea,species,M1,V,pyramidal_L5,soma_volume,um3,1,Jacobs_etal_2018_Table3,1
 Callorhinus ursinus,species,M1,V,pyramidal_L5,soma_volume,um3,1,Jacobs_etal_2018_Table3,1
 Caracal caracal,species,M1,V,pyramidal_L5,soma_volume,um3,1,Jacobs_etal_2018_Table3,1
+Cebuella pygmaea,species,M1,V,pyramidal_L5,soma_volume,um3,1,Jacobs_etal_2018_Table3,1
 Cercopithecus ascanius,species,M1,V,pyramidal_L5,soma_volume,um3,1,Jacobs_etal_2018_Table3,1
 Chlorocebus pygerythrus,species,M1,V,pyramidal_L5,soma_volume,um3,1,Jacobs_etal_2018_Table3,1
 Daubentonia madagascariensis,species,M1,V,pyramidal_L5,soma_volume,um3,1,Sherwood_etal_2003_Table1,1
@@ -1222,22 +1243,23 @@ Panthera pardus,species,V1,not reported,extraverted,spine_count,count,1,Nguyen_e
 Panthera leo,species,frontal,not reported,extraverted,spine_count,count,1,Nguyen_etal_2019_Table2,1
 Panthera pardus,species,frontal,not reported,extraverted,spine_count,count,1,Nguyen_etal_2019_Table2,1
 Acinonyx jubatus,species,M1,V,gigantopyramidal,spine_count,count,1,Nguyen_etal_2019_Table2,1
-Canis lupus familiaris,species,M1,V,gigantopyramidal,spine_count,count,1,Jacobs_etal_2018_Table5,1
-Caracal caracal,species,M1,V,gigantopyramidal,spine_count,count,1,Jacobs_etal_2018_Table5,1
-Connochaetes taurinus,species,M1,V,gigantopyramidal,spine_count,count,1,Jacobs_etal_2018_Table5,1
-Equus burchelli,species,M1,V,gigantopyramidal,spine_count,count,1,Jacobs_etal_2018_Table5,1
-Equus zebra,species,M1,V,gigantopyramidal,spine_count,count,1,Jacobs_etal_2018_Table5,1
-Giraffa camelopardalis,species,M1,V,gigantopyramidal,spine_count,count,1,Jacobs_etal_2018_Table5,1
-Homo sapiens,species,M1,V,gigantopyramidal,spine_count,count,1,Jacobs_etal_2018_Table5,1
-Lemur catta,species,M1,V,gigantopyramidal,spine_count,count,1,Jacobs_etal_2018_Table5,1
-Leontopithecus rosalia,species,M1,V,gigantopyramidal,spine_count,count,1,Jacobs_etal_2018_Table5,1
-Lycaon pictus,species,M1,V,gigantopyramidal,spine_count,count,1,Jacobs_etal_2018_Table5,1
-Neofelis nebulosa,species,M1,V,gigantopyramidal,spine_count,count,1,Jacobs_etal_2018_Table5,1
-Panthera leo,species,M1,V,gigantopyramidal,spine_count,count,2,Jacobs_etal_2018_Table5 | Nguyen_etal_2019_Table2,2
+African lion,species,M1,V,gigantopyramidal,spine_count,count,1,Jacobs_etal_2018_Table5,1
+African wild dog,species,M1,V,gigantopyramidal,spine_count,count,1,Jacobs_etal_2018_Table5,1
+Blue wildebeest,species,M1,V,gigantopyramidal,spine_count,count,1,Jacobs_etal_2018_Table5,1
+Caracal,species,M1,V,gigantopyramidal,spine_count,count,1,Jacobs_etal_2018_Table5,1
+Chacma baboon,species,M1,V,gigantopyramidal,spine_count,count,1,Jacobs_etal_2018_Table5,1
+Clouded leopard,species,M1,V,gigantopyramidal,spine_count,count,1,Jacobs_etal_2018_Table5,1
+Domestic dog,species,M1,V,gigantopyramidal,spine_count,count,1,Jacobs_etal_2018_Table5,1
+Giraffe,species,M1,V,gigantopyramidal,spine_count,count,1,Jacobs_etal_2018_Table5,1
+Golden lion tamarin,species,M1,V,gigantopyramidal,spine_count,count,1,Jacobs_etal_2018_Table5,1
+Human,species,M1,V,gigantopyramidal,spine_count,count,1,Jacobs_etal_2018_Table5,1
+Kudu,species,M1,V,gigantopyramidal,spine_count,count,1,Jacobs_etal_2018_Table5,1
+Mountain zebra,species,M1,V,gigantopyramidal,spine_count,count,1,Jacobs_etal_2018_Table5,1
+Panthera leo,species,M1,V,gigantopyramidal,spine_count,count,1,Nguyen_etal_2019_Table2,1
 Panthera pardus,species,M1,V,gigantopyramidal,spine_count,count,1,Nguyen_etal_2019_Table2,1
-Panthera tigris altaica,species,M1,V,gigantopyramidal,spine_count,count,1,Jacobs_etal_2018_Table5,1
-Papio ursinus,species,M1,V,gigantopyramidal,spine_count,count,1,Jacobs_etal_2018_Table5,1
-Tragelaphus strepsiceros,species,M1,V,gigantopyramidal,spine_count,count,1,Jacobs_etal_2018_Table5,1
+Plains zebra,species,M1,V,gigantopyramidal,spine_count,count,1,Jacobs_etal_2018_Table5,1
+Ring-tailed lemur,species,M1,V,gigantopyramidal,spine_count,count,1,Jacobs_etal_2018_Table5,1
+Siberian tiger,species,M1,V,gigantopyramidal,spine_count,count,1,Jacobs_etal_2018_Table5,1
 Acinonyx jubatus,species,M1,not reported,horizontal,spine_count,count,1,Nguyen_etal_2019_Table2,1
 Panthera pardus,species,M1,not reported,horizontal,spine_count,count,1,Nguyen_etal_2019_Table2,1
 Panthera pardus,species,V1,not reported,horizontal,spine_count,count,1,Nguyen_etal_2019_Table2,1
@@ -1256,26 +1278,27 @@ Panthera leo,species,M1,not reported,multiapical,spine_count,count,1,Nguyen_etal
 Acinonyx jubatus,species,frontal,not reported,multiapical,spine_count,count,1,Nguyen_etal_2019_Table2,1
 Panthera leo,species,frontal,not reported,multiapical,spine_count,count,1,Nguyen_etal_2019_Table2,1
 Panthera pardus,species,frontal,not reported,multiapical,spine_count,count,1,Nguyen_etal_2019_Table2,1
-Canis lupus familiaris,species,M1,III,pyramidal_L3,spine_count,count,1,Jacobs_etal_2018_Table5,1
-Caracal caracal,species,M1,III,pyramidal_L3,spine_count,count,1,Jacobs_etal_2018_Table5,1
-Connochaetes taurinus,species,M1,III,pyramidal_L3,spine_count,count,1,Jacobs_etal_2018_Table5,1
-Equus burchelli,species,M1,III,pyramidal_L3,spine_count,count,1,Jacobs_etal_2018_Table5,1
-Equus zebra,species,M1,III,pyramidal_L3,spine_count,count,1,Jacobs_etal_2018_Table5,1
-Giraffa camelopardalis,species,M1,III,pyramidal_L3,spine_count,count,1,Jacobs_etal_2018_Table5,1
-Homo sapiens,species,M1,III,pyramidal_L3,spine_count,count,2,Bianchi_etal_2012_Table2 | Jacobs_etal_2018_Table5,2
-Lemur catta,species,M1,III,pyramidal_L3,spine_count,count,1,Jacobs_etal_2018_Table5,1
-Leontopithecus rosalia,species,M1,III,pyramidal_L3,spine_count,count,1,Jacobs_etal_2018_Table5,1
-Lycaon pictus,species,M1,III,pyramidal_L3,spine_count,count,1,Jacobs_etal_2018_Table5,1
-Mungos mungo,species,M1,III,pyramidal_L3,spine_count,count,1,Jacobs_etal_2018_Table5,1
-Neofelis nebulosa,species,M1,III,pyramidal_L3,spine_count,count,1,Jacobs_etal_2018_Table5,1
-Notamacropus rufogriseus,species,M1,III,pyramidal_L3,spine_count,count,1,Jacobs_etal_2018_Table5,1
-Oryctolagus cuniculus,species,M1,III,pyramidal_L3,spine_count,count,1,Jacobs_etal_2018_Table5,1
+African lion,species,M1,III,pyramidal_L3,spine_count,count,1,Jacobs_etal_2018_Table5,1
+African wild dog,species,M1,III,pyramidal_L3,spine_count,count,1,Jacobs_etal_2018_Table5,1
+Banded mongoose,species,M1,III,pyramidal_L3,spine_count,count,1,Jacobs_etal_2018_Table5,1
+Bennett’s wallaby,species,M1,III,pyramidal_L3,spine_count,count,1,Jacobs_etal_2018_Table5,1
+Blue wildebeest,species,M1,III,pyramidal_L3,spine_count,count,1,Jacobs_etal_2018_Table5,1
+Caracal,species,M1,III,pyramidal_L3,spine_count,count,1,Jacobs_etal_2018_Table5,1
+Chacma baboon,species,M1,III,pyramidal_L3,spine_count,count,1,Jacobs_etal_2018_Table5,1
+Clouded leopard,species,M1,III,pyramidal_L3,spine_count,count,1,Jacobs_etal_2018_Table5,1
+Domestic dog,species,M1,III,pyramidal_L3,spine_count,count,1,Jacobs_etal_2018_Table5,1
+Flemish giant rabbit,species,M1,III,pyramidal_L3,spine_count,count,1,Jacobs_etal_2018_Table5,1
+Giraffe,species,M1,III,pyramidal_L3,spine_count,count,1,Jacobs_etal_2018_Table5,1
+Golden lion tamarin,species,M1,III,pyramidal_L3,spine_count,count,1,Jacobs_etal_2018_Table5,1
+Homo sapiens,species,M1,III,pyramidal_L3,spine_count,count,1,Bianchi_etal_2012_Table2,1
+Human,species,M1,III,pyramidal_L3,spine_count,count,1,Jacobs_etal_2018_Table5,1
+Kudu,species,M1,III,pyramidal_L3,spine_count,count,1,Jacobs_etal_2018_Table5,1
+Mountain zebra,species,M1,III,pyramidal_L3,spine_count,count,1,Jacobs_etal_2018_Table5,1
 Pan troglodytes,species,M1,III,pyramidal_L3,spine_count,count,1,Bianchi_etal_2012_Table2,1
-Panthera leo,species,M1,III,pyramidal_L3,spine_count,count,1,Jacobs_etal_2018_Table5,1
-Panthera tigris altaica,species,M1,III,pyramidal_L3,spine_count,count,1,Jacobs_etal_2018_Table5,1
-Papio ursinus,species,M1,III,pyramidal_L3,spine_count,count,1,Jacobs_etal_2018_Table5,1
-Rattus norvegicus,species,M1,III,pyramidal_L3,spine_count,count,1,Jacobs_etal_2018_Table5,1
-Tragelaphus strepsiceros,species,M1,III,pyramidal_L3,spine_count,count,1,Jacobs_etal_2018_Table5,1
+Plains zebra,species,M1,III,pyramidal_L3,spine_count,count,1,Jacobs_etal_2018_Table5,1
+Rat,species,M1,III,pyramidal_L3,spine_count,count,1,Jacobs_etal_2018_Table5,1
+Ring-tailed lemur,species,M1,III,pyramidal_L3,spine_count,count,1,Jacobs_etal_2018_Table5,1
+Siberian tiger,species,M1,III,pyramidal_L3,spine_count,count,1,Jacobs_etal_2018_Table5,1
 Homo sapiens,species,PFC_area10,III,pyramidal_L3,spine_count,count,1,Bianchi_etal_2012_Table2,1
 Macaca fascicularis,species,PFC_area10,III,pyramidal_L3,spine_count,count,1,Elston__2000_Figure2,1
 Pan troglodytes,species,PFC_area10,III,pyramidal_L3,spine_count,count,1,Bianchi_etal_2012_Table2,1
@@ -1301,25 +1324,25 @@ Pan troglodytes,species,V2,III,pyramidal_L3,spine_count,count,1,Bianchi_etal_201
 Papio ursinus,species,V2,III,pyramidal_L3,spine_count,count,1,Elston_etal_2006_Table1,1
 Macaca fascicularis,species,parietal_7a,III,pyramidal_L3,spine_count,count,1,Elston__2000_Figure2,1
 Macaca fascicularis,species,temporal_TE,III,pyramidal_L3,spine_count,count,1,Elston__2000_Figure2,1
-Canis lupus familiaris,species,M1,V,pyramidal_L5,spine_count,count,1,Jacobs_etal_2018_Table5,1
-Caracal caracal,species,M1,V,pyramidal_L5,spine_count,count,1,Jacobs_etal_2018_Table5,1
-Connochaetes taurinus,species,M1,V,pyramidal_L5,spine_count,count,1,Jacobs_etal_2018_Table5,1
-Equus burchelli,species,M1,V,pyramidal_L5,spine_count,count,1,Jacobs_etal_2018_Table5,1
-Equus zebra,species,M1,V,pyramidal_L5,spine_count,count,1,Jacobs_etal_2018_Table5,1
-Giraffa camelopardalis,species,M1,V,pyramidal_L5,spine_count,count,1,Jacobs_etal_2018_Table5,1
-Homo sapiens,species,M1,V,pyramidal_L5,spine_count,count,1,Jacobs_etal_2018_Table5,1
-Lemur catta,species,M1,V,pyramidal_L5,spine_count,count,1,Jacobs_etal_2018_Table5,1
-Leontopithecus rosalia,species,M1,V,pyramidal_L5,spine_count,count,1,Jacobs_etal_2018_Table5,1
-Lycaon pictus,species,M1,V,pyramidal_L5,spine_count,count,1,Jacobs_etal_2018_Table5,1
-Mungos mungo,species,M1,V,pyramidal_L5,spine_count,count,1,Jacobs_etal_2018_Table5,1
-Neofelis nebulosa,species,M1,V,pyramidal_L5,spine_count,count,1,Jacobs_etal_2018_Table5,1
-Notamacropus rufogriseus,species,M1,V,pyramidal_L5,spine_count,count,1,Jacobs_etal_2018_Table5,1
-Oryctolagus cuniculus,species,M1,V,pyramidal_L5,spine_count,count,1,Jacobs_etal_2018_Table5,1
-Panthera leo,species,M1,V,pyramidal_L5,spine_count,count,1,Jacobs_etal_2018_Table5,1
-Panthera tigris altaica,species,M1,V,pyramidal_L5,spine_count,count,1,Jacobs_etal_2018_Table5,1
-Papio ursinus,species,M1,V,pyramidal_L5,spine_count,count,1,Jacobs_etal_2018_Table5,1
-Rattus norvegicus,species,M1,V,pyramidal_L5,spine_count,count,1,Jacobs_etal_2018_Table5,1
-Tragelaphus strepsiceros,species,M1,V,pyramidal_L5,spine_count,count,1,Jacobs_etal_2018_Table5,1
+African lion,species,M1,V,pyramidal_L5,spine_count,count,1,Jacobs_etal_2018_Table5,1
+African wild dog,species,M1,V,pyramidal_L5,spine_count,count,1,Jacobs_etal_2018_Table5,1
+Banded mongoose,species,M1,V,pyramidal_L5,spine_count,count,1,Jacobs_etal_2018_Table5,1
+Bennett’s wallaby,species,M1,V,pyramidal_L5,spine_count,count,1,Jacobs_etal_2018_Table5,1
+Blue wildebeest,species,M1,V,pyramidal_L5,spine_count,count,1,Jacobs_etal_2018_Table5,1
+Caracal,species,M1,V,pyramidal_L5,spine_count,count,1,Jacobs_etal_2018_Table5,1
+Chacma baboon,species,M1,V,pyramidal_L5,spine_count,count,1,Jacobs_etal_2018_Table5,1
+Clouded leopard,species,M1,V,pyramidal_L5,spine_count,count,1,Jacobs_etal_2018_Table5,1
+Domestic dog,species,M1,V,pyramidal_L5,spine_count,count,1,Jacobs_etal_2018_Table5,1
+Flemish giant rabbit,species,M1,V,pyramidal_L5,spine_count,count,1,Jacobs_etal_2018_Table5,1
+Giraffe,species,M1,V,pyramidal_L5,spine_count,count,1,Jacobs_etal_2018_Table5,1
+Golden lion tamarin,species,M1,V,pyramidal_L5,spine_count,count,1,Jacobs_etal_2018_Table5,1
+Human,species,M1,V,pyramidal_L5,spine_count,count,1,Jacobs_etal_2018_Table5,1
+Kudu,species,M1,V,pyramidal_L5,spine_count,count,1,Jacobs_etal_2018_Table5,1
+Mountain zebra,species,M1,V,pyramidal_L5,spine_count,count,1,Jacobs_etal_2018_Table5,1
+Plains zebra,species,M1,V,pyramidal_L5,spine_count,count,1,Jacobs_etal_2018_Table5,1
+Rat,species,M1,V,pyramidal_L5,spine_count,count,1,Jacobs_etal_2018_Table5,1
+Ring-tailed lemur,species,M1,V,pyramidal_L5,spine_count,count,1,Jacobs_etal_2018_Table5,1
+Siberian tiger,species,M1,V,pyramidal_L5,spine_count,count,1,Jacobs_etal_2018_Table5,1
 Acinonyx jubatus,species,M1,not reported,pyramidal_unspecified,spine_count,count,1,Nguyen_etal_2019_Table2,1
 Panthera leo,species,M1,not reported,pyramidal_unspecified,spine_count,count,1,Nguyen_etal_2019_Table2,1
 Panthera pardus,species,M1,not reported,pyramidal_unspecified,spine_count,count,1,Nguyen_etal_2019_Table2,1
@@ -1337,22 +1360,23 @@ Panthera pardus,species,V1,not reported,extraverted,spine_density,spines/um,1,Ng
 Panthera leo,species,frontal,not reported,extraverted,spine_density,spines/um,1,Nguyen_etal_2019_Table2,1
 Panthera pardus,species,frontal,not reported,extraverted,spine_density,spines/um,1,Nguyen_etal_2019_Table2,1
 Acinonyx jubatus,species,M1,V,gigantopyramidal,spine_density,spines/um,1,Nguyen_etal_2019_Table2,1
-Canis lupus familiaris,species,M1,V,gigantopyramidal,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
-Caracal caracal,species,M1,V,gigantopyramidal,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
-Connochaetes taurinus,species,M1,V,gigantopyramidal,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
-Equus burchelli,species,M1,V,gigantopyramidal,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
-Equus zebra,species,M1,V,gigantopyramidal,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
-Giraffa camelopardalis,species,M1,V,gigantopyramidal,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
-Homo sapiens,species,M1,V,gigantopyramidal,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
-Lemur catta,species,M1,V,gigantopyramidal,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
-Leontopithecus rosalia,species,M1,V,gigantopyramidal,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
-Lycaon pictus,species,M1,V,gigantopyramidal,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
-Neofelis nebulosa,species,M1,V,gigantopyramidal,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
-Panthera leo,species,M1,V,gigantopyramidal,spine_density,spines/um,2,Jacobs_etal_2018_Table5 | Nguyen_etal_2019_Table2,2
+African lion,species,M1,V,gigantopyramidal,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+African wild dog,species,M1,V,gigantopyramidal,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+Blue wildebeest,species,M1,V,gigantopyramidal,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+Caracal,species,M1,V,gigantopyramidal,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+Chacma baboon,species,M1,V,gigantopyramidal,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+Clouded leopard,species,M1,V,gigantopyramidal,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+Domestic dog,species,M1,V,gigantopyramidal,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+Giraffe,species,M1,V,gigantopyramidal,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+Golden lion tamarin,species,M1,V,gigantopyramidal,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+Human,species,M1,V,gigantopyramidal,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+Kudu,species,M1,V,gigantopyramidal,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+Mountain zebra,species,M1,V,gigantopyramidal,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+Panthera leo,species,M1,V,gigantopyramidal,spine_density,spines/um,1,Nguyen_etal_2019_Table2,1
 Panthera pardus,species,M1,V,gigantopyramidal,spine_density,spines/um,1,Nguyen_etal_2019_Table2,1
-Panthera tigris altaica,species,M1,V,gigantopyramidal,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
-Papio ursinus,species,M1,V,gigantopyramidal,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
-Tragelaphus strepsiceros,species,M1,V,gigantopyramidal,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+Plains zebra,species,M1,V,gigantopyramidal,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+Ring-tailed lemur,species,M1,V,gigantopyramidal,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+Siberian tiger,species,M1,V,gigantopyramidal,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
 Acinonyx jubatus,species,M1,not reported,horizontal,spine_density,spines/um,1,Nguyen_etal_2019_Table2,1
 Panthera pardus,species,M1,not reported,horizontal,spine_density,spines/um,1,Nguyen_etal_2019_Table2,1
 Panthera pardus,species,V1,not reported,horizontal,spine_density,spines/um,1,Nguyen_etal_2019_Table2,1
@@ -1371,51 +1395,52 @@ Panthera leo,species,M1,not reported,multiapical,spine_density,spines/um,1,Nguye
 Acinonyx jubatus,species,frontal,not reported,multiapical,spine_density,spines/um,1,Nguyen_etal_2019_Table2,1
 Panthera leo,species,frontal,not reported,multiapical,spine_density,spines/um,1,Nguyen_etal_2019_Table2,1
 Panthera pardus,species,frontal,not reported,multiapical,spine_density,spines/um,1,Nguyen_etal_2019_Table2,1
-Canis lupus familiaris,species,M1,III,pyramidal_L3,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
-Caracal caracal,species,M1,III,pyramidal_L3,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
-Connochaetes taurinus,species,M1,III,pyramidal_L3,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
-Equus burchelli,species,M1,III,pyramidal_L3,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
-Equus zebra,species,M1,III,pyramidal_L3,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
-Giraffa camelopardalis,species,M1,III,pyramidal_L3,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
-Homo sapiens,species,M1,III,pyramidal_L3,spine_density,spines/um,2,Bianchi_etal_2012_Table2 | Jacobs_etal_2018_Table5,2
-Lemur catta,species,M1,III,pyramidal_L3,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
-Leontopithecus rosalia,species,M1,III,pyramidal_L3,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
-Lycaon pictus,species,M1,III,pyramidal_L3,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
-Mungos mungo,species,M1,III,pyramidal_L3,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
-Neofelis nebulosa,species,M1,III,pyramidal_L3,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
-Notamacropus rufogriseus,species,M1,III,pyramidal_L3,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
-Oryctolagus cuniculus,species,M1,III,pyramidal_L3,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+African lion,species,M1,III,pyramidal_L3,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+African wild dog,species,M1,III,pyramidal_L3,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+Banded mongoose,species,M1,III,pyramidal_L3,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+Bennett’s wallaby,species,M1,III,pyramidal_L3,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+Blue wildebeest,species,M1,III,pyramidal_L3,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+Caracal,species,M1,III,pyramidal_L3,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+Chacma baboon,species,M1,III,pyramidal_L3,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+Clouded leopard,species,M1,III,pyramidal_L3,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+Domestic dog,species,M1,III,pyramidal_L3,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+Flemish giant rabbit,species,M1,III,pyramidal_L3,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+Giraffe,species,M1,III,pyramidal_L3,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+Golden lion tamarin,species,M1,III,pyramidal_L3,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+Homo sapiens,species,M1,III,pyramidal_L3,spine_density,spines/um,1,Bianchi_etal_2012_Table2,1
+Human,species,M1,III,pyramidal_L3,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+Kudu,species,M1,III,pyramidal_L3,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+Mountain zebra,species,M1,III,pyramidal_L3,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
 Pan troglodytes,species,M1,III,pyramidal_L3,spine_density,spines/um,1,Bianchi_etal_2012_Table2,1
-Panthera leo,species,M1,III,pyramidal_L3,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
-Panthera tigris altaica,species,M1,III,pyramidal_L3,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
-Papio ursinus,species,M1,III,pyramidal_L3,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
-Rattus norvegicus,species,M1,III,pyramidal_L3,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
-Tragelaphus strepsiceros,species,M1,III,pyramidal_L3,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+Plains zebra,species,M1,III,pyramidal_L3,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+Rat,species,M1,III,pyramidal_L3,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+Ring-tailed lemur,species,M1,III,pyramidal_L3,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+Siberian tiger,species,M1,III,pyramidal_L3,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
 Homo sapiens,species,PFC_area10,III,pyramidal_L3,spine_density,spines/um,1,Bianchi_etal_2012_Table2,1
 Pan troglodytes,species,PFC_area10,III,pyramidal_L3,spine_density,spines/um,1,Bianchi_etal_2012_Table2,1
 Homo sapiens,species,S1_3b,III,pyramidal_L3,spine_density,spines/um,1,Bianchi_etal_2012_Table2,1
 Pan troglodytes,species,S1_3b,III,pyramidal_L3,spine_density,spines/um,1,Bianchi_etal_2012_Table2,1
 Homo sapiens,species,V2,III,pyramidal_L3,spine_density,spines/um,1,Bianchi_etal_2012_Table2,1
 Pan troglodytes,species,V2,III,pyramidal_L3,spine_density,spines/um,1,Bianchi_etal_2012_Table2,1
-Canis lupus familiaris,species,M1,V,pyramidal_L5,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
-Caracal caracal,species,M1,V,pyramidal_L5,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
-Connochaetes taurinus,species,M1,V,pyramidal_L5,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
-Equus burchelli,species,M1,V,pyramidal_L5,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
-Equus zebra,species,M1,V,pyramidal_L5,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
-Giraffa camelopardalis,species,M1,V,pyramidal_L5,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
-Homo sapiens,species,M1,V,pyramidal_L5,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
-Lemur catta,species,M1,V,pyramidal_L5,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
-Leontopithecus rosalia,species,M1,V,pyramidal_L5,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
-Lycaon pictus,species,M1,V,pyramidal_L5,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
-Mungos mungo,species,M1,V,pyramidal_L5,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
-Neofelis nebulosa,species,M1,V,pyramidal_L5,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
-Notamacropus rufogriseus,species,M1,V,pyramidal_L5,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
-Oryctolagus cuniculus,species,M1,V,pyramidal_L5,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
-Panthera leo,species,M1,V,pyramidal_L5,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
-Panthera tigris altaica,species,M1,V,pyramidal_L5,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
-Papio ursinus,species,M1,V,pyramidal_L5,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
-Rattus norvegicus,species,M1,V,pyramidal_L5,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
-Tragelaphus strepsiceros,species,M1,V,pyramidal_L5,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+African lion,species,M1,V,pyramidal_L5,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+African wild dog,species,M1,V,pyramidal_L5,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+Banded mongoose,species,M1,V,pyramidal_L5,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+Bennett’s wallaby,species,M1,V,pyramidal_L5,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+Blue wildebeest,species,M1,V,pyramidal_L5,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+Caracal,species,M1,V,pyramidal_L5,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+Chacma baboon,species,M1,V,pyramidal_L5,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+Clouded leopard,species,M1,V,pyramidal_L5,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+Domestic dog,species,M1,V,pyramidal_L5,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+Flemish giant rabbit,species,M1,V,pyramidal_L5,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+Giraffe,species,M1,V,pyramidal_L5,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+Golden lion tamarin,species,M1,V,pyramidal_L5,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+Human,species,M1,V,pyramidal_L5,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+Kudu,species,M1,V,pyramidal_L5,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+Mountain zebra,species,M1,V,pyramidal_L5,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+Plains zebra,species,M1,V,pyramidal_L5,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+Rat,species,M1,V,pyramidal_L5,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+Ring-tailed lemur,species,M1,V,pyramidal_L5,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
+Siberian tiger,species,M1,V,pyramidal_L5,spine_density,spines/um,1,Jacobs_etal_2018_Table5,1
 Acinonyx jubatus,species,M1,not reported,pyramidal_unspecified,spine_density,spines/um,1,Nguyen_etal_2019_Table2,1
 Panthera leo,species,M1,not reported,pyramidal_unspecified,spine_density,spines/um,1,Nguyen_etal_2019_Table2,1
 Panthera pardus,species,M1,not reported,pyramidal_unspecified,spine_density,spines/um,1,Nguyen_etal_2019_Table2,1
@@ -1442,22 +1467,23 @@ Panthera pardus,species,V1,not reported,extraverted,total_dendritic_length,um,1,
 Panthera leo,species,frontal,not reported,extraverted,total_dendritic_length,um,1,Nguyen_etal_2019_Table2,1
 Panthera pardus,species,frontal,not reported,extraverted,total_dendritic_length,um,1,Nguyen_etal_2019_Table2,1
 Acinonyx jubatus,species,M1,V,gigantopyramidal,total_dendritic_length,um,1,Nguyen_etal_2019_Table2,1
-Canis lupus familiaris,species,M1,V,gigantopyramidal,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
-Caracal caracal,species,M1,V,gigantopyramidal,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
-Connochaetes taurinus,species,M1,V,gigantopyramidal,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
-Equus burchelli,species,M1,V,gigantopyramidal,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
-Equus zebra,species,M1,V,gigantopyramidal,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
-Giraffa camelopardalis,species,M1,V,gigantopyramidal,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
-Homo sapiens,species,M1,V,gigantopyramidal,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
-Lemur catta,species,M1,V,gigantopyramidal,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
-Leontopithecus rosalia,species,M1,V,gigantopyramidal,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
-Lycaon pictus,species,M1,V,gigantopyramidal,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
-Neofelis nebulosa,species,M1,V,gigantopyramidal,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
-Panthera leo,species,M1,V,gigantopyramidal,total_dendritic_length,um,2,Jacobs_etal_2018_Table5 | Nguyen_etal_2019_Table2,2
+African lion,species,M1,V,gigantopyramidal,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+African wild dog,species,M1,V,gigantopyramidal,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+Blue wildebeest,species,M1,V,gigantopyramidal,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+Caracal,species,M1,V,gigantopyramidal,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+Chacma baboon,species,M1,V,gigantopyramidal,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+Clouded leopard,species,M1,V,gigantopyramidal,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+Domestic dog,species,M1,V,gigantopyramidal,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+Giraffe,species,M1,V,gigantopyramidal,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+Golden lion tamarin,species,M1,V,gigantopyramidal,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+Human,species,M1,V,gigantopyramidal,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+Kudu,species,M1,V,gigantopyramidal,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+Mountain zebra,species,M1,V,gigantopyramidal,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+Panthera leo,species,M1,V,gigantopyramidal,total_dendritic_length,um,1,Nguyen_etal_2019_Table2,1
 Panthera pardus,species,M1,V,gigantopyramidal,total_dendritic_length,um,1,Nguyen_etal_2019_Table2,1
-Panthera tigris altaica,species,M1,V,gigantopyramidal,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
-Papio ursinus,species,M1,V,gigantopyramidal,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
-Tragelaphus strepsiceros,species,M1,V,gigantopyramidal,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+Plains zebra,species,M1,V,gigantopyramidal,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+Ring-tailed lemur,species,M1,V,gigantopyramidal,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+Siberian tiger,species,M1,V,gigantopyramidal,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
 Acinonyx jubatus,species,M1,not reported,horizontal,total_dendritic_length,um,1,Nguyen_etal_2019_Table2,1
 Panthera pardus,species,M1,not reported,horizontal,total_dendritic_length,um,1,Nguyen_etal_2019_Table2,1
 Panthera pardus,species,V1,not reported,horizontal,total_dendritic_length,um,1,Nguyen_etal_2019_Table2,1
@@ -1479,51 +1505,52 @@ Panthera pardus,species,frontal,not reported,multiapical,total_dendritic_length,
 Panthera pardus,species,V1,not reported,neurogliaform,total_dendritic_length,um,1,Nguyen_etal_2019_Table2,1
 Acinonyx jubatus,species,frontal,not reported,neurogliaform,total_dendritic_length,um,1,Nguyen_etal_2019_Table2,1
 Panthera pardus,species,frontal,not reported,neurogliaform,total_dendritic_length,um,1,Nguyen_etal_2019_Table2,1
-Canis lupus familiaris,species,M1,III,pyramidal_L3,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
-Caracal caracal,species,M1,III,pyramidal_L3,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
-Connochaetes taurinus,species,M1,III,pyramidal_L3,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
-Equus burchelli,species,M1,III,pyramidal_L3,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
-Equus zebra,species,M1,III,pyramidal_L3,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
-Giraffa camelopardalis,species,M1,III,pyramidal_L3,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
-Homo sapiens,species,M1,III,pyramidal_L3,total_dendritic_length,um,2,Bianchi_etal_2012_Table2 | Jacobs_etal_2018_Table5,2
-Lemur catta,species,M1,III,pyramidal_L3,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
-Leontopithecus rosalia,species,M1,III,pyramidal_L3,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
-Lycaon pictus,species,M1,III,pyramidal_L3,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
-Mungos mungo,species,M1,III,pyramidal_L3,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
-Neofelis nebulosa,species,M1,III,pyramidal_L3,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
-Notamacropus rufogriseus,species,M1,III,pyramidal_L3,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
-Oryctolagus cuniculus,species,M1,III,pyramidal_L3,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+African lion,species,M1,III,pyramidal_L3,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+African wild dog,species,M1,III,pyramidal_L3,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+Banded mongoose,species,M1,III,pyramidal_L3,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+Bennett’s wallaby,species,M1,III,pyramidal_L3,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+Blue wildebeest,species,M1,III,pyramidal_L3,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+Caracal,species,M1,III,pyramidal_L3,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+Chacma baboon,species,M1,III,pyramidal_L3,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+Clouded leopard,species,M1,III,pyramidal_L3,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+Domestic dog,species,M1,III,pyramidal_L3,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+Flemish giant rabbit,species,M1,III,pyramidal_L3,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+Giraffe,species,M1,III,pyramidal_L3,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+Golden lion tamarin,species,M1,III,pyramidal_L3,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+Homo sapiens,species,M1,III,pyramidal_L3,total_dendritic_length,um,1,Bianchi_etal_2012_Table2,1
+Human,species,M1,III,pyramidal_L3,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+Kudu,species,M1,III,pyramidal_L3,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+Mountain zebra,species,M1,III,pyramidal_L3,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
 Pan troglodytes,species,M1,III,pyramidal_L3,total_dendritic_length,um,1,Bianchi_etal_2012_Table2,1
-Panthera leo,species,M1,III,pyramidal_L3,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
-Panthera tigris altaica,species,M1,III,pyramidal_L3,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
-Papio ursinus,species,M1,III,pyramidal_L3,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
-Rattus norvegicus,species,M1,III,pyramidal_L3,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
-Tragelaphus strepsiceros,species,M1,III,pyramidal_L3,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+Plains zebra,species,M1,III,pyramidal_L3,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+Rat,species,M1,III,pyramidal_L3,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+Ring-tailed lemur,species,M1,III,pyramidal_L3,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+Siberian tiger,species,M1,III,pyramidal_L3,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
 Homo sapiens,species,PFC_area10,III,pyramidal_L3,total_dendritic_length,um,1,Bianchi_etal_2012_Table2,1
 Pan troglodytes,species,PFC_area10,III,pyramidal_L3,total_dendritic_length,um,1,Bianchi_etal_2012_Table2,1
 Homo sapiens,species,S1_3b,III,pyramidal_L3,total_dendritic_length,um,1,Bianchi_etal_2012_Table2,1
 Pan troglodytes,species,S1_3b,III,pyramidal_L3,total_dendritic_length,um,1,Bianchi_etal_2012_Table2,1
 Homo sapiens,species,V2,III,pyramidal_L3,total_dendritic_length,um,1,Bianchi_etal_2012_Table2,1
 Pan troglodytes,species,V2,III,pyramidal_L3,total_dendritic_length,um,1,Bianchi_etal_2012_Table2,1
-Canis lupus familiaris,species,M1,V,pyramidal_L5,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
-Caracal caracal,species,M1,V,pyramidal_L5,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
-Connochaetes taurinus,species,M1,V,pyramidal_L5,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
-Equus burchelli,species,M1,V,pyramidal_L5,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
-Equus zebra,species,M1,V,pyramidal_L5,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
-Giraffa camelopardalis,species,M1,V,pyramidal_L5,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
-Homo sapiens,species,M1,V,pyramidal_L5,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
-Lemur catta,species,M1,V,pyramidal_L5,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
-Leontopithecus rosalia,species,M1,V,pyramidal_L5,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
-Lycaon pictus,species,M1,V,pyramidal_L5,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
-Mungos mungo,species,M1,V,pyramidal_L5,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
-Neofelis nebulosa,species,M1,V,pyramidal_L5,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
-Notamacropus rufogriseus,species,M1,V,pyramidal_L5,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
-Oryctolagus cuniculus,species,M1,V,pyramidal_L5,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
-Panthera leo,species,M1,V,pyramidal_L5,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
-Panthera tigris altaica,species,M1,V,pyramidal_L5,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
-Papio ursinus,species,M1,V,pyramidal_L5,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
-Rattus norvegicus,species,M1,V,pyramidal_L5,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
-Tragelaphus strepsiceros,species,M1,V,pyramidal_L5,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+African lion,species,M1,V,pyramidal_L5,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+African wild dog,species,M1,V,pyramidal_L5,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+Banded mongoose,species,M1,V,pyramidal_L5,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+Bennett’s wallaby,species,M1,V,pyramidal_L5,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+Blue wildebeest,species,M1,V,pyramidal_L5,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+Caracal,species,M1,V,pyramidal_L5,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+Chacma baboon,species,M1,V,pyramidal_L5,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+Clouded leopard,species,M1,V,pyramidal_L5,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+Domestic dog,species,M1,V,pyramidal_L5,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+Flemish giant rabbit,species,M1,V,pyramidal_L5,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+Giraffe,species,M1,V,pyramidal_L5,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+Golden lion tamarin,species,M1,V,pyramidal_L5,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+Human,species,M1,V,pyramidal_L5,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+Kudu,species,M1,V,pyramidal_L5,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+Mountain zebra,species,M1,V,pyramidal_L5,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+Plains zebra,species,M1,V,pyramidal_L5,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+Rat,species,M1,V,pyramidal_L5,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+Ring-tailed lemur,species,M1,V,pyramidal_L5,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
+Siberian tiger,species,M1,V,pyramidal_L5,total_dendritic_length,um,1,Jacobs_etal_2018_Table5,1
 Acinonyx jubatus,species,M1,not reported,pyramidal_unspecified,total_dendritic_length,um,1,Nguyen_etal_2019_Table2,1
 Panthera leo,species,M1,not reported,pyramidal_unspecified,total_dendritic_length,um,1,Nguyen_etal_2019_Table2,1
 Panthera pardus,species,M1,not reported,pyramidal_unspecified,total_dendritic_length,um,1,Nguyen_etal_2019_Table2,1

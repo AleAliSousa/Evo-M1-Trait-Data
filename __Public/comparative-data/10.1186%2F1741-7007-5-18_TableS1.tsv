@@ -1,15 +1,15 @@
 table	structure	subregion	species_printed	species	is_average	measure	value	sd	units	n_areas	reference
-S1	Brain	Brain	rat	Rattus norvegicus	FALSE	CMRO2	0.084	0.019	ml/g/min	NA	Linde et al 1999
-S1	Brain	Brain	rat	Rattus norvegicus	FALSE	Total_O2_consumption	0.19	NA	ml/min	NA	Linde et al 1999
-S1	Brain	Brain	cat	Felis catus	FALSE	CMRO2	0.058	0.006	ml/g/min	NA	Stingele et al 1996
-S1	Brain	Brain	cat	Felis catus	FALSE	Total_O2_consumption	1.844	NA	ml/min	NA	Stingele et al 1996
-S1	Brain	Brain	dog	Canis lupus familiaris	FALSE	CMRO2	0.061	0.002	ml/g/min	NA	Nakanishi et al 1997
-S1	Brain	Brain	dog	Canis lupus familiaris	FALSE	Total_O2_consumption	4.392	NA	ml/min	NA	Nakanishi et al 1997
-S1	Brain	Brain	monkey	Macaca mulatta	FALSE	CMRO2	0.06	0.005	ml/g/min	NA	Nemoto et al 1994
-S1	Brain	Brain	monkey	Macaca mulatta	FALSE	Total_O2_consumption	6	NA	ml/min	NA	Nemoto et al 1994
-S1	Brain	Brain	sheep	Ovis aries	FALSE	CMRO2	0.049	0.007	ml/g/min	NA	Pell et al 1983
-S1	Brain	Brain	sheep	Ovis aries	FALSE	Total_O2_consumption	5.586	NA	ml/min	NA	Pell et al 1983
-S1	Brain	Brain	baboon	Papio anubis	FALSE	CMRO2	0.034	0.006	ml/g/min	NA	Sahlin et al 1987
-S1	Brain	Brain	baboon	Papio anubis	FALSE	Total_O2_consumption	4.658	NA	ml/min	NA	Sahlin et al 1987
-S1	Brain	Brain	human	Homo sapiens	FALSE	CMRO2	0.035	0.005	ml/g/min	NA	Clarke et al 1994; Madsen et al 1991
-S1	Brain	Brain	human	Homo sapiens	FALSE	Total_O2_consumption	48.615	NA	ml/min	NA	Clarke et al 1994; Madsen et al 1991
+S1	Brain	Brain	rat	NA	FALSE	CMRO2	0.084	0.019	ml/g/min	NA	Linde et al 1999
+S1	Brain	Brain	rat	NA	FALSE	Total_O2_consumption	0.19	NA	ml/min	NA	Linde et al 1999
+S1	Brain	Brain	cat	NA	FALSE	CMRO2	0.058	0.006	ml/g/min	NA	Stingele et al 1996
+S1	Brain	Brain	cat	NA	FALSE	Total_O2_consumption	1.844	NA	ml/min	NA	Stingele et al 1996
+S1	Brain	Brain	dog	NA	FALSE	CMRO2	0.061	0.002	ml/g/min	NA	Nakanishi et al 1997
+S1	Brain	Brain	dog	NA	FALSE	Total_O2_consumption	4.392	NA	ml/min	NA	Nakanishi et al 1997
+S1	Brain	Brain	monkey	NA	FALSE	CMRO2	0.06	0.005	ml/g/min	NA	Nemoto et al 1994
+S1	Brain	Brain	monkey	NA	FALSE	Total_O2_consumption	6	NA	ml/min	NA	Nemoto et al 1994
+S1	Brain	Brain	sheep	NA	FALSE	CMRO2	0.049	0.007	ml/g/min	NA	Pell et al 1983
+S1	Brain	Brain	sheep	NA	FALSE	Total_O2_consumption	5.586	NA	ml/min	NA	Pell et al 1983
+S1	Brain	Brain	baboon	NA	FALSE	CMRO2	0.034	0.006	ml/g/min	NA	Sahlin et al 1987
+S1	Brain	Brain	baboon	NA	FALSE	Total_O2_consumption	4.658	NA	ml/min	NA	Sahlin et al 1987
+S1	Brain	Brain	human	NA	FALSE	CMRO2	0.035	0.005	ml/g/min	NA	Clarke et al 1994; Madsen et al 1991
+S1	Brain	Brain	human	NA	FALSE	Total_O2_consumption	48.615	NA	ml/min	NA	Clarke et al 1994; Madsen et al 1991

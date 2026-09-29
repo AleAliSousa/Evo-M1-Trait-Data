@@ -1,30 +1,30 @@
 table,structure,subregion,species_printed,species,is_average,measure,value,sd,units,n_areas,reference
-S22,Brain stem,Superior colliculus,mouse,Mus musculus,FALSE,CMRgl,0.93,0.08,umol/g/min,NA,Bouilleret et al 2000
-S22,Brain stem,Superior colliculus,mouse,Mus musculus,FALSE,CMRgl,0.87,0.1,umol/g/min,NA,"Quelven et al 2004, estim."
-S22,Brain stem,Superior colliculus,average mouse,Mus musculus,TRUE,CMRgl,0.9,0.09,umol/g/min,NA,
-S22,Brain stem,Superior colliculus,rat,Rattus norvegicus,FALSE,CMRgl,0.76,0.03,umol/g/min,NA,Nehling et al 1988
-S22,Brain stem,Superior colliculus,rat,Rattus norvegicus,FALSE,CMRgl,0.67,0.13,umol/g/min,NA,Dube et al 2001
-S22,Brain stem,Superior colliculus,rat,Rattus norvegicus,FALSE,CMRgl,0.71,0.05,umol/g/min,NA,Waschke et al 1993
-S22,Brain stem,Superior colliculus,rat,Rattus norvegicus,FALSE,CMRgl,0.73,0.07,umol/g/min,NA,Levant et al 2004
-S22,Brain stem,Superior colliculus,average rat,Rattus norvegicus,TRUE,CMRgl,0.72,0.08,umol/g/min,NA,
-S22,Brain stem,Superior colliculus,rabbit,Oryctolagus cuniculus,FALSE,CMRgl,0.62,0.01,umol/g/min,NA,Passero et al 1981
-S22,Brain stem,Superior colliculus,cat,Felis catus,FALSE,CMRgl,0.86,0.2,umol/g/min,NA,Chugani et al 1991
-S22,Brain stem,Superior colliculus,cat,Felis catus,FALSE,CMRgl,0.82,0.08,umol/g/min,NA,Sokoloff 1984
-S22,Brain stem,Superior colliculus,average cat,Felis catus,TRUE,CMRgl,0.84,0.14,umol/g/min,NA,
-S22,Brain stem,Superior colliculus,monkey,Macaca mulatta,FALSE,CMRgl,0.55,0.04,umol/g/min,NA,Kennedy et al 1978
-S22,Brain stem,Superior colliculus,monkey,Macaca mulatta,FALSE,CMRgl,0.55,0.03,umol/g/min,NA,Palombo et al 1990
-S22,Brain stem,Superior colliculus,average monkey,Macaca mulatta,TRUE,CMRgl,0.55,0.04,umol/g/min,NA,
-S22,Brain stem,Inferior colliculus,mouse,Mus musculus,FALSE,CMRgl,0.99,0.05,umol/g/min,NA,"Quelven et al 2004, estim."
-S22,Brain stem,Inferior colliculus,rat,Rattus norvegicus,FALSE,CMRgl,1.64,0.05,umol/g/min,NA,Nehling et al 1988
-S22,Brain stem,Inferior colliculus,rat,Rattus norvegicus,FALSE,CMRgl,1.7,0.15,umol/g/min,NA,Nehling et al 2000
-S22,Brain stem,Inferior colliculus,rat,Rattus norvegicus,FALSE,CMRgl,1.14,0.22,umol/g/min,NA,Dube et al 2001
-S22,Brain stem,Inferior colliculus,rat,Rattus norvegicus,FALSE,CMRgl,1.27,0.25,umol/g/min,NA,Waschke et al 1993
-S22,Brain stem,Inferior colliculus,rat,Rattus norvegicus,FALSE,CMRgl,1.71,0.05,umol/g/min,NA,Levant et al 2004
-S22,Brain stem,Inferior colliculus,average rat,Rattus norvegicus,TRUE,CMRgl,1.49,0.2,umol/g/min,NA,
-S22,Brain stem,Inferior colliculus,rabbit,Oryctolagus cuniculus,FALSE,CMRgl,1.26,0.03,umol/g/min,NA,Passero et al 1981
-S22,Brain stem,Inferior colliculus,cat,Felis catus,FALSE,CMRgl,2.03,0.74,umol/g/min,NA,Chugani et al 1991
-S22,Brain stem,Inferior colliculus,cat,Felis catus,FALSE,CMRgl,1.71,0.2,umol/g/min,NA,Sokoloff 1984
-S22,Brain stem,Inferior colliculus,average cat,Felis catus,TRUE,CMRgl,1.87,0.5,umol/g/min,NA,
-S22,Brain stem,Inferior colliculus,monkey,Macaca mulatta,FALSE,CMRgl,1.03,0.06,umol/g/min,NA,Kennedy et al 1978
-S22,Brain stem,Inferior colliculus,monkey,Macaca mulatta,FALSE,CMRgl,1.3,0.05,umol/g/min,NA,Palombo et al 1990
-S22,Brain stem,Inferior colliculus,average monkey,Macaca mulatta,TRUE,CMRgl,1.17,0.06,umol/g/min,NA,
+S22,Brain stem,Superior colliculus,mouse,NA,FALSE,CMRgl,0.93,0.08,umol/g/min,NA,Bouilleret et al 2000
+S22,Brain stem,Superior colliculus,mouse,NA,FALSE,CMRgl,0.87,0.1,umol/g/min,NA,"Quelven et al 2004, estim."
+S22,Brain stem,Superior colliculus,average mouse,NA,TRUE,CMRgl,0.9,0.09,umol/g/min,NA,
+S22,Brain stem,Superior colliculus,rat,NA,FALSE,CMRgl,0.76,0.03,umol/g/min,NA,Nehling et al 1988
+S22,Brain stem,Superior colliculus,rat,NA,FALSE,CMRgl,0.67,0.13,umol/g/min,NA,Dube et al 2001
+S22,Brain stem,Superior colliculus,rat,NA,FALSE,CMRgl,0.71,0.05,umol/g/min,NA,Waschke et al 1993
+S22,Brain stem,Superior colliculus,rat,NA,FALSE,CMRgl,0.73,0.07,umol/g/min,NA,Levant et al 2004
+S22,Brain stem,Superior colliculus,average rat,NA,TRUE,CMRgl,0.72,0.08,umol/g/min,NA,
+S22,Brain stem,Superior colliculus,rabbit,NA,FALSE,CMRgl,0.62,0.01,umol/g/min,NA,Passero et al 1981
+S22,Brain stem,Superior colliculus,cat,NA,FALSE,CMRgl,0.86,0.2,umol/g/min,NA,Chugani et al 1991
+S22,Brain stem,Superior colliculus,cat,NA,FALSE,CMRgl,0.82,0.08,umol/g/min,NA,Sokoloff 1984
+S22,Brain stem,Superior colliculus,average cat,NA,TRUE,CMRgl,0.84,0.14,umol/g/min,NA,
+S22,Brain stem,Superior colliculus,monkey,NA,FALSE,CMRgl,0.55,0.04,umol/g/min,NA,Kennedy et al 1978
+S22,Brain stem,Superior colliculus,monkey,NA,FALSE,CMRgl,0.55,0.03,umol/g/min,NA,Palombo et al 1990
+S22,Brain stem,Superior colliculus,average monkey,NA,TRUE,CMRgl,0.55,0.04,umol/g/min,NA,
+S22,Brain stem,Inferior colliculus,mouse,NA,FALSE,CMRgl,0.99,0.05,umol/g/min,NA,"Quelven et al 2004, estim."
+S22,Brain stem,Inferior colliculus,rat,NA,FALSE,CMRgl,1.64,0.05,umol/g/min,NA,Nehling et al 1988
+S22,Brain stem,Inferior colliculus,rat,NA,FALSE,CMRgl,1.7,0.15,umol/g/min,NA,Nehling et al 2000
+S22,Brain stem,Inferior colliculus,rat,NA,FALSE,CMRgl,1.14,0.22,umol/g/min,NA,Dube et al 2001
+S22,Brain stem,Inferior colliculus,rat,NA,FALSE,CMRgl,1.27,0.25,umol/g/min,NA,Waschke et al 1993
+S22,Brain stem,Inferior colliculus,rat,NA,FALSE,CMRgl,1.71,0.05,umol/g/min,NA,Levant et al 2004
+S22,Brain stem,Inferior colliculus,average rat,NA,TRUE,CMRgl,1.49,0.2,umol/g/min,NA,
+S22,Brain stem,Inferior colliculus,rabbit,NA,FALSE,CMRgl,1.26,0.03,umol/g/min,NA,Passero et al 1981
+S22,Brain stem,Inferior colliculus,cat,NA,FALSE,CMRgl,2.03,0.74,umol/g/min,NA,Chugani et al 1991
+S22,Brain stem,Inferior colliculus,cat,NA,FALSE,CMRgl,1.71,0.2,umol/g/min,NA,Sokoloff 1984
+S22,Brain stem,Inferior colliculus,average cat,NA,TRUE,CMRgl,1.87,0.5,umol/g/min,NA,
+S22,Brain stem,Inferior colliculus,monkey,NA,FALSE,CMRgl,1.03,0.06,umol/g/min,NA,Kennedy et al 1978
+S22,Brain stem,Inferior colliculus,monkey,NA,FALSE,CMRgl,1.3,0.05,umol/g/min,NA,Palombo et al 1990
+S22,Brain stem,Inferior colliculus,average monkey,NA,TRUE,CMRgl,1.17,0.06,umol/g/min,NA,

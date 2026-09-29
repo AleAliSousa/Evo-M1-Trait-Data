@@ -1,18 +1,18 @@
 table,structure,subregion,species_printed,species,is_average,measure,value,sd,units,n_areas,reference
-S3,Visual cortex,Visual cortex,mouse,Mus musculus,FALSE,CMRgl,1.11,0.12,umol/g/min,NA,"Quelven et al 2004, estim."
-S3,Visual cortex,Visual cortex,rat,Rattus norvegicus,FALSE,CMRgl,0.86,0.14,umol/g/min,NA,Waschke et al 1993
-S3,Visual cortex,Visual cortex,rat,Rattus norvegicus,FALSE,CMRgl,0.82,0.12,umol/g/min,NA,Dube et al 2001
-S3,Visual cortex,Visual cortex,rat,Rattus norvegicus,FALSE,CMRgl,0.97,0.05,umol/g/min,NA,Nehling et al 1988
-S3,Visual cortex,Visual cortex,rat,Rattus norvegicus,FALSE,CMRgl,1,0.1,umol/g/min,NA,Nehling et al 2000
-S3,Visual cortex,Visual cortex,average rat,Rattus norvegicus,TRUE,CMRgl,0.91,0.11,umol/g/min,NA,
-S3,Visual cortex,Visual cortex,rabbit,Oryctolagus cuniculus,FALSE,CMRgl,0.76,0.09,umol/g/min,NA,Passero et al 1981
-S3,Visual cortex,Visual cortex,cat,Felis catus,FALSE,CMRgl,0.52,0.03,umol/g/min,NA,Herdman et al 1989
-S3,Visual cortex,Visual cortex,cat,Felis catus,FALSE,CMRgl,0.95,0.09,umol/g/min,NA,Sokoloff 1984
-S3,Visual cortex,Visual cortex,cat,Felis catus,FALSE,CMRgl,0.89,0.03,umol/g/min,NA,Schwartzman et al 1986
-S3,Visual cortex,Visual cortex,average cat,Felis catus,TRUE,CMRgl,0.79,0.05,umol/g/min,NA,
-S3,Visual cortex,Visual cortex,monkey,Macaca mulatta,FALSE,CMRgl,0.59,0.02,umol/g/min,NA,Kennedy et al 1978
-S3,Visual cortex,Visual cortex,monkey,Macaca mulatta,FALSE,CMRgl,0.66,0.02,umol/g/min,NA,Palombo et al 1990
-S3,Visual cortex,Visual cortex,average monkey,Macaca mulatta,TRUE,CMRgl,0.63,0.02,umol/g/min,NA,
-S3,Visual cortex,Visual cortex,human,Homo sapiens,FALSE,CMRgl,0.39,0.05,umol/g/min,NA,De Volder et al 1997
-S3,Visual cortex,Visual cortex,human,Homo sapiens,FALSE,CMRgl,0.37,0.04,umol/g/min,NA,Heiss et al 1985
-S3,Visual cortex,Visual cortex,average human,Homo sapiens,TRUE,CMRgl,0.38,0.05,umol/g/min,NA,
+S3,Visual cortex,Visual cortex,mouse,NA,FALSE,CMRgl,1.11,0.12,umol/g/min,NA,"Quelven et al 2004, estim."
+S3,Visual cortex,Visual cortex,rat,NA,FALSE,CMRgl,0.86,0.14,umol/g/min,NA,Waschke et al 1993
+S3,Visual cortex,Visual cortex,rat,NA,FALSE,CMRgl,0.82,0.12,umol/g/min,NA,Dube et al 2001
+S3,Visual cortex,Visual cortex,rat,NA,FALSE,CMRgl,0.97,0.05,umol/g/min,NA,Nehling et al 1988
+S3,Visual cortex,Visual cortex,rat,NA,FALSE,CMRgl,1,0.1,umol/g/min,NA,Nehling et al 2000
+S3,Visual cortex,Visual cortex,average rat,NA,TRUE,CMRgl,0.91,0.11,umol/g/min,NA,
+S3,Visual cortex,Visual cortex,rabbit,NA,FALSE,CMRgl,0.76,0.09,umol/g/min,NA,Passero et al 1981
+S3,Visual cortex,Visual cortex,cat,NA,FALSE,CMRgl,0.52,0.03,umol/g/min,NA,Herdman et al 1989
+S3,Visual cortex,Visual cortex,cat,NA,FALSE,CMRgl,0.95,0.09,umol/g/min,NA,Sokoloff 1984
+S3,Visual cortex,Visual cortex,cat,NA,FALSE,CMRgl,0.89,0.03,umol/g/min,NA,Schwartzman et al 1986
+S3,Visual cortex,Visual cortex,average cat,NA,TRUE,CMRgl,0.79,0.05,umol/g/min,NA,
+S3,Visual cortex,Visual cortex,monkey,NA,FALSE,CMRgl,0.59,0.02,umol/g/min,NA,Kennedy et al 1978
+S3,Visual cortex,Visual cortex,monkey,NA,FALSE,CMRgl,0.66,0.02,umol/g/min,NA,Palombo et al 1990
+S3,Visual cortex,Visual cortex,average monkey,NA,TRUE,CMRgl,0.63,0.02,umol/g/min,NA,
+S3,Visual cortex,Visual cortex,human,NA,FALSE,CMRgl,0.39,0.05,umol/g/min,NA,De Volder et al 1997
+S3,Visual cortex,Visual cortex,human,NA,FALSE,CMRgl,0.37,0.04,umol/g/min,NA,Heiss et al 1985
+S3,Visual cortex,Visual cortex,average human,NA,TRUE,CMRgl,0.38,0.05,umol/g/min,NA,

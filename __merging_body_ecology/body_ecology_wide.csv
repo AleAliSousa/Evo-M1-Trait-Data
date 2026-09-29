@@ -1540,7 +1540,7 @@
 "Dasyprocta kalinowskii","2650.03",,,,,,,,"10","0","0","0","0","0","40","0","0","50","3","Other plant","Herbivore","Ground","Diurnal"
 "Dasyprocta leporina","2873","1558.48","0.5287","17.8","112","140","1","193","10","0","0","0","0","0","40","0","0","50","3","Other plant","Herbivore","Ground","Diurnal"
 "Dasyprocta mexicana","5000",,,,,,,,"10","0","0","0","0","0","40","0","0","50","3","Other plant","Herbivore","Ground","Diurnal"
-"Dasyprocta prymnolopha","2871.505",,,,,,,,"10","0","0","0","0","0","40","0","0","50","3","Other plant","Herbivore","Ground","Diurnal"
+"Dasyprocta prymnolopha","2881.0033",,,,,,,,"10","0","0","0","0","0","40","0","0","50","3","Other plant","Herbivore","Ground","Diurnal"
 "Dasyprocta punctata","3172",,,,,,,,"10","0","0","0","0","0","40","0","0","50","3","Other plant","Herbivore","Ground","Diurnal"
 "Dasyprocta ruatanica","2857.13",,,,,,,,"10","0","0","0","0","0","40","0","0","50","3","Other plant","Herbivore","Ground","Diurnal"
 "Dasypus hybridus","1500",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Ground","Nocturnal"
@@ -2222,7 +2222,7 @@
 "Glauconycteris variegata","11.25",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Glironia venusta","114",,,,,,,,"40","0","0","0","20","0","20","0","20","0","4","Invertebrates","Omnivore","Arboreal","Nocturnal"
 "Glirulus japonicus","25",,,,,,,,"30","0","0","0","20","0","30","0","20","0","4","Invertebrates","Omnivore","Arboreal","Nocturnal"
-"Glis glis","148",,,,,,,,"0","0","0","0","0","0","40","0","60","0","2","Seed","Herbivore","Arboreal","Nocturnal"
+"Glis glis","148",,,,,,,,,,,,,,,,,,,,,,
 "Glischropus javanus","5.91",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Glischropus tylopus","4.9",,,,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Globicephala macrorhynchus","612666.6633",,,"63","452","730","1","3470","90","0","0","10","0","0","0","0","0","0","2","Invertebrates","Faunivore","Marine","Nocturnal"
@@ -3880,7 +3880,7 @@
 "Myotis yumanensis","5.2883","11.18","1.886",,,,,,"100","0","0","0","0","0","0","0","0","0","1","Invertebrates","Faunivore","Aerial","Nocturnal"
 "Myotomys sloggetti","109.775","134","1.1827",,,,,,"0","0","0","0","0","0","10","0","10","80","3","Other plant","Herbivore","Ground","Cathemeral"
 "Myotomys unisulcatus","99.25","106.6","1.1104",,,,,,"0","0","0","0","0","0","10","0","10","80","3","Other plant","Herbivore","Ground","Cathemeral"
-"Myoxus glis","200","112.895","0.8306",,,,,,,,,,,,,,,,,,,,
+"Myoxus glis","200","112.895","0.8306",,,,,,"0","0","0","0","0","0","40","0","60","0","2","Seed","Herbivore","Arboreal","Nocturnal"
 "Myrmecia croslandi","0.003",,,,,,,,,,,,,,,,,,,,,,
 "Myrmecia gulosa","0.004",,,,,,,,,,,,,,,,,,,,,,
 "Myrmecia midas","0.004",,,,,,,,,,,,,,,,,,,,,,
@@ -4357,7 +4357,6 @@
 "Osgoodomys banderanus","50",,,,,,,,"30","0","0","0","0","0","30","0","40","0","3","Seed","Herbivore","Scansorial","Nocturnal"
 "Osphranter antilopinus","31286",,,,,,,,"0","0","0","0","0","0","0","0","0","100","1","Other plant","Herbivore","Ground","Nocturnal"
 "Osphranter bernardus","17000",,,,,,,,"0","0","0","0","0","0","0","0","0","100","1","Other plant","Herbivore","Ground","Nocturnal"
-"Osphranter rufus","46250",,,,,,,,,,,,,,,,,,,,,,
 "Ostrich","1e+05",,,,,,,,,,,,,,,,,,,,,,
 "Otaria byronia","222000",,,,,,,,,,,,,,,,,,,,,,
 "Otaria flavescens","207835.265",,,,,,,,"40","0","0","60","0","0","0","0","0","0","2","Fish","Faunivore","Marine","Nocturnal"
@@ -4887,11 +4886,11 @@
 "Poiana leightoni","500",,,,,,,,"40","40","0","0","0","0","0","0","0","20","3","Invertebrates","Faunivore","Arboreal","Nocturnal"
 "Poiana richardsonii","500",,,,,,,,"20","20","0","0","0","0","0","0","40","20","4","Seed","Omnivore","Arboreal","Nocturnal"
 "Pomatomus saltatrix","2101.53",,,,,,,,,,,,,,,,,,,,,,
-"Pongo abelii","46521",,,,,,,,,,,,,,,,,,,,,,
+"Pongo abelii","48414.824",,,,,,,,"10","0","0","0","10","0","80","0","0","0","3","Fruit","Herbivore","Arboreal","Diurnal"
 "Pongo pygmaeus","57114.52","6301.7374","0.2851","59","248.5","1421.625","1","2555","10","0","0","0","10","0","80","0","0","0","3","Fruit","Herbivore","Arboreal","Diurnal"
 "Pongo pygmaeus morio","37497.3333",,,,,,,,,,,,,,,,,,,,,,
 "Pongo pygmaeus wurmbii","36741.5",,,,,,,,,,,,,,,,,,,,,,
-"Pongo sp.","54313.6667",,,,,,,,"10","0","0","0","10","0","80","0","0","0","3","Fruit","Herbivore","Arboreal","Diurnal"
+"Pongo sp.","54313.6667",,,,,,,,,,,,,,,,,,,,,,
 "Pontoporia blainvillei","37700",,,,,,,,"40","0","0","60","0","0","0","0","0","0","2","Fish","Faunivore","Marine","Diurnal"
 "Port Lincoln ringneck","137",,,,,,,,,,,,,,,,,,,,,,
 "Potamochoerus larvatus","48781.25",,,,,,,,"0","10","10","0","0","0","40","0","0","40","4","Fruit","Herbivore","Ground","Nocturnal"

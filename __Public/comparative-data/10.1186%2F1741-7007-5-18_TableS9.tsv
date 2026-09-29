@@ -1,13 +1,13 @@
 table	structure	subregion	species_printed	species	is_average	measure	value	sd	units	n_areas	reference
-S9	Occipital cortex	Occipital cortex	rat	Rattus norvegicus	FALSE	CMRgl	1	0.07	umol/g/min	NA	Levant et al 2004
-S9	Occipital cortex	Occipital cortex	rat	Rattus norvegicus	FALSE	CMRgl	0.83	0.09	umol/g/min	NA	Blin et al 1991
-S9	Occipital cortex	Occipital cortex	average rat	Rattus norvegicus	TRUE	CMRgl	0.92	0.08	umol/g/min	NA	
-S9	Occipital cortex	Occipital cortex	cat	Felis catus	FALSE	CMRgl	1.26	0.1	umol/g/min	NA	Lydic et al 1991
-S9	Occipital cortex	Occipital cortex	monkey	Macaca mulatta	FALSE	CMRgl	0.4	0.09	umol/g/min	NA	Noda et al 2002
-S9	Occipital cortex	Occipital cortex	baboon	Papio anubis	FALSE	CMRgl	0.33	0.06	umol/g/min	NA	Meguro et al 1999
-S9	Occipital cortex	Occipital cortex	human	Homo sapiens	FALSE	CMRgl	0.32	0.03	umol/g/min	NA	Redies et al 1989
-S9	Occipital cortex	Occipital cortex	human	Homo sapiens	FALSE	CMRgl	0.28	0.02	umol/g/min	NA	Blomqvist et al 1998
-S9	Occipital cortex	Occipital cortex	human	Homo sapiens	FALSE	CMRgl	0.29	0.05	umol/g/min	NA	Maquet et al 1992
-S9	Occipital cortex	Occipital cortex	human	Homo sapiens	FALSE	CMRgl	0.42	0.12	umol/g/min	NA	Haier et al 1992
-S9	Occipital cortex	Occipital cortex	human	Homo sapiens	FALSE	CMRgl	0.33	0.04	umol/g/min	NA	Bline et al 1991
-S9	Occipital cortex	Occipital cortex	average human	Homo sapiens	TRUE	CMRgl	0.33	0.05	umol/g/min	NA	
+S9	Occipital cortex	Occipital cortex	rat	NA	FALSE	CMRgl	1	0.07	umol/g/min	NA	Levant et al 2004
+S9	Occipital cortex	Occipital cortex	rat	NA	FALSE	CMRgl	0.83	0.09	umol/g/min	NA	Blin et al 1991
+S9	Occipital cortex	Occipital cortex	average rat	NA	TRUE	CMRgl	0.92	0.08	umol/g/min	NA	
+S9	Occipital cortex	Occipital cortex	cat	NA	FALSE	CMRgl	1.26	0.1	umol/g/min	NA	Lydic et al 1991
+S9	Occipital cortex	Occipital cortex	monkey	NA	FALSE	CMRgl	0.4	0.09	umol/g/min	NA	Noda et al 2002
+S9	Occipital cortex	Occipital cortex	baboon	NA	FALSE	CMRgl	0.33	0.06	umol/g/min	NA	Meguro et al 1999
+S9	Occipital cortex	Occipital cortex	human	NA	FALSE	CMRgl	0.32	0.03	umol/g/min	NA	Redies et al 1989
+S9	Occipital cortex	Occipital cortex	human	NA	FALSE	CMRgl	0.28	0.02	umol/g/min	NA	Blomqvist et al 1998
+S9	Occipital cortex	Occipital cortex	human	NA	FALSE	CMRgl	0.29	0.05	umol/g/min	NA	Maquet et al 1992
+S9	Occipital cortex	Occipital cortex	human	NA	FALSE	CMRgl	0.42	0.12	umol/g/min	NA	Haier et al 1992
+S9	Occipital cortex	Occipital cortex	human	NA	FALSE	CMRgl	0.33	0.04	umol/g/min	NA	Bline et al 1991
+S9	Occipital cortex	Occipital cortex	average human	NA	TRUE	CMRgl	0.33	0.05	umol/g/min	NA	

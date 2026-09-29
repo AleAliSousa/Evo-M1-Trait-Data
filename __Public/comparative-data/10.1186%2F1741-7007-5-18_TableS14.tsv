@@ -1,20 +1,20 @@
 table	structure	subregion	species_printed	species	is_average	measure	value	sd	units	n_areas	reference
-S14	Cerebellum	Cerebellum	mouse	Mus musculus	FALSE	CMRgl	0.98	0.1	umol/g/min	NA	Quelven et al 2004, estim.
-S14	Cerebellum	Cerebellum	rat	Rattus norvegicus	FALSE	CMRgl	0.61	0.02	umol/g/min	NA	Nehling et al 1988
-S14	Cerebellum	Cerebellum	rat	Rattus norvegicus	FALSE	CMRgl	0.68	0.08	umol/g/min	NA	Dube et al 2001
-S14	Cerebellum	Cerebellum	rat	Rattus norvegicus	FALSE	CMRgl	0.57	0.12	umol/g/min	NA	Waschke et al 1993
-S14	Cerebellum	Cerebellum	average rat	Rattus norvegicus	TRUE	CMRgl	0.62	0.07	umol/g/min	NA	
-S14	Cerebellum	Cerebellum	cat	Felis catus	FALSE	CMRgl	0.71	0.08	umol/g/min	NA	Sokoloff 1984
-S14	Cerebellum	Cerebellum	cat	Felis catus	FALSE	CMRgl	0.65	0.13	umol/g/min	NA	Chugani et al 1991
-S14	Cerebellum	Cerebellum	average cat	Felis catus	TRUE	CMRgl	0.68	0.11	umol/g/min	NA	
-S14	Cerebellum	Cerebellum	monkey	Macaca mulatta	FALSE	CMRgl	0.38	0.02	umol/g/min	NA	Kennedy et al 1978
-S14	Cerebellum	Cerebellum	monkey	Macaca mulatta	FALSE	CMRgl	0.27	0.06	umol/g/min	NA	Noda et al 2002
-S14	Cerebellum	Cerebellum	monkey	Macaca mulatta	FALSE	CMRgl	0.46	0.03	umol/g/min	NA	Palombo et al 1990
-S14	Cerebellum	Cerebellum	average monkey	Macaca mulatta	TRUE	CMRgl	0.37	0.03	umol/g/min	NA	
-S14	Cerebellum	Cerebellum	baboon	Papio anubis	FALSE	CMRgl	0.32	0.05	umol/g/min	NA	Meguro et al 1999
-S14	Cerebellum	Cerebellum	human	Homo sapiens	FALSE	CMRgl	0.33	0.05	umol/g/min	NA	De Volder et al 1997
-S14	Cerebellum	Cerebellum	human	Homo sapiens	FALSE	CMRgl	0.28	0.02	umol/g/min	NA	Blomqvist et al 1998
-S14	Cerebellum	Cerebellum	human	Homo sapiens	FALSE	CMRgl	0.32	0.06	umol/g/min	NA	Heiss et al 1985
-S14	Cerebellum	Cerebellum	human	Homo sapiens	FALSE	CMRgl	0.29	0.03	umol/g/min	NA	Blin et al 1991
-S14	Cerebellum	Cerebellum	human	Homo sapiens	FALSE	CMRgl	0.24	0.07	umol/g/min	NA	Maquet et al 1992
-S14	Cerebellum	Cerebellum	average human	Homo sapiens	TRUE	CMRgl	0.29	0.05	umol/g/min	NA	
+S14	Cerebellum	Cerebellum	mouse	NA	FALSE	CMRgl	0.98	0.1	umol/g/min	NA	Quelven et al 2004, estim.
+S14	Cerebellum	Cerebellum	rat	NA	FALSE	CMRgl	0.61	0.02	umol/g/min	NA	Nehling et al 1988
+S14	Cerebellum	Cerebellum	rat	NA	FALSE	CMRgl	0.68	0.08	umol/g/min	NA	Dube et al 2001
+S14	Cerebellum	Cerebellum	rat	NA	FALSE	CMRgl	0.57	0.12	umol/g/min	NA	Waschke et al 1993
+S14	Cerebellum	Cerebellum	average rat	NA	TRUE	CMRgl	0.62	0.07	umol/g/min	NA	
+S14	Cerebellum	Cerebellum	cat	NA	FALSE	CMRgl	0.71	0.08	umol/g/min	NA	Sokoloff 1984
+S14	Cerebellum	Cerebellum	cat	NA	FALSE	CMRgl	0.65	0.13	umol/g/min	NA	Chugani et al 1991
+S14	Cerebellum	Cerebellum	average cat	NA	TRUE	CMRgl	0.68	0.11	umol/g/min	NA	
+S14	Cerebellum	Cerebellum	monkey	NA	FALSE	CMRgl	0.38	0.02	umol/g/min	NA	Kennedy et al 1978
+S14	Cerebellum	Cerebellum	monkey	NA	FALSE	CMRgl	0.27	0.06	umol/g/min	NA	Noda et al 2002
+S14	Cerebellum	Cerebellum	monkey	NA	FALSE	CMRgl	0.46	0.03	umol/g/min	NA	Palombo et al 1990
+S14	Cerebellum	Cerebellum	average monkey	NA	TRUE	CMRgl	0.37	0.03	umol/g/min	NA	
+S14	Cerebellum	Cerebellum	baboon	NA	FALSE	CMRgl	0.32	0.05	umol/g/min	NA	Meguro et al 1999
+S14	Cerebellum	Cerebellum	human	NA	FALSE	CMRgl	0.33	0.05	umol/g/min	NA	De Volder et al 1997
+S14	Cerebellum	Cerebellum	human	NA	FALSE	CMRgl	0.28	0.02	umol/g/min	NA	Blomqvist et al 1998
+S14	Cerebellum	Cerebellum	human	NA	FALSE	CMRgl	0.32	0.06	umol/g/min	NA	Heiss et al 1985
+S14	Cerebellum	Cerebellum	human	NA	FALSE	CMRgl	0.29	0.03	umol/g/min	NA	Blin et al 1991
+S14	Cerebellum	Cerebellum	human	NA	FALSE	CMRgl	0.24	0.07	umol/g/min	NA	Maquet et al 1992
+S14	Cerebellum	Cerebellum	average human	NA	TRUE	CMRgl	0.29	0.05	umol/g/min	NA	

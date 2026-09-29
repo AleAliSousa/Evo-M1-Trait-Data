@@ -1,14 +1,14 @@
 table,structure,subregion,species_printed,species,is_average,measure,value,sd,units,n_areas,reference
-S10,Parietal cortex,Parietal cortex,rat,Rattus norvegicus,FALSE,CMRgl,0.77,0.08,umol/g/min,NA,Waschke et al 1993
-S10,Parietal cortex,Parietal cortex,rat,Rattus norvegicus,FALSE,CMRgl,0.89,0.11,umol/g/min,NA,Dube et al 2001
-S10,Parietal cortex,Parietal cortex,rat,Rattus norvegicus,FALSE,CMRgl,0.96,0.04,umol/g/min,NA,Levant et al 2004
-S10,Parietal cortex,Parietal cortex,average rat,Rattus norvegicus,TRUE,CMRgl,0.87,0.12,umol/g/min,NA,
-S10,Parietal cortex,Parietal cortex,rabbit,Oryctolagus cuniculus,FALSE,CMRgl,0.73,0.08,umol/g/min,NA,Passero et al 1981
-S10,Parietal cortex,Parietal cortex,cat,Felis catus,FALSE,CMRgl,0.69,0.08,umol/g/min,NA,Sokoloff 1984
-S10,Parietal cortex,Parietal cortex,monkey,Macaca mulatta,FALSE,CMRgl,0.47,0.04,umol/g/min,NA,Kennedy et al 1978
-S10,Parietal cortex,Parietal cortex,baboon,Papio anubis,FALSE,CMRgl,0.47,0.1,umol/g/min,NA,Meguro et al 1999
-S10,Parietal cortex,Parietal cortex,human,Homo sapiens,FALSE,CMRgl,0.27,0.02,umol/g/min,NA,Blomqvist et al 1998
-S10,Parietal cortex,Parietal cortex,human,Homo sapiens,FALSE,CMRgl,0.37,0.02,umol/g/min,NA,Heiss et al 1985
-S10,Parietal cortex,Parietal cortex,human,Homo sapiens,FALSE,CMRgl,0.43,0.15,umol/g/min,NA,Haier et al 1992
-S10,Parietal cortex,Parietal cortex,human,Homo sapiens,FALSE,CMRgl,0.33,0.04,umol/g/min,NA,Blin et al 1991
-S10,Parietal cortex,Parietal cortex,average human,Homo sapiens,TRUE,CMRgl,0.35,0.05,umol/g/min,NA,
+S10,Parietal cortex,Parietal cortex,rat,NA,FALSE,CMRgl,0.77,0.08,umol/g/min,NA,Waschke et al 1993
+S10,Parietal cortex,Parietal cortex,rat,NA,FALSE,CMRgl,0.89,0.11,umol/g/min,NA,Dube et al 2001
+S10,Parietal cortex,Parietal cortex,rat,NA,FALSE,CMRgl,0.96,0.04,umol/g/min,NA,Levant et al 2004
+S10,Parietal cortex,Parietal cortex,average rat,NA,TRUE,CMRgl,0.87,0.12,umol/g/min,NA,
+S10,Parietal cortex,Parietal cortex,rabbit,NA,FALSE,CMRgl,0.73,0.08,umol/g/min,NA,Passero et al 1981
+S10,Parietal cortex,Parietal cortex,cat,NA,FALSE,CMRgl,0.69,0.08,umol/g/min,NA,Sokoloff 1984
+S10,Parietal cortex,Parietal cortex,monkey,NA,FALSE,CMRgl,0.47,0.04,umol/g/min,NA,Kennedy et al 1978
+S10,Parietal cortex,Parietal cortex,baboon,NA,FALSE,CMRgl,0.47,0.1,umol/g/min,NA,Meguro et al 1999
+S10,Parietal cortex,Parietal cortex,human,NA,FALSE,CMRgl,0.27,0.02,umol/g/min,NA,Blomqvist et al 1998
+S10,Parietal cortex,Parietal cortex,human,NA,FALSE,CMRgl,0.37,0.02,umol/g/min,NA,Heiss et al 1985
+S10,Parietal cortex,Parietal cortex,human,NA,FALSE,CMRgl,0.43,0.15,umol/g/min,NA,Haier et al 1992
+S10,Parietal cortex,Parietal cortex,human,NA,FALSE,CMRgl,0.33,0.04,umol/g/min,NA,Blin et al 1991
+S10,Parietal cortex,Parietal cortex,average human,NA,TRUE,CMRgl,0.35,0.05,umol/g/min,NA,

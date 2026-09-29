@@ -1,26 +1,26 @@
 table,structure,subregion,species_printed,species,is_average,measure,value,sd,units,n_areas,reference
-S13,Thalamus,Thalamus,mouse,Mus musculus,FALSE,CMRgl,1.19,0.1,umol/g/min,NA,Bouilleret et al 2000
-S13,Thalamus,Thalamus,mouse,Mus musculus,FALSE,CMRgl,1.03,0.1,umol/g/min,NA,"Quelven et al 2004, estim."
-S13,Thalamus,Thalamus,average mouse,Mus musculus,TRUE,CMRgl,1.11,0.1,umol/g/min,NA,
-S13,Thalamus,Thalamus,rat,Rattus norvegicus,FALSE,CMRgl,0.92,0.03,umol/g/min,NA,Nehling et al 1988
-S13,Thalamus,Thalamus,rat,Rattus norvegicus,FALSE,CMRgl,0.88,0.08,umol/g/min,NA,Nehling et al 2000
-S13,Thalamus,Thalamus,rat,Rattus norvegicus,FALSE,CMRgl,0.94,0.14,umol/g/min,NA,Dube et al 2001
-S13,Thalamus,Thalamus,rat,Rattus norvegicus,FALSE,CMRgl,0.98,0.05,umol/g/min,NA,Levant et al 2004
-S13,Thalamus,Thalamus,rat,Rattus norvegicus,FALSE,CMRgl,0.72,0.09,umol/g/min,NA,Waschke et al 1993
-S13,Thalamus,Thalamus,average rat,Rattus norvegicus,TRUE,CMRgl,0.89,0.09,umol/g/min,NA,
-S13,Thalamus,Thalamus,rabbit,Oryctolagus cuniculus,FALSE,CMRgl,0.9,0.05,umol/g/min,NA,Passero et al 1981
-S13,Thalamus,Thalamus,cat,Felis catus,FALSE,CMRgl,0.81,0.11,umol/g/min,NA,Schwartzman et al 1986
-S13,Thalamus,Thalamus,cat,Felis catus,FALSE,CMRgl,0.85,0.15,umol/g/min,NA,Chugani et al 1991
-S13,Thalamus,Thalamus,cat,Felis catus,FALSE,CMRgl,0.86,0.08,umol/g/min,NA,Sokoloff 1984
-S13,Thalamus,Thalamus,average cat,Felis catus,TRUE,CMRgl,0.84,0.12,umol/g/min,NA,
-S13,Thalamus,Thalamus,monkey,Macaca mulatta,FALSE,CMRgl,0.41,0.04,umol/g/min,NA,Porrino et al 2002
-S13,Thalamus,Thalamus,monkey,Macaca mulatta,FALSE,CMRgl,0.47,0.02,umol/g/min,NA,Kennedy et al 1978
-S13,Thalamus,Thalamus,monkey,Macaca mulatta,FALSE,CMRgl,0.46,0.03,umol/g/min,NA,Palombo et al 1990
-S13,Thalamus,Thalamus,average monkey,Macaca mulatta,TRUE,CMRgl,0.45,0.03,umol/g/min,NA,
-S13,Thalamus,Thalamus,baboon,Papio anubis,FALSE,CMRgl,0.51,0.16,umol/g/min,NA,Meguro et al 1999
-S13,Thalamus,Thalamus,human,Homo sapiens,FALSE,CMRgl,0.39,0.05,umol/g/min,NA,De Volder et al 1997
-S13,Thalamus,Thalamus,human,Homo sapiens,FALSE,CMRgl,0.27,0.02,umol/g/min,NA,Blomqvist et al 1998
-S13,Thalamus,Thalamus,human,Homo sapiens,FALSE,CMRgl,0.36,0.03,umol/g/min,NA,Heiss et al 1985
-S13,Thalamus,Thalamus,human,Homo sapiens,FALSE,CMRgl,0.32,0.04,umol/g/min,NA,Blin et al 1991
-S13,Thalamus,Thalamus,human,Homo sapiens,FALSE,CMRgl,0.35,0.05,umol/g/min,NA,Maquet et al 1992
-S13,Thalamus,Thalamus,average human,Homo sapiens,TRUE,CMRgl,0.34,0.04,umol/g/min,NA,
+S13,Thalamus,Thalamus,mouse,NA,FALSE,CMRgl,1.19,0.1,umol/g/min,NA,Bouilleret et al 2000
+S13,Thalamus,Thalamus,mouse,NA,FALSE,CMRgl,1.03,0.1,umol/g/min,NA,"Quelven et al 2004, estim."
+S13,Thalamus,Thalamus,average mouse,NA,TRUE,CMRgl,1.11,0.1,umol/g/min,NA,
+S13,Thalamus,Thalamus,rat,NA,FALSE,CMRgl,0.92,0.03,umol/g/min,NA,Nehling et al 1988
+S13,Thalamus,Thalamus,rat,NA,FALSE,CMRgl,0.88,0.08,umol/g/min,NA,Nehling et al 2000
+S13,Thalamus,Thalamus,rat,NA,FALSE,CMRgl,0.94,0.14,umol/g/min,NA,Dube et al 2001
+S13,Thalamus,Thalamus,rat,NA,FALSE,CMRgl,0.98,0.05,umol/g/min,NA,Levant et al 2004
+S13,Thalamus,Thalamus,rat,NA,FALSE,CMRgl,0.72,0.09,umol/g/min,NA,Waschke et al 1993
+S13,Thalamus,Thalamus,average rat,NA,TRUE,CMRgl,0.89,0.09,umol/g/min,NA,
+S13,Thalamus,Thalamus,rabbit,NA,FALSE,CMRgl,0.9,0.05,umol/g/min,NA,Passero et al 1981
+S13,Thalamus,Thalamus,cat,NA,FALSE,CMRgl,0.81,0.11,umol/g/min,NA,Schwartzman et al 1986
+S13,Thalamus,Thalamus,cat,NA,FALSE,CMRgl,0.85,0.15,umol/g/min,NA,Chugani et al 1991
+S13,Thalamus,Thalamus,cat,NA,FALSE,CMRgl,0.86,0.08,umol/g/min,NA,Sokoloff 1984
+S13,Thalamus,Thalamus,average cat,NA,TRUE,CMRgl,0.84,0.12,umol/g/min,NA,
+S13,Thalamus,Thalamus,monkey,NA,FALSE,CMRgl,0.41,0.04,umol/g/min,NA,Porrino et al 2002
+S13,Thalamus,Thalamus,monkey,NA,FALSE,CMRgl,0.47,0.02,umol/g/min,NA,Kennedy et al 1978
+S13,Thalamus,Thalamus,monkey,NA,FALSE,CMRgl,0.46,0.03,umol/g/min,NA,Palombo et al 1990
+S13,Thalamus,Thalamus,average monkey,NA,TRUE,CMRgl,0.45,0.03,umol/g/min,NA,
+S13,Thalamus,Thalamus,baboon,NA,FALSE,CMRgl,0.51,0.16,umol/g/min,NA,Meguro et al 1999
+S13,Thalamus,Thalamus,human,NA,FALSE,CMRgl,0.39,0.05,umol/g/min,NA,De Volder et al 1997
+S13,Thalamus,Thalamus,human,NA,FALSE,CMRgl,0.27,0.02,umol/g/min,NA,Blomqvist et al 1998
+S13,Thalamus,Thalamus,human,NA,FALSE,CMRgl,0.36,0.03,umol/g/min,NA,Heiss et al 1985
+S13,Thalamus,Thalamus,human,NA,FALSE,CMRgl,0.32,0.04,umol/g/min,NA,Blin et al 1991
+S13,Thalamus,Thalamus,human,NA,FALSE,CMRgl,0.35,0.05,umol/g/min,NA,Maquet et al 1992
+S13,Thalamus,Thalamus,average human,NA,TRUE,CMRgl,0.34,0.04,umol/g/min,NA,

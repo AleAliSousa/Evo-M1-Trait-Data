@@ -12,7 +12,7 @@
 "Callithrix jacchus","Callithrix_jacchus","Omnivore","69","Frugivore in [38]; Updated here following [68]",
 "Callithrix pygmaea","Callithrix_pygmaea","Omnivore","38",,"Plavcan & van Schaik 1997"
 "Cebus albifrons","Cebus_albifrons","Omnivore","38",,"Kappeler & Heymann 1996"
-"Sapajus apella","Cebus_apella","Omnivore","38",,"Kappeler & Heymann 1996"
+"Cebus apella","Cebus_apella","Omnivore","38",,"Kappeler & Heymann 1996"
 "Cercocebus agilis","Cercocebus_agilis","Frugivore","38",,"Shah 2003"
 "Cercocebus torquatus","Cercocebus_torquatus_atys","Frugivore","38",,"Kappeler & Heymann 1996"
 "Cercopithecus ascanius","Cercopithecus_ascanius","Frugivore","38",,"Plavcan & van Schaik 1997"
@@ -29,11 +29,11 @@
 "Galagoides demidoff","Galagoides_demidoff","Omnivore","38",,"Kappeler & Heymann 1996"
 "Gorilla beringei","Gorilla_beringei","Folivore","38",,"Rothman et al. 2007"
 "Gorilla gorilla","Gorilla_gorilla_gorilla","Folivore","38",,"Plavcan & van Schaik 1997"
-"Gorilla gorilla graueri","Gorilla_gorilla_graueri","Folivore","Genus-level",,
+"Gorilla beringei","Gorilla_gorilla_graueri","Folivore","Genus-level",,
 "Hylobates lar","Hylobates_lar","Frugivore","38",,"Plavcan & van Schaik 1997"
 "Hylobates muelleri","Hylobates_muelleri","Frugivore","38","Frugivore/folivore in [38]","Kappeler & Heymann 1996"
 "Indri indri","Indri_indri","Folivore","38",,"Kappeler & Heymann 1996"
-"Lagothrix lagothricha","Lagothrix_lagotricha","Omnivore","38",,"Plavcan & van Schaik 1997"
+"Lagothrix lagotricha","Lagothrix_lagotricha","Omnivore","38",,"Plavcan & van Schaik 1997"
 "Lemur catta","Lemur_catta","Frugivore","38",,"Kappeler & Heymann 1996"
 "Leontopithecus rosalia","Leontopithecus_rosalia","Omnivore","38",,"Plavcan & van Schaik 1997"
 "Lepilemur ruficaudatus","Lepilemur_ruficaudatus","Folivore","38",,"Kappeler & Heymann 1996"
@@ -50,7 +50,7 @@
 "Nycticebus coucang","Nycticebus_coucang","Omnivore","38",,"Kappeler & Heymann 1996"
 "Otolemur crassicaudatus","Otolemur_crassicaudatus","Omnivore","38",,"Kappeler & Heymann 1996"
 "Pan paniscus","Pan_paniscus","Frugivore","38",,"Plavcan & van Schaik 1997"
-"Pan troglodytes","Pan_troglodytes_troglodytes","Frugivore","38",,"Plavcan & van Schaik 1997"
+"Pan troglodytes troglodytes","Pan_troglodytes_troglodytes","Frugivore","38",,"Plavcan & van Schaik 1997"
 "Papio anubis","Papio_anubis","Frugivore","38",,"Plavcan & van Schaik 1997"
 "Papio cynocephalus","Papio_cynocephalus","Frugivore","38",,"Plavcan & van Schaik 1997"
 "Papio hamadryas","Papio_hamadryas","Frugivore","38","Frugivore/folivore in [38]","Plavcan & van Schaik 1997"
@@ -58,7 +58,7 @@
 "Piliocolobus badius","Piliocolobus_badius","Folivore","38",,"Plavcan & van Schaik 1997"
 "Pithecia monachus","Pithecia_monachus","Frugivore","Genus-level",,
 "Pithecia pithecia","Pithecia_pithecia","Frugivore","38",,"Plavcan & van Schaik 1997"
-"Pongo sp.","Pongo_abelii","Frugivore","38",,"Fox et al. 2004"
+"Pongo abelii","Pongo_abelii","Frugivore","38",,"Fox et al. 2004"
 "Pongo pygmaeus","Pongo_pygmaeus","Frugivore","38",,"Plavcan & van Schaik 1997"
 "Propithecus verreauxi","Propithecus_verreauxi","Folivore","38",,"Kappeler & Heymann 1996"
 "Pygathrix nemaeus","Pygathrix_nemaeus","Folivore","38",,"Kappeler & Heymann 1996"
@@ -70,4 +70,4 @@
 "Symphalangus syndactylus","Symphalangus_syndactylus","Folivore","38",,"Plavcan & van Schaik 1997"
 "Tarsius syrichta","Tarsius_syrichta","Omnivore","38",,"Kappeler & Heymann 1996"
 "Trachypithecus francoisi","Trachypithecus_francoisi","Folivore","Genus-level",,
-"Varecia variegata","Varecia_variegata_variegata","Frugivore","38",,"Kappeler & Heymann 1996"
+"Varecia variegata variegata","Varecia_variegata_variegata","Frugivore","38",,"Kappeler & Heymann 1996"

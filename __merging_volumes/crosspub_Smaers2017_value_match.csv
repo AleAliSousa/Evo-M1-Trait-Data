@@ -1,6 +1,6 @@
 smaers2017_species,smaers2017_variable,smaers2017_value,matched_source,matched_variable,matched_value,pct_diff
 Alouatta_seniculus,frontal_motor_gray,1.077,(no match),,NA,NA
-Ateles_geoffroyi,frontal_motor_gray,3.119,Stephan_etal_1981_TableXVI,Corpus_pineal_Vol.mm3,3.1,0.61
+Ateles_geoffroyi,frontal_motor_gray,3.119,Bush_Allman_2004_b_TABLE1,Area_striata_grey_matter_Vol.mm3,3130,0.35
 Cebus_albifrons,frontal_motor_gray,1.977,Sherwood_etal_2005_Table1,Hypoglossal_nucleus_left_Vol.mm3,1.98,0.15
 Cercopithecus_ascanius,frontal_motor_gray,1.351,(no match),,NA,NA
 Cercopithecus_mitis,frontal_motor_gray,1.852,(no match),,NA,NA
@@ -42,7 +42,7 @@ Ateles_geoffroyi,other_association_gray,32.933,(no match),,NA,NA
 Cebus_albifrons,other_association_gray,21.024,Baron_etal_1988_Table1,Nucleus_vestibularis_superior_Vol.mm3,21.2,0.83
 Cercopithecus_ascanius,other_association_gray,16.06,(no match),,NA,NA
 Cercopithecus_mitis,other_association_gray,19.385,(no match),,NA,NA
-Gorilla_gorilla_gorilla,other_association_gray,125.539,Stephan_etal_1970_Table3,Body_Mass.g,125000,0.43
+Gorilla_gorilla_gorilla,other_association_gray,125.539,(no match),,NA,NA
 Homo_sapiens,other_association_gray,271.891,(no match),,NA,NA
 Hylobates_lar,other_association_gray,28.424,Baron_etal_1988_Table1,Nucleus_vestibularis_superior_Vol.mm3,28.9,1.65
 Lagothrix_lagotricha,other_association_gray,24.188,(no match),,NA,NA

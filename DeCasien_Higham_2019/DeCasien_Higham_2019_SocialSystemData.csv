@@ -12,7 +12,7 @@
 "Callithrix jacchus","Callithrix_jacchus","PL, UM, MMMF","Pair","Pair","Polymorphic; use designation in [38]: 3/3 sources = monogamous/polyandrous"
 "Callithrix pygmaea","Callithrix_pygmaea","PL, UM, MMMF","Pair","Pair","Polymorphic; use designation in [38]: 5/5 sources = monogamous/polyandrous"
 "Cebus albifrons","Cebus_albifrons","MMMF","Polygynandry","Group",
-"Sapajus apella","Cebus_apella","MMMF","Polygynandry","Group",
+"Cebus apella","Cebus_apella","MMMF","Polygynandry","Group",
 "Cercocebus agilis","Cercocebus_agilis","MMMF","Polygynandry","Group",
 "Cercocebus torquatus","Cercocebus_torquatus_atys","MMMF","Polygynandry","Group",
 "Cercopithecus ascanius","Cercopithecus_ascanius","MMMF","Polygyny","Group",
@@ -29,11 +29,11 @@
 "Galagoides demidoff","Galagoides_demidoff","S, PL, UM","Solitary","Pair","21% of time is spent in pairs [97]"
 "Gorilla beringei","Gorilla_beringei","NA","Polygyny","Group",
 "Gorilla gorilla","Gorilla_gorilla_gorilla","UM, MMMF","Polygyny","Group",
-"Gorilla gorilla graueri","Gorilla_gorilla_graueri","NA","NA","Group","Genus-level"
+"Gorilla beringei","Gorilla_gorilla_graueri","NA","NA","Group","Genus-level"
 "Hylobates lar","Hylobates_lar","PL","Pair","Pair",
 "Hylobates muelleri","Hylobates_muelleri","PL","Pair","Pair",
 "Indri indri","Indri_indri","PL","Pair","Pair",
-"Lagothrix lagothricha","Lagothrix_lagotricha","MMMF","Polygynandry","Group",
+"Lagothrix lagotricha","Lagothrix_lagotricha","MMMF","Polygynandry","Group",
 "Lemur catta","Lemur_catta","MMMF","Polygynandry","Group",
 "Leontopithecus rosalia","Leontopithecus_rosalia","PL, UM, MMMF","Pair","Pair","Polymorphic; use designation in [38]: 1/1 sources = monogamous"
 "Lepilemur ruficaudatus","Lepilemur_ruficaudatus","S","Solitary","Solitary",
@@ -50,7 +50,7 @@
 "Nycticebus coucang","Nycticebus_coucang","S","Solitary","Solitary",
 "Otolemur crassicaudatus","Otolemur_crassicaudatus","S, PL, UM","Solitary","Pair","Adult pairs sleep together [96]"
 "Pan paniscus","Pan_paniscus","MMMF","Polygynandry","Group",
-"Pan troglodytes","Pan_troglodytes_troglodytes","MMMF","Polygynandry","Group",
+"Pan troglodytes troglodytes","Pan_troglodytes_troglodytes","MMMF","Polygynandry","Group",
 "Papio anubis","Papio_anubis","MMMF","Polygynandry","Group",
 "Papio cynocephalus","Papio_cynocephalus","MMMF","Polygynandry","Group",
 "Papio hamadryas","Papio_hamadryas","UM, MMMF","Polygynandry","Group",
@@ -58,7 +58,7 @@
 "Piliocolobus badius","Piliocolobus_badius","MMMF","Polygynandry","Group",
 "Pithecia monachus","Pithecia_monachus","NA","NA","Pair","Occur primarily in two-adult groups throughout their range [99]"
 "Pithecia pithecia","Pithecia_pithecia","NA","NA","Pair","Occur primarily in two-adult groups throughout their range [99]"
-"Pongo sp.","Pongo_abelii","S, MMMF","Solitary","Solitary/Group","Analyses repeated"
+"Pongo abelii","Pongo_abelii","S, MMMF","Solitary","Solitary/Group","Analyses repeated"
 "Pongo pygmaeus","Pongo_pygmaeus","S, MMMF","Solitary","Solitary/Group","Analyses repeated"
 "Propithecus verreauxi","Propithecus_verreauxi","PL, UM, MMMF","Polygynandry","Group","Polymorphic; use designation in [38]: 6/6 sources = polygynous/polygynandrous"
 "Pygathrix nemaeus","Pygathrix_nemaeus","UM, MMMF","Polygynandry","Group",
@@ -70,4 +70,4 @@
 "Symphalangus syndactylus","Symphalangus_syndactylus","PL","Pair","Pair",
 "Tarsius syrichta","Tarsius_syrichta","S","Solitary","Solitary",
 "Trachypithecus francoisi","Trachypithecus_francoisi","UM","NA","Group",
-"Varecia variegata","Varecia_variegata_variegata","MMMF","Pair","Group","Group-living with fission-fusion dynamics [100]; follow designation in [94]"
+"Varecia variegata variegata","Varecia_variegata_variegata","MMMF","Pair","Group","Group-living with fission-fusion dynamics [100]; follow designation in [94]"

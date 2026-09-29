@@ -1,21 +1,21 @@
 table	structure	subregion	species_printed	species	is_average	measure	value	sd	units	n_areas	reference
-S2	Brain	Brain	mouse	Mus musculus	FALSE	CMRgl	0.89	0.14	umol/g/min	NA	Bouilleret et al 2000
-S2	Brain	Brain	mouse	Mus musculus	FALSE	Total_glucose_utilization	0.32	NA	umol/min	NA	Bouilleret et al 2000
-S2	Brain	Brain	rat	Rattus norvegicus	FALSE	CMRgl	0.68	0.04	umol/g/min	NA	Nehlig et al 1988; Waschke et al 1993; Levant et al 2004
-S2	Brain	Brain	rat	Rattus norvegicus	FALSE	Total_glucose_utilization	1.52	NA	umol/min	NA	Nehlig et al 1988; Waschke et al 1993; Levant et al 2004
-S2	Brain	Brain	squirrel	Spermophilus tridecemlineatus	FALSE	CMRgl	0.6	0.18	umol/g/min	NA	Frerichs et al 1995
-S2	Brain	Brain	squirrel	Spermophilus tridecemlineatus	FALSE	Total_glucose_utilization	3.88	NA	umol/min	NA	Frerichs et al 1995
-S2	Brain	Brain	rabbit	Oryctolagus cuniculus	FALSE	CMRgl	0.69	0.05	umol/g/min	NA	Passero et al 1981
-S2	Brain	Brain	rabbit	Oryctolagus cuniculus	FALSE	Total_glucose_utilization	7.93	NA	umol/min	NA	Passero et al 1981
-S2	Brain	Brain	cat	Felis catus	FALSE	CMRgl	0.69	0.19	umol/g/min	NA	Chugani et al 1991; Sokoloff 1984
-S2	Brain	Brain	cat	Felis catus	FALSE	Total_glucose_utilization	21.78	NA	umol/min	NA	Chugani et al 1991; Sokoloff 1984
-S2	Brain	Brain	monkey	Macaca mulatta	FALSE	CMRgl	0.36	0.03	umol/g/min	NA	Kennedy et al 1978
-S2	Brain	Brain	monkey	Macaca mulatta	FALSE	Total_glucose_utilization	35.98	NA	umol/min	NA	Kennedy et al 1978
-S2	Brain	Brain	sheep	Ovis aries	FALSE	CMRgl	0.35	0.03	umol/g/min	NA	Pell et al 1983
-S2	Brain	Brain	sheep	Ovis aries	FALSE	Total_glucose_utilization	40.18	NA	umol/min	NA	Pell et al 1983
-S2	Brain	Brain	goat	Capra aegagrus hircus	FALSE	CMRgl	0.35	0.04	umol/g/min	NA	Pelligrino et al 1987
-S2	Brain	Brain	goat	Capra aegagrus hircus	FALSE	Total_glucose_utilization	40.09	NA	umol/min	NA	Pelligrino et al 1987
-S2	Brain	Brain	baboon	Papio anubis	FALSE	CMRgl	0.44	0.08	umol/g/min	NA	Meguro et al 1999
-S2	Brain	Brain	baboon	Papio anubis	FALSE	Total_glucose_utilization	60.4	NA	umol/min	NA	Meguro et al 1999
-S2	Brain	Brain	human	Homo sapiens	FALSE	CMRgl	0.31	0.03	umol/g/min	NA	Clarke et al 1994
-S2	Brain	Brain	human	Homo sapiens	FALSE	Total_glucose_utilization	428.55	NA	umol/min	NA	Clarke et al 1994
+S2	Brain	Brain	mouse	NA	FALSE	CMRgl	0.89	0.14	umol/g/min	NA	Bouilleret et al 2000
+S2	Brain	Brain	mouse	NA	FALSE	Total_glucose_utilization	0.32	NA	umol/min	NA	Bouilleret et al 2000
+S2	Brain	Brain	rat	NA	FALSE	CMRgl	0.68	0.04	umol/g/min	NA	Nehlig et al 1988; Waschke et al 1993; Levant et al 2004
+S2	Brain	Brain	rat	NA	FALSE	Total_glucose_utilization	1.52	NA	umol/min	NA	Nehlig et al 1988; Waschke et al 1993; Levant et al 2004
+S2	Brain	Brain	squirrel	NA	FALSE	CMRgl	0.6	0.18	umol/g/min	NA	Frerichs et al 1995
+S2	Brain	Brain	squirrel	NA	FALSE	Total_glucose_utilization	3.88	NA	umol/min	NA	Frerichs et al 1995
+S2	Brain	Brain	rabbit	NA	FALSE	CMRgl	0.69	0.05	umol/g/min	NA	Passero et al 1981
+S2	Brain	Brain	rabbit	NA	FALSE	Total_glucose_utilization	7.93	NA	umol/min	NA	Passero et al 1981
+S2	Brain	Brain	cat	NA	FALSE	CMRgl	0.69	0.19	umol/g/min	NA	Chugani et al 1991; Sokoloff 1984
+S2	Brain	Brain	cat	NA	FALSE	Total_glucose_utilization	21.78	NA	umol/min	NA	Chugani et al 1991; Sokoloff 1984
+S2	Brain	Brain	monkey	NA	FALSE	CMRgl	0.36	0.03	umol/g/min	NA	Kennedy et al 1978
+S2	Brain	Brain	monkey	NA	FALSE	Total_glucose_utilization	35.98	NA	umol/min	NA	Kennedy et al 1978
+S2	Brain	Brain	sheep	NA	FALSE	CMRgl	0.35	0.03	umol/g/min	NA	Pell et al 1983
+S2	Brain	Brain	sheep	NA	FALSE	Total_glucose_utilization	40.18	NA	umol/min	NA	Pell et al 1983
+S2	Brain	Brain	goat	NA	FALSE	CMRgl	0.35	0.04	umol/g/min	NA	Pelligrino et al 1987
+S2	Brain	Brain	goat	NA	FALSE	Total_glucose_utilization	40.09	NA	umol/min	NA	Pelligrino et al 1987
+S2	Brain	Brain	baboon	NA	FALSE	CMRgl	0.44	0.08	umol/g/min	NA	Meguro et al 1999
+S2	Brain	Brain	baboon	NA	FALSE	Total_glucose_utilization	60.4	NA	umol/min	NA	Meguro et al 1999
+S2	Brain	Brain	human	NA	FALSE	CMRgl	0.31	0.03	umol/g/min	NA	Clarke et al 1994
+S2	Brain	Brain	human	NA	FALSE	Total_glucose_utilization	428.55	NA	umol/min	NA	Clarke et al 1994

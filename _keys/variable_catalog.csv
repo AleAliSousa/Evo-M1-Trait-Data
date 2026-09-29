@@ -94,6 +94,8 @@ Heuer_etal_2019,Heuer_etal_2019_S1,SNR,NA,(structure-agnostic; see data columns)
 Nudo_etal_1995,Nudo_etal_1995_TABLE2,correction_term,NA,(structure-agnostic; see data columns),NA,Ratio,Ratio,point,method,24 mammals: 9 orders / 16 families / 21 genera (Marsupialia + Eutheria),stereological overcounting-correction factor applied to the raw profile count
 Bush_Allman_2004_b,Bush_Allman_2004_b,reference,NA,(structure-agnostic; see data columns),NA,Reference,Reference,NA,primary,NA,reference(s) printed for the count
 Kaufman__2004,Kaufman__2004_TableA1..A14,Reference,NA,(structure-agnostic; see data columns),NA,Reference,Reference,NA,info,Mammals,"literature citation for the study, as printed (author, year)"
+Kaskan_etal_2005,Kaskan_etal_2005,NA,NA,(structure-agnostic; see data columns),NA,Reference_citation,Reference_citation,NA,NA,NA,"Short author-year citation for this row's reference letter, parsed from the a-t key in the table heading"
+Kaskan_etal_2005,Kaskan_etal_2005,NA,NA,(structure-agnostic; see data columns),NA,Reference_full,Reference_full,NA,NA,NA,Full bibliographic reference(s) for this row's reference letter
 Kaskan_etal_2005,Kaskan_etal_2005,NA,NA,(structure-agnostic; see data columns),NA,Reference_key,Reference_key,NA,NA,NA,Superscript reference letter(s) keying to the paper's own reference list (a=Krubitzer & Kaas 1993 ... t=Krubitzer et al. 1997 -- see snapshot header for the full key)
 Hutsler_etal_2005,Hutsler_etal_2005_Figure6,region_printed,NA,(structure-agnostic; see data columns),NA,Region,Region,NA,info,13 mammal species,region label exactly as printed in legend
 Hutsler_etal_2005,Hutsler_etal_2005_Figure6,region,NA,(structure-agnostic; see data columns),NA,Region,Region,NA,primary,13 mammal species,standardized cortical region
@@ -122,6 +124,7 @@ Jacobs_etal_2016,Jacobs_etal_2016_Table1,source_table,NA,(structure-agnostic; se
 Johnson_etal_2016,Johnson_etal_2016_Table1,source_table,NA,(structure-agnostic; see data columns),NA,Source table,Source table,NA,info,Panthera tigris altaica and Neofelis nebulosa,printed source table
 Peruffo_etal_2019,Peruffo_etal_2019_Table2,source_table,NA,(structure-agnostic; see data columns),NA,Source table,Source table,NA,info,Ovis aries,printed source table
 __merging_cortical_layers,__merging_cortical_layers,source_table,NA,(structure-agnostic; see data columns),NA,Source table,Source table,NA,info,NA,printed source table
+Kaskan_etal_2005,Kaskan_etal_2005,NA,NA,(structure-agnostic; see data columns),NA,Source_item,Source_item,NA,NA,NA,Item name of the source table
 Kaskan_etal_2005,Kaskan_etal_2005,NA,NA,(structure-agnostic; see data columns),NA,Species_label,Species_label,NA,NA,NA,"Species name where identifiable (4 species are explicitly arrow-labelled in panel b: Aotus trivirgatus, Callithrix jacchus, Galago senegalensis, Saimiri sciureus); all other points are 'unidentified_NN' placeholders pending species assignment against Kaskan_etal_2005_TableS1's 30-species roster"
 Pirlot_Kamiya_1982,Pirlot_Kamiya_1982,NA,NA,(structure-agnostic; see data columns),NA,Species_sci,Species_sci,NA,NA,NA,"Best-available scientific name for the individual specimen; Pteropodids is an average across 7 species, not a single binomial"
 Pirlot_Kamiya_1985,Pirlot_Kamiya_1985,NA,NA,(structure-agnostic; see data columns),NA,Species_sci,Species_sci,NA,NA,NA,Scientific binomial for the specimen studied
@@ -635,6 +638,7 @@ Weibel_etal_2004,Weibel_etal_2004_Table1,body_mass_kg,body,Body,cell_counts,mass
 Weibel_etal_2004,Weibel_etal_2004_TableA.1,body_mass_kg,body,Body,cell_counts,mass,mass,value kg,primary,Mammalia,body mass
 Wilman_etal_2014,Wilman_etal_2014_MamFuncDat,BodyMass.g,Body,Body,cell_counts,Mass.g,mass,mean,secondary,mammals,Body mass
 Wimberly_etal_2021,Wimberly_etal_2021_MammalGait,Body_Mass.g,Body,Body,cell_counts,Mass.g,mass,mean,secondary,mammals,Body mass
+Zilles_etal_2011,Zilles_etal_2011_TableS3,body_weight_g,Body,Body,cell_counts,Mass.g,mass,NA,primary,Homo sapiens,body weight in g as printed ('---' where not given)
 deMagalhães_etal_2024,deMagalhães_etal_2024_anagedata.txt,Birth_weight_g,Body,Body,cell_counts,Mass.g,mass,NA,secondary,all taxa,Weight at birth/hatching
 deMagalhães_etal_2024,deMagalhães_etal_2024_anagedata.txt,Weaning_weight_g,Body,Body,cell_counts,Mass.g,mass,NA,secondary,all taxa,Weight at weaning
 deMagalhães_etal_2024,deMagalhães_etal_2024_anagedata.txt,Adult_weight_g,Body,Body,cell_counts,Mass.g,mass,NA,secondary,all taxa,Adult body weight
@@ -690,6 +694,7 @@ Pirlot__1981,Pirlot__1981_TABLEI,brain_weight_mg,brain,Brain,cell_counts,mass,ma
 Sherwood_etal_2003,Sherwood_etal_2003_Table1,brain_weight_g,brain,Brain,cell_counts,mass,mass,value g,secondary,NA,species mean brain weight from literature
 Weaver__2001,Weaver__2001_TableA-15,BrMass_g,Brain,Brain,cell_counts,Mass.g,mass,NA,primary,"monkeys, apes, fossil hominids, humans",brain mass as printed (g)
 Weaver__2001,Weaver__2001_TableA-15,Brain_Mass.mg,Brain,Brain,cell_counts,Mass.mg,mass,NA,primary,"monkeys, apes, fossil hominids, humans",brain mass in project units (mg)
+Zilles_etal_2011,Zilles_etal_2011_TableS3,brain_weight_fresh_g,Brain,Brain,cell_counts,Mass.g,mass,NA,primary,Homo sapiens,fresh brain weight in g as printed ('---' where not given)
 Latimer__1942,Latimer__1942_TABLEI,cv_pct,Brain,Brain,cell_counts,pct.CV,percentage (relative),mean,primary,Canis lupus familiaris,"printed coefficient of variation, percent"
 Latimer__1942,Latimer__1942_TABLEI,cv_se_pct,Brain,Brain,cell_counts,pct.CV,percentage (relative),se,primary,Canis lupus familiaris,"printed SE of the coefficient of variation, percent"
 Burger_etal_2019,Burger_etal_2019_SupplementaryDataSD1,Brain.resid,Brain,Brain,cell_counts,residual,residual,NA,flagged,mammals,Brain-size residual (as printed) — NOT reproducible: authors could not reproduce it and advise deriving anew from a current tree
@@ -706,7 +711,19 @@ DeCasien_etal_2017,DeCasien_etal_2017_BrainData,Brain Vol,Brain,Brain,cell_count
 DeCasien_etal_2017,DeCasien_etal_2017_BrainData,BV SD,Brain,Brain,cell_counts,Vol.mm3,volume,sd,secondary,primates,Standard deviation of brain volume
 Dunbar__1992,Stephan et al. 1981,total_brain_volume_mm3,Brain,Brain,cell_counts,Volume,volume,NA,primary,Primates,Total brain volume
 Stephan_Pirlot_1970,Stephan_Pirlot_1970_Table1,total_brain_mm3,brain,Brain,cell_counts,volume,volume,value mm3,derived-in-source,Chiroptera,total brain volume (col 13) = cols 1-4 + 12
-Latimer__1956,Latimer__1956_Table2,weight_brain_stem_mg,BrainStem,BrainStem,NA,Mass.mg,mass,mean,primary,as above,"weight of the brain stem, converted from printed grams (x1000)"
+Olkowicz_etal_2016,Olkowicz_etal_2016_DatasetS1,brainstem_cell_count,Brainstem,BrainStem,brain_structure_volume,Cells.n,count (number),mean,primary,Aves,mean estimated total cell number in brainstem
+Olkowicz_etal_2016,Olkowicz_etal_2016_DatasetS1,brainstem_neuron_count,Brainstem,BrainStem,brain_structure_volume,N.n,count (number),mean,primary,Aves,mean estimated neuron number in brainstem
+Olkowicz_etal_2016,Olkowicz_etal_2016_DatasetS1,brainstem_nonneuronal_cell_count,Brainstem,BrainStem,brain_structure_volume,O.n,count (number),mean,primary,Aves,mean estimated non-neuronal cell number in brainstem
+Olkowicz_etal_2016,Olkowicz_etal_2016_DatasetS1,brainstem_neuron_density_per_mg,Brainstem,BrainStem,brain_structure_volume,N.p.mg,density (per mass/volume),mean,primary,Aves,mean neuron density in brainstem
+Olkowicz_etal_2016,Olkowicz_etal_2016_DatasetS1,brainstem_nonneuronal_cell_density_per_mg,Brainstem,BrainStem,brain_structure_volume,O.p.mg,density (per mass/volume),mean,primary,Aves,mean non-neuronal cell density in brainstem
+Fox_Wilczynski_1986,Fox_Wilczynski_1986_TableI,BS_weight_g,brainstem,BrainStem,brain_structure_volume,mass_g,mass,mean,measure,NA,"mean total brainstem weight (mesencephalon + diencephalon complement, per the paper's dissection method)"
+Fox_Wilczynski_1986,Fox_Wilczynski_1986_TableI,BS_weight_SD_g,brainstem,BrainStem,brain_structure_volume,mass_g,mass,sd,measure,NA,standard deviation of total brainstem weight
+Latimer__1956,Latimer__1956_Table2,weight_brain_stem_mg,BrainStem,BrainStem,brain_structure_volume,Mass.mg,mass,mean,primary,as above,"weight of the brain stem, converted from printed grams (x1000)"
+Olkowicz_etal_2016,Olkowicz_etal_2016_DatasetS1,brainstem_mass_g,Brainstem,BrainStem,brain_structure_volume,Mass.g,mass,mean,primary,Aves,mean brainstem mass
+Olkowicz_etal_2016,Olkowicz_etal_2016_DatasetS1,brainstem_brain_mass_percent,Brainstem,BrainStem,brain_structure_volume,pct.brain.mass,mass,mean,primary,Aves,mean percentage of whole-brain mass in brainstem
+Olkowicz_etal_2016,Olkowicz_etal_2016_DatasetS1,brainstem_neuronal_cell_percent,Brainstem,BrainStem,brain_structure_volume,pct.NeuN,percentage (relative),mean,primary,Aves,mean percentage of brainstem cells labelled NeuN-positive
+Olkowicz_etal_2016,Olkowicz_etal_2016_DatasetS1,brainstem_brain_neuron_percent,Brainstem,BrainStem,brain_structure_volume,pct.brain.N,percentage (relative),mean,primary,Aves,mean percentage of whole-brain neurons in brainstem
+Olkowicz_etal_2016,Olkowicz_etal_2016_DatasetS1,brainstem_brain_nonneuronal_cell_percent,Brainstem,BrainStem,brain_structure_volume,pct.brain.O,percentage (relative),mean,primary,Aves,mean percentage of whole-brain non-neuronal cells in brainstem
 Baron_etal_1996,Baron_etal_1996_Table51,brain_weight_mg,Brain_weight,Brain_weight,brain_structure_volume,Mass.mg,mass,mean,secondary,Chiroptera,Brain weight
 Bauernfeind_etal_2013,Bauernfeind_etal_2013_Table1,brain_mass_mg,Brain_weight,Brain_weight,brain_structure_volume,Mass.mg,mass,NA,primary,Primates,brain mass in mg (printed in g; x1000)
 Ebinger__1974,Ebinger__1974_Tables3-4,brain_mass_mg,Brain_weight,Brain_weight,brain_structure_volume,Mass.mg,mass,point,primary,Ovis,fresh brain mass converted from printed g to mg
@@ -717,16 +734,6 @@ Stephan_etal_1981,Stephan_etal_1981_TablesI-VI,Brain_weight,Brain_weight,Brain_w
 Stephan_etal_1988,Stephan_etal_1988_Table1,BrW_mg,Brain_weight,Brain_weight,brain_structure_volume,Mass.mg,mass,NA,primary,"Insectivora, Scandentia & Primates",brain weight (fresh) in milligrams
 deSousa_etal_2013,deSousa_etal_2013_Table1,brain_weight_mg,Brain_weight,Brain_weight,brain_structure_volume,Mass.mg,mass,NA,secondary,Insectivora & Primates,Brain weight (Mass.mg)
 Stephan_etal_1988,Stephan_etal_1988_Table1,EI,Brain_weight,Brain_weight,brain_structure_volume,encephalization.index,size index (allometric),NA,primary,"Insectivora, Scandentia & Primates",encephalization index (observed brain weight relative to the Tenrecinae reference line)
-Olkowicz_etal_2016,Olkowicz_etal_2016_DatasetS1,brainstem_cell_count,Brainstem,Brainstem,NA,Cells.n,count (number),mean,primary,Aves,mean estimated total cell number in brainstem
-Olkowicz_etal_2016,Olkowicz_etal_2016_DatasetS1,brainstem_neuron_count,Brainstem,Brainstem,NA,N.n,count (number),mean,primary,Aves,mean estimated neuron number in brainstem
-Olkowicz_etal_2016,Olkowicz_etal_2016_DatasetS1,brainstem_nonneuronal_cell_count,Brainstem,Brainstem,NA,O.n,count (number),mean,primary,Aves,mean estimated non-neuronal cell number in brainstem
-Olkowicz_etal_2016,Olkowicz_etal_2016_DatasetS1,brainstem_neuron_density_per_mg,Brainstem,Brainstem,NA,N.p.mg,density (per mass/volume),mean,primary,Aves,mean neuron density in brainstem
-Olkowicz_etal_2016,Olkowicz_etal_2016_DatasetS1,brainstem_nonneuronal_cell_density_per_mg,Brainstem,Brainstem,NA,O.p.mg,density (per mass/volume),mean,primary,Aves,mean non-neuronal cell density in brainstem
-Olkowicz_etal_2016,Olkowicz_etal_2016_DatasetS1,brainstem_mass_g,Brainstem,Brainstem,NA,Mass.g,mass,mean,primary,Aves,mean brainstem mass
-Olkowicz_etal_2016,Olkowicz_etal_2016_DatasetS1,brainstem_brain_mass_percent,Brainstem,Brainstem,NA,pct.brain.mass,mass,mean,primary,Aves,mean percentage of whole-brain mass in brainstem
-Olkowicz_etal_2016,Olkowicz_etal_2016_DatasetS1,brainstem_neuronal_cell_percent,Brainstem,Brainstem,NA,pct.NeuN,percentage (relative),mean,primary,Aves,mean percentage of brainstem cells labelled NeuN-positive
-Olkowicz_etal_2016,Olkowicz_etal_2016_DatasetS1,brainstem_brain_neuron_percent,Brainstem,Brainstem,NA,pct.brain.N,percentage (relative),mean,primary,Aves,mean percentage of whole-brain neurons in brainstem
-Olkowicz_etal_2016,Olkowicz_etal_2016_DatasetS1,brainstem_brain_nonneuronal_cell_percent,Brainstem,Brainstem,NA,pct.brain.O,percentage (relative),mean,primary,Aves,mean percentage of whole-brain non-neuronal cells in brainstem
 PalomeroGallagher_Zilles_2018,PalomeroGallagher_Zilles_2018_TableS3,GLI_pct_mean_all_layers,BrocaArea44,BrocaArea44,NA,pct.GLI,percentage (relative),mean,primary,as above,"mean grey level index (%, volume proportion of cell bodies per volume tissue) averaged over cortical layers I-VI, per specimen"
 PalomeroGallagher_Zilles_2018,PalomeroGallagher_Zilles_2018_TableS3,GLI_pct_mean_supragranular,BrocaArea44,BrocaArea44,NA,pct.GLI,percentage (relative),mean,primary,as above,"mean GLI (%) in supragranular layers II-III, per specimen"
 PalomeroGallagher_Zilles_2018,PalomeroGallagher_Zilles_2018_TableS3,GLI_pct_mean_granular,BrocaArea44,BrocaArea44,NA,pct.GLI,percentage (relative),mean,primary,as above,"mean GLI (%) in granular layer IV, per specimen"
@@ -1885,8 +1892,8 @@ __merging_cortical_areas,Smaers_etal_2017_TableS1part2,V1_Surface_Area.mm2,Prima
 Smaers_etal_2017,Smaers_etal_2017_TableS1_part2_surfacearea,primary_visual_surface,PrimaryVisualCortex,PrimaryVisualCortex,NA,surface area,surface area,NA,both,Primates,primary visual cortex surface area
 Smaers_etal_2017,Smaers_etal_2017_TableS1_part1_volumes,primary_visual_gray,PrimaryVisualCortex,PrimaryVisualCortex,NA,Volume,volume,NA,both,Primates,primary visual cortex grey matter volume summed/estimated across both hemispheres
 Smaers_etal_2017,Smaers_etal_2017_TableS1_part1_volumes,primary_visual_white,PrimaryVisualCortex,PrimaryVisualCortex,NA,Volume,volume,NA,both,Primates,primary visual cortex white matter volume across both hemispheres
-Latimer__1956,Latimer__1956_Table2,weight_prosencephalon_mg,Prosencephalon,Prosencephalon,NA,Mass.mg,mass,mean,primary,as above,"weight of the prosencephalon (forebrain), converted from printed grams"
-Campos_Welker_1976,Campos_Welker_1976_Table1,total_prosencephalon_volume_mm3,Prosencephalon,Prosencephalon,NA,Vol.mm3,volume,value,primary,Hystricomorph rodents,Total prosencephalon volume
+Latimer__1956,Latimer__1956_Table2,weight_prosencephalon_mg,Prosencephalon,Prosencephalon,brain_structure_volume,Mass.mg,mass,mean,primary,as above,"weight of the prosencephalon (forebrain), converted from printed grams"
+Campos_Welker_1976,Campos_Welker_1976_Table1,total_prosencephalon_volume_mm3,Prosencephalon,Prosencephalon,brain_structure_volume,Vol.mm3,volume,value,primary,Hystricomorph rodents,Total prosencephalon volume
 Jacobs_etal_2015,Jacobs_etal_2015_Table4,n Pyramidal neurons,Pyramidal_neuron,Pyramidal_neuron,NA,count,count (number),NA,primary,Mammalia,number of pyramidal neurons quantified for the species
 Elston__2000,Elston__2000_Figure2,Max_branches_at_75um_from_soma_mean,Pyramidal_neuron_basal_dendritic_field,Pyramidal_neuron_basal_dendritic_field,NA,branch_count,count (number),mean,primary,NA,mean number of dendritic branch intersections (Sholl analysis) at the distance from the soma where branching peaked (75 um in all three prefrontal areas)
 Elston__2000,Elston__2000_Figure2,Max_branches_at_75um_from_soma_SD,Pyramidal_neuron_basal_dendritic_field,Pyramidal_neuron_basal_dendritic_field,NA,branch_count SD,count (number),SD,primary,NA,standard deviation of Max_branches_at_75um_from_soma_mean
@@ -2356,8 +2363,6 @@ Jung_etal_2022,Jung et al. 2022,stat,brain/visual system,brain/visual system,NA,
 Jung_etal_2022,Jung et al. 2022,trait,brain/visual system,brain/visual system,NA,trait,trait,raw,info,Macropus eugenii,Measured or reported trait.
 Jung_etal_2022,Jung et al. 2022,unit,brain/visual system,brain/visual system,NA,unit,unit,raw,info,Macropus eugenii,Unit reported or dimensionless designation.
 Jung_etal_2022,Jung et al. 2022,value,brain/visual system,brain/visual system,NA,value,value,varies,primary_or_secondary,Macropus eugenii,Numeric result reported in the article.
-Fox_Wilczynski_1986,Fox_Wilczynski_1986_TableI,BS_weight_g,brainstem,brainstem,NA,mass_g,mass,mean,measure,NA,"mean total brainstem weight (mesencephalon + diencephalon complement, per the paper's dissection method)"
-Fox_Wilczynski_1986,Fox_Wilczynski_1986_TableI,BS_weight_SD_g,brainstem,brainstem,NA,mass_g,mass,sd,measure,NA,standard deviation of total brainstem weight
 Brodmann__1913,Brodmann__1913_Table1,SulcalCortex_pct,cerebral cortex (sulcal),cerebral cortex (sulcal),NA,pct,percentage (relative),NA,secondary,Mammalia (all orders),sulcal cortex as % of total cortex
 Brodmann__1913,Brodmann__1913_Table1,SulcalCortex.mm2,cerebral cortex (sulcal),cerebral cortex (sulcal),NA,Area.mm2,surface area,NA,primary,Mammalia (all orders),cortical area buried in sulci/fissures (Furchenrinde)
 Brodmann__1913,Brodmann__1913_Table1,HemisphereWeight.g,cerebral hemisphere,cerebral hemisphere,NA,Mass.g,mass,NA,primary,Mammalia (all orders),hemisphere weight (parenthetical value)
@@ -2583,6 +2588,7 @@ Lyamin_etal_2008,Lyamin_etal_2008_Table2,high_amp_bilateral_sws_pct_tst,whole-or
 Lyamin_etal_2008,Lyamin_etal_2008_Table2,SWS_total_pct,whole-organism,whole-organism,NA,Sleep.pct,percentage (relative),point,primary,Cetacea (4 species),project standardized term: total slow-wave sleep as a per cent of the 24-hour day
 Lyamin_etal_2008,Lyamin_etal_2008_Table2,USWS_pctTST,whole-organism,whole-organism,NA,Sleep.pct,percentage (relative),point,primary,Cetacea (4 species),"project standardized term: unihemispheric slow-wave sleep as a per cent of total sleep time, computed as low-amplitude USWS + high-amplitude USWS"
 Ruf_Geiser_2015,Ruf_Geiser_2015_Table1,tmr_rel_pct,whole-organism,whole-organism,NA,pct,percentage (relative),point,primary,"Birds & mammals (43 birds, 171 mammals)",relative torpor metabolic rate: TMRmin expressed as a percentage of the species' basal metabolic rate (BMR)
+Chen_Wiens_2020,Chen_Wiens_2020_SupplementaryData3,State,whole-organism,whole-organism,NA,presence.absence,presence.absence,NA,secondary,Tetrapoda,"acoustic communication: 0 = absent, 1 = present (Metadata sheet)"
 MedinaGonzález__2026,MedinaGonzález__2026_SupplementaryFile1,Source_name,whole-organism,whole-organism,NA,text,text,point,secondary,Mammals,citation of the source used to obtain sagittal joint information for this species (video or article)
 MedinaGonzález__2026,MedinaGonzález__2026_SupplementaryFile2,Justification,whole-organism,whole-organism,NA,text,text,point,primary,Mammals,"free-text justification for the assigned locomotor category, verbatim"
 Reader_Laland_2002,Reader_Laland_2002,Innovation_2002,whole-organism behaviour,whole-organism behaviour,NA,report_count,count (number),count,secondary,Primates (116 of 203 species surveyed),"number of reported instances of behavioural innovation for the species, from the authors' survey of about 1,000 articles in four primate journals plus other literature; a report counted as innovation when the article's own author used keywords such as 'novel' or 'never seen before'"

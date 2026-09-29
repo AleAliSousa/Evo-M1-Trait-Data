@@ -1,18 +1,18 @@
 table	structure	subregion	species_printed	species	is_average	measure	value	sd	units	n_areas	reference
-S20	Substantia nigra	Substantia nigra	mouse	Mus musculus	FALSE	CMRgl	0.88	0.07	umol/g/min	NA	Bouilleret et al 2000
-S20	Substantia nigra	Substantia nigra	rat	Rattus norvegicus	FALSE	CMRgl	0.57	0.01	umol/g/min	NA	Nehling et al 1988
-S20	Substantia nigra	Substantia nigra	rat	Rattus norvegicus	FALSE	CMRgl	0.52	0.08	umol/g/min	NA	Waschke et al 1993
-S20	Substantia nigra	Substantia nigra	rat	Rattus norvegicus	FALSE	CMRgl	0.56	0.04	umol/g/min	NA	Nehling et al 2000
-S20	Substantia nigra	Substantia nigra	rat	Rattus norvegicus	FALSE	CMRgl	0.52	0.03	umol/g/min	NA	Levant et al 2004
-S20	Substantia nigra	Substantia nigra	rat	Rattus norvegicus	FALSE	CMRgl	0.49	0.09	umol/g/min	NA	Blin et al 1991
-S20	Substantia nigra	Substantia nigra	average rat	Rattus norvegicus	TRUE	CMRgl	0.53	0.04	umol/g/min	NA	
-S20	Substantia nigra	Substantia nigra	rabbit	Oryctolagus cuniculus	FALSE	CMRgl	0.48	0.03	umol/g/min	NA	Passero et al 1981
-S20	Substantia nigra	Substantia nigra	cat	Felis catus	FALSE	CMRgl	0.34	0.03	umol/g/min	NA	Schwartzman et al 1986
-S20	Substantia nigra	Substantia nigra	cat	Felis catus	FALSE	CMRgl	0.46	0.06	umol/g/min	NA	Chugani et al 1991
-S20	Substantia nigra	Substantia nigra	cat	Felis catus	FALSE	CMRgl	0.4	0.05	umol/g/min	NA	Sokoloff et al 1984
-S20	Substantia nigra	Substantia nigra	average cat	Felis catus	TRUE	CMRgl	0.4	0.05	umol/g/min	NA	
-S20	Substantia nigra	Substantia nigra	monkey	Macaca mulatta	FALSE	CMRgl	0.44	0.01	umol/g/min	NA	Porrino et al 2002
-S20	Substantia nigra	Substantia nigra	monkey	Macaca mulatta	FALSE	CMRgl	0.29	0.03	umol/g/min	NA	Kennedy et al 1978
-S20	Substantia nigra	Substantia nigra	monkey	Macaca mulatta	FALSE	CMRgl	0.37	0.01	umol/g/min	NA	Palombo et al 1990
-S20	Substantia nigra	Substantia nigra	average monkey	Macaca mulatta	TRUE	CMRgl	0.37	0.02	umol/g/min	NA	
-S20	Substantia nigra	Substantia nigra	human	Homo sapiens	FALSE	CMRgl	0.26	0.05	umol/g/min	NA	Blin et al 1991
+S20	Substantia nigra	Substantia nigra	mouse	NA	FALSE	CMRgl	0.88	0.07	umol/g/min	NA	Bouilleret et al 2000
+S20	Substantia nigra	Substantia nigra	rat	NA	FALSE	CMRgl	0.57	0.01	umol/g/min	NA	Nehling et al 1988
+S20	Substantia nigra	Substantia nigra	rat	NA	FALSE	CMRgl	0.52	0.08	umol/g/min	NA	Waschke et al 1993
+S20	Substantia nigra	Substantia nigra	rat	NA	FALSE	CMRgl	0.56	0.04	umol/g/min	NA	Nehling et al 2000
+S20	Substantia nigra	Substantia nigra	rat	NA	FALSE	CMRgl	0.52	0.03	umol/g/min	NA	Levant et al 2004
+S20	Substantia nigra	Substantia nigra	rat	NA	FALSE	CMRgl	0.49	0.09	umol/g/min	NA	Blin et al 1991
+S20	Substantia nigra	Substantia nigra	average rat	NA	TRUE	CMRgl	0.53	0.04	umol/g/min	NA	
+S20	Substantia nigra	Substantia nigra	rabbit	NA	FALSE	CMRgl	0.48	0.03	umol/g/min	NA	Passero et al 1981
+S20	Substantia nigra	Substantia nigra	cat	NA	FALSE	CMRgl	0.34	0.03	umol/g/min	NA	Schwartzman et al 1986
+S20	Substantia nigra	Substantia nigra	cat	NA	FALSE	CMRgl	0.46	0.06	umol/g/min	NA	Chugani et al 1991
+S20	Substantia nigra	Substantia nigra	cat	NA	FALSE	CMRgl	0.4	0.05	umol/g/min	NA	Sokoloff et al 1984
+S20	Substantia nigra	Substantia nigra	average cat	NA	TRUE	CMRgl	0.4	0.05	umol/g/min	NA	
+S20	Substantia nigra	Substantia nigra	monkey	NA	FALSE	CMRgl	0.44	0.01	umol/g/min	NA	Porrino et al 2002
+S20	Substantia nigra	Substantia nigra	monkey	NA	FALSE	CMRgl	0.29	0.03	umol/g/min	NA	Kennedy et al 1978
+S20	Substantia nigra	Substantia nigra	monkey	NA	FALSE	CMRgl	0.37	0.01	umol/g/min	NA	Palombo et al 1990
+S20	Substantia nigra	Substantia nigra	average monkey	NA	TRUE	CMRgl	0.37	0.02	umol/g/min	NA	
+S20	Substantia nigra	Substantia nigra	human	NA	FALSE	CMRgl	0.26	0.05	umol/g/min	NA	Blin et al 1991

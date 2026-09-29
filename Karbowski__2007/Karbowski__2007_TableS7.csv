@@ -1,26 +1,26 @@
 table,structure,subregion,species_printed,species,is_average,measure,value,sd,units,n_areas,reference
-S7,Temporal cortex,Temporal cortex,mouse,Mus musculus,FALSE,CMRgl,0.93,0.1,umol/g/min,NA,"Quelven et al 2004, estim"
-S7,Temporal cortex,Temporal cortex,rat,Rattus norvegicus,FALSE,CMRgl,1.08,0.12,umol/g/min,NA,"Waschke et al 1993, auditory"
-S7,Temporal cortex,Temporal cortex,rat,Rattus norvegicus,FALSE,CMRgl,0.94,0.13,umol/g/min,NA,Dube et al 2001
-S7,Temporal cortex,Temporal cortex,rat,Rattus norvegicus,FALSE,CMRgl,1.45,0.04,umol/g/min,NA,"Nehling et al 1988, auditory"
-S7,Temporal cortex,Temporal cortex,rat,Rattus norvegicus,FALSE,CMRgl,1.34,0.11,umol/g/min,NA,"Nehling et al 2000, auditory"
-S7,Temporal cortex,Temporal cortex,rat,Rattus norvegicus,FALSE,CMRgl,1.22,0.08,umol/g/min,NA,Levant et al 2004
-S7,Temporal cortex,Temporal cortex,rat,Rattus norvegicus,FALSE,CMRgl,1.34,0.08,umol/g/min,NA,"Zocchi et al 2001, auditory"
-S7,Temporal cortex,Temporal cortex,average rat,Rattus norvegicus,TRUE,CMRgl,1.23,0.1,umol/g/min,NA,
-S7,Temporal cortex,Temporal cortex,rabbit,Oryctolagus cuniculus,FALSE,CMRgl,1.02,0.1,umol/g/min,NA,Passero et al 1981
-S7,Temporal cortex,Temporal cortex,cat,Felis catus,FALSE,CMRgl,0.97,0.09,umol/g/min,NA,"Schwartzman et al 1986, auditory"
-S7,Temporal cortex,Temporal cortex,cat,Felis catus,FALSE,CMRgl,1.18,0.04,umol/g/min,NA,"Sokoloff 1984, auditory"
-S7,Temporal cortex,Temporal cortex,cat,Felis catus,FALSE,CMRgl,1.05,0.08,umol/g/min,NA,Lydic et al 1991
-S7,Temporal cortex,Temporal cortex,average cat,Felis catus,TRUE,CMRgl,1.07,0.08,umol/g/min,NA,
-S7,Temporal cortex,Temporal cortex,monkey,Macaca mulatta,FALSE,CMRgl,0.36,0.07,umol/g/min,NA,Noda et al 2002
-S7,Temporal cortex,Temporal cortex,monkey,Macaca mulatta,FALSE,CMRgl,0.4,0.02,umol/g/min,NA,Porrino et al 2002
-S7,Temporal cortex,Temporal cortex,monkey,Macaca mulatta,FALSE,CMRgl,0.79,0.04,umol/g/min,NA,"Kennedy et al 1978, auditory"
-S7,Temporal cortex,Temporal cortex,average monkey,Macaca mulatta,TRUE,CMRgl,0.52,0.04,umol/g/min,NA,
-S7,Temporal cortex,Temporal cortex,baboon,Papio anubis,FALSE,CMRgl,0.47,0.14,umol/g/min,NA,Meguro et al 1999
-S7,Temporal cortex,Temporal cortex,human,Homo sapiens,FALSE,CMRgl,0.23,0.02,umol/g/min,NA,Blomqvist et al 1998
-S7,Temporal cortex,Temporal cortex,human,Homo sapiens,FALSE,CMRgl,0.37,0.03,umol/g/min,NA,Heiss et al 1985
-S7,Temporal cortex,Temporal cortex,human,Homo sapiens,FALSE,CMRgl,0.31,0.08,umol/g/min,NA,Haier et al 1992
-S7,Temporal cortex,Temporal cortex,human,Homo sapiens,FALSE,CMRgl,0.36,0.06,umol/g/min,NA,De Volder et al 1997
-S7,Temporal cortex,Temporal cortex,human,Homo sapiens,FALSE,CMRgl,0.32,0.03,umol/g/min,NA,Redies et al 1989
-S7,Temporal cortex,Temporal cortex,human,Homo sapiens,FALSE,CMRgl,0.3,0.06,umol/g/min,NA,Maquet et al 1992
-S7,Temporal cortex,Temporal cortex,average human,Homo sapiens,TRUE,CMRgl,0.32,0.05,umol/g/min,NA,
+S7,Temporal cortex,Temporal cortex,mouse,NA,FALSE,CMRgl,0.93,0.1,umol/g/min,NA,"Quelven et al 2004, estim"
+S7,Temporal cortex,Temporal cortex,rat,NA,FALSE,CMRgl,1.08,0.12,umol/g/min,NA,"Waschke et al 1993, auditory"
+S7,Temporal cortex,Temporal cortex,rat,NA,FALSE,CMRgl,0.94,0.13,umol/g/min,NA,Dube et al 2001
+S7,Temporal cortex,Temporal cortex,rat,NA,FALSE,CMRgl,1.45,0.04,umol/g/min,NA,"Nehling et al 1988, auditory"
+S7,Temporal cortex,Temporal cortex,rat,NA,FALSE,CMRgl,1.34,0.11,umol/g/min,NA,"Nehling et al 2000, auditory"
+S7,Temporal cortex,Temporal cortex,rat,NA,FALSE,CMRgl,1.22,0.08,umol/g/min,NA,Levant et al 2004
+S7,Temporal cortex,Temporal cortex,rat,NA,FALSE,CMRgl,1.34,0.08,umol/g/min,NA,"Zocchi et al 2001, auditory"
+S7,Temporal cortex,Temporal cortex,average rat,NA,TRUE,CMRgl,1.23,0.1,umol/g/min,NA,
+S7,Temporal cortex,Temporal cortex,rabbit,NA,FALSE,CMRgl,1.02,0.1,umol/g/min,NA,Passero et al 1981
+S7,Temporal cortex,Temporal cortex,cat,NA,FALSE,CMRgl,0.97,0.09,umol/g/min,NA,"Schwartzman et al 1986, auditory"
+S7,Temporal cortex,Temporal cortex,cat,NA,FALSE,CMRgl,1.18,0.04,umol/g/min,NA,"Sokoloff 1984, auditory"
+S7,Temporal cortex,Temporal cortex,cat,NA,FALSE,CMRgl,1.05,0.08,umol/g/min,NA,Lydic et al 1991
+S7,Temporal cortex,Temporal cortex,average cat,NA,TRUE,CMRgl,1.07,0.08,umol/g/min,NA,
+S7,Temporal cortex,Temporal cortex,monkey,NA,FALSE,CMRgl,0.36,0.07,umol/g/min,NA,Noda et al 2002
+S7,Temporal cortex,Temporal cortex,monkey,NA,FALSE,CMRgl,0.4,0.02,umol/g/min,NA,Porrino et al 2002
+S7,Temporal cortex,Temporal cortex,monkey,NA,FALSE,CMRgl,0.79,0.04,umol/g/min,NA,"Kennedy et al 1978, auditory"
+S7,Temporal cortex,Temporal cortex,average monkey,NA,TRUE,CMRgl,0.52,0.04,umol/g/min,NA,
+S7,Temporal cortex,Temporal cortex,baboon,NA,FALSE,CMRgl,0.47,0.14,umol/g/min,NA,Meguro et al 1999
+S7,Temporal cortex,Temporal cortex,human,NA,FALSE,CMRgl,0.23,0.02,umol/g/min,NA,Blomqvist et al 1998
+S7,Temporal cortex,Temporal cortex,human,NA,FALSE,CMRgl,0.37,0.03,umol/g/min,NA,Heiss et al 1985
+S7,Temporal cortex,Temporal cortex,human,NA,FALSE,CMRgl,0.31,0.08,umol/g/min,NA,Haier et al 1992
+S7,Temporal cortex,Temporal cortex,human,NA,FALSE,CMRgl,0.36,0.06,umol/g/min,NA,De Volder et al 1997
+S7,Temporal cortex,Temporal cortex,human,NA,FALSE,CMRgl,0.32,0.03,umol/g/min,NA,Redies et al 1989
+S7,Temporal cortex,Temporal cortex,human,NA,FALSE,CMRgl,0.3,0.06,umol/g/min,NA,Maquet et al 1992
+S7,Temporal cortex,Temporal cortex,average human,NA,TRUE,CMRgl,0.32,0.05,umol/g/min,NA,

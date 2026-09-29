@@ -1,9 +1,9 @@
 table	structure	subregion	species_printed	species	is_average	measure	value	sd	units	n_areas	reference
-S4	Prefrontal cortex	Prefrontal cortex	mouse	Mus musculus	FALSE	CMRgl	1.22	0.12	umol/g/min	NA	Bouilleret et al 2000
-S4	Prefrontal cortex	Prefrontal cortex	rat	Rattus norvegicus	FALSE	CMRgl	0.99	0.15	umol/g/min	NA	Dube et al 2001
-S4	Prefrontal cortex	Prefrontal cortex	rat	Rattus norvegicus	FALSE	CMRgl	1.03	0.05	umol/g/min	NA	Nehling et al 1988
-S4	Prefrontal cortex	Prefrontal cortex	rat	Rattus norvegicus	FALSE	CMRgl	0.91	0.21	umol/g/min	NA	Zocchi et al 2001
-S4	Prefrontal cortex	Prefrontal cortex	average rat	Rattus norvegicus	TRUE	CMRgl	0.98	0.14	umol/g/min	NA	
-S4	Prefrontal cortex	Prefrontal cortex	monkey	Macaca mulatta	FALSE	CMRgl	0.4	0.03	umol/g/min	NA	Porrino et al 2002
-S4	Prefrontal cortex	Prefrontal cortex	baboon	Papio anubis	FALSE	CMRgl	0.52	0.14	umol/g/min	NA	Meguro et al 1999
-S4	Prefrontal cortex	Prefrontal cortex	human	Homo sapiens	FALSE	CMRgl	0.33	0.04	umol/g/min	NA	Blin et al 1991
+S4	Prefrontal cortex	Prefrontal cortex	mouse	NA	FALSE	CMRgl	1.22	0.12	umol/g/min	NA	Bouilleret et al 2000
+S4	Prefrontal cortex	Prefrontal cortex	rat	NA	FALSE	CMRgl	0.99	0.15	umol/g/min	NA	Dube et al 2001
+S4	Prefrontal cortex	Prefrontal cortex	rat	NA	FALSE	CMRgl	1.03	0.05	umol/g/min	NA	Nehling et al 1988
+S4	Prefrontal cortex	Prefrontal cortex	rat	NA	FALSE	CMRgl	0.91	0.21	umol/g/min	NA	Zocchi et al 2001
+S4	Prefrontal cortex	Prefrontal cortex	average rat	NA	TRUE	CMRgl	0.98	0.14	umol/g/min	NA	
+S4	Prefrontal cortex	Prefrontal cortex	monkey	NA	FALSE	CMRgl	0.4	0.03	umol/g/min	NA	Porrino et al 2002
+S4	Prefrontal cortex	Prefrontal cortex	baboon	NA	FALSE	CMRgl	0.52	0.14	umol/g/min	NA	Meguro et al 1999
+S4	Prefrontal cortex	Prefrontal cortex	human	NA	FALSE	CMRgl	0.33	0.04	umol/g/min	NA	Blin et al 1991

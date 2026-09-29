@@ -1,31 +1,31 @@
 table	structure	subregion	species_printed	species	is_average	measure	value	sd	units	n_areas	reference
-S15	Hypothalamus	Hypothalamus	mouse	Mus musculus	FALSE	CMRgl	0.59	0.14	umol/g/min	NA	Bouilleret et al 2000
-S15	Hypothalamus	Hypothalamus	mouse	Mus musculus	FALSE	CMRgl	0.56	0.1	umol/g/min	NA	Quelven et al 2004, estim.
-S15	Hypothalamus	Hypothalamus	average mouse	Mus musculus	TRUE	CMRgl	0.58	0.12	umol/g/min	NA	
-S15	Hypothalamus	Hypothalamus	rat	Rattus norvegicus	FALSE	CMRgl	0.48	0.02	umol/g/min	NA	Nehling et al 1988
-S15	Hypothalamus	Hypothalamus	rat	Rattus norvegicus	FALSE	CMRgl	0.49	0.09	umol/g/min	NA	Dube et al 2001
-S15	Hypothalamus	Hypothalamus	rat	Rattus norvegicus	FALSE	CMRgl	0.44	0.03	umol/g/min	NA	Levant et al 2004
-S15	Hypothalamus	Hypothalamus	rat	Rattus norvegicus	FALSE	CMRgl	0.39	0.05	umol/g/min	NA	Waschke et al 1993
-S15	Hypothalamus	Hypothalamus	rat	Rattus norvegicus	FALSE	CMRgl	0.54	0.05	umol/g/min	NA	Nehling et al 2000
-S15	Hypothalamus	Hypothalamus	rat	Rattus norvegicus	FALSE	CMRgl	0.4	0.04	umol/g/min	NA	Blin et al 1991
-S15	Hypothalamus	Hypothalamus	average rat	Rattus norvegicus	TRUE	CMRgl	0.46	0.05	umol/g/min	NA	
-S15	Hypothalamus	Hypothalamus	rabbit	Oryctolagus cuniculus	FALSE	CMRgl	0.62	0.03	umol/g/min	NA	Passero et al 1981
-S15	Hypothalamus	Hypothalamus	cat	Felis catus	FALSE	CMRgl	0.41	0.06	umol/g/min	NA	Chugani et al 1991
-S15	Hypothalamus	Hypothalamus	cat	Felis catus	FALSE	CMRgl	0.41	0.04	umol/g/min	NA	Sokoloff 1984
-S15	Hypothalamus	Hypothalamus	average cat	Felis catus	TRUE	CMRgl	0.41	0.05	umol/g/min	NA	
-S15	Hypothalamus	Hypothalamus	monkey	Macaca mulatta	FALSE	CMRgl	0.3	0.03	umol/g/min	NA	Porrino et al 2002
-S15	Hypothalamus	Hypothalamus	monkey	Macaca mulatta	FALSE	CMRgl	0.26	0.04	umol/g/min	NA	Kennedy et al 1978
-S15	Hypothalamus	Hypothalamus	average monkey	Macaca mulatta	TRUE	CMRgl	0.28	0.04	umol/g/min	NA	
-S15	Hypothalamus	Hypothalamus	human	Homo sapiens	FALSE	CMRgl	0.27	0.02	umol/g/min	NA	Blin et al 1991
-S15	Hypothalamus	Mammilary body	mouse	Mus musculus	FALSE	CMRgl	1.56	0.13	umol/g/min	NA	Bouilleret et al 2000
-S15	Hypothalamus	Mammilary body	rat	Rattus norvegicus	FALSE	CMRgl	1.03	0.04	umol/g/min	NA	Nehling et al 1988
-S15	Hypothalamus	Mammilary body	rat	Rattus norvegicus	FALSE	CMRgl	1.04	0.17	umol/g/min	NA	Dube et al 2001
-S15	Hypothalamus	Mammilary body	rat	Rattus norvegicus	FALSE	CMRgl	0.76	0.05	umol/g/min	NA	Waschke et al 1993
-S15	Hypothalamus	Mammilary body	average rat	Rattus norvegicus	TRUE	CMRgl	0.94	0.09	umol/g/min	NA	
-S15	Hypothalamus	Mammilary body	rabbit	Oryctolagus cuniculus	FALSE	CMRgl	0.68	0.03	umol/g/min	NA	Passero et al 1981
-S15	Hypothalamus	Mammilary body	cat	Felis catus	FALSE	CMRgl	0.99	0.32	umol/g/min	NA	Chugani et al 1991
-S15	Hypothalamus	Mammilary body	cat	Felis catus	FALSE	CMRgl	0.85	0.03	umol/g/min	NA	Sokoloff 1984
-S15	Hypothalamus	Mammilary body	average cat	Felis catus	TRUE	CMRgl	0.92	0.18	umol/g/min	NA	
-S15	Hypothalamus	Mammilary body	monkey	Macaca mulatta	FALSE	CMRgl	0.57	0.06	umol/g/min	NA	Palombo et al 1990
-S15	Hypothalamus	Mammilary body	monkey	Macaca mulatta	FALSE	CMRgl	0.57	0.03	umol/g/min	NA	Kennedy et al 1978
-S15	Hypothalamus	Mammilary body	average monkey	Macaca mulatta	TRUE	CMRgl	0.57	0.05	umol/g/min	NA	
+S15	Hypothalamus	Hypothalamus	mouse	NA	FALSE	CMRgl	0.59	0.14	umol/g/min	NA	Bouilleret et al 2000
+S15	Hypothalamus	Hypothalamus	mouse	NA	FALSE	CMRgl	0.56	0.1	umol/g/min	NA	Quelven et al 2004, estim.
+S15	Hypothalamus	Hypothalamus	average mouse	NA	TRUE	CMRgl	0.58	0.12	umol/g/min	NA	
+S15	Hypothalamus	Hypothalamus	rat	NA	FALSE	CMRgl	0.48	0.02	umol/g/min	NA	Nehling et al 1988
+S15	Hypothalamus	Hypothalamus	rat	NA	FALSE	CMRgl	0.49	0.09	umol/g/min	NA	Dube et al 2001
+S15	Hypothalamus	Hypothalamus	rat	NA	FALSE	CMRgl	0.44	0.03	umol/g/min	NA	Levant et al 2004
+S15	Hypothalamus	Hypothalamus	rat	NA	FALSE	CMRgl	0.39	0.05	umol/g/min	NA	Waschke et al 1993
+S15	Hypothalamus	Hypothalamus	rat	NA	FALSE	CMRgl	0.54	0.05	umol/g/min	NA	Nehling et al 2000
+S15	Hypothalamus	Hypothalamus	rat	NA	FALSE	CMRgl	0.4	0.04	umol/g/min	NA	Blin et al 1991
+S15	Hypothalamus	Hypothalamus	average rat	NA	TRUE	CMRgl	0.46	0.05	umol/g/min	NA	
+S15	Hypothalamus	Hypothalamus	rabbit	NA	FALSE	CMRgl	0.62	0.03	umol/g/min	NA	Passero et al 1981
+S15	Hypothalamus	Hypothalamus	cat	NA	FALSE	CMRgl	0.41	0.06	umol/g/min	NA	Chugani et al 1991
+S15	Hypothalamus	Hypothalamus	cat	NA	FALSE	CMRgl	0.41	0.04	umol/g/min	NA	Sokoloff 1984
+S15	Hypothalamus	Hypothalamus	average cat	NA	TRUE	CMRgl	0.41	0.05	umol/g/min	NA	
+S15	Hypothalamus	Hypothalamus	monkey	NA	FALSE	CMRgl	0.3	0.03	umol/g/min	NA	Porrino et al 2002
+S15	Hypothalamus	Hypothalamus	monkey	NA	FALSE	CMRgl	0.26	0.04	umol/g/min	NA	Kennedy et al 1978
+S15	Hypothalamus	Hypothalamus	average monkey	NA	TRUE	CMRgl	0.28	0.04	umol/g/min	NA	
+S15	Hypothalamus	Hypothalamus	human	NA	FALSE	CMRgl	0.27	0.02	umol/g/min	NA	Blin et al 1991
+S15	Hypothalamus	Mammilary body	mouse	NA	FALSE	CMRgl	1.56	0.13	umol/g/min	NA	Bouilleret et al 2000
+S15	Hypothalamus	Mammilary body	rat	NA	FALSE	CMRgl	1.03	0.04	umol/g/min	NA	Nehling et al 1988
+S15	Hypothalamus	Mammilary body	rat	NA	FALSE	CMRgl	1.04	0.17	umol/g/min	NA	Dube et al 2001
+S15	Hypothalamus	Mammilary body	rat	NA	FALSE	CMRgl	0.76	0.05	umol/g/min	NA	Waschke et al 1993
+S15	Hypothalamus	Mammilary body	average rat	NA	TRUE	CMRgl	0.94	0.09	umol/g/min	NA	
+S15	Hypothalamus	Mammilary body	rabbit	NA	FALSE	CMRgl	0.68	0.03	umol/g/min	NA	Passero et al 1981
+S15	Hypothalamus	Mammilary body	cat	NA	FALSE	CMRgl	0.99	0.32	umol/g/min	NA	Chugani et al 1991
+S15	Hypothalamus	Mammilary body	cat	NA	FALSE	CMRgl	0.85	0.03	umol/g/min	NA	Sokoloff 1984
+S15	Hypothalamus	Mammilary body	average cat	NA	TRUE	CMRgl	0.92	0.18	umol/g/min	NA	
+S15	Hypothalamus	Mammilary body	monkey	NA	FALSE	CMRgl	0.57	0.06	umol/g/min	NA	Palombo et al 1990
+S15	Hypothalamus	Mammilary body	monkey	NA	FALSE	CMRgl	0.57	0.03	umol/g/min	NA	Kennedy et al 1978
+S15	Hypothalamus	Mammilary body	average monkey	NA	TRUE	CMRgl	0.57	0.05	umol/g/min	NA	

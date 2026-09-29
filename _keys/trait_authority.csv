@@ -60,13 +60,14 @@ Audible_freq_low_60dB.kHz,__merging_sensory,auto_single_producer,active,1,__merg
 Auditory_cortex_CMRgl (umol/100g/min),__merging_cerebral_metabolic_rate,auto_single_producer,active,1,__merging_cerebral_metabolic_rate,,
 Average fiber size x 10ˆ5 K,____EvoM1_TraitTable (melted),auto_single_producer,active,1,____EvoM1_TraitTable (melted),,
 Basal_forebrain_CMRgl (umol/100g/min),__merging_cerebral_metabolic_rate,auto_single_producer,active,1,__merging_cerebral_metabolic_rate,,
+Basal_forebrain_source_defined_Vol.mm3,__merging_volumes,auto_single_producer,active,1,__merging_volumes,,
 Basal_ganglia_CBF (mL/100g/min),__merging_cerebral_metabolic_rate,auto_single_producer,active,1,__merging_cerebral_metabolic_rate,,
 Basal_ganglia_CMRgl (umol/100g/min),__merging_cerebral_metabolic_rate,auto_single_producer,active,1,__merging_cerebral_metabolic_rate,,
 Basal_ganglia_CMRO2 (umol/100g/min),__merging_cerebral_metabolic_rate,auto_single_producer,active,1,__merging_cerebral_metabolic_rate,,
 Binocular_field.deg,__merging_sensory,auto_single_producer,active,1,__merging_sensory,,
 BMR_massspecific (mL O2/h/g),__merging_body_ecology,auto_single_producer,active,1,__merging_body_ecology,,
 BMR_wholeanimal (mL O2/h),__merging_body_ecology,adopted_from_variable_canonical,active,2,____EvoM1_TraitTable (melted); __merging_body_ecology,____EvoM1_TraitTable (melted),authority already declared by superseded_by; adopted unchanged
-Body_Mass (g),__merging_body_ecology,adopted_from_variable_canonical,active,3,____EvoM1_TraitTable (melted); __merging_body_ecology; __merging_volumes,____EvoM1_TraitTable (melted); __merging_volumes,authority already declared by superseded_by; adopted unchanged
+Body_Mass (g),__merging_body_ecology,adopted_from_variable_canonical,active,3,____EvoM1_TraitTable (melted); __merging_body_ecology; __merging_cellcounts,____EvoM1_TraitTable (melted); __merging_cellcounts,authority already declared by superseded_by; adopted unchanged
 Brain_Mass_excl_olfactory_bulb (g),__merging_brain_mass,adopted_from_variable_canonical,active,2,__merging_brain_mass; __merging_cellcounts,__merging_cellcounts,authority already declared by superseded_by; adopted unchanged
 Brain_Mass_mass_or_volume (g),__merging_brain_mass,auto_single_producer,active,1,__merging_brain_mass,,
 Brain_Mass_measured (g),__merging_brain_mass,adopted_from_variable_canonical,active,3,____EvoM1_TraitTable (melted); __merging_brain_mass; __merging_volumes,____EvoM1_TraitTable (melted); __merging_volumes,authority already declared by superseded_by; adopted unchanged
@@ -210,6 +211,7 @@ FoldingIndex_MHH,__merging_cortical_areas,auto_single_producer,active,1,__mergin
 Folial_perimeter_median (mm),__merging_cerebellar_folding,auto_single_producer,active,1,__merging_cerebellar_folding,,
 Folial_width_median (mm),__merging_cerebellar_folding,auto_single_producer,active,1,__merging_cerebellar_folding,,
 Foot_Posture (category),__merging_behaviour,auto_single_producer,active,1,__merging_behaviour,,
+Forebrain_white_matter_Vol.mm3,__merging_volumes,auto_single_producer,active,1,__merging_volumes,,
 ForStrat_stratum (category),__merging_body_ecology,auto_single_producer,active,1,__merging_body_ecology,,
 Fossil_BGU (umol/min) - Boyer_ACA_scaled,__merging_fossil_brain_glucose,auto_single_producer,active,1,__merging_fossil_brain_glucose,,
 Fossil_BGU (umol/min) - s4_volume,__merging_fossil_brain_glucose,auto_single_producer,active,1,__merging_fossil_brain_glucose,,
@@ -320,6 +322,7 @@ GLI_area45_infragranular (%),__merging_GLI,auto_single_producer,active,1,__mergi
 GLI_area45_supragranular (%),__merging_GLI,auto_single_producer,active,1,__merging_GLI,,
 Glia_neuron_ratio,____EvoM1_TraitTable (melted),auto_single_producer,active,1,____EvoM1_TraitTable (melted),,
 Glial_cell_density,____EvoM1_TraitTable (melted),auto_single_producer,active,1,____EvoM1_TraitTable (melted),,
+Globus_pallidus_Vol.mm3,__merging_volumes,auto_single_producer,active,1,__merging_volumes,,
 Granular_insular_cortex_left_Vol.mm3,__merging_volumes,auto_single_producer,active,1,__merging_volumes,,
 Granular_insular_cortex_right_Vol.mm3,__merging_volumes,auto_single_producer,active,1,__merging_volumes,,
 Granular_insular_cortex_Vol.mm3,__merging_volumes,auto_single_producer,active,1,__merging_volumes,,
@@ -336,6 +339,7 @@ Hippocampus_CMRO2 (umol/100g/min),__merging_cerebral_metabolic_rate,auto_single_
 Hippocampus_I.n,__merging_cellcounts,auto_single_producer,active,1,__merging_cellcounts,,
 Hippocampus_I.p.C,__merging_cellcounts,auto_single_producer,active,1,__merging_cellcounts,,
 Hippocampus_I.p.mg,__merging_cellcounts,auto_single_producer,active,1,__merging_cellcounts,,
+Hippocampus_including_subiculum_and_dentate_Vol.mm3,__merging_volumes,auto_single_producer,active,1,__merging_volumes,,
 Hippocampus_Mass (g),__merging_weights,adopted_from_variable_canonical,active,2,__merging_cellcounts; __merging_weights,__merging_cellcounts,authority already declared by superseded_by; adopted unchanged
 Hippocampus_N.n,__merging_cellcounts,auto_single_producer,active,1,__merging_cellcounts,,
 Hippocampus_N.p.mg,__merging_cellcounts,auto_single_producer,active,1,__merging_cellcounts,,
@@ -357,6 +361,7 @@ Insula_left_Vol.mm3,__merging_volumes,auto_single_producer,active,1,__merging_vo
 Insula_right_Vol.mm3,__merging_volumes,auto_single_producer,active,1,__merging_volumes,,
 Insula_Vol.mm3,__merging_volumes,auto_single_producer,active,1,__merging_volumes,,
 Inter-litter_interval_days,____EvoM1_TraitTable (melted),auto_single_producer,active,1,____EvoM1_TraitTable (melted),,
+Interaural_distance_functional.us,__merging_sensory,auto_single_producer,active,1,__merging_sensory,,
 Intermembral_index (ratio),__merging_behaviour,auto_single_producer,active,1,__merging_behaviour,,
 Interpositus_cerebellar_nuclei_Vol.mm3,__merging_volumes,auto_single_producer,active,1,__merging_volumes,,
 Journal_search_article_count (articles),__merging_behaviour,auto_single_producer,active,1,__merging_behaviour,,
@@ -627,6 +632,7 @@ PrefrontalCortex_white_matter_left_Vol.mm3,__merging_volumes,auto_single_produce
 PrefrontalCortex_white_matter_right_Vol.mm3,__merging_volumes,auto_single_producer,active,1,__merging_volumes,,
 PrefrontalCortex_white_matter_Vol.mm3,__merging_volumes,auto_single_producer,active,1,__merging_volumes,,
 Prepiriform_cortex_Vol.mm3,__merging_volumes,auto_single_producer,active,1,__merging_volumes,,
+Prosencephalon_Vol.mm3,__merging_volumes,auto_single_producer,active,1,__merging_volumes,,
 Putamen_CMRgl (umol/100g/min),__merging_cerebral_metabolic_rate,auto_single_producer,active,1,__merging_cerebral_metabolic_rate,,
 real_size (index),__merging_behaviour,auto_single_producer,active,1,__merging_behaviour,,
 relative_size (index),__merging_behaviour,auto_single_producer,active,1,__merging_behaviour,,
@@ -676,6 +682,7 @@ SpinalCord_p.C.Body.mass,__merging_cellcounts,auto_single_producer,active,1,__me
 SpinalCord_p.C.CNS.mass,__merging_cellcounts,auto_single_producer,active,1,__merging_cellcounts,,
 SpinalCord_p.C.CNS.neurons,__merging_cellcounts,auto_single_producer,active,1,__merging_cellcounts,,
 SpinalCord_p.C.N,__merging_cellcounts,auto_single_producer,active,1,__merging_cellcounts,,
+Striatum_excluding_globus_pallidus_Vol.mm3,__merging_volumes,auto_single_producer,active,1,__merging_volumes,,
 Striatum_including_globus_pallidus_Vol.mm3,__merging_volumes,auto_single_producer,active,1,__merging_volumes,,
 Striatum_Mass (g),__merging_weights,auto_single_producer,active,1,__merging_weights,,
 Striatum_Vol.mm3,__merging_volumes,adjudicated,active,2,__merging_cellcounts; __merging_volumes,__merging_cellcounts,"RULE-1 2026-09-22: for a structure volume emitted by both the volumes merge and the cell-counts tables, __merging_volumes is authoritative. It resolves across teams/sources and carries the laterality and select-value machinery; the cell-counts copy is a by-product of the isotropic-fractionator tables. Matches the Neocortex_Vol.mm3 decision already recorded in variable_canonical.csv."
@@ -703,6 +710,7 @@ thal_VB_thalamic_relay_soma_volume [nissl_perikaryal] (um3),__merging_cell_morph
 Thalamus_CBF (mL/100g/min),__merging_cerebral_metabolic_rate,auto_single_producer,active,1,__merging_cerebral_metabolic_rate,,
 Thalamus_CMRgl (umol/100g/min),__merging_cerebral_metabolic_rate,auto_single_producer,active,1,__merging_cerebral_metabolic_rate,,
 Thalamus_CMRO2 (umol/100g/min),__merging_cerebral_metabolic_rate,auto_single_producer,active,1,__merging_cerebral_metabolic_rate,,
+Thalamus_including_fibre_tracts_Vol.mm3,__merging_volumes,auto_single_producer,active,1,__merging_volumes,,
 Thalamus_Mass (g),__merging_weights,auto_single_producer,active,1,__merging_weights,,
 Thalamus_medial_nucleus_CMRgl (umol/100g/min),__merging_cerebral_metabolic_rate,auto_single_producer,active,1,__merging_cerebral_metabolic_rate,,
 Thalamus_Vol.mm3,__merging_volumes,adjudicated,active,2,__merging_cellcounts; __merging_volumes,__merging_cellcounts,"RULE-1 2026-09-22: for a structure volume emitted by both the volumes merge and the cell-counts tables, __merging_volumes is authoritative. It resolves across teams/sources and carries the laterality and select-value machinery; the cell-counts copy is a by-product of the isotropic-fractionator tables. Matches the Neocortex_Vol.mm3 decision already recorded in variable_canonical.csv."

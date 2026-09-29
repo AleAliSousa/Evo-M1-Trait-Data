@@ -1,12 +1,12 @@
 table	structure	subregion	species_printed	species	is_average	measure	value	sd	units	n_areas	reference
-S6	Cingulate cortex	Cingulate cortex	mouse	Mus musculus	FALSE	CMRgl	1.06	0.12	umol/g/min	NA	Quelven et al 2004, estim.
-S6	Cingulate cortex	Cingulate cortex	rat	Rattus norvegicus	FALSE	CMRgl	0.91	0.16	umol/g/min	NA	Dube et al 2001
-S6	Cingulate cortex	Cingulate cortex	rat	Rattus norvegicus	FALSE	CMRgl	1.21	0.05	umol/g/min	NA	Levant et al 2004
-S6	Cingulate cortex	Cingulate cortex	rat	Rattus norvegicus	FALSE	CMRgl	0.83	0.09	umol/g/min	NA	Blin et al 1991
-S6	Cingulate cortex	Cingulate cortex	average rat	Rattus norvegicus	TRUE	CMRgl	0.98	0.1	umol/g/min	NA	
-S6	Cingulate cortex	Cingulate cortex	cat	Felis catus	FALSE	CMRgl	0.7	0.06	umol/g/min	NA	Schwartzman et al 1986
-S6	Cingulate cortex	Cingulate cortex	monkey	Macaca mulatta	FALSE	CMRgl	0.37	0.09	umol/g/min	NA	Noda et al 2002
-S6	Cingulate cortex	Cingulate cortex	monkey	Macaca mulatta	FALSE	CMRgl	0.4	0.02	umol/g/min	NA	Palombo et al 1990
-S6	Cingulate cortex	Cingulate cortex	average monkey	Macaca mulatta	TRUE	CMRgl	0.39	0.06	umol/g/min	NA	
-S6	Cingulate cortex	Cingulate cortex	baboon	Papio anubis	FALSE	CMRgl	0.49	0.17	umol/g/min	NA	Meguro et al 1999
-S6	Cingulate cortex	Cingulate cortex	human	Homo sapiens	FALSE	CMRgl	0.31	0.02	umol/g/min	NA	Blin et al 1991
+S6	Cingulate cortex	Cingulate cortex	mouse	NA	FALSE	CMRgl	1.06	0.12	umol/g/min	NA	Quelven et al 2004, estim.
+S6	Cingulate cortex	Cingulate cortex	rat	NA	FALSE	CMRgl	0.91	0.16	umol/g/min	NA	Dube et al 2001
+S6	Cingulate cortex	Cingulate cortex	rat	NA	FALSE	CMRgl	1.21	0.05	umol/g/min	NA	Levant et al 2004
+S6	Cingulate cortex	Cingulate cortex	rat	NA	FALSE	CMRgl	0.83	0.09	umol/g/min	NA	Blin et al 1991
+S6	Cingulate cortex	Cingulate cortex	average rat	NA	TRUE	CMRgl	0.98	0.1	umol/g/min	NA	
+S6	Cingulate cortex	Cingulate cortex	cat	NA	FALSE	CMRgl	0.7	0.06	umol/g/min	NA	Schwartzman et al 1986
+S6	Cingulate cortex	Cingulate cortex	monkey	NA	FALSE	CMRgl	0.37	0.09	umol/g/min	NA	Noda et al 2002
+S6	Cingulate cortex	Cingulate cortex	monkey	NA	FALSE	CMRgl	0.4	0.02	umol/g/min	NA	Palombo et al 1990
+S6	Cingulate cortex	Cingulate cortex	average monkey	NA	TRUE	CMRgl	0.39	0.06	umol/g/min	NA	
+S6	Cingulate cortex	Cingulate cortex	baboon	NA	FALSE	CMRgl	0.49	0.17	umol/g/min	NA	Meguro et al 1999
+S6	Cingulate cortex	Cingulate cortex	human	NA	FALSE	CMRgl	0.31	0.02	umol/g/min	NA	Blin et al 1991

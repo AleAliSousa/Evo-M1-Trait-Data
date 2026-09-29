@@ -1,16 +1,16 @@
 table	structure	subregion	species_printed	species	is_average	measure	value	sd	units	n_areas	reference
-S5	Frontal cortex	Frontal cortex	mouse	Mus musculus	FALSE	CMRgl	1.07	0.1	umol/g/min	NA	Bouilleret et al 2000
-S5	Frontal cortex	Frontal cortex	rat	Rattus norvegicus	FALSE	CMRgl	0.84	0.16	umol/g/min	NA	Dube et al 2001
-S5	Frontal cortex	Frontal cortex	rat	Rattus norvegicus	FALSE	CMRgl	0.86	0.04	umol/g/min	NA	Levant et al 2004
-S5	Frontal cortex	Frontal cortex	rat	Rattus norvegicus	FALSE	CMRgl	0.78	0.09	umol/g/min	NA	Waschke et al 1993
-S5	Frontal cortex	Frontal cortex	average rat	Rattus norvegicus	TRUE	CMRgl	0.83	0.1	umol/g/min	NA	
-S5	Frontal cortex	Frontal cortex	monkey	Macaca mulatta	FALSE	CMRgl	0.34	0.08	umol/g/min	NA	Noda et al 2002
-S5	Frontal cortex	Frontal cortex	monkey	Macaca mulatta	FALSE	CMRgl	0.58	0.02	umol/g/min	NA	Palombo et al 1990
-S5	Frontal cortex	Frontal cortex	average monkey	Macaca mulatta	TRUE	CMRgl	0.46	0.05	umol/g/min	NA	
-S5	Frontal cortex	Frontal cortex	human	Homo sapiens	FALSE	CMRgl	0.37	0.09	umol/g/min	NA	De Volder et al 1997
-S5	Frontal cortex	Frontal cortex	human	Homo sapiens	FALSE	CMRgl	0.28	0.02	umol/g/min	NA	Redies et al 1989
-S5	Frontal cortex	Frontal cortex	human	Homo sapiens	FALSE	CMRgl	0.25	0.01	umol/g/min	NA	Blomqvist et al 1998
-S5	Frontal cortex	Frontal cortex	human	Homo sapiens	FALSE	CMRgl	0.41	0.02	umol/g/min	NA	Heiss et al 1985
-S5	Frontal cortex	Frontal cortex	human	Homo sapiens	FALSE	CMRgl	0.33	0.06	umol/g/min	NA	Maquet et al 1992
-S5	Frontal cortex	Frontal cortex	human	Homo sapiens	FALSE	CMRgl	0.41	0.12	umol/g/min	NA	Haier et al 1992
-S5	Frontal cortex	Frontal cortex	average human	Homo sapiens	TRUE	CMRgl	0.34	0.06	umol/g/min	NA	
+S5	Frontal cortex	Frontal cortex	mouse	NA	FALSE	CMRgl	1.07	0.1	umol/g/min	NA	Bouilleret et al 2000
+S5	Frontal cortex	Frontal cortex	rat	NA	FALSE	CMRgl	0.84	0.16	umol/g/min	NA	Dube et al 2001
+S5	Frontal cortex	Frontal cortex	rat	NA	FALSE	CMRgl	0.86	0.04	umol/g/min	NA	Levant et al 2004
+S5	Frontal cortex	Frontal cortex	rat	NA	FALSE	CMRgl	0.78	0.09	umol/g/min	NA	Waschke et al 1993
+S5	Frontal cortex	Frontal cortex	average rat	NA	TRUE	CMRgl	0.83	0.1	umol/g/min	NA	
+S5	Frontal cortex	Frontal cortex	monkey	NA	FALSE	CMRgl	0.34	0.08	umol/g/min	NA	Noda et al 2002
+S5	Frontal cortex	Frontal cortex	monkey	NA	FALSE	CMRgl	0.58	0.02	umol/g/min	NA	Palombo et al 1990
+S5	Frontal cortex	Frontal cortex	average monkey	NA	TRUE	CMRgl	0.46	0.05	umol/g/min	NA	
+S5	Frontal cortex	Frontal cortex	human	NA	FALSE	CMRgl	0.37	0.09	umol/g/min	NA	De Volder et al 1997
+S5	Frontal cortex	Frontal cortex	human	NA	FALSE	CMRgl	0.28	0.02	umol/g/min	NA	Redies et al 1989
+S5	Frontal cortex	Frontal cortex	human	NA	FALSE	CMRgl	0.25	0.01	umol/g/min	NA	Blomqvist et al 1998
+S5	Frontal cortex	Frontal cortex	human	NA	FALSE	CMRgl	0.41	0.02	umol/g/min	NA	Heiss et al 1985
+S5	Frontal cortex	Frontal cortex	human	NA	FALSE	CMRgl	0.33	0.06	umol/g/min	NA	Maquet et al 1992
+S5	Frontal cortex	Frontal cortex	human	NA	FALSE	CMRgl	0.41	0.12	umol/g/min	NA	Haier et al 1992
+S5	Frontal cortex	Frontal cortex	average human	NA	TRUE	CMRgl	0.34	0.06	umol/g/min	NA	

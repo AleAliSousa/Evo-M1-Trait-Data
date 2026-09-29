@@ -22,7 +22,7 @@ Excluded by design:
     (trophic level, activity pattern, diet, running speed, body mass).
   * non-mammals -- class gate, though all four current sources are mammal-only.
 """
-import csv, os, re, math
+import csv, os, re, math, sys
 from collections import defaultdict, Counter
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -76,6 +76,7 @@ UNITS = {"Audible_freq_high_60dB.kHz": "kHz", "Audible_freq_low_60dB.kHz": "kHz"
          "Visual_acuity_mixed_method.cdeg": "c/deg",
          "Visual_acuity_method_unstated.cdeg": "c/deg",
          "CFF_behavioural.Hz": "Hz", "CFF_electrophysiological.Hz": "Hz",
+         "Interaural_distance_functional.us": "us",
          "Field_of_best_vision.deg": "deg", "Binocular_field.deg": "deg"}
 
 # printed / older names -> the name used in the merge (from each source's own crosswalk)
@@ -93,6 +94,25 @@ SPECIES_CANON = {
     "mustela putorius furo": "Mustela putorius", "capra hircus": "Capra hircus",
 }
 STOP = {"and", "et", "al", "the", "in", "press", "of", "&"}
+
+# Species identity: the shared resolver (_keys/resolve_species.py, mirror of resolve_species.R).
+# Every other merge's long table carries these columns per SPECIES_NAMING.md; this one was
+# behind, and the R twin had already been given the layer.
+sys.path.insert(0, os.path.join(BASE, "_keys"))
+from resolve_species import resolve_species  # noqa: E402
+
+_RS = {}
+
+
+def resolve_one(printed, item):
+    """-> (accepted_name, species_basis, reidentified) for one printed label of one item."""
+    k = (printed, item)
+    if k not in _RS:
+        r = resolve_species([printed], item)
+        a = r.accepted_name.iloc[0]
+        _RS[k] = ("" if a is None else a, r.species_basis.iloc[0], bool(r.reidentified.iloc[0]))
+    return _RS[k]
+
 
 def canon_species(s):
     s = re.sub(r"\s+", " ", (s or "")).strip()
@@ -182,6 +202,96 @@ def num(x):
     try: return float(x)
     except ValueError: return None
 
+# ---- MORE OF THE HEFFNER LAB ------------------------------------------------------------
+# The repo holds 33 Heffner-lab folders; the merge originally read 4 items. These are the
+# rest of the ones whose values are attributable PER ROW, which is what the repo's "no value
+# without a traceable source" rule requires. Each is declared rather than coded, because the
+# only thing that varies between them is which column holds what: every paper keeps its own
+# column names, and every one of these measured at the same 60 dB SPL criterion already used
+# by Koay Figure 6 -- which is what makes them poolable with the values already merged.
+#
+# `scale` converts to the merge's unit (some papers print the low limit in Hz, not kHz).
+# `role_col`/`src_col` are the curated per-row columns: data_role says whether the paper
+# measured the species itself, and source names the study when it did not.
+HEFFNER_EXTRA = [
+    # (folder, table, species_col, [(value_col, measure, scale), ...])
+    ("Heffner_Heffner_1992_c", "TableI", "binomial", [
+        ("high_frequency_limit_kHz", "Audible_freq_high_60dB.kHz", 1.0),
+        ("low_frequency_limit_kHz",  "Audible_freq_low_60dB.kHz",  1.0)]),
+    ("Heffner_Heffner_1982", "ResultsText", "binomial", [
+        ("high_freq_limit_60dB_kHz", "Audible_freq_high_60dB.kHz", 1.0),
+        ("low_freq_limit_60dB_Hz",   "Audible_freq_low_60dB.kHz",  0.001)]),
+    ("Heffner_Heffner_1985", "Resultstext", "binomial", [
+        ("audible_freq_high_60dBSPL_khz", "Audible_freq_high_60dB.kHz", 1.0),
+        ("audible_freq_low_60dBSPL_khz",  "Audible_freq_low_60dB.kHz",  1.0)]),
+    ("Heffner_Heffner_2010", "ResultsText", "binomial", [
+        ("high_freq_limit_60dB_kHz", "Audible_freq_high_60dB.kHz", 1.0),
+        ("low_freq_limit_60dB_Hz",   "Audible_freq_low_60dB.kHz",  0.001)]),
+    ("Heffner_etal_2001", "ResultsText", "species_sci", [
+        ("hearing_range_high_khz", "Audible_freq_high_60dB.kHz", 1.0),
+        ("hearing_range_low_khz",  "Audible_freq_low_60dB.kHz",  1.0)]),
+    ("Heffner_etal_2003", "Resultstext", "binomial", [
+        ("hearing_range_high_60dBSPL_kHz",   "Audible_freq_high_60dB.kHz", 1.0),
+        ("hearing_range_low_60dBSPL_kHz",    "Audible_freq_low_60dB.kHz",  1.0),
+        ("interaural_distance_functional_us", "Interaural_distance_functional.us", 1.0)]),
+    ("Heffner_etal_2006", "ResultsText", "binomial", [
+        ("high_freq_limit_60dB_kHz", "Audible_freq_high_60dB.kHz", 1.0),
+        ("low_freq_limit_60dB_kHz",  "Audible_freq_low_60dB.kHz",  1.0)]),
+    ("Heffner_etal_2013", "Resultstext", "binomial", [
+        ("hearing_range_high_60dBSPL_kHz",   "Audible_freq_high_60dB.kHz", 1.0),
+        ("hearing_range_low_60dBSPL_kHz",    "Audible_freq_low_60dB.kHz",  1.0),
+        ("interaural_distance_functional_us", "Interaural_distance_functional.us", 1.0)]),
+    ("Heffner_etal_1994_c", "Table1", "binomial", [
+        ("localization_threshold_deg", "Sound_localization_threshold.deg", 1.0)]),
+    ("Heffner_etal_2008", "Table1", "binomial", [
+        ("localization_threshold_deg", "Sound_localization_threshold.deg", 1.0)]),
+    ("Heffner_etal_2015", "TableI", "binomial", [
+        ("minimum_audible_angle_deg", "Sound_localization_threshold.deg", 1.0),
+        ("functional_head_size_us",   "Interaural_distance_functional.us", 1.0)]),
+    ("Koay_etal_1998_b", "Resultstext", "binomial", [
+        ("sound_localization_threshold_deg", "Sound_localization_threshold.deg", 1.0)]),
+]
+
+
+# ---- ERRATA FLAGS (ERRATA_CONVENTION.md, rendering 3) --------------------------------------
+# Every paper folder may carry reference_tables/<Paper>_errata.csv. A merge never substitutes a
+# proposed value; it FLAGS the study rows an erratum is about, so the flag rides through dedupe
+# and averaging into sensory_long.csv. A row is flagged when the erratum's item is the row's
+# Source_item, its variable is `*` or the column the row was read from, and its locator (which
+# by convention names the printed row label) contains the species as printed.
+def load_errata(base):
+    out = []
+    for paper in sorted(os.listdir(base)):
+        f = os.path.join(base, paper, "reference_tables", paper + "_errata.csv")
+        if not os.path.isfile(f):
+            continue
+        for e in read_csv(f):
+            e["paper"] = paper
+            out.append(e)
+    return out
+
+def errata_for_row(r, errata):
+    hits = []
+    sp_printed = (r.get("species_printed") or "").strip().lower()
+    sp_canon = (r.get("Species") or "").strip().lower()
+    for e in errata:
+        if e["status"] == "withdrawn" or e["item"] != r["Source_item"]:
+            continue
+        if e["variable"] != "*" and r.get("source_column") and e["variable"] != r["source_column"]:
+            continue
+        loc = e["locator"].lower()
+        if (sp_printed and sp_printed in loc) or (sp_canon and sp_canon in loc):
+            hits.append(e)
+    return hits
+
+def attach_errata(rows, errata):
+    for r in rows:
+        hits = errata_for_row(r, errata)
+        r["errata_id"] = "; ".join(sorted(e["errata_id"] for e in hits))
+        r["errata_status"] = "; ".join(sorted({e["status"] for e in hits}))
+        r["errata_issue_type"] = "; ".join(sorted({e["issue_type"] for e in hits}))
+    return rows
+
 def main():
     rows = []   # study-level rows, before dedupe
 
@@ -224,13 +334,17 @@ def main():
         # a split measure takes its name from the basis, so two methods can never be
         # averaged into one species value downstream
         measure = BASIS_MEASURE.get(group, measure)
+        acc, sp_basis, sp_reid = resolve_one(species, item)
         rows.append({"Species": canon_species(species), "Measure": measure, "Value": v,
+                     "species_printed": species, "accepted_name": acc,
+                     "species_basis": sp_basis, "reidentified": sp_reid,
                      "Medium": medium, "Source_item": item,
                      "Study_keys_list": list(study_keys),
                      "Study_key": "+".join(study_keys) if study_keys else "SELF",
                      "population": population, "method_basis": basis,
                      "poolable_group": group,
-                     "value_origin": origin, "Data_role": role, "note": note})
+                     "value_origin": origin, "Data_role": role, "note": note,
+                     "source_column": column or ""})
 
     # ---- 1. Heffner & Heffner 1992a Table 1 --------------------------------------------
     # its footnotes mix prose with citations ("Average of ganglion cell density and
@@ -253,6 +367,11 @@ def main():
             ITEM["HH1992a"], hh_keys.get(r["threshold_footnote"], []),
             "published", "secondary", population=pop,
             column="sound_localization_threshold_deg")
+        # functional interaural distance -- this paper's own head measurements, printed under
+        # its own column name (delta_t) for the same quantity Koay calls functional
+        # interaural distance
+        add(sp, "Interaural_distance_functional.us", r["delta_t_us"], ITEM["HH1992a"],
+            [], "published", "primary", population=pop, column="delta_t_us")
         # acuity: unfootnoted = this paper's own ganglion-cell estimate; footnoted = compiled.
         # The printed footnote also decides the METHOD BASIS, so it is passed as the
         # selector: footnote 29 is another ganglion-cell count (pools with the default),
@@ -299,6 +418,12 @@ def main():
             "digitised_from_figure", "primary" if primary else "secondary",
             medium=r["medium"] or "air", population=r["common_name_Koay1998"],
             column="high_freq_hearing_limit_60dB_kHz")
+        # the head-size covariate printed alongside each point. Its source is this paper's
+        # own measurement even where the audiogram beside it is compiled, so it is primary.
+        add(r["corrected_binomial"], "Interaural_distance_functional.us",
+            r["functional_interaural_distance_us"], ITEM["Koay1998"], [],
+            "digitised_from_figure", "primary", population=r["common_name_Koay1998"],
+            column="functional_interaural_distance_us")
 
     # ---- 4. Heffner et al 2020 -- Cottontail values FROM TEXT ---------------------------
     tmap = {"audible_freq_high_60dBSPL": "Audible_freq_high_60dB.kHz",
@@ -338,6 +463,34 @@ def main():
             [prim] if prim else [], "published", "secondary",
             population=r["common_name"], column="cff_hz", selector=meth)
 
+    # ---- 4d. the rest of the attributable Heffner-lab items ----------------------------
+    for folder, table, spcol, cols in HEFFNER_EXTRA:
+        path = os.path.join(BASE, folder, f"{folder}_{table}.csv")
+        if not os.path.exists(path):
+            raise SystemExit(f"declared Heffner item not found: {path}")
+        item = f"{folder}_{table}"
+        for r in read_csv(path):
+            sp = r.get(spcol, "").strip()
+            if not sp:
+                continue
+            role = (r.get("data_role") or "").strip().lower()
+            # "secondary (derived)" is a recomputed value, not a measurement -- the merge
+            # recomputes hearing range itself, so a derived row would double-count
+            if role.startswith("secondary (derived)"):
+                continue
+            keys = split_refs(r.get("source", ""))
+            own = (not keys) or keys == ["SELF"]
+            for vcol, meas, scale in cols:
+                raw = r.get(vcol, "")
+                v = num(raw)
+                if v is None:
+                    continue
+                add(sp, meas, v * scale, item,
+                    [] if own else [k for k in keys if k != "SELF"],
+                    "published", "primary" if own else "secondary",
+                    note="" if scale == 1.0 else f"converted to {UNITS[meas]} from the printed {vcol}",
+                    population=r.get("common_name", ""), column=vcol)
+
     # ---- 4c. resolve an unstated method from another source that states it --------------
     # A primary study's method does not change depending on which compilation cites it.
     # Heffner & Heffner's footnoted acuities name the study they took each value from but
@@ -372,6 +525,20 @@ def main():
                                                  "primary study"))
             r["method_basis"], r["poolable_group"] = basis, group
             r["Measure"] = BASIS_MEASURE.get(group, r["Measure"])
+
+
+    # ---- 4e. errata flags on the study rows (see ERRATA FLAGS above) ------------------
+    errata = load_errata(BASE)
+    attach_errata(rows, errata)
+    items_in_merge = {r["Source_item"] for r in rows}
+    flagged_by_id = Counter(eid for r in rows if r["errata_id"] for eid in r["errata_id"].split("; "))
+    errata_report = sorted(({"paper": e["paper"], "errata_id": e["errata_id"], "item": e["item"],
+                             "variable": e["variable"], "locator": e["locator"],
+                             "issue_type": e["issue_type"], "status": e["status"],
+                             "proposed_value": e["proposed_value"],
+                             "item_in_merge": e["item"] in items_in_merge,
+                             "study_rows_flagged": flagged_by_id.get(e["errata_id"], 0)}
+                            for e in errata), key=lambda d: d["errata_id"])
 
     # ---- 5. dedupe studies reported by more than one source ----------------------------
     for r in rows:
@@ -419,9 +586,15 @@ def main():
     # supersedes the earlier one (rules 1 + 4); across independent labs, average. The
     # Heffner/Koay lab produced most of this corpus and re-measured some species across
     # decades, so those cells are resolved by date rather than averaged.
-    ITEM_YEAR = {ITEM["HH1992a"]: 1992, ITEM["VK2014"]: 2014,
-                 ITEM["Koay1998"]: 1998, ITEM["H2020"]: 2020}
-    HEFFNER_LAB_ITEMS = {ITEM["HH1992a"], ITEM["Koay1998"], ITEM["H2020"]}
+    ITEM_YEAR = {f"{f}_{t}": int(re.search(r"(19|20)\d{2}", f).group(0))
+                 for f, t, _, _ in HEFFNER_EXTRA}
+    ITEM_YEAR.update({ITEM["HH1992a"]: 1992, ITEM["VK2014"]: 2014,
+                      ITEM["Koay1998"]: 1998, ITEM["H2020"]: 2020,
+                      ITEM["Haarlem2026"]: 2026})
+    # every declared item above is from the same lab, so the "a later measurement by the
+    # same lab supersedes an earlier one" rule has to cover them too
+    HEFFNER_LAB_ITEMS = ({ITEM["HH1992a"], ITEM["Koay1998"], ITEM["H2020"]}
+                         | {f"{f}_{t}" for f, t, _, _ in HEFFNER_EXTRA})
 
     def study_year(r):
         yrs = [int(y) for k in r["Study_keys_list"] for y in re.findall(r"(1[89]\d{2}|20\d{2})", k)]
@@ -432,6 +605,16 @@ def main():
             return r["Source_item"] in HEFFNER_LAB_ITEMS
         return all(re.match(r"(heffner|koay)", key_of(k)) for k in r["Study_keys_list"])
 
+    # Recency only decides between values of COMPARABLE provenance. A number read off a
+    # figure is a reading of a plotted point, so it carries the digitisation error on top of
+    # whatever the lab measured; a number printed in a table does not. Letting the later
+    # paper win regardless would have replaced Heffner & Heffner 1992a's printed interaural
+    # distances (Elephas 3350 us, Homo 875 us) with Koay 1998's digitised readings of the
+    # same lab's figure (3378.09, 870.54) for 23 species -- a later value, but a less exact
+    # one. So a printed value is never superseded by a digitised one; within one provenance
+    # tier, the later measurement still wins.
+    ORIGIN_RANK = {"published": 2, "recomputed": 1, "digitised_from_figure": 0}
+
     superseded = []
     groups2 = defaultdict(list)
     for r in kept:
@@ -439,14 +622,20 @@ def main():
     kept2 = []
     for _, rs in groups2.items():
         if len(rs) > 1 and all(heffner_lab(r) for r in rs):
-            newest = max(study_year(r) for r in rs)
+            best_rank = max(ORIGIN_RANK.get(r["value_origin"], 0) for r in rs)
+            tier = [r for r in rs if ORIGIN_RANK.get(r["value_origin"], 0) == best_rank]
+            newest = max(study_year(r) for r in tier)
+            winners = [q for q in tier if study_year(q) == newest]
             for r in rs:
-                if study_year(r) < newest:
-                    superseded.append({**r, "superseded_by_year": newest,
-                                       "kept_value": [q["Value"] for q in rs
-                                                      if study_year(q) == newest][0]})
-                else:
+                if r in winners:
                     kept2.append(r)
+                else:
+                    superseded.append({
+                        **r, "superseded_by_year": newest,
+                        "kept_value": winners[0]["Value"],
+                        "superseded_reason": "lower-precision value origin"
+                        if ORIGIN_RANK.get(r["value_origin"], 0) < best_rank
+                        else "earlier measurement by the same lab"})
         else:
             kept2.extend(rs)
     kept = kept2
@@ -455,6 +644,22 @@ def main():
     agg = defaultdict(list)
     for r in kept:
         agg[(r["Species"], r["Measure"], r["Medium"])].append(r)
+    # merged cells pool rows across sources, so species_printed / species_basis list the
+    # distinct printed labels / bases that resolved to the Species (SPECIES_NAMING.md v1)
+    sp_cols = defaultdict(lambda: {"printed": set(), "acc": set(), "basis": set(), "reid": False})
+    for r in rows:
+        c = sp_cols[r["Species"]]
+        c["printed"].add(r["species_printed"]); c["acc"].add(r["accepted_name"])
+        c["basis"].add(r["species_basis"]); c["reid"] |= bool(r["reidentified"])
+
+    def sp_summary(sp):
+        c = sp_cols[sp]
+        acc = sorted(a for a in c["acc"] if a)
+        return {"species_printed": "; ".join(sorted(c["printed"])),
+                "accepted_name": acc[0] if len(acc) == 1 else "; ".join(acc),
+                "species_basis": "; ".join(sorted(b for b in c["basis"] if b)),
+                "reidentified": c["reid"]}
+
     long_rows = []
     for (sp, meas, medium), rs in sorted(agg.items()):
         vals = [r["Value"] for r in rs]
@@ -470,6 +675,9 @@ def main():
             "value_range": "" if len(set(vals)) == 1 else "%g-%g" % (min(vals), max(vals)),
             "method_basis": "; ".join(sorted({r["method_basis"] for r in rs})),
             "poolable_group": "; ".join(sorted({r["poolable_group"] for r in rs})),
+            "errata_id": "; ".join(sorted({i for r in rs if r["errata_id"] for i in r["errata_id"].split("; ")})),
+            "errata_status": "; ".join(sorted({x for r in rs if r["errata_status"] for x in r["errata_status"].split("; ")})),
+            **sp_summary(sp),
         })
 
     # derived measure: hearing range in octaves, recomputed from the merged limits
@@ -477,6 +685,11 @@ def main():
     for r in long_rows:
         if r["Medium"] == "air":
             by_sp[r["Species"]][r["Measure"]] = r["Value"]
+    flags_sp = defaultdict(lambda: {"errata_id": set(), "errata_status": set()})
+    for r in long_rows:
+        if r["Medium"] == "air" and r["Measure"] in ("Audible_freq_high_60dB.kHz", "Audible_freq_low_60dB.kHz"):
+            for c in ("errata_id", "errata_status"):
+                flags_sp[r["Species"]][c] |= set(x for x in r[c].split("; ") if x)
     for sp, m in sorted(by_sp.items()):
         hi, lo = m.get("Audible_freq_high_60dB.kHz"), m.get("Audible_freq_low_60dB.kHz")
         if hi and lo and lo > 0:
@@ -487,7 +700,10 @@ def main():
                 "Data_role": "derived", "value_origin": "recomputed", "value_range": "",
                 # recomputed from two behavioural audiogram limits, so it inherits their basis
                 "method_basis": "behavioural_audiogram",
-                "poolable_group": "audiogram_behavioural"})
+                "poolable_group": "audiogram_behavioural",
+                "errata_id": "; ".join(sorted(flags_sp[sp]["errata_id"])),
+                "errata_status": "; ".join(sorted(flags_sp[sp]["errata_status"])),
+                **sp_summary(sp)})
 
     long_rows.sort(key=lambda r: (r["Species"], r["Measure"], r["Medium"]))
 
@@ -499,15 +715,22 @@ def main():
 
     w("sensory_long.csv", ["Species", "Measure", "Units", "Value", "Medium", "method_basis",
                            "poolable_group", "n_studies", "Sources", "Study_keys", "Data_role",
-                           "value_origin", "value_range"], long_rows)
+                           "value_origin", "value_range",
+                           "species_printed", "accepted_name", "species_basis",
+                           "reidentified", "errata_id", "errata_status"], long_rows)
     w("sensory_unfiltered.csv", ["Species", "Measure", "Value", "Medium", "method_basis",
                                  "poolable_group", "population", "Source_item", "Study_key",
-                                 "value_origin", "Data_role", "note"], rows)
+                                 "value_origin", "Data_role", "note",
+                                 "errata_id", "errata_status", "errata_issue_type"], rows)
+    w("sensory_errata_report.csv", ["paper", "errata_id", "item", "variable", "locator", "issue_type",
+                                    "status", "proposed_value", "item_in_merge", "study_rows_flagged"],
+      errata_report)
     w("sensory_method_resolution_report.csv",
       ["Species", "Measure_before", "Measure_after", "Source_item", "Study_key",
        "basis_before", "basis_after", "basis_stated_by"], resolved)
     w("sensory_superseded_report.csv", ["Species", "Measure", "Value", "Medium", "Source_item",
-                                        "Study_key", "superseded_by_year", "kept_value"], superseded)
+                                        "Study_key", "value_origin", "superseded_reason",
+                                        "superseded_by_year", "kept_value"], superseded)
     w("sensory_dedupe_report.csv", ["Species", "Measure", "Value", "Medium", "Source_item",
                                     "Study_key", "shared_study", "kept_from", "kept_value",
                                     "agrees"], dropped)

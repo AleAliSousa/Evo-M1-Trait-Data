@@ -64,3 +64,15 @@ text supports a peak frequency near 56-58 kHz (consistent with "56 kHz")
 but only a *range* of -1 to +4 dB SPL for the group, not a single "3 dB"
 value; 3 dB falls within that range but is not itself printed. This
 discrepancy is flagged here rather than silently reconciled.
+
+<!-- errata:begin -->
+## Errata
+
+Generated from `reference_tables/Wenstrup__1984_errata.csv` by `_tools/dataset_builder/render_errata.R` -- edit the CSV, not this block. See `_tools/dataset_builder/ERRATA_CONVENTION.md`.
+
+| id | variable | where printed | printed | repo value before | issue | proposed | status | evidence | note |
+|---|---|---|---|---|---|---|---|---|---|
+| Wenstrup__1984-E001 | cf_frequency_kHz | Summary point 3 and Results (PDF p2, p5): CF component 56-59 kHz; 'abrupt increase in threshold above 56 to 58 kHz' | 56-59 kHz (band); no single best frequency printed | 57 | publication_ambiguity | 56-59 (band) | confirmed | Text read 2026-09-29: maximum sensitivity is stated for the region of the CF sonar component, given as 56-59 kHz (abstract, results) and 56-58 kHz (summary); the paper never states one best frequency. The repo's 57 is a declared approximation (definitions note), not a printed value. | Merges should treat cf_frequency_kHz as a band centre, not a measured best frequency. The Bath workbook holds 56 (the lower bound). |
+
+1 recorded, 0 open (proposed), 1 confirmed, 0 withdrawn.
+<!-- errata:end -->

@@ -45,6 +45,68 @@ that pass the dedupe found 0 shared studies instead of 2.
 Method basis is **not** `value_origin`. That column records how the number was read off the page
 (published / digitised from a figure / recomputed), which is a different question.
 
+## More of the Heffner lab
+
+The repo holds **33 Heffner/Koay folders**; this merge originally read 4 items. Twelve more are
+now declared in `HEFFNER_EXTRA` (`heffner_extra` in the R twin) — every one whose values are
+attributable **per row**, which is what the repo's "no value without a traceable source" rule
+requires. They are declared rather than coded because the only thing that varies is which
+column holds what: each paper keeps its own column names, and each carries a curated
+`data_role` (did this lab measure the species, or compile it) and `source` (which study, when
+compiled). All of them read the limit at the **same 60 dB SPL criterion** already used by Koay
+Figure 6, which is what makes them poolable with the values already merged.
+
+| measure | before | after |
+|---|---|---|
+| `Audible_freq_low_60dB.kHz` | 1 | **21** |
+| `Hearing_range.octaves` (recomputed) | 1 | **21** |
+| `Sound_localization_threshold.deg` | 23 | **35** |
+| `Audible_freq_high_60dB.kHz` | 64 | **71** |
+| `Interaural_distance_functional.us` | — | **71** (new) |
+
+Species 135 → 139, merged rows 244 → 373. The extra traffic exercises the provenance
+machinery hard: 11 values are dropped as the same primary study reported twice (was 2) and 29
+are superseded within the lab (was 1).
+
+### Functional interaural distance
+
+The head-size covariate Heffner's programme is built on — "time for sound to travel from one
+auditory meatus to the other" — carried from five items that print it, under three different
+column names (`functional_interaural_distance_us`, `delta_t_us`, `functional_head_size_us`).
+It is **not a percept**: it is computed from head geometry, so it carries `is_percept = FALSE`
+and `measure_class = sensory_anatomy_derived`, and it pools only with itself. It is in this
+merge rather than a morphology one because it is the canonical predictor of the
+high-frequency hearing limit, and the two are most useful side by side.
+
+### Precision outranks recency
+
+Adding these exposed a flaw in the supersede rule. It kept the later measurement whenever one
+lab had measured a species twice — which meant Koay 1998's **figure-digitised** interaural
+distances displaced Heffner & Heffner 1992a's **printed table** values for 23 species
+(*Elephas* 3378.09 for 3350, *Homo* 870.54 for 875). A digitised reading carries the
+digitisation error on top of whatever was measured. A printed value is now never superseded by
+a digitised one; within one provenance tier the later measurement still wins. Every row in
+`sensory_superseded_report.csv` says which rule applied.
+
+### What still cannot enter, and why
+
+- **`Heffner_etal_2020` Figure 3** (79 points, interaural distance + hearing limit). Beyond
+  printing no per-point reference, the curation records that **45 of its 79 points are
+  unlabelled in the figure**, 7 have a marker claimed by two labels, 4 have an unvalidated
+  leader line, and 5 carry `CHECK_value_differs_from_Koay1998`. Only 17 are validated. Its
+  text values are already in.
+- **`Heffner_Heffner_2010_b_Table1`** (20 species, interaural distance + hearing limit). Its
+  footnote table *does* hold the citations (letters `c`–`jj`), but the per-row letters were
+  never carried into the table — `source` is a generic pointer. **Recoverable**: assigning
+  the letters from the paper's Table 1 would release 20 species of both measures. The one
+  row the paper measured itself is already in.
+- **`Heffner__2004_Table1`** (19 primates, high and low limits). No attribution column at
+  all; its footnotes are methodological ("Extrapolated value based on a threshold of 50 dB or
+  higher", "Tested using headphones"), not citations.
+- **`Heffner__1998_Table1`** (19 species) is birds, excluded by the mammal gate.
+- **`Heffner_etal_2016`, `Koay_etal_2003`** print per-frequency thresholds, not a limit — a
+  different quantity, and a full audiogram merge rather than a column here.
+
 ## Why there is no psychophysics merge
 
 Because the method varies *inside* a variable, a folder cannot hold the distinction: van
@@ -157,7 +219,7 @@ limits (and of the 56 kHz reading over the abstract's erroneous 32 kHz).
 ## QA against the compiled sensory check fixture
 
 `comparison_vs_SensoryData_compiled.csv` audits every merged value against
-`____Sensory_audiovisual/SensoryData_compiled_check/` (the Bath compilation, reshaped):
+`Evo-M1-Trait-Data-restricted/other_checks/sensory_data_refs_check/data_raw/SensoryData_compiled.csv` (the Bath compilation, reshaped; moved there 2026-09-29 from `____Sensory_audiovisual/SensoryData_compiled_check/`, which now holds a pointer):
 **175 agree, 33 differ**. The differences are all explained:
 
 - **22** are rows the fixture itself flags `quarantined_va_offset` — the compilation's known
@@ -170,6 +232,31 @@ limits (and of the 56 kHz reading over the abstract's erroneous 32 kHz).
   a different cited source for the same percept (*Felis catus*, *Mustela putorius*
   localization), and *Phoca vitulina*, where the compilation's 120 kHz is the **underwater**
   value and the merge's in-air row is 23.2 kHz — the medium split doing its job.
+
+## Errata flags (2026-09-29)
+
+The merge is the third rendering of the errata convention
+(`_tools/dataset_builder/ERRATA_CONVENTION.md`). Both scripts read every
+`<Paper>/reference_tables/<Paper>_errata.csv` and add three columns to
+`sensory_unfiltered.csv` (`errata_id`, `errata_status`, `errata_issue_type`)
+and two to `sensory_long.csv` (`errata_id`, `errata_status`). A study row is
+flagged when an erratum's `item` is the row's `Source_item`, its `variable` is
+`*` or the column the row was read from, and its `locator` — which by
+convention names the printed row label — contains the species as printed.
+Flags ride through dedupe and supersession into the pooled row (ids are
+unioned), and a derived `Hearing_range.octaves` inherits the flags of the two
+limits it was computed from. **Flags only, never substitution**: a
+`proposed_value` is never merged; `withdrawn` errata are ignored.
+
+Current state: 12 errata exist in the repo (Heffner__1998 ×4, Wenstrup__1984,
+Zilles_Rehkämper_1988 ×2, DeCasien_Higham_2019 ×5); none of those items is a
+source of this merge, so every flag column is empty and
+`sensory_errata_report.csv` shows `item_in_merge = FALSE` throughout. The
+matcher was exercised with a synthetic erratum on `Koay_etal_1998_Figure6`
+(flags the Rousettus rows; a mismatched `variable` or `withdrawn` status
+blocks it). If `Heffner__1998_Table1` is added as a source, its four corrected
+low-frequency limits (birds) arrive already flagged `repo_transcription_error
+/ confirmed`.
 
 ## Files
 
@@ -186,6 +273,7 @@ limits (and of the 56 kHz reading over the abstract's erroneous 32 kHz).
 | `_keys/sensory_method_basis.csv` | **the method basis of every source column**, with the source's own words; built by `_keys/build_sensory_method_basis.py`, which fails if a quoted statement is not verbatim in the file it is credited to |
 | `sensory_superseded_report.csv` | within-lab values superseded by a later measurement |
 | `comparison_vs_SensoryData_compiled.csv` | audit vs the Bath compilation check fixture |
+| `sensory_errata_report.csv` | every non-withdrawn row of every `<Paper>/reference_tables/<Paper>_errata.csv` in the repo, with `item_in_merge` and `study_rows_flagged` — the ledger of which errata this merge could see and which it actually flagged |
 
 ## Adding the next source
 

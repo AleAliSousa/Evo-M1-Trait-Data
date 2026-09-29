@@ -44,6 +44,18 @@ item <- c(HH1992a  = "Heffner_Heffner_1992_a_TABLE1",
           Haarlem2026 = "Haarlem_etal_2026_CFFdataset")
 item_year <- c(1992, 2014, 1998, 2020, 2026); names(item_year) <- item
 heffner_lab_items <- item[c("HH1992a", "Koay1998", "H2020")]
+## the declared items below are all from the same lab, so the "a later measurement by the
+## same lab supersedes an earlier one" rule has to cover them too (filled in after the spec)
+
+## Recency only decides between values of COMPARABLE provenance. A number read off a figure
+## carries the digitisation error on top of whatever the lab measured; a number printed in a
+## table does not. Letting the later paper win regardless would have replaced Heffner &
+## Heffner 1992a's printed interaural distances (Elephas 3350 us, Homo 875 us) with Koay
+## 1998's digitised readings of the same lab's figure (3378.09, 870.54) for 23 species -- a
+## later value, but a less exact one. So a printed value is never superseded by a digitised
+## one; within one provenance tier, the later measurement still wins.
+origin_rank <- c(published = 2, recomputed = 1, digitised_from_figure = 0)
+rank_of <- function(o) { r <- unname(origin_rank[o]); ifelse(is.na(r), 0, r) }
 
 units_of <- c("Audible_freq_high_60dB.kHz" = "kHz", "Audible_freq_low_60dB.kHz" = "kHz",
               "Sound_localization_threshold.deg" = "deg",
@@ -51,6 +63,7 @@ units_of <- c("Audible_freq_high_60dB.kHz" = "kHz", "Audible_freq_low_60dB.kHz" 
               "Visual_acuity_mixed_method.cdeg" = "c/deg",
               "Visual_acuity_method_unstated.cdeg" = "c/deg",
               "CFF_behavioural.Hz" = "Hz", "CFF_electrophysiological.Hz" = "Hz",
+              "Interaural_distance_functional.us" = "us",
               "Field_of_best_vision.deg" = "deg", "Binocular_field.deg" = "deg")
 
 ## MEASUREMENT METHOD IS PART OF THE MEASURE NAME. A behavioural threshold and a number
@@ -145,7 +158,7 @@ rows <- tibble(Species=character(), Measure=character(), Value=double(), Medium=
                method_basis=character(), poolable_group=character(),
                population=character(), Source_item=character(), Study_keys=list(),
                value_origin=character(), Data_role=character(), note=character(),
-               species_printed=character())
+               species_printed=character(), source_column=character())
 addrow <- function(sp, meas, val, it, keys, origin, role, note="", medium="air", pop="",
                    basis=NULL, group=NULL, column=NULL, sel=NULL){
   v <- suppressWarnings(as.numeric(val))
@@ -156,8 +169,60 @@ addrow <- function(sp, meas, val, it, keys, origin, role, note="", medium="air",
                    method_basis=basis, poolable_group=group,
                    population=pop, Source_item=it, Study_keys=list(keys),
                    value_origin=origin, Data_role=role, note=note,
-                   species_printed=as.character(sp))
+                   species_printed=as.character(sp),
+                   source_column=if (is.null(column)) "" else as.character(column))
 }
+
+## MORE OF THE HEFFNER LAB. The repo holds 33 Heffner-lab folders; the merge originally read
+## 4 items. These are the rest of the ones whose values are attributable PER ROW, which the
+## repo's "no value without a traceable source" rule requires. Declared rather than coded,
+## because the only thing that varies is which column holds what: every paper keeps its own
+## column names, and all of them measured at the same 60 dB SPL criterion already used by
+## Koay Figure 6, which is what makes them poolable with the values already merged.
+## `scale` converts to the merge's unit (some papers print the low limit in Hz, not kHz).
+heffner_extra <- list(
+  list("Heffner_Heffner_1992_c", "TableI", "binomial", list(
+    c("high_frequency_limit_kHz", "Audible_freq_high_60dB.kHz", "1"),
+    c("low_frequency_limit_kHz",  "Audible_freq_low_60dB.kHz",  "1"))),
+  list("Heffner_Heffner_1982", "ResultsText", "binomial", list(
+    c("high_freq_limit_60dB_kHz", "Audible_freq_high_60dB.kHz", "1"),
+    c("low_freq_limit_60dB_Hz",   "Audible_freq_low_60dB.kHz",  "0.001"))),
+  list("Heffner_Heffner_1985", "Resultstext", "binomial", list(
+    c("audible_freq_high_60dBSPL_khz", "Audible_freq_high_60dB.kHz", "1"),
+    c("audible_freq_low_60dBSPL_khz",  "Audible_freq_low_60dB.kHz",  "1"))),
+  list("Heffner_Heffner_2010", "ResultsText", "binomial", list(
+    c("high_freq_limit_60dB_kHz", "Audible_freq_high_60dB.kHz", "1"),
+    c("low_freq_limit_60dB_Hz",   "Audible_freq_low_60dB.kHz",  "0.001"))),
+  list("Heffner_etal_2001", "ResultsText", "species_sci", list(
+    c("hearing_range_high_khz", "Audible_freq_high_60dB.kHz", "1"),
+    c("hearing_range_low_khz",  "Audible_freq_low_60dB.kHz",  "1"))),
+  list("Heffner_etal_2003", "Resultstext", "binomial", list(
+    c("hearing_range_high_60dBSPL_kHz",    "Audible_freq_high_60dB.kHz", "1"),
+    c("hearing_range_low_60dBSPL_kHz",     "Audible_freq_low_60dB.kHz",  "1"),
+    c("interaural_distance_functional_us", "Interaural_distance_functional.us", "1"))),
+  list("Heffner_etal_2006", "ResultsText", "binomial", list(
+    c("high_freq_limit_60dB_kHz", "Audible_freq_high_60dB.kHz", "1"),
+    c("low_freq_limit_60dB_kHz",  "Audible_freq_low_60dB.kHz",  "1"))),
+  list("Heffner_etal_2013", "Resultstext", "binomial", list(
+    c("hearing_range_high_60dBSPL_kHz",    "Audible_freq_high_60dB.kHz", "1"),
+    c("hearing_range_low_60dBSPL_kHz",     "Audible_freq_low_60dB.kHz",  "1"),
+    c("interaural_distance_functional_us", "Interaural_distance_functional.us", "1"))),
+  list("Heffner_etal_1994_c", "Table1", "binomial", list(
+    c("localization_threshold_deg", "Sound_localization_threshold.deg", "1"))),
+  list("Heffner_etal_2008", "Table1", "binomial", list(
+    c("localization_threshold_deg", "Sound_localization_threshold.deg", "1"))),
+  list("Heffner_etal_2015", "TableI", "binomial", list(
+    c("minimum_audible_angle_deg", "Sound_localization_threshold.deg", "1"),
+    c("functional_head_size_us",   "Interaural_distance_functional.us", "1"))),
+  list("Koay_etal_1998_b", "Resultstext", "binomial", list(
+    c("sound_localization_threshold_deg", "Sound_localization_threshold.deg", "1"))))
+
+heffner_lab_items <- c(heffner_lab_items,
+                       vapply(heffner_extra, function(x) paste0(x[[1]], "_", x[[2]]), ""))
+item_year <- c(item_year,
+               setNames(vapply(heffner_extra,
+                               function(x) as.numeric(str_extract(x[[1]], "(19|20)\\d{2}")), 0),
+                        vapply(heffner_extra, function(x) paste0(x[[1]], "_", x[[2]]), "")))
 
 ## Heffner & Heffner 1992a -- study keys are CURATED in the footnotes reference table,
 ## because the printed footnotes mix prose with citations.
@@ -181,6 +246,10 @@ for (i in seq_len(nrow(hh))) {
          item["HH1992a"], fnkey[[as.character(r$threshold_footnote)]] %||% character(0),
          "published", "secondary", pop = r$Species_HH1992a,
          column = "sound_localization_threshold_deg")
+  ## functional interaural distance -- this paper's own head measurements, printed under its
+  ## own column name (delta_t) for the same quantity Koay calls functional interaural distance
+  addrow(sp, "Interaural_distance_functional.us", r$delta_t_us, item["HH1992a"],
+         character(0), "published", "primary", pop = r$Species_HH1992a, column = "delta_t_us")
   ## the printed acuity footnote also decides the METHOD BASIS: 29 is another
   ## ganglion-cell count (pools with the column default), 26 is an anatomical/evoked
   ## average, and 24/25/27/28/30 name a study without stating how it measured.
@@ -233,6 +302,42 @@ for (i in seq_len(nrow(koay))) {
          "digitised_from_figure", if (self) "primary" else "secondary",
          medium = ifelse(nzchar(r$medium), r$medium, "air"), pop = r$common_name_Koay1998,
          column = "high_freq_hearing_limit_60dB_kHz")
+  ## the head-size covariate printed alongside each point; this paper's own measurement even
+  ## where the audiogram beside it is compiled, so it is primary
+  addrow(r$corrected_binomial, "Interaural_distance_functional.us",
+         r$functional_interaural_distance_us, item["Koay1998"], character(0),
+         "digitised_from_figure", "primary", pop = r$common_name_Koay1998,
+         column = "functional_interaural_distance_us")
+}
+
+## the declared-spec harvest
+for (sp_i in seq_along(heffner_extra)) {
+  spec <- heffner_extra[[sp_i]]
+  folder <- spec[[1]]; table <- spec[[2]]; spcol <- spec[[3]]; cols <- spec[[4]]
+  path <- file.path(base, folder, paste0(folder, "_", table, ".csv"))
+  if (!file.exists(path)) stop(sprintf("declared Heffner item not found: %s", path))
+  it <- paste0(folder, "_", table)
+  d <- read.csv(path, colClasses = "character")
+  for (i in seq_len(nrow(d))) {
+    r <- d[i, ]
+    spv <- str_squish(as.character(r[[spcol]])); if (!nzchar(spv) || is.na(spv)) next
+    role <- tolower(str_squish(as.character(r$data_role %||% "")))
+    ## "secondary (derived)" is a recomputed value, not a measurement -- the merge recomputes
+    ## hearing range itself, so a derived row would double-count
+    if (startsWith(role, "secondary (derived)")) next
+    keys <- split_refs(as.character(r$source %||% ""))
+    own  <- length(keys) == 0 || identical(keys, "SELF")
+    for (cc in cols) {
+      vcol <- cc[1]; meas <- cc[2]; scale <- as.numeric(cc[3])
+      v <- suppressWarnings(as.numeric(as.character(r[[vcol]]))); if (is.na(v)) next
+      addrow(spv, meas, v * scale, it,
+             if (own) character(0) else keys[keys != "SELF"],
+             "published", if (own) "primary" else "secondary",
+             note = if (scale == 1) "" else
+                    sprintf("converted to %s from the printed %s", units_of[[meas]], vcol),
+             pop = as.character(r$common_name %||% ""), column = vcol)
+    }
+  }
 }
 
 ## Heffner et al 2020 -- Cottontail values FROM TEXT (not the unattributed Figure 3)
@@ -304,6 +409,43 @@ for (j in seq_len(nrow(unst))) {
 }
 rows <- rows %>% select(-.rid)
 
+## ---- 1c. errata flags (ERRATA_CONVENTION.md, rendering 3) --------------------------------
+## Every paper folder may carry reference_tables/<Paper>_errata.csv. The merge never substitutes
+## a proposed value; it FLAGS the study rows an erratum is about so the flag rides through dedupe
+## and averaging. A row is flagged when the erratum's item is its Source_item, the variable is `*`
+## or the column the row was read from, and the locator (which names the printed row label)
+## contains the species as printed. Mirrors load_errata()/errata_for_row() in the .py.
+errata_files <- file.path(base, list.dirs(base, recursive = FALSE, full.names = FALSE))
+errata_files <- file.path(errata_files, "reference_tables", paste0(basename(errata_files), "_errata.csv"))
+errata_files <- errata_files[file.exists(errata_files)]
+errata <- bind_rows(lapply(errata_files, function(f) {
+  e <- read.csv(text = readLines(f, encoding = "UTF-8", warn = FALSE), colClasses = "character",
+                check.names = FALSE, na.strings = character(), encoding = "UTF-8")
+  names(e) <- sub("^\ufeff", "", names(e))
+  e$paper <- basename(dirname(dirname(f))); e
+}))
+if (!nrow(errata)) errata <- tibble(errata_id=character(), item=character(), variable=character(),
+                                    locator=character(), issue_type=character(), status=character(),
+                                    proposed_value=character(), paper=character())
+errata_for_row <- function(item, sp_printed, sp_canon, col) {
+  e <- errata[errata$status != "withdrawn" & errata$item == item, , drop = FALSE]
+  if (!nrow(e)) return(e)
+  if (nzchar(col)) e <- e[e$variable == "*" | e$variable == col, , drop = FALSE]
+  loc <- tolower(e$locator); sp1 <- tolower(trimws(sp_printed)); sp2 <- tolower(trimws(sp_canon))
+  e[(nzchar(sp1) & grepl(sp1, loc, fixed = TRUE)) | (nzchar(sp2) & grepl(sp2, loc, fixed = TRUE)), , drop = FALSE]
+}
+join_sorted <- function(x) paste(sort(unique(x[nzchar(x)]), method = "radix"), collapse = "; ")
+hits <- Map(errata_for_row, rows$Source_item, rows$species_printed, rows$Species, rows$source_column)
+rows$errata_id         <- vapply(hits, function(h) join_sorted(h$errata_id), "")
+rows$errata_status     <- vapply(hits, function(h) join_sorted(h$status), "")
+rows$errata_issue_type <- vapply(hits, function(h) join_sorted(h$issue_type), "")
+flagged_ids <- unlist(strsplit(rows$errata_id[nzchar(rows$errata_id)], "; ", fixed = TRUE))
+errata_report <- errata %>%
+  transmute(paper, errata_id, item, variable, locator, issue_type, status, proposed_value,
+            item_in_merge = item %in% unique(rows$Source_item),
+            study_rows_flagged = vapply(errata_id, function(i) sum(flagged_ids == i), 0L)) %>%
+  arrange(errata_id)
+
 ## ---- 2. dedupe: same primary study reported by two DIFFERENT sources --------------------
 rows <- rows %>% mutate(
   Study_key = map_chr(Study_keys, ~ if (length(.x)) paste(.x, collapse="+") else NA_character_),
@@ -340,9 +482,19 @@ study_year <- function(keys, src){
 is_heffner <- function(keys, src) if (!length(keys)) src %in% heffner_lab_items else
   all(str_detect(key_of(keys), "^(heffner|koay)"))
 kept <- kept %>% mutate(.year = map2_dbl(Study_keys, Source_item, study_year),
-                        .hef  = map2_lgl(Study_keys, Source_item, is_heffner))
+                        .hef  = map2_lgl(Study_keys, Source_item, is_heffner),
+                        .rank = rank_of(value_origin))
 superseded <- kept %>% group_by(Species, Measure, Medium) %>%
-  filter(n() > 1, all(.hef), .year < max(.year)) %>% ungroup()
+  filter(n() > 1, all(.hef)) %>%
+  ## kept_value has to be taken BEFORE the filter below removes the winning rows from the
+  ## group -- afterwards there is nothing left in the group that satisfies the winner test
+  mutate(.best = max(.rank), .newest = max(.year[.rank == .best]),
+         kept_value = Value[.rank == .best & .year == .newest][1]) %>%
+  filter(.rank < .best | .year < .newest) %>%
+  mutate(superseded_by_year = .newest,
+         superseded_reason = ifelse(.rank < .best, "lower-precision value origin",
+                                    "earlier measurement by the same lab")) %>%
+  ungroup()
 kept <- anti_join(kept, superseded, by = c("Species","Measure","Medium","Source_item","Study_key"))
 
 ## ---- 4. average across DISTINCT primary studies ------------------------------------------
@@ -360,11 +512,18 @@ long <- kept %>% group_by(Species, Measure, Medium) %>%
             Data_role = if (all(Data_role=="primary")) "primary"
                         else if (all(Data_role=="secondary")) "secondary" else "mixed",
             value_origin = paste(sort(unique(value_origin), method="radix"), collapse="; "),
+            errata_id = join_sorted(unlist(strsplit(errata_id, "; ", fixed = TRUE))),
+            errata_status = join_sorted(unlist(strsplit(errata_status, "; ", fixed = TRUE))),
             .groups="drop")
 
 ## derived: hearing range recomputed from the merged in-air limits (never merged as a value)
 air <- long %>% filter(Medium == "air") %>% select(Species, Measure, Value) %>%
   pivot_wider(names_from = Measure, values_from = Value)
+limit_flags <- long %>% filter(Medium == "air",
+                               Measure %in% c("Audible_freq_high_60dB.kHz", "Audible_freq_low_60dB.kHz")) %>%
+  group_by(Species) %>%
+  summarise(errata_id = join_sorted(unlist(strsplit(errata_id, "; ", fixed = TRUE))),
+            errata_status = join_sorted(unlist(strsplit(errata_status, "; ", fixed = TRUE))), .groups = "drop")
 if (all(c("Audible_freq_high_60dB.kHz","Audible_freq_low_60dB.kHz") %in% names(air))) {
   long <- bind_rows(long, air %>%
     filter(!is.na(.data[["Audible_freq_high_60dB.kHz"]]), !is.na(.data[["Audible_freq_low_60dB.kHz"]])) %>%
@@ -375,31 +534,38 @@ if (all(c("Audible_freq_high_60dB.kHz","Audible_freq_low_60dB.kHz") %in% names(a
               Data_role = "derived", value_origin = "recomputed", value_range = "",
               ## recomputed from two behavioural audiogram limits, so it inherits their basis
               method_basis = "behavioural_audiogram",
-              poolable_group = "audiogram_behavioural"))
+              poolable_group = "audiogram_behavioural") %>%
+    left_join(limit_flags, by = "Species") %>%
+    mutate(errata_id = coalesce(errata_id, ""), errata_status = coalesce(errata_status, "")))
 }
 long <- long %>% arrange(Species, Measure, Medium) %>%
   select(Species, Measure, Units, Value, Medium, method_basis, poolable_group,
          n_studies, Sources, Study_keys,
-         Data_role, value_origin, value_range)
+         Data_role, value_origin, value_range, errata_id, errata_status)
 ## Species naming columns (SPECIES_NAMING.md v1): Species keeps this merge's canon_sp() label; the
 ## shared resolver adds the identity anchor + basis from the printed name at study-row level (keyed by
 ## the source item's paper folder), collapsed per Species because long is pooled per species x measure.
 source(file.path(base, "_keys", "resolve_species.R"))
 rs <- resolve_species(rows$species_printed, source_publication = paper_folder_of_item(rows$Source_item, base))
 rows$accepted_name <- rs$accepted_name; rows$species_basis <- rs$species_basis; rows$reidentified <- rs$reidentified
-long <- long %>% left_join(species_columns_summary(rows, "Species"), by = "Species")
+long <- long %>% left_join(species_columns_summary(rows, "Species"), by = "Species") %>%
+  relocate(errata_id, errata_status, .after = last_col())
 
 ## ---- 5. write ---------------------------------------------------------------------------
 write.csv(long, "sensory_long.csv", row.names = FALSE, na = "")
 write.csv(resolved, "sensory_method_resolution_report.csv", row.names = FALSE, na = "")
 write.csv(rows %>% select(Species, Measure, Value, Medium, method_basis, poolable_group,
                           population, Source_item,
-                          Study_key, value_origin, Data_role, note),
+                          Study_key, value_origin, Data_role, note,
+                          errata_id, errata_status, errata_issue_type),
           "sensory_unfiltered.csv", row.names = FALSE, na = "")
+write.csv(errata_report, "sensory_errata_report.csv", row.names = FALSE, na = "")
 write.csv(dropped %>% select(Species, Measure, Value, Medium, Source_item, Study_key,
                              shared_study, kept_from, kept_value, agrees),
           "sensory_dedupe_report.csv", row.names = FALSE, na = "")
-write.csv(superseded %>% select(Species, Measure, Value, Medium, Source_item, Study_key),
+write.csv(superseded %>% select(Species, Measure, Value, Medium, Source_item, Study_key,
+                                value_origin, superseded_reason, superseded_by_year,
+                                kept_value),
           "sensory_superseded_report.csv", row.names = FALSE, na = "")
 ## wide table is IN-AIR only; underwater measurements stay in sensory_long.csv
 write.csv(long %>% filter(Medium == "air") %>%

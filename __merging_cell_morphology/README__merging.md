@@ -208,12 +208,17 @@ One row per (source × species × specimen × region × layer × cell type × me
 | `cell_morphology_qa_overlaps.csv` | same species × region × cell type × measure from more than one source (28 groups: cross-method, Bianchi-vs-Jacobs human, Jacobs-vs-Nguyen lion, Elston 2000-vs-2001 macaque area 10) |
 | `cell_morphology_qa_unmapped_labels.csv` | printed cell-type / region labels with no crosswalk row (0 after this run) |
 | `cell_morphology_qa_species_not_in_reference.csv` | names absent from `_keys/species_reference.csv` |
+| `_keys/build_cell_morphology_domain.py` | **not in this folder** — classifies this merge's 270 app variables (domain, measure class, measurement basis) from `cell_morphology_definitions.csv` and `region_crosswalk.csv`, and writes them into `_keys/variable_domain.csv` + `_keys/glossary.csv`. It lives in `_keys/` because its outputs are keys, not merge outputs, and because its two siblings — `_keys/build_brain_size_basis.py` (for `__merging_brain_mass`) and `_keys/build_sensory_method_basis.py` (for `__merging_sensory`) — are filed there for the same reason. Re-run it whenever this merge is rebuilt. |
 
 ## Rebuild
 
 ```sh
 Rscript __merging_cell_morphology/standardized_term.R
 Rscript __merging_cell_morphology/cell_morphology_compiled.R
+# the app will not classify the new variables until the key is rebuilt too:
+python3 _keys/build_cell_morphology_domain.py
+Rscript _keys/build_variable_definitions.R
+Rscript __ShinyApp/build_data.R
 ```
 
 Both scripts resolve their own path, so they also run from RStudio (Source). To add a source: build

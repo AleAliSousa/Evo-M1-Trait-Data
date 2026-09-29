@@ -10,6 +10,8 @@
 ##   validate_dataset_item()  — check 7 invariants for one dataset item
 ##   audit_dataset_item()     — pre-build 4-file convention + orphan-TSV scan
 ##   build_dataset_item()     — run the item's build script and validate output
+##   render_errata()          — validate <Paper>_errata.csv and regenerate its README block
+##                              and definitions notes (ERRATA_CONVENTION.md)
 ## Plus the helper:
 ##   repo_root()              — walk up to the directory containing __ReadMe.xlsx
 
@@ -40,6 +42,7 @@
 })
 
 ## ---- source the three component scripts in dependency order -----------------
+source(file.path(.ldb_dir, "render_errata.R"))        # errata schema + renderer (validate depends on it)
 source(file.path(.ldb_dir, "validate_dataset_item.R"))
 source(file.path(.ldb_dir, "audit_dataset_item.R"))
 source(file.path(.ldb_dir, "build_dataset_item.R"))

@@ -4,8 +4,8 @@
 ## Science 57(3-4):259-268. doi:10.1016/S0168-1591(98)00101-4
 ##
 ## Source is a born-digital PDF; Table 1 (19 rows) was transcribed directly.
-## Four bird rows carry an unresolved OCR sign ambiguity on the low-frequency
-## limit (see README) and are left blank rather than guessed.
+## Four bird rows print a less-than bound on the low-frequency limit ("< 250"
+## etc.; page image read 2026-09-29) -- carried as value + qualifier column.
 
 ## 0. PATHS --------------------------------------------------------
 .sp <- local({
@@ -51,19 +51,28 @@ binomial_map <- c(
   "Turkey" = "Meleagris gallopavo", "Pigeon" = "Columba livia",
   "Mallard duck" = "Anas platyrhynchos"
 )
-## OCR sign ambiguity: 4 bird low-frequency-limit cells extract with a
-## leading minus sign that cannot be a real negative frequency; left blank
-## rather than guessed (see README).
-bird_ambiguous <- c("Zebra finch", "Turkey", "Pigeon", "Mallard duck")
+## Four bird low-frequency-limit cells extract from the text layer with a
+## leading minus sign ("-250", "-250", "-125", "-300"). The page image of
+## Table 1 (p. 261) was read on 2026-09-29: the printed glyph is a LESS-THAN
+## sign -- "< 250", "< 250", "< 125", "< 300" -- i.e. the low limit is below
+## the lowest frequency tested. (Until then these cells were left blank on
+## the assumption the glyph was ">"; see reference_tables/Heffner__1998_errata.csv
+## E001-E004.) The snapshot keeps the literal extraction; here the sign is
+## decoded to the bound with a qualifier column, so the value is usable and
+## its meaning is explicit.
+bird_less_than <- c("Zebra finch", "Turkey", "Pigeon", "Mallard duck")
 
 ## 3. CLEAN -----------------------------------------------------------
 num <- function(x) suppressWarnings(as.numeric(x))
+lf_raw <- snap$`Low-frequency limit (Hz) as extracted`
+lf_is_lt <- snap$Animal %in% bird_less_than
+stopifnot(all(grepl("^-", lf_raw[lf_is_lt])), !any(grepl("^-", lf_raw[!lf_is_lt])))
 final.dataframe <- tibble(
   species_row = seq_len(nrow(snap)),
   common_name = snap$Animal,
   binomial    = unname(binomial_map[snap$Animal]),
-  low_frequency_limit_Hz = ifelse(snap$Animal %in% bird_ambiguous, NA_real_,
-                                   num(snap$`Low-frequency limit (Hz) as extracted`)),
+  low_frequency_limit_Hz = num(sub("^-", "", lf_raw)),
+  low_frequency_limit_qualifier = ifelse(lf_is_lt, "<", ""),
   high_frequency_limit_Hz = num(snap$`High-frequency limit (Hz)`),
   best_sensitivity_dB = num(snap$`Best sensitivity (dB)`),
   best_frequency_Hz = num(snap$`Best frequency (Hz)`),

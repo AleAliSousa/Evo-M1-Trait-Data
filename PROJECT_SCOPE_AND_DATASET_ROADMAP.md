@@ -73,7 +73,7 @@ whether regional cell-type composition tracks function rather than size alone.
 **Merge route decided and built (2026-08-31):** `__merging_sensory` compiles percepts only
 (acuity, audiogram-derived thresholds, sound localization), with compilation-aware study-set
 dedupe and a medium split — ~130 species from HH 1992a, Heffner et al. 2020, Koay et al. 1998,
-and Veilleux & Kirk 2014. `SensoryData_compiled_check/` is the audit fixture (Route-B
+and Veilleux & Kirk 2014. `SensoryData_compiled_check/` (moved 2026-09-29 to `Evo-M1-Trait-Data-restricted/other_checks/sensory_data_refs_check/data_raw/`) is the audit fixture (Route-B
 registration reverted by owner). Heesy 2004 and Jung et al. 2022 are built and registered but not
 yet wired into `sensory_compiled.R`; the R run is pending (no R in the build sandbox).
 
@@ -1098,7 +1098,17 @@ TSV uploaded to `__Public/comparative-data` on a future pass once the connector 
 clears; the analysis CSVs themselves are already complete and uploaded to each item's
 own folder, so this is a copy-only follow-up, not a re-build.
 
-## Current order of work (refreshed 2026-09-02; audit in `_checks/registry_audit_20260902.md`)
+## Current order of work (refreshed 2026-09-28; audit in `_checks/registry_audit_20260928.md`)
+
+> **Top of the queue as of 2026-09-28 — see new items 11–14 below.** Registry hygiene is now clean
+> (0 lost rows, 0 trailing-`_` keys, 0 XML corruption, orphaned TSVs down 43 → 8), so the binding
+> constraint has moved from the registry to **merge wiring**. The audit found **73 registered items
+> with volume columns that are not wired into `__merging_volumes`** (60 of them not used by any other
+> merge) — against a merge that carries 60 items. Two things changed the shape of item 7: the
+> registry now holds **19 Baron 1996 items, 11 of them volumetric**, while the disposition register,
+> this roadmap and the paper's own overlap audit all still scope the HOLD to Tables 10 and 32. And
+> `__Public/comparative-data/NA.tsv` is live and being written by the **hearing** intake (item 11) —
+> the silent-loss fingerprint, not a volumes problem.
 
 1. **Registry hygiene — refreshed 2026-09-02 (`_checks/registry_audit_20260902.md` is now the
    canonical list).** Done since 08-31: the corrupted `Young_etal_2013_xml:…` key repaired; the
@@ -1168,9 +1178,23 @@ own folder, so this is a copy-only follow-up, not a re-build.
    see `M1_surface_STATUS_and_PLAN_20260825.md` in the Kaskan folder). Registry rows
    `Changizi__2001_Figure3` + `Finlay_etal_2006_Table6.1` ("Species -- wait for Project Kaskan")
    wait on the Kaskan area-name/species tables.
-4. **R-side runs on next RStudio session:** `_tools/file_list.R` (AUTO TSV column is badly
-   stale — 43 orphaned public TSVs and 16 FINISHED-but-notfound rows, all the 08-31→09-02
-   builds), `_checks/registry_snapshot.R` (snapshot is 7 rows stale), the
+4. **R-side runs on next RStudio session:** **`__merging_volumes/volumes_compiled.R` — REQUIRED, new
+   2026-09-28.** Two wirings landed as static edits verified by offline simulation only; the merge
+   has not been run. Combined expected delta, and nothing else should move:
+
+   | | long rows | species | Variables | colliding cells |
+   |---|---|---|---|---|
+   | Campos & Welker 1976 (item 12) | +18 | +1 | +7 new | 0 |
+   | Baron 1996 Tables 8/10/32 (item 7) | +4,032 | +252 | 0 new | 0 |
+   | **total** | **8,091 → ~12,141** | **297 → ~550** | **+7** | **0** |
+
+   If any pre-existing cell changes value, the reshape branches are wrong. Also worth checking on
+   that run: the laterality guard stays silent (neither new source is registered in
+   `laterality_known.csv`, correctly — all their quantities are whole-brain or whole-structure), and
+   `volumes_source_citations.csv` resolves citations for all four new items. `_tools/file_list.R` (AUTO TSV column: 8 orphaned public TSVs, down from 43 —
+   `NA.tsv` plus the two space-bearing stale twins should disappear once item 11 is fixed and they
+   are removed), `_checks/registry_snapshot.R` (snapshot is current; rerun after the next registry
+   edit), the
    `standardized_term.R` + `cortical_areas_compiled.R` confirmation rerun, the
    `sensory_compiled.R` run, and the pending Completed100 sample-trees run.
 5. Audit and, where still absent, wire **Liu hand and Jacobs M1 morphology**, plus the built
@@ -1180,14 +1204,100 @@ own folder, so this is a copy-only follow-up, not a re-build.
 6. **Freeze-source pass** on the three invariant-1 folders with derived data but no frozen
    source: `Fu_etal_2013`, `Rilling_Insel_1998`, `deJager_etal_2022` (Halley & Krubitzer is the
    documented skip and stays as-is).
-7. **Baron 1996 bat block** wiring into volumes — blocked on the seven historical taxon-concept
-   decisions plus within-source averaging.
+7. ~~**Baron 1996 bat block** wiring into volumes~~ — **PARTLY DONE 2026-09-28.** Tables 8, 10 and 32
+   are **WIRED** as Tier-2 team `Baron_Chiroptera`. Both original gates are now implemented in
+   `volumes_compiled.R` from the audit's own frozen crosswalk rather than pending: `merge_eligible`
+   drops the 7 `MANUAL_REVIEW` concepts, and a `group_by(Species)` mean discharges the within-source
+   averaging for the 25 printed rows that collapse to 12 accepted names, both before tier resolution.
+   Zero species overlap re-verified across all 252 accepted species. Expected delta **+4,032 long rows,
+   +252 species** (the merge's species count roughly doubles, 297 -> 549), 16 variables all already in
+   the vocabulary, **0 colliding cells** — needs the RStudio rerun in item 4 to confirm.
+   The 7 held concepts still want a curator decision (`Nyctalus stenopterus`, `Eptesicus flavescens`,
+   `Scotomanes sp.`, `Nyctophilus timoriensis`, `Tadarida beccarii`, `Tadarida pumila`,
+   `Molossus trinitatis`); the audit lists a provisional candidate for each.
+   **The other 8 volumetric tables (13/16/19/22/25/28/30/35) are now held on LATERALITY, not taxonomy:**
+   the book never states whether its brainstem, vestibular, auditory, cerebellar, geniculate and
+   colliculus volumes are one side or both, and the school is split — Stephan 1981 TablesXII/XIII and
+   Matano 1986 print them unilateral while Baron 1988 Table1 maps the same VC/VM/VI/VL/VS abbreviations
+   to the bilateral terms. Confirming Baron 1988's convention against the 1996 methods is the single
+   cheapest unblock left in the volumes domain. Tables 36/39/42/45/48 are surface areas and belong in
+   `__merging_cortical_areas`. **Rescoped 2026-09-28: this is 11 volumetric tables, not
+   2.** The registry holds 19 Baron 1996 items, all FINISHED — primary volumetric Tables 8, 10, 13,
+   16, 19, 22, 25, 28, 30, 32, 35 (net brain/ventricles; five fundamental parts; trigeminal and
+   somatosensory brainstem nuclei; medullary motor/relay nuclei incl. inferior olive; vestibular
+   complex + 4 subnuclei; auditory nuclei; mesencephalon incl. colliculi; cerebellar nuclei;
+   lateral lemniscus + medial and lateral geniculate; accessory olfactory bulb; 8 telencephalic
+   components), plus Tables 2 and 5 (linear measures; body/brain mass), Table 51 (secondary), and
+   five **surface-area** tables 36/39/42/45/48 that belong in `__merging_cortical_areas` rather than
+   here. `Baron_etal_1996_overlap_taxonomy_audit.md` still opens "Tables 10 and 32 contain 272
+   source rows" — **re-run the overlap/taxonomy audit across all 11 volumetric tables before wiring
+   any of them.** The two gates are unchanged and still correct. Largest new-species yield available:
+   the core currently holds one bat (*Pteropus giganteus*, via Ashwell 2020) and the audit found zero
+   species × structure overlap.
 8. ~~Build Medina-González immediately after its restricted files become available.~~ ✅ done
    2026-09 (built from the Wiley online supplement, not the still-restricted Zenodo record).
 9. Decide on a class-aware destination before compiling Olkowicz or any other avian shelf
    dataset (`____Spinal_cord_etc/` is the next staging folder to watch as a merge-group
    candidate).
 10. Implement the region tags and per-region coverage audit from Part 1.
+11. **`NA.tsv` — fix the silent-write defect (new 2026-09-28, high severity).**
+    `__Public/comparative-data/NA.tsv` exists, 2,053 bytes, modified 2026-09-27 14:34, holding rodent
+    audiogram data ("R. Heffner and Contos 1989"). A build script's `enc()` returned `NA` because its
+    Item name has no `Item encoded` in Sheet1, and `write.table(..., paste0(enc, ".tsv"))` wrote to a
+    shared `NA.tsv` instead of failing. Belongs to the 09-26 hearing batch, not to volumes. Identify
+    the script, register the row, and add the `stop()` guard so a missing encoding fails loudly —
+    this is the same mechanism that made the August row loss invisible. Two further orphans carry a
+    **stray space before `_Table1`** (`10.1002%2Far.20829 _Table1`,
+    `10.1007%2Fs00429-014-0792-y _Table1`), and one registry row has content but an **empty Item
+    name**, so it can never resolve.
+12. ~~**Wire the two long-format, specimen-aware volume sources — the cheapest real win.**~~
+    **Worked 2026-09-28; one wired, one held.** `Campos_Welker_1976_Table1` is **WIRED** into
+    `__merging_volumes` as its own Tier-2 team `Campos_Welker` — a long→wide reshape branch in
+    `paper_long()` (the merge's first long-format source, filtering `product == "volume"` and
+    `unit == "mm3"` and asserting one specimen per species), plus 9 definition-specific standardized
+    terms on the Reep precedent. Verified against data: 9/9 columns map, 18 long rows, zero
+    collisions, 7 new Variables, 1 new species (*Hydrochoerus hydrochoerus*); mm³ confirmed by the
+    source's own volume × density = neuron-count identity (ratio 1.0000). **Needs an RStudio rerun of
+    `volumes_compiled.R` — the edit is verified against the data by an offline simulation, not by
+    running R.** `Armstrong__1979_Tables1-9` is **HOLD** on three gates (LGB 5–6× below the merge's
+    existing LGN for all three shared species; Frankfurt + Wisconsin specimen overlap with Tier 1 and
+    the `Bush` team; `LGB` = `LGBp` + `LGBm` with two rows per structure for one *Hylobates*
+    individual) — see `Armstrong__1979/Armstrong__1979_volume_merge_GATES.md`. Original note follows.
+
+    *(original)* **Wire the two long-format, specimen-aware volume sources — the cheapest real win.**
+    `Armstrong__1979_Tables1-9` (thalamic relay nuclei; `specimen_code`, `individual_id`,
+    `species_as_published`, `interpreted_taxon`, sex, age, collection; specimen crosswalk already
+    links `Hylo.-h`/`Hylo.-s` as two hemispheres of one gibbon) and `Campos_Welker_1976_Table1`
+    (capybara + guinea pig subdivisions, with printed-vs-recomputed factor checks). Both recorded as
+    BUILT since 2026-08-24; neither appears in any `__merging_*/*.R`. Because they are long-format and
+    already per-specimen they need **no de-averaging**, so they are the natural first customers for
+    the weighted-mean workflow in `PLAN__weighted_averages_rollout.md`.
+13. **Stephan-school volume tables that are simply unwired.** ~~`Frahm_Zilles_1994_Table2`
+    (hippocampal subfields … lowest risk on the whole list)~~ — **retracted 2026-09-28: it is a
+    duplicate, not an addition.** 288 of 288 subfield cells are identical to `Frahm_Zilles_1994_Table1`,
+    which is already Tier 1 with all six subfield terms mapped; the paper simply prints the subfields
+    twice. Now `EXCLUDED FROM MERGE` in the disposition register. In ascending risk, what remains:
+    the bat/insectivore group `Schleifenbaum__1973_Tables1-2`,
+    `Stephan_Pirlot_1970_Table1`, `Ebinger__1974_Tables3-4`, `Pirlot__1981_TABLEII`,
+    `Pirlot_Jiao_1985_Table1`, `Kamiya_Pirlot_1980_TABLE1`, `Pirlot_Nelson_1978_TABLE3` — **expect the
+    same historical-taxon-concept work as Baron 1996, and check for shared specimens with the Stephan
+    collection first** (that is a Tier-1 recency question, not a Tier-2 averaging one).
+    Primate tables with no taxonomy blocker: `Semendeferi_Damasio_2000_Table2` (already carries
+    `Specimen` + `taxon_concept`), `Smaers_etal_2010_Table1` (check against the wired Smaers 2011
+    supplements for republication), `Schenker_etal_2005_Table1`/`Appendix1`,
+    `Smaers_etal_2018_Figure2-data1`, `deSousa_etal_2009_Table1`, the `deSousa__2008` thesis tables,
+    `Sherwood_etal_2004_unpublishedviaDeCasien`, `Tschudin__1998_Table2.5`, `MacLeod__2000_APPENDIXI`,
+    `Hakeem_etal_2005_Table2`. **`Barks_etal_2014_Fig5A` needs a disposition either way** — its
+    siblings `TABLE1` and `Fig4A` are in `expanded_only_items` (DeCasien-only) but Fig5A never was.
+    Full list with volume-column names: `_checks/volumes_unwired_candidates.csv`.
+14. **Volume-merge defects carried from 2026-08-19, all still open.** (a) Bush & Allman 2003 / 2004a /
+    2004b are the same 55 Wisconsin brains but are averaged against each other inside the `Bush` team
+    — 70 cells average two of them, 38 average all three (*Alouatta palliata* neocortex grey =
+    17,233.33 mm³, the mean of three print precisions of one measurement, reported as
+    `n_sources = 3`). (b) Bauernfeind merge-side work, now that the source side is done: stop
+    collapsing the 43 individuals at `volumes_compiled.R:272`, drop the *Pongo pygmaeus* + *P. abelii*
+    lump (Table 3 separates them), fix the `Brain_Mass.mg` unit defect. (c) Five per-specimen tables
+    still collapsed at extraction: MacLeod T1/T2, de Sousa 2010 T1, Smaers 2011 SuppT1/T2, Barger 2007.
 
 *(The original scouting list put "Heuer 2018 volumes" first as the biggest new-species yield. That
 candidate is the excluded Navarrete paper — see curator decisions 1–2. Nothing to do there without

@@ -109,7 +109,35 @@ papers <- tribble(
   "Sherwood_etal_2005_Table1",            "Zilles",             2005,
   "Barger_etal_2007_TABLE1",              "Zilles",             2007,
   "Reep_etal_2007_Table1",                "Reep",               2007,
-  "Kverkova_etal_2018_TableS1",           "Kverkova",           2018
+  "Kverkova_etal_2018_TableS1",           "Kverkova",           2018,
+  # Campos & Welker 1976: capybara + guinea pig, 9 forebrain structures each, one specimen per
+  # species. Own lab, own animals -> its own Tier-2 team. A LONG source (product/code/value), so
+  # it gets a reshape branch in paper_long() rather than the generic wide path. Its structure
+  # definitions are source-specific (thalamus includes fibre tracts and excludes the pretectum;
+  # the striatum block EXCLUDES globus pallidus, which is reported separately; the hippocampus
+  # block includes subiculum + dentate), so it uses definition-specific standardized terms on the
+  # Reep precedent and therefore never averages against Stephan's partition of the same forebrain.
+  "Campos_Welker_1976_Table1",            "Campos_Welker",      1976,
+  # Baron, Stephan & Frahm 1996, "Comparative Neurobiology in Chiroptera" (ISBN 978-3-7643-5370-4).
+  # The bat block: 272 printed chiropteran rows -> 265 merge-eligible -> 252 accepted species, none
+  # of which is anywhere in the rest of this merge (the only bat the core previously held is
+  # Ashwell's Pteropus giganteus, absent from Baron). So this is a NEW Chiroptera block, not a
+  # duplicate of the wired Stephan/Baron insectivore-primate rows -- verified against
+  # volumes_long.csv, zero species overlap.
+  # TEAM: its own Tier-2 team, NOT Stephan_collection. Same coauthor group and same methods, but
+  # Tier 1 is defined by the C&O Vogt SPECIMENS (README__merging.md) and these are different
+  # animals; if a species ever did overlap, averaging two different animals measured identically is
+  # the right behaviour, not most-recent-wins.
+  # SCOPE: only the three tables whose quantities are whole-brain or whole-structure, where
+  # laterality cannot arise. The eight paired-structure tables (13/16/19/22/25/28/30/35 -- brainstem,
+  # vestibular, auditory, cerebellar and geniculate nuclei, colliculi, accessory olfactory bulb)
+  # stay OUT until the book's one-side-vs-both-sides convention is established: Stephan 1981
+  # TablesXII/XIII and Matano 1986 print those nuclei UNILATERAL, while Baron 1988 Table1 maps the
+  # same abbreviations (VC/VM/VI/VL/VS) to the bilateral terms, and the 1996 captions and methods
+  # state neither. Mapping one side to a both-sides term is a silent 2x error, so it waits.
+  "Baron_etal_1996_Table8",               "Baron_Chiroptera",   1996,
+  "Baron_etal_1996_Table10",              "Baron_Chiroptera",   1996,
+  "Baron_etal_1996_Table32",              "Baron_Chiroptera",   1996
 )
 expanded_only_items <- c(
   "Sherwood_etal_2004_TABLEI", "Barks_etal_2014_TABLE1", "Barks_etal_2014_Fig4A",
@@ -343,6 +371,61 @@ paper_long <- function(row) {
     meas <- c("hemispheres_cm3","amygdaloid_complex_total","basolateral_total","lateral_total","basal_total","accessory_basal_total")
     df <- df %>% group_by(Species) %>%
       summarise(across(all_of(meas), ~ mean(num(.x) * 1000, na.rm = TRUE)), .groups = "drop")
+  }
+  if (it == "Campos_Welker_1976_Table1") {
+    # The only LONG source in this merge: one row per (species, product, code) rather than one row
+    # per species. Reshape to wide so the generic term-map path below applies unchanged.
+    #  * `product` splits the paper's three datatypes -- keep `volume` only; the cortical-morphometry
+    #    and cell-count products are separate outputs and belong to other merges.
+    #  * `unit == "mm3"` additionally drops `corticothalamic_ratio`, which is a ratio, not a volume.
+    #  * one specimen per species (capybara 59-490, guinea pig 60-1), so there is nothing to
+    #    average here -- asserted rather than assumed, because a second specimen would silently
+    #    become a pivot_wider list-column.
+    df <- df %>% filter(product == "volume", unit == "mm3") %>%
+      transmute(Species = species_as_published, code = code, value = num(value))
+    if (anyDuplicated(df[, c("Species", "code")]))
+      stop("Campos_Welker_1976_Table1: more than one volume row per (species, code) -- the source ",
+           "now has multiple specimens per species; add an explicit aggregation before the pivot.",
+           call. = FALSE)
+    df <- df %>% tidyr::pivot_wider(names_from = code, values_from = value)
+  }
+  if (grepl("^Baron_etal_1996_Table", it)) {
+    # The two HOLD gates on the Chiroptera block are both discharged by the paper's own frozen
+    # crosswalk (Baron_etal_1996/Baron_etal_1996_taxonomy_crosswalk.csv), which the 2026-08-15
+    # overlap/taxonomy audit produced as a machine-readable answer rather than prose:
+    #   merge_eligible == FALSE          the 7 concepts still on MANUAL_REVIEW -- dropped here, so
+    #                                   no provisional taxonomy is laundered into the merge. They
+    #                                   are listed in Baron_etal_1996_overlap_taxonomy_audit.md and
+    #                                   need a curator decision, not a guess.
+    #   within_source_mean_required      the 25 printed rows (12 accepted names) where the book
+    #                                   prints subspecies or addendum rows that collapse to one
+    #                                   species. The group_by(Species) mean below IS that gate: it
+    #                                   averages within the source BEFORE the value ever reaches
+    #                                   step 5/6, which is what the audit required.
+    # Joined on `species_row`, the printed row index, not on the species string -- the book's
+    # labels are abbreviated and carry addendum markers, e.g. R. amplexicaud. brachyotis with a
+    # trailing section sign, so only the row index is unambiguous.
+    cw <- read.csv(file.path(base, "Baron_etal_1996", "Baron_etal_1996_taxonomy_crosswalk.csv"),
+                   stringsAsFactors = FALSE, check.names = FALSE)
+    if (!"species_row" %in% names(df))
+      stop("paper_long('", it, "'): expected a species_row column to join the Baron 1996 crosswalk.",
+           call. = FALSE)
+    n_in <- nrow(df)
+    df <- df %>%
+      left_join(cw %>% select(species_row, candidate_name, merge_eligible),
+                by = "species_row")
+    if (any(is.na(df$candidate_name)))
+      stop("paper_long('", it, "'): ", sum(is.na(df$candidate_name)), " row(s) did not join the ",
+           "Baron 1996 crosswalk on species_row.", call. = FALSE)
+    meas <- grep("_mm3$", names(df), value = TRUE)
+    meas <- meas[!grepl("_pct_", meas)]              # the book's own derived percentages, not measurements
+    df <- df %>% filter(merge_eligible %in% c(TRUE, "TRUE")) %>%
+      mutate(Species = candidate_name) %>%
+      group_by(Species) %>%
+      summarise(across(all_of(meas), ~ mean(num(.x), na.rm = TRUE)), .groups = "drop") %>%
+      mutate(across(all_of(meas), ~ ifelse(is.nan(.x), NA_real_, .x)))
+    message("  ", it, ": ", n_in, " printed rows -> ", nrow(df),
+            " accepted species (7 MANUAL_REVIEW concepts held out; within-source means applied)")
   }
   # --- generic wide -> long via standardized terms ---
   # The species column is found from the term map (the Original_Term whose Standardized_Term ==

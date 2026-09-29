@@ -185,7 +185,8 @@ XW <- rbind(
   c("Audible_freq_high_60dB.kHz",              "high_freq_hearing_limit_60dB_kHz",    "Koay"),
   c("Sound_localization_threshold.deg",        "sound_localization_threshold_deg",    "Heffner_Heffner_1992"),
   c("Binocular_field.deg",                     "binocular_field_deg",                 "Heffner_Heffner_1992"),
-  c("Field_of_best_vision.deg",                "field_of_best_vision_deg",            "Heffner_Heffner_1992"))
+  c("Field_of_best_vision.deg",                "field_of_best_vision_deg",            "Heffner_Heffner_1992"),
+  c("Interaural_distance_functional.us",       "functional_interaural_distance_us",    "Koay"))
 colnames(XW) <- c("label", "code", "folder")
 XW <- as.data.frame(XW, stringsAsFactors = FALSE)
 

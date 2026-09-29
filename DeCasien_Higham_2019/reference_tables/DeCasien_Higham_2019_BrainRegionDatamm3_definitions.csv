@@ -6,14 +6,14 @@ References,Numeric reference code(s) supporting the row (as printed; may be a ra
 N,Sample size for the row (as printed),,count,,info,primates,DeCasien_Higham_2019_BrainRegionDatamm3,,
 BV,Total brain volume,Brain,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,compiled,mm3
 Medulla,Medulla volume,Medulla,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,compiled,mm3
-Cerebellum,Cerebellum volume,Cerebellum,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,compiled,mm3
+Cerebellum,Cerebellum volume,Cerebellum,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,"ERRATA DeCasien_Higham_2019-E005 (proposed, publication_ambiguity): printed 42900, repo had 42900 | compiled",mm3
 Mesencephalon,Mesencephalon (midbrain) volume,Mesencephalon,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,compiled,mm3
 Diencephalon,Diencephalon volume,Diencephalon,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,compiled,mm3
 Telencephalon,Telencephalon volume,Telencephalon,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,compiled,mm3
-MOB,Main olfactory bulb volume,Main_olfactory_bulb,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,compiled,mm3
+MOB,Main olfactory bulb volume,Main_olfactory_bulb,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,"ERRATA DeCasien_Higham_2019-E004 (proposed, publication_error): printed 79.2, repo had 79.2, proposed 18.8 | compiled",mm3
 AOB,Accessory olfactory bulb volume,Accessory_olfactory_bulb,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,compiled,mm3
 Piriform Lobe,Piriform lobe volume,Piriform_lobe,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,compiled,mm3
-Septum,Septum volume,Septum,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,compiled,mm3
+Septum,Septum volume,Septum,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,"ERRATA DeCasien_Higham_2019-E001 (proposed, publication_error): printed 83.3, repo had 83.3, proposed 83.8 | ERRATA DeCasien_Higham_2019-E002 (proposed, publication_error): printed 1193, repo had 1193, proposed 1173 | compiled",mm3
 Striatum,Striatum volume (excluding nucleus accumbens; see also 'Striatum (incl. NAcc)'),Striatum,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,"compiled; kept as a distinct column from the NAcc-inclusive variant, not merged",mm3
 Striatum (incl. NAcc),Striatum volume including the nucleus accumbens,Striatum_incl_NAcc,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,"compiled; some source studies report this combined value instead of Striatum alone",mm3
 Schizocortex,Schizocortex volume,Schizocortex,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,compiled,mm3
@@ -30,7 +30,7 @@ Optic Tract,Optic tract volume,Optic_tract,Vol.mm3,,secondary,primates,DeCasien_
 V1 (GM),Primary visual cortex (area striata) grey-matter volume,V1_GM,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,compiled,mm3
 LGN,Lateral geniculate nucleus volume,LGN,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,compiled,mm3
 Paleocortex,Paleocortex volume,Paleocortex,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,compiled,mm3
-Amygdala,Amygdala volume,Amygdala,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,compiled,mm3
+Amygdala,Amygdala volume,Amygdala,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,"ERRATA DeCasien_Higham_2019-E003 (proposed, publication_error): printed 277, repo had 277, proposed 227 | compiled",mm3
 Vmo,Motor trigeminal nucleus volume,Vmo,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,compiled,mm3
 VII,Facial nerve nucleus volume,VII,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,compiled,mm3
 XII,Hypoglossal nucleus volume,XII,Vol.mm3,,secondary,primates,DeCasien_Higham_2019_BrainRegionDatamm3,compiled,mm3

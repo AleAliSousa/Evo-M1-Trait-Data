@@ -8,6 +8,8 @@
 ##   5. frozen source (snapshot data file) exists
 ##   6. registry row found by Item name (never row number)
 ##   7. TSV file name == paste0(item_encoded, ".tsv")  +  trailing-_ guard
+##   8. errata file (<Paper>/reference_tables/<Paper>_errata.csv), IF present,
+##      passes check_errata_file() (ERRATA_CONVENTION.md); absent = SKIP
 
 validate_dataset_item <- function(
     csv_file,
@@ -17,7 +19,8 @@ validate_dataset_item <- function(
     frozen_source_file = NULL,   ## *_snapshot.(csv|xlsx|xls|tsv) path
     registry          = NULL,    ## data.frame already read from __ReadMe.xlsx
     item_name         = NULL,    ## character — looked up by name, never row number
-    item_encoded      = NULL     ## character — expected TSV stem; also guards trailing _
+    item_encoded      = NULL,    ## character — expected TSV stem; also guards trailing _
+    errata_file       = NULL     ## <Paper>/reference_tables/<Paper>_errata.csv; derived from csv_file when NULL
 ) {
 
   ## ---- helpers --------------------------------------------------------------
@@ -54,6 +57,19 @@ validate_dataset_item <- function(
     NA
   }
 
+  ## ---- invariant 8: errata file, if present, is well-formed -----------------
+  if (is.null(errata_file) && .scalar(csv_file)) {
+    pd <- dirname(normalizePath(csv_file, mustWork = FALSE))
+    errata_file <- file.path(pd, "reference_tables", paste0(basename(pd), "_errata.csv"))
+  }
+  check_errata <- if (.scalar(errata_file) && file.exists(errata_file) && exists("check_errata_file")) {
+    probs <- check_errata_file(errata_file)
+    if (length(probs)) warning("errata file problems: ", paste(probs, collapse = "; "))
+    length(probs) == 0L
+  } else {
+    NA   ## no errata file -- nothing to check
+  }
+
   ## ---- assemble report ------------------------------------------------------
   all_checks <- c(
     "csv"                   = .exists(csv_file),
@@ -63,7 +79,8 @@ validate_dataset_item <- function(
     "frozen_source"         = check_frozen,
     "registry_row"          = check_registry_row,
     "tsv_name_match"        = check_tsv_name,
-    "no_trailing_underscore"= check_no_trailing_underscore
+    "no_trailing_underscore"= check_no_trailing_underscore,
+    "errata_file_valid"     = check_errata
   )
 
   checks <- data.frame(

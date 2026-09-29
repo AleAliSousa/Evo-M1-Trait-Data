@@ -136,6 +136,50 @@ the domain key never reaches the UI. Every variable tooltip now ends with a
 "Measurement basis:" line, and the Plot tab warns, naming both bases, when the two
 axes are estimates of the same thing measured differently.
 
+### Update — classifying `__merging_cell_morphology`
+
+The coverage check reported **270 of 830 app variables with no row in
+`variable_domain.csv`**, all from `__merging_cell_morphology`: the merge was
+wired into the app but its variables had never been classified, so they had no
+domain, no measure class, no tooltip and no basis.
+
+They are classified by `_keys/build_cell_morphology_domain.py` rather than typed
+out, because the merge already records what each variable is and 270 hand-written
+rows would go stale the next time it is rebuilt. Everything is derived from the
+merge's own metadata: the measure class from `applies_to` in
+`cell_morphology_definitions.csv`, the structure from `region`, the definition
+text from that same definitions file (written into the glossary, which is how the
+definitions builder composes a definition for a label matching no per-paper
+`Code`), and the region names from the canonical rows of `region_crosswalk.csv`.
+An `applies_to` or `method_class` with nothing on record stops the build rather
+than falling into a default.
+
+| measure class | variables |
+|---|---|
+| `dendritic_arbor` | 119 |
+| `soma_morphometry` | 70 |
+| `dendritic_spines` | 53 |
+| `von_economo_neurons` | 18 |
+| `interlaminar_astrocytes` | 9 |
+| `neuron_number` | 1 |
+
+`interlaminar_astrocytes` and `neuron_number` are existing classes, reused rather
+than duplicated under new names. The new domain is `cellular morphology`, kept
+separate from `cellular composition`: composition is how many cells there are,
+morphology is what shape and size they are.
+
+Method is carried the same way as everywhere else — `poolable_family` is the
+quantity (`soma_volume`), `poolable_group` the quantity as measured
+(`soma_volume__stereology`). Four quantities in this merge are measured two ways
+and now warn when crossed: `soma_area` (Golgi tracing vs stereology),
+`soma_volume` (Nissl perikaryal volumetry vs stereology), `spine_count` (Lucifer
+Yellow injection vs Golgi) and `ven_pct` (optical fractionator vs Nissl counts).
+Two regions measured the same way do not warn; the same region measured two ways
+does.
+
+Unclassified is back to **0 of 830**, and all 884 registered labels resolve to a
+definition.
+
 ### Update — the sensory split, and why the warning needed a family
 
 The same treatment was applied to `__merging_sensory`, where `measure_class =

@@ -54,6 +54,22 @@ VK = os.path.join("Veilleux_Kirk_2014", "reference_tables",
                   "Veilleux_Kirk_2014_SupplementalTable1_definitions.csv")
 KO = os.path.join("Koay_etal_1998", "reference_tables",
                   "Koay_etal_1998_Figure6_definitions.csv")
+def _defs(folder, table):
+    return os.path.join(folder, "reference_tables", f"{folder}_{table}_definitions.csv")
+
+HH92C   = _defs("Heffner_Heffner_1992_c", "TableI")
+HH82    = _defs("Heffner_Heffner_1982", "ResultsText")
+HH85    = _defs("Heffner_Heffner_1985", "Resultstext")
+HH10    = _defs("Heffner_Heffner_2010", "ResultsText")
+H01     = _defs("Heffner_etal_2001", "ResultsText")
+H03     = _defs("Heffner_etal_2003", "Resultstext")
+H06     = _defs("Heffner_etal_2006", "ResultsText")
+H13     = _defs("Heffner_etal_2013", "Resultstext")
+H94C    = _defs("Heffner_etal_1994_c", "Table1")
+H08     = _defs("Heffner_etal_2008", "Table1")
+H15     = _defs("Heffner_etal_2015", "TableI")
+KO98B   = _defs("Koay_etal_1998_b", "Resultstext")
+
 HA = os.path.join("Haarlem_etal_2026", "reference_tables",
                   "Haarlem_etal_2026_CFFdataset_definitions.csv")
 
@@ -79,6 +95,10 @@ BASIS_NOTES = {
     "anatomical_and_electrophysiological_mixed":
         "a single printed value averaging an anatomical estimate with an evoked-potential "
         "measure; neither component is recoverable",
+    "anatomical_head_geometry":
+        "not a measured percept: the time a sound takes to travel around the head between "
+        "the ears, computed from head geometry. The canonical predictor of the "
+        "high-frequency hearing limit, which is why it is carried in this merge",
     "unstated_external_source":
         "the source names the study the value came from but does not state how that study "
         "measured it",
@@ -206,6 +226,100 @@ def check(statement, rel):
         sys.exit(f"statement not found verbatim in {rel}:\n  {statement}")
     return rel
 
+
+# ---- functional interaural distance ------------------------------------------------------
+# The head-size covariate Heffner's programme is built on. NOT a percept: it is computed
+# from head geometry, so is_percept is False and it pools only with itself.
+IAD = "interaural_distance_anatomical"
+ASSIGN.update({
+    ("Heffner_Heffner_1992_a_TABLE1", "delta_t_us"): (
+        "functional interaural distance", "anatomical_head_geometry", IAD,
+        "Functional interaural distance: maximum time for sound to travel around the head "
+        "between auditory meatus", HH, False),
+    ("Koay_etal_1998_Figure6", "functional_interaural_distance_us"): (
+        "functional interaural distance", "anatomical_head_geometry", IAD,
+        "Functional interaural distance: time for sound to travel from one auditory meatus "
+        "to the other", KO, False),
+    ("Heffner_etal_2015_TableI", "functional_head_size_us"): (
+        "functional interaural distance", "anatomical_head_geometry", IAD,
+        "Time for sound to travel around the head from one ear to the other", H15, False),
+    ("Heffner_etal_2003_Resultstext", "interaural_distance_functional_us"): (
+        "functional interaural distance", "anatomical_head_geometry", IAD,
+        "Functional interaural distance (time for sound to travel around the head between "
+        "the ears)", H03, False),
+    ("Heffner_etal_2013_Resultstext", "interaural_distance_functional_us"): (
+        "functional interaural distance", "anatomical_head_geometry", IAD,
+        "Functional interaural distance (time for sound to travel around the head between "
+        "the ears)", H13, False),
+})
+
+# ---- more of the Heffner lab's audiograms and localization thresholds --------------------
+# Every one of these is a behavioural measurement at the same 60 dB SPL criterion already
+# used by Koay Figure 6, which is what makes them poolable with the values already merged.
+ASSIGN.update({
+    ("Heffner_Heffner_1992_c_TableI", "high_frequency_limit_kHz"): (
+        "high-frequency hearing limit", "behavioural_audiogram", "audiogram_behavioural",
+        "Highest frequency audible at 60 dB SPL", HH92C, True),
+    ("Heffner_Heffner_1992_c_TableI", "low_frequency_limit_kHz"): (
+        "low-frequency hearing limit", "behavioural_audiogram", "audiogram_behavioural",
+        "Lowest frequency audible at 60 dB SPL", HH92C, True),
+    ("Heffner_Heffner_1982_ResultsText", "high_freq_limit_60dB_kHz"): (
+        "high-frequency hearing limit", "behavioural_audiogram", "audiogram_behavioural",
+        "High-frequency edge of the hearing range at the 60-dB-SPL criterion", HH82, True),
+    ("Heffner_Heffner_1982_ResultsText", "low_freq_limit_60dB_Hz"): (
+        "low-frequency hearing limit", "behavioural_audiogram", "audiogram_behavioural",
+        "Low-frequency edge of the hearing range at the 60-dB-SPL criterion", HH82, True),
+    ("Heffner_Heffner_1985_Resultstext", "audible_freq_high_60dBSPL_khz"): (
+        "high-frequency hearing limit", "behavioural_audiogram", "audiogram_behavioural",
+        "High-frequency hearing limit (highest frequency audible at 60 dB SPL) as stated in "
+        "the Results text", HH85, True),
+    ("Heffner_Heffner_1985_Resultstext", "audible_freq_low_60dBSPL_khz"): (
+        "low-frequency hearing limit", "behavioural_audiogram", "audiogram_behavioural",
+        "Low-frequency hearing limit at 60 dB SPL as interpolated from Fig. 3 and stated in "
+        "the Results text", HH85, True),
+    ("Heffner_Heffner_2010_ResultsText", "high_freq_limit_60dB_kHz"): (
+        "high-frequency hearing limit", "behavioural_audiogram", "audiogram_behavioural",
+        "High-frequency edge of the hearing range at the standard 60-dB-SPL criterion", HH10, True),
+    ("Heffner_Heffner_2010_ResultsText", "low_freq_limit_60dB_Hz"): (
+        "low-frequency hearing limit", "behavioural_audiogram", "audiogram_behavioural",
+        "Low-frequency edge of the hearing range at the standard 60-dB-SPL criterion", HH10, True),
+    ("Heffner_etal_2001_ResultsText", "hearing_range_high_khz"): (
+        "high-frequency hearing limit", "behavioural_audiogram", "audiogram_behavioural",
+        "Highest frequency at which the species' average threshold was <=60 dB SPL", H01, True),
+    ("Heffner_etal_2001_ResultsText", "hearing_range_low_khz"): (
+        "low-frequency hearing limit", "behavioural_audiogram", "audiogram_behavioural",
+        "Lowest frequency at which the species' average threshold was <=60 dB SPL", H01, True),
+    ("Heffner_etal_2003_Resultstext", "hearing_range_high_60dBSPL_kHz"): (
+        "high-frequency hearing limit", "behavioural_audiogram", "audiogram_behavioural",
+        "High-frequency edge of the 60-dB SPL hearing range as stated in text", H03, True),
+    ("Heffner_etal_2003_Resultstext", "hearing_range_low_60dBSPL_kHz"): (
+        "low-frequency hearing limit", "behavioural_audiogram", "audiogram_behavioural",
+        "Low-frequency edge of the 60-dB SPL hearing range as stated in text", H03, True),
+    ("Heffner_etal_2006_ResultsText", "high_freq_limit_60dB_kHz"): (
+        "high-frequency hearing limit", "behavioural_audiogram", "audiogram_behavioural",
+        "High-frequency edge of the hearing range at the 60-dB-SPL criterion", H06, True),
+    ("Heffner_etal_2006_ResultsText", "low_freq_limit_60dB_kHz"): (
+        "low-frequency hearing limit", "behavioural_audiogram", "audiogram_behavioural",
+        "Low-frequency edge of the hearing range at the 60-dB-SPL criterion", H06, True),
+    ("Heffner_etal_2013_Resultstext", "hearing_range_high_60dBSPL_kHz"): (
+        "high-frequency hearing limit", "behavioural_audiogram", "audiogram_behavioural",
+        "High-frequency edge of the 60-dB SPL hearing range", H13, True),
+    ("Heffner_etal_2013_Resultstext", "hearing_range_low_60dBSPL_kHz"): (
+        "low-frequency hearing limit", "behavioural_audiogram", "audiogram_behavioural",
+        "Low-frequency edge of the 60-dB SPL hearing range", H13, True),
+    ("Heffner_etal_1994_c_Table1", "localization_threshold_deg"): (
+        "sound localization threshold", "behavioural_threshold", "localization_behavioural",
+        "Minimum-audible-angle left/right sound-localization threshold", H94C, True),
+    ("Heffner_etal_2008_Table1", "localization_threshold_deg"): (
+        "sound localization threshold", "behavioural_threshold", "localization_behavioural",
+        "Passive sound-localization threshold (minimum audible angle)", H08, True),
+    ("Heffner_etal_2015_TableI", "minimum_audible_angle_deg"): (
+        "sound localization threshold", "behavioural_threshold", "localization_behavioural",
+        "Passive sound-localization threshold for a 100-ms broadband noise burst", H15, True),
+    ("Koay_etal_1998_b_Resultstext", "sound_localization_threshold_deg"): (
+        "sound localization threshold", "behavioural_threshold", "localization_behavioural",
+        "Minimum audible angle (passive sound-localization threshold)", KO98B, True),
+})
 
 out = []
 for (item, col), (qty, basis, grp, stmt, srcfile, percept) in sorted(ASSIGN.items()):

@@ -1,7 +1,10 @@
 Variable,Definition,Topic,Measure,Units,Data role,Taxon,Item name,N.B.,Source
-species,Scientific binomial as printed,Taxonomy,Species,,provenance,Mammals,Kaskan_etal_2005_TableS1,,Electronic Appendix A Table 1
+species,"Scientific binomial, corrected where the paper misprints it",Taxonomy,Species,,provenance,Mammals,Kaskan_etal_2005_TableS1,join key; the printed form is kept verbatim in species_as_published. One correction: Cryptosis parva -> Cryptotis parva,Electronic Appendix A Table 1
+species_as_published,Scientific binomial exactly as printed,Taxonomy,Species,,provenance,Mammals,Kaskan_etal_2005_TableS1,kept verbatim for audit against the snapshot; the paper prints 'Cryptosis parva' for the least shrew,Electronic Appendix A Table 1
 common_name,Common name as printed (superscript reference letter stripped into its own column),Taxonomy,Common_name,,provenance,Mammals,Kaskan_etal_2005_TableS1,,Electronic Appendix A Table 1
-ref,"Superscript reference letter(s) keying to the paper's own reference list (a=Krubitzer & Kaas 1993 ... t=Krubitzer et al. 1997 -- see snapshot header for the full key)",provenance,Reference_key,,provenance,Mammals,Kaskan_etal_2005_TableS1,,Electronic Appendix A Table 1
+ref,Superscript reference letter(s) keying to the paper's own reference list (a=Krubitzer & Kaas 1993 ... t=Krubitzer et al. 1997 -- see snapshot header for the full key),provenance,Reference_key,,provenance,Mammals,Kaskan_etal_2005_TableS1,expanded into table_heading_citation and full_reference on every row; two letters are joined with '; ',Electronic Appendix A Table 1
+table_heading_citation,"Short author-year citation for this row's reference letter, parsed from the a-t key in the table heading",provenance,Reference_citation,,provenance,Mammals,Kaskan_etal_2005_TableS1,"two letters (e.g. e,f) give both citations joined with '; '",Electronic Appendix A Table 1
+full_reference,Full bibliographic reference(s) for this row's reference letter,provenance,Reference_full,,provenance,Mammals,Kaskan_etal_2005_TableS1,"joined from Kaskan_etal_2005_References.csv, transcribed from the paper's own References section; verified to match the heading key for all 20 letters","Main paper, References section"
 V1,Author-specific name used for primary visual cortex in that species' original source map,Brain,V1_areaname,,provenance,Mammals,Kaskan_etal_2005_TableS1,"'-' = not present/not mapped in that study. This column records NAMES, not sizes -- no surface-area measurements are given anywhere in this table",Electronic Appendix A Table 1
 V2,Author-specific name for secondary visual cortex,Brain,V2_areaname,,provenance,Mammals,Kaskan_etal_2005_TableS1,,Electronic Appendix A Table 1
 visual_other,Other visual areas identified,Brain,VisualOther_areaname,,provenance,Mammals,Kaskan_etal_2005_TableS1,,Electronic Appendix A Table 1
@@ -13,3 +16,4 @@ SII,Author-specific name for secondary somatosensory cortex,Brain,SII_areaname,,
 SS_other,Other somatosensory areas identified,Brain,SSOther_areaname,,provenance,Mammals,Kaskan_etal_2005_TableS1,,Electronic Appendix A Table 1
 M,Author-specific name for primary motor cortex,Brain,M_areaname,,provenance,Mammals,Kaskan_etal_2005_TableS1,,Electronic Appendix A Table 1
 motor_other,Other motor areas identified,Brain,MotorOther_areaname,,provenance,Mammals,Kaskan_etal_2005_TableS1,,Electronic Appendix A Table 1
+source,Item name of the source table,provenance,Source_item,,provenance,Mammals,Kaskan_etal_2005_TableS1,,Electronic Appendix A Table 1

@@ -72,3 +72,16 @@ anachronism as evidence of the borrowing, not as a mismatch to reconcile.
 
 *(A cross-table audit of this in the private companion repo was retired on 2026-08-20; the finding
 above is what it established.)*
+
+<!-- errata:begin -->
+## Errata
+
+Generated from `reference_tables/Zilles_Rehkämper_1988_errata.csv` by `_tools/dataset_builder/render_errata.R` -- edit the CSV, not this block. See `_tools/dataset_builder/ERRATA_CONVENTION.md`.
+
+| id | variable | where printed | printed | repo value before | issue | proposed | status | evidence | note |
+|---|---|---|---|---|---|---|---|---|---|
+| Zilles_Rehkämper_1988-E001 | Paleocortex | Table 12-2 (Pongo sp.), row 'Paleocortex' 2.4 cc3 with indented sub-rows 'Regio praepiriformis' 1.0 and 'Corpus amygdaloideum' 1.4 | 2.4 | 2.4 | publication_ambiguity |  | confirmed | The printed 'Paleocortex' INCLUDES the corpus amygdaloideum (1.0 + 1.4 = 2.4; chapter text defines paleocortex = regio prepiriformis + amygdala). Under the Stephan structure key this row is the lobus piriformis (code 13), NOT palaeocortex (code 29) which excludes the amygdala. Stephan_primates read it as code 29 and derived Lobus_piriformis 2400 + 1400 = 3800 (amygdala counted twice); found by stephan_primates_refs_check (published_table_but_structure_key_conflict). Transcription is correct; the hierarchy is now explicit in columns printed_indent / parent_structure and the build asserts parent = sum of components. | Not a misprint: a structure-definition difference between this chapter and the Stephan key. Anyone mapping this row to a Stephan code must use 13 (lobus piriformis) or take 'Regio praepiriformis' 1.0 for code 29. |
+| Zilles_Rehkämper_1988-E002 | Cerebellum_without_pons | Table 12-2 (Pongo sp.), row 'Cerebellum (without pons)' 42.9 cc3; separate top-level row 'Pons' 4.3 | 42.9 | 42.9 | publication_ambiguity |  | confirmed | The chapter prints the cerebellum WITHOUT the pons and the pons as its own division; the Stephan cerebellum code is pons-inclusive. DeCasien & Higham 2019 carry 42900 mm3 under a pons-inclusive Cerebellum column (their row r340; recorded as DeCasien_Higham_2019-E005). Found by DeCasien BrainRegion_refs_check (match_structure_definition_conflict). | Transcription is correct (column name keeps 'without_pons'). Pons-inclusive cerebellum for this specimen would be 42.9 + 4.3 = 47.2 cc3 if the two rows are pooled. |
+
+2 recorded, 0 open (proposed), 2 confirmed, 0 withdrawn.
+<!-- errata:end -->

@@ -1,2 +1,30 @@
-"Species","Measure","Value","Medium","Source_item","Study_key"
-"Sylvilagus floridanus","Audible_freq_high_60dB.kHz",56.4940472440078,"air","Koay_etal_1998_Figure6","heffner1995|r"
+"Species","Measure","Value","Medium","Source_item","Study_key","value_origin","superseded_reason","superseded_by_year","kept_value"
+"Acomys cahirinus","Interaural_distance_functional.us",64.6607197004029,"air","Koay_etal_1998_Figure6","SELF:Koay_etal_1998_Figure6:spiny mouse","digitised_from_figure","lower-precision value origin",1992,64
+"Bos taurus","Interaural_distance_functional.us",1282.02978692425,"air","Koay_etal_1998_Figure6","SELF:Koay_etal_1998_Figure6:cattle","digitised_from_figure","lower-precision value origin",1992,1281
+"Canis lupus familiaris","Interaural_distance_functional.us",437.640559272371,"air","Koay_etal_1998_Figure6","SELF:Koay_etal_1998_Figure6:dog","digitised_from_figure","lower-precision value origin",1992,435
+"Capra hircus","Interaural_distance_functional.us",682.654894573816,"air","Koay_etal_1998_Figure6","SELF:Koay_etal_1998_Figure6:goat","digitised_from_figure","lower-precision value origin",1992,680
+"Didelphis virginiana","Interaural_distance_functional.us",276.602421898069,"air","Koay_etal_1998_Figure6","SELF:Koay_etal_1998_Figure6:Virginia opossum","digitised_from_figure","lower-precision value origin",1992,273
+"Dipodomys merriami","Interaural_distance_functional.us",90.2153206583042,"air","Koay_etal_1998_Figure6","SELF:Koay_etal_1998_Figure6:kangaroo rat","digitised_from_figure","lower-precision value origin",1992,90
+"Elephas maximus","Interaural_distance_functional.us",3378.09356981239,"air","Koay_etal_1998_Figure6","SELF:Koay_etal_1998_Figure6:elephant","digitised_from_figure","lower-precision value origin",1992,3350
+"Eptesicus fuscus","Interaural_distance_functional.us",55.7966226071059,"air","Koay_etal_1998_Figure6","SELF:Koay_etal_1998_Figure6:big brown bat","digitised_from_figure","lower-precision value origin",1998,50
+"Equus caballus","Interaural_distance_functional.us",687.571286813575,"air","Koay_etal_1998_Figure6","SELF:Koay_etal_1998_Figure6:horse","digitised_from_figure","lower-precision value origin",1992,684
+"Felis catus","Interaural_distance_functional.us",258.824374766844,"air","Koay_etal_1998_Figure6","SELF:Koay_etal_1998_Figure6:domestic cat","digitised_from_figure","lower-precision value origin",1992,258
+"Geomys bursarius","Interaural_distance_functional.us",113.100910380024,"air","Koay_etal_1998_Figure6","SELF:Koay_etal_1998_Figure6:pocket gopher","digitised_from_figure","lower-precision value origin",1992,111
+"Homo sapiens","Interaural_distance_functional.us",870.541583685009,"air","Koay_etal_1998_Figure6","SELF:Koay_etal_1998_Figure6:human","digitised_from_figure","lower-precision value origin",1992,875
+"Meriones unguiculatus","Interaural_distance_functional.us",87.6007976161909,"air","Koay_etal_1998_Figure6","SELF:Koay_etal_1998_Figure6:gerbil","digitised_from_figure","lower-precision value origin",1992,87
+"Mesocricetus auratus","Audible_freq_high_60dB.kHz",46.3615164525225,"air","Koay_etal_1998_Figure6","heffner1993|r","digitised_from_figure","lower-precision value origin",2001,46.5
+"Mustela nivalis","Interaural_distance_functional.us",76.6597961703642,"air","Koay_etal_1998_Figure6","SELF:Koay_etal_1998_Figure6:least weasel","digitised_from_figure","lower-precision value origin",1992,76
+"Mustela putorius","Interaural_distance_functional.us",182.412562406199,"air","Koay_etal_1998_Figure6","SELF:Koay_etal_1998_Figure6:ferret","digitised_from_figure","lower-precision value origin",1992,180
+"Nannospalax ehrenbergi","Audible_freq_high_60dB.kHz",5.85660655141258,"air","Koay_etal_1998_Figure6","heffner1992|r","digitised_from_figure","lower-precision value origin",1992,5.9
+"Neotoma floridana","Interaural_distance_functional.us",116.971837174154,"air","Koay_etal_1998_Figure6","SELF:Koay_etal_1998_Figure6:wood rat","digitised_from_figure","lower-precision value origin",1992,115
+"Onychomys leucogaster","Interaural_distance_functional.us",61.3846118090306,"air","Koay_etal_1998_Figure6","SELF:Koay_etal_1998_Figure6:grasshopper mouse","digitised_from_figure","lower-precision value origin",1992,61
+"Phoca vitulina","Interaural_distance_functional.us",376.8004483717,"air","Koay_etal_1998_Figure6","SELF:Koay_etal_1998_Figure6:harbor seal in air","digitised_from_figure","lower-precision value origin",1992,378
+"Phoca vitulina","Interaural_distance_functional.us",81.3556390910926,"air","Koay_etal_1998_Figure6","SELF:Koay_etal_1998_Figure6:harbor seal","digitised_from_figure","lower-precision value origin",1992,378
+"Rattus norvegicus","Interaural_distance_functional.us",151.717401522619,"air","Koay_etal_1998_Figure6","SELF:Koay_etal_1998_Figure6:Norway rat, albino","digitised_from_figure","lower-precision value origin",1992,150
+"Rattus norvegicus","Interaural_distance_functional.us",151.700290765299,"air","Koay_etal_1998_Figure6","SELF:Koay_etal_1998_Figure6:Norway rat, hooded","digitised_from_figure","lower-precision value origin",1992,150
+"Rousettus aegyptiacus","Interaural_distance_functional.us",138.762373264572,"air","Koay_etal_1998_Figure6","SELF:Koay_etal_1998_Figure6:Egyptian fruit bat","digitised_from_figure","lower-precision value origin",1999,135
+"Sus scrofa","Interaural_distance_functional.us",500.058976498786,"air","Koay_etal_1998_Figure6","SELF:Koay_etal_1998_Figure6:pig","digitised_from_figure","lower-precision value origin",1992,498
+"Sylvilagus floridanus","Audible_freq_high_60dB.kHz",56.4940472440078,"air","Koay_etal_1998_Figure6","heffner1995|r","digitised_from_figure","lower-precision value origin",2020,56
+"Tamias striatus","Audible_freq_high_60dB.kHz",52.5443674661784,"air","Koay_etal_1998_Figure6","heffner1989|r","digitised_from_figure","lower-precision value origin",2001,52
+"Tursiops truncatus","Interaural_distance_functional.us",76.2340758337778,"air","Koay_etal_1998_Figure6","SELF:Koay_etal_1998_Figure6:porpoise","digitised_from_figure","lower-precision value origin",1992,80
+"Zalophus californianus","Interaural_distance_functional.us",397.16784624776,"air","Koay_etal_1998_Figure6","SELF:Koay_etal_1998_Figure6:sea lion in air","digitised_from_figure","lower-precision value origin",1992,392

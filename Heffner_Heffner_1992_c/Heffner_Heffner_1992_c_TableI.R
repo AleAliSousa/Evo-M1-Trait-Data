@@ -4,7 +4,7 @@
 ## in blind mole rats (Spalax ehrenbergi). Hearing Research 62(2):206-216.
 ## doi:10.1016/0378-5955(92)90188-S
 ##
-## Source is a SCANNED PDF (OCR text layer). Table I (17 rows) was
+## Source is a SCANNED PDF (OCR text layer). TABLE I (17 rows) was
 ## transcribed and cross-checked against the paper's own prose discussion
 ## of the same figures (see README).
 

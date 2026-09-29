@@ -33,18 +33,17 @@ All 19 rows are secondary: reproduced by this paper from Fay (1988) and
 Heffner & Heffner (1992a), not new measurements of this paper's own.
 
 ## Printed oddities carried as-is
-- **Negative-sign / "S" OCR ambiguity for four bird rows.** The PDF's own
-  text layer extracts a leading minus sign on the low-frequency-limit cells
-  for zebra finch, turkey, pigeon, and mallard duck ("-250", "-250", "-125",
-  "-300" Hz). A negative frequency is not physically meaningful, and the
-  paper's own prose says low-frequency hearing in birds is "less well
-  studied" with only "some indication that pigeons may be sensitive to very
-  low-frequency sounds" — consistent with these four values being a printed
-  "&gt;" (greater-than, i.e. lower limit not established below this value)
-  misread as a minus sign by the extraction, not a genuine negative
-  reading. Rather than silently converting or guessing, the snapshot keeps
-  the literal extracted character and the analysis CSV leaves
-  `low_frequency_limit_Hz` blank for these four rows.
+- **Less-than bounds on four bird rows (resolved 2026-09-29).** The PDF's
+  text layer extracts the low-frequency-limit cells for zebra finch, turkey,
+  pigeon and mallard duck as "-250", "-250", "-125", "-300" Hz. The page
+  image of Table 1 (p. 261) shows the glyph is a **less-than sign**: "< 250",
+  "< 250", "< 125", "< 300" -- the animals were still hearing at the lowest
+  frequency tested, so the 60 dB limit lies below that value. The analysis
+  CSV now carries the numeric bound in `low_frequency_limit_Hz` and "<" in
+  `low_frequency_limit_qualifier`. Until 2026-09-29 these cells were left
+  blank on the assumption the glyph was ">" (limit not reached from above);
+  the change is logged in `reference_tables/Heffner__1998_errata.csv`
+  (E001-E004). The snapshot keeps the literal extraction.
 - Best-sensitivity values are printed with an OCR "y" standing in for a
   minus sign elsewhere in this same PDF's raw text (e.g. "y10" = "-10");
   those have been resolved unambiguously to their negative dB values here
@@ -62,3 +61,18 @@ by the cited sources), not per-individual.
 Hz (frequency columns), dB re 20 µPa (best sensitivity, i.e. the species'
 lowest measured threshold — negative values indicate greater sensitivity
 than the 0 dB reference level).
+
+<!-- errata:begin -->
+## Errata
+
+Generated from `reference_tables/Heffner__1998_errata.csv` by `_tools/dataset_builder/render_errata.R` -- edit the CSV, not this block. See `_tools/dataset_builder/ERRATA_CONVENTION.md`.
+
+| id | variable | where printed | printed | repo value before | issue | proposed | status | evidence | note |
+|---|---|---|---|---|---|---|---|---|---|
+| Heffner__1998-E001 | low_frequency_limit_Hz | Table 1, p. 261 (PDF p3), row "Zebra finch", column "Low-frequency limit (Hz)" | < 250 |  | repo_transcription_error | 250 with low_frequency_limit_qualifier '<' | confirmed | Page image of Table 1 read 2026-09-29: the glyph is a less-than sign. The PDF text layer extracts it as a minus sign ('-250'); the build script had assumed '>' and left the cell blank. Fixed in Heffner__1998_Table1.R (value + new qualifier column), CSV and public TSV rebuilt. | Independently, the Bath 'Sensory Data' workbook recorded the same cell as 0.25 kHz under its Rule 4 ('<x stated as x'), which agrees with the print. |
+| Heffner__1998-E002 | low_frequency_limit_Hz | Table 1, p. 261 (PDF p3), row "Turkey", column "Low-frequency limit (Hz)" | < 250 |  | repo_transcription_error | 250 with low_frequency_limit_qualifier '<' | confirmed | Page image of Table 1 read 2026-09-29: the glyph is a less-than sign. The PDF text layer extracts it as a minus sign ('-250'); the build script had assumed '>' and left the cell blank. Fixed in Heffner__1998_Table1.R (value + new qualifier column), CSV and public TSV rebuilt. | Independently, the Bath 'Sensory Data' workbook recorded the same cell as 0.25 kHz under its Rule 4 ('<x stated as x'), which agrees with the print. |
+| Heffner__1998-E003 | low_frequency_limit_Hz | Table 1, p. 261 (PDF p3), row "Pigeon", column "Low-frequency limit (Hz)" | < 125 |  | repo_transcription_error | 125 with low_frequency_limit_qualifier '<' | confirmed | Page image of Table 1 read 2026-09-29: the glyph is a less-than sign. The PDF text layer extracts it as a minus sign ('-125'); the build script had assumed '>' and left the cell blank. Fixed in Heffner__1998_Table1.R (value + new qualifier column), CSV and public TSV rebuilt. | Independently, the Bath 'Sensory Data' workbook recorded the same cell as 0.125 kHz under its Rule 4 ('<x stated as x'), which agrees with the print. |
+| Heffner__1998-E004 | low_frequency_limit_Hz | Table 1, p. 261 (PDF p3), row "Mallard duck", column "Low-frequency limit (Hz)" | < 300 |  | repo_transcription_error | 300 with low_frequency_limit_qualifier '<' | confirmed | Page image of Table 1 read 2026-09-29: the glyph is a less-than sign. The PDF text layer extracts it as a minus sign ('-300'); the build script had assumed '>' and left the cell blank. Fixed in Heffner__1998_Table1.R (value + new qualifier column), CSV and public TSV rebuilt. | Independently, the Bath 'Sensory Data' workbook recorded the same cell as 0.3 kHz under its Rule 4 ('<x stated as x'), which agrees with the print. |
+
+4 recorded, 0 open (proposed), 4 confirmed, 0 withdrawn.
+<!-- errata:end -->

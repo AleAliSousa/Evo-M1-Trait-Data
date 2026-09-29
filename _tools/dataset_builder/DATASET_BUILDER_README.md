@@ -54,6 +54,17 @@ build_dataset_item(item_dir, item_name, dry_run = FALSE)
 
 Optional invariants return `SKIP` when the corresponding argument is not supplied.
 
+## Errata (invariant 8)
+
+A paper folder may carry `reference_tables/<Paper>_errata.csv` — one row per
+discrepancy between our transcription, the print, or two publications
+(`ERRATA_CONVENTION.md`). `validate_dataset_item()` fails on a malformed file
+(`errata_file_valid`; `SKIP` when absent). After editing the file run
+`render_errata(paper_dir)` to regenerate the README `## Errata` block and the
+definitions-file notes; never edit those renderings by hand. Repo
+transcription errors are fixed in the build `.R`, not the CSV, and logged as an
+errata row.
+
 ## Reference documents
 
 Step-by-step procedures are in:
@@ -71,6 +82,8 @@ _skills/build-dataset-item/references/__HOWTO_make_a_snapshot.md
 | `validate_dataset_item.R` | 7-invariant checker (called by build) |
 | `audit_dataset_item.R` | Pre-build 4-file convention + orphan-TSV scan |
 | `build_dataset_item.R` | Runs the item build script then calls validate |
+| `render_errata.R` | Errata schema check + renderer: `<Paper>_errata.csv` -> README `## Errata` block + definitions notes (see `ERRATA_CONVENTION.md`) |
+| `ERRATA_CONVENTION.md` | The one-source / three-renderings errata convention |
 
 ## Notes
 

@@ -135,7 +135,8 @@ GH <- list(
   gyrification = "__merging_gyrification/gyrification_long.csv",
   sensory    = "__merging_sensory/sensory_long.csv",
   weights    = "__merging_weights/weights_long.csv",
-  manifest   = "__ShinyApp/data/source_manifest.csv"
+  manifest   = "__ShinyApp/data/source_manifest.csv",
+  cohorts    = "_keys/species_cohorts.csv"
 )
 SRC_DIR <- "__Public/comparative-data/"  # source tables (fetched on demand)
 
@@ -162,6 +163,48 @@ unalias <- function(sp) {
   if (is.null(aliases) || !nrow(aliases)) return(sp)
   m <- setNames(aliases$canonical, aliases$variant)
   hit <- m[sp]; ifelse(is.na(hit), sp, unname(hit))
+}
+
+# ---- Species cohorts --------------------------------------------------------
+# Named species sets the project reports against (the Evo-M1 sequenced species,
+# and any other subgroup added to the key). Long format: one row per
+# species x cohort, so a species may belong to several cohorts.
+# See _keys/species_cohorts.csv and _keys/README_species_cohorts.md.
+#
+# Cohort names are written in the cohort's OWN taxonomy (whatever the sequencing
+# project calls the species); unalias() maps them onto the compiled data's
+# spelling, which is how `Urocitellus parryii` finds its data under the
+# pre-split name `Spermophilus parryii`. A cohort member with no match at all is
+# reported as such rather than silently dropped -- "we hold nothing for this
+# species" is the single most useful thing this tab can say.
+cohorts <- tryCatch(
+  read_csv_gh(GH$cohorts, file.path(data_dir, "species_cohorts.csv")),
+  error = function(e) NULL)
+if (!is.null(cohorts)) {
+  need <- c("cohort", "cohort_label", "species_sci")
+  if (!all(need %in% names(cohorts)))
+    stop("_keys/species_cohorts.csv must have columns: ",
+         paste(need, collapse = ", "), ". Found: ",
+         paste(names(cohorts), collapse = ", "))
+  # A CSV column that is empty in every row comes back from read.csv as logical
+  # NA, not "". Left alone that propagates through nzchar()/ifelse() and empties
+  # the whole cohort join silently, so every optional text column is coerced to
+  # character with NA read as absent.
+  as_text <- function(x) { x <- as.character(x); x[is.na(x)] <- ""; trimws(x) }
+  cohorts$species_sci <- as_text(cohorts$species_sci)
+  for (cl in c("common_name", "lookup_name", "lookup_basis", "source", "note"))
+    if (cl %in% names(cohorts)) cohorts[[cl]] <- as_text(cohorts[[cl]])
+  if (!"common_name" %in% names(cohorts)) cohorts$common_name <- ""
+  # lookup_name: an EXPLICIT, per-cohort override saying which label in the
+  # compiled data holds this cohort member's values. Left blank by default, so
+  # a cohort reports what its own names hold and no substitution happens
+  # silently. It exists because the alternative -- an alias row -- would rename
+  # the species for the whole app, and several of these cases must not be
+  # generalised: mapping `Saimiri boliviensis boliviensis` onto the 239 values
+  # filed under `Saimiri sciureus` would assert a re-identification across two
+  # distinct species, which is an open question in this repo, not a settled one.
+  if (!"lookup_name" %in% names(cohorts)) cohorts$lookup_name <- ""
+  cohorts <- cohorts[nzchar(cohorts$species_sci), , drop = FALSE]
 }
 
 # ---- Load & harmonize compiled data (once, at startup) ----------------------
@@ -598,6 +641,170 @@ grouped_choices <- function(labels) {
 var_choices      <- grouped_choices(present)
 var_choices_meas <- grouped_choices(present[meas_ok])
 
+# ---- Cohort coverage --------------------------------------------------------
+# What the project holds for a named species set. Three questions, in the order
+# a user actually asks them:
+#   1. per species  -- which domains do we have anything in, and where are the holes
+#   2. per trait    -- which traits are complete across the cohort (these are the
+#                      ones a cross-species comparison can actually use)
+#   3. overall      -- how full is the matrix, and what are the biggest gaps
+#
+# Coverage counts MEASUREMENTS only: a QC flag or a provenance string is not
+# data about the animal, and counting it would report a hole as filled.
+# A cell is "covered" if at least one source gives a non-empty value, so
+# coverage is a statement about availability, not about agreement between
+# sources -- the Compiled database tab is where disagreement is inspected.
+meas_labels <- present[meas_ok]
+var_dom     <- setNames(var_domain, present)
+
+cov_pairs <- unique(compiled[
+  compiled$Variable %in% meas_labels & nzchar(trimws(compiled$Value)),
+  c("Species", "Variable")])
+cov_pairs$Domain <- unname(var_dom[cov_pairs$Variable])
+
+# n distinct sources behind each species x variable cell, for the detail view
+cov_n <- table(paste(compiled$Species, compiled$Variable, sep = "\r"))
+
+cohort_levels <- if (!is.null(cohorts) && nrow(cohorts))
+  unique(cohorts$cohort) else character(0)
+cohort_label_of <- if (length(cohort_levels))
+  setNames(cohorts$cohort_label[match(cohort_levels, cohorts$cohort)],
+           cohort_levels) else character(0)
+cohort_choices <- if (length(cohort_levels))
+  setNames(cohort_levels, sprintf("%s (%d species)", cohort_label_of[cohort_levels],
+           as.integer(table(cohorts$cohort)[cohort_levels]))) else character(0)
+
+# ---- Name variants ----------------------------------------------------------
+# A cohort member's data are often split across several labels: the cohort says
+# `Gorilla gorilla gorilla` (30 values, all from the Evo-M1 trait table) while
+# the comparative literature in this compilation is filed under `Gorilla
+# gorilla` (119) and `Gorilla sp.` (111). Counting only the exact name
+# understates coverage; quietly pooling the labels would invent a curation
+# decision. So the app does neither: it reports the exact-name coverage and
+# names the uncounted variants beside it, with their value counts, for a human
+# to rule on.
+#
+# A label is offered as a variant of a cohort name when one is a word-wise
+# PREFIX of the other (`Mustela putorius` / `Mustela putorius furo`,
+# `Sus scrofa` / `Sus scrofa domesticus`), or when it is the genus placeholder
+# `Genus sp.`. Congeners with a different epithet are deliberately NOT offered:
+# `Saimiri sciureus` is a different species from `S. boliviensis`, and the app
+# is not the place to assert they are the same animal.
+all_species <- sort(unique(cov_pairs$Species))
+sp_value_n  <- table(compiled$Species)
+
+name_variants <- function(nm) {
+  w <- strsplit(nm, "\\s+")[[1]]
+  cand <- all_species[all_species != nm]
+  keep <- vapply(cand, function(c2) {
+    w2 <- strsplit(c2, "\\s+")[[1]]
+    if (identical(w2[1], w[1]) && length(w2) == 2L && w2[2] == "sp.") return(TRUE)
+    k <- min(length(w), length(w2))
+    if (k < 2L) return(FALSE)
+    identical(w[seq_len(k)], w2[seq_len(k)])
+  }, logical(1))
+  v <- cand[keep]
+  if (!length(v)) return(NULL)
+  n <- as.integer(sp_value_n[v]); n[is.na(n)] <- 0L
+  o <- order(-n)
+  data.frame(variant = v[o], values = n[o], stringsAsFactors = FALSE)
+}
+
+# ---- Cohort species -> data labels ------------------------------------------
+# `lookup_name` may name SEVERAL labels, separated by ";". That is not a
+# convenience: a cohort member's data legitimately sit under more than one
+# label at once. The western lowland gorilla is the worked case -- 119 values
+# under `Gorilla gorilla` and 110 under `Gorilla sp.`, and every one of those
+# 110 rows in volumes_long.csv records `species_printed = Gorilla gorilla`
+# with `species_basis = lump`, so the `sp.` label is conservative genus-level
+# labelling by the volumes merge, not a pooling of two gorilla species. No row
+# anywhere in that merge prints `beringei`. Counting only one label would
+# discard half the animal's data for no taxonomic reason.
+#
+# Adopting several labels pools them, so a variable measured under two labels
+# contributes two values and the app means them for plotting -- the same
+# behaviour as any species with two sources. Labels are pooled only where a
+# row in species_cohorts.csv says so, with the reason in `lookup_basis`.
+cohort_data_labels <- function(row_lookup, row_sci) {
+  l <- if (nzchar(row_lookup)) trimws(strsplit(row_lookup, ";")[[1]]) else row_sci
+  unalias(unique(l[nzchar(l)]))
+}
+
+# One cohort's species, in a stable order, with the labels its data live under
+cohort_species <- function(ch) {
+  k <- cohorts[cohorts$cohort == ch, , drop = FALSE]
+  k <- k[order(k$species_sci), , drop = FALSE]
+  k$labels <- lapply(seq_len(nrow(k)),
+                     function(i) cohort_data_labels(k$lookup_name[i], k$species_sci[i]))
+  k$label_str <- vapply(k$labels, paste, character(1), collapse = "; ")
+  k$in_data <- vapply(k$labels, function(l) any(l %in% cov_pairs$Species), logical(1))
+  # Variants are those NOT already adopted for this species.
+  vr <- lapply(seq_len(nrow(k)), function(i) {
+    v <- do.call(rbind, lapply(k$labels[[i]], name_variants))
+    if (is.null(v) || !nrow(v)) return(NULL)
+    v <- v[!duplicated(v$variant) & !v$variant %in% k$labels[[i]], , drop = FALSE]
+    if (!nrow(v)) NULL else v[order(-v$values), , drop = FALSE]
+  })
+  k$variants <- vapply(vr, function(v)
+    if (is.null(v)) "" else paste(sprintf("%s (%d)", v$variant, v$values),
+                                  collapse = "; "), character(1))
+  k$variant_values <- vapply(vr, function(v)
+    if (is.null(v)) 0L else sum(v$values), integer(1))
+  k
+}
+
+# cov_pairs rows belonging to one cohort, relabelled to the cohort's own names,
+# so two adopted labels collapse onto one cohort species rather than counting
+# as two animals.
+cohort_cov <- function(k) {
+  idx <- rep(seq_len(nrow(k)), lengths(k$labels))
+  map <- data.frame(label = unlist(k$labels, use.names = FALSE),
+                    sci   = k$species_sci[idx], stringsAsFactors = FALSE)
+  p <- cov_pairs[cov_pairs$Species %in% map$label, , drop = FALSE]
+  if (!nrow(p)) return(p[, c("Species", "Variable", "Domain"), drop = FALSE])
+  p$Species <- map$sci[match(p$Species, map$label)]
+  unique(p[, c("Species", "Variable", "Domain")])
+}
+
+# species x domain counts of distinct variables held
+cohort_domain_matrix <- function(ch) {
+  k <- cohort_species(ch)
+  p <- cohort_cov(k)
+  doms <- domain_levels[domain_levels %in% unique(cov_pairs$Domain)]
+  m <- matrix(0L, nrow = nrow(k), ncol = length(doms),
+              dimnames = list(k$species_sci, doms))
+  if (nrow(p)) {
+    tb <- table(factor(p$Species, levels = k$species_sci),
+                factor(p$Domain,  levels = doms))
+    m[] <- as.integer(tb)
+  }
+  list(key = k, mat = m, doms = doms)
+}
+
+# per-trait availability across a cohort: how many of its species have the trait
+cohort_trait_table <- function(ch, doms = NULL) {
+  k <- cohort_species(ch)
+  sp <- k$species_sci
+  labs <- meas_labels
+  if (!is.null(doms) && length(doms)) labs <- labs[unname(var_dom[labs]) %in% doms]
+  p <- cohort_cov(k)
+  p <- p[p$Variable %in% labs, , drop = FALSE]
+  tb <- table(factor(p$Variable, levels = labs))
+  n_have <- as.integer(tb)
+  miss <- vapply(labs, function(v) {
+    m <- setdiff(sp, p$Species[p$Variable == v])
+    if (!length(m)) "" else paste(m, collapse = "; ")
+  }, character(1))
+  out <- data.frame(
+    Variable = labs,
+    Domain   = unname(var_dom[labs]),
+    Species_with_data = n_have,
+    Pct = round(100 * n_have / length(sp), 1),
+    Missing_species = unname(miss),
+    stringsAsFactors = FALSE)
+  out[order(-out$Species_with_data, out$Domain, out$Variable), ]
+}
+
 # ---- Abbreviation expansion -------------------------------------------------
 # A label's tooltip is its definition plus the expansion of every non-common
 # glossary term it contains, so `Amygdala_O.n` explains `O.n` and
@@ -794,7 +1001,13 @@ ui <- page_navbar(
         selectizeInput("c_class", "Measure class (blank = all in domain)",
                        choices = NULL, multiple = TRUE,
                        options = list(placeholder = "narrows within the domain")),
-        selectizeInput("c_species", "Species (blank = all)",
+        # The full list runs to thousands of species, which is unusable when the
+        # question is about one project's animals. Restricting to a cohort
+        # filters the table AND narrows the species picker below to that cohort.
+        selectInput("c_cohort", "Restrict to cohort",
+                    choices = c("All species in the compilation" = "",
+                                cohort_choices)),
+        selectizeInput("c_species", "Species (blank = all in cohort)",
                        choices = NULL, multiple = TRUE,
                        options = list(placeholder = "Type to search species...",
                                       maxOptions = 2000)),
@@ -919,6 +1132,73 @@ ui <- page_navbar(
     )
   ),
 
+  # ----------------------------------------------------------- Cohort coverage --
+  nav_panel(
+    title = "Cohort coverage",
+    layout_sidebar(
+      sidebar = sidebar(
+        width = 340,
+        helpText("What this compilation holds for a named species set \u2014 the ",
+                 "Evo-M1 sequenced species, or any other cohort listed in ",
+                 tags$code("_keys/species_cohorts.csv"), "."),
+        selectInput("k_cohort", "Cohort", choices = cohort_choices),
+        selectizeInput("k_domain", "Domain (blank = all)",
+                       choices = domain_levels, multiple = TRUE,
+                       options = list(placeholder = "e.g. cellular composition")),
+        sliderInput("k_min", "Show traits held for at least (species)",
+                    min = 0, max = 1, value = 1, step = 1),
+        hr(),
+        helpText(class = "text-muted small",
+                 "Coverage counts measurements only, and counts a cell as ",
+                 "covered if any source gives a value \u2014 it reports ",
+                 "availability, not agreement between sources."),
+        downloadButton("k_download", "Download trait availability (CSV)",
+                       class = "btn-primary btn-sm")
+      ),
+      navset_card_tab(
+        nav_panel(
+          "Checklist",
+          uiOutput("k_absent"),
+          p(class = "text-muted",
+            "One row per cohort species; each domain cell counts the ",
+            strong("distinct traits"), " held for that species. A zero is a ",
+            "hole: nothing in the compilation measures that species in that ",
+            "domain."),
+          DTOutput("k_matrix")
+        ),
+        nav_panel(
+          "Trait availability",
+          uiOutput("k_trait_head"),
+          p(class = "text-muted",
+            "One row per trait, ordered by how much of the cohort it covers. ",
+            "A trait at 100% can carry a comparison across the whole cohort; ",
+            "the ", strong("Missing species"), " column names exactly which ",
+            "animals would have to be measured to get a partial trait there."),
+          DTOutput("k_traits")
+        ),
+        nav_panel(
+          "Name variants",
+          p(class = "text-muted",
+            "Labels in the compiled data that look like the same animal as a ",
+            "cohort member but are filed separately, so their values are ",
+            strong("not"), " counted in this cohort's coverage. Pooling them ",
+            "is a curation decision, not a rendering one \u2014 the app reports ",
+            "them here rather than making it. To adopt one, set ",
+            tags$code("lookup_name"), " for that species in ",
+            tags$code("_keys/species_cohorts.csv"), " (cohort-local), or add ",
+            "an alias in ", tags$code("_keys/species_display_aliases.csv"),
+            " (applies app-wide)."),
+          DTOutput("k_variants")
+        ),
+        nav_panel(
+          "Statistics",
+          uiOutput("k_stats"),
+          plotOutput("k_plot", height = "420px")
+        )
+      )
+    )
+  ),
+
   # -------------------------------------------------------------------- About --
   nav_panel(
     title = "About",
@@ -939,6 +1219,16 @@ ui <- page_navbar(
         "and behavioural traits relating to body and ecology therefore sit with ",
         "their own kind (body size, life history, diet & ecology, metabolism, ",
         "behaviour & cognition) instead of being pooled into one trait bucket."),
+      h5("Cohort coverage"),
+      p("Trait coverage for named species sets \u2014 the species a project ",
+        "actually works on, rather than the whole compilation. For each ",
+        "cohort the tab reports which domains are populated per species, ",
+        "which traits are complete enough to carry a cross-species ",
+        "comparison, and which animals would have to be measured to complete ",
+        "a partial trait. Cohorts are defined in ",
+        tags$code("_keys/species_cohorts.csv"), "; coverage counts ",
+        "measurements only and reports availability rather than agreement ",
+        "between sources."),
       h5("Abbreviations"),
       p("Variable names are compositional and many carry paper-specific ",
         "abbreviations — ", tags$code("ILA"), " for interlaminar astrocytes, ",
@@ -982,6 +1272,22 @@ server <- function(input, output, session) {
   # server-side choices (fast for large lists)
   updateSelectizeInput(session, "c_species", choices = sp_choices, server = TRUE)
   updateSelectizeInput(session, "c_variable", choices = var_choices, server = TRUE)
+
+  # Cohort restriction: the names the compiled data are keyed on for the chosen
+  # cohort (empty = no restriction). Kept as one reactive so the table filter and
+  # the species picker can never disagree about what the cohort contains.
+  c_cohort_species <- reactive({
+    ch <- input$c_cohort
+    if (is.null(ch) || !nzchar(ch)) return(character(0))
+    sort(unique(unlist(cohort_species(ch)$labels, use.names = FALSE)))
+  })
+
+  observeEvent(c_cohort_species(), ignoreNULL = FALSE, {
+    keep <- c_cohort_species()
+    ch <- if (length(keep)) intersect(sp_choices, keep) else sp_choices
+    updateSelectizeInput(session, "c_species", choices = ch,
+                         selected = intersect(input$c_species, ch), server = TRUE)
+  })
   # Plot axes offer measurements only — a QC flag on an axis is never wanted.
   updateSelectizeInput(session, "p_x", choices = var_choices_meas, server = TRUE,
                        selected = "Body_Mass (g)")
@@ -1022,6 +1328,9 @@ server <- function(input, output, session) {
     if (isTRUE(input$c_measonly))
       d <- d[!(toupper(look(lab_ismeas, d$Variable)) == "FALSE"), ]
     if (length(input$c_variable)) d <- d[d$Variable %in% input$c_variable, ]
+    # cohort restriction applies whether or not individual species are picked
+    coh_sp <- c_cohort_species()
+    if (length(coh_sp)) d <- d[d$Species %in% coh_sp, ]
     if (length(input$c_species))  d <- d[d$Species  %in% input$c_species, ]
     # provenance filters
     if (length(input$c_dataset)) d <- d[d$Dataset %in% input$c_dataset, ]
@@ -1341,6 +1650,167 @@ server <- function(input, output, session) {
     filename = function() req(input$s_pick),
     content  = function(file)
       write.table(s_data(), file, sep = "\t", row.names = FALSE, quote = TRUE)
+  )
+
+  # ---- Cohort coverage ------------------------------------------------------
+
+  k_cm <- reactive({ req(input$k_cohort); cohort_domain_matrix(input$k_cohort) })
+
+  k_tt <- reactive({
+    req(input$k_cohort)
+    cohort_trait_table(input$k_cohort, input$k_domain)
+  })
+
+  # The slider's ceiling is the cohort size, so "held for at least N species"
+  # reads in animals rather than in percent.
+  observeEvent(k_cm(), {
+    n <- nrow(k_cm()$key)
+    updateSliderInput(session, "k_min", max = n,
+                      value = min(max(1, isolate(input$k_min)), n),
+                      label = sprintf("Show traits held for at least (of %d species)", n))
+  })
+
+  k_tt_shown <- reactive({
+    t <- k_tt()
+    mn <- input$k_min; if (is.null(mn) || is.na(mn)) mn <- 1
+    t[t$Species_with_data >= mn, , drop = FALSE]
+  })
+
+  # A cohort member the compilation has never heard of is the most consequential
+  # thing on this tab, so it is called out above the table rather than shown as
+  # a row of zeros that reads like a rendering artefact.
+  output$k_absent <- renderUI({
+    k <- k_cm()$key
+    gone <- k[!k$in_data, , drop = FALSE]
+    if (!nrow(gone)) return(NULL)
+    div(class = "alert alert-warning",
+        strong(sprintf("%d of %d cohort species have no measurement in the compilation at all: ",
+                       nrow(gone), nrow(k))),
+        paste(gone$species_sci, collapse = ", "),
+        tags$br(),
+        tags$span(class = "small",
+          "If a species is in fact held under another name, add the mapping to ",
+          tags$code("_keys/species_display_aliases.csv"), "."))
+  })
+
+  output$k_variants <- renderDT({
+    k <- k_cm()$key
+    v <- k[k$variant_values > 0, , drop = FALSE]
+    tab <- data.frame(
+      Species = v$species_sci,
+      Counted_as = v$label_str,
+      Values_counted = vapply(v$labels, function(l) {
+        n <- as.integer(sp_value_n[l]); sum(n[!is.na(n)]) }, integer(1)),
+      Uncounted_variants = v$variants,
+      Uncounted_values = v$variant_values,
+      Note = if ("note" %in% names(v)) v$note else "",
+      stringsAsFactors = FALSE)
+    tab$Values_counted[is.na(tab$Values_counted)] <- 0L
+    datatable(tab[order(-tab$Uncounted_values), ], rownames = FALSE,
+              filter = "top", escape = TRUE,
+              colnames = c("Cohort species", "Counted as", "Values counted",
+                           "Uncounted variants (values)", "Uncounted values",
+                           "Curation note"),
+              options = list(pageLength = 25, scrollX = TRUE,
+                             columnDefs = list(
+                               list(width = "26%", targets = 3),
+                               list(width = "26%", targets = 5))))
+  })
+
+  output$k_matrix <- renderDT({
+    cm <- k_cm()
+    doms <- cm$doms
+    if (length(input$k_domain)) doms <- intersect(doms, input$k_domain)
+    m <- cm$mat[, doms, drop = FALSE]
+    tab <- data.frame(
+      Species = cm$key$species_sci,
+      Common  = cm$key$common_name,
+      Traits  = as.integer(rowSums(cm$mat)),
+      stringsAsFactors = FALSE)
+    tab <- cbind(tab, as.data.frame(m, stringsAsFactors = FALSE))
+    datatable(tab, rownames = FALSE, filter = "top", escape = TRUE,
+              options = list(pageLength = 30, scrollX = TRUE,
+                             order = list(list(2, "desc")))) |>
+      formatStyle(doms, backgroundColor = styleEqual(0, "#fdecea"),
+                  color = styleEqual(0, "#a94442")) |>
+      formatStyle("Traits", fontWeight = "bold")
+  })
+
+  output$k_trait_head <- renderUI({
+    cm <- k_cm(); t <- k_tt(); n <- nrow(cm$key)
+    full <- sum(t$Species_with_data == n)
+    none <- sum(t$Species_with_data == 0)
+    div(class = "alert alert-light border",
+        strong(cohort_label_of[[input$k_cohort]]), sprintf(" \u2014 %d species. ", n),
+        sprintf("Of %s traits in scope, ", format(nrow(t), big.mark = ",")),
+        strong(sprintf("%d", full)), " cover the whole cohort, ",
+        strong(sprintf("%d", none)), " cover none of it.")
+  })
+
+  output$k_traits <- renderDT({
+    t <- k_tt_shown()
+    datatable(t, rownames = FALSE, filter = "top", escape = TRUE,
+              colnames = c("Variable", "Domain", "Species with data", "%",
+                           "Missing species"),
+              options = list(pageLength = 25, scrollX = TRUE,
+                             columnDefs = list(list(width = "34%", targets = 4)))) |>
+      formatStyle("Pct", background = styleColorBar(c(0, 100), "#aed6f1"),
+                  backgroundSize = "98% 60%",
+                  backgroundRepeat = "no-repeat",
+                  backgroundPosition = "center")
+  })
+
+  output$k_stats <- renderUI({
+    cm <- k_cm(); t <- k_tt(); n <- nrow(cm$key)
+    in_data <- sum(cm$key$in_data)
+    any_trait <- t[t$Species_with_data > 0, , drop = FALSE]
+    # Fill is quoted over traits the cohort has ANY data for. Over all 800-odd
+    # repo traits it would be a near-zero number dominated by traits that exist
+    # only for species outside the cohort, which says nothing about the cohort.
+    fill <- if (nrow(any_trait))
+      100 * sum(any_trait$Species_with_data) / (n * nrow(any_trait)) else 0
+    box <- function(v, lab, note = NULL) {
+      div(class = "col",
+          div(class = "border rounded p-3 h-100",
+              div(style = "font-size:1.6rem; font-weight:600;", v),
+              div(class = "small text-muted", lab),
+              if (!is.null(note)) div(class = "small text-muted fst-italic", note)))
+    }
+    tagList(
+      div(class = "row row-cols-2 row-cols-md-4 g-2 mb-3",
+          box(sprintf("%d / %d", in_data, n), "cohort species with any data"),
+          box(format(nrow(any_trait), big.mark = ","), "traits with at least one cohort value"),
+          box(sum(t$Species_with_data == n), "traits covering the whole cohort"),
+          box(sprintf("%.0f%%", fill), "matrix fill",
+              "over traits the cohort has any data for")),
+      p(class = "text-muted",
+        "The bars below count cohort species with at least one measurement in ",
+        "each domain \u2014 the quickest read on where the compilation is thin ",
+        "for this cohort."))
+  })
+
+  output$k_plot <- renderPlot({
+    cm <- k_cm(); n <- nrow(cm$key)
+    sp_cov <- colSums(cm$mat > 0)
+    d <- data.frame(Domain = names(sp_cov), Species = as.integer(sp_cov),
+                    stringsAsFactors = FALSE)
+    d <- d[order(d$Species), ]
+    d$Domain <- factor(d$Domain, levels = d$Domain)
+    ggplot(d, aes(x = Species, y = Domain)) +
+      geom_col(fill = "#2c7fb8", width = 0.7) +
+      geom_vline(xintercept = n, linetype = "dashed", colour = "grey40") +
+      geom_text(aes(label = Species), hjust = -0.35, size = 3.4) +
+      scale_x_continuous(limits = c(0, n * 1.12), expand = c(0, 0)) +
+      labs(x = sprintf("Cohort species with data (of %d; dashed = complete)", n),
+           y = NULL) +
+      theme_minimal(base_size = 13) +
+      theme(panel.grid.major.y = element_blank())
+  })
+
+  output$k_download <- downloadHandler(
+    filename = function() sprintf("evom1_cohort_coverage_%s_%s.csv",
+                                  input$k_cohort, Sys.Date()),
+    content  = function(file) write.csv(k_tt_shown(), file, row.names = FALSE)
   )
 }
 

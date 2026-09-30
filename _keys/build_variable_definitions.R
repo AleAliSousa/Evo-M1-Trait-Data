@@ -186,7 +186,24 @@ XW <- rbind(
   c("Sound_localization_threshold.deg",        "sound_localization_threshold_deg",    "Heffner_Heffner_1992"),
   c("Binocular_field.deg",                     "binocular_field_deg",                 "Heffner_Heffner_1992"),
   c("Field_of_best_vision.deg",                "field_of_best_vision_deg",            "Heffner_Heffner_1992"),
-  c("Interaural_distance_functional.us",       "functional_interaural_distance_us",    "Koay"))
+  c("Interaural_distance_functional.us",       "functional_interaural_distance_us",    "Koay"),
+  # Campos & Welker 1976 Table 1 volumes. The app labels carry the source's own
+  # inclusion/exclusion in the name -- `Thalamus_including_fibre_tracts`,
+  # `Striatum_excluding_globus_pallidus`, `Hippocampus_including_subiculum_and_dentate`,
+  # `Basal_forebrain_source_defined` -- so a composed definition ("Thalamus: volume
+  # in mm3") silently drops the very qualification the label asserts. These route to
+  # the paper's definitions file, which states each one: the thalamus term is dorsal,
+  # epithalamic and ventral thalamus INCLUDING fibre tracts with pretectal nuclei
+  # excluded, and the striatum term is the caudate-putamen-accumbens complex (the
+  # pallidum is a separate printed row, which is what "excluding globus pallidus"
+  # records). Values are one right hemisphere per specimen.
+  c("Prosencephalon_Vol.mm3",                  "total_prosencephalon_volume_mm3",     "Campos"),
+  c("Forebrain_white_matter_Vol.mm3",          "forebrain_white_matter_volume_mm3",   "Campos"),
+  c("Thalamus_including_fibre_tracts_Vol.mm3", "thalamus_volume_mm3",                 "Campos"),
+  c("Striatum_excluding_globus_pallidus_Vol.mm3", "caudate_putamen_accumbens_volume_mm3", "Campos"),
+  c("Globus_pallidus_Vol.mm3",                 "globus_pallidus_volume_mm3",          "Campos"),
+  c("Basal_forebrain_source_defined_Vol.mm3",  "basal_forebrain_volume_mm3",          "Campos"),
+  c("Hippocampus_including_subiculum_and_dentate_Vol.mm3", "hippocampus_volume_mm3",  "Campos"))
 colnames(XW) <- c("label", "code", "folder")
 XW <- as.data.frame(XW, stringsAsFactors = FALSE)
 

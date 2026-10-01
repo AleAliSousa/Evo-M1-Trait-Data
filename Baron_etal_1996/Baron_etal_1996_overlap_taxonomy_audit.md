@@ -8,7 +8,7 @@ The frozen crosswalk leaves 7 source concept(s) (7 row(s)) in `MANUAL_REVIEW`.
 
 ## Overlap result
 
-There are **0 eligible species × canonical-structure overlaps** with the current core `volumes_unfiltered.csv` and **0 Baron candidate species already present anywhere in that merge**.
+There are **3419 eligible species × canonical-structure overlaps** with the current core `volumes_unfiltered.csv` and **250 Baron candidate species already present anywhere in that merge**.
 The current Ashwell 2020 bat, *Pteropus giganteus*, is absent from Baron 1996. The previously anticipated Stephan/Baron overlap is therefore not present in the current canonical inputs: Baron is primarily a new Chiroptera block, not a duplicate block.
 
 The machine-readable checks are `Baron_etal_1996_overlap_audit.csv` (species × structure; empty when no overlaps exist) and `Baron_etal_1996_species_overlap_audit.csv` (species-only membership), beside this report. They use only public inputs and therefore remain public.

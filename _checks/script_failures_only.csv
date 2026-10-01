@@ -1,20 +1,20 @@
 "script","status","error","start_time","end_time","elapsed_seconds"
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/deSousa__2008/deSousa__2008_Suppl.Table5.2.R","FAILED","Error: Species missing from species_key.csv (token deSousa2008): human, chimp, bonobo, gorilla, orang, gibbon
-Execution halted","2026-09-29 00:24:44.373352","2026-09-29 00:24:45.283062",0.909709930419922
+Execution halted","2026-09-30 19:01:01.540564","2026-09-30 19:01:02.182871",0.642307043075562
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/deSousa__2008/deSousa__2008_Table4.1.R","FAILED","Error: Unresolved species: Gorilla gorilla, Hylobates lar, Homo sapiensa,b, Macaca fascicularis, Pongo pygmaeus, Pan paniscusc, Pan troglodytes, Pan troglodytesd
-Execution halted","2026-09-29 00:24:46.429158","2026-09-29 00:24:47.452119",1.02296113967896
+Execution halted","2026-09-30 19:01:03.26035","2026-09-30 19:01:03.943817",0.683466911315918
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/deSousa__2008/deSousa__2008_Table5.1.R","FAILED","Error: Species missing from species_key.csv (token deSousa2008): homo sapiens, pan troglodytes, pan paniscus, gorilla gorilla, pongo pygmaeus, hylobates lar, syndactylus symphalangus, macaca fascicularis
-Execution halted","2026-09-29 00:24:48.506677","2026-09-29 00:24:49.547993",1.04131603240967
+Execution halted","2026-09-30 19:01:04.879439","2026-09-30 19:01:05.58645",0.707010984420776
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/deSousa__2008/deSousa__2008_Table5.6.R","FAILED","Error: Species missing from species_key.csv (token deSousa2008): homo sapiens, pan troglodytes, pan paniscus, gorilla gorilla, pongo pygmaeus, hylobates lar
-Execution halted","2026-09-29 00:24:50.549346","2026-09-29 00:24:51.313246",0.7639000415802
+Execution halted","2026-09-30 19:01:06.472791","2026-09-30 19:01:07.128245",0.655454158782959
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jacobs_etal_2015/Jacobs_etal_2015_Table1.R","FAILED","Error: Expected one species-key row for Jacobs2015 / Giraffa camelopardalis; found 0
-Execution halted","2026-09-29 00:26:43.234224","2026-09-29 00:26:43.55372",0.319495916366577
+Execution halted","2026-09-30 19:02:48.225661","2026-09-30 19:02:48.487054",0.261393070220947
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jacobs_etal_2016/Jacobs_etal_2016_Table1.R","FAILED","Error: Expected one species-key row for Jacobs2016 / Giraffa camelopardalis tippelskirchi; found 0
-Execution halted","2026-09-29 00:26:44.705546","2026-09-29 00:26:45.059203",0.353657007217407
+Execution halted","2026-09-30 19:02:49.476937","2026-09-30 19:02:49.759449",0.282511949539185
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Johnson_etal_2016/Johnson_etal_2016_Table1.R","FAILED","Error: Expected one species-key row for Johnson2016 / Panthera tigris altaica; found 0
-Execution halted","2026-09-29 00:26:49.314412","2026-09-29 00:26:49.674491",0.360078811645508
+Execution halted","2026-09-30 19:02:53.203498","2026-09-30 19:02:53.466312",0.262814044952393
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Latimer__1942/Latimer__1942_TABLEI.R","FAILED","Error in lk[[""dog""]] : subscript out of bounds
-Execution halted","2026-09-29 00:27:47.979942","2026-09-29 00:27:48.787811",0.807868957519531
+Execution halted","2026-09-30 19:03:41.268008","2026-09-30 19:03:41.924332",0.656323909759521
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Lyamin_etal_2008/Lyamin_etal_2008_Table1.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
 ✔ dplyr     1.2.1     ✔ readr     2.2.0
 ✔ forcats   1.0.1     ✔ stringr   1.6.0
@@ -27,7 +27,7 @@ Execution halted","2026-09-29 00:27:47.979942","2026-09-29 00:27:48.787811",0.80
 ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
 Error in names(object) <- nm : attempt to set an attribute on NULL
 Calls: setNames
-Execution halted","2026-09-29 00:27:54.408699","2026-09-29 00:27:55.554106",1.14540696144104
+Execution halted","2026-09-30 19:03:46.280996","2026-09-30 19:03:47.27816",0.997164011001587
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/PalomeroGallagher_Zilles_2018/PalomeroGallagher_Zilles_2018_TableS3.R","FAILED","New names:
 • `` -> `...1`
 • `` -> `...2`
@@ -36,9 +36,9 @@ Execution halted","2026-09-29 00:27:54.408699","2026-09-29 00:27:55.554106",1.14
 • `` -> `...5`
 • `` -> `...6`
 Error: !any(is.na(raw$Species)) is not TRUE
-Execution halted","2026-09-29 00:28:30.554548","2026-09-29 00:28:31.610075",1.05552697181702
+Execution halted","2026-09-30 19:04:13.611946","2026-09-30 19:04:14.472929",0.860982894897461
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Peruffo_etal_2019/Peruffo_etal_2019_Table2.R","FAILED","Error: Expected one species-key row for Peruffo2019 / sheep; found 0
-Execution halted","2026-09-29 00:28:31.6158","2026-09-29 00:28:31.942183",0.326383113861084
+Execution halted","2026-09-30 19:04:14.476189","2026-09-30 19:04:14.719668",0.243479013442993
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Turner_etal_2016/Turner_etal_2016_Table1.R","FAILED","New names:
 • `` -> `...1`
 • `` -> `...2`
@@ -48,19 +48,21 @@ Execution halted","2026-09-29 00:28:31.6158","2026-09-29 00:28:31.942183",0.3263
 • `` -> `...6`
 • `` -> `...7`
 Error: species_key.csv (token Turner2016) is missing: M. radiata, M. nemestrina, M. mulatta, PHX, PHA
-Execution halted","2026-09-29 00:29:55.57031","2026-09-29 00:29:56.519829",0.949518918991089
+Execution halted","2026-09-30 19:05:24.277088","2026-09-30 19:05:24.822953",0.545865058898926
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_corticospinal_terminations.R","FAILED","Error: species_sci in the TSV disagrees with the Bortoff1993 rows of species_key.csv - re-run Bortoff_Strick_1993_Table1.R
-Execution halted","2026-09-29 00:30:26.10206","2026-09-29 00:30:27.200486",1.09842586517334
+Execution halted","2026-09-30 19:05:47.135528","2026-09-30 19:05:47.749382",0.613853931427002
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_brain_mass/brain_mass_compiled.R","FAILED","Error: no measurement basis on record for 10.1016%2FB978-0-12-440280-5.50008-1_Table1.tsv / brain_weight_kg (paper folder 'Ridgway__1990'). Add it to ASSIGN in _keys/build_brain_size_basis.py and re-run that builder.
-Execution halted","2026-09-29 00:31:09.086194","2026-09-29 00:31:11.92564",2.83944606781006
+Execution halted","2026-09-30 19:06:25.022806","2026-09-30 19:06:26.819701",1.79689502716064
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/check_species_name_splits.R","FAILED","OK volumes_source_species_ids_select.csv: no split labels.
 Error in data.frame(file = sub(""\\.csv$"", """", f), Species_raw = raw, Species_final = fin,  : 
   arguments imply differing number of rows: 1, 0
 Calls: rbind -> data.frame
-Execution halted","2026-09-29 00:31:50.109572","2026-09-29 00:31:50.602156",0.492583990097046
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/volumes_compiled_select_DeCasien.R","FAILED","Error: Created primary-source review template(s): volumes_primary_DeCasien_sources.csv, volumes_primary_DeCasien_curation.csv. Verify source admission, specimen identity, region N, anatomy and paired BV before rerunning. No compiled values were produced.
-Execution halted","2026-09-29 00:31:53.89104","2026-09-29 00:31:56.472661",2.58162093162537
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_item_name_resolution.R","FAILED","registry Item names: 566   |   TSVs on disk: 459   |   NA.tsv present: YES -- REMOVE IT
+Execution halted","2026-09-30 19:06:56.940946","2026-09-30 19:06:57.287808",0.346861839294434
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/volumes_compiled_select_DeCasien.R","FAILED","Error: 31 source(s) and 1433 species-region cell(s) still need review. Audits were written; NO final long/wide/analysis table was produced. Missing regional Ns and independently unavailable measurements were not fabricated.
+Execution halted","2026-09-30 19:06:59.903215","2026-09-30 19:07:04.487702",4.58448696136475
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_cohort_coverage.R","FAILED","Error: Run this from the repo root: __ShinyApp/app.R not found.
+Execution halted","2026-09-30 19:07:21.929533","2026-09-30 19:07:22.176459",0.246926069259644
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_item_name_resolution.R","FAILED","registry Item names: 569   |   TSVs on disk: 459   |   NA.tsv present: YES -- REMOVE IT
 
 __merging_behaviour/behaviour_compiled.R                     0 item name(s) referenced   OK
 __merging_body_ecology/body_ecology_compiled.R               0 item name(s) referenced   OK
@@ -89,4 +91,4 @@ orphaned TSVs (on disk, claimed by no registry row): 8
 rows with a citation but no Item name (need _tools/file_list.R): 0
 
 all referenced item names resolve to a TSV on disk.
-run _tools/restore_registry_rows.R (adding any new row to its ROWS list), then _tools/file_list.R.","2026-09-29 00:32:22.513864","2026-09-29 00:32:23.540472",1.02660799026489
+run _tools/restore_registry_rows.R (adding any new row to its ROWS list), then _tools/file_list.R.","2026-09-30 19:07:22.179366","2026-09-30 19:07:22.843501",0.664134979248047

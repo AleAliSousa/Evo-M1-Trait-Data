@@ -31,13 +31,14 @@ Fix: the registry is the naming authority — rename each TSV to match `Item enc
 `Pirlot_Kamiya_1982_Table1`, `Pirlot_Kamiya_1985_Table1`.
 Several of these are the **convention gap** in section D, not a missing build.
 
-**Correction (definitions placement):** `Kruska_Rohrs_1974`, `Kruska__2014`, `Pirlot_Kamiya_1982`,
-`Pirlot_Kamiya_1985` are *not* fully built. Each has a `*_definitions.csv` at the **folder top level**,
+**Correction (definitions placement) — RESOLVED this session.** `Kruska_Rohrs_1974`, `Kruska__2014`,
+`Pirlot_Kamiya_1982`, `Pirlot_Kamiya_1985` originally had a `*_definitions.csv` at the **folder top level**,
 but invariant 4 / `audit_dataset_item` require it in `reference_tables/*_definitions.csv` — so all four
-show `definitions=MISSING` in `item_convention_audit_20260930.csv`. Fix: move each
-`<Folder>_definitions.csv` into that folder's `reference_tables/` (renamed to the item-scoped
-`<Item>_definitions.csv` if the builder expects a per-item name). These four therefore need **both** a
-public TSV (section D convention decision) **and** a relocated definitions file.
+had shown `definitions=MISSING` in `item_convention_audit_20260930.csv`. **Fixed:** the definitions file
+was copied into each folder's `reference_tables/` (`reference_tables/` created where absent) and the
+top-level originals were moved to Trash. A re-run of `audit_dataset_item` now reports
+`definitions=PASS` for all four. Remaining blocker for these four is only the public TSV (section D
+convention decision).
 
 ### C. Orphan `.tsv` inside paper folders (9 folders)
 `audit_dataset_item` flags a non-snapshot `.tsv` sitting in the paper folder (public TSVs belong in `__Public/comparative-data/`):
@@ -76,6 +77,11 @@ Suggest changing the sourcing parent to `globalenv()` (or `sys.source(..., envir
   `Kaskan_etal_2005_TableS1`, `McDowell_etal_2024_Table1`, `Zilles_etal_1986_Table1`,
   `Zilles_etal_1986_Table2`, `Zilles_etal_2011_TableS1/TableS2/TableS3`.
   (Content is script-deterministic; owner should `git diff` before committing to confirm no unintended change.)
+- **Relocated definitions files** for `Kruska_Rohrs_1974`, `Kruska__2014`, `Pirlot_Kamiya_1982`,
+  `Pirlot_Kamiya_1985`: top-level `*_definitions.csv` → `reference_tables/` (created where absent),
+  top-level originals Trashed; all four now pass `definitions`.
+- **Generated `Hutsler_etal_2005_registry_rows.xlsx`** (4 paste-ready rows + HOW_TO_PASTE) for the only
+  genuinely-missing-row folder with built data; saved in `Hutsler_etal_2005/`. Workbook not edited.
 - **Did NOT edit `__ReadMe.xlsx`** (no `file_list.R` run, no registration) — the workbook may be open in
   Excel and the house process reserves those edits for the owner's RStudio session.
 
@@ -84,6 +90,6 @@ Suggest changing the sourcing parent to `globalenv()` (or `sys.source(..., envir
 1. Rerun `_tools/file_list.R` (rebuilds AUTO sheet + L-column matches; picks up the 7 rebuilt TSVs and the 3 Nudo rows).
 2. Rerun `_tools/registry_snapshot.R` (snapshot is 3 rows behind).
 3. Resolve the 7 name mismatches (section A) — rename TSVs to match `Item encoded`.
-4. Decide the section-D convention (self-emit vs file_list mirror) and the Kruska split-vs-combined question. For the four section-D folders (Kruska ×2, Pirlot ×2) also **relocate the top-level `*_definitions.csv` into `reference_tables/`** so invariant 4 passes.
+4. Decide the section-D convention (self-emit vs file_list mirror) and the Kruska split-vs-combined question. (The definitions-relocation for the four section-D folders was completed this session — see the Section B correction; no action needed there.)
 5. Fix the `build_dataset_item()` sourcing-parent bug (section E).
 6. Set Progress stage / register the blank-stage items now that products exist (Kaskan, McDowell, Zilles 1986/2011; `Zilles_etal_1986` already has a staged `__ReadMe_rows_to_add_*.csv`).

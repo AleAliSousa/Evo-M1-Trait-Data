@@ -102,7 +102,7 @@ items <- c(
   "Sherwood_etal_2005_Table1", "Bush_Allman_2004_a_Table2",
   "Bush_Allman_2004_b_TABLE1", "Barger_etal_2007_TABLE1",
   "Barger_etal_2014_Table1", "Stimpson_etal_2015_TableS2",
-  "Zilles_Rehk\u00e4mper_1988_Table12-2",
+  "Zilles_Rehkämper_1988_Table12-2",
   "deSousa_etal_2010_Table1", "deSousa_etal_2010_SupTable2",
   "MacLeod_etal_2003_Table1", "MacLeod_etal_2003_Table2",
   "Rilling_Insel_1998_Table1", "Rilling_Insel_1999_Table1",
@@ -114,7 +114,7 @@ papers <- c(
   "Frahm_etal_1984", rep("Bauernfeind_etal_2013", 2),
   "Sherwood_etal_2005", "Bush_Allman_2004_a", "Bush_Allman_2004_b",
   "Barger_etal_2007", "Barger_etal_2014", "Stimpson_etal_2015",
-  "Zilles_Rehk\u00e4mper_1988", rep("deSousa_etal_2010", 2),
+  "Zilles_Rehkämper_1988", rep("deSousa_etal_2010", 2),
   rep("MacLeod_etal_2003", 2), "Rilling_Insel_1998",
   "Rilling_Insel_1999", "Sherwood_etal_2004",
   rep("Barks_etal_2014", 2)
@@ -435,7 +435,7 @@ read_one <- function(i) {
                      term$Original_Term %in% names(df) &
                      !(term$Original_Term %in% bv_term), , drop = FALSE]
   parts <- list()
-  if (item == "Zilles_Rehk\u00e4mper_1988_Table12-2") {
+  if (item == "Zilles_Rehkämper_1988_Table12-2") {
     if (!all(c("structure", "volume_mm3") %in% names(df)))
       stop("Zilles structure-row source changed shape.", call. = FALSE)
     z <- match(text(df$structure), term$Original_Term)
@@ -915,7 +915,7 @@ resolve_cell <- function(ix) {
             (chosen$BV_for_pooling <= 0 | !filled(chosen$BV_basis)),
             na.rm = TRUE))
       issues <- c(issues, "paired BV lacks positive value and specimen-subset basis")
-    if (any(chosen$Source == "Zilles_Rehk\u00e4mper_1988_Table12-2" &
+    if (any(chosen$Source == "Zilles_Rehkämper_1988_Table12-2" &
             chosen$original_column == "Cerebellum (without pons)" &
             !filled(chosen$compatibility_basis)))
       issues <- c(issues, "pons-free cerebellum needs an explicit comparability caveat")

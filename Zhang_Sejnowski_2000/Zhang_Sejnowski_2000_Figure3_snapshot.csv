@@ -1,0 +1,7 @@
+result_as_printed,value_as_printed,unit_or_interpretation,source_as_printed,extraction_note
+theoretical slope,3,"G versus inferred L, log-log",Figure 3 caption,Dashed line
+least-squares slope,3.3,"G versus inferred L, log-log",Figure 3 caption,Reported slope
+robust absolute-deviations slope,3.2,"G versus inferred L, log-log",Figure 3 caption,Not shown in plot
+assumed p,0.08,areal wiring fraction,Figure 3 caption; Eq. 13,Used to infer L
+mouse L,approximately 3,mm,ref. 30; text following Figure 3,"Mouse is discussed as comparison, NOT a plotted Figure 3 observation"
+mouse G,112,mm3,text following Figure 3,"Mouse is discussed as comparison, NOT a plotted Figure 3 observation"

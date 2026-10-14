@@ -1,5 +1,27 @@
 # Merging brain-mass data
 
+## Update: HrvojMihic et al. 2026 added
+Added `HrvojMihic_etal_2026_SD` (601 adult great apes — gorilla, orangutan, bonobo, chimpanzee —
+individual necropsy brain weight, with body weight for a 276-animal chimpanzee 15+ subset) to the
+harvested source pool; it now shows as a contributor for all four species in `brain_mass_long.csv`
+(`Teams` column). Classified `mass_measured` with basis `unstated` (fixation state not given in
+the source) in `_keys/brain_size_basis.csv`, added via `_keys/build_brain_size_basis.py`.
+
+While re-running the classification pipeline for this addition, two **pre-existing, unrelated**
+gaps were found blocking it (both predate this session): `Ridgway__1990_Table1` (`brain_weight_kg`)
+and `Jacobs_etal_2015_Table4` (`Mean Brain mass (g)`) had no basis entry in
+`_keys/build_brain_size_basis.py`. Both were classified from their own definitions files/table
+structure (Ridgway: a plain weighed mass, no fixation stated -> `mass_unspecified`/`unstated`;
+Jacobs: a cross-species compilation table with a `Source Ref` column -> `mass_compilation_unspecified`,
+same pattern as the existing Sherwood/de Sousa entries) and added so the Python builder
+(`build_brain_mass_merge.py`, the tested artifact) runs clean again. The R house-twin
+(`brain_mass_compiled.R`) still aborts, separately, on `Zilles_Rehkämper_1988_Table12-1` /
+`Brain_weight_g` — that entry IS already present and classified (`mass_compilation_unspecified`)
+in `_keys/brain_size_basis.csv`, so this looks like an R-side lookup bug (possibly a Unicode
+normalization mismatch on "ä" between the harvested TSV filename and the basis-key join) rather
+than a missing classification; not investigated further here, flagged for whoever maintains the R
+script. **The outputs below are from the Python builder**, which completed without error.
+
 Pipeline for compiling **whole-brain mass** across species — a sibling of the body-mass merge
 (`__merging_body_ecology/`) and structured like `__merging_cerebral_metabolic_rate/`. Brain mass
 is a brain measure (not organism/ecology), so it lives in its own merge rather than in

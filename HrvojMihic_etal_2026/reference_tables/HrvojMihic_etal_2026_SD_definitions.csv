@@ -1,0 +1,12 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+code,"individual specimen code as printed (e.g. GGF1, PTM153)",,,,info,Gorilla gorilla; Pongo pygmaeus; Pan paniscus; Pan troglodytes,HrvojMihic_etal_2026_SD,,
+species_as_published,common name as printed (sheet label): Gorilla / Orangutan / Bonobo / Chimpanzee,,,,info,as above,HrvojMihic_etal_2026_SD,,
+interpreted_taxon,"curator's best-guess binomial for species_as_published, informational only -- NOT the resolved accepted_name (resolution happens at merge time via _keys/resolve_species.R per SPECIES_NAMING.md v1)",,,,info,as above,HrvojMihic_etal_2026_SD,,
+sex,M or F as printed,,,,info,as above,HrvojMihic_etal_2026_SD,,
+age_years,"age at death/sampling, years, as printed",,Age.years,mean,primary,as above,HrvojMihic_etal_2026_SD,,
+brain_weight_mg,"individual brain weight, converted from printed grams (x1000)",Brain,Mass.mg,mean,primary,as above,HrvojMihic_etal_2026_SD,,
+body_weight_g,"individual body weight, converted from printed kg (x1000); only present for the Dataset-S2 chimpanzee 15+ subset",Body,Mass.g,mean,primary,Pan troglodytes,HrvojMihic_etal_2026_SD,blank for all non-chimpanzee rows and for chimpanzees younger than 15,
+source_sheet,which sheet of pnas.2609260123.sd01.xlsx the row came from,,,,info,as above,HrvojMihic_etal_2026_SD,,
+source_location,which dataset(s) contributed the row's columns,,,,info,as above,HrvojMihic_etal_2026_SD,,
+data_role,primary (measured) vs secondary,,,,info,as above,HrvojMihic_etal_2026_SD,,
+QA:duplicate_code,"Dataset S2 printed two distinct records under the same code for PTM153 and PTF31 (different brain weight/age each); disambiguated by matching (code, brain_weight_g, age_years) against Dataset S1's single authoritative row for that code -- the non-matching S2 row was dropped, not merged in.",,,,note,Pan troglodytes,HrvojMihic_etal_2026_SD,"source data anomaly, not a transcription choice",

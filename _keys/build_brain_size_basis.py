@@ -314,6 +314,26 @@ ASSIGN = {
     ("Heuer_etal_2023", "LogBrainWeight_source"):
         ("log_mass", "log_mass", "unknown", "unknown", "unknown", "unknown",
          "not_a_size", False, "quoted", C),
+    # ---- weighed mass, no fixation/inclusion stated ------------------------
+    # Ridgway__1990_Table1 ("Brain and Body Size of Adult Bottlenose Dolphins"): printed
+    # BrnW (kg) per animal; neither the table nor its definitions file states fixation
+    # state or olfactory-bulb inclusion -- default "unstated" tuple A, per the rule that
+    # nothing is inferred beyond what the source itself says.
+    ("Ridgway__1990", "brain_weight_kg"): A,
+    # Jacobs_etal_2015_Table4 ("Mean Brain mass (g)"): a cross-species compilation table
+    # (columns "Species", "Source Ref", multiple non-giraffe taxa per row, each citing a
+    # lettered reference) -- the brain-mass values are not this paper's own measurements on
+    # its giraffe specimens, and the table gives no fixation state for the compiled values
+    # (the "Fixation method" column describes each cited specimen's histology preparation,
+    # not necessarily the brain-mass determination) -- same compilation-table pattern as
+    # Sherwood_etal_2003 / deSousa_etal_2013 above.
+    ("Jacobs_etal_2015", "Mean Brain mass (g)"):
+        ("mass", "mass_compilation_unspecified", "unknown", "unknown", "unknown",
+         "unknown", "mass_measured", True, "quoted", T),
+    # HrvojMihic_etal_2026_SD (Dataset S1/S2): per-individual necropsy brain weight for 601
+    # adult great apes; neither dataset states fixation state or olfactory-bulb inclusion --
+    # default "unstated" tuple A.
+    ("HrvojMihic_etal_2026", "brain_weight_mg"): A,
 }
 
 # quoted inclusion evidence that lives in a FOLDER definitions file rather than

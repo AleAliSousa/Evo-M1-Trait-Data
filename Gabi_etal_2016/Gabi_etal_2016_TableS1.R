@@ -63,7 +63,7 @@ library(readxl)
 ## 2. SPECIES RESOLVER (paper-scoped; _keys/SPECIES_NAMING.md sec 3) -
 # Table S1 prints abbreviated genus names with no space ("C.apella"). Those printed strings are
 # the key's variant_name, so nothing is mapped inside this script (sec 5).
-TOKEN <- "Gabi2016"
+TOKEN <- "Gabi_etal_2016"
 ref <- if (!is.na(base))
   read.csv(file.path(base, "_keys", "species_reference.csv"),
            stringsAsFactors = FALSE)$accepted_name else character(0)

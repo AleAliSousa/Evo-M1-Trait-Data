@@ -47,7 +47,7 @@ key_files <- if (!is.na(dataset_root))
              recursive = TRUE, full.names = TRUE) else character(0)
 # Variant rows are keyed by (source_publication, variant_name) - _keys/SPECIES_NAMING.md sec 3.
 # Scope to THIS paper's token so another paper's specimen-level decisions cannot leak in.
-TOKEN <- "Capellini2008"
+TOKEN <- "Capellini_etal_2008"
 km <- list()
 for (kf in key_files) {
   k <- read.csv(kf, stringsAsFactors = FALSE)

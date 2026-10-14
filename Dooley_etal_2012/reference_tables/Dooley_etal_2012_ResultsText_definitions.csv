@@ -1,0 +1,20 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species_as_published,species as published,,,,info,Monodelphis domestica,Dooley_etal_2012_ResultsText,"Printed species/common name retained verbatim; for mouse items from Experimental procedures p.404, C57BL/6 mice. Resolve only through collection species keys downstream.",Publication and frozen snapshot; see item README
+n_individuals,n individuals,,,,info,Monodelphis domestica,Dooley_etal_2012_ResultsText,,Publication and frozen snapshot; see item README
+n_male,n male,,,,info,Monodelphis domestica,Dooley_etal_2012_ResultsText,,Publication and frozen snapshot; see item README
+n_female,n female,,,,info,Monodelphis domestica,Dooley_etal_2012_ResultsText,,Publication and frozen snapshot; see item README
+body_mass_min_g,body mass min g,body,Mass.g,minimum,primary,Monodelphis domestica,Dooley_etal_2012_ResultsText,Original unit grams; no conversion.,Publication and frozen snapshot; see item README
+body_mass_max_g,body mass max g,body,Mass.g,maximum,primary,Monodelphis domestica,Dooley_etal_2012_ResultsText,Original unit grams; no conversion.,Publication and frozen snapshot; see item README
+acuity_metric,acuity metric,,,,info,Monodelphis domestica,Dooley_etal_2012_ResultsText,,Publication and frozen snapshot; see item README
+visual_acuity_mean_cpd,visual acuity mean cpd,vision,Acuity.cpd,mean of individual maximum thresholds,primary,Monodelphis domestica,Dooley_etal_2012_ResultsText,OPT with video-corrected viewing distance; not species peak of all behavioural methods.,Publication and frozen snapshot; see item README
+visual_acuity_sem_cpd,visual acuity sem cpd,vision,Acuity.cpd,SEM,primary,Monodelphis domestica,Dooley_etal_2012_ResultsText,"SEM, not SD.",Publication and frozen snapshot; see item README
+visual_acuity_min_cpd,visual acuity min cpd,vision,Acuity.cpd,minimum of individual maximum thresholds,primary,Monodelphis domestica,Dooley_etal_2012_ResultsText,Not the minimum spatial stimulus tested.,Publication and frozen snapshot; see item README
+visual_acuity_max_cpd,visual acuity max cpd,vision,Acuity.cpd,maximum of individual maximum thresholds,primary,Monodelphis domestica,Dooley_etal_2012_ResultsText,Not the maximum spatial stimulus tested.,Publication and frozen snapshot; see item README
+method,method,,,,info,Monodelphis domestica,Dooley_etal_2012_ResultsText,,Publication and frozen snapshot; see item README
+distance_correction,distance correction,,,,info,Monodelphis domestica,Dooley_etal_2012_ResultsText,,Publication and frozen snapshot; see item README
+observation_level,observation level,,,,info,Monodelphis domestica,Dooley_etal_2012_ResultsText,,Publication and frozen snapshot; see item README
+data_role,data role,,,,info,Monodelphis domestica,Dooley_etal_2012_ResultsText,,Publication and frozen snapshot; see item README
+source_locus,source locus,,,,info,Monodelphis domestica,Dooley_etal_2012_ResultsText,,Publication and frozen snapshot; see item README
+source_pdf,source pdf,,,,info,Monodelphis domestica,Dooley_etal_2012_ResultsText,,Publication and frozen snapshot; see item README
+source_doi,source doi,,,,info,Monodelphis domestica,Dooley_etal_2012_ResultsText,,Publication and frozen snapshot; see item README
+Method:observation_level,Published observation level and dependencies,,,,method,Monodelphis domestica,Dooley_etal_2012_ResultsText,"Rows are group/region/parameter or literature-value summaries, never independent species replicates; do not merge secondary values or average 2-D and 3-D methods.",Methods and Results; see README

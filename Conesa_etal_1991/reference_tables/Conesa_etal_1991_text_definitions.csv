@@ -1,0 +1,13 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species_as_published,species as published,,,,info,Marmota monax,Conesa_etal_1991_text,"Printed species/common name retained verbatim; for mouse items from Experimental procedures p.404, C57BL/6 mice. Resolve only through collection species keys downstream.",Publication and frozen snapshot; see item README
+common_name,common name,,,,info,Marmota monax,Conesa_etal_1991_text,,Publication and frozen snapshot; see item README
+trait_as_published,trait as published,,,,info,Marmota monax,Conesa_etal_1991_text,,Publication and frozen snapshot; see item README
+value_as_published,value as published,,,,info,Marmota monax,Conesa_etal_1991_text,,Publication and frozen snapshot; see item README
+unit_as_published,unit as published,,,,info,Marmota monax,Conesa_etal_1991_text,,Publication and frozen snapshot; see item README
+frequency_Hz,frequency Hz,hearing,Frequency.Hz,reported frequency,primary,Marmota monax,Conesa_etal_1991_text,kHz × 1000; distinguish response endpoints from 60-dB SPL hearing limits and two named best-hearing frequencies.,Publication and frozen snapshot; see item README
+n_individuals,n individuals,,,,info,Marmota monax,Conesa_etal_1991_text,,Publication and frozen snapshot; see item README
+method,method,,,,info,Marmota monax,Conesa_etal_1991_text,,Publication and frozen snapshot; see item README
+data_role,data role,,,,info,Marmota monax,Conesa_etal_1991_text,,Publication and frozen snapshot; see item README
+source_locus,source locus,,,,info,Marmota monax,Conesa_etal_1991_text,,Publication and frozen snapshot; see item README
+source_note,source note,,,,info,Marmota monax,Conesa_etal_1991_text,,Publication and frozen snapshot; see item README
+Method:observation_level,Published observation level and dependencies,,,,method,Marmota monax,Conesa_etal_1991_text,"Rows are group/region/parameter or literature-value summaries, never independent species replicates; do not merge secondary values or average 2-D and 3-D methods.",Methods and Results; see README

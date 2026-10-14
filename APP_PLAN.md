@@ -121,6 +121,12 @@ links.
 the project: untagged items, unexported items, unresolved species, folders without extraction
 scripts.
 
+> **Built 2026-10-07 (ahead of Tabs 1–3)** as a structure × species × measurement coverage map:
+> `__Finder/app.R`, data from `_tools/build_coverage_index.R`, mappings in `_keys/anatomy_crosswalk.csv`,
+> `_keys/structure_boundary_basis.csv`, `_keys/coverage_targets.csv`. See `__Finder/README.md`. The
+> repo-health items listed above (untagged/unexported items etc.) still belong in this tab once the
+> Finder index exists.
+
 ### Linking honestly
 
 A browser will not open a `file://` folder from a web page. Each result row gets up to three

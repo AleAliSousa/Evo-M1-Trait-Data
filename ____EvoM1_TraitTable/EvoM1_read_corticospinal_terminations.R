@@ -23,7 +23,7 @@ library(readxl); library(writexl)
 setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/")
 folder_path <- "./____EvoM1_TraitTable/"
 item_name   <- "Bortoff_Strick_1993_Table1"
-TOKEN       <- "Bortoff1993"
+TOKEN       <- "Bortoff_Strick_1993"
 
 filecodes    <- read_excel("./__ReadMe.xlsx", sheet = "Sheet1")
 item_encoded <- filecodes$"Item encoded"[match(item_name, filecodes$"Item name")]

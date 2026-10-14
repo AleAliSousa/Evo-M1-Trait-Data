@@ -91,6 +91,11 @@ if (is.na(key_path) || !file.exists(key_path)) {
 key <- read.csv(key_path, stringsAsFactors = FALSE)
 key <- key[key$source_publication == sub("_Table[^_]*$", "", table_name), ]
 lk  <- setNames(key$accepted_name, tolower(key$variant_name))
+## species_confidence is no longer a column of the unified spoke schema (2026-09-28); the
+## migration carried it into `note` as "species_confidence: <level>; ...".
+if (!"species_confidence" %in% names(key))
+  key$species_confidence <- ifelse(grepl("species_confidence:", key$note, fixed = TRUE),
+    sub("^.*species_confidence:\\s*([A-Za-z]+).*$", "\\1", key$note), NA_character_)
 ck  <- setNames(key$species_confidence, tolower(key$variant_name))
 final.dataframe$species            <- unname(lk[tolower(final.dataframe$common_name_printed)])
 final.dataframe$species_confidence <- unname(ck[tolower(final.dataframe$common_name_printed)])

@@ -53,7 +53,7 @@ suppressWarnings(suppressMessages(library(readxl)))
 # That mapping is NOT hand-coded here - it lives in _keys/Stephan/species_key.csv as a
 # Bortoff1993 row, so it is visible and reusable (sec 5). The printed name survives
 # untouched in Species_printed (invariant 3).
-TOKEN <- "Bortoff1993"
+TOKEN <- "Bortoff_Strick_1993"
 ref <- if (!is.na(dataset_root))
   read.csv(file.path(dataset_root, "_keys", "species_reference.csv"),
            stringsAsFactors = FALSE)$accepted_name else character(0)

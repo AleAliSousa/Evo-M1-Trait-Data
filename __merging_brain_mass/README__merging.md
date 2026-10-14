@@ -47,7 +47,7 @@ is pooled with another:
 
 Endocranial volume is **not** here — cranial capacity is not brain weight — and lives in
 `__merging_endocranial_volume/`. The full rationale, with the quoted source definitions and
-the disagreement numbers, is in `../AUDIT_brain_size_compatibility.md`.
+the disagreement numbers, is in `../_keys/AUDIT_brain_size_compatibility.md`.
 
 Within a basis: `Value` = mean of primary team-values (or all team-values if no primary),
 after within-team collapse; `Value_median` is the robust alternative for flagged species.

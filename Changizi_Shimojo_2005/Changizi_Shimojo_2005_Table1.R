@@ -66,7 +66,7 @@ to_num <- function(x) {
 ## source_publication, variant_name), filtered to this paper's token so another
 ## paper's decisions cannot leak in.  Until the proposed rows are merged there, the
 ## identical three-column PROPOSED_species_key_rows.csv in this folder stands in.
-species_token <- "Changizi2005"
+species_token <- "Changizi_Shimojo_2005"
 species_lookup <- local({
   k <- NULL
   shared <- if (!is.na(base)) file.path(base, "_keys", "Stephan", "species_key.csv") else NA_character_

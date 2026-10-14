@@ -1,0 +1,22 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species_as_published,species as published,,,,info,C57BL/6 mice,BallesterosYáñez_etal_2006_Table1,"Printed species/common name retained verbatim; for mouse items from Experimental procedures p.404, C57BL/6 mice. Resolve only through collection species keys downstream.",Publication and frozen snapshot; see item README
+area_as_published,area as published,,,,info,C57BL/6 mice,BallesterosYáñez_etal_2006_Table1,,Publication and frozen snapshot; see item README
+parameter_as_published,parameter as published,,,,info,C57BL/6 mice,BallesterosYáñez_etal_2006_Table1,,Publication and frozen snapshot; see item README
+mean_as_published,mean as published,dendritic spine,,mean,both,C57BL/6 mice,BallesterosYáñez_etal_2006_Table1,"Unit is µm² for head area, µm for axes and neck; M2 primary, S2 and V2L/TeA secondary.",Publication and frozen snapshot; see item README
+sem_as_published,sem as published,dendritic spine,,SEM,both,C57BL/6 mice,BallesterosYáñez_etal_2006_Table1,"Same parameter-specific units as mean; SEM, not SD.",Publication and frozen snapshot; see item README
+unit_as_published,unit as published,,,,info,C57BL/6 mice,BallesterosYáñez_etal_2006_Table1,,Publication and frozen snapshot; see item README
+n_spines,n spines,,,,info,C57BL/6 mice,BallesterosYáñez_etal_2006_Table1,"Number of spines, not animals or cells; S2/V2L/TeA from the cited earlier publication on the same animals.",Publication and frozen snapshot; see item README
+n_individuals,n individuals,,,,info,C57BL/6 mice,BallesterosYáñez_etal_2006_Table1,,Publication and frozen snapshot; see item README
+sex,sex,,,,info,C57BL/6 mice,BallesterosYáñez_etal_2006_Table1,,Publication and frozen snapshot; see item README
+age_months,age months,,,,info,C57BL/6 mice,BallesterosYáñez_etal_2006_Table1,,Publication and frozen snapshot; see item README
+hemisphere,hemisphere,,,,info,C57BL/6 mice,BallesterosYáñez_etal_2006_Table1,,Publication and frozen snapshot; see item README
+cortical_layer,cortical layer,,,,info,C57BL/6 mice,BallesterosYáñez_etal_2006_Table1,,Publication and frozen snapshot; see item README
+data_role,data role,,,,info,C57BL/6 mice,BallesterosYáñez_etal_2006_Table1,,Publication and frozen snapshot; see item README
+source_ref_key,source ref key,,,,info,C57BL/6 mice,BallesterosYáñez_etal_2006_Table1,"Split multi-citations on ""; ""; join source_ref_key to ref_key in reference_tables/BallesterosYáñez_etal_2006_Table1_references.csv; only cited works retained.",Publication and frozen snapshot; see item README
+method,method,,,,info,C57BL/6 mice,BallesterosYáñez_etal_2006_Table1,,Publication and frozen snapshot; see item README
+source_locus,source locus,,,,info,C57BL/6 mice,BallesterosYáñez_etal_2006_Table1,,Publication and frozen snapshot; see item README
+Area of the head (µm²),Area of the head (µm²),dendritic spine,Area.um2,mean; SEM,both,C57BL/6 mice,BallesterosYáñez_etal_2006_Table1,"Long-table parameter_as_published identifies this variable; M2 primary, S2 and V2L/TeA secondary. No length/area unit conversion.","Table 1, printed p.407"
+Major axis (µm),Major axis (µm),dendritic spine,Length.um,mean; SEM,both,C57BL/6 mice,BallesterosYáñez_etal_2006_Table1,"Long-table parameter_as_published identifies this variable; M2 primary, S2 and V2L/TeA secondary. No length/area unit conversion.","Table 1, printed p.407"
+Minor axis (µm),Minor axis (µm),dendritic spine,Length.um,mean; SEM,both,C57BL/6 mice,BallesterosYáñez_etal_2006_Table1,"Long-table parameter_as_published identifies this variable; M2 primary, S2 and V2L/TeA secondary. No length/area unit conversion.","Table 1, printed p.407"
+Length of the neck (µm),Length of the neck (µm),dendritic spine,Length.um,mean; SEM,both,C57BL/6 mice,BallesterosYáñez_etal_2006_Table1,"Long-table parameter_as_published identifies this variable; M2 primary, S2 and V2L/TeA secondary. No length/area unit conversion.","Table 1, printed p.407"
+Method:observation_level,Published observation level and dependencies,,,,method,C57BL/6 mice,BallesterosYáñez_etal_2006_Table1,"Rows are group/region/parameter or literature-value summaries, never independent species replicates; do not merge secondary values or average 2-D and 3-D methods.",Methods and Results; see README

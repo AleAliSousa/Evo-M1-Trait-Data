@@ -17,7 +17,7 @@ source(file.path(repo_base, "_helpers", "cortical_layers_source_common.R"))
 item_name <- "Peruffo_etal_2019_Table2"
 raw <- read.csv(file.path(folder, paste0(item_name, "_snapshot.csv")),
                 stringsAsFactors = FALSE, check.names = FALSE, na.strings = "")
-Species <- lookup_species("sheep", "Peruffo2019", repo_base)
+Species <- lookup_species("sheep", "Peruffo_etal_2019", repo_base)
 
 absolute_cols <- c(
   "total_cortex_um" = "total cortex",

@@ -33,7 +33,9 @@ structure_of <- c(S1="Brain",S2="Brain",S3="Visual cortex",S4="Prefrontal cortex
 
 # species harmonisation from the shared key (token Karbowski2007), printed name preserved
 key <- read_csv(key_file, show_col_types = FALSE)
-kk  <- key %>% filter(source_publication == "Karbowski2007")
+kk  <- key %>% filter(source_publication == "Karbowski__2007")
+if (nrow(kk) == 0L)
+  stop("No species_key.csv rows for source_publication == \"Karbowski__2007\" -- key rows are scoped to the paper folder name (_keys/SPECIES_NAMING.md sec 3b)", call. = FALSE)
 lk  <- setNames(kk$accepted_name, tolower(kk$variant_name))
 binom <- function(printed) {
   common <- tolower(str_squish(str_remove(printed, "^average\\s+")))

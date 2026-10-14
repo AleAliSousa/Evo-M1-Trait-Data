@@ -108,7 +108,7 @@ dat0 <- raw[seq(header_row + 1L, nrow(raw)), ] %>%
 key_file <- if (!is.na(base)) file.path(base, "_keys", "Stephan", "species_key.csv") else NA_character_
 if (is.na(key_file) || !file.exists(key_file))
   stop("Species key not found: _keys/Stephan/species_key.csv", call. = FALSE)
-key <- read_csv(key_file, show_col_types = FALSE) %>% filter(source_publication == "deSousa2008")
+key <- read_csv(key_file, show_col_types = FALSE) %>% filter(source_publication == "deSousa__2008")
 lk  <- setNames(key$accepted_name, tolower(key$variant_name))
 
 markers <- c("a,b", "a,c", "a,d", "a", "b", "c", "d", "e", "f")

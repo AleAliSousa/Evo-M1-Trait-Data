@@ -109,7 +109,7 @@ key_file <- if (!is.na(base)) file.path(base, "_keys", "Stephan", "species_key.c
 if (is.na(key_file) || !file.exists(key_file)) {
   stop("Species key not found: _keys/Stephan/species_key.csv", call. = FALSE)
 }
-key <- read_csv(key_file, show_col_types = FALSE) %>% filter(source_publication == "deSousa2008")
+key <- read_csv(key_file, show_col_types = FALSE) %>% filter(source_publication == "deSousa__2008")
 lk  <- setNames(key$accepted_name, tolower(key$variant_name))
 missing_variants <- setdiff(tolower(dat0$species_as_published), names(lk))
 if (length(missing_variants)) {

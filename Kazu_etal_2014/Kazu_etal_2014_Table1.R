@@ -56,7 +56,7 @@ library(readxl)
 ## No hand-coded mapping lives in this script (HOWTO sec 5). The rows this table needs are
 ## proposed in Kazu_etal_2014/PROPOSED_species_key_rows.csv for merging into
 ## _keys/Stephan/species_key.csv.
-TOKEN <- "Kazu2014"
+TOKEN <- "Kazu_etal_2014"
 ref <- if (!is.na(dataset_root))
   read.csv(file.path(dataset_root, "_keys", "species_reference.csv"),
            stringsAsFactors = FALSE)$accepted_name else character(0)

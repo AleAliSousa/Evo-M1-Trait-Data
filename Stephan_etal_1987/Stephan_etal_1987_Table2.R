@@ -31,7 +31,9 @@ raw <- read.csv("Stephan_etal_1987_Table2_snapshot.csv", check.names = FALSE,
 
 ## --- harmonize species to the canonical key (variants registered under Stephan1987) ---
 key <- read.csv("../_keys/Stephan/species_key.csv", stringsAsFactors = FALSE)
-key <- key[key$source_publication == "Stephan1987", ]
+key <- key[key$source_publication == "Stephan_etal_1987", ]
+if (nrow(key) == 0L)
+  stop("No species_key.csv rows for source_publication == \"Stephan_etal_1987\" -- key rows are scoped to the paper folder name (_keys/SPECIES_NAMING.md sec 3b)", call. = FALSE)
 norm <- function(x) tolower(gsub("[^a-z]+", " ", tolower(sub("1\\.", "l.", x))))
 lk <- setNames(key$accepted_name, trimws(norm(key$variant_name)))
 species <- unname(lk[trimws(norm(raw$species))])

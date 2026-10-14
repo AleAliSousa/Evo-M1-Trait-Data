@@ -51,7 +51,7 @@ readme_xlsx    <- if (!is.na(dataset_root)) file.path(dataset_root, "__ReadMe.xl
 library(readxl)
 
 ## 2. SPECIES RESOLVER (paper-scoped; _keys/SPECIES_NAMING.md sec 3) -
-TOKEN <- "Nudo1995"
+TOKEN <- "Nudo_etal_1995"
 ref <- if (!is.na(dataset_root))
   read.csv(file.path(dataset_root, "_keys", "species_reference.csv"),
            stringsAsFactors = FALSE)$accepted_name else character(0)

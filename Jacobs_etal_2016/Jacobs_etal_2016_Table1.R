@@ -20,8 +20,8 @@ raw <- read.csv(file.path(folder, paste0(item_name, "_snapshot.csv")),
 
 is_giraffe <- raw$species_printed == "Newborn giraffe"
 Species <- character(nrow(raw))
-Species[is_giraffe] <- lookup_species("Giraffa camelopardalis tippelskirchi", "Jacobs2016", repo_base)
-Species[!is_giraffe] <- lookup_species("Loxodonta africana", "Jacobs2016", repo_base)
+Species[is_giraffe] <- lookup_species("Giraffa camelopardalis tippelskirchi", "Jacobs_etal_2016", repo_base)
+Species[!is_giraffe] <- lookup_species("Loxodonta africana", "Jacobs_etal_2016", repo_base)
 status <- ifelse(raw$presence_printed == "absent (-)", "absent",
                  ifelse(raw$presence_printed == "not applicable", "not applicable", "present"))
 region <- canonical_region(raw$region_printed)

@@ -20,8 +20,8 @@ raw <- read.csv(file.path(folder, paste0(item_name, "_snapshot.csv")),
 
 is_tiger <- raw$species_printed == "Siberian tiger"
 Species <- character(nrow(raw))
-Species[is_tiger] <- lookup_species("Panthera tigris altaica", "Johnson2016", repo_base)
-Species[!is_tiger] <- lookup_species("Neofelis nebulosa", "Johnson2016", repo_base)
+Species[is_tiger] <- lookup_species("Panthera tigris altaica", "Johnson_etal_2016", repo_base)
+Species[!is_tiger] <- lookup_species("Neofelis nebulosa", "Johnson_etal_2016", repo_base)
 status <- ifelse(raw$presence_printed == "absent (-)", "absent",
                  ifelse(raw$presence_printed == "not applicable", "not applicable", "present"))
 region <- canonical_region(raw$region_printed)

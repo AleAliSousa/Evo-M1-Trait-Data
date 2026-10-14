@@ -50,11 +50,11 @@ library(readxl)
 
 ## 2. SPECIES RESOLVER (paper-scoped; _keys/SPECIES_NAMING.md sec 3) -
 # No mapping is hand-coded here (sec 5). Every printed name -> accepted name comes from a
-# species_key.csv row scoped to source_publication == "Nudo1995". While those rows are still
+# species_key.csv row scoped to source_publication == "Nudo_etal_1995". While those rows are still
 # waiting to be merged into _keys/, the identical rows staged in this folder as
 # PROPOSED_species_key_rows.csv are used instead, with a warning. Once merged, delete the
 # staged file - the resolver then reads the canonical key only and the output is unchanged.
-TOKEN <- "Nudo1995"
+TOKEN <- "Nudo_etal_1995"
 ref <- if (!is.na(dataset_root))
   read.csv(file.path(dataset_root, "_keys", "species_reference.csv"),
            stringsAsFactors = FALSE)$accepted_name else character(0)

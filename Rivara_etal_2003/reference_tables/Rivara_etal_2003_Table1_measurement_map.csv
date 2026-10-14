@@ -1,0 +1,11 @@
+Code,block_label,source_column,population,unit,case_role,published_derived,definition
+Betz_count_L,Neuronal numbers,2,Betz cells,cells,primary,FALSE,Optical-fractionator estimate of Betz cells in left area 4 layer Vb.
+Betz_count_CE,Neuronal numbers,3,Betz cells,dimensionless,info,FALSE,"Coefficient of error for Betz count estimate; not SEM, SD or CV."
+Other_pyramidal_count_L,Neuronal numbers,4,non-Betz pyramidal cells,cells,primary,FALSE,Other (non-Betz) pyramidal cells in left area 4 layer Vb; excludes Betz cells.
+Other_pyramidal_count_CE,Neuronal numbers,5,non-Betz pyramidal cells,dimensionless,info,FALSE,Coefficient of error for non-Betz pyramidal count estimate.
+Total_pyramidal_count_L,Neuronal numbers,6,Betz plus non-Betz pyramidal cells,cells,primary,FALSE,"Total layer Vb pyramidal cells in left area 4, including Betz cells; not all neurons."
+Total_pyramidal_count_CE,Neuronal numbers,7,Betz plus non-Betz pyramidal cells,dimensionless,info,FALSE,Coefficient of error for total pyramidal count estimate.
+Betz_percentage_published,Neuronal numbers,8,Betz / total pyramidal cells,%,info,TRUE,Published Betz percentage relative to all layer Vb pyramidal cells; retain as printed.
+Betz_soma_volume_um3,Neuronal volumes,2,Betz cells,µm³,primary,FALSE,Rotator-estimated mean individual Betz soma volume within each case.
+Other_pyramidal_soma_volume_um3,Neuronal volumes,3,non-Betz pyramidal cells,µm³,primary,FALSE,Rotator-estimated mean individual non-Betz pyramidal soma volume within each case.
+Betz_to_other_pyramidal_volume_ratio_published,Neuronal volumes,4,Betz / non-Betz pyramidal cells,dimensionless,info,TRUE,Published ratio of case mean Betz soma volume to non-Betz pyramidal soma volume.

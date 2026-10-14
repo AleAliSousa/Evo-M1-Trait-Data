@@ -33,7 +33,9 @@ raw$species_as_published[grepl("^macaque", tolower(raw$specimen_as_published))] 
 
 ## ---- species harmonisation via the Stephan-collection key (PalomeroGallagher2018 token) ----
 key <- readr::read_csv(file.path(base, "_keys", "Stephan", "species_key.csv"), show_col_types = FALSE)
-key_pg <- key[key$source_publication == "PalomeroGallagher2018", ]
+key_pg <- key[key$source_publication == "PalomeroGallagher_Zilles_2018", ]
+if (nrow(key_pg) == 0L)
+  stop("No species_key.csv rows for source_publication == \"PalomeroGallagher_Zilles_2018\" -- key rows are scoped to the paper folder name (_keys/SPECIES_NAMING.md sec 3b)", call. = FALSE)
 lk <- setNames(key_pg$accepted_name, tolower(key_pg$variant_name))
 raw$Species <- lk[raw$species_as_published]
 stopifnot(!any(is.na(raw$Species)))

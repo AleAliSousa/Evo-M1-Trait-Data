@@ -20,7 +20,9 @@ setwd(folder)
 x <- readr::read_csv("Latimer__1956_Table2_snapshot.csv", show_col_types = FALSE)
 
 key <- readr::read_csv(file.path(base, "_keys", "Stephan", "species_key.csv"), show_col_types = FALSE)
-key_lat <- key[key$source_publication == "Latimer1956", ]
+key_lat <- key[key$source_publication == "Latimer__1956", ]
+if (nrow(key_lat) == 0L)
+  stop("No species_key.csv rows for source_publication == \"Latimer__1956\" -- key rows are scoped to the paper folder name (_keys/SPECIES_NAMING.md sec 3b)", call. = FALSE)
 lk <- setNames(key_lat$accepted_name, key_lat$variant_name)
 x$Species <- lk[x$species_as_published]  ## NA for Frog/Turtle -- no binomial given in the paper
 

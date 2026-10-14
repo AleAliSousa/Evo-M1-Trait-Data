@@ -72,7 +72,7 @@ pub_long <- pub_wide %>%
 
 # ---- 2. UNPUBLISHED raw -> mean per Animal x Structure -> map codes -> long ----
 ## The unpublished spreadsheet moved to the PRIVATE repo (repo boundary; see
-## __COMPARISON_MOVED.md). Resolve it through the house helper — it stops with an
+## REPO_BOUNDARY.md section 7). Resolve it through the house helper — it stops with an
 ## actionable message if the private repo is not mounted. (Fixed 2026-08-29: the old
 ## line read it from this folder, where it no longer exists.)
 source(file.path(base, "_helpers", "restricted_data.R"))

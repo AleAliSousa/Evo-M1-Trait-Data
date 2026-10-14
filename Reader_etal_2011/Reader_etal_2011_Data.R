@@ -53,7 +53,7 @@ key_files <- if (!is.na(dataset_root))
 # printed "Gorilla gorilla"/"Pongo pygmaeus" onto the genus-level "Gorilla sp."/"Pongo sp.".
 # Those are decisions about the Dusseldorf specimens; Reader's records are ordinary
 # species-level entries and must NOT inherit them.
-TOKEN <- "Reader2011"
+TOKEN <- "Reader_etal_2011"
 km <- list()
 for (kf in key_files) {
   k <- read.csv(kf, stringsAsFactors = FALSE)

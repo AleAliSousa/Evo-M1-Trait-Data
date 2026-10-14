@@ -59,7 +59,7 @@ library(readxl)
 ## The table prints no species: this is a single-species human study and the paper names its
 ## subject only as "human" (title, abstract, Methods "Subject"). That printed word is kept as
 ## Species_Ribeiro2013 and resolved through the species key — never by an inline map.
-TOKEN <- "Ribeiro2013"
+TOKEN <- "Ribeiro_etal_2013"
 SPECIES_PRINTED <- "human"
 ref <- if (!is.na(dataset_root))
   read.csv(file.path(dataset_root, "_keys", "species_reference.csv"),

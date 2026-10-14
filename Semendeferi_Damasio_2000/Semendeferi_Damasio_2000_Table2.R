@@ -45,7 +45,9 @@ printed <- sub("\\s+\\d+$", "", snap$Specimen)
 
 ## 3. HARMONISE species (single source of truth = _keys) --------------------
 key <- read.csv(species_key, stringsAsFactors = FALSE)
-key <- key[key$source_publication == "Semendeferi2000", ]
+key <- key[key$source_publication == "Semendeferi_Damasio_2000", ]
+if (nrow(key) == 0L)
+  stop("No species_key.csv rows for source_publication == \"Semendeferi_Damasio_2000\" -- key rows are scoped to the paper folder name (_keys/SPECIES_NAMING.md sec 3b)", call. = FALSE)
 lk  <- setNames(key$accepted_name, tolower(key$variant_name))
 accepted <- unname(lk[tolower(printed)])
 concept  <- ifelse(printed == "Orang-utan", "Pongo pygmaeus (s.l.)", "")   # pre-2001 s.l.

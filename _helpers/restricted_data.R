@@ -5,7 +5,7 @@
 ## A few builds in this public repository read a source file that cannot be published:
 ## data another researcher supplied privately, or unpublished material shared by email.
 ## Those files live in the private repo **Evo-M1-Trait-Data-restricted** (see
-## __COMPARISON_MOVED.md), and the build scripts reach them through this helper rather
+## REPO_BOUNDARY.md section 7), and the build scripts reach them through this helper rather
 ## than through a hardcoded path.
 ##
 ##   source(file.path(base, "_helpers", "restricted_data.R"))

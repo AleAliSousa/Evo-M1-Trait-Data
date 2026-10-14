@@ -127,7 +127,7 @@ endocranial-volume dataset, none pooled with another. The fifth,
 back-calculated from a brain volume — or, for fossils, from an endocranial volume —
 so it is not a weighed mass at all. The reasoning, the quoted
 source definitions and the disagreement numbers are in
-`../AUDIT_brain_size_compatibility.md`.
+`../_keys/AUDIT_brain_size_compatibility.md`.
 
 `variable_domain.csv` gained a **`poolable_group`** column for this, and
 `build_variable_definitions.R` passes it through — the app reads

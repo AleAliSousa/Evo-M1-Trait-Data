@@ -288,6 +288,21 @@ P2,data_value,PUB,Armstrong__1979/Armstrong__1979_Tables1-9_volumes.csv,45,Armst
 P2,data_value,PUB,Armstrong__1979/Armstrong__1979_Tables1-9_volumes.csv,46,Armstrong_1979,Armstrong__1979,yes,"Table5,Armstrong_1979,primary,Homo s.-t,Homo_volume_2,Homo sapiens,Homo sapiens,female,32,NA,1200,Yakovlev Collection,transverse,LGBp,volume"
 P2,data_value,PUB,Armstrong__1979/Armstrong__1979_Tables1-9_volumes.csv,47,Armstrong_1979,Armstrong__1979,yes,"Table5,Armstrong_1979,primary,Homo s.-t,Homo_volume_2,Homo sapiens,Homo sapiens,female,32,NA,1200,Yakovlev Collection,transverse,LGBm,volume"
 P2,filename,PUB,Brodmann__1913/Brodmann_1913_Verhandlungen.pdf,,Brodmann_1913,Brodmann__1913,no,rename to the canonical spelling and update referrers
+P2,data_value,PUB,_keys/Stephan/_staged_additions/anatomy_key_additions_Pirlot.csv,2,Pirlot_1981,Pirlot__1981,yes,"Pirlot_1981,Bulbus_olfactorius,Volume_mm3,BO,BO_mm3"
+P2,data_value,PUB,_keys/Stephan/_staged_additions/anatomy_key_additions_Pirlot.csv,3,Pirlot_1981,Pirlot__1981,yes,"Pirlot_1981,Neocortex,Volume_mm3,N,N_mm3"
+P2,data_value,PUB,_keys/Stephan/_staged_additions/anatomy_key_additions_Pirlot.csv,4,Pirlot_1981,Pirlot__1981,yes,"Pirlot_1981,Rhinencephalon,Volume_mm3,RH,RH_mm3"
+P2,data_value,PUB,_keys/Stephan/_staged_additions/anatomy_key_additions_Pirlot.csv,5,Pirlot_1981,Pirlot__1981,yes,"Pirlot_1981,Pyriform_cortex,Volume_mm3,PY,PY_mm3"
+P2,data_value,PUB,_keys/Stephan/_staged_additions/anatomy_key_additions_Pirlot.csv,6,Pirlot_1981,Pirlot__1981,yes,"Pirlot_1981,Septum,Volume_mm3,S,S_mm3"
+P2,data_value,PUB,_keys/Stephan/_staged_additions/anatomy_key_additions_Pirlot.csv,7,Pirlot_1981,Pirlot__1981,yes,"Pirlot_1981,Diencephalon,Volume_mm3,Di,Di_mm3"
+P2,data_value,PUB,_keys/Stephan/_staged_additions/anatomy_key_additions_Pirlot.csv,8,Pirlot_1981,Pirlot__1981,yes,"Pirlot_1981,Striatum,Volume_mm3,STR,STR_mm3"
+P2,data_value,PUB,_keys/Stephan/_staged_additions/anatomy_key_additions_Pirlot.csv,9,Pirlot_1981,Pirlot__1981,yes,"Pirlot_1981,Hippocampus,Volume_mm3,Hi,Hi_mm3"
+P2,data_value,PUB,_keys/Stephan/_staged_additions/anatomy_key_additions_Pirlot.csv,10,Pirlot_1981,Pirlot__1981,yes,"Pirlot_1981,Mesencephalon,Volume_mm3,M,M_mm3"
+P2,data_value,PUB,_keys/Stephan/_staged_additions/anatomy_key_additions_Pirlot.csv,11,Pirlot_1981,Pirlot__1981,yes,"Pirlot_1981,Cerebellum,Volume_mm3,C,C_mm3"
+P2,data_value,PUB,_keys/Stephan/_staged_additions/anatomy_key_additions_Pirlot.csv,12,Pirlot_1981,Pirlot__1981,yes,"Pirlot_1981,Medulla_oblongata,Volume_mm3,O,O_mm3"
+P2,data_value,PUB,_keys/Stephan/_staged_additions/anatomy_key_additions_Pirlot.csv,13,Pirlot_1981,Pirlot__1981,yes,"Pirlot_1981,Schizocortex,Volume_mm3,Sz,Sz_mm3"
+P2,data_value,PUB,_keys/Stephan/_staged_additions/anatomy_key_additions_Pirlot.csv,14,Pirlot_1981,Pirlot__1981,yes,"Pirlot_1981,Body_weight,Mass,,body_weight_g"
+P2,data_value,PUB,_keys/Stephan/_staged_additions/anatomy_key_additions_Pirlot.csv,15,Pirlot_1981,Pirlot__1981,yes,"Pirlot_1981,Brain_weight,Mass,,brain_weight_mg"
+P2,data_value,PUB,_keys/taxon_clarity.csv,6,Ashwell_2020,Ashwell__2020,yes,"*,Mustela putorius,species,domestication_unstated,""Five papers print the bare binomial (Ashwell_2020, Bush_Allman_2003, Heffner_Heffner_1992"
 P3,generated_value,PUB,__Public/comparative-data/10.1002%2Fajpa.1330510308_Tables1-9.tsv,2,Armstrong_1979,Armstrong__1979,yes,"""Table1""	""Armstrong_1979""	""primary""	""Hylo.-s""	""Hylobates_unknown_1""	""Hylobates sp.""	""Hylobates sp.""	""unknown""	""unknown""	NA	NA	""Thomas Jeffer"
 P3,generated_value,PUB,__Public/comparative-data/10.1002%2Fajpa.1330510308_Tables1-9.tsv,3,Armstrong_1979,Armstrong__1979,yes,"""Table1""	""Armstrong_1979""	""primary""	""Hylo.-s""	""Hylobates_unknown_1""	""Hylobates sp.""	""Hylobates sp.""	""unknown""	""unknown""	NA	NA	""Thomas Jeffer"
 P3,generated_value,PUB,__Public/comparative-data/10.1002%2Fajpa.1330510308_Tables1-9.tsv,4,Armstrong_1979,Armstrong__1979,yes,"""Table1""	""Armstrong_1979""	""primary""	""Hylo.-s""	""Hylobates_unknown_1""	""Hylobates sp.""	""Hylobates sp.""	""unknown""	""unknown""	NA	NA	""Thomas Jeffer"
@@ -391,16 +406,13 @@ P4,doc,PUB,MacLeod__2000/MacLeod__2000_APPENDIXI.ReadMe.md,8,MacLeod_2000,MacLeo
 P4,doc,PUB,MacLeod__2000/MacLeod__2000_APPENDIXI.ReadMe.md,13,MacLeod_2000,MacLeod__2000,yes,`MacLeod_2000_APPENDIXI.R` -> `MacLeod_2000_APPENDIXI.csv` and `MacLeod_2000_APPENDIXI.tsv` (**use these**).
 P4,doc,PUB,MacLeod__2000/MacLeod__2000_APPENDIXI.ReadMe.md,13,MacLeod_2000,MacLeod__2000,yes,`MacLeod_2000_APPENDIXI.R` -> `MacLeod_2000_APPENDIXI.csv` and `MacLeod_2000_APPENDIXI.tsv` (**use these**).
 P4,doc,PUB,MacLeod__2000/MacLeod__2000_APPENDIXI.ReadMe.md,13,MacLeod_2000,MacLeod__2000,yes,`MacLeod_2000_APPENDIXI.R` -> `MacLeod_2000_APPENDIXI.csv` and `MacLeod_2000_APPENDIXI.tsv` (**use these**).
-P4,doc,PUB,Manger__2006/Manger__2006_Table1.ReadMe.md,11,Manger_2006,Manger__2006,yes,"| `Manger_2006_Table1_snapshot.csv` | frozen, faithful copy of the extant-cetacean rows of Table 1 |"
-P4,doc,PUB,Manger__2006/Manger__2006_Table1.ReadMe.md,12,Manger_2006,Manger__2006,yes,"| `Manger_2006_Table1.csv` | cleaned, analysis-ready data |"
-P4,doc,PUB,Manger__2006/Manger__2006_Table1.ReadMe.md,13,Manger_2006,Manger__2006,yes,| `Manger_2006_Table1.R` | script that turns the snapshot into the clean CSV |
-P4,doc,PUB,Manger__2006/Manger__2006_Table1.ReadMe.md,14,Manger_2006,Manger__2006,yes,| `Manger_2006_Table1.ReadMe.md` | this file |
-P4,doc,PUB,Manger__2006/Manger__2006_Table1.ReadMe.md,18,Manger_2006,Manger__2006,yes,"The printed Table 1 has three sections: Eocene Archaeoceti, Oligocene cetaceans, Miocene cetaceans, and Extant cetaceans (subdivided into od"
+P4,doc,PUB,PROJECT_SCOPE_AND_DATASET_ROADMAP.md,753,Ketten_2012,Ketten__2012,yes,- `Ketten_2012` → `Ketten__2012` (single-author double-underscore convention; folder holds only the
+P4,doc,PUB,PROJECT_SCOPE_AND_DATASET_ROADMAP.md,759,Siegel_2022,Siegel__2022,yes,- `Siegel_2022` → `Siegel__2022` (single-author double-underscore convention)
 P4,doc,PUB,SOURCE_DISPOSITION_REGISTER.md,42,Weaver_2005,Weaver__2005,yes,"| Weaver 2005, *Reciprocal evolution of the cerebellum and neocortex in fossil humans* | `DOCUMENTED SKIP` | No new raw table; quantitative "
 P4,doc,PUB,SOURCE_DISPOSITION_REGISTER.md,42,Weaver_2005,Weaver__2005,yes,"| Weaver 2005, *Reciprocal evolution of the cerebellum and neocortex in fossil humans* | `DOCUMENTED SKIP` | No new raw table; quantitative "
 P4,doc,PUB,SOURCE_DISPOSITION_REGISTER.md,42,Weaver_2005,Weaver__2005,yes,"| Weaver 2005, *Reciprocal evolution of the cerebellum and neocortex in fossil humans* | `DOCUMENTED SKIP` | No new raw table; quantitative "
-P4,doc,PUB,____Collections and Specimen notes/Disco_gibbon_specimen_note.md,450,MacLeod_2000,MacLeod__2000,yes,`MacLeod_2000` or `Barger_etal_2007`** — other authors describing the shared collection.
-P4,doc,PUB,____Collections and Specimen notes/Disco_gibbon_specimen_note.md,477,MacLeod_2000,MacLeod__2000,yes,| `MacLeod_2000` | `DISCO (3/97) / GPZ-5542` | histology | registered |
 P4,code_comment,PUB,__merging_behaviour/behaviour_compiled.R,10,ManyPrimates_2022,ManyPrimates__2022,yes,"##   VocalRepertoire  Schniter_2026 (primary, updated) + ManyPrimates_2022 (secondary). Both draw on"
 P4,doc,PUB,__merging_sleep/README__merging.md,43,HerculanoHouzel_2015,HerculanoHouzel__2015,yes,| `HerculanoHouzel__2015_Table1` | HerculanoHouzel_2015 | `Sleep_h_day` | 24 mammals | primary (daily sleep) |
+P4,doc,PUB,_keys/specimen_crosswalk/Disco_gibbon_specimen_note.md,450,MacLeod_2000,MacLeod__2000,yes,`MacLeod_2000` or `Barger_etal_2007`** — other authors describing the shared collection.
+P4,doc,PUB,_keys/specimen_crosswalk/Disco_gibbon_specimen_note.md,477,MacLeod_2000,MacLeod__2000,yes,| `MacLeod_2000` | `DISCO (3/97) / GPZ-5542` | histology | registered |
 P4,doc,PUB,_keys/specimen_crosswalk/SCHEMA.md,44,MacLeod_2000,MacLeod__2000,yes,| `item_reference` | the specific table item (e.g. `MacLeod_2000_APPENDIXI`). |

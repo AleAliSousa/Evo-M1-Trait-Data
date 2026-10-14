@@ -2346,6 +2346,7 @@ Smaers_etal_2018,Smaers_etal_2018_Figure2-data1,Brain_Vol.mm3,whole brain,WholeB
 deSousa_etal_2010,deSousa_etal_2010,brain_volume_mm3,WholeBrain,WholeBrain,cell_counts,Volume.mm3,volume,NA,primary,Primates,brain volume
 deSousa_etal_2010,deSousa_etal_2010,brain_volume_cm3,WholeBrain,WholeBrain,cell_counts,Volume.cm3,volume,NA,primary,NA,whole brain volume (Cavalieri)
 DeCasien_Higham_2019,DeCasien_Higham_2019_BrainRegionDatamm3,XII,XII,XII,brain_structure_volume,Vol.mm3,volume,NA,secondary,primates,Hypoglossal nucleus volume
+Zhang_Sejnowski_2000,Zhang_Sejnowski_2000_Figure2,Adjacent_white_matter_Vol.mm3,adjacent white matter,adjacent white matter,NA,Vol.mm3,volume,reported,secondary,Mammalia,Adjacent white matter Vol.mm3
 Barger_etal_2012,Barger_etal_2012_Table3,AccessoryBasal_neurons,amygdala accessory basal nucleus,amygdala accessory basal nucleus,NA,Count.N,count (number),mean,primary,Hominidae + Hylobatidae + Cercopithecidae,accessory basal nucleus neuron number (mean)
 Barger_etal_2012,Barger_etal_2012_Table3,AccessoryBasal_neurons_SD,amygdala accessory basal nucleus,amygdala accessory basal nucleus,NA,Count.N,count (number),sd,info,Hominidae + Hylobatidae + Cercopithecidae,"SD, accessory basal nucleus"
 Barger_etal_2012,Barger_etal_2012_Table3,Basal_neurons,amygdala basal nucleus,amygdala basal nucleus,NA,Count.N,count (number),mean,primary,Hominidae + Hylobatidae + Cercopithecidae,basal nucleus neuron number (mean)
@@ -2469,6 +2470,7 @@ MedinaGonzález__2026,MedinaGonzález__2026_SupplementaryFile3,Relation_TAE_FL_
 Smaers_etal_2018,Smaers_etal_2018_Figure2-data1,MedialCerebellum_Vol.mm3,medial cerebellum,medial cerebellum,NA,Vol.mm3,volume,NA,secondary,Mammalia (primates + outgroups),medial cerebellum volume
 Schenker_etal_2005,Schenker_etal_2005_Table1; Schenker_etal_2005_Appendix1,mesial_cortex,mesial frontal cortex,mesial frontal cortex,NA,Vol.cm3,volume,mean/SE,primary,Hominidae + Hylobatidae,mesial sector of frontal lobe cortex
 Schenker_etal_2005,Schenker_etal_2005_Table1; Schenker_etal_2005_Appendix1,mesial_GWM,mesial frontal gyral white matter,mesial frontal gyral white matter,NA,Vol.cm3,volume,mean/SE,primary,Hominidae + Hylobatidae,gyral white matter underlying the mesial frontal sector
+Zhang_Sejnowski_2000,Zhang_Sejnowski_2000_Figure2,Neocortical_gray_matter_Vol.mm3,neocortical gray matter,neocortical gray matter,NA,Vol.mm3,volume,reported,secondary,Mammalia,Neocortical gray matter Vol.mm3
 Walhovd_etal_2011,Homo sapiens,Group,non-adopted),non-adopted),NA,see Region,see Region,NA,group,info,Normative comparison group (typical
 Heesy__2004,Heesy__2004 Table1,orbit_convergence_mean_deg,orbit,orbit,NA,angle,angle,mean,primary,Mammalia,"Mean orbit convergence, degrees."
 Heesy__2004,Heesy__2004 Table1,orbit_convergence_sd_deg,orbit,orbit,NA,angle,angle,sd,primary,Mammalia,"Standard deviation printed in parentheses for orbit convergence, degrees."

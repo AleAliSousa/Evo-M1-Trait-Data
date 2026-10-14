@@ -7,7 +7,7 @@ species belong to a cohort.
 ## Format
 
 One row per **species × cohort**, so a species may belong to several cohorts
-(human is in all three).
+(human is in all four).
 
 | column | meaning |
 |---|---|
@@ -26,12 +26,26 @@ One row per **species × cohort**, so a species may belong to several cohorts
 |---|---|---|
 | `HMBA` | 4 | human, *Macaca mulatta*, *Callithrix jacchus*, mouse — the subsampled set |
 | `EvoM1` | 25 | the M1 cross-species cohort |
-| `V1` | 25 | the V1 cohort — **currently the same 25 species as `EvoM1`** |
+| `V1` | 17 | the V1 cross-species cohort — the core 14 plus galago, cat and harbour porpoise |
+| `EC` | 14 | the EC cross-species cohort — **the same 14 species as the `V1` core** |
 
-All three lists were supplied by the project owner (2026-09-30). `HMBA` is a
-strict subset of `EvoM1`. `V1` and `EvoM1` are kept as separate cohorts even
-though their membership coincides today, because they answer different
-questions and can diverge; if they are meant to stay locked together, drop one.
+`HMBA` and `EvoM1` were supplied by the project owner (2026-09-30). `V1` was
+supplied the same day with the same 25 species as `EvoM1`; on 2026-10-14 the
+owner revised it to the 17 species listed in `sampling_discussion.pptx`
+(RegX Team site) and `HMBA cross-species V1.xlsx` (RegX Team-HMBA V1 Evo site):
+the 14-species V1 core plus three add-ons, galago, cat and harbour porpoise.
+The add-ons were planned at the RegX Team meeting of 2024-05-28 ("V1: add cat,
+galago? (PGA), porpoise (Keck)") and were still incomplete or awaiting delivery
+in `sampling_discussion.pptx` (Nov 2024); each add-on row's `note` records this.
+`EC` was added by the owner on 2026-10-14 from the 14 species in
+`ECevo_slide_deck.pptx` (RegX Team-HMBA EC Evo site). Its rows carry over the
+`V1` name handling, including the pig re-pointing; the pig row's
+`lookup_basis` records that it was carried over, not checked against the EC
+donors.
+
+`HMBA` is a strict subset of `EC`, which is a strict subset of `V1`. Every
+cohort species is in `EvoM1` except harbour porpoise (*Phocoena phocoena*),
+which is in `V1` only.
 
 ## Species names: write the cohort's own name
 

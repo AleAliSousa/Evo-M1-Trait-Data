@@ -1,0 +1,35 @@
+Reference,key,value,source_locus,provenance_note
+Bjugn__1993_TABLEV,species_as_published,mouse,"Title; Methods, p. 25",Common name only; no inline canonical binomial mapping.
+Bjugn__1993_TABLEV,Strain,Bom:NMRI,"Methods, p. 25",Whitespace normalized from printed Bom: NMRI.
+Bjugn__1993_TABLEV,Sex,male,"Methods, p. 25",All five enrolled animals.
+Bjugn__1993_TABLEV,AgeStage,adult,"Methods, p. 25",No exact age is printed for these study animals.
+Bjugn__1993_TABLEV,Tissue,gray matter,"TABLE IV / TABLE V, p. 29",White matter and ependymal cells are not added.
+Bjugn__1993_TABLEV,StudyEnrolledN,5,"Methods, p. 25; TABLE I, p. 26","Study enrollment, not the number of independent analysis rows."
+Bjugn__1993_TABLEV,StudyAnimalIDs,1; 2; 3; 4; 5,"TABLE I / TABLE II, pp. 26, 28",Same five animals across this paper; no extra biological subjects.
+Bjugn__1993_TABLEV,CohortDependency,same paper cohort as Bjugn__1993_TABLEI and Bjugn__1993_TABLEII,"Methods / Results, pp. 25–28",Not an independent replication of TABLE II.
+Bjugn__1993_TABLEV,SourceCountUnit,10^6 cells,"TABLE IV / TABLE V captions, p. 29",Only count measures multiply by 10^6; published zeros remain zero.
+Bjugn__1993_TABLEV,SourceVolumeUnit,mm³,"TABLE IV / TABLE V, p. 29",Already project-standard; no volumetric shrinkage correction.
+Bjugn__1993_TABLEV,SourceReader,Microsoft Copilot AI assistant,Transcription provenance,AI reader; never a human visual curator.
+Bjugn__1993_TABLEV,SourceReadDate,2026-10-10,Transcription provenance,"ISO date, America/Los_Angeles (Pacific)."
+Bjugn__1993_TABLEV,HumanVisualCuration,,Curation status,Intentionally blank: no human visual confirmation was supplied.
+Bjugn__1993_TABLEV,PublicationGate,HOLD: owner DOI correction and canonical R validation required,Registry / runtime gates,No public TSV is generated or delivered by this batch.
+Bjugn__1993_TABLEV,SourceDOI,10.1016/0006-8993(93)90744-8,PubMed PMID 8293301 (bibliographic check only),"One article DOI, not a table-specific DOI."
+Bjugn__1993_TABLEV,SourcePMID,8293301,PubMed bibliographic check,"Scientific values were read from the held PDF, not a web abstract."
+Bjugn__1993_TABLEV,CellTypingLimitations,"No clear-cut neuronal identification criteria; neurons may be classified as glial or unidentified, and glia may occur in neuronal categories 2 and 3.","Discussion, pp. 29–30",Author warns cell-category estimates require care; no reclassification.
+Bjugn__1993_TABLEV,EndothelialDefinition,Includes pericytes and smooth muscle cells.,"Cell classification, p. 26",Not restricted to vascular endothelial cells alone.
+Bjugn__1993_TABLEV,UnidentifiedDefinition,"Cells not assigned as neuronal, glial or endothelial.","Cell classification, p. 26",Never silently redistributed to glia.
+Bjugn__1993_TABLEV,ShrinkageCorrection,none applied by author; none added,"Tissue selection and treatment, p. 31",Source explicitly states no correction for volumetric changes during tissue processing.
+Bjugn__1993_TABLEV,Reference,Bjugn__1993_TABLEV,Exact existing Item name,Preserve uppercase TABLEIV / TABLEV.
+Bjugn__1993_TABLEV,Statistic,estimate,"TABLE V, p. 29","Published mean versus within-animal estimate, not new species replicates."
+Bjugn__1993_TABLEV,EstimateType,within-animal stereological subregion estimate,"TABLE V, p. 29",Not direct enumeration; no inferred neuronal classes.
+Bjugn__1993_TABLEV,ObservationLevel,individual_gray_matter_subregion_estimate,"TABLE V, p. 29; Methods, p. 27","Three spatial portions from one animal, not independent animals or a population mean."
+Bjugn__1993_TABLEV,ContributingAnimalsN,1,"TABLE V, p. 29",Same animal 2 already in TABLE I / II.
+Bjugn__1993_TABLEV,ContributingAnimalsStatus,"explicit: one mouse, animal 2","TABLE V, p. 29","One subject, three portions."
+Bjugn__1993_TABLEV,AnimalID,2,"TABLE V, p. 29; Methods, p. 27",Subset of enrolled animal IDs 1–5.
+Bjugn__1993_TABLEV,AnatomicalScope,gray matter down to the upper sacral segments,"TABLE V caption, p. 29",Not the entire whole-cord volume.
+Bjugn__1993_TABLEV,CoverageAsAuthorPrinted_pct,94,"TABLE V caption, p. 29","Author-printed coverage, not a recomputed percentage or scaling factor."
+Bjugn__1993_TABLEV,ConfidenceNote,One-animal estimate only; author cell-typing limitations; no per-portion confidence interval printed.,"TABLE V; Discussion, pp. 29–30","Categories 1/2/3 are morphology, not motor-neuron subtypes or M1 classes."
+Bjugn__1993_TABLEV,SourceDiscrepancyNote,"TABLE V volumes sum to 22.3 mm³; TABLE I animal 2 gray matter is 25.2 mm³, giving about 88.49%, not printed 94%. Scope/estimator basis uncertain; retain all printed values.","TABLE V, p. 29; TABLE I, p. 26","Internal-source check only, not a correction or new measurement."
+Bjugn__1993_TABLEV,Category1Definition,Prominent nucleolus and clearly defined cytoplasm containing distinct Nissl bodies.,"TABLE V footnote a, p. 29",Morphological category; percentage of the neurons in that portion.
+Bjugn__1993_TABLEV,Category2Definition,Prominent nucleolus and clearly defined cytoplasm without distinct Nissl bodies.,"TABLE V footnote b, p. 29","Morphological category, not a motor-neuron classification."
+Bjugn__1993_TABLEV,Category3Definition,Nuclei with marked invaginations in the nuclear membrane and scant or no apparent cytoplasm; most contained a nucleolus and were predominantly in dorsal horns.,"TABLE V footnote c, p. 29",Method text uses indentations; preserve footnote invaginations in the snapshot.

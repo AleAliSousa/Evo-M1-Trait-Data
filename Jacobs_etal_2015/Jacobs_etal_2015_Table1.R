@@ -18,7 +18,7 @@ item_name <- "Jacobs_etal_2015_Table1"
 raw <- read.csv(file.path(folder, paste0(item_name, "_snapshot.csv")),
                 stringsAsFactors = FALSE, check.names = FALSE, na.strings = "")
 
-species <- lookup_species("Giraffa camelopardalis", "Jacobs2015", repo_base)
+species <- lookup_species("Giraffa camelopardalis", "Jacobs_etal_2015", repo_base)
 layer <- canonical_layer(raw$layer_printed)
 status <- ifelse(raw$presence_printed == "absent (-)", "absent",
                  ifelse(raw$presence_printed == "not applicable", "not applicable", "present"))

@@ -63,7 +63,7 @@ fill_down <- function(x) {                               # "" repeats the cell a
 }
 
 ## ---- species key: paper-scoped, never hand-coded in this script -------------
-species_token <- "Changizi2005"
+species_token <- "Changizi_Shimojo_2005"
 species_lookup <- local({
   k <- NULL
   shared <- if (!is.na(base)) file.path(base, "_keys", "Stephan", "species_key.csv") else NA_character_

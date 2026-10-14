@@ -12,7 +12,7 @@
 #
 # Usage (from the repo root):
 #   Rscript _checks/check_cohort_coverage.R [outdir]
-# Writes three CSVs to outdir (default: the current directory):
+# Writes three CSVs to outdir (default: _checks/cohort_coverage/, created if absent):
 #   cohort_coverage_by_trait.csv    one row per cohort x trait
 #   cohort_coverage_summary.csv     one row per cohort x domain
 #   cohort_name_variants.csv        uncounted look-alike labels
@@ -23,7 +23,7 @@
 # =============================================================================
 
 args   <- commandArgs(trailingOnly = TRUE)
-outdir <- if (length(args) >= 1) args[[1]] else "."
+outdir <- if (length(args) >= 1) args[[1]] else file.path("_checks", "cohort_coverage")
 
 app_dir <- "__ShinyApp"
 if (!file.exists(file.path(app_dir, "app.R")))
@@ -82,6 +82,7 @@ for (ch in E$cohort_levels) {
 }
 
 w <- function(d, f) {
+  dir.create(outdir, recursive = TRUE, showWarnings = FALSE)  # after the repo-root check above
   p <- file.path(outdir, f)
   write.csv(d, p, row.names = FALSE, na = "")
   cat(sprintf("  %-34s %5d rows\n", f, nrow(d)))

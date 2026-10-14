@@ -30,6 +30,8 @@
 #                 (use this for a plain data update — the live app picks it up)
 #   --no-push     rebuild + deploy but do NOT commit/push to GitHub
 #   --no-build    skip the data rebuild (deploy/push what is already on disk)
+#   --all         stage EVERY change in the repo for the commit (the old behaviour).
+#                 By default only the app and the data it reads are staged (step 2)
 #   --help        show this list and exit
 #
 # ---------------------------------------------------------------------------
@@ -63,6 +65,7 @@ if ("--help" %in% .argv || "-h" %in% .argv) {
 DO_BUILD  <- !("--no-build"  %in% .argv)
 DO_PUSH   <- !("--no-push"   %in% .argv)
 DO_DEPLOY <- !("--no-deploy" %in% .argv)
+STAGE_ALL <-  ("--all"       %in% .argv)
 
 # ---- locate the repo root (this script lives at the repo root) --------------
 find_repo <- function() {
@@ -123,7 +126,24 @@ if (DO_PUSH) {
     .die("git is not installed. Install it from https://git-scm.com and re-run, ",
          "or use --no-push to skip this step.")
   .step("2/3  Committing + pushing to GitHub …")
-  invisible(git("add", "-A"))
+  if (STAGE_ALL) {
+    invisible(git("add", "-A"))
+  } else {
+    # Stage the app and what it reads from GitHub (DEPLOY.md, "Where the data
+    # comes from"), plus the two inputs build_data.R reads. Everything else in the
+    # repo (documents, paper folders, PDFs, drafts) stays unstaged, so a data
+    # refresh cannot publish unrelated work in progress. --all restores the old
+    # behaviour.
+    stage_paths <- c("__ShinyApp",
+                     grep("^__merging_", list.files(REPO), value = TRUE),
+                     "_keys", "__Public", "____EvoM1_TraitTable", "__ReadMe.xlsx")
+    stage_paths <- stage_paths[file.exists(file.path(REPO, stage_paths))]
+    invisible(git("add", "--", shQuote(stage_paths)))
+    left <- sum(substr(git("status", "--porcelain"), 2, 2) != " ")  # not in the index
+    if (left > 0)
+      .warn(left, " other changed file(s) were NOT staged (they are not data the app ",
+            "reads). Commit them yourself, or re-run with --all to include them.")
+  }
   staged <- git("diff", "--cached", "--quiet")               # exit 1 if changes
   if (!is.null(attr(staged, "status")) && attr(staged, "status") != 0) {
     msg <- paste0("Refresh Shiny app data ", format(Sys.time(), "%Y-%m-%d %H:%M"))

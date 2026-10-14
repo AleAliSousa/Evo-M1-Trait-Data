@@ -1,0 +1,13 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species_as_published,species as published,,,,info,C57BL/6 mice,BallesterosYáñez_etal_2006_Figure3C,"Printed species/common name retained verbatim; for mouse items from Experimental procedures p.404, C57BL/6 mice. Resolve only through collection species keys downstream.",Publication and frozen snapshot; see item README
+area_as_published,area as published,,,,info,C57BL/6 mice,BallesterosYáñez_etal_2006_Figure3C,,Publication and frozen snapshot; see item README
+analysis_dimension,analysis dimension,,,,info,C57BL/6 mice,BallesterosYáñez_etal_2006_Figure3C,,Publication and frozen snapshot; see item README
+total_basal_spines_estimated,total basal spines estimated,basal dendritic tree,Count.spines,estimated average total,primary,C57BL/6 mice,BallesterosYáñez_etal_2006_Figure3C,Exact printed labels; not directly counted whole neurons. Do not multiply labels by 1000: only the axis is scaled.,Publication and frozen snapshot; see item README
+n_individuals,n individuals,,,,info,C57BL/6 mice,BallesterosYáñez_etal_2006_Figure3C,,Publication and frozen snapshot; see item README
+hemisphere,hemisphere,,,,info,C57BL/6 mice,BallesterosYáñez_etal_2006_Figure3C,,Publication and frozen snapshot; see item README
+cortical_layer,cortical layer,,,,info,C57BL/6 mice,BallesterosYáñez_etal_2006_Figure3C,,Publication and frozen snapshot; see item README
+data_role,data role,,,,info,C57BL/6 mice,BallesterosYáñez_etal_2006_Figure3C,,Publication and frozen snapshot; see item README
+method,method,,,,info,C57BL/6 mice,BallesterosYáñez_etal_2006_Figure3C,,Publication and frozen snapshot; see item README
+value_basis,value basis,,,,info,C57BL/6 mice,BallesterosYáñez_etal_2006_Figure3C,,Publication and frozen snapshot; see item README
+source_locus,source locus,,,,info,C57BL/6 mice,BallesterosYáñez_etal_2006_Figure3C,,Publication and frozen snapshot; see item README
+Method:observation_level,Published observation level and dependencies,,,,method,C57BL/6 mice,BallesterosYáñez_etal_2006_Figure3C,"Rows are group/region/parameter or literature-value summaries, never independent species replicates; do not merge secondary values or average 2-D and 3-D methods.",Methods and Results; see README

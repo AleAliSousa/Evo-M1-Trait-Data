@@ -35,6 +35,20 @@ Each maps a collection's raw labels to the hub; it never references the other te
 
 A paper's species name → look up in its team's `species_key.csv` → `accepted_name` → `species_reference.csv` (taxonomy, NCBI taxid). A paper's structure label → its team's `anatomy_key.csv` → `standardized_term` → `anatomy_reference.csv`. Adding a paper = adding rows to its team's key (and any new species/structures to the shared reference). Adding a team = a new subfolder.
 
+## Cross-domain structure keys (added 2026-10-07, all rows `drafted`)
+
+Started for the Finder's Coverage tab (`__Finder/README.md`); usable by any merge.
+
+- **`anatomy_crosswalk.csv`** — one row per concept × domain × term (domains: `volumes`, `cellcounts`,
+  `cortical_areas`, `CMR`, `GLI`, `cortical_layers`). `relation` says how the term relates to the concept
+  (`same`, `contains`, `part_of`, `overlaps`, …); `link_class` is `direct` or `proxy`; `boundary_basis`
+  names how the term's boundary was drawn. A first step on follow-up (3) below.
+- **`structure_boundary_basis.csv`** — one row per paper × column, in the pattern of `brain_size_basis.csv`:
+  dimension (2D surface / 3D volume / rate / index), boundary basis, source role, and what must never be
+  pooled with it. Separates the four Smaers products (2017 Brodmann surfaces; 2017 compiled volumes;
+  2011 whole-lobe volumes; 2011/2017 section-block prefrontal and frontal-motor volumes).
+- **`coverage_targets.csv`** — named acquisition targets (`planned`) and unsourced gaps (`wanted`).
+
 ## Provenance & follow-ups
 
 Built from `__merging_cellcounts/` (`cellcounts_source_species_ids.csv`, `standardized_term_cellcounts.csv`), `Stephan_temp_to_organize/csvs/Species_Codes.csv`, the harvested Stephan name variants, and the Baron 1983/1987 MDD crosswalks.

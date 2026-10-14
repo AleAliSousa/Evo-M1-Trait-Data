@@ -1,9 +1,9 @@
 # The public/private boundary
 
 **Canonical definition of what belongs in which of the two repositories, updated 2026-09-05.**
-`__COMPARISON_MOVED.md` (here) and `README__comparison_migration.md` (private) record *how* the split
-happened on 2026-08-19; this file defines *where things go from now on*. Where they disagree, this
-file wins.
+Section 7 (here) and `README__comparison_migration.md` (private) record *how* the split
+happened on 2026-08-19; sections 1–6 define *where things go from now on*. Where they disagree,
+sections 1–6 win.
 
 **2026-09-05 rule change: every check now lives in the restricted repo, regardless of whether its
 inputs are public.** The earlier rule sent an all-public-input check beside what it audits, in the
@@ -174,11 +174,95 @@ These are live ambiguities, not rules. Each needs a decision; none should be res
   full notes, and the pre-split archive live in the private repo's `specimen_registry/`. The public
   `SPECIMEN_INFORMATION_BOUNDARY.md` and `split_manifest_2026-08-19.csv` record the per-file split.
 
+## 7. History of the split
+
+*A migration record, not a rule book. Sections 1–6 define where a new file belongs; where this
+section disagrees with them, they win. This section was the standalone file
+`__COMPARISON_MOVED.md` until it was merged here on 2026-10-08; its git history is under that name.*
+
+**2026-08-19.** Every `<Paper>/comparison/` folder was moved out of this repository into the private
+companion repo **`Evo-M1-Trait-Data-restricted`** — note the singular *Trait*; on this machine it sits
+at `…/OneDrive-AllenInstitute/Evo-M1-Trait-Data-restricted`, one level above this repo's `Species/`
+parent — under `restricted_checks/<Paper>/comparison/`. 43 folders, 214 files.
+
+**Why.** This repository is public. The comparison folders held working QA material that was never
+meant to be published: hand-digitised copies of other people's printed tables, author-supplied
+spreadsheets, and in a few cases unpublished data belonging to other researchers.
+
+**What this repo keeps.** The build chain is complete: frozen source → `.R` → analysis CSV →
+DOI-coded public TSV → `definitions.csv` → README. Each paper's README still states what its audit
+found (for example "verified against the comparison CSV: 0 value mismatches"); the script and report
+that produced that statement now live in the private repo.
+
+The post-migration dependency audit found three aggregate/check scripts that had treated comparison copies
+as build inputs. They now read the equivalent canonical public tables instead:
+`__flow_comparison/Seymour_Boyer_flow_combined.R` reads
+`Boyer_Harrington_2019/Boyer_Harrington_2019_SOMTableS6.csv`, and
+`__energetics_comparison/energetics_comparison.R` reads
+`Kaufman__2004/Kaufman__2004_TableA15.csv`. In addition,
+`__energetics_comparison/heiss_wholebrain_check.R` now reads the published whole-brain benchmark
+directly from `Karbowski__2007/Karbowski__2007_TableS2.csv`. The two output-producing scripts were
+run after the change and reproduced their prior outputs byte-for-byte; the console-only Heiss check
+reproduced the same 0.31 µmol/g/min and 428.55 µmol/min benchmark values. Remaining mentions of the
+old paths are historical README/code comments or private-audit pointers, not public build reads.
+
+**Where to look for the evidence.** `Evo-M1-Trait-Data-restricted/README__comparison_migration.md`
+explains how the audits run now (`_paths.R`, `EVOM1_REPO`), and `MIGRATED_INDEX.csv` there lists all
+214 moved files with their SHA-256.
+
+**History.** 195 of the 216 files had already been committed here, so they remain reachable in this
+repository's git history; the move only keeps them out of future commits. Whether to rewrite history
+is an open decision, recorded in the private repo's migration README.
+
+Two repository-level leftovers were found outside the paper `comparison/` folders. The obsolete
+`_tools/mirror_new_comparisons.py` sandbox mirror was removed because its canonical R checks are in
+the private repo. `_checks/check_Zilles_Rehkämper_1988_provenance.R` and its generated report depend
+on the restricted comparison CSVs; they moved together to
+`restricted_checks/_cross_table/Zilles_Rehkämper_1988_provenance/` and were removed here.
+*(Retired in the private repo on 2026-08-20. What the audit established — that a `Pongo` value in a
+pre-1988 formatted CSV traces back to Zilles & Rehkämper 1988 — now lives in
+`Zilles_Rehkämper_1988/Zilles_Rehkämper_1988_Table12-2.README.md`, so no paper README points at
+the deleted report.)*
+
+**Restricted *source* files, not just checks.** A few sources cannot live here either — data another
+researcher supplied privately. Those sit in the private repo under `unpublished_data/`, and the build
+that needs one reaches it through **`_helpers/restricted_data.R`** (`evom1_restricted_file(...)`), which
+resolves the private repo from `EVOM1_RESTRICTED` or the default layout and stops with an explanatory
+message if it is not mounted. Current cases: Carol MacLeod's neocortex workbooks, and the Dos Santos
+et al. 2020 authors' corrected microglia spreadsheet (`DosSantos_etal_2020_unpublished.R` reads it
+from there; the audit that used it moved to the private repo's `restricted_checks/_cross_table/`).
+
+### 2026-09-05 addendum: repair after a manual move, and a boundary-rule change
+
+The standalone record `__COMPARISON_MOVED.md` (now this section), `____TODO/`, the four public
+specimen notes under `_keys/specimen_crosswalk/`, and three top-level cross-publication checks
+(`__cerebellum_protocol_comparison`, `__energetics_comparison`, `__flow_comparison`) were moved by
+hand into `Evo-M1-Trait-Data-restricted`, alongside a correct move/rename of
+`____Sensory_audiovisual` to `unpublished_data/____Unpublished__Sensory_audiovisual/`. That record,
+`____TODO/`, and the public specimen notes have been moved back here, since none of them are checks.
+Separately, the user changed the check-placement rule: **every check now lives in the restricted
+repo regardless of whether its inputs are public** (see the rule-change note at the top of this file
+and section 3). Under that rule the three cross-publication checks above stay in the restricted repo
+(their path resolution was broken by the move and has been fixed there), and five more public
+`comparison/` folders — `Heffner_Heffner_1992_a`, `Heffner_etal_2020`, `Koay_etal_1998`,
+`Kirk_Kay_2004`, `Veilleux_Kirk_2014` — moved into `restricted_checks/` alongside them. Two of those
+needed live-code fixes rather than a plain move: `Heffner_Heffner_1992_a`'s comparison script was
+rewired to resolve the public repo via `_paths.R` and the restricted input via its new
+`unpublished_data/____Unpublished__Sensory_audiovisual/` path; `Heffner_etal_2020_Figure3_mirror.py`
+had its restricted-input check extracted into a new standalone script in the restricted repo,
+leaving only the public build behind. A genuine data-loss bug was also found and fixed in passing:
+12 real (non-placeholder) files were left behind under a stale
+`unpublished_data/____Sensory_audiovisual/` during the rename to
+`____Unpublished__Sensory_audiovisual/`; they were recovered and moved into the correctly-named
+tree. One further boundary item was flagged but not resolved:
+`Baron_etal_1996_overlap_taxonomy_audit.R` (public repo) writes both a build-relevant crosswalk CSV
+and an audit-report CSV from one script — see section 6, item 1.
+
 ---
 
 ## Where to look next
 
-- `__COMPARISON_MOVED.md` — what moved on 2026-08-19, and the git-history caveat
+- Section 7 above — what moved on 2026-08-19, and the git-history caveat
 - `_skills/build-dataset-item/references/__HOWTO_build_a_dataset_file.md` — the per-folder build procedure
 - `SOURCE_DISPOSITION_REGISTER.md` — which sources are skipped, superseded, or excluded, and why
 - `_helpers/restricted_data.R` — the only sanctioned read across the boundary

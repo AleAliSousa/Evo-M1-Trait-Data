@@ -29,6 +29,10 @@ That's it. A window opens and shows its progress, then says `✅ Finished`.
 1. **Rebuild** the derived data (`__ShinyApp/build_data.R`).
 2. **Push** the changes to GitHub — this is what actually updates the **live
    data**, because the app reads its data straight from GitHub at runtime.
+   Only the app and the data it reads are staged (`__ShinyApp/`, `__merging_*/`,
+   `_keys/`, `__Public/`, plus `____EvoM1_TraitTable/` and `__ReadMe.xlsx`, which
+   `build_data.R` reads). Any other change in the repo is left for you to commit,
+   and the updater reports how many files it left out.
 3. **Deploy** the app to shinyapps.io (only strictly needed when the app code or
    its offline fallback data changes; done every run to be safe).
 
@@ -42,6 +46,7 @@ launchers if you run them from a terminal):
 | `--no-deploy` | Just refresh the data on GitHub; skip the shinyapps.io upload. Good for a plain data update — the live app picks it up automatically. |
 | `--no-push` | Rebuild + deploy, but don't commit/push to GitHub. |
 | `--no-build` | Skip the data rebuild; push/deploy what's already on disk. |
+| `--all` | Stage every change in the repo for the commit, as the updater did before. Use it when you do want everything pushed. |
 | `--help` | Show the built-in help. |
 
 Example — refresh the live data without re-uploading the app:

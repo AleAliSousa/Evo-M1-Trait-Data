@@ -45,7 +45,7 @@ library(readxl)
 # Table 5 prints COMMON NAMES ONLY. The Jacobs2018 key rows carry each printed common name to
 # its binomial - from Table 3 of the same paper where the species appears there, otherwise the
 # standard binomial for that common name. Nothing is mapped inside this script (sec 5).
-TOKEN <- "Jacobs2018"
+TOKEN <- "Jacobs_etal_2018"
 ref <- if (!is.na(dataset_root))
   read.csv(file.path(dataset_root, "_keys", "species_reference.csv"),
            stringsAsFactors = FALSE)$accepted_name else character(0)

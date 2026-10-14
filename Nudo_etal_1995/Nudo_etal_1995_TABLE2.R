@@ -55,7 +55,7 @@ library(readxl)
 # ... "see Table 1"). Those initials are resolved through the SAME species key, as Nudo1995
 # variant_name rows - no expansion is hand-coded here (sec 5). The printed binomial for each
 # token is in TABLE 1.
-TOKEN <- "Nudo1995"
+TOKEN <- "Nudo_etal_1995"
 ref <- if (!is.na(dataset_root))
   read.csv(file.path(dataset_root, "_keys", "species_reference.csv"),
            stringsAsFactors = FALSE)$accepted_name else character(0)

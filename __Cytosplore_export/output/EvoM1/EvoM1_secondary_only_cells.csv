@@ -1,0 +1,764 @@
+species_sci,variable,domain,compilations,roles,primary_available_same_group,primary_variables_same_group,declared_relationships,note
+Heterocephalus glaber,Amygdala_Mass (g),brain structure & size,Kverkova_etal_2018,derived,False,,,"Brain_Mass.g(0.44) x Amygdala_p.C.Brain(0.0289) -- volume-fraction of brain applied to brain MASS as a density-homogeneity approximation, not an independently measured part mass"
+Canis latrans,Brain_Mass_mass_or_volume (g),brain structure & size,Burger_etal_2019,secondary,True,Brain_Mass_measured (g); Total_brain_net_volume_Vol.mm3,,primary_used=False
+Chlorocebus sabaeus,Brain_Mass_mass_or_volume (g),brain structure & size,Burger_etal_2019; DeCasien (team),secondary,True,Endocranial_volume (mL),,primary_used=False
+Felis catus,Brain_Mass_mass_or_volume (g),brain structure & size,Burger_etal_2019,secondary,True,Brain_Mass_excl_olfactory_bulb (g); Brain_Mass_measured (g); Total_brain_net_volume_Vol.mm3,,primary_used=False
+Otolemur garnettii,Brain_Mass_mass_or_volume (g),brain structure & size,Burger_etal_2019,secondary,True,Brain_Mass_excl_olfactory_bulb (g); Brain_Mass_measured (g); Endocranial_volume (mL),,primary_used=False
+Papio anubis,Brain_Mass_mass_or_volume (g),brain structure & size,Burger_etal_2019; DeCasien (team),secondary,True,Brain_Mass_measured (g); Endocranial_volume (mL); Total_brain_net_volume_Vol.mm3,,primary_used=False
+Sus scrofa,Brain_Mass_measured (g),brain structure & size,Lewitus (team),secondary,True,Brain_Mass_excl_olfactory_bulb (g); Total_brain_net_volume_Vol.mm3,,primary_used=False
+Heterocephalus glaber,Brain_size_sum_of_structures (g),brain structure & size,Kverkova_etal_2018,secondary,True,Brain_Mass_excl_olfactory_bulb (g); Brain_Mass_mass_or_volume (g); Brain_Mass_measured (g); WholeBrainOlfactoryBulb_Mass.g,,primary_used=False
+Papio anubis,Cerebellum_Mass (g),brain structure & size,Latimer__1956,secondary,False,,,secondary citation: Riese & Riese (1952)
+Aotus nancymaae,Endocranial_volume (mL),brain structure & size,Powell_etal_2017,secondary,True,Brain_Mass_measured (g),,primary_used=False
+Homo sapiens,Endocranial_volume (mL),brain structure & size,Seymour (team),secondary,True,Brain_Mass_excl_olfactory_bulb (g); Brain_Mass_mass_or_volume (g); Brain_Mass_measured (g); Endocranial_volume_female (mL); Total_brain_net_volume_Vol.mm3,,primary_used=False
+Gorilla gorilla gorilla,Endocranial_volume_female (mL),brain structure & size,Powell_etal_2017,secondary,True,Brain_Mass_mass_or_volume (g); Brain_Mass_measured (g); Endocranial_volume (mL); Total_brain_net_volume_Vol.mm3,,primary_used=False
+Macaca nemestrina,Endocranial_volume_female (mL),brain structure & size,Powell_etal_2017,secondary,True,Brain_Mass_mass_or_volume (g); Endocranial_volume (mL),,primary_used=False
+Pan troglodytes,Endocranial_volume_female (mL),brain structure & size,Powell_etal_2017,secondary,True,Brain_Mass_mass_or_volume (g); Brain_Mass_measured (g); Endocranial_volume (mL); Total_brain_net_volume_Vol.mm3,,primary_used=False
+Papio anubis,Endocranial_volume_female (mL),brain structure & size,Powell_etal_2017,secondary,True,Brain_Mass_measured (g); Endocranial_volume (mL); Total_brain_net_volume_Vol.mm3,,primary_used=False
+Saimiri boliviensis boliviensis,Endocranial_volume_female (mL),brain structure & size,Powell_etal_2017,secondary,True,Brain_Mass_mass_or_volume (g); Brain_Mass_measured (g),,primary_used=False
+Sapajus apella,Endocranial_volume_female (mL),brain structure & size,Heldstab_etal_2016,secondary,True,Brain_Mass_excl_olfactory_bulb (g); Brain_Mass_mass_or_volume (g); Total_brain_net_volume_Vol.mm3,,primary_used=False
+Heterocephalus glaber,EntorhinalCortex_Mass (g),brain structure & size,Kverkova_etal_2018,derived,False,,,"Brain_Mass.g(0.44) x Entorhinal cortex_p.C.Brain(0.0345) -- volume-fraction of brain applied to brain MASS as a density-homogeneity approximation, not an independently measured part mass"
+Heterocephalus glaber,Hippocampus_Mass (g),brain structure & size,Kverkova_etal_2018,derived,False,,,"Brain_Mass.g(0.44) x Hippocampus_p.C.Brain(0.076) -- volume-fraction of brain applied to brain MASS as a density-homogeneity approximation, not an independently measured part mass"
+Heterocephalus glaber,Hypothalamus_Mass (g),brain structure & size,Kverkova_etal_2018,derived,False,,,"Brain_Mass.g(0.44) x Hypothalamus_p.C.Brain(0.0404) -- volume-fraction of brain applied to brain MASS as a density-homogeneity approximation, not an independently measured part mass"
+Heterocephalus glaber,Medulla_Mass (g),brain structure & size,Kverkova_etal_2018,derived,False,,,"Brain_Mass.g(0.44) x Medulla oblongata_p.C.Brain(0.1131) -- volume-fraction of brain applied to brain MASS as a density-homogeneity approximation, not an independently measured part mass"
+Heterocephalus glaber,Neocortex_Mass (g),brain structure & size,Kverkova_etal_2018,derived,False,,,"Brain_Mass.g(0.44) x Neocortex_p.C.Brain(0.2416) -- volume-fraction of brain applied to brain MASS as a density-homogeneity approximation, not an independently measured part mass"
+Heterocephalus glaber,OlfactoryCortices_Mass (g),brain structure & size,Kverkova_etal_2018,derived,False,,,"Brain_Mass.g(0.44) x Olfactory cortices_p.C.Brain(0.094) -- volume-fraction of brain applied to brain MASS as a density-homogeneity approximation, not an independently measured part mass"
+Heterocephalus glaber,Septum_Mass (g),brain structure & size,Kverkova_etal_2018,derived,False,,,"Brain_Mass.g(0.44) x Septum_p.C.Brain(0.0098) -- volume-fraction of brain applied to brain MASS as a density-homogeneity approximation, not an independently measured part mass"
+Heterocephalus glaber,Striatum_Mass (g),brain structure & size,Kverkova_etal_2018,derived,False,,,"Brain_Mass.g(0.44) x Striatum_p.C.Brain(0.0693) -- volume-fraction of brain applied to brain MASS as a density-homogeneity approximation, not an independently measured part mass"
+Heterocephalus glaber,Tectum_Mass (g),brain structure & size,Kverkova_etal_2018,derived,False,,,"Brain_Mass.g(0.44) x Tectum_p.C.Brain(0.0232) -- volume-fraction of brain applied to brain MASS as a density-homogeneity approximation, not an independently measured part mass"
+Heterocephalus glaber,Tegmentum_Mass (g),brain structure & size,Kverkova_etal_2018,derived,False,,,"Brain_Mass.g(0.44) x Tegmentum_p.C.Brain(0.0462) -- volume-fraction of brain applied to brain MASS as a density-homogeneity approximation, not an independently measured part mass"
+Heterocephalus glaber,Thalamus_Mass (g),brain structure & size,Kverkova_etal_2018,derived,False,,,"Brain_Mass.g(0.44) x Thalamus_p.C.Brain(0.0566) -- volume-fraction of brain applied to brain MASS as a density-homogeneity approximation, not an independently measured part mass"
+Felis catus,Amygdala_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 2 primary studies
+Homo sapiens,Amygdala_CMRgl (umol/100g/min),metabolism,Heiss_etal_2004; Karbowski__2007,secondary,False,,,compilation resolved to 2 primary studies
+Macaca mulatta,Amygdala_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 3 primary studies
+Mus musculus,Amygdala_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Oryctolagus cuniculus,Amygdala_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Rattus norvegicus,Amygdala_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 5 primary studies
+Homo sapiens,Auditory_cortex_CMRgl (umol/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 4 primary studies
+Mus musculus,Auditory_cortex_CMRgl (umol/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 5 primary studies
+Rattus norvegicus,Auditory_cortex_CMRgl (umol/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 31 primary studies
+Homo sapiens,Basal_forebrain_CMRgl (umol/100g/min),metabolism,Heiss_etal_2004,secondary,False,,,compilation resolved to 1 primary studies
+Homo sapiens,Basal_ganglia_CBF (mL/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 4 primary studies
+Macaca mulatta,Basal_ganglia_CBF (mL/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 1 primary studies
+Rattus norvegicus,Basal_ganglia_CBF (mL/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 2 primary studies
+Felis catus,Basal_ganglia_CMRgl (umol/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 2 primary studies
+Homo sapiens,Basal_ganglia_CMRgl (umol/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 30 primary studies
+Macaca mulatta,Basal_ganglia_CMRgl (umol/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 5 primary studies
+Mus musculus,Basal_ganglia_CMRgl (umol/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 4 primary studies
+Rattus norvegicus,Basal_ganglia_CMRgl (umol/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 39 primary studies
+Homo sapiens,Basal_ganglia_CMRO2 (umol/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 11 primary studies
+Macaca mulatta,Basal_ganglia_CMRO2 (umol/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 1 primary studies
+Mus musculus,Basal_ganglia_CMRO2 (umol/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 1 primary studies
+Rattus norvegicus,Basal_ganglia_CMRO2 (umol/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 1 primary studies
+Callithrix jacchus,BMR_massspecific (mL O2/h/g),metabolism,Boyer (team); Genoud_etal_2018; Isler_etal_2008; Lewitus (team),secondary,False,,,primary_used=FALSE
+Canis latrans,BMR_massspecific (mL O2/h/g),metabolism,Genoud_etal_2018; Lewitus (team),secondary,False,,,primary_used=FALSE
+Dasypus novemcinctus,BMR_massspecific (mL O2/h/g),metabolism,Genoud_etal_2018; Lewitus (team),secondary,False,,,primary_used=FALSE
+Felis catus,BMR_massspecific (mL O2/h/g),metabolism,Genoud_etal_2018,secondary,False,,,primary_used=FALSE
+Heterocephalus glaber,BMR_massspecific (mL O2/h/g),metabolism,Genoud_etal_2018,secondary,False,,,primary_used=FALSE
+Homo sapiens,BMR_massspecific (mL O2/h/g),metabolism,Boyer (team); Genoud_etal_2018; Isler_etal_2008,secondary,False,,,primary_used=FALSE
+Macaca mulatta,BMR_massspecific (mL O2/h/g),metabolism,Genoud_etal_2018; Isler_etal_2008; Lewitus (team),secondary,False,,,primary_used=FALSE
+Microcebus murinus,BMR_massspecific (mL O2/h/g),metabolism,Genoud_etal_2018; Isler_etal_2008; Lewitus (team),secondary,False,,,primary_used=FALSE
+Monodelphis domestica,BMR_massspecific (mL O2/h/g),metabolism,Genoud_etal_2018,secondary,False,,,primary_used=FALSE
+Mus musculus,BMR_massspecific (mL O2/h/g),metabolism,Genoud_etal_2018; Lewitus (team),secondary,False,,,primary_used=FALSE
+Oryctolagus cuniculus,BMR_massspecific (mL O2/h/g),metabolism,Genoud_etal_2018,secondary,False,,,primary_used=FALSE
+Otolemur garnettii,BMR_massspecific (mL O2/h/g),metabolism,Genoud_etal_2018; Isler_etal_2008,secondary,False,,,primary_used=FALSE
+Pan troglodytes,BMR_massspecific (mL O2/h/g),metabolism,Boyer (team); Genoud_etal_2018; Isler_etal_2008; Lewitus (team),secondary,False,,,primary_used=FALSE
+Papio anubis,BMR_massspecific (mL O2/h/g),metabolism,Boyer (team); Genoud_etal_2018; Isler_etal_2008,secondary,False,,,primary_used=FALSE
+Rattus norvegicus,BMR_massspecific (mL O2/h/g),metabolism,Genoud_etal_2018,secondary,False,,,primary_used=FALSE
+Saimiri boliviensis boliviensis,BMR_massspecific (mL O2/h/g),metabolism,Genoud_etal_2018,secondary,False,,,primary_used=FALSE
+Tupaia belangeri,BMR_massspecific (mL O2/h/g),metabolism,Genoud_etal_2018,secondary,False,,,primary_used=FALSE
+Urocitellus parryii,BMR_massspecific (mL O2/h/g),metabolism,Genoud_etal_2018,secondary,False,,,primary_used=FALSE
+Felis catus,BMR_wholeanimal (mL O2/h),metabolism,Genoud_etal_2018,secondary,False,,,primary_used=FALSE
+Heterocephalus glaber,BMR_wholeanimal (mL O2/h),metabolism,Genoud_etal_2018,secondary,False,,,primary_used=FALSE
+Homo sapiens,BMR_wholeanimal (mL O2/h),metabolism,Boyer (team); Genoud_etal_2018; Isler_etal_2008,secondary,False,,,primary_used=FALSE
+Monodelphis domestica,BMR_wholeanimal (mL O2/h),metabolism,Genoud_etal_2018,secondary,False,,,primary_used=FALSE
+Oryctolagus cuniculus,BMR_wholeanimal (mL O2/h),metabolism,Genoud_etal_2018,secondary,False,,,primary_used=FALSE
+Papio anubis,BMR_wholeanimal (mL O2/h),metabolism,Boyer (team); Genoud_etal_2018; Isler_etal_2008,secondary,False,,,primary_used=FALSE
+Rattus norvegicus,BMR_wholeanimal (mL O2/h),metabolism,Genoud_etal_2018,secondary,False,,,primary_used=FALSE
+Urocitellus parryii,BMR_wholeanimal (mL O2/h),metabolism,Genoud_etal_2018,secondary,False,,,primary_used=FALSE
+Felis catus,Brain_stem_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 2 primary studies
+Macaca mulatta,Brain_stem_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 2 primary studies
+Mus musculus,Brain_stem_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 2 primary studies
+Oryctolagus cuniculus,Brain_stem_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Rattus norvegicus,Brain_stem_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 5 primary studies
+Homo sapiens,Capsula_interna_CMRgl (umol/100g/min),metabolism,Heiss_etal_2004,secondary,False,,,compilation resolved to 1 primary studies
+Felis catus,Caudate_nucleus_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 3 primary studies
+Homo sapiens,Caudate_nucleus_CMRgl (umol/100g/min),metabolism,Heiss_etal_2004; Karbowski__2007,secondary,False,,,compilation resolved to 4 primary studies
+Macaca mulatta,Caudate_nucleus_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 3 primary studies
+Mus musculus,Caudate_nucleus_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Papio anubis,Caudate_nucleus_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Rattus norvegicus,Caudate_nucleus_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 6 primary studies
+Homo sapiens,Centrum_semiovale_CMRgl (umol/100g/min),metabolism,Heiss_etal_2004,secondary,False,,,compilation resolved to 1 primary studies
+Homo sapiens,Cerebellar_cortex_CMRgl (umol/100g/min),metabolism,Heiss_etal_2004,secondary,False,,,compilation resolved to 1 primary studies
+Homo sapiens,Cerebellum_CBF (mL/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 5 primary studies
+Macaca mulatta,Cerebellum_CBF (mL/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 1 primary studies
+Rattus norvegicus,Cerebellum_CBF (mL/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 2 primary studies
+Felis catus,Cerebellum_CMRgl (umol/100g/min),metabolism,Karbowski__2007; Kaufman__2004,secondary,False,,,compilation resolved to 3 primary studies
+Homo sapiens,Cerebellum_CMRgl (umol/100g/min),metabolism,Karbowski__2007; Kaufman__2004,secondary,False,,,compilation resolved to 24 primary studies
+Macaca mulatta,Cerebellum_CMRgl (umol/100g/min),metabolism,Karbowski__2007; Kaufman__2004,secondary,False,,,compilation resolved to 6 primary studies
+Mus musculus,Cerebellum_CMRgl (umol/100g/min),metabolism,Karbowski__2007; Kaufman__2004,secondary,False,,,compilation resolved to 4 primary studies
+Papio anubis,Cerebellum_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Rattus norvegicus,Cerebellum_CMRgl (umol/100g/min),metabolism,Karbowski__2007; Kaufman__2004,secondary,False,,,compilation resolved to 30 primary studies
+Homo sapiens,Cerebellum_CMRO2 (umol/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 8 primary studies
+Rattus norvegicus,Cerebellum_CMRO2 (umol/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 1 primary studies
+Felis catus,Cingulate_cortex_CMRgl (umol/100g/min),metabolism,Karbowski__2007; Kaufman__2004,secondary,False,,,compilation resolved to 2 primary studies
+Homo sapiens,Cingulate_cortex_CMRgl (umol/100g/min),metabolism,Karbowski__2007; Kaufman__2004,secondary,False,,,compilation resolved to 15 primary studies
+Macaca mulatta,Cingulate_cortex_CMRgl (umol/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 5 primary studies
+Mus musculus,Cingulate_cortex_CMRgl (umol/100g/min),metabolism,Karbowski__2007; Kaufman__2004,secondary,False,,,compilation resolved to 3 primary studies
+Papio anubis,Cingulate_cortex_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Rattus norvegicus,Cingulate_cortex_CMRgl (umol/100g/min),metabolism,Karbowski__2007; Kaufman__2004,secondary,False,,,compilation resolved to 32 primary studies
+Homo sapiens,Colliculus_inferior_CMRgl (umol/100g/min),metabolism,Heiss_etal_2004,secondary,False,,,compilation resolved to 1 primary studies
+Homo sapiens,Colliculus_superior_CMRgl (umol/100g/min),metabolism,Heiss_etal_2004,secondary,False,,,compilation resolved to 1 primary studies
+Homo sapiens,Corpus_geniculatum_laterale_CMRgl (umol/100g/min),metabolism,Heiss_etal_2004,secondary,False,,,compilation resolved to 1 primary studies
+Homo sapiens,Corpus_geniculatum_mediale_CMRgl (umol/100g/min),metabolism,Heiss_etal_2004,secondary,False,,,compilation resolved to 1 primary studies
+Homo sapiens,Fossil_BGU (umol/min) - s4_volume,metabolism,Kochiyama_2018 x Heiss_2004 (s4),derived,False,,,cortical+cerebellar
+Homo sapiens,Fossil_BGU_Ratio_MH - s4_volume,metabolism,Kochiyama_2018 x Heiss_2004 (s4),derived,False,,,cortical+cerebellar
+Felis catus,Frontal_cortex_CMRgl (umol/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 1 primary studies
+Homo sapiens,Frontal_cortex_CMRgl (umol/100g/min),metabolism,Heiss_etal_2004; Karbowski__2007; Kaufman__2004,secondary,False,,,compilation resolved to 42 primary studies
+Macaca mulatta,Frontal_cortex_CMRgl (umol/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 5 primary studies
+Mus musculus,Frontal_cortex_CMRgl (umol/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 5 primary studies
+Rattus norvegicus,Frontal_cortex_CMRgl (umol/100g/min),metabolism,Karbowski__2007; Kaufman__2004,secondary,False,,,compilation resolved to 37 primary studies
+Homo sapiens,Frontal_cortex_CMRO2 (umol/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 17 primary studies
+Homo sapiens,Hippocampus_CBF (mL/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 2 primary studies
+Macaca mulatta,Hippocampus_CBF (mL/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 1 primary studies
+Rattus norvegicus,Hippocampus_CBF (mL/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 5 primary studies
+Felis catus,Hippocampus_CMRgl (umol/100g/min),metabolism,Karbowski__2007; Kaufman__2004,secondary,False,,,compilation resolved to 5 primary studies
+Homo sapiens,Hippocampus_CMRgl (umol/100g/min),metabolism,Heiss_etal_2004; Karbowski__2007; Kaufman__2004,secondary,False,,,compilation resolved to 11 primary studies
+Macaca mulatta,Hippocampus_CMRgl (umol/100g/min),metabolism,Karbowski__2007; Kaufman__2004,secondary,False,,,compilation resolved to 7 primary studies
+Mus musculus,Hippocampus_CMRgl (umol/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 5 primary studies
+Oryctolagus cuniculus,Hippocampus_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Papio anubis,Hippocampus_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Rattus norvegicus,Hippocampus_CMRgl (umol/100g/min),metabolism,Karbowski__2007; Kaufman__2004,secondary,False,,,compilation resolved to 47 primary studies
+Homo sapiens,Hippocampus_CMRO2 (umol/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 1 primary studies
+Rattus norvegicus,Hippocampus_CMRO2 (umol/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 1 primary studies
+Felis catus,Hypothalamus_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 2 primary studies
+Homo sapiens,Hypothalamus_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Macaca mulatta,Hypothalamus_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 3 primary studies
+Mus musculus,Hypothalamus_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 2 primary studies
+Oryctolagus cuniculus,Hypothalamus_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Rattus norvegicus,Hypothalamus_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 6 primary studies
+Homo sapiens,Insula_CMRgl (umol/100g/min),metabolism,Heiss_etal_2004,secondary,False,,,compilation resolved to 1 primary studies
+Homo sapiens,Neocortex_CBF (mL/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 10 primary studies
+Macaca mulatta,Neocortex_CBF (mL/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 1 primary studies
+Rattus norvegicus,Neocortex_CBF (mL/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 3 primary studies
+Felis catus,Neocortex_CMRgl (umol/100g/min),metabolism,Karbowski__2007; Kaufman__2004,secondary,False,,,compilation resolved to 6 primary studies
+Homo sapiens,Neocortex_CMRgl (umol/100g/min),metabolism,Heiss_etal_2004; Karbowski__2007; Kaufman__2004,secondary,False,,,compilation resolved to 50 primary studies
+Macaca mulatta,Neocortex_CMRgl (umol/100g/min),metabolism,Karbowski__2007; Kaufman__2004,secondary,False,,,compilation resolved to 7 primary studies
+Mus musculus,Neocortex_CMRgl (umol/100g/min),metabolism,Karbowski__2007; Kaufman__2004,secondary,False,,,compilation resolved to 8 primary studies
+Oryctolagus cuniculus,Neocortex_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 2 primary studies
+Papio anubis,Neocortex_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 2 primary studies
+Rattus norvegicus,Neocortex_CMRgl (umol/100g/min),metabolism,Karbowski__2007; Kaufman__2004,secondary,False,,,compilation resolved to 52 primary studies
+Homo sapiens,Neocortex_CMRO2 (umol/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 13 primary studies
+Rattus norvegicus,Neocortex_CMRO2 (umol/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 2 primary studies
+Homo sapiens,Nucleus_accumbens_CMRgl (umol/100g/min),metabolism,Heiss_etal_2004,secondary,False,,,compilation resolved to 1 primary studies
+Homo sapiens,Nucleus_dentatus_cerebelli_CMRgl (umol/100g/min),metabolism,Heiss_etal_2004,secondary,False,,,compilation resolved to 1 primary studies
+Homo sapiens,Nucleus_ruber_CMRgl (umol/100g/min),metabolism,Heiss_etal_2004,secondary,False,,,compilation resolved to 1 primary studies
+Homo sapiens,Nucleus_subthalamicus_CMRgl (umol/100g/min),metabolism,Heiss_etal_2004,secondary,False,,,compilation resolved to 1 primary studies
+Felis catus,Occipital_cortex_CMRgl (umol/100g/min),metabolism,Karbowski__2007; Kaufman__2004,secondary,False,,,compilation resolved to 2 primary studies
+Homo sapiens,Occipital_cortex_CMRgl (umol/100g/min),metabolism,Heiss_etal_2004; Karbowski__2007; Kaufman__2004,secondary,False,,,compilation resolved to 33 primary studies
+Macaca mulatta,Occipital_cortex_CMRgl (umol/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 5 primary studies
+Mus musculus,Occipital_cortex_CMRgl (umol/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 4 primary studies
+Papio anubis,Occipital_cortex_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Rattus norvegicus,Occipital_cortex_CMRgl (umol/100g/min),metabolism,Karbowski__2007; Kaufman__2004,secondary,False,,,compilation resolved to 35 primary studies
+Homo sapiens,Occipital_cortex_CMRO2 (umol/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 18 primary studies
+Felis catus,Pallidum_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 3 primary studies
+Homo sapiens,Pallidum_CMRgl (umol/100g/min),metabolism,Heiss_etal_2004,secondary,False,,,compilation resolved to 1 primary studies
+Macaca mulatta,Pallidum_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 3 primary studies
+Mus musculus,Pallidum_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Oryctolagus cuniculus,Pallidum_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Rattus norvegicus,Pallidum_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 6 primary studies
+Felis catus,Parietal_cortex_CMRgl (umol/100g/min),metabolism,Karbowski__2007; Kaufman__2004,secondary,False,,,compilation resolved to 2 primary studies
+Homo sapiens,Parietal_cortex_CMRgl (umol/100g/min),metabolism,Heiss_etal_2004; Karbowski__2007; Kaufman__2004,secondary,False,,,compilation resolved to 37 primary studies
+Macaca mulatta,Parietal_cortex_CMRgl (umol/100g/min),metabolism,Karbowski__2007; Kaufman__2004,secondary,False,,,compilation resolved to 2 primary studies
+Mus musculus,Parietal_cortex_CMRgl (umol/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 2 primary studies
+Oryctolagus cuniculus,Parietal_cortex_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Papio anubis,Parietal_cortex_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Rattus norvegicus,Parietal_cortex_CMRgl (umol/100g/min),metabolism,Karbowski__2007; Kaufman__2004,secondary,False,,,compilation resolved to 33 primary studies
+Homo sapiens,Parietal_cortex_CMRO2 (umol/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 15 primary studies
+Rattus norvegicus,Parietal_cortex_CMRO2 (umol/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 1 primary studies
+Homo sapiens,Prefrontal_cortex_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Macaca mulatta,Prefrontal_cortex_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Mus musculus,Prefrontal_cortex_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Papio anubis,Prefrontal_cortex_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Rattus norvegicus,Prefrontal_cortex_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 3 primary studies
+Homo sapiens,Putamen_CMRgl (umol/100g/min),metabolism,Heiss_etal_2004,secondary,False,,,compilation resolved to 1 primary studies
+Felis catus,Sensorimotor_cortex_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Homo sapiens,Sensorimotor_cortex_CMRgl (umol/100g/min),metabolism,Karbowski__2007; Kaufman__2004,secondary,False,,,compilation resolved to 11 primary studies
+Macaca mulatta,Sensorimotor_cortex_CMRgl (umol/100g/min),metabolism,Karbowski__2007; Kaufman__2004,secondary,False,,,compilation resolved to 4 primary studies
+Mus musculus,Sensorimotor_cortex_CMRgl (umol/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 5 primary studies
+Oryctolagus cuniculus,Sensorimotor_cortex_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Papio anubis,Sensorimotor_cortex_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Rattus norvegicus,Sensorimotor_cortex_CMRgl (umol/100g/min),metabolism,Karbowski__2007; Kaufman__2004,secondary,False,,,compilation resolved to 39 primary studies
+Homo sapiens,Sensorimotor_cortex_CMRO2 (umol/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 5 primary studies
+Felis catus,Septum_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 2 primary studies
+Macaca mulatta,Septum_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 3 primary studies
+Mus musculus,Septum_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 2 primary studies
+Oryctolagus cuniculus,Septum_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Rattus norvegicus,Septum_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 6 primary studies
+Felis catus,Substantia_nigra_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 3 primary studies
+Homo sapiens,Substantia_nigra_CMRgl (umol/100g/min),metabolism,Heiss_etal_2004; Karbowski__2007,secondary,False,,,compilation resolved to 2 primary studies
+Macaca mulatta,Substantia_nigra_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 3 primary studies
+Mus musculus,Substantia_nigra_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Oryctolagus cuniculus,Substantia_nigra_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Rattus norvegicus,Substantia_nigra_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 5 primary studies
+Felis catus,Temporal_cortex_CMRgl (umol/100g/min),metabolism,Karbowski__2007; Kaufman__2004,secondary,False,,,compilation resolved to 4 primary studies
+Homo sapiens,Temporal_cortex_CMRgl (umol/100g/min),metabolism,Heiss_etal_2004; Karbowski__2007; Kaufman__2004,secondary,False,,,compilation resolved to 40 primary studies
+Macaca mulatta,Temporal_cortex_CMRgl (umol/100g/min),metabolism,Karbowski__2007; Kaufman__2004,secondary,False,,,compilation resolved to 4 primary studies
+Mus musculus,Temporal_cortex_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Oryctolagus cuniculus,Temporal_cortex_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Papio anubis,Temporal_cortex_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Rattus norvegicus,Temporal_cortex_CMRgl (umol/100g/min),metabolism,Karbowski__2007; Kaufman__2004,secondary,False,,,compilation resolved to 9 primary studies
+Homo sapiens,Temporal_cortex_CMRO2 (umol/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 13 primary studies
+Homo sapiens,Thalamus_CBF (mL/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 8 primary studies
+Rattus norvegicus,Thalamus_CBF (mL/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 4 primary studies
+Felis catus,Thalamus_CMRgl (umol/100g/min),metabolism,Karbowski__2007; Kaufman__2004,secondary,False,,,compilation resolved to 5 primary studies
+Homo sapiens,Thalamus_CMRgl (umol/100g/min),metabolism,Karbowski__2007; Kaufman__2004,secondary,False,,,compilation resolved to 34 primary studies
+Macaca mulatta,Thalamus_CMRgl (umol/100g/min),metabolism,Karbowski__2007; Kaufman__2004,secondary,False,,,compilation resolved to 8 primary studies
+Mus musculus,Thalamus_CMRgl (umol/100g/min),metabolism,Karbowski__2007; Kaufman__2004,secondary,False,,,compilation resolved to 6 primary studies
+Oryctolagus cuniculus,Thalamus_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Papio anubis,Thalamus_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Rattus norvegicus,Thalamus_CMRgl (umol/100g/min),metabolism,Karbowski__2007; Kaufman__2004,secondary,False,,,compilation resolved to 48 primary studies
+Homo sapiens,Thalamus_CMRO2 (umol/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 9 primary studies
+Rattus norvegicus,Thalamus_CMRO2 (umol/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 1 primary studies
+Homo sapiens,Thalamus_medial_nucleus_CMRgl (umol/100g/min),metabolism,Heiss_etal_2004,secondary,False,,,compilation resolved to 1 primary studies
+Homo sapiens,Vermis_CMRgl (umol/100g/min),metabolism,Heiss_etal_2004,secondary,False,,,compilation resolved to 1 primary studies
+Felis catus,Visual_cortex_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 3 primary studies
+Homo sapiens,Visual_cortex_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 2 primary studies
+Macaca mulatta,Visual_cortex_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 2 primary studies
+Mus musculus,Visual_cortex_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Oryctolagus cuniculus,Visual_cortex_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Rattus norvegicus,Visual_cortex_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 4 primary studies
+Homo sapiens,White_matter_CBF (mL/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 11 primary studies
+Rattus norvegicus,White_matter_CBF (mL/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 1 primary studies
+Felis catus,White_matter_CMRgl (umol/100g/min),metabolism,Karbowski__2007; Kaufman__2004,secondary,False,,,compilation resolved to 3 primary studies
+Homo sapiens,White_matter_CMRgl (umol/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 13 primary studies
+Macaca mulatta,White_matter_CMRgl (umol/100g/min),metabolism,Karbowski__2007; Kaufman__2004,secondary,False,,,compilation resolved to 5 primary studies
+Mus musculus,White_matter_CMRgl (umol/100g/min),metabolism,Karbowski__2007; Kaufman__2004,secondary,False,,,compilation resolved to 6 primary studies
+Oryctolagus cuniculus,White_matter_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Rattus norvegicus,White_matter_CMRgl (umol/100g/min),metabolism,Karbowski__2007; Kaufman__2004,secondary,False,,,compilation resolved to 37 primary studies
+Homo sapiens,White_matter_CMRO2 (umol/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 10 primary studies
+Rattus norvegicus,White_matter_CMRO2 (umol/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 1 primary studies
+Homo sapiens,Whole_brain_CBF (mL/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 35 primary studies
+Macaca mulatta,Whole_brain_CBF (mL/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 3 primary studies
+Mus musculus,Whole_brain_CBF (mL/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 1 primary studies
+Rattus norvegicus,Whole_brain_CBF (mL/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 5 primary studies
+Felis catus,Whole_brain_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Homo sapiens,Whole_brain_CMRgl (umol/100g/min),metabolism,Karbowski__2007; Kaufman__2004,secondary,False,,,compilation resolved to 24 primary studies
+Macaca mulatta,Whole_brain_CMRgl (umol/100g/min),metabolism,Karbowski__2007; Kaufman__2004,secondary,False,,,compilation resolved to 5 primary studies
+Mus musculus,Whole_brain_CMRgl (umol/100g/min),metabolism,Karbowski__2007; Kaufman__2004,secondary,False,,,compilation resolved to 4 primary studies
+Oryctolagus cuniculus,Whole_brain_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Papio anubis,Whole_brain_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Rattus norvegicus,Whole_brain_CMRgl (umol/100g/min),metabolism,Karbowski__2007; Kaufman__2004,secondary,False,,,compilation resolved to 12 primary studies
+Felis catus,Whole_brain_CMRO2 (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Homo sapiens,Whole_brain_CMRO2 (umol/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 37 primary studies
+Macaca mulatta,Whole_brain_CMRO2 (umol/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 3 primary studies
+Papio anubis,Whole_brain_CMRO2 (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Rattus norvegicus,Whole_brain_CMRO2 (umol/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 5 primary studies
+Felis catus,Whole_brain_Total_glucose_utilization (umol/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Homo sapiens,Whole_brain_Total_glucose_utilization (umol/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Macaca mulatta,Whole_brain_Total_glucose_utilization (umol/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Mus musculus,Whole_brain_Total_glucose_utilization (umol/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Oryctolagus cuniculus,Whole_brain_Total_glucose_utilization (umol/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Papio anubis,Whole_brain_Total_glucose_utilization (umol/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Rattus norvegicus,Whole_brain_Total_glucose_utilization (umol/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Felis catus,Whole_brain_Total_O2_consumption (mL/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Homo sapiens,Whole_brain_Total_O2_consumption (mL/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Macaca mulatta,Whole_brain_Total_O2_consumption (mL/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Papio anubis,Whole_brain_Total_O2_consumption (mL/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Rattus norvegicus,Whole_brain_Total_O2_consumption (mL/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
+Sus scrofa,Gestation (days),life history,Lewitus (team),secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Litter_size (count),life history,Lewitus (team),secondary,False,,,primary_used=FALSE
+Canis latrans,Litter_size (count),life history,Lewitus (team),secondary,False,,,primary_used=FALSE
+Dasypus novemcinctus,Litter_size (count),life history,Lewitus (team),secondary,False,,,primary_used=FALSE
+Felis catus,Litter_size (count),life history,Lewitus (team),secondary,False,,,primary_used=FALSE
+Gorilla gorilla gorilla,Litter_size (count),life history,Lewitus (team),secondary,False,,,primary_used=FALSE
+Homo sapiens,Litter_size (count),life history,Lewitus (team),secondary,False,,,primary_used=FALSE
+Macaca mulatta,Litter_size (count),life history,Lewitus (team),secondary,False,,,primary_used=FALSE
+Microcebus murinus,Litter_size (count),life history,Lewitus (team),secondary,False,,,primary_used=FALSE
+Mus musculus,Litter_size (count),life history,Lewitus (team),secondary,False,,,primary_used=FALSE
+Oryctolagus cuniculus,Litter_size (count),life history,Lewitus (team),secondary,False,,,primary_used=FALSE
+Pan troglodytes,Litter_size (count),life history,Lewitus (team),secondary,False,,,primary_used=FALSE
+Rattus norvegicus,Litter_size (count),life history,Lewitus (team),secondary,False,,,primary_used=FALSE
+Sus scrofa,Litter_size (count),life history,Lewitus (team),secondary,False,,,primary_used=FALSE
+Chlorocebus sabaeus,Weaning_age (days),life history,Eagleman_Vaughn_2021,secondary,False,,,primary_used=FALSE
+Macaca nemestrina,Weaning_age (days),life history,Eagleman_Vaughn_2021,secondary,False,,,primary_used=FALSE
+Sus scrofa,Weaning_age (days),life history,Lewitus (team),secondary,False,,,primary_used=FALSE
+Aotus nancymaae,Activity_pattern (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Activity_pattern (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Canis latrans,Activity_pattern (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Chlorocebus sabaeus,Activity_pattern (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Dasypus novemcinctus,Activity_pattern (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Felis catus,Activity_pattern (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Gorilla gorilla gorilla,Activity_pattern (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Heterocephalus glaber,Activity_pattern (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Homo sapiens,Activity_pattern (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Activity_pattern (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Macaca nemestrina,Activity_pattern (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Microcebus murinus,Activity_pattern (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Monodelphis domestica,Activity_pattern (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Mus musculus,Activity_pattern (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Oryctolagus cuniculus,Activity_pattern (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Otolemur garnettii,Activity_pattern (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Pan troglodytes,Activity_pattern (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Papio anubis,Activity_pattern (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Rattus norvegicus,Activity_pattern (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Saimiri boliviensis boliviensis,Activity_pattern (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Tupaia belangeri,Activity_pattern (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Urocitellus parryii,Activity_pattern (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Aotus nancymaae,Diet_breadth (count),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Diet_breadth (count),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Canis latrans,Diet_breadth (count),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Chlorocebus sabaeus,Diet_breadth (count),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Dasypus novemcinctus,Diet_breadth (count),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Felis catus,Diet_breadth (count),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Gorilla gorilla gorilla,Diet_breadth (count),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Heterocephalus glaber,Diet_breadth (count),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Homo sapiens,Diet_breadth (count),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Diet_breadth (count),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Macaca nemestrina,Diet_breadth (count),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Microcebus murinus,Diet_breadth (count),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Monodelphis domestica,Diet_breadth (count),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Mus musculus,Diet_breadth (count),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Oryctolagus cuniculus,Diet_breadth (count),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Otolemur garnettii,Diet_breadth (count),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Pan troglodytes,Diet_breadth (count),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Papio anubis,Diet_breadth (count),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Rattus norvegicus,Diet_breadth (count),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Saimiri boliviensis boliviensis,Diet_breadth (count),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Tupaia belangeri,Diet_breadth (count),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Urocitellus parryii,Diet_breadth (count),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Aotus nancymaae,Diet_dominant (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Diet_dominant (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Canis latrans,Diet_dominant (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Chlorocebus sabaeus,Diet_dominant (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Dasypus novemcinctus,Diet_dominant (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Felis catus,Diet_dominant (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Gorilla gorilla gorilla,Diet_dominant (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Heterocephalus glaber,Diet_dominant (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Homo sapiens,Diet_dominant (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Diet_dominant (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Macaca nemestrina,Diet_dominant (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Microcebus murinus,Diet_dominant (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Monodelphis domestica,Diet_dominant (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Mus musculus,Diet_dominant (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Oryctolagus cuniculus,Diet_dominant (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Otolemur garnettii,Diet_dominant (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Pan troglodytes,Diet_dominant (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Papio anubis,Diet_dominant (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Rattus norvegicus,Diet_dominant (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Saimiri boliviensis boliviensis,Diet_dominant (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Tupaia belangeri,Diet_dominant (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Urocitellus parryii,Diet_dominant (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Aotus nancymaae,Diet_Fruit (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Diet_Fruit (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Canis latrans,Diet_Fruit (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Chlorocebus sabaeus,Diet_Fruit (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Dasypus novemcinctus,Diet_Fruit (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Felis catus,Diet_Fruit (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Gorilla gorilla gorilla,Diet_Fruit (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Heterocephalus glaber,Diet_Fruit (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Homo sapiens,Diet_Fruit (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Diet_Fruit (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Macaca nemestrina,Diet_Fruit (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Microcebus murinus,Diet_Fruit (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Monodelphis domestica,Diet_Fruit (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Mus musculus,Diet_Fruit (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Oryctolagus cuniculus,Diet_Fruit (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Otolemur garnettii,Diet_Fruit (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Pan troglodytes,Diet_Fruit (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Papio anubis,Diet_Fruit (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Rattus norvegicus,Diet_Fruit (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Saimiri boliviensis boliviensis,Diet_Fruit (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Tupaia belangeri,Diet_Fruit (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Urocitellus parryii,Diet_Fruit (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Aotus nancymaae,Diet_Inv (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Diet_Inv (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Canis latrans,Diet_Inv (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Chlorocebus sabaeus,Diet_Inv (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Dasypus novemcinctus,Diet_Inv (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Felis catus,Diet_Inv (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Gorilla gorilla gorilla,Diet_Inv (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Heterocephalus glaber,Diet_Inv (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Homo sapiens,Diet_Inv (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Diet_Inv (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Macaca nemestrina,Diet_Inv (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Microcebus murinus,Diet_Inv (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Monodelphis domestica,Diet_Inv (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Mus musculus,Diet_Inv (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Oryctolagus cuniculus,Diet_Inv (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Otolemur garnettii,Diet_Inv (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Pan troglodytes,Diet_Inv (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Papio anubis,Diet_Inv (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Rattus norvegicus,Diet_Inv (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Saimiri boliviensis boliviensis,Diet_Inv (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Tupaia belangeri,Diet_Inv (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Urocitellus parryii,Diet_Inv (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Aotus nancymaae,Diet_Nect (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Diet_Nect (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Canis latrans,Diet_Nect (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Chlorocebus sabaeus,Diet_Nect (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Dasypus novemcinctus,Diet_Nect (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Felis catus,Diet_Nect (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Gorilla gorilla gorilla,Diet_Nect (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Heterocephalus glaber,Diet_Nect (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Homo sapiens,Diet_Nect (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Diet_Nect (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Macaca nemestrina,Diet_Nect (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Microcebus murinus,Diet_Nect (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Monodelphis domestica,Diet_Nect (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Mus musculus,Diet_Nect (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Oryctolagus cuniculus,Diet_Nect (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Otolemur garnettii,Diet_Nect (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Pan troglodytes,Diet_Nect (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Papio anubis,Diet_Nect (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Rattus norvegicus,Diet_Nect (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Saimiri boliviensis boliviensis,Diet_Nect (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Tupaia belangeri,Diet_Nect (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Urocitellus parryii,Diet_Nect (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Aotus nancymaae,Diet_PlantO (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Diet_PlantO (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Canis latrans,Diet_PlantO (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Chlorocebus sabaeus,Diet_PlantO (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Dasypus novemcinctus,Diet_PlantO (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Felis catus,Diet_PlantO (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Gorilla gorilla gorilla,Diet_PlantO (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Heterocephalus glaber,Diet_PlantO (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Homo sapiens,Diet_PlantO (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Diet_PlantO (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Macaca nemestrina,Diet_PlantO (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Microcebus murinus,Diet_PlantO (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Monodelphis domestica,Diet_PlantO (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Mus musculus,Diet_PlantO (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Oryctolagus cuniculus,Diet_PlantO (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Otolemur garnettii,Diet_PlantO (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Pan troglodytes,Diet_PlantO (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Papio anubis,Diet_PlantO (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Rattus norvegicus,Diet_PlantO (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Saimiri boliviensis boliviensis,Diet_PlantO (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Tupaia belangeri,Diet_PlantO (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Urocitellus parryii,Diet_PlantO (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Aotus nancymaae,Diet_Scav (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Diet_Scav (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Canis latrans,Diet_Scav (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Chlorocebus sabaeus,Diet_Scav (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Dasypus novemcinctus,Diet_Scav (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Felis catus,Diet_Scav (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Gorilla gorilla gorilla,Diet_Scav (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Heterocephalus glaber,Diet_Scav (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Homo sapiens,Diet_Scav (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Diet_Scav (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Macaca nemestrina,Diet_Scav (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Microcebus murinus,Diet_Scav (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Monodelphis domestica,Diet_Scav (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Mus musculus,Diet_Scav (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Oryctolagus cuniculus,Diet_Scav (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Otolemur garnettii,Diet_Scav (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Pan troglodytes,Diet_Scav (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Papio anubis,Diet_Scav (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Rattus norvegicus,Diet_Scav (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Saimiri boliviensis boliviensis,Diet_Scav (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Tupaia belangeri,Diet_Scav (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Urocitellus parryii,Diet_Scav (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Aotus nancymaae,Diet_Seed (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Diet_Seed (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Canis latrans,Diet_Seed (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Chlorocebus sabaeus,Diet_Seed (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Dasypus novemcinctus,Diet_Seed (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Felis catus,Diet_Seed (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Gorilla gorilla gorilla,Diet_Seed (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Heterocephalus glaber,Diet_Seed (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Homo sapiens,Diet_Seed (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Diet_Seed (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Macaca nemestrina,Diet_Seed (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Microcebus murinus,Diet_Seed (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Monodelphis domestica,Diet_Seed (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Mus musculus,Diet_Seed (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Oryctolagus cuniculus,Diet_Seed (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Otolemur garnettii,Diet_Seed (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Pan troglodytes,Diet_Seed (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Papio anubis,Diet_Seed (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Rattus norvegicus,Diet_Seed (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Saimiri boliviensis boliviensis,Diet_Seed (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Tupaia belangeri,Diet_Seed (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Urocitellus parryii,Diet_Seed (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Aotus nancymaae,Diet_Vect (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Diet_Vect (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Canis latrans,Diet_Vect (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Chlorocebus sabaeus,Diet_Vect (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Dasypus novemcinctus,Diet_Vect (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Felis catus,Diet_Vect (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Gorilla gorilla gorilla,Diet_Vect (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Heterocephalus glaber,Diet_Vect (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Homo sapiens,Diet_Vect (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Diet_Vect (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Macaca nemestrina,Diet_Vect (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Microcebus murinus,Diet_Vect (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Monodelphis domestica,Diet_Vect (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Mus musculus,Diet_Vect (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Oryctolagus cuniculus,Diet_Vect (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Otolemur garnettii,Diet_Vect (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Pan troglodytes,Diet_Vect (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Papio anubis,Diet_Vect (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Rattus norvegicus,Diet_Vect (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Saimiri boliviensis boliviensis,Diet_Vect (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Tupaia belangeri,Diet_Vect (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Urocitellus parryii,Diet_Vect (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Aotus nancymaae,Diet_Vend (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Diet_Vend (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Canis latrans,Diet_Vend (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Chlorocebus sabaeus,Diet_Vend (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Dasypus novemcinctus,Diet_Vend (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Felis catus,Diet_Vend (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Gorilla gorilla gorilla,Diet_Vend (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Heterocephalus glaber,Diet_Vend (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Homo sapiens,Diet_Vend (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Diet_Vend (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Macaca nemestrina,Diet_Vend (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Microcebus murinus,Diet_Vend (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Monodelphis domestica,Diet_Vend (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Mus musculus,Diet_Vend (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Oryctolagus cuniculus,Diet_Vend (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Otolemur garnettii,Diet_Vend (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Pan troglodytes,Diet_Vend (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Papio anubis,Diet_Vend (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Rattus norvegicus,Diet_Vend (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Saimiri boliviensis boliviensis,Diet_Vend (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Tupaia belangeri,Diet_Vend (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Urocitellus parryii,Diet_Vend (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Aotus nancymaae,Diet_Vfish (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Diet_Vfish (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Canis latrans,Diet_Vfish (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Chlorocebus sabaeus,Diet_Vfish (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Dasypus novemcinctus,Diet_Vfish (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Felis catus,Diet_Vfish (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Gorilla gorilla gorilla,Diet_Vfish (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Heterocephalus glaber,Diet_Vfish (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Homo sapiens,Diet_Vfish (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Diet_Vfish (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Macaca nemestrina,Diet_Vfish (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Microcebus murinus,Diet_Vfish (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Monodelphis domestica,Diet_Vfish (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Mus musculus,Diet_Vfish (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Oryctolagus cuniculus,Diet_Vfish (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Otolemur garnettii,Diet_Vfish (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Pan troglodytes,Diet_Vfish (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Papio anubis,Diet_Vfish (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Rattus norvegicus,Diet_Vfish (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Saimiri boliviensis boliviensis,Diet_Vfish (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Tupaia belangeri,Diet_Vfish (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Urocitellus parryii,Diet_Vfish (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Aotus nancymaae,Diet_Vunk (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Diet_Vunk (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Canis latrans,Diet_Vunk (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Chlorocebus sabaeus,Diet_Vunk (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Dasypus novemcinctus,Diet_Vunk (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Felis catus,Diet_Vunk (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Gorilla gorilla gorilla,Diet_Vunk (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Heterocephalus glaber,Diet_Vunk (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Homo sapiens,Diet_Vunk (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Diet_Vunk (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Macaca nemestrina,Diet_Vunk (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Microcebus murinus,Diet_Vunk (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Monodelphis domestica,Diet_Vunk (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Mus musculus,Diet_Vunk (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Oryctolagus cuniculus,Diet_Vunk (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Otolemur garnettii,Diet_Vunk (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Pan troglodytes,Diet_Vunk (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Papio anubis,Diet_Vunk (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Rattus norvegicus,Diet_Vunk (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Saimiri boliviensis boliviensis,Diet_Vunk (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Tupaia belangeri,Diet_Vunk (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Urocitellus parryii,Diet_Vunk (%),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Aotus nancymaae,ForStrat_stratum (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,ForStrat_stratum (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Canis latrans,ForStrat_stratum (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Chlorocebus sabaeus,ForStrat_stratum (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Dasypus novemcinctus,ForStrat_stratum (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Felis catus,ForStrat_stratum (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Gorilla gorilla gorilla,ForStrat_stratum (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Heterocephalus glaber,ForStrat_stratum (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Homo sapiens,ForStrat_stratum (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Macaca mulatta,ForStrat_stratum (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Macaca nemestrina,ForStrat_stratum (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Microcebus murinus,ForStrat_stratum (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Monodelphis domestica,ForStrat_stratum (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Mus musculus,ForStrat_stratum (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Oryctolagus cuniculus,ForStrat_stratum (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Otolemur garnettii,ForStrat_stratum (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Pan troglodytes,ForStrat_stratum (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Papio anubis,ForStrat_stratum (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Rattus norvegicus,ForStrat_stratum (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Saimiri boliviensis boliviensis,ForStrat_stratum (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Tupaia belangeri,ForStrat_stratum (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Urocitellus parryii,ForStrat_stratum (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Aotus nancymaae,Trophic_guild (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Trophic_guild (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Canis latrans,Trophic_guild (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Chlorocebus sabaeus,Trophic_guild (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Dasypus novemcinctus,Trophic_guild (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Felis catus,Trophic_guild (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Gorilla gorilla gorilla,Trophic_guild (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Heterocephalus glaber,Trophic_guild (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Homo sapiens,Trophic_guild (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Trophic_guild (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Macaca nemestrina,Trophic_guild (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Microcebus murinus,Trophic_guild (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Monodelphis domestica,Trophic_guild (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Mus musculus,Trophic_guild (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Oryctolagus cuniculus,Trophic_guild (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Otolemur garnettii,Trophic_guild (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Pan troglodytes,Trophic_guild (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Papio anubis,Trophic_guild (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Rattus norvegicus,Trophic_guild (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Saimiri boliviensis boliviensis,Trophic_guild (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Tupaia belangeri,Trophic_guild (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Urocitellus parryii,Trophic_guild (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Tool_use (category),behaviour & cognition,Baker_etal_2025,secondary,False,,,primary_used=FALSE
+Macaca nemestrina,Tool_use (category),behaviour & cognition,Baker_etal_2025,secondary,False,,,primary_used=FALSE
+Microcebus murinus,Tool_use (category),behaviour & cognition,Baker_etal_2025,secondary,False,,,primary_used=FALSE
+Otolemur garnettii,Tool_use (category),behaviour & cognition,Baker_etal_2025,secondary,False,,,primary_used=FALSE
+Papio anubis,Tool_use (category),behaviour & cognition,Baker_etal_2025,secondary,False,,,primary_used=FALSE
+Chlorocebus sabaeus,VocalRepertoire (count),behaviour & cognition,ManyPrimates__2022,secondary,False,,,primary_used=FALSE
+Macaca mulatta,VocalRepertoire (count),behaviour & cognition,ManyPrimates__2022,secondary,False,,,primary_used=FALSE
+Papio anubis,VocalRepertoire (count),behaviour & cognition,ManyPrimates__2022,secondary,False,,,primary_used=FALSE
+Sapajus apella,VocalRepertoire (count),behaviour & cognition,ManyPrimates__2022,secondary,False,,,primary_used=FALSE
+Canis latrans,Depth,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,cited within compilation: 6; primary not in database
+Chlorocebus sabaeus,Depth,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,cited within compilation: 52; primary not in database
+Dasypus novemcinctus,Depth,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,True,Lamina of axon terminals densest,,cited within compilation: 18; primary not in database
+Felis catus,Depth,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,cited within compilation: 51; primary not in database
+Homo sapiens,Depth,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,cited within compilation: 39; primary not in database
+Macaca mulatta,Depth,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,cited within compilation: 52; primary not in database
+Otolemur garnettii,Depth,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,cited within compilation: 17; primary not in database
+Pan troglodytes,Depth,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,cited within compilation: 53; primary not in database
+Rattus norvegicus,Depth,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,cited within compilation: 26; primary not in database
+Saimiri boliviensis boliviensis,Depth,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,cited within compilation: 29; primary not in database
+Sapajus apella,Depth,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,cited within compilation: 52; primary not in database
+Tupaia belangeri,Depth,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,cited within compilation: 37; primary not in database
+Canis latrans,Lamina of axon terminals deepest,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,"cited within compilation: BUXTON and GOODMAN, 1967; primary not in database"
+Chlorocebus sabaeus,Lamina of axon terminals deepest,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,"cited within compilation: PETRAS, 1969; primary not in database"
+Felis catus,Lamina of axon terminals deepest,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,"cited within compilation: NYBERG-HANSEN and BRODAL, 1963; primary not in database"
+Macaca mulatta,Lamina of axon terminals deepest,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,"cited within compilation: PETRAS, 1969; primary not in database"
+Otolemur garnettii,Lamina of axon terminals deepest,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,"cited within compilation: FERRER, 1971; primary not in database"
+Pan troglodytes,Lamina of axon terminals deepest,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,"cited within compilation: PETRAS, 1968; primary not in database"
+Papio anubis,Lamina of axon terminals deepest,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,"cited within compilation: PHILLIPS, 1967; primary not in database"
+Rattus norvegicus,Lamina of axon terminals deepest,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,"cited within compilation: GOODMAN et al., 1966; primary not in database"
+Saimiri boliviensis boliviensis,Lamina of axon terminals deepest,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,"cited within compilation: HARTING AND NOBACK, 1970; primary not in database"
+Sapajus apella,Lamina of axon terminals deepest,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,"cited within compilation: PETRAS, 1969; primary not in database"
+Tupaia belangeri,Lamina of axon terminals deepest,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,"cited within compilation: JANE et al., 1969; primary not in database"
+Chlorocebus sabaeus,Lamina of axon terminals densest,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,"cited within compilation: PETRAS, 1968; primary not in database"
+Felis catus,Lamina of axon terminals densest,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,"cited within compilation: NYBERG-HANSEN and BRODAL, 1963; primary not in database"
+Macaca mulatta,Lamina of axon terminals densest,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,"cited within compilation: PETRAS, 1968; primary not in database"
+Otolemur garnettii,Lamina of axon terminals densest,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,"cited within compilation: FERRER, 1971; primary not in database"
+Pan troglodytes,Lamina of axon terminals densest,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,"cited within compilation: PETRAS, 1968; primary not in database"
+Rattus norvegicus,Lamina of axon terminals densest,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,"cited within compilation: BROWN, 1971; primary not in database"
+Saimiri boliviensis boliviensis,Lamina of axon terminals densest,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,"cited within compilation: HARTING AND NOBACK, 1970; primary not in database"
+Sapajus apella,Lamina of axon terminals densest,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,"cited within compilation: PETRAS, 1968; primary not in database"
+Tupaia belangeri,Lamina of axon terminals densest,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,"cited within compilation: CAMPBELL, 1967; primary not in database"
+Dasypus novemcinctus,Largest fiber diameter µm,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,True,Area of tract mmˆ2,,"cited within compilation: VERHAART, 1970; primary not in database"
+Felis catus,Largest fiber diameter µm,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,True,Area of tract mmˆ2; Average fiber size x 10ˆ5 K,,"cited within compilation: SCHIEBEL and SCHIEBEL, 1966; primary not in database"
+Homo sapiens,Largest fiber diameter µm,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,True,Area of tract mmˆ2; Average fiber size x 10ˆ5 K,,"cited within compilation: TRUEX and CARPENTER, 1969; primary not in database"
+Mustela putorius furo,Largest fiber diameter µm,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,True,Area of tract mmˆ2,,"cited within compilation: NOORDUYN, 1959; primary not in database"
+Oryctolagus cuniculus,Largest fiber diameter µm,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,True,Area of tract mmˆ2; Average fiber size x 10ˆ5 K,,"cited within compilation: VERHAART, 1970; primary not in database"
+Rattus norvegicus,Largest fiber diameter µm,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,True,Area of tract mmˆ2; Average fiber size x 10ˆ5 K,,"cited within compilation: BISHOP et al., 1971; primary not in database"
+Saimiri boliviensis boliviensis,Largest fiber diameter µm,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,True,Area of tract mmˆ2,,"cited within compilation: VERHAART, 1970; primary not in database"
+Tupaia belangeri,Largest fiber diameter µm,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,True,Area of tract mmˆ2,,"cited within compilation: VERHAART, 1966; primary not in database"
+Canis latrans,Length,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,cited within compilation: 6; primary not in database
+Chlorocebus sabaeus,Length,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,cited within compilation: 53; primary not in database
+Dasypus novemcinctus,Length,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,True,Lamina of axon terminals densest,,cited within compilation: 18; primary not in database
+Felis catus,Length,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,cited within compilation: 51; primary not in database
+Homo sapiens,Length,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,cited within compilation: 39; primary not in database
+Macaca mulatta,Length,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,cited within compilation: 53; primary not in database
+Otolemur garnettii,Length,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,cited within compilation: 17; primary not in database
+Pan troglodytes,Length,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,cited within compilation: 53; primary not in database
+Rattus norvegicus,Length,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,cited within compilation: 26; primary not in database
+Saimiri boliviensis boliviensis,Length,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,cited within compilation: 64; primary not in database
+Sapajus apella,Length,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,cited within compilation: 53; primary not in database
+Tupaia belangeri,Length,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,cited within compilation: 61; primary not in database
+Macaca mulatta,Number of fibers per tract,sensorimotor & motor pathways,Lassek_Rasmussen_1940,secondary,True,Area of tract mmˆ2; Average fiber size x 10ˆ5 K,,"cited within compilation: DEMEYER and RUSSEL, 1958; primary not in database"
+Mustela putorius furo,Number of fibers per tract,sensorimotor & motor pathways,Lassek_Rasmussen_1940,secondary,True,Area of tract mmˆ2,,"cited within compilation: NOORDUYN, 1959; primary not in database"
+Pan troglodytes,Number of fibers per tract,sensorimotor & motor pathways,Lassek_Rasmussen_1940,secondary,True,Area of tract mmˆ2; Average fiber size x 10ˆ5 K,,"cited within compilation: LASSEK and WHEATLEY, 1945; primary not in database"
+Rattus norvegicus,Number of fibers per tract,sensorimotor & motor pathways,Lassek_Rasmussen_1940,secondary,True,Area of tract mmˆ2; Average fiber size x 10ˆ5 K,,"cited within compilation: BROWN, 1971; primary not in database"
+Canis latrans,Penetration down spinal cord,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,"cited within compilation: BUXTON and GOODMAN, 1967; primary not in database"
+Chlorocebus sabaeus,Penetration down spinal cord,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,"cited within compilation: PETRAS, 1968; primary not in database"
+Felis catus,Penetration down spinal cord,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,"cited within compilation: NYBERG-HANSEN and BRODAL, 1963; primary not in database"
+Homo sapiens,Penetration down spinal cord,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,"cited within compilation: TRUEX and CARPENTER, 1969; primary not in database"
+Macaca mulatta,Penetration down spinal cord,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,"cited within compilation: PETRAS, 1968; primary not in database"
+Oryctolagus cuniculus,Penetration down spinal cord,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,"cited within compilation: VERHAART, 1970; primary not in database"
+Otolemur garnettii,Penetration down spinal cord,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,"cited within compilation: FERRER, 1971; primary not in database"
+Pan troglodytes,Penetration down spinal cord,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,"cited within compilation: PETRAS, 1968; primary not in database"
+Rattus norvegicus,Penetration down spinal cord,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,"cited within compilation: GOODMAN et al., 1966; primary not in database"
+Saimiri boliviensis boliviensis,Penetration down spinal cord,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,"cited within compilation: VERHAART, 1966; primary not in database"
+Sapajus apella,Penetration down spinal cord,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,"cited within compilation: PETRAS, 1968; primary not in database"
+Tupaia belangeri,Penetration down spinal cord,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,"cited within compilation: SHRIVER and NOBACK, 1967; primary not in database"
+Homo sapiens,PFC_area10_pyramidal_L3_dendritic_segment_count [golgi] (count),cellular morphology,Bianchi_etal_2012,secondary,True,M1_gigantopyramidal_dendritic_segment_count [golgi] (count); M1_pyramidal_L3_dendritic_segment_count [golgi] (count); M1_pyramidal_L5_dendritic_segment_count [golgi] (count),,
+Homo sapiens,PFC_area10_pyramidal_L3_mean_segment_length [golgi] (um),cellular morphology,Bianchi_etal_2012,secondary,True,M1_gigantopyramidal_mean_segment_length [golgi] (um); M1_pyramidal_L3_mean_segment_length [golgi] (um); M1_pyramidal_L5_mean_segment_length [golgi] (um),,
+Homo sapiens,PFC_area10_pyramidal_L3_soma_area [golgi] (um2),cellular morphology,Bianchi_etal_2012,secondary,True,M1_gigantopyramidal_soma_area [golgi] (um2); M1_pyramidal_L3_soma_area [golgi] (um2); M1_pyramidal_L5_soma_area [golgi] (um2),,
+Homo sapiens,PFC_area10_pyramidal_L3_soma_depth [golgi] (um),cellular morphology,Bianchi_etal_2012,secondary,True,M1_gigantopyramidal_soma_depth [golgi] (um); M1_pyramidal_L3_soma_depth [golgi] (um); M1_pyramidal_L5_soma_depth [golgi] (um),,
+Homo sapiens,PFC_area10_pyramidal_L3_spine_count [golgi] (count),cellular morphology,Bianchi_etal_2012,secondary,True,M1_gigantopyramidal_spine_count [golgi] (count); M1_pyramidal_L3_spine_count [golgi] (count); M1_pyramidal_L5_spine_count [golgi] (count),,
+Homo sapiens,PFC_area10_pyramidal_L3_spine_density [golgi] (spines/um),cellular morphology,Bianchi_etal_2012,secondary,True,M1_gigantopyramidal_spine_density [golgi] (spines/um); M1_pyramidal_L3_spine_density [golgi] (spines/um); M1_pyramidal_L5_spine_density [golgi] (spines/um),,
+Homo sapiens,PFC_area10_pyramidal_L3_total_dendritic_length [golgi] (um),cellular morphology,Bianchi_etal_2012,secondary,True,M1_gigantopyramidal_total_dendritic_length [golgi] (um); M1_pyramidal_L3_total_dendritic_length [golgi] (um); M1_pyramidal_L5_total_dendritic_length [golgi] (um),,
+Otolemur garnettii,PFC_granular_pyramidal_L3_basal_dendritic_field_area [LYinj] (um2),cellular morphology,Elston_etal_2006,secondary,False,,,
+Otolemur garnettii,PFC_granular_pyramidal_L3_spine_count [LYinj] (count),cellular morphology,Elston_etal_2006,secondary,False,,,
+Homo sapiens,S1_3b_pyramidal_L3_dendritic_segment_count [golgi] (count),cellular morphology,Bianchi_etal_2012,secondary,True,M1_gigantopyramidal_dendritic_segment_count [golgi] (count); M1_pyramidal_L3_dendritic_segment_count [golgi] (count); M1_pyramidal_L5_dendritic_segment_count [golgi] (count),,
+Homo sapiens,S1_3b_pyramidal_L3_mean_segment_length [golgi] (um),cellular morphology,Bianchi_etal_2012,secondary,True,M1_gigantopyramidal_mean_segment_length [golgi] (um); M1_pyramidal_L3_mean_segment_length [golgi] (um); M1_pyramidal_L5_mean_segment_length [golgi] (um),,
+Homo sapiens,S1_3b_pyramidal_L3_soma_area [golgi] (um2),cellular morphology,Bianchi_etal_2012,secondary,True,M1_gigantopyramidal_soma_area [golgi] (um2); M1_pyramidal_L3_soma_area [golgi] (um2); M1_pyramidal_L5_soma_area [golgi] (um2),,
+Homo sapiens,S1_3b_pyramidal_L3_soma_depth [golgi] (um),cellular morphology,Bianchi_etal_2012,secondary,True,M1_gigantopyramidal_soma_depth [golgi] (um); M1_pyramidal_L3_soma_depth [golgi] (um); M1_pyramidal_L5_soma_depth [golgi] (um),,
+Homo sapiens,S1_3b_pyramidal_L3_spine_count [golgi] (count),cellular morphology,Bianchi_etal_2012,secondary,True,M1_gigantopyramidal_spine_count [golgi] (count); M1_pyramidal_L3_spine_count [golgi] (count); M1_pyramidal_L5_spine_count [golgi] (count),,
+Homo sapiens,S1_3b_pyramidal_L3_spine_density [golgi] (spines/um),cellular morphology,Bianchi_etal_2012,secondary,True,M1_gigantopyramidal_spine_density [golgi] (spines/um); M1_pyramidal_L3_spine_density [golgi] (spines/um); M1_pyramidal_L5_spine_density [golgi] (spines/um),,
+Homo sapiens,S1_3b_pyramidal_L3_total_dendritic_length [golgi] (um),cellular morphology,Bianchi_etal_2012,secondary,True,M1_gigantopyramidal_total_dendritic_length [golgi] (um); M1_pyramidal_L3_total_dendritic_length [golgi] (um); M1_pyramidal_L5_total_dendritic_length [golgi] (um),,
+Callithrix jacchus,V1_pyramidal_L3_basal_dendritic_field_area [LYinj] (um2),cellular morphology,Elston_etal_2006,secondary,True,PFC_pyramidal_L3_basal_dendritic_field_area [LYinj] (um2); occipital_pyramidal_L3_basal_dendritic_field_area [LYinj] (um2); temporal_pyramidal_L3_basal_dendritic_field_area [LYinj] (um2),,
+Otolemur garnettii,V1_pyramidal_L3_basal_dendritic_field_area [LYinj] (um2),cellular morphology,Elston_etal_2006,secondary,False,,,
+Callithrix jacchus,V1_pyramidal_L3_spine_count [LYinj] (count),cellular morphology,Elston_etal_2006,secondary,False,,,
+Otolemur garnettii,V1_pyramidal_L3_spine_count [LYinj] (count),cellular morphology,Elston_etal_2006,secondary,False,,,
+Callithrix jacchus,V2_pyramidal_L3_basal_dendritic_field_area [LYinj] (um2),cellular morphology,Elston_etal_2006,secondary,True,PFC_pyramidal_L3_basal_dendritic_field_area [LYinj] (um2); occipital_pyramidal_L3_basal_dendritic_field_area [LYinj] (um2); temporal_pyramidal_L3_basal_dendritic_field_area [LYinj] (um2),,
+Otolemur garnettii,V2_pyramidal_L3_basal_dendritic_field_area [LYinj] (um2),cellular morphology,Elston_etal_2006,secondary,False,,,
+Homo sapiens,V2_pyramidal_L3_dendritic_segment_count [golgi] (count),cellular morphology,Bianchi_etal_2012,secondary,True,M1_gigantopyramidal_dendritic_segment_count [golgi] (count); M1_pyramidal_L3_dendritic_segment_count [golgi] (count); M1_pyramidal_L5_dendritic_segment_count [golgi] (count),,
+Homo sapiens,V2_pyramidal_L3_mean_segment_length [golgi] (um),cellular morphology,Bianchi_etal_2012,secondary,True,M1_gigantopyramidal_mean_segment_length [golgi] (um); M1_pyramidal_L3_mean_segment_length [golgi] (um); M1_pyramidal_L5_mean_segment_length [golgi] (um),,
+Homo sapiens,V2_pyramidal_L3_soma_area [golgi] (um2),cellular morphology,Bianchi_etal_2012,secondary,True,M1_gigantopyramidal_soma_area [golgi] (um2); M1_pyramidal_L3_soma_area [golgi] (um2); M1_pyramidal_L5_soma_area [golgi] (um2),,
+Homo sapiens,V2_pyramidal_L3_soma_depth [golgi] (um),cellular morphology,Bianchi_etal_2012,secondary,True,M1_gigantopyramidal_soma_depth [golgi] (um); M1_pyramidal_L3_soma_depth [golgi] (um); M1_pyramidal_L5_soma_depth [golgi] (um),,
+Homo sapiens,V2_pyramidal_L3_spine_count [golgi] (count),cellular morphology,Bianchi_etal_2012,secondary,True,M1_gigantopyramidal_spine_count [golgi] (count); M1_pyramidal_L3_spine_count [golgi] (count); M1_pyramidal_L5_spine_count [golgi] (count),,
+Callithrix jacchus,V2_pyramidal_L3_spine_count [LYinj] (count),cellular morphology,Elston_etal_2006,secondary,False,,,
+Otolemur garnettii,V2_pyramidal_L3_spine_count [LYinj] (count),cellular morphology,Elston_etal_2006,secondary,False,,,
+Homo sapiens,V2_pyramidal_L3_spine_density [golgi] (spines/um),cellular morphology,Bianchi_etal_2012,secondary,True,M1_gigantopyramidal_spine_density [golgi] (spines/um); M1_pyramidal_L3_spine_density [golgi] (spines/um); M1_pyramidal_L5_spine_density [golgi] (spines/um),,
+Homo sapiens,V2_pyramidal_L3_total_dendritic_length [golgi] (um),cellular morphology,Bianchi_etal_2012,secondary,True,M1_gigantopyramidal_total_dendritic_length [golgi] (um); M1_pyramidal_L3_total_dendritic_length [golgi] (um); M1_pyramidal_L5_total_dendritic_length [golgi] (um),,
+Felis catus,Audible_freq_high_60dB.kHz,sensory performance,Koay_etal_1998,secondary,False,,SR166: Koay_etal_1998 reprints Heffner_Heffner_2010_b -> Heffner_Heffner_2010_b over Koay_etal_1998 | SR177: Koay_etal_1998 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Koay_etal_1998 | SR179: Koay_etal_1998 reprints Heffner__1998 -> Heffner__1998 over Koay_etal_1998 | SR180: Schusterman__1981 reprints Koay_etal_1998 -> Schusterman__1981 over Koay_etal_1998 | SR191: Koay_etal_1998 reprints Heffner_Heffner_1992_c -> Heffner_Heffner_1992_c over Koay_etal_1998 | SR201: Koay_etal_1998 derives_from Dalland__1965 -> Dalland__1965 over Koay_etal_1998 | SR206: Koay_etal_1998 reprints Heffner__2004 -> Heffner__2004 over Koay_etal_1998 | SR208: Koay_etal_1998 reprints Heffner_etal_1994_b -> Heffner_etal_1994_b over Koay_etal_1998 | SR209: Koay_etal_1998 reprints Heffner_etal_2001 -> Heffner_etal_2001 over Koay_etal_1998 | SR219: Wenstrup__1984 derives_from Koay_etal_1998 -> Wenstrup__1984 over Koay_etal_1998,value_origin=digitised_from_figure; studies=heffner1985b|r
+Heterocephalus glaber,Audible_freq_high_60dB.kHz,sensory performance,Heffner_Heffner_1992_c; Koay_etal_1998,secondary,False,,SR166: Koay_etal_1998 reprints Heffner_Heffner_2010_b -> Heffner_Heffner_2010_b over Koay_etal_1998 | SR170: Heffner__1998 reprints Heffner_Heffner_1992_c -> Heffner_Heffner_1992_c over Heffner__1998 | SR177: Koay_etal_1998 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Koay_etal_1998 | SR179: Koay_etal_1998 reprints Heffner__1998 -> Heffner__1998 over Koay_etal_1998 | SR180: Schusterman__1981 reprints Koay_etal_1998 -> Schusterman__1981 over Koay_etal_1998 | SR188: Heffner_Heffner_2010_b reprints Heffner_Heffner_1992_c -> none | SR189: Heffner_etal_1994_b reprints Heffner_Heffner_1992_c -> Heffner_etal_1994_b over Heffner_Heffner_1992_c | SR191: Koay_etal_1998 reprints Heffner_Heffner_1992_c -> Heffner_Heffner_1992_c over Koay_etal_1998 | SR201: Koay_etal_1998 derives_from Dalland__1965 -> Dalland__1965 over Koay_etal_1998 | SR203: Heffner_etal_2001 reprints Heffner_Heffner_1992_c -> Heffner_etal_2001 over Heffner_Heffner_1992_c | SR206: Koay_etal_1998 reprints Heffner__2004 -> Heffner__2004 over Koay_etal_1998 | SR208: Koay_etal_1998 reprints Heffner_etal_1994_b -> Heffner_etal_1994_b over Koay_etal_1998 | SR209: Koay_etal_1998 reprints Heffner_etal_2001 -> Heffner_etal_2001 over Koay_etal_1998 | SR219: Wenstrup__1984 derives_from Koay_etal_1998 -> Wenstrup__1984 over Koay_etal_1998,value_origin=digitised_from_figure; published; studies=heffner1993|r; unkeyed:r. heffner+heffner1991b
+Homo sapiens,Audible_freq_high_60dB.kHz,sensory performance,Koay_etal_1998,secondary,False,,SR166: Koay_etal_1998 reprints Heffner_Heffner_2010_b -> Heffner_Heffner_2010_b over Koay_etal_1998 | SR177: Koay_etal_1998 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Koay_etal_1998 | SR179: Koay_etal_1998 reprints Heffner__1998 -> Heffner__1998 over Koay_etal_1998 | SR180: Schusterman__1981 reprints Koay_etal_1998 -> Schusterman__1981 over Koay_etal_1998 | SR191: Koay_etal_1998 reprints Heffner_Heffner_1992_c -> Heffner_Heffner_1992_c over Koay_etal_1998 | SR201: Koay_etal_1998 derives_from Dalland__1965 -> Dalland__1965 over Koay_etal_1998 | SR206: Koay_etal_1998 reprints Heffner__2004 -> Heffner__2004 over Koay_etal_1998 | SR208: Koay_etal_1998 reprints Heffner_etal_1994_b -> Heffner_etal_1994_b over Koay_etal_1998 | SR209: Koay_etal_1998 reprints Heffner_etal_2001 -> Heffner_etal_2001 over Koay_etal_1998 | SR219: Wenstrup__1984 derives_from Koay_etal_1998 -> Wenstrup__1984 over Koay_etal_1998,value_origin=digitised_from_figure; studies=heffner1991|r
+Macaca mulatta,Audible_freq_high_60dB.kHz,sensory performance,Koay_etal_1998,secondary,False,,SR166: Koay_etal_1998 reprints Heffner_Heffner_2010_b -> Heffner_Heffner_2010_b over Koay_etal_1998 | SR177: Koay_etal_1998 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Koay_etal_1998 | SR179: Koay_etal_1998 reprints Heffner__1998 -> Heffner__1998 over Koay_etal_1998 | SR180: Schusterman__1981 reprints Koay_etal_1998 -> Schusterman__1981 over Koay_etal_1998 | SR191: Koay_etal_1998 reprints Heffner_Heffner_1992_c -> Heffner_Heffner_1992_c over Koay_etal_1998 | SR201: Koay_etal_1998 derives_from Dalland__1965 -> Dalland__1965 over Koay_etal_1998 | SR206: Koay_etal_1998 reprints Heffner__2004 -> Heffner__2004 over Koay_etal_1998 | SR208: Koay_etal_1998 reprints Heffner_etal_1994_b -> Heffner_etal_1994_b over Koay_etal_1998 | SR209: Koay_etal_1998 reprints Heffner_etal_2001 -> Heffner_etal_2001 over Koay_etal_1998 | SR219: Wenstrup__1984 derives_from Koay_etal_1998 -> Wenstrup__1984 over Koay_etal_1998,value_origin=digitised_from_figure; studies=pfingst1978
+Macaca nemestrina,Audible_freq_high_60dB.kHz,sensory performance,Koay_etal_1998,secondary,False,,SR166: Koay_etal_1998 reprints Heffner_Heffner_2010_b -> Heffner_Heffner_2010_b over Koay_etal_1998 | SR177: Koay_etal_1998 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Koay_etal_1998 | SR179: Koay_etal_1998 reprints Heffner__1998 -> Heffner__1998 over Koay_etal_1998 | SR180: Schusterman__1981 reprints Koay_etal_1998 -> Schusterman__1981 over Koay_etal_1998 | SR191: Koay_etal_1998 reprints Heffner_Heffner_1992_c -> Heffner_Heffner_1992_c over Koay_etal_1998 | SR201: Koay_etal_1998 derives_from Dalland__1965 -> Dalland__1965 over Koay_etal_1998 | SR206: Koay_etal_1998 reprints Heffner__2004 -> Heffner__2004 over Koay_etal_1998 | SR208: Koay_etal_1998 reprints Heffner_etal_1994_b -> Heffner_etal_1994_b over Koay_etal_1998 | SR209: Koay_etal_1998 reprints Heffner_etal_2001 -> Heffner_etal_2001 over Koay_etal_1998 | SR219: Wenstrup__1984 derives_from Koay_etal_1998 -> Wenstrup__1984 over Koay_etal_1998,value_origin=digitised_from_figure; studies=stebbins1966
+Monodelphis domestica,Audible_freq_high_60dB.kHz,sensory performance,Koay_etal_1998,secondary,False,,SR166: Koay_etal_1998 reprints Heffner_Heffner_2010_b -> Heffner_Heffner_2010_b over Koay_etal_1998 | SR177: Koay_etal_1998 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Koay_etal_1998 | SR179: Koay_etal_1998 reprints Heffner__1998 -> Heffner__1998 over Koay_etal_1998 | SR180: Schusterman__1981 reprints Koay_etal_1998 -> Schusterman__1981 over Koay_etal_1998 | SR191: Koay_etal_1998 reprints Heffner_Heffner_1992_c -> Heffner_Heffner_1992_c over Koay_etal_1998 | SR201: Koay_etal_1998 derives_from Dalland__1965 -> Dalland__1965 over Koay_etal_1998 | SR206: Koay_etal_1998 reprints Heffner__2004 -> Heffner__2004 over Koay_etal_1998 | SR208: Koay_etal_1998 reprints Heffner_etal_1994_b -> Heffner_etal_1994_b over Koay_etal_1998 | SR209: Koay_etal_1998 reprints Heffner_etal_2001 -> Heffner_etal_2001 over Koay_etal_1998 | SR219: Wenstrup__1984 derives_from Koay_etal_1998 -> Wenstrup__1984 over Koay_etal_1998,value_origin=digitised_from_figure; studies=frost1994
+Mus musculus,Audible_freq_high_60dB.kHz,sensory performance,Heffner_Heffner_1992_c; Koay_etal_1998,secondary,False,,SR166: Koay_etal_1998 reprints Heffner_Heffner_2010_b -> Heffner_Heffner_2010_b over Koay_etal_1998 | SR170: Heffner__1998 reprints Heffner_Heffner_1992_c -> Heffner_Heffner_1992_c over Heffner__1998 | SR177: Koay_etal_1998 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Koay_etal_1998 | SR179: Koay_etal_1998 reprints Heffner__1998 -> Heffner__1998 over Koay_etal_1998 | SR180: Schusterman__1981 reprints Koay_etal_1998 -> Schusterman__1981 over Koay_etal_1998 | SR188: Heffner_Heffner_2010_b reprints Heffner_Heffner_1992_c -> none | SR189: Heffner_etal_1994_b reprints Heffner_Heffner_1992_c -> Heffner_etal_1994_b over Heffner_Heffner_1992_c | SR191: Koay_etal_1998 reprints Heffner_Heffner_1992_c -> Heffner_Heffner_1992_c over Koay_etal_1998 | SR201: Koay_etal_1998 derives_from Dalland__1965 -> Dalland__1965 over Koay_etal_1998 | SR203: Heffner_etal_2001 reprints Heffner_Heffner_1992_c -> Heffner_etal_2001 over Heffner_Heffner_1992_c | SR206: Koay_etal_1998 reprints Heffner__2004 -> Heffner__2004 over Koay_etal_1998 | SR208: Koay_etal_1998 reprints Heffner_etal_1994_b -> Heffner_etal_1994_b over Koay_etal_1998 | SR209: Koay_etal_1998 reprints Heffner_etal_2001 -> Heffner_etal_2001 over Koay_etal_1998 | SR219: Wenstrup__1984 derives_from Koay_etal_1998 -> Wenstrup__1984 over Koay_etal_1998,value_origin=digitised_from_figure; published; studies=heffner1980|h; markl1973; unkeyed:h. heffner+masterton1980
+Oryctolagus cuniculus,Audible_freq_high_60dB.kHz,sensory performance,Koay_etal_1998,secondary,False,,SR166: Koay_etal_1998 reprints Heffner_Heffner_2010_b -> Heffner_Heffner_2010_b over Koay_etal_1998 | SR177: Koay_etal_1998 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Koay_etal_1998 | SR179: Koay_etal_1998 reprints Heffner__1998 -> Heffner__1998 over Koay_etal_1998 | SR180: Schusterman__1981 reprints Koay_etal_1998 -> Schusterman__1981 over Koay_etal_1998 | SR191: Koay_etal_1998 reprints Heffner_Heffner_1992_c -> Heffner_Heffner_1992_c over Koay_etal_1998 | SR201: Koay_etal_1998 derives_from Dalland__1965 -> Dalland__1965 over Koay_etal_1998 | SR206: Koay_etal_1998 reprints Heffner__2004 -> Heffner__2004 over Koay_etal_1998 | SR208: Koay_etal_1998 reprints Heffner_etal_1994_b -> Heffner_etal_1994_b over Koay_etal_1998 | SR209: Koay_etal_1998 reprints Heffner_etal_2001 -> Heffner_etal_2001 over Koay_etal_1998 | SR219: Wenstrup__1984 derives_from Koay_etal_1998 -> Wenstrup__1984 over Koay_etal_1998,value_origin=digitised_from_figure; studies=heffner1980|h
+Pan troglodytes,Audible_freq_high_60dB.kHz,sensory performance,Koay_etal_1998,secondary,False,,SR166: Koay_etal_1998 reprints Heffner_Heffner_2010_b -> Heffner_Heffner_2010_b over Koay_etal_1998 | SR177: Koay_etal_1998 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Koay_etal_1998 | SR179: Koay_etal_1998 reprints Heffner__1998 -> Heffner__1998 over Koay_etal_1998 | SR180: Schusterman__1981 reprints Koay_etal_1998 -> Schusterman__1981 over Koay_etal_1998 | SR191: Koay_etal_1998 reprints Heffner_Heffner_1992_c -> Heffner_Heffner_1992_c over Koay_etal_1998 | SR201: Koay_etal_1998 derives_from Dalland__1965 -> Dalland__1965 over Koay_etal_1998 | SR206: Koay_etal_1998 reprints Heffner__2004 -> Heffner__2004 over Koay_etal_1998 | SR208: Koay_etal_1998 reprints Heffner_etal_1994_b -> Heffner_etal_1994_b over Koay_etal_1998 | SR209: Koay_etal_1998 reprints Heffner_etal_2001 -> Heffner_etal_2001 over Koay_etal_1998 | SR219: Wenstrup__1984 derives_from Koay_etal_1998 -> Wenstrup__1984 over Koay_etal_1998,value_origin=digitised_from_figure; studies=farrer1965
+Rattus norvegicus,Audible_freq_high_60dB.kHz,sensory performance,Heffner_Heffner_1992_c; Koay_etal_1998,secondary,False,,SR166: Koay_etal_1998 reprints Heffner_Heffner_2010_b -> Heffner_Heffner_2010_b over Koay_etal_1998 | SR170: Heffner__1998 reprints Heffner_Heffner_1992_c -> Heffner_Heffner_1992_c over Heffner__1998 | SR177: Koay_etal_1998 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Koay_etal_1998 | SR179: Koay_etal_1998 reprints Heffner__1998 -> Heffner__1998 over Koay_etal_1998 | SR180: Schusterman__1981 reprints Koay_etal_1998 -> Schusterman__1981 over Koay_etal_1998 | SR188: Heffner_Heffner_2010_b reprints Heffner_Heffner_1992_c -> none | SR189: Heffner_etal_1994_b reprints Heffner_Heffner_1992_c -> Heffner_etal_1994_b over Heffner_Heffner_1992_c | SR191: Koay_etal_1998 reprints Heffner_Heffner_1992_c -> Heffner_Heffner_1992_c over Koay_etal_1998 | SR201: Koay_etal_1998 derives_from Dalland__1965 -> Dalland__1965 over Koay_etal_1998 | SR203: Heffner_etal_2001 reprints Heffner_Heffner_1992_c -> Heffner_etal_2001 over Heffner_Heffner_1992_c | SR206: Koay_etal_1998 reprints Heffner__2004 -> Heffner__2004 over Koay_etal_1998 | SR208: Koay_etal_1998 reprints Heffner_etal_1994_b -> Heffner_etal_1994_b over Koay_etal_1998 | SR209: Koay_etal_1998 reprints Heffner_etal_2001 -> Heffner_etal_2001 over Koay_etal_1998 | SR219: Wenstrup__1984 derives_from Koay_etal_1998 -> Wenstrup__1984 over Koay_etal_1998,"value_origin=digitised_from_figure; published; studies=heffner1994|h; kelly1977; unkeyed:kelly+masterton1977+unkeyed:r. heffner, unpublished"
+Heterocephalus glaber,Audible_freq_low_60dB.kHz,sensory performance,Heffner_Heffner_1992_c,secondary,False,,SR170: Heffner__1998 reprints Heffner_Heffner_1992_c -> Heffner_Heffner_1992_c over Heffner__1998 | SR188: Heffner_Heffner_2010_b reprints Heffner_Heffner_1992_c -> none | SR189: Heffner_etal_1994_b reprints Heffner_Heffner_1992_c -> Heffner_etal_1994_b over Heffner_Heffner_1992_c | SR191: Koay_etal_1998 reprints Heffner_Heffner_1992_c -> Heffner_Heffner_1992_c over Koay_etal_1998 | SR203: Heffner_etal_2001 reprints Heffner_Heffner_1992_c -> Heffner_etal_2001 over Heffner_Heffner_1992_c,value_origin=published; studies=unkeyed:r. heffner+heffner1991b
+Mus musculus,Audible_freq_low_60dB.kHz,sensory performance,Heffner_Heffner_1992_c,secondary,False,,SR170: Heffner__1998 reprints Heffner_Heffner_1992_c -> Heffner_Heffner_1992_c over Heffner__1998 | SR188: Heffner_Heffner_2010_b reprints Heffner_Heffner_1992_c -> none | SR189: Heffner_etal_1994_b reprints Heffner_Heffner_1992_c -> Heffner_etal_1994_b over Heffner_Heffner_1992_c | SR191: Koay_etal_1998 reprints Heffner_Heffner_1992_c -> Heffner_Heffner_1992_c over Koay_etal_1998 | SR203: Heffner_etal_2001 reprints Heffner_Heffner_1992_c -> Heffner_etal_2001 over Heffner_Heffner_1992_c,value_origin=published; studies=unkeyed:h. heffner+masterton1980
+Rattus norvegicus,Audible_freq_low_60dB.kHz,sensory performance,Heffner_Heffner_1992_c,secondary,False,,SR170: Heffner__1998 reprints Heffner_Heffner_1992_c -> Heffner_Heffner_1992_c over Heffner__1998 | SR188: Heffner_Heffner_2010_b reprints Heffner_Heffner_1992_c -> none | SR189: Heffner_etal_1994_b reprints Heffner_Heffner_1992_c -> Heffner_etal_1994_b over Heffner_Heffner_1992_c | SR191: Koay_etal_1998 reprints Heffner_Heffner_1992_c -> Heffner_Heffner_1992_c over Koay_etal_1998 | SR203: Heffner_etal_2001 reprints Heffner_Heffner_1992_c -> Heffner_etal_2001 over Heffner_Heffner_1992_c,"value_origin=published; studies=unkeyed:kelly+masterton1977+unkeyed:r. heffner, unpublished"
+Macaca nemestrina,CFF_behavioural.Hz,sensory performance,Haarlem_etal_2026,secondary,False,,,value_origin=published; studies=stavros2008|a
+Mus musculus,CFF_behavioural.Hz,sensory performance,Haarlem_etal_2026,secondary,False,,,value_origin=published; studies=nomura2019; umino2019
+Rattus norvegicus,CFF_behavioural.Hz,sensory performance,Haarlem_etal_2026,secondary,False,,,value_origin=published; studies=williams1985|r
+Tupaia belangeri,CFF_behavioural.Hz,sensory performance,Haarlem_etal_2026,secondary,False,,,value_origin=published; studies=callahan2000|t
+Homo sapiens,CFF_electrophysiological.Hz,sensory performance,Haarlem_etal_2026,secondary,False,,,value_origin=published; studies=haarlem2024|c
+Macaca mulatta,CFF_electrophysiological.Hz,sensory performance,Haarlem_etal_2026,secondary,False,,,value_origin=published; studies=spear1994|p; yuan2014
+Mus musculus,CFF_electrophysiological.Hz,sensory performance,Haarlem_etal_2026,secondary,False,,,value_origin=published; studies=gresh2003|j; nusinowitz2007|s; ridder2006|w; umino2019; yang2015
+Oryctolagus cuniculus,CFF_electrophysiological.Hz,sensory performance,Haarlem_etal_2026,secondary,False,,,value_origin=published; studies=ioshimoto2018
+Rattus norvegicus,CFF_electrophysiological.Hz,sensory performance,Haarlem_etal_2026,secondary,False,,,value_origin=published; studies=bourque2013|l; pinilla2005|i; rubin2007|r; wells2001|e
+Heterocephalus glaber,Hearing_range.octaves,sensory performance,DERIVED from the merged limits,derived,False,,,value_origin=recomputed; studies=
+Mus musculus,Hearing_range.octaves,sensory performance,DERIVED from the merged limits,derived,False,,,value_origin=recomputed; studies=
+Rattus norvegicus,Hearing_range.octaves,sensory performance,DERIVED from the merged limits,derived,False,,,value_origin=recomputed; studies=
+Felis catus,Sound_localization_threshold.deg,sensory performance,Heffner_Heffner_1992_a,secondary,False,,SR163: Veilleux_Kirk_2014 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Veilleux_Kirk_2014 | SR172: Kirk_Kay_2004 reprints Heffner_Heffner_1992_a -> none | SR177: Koay_etal_1998 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Koay_etal_1998 | SR185: Heffner_Heffner_2010_b reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Heffner_Heffner_2010_b | SR186: Heffner_etal_1994_c reprints Heffner_Heffner_1992_a -> none | SR202: Ravizza_Masterton_1972 reprints Heffner_Heffner_1992_a -> Ravizza_Masterton_1972 over Heffner_Heffner_1992_a,value_origin=published; studies=casseday1973+heffner1988c|r
+Heterocephalus glaber,Sound_localization_threshold.deg,sensory performance,Heffner_etal_1994_c,secondary,False,,SR186: Heffner_etal_1994_c reprints Heffner_Heffner_1992_a -> none,value_origin=published; studies=unkeyed:heffner+heffner1993
+Homo sapiens,Sound_localization_threshold.deg,sensory performance,Heffner_Heffner_1992_a,secondary,False,,SR163: Veilleux_Kirk_2014 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Veilleux_Kirk_2014 | SR172: Kirk_Kay_2004 reprints Heffner_Heffner_1992_a -> none | SR177: Koay_etal_1998 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Koay_etal_1998 | SR185: Heffner_Heffner_2010_b reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Heffner_Heffner_2010_b | SR186: Heffner_etal_1994_c reprints Heffner_Heffner_1992_a -> none | SR202: Ravizza_Masterton_1972 reprints Heffner_Heffner_1992_a -> Ravizza_Masterton_1972 over Heffner_Heffner_1992_a,value_origin=published; studies=heffner1988c|r
+Rattus norvegicus,Sound_localization_threshold.deg,sensory performance,Heffner_Heffner_1992_a,secondary,False,,SR163: Veilleux_Kirk_2014 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Veilleux_Kirk_2014 | SR172: Kirk_Kay_2004 reprints Heffner_Heffner_1992_a -> none | SR177: Koay_etal_1998 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Koay_etal_1998 | SR185: Heffner_Heffner_2010_b reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Heffner_Heffner_2010_b | SR186: Heffner_etal_1994_c reprints Heffner_Heffner_1992_a -> none | SR202: Ravizza_Masterton_1972 reprints Heffner_Heffner_1992_a -> Ravizza_Masterton_1972 over Heffner_Heffner_1992_a,value_origin=published; studies=heffner1985|h; kavanagh1986+kelly1980
+Callithrix jacchus,Visual_acuity_anatomical.cdeg,sensory performance,Veilleux_Kirk_2014,secondary,False,,SR143: Veilleux_Kirk_2014 reprints Kirk_Kay_2004 -> none | SR163: Veilleux_Kirk_2014 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Veilleux_Kirk_2014,value_origin=published; studies=troilo1993|d
+Felis catus,Visual_acuity_anatomical.cdeg,sensory performance,Heffner_Heffner_1992_a,secondary,False,,SR163: Veilleux_Kirk_2014 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Veilleux_Kirk_2014 | SR172: Kirk_Kay_2004 reprints Heffner_Heffner_1992_a -> none | SR177: Koay_etal_1998 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Koay_etal_1998 | SR185: Heffner_Heffner_2010_b reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Heffner_Heffner_2010_b | SR186: Heffner_etal_1994_c reprints Heffner_Heffner_1992_a -> none | SR202: Ravizza_Masterton_1972 reprints Heffner_Heffner_1992_a -> Ravizza_Masterton_1972 over Heffner_Heffner_1992_a,value_origin=published; studies=belleville1986+jacobson1976
+Heterocephalus glaber,Visual_acuity_anatomical.cdeg,sensory performance,Veilleux_Kirk_2014,secondary,False,,SR143: Veilleux_Kirk_2014 reprints Kirk_Kay_2004 -> none | SR163: Veilleux_Kirk_2014 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Veilleux_Kirk_2014,value_origin=published; studies=heffner1993|r
+Homo sapiens,Visual_acuity_anatomical.cdeg,sensory performance,Veilleux_Kirk_2014,secondary,False,,SR143: Veilleux_Kirk_2014 reprints Kirk_Kay_2004 -> none | SR163: Veilleux_Kirk_2014 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Veilleux_Kirk_2014,value_origin=published; studies=pettigrew1988|j
+Macaca mulatta,Visual_acuity_anatomical.cdeg,sensory performance,Veilleux_Kirk_2014,secondary,False,,SR143: Veilleux_Kirk_2014 reprints Kirk_Kay_2004 -> none | SR163: Veilleux_Kirk_2014 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Veilleux_Kirk_2014,value_origin=published; studies=cowey1967|a+cavonius1973|c
+Macaca nemestrina,Visual_acuity_anatomical.cdeg,sensory performance,Veilleux_Kirk_2014,secondary,False,,SR143: Veilleux_Kirk_2014 reprints Kirk_Kay_2004 -> none | SR163: Veilleux_Kirk_2014 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Veilleux_Kirk_2014,value_origin=published; studies=valois1974|r
+Microcebus murinus,Visual_acuity_anatomical.cdeg,sensory performance,Veilleux_Kirk_2014,secondary,False,,SR143: Veilleux_Kirk_2014 reprints Kirk_Kay_2004 -> none | SR163: Veilleux_Kirk_2014 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Veilleux_Kirk_2014,value_origin=published; studies=dkhissi2001|o
+Mus musculus,Visual_acuity_anatomical.cdeg,sensory performance,Veilleux_Kirk_2014,secondary,False,,SR143: Veilleux_Kirk_2014 reprints Kirk_Kay_2004 -> none | SR163: Veilleux_Kirk_2014 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Veilleux_Kirk_2014,value_origin=published; studies=prusky2000|g
+Oryctolagus cuniculus,Visual_acuity_anatomical.cdeg,sensory performance,Veilleux_Kirk_2014,secondary,False,,SR143: Veilleux_Kirk_2014 reprints Kirk_Kay_2004 -> none | SR163: Veilleux_Kirk_2014 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Veilleux_Kirk_2014,value_origin=published; studies=van1967|m
+Pan troglodytes,Visual_acuity_anatomical.cdeg,sensory performance,Veilleux_Kirk_2014,secondary,False,,SR143: Veilleux_Kirk_2014 reprints Kirk_Kay_2004 -> none | SR163: Veilleux_Kirk_2014 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Veilleux_Kirk_2014,value_origin=published; studies=spence1934|k
+Rattus norvegicus,Visual_acuity_anatomical.cdeg,sensory performance,Heffner_Heffner_1992_a; Veilleux_Kirk_2014,mixed,False,,SR143: Veilleux_Kirk_2014 reprints Kirk_Kay_2004 -> none | SR163: Veilleux_Kirk_2014 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Veilleux_Kirk_2014 | SR172: Kirk_Kay_2004 reprints Heffner_Heffner_1992_a -> none | SR177: Koay_etal_1998 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Koay_etal_1998 | SR185: Heffner_Heffner_2010_b reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Heffner_Heffner_2010_b | SR186: Heffner_etal_1994_c reprints Heffner_Heffner_1992_a -> none | SR202: Ravizza_Masterton_1972 reprints Heffner_Heffner_1992_a -> Ravizza_Masterton_1972 over Heffner_Heffner_1992_a,value_origin=published; studies=SELF:Heffner_Heffner_1992_a_TABLE1:norway rat wild; seymoure1997|p
+Tupaia belangeri,Visual_acuity_anatomical.cdeg,sensory performance,Veilleux_Kirk_2014,secondary,False,,SR143: Veilleux_Kirk_2014 reprints Kirk_Kay_2004 -> none | SR163: Veilleux_Kirk_2014 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Veilleux_Kirk_2014,value_origin=published; studies=petry1984|h
+Homo sapiens,Visual_acuity_method_unstated.cdeg,sensory performance,Heffner_Heffner_1992_a,secondary,False,,SR163: Veilleux_Kirk_2014 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Veilleux_Kirk_2014 | SR172: Kirk_Kay_2004 reprints Heffner_Heffner_1992_a -> none | SR177: Koay_etal_1998 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Koay_etal_1998 | SR185: Heffner_Heffner_2010_b reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Heffner_Heffner_2010_b | SR186: Heffner_etal_1994_c reprints Heffner_Heffner_1992_a -> none | SR202: Ravizza_Masterton_1972 reprints Heffner_Heffner_1992_a -> Ravizza_Masterton_1972 over Heffner_Heffner_1992_a,value_origin=published; studies=cavonius1973

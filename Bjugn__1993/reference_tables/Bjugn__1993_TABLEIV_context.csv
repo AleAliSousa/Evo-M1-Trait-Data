@@ -1,0 +1,30 @@
+Reference,key,value,source_locus,provenance_note
+Bjugn__1993_TABLEIV,species_as_published,mouse,"Title; Methods, p. 25",Common name only; no inline canonical binomial mapping.
+Bjugn__1993_TABLEIV,Strain,Bom:NMRI,"Methods, p. 25",Whitespace normalized from printed Bom: NMRI.
+Bjugn__1993_TABLEIV,Sex,male,"Methods, p. 25",All five enrolled animals.
+Bjugn__1993_TABLEIV,AgeStage,adult,"Methods, p. 25",No exact age is printed for these study animals.
+Bjugn__1993_TABLEIV,Tissue,gray matter,"TABLE IV / TABLE V, p. 29",White matter and ependymal cells are not added.
+Bjugn__1993_TABLEIV,StudyEnrolledN,5,"Methods, p. 25; TABLE I, p. 26","Study enrollment, not the number of independent analysis rows."
+Bjugn__1993_TABLEIV,StudyAnimalIDs,1; 2; 3; 4; 5,"TABLE I / TABLE II, pp. 26, 28",Same five animals across this paper; no extra biological subjects.
+Bjugn__1993_TABLEIV,CohortDependency,same paper cohort as Bjugn__1993_TABLEI and Bjugn__1993_TABLEII,"Methods / Results, pp. 25–28",Not an independent replication of TABLE II.
+Bjugn__1993_TABLEIV,SourceCountUnit,10^6 cells,"TABLE IV / TABLE V captions, p. 29",Only count measures multiply by 10^6; published zeros remain zero.
+Bjugn__1993_TABLEIV,SourceVolumeUnit,mm³,"TABLE IV / TABLE V, p. 29",Already project-standard; no volumetric shrinkage correction.
+Bjugn__1993_TABLEIV,SourceReader,Microsoft Copilot AI assistant,Transcription provenance,AI reader; never a human visual curator.
+Bjugn__1993_TABLEIV,SourceReadDate,2026-10-10,Transcription provenance,"ISO date, America/Los_Angeles (Pacific)."
+Bjugn__1993_TABLEIV,HumanVisualCuration,,Curation status,Intentionally blank: no human visual confirmation was supplied.
+Bjugn__1993_TABLEIV,PublicationGate,HOLD: owner DOI correction and canonical R validation required,Registry / runtime gates,No public TSV is generated or delivered by this batch.
+Bjugn__1993_TABLEIV,SourceDOI,10.1016/0006-8993(93)90744-8,PubMed PMID 8293301 (bibliographic check only),"One article DOI, not a table-specific DOI."
+Bjugn__1993_TABLEIV,SourcePMID,8293301,PubMed bibliographic check,"Scientific values were read from the held PDF, not a web abstract."
+Bjugn__1993_TABLEIV,CellTypingLimitations,"No clear-cut neuronal identification criteria; neurons may be classified as glial or unidentified, and glia may occur in neuronal categories 2 and 3.","Discussion, pp. 29–30",Author warns cell-category estimates require care; no reclassification.
+Bjugn__1993_TABLEIV,EndothelialDefinition,Includes pericytes and smooth muscle cells.,"Cell classification, p. 26",Not restricted to vascular endothelial cells alone.
+Bjugn__1993_TABLEIV,UnidentifiedDefinition,"Cells not assigned as neuronal, glial or endothelial.","Cell classification, p. 26",Never silently redistributed to glia.
+Bjugn__1993_TABLEIV,ShrinkageCorrection,none applied by author; none added,"Tissue selection and treatment, p. 31",Source explicitly states no correction for volumetric changes during tissue processing.
+Bjugn__1993_TABLEIV,Reference,Bjugn__1993_TABLEIV,Exact existing Item name,Preserve uppercase TABLEIV / TABLEV.
+Bjugn__1993_TABLEIV,Statistic,mean,"TABLE IV, p. 29","Published mean versus within-animal estimate, not new species replicates."
+Bjugn__1993_TABLEIV,EstimateType,published regional cohort mean,"TABLE IV, p. 29",Not direct enumeration; no inferred neuronal classes.
+Bjugn__1993_TABLEIV,ObservationLevel,regional_cohort_mean_contributor_n_unknown,"TABLE IV; Results, pp. 28–29","Four spatial regions, not four animals or independent species means."
+Bjugn__1993_TABLEIV,ContributingAnimalsN,,"TABLE IV; Methods / Results, pp. 27–29",Not explicit for these regional means. Do not substitute the five enrolled animals or automatically infer four.
+Bjugn__1993_TABLEIV,ContributingAnimalsStatus,unknown: regional-mean contributor n not explicitly stated,"TABLE IV; Results, p. 28","Results report an average 201 gray / 80 white cells sampled for animals 1, 3, 4, 5; animal 2 had separate horn/middle sampling. This does not explicitly identify TABLE IV contributor n."
+Bjugn__1993_TABLEIV,ConfidenceNote,Author cell-typing limitations; contributor n unresolved; no per-region SD or CE printed.,"Methods / Results / Discussion, pp. 26–30",Confidence is distinct from source legibility and from estimate type.
+Bjugn__1993_TABLEIV,SourceDiscrepancyNote,"Printed regional volumes sum to 25.2 mm³, not TABLE I enrolled-cohort mean 24.48 mm³; contributor/estimator basis unresolved. No repair.","TABLE IV, p. 29; TABLE I, p. 26",No rescaling or replacement by whole-cord means.
+Bjugn__1993_TABLEIV,RowNote:Sacro-coc-cygeal,"TABLE IV prints 0.6 million neurons here, while the paper abstract prints 0.4 million; retain TABLE IV 0.6 unchanged.","Held PDF TABLE IV, p. 29 / abstract, p. 25","Source inconsistency, not a transcription correction."

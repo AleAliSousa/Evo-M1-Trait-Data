@@ -1,0 +1,21 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+source_row,One-based analysis row in printed order (caption/header/group lines not counted).,,,,info,platypus (source common name),Pettigrew_etal_1998_Table1,,Table 1 / item context
+species_as_published,"Common name platypus from paper context, not a canonical binomial mapping.",,,,info,platypus (source common name),Pettigrew_etal_1998_Table1,,Table 1 / item context
+visual_area_as_published,Vr or Vc cortical group exactly as printed; no inferred anatomical equivalence.,,,,info,platypus (source common name),Pettigrew_etal_1998_Table1,,Table 1 / item context
+recording_site_pair_as_published,Printed pair label using an en dash.,,,,info,platypus (source common name),Pettigrew_etal_1998_Table1,,Table 1 / item context
+recording_site_1,First recording site parsed from the printed pair; character identifier.,,,,info,platypus (source common name),Pettigrew_etal_1998_Table1,,Table 1 / item context
+recording_site_2,Second recording site parsed from the printed pair; character identifier.,,,,info,platypus (source common name),Pettigrew_etal_1998_Table1,,Table 1 / item context
+recording_site_separation_mm,Separation between the paired recording sites on cortex.,visual cortex (source term; ontology not assigned),Length.mm,printed site-pair separation,primary,platypus (source common name),Pettigrew_etal_1998_Table1,Printed mm retained; no conversion.,"Table 1, p.1201"
+receptive_field_separation_deg,Receptive-field separation associated with a recording-site pair.,visual receptive field (source term),Angle.deg,approximate separation (ca.),primary,platypus (source common name),Pettigrew_etal_1998_Table1,ca. is retained in snapshot and represented by the approximation flag.,"Table 1, p.1201"
+receptive_field_separation_approximate,TRUE when the receptive-field separation prints ca.; all nine rows do.,,,,info,platypus (source common name),Pettigrew_etal_1998_Table1,,Table 1 / item context
+cortical_magnification_mm_per_deg,Printed cortical magnification factor; author-calculated value retained exactly.,visual cortex (source term; ontology not assigned),Magnification.mm_per_deg,printed author-calculated factor,primary,platypus (source common name),Pettigrew_etal_1998_Table1,NOT recomputed from separations; not area magnification or a new independently measured trait.,"Table 1, p.1201"
+data_role,Primary author-reported calculation based on contributed visual-cortex recording data; not independent new recordings.,,,,info,platypus (source common name),Pettigrew_etal_1998_Table1,,Table 1 / item context
+source_ref_key,Printed source-context citation key; split multi-keys on ; then join to ref_key in item references lookup.,,,,info,platypus (source common name),Pettigrew_etal_1998_Table1,Join source_ref_key to item references ref_key after splitting on ; .,Table 1 / item context
+source_locus,Published location and additional measurement-provenance context.,,,,info,platypus (source common name),Pettigrew_etal_1998_Table1,,Table 1 / item context
+source_pdf_page,One-based source PDF page containing Table 1.,,,,info,platypus (source common name),Pettigrew_etal_1998_Table1,,Table 1 / item context
+source_printed_page,Printed journal page containing Table 1.,,,,info,platypus (source common name),Pettigrew_etal_1998_Table1,,Table 1 / item context
+source_year,"Publication year, not the AI extraction date.",,,,info,platypus (source common name),Pettigrew_etal_1998_Table1,,Table 1 / item context
+merge_gate,No merge requested; contextual overlap with the existing Table 2 and non-species-mean observation level must be resolved.,,,,info,platypus (source common name),Pettigrew_etal_1998_Table1,,Table 1 / item context
+Method:observation_level,One row per recording-site pair within Vr or Vc; nine within-species rows are not nine animals or species.,,,,method,platypus (source common name),Pettigrew_etal_1998_Table1,,
+Method:units,"mm, degrees, and mm/deg already match intended units; no unit rescaling.",,,,method,platypus (source common name),Pettigrew_etal_1998_Table1,,
+Method:reader,Microsoft Copilot AI assistant; extraction and PDF-render inspection on 2026-10-10 America/Los_Angeles; human visual curation blank.,,,,method,platypus (source common name),Pettigrew_etal_1998_Table1,,

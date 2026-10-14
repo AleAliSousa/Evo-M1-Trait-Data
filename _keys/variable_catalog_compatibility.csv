@@ -840,6 +840,7 @@ Visual_cortex | surface area,Visual_cortex,surface area,1,1,Baron_etal_1996,Chir
 Vmo | volume,Vmo,volume,1,1,DeCasien_Higham_2019,primates,secondary,FALSE
 WholeBrain | length,WholeBrain,length,1,1,Baron_etal_1996,Chiroptera,primary,FALSE
 XII | volume,XII,volume,1,1,DeCasien_Higham_2019,primates,secondary,FALSE
+adjacent white matter | volume,adjacent white matter,volume,1,1,Zhang_Sejnowski_2000,Mammalia,secondary,FALSE
 averaged L/R) | Cerebral cortex,averaged L/R),Cerebral cortex,1,1,Mackes_etal_2020,primary,group mean,FALSE
 behavior | repertoire size,behavior,repertoire size,1,1,Changizi__2003,Mammalia,secondary,FALSE
 behavior/cognition | cognitive performance rank,behavior/cognition,cognitive performance rank,1,1,Deaner_etal_2006,Primates,secondary,FALSE
@@ -874,6 +875,7 @@ limb | category,limb,category,1,1,MedinaGonzález__2026,Mammals,primary,FALSE
 medial cerebellum | volume,medial cerebellum,volume,1,1,Smaers_etal_2018,Mammalia (primates + outgroups),secondary,FALSE
 mesial frontal cortex | volume,mesial frontal cortex,volume,1,1,Schenker_etal_2005,Hominidae + Hylobatidae,primary,FALSE
 mesial frontal gyral white matter | volume,mesial frontal gyral white matter,volume,1,1,Schenker_etal_2005,Hominidae + Hylobatidae,primary,FALSE
+neocortical gray matter | volume,neocortical gray matter,volume,1,1,Zhang_Sejnowski_2000,Mammalia,secondary,FALSE
 non-adopted) | see Region,non-adopted),see Region,1,1,Walhovd_etal_2011,info,group,FALSE
 orbit | sample_size,orbit,sample_size,1,1,Heesy__2004,Mammalia,primary,FALSE
 orbital frontal cortex | volume,orbital frontal cortex,volume,1,1,Schenker_etal_2005,Hominidae + Hylobatidae,primary,FALSE

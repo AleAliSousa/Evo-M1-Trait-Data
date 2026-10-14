@@ -60,7 +60,7 @@ key_file <- if (!is.na(base)) file.path(base, "_keys", "Stephan", "species_key.c
 Species  <- NA_character_
 if (!is.na(key_file) && file.exists(key_file)) {
   key <- read.csv(key_file, stringsAsFactors = FALSE, check.names = FALSE)
-  key <- key[key$source_publication == "Turner2016", ]
+  key <- key[key$source_publication == "Turner_etal_2016", ]
   lk  <- setNames(key$accepted_name, tolower(trimws(key$variant_name)))
   Species <- unname(lk[tolower(species_printed)])
 }

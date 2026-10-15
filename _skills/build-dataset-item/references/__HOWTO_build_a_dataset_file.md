@@ -332,7 +332,11 @@ variables. `_keys/build_variable_catalog.R` reads every `*_definitions.csv` into
 paper accessible without inserting it into the snapshot:
 
 - Secondary references printed per row or value →
-  `reference_tables/<Item>_references.csv`, item-scoped and join-ready.
+  `reference_tables/<Item>_references.csv` (`ref_key, cited_in_column, citation, note`; one row
+  per individual key, `cited_in_column` = the item column holding the key), item-scoped and
+  join-ready. `build_source_match(paper_dir, item)` (`_tools/dataset_builder/source_match.R`)
+  then derives which source supports which variable for which species —
+  `_tools/dataset_builder/SOURCE_MATCH_CONVENTION.md`.
 - Species binomials and anatomical disambiguation → the appropriate collection-specific `_keys/`
   file, while preserving the paper's printed term in the analysis data.
 - Key values described only in prose → a separately named constructed source such as

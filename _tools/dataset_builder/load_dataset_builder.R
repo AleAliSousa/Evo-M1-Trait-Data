@@ -12,6 +12,10 @@
 ##   build_dataset_item()     — run the item's build script and validate output
 ##   render_errata()          — validate <Paper>_errata.csv and regenerate its README block
 ##                              and definitions notes (ERRATA_CONVENTION.md)
+##   build_source_match()     — one item: join reference_tables/<Item>_references.csv onto the
+##                              item's cells -> _source_match / _summary / _issues CSVs
+##   source_match_all()       — every item with a references file; index in _checks/
+##                              (SOURCE_MATCH_CONVENTION.md)
 ## Plus the helper:
 ##   repo_root()              — walk up to the directory containing __ReadMe.xlsx
 
@@ -46,6 +50,7 @@ source(file.path(.ldb_dir, "render_errata.R"))        # errata schema + renderer
 source(file.path(.ldb_dir, "validate_dataset_item.R"))
 source(file.path(.ldb_dir, "audit_dataset_item.R"))
 source(file.path(.ldb_dir, "build_dataset_item.R"))
+source(file.path(.ldb_dir, "source_match.R"))         # source -> variable match (standalone, base R)
 
 ## ---- repo_root() helper -----------------------------------------------------
 ## Walk up from `from` (default: current working directory) until a directory

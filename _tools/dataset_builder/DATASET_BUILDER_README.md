@@ -84,6 +84,8 @@ _skills/build-dataset-item/references/__HOWTO_make_a_snapshot.md
 | `build_dataset_item.R` | Runs the item build script then calls validate |
 | `render_errata.R` | Errata schema check + renderer: `<Paper>_errata.csv` -> README `## Errata` block + definitions notes (see `ERRATA_CONVENTION.md`) |
 | `ERRATA_CONVENTION.md` | The one-source / three-renderings errata convention |
+| `source_match.R` | `build_source_match(paper_dir, item)` / `source_match_all(root)`: joins `reference_tables/<Item>_references.csv` back onto the item's cells → `<Item>_source_match.csv` (row × variable × individual ref), `_summary.csv` (ref × variable, species), `_issues.csv`; proposes `<Item>_reference_columns.csv` (see `SOURCE_MATCH_CONVENTION.md`) |
+| `SOURCE_MATCH_CONVENTION.md` | The source → variable match convention for secondary-data items (reference list, key-column declaration, outputs, vocabularies) |
 | `COMPILER_DECISIONS_CONTRACT.md` | Stage-11 contract for the `*_refs_check` pipelines: the five compiler-decision tables (coverage inverse, error taxonomy, averaging tests, source priority, discoveries) |
 | `compiler_decisions_helpers.R` | Shared R functions for stage 11 (`cd_coverage_inverse`, `cd_learn_colmap`, `cd_error_taxonomy`, `cd_averaging_tests`, `cd_source_priority`, `cd_discovery`, `cd_md_table`); sourced by the pipelines via `EVOM1_ROOT` |
 | `COMPILATION_LESSONS.md` | Cross-pipeline rules for the next compilation, each traced to a stage-11 finding and to the `__merging_*` rule that encodes it |

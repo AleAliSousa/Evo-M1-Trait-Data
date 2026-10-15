@@ -1,0 +1,31 @@
+built:           2026-10-15 03:16:40 PDT
+repo commit:     731f7ac (from .git/HEAD; git command unavailable)
+cohort:          V1 (17 species)
+match level:     genus  (any congener / Genus sp. / hybrid label counts; values pooled across them)
+core threshold:  >= 80% of cohort (>= 14 species)
+species without any data: none
+long rows (all values):   8258
+  of which measurement:   8160
+species x variable cells: 3426
+variables in wide:        597   (matrix fill 33.8%)
+variables in wide_core:   33   (matrix fill 94.3%)
+cells unresolved categorical: 16
+cells with numeric spread > 50%: 177
+units: 597 from key, 0 from merge rows, 0 parsed from label, 0 none
+variables flagged m1_motor_related: 94 (of which core: 0)
+domains excluded from wide/cells/dictionary: dataset metadata
+
+variables per domain (all / core / m1_motor_related):
+  brain structure & size            175 /    5 /    5
+  cellular composition              119 /    0 /    3
+  cortical & cerebellar folding       9 /    1 /    0
+  body size                           2 /    1 /    0
+  metabolism                         64 /    2 /    2
+  life history                       18 /    8 /    0
+  diet & ecology                     22 /   15 /    0
+  behaviour & cognition              20 /    0 /    9
+  sensorimotor & motor pathways      21 /    0 /   21
+  hand & limb morphology             22 /    0 /   22
+  sleep & torpor                      7 /    0 /    0
+  cellular morphology               107 /    0 /   32
+  sensory performance                11 /    1 /    0

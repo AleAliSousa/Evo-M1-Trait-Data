@@ -1,0 +1,31 @@
+built:           2026-10-15 03:12:43 PDT
+repo commit:     731f7ac (from .git/HEAD; git command unavailable)
+cohort:          EvoM1 (25 species)
+match level:     genus  (any congener / Genus sp. / hybrid label counts; values pooled across them)
+core threshold:  >= 80% of cohort (>= 20 species)
+species without any data: none
+long rows (all values):   11316
+  of which measurement:   11150
+species x variable cells: 5090
+variables in wide:        597   (matrix fill 34.1%)
+variables in wide_core:   36   (matrix fill 90.7%)
+cells unresolved categorical: 25
+cells with numeric spread > 50%: 283
+units: 597 from key, 0 from merge rows, 0 parsed from label, 0 none
+variables flagged m1_motor_related: 96 (of which core: 0)
+domains excluded from wide/cells/dictionary: dataset metadata
+
+variables per domain (all / core / m1_motor_related):
+  brain structure & size            175 /    5 /    5
+  cellular composition              119 /    7 /    3
+  cortical & cerebellar folding       9 /    1 /    0
+  body size                           2 /    1 /    0
+  metabolism                         64 /    2 /    2
+  life history                       18 /    5 /    0
+  diet & ecology                     22 /   15 /    0
+  behaviour & cognition              20 /    0 /    9
+  sensorimotor & motor pathways      23 /    0 /   23
+  hand & limb morphology             22 /    0 /   22
+  sleep & torpor                      5 /    0 /    0
+  cellular morphology               107 /    0 /   32
+  sensory performance                11 /    0 /    0

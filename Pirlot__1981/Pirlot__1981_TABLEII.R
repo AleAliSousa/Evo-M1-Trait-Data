@@ -27,11 +27,15 @@ component <- c("BO","N","RH","PY","S","Di","STR","Hi","M","C","O","Sz")
 panels <- list(3:17, 21:31, 35:36)
 labels <- c(1L,19L,33L)
 num <- function(x) {
- if(anyNA(x) || any(!grepl("^[0-9]+(\\.[0-9])?$", x)))
+ if(anyNA(x) || any(!grepl("^[0-9]+(\\.[0-9]+)?$", x)))
   stop("TABLE II: missing or invalid number (expected source precision of one decimal).", call.=FALSE)
  x <- as.numeric(x)
  stopifnot(all(is.finite(x)), all(x>0))
- x
+ ## Allow Excel's floating-point transport tails only when converting to source tenths.
+ tenths <- x*10
+ if(any(!is.finite(tenths)) || any(abs(tenths-round(tenths))>1e-8))
+  stop("TABLE II: number exceeds source precision of one decimal.", call.=FALSE)
+ round(tenths)/10
 }
 clean <- do.call(rbind, lapply(seq_along(panels), function(k) {
  cols <- panels[[k]]; lab <- labels[k]

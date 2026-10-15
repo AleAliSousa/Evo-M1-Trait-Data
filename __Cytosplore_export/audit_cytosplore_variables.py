@@ -6,7 +6,8 @@ variables exported for the Cytosplore viewer.
 Run AFTER build_cytosplore_traits.R (it reads that script's output):
 
     python3 __Cytosplore_export/audit_cytosplore_variables.py            # EvoM1
-    python3 __Cytosplore_export/audit_cytosplore_variables.py V1
+    python3 __Cytosplore_export/audit_cytosplore_variables.py V1 species
+    python3 __Cytosplore_export/audit_cytosplore_variables.py HMBA genus    # reads output/HMBA_genus/
 
 Standard library only. Two questions, answered per exported variable:
 
@@ -46,9 +47,13 @@ import csv, os, re, sys, unicodedata, collections, datetime
 
 csv.field_size_limit(10 ** 8)
 COHORT = sys.argv[1] if len(sys.argv) > 1 and sys.argv[1] else "EvoM1"
+LEVEL = (sys.argv[2] if len(sys.argv) > 2 and sys.argv[2] else "species").lower()
+if LEVEL not in ("species", "genus"):
+    sys.exit("match level must be 'species' or 'genus'")
+PREFIX = f"{COHORT}_genus" if LEVEL == "genus" else COHORT
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(HERE)
-OUT = os.path.join(HERE, "output", COHORT)
+OUT = os.path.join(HERE, "output", PREFIX)
 if not os.path.isdir(OUT):
     sys.exit(f"{OUT} not found -- run build_cytosplore_traits.R first")
 
@@ -60,10 +65,10 @@ def strip_acc(s):
     return "".join(c for c in unicodedata.normalize("NFKD", s) if not unicodedata.combining(c))
 
 # ---------------------------------------------------------------- keys
-species_tbl = rd(os.path.join(OUT, f"{COHORT}_species.csv"))
-dictionary  = rd(os.path.join(OUT, f"{COHORT}_variable_dictionary.csv"))
-cells       = rd(os.path.join(OUT, f"{COHORT}_traits_cells.csv"))
-longtab     = rd(os.path.join(OUT, f"{COHORT}_traits_long.csv"))
+species_tbl = rd(os.path.join(OUT, f"{PREFIX}_species.csv"))
+dictionary  = rd(os.path.join(OUT, f"{PREFIX}_variable_dictionary.csv"))
+cells       = rd(os.path.join(OUT, f"{PREFIX}_traits_cells.csv"))
+longtab     = rd(os.path.join(OUT, f"{PREFIX}_traits_long.csv"))
 # sources already pooled per cell by the merges (n_sources where the merge
 # reports it, else the number of long rows behind the cell)
 _ns = collections.defaultdict(list)
@@ -505,7 +510,7 @@ pool_rows.sort(key=lambda r: -r["gain_if_pooled"])
 
 # ---------------------------------------------------------------- write
 def wcsv(rows, name):
-    p = os.path.join(OUT, f"{COHORT}_{name}.csv")
+    p = os.path.join(OUT, f"{PREFIX}_{name}.csv")
     with open(p, "w", encoding="utf-8", newline="") as f:
         w = csv.DictWriter(f, fieldnames=list(rows[0].keys())); w.writeheader(); w.writerows(rows)
     print(f"  wrote {os.path.basename(p):<40} {len(rows):>6} rows")
@@ -532,7 +537,7 @@ for r in sec_rows:
     for p in r["compilations"].split("; "):
         if p: by_comp[p] += 1
 lines = [
-    f"# {COHORT} variable audit -- sources and poolability",
+    f"# {COHORT} variable audit -- sources and poolability ({LEVEL}-level match)",
     "", f"Built {datetime.date.today()} by `__Cytosplore_export/audit_cytosplore_variables.py` "
         f"from the tables in this folder and the repo keys.", "",
     "## Q1. Secondary compilations vs primary sources", "",

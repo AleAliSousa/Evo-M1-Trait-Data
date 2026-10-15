@@ -1,11 +1,11 @@
-# EvoM1 variable audit -- sources and poolability
+# EvoM1 variable audit -- sources and poolability (species-level match)
 
-Built 2026-10-14 by `__Cytosplore_export/audit_cytosplore_variables.py` from the tables in this folder and the repo keys.
+Built 2026-10-15 by `__Cytosplore_export/audit_cytosplore_variables.py` from the tables in this folder and the repo keys.
 
 ## Q1. Secondary compilations vs primary sources
 
-- 581 exported variables; 3639 species x variable cells.
-- cells with at least one primary source: 2760
+- 582 exported variables; 3642 species x variable cells.
+- cells with at least one primary source: 2763
 - cells fed only by compilations (secondary): 763 in 144 variables
 - of those, cells where a PRIMARY value for the same species and structure x measure exists in the compiled database (another variable of the same compatibility group): 52
 - cells whose role could not be resolved: 116
@@ -36,7 +36,7 @@ Variables with secondary-only cells for which a primary exists in the same group
 - `Length` (12 sp): 12 secondary-only cells; primary for 1 of them via SpinalCord | motor_pathway
 - `Largest fiber diameter µm` (8 sp): 8 secondary-only cells; primary for 8 of them via CorticospinalTract | motor_pathway
 - `Endocranial_volume_female (mL)` (7 sp): 6 secondary-only cells; primary for 6 of them via family: brain_size
-- `Brain_Mass_mass_or_volume (g)` (20 sp): 5 secondary-only cells; primary for 5 of them via family: brain_size
+- `Brain_Mass_mass_or_volume (g)` (19 sp): 5 secondary-only cells; primary for 5 of them via family: brain_size
 - `Number of fibers per tract` (9 sp): 4 secondary-only cells; primary for 4 of them via CorticospinalTract | motor_pathway
 - `Endocranial_volume (mL)` (11 sp): 2 secondary-only cells; primary for 2 of them via family: brain_size
 - `V1_pyramidal_L3_basal_dendritic_field_area [LYinj] (um2)` (2 sp): 2 secondary-only cells; primary for 1 of them via family: basal_dendritic_field_area
@@ -60,7 +60,7 @@ Variables with secondary-only cells for which a primary exists in the same group
 
 Source class of exported variables:
 
-- primary-backed: 420
+- primary-backed: 421
 - compilation-only: 105
 - mixed (some species compilation-only): 33
 - role unknown (source lacks role in definitions): 17
@@ -68,10 +68,10 @@ Source class of exported variables:
 
 Suggested tier (cohort species covered):
 
-- broad (10-19 sp): 108
-- core (>=20 sp): 20
+- broad (10-19 sp): 109
+- core (>=20 sp): 19
 - minimal (<3 sp): 147
-- sparse (3-9 sp): 306
+- sparse (3-9 sp): 307
 
 ## Q2. Poolability and individual relevance
 
@@ -83,7 +83,7 @@ Suggested tier (cohort species covered):
 
 Top pooling candidates (gain in cohort species):
 
-- family: brain_size: 8 vars, best single 22 -> union 25 (+3); bases: mass_measured_excl_ob: 1; mass_or_volume_mixed: 1; mass_measured: 1; sum_of_parts_incl_ob: 2; endocranial_volume: 1; endocranial_volume_female: 1; volume_net: 1 -- do not pool across bases; pool within a basis only
+- family: brain_size: 9 vars, best single 22 -> union 25 (+3); bases: mass_measured_excl_ob: 1; mass_from_volume_or_ecv: 1; mass_or_volume_mixed: 1; mass_measured: 1; sum_of_parts_incl_ob: 2; endocranial_volume: 1; endocranial_volume_female: 1; volume_net: 1 -- do not pool across bases; pool within a basis only
 - family: spine_count: 9 vars, best single 4 -> union 6 (+2); bases: spine_count__golgi: 6; spine_count__LYinj: 3 -- do not pool across bases; pool within a basis only
 - family: cff: 2 vars, best single 5 -> union 7 (+2); bases: cff_behavioural: 1; cff_electrophysiological: 1 -- do not pool across bases; pool within a basis only
 - SpinalCord | motor_pathway: 5 vars, best single 13 -> union 14 (+1); bases: (none): 5 -- little to gain

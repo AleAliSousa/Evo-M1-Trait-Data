@@ -1,0 +1,600 @@
+variable,domain,unit,m1_motor_related,n_species__EC,pct__EC,n_species__EC_genus,pct__EC_genus,n_species__EvoM1,pct__EvoM1,n_species__EvoM1_genus,pct__EvoM1_genus,n_species__HMBA,pct__HMBA,n_species__HMBA_genus,pct__HMBA_genus,n_species__V1,pct__V1,n_species__V1_genus,pct__V1_genus
+Dexterity (1-7 scale),behaviour & cognition,1-7 scale,TRUE,8,57.1,9,64.3,16,64.0,18,72.0,3,75.0,3,75.0,11,64.7,12,70.6
+Extractive_foraging (category),behaviour & cognition,category,TRUE,3,21.4,4,28.6,5,20.0,8,32.0,2,50.0,3,75.0,3,17.6,4,23.5
+Extractive_foraging_reduced_report_count (reports),behaviour & cognition,reports,FALSE,5,35.7,5,35.7,10,40.0,11,44.0,2,50.0,2,50.0,6,35.3,6,35.3
+Extractive_foraging_report_count (reports),behaviour & cognition,reports,FALSE,5,35.7,5,35.7,10,40.0,11,44.0,2,50.0,2,50.0,6,35.3,6,35.3
+Handedness_index_mean (HI),behaviour & cognition,HI,TRUE,2,14.3,3,21.4,6,24.0,8,32.0,1,25.0,2,50.0,2,11.8,3,17.6
+Handedness_strength_mean (abs(HI)),behaviour & cognition,HI,TRUE,2,14.3,3,21.4,6,24.0,8,32.0,1,25.0,2,50.0,2,11.8,3,17.6
+Hand–eye,behaviour & cognition,ordinal,TRUE,6,42.9,6,42.9,12,48.0,13,52.0,2,50.0,2,50.0,8,47.1,8,47.1
+Innovation_reduced_report_count (reports),behaviour & cognition,reports,FALSE,5,35.7,5,35.7,10,40.0,11,44.0,2,50.0,2,50.0,6,35.3,6,35.3
+Innovation_report_count (reports),behaviour & cognition,reports,FALSE,5,35.7,5,35.7,10,40.0,11,44.0,2,50.0,2,50.0,6,35.3,6,35.3
+Manipulation_complexity (score),behaviour & cognition,score,TRUE,3,21.4,4,28.6,5,20.0,8,32.0,2,50.0,3,75.0,3,17.6,4,23.5
+Population_group_size,behaviour & cognition,count,FALSE,3,21.4,3,21.4,5,20.0,6,24.0,1,25.0,1,25.0,4,23.5,4,23.5
+Social_group_size,behaviour & cognition,count,FALSE,6,42.9,6,42.9,11,44.0,12,48.0,2,50.0,2,50.0,8,47.1,8,47.1
+Social_learning_report_count (reports),behaviour & cognition,reports,FALSE,5,35.7,5,35.7,10,40.0,11,44.0,2,50.0,2,50.0,6,35.3,6,35.3
+Social_system,behaviour & cognition,category,FALSE,10,71.4,11,78.6,16,64.0,18,72.0,4,100.0,4,100.0,11,64.7,12,70.6
+Tool_Manufacture (category),behaviour & cognition,category,TRUE,3,21.4,3,21.4,7,28.0,8,32.0,2,50.0,2,50.0,3,17.6,3,17.6
+Tool_use (category),behaviour & cognition,category,TRUE,5,35.7,6,42.9,10,40.0,13,52.0,3,75.0,3,75.0,6,35.3,7,41.2
+Tool_use_reduced_report_count (reports),behaviour & cognition,reports,FALSE,5,35.7,5,35.7,10,40.0,11,44.0,2,50.0,2,50.0,6,35.3,6,35.3
+Tool_use_report_count (reports),behaviour & cognition,reports,FALSE,5,35.7,5,35.7,10,40.0,11,44.0,2,50.0,2,50.0,6,35.3,6,35.3
+True_Tool_Use (category),behaviour & cognition,category,TRUE,2,14.3,2,14.3,6,24.0,7,28.0,1,25.0,1,25.0,2,11.8,2,11.8
+VocalRepertoire (count),behaviour & cognition,count,FALSE,3,21.4,3,21.4,8,32.0,9,36.0,2,50.0,2,50.0,3,17.6,3,17.6
+Adult_head_body_length_mm,body size,mm,FALSE,9,64.3,9,64.3,15,60.0,16,64.0,2,50.0,2,50.0,11,64.7,11,64.7
+Body_Mass (g),body size,g,FALSE,14,100.0,14,100.0,25,100.0,25,100.0,4,100.0,4,100.0,17,100.0,17,100.0
+AccessoryOlfactoryBulb_Vol.mm3,brain structure & size,mm3,FALSE,2,14.3,4,28.6,2,8.0,6,24.0,1,25.0,1,25.0,2,11.8,5,29.4
+AccessoryOlfactoryBulb_layer_6_Vol.mm3,brain structure & size,mm3,FALSE,2,14.3,4,28.6,2,8.0,6,24.0,1,25.0,1,25.0,2,11.8,5,29.4
+AccessoryOlfactoryBulb_layers_1_2_Vol.mm3,brain structure & size,mm3,FALSE,2,14.3,4,28.6,2,8.0,6,24.0,1,25.0,1,25.0,2,11.8,5,29.4
+AccessoryOlfactoryBulb_layers_3_5_Vol.mm3,brain structure & size,mm3,FALSE,2,14.3,4,28.6,2,8.0,6,24.0,1,25.0,1,25.0,2,11.8,5,29.4
+Agranular_insular_cortex_Vol.mm3,brain structure & size,mm3,FALSE,2,14.3,3,21.4,3,12.0,5,20.0,1,25.0,2,50.0,2,11.8,3,17.6
+Agranular_insular_cortex_left_Vol.mm3,brain structure & size,mm3,FALSE,2,14.3,3,21.4,3,12.0,5,20.0,1,25.0,2,50.0,2,11.8,3,17.6
+Agranular_insular_cortex_right_Vol.mm3,brain structure & size,mm3,FALSE,2,14.3,2,14.3,3,12.0,3,12.0,1,25.0,1,25.0,2,11.8,2,11.8
+Amygdala_Mass (g),brain structure & size,g,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,0,0.0,0,0.0,1,5.9,1,5.9
+Amygdala_Vol.mm3,brain structure & size,mm3,FALSE,8,57.1,11,78.6,11,44.0,17,68.0,3,75.0,3,75.0,8,47.1,12,70.6
+Amygdala_accessory_basal_nucleus_Vol.mm3,brain structure & size,mm3,FALSE,2,14.3,2,14.3,3,12.0,3,12.0,1,25.0,1,25.0,2,11.8,2,11.8
+Amygdala_basal_nucleus_Vol.mm3,brain structure & size,mm3,FALSE,2,14.3,2,14.3,3,12.0,3,12.0,1,25.0,1,25.0,2,11.8,2,11.8
+Amygdala_basolateral_division_Vol.mm3,brain structure & size,mm3,FALSE,2,14.3,2,14.3,3,12.0,3,12.0,1,25.0,1,25.0,2,11.8,2,11.8
+Amygdala_lateral_nucleus_Vol.mm3,brain structure & size,mm3,FALSE,2,14.3,2,14.3,3,12.0,3,12.0,1,25.0,1,25.0,2,11.8,2,11.8
+Area_10_right_Vol.mm3,brain structure & size,mm3,FALSE,2,14.3,2,14.3,3,12.0,3,12.0,1,25.0,1,25.0,2,11.8,2,11.8
+Area_13_right_Vol.mm3,brain structure & size,mm3,FALSE,2,14.3,2,14.3,3,12.0,3,12.0,1,25.0,1,25.0,2,11.8,2,11.8
+Area_striata_Vol.mm3,brain structure & size,mm3,FALSE,5,35.7,7,50.0,7,28.0,12,48.0,3,75.0,3,75.0,5,29.4,8,47.1
+Area_striata_grey_matter_Vol.mm3,brain structure & size,mm3,FALSE,5,35.7,7,50.0,7,28.0,12,48.0,3,75.0,3,75.0,5,29.4,8,47.1
+Area_striata_grey_matter_left_Vol.mm3,brain structure & size,mm3,FALSE,2,14.3,3,21.4,3,12.0,5,20.0,1,25.0,2,50.0,2,11.8,3,17.6
+Area_striata_lamina_1_Vol.mm3,brain structure & size,mm3,FALSE,4,28.6,6,42.9,5,20.0,8,32.0,2,50.0,2,50.0,4,23.5,6,35.3
+Area_striata_laminae_2_6_Vol.mm3,brain structure & size,mm3,FALSE,4,28.6,6,42.9,5,20.0,8,32.0,2,50.0,2,50.0,4,23.5,6,35.3
+Area_striata_white_matter_Vol.mm3,brain structure & size,mm3,FALSE,5,35.7,7,50.0,7,28.0,12,48.0,3,75.0,3,75.0,5,29.4,8,47.1
+Brain_Mass_excl_olfactory_bulb (g),brain structure & size,g,FALSE,9,64.3,11,78.6,13,52.0,19,76.0,4,100.0,4,100.0,11,64.7,13,76.5
+Brain_Mass_from_volume_or_ecv (g),brain structure & size,g,FALSE,3,21.4,3,21.4,4,16.0,7,28.0,2,50.0,2,50.0,3,17.6,3,17.6
+Brain_Mass_mass_or_volume (g),brain structure & size,g,FALSE,9,64.3,14,100.0,19,76.0,25,100.0,4,100.0,4,100.0,12,70.6,17,100.0
+Brain_Mass_measured (g),brain structure & size,g,FALSE,14,100.0,14,100.0,22,88.0,23,92.0,4,100.0,4,100.0,17,100.0,17,100.0
+Brain_size_sum_of_structures (g),brain structure & size,g,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,0,0.0,0,0.0,1,5.9,1,5.9
+Bulbus_olfactorius_Vol.mm3,brain structure & size,mm3,FALSE,7,50.0,9,64.3,9,36.0,14,56.0,3,75.0,3,75.0,7,41.2,10,58.8
+Bulbus_olfactorius_accessorius_Vol.mm3,brain structure & size,mm3,FALSE,5,35.7,7,50.0,7,28.0,12,48.0,3,75.0,3,75.0,5,29.4,8,47.1
+CA1_Vol.mm3,brain structure & size,mm3,FALSE,4,28.6,5,35.7,6,24.0,9,36.0,2,50.0,2,50.0,4,23.5,6,35.3
+CA2_Vol.mm3,brain structure & size,mm3,FALSE,4,28.6,5,35.7,6,24.0,9,36.0,2,50.0,2,50.0,4,23.5,6,35.3
+CA3_Vol.mm3,brain structure & size,mm3,FALSE,4,28.6,5,35.7,6,24.0,9,36.0,2,50.0,2,50.0,4,23.5,6,35.3
+Capsula_interna_Vol.mm3,brain structure & size,mm3,FALSE,3,21.4,4,28.6,5,20.0,8,32.0,1,25.0,1,25.0,3,17.6,5,29.4
+CerebellarCortex_Vol.mm3,brain structure & size,mm3,FALSE,4,28.6,8,57.1,6,24.0,12,48.0,1,25.0,1,25.0,5,29.4,9,52.9
+CerebellarHemisphere_Vol.mm3,brain structure & size,mm3,FALSE,6,42.9,10,71.4,10,40.0,18,72.0,3,75.0,3,75.0,7,41.2,11,64.7
+CerebellarVermis_Vol.mm3,brain structure & size,mm3,FALSE,6,42.9,10,71.4,10,40.0,18,72.0,3,75.0,3,75.0,7,41.2,11,64.7
+Cerebellar_nuclei_total_Vol.mm3,brain structure & size,mm3,FALSE,7,50.0,11,78.6,11,44.0,19,76.0,3,75.0,3,75.0,8,47.1,13,76.5
+Cerebellum_Mass (g),brain structure & size,g,FALSE,9,64.3,11,78.6,15,60.0,20,80.0,4,100.0,4,100.0,11,64.7,13,76.5
+Cerebellum_Vol.mm3,brain structure & size,mm3,FALSE,9,64.3,13,92.9,15,60.0,22,88.0,3,75.0,3,75.0,10,58.8,15,88.2
+Cerebellum_grey_matter_Vol.mm3,brain structure & size,mm3,FALSE,4,28.6,6,42.9,5,20.0,11,44.0,1,25.0,1,25.0,4,23.5,7,41.2
+Cerebellum_white_matter_Vol.mm3,brain structure & size,mm3,FALSE,7,50.0,11,78.6,10,40.0,18,72.0,2,50.0,2,50.0,8,47.1,13,76.5
+CerebralCortex_Mass (g),brain structure & size,g,FALSE,9,64.3,11,78.6,13,52.0,19,76.0,4,100.0,4,100.0,11,64.7,13,76.5
+Cerebral_hemispheres_Vol.mm3,brain structure & size,mm3,FALSE,2,14.3,2,14.3,3,12.0,3,12.0,1,25.0,1,25.0,2,11.8,2,11.8
+Commissura_anterior_Vol.mm3,brain structure & size,mm3,FALSE,5,35.7,7,50.0,7,28.0,12,48.0,3,75.0,3,75.0,5,29.4,8,47.1
+Complexus_centromedialis_Vol.mm3,brain structure & size,mm3,FALSE,5,35.7,7,50.0,7,28.0,12,48.0,3,75.0,3,75.0,5,29.4,8,47.1
+Complexus_corticobasolateralis_Vol.mm3,brain structure & size,mm3,FALSE,5,35.7,7,50.0,7,28.0,12,48.0,3,75.0,3,75.0,5,29.4,8,47.1
+Complexus_sensorius_trigeminalis_Vol.mm3,brain structure & size,mm3,FALSE,5,35.7,7,50.0,7,28.0,12,48.0,3,75.0,3,75.0,5,29.4,8,47.1
+Complexus_vestibularis_Vol.mm3,brain structure & size,mm3,FALSE,5,35.7,7,50.0,7,28.0,12,48.0,3,75.0,3,75.0,5,29.4,8,47.1
+Complexus_vestibularis_unilateral_Vol.mm3,brain structure & size,mm3,FALSE,5,35.7,7,50.0,7,28.0,12,48.0,3,75.0,3,75.0,5,29.4,8,47.1
+Corpus_geniculatum_laterale_Vol.mm3,brain structure & size,mm3,FALSE,5,35.7,7,50.0,7,28.0,12,48.0,3,75.0,3,75.0,5,29.4,8,47.1
+Corpus_geniculatum_laterale_left_Vol.mm3,brain structure & size,mm3,FALSE,2,14.3,3,21.4,3,12.0,5,20.0,1,25.0,2,50.0,2,11.8,3,17.6
+Corpus_pineal_Vol.mm3,brain structure & size,mm3,FALSE,5,35.7,7,50.0,7,28.0,12,48.0,3,75.0,3,75.0,5,29.4,8,47.1
+Corpus_subcommissurale_Vol.mm3,brain structure & size,mm3,FALSE,5,35.7,7,50.0,7,28.0,12,48.0,3,75.0,3,75.0,5,29.4,8,47.1
+Corpus_subfornicale_Vol.mm3,brain structure & size,mm3,FALSE,5,35.7,7,50.0,7,28.0,12,48.0,3,75.0,3,75.0,5,29.4,8,47.1
+CorticalExposedSurface_Area.mm2,brain structure & size,mm2,FALSE,7,50.0,9,64.3,9,36.0,15,60.0,3,75.0,4,100.0,9,52.9,11,64.7
+CorticalSurface_Area.mm2,brain structure & size,mm2,FALSE,10,71.4,11,78.6,14,56.0,18,72.0,4,100.0,4,100.0,13,76.5,14,82.4
+CorticalThickness.mm,brain structure & size,mm,FALSE,7,50.0,9,64.3,9,36.0,15,60.0,3,75.0,4,100.0,9,52.9,11,64.7
+DiencephalonStriatum_Mass.g,brain structure & size,g,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,0,0.0,0,0.0,1,5.9,1,5.9
+Diencephalon_Vol.mm3,brain structure & size,mm3,FALSE,6,42.9,8,57.1,8,32.0,13,52.0,3,75.0,3,75.0,6,35.3,9,52.9
+Diencephalon_excluding_globus_pallidus_Vol.mm3,brain structure & size,mm3,FALSE,1,7.1,2,14.3,2,8.0,3,12.0,0,0.0,0,0.0,1,5.9,2,11.8
+Dysgranular_insular_cortex_Vol.mm3,brain structure & size,mm3,FALSE,2,14.3,3,21.4,3,12.0,5,20.0,1,25.0,2,50.0,2,11.8,3,17.6
+Dysgranular_insular_cortex_left_Vol.mm3,brain structure & size,mm3,FALSE,2,14.3,3,21.4,3,12.0,5,20.0,1,25.0,2,50.0,2,11.8,3,17.6
+Dysgranular_insular_cortex_right_Vol.mm3,brain structure & size,mm3,FALSE,2,14.3,2,14.3,3,12.0,3,12.0,1,25.0,1,25.0,2,11.8,2,11.8
+Endocranial_volume (mL),brain structure & size,mL,FALSE,6,42.9,6,42.9,11,44.0,13,52.0,3,75.0,3,75.0,7,41.2,7,41.2
+Endocranial_volume_female (mL),brain structure & size,mL,FALSE,2,14.3,3,21.4,7,28.0,9,36.0,1,25.0,2,50.0,2,11.8,3,17.6
+EntorhinalCortex_Mass (g),brain structure & size,g,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,0,0.0,0,0.0,1,5.9,1,5.9
+EntorhinalCortex_Vol.mm3,brain structure & size,mm3,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,0,0.0,0,0.0,1,5.9,1,5.9
+Epithalamus_Vol.mm3,brain structure & size,mm3,FALSE,3,21.4,4,28.6,5,20.0,8,32.0,1,25.0,1,25.0,3,17.6,5,29.4
+Facial_motor_nucleus_left_Vol.mm3,brain structure & size,mm3,TRUE,5,35.7,6,42.9,7,28.0,11,44.0,3,75.0,3,75.0,5,29.4,7,41.2
+Fascia_dentata_Vol.mm3,brain structure & size,mm3,FALSE,4,28.6,5,35.7,6,24.0,9,36.0,2,50.0,2,50.0,4,23.5,6,35.3
+FlocculonodularLobe_Vol.mm3,brain structure & size,mm3,FALSE,4,28.6,8,57.1,6,24.0,12,48.0,1,25.0,1,25.0,5,29.4,9,52.9
+FrontalCortex_grey_matter_Vol.mm3,brain structure & size,mm3,FALSE,2,14.3,2,14.3,4,16.0,4,16.0,1,25.0,1,25.0,2,11.8,2,11.8
+FrontalCortex_white_matter_Vol.mm3,brain structure & size,mm3,FALSE,2,14.3,2,14.3,4,16.0,4,16.0,1,25.0,1,25.0,2,11.8,2,11.8
+FrontalMotor_Surface_Area.mm2,brain structure & size,mm2,TRUE,4,28.6,4,28.6,4,16.0,6,24.0,3,75.0,3,75.0,4,23.5,4,23.5
+Granular_insular_cortex_Vol.mm3,brain structure & size,mm3,FALSE,2,14.3,3,21.4,3,12.0,5,20.0,1,25.0,2,50.0,2,11.8,3,17.6
+Granular_insular_cortex_left_Vol.mm3,brain structure & size,mm3,FALSE,2,14.3,3,21.4,3,12.0,5,20.0,1,25.0,2,50.0,2,11.8,3,17.6
+Granular_insular_cortex_right_Vol.mm3,brain structure & size,mm3,FALSE,2,14.3,2,14.3,3,12.0,3,12.0,1,25.0,1,25.0,2,11.8,2,11.8
+HP_HS_fibers_Vol.mm3,brain structure & size,mm3,FALSE,4,28.6,5,35.7,6,24.0,9,36.0,2,50.0,2,50.0,4,23.5,6,35.3
+Hilus_Vol.mm3,brain structure & size,mm3,FALSE,4,28.6,5,35.7,6,24.0,9,36.0,2,50.0,2,50.0,4,23.5,6,35.3
+Hippocampus_Mass (g),brain structure & size,g,FALSE,3,21.4,3,21.4,4,16.0,5,20.0,0,0.0,0,0.0,4,23.5,4,23.5
+Hippocampus_Vol.mm3,brain structure & size,mm3,FALSE,8,57.1,11,78.6,11,44.0,17,68.0,3,75.0,3,75.0,8,47.1,12,70.6
+Hippocampus_retrocommissuralis_Vol.mm3,brain structure & size,mm3,FALSE,4,28.6,5,35.7,6,24.0,9,36.0,2,50.0,2,50.0,4,23.5,6,35.3
+Hypoglossal_nucleus_left_Vol.mm3,brain structure & size,mm3,FALSE,5,35.7,6,42.9,7,28.0,11,44.0,3,75.0,3,75.0,5,29.4,7,41.2
+Hypothalamus_Mass (g),brain structure & size,g,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,0,0.0,0,0.0,1,5.9,1,5.9
+Hypothalamus_Vol.mm3,brain structure & size,mm3,FALSE,4,28.6,5,35.7,6,24.0,9,36.0,1,25.0,1,25.0,4,23.5,6,35.3
+Insula_Vol.mm3,brain structure & size,mm3,FALSE,2,14.3,3,21.4,3,12.0,5,20.0,1,25.0,2,50.0,2,11.8,3,17.6
+Insula_left_Vol.mm3,brain structure & size,mm3,FALSE,2,14.3,3,21.4,3,12.0,5,20.0,1,25.0,2,50.0,2,11.8,3,17.6
+Insula_right_Vol.mm3,brain structure & size,mm3,FALSE,2,14.3,2,14.3,3,12.0,3,12.0,1,25.0,1,25.0,2,11.8,2,11.8
+Interpositus_cerebellar_nuclei_Vol.mm3,brain structure & size,mm3,FALSE,5,35.7,7,50.0,7,28.0,12,48.0,3,75.0,3,75.0,5,29.4,8,47.1
+Lateral_cerebellar_nuclei_Vol.mm3,brain structure & size,mm3,FALSE,5,35.7,7,50.0,7,28.0,12,48.0,3,75.0,3,75.0,5,29.4,8,47.1
+Lobus_piriformis_Vol.mm3,brain structure & size,mm3,FALSE,5,35.7,7,50.0,7,28.0,12,48.0,3,75.0,3,75.0,5,29.4,8,47.1
+M1_Surface_Area.mm2,brain structure & size,mm2,TRUE,2,14.3,2,14.3,3,12.0,5,20.0,0,0.0,0,0.0,3,17.6,3,17.6
+Medial_cerebellar_nuclei_Vol.mm3,brain structure & size,mm3,FALSE,5,35.7,7,50.0,7,28.0,12,48.0,3,75.0,3,75.0,5,29.4,8,47.1
+Medulla_Mass (g),brain structure & size,g,FALSE,1,7.1,1,7.1,1,4.0,2,8.0,0,0.0,0,0.0,1,5.9,1,5.9
+Medulla_Vol.mm3,brain structure & size,mm3,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,0,0.0,0,0.0,1,5.9,1,5.9
+Medulla_oblongata_Vol.mm3,brain structure & size,mm3,FALSE,7,50.0,10,71.4,10,40.0,16,64.0,3,75.0,3,75.0,7,41.2,11,64.7
+Mesencephalon_Mass (g),brain structure & size,g,FALSE,1,7.1,1,7.1,1,4.0,2,8.0,0,0.0,0,0.0,1,5.9,1,5.9
+Mesencephalon_Vol.mm3,brain structure & size,mm3,FALSE,6,42.9,9,64.3,9,36.0,15,60.0,3,75.0,3,75.0,6,35.3,10,58.8
+Middle_temporal_visual_area_Vol.mm3,brain structure & size,mm3,FALSE,4,28.6,5,35.7,5,20.0,8,32.0,2,50.0,2,50.0,4,23.5,6,35.3
+Neocortex_Mass (g),brain structure & size,g,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,0,0.0,0,0.0,1,5.9,1,5.9
+Neocortex_Vol.mm3,brain structure & size,mm3,FALSE,9,64.3,11,78.6,12,48.0,17,68.0,3,75.0,3,75.0,9,52.9,12,70.6
+Neocortex_grey_matter_Vol.mm3,brain structure & size,mm3,FALSE,7,50.0,9,64.3,9,36.0,14,56.0,3,75.0,3,75.0,7,41.2,10,58.8
+Neocortex_lamina_1_Vol.mm3,brain structure & size,mm3,FALSE,4,28.6,6,42.9,5,20.0,8,32.0,2,50.0,2,50.0,4,23.5,6,35.3
+Neocortex_laminae_2_6_Vol.mm3,brain structure & size,mm3,FALSE,4,28.6,6,42.9,5,20.0,8,32.0,2,50.0,2,50.0,4,23.5,6,35.3
+Neocortex_white_matter_Vol.mm3,brain structure & size,mm3,FALSE,7,50.0,9,64.3,9,36.0,14,56.0,3,75.0,3,75.0,7,41.2,10,58.8
+Neonate_brain_weight_g,brain structure & size,g,FALSE,9,64.3,10,71.4,15,60.0,17,68.0,4,100.0,4,100.0,12,70.6,13,76.5
+Nucleus_amygdalae_basalis_pars_magnocellularis_Vol.mm3,brain structure & size,mm3,FALSE,5,35.7,7,50.0,7,28.0,12,48.0,3,75.0,3,75.0,5,29.4,8,47.1
+Nucleus_habenularis_medialis_Vol.mm3,brain structure & size,mm3,FALSE,5,35.7,7,50.0,7,28.0,12,48.0,3,75.0,3,75.0,5,29.4,8,47.1
+Nucleus_olivaris_inferior_accessorius_Vol.mm3,brain structure & size,mm3,FALSE,5,35.7,7,50.0,7,28.0,12,48.0,3,75.0,3,75.0,5,29.4,8,47.1
+Nucleus_olivaris_inferior_accessorius_dorsalis_Vol.mm3,brain structure & size,mm3,FALSE,5,35.7,7,50.0,7,28.0,12,48.0,3,75.0,3,75.0,5,29.4,8,47.1
+Nucleus_olivaris_inferior_accessorius_medialis_Vol.mm3,brain structure & size,mm3,FALSE,5,35.7,7,50.0,7,28.0,12,48.0,3,75.0,3,75.0,5,29.4,8,47.1
+Nucleus_olivaris_inferior_principalis_Vol.mm3,brain structure & size,mm3,FALSE,5,35.7,7,50.0,7,28.0,12,48.0,3,75.0,3,75.0,5,29.4,8,47.1
+Nucleus_septalis_triangularis_Vol.mm3,brain structure & size,mm3,FALSE,5,35.7,7,50.0,7,28.0,12,48.0,3,75.0,3,75.0,5,29.4,8,47.1
+Nucleus_subthalamicus_Vol.mm3,brain structure & size,mm3,FALSE,3,21.4,4,28.6,5,20.0,8,32.0,1,25.0,1,25.0,3,17.6,5,29.4
+Nucleus_tractus_olfactorius_Vol.mm3,brain structure & size,mm3,FALSE,4,28.6,6,42.9,4,16.0,9,36.0,3,75.0,3,75.0,4,23.5,7,41.2
+Nucleus_vestibularis_descendens_Vol.mm3,brain structure & size,mm3,FALSE,5,35.7,7,50.0,7,28.0,12,48.0,3,75.0,3,75.0,5,29.4,8,47.1
+Nucleus_vestibularis_descendens_unilateral_Vol.mm3,brain structure & size,mm3,FALSE,5,35.7,7,50.0,7,28.0,12,48.0,3,75.0,3,75.0,5,29.4,8,47.1
+Nucleus_vestibularis_lateralis_Vol.mm3,brain structure & size,mm3,FALSE,5,35.7,7,50.0,7,28.0,12,48.0,3,75.0,3,75.0,5,29.4,8,47.1
+Nucleus_vestibularis_lateralis_unilateral_Vol.mm3,brain structure & size,mm3,FALSE,5,35.7,7,50.0,7,28.0,12,48.0,3,75.0,3,75.0,5,29.4,8,47.1
+Nucleus_vestibularis_medialis_Vol.mm3,brain structure & size,mm3,FALSE,5,35.7,7,50.0,7,28.0,12,48.0,3,75.0,3,75.0,5,29.4,8,47.1
+Nucleus_vestibularis_medialis_unilateral_Vol.mm3,brain structure & size,mm3,FALSE,5,35.7,7,50.0,7,28.0,12,48.0,3,75.0,3,75.0,5,29.4,8,47.1
+Nucleus_vestibularis_superior_Vol.mm3,brain structure & size,mm3,FALSE,5,35.7,7,50.0,7,28.0,12,48.0,3,75.0,3,75.0,5,29.4,8,47.1
+Nucleus_vestibularis_superior_unilateral_Vol.mm3,brain structure & size,mm3,FALSE,5,35.7,7,50.0,7,28.0,12,48.0,3,75.0,3,75.0,5,29.4,8,47.1
+OlfactoryBulb_Mass (g),brain structure & size,g,FALSE,8,57.1,10,71.4,10,40.0,14,56.0,3,75.0,3,75.0,9,52.9,11,64.7
+OlfactoryBulb_Vol.mm3,brain structure & size,mm3,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,0,0.0,0,0.0,1,5.9,1,5.9
+OlfactoryCortices_Mass (g),brain structure & size,g,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,0,0.0,0,0.0,1,5.9,1,5.9
+OlfactoryCortices_Vol.mm3,brain structure & size,mm3,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,0,0.0,0,0.0,1,5.9,1,5.9
+OtherAssociation_Surface_Area.mm2,brain structure & size,mm2,TRUE,4,28.6,4,28.6,4,16.0,6,24.0,3,75.0,3,75.0,4,23.5,4,23.5
+Palaeocortex_Vol.mm3,brain structure & size,mm3,FALSE,5,35.7,8,57.1,6,24.0,10,40.0,2,50.0,2,50.0,5,29.4,8,47.1
+Palaeocortex_plus_amygdala_Vol.mm3,brain structure & size,mm3,FALSE,5,35.7,7,50.0,6,24.0,11,44.0,3,75.0,3,75.0,5,29.4,8,47.1
+Pallidum_Vol.mm3,brain structure & size,mm3,FALSE,3,21.4,4,28.6,5,20.0,8,32.0,1,25.0,1,25.0,3,17.6,5,29.4
+PonsMedulla_Mass.g,brain structure & size,g,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,0,0.0,0,0.0,1,5.9,1,5.9
+Pontine_and_reticulotegmental_nuclei_Vol.mm3,brain structure & size,mm3,FALSE,4,28.6,8,57.1,6,24.0,12,48.0,1,25.0,1,25.0,5,29.4,9,52.9
+PrefrontalCortex_grey_matter_Vol.mm3,brain structure & size,mm3,FALSE,2,14.3,2,14.3,4,16.0,4,16.0,1,25.0,1,25.0,2,11.8,2,11.8
+PrefrontalCortex_grey_matter_left_Vol.mm3,brain structure & size,mm3,FALSE,2,14.3,2,14.3,4,16.0,4,16.0,1,25.0,1,25.0,2,11.8,2,11.8
+PrefrontalCortex_grey_matter_right_Vol.mm3,brain structure & size,mm3,FALSE,2,14.3,2,14.3,4,16.0,4,16.0,1,25.0,1,25.0,2,11.8,2,11.8
+PrefrontalCortex_white_matter_Vol.mm3,brain structure & size,mm3,FALSE,2,14.3,2,14.3,4,16.0,4,16.0,1,25.0,1,25.0,2,11.8,2,11.8
+PrefrontalCortex_white_matter_left_Vol.mm3,brain structure & size,mm3,FALSE,2,14.3,2,14.3,4,16.0,4,16.0,1,25.0,1,25.0,2,11.8,2,11.8
+PrefrontalCortex_white_matter_right_Vol.mm3,brain structure & size,mm3,FALSE,2,14.3,2,14.3,4,16.0,4,16.0,1,25.0,1,25.0,2,11.8,2,11.8
+Prefrontal_Surface_Area.mm2,brain structure & size,mm2,FALSE,4,28.6,4,28.6,4,16.0,6,24.0,3,75.0,3,75.0,4,23.5,4,23.5
+Prepiriform_cortex_Vol.mm3,brain structure & size,mm3,FALSE,5,35.7,7,50.0,7,28.0,12,48.0,3,75.0,3,75.0,5,29.4,8,47.1
+Retrobulbar_cortex_Vol.mm3,brain structure & size,mm3,FALSE,5,35.7,7,50.0,7,28.0,12,48.0,3,75.0,3,75.0,5,29.4,8,47.1
+RoB_Mass (g),brain structure & size,g,FALSE,9,64.3,11,78.6,13,52.0,19,76.0,4,100.0,4,100.0,11,64.7,13,76.5
+Schizo_cortex_Vol.mm3,brain structure & size,mm3,FALSE,7,50.0,10,71.4,10,40.0,16,64.0,3,75.0,3,75.0,7,41.2,11,64.7
+Septum_Mass (g),brain structure & size,g,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,0,0.0,0,0.0,1,5.9,1,5.9
+Septum_Vol.mm3,brain structure & size,mm3,FALSE,8,57.1,11,78.6,11,44.0,17,68.0,3,75.0,3,75.0,8,47.1,12,70.6
+SpinalCord_Length.mm,brain structure & size,mm,FALSE,1,7.1,3,21.4,2,8.0,6,24.0,1,25.0,1,25.0,2,11.8,4,23.5
+SpinalCord_Mass (g),brain structure & size,g,FALSE,3,21.4,5,35.7,4,16.0,9,36.0,2,50.0,2,50.0,4,23.5,6,35.3
+SpinalCord_p.C.CNS.mass,brain structure & size,%,FALSE,3,21.4,5,35.7,4,16.0,8,32.0,2,50.0,2,50.0,4,23.5,6,35.3
+Striatum_Mass (g),brain structure & size,g,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,0,0.0,0,0.0,1,5.9,1,5.9
+Striatum_Vol.mm3,brain structure & size,mm3,FALSE,7,50.0,9,64.3,9,36.0,14,56.0,3,75.0,3,75.0,7,41.2,10,58.8
+Striatum_including_globus_pallidus_Vol.mm3,brain structure & size,mm3,FALSE,1,7.1,2,14.3,2,8.0,3,12.0,0,0.0,0,0.0,1,5.9,2,11.8
+Subiculum_Vol.mm3,brain structure & size,mm3,FALSE,4,28.6,5,35.7,6,24.0,9,36.0,2,50.0,2,50.0,4,23.5,6,35.3
+Substantia_innominata_Vol.mm3,brain structure & size,mm3,FALSE,5,35.7,7,50.0,7,28.0,12,48.0,3,75.0,3,75.0,5,29.4,8,47.1
+Subthalamus_Vol.mm3,brain structure & size,mm3,FALSE,3,21.4,4,28.6,5,20.0,8,32.0,1,25.0,1,25.0,3,17.6,5,29.4
+Tectum_Mass (g),brain structure & size,g,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,0,0.0,0,0.0,1,5.9,1,5.9
+Tectum_Vol.mm3,brain structure & size,mm3,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,0,0.0,0,0.0,1,5.9,1,5.9
+Tegmentum_Mass (g),brain structure & size,g,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,0,0.0,0,0.0,1,5.9,1,5.9
+Tegmentum_Vol.mm3,brain structure & size,mm3,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,0,0.0,0,0.0,1,5.9,1,5.9
+Telencephalon_Vol.mm3,brain structure & size,mm3,FALSE,6,42.9,8,57.1,8,32.0,13,52.0,3,75.0,3,75.0,6,35.3,9,52.9
+Thalamus_Mass (g),brain structure & size,g,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,0,0.0,0,0.0,1,5.9,1,5.9
+Thalamus_Vol.mm3,brain structure & size,mm3,FALSE,4,28.6,5,35.7,6,24.0,9,36.0,1,25.0,1,25.0,4,23.5,6,35.3
+Total_brain_net_volume_Vol.mm3,brain structure & size,mm3,FALSE,9,64.3,12,85.7,15,60.0,21,84.0,3,75.0,3,75.0,10,58.8,14,82.4
+Tractus_olfactorius_lateralis_Vol.mm3,brain structure & size,mm3,FALSE,5,35.7,7,50.0,7,28.0,12,48.0,3,75.0,3,75.0,5,29.4,8,47.1
+Tractus_opticus_Vol.mm3,brain structure & size,mm3,FALSE,3,21.4,4,28.6,5,20.0,8,32.0,1,25.0,1,25.0,3,17.6,5,29.4
+Trigeminal_motor_nucleus_left_Vol.mm3,brain structure & size,mm3,TRUE,5,35.7,6,42.9,7,28.0,11,44.0,3,75.0,3,75.0,5,29.4,7,41.2
+Tuberculum_olfactorium_Vol.mm3,brain structure & size,mm3,FALSE,5,35.7,7,50.0,7,28.0,12,48.0,3,75.0,3,75.0,5,29.4,8,47.1
+V1_Surface_Area.mm2,brain structure & size,mm2,FALSE,4,28.6,4,28.6,4,16.0,7,28.0,3,75.0,3,75.0,4,23.5,4,23.5
+V2_Surface_Area.mm2,brain structure & size,mm2,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,0,0.0,0,0.0,1,5.9,1,5.9
+Ventral_pons_Vol.mm3,brain structure & size,mm3,FALSE,5,35.7,7,50.0,7,28.0,12,48.0,3,75.0,3,75.0,5,29.4,8,47.1
+Ventricles_Vol.mm3,brain structure & size,mm3,FALSE,6,42.9,7,50.0,10,40.0,12,48.0,3,75.0,3,75.0,7,41.2,8,47.1
+WholeBrainOlfactoryBulb_Mass.g,brain structure & size,g,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,0,0.0,0,0.0,1,5.9,1,5.9
+fronto_insular_cortex_Vol.mm3,brain structure & size,mm3,FALSE,2,14.3,2,14.3,3,12.0,3,12.0,1,25.0,1,25.0,2,11.8,2,11.8
+fronto_insular_cortex_left_Vol.mm3,brain structure & size,mm3,FALSE,2,14.3,2,14.3,3,12.0,3,12.0,1,25.0,1,25.0,2,11.8,2,11.8
+fronto_insular_cortex_right_Vol.mm3,brain structure & size,mm3,FALSE,2,14.3,2,14.3,3,12.0,3,12.0,1,25.0,1,25.0,2,11.8,2,11.8
+n_cortical_areas,brain structure & size,count,FALSE,7,50.0,8,57.1,8,32.0,10,40.0,4,100.0,4,100.0,8,47.1,9,52.9
+Cerebellum_C.n,cellular composition,count,FALSE,9,64.3,11,78.6,14,56.0,20,80.0,4,100.0,4,100.0,11,64.7,13,76.5
+Cerebellum_I.n,cellular composition,count,FALSE,2,14.3,2,14.3,3,12.0,4,16.0,0,0.0,0,0.0,3,17.6,3,17.6
+Cerebellum_I.p.C,cellular composition,ratio,FALSE,2,14.3,2,14.3,3,12.0,4,16.0,0,0.0,0,0.0,3,17.6,3,17.6
+Cerebellum_I.p.mg,cellular composition,cells/mg,FALSE,2,14.3,2,14.3,3,12.0,4,16.0,0,0.0,0,0.0,3,17.6,3,17.6
+Cerebellum_N.n,cellular composition,count,FALSE,9,64.3,11,78.6,14,56.0,20,80.0,4,100.0,4,100.0,11,64.7,13,76.5
+Cerebellum_N.p.mg,cellular composition,cells/mg,FALSE,9,64.3,11,78.6,14,56.0,20,80.0,4,100.0,4,100.0,11,64.7,13,76.5
+Cerebellum_O.n,cellular composition,count,FALSE,9,64.3,11,78.6,14,56.0,20,80.0,4,100.0,4,100.0,11,64.7,13,76.5
+Cerebellum_O.p.N,cellular composition,ratio,FALSE,9,64.3,11,78.6,14,56.0,20,80.0,4,100.0,4,100.0,11,64.7,13,76.5
+Cerebellum_O.p.mg,cellular composition,cells/mg,FALSE,9,64.3,11,78.6,14,56.0,20,80.0,4,100.0,4,100.0,11,64.7,13,76.5
+Cerebellum_p.C.N,cellular composition,%,FALSE,9,64.3,11,78.6,14,56.0,20,80.0,4,100.0,4,100.0,11,64.7,13,76.5
+CerebralCortexGrey_N.n,cellular composition,count,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,0,0.0,0,0.0,1,5.9,1,5.9
+CerebralCortexGrey_N.p.mg,cellular composition,cells/mg,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,0,0.0,0,0.0,1,5.9,1,5.9
+CerebralCortexGrey_O.p.N,cellular composition,ratio,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,0,0.0,0,0.0,1,5.9,1,5.9
+CerebralCortexNoHippocampus_I.p.C,cellular composition,ratio,FALSE,2,14.3,2,14.3,3,12.0,4,16.0,0,0.0,0,0.0,3,17.6,3,17.6
+CerebralCortex_C.n,cellular composition,count,FALSE,9,64.3,11,78.6,13,52.0,19,76.0,4,100.0,4,100.0,11,64.7,13,76.5
+CerebralCortex_I.n,cellular composition,count,FALSE,3,21.4,5,35.7,6,24.0,11,44.0,1,25.0,2,50.0,5,29.4,7,41.2
+CerebralCortex_I.p.C,cellular composition,ratio,FALSE,3,21.4,5,35.7,7,28.0,11,44.0,1,25.0,2,50.0,5,29.4,7,41.2
+CerebralCortex_I.p.mg,cellular composition,cells/mg,FALSE,3,21.4,5,35.7,6,24.0,11,44.0,1,25.0,2,50.0,5,29.4,7,41.2
+CerebralCortex_N.n,cellular composition,count,FALSE,9,64.3,11,78.6,13,52.0,19,76.0,4,100.0,4,100.0,11,64.7,13,76.5
+CerebralCortex_N.p.mg,cellular composition,cells/mg,FALSE,9,64.3,11,78.6,13,52.0,19,76.0,4,100.0,4,100.0,11,64.7,13,76.5
+CerebralCortex_O.n,cellular composition,count,FALSE,9,64.3,11,78.6,13,52.0,19,76.0,4,100.0,4,100.0,11,64.7,13,76.5
+CerebralCortex_O.p.N,cellular composition,ratio,FALSE,9,64.3,11,78.6,13,52.0,19,76.0,4,100.0,4,100.0,11,64.7,13,76.5
+CerebralCortex_O.p.mg,cellular composition,cells/mg,FALSE,9,64.3,11,78.6,13,52.0,19,76.0,4,100.0,4,100.0,11,64.7,13,76.5
+CerebralCortex_p.C.N,cellular composition,%,FALSE,9,64.3,11,78.6,13,52.0,19,76.0,4,100.0,4,100.0,11,64.7,13,76.5
+DiencephalonStriatum_N.n,cellular composition,count,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,0,0.0,0,0.0,1,5.9,1,5.9
+DiencephalonStriatum_N.p.mg,cellular composition,cells/mg,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,0,0.0,0,0.0,1,5.9,1,5.9
+DiencephalonStriatum_O.p.N,cellular composition,ratio,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,0,0.0,0,0.0,1,5.9,1,5.9
+GLI_area10_all_layers (%),cellular composition,%,FALSE,3,21.4,3,21.4,4,16.0,5,20.0,2,50.0,2,50.0,3,17.6,3,17.6
+GLI_area10_granular (%),cellular composition,%,FALSE,3,21.4,3,21.4,4,16.0,5,20.0,2,50.0,2,50.0,3,17.6,3,17.6
+GLI_area10_infragranular (%),cellular composition,%,FALSE,3,21.4,3,21.4,4,16.0,5,20.0,2,50.0,2,50.0,3,17.6,3,17.6
+GLI_area10_supragranular (%),cellular composition,%,FALSE,3,21.4,3,21.4,4,16.0,5,20.0,2,50.0,2,50.0,3,17.6,3,17.6
+GLI_area13_all_layers (%),cellular composition,%,FALSE,3,21.4,3,21.4,4,16.0,5,20.0,2,50.0,2,50.0,3,17.6,3,17.6
+GLI_area13_granular (%),cellular composition,%,FALSE,3,21.4,3,21.4,4,16.0,5,20.0,2,50.0,2,50.0,3,17.6,3,17.6
+GLI_area13_infragranular (%),cellular composition,%,FALSE,3,21.4,3,21.4,4,16.0,5,20.0,2,50.0,2,50.0,3,17.6,3,17.6
+GLI_area13_supragranular (%),cellular composition,%,FALSE,3,21.4,3,21.4,4,16.0,5,20.0,2,50.0,2,50.0,3,17.6,3,17.6
+GLI_area23_posterior_cingulate_granular (%),cellular composition,%,FALSE,4,28.6,5,35.7,4,16.0,8,32.0,3,75.0,3,75.0,4,23.5,5,29.4
+GLI_area23_posterior_cingulate_infragranular (%),cellular composition,%,FALSE,4,28.6,5,35.7,4,16.0,8,32.0,3,75.0,3,75.0,4,23.5,5,29.4
+GLI_area23_posterior_cingulate_supragranular (%),cellular composition,%,FALSE,4,28.6,5,35.7,4,16.0,8,32.0,3,75.0,3,75.0,4,23.5,5,29.4
+GLI_area29_posterior_cingulate_infragranular (%),cellular composition,%,FALSE,4,28.6,5,35.7,4,16.0,8,32.0,3,75.0,3,75.0,4,23.5,5,29.4
+GLI_area29_posterior_cingulate_supragranular (%),cellular composition,%,FALSE,4,28.6,5,35.7,4,16.0,8,32.0,3,75.0,3,75.0,4,23.5,5,29.4
+GLI_area30_posterior_cingulate_infragranular (%),cellular composition,%,FALSE,4,28.6,5,35.7,4,16.0,8,32.0,3,75.0,3,75.0,4,23.5,5,29.4
+GLI_area30_posterior_cingulate_supragranular (%),cellular composition,%,FALSE,4,28.6,5,35.7,4,16.0,8,32.0,3,75.0,3,75.0,4,23.5,5,29.4
+GLI_area31_posterior_cingulate_granular (%),cellular composition,%,FALSE,4,28.6,5,35.7,4,16.0,8,32.0,3,75.0,3,75.0,4,23.5,5,29.4
+GLI_area31_posterior_cingulate_infragranular (%),cellular composition,%,FALSE,4,28.6,5,35.7,4,16.0,8,32.0,3,75.0,3,75.0,4,23.5,5,29.4
+GLI_area31_posterior_cingulate_supragranular (%),cellular composition,%,FALSE,4,28.6,5,35.7,4,16.0,8,32.0,3,75.0,3,75.0,4,23.5,5,29.4
+GLI_area44_all_layers (%),cellular composition,%,FALSE,2,14.3,3,21.4,3,12.0,5,20.0,1,25.0,2,50.0,2,11.8,3,17.6
+GLI_area44_granular (%),cellular composition,%,FALSE,2,14.3,3,21.4,3,12.0,5,20.0,1,25.0,2,50.0,2,11.8,3,17.6
+GLI_area44_infragranular (%),cellular composition,%,FALSE,2,14.3,3,21.4,3,12.0,5,20.0,1,25.0,2,50.0,2,11.8,3,17.6
+GLI_area44_supragranular (%),cellular composition,%,FALSE,2,14.3,3,21.4,3,12.0,5,20.0,1,25.0,2,50.0,2,11.8,3,17.6
+GLI_area45_all_layers (%),cellular composition,%,FALSE,2,14.3,3,21.4,3,12.0,5,20.0,1,25.0,2,50.0,2,11.8,3,17.6
+GLI_area45_granular (%),cellular composition,%,FALSE,2,14.3,3,21.4,3,12.0,5,20.0,1,25.0,2,50.0,2,11.8,3,17.6
+GLI_area45_infragranular (%),cellular composition,%,FALSE,2,14.3,3,21.4,3,12.0,5,20.0,1,25.0,2,50.0,2,11.8,3,17.6
+GLI_area45_supragranular (%),cellular composition,%,FALSE,2,14.3,3,21.4,3,12.0,5,20.0,1,25.0,2,50.0,2,11.8,3,17.6
+GLI_area4_M1_all_layers (%),cellular composition,%,TRUE,2,14.3,3,21.4,4,16.0,6,24.0,1,25.0,2,50.0,2,11.8,3,17.6
+GLI_area4_M1_infragranular (%),cellular composition,%,TRUE,2,14.3,3,21.4,4,16.0,6,24.0,1,25.0,2,50.0,2,11.8,3,17.6
+GLI_area4_M1_supragranular (%),cellular composition,%,TRUE,2,14.3,3,21.4,4,16.0,6,24.0,1,25.0,2,50.0,2,11.8,3,17.6
+Glia_neuron_ratio,cellular composition,ratio,FALSE,6,42.9,7,50.0,10,40.0,12,48.0,2,50.0,2,50.0,7,41.2,8,47.1
+Glial_cell_density,cellular composition,cells/mm3,FALSE,6,42.9,7,50.0,10,40.0,12,48.0,2,50.0,2,50.0,7,41.2,8,47.1
+Hippocampus_C.n,cellular composition,count,FALSE,1,7.1,1,7.1,2,8.0,3,12.0,0,0.0,0,0.0,2,11.8,2,11.8
+Hippocampus_I.n,cellular composition,count,FALSE,1,7.1,1,7.1,2,8.0,3,12.0,0,0.0,0,0.0,2,11.8,2,11.8
+Hippocampus_I.p.C,cellular composition,ratio,FALSE,3,21.4,3,21.4,4,16.0,5,20.0,1,25.0,1,25.0,4,23.5,4,23.5
+Hippocampus_I.p.mg,cellular composition,cells/mg,FALSE,1,7.1,1,7.1,2,8.0,3,12.0,0,0.0,0,0.0,2,11.8,2,11.8
+Hippocampus_N.n,cellular composition,count,FALSE,2,14.3,2,14.3,3,12.0,4,16.0,0,0.0,0,0.0,3,17.6,3,17.6
+Hippocampus_N.p.mg,cellular composition,cells/mg,FALSE,2,14.3,2,14.3,3,12.0,4,16.0,0,0.0,0,0.0,3,17.6,3,17.6
+Hippocampus_O.n,cellular composition,count,FALSE,1,7.1,1,7.1,2,8.0,3,12.0,0,0.0,0,0.0,2,11.8,2,11.8
+Hippocampus_O.p.N,cellular composition,ratio,FALSE,2,14.3,2,14.3,3,12.0,4,16.0,0,0.0,0,0.0,3,17.6,3,17.6
+Hippocampus_O.p.mg,cellular composition,cells/mg,FALSE,1,7.1,1,7.1,2,8.0,3,12.0,0,0.0,0,0.0,2,11.8,2,11.8
+Hippocampus_p.C.N,cellular composition,%,FALSE,1,7.1,1,7.1,2,8.0,3,12.0,0,0.0,0,0.0,2,11.8,2,11.8
+MesencephalonMedulla_N.n,cellular composition,count,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,0,0.0,0,0.0,1,5.9,1,5.9
+Mesencephalon_N.n,cellular composition,count,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,0,0.0,0,0.0,1,5.9,1,5.9
+Mesencephalon_N.p.mg,cellular composition,cells/mg,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,0,0.0,0,0.0,1,5.9,1,5.9
+Mesencephalon_O.p.N,cellular composition,ratio,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,0,0.0,0,0.0,1,5.9,1,5.9
+Neuronal_density,cellular composition,cells/mm3,FALSE,6,42.9,7,50.0,10,40.0,12,48.0,2,50.0,2,50.0,7,41.2,8,47.1
+OlfactoryBulb_C.n,cellular composition,count,FALSE,8,57.1,10,71.4,10,40.0,13,52.0,3,75.0,3,75.0,9,52.9,11,64.7
+OlfactoryBulb_N.n,cellular composition,count,FALSE,8,57.1,10,71.4,10,40.0,13,52.0,3,75.0,3,75.0,9,52.9,11,64.7
+OlfactoryBulb_N.p.mg,cellular composition,cells/mg,FALSE,8,57.1,10,71.4,10,40.0,13,52.0,3,75.0,3,75.0,9,52.9,11,64.7
+OlfactoryBulb_O.n,cellular composition,count,FALSE,8,57.1,10,71.4,10,40.0,13,52.0,3,75.0,3,75.0,9,52.9,11,64.7
+OlfactoryBulb_O.p.N,cellular composition,ratio,FALSE,8,57.1,10,71.4,10,40.0,13,52.0,3,75.0,3,75.0,9,52.9,11,64.7
+OlfactoryBulb_O.p.mg,cellular composition,cells/mg,FALSE,8,57.1,10,71.4,10,40.0,13,52.0,3,75.0,3,75.0,9,52.9,11,64.7
+OlfactoryBulb_p.C.N,cellular composition,%,FALSE,8,57.1,10,71.4,10,40.0,13,52.0,3,75.0,3,75.0,9,52.9,11,64.7
+PonsMedulla_N.n,cellular composition,count,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,0,0.0,0,0.0,1,5.9,1,5.9
+PonsMedulla_N.p.mg,cellular composition,cells/mg,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,0,0.0,0,0.0,1,5.9,1,5.9
+PonsMedulla_O.p.N,cellular composition,ratio,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,0,0.0,0,0.0,1,5.9,1,5.9
+RoB_C.n,cellular composition,count,FALSE,9,64.3,11,78.6,13,52.0,19,76.0,4,100.0,4,100.0,11,64.7,13,76.5
+RoB_I.n,cellular composition,count,FALSE,2,14.3,2,14.3,3,12.0,4,16.0,0,0.0,0,0.0,3,17.6,3,17.6
+RoB_I.p.C,cellular composition,ratio,FALSE,2,14.3,2,14.3,3,12.0,4,16.0,0,0.0,0,0.0,3,17.6,3,17.6
+RoB_I.p.mg,cellular composition,cells/mg,FALSE,2,14.3,2,14.3,3,12.0,4,16.0,0,0.0,0,0.0,3,17.6,3,17.6
+RoB_N.n,cellular composition,count,FALSE,9,64.3,11,78.6,13,52.0,19,76.0,4,100.0,4,100.0,11,64.7,13,76.5
+RoB_N.p.mg,cellular composition,cells/mg,FALSE,9,64.3,11,78.6,13,52.0,19,76.0,4,100.0,4,100.0,11,64.7,13,76.5
+RoB_O.n,cellular composition,count,FALSE,9,64.3,11,78.6,13,52.0,19,76.0,4,100.0,4,100.0,11,64.7,13,76.5
+RoB_O.p.N,cellular composition,ratio,FALSE,9,64.3,11,78.6,13,52.0,19,76.0,4,100.0,4,100.0,11,64.7,13,76.5
+RoB_O.p.mg,cellular composition,cells/mg,FALSE,9,64.3,11,78.6,13,52.0,19,76.0,4,100.0,4,100.0,11,64.7,13,76.5
+RoB_p.C.N,cellular composition,%,FALSE,9,64.3,11,78.6,13,52.0,19,76.0,4,100.0,4,100.0,11,64.7,13,76.5
+SpinalCord_C.n,cellular composition,count,FALSE,3,21.4,5,35.7,4,16.0,8,32.0,2,50.0,2,50.0,4,23.5,6,35.3
+SpinalCord_N.n,cellular composition,count,FALSE,3,21.4,5,35.7,4,16.0,8,32.0,2,50.0,2,50.0,4,23.5,6,35.3
+SpinalCord_N.p.mg,cellular composition,cells/mg,FALSE,3,21.4,5,35.7,4,16.0,8,32.0,2,50.0,2,50.0,4,23.5,6,35.3
+SpinalCord_O.n,cellular composition,count,FALSE,3,21.4,5,35.7,4,16.0,8,32.0,2,50.0,2,50.0,4,23.5,6,35.3
+SpinalCord_O.p.N,cellular composition,ratio,FALSE,3,21.4,5,35.7,4,16.0,8,32.0,2,50.0,2,50.0,4,23.5,6,35.3
+SpinalCord_O.p.mg,cellular composition,cells/mg,FALSE,3,21.4,5,35.7,4,16.0,8,32.0,2,50.0,2,50.0,4,23.5,6,35.3
+SpinalCord_p.C.Body.mass,cellular composition,%,FALSE,3,21.4,5,35.7,4,16.0,8,32.0,2,50.0,2,50.0,4,23.5,6,35.3
+SpinalCord_p.C.CNS.neurons,cellular composition,%,FALSE,3,21.4,5,35.7,4,16.0,8,32.0,2,50.0,2,50.0,4,23.5,6,35.3
+SpinalCord_p.C.N,cellular composition,%,FALSE,3,21.4,5,35.7,4,16.0,8,32.0,2,50.0,2,50.0,4,23.5,6,35.3
+SubcorticalForebrain_N.n,cellular composition,count,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,0,0.0,0,0.0,1,5.9,1,5.9
+V1_PSD_length_nm,cellular composition,nm,FALSE,3,21.4,3,21.4,4,16.0,5,20.0,2,50.0,2,50.0,3,17.6,3,17.6
+V1_mitochondria_density_per_mm2,cellular composition,1/mm2,FALSE,3,21.4,3,21.4,4,16.0,5,20.0,2,50.0,2,50.0,3,17.6,3,17.6
+V1_neuron_density_per_mm2,cellular composition,1/mm2,FALSE,3,21.4,3,21.4,4,16.0,5,20.0,2,50.0,2,50.0,3,17.6,3,17.6
+V1_synapse_density_per_mm2,cellular composition,1/mm2,FALSE,3,21.4,3,21.4,4,16.0,5,20.0,2,50.0,2,50.0,3,17.6,3,17.6
+WholeBrainOlfactoryBulb_N.n,cellular composition,count,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,0,0.0,0,0.0,1,5.9,1,5.9
+WholeBrainOlfactoryBulb_N.p.mg,cellular composition,cells/mg,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,0,0.0,0,0.0,1,5.9,1,5.9
+WholeBrain_C.n,cellular composition,count,FALSE,9,64.3,11,78.6,13,52.0,19,76.0,4,100.0,4,100.0,11,64.7,13,76.5
+WholeBrain_I.n,cellular composition,count,FALSE,2,14.3,2,14.3,3,12.0,4,16.0,0,0.0,0,0.0,3,17.6,3,17.6
+WholeBrain_I.p.C,cellular composition,ratio,FALSE,2,14.3,2,14.3,3,12.0,4,16.0,0,0.0,0,0.0,3,17.6,3,17.6
+WholeBrain_I.p.mg,cellular composition,cells/mg,FALSE,2,14.3,2,14.3,3,12.0,4,16.0,0,0.0,0,0.0,3,17.6,3,17.6
+WholeBrain_N.n,cellular composition,count,FALSE,9,64.3,11,78.6,13,52.0,19,76.0,4,100.0,4,100.0,11,64.7,13,76.5
+WholeBrain_N.p.mg,cellular composition,cells/mg,FALSE,9,64.3,11,78.6,13,52.0,19,76.0,4,100.0,4,100.0,11,64.7,13,76.5
+WholeBrain_O.n,cellular composition,count,FALSE,9,64.3,11,78.6,13,52.0,19,76.0,4,100.0,4,100.0,11,64.7,13,76.5
+WholeBrain_O.p.N,cellular composition,ratio,FALSE,9,64.3,11,78.6,13,52.0,19,76.0,4,100.0,4,100.0,11,64.7,13,76.5
+WholeBrain_O.p.mg,cellular composition,cells/mg,FALSE,9,64.3,11,78.6,13,52.0,19,76.0,4,100.0,4,100.0,11,64.7,13,76.5
+WholeBrain_p.C.N,cellular composition,%,FALSE,9,64.3,11,78.6,13,52.0,19,76.0,4,100.0,4,100.0,11,64.7,13,76.5
+ACC_fork_cell_fork_pct [nissl_count] (percent),cellular morphology,percent,FALSE,2,14.3,2,14.3,2,8.0,2,8.0,1,25.0,1,25.0,2,11.8,2,11.8
+ACC_fusiform_L6_soma_volume [stereology] (um3),cellular morphology,um3,FALSE,2,14.3,2,14.3,3,12.0,3,12.0,1,25.0,1,25.0,2,11.8,2,11.8
+ACC_pyramidal_L5_soma_volume [stereology] (um3),cellular morphology,um3,FALSE,2,14.3,2,14.3,3,12.0,3,12.0,1,25.0,1,25.0,2,11.8,2,11.8
+ACC_ven_soma_volume [stereology] (um3),cellular morphology,um3,FALSE,2,14.3,2,14.3,3,12.0,3,12.0,1,25.0,1,25.0,2,11.8,2,11.8
+ACC_ven_ven_pct [nissl_count] (percent),cellular morphology,percent,FALSE,2,14.3,2,14.3,2,8.0,2,8.0,1,25.0,1,25.0,2,11.8,2,11.8
+M1_gigantopyramidal_dendritic_segment_count [golgi] (count),cellular morphology,count,TRUE,1,7.1,1,7.1,1,4.0,3,12.0,1,25.0,1,25.0,1,5.9,1,5.9
+M1_gigantopyramidal_dendritic_volume [golgi] (um3),cellular morphology,um3,TRUE,1,7.1,1,7.1,1,4.0,3,12.0,1,25.0,1,25.0,1,5.9,1,5.9
+M1_gigantopyramidal_mean_segment_length [golgi] (um),cellular morphology,um,TRUE,1,7.1,1,7.1,1,4.0,3,12.0,1,25.0,1,25.0,1,5.9,1,5.9
+M1_gigantopyramidal_soma_area [golgi] (um2),cellular morphology,um2,TRUE,1,7.1,1,7.1,1,4.0,3,12.0,1,25.0,1,25.0,1,5.9,1,5.9
+M1_gigantopyramidal_soma_area [stereology] (um2),cellular morphology,um2,TRUE,0,0.0,1,7.1,1,4.0,4,16.0,0,0.0,0,0.0,0,0.0,1,5.9
+M1_gigantopyramidal_soma_depth [golgi] (um),cellular morphology,um,TRUE,1,7.1,1,7.1,1,4.0,3,12.0,1,25.0,1,25.0,1,5.9,1,5.9
+M1_gigantopyramidal_soma_length [stereology] (um),cellular morphology,um,TRUE,0,0.0,1,7.1,1,4.0,4,16.0,0,0.0,0,0.0,0,0.0,1,5.9
+M1_gigantopyramidal_soma_volume [stereology] (um3),cellular morphology,um3,TRUE,2,14.3,6,42.9,5,20.0,12,48.0,1,25.0,2,50.0,2,11.8,7,41.2
+M1_gigantopyramidal_spine_count [golgi] (count),cellular morphology,count,TRUE,1,7.1,1,7.1,1,4.0,3,12.0,1,25.0,1,25.0,1,5.9,1,5.9
+M1_gigantopyramidal_spine_density [golgi] (spines/um),cellular morphology,spines/um,TRUE,1,7.1,1,7.1,1,4.0,3,12.0,1,25.0,1,25.0,1,5.9,1,5.9
+M1_gigantopyramidal_total_dendritic_length [golgi] (um),cellular morphology,um,TRUE,1,7.1,1,7.1,1,4.0,3,12.0,1,25.0,1,25.0,1,5.9,1,5.9
+M1_pyramidal_L3_dendritic_segment_count [golgi] (count),cellular morphology,count,TRUE,3,21.4,3,21.4,4,16.0,6,24.0,1,25.0,1,25.0,3,17.6,3,17.6
+M1_pyramidal_L3_dendritic_tree_count [golgi] (count),cellular morphology,count,TRUE,1,7.1,1,7.1,1,4.0,1,4.0,0,0.0,0,0.0,1,5.9,1,5.9
+M1_pyramidal_L3_dendritic_volume [golgi] (um3),cellular morphology,um3,TRUE,2,14.3,2,14.3,3,12.0,5,20.0,1,25.0,1,25.0,2,11.8,2,11.8
+M1_pyramidal_L3_mean_segment_length [golgi] (um),cellular morphology,um,TRUE,3,21.4,3,21.4,4,16.0,6,24.0,1,25.0,1,25.0,3,17.6,3,17.6
+M1_pyramidal_L3_soma_area [golgi] (um2),cellular morphology,um2,TRUE,3,21.4,3,21.4,4,16.0,6,24.0,1,25.0,1,25.0,3,17.6,3,17.6
+M1_pyramidal_L3_soma_depth [golgi] (um),cellular morphology,um,TRUE,3,21.4,3,21.4,4,16.0,6,24.0,1,25.0,1,25.0,3,17.6,3,17.6
+M1_pyramidal_L3_spine_count [golgi] (count),cellular morphology,count,TRUE,3,21.4,3,21.4,4,16.0,6,24.0,1,25.0,1,25.0,3,17.6,3,17.6
+M1_pyramidal_L3_spine_density [golgi] (spines/um),cellular morphology,spines/um,TRUE,3,21.4,3,21.4,4,16.0,6,24.0,1,25.0,1,25.0,3,17.6,3,17.6
+M1_pyramidal_L3_total_dendritic_length [golgi] (um),cellular morphology,um,TRUE,3,21.4,3,21.4,4,16.0,6,24.0,1,25.0,1,25.0,3,17.6,3,17.6
+M1_pyramidal_L5_dendritic_segment_count [golgi] (count),cellular morphology,count,TRUE,2,14.3,2,14.3,3,12.0,5,20.0,1,25.0,1,25.0,2,11.8,2,11.8
+M1_pyramidal_L5_dendritic_volume [golgi] (um3),cellular morphology,um3,TRUE,2,14.3,2,14.3,3,12.0,5,20.0,1,25.0,1,25.0,2,11.8,2,11.8
+M1_pyramidal_L5_mean_segment_length [golgi] (um),cellular morphology,um,TRUE,2,14.3,2,14.3,3,12.0,5,20.0,1,25.0,1,25.0,2,11.8,2,11.8
+M1_pyramidal_L5_soma_area [golgi] (um2),cellular morphology,um2,TRUE,2,14.3,2,14.3,3,12.0,5,20.0,1,25.0,1,25.0,2,11.8,2,11.8
+M1_pyramidal_L5_soma_area [stereology] (um2),cellular morphology,um2,TRUE,0,0.0,1,7.1,1,4.0,4,16.0,0,0.0,0,0.0,0,0.0,1,5.9
+M1_pyramidal_L5_soma_depth [golgi] (um),cellular morphology,um,TRUE,2,14.3,2,14.3,3,12.0,5,20.0,1,25.0,1,25.0,2,11.8,2,11.8
+M1_pyramidal_L5_soma_length [stereology] (um),cellular morphology,um,TRUE,0,0.0,1,7.1,1,4.0,4,16.0,0,0.0,0,0.0,0,0.0,1,5.9
+M1_pyramidal_L5_soma_volume [stereology] (um3),cellular morphology,um3,TRUE,2,14.3,6,42.9,5,20.0,12,48.0,1,25.0,2,50.0,2,11.8,7,41.2
+M1_pyramidal_L5_spine_count [golgi] (count),cellular morphology,count,TRUE,2,14.3,2,14.3,3,12.0,5,20.0,1,25.0,1,25.0,2,11.8,2,11.8
+M1_pyramidal_L5_spine_density [golgi] (spines/um),cellular morphology,spines/um,TRUE,2,14.3,2,14.3,3,12.0,5,20.0,1,25.0,1,25.0,2,11.8,2,11.8
+M1_pyramidal_L5_total_dendritic_length [golgi] (um),cellular morphology,um,TRUE,2,14.3,2,14.3,3,12.0,5,20.0,1,25.0,1,25.0,2,11.8,2,11.8
+PFC_area10_fork_cell_fork_pct [nissl_count] (percent),cellular morphology,percent,FALSE,2,14.3,2,14.3,2,8.0,2,8.0,1,25.0,1,25.0,2,11.8,2,11.8
+PFC_area10_pyramidal_L3_basal_dendritic_field_area [LYinj] (um2),cellular morphology,um2,FALSE,0,0.0,1,7.1,0,0.0,2,8.0,0,0.0,1,25.0,0,0.0,1,5.9
+PFC_area10_pyramidal_L3_branches_at_75um [LYinj] (count),cellular morphology,count,FALSE,0,0.0,1,7.1,0,0.0,2,8.0,0,0.0,1,25.0,0,0.0,1,5.9
+PFC_area10_pyramidal_L3_dendritic_segment_count [golgi] (count),cellular morphology,count,FALSE,2,14.3,2,14.3,2,8.0,2,8.0,1,25.0,1,25.0,2,11.8,2,11.8
+PFC_area10_pyramidal_L3_dendritic_tree_count [golgi] (count),cellular morphology,count,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,0,0.0,0,0.0,1,5.9,1,5.9
+PFC_area10_pyramidal_L3_mean_segment_length [golgi] (um),cellular morphology,um,FALSE,2,14.3,2,14.3,2,8.0,2,8.0,1,25.0,1,25.0,2,11.8,2,11.8
+PFC_area10_pyramidal_L3_soma_area [golgi] (um2),cellular morphology,um2,FALSE,2,14.3,2,14.3,2,8.0,2,8.0,1,25.0,1,25.0,2,11.8,2,11.8
+PFC_area10_pyramidal_L3_soma_depth [golgi] (um),cellular morphology,um,FALSE,2,14.3,2,14.3,2,8.0,2,8.0,1,25.0,1,25.0,2,11.8,2,11.8
+PFC_area10_pyramidal_L3_spine_count [LYinj] (count),cellular morphology,count,FALSE,0,0.0,1,7.1,0,0.0,2,8.0,0,0.0,1,25.0,0,0.0,1,5.9
+PFC_area10_pyramidal_L3_spine_count [golgi] (count),cellular morphology,count,FALSE,2,14.3,2,14.3,2,8.0,2,8.0,1,25.0,1,25.0,2,11.8,2,11.8
+PFC_area10_pyramidal_L3_spine_density [golgi] (spines/um),cellular morphology,spines/um,FALSE,2,14.3,2,14.3,2,8.0,2,8.0,1,25.0,1,25.0,2,11.8,2,11.8
+PFC_area10_pyramidal_L3_total_dendritic_length [golgi] (um),cellular morphology,um,FALSE,2,14.3,2,14.3,2,8.0,2,8.0,1,25.0,1,25.0,2,11.8,2,11.8
+PFC_area10_ven_ven_pct [nissl_count] (percent),cellular morphology,percent,FALSE,2,14.3,2,14.3,2,8.0,2,8.0,1,25.0,1,25.0,2,11.8,2,11.8
+PFC_area11_pyramidal_L3_basal_dendritic_field_area [LYinj] (um2),cellular morphology,um2,FALSE,0,0.0,1,7.1,0,0.0,2,8.0,0,0.0,1,25.0,0,0.0,1,5.9
+PFC_area11_pyramidal_L3_branches_at_75um [LYinj] (count),cellular morphology,count,FALSE,0,0.0,1,7.1,0,0.0,2,8.0,0,0.0,1,25.0,0,0.0,1,5.9
+PFC_area11_pyramidal_L3_spine_count [LYinj] (count),cellular morphology,count,FALSE,0,0.0,1,7.1,0,0.0,2,8.0,0,0.0,1,25.0,0,0.0,1,5.9
+PFC_area12_pyramidal_L3_basal_dendritic_field_area [LYinj] (um2),cellular morphology,um2,FALSE,0,0.0,1,7.1,0,0.0,2,8.0,0,0.0,1,25.0,0,0.0,1,5.9
+PFC_area12_pyramidal_L3_spine_count [LYinj] (count),cellular morphology,count,FALSE,0,0.0,1,7.1,0,0.0,2,8.0,0,0.0,1,25.0,0,0.0,1,5.9
+PFC_granular_pyramidal_L3_basal_dendritic_field_area [LYinj] (um2),cellular morphology,um2,FALSE,0,0.0,1,7.1,1,4.0,4,16.0,0,0.0,0,0.0,1,5.9,2,11.8
+PFC_granular_pyramidal_L3_spine_count [LYinj] (count),cellular morphology,count,FALSE,0,0.0,0,0.0,1,4.0,3,12.0,0,0.0,0,0.0,1,5.9,1,5.9
+PFC_pyramidal_L3_basal_dendritic_field_area [LYinj] (um2),cellular morphology,um2,FALSE,2,14.3,3,21.4,2,8.0,4,16.0,2,50.0,3,75.0,2,11.8,3,17.6
+PFC_pyramidal_L3_max_spine_density [LYinj] (spines/10um),cellular morphology,spines/10um,FALSE,2,14.3,3,21.4,2,8.0,4,16.0,2,50.0,3,75.0,2,11.8,3,17.6
+PFC_pyramidal_L3_peak_branching_complexity [LYinj] (intersections),cellular morphology,intersections,FALSE,2,14.3,3,21.4,2,8.0,4,16.0,2,50.0,3,75.0,2,11.8,3,17.6
+S1_3b_pyramidal_L3_dendritic_segment_count [golgi] (count),cellular morphology,count,FALSE,2,14.3,2,14.3,2,8.0,2,8.0,1,25.0,1,25.0,2,11.8,2,11.8
+S1_3b_pyramidal_L3_dendritic_tree_count [golgi] (count),cellular morphology,count,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,0,0.0,0,0.0,1,5.9,1,5.9
+S1_3b_pyramidal_L3_mean_segment_length [golgi] (um),cellular morphology,um,FALSE,2,14.3,2,14.3,2,8.0,2,8.0,1,25.0,1,25.0,2,11.8,2,11.8
+S1_3b_pyramidal_L3_soma_area [golgi] (um2),cellular morphology,um2,FALSE,2,14.3,2,14.3,2,8.0,2,8.0,1,25.0,1,25.0,2,11.8,2,11.8
+S1_3b_pyramidal_L3_soma_depth [golgi] (um),cellular morphology,um,FALSE,2,14.3,2,14.3,2,8.0,2,8.0,1,25.0,1,25.0,2,11.8,2,11.8
+S1_3b_pyramidal_L3_spine_count [golgi] (count),cellular morphology,count,FALSE,2,14.3,2,14.3,2,8.0,2,8.0,1,25.0,1,25.0,2,11.8,2,11.8
+S1_3b_pyramidal_L3_spine_density [golgi] (spines/um),cellular morphology,spines/um,FALSE,2,14.3,2,14.3,2,8.0,2,8.0,1,25.0,1,25.0,2,11.8,2,11.8
+S1_3b_pyramidal_L3_total_dendritic_length [golgi] (um),cellular morphology,um,FALSE,2,14.3,2,14.3,2,8.0,2,8.0,1,25.0,1,25.0,2,11.8,2,11.8
+V1_meynert_soma_volume [stereology] (um3),cellular morphology,um3,FALSE,2,14.3,5,35.7,4,16.0,9,36.0,1,25.0,2,50.0,2,11.8,6,35.3
+V1_pyramidal_L3_basal_dendritic_field_area [LYinj] (um2),cellular morphology,um2,FALSE,1,7.1,3,21.4,2,8.0,7,28.0,1,25.0,2,50.0,2,11.8,4,23.5
+V1_pyramidal_L3_spine_count [LYinj] (count),cellular morphology,count,FALSE,1,7.1,3,21.4,2,8.0,7,28.0,1,25.0,2,50.0,2,11.8,4,23.5
+V1_pyramidal_L5_soma_volume [stereology] (um3),cellular morphology,um3,FALSE,2,14.3,5,35.7,4,16.0,9,36.0,1,25.0,2,50.0,2,11.8,6,35.3
+V2_pyramidal_L3_basal_dendritic_field_area [LYinj] (um2),cellular morphology,um2,FALSE,1,7.1,2,14.3,2,8.0,5,20.0,1,25.0,1,25.0,2,11.8,3,17.6
+V2_pyramidal_L3_dendritic_segment_count [golgi] (count),cellular morphology,count,FALSE,2,14.3,2,14.3,2,8.0,2,8.0,1,25.0,1,25.0,2,11.8,2,11.8
+V2_pyramidal_L3_dendritic_tree_count [golgi] (count),cellular morphology,count,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,0,0.0,0,0.0,1,5.9,1,5.9
+V2_pyramidal_L3_mean_segment_length [golgi] (um),cellular morphology,um,FALSE,2,14.3,2,14.3,2,8.0,2,8.0,1,25.0,1,25.0,2,11.8,2,11.8
+V2_pyramidal_L3_soma_area [golgi] (um2),cellular morphology,um2,FALSE,2,14.3,2,14.3,2,8.0,2,8.0,1,25.0,1,25.0,2,11.8,2,11.8
+V2_pyramidal_L3_soma_depth [golgi] (um),cellular morphology,um,FALSE,2,14.3,2,14.3,2,8.0,2,8.0,1,25.0,1,25.0,2,11.8,2,11.8
+V2_pyramidal_L3_spine_count [LYinj] (count),cellular morphology,count,FALSE,1,7.1,2,14.3,2,8.0,5,20.0,1,25.0,1,25.0,2,11.8,3,17.6
+V2_pyramidal_L3_spine_count [golgi] (count),cellular morphology,count,FALSE,2,14.3,2,14.3,2,8.0,2,8.0,1,25.0,1,25.0,2,11.8,2,11.8
+V2_pyramidal_L3_spine_density [golgi] (spines/um),cellular morphology,spines/um,FALSE,2,14.3,2,14.3,2,8.0,2,8.0,1,25.0,1,25.0,2,11.8,2,11.8
+V2_pyramidal_L3_total_dendritic_length [golgi] (um),cellular morphology,um,FALSE,2,14.3,2,14.3,2,8.0,2,8.0,1,25.0,1,25.0,2,11.8,2,11.8
+anterior_insula_fork_cell_fork_pct [nissl_count] (percent),cellular morphology,percent,FALSE,2,14.3,2,14.3,2,8.0,2,8.0,1,25.0,1,25.0,2,11.8,2,11.8
+anterior_insula_ven_ven_pct [nissl_count] (percent),cellular morphology,percent,FALSE,2,14.3,2,14.3,2,8.0,2,8.0,1,25.0,1,25.0,2,11.8,2,11.8
+cortex_corticospinal_field_corticospinal_soma_diameter [HRP] (um),cellular morphology,um,TRUE,5,35.7,6,42.9,7,28.0,11,44.0,2,50.0,2,50.0,6,35.3,7,41.2
+frontal_interlaminar_astrocyte_ila_complexity [GFAP] (index),cellular morphology,index,FALSE,7,50.0,8,57.1,9,36.0,12,48.0,3,75.0,3,75.0,9,52.9,10,58.8
+frontal_interlaminar_astrocyte_ila_linear_density [GFAP] (cells/mm),cellular morphology,cells/mm,FALSE,7,50.0,8,57.1,9,36.0,13,52.0,3,75.0,3,75.0,9,52.9,10,58.8
+frontal_interlaminar_astrocyte_ila_presence_pial_dorsal [GFAP] (category),cellular morphology,category,FALSE,7,50.0,8,57.1,9,36.0,13,52.0,3,75.0,3,75.0,9,52.9,10,58.8
+frontal_interlaminar_astrocyte_ila_presence_pial_ventral [GFAP] (category),cellular morphology,category,FALSE,6,42.9,7,50.0,8,32.0,12,48.0,2,50.0,2,50.0,8,47.1,9,52.9
+frontal_interlaminar_astrocyte_ila_presence_subpial_dorsal [GFAP] (category),cellular morphology,category,FALSE,7,50.0,8,57.1,9,36.0,13,52.0,3,75.0,3,75.0,9,52.9,10,58.8
+frontal_interlaminar_astrocyte_ila_presence_subpial_ventral [GFAP] (category),cellular morphology,category,FALSE,6,42.9,7,50.0,8,32.0,12,48.0,2,50.0,2,50.0,8,47.1,9,52.9
+frontal_interlaminar_astrocyte_ila_primary_processes [GFAP] (count),cellular morphology,count,FALSE,7,50.0,8,57.1,9,36.0,12,48.0,3,75.0,3,75.0,9,52.9,10,58.8
+frontal_interlaminar_astrocyte_ila_total_length [GFAP] (um),cellular morphology,um,FALSE,7,50.0,8,57.1,9,36.0,12,48.0,3,75.0,3,75.0,9,52.9,10,58.8
+frontal_interlaminar_astrocyte_ila_total_processes [GFAP] (count),cellular morphology,count,FALSE,7,50.0,8,57.1,9,36.0,12,48.0,3,75.0,3,75.0,9,52.9,10,58.8
+occipital_pole_fork_cell_fork_pct [nissl_count] (percent),cellular morphology,percent,FALSE,2,14.3,2,14.3,2,8.0,2,8.0,1,25.0,1,25.0,2,11.8,2,11.8
+occipital_pole_ven_ven_pct [nissl_count] (percent),cellular morphology,percent,FALSE,2,14.3,2,14.3,2,8.0,2,8.0,1,25.0,1,25.0,2,11.8,2,11.8
+occipital_pyramidal_L3_basal_dendritic_field_area [LYinj] (um2),cellular morphology,um2,FALSE,2,14.3,3,21.4,2,8.0,4,16.0,2,50.0,3,75.0,2,11.8,3,17.6
+occipital_pyramidal_L3_max_spine_density [LYinj] (spines/10um),cellular morphology,spines/10um,FALSE,2,14.3,3,21.4,2,8.0,4,16.0,2,50.0,3,75.0,2,11.8,3,17.6
+occipital_pyramidal_L3_peak_branching_complexity [LYinj] (intersections),cellular morphology,intersections,FALSE,2,14.3,3,21.4,2,8.0,4,16.0,2,50.0,3,75.0,2,11.8,3,17.6
+parietal_7a_pyramidal_L3_spine_count [LYinj] (count),cellular morphology,count,FALSE,0,0.0,1,7.1,0,0.0,2,8.0,0,0.0,1,25.0,0,0.0,1,5.9
+temporal_TE_pyramidal_L3_spine_count [LYinj] (count),cellular morphology,count,FALSE,0,0.0,1,7.1,0,0.0,2,8.0,0,0.0,1,25.0,0,0.0,1,5.9
+temporal_pyramidal_L3_basal_dendritic_field_area [LYinj] (um2),cellular morphology,um2,FALSE,2,14.3,3,21.4,2,8.0,4,16.0,2,50.0,3,75.0,2,11.8,3,17.6
+temporal_pyramidal_L3_max_spine_density [LYinj] (spines/10um),cellular morphology,spines/10um,FALSE,2,14.3,3,21.4,2,8.0,4,16.0,2,50.0,3,75.0,2,11.8,3,17.6
+temporal_pyramidal_L3_peak_branching_complexity [LYinj] (intersections),cellular morphology,intersections,FALSE,2,14.3,3,21.4,2,8.0,4,16.0,2,50.0,3,75.0,2,11.8,3,17.6
+thal_LGN_magnocellular_thalamic_relay_soma_volume [nissl_perikaryal] (um3),cellular morphology,um3,FALSE,1,7.1,1,7.1,2,8.0,2,8.0,1,25.0,1,25.0,1,5.9,1,5.9
+thal_LGN_parvocellular_thalamic_relay_soma_volume [nissl_perikaryal] (um3),cellular morphology,um3,FALSE,2,14.3,2,14.3,3,12.0,3,12.0,1,25.0,1,25.0,2,11.8,2,11.8
+thal_MGN_parvocellular_thalamic_relay_soma_volume [nissl_perikaryal] (um3),cellular morphology,um3,FALSE,2,14.3,2,14.3,3,12.0,3,12.0,1,25.0,1,25.0,2,11.8,2,11.8
+thal_VB_thalamic_relay_soma_volume [nissl_perikaryal] (um3),cellular morphology,um3,FALSE,1,7.1,1,7.1,2,8.0,2,8.0,1,25.0,1,25.0,1,5.9,1,5.9
+Cerebellar_section_area (mm2),cortical & cerebellar folding,mm2,FALSE,5,35.7,8,57.1,8,32.0,13,52.0,2,50.0,2,50.0,6,35.3,9,52.9
+Cerebellar_section_length (mm),cortical & cerebellar folding,mm,FALSE,5,35.7,8,57.1,8,32.0,13,52.0,2,50.0,2,50.0,6,35.3,9,52.9
+Cerebral_section_area (mm2),cortical & cerebellar folding,mm2,FALSE,5,35.7,8,57.1,8,32.0,13,52.0,2,50.0,2,50.0,6,35.3,9,52.9
+Cerebral_section_length (mm),cortical & cerebellar folding,mm,FALSE,5,35.7,8,57.1,8,32.0,13,52.0,2,50.0,2,50.0,6,35.3,9,52.9
+FoldingIndex_MHH,cortical & cerebellar folding,ratio,FALSE,6,42.9,8,57.1,7,28.0,12,48.0,3,75.0,4,100.0,7,41.2,9,52.9
+Folial_perimeter_median (mm),cortical & cerebellar folding,mm,FALSE,5,35.7,8,57.1,8,32.0,13,52.0,2,50.0,2,50.0,6,35.3,9,52.9
+Folial_width_median (mm),cortical & cerebellar folding,mm,FALSE,5,35.7,8,57.1,8,32.0,13,52.0,2,50.0,2,50.0,6,35.3,9,52.9
+GI,cortical & cerebellar folding,ratio,FALSE,9,64.3,12,85.7,13,52.0,20,80.0,4,100.0,4,100.0,11,64.7,15,88.2
+Molecular_layer_thickness_median (mm),cortical & cerebellar folding,mm,FALSE,4,28.6,7,50.0,7,28.0,12,48.0,2,50.0,2,50.0,5,29.4,8,47.1
+% Fruit and seeds,diet & ecology,%,FALSE,5,35.7,5,35.7,8,32.0,9,36.0,2,50.0,2,50.0,6,35.3,6,35.3
+Activity_pattern (category),diet & ecology,category,FALSE,12,85.7,14,100.0,22,88.0,25,100.0,4,100.0,4,100.0,15,88.2,17,100.0
+Activity_timing,diet & ecology,category,FALSE,11,78.6,11,78.6,18,72.0,19,76.0,4,100.0,4,100.0,13,76.5,13,76.5
+Arboreality,diet & ecology,ordinal,FALSE,6,42.9,6,42.9,12,48.0,13,52.0,2,50.0,2,50.0,8,47.1,8,47.1
+Diet,diet & ecology,ordinal,FALSE,6,42.9,6,42.9,12,48.0,13,52.0,2,50.0,2,50.0,8,47.1,8,47.1
+Diet_Fruit (%),diet & ecology,%,FALSE,12,85.7,14,100.0,22,88.0,25,100.0,4,100.0,4,100.0,15,88.2,17,100.0
+Diet_Inv (%),diet & ecology,%,FALSE,12,85.7,14,100.0,22,88.0,25,100.0,4,100.0,4,100.0,15,88.2,17,100.0
+Diet_Nect (%),diet & ecology,%,FALSE,12,85.7,14,100.0,22,88.0,25,100.0,4,100.0,4,100.0,15,88.2,17,100.0
+Diet_PlantO (%),diet & ecology,%,FALSE,12,85.7,14,100.0,22,88.0,25,100.0,4,100.0,4,100.0,15,88.2,17,100.0
+Diet_Scav (%),diet & ecology,%,FALSE,12,85.7,14,100.0,22,88.0,25,100.0,4,100.0,4,100.0,15,88.2,17,100.0
+Diet_Seed (%),diet & ecology,%,FALSE,12,85.7,14,100.0,22,88.0,25,100.0,4,100.0,4,100.0,15,88.2,17,100.0
+Diet_Vect (%),diet & ecology,%,FALSE,12,85.7,14,100.0,22,88.0,25,100.0,4,100.0,4,100.0,15,88.2,17,100.0
+Diet_Vend (%),diet & ecology,%,FALSE,12,85.7,14,100.0,22,88.0,25,100.0,4,100.0,4,100.0,15,88.2,17,100.0
+Diet_Vfish (%),diet & ecology,%,FALSE,12,85.7,14,100.0,22,88.0,25,100.0,4,100.0,4,100.0,15,88.2,17,100.0
+Diet_Vunk (%),diet & ecology,%,FALSE,12,85.7,14,100.0,22,88.0,25,100.0,4,100.0,4,100.0,15,88.2,17,100.0
+Diet_breadth (count),diet & ecology,count,FALSE,12,85.7,14,100.0,22,88.0,25,100.0,4,100.0,4,100.0,15,88.2,17,100.0
+Diet_dominant (category),diet & ecology,category,FALSE,12,85.7,14,100.0,22,88.0,25,100.0,4,100.0,4,100.0,15,88.2,17,100.0
+ForStrat_stratum (category),diet & ecology,category,FALSE,12,85.7,14,100.0,22,88.0,25,100.0,4,100.0,4,100.0,15,88.2,17,100.0
+Habitat_breadth,diet & ecology,count,FALSE,10,71.4,11,78.6,15,60.0,16,64.0,3,75.0,3,75.0,12,70.6,13,76.5
+Max_home_range_ha,diet & ecology,ha,FALSE,10,71.4,10,71.4,17,68.0,18,72.0,3,75.0,3,75.0,12,70.6,12,70.6
+Trophic_guild (category),diet & ecology,category,FALSE,12,85.7,14,100.0,22,88.0,25,100.0,4,100.0,4,100.0,15,88.2,17,100.0
+Trophic_level,diet & ecology,ordinal,FALSE,10,71.4,10,71.4,16,64.0,17,68.0,4,100.0,4,100.0,13,76.5,13,76.5
+log10_dp1_mm (log10 mm),hand & limb morphology,log10 mm,TRUE,3,21.4,3,21.4,6,24.0,7,28.0,2,50.0,2,50.0,3,17.6,3,17.6
+log10_dp2_mm (log10 mm),hand & limb morphology,log10 mm,TRUE,3,21.4,3,21.4,5,20.0,7,28.0,2,50.0,2,50.0,3,17.6,3,17.6
+log10_dp3_mm (log10 mm),hand & limb morphology,log10 mm,TRUE,0,0.0,1,7.1,0,0.0,1,4.0,0,0.0,1,25.0,0,0.0,1,5.9
+log10_dp4_mm (log10 mm),hand & limb morphology,log10 mm,TRUE,0,0.0,1,7.1,0,0.0,1,4.0,0,0.0,1,25.0,0,0.0,1,5.9
+log10_dp5_mm (log10 mm),hand & limb morphology,log10 mm,TRUE,0,0.0,1,7.1,0,0.0,1,4.0,0,0.0,1,25.0,0,0.0,1,5.9
+log10_ip2_mm (log10 mm),hand & limb morphology,log10 mm,TRUE,4,28.6,5,35.7,6,24.0,10,40.0,3,75.0,3,75.0,4,23.5,5,29.4
+log10_ip3_mm (log10 mm),hand & limb morphology,log10 mm,TRUE,4,28.6,5,35.7,8,32.0,11,44.0,3,75.0,3,75.0,4,23.5,5,29.4
+log10_ip4_mm (log10 mm),hand & limb morphology,log10 mm,TRUE,5,35.7,6,42.9,9,36.0,12,48.0,3,75.0,3,75.0,6,35.3,7,41.2
+log10_ip5_mm (log10 mm),hand & limb morphology,log10 mm,TRUE,0,0.0,1,7.1,0,0.0,1,4.0,0,0.0,1,25.0,0,0.0,1,5.9
+log10_mc1_mm (log10 mm),hand & limb morphology,log10 mm,TRUE,4,28.6,5,35.7,8,32.0,11,44.0,3,75.0,3,75.0,4,23.5,5,29.4
+log10_mc2_mm (log10 mm),hand & limb morphology,log10 mm,TRUE,4,28.6,5,35.7,8,32.0,11,44.0,3,75.0,3,75.0,4,23.5,5,29.4
+log10_mc3_mm (log10 mm),hand & limb morphology,log10 mm,TRUE,5,35.7,6,42.9,9,36.0,12,48.0,3,75.0,3,75.0,6,35.3,7,41.2
+log10_mc4_mm (log10 mm),hand & limb morphology,log10 mm,TRUE,4,28.6,5,35.7,8,32.0,11,44.0,3,75.0,3,75.0,4,23.5,5,29.4
+log10_mc5_mm (log10 mm),hand & limb morphology,log10 mm,TRUE,5,35.7,6,42.9,10,40.0,13,52.0,3,75.0,3,75.0,6,35.3,7,41.2
+log10_pp1_mm (log10 mm),hand & limb morphology,log10 mm,TRUE,4,28.6,5,35.7,7,28.0,10,40.0,3,75.0,3,75.0,4,23.5,5,29.4
+log10_pp2_mm (log10 mm),hand & limb morphology,log10 mm,TRUE,4,28.6,5,35.7,6,24.0,10,40.0,3,75.0,3,75.0,4,23.5,5,29.4
+log10_pp3_mm (log10 mm),hand & limb morphology,log10 mm,TRUE,5,35.7,6,42.9,10,40.0,13,52.0,3,75.0,3,75.0,6,35.3,7,41.2
+log10_pp4_mm (log10 mm),hand & limb morphology,log10 mm,TRUE,4,28.6,5,35.7,7,28.0,10,40.0,3,75.0,3,75.0,4,23.5,5,29.4
+log10_pp5_mm (log10 mm),hand & limb morphology,log10 mm,TRUE,0,0.0,1,7.1,0,0.0,1,4.0,0,0.0,1,25.0,0,0.0,1,5.9
+peak_workspace (index),hand & limb morphology,index,TRUE,4,28.6,4,28.6,7,28.0,9,36.0,2,50.0,2,50.0,5,29.4,5,29.4
+real_size (index),hand & limb morphology,index,TRUE,4,28.6,4,28.6,7,28.0,9,36.0,2,50.0,2,50.0,5,29.4,5,29.4
+relative_size (index),hand & limb morphology,index,TRUE,4,28.6,4,28.6,7,28.0,9,36.0,2,50.0,2,50.0,5,29.4,5,29.4
+Age_at_eye_opening_days,life history,days,FALSE,7,50.0,7,50.0,10,40.0,10,40.0,2,50.0,2,50.0,8,47.1,8,47.1
+Age_at_first_breeding_F_mnths,life history,months,FALSE,10,71.4,10,71.4,16,64.0,17,68.0,4,100.0,4,100.0,12,70.6,12,70.6
+Age_at_first_breeding_days,life history,days,FALSE,10,71.4,10,71.4,16,64.0,17,68.0,4,100.0,4,100.0,12,70.6,12,70.6
+Altricial_precocial,life history,category,FALSE,11,78.6,12,85.7,18,72.0,20,80.0,4,100.0,4,100.0,14,82.4,15,88.2
+Dispersal_age_days,life history,days,FALSE,1,7.1,1,7.1,3,12.0,3,12.0,0,0.0,0,0.0,1,5.9,1,5.9
+Female_sexual_maturity (days),life history,days,FALSE,11,78.6,11,78.6,18,72.0,19,76.0,4,100.0,4,100.0,14,82.4,14,82.4
+Gestation (days),life history,days,FALSE,12,85.7,12,85.7,19,76.0,20,80.0,4,100.0,4,100.0,15,88.2,15,88.2
+Inter-litter_interval_days,life history,days,FALSE,9,64.3,9,64.3,15,60.0,16,64.0,4,100.0,4,100.0,11,64.7,11,64.7
+Juvenility_days,life history,days,FALSE,10,71.4,10,71.4,16,64.0,17,68.0,4,100.0,4,100.0,12,70.6,12,70.6
+Juvenility_primates_years,life history,years,FALSE,6,42.9,6,42.9,8,32.0,9,36.0,3,75.0,3,75.0,7,41.2,7,41.2
+Litter_size (count),life history,count,FALSE,9,64.3,12,85.7,13,52.0,20,80.0,4,100.0,4,100.0,11,64.7,15,88.2
+Litters_per_year,life history,count/yr,FALSE,10,71.4,11,78.6,16,64.0,18,72.0,4,100.0,4,100.0,12,70.6,13,76.5
+Male_sexual_maturity_days,life history,days,FALSE,11,78.6,11,78.6,18,72.0,19,76.0,4,100.0,4,100.0,14,82.4,14,82.4
+Maximum_longevity (yr),life history,yr,FALSE,11,78.6,11,78.6,18,72.0,19,76.0,4,100.0,4,100.0,14,82.4,14,82.4
+Neurogenic_period_days,life history,days,FALSE,5,35.7,5,35.7,7,28.0,8,32.0,4,100.0,4,100.0,6,35.3,6,35.3
+Weaning_age (days),life history,days,FALSE,12,85.7,12,85.7,21,84.0,21,84.0,4,100.0,4,100.0,15,88.2,15,88.2
+Weight_at_birth_g,life history,g,FALSE,11,78.6,12,85.7,18,72.0,20,80.0,4,100.0,4,100.0,14,82.4,15,88.2
+Weight_at_weaning_g,life history,g,FALSE,8,57.1,8,57.1,14,56.0,15,60.0,4,100.0,4,100.0,10,58.8,10,58.8
+Amygdala_CMRgl (umol/100g/min),metabolism,umol/100g/min,FALSE,4,28.6,4,28.6,6,24.0,7,28.0,3,75.0,3,75.0,5,29.4,5,29.4
+Auditory_cortex_CMRgl (umol/100g/min),metabolism,umol/100g/min,FALSE,3,21.4,3,21.4,3,12.0,3,12.0,2,50.0,2,50.0,3,17.6,3,17.6
+BMR_massspecific (mL O2/h/g),metabolism,mL O2/h/g,FALSE,11,78.6,14,100.0,18,72.0,22,88.0,4,100.0,4,100.0,14,82.4,17,100.0
+BMR_wholeanimal (mL O2/h),metabolism,mL O2/h,FALSE,13,92.9,14,100.0,20,80.0,22,88.0,4,100.0,4,100.0,16,94.1,17,100.0
+Basal_forebrain_CMRgl (umol/100g/min),metabolism,umol/100g/min,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,1,25.0,1,25.0,1,5.9,1,5.9
+Basal_ganglia_CBF (mL/100g/min),metabolism,mL/100g/min,FALSE,3,21.4,4,28.6,3,12.0,5,20.0,2,50.0,2,50.0,3,17.6,4,23.5
+Basal_ganglia_CMRO2 (umol/100g/min),metabolism,umol/100g/min,FALSE,4,28.6,4,28.6,4,16.0,5,20.0,3,75.0,3,75.0,4,23.5,4,23.5
+Basal_ganglia_CMRgl (umol/100g/min),metabolism,umol/100g/min,FALSE,4,28.6,4,28.6,5,20.0,6,24.0,3,75.0,3,75.0,5,29.4,5,29.4
+Brain_stem_CMRgl (umol/100g/min),metabolism,umol/100g/min,FALSE,3,21.4,3,21.4,5,20.0,6,24.0,2,50.0,2,50.0,4,23.5,4,23.5
+Capsula_interna_CMRgl (umol/100g/min),metabolism,umol/100g/min,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,1,25.0,1,25.0,1,5.9,1,5.9
+Caudate_nucleus_CMRgl (umol/100g/min),metabolism,umol/100g/min,FALSE,4,28.6,4,28.6,6,24.0,7,28.0,3,75.0,3,75.0,5,29.4,5,29.4
+Centrum_semiovale_CMRgl (umol/100g/min),metabolism,umol/100g/min,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,1,25.0,1,25.0,1,5.9,1,5.9
+Cerebellar_cortex_CMRgl (umol/100g/min),metabolism,umol/100g/min,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,1,25.0,1,25.0,1,5.9,1,5.9
+Cerebellum_CBF (mL/100g/min),metabolism,mL/100g/min,FALSE,3,21.4,4,28.6,3,12.0,5,20.0,2,50.0,2,50.0,3,17.6,4,23.5
+Cerebellum_CMRO2 (umol/100g/min),metabolism,umol/100g/min,FALSE,2,14.3,2,14.3,2,8.0,2,8.0,1,25.0,1,25.0,2,11.8,2,11.8
+Cerebellum_CMRgl (umol/100g/min),metabolism,umol/100g/min,FALSE,4,28.6,4,28.6,6,24.0,7,28.0,3,75.0,3,75.0,5,29.4,5,29.4
+Cingulate_cortex_CMRgl (umol/100g/min),metabolism,umol/100g/min,FALSE,4,28.6,4,28.6,6,24.0,7,28.0,3,75.0,3,75.0,5,29.4,5,29.4
+Colliculus_inferior_CMRgl (umol/100g/min),metabolism,umol/100g/min,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,1,25.0,1,25.0,1,5.9,1,5.9
+Colliculus_superior_CMRgl (umol/100g/min),metabolism,umol/100g/min,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,1,25.0,1,25.0,1,5.9,1,5.9
+Corpus_geniculatum_laterale_CMRgl (umol/100g/min),metabolism,umol/100g/min,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,1,25.0,1,25.0,1,5.9,1,5.9
+Corpus_geniculatum_mediale_CMRgl (umol/100g/min),metabolism,umol/100g/min,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,1,25.0,1,25.0,1,5.9,1,5.9
+Fossil_BGU (umol/min) - s4_volume,metabolism,umol/min or ratio,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,1,25.0,1,25.0,1,5.9,1,5.9
+Fossil_BGU_Ratio_MH - s4_volume,metabolism,umol/min or ratio,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,1,25.0,1,25.0,1,5.9,1,5.9
+Frontal_cortex_CMRO2 (umol/100g/min),metabolism,umol/100g/min,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,1,25.0,1,25.0,1,5.9,1,5.9
+Frontal_cortex_CMRgl (umol/100g/min),metabolism,umol/100g/min,FALSE,4,28.6,4,28.6,5,20.0,6,24.0,3,75.0,3,75.0,5,29.4,5,29.4
+Hippocampus_CBF (mL/100g/min),metabolism,mL/100g/min,FALSE,3,21.4,3,21.4,3,12.0,4,16.0,2,50.0,2,50.0,3,17.6,3,17.6
+Hippocampus_CMRO2 (umol/100g/min),metabolism,umol/100g/min,FALSE,2,14.3,2,14.3,2,8.0,2,8.0,1,25.0,1,25.0,2,11.8,2,11.8
+Hippocampus_CMRgl (umol/100g/min),metabolism,umol/100g/min,FALSE,4,28.6,4,28.6,7,28.0,8,32.0,3,75.0,3,75.0,5,29.4,5,29.4
+Hypothalamus_CMRgl (umol/100g/min),metabolism,umol/100g/min,FALSE,4,28.6,4,28.6,6,24.0,7,28.0,3,75.0,3,75.0,5,29.4,5,29.4
+Insula_CMRgl (umol/100g/min),metabolism,umol/100g/min,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,1,25.0,1,25.0,1,5.9,1,5.9
+Neocortex_CBF (mL/100g/min),metabolism,mL/100g/min,FALSE,3,21.4,3,21.4,3,12.0,4,16.0,2,50.0,2,50.0,3,17.6,3,17.6
+Neocortex_CMRO2 (umol/100g/min),metabolism,umol/100g/min,FALSE,2,14.3,2,14.3,2,8.0,2,8.0,1,25.0,1,25.0,2,11.8,2,11.8
+Neocortex_CMRgl (umol/100g/min),metabolism,umol/100g/min,FALSE,4,28.6,4,28.6,7,28.0,8,32.0,3,75.0,3,75.0,5,29.4,5,29.4
+Nucleus_accumbens_CMRgl (umol/100g/min),metabolism,umol/100g/min,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,1,25.0,1,25.0,1,5.9,1,5.9
+Nucleus_dentatus_cerebelli_CMRgl (umol/100g/min),metabolism,umol/100g/min,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,1,25.0,1,25.0,1,5.9,1,5.9
+Nucleus_ruber_CMRgl (umol/100g/min),metabolism,umol/100g/min,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,1,25.0,1,25.0,1,5.9,1,5.9
+Nucleus_subthalamicus_CMRgl (umol/100g/min),metabolism,umol/100g/min,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,1,25.0,1,25.0,1,5.9,1,5.9
+Occipital_cortex_CMRO2 (umol/100g/min),metabolism,umol/100g/min,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,1,25.0,1,25.0,1,5.9,1,5.9
+Occipital_cortex_CMRgl (umol/100g/min),metabolism,umol/100g/min,FALSE,4,28.6,4,28.6,6,24.0,7,28.0,3,75.0,3,75.0,5,29.4,5,29.4
+Pallidum_CMRgl (umol/100g/min),metabolism,umol/100g/min,FALSE,4,28.6,4,28.6,6,24.0,7,28.0,3,75.0,3,75.0,5,29.4,5,29.4
+Parietal_cortex_CMRO2 (umol/100g/min),metabolism,umol/100g/min,FALSE,2,14.3,2,14.3,2,8.0,2,8.0,1,25.0,1,25.0,2,11.8,2,11.8
+Parietal_cortex_CMRgl (umol/100g/min),metabolism,umol/100g/min,FALSE,4,28.6,4,28.6,7,28.0,8,32.0,3,75.0,3,75.0,5,29.4,5,29.4
+Prefrontal_cortex_CMRgl (umol/100g/min),metabolism,umol/100g/min,FALSE,4,28.6,4,28.6,5,20.0,6,24.0,3,75.0,3,75.0,4,23.5,4,23.5
+Putamen_CMRgl (umol/100g/min),metabolism,umol/100g/min,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,1,25.0,1,25.0,1,5.9,1,5.9
+Sensorimotor_cortex_CMRO2 (umol/100g/min),metabolism,umol/100g/min,TRUE,1,7.1,1,7.1,1,4.0,1,4.0,1,25.0,1,25.0,1,5.9,1,5.9
+Sensorimotor_cortex_CMRgl (umol/100g/min),metabolism,umol/100g/min,TRUE,4,28.6,4,28.6,7,28.0,8,32.0,3,75.0,3,75.0,5,29.4,5,29.4
+Septum_CMRgl (umol/100g/min),metabolism,umol/100g/min,FALSE,3,21.4,3,21.4,5,20.0,6,24.0,2,50.0,2,50.0,4,23.5,4,23.5
+Substantia_nigra_CMRgl (umol/100g/min),metabolism,umol/100g/min,FALSE,4,28.6,4,28.6,6,24.0,7,28.0,3,75.0,3,75.0,5,29.4,5,29.4
+Temporal_cortex_CMRO2 (umol/100g/min),metabolism,umol/100g/min,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,1,25.0,1,25.0,1,5.9,1,5.9
+Temporal_cortex_CMRgl (umol/100g/min),metabolism,umol/100g/min,FALSE,4,28.6,4,28.6,7,28.0,8,32.0,3,75.0,3,75.0,5,29.4,5,29.4
+Thalamus_CBF (mL/100g/min),metabolism,mL/100g/min,FALSE,2,14.3,2,14.3,2,8.0,2,8.0,1,25.0,1,25.0,2,11.8,2,11.8
+Thalamus_CMRO2 (umol/100g/min),metabolism,umol/100g/min,FALSE,2,14.3,2,14.3,2,8.0,2,8.0,1,25.0,1,25.0,2,11.8,2,11.8
+Thalamus_CMRgl (umol/100g/min),metabolism,umol/100g/min,FALSE,4,28.6,4,28.6,7,28.0,8,32.0,3,75.0,3,75.0,5,29.4,5,29.4
+Thalamus_medial_nucleus_CMRgl (umol/100g/min),metabolism,umol/100g/min,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,1,25.0,1,25.0,1,5.9,1,5.9
+Vermis_CMRgl (umol/100g/min),metabolism,umol/100g/min,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,1,25.0,1,25.0,1,5.9,1,5.9
+Visual_cortex_CMRgl (umol/100g/min),metabolism,umol/100g/min,FALSE,4,28.6,4,28.6,6,24.0,7,28.0,3,75.0,3,75.0,5,29.4,5,29.4
+White_matter_CBF (mL/100g/min),metabolism,mL/100g/min,FALSE,2,14.3,3,21.4,2,8.0,3,12.0,1,25.0,1,25.0,2,11.8,3,17.6
+White_matter_CMRO2 (umol/100g/min),metabolism,umol/100g/min,FALSE,2,14.3,2,14.3,2,8.0,2,8.0,1,25.0,1,25.0,2,11.8,2,11.8
+White_matter_CMRgl (umol/100g/min),metabolism,umol/100g/min,FALSE,4,28.6,4,28.6,6,24.0,7,28.0,3,75.0,3,75.0,5,29.4,5,29.4
+Whole_brain_CBF (mL/100g/min),metabolism,mL/100g/min,FALSE,4,28.6,4,28.6,4,16.0,6,24.0,3,75.0,3,75.0,4,23.5,4,23.5
+Whole_brain_CMRO2 (umol/100g/min),metabolism,umol/100g/min,FALSE,3,21.4,3,21.4,5,20.0,7,28.0,2,50.0,2,50.0,4,23.5,4,23.5
+Whole_brain_CMRgl (umol/100g/min),metabolism,umol/100g/min,FALSE,4,28.6,4,28.6,7,28.0,9,36.0,3,75.0,3,75.0,5,29.4,5,29.4
+Whole_brain_Total_O2_consumption (mL/min),metabolism,mL/min,FALSE,3,21.4,3,21.4,5,20.0,7,28.0,2,50.0,2,50.0,4,23.5,4,23.5
+Whole_brain_Total_glucose_utilization (umol/min),metabolism,umol/min,FALSE,4,28.6,4,28.6,7,28.0,8,32.0,3,75.0,3,75.0,5,29.4,5,29.4
+Angular_utilization_index_FL (percent),sensorimotor & motor pathways,percent,TRUE,2,14.3,4,28.6,3,12.0,9,36.0,0,0.0,0,0.0,2,11.8,5,29.4
+Angular_utilization_index_HL (percent),sensorimotor & motor pathways,percent,TRUE,4,28.6,6,42.9,5,20.0,11,44.0,0,0.0,0,0.0,4,23.5,7,41.2
+Arboreal_terrestrial (category),sensorimotor & motor pathways,category,TRUE,3,21.4,3,21.4,7,28.0,9,36.0,1,25.0,1,25.0,3,17.6,3,17.6
+Area of tract mmˆ2,sensorimotor & motor pathways,mm2,TRUE,8,57.1,9,64.3,13,52.0,15,60.0,3,75.0,3,75.0,10,58.8,11,64.7
+Average fiber size x 10ˆ5 K,sensorimotor & motor pathways,um x 1e5,TRUE,5,35.7,6,42.9,8,32.0,10,40.0,3,75.0,3,75.0,6,35.3,7,41.2
+CM_connection_inference (category),sensorimotor & motor pathways,category,TRUE,0,0.0,0,0.0,1,4.0,2,8.0,0,0.0,0,0.0,0,0.0,0,0.0
+CST_termination_grade (ordinal 0-2),sensorimotor & motor pathways,ordinal 0-2,TRUE,0,0.0,0,0.0,1,4.0,2,8.0,0,0.0,0,0.0,0,0.0,0,0.0
+Depth,sensorimotor & motor pathways,ordinal,TRUE,6,42.9,6,42.9,12,48.0,13,52.0,2,50.0,2,50.0,8,47.1,8,47.1
+Duty_Factor (percent),sensorimotor & motor pathways,percent,TRUE,7,50.0,9,64.3,10,40.0,16,64.0,2,50.0,2,50.0,8,47.1,10,58.8
+Foot_Posture (category),sensorimotor & motor pathways,category,TRUE,7,50.0,9,64.3,9,36.0,15,60.0,2,50.0,2,50.0,8,47.1,10,58.8
+Gait (category),sensorimotor & motor pathways,category,TRUE,7,50.0,9,64.3,10,40.0,16,64.0,2,50.0,2,50.0,8,47.1,10,58.8
+Intermembral_index (ratio),sensorimotor & motor pathways,ratio,TRUE,3,21.4,3,21.4,6,24.0,9,36.0,1,25.0,1,25.0,3,17.6,3,17.6
+Lamina of axon terminals deepest,sensorimotor & motor pathways,ordinal,TRUE,5,35.7,5,35.7,12,48.0,13,52.0,1,25.0,1,25.0,7,41.2,7,41.2
+Lamina of axon terminals densest,sensorimotor & motor pathways,ordinal,TRUE,5,35.7,5,35.7,10,40.0,11,44.0,1,25.0,1,25.0,7,41.2,7,41.2
+Largest fiber diameter µm,sensorimotor & motor pathways,um,TRUE,5,35.7,6,42.9,8,32.0,9,36.0,1,25.0,1,25.0,7,41.2,8,47.1
+Length,sensorimotor & motor pathways,as printed,TRUE,6,42.9,6,42.9,12,48.0,13,52.0,2,50.0,2,50.0,8,47.1,8,47.1
+Limb_posture (category),sensorimotor & motor pathways,category,TRUE,5,35.7,8,57.1,6,24.0,13,52.0,1,25.0,1,25.0,5,29.4,9,52.9
+Locomotor_diversity_index (index),sensorimotor & motor pathways,index,TRUE,3,21.4,4,28.6,7,28.0,10,40.0,1,25.0,1,25.0,3,17.6,4,23.5
+Locomotor_habit (category),sensorimotor & motor pathways,category,TRUE,5,35.7,8,57.1,6,24.0,13,52.0,1,25.0,1,25.0,5,29.4,9,52.9
+Number of fibers per tract,sensorimotor & motor pathways,count,TRUE,6,42.9,7,50.0,9,36.0,11,44.0,3,75.0,3,75.0,7,41.2,8,47.1
+Penetration down spinal cord,sensorimotor & motor pathways,category,TRUE,6,42.9,6,42.9,13,52.0,14,56.0,2,50.0,2,50.0,8,47.1,8,47.1
+Phase (percent),sensorimotor & motor pathways,percent,TRUE,7,50.0,9,64.3,10,40.0,16,64.0,2,50.0,2,50.0,8,47.1,10,58.8
+Top_speed (category),sensorimotor & motor pathways,category,TRUE,5,35.7,8,57.1,6,24.0,13,52.0,1,25.0,1,25.0,5,29.4,9,52.9
+Audible_freq_high_60dB.kHz,sensory performance,kHz,FALSE,7,50.0,11,78.6,10,40.0,18,72.0,3,75.0,3,75.0,8,47.1,12,70.6
+Audible_freq_low_60dB.kHz,sensory performance,kHz,FALSE,3,21.4,4,28.6,3,12.0,4,16.0,1,25.0,1,25.0,3,17.6,4,23.5
+Binocular_field.deg,sensory performance,deg,FALSE,2,14.3,4,28.6,3,12.0,6,24.0,1,25.0,1,25.0,3,17.6,5,29.4
+CFF_behavioural.Hz,sensory performance,Hz,FALSE,3,21.4,4,28.6,4,16.0,7,28.0,1,25.0,2,50.0,3,17.6,5,29.4
+CFF_electrophysiological.Hz,sensory performance,Hz,FALSE,4,28.6,5,35.7,5,20.0,8,32.0,3,75.0,3,75.0,4,23.5,6,35.3
+Field_of_best_vision.deg,sensory performance,deg,FALSE,2,14.3,4,28.6,3,12.0,6,24.0,1,25.0,1,25.0,3,17.6,5,29.4
+Hearing_range.octaves,sensory performance,octaves,FALSE,3,21.4,4,28.6,3,12.0,4,16.0,1,25.0,1,25.0,3,17.6,4,23.5
+Interaural_distance_functional.us,sensory performance,us,FALSE,7,50.0,11,78.6,10,40.0,18,72.0,3,75.0,3,75.0,8,47.1,12,70.6
+Sound_localization_threshold.deg,sensory performance,deg,FALSE,3,21.4,5,35.7,4,16.0,7,28.0,1,25.0,1,25.0,4,23.5,6,35.3
+Visual_acuity_anatomical.cdeg,sensory performance,c/deg,FALSE,9,64.3,12,85.7,12,48.0,19,76.0,4,100.0,4,100.0,10,58.8,14,82.4
+Visual_acuity_method_unstated.cdeg,sensory performance,c/deg,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,1,25.0,1,25.0,1,5.9,1,5.9
+REM_sleep_pct,sleep & torpor,%,FALSE,5,35.7,6,42.9,8,32.0,10,40.0,3,75.0,3,75.0,5,29.4,6,35.3
+SWS_total_pct,sleep & torpor,%,FALSE,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,5.9,1,5.9
+Sleep_h_day,sleep & torpor,h/day,FALSE,4,28.6,8,57.1,5,20.0,12,48.0,3,75.0,4,100.0,4,23.5,8,47.1
+Torpor_Tb_min_C,sleep & torpor,C,FALSE,2,14.3,2,14.3,3,12.0,3,12.0,1,25.0,1,25.0,2,11.8,2,11.8
+Torpor_bout_max_h,sleep & torpor,h,FALSE,2,14.3,2,14.3,3,12.0,3,12.0,1,25.0,1,25.0,2,11.8,2,11.8
+Torpor_type,sleep & torpor,category,FALSE,2,14.3,2,14.3,3,12.0,3,12.0,1,25.0,1,25.0,2,11.8,2,11.8
+USWS_pctTST,sleep & torpor,%,FALSE,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,5.9,1,5.9

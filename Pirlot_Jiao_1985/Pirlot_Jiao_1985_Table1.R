@@ -14,9 +14,29 @@ options(scipen=999)
 })
 folder <- dirname(.sp); item_name <- tools::file_path_sans_ext(basename(.sp)); setwd(folder)
 base <- local({ d <- folder; while(dirname(d)!=d && !file.exists(file.path(d,"__ReadMe.xlsx"))) d <- dirname(d); if(file.exists(file.path(d,"__ReadMe.xlsx"))) d else NA_character_ })
-snap <- read.csv("Pirlot_Jiao_1985_Table1_snapshot.csv", check.names=FALSE, stringsAsFactors=FALSE, na.strings=c("","NA"))
-stopifnot(nrow(snap)==10L)
-clean <- snap; clean$source <- "Pirlot_Jiao_1985_Table1"
+snap <- read.csv(paste0(item_name,"_snapshot.csv"), check.names=FALSE, stringsAsFactors=FALSE, na.strings=c("","NA"))
+stopifnot(identical(names(snap),c("","Panda","Raccoon","Bear")))
+snap <- snap[rowSums(!is.na(snap))>0L,,drop=FALSE]
+stopifnot(nrow(snap)==22L)
+percent_rows <- seq.int(1L,nrow(snap),by=2L)
+stopifnot(
+ identical(snap[[1]][percent_rows],c("BO","N","RH","S","D","ST","H","M","C","O","Total")),
+ all(is.na(snap[[1]][percent_rows+1L])),
+ all(vapply(snap[-1L],is.numeric,logical(1L))),
+ !anyNA(snap[-1L]),
+ all(is.finite(as.matrix(snap[-1L])))
+)
+# Each percentage row is followed by its volume; keep the Total pair only in the snapshot.
+percent_rows <- percent_rows[-length(percent_rows)]
+volume_rows <- percent_rows+1L
+clean <- data.frame(
+ component=snap[[1]][percent_rows],
+ panda_volume_mm3=snap$Panda[volume_rows], panda_percent=snap$Panda[percent_rows],
+ raccoon_volume_mm3=snap$Raccoon[volume_rows], raccoon_percent=snap$Raccoon[percent_rows],
+ bear_volume_mm3=snap$Bear[volume_rows], bear_percent=snap$Bear[percent_rows],
+ stringsAsFactors=FALSE
+)
+clean$source <- item_name
 write.csv(clean, paste0(item_name,".csv"), row.names=FALSE, na="NA")
 if(!is.na(base)) {
  fc <- readxl::read_excel(file.path(base,"__ReadMe.xlsx"), sheet="Sheet1")

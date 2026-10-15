@@ -1,0 +1,15 @@
+"species_sci","common_name","Brain_Mass_measured (g)","Body_Mass (g)","BMR_wholeanimal (mL O2/h)","Gestation (days)","Weaning_age (days)","Activity_pattern (category)","Diet_breadth (count)","Diet_dominant (category)","Diet_Fruit (%)","Diet_Inv (%)","Diet_Nect (%)","Diet_PlantO (%)","Diet_Scav (%)","Diet_Seed (%)","Diet_Vect (%)","Diet_Vend (%)","Diet_Vfish (%)","Diet_Vunk (%)","ForStrat_stratum (category)","Trophic_guild (category)"
+"Aotus nancymaae","Owl monkey",17.4,788.68,459.45,137.5,110.3333333,"Nocturnal",6,"Invertebrates",20,20,10,20,0,20,0,0,0,10,"Arboreal","Herbivore"
+"Callithrix jacchus","Common marmoset",7.153,303.3394,165.3128,145,76.1333,"Diurnal",4,"Nectar",30,20,40,0,0,0,0,0,0,10,"Arboreal","Herbivore"
+"Dasypus novemcinctus","Armadillo",9.77,4110.875,894.835,126.5,137,"Nocturnal",1,"Invertebrates",0,100,0,0,0,0,0,0,0,0,"Ground","Faunivore"
+"Heterocephalus glaber","Naked mole rat",0.44,60.8,31.864,,,"Cathemeral",1,"Other plant",0,0,0,100,0,0,0,0,0,0,"Ground","Herbivore"
+"Homo sapiens","Human",1310.3675,61535.0866,12925.1607,272.39,910.43,"Diurnal",3,"Fruit",60,10,0,30,0,0,0,0,0,0,"Ground","Herbivore"
+"Macaca mulatta","Rhesus macaque",83.4347,6965.6111,2269.2222,165.8889,307.1667,"Diurnal",4,"Other plant",30,10,0,40,0,20,0,0,0,0,"Scansorial","Herbivore"
+"Microcebus murinus","Mouse lemur",6.2977,55.0375,71.9433,60.375,45,"Nocturnal",5,"Fruit",30,20,10,20,0,0,20,0,0,0,"Arboreal","Omnivore"
+"Monodelphis domestica","Opossum",0.79,116.5,61.06,,,"Nocturnal",5,"Invertebrates",20,20,0,0,20,20,0,20,0,0,"Ground","Omnivore"
+"Mus musculus","Mouse",0.5343,29.1143,50.2886,18.75,22,"Nocturnal",3,"Other plant",0,20,0,60,0,20,0,0,0,0,"Ground","Herbivore"
+"Mustela putorius furo","Ferret",6.163,1800,847.8,41,63,,,,,,,,,,,,,,,
+"Pan troglodytes","Chimpanzee",377.5927,46916.0493,9298.9175,232,1558.1667,"Diurnal",3,"Fruit",60,10,0,30,0,0,0,0,0,0,"Scansorial","Herbivore"
+"Rattus norvegicus","Rat",1.7597,328.92,244.0487,21.25,25,"Nocturnal",4,"Seed",20,30,0,10,0,40,0,0,0,0,"Ground","Herbivore"
+"Sus scrofa","Pig",137.65,1e+05,,116.645,52.2,,,,,,,,,,,,,,,
+"Tupaia belangeri","Treeshrew",2.9207,127,166.7562,46,32,"Diurnal",2,"Invertebrates",0,90,0,10,0,0,0,0,0,0,"Ground","Faunivore"

@@ -1,8 +1,11 @@
 Hanson et al. 2018 - Table 2 (striatal neuron/glia density, glia:neuron ratio, soma area)
 DOI: 10.1002/dneu.22554
 Source        Hanson_etal_2018.pdf (Table 2)
-Snapshot      Hanson_etal_2018_Table2_snapshot.csv   (verbatim: WS/TD + %change/t/df/P; mean +/- SD)
-Derived       Hanson_etal_2018_Table2.R -> Hanson_etal_2018_Table2_derived.csv   <-- USE THIS
+Snapshot      Hanson_etal_2018_Table2_snapshot.csv   (printed layout: heading rows, label column, WS/TD column, row/column order as printed)
+              Re-transcribed 2026-10-15 by AI assistant (manual entry, method 5) from Hanson_etal_2018.pdf p.536;
+              verified cell-by-cell against the PDF text layer by word coordinates (24/24 rows match).
+              Printed minus signs kept as U+2212; Adobe PDF->Excel export (Hanson_etal_2018.xlsx) was used for reference only (glyph-garbled).
+Derived       Hanson_etal_2018_Table2.R -> Hanson_etal_2018_Table2.csv   <-- USE THIS
               (mean/SD split into numeric columns; stat rows dropped)
 Definitions   Hanson_etal_2018_definitions.csv
 Online        __Public/comparative-data/10.1002%2Fdneu.22554_Table2.tsv

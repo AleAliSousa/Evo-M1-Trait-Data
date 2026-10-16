@@ -17,10 +17,16 @@
 folder <- dirname(.sp); setwd(folder); options(stringsAsFactors = FALSE)
 suppressMessages({ library(tidyr); library(dplyr) })
 
-raw <- read.csv("Hanson_etal_2018_Table2_snapshot.csv", check.names = FALSE, skip = 1)
+## snapshot is in the printed layout: caption row, then a header row (blank, blank, dC, mC, aP, NA);
+## measure label printed only on the WS row; stat labels in column 1 -> read as text, no header
+raw <- read.csv("Hanson_etal_2018_Table2_snapshot.csv", header = FALSE, skip = 2,
+                colClasses = "character", na.strings = character(0))
+names(raw) <- c("Measure", "Stat", "dC", "mC", "aP", "NA")
 
 ## keep only the group value rows (WS, TD); drop stat rows
 val <- raw[raw$Stat %in% c("WS", "TD"), ]
+## measure label is printed once per block (on the WS row) -> carry it down to the TD row
+for (i in seq_len(nrow(val))) if (!nzchar(val$Measure[i])) val$Measure[i] <- val$Measure[i - 1]
 
 ## split "mean ± SD" -> numeric mean/SD (strip thousands commas)
 split_pm <- function(x) {
@@ -36,7 +42,7 @@ codes <- c("dC","mC","aP","NA")
 measure_key <- c("Average neuron density" = "Neuron_density.per.mm3",
                  "Average glia density"   = "Glia_density.per.mm3",
                  "Glia per neuron"        = "Glia_Neuron_ratio",
-                 "Average soma area (µm2)"= "Soma_area.um2")
+                 "Average soma area (µm²)"= "Soma_area.um2")
 
 long <- do.call(rbind, lapply(seq_len(nrow(val)), function(i) {
   m <- measure_key[[ val$Measure[i] ]]; grp <- val$Stat[i]
@@ -62,7 +68,7 @@ out <- out[order(match(out$Region_code, codes), out$Group),
              "Glia_density.per.mm3","Glia_density.per.mm3.SD",
              "Glia_Neuron_ratio","Glia_Neuron_ratio.SD",
              "Soma_area.um2","Soma_area.um2.SD")]
-write.csv(out, "Hanson_etal_2018_Table2_derived.csv", row.names = FALSE)
+write.csv(out, "Hanson_etal_2018_Table2.csv", row.names = FALSE)
 cat("Table2 derived:", nrow(out), "rows\n")
 
 
@@ -74,6 +80,6 @@ cat("Table2 derived:", nrow(out), "rows\n")
 if (!is.na(.tsv_base)) {
   .td <- file.path(.tsv_base, "__Public", "comparative-data")
   if (!dir.exists(.td)) dir.create(.td, recursive = TRUE)
-  write.table(read.csv("Hanson_etal_2018_Table2_derived.csv", check.names = FALSE),
+  write.table(read.csv("Hanson_etal_2018_Table2.csv", check.names = FALSE),
               file.path(.td, "10.1002%2Fdneu.22554_Table2.tsv"), sep = "\t", row.names = FALSE)
 }

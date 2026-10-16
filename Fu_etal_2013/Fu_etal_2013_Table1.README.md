@@ -4,16 +4,16 @@ Fu, Y., Rusznák, Z., Herculano-Houzel, S., Watson, C., & Paxinos, G. (2013). Ce
 characterizing postnatal development and maturation of the mouse brain and spinal cord. *Brain
 Structure and Function*, 218(6), 1337-1354. doi:10.1007/s00429-012-0462-x
 
-Source snapshot: `Fu_etal_2013_Table1.xlsx` (hand-transcribed, verbatim copy of the article's printed
+Source snapshot: `Fu_etal_2013_Table1_snapshot.xlsx` (hand-transcribed, verbatim copy of the article's printed
 Table 1, retained as the frozen snapshot).
 
 ## What we built
-The folder had a completed transcription (`Fu_etal_2013_Table1.xlsx`) sitting alongside an
+The folder had a completed transcription (`Fu_etal_2013_Table1_snapshot.xlsx`) sitting alongside an
 abandoned/incomplete draft (`Fu_etal_2013_paper.xlsx`, flagged internally with the note "*replace
 with numbers from text of the paper" and missing the Pituitary gland row) — no CSV, R script, README,
 or definitions had been built from either. Built now from the complete transcription:
 
-- **Source:** `Fu_etal_2013_Table1.xlsx`, cross-checked sentence-for-sentence against Table 1 as
+- **Source:** `Fu_etal_2013_Table1_snapshot.xlsx`, cross-checked sentence-for-sentence against Table 1 as
   printed in the article PDF (`Fu-2013-Cellular composition characterizing po.pdf`, page 6) — all 7
   structure rows and 18 data columns match exactly, including the Pituitary gland row that the
   abandoned draft omitted.
@@ -34,13 +34,18 @@ pairwise age-window comparisons (4-to-15, 15-to-40, and 4-to-40 weeks), for six 
 pituitary gland. Underlying numeric values (means ± SEM) are reported only in the article's figures and
 running text, not in Table 1 itself, and are not reconstructed here.
 
-## Symbol code (carried through verbatim from the source table)
-- `↑` / `↑↑` / `↑↑↑` — increase, significant at p<0.05 / p<0.01 / p<0.001
-- `↓` / `↓↓` / `↓↓↓` — decrease, significant at p<0.05 / p<0.01 / p<0.001
-- `–` (en dash) — no statistically significant change
+## Numeric code
+The frozen snapshot retains the source-table symbols verbatim. The generated CSV and public TSV use
+a signed direction/significance code suitable for analysis:
+
+- `+1` / `+2` / `+3` — increase, significant at p<0.05 / p<0.01 / p<0.001
+- `-1` / `-2` / `-3` — decrease, significant at p<0.05 / p<0.01 / p<0.001
+- `0` — no statistically significant change
 - `NA` — not applicable (the pituitary gland has no NeuN-based neuron/non-neuron split; per the
   article's own footnote a, its `NumNonNeurons_*` and `DensityNonNeurons_*` columns instead report the
   pituitary's total cell number and density)
+
+The absolute score is the significance tier reported by the paper, not an effect size.
 
 ## Checks
 - 7 rows (Cerebellum, Isocortex, Hippocampus, Olfactory bulb, Rest of the brain, Spinal cord, Pituitary
@@ -49,7 +54,7 @@ running text, not in Table 1 itself, and are not reconstructed here.
   coding scheme.
 
 ## Extraction / build record
-The frozen snapshot (`Fu_etal_2013_Table1.xlsx`) was already transcribed and complete. The CSV, R
+The frozen snapshot (`Fu_etal_2013_Table1_snapshot.xlsx`) was already transcribed and complete. The CSV, R
 script, public TSV, README, and definitions file were built and uploaded by Microsoft Copilot (AI
 assistant) on 2026-09-25, reading the existing xlsx snapshot and cross-checking it against the source
 PDF. No values were re-transcribed or changed. The incomplete `Fu_etal_2013_paper.xlsx` draft in the

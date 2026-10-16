@@ -15,7 +15,13 @@
 })
 folder <- dirname(.sp); setwd(folder); options(stringsAsFactors = FALSE)
 
-raw <- read.csv("Hanson_etal_2018_Table3_snapshot.csv", check.names = FALSE, skip = 1)
+## snapshot is in the printed layout: caption row, then a header row (blank, blank, dC, mC);
+## measure label printed only on the WS row; stat labels in column 1 -> read as text, no header
+raw <- read.csv("Hanson_etal_2018_Table3_snapshot.csv", header = FALSE, skip = 2,
+                colClasses = "character", na.strings = character(0))
+names(raw) <- c("Measure", "Stat", "dC", "mC")
+## measure label is printed once per block (on the WS row) -> carry it down to the TD row
+for (i in seq_len(nrow(raw))) if (raw$Stat[i] %in% c("WS", "TD") && !nzchar(raw$Measure[i])) raw$Measure[i] <- raw$Measure[i - 1]
 num <- function(x) suppressWarnings(as.numeric(gsub("[,%]", "", trimws(as.character(x)))))
 split_pm <- function(x) {
   x <- gsub(",", "", trimws(as.character(x))); p <- strsplit(x, "\\s*±\\s*")
@@ -36,7 +42,7 @@ rows <- do.call(rbind, lapply(codes, function(cc) {
                Oligodendrocyte_pct_of_glia = num(pct[[cc]][pct$Stat==g]))
   }))
 }))
-write.csv(rows, "Hanson_etal_2018_Table3_derived.csv", row.names = FALSE)
+write.csv(rows, "Hanson_etal_2018_Table3.csv", row.names = FALSE)
 cat("Table3 derived:", nrow(rows), "rows\n")
 
 
@@ -48,6 +54,6 @@ cat("Table3 derived:", nrow(rows), "rows\n")
 if (!is.na(.tsv_base)) {
   .td <- file.path(.tsv_base, "__Public", "comparative-data")
   if (!dir.exists(.td)) dir.create(.td, recursive = TRUE)
-  write.table(read.csv("Hanson_etal_2018_Table3_derived.csv", check.names = FALSE),
+  write.table(read.csv("Hanson_etal_2018_Table3.csv", check.names = FALSE),
               file.path(.td, "10.1002%2Fdneu.22554_Table3.tsv"), sep = "\t", row.names = FALSE)
 }

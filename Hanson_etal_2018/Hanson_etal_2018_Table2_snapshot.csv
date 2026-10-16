@@ -1,26 +1,26 @@
-Caption: Table 2. Summary of Results, Statistical Analyses, and Percent Change for Average Neuron and Glia Density, Glia to Neuron Ratio, and Neuronal Soma Area in the Dorsal (dC) and Medial (mC) Caudate Nucleus, Associative Putamen (aP), and Nucleus Accumbens (NA) Regions of the Striatum in Typically Developing (TD) Individuals and Individuals with Williams syndrome (WS),,,,,
-Measure,Stat,dC,mC,aP,NA
+"Table 2 Summary of Results, Statistical Analyses, and Percent Change for Average Neuron and Glia Density, Glia to Neuron Ratio, and Neuronal Soma Area in the Dorsal (dC) and Medial (mC) Caudate Nucleus, Associative Putamen (aP), and Nucleus Accumbens (NA) Regions of the Striatum in Typically Developing (TD) Individuals and Individuals with Williams syndrome (WS)",,,,,
+,,dC,mC,aP,NA
 Average neuron density,WS,"19,496 ± 1471","22,935 ± 843","26,629 ± 2610","27,736 ± 2632"
-Average neuron density,TD,"21,061 ± 776","24,931 ± 1210","26,509 ± 1129","28,734 ± 3455"
-Average neuron density,Average percent change,-6.51%,-6.85%,+2.37%,+6.32%
-Average neuron density,t-statistics,t = 0.9408,t = 1.354,t = 0.422,t = 0.2299
-Average neuron density,df,df = 6.065,df = 7.144,df = 5.447,df = 7.473
-Average neuron density,P-value,0.382,0.217,0.967,0.824
+,TD,"21,061 ± 776","24,931 ± 1210","26,509 ± 1129","28,734 ± 3455"
+Average percent change,,−6.51%,−6.85%,+2.37%,+6.32%
+t-statistics,,t = 0.9408,t = 1.354,t = 0.422,t = 0.2299
+,,df = 6.065,df = 7.144,df = 5.447,df = 7.473
+P-value,,0.382,0.217,0.967,0.824
 Average glia density,WS,"58,304 ± 3595","65,990 ± 4266","73,106 ± 8075","60,597 ± 4502"
-Average glia density,TD,"47,156 ± 2482","55,046 ± 4213","59,100 ± 4754","58,750 ± 7743"
-Average glia density,Average percent change,+25.42%,+22.63%,+28.92%,+12.24%
-Average glia density,t-statistics,t = 2.552,t = 1.826,t = 1.495,t = 0.2062
-Average glia density,df,df = 7.108,df = 7.999,df = 6.476,df = 6.427
-Average glia density,P-value,0.038*,0.105,0.182,0.843
+,TD,"47,156 ± 2482","55,046 ± 4213","59,100 ± 4754","58,750 ± 7743"
+Average percent change,,+25.42%,+22.63%,+28.92%,+12.24%
+t-statistics,,t = 2.552,t = 1.826,t = 1.495,t = 0.2062
+,,df = 7.108,df = 7.999,df = 6.476,df = 6.427
+P-value,,0.038*,0.105,0.182,0.843
 Glia per neuron,WS,2.92 ± 0.21,2.81 ± 0.01,2.70 ± 0.19,2.23 ± 0.18
-Glia per neuron,TD,2.24 ± 0.10,2.18 ± 0.08,2.22 ± 0.12,2.03 ± 0.04
-Glia per neuron,Average percent change,+31.97%,+29.23%,+23.61%,+9.67%
-Glia per neuron,t-statistics,t = 2.947,t = 4.286,t = 2.108,t = 1.094
-Glia per neuron,df,df = 5.647,df = 6.896,df = 6.782,df = 4.443
-Glia per neuron,P-value,0.028*,0.004**,0.074,0.330
-Average soma area (µm2),WS,128 ± 8,121 ± 12,101 ± 11,112 ± 11
-Average soma area (µm2),TD,154 ± 4,158 ± 8,132 ± 11,143 ± 12
-Average soma area (µm2),Average percent change,-16.62%,-21.76%,-23.27%,-20.14%
-Average soma area (µm2),t-statistics,t = 2.964,t = 2.603,t = 2.029,t = 1.952
-Average soma area (µm2),df,df = 5.755,df = 7.275,df = 7.952,df = 7.919
-Average soma area (µm2),p-value,0.026*,0.034*,0.077,0.087
+,TD,2.24 ± 0.10,2.18 ± 0.08,2.22 ± 0.12,2.03 ± 0.04
+Average percent change,,+31.97%,+29.23%,+23.61%,+9.67%
+t-statistics,,t = 2.947,t = 4.286,t = 2.108,t = 1.094
+,,df = 5.647,df = 6.896,df = 6.782,df = 4.443
+P-value,,0.028*,0.004**,0.074,0.330
+Average soma area (µm²),WS,128 ± 8,121 ± 12,101 ± 11,112 ± 11
+,TD,154 ± 4,158 ± 8,132 ± 11,143 ± 12
+Average percent change,,−16.62%,−21.76%,−23.27%,−20.14%
+t-statistics,,t = 2.964,t = 2.603,t = 2.029,t = 1.952
+,,df = 5.755,df = 7.275,df = 7.952,df = 7.919
+p-value,,0.026*,0.034*,0.077,0.087

@@ -1,8 +1,8 @@
 "Structure","Mass_wk4to15","Mass_wk15to40","Mass_wk4to40","NumNeurons_wk4to15","NumNeurons_wk15to40","NumNeurons_wk4to40","NumNonNeurons_wk4to15","NumNonNeurons_wk15to40","NumNonNeurons_wk4to40","DensityNeurons_wk4to15","DensityNeurons_wk15to40","DensityNeurons_wk4to40","DensityNonNeurons_wk4to15","DensityNonNeurons_wk15to40","DensityNonNeurons_wk4to40","NNNratio_wk4to15","NNNratio_wk15to40","NNNratio_wk4to40"
-"Cerebellum","↑↑↑","–","↑↑↑","↑","–","–","–","–","–","–","–","–","–","–","–","–","–","–"
-"Isocortex","–","–","–","–","–","–","↑","–","↑↑","–","–","–","↑","–","–","↑","–","↑↑"
-"Hippocampus","↑↑↑","–","↑↑","–","–","–","–","–","–","↓↓↓","–","↓↓","↓","–","↓","–","–","–"
-"Olfactory bulb","↑↑","–","↑↑","↑","–","↑↑","–","↑↑","↑","–","–","–","↓↓","↓↓","–","↓↓","–","–"
-"Rest of the brain","↑↑","–","↑↑","–","–","–","↑↑","–","↑","–","–","↓↓","–","–","–","–","–","↑"
-"Spinal cord","↑↑↑","↑↑↑","↑↑↑","–","–","–","–","–","↑","↓↓","↓","↓↓↓","↓↓↓","–","↓↓↓","–","↑","↑↑"
-"Pituitary gland","–","–","↑","NA","NA","NA","–","–","–","NA","NA","NA","–","–","–","NA","NA","NA"
+"Cerebellum",3,0,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Isocortex",0,0,0,0,0,0,1,0,2,0,0,0,1,0,0,1,0,2
+"Hippocampus",3,0,2,0,0,0,0,0,0,-3,0,-2,-1,0,-1,0,0,0
+"Olfactory bulb",2,0,2,1,0,2,0,2,1,0,0,0,-2,-2,0,-2,0,0
+"Rest of the brain",2,0,2,0,0,0,2,0,1,0,0,-2,0,0,0,0,0,1
+"Spinal cord",3,3,3,0,0,0,0,0,1,-2,-1,-3,-3,0,-3,0,1,2
+"Pituitary gland",0,0,1,NA,NA,NA,0,0,0,NA,NA,NA,0,0,0,NA,NA,NA

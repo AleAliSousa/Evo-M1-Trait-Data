@@ -81,7 +81,9 @@ for (i in seq_len(nrow(vc))) {
   t <- tolower(paste(vc$Code[i], vc$Definition[i]))
   if (!grepl("body", t) || grepl("brain", t)) next
   m <- regmatches(vc$paper[i], regexec("([A-Za-z]+).*?((?:19|20)[0-9]{2})", vc$paper[i]))[[1]]
-  if (length(m) == 3) { k <- paste(tolower(m[2]), m[3]); if (is.null(role_ay[[k]])) role_ay[[k]] <- vc$role[i] }
+  # a blank/NA role in the catalog must not be recorded: %||% below only defaults NULL, and an NA role
+  # makes any(d_role == "primary") NA in pool_one() (Pirlot_Kamiya_1982, Ridgway__1990 as of 2026-10-19)
+  if (length(m) == 3 && !is.na(vc$role[i]) && nzchar(vc$role[i])) { k <- paste(tolower(m[2]), m[3]); if (is.null(role_ay[[k]])) role_ay[[k]] <- vc$role[i] }
 }
 ## Species identity: the shared resolver (_keys/resolve_species.R; SPECIES_NAMING.md v1). Replaces the
 ## former inline hub-then-first-key lookup (2026-09-28): rows are keyed by (paper folder, printed

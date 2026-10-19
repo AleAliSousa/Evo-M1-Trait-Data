@@ -22,7 +22,9 @@ root <- folder
 while (!file.exists(file.path(root, "__ReadMe.xlsx")) && dirname(root) != root)
   root <- dirname(root)
 filecodes <- readxl::read_excel(file.path(root, "__ReadMe.xlsx"), sheet = "Sheet1")
-item_encoded <- filecodes[["Item encoded"]][match(item_name, filecodes[["Item name"]])]
+## NFC on both sides: macOS may hand back the accented folder/file name decomposed (NFD).
+nfc <- function(x) if (requireNamespace("stringi", quietly = TRUE)) stringi::stri_trans_nfc(x) else x
+item_encoded <- filecodes[["Item encoded"]][match(nfc(item_name), nfc(filecodes[["Item name"]]))]
 stopifnot(length(item_encoded) == 1L, !is.na(item_encoded), !grepl("_$", item_encoded))
 snapshot <- utils::read.csv(file.path(folder, paste0(item_name, "_snapshot.csv")),
                            check.names = FALSE, stringsAsFactors = FALSE, na.strings = "", fileEncoding = "UTF-8")

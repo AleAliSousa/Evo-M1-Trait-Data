@@ -113,7 +113,24 @@ SKIP_PATTERNS <- c(
   ## done on 2026-08-15; re-running it can only do harm. Retire it, or rewrite it to
   ## locate rows with match() on Item name the way __update_remaining_builds does.
   "(^|/)__register_cortical_layer_builds_20260815\\.R$" =
-    "writes hard-coded Sheet1 rows 299-301; Sheet1 re-sorts, so a re-run overwrites other sources"
+    "writes hard-coded Sheet1 rows 299-301; Sheet1 re-sorts, so a re-run overwrites other sources",
+  ## Added 2026-10-19 after the 2026-10-19 sweep logged these as FAILED/TIMEOUT. None is a build.
+  ## Function library with a command-line entry (REPO_ROOT and NEW_PRIVATE_CSV arguments): the
+  ## header says "Source this file for the functions, or run: Rscript ... /path/to/repo /new/check.csv".
+  "^__merging_volumes/volumes_sample_metadata_Pirlot__1981\\.R$" =
+    "function library with a CLI (needs REPO_ROOT and NEW_PRIVATE_CSV arguments); not standalone",
+  ## Shiny app (ends in shinyApp()); reads data/ relative to its own folder -- same class as
+  ## __ShinyApp/app.R and vertebrate_opsin_explorer/app.R.
+  "^__Finder/app\\.R$" =
+    "Shiny app; reads data/ relative to its own folder; run deliberately from __Finder/",
+  ## Exhaustive scripts x data-files scan. It has hit TIMEOUT_SEC (300 s) in every sweep that
+  ## logged it (script unchanged since 2026-08-20); it finishes when run on its own.
+  "^_checks/find_orphan_R_scripts\\.R$" =
+    "exhaustive scripts x data-files scan; exceeds TIMEOUT_SEC (300 s); run deliberately",
+  ## The snapshot-freeze tool is a library + CLI (default command is read-only `status`); this
+  ## runner sources it and applies it below.
+  "^_tools/snapshot_freeze\\.R$" =
+    "snapshot-freeze library/CLI; sourced by this runner; run deliberately (Rscript _tools/snapshot_freeze.R status)"
 )
 
 r_scripts <- list.files(root_dir, pattern = "\\.R$", recursive = TRUE, full.names = TRUE)
@@ -182,6 +199,35 @@ if (nzchar(only)) {
   skip_reason <- skip_reason[keep]
 }
 
+## ---- frozen (human-checked) snapshots -------------------------------------------------------------
+## __ReadMe.xlsx column "Human visual check of snapshot" holds DDMMYYYY_initials once a person has
+## checked a snapshot. Those snapshots are frozen evidence: this sweep must not rewrite them.
+## See _tools/snapshot_freeze.R. Layer 1 (here): skip scripts that, by static scan, write a frozen
+## snapshot. Layer 2 (in the run loop): re-hash the frozen files after every script and restore any
+## that changed. To redo one on purpose:  EVOM1_UNFREEZE="Item_name" Rscript run_all_scripts_v2.R
+## (items are released in _checks/snapshot_freeze/manifest.csv); EVOM1_FREEZE_OFF=1 disables the guard.
+freeze_on <- !identical(Sys.getenv("EVOM1_FREEZE_OFF", ""), "1")
+freeze_locked_rows <- NULL
+if (freeze_on) {
+  source(file.path(root_dir, "_tools", "snapshot_freeze.R"))
+  freeze_state <- freeze_sync(root_dir)            # stops on an unreadable registry: fail closed
+  freeze_locked_rows <- freeze_locked(freeze_state)
+  cat(sprintf("\nFrozen snapshots: %d file(s) of %d checked item(s) locked; %d released.\n",
+              nrow(freeze_locked_rows), length(unique(freeze_locked_rows$item)),
+              sum(freeze_state$status == "released")))
+  if (any(freeze_state$state %in% c("DRIFT", "MISSING") & freeze_state$status == "locked")) {
+    n_restored <- freeze_restore(root_dir, freeze_check_locked(freeze_locked_rows, root_dir))
+    cat("Restored", length(n_restored), "frozen snapshot(s) that differed from the checked bytes:\n")
+    for (x in n_restored) cat("  ", x, "\n")
+  }
+  for (i in which(is.na(skip_reason))) {
+    blk <- freeze_blocking_items(r_scripts[i], freeze_locked_rows, root_dir)
+    if (length(blk))
+      skip_reason[i] <- sprintf("would rewrite the frozen snapshot of checked item(s) %s; to redo on purpose: EVOM1_UNFREEZE=\"%s\"",
+                                paste(blk, collapse = ", "), paste(blk, collapse = ","))
+  }
+}
+
 log_file <- file.path(checks_dir, "script_execution_log.csv")
 
 run_log <- data.frame(
@@ -238,6 +284,19 @@ for (k in seq_along(todo)) {
   } else {
     run_log$status[i] <- if (exit_status == 124L) "TIMEOUT" else "FAILED"
     run_log$error[i] <- paste(result, collapse = "\n")
+  }
+
+  ## Layer 2: a frozen snapshot that changed during this script is put back, and the script FAILS.
+  if (freeze_on && !is.null(freeze_locked_rows) && nrow(freeze_locked_rows)) {
+    bad <- freeze_check_locked(freeze_locked_rows, root_dir)
+    if (nrow(bad)) {
+      back <- freeze_restore(root_dir, bad)
+      run_log$status[i] <- "FAILED"
+      run_log$error[i] <- paste0("FROZEN SNAPSHOT MODIFIED by this script and restored from _checks/snapshot_freeze/store: ",
+                                 paste(back, collapse = "; "),
+                                 ". Anything this script built from the rewritten snapshot is suspect. ",
+                                 "Release the item on purpose with EVOM1_UNFREEZE. ", run_log$error[i])
+    }
   }
 
   write.csv(run_log, log_file, row.names = FALSE)

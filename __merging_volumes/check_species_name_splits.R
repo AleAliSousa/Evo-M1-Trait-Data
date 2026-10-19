@@ -44,7 +44,7 @@ if (!length(files)) {
         g <- s[s$Species_final == fin, ]
         all_splits <- rbind(all_splits, data.frame(
           file = sub("\\.csv$", "", f), Species_raw = raw, Species_final = fin,
-          name_source = g$name_source[1], n_sources = nrow(g),
+          name_source = if ("name_source" %in% names(g)) g$name_source[1] else NA_character_, n_sources = nrow(g),
           sources = paste(sort(g$Source), collapse = "; "), stringsAsFactors = FALSE))
       }
     }
@@ -57,8 +57,8 @@ if (!length(files)) {
     write.csv(all_splits, "volumes_species_name_splits.csv", row.names = FALSE)
     # A split where one side is `unresolved_raw` or plain NCBI while another source has a curated
     # decision is almost always a MISSING OVERRIDE ROW rather than a real taxonomic judgement.
-    likely <- unique(all_splits$Species_raw[all_splits$name_source == "curated"])
-    likely <- intersect(likely, unique(all_splits$Species_raw[all_splits$name_source != "curated"]))
+    likely <- unique(all_splits$Species_raw[all_splits$name_source %in% "curated"])
+    likely <- intersect(likely, unique(all_splits$Species_raw[!(all_splits$name_source %in% "curated")]))
     warning("Species name splits: ", length(unique(all_splits$Species_raw)), " label(s); ",
             length(likely), " look like a missing row in _keys/volumes_species_overrides.csv ",
             "(curated in one source, not in another): ", paste(likely, collapse = "; "),

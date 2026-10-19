@@ -47,6 +47,7 @@ usage: `_skills/build-dataset-item/SKILL.md`.
 |---|---|---|
 | `file_list.R` | fills Sheet1's generated `E:M` columns and their cached values; rebuilds the `AUTO_Public_TSV_FileList` sheet from the TSV directory; reports orphan TSVs | yes — idempotent |
 | `restore_registry_rows.R` | puts back registry rows that have gone missing, and clears a stranded value in column C | yes — idempotent, skips rows already present |
+| `snapshot_freeze.R` | freezes the `*_snapshot.*` files of items with a dated check in `__ReadMe.xlsx` → "Human visual check of snapshot"; CLI `status / lock / verify / restore`; used by `run_all_scripts_v2.R` | `lock` writes `_checks/snapshot_freeze/` only; never edits a snapshot (`restore` puts frozen bytes back) |
 | `build_cortical_layer_definitions.R` | regenerates the cortical-layer definition tables | yes |
 | `__update_remaining_builds_20260815.R` | one-off registration; finds its rows with `match()` on Item name, so re-running is safe | yes |
 | `__edit_all_directories.R` | mass find/replace and rename across the repo | **no** — skipped; run deliberately |

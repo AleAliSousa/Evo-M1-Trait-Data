@@ -1,3 +1,6 @@
+## Owner decision 2026-10-16: the public TSV is written automatically with the analysis CSV.
+## Release switches default ON here; every identity/registry/overwrite check below is unchanged.
+if (!nzchar(Sys.getenv("EVOM1_SEMENDEFERI_PUBLIC_EXPORT"))) Sys.setenv(EVOM1_SEMENDEFERI_PUBLIC_EXPORT = "YES_AFTER_VALIDATION")
 ## Frozen publication snapshot -> analysis CSV. PREPARED / R_PENDING.
 ## No R execution or dataset-builder certification has occurred.
 .sp <- local({

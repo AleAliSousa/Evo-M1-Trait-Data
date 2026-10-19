@@ -16,6 +16,7 @@ Source (PDF / journal Excel / Adobe export)
                       digital-native → the untouched download itself (no derived snapshot)
                       printed/scanned → a hand-verified ..._snapshot.xlsx | .csv
   → reformat (R)    clean + type + convert units               (..._Table<N>.R)
+      + table check  same script: sums re-added and compared with the printed totals (§7a)
   → analysis CSV    one tidy row per species (or individual)   (..._Table<N>.csv)
   → public TSV      DOI/PMID-named, in __Public/comparative-data/   ← REQUIRED either way
   → comparison      QA: frozen source ↔ curated data, 0 mismatches  (comparison/..._compare_to_*.R)
@@ -133,8 +134,10 @@ The model folders to copy: **`Stephan_etal_1982`** (hierarchy in one species col
 
 **First decide which case you are in (§0a invariant 1).** If the source is **digital-native** (a
 journal CSV/XLSX), skip this section: keep the download verbatim and point the `.R` at it — there is
-no snapshot to make. The steps below apply to **printed/scanned/OCR** sources, where the snapshot is
-the frozen copy.
+no snapshot to make, and no PDF-to-snapshot visual check: record `Not applicable: tabulated and
+digital already` in the `Human visual check of snapshot` column of `__ReadMe.xlsx` (a check inside
+the table, §7a, still applies if the table has one). The steps below apply to **printed/scanned/OCR**
+sources, where the snapshot is the frozen copy.
 
 Reproduce the **specific printed table**, in its **original units and layout**: keep the caption,
 column headers, subheadings, column order, footnote markers/superscripts, `n.a.`/`—`/blank cells,
@@ -305,8 +308,55 @@ flavours:
 *Pongo* values from Zilles & Rehkämper 1988 leaking into pre-1988 tables, or *Rattus/Spalax* from
 Frahm 1997. Record them; don't "fix" the snapshot to match.
 
-**Size indices / percentages / ratios are NOT transcribed** — they are derived (allometric/relative)
-and recomputed downstream from the pooled volumes + body weights. Snapshot the volumes only.
+**Size indices / percentages / ratios are not needed as analysis data** — they are derived
+(allometric/relative) and recomputed downstream from the pooled volumes + body weights. The snapshot
+still keeps them as printed, together with any printed totals: they are part of the published table,
+and they are what makes the checks in §7a possible.
+
+---
+
+## 7a. Table checks — when the table can check itself
+
+Some printed tables carry their own arithmetic: a sum row, percentages that add up to 100.00, a
+sub-total, a percentage printed beside the volume it was computed from. **Where a table has such a
+relation, the item's own reader checks it** (the original build script, not a separate one). Most
+tables have none; then there is nothing to do — don't invent a check.
+
+- **Keep what makes the check possible in the snapshot** — the printed total row (its label blank if
+  the print has none), the percentage column, the printed decimals — exactly as printed.
+- **Check in the reader, after parsing and before writing.** Compare in whole units of the last
+  printed decimal (e.g. `round(x * 100)` for two decimals) so floating point cannot blur a result.
+  Allow only what rounding of the printed cells can explain, and say so: half a unit per summed cell
+  for a sum; one unit for a percentage recomputed as 100 × value / printed total.
+- **Blanks and dashes are not zeros.** Leave them out of a sum and say which cells were left out; a
+  cell printed as a dash cannot be checked. Do not add up indices or ratios (progression indices,
+  size indices) — they are not additive.
+- **Never change a value to make a check pass.** A mismatch is warned (`warning()`), kept as printed
+  and explained in the ReadMe. If it looks like a printing error that merges should see, add a
+  `publication_error` row to the paper's errata file (`_tools/dataset_builder/ERRATA_CONVENTION.md`).
+  A correction is a separate, explicit owner decision made in the reader, never in the snapshot.
+- **Leave the results in a `table_checks` data frame** at the top level of the script (so
+  `build_dataset_item()` finds it), one row per check:
+
+  | column | content |
+  |---|---|
+  | `check_id` | unique key, e.g. `volume_sum`, `percent_ECHIDNA_07_Str` |
+  | `basis` | what was compared, naming the printed row/column |
+  | `observed`, `printed`, `difference`, `tolerance` | numbers in the table's units; `difference` = observed − printed |
+  | `status` | `pass`, `mismatch`, or `not_evaluable` (e.g. a dash cell) |
+  | `note` | cells left out, rounding rule, anything a reader needs |
+
+  It is QA metadata, not data: don't write it into the analysis CSV/TSV or a file in the paper
+  folder. `build_dataset_item()` attaches it to its report and prints the checks that did not pass.
+  (When every analysis row has its own printed total — one species per row — the printed total and
+  a match flag can instead be kept as metadata columns defined in the definitions file, as
+  `Pirlot__1981_TABLEII.R` does.)
+- **Note it in the item's ReadMe** under `## Table checks`: the relation, the rule and tolerance,
+  the result (counts, and every mismatch with its difference), and whether that comes from an actual
+  R run or is still *R execution pending*.
+
+Examples: `Kamiya_Pirlot_1980_TABLE1.R` (one sum row), `Pirlot_Nelson_1978_TABLE3.R` (three species
+columns, with dash cells and a misprinted row the check exposes).
 
 ---
 
@@ -426,6 +476,10 @@ applies this rubric.
       snapshot is not just the clean CSV under another name
 - [ ] snapshot passes the side-by-side test: headings, row order, and column order make values easy
       to compare with the published table
+- [ ] the visual check is recorded in the last column of `__ReadMe.xlsx` (`DDMMYYYY_initials`), or
+      `Not applicable: tabulated and digital already` for a born-digital source
+- [ ] where the table prints its own totals (or another checkable relation): the reader checks them
+      into `table_checks` and the ReadMe has a `## Table checks` section (§7a)
 - [ ] analysis CSV/TSV has no accidental empty first column or other extraction artefact
 - [ ] the R script runs from a clean session and writes the intended CSV and public TSV
 - [ ] cleaning reproducible from the frozen source; names cleaned; units converted + documented

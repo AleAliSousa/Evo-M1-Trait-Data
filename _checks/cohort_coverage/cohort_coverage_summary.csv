@@ -1,43 +1,57 @@
 "cohort","cohort_label","cohort_n","domain","species_with_data","pct_species","traits_held"
-"HMBA","HMBA (subsampled)",4,"brain structure & size",4,100,333
-"HMBA","HMBA (subsampled)",4,"cellular composition",4,100,226
+"HMBA","HMBA (subsampled)",4,"brain structure & size",4,100,351
+"HMBA","HMBA (subsampled)",4,"cellular composition",4,100,231
 "HMBA","HMBA (subsampled)",4,"cortical & cerebellar folding",4,100,21
 "HMBA","HMBA (subsampled)",4,"body size",4,100,6
-"HMBA","HMBA (subsampled)",4,"metabolism",4,100,125
-"HMBA","HMBA (subsampled)",4,"life history",4,100,65
-"HMBA","HMBA (subsampled)",4,"diet & ecology",4,100,80
-"HMBA","HMBA (subsampled)",4,"behaviour & cognition",4,100,40
+"HMBA","HMBA (subsampled)",4,"metabolism",4,100,142
+"HMBA","HMBA (subsampled)",4,"life history",4,100,82
+"HMBA","HMBA (subsampled)",4,"diet & ecology",4,100,99
+"HMBA","HMBA (subsampled)",4,"behaviour & cognition",4,100,64
 "HMBA","HMBA (subsampled)",4,"sensorimotor & motor pathways",3,75,32
 "HMBA","HMBA (subsampled)",4,"hand & limb morphology",3,75,46
 "HMBA","HMBA (subsampled)",4,"sleep & torpor",4,100,9
 "HMBA","HMBA (subsampled)",4,"dataset metadata",2,50,4
-"HMBA","HMBA (subsampled)",4,"cellular morphology",4,100,96
-"HMBA","HMBA (subsampled)",4,"sensory performance",4,100,20
-"EvoM1","Evo-M1 M1 cross-species cohort",25,"brain structure & size",25,100,1006
-"EvoM1","Evo-M1 M1 cross-species cohort",25,"cellular composition",21,84,721
-"EvoM1","Evo-M1 M1 cross-species cohort",25,"cortical & cerebellar folding",16,64,75
+"HMBA","HMBA (subsampled)",4,"cellular morphology",4,100,113
+"HMBA","HMBA (subsampled)",4,"sensory performance",4,100,37
+"EvoM1","Evo-M1 M1 cross-species cohort",25,"brain structure & size",25,100,1065
+"EvoM1","Evo-M1 M1 cross-species cohort",25,"cellular composition",21,84,736
+"EvoM1","Evo-M1 M1 cross-species cohort",25,"cortical & cerebellar folding",17,68,77
 "EvoM1","Evo-M1 M1 cross-species cohort",25,"body size",25,100,40
-"EvoM1","Evo-M1 M1 cross-species cohort",25,"metabolism",20,80,250
-"EvoM1","Evo-M1 M1 cross-species cohort",25,"life history",21,84,264
-"EvoM1","Evo-M1 M1 cross-species cohort",25,"diet & ecology",24,96,428
-"EvoM1","Evo-M1 M1 cross-species cohort",25,"behaviour & cognition",21,84,183
+"EvoM1","Evo-M1 M1 cross-species cohort",25,"metabolism",21,84,301
+"EvoM1","Evo-M1 M1 cross-species cohort",25,"life history",25,100,359
+"EvoM1","Evo-M1 M1 cross-species cohort",25,"diet & ecology",24,96,551
+"EvoM1","Evo-M1 M1 cross-species cohort",25,"behaviour & cognition",22,88,281
 "EvoM1","Evo-M1 M1 cross-species cohort",25,"sensorimotor & motor pathways",20,80,184
 "EvoM1","Evo-M1 M1 cross-species cohort",25,"hand & limb morphology",10,40,128
-"EvoM1","Evo-M1 M1 cross-species cohort",25,"sleep & torpor",12,48,22
-"EvoM1","Evo-M1 M1 cross-species cohort",25,"dataset metadata",10,40,20
-"EvoM1","Evo-M1 M1 cross-species cohort",25,"cellular morphology",16,64,231
-"EvoM1","Evo-M1 M1 cross-species cohort",25,"sensory performance",13,52,58
-"V1","V1 cross-species cohort",25,"brain structure & size",25,100,1006
-"V1","V1 cross-species cohort",25,"cellular composition",21,84,721
-"V1","V1 cross-species cohort",25,"cortical & cerebellar folding",16,64,75
-"V1","V1 cross-species cohort",25,"body size",25,100,40
-"V1","V1 cross-species cohort",25,"metabolism",20,80,250
-"V1","V1 cross-species cohort",25,"life history",21,84,264
-"V1","V1 cross-species cohort",25,"diet & ecology",24,96,428
-"V1","V1 cross-species cohort",25,"behaviour & cognition",21,84,183
-"V1","V1 cross-species cohort",25,"sensorimotor & motor pathways",20,80,184
-"V1","V1 cross-species cohort",25,"hand & limb morphology",10,40,128
-"V1","V1 cross-species cohort",25,"sleep & torpor",12,48,22
-"V1","V1 cross-species cohort",25,"dataset metadata",10,40,20
-"V1","V1 cross-species cohort",25,"cellular morphology",16,64,231
-"V1","V1 cross-species cohort",25,"sensory performance",13,52,58
+"EvoM1","Evo-M1 M1 cross-species cohort",25,"sleep & torpor",13,52,23
+"EvoM1","Evo-M1 M1 cross-species cohort",25,"dataset metadata",11,44,22
+"EvoM1","Evo-M1 M1 cross-species cohort",25,"cellular morphology",16,64,280
+"EvoM1","Evo-M1 M1 cross-species cohort",25,"sensory performance",15,60,104
+"V1","V1 cross-species cohort",17,"brain structure & size",17,100,776
+"V1","V1 cross-species cohort",17,"cellular composition",14,82.4,622
+"V1","V1 cross-species cohort",17,"cortical & cerebellar folding",13,76.5,59
+"V1","V1 cross-species cohort",17,"body size",17,100,28
+"V1","V1 cross-species cohort",17,"metabolism",16,94.1,245
+"V1","V1 cross-species cohort",17,"life history",17,100,263
+"V1","V1 cross-species cohort",17,"diet & ecology",16,94.1,372
+"V1","V1 cross-species cohort",17,"behaviour & cognition",15,88.2,163
+"V1","V1 cross-species cohort",17,"sensorimotor & motor pathways",14,82.4,130
+"V1","V1 cross-species cohort",17,"hand & limb morphology",6,35.3,77
+"V1","V1 cross-species cohort",17,"sleep & torpor",8,47.1,17
+"V1","V1 cross-species cohort",17,"dataset metadata",6,35.3,12
+"V1","V1 cross-species cohort",17,"cellular morphology",13,76.5,242
+"V1","V1 cross-species cohort",17,"sensory performance",13,76.5,88
+"EC","EC cross-species cohort",14,"brain structure & size",14,100,732
+"EC","EC cross-species cohort",14,"cellular composition",12,85.7,521
+"EC","EC cross-species cohort",14,"cortical & cerebellar folding",10,71.4,49
+"EC","EC cross-species cohort",14,"body size",14,100,23
+"EC","EC cross-species cohort",14,"metabolism",13,92.9,215
+"EC","EC cross-species cohort",14,"life history",14,100,213
+"EC","EC cross-species cohort",14,"diet & ecology",13,92.9,303
+"EC","EC cross-species cohort",14,"behaviour & cognition",12,85.7,138
+"EC","EC cross-species cohort",14,"sensorimotor & motor pathways",11,78.6,110
+"EC","EC cross-species cohort",14,"hand & limb morphology",5,35.7,70
+"EC","EC cross-species cohort",14,"sleep & torpor",7,50,15
+"EC","EC cross-species cohort",14,"dataset metadata",5,35.7,10
+"EC","EC cross-species cohort",14,"cellular morphology",10,71.4,217
+"EC","EC cross-species cohort",14,"sensory performance",11,78.6,73

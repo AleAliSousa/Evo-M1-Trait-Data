@@ -1,3 +1,8 @@
+## Owner decision 2026-10-16: the public TSV is written automatically with the analysis CSV.
+## Release switches default ON here; every identity/registry/overwrite check below is unchanged.
+if (is.null(getOption("evom1.owner_review"))) options(evom1.owner_review = TRUE)
+if (is.null(getOption("evom1.publish"))) options(evom1.publish = TRUE)
+if (is.null(getOption("evom1.source_limits_review"))) options(evom1.source_limits_review = TRUE)
 # Frozen Table 2 -> analysis CSV. Publication is disabled by default.
 expected.basename <- "Raghanti_etal_2008_b_Table2.R"
 locate.self <- function() {

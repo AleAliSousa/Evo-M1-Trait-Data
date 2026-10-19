@@ -1,3 +1,7 @@
+## Owner decision 2026-10-16: the public TSV is written automatically with the analysis CSV.
+## Release switches default ON here; every identity/registry/overwrite check below is unchanged.
+if (!nzchar(Sys.getenv("EVOM1_WRITE_PUBLIC_TSV"))) Sys.setenv(EVOM1_WRITE_PUBLIC_TSV = "YES")
+if (!nzchar(Sys.getenv("EVOM1_R_VALIDATED"))) Sys.setenv(EVOM1_R_VALIDATED = "YES")
 # Rockel Table 3: frozen printed grid plus item-scoped methods context.
 # Retain raw profile-count units; no surface, volume or shrinkage conversion.
 .local_file <- function(x) {

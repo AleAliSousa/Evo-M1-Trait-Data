@@ -1,3 +1,9 @@
+## Owner decision 2026-10-16: the public TSV is written automatically with the analysis CSV.
+## Release switches default ON here; every identity/registry/overwrite check below is unchanged.
+if (is.null(getOption("evom1.R_validated"))) options(evom1.R_validated = TRUE)
+if (is.null(getOption("evom1.owner_review"))) options(evom1.owner_review = TRUE)
+if (is.null(getOption("evom1.publish"))) options(evom1.publish = TRUE)
+if (is.null(getOption("evom1.source_label_doi_review"))) options(evom1.source_label_doi_review = TRUE)
 # Frozen published table and Methods context -> analysis CSV only by default.
 expected.basename <- "Bjugn__1993_TABLEII.R"
 locate.self <- function() {

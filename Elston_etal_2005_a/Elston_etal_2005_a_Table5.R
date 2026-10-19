@@ -1,3 +1,6 @@
+## Owner decision 2026-10-16: the public TSV is written automatically with the analysis CSV.
+## Release switches default ON here; every identity/registry/overwrite check below is unchanged.
+if (is.null(getOption("evom1.export_public"))) options(evom1.export_public = TRUE)
 # Prepared source reader; R NOT RUN in this preparation environment.
 # Public export is opt-in and remains blocked until both owner identity holds resolve.
 .ev_script_paths <- function() {

@@ -12,6 +12,10 @@
 ##     builders, and should never run here.
 ##   * Public TSVs are looked up in __Public/comparative-data/ (their canonical
 ##     location), not inside the paper folder.
+##   * Table checks: if the build script checks the table against its own printed
+##     totals (HOWTO §7a) it leaves a `table_checks` data.frame; that is attached to
+##     the report as attr(report, "table_checks") and printed. It never changes data
+##     or the invariant statuses. No `table_checks` = not assessed (most tables).
 
 build_dataset_item <- function(
     item_dir,
@@ -88,6 +92,19 @@ build_dataset_item <- function(
   build_env <- new.env(parent = baseenv())
   sys.source(build_script[1L], envir = build_env)
 
+  ## ---- table checks reported by the build script (HOWTO §7a) -----------------
+  table_checks <- NULL
+  if (exists("table_checks", envir = build_env, inherits = FALSE)) {
+    table_checks <- get("table_checks", envir = build_env, inherits = FALSE)
+    need <- c("check_id", "basis", "observed", "printed", "difference",
+              "tolerance", "status", "note")
+    if (!is.data.frame(table_checks) || !all(need %in% names(table_checks)) ||
+        !all(table_checks$status %in% c("pass", "mismatch", "not_evaluable")))
+      stop("`table_checks` from ", basename(build_script[1L]),
+           " must be a data.frame with columns ", paste(need, collapse = ", "),
+           " and status pass / mismatch / not_evaluable (build HOWTO section 7a).", call. = FALSE)
+  }
+
   ## ---- gather output files for validation ----------------------------------
 
   ## analysis CSV (non-snapshot)
@@ -132,8 +149,21 @@ build_dataset_item <- function(
     item_encoded       = item_encoded
   )
 
-  if (verbose)
+  attr(report, "table_checks") <- table_checks
+
+  if (verbose) {
     print(report)
+    if (is.null(table_checks)) {
+      cat("\nTable checks: none reported by", basename(build_script[1L]), "(not assessed).\n")
+    } else {
+      cat("\nTable checks (", basename(build_script[1L]), "): ",
+          paste(names(table(table_checks$status)), table(table_checks$status),
+                sep = " = ", collapse = ", "), "\n", sep = "")
+      print(table_checks[table_checks$status != "pass",
+                         c("check_id", "observed", "printed", "difference", "status")],
+            row.names = FALSE)
+    }
+  }
 
   return(report)
 }

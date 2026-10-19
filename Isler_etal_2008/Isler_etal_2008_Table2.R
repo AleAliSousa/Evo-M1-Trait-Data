@@ -27,13 +27,18 @@ base <- local({
   while (dirname(d) != d && !file.exists(file.path(d, "__ReadMe.xlsx"))) d <- dirname(d)
   if (file.exists(file.path(d, "__ReadMe.xlsx"))) d else NA_character_
 })
-snapshot <- file.path(folder, "Isler_etal_2008_Table2_snapshot.tsv")
+## Snapshot and local working copy are comma-delimited CSV. Only the copy written to
+## __Public/comparative-data/ is tab-delimited -- that conversion happens at write time
+## below, reading every field as literal text (no type guessing, no NA substitution) so
+## values, blanks, and Unicode pass through unchanged; only the delimiter/quoting style
+## changes relative to the frozen CSV snapshot.
+suppressPackageStartupMessages(library(readr))
+snapshot <- file.path(folder, "Isler_etal_2008_Table2_snapshot.csv")
 stopifnot(file.exists(snapshot), file.info(snapshot)$size > 0)
-raw <- readBin(snapshot, what = "raw", n = file.info(snapshot)$size)
-local_tsv <- file.path(folder, paste0(item_name, ".tsv"))
-con <- file(local_tsv, "wb"); writeBin(raw, con); close(con)
-stopifnot(identical(unname(tools::md5sum(snapshot)), unname(tools::md5sum(local_tsv))))
-message(item_name, ": wrote byte-identical local TSV")
+local_csv <- file.path(folder, paste0(item_name, ".csv"))
+file.copy(snapshot, local_csv, overwrite = TRUE)
+stopifnot(identical(unname(tools::md5sum(snapshot)), unname(tools::md5sum(local_csv))))
+message(item_name, ": wrote byte-identical local CSV")
 
 if (is.na(base)) {
   warning("Repository root containing __ReadMe.xlsx not found; public TSV skipped.")
@@ -46,9 +51,26 @@ if (is.na(base)) {
   } else if (!dir.exists(tsv_dir)) {
     warning("Shared folder not found: ", tsv_dir, "; public TSV skipped.")
   } else {
+    ## readr::write_tsv() mis-escapes a field whose text literally begins or ends with a
+    ## quote character (it doubles only the boundary quote instead of wrapping the whole
+    ## field in an outer quote pair, per RFC4180) -- verified against this paper's own
+    ## TableS1 data (a locality field quoted in the original export, "La Naboke North").
+    ## Write TSV fields by hand instead, quoting exactly when RFC4180 requires it.
+    write_tsv_safe <- function(df, path) {
+      mat <- as.matrix(df)
+      mat[is.na(mat)] <- ""
+      mat[] <- enc2utf8(mat)
+      needs_quote <- function(x) grepl("\t", x, fixed = TRUE) | grepl("\"", x, fixed = TRUE) | grepl("[\r\n]", x)
+      nq <- apply(mat, c(1, 2), needs_quote)
+      mat[nq] <- paste0("\"", gsub("\"", "\"\"", mat[nq], fixed = TRUE), "\"")
+      lines <- apply(mat, 1, paste, collapse = "\t")
+      con <- file(path, "wb")
+      writeLines(enc2utf8(lines), con, sep = "\r\n", useBytes = TRUE)
+      close(con)
+    }
+    raw <- read_csv(snapshot, col_names = FALSE, col_types = cols(.default = "c"), na = character(), trim_ws = FALSE)
     out <- file.path(tsv_dir, paste0(item_encoded, ".tsv"))
-    con <- file(out, "wb"); writeBin(raw, con); close(con)
-    stopifnot(identical(unname(tools::md5sum(snapshot)), unname(tools::md5sum(out))))
-    message("Wrote byte-identical ", out)
+    write_tsv_safe(raw, out)
+    message("Wrote ", out)
   }
 }

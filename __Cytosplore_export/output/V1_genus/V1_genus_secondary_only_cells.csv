@@ -9,6 +9,22 @@ Pan troglodytes,Endocranial_volume_female (mL),brain structure & size,Powell_eta
 Heterocephalus glaber,EntorhinalCortex_Mass (g),brain structure & size,Kverkova_etal_2018,derived,False,,,"Brain_Mass.g(0.44) x Entorhinal cortex_p.C.Brain(0.0345) -- volume-fraction of brain applied to brain MASS as a density-homogeneity approximation, not an independently measured part mass"
 Heterocephalus glaber,Hippocampus_Mass (g),brain structure & size,Kverkova_etal_2018,derived,False,,,"Brain_Mass.g(0.44) x Hippocampus_p.C.Brain(0.076) -- volume-fraction of brain applied to brain MASS as a density-homogeneity approximation, not an independently measured part mass"
 Heterocephalus glaber,Hypothalamus_Mass (g),brain structure & size,Kverkova_etal_2018,derived,False,,,"Brain_Mass.g(0.44) x Hypothalamus_p.C.Brain(0.0404) -- volume-fraction of brain applied to brain MASS as a density-homogeneity approximation, not an independently measured part mass"
+Aotus nancymaae,LateralCerebellum_Vol (mm3),brain structure & size,Smaers_etal_2018,secondary,False,,,primary_used=FALSE
+Felis catus,LateralCerebellum_Vol (mm3),brain structure & size,Smaers_etal_2018,secondary,False,,,primary_used=FALSE
+Homo sapiens,LateralCerebellum_Vol (mm3),brain structure & size,Smaers_etal_2018,secondary,False,,,primary_used=FALSE
+Macaca mulatta,LateralCerebellum_Vol (mm3),brain structure & size,Smaers_etal_2018,secondary,False,,,primary_used=FALSE
+Mustela putorius furo,LateralCerebellum_Vol (mm3),brain structure & size,Smaers_etal_2018,secondary,False,,,primary_used=FALSE
+Pan troglodytes,LateralCerebellum_Vol (mm3),brain structure & size,Smaers_etal_2018,secondary,False,,,primary_used=FALSE
+Phocoena phocoena,LateralCerebellum_Vol (mm3),brain structure & size,Smaers_etal_2018,secondary,False,,,primary_used=FALSE
+Sus scrofa,LateralCerebellum_Vol (mm3),brain structure & size,Smaers_etal_2018,secondary,False,,,primary_used=FALSE
+Aotus nancymaae,MedialCerebellum_Vol (mm3),brain structure & size,Smaers_etal_2018,secondary,False,,,primary_used=FALSE
+Felis catus,MedialCerebellum_Vol (mm3),brain structure & size,Smaers_etal_2018,secondary,False,,,primary_used=FALSE
+Homo sapiens,MedialCerebellum_Vol (mm3),brain structure & size,Smaers_etal_2018,secondary,False,,,primary_used=FALSE
+Macaca mulatta,MedialCerebellum_Vol (mm3),brain structure & size,Smaers_etal_2018,secondary,False,,,primary_used=FALSE
+Mustela putorius furo,MedialCerebellum_Vol (mm3),brain structure & size,Smaers_etal_2018,secondary,False,,,primary_used=FALSE
+Pan troglodytes,MedialCerebellum_Vol (mm3),brain structure & size,Smaers_etal_2018,secondary,False,,,primary_used=FALSE
+Phocoena phocoena,MedialCerebellum_Vol (mm3),brain structure & size,Smaers_etal_2018,secondary,False,,,primary_used=FALSE
+Sus scrofa,MedialCerebellum_Vol (mm3),brain structure & size,Smaers_etal_2018,secondary,False,,,primary_used=FALSE
 Heterocephalus glaber,Medulla_Mass (g),brain structure & size,Kverkova_etal_2018,derived,False,,,"Brain_Mass.g(0.44) x Medulla oblongata_p.C.Brain(0.1131) -- volume-fraction of brain applied to brain MASS as a density-homogeneity approximation, not an independently measured part mass"
 Heterocephalus glaber,Neocortex_Mass (g),brain structure & size,Kverkova_etal_2018,derived,False,,,"Brain_Mass.g(0.44) x Neocortex_p.C.Brain(0.2416) -- volume-fraction of brain applied to brain MASS as a density-homogeneity approximation, not an independently measured part mass"
 Heterocephalus glaber,OlfactoryCortices_Mass (g),brain structure & size,Kverkova_etal_2018,derived,False,,,"Brain_Mass.g(0.44) x Olfactory cortices_p.C.Brain(0.094) -- volume-fraction of brain applied to brain MASS as a density-homogeneity approximation, not an independently measured part mass"
@@ -56,13 +72,23 @@ Phocoena phocoena,BMR_massspecific (mL O2/h/g),metabolism,Genoud_etal_2018,secon
 Rattus norvegicus,BMR_massspecific (mL O2/h/g),metabolism,Genoud_etal_2018,secondary,False,,,primary_used=FALSE
 Sus scrofa,BMR_massspecific (mL O2/h/g),metabolism,Genoud_etal_2018,secondary,False,,,primary_used=FALSE
 Tupaia belangeri,BMR_massspecific (mL O2/h/g),metabolism,Boyer (team); Genoud_etal_2018; Lewitus (team),secondary,False,,,primary_used=FALSE
-Felis catus,BMR_wholeanimal (mL O2/h),metabolism,Genoud_etal_2018,secondary,False,,,primary_used=FALSE
-Heterocephalus glaber,BMR_wholeanimal (mL O2/h),metabolism,Genoud_etal_2018,secondary,False,,,primary_used=FALSE
+Felis catus,BMR_wholeanimal (mL O2/h),metabolism,Genoud_etal_2018; Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Heterocephalus glaber,BMR_wholeanimal (mL O2/h),metabolism,Genoud_etal_2018; Jones_etal_2009,secondary,False,,,primary_used=FALSE
 Homo sapiens,BMR_wholeanimal (mL O2/h),metabolism,Boyer (team); Genoud_etal_2018; Isler_etal_2008,secondary,False,,,primary_used=FALSE
-Monodelphis domestica,BMR_wholeanimal (mL O2/h),metabolism,Genoud_etal_2018,secondary,False,,,primary_used=FALSE
+Monodelphis domestica,BMR_wholeanimal (mL O2/h),metabolism,Genoud_etal_2018; Jones_etal_2009,secondary,False,,,primary_used=FALSE
 Phocoena phocoena,BMR_wholeanimal (mL O2/h),metabolism,Genoud_etal_2018,secondary,False,,,primary_used=FALSE
-Rattus norvegicus,BMR_wholeanimal (mL O2/h),metabolism,Genoud_etal_2018,secondary,False,,,primary_used=FALSE
+Rattus norvegicus,BMR_wholeanimal (mL O2/h),metabolism,Genoud_etal_2018; Jones_etal_2009,secondary,False,,,primary_used=FALSE
 Sus scrofa,BMR_wholeanimal (mL O2/h),metabolism,Genoud_etal_2018,secondary,False,,,primary_used=FALSE
+Aotus nancymaae,Brain_blood_flow_total (mL/s),metabolism,Boyer_Harrington_2019,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Brain_blood_flow_total (mL/s),metabolism,Boyer_Harrington_2019,secondary,False,,,primary_used=FALSE
+Homo sapiens,Brain_blood_flow_total (mL/s),metabolism,Boyer_Harrington_2019,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Brain_blood_flow_total (mL/s),metabolism,Boyer_Harrington_2019,secondary,False,,,primary_used=FALSE
+Microcebus murinus,Brain_blood_flow_total (mL/s),metabolism,Boyer_Harrington_2019,secondary,False,,,primary_used=FALSE
+Mus musculus,Brain_blood_flow_total (mL/s),metabolism,Boyer_Harrington_2019,secondary,False,,,primary_used=FALSE
+Otolemur garnettii,Brain_blood_flow_total (mL/s),metabolism,Boyer_Harrington_2019,secondary,False,,,primary_used=FALSE
+Pan troglodytes,Brain_blood_flow_total (mL/s),metabolism,Boyer_Harrington_2019,secondary,False,,,primary_used=FALSE
+Rattus norvegicus,Brain_blood_flow_total (mL/s),metabolism,Boyer_Harrington_2019,secondary,False,,,primary_used=FALSE
+Tupaia belangeri,Brain_blood_flow_total (mL/s),metabolism,Boyer_Harrington_2019,secondary,False,,,primary_used=FALSE
 Felis catus,Brain_stem_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 2 primary studies
 Macaca mulatta,Brain_stem_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 2 primary studies
 Mus musculus,Brain_stem_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 2 primary studies
@@ -118,6 +144,16 @@ Homo sapiens,Hypothalamus_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secon
 Macaca mulatta,Hypothalamus_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 3 primary studies
 Mus musculus,Hypothalamus_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 2 primary studies
 Rattus norvegicus,Hypothalamus_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 6 primary studies
+Aotus nancymaae,ICA_blood_flow (mL/s),metabolism,Boyer_Harrington_2019,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,ICA_blood_flow (mL/s),metabolism,Boyer_Harrington_2019,secondary,False,,,primary_used=FALSE
+Homo sapiens,ICA_blood_flow (mL/s),metabolism,Boyer_Harrington_2019,secondary,False,,,primary_used=FALSE
+Macaca mulatta,ICA_blood_flow (mL/s),metabolism,Boyer_Harrington_2019,secondary,False,,,primary_used=FALSE
+Microcebus murinus,ICA_blood_flow (mL/s),metabolism,Boyer_Harrington_2019,secondary,False,,,primary_used=FALSE
+Mus musculus,ICA_blood_flow (mL/s),metabolism,Boyer_Harrington_2019,secondary,False,,,primary_used=FALSE
+Otolemur garnettii,ICA_blood_flow (mL/s),metabolism,Boyer_Harrington_2019,secondary,False,,,primary_used=FALSE
+Pan troglodytes,ICA_blood_flow (mL/s),metabolism,Boyer_Harrington_2019,secondary,False,,,primary_used=FALSE
+Rattus norvegicus,ICA_blood_flow (mL/s),metabolism,Boyer_Harrington_2019,secondary,False,,,primary_used=FALSE
+Tupaia belangeri,ICA_blood_flow (mL/s),metabolism,Boyer_Harrington_2019,secondary,False,,,primary_used=FALSE
 Homo sapiens,Insula_CMRgl (umol/100g/min),metabolism,Heiss_etal_2004,secondary,False,,,compilation resolved to 1 primary studies
 Homo sapiens,Neocortex_CBF (mL/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 10 primary studies
 Macaca mulatta,Neocortex_CBF (mL/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 1 primary studies
@@ -187,6 +223,16 @@ Rattus norvegicus,Thalamus_CMRgl (umol/100g/min),metabolism,Karbowski__2007; Kau
 Homo sapiens,Thalamus_CMRO2 (umol/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 9 primary studies
 Rattus norvegicus,Thalamus_CMRO2 (umol/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 1 primary studies
 Homo sapiens,Thalamus_medial_nucleus_CMRgl (umol/100g/min),metabolism,Heiss_etal_2004,secondary,False,,,compilation resolved to 1 primary studies
+Aotus nancymaae,VA_blood_flow (mL/s),metabolism,Boyer_Harrington_2019,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,VA_blood_flow (mL/s),metabolism,Boyer_Harrington_2019,secondary,False,,,primary_used=FALSE
+Homo sapiens,VA_blood_flow (mL/s),metabolism,Boyer_Harrington_2019,secondary,False,,,primary_used=FALSE
+Macaca mulatta,VA_blood_flow (mL/s),metabolism,Boyer_Harrington_2019,secondary,False,,,primary_used=FALSE
+Microcebus murinus,VA_blood_flow (mL/s),metabolism,Boyer_Harrington_2019,secondary,False,,,primary_used=FALSE
+Mus musculus,VA_blood_flow (mL/s),metabolism,Boyer_Harrington_2019,secondary,False,,,primary_used=FALSE
+Otolemur garnettii,VA_blood_flow (mL/s),metabolism,Boyer_Harrington_2019,secondary,False,,,primary_used=FALSE
+Pan troglodytes,VA_blood_flow (mL/s),metabolism,Boyer_Harrington_2019,secondary,False,,,primary_used=FALSE
+Rattus norvegicus,VA_blood_flow (mL/s),metabolism,Boyer_Harrington_2019,secondary,False,,,primary_used=FALSE
+Tupaia belangeri,VA_blood_flow (mL/s),metabolism,Boyer_Harrington_2019,secondary,False,,,primary_used=FALSE
 Homo sapiens,Vermis_CMRgl (umol/100g/min),metabolism,Heiss_etal_2004,secondary,False,,,compilation resolved to 1 primary studies
 Felis catus,Visual_cortex_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 3 primary studies
 Homo sapiens,Visual_cortex_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 2 primary studies
@@ -225,21 +271,120 @@ Felis catus,Whole_brain_Total_O2_consumption (mL/min),metabolism,Karbowski__2007
 Homo sapiens,Whole_brain_Total_O2_consumption (mL/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
 Macaca mulatta,Whole_brain_Total_O2_consumption (mL/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
 Rattus norvegicus,Whole_brain_Total_O2_consumption (mL/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
-Aotus nancymaae,Litter_size (count),life history,Lewitus (team),secondary,False,,,primary_used=FALSE
-Callithrix jacchus,Litter_size (count),life history,Lewitus (team),secondary,False,,,primary_used=FALSE
-Dasypus novemcinctus,Litter_size (count),life history,Lewitus (team),secondary,False,,,primary_used=FALSE
-Felis catus,Litter_size (count),life history,Lewitus (team),secondary,False,,,primary_used=FALSE
-Homo sapiens,Litter_size (count),life history,Lewitus (team),secondary,False,,,primary_used=FALSE
-Macaca mulatta,Litter_size (count),life history,Lewitus (team),secondary,False,,,primary_used=FALSE
-Microcebus murinus,Litter_size (count),life history,Lewitus (team),secondary,False,,,primary_used=FALSE
-Mus musculus,Litter_size (count),life history,Lewitus (team),secondary,False,,,primary_used=FALSE
-Mustela putorius furo,Litter_size (count),life history,Lewitus (team),secondary,False,,,primary_used=FALSE
-Otolemur garnettii,Litter_size (count),life history,Lewitus (team),secondary,False,,,primary_used=FALSE
-Pan troglodytes,Litter_size (count),life history,Lewitus (team),secondary,False,,,primary_used=FALSE
-Phocoena phocoena,Litter_size (count),life history,Lewitus (team),secondary,False,,,primary_used=FALSE
-Rattus norvegicus,Litter_size (count),life history,Lewitus (team),secondary,False,,,primary_used=FALSE
-Sus scrofa,Litter_size (count),life history,Lewitus (team),secondary,False,,,primary_used=FALSE
-Tupaia belangeri,Litter_size (count),life history,Lewitus (team),secondary,False,,,primary_used=FALSE
+Aotus nancymaae,Age_at_first_birth (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Age_at_first_birth (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Felis catus,Age_at_first_birth (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Homo sapiens,Age_at_first_birth (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Age_at_first_birth (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Microcebus murinus,Age_at_first_birth (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Monodelphis domestica,Age_at_first_birth (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Mus musculus,Age_at_first_birth (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Mustela putorius furo,Age_at_first_birth (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Otolemur garnettii,Age_at_first_birth (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Pan troglodytes,Age_at_first_birth (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Phocoena phocoena,Age_at_first_birth (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Rattus norvegicus,Age_at_first_birth (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Sus scrofa,Age_at_first_birth (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Tupaia belangeri,Age_at_first_birth (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Heterocephalus glaber,Gestation (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Monodelphis domestica,Gestation (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Aotus nancymaae,Interbirth_interval (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Interbirth_interval (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Felis catus,Interbirth_interval (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Heterocephalus glaber,Interbirth_interval (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Homo sapiens,Interbirth_interval (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Interbirth_interval (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Microcebus murinus,Interbirth_interval (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Monodelphis domestica,Interbirth_interval (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Mus musculus,Interbirth_interval (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Mustela putorius furo,Interbirth_interval (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Otolemur garnettii,Interbirth_interval (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Pan troglodytes,Interbirth_interval (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Phocoena phocoena,Interbirth_interval (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Rattus norvegicus,Interbirth_interval (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Sus scrofa,Interbirth_interval (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Tupaia belangeri,Interbirth_interval (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Aotus nancymaae,Litter_size (count),life history,Jones_etal_2009; Lewitus (team),secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Litter_size (count),life history,Jones_etal_2009; Lewitus (team),secondary,False,,,primary_used=FALSE
+Dasypus novemcinctus,Litter_size (count),life history,Jones_etal_2009; Lewitus (team),secondary,False,,,primary_used=FALSE
+Felis catus,Litter_size (count),life history,Jones_etal_2009; Lewitus (team),secondary,False,,,primary_used=FALSE
+Heterocephalus glaber,Litter_size (count),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Homo sapiens,Litter_size (count),life history,Jones_etal_2009; Lewitus (team),secondary,False,,,primary_used=FALSE
+Macaca mulatta,Litter_size (count),life history,Jones_etal_2009; Lewitus (team),secondary,False,,,primary_used=FALSE
+Microcebus murinus,Litter_size (count),life history,Jones_etal_2009; Lewitus (team),secondary,False,,,primary_used=FALSE
+Monodelphis domestica,Litter_size (count),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Mus musculus,Litter_size (count),life history,Jones_etal_2009; Lewitus (team),secondary,False,,,primary_used=FALSE
+Mustela putorius furo,Litter_size (count),life history,Jones_etal_2009; Lewitus (team),secondary,False,,,primary_used=FALSE
+Otolemur garnettii,Litter_size (count),life history,Jones_etal_2009; Lewitus (team),secondary,False,,,primary_used=FALSE
+Pan troglodytes,Litter_size (count),life history,Jones_etal_2009; Lewitus (team),secondary,False,,,primary_used=FALSE
+Phocoena phocoena,Litter_size (count),life history,Jones_etal_2009; Lewitus (team),secondary,False,,,primary_used=FALSE
+Rattus norvegicus,Litter_size (count),life history,Jones_etal_2009; Lewitus (team),secondary,False,,,primary_used=FALSE
+Sus scrofa,Litter_size (count),life history,Jones_etal_2009; Lewitus (team),secondary,False,,,primary_used=FALSE
+Tupaia belangeri,Litter_size (count),life history,Jones_etal_2009; Lewitus (team),secondary,False,,,primary_used=FALSE
+Felis catus,Litters_per_year_PanTHERIA (count/yr),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Heterocephalus glaber,Litters_per_year_PanTHERIA (count/yr),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Litters_per_year_PanTHERIA (count/yr),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Monodelphis domestica,Litters_per_year_PanTHERIA (count/yr),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Mus musculus,Litters_per_year_PanTHERIA (count/yr),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Mustela putorius furo,Litters_per_year_PanTHERIA (count/yr),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Phocoena phocoena,Litters_per_year_PanTHERIA (count/yr),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Rattus norvegicus,Litters_per_year_PanTHERIA (count/yr),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Sus scrofa,Litters_per_year_PanTHERIA (count/yr),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Tupaia belangeri,Litters_per_year_PanTHERIA (count/yr),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Heterocephalus glaber,Maximum_longevity (yr),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Monodelphis domestica,Maximum_longevity (yr),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Sus scrofa,Maximum_longevity (yr),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Aotus nancymaae,Neonate_body_mass (g),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Neonate_body_mass (g),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Dasypus novemcinctus,Neonate_body_mass (g),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Felis catus,Neonate_body_mass (g),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Heterocephalus glaber,Neonate_body_mass (g),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Homo sapiens,Neonate_body_mass (g),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Neonate_body_mass (g),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Microcebus murinus,Neonate_body_mass (g),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Monodelphis domestica,Neonate_body_mass (g),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Mus musculus,Neonate_body_mass (g),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Mustela putorius furo,Neonate_body_mass (g),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Otolemur garnettii,Neonate_body_mass (g),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Pan troglodytes,Neonate_body_mass (g),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Phocoena phocoena,Neonate_body_mass (g),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Rattus norvegicus,Neonate_body_mass (g),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Sus scrofa,Neonate_body_mass (g),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Tupaia belangeri,Neonate_body_mass (g),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Aotus nancymaae,Sexual_maturity_age (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Sexual_maturity_age (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Dasypus novemcinctus,Sexual_maturity_age (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Felis catus,Sexual_maturity_age (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Homo sapiens,Sexual_maturity_age (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Sexual_maturity_age (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Microcebus murinus,Sexual_maturity_age (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Monodelphis domestica,Sexual_maturity_age (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Mus musculus,Sexual_maturity_age (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Mustela putorius furo,Sexual_maturity_age (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Otolemur garnettii,Sexual_maturity_age (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Pan troglodytes,Sexual_maturity_age (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Phocoena phocoena,Sexual_maturity_age (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Rattus norvegicus,Sexual_maturity_age (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Sus scrofa,Sexual_maturity_age (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Tupaia belangeri,Sexual_maturity_age (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Heterocephalus glaber,Weaning_age (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Monodelphis domestica,Weaning_age (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Aotus nancymaae,Activity_cycle_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Activity_cycle_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Dasypus novemcinctus,Activity_cycle_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Felis catus,Activity_cycle_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Heterocephalus glaber,Activity_cycle_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Homo sapiens,Activity_cycle_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Activity_cycle_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Microcebus murinus,Activity_cycle_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Monodelphis domestica,Activity_cycle_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Mus musculus,Activity_cycle_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Mustela putorius furo,Activity_cycle_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Otolemur garnettii,Activity_cycle_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Pan troglodytes,Activity_cycle_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Rattus norvegicus,Activity_cycle_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Sus scrofa,Activity_cycle_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Tupaia belangeri,Activity_cycle_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
 Aotus nancymaae,Activity_pattern (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
 Callithrix jacchus,Activity_pattern (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
 Dasypus novemcinctus,Activity_pattern (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
@@ -274,6 +419,22 @@ Phocoena phocoena,Diet_breadth (count),diet & ecology,Wilman_etal_2014,secondary
 Rattus norvegicus,Diet_breadth (count),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
 Sus scrofa,Diet_breadth (count),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
 Tupaia belangeri,Diet_breadth (count),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Aotus nancymaae,Diet_breadth_PanTHERIA (count),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Diet_breadth_PanTHERIA (count),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Dasypus novemcinctus,Diet_breadth_PanTHERIA (count),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Felis catus,Diet_breadth_PanTHERIA (count),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Heterocephalus glaber,Diet_breadth_PanTHERIA (count),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Diet_breadth_PanTHERIA (count),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Microcebus murinus,Diet_breadth_PanTHERIA (count),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Monodelphis domestica,Diet_breadth_PanTHERIA (count),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Mus musculus,Diet_breadth_PanTHERIA (count),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Mustela putorius furo,Diet_breadth_PanTHERIA (count),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Otolemur garnettii,Diet_breadth_PanTHERIA (count),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Pan troglodytes,Diet_breadth_PanTHERIA (count),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Phocoena phocoena,Diet_breadth_PanTHERIA (count),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Rattus norvegicus,Diet_breadth_PanTHERIA (count),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Sus scrofa,Diet_breadth_PanTHERIA (count),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Tupaia belangeri,Diet_breadth_PanTHERIA (count),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
 Aotus nancymaae,Diet_dominant (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
 Callithrix jacchus,Diet_dominant (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
 Dasypus novemcinctus,Diet_dominant (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
@@ -478,6 +639,66 @@ Phocoena phocoena,ForStrat_stratum (category),diet & ecology,Wilman_etal_2014,se
 Rattus norvegicus,ForStrat_stratum (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
 Sus scrofa,ForStrat_stratum (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
 Tupaia belangeri,ForStrat_stratum (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Aotus nancymaae,Habitat_breadth_PanTHERIA (count),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Habitat_breadth_PanTHERIA (count),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Dasypus novemcinctus,Habitat_breadth_PanTHERIA (count),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Felis catus,Habitat_breadth_PanTHERIA (count),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Heterocephalus glaber,Habitat_breadth_PanTHERIA (count),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Habitat_breadth_PanTHERIA (count),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Microcebus murinus,Habitat_breadth_PanTHERIA (count),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Monodelphis domestica,Habitat_breadth_PanTHERIA (count),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Mus musculus,Habitat_breadth_PanTHERIA (count),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Mustela putorius furo,Habitat_breadth_PanTHERIA (count),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Pan troglodytes,Habitat_breadth_PanTHERIA (count),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Phocoena phocoena,Habitat_breadth_PanTHERIA (count),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Rattus norvegicus,Habitat_breadth_PanTHERIA (count),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Sus scrofa,Habitat_breadth_PanTHERIA (count),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Tupaia belangeri,Habitat_breadth_PanTHERIA (count),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Aotus nancymaae,Home_range (km2),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Home_range (km2),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Dasypus novemcinctus,Home_range (km2),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Felis catus,Home_range (km2),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Heterocephalus glaber,Home_range (km2),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Home_range (km2),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Microcebus murinus,Home_range (km2),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Monodelphis domestica,Home_range (km2),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Mus musculus,Home_range (km2),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Mustela putorius furo,Home_range (km2),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Otolemur garnettii,Home_range (km2),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Pan troglodytes,Home_range (km2),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Rattus norvegicus,Home_range (km2),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Sus scrofa,Home_range (km2),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Tupaia belangeri,Home_range (km2),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Aotus nancymaae,Population_density (n/km2),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Population_density (n/km2),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Dasypus novemcinctus,Population_density (n/km2),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Felis catus,Population_density (n/km2),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Heterocephalus glaber,Population_density (n/km2),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Population_density (n/km2),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Microcebus murinus,Population_density (n/km2),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Monodelphis domestica,Population_density (n/km2),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Mus musculus,Population_density (n/km2),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Mustela putorius furo,Population_density (n/km2),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Otolemur garnettii,Population_density (n/km2),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Pan troglodytes,Population_density (n/km2),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Phocoena phocoena,Population_density (n/km2),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Rattus norvegicus,Population_density (n/km2),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Sus scrofa,Population_density (n/km2),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Tupaia belangeri,Population_density (n/km2),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Aotus nancymaae,Terrestriality_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Terrestriality_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Dasypus novemcinctus,Terrestriality_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Felis catus,Terrestriality_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Heterocephalus glaber,Terrestriality_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Terrestriality_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Microcebus murinus,Terrestriality_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Monodelphis domestica,Terrestriality_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Mus musculus,Terrestriality_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Mustela putorius furo,Terrestriality_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Pan troglodytes,Terrestriality_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Rattus norvegicus,Terrestriality_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Sus scrofa,Terrestriality_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Tupaia belangeri,Terrestriality_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
 Aotus nancymaae,Trophic_guild (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
 Callithrix jacchus,Trophic_guild (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
 Dasypus novemcinctus,Trophic_guild (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
@@ -495,6 +716,92 @@ Phocoena phocoena,Trophic_guild (category),diet & ecology,Wilman_etal_2014,secon
 Rattus norvegicus,Trophic_guild (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
 Sus scrofa,Trophic_guild (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
 Tupaia belangeri,Trophic_guild (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Aotus nancymaae,Trophic_level_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Trophic_level_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Dasypus novemcinctus,Trophic_level_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Felis catus,Trophic_level_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Heterocephalus glaber,Trophic_level_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Trophic_level_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Microcebus murinus,Trophic_level_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Monodelphis domestica,Trophic_level_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Mus musculus,Trophic_level_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Mustela putorius furo,Trophic_level_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Otolemur garnettii,Trophic_level_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Pan troglodytes,Trophic_level_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Phocoena phocoena,Trophic_level_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Rattus norvegicus,Trophic_level_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Sus scrofa,Trophic_level_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Tupaia belangeri,Trophic_level_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Behavioural_repertoire_size (count),behaviour & cognition,Changizi__2003,secondary,False,,,primary_used=FALSE
+Felis catus,Behavioural_repertoire_size (count),behaviour & cognition,Changizi__2003,secondary,False,,,primary_used=FALSE
+Homo sapiens,Behavioural_repertoire_size (count),behaviour & cognition,Changizi__2003,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Behavioural_repertoire_size (count),behaviour & cognition,Changizi__2003,secondary,False,,,primary_used=FALSE
+Mustela putorius furo,Behavioural_repertoire_size (count),behaviour & cognition,Changizi__2003,secondary,False,,,primary_used=FALSE
+Otolemur garnettii,Behavioural_repertoire_size (count),behaviour & cognition,Changizi__2003,secondary,False,,,primary_used=FALSE
+Rattus norvegicus,Behavioural_repertoire_size (count),behaviour & cognition,Changizi__2003,secondary,False,,,primary_used=FALSE
+Aotus nancymaae,Foraging_innovation_count (count),behaviour & cognition,Navarrete_etal_2016,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Foraging_innovation_count (count),behaviour & cognition,Navarrete_etal_2016,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Foraging_innovation_count (count),behaviour & cognition,Navarrete_etal_2016,secondary,False,,,primary_used=FALSE
+Microcebus murinus,Foraging_innovation_count (count),behaviour & cognition,Navarrete_etal_2016,secondary,False,,,primary_used=FALSE
+Otolemur garnettii,Foraging_innovation_count (count),behaviour & cognition,Navarrete_etal_2016,secondary,False,,,primary_used=FALSE
+Pan troglodytes,Foraging_innovation_count (count),behaviour & cognition,Navarrete_etal_2016,secondary,False,,,primary_used=FALSE
+Aotus nancymaae,Innovator (category),behaviour & cognition,Navarrete_etal_2016,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Innovator (category),behaviour & cognition,Navarrete_etal_2016,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Innovator (category),behaviour & cognition,Navarrete_etal_2016,secondary,False,,,primary_used=FALSE
+Microcebus murinus,Innovator (category),behaviour & cognition,Navarrete_etal_2016,secondary,False,,,primary_used=FALSE
+Otolemur garnettii,Innovator (category),behaviour & cognition,Navarrete_etal_2016,secondary,False,,,primary_used=FALSE
+Pan troglodytes,Innovator (category),behaviour & cognition,Navarrete_etal_2016,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Loud_play_vocalisation (category),behaviour & cognition,Winkler_Bryant_2021,secondary,False,,,primary_used=FALSE
+Felis catus,Loud_play_vocalisation (category),behaviour & cognition,Winkler_Bryant_2021,secondary,False,,,primary_used=FALSE
+Homo sapiens,Loud_play_vocalisation (category),behaviour & cognition,Winkler_Bryant_2021,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Loud_play_vocalisation (category),behaviour & cognition,Winkler_Bryant_2021,secondary,False,,,primary_used=FALSE
+Microcebus murinus,Loud_play_vocalisation (category),behaviour & cognition,Winkler_Bryant_2021,secondary,False,,,primary_used=FALSE
+Mustela putorius furo,Loud_play_vocalisation (category),behaviour & cognition,Winkler_Bryant_2021,secondary,False,,,primary_used=FALSE
+Pan troglodytes,Loud_play_vocalisation (category),behaviour & cognition,Winkler_Bryant_2021,secondary,False,,,primary_used=FALSE
+Rattus norvegicus,Loud_play_vocalisation (category),behaviour & cognition,Winkler_Bryant_2021,secondary,False,,,primary_used=FALSE
+Aotus nancymaae,Nontechnical_innovation_count (count),behaviour & cognition,Navarrete_etal_2016,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Nontechnical_innovation_count (count),behaviour & cognition,Navarrete_etal_2016,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Nontechnical_innovation_count (count),behaviour & cognition,Navarrete_etal_2016,secondary,False,,,primary_used=FALSE
+Microcebus murinus,Nontechnical_innovation_count (count),behaviour & cognition,Navarrete_etal_2016,secondary,False,,,primary_used=FALSE
+Otolemur garnettii,Nontechnical_innovation_count (count),behaviour & cognition,Navarrete_etal_2016,secondary,False,,,primary_used=FALSE
+Pan troglodytes,Nontechnical_innovation_count (count),behaviour & cognition,Navarrete_etal_2016,secondary,False,,,primary_used=FALSE
+Aotus nancymaae,Play_nonsex_score (score),behaviour & cognition,Iwaniuk_etal_2001,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Play_nonsex_score (score),behaviour & cognition,Iwaniuk_etal_2001,secondary,False,,,primary_used=FALSE
+Homo sapiens,Play_nonsex_score (score),behaviour & cognition,Iwaniuk_etal_2001,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Play_nonsex_score (score),behaviour & cognition,Iwaniuk_etal_2001,secondary,False,,,primary_used=FALSE
+Microcebus murinus,Play_nonsex_score (score),behaviour & cognition,Iwaniuk_etal_2001,secondary,False,,,primary_used=FALSE
+Otolemur garnettii,Play_nonsex_score (score),behaviour & cognition,Iwaniuk_etal_2001,secondary,False,,,primary_used=FALSE
+Pan troglodytes,Play_nonsex_score (score),behaviour & cognition,Iwaniuk_etal_2001,secondary,False,,,primary_used=FALSE
+Aotus nancymaae,Play_sex_score (score),behaviour & cognition,Iwaniuk_etal_2001,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Play_sex_score (score),behaviour & cognition,Iwaniuk_etal_2001,secondary,False,,,primary_used=FALSE
+Homo sapiens,Play_sex_score (score),behaviour & cognition,Iwaniuk_etal_2001,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Play_sex_score (score),behaviour & cognition,Iwaniuk_etal_2001,secondary,False,,,primary_used=FALSE
+Microcebus murinus,Play_sex_score (score),behaviour & cognition,Iwaniuk_etal_2001,secondary,False,,,primary_used=FALSE
+Otolemur garnettii,Play_sex_score (score),behaviour & cognition,Iwaniuk_etal_2001,secondary,False,,,primary_used=FALSE
+Pan troglodytes,Play_sex_score (score),behaviour & cognition,Iwaniuk_etal_2001,secondary,False,,,primary_used=FALSE
+Aotus nancymaae,Play_total_score (score),behaviour & cognition,Iwaniuk_etal_2001,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Play_total_score (score),behaviour & cognition,Iwaniuk_etal_2001,secondary,False,,,primary_used=FALSE
+Homo sapiens,Play_total_score (score),behaviour & cognition,Iwaniuk_etal_2001,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Play_total_score (score),behaviour & cognition,Iwaniuk_etal_2001,secondary,False,,,primary_used=FALSE
+Microcebus murinus,Play_total_score (score),behaviour & cognition,Iwaniuk_etal_2001,secondary,False,,,primary_used=FALSE
+Otolemur garnettii,Play_total_score (score),behaviour & cognition,Iwaniuk_etal_2001,secondary,False,,,primary_used=FALSE
+Pan troglodytes,Play_total_score (score),behaviour & cognition,Iwaniuk_etal_2001,secondary,False,,,primary_used=FALSE
+Aotus nancymaae,Social_group_size_PanTHERIA (count),behaviour & cognition,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Social_group_size_PanTHERIA (count),behaviour & cognition,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Dasypus novemcinctus,Social_group_size_PanTHERIA (count),behaviour & cognition,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Social_group_size_PanTHERIA (count),behaviour & cognition,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Microcebus murinus,Social_group_size_PanTHERIA (count),behaviour & cognition,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Monodelphis domestica,Social_group_size_PanTHERIA (count),behaviour & cognition,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Otolemur garnettii,Social_group_size_PanTHERIA (count),behaviour & cognition,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Pan troglodytes,Social_group_size_PanTHERIA (count),behaviour & cognition,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Phocoena phocoena,Social_group_size_PanTHERIA (count),behaviour & cognition,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Sus scrofa,Social_group_size_PanTHERIA (count),behaviour & cognition,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Aotus nancymaae,Technical_innovation_count (count),behaviour & cognition,Navarrete_etal_2016,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Technical_innovation_count (count),behaviour & cognition,Navarrete_etal_2016,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Technical_innovation_count (count),behaviour & cognition,Navarrete_etal_2016,secondary,False,,,primary_used=FALSE
+Microcebus murinus,Technical_innovation_count (count),behaviour & cognition,Navarrete_etal_2016,secondary,False,,,primary_used=FALSE
+Otolemur garnettii,Technical_innovation_count (count),behaviour & cognition,Navarrete_etal_2016,secondary,False,,,primary_used=FALSE
+Pan troglodytes,Technical_innovation_count (count),behaviour & cognition,Navarrete_etal_2016,secondary,False,,,primary_used=FALSE
 Aotus nancymaae,Tool_use (category),behaviour & cognition,Baker_etal_2025,secondary,False,,,primary_used=FALSE
 Microcebus murinus,Tool_use (category),behaviour & cognition,Baker_etal_2025,secondary,False,,,primary_used=FALSE
 Otolemur garnettii,Tool_use (category),behaviour & cognition,Baker_etal_2025,secondary,False,,,primary_used=FALSE
@@ -602,6 +909,15 @@ Heterocephalus glaber,Audible_freq_low_60dB.kHz,sensory performance,Heffner_Heff
 Mus musculus,Audible_freq_low_60dB.kHz,sensory performance,Heffner_Heffner_1992_c,secondary,False,,SR170: Heffner__1998 reprints Heffner_Heffner_1992_c -> Heffner_Heffner_1992_c over Heffner__1998 | SR188: Heffner_Heffner_2010_b reprints Heffner_Heffner_1992_c -> none | SR189: Heffner_etal_1994_b reprints Heffner_Heffner_1992_c -> Heffner_etal_1994_b over Heffner_Heffner_1992_c | SR191: Koay_etal_1998 reprints Heffner_Heffner_1992_c -> Heffner_Heffner_1992_c over Koay_etal_1998 | SR203: Heffner_etal_2001 reprints Heffner_Heffner_1992_c -> Heffner_etal_2001 over Heffner_Heffner_1992_c,value_origin=published; studies=unkeyed:h. heffner+masterton1980
 Mustela putorius furo,Audible_freq_low_60dB.kHz,sensory performance,Heffner_Heffner_1985,secondary,False,,,value_origin=published; studies=unkeyed:this study (results text)
 Rattus norvegicus,Audible_freq_low_60dB.kHz,sensory performance,Heffner_Heffner_1992_c,secondary,False,,SR170: Heffner__1998 reprints Heffner_Heffner_1992_c -> Heffner_Heffner_1992_c over Heffner__1998 | SR188: Heffner_Heffner_2010_b reprints Heffner_Heffner_1992_c -> none | SR189: Heffner_etal_1994_b reprints Heffner_Heffner_1992_c -> Heffner_etal_1994_b over Heffner_Heffner_1992_c | SR191: Koay_etal_1998 reprints Heffner_Heffner_1992_c -> Heffner_Heffner_1992_c over Koay_etal_1998 | SR203: Heffner_etal_2001 reprints Heffner_Heffner_1992_c -> Heffner_etal_2001 over Heffner_Heffner_1992_c,"value_origin=published; studies=unkeyed:kelly+masterton1977+unkeyed:r. heffner, unpublished"
+Aotus nancymaae,Binocular_field_compiled_Heesy2004 (deg),sensory performance,Heesy__2004,secondary,False,,,primary_used=FALSE
+Felis catus,Binocular_field_compiled_Heesy2004 (deg),sensory performance,Heesy__2004,secondary,True,Binocular_field.deg; Field_of_best_vision.deg,,primary_used=FALSE
+Homo sapiens,Binocular_field_compiled_Heesy2004 (deg),sensory performance,Heesy__2004,secondary,True,Binocular_field.deg; Field_of_best_vision.deg,,primary_used=FALSE
+Macaca mulatta,Binocular_field_compiled_Heesy2004 (deg),sensory performance,Heesy__2004,secondary,False,,,primary_used=FALSE
+Mus musculus,Binocular_field_compiled_Heesy2004 (deg),sensory performance,Heesy__2004,secondary,False,,,primary_used=FALSE
+Mustela putorius furo,Binocular_field_compiled_Heesy2004 (deg),sensory performance,Heesy__2004,secondary,True,Binocular_field.deg; Field_of_best_vision.deg,,primary_used=FALSE
+Otolemur garnettii,Binocular_field_compiled_Heesy2004 (deg),sensory performance,Heesy__2004,secondary,False,,,primary_used=FALSE
+Rattus norvegicus,Binocular_field_compiled_Heesy2004 (deg),sensory performance,Heesy__2004,secondary,True,Binocular_field.deg; Field_of_best_vision.deg,,primary_used=FALSE
+Tupaia belangeri,Binocular_field_compiled_Heesy2004 (deg),sensory performance,Heesy__2004,secondary,False,,,primary_used=FALSE
 Felis catus,CFF_behavioural.Hz,sensory performance,Haarlem_etal_2026,secondary,False,,,value_origin=published; studies=loop1975|m; rager1998|g
 Macaca mulatta,CFF_behavioural.Hz,sensory performance,Haarlem_etal_2026,secondary,False,,,value_origin=published; studies=stavros2008|a
 Mus musculus,CFF_behavioural.Hz,sensory performance,Haarlem_etal_2026,secondary,False,,,value_origin=published; studies=nomura2019; umino2019
@@ -617,12 +933,41 @@ Heterocephalus glaber,Hearing_range.octaves,sensory performance,DERIVED from the
 Mus musculus,Hearing_range.octaves,sensory performance,DERIVED from the merged limits,derived,False,,,value_origin=recomputed; studies=
 Mustela putorius furo,Hearing_range.octaves,sensory performance,DERIVED from the merged limits,derived,False,,,value_origin=recomputed; studies=
 Rattus norvegicus,Hearing_range.octaves,sensory performance,DERIVED from the merged limits,derived,False,,,value_origin=recomputed; studies=
+Macaca mulatta,L_cone_lambda_max (nm),sensory performance,McDowell_etal_2024,secondary,False,,,primary_used=FALSE
+Felis catus,M_cone_lambda_max (nm),sensory performance,McDowell_etal_2024,secondary,False,,,primary_used=FALSE
+Macaca mulatta,M_cone_lambda_max (nm),sensory performance,McDowell_etal_2024,secondary,False,,,primary_used=FALSE
+Mus musculus,M_cone_lambda_max (nm),sensory performance,McDowell_etal_2024,secondary,False,,,primary_used=FALSE
+Rattus norvegicus,M_cone_lambda_max (nm),sensory performance,McDowell_etal_2024,secondary,False,,,primary_used=FALSE
+Felis catus,Melanopsin_lambda_max (nm),sensory performance,McDowell_etal_2024,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Melanopsin_lambda_max (nm),sensory performance,McDowell_etal_2024,secondary,False,,,primary_used=FALSE
+Mus musculus,Melanopsin_lambda_max (nm),sensory performance,McDowell_etal_2024,secondary,False,,,primary_used=FALSE
+Rattus norvegicus,Melanopsin_lambda_max (nm),sensory performance,McDowell_etal_2024,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Retinal_linear_magnification (mm/deg),sensory performance,Pettigrew_etal_1998,secondary,False,,,primary_used=FALSE
+Felis catus,Retinal_linear_magnification (mm/deg),sensory performance,Pettigrew_etal_1998,secondary,False,,,primary_used=FALSE
+Homo sapiens,Retinal_linear_magnification (mm/deg),sensory performance,Pettigrew_etal_1998,secondary,False,,,primary_used=FALSE
+Mus musculus,Retinal_linear_magnification (mm/deg),sensory performance,Pettigrew_etal_1998,secondary,False,,,primary_used=FALSE
+Mustela putorius furo,Retinal_linear_magnification (mm/deg),sensory performance,Pettigrew_etal_1998,secondary,False,,,primary_used=FALSE
+Felis catus,Rod_lambda_max (nm),sensory performance,McDowell_etal_2024,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Rod_lambda_max (nm),sensory performance,McDowell_etal_2024,secondary,False,,,primary_used=FALSE
+Mus musculus,Rod_lambda_max (nm),sensory performance,McDowell_etal_2024,secondary,False,,,primary_used=FALSE
+Rattus norvegicus,Rod_lambda_max (nm),sensory performance,McDowell_etal_2024,secondary,False,,,primary_used=FALSE
+Felis catus,S_cone_lambda_max (nm),sensory performance,McDowell_etal_2024,secondary,False,,,primary_used=FALSE
+Macaca mulatta,S_cone_lambda_max (nm),sensory performance,McDowell_etal_2024,secondary,False,,,primary_used=FALSE
+Mus musculus,S_cone_lambda_max (nm),sensory performance,McDowell_etal_2024,secondary,False,,,primary_used=FALSE
+Rattus norvegicus,S_cone_lambda_max (nm),sensory performance,McDowell_etal_2024,secondary,False,,,primary_used=FALSE
 Felis catus,Sound_localization_threshold.deg,sensory performance,Heffner_Heffner_1992_a,secondary,False,,SR163: Veilleux_Kirk_2014 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Veilleux_Kirk_2014 | SR172: Kirk_Kay_2004 reprints Heffner_Heffner_1992_a -> none | SR177: Koay_etal_1998 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Koay_etal_1998 | SR185: Heffner_Heffner_2010_b reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Heffner_Heffner_2010_b | SR186: Heffner_etal_1994_c reprints Heffner_Heffner_1992_a -> none | SR202: Ravizza_Masterton_1972 reprints Heffner_Heffner_1992_a -> Ravizza_Masterton_1972 over Heffner_Heffner_1992_a,value_origin=published; studies=casseday1973+heffner1988c|r
 Heterocephalus glaber,Sound_localization_threshold.deg,sensory performance,Heffner_etal_1994_c,secondary,False,,SR186: Heffner_etal_1994_c reprints Heffner_Heffner_1992_a -> none,value_origin=published; studies=unkeyed:heffner+heffner1993
 Homo sapiens,Sound_localization_threshold.deg,sensory performance,Heffner_Heffner_1992_a,secondary,False,,SR163: Veilleux_Kirk_2014 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Veilleux_Kirk_2014 | SR172: Kirk_Kay_2004 reprints Heffner_Heffner_1992_a -> none | SR177: Koay_etal_1998 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Koay_etal_1998 | SR185: Heffner_Heffner_2010_b reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Heffner_Heffner_2010_b | SR186: Heffner_etal_1994_c reprints Heffner_Heffner_1992_a -> none | SR202: Ravizza_Masterton_1972 reprints Heffner_Heffner_1992_a -> Ravizza_Masterton_1972 over Heffner_Heffner_1992_a,value_origin=published; studies=heffner1988c|r
 Mustela putorius furo,Sound_localization_threshold.deg,sensory performance,Heffner_Heffner_1992_a,secondary,False,,SR163: Veilleux_Kirk_2014 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Veilleux_Kirk_2014 | SR172: Kirk_Kay_2004 reprints Heffner_Heffner_1992_a -> none | SR177: Koay_etal_1998 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Koay_etal_1998 | SR185: Heffner_Heffner_2010_b reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Heffner_Heffner_2010_b | SR186: Heffner_etal_1994_c reprints Heffner_Heffner_1992_a -> none | SR202: Ravizza_Masterton_1972 reprints Heffner_Heffner_1992_a -> Ravizza_Masterton_1972 over Heffner_Heffner_1992_a,value_origin=published; studies=heffner1987|r | value_origin=published; studies=kavanagh1987
 Rattus norvegicus,Sound_localization_threshold.deg,sensory performance,Heffner_Heffner_1992_a,secondary,False,,SR163: Veilleux_Kirk_2014 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Veilleux_Kirk_2014 | SR172: Kirk_Kay_2004 reprints Heffner_Heffner_1992_a -> none | SR177: Koay_etal_1998 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Koay_etal_1998 | SR185: Heffner_Heffner_2010_b reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Heffner_Heffner_2010_b | SR186: Heffner_etal_1994_c reprints Heffner_Heffner_1992_a -> none | SR202: Ravizza_Masterton_1972 reprints Heffner_Heffner_1992_a -> Ravizza_Masterton_1972 over Heffner_Heffner_1992_a,value_origin=published; studies=heffner1985|h; kavanagh1986+kelly1980
 Sus scrofa,Sound_localization_threshold.deg,sensory performance,Heffner_Heffner_1992_a,secondary,False,,SR163: Veilleux_Kirk_2014 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Veilleux_Kirk_2014 | SR172: Kirk_Kay_2004 reprints Heffner_Heffner_1992_a -> none | SR177: Koay_etal_1998 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Koay_etal_1998 | SR185: Heffner_Heffner_2010_b reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Heffner_Heffner_2010_b | SR186: Heffner_etal_1994_c reprints Heffner_Heffner_1992_a -> none | SR202: Ravizza_Masterton_1972 reprints Heffner_Heffner_1992_a -> Ravizza_Masterton_1972 over Heffner_Heffner_1992_a,value_origin=published; studies=heffner1989|r
+Aotus nancymaae,Visual_acuity_anatomical_compiled (c/deg),sensory performance,deSousa_etal_2022,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Visual_acuity_anatomical_compiled (c/deg),sensory performance,deSousa_etal_2022,secondary,False,,,primary_used=FALSE
+Heterocephalus glaber,Visual_acuity_anatomical_compiled (c/deg),sensory performance,deSousa_etal_2022,secondary,False,,,primary_used=FALSE
+Microcebus murinus,Visual_acuity_anatomical_compiled (c/deg),sensory performance,deSousa_etal_2022,secondary,False,,,primary_used=FALSE
+Mustela putorius furo,Visual_acuity_anatomical_compiled (c/deg),sensory performance,deSousa_etal_2022,secondary,False,,,primary_used=FALSE
+Phocoena phocoena,Visual_acuity_anatomical_compiled (c/deg),sensory performance,deSousa_etal_2022,secondary,False,,,primary_used=FALSE
+Sus scrofa,Visual_acuity_anatomical_compiled (c/deg),sensory performance,deSousa_etal_2022,secondary,True,Visual_acuity_anatomical.cdeg,,primary_used=FALSE
 Aotus nancymaae,Visual_acuity_anatomical.cdeg,sensory performance,Veilleux_Kirk_2014,secondary,False,,SR143: Veilleux_Kirk_2014 reprints Kirk_Kay_2004 -> none | SR163: Veilleux_Kirk_2014 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Veilleux_Kirk_2014,value_origin=published; studies=jacobs1977|g | value_origin=published; studies=yamada2001|e
 Callithrix jacchus,Visual_acuity_anatomical.cdeg,sensory performance,Veilleux_Kirk_2014,secondary,False,,SR143: Veilleux_Kirk_2014 reprints Kirk_Kay_2004 -> none | SR163: Veilleux_Kirk_2014 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Veilleux_Kirk_2014,value_origin=published; studies=troilo1993|d
 Felis catus,Visual_acuity_anatomical.cdeg,sensory performance,Heffner_Heffner_1992_a,secondary,False,,SR163: Veilleux_Kirk_2014 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Veilleux_Kirk_2014 | SR172: Kirk_Kay_2004 reprints Heffner_Heffner_1992_a -> none | SR177: Koay_etal_1998 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Koay_etal_1998 | SR185: Heffner_Heffner_2010_b reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Heffner_Heffner_2010_b | SR186: Heffner_etal_1994_c reprints Heffner_Heffner_1992_a -> none | SR202: Ravizza_Masterton_1972 reprints Heffner_Heffner_1992_a -> Ravizza_Masterton_1972 over Heffner_Heffner_1992_a,value_origin=published; studies=belleville1986+jacobson1976
@@ -636,4 +981,14 @@ Otolemur garnettii,Visual_acuity_anatomical.cdeg,sensory performance,Veilleux_Ki
 Pan troglodytes,Visual_acuity_anatomical.cdeg,sensory performance,Veilleux_Kirk_2014,secondary,False,,SR143: Veilleux_Kirk_2014 reprints Kirk_Kay_2004 -> none | SR163: Veilleux_Kirk_2014 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Veilleux_Kirk_2014,value_origin=published; studies=spence1934|k
 Rattus norvegicus,Visual_acuity_anatomical.cdeg,sensory performance,Heffner_Heffner_1992_a; Veilleux_Kirk_2014,mixed,False,,SR143: Veilleux_Kirk_2014 reprints Kirk_Kay_2004 -> none | SR163: Veilleux_Kirk_2014 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Veilleux_Kirk_2014 | SR172: Kirk_Kay_2004 reprints Heffner_Heffner_1992_a -> none | SR177: Koay_etal_1998 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Koay_etal_1998 | SR185: Heffner_Heffner_2010_b reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Heffner_Heffner_2010_b | SR186: Heffner_etal_1994_c reprints Heffner_Heffner_1992_a -> none | SR202: Ravizza_Masterton_1972 reprints Heffner_Heffner_1992_a -> Ravizza_Masterton_1972 over Heffner_Heffner_1992_a,value_origin=published; studies=SELF:Heffner_Heffner_1992_a_TABLE1:norway rat wild; seymoure1997|p
 Tupaia belangeri,Visual_acuity_anatomical.cdeg,sensory performance,Veilleux_Kirk_2014,secondary,False,,SR143: Veilleux_Kirk_2014 reprints Kirk_Kay_2004 -> none | SR163: Veilleux_Kirk_2014 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Veilleux_Kirk_2014,value_origin=published; studies=petry1984|h | value_origin=published; studies=schäfer1969|d
+Aotus nancymaae,Visual_acuity_behavioural_compiled (c/deg),sensory performance,deSousa_etal_2022,secondary,False,,,primary_used=FALSE
+Felis catus,Visual_acuity_behavioural_compiled (c/deg),sensory performance,deSousa_etal_2022,secondary,False,,,primary_used=FALSE
+Homo sapiens,Visual_acuity_behavioural_compiled (c/deg),sensory performance,deSousa_etal_2022,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Visual_acuity_behavioural_compiled (c/deg),sensory performance,deSousa_etal_2022,secondary,False,,,primary_used=FALSE
+Mus musculus,Visual_acuity_behavioural_compiled (c/deg),sensory performance,deSousa_etal_2022,secondary,False,,,primary_used=FALSE
+Mustela putorius furo,Visual_acuity_behavioural_compiled (c/deg),sensory performance,deSousa_etal_2022,secondary,False,,,primary_used=FALSE
+Otolemur garnettii,Visual_acuity_behavioural_compiled (c/deg),sensory performance,deSousa_etal_2022,secondary,False,,,primary_used=FALSE
+Pan troglodytes,Visual_acuity_behavioural_compiled (c/deg),sensory performance,deSousa_etal_2022,secondary,False,,,primary_used=FALSE
+Rattus norvegicus,Visual_acuity_behavioural_compiled (c/deg),sensory performance,deSousa_etal_2022,secondary,False,,,primary_used=FALSE
+Tupaia belangeri,Visual_acuity_behavioural_compiled (c/deg),sensory performance,deSousa_etal_2022,secondary,False,,,primary_used=FALSE
 Homo sapiens,Visual_acuity_method_unstated.cdeg,sensory performance,Heffner_Heffner_1992_a,secondary,False,,SR163: Veilleux_Kirk_2014 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Veilleux_Kirk_2014 | SR172: Kirk_Kay_2004 reprints Heffner_Heffner_1992_a -> none | SR177: Koay_etal_1998 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Koay_etal_1998 | SR185: Heffner_Heffner_2010_b reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Heffner_Heffner_2010_b | SR186: Heffner_etal_1994_c reprints Heffner_Heffner_1992_a -> none | SR202: Ravizza_Masterton_1972 reprints Heffner_Heffner_1992_a -> Ravizza_Masterton_1972 over Heffner_Heffner_1992_a,value_origin=published; studies=cavonius1973

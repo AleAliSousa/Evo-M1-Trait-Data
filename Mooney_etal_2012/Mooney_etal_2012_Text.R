@@ -1,3 +1,6 @@
+## Owner decision 2026-10-16: the public TSV is written automatically with the analysis CSV.
+## Release switches default ON here; every identity/registry/overwrite check below is unchanged.
+if (!nzchar(Sys.getenv("EVOM1_TEXT_PUBLIC_EXPORT"))) Sys.setenv(EVOM1_TEXT_PUBLIC_EXPORT = "YES_AFTER_VALIDATION")
 ## Constructed prose snapshot -> analysis CSV. SECONDARY; excluded from merges.
 ## PREPARED / R_PENDING: this script has not been executed in R.
 

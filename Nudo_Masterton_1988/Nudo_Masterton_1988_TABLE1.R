@@ -1,3 +1,6 @@
+## Owner decision 2026-10-16: the public TSV is written automatically with the analysis CSV.
+## Release switches default ON here; every identity/registry/overwrite check below is unchanged.
+if (!nzchar(Sys.getenv("EVOM1_SPINAL_NUDO_RELEASE"))) Sys.setenv(EVOM1_SPINAL_NUDO_RELEASE = "OWNER_VERIFIED_R_SOURCE_SCHEMA_AND_SCIENTIFIC_GATES")
 # PREPARED ONLY. R audit/dry-run/build/validate have NOT RUN in this environment.
 expected_basename <- "Nudo_Masterton_1988_TABLE1.R"
 candidates <- character()

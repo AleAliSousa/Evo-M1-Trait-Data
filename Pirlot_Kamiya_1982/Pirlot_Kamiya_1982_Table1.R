@@ -116,3 +116,17 @@ message("Wrote ", nrow(result), " rows to ", out_path)
 
 ## Public TSV mirror (registry key = Item encoded); written via the house
 ## file_list.R pipeline, not duplicated here.
+
+## Public TSV (house convention: registry Item encoded = file stem). Added 2026-10-17 after owner decision.
+local({
+  root <- folder
+  while (!file.exists(file.path(root, "__ReadMe.xlsx")) && dirname(root) != root) root <- dirname(root)
+  reg <- readxl::read_excel(file.path(root, "__ReadMe.xlsx"), sheet = "Sheet1")
+  hit <- which(reg[["Item name"]] == item_name)
+  stopifnot(length(hit) == 1L)
+  enc <- as.character(reg[["Item encoded"]][hit])
+  stopifnot(!is.na(enc), nzchar(enc), !grepl("_$", enc))
+  pub <- file.path(root, "__Public", "comparative-data")
+  stopifnot(dir.exists(pub))
+  utils::write.table(result, file.path(pub, paste0(enc, ".tsv")), sep = "\t", row.names = FALSE, na = "", fileEncoding = "UTF-8")
+})

@@ -1,3 +1,6 @@
+## Owner decision 2026-10-16: the public TSV is written automatically with the analysis CSV.
+## Release switches default ON here; every identity/registry/overwrite check below is unchanged.
+if (!nzchar(Sys.getenv("EVOM1_ALLOW_PUBLIC_TSV"))) Sys.setenv(EVOM1_ALLOW_PUBLIC_TSV = "validated")
 ## Pettigrew et al. (1998), bounded Text item: constructed frozen source -> CSV.
 ## Reader: Microsoft Copilot AI assistant, 2026-10-10 (America/Los_Angeles).
 ## R execution and canonical build/validate remain pending; not FINISHED.

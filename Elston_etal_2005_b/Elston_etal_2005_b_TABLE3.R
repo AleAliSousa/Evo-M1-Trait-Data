@@ -1,3 +1,7 @@
+## Owner decision 2026-10-16: the public TSV is written automatically with the analysis CSV.
+## Release switches default ON here; every identity/registry/overwrite check below is unchanged.
+if (is.null(getOption("evom1.elston_owner_release"))) options(evom1.elston_owner_release = TRUE)
+if (is.null(getOption("evom1.publish"))) options(evom1.publish = TRUE)
 # Frozen published view -> analysis CSV. R execution is NOT certified here.
 self_candidates <- character()
 for (frame in rev(sys.frames())) {

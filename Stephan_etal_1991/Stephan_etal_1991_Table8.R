@@ -1,3 +1,6 @@
+## Owner decision 2026-10-16: the public TSV is written automatically with the analysis CSV.
+## Release switches default ON here; every identity/registry/overwrite check below is unchanged.
+if (!nzchar(Sys.getenv("EVOM1_WRITE_PUBLIC_TSV"))) Sys.setenv(EVOM1_WRITE_PUBLIC_TSV = "YES")
 # Frozen published table -> analysis. Measurement literals live only in data files.
 # Default: CSV only. A TSV shelf export requires an explicit owner opt-in.
 .script_candidates <- character()

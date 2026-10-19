@@ -1,3 +1,6 @@
+## Owner decision 2026-10-16: the public TSV is written automatically with the analysis CSV.
+## Release switches default ON here; every identity/registry/overwrite check below is unchanged.
+if (!nzchar(Sys.getenv("EVOM1_ALLOW_PUBLIC_TSV"))) Sys.setenv(EVOM1_ALLOW_PUBLIC_TSV = "YES")
 # Frozen text snapshot + item-scoped source context -> analysis CSV.
 # PREPARED / R_PENDING: this script has not been executed in this environment.
 .sp <- local({

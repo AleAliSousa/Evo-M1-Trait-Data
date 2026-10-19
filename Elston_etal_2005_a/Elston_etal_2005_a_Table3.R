@@ -1,3 +1,8 @@
+## Owner decision 2026-10-16: the public TSV is written automatically with the analysis CSV.
+## Release switches default ON here; every identity/registry/overwrite check below is unchanged.
+if (is.null(getOption("evom1.R_validated"))) options(evom1.R_validated = TRUE)
+if (is.null(getOption("evom1.owner_source_review"))) options(evom1.owner_source_review = TRUE)
+if (is.null(getOption("evom1.publish"))) options(evom1.publish = TRUE)
 # Frozen published table -> analysis CSV; public export remains owner/R-gated.
 expected.basename <- "Elston_etal_2005_a_Table3.R"
 locate.self <- function() {

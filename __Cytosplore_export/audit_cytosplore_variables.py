@@ -119,6 +119,9 @@ def folder_of_source(src):
             return c2
     return ""
 
+import functools
+_folders_lc = [(f, strip_acc(f).lower()) for f in folders]
+@functools.lru_cache(maxsize=None)
 def folders_of_citation(cit):
     """'Heffner & Masterton 1975 (corticospinal tract)' -> folders starting with Heffner and ending _1975."""
     m = re.match(r"\s*([A-Za-z\u00C0-\u024F'\-]+)", cit)
@@ -126,8 +129,9 @@ def folders_of_citation(cit):
     if not m or not y:
         return []
     au = strip_acc(m.group(1)).lower(); yr = y.group(1)
-    return [f for f in folders if strip_acc(f).lower().startswith(au) and re.search(rf"_{yr}(_[ab])?$", f)]
+    return [f for f, fl in _folders_lc if fl.startswith(au) and re.search(rf"_{yr}(_[ab])?$", f)]
 
+@functools.lru_cache(maxsize=None)
 def folders_of_team(team):
     t = team.strip()
     if not t:
@@ -138,7 +142,7 @@ def folders_of_team(team):
     m = re.match(r"([A-Za-z\u00C0-\u024F]+)_?(\d{4})?", t2)
     au = strip_acc(m.group(1)).lower() if m else strip_acc(t2).lower()
     yr = m.group(2) if m and m.group(2) else None
-    hits = [f for f in folders if strip_acc(f).lower().startswith(au + "_") or strip_acc(f).lower().startswith(au + "__")]
+    hits = [f for f, fl in _folders_lc if fl.startswith(au + "_")]
     if yr:
         hits = [f for f in hits if yr in f] or hits
     return hits
@@ -303,6 +307,7 @@ ADAPTERS = [
     ("Endocranial volume",        ad_std_merge(M("__merging_endocranial_volume/endocranial_volume_long.csv"))),
     ("Behaviour",                 ad_std_merge(M("__merging_behaviour/behaviour_long.csv"))),
     ("Cerebellar folding",        ad_std_merge(M("__merging_cerebellar_folding/cerebellar_folding_long.csv"))),
+    ("Supplementary sources",     ad_std_merge(M("__merging_supplementary/supplementary_long.csv"))),
     ("Brain-structure volumes",   ad_volumes(M("__merging_volumes/volumes_long.csv"))),
     ("Cell counts",               ad_simple_source(M("__merging_cellcounts/cellcounts_long.csv"), "Species", "Variable", "Source")),
     ("EvoM1 traits",              ad_traits(M("__ShinyApp/data/evom1_traits_long.csv"))),

@@ -99,7 +99,10 @@ source type:
    `.csv` / `.xlsx` / `.tsv`: the untouched download **is** the snapshot.
    Copy-rename it to `<Paper>_<locus>_snapshot.<original ext>`, bytes
    untouched — never open-and-resave, never convert. Record the original
-   filename, URL and download date in the ReadMe.
+   filename, URL and download date in the ReadMe. There is no PDF-to-snapshot
+   visual check for such a file: record `Not applicable: tabulated and digital
+   already` in the `Human visual check of snapshot` column of `__ReadMe.xlsx`.
+   (A check inside the table — build HOWTO §7a — still applies if it has one.)
 2. **Printed table** (PDF or scan) — transcribe it:
    - flat layout → **`_snapshot.csv`** (the default: plain text, diffable);
    - layout that CSV cannot hold losslessly (multi-row or merged headers,
@@ -124,6 +127,9 @@ Keep everything that is in the printed table, even if it looks messy:
 - [ ] **Reference citations** printed in the cells — `[19]`, `(20)`
 - [ ] **`n.a.` / `—` / blank** cells, as printed (don't "fix" them yet)
 - [ ] **Grouping / header rows** (e.g. clade names that span the table)
+- [ ] **Printed totals / sum rows** (keep the label blank if the print has none)
+      and percentage columns — the reader uses them to check the table
+      (build HOWTO §7a)
 - [ ] **Row order** as published
 
 Cleaning (numbers → numeric, splitting columns, NCBI species names, etc.) comes
@@ -236,10 +242,11 @@ Copy the format of any existing `*.README.md`.
   and reference numbers that matter for interpretation?
 - Did I avoid reproducing decorative formatting that does not help comparison or
   preserve meaning?
+- Did I keep the printed totals or sum rows, so the reader can check the table?
 - Is *every* change to the data written down in the `.R` script (and nothing
   baked silently into the snapshot)?
 - Did I save a local snapshot file, even though the data is online?
 - Does the `.R` **read** the snapshot (rather than write it from hardcoded
   values), and does the snapshot actually differ from the clean CSV?
 
-If yes to all four, the snapshot is proper.
+If yes to all of them, the snapshot is proper.

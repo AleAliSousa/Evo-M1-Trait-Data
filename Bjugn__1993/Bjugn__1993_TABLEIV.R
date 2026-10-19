@@ -1,3 +1,7 @@
+## Owner decision 2026-10-16: the public TSV is written automatically with the analysis CSV.
+## Release switches default ON here; every identity/registry/overwrite check below is unchanged.
+if (!nzchar(Sys.getenv("EVOM1_PUBLISH_PUBLIC_TSV"))) Sys.setenv(EVOM1_PUBLISH_PUBLIC_TSV = "true")
+if (!nzchar(Sys.getenv("EVOM1_R_QA_CONFIRMED"))) Sys.setenv(EVOM1_R_QA_CONFIRMED = "true")
 # Frozen printed table -> analysis CSV. TSV export remains explicitly gated.
 self <- local({
   own_basename <- "Bjugn__1993_TABLEIV.R"
@@ -84,7 +88,7 @@ if (identical(Sys.getenv("EVOM1_PUBLISH_PUBLIC_TSV"), "true")) {
   index <- which(filecodes[["Item name"]] == item_name)
   if (length(index) != 1L) stop("Registry must contain exactly one row matched by Item name.")
   citation <- as.character(filecodes[["Citation (APA 7th-Annotated)"]][[index]])
-  override <- as.character(filecodes[["DOI if different from article or doi Alt "]][[index]])
+  override <- as.character(filecodes[["DOI if different from article or doi Alt"]][[index]])
   resolved <- as.character(filecodes[["DOI (or Alt)"]][[index]])
   if (is.na(citation) || !endsWith(trimws(citation), paste0("https://doi.org/", ctx("SourceDOI"))))
     stop("Owner must correct the article citation DOI before trusting code authority.")

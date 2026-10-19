@@ -1,5 +1,5 @@
 # Coverage index build log
-Generated: 2026-10-07 23:56
+Generated: 2026-10-19 09:09
 
 - cortical_areas M1_Surface_Area.mm2: 1 row(s) not used (status superseded_by_Young_etal_2013)
 - cortical_areas CorticalSurface_Area.mm2: 24 row(s) not used (status superseded_by_Mota_etal_2019)

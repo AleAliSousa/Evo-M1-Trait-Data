@@ -130,6 +130,7 @@ if (is.na(repo_root))
 app_dir <- file.path(repo_root, "__ShinyApp")
 out_dir <- file.path(repo_root, "__Cytosplore_export", "output", PREFIX)
 dir.create(out_dir, recursive = TRUE, showWarnings = FALSE)
+T0 <- Sys.time(); tick <- function(w) message(sprintf("  [%5.0fs] %s", as.numeric(Sys.time() - T0, units = "secs"), w))
 message("repo:   ", repo_root)
 message("cohort: ", COHORT, "   match level: ", MATCH_LEVEL, "   core threshold: ", CORE_FRACTION)
 
@@ -166,6 +167,7 @@ if (is.null(app$cohorts) || !COHORT %in% app$cohorts$cohort)
   stop("Cohort '", COHORT, "' is not defined in _keys/species_cohorts.csv. Available: ",
        paste(unique(app$cohorts$cohort), collapse = ", "))
 
+tick("app layer")
 compiled <- app$compiled
 key      <- app$cohort_species(COHORT)        # one row per cohort species, with $labels
 n_sp     <- nrow(key)
@@ -227,6 +229,7 @@ tt_of <- function(k) {
 }
 message("species in cohort: ", n_sp)
 
+tick("species table")
 # ---- species table ------------------------------------------------------------
 # label -> cohort species map (a species may pool several data labels)
 lab_map <- data.frame(
@@ -273,6 +276,7 @@ species_tbl <- data.frame(
 species_tbl <- cbind(species_tbl, as.data.frame(dmat, stringsAsFactors = FALSE))
 rownames(species_tbl) <- NULL
 
+tick("long table")
 # ---- long table (all values, with provenance) --------------------------------
 long <- compiled[compiled$Species %in% lab_map$data_label, , drop = FALSE]
 # many-to-many: a label shared by two cohort members (genus mode) yields a row for each
@@ -300,6 +304,7 @@ long_out <- data.frame(
 long_out <- long_out[order(long_out$species_sci, long_out$domain, long_out$variable), ]
 rownames(long_out) <- NULL
 
+tick("cells")
 # ---- per-cell summary + wide matrix (measurement variables only) -------------
 meas <- long_out[long_out$is_measurement & !long_out$domain %in% EXCLUDE_DOMAINS, , drop = FALSE]
 cell_key <- paste(meas$species_sci, meas$variable, sep = "\r")
@@ -339,6 +344,7 @@ cells$unit          <- lk(app$lab_unit, cells$variable)
 cells <- cells[order(cells$species_sci, cells$domain, cells$variable), ]
 rownames(cells) <- NULL
 
+tick("wide")
 # variable order: domain (in the app's domain order), then label
 dom_rank <- setNames(seq_along(app$domain_levels), app$domain_levels)
 vars_present <- unique(cells$variable)
@@ -355,6 +361,7 @@ for (v in vars_present) {
   wide[[v]] <- col
 }
 
+tick("dictionary")
 # ---- variable dictionary --------------------------------------------------------
 tt <- tt_of(key)                                 # Variable, Domain, Species_with_data, Pct, Missing
 tt <- tt[tt$Variable %in% vars_present, , drop = FALSE]
@@ -414,6 +421,7 @@ dom_cov <- as.data.frame(dm$mat, stringsAsFactors = FALSE)
 dom_cov <- cbind(species_sci = rownames(dm$mat), dom_cov, stringsAsFactors = FALSE)
 rownames(dom_cov) <- NULL
 
+tick("write")
 # ---- write ----------------------------------------------------------------------
 wcsv <- function(d, name) {
   f <- file.path(out_dir, paste0(PREFIX, "_", name, ".csv"))

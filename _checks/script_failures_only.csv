@@ -1,170 +1,62 @@
 "script","status","error","start_time","end_time","elapsed_seconds"
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/deSousa__2008/deSousa__2008_Suppl.Table5.2.R","FAILED","Error: Species missing from species_key.csv (token deSousa2008): human, chimp, bonobo, gorilla, orang, gibbon
-Execution halted","2026-10-07 22:35:35.376935","2026-10-07 22:35:36.299837",0.92290210723877
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/deSousa__2008/deSousa__2008_Table4.1.R","FAILED","Error: Unresolved species: Gorilla gorilla, Hylobates lar, Homo sapiensa,b, Macaca fascicularis, Pongo pygmaeus, Pan paniscusc, Pan troglodytes, Pan troglodytesd
-Execution halted","2026-10-07 22:35:37.235925","2026-10-07 22:35:37.983361",0.747436046600342
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/deSousa__2008/deSousa__2008_Table5.1.R","FAILED","Error: Species missing from species_key.csv (token deSousa2008): homo sapiens, pan troglodytes, pan paniscus, gorilla gorilla, pongo pygmaeus, hylobates lar, syndactylus symphalangus, macaca fascicularis
-Execution halted","2026-10-07 22:35:39.018035","2026-10-07 22:35:39.920105",0.902070045471191
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/deSousa__2008/deSousa__2008_Table5.6.R","FAILED","Error: Species missing from species_key.csv (token deSousa2008): homo sapiens, pan troglodytes, pan paniscus, gorilla gorilla, pongo pygmaeus, hylobates lar
-Execution halted","2026-10-07 22:35:41.144879","2026-10-07 22:35:42.019935",0.87505578994751
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jacobs_etal_2015/Jacobs_etal_2015_Table1.R","FAILED","Error: Expected one species-key row for Jacobs2015 / Giraffa camelopardalis; found 0
-Execution halted","2026-10-07 22:37:34.357262","2026-10-07 22:37:34.648478",0.291216135025024
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jacobs_etal_2016/Jacobs_etal_2016_Table1.R","FAILED","Error: Expected one species-key row for Jacobs2016 / Giraffa camelopardalis tippelskirchi; found 0
-Execution halted","2026-10-07 22:37:35.675457","2026-10-07 22:37:36.038779",0.363322019577026
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Johnson_etal_2016/Johnson_etal_2016_Table1.R","FAILED","Error: Expected one species-key row for Johnson2016 / Panthera tigris altaica; found 0
-Execution halted","2026-10-07 22:37:40.695202","2026-10-07 22:37:41.19947",0.504267930984497
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Latimer__1942/Latimer__1942_TABLEI.R","FAILED","Error in lk[[""dog""]] : subscript out of bounds
-Execution halted","2026-10-07 22:38:30.424249","2026-10-07 22:38:31.01904",0.594791173934937
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Lyamin_etal_2008/Lyamin_etal_2008_Table1.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.2.1     ✔ readr     2.2.0
-✔ forcats   1.0.1     ✔ stringr   1.6.0
-✔ ggplot2   4.0.3     ✔ tibble    3.3.1
-✔ lubridate 1.9.5     ✔ tidyr     1.3.2
-✔ purrr     1.2.2     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
-Error in names(object) <- nm : attempt to set an attribute on NULL
-Calls: setNames
-Execution halted","2026-10-07 22:38:35.863372","2026-10-07 22:38:36.752115",0.888742923736572
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/PalomeroGallagher_Zilles_2018/PalomeroGallagher_Zilles_2018_TableS3.R","FAILED","New names:
-• `` -> `...1`
-• `` -> `...2`
-• `` -> `...3`
-• `` -> `...4`
-• `` -> `...5`
-• `` -> `...6`
-Error: !any(is.na(raw$Species)) is not TRUE
-Execution halted","2026-10-07 22:39:05.87105","2026-10-07 22:39:06.883649",1.01259922981262
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Peruffo_etal_2019/Peruffo_etal_2019_Table2.R","FAILED","Error: Expected one species-key row for Peruffo2019 / sheep; found 0
-Execution halted","2026-10-07 22:39:06.890153","2026-10-07 22:39:07.295153",0.40499997138977
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Turner_etal_2016/Turner_etal_2016_Table1.R","FAILED","New names:
-• `` -> `...1`
-• `` -> `...2`
-• `` -> `...3`
-• `` -> `...4`
-• `` -> `...5`
-• `` -> `...6`
-• `` -> `...7`
-Error: species_key.csv (token Turner2016) is missing: M. radiata, M. nemestrina, M. mulatta, PHX, PHA
-Execution halted","2026-10-07 22:40:30.924217","2026-10-07 22:40:31.561881",0.637664079666138
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_corticospinal_terminations.R","FAILED","Error: species_sci in the TSV disagrees with the Bortoff1993 rows of species_key.csv - re-run Bortoff_Strick_1993_Table1.R
-Execution halted","2026-10-07 22:40:58.526828","2026-10-07 22:40:59.09793",0.571101903915405
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_dexterity_corticospinal.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.2.1     ✔ readr     2.2.0
-✔ forcats   1.0.1     ✔ stringr   1.6.0
-✔ ggplot2   4.0.3     ✔ tibble    3.3.1
-✔ lubridate 1.9.5     ✔ tidyr     1.3.2
-✔ purrr     1.2.2     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
-[ERROR] workbook_close(): Error creating '/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/dexterity_heffner.xlsx'. System error = Operation timed out
-Error: Error in libxlsxwriter: 'Error creating output xlsx file. Usually a permissions error.'
-Execution halted","2026-10-07 22:41:00.806419","2026-10-07 22:41:01.989344",1.18292498588562
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_gait_excursion_medina.R","FAILED","[ERROR] workbook_close(): Error creating '/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/gait_excursion_medina.xlsx'. System error = Operation timed out
-Error: Error in libxlsxwriter: 'Error creating output xlsx file. Usually a permissions error.'
-Execution halted","2026-10-07 22:41:02.613959","2026-10-07 22:41:03.800576",1.18661689758301
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_gait.R","FAILED","[ERROR] workbook_close(): Error creating '/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/gait.xlsx'. System error = Operation timed out
-Error: Error in libxlsxwriter: 'Error creating output xlsx file. Usually a permissions error.'
-Execution halted","2026-10-07 22:41:03.803824","2026-10-07 22:41:04.904109",1.10028505325317
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_hand_liu.R","FAILED","[ERROR] workbook_close(): Error creating '/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/hand_liu.xlsx'. System error = Operation timed out
-Error: Error in libxlsxwriter: 'Error creating output xlsx file. Usually a permissions error.'
-Execution halted","2026-10-07 22:41:05.873214","2026-10-07 22:41:06.776867",0.903652906417847
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_handedness.R","FAILED","[ERROR] workbook_close(): Error creating '/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/handedness.xlsx'. System error = Operation timed out
-Error: Error in libxlsxwriter: 'Error creating output xlsx file. Usually a permissions error.'
-Execution halted","2026-10-07 22:41:06.780145","2026-10-07 22:41:07.571879",0.791733980178833
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_sleep.R","FAILED","[ERROR] workbook_close(): Error creating '/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/sleep.xlsx'. System error = Operation timed out
-Error: Error in libxlsxwriter: 'Error creating output xlsx file. Usually a permissions error.'
-Execution halted","2026-10-07 22:41:10.530848","2026-10-07 22:41:11.686604",1.1557559967041
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_v1_karl.R","FAILED","[ERROR] workbook_close(): Error creating '/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/v1_synapses_karl.xlsx'. System error = Operation timed out
-Error: Error in libxlsxwriter: 'Error creating output xlsx file. Usually a permissions error.'
-Execution halted","2026-10-07 22:41:11.690058","2026-10-07 22:41:12.554066",0.864007949829102
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_vocal_manyprimates.R","FAILED","[ERROR] workbook_close(): Error creating '/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/vocal_repertoire_manyprimates.xlsx'. System error = Operation timed out
-Error: Error in libxlsxwriter: 'Error creating output xlsx file. Usually a permissions error.'
-Execution halted","2026-10-07 22:41:12.558982","2026-10-07 22:41:13.660569",1.10158705711365
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/EvoM1_read_vocal_schniter.R","FAILED","[ERROR] workbook_close(): Error creating '/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/vocal_repertoire_schniter.xlsx'. System error = Operation timed out
-Error: Error in libxlsxwriter: 'Error creating output xlsx file. Usually a permissions error.'
-Execution halted","2026-10-07 22:41:13.663633","2026-10-07 22:41:14.871374",1.20774078369141
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__ShinyApp/build_data.R","FAILED","repo: /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data
-out:  /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__ShinyApp/data
-Error: could not read ____EvoM1_TraitTable/v1_synapses_karl.xlsx (sheet 'Sheet1'): zip file '/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/v1_synapses_karl.xlsx' cannot be opened
-  The workbook is unreadable or was mid-sync. Open it in Excel and re-save, or re-run the EvoM1_read_*.R script that writes it, then re-run build_data.R.
-Execution halted","2026-10-07 22:41:16.746252","2026-10-07 22:41:55.662642",38.9163899421692
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_behaviour/behaviour_compiled.R","FAILED","Error in utils::unzip(zip_path, list = TRUE) : 
-  zip file '/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable/vocal_repertoire_schniter.xlsx' cannot be opened
-Calls: bind_rows ... standardise_sheet -> %in% -> sheets_fun -> <Anonymous> -> <Anonymous>
-Execution halted","2026-10-07 22:41:55.667431","2026-10-07 22:42:11.371223",15.7037918567657
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_brain_mass/brain_mass_compiled.R","FAILED","Error: no measurement basis on record for 10.1016%2FB978-0-12-440280-5.50008-1_Table1.tsv / brain_weight_kg (paper folder 'Ridgway__1990'). Add it to ASSIGN in _keys/build_brain_size_basis.py and re-run that builder.
-Execution halted","2026-10-07 22:42:30.029631","2026-10-07 22:42:34.730373",4.70074200630188
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_cortical_areas/cortical_areas_compiled.R","FAILED","Error:
-! 'turner_2016_surface.csv' does not exist in current working directory:
-  '/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_cortical_areas'.
-Backtrace:
-     ▆
-  1. ├─dplyr::summarise(...)
-  2. ├─dplyr::group_by(...)
-  3. ├─dplyr::filter(...)
-  4. ├─readr::read_csv(""turner_2016_surface.csv"", show_col_types = FALSE)
-  5. │ └─vroom::vroom(...)
-  6. │   └─vroom:::vroom_(...)
-  7. └─vroom (local) `<fn>`(""turner_2016_surface.csv"")
-  8.   └─vroom:::check_path(path)
-  9.     └─cli::cli_abort(msg, call = call)
- 10.       └─rlang::abort(...)
-Execution halted","2026-10-07 22:42:45.127401","2026-10-07 22:42:46.257192",1.12979078292847
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/BallesterosYáñez_etal_2006/BallesterosYáñez_etal_2006_Figure3A.R","FAILED","Error: !is.na(item_encoded) is not TRUE
+Execution halted","2026-10-19 08:57:38.787124","2026-10-19 08:57:39.693874",0.906749963760376
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/BallesterosYáñez_etal_2006/BallesterosYáñez_etal_2006_Figure3B.R","FAILED","Error: !is.na(item_encoded) is not TRUE
+Execution halted","2026-10-19 08:57:39.698949","2026-10-19 08:57:40.375442",0.676492929458618
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/BallesterosYáñez_etal_2006/BallesterosYáñez_etal_2006_Figure3C.R","FAILED","Error: !is.na(item_encoded) is not TRUE
+Execution halted","2026-10-19 08:57:40.378389","2026-10-19 08:57:41.080671",0.702282190322876
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/BallesterosYáñez_etal_2006/BallesterosYáñez_etal_2006_Table1.R","FAILED","Error: !is.na(item_encoded) is not TRUE
+Execution halted","2026-10-19 08:57:41.092122","2026-10-19 08:57:41.707",0.614877939224243
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Elston_etal_2005_a/Elston_etal_2005_a_Table3.R","FAILED","Error: Existing public TSV requires owner reconciliation; this item reader never overwrites it
+Execution halted","2026-10-19 08:59:52.961486","2026-10-19 08:59:53.871395",0.909909009933472
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Elston_etal_2005_a/Elston_etal_2005_a_Table4.R","FAILED","Error: Public export refused: swapped source location still needs an owner resolution recorded in item context.
+Execution halted","2026-10-19 08:59:53.874755","2026-10-19 08:59:54.431924",0.557169198989868
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Elston_etal_2005_a/Elston_etal_2005_a_Table5.R","FAILED","Error: Public export refused: swapped source location still needs an owner resolution recorded in item context.
+Execution halted","2026-10-19 08:59:54.454","2026-10-19 08:59:54.995483",0.541482925415039
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Elston_etal_2005_a/Elston_etal_2005_a_Table6.R","FAILED","Error: Public export refused: swapped source location still needs an owner resolution recorded in item context.
+Execution halted","2026-10-19 08:59:54.998998","2026-10-19 08:59:55.575024",0.57602596282959
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heffner_Heffner_1992_c/Heffner_Heffner_1992_c_ResultsText.R","FAILED","Error: An existing public TSV requires owner conflict review; no overwrite performed.
+Execution halted","2026-10-19 09:00:55.659659","2026-10-19 09:00:56.281412",0.621752977371216
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Schmidt_etal_1984/Schmidt_etal_1984_text.R","FAILED","Error: An existing public TSV requires owner conflict review; no overwrite performed.
+Execution halted","2026-10-19 09:04:29.230362","2026-10-19 09:04:29.840187",0.609825134277344
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1991/Stephan_etal_1991_Table71.R","FAILED","Error in file(file, ""rt"", encoding = fileEncoding) : 
+  cannot open the connection
+Calls: <Anonymous> -> read.table -> file
+In addition: Warning message:
+In file(file, ""rt"", encoding = fileEncoding) :
+  cannot open file '/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1991/Stephan_etal_1991_Table71_snapshot.csv': No such file or directory
+Execution halted","2026-10-19 09:05:54.539995","2026-10-19 09:05:55.066862",0.526867151260376
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_body_ecology/body_ecology_compiled.R","FAILED","Error in if (any(team_primary)) team_val[team_primary] else team_val : 
+  missing value where TRUE/FALSE needed
+Calls: lapply -> FUN
+Execution halted","2026-10-19 09:07:18.023583","2026-10-19 09:07:30.895961",12.8723781108856
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_brain_mass/brain_mass_compiled.R","FAILED","Error: no measurement basis on record for 10.1007%2Fbf00518633_Table2.tsv / brain_weight_g (paper folder 'Kruska_Rohrs_1974'). Add it to ASSIGN in _keys/build_brain_size_basis.py and re-run that builder.
+Execution halted","2026-10-19 09:07:30.946376","2026-10-19 09:07:33.701581",2.75520491600037
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/check_species_name_splits.R","FAILED","OK volumes_source_species_ids_select.csv: no split labels.
 Error in data.frame(file = sub(""\\.csv$"", """", f), Species_raw = raw, Species_final = fin,  : 
   arguments imply differing number of rows: 1, 0
 Calls: rbind -> data.frame
-Execution halted","2026-10-07 22:43:10.487533","2026-10-07 22:43:11.252433",0.764899969100952
+Execution halted","2026-10-19 09:08:36.017862","2026-10-19 09:08:36.420093",0.402230978012085
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/volumes_compiled_select_DeCasien.R","FAILED","Error: Source review needs one documented row per listed primary source.
-Execution halted","2026-10-07 22:43:15.827257","2026-10-07 22:43:19.204153",3.3768961429596
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__CoverageMap/app.R","FAILED","
-Attaching package: ‘bslib’
-
-The following object is masked from ‘package:utils’:
-
-    page
-
-
-Attaching package: ‘DT’
-
-The following objects are masked from ‘package:shiny’:
-
-    dataTableOutput, renderDataTable
-
-
-Attaching package: ‘dplyr’
-
-The following objects are masked from ‘package:stats’:
-
-    filter, lag
-
-The following objects are masked from ‘package:base’:
-
-    intersect, setdiff, setequal, union
-
-Error:
-! './coverage_data/coverage_records.csv' does not exist in current
-  working directory: '/Users/crossmodal'.
+Execution halted","2026-10-19 09:08:40.741762","2026-10-19 09:08:43.418998",2.67723608016968
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/volumes_sample_metadata_Pirlot__1981.R","FAILED","Error: Usage: Rscript volumes_sample_metadata_Pirlot__1981.R REPO_ROOT NEW_PRIVATE_CSV
+Execution halted","2026-10-19 09:08:52.912522","2026-10-19 09:08:53.863077",0.950554847717285
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__Finder/app.R","FAILED","Error:
+! 'data/coverage_records.csv' does not exist in current working
+  directory:
+  '/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data'.
 Backtrace:
     ▆
- 1. ├─global load_coverage(data_path)
- 2. │ ├─dplyr::mutate(...)
- 3. │ └─readr::read_csv(path, show_col_types = FALSE)
- 4. │   └─vroom::vroom(...)
- 5. │     └─vroom:::vroom_(...)
- 6. └─vroom (local) `<fn>`(""./coverage_data/coverage_records.csv"")
- 7.   └─vroom:::check_path(path)
- 8.     └─cli::cli_abort(msg, call = call)
- 9.       └─rlang::abort(...)
-Execution halted","2026-10-07 22:43:32.115434","2026-10-07 22:43:34.193476",2.07804203033447
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_cohort_coverage.R","FAILED","Error: Run this from the repo root: __ShinyApp/app.R not found.
-Execution halted","2026-10-07 22:43:45.183481","2026-10-07 22:43:45.475076",0.291594982147217
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_item_name_resolution.R","FAILED","registry Item names: 610   |   TSVs on disk: 461   |   NA.tsv present: YES -- REMOVE IT
+ 1. ├─dplyr::mutate(...)
+ 2. ├─readr::read_csv(...)
+ 3. │ └─vroom::vroom(...)
+ 4. │   └─vroom:::vroom_(...)
+ 5. └─vroom (local) `<fn>`(""data/coverage_records.csv"")
+ 6.   └─vroom:::check_path(path)
+ 7.     └─cli::cli_abort(msg, call = call)
+ 8.       └─rlang::abort(...)
+Execution halted","2026-10-19 09:09:01.990384","2026-10-19 09:09:03.492578",1.50219392776489
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_item_name_resolution.R","FAILED","registry Item names: 622   |   TSVs on disk: 533   |   NA.tsv present: YES -- REMOVE IT
 
 __merging_behaviour/behaviour_compiled.R                     0 item name(s) referenced   OK
 __merging_body_ecology/body_ecology_compiled.R               0 item name(s) referenced   OK
@@ -178,6 +70,7 @@ __merging_fossil_brain_glucose/fossil_brain_glucose_compiled.R   0 item name(s) 
 __merging_gyrification/gyrification_compiled.R               3 item name(s) referenced   OK
 __merging_sensory/sensory_compiled.R                         5 item name(s) referenced   OK
 __merging_sleep/sleep_compiled.R                             4 item name(s) referenced   OK
+__merging_supplementary/supplementary_compiled.R             0 item name(s) referenced   OK
 __merging_volumes/volumes_compiled_select.R                 34 item name(s) referenced   OK
 __merging_volumes/volumes_compiled.R                        71 item name(s) referenced   OK
 
@@ -193,4 +86,6 @@ orphaned TSVs (on disk, claimed by no registry row): 8
 rows with a citation but no Item name (need _tools/file_list.R): 0
 
 all referenced item names resolve to a TSV on disk.
-run _tools/restore_registry_rows.R (adding any new row to its ROWS list), then _tools/file_list.R.","2026-10-07 22:43:45.479594","2026-10-07 22:43:46.169217",0.689623117446899
+run _tools/restore_registry_rows.R (adding any new row to its ROWS list), then _tools/file_list.R.","2026-10-19 09:09:44.088887","2026-10-19 09:09:45.263684",1.17479705810547
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/find_orphan_R_scripts.R","TIMEOUT","
+Execution halted","2026-10-19 09:11:12.025745","2026-10-19 09:16:12.229909",300.204164028168

@@ -4,12 +4,12 @@ Built 2026-10-15 by `__Cytosplore_export/audit_cytosplore_variables.py` from the
 
 ## Q1. Secondary compilations vs primary sources
 
-- 505 exported variables; 1118 species x variable cells.
-- cells with at least one primary source: 841
-- cells fed only by compilations (secondary): 239 in 123 variables
-- of those, cells where a PRIMARY value for the same species and structure x measure exists in the compiled database (another variable of the same compatibility group): 26
+- 560 exported variables; 1233 species x variable cells.
+- cells with at least one primary source: 869
+- cells fed only by compilations (secondary): 326 in 158 variables
+- of those, cells where a PRIMARY value for the same species and structure x measure exists in the compiled database (another variable of the same compatibility group): 27
 - cells whose role could not be resolved: 38
-- variables with NO primary source at all: 119
+- variables with NO primary source at all: 154
 - variables whose sources have a declared supersedes/reprints/derives_from relationship: 111
 
 Compilations contributing secondary-only cells (cells):
@@ -17,21 +17,22 @@ Compilations contributing secondary-only cells (cells):
 - Kaufman__2004: 68
 - Wilman_etal_2014: 60
 - Karbowski__2007: 56
+- Jones_etal_2009: 42
 - Heiss_etal_2004: 26
 - Bianchi_etal_2012: 21
+- Boyer_Harrington_2019: 9
+- Iwaniuk_etal_2001: 9
 - Heffner_Masterton_1975: 9
+- Navarrete_etal_2016: 8
 - Lewitus (team): 7
 - Genoud_etal_2018: 5
+- Smaers_etal_2018: 4
 - Isler_etal_2008: 4
 - Elston_etal_2006: 4
-- Haarlem_etal_2026: 4
-- Veilleux_Kirk_2014: 4
-- Boyer (team): 3
-- Koay_etal_1998: 3
-- Kochiyama_2018 x Heiss_2004 (s4): 2
 
 Variables with secondary-only cells for which a primary exists in the same group:
 
+- `Binocular_field_compiled_Heesy2004 (deg)` (3 sp): 3 secondary-only cells; primary for 1 of them via family: visual_field
 - `Endocranial_volume (mL)` (3 sp): 1 secondary-only cells; primary for 1 of them via family: brain_size
 - `Largest fiber diameter µm` (1 sp): 1 secondary-only cells; primary for 1 of them via CorticospinalTract | motor_pathway
 - `Number of fibers per tract` (3 sp): 1 secondary-only cells; primary for 1 of them via CorticospinalTract | motor_pathway
@@ -56,27 +57,26 @@ Variables with secondary-only cells for which a primary exists in the same group
 - `V2_pyramidal_L3_soma_area [golgi] (um2)` (1 sp): 1 secondary-only cells; primary for 1 of them via family: soma_area
 - `V2_pyramidal_L3_soma_depth [golgi] (um)` (1 sp): 1 secondary-only cells; primary for 1 of them via family: soma_depth
 - `V2_pyramidal_L3_spine_count [golgi] (count)` (1 sp): 1 secondary-only cells; primary for 1 of them via family: spine_count
-- `V2_pyramidal_L3_spine_density [golgi] (spines/um)` (1 sp): 1 secondary-only cells; primary for 1 of them via family: spine_density
 
 Source class of exported variables:
 
-- primary-backed: 365
-- compilation-only: 112
+- primary-backed: 385
+- compilation-only: 147
 - role unknown (source lacks role in definitions): 17
 - compilation of earlier literature; primaries not in database: 7
 - mixed (some species compilation-only): 4
 
 Suggested tier (cohort species covered):
 
-- minimal (<3 sp): 286
-- sparse (3-9 sp): 219
+- minimal (<3 sp): 319
+- sparse (3-9 sp): 241
 
 ## Q2. Poolability and individual relevance
 
-- compatibility groups with >= 2 exported variables: 70
+- compatibility groups with >= 2 exported variables: 73
 - groups where pooling would add >= 2 cohort species: 0
 - groups spanning more than one measurement basis (do not pool across): 6
-- variables with < 3 cohort species: 286
+- variables with < 3 cohort species: 319
 - laterality (left/right) variants: 21
 
 Top pooling candidates (gain in cohort species):
@@ -89,18 +89,23 @@ Paper folders contributing to the export whose *_definitions.csv has no primary/
 (so their cells count as role-unknown). Fill `role` in the folder's definitions file and rebuild
 _keys/variable_catalog.csv:
 
+- Jones_etal_2009: 57 cells; catalog roles = no catalog rows (no *_definitions.csv in folder?)
 - Baker_etal_2025: 52 cells; catalog roles = no catalog rows (no *_definitions.csv in folder?)
 - Zilles_etal_1986: 30 cells; catalog roles = no catalog rows (no *_definitions.csv in folder?)
 - Burish_etal_2010: 25 cells; catalog roles = {'review': 10}
 - Isler_etal_2008: 15 cells; catalog roles = no catalog rows (no *_definitions.csv in folder?)
+- Boyer_Harrington_2019: 15 cells; catalog roles = no catalog rows (no *_definitions.csv in folder?)
 - Mota_etal_2019: 9 cells; catalog roles = no catalog rows (no *_definitions.csv in folder?)
 - Iwaniuk_etal_1999: 6 cells; catalog roles = no catalog rows (no *_definitions.csv in folder?)
+- McDowell_etal_2024: 4 cells; catalog roles = no catalog rows (no *_definitions.csv in folder?)
 - MacLarnon__1996: 3 cells; catalog roles = no catalog rows (no *_definitions.csv in folder?)
 - Powell_etal_2017: 3 cells; catalog roles = no catalog rows (no *_definitions.csv in folder?)
+- Winkler_Bryant_2021: 3 cells; catalog roles = no catalog rows (no *_definitions.csv in folder?)
+- Pettigrew_etal_1998: 3 cells; catalog roles = no catalog rows (no *_definitions.csv in folder?)
 - Lassek_Rasmussen_1940: 3 cells; catalog roles = no catalog rows (no *_definitions.csv in folder?)
 - Heffner_Heffner_1992_c: 2 cells; catalog roles = no catalog rows (no *_definitions.csv in folder?)
 
-Exported variables with no group (structure-agnostic label, no poolable_family in variable_domain.csv): 86. These cannot be assessed for cross-variable pooling until a family is assigned.
+Exported variables with no group (structure-agnostic label, no poolable_family in variable_domain.csv): 122. These cannot be assessed for cross-variable pooling until a family is assigned.
 
 ## Source identifiers not resolved to a repo folder
 

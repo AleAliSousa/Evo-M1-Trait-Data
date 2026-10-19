@@ -65,6 +65,15 @@ definitions-file notes; never edit those renderings by hand. Repo
 transcription errors are fixed in the build `.R`, not the CSV, and logged as an
 errata row.
 
+## Table checks (reported by the item's reader)
+
+Where a table prints its own totals, the item's build script checks the table
+against them and leaves a `table_checks` data frame (build HOWTO §7a).
+`build_dataset_item()` attaches it to the report as
+`attr(report, "table_checks")` and, in verbose mode, prints the checks that did
+not pass. It never changes data or the invariant statuses; a build script with
+no `table_checks` is simply not assessed (most tables have nothing to check).
+
 ## Reference documents
 
 Step-by-step procedures are in:

@@ -1,6 +1,10 @@
 species_sci,variable,domain,compilations,roles,primary_available_same_group,primary_variables_same_group,declared_relationships,note
 Homo sapiens,Endocranial_volume (mL),brain structure & size,Seymour (team),secondary,True,Brain_Mass_excl_olfactory_bulb (g); Brain_Mass_from_volume_or_ecv (g); Brain_Mass_mass_or_volume (g); Brain_Mass_measured (g); Endocranial_volume_female (mL); Total_brain_net_volume_Vol.mm3,,primary_used=False
 Macaca mulatta,Endocranial_volume_female (mL),brain structure & size,Powell_etal_2017,secondary,True,Brain_Mass_excl_olfactory_bulb (g); Brain_Mass_from_volume_or_ecv (g); Brain_Mass_mass_or_volume (g); Brain_Mass_measured (g); Endocranial_volume (mL); Total_brain_net_volume_Vol.mm3,,primary_used=False
+Homo sapiens,LateralCerebellum_Vol (mm3),brain structure & size,Smaers_etal_2018,secondary,False,,,primary_used=FALSE
+Macaca mulatta,LateralCerebellum_Vol (mm3),brain structure & size,Smaers_etal_2018,secondary,False,,,primary_used=FALSE
+Homo sapiens,MedialCerebellum_Vol (mm3),brain structure & size,Smaers_etal_2018,secondary,False,,,primary_used=FALSE
+Macaca mulatta,MedialCerebellum_Vol (mm3),brain structure & size,Smaers_etal_2018,secondary,False,,,primary_used=FALSE
 Homo sapiens,Amygdala_CMRgl (umol/100g/min),metabolism,Heiss_etal_2004; Karbowski__2007,secondary,False,,,compilation resolved to 2 primary studies
 Macaca mulatta,Amygdala_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 3 primary studies
 Mus musculus,Amygdala_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
@@ -20,6 +24,10 @@ Homo sapiens,BMR_massspecific (mL O2/h/g),metabolism,Boyer (team); Genoud_etal_2
 Macaca mulatta,BMR_massspecific (mL O2/h/g),metabolism,Boyer (team); Genoud_etal_2018; Isler_etal_2008; Lewitus (team),secondary,False,,,primary_used=FALSE
 Mus musculus,BMR_massspecific (mL O2/h/g),metabolism,Genoud_etal_2018; Lewitus (team),secondary,False,,,primary_used=FALSE
 Homo sapiens,BMR_wholeanimal (mL O2/h),metabolism,Boyer (team); Genoud_etal_2018; Isler_etal_2008,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Brain_blood_flow_total (mL/s),metabolism,Boyer_Harrington_2019,secondary,False,,,primary_used=FALSE
+Homo sapiens,Brain_blood_flow_total (mL/s),metabolism,Boyer_Harrington_2019,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Brain_blood_flow_total (mL/s),metabolism,Boyer_Harrington_2019,secondary,False,,,primary_used=FALSE
+Mus musculus,Brain_blood_flow_total (mL/s),metabolism,Boyer_Harrington_2019,secondary,False,,,primary_used=FALSE
 Macaca mulatta,Brain_stem_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 2 primary studies
 Mus musculus,Brain_stem_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 2 primary studies
 Homo sapiens,Capsula_interna_CMRgl (umol/100g/min),metabolism,Heiss_etal_2004,secondary,False,,,compilation resolved to 1 primary studies
@@ -56,6 +64,10 @@ Homo sapiens,Hippocampus_CMRO2 (umol/100g/min),metabolism,Kaufman__2004,secondar
 Homo sapiens,Hypothalamus_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
 Macaca mulatta,Hypothalamus_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 3 primary studies
 Mus musculus,Hypothalamus_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 2 primary studies
+Callithrix jacchus,ICA_blood_flow (mL/s),metabolism,Boyer_Harrington_2019,secondary,False,,,primary_used=FALSE
+Homo sapiens,ICA_blood_flow (mL/s),metabolism,Boyer_Harrington_2019,secondary,False,,,primary_used=FALSE
+Macaca mulatta,ICA_blood_flow (mL/s),metabolism,Boyer_Harrington_2019,secondary,False,,,primary_used=FALSE
+Mus musculus,ICA_blood_flow (mL/s),metabolism,Boyer_Harrington_2019,secondary,False,,,primary_used=FALSE
 Homo sapiens,Insula_CMRgl (umol/100g/min),metabolism,Heiss_etal_2004,secondary,False,,,compilation resolved to 1 primary studies
 Homo sapiens,Neocortex_CBF (mL/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 10 primary studies
 Macaca mulatta,Neocortex_CBF (mL/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 1 primary studies
@@ -101,6 +113,10 @@ Macaca mulatta,Thalamus_CMRgl (umol/100g/min),metabolism,Karbowski__2007; Kaufma
 Mus musculus,Thalamus_CMRgl (umol/100g/min),metabolism,Karbowski__2007; Kaufman__2004,secondary,False,,,compilation resolved to 6 primary studies
 Homo sapiens,Thalamus_CMRO2 (umol/100g/min),metabolism,Kaufman__2004,secondary,False,,,compilation resolved to 9 primary studies
 Homo sapiens,Thalamus_medial_nucleus_CMRgl (umol/100g/min),metabolism,Heiss_etal_2004,secondary,False,,,compilation resolved to 1 primary studies
+Callithrix jacchus,VA_blood_flow (mL/s),metabolism,Boyer_Harrington_2019,secondary,False,,,primary_used=FALSE
+Homo sapiens,VA_blood_flow (mL/s),metabolism,Boyer_Harrington_2019,secondary,False,,,primary_used=FALSE
+Macaca mulatta,VA_blood_flow (mL/s),metabolism,Boyer_Harrington_2019,secondary,False,,,primary_used=FALSE
+Mus musculus,VA_blood_flow (mL/s),metabolism,Boyer_Harrington_2019,secondary,False,,,primary_used=FALSE
 Homo sapiens,Vermis_CMRgl (umol/100g/min),metabolism,Heiss_etal_2004,secondary,False,,,compilation resolved to 1 primary studies
 Homo sapiens,Visual_cortex_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 2 primary studies
 Macaca mulatta,Visual_cortex_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 2 primary studies
@@ -123,10 +139,32 @@ Macaca mulatta,Whole_brain_Total_glucose_utilization (umol/min),metabolism,Karbo
 Mus musculus,Whole_brain_Total_glucose_utilization (umol/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
 Homo sapiens,Whole_brain_Total_O2_consumption (mL/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
 Macaca mulatta,Whole_brain_Total_O2_consumption (mL/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
-Callithrix jacchus,Litter_size (count),life history,Lewitus (team),secondary,False,,,primary_used=FALSE
-Homo sapiens,Litter_size (count),life history,Lewitus (team),secondary,False,,,primary_used=FALSE
-Macaca mulatta,Litter_size (count),life history,Lewitus (team),secondary,False,,,primary_used=FALSE
-Mus musculus,Litter_size (count),life history,Lewitus (team),secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Age_at_first_birth (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Homo sapiens,Age_at_first_birth (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Age_at_first_birth (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Mus musculus,Age_at_first_birth (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Interbirth_interval (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Homo sapiens,Interbirth_interval (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Interbirth_interval (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Mus musculus,Interbirth_interval (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Litter_size (count),life history,Jones_etal_2009; Lewitus (team),secondary,False,,,primary_used=FALSE
+Homo sapiens,Litter_size (count),life history,Jones_etal_2009; Lewitus (team),secondary,False,,,primary_used=FALSE
+Macaca mulatta,Litter_size (count),life history,Jones_etal_2009; Lewitus (team),secondary,False,,,primary_used=FALSE
+Mus musculus,Litter_size (count),life history,Jones_etal_2009; Lewitus (team),secondary,False,,,primary_used=FALSE
+Macaca mulatta,Litters_per_year_PanTHERIA (count/yr),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Mus musculus,Litters_per_year_PanTHERIA (count/yr),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Neonate_body_mass (g),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Homo sapiens,Neonate_body_mass (g),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Neonate_body_mass (g),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Mus musculus,Neonate_body_mass (g),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Sexual_maturity_age (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Homo sapiens,Sexual_maturity_age (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Sexual_maturity_age (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Mus musculus,Sexual_maturity_age (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Activity_cycle_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Homo sapiens,Activity_cycle_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Activity_cycle_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Mus musculus,Activity_cycle_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
 Callithrix jacchus,Activity_pattern (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
 Homo sapiens,Activity_pattern (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
 Macaca mulatta,Activity_pattern (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
@@ -135,6 +173,9 @@ Callithrix jacchus,Diet_breadth (count),diet & ecology,Wilman_etal_2014,secondar
 Homo sapiens,Diet_breadth (count),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
 Macaca mulatta,Diet_breadth (count),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
 Mus musculus,Diet_breadth (count),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Diet_breadth_PanTHERIA (count),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Diet_breadth_PanTHERIA (count),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Mus musculus,Diet_breadth_PanTHERIA (count),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
 Callithrix jacchus,Diet_dominant (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
 Homo sapiens,Diet_dominant (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
 Macaca mulatta,Diet_dominant (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
@@ -183,10 +224,50 @@ Callithrix jacchus,ForStrat_stratum (category),diet & ecology,Wilman_etal_2014,s
 Homo sapiens,ForStrat_stratum (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
 Macaca mulatta,ForStrat_stratum (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
 Mus musculus,ForStrat_stratum (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Habitat_breadth_PanTHERIA (count),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Habitat_breadth_PanTHERIA (count),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Mus musculus,Habitat_breadth_PanTHERIA (count),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Home_range (km2),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Home_range (km2),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Mus musculus,Home_range (km2),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Population_density (n/km2),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Population_density (n/km2),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Mus musculus,Population_density (n/km2),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Terrestriality_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Terrestriality_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Mus musculus,Terrestriality_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
 Callithrix jacchus,Trophic_guild (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
 Homo sapiens,Trophic_guild (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
 Macaca mulatta,Trophic_guild (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
 Mus musculus,Trophic_guild (category),diet & ecology,Wilman_etal_2014,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Trophic_level_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Trophic_level_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Mus musculus,Trophic_level_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Behavioural_repertoire_size (count),behaviour & cognition,Changizi__2003,secondary,False,,,primary_used=FALSE
+Homo sapiens,Behavioural_repertoire_size (count),behaviour & cognition,Changizi__2003,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Behavioural_repertoire_size (count),behaviour & cognition,Changizi__2003,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Foraging_innovation_count (count),behaviour & cognition,Navarrete_etal_2016,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Foraging_innovation_count (count),behaviour & cognition,Navarrete_etal_2016,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Innovator (category),behaviour & cognition,Navarrete_etal_2016,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Innovator (category),behaviour & cognition,Navarrete_etal_2016,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Loud_play_vocalisation (category),behaviour & cognition,Winkler_Bryant_2021,secondary,False,,,primary_used=FALSE
+Homo sapiens,Loud_play_vocalisation (category),behaviour & cognition,Winkler_Bryant_2021,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Loud_play_vocalisation (category),behaviour & cognition,Winkler_Bryant_2021,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Nontechnical_innovation_count (count),behaviour & cognition,Navarrete_etal_2016,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Nontechnical_innovation_count (count),behaviour & cognition,Navarrete_etal_2016,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Play_nonsex_score (score),behaviour & cognition,Iwaniuk_etal_2001,secondary,False,,,primary_used=FALSE
+Homo sapiens,Play_nonsex_score (score),behaviour & cognition,Iwaniuk_etal_2001,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Play_nonsex_score (score),behaviour & cognition,Iwaniuk_etal_2001,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Play_sex_score (score),behaviour & cognition,Iwaniuk_etal_2001,secondary,False,,,primary_used=FALSE
+Homo sapiens,Play_sex_score (score),behaviour & cognition,Iwaniuk_etal_2001,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Play_sex_score (score),behaviour & cognition,Iwaniuk_etal_2001,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Play_total_score (score),behaviour & cognition,Iwaniuk_etal_2001,secondary,False,,,primary_used=FALSE
+Homo sapiens,Play_total_score (score),behaviour & cognition,Iwaniuk_etal_2001,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Play_total_score (score),behaviour & cognition,Iwaniuk_etal_2001,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Social_group_size_PanTHERIA (count),behaviour & cognition,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Social_group_size_PanTHERIA (count),behaviour & cognition,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Technical_innovation_count (count),behaviour & cognition,Navarrete_etal_2016,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Technical_innovation_count (count),behaviour & cognition,Navarrete_etal_2016,secondary,False,,,primary_used=FALSE
 Homo sapiens,Depth,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,cited within compilation: 39; primary not in database
 Macaca mulatta,Depth,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,cited within compilation: 52; primary not in database
 Macaca mulatta,Lamina of axon terminals deepest,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,"cited within compilation: PETRAS, 1969; primary not in database"
@@ -230,15 +311,34 @@ Homo sapiens,Audible_freq_high_60dB.kHz,sensory performance,Koay_etal_1998,secon
 Macaca mulatta,Audible_freq_high_60dB.kHz,sensory performance,Koay_etal_1998,secondary,False,,SR166: Koay_etal_1998 reprints Heffner_Heffner_2010_b -> Heffner_Heffner_2010_b over Koay_etal_1998 | SR177: Koay_etal_1998 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Koay_etal_1998 | SR179: Koay_etal_1998 reprints Heffner__1998 -> Heffner__1998 over Koay_etal_1998 | SR180: Schusterman__1981 reprints Koay_etal_1998 -> Schusterman__1981 over Koay_etal_1998 | SR191: Koay_etal_1998 reprints Heffner_Heffner_1992_c -> Heffner_Heffner_1992_c over Koay_etal_1998 | SR201: Koay_etal_1998 derives_from Dalland__1965 -> Dalland__1965 over Koay_etal_1998 | SR206: Koay_etal_1998 reprints Heffner__2004 -> Heffner__2004 over Koay_etal_1998 | SR208: Koay_etal_1998 reprints Heffner_etal_1994_b -> Heffner_etal_1994_b over Koay_etal_1998 | SR209: Koay_etal_1998 reprints Heffner_etal_2001 -> Heffner_etal_2001 over Koay_etal_1998 | SR219: Wenstrup__1984 derives_from Koay_etal_1998 -> Wenstrup__1984 over Koay_etal_1998,value_origin=digitised_from_figure; studies=jackson1997 | value_origin=digitised_from_figure; studies=pfingst1978 | value_origin=digitised_from_figure; studies=stebbins1966
 Mus musculus,Audible_freq_high_60dB.kHz,sensory performance,Heffner_Heffner_1992_c; Koay_etal_1998,secondary,False,,SR166: Koay_etal_1998 reprints Heffner_Heffner_2010_b -> Heffner_Heffner_2010_b over Koay_etal_1998 | SR170: Heffner__1998 reprints Heffner_Heffner_1992_c -> Heffner_Heffner_1992_c over Heffner__1998 | SR177: Koay_etal_1998 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Koay_etal_1998 | SR179: Koay_etal_1998 reprints Heffner__1998 -> Heffner__1998 over Koay_etal_1998 | SR180: Schusterman__1981 reprints Koay_etal_1998 -> Schusterman__1981 over Koay_etal_1998 | SR188: Heffner_Heffner_2010_b reprints Heffner_Heffner_1992_c -> none | SR189: Heffner_etal_1994_b reprints Heffner_Heffner_1992_c -> Heffner_etal_1994_b over Heffner_Heffner_1992_c | SR191: Koay_etal_1998 reprints Heffner_Heffner_1992_c -> Heffner_Heffner_1992_c over Koay_etal_1998 | SR201: Koay_etal_1998 derives_from Dalland__1965 -> Dalland__1965 over Koay_etal_1998 | SR203: Heffner_etal_2001 reprints Heffner_Heffner_1992_c -> Heffner_etal_2001 over Heffner_Heffner_1992_c | SR206: Koay_etal_1998 reprints Heffner__2004 -> Heffner__2004 over Koay_etal_1998 | SR208: Koay_etal_1998 reprints Heffner_etal_1994_b -> Heffner_etal_1994_b over Koay_etal_1998 | SR209: Koay_etal_1998 reprints Heffner_etal_2001 -> Heffner_etal_2001 over Koay_etal_1998 | SR219: Wenstrup__1984 derives_from Koay_etal_1998 -> Wenstrup__1984 over Koay_etal_1998,value_origin=digitised_from_figure; published; studies=heffner1980|h; markl1973; unkeyed:h. heffner+masterton1980
 Mus musculus,Audible_freq_low_60dB.kHz,sensory performance,Heffner_Heffner_1992_c,secondary,False,,SR170: Heffner__1998 reprints Heffner_Heffner_1992_c -> Heffner_Heffner_1992_c over Heffner__1998 | SR188: Heffner_Heffner_2010_b reprints Heffner_Heffner_1992_c -> none | SR189: Heffner_etal_1994_b reprints Heffner_Heffner_1992_c -> Heffner_etal_1994_b over Heffner_Heffner_1992_c | SR191: Koay_etal_1998 reprints Heffner_Heffner_1992_c -> Heffner_Heffner_1992_c over Koay_etal_1998 | SR203: Heffner_etal_2001 reprints Heffner_Heffner_1992_c -> Heffner_etal_2001 over Heffner_Heffner_1992_c,value_origin=published; studies=unkeyed:h. heffner+masterton1980
+Homo sapiens,Binocular_field_compiled_Heesy2004 (deg),sensory performance,Heesy__2004,secondary,True,Binocular_field.deg; Field_of_best_vision.deg,,primary_used=FALSE
+Macaca mulatta,Binocular_field_compiled_Heesy2004 (deg),sensory performance,Heesy__2004,secondary,False,,,primary_used=FALSE
+Mus musculus,Binocular_field_compiled_Heesy2004 (deg),sensory performance,Heesy__2004,secondary,False,,,primary_used=FALSE
 Macaca mulatta,CFF_behavioural.Hz,sensory performance,Haarlem_etal_2026,secondary,False,,,value_origin=published; studies=stavros2008|a
 Mus musculus,CFF_behavioural.Hz,sensory performance,Haarlem_etal_2026,secondary,False,,,value_origin=published; studies=nomura2019; umino2019
 Homo sapiens,CFF_electrophysiological.Hz,sensory performance,Haarlem_etal_2026,secondary,False,,,value_origin=published; studies=haarlem2024|c
 Macaca mulatta,CFF_electrophysiological.Hz,sensory performance,Haarlem_etal_2026,secondary,False,,,value_origin=published; studies=salelkar2020 | value_origin=published; studies=spear1994|p; yuan2014
 Mus musculus,CFF_electrophysiological.Hz,sensory performance,Haarlem_etal_2026,secondary,False,,,value_origin=published; studies=gresh2003|j; nusinowitz2007|s; ridder2006|w; umino2019; yang2015
 Mus musculus,Hearing_range.octaves,sensory performance,DERIVED from the merged limits,derived,False,,,value_origin=recomputed; studies=
+Macaca mulatta,L_cone_lambda_max (nm),sensory performance,McDowell_etal_2024,secondary,False,,,primary_used=FALSE
+Macaca mulatta,M_cone_lambda_max (nm),sensory performance,McDowell_etal_2024,secondary,False,,,primary_used=FALSE
+Mus musculus,M_cone_lambda_max (nm),sensory performance,McDowell_etal_2024,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Melanopsin_lambda_max (nm),sensory performance,McDowell_etal_2024,secondary,False,,,primary_used=FALSE
+Mus musculus,Melanopsin_lambda_max (nm),sensory performance,McDowell_etal_2024,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Retinal_linear_magnification (mm/deg),sensory performance,Pettigrew_etal_1998,secondary,False,,,primary_used=FALSE
+Homo sapiens,Retinal_linear_magnification (mm/deg),sensory performance,Pettigrew_etal_1998,secondary,False,,,primary_used=FALSE
+Mus musculus,Retinal_linear_magnification (mm/deg),sensory performance,Pettigrew_etal_1998,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Rod_lambda_max (nm),sensory performance,McDowell_etal_2024,secondary,False,,,primary_used=FALSE
+Mus musculus,Rod_lambda_max (nm),sensory performance,McDowell_etal_2024,secondary,False,,,primary_used=FALSE
+Macaca mulatta,S_cone_lambda_max (nm),sensory performance,McDowell_etal_2024,secondary,False,,,primary_used=FALSE
+Mus musculus,S_cone_lambda_max (nm),sensory performance,McDowell_etal_2024,secondary,False,,,primary_used=FALSE
 Homo sapiens,Sound_localization_threshold.deg,sensory performance,Heffner_Heffner_1992_a,secondary,False,,SR163: Veilleux_Kirk_2014 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Veilleux_Kirk_2014 | SR172: Kirk_Kay_2004 reprints Heffner_Heffner_1992_a -> none | SR177: Koay_etal_1998 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Koay_etal_1998 | SR185: Heffner_Heffner_2010_b reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Heffner_Heffner_2010_b | SR186: Heffner_etal_1994_c reprints Heffner_Heffner_1992_a -> none | SR202: Ravizza_Masterton_1972 reprints Heffner_Heffner_1992_a -> Ravizza_Masterton_1972 over Heffner_Heffner_1992_a,value_origin=published; studies=heffner1988c|r
+Callithrix jacchus,Visual_acuity_anatomical_compiled (c/deg),sensory performance,deSousa_etal_2022,secondary,False,,,primary_used=FALSE
 Callithrix jacchus,Visual_acuity_anatomical.cdeg,sensory performance,Veilleux_Kirk_2014,secondary,False,,SR143: Veilleux_Kirk_2014 reprints Kirk_Kay_2004 -> none | SR163: Veilleux_Kirk_2014 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Veilleux_Kirk_2014,value_origin=published; studies=troilo1993|d
 Homo sapiens,Visual_acuity_anatomical.cdeg,sensory performance,Veilleux_Kirk_2014,secondary,False,,SR143: Veilleux_Kirk_2014 reprints Kirk_Kay_2004 -> none | SR163: Veilleux_Kirk_2014 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Veilleux_Kirk_2014,value_origin=published; studies=pettigrew1988|j
 Macaca mulatta,Visual_acuity_anatomical.cdeg,sensory performance,Veilleux_Kirk_2014,secondary,False,,SR143: Veilleux_Kirk_2014 reprints Kirk_Kay_2004 -> none | SR163: Veilleux_Kirk_2014 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Veilleux_Kirk_2014,value_origin=published; studies=cowey1967|a+cavonius1973|c | value_origin=published; studies=valois1974|r
 Mus musculus,Visual_acuity_anatomical.cdeg,sensory performance,Veilleux_Kirk_2014,secondary,False,,SR143: Veilleux_Kirk_2014 reprints Kirk_Kay_2004 -> none | SR163: Veilleux_Kirk_2014 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Veilleux_Kirk_2014,value_origin=published; studies=prusky2000|g
+Homo sapiens,Visual_acuity_behavioural_compiled (c/deg),sensory performance,deSousa_etal_2022,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Visual_acuity_behavioural_compiled (c/deg),sensory performance,deSousa_etal_2022,secondary,False,,,primary_used=FALSE
+Mus musculus,Visual_acuity_behavioural_compiled (c/deg),sensory performance,deSousa_etal_2022,secondary,False,,,primary_used=FALSE
 Homo sapiens,Visual_acuity_method_unstated.cdeg,sensory performance,Heffner_Heffner_1992_a,secondary,False,,SR163: Veilleux_Kirk_2014 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Veilleux_Kirk_2014 | SR172: Kirk_Kay_2004 reprints Heffner_Heffner_1992_a -> none | SR177: Koay_etal_1998 reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Koay_etal_1998 | SR185: Heffner_Heffner_2010_b reprints Heffner_Heffner_1992_a -> Heffner_Heffner_1992_a over Heffner_Heffner_2010_b | SR186: Heffner_etal_1994_c reprints Heffner_Heffner_1992_a -> none | SR202: Ravizza_Masterton_1972 reprints Heffner_Heffner_1992_a -> Ravizza_Masterton_1972 over Heffner_Heffner_1992_a,value_origin=published; studies=cavonius1973

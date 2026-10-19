@@ -11,7 +11,12 @@ options(scipen = 999)
 .sp <- local({
   a <- grep("^--file=", commandArgs(FALSE), value = TRUE)
   if (length(a)) return(normalizePath(sub("^--file=", "", a[1])))
-  stop("Run with Rscript file.R", call. = FALSE)
+  if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+    p <- rstudioapi::getSourceEditorContext()$path
+    if (!nzchar(p)) p <- rstudioapi::getActiveDocumentContext()$path
+    if (nzchar(p)) return(normalizePath(p))
+  }
+  stop("Run with Rscript file.R, or open in RStudio and click Source (save first).", call. = FALSE)
 })
 
 folder <- dirname(.sp)

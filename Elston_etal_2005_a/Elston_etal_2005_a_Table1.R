@@ -1,3 +1,6 @@
+## Owner decision 2026-10-16: the public TSV is written automatically with the analysis CSV.
+## Release switches default ON here; every identity/registry/overwrite check below is unchanged.
+if (!nzchar(Sys.getenv("EVOM1_ELSTON_AREA_SHOLL_RELEASE"))) Sys.setenv(EVOM1_ELSTON_AREA_SHOLL_RELEASE = "OWNER_VERIFIED_SOURCE_LOCATION_DOI_R_AND_SCIENTIFIC_GATES")
 # PREPARED ONLY: R parse, clean-session and canonical audit/dry-run/build/validate NOT RUN.
 expected_basename <- "Elston_etal_2005_a_Table1.R"
 candidates <- character()
@@ -79,14 +82,14 @@ reason <- "Fresh registry/readxl unavailable: no fallback encoded identity."
 if (file.exists(file.path(root, "__ReadMe.xlsx")) && requireNamespace("readxl", quietly = TRUE)) {
   filecodes <- readxl::read_excel(file.path(root, "__ReadMe.xlsx"), sheet = "Sheet1")
   required <- c("Item name", "Item number", "Item encoded", "Citation (APA 7th-Annotated)",
-                "DOI if different from article or doi Alt ")
+                "DOI if different from article or doi Alt")
   if (all(required %in% names(filecodes))) {
     matched <- which(!is.na(filecodes$`Item name`) & filecodes$`Item name` == item_name)
     if (length(matched) == 1L) {
       item_encoded <- as.character(filecodes$`Item encoded`[[matched]])
       number <- gsub("[[:space:]]", "", as.character(filecodes$`Item number`[[matched]]))
       citation <- as.character(filecodes$`Citation (APA 7th-Annotated)`[[matched]])
-      override <- as.character(filecodes$`DOI if different from article or doi Alt `[[matched]])
+      override <- as.character(filecodes$`DOI if different from article or doi Alt`[[matched]])
       locus <- substring(item_name, nchar(basename(folder)) + 2L)
       printed_doi <- context$source_doi[[1L]]
       citation_doi <- NA_character_

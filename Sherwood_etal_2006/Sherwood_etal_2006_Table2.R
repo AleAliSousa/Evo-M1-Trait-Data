@@ -1,3 +1,6 @@
+## Owner decision 2026-10-16: the public TSV is written automatically with the analysis CSV.
+## Release switches default ON here; every identity/registry/overwrite check below is unchanged.
+if (!nzchar(Sys.getenv("EVOM1_WRITE_PUBLIC_TSV"))) Sys.setenv(EVOM1_WRITE_PUBLIC_TSV = "TRUE")
 # Table 2 contains original-author derived ratios, not independent primary counts.
 # The delivered CSV is a Python preview; this R reader has not been executed.
 

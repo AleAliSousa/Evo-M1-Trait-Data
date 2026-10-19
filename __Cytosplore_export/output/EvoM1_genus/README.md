@@ -7,7 +7,7 @@ a wide cell is the pool (numeric mean) across those labels. Use these tables to 
 between cohorts, not as species trait values; the species-level folder holds those.
 
 
-Built 2026-10-15 from Evo-M1-Trait-Data commit `731f7ac (from .git/HEAD; git command unavailable)` by `__Cytosplore_export/build_cytosplore_traits.R`.
+Built 2026-10-15 from Evo-M1-Trait-Data commit `dd56c0a (from .git/HEAD; git command unavailable)` by `__Cytosplore_export/build_cytosplore_traits.R`.
 Re-run that script to regenerate everything here; do not edit these CSVs by hand.
 
 ## What this is
@@ -19,11 +19,11 @@ Comparative species traits for the 25-species `EvoM1` cohort (`_keys/species_coh
 | file | one row per | use |
 |---|---|---|
 | `EvoM1_genus_species.csv` | species (25) | species list, taxonomy, which data labels were pooled (match level: genus), per-domain counts |
-| `EvoM1_genus_traits_wide.csv` | species x variable (597) | **recommended viewer input**: species x trait matrix, one value per cell |
-| `EvoM1_genus_traits_wide_core.csv` | species x variable (36) | same, only traits held for >= 20 of 25 species (`in_core`) |
-| `EvoM1_genus_variable_dictionary.csv` | variable (597) | column metadata for the wide tables: domain, structure, measure, unit, definition, coverage |
-| `EvoM1_genus_traits_cells.csv` | species x variable cell (5090) | how each wide cell was made: n values, aggregation, min/max, sources |
-| `EvoM1_genus_traits_long.csv` | value (11316) | full provenance: every source value behind every cell |
+| `EvoM1_genus_traits_wide.csv` | species x variable (653) | **recommended viewer input**: species x trait matrix, one value per cell |
+| `EvoM1_genus_traits_wide_core.csv` | species x variable (47) | same, only traits held for >= 20 of 25 species (`in_core`) |
+| `EvoM1_genus_variable_dictionary.csv` | variable (653) | column metadata for the wide tables: domain, structure, measure, unit, definition, coverage |
+| `EvoM1_genus_traits_cells.csv` | species x variable cell (5756) | how each wide cell was made: n values, aggregation, min/max, sources |
+| `EvoM1_genus_traits_long.csv` | value (13534) | full provenance: every source value behind every cell |
 | `EvoM1_genus_domain_coverage.csv` | species | n distinct variables per domain |
 | `BUILD_INFO.txt` | - | build stamp and counts |
 
@@ -57,49 +57,49 @@ Source audit (run `python3 __Cytosplore_export/audit_cytosplore_variables.py Evo
 
 | species_sci | common_name | Order | n_variables | data_labels |
 |---|---|---|---|---|
-| Aotus nancymaae | Owl monkey | Primates | 253 | Aotus azarae; Aotus azarai; Aotus brumbacki; Aotus hershkovitzi; Aotus infulatus; Aotus lemurinus; Aotus miconax; Aotus nancymaae; Aotus nigriceps; Aotus sp.; Aotus trivirgatus; Aotus vociferans |
-| Callithrix jacchus | Common marmoset | Primates | 243 | Callithrix acariensis; Callithrix argentata; Callithrix aurita; Callithrix chrysoleuca; Callithrix emiliae; Callithrix flaviceps; Callithrix geoffroyi; Callithrix humeralifer; Callithrix humilis; Callithrix intermedia; Callithrix jacchus; Callithrix kuhli; Callithrix kuhlii; Callithrix leucippe; Callithrix manicorensis; Callithrix marcai; Callithrix mauesi; Callithrix melanura; Callithrix nigriceps; Callithrix penicillata; Callithrix saterei; Callithrix sp. |
-| Canis latrans | Coyote | Carnivora | 194 | Canis adustus; Canis aureus; Canis familiaris; Canis latrans; Canis lupus; Canis lupus familiaris; Canis mesomelas; Canis simensis |
-| Chlorocebus sabaeus | African green monkey | Primates | 75 | Chlorocebus aethiops; Chlorocebus cynosuros; Chlorocebus djamdjamensis; Chlorocebus pygerythrus; Chlorocebus sabaeus; Chlorocebus tantalus |
-| Dasypus novemcinctus | Armadillo | Cingulata | 89 | Dasypus hybridus; Dasypus kappleri; Dasypus novemcinctus; Dasypus pilosus; Dasypus sabanicola; Dasypus septemcinctus; Dasypus sp.; Dasypus yepesi |
-| Felis catus | Cat | Carnivora | 179 | Felis bieti; Felis catus; Felis chaus; Felis manul; Felis margarita; Felis nigripes; Felis silvestris; Felis silvestris catus; Felis silvestris f.d. |
-| Gorilla gorilla gorilla | Western lowland gorilla | Primates | 250 | Gorilla beringei; Gorilla gorilla; Gorilla gorilla gorilla; Gorilla sp. |
-| Heterocephalus glaber | Naked mole rat | Rodentia | 100 | Heterocephalus glaber |
-| Homo sapiens | Human | Primates | 442 | Homo erectus; Homo floresiensis; Homo georgicus; Homo habilis; Homo heidelbergensis; Homo naledi; Homo neanderthalensis; Homo rudolfensis; Homo sapiens |
-| Macaca mulatta | Rhesus macaque | Primates | 354 | Macaca arctoides; Macaca assamensis; Macaca cyclopis; Macaca fascicularis; Macaca fascicularis group; Macaca fuscata; Macaca hecki; Macaca irus; Macaca leonina; Macaca maura; Macaca mulatta; Macaca mulatta group; Macaca nemestrina; Macaca nemestrina group; Macaca nigra; Macaca nigrescens; Macaca ochreata; Macaca pagensis; Macaca radiata; Macaca siberu; Macaca silenus; Macaca sinica; Macaca sinica group; Macaca sylvanus; Macaca sylvanus group; Macaca thibetana; Macaca tonkeana |
-| Macaca nemestrina | Pig-tailed macaque | Primates | 354 | Macaca arctoides; Macaca assamensis; Macaca cyclopis; Macaca fascicularis; Macaca fascicularis group; Macaca fuscata; Macaca hecki; Macaca irus; Macaca leonina; Macaca maura; Macaca mulatta; Macaca mulatta group; Macaca nemestrina; Macaca nemestrina group; Macaca nigra; Macaca nigrescens; Macaca ochreata; Macaca pagensis; Macaca radiata; Macaca siberu; Macaca silenus; Macaca sinica; Macaca sinica group; Macaca sylvanus; Macaca sylvanus group; Macaca thibetana; Macaca tonkeana |
-| Microcebus murinus | Mouse lemur | Primates | 217 | Microcebus berthae; Microcebus coquereli; Microcebus griseorufus; Microcebus murinus; Microcebus myoxinus; Microcebus ravelobensis; Microcebus rufus; Microcebus sambiranensis; Microcebus sp.; Microcebus tavaratra |
-| Monodelphis domestica | Opossum | Didelphimorphia | 49 | Monodelphis adusta; Monodelphis americana; Monodelphis brevicaudata; Monodelphis dimidiata; Monodelphis domestica; Monodelphis emiliae; Monodelphis glirina; Monodelphis iheringi; Monodelphis kunsi; Monodelphis maraxina; Monodelphis osgoodi; Monodelphis palliolata; Monodelphis rubida; Monodelphis scalops; Monodelphis sorex; Monodelphis theresa; Monodelphis umbristriata; Monodelphis unistriata |
-| Mus musculus | Mouse | Rodentia | 147 | Mus baoulei; Mus booduga; Mus bufo; Mus callewaerti; Mus caroli; Mus cervicolor; Mus cookii; Mus crociduroides; Mus famulus; Mus fernandoni; Mus fragilicauda; Mus goundae; Mus haussa; Mus indutus; Mus macedonicus; Mus mahomet; Mus mattheyi; Mus mayori; Mus minutoides; Mus musculoides; Mus musculus; Mus neavei; Mus orangiae; Mus oubanguii; Mus pahari; Mus phillipsi; Mus platythrix; Mus saxicola; Mus setulosus; Mus setzeri; Mus shortridgei; Mus sorella; Mus sp.; Mus spicilegus; Mus spretus; Mus tenellus; Mus terricolor; Mus triton; Mus vulcani |
-| Mustela putorius furo | Ferret | Carnivora | 163 | Mustela africana; Mustela altaica; Mustela erminea; Mustela eversmanii; Mustela felipei; Mustela frenata; Mustela itatsi; Mustela kathiah; Mustela lutreola; Mustela lutreolina; Mustela nigripes; Mustela nivalis; Mustela nudipes; Mustela putorius; Mustela putorius furo; Mustela sibirica; Mustela strigidorsa; Mustela subpalmata; Mustela vison |
-| Oryctolagus cuniculus | Rabbit | Lagomorpha | 144 | Oryctolagus cuniculus; Oryctolagus cuniculus f.d. |
-| Otolemur garnettii | Galago | Primates | 226 | Otolemur crassicaudatus; Otolemur garnetti; Otolemur garnettii; Otolemur monteiri |
-| Pan troglodytes | Chimpanzee | Primates | 329 | Pan paniscus; Pan troglodytes |
-| Papio anubis | Baboon | Primates | 312 | Papio anubis; Papio cynocephalus; Papio cynocephalus anubis; Papio cynocphalus; Papio hamadryas; Papio papio; Papio sp.; Papio ursinus |
-| Rattus norvegicus | Rat | Rodentia | 203 | Rattus adustus; Rattus andamanensis; Rattus annandalei; Rattus arfakiensis; Rattus argentiventer; Rattus arrogans; Rattus baluensis; Rattus blangorum; Rattus bontanus; Rattus burrus; Rattus colletti; Rattus elaphinus; Rattus enganus; Rattus everetti; Rattus exulans; Rattus feliceus; Rattus fuscipes; Rattus giluwensis; Rattus hainaldi; Rattus hoffmanni; Rattus hoogerwerfi; Rattus jobiensis; Rattus koopmani; Rattus korinchi; Rattus leucopus; Rattus losea; Rattus lugens; Rattus lutreolus; Rattus macleari; Rattus marmosurus; Rattus mindorensis; Rattus mollicomulus; Rattus montanus; Rattus mordax; Rattus morotaiensis; Rattus nativitatis; Rattus niobe; Rattus nitidus; Rattus norvegicus; Rattus norvegicus f.d.; Rattus norvegicus var.alba; Rattus novaeguineae; Rattus omichlodes; Rattus osgoodi; Rattus palmarum; Rattus pelurus; Rattus pococki; Rattus praetor; Rattus pyctoris; Rattus ranjiniae; Rattus richardsoni; Rattus salocco; Rattus sanila; Rattus satarae; Rattus simalurensis; Rattus sordidus; Rattus sp.; Rattus steini; Rattus stoicus; Rattus tanezumi; Rattus tawitawiensis; Rattus timorensis; Rattus tiomanicus; Rattus tunneyi; Rattus vandeuseni; Rattus verecundus; Rattus villosissimus; Rattus xanthurus |
-| Saimiri boliviensis boliviensis | Bolivian squirrel monkey | Primates | 278 | Saimiri boliviensis; Saimiri boliviensis boliviensis; Saimiri boliviensis group; Saimiri oerstedii; Saimiri sciureus; Saimiri sciureus group; Saimiri ustus; Saimiri vanzolinii |
-| Sapajus apella | Capuchin | Primates | 101 | Sapajus apella; Sapajus flavius; Sapajus libidinosus; Sapajus nigritus; Sapajus xanthosternos |
-| Sus scrofa | Pig | Artiodactyla | 159 | Sus ahoenobarbus; Sus barbatus; Sus bucculentus; Sus cebifrons; Sus celebensis; Sus oliveri; Sus philippensis; Sus salvanius; Sus scrofa; Sus scrofa domesticus; Sus verrucosus |
-| Tupaia belangeri | Treeshrew | Scandentia | 229 | Tupaia belangeri; Tupaia chrysogaster; Tupaia dorsalis; Tupaia glis; Tupaia gracilis; Tupaia javanica; Tupaia longipes; Tupaia minor; Tupaia moellendorffi; Tupaia montana; Tupaia nicobarica; Tupaia palawanensis; Tupaia picta; Tupaia sp.; Tupaia splendidula; Tupaia tana |
-| Urocitellus parryii | Arctic ground squirrel | NA | 22 | Urocitellus parryii |
+| Aotus nancymaae | Owl monkey | Primates | 285 | Aotus azarae; Aotus azarai; Aotus brumbacki; Aotus hershkovitzi; Aotus infulatus; Aotus lemurinus; Aotus miconax; Aotus nancymaae; Aotus nigriceps; Aotus sp.; Aotus trivirgatus; Aotus vociferans |
+| Callithrix jacchus | Common marmoset | Primates | 271 | Callithrix acariensis; Callithrix argentata; Callithrix aurita; Callithrix chrysoleuca; Callithrix emiliae; Callithrix flaviceps; Callithrix geoffroyi; Callithrix humeralifer; Callithrix humilis; Callithrix intermedia; Callithrix jacchus; Callithrix kuhli; Callithrix kuhlii; Callithrix leucippe; Callithrix manicorensis; Callithrix marcai; Callithrix mauesi; Callithrix melanura; Callithrix nigriceps; Callithrix penicillata; Callithrix saterei; Callithrix sp. |
+| Canis latrans | Coyote | Carnivora | 214 | Canis adustus; Canis aureus; Canis familiaris; Canis latrans; Canis lupus; Canis lupus familiaris; Canis lupus/sp.; Canis mesomelas; Canis simensis |
+| Chlorocebus sabaeus | African green monkey | Primates | 86 | Chlorocebus aethiops; Chlorocebus cynosuros; Chlorocebus djamdjamensis; Chlorocebus pygerythrus; Chlorocebus sabaeus; Chlorocebus tantalus |
+| Dasypus novemcinctus | Armadillo | Cingulata | 99 | Dasypus hybridus; Dasypus kappleri; Dasypus novemcinctus; Dasypus pilosus; Dasypus sabanicola; Dasypus septemcinctus; Dasypus sp.; Dasypus yepesi |
+| Felis catus | Cat | Carnivora | 203 | Felis bieti; Felis catus; Felis chaus; Felis manul; Felis margarita; Felis nigripes; Felis silvestris; Felis silvestris catus; Felis silvestris f.d. |
+| Gorilla gorilla gorilla | Western lowland gorilla | Primates | 294 | Gorilla beringei; Gorilla gorilla; Gorilla gorilla gorilla; Gorilla sp. |
+| Heterocephalus glaber | Naked mole rat | Rodentia | 115 | Heterocephalus glaber |
+| Homo sapiens | Human | Primates | 480 | Homo erectus; Homo floresiensis; Homo georgicus; Homo habilis; Homo heidelbergensis; Homo naledi; Homo neanderthalensis; Homo rudolfensis; Homo sapiens |
+| Macaca mulatta | Rhesus macaque | Primates | 399 | Macaca arctoides; Macaca assamensis; Macaca cyclopis; Macaca fascicularis; Macaca fascicularis group; Macaca fuscata; Macaca hecki; Macaca irus; Macaca leonina; Macaca maura; Macaca mulatta; Macaca mulatta group; Macaca nemestrina; Macaca nemestrina group; Macaca nigra; Macaca nigrescens; Macaca ochreata; Macaca pagensis; Macaca radiata; Macaca siberu; Macaca silenus; Macaca sinica; Macaca sinica group; Macaca sp.; Macaca sylvanus; Macaca sylvanus group; Macaca thibetana; Macaca tonkeana |
+| Macaca nemestrina | Pig-tailed macaque | Primates | 399 | Macaca arctoides; Macaca assamensis; Macaca cyclopis; Macaca fascicularis; Macaca fascicularis group; Macaca fuscata; Macaca hecki; Macaca irus; Macaca leonina; Macaca maura; Macaca mulatta; Macaca mulatta group; Macaca nemestrina; Macaca nemestrina group; Macaca nigra; Macaca nigrescens; Macaca ochreata; Macaca pagensis; Macaca radiata; Macaca siberu; Macaca silenus; Macaca sinica; Macaca sinica group; Macaca sp.; Macaca sylvanus; Macaca sylvanus group; Macaca thibetana; Macaca tonkeana |
+| Microcebus murinus | Mouse lemur | Primates | 243 | Microcebus berthae; Microcebus coquereli; Microcebus griseorufus; Microcebus murinus; Microcebus myoxinus; Microcebus ravelobensis; Microcebus rufus; Microcebus sambiranensis; Microcebus sp.; Microcebus tavaratra |
+| Monodelphis domestica | Opossum | Didelphimorphia | 66 | Monodelphis adusta; Monodelphis americana; Monodelphis brevicaudata; Monodelphis dimidiata; Monodelphis domestica; Monodelphis emiliae; Monodelphis glirina; Monodelphis iheringi; Monodelphis kunsi; Monodelphis maraxina; Monodelphis osgoodi; Monodelphis palliolata; Monodelphis rubida; Monodelphis scalops; Monodelphis sorex; Monodelphis theresa; Monodelphis umbristriata; Monodelphis unistriata |
+| Mus musculus | Mouse | Rodentia | 172 | Mus baoulei; Mus booduga; Mus bufo; Mus callewaerti; Mus caroli; Mus cervicolor; Mus cookii; Mus crociduroides; Mus famulus; Mus fernandoni; Mus fragilicauda; Mus goundae; Mus haussa; Mus indutus; Mus macedonicus; Mus mahomet; Mus mattheyi; Mus mayori; Mus minutoides; Mus musculoides; Mus musculus; Mus neavei; Mus orangiae; Mus oubanguii; Mus pahari; Mus phillipsi; Mus platythrix; Mus saxicola; Mus setulosus; Mus setzeri; Mus shortridgei; Mus sorella; Mus sp.; Mus spicilegus; Mus spretus; Mus tenellus; Mus terricolor; Mus triton; Mus vulcani |
+| Mustela putorius furo | Ferret | Carnivora | 184 | Mustela africana; Mustela altaica; Mustela erminea; Mustela eversmanii; Mustela felipei; Mustela frenata; Mustela itatsi; Mustela kathiah; Mustela lutreola; Mustela lutreolina; Mustela nigripes; Mustela nivalis; Mustela nudipes; Mustela putorius; Mustela putorius furo; Mustela sibirica; Mustela strigidorsa; Mustela subpalmata; Mustela vison |
+| Oryctolagus cuniculus | Rabbit | Lagomorpha | 165 | Oryctolagus cuniculus; Oryctolagus cuniculus f.d. |
+| Otolemur garnettii | Galago | Primates | 252 | Otolemur crassicaudatus; Otolemur garnetti; Otolemur garnettii; Otolemur monteiri |
+| Pan troglodytes | Chimpanzee | Primates | 374 | Pan paniscus; Pan troglodytes |
+| Papio anubis | Baboon | Primates | 338 | Papio anubis; Papio cynocephalus; Papio cynocephalus anubis; Papio cynocphalus; Papio hamadryas; Papio papio; Papio sp.; Papio ursinus |
+| Rattus norvegicus | Rat | Rodentia | 229 | Rattus adustus; Rattus andamanensis; Rattus annandalei; Rattus arfakiensis; Rattus argentiventer; Rattus arrogans; Rattus baluensis; Rattus blangorum; Rattus bontanus; Rattus burrus; Rattus colletti; Rattus elaphinus; Rattus enganus; Rattus everetti; Rattus exulans; Rattus feliceus; Rattus fuscipes; Rattus giluwensis; Rattus hainaldi; Rattus hoffmanni; Rattus hoogerwerfi; Rattus jobiensis; Rattus koopmani; Rattus korinchi; Rattus leucopus; Rattus losea; Rattus lugens; Rattus lutreolus; Rattus macleari; Rattus marmosurus; Rattus mindorensis; Rattus mollicomulus; Rattus montanus; Rattus mordax; Rattus morotaiensis; Rattus nativitatis; Rattus niobe; Rattus nitidus; Rattus norvegicus; Rattus norvegicus f.d.; Rattus norvegicus var.alba; Rattus novaeguineae; Rattus omichlodes; Rattus osgoodi; Rattus palmarum; Rattus pelurus; Rattus pococki; Rattus praetor; Rattus pyctoris; Rattus ranjiniae; Rattus richardsoni; Rattus salocco; Rattus sanila; Rattus satarae; Rattus simalurensis; Rattus sordidus; Rattus sp.; Rattus steini; Rattus stoicus; Rattus tanezumi; Rattus tawitawiensis; Rattus timorensis; Rattus tiomanicus; Rattus tunneyi; Rattus vandeuseni; Rattus verecundus; Rattus villosissimus; Rattus xanthurus |
+| Saimiri boliviensis boliviensis | Bolivian squirrel monkey | Primates | 308 | Saimiri boliviensis; Saimiri boliviensis boliviensis; Saimiri boliviensis group; Saimiri oerstedii; Saimiri sciureus; Saimiri sciureus group; Saimiri ustus; Saimiri vanzolinii |
+| Sapajus apella | Capuchin | Primates | 150 | Sapajus apella; Sapajus flavius; Sapajus libidinosus; Sapajus nigritus; Sapajus xanthosternos |
+| Sus scrofa | Pig | Artiodactyla | 176 | Sus ahoenobarbus; Sus barbatus; Sus bucculentus; Sus cebifrons; Sus celebensis; Sus oliveri; Sus philippensis; Sus salvanius; Sus scrofa; Sus scrofa domesticus; Sus verrucosus |
+| Tupaia belangeri | Treeshrew | Scandentia | 249 | Tupaia belangeri; Tupaia chrysogaster; Tupaia dorsalis; Tupaia glis; Tupaia gracilis; Tupaia javanica; Tupaia longipes; Tupaia minor; Tupaia moellendorffi; Tupaia montana; Tupaia nicobarica; Tupaia palawanensis; Tupaia picta; Tupaia sp.; Tupaia splendidula; Tupaia tana |
+| Urocitellus parryii | Arctic ground squirrel | NA | 29 | Urocitellus parryii |
 
 ## Variables per domain (all / core / M1-motor flagged)
 
 | domain | variables | core | m1_motor |
 |---|---|---|---|
-| brain structure & size | 175 | 5 | 5 |
-| cellular composition | 119 | 7 | 3 |
+| brain structure & size | 187 | 5 | 5 |
+| cellular composition | 124 | 7 | 3 |
 | cortical & cerebellar folding | 9 | 1 | 0 |
 | body size | 2 | 1 | 0 |
-| metabolism | 64 | 2 | 2 |
-| life history | 18 | 5 | 0 |
-| diet & ecology | 22 | 15 | 0 |
-| behaviour & cognition | 20 | 0 | 9 |
+| metabolism | 71 | 2 | 2 |
+| life history | 23 | 10 | 0 |
+| diet & ecology | 29 | 20 | 0 |
+| behaviour & cognition | 30 | 0 | 9 |
 | sensorimotor & motor pathways | 23 | 0 | 23 |
 | hand & limb morphology | 22 | 0 | 22 |
 | sleep & torpor | 5 | 0 | 0 |
 | cellular morphology | 107 | 0 | 32 |
-| sensory performance | 11 | 0 | 0 |
+| sensory performance | 21 | 1 | 0 |
 
 ## Known caveats carried over from the compilation
 

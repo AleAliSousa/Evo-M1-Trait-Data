@@ -1,7 +1,7 @@
 # EC species-trait tables for the Cytosplore M1 viewer (DRAFT)
 
 
-Built 2026-10-15 from Evo-M1-Trait-Data commit `731f7ac (from .git/HEAD; git command unavailable)` by `__Cytosplore_export/build_cytosplore_traits.R`.
+Built 2026-10-15 from Evo-M1-Trait-Data commit `dd56c0a (from .git/HEAD; git command unavailable)` by `__Cytosplore_export/build_cytosplore_traits.R`.
 Re-run that script to regenerate everything here; do not edit these CSVs by hand.
 
 ## What this is
@@ -13,11 +13,11 @@ Comparative species traits for the 14-species `EC` cohort (`_keys/species_cohort
 | file | one row per | use |
 |---|---|---|
 | `EC_species.csv` | species (14) | species list, taxonomy, which data labels were pooled (match level: species), per-domain counts |
-| `EC_traits_wide.csv` | species x variable (574) | **recommended viewer input**: species x trait matrix, one value per cell |
-| `EC_traits_wide_core.csv` | species x variable (20) | same, only traits held for >= 12 of 14 species (`in_core`) |
-| `EC_variable_dictionary.csv` | variable (574) | column metadata for the wide tables: domain, structure, measure, unit, definition, coverage |
-| `EC_traits_cells.csv` | species x variable cell (2417) | how each wide cell was made: n values, aggregation, min/max, sources |
-| `EC_traits_long.csv` | value (2506) | full provenance: every source value behind every cell |
+| `EC_traits_wide.csv` | species x variable (629) | **recommended viewer input**: species x trait matrix, one value per cell |
+| `EC_traits_wide_core.csv` | species x variable (22) | same, only traits held for >= 12 of 14 species (`in_core`) |
+| `EC_variable_dictionary.csv` | variable (629) | column metadata for the wide tables: domain, structure, measure, unit, definition, coverage |
+| `EC_traits_cells.csv` | species x variable cell (2679) | how each wide cell was made: n values, aggregation, min/max, sources |
+| `EC_traits_long.csv` | value (2808) | full provenance: every source value behind every cell |
 | `EC_domain_coverage.csv` | species | n distinct variables per domain |
 | `BUILD_INFO.txt` | - | build stamp and counts |
 
@@ -51,38 +51,38 @@ Source audit (run `python3 __Cytosplore_export/audit_cytosplore_variables.py EC 
 
 | species_sci | common_name | Order | n_variables | data_labels |
 |---|---|---|---|---|
-| Aotus nancymaae | Owl monkey | Primates | 61 | Aotus nancymaae |
-| Callithrix jacchus | Common marmoset | Primates | 242 | Callithrix jacchus |
-| Dasypus novemcinctus | Armadillo | Cingulata | 88 | Dasypus novemcinctus |
-| Heterocephalus glaber | Naked mole rat | Rodentia | 100 | Heterocephalus glaber |
-| Homo sapiens | Human | Primates | 437 | Homo sapiens |
-| Macaca mulatta | Rhesus macaque | Primates | 296 | Macaca mulatta |
-| Microcebus murinus | Mouse lemur | Primates | 217 | Microcebus murinus |
-| Monodelphis domestica | Opossum | Didelphimorphia | 39 | Monodelphis domestica |
-| Mus musculus | Mouse | Rodentia | 147 | Mus musculus |
-| Mustela putorius furo | Ferret | Carnivora | 96 | Mustela putorius furo |
-| Pan troglodytes | Chimpanzee | Primates | 326 | Pan troglodytes |
-| Rattus norvegicus | Rat | Rodentia | 203 | Rattus norvegicus |
+| Aotus nancymaae | Owl monkey | Primates | 69 | Aotus nancymaae |
+| Callithrix jacchus | Common marmoset | Primates | 270 | Callithrix jacchus |
+| Dasypus novemcinctus | Armadillo | Cingulata | 98 | Dasypus novemcinctus |
+| Heterocephalus glaber | Naked mole rat | Rodentia | 115 | Heterocephalus glaber |
+| Homo sapiens | Human | Primates | 475 | Homo sapiens |
+| Macaca mulatta | Rhesus macaque | Primates | 322 | Macaca mulatta |
+| Microcebus murinus | Mouse lemur | Primates | 243 | Microcebus murinus |
+| Monodelphis domestica | Opossum | Didelphimorphia | 55 | Monodelphis domestica |
+| Mus musculus | Mouse | Rodentia | 170 | Mus musculus |
+| Mustela putorius furo | Ferret | Carnivora | 97 | Mustela putorius furo |
+| Pan troglodytes | Chimpanzee | Primates | 371 | Pan troglodytes |
+| Rattus norvegicus | Rat | Rodentia | 228 | Rattus norvegicus |
 | Sus scrofa | Pig | Artiodactyla | 107 | Sus scrofa domesticus |
-| Tupaia belangeri | Treeshrew | Scandentia | 68 | Tupaia belangeri |
+| Tupaia belangeri | Treeshrew | Scandentia | 69 | Tupaia belangeri |
 
 ## Variables per domain (all / core / M1-motor flagged)
 
 | domain | variables | core | m1_motor |
 |---|---|---|---|
-| brain structure & size | 175 | 1 | 5 |
-| cellular composition | 119 | 0 | 3 |
+| brain structure & size | 187 | 1 | 5 |
+| cellular composition | 124 | 0 | 3 |
 | cortical & cerebellar folding | 9 | 0 | 0 |
 | body size | 2 | 1 | 0 |
-| metabolism | 64 | 1 | 2 |
-| life history | 18 | 2 | 0 |
-| diet & ecology | 22 | 15 | 0 |
-| behaviour & cognition | 20 | 0 | 9 |
+| metabolism | 71 | 1 | 2 |
+| life history | 23 | 4 | 0 |
+| diet & ecology | 29 | 15 | 0 |
+| behaviour & cognition | 30 | 0 | 9 |
 | sensorimotor & motor pathways | 21 | 0 | 21 |
 | hand & limb morphology | 17 | 0 | 17 |
 | sleep & torpor | 5 | 0 | 0 |
 | cellular morphology | 91 | 0 | 28 |
-| sensory performance | 11 | 0 | 0 |
+| sensory performance | 20 | 0 | 0 |
 
 ## Known caveats carried over from the compilation
 

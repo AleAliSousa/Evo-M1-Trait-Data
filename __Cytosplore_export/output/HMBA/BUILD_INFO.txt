@@ -1,31 +1,31 @@
-built:           2026-10-15 03:06:54 PDT
-repo commit:     731f7ac (from .git/HEAD; git command unavailable)
+built:           2026-10-15 19:59:40 PDT
+repo commit:     dd56c0a (from .git/HEAD; git command unavailable)
 cohort:          HMBA (4 species)
 match level:     species
 core threshold:  >= 80% of cohort (>= 4 species)
 species without any data: none
-long rows (all values):   1172
-  of which measurement:   1163
-species x variable cells: 1118
-variables in wide:        505   (matrix fill 55.3%)
-variables in wide_core:   75   (matrix fill 100.0%)
+long rows (all values):   1306
+  of which measurement:   1297
+species x variable cells: 1233
+variables in wide:        560   (matrix fill 55.0%)
+variables in wide_core:   78   (matrix fill 100.0%)
 cells unresolved categorical: 0
 cells with numeric spread > 50%: 4
-units: 505 from key, 0 from merge rows, 0 parsed from label, 0 none
+units: 560 from key, 0 from merge rows, 0 parsed from label, 0 none
 variables flagged m1_motor_related: 81 (of which core: 0)
 domains excluded from wide/cells/dictionary: dataset metadata
 
 variables per domain (all / core / m1_motor_related):
-  brain structure & size            148 /    9 /    4
-  cellular composition               84 /   28 /    3
+  brain structure & size            160 /    9 /    4
+  cellular composition               89 /   28 /    3
   cortical & cerebellar folding       9 /    1 /    0
   body size                           2 /    1 /    0
-  metabolism                         64 /    2 /    2
-  life history                       17 /   15 /    0
-  diet & ecology                     22 /   17 /    0
-  behaviour & cognition              20 /    1 /    9
+  metabolism                         71 /    2 /    2
+  life history                       22 /   18 /    0
+  diet & ecology                     29 /   17 /    0
+  behaviour & cognition              30 /    1 /    9
   sensorimotor & motor pathways      19 /    0 /   19
   hand & limb morphology             17 /    0 /   17
   sleep & torpor                      5 /    0 /    0
   cellular morphology                87 /    0 /   27
-  sensory performance                11 /    1 /    0
+  sensory performance                20 /    1 /    0

@@ -1,7 +1,7 @@
 # EvoM1 species-trait tables for the Cytosplore M1 viewer (DRAFT)
 
 
-Built 2026-10-15 from Evo-M1-Trait-Data commit `731f7ac (from .git/HEAD; git command unavailable)` by `__Cytosplore_export/build_cytosplore_traits.R`.
+Built 2026-10-19 from Evo-M1-Trait-Data commit `a364c1e (from .git/HEAD; git command unavailable)` by `__Cytosplore_export/build_cytosplore_traits.R`.
 Re-run that script to regenerate everything here; do not edit these CSVs by hand.
 
 ## What this is
@@ -13,11 +13,11 @@ Comparative species traits for the 25-species `EvoM1` cohort (`_keys/species_coh
 | file | one row per | use |
 |---|---|---|
 | `EvoM1_species.csv` | species (25) | species list, taxonomy, which data labels were pooled (match level: species), per-domain counts |
-| `EvoM1_traits_wide.csv` | species x variable (582) | **recommended viewer input**: species x trait matrix, one value per cell |
-| `EvoM1_traits_wide_core.csv` | species x variable (19) | same, only traits held for >= 20 of 25 species (`in_core`) |
-| `EvoM1_variable_dictionary.csv` | variable (582) | column metadata for the wide tables: domain, structure, measure, unit, definition, coverage |
-| `EvoM1_traits_cells.csv` | species x variable cell (3642) | how each wide cell was made: n values, aggregation, min/max, sources |
-| `EvoM1_traits_long.csv` | value (3782) | full provenance: every source value behind every cell |
+| `EvoM1_traits_wide.csv` | species x variable (637) | **recommended viewer input**: species x trait matrix, one value per cell |
+| `EvoM1_traits_wide_core.csv` | species x variable (23) | same, only traits held for >= 20 of 25 species (`in_core`) |
+| `EvoM1_variable_dictionary.csv` | variable (637) | column metadata for the wide tables: domain, structure, measure, unit, definition, coverage |
+| `EvoM1_traits_cells.csv` | species x variable cell (4129) | how each wide cell was made: n values, aggregation, min/max, sources |
+| `EvoM1_traits_long.csv` | value (4335) | full provenance: every source value behind every cell |
 | `EvoM1_domain_coverage.csv` | species | n distinct variables per domain |
 | `BUILD_INFO.txt` | - | build stamp and counts |
 
@@ -51,49 +51,49 @@ Source audit (run `python3 __Cytosplore_export/audit_cytosplore_variables.py Evo
 
 | species_sci | common_name | Order | n_variables | data_labels |
 |---|---|---|---|---|
-| Aotus nancymaae | Owl monkey | Primates | 61 | Aotus nancymaae |
-| Callithrix jacchus | Common marmoset | Primates | 242 | Callithrix jacchus |
-| Canis latrans | Coyote | Carnivora | 74 | Canis latrans |
+| Aotus nancymaae | Owl monkey | Primates | 69 | Aotus nancymaae |
+| Callithrix jacchus | Common marmoset | Primates | 270 | Callithrix jacchus |
+| Canis latrans | Coyote | Carnivora | 85 | Canis latrans |
 | Chlorocebus sabaeus | African green monkey | Primates | 30 | Chlorocebus sabaeus |
-| Dasypus novemcinctus | Armadillo | Cingulata | 88 | Dasypus novemcinctus |
-| Felis catus | Cat | Carnivora | 172 | Felis catus |
-| Gorilla gorilla gorilla | Western lowland gorilla | Primates | 250 | Gorilla gorilla gorilla; Gorilla gorilla; Gorilla sp. |
-| Heterocephalus glaber | Naked mole rat | Rodentia | 100 | Heterocephalus glaber |
-| Homo sapiens | Human | Primates | 437 | Homo sapiens |
-| Macaca mulatta | Rhesus macaque | Primates | 296 | Macaca mulatta |
-| Macaca nemestrina | Pig-tailed macaque | Primates | 61 | Macaca nemestrina |
-| Microcebus murinus | Mouse lemur | Primates | 217 | Microcebus murinus |
-| Monodelphis domestica | Opossum | Didelphimorphia | 39 | Monodelphis domestica |
-| Mus musculus | Mouse | Rodentia | 147 | Mus musculus |
-| Mustela putorius furo | Ferret | Carnivora | 96 | Mustela putorius furo |
-| Oryctolagus cuniculus | Rabbit | Lagomorpha | 144 | Oryctolagus cuniculus |
-| Otolemur garnettii | Galago | Primates | 136 | Otolemur garnettii |
-| Pan troglodytes | Chimpanzee | Primates | 326 | Pan troglodytes |
-| Papio anubis | Baboon | Primates | 187 | Papio anubis |
-| Rattus norvegicus | Rat | Rodentia | 203 | Rattus norvegicus |
-| Saimiri boliviensis boliviensis | Bolivian squirrel monkey | Primates | 75 | Saimiri boliviensis boliviensis; Saimiri boliviensis |
-| Sapajus apella | Capuchin | Primates | 84 | Sapajus apella |
+| Dasypus novemcinctus | Armadillo | Cingulata | 98 | Dasypus novemcinctus |
+| Felis catus | Cat | Carnivora | 186 | Felis catus |
+| Gorilla gorilla gorilla | Western lowland gorilla | Primates | 294 | Gorilla gorilla gorilla; Gorilla gorilla; Gorilla sp. |
+| Heterocephalus glaber | Naked mole rat | Rodentia | 115 | Heterocephalus glaber |
+| Homo sapiens | Human | Primates | 475 | Homo sapiens |
+| Macaca mulatta | Rhesus macaque | Primates | 322 | Macaca mulatta |
+| Macaca nemestrina | Pig-tailed macaque | Primates | 80 | Macaca nemestrina |
+| Microcebus murinus | Mouse lemur | Primates | 243 | Microcebus murinus |
+| Monodelphis domestica | Opossum | Didelphimorphia | 55 | Monodelphis domestica |
+| Mus musculus | Mouse | Rodentia | 170 | Mus musculus |
+| Mustela putorius furo | Ferret | Carnivora | 97 | Mustela putorius furo |
+| Oryctolagus cuniculus | Rabbit | Lagomorpha | 165 | Oryctolagus cuniculus |
+| Otolemur garnettii | Galago | Primates | 150 | Otolemur garnettii |
+| Pan troglodytes | Chimpanzee | Primates | 371 | Pan troglodytes |
+| Papio anubis | Baboon | Primates | 210 | Papio anubis |
+| Rattus norvegicus | Rat | Rodentia | 228 | Rattus norvegicus |
+| Saimiri boliviensis boliviensis | Bolivian squirrel monkey | Primates | 83 | Saimiri boliviensis boliviensis; Saimiri boliviensis |
+| Sapajus apella | Capuchin | Primates | 150 | Sapajus apella |
 | Sus scrofa | Pig | Artiodactyla | 107 | Sus scrofa domesticus |
-| Tupaia belangeri | Treeshrew | Scandentia | 68 | Tupaia belangeri |
-| Urocitellus parryii | Arctic ground squirrel | NA | 22 | Urocitellus parryii |
+| Tupaia belangeri | Treeshrew | Scandentia | 69 | Tupaia belangeri |
+| Urocitellus parryii | Arctic ground squirrel | NA | 29 | Urocitellus parryii |
 
 ## Variables per domain (all / core / M1-motor flagged)
 
 | domain | variables | core | m1_motor |
 |---|---|---|---|
-| brain structure & size | 175 | 1 | 5 |
-| cellular composition | 119 | 0 | 3 |
+| brain structure & size | 187 | 2 | 5 |
+| cellular composition | 124 | 0 | 3 |
 | cortical & cerebellar folding | 9 | 0 | 0 |
 | body size | 2 | 1 | 0 |
-| metabolism | 64 | 1 | 2 |
-| life history | 18 | 1 | 0 |
-| diet & ecology | 22 | 15 | 0 |
-| behaviour & cognition | 20 | 0 | 9 |
+| metabolism | 71 | 1 | 2 |
+| life history | 23 | 4 | 0 |
+| diet & ecology | 29 | 15 | 0 |
+| behaviour & cognition | 30 | 0 | 9 |
 | sensorimotor & motor pathways | 23 | 0 | 23 |
 | hand & limb morphology | 17 | 0 | 17 |
 | sleep & torpor | 5 | 0 | 0 |
 | cellular morphology | 97 | 0 | 32 |
-| sensory performance | 11 | 0 | 0 |
+| sensory performance | 20 | 0 | 0 |
 
 ## Known caveats carried over from the compilation
 

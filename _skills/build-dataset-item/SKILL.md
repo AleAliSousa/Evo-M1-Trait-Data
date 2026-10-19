@@ -63,9 +63,21 @@ build_dataset_item(item_dir, item_name, dry_run = FALSE)        # 3. build + val
    species name, write the analysis CSV, look up `Item encoded` in
    `__ReadMe.xlsx` by `Item name` and write the public TSV to
    `__Public/comparative-data/`.
+   **Table check, where the table allows it** (rare): if the table prints its
+   own totals (a sum row, a 100.00 percentage total) or another relation that
+   can be recomputed from its cells, the same reader checks it and leaves the
+   results in a `table_checks` data frame. Values are never changed to make a
+   check pass; mismatches are warned and kept as printed. Note the check and
+   its result in the item's ReadMe (build HOWTO §7a). Keep printed totals in
+   the snapshot so the check is possible.
 4. **RA visual and script check** — compare the snapshot side-by-side with the
 source; confirm that headings, row order, column order, values, units, and meaningful
-notes remain easy to match. Inspect the analysis CSV/TSV for accidental empty
+notes remain easy to match. Record who checked it, and when, in the last column of
+`__ReadMe.xlsx` (`Human visual check of snapshot`, e.g. `14102026_AAdS`). A
+born-digital source that the authors already tabulated (journal or repository
+CSV/XLSX) has no PDF-to-snapshot transcription to inspect: record
+`Not applicable: tabulated and digital already` there instead — never a date and
+initials. Inspect the analysis CSV/TSV for accidental empty
 columns or extraction artefacts, and run the R script from a clean session. Capture
 essential untabulated information in `reference_tables/`, `_keys/`, or a separately
 named constructed snapshot rather than silently adding it to the published-table
@@ -74,6 +86,9 @@ snapshot.
    `validate_dataset_item()` automatically and checks all 7 invariants
    (csv / tsv / readme / definitions / frozen_source / registry_row /
    tsv_name_match, with a trailing-underscore guard on the last one).
+   If the reader reported `table_checks`, the builder attaches them as
+   `attr(report, "table_checks")` and prints any that did not pass; they do
+   not change the invariant statuses. No `table_checks` means not assessed.
 6. **Register** — emit `<Item>_registry_row.xlsx` in the paper folder, built
    against the live Sheet1 header row of `__ReadMe.xlsx` (currently A–AN).
    Fill ONLY column A (citation), C (only if overriding the DOI), D

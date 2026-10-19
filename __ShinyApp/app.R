@@ -135,6 +135,11 @@ GH <- list(
   gyrification = "__merging_gyrification/gyrification_long.csv",
   sensory    = "__merging_sensory/sensory_long.csv",
   weights    = "__merging_weights/weights_long.csv",
+  # 2026-10-15: mapping-driven merge of built public tables no other merge
+  # consumed (PanTHERIA life history/ecology, deSousa 2022 acuity compilation,
+  # Boyer & Harrington 2019 blood flow, Navarrete 2016 innovation, ...). Same
+  # schema as the std_merge() merges; see __merging_supplementary/README__merging.md.
+  supplementary = "__merging_supplementary/supplementary_long.csv",
   manifest   = "__ShinyApp/data/source_manifest.csv",
   cohorts    = "_keys/species_cohorts.csv"
 )
@@ -445,7 +450,13 @@ load_compiled <- function() {
     std_sensory(GH$sensory, file.path(data_dir, "sensory_long.csv"),
             "Sensory performance"),
     std_weights(GH$weights, file.path(data_dir, "weights_long.csv"),
-            "Brain-part weights")
+            "Brain-part weights"),
+    # Five PanTHERIA measures reuse body_ecology labels on purpose (Gestation,
+    # Weaning_age, Litter_size, Maximum_longevity, BMR_wholeanimal: identical
+    # quantities, label_policy = shared in supplementary_sources.csv); the app
+    # pools them like any second source. Everything else is a new label.
+    std_merge(GH$supplementary, file.path(data_dir, "supplementary_long.csv"),
+              "Supplementary sources")
   )
 
   # unify species labels everywhere so synonyms line up

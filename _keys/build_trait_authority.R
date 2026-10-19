@@ -86,7 +86,9 @@ DS <- c(
   "Gyrification (GI)"        = "__merging_gyrification",
   "Sensory performance"      = "__merging_sensory",
   ## added 2026-09-27: the app now serves __merging_cell_morphology (app.R std_cell_morphology)
-  "Cell type, size & morphology" = "__merging_cell_morphology"
+  "Cell type, size & morphology" = "__merging_cell_morphology",
+  ## added 2026-10-15: app.R std_merge(GH$supplementary)
+  "Supplementary sources"    = "__merging_supplementary"
 )
 seen <- unique(compiled$Dataset)
 unmapped <- setdiff(seen, names(DS))

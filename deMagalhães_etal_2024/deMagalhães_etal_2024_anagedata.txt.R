@@ -47,6 +47,11 @@ raw <- read.delim(frozen, sep = "\t", check.names = FALSE, stringsAsFactors = FA
                    colClasses = "character", encoding = "UTF-8")
 
 # ---- 2. Clean column names -> R-friendly, unit kept in the name ----
+## 2026-10-20: "Inter-litter/Interbirth interval" was mis-suffixed _yrs in the 2026-09-25 build.
+## AnAge's header carries no unit but the field is documented in days and the values are
+## days (Homo sapiens 639, Mus musculus 30, Sus scrofa 230). Renamed to _days here; values
+## untouched, frozen source untouched (repo naming slip, fixed in the build per the errata
+## convention's rule that transcription errors are corrected in the build .R).
 name_map <- c(
   "HAGRID" = "HAGRID", "Kingdom" = "Kingdom", "Phylum" = "Phylum", "Class" = "Class",
   "Order" = "Order", "Family" = "Family", "Genus" = "Genus", "Species" = "Species",
@@ -57,7 +62,7 @@ name_map <- c(
   "Weaning (days)" = "Weaning_days",
   "Litter/Clutch size" = "Litter_Clutch_size",
   "Litters/Clutches per year" = "Litters_Clutches_per_year",
-  "Inter-litter/Interbirth interval" = "Inter_litter_Interbirth_interval_yrs",
+  "Inter-litter/Interbirth interval" = "Inter_litter_Interbirth_interval_days",   # days, not years (see note above)
   "Birth weight (g)" = "Birth_weight_g",
   "Weaning weight (g)" = "Weaning_weight_g",
   "Adult weight (g)" = "Adult_weight_g",
@@ -80,7 +85,7 @@ names(final.dataframe) <- unname(name_map[names(raw)])
 # ---- 3. Numeric columns: strip thousands-separator commas, coerce ----
 num_cols <- c("Female_maturity_days","Male_maturity_days","Gestation_Incubation_days",
               "Weaning_days","Litter_Clutch_size","Litters_Clutches_per_year",
-              "Inter_litter_Interbirth_interval_yrs","Birth_weight_g","Weaning_weight_g",
+              "Inter_litter_Interbirth_interval_days","Birth_weight_g","Weaning_weight_g",
               "Adult_weight_g","Growth_rate_per_day","Maximum_longevity_yrs",
               "IMR_per_yr","MRDT_yrs","Metabolic_rate_W","Body_mass_g","Temperature_K")
 

@@ -14,7 +14,7 @@ Gestation_Incubation_days,Gestation (mammals) or incubation (birds/reptiles) per
 Weaning_days,Age at weaning,Life history,Time.days,,secondary,all taxa,deMagalhães_etal_2024_anagedata.txt,compiled,days
 Litter_Clutch_size,Number of offspring per litter/clutch,Life history,count,,secondary,all taxa,deMagalhães_etal_2024_anagedata.txt,compiled,count
 Litters_Clutches_per_year,Number of litters/clutches produced per year,Life history,rate.per_year,,secondary,all taxa,deMagalhães_etal_2024_anagedata.txt,compiled,per year
-Inter_litter_Interbirth_interval_yrs,Interval between litters/births,Life history,Time.yrs,,secondary,all taxa,deMagalhães_etal_2024_anagedata.txt,compiled,years
+Inter_litter_Interbirth_interval_days,Interval between litters/births,Life history,Time.days,,secondary,all taxa,deMagalhães_etal_2024_anagedata.txt,"compiled; AnAge header carries no unit but the field is in days (Homo sapiens 639, Mus musculus 30, Sus scrofa 230); renamed from Inter_litter_Interbirth_interval_yrs on 2026-10-20 (naming slip in the 2026-09-25 build, values unchanged)",days
 Birth_weight_g,Weight at birth/hatching,Body,Mass.g,,secondary,all taxa,deMagalhães_etal_2024_anagedata.txt,compiled,g
 Weaning_weight_g,Weight at weaning,Body,Mass.g,,secondary,all taxa,deMagalhães_etal_2024_anagedata.txt,compiled,g
 Adult_weight_g,Adult body weight,Body,Mass.g,,secondary,all taxa,deMagalhães_etal_2024_anagedata.txt,compiled; distinct from Body_mass_g (metabolic-rate pairing column below),g

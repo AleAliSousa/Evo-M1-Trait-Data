@@ -22,7 +22,7 @@ built to convention:
   columns) is machine-readable, so it **is** the frozen source — kept verbatim, never edited (see
   `__HOWTO_build_a_dataset_file.md` §0a invariant 1).
 - **Reformat:** `deMagalhães_etal_2024_anagedata.txt.R` reads the source file directly, cleans column
-  names to R-friendly form (units kept in the name, e.g. `Maximum_longevity_yrs`), strips
+  names to R-friendly form (units kept in the name, e.g. `Maximum_longevity_yrs`, `Inter_litter_Interbirth_interval_days`), strips
   thousands-separator commas, and coerces the 17 numeric columns; no species harmonisation was
   applied (the source already provides its own canonical Genus/Species split — there is no printed
   common-name-only column that would need a project `species_key.csv` lookup). No rows were dropped;
@@ -69,9 +69,9 @@ into the existing row, then run `_tools/file_list.R` and re-verify `Public TSV m
 
 ## Downstream use
 General-purpose life-history/longevity covariate table (all taxa); the Mammalia subset (1,349 rows)
-is the most directly relevant slice for this project's comparative mammalian work. Not yet added to
-any `__merging_*` folder — no existing merge folder currently covers life-history/longevity as a
-measure class.
+is the most directly relevant slice for this project's comparative mammalian work. Consumed by
+`__merging_supplementary` (life-history columns, mapped in `supplementary_sources.csv`; added 2026-10-20) and by
+`__merging_body_ecology` (`Body_mass_g` only).
 
 ## Extraction / build record
 Read, cleaned, and built by Microsoft Copilot (AI assistant) on 2026-09-25, working from the
@@ -88,3 +88,20 @@ transform for delivery now, and should be spot-checked by re-running the R scrip
   tokens remained in numeric columns after cleaning.
 - No independent curated copy exists to audit against (first-party compilation, digital-native
   source) — no `comparison/` step applies (§7).
+
+## Changelog
+- **2026-10-20 — `Inter_litter_Interbirth_interval_yrs` renamed to `Inter_litter_Interbirth_interval_days`.**
+  AnAge's header (`Inter-litter/Interbirth interval`) carries no unit, but the field is documented in
+  days and the values are days (Homo sapiens 639, Mus musculus 30, Sus scrofa 230). The `_yrs` suffix
+  was a naming slip in the 2026-09-25 build. Fixed in the build script only (frozen `anage_data.txt`
+  untouched); the rebuilt CSV and public TSV are byte-identical to the previous ones apart from that
+  header cell. Definitions row updated (`Time.days`, unit `days`). Not recorded as an erratum: no value
+  differed from the source, only our column label (the errata convention covers value discrepancies).
+  Downstream: the `__merging_supplementary/supplementary_sources.csv` row for this column now names
+  `_days`; it was already reading the values as days, so the regenerated `supplementary_long.csv` is
+  byte-identical. `__merging_body_ecology` reads only `Body_mass_g` and is unaffected. Still carrying
+  the old name until their generators are re-run: `_keys/variable_catalog.csv`
+  (`_keys/build_variable_catalog.R`) and `__ShinyApp/data/source_manifest.csv` (`__ShinyApp/build_data.R`).
+- **2026-10-20 — build script re-run end-to-end with `Rscript`** (including the `__ReadMe.xlsx` lookup
+  and `validate_dataset_item()`): every check PASS (`errata_file_valid` SKIP, no errata file);
+  4,645 rows → CSV + public TSV.

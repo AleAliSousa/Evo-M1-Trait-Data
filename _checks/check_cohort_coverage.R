@@ -105,6 +105,21 @@ for (ch in E$cohort_levels) {
       if (nrow(any_d)) 100 * sum(any_d$Species_with_data) / (n * nrow(any_d)) else 0))
 }
 
+# ---- Wild/domestic pooling modes (report only) ------------------------------
+# The switch lives in app.R (cohort_species(ch, pooling =), from
+# _keys/species_pooling.csv and _keys/population_status.csv). Everything above,
+# and the pass/fail below, runs in the default `off`. The other two modes are
+# reported here so the gain sits next to the default instead of being
+# rediscovered. See _keys/README_species_pooling.md.
+if (exists("POOLING_MODES", envir = E, inherits = FALSE)) {
+  cat("\nwild/domestic pooling modes (complete traits / traits at >= n-1 species):\n")
+  for (ch in E$cohort_levels) for (m in E$POOLING_MODES) {
+    tt <- E$cohort_trait_table(ch, pooling = m); n <- nrow(E$cohort_species(ch))
+    cat(sprintf("  %-6s %-18s complete=%4d   >=%2d/%2d=%4d\n", ch, m,
+                sum(tt$Species_with_data == n), n - 1L, n, sum(tt$Species_with_data >= n - 1L)))
+  }
+}
+
 # ---- Concept-boundary guard -------------------------------------------------
 # A pooled lookup_name may adopt a label that the taxon-concept registry treats
 # as a NON-DECOMPOSABLE pooled concept -- one whose believed composition spans

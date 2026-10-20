@@ -50,7 +50,12 @@ COHORT = sys.argv[1] if len(sys.argv) > 1 and sys.argv[1] else "EvoM1"
 LEVEL = (sys.argv[2] if len(sys.argv) > 2 and sys.argv[2] else "species").lower()
 if LEVEL not in ("species", "genus"):
     sys.exit("match level must be 'species' or 'genus'")
+POOLING = (sys.argv[3] if len(sys.argv) > 3 and sys.argv[3] else "off").lower()
+if POOLING not in ("off", "domestic_evidence", "all"):
+    sys.exit("pooling mode must be 'off', 'domestic_evidence' or 'all'")
 PREFIX = f"{COHORT}_genus" if LEVEL == "genus" else COHORT
+if POOLING != "off":
+    PREFIX += f"_pooled_{POOLING}"     # output/<cohort>[_genus]_pooled_<mode>/, as the builder writes it
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(HERE)
 OUT = os.path.join(HERE, "output", PREFIX)

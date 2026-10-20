@@ -1,13 +1,14 @@
-built:           2026-10-20 06:59:23 PDT
-repo commit:     cb75ea9 (from .git/HEAD; git command unavailable)
+built:           2026-10-20 11:44:37 PDT
+repo commit:     unknown (not a git checkout)
 cohort:          EvoM1 (25 species)
 match level:     species
 core threshold:  >= 80% of cohort (>= 20 species)
+pooling mode:    off
 species without any data: none
-long rows (all values):   4437
-  of which measurement:   4385
-species x variable cells: 4179
-variables in wide:        638   (matrix fill 26.2%)
+long rows (all values):   4448
+  of which measurement:   4396
+species x variable cells: 4187
+variables in wide:        638   (matrix fill 26.3%)
 variables in wide_core:   30   (matrix fill 91.7%)
 cells unresolved categorical: 0
 cells with numeric spread > 50%: 10

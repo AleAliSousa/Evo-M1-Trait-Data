@@ -141,7 +141,10 @@ GH <- list(
   # schema as the std_merge() merges; see __merging_supplementary/README__merging.md.
   supplementary = "__merging_supplementary/supplementary_long.csv",
   manifest   = "__ShinyApp/data/source_manifest.csv",
-  cohorts    = "_keys/species_cohorts.csv"
+  cohorts    = "_keys/species_cohorts.csv",
+  # read-time wild/domestic pooling keys (no merge reads them; see _keys/README_species_pooling.md)
+  pooling    = "_keys/species_pooling.csv",
+  population = "_keys/population_status.csv"
 )
 SRC_DIR <- "__Public/comparative-data/"  # source tables (fetched on demand)
 
@@ -223,6 +226,7 @@ load_compiled <- function() {
       Species = d$Species, Dataset = dataset, Variable = d$Variable,
       Value = as.character(d$Value), Value_num = suppressWarnings(as.numeric(d$Value)),
       Source = d[[source_col]],
+      Teams = as.character(d[[source_col]]),
       N_sources = if (!is.null(n_col)) suppressWarnings(as.integer(d[[n_col]])) else NA_integer_,
       Variable_raw = d$Variable, Unit = NA_character_, Unit_raw = NA_character_,
       stringsAsFactors = FALSE)
@@ -235,6 +239,7 @@ load_compiled <- function() {
       Species = d$Species, Dataset = dataset, Variable = lab,
       Value = as.character(d$Value), Value_num = suppressWarnings(as.numeric(d$Value)),
       Source = paste0("EvoM1 ", tolower(d$Measure), " merge (", d$n_sources, " sources)"),
+      Teams = as.character(d$Teams),
       N_sources = suppressWarnings(as.integer(d$n_sources)),
       Variable_raw = lab, Unit = d$Units, Unit_raw = d$Units,
       stringsAsFactors = FALSE)
@@ -253,6 +258,7 @@ load_compiled <- function() {
       Value = as.character(d$Value), Value_num = suppressWarnings(as.numeric(d$Value)),
       Source = paste0("EvoM1 cerebral metabolic rate merge (", d$n_studies,
                       " primary studies; ", d$Compilations, ")"),
+      Teams = as.character(d$Compilations),
       N_sources = suppressWarnings(as.integer(d$n_studies)),
       Variable_raw = lab, Unit = d$Units, Unit_raw = d$Units,
       stringsAsFactors = FALSE)
@@ -261,8 +267,10 @@ load_compiled <- function() {
   # ---- 2026-09-22: seven merges built but never wired into the app ----------
   # Each has a schema that does not match std()/std_merge()/std_cmr(), so each
   # gets its own small loader, following the same output-shape contract
-  # (Species, Dataset, Variable, Value, Value_num, Source, N_sources,
-  # Variable_raw, Unit, Unit_raw).
+  # (Species, Dataset, Variable, Value, Value_num, Source, Teams, N_sources,
+  # Variable_raw, Unit, Unit_raw). `Teams` is the merge row's provenance tokens
+  # (its Teams / Sources / source column, ";"-separated), kept verbatim so the
+  # read-time pooling layer below can look each token up in population_status.csv.
 
   # Cytoarchitectonic grey-level index (GLI): Species x area x cortical stratum.
   std_gli <- function(gh_rel, local, dataset) {
@@ -272,6 +280,7 @@ load_compiled <- function() {
       Species = d$Species, Dataset = dataset, Variable = lab,
       Value = as.character(d$GLI_pct), Value_num = suppressWarnings(as.numeric(d$GLI_pct)),
       Source = d$source,
+      Teams = as.character(d$source),
       N_sources = suppressWarnings(as.integer(d$n_specimens)),
       Variable_raw = lab, Unit = "%", Unit_raw = "%",
       stringsAsFactors = FALSE)
@@ -288,6 +297,7 @@ load_compiled <- function() {
       Species = d$Species, Dataset = dataset, Variable = lab,
       Value = as.character(d$value), Value_num = suppressWarnings(as.numeric(d$value)),
       Source = d$source,
+      Teams = as.character(d$source),
       N_sources = NA_integer_,
       Variable_raw = lab, Unit = NA_character_, Unit_raw = NA_character_,
       stringsAsFactors = FALSE)
@@ -306,6 +316,7 @@ load_compiled <- function() {
       Species = d$Species, Dataset = dataset, Variable = lab,
       Value = as.character(d$value), Value_num = suppressWarnings(as.numeric(d$value)),
       Source = d$source,
+      Teams = as.character(d$source),
       N_sources = NA_integer_,
       Variable_raw = lab, Unit = d$unit, Unit_raw = d$unit,
       stringsAsFactors = FALSE)
@@ -337,6 +348,7 @@ load_compiled <- function() {
       Species = d$Species, Dataset = dataset, Variable = lab,
       Value = val, Value_num = suppressWarnings(as.numeric(d$value)),
       Source = d$source,
+      Teams = as.character(d$source),
       N_sources = NA_integer_,
       Variable_raw = lab, Unit = d$unit, Unit_raw = d$unit,
       stringsAsFactors = FALSE)
@@ -353,13 +365,13 @@ load_compiled <- function() {
       data.frame(
         Species = d$Species, Dataset = dataset, Variable = lab_bgu,
         Value = as.character(d$Value), Value_num = suppressWarnings(as.numeric(d$Value)),
-        Source = d$Source, N_sources = NA_integer_,
+        Source = d$Source, Teams = as.character(d$Source), N_sources = NA_integer_,
         Variable_raw = lab_bgu, Unit = d$Units, Unit_raw = d$Units,
         stringsAsFactors = FALSE),
       data.frame(
         Species = d$Species, Dataset = dataset, Variable = lab_ratio,
         Value = as.character(d$Ratio_MH), Value_num = suppressWarnings(as.numeric(d$Ratio_MH)),
-        Source = d$Source, N_sources = NA_integer_,
+        Source = d$Source, Teams = as.character(d$Source), N_sources = NA_integer_,
         Variable_raw = lab_ratio, Unit = "ratio to modern human", Unit_raw = "ratio",
         stringsAsFactors = FALSE)
     )
@@ -374,6 +386,7 @@ load_compiled <- function() {
       Species = d$Species, Dataset = dataset, Variable = "GI",
       Value = as.character(d$GI), Value_num = suppressWarnings(as.numeric(d$GI)),
       Source = d$source,
+      Teams = as.character(d$source),
       N_sources = NA_integer_,
       Variable_raw = "GI", Unit = "ratio", Unit_raw = "ratio",
       stringsAsFactors = FALSE)
@@ -393,6 +406,7 @@ load_compiled <- function() {
       Value = as.character(d$Value), Value_num = suppressWarnings(as.numeric(d$Value)),
       Source = ifelse(!is.na(d$Sources) & nzchar(d$Sources), d$Sources,
                       paste0("EvoM1 sensory merge (", d$n_studies, " studies)")),
+      Teams = as.character(d$Sources),
       N_sources = suppressWarnings(as.integer(d$n_studies)),
       Variable_raw = lab, Unit = d$Units, Unit_raw = d$Units,
       stringsAsFactors = FALSE)
@@ -408,6 +422,7 @@ load_compiled <- function() {
       Species = d$Species, Dataset = dataset, Variable = lab,
       Value = as.character(d$mass_g), Value_num = suppressWarnings(as.numeric(d$mass_g)),
       Source = ifelse(!is.na(d$citation) & nzchar(d$citation), d$citation, d$source),
+      Teams = as.character(d$source),
       N_sources = NA_integer_,
       Variable_raw = lab, Unit = "g", Unit_raw = d$unit_original,
       stringsAsFactors = FALSE)
@@ -676,6 +691,91 @@ cov_pairs$Domain <- unname(var_dom[cov_pairs$Variable])
 # n distinct sources behind each species x variable cell, for the detail view
 cov_n <- table(paste(compiled$Species, compiled$Variable, sep = "\r"))
 
+# ---- Wild/domestic pooling (read-time) ---------------------------------------
+# Two keys, neither of which any merge reads:
+#   _keys/species_pooling.csv     which compiled labels are the wild and domestic
+#                                 forms of one animal (axis = domestication)
+#   _keys/population_status.csv   per (source token, label): did that source measure
+#                                 wild, domestic or mixed animals, with the evidence
+# cohort_species(ch, pooling =) applies them in three modes. `off` (the default
+# everywhere) reproduces the cohort exactly as species_cohorts.csv states it.
+# `all` lets a member that is a domestic form adopt its wild-form label outright,
+# as a lookup_name entry would. `domestic_evidence` adopts only those wild-label
+# rows whose sources the population key marks domestic or mixed. The merges and
+# species_cohorts.csv are untouched by every mode. See _keys/README_species_pooling.md.
+POOLING_MODES <- c("off", "domestic_evidence", "all")
+pooling_key <- tryCatch(read_csv_gh(GH$pooling, file.path(data_dir, "species_pooling.csv")),
+                        error = function(e) NULL)
+population_key <- tryCatch(read_csv_gh(GH$population, file.path(data_dir, "population_status.csv")),
+                           error = function(e) NULL)
+pk <- if (!is.null(pooling_key) && nrow(pooling_key)) {
+  p <- pooling_key[trimws(as.character(pooling_key$axis)) == "domestication", , drop = FALSE]
+  for (cl in c("pool_id", "member", "relation")) p[[cl]] <- trimws(as.character(p[[cl]]))
+  p$label <- unalias(p$member)                       # the compiled spelling of the member
+  gone <- p$label[!p$label %in% compiled$Species]
+  if (length(gone))
+    message("species_pooling.csv names label(s) with no compiled data: ", paste(gone, collapse = "; "))
+  n_dom <- tapply(p$relation == "domestic_form", p$pool_id, sum)
+  if (any(n_dom != 1L))
+    message("species_pooling.csv: each pool needs exactly one domestic_form row; offending: ",
+            paste(names(n_dom)[n_dom != 1L], collapse = ", "))
+  p
+} else NULL
+wild_labels <- if (is.null(pk)) character(0) else unique(pk$label[pk$relation == "wild_form"])
+# wild-form partner label(s) of a compiled label that is a domestic form; character(0) otherwise
+pool_wild_of <- function(label) {
+  if (is.null(pk)) return(character(0))
+  ids <- pk$pool_id[pk$relation == "domestic_form" & pk$label == label]
+  if (!length(ids)) return(character(0))
+  unique(pk$label[pk$relation == "wild_form" & pk$pool_id %in% ids])
+}
+# Row-level population verdict for compiled rows under a wild-form label. A row is
+# one merge cell and may pool several source tokens (compiled$Teams, ";"-separated).
+# Each token is looked up by (label, token). The verdict is domestic if every token
+# is domestic, wild if every token is wild, mixed if any token is domestic or mixed,
+# otherwise unknown -- a token missing from the key counts as unknown.
+row_population <- function(species, teams) {
+  if (is.null(population_key) || !nrow(population_key)) return(rep("unknown", length(species)))
+  pop <- setNames(trimws(as.character(population_key$population)),
+                  paste(unalias(trimws(as.character(population_key$accepted_name))),
+                        trimws(as.character(population_key$source_table)), sep = "\r"))
+  vapply(seq_along(species), function(i) {
+    tk <- if (is.na(teams[i])) character(0) else trimws(strsplit(teams[i], ";", fixed = TRUE)[[1]])
+    tk <- tk[nzchar(tk)]
+    if (!length(tk)) return("unknown")
+    p <- unname(pop[paste(species[i], tk, sep = "\r")]); p[is.na(p)] <- "unknown"
+    if (all(p == "domestic")) "domestic" else if (all(p == "wild")) "wild"
+    else if (any(p %in% c("domestic", "mixed"))) "mixed" else "unknown"
+  }, character(1))
+}
+compiled$population_verdict <- NA_character_
+is_wild_row <- compiled$Species %in% wild_labels
+if (any(is_wild_row))
+  compiled$population_verdict[is_wild_row] <-
+    row_population(compiled$Species[is_wild_row], compiled$Teams[is_wild_row])
+# Which compiled rows a cohort key `k` (from cohort_species()) may count. Only
+# domestic_evidence filters anything: rows under a wild label that a member ADOPTED
+# count only when their verdict is domestic or mixed. A wild label that is some
+# member's own name is never filtered.
+pool_rows_ok <- function(k) {
+  ok <- rep(TRUE, nrow(compiled))
+  mode <- if ("pooling" %in% names(k) && nrow(k)) k$pooling[1] else "off"
+  if (mode != "domestic_evidence") return(ok)
+  adopted <- setdiff(unique(unlist(k$pooled_labels, use.names = FALSE)),
+                     unique(unlist(k$own_labels, use.names = FALSE)))
+  ok[compiled$Species %in% adopted & !compiled$population_verdict %in% c("domestic", "mixed")] <- FALSE
+  ok
+}
+# cov_pairs as seen through `k`: identical to cov_pairs unless k filters rows
+cov_pairs_for <- function(k) {
+  ok <- pool_rows_ok(k)
+  if (all(ok)) return(cov_pairs)
+  p <- unique(compiled[ok & compiled$Variable %in% meas_labels & nzchar(trimws(compiled$Value)),
+                       c("Species", "Variable")])
+  p$Domain <- unname(var_dom[p$Variable])
+  p
+}
+
 cohort_levels <- if (!is.null(cohorts) && nrow(cohorts))
   unique(cohorts$cohort) else character(0)
 cohort_label_of <- if (length(cohort_levels))
@@ -742,13 +842,22 @@ cohort_data_labels <- function(row_lookup, row_sci) {
 }
 
 # One cohort's species, in a stable order, with the labels its data live under
-cohort_species <- function(ch) {
+cohort_species <- function(ch, pooling = "off") {
+  pooling <- match.arg(pooling, POOLING_MODES)
   k <- cohorts[cohorts$cohort == ch, , drop = FALSE]
   k <- k[order(k$species_sci), , drop = FALSE]
-  k$labels <- lapply(seq_len(nrow(k)),
-                     function(i) cohort_data_labels(k$lookup_name[i], k$species_sci[i]))
+  k$own_labels <- lapply(seq_len(nrow(k)),
+                         function(i) cohort_data_labels(k$lookup_name[i], k$species_sci[i]))
+  # Read-time wild/domestic pooling (species_pooling.csv): a member whose label is a
+  # domestic form also adopts its wild-form partner label(s). `off` adds nothing, so
+  # labels == own_labels and every number below is what species_cohorts.csv states.
+  k$pooled_labels <- lapply(k$own_labels, function(l)
+    if (pooling == "off") character(0) else setdiff(unique(unlist(lapply(l, pool_wild_of))), l))
+  k$labels <- Map(function(a, b) unique(c(a, b)), k$own_labels, k$pooled_labels)
+  k$pooling <- rep(pooling, nrow(k))
   k$label_str <- vapply(k$labels, paste, character(1), collapse = "; ")
-  k$in_data <- vapply(k$labels, function(l) any(l %in% cov_pairs$Species), logical(1))
+  cp <- cov_pairs_for(k)
+  k$in_data <- vapply(k$labels, function(l) any(l %in% cp$Species), logical(1))
   # Variants are those NOT already adopted for this species.
   vr <- lapply(seq_len(nrow(k)), function(i) {
     v <- do.call(rbind, lapply(k$labels[[i]], name_variants))
@@ -771,15 +880,16 @@ cohort_cov <- function(k) {
   idx <- rep(seq_len(nrow(k)), lengths(k$labels))
   map <- data.frame(label = unlist(k$labels, use.names = FALSE),
                     sci   = k$species_sci[idx], stringsAsFactors = FALSE)
-  p <- cov_pairs[cov_pairs$Species %in% map$label, , drop = FALSE]
+  cp <- cov_pairs_for(k)
+  p <- cp[cp$Species %in% map$label, , drop = FALSE]
   if (!nrow(p)) return(p[, c("Species", "Variable", "Domain"), drop = FALSE])
   p$Species <- map$sci[match(p$Species, map$label)]
   unique(p[, c("Species", "Variable", "Domain")])
 }
 
 # species x domain counts of distinct variables held
-cohort_domain_matrix <- function(ch) {
-  k <- cohort_species(ch)
+cohort_domain_matrix <- function(ch, pooling = "off") {
+  k <- cohort_species(ch, pooling)
   p <- cohort_cov(k)
   doms <- domain_levels[domain_levels %in% unique(cov_pairs$Domain)]
   m <- matrix(0L, nrow = nrow(k), ncol = length(doms),
@@ -793,8 +903,8 @@ cohort_domain_matrix <- function(ch) {
 }
 
 # per-trait availability across a cohort: how many of its species have the trait
-cohort_trait_table <- function(ch, doms = NULL) {
-  k <- cohort_species(ch)
+cohort_trait_table <- function(ch, doms = NULL, pooling = "off") {
+  k <- cohort_species(ch, pooling)
   sp <- k$species_sci
   labs <- meas_labels
   if (!is.null(doms) && length(doms)) labs <- labs[unname(var_dom[labs]) %in% doms]
@@ -1153,6 +1263,18 @@ ui <- page_navbar(
                  "Evo-M1 sequenced species, or any other cohort listed in ",
                  tags$code("_keys/species_cohorts.csv"), "."),
         selectInput("k_cohort", "Cohort", choices = cohort_choices),
+        radioButtons("k_pooling", "Wild/domestic pooling",
+                     choices = c("Off (cohort names only)" = "off",
+                                 "Domestic evidence" = "domestic_evidence",
+                                 "All (whole wild-form label)" = "all"),
+                     selected = "off"),
+        helpText(class = "text-muted small",
+                 "A cohort member that is a domestic form (pig, ferret) can also count ",
+                 "values filed under its wild-form label. ", strong("Domestic evidence"),
+                 " takes only the rows whose sources ",
+                 tags$code("_keys/population_status.csv"), " marks domestic or mixed; ",
+                 strong("All"), " takes the whole label. Pairs are declared in ",
+                 tags$code("_keys/species_pooling.csv"), "; the merges do not change."),
         selectizeInput("k_domain", "Domain (blank = all)",
                        choices = domain_levels, multiple = TRUE,
                        options = list(placeholder = "e.g. cellular composition")),
@@ -1665,11 +1787,17 @@ server <- function(input, output, session) {
 
   # ---- Cohort coverage ------------------------------------------------------
 
-  k_cm <- reactive({ req(input$k_cohort); cohort_domain_matrix(input$k_cohort) })
+  # pooling mode for this tab only; the Compiled tab's cohort restriction stays `off`
+  k_mode <- reactive({
+    m <- input$k_pooling
+    if (is.null(m) || !m %in% POOLING_MODES) "off" else m
+  })
+
+  k_cm <- reactive({ req(input$k_cohort); cohort_domain_matrix(input$k_cohort, pooling = k_mode()) })
 
   k_tt <- reactive({
     req(input$k_cohort)
-    cohort_trait_table(input$k_cohort, input$k_domain)
+    cohort_trait_table(input$k_cohort, input$k_domain, pooling = k_mode())
   })
 
   # The slider's ceiling is the cohort size, so "held for at least N species"
@@ -1714,6 +1842,7 @@ server <- function(input, output, session) {
         n <- as.integer(sp_value_n[l]); sum(n[!is.na(n)]) }, integer(1)),
       Uncounted_variants = v$variants,
       Uncounted_values = v$variant_values,
+      Pooled_wild_labels = vapply(v$pooled_labels, paste, character(1), collapse = "; "),
       Note = if ("note" %in% names(v)) v$note else "",
       stringsAsFactors = FALSE)
     tab$Values_counted[is.na(tab$Values_counted)] <- 0L
@@ -1721,7 +1850,7 @@ server <- function(input, output, session) {
               filter = "top", escape = TRUE,
               colnames = c("Cohort species", "Counted as", "Values counted",
                            "Uncounted variants (values)", "Uncounted values",
-                           "Curation note"),
+                           "Pooled wild-form labels (switch)", "Curation note"),
               options = list(pageLength = 25, scrollX = TRUE,
                              columnDefs = list(
                                list(width = "26%", targets = 3),
@@ -1753,6 +1882,9 @@ server <- function(input, output, session) {
     none <- sum(t$Species_with_data == 0)
     div(class = "alert alert-light border",
         strong(cohort_label_of[[input$k_cohort]]), sprintf(" \u2014 %d species. ", n),
+        if (k_mode() != "off") tags$span(class = "badge bg-warning text-dark",
+                                         paste("wild/domestic pooling:", k_mode())),
+        if (k_mode() != "off") " ",
         sprintf("Of %s traits in scope, ", format(nrow(t), big.mark = ",")),
         strong(sprintf("%d", full)), " cover the whole cohort, ",
         strong(sprintf("%d", none)), " cover none of it.")
@@ -1819,8 +1951,9 @@ server <- function(input, output, session) {
   })
 
   output$k_download <- downloadHandler(
-    filename = function() sprintf("evom1_cohort_coverage_%s_%s.csv",
-                                  input$k_cohort, Sys.Date()),
+    filename = function() sprintf("evom1_cohort_coverage_%s_%s%s.csv",
+                                  input$k_cohort, Sys.Date(),
+                                  if (k_mode() == "off") "" else paste0("_pooled_", k_mode())),
     content  = function(file) write.csv(k_tt_shown(), file, row.names = FALSE)
   )
 }

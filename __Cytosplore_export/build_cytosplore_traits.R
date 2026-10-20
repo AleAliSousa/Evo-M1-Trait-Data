@@ -8,7 +8,19 @@
 #   Rscript __Cytosplore_export/build_cytosplore_traits.R                  # EvoM1, species match
 #   Rscript __Cytosplore_export/build_cytosplore_traits.R V1 species 0.8   # cohort, match level, core threshold
 #   Rscript __Cytosplore_export/build_cytosplore_traits.R HMBA genus       # genus-level availability
-#   (build_all_cohorts.sh runs every cohort in species_cohorts.csv at both levels)
+#   Rscript __Cytosplore_export/build_cytosplore_traits.R EvoM1 species 0.8 domestic_evidence
+#                                                                          # wild/domestic pooling ON
+#   (build_all_cohorts.sh runs every cohort in species_cohorts.csv at both levels and
+#    in both pooling modes at species level)
+#
+# POOLING (4th argument; default `off`). Read-time wild/domestic pooling for cohort
+# members that are domestic forms (pig, ferret), from _keys/species_pooling.csv:
+#   off                today's behaviour; numbers identical to a run without the argument
+#   domestic_evidence  also adopt rows under the wild-form label whose sources
+#                      _keys/population_status.csv marks domestic or mixed
+#   all                adopt the whole wild-form label, as a lookup_name entry would
+# Output goes to output/<cohort>[_genus]_pooled_<mode>/ with that prefix. The rule is
+# the app's own (cohort_species(ch, pooling =)); see _keys/README_species_pooling.md.
 #
 # MATCH LEVEL.  `species` (default): a cohort member's data are the labels
 # species_cohorts.csv assigns it (its own name, or the `lookup_name` pooling).
@@ -89,10 +101,14 @@ mark_utf8 <- function(d) {
 args <- commandArgs(trailingOnly = TRUE)
 COHORT        <- if (length(args) >= 1 && nzchar(args[1])) args[1] else "EvoM1"
 MATCH_LEVEL   <- if (length(args) >= 2 && nzchar(args[2])) tolower(args[2]) else "species"
-CORE_FRACTION <- if (length(args) >= 3) as.numeric(args[3]) else 0.8
+CORE_FRACTION <- if (length(args) >= 3 && nzchar(args[3])) as.numeric(args[3]) else 0.8
+POOLING       <- if (length(args) >= 4 && nzchar(args[4])) tolower(args[4]) else "off"
 if (!MATCH_LEVEL %in% c("species", "genus"))
   stop("match level must be 'species' or 'genus'; got ", args[2])
-PREFIX <- if (MATCH_LEVEL == "genus") paste0(COHORT, "_genus") else COHORT
+if (!POOLING %in% c("off", "domestic_evidence", "all"))
+  stop("pooling mode must be 'off', 'domestic_evidence' or 'all'; got ", args[4])
+PREFIX <- paste0(COHORT, if (MATCH_LEVEL == "genus") "_genus" else "",
+                 if (POOLING != "off") paste0("_pooled_", POOLING) else "")
 if (is.na(CORE_FRACTION) || CORE_FRACTION <= 0 || CORE_FRACTION > 1)
   stop("CORE_FRACTION must be in (0, 1]; got ", args[3])
 
@@ -132,7 +148,8 @@ out_dir <- file.path(repo_root, "__Cytosplore_export", "output", PREFIX)
 dir.create(out_dir, recursive = TRUE, showWarnings = FALSE)
 T0 <- Sys.time(); tick <- function(w) message(sprintf("  [%5.0fs] %s", as.numeric(Sys.time() - T0, units = "secs"), w))
 message("repo:   ", repo_root)
-message("cohort: ", COHORT, "   match level: ", MATCH_LEVEL, "   core threshold: ", CORE_FRACTION)
+message("cohort: ", COHORT, "   match level: ", MATCH_LEVEL, "   core threshold: ", CORE_FRACTION,
+        "   pooling: ", POOLING)
 
 # ---- evaluate the Shiny app's data layer ------------------------------------
 # Everything in app.R above `ui <- page_navbar(...)` is data loading and keys.
@@ -158,7 +175,7 @@ setwd(old_wd)
 need <- c("compiled", "cohorts", "cohort_species", "cohort_cov", "cohort_domain_matrix",
           "cohort_trait_table", "meas_labels", "var_dom", "lab_class", "lab_struct",
           "lab_meas", "lab_unit", "lab_def", "lab_defsrc", "lab_pool", "lab_family",
-          "lab_ismeas", "look", "taxonomy", "domain_levels")
+          "lab_ismeas", "look", "taxonomy", "domain_levels", "cov_pairs_for", "pool_rows_ok", "POOLING_MODES")
 missing <- need[!vapply(need, exists, logical(1), envir = app, inherits = FALSE)]
 if (length(missing))
   stop("app.R data layer did not define: ", paste(missing, collapse = ", "),
@@ -169,8 +186,19 @@ if (is.null(app$cohorts) || !COHORT %in% app$cohorts$cohort)
 
 tick("app layer")
 compiled <- app$compiled
-key      <- app$cohort_species(COHORT)        # one row per cohort species, with $labels
+key      <- app$cohort_species(COHORT, pooling = POOLING)   # one row per cohort species, with $labels
 n_sp     <- nrow(key)
+# cov_pairs as the app sees them for this key: identical to app$cov_pairs unless the
+# domestic_evidence mode filters rows under an adopted wild-form label
+cov_pairs <- app$cov_pairs_for(key)
+rows_ok   <- app$pool_rows_ok(key)
+adopted_wild <- setdiff(unique(unlist(key$pooled_labels, use.names = FALSE)),
+                        unique(unlist(key$own_labels, use.names = FALSE)))
+if (POOLING != "off")
+  message("pooling ", POOLING, ": wild-form label(s) adopted: ",
+          if (length(adopted_wild)) paste(adopted_wild, collapse = "; ") else "none",
+          if (POOLING == "domestic_evidence") sprintf("  (%d of %d compiled rows under them admitted)",
+            sum(rows_ok & compiled$Species %in% adopted_wild), sum(compiled$Species %in% adopted_wild)) else "")
 genus_of <- function(x) sub("\\s.*$", "", trimws(x))
 if (MATCH_LEVEL == "genus") {
   data_labels <- sort(unique(compiled$Species))
@@ -179,7 +207,7 @@ if (MATCH_LEVEL == "genus") {
     sort(unique(c(key$labels[[i]], data_labels[genus_of(data_labels) %in% g])))
   })
   key$label_str <- vapply(key$labels, paste, character(1), collapse = "; ")
-  key$in_data   <- vapply(key$labels, function(l) any(l %in% app$cov_pairs$Species), logical(1))
+  key$in_data   <- vapply(key$labels, function(l) any(l %in% cov_pairs$Species), logical(1))
   key$variants  <- ""                        # everything in the genus is adopted
   key$variant_values <- 0L
   # genus duplicated across cohort members (e.g. Macaca mulatta + M. nemestrina)
@@ -199,7 +227,7 @@ if (MATCH_LEVEL == "genus") {
 cov_of <- function(k) {
   map <- data.frame(label = unlist(k$labels, use.names = FALSE),
                     Species = rep(k$species_sci, lengths(k$labels)), stringsAsFactors = FALSE)
-  p <- app$cov_pairs[app$cov_pairs$Species %in% map$label, , drop = FALSE]
+  p <- cov_pairs[cov_pairs$Species %in% map$label, , drop = FALSE]
   if (!nrow(p)) return(p[, c("Species", "Variable", "Domain"), drop = FALSE])
   names(p)[names(p) == "Species"] <- "label"
   m <- merge(p, map, by = "label")
@@ -207,7 +235,7 @@ cov_of <- function(k) {
 }
 dm_of <- function(k) {
   p <- cov_of(k)
-  doms <- app$domain_levels[app$domain_levels %in% unique(app$cov_pairs$Domain)]
+  doms <- app$domain_levels[app$domain_levels %in% unique(cov_pairs$Domain)]
   m <- matrix(0L, nrow = nrow(k), ncol = length(doms), dimnames = list(k$species_sci, doms))
   if (nrow(p)) {
     tb <- table(factor(p$Species, levels = k$species_sci), factor(p$Domain, levels = doms))
@@ -262,6 +290,8 @@ species_tbl <- data.frame(
   common_name       = key$common_name,
   genus             = genus_of(key$species_sci),
   match_level       = MATCH_LEVEL,
+  pooling_mode      = POOLING,
+  pooled_wild_labels = vapply(key$pooled_labels, paste, character(1), collapse = "; "),
   Order             = tax_of(key$species_sci, "Order"),
   Family            = tax_of(key$species_sci, "Family"),
   data_labels       = key$label_str,
@@ -278,7 +308,7 @@ rownames(species_tbl) <- NULL
 
 tick("long table")
 # ---- long table (all values, with provenance) --------------------------------
-long <- compiled[compiled$Species %in% lab_map$data_label, , drop = FALSE]
+long <- compiled[rows_ok & compiled$Species %in% lab_map$data_label, , drop = FALSE]
 # many-to-many: a label shared by two cohort members (genus mode) yields a row for each
 long <- merge(long, setNames(lab_map, c("Species", "species_sci")), by = "Species")
 lk <- function(map, k) app$look(map, k)
@@ -286,6 +316,7 @@ long_out <- data.frame(
   species_sci    = long$species_sci,
   common_name    = key$common_name[match(long$species_sci, key$species_sci)],
   data_label     = long$Species,
+  population_verdict = long$population_verdict,   # only for rows under a wild-form label
   variable       = long$Variable,
   domain         = unname(app$var_dom[long$Variable]),
   measure_class  = lk(app$lab_class,  long$Variable),
@@ -479,6 +510,10 @@ info <- c(
           if (MATCH_LEVEL == "genus") "  (any congener / Genus sp. / hybrid label counts; values pooled across them)" else ""),
   sprintf("core threshold:  >= %.0f%% of cohort (>= %d species)", 100 * CORE_FRACTION,
           ceiling(CORE_FRACTION * n_sp)),
+  sprintf("pooling mode:    %s%s", POOLING,
+          if (POOLING == "off") "" else sprintf("  (wild-form label(s) adopted: %s; %d of %d compiled rows under them admitted)",
+            if (length(adopted_wild)) paste(adopted_wild, collapse = "; ") else "none",
+            sum(rows_ok & compiled$Species %in% adopted_wild), sum(compiled$Species %in% adopted_wild))),
   sprintf("species without any data: %s",
           if (length(no_data)) paste(no_data, collapse = "; ") else "none"),
   sprintf("long rows (all values):   %d", nrow(long_out)),
@@ -518,6 +553,13 @@ readme <- c(
     "A variable's `species_with_data` therefore counts members for which *any* congener has a value, and",
     "a wide cell is the pool (numeric mean) across those labels. Use these tables to compare availability",
     "between cohorts, not as species trait values; the species-level folder holds those.", "") else character(0),
+  if (POOLING != "off") c(
+    sprintf("**Wild/domestic pooling: `%s`.** Cohort members that are domestic forms (pig, ferret) also count", POOLING),
+    if (POOLING == "all") "the whole wild-form label (*Sus scrofa*, *Mustela putorius*), as a `lookup_name` entry would." else
+      "rows under the wild-form label whose sources `_keys/population_status.csv` marks domestic or mixed;",
+    if (POOLING == "all") "" else "wild and unknown rows stay out. `population_verdict` in the long table says which rule admitted a row.",
+    "Pairs come from `_keys/species_pooling.csv`; the merges and `species_cohorts.csv` are unchanged. The `off` folder",
+    "holds the default numbers. See `_keys/README_species_pooling.md`.", "") else character(0),
   "",
   sprintf("Built %s from Evo-M1-Trait-Data commit `%s` by `__Cytosplore_export/build_cytosplore_traits.R`.",
           format(Sys.time(), "%Y-%m-%d"), git_rev),
@@ -545,7 +587,7 @@ readme <- c(
   sprintf("| `%s` | species | n distinct variables per domain |", basename(f_dom)),
   "| `BUILD_INFO.txt` | - | build stamp and counts |",
   "",
-  sprintf("Source audit (run `python3 __Cytosplore_export/audit_cytosplore_variables.py %s %s` after this script):", COHORT, MATCH_LEVEL),
+  sprintf("Source audit (run `python3 __Cytosplore_export/audit_cytosplore_variables.py %s %s %s` after this script):", COHORT, MATCH_LEVEL, POOLING),
   "",
   "| file | one row per | use |",
   "|---|---|---|",
@@ -595,8 +637,8 @@ readme <- c(
   "",
   "```",
   "Rscript __ShinyApp/build_data.R                       # only if ____EvoM1_TraitTable/*.xlsx changed",
-  sprintf("Rscript __Cytosplore_export/build_cytosplore_traits.R %s %s %.2f", COHORT, MATCH_LEVEL, CORE_FRACTION),
-  sprintf("python3 __Cytosplore_export/audit_cytosplore_variables.py %s %s", COHORT, MATCH_LEVEL),
+  sprintf("Rscript __Cytosplore_export/build_cytosplore_traits.R %s %s %.2f %s", COHORT, MATCH_LEVEL, CORE_FRACTION, POOLING),
+  sprintf("python3 __Cytosplore_export/audit_cytosplore_variables.py %s %s %s", COHORT, MATCH_LEVEL, POOLING),
   "```")
 writeLines(enc2utf8(readme), file.path(out_dir, "README.md"), useBytes = TRUE)
 message("done -> ", out_dir)

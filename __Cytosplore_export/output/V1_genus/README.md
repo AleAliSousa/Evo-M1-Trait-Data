@@ -7,7 +7,7 @@ a wide cell is the pool (numeric mean) across those labels. Use these tables to 
 between cohorts, not as species trait values; the species-level folder holds those.
 
 
-Built 2026-10-20 from Evo-M1-Trait-Data commit `cb75ea9 (from .git/HEAD; git command unavailable)` by `__Cytosplore_export/build_cytosplore_traits.R`.
+Built 2026-10-20 from Evo-M1-Trait-Data commit `unknown (not a git checkout)` by `__Cytosplore_export/build_cytosplore_traits.R`.
 Re-run that script to regenerate everything here; do not edit these CSVs by hand.
 
 ## What this is
@@ -23,11 +23,11 @@ Comparative species traits for the 17-species `V1` cohort (`_keys/species_cohort
 | `V1_genus_traits_wide_core.csv` | species x variable (47) | same, only traits held for >= 14 of 17 species (`in_core`) |
 | `V1_genus_variable_dictionary.csv` | variable (654) | column metadata for the wide tables: domain, structure, measure, unit, definition, coverage |
 | `V1_genus_traits_cells.csv` | species x variable cell (3869) | how each wide cell was made: n values, aggregation, min/max, sources |
-| `V1_genus_traits_long.csv` | value (10668) | full provenance: every source value behind every cell |
+| `V1_genus_traits_long.csv` | value (10673) | full provenance: every source value behind every cell |
 | `V1_genus_domain_coverage.csv` | species | n distinct variables per domain |
 | `BUILD_INFO.txt` | - | build stamp and counts |
 
-Source audit (run `python3 __Cytosplore_export/audit_cytosplore_variables.py V1 genus` after this script):
+Source audit (run `python3 __Cytosplore_export/audit_cytosplore_variables.py V1 genus off` after this script):
 
 | file | one row per | use |
 |---|---|---|
@@ -108,6 +108,6 @@ Source audit (run `python3 __Cytosplore_export/audit_cytosplore_variables.py V1 
 
 ```
 Rscript __ShinyApp/build_data.R                       # only if ____EvoM1_TraitTable/*.xlsx changed
-Rscript __Cytosplore_export/build_cytosplore_traits.R V1 genus 0.80
-python3 __Cytosplore_export/audit_cytosplore_variables.py V1 genus
+Rscript __Cytosplore_export/build_cytosplore_traits.R V1 genus 0.80 off
+python3 __Cytosplore_export/audit_cytosplore_variables.py V1 genus off
 ```

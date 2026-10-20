@@ -7,7 +7,7 @@ a wide cell is the pool (numeric mean) across those labels. Use these tables to 
 between cohorts, not as species trait values; the species-level folder holds those.
 
 
-Built 2026-10-20 from Evo-M1-Trait-Data commit `cb75ea9 (from .git/HEAD; git command unavailable)` by `__Cytosplore_export/build_cytosplore_traits.R`.
+Built 2026-10-20 from Evo-M1-Trait-Data commit `unknown (not a git checkout)` by `__Cytosplore_export/build_cytosplore_traits.R`.
 Re-run that script to regenerate everything here; do not edit these CSVs by hand.
 
 ## What this is
@@ -23,11 +23,11 @@ Comparative species traits for the 25-species `EvoM1` cohort (`_keys/species_coh
 | `EvoM1_genus_traits_wide_core.csv` | species x variable (52) | same, only traits held for >= 20 of 25 species (`in_core`) |
 | `EvoM1_genus_variable_dictionary.csv` | variable (654) | column metadata for the wide tables: domain, structure, measure, unit, definition, coverage |
 | `EvoM1_genus_traits_cells.csv` | species x variable cell (5793) | how each wide cell was made: n values, aggregation, min/max, sources |
-| `EvoM1_genus_traits_long.csv` | value (14755) | full provenance: every source value behind every cell |
+| `EvoM1_genus_traits_long.csv` | value (14761) | full provenance: every source value behind every cell |
 | `EvoM1_genus_domain_coverage.csv` | species | n distinct variables per domain |
 | `BUILD_INFO.txt` | - | build stamp and counts |
 
-Source audit (run `python3 __Cytosplore_export/audit_cytosplore_variables.py EvoM1 genus` after this script):
+Source audit (run `python3 __Cytosplore_export/audit_cytosplore_variables.py EvoM1 genus off` after this script):
 
 | file | one row per | use |
 |---|---|---|
@@ -75,7 +75,7 @@ Source audit (run `python3 __Cytosplore_export/audit_cytosplore_variables.py Evo
 | Oryctolagus cuniculus | Rabbit | Lagomorpha | 164 | Oryctolagus cuniculus; Oryctolagus cuniculus f.d. |
 | Otolemur garnettii | Galago | Primates | 252 | Otolemur crassicaudatus; Otolemur garnettii; Otolemur monteiri |
 | Pan troglodytes | Chimpanzee | Primates | 375 | Pan paniscus; Pan troglodytes |
-| Papio anubis | Baboon | Primates | 339 | Papio anubis; Papio cynocephalus; Papio hamadryas; Papio papio; Papio sp.; Papio ursinus |
+| Papio anubis | Baboon | Primates | 339 | Papio anubis; Papio cynocephalus; Papio hamadryas; Papio papio; Papio sp.; Papio spp.; Papio ursinus |
 | Rattus norvegicus | Rat | Rodentia | 229 | Rattus adustus; Rattus andamanensis; Rattus annandalei; Rattus arfakiensis; Rattus argentiventer; Rattus arrogans; Rattus baluensis; Rattus blangorum; Rattus bontanus; Rattus burrus; Rattus colletti; Rattus elaphinus; Rattus enganus; Rattus everetti; Rattus exulans; Rattus feliceus; Rattus fuscipes; Rattus giluwensis; Rattus hainaldi; Rattus hoffmanni; Rattus hoogerwerfi; Rattus jobiensis; Rattus koopmani; Rattus korinchi; Rattus leucopus; Rattus losea; Rattus lugens; Rattus lutreolus; Rattus macleari; Rattus marmosurus; Rattus mindorensis; Rattus mollicomulus; Rattus montanus; Rattus mordax; Rattus morotaiensis; Rattus nativitatis; Rattus niobe; Rattus nitidus; Rattus norvegicus; Rattus norvegicus f.d.; Rattus norvegicus var.alba; Rattus novaeguineae; Rattus omichlodes; Rattus osgoodi; Rattus palmarum; Rattus pelurus; Rattus pococki; Rattus praetor; Rattus pyctoris; Rattus ranjiniae; Rattus richardsoni; Rattus salocco; Rattus sanila; Rattus satarae; Rattus simalurensis; Rattus sordidus; Rattus sp.; Rattus steini; Rattus stoicus; Rattus tanezumi; Rattus tawitawiensis; Rattus timorensis; Rattus tiomanicus; Rattus tunneyi; Rattus vandeuseni; Rattus verecundus; Rattus villosissimus; Rattus xanthurus |
 | Saimiri boliviensis boliviensis | Bolivian squirrel monkey | Primates | 309 | Saimiri boliviensis; Saimiri boliviensis boliviensis; Saimiri boliviensis group; Saimiri oerstedii; Saimiri sciureus; Saimiri sciureus group; Saimiri ustus; Saimiri vanzolinii |
 | Sapajus apella | Capuchin | Primates | 154 | Sapajus apella; Sapajus flavius; Sapajus libidinosus; Sapajus nigritus; Sapajus xanthosternos |
@@ -116,6 +116,6 @@ Source audit (run `python3 __Cytosplore_export/audit_cytosplore_variables.py Evo
 
 ```
 Rscript __ShinyApp/build_data.R                       # only if ____EvoM1_TraitTable/*.xlsx changed
-Rscript __Cytosplore_export/build_cytosplore_traits.R EvoM1 genus 0.80
-python3 __Cytosplore_export/audit_cytosplore_variables.py EvoM1 genus
+Rscript __Cytosplore_export/build_cytosplore_traits.R EvoM1 genus 0.80 off
+python3 __Cytosplore_export/audit_cytosplore_variables.py EvoM1 genus off
 ```

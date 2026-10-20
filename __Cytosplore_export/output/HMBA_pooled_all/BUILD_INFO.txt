@@ -1,0 +1,33 @@
+built:           2026-10-20 11:44:26 PDT
+repo commit:     unknown (not a git checkout)
+cohort:          HMBA (4 species)
+match level:     species
+core threshold:  >= 80% of cohort (>= 4 species)
+pooling mode:    all  (wild-form label(s) adopted: none; 0 of 0 compiled rows under them admitted)
+species without any data: none
+long rows (all values):   1313
+  of which measurement:   1304
+species x variable cells: 1234
+variables in wide:        560   (matrix fill 55.1%)
+variables in wide_core:   79   (matrix fill 100.0%)
+cells unresolved categorical: 0
+cells with numeric spread > 50%: 4
+units: 559 from key, 0 from merge rows, 1 parsed from label, 0 none
+variables flagged m1_motor_related: 81 (of which core: 0)
+domains excluded from wide/cells/dictionary: dataset metadata
+
+variables per domain (all / core / m1_motor_related):
+  brain structure & size            160 /    9 /    4
+  cellular composition               89 /   28 /    3
+  cortical & cerebellar folding       9 /    1 /    0
+  body size                           2 /    1 /    0
+  metabolism                         72 /    3 /    2
+  life history                       20 /   18 /    0
+  diet & ecology                     29 /   17 /    0
+  behaviour & cognition              30 /    1 /    9
+  sensorimotor & motor pathways      19 /    0 /   19
+  hand & limb morphology             17 /    0 /   17
+  sleep & torpor                      5 /    0 /    0
+  Unclassified                        1 /    0 /    0
+  cellular morphology                87 /    0 /   27
+  sensory performance                20 /    1 /    0

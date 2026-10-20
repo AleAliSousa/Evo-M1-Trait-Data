@@ -7,7 +7,7 @@ a wide cell is the pool (numeric mean) across those labels. Use these tables to 
 between cohorts, not as species trait values; the species-level folder holds those.
 
 
-Built 2026-10-20 from Evo-M1-Trait-Data commit `cb75ea9 (from .git/HEAD; git command unavailable)` by `__Cytosplore_export/build_cytosplore_traits.R`.
+Built 2026-10-20 from Evo-M1-Trait-Data commit `unknown (not a git checkout)` by `__Cytosplore_export/build_cytosplore_traits.R`.
 Re-run that script to regenerate everything here; do not edit these CSVs by hand.
 
 ## What this is
@@ -27,7 +27,7 @@ Comparative species traits for the 4-species `HMBA` cohort (`_keys/species_cohor
 | `HMBA_genus_domain_coverage.csv` | species | n distinct variables per domain |
 | `BUILD_INFO.txt` | - | build stamp and counts |
 
-Source audit (run `python3 __Cytosplore_export/audit_cytosplore_variables.py HMBA genus` after this script):
+Source audit (run `python3 __Cytosplore_export/audit_cytosplore_variables.py HMBA genus off` after this script):
 
 | file | one row per | use |
 |---|---|---|
@@ -95,6 +95,6 @@ Source audit (run `python3 __Cytosplore_export/audit_cytosplore_variables.py HMB
 
 ```
 Rscript __ShinyApp/build_data.R                       # only if ____EvoM1_TraitTable/*.xlsx changed
-Rscript __Cytosplore_export/build_cytosplore_traits.R HMBA genus 0.80
-python3 __Cytosplore_export/audit_cytosplore_variables.py HMBA genus
+Rscript __Cytosplore_export/build_cytosplore_traits.R HMBA genus 0.80 off
+python3 __Cytosplore_export/audit_cytosplore_variables.py HMBA genus off
 ```

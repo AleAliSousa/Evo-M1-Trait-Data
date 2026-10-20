@@ -4,9 +4,9 @@ Built 2026-10-20 by `__Cytosplore_export/audit_cytosplore_variables.py` from the
 
 ## Q1. Secondary compilations vs primary sources
 
-- 630 exported variables; 2694 species x variable cells.
-- cells with at least one primary source: 1921
-- cells fed only by compilations (secondary): 699 in 183 variables
+- 630 exported variables; 2702 species x variable cells.
+- cells with at least one primary source: 1927
+- cells fed only by compilations (secondary): 701 in 183 variables
 - of those, cells where a PRIMARY value for the same species and structure x measure exists in the compiled database (another variable of the same compatibility group): 41
 - cells whose role could not be resolved: 74
 - variables with NO primary source at all: 143
@@ -18,7 +18,7 @@ Compilations contributing secondary-only cells (cells):
 - Jones_etal_2009: 115
 - Kaufman__2004: 97
 - Karbowski__2007: 79
-- deMagalhães_etal_2024: 51
+- deMagalhães_etal_2024: 51
 - Myhrvold_etal_2015: 34
 - Heffner_Masterton_1975: 30
 - Heiss_etal_2004: 26
@@ -35,8 +35,8 @@ Variables with secondary-only cells for which a primary exists in the same group
 - `Depth` (6 sp): 6 secondary-only cells; primary for 1 of them via SpinalCord | motor_pathway
 - `Length` (6 sp): 6 secondary-only cells; primary for 1 of them via SpinalCord | motor_pathway
 - `Largest fiber diameter µm` (5 sp): 5 secondary-only cells; primary for 5 of them via CorticospinalTract | motor_pathway
+- `Binocular_field_compiled_Heesy2004 (deg)` (5 sp): 5 secondary-only cells; primary for 2 of them via family: visual_field
 - `Number of fibers per tract` (6 sp): 4 secondary-only cells; primary for 4 of them via CorticospinalTract | motor_pathway
-- `Binocular_field_compiled_Heesy2004 (deg)` (4 sp): 4 secondary-only cells; primary for 2 of them via family: visual_field
 - `Endocranial_volume (mL)` (6 sp): 2 secondary-only cells; primary for 2 of them via family: brain_size
 - `Brain_Mass_measured (g)` (14 sp): 1 secondary-only cells; primary for 1 of them via family: brain_size
 - `Brain_size_sum_of_structures (g)` (1 sp): 1 secondary-only cells; primary for 1 of them via family: brain_size
@@ -68,8 +68,8 @@ Source class of exported variables:
 
 Suggested tier (cohort species covered):
 
-- broad (10-19 sp): 44
-- minimal (<3 sp): 246
+- broad (10-19 sp): 45
+- minimal (<3 sp): 245
 - sparse (3-9 sp): 340
 
 ## Q2. Poolability and individual relevance
@@ -77,7 +77,7 @@ Suggested tier (cohort species covered):
 - compatibility groups with >= 2 exported variables: 73
 - groups where pooling would add >= 2 cohort species: 0
 - groups spanning more than one measurement basis (do not pool across): 6
-- variables with < 3 cohort species: 246
+- variables with < 3 cohort species: 245
 - laterality (left/right) variants: 21
 
 Top pooling candidates (gain in cohort species):
@@ -92,6 +92,7 @@ Paper folders contributing to the export whose *_definitions.csv has no primary/
 _keys/variable_catalog.csv:
 
 - Jones_etal_2009: 162 cells; catalog roles = no catalog rows (no *_definitions.csv in folder?)
+- deMagalhães_etal_2024: 121 cells; catalog roles = no catalog rows (no *_definitions.csv in folder?)
 - Myhrvold_etal_2015: 119 cells; catalog roles = no catalog rows (no *_definitions.csv in folder?)
 - Baker_etal_2025: 80 cells; catalog roles = no catalog rows (no *_definitions.csv in folder?)
 - Burish_etal_2010: 37 cells; catalog roles = {'review': 10}

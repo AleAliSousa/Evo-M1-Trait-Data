@@ -108,8 +108,9 @@ species_canon <- c(
   "agouti paca"="Cuniculus paca","myotis dabentonii"="Myotis daubentonii",
   "sarcrophilus harrisii"="Sarcophilus harrisii","macropus fulginosus"="Macropus fuliginosus",
   "setonyx brachyurus"="Setonix brachyurus","dasyprocta leoporina"="Dasyprocta leporina",
-  "sciurus caroliniensis"="Sciurus carolinensis","rhinolophus rouxi"="Rhinolophus rouxii",
-  "mustela putorius furo"="Mustela putorius")
+  "sciurus caroliniensis"="Sciurus carolinensis","rhinolophus rouxi"="Rhinolophus rouxii")
+## "mustela putorius furo" is deliberately NOT reduced to the wild binomial (removed 2026-10-20):
+## wild/domestic pooling is a read-time decision (_keys/species_pooling.csv), not an identity fix.
 canon_sp <- function(x){ y <- str_squish(x); k <- tolower(y)
   ifelse(k %in% names(species_canon), species_canon[k], y) }
 

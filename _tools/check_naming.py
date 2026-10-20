@@ -118,8 +118,9 @@ def read_registry(root):
 
 
 def expected_pub(d):
-    """column F's formula, in Python"""
-    out = d['a'] + ('_' + d['o'] if d['o'] else '_') + ('_' + d['y'] if d['y'] else '_')
+    """column H's Publication name formula, in Python"""
+    other_author = d['o'].replace(' ', '')
+    out = d['a'] + ('_' + other_author if other_author else '_') + ('_' + d['y'] if d['y'] else '_')
     return out + ('_' + d['seq'] if d['seq'] else '')
 
 
@@ -240,7 +241,7 @@ def main():
     for d in reg:
         if d['a'] and d['y'] and d['pub'] and d['pub'] != expected_pub(d):
             add('P1', 'registry_pub_name', 'PUB', '__ReadMe.xlsx', d['xlrow'], d['pub'],
-                expected_pub(d), 'Publication name (F) != the F formula on G/H/I/B')
+                expected_pub(d), 'Publication name (H) != the H formula on E/F/G/B')
         if d['item'] and d['pub'] and not d['item'].startswith(d['pub'] + '_') \
                 and d['item'] != d['pub']:
             add('P1', 'registry_item_name', 'PUB', '__ReadMe.xlsx', d['xlrow'], d['item'],

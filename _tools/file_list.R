@@ -110,7 +110,7 @@ derive_formula_values <- function(data_row) {
   }
   publication_name <- paste0(
     first_author,
-    if (nzchar(other_author)) paste0("_", other_author) else "_",
+    if (nzchar(other_author)) paste0("_", gsub(" ", "", other_author, fixed = TRUE)) else "_",
     if (nzchar(year)) paste0("_", year) else "_",
     if (nzchar(sequence)) paste0("_", sequence) else ""
   )
@@ -184,7 +184,7 @@ formula_family <- function(r) c(
     ")"
   ),
   sprintf('_xlfn.TEXTBEFORE(_xlfn.TEXTAFTER(A%d, "("), ")")', r),                       # G: year
-  sprintf('E%d & IF(F%d<>"", "_" & F%d, "_") & IF(G%d<>"", "_" & G%d, "_") & IF(B%d<>"", "_" & B%d, "")',
+  sprintf('E%d & IF(F%d<>"", "_" & SUBSTITUTE(F%d," ",""), "_") & IF(G%d<>"", "_" & G%d, "_") & IF(B%d<>"", "_" & B%d, "")',
           r, r, r, r, r, r, r),                                                        # H: Publication name
   paste0(                                                                              # I: DOI (or Alt)
     "_xlfn.LET(\n",

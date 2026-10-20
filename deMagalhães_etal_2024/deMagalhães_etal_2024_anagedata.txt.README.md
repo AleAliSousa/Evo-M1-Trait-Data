@@ -99,9 +99,10 @@ transform for delivery now, and should be spot-checked by re-running the R scrip
   differed from the source, only our column label (the errata convention covers value discrepancies).
   Downstream: the `__merging_supplementary/supplementary_sources.csv` row for this column now names
   `_days`; it was already reading the values as days, so the regenerated `supplementary_long.csv` is
-  byte-identical. `__merging_body_ecology` reads only `Body_mass_g` and is unaffected. Still carrying
-  the old name until their generators are re-run: `_keys/variable_catalog.csv`
-  (`_keys/build_variable_catalog.R`) and `__ShinyApp/data/source_manifest.csv` (`__ShinyApp/build_data.R`).
+  byte-identical. `__merging_body_ecology` reads only `Body_mass_g` and is unaffected. The downstream
+  variable catalog, compatibility groups and Shiny source manifest were regenerated with
+  `_keys/build_variable_catalog.R` and `__ShinyApp/build_data.R`; the supplementary merge README
+  now documents the corrected column name.
 - **2026-10-20 — build script re-run end-to-end with `Rscript`** (including the `__ReadMe.xlsx` lookup
   and `validate_dataset_item()`): every check PASS (`errata_file_valid` SKIP, no errata file);
   4,645 rows → CSV + public TSV.

@@ -264,7 +264,7 @@ Cerebellum | molecular layer thickness,Cerebellum,molecular layer thickness,4,1,
 Dentate gyrus (hilus) | percentage (relative),Dentate gyrus (hilus),percentage (relative),4,1,Jacob_etal_2021,Procyon lotor,primary,FALSE
 Internal carotid foramen | diam.mm,Internal carotid foramen,diam.mm,4,1,Seymour_etal_2019,Great Apes & Homo,primary,FALSE
 Internal carotid foramen | radius.mm,Internal carotid foramen,radius.mm,4,1,Seymour_etal_2019,Great Apes & Homo,primary,FALSE
-Life history | Time.days,Life history,Time.days,4,1,deMagalhães_etal_2024,all taxa,secondary,FALSE
+Life history | Time.days,Life history,Time.days,5,1,deMagalhães_etal_2024,all taxa,secondary,FALSE
 M1 | Density.per_g,M1,Density.per_g,4,1,Young_etal_2013,Primates,info; primary,FALSE
 M1 | Density.per_mm2,M1,Density.per_mm2,4,1,Young_etal_2013,Primates,info; primary,FALSE
 Neocortex (CS region A) | percentage (relative),Neocortex (CS region A),percentage (relative),4,1,Nudo_etal_1995,24 mammals: 9 orders / 16 families / 21 genera (Marsupialia + Eutheria); 9 mammalian orders (the 24 species of TABLE 2 pooled by order),primary; secondary,FALSE
@@ -706,7 +706,6 @@ Lateral_cerebellar_nuclei | volume,Lateral_cerebellar_nuclei,volume,1,1,Matano_e
 Layer_III_pyramidal_basal_dendritic_tree | count (number),Layer_III_pyramidal_basal_dendritic_tree,count (number),1,1,Elston_etal_2005_a,Cercopithecus pygerythrus (methods); Cercopethicus pygerythrus (title),secondary,FALSE
 "Length of time between successive births of the same female(s) after a successful or unspecified litter; non-captive, wild, provisioned, or unspecified populations; all measures of central tendency; all localities. Unit per S2: days. | value","Length of time between successive births of the same female(s) after a successful or unspecified litter; non-captive, wild, provisioned, or unspecified populations; all measures of central tendency; all localities. Unit per S2: days.",value,1,1,Lewitus_etal_2014,Mammals,primary,FALSE
 "Length of time of non-inactive fetal growth; captive, wild, provisioned, or unspecified populations; all measures of central tendency; all localities. Measured between specified start point (conception, fertilization, first observed copulation, implantation, laying, palpably pregnant, removal of pouch young, capture [except marsupials], or unspecified) and end point (birth, hatching, or unspecified). Unit per S2: days. | value","Length of time of non-inactive fetal growth; captive, wild, provisioned, or unspecified populations; all measures of central tendency; all localities. Measured between specified start point (conception, fertilization, first observed copulation, implantation, laying, palpably pregnant, removal of pouch young, capture [except marsupials], or unspecified) and end point (birth, hatching, or unspecified). Unit per S2: days.",value,1,1,Lewitus_etal_2014,Mammals,primary,FALSE
-Life history | Time.yrs,Life history,Time.yrs,1,1,deMagalhães_etal_2024,all taxa,secondary,FALSE
 Life history | count (number),Life history,count (number),1,1,deMagalhães_etal_2024,all taxa,secondary,FALSE
 Life history | rate.per_day,Life history,rate.per_day,1,1,deMagalhães_etal_2024,all taxa,secondary,FALSE
 Life history | rate.per_year,Life history,rate.per_year,1,1,deMagalhães_etal_2024,all taxa,secondary,FALSE

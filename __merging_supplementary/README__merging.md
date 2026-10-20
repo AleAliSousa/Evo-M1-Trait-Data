@@ -53,9 +53,8 @@ sources**; TraitExplorer discovers the folder automatically; `__Cytosplore_expor
   export. The species name is assembled from the genus + epithet columns (`species_col` may now be an R
   expression; see `supplementary_compiled.R`). Caveat, as for BMR: PanTHERIA, Amniote and AnAge partly
   cite the same primaries, so `n_sources` counts compilations, not independent measurements.
-- **AnAge interbirth interval is in DAYS.** The item column is named `Inter_litter_Interbirth_interval_yrs`,
-  but AnAge's header carries no unit and the values are days (Homo 639, Mus 30, Sus 230). Mapped as days;
-  the suffix is a naming slip in the item build that should be corrected at source.
+- **AnAge interbirth interval is in days.** The item column is named `Inter_litter_Interbirth_interval_days`.
+  AnAge's header carries no unit; the values are days (Homo 639, Mus 30, Sus 230) and are mapped directly.
 - **AnAge longevity quality filter.** `Data_quality` is AnAge's confidence in the longevity record only;
   `questionable` and `low` records are excluded for `Maximum_longevity` and nothing else.
 - **AnAge BMR** (`Metabolic_rate_W`) is converted W -> mL O2/h at 20.1 J per mL O2 (x 3600/20.1 = 179.104),
@@ -165,7 +164,7 @@ sources**; TraitExplorer discovers the folder automatically; `__Cytosplore_expor
 | deMagalhães_etal_2024_anagedata.txt | Birth_weight_g | Neonate_body_mass (g) [distinct] | secondary | first | pooled with the PanTHERIA and Amniote columns |
 | deMagalhães_etal_2024_anagedata.txt | Weaning_weight_g | Weaning_weight (g) [distinct] | secondary | first | pooled with the Amniote column |
 | deMagalhães_etal_2024_anagedata.txt | Litters_Clutches_per_year | Litters_per_year (count/yr) [distinct] | secondary | first | pooled with the PanTHERIA and Amniote columns |
-| deMagalhães_etal_2024_anagedata.txt | Inter_litter_Interbirth_interval_yrs | Interbirth_interval (days) [distinct] | secondary | first | the repo column name says _yrs but the values are DAYS (AnAge header "Inter-litter/Interbirth interval"; Homo 639, Mus 30, Sus 230) -- item-build naming slip, values taken as days; pooled with the PanTHERIA and Amniote columns |
+| deMagalhães_etal_2024_anagedata.txt | Inter_litter_Interbirth_interval_days | Interbirth_interval (days) [distinct] | secondary | first | AnAge column is in days (header carries no unit; Homo 639, Mus 30, Sus 230); pooled with the PanTHERIA and Amniote columns |
 | deMagalhães_etal_2024_anagedata.txt | Growth_rate_per_day | Postnatal_growth_rate (1/day) [distinct] | secondary | first | AnAge growth-rate constant (von Bertalanffy K or similar) |
 | deMagalhães_etal_2024_anagedata.txt | Metabolic_rate_W | BMR_wholeanimal (mL O2/h) [shared] | secondary | first | AnAge basal/resting metabolic rate in W; x 3600/20.1 -> mL O2/h using the same 20.1 J per mL O2 oxyjoule equivalent as body_ecology; shared label with body_ecology (4 compilations already pooled there; AnAge partly cites the same primaries) |
 | deMagalhães_etal_2024_anagedata.txt | Temperature_K | Body_temperature (C) [distinct] | secondary | first | body temperature paired with the AnAge metabolic-rate measurement; K - 273.15 -> deg C |

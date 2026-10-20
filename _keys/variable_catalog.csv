@@ -1401,7 +1401,7 @@ deMagalhães_etal_2024,deMagalhães_etal_2024_anagedata.txt,Female_maturity_day
 deMagalhães_etal_2024,deMagalhães_etal_2024_anagedata.txt,Male_maturity_days,Life history,Life history,NA,Time.days,Time.days,NA,secondary,all taxa,Age at male sexual maturity
 deMagalhães_etal_2024,deMagalhães_etal_2024_anagedata.txt,Gestation_Incubation_days,Life history,Life history,NA,Time.days,Time.days,NA,secondary,all taxa,Gestation (mammals) or incubation (birds/reptiles) period
 deMagalhães_etal_2024,deMagalhães_etal_2024_anagedata.txt,Weaning_days,Life history,Life history,NA,Time.days,Time.days,NA,secondary,all taxa,Age at weaning
-deMagalhães_etal_2024,deMagalhães_etal_2024_anagedata.txt,Inter_litter_Interbirth_interval_yrs,Life history,Life history,NA,Time.yrs,Time.yrs,NA,secondary,all taxa,Interval between litters/births
+deMagalhães_etal_2024,deMagalhães_etal_2024_anagedata.txt,Inter_litter_Interbirth_interval_days,Life history,Life history,NA,Time.days,Time.days,NA,secondary,all taxa,Interval between litters/births
 deMagalhães_etal_2024,deMagalhães_etal_2024_anagedata.txt,Litter_Clutch_size,Life history,Life history,NA,count,count (number),NA,secondary,all taxa,Number of offspring per litter/clutch
 deMagalhães_etal_2024,deMagalhães_etal_2024_anagedata.txt,Growth_rate_per_day,Life history,Life history,NA,rate.per_day,rate.per_day,NA,secondary,all taxa,Growth-rate constant (von Bertalanffy K or similar)
 deMagalhães_etal_2024,deMagalhães_etal_2024_anagedata.txt,Litters_Clutches_per_year,Life history,Life history,NA,rate.per_year,rate.per_year,NA,secondary,all taxa,Number of litters/clutches produced per year

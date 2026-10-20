@@ -132,6 +132,39 @@ and longevity and sexual maturity agree exactly. That mixture of exact
 agreement on some traits and 50%+ disagreement on the allometric core is
 itself worth explaining before anything is pooled. Default is *not* pooled.
 
+### Pure-nomenclature aliases added 2026-10-20
+
+Five labels that denote exactly the taxon a cohort member names were unified
+app-wide in `_keys/species_display_aliases.csv`, not here: `Felis silvestris
+f.d.` and `Felis silvestris catus` → `Felis catus` (the domestic cat under two
+spellings; *F. silvestris* itself is **not** aliased), `Papio cynocephalus
+anubis` → `Papio anubis` (olive baboon as a subspecies of *P. cynocephalus*;
+carries the Young 2013 M1 surface area), `Otolemur garnetti` → `Otolemur
+garnettii` and `Papio cynocphalus` → `Papio cynocephalus` (spellings).
+
+### Open rulings, quantified 2026-10-20
+
+Measured on the EvoM1 export (`__Cytosplore_export/output/EvoM1`, 25 species,
+638 measurement variables, 3 at full coverage after the Amniote-DB / AnAge
+wiring). "Gain" is the number of variables the alternative label holds that
+the cohort member does not. None is adopted; each changes reported values and
+the first three are *sensu lato* / re-identification questions (see
+`_keys/TAXON_POOLING_DESIGN.md`).
+
+| cohort member | alternative label | gain | full-coverage variables if adopted | kind |
+|---|---|---|---|---|
+| *Sus scrofa* (re-pointed to *S. s. domesticus*) | `Sus scrofa` | +71 | 3 → **7** | domestication; owner decision 2026-09-30 stands |
+| *Mustela putorius furo* | `Mustela putorius` | +62 | 3 → 4 (23 together with the pig) | domestication; open |
+| *Chlorocebus sabaeus* | `Chlorocebus aethiops` | +37 | 3 → 3 | sensu lato |
+| *Tupaia belangeri* | `Tupaia glis` | +170 | 3 → 3 | re-identification |
+| *Aotus nancymaae* | `Aotus trivirgatus` | +213 | 3 → 3 | re-identification (pre-1983 s.l.) |
+| *Saimiri boliviensis boliviensis* | `Saimiri sciureus` | +226 | 3 → 3 | re-identification (see below) |
+
+The two domestication rows are the only ones that move the full-coverage
+count, because every life-history compilation files the pig and the polecat
+under the wild-form binomial. `Oryctolagus cuniculus f.d.` (2 values) and the
+`Macaca ... group` labels (1 value each) add nothing and are left alone.
+
 ### The Saimiri case the variant rule does not reach
 
 `Saimiri sciureus` carries **239 values across 15 datasets** — the Stephan

@@ -104,8 +104,17 @@ nprod <- tapply(pairs$folder, pairs$Variable, function(x) length(unique(x)))
 labels <- names(prod)
 
 # ---- existing declarations: superseded_by on supersede rows -----------------
-rd <- function(p) read.csv(p, stringsAsFactors = FALSE, check.names = FALSE,
-                           colClasses = "character", encoding = "UTF-8")
+rd <- function(p) {
+  d <- read.csv(p, stringsAsFactors = FALSE, check.names = FALSE,
+                colClasses = "character", encoding = "UTF-8")
+  # This script writes trait_authority.csv WITH a UTF-8 BOM (see the end of the
+  # file). read.csv(encoding = "UTF-8") does not strip it, so the first column
+  # came back as "\ufefflabel", prev$label was NULL, the adjudicated-row guard
+  # matched nothing and every human decision silently regenerated as
+  # NEEDS_DECISION (observed 2026-10-20: 11 RULE-1 rows lost). Strip it.
+  names(d) <- sub("^\ufeff", "", names(d))
+  d
+}
 canon <- rd(file.path(keys_dir, "variable_canonical.csv"))
 canon <- canon[trimws(canon$action) == "supersede" & nzchar(trimws(canon$superseded_by)), ]
 declared <- list()

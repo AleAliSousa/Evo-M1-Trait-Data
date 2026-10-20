@@ -21,7 +21,9 @@
 #   path                repo-relative file when the source is not a public TSV
 #                       (PanTHERIA: the original txt is the frozen snapshot)
 #   source_publication  paper folder, passed to resolve_species()
-#   species_col         printed-name column
+#   species_col         printed-name column -- or, when the name is split across
+#                       columns, an R expression over the table's columns that
+#                       yields it (e.g. `paste(Genus, Species)`; AnAge, Amniote DB)
 #   filter              optional R expression evaluated on the table's columns
 #   value_col           column holding the value
 #   transform           optional arithmetic on the numeric value ("*1000", "/12")
@@ -96,13 +98,22 @@ for (i in seq_len(nrow(map))) {
   key <- if (nzchar(m$path)) m$path else m$item
   if (is.null(cache[[key]])) cache[[key]] <- read_source(m)
   d <- cache[[key]]
-  for (c in c(m$species_col, m$value_col))
-    if (!c %in% names(d)) stop(m$item, ": column not found: ", c, "\n  have: ", paste(names(d), collapse = ", "))
+  if (!m$value_col %in% names(d))
+    stop(m$item, ": column not found: ", m$value_col, "\n  have: ", paste(names(d), collapse = ", "))
+  # species_col: a column name, else an R expression over the table's columns
+  # (the Amniote DB and AnAge print genus and epithet in separate columns).
+  species_of <- function(d) {
+    if (m$species_col %in% names(d)) return(d[[m$species_col]])
+    tryCatch(eval(parse(text = m$species_col), envir = d), error = function(e)
+      stop(m$item, ": species_col is neither a column nor a valid expression: ", m$species_col,
+           "\n  ", conditionMessage(e), "\n  have: ", paste(names(d), collapse = ", ")))
+  }
+  species_of(d[0, , drop = FALSE])   # fail now, not after the filter, if it cannot evaluate
   if (nzchar(m$filter)) {
     keep <- eval(parse(text = m$filter), envir = d)
     d <- d[!is.na(keep) & keep, , drop = FALSE]
   }
-  printed <- trimws(as.character(d[[m$species_col]]))
+  printed <- trimws(as.character(species_of(d)))
   val <- as.character(d[[m$value_col]])
   if (nzchar(m$na_values)) {
     nas <- trimws(strsplit(m$na_values, ";")[[1]])

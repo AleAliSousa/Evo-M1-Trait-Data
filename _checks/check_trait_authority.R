@@ -25,7 +25,10 @@
 #                    lacks: a pointer nothing validates is a pointer that drifts.
 #   3. DECIDED       no row is left at basis = NEEDS_DECISION or blank authority.
 #
-# Exit non-zero on failure. Run after _keys/build_trait_authority.R.
+# Exit non-zero on failure. Run after _keys/build_trait_authority.R, under a
+# UTF-8 locale (LANG=en_US.UTF-8): in the C locale four labels with non-ASCII
+# characters (Hand–eye, ...µm, ...mmˆ2) compare unequal to their registry rows
+# and the COMPLETENESS guard reports them as both missing and orphaned.
 # -----------------------------------------------------------------------------
 
 ## Locate this script: Rscript (--file=), source() (the ofile of the innermost
@@ -54,6 +57,11 @@ if (!file.exists(reg_path))
 
 reg <- read.csv(reg_path, stringsAsFactors = FALSE, check.names = FALSE,
                 colClasses = "character", encoding = "UTF-8")
+# build_trait_authority.R writes the registry with a UTF-8 BOM, which read.csv
+# keeps as part of the first column name ("\ufefflabel"). Without this strip
+# reg$label is NULL and the validity loop below dies with "missing value where
+# TRUE/FALSE needed" instead of checking anything (seen 2026-10-20).
+names(reg) <- sub("^\ufeff", "", names(reg))
 
 # Rebuild the label -> producer map from the app's own loader, so the check can
 # never pass against a stale idea of what the app serves.

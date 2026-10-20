@@ -1,13 +1,14 @@
-built:           2026-10-20 06:54:55 PDT
-repo commit:     cb75ea9 (from .git/HEAD; git command unavailable)
+built:           2026-10-20 11:45:23 PDT
+repo commit:     unknown (not a git checkout)
 cohort:          V1 (17 species)
 match level:     species
 core threshold:  >= 80% of cohort (>= 14 species)
+pooling mode:    off
 species without any data: none
-long rows (all values):   3277
-  of which measurement:   3245
-species x variable cells: 3105
-variables in wide:        634   (matrix fill 28.8%)
+long rows (all values):   3288
+  of which measurement:   3256
+species x variable cells: 3113
+variables in wide:        634   (matrix fill 28.9%)
 variables in wide_core:   30   (matrix fill 90.6%)
 cells unresolved categorical: 0
 cells with numeric spread > 50%: 6

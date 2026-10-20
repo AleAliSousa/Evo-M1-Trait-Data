@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 # Build the Cytosplore export + source audit for EVERY cohort in
-# _keys/species_cohorts.csv, at species-level and genus-level matching.
-# Output: __Cytosplore_export/output/<cohort>/ and output/<cohort>_genus/
+# _keys/species_cohorts.csv, at species-level and genus-level matching, and --
+# at species level -- in both wild/domestic pooling modes (domestic_evidence, all;
+# see _keys/README_species_pooling.md). The plain <cohort>/ folder is pooling `off`.
+# Output: output/<cohort>/, output/<cohort>_genus/, output/<cohort>_pooled_<mode>/
 #   bash __Cytosplore_export/build_all_cohorts.sh            # all cohorts
 #   bash __Cytosplore_export/build_all_cohorts.sh HMBA V1    # a subset
 set -euo pipefail
@@ -23,12 +25,16 @@ for c in "${COHORTS[@]}"; do
     Rscript "$HERE/build_cytosplore_traits.R" "$c" "$lvl" 0.8 2>&1 | grep -E "wrote|species in cohort|NOTE|Error|error" || true
     python3 "$HERE/audit_cytosplore_variables.py" "$c" "$lvl" | grep -E "wrote|Error" || true
   done
+  for mode in domestic_evidence all; do
+    echo "=== $c / species / pooled_$mode ==="
+    Rscript "$HERE/build_cytosplore_traits.R" "$c" species 0.8 "$mode" 2>&1 | grep -E "wrote|species in cohort|pooling|NOTE|Error|error" || true
+    python3 "$HERE/audit_cytosplore_variables.py" "$c" species "$mode" | grep -E "wrote|Error" || true
+  done
 done
 python3 "$HERE/compare_cohorts.py"
 [ "${SKIP_SCAN:-0}" = 1 ] || python3 "$HERE/scan_source_tables.py" | grep -E "wrote|targets:"   # SKIP_SCAN=1 to skip the ~3 min source scan
 echo; echo "Summary (variables with data / core variables / cohort size):"
-for c in "${COHORTS[@]}"; do for lvl in species genus; do
-  p="$c"; [ "$lvl" = genus ] && p="${c}_genus"
+for c in "${COHORTS[@]}"; do for p in "$c" "${c}_genus" "${c}_pooled_domestic_evidence" "${c}_pooled_all"; do
   f="$HERE/output/$p/BUILD_INFO.txt"
   [ -f "$f" ] && printf "  %-14s %s | %s\n" "$p" "$(grep 'variables in wide:' "$f" | tr -s ' ')" "$(grep 'variables in wide_core' "$f" | tr -s ' ')"
 done; done

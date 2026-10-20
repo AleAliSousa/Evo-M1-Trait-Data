@@ -91,7 +91,9 @@ SPECIES_CANON = {
     "sarcrophilus harrisii": "Sarcophilus harrisii", "macropus fulginosus": "Macropus fuliginosus",
     "setonyx brachyurus": "Setonix brachyurus", "dasyprocta leoporina": "Dasyprocta leporina",
     "sciurus caroliniensis": "Sciurus carolinensis", "rhinolophus rouxi": "Rhinolophus rouxii",
-    "mustela putorius furo": "Mustela putorius", "capra hircus": "Capra hircus",
+    "capra hircus": "Capra hircus",
+    # "mustela putorius furo" is deliberately NOT reduced to the wild binomial (removed 2026-10-20):
+    # wild/domestic pooling is a read-time decision (_keys/species_pooling.csv), not an identity fix.
 }
 STOP = {"and", "et", "al", "the", "in", "press", "of", "&"}
 

@@ -4,9 +4,9 @@ Built 2026-10-20 by `__Cytosplore_export/audit_cytosplore_variables.py` from the
 
 ## Q1. Secondary compilations vs primary sources
 
-- 634 exported variables; 3105 species x variable cells.
-- cells with at least one primary source: 2167
-- cells fed only by compilations (secondary): 841 in 186 variables
+- 634 exported variables; 3113 species x variable cells.
+- cells with at least one primary source: 2173
+- cells fed only by compilations (secondary): 843 in 186 variables
 - of those, cells where a PRIMARY value for the same species and structure x measure exists in the compiled database (another variable of the same compatibility group): 46
 - cells whose role could not be resolved: 97
 - variables with NO primary source at all: 145
@@ -18,7 +18,7 @@ Compilations contributing secondary-only cells (cells):
 - Jones_etal_2009: 134
 - Kaufman__2004: 108
 - Karbowski__2007: 101
-- deMagalhães_etal_2024: 58
+- deMagalhães_etal_2024: 58
 - Heffner_Masterton_1975: 42
 - Myhrvold_etal_2015: 41
 - Heiss_etal_2004: 26
@@ -35,7 +35,7 @@ Variables with secondary-only cells for which a primary exists in the same group
 - `Depth` (8 sp): 8 secondary-only cells; primary for 1 of them via SpinalCord | motor_pathway
 - `Length` (8 sp): 8 secondary-only cells; primary for 1 of them via SpinalCord | motor_pathway
 - `Largest fiber diameter µm` (7 sp): 7 secondary-only cells; primary for 7 of them via CorticospinalTract | motor_pathway
-- `Binocular_field_compiled_Heesy2004 (deg)` (5 sp): 5 secondary-only cells; primary for 3 of them via family: visual_field
+- `Binocular_field_compiled_Heesy2004 (deg)` (6 sp): 6 secondary-only cells; primary for 3 of them via family: visual_field
 - `Number of fibers per tract` (7 sp): 4 secondary-only cells; primary for 4 of them via CorticospinalTract | motor_pathway
 - `Brain_Mass_mass_or_volume (g)` (12 sp): 2 secondary-only cells; primary for 2 of them via family: brain_size
 - `Endocranial_volume (mL)` (7 sp): 2 secondary-only cells; primary for 2 of them via family: brain_size
@@ -85,7 +85,7 @@ Top pooling candidates (gain in cohort species):
 - family: spine_count: 9 vars, best single 3 -> union 5 (+2); bases: spine_count__golgi: 6; spine_count__LYinj: 3 -- do not pool across bases; pool within a basis only
 - family: basal_dendritic_field_area: 6 vars, best single 2 -> union 3 (+1); bases: basal_dendritic_field_area__LYinj: 6 -- little to gain
 - family: cff: 2 vars, best single 4 -> union 5 (+1); bases: cff_behavioural: 1; cff_electrophysiological: 1 -- do not pool across bases; pool within a basis only
-- family: visual_acuity: 4 vars, best single 10 -> union 11 (+1); bases: acuity_anatomical: 2; acuity_behavioural: 1; acuity_method_unstated: 1 -- do not pool across bases; pool within a basis only
+- family: visual_acuity: 4 vars, best single 11 -> union 12 (+1); bases: acuity_anatomical: 2; acuity_behavioural: 1; acuity_method_unstated: 1 -- do not pool across bases; pool within a basis only
 
 ## Key gaps found upstream
 
@@ -95,6 +95,7 @@ _keys/variable_catalog.csv:
 
 - Jones_etal_2009: 195 cells; catalog roles = no catalog rows (no *_definitions.csv in folder?)
 - Myhrvold_etal_2015: 151 cells; catalog roles = no catalog rows (no *_definitions.csv in folder?)
+- deMagalhães_etal_2024: 150 cells; catalog roles = no catalog rows (no *_definitions.csv in folder?)
 - Baker_etal_2025: 88 cells; catalog roles = no catalog rows (no *_definitions.csv in folder?)
 - Burish_etal_2010: 49 cells; catalog roles = {'review': 10}
 - Isler_etal_2008: 33 cells; catalog roles = no catalog rows (no *_definitions.csv in folder?)

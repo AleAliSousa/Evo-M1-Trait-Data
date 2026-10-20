@@ -1,15 +1,16 @@
-built:           2026-10-20 06:55:18 PDT
-repo commit:     cb75ea9 (from .git/HEAD; git command unavailable)
+built:           2026-10-20 11:46:11 PDT
+repo commit:     unknown (not a git checkout)
 cohort:          EC (14 species)
 match level:     genus  (any congener / Genus sp. / hybrid label counts; values pooled across them)
 core threshold:  >= 80% of cohort (>= 12 species)
+pooling mode:    off
 species without any data: none
-long rows (all values):   9759
-  of which measurement:   9671
+long rows (all values):   9764
+  of which measurement:   9676
 species x variable cells: 3346
 variables in wide:        651   (matrix fill 36.7%)
 variables in wide_core:   46   (matrix fill 96.3%)
-cells unresolved categorical: 18
+cells unresolved categorical: 19
 cells with numeric spread > 50%: 295
 units: 650 from key, 0 from merge rows, 1 parsed from label, 0 none
 variables flagged m1_motor_related: 95 (of which core: 0)

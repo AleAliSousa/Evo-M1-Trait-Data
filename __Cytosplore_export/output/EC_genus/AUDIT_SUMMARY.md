@@ -18,7 +18,7 @@ Compilations contributing secondary-only cells (cells):
 - Jones_etal_2009: 158
 - Kaufman__2004: 100
 - Karbowski__2007: 79
-- deMagalhães_etal_2024: 65
+- deMagalhães_etal_2024: 65
 - Myhrvold_etal_2015: 43
 - Heffner_Masterton_1975: 31
 - Boyer_Harrington_2019: 27
@@ -96,6 +96,7 @@ _keys/variable_catalog.csv:
 
 - Myhrvold_etal_2015: 1181 cells; catalog roles = no catalog rows (no *_definitions.csv in folder?)
 - Jones_etal_2009: 1059 cells; catalog roles = no catalog rows (no *_definitions.csv in folder?)
+- deMagalhães_etal_2024: 485 cells; catalog roles = no catalog rows (no *_definitions.csv in folder?)
 - Baker_etal_2025: 281 cells; catalog roles = no catalog rows (no *_definitions.csv in folder?)
 - Burish_etal_2010: 87 cells; catalog roles = {'review': 10}
 - Isler_etal_2008: 80 cells; catalog roles = no catalog rows (no *_definitions.csv in folder?)

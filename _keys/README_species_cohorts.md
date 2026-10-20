@@ -165,6 +165,42 @@ count, because every life-history compilation files the pig and the polecat
 under the wild-form binomial. `Oryctolagus cuniculus f.d.` (2 values) and the
 `Macaca ... group` labels (1 value each) add nothing and are left alone.
 
+### Wild/domestic pooling switch (built 2026-10-20)
+
+The two domestication rows above are no longer only a ruling to make: they are
+a **read-time switch** with three positions, defined in
+`_keys/species_pooling.csv` (the label pairs) and `_keys/population_status.csv`
+(per source, wild / domestic / mixed / unknown, with the evidence), and applied
+by the app's `cohort_species(ch, pooling = )` — a control on the Cohort
+coverage tab — and by the fourth argument of
+`__Cytosplore_export/build_cytosplore_traits.R`
+(`output/<cohort>_pooled_<mode>/`). This file and the merges are untouched by
+every mode; `off` is the default and reproduces the numbers above exactly.
+See `_keys/README_species_pooling.md`.
+
+Measured on the EvoM1 export after the same-day identity fixes (printed
+`Sus scrofa domestica`, `Putorius furo`, `Mustela putorius (furo)` and Veilleux &
+Kirk's trinomial now resolve to the domestic anchors, which moved 8 variables
+onto the cohort labels without changing the full-coverage count):
+
+| mode | full coverage (25/25) | at ≥ 24/25 | pig gains | ferret gains |
+|---|---|---|---|---|
+| `off` | 3 | 8 | — | — |
+| `domestic_evidence` | 8 | 9 | +45 variables | +18 |
+| `all` | 23 | 24 | +66 | +59 |
+
+`domestic_evidence` completes five life-history variables (Female_sexual_maturity,
+Litter_size, Litters_per_year, Maximum_longevity, Neonate_body_mass): the pig
+and polecat rows of PanTHERIA / Amniote / AnAge are admitted because those
+compilations are `mixed`, and the laboratory psychophysics, metabolic and
+corticospinal rows because their sources print `pig`, `ferret`, `Hog
+(domestic)` or carry Genoud's `Domestic = 1` flag. `all` adds the fifteen
+EltonTraits diet / foraging variables (wild populations by design, so
+`domestic_evidence` keeps them out), Wimberly's gait, Ashwell's polecat
+cerebellar volumes, Jacobs' and Falcone's polecat cell morphology, and Smaers'
+cerebellar volumes — i.e. exactly the rows the population key marks `wild` or
+`unknown`.
+
 ### The Saimiri case the variant rule does not reach
 
 `Saimiri sciureus` carries **239 values across 15 datasets** — the Stephan

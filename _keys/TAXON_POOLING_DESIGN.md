@@ -8,8 +8,23 @@ its modern components). This records where that decision is made today, why
 the two requests are not the same kind of problem, and what a flexible
 version would look like.
 
-Nothing here is implemented beyond the concept-boundary guard in
-`_checks/check_cohort_coverage.R`. It is a map, not a change.
+**Status 2026-10-20.** The domestication axis of this design is now built, as
+a read-time switch and nothing else: `species_pooling.csv` (the pairs, with
+basis and authority), `population_status.csv` (per source, wild / domestic /
+mixed / unknown, with evidence), a `pooling` argument on the app's
+`cohort_species()` with three modes (`off`, `domestic_evidence`, `all`), the
+same argument on `__Cytosplore_export/build_cytosplore_traits.R`, and a
+control on the app's Cohort coverage tab. `off` is the default everywhere and
+reproduces today's numbers. See `README_species_pooling.md` and
+`README_population_status.md`. The identity-level inconsistencies that
+preceded it (printed `Sus scrofa domestica`, `Putorius furo`, `Mustela putorius
+(furo)` and Veilleux & Kirk's trinomial resolving to the wild binomial) were
+fixed in the spokes the same day; that was step 1 of the order below. Steps 2,
+3 and 5, and the `pool=` argument on the resolver itself, remain as written.
+The sensu / subspecies axis is still unimplemented, deliberately.
+
+Below this line the document is the original map.
+
 
 ## The short answer
 

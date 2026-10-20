@@ -4754,6 +4754,11 @@ Sus scrofa,locomotion,Limb_posture,category,Unguligrade,,1,1,1,TRUE,Medina,prima
 Sus scrofa,locomotion,Locomotor_habit,category,Terrestrial,,1,1,1,TRUE,Medina,primary,,,Sus scrofa,Sus scrofa,hub,FALSE
 Sus scrofa,gait,Phase,percent,25.74963,25.74963,1,1,1,TRUE,Wimberly,primary,25.74963,25.74963,Sus scrofa,Sus scrofa,hub,FALSE
 Sus scrofa,locomotion,Top_speed,category,Medium,,1,1,1,TRUE,Medina,primary,,,Sus scrofa,Sus scrofa,hub,FALSE
+Sus scrofa domesticus,locomotion,Angular_utilization_index_FL,percent,44.5945945945946,44.5945945945946,1,1,1,TRUE,Medina,primary,44.5945945945946,44.5945945945946,Sus scrofa domesticus,Sus scrofa domesticus,verbatim,FALSE
+Sus scrofa domesticus,locomotion,Angular_utilization_index_HL,percent,34.8039215686275,34.8039215686275,1,1,1,TRUE,Medina,primary,34.8039215686275,34.8039215686275,Sus scrofa domesticus,Sus scrofa domesticus,verbatim,FALSE
+Sus scrofa domesticus,locomotion,Limb_posture,category,Unguligrade,,1,1,1,TRUE,Medina,primary,,,Sus scrofa domesticus,Sus scrofa domesticus,verbatim,FALSE
+Sus scrofa domesticus,locomotion,Locomotor_habit,category,Terrestrial,,1,1,1,TRUE,Medina,primary,,,Sus scrofa domesticus,Sus scrofa domesticus,verbatim,FALSE
+Sus scrofa domesticus,locomotion,Top_speed,category,Slow,,1,1,1,TRUE,Medina,primary,,,Sus scrofa domesticus,Sus scrofa domesticus,verbatim,FALSE
 Symphalangus syndactylus,locomotion,Arboreal_terrestrial,category,A,,1,1,1,TRUE,Granatosky,primary,,,Symphalangus syndactylus,Symphalangus syndactylus,verbatim,FALSE
 Symphalangus syndactylus,manipulation,Extractive_foraging,category,0,,1,1,1,TRUE,Heldstab,primary,,,Symphalangus syndactylus,Symphalangus syndactylus,verbatim,FALSE
 Symphalangus syndactylus,behavioural_flexibility,Extractive_foraging_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Symphalangus syndactylus,Symphalangus syndactylus,verbatim,FALSE

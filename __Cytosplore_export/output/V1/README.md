@@ -1,7 +1,7 @@
 # V1 species-trait tables for the Cytosplore M1 viewer (DRAFT)
 
 
-Built 2026-10-20 from Evo-M1-Trait-Data commit `cb75ea9 (from .git/HEAD; git command unavailable)` by `__Cytosplore_export/build_cytosplore_traits.R`.
+Built 2026-10-20 from Evo-M1-Trait-Data commit `unknown (not a git checkout)` by `__Cytosplore_export/build_cytosplore_traits.R`.
 Re-run that script to regenerate everything here; do not edit these CSVs by hand.
 
 ## What this is
@@ -16,12 +16,12 @@ Comparative species traits for the 17-species `V1` cohort (`_keys/species_cohort
 | `V1_traits_wide.csv` | species x variable (634) | **recommended viewer input**: species x trait matrix, one value per cell |
 | `V1_traits_wide_core.csv` | species x variable (30) | same, only traits held for >= 14 of 17 species (`in_core`) |
 | `V1_variable_dictionary.csv` | variable (634) | column metadata for the wide tables: domain, structure, measure, unit, definition, coverage |
-| `V1_traits_cells.csv` | species x variable cell (3105) | how each wide cell was made: n values, aggregation, min/max, sources |
-| `V1_traits_long.csv` | value (3277) | full provenance: every source value behind every cell |
+| `V1_traits_cells.csv` | species x variable cell (3113) | how each wide cell was made: n values, aggregation, min/max, sources |
+| `V1_traits_long.csv` | value (3288) | full provenance: every source value behind every cell |
 | `V1_domain_coverage.csv` | species | n distinct variables per domain |
 | `BUILD_INFO.txt` | - | build stamp and counts |
 
-Source audit (run `python3 __Cytosplore_export/audit_cytosplore_variables.py V1 species` after this script):
+Source audit (run `python3 __Cytosplore_export/audit_cytosplore_variables.py V1 species off` after this script):
 
 | file | one row per | use |
 |---|---|---|
@@ -61,12 +61,12 @@ Source audit (run `python3 __Cytosplore_export/audit_cytosplore_variables.py V1 
 | Microcebus murinus | Mouse lemur | Primates | 242 | Microcebus murinus |
 | Monodelphis domestica | Opossum | Didelphimorphia | 60 | Monodelphis domestica |
 | Mus musculus | Mouse | Rodentia | 170 | Mus musculus |
-| Mustela putorius furo | Ferret | Carnivora | 97 | Mustela putorius furo |
+| Mustela putorius furo | Ferret | Carnivora | 100 | Mustela putorius furo |
 | Otolemur garnettii | Galago | Primates | 151 | Otolemur garnettii |
 | Pan troglodytes | Chimpanzee | Primates | 372 | Pan troglodytes |
 | Phocoena phocoena | Harbour porpoise | Artiodactyla | 67 | Phocoena phocoena |
 | Rattus norvegicus | Rat | Rodentia | 228 | Rattus norvegicus |
-| Sus scrofa | Pig | Artiodactyla | 107 | Sus scrofa domesticus |
+| Sus scrofa | Pig | Artiodactyla | 112 | Sus scrofa domesticus |
 | Tupaia belangeri | Treeshrew | Scandentia | 73 | Tupaia belangeri |
 
 ## Variables per domain (all / core / M1-motor flagged)
@@ -102,6 +102,6 @@ Source audit (run `python3 __Cytosplore_export/audit_cytosplore_variables.py V1 
 
 ```
 Rscript __ShinyApp/build_data.R                       # only if ____EvoM1_TraitTable/*.xlsx changed
-Rscript __Cytosplore_export/build_cytosplore_traits.R V1 species 0.80
-python3 __Cytosplore_export/audit_cytosplore_variables.py V1 species
+Rscript __Cytosplore_export/build_cytosplore_traits.R V1 species 0.80 off
+python3 __Cytosplore_export/audit_cytosplore_variables.py V1 species off
 ```

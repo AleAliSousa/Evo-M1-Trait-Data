@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
 """compare_cohorts.py -- one table of data availability across every built
 cohort folder: output/cohort_comparison.csv, one row per variable, one
-`n_species__<cohort>[_genus]` column per folder (plus cohort size in the header
-row of cohort_comparison_sizes.csv). Run by build_all_cohorts.sh."""
+`n_species__<folder>` column per folder, where a folder is <cohort>, <cohort>_genus
+or <cohort>_pooled_<mode> (wild/domestic pooling, see _keys/README_species_pooling.md),
+plus cohort size and full-coverage counts per folder in cohort_comparison_sizes.csv.
+Every folder under output/ that holds a variable dictionary is included, so new
+pooling modes appear without changes here. Run by build_all_cohorts.sh."""
 import csv, os, collections
 csv.field_size_limit(10 ** 8)
 HERE = os.path.dirname(os.path.abspath(__file__)); OUT = os.path.join(HERE, "output")

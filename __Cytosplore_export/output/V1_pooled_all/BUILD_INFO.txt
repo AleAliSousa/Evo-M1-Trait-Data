@@ -1,0 +1,33 @@
+built:           2026-10-20 11:45:53 PDT
+repo commit:     unknown (not a git checkout)
+cohort:          V1 (17 species)
+match level:     species
+core threshold:  >= 80% of cohort (>= 14 species)
+pooling mode:    all  (wild-form label(s) adopted: Mustela putorius; Sus scrofa; 162 of 162 compiled rows under them admitted)
+species without any data: none
+long rows (all values):   3450
+  of which measurement:   3416
+species x variable cells: 3238
+variables in wide:        638   (matrix fill 29.9%)
+variables in wide_core:   36   (matrix fill 96.2%)
+cells unresolved categorical: 1
+cells with numeric spread > 50%: 10
+units: 637 from key, 0 from merge rows, 1 parsed from label, 0 none
+variables flagged m1_motor_related: 90 (of which core: 0)
+domains excluded from wide/cells/dictionary: dataset metadata
+
+variables per domain (all / core / m1_motor_related):
+  brain structure & size            187 /    2 /    5
+  cellular composition              125 /    0 /    4
+  cortical & cerebellar folding       9 /    0 /    0
+  body size                           2 /    2 /    0
+  metabolism                         72 /    2 /    2
+  life history                       21 /   12 /    0
+  diet & ecology                     29 /   18 /    0
+  behaviour & cognition              30 /    0 /    9
+  sensorimotor & motor pathways      21 /    0 /   21
+  hand & limb morphology             17 /    0 /   17
+  sleep & torpor                      7 /    0 /    0
+  Unclassified                        1 /    0 /    0
+  cellular morphology                97 /    0 /   32
+  sensory performance                20 /    0 /    0

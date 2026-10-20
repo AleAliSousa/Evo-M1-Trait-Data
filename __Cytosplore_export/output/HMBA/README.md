@@ -1,7 +1,7 @@
 # HMBA species-trait tables for the Cytosplore M1 viewer (DRAFT)
 
 
-Built 2026-10-20 from Evo-M1-Trait-Data commit `cb75ea9 (from .git/HEAD; git command unavailable)` by `__Cytosplore_export/build_cytosplore_traits.R`.
+Built 2026-10-20 from Evo-M1-Trait-Data commit `unknown (not a git checkout)` by `__Cytosplore_export/build_cytosplore_traits.R`.
 Re-run that script to regenerate everything here; do not edit these CSVs by hand.
 
 ## What this is
@@ -21,7 +21,7 @@ Comparative species traits for the 4-species `HMBA` cohort (`_keys/species_cohor
 | `HMBA_domain_coverage.csv` | species | n distinct variables per domain |
 | `BUILD_INFO.txt` | - | build stamp and counts |
 
-Source audit (run `python3 __Cytosplore_export/audit_cytosplore_variables.py HMBA species` after this script):
+Source audit (run `python3 __Cytosplore_export/audit_cytosplore_variables.py HMBA species off` after this script):
 
 | file | one row per | use |
 |---|---|---|
@@ -89,6 +89,6 @@ Source audit (run `python3 __Cytosplore_export/audit_cytosplore_variables.py HMB
 
 ```
 Rscript __ShinyApp/build_data.R                       # only if ____EvoM1_TraitTable/*.xlsx changed
-Rscript __Cytosplore_export/build_cytosplore_traits.R HMBA species 0.80
-python3 __Cytosplore_export/audit_cytosplore_variables.py HMBA species
+Rscript __Cytosplore_export/build_cytosplore_traits.R HMBA species 0.80 off
+python3 __Cytosplore_export/audit_cytosplore_variables.py HMBA species off
 ```

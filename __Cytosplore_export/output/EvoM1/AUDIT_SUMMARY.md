@@ -4,9 +4,9 @@ Built 2026-10-20 by `__Cytosplore_export/audit_cytosplore_variables.py` from the
 
 ## Q1. Secondary compilations vs primary sources
 
-- 638 exported variables; 4179 species x variable cells.
-- cells with at least one primary source: 2873
-- cells fed only by compilations (secondary): 1190 in 187 variables
+- 638 exported variables; 4187 species x variable cells.
+- cells with at least one primary source: 2879
+- cells fed only by compilations (secondary): 1192 in 187 variables
 - of those, cells where a PRIMARY value for the same species and structure x measure exists in the compiled database (another variable of the same compatibility group): 55
 - cells whose role could not be resolved: 116
 - variables with NO primary source at all: 145
@@ -18,7 +18,7 @@ Compilations contributing secondary-only cells (cells):
 - Jones_etal_2009: 202
 - Karbowski__2007: 132
 - Kaufman__2004: 108
-- deMagalhães_etal_2024: 86
+- deMagalhães_etal_2024: 86
 - Myhrvold_etal_2015: 85
 - Heffner_Masterton_1975: 64
 - Navarrete_etal_2016: 40
@@ -36,8 +36,8 @@ Variables with secondary-only cells for which a primary exists in the same group
 - `Length` (12 sp): 12 secondary-only cells; primary for 1 of them via SpinalCord | motor_pathway
 - `Largest fiber diameter µm` (8 sp): 8 secondary-only cells; primary for 8 of them via CorticospinalTract | motor_pathway
 - `Endocranial_volume_female (mL)` (7 sp): 6 secondary-only cells; primary for 6 of them via family: brain_size
+- `Binocular_field_compiled_Heesy2004 (deg)` (6 sp): 6 secondary-only cells; primary for 3 of them via family: visual_field
 - `Brain_Mass_mass_or_volume (g)` (20 sp): 5 secondary-only cells; primary for 5 of them via family: brain_size
-- `Binocular_field_compiled_Heesy2004 (deg)` (5 sp): 5 secondary-only cells; primary for 3 of them via family: visual_field
 - `Number of fibers per tract` (9 sp): 4 secondary-only cells; primary for 4 of them via CorticospinalTract | motor_pathway
 - `Endocranial_volume (mL)` (12 sp): 2 secondary-only cells; primary for 2 of them via family: brain_size
 - `V1_pyramidal_L3_basal_dendritic_field_area [LYinj] (um2)` (2 sp): 2 secondary-only cells; primary for 1 of them via family: basal_dendritic_field_area
@@ -98,6 +98,7 @@ _keys/variable_catalog.csv:
 
 - Jones_etal_2009: 280 cells; catalog roles = no catalog rows (no *_definitions.csv in folder?)
 - Myhrvold_etal_2015: 235 cells; catalog roles = no catalog rows (no *_definitions.csv in folder?)
+- deMagalhães_etal_2024: 199 cells; catalog roles = no catalog rows (no *_definitions.csv in folder?)
 - Baker_etal_2025: 151 cells; catalog roles = no catalog rows (no *_definitions.csv in folder?)
 - Burish_etal_2010: 49 cells; catalog roles = {'review': 10}
 - Isler_etal_2008: 46 cells; catalog roles = no catalog rows (no *_definitions.csv in folder?)

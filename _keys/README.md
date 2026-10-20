@@ -35,6 +35,16 @@ Each maps a collection's raw labels to the hub; it never references the other te
 
 A paper's species name → look up in its team's `species_key.csv` → `accepted_name` → `species_reference.csv` (taxonomy, NCBI taxid). A paper's structure label → its team's `anatomy_key.csv` → `standardized_term` → `anatomy_reference.csv`. Adding a paper = adding rows to its team's key (and any new species/structures to the shared reference). Adding a team = a new subfolder.
 
+## Wild/domestic pooling keys (added 2026-10-20, read-time only)
+
+- **`species_pooling.csv`** — wild/domestic label pairs (`Sus scrofa` / `Sus scrofa domesticus`,
+  `Mustela putorius` / `Mustela putorius furo`), with basis and authority. Consumed by the app's
+  `cohort_species(ch, pooling =)` and the Cytosplore builder's fourth argument; no merge reads it.
+  `README_species_pooling.md`.
+- **`population_status.csv`** — per (source token, label): wild / domestic / mixed / unknown, with the
+  evidence from the source row. Drives the `domestic_evidence` mode. Seeded by
+  `build_population_status.py`; hand edits survive a re-run. `README_population_status.md`.
+
 ## Cross-domain structure keys (added 2026-10-07, all rows `drafted`)
 
 Started for the Finder's Coverage tab (`__Finder/README.md`); usable by any merge.

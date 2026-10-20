@@ -1,4 +1,4 @@
-# Heffner_Heffner_1985_Resultstext
+# Heffner_Heffner_1985_ResultsText
 
 ## Source
 Heffner, R. S., & Heffner, H. E. (1985). Hearing in Mammals: The Least

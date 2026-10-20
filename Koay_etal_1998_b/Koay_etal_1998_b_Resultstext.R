@@ -1,4 +1,4 @@
-## Koay_etal_1998_b_Resultstext.R -- snapshot -> analysis CSV + public TSV
+## Koay_etal_1998_b_ResultsText.R -- snapshot -> analysis CSV + public TSV
 ##
 ## Koay, G., Kearns, D., Heffner, H. E., & Heffner, R. S. (1998). Passive
 ## sound-localization ability of the big brown bat (Eptesicus fuscus).
@@ -30,7 +30,7 @@
   stop("Run with Rscript file.R, or open in RStudio and click Source (save first).", call. = FALSE)
 })
 folder    <- dirname(.sp)
-item_name <- tools::file_path_sans_ext(basename(.sp))   # "Koay_etal_1998_b_Resultstext"
+item_name <- tools::file_path_sans_ext(basename(.sp))   # "Koay_etal_1998_b_ResultsText"
 base <- local({
   d <- folder
   while (dirname(d) != d && !file.exists(file.path(d, "__ReadMe.xlsx"))) d <- dirname(d)

@@ -25,7 +25,10 @@ item_name <- c("Changizi__2001_Figure3",
                "Mota_HerculanoHouzel_2015_TableS1",# ADDED 2026-08-25: OWN columns only (AG total surface, MHH folding index, thickness; per ONE hemisphere). "_other" columns are secondary compilations — never merged.
                "Mota_etal_2019_SupplementaryTableS1",# ADDED 2026-08-25: AT/AE/T only (per one hemisphere). VT/VG/VW volumes HELD for a __merging_volumes overlap audit; N (cortical neurons) skipped as a compilation.
                "Smaers_etal_2017_TableS1part2",     # ADDED 2026-08-25 (owner decision): SECONDARY — Brodmann 1909 regional surfaces via Smaers 2017. Ingested deliberately (primary not built); a future Brodmann-1909 build supersedes it.
-               "Brodmann__1913_Table1")             # ADDED 2026-08-25: PRIMARY — Brodmann 1913 total cortical surface, one hemisphere, 38 taxa (bespoke block: one human row kept).
+               "Brodmann__1913_Table1",             # ADDED 2026-08-25: PRIMARY — Brodmann 1913 total cortical surface, one hemisphere, 38 taxa (bespoke block: one human row kept).
+               "Campos_Welker_1976_Table1",         # ADDED 2026-10-19: PRIMARY — total cortical surface, fissure subset/percentage, and thickness; one right hemisphere per species.
+               "Huffman_etal_1999_TABLE2",          # ADDED 2026-10-19: PRIMARY — mapped S1 surface, averaged across cases within species.
+               "VanEssen_Drury_1997_Table1")        # ADDED 2026-10-19: PRIMARY human total neocortex + authors' visual-cortex estimate; V1 and macaque rows are secondary and remain provenance-only.
 ## Krubitzer_Kaas_1990_Table1 is documented as a related reference only: it reports RELATIVE % of a
 ## fixed 8-field visual scheme, not comparable to Finlay's area counts and with no absolute surface —
 ## so it is NOT merged numerically (see README). Its term map keeps only Species.
@@ -47,6 +50,7 @@ sp_alias <- c("Otolemur garnetti" = "Otolemur garnettii",
               "Dasyprocta primnolopha"    = "Dasyprocta prymnolopha",
               "Papio anubis"              = "Papio cynocephalus anubis",
               "Papio anubis cynocephalus" = "Papio cynocephalus anubis",
+              "Hydrochoerus hydrochoerus" = "Hydrochoerus hydrochaeris",
               ## Smaers 2017 part2 prints the chimp as a trinomial (2026-08-25). NOTE: its
               ## Papio_cynocephalus and Papio_hamadryas are two SEPARATE Brodmann taxa — neither
               ## is aliased to the Kaas-lab "Papio cynocephalus anubis" (different animals).
@@ -55,6 +59,7 @@ unify <- function(s) ifelse(s %in% names(sp_alias), sp_alias[s], s)
 
 ## Trait classes: whole-cortex vs regional. Regional traits are NEVER pooled with whole-cortex ones.
 regional_terms <- c("M1_Surface_Area.mm2", "V1_Surface_Area.mm2", "V2_Surface_Area.mm2",
+                    "S1_Surface_Area.mm2", "VisualCortex_Surface_Area.mm2",
                     "Prefrontal_Surface_Area.mm2", "OtherAssociation_Surface_Area.mm2",
                     "FrontalMotor_Surface_Area.mm2")   # FrontalMotor = Brodmann's agranular frontal block, NOT M1
 
@@ -175,6 +180,52 @@ b13 <- readr::read_tsv(file.path(tsvdir, paste0(enc("Brodmann__1913_Table1"), ".
 long[["Brodmann 1913 surface"]] <- tibble(
   Species = b13$Species, Standardized_Term = "CorticalSurface_Area.mm2",
   value = b13$`CorticalSurface_1hemisphere.mm2`, source = "Brodmann__1913_Table1")
+
+# Campos & Welker 1976 Table 1: one right hemisphere per species. The table separates total
+# cortical surface from the portion in fissures, so the latter gets its own term and is never
+# treated as exposed surface. Neocortical volume and neuron-count rows belong to their own merges.
+cw76map <- c("cortical_surface_area_mm2" = "CorticalSurface_Area.mm2",
+             "cortical_fissure_area_mm2" = "CorticalBuriedSurface_Area.mm2",
+             "cortical_surface_in_fissures_pct" = "CorticalSurfaceInFissures.pct",
+             "cortical_thickness_mm" = "CorticalThickness.mm")
+cw76 <- readr::read_tsv(file.path(tsvdir, paste0(enc("Campos_Welker_1976_Table1"), ".tsv")),
+                        show_col_types = FALSE) |>
+  filter(product == "cortical_morphometry", code %in% names(cw76map), !is.na(value))
+long[["Campos Welker 1976 cortical morphometry"]] <- tibble(
+  Species = cw76$species_as_published,
+  Standardized_Term = unname(cw76map[cw76$code]),
+  value = cw76$value, source = "Campos_Welker_1976_Table1")
+
+# Huffman et al. 1999 Table 2: primary multiunit maps of S1 in northern quoll and striped possum.
+# "Entire contralateral body" is the table's 100%-of-S1 row. Average cases within species so this
+# source contributes one Species x trait value (quoll NQ3 and NQ5; striped possum SP1). Body-part
+# subdivisions stay in the source TSV and are not pooled as whole fields here.
+h99 <- readr::read_tsv(file.path(tsvdir, paste0(enc("Huffman_etal_1999_TABLE2"), ".tsv")),
+                       show_col_types = FALSE) |>
+  filter(structure == "Entire contralateral body", !is.na(area_mm2)) |>
+  group_by(Species) |>
+  summarise(value = mean(area_mm2), .groups = "drop")
+long[["Huffman 1999 S1"]] <- tibble(
+  Species = h99$Species, Standardized_Term = "S1_Surface_Area.mm2",
+  value = h99$value, source = "Huffman_etal_1999_TABLE2")
+
+# Van Essen & Drury 1997: use only the authors' primary Visible-Man measurements and their own
+# visual-cortex synthesis. Left/right hemispheres are averaged within structure. The quoted human
+# V1 values and macaque case 79-0 are tagged secondary in the source item and intentionally remain
+# provenance-only pending a primary-source/overlap audit. Lobe and buried/gyral partitions are also
+# retained in the item but not pooled into unlike regional definitions here.
+ved97map <- c("cerebral neocortex" = "CorticalSurface_Area.mm2",
+              "estimated visual cortex" = "VisualCortex_Surface_Area.mm2")
+ved97 <- readr::read_tsv(file.path(tsvdir, paste0(enc("VanEssen_Drury_1997_Table1"), ".tsv")),
+                         show_col_types = FALSE) |>
+  filter(Species == "Homo sapiens", structure %in% names(ved97map),
+         data_role %in% c("primary", "primary synthesis"), !is.na(area_cm2)) |>
+  group_by(Species, structure) |>
+  summarise(value = mean(area_cm2) * 100, .groups = "drop")
+long[["Van Essen Drury 1997 surfaces"]] <- tibble(
+  Species = ved97$Species,
+  Standardized_Term = unname(ved97map[ved97$structure]),
+  value = ved97$value, source = "VanEssen_Drury_1997_Table1")
 
 long <- bind_rows(long) |> filter(!is.na(value)) |>
   mutate(species_printed = Species,                                 # name before this merge's unify()

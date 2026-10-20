@@ -1,4 +1,4 @@
-# Koay_etal_1998_b_Resultstext
+# Koay_etal_1998_b_ResultsText
 
 ## Source
 Koay, G., Kearns, D., Heffner, H. E., & Heffner, R. S. (1998). Passive

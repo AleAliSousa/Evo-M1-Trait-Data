@@ -14,11 +14,15 @@ papers, following the same `standardized_term` + compile pattern as `__merging_v
 | `n_somatomotor_areas` | number of somatomotor cortical areas | count |
 | `CorticalSurface_Area.mm2` | total (neo)cortical sheet surface area (**whole cortex**, per one hemisphere) | mm² |
 | `CorticalExposedSurface_Area.mm2` | **exposed** (outer-envelope) cortical surface, per one hemisphere — never pooled with the total sheet | mm² |
+| `CorticalBuriedSurface_Area.mm2` | cortical surface within fissures — a subset of total sheet, kept distinct from exposed-envelope measures | mm² |
+| `CorticalSurfaceInFissures.pct` | cortical surface within fissures as a percentage of total surface | % |
 | `CorticalThickness.mm` | mean cortical grey-matter thickness, one hemisphere | mm |
 | `FoldingIndex_MHH` | Mota & Herculano-Houzel folding index FI = AG/AE — **not** the Zilles GI, never pooled with GI | — |
 | `M1_Surface_Area.mm2` | **regional** — primary motor cortex (M1) surface area | mm² |
 | `V1_Surface_Area.mm2` | **regional** — primary visual cortex (V1) surface area | mm² |
 | `V2_Surface_Area.mm2` | **regional** — second visual area (V2) surface area | mm² |
+| `S1_Surface_Area.mm2` | **regional** — mapped primary somatosensory cortex (S1/SI) surface area | mm² |
+| `VisualCortex_Surface_Area.mm2` | **regional** — total visual-cortex surface area | mm² |
 | `Prefrontal_Surface_Area.mm2` | **regional** — prefrontal (granular frontal) surface, Brodmann partition | mm² |
 | `OtherAssociation_Surface_Area.mm2` | **regional** — Brodmann's residual "other association" category | mm² |
 | `FrontalMotor_Surface_Area.mm2` | **regional** — Brodmann's agranular frontal block (**not M1** — includes premotor) | mm² |
@@ -54,6 +58,9 @@ Mota-lineage supersede misses and one animal splits into two Species rows.
 | `Mota_etal_2019_SupplementaryTableS1` | | | | ✓ total + exposed surface + thickness⁷ | primary⁷ |
 | `Smaers_etal_2017_TableS1part2` | | | | ✓ **regional** V1/prefrontal/other-assoc/frontal-motor (10 primates) | **secondary**⁸ |
 | `Brodmann__1913_Table1` | | | | ✓ whole-cortex, one hemisphere, **34 taxa across mammal orders** | primary⁹ |
+| `Campos_Welker_1976_Table1` | | | | ✓ total + fissure subset/% + thickness, right hemisphere | primary |
+| `Huffman_etal_1999_TABLE2` | | | | ✓ **regional S1**, case means within species | primary |
+| `VanEssen_Drury_1997_Table1` | | | | ✓ human total neocortex + estimated visual cortex, L/R mean | primary / primary synthesis |
 | `Krubitzer_Kaas_1990_Table1` | | reference² | | | not merged |
 
 ¹ Finlay cites Krubitzer & Kaas 1990a as a mapping source, so its counts partly derive from that
@@ -137,6 +144,39 @@ Mota-lineage supersede misses and one animal splits into two Species rows.
   method-fixed field count, **not comparable** to Finlay's visual-area counts (19–23) — averaging the
   two would be meaningless. So it is **documented here but not merged numerically**; only its Species
   rows are kept in the term map.
+
+**2026-10-19 additions.** Campos & Welker contributes the printed total cortical surface,
+fissure-surface subset and percentage, and thickness for one right hemisphere from each species;
+its neocortical volume and neuron counts remain available in the source item for the volume and
+cell-count merges. Huffman contributes the Table 2 `Entire contralateral body` row as total mapped
+S1; its two quoll cases are averaged within source, while the striped possum has one case. Van Essen
+& Drury contributes the primary Visible-Man total and the authors' visual-cortex estimate, averaging
+left and right hemispheres after cm²→mm² conversion. Its quoted human V1 and macaque values are
+tagged secondary and are not pooled without a primary-source/overlap audit.
+
+## Registration and integration queue (2026-10-19)
+
+Eight newly built source loci have owner-paste registry workbooks in their paper folders. Until
+those rows are pasted into `__ReadMe.xlsx`, their builders deliberately skip public TSV creation and
+the compiler must not call `enc()` for them. The prepared term maps therefore carry `Species` only;
+the structure-dependent measurements require bespoke merge blocks after registration.
+
+| Item | Intended downstream disposition |
+|---|---|
+| `Catania_etal_1999_Table1` | queue total neocortex plus mapped S1/S2, A1, V1 after registry/public-export creation |
+| `Catania_Remple_2002_Table1` | queue individual total neocortex and S1; keep the approximate rat 21% comparator as relative provenance |
+| `Felleman_VanEssen_1991_Table2` | hold as secondary synthesis unless an explicit Tier-2 ingestion decision is made |
+| `Seelke_etal_2016_Table2` | hold as percentage-only experimental-group data; no absolute surface is available |
+| `Sarko_etal_2011_ResultsText` | queue age-group total neocortex, V1, and PMBSF with explicit group-mean handling |
+| `Preuss_Kaas_1996_ResultsText` | queue the one-hemisphere V1 area; blob widths/lengths remain linear traits only |
+| `Krubitzer_etal_1997_ResultsText` | queue approximate total-neocortex and PV/S2 areas; retain S1/auditory dimensions as linear traits |
+| `Campos_Welker_1976_ResultsText` | keep the approximate 80%-of-S1 head representation as relative provenance |
+
+The broader rough-value review is recorded in `cortical_area_source_triage_2026-10-19.csv`; review
+articles, figure-scale dimensions, connection-spread measurements, and skin receptive-field areas
+are citation leads rather than cortical surface observations. PDFs for the directly named
+source-only papers were copied from the `Flatmap_SurfaceArea_Project/papers_to_do` queue into their
+own repository folders; each folder's README records why no dataset item or public TSV was created.
 
 ### Collins 2010 surface area — from the paper, not the piece-sum
 Collins Dataset S1 is per **tissue piece**. Summing pieces reproduces the paper's per-hemisphere total

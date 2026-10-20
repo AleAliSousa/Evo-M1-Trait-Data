@@ -1,18 +1,18 @@
-# Conesa_etal_1991_text
+# Conesa_etal_1991_Text
 
 ## Source → Snapshot
 
 **Abstract 83: hearing in large rodents—groundhogs Marmota monax**
 
-Publication PDF: `conesa_etal_1991.pdf`. Identifier from the read-only registry: `ARO%3A1991%3A83_text`.
+Publication PDF: `conesa_etal_1991.pdf`. Identifier from the read-only registry: `ARO%3A1991%3A83_Text`.
 
 Existing constructed snapshot retained byte-for-byte; checked against PDF text.
 
 ## Data readable → Online database
 
-Build `Conesa_etal_1991_text.R` is self-locating and reads `Conesa_etal_1991_text_snapshot.csv`; it does not embed or regenerate source values. Item name comes from the script filename; encoded public stem is resolved from `__ReadMe.xlsx`, Sheet1, by Item name. The registry workbook is not edited.
+Build `Conesa_etal_1991_Text.R` is self-locating and reads `Conesa_etal_1991_Text_snapshot.csv`; it does not embed or regenerate source values. Item name comes from the script filename; encoded public stem is resolved from `__ReadMe.xlsx`, Sheet1, by Item name. The registry workbook is not edited.
 
-Outputs: `Conesa_etal_1991_text.csv` (6 rows × 11 columns) and `__Public/comparative-data/ARO%3A1991%3A83_text.tsv`. Definitions: `reference_tables/Conesa_etal_1991_text_definitions.csv` (fixed 10-column schema). Publication context not part of the printed table lives in item-scoped `reference_tables/*_context.csv`, where present. Printed species names are retained; species harmonisation is deferred to collection-scoped keys and not hardcoded.
+Outputs: `Conesa_etal_1991_Text.csv` (6 rows × 11 columns) and `__Public/comparative-data/ARO%3A1991%3A83_Text.tsv`. Definitions: `reference_tables/Conesa_etal_1991_Text_definitions.csv` (fixed 10-column schema). Publication context not part of the printed table lives in item-scoped `reference_tables/*_context.csv`, where present. Printed species names are retained; species harmonisation is deferred to collection-scoped keys and not hardcoded.
 
 Six text-reported frequencies; four groundhogs; conditioned avoidance with water reward. Responses span 32 Hz–32 kHz; 60-dB SPL hearing range is 40 Hz–27.5 kHz; best hearing at two named frequencies, 2 and 4 kHz, not a continuous optimum range. ARO:1991:83 is a constructed local identifier, not a DOI. The scan does not print the year; 1991 remains registry attribution.
 

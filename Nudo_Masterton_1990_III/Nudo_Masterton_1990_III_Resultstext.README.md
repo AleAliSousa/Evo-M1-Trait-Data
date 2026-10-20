@@ -1,7 +1,7 @@
 # Nudo and Masterton 1990 III — bounded Results text
 Nudo, R. J., & Masterton, R. B. (1990). Descending pathways to the spinal cord, III: Sites of origin of the corticospinal tract. *Journal of Comparative Neurology, 296*, 559–583. https://doi.org/10.1002/cne.902960405
 
-Exact registered item (case-sensitive): `Nudo_Masterton_1990_III_Resultstext`.
+Exact registered item (case-sensitive): `Nudo_Masterton_1990_III_ResultsText`.
 
 ## Source → Constructed TEXT snapshot → Preview
 This is a **constructed text snapshot**, not a published data table or a figure digitization. It holds **36 facts** from quantitative Results paragraphs at printed pp. **567, 569, 570–571**: total CST-origin cortical area, Region A and Region B summaries and named extrema. Short source excerpts, original numeric literals, printed units and source criteria are retained before cleaning. Page-spanning Region B prose is explicitly located. A shared minimum is represented once for each of its two named taxa and preserves the shared quoted fragment; these are not two independent animal measurements. The item is deliberately bounded, not a complete 22-species matrix. Region C/C′ quantitative paragraphs and every figure are **not extracted**.

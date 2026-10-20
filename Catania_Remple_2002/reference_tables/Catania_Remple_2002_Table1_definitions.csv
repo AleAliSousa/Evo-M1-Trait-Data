@@ -1,0 +1,13 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,accepted species name,,Species,,primary,Rodentia,Catania_Remple_2002_Table1,,
+common_name,common name as used in the source,,,,info,Rodentia,Catania_Remple_2002_Table1,,
+case_id,naked mole-rat case identifier,,,,info,Rodentia,Catania_Remple_2002_Table1,blank for summaries and rat comparison,
+statistic,individual / mean / SD / approximate,,,,info,Rodentia,Catania_Remple_2002_Table1,,
+n,sample size associated with row,,,,info,Rodentia,Catania_Remple_2002_Table1,animals for mole-rats; hemispheres for rat comparison,
+structure,cortical field or body-part representation,,,,info,Rodentia,Catania_Remple_2002_Table1,,
+area_mm2,cortical surface area,cortex,surface area,value mm2,primary,Rodentia,Catania_Remple_2002_Table1,values in parentheses in Table 1,
+percent_value,printed percentage,cortex,surface area,percent,primary,Rodentia,Catania_Remple_2002_Table1,denominator recorded separately,
+percent_denominator,denominator for percent_value,,,,info,Rodentia,Catania_Remple_2002_Table1,S1 or total neocortex,
+value_status,whether exact-as-printed or approximate,,,,provenance,Rodentia,Catania_Remple_2002_Table1,,
+where_in_paper,Table 1 or Results/Figure 4,,,,provenance,Rodentia,Catania_Remple_2002_Table1,,
+source,registry item key,,Source,,provenance,Rodentia,Catania_Remple_2002_Table1,,

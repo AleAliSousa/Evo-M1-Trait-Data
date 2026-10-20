@@ -1,14 +1,10 @@
-## Van Essen & Drury 1997, J Neurosci 17(18):7079-7102 — Table 1 + text V1 values
+## Van Essen & Drury 1997, J Neurosci 17(18):7079-7102 — Table 1 + text values
 ## doi:10.1523/JNEUROSCI.17-18-07079.1997 · surface-based atlas of the Visible Man.
 ## ONE individual: the Visible Man (Visible Human Project, NLM) — a digital atlas built from
 ## 1 mm section images of a single adult male cadaver. Areas are tile-area sums on the 3-D
 ## reconstructions (NOT flat-map areas; authors call their total a likely slight underestimate).
-## Table 1: per-hemisphere neocortex + 5 lobes + sulcal/gyral totals. Text adds V1 L/R
-## ("average-sized V1" from Rademacher et al. 1993 architectonic extents mapped onto the atlas).
-## REGISTRY NOTE: the Sheet1 row is currently named `VanEssen_etal_1997_Table1` with artifact
-## author "New Collective, A."; the paper has exactly two authors (verified against the PDF).
-## Rename the row to `VanEssen_Drury_1997_Table1` (roadmap item 1) — until then the registry
-## lookup below warns and skips the TSV. Encoded key (DOI-based) is unaffected.
+## Table 1: per-hemisphere neocortex + 5 lobes + sulcal/gyral totals. A separate frozen text
+## snapshot adds human V1 and visual-cortex estimates plus the macaque case 79-0 comparison.
 ## Snapshot frozen from the curator's transcription; all cleaning here (golden rule).
 
 options(scipen = 999)
@@ -34,8 +30,6 @@ spec <- paste0("Visible Man (Visible Human Project, National Library of Medicine
                "single adult male cadaver digital atlas)")
 meth_t1 <- paste0("surface reconstruction from Visible Man digital images (1 mm sections); ",
                   "tile-area sum on 3-D reconstruction")
-meth_v1 <- paste0("surface reconstruction; average-sized V1 (Rademacher et al. 1993 ",
-                  "architectonic extents mapped to Visible Man)")
 
 ## ---- Table 1 sheet: split "766 (100)" into value + percent ----
 raw <- as.data.frame(read_excel(file.path(folder, paste0(item_name, "_snapshot.xlsx")),
@@ -55,21 +49,19 @@ t1 <- do.call(rbind, lapply(seq_len(nrow(raw)), function(i) {
              method = meth_t1, where_in_paper = "Table 1", stringsAsFactors = FALSE)
 }))
 
-## ---- text V1 rows ----
-v1 <- data.frame(structure = "V1", hemisphere = c("right", "left"),
-                 area_cm2 = c(22, 26), pct_neocortex = c(2.7, 3.4),
-                 method = meth_v1,
-                 where_in_paper = "text (Results, 'Estimating the extent of area V1')",
-                 stringsAsFactors = FALSE)
-
-both <- rbind(t1, v1)
-clean <- data.frame(
+table_clean <- data.frame(
   Species = "Homo sapiens", common_name = "human", specimen = spec,
-  structure = both$structure, hemisphere = both$hemisphere, method = both$method,
-  area_cm2 = both$area_cm2, pct_neocortex = both$pct_neocortex,
-  where_in_paper = both$where_in_paper,
-  source = item_name, stringsAsFactors = FALSE, check.names = FALSE
+  structure = t1$structure, hemisphere = t1$hemisphere, method = t1$method,
+  area_cm2 = t1$area_cm2, pct_neocortex = t1$pct_neocortex,
+  where_in_paper = t1$where_in_paper, data_role = "primary",
+  source_note = "Table 1 tile-area sum on this atlas",
+  stringsAsFactors = FALSE, check.names = FALSE
 )
+
+text_clean <- read.csv(file.path(folder, paste0(item_name, "_text_snapshot.csv")),
+                       stringsAsFactors = FALSE, na.strings = "")
+clean <- rbind(table_clean, text_clean[names(table_clean)])
+clean$source <- item_name
 
 csv_file <- file.path(folder, paste0(item_name, ".csv"))
 write.csv(clean, csv_file, row.names = FALSE)
@@ -82,5 +74,5 @@ if (!is.na(base) && file.exists(file.path(base, "__ReadMe.xlsx"))) {
   tsv_dir <- file.path(base, "__Public", "comparative-data")
   if (!is.na(enc) && nzchar(enc) && dir.exists(path.expand(tsv_dir)))
     write.table(clean, file.path(path.expand(tsv_dir), paste0(enc, ".tsv")), sep = "\t", row.names = FALSE)
-  else warning("Item encoded not found (registry row still named VanEssen_etal_1997_Table1?); TSV skipped.")
+  else warning("Item encoded not found; TSV skipped.")
 }

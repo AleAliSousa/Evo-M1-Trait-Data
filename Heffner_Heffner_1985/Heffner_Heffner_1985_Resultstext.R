@@ -1,4 +1,4 @@
-## Heffner_Heffner_1985_Resultstext.R -- snapshot -> analysis CSV + public TSV
+## Heffner_Heffner_1985_ResultsText.R -- snapshot -> analysis CSV + public TSV
 ##
 ## Heffner, R. S., & Heffner, H. E. (1985). Hearing in Mammals: The Least
 ## Weasel. J Mammal, 66, 745-755. doi:10.2307/1380801
@@ -23,7 +23,7 @@
   stop("Run with Rscript file.R, or open in RStudio and click Source (save first).", call. = FALSE)
 })
 folder    <- dirname(.sp)
-item_name <- tools::file_path_sans_ext(basename(.sp))   # "Heffner_Heffner_1985_Resultstext"
+item_name <- tools::file_path_sans_ext(basename(.sp))   # "Heffner_Heffner_1985_ResultsText"
 base <- local({
   d <- folder
   while (dirname(d) != d && !file.exists(file.path(d, "__ReadMe.xlsx"))) d <- dirname(d)

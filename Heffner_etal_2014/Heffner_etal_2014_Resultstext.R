@@ -1,4 +1,4 @@
-## Heffner_etal_2014_Resultstext.R -- snapshot -> analysis CSV + public TSV
+## Heffner_etal_2014_ResultsText.R -- snapshot -> analysis CSV + public TSV
 ##
 ## Heffner, R. S., Koay, G., & Heffner, H. E. (2014). Hearing in alpacas
 ## (Vicugna pacos): audiogram, localization acuity, and use of binaural

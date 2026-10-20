@@ -1,0 +1,12 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,accepted species name,,Species,,primary,Rodentia,Seelke_etal_2016_Table2,,
+common_name,common name,,,,info,Rodentia,Seelke_etal_2016_Table2,,
+group,early-experience or pharmacological group,,,,info,Rodentia,Seelke_etal_2016_Table2,HC / LC / Saline / OT / OTA,
+sex,sex group,,,,info,Rodentia,Seelke_etal_2016_Table2,Male / Female,
+n,animals contributing to group mean,,,,info,Rodentia,Seelke_etal_2016_Table2,total 64,
+structure,reported cortical field or total myelinated fraction,,,,info,Rodentia,Seelke_etal_2016_Table2,,
+mean_pct_cortical_sheet,group mean percent of cortical sheet,cortex,surface area,mean percent,primary,Rodentia,Seelke_etal_2016_Table2,hemispheres averaged within animal where both available,
+se_pct_cortical_sheet,standard error of group mean,cortex,surface area,SE percent,primary,Rodentia,Seelke_etal_2016_Table2,,
+statistic,summary statistic label,,,,info,Rodentia,Seelke_etal_2016_Table2,mean ± SE,
+where_in_paper,source location,,,,provenance,Rodentia,Seelke_etal_2016_Table2,Table 2,
+source,registry item key,,Source,,provenance,Rodentia,Seelke_etal_2016_Table2,,

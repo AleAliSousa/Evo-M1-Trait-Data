@@ -1,4 +1,4 @@
-# Heffner_etal_2013_Resultstext
+# Heffner_etal_2013_ResultsText
 
 ## Source
 Heffner, R. S., Koay, G., & Heffner, H. E. (2013). Hearing in American
@@ -52,10 +52,10 @@ species:
 
 | file | role |
 |---|---|
-| `Heffner_etal_2013_Resultstext_snapshot.csv` | frozen source, values as printed / derived-and-labeled |
-| `Heffner_etal_2013_Resultstext.R` | reads the snapshot, writes CSV + public TSV (includes an arithmetic sanity check) |
-| `Heffner_etal_2013_Resultstext.csv` | tidy analysis rows |
-| `reference_tables/Heffner_etal_2013_Resultstext_definitions.csv` | data dictionary |
+| `Heffner_etal_2013_ResultsText_snapshot.csv` | frozen source, values as printed / derived-and-labeled |
+| `Heffner_etal_2013_ResultsText.R` | reads the snapshot, writes CSV + public TSV (includes an arithmetic sanity check) |
+| `Heffner_etal_2013_ResultsText.csv` | tidy analysis rows |
+| `reference_tables/Heffner_etal_2013_ResultsText_definitions.csv` | data dictionary |
 
 ## Data role
 Row 1 (*D. rotundus*) is primary (this paper's own new measurement, n=3

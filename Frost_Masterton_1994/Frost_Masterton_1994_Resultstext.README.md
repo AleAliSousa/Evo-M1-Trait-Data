@@ -1,4 +1,4 @@
-# Frost_Masterton_1994_Resultstext
+# Frost_Masterton_1994_ResultsText
 
 ## Source
 Frost, S. B., & Masterton, R. B. (1994). Hearing in primitive mammals:

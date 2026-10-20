@@ -1,4 +1,4 @@
-## Zilles_Rehkämper_1988_text
+## Zilles_Rehkämper_1988_Text
 
 ### Source
 
@@ -9,9 +9,9 @@ This item captures summary statistics reported in the chapter text rather than a
 ### Files
 
 - `zilles_rehkamper_1988.pdf`: publication.
-- `Zilles_Rehkämper_1988_text_snapshot.csv`: hand-transcribed, source-faithful snapshot of the textual summary statistics.
-- `Zilles_Rehkämper_1988_text.R`: preparation script; reads only the snapshot.
-- `Zilles_Rehkämper_1988_text.csv`: typed analysis-ready output written by the script.
+- `Zilles_Rehkämper_1988_Text_snapshot.csv`: hand-transcribed, source-faithful snapshot of the textual summary statistics.
+- `Zilles_Rehkämper_1988_Text.R`: preparation script; reads only the snapshot.
+- `Zilles_Rehkämper_1988_Text.csv`: typed analysis-ready output written by the script.
 
 ### Snapshot organization
 

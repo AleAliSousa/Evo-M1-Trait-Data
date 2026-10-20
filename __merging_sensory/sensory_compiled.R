@@ -187,7 +187,7 @@ heffner_extra <- list(
   list("Heffner_Heffner_1982", "ResultsText", "binomial", list(
     c("high_freq_limit_60dB_kHz", "Audible_freq_high_60dB.kHz", "1"),
     c("low_freq_limit_60dB_Hz",   "Audible_freq_low_60dB.kHz",  "0.001"))),
-  list("Heffner_Heffner_1985", "Resultstext", "binomial", list(
+  list("Heffner_Heffner_1985", "ResultsText", "binomial", list(
     c("audible_freq_high_60dBSPL_khz", "Audible_freq_high_60dB.kHz", "1"),
     c("audible_freq_low_60dBSPL_khz",  "Audible_freq_low_60dB.kHz",  "1"))),
   list("Heffner_Heffner_2010", "ResultsText", "binomial", list(
@@ -196,14 +196,14 @@ heffner_extra <- list(
   list("Heffner_etal_2001", "ResultsText", "species_sci", list(
     c("hearing_range_high_khz", "Audible_freq_high_60dB.kHz", "1"),
     c("hearing_range_low_khz",  "Audible_freq_low_60dB.kHz",  "1"))),
-  list("Heffner_etal_2003", "Resultstext", "binomial", list(
+  list("Heffner_etal_2003", "ResultsText", "binomial", list(
     c("hearing_range_high_60dBSPL_kHz",    "Audible_freq_high_60dB.kHz", "1"),
     c("hearing_range_low_60dBSPL_kHz",     "Audible_freq_low_60dB.kHz",  "1"),
     c("interaural_distance_functional_us", "Interaural_distance_functional.us", "1"))),
   list("Heffner_etal_2006", "ResultsText", "binomial", list(
     c("high_freq_limit_60dB_kHz", "Audible_freq_high_60dB.kHz", "1"),
     c("low_freq_limit_60dB_kHz",  "Audible_freq_low_60dB.kHz",  "1"))),
-  list("Heffner_etal_2013", "Resultstext", "binomial", list(
+  list("Heffner_etal_2013", "ResultsText", "binomial", list(
     c("hearing_range_high_60dBSPL_kHz",    "Audible_freq_high_60dB.kHz", "1"),
     c("hearing_range_low_60dBSPL_kHz",     "Audible_freq_low_60dB.kHz",  "1"),
     c("interaural_distance_functional_us", "Interaural_distance_functional.us", "1"))),
@@ -214,7 +214,7 @@ heffner_extra <- list(
   list("Heffner_etal_2015", "TableI", "binomial", list(
     c("minimum_audible_angle_deg", "Sound_localization_threshold.deg", "1"),
     c("functional_head_size_us",   "Interaural_distance_functional.us", "1"))),
-  list("Koay_etal_1998_b", "Resultstext", "binomial", list(
+  list("Koay_etal_1998_b", "ResultsText", "binomial", list(
     c("sound_localization_threshold_deg", "Sound_localization_threshold.deg", "1"))))
 
 heffner_lab_items <- c(heffner_lab_items,

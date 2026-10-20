@@ -1,4 +1,4 @@
-## Frost_Masterton_1994_Resultstext.R -- snapshot -> analysis CSV + public TSV
+## Frost_Masterton_1994_ResultsText.R -- snapshot -> analysis CSV + public TSV
 ##
 ## Frost, S. B., & Masterton, R. B. (1994). Hearing in primitive mammals:
 ## Monodelphis domestica and Marmosa elegans. Hear Res, 76, 67-72.
@@ -24,7 +24,7 @@
   stop("Run with Rscript file.R, or open in RStudio and click Source (save first).", call. = FALSE)
 })
 folder    <- dirname(.sp)
-item_name <- tools::file_path_sans_ext(basename(.sp))   # "Frost_Masterton_1994_Resultstext"
+item_name <- tools::file_path_sans_ext(basename(.sp))   # "Frost_Masterton_1994_ResultsText"
 base <- local({
   d <- folder
   while (dirname(d) != d && !file.exists(file.path(d, "__ReadMe.xlsx"))) d <- dirname(d)

@@ -1,0 +1,13 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+slab,slab number (1-8) of the transverse sections sampled for animal 1's gray-matter cell-number CE calculation,,,,info,mouse,Bjugn__1993_TABLEIII,,
+Q_minus_cells_counted_oblique,number of cells counted in the oblique sections for that slab (printed column Q-),SpinalCord_GrayMatter,cell_count,,primary,mouse,Bjugn__1993_TABLEIII,,
+F_fields_counted,number of fields where cells were counted for that slab (printed column F),SpinalCord_GrayMatter,field_count,,primary,mouse,Bjugn__1993_TABLEIII,,
+P_points_transverse,number of points falling on the transverse sections for that slab (printed column P),SpinalCord_GrayMatter,point_count,,primary,mouse,Bjugn__1993_TABLEIII,,
+Xi_QminusP_over_F,"Xi = Q-·P/F, printed per slab",SpinalCord_GrayMatter,Xi,,primary,mouse,Bjugn__1993_TABLEIII,,
+A_Xi_squared,"A = Xi·Xi, printed per slab",SpinalCord_GrayMatter,A,,primary,mouse,Bjugn__1993_TABLEIII,,
+B_Xi_times_Xi_plus_1,"B = Xi·Xi+1 (product with the next slab's Xi), printed per slab; blank for the last slab with no successor",SpinalCord_GrayMatter,B,,primary,mouse,Bjugn__1993_TABLEIII,blank = no successor slab,
+C_Xi_times_Xi_plus_2,"C = Xi·Xi+2 (product with the slab two positions ahead), printed per slab; blank for the last two slabs with no such successor",SpinalCord_GrayMatter,C,,primary,mouse,Bjugn__1993_TABLEIII,blank = no slab two positions ahead,
+animal_id_as_published,this worked example is for animal 1 only (same animal numbering as TABLE I/II),,,,info,mouse,Bjugn__1993_TABLEIII,,
+CE_gray_matter_cell_number,"the coefficient of error for the gray-matter cell-number estimate, computed from the Sigma row per the printed formula: CE = sqrt((3A+C-4B)/12) / SigmaXi = sqrt(84.3)/127.6 = 0.072 -- constant across all 8 rows (one CE value for the whole slab series)",SpinalCord_GrayMatter,pct.CE,,primary,mouse,Bjugn__1993_TABLEIII,"printed CE value, not independently recomputed here",
+data_role,primary (measured) vs secondary,,,,info,mouse,Bjugn__1993_TABLEIII,,
+observation_level,"worked_example_single_animal -- this table is a single-animal methodological illustration of the CE calculation, not a cross-animal dataset like TABLE I/II",,,,info,mouse,Bjugn__1993_TABLEIII,,

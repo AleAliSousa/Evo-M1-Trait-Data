@@ -1,4 +1,4 @@
-## Heffner_etal_2003_Resultstext.R -- snapshot -> analysis CSV + public TSV
+## Heffner_etal_2003_ResultsText.R -- snapshot -> analysis CSV + public TSV
 ##
 ## Heffner, R. S., Koay, G., & Heffner, H. E. (2003). Hearing in American
 ## leaf-nosed bats. III: Artibeus jamaicensis. Hearing Research 184:113-122.
@@ -32,7 +32,7 @@
   stop("Run with Rscript file.R, or open in RStudio and click Source (save first).", call. = FALSE)
 })
 folder    <- dirname(.sp)
-item_name <- tools::file_path_sans_ext(basename(.sp))   # "Heffner_etal_2003_Resultstext"
+item_name <- tools::file_path_sans_ext(basename(.sp))   # "Heffner_etal_2003_ResultsText"
 base <- local({
   d <- folder
   while (dirname(d) != d && !file.exists(file.path(d, "__ReadMe.xlsx"))) d <- dirname(d)

@@ -1,0 +1,9 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,accepted species name,,Species,,primary,Rodentia,Campos_Welker_1976_ResultsText,,
+species_as_published,common species label used in text,,,,info,Rodentia,Campos_Welker_1976_ResultsText,,
+structure,cortical representation measured,,,,info,Rodentia,Campos_Welker_1976_ResultsText,head representation in SI,
+percent_SI,approximate fraction of SI surface,cortex,surface area,percent,primary,Rodentia,Campos_Welker_1976_ResultsText,about 80%; no per-animal values,
+value_status,source qualifier,,,,provenance,Rodentia,Campos_Welker_1976_ResultsText,about,
+where_in_paper,source location,,,,provenance,Rodentia,Campos_Welker_1976_ResultsText,Results pp. 250-251,
+note,scope note,,,,provenance,Rodentia,Campos_Welker_1976_ResultsText,statement applies to mapped brains of both taxa,
+source,registry item key,,Source,,provenance,Rodentia,Campos_Welker_1976_ResultsText,,

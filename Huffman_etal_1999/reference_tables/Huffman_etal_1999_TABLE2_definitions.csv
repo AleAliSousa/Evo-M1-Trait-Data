@@ -1,0 +1,10 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,accepted species name,,Species,,primary,Marsupialia,Huffman_etal_1999_TABLE2,,
+common_name,common name as used in the paper,,,,info,Marsupialia,Huffman_etal_1999_TABLE2,,
+case_id,case identifier,,,,info,Marsupialia,Huffman_etal_1999_TABLE2,NQ3 / NQ5 / SP1,
+structure,SI total or body-part representation,,,,info,Marsupialia,Huffman_etal_1999_TABLE2,,
+area_mm2,surface area within SI,cortex,surface area,value mm2,primary,Marsupialia,Huffman_etal_1999_TABLE2,,
+pct_SI,representation as percent of SI,cortex,surface area,percent,derived-in-source,Marsupialia,Huffman_etal_1999_TABLE2,rows are not additive because of overlaps and nested regions,
+where_in_paper,source location,,,,provenance,Marsupialia,Huffman_etal_1999_TABLE2,TABLE 2,
+method,mapping and architectonic method,,,,provenance,Marsupialia,Huffman_etal_1999_TABLE2,,
+source,registry item key,,Source,,provenance,Marsupialia,Huffman_etal_1999_TABLE2,,

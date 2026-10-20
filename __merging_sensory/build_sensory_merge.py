@@ -221,7 +221,7 @@ HEFFNER_EXTRA = [
     ("Heffner_Heffner_1982", "ResultsText", "binomial", [
         ("high_freq_limit_60dB_kHz", "Audible_freq_high_60dB.kHz", 1.0),
         ("low_freq_limit_60dB_Hz",   "Audible_freq_low_60dB.kHz",  0.001)]),
-    ("Heffner_Heffner_1985", "Resultstext", "binomial", [
+    ("Heffner_Heffner_1985", "ResultsText", "binomial", [
         ("audible_freq_high_60dBSPL_khz", "Audible_freq_high_60dB.kHz", 1.0),
         ("audible_freq_low_60dBSPL_khz",  "Audible_freq_low_60dB.kHz",  1.0)]),
     ("Heffner_Heffner_2010", "ResultsText", "binomial", [
@@ -230,14 +230,14 @@ HEFFNER_EXTRA = [
     ("Heffner_etal_2001", "ResultsText", "species_sci", [
         ("hearing_range_high_khz", "Audible_freq_high_60dB.kHz", 1.0),
         ("hearing_range_low_khz",  "Audible_freq_low_60dB.kHz",  1.0)]),
-    ("Heffner_etal_2003", "Resultstext", "binomial", [
+    ("Heffner_etal_2003", "ResultsText", "binomial", [
         ("hearing_range_high_60dBSPL_kHz",   "Audible_freq_high_60dB.kHz", 1.0),
         ("hearing_range_low_60dBSPL_kHz",    "Audible_freq_low_60dB.kHz",  1.0),
         ("interaural_distance_functional_us", "Interaural_distance_functional.us", 1.0)]),
     ("Heffner_etal_2006", "ResultsText", "binomial", [
         ("high_freq_limit_60dB_kHz", "Audible_freq_high_60dB.kHz", 1.0),
         ("low_freq_limit_60dB_kHz",  "Audible_freq_low_60dB.kHz",  1.0)]),
-    ("Heffner_etal_2013", "Resultstext", "binomial", [
+    ("Heffner_etal_2013", "ResultsText", "binomial", [
         ("hearing_range_high_60dBSPL_kHz",   "Audible_freq_high_60dB.kHz", 1.0),
         ("hearing_range_low_60dBSPL_kHz",    "Audible_freq_low_60dB.kHz",  1.0),
         ("interaural_distance_functional_us", "Interaural_distance_functional.us", 1.0)]),
@@ -248,7 +248,7 @@ HEFFNER_EXTRA = [
     ("Heffner_etal_2015", "TableI", "binomial", [
         ("minimum_audible_angle_deg", "Sound_localization_threshold.deg", 1.0),
         ("functional_head_size_us",   "Interaural_distance_functional.us", 1.0)]),
-    ("Koay_etal_1998_b", "Resultstext", "binomial", [
+    ("Koay_etal_1998_b", "ResultsText", "binomial", [
         ("sound_localization_threshold_deg", "Sound_localization_threshold.deg", 1.0)]),
 ]
 

@@ -1,4 +1,4 @@
-# Heffner_etal_2003_Resultstext
+# Heffner_etal_2003_ResultsText
 
 ## Source
 Heffner, R. S., Koay, G., & Heffner, H. E. (2003). Hearing in American
@@ -29,10 +29,10 @@ issues -- checked with `pdftotext`, clean output):
 
 | file | role |
 |---|---|
-| `Heffner_etal_2003_Resultstext_snapshot.csv` | frozen source, values as printed |
-| `Heffner_etal_2003_Resultstext.R` | reads the snapshot, writes CSV + public TSV |
-| `Heffner_etal_2003_Resultstext.csv` | tidy analysis row |
-| `reference_tables/Heffner_etal_2003_Resultstext_definitions.csv` | data dictionary |
+| `Heffner_etal_2003_ResultsText_snapshot.csv` | frozen source, values as printed |
+| `Heffner_etal_2003_ResultsText.R` | reads the snapshot, writes CSV + public TSV |
+| `Heffner_etal_2003_ResultsText.csv` | tidy analysis row |
+| `reference_tables/Heffner_etal_2003_ResultsText_definitions.csv` | data dictionary |
 
 ## Data role
 Single row, primary (this paper's own new measurement, n=3 bats, A/B/C).

@@ -72,9 +72,9 @@ final.dataframe <- tibble(
 write.csv(final.dataframe, final_csv, row.names = FALSE, na = "")
 if (!is.na(tsv_dir) && dir.exists(tsv_dir)) {
   filecodes    <- read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
-  ## Registry lookup name differs from this file's name (added 2026-09-27): the citation's first author is "Heffner, Jr., H.", and the extra comma makes the registry formula read it as "etal", giving Heffner_etal_2010_Resultstext (a different paper from the Heffner_etal_2010 folder's TableI).
+  ## Registry lookup name differs from this file's name (added 2026-09-27): the citation's first author is "Heffner, Jr., H.", and the extra comma makes the registry formula read it as "etal", giving Heffner_etal_2010_ResultsText (a different paper from the Heffner_etal_2010 folder's TableI).
   ## Only the lookup uses it; the local files keep this folder's naming.
-  registry_item_name <- "Heffner_etal_2010_Resultstext"
+  registry_item_name <- "Heffner_etal_2010_ResultsText"
   nfc <- function(x) if (requireNamespace("stringi", quietly = TRUE)) stringi::stri_trans_nfc(x) else x
   item_encoded <- filecodes$`Item encoded`[match(nfc(registry_item_name), nfc(filecodes$`Item name`))]
   if (length(item_encoded) != 1L || is.na(item_encoded) || !nzchar(item_encoded) ||

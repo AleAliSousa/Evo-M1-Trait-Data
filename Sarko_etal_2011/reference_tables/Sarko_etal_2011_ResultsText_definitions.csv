@@ -1,0 +1,11 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,accepted species name,,Species,,primary,Rodentia,Sarko_etal_2011_ResultsText,,
+common_name,common name,,,,info,Rodentia,Sarko_etal_2011_ResultsText,,
+age_group,juvenile or adult group,,,,info,Rodentia,Sarko_etal_2011_ResultsText,,
+n,animals in age group,,,,info,Rodentia,Sarko_etal_2011_ResultsText,juvenile n=2; adult n=4,
+structure,total neocortex / V1 / PMBSF of S1,,,,info,Rodentia,Sarko_etal_2011_ResultsText,,
+mean_area_mm2,mean cortical surface area,cortex,surface area,mean mm2,primary,Rodentia,Sarko_etal_2011_ResultsText,,
+sd_area_mm2,standard deviation of cortical surface area,cortex,surface area,SD mm2,primary,Rodentia,Sarko_etal_2011_ResultsText,,
+approx_pct_neocortex,approximate percent printed by source,cortex,surface area,percent,primary,Rodentia,Sarko_etal_2011_ResultsText,V1 denominator is total neocortex; source also prints ~5% for PMBSF,
+where_in_paper,source location,,,,provenance,Rodentia,Sarko_etal_2011_ResultsText,Results p. 68,
+source,registry item key,,Source,,provenance,Rodentia,Sarko_etal_2011_ResultsText,,

@@ -2,7 +2,7 @@
 ## Release switches default ON here; every identity/registry/overwrite check below is unchanged.
 if (!nzchar(Sys.getenv("EVOM1_SPINAL_NUDO_RELEASE"))) Sys.setenv(EVOM1_SPINAL_NUDO_RELEASE = "OWNER_VERIFIED_R_SOURCE_SCHEMA_AND_SCIENTIFIC_GATES")
 # PREPARED ONLY. R audit/dry-run/build/validate have NOT RUN in this environment.
-expected_basename <- "Nudo_Masterton_1990_III_Resultstext.R"
+expected_basename <- "Nudo_Masterton_1990_III_ResultsText.R"
 candidates <- character()
 for (frame in rev(sys.frames())) {
   for (field in c("ofile", "file")) {
@@ -81,7 +81,7 @@ if (file.exists(file.path(root, "__ReadMe.xlsx")) && requireNamespace("readxl", 
     if (length(matched) == 1L) {
       number <- gsub("[[:space:]]", "", as.character(filecodes$`Item number`[[matched]]))
       code <- as.character(filecodes$`Item encoded`[[matched]])
-      if (!is.na(number) && number == "Resultstext" && !is.na(code) && nzchar(code) &&
+      if (!is.na(number) && number == "ResultsText" && !is.na(code) && nzchar(code) &&
           !code %in% c("NA", "notfound") && !grepl("_$|[/\\\\]", code)) item_encoded <- code
     }
   }

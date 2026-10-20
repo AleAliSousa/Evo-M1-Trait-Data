@@ -1,0 +1,11 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,accepted species name,,Species,,primary,Eulipotyphla,Catania_etal_1999_Table1,,table species names preserved
+common_name,common name,,,,info,Eulipotyphla,Catania_etal_1999_Table1,,
+case_id,case or hemisphere identifier as printed,,,,info,Eulipotyphla,Catania_etal_1999_Table1,seven hemispheres,
+structure,cortical area or body-part representation,,,,info,Eulipotyphla,Catania_etal_1999_Table1,,
+area_mm2,surface area of the structure,cortex,surface area,value mm2,primary,Eulipotyphla,Catania_etal_1999_Table1,after fixation in 2% paraformaldehyde,
+pct_neocortex,area as percent of total neocortex,cortex,surface area,percent,derived-in-source,Eulipotyphla,Catania_etal_1999_Table1,printed in parentheses,
+unit,area unit,,,,info,Eulipotyphla,Catania_etal_1999_Table1,mm2,
+where_in_paper,source location,,,,provenance,Eulipotyphla,Catania_etal_1999_Table1,Table 1,
+measurement_basis,border and preparation method,,,,provenance,Eulipotyphla,Catania_etal_1999_Table1,,
+source,registry item key,,Source,,provenance,Eulipotyphla,Catania_etal_1999_Table1,,

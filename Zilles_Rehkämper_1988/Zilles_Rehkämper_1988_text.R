@@ -1,4 +1,4 @@
-# Zilles_Rehkämper_1988_text.R
+# Zilles_Rehkämper_1988_Text.R
 #
 # Preparation step. Converts a hand-transcribed snapshot of summary statistics
 # reported in the text of Zilles & Rehkämper (1988), Orang-utan Biology ch. 12,
@@ -27,8 +27,8 @@ base <- local({
 })
 setwd(folder)
 
-snapshot_file <- "Zilles_Rehkämper_1988_text_snapshot.csv"
-registry_item_name <- "Zilles_Rehkämper_1988_text"
+snapshot_file <- "Zilles_Rehkämper_1988_Text_snapshot.csv"
+registry_item_name <- "Zilles_Rehkämper_1988_Text"
 
 final.dataframe <- read_csv(snapshot_file, show_col_types = FALSE) %>%
   transmute(

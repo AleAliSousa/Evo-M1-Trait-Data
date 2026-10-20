@@ -1,4 +1,4 @@
-## Koay_etal_2002_Resultstext.R -- snapshot -> analysis CSV + public TSV
+## Koay_etal_2002_ResultsText.R -- snapshot -> analysis CSV + public TSV
 ##
 ## Koay, G., Bitter, K. S., Heffner, H. E., & Heffner, R. S. (2002). Hearing
 ## in American leaf-nosed bats. I: Phyllostomus hastatus. Hearing Research,

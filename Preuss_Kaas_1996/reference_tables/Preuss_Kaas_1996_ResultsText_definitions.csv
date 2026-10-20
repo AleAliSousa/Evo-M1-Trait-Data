@@ -1,0 +1,13 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,accepted species name,,Species,,primary,Primates,Preuss_Kaas_1996_ResultsText,,
+common_name,common name,,,,info,Primates,Preuss_Kaas_1996_ResultsText,,
+specimen,specimen description,,,,info,Primates,Preuss_Kaas_1996_ResultsText,one aged adult female,
+structure,V1 or V1 cytochrome-oxidase blob,,,,info,Primates,Preuss_Kaas_1996_ResultsText,,
+measure,surface area / percent / width / length / spacing,,,,info,Primates,Preuss_Kaas_1996_ResultsText,,
+value,reported numerical value,cortex,mixed,value,primary,Primates,Preuss_Kaas_1996_ResultsText,unit stored separately,
+unit,measurement unit,,,,info,Primates,Preuss_Kaas_1996_ResultsText,mm2 / percent / mm,
+statistic,individual / approximate / median,,,,info,Primates,Preuss_Kaas_1996_ResultsText,,
+n,hemisphere or blob count,,,,info,Primates,Preuss_Kaas_1996_ResultsText,,
+where_in_paper,source location,,,,provenance,Primates,Preuss_Kaas_1996_ResultsText,Results p. 108,
+note,qualifier from source,,,,provenance,Primates,Preuss_Kaas_1996_ResultsText,,
+source,registry item key,,Source,,provenance,Primates,Preuss_Kaas_1996_ResultsText,,

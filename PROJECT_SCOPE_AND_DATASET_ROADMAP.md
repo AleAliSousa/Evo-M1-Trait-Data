@@ -1028,7 +1028,7 @@ most had already finished transcribing and uploading their snapshot/CSV/R/README
 definitions files. This pass audited every one of the 43 folders directly against the
 live registry and the `__Public/comparative-data` file listing (never trusting a
 sub-agent's own end-of-run summary), completed the 3 items that had zero work done
-(`Heffner_etal_2014_Resultstext`, `Koay_etal_2002_Resultstext`,
+(`Heffner_etal_2014_ResultsText`, `Koay_etal_2002_ResultsText`,
 `Wenstrup__1984_Figures3-5`), fixed two files that had landed under a temporary
 placeholder DOI name (renamed to the correct Alt-identifier filenames), and wrote all
 55 affected registry rows (32 existing "candidate" rows fixed/promoted, 23 brand-new
@@ -1036,10 +1036,10 @@ rows added for previously-unregistered papers) by hand via direct Excel-range PA
 using the exact citation/DOI text confirmed from each item's own README.
 
 **Registered-and-built (FINISHED), items with confirmed public TSV**:
-Branstetter_etal_2017_TableIV, Frost_Masterton_1994_Resultstext, Heffner_Heffner_1985_Resultstext,
+Branstetter_etal_2017_TableIV, Frost_Masterton_1994_ResultsText, Heffner_Heffner_1985_ResultsText,
 Heffner_Heffner_2010_b_Table1, Heffner_etal_1994_a_Figure1/Figure2, Heffner_etal_1994_b_Figure3,
-Heffner_etal_1994_c_Table1, Heffner_etal_2003_Resultstext, Heffner_etal_2007_Figure6,
-Heffner_etal_2013_Resultstext, Koay_etal_1998_b_Resultstext, Mohl__1968_Table2,
+Heffner_etal_1994_c_Table1, Heffner_etal_2003_ResultsText, Heffner_etal_2007_Figure6,
+Heffner_etal_2013_ResultsText, Koay_etal_1998_b_ResultsText, Mohl__1968_Table2,
 Owren_etal_1988_Table1, Ravizza_etal_1969_ResultsText, Ravizza_Masterton_1972_ResultsText,
 Schusterman__1974_Table1, Schusterman__1981_Table1.
 
@@ -1047,7 +1047,7 @@ Schusterman__1974_Table1, Schusterman__1981_Table1.
 `__Public/comparative-data`, a 440+-item folder, across ~8 retry attempts with two
 different upload strategies -- files/rows are otherwise complete, flagged
 `BUILT (TSV upload pending)` rather than `FINISHED` so this is visible and re-triable):
-Awbrey_etal_1988_Table1, Heffner_etal_2014_Resultstext, Koay_etal_2002_Resultstext,
+Awbrey_etal_1988_Table1, Heffner_etal_2014_ResultsText, Koay_etal_2002_ResultsText,
 Wenstrup__1984_Figures3-5, Dalland__1965_ResultsText, Flydal_etal_2001_Table2,
 Gillette_etal_1973_ResultsText, Heffner_etal_1969_ResultsText, Heffner_etal_2001_ResultsText,
 Jackson_etal_1997_ResultsText, Kastak_Schusterman_1998_TablesI-II,

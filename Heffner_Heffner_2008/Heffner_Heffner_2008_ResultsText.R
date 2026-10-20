@@ -51,7 +51,7 @@ if (!is.na(tsv_dir) && dir.exists(tsv_dir)) {
   filecodes    <- read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
   ## Registry lookup name differs from this file's name (added 2026-09-27): the PDF is the 2008 "High-frequency hearing" chapter (see README), and the registry row is filed under 2008.
   ## Only the lookup uses it; the local files keep this folder's naming.
-  registry_item_name <- "Heffner_Heffner_2008_Resultstext"
+  registry_item_name <- "Heffner_Heffner_2008_ResultsText"
   nfc <- function(x) if (requireNamespace("stringi", quietly = TRUE)) stringi::stri_trans_nfc(x) else x
   item_encoded <- filecodes$`Item encoded`[match(nfc(registry_item_name), nfc(filecodes$`Item name`))]
   if (length(item_encoded) != 1L || is.na(item_encoded) || !nzchar(item_encoded) ||

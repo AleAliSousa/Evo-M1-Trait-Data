@@ -1,4 +1,4 @@
-# Koay_etal_2002_Resultstext
+# Koay_etal_2002_ResultsText
 
 ## Source
 Koay, G., Bitter, K. S., Heffner, H. E., & Heffner, R. S. (2002). Hearing in
@@ -22,10 +22,10 @@ Results text -> snapshot -> analysis csv -> public TSV.
 
 | file | role |
 |---|---|
-| `Koay_etal_2002_Resultstext_snapshot.csv` | frozen source, one row per stated trait |
-| `Koay_etal_2002_Resultstext.R` | reads the snapshot, writes CSV + public TSV |
-| `Koay_etal_2002_Resultstext.csv` | tidy analysis rows |
-| `reference_tables/Koay_etal_2002_Resultstext_definitions.csv` | data dictionary |
+| `Koay_etal_2002_ResultsText_snapshot.csv` | frozen source, one row per stated trait |
+| `Koay_etal_2002_ResultsText.R` | reads the snapshot, writes CSV + public TSV |
+| `Koay_etal_2002_ResultsText.csv` | tidy analysis rows |
+| `reference_tables/Koay_etal_2002_ResultsText_definitions.csv` | data dictionary |
 
 ## Data role
 All rows are this paper's own new measurements (n=2 bats), reported as the
@@ -46,6 +46,6 @@ Discussion prose, not as a data table).
 ## Companion items in this registry
 - `Koay_etal_2003_ResultsText` (same lab, *Carollia perspicillata*, second
   paper in the same American-leaf-nosed-bat series).
-- `Heffner_etal_2003_Resultstext` (third paper in the series, *Artibeus
+- `Heffner_etal_2003_ResultsText` (third paper in the series, *Artibeus
   jamaicensis*).
-- `Heffner_etal_2013_Resultstext` (fourth paper, *Desmodus rotundus*).
+- `Heffner_etal_2013_ResultsText` (fourth paper, *Desmodus rotundus*).

@@ -1,4 +1,4 @@
-# Heffner_etal_2014_Resultstext
+# Heffner_etal_2014_ResultsText
 
 ## Source
 Heffner, R. S., Koay, G., & Heffner, H. E. (2014). Hearing in alpacas
@@ -24,10 +24,10 @@ Results text -> snapshot -> analysis csv -> public TSV.
 
 | file | role |
 |---|---|
-| `Heffner_etal_2014_Resultstext_snapshot.csv` | frozen source, one row per stated trait |
-| `Heffner_etal_2014_Resultstext.R` | reads the snapshot, writes CSV + public TSV |
-| `Heffner_etal_2014_Resultstext.csv` | tidy analysis rows |
-| `reference_tables/Heffner_etal_2014_Resultstext_definitions.csv` | data dictionary |
+| `Heffner_etal_2014_ResultsText_snapshot.csv` | frozen source, one row per stated trait |
+| `Heffner_etal_2014_ResultsText.R` | reads the snapshot, writes CSV + public TSV |
+| `Heffner_etal_2014_ResultsText.csv` | tidy analysis rows |
+| `reference_tables/Heffner_etal_2014_ResultsText_definitions.csv` | data dictionary |
 
 ## Data role
 All rows are this paper's own new measurements (n=3 alpacas for the

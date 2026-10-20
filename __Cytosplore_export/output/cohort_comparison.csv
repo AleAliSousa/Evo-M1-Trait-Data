@@ -1,4 +1,5 @@
 variable,domain,unit,m1_motor_related,n_species__EC,pct__EC,n_species__EC_genus,pct__EC_genus,n_species__EvoM1,pct__EvoM1,n_species__EvoM1_genus,pct__EvoM1_genus,n_species__HMBA,pct__HMBA,n_species__HMBA_genus,pct__HMBA_genus,n_species__V1,pct__V1,n_species__V1_genus,pct__V1_genus
+VisualCortex_Surface_Area.mm2,Unclassified,mm2,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,1,25.0,1,25.0,1,5.9,1,5.9
 Behavioural_repertoire_size (count),behaviour & cognition,count,FALSE,3,21.4,5,35.7,5,20.0,9,36.0,2,50.0,3,75.0,4,23.5,7,41.2
 Dexterity (1-7 scale),behaviour & cognition,1-7 scale,TRUE,8,57.1,9,64.3,16,64.0,18,72.0,3,75.0,3,75.0,11,64.7,12,70.6
 Extractive_foraging (category),behaviour & cognition,category,TRUE,3,21.4,4,28.6,5,20.0,8,32.0,2,50.0,3,75.0,3,17.6,4,23.5
@@ -29,8 +30,8 @@ Tool_use_reduced_report_count (reports),behaviour & cognition,reports,FALSE,5,35
 Tool_use_report_count (reports),behaviour & cognition,reports,FALSE,5,35.7,5,35.7,11,44.0,12,48.0,2,50.0,2,50.0,6,35.3,6,35.3
 True_Tool_Use (category),behaviour & cognition,category,TRUE,2,14.3,2,14.3,6,24.0,7,28.0,1,25.0,1,25.0,2,11.8,2,11.8
 VocalRepertoire (count),behaviour & cognition,count,FALSE,3,21.4,3,21.4,8,32.0,9,36.0,2,50.0,2,50.0,3,17.6,3,17.6
-Adult_head_body_length_mm,body size,mm,FALSE,9,64.3,9,64.3,15,60.0,16,64.0,2,50.0,2,50.0,11,64.7,11,64.7
 Body_Mass (g),body size,g,FALSE,14,100.0,14,100.0,25,100.0,25,100.0,4,100.0,4,100.0,17,100.0,17,100.0
+Head_body_length (mm),body size,mm,FALSE,12,85.7,13,92.9,23,92.0,24,96.0,3,75.0,3,75.0,15,88.2,16,94.1
 AccessoryOlfactoryBulb_Vol.mm3,brain structure & size,mm3,FALSE,2,14.3,4,28.6,2,8.0,6,24.0,1,25.0,1,25.0,2,11.8,5,29.4
 AccessoryOlfactoryBulb_layer_6_Vol.mm3,brain structure & size,mm3,FALSE,2,14.3,4,28.6,2,8.0,6,24.0,1,25.0,1,25.0,2,11.8,5,29.4
 AccessoryOlfactoryBulb_layers_1_2_Vol.mm3,brain structure & size,mm3,FALSE,2,14.3,4,28.6,2,8.0,6,24.0,1,25.0,1,25.0,2,11.8,5,29.4
@@ -85,10 +86,10 @@ Corpus_geniculatum_laterale_left_Vol.mm3,brain structure & size,mm3,FALSE,2,14.3
 Corpus_pineal_Vol.mm3,brain structure & size,mm3,FALSE,5,35.7,7,50.0,7,28.0,12,48.0,3,75.0,3,75.0,5,29.4,8,47.1
 Corpus_subcommissurale_Vol.mm3,brain structure & size,mm3,FALSE,5,35.7,7,50.0,7,28.0,12,48.0,3,75.0,3,75.0,5,29.4,8,47.1
 Corpus_subfornicale_Vol.mm3,brain structure & size,mm3,FALSE,5,35.7,7,50.0,7,28.0,12,48.0,3,75.0,3,75.0,5,29.4,8,47.1
-CorticalExposedSurface_Area.mm2,brain structure & size,mm2,FALSE,7,50.0,9,64.3,10,40.0,16,64.0,3,75.0,4,100.0,9,52.9,11,64.7
-CorticalSurface_Area.mm2,brain structure & size,mm2,FALSE,10,71.4,11,78.6,15,60.0,19,76.0,4,100.0,4,100.0,13,76.5,14,82.4
+CorticalExposedSurface_Area.mm2,brain structure & size,mm2,FALSE,7,50.0,9,64.3,11,44.0,16,64.0,3,75.0,4,100.0,9,52.9,11,64.7
+CorticalSurface_Area.mm2,brain structure & size,mm2,FALSE,10,71.4,11,78.6,16,64.0,19,76.0,4,100.0,4,100.0,13,76.5,14,82.4
 CorticalSurface_Area_Demirci2023 (mm2),brain structure & size,mm2,FALSE,3,21.4,4,28.6,5,20.0,7,28.0,2,50.0,2,50.0,3,17.6,4,23.5
-CorticalThickness.mm,brain structure & size,mm,FALSE,7,50.0,9,64.3,10,40.0,16,64.0,3,75.0,4,100.0,9,52.9,11,64.7
+CorticalThickness.mm,brain structure & size,mm,FALSE,7,50.0,9,64.3,11,44.0,16,64.0,3,75.0,4,100.0,9,52.9,11,64.7
 DiencephalonStriatum_Mass.g,brain structure & size,g,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,0,0.0,0,0.0,1,5.9,1,5.9
 Diencephalon_Vol.mm3,brain structure & size,mm3,FALSE,6,42.9,8,57.1,8,32.0,13,52.0,3,75.0,3,75.0,6,35.3,9,52.9
 Diencephalon_excluding_globus_pallidus_Vol.mm3,brain structure & size,mm3,FALSE,1,7.1,2,14.3,2,8.0,3,12.0,0,0.0,0,0.0,1,5.9,2,11.8
@@ -130,7 +131,7 @@ Interpositus_cerebellar_nuclei_Vol.mm3,brain structure & size,mm3,FALSE,5,35.7,7
 LateralCerebellum_Vol (mm3),brain structure & size,mm3,FALSE,3,21.4,6,42.9,6,24.0,12,48.0,2,50.0,2,50.0,4,23.5,8,47.1
 Lateral_cerebellar_nuclei_Vol.mm3,brain structure & size,mm3,FALSE,5,35.7,7,50.0,7,28.0,12,48.0,3,75.0,3,75.0,5,29.4,8,47.1
 Lobus_piriformis_Vol.mm3,brain structure & size,mm3,FALSE,5,35.7,7,50.0,7,28.0,12,48.0,3,75.0,3,75.0,5,29.4,8,47.1
-M1_Surface_Area.mm2,brain structure & size,mm2,TRUE,2,14.3,2,14.3,3,12.0,5,20.0,0,0.0,0,0.0,3,17.6,3,17.6
+M1_Surface_Area.mm2,brain structure & size,mm2,TRUE,2,14.3,2,14.3,4,16.0,5,20.0,0,0.0,0,0.0,3,17.6,3,17.6
 MedialCerebellum_Vol (mm3),brain structure & size,mm3,FALSE,3,21.4,6,42.9,6,24.0,12,48.0,2,50.0,2,50.0,4,23.5,8,47.1
 Medial_cerebellar_nuclei_Vol.mm3,brain structure & size,mm3,FALSE,5,35.7,7,50.0,7,28.0,12,48.0,3,75.0,3,75.0,5,29.4,8,47.1
 Medulla_Mass (g),brain structure & size,g,FALSE,1,7.1,1,7.1,1,4.0,2,8.0,0,0.0,0,0.0,1,5.9,1,5.9
@@ -291,6 +292,7 @@ Hippocampus_O.n,cellular composition,count,FALSE,1,7.1,1,7.1,2,8.0,3,12.0,0,0.0,
 Hippocampus_O.p.N,cellular composition,ratio,FALSE,2,14.3,2,14.3,3,12.0,4,16.0,0,0.0,0,0.0,3,17.6,3,17.6
 Hippocampus_O.p.mg,cellular composition,cells/mg,FALSE,1,7.1,1,7.1,2,8.0,3,12.0,0,0.0,0,0.0,2,11.8,2,11.8
 Hippocampus_p.C.N,cellular composition,%,FALSE,1,7.1,1,7.1,2,8.0,3,12.0,0,0.0,0,0.0,2,11.8,2,11.8
+M1_neuron_number (count),cellular composition,count,TRUE,1,7.1,2,14.3,2,8.0,5,20.0,0,0.0,0,0.0,2,11.8,3,17.6
 MesencephalonMedulla_N.n,cellular composition,count,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,0,0.0,0,0.0,1,5.9,1,5.9
 Mesencephalon_N.n,cellular composition,count,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,0,0.0,0,0.0,1,5.9,1,5.9
 Mesencephalon_N.p.mg,cellular composition,cells/mg,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,0,0.0,0,0.0,1,5.9,1,5.9
@@ -453,10 +455,10 @@ Cerebellar_section_area (mm2),cortical & cerebellar folding,mm2,FALSE,5,35.7,8,5
 Cerebellar_section_length (mm),cortical & cerebellar folding,mm,FALSE,5,35.7,8,57.1,8,32.0,13,52.0,2,50.0,2,50.0,6,35.3,9,52.9
 Cerebral_section_area (mm2),cortical & cerebellar folding,mm2,FALSE,5,35.7,8,57.1,8,32.0,13,52.0,2,50.0,2,50.0,6,35.3,9,52.9
 Cerebral_section_length (mm),cortical & cerebellar folding,mm,FALSE,5,35.7,8,57.1,8,32.0,13,52.0,2,50.0,2,50.0,6,35.3,9,52.9
-FoldingIndex_MHH,cortical & cerebellar folding,ratio,FALSE,6,42.9,8,57.1,8,32.0,13,52.0,3,75.0,4,100.0,7,41.2,9,52.9
+FoldingIndex_MHH,cortical & cerebellar folding,ratio,FALSE,6,42.9,8,57.1,9,36.0,13,52.0,3,75.0,4,100.0,7,41.2,9,52.9
 Folial_perimeter_median (mm),cortical & cerebellar folding,mm,FALSE,5,35.7,8,57.1,8,32.0,13,52.0,2,50.0,2,50.0,6,35.3,9,52.9
 Folial_width_median (mm),cortical & cerebellar folding,mm,FALSE,5,35.7,8,57.1,8,32.0,13,52.0,2,50.0,2,50.0,6,35.3,9,52.9
-GI,cortical & cerebellar folding,ratio,FALSE,9,64.3,12,85.7,14,56.0,21,84.0,4,100.0,4,100.0,11,64.7,15,88.2
+GI,cortical & cerebellar folding,ratio,FALSE,9,64.3,12,85.7,15,60.0,21,84.0,4,100.0,4,100.0,12,70.6,15,88.2
 Molecular_layer_thickness_median (mm),cortical & cerebellar folding,mm,FALSE,4,28.6,7,50.0,7,28.0,12,48.0,2,50.0,2,50.0,5,29.4,8,47.1
 % Fruit and seeds,diet & ecology,%,FALSE,5,35.7,5,35.7,8,32.0,9,36.0,2,50.0,2,50.0,6,35.3,6,35.3
 Activity_cycle_PanTHERIA (category),diet & ecology,category,FALSE,9,64.3,14,100.0,16,64.0,23,92.0,3,75.0,4,100.0,9,52.9,16,94.1
@@ -515,23 +517,21 @@ Age_at_first_breeding_F_mnths,life history,months,FALSE,10,71.4,10,71.4,16,64.0,
 Age_at_first_breeding_days,life history,days,FALSE,10,71.4,10,71.4,16,64.0,17,68.0,4,100.0,4,100.0,12,70.6,12,70.6
 Altricial_precocial,life history,category,FALSE,11,78.6,12,85.7,18,72.0,20,80.0,4,100.0,4,100.0,14,82.4,15,88.2
 Dispersal_age_days,life history,days,FALSE,1,7.1,1,7.1,3,12.0,3,12.0,0,0.0,0,0.0,1,5.9,1,5.9
-Female_sexual_maturity (days),life history,days,FALSE,11,78.6,11,78.6,18,72.0,19,76.0,4,100.0,4,100.0,14,82.4,14,82.4
-Gestation (days),life history,days,FALSE,14,100.0,14,100.0,24,96.0,24,96.0,4,100.0,4,100.0,17,100.0,17,100.0
-Inter-litter_interval_days,life history,days,FALSE,9,64.3,9,64.3,15,60.0,16,64.0,4,100.0,4,100.0,11,64.7,11,64.7
-Interbirth_interval (days),life history,days,FALSE,8,57.1,13,92.9,15,60.0,22,88.0,3,75.0,4,100.0,10,58.8,16,94.1
+Female_sexual_maturity (days),life history,days,FALSE,13,92.9,14,100.0,24,96.0,25,100.0,4,100.0,4,100.0,16,94.1,17,100.0
+Gestation (days),life history,days,FALSE,14,100.0,14,100.0,25,100.0,25,100.0,4,100.0,4,100.0,17,100.0,17,100.0
+Interbirth_interval (days),life history,days,FALSE,12,85.7,13,92.9,22,88.0,23,92.0,4,100.0,4,100.0,15,88.2,16,94.1
 Juvenility_days,life history,days,FALSE,10,71.4,10,71.4,16,64.0,17,68.0,4,100.0,4,100.0,12,70.6,12,70.6
 Juvenility_primates_years,life history,years,FALSE,6,42.9,6,42.9,8,32.0,9,36.0,3,75.0,3,75.0,7,41.2,7,41.2
-Litter_size (count),life history,count,FALSE,12,85.7,14,100.0,22,88.0,24,96.0,4,100.0,4,100.0,15,88.2,17,100.0
-Litters_per_year,life history,count/yr,FALSE,10,71.4,11,78.6,16,64.0,18,72.0,4,100.0,4,100.0,12,70.6,13,76.5
-Litters_per_year_PanTHERIA (count/yr),life history,count/yr,FALSE,5,35.7,8,57.1,7,28.0,13,52.0,2,50.0,2,50.0,6,35.3,10,58.8
-Male_sexual_maturity_days,life history,days,FALSE,11,78.6,11,78.6,18,72.0,19,76.0,4,100.0,4,100.0,14,82.4,14,82.4
-Maximum_longevity (yr),life history,yr,FALSE,13,92.9,14,100.0,22,88.0,24,96.0,4,100.0,4,100.0,16,94.1,17,100.0
-Neonate_body_mass (g),life history,g,FALSE,10,71.4,14,100.0,19,76.0,24,96.0,4,100.0,4,100.0,13,76.5,17,100.0
+Litter_size (count),life history,count,FALSE,13,92.9,14,100.0,24,96.0,25,100.0,4,100.0,4,100.0,16,94.1,17,100.0
+Litters_per_year (count/yr),life history,count/yr,FALSE,13,92.9,14,100.0,24,96.0,25,100.0,4,100.0,4,100.0,16,94.1,17,100.0
+Male_sexual_maturity (days),life history,days,FALSE,12,85.7,13,92.9,21,84.0,23,92.0,4,100.0,4,100.0,15,88.2,16,94.1
+Maximum_longevity (yr),life history,yr,FALSE,13,92.9,14,100.0,24,96.0,25,100.0,4,100.0,4,100.0,16,94.1,17,100.0
+Neonate_body_mass (g),life history,g,FALSE,13,92.9,14,100.0,24,96.0,25,100.0,4,100.0,4,100.0,16,94.1,17,100.0
 Neurogenic_period_days,life history,days,FALSE,5,35.7,5,35.7,7,28.0,8,32.0,4,100.0,4,100.0,6,35.3,6,35.3
+Postnatal_growth_rate (1/day),life history,1/day,FALSE,9,64.3,11,78.6,13,52.0,19,76.0,4,100.0,4,100.0,10,58.8,13,76.5
 Sexual_maturity_age (days),life history,days,FALSE,9,64.3,13,92.9,17,68.0,23,92.0,4,100.0,4,100.0,12,70.6,16,94.1
 Weaning_age (days),life history,days,FALSE,14,100.0,14,100.0,25,100.0,25,100.0,4,100.0,4,100.0,17,100.0,17,100.0
-Weight_at_birth_g,life history,g,FALSE,11,78.6,12,85.7,18,72.0,20,80.0,4,100.0,4,100.0,14,82.4,15,88.2
-Weight_at_weaning_g,life history,g,FALSE,8,57.1,8,57.1,14,56.0,15,60.0,4,100.0,4,100.0,10,58.8,10,58.8
+Weaning_weight (g),life history,g,FALSE,10,71.4,12,85.7,20,80.0,23,92.0,4,100.0,4,100.0,13,76.5,15,88.2
 Amygdala_CMRgl (umol/100g/min),metabolism,umol/100g/min,FALSE,4,28.6,4,28.6,6,24.0,7,28.0,3,75.0,3,75.0,5,29.4,5,29.4
 Auditory_cortex_CMRgl (umol/100g/min),metabolism,umol/100g/min,FALSE,3,21.4,3,21.4,3,12.0,3,12.0,2,50.0,2,50.0,3,17.6,3,17.6
 BMR_massspecific (mL O2/h/g),metabolism,mL O2/h/g,FALSE,11,78.6,14,100.0,18,72.0,22,88.0,4,100.0,4,100.0,14,82.4,17,100.0
@@ -540,6 +540,7 @@ Basal_forebrain_CMRgl (umol/100g/min),metabolism,umol/100g/min,FALSE,1,7.1,1,7.1
 Basal_ganglia_CBF (mL/100g/min),metabolism,mL/100g/min,FALSE,3,21.4,4,28.6,3,12.0,5,20.0,2,50.0,2,50.0,3,17.6,4,23.5
 Basal_ganglia_CMRO2 (umol/100g/min),metabolism,umol/100g/min,FALSE,4,28.6,4,28.6,4,16.0,5,20.0,3,75.0,3,75.0,4,23.5,4,23.5
 Basal_ganglia_CMRgl (umol/100g/min),metabolism,umol/100g/min,FALSE,4,28.6,4,28.6,5,20.0,6,24.0,3,75.0,3,75.0,5,29.4,5,29.4
+Body_temperature (C),metabolism,C,FALSE,10,71.4,13,92.9,15,60.0,23,92.0,4,100.0,4,100.0,12,70.6,15,88.2
 Brain_blood_flow_total (mL/s),metabolism,mL/s,FALSE,6,42.9,9,64.3,9,36.0,15,60.0,3,75.0,4,100.0,6,35.3,10,58.8
 Brain_stem_CMRgl (umol/100g/min),metabolism,umol/100g/min,FALSE,3,21.4,3,21.4,5,20.0,6,24.0,2,50.0,2,50.0,4,23.5,4,23.5
 Capsula_interna_CMRgl (umol/100g/min),metabolism,umol/100g/min,FALSE,1,7.1,1,7.1,1,4.0,1,4.0,1,25.0,1,25.0,1,5.9,1,5.9
@@ -603,8 +604,8 @@ Whole_brain_CMRO2 (umol/100g/min),metabolism,umol/100g/min,FALSE,3,21.4,3,21.4,5
 Whole_brain_CMRgl (umol/100g/min),metabolism,umol/100g/min,FALSE,4,28.6,4,28.6,7,28.0,9,36.0,3,75.0,3,75.0,5,29.4,5,29.4
 Whole_brain_Total_O2_consumption (mL/min),metabolism,mL/min,FALSE,3,21.4,3,21.4,5,20.0,7,28.0,2,50.0,2,50.0,4,23.5,4,23.5
 Whole_brain_Total_glucose_utilization (umol/min),metabolism,umol/min,FALSE,4,28.6,4,28.6,7,28.0,8,32.0,3,75.0,3,75.0,5,29.4,5,29.4
-Angular_utilization_index_FL (percent),sensorimotor & motor pathways,percent,TRUE,2,14.3,4,28.6,3,12.0,9,36.0,0,0.0,0,0.0,2,11.8,5,29.4
-Angular_utilization_index_HL (percent),sensorimotor & motor pathways,percent,TRUE,4,28.6,6,42.9,5,20.0,11,44.0,0,0.0,0,0.0,4,23.5,7,41.2
+Angular_utilization_index_FL (percent),sensorimotor & motor pathways,percent,TRUE,2,14.3,4,28.6,4,16.0,9,36.0,0,0.0,0,0.0,3,17.6,5,29.4
+Angular_utilization_index_HL (percent),sensorimotor & motor pathways,percent,TRUE,4,28.6,6,42.9,6,24.0,11,44.0,0,0.0,0,0.0,5,29.4,7,41.2
 Arboreal_terrestrial (category),sensorimotor & motor pathways,category,TRUE,3,21.4,3,21.4,7,28.0,9,36.0,1,25.0,1,25.0,3,17.6,3,17.6
 Area of tract mmˆ2,sensorimotor & motor pathways,mm2,TRUE,8,57.1,9,64.3,13,52.0,15,60.0,3,75.0,3,75.0,10,58.8,11,64.7
 Average fiber size x 10ˆ5 K,sensorimotor & motor pathways,um x 1e5,TRUE,5,35.7,6,42.9,8,32.0,10,40.0,3,75.0,3,75.0,6,35.3,7,41.2
@@ -619,13 +620,13 @@ Lamina of axon terminals deepest,sensorimotor & motor pathways,ordinal,TRUE,5,35
 Lamina of axon terminals densest,sensorimotor & motor pathways,ordinal,TRUE,5,35.7,5,35.7,10,40.0,11,44.0,1,25.0,1,25.0,7,41.2,7,41.2
 Largest fiber diameter µm,sensorimotor & motor pathways,um,TRUE,5,35.7,6,42.9,8,32.0,9,36.0,1,25.0,1,25.0,7,41.2,8,47.1
 Length,sensorimotor & motor pathways,as printed,TRUE,6,42.9,6,42.9,12,48.0,13,52.0,2,50.0,2,50.0,8,47.1,8,47.1
-Limb_posture (category),sensorimotor & motor pathways,category,TRUE,5,35.7,8,57.1,6,24.0,13,52.0,1,25.0,1,25.0,5,29.4,9,52.9
+Limb_posture (category),sensorimotor & motor pathways,category,TRUE,5,35.7,8,57.1,7,28.0,13,52.0,1,25.0,1,25.0,6,35.3,9,52.9
 Locomotor_diversity_index (index),sensorimotor & motor pathways,index,TRUE,3,21.4,4,28.6,7,28.0,10,40.0,1,25.0,1,25.0,3,17.6,4,23.5
-Locomotor_habit (category),sensorimotor & motor pathways,category,TRUE,5,35.7,8,57.1,6,24.0,13,52.0,1,25.0,1,25.0,5,29.4,9,52.9
+Locomotor_habit (category),sensorimotor & motor pathways,category,TRUE,5,35.7,8,57.1,7,28.0,13,52.0,1,25.0,1,25.0,6,35.3,9,52.9
 Number of fibers per tract,sensorimotor & motor pathways,count,TRUE,6,42.9,7,50.0,9,36.0,11,44.0,3,75.0,3,75.0,7,41.2,8,47.1
 Penetration down spinal cord,sensorimotor & motor pathways,category,TRUE,6,42.9,6,42.9,13,52.0,14,56.0,2,50.0,2,50.0,8,47.1,8,47.1
 Phase (percent),sensorimotor & motor pathways,percent,TRUE,7,50.0,9,64.3,10,40.0,16,64.0,2,50.0,2,50.0,8,47.1,10,58.8
-Top_speed (category),sensorimotor & motor pathways,category,TRUE,5,35.7,8,57.1,6,24.0,13,52.0,1,25.0,1,25.0,5,29.4,9,52.9
+Top_speed (category),sensorimotor & motor pathways,category,TRUE,5,35.7,8,57.1,7,28.0,13,52.0,1,25.0,1,25.0,6,35.3,9,52.9
 Audible_freq_high_60dB.kHz,sensory performance,kHz,FALSE,7,50.0,11,78.6,10,40.0,18,72.0,3,75.0,3,75.0,8,47.1,12,70.6
 Audible_freq_low_60dB.kHz,sensory performance,kHz,FALSE,3,21.4,4,28.6,3,12.0,4,16.0,1,25.0,1,25.0,3,17.6,4,23.5
 Binocular_field.deg,sensory performance,deg,FALSE,2,14.3,4,28.6,3,12.0,6,24.0,1,25.0,1,25.0,3,17.6,5,29.4

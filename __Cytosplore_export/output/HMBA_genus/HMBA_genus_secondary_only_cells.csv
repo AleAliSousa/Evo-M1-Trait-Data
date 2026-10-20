@@ -5,6 +5,7 @@ Homo sapiens,LateralCerebellum_Vol (mm3),brain structure & size,Smaers_etal_2018
 Macaca mulatta,LateralCerebellum_Vol (mm3),brain structure & size,Smaers_etal_2018,secondary,False,,,primary_used=FALSE
 Homo sapiens,MedialCerebellum_Vol (mm3),brain structure & size,Smaers_etal_2018,secondary,False,,,primary_used=FALSE
 Macaca mulatta,MedialCerebellum_Vol (mm3),brain structure & size,Smaers_etal_2018,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Head_body_length (mm),body size,Myhrvold_etal_2015,secondary,False,,,primary_used=FALSE
 Homo sapiens,Amygdala_CMRgl (umol/100g/min),metabolism,Heiss_etal_2004; Karbowski__2007,secondary,False,,,compilation resolved to 2 primary studies
 Macaca mulatta,Amygdala_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 3 primary studies
 Mus musculus,Amygdala_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
@@ -23,7 +24,11 @@ Callithrix jacchus,BMR_massspecific (mL O2/h/g),metabolism,Boyer (team); Genoud_
 Homo sapiens,BMR_massspecific (mL O2/h/g),metabolism,Boyer (team); Genoud_etal_2018; Isler_etal_2008,secondary,False,,,primary_used=FALSE
 Macaca mulatta,BMR_massspecific (mL O2/h/g),metabolism,Boyer (team); Genoud_etal_2018; Isler_etal_2008; Lewitus (team),secondary,False,,,primary_used=FALSE
 Mus musculus,BMR_massspecific (mL O2/h/g),metabolism,Genoud_etal_2018; Lewitus (team),secondary,False,,,primary_used=FALSE
-Homo sapiens,BMR_wholeanimal (mL O2/h),metabolism,Boyer (team); Genoud_etal_2018; Isler_etal_2008,secondary,False,,,primary_used=FALSE
+Homo sapiens,BMR_wholeanimal (mL O2/h),metabolism,Boyer (team); Genoud_etal_2018; Isler_etal_2008; deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Body_temperature (C),metabolism,deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Homo sapiens,Body_temperature (C),metabolism,deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Body_temperature (C),metabolism,deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Mus musculus,Body_temperature (C),metabolism,deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
 Callithrix jacchus,Brain_blood_flow_total (mL/s),metabolism,Boyer_Harrington_2019,secondary,False,,,primary_used=FALSE
 Homo sapiens,Brain_blood_flow_total (mL/s),metabolism,Boyer_Harrington_2019,secondary,False,,,primary_used=FALSE
 Macaca mulatta,Brain_blood_flow_total (mL/s),metabolism,Boyer_Harrington_2019,secondary,False,,,primary_used=FALSE
@@ -143,20 +148,14 @@ Callithrix jacchus,Age_at_first_birth (days),life history,Jones_etal_2009,second
 Homo sapiens,Age_at_first_birth (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
 Macaca mulatta,Age_at_first_birth (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
 Mus musculus,Age_at_first_birth (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Callithrix jacchus,Interbirth_interval (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Homo sapiens,Interbirth_interval (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Macaca mulatta,Interbirth_interval (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Mus musculus,Interbirth_interval (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Callithrix jacchus,Litter_size (count),life history,Jones_etal_2009; Lewitus (team),secondary,False,,,primary_used=FALSE
-Homo sapiens,Litter_size (count),life history,Jones_etal_2009; Lewitus (team),secondary,False,,,primary_used=FALSE
-Macaca mulatta,Litter_size (count),life history,Jones_etal_2009; Lewitus (team),secondary,False,,,primary_used=FALSE
-Mus musculus,Litter_size (count),life history,Jones_etal_2009; Lewitus (team),secondary,False,,,primary_used=FALSE
-Macaca mulatta,Litters_per_year_PanTHERIA (count/yr),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Mus musculus,Litters_per_year_PanTHERIA (count/yr),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Callithrix jacchus,Neonate_body_mass (g),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Homo sapiens,Neonate_body_mass (g),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Macaca mulatta,Neonate_body_mass (g),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Mus musculus,Neonate_body_mass (g),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Litter_size (count),life history,Jones_etal_2009; Lewitus (team); Myhrvold_etal_2015; deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Homo sapiens,Litter_size (count),life history,Jones_etal_2009; Lewitus (team); Myhrvold_etal_2015; deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Litter_size (count),life history,Jones_etal_2009; Lewitus (team); Myhrvold_etal_2015; deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Mus musculus,Litter_size (count),life history,Jones_etal_2009; Lewitus (team); Myhrvold_etal_2015; deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Postnatal_growth_rate (1/day),life history,deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Homo sapiens,Postnatal_growth_rate (1/day),life history,deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Postnatal_growth_rate (1/day),life history,deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Mus musculus,Postnatal_growth_rate (1/day),life history,deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
 Callithrix jacchus,Sexual_maturity_age (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
 Homo sapiens,Sexual_maturity_age (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
 Macaca mulatta,Sexual_maturity_age (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
@@ -272,7 +271,7 @@ Homo sapiens,Depth,sensorimotor & motor pathways,Heffner_Masterton_1975,secondar
 Macaca mulatta,Depth,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,cited within compilation: 52; primary not in database
 Macaca mulatta,Lamina of axon terminals deepest,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,"cited within compilation: PETRAS, 1969; primary not in database"
 Macaca mulatta,Lamina of axon terminals densest,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,"cited within compilation: PETRAS, 1968; primary not in database"
-Homo sapiens,Largest fiber diameter µm,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,True,Area of tract mmˆ2; Average fiber size x 10ˆ5 K,,"cited within compilation: TRUEX and CARPENTER, 1969; primary not in database"
+Homo sapiens,Largest fiber diameter µm,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,True,Area of tract mmˆ2; Average fiber size x 10ˆ5 K; Number of fibers per tract,,"cited within compilation: TRUEX and CARPENTER, 1969; primary not in database"
 Homo sapiens,Length,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,cited within compilation: 39; primary not in database
 Macaca mulatta,Length,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,cited within compilation: 53; primary not in database
 Macaca mulatta,Number of fibers per tract,sensorimotor & motor pathways,Lassek_Rasmussen_1940,secondary,True,Area of tract mmˆ2; Average fiber size x 10ˆ5 K,,"cited within compilation: DEMEYER and RUSSEL, 1958; primary not in database | cited within compilation: VERHAART, 1948a; primary not in database"

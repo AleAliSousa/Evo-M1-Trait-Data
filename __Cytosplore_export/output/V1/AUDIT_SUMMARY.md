@@ -1,24 +1,26 @@
 # V1 variable audit -- sources and poolability (species-level match)
 
-Built 2026-10-15 by `__Cytosplore_export/audit_cytosplore_variables.py` from the tables in this folder and the repo keys.
+Built 2026-10-20 by `__Cytosplore_export/audit_cytosplore_variables.py` from the tables in this folder and the repo keys.
 
 ## Q1. Secondary compilations vs primary sources
 
-- 633 exported variables; 3082 species x variable cells.
-- cells with at least one primary source: 2157
-- cells fed only by compilations (secondary): 825 in 179 variables
+- 634 exported variables; 3105 species x variable cells.
+- cells with at least one primary source: 2167
+- cells fed only by compilations (secondary): 841 in 186 variables
 - of those, cells where a PRIMARY value for the same species and structure x measure exists in the compiled database (another variable of the same compatibility group): 46
-- cells whose role could not be resolved: 100
-- variables with NO primary source at all: 146
+- cells whose role could not be resolved: 97
+- variables with NO primary source at all: 145
 - variables whose sources have a declared supersedes/reprints/derives_from relationship: 111
 
 Compilations contributing secondary-only cells (cells):
 
 - Wilman_etal_2014: 225
-- Jones_etal_2009: 156
+- Jones_etal_2009: 134
 - Kaufman__2004: 108
 - Karbowski__2007: 101
+- deMagalhães_etal_2024: 58
 - Heffner_Masterton_1975: 42
+- Myhrvold_etal_2015: 41
 - Heiss_etal_2004: 26
 - Bianchi_etal_2012: 21
 - Lewitus (team): 20
@@ -27,8 +29,6 @@ Compilations contributing secondary-only cells (cells):
 - Boyer_Harrington_2019: 18
 - Iwaniuk_etal_2001: 15
 - Kverkova_etal_2018: 13
-- McDowell_etal_2024: 12
-- deSousa_etal_2022: 11
 
 Variables with secondary-only cells for which a primary exists in the same group:
 
@@ -60,24 +60,24 @@ Variables with secondary-only cells for which a primary exists in the same group
 
 Source class of exported variables:
 
-- primary-backed: 437
+- primary-backed: 431
 - compilation-only: 140
-- mixed (some species compilation-only): 33
+- mixed (some species compilation-only): 41
 - role unknown (source lacks role in definitions): 17
-- compilation of earlier literature; primaries not in database: 6
+- compilation of earlier literature; primaries not in database: 5
 
 Suggested tier (cohort species covered):
 
 - broad (10-19 sp): 89
-- minimal (<3 sp): 228
+- minimal (<3 sp): 229
 - sparse (3-9 sp): 316
 
 ## Q2. Poolability and individual relevance
 
-- compatibility groups with >= 2 exported variables: 74
+- compatibility groups with >= 2 exported variables: 73
 - groups where pooling would add >= 2 cohort species: 1
 - groups spanning more than one measurement basis (do not pool across): 6
-- variables with < 3 cohort species: 228
+- variables with < 3 cohort species: 229
 - laterality (left/right) variants: 21
 
 Top pooling candidates (gain in cohort species):
@@ -94,9 +94,9 @@ Paper folders contributing to the export whose *_definitions.csv has no primary/
 _keys/variable_catalog.csv:
 
 - Jones_etal_2009: 195 cells; catalog roles = no catalog rows (no *_definitions.csv in folder?)
+- Myhrvold_etal_2015: 151 cells; catalog roles = no catalog rows (no *_definitions.csv in folder?)
 - Baker_etal_2025: 88 cells; catalog roles = no catalog rows (no *_definitions.csv in folder?)
 - Burish_etal_2010: 49 cells; catalog roles = {'review': 10}
-- Zilles_etal_1986: 40 cells; catalog roles = no catalog rows (no *_definitions.csv in folder?)
 - Isler_etal_2008: 33 cells; catalog roles = no catalog rows (no *_definitions.csv in folder?)
 - Boyer_Harrington_2019: 30 cells; catalog roles = no catalog rows (no *_definitions.csv in folder?)
 - Mota_etal_2019: 27 cells; catalog roles = no catalog rows (no *_definitions.csv in folder?)
@@ -104,15 +104,13 @@ _keys/variable_catalog.csv:
 - McDowell_etal_2024: 12 cells; catalog roles = no catalog rows (no *_definitions.csv in folder?)
 - Powell_etal_2017: 11 cells; catalog roles = no catalog rows (no *_definitions.csv in folder?)
 - Winkler_Bryant_2021: 7 cells; catalog roles = no catalog rows (no *_definitions.csv in folder?)
-- Lassek_Rasmussen_1940: 7 cells; catalog roles = no catalog rows (no *_definitions.csv in folder?)
-- Heffner_Heffner_1992_c: 6 cells; catalog roles = no catalog rows (no *_definitions.csv in folder?)
 - MacLarnon__1996: 5 cells; catalog roles = no catalog rows (no *_definitions.csv in folder?)
-- Pettigrew_etal_1998: 5 cells; catalog roles = no catalog rows (no *_definitions.csv in folder?)
+- HerculanoHouzel_etal_2016: 2 cells; catalog roles = no catalog rows (no *_definitions.csv in folder?)
 - Fox_Wilczynski_1986: 1 cells; catalog roles = {'info': 1, 'measure': 14}
 - Stimpson_etal_2015: 1 cells; catalog roles = no catalog rows (no *_definitions.csv in folder?)
 - Heffner_etal_1994_c: 1 cells; catalog roles = no catalog rows (no *_definitions.csv in folder?)
 
-Exported variables with no group (structure-agnostic label, no poolable_family in variable_domain.csv): 129. These cannot be assessed for cross-variable pooling until a family is assigned.
+Exported variables with no group (structure-agnostic label, no poolable_family in variable_domain.csv): 131. These cannot be assessed for cross-variable pooling until a family is assigned.
 
 ## Source identifiers not resolved to a repo folder
 

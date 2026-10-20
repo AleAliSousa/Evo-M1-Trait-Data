@@ -1,31 +1,32 @@
-built:           2026-10-15 20:00:06 PDT
-repo commit:     dd56c0a (from .git/HEAD; git command unavailable)
+built:           2026-10-20 06:59:33 PDT
+repo commit:     cb75ea9 (from .git/HEAD; git command unavailable)
 cohort:          EvoM1 (25 species)
 match level:     genus  (any congener / Genus sp. / hybrid label counts; values pooled across them)
 core threshold:  >= 80% of cohort (>= 20 species)
 species without any data: none
-long rows (all values):   13534
-  of which measurement:   13366
-species x variable cells: 5756
-variables in wide:        653   (matrix fill 35.3%)
-variables in wide_core:   47   (matrix fill 91.6%)
+long rows (all values):   14755
+  of which measurement:   14587
+species x variable cells: 5793
+variables in wide:        654   (matrix fill 35.4%)
+variables in wide_core:   52   (matrix fill 92.6%)
 cells unresolved categorical: 32
-cells with numeric spread > 50%: 437
-units: 653 from key, 0 from merge rows, 0 parsed from label, 0 none
-variables flagged m1_motor_related: 96 (of which core: 0)
+cells with numeric spread > 50%: 485
+units: 653 from key, 0 from merge rows, 1 parsed from label, 0 none
+variables flagged m1_motor_related: 97 (of which core: 0)
 domains excluded from wide/cells/dictionary: dataset metadata
 
 variables per domain (all / core / m1_motor_related):
   brain structure & size            187 /    5 /    5
-  cellular composition              124 /    7 /    3
+  cellular composition              125 /    7 /    4
   cortical & cerebellar folding       9 /    1 /    0
-  body size                           2 /    1 /    0
-  metabolism                         71 /    2 /    2
-  life history                       23 /   10 /    0
+  body size                           2 /    2 /    0
+  metabolism                         72 /    3 /    2
+  life history                       21 /   13 /    0
   diet & ecology                     29 /   20 /    0
   behaviour & cognition              30 /    0 /    9
   sensorimotor & motor pathways      23 /    0 /   23
   hand & limb morphology             22 /    0 /   22
   sleep & torpor                      5 /    0 /    0
+  Unclassified                        1 /    0 /    0
   cellular morphology               107 /    0 /   32
   sensory performance                21 /    1 /    0

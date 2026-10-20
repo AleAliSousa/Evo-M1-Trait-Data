@@ -50,7 +50,6 @@ Thalamus | cerebral_metabolic_rate,2,Thalamus_CMRgl (umol/100g/min) [3]; Thalamu
 White_matter | cerebral_metabolic_rate,2,White_matter_CMRgl (umol/100g/min) [3]; White_matter_CMRO2 (umol/100g/min) [1],(none): 2,0,3,3,0,,little to gain
 WholeBrain | cerebral_metabolic_rate,2,Whole_brain_CMRgl (umol/100g/min) [3]; Whole_brain_CMRO2 (umol/100g/min) [2],(none): 2,0,3,3,0,,little to gain
 WholeBrain | cerebral_absolute_rate,2,Whole_brain_Total_glucose_utilization (umol/min) [3]; Whole_brain_Total_O2_consumption (mL/min) [2],(none): 2,0,3,3,0,,little to gain
-Body | life_history,2,Weight_at_birth_g [4]; Weight_at_weaning_g [4],(none): 2,0,4,4,0,,little to gain
 CorticospinalTract | motor_pathway,4,Area of tract mmˆ2 [3]; Average fiber size x 10ˆ5 K [3]; Number of fibers per tract [3]; Largest fiber diameter µm [1],(none): 4,0,3,3,0,,little to gain
 SpinalCord | motor_pathway,5,Depth [2]; Length [2]; Penetration down spinal cord [2]; Lamina of axon terminals deepest [1]; Lamina of axon terminals densest [1],(none): 5,0,2,2,0,,little to gain
 hand | hand_morphology,14,log10_ip2_mm (log10 mm) [3]; log10_ip3_mm (log10 mm) [3]; log10_ip4_mm (log10 mm) [3]; log10_mc1_mm (log10 mm) [3]; log10_mc2_mm (log10 mm) [3]; log10_mc3_mm (log10 mm) [3]; log10_mc4_mm (log10 mm) [3]; log10_mc5_mm (log10 mm) [3]; log10_pp1_mm (log10 mm) [3]; log10_pp2_mm (log10 mm) [3]; log10_pp3_mm (log10 mm) [3]; log10_pp4_mm (log10 mm) [3]; log10_dp1_mm (log10 mm) [2]; log10_dp2_mm (log10 mm) [2],(none): 14,0,3,3,0,,little to gain

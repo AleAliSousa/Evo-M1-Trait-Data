@@ -7,7 +7,7 @@ a wide cell is the pool (numeric mean) across those labels. Use these tables to 
 between cohorts, not as species trait values; the species-level folder holds those.
 
 
-Built 2026-10-15 from Evo-M1-Trait-Data commit `dd56c0a (from .git/HEAD; git command unavailable)` by `__Cytosplore_export/build_cytosplore_traits.R`.
+Built 2026-10-20 from Evo-M1-Trait-Data commit `cb75ea9 (from .git/HEAD; git command unavailable)` by `__Cytosplore_export/build_cytosplore_traits.R`.
 Re-run that script to regenerate everything here; do not edit these CSVs by hand.
 
 ## What this is
@@ -23,7 +23,7 @@ Comparative species traits for the 4-species `HMBA` cohort (`_keys/species_cohor
 | `HMBA_genus_traits_wide_core.csv` | species x variable (89) | same, only traits held for >= 4 of 4 species (`in_core`) |
 | `HMBA_genus_variable_dictionary.csv` | variable (576) | column metadata for the wide tables: domain, structure, measure, unit, definition, coverage |
 | `HMBA_genus_traits_cells.csv` | species x variable cell (1318) | how each wide cell was made: n values, aggregation, min/max, sources |
-| `HMBA_genus_traits_long.csv` | value (3570) | full provenance: every source value behind every cell |
+| `HMBA_genus_traits_long.csv` | value (3929) | full provenance: every source value behind every cell |
 | `HMBA_genus_domain_coverage.csv` | species | n distinct variables per domain |
 | `BUILD_INFO.txt` | - | build stamp and counts |
 
@@ -57,10 +57,10 @@ Source audit (run `python3 __Cytosplore_export/audit_cytosplore_variables.py HMB
 
 | species_sci | common_name | Order | n_variables | data_labels |
 |---|---|---|---|---|
-| Callithrix jacchus | Common marmoset | Primates | 271 | Callithrix acariensis; Callithrix argentata; Callithrix aurita; Callithrix chrysoleuca; Callithrix emiliae; Callithrix flaviceps; Callithrix geoffroyi; Callithrix humeralifer; Callithrix humilis; Callithrix intermedia; Callithrix jacchus; Callithrix kuhli; Callithrix kuhlii; Callithrix leucippe; Callithrix manicorensis; Callithrix marcai; Callithrix mauesi; Callithrix melanura; Callithrix nigriceps; Callithrix penicillata; Callithrix saterei; Callithrix sp. |
-| Homo sapiens | Human | Primates | 480 | Homo erectus; Homo floresiensis; Homo georgicus; Homo habilis; Homo heidelbergensis; Homo naledi; Homo neanderthalensis; Homo rudolfensis; Homo sapiens |
-| Macaca mulatta | Rhesus macaque | Primates | 399 | Macaca arctoides; Macaca assamensis; Macaca cyclopis; Macaca fascicularis; Macaca fascicularis group; Macaca fuscata; Macaca hecki; Macaca irus; Macaca leonina; Macaca maura; Macaca mulatta; Macaca mulatta group; Macaca nemestrina; Macaca nemestrina group; Macaca nigra; Macaca nigrescens; Macaca ochreata; Macaca pagensis; Macaca radiata; Macaca siberu; Macaca silenus; Macaca sinica; Macaca sinica group; Macaca sp.; Macaca sylvanus; Macaca sylvanus group; Macaca thibetana; Macaca tonkeana |
-| Mus musculus | Mouse | Rodentia | 172 | Mus baoulei; Mus booduga; Mus bufo; Mus callewaerti; Mus caroli; Mus cervicolor; Mus cookii; Mus crociduroides; Mus famulus; Mus fernandoni; Mus fragilicauda; Mus goundae; Mus haussa; Mus indutus; Mus macedonicus; Mus mahomet; Mus mattheyi; Mus mayori; Mus minutoides; Mus musculoides; Mus musculus; Mus neavei; Mus orangiae; Mus oubanguii; Mus pahari; Mus phillipsi; Mus platythrix; Mus saxicola; Mus setulosus; Mus setzeri; Mus shortridgei; Mus sorella; Mus sp.; Mus spicilegus; Mus spretus; Mus tenellus; Mus terricolor; Mus triton; Mus vulcani |
+| Callithrix jacchus | Common marmoset | Primates | 272 | Callithrix acariensis; Callithrix argentata; Callithrix aurita; Callithrix chrysoleuca; Callithrix emiliae; Callithrix flaviceps; Callithrix geoffroyi; Callithrix humeralifer; Callithrix humilis; Callithrix intermedia; Callithrix jacchus; Callithrix kuhli; Callithrix kuhlii; Callithrix leucippe; Callithrix manicorensis; Callithrix marcai; Callithrix mauesi; Callithrix melanura; Callithrix nigriceps; Callithrix penicillata; Callithrix saterei; Callithrix sp. |
+| Homo sapiens | Human | Primates | 481 | Homo erectus; Homo floresiensis; Homo georgicus; Homo habilis; Homo heidelbergensis; Homo naledi; Homo neanderthalensis; Homo rudolfensis; Homo sapiens |
+| Macaca mulatta | Rhesus macaque | Primates | 398 | Macaca arctoides; Macaca assamensis; Macaca cyclopis; Macaca fascicularis; Macaca fascicularis group; Macaca fuscata; Macaca hecki; Macaca irus; Macaca leonina; Macaca maura; Macaca mulatta; Macaca mulatta group; Macaca nemestrina; Macaca nemestrina group; Macaca nigra; Macaca nigrescens; Macaca ochreata; Macaca pagensis; Macaca radiata; Macaca siberu; Macaca silenus; Macaca sinica; Macaca sinica group; Macaca sp.; Macaca sylvanus; Macaca sylvanus group; Macaca thibetana; Macaca tonkeana |
+| Mus musculus | Mouse | Rodentia | 171 | Mus baoulei; Mus booduga; Mus bufo; Mus callewaerti; Mus caroli; Mus cervicolor; Mus cookii; Mus crociduroides; Mus famulus; Mus fernandoni; Mus fragilicauda; Mus goundae; Mus haussa; Mus indutus; Mus macedonicus; Mus mahomet; Mus mattheyi; Mus mayori; Mus minutoides; Mus musculoides; Mus musculus; Mus neavei; Mus orangiae; Mus oubanguii; Mus pahari; Mus phillipsi; Mus platythrix; Mus saxicola; Mus setulosus; Mus setzeri; Mus shortridgei; Mus sorella; Mus sp.; Mus spicilegus; Mus spretus; Mus tenellus; Mus terricolor; Mus triton; Mus vulcani |
 
 ## Variables per domain (all / core / M1-motor flagged)
 
@@ -70,13 +70,14 @@ Source audit (run `python3 __Cytosplore_export/audit_cytosplore_variables.py HMB
 | cellular composition | 89 | 28 | 3 |
 | cortical & cerebellar folding | 9 | 2 | 0 |
 | body size | 2 | 1 | 0 |
-| metabolism | 71 | 7 | 2 |
-| life history | 22 | 19 | 0 |
+| metabolism | 72 | 8 | 2 |
+| life history | 20 | 18 | 0 |
 | diet & ecology | 29 | 18 | 0 |
 | behaviour & cognition | 30 | 1 | 9 |
 | sensorimotor & motor pathways | 19 | 0 | 19 |
 | hand & limb morphology | 22 | 0 | 22 |
 | sleep & torpor | 5 | 1 | 0 |
+| Unclassified | 1 | 0 | 0 |
 | cellular morphology | 97 | 0 | 27 |
 | sensory performance | 21 | 1 | 0 |
 

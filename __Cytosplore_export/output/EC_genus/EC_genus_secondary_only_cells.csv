@@ -27,6 +27,12 @@ Heterocephalus glaber,Striatum_Mass (g),brain structure & size,Kverkova_etal_201
 Heterocephalus glaber,Tectum_Mass (g),brain structure & size,Kverkova_etal_2018,derived,False,,,"Brain_Mass.g(0.44) x Tectum_p.C.Brain(0.0232) -- volume-fraction of brain applied to brain MASS as a density-homogeneity approximation, not an independently measured part mass"
 Heterocephalus glaber,Tegmentum_Mass (g),brain structure & size,Kverkova_etal_2018,derived,False,,,"Brain_Mass.g(0.44) x Tegmentum_p.C.Brain(0.0462) -- volume-fraction of brain applied to brain MASS as a density-homogeneity approximation, not an independently measured part mass"
 Heterocephalus glaber,Thalamus_Mass (g),brain structure & size,Kverkova_etal_2018,derived,False,,,"Brain_Mass.g(0.44) x Thalamus_p.C.Brain(0.0566) -- volume-fraction of brain applied to brain MASS as a density-homogeneity approximation, not an independently measured part mass"
+Aotus nancymaae,M1_neuron_number (count),cellular composition,HerculanoHouzel_etal_2016,secondary,False,,,primary_used=FALSE
+Pan troglodytes,M1_neuron_number (count),cellular composition,HerculanoHouzel_etal_2016,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Head_body_length (mm),body size,Myhrvold_etal_2015,secondary,False,,,primary_used=FALSE
+Heterocephalus glaber,Head_body_length (mm),body size,Myhrvold_etal_2015,secondary,False,,,primary_used=FALSE
+Monodelphis domestica,Head_body_length (mm),body size,Myhrvold_etal_2015,secondary,False,,,primary_used=FALSE
+Sus scrofa,Head_body_length (mm),body size,Myhrvold_etal_2015,secondary,False,,,primary_used=FALSE
 Homo sapiens,Amygdala_CMRgl (umol/100g/min),metabolism,Heiss_etal_2004; Karbowski__2007,secondary,False,,,compilation resolved to 2 primary studies
 Macaca mulatta,Amygdala_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 3 primary studies
 Mus musculus,Amygdala_CMRgl (umol/100g/min),metabolism,Karbowski__2007,secondary,False,,,compilation resolved to 1 primary studies
@@ -61,11 +67,24 @@ Pan troglodytes,BMR_massspecific (mL O2/h/g),metabolism,Boyer (team); Genoud_eta
 Rattus norvegicus,BMR_massspecific (mL O2/h/g),metabolism,Genoud_etal_2018,secondary,False,,,primary_used=FALSE
 Sus scrofa,BMR_massspecific (mL O2/h/g),metabolism,Genoud_etal_2018,secondary,False,,,primary_used=FALSE
 Tupaia belangeri,BMR_massspecific (mL O2/h/g),metabolism,Boyer (team); Genoud_etal_2018; Lewitus (team),secondary,False,,,primary_used=FALSE
-Heterocephalus glaber,BMR_wholeanimal (mL O2/h),metabolism,Genoud_etal_2018; Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Homo sapiens,BMR_wholeanimal (mL O2/h),metabolism,Boyer (team); Genoud_etal_2018; Isler_etal_2008,secondary,False,,,primary_used=FALSE
-Monodelphis domestica,BMR_wholeanimal (mL O2/h),metabolism,Genoud_etal_2018; Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Rattus norvegicus,BMR_wholeanimal (mL O2/h),metabolism,Genoud_etal_2018; Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Sus scrofa,BMR_wholeanimal (mL O2/h),metabolism,Genoud_etal_2018,secondary,False,,,primary_used=FALSE
+Heterocephalus glaber,BMR_wholeanimal (mL O2/h),metabolism,Genoud_etal_2018; Jones_etal_2009; deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Homo sapiens,BMR_wholeanimal (mL O2/h),metabolism,Boyer (team); Genoud_etal_2018; Isler_etal_2008; deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Monodelphis domestica,BMR_wholeanimal (mL O2/h),metabolism,Genoud_etal_2018; Jones_etal_2009; deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Rattus norvegicus,BMR_wholeanimal (mL O2/h),metabolism,Genoud_etal_2018; Jones_etal_2009; deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Sus scrofa,BMR_wholeanimal (mL O2/h),metabolism,Genoud_etal_2018; deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Aotus nancymaae,Body_temperature (C),metabolism,deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Body_temperature (C),metabolism,deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Dasypus novemcinctus,Body_temperature (C),metabolism,deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Heterocephalus glaber,Body_temperature (C),metabolism,deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Homo sapiens,Body_temperature (C),metabolism,deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Body_temperature (C),metabolism,deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Monodelphis domestica,Body_temperature (C),metabolism,deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Mus musculus,Body_temperature (C),metabolism,deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Mustela putorius furo,Body_temperature (C),metabolism,deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Pan troglodytes,Body_temperature (C),metabolism,deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Rattus norvegicus,Body_temperature (C),metabolism,deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Sus scrofa,Body_temperature (C),metabolism,deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Tupaia belangeri,Body_temperature (C),metabolism,deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
 Aotus nancymaae,Brain_blood_flow_total (mL/s),metabolism,Boyer_Harrington_2019,secondary,False,,,primary_used=FALSE
 Callithrix jacchus,Brain_blood_flow_total (mL/s),metabolism,Boyer_Harrington_2019,secondary,False,,,primary_used=FALSE
 Homo sapiens,Brain_blood_flow_total (mL/s),metabolism,Boyer_Harrington_2019,secondary,False,,,primary_used=FALSE
@@ -245,60 +264,50 @@ Pan troglodytes,Age_at_first_birth (days),life history,Jones_etal_2009,secondary
 Rattus norvegicus,Age_at_first_birth (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
 Sus scrofa,Age_at_first_birth (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
 Tupaia belangeri,Age_at_first_birth (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Heterocephalus glaber,Gestation (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Monodelphis domestica,Gestation (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Aotus nancymaae,Interbirth_interval (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Callithrix jacchus,Interbirth_interval (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Heterocephalus glaber,Interbirth_interval (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Homo sapiens,Interbirth_interval (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Macaca mulatta,Interbirth_interval (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Microcebus murinus,Interbirth_interval (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Monodelphis domestica,Interbirth_interval (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Mus musculus,Interbirth_interval (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Mustela putorius furo,Interbirth_interval (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Pan troglodytes,Interbirth_interval (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Rattus norvegicus,Interbirth_interval (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Sus scrofa,Interbirth_interval (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Tupaia belangeri,Interbirth_interval (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Aotus nancymaae,Litter_size (count),life history,Jones_etal_2009; Lewitus (team),secondary,False,,,primary_used=FALSE
-Callithrix jacchus,Litter_size (count),life history,Jones_etal_2009; Lewitus (team),secondary,False,,,primary_used=FALSE
-Dasypus novemcinctus,Litter_size (count),life history,Jones_etal_2009; Lewitus (team),secondary,False,,,primary_used=FALSE
-Heterocephalus glaber,Litter_size (count),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Homo sapiens,Litter_size (count),life history,Jones_etal_2009; Lewitus (team),secondary,False,,,primary_used=FALSE
-Macaca mulatta,Litter_size (count),life history,Jones_etal_2009; Lewitus (team),secondary,False,,,primary_used=FALSE
-Microcebus murinus,Litter_size (count),life history,Jones_etal_2009; Lewitus (team),secondary,False,,,primary_used=FALSE
-Monodelphis domestica,Litter_size (count),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Mus musculus,Litter_size (count),life history,Jones_etal_2009; Lewitus (team),secondary,False,,,primary_used=FALSE
-Mustela putorius furo,Litter_size (count),life history,Jones_etal_2009; Lewitus (team),secondary,False,,,primary_used=FALSE
-Pan troglodytes,Litter_size (count),life history,Jones_etal_2009; Lewitus (team),secondary,False,,,primary_used=FALSE
-Rattus norvegicus,Litter_size (count),life history,Jones_etal_2009; Lewitus (team),secondary,False,,,primary_used=FALSE
-Sus scrofa,Litter_size (count),life history,Jones_etal_2009; Lewitus (team),secondary,False,,,primary_used=FALSE
-Tupaia belangeri,Litter_size (count),life history,Jones_etal_2009; Lewitus (team),secondary,False,,,primary_used=FALSE
-Heterocephalus glaber,Litters_per_year_PanTHERIA (count/yr),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Macaca mulatta,Litters_per_year_PanTHERIA (count/yr),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Monodelphis domestica,Litters_per_year_PanTHERIA (count/yr),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Mus musculus,Litters_per_year_PanTHERIA (count/yr),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Mustela putorius furo,Litters_per_year_PanTHERIA (count/yr),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Rattus norvegicus,Litters_per_year_PanTHERIA (count/yr),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Sus scrofa,Litters_per_year_PanTHERIA (count/yr),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Tupaia belangeri,Litters_per_year_PanTHERIA (count/yr),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Heterocephalus glaber,Maximum_longevity (yr),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Monodelphis domestica,Maximum_longevity (yr),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Sus scrofa,Maximum_longevity (yr),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Aotus nancymaae,Neonate_body_mass (g),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Callithrix jacchus,Neonate_body_mass (g),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Dasypus novemcinctus,Neonate_body_mass (g),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Heterocephalus glaber,Neonate_body_mass (g),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Homo sapiens,Neonate_body_mass (g),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Macaca mulatta,Neonate_body_mass (g),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Microcebus murinus,Neonate_body_mass (g),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Monodelphis domestica,Neonate_body_mass (g),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Mus musculus,Neonate_body_mass (g),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Mustela putorius furo,Neonate_body_mass (g),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Pan troglodytes,Neonate_body_mass (g),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Rattus norvegicus,Neonate_body_mass (g),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Sus scrofa,Neonate_body_mass (g),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Tupaia belangeri,Neonate_body_mass (g),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Heterocephalus glaber,Female_sexual_maturity (days),life history,Myhrvold_etal_2015; deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Monodelphis domestica,Female_sexual_maturity (days),life history,Myhrvold_etal_2015; deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Sus scrofa,Female_sexual_maturity (days),life history,Myhrvold_etal_2015; deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Heterocephalus glaber,Gestation (days),life history,Jones_etal_2009; Myhrvold_etal_2015; deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Monodelphis domestica,Gestation (days),life history,Jones_etal_2009; Myhrvold_etal_2015; deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Heterocephalus glaber,Interbirth_interval (days),life history,Jones_etal_2009; Myhrvold_etal_2015; deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Monodelphis domestica,Interbirth_interval (days),life history,Jones_etal_2009; Myhrvold_etal_2015; deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Rattus norvegicus,Interbirth_interval (days),life history,Jones_etal_2009; Myhrvold_etal_2015; deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Sus scrofa,Interbirth_interval (days),life history,Jones_etal_2009; Myhrvold_etal_2015; deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Aotus nancymaae,Litter_size (count),life history,Jones_etal_2009; Lewitus (team); Myhrvold_etal_2015; deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Litter_size (count),life history,Jones_etal_2009; Lewitus (team); Myhrvold_etal_2015; deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Dasypus novemcinctus,Litter_size (count),life history,Jones_etal_2009; Lewitus (team); Myhrvold_etal_2015; deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Heterocephalus glaber,Litter_size (count),life history,Jones_etal_2009; Myhrvold_etal_2015; deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Homo sapiens,Litter_size (count),life history,Jones_etal_2009; Lewitus (team); Myhrvold_etal_2015; deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Litter_size (count),life history,Jones_etal_2009; Lewitus (team); Myhrvold_etal_2015; deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Microcebus murinus,Litter_size (count),life history,Jones_etal_2009; Lewitus (team); Myhrvold_etal_2015; deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Monodelphis domestica,Litter_size (count),life history,Jones_etal_2009; Myhrvold_etal_2015; deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Mus musculus,Litter_size (count),life history,Jones_etal_2009; Lewitus (team); Myhrvold_etal_2015; deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Mustela putorius furo,Litter_size (count),life history,Jones_etal_2009; Lewitus (team); Myhrvold_etal_2015; deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Pan troglodytes,Litter_size (count),life history,Jones_etal_2009; Lewitus (team); Myhrvold_etal_2015; deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Rattus norvegicus,Litter_size (count),life history,Jones_etal_2009; Lewitus (team); Myhrvold_etal_2015; deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Sus scrofa,Litter_size (count),life history,Jones_etal_2009; Lewitus (team); Myhrvold_etal_2015; deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Tupaia belangeri,Litter_size (count),life history,Jones_etal_2009; Lewitus (team); Myhrvold_etal_2015; deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Heterocephalus glaber,Litters_per_year (count/yr),life history,Jones_etal_2009; Myhrvold_etal_2015; deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Monodelphis domestica,Litters_per_year (count/yr),life history,Jones_etal_2009; Myhrvold_etal_2015; deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Tupaia belangeri,Litters_per_year (count/yr),life history,Jones_etal_2009; Myhrvold_etal_2015; deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Monodelphis domestica,Male_sexual_maturity (days),life history,Myhrvold_etal_2015; deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Sus scrofa,Male_sexual_maturity (days),life history,Myhrvold_etal_2015; deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Heterocephalus glaber,Maximum_longevity (yr),life history,Jones_etal_2009; Myhrvold_etal_2015; deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Monodelphis domestica,Maximum_longevity (yr),life history,Jones_etal_2009; Myhrvold_etal_2015; deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Sus scrofa,Maximum_longevity (yr),life history,Jones_etal_2009; Myhrvold_etal_2015; deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Heterocephalus glaber,Neonate_body_mass (g),life history,Jones_etal_2009; Myhrvold_etal_2015; deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Monodelphis domestica,Neonate_body_mass (g),life history,Jones_etal_2009; Myhrvold_etal_2015; deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Callithrix jacchus,Postnatal_growth_rate (1/day),life history,deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Heterocephalus glaber,Postnatal_growth_rate (1/day),life history,deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Homo sapiens,Postnatal_growth_rate (1/day),life history,deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Macaca mulatta,Postnatal_growth_rate (1/day),life history,deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Microcebus murinus,Postnatal_growth_rate (1/day),life history,deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Mus musculus,Postnatal_growth_rate (1/day),life history,deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Mustela putorius furo,Postnatal_growth_rate (1/day),life history,deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Pan troglodytes,Postnatal_growth_rate (1/day),life history,deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Rattus norvegicus,Postnatal_growth_rate (1/day),life history,deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Sus scrofa,Postnatal_growth_rate (1/day),life history,deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Tupaia belangeri,Postnatal_growth_rate (1/day),life history,deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
 Aotus nancymaae,Sexual_maturity_age (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
 Callithrix jacchus,Sexual_maturity_age (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
 Dasypus novemcinctus,Sexual_maturity_age (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
@@ -312,8 +321,12 @@ Pan troglodytes,Sexual_maturity_age (days),life history,Jones_etal_2009,secondar
 Rattus norvegicus,Sexual_maturity_age (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
 Sus scrofa,Sexual_maturity_age (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
 Tupaia belangeri,Sexual_maturity_age (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Heterocephalus glaber,Weaning_age (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
-Monodelphis domestica,Weaning_age (days),life history,Jones_etal_2009,secondary,False,,,primary_used=FALSE
+Heterocephalus glaber,Weaning_age (days),life history,Jones_etal_2009; Myhrvold_etal_2015,secondary,False,,,primary_used=FALSE
+Monodelphis domestica,Weaning_age (days),life history,Jones_etal_2009; Myhrvold_etal_2015; deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Heterocephalus glaber,Weaning_weight (g),life history,Myhrvold_etal_2015,secondary,False,,,primary_used=FALSE
+Monodelphis domestica,Weaning_weight (g),life history,Myhrvold_etal_2015; deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Mustela putorius furo,Weaning_weight (g),life history,Myhrvold_etal_2015; deMagalhães_etal_2024,secondary,False,,,primary_used=FALSE
+Sus scrofa,Weaning_weight (g),life history,Myhrvold_etal_2015,secondary,False,,,primary_used=FALSE
 Aotus nancymaae,Activity_cycle_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
 Callithrix jacchus,Activity_cycle_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
 Dasypus novemcinctus,Activity_cycle_PanTHERIA (category),diet & ecology,Jones_etal_2009,secondary,False,,,primary_used=FALSE
@@ -691,7 +704,7 @@ Pan troglodytes,Lamina of axon terminals densest,sensorimotor & motor pathways,H
 Rattus norvegicus,Lamina of axon terminals densest,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,"cited within compilation: BROWN, 1971; primary not in database"
 Tupaia belangeri,Lamina of axon terminals densest,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,False,,,"cited within compilation: CAMPBELL, 1967; primary not in database"
 Dasypus novemcinctus,Largest fiber diameter µm,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,True,Area of tract mmˆ2,,"cited within compilation: VERHAART, 1970; primary not in database"
-Homo sapiens,Largest fiber diameter µm,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,True,Area of tract mmˆ2; Average fiber size x 10ˆ5 K,,"cited within compilation: TRUEX and CARPENTER, 1969; primary not in database"
+Homo sapiens,Largest fiber diameter µm,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,True,Area of tract mmˆ2; Average fiber size x 10ˆ5 K; Number of fibers per tract,,"cited within compilation: TRUEX and CARPENTER, 1969; primary not in database"
 Mustela putorius furo,Largest fiber diameter µm,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,True,Area of tract mmˆ2,,"cited within compilation: NOORDUYN, 1959; primary not in database"
 Rattus norvegicus,Largest fiber diameter µm,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,True,Area of tract mmˆ2; Average fiber size x 10ˆ5 K,,"cited within compilation: BISHOP et al., 1971; primary not in database"
 Sus scrofa,Largest fiber diameter µm,sensorimotor & motor pathways,Heffner_Masterton_1975,secondary,True,Area of tract mmˆ2; Average fiber size x 10ˆ5 K,,"cited within compilation: VERHAART, 1970; primary not in database"

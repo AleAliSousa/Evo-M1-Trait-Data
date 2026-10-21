@@ -26,12 +26,18 @@ item_name <- c("Changizi__2001_Figure3",
                "Mota_etal_2019_SupplementaryTableS1",# ADDED 2026-08-25: AT/AE/T only (per one hemisphere). VT/VG/VW volumes HELD for a __merging_volumes overlap audit; N (cortical neurons) skipped as a compilation.
                "Smaers_etal_2017_TableS1part2",     # ADDED 2026-08-25 (owner decision): SECONDARY — Brodmann 1909 regional surfaces via Smaers 2017. Ingested deliberately (primary not built); a future Brodmann-1909 build supersedes it.
                "Brodmann__1913_Table1",             # ADDED 2026-08-25: PRIMARY — Brodmann 1913 total cortical surface, one hemisphere, 38 taxa (bespoke block: one human row kept).
-               "Campos_Welker_1976_Table1",         # ADDED 2026-10-19: PRIMARY — total cortical surface, fissure subset/percentage, and thickness; one right hemisphere per species.
+               "Campos_Welker_1976_Table1",         # ADDED 2026-10-19: PRIMARY — total cortical surface, fissure subset/percentage, and thickness; one specimen/species, hemisphere count unclear.
                "Huffman_etal_1999_TABLE2",          # ADDED 2026-10-19: PRIMARY — mapped S1 surface, averaged across cases within species.
-               "VanEssen_Drury_1997_Table1")        # ADDED 2026-10-19: PRIMARY human total neocortex + authors' visual-cortex estimate; V1 and macaque rows are secondary and remain provenance-only.
-## Krubitzer_Kaas_1990_Table1 is documented as a related reference only: it reports RELATIVE % of a
-## fixed 8-field visual scheme, not comparable to Finlay's area counts and with no absolute surface —
-## so it is NOT merged numerically (see README). Its term map keeps only Species.
+               "VanEssen_Drury_1997_Table1",        # ADDED 2026-10-19: PRIMARY human total neocortex + authors' visual-cortex estimate; V1 and macaque rows are secondary and remain provenance-only.
+               ## ---- RELATIVE + ABSOLUTE surface sources (ADDED 2026-10-21; see relative_absolute_helpers.R) ----
+               "Krubitzer_Kaas_1990_Table1",        # PRIMARY, per case: % of total neocortex surface for 8 visual fields (17,18,DL,DM,DI,FST,MT,MST) -> *_Surface_Area.pct_Neocortex. No absolute denominator printed -> not convertible inside the merge.
+               "Catania_etal_1999_Table1",          # PRIMARY, per case: total neocortex, V1, A1, S1+S2 block in mm2 AND % of neocortex -> printed absolutes kept, % re-derived as a check.
+               "Catania_Remple_2002_Table1",        # PRIMARY, per case: total neocortex and S1 in mm2 (individuals); approximate species-level S1 % kept as relative; rat 21% comparator held as secondary.
+               "Sarko_etal_2011_ResultsText",       # PRIMARY, age-group means: total neocortex, V1, PMBSF (mm2) + approximate % -> adults active, juveniles held. The source item's recomputed_pct column is wrong for adults and is NOT used; % is recomputed here.
+               "Preuss_Kaas_1996_ResultsText",      # PRIMARY, one specimen: V1 66 mm2 + ~12% of cortical mantle -> denominator derived by inversion, held (approximate %).
+               "Krubitzer_etal_1997_ResultsText",   # PRIMARY, approximate: total neocortex "about 15 mm2" (one hemisphere, includes cingulate) -> active, value_status approximate. PV/S2 (combined label) not wired.
+               "Seelke_etal_2016_Table2",           # PRIMARY but GROUP-LEVEL % of adjusted cortical sheet (treatment x sex groups) -> all rows HELD (held_group_level_pct_only); listed as unconverted.
+               "Felleman_VanEssen_1991_Table2")     # SECONDARY SYNTHESIS, one composite macaque hemisphere: V1/V2/MT/visual-cortex mm2 and % -> HELD (held_secondary_synthesis), provenance only.
 
 ## Species aliases — unify spelling variants across sources so the same animal joins on one Species.
 ## (Collins printed "Otolemur garnetti"/"Aotus nancymae"; Young the correct "garnettii"/"nancymaae";
@@ -61,13 +67,25 @@ unify <- function(s) ifelse(s %in% names(sp_alias), sp_alias[s], s)
 regional_terms <- c("M1_Surface_Area.mm2", "V1_Surface_Area.mm2", "V2_Surface_Area.mm2",
                     "S1_Surface_Area.mm2", "VisualCortex_Surface_Area.mm2",
                     "Prefrontal_Surface_Area.mm2", "OtherAssociation_Surface_Area.mm2",
-                    "FrontalMotor_Surface_Area.mm2")   # FrontalMotor = Brodmann's agranular frontal block, NOT M1
+                    "FrontalMotor_Surface_Area.mm2",   # FrontalMotor = Brodmann's agranular frontal block, NOT M1
+                    ## ADDED 2026-10-21 (relative/absolute integration): further regional absolute terms
+                    "A1_Surface_Area.mm2", "S2_Surface_Area.mm2", "MT_Surface_Area.mm2",
+                    "DL_Surface_Area.mm2", "DM_Surface_Area.mm2", "DI_Surface_Area.mm2",
+                    "FST_Surface_Area.mm2", "MST_Surface_Area.mm2",
+                    "SomatosensoryS1S2_Surface_Area.mm2",  # Catania 1999 "total somatosensory cortex (S1+S2)" block -- NOT S1; never pooled with S1
+                    "S1_PMBSF_Surface_Area.mm2")           # Sarko 2011 posteromedial barrel subfield, a sub-field of S1 -- never pooled with S1
+## Relative regional terms: <Region>_Surface_Area.pct_<Denominator>. trait_class = "regional_relative".
+## Their denominator_term names the absolute term they are a fraction of; denominator_definition keeps
+## the source's own wording (total neocortex / adjusted cortical sheet / cortical mantle / visual cortex).
+source("relative_absolute_helpers.R")
 
-## HEMISPHERE CONVENTION (2026-08-25): every surface source in this merge measures ONE cortical
-## hemisphere (Collins 2010/2016 flattened hemispheres, Turner per-hemisphere averaged per animal,
-## Young M1 per hemisphere, Mota 2015/2019 "one cortical hemisphere only" per caption). So
-## CorticalSurface_Area.mm2 and CorticalExposedSurface_Area.mm2 are PER-HEMISPHERE values —
-## do not double to whole-brain without recording it (see laterality/doubling provenance policy).
+## HEMISPHERE CONVENTION (2026-08-25; exception flagged 2026-10-20): the established surface
+## sources measure ONE cortical hemisphere (Collins 2010/2016 flattened hemispheres, Turner
+## per-hemisphere averaged per animal, Young M1 per hemisphere, Mota 2015/2019 "one cortical
+## hemisphere only" per caption). Campos & Welker 1976 is an exception: Table 1 does not clearly
+## establish the laterality or hemisphere count for its surface values, so those rows carry source
+## flags and must not be doubled. Other CorticalSurface_Area.mm2 and
+## CorticalExposedSurface_Area.mm2 values are per hemisphere unless their source says otherwise.
 
 ## NB 2026-09-27: the Mota & Herculano-Houzel 2015 item is keyed as
 ## "Mota_HerculanoHouzel_2015_TableS1" (registry column F now strips hyphens; the paper
@@ -181,9 +199,11 @@ long[["Brodmann 1913 surface"]] <- tibble(
   Species = b13$Species, Standardized_Term = "CorticalSurface_Area.mm2",
   value = b13$`CorticalSurface_1hemisphere.mm2`, source = "Brodmann__1913_Table1")
 
-# Campos & Welker 1976 Table 1: one right hemisphere per species. The table separates total
-# cortical surface from the portion in fissures, so the latter gets its own term and is never
-# treated as exposed surface. Neocortical volume and neuron-count rows belong to their own merges.
+# Campos & Welker 1976 Table 1: one specimen per species; laterality/hemisphere count for surface
+# measures is unclear. The table separates total cortical surface from the portion in fissures, so
+# the latter gets its own term and is never treated as exposed surface. Surface area may be derived
+# from volume/thickness and no shrinkage correction is stated; flags are propagated below.
+# Neocortical volume and neuron-count rows belong to their own merges.
 cw76map <- c("cortical_surface_area_mm2" = "CorticalSurface_Area.mm2",
              "cortical_fissure_area_mm2" = "CorticalBuriedSurface_Area.mm2",
              "cortical_surface_in_fissures_pct" = "CorticalSurfaceInFissures.pct",
@@ -194,7 +214,8 @@ cw76 <- readr::read_tsv(file.path(tsvdir, paste0(enc("Campos_Welker_1976_Table1"
 long[["Campos Welker 1976 cortical morphometry"]] <- tibble(
   Species = cw76$species_as_published,
   Standardized_Term = unname(cw76map[cw76$code]),
-  value = cw76$value, source = "Campos_Welker_1976_Table1")
+  value = cw76$value, source = "Campos_Welker_1976_Table1",
+  source_flags = cw76$source_flags, source_issue_note = cw76$source_issue_note)
 
 # Huffman et al. 1999 Table 2: primary multiunit maps of S1 in northern quoll and striped possum.
 # "Entire contralateral body" is the table's 100%-of-S1 row. Average cases within species so this
@@ -221,16 +242,158 @@ ved97 <- readr::read_tsv(file.path(tsvdir, paste0(enc("VanEssen_Drury_1997_Table
   filter(Species == "Homo sapiens", structure %in% names(ved97map),
          data_role %in% c("primary", "primary synthesis"), !is.na(area_cm2)) |>
   group_by(Species, structure) |>
-  summarise(value = mean(area_cm2) * 100, .groups = "drop")
+  summarise(
+    value = mean(area_cm2) * 100,
+    source_flags = paste(sort(unique(source_flags)), collapse = "|"),
+    source_issue_note = paste(unique(source_issue_note), collapse = " "),
+    .groups = "drop"
+  )
 long[["Van Essen Drury 1997 surfaces"]] <- tibble(
   Species = ved97$Species,
   Standardized_Term = unname(ved97map[ved97$structure]),
-  value = ved97$value, source = "VanEssen_Drury_1997_Table1")
+  value = ved97$value, source = "VanEssen_Drury_1997_Table1",
+  source_flags = ved97$source_flags, source_issue_note = ved97$source_issue_note)
+
+## ===================== RELATIVE + ABSOLUTE surface sources (2026-10-21) =====================
+## Each block emits specimen, grain, n, value_status, value_basis = "printed", denominator_term and
+## denominator_definition so the same-specimen conversion can run after status assignment.
+rel_cols <- function(d) d |> mutate(value_basis = "printed", derivation = NA_character_)
+
+## Krubitzer & Kaas 1990 Table 1 -- % of total neocortex surface per case, 8 visual fields.
+kk90 <- readr::read_tsv(file.path(tsvdir, paste0(enc("Krubitzer_Kaas_1990_Table1"), ".tsv")), show_col_types = FALSE)
+kk90map <- c(pct_17 = "V1_Surface_Area.pct_Neocortex", pct_18 = "V2_Surface_Area.pct_Neocortex",
+             pct_DL = "DL_Surface_Area.pct_Neocortex", pct_DM = "DM_Surface_Area.pct_Neocortex",
+             pct_DI = "DI_Surface_Area.pct_Neocortex", pct_FST = "FST_Surface_Area.pct_Neocortex",
+             pct_MT = "MT_Surface_Area.pct_Neocortex", pct_MST = "MST_Surface_Area.pct_Neocortex")
+long[["KK90 relative"]] <- kk90 |>
+  select(Species, case_number, all_of(names(kk90map)), source_flags, source_issue_note) |>
+  pivot_longer(all_of(names(kk90map)), names_to = "oc", values_to = "value") |>
+  transmute(Species, Standardized_Term = unname(kk90map[oc]), value = as.numeric(value),
+            source = "Krubitzer_Kaas_1990_Table1", source_flags, source_issue_note,
+            specimen = as.character(case_number), grain = "individual", n = 1L, value_status = "as_reported",
+            denominator_term = "CorticalSurface_Area.mm2",
+            denominator_definition = "total neocortex surface of the hemisphere (Krubitzer & Kaas 1990 Table 1 footnote)") |>
+  rel_cols()
+
+## Catania et al. 1999 Table 1 -- per case: mm2 AND % of neocortex.
+c99 <- readr::read_tsv(file.path(tsvdir, paste0(enc("Catania_etal_1999_Table1"), ".tsv")), show_col_types = FALSE)
+c99map <- c("total neocortex" = "CorticalSurface_Area.mm2", "V1" = "V1_Surface_Area.mm2",
+            "A1" = "A1_Surface_Area.mm2", "total somatosensory cortex (S1+S2)" = "SomatosensoryS1S2_Surface_Area.mm2")
+c99 <- c99 |> filter(structure %in% names(c99map)) |>
+  mutate(abs_term = unname(c99map[structure]), pct_term = sub("\\.mm2$", ".pct_Neocortex", abs_term),
+         specimen = as.character(case_id), grain = "individual", n = 1L, value_status = "as_reported",
+         source = "Catania_etal_1999_Table1",
+         denominator_definition = "total neocortex of the flattened hemisphere (Catania et al. 1999 Table 1)")
+long[["Catania99 abs"]] <- c99 |> filter(!is.na(area_mm2)) |>
+  transmute(Species, Standardized_Term = abs_term, value = area_mm2, source, source_flags, source_issue_note,
+            specimen, grain, n, value_status, denominator_term = NA_character_, denominator_definition = NA_character_) |> rel_cols()
+long[["Catania99 pct"]] <- c99 |> filter(!is.na(pct_neocortex), structure != "total neocortex") |>
+  transmute(Species, Standardized_Term = pct_term, value = pct_neocortex, source, source_flags, source_issue_note,
+            specimen, grain, n, value_status, denominator_term = "CorticalSurface_Area.mm2", denominator_definition) |> rel_cols()
+
+## Catania & Remple 2002 Table 1 -- individual total neocortex and S1 (mm2); approximate S1 % (species level).
+cr02 <- readr::read_tsv(file.path(tsvdir, paste0(enc("Catania_Remple_2002_Table1"), ".tsv")), show_col_types = FALSE)
+cr02map <- c("total neocortex" = "CorticalSurface_Area.mm2", "primary somatosensory cortex (S1)" = "S1_Surface_Area.mm2")
+long[["CataniaRemple02 abs"]] <- cr02 |> filter(statistic == "individual", structure %in% names(cr02map), !is.na(area_mm2)) |>
+  transmute(Species, Standardized_Term = unname(cr02map[structure]), value = area_mm2, source = "Catania_Remple_2002_Table1",
+            source_flags = NA_character_, source_issue_note = NA_character_,
+            specimen = as.character(case_id), grain = "individual", n = 1L, value_status = "as_reported",
+            denominator_term = NA_character_, denominator_definition = NA_character_) |> rel_cols()
+long[["CataniaRemple02 pct"]] <- cr02 |> filter(statistic == "approximate", percent_denominator == "total neocortex") |>
+  transmute(Species, Standardized_Term = "S1_Surface_Area.pct_Neocortex", value = percent_value,
+            source = "Catania_Remple_2002_Table1",
+            source_flags = ifelse(Species == "Rattus norvegicus", "secondary_comparator_from_other_study", "approximate_species_level"),
+            source_issue_note = ifelse(Species == "Rattus norvegicus",
+                                       "Rat value is a comparator quoted from another study, not measured here.",
+                                       "Approximate species-level percentage printed in text; individual S1 and neocortex areas are in the same table."),
+            specimen = NA_character_, grain = "species_mean", n = as.integer(n), value_status = "approximate",
+            denominator_term = "CorticalSurface_Area.mm2",
+            denominator_definition = "total neocortex (Catania & Remple 2002 text)") |> rel_cols()
+
+## Sarko et al. 2011 -- age-group means (juvenile n=2, adult n=4): mm2 and approximate % of neocortex.
+## The source item's recomputed_pct_neocortex is wrong for the adult rows (divides by the wrong total) -> NOT used.
+s11 <- readr::read_tsv(file.path(tsvdir, paste0(enc("Sarko_etal_2011_ResultsText"), ".tsv")), show_col_types = FALSE)
+s11map <- c("total neocortex" = "CorticalSurface_Area.mm2", "V1" = "V1_Surface_Area.mm2", "PMBSF of S1" = "S1_PMBSF_Surface_Area.mm2")
+s11 <- s11 |> filter(structure %in% names(s11map)) |>
+  mutate(abs_term = unname(s11map[structure]), specimen = paste0("group:", age_group), grain = "group_mean",
+         source = "Sarko_etal_2011_ResultsText",
+         denominator_definition = "total neocortex of one hemisphere (Sarko et al. 2011 Results)")
+long[["Sarko11 abs"]] <- s11 |> filter(!is.na(mean_area_mm2)) |>
+  transmute(Species, Standardized_Term = abs_term, value = mean_area_mm2, source, source_flags, source_issue_note,
+            specimen, grain, n = as.integer(n), value_status = "as_reported",
+            denominator_term = NA_character_, denominator_definition = NA_character_) |> rel_cols()
+long[["Sarko11 pct"]] <- s11 |> filter(!is.na(approx_pct_neocortex)) |>
+  transmute(Species, Standardized_Term = sub("\\.mm2$", ".pct_Neocortex", abs_term), value = approx_pct_neocortex,
+            source, source_flags, source_issue_note, specimen, grain, n = as.integer(n), value_status = "approximate",
+            denominator_term = "CorticalSurface_Area.mm2", denominator_definition) |> rel_cols()
+
+## Preuss & Kaas 1996 -- one specimen: V1 = 66 mm2 and ~12 % of the cortical mantle.
+pk96 <- readr::read_tsv(file.path(tsvdir, paste0(enc("Preuss_Kaas_1996_ResultsText"), ".tsv")), show_col_types = FALSE) |>
+  filter(structure == "V1", measure %in% c("surface area", "percent of cortical mantle"))
+long[["PreussKaas96"]] <- pk96 |>
+  transmute(Species, Standardized_Term = ifelse(measure == "surface area", "V1_Surface_Area.mm2", "V1_Surface_Area.pct_Neocortex"),
+            value = as.numeric(value), source = "Preuss_Kaas_1996_ResultsText",
+            source_flags = ifelse(measure == "surface area", "single_specimen", "single_specimen|approximate_percent|denominator_cortical_mantle"),
+            source_issue_note = ifelse(measure == "surface area", "", "Denominator is the cortical mantle = isocortex + proisocortex, not neocortex sensu stricto."),
+            specimen = "adult female, left hemisphere", grain = "individual", n = 1L,
+            value_status = ifelse(measure == "surface area", "as_reported", "approximate"),
+            denominator_term = ifelse(measure == "surface area", NA_character_, "CorticalSurface_Area.mm2"),
+            denominator_definition = ifelse(measure == "surface area", NA_character_, "cortical mantle (isocortex + proisocortex), one hemisphere")) |> rel_cols()
+
+## Krubitzer et al. 1997 -- approximate total neocortex ("about 15 mm2", one hemisphere incl. cingulate).
+k97 <- readr::read_tsv(file.path(tsvdir, paste0(enc("Krubitzer_etal_1997_ResultsText"), ".tsv")), show_col_types = FALSE) |>
+  filter(structure == "total neocortex", measure == "surface area")
+long[["Krubitzer97 total"]] <- k97 |>
+  transmute(Species, Standardized_Term = "CorticalSurface_Area.mm2", value = as.numeric(value), source = "Krubitzer_etal_1997_ResultsText",
+            source_flags = "approximate_text_value|includes_cingulate", source_issue_note = source_text,
+            specimen = NA_character_, grain = "species_mean", n = NA_integer_, value_status = "approximate",
+            denominator_term = NA_character_, denominator_definition = NA_character_) |> rel_cols()
+
+## Seelke et al. 2016 Table 2 -- % of adjusted cortical sheet, treatment x sex group means. HELD (group level, % only).
+se16 <- readr::read_tsv(file.path(tsvdir, paste0(enc("Seelke_etal_2016_Table2"), ".tsv")), show_col_types = FALSE)
+se16map <- c(V1 = "V1_Surface_Area.pct_Neocortex", V2 = "V2_Surface_Area.pct_Neocortex", S1 = "S1_Surface_Area.pct_Neocortex",
+             "S2/PV" = "S2_Surface_Area.pct_Neocortex", M1 = "M1_Surface_Area.pct_Neocortex", AC = "A1_Surface_Area.pct_Neocortex")
+long[["Seelke16 pct"]] <- se16 |> filter(structure %in% names(se16map), !is.na(mean_pct_cortical_sheet)) |>
+  transmute(Species, Standardized_Term = unname(se16map[structure]), value = mean_pct_cortical_sheet, source = "Seelke_etal_2016_Table2",
+            source_flags, source_issue_note, specimen = paste0("group:", group, "/", sex), grain = "group_mean", n = as.integer(n),
+            value_status = "as_reported", denominator_term = "CorticalSurface_Area.mm2",
+            denominator_definition = "adjusted cortical sheet (cingulate subtracted when visible); S2/PV mapped to S2 term, AC to A1 term") |> rel_cols()
+
+## Felleman & Van Essen 1991 Table 2 -- SECONDARY composite macaque hemisphere. HELD.
+fve91 <- readr::read_tsv(file.path(tsvdir, paste0(enc("Felleman_VanEssen_1991_Table2"), ".tsv")), show_col_types = FALSE)
+fve_abs <- c(V1 = "V1_Surface_Area.mm2", V2 = "V2_Surface_Area.mm2", MT = "MT_Surface_Area.mm2",
+             "Total Visual Cortex" = "VisualCortex_Surface_Area.mm2", "Total Neocortex" = "CorticalSurface_Area.mm2")
+fve91 <- fve91 |> filter(structure %in% names(fve_abs)) |>
+  mutate(abs_term = unname(fve_abs[structure]), specimen = "composite hemisphere (Fig. 2 map)", grain = "composite", n = NA_integer_,
+         source = "Felleman_VanEssen_1991_Table2")
+long[["FVE91 abs"]] <- fve91 |> filter(!is.na(area_mm2)) |>
+  transmute(Species, Standardized_Term = abs_term, value = area_mm2, source, source_flags, source_issue_note, specimen, grain, n,
+            value_status = "as_reported", denominator_term = NA_character_, denominator_definition = NA_character_) |> rel_cols()
+long[["FVE91 pct neocortex"]] <- fve91 |> filter(!is.na(pct_neocortex), structure != "Total Neocortex") |>
+  transmute(Species, Standardized_Term = sub("\\.mm2$", ".pct_Neocortex", abs_term), value = pct_neocortex, source, source_flags,
+            source_issue_note, specimen, grain, n, value_status = "as_reported", denominator_term = "CorticalSurface_Area.mm2",
+            denominator_definition = "total neocortex of the composite hemisphere (Felleman & Van Essen 1991 Table 2)") |> rel_cols()
+long[["FVE91 pct visual"]] <- fve91 |> filter(!is.na(pct_visual_cortex), !structure %in% c("Total Visual Cortex", "Total Neocortex")) |>
+  transmute(Species, Standardized_Term = sub("\\.mm2$", ".pct_VisualCortex", abs_term), value = pct_visual_cortex, source, source_flags,
+            source_issue_note, specimen, grain, n, value_status = "as_reported", denominator_term = "VisualCortex_Surface_Area.mm2",
+            denominator_definition = "total visual cortex of the composite hemisphere (Felleman & Van Essen 1991 Table 2)") |> rel_cols()
+
+## Specimen ids for existing bespoke blocks where they are free (skill improvement 5).
+long[["Turner surface"]]$specimen     <- as.character(ts$case);  long[["Turner surface"]]$grain <- "individual"
+long[["Collins 2016 areas"]]$specimen <- "KAAS-PAN-11_38";        long[["Collins 2016 areas"]]$grain <- "individual"
 
 long <- bind_rows(long) |> filter(!is.na(value)) |>
-  mutate(species_printed = Species,                                 # name before this merge's unify()
+  mutate(specimen = as.character(specimen),
+         grain = replace_na(grain, "not_recorded"),          # pre-2026-10-21 blocks did not record grain
+         value_status = replace_na(value_status, "as_reported"),
+         value_basis = replace_na(value_basis, "printed")) |>
+  mutate(source_flags = replace_na(source_flags, ""),
+         source_issue_note = replace_na(source_issue_note, ""),
+         species_printed = Species,                                 # name before this merge's unify()
          Species = unify(Species),                                  # harmonise spelling variants
-         trait_class = ifelse(Standardized_Term %in% regional_terms, "regional", "whole_cortex"))
+         trait_class = case_when(str_detect(Standardized_Term, pct_term_regex) ~ "regional_relative",
+                                 Standardized_Term %in% regional_terms ~ "regional",
+                                 TRUE ~ "whole_cortex"))
 ## Species naming columns (SPECIES_NAMING.md v1): Species keeps this merge's unify() label; the shared
 ## resolver adds the identity anchor + basis from the printed name, keyed by paper folder.
 source(file.path(base, "_keys", "resolve_species.R"))
@@ -318,22 +481,49 @@ long$status[long$source == "Finlay_etal_2006_Table6.1"] <- "flagged_pending_Proj
 long$status[long$source == "Smaers_etal_2017_TableS1part2" &
             long$Standardized_Term == "OtherAssociation_Surface_Area.mm2" &
             long$Species == "Mandrillus sphinx"] <- "excluded_additivity_vs_Brodmann1913"
-long <- long |> relocate(species_printed, accepted_name, species_basis, reidentified, .after = last_col())
+## ---- statuses for the relative/absolute sources (2026-10-21) ----
+long$status[long$source == "Seelke_etal_2016_Table2"] <- "held_group_level_pct_only"
+long$status[long$source == "Felleman_VanEssen_1991_Table2"] <- "held_secondary_synthesis"
+long$status[long$source == "Sarko_etal_2011_ResultsText" & long$specimen == "group:juvenile"] <- "held_juvenile_group"
+long$status[long$source == "Catania_Remple_2002_Table1" & long$Species == "Rattus norvegicus" &
+            long$Standardized_Term == "S1_Surface_Area.pct_Neocortex"] <- "held_secondary_comparator"
+
+## ---- same-specimen relative -> absolute conversion (exact arithmetic only) ----
+conv <- convert_relative_same_specimen(long, read_specimen_links("specimen_links.csv"))
+long <- conv$long
+message("relative->absolute: ", sum(long$value_basis == "derived_same_specimen"), " derived same-specimen rows; ",
+        sum(long$value_basis == "derived_inverse_from_pct"), " inverse-derived denominators (held); ",
+        nrow(conv$checks), " printed-vs-recomputed checks (", sum(grepl("MISMATCH", conv$checks$check)), " mismatches); ",
+        nrow(conv$unconverted), " relative rows left for the external pre-analysis step")
+readr::write_csv(conv$checks, "cortical_areas_conversion_checks.csv")
+readr::write_csv(conv$unconverted, "cortical_areas_relative_unconverted.csv")
+
+long <- long |>
+  relocate(source_flags, source_issue_note, .after = source) |>
+  relocate(specimen, grain, n, value_status, value_basis, derivation,
+           denominator_term, denominator_definition, denominator_source, denominator_specimen, denominator_match,
+           .after = source_issue_note) |>
+  relocate(species_printed, accepted_name, species_basis, reidentified, .after = last_col())
 readr::write_csv(long, "cortical_areas_long.csv")
 
 ## ---- wide: species x trait, mean across ACTIVE sources + conflict flag ----
 ## regional traits (e.g. M1_Surface_Area.mm2) are kept as SEPARATE columns, never pooled into
 ## whole-cortex surface.
-wide <- long |>
+## _wide: active rows only; independent sources averaged; derived same-specimen absolutes pool with
+## printed ones (owner decision 2026-10-21) and the composition sidecar records the mix per cell.
+cells <- long |>
   filter(status == "active") |>
-  group_by(Species, Standardized_Term) |>
-  summarise(value_mean = mean(value), n_sources = n_distinct(source),
+  group_by(Species, Standardized_Term, trait_class) |>
+  summarise(value_mean = mean(value), n_values = n(), n_sources = n_distinct(source),
+            n_printed = sum(value_basis == "printed"), n_derived_same_specimen = sum(value_basis == "derived_same_specimen"),
+            n_approximate = sum(value_status == "approximate"),
+            n_individual_grain = sum(grain == "individual"),
             sources = paste(sort(unique(source)), collapse = "; "),
             value_min = min(value), value_max = max(value),
-            conflict_flag = ifelse(n_sources > 1 &
-                                   (sd(value) / mean(value)) > 0.15, TRUE, FALSE),
-            .groups = "drop") |>
-  pivot_wider(id_cols = Species, names_from = Standardized_Term,
-              values_from = value_mean)
+            cv = ifelse(n() > 1, sd(value) / mean(value), NA_real_),
+            conflict_flag = ifelse(n_sources > 1 & (sd(value) / mean(value)) > 0.15, TRUE, FALSE),
+            .groups = "drop")
+wide <- cells |> pivot_wider(id_cols = Species, names_from = Standardized_Term, values_from = value_mean)
 readr::write_csv(wide, "cortical_areas_wide.csv")
+readr::write_csv(cells |> arrange(Species, trait_class, Standardized_Term), "cortical_areas_wide_composition.csv")
 message("cortical areas: ", nrow(long), " long rows, ", nrow(wide), " species")

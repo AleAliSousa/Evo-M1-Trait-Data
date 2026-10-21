@@ -49,6 +49,10 @@ Allenopithecus nigroviridis,behavioural_flexibility,Extractive_foraging_reduced_
 Allenopithecus nigroviridis,behavioural_flexibility,Extractive_foraging_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Allenopithecus nigroviridis,Allenopithecus nigroviridis,verbatim,FALSE
 Allenopithecus nigroviridis,behavioural_flexibility,Innovation_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Allenopithecus nigroviridis,Allenopithecus nigroviridis,verbatim,FALSE
 Allenopithecus nigroviridis,behavioural_flexibility,Innovation_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Allenopithecus nigroviridis,Allenopithecus nigroviridis,verbatim,FALSE
+Allenopithecus nigroviridis,cognition,ShortTermMemory_prop_correct,proportion correct,0.583333,0.583333,1,1,1,TRUE,ManyPrimates_STM,primary,0.583333,0.583333,Allenopithecus nigroviridis,Allenopithecus nigroviridis,verbatim,FALSE
+Allenopithecus nigroviridis,cognition,ShortTermMemory_prop_correct_long,proportion correct,0.5,0.5,1,1,1,TRUE,ManyPrimates_STM,primary,0.5,0.5,Allenopithecus nigroviridis,Allenopithecus nigroviridis,verbatim,FALSE
+Allenopithecus nigroviridis,cognition,ShortTermMemory_prop_correct_medium,proportion correct,0.583333,0.583333,1,1,1,TRUE,ManyPrimates_STM,primary,0.583333,0.583333,Allenopithecus nigroviridis,Allenopithecus nigroviridis,verbatim,FALSE
+Allenopithecus nigroviridis,cognition,ShortTermMemory_prop_correct_short,proportion correct,0.666667,0.666667,1,1,1,TRUE,ManyPrimates_STM,primary,0.666667,0.666667,Allenopithecus nigroviridis,Allenopithecus nigroviridis,verbatim,FALSE
 Allenopithecus nigroviridis,behavioural_flexibility,Social_learning_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Allenopithecus nigroviridis,Allenopithecus nigroviridis,verbatim,FALSE
 Allenopithecus nigroviridis,manipulation,Tool_use,category,0,,1,1,0,FALSE,Baker,secondary,,,Allenopithecus nigroviridis,Allenopithecus nigroviridis,verbatim,FALSE
 Allenopithecus nigroviridis,behavioural_flexibility,Tool_use_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Allenopithecus nigroviridis,Allenopithecus nigroviridis,verbatim,FALSE
@@ -405,6 +409,10 @@ Ateles chamek,behavioural_flexibility,Extractive_foraging_report_count,reports,0
 Ateles chamek,behavioural_flexibility,Innovation_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Ateles chamek,Ateles chamek,unresolved,FALSE
 Ateles chamek,behavioural_flexibility,Innovation_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Ateles chamek,Ateles chamek,unresolved,FALSE
 Ateles chamek,research_effort,Journal_search_article_count,articles,1,1,1,1,1,TRUE,Reader,primary,1,1,Ateles chamek,Ateles chamek,unresolved,FALSE
+Ateles chamek,cognition,ShortTermMemory_prop_correct,proportion correct,0.37037,0.37037,1,1,1,TRUE,ManyPrimates_STM,primary,0.37037,0.37037,Ateles chamek,Ateles chamek,unresolved,FALSE
+Ateles chamek,cognition,ShortTermMemory_prop_correct_long,proportion correct,0.333333,0.333333,1,1,1,TRUE,ManyPrimates_STM,primary,0.333333,0.333333,Ateles chamek,Ateles chamek,unresolved,FALSE
+Ateles chamek,cognition,ShortTermMemory_prop_correct_medium,proportion correct,0.555556,0.555556,1,1,1,TRUE,ManyPrimates_STM,primary,0.555556,0.555556,Ateles chamek,Ateles chamek,unresolved,FALSE
+Ateles chamek,cognition,ShortTermMemory_prop_correct_short,proportion correct,0.222222,0.222222,1,1,1,TRUE,ManyPrimates_STM,primary,0.222222,0.222222,Ateles chamek,Ateles chamek,unresolved,FALSE
 Ateles chamek,behavioural_flexibility,Social_learning_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Ateles chamek,Ateles chamek,unresolved,FALSE
 Ateles chamek,behavioural_flexibility,Tool_use_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Ateles chamek,Ateles chamek,unresolved,FALSE
 Ateles chamek,behavioural_flexibility,Tool_use_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Ateles chamek,Ateles chamek,unresolved,FALSE
@@ -822,6 +830,10 @@ Callithrix jacchus,behavioural_flexibility,Innovation_reduced_report_count,repor
 Callithrix jacchus,behavioural_flexibility,Innovation_report_count,reports,1,1,1,1,1,TRUE,Reader,primary,1,1,Callithrix jacchus,Callithrix jacchus,verbatim,FALSE
 Callithrix jacchus,research_effort,Journal_search_article_count,articles,99,99,1,1,1,TRUE,Reader,primary,99,99,Callithrix jacchus,Callithrix jacchus,verbatim,FALSE
 Callithrix jacchus,manipulation,Manipulation_complexity,score,1.33,1.33,1,1,1,TRUE,Heldstab,primary,1.33,1.33,Callithrix jacchus,Callithrix jacchus,verbatim,FALSE
+Callithrix jacchus,cognition,ShortTermMemory_prop_correct,proportion correct,0.427227,0.427227,1,1,1,TRUE,ManyPrimates_STM,primary,0.427227,0.427227,Callithrix jacchus,Callithrix jacchus,verbatim,FALSE
+Callithrix jacchus,cognition,ShortTermMemory_prop_correct_long,proportion correct,0.337286,0.337286,1,1,1,TRUE,ManyPrimates_STM,primary,0.337286,0.337286,Callithrix jacchus,Callithrix jacchus,verbatim,FALSE
+Callithrix jacchus,cognition,ShortTermMemory_prop_correct_medium,proportion correct,0.373792,0.373792,1,1,1,TRUE,ManyPrimates_STM,primary,0.373792,0.373792,Callithrix jacchus,Callithrix jacchus,verbatim,FALSE
+Callithrix jacchus,cognition,ShortTermMemory_prop_correct_short,proportion correct,0.570048,0.570048,1,1,1,TRUE,ManyPrimates_STM,primary,0.570048,0.570048,Callithrix jacchus,Callithrix jacchus,verbatim,FALSE
 Callithrix jacchus,behavioural_flexibility,Social_learning_report_count,reports,2,2,1,1,1,TRUE,Reader,primary,2,2,Callithrix jacchus,Callithrix jacchus,verbatim,FALSE
 Callithrix jacchus,manipulation,Tool_use,category,0,,2,2,1,TRUE,Heldstab; Baker,primary; secondary,,,Callithrix jacchus,Callithrix jacchus,verbatim,FALSE
 Callithrix jacchus,behavioural_flexibility,Tool_use_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Callithrix jacchus,Callithrix jacchus,verbatim,FALSE
@@ -1016,6 +1028,10 @@ Cebus capucinus,locomotion,Intermembral_index,ratio,81,81,1,1,1,TRUE,Granatosky,
 Cebus capucinus,research_effort,Journal_search_article_count,articles,37,37,1,1,1,TRUE,Reader,primary,37,37,Cebus capucinus,Cebus capucinus,verbatim,FALSE
 Cebus capucinus,locomotion,Locomotor_diversity_index,index,1.17177927393802,1.17177927393802,1,1,1,TRUE,Granatosky,primary,1.17177927393802,1.17177927393802,Cebus capucinus,Cebus capucinus,verbatim,FALSE
 Cebus capucinus,gait,Phase,percent,62.83883438,62.83883438,1,1,1,TRUE,Wimberly,primary,62.83883438,62.83883438,Cebus capucinus,Cebus capucinus,verbatim,FALSE
+Cebus capucinus,cognition,ShortTermMemory_prop_correct,proportion correct,0.448611,0.448611,1,1,1,TRUE,ManyPrimates_STM,primary,0.448611,0.448611,Cebus capucinus,Cebus capucinus,verbatim,FALSE
+Cebus capucinus,cognition,ShortTermMemory_prop_correct_long,proportion correct,0.395833,0.395833,1,1,1,TRUE,ManyPrimates_STM,primary,0.395833,0.395833,Cebus capucinus,Cebus capucinus,verbatim,FALSE
+Cebus capucinus,cognition,ShortTermMemory_prop_correct_medium,proportion correct,0.40625,0.40625,1,1,1,TRUE,ManyPrimates_STM,primary,0.40625,0.40625,Cebus capucinus,Cebus capucinus,verbatim,FALSE
+Cebus capucinus,cognition,ShortTermMemory_prop_correct_short,proportion correct,0.552083,0.552083,1,1,1,TRUE,ManyPrimates_STM,primary,0.552083,0.552083,Cebus capucinus,Cebus capucinus,verbatim,FALSE
 Cebus capucinus,behavioural_flexibility,Social_learning_report_count,reports,5,5,1,1,1,TRUE,Reader,primary,5,5,Cebus capucinus,Cebus capucinus,verbatim,FALSE
 Cebus capucinus,manipulation,Tool_Manufacture,category,1,,1,1,1,TRUE,Baker,primary,,,Cebus capucinus,Cebus capucinus,verbatim,FALSE
 Cebus capucinus,manipulation,Tool_use,category,1,,1,1,0,FALSE,Baker,secondary,,,Cebus capucinus,Cebus capucinus,verbatim,FALSE
@@ -1236,6 +1252,10 @@ Cercopithecus diana,locomotion,Intermembral_index,ratio,79,79,1,1,1,TRUE,Granato
 Cercopithecus diana,research_effort,Journal_search_article_count,articles,4,4,1,1,1,TRUE,Reader,primary,4,4,Cercopithecus diana,Cercopithecus diana,verbatim,FALSE
 Cercopithecus diana,locomotion,Locomotor_diversity_index,index,1.11068369147808,1.11068369147808,1,1,1,TRUE,Granatosky,primary,1.11068369147808,1.11068369147808,Cercopithecus diana,Cercopithecus diana,verbatim,FALSE
 Cercopithecus diana,manipulation,Manipulation_complexity,score,2.03,2.03,1,1,1,TRUE,Heldstab,primary,2.03,2.03,Cercopithecus diana,Cercopithecus diana,verbatim,FALSE
+Cercopithecus diana,cognition,ShortTermMemory_prop_correct,proportion correct,0.761111,0.761111,1,1,1,TRUE,ManyPrimates_STM,primary,0.761111,0.761111,Cercopithecus diana,Cercopithecus diana,verbatim,FALSE
+Cercopithecus diana,cognition,ShortTermMemory_prop_correct_long,proportion correct,0.666667,0.666667,1,1,1,TRUE,ManyPrimates_STM,primary,0.666667,0.666667,Cercopithecus diana,Cercopithecus diana,verbatim,FALSE
+Cercopithecus diana,cognition,ShortTermMemory_prop_correct_medium,proportion correct,0.75,0.75,1,1,1,TRUE,ManyPrimates_STM,primary,0.75,0.75,Cercopithecus diana,Cercopithecus diana,verbatim,FALSE
+Cercopithecus diana,cognition,ShortTermMemory_prop_correct_short,proportion correct,0.866667,0.866667,1,1,1,TRUE,ManyPrimates_STM,primary,0.866667,0.866667,Cercopithecus diana,Cercopithecus diana,verbatim,FALSE
 Cercopithecus diana,behavioural_flexibility,Social_learning_report_count,reports,1,1,1,1,1,TRUE,Reader,primary,1,1,Cercopithecus diana,Cercopithecus diana,verbatim,FALSE
 Cercopithecus diana,manipulation,Tool_use,category,0,,2,2,1,TRUE,Heldstab; Baker,primary; secondary,,,Cercopithecus diana,Cercopithecus diana,verbatim,FALSE
 Cercopithecus diana,behavioural_flexibility,Tool_use_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Cercopithecus diana,Cercopithecus diana,verbatim,FALSE
@@ -1275,6 +1295,10 @@ Cercopithecus hamlyni,behavioural_flexibility,Extractive_foraging_report_count,r
 Cercopithecus hamlyni,behavioural_flexibility,Innovation_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Cercopithecus hamlyni,Cercopithecus hamlyni,verbatim,FALSE
 Cercopithecus hamlyni,behavioural_flexibility,Innovation_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Cercopithecus hamlyni,Cercopithecus hamlyni,verbatim,FALSE
 Cercopithecus hamlyni,manipulation,Manipulation_complexity,score,3.84,3.84,1,1,1,TRUE,Heldstab,primary,3.84,3.84,Cercopithecus hamlyni,Cercopithecus hamlyni,verbatim,FALSE
+Cercopithecus hamlyni,cognition,ShortTermMemory_prop_correct,proportion correct,0.574074,0.574074,1,1,1,TRUE,ManyPrimates_STM,primary,0.574074,0.574074,Cercopithecus hamlyni,Cercopithecus hamlyni,verbatim,FALSE
+Cercopithecus hamlyni,cognition,ShortTermMemory_prop_correct_long,proportion correct,0.416667,0.416667,1,1,1,TRUE,ManyPrimates_STM,primary,0.416667,0.416667,Cercopithecus hamlyni,Cercopithecus hamlyni,verbatim,FALSE
+Cercopithecus hamlyni,cognition,ShortTermMemory_prop_correct_medium,proportion correct,0.583333,0.583333,1,1,1,TRUE,ManyPrimates_STM,primary,0.583333,0.583333,Cercopithecus hamlyni,Cercopithecus hamlyni,verbatim,FALSE
+Cercopithecus hamlyni,cognition,ShortTermMemory_prop_correct_short,proportion correct,0.722222,0.722222,1,1,1,TRUE,ManyPrimates_STM,primary,0.722222,0.722222,Cercopithecus hamlyni,Cercopithecus hamlyni,verbatim,FALSE
 Cercopithecus hamlyni,behavioural_flexibility,Social_learning_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Cercopithecus hamlyni,Cercopithecus hamlyni,verbatim,FALSE
 Cercopithecus hamlyni,manipulation,Tool_use,category,0,,1,1,1,TRUE,Heldstab,primary,,,Cercopithecus hamlyni,Cercopithecus hamlyni,verbatim,FALSE
 Cercopithecus hamlyni,behavioural_flexibility,Tool_use_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Cercopithecus hamlyni,Cercopithecus hamlyni,verbatim,FALSE
@@ -1525,6 +1549,10 @@ Chlorocebus aethiops,hand_morphology,log10_mc4_mm,log10 mm,1.42775651224374,1.42
 Chlorocebus aethiops,hand_morphology,log10_mc5_mm,log10 mm,1.42406452541749,1.42406452541749,1,1,1,TRUE,Baker,primary,1.42406452541749,1.42406452541749,Chlorocebus aethiops,Chlorocebus aethiops,verbatim,FALSE
 Chlorocebus aethiops,hand_morphology,log10_pp3_mm,log10 mm,1.30749603791321,1.30749603791321,1,1,1,TRUE,Baker,primary,1.30749603791321,1.30749603791321,Chlorocebus aethiops,Chlorocebus aethiops,verbatim,FALSE
 Chlorocebus sabaeus,dexterity,Dexterity,1-7 scale,6,6,2,2,1,TRUE,Heffner; Iwaniuk,primary; secondary,6,6,Chlorocebus sabaeus,Chlorocebus sabaeus,hub,FALSE
+Chlorocebus sabaeus,cognition,ShortTermMemory_prop_correct,proportion correct,0.763889,0.763889,1,1,1,TRUE,ManyPrimates_STM,primary,0.763889,0.763889,Chlorocebus sabaeus,Chlorocebus sabaeus,hub,FALSE
+Chlorocebus sabaeus,cognition,ShortTermMemory_prop_correct_long,proportion correct,0.666667,0.666667,1,1,1,TRUE,ManyPrimates_STM,primary,0.666667,0.666667,Chlorocebus sabaeus,Chlorocebus sabaeus,hub,FALSE
+Chlorocebus sabaeus,cognition,ShortTermMemory_prop_correct_medium,proportion correct,0.8125,0.8125,1,1,1,TRUE,ManyPrimates_STM,primary,0.8125,0.8125,Chlorocebus sabaeus,Chlorocebus sabaeus,hub,FALSE
+Chlorocebus sabaeus,cognition,ShortTermMemory_prop_correct_short,proportion correct,0.8125,0.8125,1,1,1,TRUE,ManyPrimates_STM,primary,0.8125,0.8125,Chlorocebus sabaeus,Chlorocebus sabaeus,hub,FALSE
 Chlorocebus sabaeus,vocalization,VocalRepertoire,count,25,25,1,1,0,FALSE,ManyPrimates,secondary,25,25,Chlorocebus sabaeus,Chlorocebus sabaeus,hub,FALSE
 Choloepus didactylus,gait,Duty_Factor,percent,72.63339384,72.63339384,1,1,1,TRUE,Wimberly,primary,72.63339384,72.63339384,Choloepus didactylus,Choloepus didactylus,verbatim,FALSE
 Choloepus didactylus,gait,Foot_Posture,category,plantigrade,,1,1,1,TRUE,Wimberly,primary,,,Choloepus didactylus,Choloepus didactylus,verbatim,FALSE
@@ -1597,6 +1625,10 @@ Colobus polykomos,behavioural_flexibility,Innovation_report_count,reports,0,0,1,
 Colobus polykomos,locomotion,Intermembral_index,ratio,78,78,1,1,1,TRUE,Granatosky,primary,78,78,Colobus polykomos,Colobus polykomos,verbatim,FALSE
 Colobus polykomos,research_effort,Journal_search_article_count,articles,3,3,1,1,1,TRUE,Reader,primary,3,3,Colobus polykomos,Colobus polykomos,verbatim,FALSE
 Colobus polykomos,locomotion,Locomotor_diversity_index,index,1.28263841381107,1.28263841381107,1,1,1,TRUE,Granatosky,primary,1.28263841381107,1.28263841381107,Colobus polykomos,Colobus polykomos,verbatim,FALSE
+Colobus polykomos,cognition,ShortTermMemory_prop_correct,proportion correct,0.296296,0.296296,1,1,1,TRUE,ManyPrimates_STM,primary,0.296296,0.296296,Colobus polykomos,Colobus polykomos,verbatim,FALSE
+Colobus polykomos,cognition,ShortTermMemory_prop_correct_long,proportion correct,0.222222,0.222222,1,1,1,TRUE,ManyPrimates_STM,primary,0.222222,0.222222,Colobus polykomos,Colobus polykomos,verbatim,FALSE
+Colobus polykomos,cognition,ShortTermMemory_prop_correct_medium,proportion correct,0.444444,0.444444,1,1,1,TRUE,ManyPrimates_STM,primary,0.444444,0.444444,Colobus polykomos,Colobus polykomos,verbatim,FALSE
+Colobus polykomos,cognition,ShortTermMemory_prop_correct_short,proportion correct,0.222222,0.222222,1,1,1,TRUE,ManyPrimates_STM,primary,0.222222,0.222222,Colobus polykomos,Colobus polykomos,verbatim,FALSE
 Colobus polykomos,behavioural_flexibility,Social_learning_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Colobus polykomos,Colobus polykomos,verbatim,FALSE
 Colobus polykomos,manipulation,Tool_use,category,0,,1,1,0,FALSE,Baker,secondary,,,Colobus polykomos,Colobus polykomos,verbatim,FALSE
 Colobus polykomos,behavioural_flexibility,Tool_use_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Colobus polykomos,Colobus polykomos,verbatim,FALSE
@@ -1834,6 +1866,10 @@ Eulemur coronatus,locomotion,Intermembral_index,ratio,69,69,1,1,1,TRUE,Granatosk
 Eulemur coronatus,research_effort,Journal_search_article_count,articles,2,2,1,1,1,TRUE,Reader,primary,2,2,Eulemur coronatus,Eulemur coronatus,verbatim,FALSE
 Eulemur coronatus,locomotion,Locomotor_diversity_index,index,1.32285696027778,1.32285696027778,1,1,1,TRUE,Granatosky,primary,1.32285696027778,1.32285696027778,Eulemur coronatus,Eulemur coronatus,verbatim,FALSE
 Eulemur coronatus,manipulation,Manipulation_complexity,score,1.6,1.6,1,1,1,TRUE,Heldstab,primary,1.6,1.6,Eulemur coronatus,Eulemur coronatus,verbatim,FALSE
+Eulemur coronatus,cognition,ShortTermMemory_prop_correct,proportion correct,0.464646,0.464646,1,1,1,TRUE,ManyPrimates_STM,primary,0.464646,0.464646,Eulemur coronatus,Eulemur coronatus,verbatim,FALSE
+Eulemur coronatus,cognition,ShortTermMemory_prop_correct_long,proportion correct,0.530303,0.530303,1,1,1,TRUE,ManyPrimates_STM,primary,0.530303,0.530303,Eulemur coronatus,Eulemur coronatus,verbatim,FALSE
+Eulemur coronatus,cognition,ShortTermMemory_prop_correct_medium,proportion correct,0.378788,0.378788,1,1,1,TRUE,ManyPrimates_STM,primary,0.378788,0.378788,Eulemur coronatus,Eulemur coronatus,verbatim,FALSE
+Eulemur coronatus,cognition,ShortTermMemory_prop_correct_short,proportion correct,0.484848,0.484848,1,1,1,TRUE,ManyPrimates_STM,primary,0.484848,0.484848,Eulemur coronatus,Eulemur coronatus,verbatim,FALSE
 Eulemur coronatus,behavioural_flexibility,Social_learning_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Eulemur coronatus,Eulemur coronatus,verbatim,FALSE
 Eulemur coronatus,manipulation,Tool_use,category,0,,2,2,1,TRUE,Heldstab; Baker,primary; secondary,,,Eulemur coronatus,Eulemur coronatus,verbatim,FALSE
 Eulemur coronatus,behavioural_flexibility,Tool_use_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Eulemur coronatus,Eulemur coronatus,verbatim,FALSE
@@ -1843,6 +1879,10 @@ Eulemur coronatus,research_effort,Zoological_record_article_count,articles,11,11
 Eulemur coronatus,hand_morphology,log10_ip3_mm,log10 mm,1.02530586526477,1.02530586526477,1,1,1,TRUE,Baker,primary,1.02530586526477,1.02530586526477,Eulemur coronatus,Eulemur coronatus,verbatim,FALSE
 Eulemur coronatus,hand_morphology,log10_mc3_mm,log10 mm,1.25285303097989,1.25285303097989,1,1,1,TRUE,Baker,primary,1.25285303097989,1.25285303097989,Eulemur coronatus,Eulemur coronatus,verbatim,FALSE
 Eulemur coronatus,hand_morphology,log10_pp3_mm,log10 mm,1.19865708695442,1.19865708695442,1,1,1,TRUE,Baker,primary,1.19865708695442,1.19865708695442,Eulemur coronatus,Eulemur coronatus,verbatim,FALSE
+Eulemur flavifrons,cognition,ShortTermMemory_prop_correct,proportion correct,0.549074,0.549074,1,1,1,TRUE,ManyPrimates_STM,primary,0.549074,0.549074,Eulemur flavifrons,Eulemur flavifrons,unresolved,FALSE
+Eulemur flavifrons,cognition,ShortTermMemory_prop_correct_long,proportion correct,0.604938,0.604938,1,1,1,TRUE,ManyPrimates_STM,primary,0.604938,0.604938,Eulemur flavifrons,Eulemur flavifrons,unresolved,FALSE
+Eulemur flavifrons,cognition,ShortTermMemory_prop_correct_medium,proportion correct,0.308642,0.308642,1,1,1,TRUE,ManyPrimates_STM,primary,0.308642,0.308642,Eulemur flavifrons,Eulemur flavifrons,unresolved,FALSE
+Eulemur flavifrons,cognition,ShortTermMemory_prop_correct_short,proportion correct,0.691667,0.691667,1,1,1,TRUE,ManyPrimates_STM,primary,0.691667,0.691667,Eulemur flavifrons,Eulemur flavifrons,unresolved,FALSE
 Eulemur flavifrons,vocalization,VocalRepertoire,count,10,10,1,1,0,FALSE,ManyPrimates,secondary,10,10,Eulemur flavifrons,Eulemur flavifrons,unresolved,FALSE
 Eulemur fulvus,locomotion,Angular_utilization_index_HL,percent,46.2962962962963,46.2962962962963,1,1,1,TRUE,Medina,primary,46.2962962962963,46.2962962962963,Eulemur fulvus,Eulemur fulvus,verbatim,FALSE
 Eulemur fulvus,locomotion,Arboreal_terrestrial,category,A,,1,1,1,TRUE,Granatosky,primary,,,Eulemur fulvus,Eulemur fulvus,verbatim,FALSE
@@ -1855,6 +1895,10 @@ Eulemur fulvus,research_effort,Journal_search_article_count,articles,24,24,1,1,1
 Eulemur fulvus,locomotion,Limb_posture,category,Plantigrade,,1,1,1,TRUE,Medina,primary,,,Eulemur fulvus,Eulemur fulvus,verbatim,FALSE
 Eulemur fulvus,locomotion,Locomotor_diversity_index,index,1.30441240377472,1.30441240377472,1,1,1,TRUE,Granatosky,primary,1.30441240377472,1.30441240377472,Eulemur fulvus,Eulemur fulvus,verbatim,FALSE
 Eulemur fulvus,locomotion,Locomotor_habit,category,Arboreal,,1,1,1,TRUE,Medina,primary,,,Eulemur fulvus,Eulemur fulvus,verbatim,FALSE
+Eulemur fulvus,cognition,ShortTermMemory_prop_correct,proportion correct,0.532407,0.532407,1,1,1,TRUE,ManyPrimates_STM,primary,0.532407,0.532407,Eulemur fulvus,Eulemur fulvus,verbatim,FALSE
+Eulemur fulvus,cognition,ShortTermMemory_prop_correct_long,proportion correct,0.388889,0.388889,1,1,1,TRUE,ManyPrimates_STM,primary,0.388889,0.388889,Eulemur fulvus,Eulemur fulvus,verbatim,FALSE
+Eulemur fulvus,cognition,ShortTermMemory_prop_correct_medium,proportion correct,0.472222,0.472222,1,1,1,TRUE,ManyPrimates_STM,primary,0.472222,0.472222,Eulemur fulvus,Eulemur fulvus,verbatim,FALSE
+Eulemur fulvus,cognition,ShortTermMemory_prop_correct_short,proportion correct,0.736111,0.736111,1,1,1,TRUE,ManyPrimates_STM,primary,0.736111,0.736111,Eulemur fulvus,Eulemur fulvus,verbatim,FALSE
 Eulemur fulvus,behavioural_flexibility,Social_learning_report_count,reports,1,1,1,1,1,TRUE,Reader,primary,1,1,Eulemur fulvus,Eulemur fulvus,verbatim,FALSE
 Eulemur fulvus,manipulation,Tool_Manufacture,category,0,,1,1,1,TRUE,Baker,primary,,,Eulemur fulvus,Eulemur fulvus,verbatim,FALSE
 Eulemur fulvus,manipulation,Tool_use,category,1,,1,1,0,FALSE,Baker,secondary,,,Eulemur fulvus,Eulemur fulvus,verbatim,FALSE
@@ -1881,6 +1925,10 @@ Eulemur macaco,locomotion,Intermembral_index,ratio,71,71,1,1,1,TRUE,Granatosky,p
 Eulemur macaco,research_effort,Journal_search_article_count,articles,18,18,1,1,1,TRUE,Reader,primary,18,18,Eulemur macaco,Eulemur macaco,verbatim,FALSE
 Eulemur macaco,locomotion,Locomotor_diversity_index,index,1.43123180445711,1.43123180445711,1,1,1,TRUE,Granatosky,primary,1.43123180445711,1.43123180445711,Eulemur macaco,Eulemur macaco,verbatim,FALSE
 Eulemur macaco,manipulation,Manipulation_complexity,score,1.23,1.23,1,1,1,TRUE,Heldstab,primary,1.23,1.23,Eulemur macaco,Eulemur macaco,verbatim,FALSE
+Eulemur macaco,cognition,ShortTermMemory_prop_correct,proportion correct,0.75,0.75,1,1,1,TRUE,ManyPrimates_STM,primary,0.75,0.75,Eulemur macaco,Eulemur macaco,verbatim,FALSE
+Eulemur macaco,cognition,ShortTermMemory_prop_correct_long,proportion correct,0.666667,0.666667,1,1,1,TRUE,ManyPrimates_STM,primary,0.666667,0.666667,Eulemur macaco,Eulemur macaco,verbatim,FALSE
+Eulemur macaco,cognition,ShortTermMemory_prop_correct_medium,proportion correct,0.833333,0.833333,1,1,1,TRUE,ManyPrimates_STM,primary,0.833333,0.833333,Eulemur macaco,Eulemur macaco,verbatim,FALSE
+Eulemur macaco,cognition,ShortTermMemory_prop_correct_short,proportion correct,0.75,0.75,1,1,1,TRUE,ManyPrimates_STM,primary,0.75,0.75,Eulemur macaco,Eulemur macaco,verbatim,FALSE
 Eulemur macaco,behavioural_flexibility,Social_learning_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Eulemur macaco,Eulemur macaco,verbatim,FALSE
 Eulemur macaco,manipulation,Tool_use,category,0,,2,2,1,TRUE,Heldstab; Baker,primary; secondary,,,Eulemur macaco,Eulemur macaco,verbatim,FALSE
 Eulemur macaco,behavioural_flexibility,Tool_use_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Eulemur macaco,Eulemur macaco,verbatim,FALSE
@@ -1906,6 +1954,10 @@ Eulemur mongoz,locomotion,Intermembral_index,ratio,72,72,1,1,1,TRUE,Granatosky,p
 Eulemur mongoz,research_effort,Journal_search_article_count,articles,6,6,1,1,1,TRUE,Reader,primary,6,6,Eulemur mongoz,Eulemur mongoz,verbatim,FALSE
 Eulemur mongoz,locomotion,Locomotor_diversity_index,index,1.43236716092924,1.43236716092924,1,1,1,TRUE,Granatosky,primary,1.43236716092924,1.43236716092924,Eulemur mongoz,Eulemur mongoz,verbatim,FALSE
 Eulemur mongoz,gait,Phase,percent,62.43998388,62.43998388,1,1,1,TRUE,Wimberly,primary,62.43998388,62.43998388,Eulemur mongoz,Eulemur mongoz,verbatim,FALSE
+Eulemur mongoz,cognition,ShortTermMemory_prop_correct,proportion correct,0.369281,0.369281,1,1,1,TRUE,ManyPrimates_STM,primary,0.369281,0.369281,Eulemur mongoz,Eulemur mongoz,verbatim,FALSE
+Eulemur mongoz,cognition,ShortTermMemory_prop_correct_long,proportion correct,0.333333,0.333333,1,1,1,TRUE,ManyPrimates_STM,primary,0.333333,0.333333,Eulemur mongoz,Eulemur mongoz,verbatim,FALSE
+Eulemur mongoz,cognition,ShortTermMemory_prop_correct_medium,proportion correct,0.354167,0.354167,1,1,1,TRUE,ManyPrimates_STM,primary,0.354167,0.354167,Eulemur mongoz,Eulemur mongoz,verbatim,FALSE
+Eulemur mongoz,cognition,ShortTermMemory_prop_correct_short,proportion correct,0.420833,0.420833,1,1,1,TRUE,ManyPrimates_STM,primary,0.420833,0.420833,Eulemur mongoz,Eulemur mongoz,verbatim,FALSE
 Eulemur mongoz,behavioural_flexibility,Social_learning_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Eulemur mongoz,Eulemur mongoz,verbatim,FALSE
 Eulemur mongoz,manipulation,Tool_use,category,0,,1,1,0,FALSE,Baker,secondary,,,Eulemur mongoz,Eulemur mongoz,verbatim,FALSE
 Eulemur mongoz,behavioural_flexibility,Tool_use_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Eulemur mongoz,Eulemur mongoz,verbatim,FALSE
@@ -2136,6 +2188,10 @@ Gorilla gorilla,locomotion,Locomotor_diversity_index,index,0.188053654103712,0.1
 Gorilla gorilla,locomotion,Locomotor_habit,category,Terrestrial,,1,1,1,TRUE,Medina,primary,,,Gorilla gorilla,Gorilla gorilla,hub; verbatim,FALSE
 Gorilla gorilla,manipulation,Manipulation_complexity,score,5,5,1,1,1,TRUE,Heldstab,primary,5,5,Gorilla gorilla,Gorilla gorilla,hub; verbatim,FALSE
 Gorilla gorilla,gait,Phase,percent,43.42752,43.42752,1,1,1,TRUE,Wimberly,primary,43.42752,43.42752,Gorilla gorilla,Gorilla gorilla,hub; verbatim,FALSE
+Gorilla gorilla,cognition,ShortTermMemory_prop_correct,proportion correct,0.776749,0.776749,1,1,1,TRUE,ManyPrimates_STM,primary,0.776749,0.776749,Gorilla gorilla,Gorilla gorilla,hub; verbatim,FALSE
+Gorilla gorilla,cognition,ShortTermMemory_prop_correct_long,proportion correct,0.703704,0.703704,1,1,1,TRUE,ManyPrimates_STM,primary,0.703704,0.703704,Gorilla gorilla,Gorilla gorilla,hub; verbatim,FALSE
+Gorilla gorilla,cognition,ShortTermMemory_prop_correct_medium,proportion correct,0.783951,0.783951,1,1,1,TRUE,ManyPrimates_STM,primary,0.783951,0.783951,Gorilla gorilla,Gorilla gorilla,hub; verbatim,FALSE
+Gorilla gorilla,cognition,ShortTermMemory_prop_correct_short,proportion correct,0.842593,0.842593,1,1,1,TRUE,ManyPrimates_STM,primary,0.842593,0.842593,Gorilla gorilla,Gorilla gorilla,hub; verbatim,FALSE
 Gorilla gorilla,behavioural_flexibility,Social_learning_report_count,reports,13,13,1,1,1,TRUE,Reader,primary,13,13,Gorilla gorilla,Gorilla gorilla,hub; verbatim,FALSE
 Gorilla gorilla,manipulation,Tool_Manufacture,category,1,,1,1,1,TRUE,Baker,primary,,,Gorilla gorilla,Gorilla gorilla,hub; verbatim,FALSE
 Gorilla gorilla,manipulation,Tool_use,category,0,,2,2,1,TRUE,Heldstab; Baker,primary; secondary,,,Gorilla gorilla,Gorilla gorilla,hub; verbatim,FALSE
@@ -2377,6 +2433,10 @@ Hylobates lar,behavioural_flexibility,Innovation_report_count,reports,0,0,1,1,1,
 Hylobates lar,locomotion,Intermembral_index,ratio,130,130,1,1,1,TRUE,Granatosky,primary,130,130,Hylobates lar,Hylobates lar,verbatim,FALSE
 Hylobates lar,research_effort,Journal_search_article_count,articles,19,19,1,1,1,TRUE,Reader,primary,19,19,Hylobates lar,Hylobates lar,verbatim,FALSE
 Hylobates lar,locomotion,Locomotor_diversity_index,index,1.08697816813994,1.08697816813994,1,1,1,TRUE,Granatosky,primary,1.08697816813994,1.08697816813994,Hylobates lar,Hylobates lar,verbatim,FALSE
+Hylobates lar,cognition,ShortTermMemory_prop_correct,proportion correct,0.638889,0.638889,1,1,1,TRUE,ManyPrimates_STM,primary,0.638889,0.638889,Hylobates lar,Hylobates lar,verbatim,FALSE
+Hylobates lar,cognition,ShortTermMemory_prop_correct_long,proportion correct,0.5,0.5,1,1,1,TRUE,ManyPrimates_STM,primary,0.5,0.5,Hylobates lar,Hylobates lar,verbatim,FALSE
+Hylobates lar,cognition,ShortTermMemory_prop_correct_medium,proportion correct,0.583333,0.583333,1,1,1,TRUE,ManyPrimates_STM,primary,0.583333,0.583333,Hylobates lar,Hylobates lar,verbatim,FALSE
+Hylobates lar,cognition,ShortTermMemory_prop_correct_short,proportion correct,0.833333,0.833333,1,1,1,TRUE,ManyPrimates_STM,primary,0.833333,0.833333,Hylobates lar,Hylobates lar,verbatim,FALSE
 Hylobates lar,behavioural_flexibility,Social_learning_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Hylobates lar,Hylobates lar,verbatim,FALSE
 Hylobates lar,manipulation,Tool_Manufacture,category,1,,1,1,1,TRUE,Baker,primary,,,Hylobates lar,Hylobates lar,verbatim,FALSE
 Hylobates lar,manipulation,Tool_use,category,1,,1,1,0,FALSE,Baker,secondary,,,Hylobates lar,Hylobates lar,verbatim,FALSE
@@ -2417,6 +2477,10 @@ Hylobates moloch,handedness,Handedness_index_mean,HI,-0.115,-0.115,1,1,1,TRUE,Ca
 Hylobates moloch,handedness,Handedness_strength_mean,abs(HI),0.799,0.799,1,1,1,TRUE,Caspar,primary,0.799,0.799,Hylobates moloch,Hylobates moloch,verbatim,FALSE
 Hylobates moloch,behavioural_flexibility,Innovation_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Hylobates moloch,Hylobates moloch,verbatim,FALSE
 Hylobates moloch,behavioural_flexibility,Innovation_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Hylobates moloch,Hylobates moloch,verbatim,FALSE
+Hylobates moloch,cognition,ShortTermMemory_prop_correct,proportion correct,0.550265,0.550265,1,1,1,TRUE,ManyPrimates_STM,primary,0.550265,0.550265,Hylobates moloch,Hylobates moloch,verbatim,FALSE
+Hylobates moloch,cognition,ShortTermMemory_prop_correct_long,proportion correct,0.333333,0.333333,1,1,1,TRUE,ManyPrimates_STM,primary,0.333333,0.333333,Hylobates moloch,Hylobates moloch,verbatim,FALSE
+Hylobates moloch,cognition,ShortTermMemory_prop_correct_medium,proportion correct,0.5,0.5,1,1,1,TRUE,ManyPrimates_STM,primary,0.5,0.5,Hylobates moloch,Hylobates moloch,verbatim,FALSE
+Hylobates moloch,cognition,ShortTermMemory_prop_correct_short,proportion correct,0.722222,0.722222,1,1,1,TRUE,ManyPrimates_STM,primary,0.722222,0.722222,Hylobates moloch,Hylobates moloch,verbatim,FALSE
 Hylobates moloch,behavioural_flexibility,Social_learning_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Hylobates moloch,Hylobates moloch,verbatim,FALSE
 Hylobates moloch,manipulation,Tool_use,category,0,,1,1,0,FALSE,Baker,secondary,,,Hylobates moloch,Hylobates moloch,verbatim,FALSE
 Hylobates moloch,behavioural_flexibility,Tool_use_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Hylobates moloch,Hylobates moloch,verbatim,FALSE
@@ -2434,6 +2498,10 @@ Hylobates muelleri,behavioural_flexibility,Extractive_foraging_report_count,repo
 Hylobates muelleri,behavioural_flexibility,Innovation_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Hylobates muelleri,Hylobates muelleri,verbatim,FALSE
 Hylobates muelleri,behavioural_flexibility,Innovation_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Hylobates muelleri,Hylobates muelleri,verbatim,FALSE
 Hylobates muelleri,research_effort,Journal_search_article_count,articles,1,1,1,1,1,TRUE,Reader,primary,1,1,Hylobates muelleri,Hylobates muelleri,verbatim,FALSE
+Hylobates muelleri,cognition,ShortTermMemory_prop_correct,proportion correct,0.555556,0.555556,1,1,1,TRUE,ManyPrimates_STM,primary,0.555556,0.555556,Hylobates muelleri,Hylobates muelleri,verbatim,FALSE
+Hylobates muelleri,cognition,ShortTermMemory_prop_correct_long,proportion correct,0.666667,0.666667,1,1,1,TRUE,ManyPrimates_STM,primary,0.666667,0.666667,Hylobates muelleri,Hylobates muelleri,verbatim,FALSE
+Hylobates muelleri,cognition,ShortTermMemory_prop_correct_medium,proportion correct,0.333333,0.333333,1,1,1,TRUE,ManyPrimates_STM,primary,0.333333,0.333333,Hylobates muelleri,Hylobates muelleri,verbatim,FALSE
+Hylobates muelleri,cognition,ShortTermMemory_prop_correct_short,proportion correct,0.666667,0.666667,1,1,1,TRUE,ManyPrimates_STM,primary,0.666667,0.666667,Hylobates muelleri,Hylobates muelleri,verbatim,FALSE
 Hylobates muelleri,behavioural_flexibility,Social_learning_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Hylobates muelleri,Hylobates muelleri,verbatim,FALSE
 Hylobates muelleri,manipulation,Tool_use,category,0,,1,1,0,FALSE,Baker,secondary,,,Hylobates muelleri,Hylobates muelleri,verbatim,FALSE
 Hylobates muelleri,behavioural_flexibility,Tool_use_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Hylobates muelleri,Hylobates muelleri,verbatim,FALSE
@@ -2518,6 +2586,10 @@ Lagothrix lagotricha,locomotion,Arboreal_terrestrial,category,A,,1,1,1,TRUE,Gran
 Lagothrix lagotricha,dexterity,Dexterity,1-7 scale,5,5,2,2,1,TRUE,Heffner; Iwaniuk,primary; secondary,5,5,Lagothrix lagotricha,Lagothrix lagothricha,spelling,FALSE
 Lagothrix lagotricha,locomotion,Intermembral_index,ratio,98,98,1,1,1,TRUE,Granatosky,primary,98,98,Lagothrix lagotricha,Lagothrix lagothricha,spelling,FALSE
 Lagothrix lagotricha,locomotion,Locomotor_diversity_index,index,1.67997850986382,1.67997850986382,1,1,1,TRUE,Granatosky,primary,1.67997850986382,1.67997850986382,Lagothrix lagotricha,Lagothrix lagothricha,spelling,FALSE
+Lagothrix lagotricha,cognition,ShortTermMemory_prop_correct,proportion correct,0.542136,0.542136,1,1,1,TRUE,ManyPrimates_STM,primary,0.542136,0.542136,Lagothrix lagotricha,Lagothrix lagothricha,spelling,FALSE
+Lagothrix lagotricha,cognition,ShortTermMemory_prop_correct_long,proportion correct,0.425926,0.425926,1,1,1,TRUE,ManyPrimates_STM,primary,0.425926,0.425926,Lagothrix lagotricha,Lagothrix lagothricha,spelling,FALSE
+Lagothrix lagotricha,cognition,ShortTermMemory_prop_correct_medium,proportion correct,0.444444,0.444444,1,1,1,TRUE,ManyPrimates_STM,primary,0.444444,0.444444,Lagothrix lagotricha,Lagothrix lagothricha,spelling,FALSE
+Lagothrix lagotricha,cognition,ShortTermMemory_prop_correct_short,proportion correct,0.740741,0.740741,1,1,1,TRUE,ManyPrimates_STM,primary,0.740741,0.740741,Lagothrix lagotricha,Lagothrix lagothricha,spelling,FALSE
 Lagothrix lagotricha,manipulation,Tool_use,category,0,,1,1,0,FALSE,Baker,secondary,,,Lagothrix lagotricha,Lagothrix lagothricha,spelling,FALSE
 Lagothrix lagotricha,vocalization,VocalRepertoire,count,6,6,1,1,0,FALSE,ManyPrimates,secondary,6,6,Lagothrix lagotricha,Lagothrix lagothricha,spelling,FALSE
 Lagothrix lagotricha,hand_morphology,log10_ip3_mm,log10 mm,1.31783359924359,1.31783359924359,1,1,1,TRUE,Baker,primary,1.31783359924359,1.31783359924359,Lagothrix lagotricha,Lagothrix lagothricha,spelling,FALSE
@@ -2560,6 +2632,10 @@ Lemur catta,research_effort,Journal_search_article_count,articles,43,43,1,1,1,TR
 Lemur catta,locomotion,Locomotor_diversity_index,index,1.35877626253505,1.35877626253505,1,1,1,TRUE,Granatosky,primary,1.35877626253505,1.35877626253505,Lemur catta,Lemur catta,verbatim,FALSE
 Lemur catta,manipulation,Manipulation_complexity,score,1.48,1.48,1,1,1,TRUE,Heldstab,primary,1.48,1.48,Lemur catta,Lemur catta,verbatim,FALSE
 Lemur catta,gait,Phase,percent,65.24681400999999,65.24681401,1,1,1,TRUE,Wimberly,primary,65.24681401,65.24681401,Lemur catta,Lemur catta,verbatim,FALSE
+Lemur catta,cognition,ShortTermMemory_prop_correct,proportion correct,0.445251,0.445251,1,1,1,TRUE,ManyPrimates_STM,primary,0.445251,0.445251,Lemur catta,Lemur catta,verbatim,FALSE
+Lemur catta,cognition,ShortTermMemory_prop_correct_long,proportion correct,0.32598,0.32598,1,1,1,TRUE,ManyPrimates_STM,primary,0.32598,0.32598,Lemur catta,Lemur catta,verbatim,FALSE
+Lemur catta,cognition,ShortTermMemory_prop_correct_medium,proportion correct,0.477941,0.477941,1,1,1,TRUE,ManyPrimates_STM,primary,0.477941,0.477941,Lemur catta,Lemur catta,verbatim,FALSE
+Lemur catta,cognition,ShortTermMemory_prop_correct_short,proportion correct,0.537582,0.537582,1,1,1,TRUE,ManyPrimates_STM,primary,0.537582,0.537582,Lemur catta,Lemur catta,verbatim,FALSE
 Lemur catta,behavioural_flexibility,Social_learning_report_count,reports,4,4,1,1,1,TRUE,Reader,primary,4,4,Lemur catta,Lemur catta,verbatim,FALSE
 Lemur catta,manipulation,Tool_Manufacture,category,0,,1,1,1,TRUE,Baker,primary,,,Lemur catta,Lemur catta,verbatim,FALSE
 Lemur catta,manipulation,Tool_use,category,0,,2,2,1,TRUE,Heldstab; Baker,primary; secondary,,,Lemur catta,Lemur catta,verbatim,FALSE
@@ -2616,6 +2692,10 @@ Leontopithecus rosalia,research_effort,Journal_search_article_count,articles,23,
 Leontopithecus rosalia,locomotion,Locomotor_diversity_index,index,1.64214160038655,1.64214160038655,1,1,1,TRUE,Granatosky,primary,1.64214160038655,1.64214160038655,Leontopithecus rosalia,Leontopithecus rosalia,verbatim,FALSE
 Leontopithecus rosalia,manipulation,Manipulation_complexity,score,1.2,1.2,1,1,1,TRUE,Heldstab,primary,1.2,1.2,Leontopithecus rosalia,Leontopithecus rosalia,verbatim,FALSE
 Leontopithecus rosalia,gait,Phase,percent,58.27,58.27,1,1,1,TRUE,Wimberly,primary,58.27,58.27,Leontopithecus rosalia,Leontopithecus rosalia,verbatim,FALSE
+Leontopithecus rosalia,cognition,ShortTermMemory_prop_correct,proportion correct,0.450794,0.450794,1,1,1,TRUE,ManyPrimates_STM,primary,0.450794,0.450794,Leontopithecus rosalia,Leontopithecus rosalia,verbatim,FALSE
+Leontopithecus rosalia,cognition,ShortTermMemory_prop_correct_long,proportion correct,0.458333,0.458333,1,1,1,TRUE,ManyPrimates_STM,primary,0.458333,0.458333,Leontopithecus rosalia,Leontopithecus rosalia,verbatim,FALSE
+Leontopithecus rosalia,cognition,ShortTermMemory_prop_correct_medium,proportion correct,0.42803,0.42803,1,1,1,TRUE,ManyPrimates_STM,primary,0.42803,0.42803,Leontopithecus rosalia,Leontopithecus rosalia,verbatim,FALSE
+Leontopithecus rosalia,cognition,ShortTermMemory_prop_correct_short,proportion correct,0.458333,0.458333,1,1,1,TRUE,ManyPrimates_STM,primary,0.458333,0.458333,Leontopithecus rosalia,Leontopithecus rosalia,verbatim,FALSE
 Leontopithecus rosalia,behavioural_flexibility,Social_learning_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Leontopithecus rosalia,Leontopithecus rosalia,verbatim,FALSE
 Leontopithecus rosalia,manipulation,Tool_Manufacture,category,0,,1,1,1,TRUE,Baker,primary,,,Leontopithecus rosalia,Leontopithecus rosalia,verbatim,FALSE
 Leontopithecus rosalia,manipulation,Tool_use,category,0,,2,2,1,TRUE,Heldstab; Baker,primary; secondary,,,Leontopithecus rosalia,Leontopithecus rosalia,verbatim,FALSE
@@ -2852,6 +2932,10 @@ Macaca fascicularis,research_effort,Journal_search_article_count,articles,149,14
 Macaca fascicularis,locomotion,Locomotor_diversity_index,index,1.23184052217936,1.23184052217936,1,1,1,TRUE,Granatosky,primary,1.23184052217936,1.23184052217936,Macaca fascicularis,Macaca fascicularis,verbatim,FALSE
 Macaca fascicularis,manipulation,Manipulation_complexity,score,4.11,4.11,1,1,1,TRUE,Heldstab,primary,4.11,4.11,Macaca fascicularis,Macaca fascicularis,verbatim,FALSE
 Macaca fascicularis,gait,Phase,percent,63.07784027,63.07784027,1,1,1,TRUE,Wimberly,primary,63.07784027,63.07784027,Macaca fascicularis,Macaca fascicularis,verbatim,FALSE
+Macaca fascicularis,cognition,ShortTermMemory_prop_correct,proportion correct,0.585249,0.585249,1,1,1,TRUE,ManyPrimates_STM,primary,0.585249,0.585249,Macaca fascicularis,Macaca fascicularis,verbatim,FALSE
+Macaca fascicularis,cognition,ShortTermMemory_prop_correct_long,proportion correct,0.462644,0.462644,1,1,1,TRUE,ManyPrimates_STM,primary,0.462644,0.462644,Macaca fascicularis,Macaca fascicularis,verbatim,FALSE
+Macaca fascicularis,cognition,ShortTermMemory_prop_correct_medium,proportion correct,0.5373559999999999,0.537356,1,1,1,TRUE,ManyPrimates_STM,primary,0.537356,0.537356,Macaca fascicularis,Macaca fascicularis,verbatim,FALSE
+Macaca fascicularis,cognition,ShortTermMemory_prop_correct_short,proportion correct,0.7557469999999999,0.755747,1,1,1,TRUE,ManyPrimates_STM,primary,0.755747,0.755747,Macaca fascicularis,Macaca fascicularis,verbatim,FALSE
 Macaca fascicularis,behavioural_flexibility,Social_learning_report_count,reports,7,7,1,1,1,TRUE,Reader,primary,7,7,Macaca fascicularis,Macaca fascicularis,verbatim,FALSE
 Macaca fascicularis,manipulation,Tool_Manufacture,category,1,,1,1,1,TRUE,Baker,primary,,,Macaca fascicularis,Macaca fascicularis,verbatim,FALSE
 Macaca fascicularis,manipulation,Tool_use,category,1,,2,2,1,TRUE,Heldstab; Baker,primary; secondary,,,Macaca fascicularis,Macaca fascicularis,verbatim,FALSE
@@ -2935,6 +3019,10 @@ Macaca mulatta,locomotion,Intermembral_index,ratio,93,93,1,1,1,TRUE,Granatosky,p
 Macaca mulatta,research_effort,Journal_search_article_count,articles,365,365,1,1,1,TRUE,Reader,primary,365,365,Macaca mulatta,Macaca mulatta,verbatim,FALSE
 Macaca mulatta,locomotion,Locomotor_diversity_index,index,1.02674163828187,1.02674163828187,1,1,1,TRUE,Granatosky,primary,1.02674163828187,1.02674163828187,Macaca mulatta,Macaca mulatta,verbatim,FALSE
 Macaca mulatta,gait,Phase,percent,63.03289724,63.03289724,1,1,1,TRUE,Wimberly,primary,63.03289724,63.03289724,Macaca mulatta,Macaca mulatta,verbatim,FALSE
+Macaca mulatta,cognition,ShortTermMemory_prop_correct,proportion correct,0.609193,0.609193,1,1,1,TRUE,ManyPrimates_STM,primary,0.609193,0.609193,Macaca mulatta,Macaca mulatta,verbatim,FALSE
+Macaca mulatta,cognition,ShortTermMemory_prop_correct_long,proportion correct,0.490079,0.490079,1,1,1,TRUE,ManyPrimates_STM,primary,0.490079,0.490079,Macaca mulatta,Macaca mulatta,verbatim,FALSE
+Macaca mulatta,cognition,ShortTermMemory_prop_correct_medium,proportion correct,0.561508,0.561508,1,1,1,TRUE,ManyPrimates_STM,primary,0.561508,0.561508,Macaca mulatta,Macaca mulatta,verbatim,FALSE
+Macaca mulatta,cognition,ShortTermMemory_prop_correct_short,proportion correct,0.7807539999999999,0.780754,1,1,1,TRUE,ManyPrimates_STM,primary,0.780754,0.780754,Macaca mulatta,Macaca mulatta,verbatim,FALSE
 Macaca mulatta,behavioural_flexibility,Social_learning_report_count,reports,15,15,1,1,1,TRUE,Reader,primary,15,15,Macaca mulatta,Macaca mulatta,verbatim,FALSE
 Macaca mulatta,manipulation,Tool_Manufacture,category,0,,1,1,1,TRUE,Baker,primary,,,Macaca mulatta,Macaca mulatta,verbatim,FALSE
 Macaca mulatta,manipulation,Tool_use,category,1,,1,1,0,FALSE,Baker,secondary,,,Macaca mulatta,Macaca mulatta,verbatim,FALSE
@@ -3038,6 +3126,10 @@ Macaca silenus,handedness,Handedness_strength_mean,abs(HI),0.467,0.467,1,1,1,TRU
 Macaca silenus,behavioural_flexibility,Innovation_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Macaca silenus,Macaca silenus,verbatim,FALSE
 Macaca silenus,behavioural_flexibility,Innovation_report_count,reports,1,1,1,1,1,TRUE,Reader,primary,1,1,Macaca silenus,Macaca silenus,verbatim,FALSE
 Macaca silenus,research_effort,Journal_search_article_count,articles,21,21,1,1,1,TRUE,Reader,primary,21,21,Macaca silenus,Macaca silenus,verbatim,FALSE
+Macaca silenus,cognition,ShortTermMemory_prop_correct,proportion correct,0.708333,0.708333,1,1,1,TRUE,ManyPrimates_STM,primary,0.708333,0.708333,Macaca silenus,Macaca silenus,verbatim,FALSE
+Macaca silenus,cognition,ShortTermMemory_prop_correct_long,proportion correct,0.625,0.625,1,1,1,TRUE,ManyPrimates_STM,primary,0.625,0.625,Macaca silenus,Macaca silenus,verbatim,FALSE
+Macaca silenus,cognition,ShortTermMemory_prop_correct_medium,proportion correct,0.583333,0.583333,1,1,1,TRUE,ManyPrimates_STM,primary,0.583333,0.583333,Macaca silenus,Macaca silenus,verbatim,FALSE
+Macaca silenus,cognition,ShortTermMemory_prop_correct_short,proportion correct,0.916667,0.916667,1,1,1,TRUE,ManyPrimates_STM,primary,0.916667,0.916667,Macaca silenus,Macaca silenus,verbatim,FALSE
 Macaca silenus,behavioural_flexibility,Social_learning_report_count,reports,1,1,1,1,1,TRUE,Reader,primary,1,1,Macaca silenus,Macaca silenus,verbatim,FALSE
 Macaca silenus,manipulation,Tool_Manufacture,category,1,,1,1,1,TRUE,Baker,primary,,,Macaca silenus,Macaca silenus,verbatim,FALSE
 Macaca silenus,manipulation,Tool_use,category,1,,1,1,0,FALSE,Baker,secondary,,,Macaca silenus,Macaca silenus,verbatim,FALSE
@@ -3077,6 +3169,10 @@ Macaca sylvanus,behavioural_flexibility,Innovation_reduced_report_count,reports,
 Macaca sylvanus,behavioural_flexibility,Innovation_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Macaca sylvanus,Macaca sylvanus,verbatim,FALSE
 Macaca sylvanus,research_effort,Journal_search_article_count,articles,38,38,1,1,1,TRUE,Reader,primary,38,38,Macaca sylvanus,Macaca sylvanus,verbatim,FALSE
 Macaca sylvanus,manipulation,Manipulation_complexity,score,3.76,3.76,1,1,1,TRUE,Heldstab,primary,3.76,3.76,Macaca sylvanus,Macaca sylvanus,verbatim,FALSE
+Macaca sylvanus,cognition,ShortTermMemory_prop_correct,proportion correct,0.561905,0.561905,1,1,1,TRUE,ManyPrimates_STM,primary,0.561905,0.561905,Macaca sylvanus,Macaca sylvanus,verbatim,FALSE
+Macaca sylvanus,cognition,ShortTermMemory_prop_correct_long,proportion correct,0.455556,0.455556,1,1,1,TRUE,ManyPrimates_STM,primary,0.455556,0.455556,Macaca sylvanus,Macaca sylvanus,verbatim,FALSE
+Macaca sylvanus,cognition,ShortTermMemory_prop_correct_medium,proportion correct,0.527778,0.527778,1,1,1,TRUE,ManyPrimates_STM,primary,0.527778,0.527778,Macaca sylvanus,Macaca sylvanus,verbatim,FALSE
+Macaca sylvanus,cognition,ShortTermMemory_prop_correct_short,proportion correct,0.689394,0.689394,1,1,1,TRUE,ManyPrimates_STM,primary,0.689394,0.689394,Macaca sylvanus,Macaca sylvanus,verbatim,FALSE
 Macaca sylvanus,behavioural_flexibility,Social_learning_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Macaca sylvanus,Macaca sylvanus,verbatim,FALSE
 Macaca sylvanus,manipulation,Tool_use,category,0,,2,2,1,TRUE,Heldstab; Baker,primary; secondary,,,Macaca sylvanus,Macaca sylvanus,verbatim,FALSE
 Macaca sylvanus,behavioural_flexibility,Tool_use_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Macaca sylvanus,Macaca sylvanus,verbatim,FALSE
@@ -3115,6 +3211,10 @@ Macaca tonkeana,behavioural_flexibility,Innovation_reduced_report_count,reports,
 Macaca tonkeana,behavioural_flexibility,Innovation_report_count,reports,1,1,1,1,1,TRUE,Reader,primary,1,1,Macaca tonkeana,Macaca tonkeana,verbatim,FALSE
 Macaca tonkeana,research_effort,Journal_search_article_count,articles,21,21,1,1,1,TRUE,Reader,primary,21,21,Macaca tonkeana,Macaca tonkeana,verbatim,FALSE
 Macaca tonkeana,manipulation,Manipulation_complexity,score,3,3,1,1,1,TRUE,Heldstab,primary,3,3,Macaca tonkeana,Macaca tonkeana,verbatim,FALSE
+Macaca tonkeana,cognition,ShortTermMemory_prop_correct,proportion correct,0.783951,0.783951,1,1,1,TRUE,ManyPrimates_STM,primary,0.783951,0.783951,Macaca tonkeana,Macaca tonkeana,verbatim,FALSE
+Macaca tonkeana,cognition,ShortTermMemory_prop_correct_long,proportion correct,0.712963,0.712963,1,1,1,TRUE,ManyPrimates_STM,primary,0.712963,0.712963,Macaca tonkeana,Macaca tonkeana,verbatim,FALSE
+Macaca tonkeana,cognition,ShortTermMemory_prop_correct_medium,proportion correct,0.796296,0.796296,1,1,1,TRUE,ManyPrimates_STM,primary,0.796296,0.796296,Macaca tonkeana,Macaca tonkeana,verbatim,FALSE
+Macaca tonkeana,cognition,ShortTermMemory_prop_correct_short,proportion correct,0.842593,0.842593,1,1,1,TRUE,ManyPrimates_STM,primary,0.842593,0.842593,Macaca tonkeana,Macaca tonkeana,verbatim,FALSE
 Macaca tonkeana,behavioural_flexibility,Social_learning_report_count,reports,2,2,1,1,1,TRUE,Reader,primary,2,2,Macaca tonkeana,Macaca tonkeana,verbatim,FALSE
 Macaca tonkeana,manipulation,Tool_Manufacture,category,0,,1,1,1,TRUE,Baker,primary,,,Macaca tonkeana,Macaca tonkeana,verbatim,FALSE
 Macaca tonkeana,manipulation,Tool_use,category,0,,2,2,1,TRUE,Heldstab; Baker,primary; secondary,,,Macaca tonkeana,Macaca tonkeana,verbatim,FALSE
@@ -3423,6 +3523,10 @@ Nomascus gabriellae,handedness,Handedness_index_mean,HI,-0.173,-0.173,1,1,1,TRUE
 Nomascus gabriellae,handedness,Handedness_strength_mean,abs(HI),0.618,0.618,1,1,1,TRUE,Caspar,primary,0.618,0.618,Nomascus gabriellae,Nomascus gabriellae,verbatim,FALSE
 Nomascus leucogenys,handedness,Handedness_index_mean,HI,-0.031,-0.031,1,1,1,TRUE,Caspar,primary,-0.031,-0.031,Nomascus leucogenys,Nomascus leucogenys,verbatim,FALSE
 Nomascus leucogenys,handedness,Handedness_strength_mean,abs(HI),0.555,0.555,1,1,1,TRUE,Caspar,primary,0.555,0.555,Nomascus leucogenys,Nomascus leucogenys,verbatim,FALSE
+Nomascus leucogenys,cognition,ShortTermMemory_prop_correct,proportion correct,0.518519,0.518519,1,1,1,TRUE,ManyPrimates_STM,primary,0.518519,0.518519,Nomascus leucogenys,Nomascus leucogenys,verbatim,FALSE
+Nomascus leucogenys,cognition,ShortTermMemory_prop_correct_long,proportion correct,0.555556,0.555556,1,1,1,TRUE,ManyPrimates_STM,primary,0.555556,0.555556,Nomascus leucogenys,Nomascus leucogenys,verbatim,FALSE
+Nomascus leucogenys,cognition,ShortTermMemory_prop_correct_medium,proportion correct,0.555556,0.555556,1,1,1,TRUE,ManyPrimates_STM,primary,0.555556,0.555556,Nomascus leucogenys,Nomascus leucogenys,verbatim,FALSE
+Nomascus leucogenys,cognition,ShortTermMemory_prop_correct_short,proportion correct,0.444444,0.444444,1,1,1,TRUE,ManyPrimates_STM,primary,0.444444,0.444444,Nomascus leucogenys,Nomascus leucogenys,verbatim,FALSE
 Nomascus leucogenys,vocalization,VocalRepertoire,count,19,19,1,1,0,FALSE,ManyPrimates,secondary,19,19,Nomascus leucogenys,Nomascus leucogenys,verbatim,FALSE
 Nomascus nasutus,locomotion,Arboreal_terrestrial,category,A,,1,1,1,TRUE,Granatosky,primary,,,Nomascus nasutus,Nomascus nasutus,verbatim,FALSE
 Nomascus nasutus,locomotion,Locomotor_diversity_index,index,1.12300989482099,1.12300989482099,1,1,1,TRUE,Granatosky,primary,1.12300989482099,1.12300989482099,Nomascus nasutus,Nomascus nasutus,verbatim,FALSE
@@ -3585,6 +3689,10 @@ Pan paniscus,research_effort,Journal_search_article_count,articles,64,64,1,1,1,T
 Pan paniscus,locomotion,Limb_posture,category,Plantigrade,,1,1,1,TRUE,Medina,primary,,,Pan paniscus,Pan paniscus,verbatim,FALSE
 Pan paniscus,locomotion,Locomotor_diversity_index,index,1.64480703854916,1.64480703854916,1,1,1,TRUE,Granatosky,primary,1.64480703854916,1.64480703854916,Pan paniscus,Pan paniscus,verbatim,FALSE
 Pan paniscus,locomotion,Locomotor_habit,category,Arboreal,,1,1,1,TRUE,Medina,primary,,,Pan paniscus,Pan paniscus,verbatim,FALSE
+Pan paniscus,cognition,ShortTermMemory_prop_correct,proportion correct,0.813971,0.813971,1,1,1,TRUE,ManyPrimates_STM,primary,0.813971,0.813971,Pan paniscus,Pan paniscus,verbatim,FALSE
+Pan paniscus,cognition,ShortTermMemory_prop_correct_long,proportion correct,0.728333,0.728333,1,1,1,TRUE,ManyPrimates_STM,primary,0.728333,0.728333,Pan paniscus,Pan paniscus,verbatim,FALSE
+Pan paniscus,cognition,ShortTermMemory_prop_correct_medium,proportion correct,0.791667,0.791667,1,1,1,TRUE,ManyPrimates_STM,primary,0.791667,0.791667,Pan paniscus,Pan paniscus,verbatim,FALSE
+Pan paniscus,cognition,ShortTermMemory_prop_correct_short,proportion correct,0.920833,0.920833,1,1,1,TRUE,ManyPrimates_STM,primary,0.920833,0.920833,Pan paniscus,Pan paniscus,verbatim,FALSE
 Pan paniscus,behavioural_flexibility,Social_learning_report_count,reports,5,5,1,1,1,TRUE,Reader,primary,5,5,Pan paniscus,Pan paniscus,verbatim,FALSE
 Pan paniscus,manipulation,Tool_Manufacture,category,0,,1,1,1,TRUE,Baker,primary,,,Pan paniscus,Pan paniscus,verbatim,FALSE
 Pan paniscus,manipulation,Tool_use,category,1,,1,1,0,FALSE,Baker,secondary,,,Pan paniscus,Pan paniscus,verbatim,FALSE
@@ -3627,6 +3735,10 @@ Pan troglodytes,research_effort,Journal_search_article_count,articles,364,364,1,
 Pan troglodytes,locomotion,Locomotor_diversity_index,index,0.375029668019445,0.375029668019445,1,1,1,TRUE,Granatosky,primary,0.375029668019445,0.375029668019445,Pan troglodytes,Pan troglodytes,verbatim,FALSE
 Pan troglodytes,manipulation,Manipulation_complexity,score,4.38,4.38,1,1,1,TRUE,Heldstab,primary,4.38,4.38,Pan troglodytes,Pan troglodytes,verbatim,FALSE
 Pan troglodytes,gait,Phase,percent,48.05556,48.05556,1,1,1,TRUE,Wimberly,primary,48.05556,48.05556,Pan troglodytes,Pan troglodytes,verbatim,FALSE
+Pan troglodytes,cognition,ShortTermMemory_prop_correct,proportion correct,0.840753,0.840753,1,1,1,TRUE,ManyPrimates_STM,primary,0.840753,0.840753,Pan troglodytes,Pan troglodytes,verbatim,FALSE
+Pan troglodytes,cognition,ShortTermMemory_prop_correct_long,proportion correct,0.796744,0.796744,1,1,1,TRUE,ManyPrimates_STM,primary,0.796744,0.796744,Pan troglodytes,Pan troglodytes,verbatim,FALSE
+Pan troglodytes,cognition,ShortTermMemory_prop_correct_medium,proportion correct,0.807431,0.807431,1,1,1,TRUE,ManyPrimates_STM,primary,0.807431,0.807431,Pan troglodytes,Pan troglodytes,verbatim,FALSE
+Pan troglodytes,cognition,ShortTermMemory_prop_correct_short,proportion correct,0.920139,0.920139,1,1,1,TRUE,ManyPrimates_STM,primary,0.920139,0.920139,Pan troglodytes,Pan troglodytes,verbatim,FALSE
 Pan troglodytes,behavioural_flexibility,Social_learning_report_count,reports,214,214,1,1,1,TRUE,Reader,primary,214,214,Pan troglodytes,Pan troglodytes,verbatim,FALSE
 Pan troglodytes,manipulation,Tool_Manufacture,category,1,,1,1,1,TRUE,Baker,primary,,,Pan troglodytes,Pan troglodytes,verbatim,FALSE
 Pan troglodytes,manipulation,Tool_use,category,1,,2,2,1,TRUE,Heldstab; Baker,primary; secondary,,,Pan troglodytes,Pan troglodytes,verbatim,FALSE
@@ -3700,6 +3812,10 @@ Papio anubis,behavioural_flexibility,Innovation_report_count,reports,12,12,1,1,1
 Papio anubis,locomotion,Intermembral_index,ratio,97,97,1,1,1,TRUE,Granatosky,primary,97,97,Papio anubis,Papio anubis,verbatim,FALSE
 Papio anubis,research_effort,Journal_search_article_count,articles,38,38,1,1,1,TRUE,Reader,primary,38,38,Papio anubis,Papio anubis,verbatim,FALSE
 Papio anubis,locomotion,Locomotor_diversity_index,index,0.164594459315598,0.164594459315598,1,1,1,TRUE,Granatosky,primary,0.164594459315598,0.164594459315598,Papio anubis,Papio anubis,verbatim,FALSE
+Papio anubis,cognition,ShortTermMemory_prop_correct,proportion correct,0.5075229999999999,0.507523,1,1,1,TRUE,ManyPrimates_STM,primary,0.507523,0.507523,Papio anubis,Papio anubis,verbatim,FALSE
+Papio anubis,cognition,ShortTermMemory_prop_correct_long,proportion correct,0.472222,0.472222,1,1,1,TRUE,ManyPrimates_STM,primary,0.472222,0.472222,Papio anubis,Papio anubis,verbatim,FALSE
+Papio anubis,cognition,ShortTermMemory_prop_correct_medium,proportion correct,0.5,0.5,1,1,1,TRUE,ManyPrimates_STM,primary,0.5,0.5,Papio anubis,Papio anubis,verbatim,FALSE
+Papio anubis,cognition,ShortTermMemory_prop_correct_short,proportion correct,0.541667,0.541667,1,1,1,TRUE,ManyPrimates_STM,primary,0.541667,0.541667,Papio anubis,Papio anubis,verbatim,FALSE
 Papio anubis,behavioural_flexibility,Social_learning_report_count,reports,4,4,1,1,1,TRUE,Reader,primary,4,4,Papio anubis,Papio anubis,verbatim,FALSE
 Papio anubis,manipulation,Tool_Manufacture,category,0,,1,1,1,TRUE,Baker,primary,,,Papio anubis,Papio anubis,verbatim,FALSE
 Papio anubis,manipulation,Tool_use,category,1,,1,1,0,FALSE,Baker,secondary,,,Papio anubis,Papio anubis,verbatim,FALSE
@@ -4022,6 +4138,10 @@ Pongo abelii,manipulation,Extractive_foraging,category,1,,1,1,1,TRUE,Heldstab,pr
 Pongo abelii,locomotion,Intermembral_index,ratio,139,139,1,1,1,TRUE,Granatosky,primary,139,139,Pongo abelii,Pongo abelii; Pongo sp.,hub; lump,FALSE
 Pongo abelii,locomotion,Locomotor_diversity_index,index,2.03067787197455,2.03067787197455,1,1,1,TRUE,Granatosky,primary,2.03067787197455,2.03067787197455,Pongo abelii,Pongo abelii; Pongo sp.,hub; lump,FALSE
 Pongo abelii,manipulation,Manipulation_complexity,score,3.89,3.89,1,1,1,TRUE,Heldstab,primary,3.89,3.89,Pongo abelii,Pongo abelii; Pongo sp.,hub; lump,FALSE
+Pongo abelii,cognition,ShortTermMemory_prop_correct,proportion correct,0.960317,0.960317,1,1,1,TRUE,ManyPrimates_STM,primary,0.960317,0.960317,Pongo abelii,Pongo abelii; Pongo sp.,hub; lump,FALSE
+Pongo abelii,cognition,ShortTermMemory_prop_correct_long,proportion correct,0.940476,0.940476,1,1,1,TRUE,ManyPrimates_STM,primary,0.940476,0.940476,Pongo abelii,Pongo abelii; Pongo sp.,hub; lump,FALSE
+Pongo abelii,cognition,ShortTermMemory_prop_correct_medium,proportion correct,0.940476,0.940476,1,1,1,TRUE,ManyPrimates_STM,primary,0.940476,0.940476,Pongo abelii,Pongo abelii; Pongo sp.,hub; lump,FALSE
+Pongo abelii,cognition,ShortTermMemory_prop_correct_short,proportion correct,1,1,1,1,1,TRUE,ManyPrimates_STM,primary,1,1,Pongo abelii,Pongo abelii; Pongo sp.,hub; lump,FALSE
 Pongo abelii,manipulation,Tool_Manufacture,category,1,,1,1,1,TRUE,Baker,primary,,,Pongo abelii,Pongo abelii; Pongo sp.,hub; lump,FALSE
 Pongo abelii,manipulation,Tool_use,category,1,,2,2,1,TRUE,Heldstab; Baker,primary; secondary,,,Pongo abelii,Pongo abelii; Pongo sp.,hub; lump,FALSE
 Pongo abelii,manipulation,True_Tool_Use,category,1,,1,1,1,TRUE,Baker,primary,,,Pongo abelii,Pongo abelii; Pongo sp.,hub; lump,FALSE
@@ -4048,6 +4168,10 @@ Pongo pygmaeus,research_effort,Journal_search_article_count,articles,47,47,1,1,1
 Pongo pygmaeus,locomotion,Limb_posture,category,Mixed,,1,1,1,TRUE,Medina,primary,,,Pongo pygmaeus,Pongo pygmaeus,hub; verbatim,FALSE
 Pongo pygmaeus,locomotion,Locomotor_diversity_index,index,1.38150120846112,1.38150120846112,1,1,1,TRUE,Granatosky,primary,1.38150120846112,1.38150120846112,Pongo pygmaeus,Pongo pygmaeus,hub; verbatim,FALSE
 Pongo pygmaeus,locomotion,Locomotor_habit,category,Arboreal,,1,1,1,TRUE,Medina,primary,,,Pongo pygmaeus,Pongo pygmaeus,hub; verbatim,FALSE
+Pongo pygmaeus,cognition,ShortTermMemory_prop_correct,proportion correct,0.660582,0.660582,1,1,1,TRUE,ManyPrimates_STM,primary,0.660582,0.660582,Pongo pygmaeus,Pongo pygmaeus,hub; verbatim,FALSE
+Pongo pygmaeus,cognition,ShortTermMemory_prop_correct_long,proportion correct,0.555556,0.555556,1,1,1,TRUE,ManyPrimates_STM,primary,0.555556,0.555556,Pongo pygmaeus,Pongo pygmaeus,hub; verbatim,FALSE
+Pongo pygmaeus,cognition,ShortTermMemory_prop_correct_medium,proportion correct,0.6222220000000001,0.622222,1,1,1,TRUE,ManyPrimates_STM,primary,0.622222,0.622222,Pongo pygmaeus,Pongo pygmaeus,hub; verbatim,FALSE
+Pongo pygmaeus,cognition,ShortTermMemory_prop_correct_short,proportion correct,0.787879,0.787879,1,1,1,TRUE,ManyPrimates_STM,primary,0.787879,0.787879,Pongo pygmaeus,Pongo pygmaeus,hub; verbatim,FALSE
 Pongo pygmaeus,behavioural_flexibility,Social_learning_report_count,reports,86,86,1,1,1,TRUE,Reader,primary,86,86,Pongo pygmaeus,Pongo pygmaeus,hub; verbatim,FALSE
 Pongo pygmaeus,manipulation,Tool_Manufacture,category,1,,1,1,1,TRUE,Baker,primary,,,Pongo pygmaeus,Pongo pygmaeus,hub; verbatim,FALSE
 Pongo pygmaeus,manipulation,Tool_use,category,1,,1,1,0,FALSE,Baker,secondary,,,Pongo pygmaeus,Pongo pygmaeus,hub; verbatim,FALSE
@@ -4251,6 +4375,10 @@ Propithecus coquereli,gait,Duty_Factor,percent,63.27471447,63.27471447,1,1,1,TRU
 Propithecus coquereli,gait,Foot_Posture,category,plantigrade,,1,1,1,TRUE,Wimberly,primary,,,Propithecus coquereli,Propithecus coquereli,unresolved,FALSE
 Propithecus coquereli,gait,Gait,category,DSDC,,1,1,1,TRUE,Wimberly,primary,,,Propithecus coquereli,Propithecus coquereli,unresolved,FALSE
 Propithecus coquereli,gait,Phase,percent,62.88913796,62.88913796,1,1,1,TRUE,Wimberly,primary,62.88913796,62.88913796,Propithecus coquereli,Propithecus coquereli,unresolved,FALSE
+Propithecus coquereli,cognition,ShortTermMemory_prop_correct,proportion correct,0.440476,0.440476,1,1,1,TRUE,ManyPrimates_STM,primary,0.440476,0.440476,Propithecus coquereli,Propithecus coquereli,unresolved,FALSE
+Propithecus coquereli,cognition,ShortTermMemory_prop_correct_long,proportion correct,0.333333,0.333333,1,1,1,TRUE,ManyPrimates_STM,primary,0.333333,0.333333,Propithecus coquereli,Propithecus coquereli,unresolved,FALSE
+Propithecus coquereli,cognition,ShortTermMemory_prop_correct_medium,proportion correct,0.53125,0.53125,1,1,1,TRUE,ManyPrimates_STM,primary,0.53125,0.53125,Propithecus coquereli,Propithecus coquereli,unresolved,FALSE
+Propithecus coquereli,cognition,ShortTermMemory_prop_correct_short,proportion correct,0.493056,0.493056,1,1,1,TRUE,ManyPrimates_STM,primary,0.493056,0.493056,Propithecus coquereli,Propithecus coquereli,unresolved,FALSE
 Propithecus coquereli,vocalization,VocalRepertoire,count,6,6,1,1,0,FALSE,ManyPrimates,secondary,6,6,Propithecus coquereli,Propithecus coquereli,unresolved,FALSE
 Propithecus diadema,locomotion,Arboreal_terrestrial,category,A,,1,1,1,TRUE,Granatosky,primary,,,Propithecus diadema,Propithecus diadema,verbatim,FALSE
 Propithecus diadema,behavioural_flexibility,Extractive_foraging_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Propithecus diadema,Propithecus diadema,verbatim,FALSE
@@ -4457,6 +4585,10 @@ Saguinus imperator,behavioural_flexibility,Innovation_reduced_report_count,repor
 Saguinus imperator,behavioural_flexibility,Innovation_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Saguinus imperator,Saguinus imperator,verbatim,FALSE
 Saguinus imperator,research_effort,Journal_search_article_count,articles,4,4,1,1,1,TRUE,Reader,primary,4,4,Saguinus imperator,Saguinus imperator,verbatim,FALSE
 Saguinus imperator,manipulation,Manipulation_complexity,score,1.62,1.62,1,1,1,TRUE,Heldstab,primary,1.62,1.62,Saguinus imperator,Saguinus imperator,verbatim,FALSE
+Saguinus imperator,cognition,ShortTermMemory_prop_correct,proportion correct,0.454545,0.454545,1,1,1,TRUE,ManyPrimates_STM,primary,0.454545,0.454545,Saguinus imperator,Saguinus imperator,verbatim,FALSE
+Saguinus imperator,cognition,ShortTermMemory_prop_correct_long,proportion correct,0.333333,0.333333,1,1,1,TRUE,ManyPrimates_STM,primary,0.333333,0.333333,Saguinus imperator,Saguinus imperator,verbatim,FALSE
+Saguinus imperator,cognition,ShortTermMemory_prop_correct_medium,proportion correct,0.333333,0.333333,1,1,1,TRUE,ManyPrimates_STM,primary,0.333333,0.333333,Saguinus imperator,Saguinus imperator,verbatim,FALSE
+Saguinus imperator,cognition,ShortTermMemory_prop_correct_short,proportion correct,0.666667,0.666667,1,1,1,TRUE,ManyPrimates_STM,primary,0.666667,0.666667,Saguinus imperator,Saguinus imperator,verbatim,FALSE
 Saguinus imperator,behavioural_flexibility,Social_learning_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Saguinus imperator,Saguinus imperator,verbatim,FALSE
 Saguinus imperator,manipulation,Tool_use,category,0,,1,1,1,TRUE,Heldstab,primary,,,Saguinus imperator,Saguinus imperator,verbatim,FALSE
 Saguinus imperator,behavioural_flexibility,Tool_use_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Saguinus imperator,Saguinus imperator,verbatim,FALSE
@@ -4502,6 +4634,10 @@ Saguinus midas,behavioural_flexibility,Innovation_report_count,reports,0,0,1,1,1
 Saguinus midas,locomotion,Intermembral_index,ratio,77,77,1,1,1,TRUE,Granatosky,primary,77,77,Saguinus midas,Saguinus midas,verbatim,FALSE
 Saguinus midas,research_effort,Journal_search_article_count,articles,4,4,1,1,1,TRUE,Reader,primary,4,4,Saguinus midas,Saguinus midas,verbatim,FALSE
 Saguinus midas,locomotion,Locomotor_diversity_index,index,1.38602395226123,1.38602395226123,1,1,1,TRUE,Granatosky,primary,1.38602395226123,1.38602395226123,Saguinus midas,Saguinus midas,verbatim,FALSE
+Saguinus midas,cognition,ShortTermMemory_prop_correct,proportion correct,0.527778,0.527778,1,1,1,TRUE,ManyPrimates_STM,primary,0.527778,0.527778,Saguinus midas,Saguinus midas,verbatim,FALSE
+Saguinus midas,cognition,ShortTermMemory_prop_correct_long,proportion correct,0.583333,0.583333,1,1,1,TRUE,ManyPrimates_STM,primary,0.583333,0.583333,Saguinus midas,Saguinus midas,verbatim,FALSE
+Saguinus midas,cognition,ShortTermMemory_prop_correct_medium,proportion correct,0.416667,0.416667,1,1,1,TRUE,ManyPrimates_STM,primary,0.416667,0.416667,Saguinus midas,Saguinus midas,verbatim,FALSE
+Saguinus midas,cognition,ShortTermMemory_prop_correct_short,proportion correct,0.583333,0.583333,1,1,1,TRUE,ManyPrimates_STM,primary,0.583333,0.583333,Saguinus midas,Saguinus midas,verbatim,FALSE
 Saguinus midas,behavioural_flexibility,Social_learning_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Saguinus midas,Saguinus midas,verbatim,FALSE
 Saguinus midas,manipulation,Tool_use,category,0,,1,1,0,FALSE,Baker,secondary,,,Saguinus midas,Saguinus midas,verbatim,FALSE
 Saguinus midas,behavioural_flexibility,Tool_use_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Saguinus midas,Saguinus midas,verbatim,FALSE
@@ -4614,6 +4750,10 @@ Saimiri sciureus,locomotion,Locomotor_diversity_index,index,1.52127517730103,1.5
 Saimiri sciureus,locomotion,Locomotor_habit,category,Arboreal,,1,1,1,TRUE,Medina,primary,,,Saimiri sciureus,Saimiri sciureus,verbatim,FALSE
 Saimiri sciureus,manipulation,Manipulation_complexity,score,1.94,1.94,1,1,1,TRUE,Heldstab,primary,1.94,1.94,Saimiri sciureus,Saimiri sciureus,verbatim,FALSE
 Saimiri sciureus,gait,Phase,percent,58.76699956,58.76699956,1,1,1,TRUE,Wimberly,primary,58.76699956,58.76699956,Saimiri sciureus,Saimiri sciureus,verbatim,FALSE
+Saimiri sciureus,cognition,ShortTermMemory_prop_correct,proportion correct,0.465888,0.465888,1,1,1,TRUE,ManyPrimates_STM,primary,0.465888,0.465888,Saimiri sciureus,Saimiri sciureus,verbatim,FALSE
+Saimiri sciureus,cognition,ShortTermMemory_prop_correct_long,proportion correct,0.399673,0.399673,1,1,1,TRUE,ManyPrimates_STM,primary,0.399673,0.399673,Saimiri sciureus,Saimiri sciureus,verbatim,FALSE
+Saimiri sciureus,cognition,ShortTermMemory_prop_correct_medium,proportion correct,0.384259,0.384259,1,1,1,TRUE,ManyPrimates_STM,primary,0.384259,0.384259,Saimiri sciureus,Saimiri sciureus,verbatim,FALSE
+Saimiri sciureus,cognition,ShortTermMemory_prop_correct_short,proportion correct,0.603395,0.603395,1,1,1,TRUE,ManyPrimates_STM,primary,0.603395,0.603395,Saimiri sciureus,Saimiri sciureus,verbatim,FALSE
 Saimiri sciureus,behavioural_flexibility,Social_learning_report_count,reports,1,1,1,1,1,TRUE,Reader,primary,1,1,Saimiri sciureus,Saimiri sciureus,verbatim,FALSE
 Saimiri sciureus,manipulation,Tool_use,category,0,,2,2,1,TRUE,Heldstab; Baker,primary; secondary,,,Saimiri sciureus,Saimiri sciureus,verbatim,FALSE
 Saimiri sciureus,behavioural_flexibility,Tool_use_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Saimiri sciureus,Saimiri sciureus,verbatim,FALSE
@@ -4667,6 +4807,10 @@ Sapajus apella,research_effort,Journal_search_article_count,articles,111,111,1,1
 Sapajus apella,locomotion,Locomotor_diversity_index,index,1.83687468245124,1.83687468245124,1,1,1,TRUE,Granatosky,primary,1.83687468245124,1.83687468245124,Sapajus apella,Sapajus apella,verbatim,FALSE
 Sapajus apella,manipulation,Manipulation_complexity,score,2.54,2.54,1,1,1,TRUE,Heldstab,primary,2.54,2.54,Sapajus apella,Sapajus apella,verbatim,FALSE
 Sapajus apella,gait,Phase,percent,49.53562611,49.53562611,1,1,1,TRUE,Wimberly,primary,49.53562611,49.53562611,Sapajus apella,Sapajus apella,verbatim,FALSE
+Sapajus apella,cognition,ShortTermMemory_prop_correct,proportion correct,0.631344,0.631344,1,1,1,TRUE,ManyPrimates_STM,primary,0.631344,0.631344,Sapajus apella,Sapajus apella,verbatim,FALSE
+Sapajus apella,cognition,ShortTermMemory_prop_correct_long,proportion correct,0.513889,0.513889,1,1,1,TRUE,ManyPrimates_STM,primary,0.513889,0.513889,Sapajus apella,Sapajus apella,verbatim,FALSE
+Sapajus apella,cognition,ShortTermMemory_prop_correct_medium,proportion correct,0.560606,0.560606,1,1,1,TRUE,ManyPrimates_STM,primary,0.560606,0.560606,Sapajus apella,Sapajus apella,verbatim,FALSE
+Sapajus apella,cognition,ShortTermMemory_prop_correct_short,proportion correct,0.814968,0.814968,1,1,1,TRUE,ManyPrimates_STM,primary,0.814968,0.814968,Sapajus apella,Sapajus apella,verbatim,FALSE
 Sapajus apella,behavioural_flexibility,Social_learning_report_count,reports,17,17,1,1,1,TRUE,Reader,primary,17,17,Sapajus apella,Sapajus apella,verbatim,FALSE
 Sapajus apella,manipulation,Tool_Manufacture,category,1,,1,1,1,TRUE,Baker,primary,,,Sapajus apella,Sapajus apella,verbatim,FALSE
 Sapajus apella,manipulation,Tool_use,category,1,,2,2,1,TRUE,Heldstab; Baker,primary; secondary,,,Sapajus apella,Sapajus apella,verbatim,FALSE
@@ -4771,6 +4915,10 @@ Symphalangus syndactylus,locomotion,Intermembral_index,ratio,147,147,1,1,1,TRUE,
 Symphalangus syndactylus,research_effort,Journal_search_article_count,articles,8,8,1,1,1,TRUE,Reader,primary,8,8,Symphalangus syndactylus,Symphalangus syndactylus,verbatim,FALSE
 Symphalangus syndactylus,locomotion,Locomotor_diversity_index,index,0.6390318596501769,0.639031859650177,1,1,1,TRUE,Granatosky,primary,0.639031859650177,0.639031859650177,Symphalangus syndactylus,Symphalangus syndactylus,verbatim,FALSE
 Symphalangus syndactylus,manipulation,Manipulation_complexity,score,3.08,3.08,1,1,1,TRUE,Heldstab,primary,3.08,3.08,Symphalangus syndactylus,Symphalangus syndactylus,verbatim,FALSE
+Symphalangus syndactylus,cognition,ShortTermMemory_prop_correct,proportion correct,0.62037,0.62037,1,1,1,TRUE,ManyPrimates_STM,primary,0.62037,0.62037,Symphalangus syndactylus,Symphalangus syndactylus,verbatim,FALSE
+Symphalangus syndactylus,cognition,ShortTermMemory_prop_correct_long,proportion correct,0.583333,0.583333,1,1,1,TRUE,ManyPrimates_STM,primary,0.583333,0.583333,Symphalangus syndactylus,Symphalangus syndactylus,verbatim,FALSE
+Symphalangus syndactylus,cognition,ShortTermMemory_prop_correct_medium,proportion correct,0.657407,0.657407,1,1,1,TRUE,ManyPrimates_STM,primary,0.657407,0.657407,Symphalangus syndactylus,Symphalangus syndactylus,verbatim,FALSE
+Symphalangus syndactylus,cognition,ShortTermMemory_prop_correct_short,proportion correct,0.62037,0.62037,1,1,1,TRUE,ManyPrimates_STM,primary,0.62037,0.62037,Symphalangus syndactylus,Symphalangus syndactylus,verbatim,FALSE
 Symphalangus syndactylus,behavioural_flexibility,Social_learning_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Symphalangus syndactylus,Symphalangus syndactylus,verbatim,FALSE
 Symphalangus syndactylus,manipulation,Tool_use,category,0,,2,2,1,TRUE,Heldstab; Baker,primary; secondary,,,Symphalangus syndactylus,Symphalangus syndactylus,verbatim,FALSE
 Symphalangus syndactylus,behavioural_flexibility,Tool_use_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Symphalangus syndactylus,Symphalangus syndactylus,verbatim,FALSE
@@ -4957,6 +5105,10 @@ Trachypithecus auratus,handedness,Handedness_strength_mean,abs(HI),0.984,0.984,1
 Trachypithecus auratus,behavioural_flexibility,Innovation_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Trachypithecus auratus,Trachypithecus auratus,verbatim,FALSE
 Trachypithecus auratus,behavioural_flexibility,Innovation_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Trachypithecus auratus,Trachypithecus auratus,verbatim,FALSE
 Trachypithecus auratus,research_effort,Journal_search_article_count,articles,1,1,1,1,1,TRUE,Reader,primary,1,1,Trachypithecus auratus,Trachypithecus auratus,verbatim,FALSE
+Trachypithecus auratus,cognition,ShortTermMemory_prop_correct,proportion correct,0.464286,0.464286,1,1,1,TRUE,ManyPrimates_STM,primary,0.464286,0.464286,Trachypithecus auratus,Trachypithecus auratus,verbatim,FALSE
+Trachypithecus auratus,cognition,ShortTermMemory_prop_correct_long,proportion correct,0.375,0.375,1,1,1,TRUE,ManyPrimates_STM,primary,0.375,0.375,Trachypithecus auratus,Trachypithecus auratus,verbatim,FALSE
+Trachypithecus auratus,cognition,ShortTermMemory_prop_correct_medium,proportion correct,0.333333,0.333333,1,1,1,TRUE,ManyPrimates_STM,primary,0.333333,0.333333,Trachypithecus auratus,Trachypithecus auratus,verbatim,FALSE
+Trachypithecus auratus,cognition,ShortTermMemory_prop_correct_short,proportion correct,0.700758,0.700758,1,1,1,TRUE,ManyPrimates_STM,primary,0.700758,0.700758,Trachypithecus auratus,Trachypithecus auratus,verbatim,FALSE
 Trachypithecus auratus,behavioural_flexibility,Social_learning_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Trachypithecus auratus,Trachypithecus auratus,verbatim,FALSE
 Trachypithecus auratus,manipulation,Tool_use,category,0,,1,1,0,FALSE,Baker,secondary,,,Trachypithecus auratus,Trachypithecus auratus,verbatim,FALSE
 Trachypithecus auratus,behavioural_flexibility,Tool_use_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Trachypithecus auratus,Trachypithecus auratus,verbatim,FALSE
@@ -5015,6 +5167,10 @@ Trachypithecus francoisi,behavioural_flexibility,Innovation_reduced_report_count
 Trachypithecus francoisi,behavioural_flexibility,Innovation_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Trachypithecus francoisi,Trachypithecus francoisi,verbatim,FALSE
 Trachypithecus francoisi,research_effort,Journal_search_article_count,articles,7,7,1,1,1,TRUE,Reader,primary,7,7,Trachypithecus francoisi,Trachypithecus francoisi,verbatim,FALSE
 Trachypithecus francoisi,locomotion,Locomotor_diversity_index,index,1.27772088326507,1.27772088326507,1,1,1,TRUE,Granatosky,primary,1.27772088326507,1.27772088326507,Trachypithecus francoisi,Trachypithecus francoisi,verbatim,FALSE
+Trachypithecus francoisi,cognition,ShortTermMemory_prop_correct,proportion correct,0.5011409999999999,0.501141,1,1,1,TRUE,ManyPrimates_STM,primary,0.501141,0.501141,Trachypithecus francoisi,Trachypithecus francoisi,verbatim,FALSE
+Trachypithecus francoisi,cognition,ShortTermMemory_prop_correct_long,proportion correct,0.423611,0.423611,1,1,1,TRUE,ManyPrimates_STM,primary,0.423611,0.423611,Trachypithecus francoisi,Trachypithecus francoisi,verbatim,FALSE
+Trachypithecus francoisi,cognition,ShortTermMemory_prop_correct_medium,proportion correct,0.413194,0.413194,1,1,1,TRUE,ManyPrimates_STM,primary,0.413194,0.413194,Trachypithecus francoisi,Trachypithecus francoisi,verbatim,FALSE
+Trachypithecus francoisi,cognition,ShortTermMemory_prop_correct_short,proportion correct,0.652778,0.652778,1,1,1,TRUE,ManyPrimates_STM,primary,0.652778,0.652778,Trachypithecus francoisi,Trachypithecus francoisi,verbatim,FALSE
 Trachypithecus francoisi,behavioural_flexibility,Social_learning_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Trachypithecus francoisi,Trachypithecus francoisi,verbatim,FALSE
 Trachypithecus francoisi,behavioural_flexibility,Tool_use_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Trachypithecus francoisi,Trachypithecus francoisi,verbatim,FALSE
 Trachypithecus francoisi,behavioural_flexibility,Tool_use_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Trachypithecus francoisi,Trachypithecus francoisi,verbatim,FALSE
@@ -5132,6 +5288,10 @@ Ursus maritimus,gait,Phase,percent,16,16,1,1,1,TRUE,Wimberly,primary,16,16,Ursus
 Ursus maritimus,locomotion,Top_speed,category,Medium,,1,1,1,TRUE,Medina,primary,,,Ursus maritimus,Ursus maritimus,verbatim,FALSE
 Varecia rubra,manipulation,Extractive_foraging,category,0,,1,1,1,TRUE,Heldstab,primary,,,Varecia rubra,Varecia rubra,verbatim,FALSE
 Varecia rubra,manipulation,Manipulation_complexity,score,1.33,1.33,1,1,1,TRUE,Heldstab,primary,1.33,1.33,Varecia rubra,Varecia rubra,verbatim,FALSE
+Varecia rubra,cognition,ShortTermMemory_prop_correct,proportion correct,0.405093,0.405093,1,1,1,TRUE,ManyPrimates_STM,primary,0.405093,0.405093,Varecia rubra,Varecia rubra,verbatim,FALSE
+Varecia rubra,cognition,ShortTermMemory_prop_correct_long,proportion correct,0.291667,0.291667,1,1,1,TRUE,ManyPrimates_STM,primary,0.291667,0.291667,Varecia rubra,Varecia rubra,verbatim,FALSE
+Varecia rubra,cognition,ShortTermMemory_prop_correct_medium,proportion correct,0.461806,0.461806,1,1,1,TRUE,ManyPrimates_STM,primary,0.461806,0.461806,Varecia rubra,Varecia rubra,verbatim,FALSE
+Varecia rubra,cognition,ShortTermMemory_prop_correct_short,proportion correct,0.482639,0.482639,1,1,1,TRUE,ManyPrimates_STM,primary,0.482639,0.482639,Varecia rubra,Varecia rubra,verbatim,FALSE
 Varecia rubra,manipulation,Tool_use,category,0,,1,1,1,TRUE,Heldstab,primary,,,Varecia rubra,Varecia rubra,verbatim,FALSE
 Varecia rubra,vocalization,VocalRepertoire,count,13,13,1,1,0,FALSE,ManyPrimates,secondary,13,13,Varecia rubra,Varecia rubra,verbatim,FALSE
 Varecia variegata,gait,Duty_Factor,percent,57.19757351,57.19757351,1,1,1,TRUE,Wimberly,primary,57.19757351,57.19757351,Varecia variegata,Varecia variegata,verbatim,FALSE
@@ -5143,6 +5303,10 @@ Varecia variegata,behavioural_flexibility,Innovation_reduced_report_count,report
 Varecia variegata,behavioural_flexibility,Innovation_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Varecia variegata,Varecia variegata,verbatim,FALSE
 Varecia variegata,research_effort,Journal_search_article_count,articles,13,13,1,1,1,TRUE,Reader,primary,13,13,Varecia variegata,Varecia variegata,verbatim,FALSE
 Varecia variegata,gait,Phase,percent,64.53997173,64.53997173,1,1,1,TRUE,Wimberly,primary,64.53997173,64.53997173,Varecia variegata,Varecia variegata,verbatim,FALSE
+Varecia variegata,cognition,ShortTermMemory_prop_correct,proportion correct,0.528836,0.528836,1,1,1,TRUE,ManyPrimates_STM,primary,0.528836,0.528836,Varecia variegata,Varecia variegata,verbatim,FALSE
+Varecia variegata,cognition,ShortTermMemory_prop_correct_long,proportion correct,0.455556,0.455556,1,1,1,TRUE,ManyPrimates_STM,primary,0.455556,0.455556,Varecia variegata,Varecia variegata,verbatim,FALSE
+Varecia variegata,cognition,ShortTermMemory_prop_correct_medium,proportion correct,0.505556,0.505556,1,1,1,TRUE,ManyPrimates_STM,primary,0.505556,0.505556,Varecia variegata,Varecia variegata,verbatim,FALSE
+Varecia variegata,cognition,ShortTermMemory_prop_correct_short,proportion correct,0.6,0.6,1,1,1,TRUE,ManyPrimates_STM,primary,0.6,0.6,Varecia variegata,Varecia variegata,verbatim,FALSE
 Varecia variegata,behavioural_flexibility,Social_learning_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Varecia variegata,Varecia variegata,verbatim,FALSE
 Varecia variegata,manipulation,Tool_use,category,0,,1,1,0,FALSE,Baker,secondary,,,Varecia variegata,Varecia variegata,verbatim,FALSE
 Varecia variegata,behavioural_flexibility,Tool_use_reduced_report_count,reports,0,0,1,1,1,TRUE,Reader,primary,0,0,Varecia variegata,Varecia variegata,verbatim,FALSE

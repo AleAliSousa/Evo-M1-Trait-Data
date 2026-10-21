@@ -1,2 +1,5 @@
 Original_Term,Reference,Standardized_Term
 Species,Catania_etal_1999_Table1,Species
+case_id,Catania_etal_1999_Table1,specimen
+area_mm2,Catania_etal_1999_Table1,<structure>_Surface_Area.mm2 (total neocortex -> CorticalSurface_Area.mm2; V1; A1; S1+S2 -> SomatosensoryS1S2)
+pct_neocortex,Catania_etal_1999_Table1,<structure>_Surface_Area.pct_Neocortex

@@ -58,7 +58,7 @@ Mota-lineage supersede misses and one animal splits into two Species rows.
 | `Mota_etal_2019_SupplementaryTableS1` | | | | ✓ total + exposed surface + thickness⁷ | primary⁷ |
 | `Smaers_etal_2017_TableS1part2` | | | | ✓ **regional** V1/prefrontal/other-assoc/frontal-motor (10 primates) | **secondary**⁸ |
 | `Brodmann__1913_Table1` | | | | ✓ whole-cortex, one hemisphere, **34 taxa across mammal orders** | primary⁹ |
-| `Campos_Welker_1976_Table1` | | | | ✓ total + fissure subset/% + thickness, right hemisphere | primary |
+| `Campos_Welker_1976_Table1` | | | | ✓ total + fissure subset/% + thickness, hemisphere count unclear and flagged | primary |
 | `Huffman_etal_1999_TABLE2` | | | | ✓ **regional S1**, case means within species | primary |
 | `VanEssen_Drury_1997_Table1` | | | | ✓ human total neocortex + estimated visual cortex, L/R mean | primary / primary synthesis |
 | `Krubitzer_Kaas_1990_Table1` | | reference² | | | not merged |
@@ -145,29 +145,31 @@ Mota-lineage supersede misses and one animal splits into two Species rows.
   two would be meaningless. So it is **documented here but not merged numerically**; only its Species
   rows are kept in the term map.
 
-**2026-10-19 additions.** Campos & Welker contributes the printed total cortical surface,
-fissure-surface subset and percentage, and thickness for one right hemisphere from each species;
-its neocortical volume and neuron counts remain available in the source item for the volume and
-cell-count merges. Huffman contributes the Table 2 `Entire contralateral body` row as total mapped
+**2026-10-19 additions; source QC updated 2026-10-20.** Campos & Welker contributes the printed
+total cortical surface, fissure-surface subset and percentage, and thickness for one specimen from
+each species. Table 1 does not clearly establish laterality or hemisphere count; area multiplied by
+thickness reproduces volume, and no shrinkage correction is stated. These concerns now propagate to
+the merged long table. Its neocortical volume and neuron counts remain available in the source item
+for the volume and cell-count merges. Huffman contributes the Table 2 `Entire contralateral body` row as total mapped
 S1; its two quoll cases are averaged within source, while the striped possum has one case. Van Essen
 & Drury contributes the primary Visible-Man total and the authors' visual-cortex estimate, averaging
 left and right hemispheres after cm²→mm² conversion. Its quoted human V1 and macaque values are
 tagged secondary and are not pooled without a primary-source/overlap audit.
 
-## Registration and integration queue (2026-10-19)
+## Source integration queue (updated 2026-10-20)
 
-Eight newly built source loci have owner-paste registry workbooks in their paper folders. Until
-those rows are pasted into `__ReadMe.xlsx`, their builders deliberately skip public TSV creation and
-the compiler must not call `enc()` for them. The prepared term maps therefore carry `Species` only;
-the structure-dependent measurements require bespoke merge blocks after registration.
+The registry rows are present and the public TSVs for these items now exist. Remaining work is a
+scientific integration decision, not registration. Percentage-only, group-level, secondary, and
+source-conflicted values stay outside the numerical merge until their denominator and sampling
+rules are explicit.
 
 | Item | Intended downstream disposition |
 |---|---|
-| `Catania_etal_1999_Table1` | queue total neocortex plus mapped S1/S2, A1, V1 after registry/public-export creation |
+| `Catania_etal_1999_Table1` | queue total neocortex plus mapped S1/S2, A1, V1 with case 2A arithmetic and fixation/shrinkage flags |
 | `Catania_Remple_2002_Table1` | queue individual total neocortex and S1; keep the approximate rat 21% comparator as relative provenance |
-| `Felleman_VanEssen_1991_Table2` | hold as secondary synthesis unless an explicit Tier-2 ingestion decision is made |
-| `Seelke_etal_2016_Table2` | hold as percentage-only experimental-group data; no absolute surface is available |
-| `Sarko_etal_2011_ResultsText` | queue age-group total neocortex, V1, and PMBSF with explicit group-mean handling |
+| `Felleman_VanEssen_1991_Table2` | hold as secondary synthesis; total and regional text/table conflicts require an explicit Tier-2 decision |
+| `Seelke_etal_2016_Table2` | hold as percentage-only experimental-group data; OTA duplication, negative remainder, and sex-specific dose are flagged |
+| `Sarko_etal_2011_ResultsText` | queue age-group values only with unresolved SD/SEM and juvenile PMBSF percentage mismatch retained |
 | `Preuss_Kaas_1996_ResultsText` | queue the one-hemisphere V1 area; blob widths/lengths remain linear traits only |
 | `Krubitzer_etal_1997_ResultsText` | queue approximate total-neocortex and PV/S2 areas; retain S1/auditory dimensions as linear traits |
 | `Campos_Welker_1976_ResultsText` | keep the approximate 80%-of-S1 head representation as relative provenance |
@@ -194,7 +196,7 @@ Macaque (08-59) had no surface measured. The two galagos are one species (*Otole
 These are recorded here so a future curator can add regional-surface sub-traits deliberately.
 
 ## Outputs
-- `cortical_areas_long.csv` — one row per (Species × Standardized_Term × source): every contributed value.
+- `cortical_areas_long.csv` — one row per (Species × Standardized_Term × source): every contributed value, with `source_flags` and `source_issue_note` where the source item supplies them.
 - `cortical_areas_wide.csv` — species × trait summary: mean across independent sources, `n_sources`,
   `sources`, and a `conflict_flag` where sources disagree strongly (CV > 0.15).
 - `standardized_term_cortical_areas.csv` — all per-reference term maps stacked.
@@ -275,8 +277,106 @@ TSV keeps the printed numbers. Same repair policy as the Sherwood 2004 en-dash a
 - **Otolemur garnettii** — two Collins hemispheres (2,261 + 1,849) averaged to one per-species value.
 - Species means therefore mix individuals across studies; `_long` keeps every raw value for auditing.
 
+## Source-quality flags for regional surface-area papers
+
+`cortical_area_source_quality_flags.csv` is the machine-readable catalog for source discrepancies,
+method ambiguities, provisional taxonomic assignments, and cross-study comparability problems found
+while building the regional surface-area papers. The corresponding source tables carry
+`source_flags` and `source_issue_note` wherever the issue can be assigned to particular rows. Printed
+measurements remain unchanged; alternative text values and recomputed checks are stored separately.
+
+The main cross-study blockers are incompatible denominators (neocortex with or without cingulate or
+limbic cortex, cortical sheet, or total cortex), inconsistent or unstated shrinkage handling, and
+very small samples. In particular, the two macaque reconstructions should not be pooled: Felleman &
+Van Essen report approximately 99.4-99.7 cm² and V2 at 12.2%, whereas Van Essen & Drury report 72 cm²
+and V2 at approximately 9%.
+
+Useful analyses once those issues are handled include V1 percentage versus total neocortex size,
+cross-species total neocortex size with body or brain mass covariates, S1 body-part magnification,
+and per-case primate V2/V1 and MT/V1 ratios. The local sibling project contains editable source
+tracings at `../Flatmap_SurfaceArea_Project/flatmap_measurements`; figure-derived measurements can be
+joined to these tables at the case/species level after denominator and preparation checks.
+
+Several values in the inspected papers are second-hand citations. Primary originals worth obtaining
+before treating those values as verified are Naumann 2012, Campi 2007/2011, Remple 2003, Frahm 1998,
+and Tootell 1985. The macaque species in Felleman & Van Essen and the galago binomial in Krubitzer &
+Kaas remain unresolved where the inspected PDFs do not provide a species-level identification.
+
 ## Adding a paper
 1. Build the paper (printed name + trait columns in its public TSV).
 2. Add `standardized_term_by_reference/<Item name>_standardized_terms.csv`.
 3. Add the Item name to the `item_name` vector in `cortical_areas_compiled.R`.
 4. Re-run `standardized_term.R`, then `cortical_areas_compiled.R`.
+
+## Relative and absolute surface areas (added 2026-10-21)
+
+Many surface-area sources print **percentages** (region ÷ some cortical denominator) rather than mm².
+Both kinds now live in this merge, side by side, with a strict rule about when one becomes the other.
+
+**Terms.** A relative value is its own standardized term, `<Region>_Surface_Area.pct_<Denominator>`
+(e.g. `V1_Surface_Area.pct_Neocortex`, `MT_Surface_Area.pct_VisualCortex`), `trait_class =
+regional_relative`. Every such row carries `denominator_term` (the absolute term it is a fraction of,
+e.g. `CorticalSurface_Area.mm2`) and `denominator_definition` in the **source's own words** — total
+neocortex (Krubitzer & Kaas 1990, Catania 1999/2002, Sarko 2011), adjusted cortical sheet with
+cingulate subtracted (Seelke 2016), cortical mantle = isocortex + proisocortex (Preuss & Kaas 1996),
+composite-hemisphere neocortex or visual cortex (Felleman & Van Essen 1991). These denominators are
+not interchangeable; the column exists so nobody has to remember that.
+
+**New `_long` columns.** `specimen` (source case id; `group:<label>` for group means), `grain`
+(`individual` / `species_mean` / `group_mean` / `composite` / `not_recorded` for pre-2026-10 blocks),
+`n`, `value_status` (`as_reported` / `approximate`), `value_basis` (`printed` /
+`derived_same_specimen` / `derived_inverse_from_pct`), `derivation` (the arithmetic, re-evaluable),
+`denominator_*`. Specimen ids were also back-filled for Turner 2016 (case) and Collins 2016
+(`KAAS-PAN-11_38`).
+
+**Conversion rule (owner decision).** `relative_absolute_helpers.R::convert_relative_same_specimen()`
+converts a percentage to mm² **only when the denominator was measured on the same specimen** — same
+source and specimen id, or a pair marked `confirmed` in `specimen_links.csv`. That is exact arithmetic
+(pct × denominator / 100), recorded in `derivation`; the row gets `value_basis = derived_same_specimen`
+and pools with printed absolutes in `_wide`. `cortical_areas_wide_composition.csv` records per cell
+`n_printed`, `n_derived_same_specimen`, `n_approximate`, `n_individual_grain`, `cv`, `conflict_flag`,
+so a reader of `_wide` can always tell a measurement from a mix.
+
+Where a source prints **both** the absolute and the percentage for one specimen, the printed absolute
+is kept and the percentage is re-derived as a check (`cortical_areas_conversion_checks.csv`; 32 checks
+this build: 30 consistent within 5%, 1 rounding-level — FVE MT 0.6% —, 1 arithmetic mismatch — Sarko
+juvenile PMBSF, already flagged by the source item). Where only a region's absolute and its percentage
+are printed, the denominator is derived by **inversion** (Preuss & Kaas 1996: 66 mm² / 12% → 550 mm²
+cortical mantle) with `status = derived_inverse_held` — visible in `_long`, out of `_wide`, because
+printed percentages are rounded.
+
+**Everything else is deferred, deliberately.** `cortical_areas_relative_unconverted.csv` lists every
+relative row that cannot be converted inside the merge and why: 160 Krubitzer & Kaas 1990 per-case
+percentages (no neocortex area for those cases in any admitted source), the species-level Catania &
+Remple S1 ≈ 31%, and the held Seelke / rat-comparator rows. Conversions that need a **species-mean or
+cross-source denominator** are assumption-bearing and happen outside this repo, in
+`../Flatmap_SurfaceArea_Project/surface_area_analysis/preanalysis/` (see its README). The natural
+same-specimen denominator for the Krubitzer & Kaas cases is the flatmap-measured neocortex outline of
+the *same animal*; that link runs through `specimen_links.csv` once the Table 1 case numbers are
+matched to the figure case codes — until then it is a candidate row, not used.
+
+**Sources wired in this step** (statuses in `_long`): Krubitzer_Kaas_1990_Table1 (active, relative
+only — the former "not merged numerically" note in footnote ² now applies to the *field count* only);
+Catania_etal_1999_Table1 (active; V1, A1, S1+S2 block `SomatosensoryS1S2_Surface_Area.mm2`, total
+neocortex, with %); Catania_Remple_2002_Table1 (active individual total neocortex and S1; rat 21%
+`held_secondary_comparator`); Sarko_etal_2011_ResultsText (adult group means active, juvenile
+`held_juvenile_group`; its `recomputed_pct_neocortex` column is wrong for adults and is not used);
+Preuss_Kaas_1996_ResultsText (V1 active; % approximate); Krubitzer_etal_1997_ResultsText (total
+neocortex ≈ 15 mm², `value_status = approximate`; PV/S2 not wired — combined label);
+Seelke_etal_2016_Table2 (`held_group_level_pct_only`); Felleman_VanEssen_1991_Table2
+(`held_secondary_synthesis`). New regional absolute terms: A1, S2 (slot), MT, DL, DM, DI, FST, MST,
+SomatosensoryS1S2 (≠ S1), S1_PMBSF (⊂ S1) — never pooled with S1 or with whole cortex. Public TSVs
+for Catania & Remple 2002, Preuss & Kaas 1996 and Krubitzer 1997 were built from their own scripts on
+2026-10-21 (they had registry rows but no TSV).
+
+Term-map files for these bespoke blocks document the column routing; entries containing `|` or
+`<structure>` are routing notes for the reader, not machine-read by the generic loop.
+The pre-change script is kept as `_cortical_areas_compiled_before_relative_2026-10-21.R.bak`.
+
+### Outputs added
+- `cortical_areas_wide_composition.csv` — per (Species × term) cell: mean, n, printed vs derived vs approximate counts, CV, conflict flag.
+- `cortical_areas_conversion_checks.csv` — printed % vs % recomputed from printed absolutes.
+- `cortical_areas_relative_unconverted.csv` — relative rows awaiting an external denominator, with reason.
+- `specimen_links.csv` — cross-source same-specimen crosswalk (only `confirmed` rows are used).
+
+The Kaskan `M1 surface.xlsx` workbook is a guide to source papers and passages, not a numeric source for this database. Three source loci were built and registered on 2026-10-20 and corrected on 2026-10-21 to use PDF text transcriptions only: `Mayer_etal_2019_Fig6` (three explicitly printed **M1 hand-representation** areas; case 15-02 excluded), `VanEssen_Drury_1997_CitedV1Ranges` (two **secondary** historical ranges printed in Van Essen & Drury's PDF; workbook midpoints excluded), and `Young_etal_2013_ResultsTextSurface` (eight primary whole-cortex values in Results text, with case overlap to audit). None is wired into this merge. The Mayer hand area needs its own regional term; the historical ranges are provenance only; the Young cases require overlap resolution before pooling. Older items that appear in the workbook predate this import and retain their own source documentation.

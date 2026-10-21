@@ -1,2 +1,5 @@
 Original_Term,Reference,Standardized_Term
 Species,Felleman_VanEssen_1991_Table2,Species
+area_mm2,Felleman_VanEssen_1991_Table2,V1|V2|MT|VisualCortex|CorticalSurface _Surface_Area.mm2; HELD secondary
+pct_neocortex,Felleman_VanEssen_1991_Table2,<structure>_Surface_Area.pct_Neocortex; HELD
+pct_visual_cortex,Felleman_VanEssen_1991_Table2,<structure>_Surface_Area.pct_VisualCortex; HELD

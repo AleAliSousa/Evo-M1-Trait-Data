@@ -41,7 +41,7 @@ spkey <- function(d) { sci <- if ("species_sci" %in% names(d)) d[["species_sci"]
   clean_sp(ifelse(!is.na(sci) & nzchar(trimws(sci)) & tolower(trimws(sci)) != "none", sci, spp)) }
 istxt <- function(x) !(is.na(x) | trimws(x) == "" | tolower(trimws(x)) %in% c("na","nan","none","-"))
 
-TEAM <- c(schniter="Schniter", manyprimates="ManyPrimates", heffner="Heffner", iwaniuk="Iwaniuk",
+TEAM <- c(schniter="Schniter", manyprimates="ManyPrimates", manyprimates_stm="ManyPrimates_STM", heffner="Heffner", iwaniuk="Iwaniuk",
           wimberly="Wimberly", granatosky="Granatosky", caspar="Caspar", heldstab="Heldstab",
           baker="Baker", reader="Reader", cst="Bortoff_Strick", medina="Medina")
 CATEG <- c("Gait","Foot_Posture","Arboreal_terrestrial","Tool_use","Extractive_foraging",
@@ -62,6 +62,10 @@ grab <- function(file, col, measure, srckey) {
 obs <- bind_rows(
   grab("vocal_repertoire_schniter.xlsx","vocal_repertoire_size_updated","VocalRepertoire","schniter"),
   grab("vocal_repertoire_manyprimates.xlsx","vocal_repertoire_types","VocalRepertoire","manyprimates"),
+  grab("stm_manyprimates.xlsx","stm_prop_correct","ShortTermMemory_prop_correct","manyprimates_stm"),
+  grab("stm_manyprimates.xlsx","stm_prop_correct_short","ShortTermMemory_prop_correct_short","manyprimates_stm"),
+  grab("stm_manyprimates.xlsx","stm_prop_correct_medium","ShortTermMemory_prop_correct_medium","manyprimates_stm"),
+  grab("stm_manyprimates.xlsx","stm_prop_correct_long","ShortTermMemory_prop_correct_long","manyprimates_stm"),
   grab("dexterity_heffner.xlsx","Dexterity","Dexterity","heffner"),
   grab("dexterity_iwaniuk.xlsx","Dexterity","Dexterity","iwaniuk"),
   grab("gait.xlsx","Duty_Factor","Duty_Factor","wimberly"),
@@ -119,6 +123,10 @@ obs <- obs |> distinct(Species, Measure, src, .keep_all = TRUE)
 ## measure metadata: class, units, and priority-ordered (source, role)
 META <- tribble(~Measure,~mclass,~Units,~prio,
  "VocalRepertoire","vocalization","count",list(c("schniter","primary"),c("manyprimates","secondary")),
+ "ShortTermMemory_prop_correct","cognition","proportion correct",list(c("manyprimates_stm","primary")),
+ "ShortTermMemory_prop_correct_short","cognition","proportion correct",list(c("manyprimates_stm","primary")),
+ "ShortTermMemory_prop_correct_medium","cognition","proportion correct",list(c("manyprimates_stm","primary")),
+ "ShortTermMemory_prop_correct_long","cognition","proportion correct",list(c("manyprimates_stm","primary")),
  "Dexterity","dexterity","1-7 scale",list(c("heffner","primary"),c("iwaniuk","secondary")),
  "Duty_Factor","gait","percent",list(c("wimberly","primary")),
  "Phase","gait","percent",list(c("wimberly","primary")),
@@ -170,7 +178,8 @@ obs$Team <- TEAM[obs$src]
 ## resolver adds the identity anchor + basis from the printed name (per observation, then per Species). Trait tables are keyed by source
 ## key, so the paper scope is the folder where one key maps to one repo paper (else variant/hub only).
 source(file.path(base, "_keys", "resolve_species.R"))
-SRC_FOLDER <- c(manyprimates = "ManyPrimates__2022", granatosky = "Granatosky__2018", caspar = "Caspar_etal_2022",
+SRC_FOLDER <- c(manyprimates = "ManyPrimates__2022", manyprimates_stm = "ManyPrimates__2022",
+                granatosky = "Granatosky__2018", caspar = "Caspar_etal_2022",
                 heldstab = "Heldstab_etal_2016", baker = "Baker_etal_2025",
                 cst = "Bortoff_Strick_1993", medina = "MedinaGonzález__2026", wimberly = "Wimberly_etal_2021",
                 schniter = "Schniter_PenaherreraAguirre_2026")

@@ -1233,6 +1233,16 @@ reg_fit <- function(w, y, x, covs, logscale, method) {
     s <- summary(full); r2 <- s$r.squared; adj_r2 <- s$adj.r.squared
     sse_f <- sum(stats::resid(full)^2); sse_r <- sum(stats::resid(red)^2)
     partial_r2 <- (sse_r - sse_f) / sse_r
+  } else {
+    # PGLS has no residual-sum-of-squares R2. Use the likelihood R2 of Ives
+    # (2019, Syst Biol 68:234), R2_lik = 1 - exp(-2/n * (logLik full - logLik
+    # reduced)): it equals the ordinary R2 for OLS, and is computed against an
+    # intercept-only model (model R2) and the covariates-only model (partial R2
+    # of X), each with its own lambda.
+    r2_lik <- function(ll_big, ll_small) 1 - exp(-2 / nrow(d) * (ll_big - ll_small))
+    null <- if (length(covs)) fit_one(y ~ 1) else red
+    if (!is.null(null)) r2 <- r2_lik(ll_f, as.numeric(stats::logLik(null)))
+    partial_r2 <- r2_lik(ll_f, ll_r)
   }
 
   # Added-variable (partial regression) coordinates: Y and X each with the
@@ -2012,7 +2022,9 @@ server <- function(input, output, session) {
             if (length(f$covs)) paste0(", holding ", paste(f$covs, collapse = " and "), " fixed")
             else " (no covariates)",
             if (f$method == "OLS") sprintf(". R² = %.3f (adjusted %.3f); partial R² of X = %.3f.",
-                                           f$r2, f$adj_r2, f$partial_r2) else ".")),
+                                           f$r2, f$adj_r2, f$partial_r2)
+            else sprintf(". R²_lik = %.3f; partial R²_lik of X = %.3f (likelihood R², Ives 2019).",
+                         f$r2, f$partial_r2))),
         if (length(brain_cov)) tags$div(class = "small text-muted",
           "Brain-size basis: ", paste(vapply(brain_cov, function(b) {
             g <- look(lab_pool, b); if (g %in% names(POOL_LABEL)) POOL_LABEL[[g]] else g
@@ -2068,10 +2080,18 @@ server <- function(input, output, session) {
     lab <- a[a$Species %in% input$r_label, , drop = FALSE]
     if (nrow(lab))
       g <- g + geom_text(data = lab, aes(label = Species), size = 3.6,
-                         vjust = -0.8, check_overlap = TRUE)
+                         vjust = -0.8, check_overlap = TRUE) +
+        coord_cartesian(clip = "off")             # keep edge labels whole
     g + labs(x = xl, y = yl,
-             subtitle = sprintf("%d species; slope = %.3g, p = %.3g%s", f$n, f$slope, f$p,
-                                if (has_c) paste0(", controlling for ",
+             title = sprintf("slope = %.3g,  p = %.3g,  %s = %.3f%s", f$slope, f$p,
+                             if (f$method == "OLS") "R²" else "R²_lik", f$r2,
+                             if (has_c) sprintf(",  partial %s of X = %.3f",
+                                                if (f$method == "OLS") "R²" else "R²_lik",
+                                                f$partial_r2) else ""),
+             subtitle = sprintf("%d species, %s%s", f$n,
+                                switch(f$method, OLS = "OLS", Pagel = sprintf("PGLS (λ = %.2f)", f$lambda),
+                                       Brownian = "PGLS (Brownian)"),
+                                if (has_c) paste0("; controlling for ",
                                                   paste(f$covs, collapse = " + ")) else "")) +
       theme_minimal(base_size = 14)
   })

@@ -1,0 +1,11 @@
+column,description,units,value_coding,data_role,source_location,notes
+from_area,Source visual cortical area of the reported pathway.,,"macaque visual-area abbreviations (32 areas, matching Table 3's column set plus row-only PIT/CIT/STP groups)",primary,Felleman_VanEssen_1991_Table5,
+to_area,Target visual cortical area of the reported pathway.,,macaque visual-area abbreviations,primary,Felleman_VanEssen_1991_Table5,
+Origin_out,Laminar origin of the pathway as reported by studies of the SOURCE area's efferents ('Outputs' side of the table).,,"S=supragranular, B=bilaminar, I=infragranular, S/B or I/B=reported as either, NA=not reported",primary,Felleman_VanEssen_1991_Table5 caption,
+Term_out,"Laminar pattern of termination, Outputs side.",,"F=layer-4 predominant, C=columnar, M=multilayer avoiding layer 4, combinations (e.g. F/C) and NA as above",primary,Felleman_VanEssen_1991_Table5 caption,
+Dir_out,"Inferred pathway direction, Outputs side.",,"A=ascending, L=lateral, D=descending, 'u'=pathway demonstrated but laminar features (hence direction) unknown, '?' suffix=uncertain, NA=not reported",primary,Felleman_VanEssen_1991_Table5 caption,
+Origin_in,Laminar origin as reported by studies of the TARGET area's afferents ('Inputs' side).,,same coding as Origin_out,primary,Felleman_VanEssen_1991_Table5 caption,
+Term_in,"Laminar pattern of termination, Inputs side.",,same coding as Term_out,primary,Felleman_VanEssen_1991_Table5 caption,
+Dir_in,"Inferred pathway direction, Inputs side.",,same coding as Dir_out,primary,Felleman_VanEssen_1991_Table5 caption,
+HierRel,"Hierarchical relationship assigned to the (from_area,to_area) pair.",,A-D=ascending-descending pair consistent with a hierarchy (laminar patterns in both directions agree); NR/NR?=non-reciprocal (or uncertain-non-reciprocal) pathway; NC/NC?=not classifiable (or uncertain) given conflicting laminar evidence,primary,Felleman_VanEssen_1991_Table5 caption,
+Levels,"Number of hierarchical levels this pathway traverses in the paper's Figure 4 hierarchy diagram, when the pair's hierarchical relationship is known.",integer levels,"integer, NA if not assigned",primary,Felleman_VanEssen_1991_Table5 caption,

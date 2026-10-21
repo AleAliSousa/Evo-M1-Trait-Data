@@ -1,0 +1,9 @@
+column,definition
+Species,Taxon wording in the article; the paper gives Sapajus spp. without identifying each case to species
+case_number,Individual animal code printed in the article
+hemisphere,Left hemisphere mapped by ICMS in each case
+hand_representation_area_mm2,Total cortical area within M1 from which digit movements were evoked; square millimetres; not whole M1
+source_locus,Results section that prints these areas
+pdf_page,One-based page number in the stored article PDF
+source,Database item identifier
+note,Case-specific qualification from the PDF transcription

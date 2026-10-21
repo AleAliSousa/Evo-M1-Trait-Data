@@ -156,6 +156,8 @@ tagged secondary and are not pooled without a primary-source/overlap audit.
 
 ## Registration and integration queue (2026-10-19)
 
+The Kaskan `M1 surface.xlsx` workbook is a guide to source papers and passages, not a numeric source for this database. Three source loci were built and registered on 2026-10-20 and corrected on 2026-10-21 to use PDF text transcriptions only: `Mayer_etal_2019_Fig6` (three explicitly printed **M1 hand-representation** areas; case 15-02 excluded), `VanEssen_Drury_1997_CitedV1Ranges` (two **secondary** historical ranges printed in Van Essen & Drury's PDF; workbook midpoints excluded), and `Young_etal_2013_ResultsTextSurface` (eight primary whole-cortex values in Results text, with case overlap to audit). None is wired into this merge. The Mayer hand area needs its own regional term; the historical ranges are provenance only; the Young cases require overlap resolution before pooling. Older items that appear in the workbook predate this import and retain their own source documentation.
+
 Eight newly built source loci have owner-paste registry workbooks in their paper folders. Until
 those rows are pasted into `__ReadMe.xlsx`, their builders deliberately skip public TSV creation and
 the compiler must not call `enc()` for them. The prepared term maps therefore carry `Species` only;

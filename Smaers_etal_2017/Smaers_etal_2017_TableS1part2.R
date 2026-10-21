@@ -10,8 +10,8 @@
 # Provenance: surface areas are taken from Brodmann (1909) [S3]; only 9 of the 10 species
 # carry the full set (Saimiri sciureus has primary visual only).  Units mm2 (as printed).
 #
-# Output comes from the snapshot only.
-# Input  : Smaers_etal_2017_TableS1part2_snapshot.xlsx   sheet: surface_area
+# Input is a direct transcription of the printed mmc1.pdf, PDF page 4.
+# Input  : Smaers_etal_2017_TableS1part2_pdf_transcription.csv
 # Outputs: Smaers_etal_2017_TableS1part2.csv             one row per species (10)
 #          <DOI>_TableS1_part2_surfacearea.tsv in __Public/comparative-data/
 
@@ -40,18 +40,15 @@ suppressPackageStartupMessages({
 })
 ## Set working directory to this script folder
 setwd(folder)
-snapshot_file  <- "Smaers_etal_2017_TableS1part2_snapshot.xlsx"
-snapshot_sheet <- "surface_area"
+snapshot_file  <- "Smaers_etal_2017_TableS1part2_pdf_transcription.csv"
 output_file    <- "Smaers_etal_2017_TableS1part2.csv"
-header_rows    <- 3L
 
 pos <- c("species_disp",
          "primary_visual_surface","prefrontal_surface","other_association_surface","frontal_motor_surface")
 num <- function(x) parse_number(as.character(x), na = c("", "-", "NA", "n.a.", "__"))
 
-raw <- read_excel(snapshot_file, sheet = snapshot_sheet, col_names = FALSE, col_types = "text")
-dat <- raw %>% slice(-(seq_len(header_rows)))
-names(dat)[seq_along(pos)] <- pos
+dat <- read.csv(snapshot_file, colClasses = "character", na.strings = c("", "NA"))
+stopifnot(nrow(dat) == 10L, identical(names(dat), pos))
 
 final.dataframe <- dat %>%
   filter(!is.na(species_disp), species_disp != "") %>%

@@ -17,8 +17,9 @@ This is **part 2 of 2** of supplemental **Table S1** — the **"Brodmann data" s
 
 | Path | Role |
 |---|---|
-| `Smaers_etal_2017_TableS1part2_snapshot.xlsx` | **Snapshot** (sheet `surface_area`): Table S1's Brodmann block journal-style (caption; "Surface area" tier-1 span; the 4 region sub-headers; 10 species). Values from `Smaers_mmc1.xlsx`. |
-| `Smaers_etal_2017_TableS1part2.R` | Reformat → `Smaers_etal_2017_TableS1part2.csv` (+ DOI-named TSV). Reads only the snapshot. |
+| `Smaers_etal_2017_TableS1part2_pdf_transcription.csv` | Direct transcription of the Brodmann surface-area block in `mmc1.pdf`, PDF page 4. All 37 populated values were checked against that page. |
+| `Smaers_etal_2017_TableS1part2_snapshot.xlsx` | Older publisher-spreadsheet snapshot, retained for history; not a build input. |
+| `Smaers_etal_2017_TableS1part2.R` | Reformat → `Smaers_etal_2017_TableS1part2.csv` (+ DOI-named TSV). Reads only the PDF transcription. |
 | `reference_tables/Smaers_etal_2017_TableS1part2_definitions.csv` | Data dictionary (10-col schema; `Measure = surface area`). |
 | `comparison/Brodmann_surface_1909.csv` | Independent formatted surface-area table (from `cortical surfaces Brodmann 1909 in Smears et al 2017.xlsx`), audited only. |
 | `comparison/Smaers_etal_2017_TableS1part2_compare_to_Brodmann_csv.R` | QA: snapshot vs `Brodmann_surface_1909.csv`. |
@@ -32,7 +33,7 @@ sciureus* has primary visual only (printed blank elsewhere — kept blank).
 
 ## Reformat → CSV
 
-The R reads past the 3 header rows, names the 5 columns by position, drops empty rows, underscores
+The R reads the PDF transcription, underscores
 the species name, adds `source = "Smaers_etal_2017"`, and writes the CSV plus a DOI-named TSV. (R is
 not in the build sandbox; the committed CSV/TSV were produced by a Python mirror of this exact logic
 and will be regenerated when you run the R.)
@@ -42,7 +43,7 @@ frontal_motor_surface, source`.
 
 ## Checking → `comparison/`
 
-Snapshot (built from `Smaers_mmc1.xlsx`) matched by species to `Brodmann_surface_1909.csv` (built
+The earlier snapshot (built from `Smaers_mmc1.xlsx`) matched by species to `Brodmann_surface_1909.csv` (built
 from the *independent* publisher file `cortical surfaces Brodmann 1909 in Smears et al 2017.xlsx`).
 A clean match across the two independent digitisations confirms the transcription. **Verified: 10
 matched, 0 value mismatches, no snapshot-only / csv-only species.**

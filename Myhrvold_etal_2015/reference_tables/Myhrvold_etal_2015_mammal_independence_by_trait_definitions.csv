@@ -1,0 +1,10 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+trait,Mammalia trait (Supplemental Table 9 field),,,,info,Mammalia,Myhrvold_etal_2015_mammal_independence_by_trait,,
+n_cells_with_value,Mammalia cells with a non -999 value for the trait,,,,info,Mammalia,Myhrvold_etal_2015_mammal_independence_by_trait,,
+n_fully_circular,"cells whose EVERY contributing reference (all roles) is PanTHERIA (Jones, K., Bielby, J., Cardillo, M. et al., 2009)",,,,info,Mammalia,Myhrvold_etal_2015_mammal_independence_by_trait,,
+n_partly_circular,cells with at least one PanTHERIA reference and at least one other reference,,,,info,Mammalia,Myhrvold_etal_2015_mammal_independence_by_trait,,
+n_fully_independent,cells with no PanTHERIA reference in any role,,,,info,Mammalia,Myhrvold_etal_2015_mammal_independence_by_trait,,
+n_fully_circular_incl_jones2003 / n_partly_circular_incl_jones2003 / n_fully_independent_incl_jones2003,"the same three counts when 'Jones et al., 2003' (Jones, Dickman & Archer 2003, carnivorous marsupials -- not K.E. Jones 2003) is ALSO treated as circular, as the original task specification asked; provided for comparison only",,,,info,Mammalia,Myhrvold_etal_2015_mammal_independence_by_trait,,
+n_cells_any_pantheria,cells with >= 1 PanTHERIA reference row,,,,info,Mammalia,Myhrvold_etal_2015_mammal_independence_by_trait,,
+n_cells_any_jones2003,cells with >= 1 Jones et al. 2003 reference row,,,,info,Mammalia,Myhrvold_etal_2015_mammal_independence_by_trait,,
+pct_fully_independent,"100 * n_fully_independent / n_cells_with_value, 1 dp",,,,info,Mammalia,Myhrvold_etal_2015_mammal_independence_by_trait,,

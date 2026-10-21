@@ -3,7 +3,7 @@
 ## "Surface areas of cortical fields as a percentage of the total surface of neocortex" for eight
 ## visual fields (17, 18, DL, DM, DI, FST, MT, MST) + Total, per case, in FOUR primate species:
 ##   squirrel monkey (Saimiri sciureus), owl monkey (Aotus trivirgatus), marmoset (Callithrix jacchus),
-##   galago (Galago senegalensis). Species from Methods (p.166). Values are PROPORTIONS of neocortex,
+##   galago (normalized provisionally to Galago senegalensis). Values are PROPORTIONS of neocortex,
 ##   NOT absolute areas (absolute field areas are only given as text ranges, not tabulated).
 ## Snapshot frozen from the printed table; all cleaning happens here (golden rule).
 
@@ -42,6 +42,7 @@ sp_map <- c("Squirrel monkey" = "Saimiri sciureus",
 
 clean <- data.frame(
   Species        = unname(sp_map[d[["Species group"]]]),
+  species_as_published = d[["Species group"]],
   common_name    = tolower(d[["Species group"]]),
   case_number    = as.integer(d[["Case number"]]),
   pct_17         = as.numeric(d[["17"]]),   # area 17 (V-I)  as % of total neocortex surface
@@ -58,11 +59,19 @@ clean <- data.frame(
   stringsAsFactors = FALSE
 )
 stopifnot(!any(is.na(clean$Species)))
+clean$source_flags <- "neocortex_denominator"
+clean$source_issue_note <- "Percentages use total neocortex surface as the denominator."
+galago <- clean$species_as_published == "Galago"
+clean$source_flags[galago] <- paste(clean$source_flags[galago], "species_inference_unverified", sep = "|")
+clean$source_issue_note[galago] <- paste(
+  clean$source_issue_note[galago],
+  "The inspected paper labels these cases only as galago; Galago senegalensis is a curator inference pending primary-source verification."
+)
 
 ## ---- local CSV ----
 csv_file <- file.path(folder, paste0(item_name, ".csv"))
 write.csv(clean, csv_file, row.names = FALSE)
-message(item_name, ": ", nrow(clean), " cases written to ", basename(csv_file))
+message(item_name, ": ", nrow(clean), " cases written; galago binomial inference flagged")
 
 ## ---- public TSV: look up the DOI code from __ReadMe.xlsx ----
 tsv_dir <- file.path(base, "__Public", "comparative-data")

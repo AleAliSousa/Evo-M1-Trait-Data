@@ -1,0 +1,3 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+ref_key_norm / table2_name / n_records_declared / n_sparse_rows / n_records_observed / n_cells_observed / n_species_rows_observed,as in Myhrvold_etal_2015_references.csv; one row per key whose best-rule count != declared,,,,info,Aves; Reptilia; Mammalia,Myhrvold_etal_2015_references_table2_mismatches,,
+ratio_sparse_to_declared,n_sparse_rows / n_records_declared (3 dp),,,,info,Aves; Reptilia; Mammalia,Myhrvold_etal_2015_references_table2_mismatches,,

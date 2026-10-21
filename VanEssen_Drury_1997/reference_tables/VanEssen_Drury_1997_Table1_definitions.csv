@@ -11,3 +11,5 @@ where_in_paper,Table 1 vs text,,,,provenance,Primates,VanEssen_Drury_1997_Table1
 data_role,primary / primary synthesis / secondary classification,,,,provenance,Primates,VanEssen_Drury_1997_Table1,V1 uses Rademacher et al. 1993; macaque reconstruction uses Drury et al. 1996a,
 source_note,row-level source and scope note,,,,provenance,Primates,VanEssen_Drury_1997_Table1,,
 source,registry item key,,,,provenance,Primates,VanEssen_Drury_1997_Table1,,
+source_flags,pipe-delimited source-quality flags,,,,quality,Primates,VanEssen_Drury_1997_Table1,Includes single-atlas and cross-study macaque conflict flags,
+source_issue_note,human-readable explanation of source flags,,,,quality,Primates,VanEssen_Drury_1997_Table1,,

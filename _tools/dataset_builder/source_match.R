@@ -129,6 +129,17 @@ sm_parse_cell <- function(cell, style, known_keys, separator = NULL, known_citat
         keys <- c(keys, t)                                            # unexpandable: keep verbatim
       } else keys <- c(keys, t)
     }
+    # Numeric keys may be zero-padded in data cells but unpadded in the reference
+    # lookup (AnAge Source_ref 0450 vs BIBLIOID/ref_key 450). Preserve the printed
+    # cell separately, but canonicalize an otherwise exact integer match here.
+    if (length(keys)) {
+      known_int <- suppressWarnings(as.integer(known_keys))
+      keys <- vapply(keys, function(k) {
+        if (!grepl("^[0-9]+$", k)) return(k)
+        hit <- which(!is.na(known_int) & known_int == suppressWarnings(as.integer(k)))
+        if (length(hit) == 1L) known_keys[hit] else k
+      }, character(1))
+    }
     resid <- regmatches(x, m, invert = TRUE)[[1]]
   } else if (style == "letter") {
     m <- gregexpr("[a-z]{1,2}", x, perl = TRUE)
@@ -311,18 +322,24 @@ build_source_match <- function(paper_dir, item, refs_file = NULL, out_dir = NULL
 
   ## -- the join -------------------------------------------------------------------
   cells  <- list(); issues <- list()
-  add_issue <- function(type, key_column = "", ref_key = "", row = "", species = "", variable = "", detail = "")
-    issues[[length(issues) + 1L]] <<- data.frame(item = item, issue = type, key_column = key_column,
-                                                 ref_key = ref_key, row_id = row, species = species,
-                                                 variable = variable, detail = detail, stringsAsFactors = FALSE)
+  add_issue <- function(type, key_column = "", ref_key = "", row = "", species = "", variable = "", detail = "") {
+    one <- function(x) if (length(x)) as.character(x[1]) else ""
+    issues[[length(issues) + 1L]] <<- data.frame(
+      item = item, issue = one(type), key_column = one(key_column), ref_key = one(ref_key),
+      row_id = one(row), species = one(species), variable = one(variable), detail = one(detail),
+      stringsAsFactors = FALSE
+    )
+  }
   cited_keys <- character(0)
   for (i in seq_len(nrow(decl))) {
     kc    <- decl$key_column[i]; scope <- trimws(decl$applies_to[i]); basis <- decl$basis[i]
     sep   <- if (is.na(decl$separator[i])) "" else decl$separator[i]
+    row_scope <- identical(scope, "row_overall")
     vars  <- if (identical(scope, "*")) data_cols else
+             if (row_scope) "row_overall" else
              if (identical(scope, "unresolved")) character(0) else
              trimws(strsplit(scope, ";", fixed = TRUE)[[1]])
-    badv  <- setdiff(vars, names(dat))
+    badv  <- setdiff(vars, c(names(dat), "row_overall"))
     if (length(badv)) stop("source_match: applies_to names unknown columns for ", kc, ": ",
                            paste(badv, collapse = ", "), call. = FALSE)
     if (!length(vars)) { add_issue("unresolved_key_scope", kc, detail = "declare applies_to in _reference_columns.csv"); next }
@@ -331,7 +348,8 @@ build_source_match <- function(paper_dir, item, refs_file = NULL, out_dir = NULL
       keys   <- parsed$keys
       if (nzchar(parsed$residual))
         add_issue("residual_text_in_key_cell", kc, "", row_id[r], dat[[sp_col]][r], detail = parsed$residual)
-      vals   <- dat[r, vars, drop = FALSE]
+      vals   <- if (row_scope) setNames(data.frame(row_id[r], stringsAsFactors = FALSE), "row_overall") else
+                dat[r, vars, drop = FALSE]
       filled <- vars[!sm_is_empty(unlist(vals))]
       if (!length(keys)) {
         for (v in filled) add_issue("value_without_key", kc, "", row_id[r], dat[[sp_col]][r], v, dat[[v]][r])
@@ -349,7 +367,7 @@ build_source_match <- function(paper_dir, item, refs_file = NULL, out_dir = NULL
           item = item, row_id = row_id[r], species = dat[[sp_col]][r], key_column = kc,
           key_cell_as_printed = dat[[kc]][r], n_keys_in_cell = length(keys), ref_key = k,
           citation = if (known) refs$citation[match(k, refs$ref_key)] else NA_character_,
-          variable = filled, value = unlist(dat[r, filled]),
+          variable = filled, value = if (row_scope) rep("row_overall", length(filled)) else unlist(dat[r, filled]),
           match_basis = basis,
           status = if (!known) "key_not_in_references" else if (is.na(refs$citation[match(k, refs$ref_key)])) "matched_citation_missing" else
                    if (length(keys) > 1L) "matched_shared_key" else "matched",

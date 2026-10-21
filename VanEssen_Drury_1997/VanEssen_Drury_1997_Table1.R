@@ -62,6 +62,35 @@ text_clean <- read.csv(file.path(folder, paste0(item_name, "_text_snapshot.csv")
                        stringsAsFactors = FALSE, na.strings = "")
 clean <- rbind(table_clean, text_clean[names(table_clean)])
 clean$source <- item_name
+append_flag <- function(x, flag) ifelse(!nzchar(x), flag, paste(x, flag, sep = "|"))
+append_note <- function(x, note) ifelse(!nzchar(x), note, paste(x, note, sep = " "))
+clean$source_flags <- ""
+clean$source_issue_note <- ""
+
+human <- clean$Species == "Homo sapiens"
+clean$source_flags[human] <- append_flag(clean$source_flags[human], "single_atlas_individual")
+clean$source_issue_note[human] <- append_note(
+  clean$source_issue_note[human],
+  "Human values come from one adult male cadaver digital atlas and do not estimate population variance."
+)
+table_rows <- human & clean$where_in_paper == "Table 1"
+clean$source_flags[table_rows] <- append_flag(clean$source_flags[table_rows], "3d_reconstruction_not_flatmap")
+clean$source_flags[table_rows] <- append_flag(clean$source_flags[table_rows], "total_likely_slight_underestimate")
+clean$source_issue_note[table_rows] <- append_note(
+  clean$source_issue_note[table_rows],
+  "Areas are tile sums on a 3-D reconstruction, not flat-map areas; the authors describe total area as a likely slight underestimate."
+)
+human_v1 <- human & clean$structure == "V1"
+clean$source_flags[human_v1] <- append_flag(clean$source_flags[human_v1], "secondary_value")
+
+macaque <- clean$Species == "Macaca sp."
+clean$source_flags[macaque] <- "secondary_reconstruction|single_case|species_unspecified|cross_study_macaque_total_conflict|cross_study_v2_fraction_conflict"
+clean$source_issue_note[macaque] <- paste0(
+  "This paper identifies the animal only as macaque and reuses case 79-0 from Drury et al. 1996a. ",
+  "Its 72 cm2 neocortex differs from Felleman & Van Essen's 99.40 cm2 text / 99.70 cm2 table composite, ",
+  "and its text gives V2 as approximately 9% versus 12.2% in Felleman & Van Essen Table 2. ",
+  "Do not pool without reconciling specimen, method, and denominator."
+)
 
 csv_file <- file.path(folder, paste0(item_name, ".csv"))
 write.csv(clean, csv_file, row.names = FALSE)

@@ -32,14 +32,35 @@ built to convention:
   - `__Public/comparative-data/10.1093%2Fnar%2Fgkad927_anagedata.txt.tsv` (public, DOI-encoded per
     the registry's pre-existing `Item encoded` value — see Registry below)
 - **Definitions:** `reference_tables/deMagalhães_etal_2024_anagedata.txt_definitions.csv`.
+- **Bibliography:** `deMagalhães_etal_2024_anagedata.txt_references.R` reads the frozen
+  `Search the AnAge Database.pdf` directly and writes:
+  - `reference_tables/deMagalhães_etal_2024_anagedata.txt_references.csv` — all 1,467 BIBLIOIDs;
+  - `reference_tables/deMagalhães_etal_2024_anagedata.txt_reference_alignment.csv` — one row per
+    dataset row × reference occurrence, preserving whether the key came from `Source_ref` or
+    `References` and its honest scope;
+  - `reference_tables/deMagalhães_etal_2024_anagedata.txt_reference_alignment_issues.csv` — the
+    unresolved numeric key and non-bibliographic source labels summarized for review.
+  - `reference_tables/deMagalhães_etal_2024_anagedata.txt_reference_columns.csv` — declares the
+    two source-key scopes for the repository-wide `source_match.R` convention; `References =
+    row_overall` preserves the source's granularity without manufacturing variable-level support.
 
 ## Data role
 **Secondary (compilation).** AnAge is itself a curated compilation: every life-history value is
-drawn from primary literature keyed by `Source_ref` (longevity record) / `References` (row overall).
-Those numeric reference codes key into AnAge's own bibliography, which is **not** distributed in
-this export — so no `reference_tables/*_references.csv` could be built (there is nothing published
-alongside this file to resolve the numbers against). This is a compiled-data limitation of the
-source, not an omission on our part.
+drawn from primary literature keyed by `Source_ref` (the longevity record) / `References` (the row
+overall). The separately saved full-bibliography PDF now resolves the numeric codes. It does not,
+however, identify which individual variables each row-level `References` entry supports, so the
+alignment records that scope as `row_overall` rather than inventing per-variable attribution.
+
+The PDF contains all BIBLIOIDs 1–1467. Of the 1,422 distinct numeric keys used in this downloaded
+dataset, 1,421 resolve. Key `0` is not a bibliography entry and is retained as unresolved on 20
+crocodilian rows. `Source_ref` also contains 32 prose-source occurrences (18 unique personal-
+communication or website-feedback labels); these remain explicit `non_bibliographic_source_text`
+records rather than being assigned invented BIBLIOIDs.
+
+The PDF was printed from the live Build-15 bibliography, which reports 4,671 AnAge entries, while
+this downloaded data copy has 4,645 rows. Consequently, 1,381 reference citation counts agree
+exactly and 86 show small count differences or are unused in the downloaded copy. The key joins are
+still valid; the count differences are carried as release/export-drift flags.
 
 ## Quality caveats (from the source)
 - `Data_quality` (low/questionable/acceptable/high) and `Sample_size` (tiny/small/medium/large/huge)
@@ -88,6 +109,9 @@ transform for delivery now, and should be spot-checked by re-running the R scrip
   tokens remained in numeric columns after cleaning.
 - No independent curated copy exists to audit against (first-party compilation, digital-native
   source) — no `comparison/` step applies (§7).
+- Bibliography extraction: 1,467 unique rows, exactly BIBLIOID 1–1467; no blank titles, duplicate
+  IDs, or nonnumeric citation counts. The normalized bridge contains 20,425 row-reference links.
+- Numeric alignment: 1,421 of 1,422 distinct used keys matched; the sole unmatched key is `0`.
 
 ## Changelog
 - **2026-10-20 — `Inter_litter_Interbirth_interval_yrs` renamed to `Inter_litter_Interbirth_interval_days`.**

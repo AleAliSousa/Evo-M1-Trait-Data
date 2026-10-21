@@ -1,0 +1,10 @@
+column,definition
+Species,Species name used for the database join
+species_as_published,Name printed in Young et al. 2013
+case_label,Individual or numbered animal as identified in Results text
+hemisphere_scope,One flattened cortical hemisphere
+cortical_surface_area_mm2,Total flattened cortical hemisphere surface area in square millimetres
+source_locus,Results section and PDF page containing the number
+pdf_page,One-based page number in the stored article PDF
+overlap_note,Known or possible overlap with Collins 2010 or Turner 2016
+source,Database item identifier

@@ -1,5 +1,6 @@
 Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
-Species,accepted species name,,Species,,primary,Eulipotyphla,Catania_etal_1999_Table1,,table species names preserved
+Species,accepted species name,,Species,,primary,Eulipotyphla,Catania_etal_1999_Table1,Cryptotis parva normalized from the table typo Cryptopus parva,
+species_as_published,species name exactly as printed in the table,,,,provenance,Eulipotyphla,Catania_etal_1999_Table1,Cryptopus parva is preserved here and normalized to Cryptotis parva in Species,
 common_name,common name,,,,info,Eulipotyphla,Catania_etal_1999_Table1,,
 case_id,case or hemisphere identifier as printed,,,,info,Eulipotyphla,Catania_etal_1999_Table1,seven hemispheres,
 structure,cortical area or body-part representation,,,,info,Eulipotyphla,Catania_etal_1999_Table1,,
@@ -9,3 +10,5 @@ unit,area unit,,,,info,Eulipotyphla,Catania_etal_1999_Table1,mm2,
 where_in_paper,source location,,,,provenance,Eulipotyphla,Catania_etal_1999_Table1,Table 1,
 measurement_basis,border and preparation method,,,,provenance,Eulipotyphla,Catania_etal_1999_Table1,,
 source,registry item key,,Source,,provenance,Eulipotyphla,Catania_etal_1999_Table1,,
+source_flags,pipe-delimited source-quality flags,,,,quality,Eulipotyphla,Catania_etal_1999_Table1,Use to exclude or review uncertain rows,
+source_issue_note,human-readable explanation of source flags,,,,quality,Eulipotyphla,Catania_etal_1999_Table1,,

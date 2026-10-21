@@ -41,7 +41,8 @@ All files sit in the paper folder's `reference_tables/`; `<Item>` is the item CS
 
 - `ref_key` — the printed key **verbatim**: `a`, `24`, `10a`, `Dunlop et al. (1998)`,
   `ref. 30`. One row per **individual** key; a printed range `51-52` is two rows (C2).
-  Unique.
+  Unique. Numeric cells with different zero padding are matched by integer identity while
+  `key_cell_as_printed` retains the original form (for example AnAge `0450` → key `450`).
 - `cited_in_column` — the column of `<Item>.csv` that holds the key (exact name), or
   `caption` / `text` when the key is not in a cell.
 - `citation` — the full bibliographic entry. Leave empty only when the paper prints none
@@ -61,8 +62,11 @@ read them); the driver maps them in `SM_LEGACY_REFS`.
 `key_column | applies_to | separator | note`
 
 - `key_column` — a column of `<Item>.csv` holding keys.
-- `applies_to` — `*` (every data column of the row) or a `; `-separated list of data
-  columns. This is the fact the paper left implicit; declaring it is the curator's call.
+- `applies_to` — `*` (every data column of the row), `row_overall` (the source gives no
+  variable-level attribution), or a `; `-separated list of data columns. `row_overall`
+  emits one compact attribution per row × reference rather than duplicating the citation
+  across every filled variable. This is the fact the paper left implicit; declaring it is
+  the curator's call.
 - `separator` — only when the printed cells use one the parser does not infer (rare).
 
 **Optional.** Without it the tool auto-detects key columns (from `cited_in_column`, then
@@ -78,7 +82,7 @@ back; once a declaration exists every attribution carries `match_basis = declare
 
 | file | grain | columns |
 |---|---|---|
-| `<Item>_source_match.csv` | (row, variable, individual ref_key) | `item, row_id, species, key_column, key_cell_as_printed, n_keys_in_cell, ref_key, citation, variable, value, match_basis, status` |
+| `<Item>_source_match.csv` | (row, variable/scope, individual ref_key) | `item, row_id, species, key_column, key_cell_as_printed, n_keys_in_cell, ref_key, citation, variable, value, match_basis, status`; `variable = row_overall` when that compact scope is declared |
 | `<Item>_source_match_summary.csv` | (ref_key, variable) | `item, ref_key, citation, variable, key_column, n_rows, n_species, species, n_rows_shared_key, match_basis, status` |
 | `<Item>_source_match_issues.csv` | one row per thing the join could not settle | `item, issue, key_column, ref_key, row_id, species, variable, detail` |
 | `_checks/source_match_index.csv` | one row per item (driver) | status and counts per item |

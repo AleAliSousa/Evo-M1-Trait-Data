@@ -1,5 +1,6 @@
 Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
-Species,species binomial,,Species,,primary,Primates,Krubitzer_Kaas_1990_Table1,from Methods p.166; all four in _keys/species_reference.csv,table grouped by common name only
+Species,normalized species binomial,,Species,,primary,Primates,Krubitzer_Kaas_1990_Table1,Galago senegalensis is a provisional curator inference; all four normalized names are in _keys/species_reference.csv,table grouped by common name only
+species_as_published,species group exactly as printed in Table 1,,,,provenance,Primates,Krubitzer_Kaas_1990_Table1,Common-name groups; Galago is not resolved to a binomial in the inspected paper,
 common_name,common name (as used in the paper),,,,info,Primates,Krubitzer_Kaas_1990_Table1,,
 case_number,case number within species (per-hemisphere measurement),,,,info,Primates,Krubitzer_Kaas_1990_Table1,squirrel 1-6; owl 1-4; marmoset 1-6; galago 1-4,
 pct_17,area 17 (V-I / striate) as percent of total neocortex surface,VisualArea17,pct.neocortex_surface,,primary,Primates,Krubitzer_Kaas_1990_Table1,,relative area; not absolute mm2
@@ -13,3 +14,5 @@ pct_MST,medial superior temporal area (MST) as percent of total neocortex surfac
 pct_total_8fields,Total column as printed = sum of the eight visual fields as percent of neocortex,,pct.neocortex_surface,,primary,Primates,Krubitzer_Kaas_1990_Table1,"the remaining ~60-67% of neocortex is non-visual (auditory, somatosensory, motor, etc.)",
 measure,measure class label,,,,info,Primates,Krubitzer_Kaas_1990_Table1,percent_of_total_neocortex_surface (relative; absolute field areas only given as text ranges),
 source,source identifier,,Source,,info,Primates,Krubitzer_Kaas_1990_Table1,,
+source_flags,pipe-delimited source-quality flags,,,,quality,Primates,Krubitzer_Kaas_1990_Table1,Includes denominator and unresolved-species flags,
+source_issue_note,human-readable explanation of source flags,,,,quality,Primates,Krubitzer_Kaas_1990_Table1,,

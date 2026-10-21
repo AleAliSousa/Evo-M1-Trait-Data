@@ -1,0 +1,19 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+ref_key,Unpadded numeric AnAge bibliography key used by Source_ref and References,,,,provenance,all taxa,deMagalhães_etal_2024_anagedata.txt,Join numeric dataset keys here,
+biblio_id,Five-digit BIBLIOID exactly as displayed in the PDF,,,,provenance,all taxa,deMagalhães_etal_2024_anagedata.txt,Leading zeros preserved,Search the AnAge Database.pdf
+cited_in_column,Dataset columns in which this key occurs,,,,provenance,all taxa,deMagalhães_etal_2024_anagedata.txt,Source_ref and/or References; blank when unused in this downloaded copy,
+authors_as_published,Author text displayed by AnAge,,,,provenance,all taxa,deMagalhães_etal_2024_anagedata.txt,Blank for websites or databases without displayed authors,Search the AnAge Database.pdf
+year_as_published,Year displayed by AnAge,,,,provenance,all taxa,deMagalhães_etal_2024_anagedata.txt,Blank where no year is displayed,Search the AnAge Database.pdf
+title_as_published,Title displayed by AnAge,,,,provenance,all taxa,deMagalhães_etal_2024_anagedata.txt,PDF line wraps rejoined; wording retained,Search the AnAge Database.pdf
+citation,Join-ready citation assembled from displayed author year and title,,,,provenance,all taxa,deMagalhães_etal_2024_anagedata.txt,No journal or publisher details invented,
+pdf_citation_count,Number of AnAge entries citing the reference as displayed in the PDF,,,,quality,all taxa,deMagalhães_etal_2024_anagedata.txt,Live Build-15 page reports 4671 entries while downloaded data contains 4645,Search the AnAge Database.pdf
+dataset_rows_source_ref,Downloaded dataset rows using this BIBLIOID in Source_ref,,,,derived,all taxa,deMagalhães_etal_2024_anagedata.txt,,anage_data.txt
+dataset_rows_references,Downloaded dataset rows using this BIBLIOID in References,,,,derived,all taxa,deMagalhães_etal_2024_anagedata.txt,,anage_data.txt
+dataset_rows_any_context,Unique downloaded dataset rows using this BIBLIOID in either reference column,,,,derived,all taxa,deMagalhães_etal_2024_anagedata.txt,A row citing the same key in both columns counts once,
+citation_count_difference,Downloaded unique-row count minus PDF citation count,,,,quality,all taxa,deMagalhães_etal_2024_anagedata.txt,Nonzero values flag release/export drift rather than silently forcing agreement,
+alignment_status,Whether the key and citation count align to this downloaded dataset copy,,,,quality,all taxa,deMagalhães_etal_2024_anagedata.txt,matched_key_and_count / matched_key_count_diff / not_used_in_downloaded_dataset,
+external_link_type,Displayed AnAge external-link category,,,,provenance,all taxa,deMagalhães_etal_2024_anagedata.txt,PubMed / Search / URL,Search the AnAge Database.pdf
+anage_bibliography_url,Stable-looking AnAge detail URL constructed from the displayed BIBLIOID,,,,provenance,all taxa,deMagalhães_etal_2024_anagedata.txt,Uses the same URL pattern embedded in the PDF,
+source_pdf_page,One-based PDF page containing the bibliography row,,,,provenance,all taxa,deMagalhães_etal_2024_anagedata.txt,,Search the AnAge Database.pdf
+pdf_display_rank,Row order in the citation-count-sorted PDF,,,,provenance,all taxa,deMagalhães_etal_2024_anagedata.txt,Not a reference identifier,Search the AnAge Database.pdf
+note,Alignment or release-drift note,,,,quality,all taxa,deMagalhães_etal_2024_anagedata.txt,,

@@ -10,14 +10,14 @@ of the total surface of neocortex (See Fig. 1 for visual areas)."*
 ## What the data are
 Per-hemisphere (per-case) size of **eight visual cortical fields** — 17, 18, DL, DM, DI, FST, MT, MST —
 each expressed as a **percentage of total neocortex surface**, plus a `Total` (sum of the eight),
-for four primate species (Methods, p.166):
+for four primate groups:
 
 | common name | Species | cases |
 |---|---|---|
 | squirrel monkey | *Saimiri sciureus* | 6 |
 | owl monkey | *Aotus trivirgatus* | 4 |
 | marmoset | *Callithrix jacchus* | 6 |
-| galago | *Galago senegalensis* | 4 |
+| galago | *Galago senegalensis* (provisional curator inference) | 4 |
 
 20 cases. **These are proportions, not absolute areas** — absolute field areas appear only as text
 ranges (e.g. area 17 = 378–653 mm² across six squirrel monkeys), not in the table.
@@ -27,7 +27,10 @@ PDF p.174–175 Table 1 → transcribed to `Krubitzer_Kaas_1990_Table1_snapshot.
 the printed `Mean %` / `Std Dev` rows, verbatim). `Krubitzer_Kaas_1990_Table1.R` →
 `Krubitzer_Kaas_1990_Table1.csv` (**use this**): one row per case, `Species` binomial added, the
 derived Mean/Std Dev rows dropped. Columns in `reference_tables/Krubitzer_Kaas_1990_Table1_definitions.csv`.
-All four binomials are already in `_keys/species_reference.csv`.
+All four normalized binomials are already in `_keys/species_reference.csv`, but the inspected paper
+labels the last group only as `Galago`. `Galago senegalensis` is therefore retained for compatibility
+and explicitly marked `species_inference_unverified` pending verification from a primary specimen or
+methods source.
 
 ## Overlap with other data in the repo (asked)
 - **Measure overlap: none.** The "% of neocortex per visual field" measure is **unique to this table**
@@ -44,11 +47,11 @@ All four binomials are already in `_keys/species_reference.csv`.
   this mapping lineage**. If both ever feed one cortical-area merge, treat Finlay as **secondary** for
   those species. (No literal collision now, because K&K report proportions and Finlay reports counts +
   absolute mm².)
-- **Collins 2010 (same Kaas lab): no species overlap.** Collins used *Aotus nancymae* (not *A.
-  trivirgatus*) and *Otolemur garnetti* (not *Galago senegalensis*); it did not measure squirrel
+- **Collins 2010 (same Kaas lab): no confirmed species overlap.** Collins used *Aotus nancymae* (not *A.
+  trivirgatus*) and *Otolemur garnetti* (not the provisionally identified K&K galago); it did not measure squirrel
   monkey or marmoset. Different specimens, species and measure — independent.
 
 Bottom line: building this adds a **new, non-overlapping measure**; the only thing to watch is the
 Finlay→K&K provenance link if a cortical-area merge is built.
 
-Pipeline: Source → Snapshot ✅ → Data readable ✅ → Species note ✅ → Online database ✅
+Pipeline: Source → Snapshot ✅ → Data readable ✅ → Species inference flagged ✅ → Online database ✅

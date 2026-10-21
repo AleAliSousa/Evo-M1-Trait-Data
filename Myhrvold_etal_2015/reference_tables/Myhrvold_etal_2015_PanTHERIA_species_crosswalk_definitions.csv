@@ -1,0 +1,10 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+row_id,1-based row in Data_Files/Amniote_Database_Aug_2015.csv,,,,info,Mammalia,Myhrvold_etal_2015_PanTHERIA_species_crosswalk,,
+order / family / genus / species / subspecies,as printed in the Amniote database row (subspecies -999 = none),,,,info,Mammalia,Myhrvold_etal_2015_PanTHERIA_species_crosswalk,,
+amniote_binomial,"paste(genus, species)",,,,info,Mammalia,Myhrvold_etal_2015_PanTHERIA_species_crosswalk,,
+amniote_name,"binomial, or trinomial when a subspecies is recorded",,,,info,Mammalia,Myhrvold_etal_2015_PanTHERIA_species_crosswalk,,
+match_basis,exact_binomial (amniote_binomial is a PanTHERIA MSW05_Binomial) | supp_table_4_transformation (a Supplemental Table 4 'Original Name' transformed into this binomial is a PanTHERIA binomial) | supp_table_7_synonym (a Supplemental Table 7 row lists this binomial as the synonym of a PanTHERIA binomial; PanTHERIA-sourced rows preferred) | species_key (both names resolve to the same accepted_name via _keys/resolve_species.R) | unresolved. Tiers tried in this order; first hit wins,,,,info,Mammalia,Myhrvold_etal_2015_PanTHERIA_species_crosswalk,,
+pantheria_msw05_binomial,the PanTHERIA MSW05_Binomial(s) reached; ' | '-separated when more than one candidate,,,,info,Mammalia,Myhrvold_etal_2015_PanTHERIA_species_crosswalk,,
+n_candidates,number of distinct PanTHERIA binomials reached under the winning tier,,,,info,Mammalia,Myhrvold_etal_2015_PanTHERIA_species_crosswalk,,
+match_detail,"evidence for the tier (T4 originals, T7 ref_name, species-key accepted_name/basis/level)",,,,info,Mammalia,Myhrvold_etal_2015_PanTHERIA_species_crosswalk,,
+is_subspecies_row,TRUE when the Amniote row is a subspecies (mapped at binomial level),,,,info,Mammalia,Myhrvold_etal_2015_PanTHERIA_species_crosswalk,,

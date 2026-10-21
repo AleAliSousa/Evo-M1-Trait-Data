@@ -87,15 +87,59 @@ long <- bind_rows(lapply(seq_len(nrow(specimens)), function(i) {
       source = "Campos_Welker_1976"
     )
 }))
+append_flag <- function(x, flag) ifelse(!nzchar(x), flag, paste(x, flag, sep = "|"))
+append_note <- function(x, note) ifelse(!nzchar(x), note, paste(x, note, sep = " "))
+long$source_flags <- "one_specimen_per_species"
+long$source_issue_note <- "Table 1 reports one specimen per species."
+
+morph <- long$product == "cortical_morphometry"
+long$source_flags[morph] <- append_flag(long$source_flags[morph], "no_shrinkage_correction_stated")
+long$source_flags[morph] <- append_flag(long$source_flags[morph], "surface_hemisphere_count_unclear")
+long$source_issue_note[morph] <- append_note(
+  long$source_issue_note[morph],
+  "No shrinkage correction is stated, and the laterality or number of hemispheres represented by the cortical surface measurements is not explicit."
+)
+
+derived_surface <- long$code %in% c(
+  "neocortex_volume_mm3", "cortical_surface_area_mm2", "cortical_thickness_mm"
+)
+long$source_flags[derived_surface] <- append_flag(long$source_flags[derived_surface], "surface_area_may_be_derived")
+derived_note <- ifelse(
+  long$species_as_published[derived_surface] == "Hydrochoerus hydrochoerus",
+  "Surface area x thickness is 2501 x 1.59 = 3976.59 mm3, essentially the printed 3979 mm3 volume; surface area may have been calculated rather than independently measured.",
+  "Surface area x thickness is 218.2 x 0.78 = 170.196 mm3, equal to the printed 170.2 mm3 volume after rounding; surface area may have been calculated rather than independently measured."
+)
+long$source_issue_note[derived_surface] <- append_note(long$source_issue_note[derived_surface], derived_note)
+
+factor_mismatch <- long$code %in% known_factor_discrepancies
+long$source_flags[factor_mismatch] <- append_flag(long$source_flags[factor_mismatch], "printed_factor_mismatch")
+long$source_issue_note[factor_mismatch] <- append_note(
+  long$source_issue_note[factor_mismatch],
+  "The printed multiplication factor is 3.0, while the printed values imply approximately 3.20."
+)
+ratio_mismatch <- long$species_as_published == "Cavia porcellus" & long$code == "corticothalamic_ratio"
+long$source_flags[ratio_mismatch] <- append_flag(long$source_flags[ratio_mismatch], "printed_ratio_mismatch")
+long$source_issue_note[ratio_mismatch] <- append_note(
+  long$source_issue_note[ratio_mismatch],
+  "The printed ratio is 5.15, while 170.2/36.6 = 4.65."
+)
 stopifnot(nrow(long) == 40L, !anyNA(long$value), all(long$value > 0))
 
 write_csv(long, paste0(item_name, ".csv"), na = "NA")
 
 for (product_name in unique(snap$product)) {
-  product_wide <- long %>%
-    filter(product == product_name) %>%
+  product_long <- long %>% filter(product == product_name)
+  quality <- product_long %>%
+    group_by(species_as_published, specimen_number) %>%
+    summarise(
+      source_flags = paste(unique(unlist(strsplit(source_flags, "\\|", fixed = FALSE))), collapse = "|"),
+      source_issue_note = paste(unique(source_issue_note), collapse = " "),
+      .groups = "drop"
+    )
+  product_wide <- product_long %>%
     select(species_as_published, specimen_number, code, value) %>%
     pivot_wider(names_from = code, values_from = value) %>%
+    left_join(quality, by = c("species_as_published", "specimen_number")) %>%
     mutate(source = "Campos_Welker_1976")
   write_csv(product_wide, paste0(item_name, "_", product_name, ".csv"), na = "NA")
 }
@@ -122,6 +166,12 @@ gp_ratio <- value_of("Cavia porcellus", "neocortex_volume_mm3") /
   value_of("Cavia porcellus", "thalamus_volume_mm3")
 stopifnot(abs(cap_ratio - value_of("Hydrochoerus hydrochoerus", "corticothalamic_ratio")) < 0.01)
 stopifnot(abs(gp_ratio - value_of("Cavia porcellus", "corticothalamic_ratio")) > 0.4)
+for (sp in specimens$species_as_published) {
+  surface <- value_of(sp, "cortical_surface_area_mm2")
+  thickness <- value_of(sp, "cortical_thickness_mm")
+  volume <- value_of(sp, "neocortex_volume_mm3")
+  stopifnot(abs(surface * thickness - volume) / volume < 0.001)
+}
 
 if (!is.na(base)) {
   filecodes <- read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
@@ -138,4 +188,4 @@ if (!is.na(base)) {
 }
 
 message("Campos & Welker Table 1: 2 specimens x 20 measures; three datatype-specific CSVs and public TSV written.")
-message("Preserved source discrepancies: guinea-pig cortico-thalamic ratio; two printed caudate density factors.")
+message("Preserved and flagged source discrepancies: derived-surface concern, unclear shrinkage/laterality, guinea-pig cortico-thalamic ratio, and two printed caudate density factors.")

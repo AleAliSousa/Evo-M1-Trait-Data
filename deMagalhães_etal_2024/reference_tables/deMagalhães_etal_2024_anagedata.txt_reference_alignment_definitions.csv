@@ -1,0 +1,14 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+item,Dataset item identifier,,,,provenance,all taxa,deMagalhães_etal_2024_anagedata.txt,,
+dataset_row,One-based row number in the frozen anage_data.txt file,,,,provenance,all taxa,deMagalhães_etal_2024_anagedata.txt,Stable only for this downloaded copy,
+HAGRID,Build-specific AnAge row identifier,,,,provenance,all taxa,deMagalhães_etal_2024_anagedata.txt,AnAge reshuffles HAGRID between builds,
+Species,Genus and species epithet joined for readability,,,,info,all taxa,deMagalhães_etal_2024_anagedata.txt,Printed names retained,
+key_column,Dataset column containing the reference key or source text,,,,provenance,all taxa,deMagalhães_etal_2024_anagedata.txt,Source_ref or References,
+applies_to,Honest scope supported by the source layout,,,,provenance,all taxa,deMagalhães_etal_2024_anagedata.txt,Source_ref supports the longevity-record fields; References is row_overall because variable-level attribution is not supplied,
+key_cell_as_published,Complete reference cell before splitting,,,,provenance,all taxa,deMagalhães_etal_2024_anagedata.txt,,anage_data.txt
+n_keys_in_cell,Number of individual keys split from the cell,,,,derived,all taxa,deMagalhães_etal_2024_anagedata.txt,,
+ref_key,Individual unpadded numeric bibliography key,,,,provenance,all taxa,deMagalhães_etal_2024_anagedata.txt,Blank for prose Source_ref labels; 0 is retained but unresolved,
+biblio_id,Five-digit matched BIBLIOID,,,,provenance,all taxa,deMagalhães_etal_2024_anagedata.txt,Blank for unmatched or prose sources,
+citation,Matched displayed citation or the prose Source_ref label,,,,provenance,all taxa,deMagalhães_etal_2024_anagedata.txt,No bibliographic entry invented for personal communications,
+match_status,Reference alignment result,,,,quality,all taxa,deMagalhães_etal_2024_anagedata.txt,matched / key_not_in_pdf_bibliography / non_bibliographic_source_text,
+note,Scope or unresolved-source explanation,,,,quality,all taxa,deMagalhães_etal_2024_anagedata.txt,,

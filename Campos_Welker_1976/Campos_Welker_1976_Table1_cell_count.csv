@@ -1,3 +1,3 @@
-species_as_published,specimen_number,neocortex_mean_neurons_per_sample,caudate_mean_neurons_per_sample,neocortex_neuronal_density_per_mm3,caudate_neuronal_density_per_mm3,neocortex_total_neuron_number,caudate_total_neuron_number,source
-Hydrochoerus hydrochoerus,59-490,10.3,9.169,63582,56600,252992778,23375800,Campos_Welker_1976
-Cavia porcellus,60-1,38.53,29.32,237846,180992,40481389,6823398,Campos_Welker_1976
+species_as_published,specimen_number,neocortex_mean_neurons_per_sample,caudate_mean_neurons_per_sample,neocortex_neuronal_density_per_mm3,caudate_neuronal_density_per_mm3,neocortex_total_neuron_number,caudate_total_neuron_number,source_flags,source_issue_note,source
+Hydrochoerus hydrochoerus,59-490,10.3,9.169,63582,56600,252992778,23375800,one_specimen_per_species|printed_factor_mismatch,"Table 1 reports one specimen per species. Table 1 reports one specimen per species. The printed multiplication factor is 3.0, while the printed values imply approximately 3.20.",Campos_Welker_1976
+Cavia porcellus,60-1,38.53,29.32,237846,180992,40481389,6823398,one_specimen_per_species|printed_factor_mismatch,"Table 1 reports one specimen per species. Table 1 reports one specimen per species. The printed multiplication factor is 3.0, while the printed values imply approximately 3.20.",Campos_Welker_1976

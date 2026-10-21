@@ -1,0 +1,13 @@
+column,definition
+Species,Human species label
+structure,Primary visual cortex V1
+hemisphere_scope,One hemisphere per the citing paper
+cited_primary,Paper credited with the range by Van Essen and Drury 1997
+range_min_cm2_as_printed,Lower endpoint printed in the PDF in square centimetres
+range_max_cm2_as_printed,Upper endpoint printed in the PDF in square centimetres
+range_min_mm2,Lower end of cited range converted from square centimetres by multiplying by 100
+range_max_mm2,Upper end of cited range converted from square centimetres by multiplying by 100
+source_locus,Location of the cited range in Van Essen and Drury 1997
+pdf_page,One-based page number in the stored article PDF
+data_role,Secondary citation only; not a case-level primary value
+source,Database item identifier

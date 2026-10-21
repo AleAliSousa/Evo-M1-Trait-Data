@@ -27,9 +27,11 @@ being forced through one merge merely because they share a printed table.
 ## Methods and definitions
 
 Volumes were estimated from planimetric measurements of enlarged section
-drawings. The values in Table 1 are from the right hemisphere of both specimens;
-they are not bilateral estimates and must not be doubled without an explicit
-laterality decision. `thal` includes dorsal, epithalamic and ventral thalamic
+drawings. The methods explicitly refer to right-hemisphere material for parts of
+the histological analysis, but Table 1 does not clearly state the laterality or
+number of hemispheres underlying every surface and volume value. These values
+must not be doubled without resolving that ambiguity. `thal` includes dorsal,
+epithalamic and ventral thalamic
 regions and their fiber tracts but excludes pretectal nuclei. `cau` is the
 caudate-putamen-accumbens complex. The source's basal-forebrain and hippocampal
 composites are retained rather than silently mapped to narrower structures.
@@ -41,12 +43,18 @@ printed density (within the source's rounding).
 
 ## Source-level discrepancies retained
 
+- For both species, printed cortical surface area multiplied by printed cortical
+  thickness essentially reproduces printed neocortex volume: `2501 × 1.59 =
+  3976.59` vs 3979 mm³ in the capybara, and `218.2 × 0.78 = 170.196` vs 170.2
+  mm³ in the guinea pig. This raises the possibility that surface area was
+  calculated rather than independently measured. No shrinkage correction is
+  stated, and the surface-measurement hemisphere count is unclear.
 - The capybara cortico-thalamic ratio is reproduced by `3979 / 434.1 = 9.17`.
   The guinea-pig printed ratio is `5.15`, while `170.2 / 36.6 = 4.65`. The printed
   ratio is retained and flagged rather than corrected.
 - The printed caudate mean-count and density factors are both `3.0`; the printed
   values imply approximately `3.20`. Both source factors are retained.
 
-The R builder requires these three discrepancies and fails if any new arithmetic
-discrepancy appears. All other multiplication factors reproduce to the precision
-printed in the paper.
+The R builder requires these discrepancies and fails if any new arithmetic
+discrepancy appears. All printed values remain unchanged; `source_flags` and
+`source_issue_note` carry the cautions into long, wide, and public outputs.

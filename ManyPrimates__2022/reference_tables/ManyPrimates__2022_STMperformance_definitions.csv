@@ -1,0 +1,13 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,species scientific binomial (common-name token of the trial file mapped through ManyPrimates__2022_speciespredictors.csv),,Species,,primary,Primates,ManyPrimates__2022_STMperformance,reconcile to _keys/General/species_key.csv,
+common_name,common name token as printed in the trial file (column species),,,info,Primates,ManyPrimates__2022_STMperformance,,
+n_trials,number of trials contributed by the species,,,info,Primates,ManyPrimates__2022_STMperformance,,
+n_individuals,number of individual subjects (distinct subject_site),,,info,Primates,ManyPrimates__2022_STMperformance,,
+n_sites,number of testing sites,,,info,Primates,ManyPrimates__2022_STMperformance,,
+stm_prop_correct,short-term memory performance = proportion of correct choices in the delayed three-cup choice task; mean across individuals of each individual's proportion correct (all delay conditions),Behaviour,proportion.correct,mean,primary,Primates,ManyPrimates__2022_STMperformance,chance = 0.333; individuals weighted equally,
+stm_prop_correct_pooled,proportion correct pooled over all trials of the species (trials weighted equally),Behaviour,proportion.correct,pooled,info,Primates,ManyPrimates__2022_STMperformance,dominated by well-sampled individuals; informational,
+stm_prop_correct_short,as stm_prop_correct for the short-delay condition,Behaviour,proportion.correct,mean,primary,Primates,ManyPrimates__2022_STMperformance,,
+stm_prop_correct_medium,as stm_prop_correct for the medium-delay condition,Behaviour,proportion.correct,mean,primary,Primates,ManyPrimates__2022_STMperformance,,
+stm_prop_correct_long,as stm_prop_correct for the long-delay condition,Behaviour,proportion.correct,mean,primary,Primates,ManyPrimates__2022_STMperformance,,
+source,source identifier,,Source,,info,Primates,ManyPrimates__2022_STMperformance,,
+Method:proportion.correct,"share of trials in which the chosen cup was the baited cup (source column correct = 1); raw performance, not corrected for age, site, task experience or test situation (these covariates are in the trial file but not modelled here)",Behaviour,,,method,Primates,ManyPrimates__2022_STMperformance,not the model-based species estimates of the paper,

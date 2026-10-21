@@ -1,0 +1,3 @@
+key_column,applies_to,separator,note
+Source_ref,"Maximum_longevity_yrs; Specimen_origin; Sample_size; Data_quality",,"AnAge labels Source as the source of the longevity record; prose personal communications remain unresolved as numeric keys."
+References,row_overall,",","AnAge does not identify which individual variables each row-level reference supports; preserve one compact row-overall attribution per key."

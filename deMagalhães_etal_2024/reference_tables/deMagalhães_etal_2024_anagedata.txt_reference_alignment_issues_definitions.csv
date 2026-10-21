@@ -1,0 +1,7 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+issue,Alignment issue class,,,,quality,all taxa,deMagalhães_etal_2024_anagedata.txt,key_not_in_pdf_bibliography or non_bibliographic_source_text,
+key_column,Dataset column containing the unresolved key or text,,,,provenance,all taxa,deMagalhães_etal_2024_anagedata.txt,,
+ref_key_or_text,Unresolved numeric key or prose source label,,,,provenance,all taxa,deMagalhães_etal_2024_anagedata.txt,Exact dataset content retained,
+n_rows,Number of downloaded dataset rows affected,,,,derived,all taxa,deMagalhães_etal_2024_anagedata.txt,,
+species,Semicolon-separated species affected,,,,derived,all taxa,deMagalhães_etal_2024_anagedata.txt,For audit and follow-up only,
+note,Reason the source did not join to a numeric PDF bibliography record,,,,quality,all taxa,deMagalhães_etal_2024_anagedata.txt,,

@@ -1090,6 +1090,177 @@ pgls_fit <- function(w, xv, yv, logscale, model) {
        lambda = lam, n = nrow(d), model = model, logscale = logscale)
 }
 
+# Basis warning for two plotted / modelled variables. Scoped by COMPARABILITY
+# FAMILY, not just by group: two variables warn when they are candidate estimates
+# of the SAME thing measured differently -- a weighed brain mass against an
+# endocranial capacity, a behavioural flicker threshold against a flicker
+# electroretinogram. Two different quantities do not warn even though their groups
+# differ: a hearing limit against a sound-localization threshold is an ordinary
+# comparison, and warning on it would be noise that teaches users to ignore the banner.
+basis_conflict <- function(a, b) {
+  pa <- look(lab_pool, a);   pb <- look(lab_pool, b)
+  fa <- look(lab_family, a); fb <- look(lab_family, b)
+  if (!(nzchar(fa) && fa == fb && nzchar(pa) && nzchar(pb) && pa != pb)) return(NULL)
+  c(if (pa %in% names(POOL_LABEL)) POOL_LABEL[[pa]] else pa,
+    if (pb %in% names(POOL_LABEL)) POOL_LABEL[[pb]] else pb)
+}
+
+# ---- Multiple regression (Regression tab) -----------------------------------
+# Y ~ X + covariates on species means. The covariates are usually body size,
+# whole-brain size, or both: "does X still predict Y once size is accounted for?"
+# Any other measurement may be added as a covariate as well.
+#
+# Brain size is offered on every basis the data carry (poolable_family =
+# brain_size) and never pooled across them -- the user picks one basis, ordered
+# by species coverage so the widest is the default, and the basis is named in the
+# model summary. Body size is any measurement in the `body size` domain.
+n_species_of <- function(labs) vapply(labs, function(l)
+  length(unique(compiled$Species[compiled$Variable == l & !is.na(compiled$Value_num)])),
+  integer(1))
+size_choices <- function(labs) {
+  if (!length(labs)) return(character(0))
+  n <- n_species_of(labs); o <- order(-n)
+  setNames(labs[o], sprintf("%s  (%s species)", labs[o], format(n[o], big.mark = ",")))
+}
+body_size_choices  <- size_choices(present[meas_ok & var_domain == "body size"])
+brain_size_choices <- size_choices(present[meas_ok & look(lab_family, present) == "brain_size"])
+
+# Species-mean wide table for any set of variables: one row per species with a
+# value for every one of them (mean if several sources), plus taxonomic order.
+species_means <- function(vars, species = NULL) {
+  d <- compiled[compiled$Variable %in% vars & !is.na(compiled$Value_num),
+                c("Species", "Variable", "Value_num")]
+  if (!is.null(species)) d <- d[d$Species %in% species, , drop = FALSE]
+  if (!nrow(d)) return(NULL)
+  m <- tapply(d$Value_num, list(d$Species, d$Variable), mean)
+  w <- data.frame(Species = rownames(m), stringsAsFactors = FALSE, check.names = FALSE)
+  for (v in vars) w[[v]] <- if (v %in% colnames(m)) unname(m[, v]) else NA_real_
+  w <- w[stats::complete.cases(w[vars]), , drop = FALSE]
+  w$Order <- unname(tax_order[w$Species]); w$Order[is.na(w$Order)] <- "Unknown"
+  w
+}
+
+# Fit Y ~ X + covariates by OLS or PGLS. `w` is a species_means() table. Columns
+# are renamed y / x / c1.. for the formula (labels like "Body_Mass (g)" are not
+# syntactic), and every result is mapped back to the variable labels.
+#
+# Besides the full model it fits the covariates-only model, which gives the two
+# numbers that actually answer "after controlling for size": the change in fit
+# from adding X (AIC, likelihood-ratio test, partial R2 for OLS), and each
+# species' residual from the covariates-only model -- Y relative to size.
+reg_fit <- function(w, y, x, covs, logscale, method) {
+  vars <- c(y, x, covs)
+  nm   <- c("y", "x", if (length(covs)) paste0("c", seq_along(covs)))
+  d <- data.frame(Species = w$Species, Order = w$Order, stringsAsFactors = FALSE)
+  for (i in seq_along(vars)) d[[nm[i]]] <- w[[vars[i]]]
+  n_dropped <- 0L
+  if (isTRUE(logscale)) {
+    pos <- Reduce(`&`, lapply(nm, function(v) d[[v]] > 0))
+    n_dropped <- sum(!pos)
+    d <- d[pos, , drop = FALSE]
+    for (v in nm) d[[v]] <- log10(d[[v]])
+  }
+  n_avail <- nrow(d)
+  phy <- NULL
+  if (method != "OLS") {
+    if (!have_phylo_pkgs)
+      return(list(err = "Phylogenetic packages (ape, nlme) are not installed on the server."))
+    if (!tree_ready)
+      return(list(err = "No mammal tree found. Add _keys/mammal_tree.nwk (see PHYLO_SETUP.md)."))
+    d$tip <- tree$tip.label[match(tolower(d$Species), tolower(tip_binom(tree$tip.label)))]
+    d <- d[!is.na(d$tip) & !duplicated(d$tip), , drop = FALSE]
+    if (nrow(d) >= 3) {
+      phy <- ape::keep.tip(tree, d$tip)
+      d <- d[match(phy$tip.label, d$tip), , drop = FALSE]
+      rownames(d) <- d$tip
+    }
+  }
+  k <- length(nm) - 1L
+  if (nrow(d) < k + 3)
+    return(list(err = sprintf(paste0("Only %d species have every variable%s; need at least %d ",
+                                     "for %d predictor(s)."),
+                              nrow(d), if (method != "OLS") " and match the tree" else "",
+                              k + 3, k)))
+  f_full <- stats::reformulate(nm[-1], "y")
+  f_red  <- if (length(covs)) stats::reformulate(nm[-(1:2)], "y") else y ~ 1
+  # Pagel's lambda is estimated by maximising the profile likelihood over [0, 1]
+  # with lambda FIXED in each gls() call. Letting gls() estimate lambda itself
+  # (fixed = FALSE, as pgls_fit() does) fails with "false convergence" or
+  # "infinite values" on many multi-predictor sets, whatever the starting value;
+  # a fixed-lambda fit is plain GLS and always converges. The returned fit
+  # carries the chosen lambda as attr "lambda".
+  gls_at <- function(f, l) tryCatch(
+    nlme::gls(f, data = d, method = "ML",
+              correlation = ape::corPagel(l, phy, form = ~tip, fixed = TRUE)),
+    error = function(e) NULL)
+  fit_one <- function(f) {
+    if (method == "OLS") return(stats::lm(f, data = d))
+    if (method == "Brownian")
+      return(tryCatch(nlme::gls(f, data = d, method = "ML",
+                                correlation = ape::corBrownian(1, phy, form = ~tip)),
+                      error = function(e) NULL))
+    ll <- function(l) { g <- gls_at(f, l); if (is.null(g)) -Inf else as.numeric(stats::logLik(g)) }
+    o <- stats::optimize(ll, c(0, 1), maximum = TRUE)
+    cand <- c(0, o$maximum, 1)                  # optimize() never evaluates the bounds
+    best <- cand[which.max(vapply(cand, ll, numeric(1)))]
+    fit <- gls_at(f, best)
+    if (!is.null(fit)) attr(fit, "lambda") <- best
+    fit
+  }
+  full <- fit_one(f_full); red <- fit_one(f_red)
+  if (is.null(full) || is.null(red))
+    return(list(err = "PGLS did not converge for these variables."))
+
+  tt <- if (method == "OLS") summary(full)$coefficients else summary(full)$tTable
+  coef_tab <- data.frame(Term = c("(Intercept)", x, covs),
+                         Role = c("intercept", "predictor", rep("covariate", length(covs))),
+                         Estimate = tt[, 1], SE = tt[, 2], t = tt[, 3], p = tt[, 4],
+                         stringsAsFactors = FALSE, row.names = NULL)
+  # Variance inflation: how much of each predictor is already explained by the
+  # others. Body and brain size are close to collinear across mammals, so this is
+  # the number that says whether "controlling for both" can be estimated at all.
+  coef_tab$VIF <- NA_real_
+  if (k > 1) coef_tab$VIF[-1] <- vapply(nm[-1], function(p) {
+    r2 <- summary(stats::lm(stats::reformulate(setdiff(nm[-1], p), p), data = d))$r.squared
+    1 / (1 - r2)
+  }, numeric(1))
+
+  ll_f <- as.numeric(stats::logLik(full)); ll_r <- as.numeric(stats::logLik(red))
+  lr <- 2 * (ll_f - ll_r)
+  lam <- function(fit) if (method != "Pagel") NA_real_ else attr(fit, "lambda")
+  r2 <- adj_r2 <- partial_r2 <- NA_real_
+  if (method == "OLS") {
+    s <- summary(full); r2 <- s$r.squared; adj_r2 <- s$adj.r.squared
+    sse_f <- sum(stats::resid(full)^2); sse_r <- sum(stats::resid(red)^2)
+    partial_r2 <- (sse_r - sse_f) / sse_r
+  }
+
+  # Added-variable (partial regression) coordinates: Y and X each with the
+  # covariates regressed out. With no covariates these are just the (log) values.
+  if (length(covs)) {
+    rx <- stats::resid(stats::lm(stats::reformulate(nm[-(1:2)], "x"), data = d))
+    ry <- stats::resid(stats::lm(f_red, data = d))
+  } else { rx <- d$x; ry <- d$y }
+  b <- tt[2, 1]
+  sp <- data.frame(Species = d$Species, Order = d$Order, stringsAsFactors = FALSE)
+  for (i in seq_along(vars)) sp[[vars[i]]] <- w[[vars[i]]][match(d$Species, w$Species)]
+  sp$Y_resid_on_covariates <- as.numeric(stats::resid(red))
+  sp$Fitted_full <- as.numeric(stats::fitted(full))
+  sp$Resid_full  <- as.numeric(stats::resid(full))
+
+  list(method = method, logscale = isTRUE(logscale), vars = vars, covs = covs,
+       n = nrow(d), n_avail = n_avail, n_dropped = n_dropped,
+       coef = coef_tab, slope = b, p = tt[2, 4],
+       r2 = r2, adj_r2 = adj_r2, partial_r2 = partial_r2,
+       aic_full = stats::AIC(full), aic_red = stats::AIC(red),
+       lr = lr, lr_p = stats::pchisq(lr, df = 1, lower.tail = FALSE),
+       lambda = lam(full), lambda_red = lam(red),
+       av = data.frame(Species = d$Species, Order = d$Order, rx = as.numeric(rx),
+                       ry = as.numeric(ry), stringsAsFactors = FALSE),
+       av_intercept = mean(ry) - b * mean(rx),
+       species = sp)
+}
+
 # ---- UI ---------------------------------------------------------------------
 
 ui <- page_navbar(
@@ -1183,8 +1354,90 @@ ui <- page_navbar(
           helpText("Each point is a species with values for both variables ",
                    "(mean if several sources). Filter or colour by taxonomic ",
                    "order; enable PGLS to fit a phylogenetically-corrected ",
-                   "regression (orange = OLS, black = PGLS)."),
+                   "regression (orange = OLS, black = PGLS). To control for body ",
+                   "or brain size, or to add further variables, use the ",
+                   strong("Regression"), " tab."),
           plotOutput("p_plot", height = "540px")
+        )
+      )
+    )
+  ),
+
+  # --------------------------------------------------------------- Regression --
+  nav_panel(
+    title = "Regression",
+    layout_sidebar(
+      sidebar = sidebar(
+        width = 360,
+        helpText("Does X predict Y once size is accounted for? Fits ",
+                 tags$code("Y ~ X + covariates"), " on species means, by OLS or ",
+                 "phylogenetic GLS. Pick body size, brain size or both as the ",
+                 "control, and optionally add further covariates."),
+        selectizeInput("r_y", "Response (Y)", choices = NULL),
+        selectizeInput("r_x", "Predictor of interest (X)", choices = NULL),
+        selectInput("r_control", "Control for",
+                    choices = c("Nothing (simple regression)" = "none",
+                                "Body size" = "body",
+                                "Brain size" = "brain",
+                                "Body size and brain size" = "both"),
+                    selected = "body"),
+        conditionalPanel(
+          "input.r_control == 'body' || input.r_control == 'both'",
+          selectInput("r_body", "Body-size variable", choices = body_size_choices)),
+        conditionalPanel(
+          "input.r_control == 'brain' || input.r_control == 'both'",
+          selectInput("r_brain", "Brain-size variable (one basis; never pooled)",
+                      choices = brain_size_choices)),
+        selectizeInput("r_other", "Additional covariate(s) (optional)",
+                       choices = NULL, multiple = TRUE,
+                       options = list(maxItems = 2,
+                                      placeholder = "any other measurement")),
+        checkboxInput("r_log", "Log₁₀ all variables", value = TRUE),
+        radioButtons("r_method", "Method",
+                     choices = c("Ordinary least squares" = "OLS",
+                                 "PGLS — Pagel's λ" = "Pagel",
+                                 "PGLS — Brownian motion" = "Brownian"),
+                     selected = "OLS"),
+        hr(),
+        selectInput("r_clade", "Clade (taxonomic order)",
+                    choices = clade_choices, selected = "All"),
+        selectInput("r_cohort", "Restrict to cohort",
+                    choices = c("All species in the compilation" = "", cohort_choices)),
+        downloadButton("r_download", "Download species data + residuals (CSV)",
+                       class = "btn-primary btn-sm")
+      ),
+      uiOutput("r_warnings"),
+      navset_card_tab(
+        nav_panel(
+          "Model",
+          uiOutput("r_summary"),
+          DTOutput("r_coef"),
+          uiOutput("r_compare")
+        ),
+        nav_panel(
+          "Partial plot",
+          layout_columns(
+            col_widths = c(4, 8),
+            checkboxInput("r_colour", "Colour by order", value = TRUE),
+            selectizeInput("r_label", "Label species", choices = NULL, multiple = TRUE,
+                           options = list(placeholder = "type to label points"))
+          ),
+          plotOutput("r_plot", height = "540px"),
+          helpText("Added-variable plot: Y and X each with the covariates regressed ",
+                   "out (OLS residuals), so the slope shown is X's effect holding ",
+                   "the covariates fixed. With no covariates this is the plain ",
+                   "scatter. The line is the fitted model's X coefficient ",
+                   "(orange = OLS, black = PGLS).")
+        ),
+        nav_panel(
+          "Species",
+          p(class = "text-muted",
+            "One row per species in the model: the raw species means, then ",
+            tags$code("Y_resid_on_covariates"), " — Y relative to the ",
+            "covariates alone (for example, brain-part size relative to body ",
+            "size) — and the full model's fitted values and residuals, in ",
+            "the transformed (log₁₀ if chosen) scale."),
+          DTOutput("r_species")
         )
       )
     )
@@ -1352,6 +1605,13 @@ ui <- page_navbar(
         "and behavioural traits relating to body and ecology therefore sit with ",
         "their own kind (body size, life history, diet & ecology, metabolism, ",
         "behaviour & cognition) instead of being pooled into one trait bucket."),
+      h5("Regression"),
+      p("Multiple regression on species means: a response, a predictor of ",
+        "interest, and covariates — body size, whole-brain size (on one ",
+        "measurement basis at a time), both, or any other measurement. Fitted by ",
+        "OLS or phylogenetic GLS, with an added-variable plot, the gain in fit ",
+        "from the predictor over the covariates alone, collinearity (VIF) checks, ",
+        "and each species' residual on the covariates for download."),
       h5("Cohort coverage"),
       p("Trait coverage for named species sets \u2014 the species a project ",
         "actually works on, rather than the whole compilation. For each ",
@@ -1581,22 +1841,14 @@ server <- function(input, output, session) {
     a <- row1("X", input$p_x); b <- row1("Y", input$p_y)
     # Basis warning: the two axes are whole-brain size on DIFFERENT bases, so the
     # relationship between them is partly an artefact of what each one includes.
-    # Scoped by COMPARABILITY FAMILY, not just by group. Two variables warn when they are
-    # candidate estimates of the SAME thing measured differently -- a weighed brain mass
-    # against an endocranial capacity, a behavioural flicker threshold against a flicker
-    # electroretinogram. Two different quantities do not warn even though their groups
-    # differ: a hearing limit against a sound-localization threshold is an ordinary
-    # comparison, and warning on it would be noise that teaches users to ignore the banner.
-    px <- look(lab_pool, input$p_x);   py <- look(lab_pool, input$p_y)
-    fx <- look(lab_family, input$p_x); fy <- look(lab_family, input$p_y)
+    # See basis_conflict() for why it is scoped by comparability family.
+    bc <- basis_conflict(input$p_x, input$p_y)
     warn <- NULL
-    if (nzchar(fx) && fx == fy && nzchar(px) && nzchar(py) && px != py) {
-      nx <- if (px %in% names(POOL_LABEL)) POOL_LABEL[[px]] else px
-      ny <- if (py %in% names(POOL_LABEL)) POOL_LABEL[[py]] else py
+    if (!is.null(bc)) {
       warn <- div(class = "alert alert-warning py-1 px-2 small mb-2",
                   tags$strong("Incompatible measurement bases. "),
                   sprintf("X is %s; Y is %s. These are not the same quantity, so they are ",
-                          nx, ny),
+                          bc[1], bc[2]),
                   "kept as separate variables and are not pooled anywhere in the app. ",
                   "See the Glossary tab and _keys/brain_size_basis.csv.")
     }
@@ -1651,6 +1903,191 @@ server <- function(input, output, session) {
                            colour = "black", linewidth = 0.8)
     g
   })
+
+  # ---- Regression: Y ~ X + covariates
+  updateSelectizeInput(session, "r_y", choices = var_choices_meas, server = TRUE,
+                       selected = "Neocortex_Vol.mm3")
+  updateSelectizeInput(session, "r_x", choices = var_choices_meas, server = TRUE,
+                       selected = unname(brain_size_choices[1]))
+  updateSelectizeInput(session, "r_other", choices = var_choices_meas, server = TRUE)
+
+  # Model terms. A covariate that is also Y or X is dropped (and said so), since
+  # "X controlling for X" is not a model.
+  r_terms <- reactive({
+    req(input$r_y, input$r_x)
+    ctl <- input$r_control
+    covs <- c(if (ctl %in% c("body", "both")) input$r_body,
+              if (ctl %in% c("brain", "both")) input$r_brain,
+              input$r_other)
+    covs <- unique(covs[!is.na(covs) & nzchar(covs)])
+    list(y = input$r_y, x = input$r_x,
+         covs = setdiff(covs, c(input$r_y, input$r_x)),
+         dup  = intersect(covs, c(input$r_y, input$r_x)))
+  })
+
+  r_data <- reactive({
+    t <- r_terms()
+    validate(need(t$y != t$x, "Choose different variables for Y and X."))
+    coh <- if (!is.null(input$r_cohort) && nzchar(input$r_cohort))
+      unique(unlist(cohort_species(input$r_cohort)$labels, use.names = FALSE)) else NULL
+    w <- species_means(c(t$y, t$x, t$covs), species = coh)
+    if (!is.null(w) && !is.null(input$r_clade) && input$r_clade != "All")
+      w <- w[w$Order == input$r_clade, , drop = FALSE]
+    validate(need(!is.null(w) && nrow(w) > 0,
+                  "No species have values for every selected variable."))
+    w
+  })
+
+  r_fit <- reactive({
+    t <- r_terms()
+    reg_fit(r_data(), t$y, t$x, t$covs, input$r_log, input$r_method)
+  })
+  r_ok <- reactive({
+    f <- r_fit()
+    validate(need(is.null(f$err), f$err))
+    f
+  })
+
+  observeEvent(r_ok(), {
+    sp <- sort(r_ok()$species$Species)
+    updateSelectizeInput(session, "r_label", choices = sp,
+                         selected = intersect(isolate(input$r_label), sp), server = TRUE)
+  })
+
+  # Problems with the model's design, known before anything is fitted.
+  output$r_warnings <- renderUI({
+    t <- r_terms()
+    vars <- c(Y = t$y, X = t$x, setNames(t$covs, rep("covariate", length(t$covs))))
+    out <- list()
+    if (length(t$dup))
+      out <- c(out, list(div(class = "alert alert-info py-1 px-2 small mb-2",
+        "Dropped from the covariates because it is already Y or X: ",
+        tags$code(paste(t$dup, collapse = ", ")))))
+    # same-quantity-different-basis, across every pair of terms
+    if (length(vars) > 1) for (i in seq_along(vars)[-length(vars)]) for (j in (i + 1):length(vars)) {
+      bc <- basis_conflict(vars[i], vars[j])
+      if (!is.null(bc))
+        out <- c(out, list(div(class = "alert alert-warning py-1 px-2 small mb-2",
+          tags$strong("Incompatible measurement bases. "),
+          sprintf("%s (%s) is %s; %s (%s) is %s. ", vars[i], names(vars)[i], bc[1],
+                  vars[j], names(vars)[j], bc[2]),
+          "They estimate the same quantity on different bases.")))
+    }
+    # Part-whole: a brain structure regressed on whole-brain size includes itself
+    # in the covariate, which inflates the covariate's coefficient.
+    brain_cov <- t$covs[look(lab_family, t$covs) == "brain_size"]
+    part <- c(t$y, t$x)[look(lab_domain, c(t$y, t$x)) == "brain structure & size" &
+                         look(lab_family, c(t$y, t$x)) != "brain_size"]
+    if (length(brain_cov) && length(part))
+      out <- c(out, list(div(class = "alert alert-warning py-1 px-2 small mb-2",
+        tags$strong("Part-whole covariate. "),
+        sprintf("%s is part of the brain, so it is included in %s. ",
+                paste(part, collapse = " and "), paste(brain_cov, collapse = ", ")),
+        "The brain-size coefficient is partly the structure regressed on itself; ",
+        "body size is the usual control for a brain part.")))
+    if (!length(out)) NULL else tagList(out)
+  })
+
+  output$r_summary <- renderUI({
+    f <- r_fit()
+    if (!is.null(f$err)) return(div(class = "alert alert-warning", f$err))
+    lg <- function(v) if (f$logscale) paste0("log₁₀(", v, ")") else v
+    method <- switch(f$method, OLS = "Ordinary least squares",
+                     Pagel = sprintf("PGLS, Pagel's λ = %.2f", f$lambda),
+                     Brownian = "PGLS, Brownian motion")
+    brain_cov <- f$covs[look(lab_family, f$covs) == "brain_size"]
+    vif <- f$coef$VIF[-1]; names(vif) <- f$coef$Term[-1]
+    tagList(
+      div(class = "alert alert-light border py-2 px-2 mb-2",
+        tags$div(tags$strong("Model: "),
+                 tags$code(paste0(lg(f$vars[1]), " ~ ",
+                                  paste(vapply(f$vars[-1], lg, character(1)), collapse = " + ")))),
+        tags$div(class = "small", method, sprintf(" — n = %d species", f$n),
+                 if (f$n < f$n_avail) sprintf(" (of %d with every variable; the rest are not in the tree)",
+                                              f$n_avail),
+                 if (f$n_dropped) sprintf("; %d species dropped for values ≤ 0 under log", f$n_dropped)),
+        tags$div(
+          tags$strong(sprintf("X effect: slope = %.3g, p = %.3g", f$slope, f$p), .noWS = "after"),
+          paste0(
+            if (length(f$covs)) paste0(", holding ", paste(f$covs, collapse = " and "), " fixed")
+            else " (no covariates)",
+            if (f$method == "OLS") sprintf(". R² = %.3f (adjusted %.3f); partial R² of X = %.3f.",
+                                           f$r2, f$adj_r2, f$partial_r2) else ".")),
+        if (length(brain_cov)) tags$div(class = "small text-muted",
+          "Brain-size basis: ", paste(vapply(brain_cov, function(b) {
+            g <- look(lab_pool, b); if (g %in% names(POOL_LABEL)) POOL_LABEL[[g]] else g
+          }, character(1)), collapse = "; "), ".")),
+      if (any(vif > 10, na.rm = TRUE))
+        div(class = "alert alert-warning py-1 px-2 small mb-2",
+            tags$strong("Strong collinearity. "),
+            sprintf("VIF %s. ", paste(sprintf("%s = %.0f", names(vif)[vif > 10], vif[vif > 10]),
+                                      collapse = ", ")),
+            "These predictors are close to redundant (body and brain size usually are), ",
+            "so their separate coefficients are poorly determined even when the model fits well.")
+    )
+  })
+
+  output$r_coef <- renderDT({
+    f <- r_ok()
+    tab <- f$coef
+    tab$Term <- ifelse(tab$Term == "(Intercept)", tab$Term, label_html(tab$Term))
+    datatable(tab, rownames = FALSE, escape = FALSE,
+              options = list(dom = "t", ordering = FALSE, scrollX = TRUE)) |>
+      formatSignif(c("Estimate", "SE", "t", "p", "VIF"), digits = 3)
+  })
+
+  output$r_compare <- renderUI({
+    f <- r_ok()
+    base <- if (length(f$covs)) "the covariates alone" else "an intercept-only model"
+    div(class = "alert alert-light border py-2 px-2 mt-2 small",
+        tags$strong("Adding X: "),
+        sprintf("compared with %s, AIC %.1f → %.1f (ΔAIC = %.1f); ",
+                base, f$aic_red, f$aic_full, f$aic_full - f$aic_red),
+        sprintf("likelihood-ratio χ²(1) = %.2f, p = %.3g.", f$lr, f$lr_p),
+        if (f$method == "Pagel")
+          sprintf(" λ is estimated separately in each model (%.2f without X).", f$lambda_red),
+        if (f$logscale) tags$div(class = "text-muted mt-1",
+          "On log₁₀ scales each slope is an allometric exponent: the % change ",
+          "in Y per % change in that predictor, the others held fixed."))
+  })
+
+  output$r_plot <- renderPlot({
+    f <- r_ok(); a <- f$av
+    lg <- function(v) if (f$logscale) paste0("log10 ", v) else v
+    has_c <- length(f$covs) > 0
+    xl <- if (has_c) paste0(lg(f$vars[2]), "  |  covariates (residual)") else lg(f$vars[2])
+    yl <- if (has_c) paste0(lg(f$vars[1]), "  |  covariates (residual)") else lg(f$vars[1])
+    colour_by <- isTRUE(input$r_colour) && length(unique(a$Order)) > 1
+    g <- ggplot(a, aes(x = rx, y = ry))
+    g <- if (colour_by) g + geom_point(aes(colour = Order), alpha = 0.8, size = 2.4)
+         else g + geom_point(alpha = 0.75, size = 2.4, colour = "#2c7fb8")
+    if (colour_by) g <- g + labs(colour = "Order")
+    g <- g + geom_abline(intercept = f$av_intercept, slope = f$slope,
+                         colour = if (f$method == "OLS") "#d95f0e" else "black",
+                         linewidth = 0.8)
+    lab <- a[a$Species %in% input$r_label, , drop = FALSE]
+    if (nrow(lab))
+      g <- g + geom_text(data = lab, aes(label = Species), size = 3.6,
+                         vjust = -0.8, check_overlap = TRUE)
+    g + labs(x = xl, y = yl,
+             subtitle = sprintf("%d species; slope = %.3g, p = %.3g%s", f$n, f$slope, f$p,
+                                if (has_c) paste0(", controlling for ",
+                                                  paste(f$covs, collapse = " + ")) else "")) +
+      theme_minimal(base_size = 14)
+  })
+
+  output$r_species <- renderDT({
+    sp <- r_ok()$species
+    num <- names(sp)[vapply(sp, is.numeric, logical(1))]
+    datatable(sp, rownames = FALSE, filter = "top",
+              options = list(pageLength = 25, scrollX = TRUE)) |>
+      formatSignif(num, digits = 4)
+  })
+
+  output$r_download <- downloadHandler(
+    filename = function() sprintf("evom1_regression_%s_%s.csv", input$r_method, Sys.Date()),
+    content  = function(file) write.csv(r_ok()$species, file, row.names = FALSE)
+  )
 
   # ---- Glossary: abbreviations
   output$g_table <- renderDT({

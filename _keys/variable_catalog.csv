@@ -375,14 +375,14 @@ Jacobs_etal_2001,Jacobs_etal_2001_Table1,Body_weight_kg,NA,(structure-agnostic; 
 Jacobs_etal_2018,Jacobs_etal_2018_Table3,body_mass_g,NA,(structure-agnostic; see data columns),NA,Mass.g,mass,point,info,Carnivores + Primates,body mass of the specimen
 JardimMesseder_etal_2017,JardimMesseder_etal_2017_Table1,M,NA,(structure-agnostic; see data columns),NA,Mass.g,mass,NA,primary,Carnivores & other companion mammals,mass of the structure
 JardimMesseder_etal_2017,JardimMesseder_etal_2017_Table1,M,NA,(structure-agnostic; see data columns),NA,Mass.kg,mass,NA,primary,Carnivores & other companion mammals,mass of the structure
-Kruska_Rohrs_1974,Kruska_Rohrs_1974,NA,NA,(structure-agnostic; see data columns),NA,Brain_Mass.g,mass,NA,NA,NA,Fresh/fixed brain weight in grams
 Kruska_Rohrs_1974,Kruska_Rohrs_1974_Table2,total_brain_weight_g,NA,(structure-agnostic; see data columns),NA,Mass.g,mass,single specimen value,primary,"pig, feral, Galapagos Islands, as printed",Fresh brain weight for the specimen (printed)
 Kruska_Rohrs_1974,Kruska_Rohrs_1974_Table2,brain_weight_g,NA,(structure-agnostic; see data columns),NA,Mass.g,mass,single specimen value,primary,"pig, feral, Galapagos Islands, as printed",Brain weight for the specimen as printed in the table footer (g)
 Kruska_Rohrs_1974,Kruska_Rohrs_1974_Table3,total_brain_weight_g,NA,(structure-agnostic; see data columns),NA,Mass.g,mass,single specimen value,primary,"pig, domestic, as printed",Fresh brain weight for the specimen (printed)
 Kruska_Rohrs_1974,Kruska_Rohrs_1974_Table3,brain_weight_g,NA,(structure-agnostic; see data columns),NA,Mass.g,mass,single specimen value,primary,"pig, domestic, as printed",Brain weight for the specimen as printed in the table footer (g)
-Kruska__2014,Kruska__2014,NA,NA,(structure-agnostic; see data columns),NA,Brain_Mass.g,mass,NA,NA,NA,Fresh total brain weight in grams
+Kruska_Rohrs_1974,Kruska_Rohrs_1974,NA,NA,(structure-agnostic; see data columns),NA,Brain_Mass.g,mass,NA,NA,NA,Fresh/fixed brain weight in grams
 Kruska__2014,Kruska__2014_Table2,total_brain_weight_g,NA,(structure-agnostic; see data columns),NA,Mass.g,mass,single specimen value,primary,"Cavia aperea (wild cavy), as printed",Fresh brain weight for the specimen (printed)
 Kruska__2014,Kruska__2014_Table3,total_brain_weight_g,NA,(structure-agnostic; see data columns),NA,Mass.g,mass,single specimen value,primary,"Cavia aperea f. porcellus (guinea pig), as printed",Fresh brain weight for the specimen (printed)
+Kruska__2014,Kruska__2014,NA,NA,(structure-agnostic; see data columns),NA,Brain_Mass.g,mass,NA,NA,NA,Fresh total brain weight in grams
 Kverkova_etal_2018,Kverkova_etal_2018_TableS1,Mass.g,NA,(structure-agnostic; see data columns),NA,Mass.g,mass,NA,primary,Rodents (African mole-rats +),mass in grams
 Kverkova_etal_2018,Kverkova_etal_2018_FigS1,mass,NA,(structure-agnostic; see data columns),NA,Mass.g,mass,NA,primary,Rodents (African mole-rats +),mass (g)
 Lewitus_etal_2014,Lewitus_etal_2014_TableS1,Neonate_brain_weight_g,NA,(structure-agnostic; see data columns),NA,Mass.g,mass,NA,secondary,Mammals,Neonate brain weight g
@@ -470,7 +470,6 @@ Jacobs_etal_2015,Jacobs_etal_2015_Table3,Block within Brain Wald chi2,NA,(struct
 Balzeau_etal_2012,Balzeau_etal_2012_Table3,Mean_surface_sizecorrected,NA,(structure-agnostic; see data columns),NA,size.corrected.surface,surface area,Mean,secondary,Homo,mean size-corrected surface dimension of the lobe
 Balzeau_etal_2012,Balzeau_etal_2012_Table3,V_star,NA,(structure-agnostic; see data columns),NA,size.corrected.surface,surface area,V*,secondary,Homo,size-corrected coefficient of variation of the lobe surface
 Dunbar__1992,Dunbar__1992_Table1,range_area_ha,NA,(structure-agnostic; see data columns),NA,Area,surface area,NA,primary,Primates,Range area
-Kaskan_etal_2005,Kaskan_etal_2005,NA,NA,(structure-agnostic; see data columns),NA,RetinalArea.mm2,surface area,NA,NA,NA,Total retinal area of the specimen
 Kaskan_etal_2005,Kaskan_etal_2005,NA,NA,(structure-agnostic; see data columns),NA,V1_areaname,surface area,NA,NA,NA,Author-specific name used for primary visual cortex in that species' original source map
 Kaskan_etal_2005,Kaskan_etal_2005,NA,NA,(structure-agnostic; see data columns),NA,V2_areaname,surface area,NA,NA,NA,Author-specific name for secondary visual cortex
 Kaskan_etal_2005,Kaskan_etal_2005,NA,NA,(structure-agnostic; see data columns),NA,VisualOther_areaname,surface area,NA,NA,NA,Other visual areas identified
@@ -482,6 +481,7 @@ Kaskan_etal_2005,Kaskan_etal_2005,NA,NA,(structure-agnostic; see data columns),N
 Kaskan_etal_2005,Kaskan_etal_2005,NA,NA,(structure-agnostic; see data columns),NA,SSOther_areaname,surface area,NA,NA,NA,Other somatosensory areas identified
 Kaskan_etal_2005,Kaskan_etal_2005,NA,NA,(structure-agnostic; see data columns),NA,M_areaname,surface area,NA,NA,NA,Author-specific name for primary motor cortex
 Kaskan_etal_2005,Kaskan_etal_2005,NA,NA,(structure-agnostic; see data columns),NA,MotorOther_areaname,surface area,NA,NA,NA,Other motor areas identified
+Kaskan_etal_2005,Kaskan_etal_2005,NA,NA,(structure-agnostic; see data columns),NA,RetinalArea.mm2,surface area,NA,NA,NA,Total retinal area of the specimen
 Krubitzer_Kaas_1990,Krubitzer_Kaas_1990_Table1,pct_total_8fields,NA,(structure-agnostic; see data columns),NA,pct.neocortex_surface,surface area,NA,primary,Primates,Total column as printed = sum of the eight visual fields as percent of neocortex
 deJager_etal_2022,deJager_etal_2022,mean_mm2,NA,(structure-agnostic; see data columns),NA,area.mm2,surface area,mean,primary,Homo sapiens,arithmetic mean cross-sectional area across the sample
 deJager_etal_2022,deJager_etal_2022,min_mm2,NA,(structure-agnostic; see data columns),NA,area.mm2,surface area,min,primary,Homo sapiens,minimum of the observed range
@@ -505,14 +505,12 @@ Kochiyama_etal_2018,Kochiyama_etal_2018_Figure3,MH_rel,NA,(structure-agnostic; s
 Kochiyama_etal_2018,Kochiyama_etal_2018_Figure3legend,MH_mean_Vol.cc,NA,(structure-agnostic; see data columns),NA,Vol.cc,volume,Mean,primary,Homo sapiens,mean modern-human region volume (as printed)
 Kochiyama_etal_2018,Kochiyama_etal_2018_Figure3legend,MH_sd_Vol.cc,NA,(structure-agnostic; see data columns),NA,Vol.cc,volume,SD,primary,Homo sapiens,s.d. of modern-human region volume
 Kochiyama_etal_2018,Kochiyama_etal_2018_Figure3legend,MH_mean_Vol.mm3,NA,(structure-agnostic; see data columns),NA,Vol.mm3,volume,Mean,primary,Homo sapiens,MH mean volume in project units
-Kruska_Rohrs_1974,Kruska_Rohrs_1974,NA,NA,(structure-agnostic; see data columns),NA,Volume.mm3,volume,NA,NA,NA,Volume of the structure in mm3 (planimetric/photographic reconstruction method)
-Kruska_Rohrs_1974,Kruska_Rohrs_1974,NA,NA,(structure-agnostic; see data columns),NA,TotalBrainVolume.mm3,volume,NA,NA,NA,"Printed total brain volume, mm3"
 Kruska_Rohrs_1974,Kruska_Rohrs_1974_Table2,total_brain_volume_mm3,NA,(structure-agnostic; see data columns),NA,Vol.mm3,volume,single specimen value,primary,"pig, feral, Galapagos Islands, as printed",Total brain volume for the specimen (printed)
 Kruska_Rohrs_1974,Kruska_Rohrs_1974_Table2,brain_volume_mm3,NA,(structure-agnostic; see data columns),NA,Vol.mm3,volume,single specimen value,primary,"pig, feral, Galapagos Islands, as printed",Brain volume for the specimen as printed in the table footer (mm3)
 Kruska_Rohrs_1974,Kruska_Rohrs_1974_Table3,total_brain_volume_mm3,NA,(structure-agnostic; see data columns),NA,Vol.mm3,volume,single specimen value,primary,"pig, domestic, as printed",Total brain volume for the specimen (printed)
 Kruska_Rohrs_1974,Kruska_Rohrs_1974_Table3,brain_volume_mm3,NA,(structure-agnostic; see data columns),NA,Vol.mm3,volume,single specimen value,primary,"pig, domestic, as printed",Brain volume for the specimen as printed in the table footer (mm3)
-Kruska__2014,Kruska__2014,NA,NA,(structure-agnostic; see data columns),NA,Volume.mm3,volume,NA,NA,NA,"Fresh (unfixed) volume of the structure, mm3, from serial-section reconstruction"
-Kruska__2014,Kruska__2014,NA,NA,(structure-agnostic; see data columns),NA,TotalBrainVolume.mm3,volume,NA,NA,NA,"Fresh total brain volume (before subtracting rest tissue and ventricle), mm3"
+Kruska_Rohrs_1974,Kruska_Rohrs_1974,NA,NA,(structure-agnostic; see data columns),NA,Volume.mm3,volume,NA,NA,NA,Volume of the structure in mm3 (planimetric/photographic reconstruction method)
+Kruska_Rohrs_1974,Kruska_Rohrs_1974,NA,NA,(structure-agnostic; see data columns),NA,TotalBrainVolume.mm3,volume,NA,NA,NA,"Printed total brain volume, mm3"
 Kruska__2014,Kruska__2014_Table2,total_brain_volume_mm3,NA,(structure-agnostic; see data columns),NA,Vol.mm3,volume,single specimen value,primary,"Cavia aperea (wild cavy), as printed",Total brain volume for the specimen (printed)
 Kruska__2014,Kruska__2014_Table2,rest_tissue_mm3,NA,(structure-agnostic; see data columns),NA,Vol.mm3,volume,single specimen value,primary,"Cavia aperea (wild cavy), as printed",Rest tissue volume for the specimen (printed)
 Kruska__2014,Kruska__2014_Table2,ventricle_mm3,NA,(structure-agnostic; see data columns),NA,Vol.mm3,volume,single specimen value,primary,"Cavia aperea (wild cavy), as printed",Ventricular volume for the specimen (printed)
@@ -521,6 +519,8 @@ Kruska__2014,Kruska__2014_Table3,total_brain_volume_mm3,NA,(structure-agnostic; 
 Kruska__2014,Kruska__2014_Table3,rest_tissue_mm3,NA,(structure-agnostic; see data columns),NA,Vol.mm3,volume,single specimen value,primary,"Cavia aperea f. porcellus (guinea pig), as printed",Rest tissue volume for the specimen (printed)
 Kruska__2014,Kruska__2014_Table3,ventricle_mm3,NA,(structure-agnostic; see data columns),NA,Vol.mm3,volume,single specimen value,primary,"Cavia aperea f. porcellus (guinea pig), as printed",Ventricular volume for the specimen (printed)
 Kruska__2014,Kruska__2014_Table3,pure_brain_tissue_mm3,NA,(structure-agnostic; see data columns),NA,Vol.mm3,volume,single specimen value,primary,"Cavia aperea f. porcellus (guinea pig), as printed","Pure brain tissue volume for the specimen (printed); equals total - rest - ventricle, checked in the reader"
+Kruska__2014,Kruska__2014,NA,NA,(structure-agnostic; see data columns),NA,Volume.mm3,volume,NA,NA,NA,"Fresh (unfixed) volume of the structure, mm3, from serial-section reconstruction"
+Kruska__2014,Kruska__2014,NA,NA,(structure-agnostic; see data columns),NA,TotalBrainVolume.mm3,volume,NA,NA,NA,"Fresh total brain volume (before subtracting rest tissue and ventricle), mm3"
 Kverkova_etal_2018,Kverkova_etal_2018_TableS1,Vol.mm3,NA,(structure-agnostic; see data columns),NA,Vol.mm3,volume,NA,primary,Rodents (African mole-rats +),absolute structure volumes in mm3
 Pirlot_Kamiya_1982,Pirlot_Kamiya_1982,NA,NA,(structure-agnostic; see data columns),NA,Volume.mm3,volume,NA,NA,NA,"Absolute volume of the component, mm3 (unit inferred from house convention for this lineage of Stephan/Pirlot papers; not printed explicitly in this table, but consistent with the group's other volumetric tables)"
 Pirlot_Kamiya_1982,Pirlot_Kamiya_1982,NA,NA,(structure-agnostic; see data columns),NA,Volume.mm3,volume,NA,NA,NA,Low end of the printed range for the Pteropodids average row only
@@ -618,10 +618,10 @@ Reep_etal_2007,Reep_etal_2007_Table1,amygdala_mm3,Amygdala,Amygdala,cell_counts,
 Reep_etal_2007,Reep_etal_2007_Table1,amygdala_mm3,Amygdala,Amygdala,brain_structure_volume,Vol.mm3,volume,NA,primary,Mammals,Amygdala volume
 Stephan_etal_1981,Stephan_etal_1981_TablesI-VI,Amygdala,Amygdala,Amygdala,cell_counts,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",amygdala
 Stephan_etal_1981,Stephan_etal_1981_TablesI-VI,Amygdala,Amygdala,Amygdala,brain_structure_volume,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",amygdala
-Stephan_etal_1987,Stephan_etal_1987_Table1,Amygdala_mm3,Amygdala,Amygdala,cell_counts,Vol.mm3,volume,NA,primary,Insectivora & Primates,Amygdala (Vol.mm3)
-Stephan_etal_1987,Stephan_etal_1987_Table1,Amygdala_mm3,Amygdala,Amygdala,brain_structure_volume,Vol.mm3,volume,NA,primary,Insectivora & Primates,Amygdala (Vol.mm3)
 Stephan_etal_1987,Stephan_etal_1987,amygdala_total_mm3,Amygdala,Amygdala,cell_counts,Volume.mm3,volume,mean,primary,Insectivora–Primates (incl. Homo),whole amygdaloid complex volume (AMY); AMY = LAM + MAM
 Stephan_etal_1987,Stephan_etal_1987,amygdala_total_mm3,Amygdala,Amygdala,brain_structure_volume,Volume.mm3,volume,mean,primary,Insectivora–Primates (incl. Homo),whole amygdaloid complex volume (AMY); AMY = LAM + MAM
+Stephan_etal_1987,Stephan_etal_1987_Table1,Amygdala_mm3,Amygdala,Amygdala,cell_counts,Vol.mm3,volume,NA,primary,Insectivora & Primates,Amygdala (Vol.mm3)
+Stephan_etal_1987,Stephan_etal_1987_Table1,Amygdala_mm3,Amygdala,Amygdala,brain_structure_volume,Vol.mm3,volume,NA,primary,Insectivora & Primates,Amygdala (Vol.mm3)
 Stephan_etal_1991,Stephan_etal_1991_Table43,AMY_author_reported_Vol.mm3,amygdala,Amygdala,cell_counts,Vol.mm3,volume,author-reported value; estimator unestablished,primary,50 printed historical Insectivora taxon labels,Author-reported volume in mm³ of amygdala (printed abbreviation AMY); method/shrinkage/normalization unestablished.
 Stephan_etal_1991,Stephan_etal_1991_Table43,AMY_author_reported_Vol.mm3,amygdala,Amygdala,brain_structure_volume,Vol.mm3,volume,author-reported value; estimator unestablished,primary,50 printed historical Insectivora taxon labels,Author-reported volume in mm³ of amygdala (printed abbreviation AMY); method/shrinkage/normalization unestablished.
 Zilles_Rehkämper_1988,Zilles_Rehkämper_1988_Table12-2,Corpus_amygdaloideum,Amygdala,Amygdala,cell_counts,Vol.mm3,volume,NA,primary,Primates (Pongo),corpus amygdaloideum (amygdala) fresh volume
@@ -766,9 +766,9 @@ Wimberly_etal_2021,Wimberly_etal_2021_MammalGait,Hindlimb_Length.mm,Body,Body,ce
 Baron_etal_1996,Baron_etal_1996_Table5,BoW_g,Body,Body,cell_counts,Mass_g,mass,mean,primary,Chiroptera,body weight
 Baron_etal_1996,Baron_etal_1996_Table5,CV_BoW_pct,Body,Body,cell_counts,Mass_g,mass,CV_pct,info,Chiroptera,coefficient of variation of body weight
 Bjugn__1993,Bjugn__1993_TABLEI,Body_Mass.g,Body,Body,cell_counts,Mass.g,mass,individual,primary,mouse (as published; no binomial mapping),Animal weight; individual published measurement
+Boddy_etal_2012,Boddy_etal_2012_TableS1,Body Mass (g),Body,Body,cell_counts,Mass.g,mass,mean,secondary,mammals,Body mass
 Boddy_etal_2012,Boddy_etal_2012_brainbodydatabasev2,Body Mass (g),Body,Body,cell_counts,mass_g,mass,NA,primary,Mammalia,body mass in grams as reported by the original source
 Boddy_etal_2012,Boddy_etal_2012_brainbodydatabasev2,Body Mass Standard Deviation,Body,Body,cell_counts,mass_g SD,mass,NA,primary,Mammalia,standard deviation of Body Mass (g) across individuals
-Boddy_etal_2012,Boddy_etal_2012_TableS1,Body Mass (g),Body,Body,cell_counts,Mass.g,mass,mean,secondary,mammals,Body mass
 Burger_etal_2019,Burger_etal_2019_SupplementaryDataSD1,Mean_body_mass_g,Body,Body,cell_counts,Mass.g,mass,mean,secondary,mammals,Mean body mass
 Butti_etal_2009,Butti_etal_2009_Table1,body_mass_g,Body,Body,cell_counts,Mass.g,mass,mean,secondary,Cetacea,average body weight
 Chaplin_etal_2013,Chaplin_etal_2013_ResultsText,body_mass_g,body,Body,cell_counts,mass,mass,value g,info,Primates,body mass of the individual as stated
@@ -839,9 +839,9 @@ Latimer__1942,Latimer__1942_TABLEI,value_se_cm,Brain,Brain,cell_counts,Length.cm
 Stephan_etal_1991,Stephan_etal_1991_Table2,BL_mm,Brain,Brain,cell_counts,Length.mm,length,published dimensional summary,primary,Insectivora as published,"Brain length (BL), exactly as author reported in mm."
 Stephan_etal_1991,Stephan_etal_1991_Table2,BW_mm,Brain,Brain,cell_counts,Length.mm,length,published dimensional summary,primary,Insectivora as published,"Brain width (BW), not body weight."
 Stephan_etal_1991,Stephan_etal_1991_Table2,BH_mm,Brain,Brain,cell_counts,Length.mm,length,published dimensional summary,primary,Insectivora as published,Brain height (BH).
+Boddy_etal_2012,Boddy_etal_2012_TableS1,Brain Mass (g),Brain,Brain,cell_counts,Mass.g,mass,mean,secondary,mammals,Brain mass
 Boddy_etal_2012,Boddy_etal_2012_brainbodydatabasev2,Brain Mass (g),Brain,Brain,cell_counts,mass_g,mass,NA,primary,Mammalia,brain mass in grams as reported or converted by the original source
 Boddy_etal_2012,Boddy_etal_2012_brainbodydatabasev2,Brain Mass Standard Deviation,Brain,Brain,cell_counts,mass_g SD,mass,NA,primary,Mammalia,standard deviation of Brain Mass (g) across individuals
-Boddy_etal_2012,Boddy_etal_2012_TableS1,Brain Mass (g),Brain,Brain,cell_counts,Mass.g,mass,mean,secondary,mammals,Brain mass
 Brodmann__1913,Brodmann__1913_Table1,BrainWeight.g,brain,Brain,cell_counts,Mass.g,mass,NA,primary,Mammalia (all orders),brain weight
 Burger_etal_2019,Burger_etal_2019_SupplementaryDataSD1,Mean_brain_mass_g,Brain,Brain,cell_counts,Mass.g,mass,mean,secondary,mammals,Mean brain mass
 Butti_etal_2009,Butti_etal_2009_Table1,brain_mass_mg,Brain,Brain,cell_counts,Mass.mg,mass,mean,secondary,Cetacea,average brain weight
@@ -1473,9 +1473,9 @@ deSousa_etal_2010,deSousa_etal_2010,LGN_N,LGN,LGN,brain_structure_volume,Count,c
 deSousa_etal_2013,deSousa_etal_2013,LGN_residual,LGN,LGN,brain_structure_volume,residual,residual,NA,secondary,NA,LGN residual (from paper)
 Bush_Allman_2004_b,Bush_Allman_2004_b,LGN_cm3,LGN,LGN,brain_structure_volume,Volume.cm3,volume,NA,primary,NA,lateral geniculate nucleus volume
 DeCasien_Higham_2019,DeCasien_Higham_2019_BrainRegionDatamm3,LGN,LGN,LGN,brain_structure_volume,Vol.mm3,volume,NA,secondary,primates,Lateral geniculate nucleus volume
-deSousa_etal_2010,deSousa_etal_2010,LGN_mm3,LGN,LGN,brain_structure_volume,Volume.mm3,volume,NA,primary,Primates,lateral geniculate nucleus volume
 deSousa_etal_2010,deSousa_etal_2010,LGN_volume_cm3,LGN,LGN,brain_structure_volume,Volume.cm3,volume,mean,primary,Primates,lateral geniculate nucleus entire-structure volume; published bilateral estimate = 2 x measured left LGN
 deSousa_etal_2010,deSousa_etal_2010,left_LGN_volume_cm3,LGN,LGN,brain_structure_volume,Volume.cm3,volume,NA,primary,NA,LEFT lateral geniculate nucleus volume
+deSousa_etal_2010,deSousa_etal_2010,LGN_mm3,LGN,LGN,brain_structure_volume,Volume.mm3,volume,NA,primary,Primates,lateral geniculate nucleus volume
 deSousa_etal_2013,deSousa_etal_2013,LGN_volume_cm3,LGN,LGN,brain_structure_volume,Volume.cm3,volume,NA,primary,NA,whole-LGN published bilateral estimate carried from de Sousa 2010 (= 2 x measured left LGN)
 Bush_Allman_2004_b,Bush_Allman_2004_b,LGN_magnocellular_coefficient_of_error,LGN magnocellular layer,LGN magnocellular layer,NA,CoefficientOfError,CoefficientOfError,NA,primary,NA,coefficient of error for magnocellular LGN neuron count
 Bush_Allman_2004_b,Bush_Allman_2004_b,LGN_magnocellular_neuron_count,LGN magnocellular layer,LGN magnocellular layer,NA,Count,count (number),NA,primary,NA,magnocellular LGN neuron count
@@ -1744,6 +1744,8 @@ Collins_etal_2010,Collins_etal_2010_DatasetS1,cell_density_per_mm2,Neocortex,Neo
 Collins_etal_2010,Collins_etal_2010_DatasetS1,cell_density_per_mm2,Neocortex,Neocortex,brain_structure_volume,Density.per_mm2,Density.per_mm2,NA,primary,Primates,cells per mm2 of cortical surface
 Collins_etal_2010,Collins_etal_2010_DatasetS1,neuron_density_per_mm2,Neocortex,Neocortex,cell_counts,Density.per_mm2,Density.per_mm2,NA,primary,Primates,neurons per mm2 of cortical surface
 Collins_etal_2010,Collins_etal_2010_DatasetS1,neuron_density_per_mm2,Neocortex,Neocortex,brain_structure_volume,Density.per_mm2,Density.per_mm2,NA,primary,Primates,neurons per mm2 of cortical surface
+Lewitus_etal_2014,Lewitus_etal_2014_TableS8,Neuronal_number,Neocortex,Neocortex,cell_counts,N.n.Stereology,N.n.Stereology,NA,primary,Mammals,Neocortical neuron number (used for Figure 3d); stereological estimate
+Lewitus_etal_2014,Lewitus_etal_2014_TableS8,Neuronal_number,Neocortex,Neocortex,brain_structure_volume,N.n.Stereology,N.n.Stereology,NA,primary,Mammals,Neocortical neuron number (used for Figure 3d); stereological estimate
 Iwaniuk_etal_2001,Iwaniuk_etal_2001_Table4,Neocortex size,Neocortex,Neocortex,cell_counts,Neocortex.residual,Neocortex.residual,NA,primary,Primates,relative neocortex size (residual from the regression against body size)
 Iwaniuk_etal_2001,Iwaniuk_etal_2001_Table4,Neocortex size,Neocortex,Neocortex,brain_structure_volume,Neocortex.residual,Neocortex.residual,NA,primary,Primates,relative neocortex size (residual from the regression against body size)
 Heldstab_etal_2016,Heldstab_etal_2016_TableS1,neocortex_g,Neocortex,Neocortex,cell_counts,NeocortexSize.g,NeocortexSize.g,NA,primary,Primates,neocortex size in grams
@@ -1790,8 +1792,6 @@ Finlay_etal_2006,Finlay_etal_2006_Table6.1,somatomotor_areas,Neocortex,Neocortex
 Finlay_etal_2006,Finlay_etal_2006_Table6.1,somatomotor_areas,Neocortex,Neocortex,brain_structure_volume,count,count (number),NA,primary,Mammals (marsupial to primate),number of somatomotor cortical areas
 Finlay_etal_2006,Finlay_etal_2006_Table6.1,total_areas,Neocortex,Neocortex,cell_counts,count,count (number),NA,primary,Mammals (marsupial to primate),total number of cortical areas
 Finlay_etal_2006,Finlay_etal_2006_Table6.1,total_areas,Neocortex,Neocortex,brain_structure_volume,count,count (number),NA,primary,Mammals (marsupial to primate),total number of cortical areas
-Lewitus_etal_2014,Lewitus_etal_2014_TableS8,Neuronal_number,Neocortex,Neocortex,cell_counts,N.n,count (number),NA,primary,Mammals,Neocortical neuron number (used for Figure 3d)
-Lewitus_etal_2014,Lewitus_etal_2014_TableS8,Neuronal_number,Neocortex,Neocortex,brain_structure_volume,N.n,count (number),NA,primary,Mammals,Neocortical neuron number (used for Figure 3d)
 Nudo_etal_1995,Nudo_etal_1995_TABLE2,CS_profiles_contralateral,Neocortex,Neocortex,cell_counts,Count,count (number),max,info,24 mammals: 9 orders / 16 families / 21 genera (Marsupialia + Eutheria),raw labelled-profile count in the hemisphere contralateral to the hemisection
 Nudo_etal_1995,Nudo_etal_1995_TABLE2,CS_profiles_contralateral,Neocortex,Neocortex,brain_structure_volume,Count,count (number),max,info,24 mammals: 9 orders / 16 families / 21 genera (Marsupialia + Eutheria),raw labelled-profile count in the hemisphere contralateral to the hemisection
 Nudo_etal_1995,Nudo_etal_1995_TABLE2,CS_profiles_ipsilateral,Neocortex,Neocortex,cell_counts,Count,count (number),max,info,24 mammals: 9 orders / 16 families / 21 genera (Marsupialia + Eutheria),"raw labelled-profile count in the ipsilateral hemisphere, printed only where it exceeded the contralateral count"
@@ -2627,9 +2627,9 @@ Bush_Allman_2004_b,Bush_Allman_2004_b,V1_grey_cm3,V1,V1,brain_structure_volume,V
 Sherwood_etal_2003,Sherwood_etal_2003_Table1,visual_pyramid_soma_um3_mean,V1,V1,brain_structure_volume,soma volume,volume,mean um3,primary,NA,V1 infragranular pyramidal soma volume
 Sherwood_etal_2003,Sherwood_etal_2003_Table1,meynert_soma_um3_mean,V1,V1,brain_structure_volume,soma volume,volume,mean um3,primary,NA,Meynert cell soma volume
 deSousa_etal_2010,deSousa_etal_2010,V1_N,V1_AreaStriata,V1_AreaStriata,NA,Count,count (number),N,metadata,Primates,number of specimens for V1 volume
-deSousa_etal_2010,deSousa_etal_2010,V1_area_striata_grey_mm3,V1_AreaStriata,V1_AreaStriata,NA,Volume.mm3,volume,NA,primary,Primates,primary visual cortex (area striata) grey matter volume
 deSousa_etal_2010,deSousa_etal_2010,V1_area_striata_volume_cm3,V1_AreaStriata,V1_AreaStriata,NA,Volume.cm3,volume,mean,primary,Primates,primary visual cortex (area striata) grey-matter volume; published bilateral estimate = 2 x measured left V1
 deSousa_etal_2010,deSousa_etal_2010,left_V1_volume_cm3,V1_AreaStriata,V1_AreaStriata,NA,Volume.cm3,volume,NA,primary,NA,LEFT V1 (area striata) grey matter volume
+deSousa_etal_2010,deSousa_etal_2010,V1_area_striata_grey_mm3,V1_AreaStriata,V1_AreaStriata,NA,Volume.mm3,volume,NA,primary,Primates,primary visual cortex (area striata) grey matter volume
 DeCasien_Higham_2019,DeCasien_Higham_2019_BrainRegionDatamm3,V1 (GM),V1_GM,V1_GM,NA,Vol.mm3,volume,NA,secondary,primates,Primary visual cortex (area striata) grey-matter volume
 Changizi_Shimojo_2005,Changizi_Shimojo_2005_Table2,V2_pct_neocortex,V2,V2,NA,pct.neocortex,percentage (relative),NA,primary,"Mammalia, 16 spp. (monotremes, marsupials, eulipotyphlans, bats, rodents, tree shrew, primates)",relative size of V2 (second visual area) as a percentage of neocortex
 DeCasien_Higham_2019,DeCasien_Higham_2019_BrainRegionDatamm3,VII,VII,VII,brain_structure_volume,Vol.mm3,volume,NA,secondary,primates,Facial nerve nucleus volume
@@ -2706,8 +2706,8 @@ Seymour_etal_2017,Seymour_etal_2017_TableS1,Brain_volume_cm3,Whole Brain,WholeBr
 Seymour_etal_2019,Seymour_etal_2019_rspb20192208si002,ECV_ml,Whole Brain,WholeBrain,cell_counts,Vol.ml,volume,NA,primary,Great Apes & Homo,endocranial volume in millilitres
 Smaers_etal_2011,Smaers_etal_2011,total_brain_volume_cm3,WholeBrain,WholeBrain,cell_counts,Volume.cm3,volume,NA,both,Primates,total brain volume (Table 1)
 Smaers_etal_2018,Smaers_etal_2018_Figure2-data1,Brain_Vol.mm3,whole brain,WholeBrain,cell_counts,Vol.mm3,volume,NA,secondary,Mammalia (primates + outgroups),whole-brain volume
-deSousa_etal_2010,deSousa_etal_2010,brain_volume_mm3,WholeBrain,WholeBrain,cell_counts,Volume.mm3,volume,NA,primary,Primates,brain volume
 deSousa_etal_2010,deSousa_etal_2010,brain_volume_cm3,WholeBrain,WholeBrain,cell_counts,Volume.cm3,volume,NA,primary,NA,whole brain volume (Cavalieri)
+deSousa_etal_2010,deSousa_etal_2010,brain_volume_mm3,WholeBrain,WholeBrain,cell_counts,Volume.mm3,volume,NA,primary,Primates,brain volume
 DeCasien_Higham_2019,DeCasien_Higham_2019_BrainRegionDatamm3,XII,XII,XII,brain_structure_volume,Vol.mm3,volume,NA,secondary,primates,Hypoglossal nucleus volume
 Stephan_etal_1991,Stephan_etal_1991_Table49,AOB_author_reported_Vol.mm3,accessory olfactory bulb,accessory olfactory bulb,NA,Vol.mm3,volume,author-reported value; estimator unestablished,primary,50 printed historical Insectivora taxon labels,Author-reported volume in mm³ of accessory olfactory bulb (printed abbreviation AOB); method/shrinkage/normalization unestablished.
 Zhang_Sejnowski_2000,Zhang_Sejnowski_2000_Figure2,Adjacent_white_matter_Vol.mm3,adjacent white matter,adjacent white matter,NA,Vol.mm3,volume,reported,secondary,Mammalia,Adjacent white matter Vol.mm3

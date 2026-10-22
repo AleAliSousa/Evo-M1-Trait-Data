@@ -1,6 +1,6 @@
 Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
 species_sci,Harmonised accepted binomial (project species key),,,,info,Mammals,Lewitus_etal_2014_TableS8,join key,added in build
 Species,Species name as printed in the supplement,,,,info,Mammals,Lewitus_etal_2014_TableS8,printed name preserved,
-Neuronal_number,Neocortical neuron number (used for Figure 3d),Neocortex,N.n,,primary,Mammals,Lewitus_etal_2014_TableS8,full-precision integer restored from source (public TSV had it rounded to sci. notation),
+Neuronal_number,Neocortical neuron number (used for Figure 3d); stereological estimate,Neocortex,N.n.Stereology,,primary,Mammals,Lewitus_etal_2014_TableS8,"full-precision integer restored from source (public TSV had it rounded to sci. notation). Owner ruling 2026-10-21: treat as STEREOLOGY (like the Table S1 glia density/ratio columns); never pool directly with isotropic-fractionator N.n (Herculano-Houzel)",
 GI,Gyrification index,Neocortex,index,,secondary,Mammals,Lewitus_etal_2014_TableS8,also in Table S1,
 Method:numbering,Supplement download id .s020 is registered/cited as Table S8 (Fig 3d) but the sheet title reads 'Table S9'; kept item name TableS8 to match the registry/encoded name,,,,note,Mammals,Lewitus_etal_2014_TableS8,S8/S9 discrepancy flag,

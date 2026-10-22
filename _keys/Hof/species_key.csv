@@ -1,51 +1,51 @@
 variant_name,accepted_name,source_publication,collection,ncbi_taxid,basis,note
-D. leucas,Delphinapterus leucas,Butti_etal_2009,Hof,,synonym:legacy_key,migrated from pre-2026-09-28 key
-G. griseus,Grampus griseus,Butti_etal_2009,Hof,,synonym:legacy_key,migrated from pre-2026-09-28 key
-M. novaeangliae,Megaptera novaeangliae,Butti_etal_2009,Hof,,synonym:legacy_key,migrated from pre-2026-09-28 key
-T. truncatus,Tursiops truncatus,Butti_etal_2009,Hof,,synonym:legacy_key,migrated from pre-2026-09-28 key
+D. leucas,Delphinapterus leucas,Butti_etal_2009,Hof,9749,synonym:legacy_key,migrated from pre-2026-09-28 key; ncbi_taxid added 2026-10-22: NCBI exact scientific name
+G. griseus,Grampus griseus,Butti_etal_2009,Hof,83653,synonym:legacy_key,migrated from pre-2026-09-28 key; ncbi_taxid added 2026-10-22: NCBI exact scientific name
+M. novaeangliae,Megaptera novaeangliae,Butti_etal_2009,Hof,9773,synonym:legacy_key,migrated from pre-2026-09-28 key; ncbi_taxid added 2026-10-22: NCBI exact scientific name
+T. truncatus,Tursiops truncatus,Butti_etal_2009,Hof,9739,synonym:legacy_key,migrated from pre-2026-09-28 key; ncbi_taxid added 2026-10-22: NCBI exact scientific name
 African elephant,Loxodonta africana,Hakeem_etal_2009,Hof,9785,synonym:legacy_key,migrated from pre-2026-09-28 key
 Aotus trivirgatus,Aotus trivirgatus,Nimchinsky_etal_1999,Hof,9505,verbatim,migrated from pre-2026-09-28 key
 Callithrix jacchus,Callithrix jacchus,Nimchinsky_etal_1999,Hof,9483,verbatim,migrated from pre-2026-09-28 key
-Cebus apella,Cebus apella,Nimchinsky_etal_1999,Hof,,verbatim,migrated from pre-2026-09-28 key
-Cheirogaleus medius,Cheirogaleus medius,Nimchinsky_etal_1999,Hof,,verbatim,migrated from pre-2026-09-28 key
-Erythrocebus patas,Erythrocebus patas,Nimchinsky_etal_1999,Hof,,verbatim,migrated from pre-2026-09-28 key
-Eulemur fulvus,Eulemur fulvus,Nimchinsky_etal_1999,Hof,,verbatim,migrated from pre-2026-09-28 key
+Cebus apella,Cebus apella,Nimchinsky_etal_1999,Hof,9515,verbatim,"migrated from pre-2026-09-28 key; ncbi_taxid added 2026-10-22: NCBI synonym, current NCBI name Sapajus apella"
+Cheirogaleus medius,Cheirogaleus medius,Nimchinsky_etal_1999,Hof,9460,verbatim,migrated from pre-2026-09-28 key; ncbi_taxid added 2026-10-22: NCBI exact scientific name
+Erythrocebus patas,Erythrocebus patas,Nimchinsky_etal_1999,Hof,9538,verbatim,migrated from pre-2026-09-28 key; ncbi_taxid added 2026-10-22: NCBI exact scientific name
+Eulemur fulvus,Eulemur fulvus,Nimchinsky_etal_1999,Hof,13515,verbatim,migrated from pre-2026-09-28 key; ncbi_taxid added 2026-10-22: NCBI exact scientific name
 G. g. gorilla,Gorilla gorilla,Nimchinsky_etal_1999,Hof,9593,synonym:legacy_key,migrated from pre-2026-09-28 key
-Galago senegalensis,Galago senegalensis,Nimchinsky_etal_1999,Hof,,verbatim,migrated from pre-2026-09-28 key
-Galagoides demidoff,Galagoides demidoff,Nimchinsky_etal_1999,Hof,,verbatim,migrated from pre-2026-09-28 key
+Galago senegalensis,Galago senegalensis,Nimchinsky_etal_1999,Hof,9465,verbatim,migrated from pre-2026-09-28 key; ncbi_taxid added 2026-10-22: NCBI exact scientific name
+Galagoides demidoff,Galagoides demidoff,Nimchinsky_etal_1999,Hof,89672,verbatim,migrated from pre-2026-09-28 key; ncbi_taxid added 2026-10-22: NCBI exact scientific name
 Gorilla gorilla gorilla,Gorilla gorilla,Nimchinsky_etal_1999,Hof,9593,subspecies_assign,migrated from pre-2026-09-28 key
 H. sapiens,Homo sapiens,Nimchinsky_etal_1999,Hof,9606,synonym:legacy_key,migrated from pre-2026-09-28 key
 Homo sapiens,Homo sapiens,Nimchinsky_etal_1999,Hof,9606,verbatim,migrated from pre-2026-09-28 key
-Hylobates lar,Hylobates lar,Nimchinsky_etal_1999,Hof,,verbatim,migrated from pre-2026-09-28 key
-Lemur catta,Lemur catta,Nimchinsky_etal_1999,Hof,,verbatim,migrated from pre-2026-09-28 key
-Loris tardigradus,Loris tardigradus,Nimchinsky_etal_1999,Hof,,verbatim,migrated from pre-2026-09-28 key
+Hylobates lar,Hylobates lar,Nimchinsky_etal_1999,Hof,9580,verbatim,migrated from pre-2026-09-28 key; ncbi_taxid added 2026-10-22: NCBI exact scientific name
+Lemur catta,Lemur catta,Nimchinsky_etal_1999,Hof,9447,verbatim,migrated from pre-2026-09-28 key; ncbi_taxid added 2026-10-22: NCBI exact scientific name
+Loris tardigradus,Loris tardigradus,Nimchinsky_etal_1999,Hof,9468,verbatim,migrated from pre-2026-09-28 key; ncbi_taxid added 2026-10-22: NCBI exact scientific name
 Macaca fascicularis,Macaca fascicularis,Nimchinsky_etal_1999,Hof,9541,verbatim,migrated from pre-2026-09-28 key
-Macaca fuscata,Macaca fuscata,Nimchinsky_etal_1999,Hof,,verbatim,migrated from pre-2026-09-28 key
+Macaca fuscata,Macaca fuscata,Nimchinsky_etal_1999,Hof,9542,verbatim,migrated from pre-2026-09-28 key; ncbi_taxid added 2026-10-22: NCBI exact scientific name
 Macaca mulatta,Macaca mulatta,Nimchinsky_etal_1999,Hof,9544,verbatim,migrated from pre-2026-09-28 key
 Macaca nemestrina,Macaca nemestrina,Nimchinsky_etal_1999,Hof,9545,verbatim,migrated from pre-2026-09-28 key
-Macaca nigra,Macaca nigra,Nimchinsky_etal_1999,Hof,,verbatim,migrated from pre-2026-09-28 key
+Macaca nigra,Macaca nigra,Nimchinsky_etal_1999,Hof,54600,verbatim,migrated from pre-2026-09-28 key; ncbi_taxid added 2026-10-22: NCBI exact scientific name
 Microcebus murinus,Microcebus murinus,Nimchinsky_etal_1999,Hof,30608,verbatim,migrated from pre-2026-09-28 key
-Nycticebus coucang,Nycticebus coucang,Nimchinsky_etal_1999,Hof,,verbatim,migrated from pre-2026-09-28 key
-P. paniscus,Pan paniscus,Nimchinsky_etal_1999,Hof,,spelling,migrated from pre-2026-09-28 key
+Nycticebus coucang,Nycticebus coucang,Nimchinsky_etal_1999,Hof,9470,verbatim,migrated from pre-2026-09-28 key; ncbi_taxid added 2026-10-22: NCBI exact scientific name
+P. paniscus,Pan paniscus,Nimchinsky_etal_1999,Hof,9597,spelling,migrated from pre-2026-09-28 key; ncbi_taxid added 2026-10-22: NCBI exact scientific name
 P. pygmaeus,Pongo pygmaeus,Nimchinsky_etal_1999,Hof,9600,synonym:legacy_key,migrated from pre-2026-09-28 key
-P. troglodytes,Pan troglodytes,Nimchinsky_etal_1999,Hof,,spelling,migrated from pre-2026-09-28 key
-Pan paniscus,Pan paniscus,Nimchinsky_etal_1999,Hof,,verbatim,migrated from pre-2026-09-28 key
-Pan troglodytes,Pan troglodytes,Nimchinsky_etal_1999,Hof,,verbatim,migrated from pre-2026-09-28 key
+P. troglodytes,Pan troglodytes,Nimchinsky_etal_1999,Hof,9598,spelling,migrated from pre-2026-09-28 key; ncbi_taxid added 2026-10-22: NCBI exact scientific name
+Pan paniscus,Pan paniscus,Nimchinsky_etal_1999,Hof,9597,verbatim,migrated from pre-2026-09-28 key; ncbi_taxid added 2026-10-22: NCBI exact scientific name
+Pan troglodytes,Pan troglodytes,Nimchinsky_etal_1999,Hof,9598,verbatim,migrated from pre-2026-09-28 key; ncbi_taxid added 2026-10-22: NCBI exact scientific name
 Papio hamadryas cynocephalus,Papio cynocephalus,Nimchinsky_etal_1999,Hof,9556,synonym:legacy_key,migrated from pre-2026-09-28 key
-Perodicticus potto,Perodicticus potto,Nimchinsky_etal_1999,Hof,,verbatim,migrated from pre-2026-09-28 key
+Perodicticus potto,Perodicticus potto,Nimchinsky_etal_1999,Hof,9472,verbatim,migrated from pre-2026-09-28 key; ncbi_taxid added 2026-10-22: NCBI exact scientific name
 Pongo pygmaeus,Pongo pygmaeus,Nimchinsky_etal_1999,Hof,9600,verbatim,migrated from pre-2026-09-28 key
-Propithecus verreauxi,Propithecus verreauxi,Nimchinsky_etal_1999,Hof,,verbatim,migrated from pre-2026-09-28 key
+Propithecus verreauxi,Propithecus verreauxi,Nimchinsky_etal_1999,Hof,34825,verbatim,migrated from pre-2026-09-28 key; ncbi_taxid added 2026-10-22: NCBI exact scientific name
 Saimiri sciureus,Saimiri sciureus,Nimchinsky_etal_1999,Hof,9521,verbatim,migrated from pre-2026-09-28 key
-Tarsius syrichta,Tarsius syrichta,Nimchinsky_etal_1999,Hof,,verbatim,migrated from pre-2026-09-28 key
-Bowhead whale,Balaena mysticetus,Raghanti_etal_2015,Hof,,synonym:legacy_key,migrated from pre-2026-09-28 key
+Tarsius syrichta,Tarsius syrichta,Nimchinsky_etal_1999,Hof,1868482,verbatim,"migrated from pre-2026-09-28 key; ncbi_taxid added 2026-10-22: NCBI synonym, current NCBI name Carlito syrichta"
+Bowhead whale,Balaena mysticetus,Raghanti_etal_2015,Hof,27602,synonym:legacy_key,migrated from pre-2026-09-28 key; ncbi_taxid added 2026-10-22: NCBI exact scientific name
 Cow,Bos taurus,Raghanti_etal_2015,Hof,9913,synonym:legacy_key,migrated from pre-2026-09-28 key
-Deer,Odocoileus virginianus,Raghanti_etal_2015,Hof,,synonym:legacy_key,migrated from pre-2026-09-28 key
-Horse,Equus ferus caballus,Raghanti_etal_2015,Hof,,synonym:legacy_key,migrated from pre-2026-09-28 key
+Deer,Odocoileus virginianus,Raghanti_etal_2015,Hof,9874,synonym:legacy_key,migrated from pre-2026-09-28 key; ncbi_taxid added 2026-10-22: NCBI exact scientific name
+Horse,Equus ferus caballus,Raghanti_etal_2015,Hof,9796,synonym:legacy_key,"migrated from pre-2026-09-28 key; ncbi_taxid added 2026-10-22: NCBI synonym, current NCBI name Equus caballus"
 Human,Homo sapiens,Raghanti_etal_2015,Hof,9606,synonym:legacy_key,migrated from pre-2026-09-28 key
 Pig,Sus scrofa domesticus,Raghanti_etal_2015,Hof,9825,synonym:legacy_key,migrated from pre-2026-09-28 key
 Rock hyrax,Procavia capensis,Raghanti_etal_2015,Hof,9813,synonym:legacy_key,migrated from pre-2026-09-28 key
 Sheep,Ovis aries,Raghanti_etal_2015,Hof,9940,synonym:legacy_key,migrated from pre-2026-09-28 key
-Gorilla beringei,Gorilla sp.,Sherwood_etal_2004,Hof,,lump,"DeCasien source; post-reshape word(1, 2) binomial; item: Sherwood_etal_2004_TABLEI; migrated from _keys/volumes_species_overrides.csv"
+Gorilla beringei,Gorilla sp.,Sherwood_etal_2004,Hof,9592,lump,"DeCasien source; post-reshape word(1, 2) binomial; item: Sherwood_etal_2004_TABLEI; migrated from _keys/volumes_species_overrides.csv; ncbi_taxid added 2026-10-22: NCBI exact scientific name"
 Gorilla beringei beringei,Gorilla beringei,Sherwood_etal_2004,Hof,499232,subspecies_assign,high confidence; authority=NCBI; evidence=NCBI taxid 1159185 rank=subspecies (Gorilla beringei beringei); species=Gorilla beringei; rolled to species; accepted not yet in hub; files: Sherwood_etal_2004_TABLEI
-Gorilla gorilla,Gorilla sp.,Sherwood_etal_2004,Hof,,lump,"DeCasien source; post-reshape word(1, 2) binomial; item: Sherwood_etal_2004_TABLEI; migrated from _keys/volumes_species_overrides.csv"
-Pongo pygmaeus,Pongo sp.,Sherwood_etal_2004,Hof,,lump,"DeCasien source; post-reshape word(1, 2) binomial; item: Sherwood_etal_2004_TABLEI; migrated from _keys/volumes_species_overrides.csv"
+Gorilla gorilla,Gorilla sp.,Sherwood_etal_2004,Hof,9592,lump,"DeCasien source; post-reshape word(1, 2) binomial; item: Sherwood_etal_2004_TABLEI; migrated from _keys/volumes_species_overrides.csv; ncbi_taxid added 2026-10-22: NCBI exact scientific name"
+Pongo pygmaeus,Pongo sp.,Sherwood_etal_2004,Hof,9599,lump,"DeCasien source; post-reshape word(1, 2) binomial; item: Sherwood_etal_2004_TABLEI; migrated from _keys/volumes_species_overrides.csv; ncbi_taxid added 2026-10-22: NCBI exact scientific name"

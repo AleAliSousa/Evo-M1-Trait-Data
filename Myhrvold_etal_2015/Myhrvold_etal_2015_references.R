@@ -3,7 +3,7 @@
 ## =============================================================================
 ##
 ## Input:
-##   reference_tables/Myhrvold_etal_2015_cell_references.csv   (built by Myhrvold_etal_2015_cell_references.R)
+##   reference_tables/Myhrvold_etal_2015_cell_references_partNNN.csv   (built by Myhrvold_etal_2015_cell_references.R)
 ##   Supplemental_Materials/Supplemental_Table_1_Database_Literature_Cited.pdf   full citations (Chicago style)
 ##   Supplemental_Materials/Supplemental_Table_2_Reference_Counts.csv            declared record counts
 ##   Data_Files/Amniote_Sparse_Table_Aug_2015.csv                                 raw records, `dataset` = source
@@ -45,7 +45,11 @@ if (length(miss)) stop("Install the required package(s): ", paste(miss, collapse
 suppressPackageStartupMessages({ library(readr); library(dplyr) })
 
 out_dir <- file.path(folder, "reference_tables")
-f_cr  <- file.path(out_dir, "Myhrvold_etal_2015_cell_references.csv")
+f_cr <- sort(list.files(out_dir,
+  pattern = "^Myhrvold_etal_2015_cell_references_part[0-9]+[.]csv$", full.names = TRUE))
+if (!length(f_cr)) stop("Missing cell-reference parts; run Myhrvold_etal_2015_cell_references.R first.")
+expected_parts <- sprintf("Myhrvold_etal_2015_cell_references_part%03d.csv", seq_along(f_cr))
+if (!identical(basename(f_cr), expected_parts)) stop("Cell-reference part numbering has gaps.")
 f_pdf <- file.path(folder, "Supplemental_Materials", "Supplemental_Table_1_Database_Literature_Cited.pdf")
 f_t2  <- file.path(folder, "Supplemental_Materials", "Supplemental_Table_2_Reference_Counts.csv")
 f_sp  <- file.path(folder, "Data_Files", "Amniote_Sparse_Table_Aug_2015.csv")
@@ -65,7 +69,7 @@ T2_ALIASES <- c(
 SPARSE_ALIASES <- c("Greer_Greer, A.E., 1997" = "Greer, A.E, 1997")
 
 ## ---- inputs -------------------------------------------------------------------------------
-cr <- read_csv(f_cr, col_types=cols(.default="c"), progress=FALSE)
+cr <- bind_rows(lapply(f_cr, function(f) read_csv(f, col_types=cols(.default="c"), progress=FALSE)))
 if (!all(c("ref_key","ref_key_norm","derivation_role","row_id","trait") %in% names(cr))) stop("cell_references.csv lacks expected columns.")
 cat("cell_references rows:", nrow(cr), "\n")
 

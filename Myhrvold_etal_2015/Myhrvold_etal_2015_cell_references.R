@@ -8,7 +8,7 @@
 ##   Data_Files/Amniote_Database_References_Aug_2015.csv   same shape, per-cell citation string
 ##   Supplemental_Materials/Supplemental_Table_2_Reference_Counts.csv   key lexicon seed
 ## Output:
-##   reference_tables/Myhrvold_etal_2015_cell_references.csv
+##   reference_tables/Myhrvold_etal_2015_cell_references_partNNN.csv
 ##   reference_tables/Myhrvold_etal_2015_cell_references_unparsed.csv   (parse failures, may be empty)
 ##   reference_tables/Myhrvold_etal_2015_mammal_independence_by_trait.csv
 ##   reference_tables/*_definitions.csv for each of the above
@@ -323,12 +323,43 @@ cat(sprintf("Mammalia totals (PanTHERIA or Jones 2003): fully circular %d | part
             sum(indep$n_fully_circular_incl_jones2003), sum(indep$n_partly_circular_incl_jones2003), sum(indep$n_fully_independent_incl_jones2003)))
 
 ## ---- write --------------------------------------------------------------------------------
-f_out <- file.path(out_dir, "Myhrvold_etal_2015_cell_references.csv")
-write_csv(cell_refs, f_out, na="")
+# Bound both row count and actual serialized bytes; each part repeats the header.
+# Stage and validate every part before replacing the previous generated set.
+part_prefix <- "Myhrvold_etal_2015_cell_references_part"
+part_pattern <- "^Myhrvold_etal_2015_cell_references_part[0-9]+[.]csv$"
+max_part_bytes <- 25 * 1024^2
+stage <- tempfile("cell_refs_parts_", tmpdir = out_dir)
+dir.create(stage)
+f_parts <- character()
+write_part <- function(rows) {
+  path <- file.path(stage, sprintf("%s%03d.csv", part_prefix, length(f_parts) + 1L))
+  write_csv(cell_refs[rows, ], path, na = "")
+  if (file.info(path)$size > max_part_bytes) {
+    unlink(path)
+    if (length(rows) == 1L) stop("A single citation row exceeds the part size limit.")
+    mid <- length(rows) %/% 2L
+    write_part(rows[seq_len(mid)])
+    write_part(rows[seq.int(mid + 1L, length(rows))])
+    return(invisible(NULL))
+  }
+  back <- read_csv(path, col_types = cols(.default = "c"), progress = FALSE)
+  if (nrow(back) != length(rows) || !identical(names(back), names(cell_refs)))
+    stop("Read-back failed: ", path)
+  if (!all(validUTF8(back$verbatim_reference_string))) stop("Non-UTF-8 text: ", path)
+  f_parts <<- c(f_parts, path)
+}
+for (first in seq.int(1L, nrow(cell_refs), by = 50000L))
+  write_part(seq.int(first, min(first + 49999L, nrow(cell_refs))))
+for (path in f_parts) {
+  if (!file.copy(path, file.path(out_dir, basename(path)), overwrite = TRUE))
+    stop("Could not install part: ", path)
+}
+# Remove obsolete generated files only after all replacement parts are validated.
+old_parts <- list.files(out_dir, pattern = part_pattern, full.names = TRUE)
+unlink(setdiff(old_parts, file.path(out_dir, basename(f_parts))))
+unlink(file.path(out_dir, "Myhrvold_etal_2015_cell_references.csv"))
+unlink(stage, recursive = TRUE)
 write_csv(indep, file.path(out_dir, "Myhrvold_etal_2015_mammal_independence_by_trait.csv"), na="")
-back <- read_csv(f_out, col_types=cols(.default="c"), progress=FALSE)
-if (nrow(back) != nrow(cell_refs) || !identical(names(back), names(cell_refs))) stop("Read-back of cell_references.csv failed.")
-if (!all(validUTF8(back$verbatim_reference_string))) stop("Non-UTF-8 text in written CSV.")
 
 ## definitions files (house template columns)
 def <- function(code, definition, role="info", note="", ref="Myhrvold_etal_2015_cell_references")
@@ -369,4 +400,4 @@ defs_ind <- rbind(
 for (i in seq_len(nrow(defs_ind))) defs_ind$taxon[i] <- "Mammalia"
 write_csv(defs_ind, file.path(out_dir, "Myhrvold_etal_2015_mammal_independence_by_trait_definitions.csv"), na="")
 
-cat(sprintf("\nWrote %s (%d rows)\n", f_out, nrow(cell_refs)))
+cat(sprintf("\nWrote %d numbered cell-reference parts (%d rows total; each <= 25 MiB)\n", length(f_parts), nrow(cell_refs)))

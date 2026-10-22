@@ -69,13 +69,21 @@ database plus the references needed to make sense of it) and none are built here
 Three Rscript-runnable scripts build `reference_tables/`; run them in this order from any cwd
 (`Rscript <script>.R`; each self-locates, forces a UTF-8 locale, and `stop()`s on any input
 problem rather than messaging). Every CSV has a sibling `*_definitions.csv` (house template
-columns). Nothing in `Data_Files/`, `Supplemental_Materials/` or the snapshots is modified.
+columns), except the numbered cell-reference parts, which share
+`Myhrvold_etal_2015_cell_references_definitions.csv`. Nothing in `Data_Files/`, `Supplemental_Materials/` or the snapshots is modified.
 
 | script | writes |
 |---|---|
-| `Myhrvold_etal_2015_cell_references.R` | `Myhrvold_etal_2015_cell_references.csv` (322,572 rows), `…_cell_references_unparsed.csv` (0 rows), `…_mammal_independence_by_trait.csv` |
+| `Myhrvold_etal_2015_cell_references.R` | `Myhrvold_etal_2015_cell_references_partNNN.csv` (322,572 rows total), `…_cell_references_unparsed.csv` (0 rows), `…_mammal_independence_by_trait.csv` |
 | `Myhrvold_etal_2015_references.R` | `Myhrvold_etal_2015_references.csv` (1,003 rows), `…_references_table2_mismatches.csv` (349), `…_references_citation_candidates.csv` |
 | `Myhrvold_etal_2015_pantheria_crosswalk.R` | `Myhrvold_etal_2015_PanTHERIA_variable_crosswalk.csv` (30), `…_PanTHERIA_species_crosswalk.csv` (4,953), `…_PanTHERIA_species_unresolved.csv` (3) |
+
+The cell-reference output is split into numbered parts, each with the same header,
+at most 50,000 rows and at most 25 MiB. Read all `…_cell_references_partNNN.csv`
+files in numeric order and concatenate their rows to recover the complete table.
+Rows and citation text are unchanged. `Myhrvold_etal_2015_references.R` reads these
+parts automatically. A successful rebuild removes obsolete parts and the old
+single-file output after validating the replacements.
 
 ### 1. The citation-string grammar (`cell_references`)
 Each cell of `Amniote_Database_References_Aug_2015.csv` is one of four constructs. Reference
@@ -227,3 +235,16 @@ than one PanTHERIA candidate; 4,950 of 5,416 PanTHERIA binomials are reached.
 ## Source
 `Amniote_Database_Aug_2015.csv` and `Amniote_Database_References_Aug_2015.csv`
 (Data_Files/), Myhrvold et al. (2015), Ecological Archives E096-269-D1.
+
+<!-- errata:begin -->
+## Errata
+
+Generated from `reference_tables/Myhrvold_etal_2015_errata.csv` by `_tools/dataset_builder/render_errata.R` -- edit the CSV, not this block. See `_tools/dataset_builder/ERRATA_CONVENTION.md`.
+
+| id | variable | where printed | printed | repo value before | issue | proposed | status | evidence | note |
+|---|---|---|---|---|---|---|---|---|---|
+| Myhrvold_etal_2015-E001 | value | Data_Files/Amniote_Database_Aug_2015.csv, row Mammalia / Carnivora / Felidae / Pardofelis / marmorata, column maximum_longevity_y (Evo-M1 item row trait = maximum_longevity_y) | 27.3 | 27.3 | publication_error | 13.39166667 | proposed | Record pool identical to Panthera pardus: 7 of the 8 Pardofelis marmorata maximum_longevity_y records in Amniote_Sparse_Table_Aug_2015.csv (Mammalia rows 62932-62944) are identical (value, reference) to Panthera pardus records (20 [Carey, J.R. and D.S. Judge, 2002] \| 23 [Carey, J.R. and D.S. Judge, 2002] \| 23 [Ernest et al., 2003] \| 23 [Jones, K., Bielby, J., Cardillo, M. et al., 2009] \| 27.28333333 [Weigl, R., 2005] \| 27.3 [Ricklefs, 2010b] \| 27.3 [de Magalhaes and Costa, 2009]); the only record unique to P. marmorata is 13.39166667 [Weigl, R., 2005]. Supplemental Table 7 (Mammalia synonyms) files Panthera pardus records of Panthera pardus -> Pardofelis marmorata [Jones, K., Bielby, J., Cardillo, M. et al., 2009] \| Panthera pardus -> Pardofelis marmorata [de Magalhaes and Costa, 2009] \| Panthera pardus -> Pardofelis marmorata [Ernest et al., 2003] \| Panthera pardus -> Pardofelis marmorata [Ricklefs, 2010b] \| Panthera pardus -> Pardofelis marmorata [Boback and Guyer, 2003] \| Panthera pardus -> Pardofelis marmorata [Carey, J.R. and D.S. Judge, 2002] \| Panthera pardus -> Pardofelis marmorata [Weigl, R., 2005] \| Panthera pardus -> Pardofelis marmorata [de Carvalho, C.T., 1968] under Pardofelis marmorata; Supplemental Table 4 transforms the leopard trinomial 'Panthera pardus longicaudata' -> 'Pardofelis marmorata'. The published 27.3 y is the maximum of the pooled records (Database References cell: Ricklefs, 2010b) and is a leopard record. Independent witnesses: PanTHERIA 17-1_MaxLongevity_m for P. marmorata = no value (-999); AnAge build 15 = no value / species absent; Weigl 2005 (the only marbled-cat record) = 13.39 y. | Repo CSV mirrors the published database (27.3) and is NOT changed; the erratum records that the record pool belongs to another species. Full evidence: Evo-M1-Trait-Data-restricted/__life_history_comparison/findings/record_vector_duplication.csv. |
+| Myhrvold_etal_2015-E002 | value | Data_Files/Amniote_Database_Aug_2015.csv, row Mammalia / Carnivora / Felidae / Felis / bieti, column maximum_longevity_y (Evo-M1 item row trait = maximum_longevity_y) | 28 | 28 | publication_error |  | proposed | Record pool identical to Felis silvestris: 9 of the 10 Felis bieti maximum_longevity_y records in Amniote_Sparse_Table_Aug_2015.csv (Mammalia rows 62752-62763) are identical (value, reference) to Felis silvestris records (15 [Carey, J.R. and D.S. Judge, 2002] \| 15 [Ernest et al., 2003] \| 17.8 [Weigl, R., 2005] \| 18 [Carey, J.R. and D.S. Judge, 2002] \| 19 [Ricklefs, 2010b] \| 19 [de Magalhaes and Costa, 2009] \| 19.13333333 [Weigl, R., 2005] \| 28 [Jones, K., Bielby, J., Cardillo, M. et al., 2009]); the only record unique to F. bieti is 6.158333333 [Weigl, R., 2005]. Supplemental Table 7 files Felis silvestris records of Felis silvestris -> Felis bieti [Jones, K., Bielby, J., Cardillo, M. et al., 2009] \| Felis silvestris -> Felis bieti [de Magalhaes and Costa, 2009] \| Felis silvestris -> Felis bieti [Ernest et al., 2003] \| Felis silvestris -> Felis bieti [Ricklefs, 2010b] \| Felis silvestris -> Felis bieti [Boback and Guyer, 2003] \| Felis silvestris -> Felis bieti [Carey, J.R. and D.S. Judge, 2002] \| Felis lybica -> Felis bieti [Weigl, R., 2005] \| Felis silvestris -> Felis bieti [Weigl, R., 2005] under Felis bieti; Supplemental Table 4 transforms 'Felis silvestris bieti' -> 'Felis bieti'. The published 28 y is PanTHERIA's Felis silvestris value (17-1_MaxLongevity_m = 336 months) re-exported under F. bieti (Database References cell: Jones, K., Bielby, J., Cardillo, M. et al., 2009); PanTHERIA prints no value (-999) for F. bieti; AnAge build 15: no value / species absent. No independent F. bieti longevity record other than Weigl 2005 (6.16 y) exists in the corpus, so no proposed value is given. | Repo CSV mirrors the published database (28) and is NOT changed. The same silvestris pool also sits under Felis catus (whose own PanTHERIA record, 34 y, is the published maximum there). Full evidence: Evo-M1-Trait-Data-restricted/__life_history_comparison/findings/record_vector_duplication.csv. |
+
+2 recorded, 2 open (proposed), 0 confirmed, 0 withdrawn.
+<!-- errata:end -->

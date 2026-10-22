@@ -1,0 +1,9 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,"accepted binomial (genus + sp. where the table does not determine the species) via _keys/General/species_key.csv, source_publication Garey__2006",,,,info,Mammalia (Table species),Garey__2006_Table3,see species_key.csv note for glossary basis,
+species_as_published,animal name exactly as printed in the English translation (Brodmann's own common names),,,,info,Mammalia (Table species),Garey__2006_Table3,preserved; includes qualifiers such as 'Prosimian (Black lemur)',
+Brodmann_area,"Brodmann cortical area number as printed (4, 6, 7, 17, 28, 29)",cerebral cortex,,,info,Mammalia (Table species),Garey__2006_Table3,"footnote 1) in the table: standardised magnification, thickness and preparation",
+thickness_as_published,cortical thickness cell exactly as printed (single value or range 'a-b'; '-' = not given),cerebral cortex,Length.mm,,secondary,Mammalia (Table species),Garey__2006_Table3,'Man' column carries footnote 2) (Brodmann 1908/1909 Rindenmessungen),
+CorticalThickness_low.mm,lower bound of printed thickness (mm); equals high bound for a single value; blank where '-',cerebral cortex,Length.mm,min,secondary,Mammalia (Table species),Garey__2006_Table3,"table title: averages, in mm",
+CorticalThickness_high.mm,upper bound of printed thickness (mm); equals low bound for a single value,cerebral cortex,Length.mm,max,secondary,Mammalia (Table species),Garey__2006_Table3,,
+source_location,"table, printed page in the 2006 Springer translation, and Brodmann 1909 chapter",,,,info,Mammalia (Table species),Garey__2006_Table3,,
+data_role,"'secondary': English translation of Brodmann 1909; values are Brodmann's, not new measurements",,,,info,Mammalia (Table species),Garey__2006_Table3,supersede into the German primary where one exists; never average with it,

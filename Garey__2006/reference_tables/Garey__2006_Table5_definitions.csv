@@ -1,0 +1,13 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,"accepted binomial (genus + sp. where the table does not determine the species) via _keys/General/species_key.csv, source_publication Garey__2006",,,,info,Mammalia (Table species),Garey__2006_Table5,see species_key.csv note for glossary basis,
+species_as_published,animal name exactly as printed in the English translation (Brodmann's own common names),,,,info,Mammalia (Table species),Garey__2006_Table5,preserved; includes qualifiers such as 'Prosimian (Black lemur)',
+BetzCell_max_width.um,maximum width of the Betz giant pyramidal cell body (first number of 'width x length'),Betz cells (area 4),Length.um,max,secondary,Mammalia (Table species),Garey__2006_Table5,"translation text: width and length of the cell body in microns; footnote 5) on 'Maximum' (elephant 35 x 60 um, poorly preserved, not tabulated)",
+BetzCell_max_length.um,maximum length of the Betz giant pyramidal cell body,Betz cells (area 4),Length.um,max,secondary,Mammalia (Table species),Garey__2006_Table5,,
+BetzCell_avg_width_low.um,lower bound of printed average width range,Betz cells (area 4),Length.um,min,secondary,Mammalia (Table species),Garey__2006_Table5,average printed as a range,
+BetzCell_avg_width_high.um,upper bound of printed average width range,Betz cells (area 4),Length.um,max,secondary,Mammalia (Table species),Garey__2006_Table5,,
+BetzCell_avg_length_low.um,lower bound of printed average length range,Betz cells (area 4),Length.um,min,secondary,Mammalia (Table species),Garey__2006_Table5,,
+BetzCell_avg_length_high.um,upper bound of printed average length range,Betz cells (area 4),Length.um,max,secondary,Mammalia (Table species),Garey__2006_Table5,,
+max_as_published,'Maximum' cell as printed ('width x length'),,,,info,Mammalia (Table species),Garey__2006_Table5,,
+average_as_published,'Average' cell as printed ('a-b x c-d'),,,,info,Mammalia (Table species),Garey__2006_Table5,,
+source_location,"table, printed page in the 2006 Springer translation, and Brodmann 1909 chapter",,,,info,Mammalia (Table species),Garey__2006_Table5,,
+data_role,"'secondary': English translation of Brodmann 1909; values are Brodmann's, not new measurements",,,,info,Mammalia (Table species),Garey__2006_Table5,supersede into the German primary where one exists; never average with it,

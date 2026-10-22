@@ -1,0 +1,10 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,"accepted binomial (genus + sp. where the table does not determine the species) via _keys/General/species_key.csv, source_publication Garey__2006",,,,info,Mammalia (Table species),Garey__2006_Table6,see species_key.csv note for glossary basis,
+species_as_published,animal name exactly as printed in the English translation (Brodmann's own common names),,,,info,Mammalia (Table species),Garey__2006_Table6,preserved; includes qualifiers such as 'Prosimian (Black lemur)',
+Brodmann_area,"Brodmann cortical area number as printed (4, 6, 17, 28)",cerebral cortex,,,info,Mammalia (Table species),Garey__2006_Table6,header 'Area 12)': footnote 12) text not found in the extracted translation,
+thickness_as_published,layer I thickness cell as printed ('-' = not given),cortical layer I,Length.mm,,secondary,Mammalia (Table species),Garey__2006_Table6,,
+ratio_as_published,"printed ratio of layer I to total thickness, e.g. '(1:12)'",cortical layer I,Ratio,,secondary,Mammalia (Table species),Garey__2006_Table6,second printed line under each thickness,
+LayerI_thickness.mm,thickness of layer I,cortical layer I,Length.mm,mean,secondary,Mammalia (Table species),Garey__2006_Table6,'Monkey' split into 'Monkey: Macaque' and 'Monkey: Marmoset' as printed in the sub-header,
+LayerI_to_total_ratio_denominator,n in the printed ratio 1:n (layer I : total cortical thickness),cortical layer I,Ratio,,secondary,Mammalia (Table species),Garey__2006_Table6,,
+source_location,"table, printed page in the 2006 Springer translation, and Brodmann 1909 chapter",,,,info,Mammalia (Table species),Garey__2006_Table6,,
+data_role,"'secondary': English translation of Brodmann 1909; values are Brodmann's, not new measurements",,,,info,Mammalia (Table species),Garey__2006_Table6,supersede into the German primary where one exists; never average with it,

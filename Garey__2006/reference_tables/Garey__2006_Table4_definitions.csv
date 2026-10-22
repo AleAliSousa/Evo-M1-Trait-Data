@@ -1,0 +1,13 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,"accepted binomial (genus/order + sp. where not determined) via _keys/General/species_key.csv, source_publication Garey__2006",,,,info,Mammalia (Table species),Garey__2006_Table4,see species_key.csv note,
+species_as_published,animal name exactly as printed in the translation,,,,info,Mammalia (Table species),Garey__2006_Table4,,
+Order_printed,"mammalian order as printed (printed once per group, filled down)",,,,info,Mammalia (Table species),Garey__2006_Table4,"Primates, Prosimians, Chiropterans, Insectivores, Rodents, Marsupials; printed 'Primates (*74)' (translator endnote *74: Brodmann's 'Affen' = monkeys, not an order) -- mark removed here",
+BodyWeight.g,body weight (first number of 'body:brain weight in grams'),whole body,Mass.g,,secondary,Mammalia (Table species),Garey__2006_Table4,,
+BrainWeight.g,brain weight (second number),brain,Mass.g,,secondary,Mammalia (Table species),Garey__2006_Table4,,
+CorticalThickness_area4.mm,"cortical thickness, Brodmann area 4",area 4,Length.mm,mean,secondary,Mammalia (Table species),Garey__2006_Table4,Kangaroo prints '2.8 (3.1)'; this column holds 2.8,
+CorticalThickness_area4_alt.mm,bracketed alternative thickness for area 4 (kangaroo 3.1),area 4,Length.mm,,secondary,Mammalia (Table species),Garey__2006_Table4,Table 3 prints the same cell as the range 2.8-3.1,
+CorticalThickness_area7.mm,"cortical thickness, Brodmann area 7; blank where '-' (bat)",area 7,Length.mm,mean,secondary,Mammalia (Table species),Garey__2006_Table4,,
+thickness_area4_as_published,area 4 cell exactly as printed,,,,info,Mammalia (Table species),Garey__2006_Table4,,
+thickness_area7_as_published,area 7 cell exactly as printed,,,,info,Mammalia (Table species),Garey__2006_Table4,,
+source_location,"table, printed page in the 2006 Springer translation, and Brodmann 1909 chapter",,,,info,Mammalia (Table species),Garey__2006_Table4,,
+data_role,'secondary': English translation of Brodmann 1909,,,,info,Mammalia (Table species),Garey__2006_Table4,supersede into the German primary; never average,

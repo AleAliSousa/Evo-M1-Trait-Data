@@ -1,0 +1,9 @@
+﻿Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+brain,"Brain code with n measurements as printed, or 'Mean'",,,,info,Florida manatee (Trichechus manatus),Reep_OShea_1990_Table4,,
+taxon_printed,'Florida manatees' (table caption),,Species,,info,Florida manatee (Trichechus manatus),Reep_OShea_1990_Table4,,
+species,Trichechus manatus (from Abstract/Methods),,Species,,info,Florida manatee (Trichechus manatus),Reep_OShea_1990_Table4,,
+n_measurements,Number of thickness measurements (n) parsed from the brain label,,Count,,info,Florida manatee (Trichechus manatus),Reep_OShea_1990_Table4,,
+cortical_thickness_mean_mm,"Cortical gray matter thickness, mean, mm",Cortex,Thickness.mm,mean,primary,Florida manatee (Trichechus manatus),Reep_OShea_1990_Table4,"Printed Mean row 4.23 is NOT the mean of the three brains (3.99, 4.10, 3.98 -> 4.02; n-weighted 4.02): probable misprint, kept as printed; see README",
+cortical_thickness_SD_mm,"SD of thickness, mm",Cortex,Thickness.mm,SD,primary,Florida manatee (Trichechus manatus),Reep_OShea_1990_Table4,Printed Mean-row SD 0.41 = mean of the three SDs (0.407),
+source,Folder/paper key,,,,info,Florida manatee (Trichechus manatus),Reep_OShea_1990_Table4,,
+Method:transcription,Scanned print; transcribed from a 2.0x render of PDF p.6 (journal p.190),,,,method,Florida manatee (Trichechus manatus),Reep_OShea_1990_Table4,,

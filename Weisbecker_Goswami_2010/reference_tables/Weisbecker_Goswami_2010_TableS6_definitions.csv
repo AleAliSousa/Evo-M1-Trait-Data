@@ -1,0 +1,11 @@
+﻿Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species,Species name exactly as printed (italic binomial; printed misspelling 'Dasyurus maculates' kept; harmonised downstream),,Species,,info,Marsupials,Weisbecker_Goswami_2010_TableS6,,
+body_mass_with_brain_g,"Body weight published together with the brain weight, g (used to size-correct brain)",Body,Mass.g,,secondary,Marsupials,Weisbecker_Goswami_2010_TableS6,Compiled from the literature; sources not printed per row,"Table S6 column 'Body weight (brain), g'"
+brain_mass_g,"Brain weight, g",WholeBrain,Mass.g,,secondary,Marsupials,Weisbecker_Goswami_2010_TableS6,Compilation; basis (fresh/fixed/endocast) not stated; Lewitus 2014 ref 38 comparable,Table S6
+gestation_length_d,"Gestation length, days; em-dash = not available (7 species, used in the 'larger marsupial dataset', Table S4)",,Gestation.days,,secondary,Marsupials,Weisbecker_Goswami_2010_TableS6,,Table S6
+lactation_d,"Lactation duration, days (the paper's 'weaning age')",,Weaning.days,,secondary,Marsupials,Weisbecker_Goswami_2010_TableS6,"Printed column 'Lactation, d'; the text calls the variable weaning age",Table S6
+litter_size,Litter size (mean number of young),,LitterSize.count,,secondary,Marsupials,Weisbecker_Goswami_2010_TableS6,"Marsupial litter sizes from Fisher et al. (ref 40 in the paper), per the Methods",Table S6
+body_mass_with_BMR_g,"Body weight published together with the BMR, g",Body,Mass.g,,secondary,Marsupials,Weisbecker_Goswami_2010_TableS6,"Use this, not body_mass_with_brain_g, to mass-correct BMR","Table S6 column 'Body size (BMR), g'"
+BMR_kJ_per_h,"Basal metabolic rate, kJ per hour, whole animal",Body,BMR.kJ.h,,secondary,Marsupials,Weisbecker_Goswami_2010_TableS6,Printed unit 'KJ/h'. ~ mL O2/h x 0.0201 (see README check),Table S6
+source,Folder/paper key,,,,info,Marsupials,Weisbecker_Goswami_2010_TableS6,,
+Method:transcription,SI PDF page 5 (born-digital); transcribed by eye from a 2.0x render; 52 rows; per-row literature source codes are NOT printed in the SI,,,,method,Marsupials,Weisbecker_Goswami_2010_TableS6,,

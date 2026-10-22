@@ -1,0 +1,7 @@
+﻿Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+case_no,Animal case number as printed (en-dash),,Specimen,,info,Monodelphis domestica (short-tailed opossum),Seelke_etal_2014_Table1,,
+species,Monodelphis domestica (not printed in the table; Subjects section),,Species,,info,Monodelphis domestica (short-tailed opossum),Seelke_etal_2014_Table1,,
+age_days,"Age of the animal, days",,Age.days,,primary,Monodelphis domestica (short-tailed opossum),Seelke_etal_2014_Table1,"Methods: ""adult""",
+weight_g,"Body weight of the animal, g",Body,Mass.g,,primary,Monodelphis domestica (short-tailed opossum),Seelke_etal_2014_Table1,"Body weight (the table header says ""Weight (g)""; the text says ""ages, weights, and sexes"")",
+sex,Sex (M/F),,Sex,,info,Monodelphis domestica (short-tailed opossum),Seelke_etal_2014_Table1,,
+source,Source folder token,,,,info,Monodelphis domestica (short-tailed opossum),Seelke_etal_2014_Table1,,

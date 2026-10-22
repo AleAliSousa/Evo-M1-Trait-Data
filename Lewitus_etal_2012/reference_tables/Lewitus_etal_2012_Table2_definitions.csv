@@ -1,0 +1,4 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species,Species name exactly as printed,,Species,,info,Mammals (71+ species),Lewitus_etal_2012_Table2,Manis gigantea appears here but not in Table 1; Crocuta crocuta is printed under both Haemochorial and Endotheliochorial and kept in both rows,column lists
+placental_type,Placental type (Haemochorial / Endotheliochorial / Epitheliochorial) per the column heading,Placenta,PlacentaType,,secondary,Mammals (71+ species),Lewitus_etal_2012_Table2,Classification after Mossman (1987) per Methods; not measured by the authors. Crocuta double-listing is unresolved in the paper; do not use without an owner ruling,Table 2; Methods
+source,Source folder key,,Source,,info,Mammals (71+ species),Lewitus_etal_2012_Table2,,

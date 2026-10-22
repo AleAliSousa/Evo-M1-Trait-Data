@@ -1,0 +1,10 @@
+﻿Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+brain,Brain code and sectioning plane as printed (M-387 coronal; 84-14 horizontal) or 'Mean',,,,info,Florida manatee (Trichechus manatus),Reep_OShea_1990_Table3,,
+taxon_printed,'Florida manatees' (table caption),,Species,,info,Florida manatee (Trichechus manatus),Reep_OShea_1990_Table3,,
+species,Trichechus manatus (from Abstract/Methods),,Species,,info,Florida manatee (Trichechus manatus),Reep_OShea_1990_Table3,,
+gyrification_index_GI,Gyration index (cortical perimeter / exposed perimeter) from spaced sections,Cortex,GI,,primary,Florida manatee (Trichechus manatus),Reep_OShea_1990_Table3,Lewitus 2014 ref 83 comparable quantity (1.06 mean),
+cortical_surface_left_cm2,"Cortical surface area, left, cm2",Cortex,SurfaceArea.cm2,,primary,Florida manatee (Trichechus manatus),Reep_OShea_1990_Table3,,
+cortical_surface_right_cm2,"Cortical surface area, right, cm2",Cortex,SurfaceArea.cm2,,primary,Florida manatee (Trichechus manatus),Reep_OShea_1990_Table3,,
+cortical_surface_total_cm2,"Cortical surface area, total, cm2",Cortex,SurfaceArea.cm2,,primary,Florida manatee (Trichechus manatus),Reep_OShea_1990_Table3,Mean row left+right-total = -1 (rounding),
+source,Folder/paper key,,,,info,Florida manatee (Trichechus manatus),Reep_OShea_1990_Table3,,
+Method:transcription,Scanned print; transcribed from a 2.0x render of PDF p.6 (journal p.190),,,,method,Florida manatee (Trichechus manatus),Reep_OShea_1990_Table3,,

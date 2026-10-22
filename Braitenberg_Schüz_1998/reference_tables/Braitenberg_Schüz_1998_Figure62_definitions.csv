@@ -1,0 +1,22 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+source_row,One-based row in bin order (0.2 mm upwards).,,,,info,mouse,Braitenberg_Schüz_1998_Figure62,,
+species_as_published,Species term as printed in the book (mouse).,,,,info,mouse,Braitenberg_Schüz_1998_Figure62,,
+measure_code,Measure identity; see the neurons_per_distance_bin row.,,,,info,mouse,Braitenberg_Schüz_1998_Figure62,,
+bin_start_mm,"Lower edge of the 0.1-mm distance bin, read from the printed x axis.",,,,info,mouse,Braitenberg_Schüz_1998_Figure62,,"Braitenberg and Schüz 1998, Fig. 62, p. 133"
+bin_end_mm,Upper edge of the 0.1-mm distance bin.,,,,info,mouse,Braitenberg_Schüz_1998_Figure62,,"Braitenberg and Schüz 1998, Fig. 62, p. 133"
+bin_mid_mm,"Bin midpoint, (bin_start_mm + bin_end_mm)/2; used for the mean distance.",,,,method,mouse,Braitenberg_Schüz_1998_Figure62,Derived in R.,
+count_digitized,"Number of labelled neurons in the bin, digitized from the bar height (0.1 precision is not real precision).",neocortex (dorsal hemisphere),Count.neurons,count per 0.1-mm bin (digitized),primary,mouse,Braitenberg_Schüz_1998_Figure62,About +/-1 neuron per bar plus about +/-1% scale; tail bars of <=10 neurons least certain.,"Braitenberg and Schüz 1998, Fig. 62, p. 133"
+count_rounded,count_digitized rounded to a whole neuron.,neocortex (dorsal hemisphere),Count.neurons,count per 0.1-mm bin (digitized),primary,mouse,Braitenberg_Schüz_1998_Figure62,"Rounding of a digitized value, not a printed count.","Braitenberg and Schüz 1998, Fig. 62, p. 133"
+height_px,Bar height in pixels of the embedded 150-ppi figure image (axis line to top-line centre).,,,,method,mouse,Braitenberg_Schüz_1998_Figure62,Derived in R from the snapshot and calibration.,
+px_per_100_neurons,Pixels between the x-axis line and the y tick labelled 100.,,,,method,mouse,Braitenberg_Schüz_1998_Figure62,From reference_tables calibration.,
+value_origin,digitized_from_figure for every row.,,,,info,mouse,Braitenberg_Schüz_1998_Figure62,,
+reading_note,"How the bar top was read (automatic centroid, tiny bar near the axis line, or no bar).",,,,info,mouse,Braitenberg_Schüz_1998_Figure62,,
+data_role,Primary: first publication of Greilich (1984) unpublished thesis data.,,,,info,mouse,Braitenberg_Schüz_1998_Figure62,,
+source_ref_key,Printed attribution in the caption; join to ref_key in the item references.csv.,,,,info,mouse,Braitenberg_Schüz_1998_Figure62,,
+source_locus,Figure number in the book.,,,,info,mouse,Braitenberg_Schüz_1998_Figure62,,
+source_pdf_page,One-based page index of the source PDF.,,,,info,mouse,Braitenberg_Schüz_1998_Figure62,,
+source_printed_page,Printed book page.,,,,info,mouse,Braitenberg_Schüz_1998_Figure62,,
+source_year,Publication year of the book (1998); the underlying thesis is 1984.,,,,info,mouse,Braitenberg_Schüz_1998_Figure62,,
+neurons_per_distance_bin,"HRP-labelled neurons whose distance from the injection site falls in the bin; homolateral cortico-cortical connections only; 21 mice, each with one HRP injection of about 1 mm2 of dorsal cortex (pp. 130, 132).",neocortex (dorsal hemisphere),Count.neurons,count per 0.1-mm distance bin,primary,mouse,Braitenberg_Schüz_1998_Figure62,"Distances are cell-body-to-injection-site distances, not white-matter axon path lengths.","Braitenberg and Schüz 1998, Fig. 62, p. 133"
+Method:digitization,"Embedded figure image (553 x 389 px, 150 ppi); shear-corrected reading of bar top lines; calibration from 11 printed x ticks, the x-axis line and the single y tick (100).",,,,method,mouse,Braitenberg_Schüz_1998_Figure62,"AI digitization (Microsoft Copilot, 2026-10-22); human visual check pending.",
+Method:observation_level,"One pooled distribution over 21 injections, not species-level trait records.",,,,method,mouse,Braitenberg_Schüz_1998_Figure62,Do not merge the mean distance as a white-matter axon length.,

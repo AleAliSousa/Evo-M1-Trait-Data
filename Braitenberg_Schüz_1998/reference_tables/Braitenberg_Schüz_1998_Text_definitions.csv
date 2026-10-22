@@ -1,0 +1,29 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+source_row,"One-based row in the constructed capture, not a printed table order.",,,,info,mouse,Braitenberg_Schüz_1998_Text,,
+record_id,Stable item-scoped key; joins the context table.,,,,info,mouse,Braitenberg_Schüz_1998_Text,,
+species_as_published,Species term in the book (mouse).,,,,info,mouse,Braitenberg_Schüz_1998_Text,,
+measure_code,Long-table measure identity; see the measure rows below.,,,,info,mouse,Braitenberg_Schüz_1998_Text,,
+value,Single printed value in unit; blank for a printed range.,,,,info,mouse,Braitenberg_Schüz_1998_Text,Generic numeric storage: read with measure_code and unit.,
+value_lower,Lower end of a printed range (no midpoint imputed).,,,,info,mouse,Braitenberg_Schüz_1998_Text,,
+value_upper,Upper end of a printed range.,,,,info,mouse,Braitenberg_Schüz_1998_Text,,
+unit,Unit of value/value_lower/value_upper; differs by measure_code.,,,,info,mouse,Braitenberg_Schüz_1998_Text,,
+printed_value,"Printed numerical notation, unnormalised.",,,,info,mouse,Braitenberg_Schüz_1998_Text,,
+printed_unit,Printed unit phrase.,,,,info,mouse,Braitenberg_Schüz_1998_Text,,
+qualifier_as_printed,Printed approximation or hedging word; blank when none.,,,,info,mouse,Braitenberg_Schüz_1998_Text,,
+structure_scope,What the value covers (e.g. neocortex vs cortex including hippocampus).,,,,info,mouse,Braitenberg_Schüz_1998_Text,,
+hemisphere_scope,One hemisphere or not applicable; volumes are printed per hemisphere.,,,,info,mouse,Braitenberg_Schüz_1998_Text,Never double silently.,
+stat,"Kind of statement (reported volume, mean thickness, estimate, order of magnitude).",,,,info,mouse,Braitenberg_Schüz_1998_Text,,
+approximate,"TRUE where the book hedges (about, should have) or gives an order of magnitude.",,,,info,mouse,Braitenberg_Schüz_1998_Text,,
+data_role,Per-row primary or secondary.,,,,info,mouse,Braitenberg_Schüz_1998_Text,,
+provenance_status,"Where the value comes from, as far as the book says.",,,,info,mouse,Braitenberg_Schüz_1998_Text,,
+merge_gate,Per-row HOLD reason.,,,,info,mouse,Braitenberg_Schüz_1998_Text,,
+source_ref_key,Printed citation key in the excerpt; join to ref_key in the item references.csv.,,,,info,mouse,Braitenberg_Schüz_1998_Text,,
+source_locus,Chapter and passage of the statement.,,,,info,mouse,Braitenberg_Schüz_1998_Text,,
+source_pdf_page,One-based page index of the source PDF.,,,,info,mouse,Braitenberg_Schüz_1998_Text,,
+source_printed_page,Printed book page.,,,,info,mouse,Braitenberg_Schüz_1998_Text,,
+source_year,Publication year (1998).,,,,info,mouse,Braitenberg_Schüz_1998_Text,,
+cortex_including_hippocampus_volume_one_hemisphere,Volume of the cortex including the hippocampus in one hemisphere.,cortex incl. hippocampus (grey matter),Volume.mm3,reported volume (about),primary,mouse,Braitenberg_Schüz_1998_Text,"One hemisphere. Read as grey matter: the book multiplies it by the cortical neuron density (9.2 x 10^4/mm3, counted in layers II-VI) to estimate neuron totals (p. 27). Measurement method not stated.","Braitenberg and Schüz 1998, p. 27"
+neocortex_volume_one_hemisphere,Volume of the neocortex in one hemisphere.,neocortex (grey matter),Volume.mm3,reported volume,primary,mouse,Braitenberg_Schüz_1998_Text,One hemisphere; Zhang & Sejnowski 2000 G = 112 mm3 is 2 x this value. Read as grey matter: the book multiplies it by the cortical neuron density to estimate neuron totals (p. 27). Measurement method not stated.,"Braitenberg and Schüz 1998, p. 27"
+cortex_mean_thickness_paraffin_sections,"Area-weighted average cortical thickness from the cortical map, paraffin-embedded material.",whole cortex except hippocampus and fascia dentata,Thickness.mm,mean thickness,primary,mouse,Braitenberg_Schüz_1998_Text,Shrunken tissue.,"Braitenberg and Schüz 1998, p. 169"
+cortex_mean_thickness_unfixed_estimate,Average thickness the unfixed cortex should have (authors' shrinkage-corrected estimate).,cortex (unfixed),Thickness.mm,estimated mean thickness (range),primary,mouse,Braitenberg_Schüz_1998_Text,Estimate; Zhang & Sejnowski 2000 use 0.85 mm (midpoint).,"Braitenberg and Schüz 1998, p. 169"
+neurons_per_mm2_cortical_surface,Order of magnitude of neurons under 1 mm2 of cortical surface in the mouse counts of Fig. 12.,"cortex (areas 8, 6, 17)",Density.neurons_per_mm2,order of magnitude (about),secondary,mouse,Braitenberg_Schüz_1998_Text,Use Schüz and Palm (1989) for the counts themselves.,"Braitenberg and Schüz 1998, pp. 25 and 27"

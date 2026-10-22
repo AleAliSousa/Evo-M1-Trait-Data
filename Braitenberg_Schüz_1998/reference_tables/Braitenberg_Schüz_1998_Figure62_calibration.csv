@@ -1,0 +1,22 @@
+key,value,unit,note
+image_source,"PDF page 131 (book p. 133), embedded greyscale image object 1143",,Fig. 62 is a separate raster image; the page text is a 600-dpi bilevel scan with an OCR text layer
+image_width_px,553,px,
+image_height_px,389,px,
+image_ppi,150,ppi,as embedded in the PDF
+shear_dx_per_row,0.0124,px per row,bar edges and y-axis lean right by 0.0124 px per row; edges and interior columns were read on a shear-corrected copy (x shifted by 0.0124*(row-341.5))
+shear_reference_row,341.5,px,row at which corrected and original x coincide
+x_tick_0_mm_px,35.95,px,centroid of the printed major tick below the axis
+x_tick_1_mm_px,85.84,px,centroid of the printed major tick below the axis
+x_tick_2_mm_px,137.19,px,centroid of the printed major tick below the axis
+x_tick_3_mm_px,188.33,px,centroid of the printed major tick below the axis
+x_tick_4_mm_px,239.45,px,centroid of the printed major tick below the axis
+x_tick_5_mm_px,291.24,px,centroid of the printed major tick below the axis
+x_tick_6_mm_px,342.37,px,centroid of the printed major tick below the axis
+x_tick_7_mm_px,394.27,px,centroid of the printed major tick below the axis
+x_tick_8_mm_px,444.71,px,centroid of the printed major tick below the axis
+x_tick_9_mm_px,496.50,px,centroid of the printed major tick below the axis
+x_tick_10_mm_px,547.70,px,centroid of the printed major tick below the axis
+baseline_intercept_y_px,351.3637,px,x-axis line centre: y = intercept + slope*x (fitted on empty axis and below tall bars)
+baseline_slope_dy_per_dx,-0.006519,px per px,
+y_axis_x_px,35.0,px,column where the y axis meets the x axis
+y_tick_100_y_px,299.66,px,"centroid of the single printed y tick, labelled 100 (number of neurons); axis starts at 0 on the x-axis line"

@@ -207,6 +207,16 @@ XW <- rbind(
 colnames(XW) <- c("label", "code", "folder")
 XW <- as.data.frame(XW, stringsAsFactors = FALSE)
 
+# ManyPrimates supplement views retain source-specific labels and source definitions.
+supp_map <- rd(file.path(repo, "__merging_supplementary", "supplementary_sources.csv"))
+if (!is.null(supp_map)) {
+  supp_map <- supp_map[supp_map$source_publication %in%
+    c("Bowmaker_etal_1991","Campbell_Tobler_1984","Dunn_Smaers_2018","GalánAcedo_etal_2019","Gamba_etal_2015","Grueter_etal_2013","Jacobs_etal_2019","Kamilar_Cooper_2013","McComb_Semple_2005","MorroghBernard_etal_2008","Nunn_Samson_2018","Pasquaretta_etal_2014","Zimmermann__2017"), , drop = FALSE]
+  XW <- rbind(XW, data.frame(label = paste0(supp_map$Measure, " (", supp_map$Units, ")"),
+                            code = supp_map$value_col, folder = supp_map$source_publication))
+}
+
+
 # ---- 4. resolve every label -------------------------------------------------
 strip_unit <- function(lab) sub("\\s*\\([^()]*\\)$", "", lab)
 unit_of    <- function(lab) {
@@ -315,6 +325,20 @@ res <- lapply(seq_len(nrow(dom)), function(i) {
              stringsAsFactors = FALSE)
 })
 outd <- do.call(rbind, res)
+
+# ManyPrimates mappings identify an exact item; shared codes such as Value must
+# not select a different table's definition from the same publication folder.
+if (!is.null(supp_map) && nrow(supp_map)) for (i in seq_len(nrow(supp_map))) {
+  m <- supp_map[i, ]; rel <- file.path(m$source_publication, "reference_tables", paste0(m$item, "_definitions.csv"))
+  ds <- rd(file.path(repo, rel)); if (is.null(ds)) next
+  hit <- which(ds$Code == m$value_col); j <- match(paste0(m$Measure, " (", m$Units, ")"), outd$label)
+  if (length(hit) != 1L || is.na(j)) next
+  def <- as.character(ds$Definition[hit])
+  if (nzchar(m$note) && !grepl(m$note, def, fixed = TRUE)) def <- paste(def, m$note)
+  outd$definition[j] <- def; outd$definition_kind[j] <- "source_definition_item_mapping"
+  outd$definition_source[j] <- rel; outd$matched_code[j] <- m$value_col
+}
+
 outd <- outd[order(outd$domain, outd$measure_class, outd$label), ]
 
 # Definitions quote source text carrying non-ASCII characters (micro sign, en-dash,

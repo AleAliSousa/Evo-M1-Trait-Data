@@ -169,3 +169,19 @@ sources**; TraitExplorer discovers the folder automatically; `__Cytosplore_expor
 | deMagalhães_etal_2024_anagedata.txt | Metabolic_rate_W | BMR_wholeanimal (mL O2/h) [shared] | secondary | first | AnAge basal/resting metabolic rate in W; x 3600/20.1 -> mL O2/h using the same 20.1 J per mL O2 oxyjoule equivalent as body_ecology; shared label with body_ecology (4 compilations already pooled there; AnAge partly cites the same primaries) |
 | deMagalhães_etal_2024_anagedata.txt | Temperature_K | Body_temperature (C) [distinct] | secondary | first | body temperature paired with the AnAge metabolic-rate measurement; K - 273.15 -> deg C |
 | HerculanoHouzel_etal_2016_Table2 | N_M1 | M1_neuron_number (count) [distinct] | secondary | first | M1 neuron number as compiled by Herculano-Houzel, Kaas & de Oliveira-Souza 2016 (Table 2) from the authors' own isotropic-fractionator studies; OBSERVED rows only (predicted N_M1 rows excluded). N_SC NOT taken (Burish 2010 already in cellcounts as SpinalCord_N.n); N_M1/N_SC ratio NOT taken (uses predicted components) |
+
+
+## ManyPrimates supplements, 2026-10-21
+
+Kamilar_Cooper_2013_S2, Nunn_Samson_2018_SupplementaryTable1 and Grueter_etal_2013_TableS1 add 48 explicitly source-specific variables. Each mapping reads its built analysis CSV by relative path and is marked secondary. These compilation views are not pooled with existing primary measures or interpreted as independent teams. Nunn proxy brain volumes and day ranges remain labelled in the source table. Grueter keeps group/population records; display means are unweighted, bound-only cells are excluded, and n_specimens counts contributing records, not animals. Its seven primary Karisoke records are identified in the source CSV, while the mixed table display uses a conservative secondary role.
+
+The normal rebuild commands apply. _keys/build_variable_definitions.R uses the mapping's source column and source folder to find definitions for these 48 labels. The three live registry rows remain owner-paste steps; staged identity metadata and item-specific row workbooks document them.
+
+
+## ManyPrimates expansion, 2026-10-21
+
+The 57-item inventory batch adds 84 distinct source-specific variables; together with the three supplied supplements, 132 variables are wired. The additional 57 contribute 10,227 species-variable rows, while the 48,034 earlier rows remain unchanged. The complete 60-item source catalog is `ManyPrimates__2022/ManyPrimates_built_items.csv`. Every detailed table is wired to the source-table browser; call matrices, genus exemplars, pooled orangutan acoustics, totals and repeated summary tables are not forced into species means.
+
+Mappings retain source labels, units, filters and roles. These are display summaries of contributing records; `n_specimens` here is a row count, not necessarily an animal count. The Campbell daily-sleep mapping excludes bounds, explicitly short recordings, multi-condition cells and drowsiness-included values. Opsin presence is categorical and is not a behavioural colour-vision test.
+
+Item-specific definitions are bound using the exact item name so repeated column codes within a paper cannot borrow another table's meaning. The live registry still requires owner-paste registration; explicit source CSV paths allow these mappings to work before that step.

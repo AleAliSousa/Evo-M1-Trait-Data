@@ -1,0 +1,53 @@
+Species	M opsin (λmax ≤ 543 nm)	L opsin (λmax ≥ 558 nm)	Code	References	Source_row	Opsin_code	M_opsin_present	L_opsin_present	Reference_keys	Single_individual_flag	Data_role
+Tarsier tarsier		X	3	1	2	3	FALSE	TRUE	1	FALSE	secondary
+Tarsier syrichta		X	3	1,2,3	3	3	FALSE	TRUE	1; 2; 3	FALSE	secondary
+Tarsier bancanus	X		1	2,3	4	1	TRUE	FALSE	2; 3	FALSE	secondary
+Perodicticus potto	X		1b	2,3	5	1	TRUE	FALSE	2; 3	TRUE	secondary
+Loris tardigradus	X		1b	2,3	6	1	TRUE	FALSE	2; 3	TRUE	secondary
+Nycticebus pygmaeus	X		1	3	7	1	TRUE	FALSE	3	FALSE	secondary
+Nycticebus coucang	X		1b	2,3	8	1	TRUE	FALSE	2; 3	TRUE	secondary
+Galago demidoff	X		1	3	9	1	TRUE	FALSE	3	FALSE	secondary
+Galago senegalensis	X		1	2,3	10	1	TRUE	FALSE	2; 3	FALSE	secondary
+Galago moholi	X		1	2,3	11	1	TRUE	FALSE	2; 3	FALSE	secondary
+Otolemur garnetti	X		1	2,3	12	1	TRUE	FALSE	2; 3	FALSE	secondary
+Otolemur crassicaudatus	X		1	2,3	13	1	TRUE	FALSE	2; 3	FALSE	secondary
+Daubentonia madagascariensis	X		1	2,3	14	1	TRUE	FALSE	2; 3	FALSE	secondary
+Lepilemur sp.	X		1	3	15	1	TRUE	FALSE	3	FALSE	secondary
+Cheirogaleus medius	X		1	2,3	16	1	TRUE	FALSE	2; 3	FALSE	secondary
+Cheirogaleus major	X		1	2,3	17	1	TRUE	FALSE	2; 3	FALSE	secondary
+Mirza coquereli		X	3	2,3	18	3	FALSE	TRUE	2; 3	FALSE	secondary
+Microcebus murinus		X	3	2,3	19	3	FALSE	TRUE	2; 3	FALSE	secondary
+Varecia variegata	X	X	2	4	20	2	TRUE	TRUE	4	FALSE	secondary
+Varecia rubra	X	X	2	2,3,5	21	2	TRUE	TRUE	2; 3; 5	FALSE	secondary
+Lemur catta	X		1	2,3,5,6	22	1	TRUE	FALSE	2; 3; 5; 6	FALSE	secondary
+Hapalemur sp.		X	3b	2,3	23	3	FALSE	TRUE	2; 3	TRUE	secondary
+Eulemur coronatus	X		1	This study	24	1	TRUE	FALSE	This study	FALSE	primary
+Eulemur macaco	X	X	2	This study	25	2	TRUE	TRUE	This study	FALSE	primary
+Eulemur flavifrons	X	X	2	7,This study	26	2	TRUE	TRUE	7; This study	FALSE	both
+Eulemur rubriventer		X	3	8,This study	27	3	FALSE	TRUE	8; This study	FALSE	both
+Eulemur mongoz	X		1	2,3	28	1	TRUE	FALSE	2; 3	FALSE	secondary
+Eulemur collaris	X		1	5,This study	29	1	TRUE	FALSE	5; This study	FALSE	both
+Eulemur cinereiceps	X		1	This study	30	1	TRUE	FALSE	This study	FALSE	primary
+Eulemur rufifrons	X		1	This study	31	1	TRUE	FALSE	This study	FALSE	primary
+Eulemur fulvus	X		1	9,This study	32	1	TRUE	FALSE	9; This study	FALSE	both
+Eulemur sanfordi	X		1	This study	33	1	TRUE	FALSE	This study	FALSE	primary
+Eulemur albifrons	X		1	This study	34	1	TRUE	FALSE	This study	FALSE	primary
+Indri indri	X	X	2	10	35	2	TRUE	TRUE	10	FALSE	secondary
+Propithecus perrieri		X	3b	10	36	3	FALSE	TRUE	10	TRUE	secondary
+Propithecus edwardsi	X	X	2	10	37	2	TRUE	TRUE	10	FALSE	secondary
+Propithecus diadema	X	X	2	10	38	2	TRUE	TRUE	10	FALSE	secondary
+Propithecus tattersalli	X	X	2	10	39	2	TRUE	TRUE	10	FALSE	secondary
+Propithecus coquereli	X	X	2	2,3,5,10 	40	2	TRUE	TRUE	2; 3; 5; 10	FALSE	secondary
+Propithecus candidus	X		1b	10	41	1	TRUE	FALSE	10	TRUE	secondary
+Propithecus verreauxi	X	X	2	10,11	42	2	TRUE	TRUE	10; 11	FALSE	secondary
+Propithecus deckenii	X	X	2	10	43	2	TRUE	TRUE	10	FALSE	secondary
+Propithecus coronatus	X	X	2	10	44	2	TRUE	TRUE	10	FALSE	secondary
+Avahi unicolor		X	3	12	45	3	FALSE	TRUE	12	FALSE	secondary
+Avahi occidentalis		X	3	12	46	3	FALSE	TRUE	12	FALSE	secondary
+Avahi cleesei		X	3	12	47	3	FALSE	TRUE	12	FALSE	secondary
+Avahi laniger		X	3	12	48	3	FALSE	TRUE	12	FALSE	secondary
+Avahi betsileo		X	3	12	49	3	FALSE	TRUE	12	FALSE	secondary
+Avahi mooreorum		X	3	12	50	3	FALSE	TRUE	12	FALSE	secondary
+Avahi peyrierasi		X	3	12	51	3	FALSE	TRUE	12	FALSE	secondary
+Avahi ramanantsoavani		X	3	12	52	3	FALSE	TRUE	12	FALSE	secondary
+Avahi meridionalis		X	3	12	53	3	FALSE	TRUE	12	FALSE	secondary

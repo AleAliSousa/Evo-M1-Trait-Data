@@ -1,0 +1,10 @@
+Taxon,Taxon scope,Trait,Value,SD,N,N basis,Unit,Statistic,Data role,Source location,Interpretation
+Eulemur fulvus,species,M/L cone peak,544,,4,animals,nm,fit to mean sensitivity,primary,p.249 text; p.251 Fig.7,50-Hz ERG; four brown lemurs
+Lemur catta,species,M/L cone peak,546,,4,animals,nm,fit to mean sensitivity,primary,p.249 text; p.251 Fig.7,50-Hz ERG; four ringtail lemurs
+Lemur catta,species,Rod peak,509,,1,animal,nm,best fit,primary,p.249 text; p.250 Fig.6,Dark-adapted ringtail lemur
+Eulemur fulvus; Lemur catta,pooled two species,SWS cone peak,437,,3,animals: one brown and two ringtail lemurs,nm,best fit,primary,"pp.248,250,252; Fig.5",Pooled estimate; do not duplicate as an independently measured peak for each species
+Eulemur fulvus; Lemur catta,pooled two species,Long-wave template peak,545,,3,pooled animals,nm,fixed template,primary,p.252,"Fixed in SWS fitting, distinct from 544/546 fitted species curves"
+Eulemur fulvus; Lemur catta,pooled two species,SWS template weight,76,,3,pooled animals,percent,fitted coefficient,primary,p.252,"Model mixture weight, not retinal cell ratio"
+Eulemur fulvus; Lemur catta,pooled two species,Long-wave template weight,24,,3,pooled animals,percent,fitted coefficient,primary,p.252,"Model mixture weight, not retinal cell ratio"
+Eulemur macaco,species,Rod peak,501,,9,cells,nm,mean,secondary,p.252 cites Bowmaker 1991,Reused microspectrophotometry; not new measurements here
+Eulemur macaco,species,Cone peak,543,,3,cells,nm,mean,secondary,p.252 cites Bowmaker 1991,Reused microspectrophotometry; cells not animals

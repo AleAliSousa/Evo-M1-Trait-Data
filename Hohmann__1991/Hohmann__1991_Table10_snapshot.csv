@@ -1,0 +1,34 @@
+Vocal category,Statistic,A_male,A_female,S_male,S_female,J_male,J_female,I_both,Σ
+Hiccup,rate per 10h,6.4,9.2,–,5.8,7.9,6.1,2.6,38.0
+Hiccup,percent within age-sex,1.419,7.221,–,3.864,2.340,1.046,0.056,0.591
+Hiccup,percent within call,16.842,24.211,–,15.263,20.789,16.053,6.842,100
+Cough,rate per 10h,2.7,17.0,1.0,1.0,13.8,0.9,–,36.4
+Cough,percent within age-sex,0.599,13.344,0.917,0.666,4.088,0.154,–,0.566
+Cough,percent within call,7.418,46.701,2.747,2.747,37.912,2.473,–,100
+Warble + whistle,rate per 10h,–,14.1,3.0,72.6,85.6,103.4,591.8,870.5
+Warble + whistle,percent within age-sex,–,11.068,2.750,48.368,25.355,17.724,12.660,13.532
+Warble + whistle,percent within call,–,1.620,0.345,8.340,9.833,11.878,67.984,100
+Contact tremolo,rate per 10h,–,46.7,11.9,24.2,44.3,54.3,12.4,193.8
+Contact tremolo,percent within age-sex,–,36.656,10.907,16.123,13.122,9.308,0.265,3.013
+Contact tremolo,percent within call,–,24.097,6.140,12.000,22.859,28.019,6.398,100
+Shriek,rate per 10h,–,24.8,1.0,45.5,184.0,418.7,"4,058.8","4,732.8"
+Shriek,percent within age-sex,–,19.466,0.917,30.313,54.502,71.769,86.830,73.572
+Shriek,percent within call,–,0.524,0.021,0.961,3.888,8.847,85.759,100
+Squeal,rate per 10h,–,0.5,–,–,–,–,8.8,9.3
+Squeal,percent within age-sex,–,0.392,–,–,–,–,0.188,0.145
+Squeal,percent within call,–,5.376,–,–,–,–,94.624,100
+Grunt,rate per 10h,260.9,10.2,12.9,–,2.0,–,–,286.0
+Grunt,percent within age-sex,57.862,8.006,11.824,–,0.592,–,–,4.446
+Grunt,percent within call,91.224,3.566,4.510,–,0.699,–,–,100
+Loud call,rate per 10h,4.5,–,7.9,–,–,–,–,12.4
+Loud call,percent within age-sex,0.998,–,7.241,–,–,–,–,0.193
+Loud call,percent within call,36.290,–,63.710,–,–,–,–,100
+Grunt bark,rate per 10h,170.9,–,–,–,–,–,–,170.9
+Grunt bark,percent within age-sex,37.902,–,–,–,–,–,–,2.657
+Grunt bark,percent within call,100,–,–,–,–,–,–,100
+Rumble,rate per 10h,5.5,4.9,71.4,1.0,–,–,–,82.8
+Rumble,percent within age-sex,1.220,3.846,65.445,0.666,–,–,–,1.287
+Rumble,percent within call,6.643,5.918,86.232,1.208,–,–,–,100
+Σ total,rate per 10h,450.9,127.4,109.1,150.1,337.6,583.4,"4,674.4","6,432.9"
+Σ total,percent within age-sex,100,100,100,100,100,100,100,100
+Σ total,percent within call,7.009,1.980,1.696,2.333,5.248,9.069,72.664,100

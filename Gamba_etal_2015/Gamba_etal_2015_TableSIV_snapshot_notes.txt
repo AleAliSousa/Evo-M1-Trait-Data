@@ -1,0 +1,11 @@
+Table SIV. Distribution of the vocalizations of Eulemur rubriventer in the clusters identified using the affinity
+propagation algorithm.
+
+Columns indicate the result of the a priori classification (CH = Chatter, CL = Click, H = Hoot, HT = Hoot-Tonal Call,
+GH = Grunted Hoot, GR = Grunt, GT = Grunt-Tonal Call, GU = Gurgle, LG = Long Grunt, SC = Scream, SG = Snort-
+Grunt, SGTC = Snort-Grunt-Tonal Call, SN = Snort, TO = Tonal Call), while rows show cluster membership and
+composition. The number of vocalizations in a cluster (TOT), the number of vocalizations corresponding to an a priori
+vocal type (Input), and the number of exemplars chosen from that vocal type during the cluster analysis (Exemplars) are
+also reported.
+
+Row/column sums are recomputed, never repaired. In SIV, cluster 12 interior cells sum to 15 while TOT prints 17; GR column sums to 26 while input prints 26 but other discrepancies, if any, remain in table_checks.

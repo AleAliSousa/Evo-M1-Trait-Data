@@ -1,0 +1,265 @@
+Vocal category,Statistic,A_male,A_female,S_male,S_female,J_male,J_female,I_both,Σ,Source_row,Species,Age_sex_class,Value,Total_flag,Active_epochs
+Hiccup,rate per 10h,14.1,19.9,3.2,25.6,8.9,11.6,5.2,88.5,2,Presbytis johnii,A_male,14.1,FALSE,162
+Hiccup,rate per 10h,14.1,19.9,3.2,25.6,8.9,11.6,5.2,88.5,2,Presbytis johnii,A_female,19.9,FALSE,175
+Hiccup,rate per 10h,14.1,19.9,3.2,25.6,8.9,11.6,5.2,88.5,2,Presbytis johnii,S_male,3.2,FALSE,74
+Hiccup,rate per 10h,14.1,19.9,3.2,25.6,8.9,11.6,5.2,88.5,2,Presbytis johnii,S_female,25.6,FALSE,131
+Hiccup,rate per 10h,14.1,19.9,3.2,25.6,8.9,11.6,5.2,88.5,2,Presbytis johnii,J_male,8.9,FALSE,135
+Hiccup,rate per 10h,14.1,19.9,3.2,25.6,8.9,11.6,5.2,88.5,2,Presbytis johnii,J_female,11.6,FALSE,114
+Hiccup,rate per 10h,14.1,19.9,3.2,25.6,8.9,11.6,5.2,88.5,2,Presbytis johnii,I_both,5.2,FALSE,250
+Hiccup,rate per 10h,14.1,19.9,3.2,25.6,8.9,11.6,5.2,88.5,2,Presbytis johnii,Σ,88.5,TRUE,
+Hiccup,percent within age-sex,5.242,28.147,5.818,25.447,3.168,6.717,0.504,4.469,3,Presbytis johnii,A_male,5.242,FALSE,162
+Hiccup,percent within age-sex,5.242,28.147,5.818,25.447,3.168,6.717,0.504,4.469,3,Presbytis johnii,A_female,28.147,FALSE,175
+Hiccup,percent within age-sex,5.242,28.147,5.818,25.447,3.168,6.717,0.504,4.469,3,Presbytis johnii,S_male,5.818,FALSE,74
+Hiccup,percent within age-sex,5.242,28.147,5.818,25.447,3.168,6.717,0.504,4.469,3,Presbytis johnii,S_female,25.447,FALSE,131
+Hiccup,percent within age-sex,5.242,28.147,5.818,25.447,3.168,6.717,0.504,4.469,3,Presbytis johnii,J_male,3.168,FALSE,135
+Hiccup,percent within age-sex,5.242,28.147,5.818,25.447,3.168,6.717,0.504,4.469,3,Presbytis johnii,J_female,6.717,FALSE,114
+Hiccup,percent within age-sex,5.242,28.147,5.818,25.447,3.168,6.717,0.504,4.469,3,Presbytis johnii,I_both,0.504,FALSE,250
+Hiccup,percent within age-sex,5.242,28.147,5.818,25.447,3.168,6.717,0.504,4.469,3,Presbytis johnii,Σ,4.469,TRUE,
+Hiccup,percent within call,15.932,22.486,3.616,28.927,10.056,13.107,5.876,100,4,Presbytis johnii,A_male,15.932,FALSE,162
+Hiccup,percent within call,15.932,22.486,3.616,28.927,10.056,13.107,5.876,100,4,Presbytis johnii,A_female,22.486,FALSE,175
+Hiccup,percent within call,15.932,22.486,3.616,28.927,10.056,13.107,5.876,100,4,Presbytis johnii,S_male,3.616,FALSE,74
+Hiccup,percent within call,15.932,22.486,3.616,28.927,10.056,13.107,5.876,100,4,Presbytis johnii,S_female,28.927,FALSE,131
+Hiccup,percent within call,15.932,22.486,3.616,28.927,10.056,13.107,5.876,100,4,Presbytis johnii,J_male,10.056,FALSE,135
+Hiccup,percent within call,15.932,22.486,3.616,28.927,10.056,13.107,5.876,100,4,Presbytis johnii,J_female,13.107,FALSE,114
+Hiccup,percent within call,15.932,22.486,3.616,28.927,10.056,13.107,5.876,100,4,Presbytis johnii,I_both,5.876,FALSE,250
+Hiccup,percent within call,15.932,22.486,3.616,28.927,10.056,13.107,5.876,100,4,Presbytis johnii,Σ,100,TRUE,
+Cough,rate per 10h,–,37.0,35.7,36.6,8.0,6.3,13.0,136.6,5,Presbytis johnii,A_male,,FALSE,162
+Cough,rate per 10h,–,37.0,35.7,36.6,8.0,6.3,13.0,136.6,5,Presbytis johnii,A_female,37,FALSE,175
+Cough,rate per 10h,–,37.0,35.7,36.6,8.0,6.3,13.0,136.6,5,Presbytis johnii,S_male,35.7,FALSE,74
+Cough,rate per 10h,–,37.0,35.7,36.6,8.0,6.3,13.0,136.6,5,Presbytis johnii,S_female,36.6,FALSE,131
+Cough,rate per 10h,–,37.0,35.7,36.6,8.0,6.3,13.0,136.6,5,Presbytis johnii,J_male,8,FALSE,135
+Cough,rate per 10h,–,37.0,35.7,36.6,8.0,6.3,13.0,136.6,5,Presbytis johnii,J_female,6.3,FALSE,114
+Cough,rate per 10h,–,37.0,35.7,36.6,8.0,6.3,13.0,136.6,5,Presbytis johnii,I_both,13,FALSE,250
+Cough,rate per 10h,–,37.0,35.7,36.6,8.0,6.3,13.0,136.6,5,Presbytis johnii,Σ,136.6,TRUE,
+Cough,percent within age-sex,–,52.334,64.909,36.382,2.848,3.648,1.261,6.898,6,Presbytis johnii,A_male,,FALSE,162
+Cough,percent within age-sex,–,52.334,64.909,36.382,2.848,3.648,1.261,6.898,6,Presbytis johnii,A_female,52.334,FALSE,175
+Cough,percent within age-sex,–,52.334,64.909,36.382,2.848,3.648,1.261,6.898,6,Presbytis johnii,S_male,64.909,FALSE,74
+Cough,percent within age-sex,–,52.334,64.909,36.382,2.848,3.648,1.261,6.898,6,Presbytis johnii,S_female,36.382,FALSE,131
+Cough,percent within age-sex,–,52.334,64.909,36.382,2.848,3.648,1.261,6.898,6,Presbytis johnii,J_male,2.848,FALSE,135
+Cough,percent within age-sex,–,52.334,64.909,36.382,2.848,3.648,1.261,6.898,6,Presbytis johnii,J_female,3.648,FALSE,114
+Cough,percent within age-sex,–,52.334,64.909,36.382,2.848,3.648,1.261,6.898,6,Presbytis johnii,I_both,1.261,FALSE,250
+Cough,percent within age-sex,–,52.334,64.909,36.382,2.848,3.648,1.261,6.898,6,Presbytis johnii,Σ,6.898,TRUE,
+Cough,percent within call,–,27.086,26.135,26.794,5.857,4.612,9.517,100,7,Presbytis johnii,A_male,,FALSE,162
+Cough,percent within call,–,27.086,26.135,26.794,5.857,4.612,9.517,100,7,Presbytis johnii,A_female,27.086,FALSE,175
+Cough,percent within call,–,27.086,26.135,26.794,5.857,4.612,9.517,100,7,Presbytis johnii,S_male,26.135,FALSE,74
+Cough,percent within call,–,27.086,26.135,26.794,5.857,4.612,9.517,100,7,Presbytis johnii,S_female,26.794,FALSE,131
+Cough,percent within call,–,27.086,26.135,26.794,5.857,4.612,9.517,100,7,Presbytis johnii,J_male,5.857,FALSE,135
+Cough,percent within call,–,27.086,26.135,26.794,5.857,4.612,9.517,100,7,Presbytis johnii,J_female,4.612,FALSE,114
+Cough,percent within call,–,27.086,26.135,26.794,5.857,4.612,9.517,100,7,Presbytis johnii,I_both,9.517,FALSE,250
+Cough,percent within call,–,27.086,26.135,26.794,5.857,4.612,9.517,100,7,Presbytis johnii,Σ,100,TRUE,
+Warble + whistle,rate per 10h,–,2.1,8.1,18.3,211.6,142.1,926.5,"1,308.7",8,Presbytis johnii,A_male,,FALSE,162
+Warble + whistle,rate per 10h,–,2.1,8.1,18.3,211.6,142.1,926.5,"1,308.7",8,Presbytis johnii,A_female,2.1,FALSE,175
+Warble + whistle,rate per 10h,–,2.1,8.1,18.3,211.6,142.1,926.5,"1,308.7",8,Presbytis johnii,S_male,8.1,FALSE,74
+Warble + whistle,rate per 10h,–,2.1,8.1,18.3,211.6,142.1,926.5,"1,308.7",8,Presbytis johnii,S_female,18.3,FALSE,131
+Warble + whistle,rate per 10h,–,2.1,8.1,18.3,211.6,142.1,926.5,"1,308.7",8,Presbytis johnii,J_male,211.6,FALSE,135
+Warble + whistle,rate per 10h,–,2.1,8.1,18.3,211.6,142.1,926.5,"1,308.7",8,Presbytis johnii,J_female,142.1,FALSE,114
+Warble + whistle,rate per 10h,–,2.1,8.1,18.3,211.6,142.1,926.5,"1,308.7",8,Presbytis johnii,I_both,926.5,FALSE,250
+Warble + whistle,rate per 10h,–,2.1,8.1,18.3,211.6,142.1,926.5,"1,308.7",8,Presbytis johnii,Σ,1308.7,TRUE,
+Warble + whistle,percent within age-sex,–,2.970,14.727,18.191,75.329,82.281,89.838,66.089,9,Presbytis johnii,A_male,,FALSE,162
+Warble + whistle,percent within age-sex,–,2.970,14.727,18.191,75.329,82.281,89.838,66.089,9,Presbytis johnii,A_female,2.97,FALSE,175
+Warble + whistle,percent within age-sex,–,2.970,14.727,18.191,75.329,82.281,89.838,66.089,9,Presbytis johnii,S_male,14.727,FALSE,74
+Warble + whistle,percent within age-sex,–,2.970,14.727,18.191,75.329,82.281,89.838,66.089,9,Presbytis johnii,S_female,18.191,FALSE,131
+Warble + whistle,percent within age-sex,–,2.970,14.727,18.191,75.329,82.281,89.838,66.089,9,Presbytis johnii,J_male,75.329,FALSE,135
+Warble + whistle,percent within age-sex,–,2.970,14.727,18.191,75.329,82.281,89.838,66.089,9,Presbytis johnii,J_female,82.281,FALSE,114
+Warble + whistle,percent within age-sex,–,2.970,14.727,18.191,75.329,82.281,89.838,66.089,9,Presbytis johnii,I_both,89.838,FALSE,250
+Warble + whistle,percent within age-sex,–,2.970,14.727,18.191,75.329,82.281,89.838,66.089,9,Presbytis johnii,Σ,66.089,TRUE,
+Warble + whistle,percent within call,–,0.160,0.619,1.398,16.169,10.858,70.795,100,10,Presbytis johnii,A_male,,FALSE,162
+Warble + whistle,percent within call,–,0.160,0.619,1.398,16.169,10.858,70.795,100,10,Presbytis johnii,A_female,0.16,FALSE,175
+Warble + whistle,percent within call,–,0.160,0.619,1.398,16.169,10.858,70.795,100,10,Presbytis johnii,S_male,0.619,FALSE,74
+Warble + whistle,percent within call,–,0.160,0.619,1.398,16.169,10.858,70.795,100,10,Presbytis johnii,S_female,1.398,FALSE,131
+Warble + whistle,percent within call,–,0.160,0.619,1.398,16.169,10.858,70.795,100,10,Presbytis johnii,J_male,16.169,FALSE,135
+Warble + whistle,percent within call,–,0.160,0.619,1.398,16.169,10.858,70.795,100,10,Presbytis johnii,J_female,10.858,FALSE,114
+Warble + whistle,percent within call,–,0.160,0.619,1.398,16.169,10.858,70.795,100,10,Presbytis johnii,I_both,70.795,FALSE,250
+Warble + whistle,percent within call,–,0.160,0.619,1.398,16.169,10.858,70.795,100,10,Presbytis johnii,Σ,100,TRUE,
+Contact tremolo,rate per 10h,–,6.2,–,10.1,–,2.1,–,18.4,11,Presbytis johnii,A_male,,FALSE,162
+Contact tremolo,rate per 10h,–,6.2,–,10.1,–,2.1,–,18.4,11,Presbytis johnii,A_female,6.2,FALSE,175
+Contact tremolo,rate per 10h,–,6.2,–,10.1,–,2.1,–,18.4,11,Presbytis johnii,S_male,,FALSE,74
+Contact tremolo,rate per 10h,–,6.2,–,10.1,–,2.1,–,18.4,11,Presbytis johnii,S_female,10.1,FALSE,131
+Contact tremolo,rate per 10h,–,6.2,–,10.1,–,2.1,–,18.4,11,Presbytis johnii,J_male,,FALSE,135
+Contact tremolo,rate per 10h,–,6.2,–,10.1,–,2.1,–,18.4,11,Presbytis johnii,J_female,2.1,FALSE,114
+Contact tremolo,rate per 10h,–,6.2,–,10.1,–,2.1,–,18.4,11,Presbytis johnii,I_both,,FALSE,250
+Contact tremolo,rate per 10h,–,6.2,–,10.1,–,2.1,–,18.4,11,Presbytis johnii,Σ,18.4,TRUE,
+Contact tremolo,percent within age-sex,–,8.769,–,10.040,–,1.216,–,0.929,12,Presbytis johnii,A_male,,FALSE,162
+Contact tremolo,percent within age-sex,–,8.769,–,10.040,–,1.216,–,0.929,12,Presbytis johnii,A_female,8.769,FALSE,175
+Contact tremolo,percent within age-sex,–,8.769,–,10.040,–,1.216,–,0.929,12,Presbytis johnii,S_male,,FALSE,74
+Contact tremolo,percent within age-sex,–,8.769,–,10.040,–,1.216,–,0.929,12,Presbytis johnii,S_female,10.04,FALSE,131
+Contact tremolo,percent within age-sex,–,8.769,–,10.040,–,1.216,–,0.929,12,Presbytis johnii,J_male,,FALSE,135
+Contact tremolo,percent within age-sex,–,8.769,–,10.040,–,1.216,–,0.929,12,Presbytis johnii,J_female,1.216,FALSE,114
+Contact tremolo,percent within age-sex,–,8.769,–,10.040,–,1.216,–,0.929,12,Presbytis johnii,I_both,,FALSE,250
+Contact tremolo,percent within age-sex,–,8.769,–,10.040,–,1.216,–,0.929,12,Presbytis johnii,Σ,0.929,TRUE,
+Contact tremolo,percent within call,–,33.696,–,54.891,–,11.413,–,100,13,Presbytis johnii,A_male,,FALSE,162
+Contact tremolo,percent within call,–,33.696,–,54.891,–,11.413,–,100,13,Presbytis johnii,A_female,33.696,FALSE,175
+Contact tremolo,percent within call,–,33.696,–,54.891,–,11.413,–,100,13,Presbytis johnii,S_male,,FALSE,74
+Contact tremolo,percent within call,–,33.696,–,54.891,–,11.413,–,100,13,Presbytis johnii,S_female,54.891,FALSE,131
+Contact tremolo,percent within call,–,33.696,–,54.891,–,11.413,–,100,13,Presbytis johnii,J_male,,FALSE,135
+Contact tremolo,percent within call,–,33.696,–,54.891,–,11.413,–,100,13,Presbytis johnii,J_female,11.413,FALSE,114
+Contact tremolo,percent within call,–,33.696,–,54.891,–,11.413,–,100,13,Presbytis johnii,I_both,,FALSE,250
+Contact tremolo,percent within call,–,33.696,–,54.891,–,11.413,–,100,13,Presbytis johnii,Σ,100,TRUE,
+Shriek,rate per 10h,–,–,–,0.9,44.4,2.1,68.2,115.6,14,Presbytis johnii,A_male,,FALSE,162
+Shriek,rate per 10h,–,–,–,0.9,44.4,2.1,68.2,115.6,14,Presbytis johnii,A_female,,FALSE,175
+Shriek,rate per 10h,–,–,–,0.9,44.4,2.1,68.2,115.6,14,Presbytis johnii,S_male,,FALSE,74
+Shriek,rate per 10h,–,–,–,0.9,44.4,2.1,68.2,115.6,14,Presbytis johnii,S_female,0.9,FALSE,131
+Shriek,rate per 10h,–,–,–,0.9,44.4,2.1,68.2,115.6,14,Presbytis johnii,J_male,44.4,FALSE,135
+Shriek,rate per 10h,–,–,–,0.9,44.4,2.1,68.2,115.6,14,Presbytis johnii,J_female,2.1,FALSE,114
+Shriek,rate per 10h,–,–,–,0.9,44.4,2.1,68.2,115.6,14,Presbytis johnii,I_both,68.2,FALSE,250
+Shriek,rate per 10h,–,–,–,0.9,44.4,2.1,68.2,115.6,14,Presbytis johnii,Σ,115.6,TRUE,
+Shriek,percent within age-sex,–,–,–,0.895,15.806,1.216,6.613,5.838,15,Presbytis johnii,A_male,,FALSE,162
+Shriek,percent within age-sex,–,–,–,0.895,15.806,1.216,6.613,5.838,15,Presbytis johnii,A_female,,FALSE,175
+Shriek,percent within age-sex,–,–,–,0.895,15.806,1.216,6.613,5.838,15,Presbytis johnii,S_male,,FALSE,74
+Shriek,percent within age-sex,–,–,–,0.895,15.806,1.216,6.613,5.838,15,Presbytis johnii,S_female,0.895,FALSE,131
+Shriek,percent within age-sex,–,–,–,0.895,15.806,1.216,6.613,5.838,15,Presbytis johnii,J_male,15.806,FALSE,135
+Shriek,percent within age-sex,–,–,–,0.895,15.806,1.216,6.613,5.838,15,Presbytis johnii,J_female,1.216,FALSE,114
+Shriek,percent within age-sex,–,–,–,0.895,15.806,1.216,6.613,5.838,15,Presbytis johnii,I_both,6.613,FALSE,250
+Shriek,percent within age-sex,–,–,–,0.895,15.806,1.216,6.613,5.838,15,Presbytis johnii,Σ,5.838,TRUE,
+Shriek,percent within call,–,–,–,0.779,38.408,1.817,58.997,100,16,Presbytis johnii,A_male,,FALSE,162
+Shriek,percent within call,–,–,–,0.779,38.408,1.817,58.997,100,16,Presbytis johnii,A_female,,FALSE,175
+Shriek,percent within call,–,–,–,0.779,38.408,1.817,58.997,100,16,Presbytis johnii,S_male,,FALSE,74
+Shriek,percent within call,–,–,–,0.779,38.408,1.817,58.997,100,16,Presbytis johnii,S_female,0.779,FALSE,131
+Shriek,percent within call,–,–,–,0.779,38.408,1.817,58.997,100,16,Presbytis johnii,J_male,38.408,FALSE,135
+Shriek,percent within call,–,–,–,0.779,38.408,1.817,58.997,100,16,Presbytis johnii,J_female,1.817,FALSE,114
+Shriek,percent within call,–,–,–,0.779,38.408,1.817,58.997,100,16,Presbytis johnii,I_both,58.997,FALSE,250
+Shriek,percent within call,–,–,–,0.779,38.408,1.817,58.997,100,16,Presbytis johnii,Σ,100,TRUE,
+Squeal,rate per 10h,–,3.4,–,1.8,5.3,5.3,18.4,34.2,17,Presbytis johnii,A_male,,FALSE,162
+Squeal,rate per 10h,–,3.4,–,1.8,5.3,5.3,18.4,34.2,17,Presbytis johnii,A_female,3.4,FALSE,175
+Squeal,rate per 10h,–,3.4,–,1.8,5.3,5.3,18.4,34.2,17,Presbytis johnii,S_male,,FALSE,74
+Squeal,rate per 10h,–,3.4,–,1.8,5.3,5.3,18.4,34.2,17,Presbytis johnii,S_female,1.8,FALSE,131
+Squeal,rate per 10h,–,3.4,–,1.8,5.3,5.3,18.4,34.2,17,Presbytis johnii,J_male,5.3,FALSE,135
+Squeal,rate per 10h,–,3.4,–,1.8,5.3,5.3,18.4,34.2,17,Presbytis johnii,J_female,5.3,FALSE,114
+Squeal,rate per 10h,–,3.4,–,1.8,5.3,5.3,18.4,34.2,17,Presbytis johnii,I_both,18.4,FALSE,250
+Squeal,rate per 10h,–,3.4,–,1.8,5.3,5.3,18.4,34.2,17,Presbytis johnii,Σ,34.2,TRUE,
+Squeal,percent within age-sex,–,4.809,–,1.789,1.887,3.069,1.784,1.727,18,Presbytis johnii,A_male,,FALSE,162
+Squeal,percent within age-sex,–,4.809,–,1.789,1.887,3.069,1.784,1.727,18,Presbytis johnii,A_female,4.809,FALSE,175
+Squeal,percent within age-sex,–,4.809,–,1.789,1.887,3.069,1.784,1.727,18,Presbytis johnii,S_male,,FALSE,74
+Squeal,percent within age-sex,–,4.809,–,1.789,1.887,3.069,1.784,1.727,18,Presbytis johnii,S_female,1.789,FALSE,131
+Squeal,percent within age-sex,–,4.809,–,1.789,1.887,3.069,1.784,1.727,18,Presbytis johnii,J_male,1.887,FALSE,135
+Squeal,percent within age-sex,–,4.809,–,1.789,1.887,3.069,1.784,1.727,18,Presbytis johnii,J_female,3.069,FALSE,114
+Squeal,percent within age-sex,–,4.809,–,1.789,1.887,3.069,1.784,1.727,18,Presbytis johnii,I_both,1.784,FALSE,250
+Squeal,percent within age-sex,–,4.809,–,1.789,1.887,3.069,1.784,1.727,18,Presbytis johnii,Σ,1.727,TRUE,
+Squeal,percent within call,–,9.942,–,5.263,15.497,15.497,53.801,100,19,Presbytis johnii,A_male,,FALSE,162
+Squeal,percent within call,–,9.942,–,5.263,15.497,15.497,53.801,100,19,Presbytis johnii,A_female,9.942,FALSE,175
+Squeal,percent within call,–,9.942,–,5.263,15.497,15.497,53.801,100,19,Presbytis johnii,S_male,,FALSE,74
+Squeal,percent within call,–,9.942,–,5.263,15.497,15.497,53.801,100,19,Presbytis johnii,S_female,5.263,FALSE,131
+Squeal,percent within call,–,9.942,–,5.263,15.497,15.497,53.801,100,19,Presbytis johnii,J_male,15.497,FALSE,135
+Squeal,percent within call,–,9.942,–,5.263,15.497,15.497,53.801,100,19,Presbytis johnii,J_female,15.497,FALSE,114
+Squeal,percent within call,–,9.942,–,5.263,15.497,15.497,53.801,100,19,Presbytis johnii,I_both,53.801,FALSE,250
+Squeal,percent within call,–,9.942,–,5.263,15.497,15.497,53.801,100,19,Presbytis johnii,Σ,100,TRUE,
+Grunt,rate per 10h,34.8,1.4,3.2,–,0.9,–,–,40.3,20,Presbytis johnii,A_male,34.8,FALSE,162
+Grunt,rate per 10h,34.8,1.4,3.2,–,0.9,–,–,40.3,20,Presbytis johnii,A_female,1.4,FALSE,175
+Grunt,rate per 10h,34.8,1.4,3.2,–,0.9,–,–,40.3,20,Presbytis johnii,S_male,3.2,FALSE,74
+Grunt,rate per 10h,34.8,1.4,3.2,–,0.9,–,–,40.3,20,Presbytis johnii,S_female,,FALSE,131
+Grunt,rate per 10h,34.8,1.4,3.2,–,0.9,–,–,40.3,20,Presbytis johnii,J_male,0.9,FALSE,135
+Grunt,rate per 10h,34.8,1.4,3.2,–,0.9,–,–,40.3,20,Presbytis johnii,J_female,,FALSE,114
+Grunt,rate per 10h,34.8,1.4,3.2,–,0.9,–,–,40.3,20,Presbytis johnii,I_both,,FALSE,250
+Grunt,rate per 10h,34.8,1.4,3.2,–,0.9,–,–,40.3,20,Presbytis johnii,Σ,40.3,TRUE,
+Grunt,percent within age-sex,12.937,1.980,5.818,–,0.320,–,–,2.035,21,Presbytis johnii,A_male,12.937,FALSE,162
+Grunt,percent within age-sex,12.937,1.980,5.818,–,0.320,–,–,2.035,21,Presbytis johnii,A_female,1.98,FALSE,175
+Grunt,percent within age-sex,12.937,1.980,5.818,–,0.320,–,–,2.035,21,Presbytis johnii,S_male,5.818,FALSE,74
+Grunt,percent within age-sex,12.937,1.980,5.818,–,0.320,–,–,2.035,21,Presbytis johnii,S_female,,FALSE,131
+Grunt,percent within age-sex,12.937,1.980,5.818,–,0.320,–,–,2.035,21,Presbytis johnii,J_male,0.32,FALSE,135
+Grunt,percent within age-sex,12.937,1.980,5.818,–,0.320,–,–,2.035,21,Presbytis johnii,J_female,,FALSE,114
+Grunt,percent within age-sex,12.937,1.980,5.818,–,0.320,–,–,2.035,21,Presbytis johnii,I_both,,FALSE,250
+Grunt,percent within age-sex,12.937,1.980,5.818,–,0.320,–,–,2.035,21,Presbytis johnii,Σ,2.035,TRUE,
+Grunt,percent within call,86.352,3.474,7.940,–,2.233,–,–,100,22,Presbytis johnii,A_male,86.352,FALSE,162
+Grunt,percent within call,86.352,3.474,7.940,–,2.233,–,–,100,22,Presbytis johnii,A_female,3.474,FALSE,175
+Grunt,percent within call,86.352,3.474,7.940,–,2.233,–,–,100,22,Presbytis johnii,S_male,7.94,FALSE,74
+Grunt,percent within call,86.352,3.474,7.940,–,2.233,–,–,100,22,Presbytis johnii,S_female,,FALSE,131
+Grunt,percent within call,86.352,3.474,7.940,–,2.233,–,–,100,22,Presbytis johnii,J_male,2.233,FALSE,135
+Grunt,percent within call,86.352,3.474,7.940,–,2.233,–,–,100,22,Presbytis johnii,J_female,,FALSE,114
+Grunt,percent within call,86.352,3.474,7.940,–,2.233,–,–,100,22,Presbytis johnii,I_both,,FALSE,250
+Grunt,percent within call,86.352,3.474,7.940,–,2.233,–,–,100,22,Presbytis johnii,Σ,100,TRUE,
+Loud call,rate per 10h,8.9,–,1.6,–,–,–,–,10.5,23,Presbytis johnii,A_male,8.9,FALSE,162
+Loud call,rate per 10h,8.9,–,1.6,–,–,–,–,10.5,23,Presbytis johnii,A_female,,FALSE,175
+Loud call,rate per 10h,8.9,–,1.6,–,–,–,–,10.5,23,Presbytis johnii,S_male,1.6,FALSE,74
+Loud call,rate per 10h,8.9,–,1.6,–,–,–,–,10.5,23,Presbytis johnii,S_female,,FALSE,131
+Loud call,rate per 10h,8.9,–,1.6,–,–,–,–,10.5,23,Presbytis johnii,J_male,,FALSE,135
+Loud call,rate per 10h,8.9,–,1.6,–,–,–,–,10.5,23,Presbytis johnii,J_female,,FALSE,114
+Loud call,rate per 10h,8.9,–,1.6,–,–,–,–,10.5,23,Presbytis johnii,I_both,,FALSE,250
+Loud call,rate per 10h,8.9,–,1.6,–,–,–,–,10.5,23,Presbytis johnii,Σ,10.5,TRUE,
+Loud call,percent within age-sex,3.309,–,2.909,–,–,–,–,0.529,24,Presbytis johnii,A_male,3.309,FALSE,162
+Loud call,percent within age-sex,3.309,–,2.909,–,–,–,–,0.529,24,Presbytis johnii,A_female,,FALSE,175
+Loud call,percent within age-sex,3.309,–,2.909,–,–,–,–,0.529,24,Presbytis johnii,S_male,2.909,FALSE,74
+Loud call,percent within age-sex,3.309,–,2.909,–,–,–,–,0.529,24,Presbytis johnii,S_female,,FALSE,131
+Loud call,percent within age-sex,3.309,–,2.909,–,–,–,–,0.529,24,Presbytis johnii,J_male,,FALSE,135
+Loud call,percent within age-sex,3.309,–,2.909,–,–,–,–,0.529,24,Presbytis johnii,J_female,,FALSE,114
+Loud call,percent within age-sex,3.309,–,2.909,–,–,–,–,0.529,24,Presbytis johnii,I_both,,FALSE,250
+Loud call,percent within age-sex,3.309,–,2.909,–,–,–,–,0.529,24,Presbytis johnii,Σ,0.529,TRUE,
+Loud call,percent within call,84.762,–,15.238,–,–,–,–,100,25,Presbytis johnii,A_male,84.762,FALSE,162
+Loud call,percent within call,84.762,–,15.238,–,–,–,–,100,25,Presbytis johnii,A_female,,FALSE,175
+Loud call,percent within call,84.762,–,15.238,–,–,–,–,100,25,Presbytis johnii,S_male,15.238,FALSE,74
+Loud call,percent within call,84.762,–,15.238,–,–,–,–,100,25,Presbytis johnii,S_female,,FALSE,131
+Loud call,percent within call,84.762,–,15.238,–,–,–,–,100,25,Presbytis johnii,J_male,,FALSE,135
+Loud call,percent within call,84.762,–,15.238,–,–,–,–,100,25,Presbytis johnii,J_female,,FALSE,114
+Loud call,percent within call,84.762,–,15.238,–,–,–,–,100,25,Presbytis johnii,I_both,,FALSE,250
+Loud call,percent within call,84.762,–,15.238,–,–,–,–,100,25,Presbytis johnii,Σ,100,TRUE,
+Cough bark,rate per 10h,203.0,–,3.2,–,0.9,–,–,207.1,26,Presbytis johnii,A_male,203,FALSE,162
+Cough bark,rate per 10h,203.0,–,3.2,–,0.9,–,–,207.1,26,Presbytis johnii,A_female,,FALSE,175
+Cough bark,rate per 10h,203.0,–,3.2,–,0.9,–,–,207.1,26,Presbytis johnii,S_male,3.2,FALSE,74
+Cough bark,rate per 10h,203.0,–,3.2,–,0.9,–,–,207.1,26,Presbytis johnii,S_female,,FALSE,131
+Cough bark,rate per 10h,203.0,–,3.2,–,0.9,–,–,207.1,26,Presbytis johnii,J_male,0.9,FALSE,135
+Cough bark,rate per 10h,203.0,–,3.2,–,0.9,–,–,207.1,26,Presbytis johnii,J_female,,FALSE,114
+Cough bark,rate per 10h,203.0,–,3.2,–,0.9,–,–,207.1,26,Presbytis johnii,I_both,,FALSE,250
+Cough bark,rate per 10h,203.0,–,3.2,–,0.9,–,–,207.1,26,Presbytis johnii,Σ,207.1,TRUE,
+Cough bark,percent within age-sex,75.464,–,5.818,–,0.320,–,–,10.459,27,Presbytis johnii,A_male,75.464,FALSE,162
+Cough bark,percent within age-sex,75.464,–,5.818,–,0.320,–,–,10.459,27,Presbytis johnii,A_female,,FALSE,175
+Cough bark,percent within age-sex,75.464,–,5.818,–,0.320,–,–,10.459,27,Presbytis johnii,S_male,5.818,FALSE,74
+Cough bark,percent within age-sex,75.464,–,5.818,–,0.320,–,–,10.459,27,Presbytis johnii,S_female,,FALSE,131
+Cough bark,percent within age-sex,75.464,–,5.818,–,0.320,–,–,10.459,27,Presbytis johnii,J_male,0.32,FALSE,135
+Cough bark,percent within age-sex,75.464,–,5.818,–,0.320,–,–,10.459,27,Presbytis johnii,J_female,,FALSE,114
+Cough bark,percent within age-sex,75.464,–,5.818,–,0.320,–,–,10.459,27,Presbytis johnii,I_both,,FALSE,250
+Cough bark,percent within age-sex,75.464,–,5.818,–,0.320,–,–,10.459,27,Presbytis johnii,Σ,10.459,TRUE,
+Cough bark,percent within call,98.020,–,1.560,–,0.435,–,–,100,28,Presbytis johnii,A_male,98.02,FALSE,162
+Cough bark,percent within call,98.020,–,1.560,–,0.435,–,–,100,28,Presbytis johnii,A_female,,FALSE,175
+Cough bark,percent within call,98.020,–,1.560,–,0.435,–,–,100,28,Presbytis johnii,S_male,1.56,FALSE,74
+Cough bark,percent within call,98.020,–,1.560,–,0.435,–,–,100,28,Presbytis johnii,S_female,,FALSE,131
+Cough bark,percent within call,98.020,–,1.560,–,0.435,–,–,100,28,Presbytis johnii,J_male,0.435,FALSE,135
+Cough bark,percent within call,98.020,–,1.560,–,0.435,–,–,100,28,Presbytis johnii,J_female,,FALSE,114
+Cough bark,percent within call,98.020,–,1.560,–,0.435,–,–,100,28,Presbytis johnii,I_both,,FALSE,250
+Cough bark,percent within call,98.020,–,1.560,–,0.435,–,–,100,28,Presbytis johnii,Σ,100,TRUE,
+Ho-ho call,rate per 10h,8.2,0.7,–,7.3,0.9,3.2,–,20.3,29,Presbytis johnii,A_male,8.2,FALSE,162
+Ho-ho call,rate per 10h,8.2,0.7,–,7.3,0.9,3.2,–,20.3,29,Presbytis johnii,A_female,0.7,FALSE,175
+Ho-ho call,rate per 10h,8.2,0.7,–,7.3,0.9,3.2,–,20.3,29,Presbytis johnii,S_male,,FALSE,74
+Ho-ho call,rate per 10h,8.2,0.7,–,7.3,0.9,3.2,–,20.3,29,Presbytis johnii,S_female,7.3,FALSE,131
+Ho-ho call,rate per 10h,8.2,0.7,–,7.3,0.9,3.2,–,20.3,29,Presbytis johnii,J_male,0.9,FALSE,135
+Ho-ho call,rate per 10h,8.2,0.7,–,7.3,0.9,3.2,–,20.3,29,Presbytis johnii,J_female,3.2,FALSE,114
+Ho-ho call,rate per 10h,8.2,0.7,–,7.3,0.9,3.2,–,20.3,29,Presbytis johnii,I_both,,FALSE,250
+Ho-ho call,rate per 10h,8.2,0.7,–,7.3,0.9,3.2,–,20.3,29,Presbytis johnii,Σ,20.3,TRUE,
+Ho-ho call,percent within age-sex,3.048,0.990,–,7.256,0.320,1.853,–,1.024,30,Presbytis johnii,A_male,3.048,FALSE,162
+Ho-ho call,percent within age-sex,3.048,0.990,–,7.256,0.320,1.853,–,1.024,30,Presbytis johnii,A_female,0.99,FALSE,175
+Ho-ho call,percent within age-sex,3.048,0.990,–,7.256,0.320,1.853,–,1.024,30,Presbytis johnii,S_male,,FALSE,74
+Ho-ho call,percent within age-sex,3.048,0.990,–,7.256,0.320,1.853,–,1.024,30,Presbytis johnii,S_female,7.256,FALSE,131
+Ho-ho call,percent within age-sex,3.048,0.990,–,7.256,0.320,1.853,–,1.024,30,Presbytis johnii,J_male,0.32,FALSE,135
+Ho-ho call,percent within age-sex,3.048,0.990,–,7.256,0.320,1.853,–,1.024,30,Presbytis johnii,J_female,1.853,FALSE,114
+Ho-ho call,percent within age-sex,3.048,0.990,–,7.256,0.320,1.853,–,1.024,30,Presbytis johnii,I_both,,FALSE,250
+Ho-ho call,percent within age-sex,3.048,0.990,–,7.256,0.320,1.853,–,1.024,30,Presbytis johnii,Σ,1.024,TRUE,
+Ho-ho call,percent within call,40.394,3.448,–,35.961,4.433,15.764,–,100,31,Presbytis johnii,A_male,40.394,FALSE,162
+Ho-ho call,percent within call,40.394,3.448,–,35.961,4.433,15.764,–,100,31,Presbytis johnii,A_female,3.448,FALSE,175
+Ho-ho call,percent within call,40.394,3.448,–,35.961,4.433,15.764,–,100,31,Presbytis johnii,S_male,,FALSE,74
+Ho-ho call,percent within call,40.394,3.448,–,35.961,4.433,15.764,–,100,31,Presbytis johnii,S_female,35.961,FALSE,131
+Ho-ho call,percent within call,40.394,3.448,–,35.961,4.433,15.764,–,100,31,Presbytis johnii,J_male,4.433,FALSE,135
+Ho-ho call,percent within call,40.394,3.448,–,35.961,4.433,15.764,–,100,31,Presbytis johnii,J_female,15.764,FALSE,114
+Ho-ho call,percent within call,40.394,3.448,–,35.961,4.433,15.764,–,100,31,Presbytis johnii,I_both,,FALSE,250
+Ho-ho call,percent within call,40.394,3.448,–,35.961,4.433,15.764,–,100,31,Presbytis johnii,Σ,100,TRUE,
+Σ total,rate per 10h,269.0,70.7,55.0,100.6,280.9,172.7,"1,031.3","1,980.2",32,Presbytis johnii,A_male,269,TRUE,162
+Σ total,rate per 10h,269.0,70.7,55.0,100.6,280.9,172.7,"1,031.3","1,980.2",32,Presbytis johnii,A_female,70.7,TRUE,175
+Σ total,rate per 10h,269.0,70.7,55.0,100.6,280.9,172.7,"1,031.3","1,980.2",32,Presbytis johnii,S_male,55,TRUE,74
+Σ total,rate per 10h,269.0,70.7,55.0,100.6,280.9,172.7,"1,031.3","1,980.2",32,Presbytis johnii,S_female,100.6,TRUE,131
+Σ total,rate per 10h,269.0,70.7,55.0,100.6,280.9,172.7,"1,031.3","1,980.2",32,Presbytis johnii,J_male,280.9,TRUE,135
+Σ total,rate per 10h,269.0,70.7,55.0,100.6,280.9,172.7,"1,031.3","1,980.2",32,Presbytis johnii,J_female,172.7,TRUE,114
+Σ total,rate per 10h,269.0,70.7,55.0,100.6,280.9,172.7,"1,031.3","1,980.2",32,Presbytis johnii,I_both,1031.3,TRUE,250
+Σ total,rate per 10h,269.0,70.7,55.0,100.6,280.9,172.7,"1,031.3","1,980.2",32,Presbytis johnii,Σ,1980.2,TRUE,
+Σ total,percent within age-sex,100,100,100,100,100,100,100,100,33,Presbytis johnii,A_male,100,TRUE,162
+Σ total,percent within age-sex,100,100,100,100,100,100,100,100,33,Presbytis johnii,A_female,100,TRUE,175
+Σ total,percent within age-sex,100,100,100,100,100,100,100,100,33,Presbytis johnii,S_male,100,TRUE,74
+Σ total,percent within age-sex,100,100,100,100,100,100,100,100,33,Presbytis johnii,S_female,100,TRUE,131
+Σ total,percent within age-sex,100,100,100,100,100,100,100,100,33,Presbytis johnii,J_male,100,TRUE,135
+Σ total,percent within age-sex,100,100,100,100,100,100,100,100,33,Presbytis johnii,J_female,100,TRUE,114
+Σ total,percent within age-sex,100,100,100,100,100,100,100,100,33,Presbytis johnii,I_both,100,TRUE,250
+Σ total,percent within age-sex,100,100,100,100,100,100,100,100,33,Presbytis johnii,Σ,100,TRUE,
+Σ total,percent within call,13.584,3.570,2.777,5.080,14.185,8.721,52.081,100,34,Presbytis johnii,A_male,13.584,TRUE,162
+Σ total,percent within call,13.584,3.570,2.777,5.080,14.185,8.721,52.081,100,34,Presbytis johnii,A_female,3.57,TRUE,175
+Σ total,percent within call,13.584,3.570,2.777,5.080,14.185,8.721,52.081,100,34,Presbytis johnii,S_male,2.777,TRUE,74
+Σ total,percent within call,13.584,3.570,2.777,5.080,14.185,8.721,52.081,100,34,Presbytis johnii,S_female,5.08,TRUE,131
+Σ total,percent within call,13.584,3.570,2.777,5.080,14.185,8.721,52.081,100,34,Presbytis johnii,J_male,14.185,TRUE,135
+Σ total,percent within call,13.584,3.570,2.777,5.080,14.185,8.721,52.081,100,34,Presbytis johnii,J_female,8.721,TRUE,114
+Σ total,percent within call,13.584,3.570,2.777,5.080,14.185,8.721,52.081,100,34,Presbytis johnii,I_both,52.081,TRUE,250
+Σ total,percent within call,13.584,3.570,2.777,5.080,14.185,8.721,52.081,100,34,Presbytis johnii,Σ,100,TRUE,

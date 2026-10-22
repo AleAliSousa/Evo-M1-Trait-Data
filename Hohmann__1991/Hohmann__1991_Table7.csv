@@ -1,0 +1,313 @@
+Vocal category,Statistic,A_male,A_female,S_male,S_female,J_male,J_female,I_both,Σ,Source_row,Species,Age_sex_class,Value,Total_flag,Active_epochs
+Whoo call,rate per 10h,101.8,783.8,189.1,401.7,106.8,286.0,953.4,"2,822.6",2,Macaca silenus,A_male,101.8,FALSE,250
+Whoo call,rate per 10h,101.8,783.8,189.1,401.7,106.8,286.0,953.4,"2,822.6",2,Macaca silenus,A_female,783.8,FALSE,568
+Whoo call,rate per 10h,101.8,783.8,189.1,401.7,106.8,286.0,953.4,"2,822.6",2,Macaca silenus,S_male,189.1,FALSE,106
+Whoo call,rate per 10h,101.8,783.8,189.1,401.7,106.8,286.0,953.4,"2,822.6",2,Macaca silenus,S_female,401.7,FALSE,161
+Whoo call,rate per 10h,101.8,783.8,189.1,401.7,106.8,286.0,953.4,"2,822.6",2,Macaca silenus,J_male,106.8,FALSE,100
+Whoo call,rate per 10h,101.8,783.8,189.1,401.7,106.8,286.0,953.4,"2,822.6",2,Macaca silenus,J_female,286,FALSE,146
+Whoo call,rate per 10h,101.8,783.8,189.1,401.7,106.8,286.0,953.4,"2,822.6",2,Macaca silenus,I_both,953.4,FALSE,278
+Whoo call,rate per 10h,101.8,783.8,189.1,401.7,106.8,286.0,953.4,"2,822.6",2,Macaca silenus,Σ,2822.6,TRUE,
+Whoo call,percent within age-sex,57.275,96.396,93.296,97.453,77.899,77.297,72.574,82.375,3,Macaca silenus,A_male,57.275,FALSE,250
+Whoo call,percent within age-sex,57.275,96.396,93.296,97.453,77.899,77.297,72.574,82.375,3,Macaca silenus,A_female,96.396,FALSE,568
+Whoo call,percent within age-sex,57.275,96.396,93.296,97.453,77.899,77.297,72.574,82.375,3,Macaca silenus,S_male,93.296,FALSE,106
+Whoo call,percent within age-sex,57.275,96.396,93.296,97.453,77.899,77.297,72.574,82.375,3,Macaca silenus,S_female,97.453,FALSE,161
+Whoo call,percent within age-sex,57.275,96.396,93.296,97.453,77.899,77.297,72.574,82.375,3,Macaca silenus,J_male,77.899,FALSE,100
+Whoo call,percent within age-sex,57.275,96.396,93.296,97.453,77.899,77.297,72.574,82.375,3,Macaca silenus,J_female,77.297,FALSE,146
+Whoo call,percent within age-sex,57.275,96.396,93.296,97.453,77.899,77.297,72.574,82.375,3,Macaca silenus,I_both,72.574,FALSE,278
+Whoo call,percent within age-sex,57.275,96.396,93.296,97.453,77.899,77.297,72.574,82.375,3,Macaca silenus,Σ,82.375,TRUE,
+Whoo call,percent within call,3.607,27.770,6.699,14.232,3.784,10.133,33.777,100,4,Macaca silenus,A_male,3.607,FALSE,250
+Whoo call,percent within call,3.607,27.770,6.699,14.232,3.784,10.133,33.777,100,4,Macaca silenus,A_female,27.77,FALSE,568
+Whoo call,percent within call,3.607,27.770,6.699,14.232,3.784,10.133,33.777,100,4,Macaca silenus,S_male,6.699,FALSE,106
+Whoo call,percent within call,3.607,27.770,6.699,14.232,3.784,10.133,33.777,100,4,Macaca silenus,S_female,14.232,FALSE,161
+Whoo call,percent within call,3.607,27.770,6.699,14.232,3.784,10.133,33.777,100,4,Macaca silenus,J_male,3.784,FALSE,100
+Whoo call,percent within call,3.607,27.770,6.699,14.232,3.784,10.133,33.777,100,4,Macaca silenus,J_female,10.133,FALSE,146
+Whoo call,percent within call,3.607,27.770,6.699,14.232,3.784,10.133,33.777,100,4,Macaca silenus,I_both,33.777,FALSE,278
+Whoo call,percent within call,3.607,27.770,6.699,14.232,3.784,10.133,33.777,100,4,Macaca silenus,Σ,100,TRUE,
+Threat rattle + growl,rate per 10h,69.6,11.8,6.8,5.2,2.4,19.7,3.2,118.7,5,Macaca silenus,A_male,69.6,FALSE,250
+Threat rattle + growl,rate per 10h,69.6,11.8,6.8,5.2,2.4,19.7,3.2,118.7,5,Macaca silenus,A_female,11.8,FALSE,568
+Threat rattle + growl,rate per 10h,69.6,11.8,6.8,5.2,2.4,19.7,3.2,118.7,5,Macaca silenus,S_male,6.8,FALSE,106
+Threat rattle + growl,rate per 10h,69.6,11.8,6.8,5.2,2.4,19.7,3.2,118.7,5,Macaca silenus,S_female,5.2,FALSE,161
+Threat rattle + growl,rate per 10h,69.6,11.8,6.8,5.2,2.4,19.7,3.2,118.7,5,Macaca silenus,J_male,2.4,FALSE,100
+Threat rattle + growl,rate per 10h,69.6,11.8,6.8,5.2,2.4,19.7,3.2,118.7,5,Macaca silenus,J_female,19.7,FALSE,146
+Threat rattle + growl,rate per 10h,69.6,11.8,6.8,5.2,2.4,19.7,3.2,118.7,5,Macaca silenus,I_both,3.2,FALSE,278
+Threat rattle + growl,rate per 10h,69.6,11.8,6.8,5.2,2.4,19.7,3.2,118.7,5,Macaca silenus,Σ,118.7,TRUE,
+Threat rattle + growl,percent within age-sex,39.027,1.446,3.355,1.278,1.961,5.448,0.239,3.463,6,Macaca silenus,A_male,39.027,FALSE,250
+Threat rattle + growl,percent within age-sex,39.027,1.446,3.355,1.278,1.961,5.448,0.239,3.463,6,Macaca silenus,A_female,1.446,FALSE,568
+Threat rattle + growl,percent within age-sex,39.027,1.446,3.355,1.278,1.961,5.448,0.239,3.463,6,Macaca silenus,S_male,3.355,FALSE,106
+Threat rattle + growl,percent within age-sex,39.027,1.446,3.355,1.278,1.961,5.448,0.239,3.463,6,Macaca silenus,S_female,1.278,FALSE,161
+Threat rattle + growl,percent within age-sex,39.027,1.446,3.355,1.278,1.961,5.448,0.239,3.463,6,Macaca silenus,J_male,1.961,FALSE,100
+Threat rattle + growl,percent within age-sex,39.027,1.446,3.355,1.278,1.961,5.448,0.239,3.463,6,Macaca silenus,J_female,5.448,FALSE,146
+Threat rattle + growl,percent within age-sex,39.027,1.446,3.355,1.278,1.961,5.448,0.239,3.463,6,Macaca silenus,I_both,0.239,FALSE,278
+Threat rattle + growl,percent within age-sex,39.027,1.446,3.355,1.278,1.961,5.448,0.239,3.463,6,Macaca silenus,Σ,3.463,TRUE,
+Threat rattle + growl,percent within call,58.640,9.941,5.753,4.380,2.022,16.596,2.696,100,7,Macaca silenus,A_male,58.64,FALSE,250
+Threat rattle + growl,percent within call,58.640,9.941,5.753,4.380,2.022,16.596,2.696,100,7,Macaca silenus,A_female,9.941,FALSE,568
+Threat rattle + growl,percent within call,58.640,9.941,5.753,4.380,2.022,16.596,2.696,100,7,Macaca silenus,S_male,5.753,FALSE,106
+Threat rattle + growl,percent within call,58.640,9.941,5.753,4.380,2.022,16.596,2.696,100,7,Macaca silenus,S_female,4.38,FALSE,161
+Threat rattle + growl,percent within call,58.640,9.941,5.753,4.380,2.022,16.596,2.696,100,7,Macaca silenus,J_male,2.022,FALSE,100
+Threat rattle + growl,percent within call,58.640,9.941,5.753,4.380,2.022,16.596,2.696,100,7,Macaca silenus,J_female,16.596,FALSE,146
+Threat rattle + growl,percent within call,58.640,9.941,5.753,4.380,2.022,16.596,2.696,100,7,Macaca silenus,I_both,2.696,FALSE,278
+Threat rattle + growl,percent within call,58.640,9.941,5.753,4.380,2.022,16.596,2.696,100,7,Macaca silenus,Σ,100,TRUE,
+Non-tonal scream,rate per 10h,–,0.6,–,2.5,13.2,45.2,44.8,106.3,8,Macaca silenus,A_male,,FALSE,250
+Non-tonal scream,rate per 10h,–,0.6,–,2.5,13.2,45.2,44.8,106.3,8,Macaca silenus,A_female,0.6,FALSE,568
+Non-tonal scream,rate per 10h,–,0.6,–,2.5,13.2,45.2,44.8,106.3,8,Macaca silenus,S_male,,FALSE,106
+Non-tonal scream,rate per 10h,–,0.6,–,2.5,13.2,45.2,44.8,106.3,8,Macaca silenus,S_female,2.5,FALSE,161
+Non-tonal scream,rate per 10h,–,0.6,–,2.5,13.2,45.2,44.8,106.3,8,Macaca silenus,J_male,13.2,FALSE,100
+Non-tonal scream,rate per 10h,–,0.6,–,2.5,13.2,45.2,44.8,106.3,8,Macaca silenus,J_female,45.2,FALSE,146
+Non-tonal scream,rate per 10h,–,0.6,–,2.5,13.2,45.2,44.8,106.3,8,Macaca silenus,I_both,44.8,FALSE,278
+Non-tonal scream,rate per 10h,–,0.6,–,2.5,13.2,45.2,44.8,106.3,8,Macaca silenus,Σ,106.3,TRUE,
+Non-tonal scream,percent within age-sex,–,0.074,–,0.607,9.628,12.216,3.410,3.102,9,Macaca silenus,A_male,,FALSE,250
+Non-tonal scream,percent within age-sex,–,0.074,–,0.607,9.628,12.216,3.410,3.102,9,Macaca silenus,A_female,0.074,FALSE,568
+Non-tonal scream,percent within age-sex,–,0.074,–,0.607,9.628,12.216,3.410,3.102,9,Macaca silenus,S_male,,FALSE,106
+Non-tonal scream,percent within age-sex,–,0.074,–,0.607,9.628,12.216,3.410,3.102,9,Macaca silenus,S_female,0.607,FALSE,161
+Non-tonal scream,percent within age-sex,–,0.074,–,0.607,9.628,12.216,3.410,3.102,9,Macaca silenus,J_male,9.628,FALSE,100
+Non-tonal scream,percent within age-sex,–,0.074,–,0.607,9.628,12.216,3.410,3.102,9,Macaca silenus,J_female,12.216,FALSE,146
+Non-tonal scream,percent within age-sex,–,0.074,–,0.607,9.628,12.216,3.410,3.102,9,Macaca silenus,I_both,3.41,FALSE,278
+Non-tonal scream,percent within age-sex,–,0.074,–,0.607,9.628,12.216,3.410,3.102,9,Macaca silenus,Σ,3.102,TRUE,
+Non-tonal scream,percent within call,–,0.564,–,2.352,12.418,42.521,42.145,100,10,Macaca silenus,A_male,,FALSE,250
+Non-tonal scream,percent within call,–,0.564,–,2.352,12.418,42.521,42.145,100,10,Macaca silenus,A_female,0.564,FALSE,568
+Non-tonal scream,percent within call,–,0.564,–,2.352,12.418,42.521,42.145,100,10,Macaca silenus,S_male,,FALSE,106
+Non-tonal scream,percent within call,–,0.564,–,2.352,12.418,42.521,42.145,100,10,Macaca silenus,S_female,2.352,FALSE,161
+Non-tonal scream,percent within call,–,0.564,–,2.352,12.418,42.521,42.145,100,10,Macaca silenus,J_male,12.418,FALSE,100
+Non-tonal scream,percent within call,–,0.564,–,2.352,12.418,42.521,42.145,100,10,Macaca silenus,J_female,42.521,FALSE,146
+Non-tonal scream,percent within call,–,0.564,–,2.352,12.418,42.521,42.145,100,10,Macaca silenus,I_both,42.145,FALSE,278
+Non-tonal scream,percent within call,–,0.564,–,2.352,12.418,42.521,42.145,100,10,Macaca silenus,Σ,100,TRUE,
+Greeting,rate per 10h,–,7.1,6.8,2.0,1.5,6.6,5.5,29.5,11,Macaca silenus,A_male,,FALSE,250
+Greeting,rate per 10h,–,7.1,6.8,2.0,1.5,6.6,5.5,29.5,11,Macaca silenus,A_female,7.1,FALSE,568
+Greeting,rate per 10h,–,7.1,6.8,2.0,1.5,6.6,5.5,29.5,11,Macaca silenus,S_male,6.8,FALSE,106
+Greeting,rate per 10h,–,7.1,6.8,2.0,1.5,6.6,5.5,29.5,11,Macaca silenus,S_female,2,FALSE,161
+Greeting,rate per 10h,–,7.1,6.8,2.0,1.5,6.6,5.5,29.5,11,Macaca silenus,J_male,1.5,FALSE,100
+Greeting,rate per 10h,–,7.1,6.8,2.0,1.5,6.6,5.5,29.5,11,Macaca silenus,J_female,6.6,FALSE,146
+Greeting,rate per 10h,–,7.1,6.8,2.0,1.5,6.6,5.5,29.5,11,Macaca silenus,I_both,5.5,FALSE,278
+Greeting,rate per 10h,–,7.1,6.8,2.0,1.5,6.6,5.5,29.5,11,Macaca silenus,Σ,29.5,TRUE,
+Greeting,percent within age-sex,–,0.873,3.355,0.485,1.094,1.784,0.419,0.861,12,Macaca silenus,A_male,,FALSE,250
+Greeting,percent within age-sex,–,0.873,3.355,0.485,1.094,1.784,0.419,0.861,12,Macaca silenus,A_female,0.873,FALSE,568
+Greeting,percent within age-sex,–,0.873,3.355,0.485,1.094,1.784,0.419,0.861,12,Macaca silenus,S_male,3.355,FALSE,106
+Greeting,percent within age-sex,–,0.873,3.355,0.485,1.094,1.784,0.419,0.861,12,Macaca silenus,S_female,0.485,FALSE,161
+Greeting,percent within age-sex,–,0.873,3.355,0.485,1.094,1.784,0.419,0.861,12,Macaca silenus,J_male,1.094,FALSE,100
+Greeting,percent within age-sex,–,0.873,3.355,0.485,1.094,1.784,0.419,0.861,12,Macaca silenus,J_female,1.784,FALSE,146
+Greeting,percent within age-sex,–,0.873,3.355,0.485,1.094,1.784,0.419,0.861,12,Macaca silenus,I_both,0.419,FALSE,278
+Greeting,percent within age-sex,–,0.873,3.355,0.485,1.094,1.784,0.419,0.861,12,Macaca silenus,Σ,0.861,TRUE,
+Greeting,percent within call,–,24.068,23.051,6.780,5.085,22.373,18.644,100,13,Macaca silenus,A_male,,FALSE,250
+Greeting,percent within call,–,24.068,23.051,6.780,5.085,22.373,18.644,100,13,Macaca silenus,A_female,24.068,FALSE,568
+Greeting,percent within call,–,24.068,23.051,6.780,5.085,22.373,18.644,100,13,Macaca silenus,S_male,23.051,FALSE,106
+Greeting,percent within call,–,24.068,23.051,6.780,5.085,22.373,18.644,100,13,Macaca silenus,S_female,6.78,FALSE,161
+Greeting,percent within call,–,24.068,23.051,6.780,5.085,22.373,18.644,100,13,Macaca silenus,J_male,5.085,FALSE,100
+Greeting,percent within call,–,24.068,23.051,6.780,5.085,22.373,18.644,100,13,Macaca silenus,J_female,22.373,FALSE,146
+Greeting,percent within call,–,24.068,23.051,6.780,5.085,22.373,18.644,100,13,Macaca silenus,I_both,18.644,FALSE,278
+Greeting,percent within call,–,24.068,23.051,6.780,5.085,22.373,18.644,100,13,Macaca silenus,Σ,100,TRUE,
+Twit,rate per 10h,–,–,–,–,0.5,1.6,1.7,3.8,14,Macaca silenus,A_male,,FALSE,250
+Twit,rate per 10h,–,–,–,–,0.5,1.6,1.7,3.8,14,Macaca silenus,A_female,,FALSE,568
+Twit,rate per 10h,–,–,–,–,0.5,1.6,1.7,3.8,14,Macaca silenus,S_male,,FALSE,106
+Twit,rate per 10h,–,–,–,–,0.5,1.6,1.7,3.8,14,Macaca silenus,S_female,,FALSE,161
+Twit,rate per 10h,–,–,–,–,0.5,1.6,1.7,3.8,14,Macaca silenus,J_male,0.5,FALSE,100
+Twit,rate per 10h,–,–,–,–,0.5,1.6,1.7,3.8,14,Macaca silenus,J_female,1.6,FALSE,146
+Twit,rate per 10h,–,–,–,–,0.5,1.6,1.7,3.8,14,Macaca silenus,I_both,1.7,FALSE,278
+Twit,rate per 10h,–,–,–,–,0.5,1.6,1.7,3.8,14,Macaca silenus,Σ,3.8,TRUE,
+Twit,percent within age-sex,–,–,–,–,0.365,0.432,0.129,0.111,15,Macaca silenus,A_male,,FALSE,250
+Twit,percent within age-sex,–,–,–,–,0.365,0.432,0.129,0.111,15,Macaca silenus,A_female,,FALSE,568
+Twit,percent within age-sex,–,–,–,–,0.365,0.432,0.129,0.111,15,Macaca silenus,S_male,,FALSE,106
+Twit,percent within age-sex,–,–,–,–,0.365,0.432,0.129,0.111,15,Macaca silenus,S_female,,FALSE,161
+Twit,percent within age-sex,–,–,–,–,0.365,0.432,0.129,0.111,15,Macaca silenus,J_male,0.365,FALSE,100
+Twit,percent within age-sex,–,–,–,–,0.365,0.432,0.129,0.111,15,Macaca silenus,J_female,0.432,FALSE,146
+Twit,percent within age-sex,–,–,–,–,0.365,0.432,0.129,0.111,15,Macaca silenus,I_both,0.129,FALSE,278
+Twit,percent within age-sex,–,–,–,–,0.365,0.432,0.129,0.111,15,Macaca silenus,Σ,0.111,TRUE,
+Twit,percent within call,–,–,–,–,13.158,42.105,44.737,100,16,Macaca silenus,A_male,,FALSE,250
+Twit,percent within call,–,–,–,–,13.158,42.105,44.737,100,16,Macaca silenus,A_female,,FALSE,568
+Twit,percent within call,–,–,–,–,13.158,42.105,44.737,100,16,Macaca silenus,S_male,,FALSE,106
+Twit,percent within call,–,–,–,–,13.158,42.105,44.737,100,16,Macaca silenus,S_female,,FALSE,161
+Twit,percent within call,–,–,–,–,13.158,42.105,44.737,100,16,Macaca silenus,J_male,13.158,FALSE,100
+Twit,percent within call,–,–,–,–,13.158,42.105,44.737,100,16,Macaca silenus,J_female,42.105,FALSE,146
+Twit,percent within call,–,–,–,–,13.158,42.105,44.737,100,16,Macaca silenus,I_both,44.737,FALSE,278
+Twit,percent within call,–,–,–,–,13.158,42.105,44.737,100,16,Macaca silenus,Σ,100,TRUE,
+Shriek/squeal/squeak,rate per 10h,–,0.2,–,–,11.8,9.2,269.6,290.8,17,Macaca silenus,A_male,,FALSE,250
+Shriek/squeal/squeak,rate per 10h,–,0.2,–,–,11.8,9.2,269.6,290.8,17,Macaca silenus,A_female,0.2,FALSE,568
+Shriek/squeal/squeak,rate per 10h,–,0.2,–,–,11.8,9.2,269.6,290.8,17,Macaca silenus,S_male,,FALSE,106
+Shriek/squeal/squeak,rate per 10h,–,0.2,–,–,11.8,9.2,269.6,290.8,17,Macaca silenus,S_female,,FALSE,161
+Shriek/squeal/squeak,rate per 10h,–,0.2,–,–,11.8,9.2,269.6,290.8,17,Macaca silenus,J_male,11.8,FALSE,100
+Shriek/squeal/squeak,rate per 10h,–,0.2,–,–,11.8,9.2,269.6,290.8,17,Macaca silenus,J_female,9.2,FALSE,146
+Shriek/squeal/squeak,rate per 10h,–,0.2,–,–,11.8,9.2,269.6,290.8,17,Macaca silenus,I_both,269.6,FALSE,278
+Shriek/squeal/squeak,rate per 10h,–,0.2,–,–,11.8,9.2,269.6,290.8,17,Macaca silenus,Σ,290.8,TRUE,
+Shriek/squeal/squeak,percent within age-sex,–,0.025,–,–,8.607,2.486,20.522,8.487,18,Macaca silenus,A_male,,FALSE,250
+Shriek/squeal/squeak,percent within age-sex,–,0.025,–,–,8.607,2.486,20.522,8.487,18,Macaca silenus,A_female,0.025,FALSE,568
+Shriek/squeal/squeak,percent within age-sex,–,0.025,–,–,8.607,2.486,20.522,8.487,18,Macaca silenus,S_male,,FALSE,106
+Shriek/squeal/squeak,percent within age-sex,–,0.025,–,–,8.607,2.486,20.522,8.487,18,Macaca silenus,S_female,,FALSE,161
+Shriek/squeal/squeak,percent within age-sex,–,0.025,–,–,8.607,2.486,20.522,8.487,18,Macaca silenus,J_male,8.607,FALSE,100
+Shriek/squeal/squeak,percent within age-sex,–,0.025,–,–,8.607,2.486,20.522,8.487,18,Macaca silenus,J_female,2.486,FALSE,146
+Shriek/squeal/squeak,percent within age-sex,–,0.025,–,–,8.607,2.486,20.522,8.487,18,Macaca silenus,I_both,20.522,FALSE,278
+Shriek/squeal/squeak,percent within age-sex,–,0.025,–,–,8.607,2.486,20.522,8.487,18,Macaca silenus,Σ,8.487,TRUE,
+Shriek/squeal/squeak,percent within call,–,0.069,–,–,4.058,3.164,92.710,100,19,Macaca silenus,A_male,,FALSE,250
+Shriek/squeal/squeak,percent within call,–,0.069,–,–,4.058,3.164,92.710,100,19,Macaca silenus,A_female,0.069,FALSE,568
+Shriek/squeal/squeak,percent within call,–,0.069,–,–,4.058,3.164,92.710,100,19,Macaca silenus,S_male,,FALSE,106
+Shriek/squeal/squeak,percent within call,–,0.069,–,–,4.058,3.164,92.710,100,19,Macaca silenus,S_female,,FALSE,161
+Shriek/squeal/squeak,percent within call,–,0.069,–,–,4.058,3.164,92.710,100,19,Macaca silenus,J_male,4.058,FALSE,100
+Shriek/squeal/squeak,percent within call,–,0.069,–,–,4.058,3.164,92.710,100,19,Macaca silenus,J_female,3.164,FALSE,146
+Shriek/squeal/squeak,percent within call,–,0.069,–,–,4.058,3.164,92.710,100,19,Macaca silenus,I_both,92.71,FALSE,278
+Shriek/squeal/squeak,percent within call,–,0.069,–,–,4.058,3.164,92.710,100,19,Macaca silenus,Σ,100,TRUE,
+Yap,rate per 10h,–,0.4,–,0.2,0.9,1.7,12.1,15.3,20,Macaca silenus,A_male,,FALSE,250
+Yap,rate per 10h,–,0.4,–,0.2,0.9,1.7,12.1,15.3,20,Macaca silenus,A_female,0.4,FALSE,568
+Yap,rate per 10h,–,0.4,–,0.2,0.9,1.7,12.1,15.3,20,Macaca silenus,S_male,,FALSE,106
+Yap,rate per 10h,–,0.4,–,0.2,0.9,1.7,12.1,15.3,20,Macaca silenus,S_female,0.2,FALSE,161
+Yap,rate per 10h,–,0.4,–,0.2,0.9,1.7,12.1,15.3,20,Macaca silenus,J_male,0.9,FALSE,100
+Yap,rate per 10h,–,0.4,–,0.2,0.9,1.7,12.1,15.3,20,Macaca silenus,J_female,1.7,FALSE,146
+Yap,rate per 10h,–,0.4,–,0.2,0.9,1.7,12.1,15.3,20,Macaca silenus,I_both,12.1,FALSE,278
+Yap,rate per 10h,–,0.4,–,0.2,0.9,1.7,12.1,15.3,20,Macaca silenus,Σ,15.3,TRUE,
+Yap,percent within age-sex,–,0.049,–,0.049,0.656,0.459,0.921,0.447,21,Macaca silenus,A_male,,FALSE,250
+Yap,percent within age-sex,–,0.049,–,0.049,0.656,0.459,0.921,0.447,21,Macaca silenus,A_female,0.049,FALSE,568
+Yap,percent within age-sex,–,0.049,–,0.049,0.656,0.459,0.921,0.447,21,Macaca silenus,S_male,,FALSE,106
+Yap,percent within age-sex,–,0.049,–,0.049,0.656,0.459,0.921,0.447,21,Macaca silenus,S_female,0.049,FALSE,161
+Yap,percent within age-sex,–,0.049,–,0.049,0.656,0.459,0.921,0.447,21,Macaca silenus,J_male,0.656,FALSE,100
+Yap,percent within age-sex,–,0.049,–,0.049,0.656,0.459,0.921,0.447,21,Macaca silenus,J_female,0.459,FALSE,146
+Yap,percent within age-sex,–,0.049,–,0.049,0.656,0.459,0.921,0.447,21,Macaca silenus,I_both,0.921,FALSE,278
+Yap,percent within age-sex,–,0.049,–,0.049,0.656,0.459,0.921,0.447,21,Macaca silenus,Σ,0.447,TRUE,
+Yap,percent within call,–,2.614,–,1.307,5.882,11.111,79.085,100,22,Macaca silenus,A_male,,FALSE,250
+Yap,percent within call,–,2.614,–,1.307,5.882,11.111,79.085,100,22,Macaca silenus,A_female,2.614,FALSE,568
+Yap,percent within call,–,2.614,–,1.307,5.882,11.111,79.085,100,22,Macaca silenus,S_male,,FALSE,106
+Yap,percent within call,–,2.614,–,1.307,5.882,11.111,79.085,100,22,Macaca silenus,S_female,1.307,FALSE,161
+Yap,percent within call,–,2.614,–,1.307,5.882,11.111,79.085,100,22,Macaca silenus,J_male,5.882,FALSE,100
+Yap,percent within call,–,2.614,–,1.307,5.882,11.111,79.085,100,22,Macaca silenus,J_female,11.111,FALSE,146
+Yap,percent within call,–,2.614,–,1.307,5.882,11.111,79.085,100,22,Macaca silenus,I_both,79.085,FALSE,278
+Yap,percent within call,–,2.614,–,1.307,5.882,11.111,79.085,100,22,Macaca silenus,Σ,100,TRUE,
+Female copulation call,rate per 10h,–,7.3,–,–,–,–,–,7.3,23,Macaca silenus,A_male,,FALSE,250
+Female copulation call,rate per 10h,–,7.3,–,–,–,–,–,7.3,23,Macaca silenus,A_female,7.3,FALSE,568
+Female copulation call,rate per 10h,–,7.3,–,–,–,–,–,7.3,23,Macaca silenus,S_male,,FALSE,106
+Female copulation call,rate per 10h,–,7.3,–,–,–,–,–,7.3,23,Macaca silenus,S_female,,FALSE,161
+Female copulation call,rate per 10h,–,7.3,–,–,–,–,–,7.3,23,Macaca silenus,J_male,,FALSE,100
+Female copulation call,rate per 10h,–,7.3,–,–,–,–,–,7.3,23,Macaca silenus,J_female,,FALSE,146
+Female copulation call,rate per 10h,–,7.3,–,–,–,–,–,7.3,23,Macaca silenus,I_both,,FALSE,278
+Female copulation call,rate per 10h,–,7.3,–,–,–,–,–,7.3,23,Macaca silenus,Σ,7.3,TRUE,
+Female copulation call,percent within age-sex,–,0.898,–,–,–,–,–,0.213,24,Macaca silenus,A_male,,FALSE,250
+Female copulation call,percent within age-sex,–,0.898,–,–,–,–,–,0.213,24,Macaca silenus,A_female,0.898,FALSE,568
+Female copulation call,percent within age-sex,–,0.898,–,–,–,–,–,0.213,24,Macaca silenus,S_male,,FALSE,106
+Female copulation call,percent within age-sex,–,0.898,–,–,–,–,–,0.213,24,Macaca silenus,S_female,,FALSE,161
+Female copulation call,percent within age-sex,–,0.898,–,–,–,–,–,0.213,24,Macaca silenus,J_male,,FALSE,100
+Female copulation call,percent within age-sex,–,0.898,–,–,–,–,–,0.213,24,Macaca silenus,J_female,,FALSE,146
+Female copulation call,percent within age-sex,–,0.898,–,–,–,–,–,0.213,24,Macaca silenus,I_both,,FALSE,278
+Female copulation call,percent within age-sex,–,0.898,–,–,–,–,–,0.213,24,Macaca silenus,Σ,0.213,TRUE,
+Female copulation call,percent within call,–,100,–,–,–,–,–,100,25,Macaca silenus,A_male,,FALSE,250
+Female copulation call,percent within call,–,100,–,–,–,–,–,100,25,Macaca silenus,A_female,100,FALSE,568
+Female copulation call,percent within call,–,100,–,–,–,–,–,100,25,Macaca silenus,S_male,,FALSE,106
+Female copulation call,percent within call,–,100,–,–,–,–,–,100,25,Macaca silenus,S_female,,FALSE,161
+Female copulation call,percent within call,–,100,–,–,–,–,–,100,25,Macaca silenus,J_male,,FALSE,100
+Female copulation call,percent within call,–,100,–,–,–,–,–,100,25,Macaca silenus,J_female,,FALSE,146
+Female copulation call,percent within call,–,100,–,–,–,–,–,100,25,Macaca silenus,I_both,,FALSE,278
+Female copulation call,percent within call,–,100,–,–,–,–,–,100,25,Macaca silenus,Σ,100,TRUE,
+Male copulation call,rate per 10h,0.5,–,–,–,–,–,–,0.5,26,Macaca silenus,A_male,0.5,FALSE,250
+Male copulation call,rate per 10h,0.5,–,–,–,–,–,–,0.5,26,Macaca silenus,A_female,,FALSE,568
+Male copulation call,rate per 10h,0.5,–,–,–,–,–,–,0.5,26,Macaca silenus,S_male,,FALSE,106
+Male copulation call,rate per 10h,0.5,–,–,–,–,–,–,0.5,26,Macaca silenus,S_female,,FALSE,161
+Male copulation call,rate per 10h,0.5,–,–,–,–,–,–,0.5,26,Macaca silenus,J_male,,FALSE,100
+Male copulation call,rate per 10h,0.5,–,–,–,–,–,–,0.5,26,Macaca silenus,J_female,,FALSE,146
+Male copulation call,rate per 10h,0.5,–,–,–,–,–,–,0.5,26,Macaca silenus,I_both,,FALSE,278
+Male copulation call,rate per 10h,0.5,–,–,–,–,–,–,0.5,26,Macaca silenus,Σ,0.5,TRUE,
+Male copulation call,percent within age-sex,0.303,–,–,–,–,–,–,0.016,27,Macaca silenus,A_male,0.303,FALSE,250
+Male copulation call,percent within age-sex,0.303,–,–,–,–,–,–,0.016,27,Macaca silenus,A_female,,FALSE,568
+Male copulation call,percent within age-sex,0.303,–,–,–,–,–,–,0.016,27,Macaca silenus,S_male,,FALSE,106
+Male copulation call,percent within age-sex,0.303,–,–,–,–,–,–,0.016,27,Macaca silenus,S_female,,FALSE,161
+Male copulation call,percent within age-sex,0.303,–,–,–,–,–,–,0.016,27,Macaca silenus,J_male,,FALSE,100
+Male copulation call,percent within age-sex,0.303,–,–,–,–,–,–,0.016,27,Macaca silenus,J_female,,FALSE,146
+Male copulation call,percent within age-sex,0.303,–,–,–,–,–,–,0.016,27,Macaca silenus,I_both,,FALSE,278
+Male copulation call,percent within age-sex,0.303,–,–,–,–,–,–,0.016,27,Macaca silenus,Σ,0.016,TRUE,
+Male copulation call,percent within call,100,–,–,–,–,–,–,100,28,Macaca silenus,A_male,100,FALSE,250
+Male copulation call,percent within call,100,–,–,–,–,–,–,100,28,Macaca silenus,A_female,,FALSE,568
+Male copulation call,percent within call,100,–,–,–,–,–,–,100,28,Macaca silenus,S_male,,FALSE,106
+Male copulation call,percent within call,100,–,–,–,–,–,–,100,28,Macaca silenus,S_female,,FALSE,161
+Male copulation call,percent within call,100,–,–,–,–,–,–,100,28,Macaca silenus,J_male,,FALSE,100
+Male copulation call,percent within call,100,–,–,–,–,–,–,100,28,Macaca silenus,J_female,,FALSE,146
+Male copulation call,percent within call,100,–,–,–,–,–,–,100,28,Macaca silenus,I_both,,FALSE,278
+Male copulation call,percent within call,100,–,–,–,–,–,–,100,28,Macaca silenus,Σ,100,TRUE,
+Bark,rate per 10h,–,1.9,–,0.6,–,–,–,2.5,29,Macaca silenus,A_male,,FALSE,250
+Bark,rate per 10h,–,1.9,–,0.6,–,–,–,2.5,29,Macaca silenus,A_female,1.9,FALSE,568
+Bark,rate per 10h,–,1.9,–,0.6,–,–,–,2.5,29,Macaca silenus,S_male,,FALSE,106
+Bark,rate per 10h,–,1.9,–,0.6,–,–,–,2.5,29,Macaca silenus,S_female,0.6,FALSE,161
+Bark,rate per 10h,–,1.9,–,0.6,–,–,–,2.5,29,Macaca silenus,J_male,,FALSE,100
+Bark,rate per 10h,–,1.9,–,0.6,–,–,–,2.5,29,Macaca silenus,J_female,,FALSE,146
+Bark,rate per 10h,–,1.9,–,0.6,–,–,–,2.5,29,Macaca silenus,I_both,,FALSE,278
+Bark,rate per 10h,–,1.9,–,0.6,–,–,–,2.5,29,Macaca silenus,Σ,2.5,TRUE,
+Bark,percent within age-sex,–,0.234,–,0.146,–,–,–,0.073,30,Macaca silenus,A_male,,FALSE,250
+Bark,percent within age-sex,–,0.234,–,0.146,–,–,–,0.073,30,Macaca silenus,A_female,0.234,FALSE,568
+Bark,percent within age-sex,–,0.234,–,0.146,–,–,–,0.073,30,Macaca silenus,S_male,,FALSE,106
+Bark,percent within age-sex,–,0.234,–,0.146,–,–,–,0.073,30,Macaca silenus,S_female,0.146,FALSE,161
+Bark,percent within age-sex,–,0.234,–,0.146,–,–,–,0.073,30,Macaca silenus,J_male,,FALSE,100
+Bark,percent within age-sex,–,0.234,–,0.146,–,–,–,0.073,30,Macaca silenus,J_female,,FALSE,146
+Bark,percent within age-sex,–,0.234,–,0.146,–,–,–,0.073,30,Macaca silenus,I_both,,FALSE,278
+Bark,percent within age-sex,–,0.234,–,0.146,–,–,–,0.073,30,Macaca silenus,Σ,0.073,TRUE,
+Bark,percent within call,–,76.000,–,24.000,–,–,–,100,31,Macaca silenus,A_male,,FALSE,250
+Bark,percent within call,–,76.000,–,24.000,–,–,–,100,31,Macaca silenus,A_female,76,FALSE,568
+Bark,percent within call,–,76.000,–,24.000,–,–,–,100,31,Macaca silenus,S_male,,FALSE,106
+Bark,percent within call,–,76.000,–,24.000,–,–,–,100,31,Macaca silenus,S_female,24,FALSE,161
+Bark,percent within call,–,76.000,–,24.000,–,–,–,100,31,Macaca silenus,J_male,,FALSE,100
+Bark,percent within call,–,76.000,–,24.000,–,–,–,100,31,Macaca silenus,J_female,,FALSE,146
+Bark,percent within call,–,76.000,–,24.000,–,–,–,100,31,Macaca silenus,I_both,,FALSE,278
+Bark,percent within call,–,76.000,–,24.000,–,–,–,100,31,Macaca silenus,Σ,100,TRUE,
+Sneeze,rate per 10h,–,–,–,–,–,–,23.4,23.4,32,Macaca silenus,A_male,,FALSE,250
+Sneeze,rate per 10h,–,–,–,–,–,–,23.4,23.4,32,Macaca silenus,A_female,,FALSE,568
+Sneeze,rate per 10h,–,–,–,–,–,–,23.4,23.4,32,Macaca silenus,S_male,,FALSE,106
+Sneeze,rate per 10h,–,–,–,–,–,–,23.4,23.4,32,Macaca silenus,S_female,,FALSE,161
+Sneeze,rate per 10h,–,–,–,–,–,–,23.4,23.4,32,Macaca silenus,J_male,,FALSE,100
+Sneeze,rate per 10h,–,–,–,–,–,–,23.4,23.4,32,Macaca silenus,J_female,,FALSE,146
+Sneeze,rate per 10h,–,–,–,–,–,–,23.4,23.4,32,Macaca silenus,I_both,23.4,FALSE,278
+Sneeze,rate per 10h,–,–,–,–,–,–,23.4,23.4,32,Macaca silenus,Σ,23.4,TRUE,
+Sneeze,percent within age-sex,–,–,–,–,–,–,1.781,0.683,33,Macaca silenus,A_male,,FALSE,250
+Sneeze,percent within age-sex,–,–,–,–,–,–,1.781,0.683,33,Macaca silenus,A_female,,FALSE,568
+Sneeze,percent within age-sex,–,–,–,–,–,–,1.781,0.683,33,Macaca silenus,S_male,,FALSE,106
+Sneeze,percent within age-sex,–,–,–,–,–,–,1.781,0.683,33,Macaca silenus,S_female,,FALSE,161
+Sneeze,percent within age-sex,–,–,–,–,–,–,1.781,0.683,33,Macaca silenus,J_male,,FALSE,100
+Sneeze,percent within age-sex,–,–,–,–,–,–,1.781,0.683,33,Macaca silenus,J_female,,FALSE,146
+Sneeze,percent within age-sex,–,–,–,–,–,–,1.781,0.683,33,Macaca silenus,I_both,1.781,FALSE,278
+Sneeze,percent within age-sex,–,–,–,–,–,–,1.781,0.683,33,Macaca silenus,Σ,0.683,TRUE,
+Sneeze,percent within call,–,–,–,–,–,–,100,100,34,Macaca silenus,A_male,,FALSE,250
+Sneeze,percent within call,–,–,–,–,–,–,100,100,34,Macaca silenus,A_female,,FALSE,568
+Sneeze,percent within call,–,–,–,–,–,–,100,100,34,Macaca silenus,S_male,,FALSE,106
+Sneeze,percent within call,–,–,–,–,–,–,100,100,34,Macaca silenus,S_female,,FALSE,161
+Sneeze,percent within call,–,–,–,–,–,–,100,100,34,Macaca silenus,J_male,,FALSE,100
+Sneeze,percent within call,–,–,–,–,–,–,100,100,34,Macaca silenus,J_female,,FALSE,146
+Sneeze,percent within call,–,–,–,–,–,–,100,100,34,Macaca silenus,I_both,100,FALSE,278
+Sneeze,percent within call,–,–,–,–,–,–,100,100,34,Macaca silenus,Σ,100,TRUE,
+Loud call,rate per 10h,5.8,–,–,–,–,–,–,5.8,35,Macaca silenus,A_male,5.8,FALSE,250
+Loud call,rate per 10h,5.8,–,–,–,–,–,–,5.8,35,Macaca silenus,A_female,,FALSE,568
+Loud call,rate per 10h,5.8,–,–,–,–,–,–,5.8,35,Macaca silenus,S_male,,FALSE,106
+Loud call,rate per 10h,5.8,–,–,–,–,–,–,5.8,35,Macaca silenus,S_female,,FALSE,161
+Loud call,rate per 10h,5.8,–,–,–,–,–,–,5.8,35,Macaca silenus,J_male,,FALSE,100
+Loud call,rate per 10h,5.8,–,–,–,–,–,–,5.8,35,Macaca silenus,J_female,,FALSE,146
+Loud call,rate per 10h,5.8,–,–,–,–,–,–,5.8,35,Macaca silenus,I_both,,FALSE,278
+Loud call,rate per 10h,5.8,–,–,–,–,–,–,5.8,35,Macaca silenus,Σ,5.8,TRUE,
+Loud call,percent within age-sex,3.263,–,–,–,–,–,–,0.169,36,Macaca silenus,A_male,3.263,FALSE,250
+Loud call,percent within age-sex,3.263,–,–,–,–,–,–,0.169,36,Macaca silenus,A_female,,FALSE,568
+Loud call,percent within age-sex,3.263,–,–,–,–,–,–,0.169,36,Macaca silenus,S_male,,FALSE,106
+Loud call,percent within age-sex,3.263,–,–,–,–,–,–,0.169,36,Macaca silenus,S_female,,FALSE,161
+Loud call,percent within age-sex,3.263,–,–,–,–,–,–,0.169,36,Macaca silenus,J_male,,FALSE,100
+Loud call,percent within age-sex,3.263,–,–,–,–,–,–,0.169,36,Macaca silenus,J_female,,FALSE,146
+Loud call,percent within age-sex,3.263,–,–,–,–,–,–,0.169,36,Macaca silenus,I_both,,FALSE,278
+Loud call,percent within age-sex,3.263,–,–,–,–,–,–,0.169,36,Macaca silenus,Σ,0.169,TRUE,
+Loud call,percent within call,100,–,–,–,–,–,–,100,37,Macaca silenus,A_male,100,FALSE,250
+Loud call,percent within call,100,–,–,–,–,–,–,100,37,Macaca silenus,A_female,,FALSE,568
+Loud call,percent within call,100,–,–,–,–,–,–,100,37,Macaca silenus,S_male,,FALSE,106
+Loud call,percent within call,100,–,–,–,–,–,–,100,37,Macaca silenus,S_female,,FALSE,161
+Loud call,percent within call,100,–,–,–,–,–,–,100,37,Macaca silenus,J_male,,FALSE,100
+Loud call,percent within call,100,–,–,–,–,–,–,100,37,Macaca silenus,J_female,,FALSE,146
+Loud call,percent within call,100,–,–,–,–,–,–,100,37,Macaca silenus,I_both,,FALSE,278
+Loud call,percent within call,100,–,–,–,–,–,–,100,37,Macaca silenus,Σ,100,TRUE,
+Σ total,rate per 10h,177.7,813.1,202.7,412.2,137.1,370.0,"1,313.4","3,426.5",38,Macaca silenus,A_male,177.7,TRUE,250
+Σ total,rate per 10h,177.7,813.1,202.7,412.2,137.1,370.0,"1,313.4","3,426.5",38,Macaca silenus,A_female,813.1,TRUE,568
+Σ total,rate per 10h,177.7,813.1,202.7,412.2,137.1,370.0,"1,313.4","3,426.5",38,Macaca silenus,S_male,202.7,TRUE,106
+Σ total,rate per 10h,177.7,813.1,202.7,412.2,137.1,370.0,"1,313.4","3,426.5",38,Macaca silenus,S_female,412.2,TRUE,161
+Σ total,rate per 10h,177.7,813.1,202.7,412.2,137.1,370.0,"1,313.4","3,426.5",38,Macaca silenus,J_male,137.1,TRUE,100
+Σ total,rate per 10h,177.7,813.1,202.7,412.2,137.1,370.0,"1,313.4","3,426.5",38,Macaca silenus,J_female,370,TRUE,146
+Σ total,rate per 10h,177.7,813.1,202.7,412.2,137.1,370.0,"1,313.4","3,426.5",38,Macaca silenus,I_both,1313.4,TRUE,278
+Σ total,rate per 10h,177.7,813.1,202.7,412.2,137.1,370.0,"1,313.4","3,426.5",38,Macaca silenus,Σ,3426.5,TRUE,
+Σ total,percent within age-sex,100,100,100,100,100,100,100,100,39,Macaca silenus,A_male,100,TRUE,250
+Σ total,percent within age-sex,100,100,100,100,100,100,100,100,39,Macaca silenus,A_female,100,TRUE,568
+Σ total,percent within age-sex,100,100,100,100,100,100,100,100,39,Macaca silenus,S_male,100,TRUE,106
+Σ total,percent within age-sex,100,100,100,100,100,100,100,100,39,Macaca silenus,S_female,100,TRUE,161
+Σ total,percent within age-sex,100,100,100,100,100,100,100,100,39,Macaca silenus,J_male,100,TRUE,100
+Σ total,percent within age-sex,100,100,100,100,100,100,100,100,39,Macaca silenus,J_female,100,TRUE,146
+Σ total,percent within age-sex,100,100,100,100,100,100,100,100,39,Macaca silenus,I_both,100,TRUE,278
+Σ total,percent within age-sex,100,100,100,100,100,100,100,100,39,Macaca silenus,Σ,100,TRUE,
+Σ total,percent within call,5.187,23.729,5.916,12.030,4.001,10.798,38.339,100,40,Macaca silenus,A_male,5.187,TRUE,250
+Σ total,percent within call,5.187,23.729,5.916,12.030,4.001,10.798,38.339,100,40,Macaca silenus,A_female,23.729,TRUE,568
+Σ total,percent within call,5.187,23.729,5.916,12.030,4.001,10.798,38.339,100,40,Macaca silenus,S_male,5.916,TRUE,106
+Σ total,percent within call,5.187,23.729,5.916,12.030,4.001,10.798,38.339,100,40,Macaca silenus,S_female,12.03,TRUE,161
+Σ total,percent within call,5.187,23.729,5.916,12.030,4.001,10.798,38.339,100,40,Macaca silenus,J_male,4.001,TRUE,100
+Σ total,percent within call,5.187,23.729,5.916,12.030,4.001,10.798,38.339,100,40,Macaca silenus,J_female,10.798,TRUE,146
+Σ total,percent within call,5.187,23.729,5.916,12.030,4.001,10.798,38.339,100,40,Macaca silenus,I_both,38.339,TRUE,278
+Σ total,percent within call,5.187,23.729,5.916,12.030,4.001,10.798,38.339,100,40,Macaca silenus,Σ,100,TRUE,

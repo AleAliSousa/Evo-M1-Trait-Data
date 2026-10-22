@@ -1,0 +1,265 @@
+Vocal category	Statistic	A_male	A_female	S_male	S_female	J_male	J_female	I_both	Σ	Source_row	Species	Age_sex_class	Value	Total_flag	Active_epochs
+Hiccup	rate per 10h	6.4	9.2	–	5.8	7.9	6.1	2.6	38.0	2	Presbytis entellus	A_male	6.4	FALSE	132
+Hiccup	rate per 10h	6.4	9.2	–	5.8	7.9	6.1	2.6	38.0	2	Presbytis entellus	A_female	9.2	FALSE	247
+Hiccup	rate per 10h	6.4	9.2	–	5.8	7.9	6.1	2.6	38.0	2	Presbytis entellus	S_male		FALSE	121
+Hiccup	rate per 10h	6.4	9.2	–	5.8	7.9	6.1	2.6	38.0	2	Presbytis entellus	S_female	5.8	FALSE	124
+Hiccup	rate per 10h	6.4	9.2	–	5.8	7.9	6.1	2.6	38.0	2	Presbytis entellus	J_male	7.9	FALSE	122
+Hiccup	rate per 10h	6.4	9.2	–	5.8	7.9	6.1	2.6	38.0	2	Presbytis entellus	J_female	6.1	FALSE	137
+Hiccup	rate per 10h	6.4	9.2	–	5.8	7.9	6.1	2.6	38.0	2	Presbytis entellus	I_both	2.6	FALSE	269
+Hiccup	rate per 10h	6.4	9.2	–	5.8	7.9	6.1	2.6	38.0	2	Presbytis entellus	Σ	38	TRUE	
+Hiccup	percent within age-sex	1.419	7.221	–	3.864	2.340	1.046	0.056	0.591	3	Presbytis entellus	A_male	1.419	FALSE	132
+Hiccup	percent within age-sex	1.419	7.221	–	3.864	2.340	1.046	0.056	0.591	3	Presbytis entellus	A_female	7.221	FALSE	247
+Hiccup	percent within age-sex	1.419	7.221	–	3.864	2.340	1.046	0.056	0.591	3	Presbytis entellus	S_male		FALSE	121
+Hiccup	percent within age-sex	1.419	7.221	–	3.864	2.340	1.046	0.056	0.591	3	Presbytis entellus	S_female	3.864	FALSE	124
+Hiccup	percent within age-sex	1.419	7.221	–	3.864	2.340	1.046	0.056	0.591	3	Presbytis entellus	J_male	2.34	FALSE	122
+Hiccup	percent within age-sex	1.419	7.221	–	3.864	2.340	1.046	0.056	0.591	3	Presbytis entellus	J_female	1.046	FALSE	137
+Hiccup	percent within age-sex	1.419	7.221	–	3.864	2.340	1.046	0.056	0.591	3	Presbytis entellus	I_both	0.056	FALSE	269
+Hiccup	percent within age-sex	1.419	7.221	–	3.864	2.340	1.046	0.056	0.591	3	Presbytis entellus	Σ	0.591	TRUE	
+Hiccup	percent within call	16.842	24.211	–	15.263	20.789	16.053	6.842	100	4	Presbytis entellus	A_male	16.842	FALSE	132
+Hiccup	percent within call	16.842	24.211	–	15.263	20.789	16.053	6.842	100	4	Presbytis entellus	A_female	24.211	FALSE	247
+Hiccup	percent within call	16.842	24.211	–	15.263	20.789	16.053	6.842	100	4	Presbytis entellus	S_male		FALSE	121
+Hiccup	percent within call	16.842	24.211	–	15.263	20.789	16.053	6.842	100	4	Presbytis entellus	S_female	15.263	FALSE	124
+Hiccup	percent within call	16.842	24.211	–	15.263	20.789	16.053	6.842	100	4	Presbytis entellus	J_male	20.789	FALSE	122
+Hiccup	percent within call	16.842	24.211	–	15.263	20.789	16.053	6.842	100	4	Presbytis entellus	J_female	16.053	FALSE	137
+Hiccup	percent within call	16.842	24.211	–	15.263	20.789	16.053	6.842	100	4	Presbytis entellus	I_both	6.842	FALSE	269
+Hiccup	percent within call	16.842	24.211	–	15.263	20.789	16.053	6.842	100	4	Presbytis entellus	Σ	100	TRUE	
+Cough	rate per 10h	2.7	17.0	1.0	1.0	13.8	0.9	–	36.4	5	Presbytis entellus	A_male	2.7	FALSE	132
+Cough	rate per 10h	2.7	17.0	1.0	1.0	13.8	0.9	–	36.4	5	Presbytis entellus	A_female	17	FALSE	247
+Cough	rate per 10h	2.7	17.0	1.0	1.0	13.8	0.9	–	36.4	5	Presbytis entellus	S_male	1	FALSE	121
+Cough	rate per 10h	2.7	17.0	1.0	1.0	13.8	0.9	–	36.4	5	Presbytis entellus	S_female	1	FALSE	124
+Cough	rate per 10h	2.7	17.0	1.0	1.0	13.8	0.9	–	36.4	5	Presbytis entellus	J_male	13.8	FALSE	122
+Cough	rate per 10h	2.7	17.0	1.0	1.0	13.8	0.9	–	36.4	5	Presbytis entellus	J_female	0.9	FALSE	137
+Cough	rate per 10h	2.7	17.0	1.0	1.0	13.8	0.9	–	36.4	5	Presbytis entellus	I_both		FALSE	269
+Cough	rate per 10h	2.7	17.0	1.0	1.0	13.8	0.9	–	36.4	5	Presbytis entellus	Σ	36.4	TRUE	
+Cough	percent within age-sex	0.599	13.344	0.917	0.666	4.088	0.154	–	0.566	6	Presbytis entellus	A_male	0.599	FALSE	132
+Cough	percent within age-sex	0.599	13.344	0.917	0.666	4.088	0.154	–	0.566	6	Presbytis entellus	A_female	13.344	FALSE	247
+Cough	percent within age-sex	0.599	13.344	0.917	0.666	4.088	0.154	–	0.566	6	Presbytis entellus	S_male	0.917	FALSE	121
+Cough	percent within age-sex	0.599	13.344	0.917	0.666	4.088	0.154	–	0.566	6	Presbytis entellus	S_female	0.666	FALSE	124
+Cough	percent within age-sex	0.599	13.344	0.917	0.666	4.088	0.154	–	0.566	6	Presbytis entellus	J_male	4.088	FALSE	122
+Cough	percent within age-sex	0.599	13.344	0.917	0.666	4.088	0.154	–	0.566	6	Presbytis entellus	J_female	0.154	FALSE	137
+Cough	percent within age-sex	0.599	13.344	0.917	0.666	4.088	0.154	–	0.566	6	Presbytis entellus	I_both		FALSE	269
+Cough	percent within age-sex	0.599	13.344	0.917	0.666	4.088	0.154	–	0.566	6	Presbytis entellus	Σ	0.566	TRUE	
+Cough	percent within call	7.418	46.701	2.747	2.747	37.912	2.473	–	100	7	Presbytis entellus	A_male	7.418	FALSE	132
+Cough	percent within call	7.418	46.701	2.747	2.747	37.912	2.473	–	100	7	Presbytis entellus	A_female	46.701	FALSE	247
+Cough	percent within call	7.418	46.701	2.747	2.747	37.912	2.473	–	100	7	Presbytis entellus	S_male	2.747	FALSE	121
+Cough	percent within call	7.418	46.701	2.747	2.747	37.912	2.473	–	100	7	Presbytis entellus	S_female	2.747	FALSE	124
+Cough	percent within call	7.418	46.701	2.747	2.747	37.912	2.473	–	100	7	Presbytis entellus	J_male	37.912	FALSE	122
+Cough	percent within call	7.418	46.701	2.747	2.747	37.912	2.473	–	100	7	Presbytis entellus	J_female	2.473	FALSE	137
+Cough	percent within call	7.418	46.701	2.747	2.747	37.912	2.473	–	100	7	Presbytis entellus	I_both		FALSE	269
+Cough	percent within call	7.418	46.701	2.747	2.747	37.912	2.473	–	100	7	Presbytis entellus	Σ	100	TRUE	
+Warble + whistle	rate per 10h	–	14.1	3.0	72.6	85.6	103.4	591.8	870.5	8	Presbytis entellus	A_male		FALSE	132
+Warble + whistle	rate per 10h	–	14.1	3.0	72.6	85.6	103.4	591.8	870.5	8	Presbytis entellus	A_female	14.1	FALSE	247
+Warble + whistle	rate per 10h	–	14.1	3.0	72.6	85.6	103.4	591.8	870.5	8	Presbytis entellus	S_male	3	FALSE	121
+Warble + whistle	rate per 10h	–	14.1	3.0	72.6	85.6	103.4	591.8	870.5	8	Presbytis entellus	S_female	72.6	FALSE	124
+Warble + whistle	rate per 10h	–	14.1	3.0	72.6	85.6	103.4	591.8	870.5	8	Presbytis entellus	J_male	85.6	FALSE	122
+Warble + whistle	rate per 10h	–	14.1	3.0	72.6	85.6	103.4	591.8	870.5	8	Presbytis entellus	J_female	103.4	FALSE	137
+Warble + whistle	rate per 10h	–	14.1	3.0	72.6	85.6	103.4	591.8	870.5	8	Presbytis entellus	I_both	591.8	FALSE	269
+Warble + whistle	rate per 10h	–	14.1	3.0	72.6	85.6	103.4	591.8	870.5	8	Presbytis entellus	Σ	870.5	TRUE	
+Warble + whistle	percent within age-sex	–	11.068	2.750	48.368	25.355	17.724	12.660	13.532	9	Presbytis entellus	A_male		FALSE	132
+Warble + whistle	percent within age-sex	–	11.068	2.750	48.368	25.355	17.724	12.660	13.532	9	Presbytis entellus	A_female	11.068	FALSE	247
+Warble + whistle	percent within age-sex	–	11.068	2.750	48.368	25.355	17.724	12.660	13.532	9	Presbytis entellus	S_male	2.75	FALSE	121
+Warble + whistle	percent within age-sex	–	11.068	2.750	48.368	25.355	17.724	12.660	13.532	9	Presbytis entellus	S_female	48.368	FALSE	124
+Warble + whistle	percent within age-sex	–	11.068	2.750	48.368	25.355	17.724	12.660	13.532	9	Presbytis entellus	J_male	25.355	FALSE	122
+Warble + whistle	percent within age-sex	–	11.068	2.750	48.368	25.355	17.724	12.660	13.532	9	Presbytis entellus	J_female	17.724	FALSE	137
+Warble + whistle	percent within age-sex	–	11.068	2.750	48.368	25.355	17.724	12.660	13.532	9	Presbytis entellus	I_both	12.66	FALSE	269
+Warble + whistle	percent within age-sex	–	11.068	2.750	48.368	25.355	17.724	12.660	13.532	9	Presbytis entellus	Σ	13.532	TRUE	
+Warble + whistle	percent within call	–	1.620	0.345	8.340	9.833	11.878	67.984	100	10	Presbytis entellus	A_male		FALSE	132
+Warble + whistle	percent within call	–	1.620	0.345	8.340	9.833	11.878	67.984	100	10	Presbytis entellus	A_female	1.62	FALSE	247
+Warble + whistle	percent within call	–	1.620	0.345	8.340	9.833	11.878	67.984	100	10	Presbytis entellus	S_male	0.345	FALSE	121
+Warble + whistle	percent within call	–	1.620	0.345	8.340	9.833	11.878	67.984	100	10	Presbytis entellus	S_female	8.34	FALSE	124
+Warble + whistle	percent within call	–	1.620	0.345	8.340	9.833	11.878	67.984	100	10	Presbytis entellus	J_male	9.833	FALSE	122
+Warble + whistle	percent within call	–	1.620	0.345	8.340	9.833	11.878	67.984	100	10	Presbytis entellus	J_female	11.878	FALSE	137
+Warble + whistle	percent within call	–	1.620	0.345	8.340	9.833	11.878	67.984	100	10	Presbytis entellus	I_both	67.984	FALSE	269
+Warble + whistle	percent within call	–	1.620	0.345	8.340	9.833	11.878	67.984	100	10	Presbytis entellus	Σ	100	TRUE	
+Contact tremolo	rate per 10h	–	46.7	11.9	24.2	44.3	54.3	12.4	193.8	11	Presbytis entellus	A_male		FALSE	132
+Contact tremolo	rate per 10h	–	46.7	11.9	24.2	44.3	54.3	12.4	193.8	11	Presbytis entellus	A_female	46.7	FALSE	247
+Contact tremolo	rate per 10h	–	46.7	11.9	24.2	44.3	54.3	12.4	193.8	11	Presbytis entellus	S_male	11.9	FALSE	121
+Contact tremolo	rate per 10h	–	46.7	11.9	24.2	44.3	54.3	12.4	193.8	11	Presbytis entellus	S_female	24.2	FALSE	124
+Contact tremolo	rate per 10h	–	46.7	11.9	24.2	44.3	54.3	12.4	193.8	11	Presbytis entellus	J_male	44.3	FALSE	122
+Contact tremolo	rate per 10h	–	46.7	11.9	24.2	44.3	54.3	12.4	193.8	11	Presbytis entellus	J_female	54.3	FALSE	137
+Contact tremolo	rate per 10h	–	46.7	11.9	24.2	44.3	54.3	12.4	193.8	11	Presbytis entellus	I_both	12.4	FALSE	269
+Contact tremolo	rate per 10h	–	46.7	11.9	24.2	44.3	54.3	12.4	193.8	11	Presbytis entellus	Σ	193.8	TRUE	
+Contact tremolo	percent within age-sex	–	36.656	10.907	16.123	13.122	9.308	0.265	3.013	12	Presbytis entellus	A_male		FALSE	132
+Contact tremolo	percent within age-sex	–	36.656	10.907	16.123	13.122	9.308	0.265	3.013	12	Presbytis entellus	A_female	36.656	FALSE	247
+Contact tremolo	percent within age-sex	–	36.656	10.907	16.123	13.122	9.308	0.265	3.013	12	Presbytis entellus	S_male	10.907	FALSE	121
+Contact tremolo	percent within age-sex	–	36.656	10.907	16.123	13.122	9.308	0.265	3.013	12	Presbytis entellus	S_female	16.123	FALSE	124
+Contact tremolo	percent within age-sex	–	36.656	10.907	16.123	13.122	9.308	0.265	3.013	12	Presbytis entellus	J_male	13.122	FALSE	122
+Contact tremolo	percent within age-sex	–	36.656	10.907	16.123	13.122	9.308	0.265	3.013	12	Presbytis entellus	J_female	9.308	FALSE	137
+Contact tremolo	percent within age-sex	–	36.656	10.907	16.123	13.122	9.308	0.265	3.013	12	Presbytis entellus	I_both	0.265	FALSE	269
+Contact tremolo	percent within age-sex	–	36.656	10.907	16.123	13.122	9.308	0.265	3.013	12	Presbytis entellus	Σ	3.013	TRUE	
+Contact tremolo	percent within call	–	24.097	6.140	12.000	22.859	28.019	6.398	100	13	Presbytis entellus	A_male		FALSE	132
+Contact tremolo	percent within call	–	24.097	6.140	12.000	22.859	28.019	6.398	100	13	Presbytis entellus	A_female	24.097	FALSE	247
+Contact tremolo	percent within call	–	24.097	6.140	12.000	22.859	28.019	6.398	100	13	Presbytis entellus	S_male	6.14	FALSE	121
+Contact tremolo	percent within call	–	24.097	6.140	12.000	22.859	28.019	6.398	100	13	Presbytis entellus	S_female	12	FALSE	124
+Contact tremolo	percent within call	–	24.097	6.140	12.000	22.859	28.019	6.398	100	13	Presbytis entellus	J_male	22.859	FALSE	122
+Contact tremolo	percent within call	–	24.097	6.140	12.000	22.859	28.019	6.398	100	13	Presbytis entellus	J_female	28.019	FALSE	137
+Contact tremolo	percent within call	–	24.097	6.140	12.000	22.859	28.019	6.398	100	13	Presbytis entellus	I_both	6.398	FALSE	269
+Contact tremolo	percent within call	–	24.097	6.140	12.000	22.859	28.019	6.398	100	13	Presbytis entellus	Σ	100	TRUE	
+Shriek	rate per 10h	–	24.8	1.0	45.5	184.0	418.7	4,058.8	4,732.8	14	Presbytis entellus	A_male		FALSE	132
+Shriek	rate per 10h	–	24.8	1.0	45.5	184.0	418.7	4,058.8	4,732.8	14	Presbytis entellus	A_female	24.8	FALSE	247
+Shriek	rate per 10h	–	24.8	1.0	45.5	184.0	418.7	4,058.8	4,732.8	14	Presbytis entellus	S_male	1	FALSE	121
+Shriek	rate per 10h	–	24.8	1.0	45.5	184.0	418.7	4,058.8	4,732.8	14	Presbytis entellus	S_female	45.5	FALSE	124
+Shriek	rate per 10h	–	24.8	1.0	45.5	184.0	418.7	4,058.8	4,732.8	14	Presbytis entellus	J_male	184	FALSE	122
+Shriek	rate per 10h	–	24.8	1.0	45.5	184.0	418.7	4,058.8	4,732.8	14	Presbytis entellus	J_female	418.7	FALSE	137
+Shriek	rate per 10h	–	24.8	1.0	45.5	184.0	418.7	4,058.8	4,732.8	14	Presbytis entellus	I_both	4058.8	FALSE	269
+Shriek	rate per 10h	–	24.8	1.0	45.5	184.0	418.7	4,058.8	4,732.8	14	Presbytis entellus	Σ	4732.8	TRUE	
+Shriek	percent within age-sex	–	19.466	0.917	30.313	54.502	71.769	86.830	73.572	15	Presbytis entellus	A_male		FALSE	132
+Shriek	percent within age-sex	–	19.466	0.917	30.313	54.502	71.769	86.830	73.572	15	Presbytis entellus	A_female	19.466	FALSE	247
+Shriek	percent within age-sex	–	19.466	0.917	30.313	54.502	71.769	86.830	73.572	15	Presbytis entellus	S_male	0.917	FALSE	121
+Shriek	percent within age-sex	–	19.466	0.917	30.313	54.502	71.769	86.830	73.572	15	Presbytis entellus	S_female	30.313	FALSE	124
+Shriek	percent within age-sex	–	19.466	0.917	30.313	54.502	71.769	86.830	73.572	15	Presbytis entellus	J_male	54.502	FALSE	122
+Shriek	percent within age-sex	–	19.466	0.917	30.313	54.502	71.769	86.830	73.572	15	Presbytis entellus	J_female	71.769	FALSE	137
+Shriek	percent within age-sex	–	19.466	0.917	30.313	54.502	71.769	86.830	73.572	15	Presbytis entellus	I_both	86.83	FALSE	269
+Shriek	percent within age-sex	–	19.466	0.917	30.313	54.502	71.769	86.830	73.572	15	Presbytis entellus	Σ	73.572	TRUE	
+Shriek	percent within call	–	0.524	0.021	0.961	3.888	8.847	85.759	100	16	Presbytis entellus	A_male		FALSE	132
+Shriek	percent within call	–	0.524	0.021	0.961	3.888	8.847	85.759	100	16	Presbytis entellus	A_female	0.524	FALSE	247
+Shriek	percent within call	–	0.524	0.021	0.961	3.888	8.847	85.759	100	16	Presbytis entellus	S_male	0.021	FALSE	121
+Shriek	percent within call	–	0.524	0.021	0.961	3.888	8.847	85.759	100	16	Presbytis entellus	S_female	0.961	FALSE	124
+Shriek	percent within call	–	0.524	0.021	0.961	3.888	8.847	85.759	100	16	Presbytis entellus	J_male	3.888	FALSE	122
+Shriek	percent within call	–	0.524	0.021	0.961	3.888	8.847	85.759	100	16	Presbytis entellus	J_female	8.847	FALSE	137
+Shriek	percent within call	–	0.524	0.021	0.961	3.888	8.847	85.759	100	16	Presbytis entellus	I_both	85.759	FALSE	269
+Shriek	percent within call	–	0.524	0.021	0.961	3.888	8.847	85.759	100	16	Presbytis entellus	Σ	100	TRUE	
+Squeal	rate per 10h	–	0.5	–	–	–	–	8.8	9.3	17	Presbytis entellus	A_male		FALSE	132
+Squeal	rate per 10h	–	0.5	–	–	–	–	8.8	9.3	17	Presbytis entellus	A_female	0.5	FALSE	247
+Squeal	rate per 10h	–	0.5	–	–	–	–	8.8	9.3	17	Presbytis entellus	S_male		FALSE	121
+Squeal	rate per 10h	–	0.5	–	–	–	–	8.8	9.3	17	Presbytis entellus	S_female		FALSE	124
+Squeal	rate per 10h	–	0.5	–	–	–	–	8.8	9.3	17	Presbytis entellus	J_male		FALSE	122
+Squeal	rate per 10h	–	0.5	–	–	–	–	8.8	9.3	17	Presbytis entellus	J_female		FALSE	137
+Squeal	rate per 10h	–	0.5	–	–	–	–	8.8	9.3	17	Presbytis entellus	I_both	8.8	FALSE	269
+Squeal	rate per 10h	–	0.5	–	–	–	–	8.8	9.3	17	Presbytis entellus	Σ	9.3	TRUE	
+Squeal	percent within age-sex	–	0.392	–	–	–	–	0.188	0.145	18	Presbytis entellus	A_male		FALSE	132
+Squeal	percent within age-sex	–	0.392	–	–	–	–	0.188	0.145	18	Presbytis entellus	A_female	0.392	FALSE	247
+Squeal	percent within age-sex	–	0.392	–	–	–	–	0.188	0.145	18	Presbytis entellus	S_male		FALSE	121
+Squeal	percent within age-sex	–	0.392	–	–	–	–	0.188	0.145	18	Presbytis entellus	S_female		FALSE	124
+Squeal	percent within age-sex	–	0.392	–	–	–	–	0.188	0.145	18	Presbytis entellus	J_male		FALSE	122
+Squeal	percent within age-sex	–	0.392	–	–	–	–	0.188	0.145	18	Presbytis entellus	J_female		FALSE	137
+Squeal	percent within age-sex	–	0.392	–	–	–	–	0.188	0.145	18	Presbytis entellus	I_both	0.188	FALSE	269
+Squeal	percent within age-sex	–	0.392	–	–	–	–	0.188	0.145	18	Presbytis entellus	Σ	0.145	TRUE	
+Squeal	percent within call	–	5.376	–	–	–	–	94.624	100	19	Presbytis entellus	A_male		FALSE	132
+Squeal	percent within call	–	5.376	–	–	–	–	94.624	100	19	Presbytis entellus	A_female	5.376	FALSE	247
+Squeal	percent within call	–	5.376	–	–	–	–	94.624	100	19	Presbytis entellus	S_male		FALSE	121
+Squeal	percent within call	–	5.376	–	–	–	–	94.624	100	19	Presbytis entellus	S_female		FALSE	124
+Squeal	percent within call	–	5.376	–	–	–	–	94.624	100	19	Presbytis entellus	J_male		FALSE	122
+Squeal	percent within call	–	5.376	–	–	–	–	94.624	100	19	Presbytis entellus	J_female		FALSE	137
+Squeal	percent within call	–	5.376	–	–	–	–	94.624	100	19	Presbytis entellus	I_both	94.624	FALSE	269
+Squeal	percent within call	–	5.376	–	–	–	–	94.624	100	19	Presbytis entellus	Σ	100	TRUE	
+Grunt	rate per 10h	260.9	10.2	12.9	–	2.0	–	–	286.0	20	Presbytis entellus	A_male	260.9	FALSE	132
+Grunt	rate per 10h	260.9	10.2	12.9	–	2.0	–	–	286.0	20	Presbytis entellus	A_female	10.2	FALSE	247
+Grunt	rate per 10h	260.9	10.2	12.9	–	2.0	–	–	286.0	20	Presbytis entellus	S_male	12.9	FALSE	121
+Grunt	rate per 10h	260.9	10.2	12.9	–	2.0	–	–	286.0	20	Presbytis entellus	S_female		FALSE	124
+Grunt	rate per 10h	260.9	10.2	12.9	–	2.0	–	–	286.0	20	Presbytis entellus	J_male	2	FALSE	122
+Grunt	rate per 10h	260.9	10.2	12.9	–	2.0	–	–	286.0	20	Presbytis entellus	J_female		FALSE	137
+Grunt	rate per 10h	260.9	10.2	12.9	–	2.0	–	–	286.0	20	Presbytis entellus	I_both		FALSE	269
+Grunt	rate per 10h	260.9	10.2	12.9	–	2.0	–	–	286.0	20	Presbytis entellus	Σ	286	TRUE	
+Grunt	percent within age-sex	57.862	8.006	11.824	–	0.592	–	–	4.446	21	Presbytis entellus	A_male	57.862	FALSE	132
+Grunt	percent within age-sex	57.862	8.006	11.824	–	0.592	–	–	4.446	21	Presbytis entellus	A_female	8.006	FALSE	247
+Grunt	percent within age-sex	57.862	8.006	11.824	–	0.592	–	–	4.446	21	Presbytis entellus	S_male	11.824	FALSE	121
+Grunt	percent within age-sex	57.862	8.006	11.824	–	0.592	–	–	4.446	21	Presbytis entellus	S_female		FALSE	124
+Grunt	percent within age-sex	57.862	8.006	11.824	–	0.592	–	–	4.446	21	Presbytis entellus	J_male	0.592	FALSE	122
+Grunt	percent within age-sex	57.862	8.006	11.824	–	0.592	–	–	4.446	21	Presbytis entellus	J_female		FALSE	137
+Grunt	percent within age-sex	57.862	8.006	11.824	–	0.592	–	–	4.446	21	Presbytis entellus	I_both		FALSE	269
+Grunt	percent within age-sex	57.862	8.006	11.824	–	0.592	–	–	4.446	21	Presbytis entellus	Σ	4.446	TRUE	
+Grunt	percent within call	91.224	3.566	4.510	–	0.699	–	–	100	22	Presbytis entellus	A_male	91.224	FALSE	132
+Grunt	percent within call	91.224	3.566	4.510	–	0.699	–	–	100	22	Presbytis entellus	A_female	3.566	FALSE	247
+Grunt	percent within call	91.224	3.566	4.510	–	0.699	–	–	100	22	Presbytis entellus	S_male	4.51	FALSE	121
+Grunt	percent within call	91.224	3.566	4.510	–	0.699	–	–	100	22	Presbytis entellus	S_female		FALSE	124
+Grunt	percent within call	91.224	3.566	4.510	–	0.699	–	–	100	22	Presbytis entellus	J_male	0.699	FALSE	122
+Grunt	percent within call	91.224	3.566	4.510	–	0.699	–	–	100	22	Presbytis entellus	J_female		FALSE	137
+Grunt	percent within call	91.224	3.566	4.510	–	0.699	–	–	100	22	Presbytis entellus	I_both		FALSE	269
+Grunt	percent within call	91.224	3.566	4.510	–	0.699	–	–	100	22	Presbytis entellus	Σ	100	TRUE	
+Loud call	rate per 10h	4.5	–	7.9	–	–	–	–	12.4	23	Presbytis entellus	A_male	4.5	FALSE	132
+Loud call	rate per 10h	4.5	–	7.9	–	–	–	–	12.4	23	Presbytis entellus	A_female		FALSE	247
+Loud call	rate per 10h	4.5	–	7.9	–	–	–	–	12.4	23	Presbytis entellus	S_male	7.9	FALSE	121
+Loud call	rate per 10h	4.5	–	7.9	–	–	–	–	12.4	23	Presbytis entellus	S_female		FALSE	124
+Loud call	rate per 10h	4.5	–	7.9	–	–	–	–	12.4	23	Presbytis entellus	J_male		FALSE	122
+Loud call	rate per 10h	4.5	–	7.9	–	–	–	–	12.4	23	Presbytis entellus	J_female		FALSE	137
+Loud call	rate per 10h	4.5	–	7.9	–	–	–	–	12.4	23	Presbytis entellus	I_both		FALSE	269
+Loud call	rate per 10h	4.5	–	7.9	–	–	–	–	12.4	23	Presbytis entellus	Σ	12.4	TRUE	
+Loud call	percent within age-sex	0.998	–	7.241	–	–	–	–	0.193	24	Presbytis entellus	A_male	0.998	FALSE	132
+Loud call	percent within age-sex	0.998	–	7.241	–	–	–	–	0.193	24	Presbytis entellus	A_female		FALSE	247
+Loud call	percent within age-sex	0.998	–	7.241	–	–	–	–	0.193	24	Presbytis entellus	S_male	7.241	FALSE	121
+Loud call	percent within age-sex	0.998	–	7.241	–	–	–	–	0.193	24	Presbytis entellus	S_female		FALSE	124
+Loud call	percent within age-sex	0.998	–	7.241	–	–	–	–	0.193	24	Presbytis entellus	J_male		FALSE	122
+Loud call	percent within age-sex	0.998	–	7.241	–	–	–	–	0.193	24	Presbytis entellus	J_female		FALSE	137
+Loud call	percent within age-sex	0.998	–	7.241	–	–	–	–	0.193	24	Presbytis entellus	I_both		FALSE	269
+Loud call	percent within age-sex	0.998	–	7.241	–	–	–	–	0.193	24	Presbytis entellus	Σ	0.193	TRUE	
+Loud call	percent within call	36.290	–	63.710	–	–	–	–	100	25	Presbytis entellus	A_male	36.29	FALSE	132
+Loud call	percent within call	36.290	–	63.710	–	–	–	–	100	25	Presbytis entellus	A_female		FALSE	247
+Loud call	percent within call	36.290	–	63.710	–	–	–	–	100	25	Presbytis entellus	S_male	63.71	FALSE	121
+Loud call	percent within call	36.290	–	63.710	–	–	–	–	100	25	Presbytis entellus	S_female		FALSE	124
+Loud call	percent within call	36.290	–	63.710	–	–	–	–	100	25	Presbytis entellus	J_male		FALSE	122
+Loud call	percent within call	36.290	–	63.710	–	–	–	–	100	25	Presbytis entellus	J_female		FALSE	137
+Loud call	percent within call	36.290	–	63.710	–	–	–	–	100	25	Presbytis entellus	I_both		FALSE	269
+Loud call	percent within call	36.290	–	63.710	–	–	–	–	100	25	Presbytis entellus	Σ	100	TRUE	
+Grunt bark	rate per 10h	170.9	–	–	–	–	–	–	170.9	26	Presbytis entellus	A_male	170.9	FALSE	132
+Grunt bark	rate per 10h	170.9	–	–	–	–	–	–	170.9	26	Presbytis entellus	A_female		FALSE	247
+Grunt bark	rate per 10h	170.9	–	–	–	–	–	–	170.9	26	Presbytis entellus	S_male		FALSE	121
+Grunt bark	rate per 10h	170.9	–	–	–	–	–	–	170.9	26	Presbytis entellus	S_female		FALSE	124
+Grunt bark	rate per 10h	170.9	–	–	–	–	–	–	170.9	26	Presbytis entellus	J_male		FALSE	122
+Grunt bark	rate per 10h	170.9	–	–	–	–	–	–	170.9	26	Presbytis entellus	J_female		FALSE	137
+Grunt bark	rate per 10h	170.9	–	–	–	–	–	–	170.9	26	Presbytis entellus	I_both		FALSE	269
+Grunt bark	rate per 10h	170.9	–	–	–	–	–	–	170.9	26	Presbytis entellus	Σ	170.9	TRUE	
+Grunt bark	percent within age-sex	37.902	–	–	–	–	–	–	2.657	27	Presbytis entellus	A_male	37.902	FALSE	132
+Grunt bark	percent within age-sex	37.902	–	–	–	–	–	–	2.657	27	Presbytis entellus	A_female		FALSE	247
+Grunt bark	percent within age-sex	37.902	–	–	–	–	–	–	2.657	27	Presbytis entellus	S_male		FALSE	121
+Grunt bark	percent within age-sex	37.902	–	–	–	–	–	–	2.657	27	Presbytis entellus	S_female		FALSE	124
+Grunt bark	percent within age-sex	37.902	–	–	–	–	–	–	2.657	27	Presbytis entellus	J_male		FALSE	122
+Grunt bark	percent within age-sex	37.902	–	–	–	–	–	–	2.657	27	Presbytis entellus	J_female		FALSE	137
+Grunt bark	percent within age-sex	37.902	–	–	–	–	–	–	2.657	27	Presbytis entellus	I_both		FALSE	269
+Grunt bark	percent within age-sex	37.902	–	–	–	–	–	–	2.657	27	Presbytis entellus	Σ	2.657	TRUE	
+Grunt bark	percent within call	100	–	–	–	–	–	–	100	28	Presbytis entellus	A_male	100	FALSE	132
+Grunt bark	percent within call	100	–	–	–	–	–	–	100	28	Presbytis entellus	A_female		FALSE	247
+Grunt bark	percent within call	100	–	–	–	–	–	–	100	28	Presbytis entellus	S_male		FALSE	121
+Grunt bark	percent within call	100	–	–	–	–	–	–	100	28	Presbytis entellus	S_female		FALSE	124
+Grunt bark	percent within call	100	–	–	–	–	–	–	100	28	Presbytis entellus	J_male		FALSE	122
+Grunt bark	percent within call	100	–	–	–	–	–	–	100	28	Presbytis entellus	J_female		FALSE	137
+Grunt bark	percent within call	100	–	–	–	–	–	–	100	28	Presbytis entellus	I_both		FALSE	269
+Grunt bark	percent within call	100	–	–	–	–	–	–	100	28	Presbytis entellus	Σ	100	TRUE	
+Rumble	rate per 10h	5.5	4.9	71.4	1.0	–	–	–	82.8	29	Presbytis entellus	A_male	5.5	FALSE	132
+Rumble	rate per 10h	5.5	4.9	71.4	1.0	–	–	–	82.8	29	Presbytis entellus	A_female	4.9	FALSE	247
+Rumble	rate per 10h	5.5	4.9	71.4	1.0	–	–	–	82.8	29	Presbytis entellus	S_male	71.4	FALSE	121
+Rumble	rate per 10h	5.5	4.9	71.4	1.0	–	–	–	82.8	29	Presbytis entellus	S_female	1	FALSE	124
+Rumble	rate per 10h	5.5	4.9	71.4	1.0	–	–	–	82.8	29	Presbytis entellus	J_male		FALSE	122
+Rumble	rate per 10h	5.5	4.9	71.4	1.0	–	–	–	82.8	29	Presbytis entellus	J_female		FALSE	137
+Rumble	rate per 10h	5.5	4.9	71.4	1.0	–	–	–	82.8	29	Presbytis entellus	I_both		FALSE	269
+Rumble	rate per 10h	5.5	4.9	71.4	1.0	–	–	–	82.8	29	Presbytis entellus	Σ	82.8	TRUE	
+Rumble	percent within age-sex	1.220	3.846	65.445	0.666	–	–	–	1.287	30	Presbytis entellus	A_male	1.22	FALSE	132
+Rumble	percent within age-sex	1.220	3.846	65.445	0.666	–	–	–	1.287	30	Presbytis entellus	A_female	3.846	FALSE	247
+Rumble	percent within age-sex	1.220	3.846	65.445	0.666	–	–	–	1.287	30	Presbytis entellus	S_male	65.445	FALSE	121
+Rumble	percent within age-sex	1.220	3.846	65.445	0.666	–	–	–	1.287	30	Presbytis entellus	S_female	0.666	FALSE	124
+Rumble	percent within age-sex	1.220	3.846	65.445	0.666	–	–	–	1.287	30	Presbytis entellus	J_male		FALSE	122
+Rumble	percent within age-sex	1.220	3.846	65.445	0.666	–	–	–	1.287	30	Presbytis entellus	J_female		FALSE	137
+Rumble	percent within age-sex	1.220	3.846	65.445	0.666	–	–	–	1.287	30	Presbytis entellus	I_both		FALSE	269
+Rumble	percent within age-sex	1.220	3.846	65.445	0.666	–	–	–	1.287	30	Presbytis entellus	Σ	1.287	TRUE	
+Rumble	percent within call	6.643	5.918	86.232	1.208	–	–	–	100	31	Presbytis entellus	A_male	6.643	FALSE	132
+Rumble	percent within call	6.643	5.918	86.232	1.208	–	–	–	100	31	Presbytis entellus	A_female	5.918	FALSE	247
+Rumble	percent within call	6.643	5.918	86.232	1.208	–	–	–	100	31	Presbytis entellus	S_male	86.232	FALSE	121
+Rumble	percent within call	6.643	5.918	86.232	1.208	–	–	–	100	31	Presbytis entellus	S_female	1.208	FALSE	124
+Rumble	percent within call	6.643	5.918	86.232	1.208	–	–	–	100	31	Presbytis entellus	J_male		FALSE	122
+Rumble	percent within call	6.643	5.918	86.232	1.208	–	–	–	100	31	Presbytis entellus	J_female		FALSE	137
+Rumble	percent within call	6.643	5.918	86.232	1.208	–	–	–	100	31	Presbytis entellus	I_both		FALSE	269
+Rumble	percent within call	6.643	5.918	86.232	1.208	–	–	–	100	31	Presbytis entellus	Σ	100	TRUE	
+Σ total	rate per 10h	450.9	127.4	109.1	150.1	337.6	583.4	4,674.4	6,432.9	32	Presbytis entellus	A_male	450.9	TRUE	132
+Σ total	rate per 10h	450.9	127.4	109.1	150.1	337.6	583.4	4,674.4	6,432.9	32	Presbytis entellus	A_female	127.4	TRUE	247
+Σ total	rate per 10h	450.9	127.4	109.1	150.1	337.6	583.4	4,674.4	6,432.9	32	Presbytis entellus	S_male	109.1	TRUE	121
+Σ total	rate per 10h	450.9	127.4	109.1	150.1	337.6	583.4	4,674.4	6,432.9	32	Presbytis entellus	S_female	150.1	TRUE	124
+Σ total	rate per 10h	450.9	127.4	109.1	150.1	337.6	583.4	4,674.4	6,432.9	32	Presbytis entellus	J_male	337.6	TRUE	122
+Σ total	rate per 10h	450.9	127.4	109.1	150.1	337.6	583.4	4,674.4	6,432.9	32	Presbytis entellus	J_female	583.4	TRUE	137
+Σ total	rate per 10h	450.9	127.4	109.1	150.1	337.6	583.4	4,674.4	6,432.9	32	Presbytis entellus	I_both	4674.4	TRUE	269
+Σ total	rate per 10h	450.9	127.4	109.1	150.1	337.6	583.4	4,674.4	6,432.9	32	Presbytis entellus	Σ	6432.9	TRUE	
+Σ total	percent within age-sex	100	100	100	100	100	100	100	100	33	Presbytis entellus	A_male	100	TRUE	132
+Σ total	percent within age-sex	100	100	100	100	100	100	100	100	33	Presbytis entellus	A_female	100	TRUE	247
+Σ total	percent within age-sex	100	100	100	100	100	100	100	100	33	Presbytis entellus	S_male	100	TRUE	121
+Σ total	percent within age-sex	100	100	100	100	100	100	100	100	33	Presbytis entellus	S_female	100	TRUE	124
+Σ total	percent within age-sex	100	100	100	100	100	100	100	100	33	Presbytis entellus	J_male	100	TRUE	122
+Σ total	percent within age-sex	100	100	100	100	100	100	100	100	33	Presbytis entellus	J_female	100	TRUE	137
+Σ total	percent within age-sex	100	100	100	100	100	100	100	100	33	Presbytis entellus	I_both	100	TRUE	269
+Σ total	percent within age-sex	100	100	100	100	100	100	100	100	33	Presbytis entellus	Σ	100	TRUE	
+Σ total	percent within call	7.009	1.980	1.696	2.333	5.248	9.069	72.664	100	34	Presbytis entellus	A_male	7.009	TRUE	132
+Σ total	percent within call	7.009	1.980	1.696	2.333	5.248	9.069	72.664	100	34	Presbytis entellus	A_female	1.98	TRUE	247
+Σ total	percent within call	7.009	1.980	1.696	2.333	5.248	9.069	72.664	100	34	Presbytis entellus	S_male	1.696	TRUE	121
+Σ total	percent within call	7.009	1.980	1.696	2.333	5.248	9.069	72.664	100	34	Presbytis entellus	S_female	2.333	TRUE	124
+Σ total	percent within call	7.009	1.980	1.696	2.333	5.248	9.069	72.664	100	34	Presbytis entellus	J_male	5.248	TRUE	122
+Σ total	percent within call	7.009	1.980	1.696	2.333	5.248	9.069	72.664	100	34	Presbytis entellus	J_female	9.069	TRUE	137
+Σ total	percent within call	7.009	1.980	1.696	2.333	5.248	9.069	72.664	100	34	Presbytis entellus	I_both	72.664	TRUE	269
+Σ total	percent within call	7.009	1.980	1.696	2.333	5.248	9.069	72.664	100	34	Presbytis entellus	Σ	100	TRUE	

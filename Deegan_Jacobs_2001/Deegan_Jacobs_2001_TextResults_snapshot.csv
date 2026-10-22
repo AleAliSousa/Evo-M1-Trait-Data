@@ -1,0 +1,11 @@
+Taxon,Taxon scope,Trait,Value,SD,N,N basis,Unit,Statistic,Data role,Source location,Interpretation
+Hylobates lar,species,Chromatic adaptation difference,0.073,,1,"individual, sex not linked to this value in prose",log unit,individual,primary,p.27 Results,Two gibbons show differential M/L chromatic adaptation; prose does not assign the two numbers to male/female
+Hylobates lar,species,Chromatic adaptation difference,0.14,,1,"individual, sex not linked to this value in prose",log unit,individual,primary,p.27 Results,Second gibbon; do not infer sex from numeric order
+Hylobates lar,species,Male age,10,,1,male,years,individual,primary,p.27 Materials and Methods,One male studied
+Hylobates lar,species,Female age,14,,1,female,years,individual,primary,p.27 Materials and Methods,One female studied
+Hylobates lar,species,Spectral sensitivity peak,560,,2,animals,nm,approximate,primary,p.27 Results,"About 560 nm; whole spectral response, not a separately isolated cone pigment"
+Hylobates lar,species,Between-animal sensitivity difference,0.073,0.07,16,test wavelengths common to both animals,log unit,mean,primary,p.27 Results,"N is wavelengths, not animals"
+Hylobates lar; Pan troglodytes,cross-species comparison,M pigment template peak,530,,,assumed template,nm,assumed,secondary,p.28 Fig.2 caption,Chimpanzee template assumed for fitting gibbon response; not a new measured gibbon pigment peak
+Hylobates lar; Pan troglodytes,cross-species comparison,L pigment template peak,563,,,assumed template,nm,assumed,secondary,p.28 Fig.2 caption,Chimpanzee template assumed for fitting
+Hylobates lar; Pan troglodytes,cross-species comparison,M template fitting weight,44,,,model mixture,percent,fitted coefficient,both,p.28 Fig.2 caption,Does not estimate proportions of retinal cone cells
+Hylobates lar; Pan troglodytes,cross-species comparison,L template fitting weight,56,,,model mixture,percent,fitted coefficient,both,p.28 Fig.2 caption,Does not estimate proportions of retinal cone cells

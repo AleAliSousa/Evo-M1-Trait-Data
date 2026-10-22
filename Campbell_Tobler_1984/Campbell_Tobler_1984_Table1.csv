@@ -1,0 +1,501 @@
+Class/Species,N,Photoperiod,Total Sleep (Rest) Time/24 hr,Sleep (Rest) Episode Length,Placement: Dark/Night,Placement: Light/Day,Measurement: B,Measurement: E,Reference,Source_row,Species_printed,Class,Group,PDF_page,Printed_page,Y_start,Y_end,Reference_keys,Species,Context_note,Condition_index,Duration_component_printed,Sleep_duration_h,Sleep_duration_low_h,Sleep_duration_high_h,Short_record_flag,Drowsiness_included_flag,Multiple_conditions_flag,Daily_sleep_h,Abstract_only_flag
+"cockroach
+Leucophea maderae",26,12L/12Dim,14 hr,,,++++,,,[191],2,Leucophea maderae,Invertebrates,,16,284,443.6748800000012,475.83488000000125,191,Leucophea maderae,,1,14 hr,14,,,FALSE,FALSE,FALSE,14,FALSE
+"perch
+Perca fluviatilis",10,natural,5-10 hr,,++++,,,,[168],3,Perca fluviatilis,Fish,,16,284,475.83488000000125,493.83488000000125,168,Perca fluviatilis,,1,5-10 hr,,5,10,FALSE,FALSE,FALSE,,FALSE
+"red-eye
+Scardinius erythroph-
+talmus L.",,natural,1-3 hr,,++++,,,,[168],4,"Scardinius erythroph-
+talmus L.",Fish,,16,284,493.83488000000125,516.8748800000012,168,Scardinius erythrophtalmus L.,,1,1-3 hr,,1,3,FALSE,FALSE,FALSE,,FALSE
+"guppy
+Tilapia mossambica",30,15L/9Dim,6.5-7.5 hr,,+,+++,,,[165],5,Tilapia mossambica,Fish,,16,284,516.8748800000012,535.1148800000013,165,Tilapia mossambica,,1,6.5-7.5 hr,,6.5,7.5,FALSE,FALSE,FALSE,,FALSE
+"tench
+Tinca tinca L.",25,12L/12D,14.4 hr,15-20 min,+,+++,,,[134],6,Tinca tinca L.,Fish,,16,284,535.1148800000013,567.0348800000013,134,Tinca tinca L.,,1,14.4 hr,14.4,,,FALSE,FALSE,FALSE,14.4,FALSE
+"bullfrog
+Rana catesbiana",10,natural,0 hr,,,,,,[78],7,Rana catesbiana,Amphibians,,16,284,567.0348800000013,585.0348800000013,78,Rana catesbiana,,1,0 hr,0,,,FALSE,FALSE,FALSE,0,FALSE
+"lake frog
+Rana ridibunda",6,,2.4 hr,,,,,,[ ],8,Rana ridibunda,Amphibians,,16,284,585.0348800000013,604.1624000000013,,Rana ridibunda,,1,2.4 hr,2.4,,,FALSE,FALSE,FALSE,2.4,FALSE
+"western toad
+Bufo boreas",,natural,14.6 hr,25 -+ 15 min,,+++,,,[83],9,Bufo boreas,Amphibians,,16,284,604.1624000000013,620.3148800000013,83,Bufo boreas,,1,14.6 hr,14.6,,,FALSE,FALSE,FALSE,14.6,FALSE
+"smooth newt
+Triturus vulgaris",20,"stimulated
+natural","4.6 hr (water)
+11.0 hr (land)",,,++++,,,[76],10,Triturus vulgaris,Amphibians,,16,284,620.3148800000013,651.5148800000013,76,Triturus vulgaris,,1,4.6 hr,4.6,,,FALSE,FALSE,TRUE,,FALSE
+"smooth newt
+Triturus vulgaris",20,"stimulated
+natural","4.6 hr (water)
+11.0 hr (land)",,,++++,,,[76],10,Triturus vulgaris,Amphibians,,16,284,620.3148800000013,651.5148800000013,76,Triturus vulgaris,,2,11.0 hr,11,,,FALSE,FALSE,TRUE,,FALSE
+"North American
+box turtle
+Terrapene carolina",11,"constant
+illumination",19–21.8 hr,,,,,,[59],11,Terrapene carolina,Reptiles,,16,284,651.5148800000013,708.4348800000012,59,Terrapene carolina,,1,19–21.8 hr,,19,21.8,FALSE,FALSE,FALSE,,FALSE
+"red-footed tortoise
+Geochelone carbonaria",6,"constant
+illumination","11-11.7 hr
+(12-13 hr record)",,,,,,[54],12,Geochelone carbonaria,Reptiles,,17,285,151.76239999999996,170.48239999999998,54,Geochelone carbonaria,,1,11-11.7 hr,,11,11.7,TRUE,FALSE,FALSE,,FALSE
+"European pond turtle
+Emys orbicularis",,,6.9 hr,,,,,,[95],13,Emys orbicularis,Reptiles,,17,285,170.48239999999998,188.48239999999998,95,Emys orbicularis,,1,6.9 hr,6.9,,,FALSE,FALSE,FALSE,6.9,FALSE
+"margined tortoise
+Testudo marginata",,,11.5 hr,,,,,,[75],14,Testudo marginata,Reptiles,,17,285,188.48239999999998,206.7224,75,Testudo marginata,,1,11.5 hr,11.5,,,FALSE,FALSE,FALSE,11.5,FALSE
+"Sea turtle
+Caretta careta L.",3,"constant
+illumination",0 hr,,,,,,[180],15,Caretta careta L.,Reptiles,,17,285,206.7224,224.9624,180,Caretta careta L.,,1,0 hr,0,,,FALSE,FALSE,FALSE,0,FALSE
+"tortoise
+Testudo denticulata",7,12L/12D,0 hr,,,,,,[213],16,Testudo denticulata,Reptiles,,17,285,224.9624,242.7224,213,Testudo denticulata,,1,0 hr,0,,,FALSE,FALSE,FALSE,0,FALSE
+"caiman
+Caiman sclerops",5,12L/12D,3.0 hr,16 min,+++,+,,,[120],17,Caiman sclerops,Reptiles,,17,285,242.7224,260.9624,120,Caiman sclerops,,1,3.0 hr,3,,,FALSE,FALSE,FALSE,3,FALSE
+"caiman
+Caiman latirostris",1,,12.5 hr,,,,,,[135],18,Caiman latirostris,Reptiles,,17,285,260.9624,279.4424,135,Caiman latirostris,,1,12.5 hr,12.5,,,FALSE,FALSE,FALSE,12.5,FALSE
+"alligator
+Alligator
+mississipiensis",7,,0 hr,,,,,,[203],19,"Alligator
+mississipiensis",Reptiles,,17,285,279.4424,306.5624,203,Alligator mississipiensis,,1,0 hr,0,,,FALSE,FALSE,FALSE,0,FALSE
+"black iguana
+Ctenosaura
+pectinata",23,12L/12D,"6-9 hr
+(12 hr record)",,++++,,,,[184],20,"Ctenosaura
+pectinata",Reptiles,,17,285,306.5624,333.92240000000004,184,Ctenosaura pectinata,,1,6-9 hr,,6,9,TRUE,FALSE,FALSE,,FALSE
+"green iguana
+Iguana iguana",3,12L/12Dim,"4.2-7.9 hr
+(12 hr record)",,++++,,,,[53],21,Iguana iguana,Reptiles,,17,285,333.92240000000004,352.16240000000005,53,Iguana iguana,,1,4.2-7.9 hr,,4.2,7.9,TRUE,FALSE,FALSE,,FALSE
+"desert iguana
+Dipsosaurus
+dorsalis",8,12L/12D,16.3-17.8 hr,,,,,,[84],22,"Dipsosaurus
+dorsalis",Reptiles,,17,285,352.16240000000005,379.28240000000005,84,Dipsosaurus dorsalis,,1,16.3-17.8 hr,,16.3,17.8,FALSE,FALSE,FALSE,,FALSE
+"horned lizard
+Phrinosoma regali",13,12L/12D,12.3 hr,,++++,,,,[149],23,Phrinosoma regali,Reptiles,,17,285,379.28240000000005,397.52240000000006,149,Phrinosoma regali,,1,12.3 hr,12.3,,,FALSE,FALSE,FALSE,12.3,FALSE
+"Africian python
+Python sebae",1,,15.6-20.4 hr,,,,,,[134],24,Python sebae,Reptiles,,17,285,397.52240000000006,429.6824000000001,134,Python sebae,,1,15.6-20.4 hr,,15.6,20.4,FALSE,FALSE,FALSE,,FALSE
+"white leghorn chicken
+Gallus domesticus",17,,11.7 hr,,,,,,[95],25,Gallus domesticus,Birds,,17,285,429.6824000000001,447.9224000000001,95,Gallus domesticus,,1,11.7 hr,11.7,,,FALSE,FALSE,FALSE,11.7,FALSE
+"landaise goose
+Anser anser",4,12L/12D,6.2 hr,,++,++,,,[48],26,Anser anser,Birds,,17,285,447.9224000000001,466.1624000000001,48,Anser anser,,1,6.2 hr,6.2,,,FALSE,FALSE,FALSE,6.2,FALSE
+"domestic duck
+Anas platyrhynchos
+domesticus",4,"11L/11D/
+2Dim",10.8 hr,,++,++,,,[225] A,27,"Anas platyrhynchos
+domesticus",Birds,,17,285,466.1624000000001,492.8024000000001,225,Anas platyrhynchos domesticus,,1,10.8 hr,10.8,,,FALSE,FALSE,FALSE,10.8,TRUE
+"hawk
+Buteo jamaicensis
+arborealis",1,,4--5 hr,3-40 min,++++,,,,[148],28,"Buteo jamaicensis
+arborealis",Birds,,17,285,492.8024000000001,519.6824000000001,148,Buteo jamaicensis arborealis,,1,4--5 hr,,4,5,FALSE,FALSE,FALSE,,FALSE
+"falcon
+Herpetotheres cach-
+innans chapmanni",1,,4-5 hr,3--40 min,++++,,,,[148],29,"Herpetotheres cach-
+innans chapmanni",Birds,,17,285,519.6824000000001,546.8024000000001,148,Herpetotheres cachinnans chapmanni,,1,4-5 hr,,4,5,FALSE,FALSE,FALSE,,FALSE
+"emperor penguin
+Aptenodytes forsteri",4,natural,10.7 hr,4.7-5 min,++,++,,,[48],30,Aptenodytes forsteri,Birds,,17,285,546.8024000000001,564.8024000000001,48,Aptenodytes forsteri,,1,10.7 hr,10.7,,,FALSE,FALSE,FALSE,10.7,FALSE
+"little penguin
+Eudyptula minor",5,12L/12Dim,8.3 hr,,+++,+,,,[173],31,Eudyptula minor,Birds,,17,285,564.8024000000001,583.0424000000002,173,Eudyptula minor,,1,8.3 hr,8.3,,,FALSE,FALSE,FALSE,8.3,FALSE
+"domestic pigeon
+Columba livia",8,12L/12Dim,10.6 hr,7.0 min,+4+,+,,,[207],32,Columba livia,Birds,,17,285,583.0424000000002,600.8024000000001,207,Columba livia,,1,10.6 hr,10.6,,,FALSE,FALSE,FALSE,10.6,FALSE
+"ring-necked dove
+Streptopelia
+capicola",,12L/12D,10.2 hr,,++++,,,,[214] A,33,"Streptopelia
+capicola",Birds,,17,285,600.8024000000001,627.6824000000001,214,Streptopelia capicola,,1,10.2 hr,10.2,,,FALSE,FALSE,FALSE,10.2,TRUE
+"parakeet
+Aratinga canicularis",,"constant
+illumination",9.4 hr,,,,,,[209],34,Aratinga canicularis,Birds,,17,285,627.6824000000001,645.6824000000001,209,Aratinga canicularis,,1,9.4 hr,9.4,,,FALSE,FALSE,FALSE,9.4,FALSE
+"burrowing owl
+Speotyto cunicularis
+hypugaea",4,12L/12D,14.3 hr,,++,++,*,*,[25],35,"Speotyto cunicularis
+hypugaea",Birds,,17,285,645.6824000000001,712.2024000000001,25,Speotyto cunicularis hypugaea,,1,14.3 hr,14.3,,,FALSE,FALSE,FALSE,14.3,FALSE
+Strix aluco,2,12L/12D,16.0 hr,,++,++,*,*,[181],36,Strix aluco,Birds,,17,285,672,684,181,Strix aluco,,1,16.0 hr,16,,,FALSE,FALSE,FALSE,16,FALSE
+"polar white owl
+Nyctea scandiaca",,,7.9 hr,,,,,*,[95],37,Nyctea scandiaca,Birds,,18,286,150.93823999999984,169.17823999999985,95,Nyctea scandiaca,,1,7.9 hr,7.9,,,FALSE,FALSE,FALSE,7.9,FALSE
+"starling
+Sturnus vulgaris",6,"natural/
+12L/12D","4.7-4.9 hr
+(12 hr record)",,++++,,,*,[195],38,Sturnus vulgaris,Birds,,18,286,169.17823999999985,187.65823999999986,195,Sturnus vulgaris,,1,4.7-4.9 hr,,4.7,4.9,TRUE,FALSE,FALSE,,FALSE
+"chaffinch
+Fringilla coelebs",5,"natural/
+12L/12D","7.0 hr
+(12 hr record)",,+ + ++,,,*,[196],39,Fringilla coelebs,Birds,,18,286,187.65823999999986,217.41823999999986,196,Fringilla coelebs,,1,7.0 hr,7,,,TRUE,FALSE,FALSE,,FALSE
+"hoary redpoll
+Acanthis hornemanni",,"constant
+illumination",3.4 hr,,++++,,*,,,40,Acanthis hornemanni,Birds,,18,286,217.41823999999986,249.81823999999983,Amlaner and Ball (1983),Acanthis hornemanni,31-species bird block explicitly attributed to Amlaner and Ball (1983).,1,3.4 hr,3.4,,,FALSE,FALSE,FALSE,3.4,FALSE
+"pintail
+Anas acuta",,10.4L/13.6D,8.1 hr,,,++++,,,,41,Anas acuta,Birds,,18,286,249.81823999999983,268.05823999999984,Amlaner and Ball (1983),Anas acuta,31-species bird block explicitly attributed to Amlaner and Ball (1983).,1,8.1 hr,8.1,,,FALSE,FALSE,FALSE,8.1,FALSE
+"green-winged teal
+Anas crecca caro-
+linensis",,10.4L/13.6D,8.0 hr,,,++++,,,,42,"Anas crecca caro-
+linensis",Birds,,18,286,268.05823999999984,294.93823999999984,Amlaner and Ball (1983),Anas crecca carolinensis,31-species bird block explicitly attributed to Amlaner and Ball (1983).,1,8.0 hr,8,,,FALSE,FALSE,FALSE,8,FALSE
+"green-winged teal
+Anas crecca crecca",,8.9L/15.1D,8.2 hr,,,++++,,,,43,Anas crecca crecca,Birds,,18,286,294.93823999999984,312.93823999999984,Amlaner and Ball (1983),Anas crecca crecca,31-species bird block explicitly attributed to Amlaner and Ball (1983).,1,8.2 hr,8.2,,,FALSE,FALSE,FALSE,8.2,FALSE
+"black duck
+Anas rubripes",,15.6L/8.4D,6.9 hr,,++,++,,,,44,Anas rubripes,Birds,,18,286,312.93823999999984,330.6982399999998,Amlaner and Ball (1983),Anas rubripes,31-species bird block explicitly attributed to Amlaner and Ball (1983).,1,6.9 hr,6.9,,,FALSE,FALSE,FALSE,6.9,FALSE
+"common swift
+Apus apus",,13.5L/10.5D,10.6 hr,,++++,,,,,45,Apus apus,Birds,,18,286,330.6982399999998,348.93823999999984,Amlaner and Ball (1983),Apus apus,31-species bird block explicitly attributed to Amlaner and Ball (1983).,1,10.6 hr,10.6,,,FALSE,FALSE,FALSE,10.6,FALSE
+"European pochard
+Aythia ferina",,15.5L/8.5D,12.8 hr,,++,++,,,,46,Aythia ferina,Birds,,18,286,348.93823999999984,366.93823999999984,Amlaner and Ball (1983),Aythia ferina,31-species bird block explicitly attributed to Amlaner and Ball (1983).,1,12.8 hr,12.8,,,FALSE,FALSE,FALSE,12.8,FALSE
+"tufted duck
+Aythia fuligula",,13.7L/10.3D,13.2 hr,,++++,,,,,47,Aythia fuligula,Birds,,18,286,366.93823999999984,385.41823999999986,Amlaner and Ball (1983),Aythia fuligula,31-species bird block explicitly attributed to Amlaner and Ball (1983).,1,13.2 hr,13.2,,,FALSE,FALSE,FALSE,13.2,FALSE
+"European golden-eye
+Bucephala clangula",,10.8L/13.2D,6.4 hr,,++++,,,,,48,Bucephala clangula,Birds,,18,286,385.41823999999986,403.65823999999986,Amlaner and Ball (1983),Bucephala clangula,31-species bird block explicitly attributed to Amlaner and Ball (1983).,1,6.4 hr,6.4,,,FALSE,FALSE,FALSE,6.4,FALSE
+"purple sandpiper
+Calidris m. mari-
+tima",,"constant
+illumination",3.5 hr,,,+ + + +,,,,49,"Calidris m. mari-
+tima",Birds,,18,286,403.65823999999986,430.77823999999987,Amlaner and Ball (1983),Calidris m. maritima,31-species bird block explicitly attributed to Amlaner and Ball (1983).,1,3.5 hr,3.5,,,FALSE,FALSE,FALSE,3.5,FALSE
+"semipalmated
+sandpiper
+Calidris pusilla",,"constant
+illumination",2.7 hr,,+ + + +,,,,,50,Calidris pusilla,Birds,,18,286,430.77823999999987,457.41823999999986,Amlaner and Ball (1983),Calidris pusilla,31-species bird block explicitly attributed to Amlaner and Ball (1983).,1,2.7 hr,2.7,,,FALSE,FALSE,FALSE,2.7,FALSE
+"Anna's humming-
+bird
+Calypte anna",,11L/13D,11.1 hr,,++++,,,,,51,Calypte anna,Birds,,18,286,457.41823999999986,484.53823999999986,Amlaner and Ball (1983),Calypte anna,31-species bird block explicitly attributed to Amlaner and Ball (1983).,1,11.1 hr,11.1,,,FALSE,FALSE,FALSE,11.1,FALSE
+"grey-cheeked
+thrush
+Catharus minimus",,"constant
+illumination",3.3 hr,,+ + + +,,,,,52,Catharus minimus,Birds,,18,286,484.53823999999986,511.65823999999986,Amlaner and Ball (1983),Catharus minimus,31-species bird block explicitly attributed to Amlaner and Ball (1983).,1,3.3 hr,3.3,,,FALSE,FALSE,FALSE,3.3,FALSE
+"trumpeter swan
+Cygnus c. buccinator",,14.9L/9.1D,5.7 hr,,+++,+,,,,53,Cygnus c. buccinator,Birds,,18,286,511.65823999999986,529.8982399999999,Amlaner and Ball (1983),Cygnus c. buccinator,31-species bird block explicitly attributed to Amlaner and Ball (1983).,1,5.7 hr,5.7,,,FALSE,FALSE,FALSE,5.7,FALSE
+"whooper swan
+Cygnus c. cygnus",,18.3L/5.7D,12.0 hr,,"+ """,+++,,,,54,Cygnus c. cygnus,Birds,,18,286,529.8982399999999,547.8982399999999,Amlaner and Ball (1983),Cygnus c. cygnus,31-species bird block explicitly attributed to Amlaner and Ball (1983).,1,12.0 hr,12,,,FALSE,FALSE,FALSE,12,FALSE
+"house martin
+Delichon urbica",,"constant
+illumination",3.3 hr,,+ + + +,,,,,55,Delichon urbica,Birds,,18,286,547.8982399999999,565.6582399999999,Amlaner and Ball (1983),Delichon urbica,31-species bird block explicitly attributed to Amlaner and Ball (1983).,1,3.3 hr,3.3,,,FALSE,FALSE,FALSE,3.3,FALSE
+"herring gull
+Larus argentatus",,15.9L/8.1D,5.0 hr,,+++,+,,,,56,Larus argentatus,Birds,,18,286,565.6582399999999,583.8982399999999,Amlaner and Ball (1983),Larus argentatus,31-species bird block explicitly attributed to Amlaner and Ball (1983).,1,5.0 hr,5,,,FALSE,FALSE,FALSE,5,FALSE
+"wild turkey
+Meleagris gallapavo",,11.8L/12.2D,3.9 hr,,++++,,,,,57,Meleagris gallapavo,Birds,,18,286,583.8982399999999,602.1382399999999,Amlaner and Ball (1983),Meleagris gallapavo,31-species bird block explicitly attributed to Amlaner and Ball (1983).,1,3.9 hr,3.9,,,FALSE,FALSE,FALSE,3.9,FALSE
+"smew
+Mergus albellus",,11.7L/12.3D,13.4 hr,,++++,,,,,58,Mergus albellus,Birds,,18,286,602.1382399999999,619.1782399999998,Amlaner and Ball (1983),Mergus albellus,31-species bird block explicitly attributed to Amlaner and Ball (1983).,1,13.4 hr,13.4,,,FALSE,FALSE,FALSE,13.4,FALSE
+"wheatear
+Oenanthe oenanthe",,"constant
+illumination",4.8 hr,,+ + + +,,,,,59,Oenanthe oenanthe,Birds,,18,286,619.1782399999998,636.2182399999998,Amlaner and Ball (1983),Oenanthe oenanthe,31-species bird block explicitly attributed to Amlaner and Ball (1983).,1,4.8 hr,4.8,,,FALSE,FALSE,FALSE,4.8,FALSE
+"great tit
+Parus m. major",,15.6L/8.4D,8.0 hr,,++++,,,,,60,Parus m. major,Birds,,18,286,636.2182399999998,653.9782399999998,Amlaner and Ball (1983),Parus m. major,31-species bird block explicitly attributed to Amlaner and Ball (1983).,1,8.0 hr,8,,,FALSE,FALSE,FALSE,8,FALSE
+"chestnut-backed
+chickadee
+Parus rufescens",,11.8L/12.2D,11.7 hr,,++++,,,,,61,Parus rufescens,Birds,,18,286,653.9782399999998,709.6982399999999,Amlaner and Ball (1983),Parus rufescens,31-species bird block explicitly attributed to Amlaner and Ball (1983).,1,11.7 hr,11.7,,,FALSE,FALSE,FALSE,11.7,FALSE
+"red phalarope
+Phalaropus fuli-
+carius",,"constant
+illumination",3.1 hr,,+ + + +,,,,,62,"Phalaropus fuli-
+carius",Birds,,19,287,150.45823999999993,178.29823999999996,Amlaner and Ball (1983),Phalaropus fulicarius,31-species bird block explicitly attributed to Amlaner and Ball (1983).,1,3.1 hr,3.1,,,FALSE,FALSE,FALSE,3.1,FALSE
+"snow bunting
+Plectrophenax nivalis",,"constant
+illumination",4.6 hr,,+ + + +,,,,,63,Plectrophenax nivalis,Birds,,19,287,178.29823999999996,196.53823999999997,Amlaner and Ball (1983),Plectrophenax nivalis,31-species bird block explicitly attributed to Amlaner and Ball (1983).,1,4.6 hr,4.6,,,FALSE,FALSE,FALSE,4.6,FALSE
+"kittiwake
+Rissa tridactyla",,"constant
+illumination",6.3 hr,,+ + + +,,,,,64,Rissa tridactyla,Birds,,19,287,196.53823999999997,214.77823999999998,Amlaner and Ball (1983),Rissa tridactyla,31-species bird block explicitly attributed to Amlaner and Ball (1983).,1,6.3 hr,6.3,,,FALSE,FALSE,FALSE,6.3,FALSE
+"common eider
+Somateria mollissima",,"constant
+illumination",4.3 hr,,,++++,,,,65,Somateria mollissima,Birds,,19,287,214.77823999999998,232.77823999999998,Amlaner and Ball (1983),Somateria mollissima,31-species bird block explicitly attributed to Amlaner and Ball (1983).,1,4.3 hr,4.3,,,FALSE,FALSE,FALSE,4.3,FALSE
+"Galapagos penguin
+Spheniscus mendiculus",,12L/12D,12.8 hr,,+ + + +,,,,,66,Spheniscus mendiculus,Birds,,19,287,232.77823999999998,251.25824,Amlaner and Ball (1983),Spheniscus mendiculus,31-species bird block explicitly attributed to Amlaner and Ball (1983).,1,12.8 hr,12.8,,,FALSE,FALSE,FALSE,12.8,FALSE
+"Arctic tern
+Sterna paradisaea",,"constant
+illumination",3.5 hr,,,++++,,,,67,Sterna paradisaea,Birds,,19,287,251.25824,269.01824,Amlaner and Ball (1983),Sterna paradisaea,31-species bird block explicitly attributed to Amlaner and Ball (1983).,1,3.5 hr,3.5,,,FALSE,FALSE,FALSE,3.5,FALSE
+"barred owl
+Strix varia",,14.1L/9.9D,3.9 hr,,,++++,,,,68,Strix varia,Birds,,19,287,269.01824,287.01824,Amlaner and Ball (1983),Strix varia,31-species bird block explicitly attributed to Amlaner and Ball (1983).,1,3.9 hr,3.9,,,FALSE,FALSE,FALSE,3.9,FALSE
+"Bewick wren
+Thryomanes bewickii",,11.9L/12.1D,11.3 hr,,+ + + +,,,,,69,Thryomanes bewickii,Birds,,19,287,287.01824,305.49824,Amlaner and Ball (1983),Thryomanes bewickii,31-species bird block explicitly attributed to Amlaner and Ball (1983).,1,11.3 hr,11.3,,,FALSE,FALSE,FALSE,11.3,FALSE
+"American robin
+Turdus migratorius",,"constant
+illumination",3.7 hr,,+ + + +,,,,,70,Turdus migratorius,Birds,,19,287,305.49824,346.29824,Amlaner and Ball (1983),Turdus migratorius,31-species bird block explicitly attributed to Amlaner and Ball (1983).,1,3.7 hr,3.7,,,FALSE,FALSE,FALSE,3.7,FALSE
+"echidna
+Tachyglossus
+aculeatus",5,,8.6 hr,27 min,+,+++,,,[9],71,"Tachyglossus
+aculeatus",Mammals,Montremes,19,287,346.29824,382.53824000000003,9,Tachyglossus aculeatus,,1,8.6 hr,8.6,,,FALSE,FALSE,FALSE,8.6,FALSE
+"North American
+opossum
+Didelphis
+marsupialis",5,"constant
+illumination",19.4 hr,1-4 hr,+,+++,,,[205],72,"Didelphis
+marsupialis",Mammals,Marsupials,19,287,382.53824000000003,418.77824000000004,205,Didelphis marsupialis,,1,19.4 hr,19.4,,,FALSE,FALSE,FALSE,19.4,FALSE
+"little water opossum
+Lutreolina crassi-
+caudata",20,,19.4 hr,,,,,,[2],73,"Lutreolina crassi-
+caudata",Mammals,Marsupials,19,287,418.77824000000004,445.65824000000003,2,Lutreolina crassicaudata,,1,19.4 hr,19.4,,,FALSE,FALSE,FALSE,19.4,FALSE
+"phalanger
+Trichosurus
+vulpecula",3,,13.7 hr,,,,,,[112],74,"Trichosurus
+vulpecula",Mammals,Marsupials,19,287,445.65824000000003,472.77824000000004,112,Trichosurus vulpecula,,1,13.7 hr,13.7,,,FALSE,FALSE,FALSE,13.7,FALSE
+"Red kangaroo
+Megaleia rufa",5,natural,"0.78–2.1 hr
+(5.5 hr record)",,,,,,[42],75,Megaleia rufa,Mammals,Marsupials,19,287,472.77824000000004,490.53824000000003,42,Megaleia rufa,,1,0.78–2.1 hr,,0.78,2.1,TRUE,FALSE,FALSE,,FALSE
+"kangaroo rat
+Potorous apicalis",4,12L/12D,11.6 hr,,+,+++,,,[17],76,Potorous apicalis,Mammals,Marsupials,19,287,490.53824000000003,517.89824,17,Potorous apicalis,,1,11.6 hr,11.6,,,FALSE,FALSE,FALSE,11.6,FALSE
+"European hedgehog
+Erinaceus europaeus",9,,10.1 hr,17 -+ 3.7 min,+,+++,,,[193],77,Erinaceus europaeus,Mammals,Insectivores,19,287,517.89824,535.89824,193,Erinaceus europaeus,,1,10.1 hr,10.1,,,FALSE,FALSE,FALSE,10.1,FALSE
+"Desert hedgehog
+Paraechinus hypomelas",,,10.3 hr,,+,+++,,,[184] A,78,Paraechinus hypomelas,Mammals,Insectivores,19,287,535.89824,554.37824,184,Paraechinus hypomelas,,1,10.3 hr,10.3,,,FALSE,FALSE,FALSE,10.3,TRUE
+"Eastern mole
+Scalopus aquaticus",6,"constant
+illumination",8.4 hr,1-3 hr,,,,,,79,Scalopus aquaticus,Mammals,Insectivores,19,287,554.37824,571.89824,8,Scalopus aquaticus,Reference [8] spans the Scalopus and Condylura rows.,1,8.4 hr,8.4,,,FALSE,FALSE,FALSE,8.4,FALSE
+"star-nosed mole
+Condylura cristata",1,"constant
+illumination",10.3 hr,1-3 hr,,,,,[8],80,Condylura cristata,Mammals,Insectivores,19,287,571.89824,589.65824,8,Condylura cristata,,1,10.3 hr,10.3,,,FALSE,FALSE,FALSE,10.3,FALSE
+"European mole
+Talpa europaea",8,natural,10.5 hr,2.2-4.7 hr,,,,,[67],81,Talpa europaea,Mammals,Insectivores,19,287,589.65824,607.41824,67,Talpa europaea,,1,10.5 hr,10.5,,,FALSE,FALSE,FALSE,10.5,FALSE
+"tree shrew
+Tupaia glis",6,12L/12D,8.9 hr,,+++,,,,[26],82,Tupaia glis,Mammals,Insectivores,19,287,607.41824,625.65824,26,Tupaia glis,,1,8.9 hr,8.9,,,FALSE,FALSE,FALSE,8.9,FALSE
+"lesser short-
+tailed shrew
+Cryptotis parva",3,"constant illu-
+mination or
+12W/12R",9.1 hr,,+,+++,,,[6],83,Cryptotis parva,Mammals,Insectivores,19,287,625.65824,652.77824,6,Cryptotis parva,,1,9.1 hr,9.1,,,FALSE,FALSE,FALSE,9.1,FALSE
+"greater short-
+tailed shrew
+Blarina brevicauda",1,"constant
+illumination",14.9 hr,,,,,,[6],84,Blarina brevicauda,Mammals,Insectivores,19,287,652.77824,710.6582400000001,6,Blarina brevicauda,,1,14.9 hr,14.9,,,FALSE,FALSE,FALSE,14.9,FALSE
+"musk shrew
+Suncus murinus",7,"constant
+low-level
+illumination",12.8 hr,,++,++,*,*,[6],85,Suncus murinus,Mammals,Insectivores,20,288,151.9503199999997,179.3103199999997,6,Suncus murinus,,1,12.8 hr,12.8,,,FALSE,FALSE,FALSE,12.8,FALSE
+"common shrew
+Sorex araneus",4,12L/12D,7.8 hr,12-36 min,+,+++,,,[44],86,Sorex araneus,Mammals,Insectivores,20,288,179.3103199999997,197.79031999999972,44,Sorex araneus,,1,7.8 hr,7.8,,,FALSE,FALSE,FALSE,7.8,FALSE
+"pygmy shrew
+Sorex minutus",2,12L/12D,8.5 hr,,+,+++,,,[44],87,Sorex minutus,Mammals,Insectivores,20,288,197.79031999999972,215.79031999999972,44,Sorex minutus,,1,8.5 hr,8.5,,,FALSE,FALSE,FALSE,8.5,FALSE
+"water shrew
+Neomys fodiens",1,12L/12D,13.6 hr,,++,++,,,[44],88,Neomys fodiens,Mammals,Insectivores,20,288,215.79031999999972,233.79031999999972,44,Neomys fodiens,,1,13.6 hr,13.6,,,FALSE,FALSE,FALSE,13.6,FALSE
+"tenrec
+Centetes ecaudatus",,12L/12D,"15.6 hr
+(drowsiness
+included)",,,,,,[170] A,89,Centetes ecaudatus,Mammals,Insectivores,20,288,233.79031999999972,269.7903199999997,170,Centetes ecaudatus,,1,15.6 hr,15.6,,,FALSE,TRUE,FALSE,,TRUE
+"little brown bat
+Myotis lucifugus",,,19.9 hr,,,,,,[41] A,90,Myotis lucifugus,Mammals,Chiroptera,20,288,269.7903199999997,288.0303199999997,41,Myotis lucifugus,,1,19.9 hr,19.9,,,FALSE,FALSE,FALSE,19.9,TRUE
+"big brown bat
+Eptesicus fuscus",,,19.5 hr,,,,,,[224],91,Eptesicus fuscus,Mammals,Chiroptera,20,288,288.0303199999997,321.87031999999965,224,Eptesicus fuscus,,1,19.5 hr,19.5,,,FALSE,FALSE,FALSE,19.5,FALSE
+"slow loris
+Nycticebus coucang",6,"natural and
+dim red",11.0 hr,,,++++,,,[188],92,Nycticebus coucang,Mammals,Primates,20,288,321.87031999999965,340.11031999999966,188,Nycticebus coucang,,1,11.0 hr,11,,,FALSE,FALSE,FALSE,11,FALSE
+"bushbaby
+Galago senegalensis",15,,"7.8 hr
+(8 hr record)",,++++,,,,[30],93,Galago senegalensis,Mammals,Primates,20,288,340.11031999999966,358.35031999999967,30,Galago senegalensis,,1,7.8 hr,7.8,,,TRUE,FALSE,FALSE,,FALSE
+"lemur
+Lemur macaco fulvus",1,,9.4 hr,3.3 hr,,,,,[211],94,Lemur macaco fulvus,Mammals,Primates,20,288,358.35031999999967,376.11031999999966,211,Lemur macaco fulvus,,1,9.4 hr,9.4,,,FALSE,FALSE,FALSE,9.4,FALSE
+"lemur
+Phaner furcifer",,natural,11-12 hr,,,++++,,,[130],95,Phaner furcifer,Mammals,Primates,20,288,376.11031999999966,394.11031999999966,130,Phaner furcifer,,1,11-12 hr,,11,12,FALSE,FALSE,FALSE,,FALSE
+"owl monkey
+Aotus trivirgatus",3,12L/12D,17 hr,,+,+++,,,[133],96,Aotus trivirgatus,Mammals,Primates,20,288,394.11031999999966,412.11031999999966,133,Aotus trivirgatus,,1,17 hr,17,,,FALSE,FALSE,FALSE,17,FALSE
+"squirrel monkey
+Saimiri sciureus",3,12L/12D,"9.9 hr
+(12 hr record)",,++++,,,,[1],97,Saimiri sciureus,Mammals,Primates,20,288,412.11031999999966,429.87031999999965,1,Saimiri sciureus,,1,9.9 hr,9.9,,,TRUE,FALSE,FALSE,,FALSE
+"vervet
+Cercopithecus aethiops
+sabaeus",4,12L/12D,"10.3 hr
+(13.5 hr record)",,++++,,,,[32],98,"Cercopithecus aethiops
+sabaeus",Mammals,Primates,20,288,429.87031999999965,457.4703199999997,32,Cercopithecus aethiops sabaeus,,1,10.3 hr,10.3,,,TRUE,FALSE,FALSE,,FALSE
+"patas monkey
+Erythrocebus patas",4,12L/12D,"10.8 hr
+(13.5 hr record)",,++++,,,,[32],99,Erythrocebus patas,Mammals,Primates,20,288,457.4703199999997,475.4703199999997,32,Erythrocebus patas,,1,10.8 hr,10.8,,,TRUE,FALSE,FALSE,,FALSE
+"rhesus monkey
+Macaca mulatta",34,12L/12D,11.8 hr,,+++,,,,[45],100,Macaca mulatta,Mammals,Primates,20,288,475.4703199999997,493.7103199999997,45,Macaca mulatta,,1,11.8 hr,11.8,,,FALSE,FALSE,FALSE,11.8,FALSE
+"pigtail macaque monkey
+Macaca nemestrina",6,,"7.8 hr
+(14.5 hr record)",,++++,,,,[143],101,Macaca nemestrina,Mammals,Primates,20,288,493.7103199999997,511.4703199999997,143,Macaca nemestrina,,1,7.8 hr,7.8,,,TRUE,FALSE,FALSE,,FALSE
+"bonnet monkey
+Macaca radiata",9,12L/12D,"8.3–10.2 hr
+(10.5–13 hr record)",,++++,,,,[33],102,Macaca radiata,Mammals,Primates,20,288,511.4703199999997,538.3503199999997,33,Macaca radiata,,1,8.3–10.2 hr,,8.3,10.2,TRUE,FALSE,FALSE,,FALSE
+"baboon
+Papio papio","8
+8","12L/12D
+natural","9.4 hr
+(12 hr record)
+8.8 hr (field)",,"++++
+++++",,,,"[29]
+[29]",103,Papio papio,Mammals,Primates,20,288,538.3503199999997,556.3503199999997,29; 29,Papio papio,,1,9.4 hr,9.4,,,TRUE,FALSE,TRUE,,FALSE
+"baboon
+Papio papio","8
+8","12L/12D
+natural","9.4 hr
+(12 hr record)
+8.8 hr (field)",,"++++
+++++",,,,"[29]
+[29]",103,Papio papio,Mammals,Primates,20,288,538.3503199999997,556.3503199999997,29; 29,Papio papio,,2,8.8 hr,8.8,,,TRUE,FALSE,TRUE,,FALSE
+"baboon
+Papio anubis",4,,"9.8 hr
+(12 hr record)",,++++,,,,[19] A,104,Papio anubis,Mammals,Primates,20,288,556.3503199999997,574.1103199999997,19,Papio anubis,,1,9.8 hr,9.8,,,TRUE,FALSE,FALSE,,TRUE
+"baboon
+Papio hamadryas",6,,"9.8 hr
+(12.5 hr record)",,++++,,,,[27],105,Papio hamadryas,Mammals,Primates,20,288,574.1103199999997,592.3503199999997,27,Papio hamadryas,,1,9.8 hr,9.8,,,TRUE,FALSE,FALSE,,FALSE
+"baboon
+Papio cynocephalus",2,16.5L/7.5D,"6.2 hr
+(7.5 hr record)",,++++,,,,[18],106,Papio cynocephalus,Mammals,Primates,20,288,592.3503199999997,610.1103199999997,18,Papio cynocephalus,,1,6.2 hr,6.2,,,TRUE,FALSE,FALSE,,FALSE
+"chimpanzee
+Pan troglodytes",3,"natural +
+dim nocturnal","9.7 hr
+(14 hr record)",,++++,,,,[31],107,Pan troglodytes,Mammals,Primates,20,288,610.1103199999997,641.7903199999996,31,Pan troglodytes,,1,9.7 hr,9.7,,,TRUE,FALSE,FALSE,,FALSE
+"three-toed sloth
+Bradypus infuscatus",10,"natural +
+dim at night",15.8 hr,,--+,++,,,[47],108,Bradypus infuscatus,Mammals,Edentates,20,288,641.7903199999996,659.3103199999997,47,Bradypus infuscatus,,1,15.8 hr,15.8,,,FALSE,FALSE,FALSE,15.8,FALSE
+"two-toed sloth
+Choloepus hoffmanni",6,natural,16.4 hr,,,,,,[179],109,Choloepus hoffmanni,Mammals,Edentates,20,288,659.3103199999997,709.0303199999998,179,Choloepus hoffmanni,,1,16.4 hr,16.4,,,FALSE,FALSE,FALSE,16.4,FALSE
+"Giant armadillo
+Priodontes giganteus",3,,18.1 hr,,,,,*,[2],110,Priodontes giganteus,Mammals,Edentates,21,289,153.33823999999981,171.81823999999983,2,Priodontes giganteus,,1,18.1 hr,18.1,,,FALSE,FALSE,FALSE,18.1,FALSE
+"Nine-banded armadillo
+Dasypus novemcinctus",13,12L/12D,17.4 hr,,+ +,+ +,,,[207],111,Dasypus novemcinctus,Mammals,Edentates,21,289,171.81823999999983,206.6182399999998,207,Dasypus novemcinctus,,1,17.4 hr,17.4,,,FALSE,FALSE,FALSE,17.4,FALSE
+"rabbit
+Oryctolagus
+cuniculus",2,14L/10D,8.8 hr,,,,,*,[172],112,"Oryctolagus
+cuniculus",Mammals,Lagomorphs,21,289,206.6182399999998,250.53823999999975,172,Oryctolagus cuniculus,,1,8.8 hr,8.8,,,FALSE,FALSE,FALSE,8.8,FALSE
+"mountain beaver
+Aplodontia rufa",,12L/12D,"14.4 hr
+(drowsiness
+inclusive)",,,,,,[170] A,113,Aplodontia rufa,Mammals,Rodents,21,289,250.53823999999975,278.13823999999966,170,Aplodontia rufa,,1,14.4 hr,14.4,,,FALSE,TRUE,FALSE,,TRUE
+"thirteen-lined
+ground squirrel
+Citellus tridecem-
+lineatus",6,12L/12D,13.9 hr,,+ +,+ +,*,*,[204],114,"Citellus tridecem-
+lineatus",Mammals,Rodents,21,289,278.13823999999966,312.9382399999997,204,Citellus tridecemlineatus,,1,13.9 hr,13.9,,,FALSE,FALSE,FALSE,13.9,FALSE
+"Arctic ground
+squirrel
+Citellus undulatus
+parryi",5,"contin-
+ous
+natural
+light","16.6 hr
+(field)",,,,*,,[62],115,"Citellus undulatus
+parryi",Mammals,Rodents,21,289,312.9382399999997,349.65823999999975,62,Citellus undulatus parryi,,1,16.6 hr,16.6,,,FALSE,FALSE,FALSE,16.6,FALSE
+"golden-mantled
+ground squirrel
+Citellus lateralis",6,12L/12D,14.5 hr,,+++,+,,*,[71],116,Citellus lateralis,Mammals,Rodents,21,289,349.65823999999975,376.53823999999975,71,Citellus lateralis,,1,14.5 hr,14.5,,,FALSE,FALSE,FALSE,14.5,FALSE
+"Eastern chipmunk
+Tamias striatus",12,14L/10Dimred,16.3 hr,,+ + +,+,*,,[49],117,Tamias striatus,Mammals,Rodents,21,289,376.53823999999975,394.53823999999975,49,Tamias striatus,,1,16.3 hr,16.3,,,FALSE,FALSE,FALSE,16.3,FALSE
+"cliff chipmunk
+Eutamias dorsalis",12,14L/10Dimred,14.9 hr,,+++,+,*,,[49],118,Eutamias dorsalis,Mammals,Rodents,21,289,394.53823999999975,412.53823999999975,49,Eutamias dorsalis,,1,14.9 hr,14.9,,,FALSE,FALSE,FALSE,14.9,FALSE
+"pocket mouse
+Perognathus longi-
+membris",5,,"6.2–6.9 hr
+(8 hr record)",,++++,,,*,[214] A,119,"Perognathus longi-
+membris",Mammals,Rodents,21,289,412.53823999999975,439.65823999999975,214,Perognathus longimembris,,1,6.2–6.9 hr,,6.2,6.9,TRUE,FALSE,FALSE,,TRUE
+"cactus mouse
+Peromyscus erimicus",12,16L/8Dim,10.9 hr,,,+ + + +,*,,[22],120,Peromyscus erimicus,Mammals,Rodents,21,289,439.65823999999975,457.89823999999976,22,Peromyscus erimicus,,1,10.9 hr,10.9,,,FALSE,FALSE,FALSE,10.9,FALSE
+"cotton mouse
+P. gossypinus",12,16L/8Dim,7.8 hr,,,+ + + +,*,,[22],121,P. gossypinus,Mammals,Rodents,21,289,457.89823999999976,475.65823999999975,22,Peromyscus gossypinus,,1,7.8 hr,7.8,,,FALSE,FALSE,FALSE,7.8,FALSE
+"white-footed mouse
+P. leucopus",12,16L/8Dim,7.8 hr,,,++++,*,,[22],122,P. leucopus,Mammals,Rodents,21,289,475.65823999999975,493.89823999999976,22,Peromyscus leucopus,,1,7.8 hr,7.8,,,FALSE,FALSE,FALSE,7.8,FALSE
+"deer mouse
+P. maniculatus
+bairdi",12,16L/8Dim,12.9 hr,,,++++,*,,[22],123,"P. maniculatus
+bairdi",Mammals,Rodents,21,289,493.89823999999976,520.7782399999998,22,Peromyscus maniculatus bairdi,,1,12.9 hr,12.9,,,FALSE,FALSE,FALSE,12.9,FALSE
+"old field mouse
+P. polionotus",12,16L/8Dim,13.1 hr,,,++++,*,,[22],124,P. polionotus,Mammals,Rodents,21,289,520.7782399999998,538.7782399999998,22,Peromyscus polionotus,,1,13.1 hr,13.1,,,FALSE,FALSE,FALSE,13.1,FALSE
+"Northern grass-
+hopper mouse
+Onychomys leuco-
+gaster",12,16L/8Dim,14.5 hr,,,++++,*,,[22],125,"Onychomys leuco-
+gaster",Mammals,Rodents,21,289,538.7782399999998,572.1382399999998,22,Onychomys leucogaster,,1,14.5 hr,14.5,,,FALSE,FALSE,FALSE,14.5,FALSE
+"-gray-tailed vole
+Microtus canicaudus",12,16L/8Dim,10.8 hr,,++,++,*,,[22],126,Microtus canicaudus,Mammals,Rodents,21,289,572.1382399999998,589.8982399999998,22,Microtus canicaudus,,1,10.8 hr,10.8,,,FALSE,FALSE,FALSE,10.8,FALSE
+"mountain vole
+M. montanus",12,16L/8 Dim,11.4 hr,,+ +,+ +,*,,[22],127,M. montanus,Mammals,Rodents,21,289,589.8982399999998,607.8982399999998,22,Microtus montanus,,1,11.4 hr,11.4,,,FALSE,FALSE,FALSE,11.4,FALSE
+"prairie vole
+Microtus ochrogaster",12,16L/8Dim,15.9 hr,,+ +,+ +,*,,[22],128,Microtus ochrogaster,Mammals,Rodents,21,289,607.8982399999998,625.8982399999998,22,Microtus ochrogaster,,1,15.9 hr,15.9,,,FALSE,FALSE,FALSE,15.9,FALSE
+"meadow vole
+M. pennsylvanicus",12,16L/8Dim,13.7 hr,,+ +,+ +,*,,[22],129,M. pennsylvanicus,Mammals,Rodents,21,289,625.8982399999998,644.1382399999998,22,Microtus pennsylvanicus,,1,13.7 hr,13.7,,,FALSE,FALSE,FALSE,13.7,FALSE
+"launcha de campo
+Calomys callosus",12,16L/8Dim,7.0 hr,,,++++,*,,[22],130,Calomys callosus,Mammals,Rodents,21,289,644.1382399999998,661.6582399999998,22,Calomys callosus,,1,7.0 hr,7,,,FALSE,FALSE,FALSE,7,FALSE
+"round-tailed muskrat
+Neofiber affeni",9,16L/8Dim,14.6 hr,,+ +,+ +,*,,[22],131,Neofiber affeni,Mammals,Rodents,21,289,661.6582399999998,712.0982399999998,22,Neofiber affeni,,1,14.6 hr,14.6,,,FALSE,FALSE,FALSE,14.6,FALSE
+"golden hamster
+Mesocricetus auratus",6,12L/12D,14.4 hr,11.4 min,+,+++,,*,[202],132,Mesocricetus auratus,Mammals,Rodents,22,290,151.4703199999998,170.43031999999982,202,Mesocricetus auratus,,1,14.4 hr,14.4,,,FALSE,FALSE,FALSE,14.4,FALSE
+"cotton rat
+Sigmodon hispidus",3,12L/12D,11.3 hr,14.5 min,,,,*,[99] A,133,Sigmodon hispidus,Mammals,Rodents,22,290,170.43031999999982,188.43031999999982,99,Sigmodon hispidus,,1,11.3 hr,11.3,,,FALSE,FALSE,FALSE,11.3,TRUE
+"Mongolian gerbil
+Merionis unguiculatus",8,12L/12D,15.3 hr,,++,++,,*,[98] A,134,Merionis unguiculatus,Mammals,Rodents,22,290,188.43031999999982,206.43031999999982,98,Merionis unguiculatus,,1,15.3 hr,15.3,,,FALSE,FALSE,FALSE,15.3,TRUE
+"laboratory rat
+(Long Evans)
+Rattus norvegicus",6,12L/12D,13.2 hr,6.5 min,+,+++,,*,[202],135,Rattus norvegicus,Mammals,Rodents,22,290,206.43031999999982,233.79031999999984,202,Rattus norvegicus,,1,13.2 hr,13.2,,,FALSE,FALSE,FALSE,13.2,FALSE
+"laboratory rat
+(Sprague-Dawley)
+Rattus norvegicus",7,12L/12D,13.7 hr,13.1 min,+,+++,,*,[122],136,Rattus norvegicus,Mammals,Rodents,22,290,233.79031999999984,260.91031999999984,122,Rattus norvegicus,,1,13.7 hr,13.7,,,FALSE,FALSE,FALSE,13.7,FALSE
+"laboratory rat (Gunn)
+Rattus norvegicus",18,12L/12D,13.2 hr,,,,,*,[100] A,137,Rattus norvegicus,Mammals,Rodents,22,290,260.91031999999984,279.1503199999998,100,Rattus norvegicus,,1,13.2 hr,13.2,,,FALSE,FALSE,FALSE,13.2,TRUE
+"African striped
+mouse
+Rhabdomys prinulus",12,16L/8Dim,8.5 hr,,,,,,[22],138,Rhabdomys prinulus,Mammals,Rodents,22,290,279.1503199999998,306.2703199999998,22,Rhabdomys prinulus,,1,8.5 hr,8.5,,,FALSE,FALSE,FALSE,8.5,FALSE
+"laboratory mouse
+Mus musculus",90,12L/12D,12.8 hr,,,,,*,[200],139,Mus musculus,Mammals,Rodents,22,290,306.2703199999998,324.2703199999998,200,Mus musculus,,1,12.8 hr,12.8,,,FALSE,FALSE,FALSE,12.8,FALSE
+"guinea pig
+Cavia porcellus",4,,12.6 hr,,,,,*,[89],140,Cavia porcellus,Mammals,Rodents,22,290,324.2703199999998,342.0303199999998,89,Cavia porcellus,,1,12.6 hr,12.6,,,FALSE,FALSE,FALSE,12.6,FALSE
+"chinchilla
+Chinchilla laniger",6,12L/12D,12.5 hr,6.5 min,+,+++,,*,[202],141,Chinchilla laniger,Mammals,Rodents,22,290,342.0303199999998,360.0303199999998,202,Chinchilla laniger,,1,12.5 hr,12.5,,,FALSE,FALSE,FALSE,12.5,FALSE
+"degu
+Octodon degu",6,12L/12D,"6.9 hr
+(16 hr record)",,+++,+,,*,[121] A,142,Octodon degu,Mammals,Rodents,22,290,360.0303199999998,387.8703199999998,121,Octodon degu,,1,6.9 hr,6.9,,,TRUE,FALSE,FALSE,,TRUE
+"Indus dolphin
+Platanista indi",,,7.0 hr,seconds,,,,,[137],143,Platanista indi,Mammals,Cetaceans,22,290,387.8703199999998,405.3903199999998,137,Platanista indi,,1,7.0 hr,7,,,FALSE,FALSE,FALSE,7,FALSE
+"Dall porpoise
+Phocoenoides dalli",10,,0 hr,,,,,,[117],144,Phocoenoides dalli,Mammals,Cetaceans,22,290,405.3903199999998,423.6303199999998,117,Phocoenoides dalli,,1,0 hr,0,,,FALSE,FALSE,FALSE,0,FALSE
+"bottlenosed dolphin
+Tursiops truncatus",9,,10.4 hr,,,,,,[125],145,Tursiops truncatus,Mammals,Cetaceans,22,290,423.6303199999998,441.3903199999998,125,Tursiops truncatus,,1,10.4 hr,10.4,,,FALSE,FALSE,FALSE,10.4,FALSE
+"Pacific white-sided
+dolphin
+Lagenorhynchus obli-
+quidens",2,"continuous
+illumination","0.4-1.3 hr
+(12-13 hr record)",,,,,,[57] A,146,"Lagenorhynchus obli-
+quidens",Mammals,Cetaceans,22,290,441.3903199999998,477.8703199999998,57,Lagenorhynchus obliquidens,,1,0.4-1.3 hr,,0.4,1.3,TRUE,FALSE,FALSE,,TRUE
+"Beluga whale
+Delphinapterus
+leucas",2,"constant
+illumination","5.2 hr
+(13.5-14 hr
+record)",7 min,++++,,,,[55] A,147,"Delphinapterus
+leucas",Mammals,Cetaceans,22,290,477.8703199999998,504.7503199999998,55,Delphinapterus leucas,,1,5.2 hr,5.2,,,TRUE,FALSE,FALSE,,TRUE
+"killer whale
+Orcinus orca",2,"constant
+illumination","1.3 hr
+(12-13 hr record)",9.6 min,++++,,,,[58] A,148,Orcinus orca,Mammals,Cetaceans,22,290,504.7503199999998,522.7503199999999,58,Orcinus orca,,1,1.3 hr,1.3,,,TRUE,FALSE,FALSE,,TRUE
+"North Pacific
+pilot whale
+Globicephala scammoni",1,,5.3 hr,,+++,,,,[167],149,Globicephala scammoni,Mammals,Cetaceans,22,290,522.7503199999999,563.7903199999998,167,Globicephala scammoni,,1,5.3 hr,5.3,,,FALSE,FALSE,FALSE,5.3,FALSE
+"domestic dog (beagle)
+Canis domesticus",7,"constant
+illumination",12.9 hr,45 min,+++,+,,,[216],150,Canis domesticus,Mammals,Carnivores,22,290,563.7903199999998,581.7903199999998,216,Canis domesticus,,1,12.9 hr,12.9,,,FALSE,FALSE,FALSE,12.9,FALSE
+"domestic dog (pointer)
+Canis domesticus",6,12L/12D,8.4 hr,,+,+++,,,[114],151,Canis domesticus,Mammals,Carnivores,22,290,581.7903199999998,599.7903199999998,114,Canis domesticus,,1,8.4 hr,8.4,,,FALSE,FALSE,FALSE,8.4,FALSE
+"Arctic wolf
+Canis lupus",3,"natural con-
+stant light",13.0 hr,,+,+++,,,[61],152,Canis lupus,Mammals,Carnivores,22,290,599.7903199999998,617.0703199999998,61,Canis lupus,,1,13.0 hr,13,,,FALSE,FALSE,FALSE,13,FALSE
+"Arctic fox
+Alopex lagopus",7,"natural con-
+stant light",12.5 hr,48.5 min,+,+++,,,[61],153,Alopex lagopus,Mammals,Carnivores,22,290,617.0703199999998,634.5903199999998,61,Alopex lagopus,,1,12.5 hr,12.5,,,FALSE,FALSE,FALSE,12.5,FALSE
+"Red fox
+Vulpes vulpes",3,,9.8 hr,78 -+ 14 min,+,+++,,,[46],154,Vulpes vulpes,Mammals,Carnivores,22,290,634.5903199999998,652.5903199999998,46,Vulpes vulpes,,1,9.8 hr,9.8,,,FALSE,FALSE,FALSE,9.8,FALSE
+"domestic cat
+Felis domestica",18,"constant
+illumination
+continuous",13.2 hr,50-113 min,+++,+,,,[115],155,Felis domestica,Mammals,Carnivores,22,290,652.5903199999998,708.5503199999999,115,Felis domestica,,1,13.2 hr,13.2,,,FALSE,FALSE,FALSE,13.2,FALSE
+"jaguar
+Panthera onca",2,illumination,10.0 hr,,,,*,,[223] A,156,Panthera onca,Mammals,Carnivores,23,291,152.13823999999988,168.95863999999983,223,Panthera onca,Photoperiod continuous begins at the bottom of the preceding page and continues as illumination here.,1,10.0 hr,10,,,FALSE,FALSE,FALSE,10,TRUE
+"gray seal
+Halichoerus grypus",4,"continuous
+illumination",(14 hr record),,+++,,*,*,[145],157,Halichoerus grypus,Mammals,Carnivores,23,291,168.95863999999983,187.19863999999984,145,Halichoerus grypus,,1,,,,,TRUE,FALSE,FALSE,,FALSE
+"Caspian seal
+Gallerinus ursinus",,natural,3.6 hr,,,,,*,[124],158,Gallerinus ursinus,Mammals,Carnivores,23,291,187.19863999999984,214.31863999999985,124,Gallerinus ursinus,,1,3.6 hr,3.6,,,FALSE,FALSE,FALSE,3.6,FALSE
+"Asian elephant
+Elephus maximus",13,natural,"3.8 hr
+(8 hr record)",,++++,,*,,[106],159,Elephus maximus,Mammals,Proboscidea,23,291,214.31863999999985,233.4982399999999,106,Elephus maximus,,1,3.8 hr,3.8,,,TRUE,FALSE,FALSE,,FALSE
+"Africian elephant
+Loxodonto africano",13,natural,"3.3 hr
+(8 hr record)",,++++,,*,,[106],160,Loxodonto africano,Mammals,Proboscidea,23,291,233.4982399999999,259.43863999999985,106,Loxodonto africano,,1,3.3 hr,3.3,,,TRUE,FALSE,FALSE,,FALSE
+"rock hyrax
+Procavia johnstoni",4,natural,4.9 hr,,++,++,,*,[169] A,161,Procavia johnstoni,Mammals,Hyracoidea,23,291,259.43863999999985,277.67863999999986,169,Procavia johnstoni,,1,4.9 hr,4.9,,,FALSE,FALSE,FALSE,4.9,TRUE
+"rock hyrax
+Heterohyrax brucei",4,natural,5.7 hr,,++,++,,*,[169] A,162,Heterohyrax brucei,Mammals,Hyracoidea,23,291,277.67863999999986,295.67863999999986,169,Heterohyrax brucei,,1,5.7 hr,5.7,,,FALSE,FALSE,FALSE,5.7,TRUE
+"tree hyrax
+Dendrohyrax validus",1,natural,4.9 hr,,+,+++,,*,[169] A,163,Dendrohyrax validus,Mammals,Hyracoidea,23,291,295.67863999999986,327.5986399999999,169,Dendrohyrax validus,,1,4.9 hr,4.9,,,FALSE,FALSE,FALSE,4.9,TRUE
+"horse
+Equus caballus",3,,2.9 hr,,++++,,,*,[153],164,Equus caballus,Mammals,Pefissodactyla,23,291,327.5986399999999,345.5986399999999,153,Equus caballus,,1,2.9 hr,2.9,,,FALSE,FALSE,FALSE,2.9,FALSE
+"donkey
+Equus asinus",3,,3.1 hr,,++++,,,*,[153],165,Equus asinus,Mammals,Pefissodactyla,23,291,345.5986399999999,363.8386399999999,153,Equus asinus,,1,3.1 hr,3.1,,,FALSE,FALSE,FALSE,3.1,FALSE
+"tapir
+Tapirus terrestris",2,"natural +
+dim at night",4.4 hr,<10 min,,,•,,[223] A,166,Tapirus terrestris,Mammals,Pefissodactyla,23,291,363.8386399999999,395.7586399999999,223,Tapirus terrestris,,1,4.4 hr,4.4,,,FALSE,FALSE,FALSE,4.4,TRUE
+"sheep
+Ovis aries",3,,3.8 hr,,+++,+,,*,[152],167,Ovis aries,Mammals,Artiodactyla,23,291,395.7586399999999,416.68159999999995,152,Ovis aries,,1,3.8 hr,3.8,,,FALSE,FALSE,FALSE,3.8,FALSE
+"COW
+Bos taurus",3,,4.0 hr,,+++,+,,*,[153],168,Bos taurus,Mammals,Artiodactyla,23,291,416.68159999999995,432.4786399999999,153,Bos taurus,,1,4.0 hr,4,,,FALSE,FALSE,FALSE,4,FALSE
+"pig
+Sus domesticus",3,,7.8 hr,,+++,+,,*,[161],169,Sus domesticus,Mammals,Artiodactyla,23,291,432.4786399999999,449.27863999999994,161,Sus domesticus,,1,7.8 hr,7.8,,,FALSE,FALSE,FALSE,7.8,FALSE
+"goat
+Capra aegagrus
+hircus",10,"constant
+illumination","5.37 hr
+(13.5 hr record)",,++++,,,*,[23],170,"Capra aegagrus
+hircus",Mammals,Artiodactyla,23,291,449.27863999999994,493.9586399999999,23,Capra aegagrus hircus,,1,5.37 hr,5.37,,,TRUE,FALSE,FALSE,,FALSE

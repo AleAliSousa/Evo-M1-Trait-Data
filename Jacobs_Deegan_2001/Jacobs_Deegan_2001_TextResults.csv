@@ -1,0 +1,26 @@
+Taxon,Taxon scope,Trait,Value,SD,N,N basis,Unit,Statistic,Data role,Source location,Interpretation,Source_row,Value_numeric,SD_numeric,Sample_n
+Ateles fusciceps robustus,sample composition only,Animals examined,12,,12,animals,count,N,primary,p.695 Methods,Counts do not assign pooled spectral estimates to individual species,2,12,,12
+Ateles geoffroyi,sample composition only,Animals examined,18,,18,animals,count,N,primary,p.695 Methods,Counts do not assign pooled spectral estimates to individual species,3,18,,18
+Ateles hybrids / uncertain species,sample composition only,Animals examined,17,,17,animals,count,N,primary,p.695 Methods,Counts do not assign pooled spectral estimates to individual species,4,17,,17
+Lagothrix lagotrica poeppigii,sample composition only,Animals examined,8,,8,animals,count,N,primary,p.695 Methods,Counts do not assign pooled spectral estimates to individual species,5,8,,8
+Lagothrix lagotrica lugens,sample composition only,Animals examined,1,,1,animals,count,N,primary,p.695 Methods,Counts do not assign pooled spectral estimates to individual species,6,1,,1
+Ateles pooled,mixed species and hybrids,Males examined,18,,47,animals,count,count,primary,pp.695–697,Not separable into species-specific pigment estimates,7,18,,47
+Ateles pooled,mixed species and hybrids,Females examined,29,,47,animals,count,count,primary,pp.695–697,Not separable into species-specific pigment estimates,8,29,,47
+Ateles pooled,mixed species and hybrids,No consistent chromatic adaptation,31,,47,animals,count,count,primary,pp.695–697,Not separable into species-specific pigment estimates,9,31,,47
+Ateles pooled,mixed species and hybrids,Consistent chromatic adaptation,16,,47,animals,count,count,primary,pp.695–697,Not separable into species-specific pigment estimates,10,16,,47
+Ateles pooled,mixed species and hybrids,Females with consistent chromatic adaptation,16,,29,animals,count,count,primary,pp.695–697,Not separable into species-specific pigment estimates,11,16,,29
+Ateles pooled,mixed species and hybrids,No-adaptation mean,0.004,0.009,31,animals,log unit,mean,primary,p.697,Measured chromatic adaptation difference,12,0.004,0.009,31
+Ateles pooled,mixed species and hybrids,Adaptation mean,0.056,0.015,16,animals,log unit,mean,primary,p.697,Measured chromatic adaptation difference,13,0.056,0.015,16
+Ateles pooled,mixed species and hybrids,Shorter M/L pigment peak,550.2,1.32,10,animals,nm,mean of individual fitted peaks,primary,p.698,Separate from fits to averaged curves at 551 and 562 nm,14,550.2,1.32,10
+Ateles pooled,mixed species and hybrids,Longer M/L pigment peak,561.2,2.2,21,animals,nm,mean of individual fitted peaks,primary,p.698,Separate from fits to averaged curves at 551 and 562 nm,15,561.2,2.2,21
+Ateles pooled,mixed species and hybrids,Shorter M/L averaged-curve peak,551,,,pooled/representative curves,nm,fit,primary,pp.698–699,SWS estimate depends on assumed lens absorption and mixed-cone fit,16,551,,
+Ateles pooled,mixed species and hybrids,Longer M/L averaged-curve peak,562,,,pooled/representative curves,nm,fit,primary,pp.698–699,SWS estimate depends on assumed lens absorption and mixed-cone fit,17,562,,
+Ateles pooled,mixed species and hybrids,SWS fitted peak,432,,,pooled/representative curves,nm,fit,primary,pp.698–699,SWS estimate depends on assumed lens absorption and mixed-cone fit,18,432,,
+Lagothrix lagotrica pooled,two reported subspecies,Shorter M/L pigment peak,546.8,1.0,5,animals,nm,mean of individual fitted peaks,primary,p.698,No modern split species assigned from pooled values,19,546.8,1,5
+Lagothrix lagotrica pooled,two reported subspecies,Longer M/L pigment peak,562,0.58,4,animals,nm,mean of individual fitted peaks,primary,p.698,No modern split species assigned from pooled values,20,562,0.58,4
+Lagothrix lagotrica pooled,two reported subspecies,Shorter M/L averaged-curve peak,548,,,pooled/representative curves,nm,fit,primary,pp.698–699,SWS fit depends on lens and mixed-cone assumptions,21,548,,
+Lagothrix lagotrica pooled,two reported subspecies,Longer M/L averaged-curve peak,563,,,pooled/representative curves,nm,fit,primary,pp.698–699,SWS fit depends on lens and mixed-cone assumptions,22,563,,
+Lagothrix lagotrica pooled,two reported subspecies,SWS fitted peak,437,,,pooled/representative curves,nm,fit,primary,pp.698–699,SWS fit depends on lens and mixed-cone assumptions,23,437,,
+Lagothrix lagotrica pooled,two reported subspecies,Chromatic adaptation difference,0.003,0.003,9,adult male animals,log unit,mean,primary,p.698,None of nine showed evidence for differential chromatic adaptation,24,0.003,0.003,9
+Ateles pooled,mixed species and hybrids,Short-wave template weight,44,,,model coefficient,percent,fit,primary,p.698,"Fitted 550/562 nm mixture. Prose says 17 animals here but elsewhere and Fig.3 say 16; retain discrepancy, do not invent a corrected N.",25,44,,
+Ateles pooled,mixed species and hybrids,Long-wave template weight,56,,,model coefficient,percent,fit,primary,p.698,"Fitted 550/562 nm mixture. Prose says 17 animals here but elsewhere and Fig.3 say 16; retain discrepancy, do not invent a corrected N.",26,56,,

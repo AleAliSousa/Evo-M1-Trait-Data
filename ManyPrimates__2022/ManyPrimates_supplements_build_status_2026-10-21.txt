@@ -1,0 +1,5 @@
+All 57 Core/Extended items from the ManyPrimates source inventory are built, including detailed call tables, 2 digitized figures and text-extracted results. Together with the 3 supplied supplements, 60 items across 25 publications are available (9,325 analysis rows).
+All 60 are wired into the Shiny source-table browser. The additional 57 supply 84 source-specific species-level variables; with the 3 supplements, 132 variables and 14,953 species-variable rows are added. Detailed, pooled and genus-level records remain at their appropriate grain rather than being forced into species means.
+ManyPrimates_built_items.csv lists every reader, TSV and merge disposition. ManyPrimates_57_registry_rows.xlsx contains the owner-paste rows for __ReadMe.xlsx; the 3 supplement packets remain separate. The live workbook is unchanged.
+Rebuild with build_manyprimates_items.R; it uses the explicit staging identity workbooks pending owner registration. Public source-table manifests can be regenerated using refresh_manyprimates_manifest.R.
+Coverage and validation report: restricted repository/restricted_checks/_cross_table/ManyPrimates_20261021/ManyPrimates_full_coverage_report.txt.

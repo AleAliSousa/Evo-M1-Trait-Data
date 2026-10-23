@@ -44,7 +44,10 @@ final.dataframe$taxon_review_level <- ifelse(
   'image_checked', 'OCR_draft'
 )
 final.dataframe$age_review_level <- ifelse(
-  nzchar(final.dataframe$age_visual_check),
+  nzchar(final.dataframe$age_visual_check) |
+    nzchar(final.dataframe$age_years_verified) |
+    nzchar(final.dataframe$age_months_verified) |
+    nzchar(final.dataframe$age_days_verified),
   'image_checked', 'OCR_draft'
 )
 

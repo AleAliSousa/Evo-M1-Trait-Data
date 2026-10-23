@@ -1,0 +1,3 @@
+column,description,units,value_coding,data_role,source_location,notes
+ref_number,Sequential reference number as printed in the Supplementary References list.,,integer 1-88,primary,"41467_2023_35869_MOESM1_ESM.pdf, p.32-36",This is the key joined against 'Supplementary References' codes in Zhu_etal_2023_SupplementaryData1 and _SupplementaryData3
+citation,"Full citation text for that reference, exactly as printed.",,free text,primary,"41467_2023_35869_MOESM1_ESM.pdf, p.32-36",

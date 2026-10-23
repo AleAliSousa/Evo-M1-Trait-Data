@@ -1,0 +1,17 @@
+column,description,units,value_coding,data_role,source_location,notes
+ID,Row identifier as printed in the source table.,,integer 1-974,primary,Zhu_etal_2023_SupplementaryData1,
+SpeciesName,"Binomial species name, underscore-separated, following the Mammal Diversity Database.",,text,primary,Zhu_etal_2023_SupplementaryData1,
+Order,Taxonomic order.,,text,primary,Zhu_etal_2023_SupplementaryData1,
+Family,Taxonomic family.,,text,primary,Zhu_etal_2023_SupplementaryData1,
+Genus,Taxonomic genus.,,text,primary,Zhu_etal_2023_SupplementaryData1,
+Solitary/S,Whether the species is classified as solitary.,,Yes/No,primary,Zhu_etal_2023_SupplementaryData1,
+PairLiving/PL,Whether the species is classified as pair-living.,,Yes/No,primary,Zhu_etal_2023_SupplementaryData1,
+GroupLiving/GL,Whether the species is classified as group-living.,,Yes/No,primary,Zhu_etal_2023_SupplementaryData1,
+SocialPolymorphism,"The species' assigned social-organization category (summarizing the three Yes/No columns), used as the trait in the paper's analyses.",,"S=solitary, PL=pair-living, GL=group-living",primary,Zhu_etal_2023_SupplementaryData1,
+AdultBodyMass_g,Adult body mass.,grams,numeric,primary,Zhu_etal_2023_SupplementaryData1,
+MaxLifespan_years,Maximum recorded lifespan.,years,numeric,primary,Zhu_etal_2023_SupplementaryData1,
+Diet,Diet category.,,Carnivore/Herbivore/Omnivore,primary,Zhu_etal_2023_SupplementaryData1,
+Activity,Activity pattern.,,e.g. nocturnal/diurnal/others,primary,Zhu_etal_2023_SupplementaryData1,
+Lifestyle,Habitat/locomotor lifestyle.,,e.g. terrestrial/semiarboreal,primary,Zhu_etal_2023_SupplementaryData1,
+Fossoriality,Whether the species is fossorial.,,fossorial/nonfossorial,primary,Zhu_etal_2023_SupplementaryData1,
+Supplementary_References_codes,"Verbatim, comma-separated reference codes supporting this row's data, exactly as printed in the source 'Supplementary References' column.",,comma-separated integers (keys into Zhu_etal_2023_SupplementaryReferences.ref_number),primary,Zhu_etal_2023_SupplementaryData1,"Use Zhu_etal_2023_SupplementaryData1_refs_long.csv for an already-split, pre-joined per-reference table -- do not re-split this column yourself unless you need the raw form. Unlike Supplementary Data 3, every code in this item's column is numeric (no free-text notes)."

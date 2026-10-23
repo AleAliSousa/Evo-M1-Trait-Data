@@ -1,0 +1,6 @@
+column,description,units,value_coding,data_role,source_location,notes
+SpeciesName,Species this reference supports.,,text,derived,Zhu_etal_2023_SupplementaryData1,
+ID,Row ID of that species in Zhu_etal_2023_SupplementaryData1.,,integer,derived,Zhu_etal_2023_SupplementaryData1,
+ref_number,"One reference code cited for this species, split out of the comma-separated 'Supplementary_References_codes' field.",,"integer, NA if this entry is a free-text note instead",derived,Zhu_etal_2023_SupplementaryData1,
+note,"Free-text note in place of a reference code (e.g. a value measured directly by the study authors), when present.",,"text, NA otherwise",derived,Zhu_etal_2023_SupplementaryData1,
+citation,"Full citation text, joined in from Zhu_etal_2023_SupplementaryReferences by ref_number.",,"text, NA when note is populated instead",derived,Zhu_etal_2023_SupplementaryReferences,

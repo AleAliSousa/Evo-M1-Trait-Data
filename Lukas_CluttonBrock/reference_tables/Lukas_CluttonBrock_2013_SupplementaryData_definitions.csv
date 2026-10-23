@@ -1,0 +1,7 @@
+column,description,units,value_coding,data_role,source_location,notes
+SpeciesName,"Binomial species name, underscore-separated.",,text,secondary,Lukas_CluttonBrock_2013_SupplementaryData,
+Solitary,Whether the species is classified as solitary.,,Yes/No,secondary,Lukas_CluttonBrock_2013_SupplementaryData,
+SocialMonogamy,Whether the species is classified as socially monogamous.,,Yes/No,secondary,Lukas_CluttonBrock_2013_SupplementaryData,
+GroupLiving,Whether the species is classified as group-living.,,Yes/No,secondary,Lukas_CluttonBrock_2013_SupplementaryData,
+PaternalCare,Whether paternal care is reported for the species.,,Yes/No,secondary,Lukas_CluttonBrock_2013_SupplementaryData,
+Reference_code,"Verbatim shorthand reference key supporting this row's classification, exactly as printed/exported (author surname(s) + year + optional journal/source abbreviation, underscore-joined).",,text key,secondary,Lukas_CluttonBrock_2013_SupplementaryData,"Join against reference_tables/Lukas_CluttonBrock_2013_SupplementaryData_references.csv on ref_key to get the resolved citation. 435/517 unique keys (2,013/2,545 rows, 79%) resolve to an entry in Lukas_CluttonBrock_2013_ReferencesforSupplementaryTable; the rest are cited-but-absent from the printed reference list or carry a shorthand that could not be matched with confidence -- kept verbatim, not guessed (see that file's note column, and this item's README)."

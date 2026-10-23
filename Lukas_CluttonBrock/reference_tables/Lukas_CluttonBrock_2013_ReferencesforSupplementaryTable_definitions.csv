@@ -1,0 +1,3 @@
+column,description,units,value_coding,data_role,source_location,notes
+ref_id,"Sequential id assigned during transcription (the source list is alphabetically ordered by author surname, not numbered).",,integer 1-479,primary,Lukas_CluttonBrock_2013_ReferencesforSupplementaryTable,This id is NOT printed in the source -- it exists only so Lukas_CluttonBrock_2013_SupplementaryData_references.csv can point at a specific row
+citation,"Full citation text, exactly as printed in 'References for Supplementary Table' (lukas.sm.pdf).",,free text,primary,Lukas_CluttonBrock_2013_ReferencesforSupplementaryTable,

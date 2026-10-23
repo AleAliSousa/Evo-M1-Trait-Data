@@ -1,0 +1,6 @@
+column,description,units,value_coding,data_role,source_location,notes
+ref_key,Shorthand reference code exactly as printed in Lukas_CluttonBrock_2013_SupplementaryData's Reference_code column.,,text,derived,Lukas_CluttonBrock_2013_SupplementaryData,
+cited_in_column,Which column of the data item this key was extracted from.,,always 'Reference',derived,Lukas_CluttonBrock_2013_SupplementaryData,
+ref_id,"Row id in Lukas_CluttonBrock_2013_ReferencesforSupplementaryTable this key resolves to, when resolved.",,"integer, NA if unresolved",derived,Lukas_CluttonBrock_2013_ReferencesforSupplementaryTable,
+citation,"Full citation text, joined in by ref_id, when resolved.",,"text, NA if unresolved",derived,Lukas_CluttonBrock_2013_ReferencesforSupplementaryTable,
+note,"Match status and method, or the reason this key could not be resolved. 'NOT FOUND' entries are cited by the data table but absent from the printed reference list -- kept verbatim, not guessed at or dropped.",,text,derived,matching performed during this build; see README,

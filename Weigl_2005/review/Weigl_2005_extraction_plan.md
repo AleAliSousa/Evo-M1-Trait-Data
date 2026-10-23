@@ -13,6 +13,10 @@ The first PDF page is an interlibrary-loan cover sheet. PDF pages 2–6 correspo
 
 The full data section covers printed pages 21–199 (179 pages). The current extraction has 4,532 candidate rows, averaging 25.3 rows per data page. The remaining pages contain acknowledgments, an institution list, and references.
 
+## Completed primary-age review (2026-10-23)
+
+The finalized source snapshot has 4,552 printed record lines across pages 21–199. All 4,552 primary ages have been checked against page images; two printed age cells contain only a unit (`weeks` and `days`) and therefore have no numeric value. Taxon labels, record prose, and alternative ages are still provisional except for explicitly checked page ledgers. Counts and OCR agreement figures below describe the **initial 4,532-row extraction**, before page-image reconciliation, and are retained as extraction history.
+
 ## One-table design
 
 Use one source table with one row per **printed record line**, retaining group records such as `0.2` and `0.0.8` as one source row each. The main fields are:

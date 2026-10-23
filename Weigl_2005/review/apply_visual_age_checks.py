@@ -9,9 +9,9 @@ from collections import defaultdict
 from pathlib import Path
 
 
-ROOT = Path(__file__).resolve().parent
-TABLE = ROOT / "Weigl_2005_records_OCR_draft.csv"
-CHECKS = ROOT / "visual_age_checks_21-25.json"
+ROOT = Path(__file__).resolve().parent.parent
+TABLE = ROOT / "review/Weigl_2005_records_OCR_draft.csv"
+CHECKS = ROOT / "review/visual_age_checks_21-25.json"
 with TABLE.open(encoding="utf-8") as f:
     rows = list(csv.DictReader(f))
 fields = list(rows[0])

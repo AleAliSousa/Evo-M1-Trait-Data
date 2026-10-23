@@ -14,8 +14,8 @@ from pathlib import Path
 import pdfplumber
 
 
-ROOT = Path(__file__).resolve().parent
-TABLE = ROOT / "Weigl_2005_records_OCR_draft.csv"
+ROOT = Path(__file__).resolve().parent.parent
+TABLE = ROOT / "review/Weigl_2005_records_OCR_draft.csv"
 PDF = ROOT / "Weigl_2005_LongevityOfMammalsInCaptivity_pp21-210.pdf"
 OCR_DIR = Path(os.environ.get("OCR_OUT_DIR", "/tmp/weigl-secondary-ocr"))
 TSV_FIELDS = ["level", "page_num", "block_num", "par_num", "line_num", "word_num",
@@ -186,7 +186,7 @@ with tmp.open("w", encoding="utf-8", newline="") as f:
     writer.writeheader()
     writer.writerows(rows)
 tmp.replace(TABLE)
-audit_path = ROOT / "Weigl_2005_extraction_audit.csv"
+audit_path = ROOT / "review/Weigl_2005_extraction_audit.csv"
 with audit_path.open(encoding="utf-8") as f:
     audit = list(csv.DictReader(f))
 with audit_path.open("w", encoding="utf-8", newline="") as f:

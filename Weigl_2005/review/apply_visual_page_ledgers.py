@@ -13,9 +13,9 @@ from pathlib import Path
 
 import pdfplumber
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent
 PDF = ROOT / "Weigl_2005_LongevityOfMammalsInCaptivity_pp21-210.pdf"
-TABLE = ROOT / "Weigl_2005_records_OCR_draft.csv"
+TABLE = ROOT / "review/Weigl_2005_records_OCR_draft.csv"
 OCR_DIR = Path(os.environ.get("OCR_OUT_DIR", "/tmp/weigl-secondary-ocr"))
 PAGES = {97: (23, 30), 101: (22, 30), 105: (15, 27), 107: (17, 26)}
 # printed page: (OCR draft row count, image-checked record-line count)
@@ -45,7 +45,7 @@ def image_lines(pdf_page):
 def apply_page(page):
     draft_count, checked_count = PAGES[page]
     pdf_page = page - 19
-    ledger_path = ROOT / f"page{page:03d}_visual_ledger.csv"
+    ledger_path = ROOT / "review" / f"page{page:03d}_visual_ledger.csv"
     with ledger_path.open(encoding="utf-8") as f:
         ledger = list(csv.DictReader(f))
     assert len(ledger) == checked_count, (page, len(ledger))

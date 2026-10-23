@@ -12,10 +12,10 @@ from pathlib import Path
 import pdfplumber
 
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent
 PDF = ROOT / "Weigl_2005_LongevityOfMammalsInCaptivity_pp21-210.pdf"
-OUT = ROOT / "Weigl_2005_records_OCR_draft.csv"
-AUDIT = ROOT / "Weigl_2005_extraction_audit.csv"
+OUT = ROOT / "review/Weigl_2005_records_OCR_draft.csv"
+AUDIT = ROOT / "review/Weigl_2005_extraction_audit.csv"
 SEX = re.compile(r"^([0-9Il]{1,2}\s*\.\s*[0-9Il]{1,2}(?:\s*\.\s*[0-9Il]{1,2})?)")
 IGNORE = re.compile(r"^(?:AGE|years\b|months\b|rnonths\b|LONGEVITY\b|FROM THE LIVING|by Richard|\d{1,3})$", re.I)
 

@@ -12,11 +12,11 @@ from pathlib import Path
 
 import pdfplumber
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent
 PDF = ROOT / "Weigl_2005_LongevityOfMammalsInCaptivity_pp21-210.pdf"
-TABLE = ROOT / "Weigl_2005_records_OCR_draft.csv"
+TABLE = ROOT / "review/Weigl_2005_records_OCR_draft.csv"
 OCR_DIR = Path(os.environ.get("OCR_OUT_DIR", "/tmp/weigl-secondary-ocr"))
-OUT = ROOT / "Weigl_2005_secondary_possible_missing_rows.csv"
+OUT = ROOT / "review/Weigl_2005_secondary_possible_missing_rows.csv"
 
 with TABLE.open(encoding="utf-8") as f:
     rows = list(csv.DictReader(f))

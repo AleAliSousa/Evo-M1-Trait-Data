@@ -5,7 +5,7 @@ const { execFileSync } = require('node:child_process');
 const fs = require('node:fs');
 const path = require('node:path');
 
-const root = __dirname;
+const root = path.resolve(__dirname, "..");
 const pdf = path.join(root, 'Weigl_2005_LongevityOfMammalsInCaptivity_pp21-210.pdf');
 const out = process.env.OCR_OUT_DIR || '/tmp/weigl-secondary-ocr';
 const langPath = process.env.LANG_DIR;

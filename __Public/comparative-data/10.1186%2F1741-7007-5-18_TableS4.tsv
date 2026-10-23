@@ -1,9 +1,9 @@
-table	structure	subregion	species_printed	species	is_average	measure	value	sd	units	n_areas	reference
-S4	Prefrontal cortex	Prefrontal cortex	mouse	Mus musculus	FALSE	CMRgl	1.22	0.12	umol/g/min	NA	Bouilleret et al 2000
-S4	Prefrontal cortex	Prefrontal cortex	rat	Rattus norvegicus	FALSE	CMRgl	0.99	0.15	umol/g/min	NA	Dube et al 2001
-S4	Prefrontal cortex	Prefrontal cortex	rat	Rattus norvegicus	FALSE	CMRgl	1.03	0.05	umol/g/min	NA	Nehling et al 1988
-S4	Prefrontal cortex	Prefrontal cortex	rat	Rattus norvegicus	FALSE	CMRgl	0.91	0.21	umol/g/min	NA	Zocchi et al 2001
-S4	Prefrontal cortex	Prefrontal cortex	average rat	Rattus norvegicus	TRUE	CMRgl	0.98	0.14	umol/g/min	NA	
-S4	Prefrontal cortex	Prefrontal cortex	monkey	Macaca mulatta	FALSE	CMRgl	0.4	0.03	umol/g/min	NA	Porrino et al 2002
-S4	Prefrontal cortex	Prefrontal cortex	baboon	Papio anubis	FALSE	CMRgl	0.52	0.14	umol/g/min	NA	Meguro et al 1999
-S4	Prefrontal cortex	Prefrontal cortex	human	Homo sapiens	FALSE	CMRgl	0.33	0.04	umol/g/min	NA	Blin et al 1991
+table	source_snapshot_row	structure	subregion	species_printed	species	is_average	measure	value	value_printed	sd	sd_printed	units	n_areas	reference
+S4	1	Prefrontal cortex	Prefrontal cortex	mouse	Mus musculus	FALSE	CMRgl	1.22	1.22	0.12	0.12	umol/g/min	NA	Bouilleret et al 2000
+S4	2	Prefrontal cortex	Prefrontal cortex	rat	Rattus norvegicus	FALSE	CMRgl	0.99	0.99	0.15	0.15	umol/g/min	NA	Dube et al 2001
+S4	3	Prefrontal cortex	Prefrontal cortex	rat	Rattus norvegicus	FALSE	CMRgl	1.03	1.03	0.05	0.05	umol/g/min	NA	Nehling et al 1988
+S4	4	Prefrontal cortex	Prefrontal cortex	rat	Rattus norvegicus	FALSE	CMRgl	0.91	0.91	0.21	0.21	umol/g/min	NA	Zocchi et al 2001
+S4	5	Prefrontal cortex	Prefrontal cortex	average rat	Rattus norvegicus	TRUE	CMRgl	0.98	0.98	0.14	0.14	umol/g/min	NA	NA
+S4	6	Prefrontal cortex	Prefrontal cortex	monkey	Macaca mulatta	FALSE	CMRgl	0.4	0.40	0.03	0.03	umol/g/min	NA	Porrino et al 2002
+S4	7	Prefrontal cortex	Prefrontal cortex	baboon	Papio anubis	FALSE	CMRgl	0.52	0.52	0.14	0.14	umol/g/min	NA	Meguro et al 1999
+S4	8	Prefrontal cortex	Prefrontal cortex	human	Homo sapiens	FALSE	CMRgl	0.33	0.33	0.04	0.04	umol/g/min	NA	Blin et al 1991

@@ -1,7 +1,16 @@
 library(tidyverse)
 
-# Set working directory
-setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_cerebral_metabolic_rate")
+# Resolve relative to this script (Rscript or a saved RStudio source file).
+.script_path <- local({
+  args <- grep("^--file=", commandArgs(FALSE), value = TRUE)
+  if (length(args)) return(normalizePath(sub("^--file=", "", args[1])))
+  if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+    path <- rstudioapi::getSourceEditorContext()$path
+    if (nzchar(path)) return(normalizePath(path))
+  }
+  stop("Run with Rscript, or save and Source this file in RStudio.", call. = FALSE)
+})
+setwd(dirname(.script_path))
 
 # Define the folder containing the per-reference term files
 folder_path <- "standardized_term_by_reference"

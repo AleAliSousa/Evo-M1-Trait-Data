@@ -58,6 +58,8 @@ if (is.na(region)) stop("No region mapping for '", item_name, "'.", call. = FALS
 ## ---- read the frozen snapshot (verbatim capture of the PDF table) ----
 raw <- read.csv(paste0(item_name, "_snapshot.csv"),
                 check.names = FALSE, colClasses = "character", stringsAsFactors = FALSE)
+source(file.path(folder, "Kaufman__2004_source_corrections.R"), local = TRUE)
+raw <- apply_kaufman_source_corrections(raw, item_name)
 
 # Parse a printed value to numeric: OCR comma -> decimal point; "nr" (not reported),
 # blanks and "NA" -> NA. Nothing else is altered.

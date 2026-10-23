@@ -1,18 +1,18 @@
-table	structure	subregion	species_printed	species	is_average	measure	value	sd	units	n_areas	reference
-S3	Visual cortex	Visual cortex	mouse	Mus musculus	FALSE	CMRgl	1.11	0.12	umol/g/min	NA	Quelven et al 2004, estim.
-S3	Visual cortex	Visual cortex	rat	Rattus norvegicus	FALSE	CMRgl	0.86	0.14	umol/g/min	NA	Waschke et al 1993
-S3	Visual cortex	Visual cortex	rat	Rattus norvegicus	FALSE	CMRgl	0.82	0.12	umol/g/min	NA	Dube et al 2001
-S3	Visual cortex	Visual cortex	rat	Rattus norvegicus	FALSE	CMRgl	0.97	0.05	umol/g/min	NA	Nehling et al 1988
-S3	Visual cortex	Visual cortex	rat	Rattus norvegicus	FALSE	CMRgl	1	0.1	umol/g/min	NA	Nehling et al 2000
-S3	Visual cortex	Visual cortex	average rat	Rattus norvegicus	TRUE	CMRgl	0.91	0.11	umol/g/min	NA	
-S3	Visual cortex	Visual cortex	rabbit	Oryctolagus cuniculus	FALSE	CMRgl	0.76	0.09	umol/g/min	NA	Passero et al 1981
-S3	Visual cortex	Visual cortex	cat	Felis catus	FALSE	CMRgl	0.52	0.03	umol/g/min	NA	Herdman et al 1989
-S3	Visual cortex	Visual cortex	cat	Felis catus	FALSE	CMRgl	0.95	0.09	umol/g/min	NA	Sokoloff 1984
-S3	Visual cortex	Visual cortex	cat	Felis catus	FALSE	CMRgl	0.89	0.03	umol/g/min	NA	Schwartzman et al 1986
-S3	Visual cortex	Visual cortex	average cat	Felis catus	TRUE	CMRgl	0.79	0.05	umol/g/min	NA	
-S3	Visual cortex	Visual cortex	monkey	Macaca mulatta	FALSE	CMRgl	0.59	0.02	umol/g/min	NA	Kennedy et al 1978
-S3	Visual cortex	Visual cortex	monkey	Macaca mulatta	FALSE	CMRgl	0.66	0.02	umol/g/min	NA	Palombo et al 1990
-S3	Visual cortex	Visual cortex	average monkey	Macaca mulatta	TRUE	CMRgl	0.63	0.02	umol/g/min	NA	
-S3	Visual cortex	Visual cortex	human	Homo sapiens	FALSE	CMRgl	0.39	0.05	umol/g/min	NA	De Volder et al 1997
-S3	Visual cortex	Visual cortex	human	Homo sapiens	FALSE	CMRgl	0.37	0.04	umol/g/min	NA	Heiss et al 1985
-S3	Visual cortex	Visual cortex	average human	Homo sapiens	TRUE	CMRgl	0.38	0.05	umol/g/min	NA	
+table	source_snapshot_row	structure	subregion	species_printed	species	is_average	measure	value	value_printed	sd	sd_printed	units	n_areas	reference
+S3	1	Visual cortex	Visual cortex	mouse	Mus musculus	FALSE	CMRgl	1.11	1.11	0.12	0.12	umol/g/min	NA	Quelven et al 2004, estim.
+S3	2	Visual cortex	Visual cortex	rat	Rattus norvegicus	FALSE	CMRgl	0.86	0.86	0.14	0.14	umol/g/min	NA	Waschke et al 1993
+S3	3	Visual cortex	Visual cortex	rat	Rattus norvegicus	FALSE	CMRgl	0.82	0.82	0.12	0.12	umol/g/min	NA	Dube et al 2001
+S3	4	Visual cortex	Visual cortex	rat	Rattus norvegicus	FALSE	CMRgl	0.97	0.97	0.05	0.05	umol/g/min	NA	Nehling et al 1988
+S3	5	Visual cortex	Visual cortex	rat	Rattus norvegicus	FALSE	CMRgl	1	1.00	0.1	0.10	umol/g/min	NA	Nehling et al 2000
+S3	6	Visual cortex	Visual cortex	average rat	Rattus norvegicus	TRUE	CMRgl	0.91	0.91	0.11	0.11	umol/g/min	NA	NA
+S3	7	Visual cortex	Visual cortex	rabbit	Oryctolagus cuniculus	FALSE	CMRgl	0.76	0.76	0.09	0.09	umol/g/min	NA	Passero et al 1981
+S3	8	Visual cortex	Visual cortex	cat	Felis catus	FALSE	CMRgl	0.52	0.52	0.03	0.03	umol/g/min	NA	Herdman et al 1989
+S3	9	Visual cortex	Visual cortex	cat	Felis catus	FALSE	CMRgl	0.95	0.95	0.09	0.09	umol/g/min	NA	Sokoloff 1984
+S3	10	Visual cortex	Visual cortex	cat	Felis catus	FALSE	CMRgl	0.89	0.89	0.03	0.03	umol/g/min	NA	Schwartzman et al 1986
+S3	11	Visual cortex	Visual cortex	average cat	Felis catus	TRUE	CMRgl	0.79	0.79	0.05	0.05	umol/g/min	NA	NA
+S3	12	Visual cortex	Visual cortex	monkey	Macaca mulatta	FALSE	CMRgl	0.59	0.59	0.02	0.02	umol/g/min	NA	Kennedy et al 1978
+S3	13	Visual cortex	Visual cortex	monkey	Macaca mulatta	FALSE	CMRgl	0.66	0.66	0.02	0.02	umol/g/min	NA	Palombo et al 1990
+S3	14	Visual cortex	Visual cortex	average monkey	Macaca mulatta	TRUE	CMRgl	0.63	0.63	0.02	0.02	umol/g/min	NA	NA
+S3	15	Visual cortex	Visual cortex	human	Homo sapiens	FALSE	CMRgl	0.39	0.39	0.05	0.05	umol/g/min	NA	De Volder et al 1997
+S3	16	Visual cortex	Visual cortex	human	Homo sapiens	FALSE	CMRgl	0.37	0.37	0.04	0.04	umol/g/min	NA	Heiss et al 1985
+S3	17	Visual cortex	Visual cortex	average human	Homo sapiens	TRUE	CMRgl	0.38	0.38	0.05	0.05	umol/g/min	NA	NA

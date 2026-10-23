@@ -1,13 +1,13 @@
-table,structure,subregion,species_printed,species,is_average,measure,value,sd,units,n_areas,reference
-S9,Occipital cortex,Occipital cortex,rat,Rattus norvegicus,FALSE,CMRgl,1,0.07,umol/g/min,NA,Levant et al 2004
-S9,Occipital cortex,Occipital cortex,rat,Rattus norvegicus,FALSE,CMRgl,0.83,0.09,umol/g/min,NA,Blin et al 1991
-S9,Occipital cortex,Occipital cortex,average rat,Rattus norvegicus,TRUE,CMRgl,0.92,0.08,umol/g/min,NA,
-S9,Occipital cortex,Occipital cortex,cat,Felis catus,FALSE,CMRgl,1.26,0.1,umol/g/min,NA,Lydic et al 1991
-S9,Occipital cortex,Occipital cortex,monkey,Macaca mulatta,FALSE,CMRgl,0.4,0.09,umol/g/min,NA,Noda et al 2002
-S9,Occipital cortex,Occipital cortex,baboon,Papio anubis,FALSE,CMRgl,0.33,0.06,umol/g/min,NA,Meguro et al 1999
-S9,Occipital cortex,Occipital cortex,human,Homo sapiens,FALSE,CMRgl,0.32,0.03,umol/g/min,NA,Redies et al 1989
-S9,Occipital cortex,Occipital cortex,human,Homo sapiens,FALSE,CMRgl,0.28,0.02,umol/g/min,NA,Blomqvist et al 1998
-S9,Occipital cortex,Occipital cortex,human,Homo sapiens,FALSE,CMRgl,0.29,0.05,umol/g/min,NA,Maquet et al 1992
-S9,Occipital cortex,Occipital cortex,human,Homo sapiens,FALSE,CMRgl,0.42,0.12,umol/g/min,NA,Haier et al 1992
-S9,Occipital cortex,Occipital cortex,human,Homo sapiens,FALSE,CMRgl,0.33,0.04,umol/g/min,NA,Bline et al 1991
-S9,Occipital cortex,Occipital cortex,average human,Homo sapiens,TRUE,CMRgl,0.33,0.05,umol/g/min,NA,
+table,source_snapshot_row,structure,subregion,species_printed,species,is_average,measure,value,value_printed,sd,sd_printed,units,n_areas,reference
+S9,1,Occipital cortex,Occipital cortex,rat,Rattus norvegicus,FALSE,CMRgl,1,1.00,0.07,0.07,umol/g/min,NA,Levant et al 2004
+S9,2,Occipital cortex,Occipital cortex,rat,Rattus norvegicus,FALSE,CMRgl,0.83,0.83,0.09,0.09,umol/g/min,NA,Blin et al 1991
+S9,3,Occipital cortex,Occipital cortex,average rat,Rattus norvegicus,TRUE,CMRgl,0.92,0.92,0.08,0.08,umol/g/min,NA,
+S9,4,Occipital cortex,Occipital cortex,cat,Felis catus,FALSE,CMRgl,1.26,1.26,0.1,0.10,umol/g/min,NA,Lydic et al 1991
+S9,5,Occipital cortex,Occipital cortex,monkey,Macaca mulatta,FALSE,CMRgl,0.4,0.40,0.09,0.09,umol/g/min,NA,Noda et al 2002
+S9,6,Occipital cortex,Occipital cortex,baboon,Papio anubis,FALSE,CMRgl,0.33,0.33,0.06,0.06,umol/g/min,NA,Meguro et al 1999
+S9,7,Occipital cortex,Occipital cortex,human,Homo sapiens,FALSE,CMRgl,0.32,0.32,0.03,0.03,umol/g/min,NA,Redies et al 1989
+S9,8,Occipital cortex,Occipital cortex,human,Homo sapiens,FALSE,CMRgl,0.28,0.28,0.02,0.02,umol/g/min,NA,Blomqvist et al 1998
+S9,9,Occipital cortex,Occipital cortex,human,Homo sapiens,FALSE,CMRgl,0.29,0.29,0.05,0.05,umol/g/min,NA,Maquet et al 1992
+S9,10,Occipital cortex,Occipital cortex,human,Homo sapiens,FALSE,CMRgl,0.42,0.42,0.12,0.12,umol/g/min,NA,Haier et al 1992
+S9,11,Occipital cortex,Occipital cortex,human,Homo sapiens,FALSE,CMRgl,0.33,0.33,0.04,0.04,umol/g/min,NA,Bline et al 1991
+S9,12,Occipital cortex,Occipital cortex,average human,Homo sapiens,TRUE,CMRgl,0.33,0.33,0.05,0.05,umol/g/min,NA,

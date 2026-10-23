@@ -1,8 +1,8 @@
-table	structure	subregion	species_printed	species	is_average	measure	value	sd	units	n_areas	reference
-S11	Cerebral cortex	Cerebral cortex	mouse	Mus musculus	FALSE	CMRgl	1.1	0.11	umol/g/min	6	N=6
-S11	Cerebral cortex	Cerebral cortex	rat	Rattus norvegicus	FALSE	CMRgl	0.95	0.11	umol/g/min	8	N=8
-S11	Cerebral cortex	Cerebral cortex	rabbit	Oryctolagus cuniculus	FALSE	CMRgl	0.84	0.09	umol/g/min	4	N=4
-S11	Cerebral cortex	Cerebral cortex	cat	Felis catus	FALSE	CMRgl	0.86	0.08	umol/g/min	6	N=6
-S11	Cerebral cortex	Cerebral cortex	monkey	Macaca mulatta	FALSE	CMRgl	0.46	0.06	umol/g/min	8	N=8
-S11	Cerebral cortex	Cerebral cortex	baboon	Papio anubis	FALSE	CMRgl	0.46	0.13	umol/g/min	6	N=6
-S11	Cerebral cortex	Cerebral cortex	human	Homo sapiens	FALSE	CMRgl	0.34	0.05	umol/g/min	8	N=8
+table	source_snapshot_row	structure	subregion	species_printed	species	is_average	measure	value	value_printed	sd	sd_printed	units	n_areas	reference
+S11	1	Cerebral cortex	Cerebral cortex	mouse	Mus musculus	FALSE	CMRgl	1.1	1.10	0.11	0.11	umol/g/min	6	NA
+S11	2	Cerebral cortex	Cerebral cortex	rat	Rattus norvegicus	FALSE	CMRgl	0.95	0.95	0.11	0.11	umol/g/min	8	NA
+S11	3	Cerebral cortex	Cerebral cortex	rabbit	Oryctolagus cuniculus	FALSE	CMRgl	0.84	0.84	0.09	0.09	umol/g/min	4	NA
+S11	4	Cerebral cortex	Cerebral cortex	cat	Felis catus	FALSE	CMRgl	0.86	0.86	0.08	0.08	umol/g/min	6	NA
+S11	5	Cerebral cortex	Cerebral cortex	monkey	Macaca mulatta	FALSE	CMRgl	0.46	0.46	0.06	0.06	umol/g/min	8	NA
+S11	6	Cerebral cortex	Cerebral cortex	baboon	Papio anubis	FALSE	CMRgl	0.46	0.46	0.13	0.13	umol/g/min	6	NA
+S11	7	Cerebral cortex	Cerebral cortex	human	Homo sapiens	FALSE	CMRgl	0.34	0.34	0.05	0.05	umol/g/min	8	NA

@@ -15,7 +15,8 @@ Kaufman's own PET data ("Present Study"). Tables **A1–A14** are the per-study 
 ## Pipeline (same golden rule as the other papers)
 
 The **snapshot is frozen and faithful** to the dissertation; **all cleaning happens in the
-`.R` script**. Checking is separate, in `comparison/`.
+`.R` script**, including the checked shared overlay in
+`Kaufman__2004_source_corrections.R`. Checks live in the restricted companion repository.
 
 ```
 <dissertation PDF / xlsx>
@@ -42,9 +43,10 @@ Each table has a self-contained `.R` (derives its own name from the filename, ma
 | `Kaufman__2004_dissertation.xlsx` | Digitized capture of every dissertation table (104 sheets), used to cross-check the PDF extraction. |
 | `Kaufman__2004_TableA1..A15_snapshot.csv` | Frozen faithful snapshots (source of truth for the build). |
 | `Kaufman__2004_TableA1..A15.R` | Preparation: snapshot → clean CSV (+ UMI-named TSV). |
+| `Kaufman__2004_source_corrections.R` | Checked overlay for confirmed OCR/column-shift defects in A1-A14; never edits snapshots. |
 | `Kaufman__2004_TableA1..A15.csv` | Clean, analysis-ready tables. **Use these.** |
+| `reference_tables/Kaufman__2004_TablesA1-A14_references.csv` | Exact cleaned table citation → full cited-source bibliography entry, source level/type, stable source ID, and primary ID where applicable. |
 | `Kaufman__2004_definitions.csv` | Data dictionary (documentation only; not read by the scripts). |
-| `comparison/` | Checking (QA) against the manually compiled tables. |
 | `old/` | Superseded Python build/compare scripts and earlier comparison outputs. |
 
 ## The 15 tables
@@ -64,7 +66,7 @@ Each table has a self-contained `.R` (derives its own name from the filename, ma
 | `TableA11` | Occipital Cortex rCMR & rCBF | per-study | 111 |
 | `TableA12` | **Sensorimotor Cortex** rCMR & rCBF | per-study | 76 |
 | `TableA13` | **Cingulate Cortex** rCMR & rCBF | per-study | 62 |
-| `TableA14` | Whole Brain CMR & CBF (direct measurement) | per-study | 196 |
+| `TableA14` | Whole Brain CMR & CBF (direct measurement) | per-study | 195 logical rows (one snapshot continuation fragment removed) |
 | `TableA15` | Species Means in Conscious Subjects | species means | 284 |
 
 ### ⚠ A12 / A13 numbering — please confirm
@@ -91,11 +93,20 @@ mL/100 g/min.
 (`pdftotext -layout`), parsed by column position: each row is split at its measurement
 `Mode` token, the numeric tail (Glucose/Oxygen/Blood-Flow ± SD) is assigned by column
 position (so blank measures stay blank), and Species/Reference/n/Anesthesia are recovered
-by nearest-column anchor (robust to the source's frequently OCR-dropped opening
-parentheses and to the `M mulatta`-style genus abbreviations). Values are kept verbatim in
-the snapshot; the `.R` only parses numbers (OCR comma→decimal, `nr`→NA) and adds the
-region label and units. The 104-sheet dissertation `.xlsx` was used as an independent
-cross-check on completeness (snapshot row totals ≥ xlsx).
+by nearest-column anchor. Values remain verbatim in the snapshot. Before parsing numbers,
+the shared correction overlay repairs 11 rows in which `Sokoloff et al. (1977)`, `n=10`,
+CMRgl, and SD were shifted across columns, three rows whose scanned `n` and `Anesthesia`
+tokens ran together, and a small set of visibly split citation strings. A complete
+positional audit against all 1,435 logical PDF rows also found and repaired collapsed or
+misaligned values/method fields in A1, A3, A6, A11, A13, and A14 (including the shifted
+A13 oxygen columns, the A14 Boarini `.20` SD, and two lost Capra rows). The condition
+repairs are Table A7 row 101 (`‘ none`) and Table A10 rows 5–6 (`6 none`, `3 none`),
+checked against PDF pages 146 and 152 (dissertation pages 138 and 144). The Sokoloff
+repairs were checked against dissertation PDF pages 120, 123, 129, 133, 136, 143, 146,
+149, 152, 156, and 158; the additional repairs are guarded by the exact frozen-row tuple
+and a physical/printed PDF page locator in `Kaufman__2004_source_corrections.R`. The
+104-sheet dissertation `.xlsx` was used as an independent cross-check on completeness
+(snapshot row totals ≥ xlsx). Frozen snapshots are never rewritten.
 
 ## Species means A15
 
@@ -130,9 +141,24 @@ choices; (c) a small number of small-N species rows sit on garbled continuation 
 
 The dissertation is a scanned document; the snapshots faithfully preserve OCR artefacts
 (e.g. `’alombo` for *Palombo*, `Bums` for *Burns*, dropped opening parentheses, `nr` = not
-reported). These live in `Reference`/`Species` text only; numeric values were verified via
-the A15 reconciliation above. Taxonomy is left genus-level as printed and reconciled to
-`_keys` in a later, cross-paper step.
+reported). Confirmed structural errors are corrected only by the explicit overlay. Other
+citation spelling variants remain visible and resolve through the source-local reference
+catalog. `(Zimmer, 1975)` has no matching entry anywhere in the supplied dissertation
+folder and remains explicitly unresolved. Dastur (1985) is a review/reappraisal, not a
+row-level primary experiment; its three A14 measurements retain cited-source provenance
+but are excluded from the primary-only merge until their experimental lineage can be
+recovered. Madsen (1993) is an author-led pooled methodological reanalysis rather than an
+independent cohort; its A14 row combines subgroup-corrected CBF with pooled measured
+CMRO2, so both measurement records are retained in provenance but held out until their
+component-study lineage and compatible estimands can be reconstructed. Taxonomy is left
+genus-level as printed and is reconciled only in the
+cross-paper merge.
+
+The `Anesthesia` value `none` is evidence of no reported anesthesia, not proof of a
+baseline/control arm. The canonical merge therefore labels such records
+`nonanesthetized_unspecified_arm` and quarantines every otherwise-eligible
+within-primary source/cell/condition/unit group containing multiple rows until control,
+treatment, disease, task, age, or temperature arms can be reconstructed.
 
 ## ReadMe.xlsx updates (this pass)
 

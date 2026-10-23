@@ -1,25 +1,25 @@
 Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
-Species,"genus/species label exactly as printed in the dissertation (Macaca given as 'M mulatta','M fascic', etc.); OCR artefacts preserved in snapshot",,Species,,primary,Mammals,Kaufman__2004_TableA1..A14,genus-level in most rows; reconcile later to _keys,one row per published study entry
-Reference,"literature citation for the study, as printed (author, year)",,Reference,,info,Mammals,Kaufman__2004_TableA1..A14,'Present Study' = Kaufman's own PET data,some opening parentheses were OCR-dropped in the source
-n,number of individuals in that study,,Sample,n,primary,Mammals,Kaufman__2004_TableA1..A14,blank where the source did not print it,
-Anesthesia,"anesthetic state during measurement ('none' = conscious; else agent, e.g. Ketamine, N 20, Sevoflurane, Pentobarbital)",,Method,,primary,Mammals,Kaufman__2004_TableA1..A14,Table A15 species means use only 'none' (conscious) rows,
-Mode,"measurement method: PET, Sokoloff (2-deoxyglucose autoradiography), Kety-Schmidt, Microspheres, or NMR",,Method,,primary,Mammals,Kaufman__2004_TableA1..A14,,
-Region,brain region for this table (dissertation's own Appendix numbering),,Structure,,primary,Mammals,Kaufman__2004_TableA1..A14,"A1 Basal Ganglia .. A14 Whole Brain (direct); A12=Sensorimotor, A13=Cingulate",see ReadMe for A12/A13 numbering note
-CMRgl_umol_100g_min,regional cerebral metabolic rate for glucose,(per Region),CMRgl,Mean,primary,Mammals,Kaufman__2004_TableA1..A14,units umol/100 g/min,
-CMRgl_SD,standard deviation of CMRgl for that study,(per Region),CMRgl,SD,primary,Mammals,Kaufman__2004_TableA1..A14,,
-CMRO2_umol_100g_min,regional cerebral metabolic rate for oxygen,(per Region),CMRO2,Mean,primary,Mammals,Kaufman__2004_TableA1..A14,units umol/100 g/min; source prints 'CMR02' (zero),
-CMRO2_SD,standard deviation of CMRO2 for that study,(per Region),CMRO2,SD,primary,Mammals,Kaufman__2004_TableA1..A14,,
-CBF_ml_100g_min,regional cerebral blood flow,(per Region),CBF,Mean,primary,Mammals,Kaufman__2004_TableA1..A14,units mL/100 g/min,
-CBF_SD,standard deviation of CBF for that study,(per Region),CBF,SD,primary,Mammals,Kaufman__2004_TableA1..A14,,
+Species,"genus/species label exactly as printed in the dissertation (Macaca given as 'M mulatta','M fascic', etc.); OCR artefacts preserved in snapshot",,Species,,secondary,Mammals,Kaufman__2004_TableA1..A14,genus-level in most rows; reconcile later to _keys,one row per published study entry in a secondary compilation
+Reference,"literature citation for the study, cleaned only by the checked source-correction overlay (author, year)",,Reference,,info,Mammals,Kaufman__2004_TableA1..A14,"'Present Study' = Kaufman's own PET data; join to reference_tables/Kaufman__2004_TablesA1-A14_references.csv on exact ref_key",frozen snapshots retain the printed/OCR form
+n,number of individuals in that study,,Sample,n,secondary,Mammals,Kaufman__2004_TableA1..A14,blank where the source did not print it,"checked overlay separates n=6 and n=3 from OCR tokens '6 none' and '3 none' in Table A10"
+Anesthesia,"anesthetic state during measurement ('none' = conscious; else agent, e.g. Ketamine, N 20, Sevoflurane, Pentobarbital)",,Method,,secondary,Mammals,Kaufman__2004_TableA1..A14,Table A15 species means use only 'none' (conscious) rows,"checked overlay repairs three n/anesthesia OCR tokens; frozen snapshots unchanged"
+Mode,"measurement method: PET, Sokoloff (2-deoxyglucose autoradiography), Kety-Schmidt, Microspheres, or NMR",,Method,,secondary,Mammals,Kaufman__2004_TableA1..A14,,
+Region,brain region for this table (dissertation's own Appendix numbering),,Structure,,secondary,Mammals,Kaufman__2004_TableA1..A14,"A1 Basal Ganglia .. A14 Whole Brain (direct); A12=Sensorimotor, A13=Cingulate",see ReadMe for A12/A13 numbering note
+CMRgl_umol_100g_min,regional cerebral metabolic rate for glucose,(per Region),CMRgl,Mean,secondary,Mammals,Kaufman__2004_TableA1..A14,units umol/100 g/min,
+CMRgl_SD,standard deviation of CMRgl for that study,(per Region),CMRgl,SD,secondary,Mammals,Kaufman__2004_TableA1..A14,,
+CMRO2_umol_100g_min,regional cerebral metabolic rate for oxygen,(per Region),CMRO2,Mean,secondary,Mammals,Kaufman__2004_TableA1..A14,units umol/100 g/min; source prints 'CMR02' (zero),
+CMRO2_SD,standard deviation of CMRO2 for that study,(per Region),CMRO2,SD,secondary,Mammals,Kaufman__2004_TableA1..A14,,
+CBF_ml_100g_min,regional cerebral blood flow,(per Region),CBF,Mean,secondary,Mammals,Kaufman__2004_TableA1..A14,units mL/100 g/min,
+CBF_SD,standard deviation of CBF for that study,(per Region),CBF,SD,secondary,Mammals,Kaufman__2004_TableA1..A14,,
 source,source identifier,,Source,,info,Mammals,Kaufman__2004_TableA1..A14,,
-species,"genus-level species label (Homo, Macaca, Canis, ...)",,Species,,primary,Mammals,Kaufman__2004_TableA15,12 genera with sufficient data,
+species,"genus-level species label (Homo, Macaca, Canis, ...)",,Species,,secondary,Mammals,Kaufman__2004_TableA15,12 genera with sufficient data,
 weighting,unweighted = each study counts equally; weighted = each individual counts equally,,,,info,Mammals,Kaufman__2004_TableA15,per dissertation 'data explaination.txt',
 region,"brain region (Whole Brain, Cortex, and 12 sub-regions)",,Structure,,primary,Mammals,Kaufman__2004_TableA15,'Cortex' is an aggregate; not 1:1 with any single A-table,
 measure,CMRgl / CMRO2 / CBF,,,,info,Mammals,Kaufman__2004_TableA15,,
 units,"umol/100 g/min (CMRgl, CMRO2) or mL/100 g/min (CBF)",,,,info,Mammals,Kaufman__2004_TableA15,added by the build script,
-N,"number in sample (studies if unweighted, individuals if weighted)",,,n,primary,Mammals,Kaufman__2004_TableA15,,
-Mean,mean value,,(per measure),Mean,primary,Mammals,Kaufman__2004_TableA15,conscious subjects only,
-SD,standard deviation,,(per measure),SD,primary,Mammals,Kaufman__2004_TableA15,,
-CV,coefficient of variation (%),,(per measure),CV,primary,Mammals,Kaufman__2004_TableA15,,
-CVstar,"unbiased coefficient of variation, CV* (%)",,(per measure),CVstar,primary,Mammals,Kaufman__2004_TableA15,,
+N,"number in sample (studies if unweighted, individuals if weighted)",,,n,secondary,Mammals,Kaufman__2004_TableA15,,
+Mean,mean value,,(per measure),Mean,secondary,Mammals,Kaufman__2004_TableA15,conscious subjects only,
+SD,standard deviation,,(per measure),SD,secondary,Mammals,Kaufman__2004_TableA15,,
+CV,coefficient of variation (%),,(per measure),CV,secondary,Mammals,Kaufman__2004_TableA15,,
+CVstar,"unbiased coefficient of variation, CV* (%)",,(per measure),CVstar,secondary,Mammals,Kaufman__2004_TableA15,,
 note,"build note (e.g. OCR reconstruction, value filled from dissertation xlsx)",,,note,info,Mammals,Kaufman__2004_TableA15,2 cells reconstructed; both confirmed against manual tables,

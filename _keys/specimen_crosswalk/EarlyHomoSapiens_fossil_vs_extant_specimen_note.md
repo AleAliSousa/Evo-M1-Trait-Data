@@ -76,8 +76,8 @@ early fossil and extant records can share the binomial *Homo sapiens*.
 Three concepts added, all `sensu = NA`:
 
 - `Homo sapiens (early/fossil)` — the EH grade; `decomposable = TRUE`;
-  `modern_equivalent = NA` **deliberately**, so it is never auto-mapped to
-  living humans.
+  `modern_equivalent = Homo sapiens`; this is a taxonomic equivalence.
+  The fossil concept and temporal grade remain separate aggregation attributes.
 - `Homo sapiens (living/extant)` — the referent of a bare "*Homo sapiens*" mean;
   `modern_equivalent = Homo sapiens`.
 - `Homo neanderthalensis` — extinct sister species; `decomposable = TRUE`.
@@ -87,9 +87,8 @@ Three concepts added, all `sensu = NA`:
 ```text
 fossil grade value (EH / NT)   -> stays under its fossil concept; NEVER pooled
                                   into the extant 'Homo sapiens' species mean
-bare 'Homo sapiens' mean       -> defaults to Homo sapiens (living/extant),
-                                  UNLESS the source is a fossil source
-                                  (Kochiyama EH, Weaver A-15)
+bare 'Homo sapiens' mean       -> temporal grade remains unknown until
+                                  source or specimen evidence establishes it
 ```
 
 This is the mirror image of the Pongo rule: there, do not *split* a pooled mean
@@ -127,3 +126,20 @@ Kochiyama fossil cerebrum/cerebellum values are **not** currently ingested into
   (`Seymour_etal_2015_TableS1.csv`).
 - `_keys/specimen_crosswalk/SCHEMA.md` — two-layer schema and merge consumer
   contract.
+
+
+## Taxid and grade correction (2026-10-22)
+
+The earlier policy of withholding 9606 to prevent pooling is superseded.
+Species identity and temporal grade are independent attributes: early fossil
+H. sapiens shares 9606 with living H. sapiens. The common ID does not authorize
+pooling their observations. Shared resolvers expose `taxon_name`, `ncbi_taxid`,
+`ncbi_mapping_basis`, and `temporal_grade`; the fossil glucose merge writes
+these per observation and per specimen. Its specimen-derived `sapiens_grade`
+remains available as a compatibility field. Bare binomials have unknown grade
+unless the source or specimen establishes it.
+
+Weaver's archaic H. sapiens concept carries the source hypothesis (9606,
+`archaic`, `source_hypothesis`). That explicitly preserves his nomenclature
+without deciding the modern identity of Kabwe or Swanscombe. Historical grades
+must survive a later taxonomic re-identification.

@@ -7,6 +7,7 @@ __merging_endocranial_volume, __merging_cerebral_metabolic_rate) resolve exactly
     r = resolve_species(printed, source_publication=<paper folder | list | None>)
     # -> pandas.DataFrame aligned to `printed` with columns
     #    accepted_name, species_basis, reidentified, match_level, unresolved
+    #    taxon_name, ncbi_taxid, ncbi_name, ncbi_rank, ncbi_mapping_basis, temporal_grade
 
 Normalisation before matching: bytes declared UTF-8, NBSP -> space, strip '*', '_' -> ' ', collapse
 whitespace, trim, case-insensitive. Match order: (source_publication, variant_name) -> variant_name
@@ -79,6 +80,10 @@ def _load(keys_dir=KEYS_DIR):
     hubmap = {}
     for a in hub.accepted_name:
         hubmap.setdefault(_key([a])[0], a)
+    with open(os.path.join(keys_dir, "species_grade_key.csv"), encoding="utf-8") as f:
+        grade_pairs = {(_key([r["source_publication"]])[0], _key([r["variant_name"]])[0]): r["temporal_grade"]
+                       for r in csv.DictReader(f)}
+    _ENV["grade_pairs"] = grade_pairs
     _ENV.update(keys_dir=keys_dir, variants=v, pair=pair, variant_only=vo, hub=hub, hubmap=hubmap)
     return _ENV
 
@@ -126,7 +131,17 @@ def resolve_species(printed, source_publication=None, keys_dir=KEYS_DIR):
                         acc, basis, level, unres = h, "hub", "hub", False
         out["accepted_name"].append(acc); out["species_basis"].append(basis)
         out["reidentified"].append(basis == "reident"); out["match_level"].append(level); out["unresolved"].append(unres)
-    return pd.DataFrame(out)
+    result = pd.DataFrame(out)
+    # Taxonomic identity and temporal grade are orthogonal datapoint attributes.
+    meta = e["hub"].set_index("accepted_name")
+    for col in ("taxon_name", "ncbi_taxid", "ncbi_name", "ncbi_rank", "ncbi_mapping_basis", "temporal_grade"):
+        result[col] = result.accepted_name.map(meta[col])
+    grades = e["grade_pairs"]
+    for i in range(n):
+        grade = grades.get((pkey[i], vkey[i]))
+        if grade is not None:
+            result.loc[i, "temporal_grade"] = grade
+    return result
 
 
 def paper_folder_of_item(item, repo=REPO):

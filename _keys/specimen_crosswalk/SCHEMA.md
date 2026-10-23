@@ -129,3 +129,13 @@ record explicitly connects the biological specimen to the studbook animal.
 - Public builds use only `access_class = public`. Restricted overlays must be
   requested explicitly; their presence on disk must not silently change a
   build.
+
+
+### Independent temporal grade and NCBI identity
+
+Taxonomic equivalence does not imply matching temporal grade or pooling
+eligibility. Early fossil and living H. sapiens may both map to 9606 while
+retaining separate concepts and specimen kinds. See SPECIES_NAMING.md's
+2026-10-22 contract: the shared resolvers expose these as separate attributes.
+The archaic H. sapiens grade uses `source_hypothesis` for its published species
+assignment; it does not establish a modern specimen identification.

@@ -125,6 +125,11 @@ source(file.path(here, "..", "_keys", "resolve_species.R"))
 rs <- resolve_species(long_all$Species, source_publication = paper_folder_of_item(long_all$Source, file.path(here, "..")))
 long_all$species_printed <- long_all$Species; long_all$accepted_name <- rs$accepted_name
 long_all$species_basis <- rs$species_basis; long_all$reidentified <- rs$reidentified
+for (col in c("taxon_name", "ncbi_taxid", "ncbi_name", "ncbi_rank", "ncbi_mapping_basis"))
+  long_all[[col]] <- rs[[col]]
+# Specimen evidence takes precedence over a paper-wide label. No grade is
+# inferred from taxid: fossil and living H. sapiens share 9606.
+long_all$temporal_grade <- ifelse(long_all$sapiens_grade == "NA", NA_character_, long_all$sapiens_grade)
 long_all$note <- ifelse(long_all$Team=="Boyer_ACA_ecvpred",
                         "ECV-predicted ACA (upper bound; unfiltered only)", "")
 long_filt <- long_all[long_all$filtered, setdiff(names(long_all), c("filtered","note"))]
@@ -142,6 +147,11 @@ wide <- do.call(rbind, lapply(specs, function(k) {
   grd <- sub$sapiens_grade[!is.na(sub$sapiens_grade)][1]
   d <- data.frame(Specimen=k, Species=ifelse(is.na(sp),"",sp), Group=ifelse(is.na(gp),"",gp),
                   sapiens_grade=ifelse(is.na(grd),"NA",grd), stringsAsFactors=FALSE)
+  for (col in c("accepted_name", "taxon_name", "ncbi_taxid", "ncbi_name", "ncbi_rank", "ncbi_mapping_basis", "temporal_grade")) {
+    vals <- unique(sub[[col]][!is.na(sub[[col]])])
+    if (length(vals) > 1L) stop("Conflicting ", col, " for specimen ", k)
+    d[[col]] <- if (length(vals)) vals[1] else NA_character_
+  }
   ratios <- c(); teams <- c()
   for (t in FILT) {
     r <- sub[sub$Team==t, ]

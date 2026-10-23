@@ -13,6 +13,8 @@
 ##                   across papers) | 'ambiguous' (variant_name only, >1 accepted_name across papers ->
 ##                   NOT applied; falls through to hub) | 'hub' | 'unresolved'
 ##   unresolved      logical
+##   taxon_name, ncbi_taxid, ncbi_name, ncbi_rank, ncbi_mapping_basis, temporal_grade
+##                   independent taxonomic and temporal attributes from the hub/grade key
 ##
 ## Identity only (v1): no taxonomy argument. Base R + readr/dplyr; no network. All spokes
 ## `_keys/*/species_key.csv` (unified schema: variant_name, accepted_name, source_publication,
@@ -96,6 +98,10 @@ species_normalise <- function(x) {
                          show_col_types = FALSE, progress = FALSE, na = c("", "NA"))
   hub <- hub[!is.na(hub$accepted_name) & nzchar(hub$accepted_name), , drop = FALSE]
   hub_key <- .rs_key(hub$accepted_name)
+  grades <- readr::read_csv(file.path(keys_dir, "species_grade_key.csv"),
+    col_types = readr::cols(.default = readr::col_character()), show_col_types = FALSE)
+  e$grade_pairs <- paste(.rs_key(grades$source_publication), .rs_key(grades$variant_name), sep = "\r")
+  e$grades <- grades$temporal_grade
   e$variants <- v; e$variant_only <- vo; e$hub <- hub; e$hub_key <- hub_key; e$keys_dir <- keys_dir
   e$pair_key <- paste(v$pub_key, v$variant_key, sep = "\r")
   invisible(e)
@@ -150,6 +156,12 @@ resolve_species <- function(printed, source_publication = NULL, keys_dir = .rs_k
   # 4. fall back to the cleaned printed string (already in place)
   out$unresolved <- !hit
   out$reidentified <- out$species_basis == "reident"
+  # Keep the project anchor while exposing species identity and temporal grade.
+  hmeta <- match(out$accepted_name, e$hub$accepted_name)
+  for (col in c("taxon_name", "ncbi_taxid", "ncbi_name", "ncbi_rank", "ncbi_mapping_basis", "temporal_grade"))
+    out[[col]] <- e$hub[[col]][hmeta]
+  gi <- match(paste(pkey, vkey, sep = "\r"), e$grade_pairs)
+  out$temporal_grade[!is.na(gi)] <- e$grades[gi[!is.na(gi)]]
   rownames(out) <- NULL
   out
 }

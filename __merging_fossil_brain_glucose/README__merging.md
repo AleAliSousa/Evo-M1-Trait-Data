@@ -139,3 +139,15 @@ Boyer & Harrington 2018 *J. Hum. Evol.* 114:85–101 · Seymour et al. 2016/2017
 *R. Soc. Open Sci.* 3:160305 / 4:170846 · Kochiyama et al. 2018 *Sci. Rep.* 8:6296 ·
 Heiss et al. 2004 · Karbowski 2007 *BMC Biol.* 5:18 · Clarke & Sokoloff 1994 ·
 Duan 1983 *JASA* 78:605–610.
+
+
+### Taxonomic attributes (2026-10-22)
+
+Long, unfiltered, and wide outputs now also carry `taxon_name`, `ncbi_taxid`,
+`ncbi_name`, `ncbi_rank`, `ncbi_mapping_basis`, and `temporal_grade`.
+The wide output additionally carries `accepted_name`. `temporal_grade` is
+copied from the specimen-derived `sapiens_grade` (unknown is NA), independently
+of taxid. Early, recent, and modern-reference H. sapiens all carry 9606.
+Measurements, existing grade assignments, and consensus calculations are unchanged.
+Do not aggregate by taxid alone. A conflicting taxonomic attribute within one
+specimen causes the wide builder to stop for review.

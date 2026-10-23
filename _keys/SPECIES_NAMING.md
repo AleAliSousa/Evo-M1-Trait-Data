@@ -462,3 +462,36 @@ value-match safety net in 7c is what keeps those visible.
 - The per-paper snapshot → CSV → public-TSV build (it just stops doing any species harmonisation).
 - Anatomy/structure naming — this spec is species only; structures follow the parallel
   `anatomy_key.csv` → `anatomy_reference.csv` path and could get the same treatment later.
+
+
+## Taxonomic identity and temporal grade (2026-10-22)
+
+`accepted_name` remains the project concept/identity anchor for compatibility.
+The hub now carries separate `taxon_name`, `ncbi_taxid`, `ncbi_name`,
+`ncbi_rank`, `ncbi_mapping_basis`, and `temporal_grade` attributes. Both shared
+resolvers return these alongside their existing five columns. `ncbi_rank` is
+NCBI's rank; the hub's existing `rank` remains the project's concept rank.
+
+For example, `Homo sapiens (early)` has `taxon_name=Homo sapiens`,
+`ncbi_taxid=9606`, and `temporal_grade=early`. The archaic concept likewise
+carries 9606 and `archaic`, but `ncbi_mapping_basis=source_hypothesis`:
+this records Weaver's published assignment of Kabwe and Swanscombe, not a
+modern specimen re-identification. Use that basis when selecting taxonomically
+resolved observations. A taxid does not imply DNA was recovered from a specimen.
+
+A bare `Homo sapiens` does not imply a living specimen. Paper-specific evidence
+in `species_grade_key.csv` supplements concept-level grades; specimen-level
+evidence takes precedence when a paper mixes grades. Unknown grades stay NA.
+Taxid joins are annotation joins, never an instruction to aggregate. Grouping
+must retain temporal grade, specimen identity/status, and measurement basis.
+Neanderthal 63221 remains distinct even though NCBI ranks it within H. sapiens.
+
+`ncbi_taxonomy_snapshot.csv` records NCBI names, synonyms, ranks, redirects,
+and source URLs checked on 2026-10-22. `ncbi_taxid_reconciliation.csv` records
+the applied changes. Run `python3 _keys/sync_ncbi_taxids.py` to check hub/spoke
+agreement offline, or add `--apply` to reconcile against this snapshot. The
+script rejects ambiguous name matches. Updating the snapshot is an explicit
+curation step, not a live service dependency of a merge. Missing NCBI coverage
+remains missing. Existing project binomials and genus-level anchors are kept.
+Historical Pteropus giganteus and Onychogalea fraenata mappings are explicitly
+marked `retained_legacy_name`; current NCBI names are exposed separately.

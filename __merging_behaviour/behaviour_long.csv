@@ -3792,15 +3792,15 @@ Panthera pardus,locomotion,Angular_utilization_index_HL,percent,25.1908396946565
 Panthera pardus,locomotion,Limb_posture,category,Digitigrade,,1,1,1,TRUE,Medina,primary,,,Panthera pardus,Panthera pardus,verbatim,FALSE
 Panthera pardus,locomotion,Locomotor_habit,category,Scansorial,,1,1,1,TRUE,Medina,primary,,,Panthera pardus,Panthera pardus,verbatim,FALSE
 Panthera pardus,locomotion,Top_speed,category,Medium,,1,1,1,TRUE,Medina,primary,,,Panthera pardus,Panthera pardus,verbatim,FALSE
-Panthera tigris,locomotion,Angular_utilization_index_FL,percent,63.7047619047619,63.7047619047619,1,1,1,TRUE,Medina,primary,63.7047619047619,63.7047619047619,Panthera tigris,Panthera tigris,unresolved,FALSE
-Panthera tigris,locomotion,Angular_utilization_index_HL,percent,52.2261904761905,52.2261904761905,1,1,1,TRUE,Medina,primary,52.2261904761905,52.2261904761905,Panthera tigris,Panthera tigris,unresolved,FALSE
-Panthera tigris,gait,Duty_Factor,percent,64.41289317,64.41289317,1,1,1,TRUE,Wimberly,primary,64.41289317,64.41289317,Panthera tigris,Panthera tigris,unresolved,FALSE
-Panthera tigris,gait,Foot_Posture,category,digitigrade,,1,1,1,TRUE,Wimberly,primary,,,Panthera tigris,Panthera tigris,unresolved,FALSE
-Panthera tigris,gait,Gait,category,LSLC,,1,1,1,TRUE,Wimberly,primary,,,Panthera tigris,Panthera tigris,unresolved,FALSE
-Panthera tigris,locomotion,Limb_posture,category,Digitigrade,,1,1,1,TRUE,Medina,primary,,,Panthera tigris,Panthera tigris,unresolved,FALSE
-Panthera tigris,locomotion,Locomotor_habit,category,Cursorial,,1,1,1,TRUE,Medina,primary,,,Panthera tigris,Panthera tigris,unresolved,FALSE
-Panthera tigris,gait,Phase,percent,20.32129476,20.32129476,1,1,1,TRUE,Wimberly,primary,20.32129476,20.32129476,Panthera tigris,Panthera tigris,unresolved,FALSE
-Panthera tigris,locomotion,Top_speed,category,Fast,,1,1,1,TRUE,Medina,primary,,,Panthera tigris,Panthera tigris,unresolved,FALSE
+Panthera tigris,locomotion,Angular_utilization_index_FL,percent,63.7047619047619,63.7047619047619,1,1,1,TRUE,Medina,primary,63.7047619047619,63.7047619047619,Panthera tigris,Panthera tigris,hub,FALSE
+Panthera tigris,locomotion,Angular_utilization_index_HL,percent,52.2261904761905,52.2261904761905,1,1,1,TRUE,Medina,primary,52.2261904761905,52.2261904761905,Panthera tigris,Panthera tigris,hub,FALSE
+Panthera tigris,gait,Duty_Factor,percent,64.41289317,64.41289317,1,1,1,TRUE,Wimberly,primary,64.41289317,64.41289317,Panthera tigris,Panthera tigris,hub,FALSE
+Panthera tigris,gait,Foot_Posture,category,digitigrade,,1,1,1,TRUE,Wimberly,primary,,,Panthera tigris,Panthera tigris,hub,FALSE
+Panthera tigris,gait,Gait,category,LSLC,,1,1,1,TRUE,Wimberly,primary,,,Panthera tigris,Panthera tigris,hub,FALSE
+Panthera tigris,locomotion,Limb_posture,category,Digitigrade,,1,1,1,TRUE,Medina,primary,,,Panthera tigris,Panthera tigris,hub,FALSE
+Panthera tigris,locomotion,Locomotor_habit,category,Cursorial,,1,1,1,TRUE,Medina,primary,,,Panthera tigris,Panthera tigris,hub,FALSE
+Panthera tigris,gait,Phase,percent,20.32129476,20.32129476,1,1,1,TRUE,Wimberly,primary,20.32129476,20.32129476,Panthera tigris,Panthera tigris,hub,FALSE
+Panthera tigris,locomotion,Top_speed,category,Fast,,1,1,1,TRUE,Medina,primary,,,Panthera tigris,Panthera tigris,hub,FALSE
 Papio anubis,locomotion,Arboreal_terrestrial,category,T,,1,1,1,TRUE,Granatosky,primary,,,Papio anubis,Papio anubis,verbatim,FALSE
 Papio anubis,dexterity,Dexterity,1-7 scale,6,6,1,1,1,TRUE,Heffner,primary,6,6,Papio anubis,Papio anubis,verbatim,FALSE
 Papio anubis,behavioural_flexibility,Extractive_foraging_reduced_report_count,reports,3,3,1,1,1,TRUE,Reader,primary,3,3,Papio anubis,Papio anubis,verbatim,FALSE

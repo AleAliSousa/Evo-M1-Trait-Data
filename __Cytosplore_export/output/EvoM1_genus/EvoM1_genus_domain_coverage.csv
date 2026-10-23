@@ -1,26 +1,26 @@
-"species_sci","brain structure & size","cellular composition","cortical & cerebellar folding","body size","metabolism","life history","diet & ecology","behaviour & cognition","sensorimotor & motor pathways","hand & limb morphology","sleep & torpor","dataset metadata","Unclassified","cellular morphology","sensory performance"
-"Aotus nancymaae",107,61,9,2,8,17,27,18,4,12,2,2,0,9,7
-"Callithrix jacchus",104,54,2,2,8,19,27,23,0,12,2,2,0,14,3
-"Canis latrans",36,54,8,2,7,19,28,5,16,0,0,0,0,24,14
-"Chlorocebus sabaeus",4,0,0,2,1,11,17,21,8,7,1,2,0,18,4
-"Dasypus novemcinctus",23,0,8,2,3,14,28,4,16,0,0,0,0,1,0
-"Felis catus",23,54,8,2,27,16,28,4,18,0,0,0,0,10,16
-"Gorilla gorilla gorilla",127,34,1,2,8,19,26,27,12,16,0,2,0,20,0
-"Heterocephalus glaber",37,39,0,2,3,10,22,0,0,0,0,0,0,0,7
-"Homo sapiens",146,73,9,1,70,20,21,14,10,22,2,0,1,80,12
-"Macaca mulatta",103,84,9,2,39,19,28,30,15,17,2,2,0,35,13
-"Macaca nemestrina",103,84,9,2,39,19,28,30,15,17,2,2,0,35,13
-"Microcebus murinus",99,47,1,2,7,17,27,20,7,7,4,2,0,0,2
-"Monodelphis domestica",11,0,0,2,3,12,22,1,8,0,0,0,0,10,2
-"Mus musculus",12,39,2,2,34,19,26,2,7,0,4,0,0,9,15
-"Mustela putorius furo",36,58,8,2,3,16,26,4,3,0,0,0,0,15,13
-"Oryctolagus cuniculus",18,35,8,2,24,19,23,2,5,0,1,0,0,17,10
-"Otolemur garnettii",100,48,2,2,8,17,26,21,5,7,0,2,0,10,4
-"Pan troglodytes",145,42,7,2,10,19,29,29,18,17,1,2,0,50,4
-"Papio anubis",112,49,2,2,23,17,24,27,13,17,2,2,0,47,2
-"Rattus norvegicus",28,35,2,2,48,19,28,5,18,0,1,0,0,26,17
-"Saimiri boliviensis boliviensis",113,55,9,2,8,17,29,26,21,12,2,2,0,7,6
-"Sapajus apella",23,31,2,2,0,11,24,25,14,17,1,2,0,0,2
-"Sus scrofa",26,67,9,2,6,14,23,3,13,0,1,0,0,8,8
-"Tupaia belangeri",96,47,9,2,8,18,27,3,17,0,1,0,0,14,7
-"Urocitellus parryii",1,0,0,2,3,11,16,0,0,0,3,0,0,0,0
+"species_sci","brain structure & size","cellular composition","cortical & cerebellar folding","body size","metabolism","life history","diet & ecology","behaviour & cognition","sensorimotor & motor pathways","hand & limb morphology","sleep & torpor","dataset metadata","Unclassified","behaviour","brain size","cellular morphology","communication","ecology","sensory","sensory performance","sociality"
+"Aotus nancymaae",110,61,9,11,8,22,46,22,4,12,5,2,8,1,6,9,1,25,0,7,0
+"Callithrix jacchus",107,54,2,11,8,24,49,32,0,12,5,2,8,0,6,14,2,24,0,3,1
+"Canis latrans",37,54,8,2,7,20,28,5,16,0,0,0,0,1,0,24,0,0,0,14,0
+"Chlorocebus sabaeus",8,0,0,11,1,16,32,33,8,7,4,2,0,0,0,18,1,21,4,4,11
+"Dasypus novemcinctus",23,0,8,2,3,15,28,3,16,0,0,0,0,1,0,1,0,0,0,0,0
+"Felis catus",23,54,8,2,27,17,28,4,18,0,0,0,0,1,0,10,0,0,0,16,0
+"Gorilla gorilla gorilla",129,34,1,9,8,24,40,37,12,16,0,2,0,0,10,20,2,23,0,0,2
+"Heterocephalus glaber",38,39,0,2,3,10,22,1,0,0,0,0,2,0,0,0,0,0,0,7,0
+"Homo sapiens",147,73,9,3,70,20,29,15,10,22,5,0,1,0,10,80,0,1,0,12,9
+"Macaca mulatta",106,84,9,11,39,24,50,41,15,17,5,2,0,1,6,35,1,24,4,13,11
+"Macaca nemestrina",106,84,9,11,39,24,50,41,15,17,5,2,0,1,6,35,1,24,4,13,11
+"Microcebus murinus",102,47,1,11,7,22,42,23,7,7,7,2,0,0,6,0,4,31,2,2,0
+"Monodelphis domestica",11,0,0,2,3,13,22,1,8,0,0,0,0,0,0,10,0,0,0,2,0
+"Mus musculus",12,39,2,2,34,20,26,2,7,0,4,0,0,1,0,9,0,0,0,15,0
+"Mustela putorius furo",36,58,8,2,3,17,26,4,3,0,0,0,0,0,0,15,0,0,0,13,0
+"Oryctolagus cuniculus",18,35,8,2,24,19,23,2,5,0,1,0,0,1,0,17,0,0,0,10,0
+"Otolemur garnettii",102,48,2,9,8,22,36,23,5,7,0,2,0,0,6,10,3,26,2,4,0
+"Pan troglodytes",148,42,7,11,10,25,51,41,18,17,4,2,0,0,10,50,2,24,0,4,11
+"Papio anubis",115,49,2,11,23,22,46,39,13,17,5,2,0,0,10,47,1,26,4,2,9
+"Rattus norvegicus",28,35,2,2,48,20,28,5,18,0,1,0,0,1,0,26,0,0,0,17,0
+"Saimiri boliviensis boliviensis",116,55,9,11,8,22,48,36,21,12,5,2,8,0,6,7,2,23,0,6,11
+"Sapajus apella",25,31,2,9,0,16,36,36,14,17,1,2,0,0,0,0,0,22,0,2,9
+"Sus scrofa",26,67,9,2,6,15,23,3,13,0,1,0,0,1,0,8,0,0,0,8,0
+"Tupaia belangeri",96,47,9,2,8,19,27,3,17,0,1,0,0,1,0,14,0,0,3,7,0
+"Urocitellus parryii",1,0,0,2,3,11,16,0,0,0,3,0,0,0,0,0,0,0,0,0,0

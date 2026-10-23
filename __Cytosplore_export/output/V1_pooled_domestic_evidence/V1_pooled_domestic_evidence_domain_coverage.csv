@@ -1,18 +1,18 @@
-"species_sci","brain structure & size","cellular composition","cortical & cerebellar folding","body size","metabolism","life history","diet & ecology","behaviour & cognition","sensorimotor & motor pathways","hand & limb morphology","sleep & torpor","dataset metadata","Unclassified","cellular morphology","sensory performance"
-"Aotus nancymaae",6,3,0,2,1,15,26,10,4,0,0,2,0,0,0
-"Callithrix jacchus",104,54,2,2,8,19,27,23,0,12,1,2,0,14,3
-"Dasypus novemcinctus",22,0,8,2,3,14,28,4,16,0,0,0,0,1,0
-"Felis catus",21,54,8,2,27,14,23,4,18,0,0,0,0,10,14
-"Heterocephalus glaber",37,39,0,2,3,10,22,0,0,0,0,0,0,0,7
-"Homo sapiens",146,73,9,1,70,20,21,14,10,17,2,0,1,80,12
-"Macaca mulatta",89,65,8,2,34,19,26,25,15,17,2,2,0,10,7
-"Microcebus murinus",99,47,1,2,7,17,27,20,7,7,4,2,0,0,2
-"Monodelphis domestica",1,0,0,2,3,12,21,1,8,0,0,0,0,10,2
-"Mus musculus",12,39,2,2,34,19,25,2,7,0,4,0,0,9,15
-"Mustela putorius furo",17,58,1,2,2,14,11,2,3,0,0,0,0,0,8
-"Otolemur garnettii",17,48,2,2,3,17,25,17,5,7,0,2,0,6,0
-"Pan troglodytes",145,42,7,2,10,19,29,29,15,17,1,2,0,50,4
-"Phocoena phocoena",6,0,1,2,2,17,21,4,2,0,2,0,0,9,1
-"Rattus norvegicus",28,35,2,2,48,19,27,5,18,0,1,0,0,26,17
-"Sus scrofa",24,67,9,2,6,14,6,3,9,0,1,0,0,8,8
-"Tupaia belangeri",6,3,1,2,3,16,20,3,7,0,0,0,0,9,3
+"species_sci","brain structure & size","cellular composition","cortical & cerebellar folding","body size","metabolism","life history","diet & ecology","behaviour & cognition","sensorimotor & motor pathways","hand & limb morphology","sleep & torpor","dataset metadata","Unclassified","behaviour","brain size","cellular morphology","communication","ecology","sensory","sensory performance","sociality"
+"Aotus nancymaae",6,3,0,8,1,16,31,13,4,0,0,2,0,0,0,0,0,13,0,0,0
+"Callithrix jacchus",107,54,2,11,8,24,49,32,0,12,4,2,8,0,6,14,2,21,0,3,1
+"Dasypus novemcinctus",22,0,8,2,3,15,28,3,16,0,0,0,0,1,0,1,0,0,0,0,0
+"Felis catus",21,54,8,2,27,14,23,4,18,0,0,0,0,1,0,10,0,0,0,14,0
+"Heterocephalus glaber",38,39,0,2,3,10,22,1,0,0,0,0,2,0,0,0,0,0,0,7,0
+"Homo sapiens",147,73,9,3,70,20,29,15,10,17,5,0,1,0,10,80,0,1,0,12,9
+"Macaca mulatta",92,65,8,11,34,24,48,35,15,17,5,2,0,1,6,10,0,16,4,7,9
+"Microcebus murinus",102,47,1,11,7,22,42,23,7,7,7,2,0,0,6,0,4,30,2,2,0
+"Monodelphis domestica",1,0,0,2,3,12,21,1,8,0,0,0,0,0,0,10,0,0,0,2,0
+"Mus musculus",12,39,2,2,34,20,25,2,7,0,4,0,0,1,0,9,0,0,0,15,0
+"Mustela putorius furo",17,58,1,2,2,14,11,2,3,0,0,0,0,0,0,0,0,0,0,8,0
+"Otolemur garnettii",19,48,2,9,3,22,34,17,5,7,0,2,0,0,0,6,3,23,2,0,0
+"Pan troglodytes",148,42,7,11,10,25,51,41,15,17,4,2,0,0,10,50,2,24,0,4,11
+"Phocoena phocoena",6,0,1,2,2,17,21,3,2,0,2,0,0,0,0,9,0,0,0,1,0
+"Rattus norvegicus",28,35,2,2,48,19,27,5,18,0,1,0,0,1,0,26,0,0,0,17,0
+"Sus scrofa",24,67,9,2,6,15,6,3,9,0,1,0,0,0,0,8,0,0,0,8,0
+"Tupaia belangeri",6,3,1,2,3,17,20,3,7,0,0,0,0,0,0,9,0,0,0,3,0

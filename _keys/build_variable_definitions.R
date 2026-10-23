@@ -211,7 +211,7 @@ XW <- as.data.frame(XW, stringsAsFactors = FALSE)
 supp_map <- rd(file.path(repo, "__merging_supplementary", "supplementary_sources.csv"))
 if (!is.null(supp_map)) {
   supp_map <- supp_map[supp_map$source_publication %in%
-    c("Bowmaker_etal_1991","Campbell_Tobler_1984","Dunn_Smaers_2018","GalánAcedo_etal_2019","Gamba_etal_2015","Grueter_etal_2013","Jacobs_etal_2019","Kamilar_Cooper_2013","McComb_Semple_2005","MorroghBernard_etal_2008","Nunn_Samson_2018","Pasquaretta_etal_2014","Zimmermann__2017"), , drop = FALSE]
+    c("Zhu_etal_2023","Dunbar_Bever_1998","Bowmaker_etal_1991","Campbell_Tobler_1984","Dunn_Smaers_2018","GalánAcedo_etal_2019","Gamba_etal_2015","Grueter_etal_2013","Jacobs_etal_2019","Kamilar_Cooper_2013","McComb_Semple_2005","MorroghBernard_etal_2008","Nunn_Samson_2018","Pasquaretta_etal_2014","Zimmermann__2017"), , drop = FALSE]
   XW <- rbind(XW, data.frame(label = paste0(supp_map$Measure, " (", supp_map$Units, ")"),
                             code = supp_map$value_col, folder = supp_map$source_publication))
 }

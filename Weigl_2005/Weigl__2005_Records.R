@@ -1,4 +1,4 @@
-# Weigl__2005_Records.R — image-checked primary ages with provisional OCR context -> public comparison item.
+# Weigl__2005_Records.R — provisional OCR snapshot -> public comparison item.
 # The frozen snapshot is an OCR capture, NOT a visually complete transcription.
 # Keep every source row and review field; no species aggregation or merge wiring.
 .sp <- local({
@@ -26,7 +26,7 @@ stopifnot(is.character(item_encoded), nzchar(item_encoded), !grepl('_$', item_en
 frozen <- file.path(item_dir, paste0(item_name, '_snapshot.csv'))
 final.dataframe <- read.csv(frozen, colClasses = 'character', check.names = FALSE,
                             stringsAsFactors = FALSE, fileEncoding = 'UTF-8')
-stopifnot(nrow(final.dataframe) == 4552L,
+stopifnot(nrow(final.dataframe) == 4532L,
           !anyDuplicated(final.dataframe$source_id),
           all(c('taxon_printed_ocr', 'taxon_printed_verified',
                 'age_years_verified', 'age_months_verified',
@@ -47,8 +47,7 @@ final.dataframe$age_review_level <- ifelse(
   nzchar(final.dataframe$age_visual_check) |
     nzchar(final.dataframe$age_years_verified) |
     nzchar(final.dataframe$age_months_verified) |
-    nzchar(final.dataframe$age_days_verified) |
-    nzchar(final.dataframe$age_printed_verified),
+    nzchar(final.dataframe$age_days_verified),
   'image_checked', 'OCR_draft'
 )
 

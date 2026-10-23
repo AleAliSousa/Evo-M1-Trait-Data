@@ -1,7 +1,7 @@
 # HMBA species-trait tables for the Cytosplore M1 viewer (DRAFT)
 
 
-Built 2026-10-20 from Evo-M1-Trait-Data commit `unknown (not a git checkout)` by `__Cytosplore_export/build_cytosplore_traits.R`.
+Built 2026-10-22 from Evo-M1-Trait-Data commit `02ea210 (from .git/HEAD; git command unavailable)` by `__Cytosplore_export/build_cytosplore_traits.R`.
 Re-run that script to regenerate everything here; do not edit these CSVs by hand.
 
 ## What this is
@@ -13,11 +13,11 @@ Comparative species traits for the 4-species `HMBA` cohort (`_keys/species_cohor
 | file | one row per | use |
 |---|---|---|
 | `HMBA_species.csv` | species (4) | species list, taxonomy, which data labels were pooled (match level: species), per-domain counts |
-| `HMBA_traits_wide.csv` | species x variable (560) | **recommended viewer input**: species x trait matrix, one value per cell |
+| `HMBA_traits_wide.csv` | species x variable (671) | **recommended viewer input**: species x trait matrix, one value per cell |
 | `HMBA_traits_wide_core.csv` | species x variable (79) | same, only traits held for >= 4 of 4 species (`in_core`) |
-| `HMBA_variable_dictionary.csv` | variable (560) | column metadata for the wide tables: domain, structure, measure, unit, definition, coverage |
-| `HMBA_traits_cells.csv` | species x variable cell (1234) | how each wide cell was made: n values, aggregation, min/max, sources |
-| `HMBA_traits_long.csv` | value (1313) | full provenance: every source value behind every cell |
+| `HMBA_variable_dictionary.csv` | variable (671) | column metadata for the wide tables: domain, structure, measure, unit, definition, coverage |
+| `HMBA_traits_cells.csv` | species x variable cell (1448) | how each wide cell was made: n values, aggregation, min/max, sources |
+| `HMBA_traits_long.csv` | value (1567) | full provenance: every source value behind every cell |
 | `HMBA_domain_coverage.csv` | species | n distinct variables per domain |
 | `BUILD_INFO.txt` | - | build stamp and counts |
 
@@ -51,29 +51,35 @@ Source audit (run `python3 __Cytosplore_export/audit_cytosplore_variables.py HMB
 
 | species_sci | common_name | Order | n_variables | data_labels |
 |---|---|---|---|---|
-| Callithrix jacchus | Common marmoset | Primates | 271 | Callithrix jacchus |
-| Homo sapiens | Human | Primates | 476 | Homo sapiens |
-| Macaca mulatta | Rhesus macaque | Primates | 321 | Macaca mulatta |
-| Mus musculus | Mouse | Rodentia | 170 | Mus musculus |
+| Callithrix jacchus | Common marmoset | Primates | 360 | Callithrix jacchus |
+| Homo sapiens | Human | Primates | 511 | Homo sapiens |
+| Macaca mulatta | Rhesus macaque | Primates | 409 | Macaca mulatta |
+| Mus musculus | Mouse | Rodentia | 172 | Mus musculus |
 
 ## Variables per domain (all / core / M1-motor flagged)
 
 | domain | variables | core | m1_motor |
 |---|---|---|---|
-| brain structure & size | 160 | 9 | 4 |
+| brain structure & size | 163 | 9 | 4 |
 | cellular composition | 89 | 28 | 3 |
 | cortical & cerebellar folding | 9 | 1 | 0 |
-| body size | 2 | 1 | 0 |
+| body size | 11 | 1 | 0 |
 | metabolism | 72 | 3 | 2 |
-| life history | 20 | 18 | 0 |
-| diet & ecology | 29 | 17 | 0 |
-| behaviour & cognition | 30 | 1 | 9 |
+| life history | 26 | 18 | 0 |
+| diet & ecology | 51 | 17 | 0 |
+| behaviour & cognition | 41 | 1 | 9 |
 | sensorimotor & motor pathways | 19 | 0 | 19 |
 | hand & limb morphology | 17 | 0 | 17 |
-| sleep & torpor | 5 | 0 | 0 |
-| Unclassified | 1 | 0 | 0 |
+| sleep & torpor | 8 | 0 | 0 |
+| Unclassified | 9 | 0 | 0 |
+| behaviour | 1 | 0 | 0 |
+| brain size | 10 | 0 | 1 |
 | cellular morphology | 87 | 0 | 27 |
+| communication | 2 | 0 | 0 |
+| ecology | 22 | 0 | 1 |
+| sensory | 4 | 0 | 0 |
 | sensory performance | 20 | 1 | 0 |
+| sociality | 10 | 0 | 0 |
 
 ## Known caveats carried over from the compilation
 

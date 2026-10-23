@@ -185,3 +185,19 @@ The 57-item inventory batch adds 84 distinct source-specific variables; together
 Mappings retain source labels, units, filters and roles. These are display summaries of contributing records; `n_specimens` here is a row count, not necessarily an animal count. The Campbell daily-sleep mapping excludes bounds, explicitly short recordings, multi-condition cells and drowsiness-included values. Opsin presence is categorical and is not a behavioural colour-vision test.
 
 Item-specific definitions are bound using the exact item name so repeated column codes within a paper cannot borrow another table's meaning. The live registry still requires owner-paste registration; explicit source CSV paths allow these mappings to work before that step.
+
+## Dunbar & Bever group size (2026-10-22)
+Tables 1–2 add `Social_group_size_DunbarBever1998 (count)`: 47 carnivore species,
+with 11 identical repeated group-size entries counted once (Table 1 retained).
+Trailing species-name footnote numbers are removed for matching. These are
+Gittleman-derived secondary compilation values, kept source-specific; Table 3
+contains genus means and is not mapped. See `_checks/social_variables/README.md`
+for the before/after coverage and overlap audit. No cross-source averaging or
+wild-to-domestic substitution is introduced.
+
+Zhu et al. (2023) social organization is now mapped through
+`Zhu_etal_2023/Zhu_etal_2023_SocialOrganization.csv`: 974 Data1 species plus 34
+Data3-only species, four nominal variables, with five explicitly source-reported
+primary social observations. See `Zhu_etal_2023/SOCIAL_MERGE.md` for provenance,
+duplicate handling and rebuild instructions, and `_checks/social_variables/`
+for coverage and taxonomy audits. These labels are not pooled with mating systems.

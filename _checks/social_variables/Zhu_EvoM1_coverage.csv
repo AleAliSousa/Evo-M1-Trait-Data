@@ -1,0 +1,26 @@
+"Species","previous_category_available","Zhu_available","Zhu_value","additional_category_coverage"
+"Homo sapiens",TRUE,TRUE,"Group-living",FALSE
+"Pan troglodytes",TRUE,TRUE,"Group-living",FALSE
+"Gorilla gorilla gorilla",TRUE,FALSE,,FALSE
+"Macaca mulatta",TRUE,TRUE,"Group-living",FALSE
+"Macaca nemestrina",FALSE,TRUE,"Group-living",TRUE
+"Papio anubis",TRUE,TRUE,"Group-living",FALSE
+"Chlorocebus sabaeus",FALSE,TRUE,"Group-living",TRUE
+"Saimiri boliviensis boliviensis",TRUE,FALSE,,FALSE
+"Sapajus apella",FALSE,TRUE,"Group-living",TRUE
+"Callithrix jacchus",TRUE,TRUE,"Pair-living; Group-living",FALSE
+"Aotus nancymaae",TRUE,FALSE,,FALSE
+"Otolemur garnettii",TRUE,TRUE,"Solitary",FALSE
+"Microcebus murinus",TRUE,TRUE,"Group-living",FALSE
+"Tupaia belangeri",TRUE,TRUE,"Solitary",FALSE
+"Mus musculus",TRUE,TRUE,"Group-living",FALSE
+"Rattus norvegicus",TRUE,TRUE,"Group-living",FALSE
+"Heterocephalus glaber",FALSE,TRUE,"Group-living",TRUE
+"Urocitellus parryii",FALSE,TRUE,"Solitary",TRUE
+"Oryctolagus cuniculus",TRUE,TRUE,"Pair-living; Group-living",FALSE
+"Mustela putorius furo",TRUE,FALSE,,FALSE
+"Canis latrans",TRUE,TRUE,"Pair-living; Group-living",FALSE
+"Felis catus",FALSE,TRUE,"Solitary",TRUE
+"Sus scrofa",TRUE,TRUE,"Group-living",FALSE
+"Dasypus novemcinctus",FALSE,TRUE,"Solitary",TRUE
+"Monodelphis domestica",FALSE,TRUE,"Solitary",TRUE

@@ -1,0 +1,1007 @@
+"Order"	"Family"	"Species_Savage2004"	"Mass_g"	"BMR_W"	"Species_avg_mass_g"	"Species_avg_BMR_W"	"References"	"species_block"	"is_species_avg_row"
+"Artiodactyla"	"Antilocapridae"	"Antilocapra americana"	32000	49.984	34779.3	50.973	"Lovegrove (2000)"	1	TRUE
+"Artiodactyla"	"Antilocapridae"	"Antilocapra americana"	37800	51.981			"White & Seymour (2003)"	1	FALSE
+"Artiodactyla"	"Bovidae"	"Bos taurus"	347000	306.77	347000	306.77	"Heusner (1991)"	2	TRUE
+"Artiodactyla"	"Bovidae"	"Cephalophus monticola"	4200	10.075	4200	10.075	"Lovegrove (2000)"	3	TRUE
+"Artiodactyla"	"Bovidae"	"Connochaetes taurinus"	196500	230.073	196500	230.073	"White & Seymour (2003); Rogerson (1968)"	4	TRUE
+"Artiodactyla"	"Bovidae"	"Kobus ellipsiprymnus"	1e+05	148.949	1e+05	148.949	"Lovegrove (2000)"	5	TRUE
+"Artiodactyla"	"Bovidae"	"Madoqua kirkii"	4290	11.966	4290	11.966	"Lovegrove (2000)"	6	TRUE
+"Artiodactyla"	"Bovidae"	"Oreamnos americanus"	32000	46.414	32000	46.414	"Lovegrove (2000)"	7	TRUE
+"Artiodactyla"	"Bovidae"	"Ovis canadensis"	65000	123.287	67030.8	114.674	"Lovegrove (2000)"	8	TRUE
+"Artiodactyla"	"Bovidae"	"Ovis canadensis"	69125	106.663			"White & Seymour (2003)"	8	FALSE
+"Artiodactyla"	"Bovidae"	"Raphicerus campestris"	9600	20.619	9600	20.619	"Lovegrove (2000)"	9	TRUE
+"Artiodactyla"	"Bovidae"	"Taurotragus oryx"	133300	180.15	141403.7	190.209	"Heusner (1991)"	10	TRUE
+"Artiodactyla"	"Bovidae"	"Taurotragus oryx"	150000	200.83			"Lovegrove (2000)"	10	FALSE
+"Artiodactyla"	"Camelidae"	"Camelus dromedarius"	407000	224.779	407000	224.779	"Lovegrove (2000)"	11	TRUE
+"Artiodactyla"	"Camelidae"	"Lama glama"	115000	148.94	115000	148.94	"Heusner (1991)"	12	TRUE
+"Artiodactyla"	"Canidae"	"Cervus elaphus"	67000	112.43	67000	112.43	"Heusner (1991)"	13	TRUE
+"Artiodactyla"	"Cervidae"	"Alces alces"	325000	286.847	325000	286.847	"White & Seymour (2003)"	14	TRUE
+"Artiodactyla"	"Cervidae"	"Capreolus capreolus"	21500	46.347	21500	46.347	"Weiner (1977)"	15	TRUE
+"Artiodactyla"	"Cervidae"	"Odocoileus virginianus"	58588	142.863	61862.5	123.447	"White & Seymour (2003)"	16	TRUE
+"Artiodactyla"	"Cervidae"	"Odocoileus virginianus"	65320	106.67			"Heusner (1991)"	16	FALSE
+"Artiodactyla"	"Cervidae"	"Rangifer tarandus"	85000	119.66	85000	119.66	"Heusner (1991)"	17	TRUE
+"Artiodactyla"	"Suidae"	"Sus scrofa"	135000	104.15	135000	104.15	"Heusner (1991)"	18	TRUE
+"Artiodactyla"	"Tayassuidae"	"Pecari tajacu"	20500	33.165	20500	33.165	"White & Seymour (2003)"	19	TRUE
+"Artiodactyla"	"Tragulidae"	"Tragulus javanicus"	1613	4.9	1615.5	4.883	"Heusner (1991)"	20	TRUE
+"Artiodactyla"	"Tragulidae"	"Tragulus javanicus"	1618	4.865			"Lovegrove (2000)"	20	FALSE
+"Carnivora"	"Canidae"	"Alopex lagopus"	3600	7.665	3600	7.665	"White & Seymour (2003)"	21	TRUE
+"Carnivora"	"Canidae"	"Canis latrans"	10000	14.99	10148.9	19.423	"White & Seymour (2003)"	22	TRUE
+"Carnivora"	"Canidae"	"Canis latrans"	10300	25.167			"Lovegrove (2000)"	22	FALSE
+"Carnivora"	"Canidae"	"Canis mesomelas"	7720	21.533	7720	21.533	"White & Seymour (2003)"	23	TRUE
+"Carnivora"	"Canidae"	"Cerdocyon thous"	5444	8.502	5444	8.502	"White & Seymour (2003)"	24	TRUE
+"Carnivora"	"Canidae"	"Lycaon pictus"	8750	33.01	8750	33.01	"Heusner (1991)"	25	TRUE
+"Carnivora"	"Canidae"	"Vulpes velox"	1769	4.948	1769	4.948	"White & Seymour (2003)"	26	TRUE
+"Carnivora"	"Canidae"	"Vulpes vulpes"	4440	13.623	4580.3	13.731	"White & Seymour (2003)"	27	TRUE
+"Carnivora"	"Canidae"	"Vulpes vulpes"	4725	13.841			"White & Seymour (2003)"	27	FALSE
+"Carnivora"	"Canidae"	"Vulpes zerda"	1106	2.23	1159.2	2.693	"Heusner (1991)"	28	TRUE
+"Carnivora"	"Canidae"	"Vulpes zerda"	1215	3.252			"White & Seymour (2003)"	28	FALSE
+"Carnivora"	"Felidae"	"Acinonyx jubatus"	37900	50.107	38446.1	61.77	"White & Seymour (2003)"	29	TRUE
+"Carnivora"	"Felidae"	"Acinonyx jubatus"	39000	76.148			"Lovegrove (2000)"	29	FALSE
+"Carnivora"	"Felidae"	"Felis concolor"	37200	49.326	37200	49.326	"White & Seymour (2003)"	30	TRUE
+"Carnivora"	"Felidae"	"Herpailurus yaguarondi"	8400	9.69	8400	9.69	"White & Seymour (2003)"	31	TRUE
+"Carnivora"	"Felidae"	"Leopardus pardalis"	10500	17.439	10500	17.439	"White & Seymour (2003)"	32	TRUE
+"Carnivora"	"Felidae"	"Leopardus wiedii"	3600	5.227	3600	5.227	"White & Seymour (2003)"	33	TRUE
+"Carnivora"	"Felidae"	"Leptailurus serval"	1012	1.44	1012	1.44	"Lovegrove (2000)"	34	TRUE
+"Carnivora"	"Felidae"	"Lynx rufus"	9400	23.542	9400	23.542	"White & Seymour (2003)"	35	TRUE
+"Carnivora"	"Felidae"	"Panthera leo"	98000	94.58	98000	94.58	"White & Seymour (2003)"	36	TRUE
+"Carnivora"	"Felidae"	"Panthera onca"	50400	62.419	50400	62.419	"White & Seymour (2003)"	37	TRUE
+"Carnivora"	"Felidae"	"Panthera tigris"	137900	133.859	137900	133.859	"White & Seymour (2003)"	38	TRUE
+"Carnivora"	"Herpestidae"	"Galerella sanguinea"	500	2.12	519.6	2.202	"Kamau et al. (1979)"	39	TRUE
+"Carnivora"	"Herpestidae"	"Galerella sanguinea"	540	2.287			"White & Seymour (2003)"	39	FALSE
+"Carnivora"	"Herpestidae"	"Herpestes javanicus"	611	2.248	611	2.248	"White & Seymour (2003)"	40	TRUE
+"Carnivora"	"Herpestidae"	"Suricata suricatta"	850	1.729	850	1.729	"White & Seymour (2003)"	41	TRUE
+"Carnivora"	"Hyaenidae"	"Hyaena hyaena"	34300	31.954	34300	31.954	"White & Seymour (2003)"	42	TRUE
+"Carnivora"	"Hyaenidae"	"Proteles cristatus"	7710	10.925	7902.6	11.563	"Lovegrove (2000)"	43	TRUE
+"Carnivora"	"Hyaenidae"	"Proteles cristatus"	8100	12.239			"White & Seymour (2003)"	43	FALSE
+"Carnivora"	"Mustelidae"	"Eira barbara"	2950	6.811	2950	6.811	"White & Seymour (2003)"	44	TRUE
+"Carnivora"	"Mustelidae"	"Enhydra lutris"	18000	67.278	26832.8	98.479	"Lovegrove (2000)"	45	TRUE
+"Carnivora"	"Mustelidae"	"Enhydra lutris"	40000	144.15			"Heusner (1991)"	45	FALSE
+"Carnivora"	"Mustelidae"	"Gulo gulo"	12700	31.765	12700	31.765	"White & Seymour (2003)"	46	TRUE
+"Carnivora"	"Mustelidae"	"Lutra lutra"	10000	25.104	10000	25.104	"White & Seymour (2003)"	47	TRUE
+"Carnivora"	"Mustelidae"	"Martes americana"	900	3.319	966.5	3.579	"White & Seymour (2003)"	48	TRUE
+"Carnivora"	"Mustelidae"	"Martes americana"	1038	3.86			"Heusner (1991)"	48	FALSE
+"Carnivora"	"Mustelidae"	"Martes martes"	920	4	920	4	"White & Seymour (2003)"	49	TRUE
+"Carnivora"	"Mustelidae"	"Meles meles"	11050	16.647	11050	16.647	"White & Seymour (2003)"	50	TRUE
+"Carnivora"	"Mustelidae"	"Mustela erminea"	75	0.93	125.5	1.276	"Heusner (1991)"	51	TRUE
+"Carnivora"	"Mustelidae"	"Mustela erminea"	210	1.75			"Heusner (1991)"	51	FALSE
+"Carnivora"	"Mustelidae"	"Mustela frenata"	225	1.344	225	1.344	"White & Seymour (2003)"	52	TRUE
+"Carnivora"	"Mustelidae"	"Mustela vison"	660	2.722	660	2.722	"White & Seymour (2003)"	53	TRUE
+"Carnivora"	"Mustelidae"	"Spilogale putorius"	624	1.674	624	1.674	"White & Seymour (2003)"	54	TRUE
+"Carnivora"	"Mustelidae"	"Taxidea taxus"	9000	15.062	9000	15.062	"White & Seymour (2003)"	55	TRUE
+"Carnivora"	"Phocidae"	"Phoca fasciata"	54000	118.59	54000	118.59	"Heusner (1991)"	56	TRUE
+"Carnivora"	"Phocidae"	"Phoca groenlandica"	150000	168.93	150000	168.93	"Heusner (1991)"	57	TRUE
+"Carnivora"	"Phocidae"	"Phoca vitulina"	27400	73.29	27400	73.29	"Heusner (1991)"	58	TRUE
+"Carnivora"	"Procyonidae"	"Ailurus fulgens"	5740	4.898	5740	4.898	"White & Seymour (2003)"	59	TRUE
+"Carnivora"	"Procyonidae"	"Bassariscus sumichrasti"	1280	3.537	1280	3.537	"White & Seymour (2003)"	60	TRUE
+"Carnivora"	"Procyonidae"	"Nasua narica"	3670	6.733	3670	6.733	"White & Seymour (2003)"	61	TRUE
+"Carnivora"	"Procyonidae"	"Nasua nasua"	3850	5.649	3924.3	5.591	"Lovegrove (2000)"	62	TRUE
+"Carnivora"	"Procyonidae"	"Nasua nasua"	4000	5.534			"White & Seymour (2003)"	62	FALSE
+"Carnivora"	"Procyonidae"	"Potos flavus"	2215	4.177	2318	4.294	"Lovegrove (2000)"	63	TRUE
+"Carnivora"	"Procyonidae"	"Potos flavus"	2343	4.441			"White & Seymour (2003)"	63	FALSE
+"Carnivora"	"Procyonidae"	"Potos flavus"	2400	4.27			"Heusner (1991)"	63	FALSE
+"Carnivora"	"Procyonidae"	"Procyon cancrivorus"	1160	2.588	1160	2.588	"White & Seymour (2003)"	64	TRUE
+"Carnivora"	"Procyonidae"	"Procyon lotor"	4620	12.191	4842.2	10.428	"Lovegrove (2000)"	65	TRUE
+"Carnivora"	"Procyonidae"	"Procyon lotor"	5075	8.92			"White & Seymour (2003)"	65	FALSE
+"Carnivora"	"Ursidae"	"Melursus ursinus"	66957	47.064	66957	47.064	"McNab (1992)"	66	TRUE
+"Carnivora"	"Viverridae"	"Arctictis binturong"	14280	12.747	14280	12.747	"White & Seymour (2003)"	67	TRUE
+"Carnivora"	"Viverridae"	"Arctogalidia trivirgata"	2010	3.085	2010	3.085	"White & Seymour (2003)"	68	TRUE
+"Carnivora"	"Viverridae"	"Fossa fossana"	2260	5.09	2260	5.09	"Heusner (1991)"	69	TRUE
+"Carnivora"	"Viverridae"	"Genetta tigrina"	1698	4.167	1699	4.189	"White & Seymour (2003)"	70	TRUE
+"Carnivora"	"Viverridae"	"Genetta tigrina"	1700	4.21			"Heusner (1991)"	70	FALSE
+"Carnivora"	"Viverridae"	"Nandinia binotata"	4270	4.814	4270	5.565	"White & Seymour (2003)"	71	TRUE
+"Carnivora"	"Viverridae"	"Nandinia binotata"	4270	6.432			"Lovegrove (2000)"	71	FALSE
+"Carnivora"	"Viverridae"	"Paradoxurus hermaphroditus"	3160	7.665	3282.6	5.534	"White & Seymour (2003)"	72	TRUE
+"Carnivora"	"Viverridae"	"Paradoxurus hermaphroditus"	3410	3.995			"Lovegrove (2000)"	72	FALSE
+"Chiroptera"	"Emballonuridae"	"Peropteryx macrotis"	5	0.065	5	0.065	"White & Seymour (2003)"	73	TRUE
+"Chiroptera"	"Emballonuridae"	"Saccopteryx bilineata"	7.8	0.081	7.8	0.081	"Lovegrove (2000)"	74	TRUE
+"Chiroptera"	"Hipposideridae"	"Rhinonycteris aurantius"	8.27	0.09	8.3	0.09	"Baudinette et al. (2000)"	75	TRUE
+"Chiroptera"	"Megadermatidae"	"Macroderma gigas"	107.2	0.526	126	0.639	"Baudinette et al. (2000)"	76	TRUE
+"Chiroptera"	"Megadermatidae"	"Macroderma gigas"	148	0.776			"McNab (1969)"	76	FALSE
+"Chiroptera"	"Molossidae"	"Eumops perotis"	56	0.222	56	0.222	"White & Seymour (2003)"	77	TRUE
+"Chiroptera"	"Molossidae"	"Molossus molossus"	15.6	0.126	15.6	0.126	"White & Seymour (2003)"	78	TRUE
+"Chiroptera"	"Molossidae"	"Nyctinomops laticaudatus"	14	0.062	14	0.062	"Lovegrove (2000)"	79	TRUE
+"Chiroptera"	"Molossidae"	"Tadarida brasiliensis"	10.4	0.12	13.3	0.117	"Heusner (1991)"	80	TRUE
+"Chiroptera"	"Molossidae"	"Tadarida brasiliensis"	16.9	0.113			"White & Seymour (2003)"	80	FALSE
+"Chiroptera"	"Mormoopidae"	"Mormoops blainvillii"	8.6	0.045	8.6	0.045	"White & Seymour (2003)"	81	TRUE
+"Chiroptera"	"Mormoopidae"	"Mormoops megalophylla"	16.5	0.136	16.5	0.136	"White & Seymour (2003)"	82	TRUE
+"Chiroptera"	"Mormoopidae"	"Pteronotus davyi"	9.4	0.085	9.4	0.085	"Lovegrove (2000)"	83	TRUE
+"Chiroptera"	"Mormoopidae"	"Pteronotus parnellii"	19.2	0.171	19.2	0.171	"Lovegrove (2000)"	84	TRUE
+"Chiroptera"	"Mormoopidae"	"Pteronotus personatus"	14	0.128	14	0.128	"Lovegrove (2000)"	85	TRUE
+"Chiroptera"	"Mormoopidae"	"Pteronotus quadridens"	4.9	0.034	4.9	0.034	"White & Seymour (2003)"	86	TRUE
+"Chiroptera"	"Natalidae"	"Natalus tumidirostris"	5.4	0.046	5.4	0.046	"White & Seymour (2003)"	87	TRUE
+"Chiroptera"	"Noctilionidae"	"Noctilio albiventris"	27	0.176	27	0.176	"McNab (1969)"	88	TRUE
+"Chiroptera"	"Noctilionidae"	"Noctilio leporinus"	61	0.4	61	0.4	"McNab (1969)"	89	TRUE
+"Chiroptera"	"Phyllostomidae"	"Anoura caudifera"	11.5	0.238	11.5	0.238	"McNab (1969)"	90	TRUE
+"Chiroptera"	"Phyllostomidae"	"Artibeus concolor"	19.7	0.222	19.7	0.222	"McNab (1969)"	91	TRUE
+"Chiroptera"	"Phyllostomidae"	"Artibeus fimbriatus"	63.9	0.435	63.9	0.435	"White & Seymour (2003)"	92	TRUE
+"Chiroptera"	"Phyllostomidae"	"Artibeus jamaicensis"	45.2	0.428	46.1	0.359	"McNab (1969)"	93	TRUE
+"Chiroptera"	"Phyllostomidae"	"Artibeus jamaicensis"	47	0.3			"Heusner (1991)"	93	FALSE
+"Chiroptera"	"Phyllostomidae"	"Artibeus lituratus"	70.1	0.602	70.1	0.602	"McNab (1969)"	94	TRUE
+"Chiroptera"	"Phyllostomidae"	"Carollia perspicillata"	14.9	0.24	14.9	0.24	"McNab (1969)"	95	TRUE
+"Chiroptera"	"Phyllostomidae"	"Chiroderma doriae"	19.9	0.173	19.9	0.173	"White & Seymour (2003)"	96	TRUE
+"Chiroptera"	"Phyllostomidae"	"Chrotopterus auritus"	96.1	0.788	96.1	0.788	"McNab (1969)"	97	TRUE
+"Chiroptera"	"Phyllostomidae"	"Desmodus rotundus"	29.4	0.194	29.4	0.194	"McNab (1969)"	98	TRUE
+"Chiroptera"	"Phyllostomidae"	"Diaemus youngi"	36.6	0.208	36.6	0.208	"McNab (1969)"	99	TRUE
+"Chiroptera"	"Phyllostomidae"	"Diphylla ecaudata"	27.8	0.215	27.8	0.215	"McNab (1969)"	100	TRUE
+"Chiroptera"	"Phyllostomidae"	"Erophylla sezekorni"	16.1	0.099	16.1	0.099	"White & Seymour (2003)"	101	TRUE
+"Chiroptera"	"Phyllostomidae"	"Glossophaga soricina"	9.6	0.164	9.6	0.164	"McNab (1969)"	102	TRUE
+"Chiroptera"	"Phyllostomidae"	"Leptonycteris curasoae"	22	0.245	22	0.245	"White & Seymour (2003)"	103	TRUE
+"Chiroptera"	"Phyllostomidae"	"Macrotus californicus"	11.7	0.082	11.7	0.082	"Lovegrove (2000)"	104	TRUE
+"Chiroptera"	"Phyllostomidae"	"Monophyllus redmani"	8.7	0.062	8.7	0.062	"White & Seymour (2003)"	105	TRUE
+"Chiroptera"	"Phyllostomidae"	"Phyllostomus discolor"	33.5	0.267	33.5	0.267	"McNab (1969)"	106	TRUE
+"Chiroptera"	"Phyllostomidae"	"Phyllostomus elongatus"	35.6	0.216	35.6	0.216	"White & Seymour (2003)"	107	TRUE
+"Chiroptera"	"Phyllostomidae"	"Phyllostomus hastatus"	84.2	0.559	84.2	0.559	"McNab (1969)"	108	TRUE
+"Chiroptera"	"Phyllostomidae"	"Platyrrhinus lineatus"	21.9	0.25	21.9	0.25	"McNab (1969)"	109	TRUE
+"Chiroptera"	"Phyllostomidae"	"Rhinophylla fischerae"	9.5	0.091	9.5	0.091	"Lovegrove (2000)"	110	TRUE
+"Chiroptera"	"Phyllostomidae"	"Rhinophylla pumilio"	9.5	0.104	9.5	0.104	"McNab (1969)"	111	TRUE
+"Chiroptera"	"Phyllostomidae"	"Sturnira lilium"	21	0.19	21.4	0.237	"Heusner (1991)"	112	TRUE
+"Chiroptera"	"Phyllostomidae"	"Sturnira lilium"	21.9	0.297			"McNab (1969)"	112	FALSE
+"Chiroptera"	"Phyllostomidae"	"Sturnira tildae"	20.5	0.223	20.5	0.223	"White & Seymour (2003)"	113	TRUE
+"Chiroptera"	"Phyllostomidae"	"Tonatia bidens"	27.4	0.307	27.4	0.307	"McNab (1969)"	114	TRUE
+"Chiroptera"	"Phyllostomidae"	"Uroderma bilobatum"	16.2	0.176	16.2	0.176	"McNab (1969)"	115	TRUE
+"Chiroptera"	"Phyllostomidae"	"Vampyressa pusilla"	8.8	0.104	8.8	0.104	"White & Seymour (2003)"	116	TRUE
+"Chiroptera"	"Pteropodidae"	"Cynopterus brachyotis"	37	0.26	37.2	0.262	"Heusner (1991)"	117	TRUE
+"Chiroptera"	"Pteropodidae"	"Cynopterus brachyotis"	37.4	0.265			"White & Seymour (2003)"	117	FALSE
+"Chiroptera"	"Pteropodidae"	"Dobsonia minor"	73.7	0.415	80.1	0.504	"White & Seymour (2003)"	118	TRUE
+"Chiroptera"	"Pteropodidae"	"Dobsonia minor"	87	0.612			"Lovegrove (2000)"	118	FALSE
+"Chiroptera"	"Pteropodidae"	"Dobsonia moluccensis"	241.4	0.971	312.4	1.411	"White & Seymour (2003)"	119	TRUE
+"Chiroptera"	"Pteropodidae"	"Dobsonia moluccensis"	404.3	2.052			"White & Seymour (2003)"	119	FALSE
+"Chiroptera"	"Pteropodidae"	"Dobsonia praedatrix"	179.5	0.795	179.5	0.795	"White & Seymour (2003)"	120	TRUE
+"Chiroptera"	"Pteropodidae"	"Eonycteris spelaea"	51.6	0.268	51.6	0.268	"Lovegrove (2000)"	121	TRUE
+"Chiroptera"	"Pteropodidae"	"Macroglossus minimus"	15.9	0.103	15.9	0.103	"White & Seymour (2003)"	122	TRUE
+"Chiroptera"	"Pteropodidae"	"Megaloglossus woermanni"	12.4	0.121	12.4	0.121	"Lovegrove (2000)"	123	TRUE
+"Chiroptera"	"Pteropodidae"	"Melonycteris melanops"	53.3	0.242	53.3	0.242	"White & Seymour (2003)"	124	TRUE
+"Chiroptera"	"Pteropodidae"	"Nyctimene albiventer"	28.2	0.225	29.5	0.185	"Lovegrove (2000)"	125	TRUE
+"Chiroptera"	"Pteropodidae"	"Nyctimene albiventer"	30.9	0.152			"White & Seymour (2003)"	125	FALSE
+"Chiroptera"	"Pteropodidae"	"Nyctimene cyclotis"	40.4	0.36	40.4	0.36	"White & Seymour (2003)"	126	TRUE
+"Chiroptera"	"Pteropodidae"	"Nyctimene major"	13.6	0.114	13.6	0.114	"White & Seymour (2003)"	127	TRUE
+"Chiroptera"	"Pteropodidae"	"Paranyctimene raptor"	21.3	0.17	22.4	0.152	"Heusner (1991)"	128	TRUE
+"Chiroptera"	"Pteropodidae"	"Paranyctimene raptor"	23.6	0.137			"White & Seymour (2003)"	128	FALSE
+"Chiroptera"	"Pteropodidae"	"Pteropus giganteus"	562.2	1.622	562.2	1.622	"White & Seymour (2003)"	129	TRUE
+"Chiroptera"	"Pteropodidae"	"Pteropus hypomelanus"	520.8	1.618	520.8	1.618	"White & Seymour (2003)"	130	TRUE
+"Chiroptera"	"Pteropodidae"	"Pteropus poliocephalus"	598	1.768	598	1.768	"White & Seymour (2003)"	131	TRUE
+"Chiroptera"	"Pteropodidae"	"Pteropus pumilus"	194.2	0.705	194.2	0.705	"White & Seymour (2003)"	132	TRUE
+"Chiroptera"	"Pteropodidae"	"Pteropus rodricensis"	254.5	0.753	254.5	0.753	"White & Seymour (2003)"	133	TRUE
+"Chiroptera"	"Pteropodidae"	"Pteropus scapulatus"	362	1.353	362	1.353	"White & Seymour (2003)"	134	TRUE
+"Chiroptera"	"Pteropodidae"	"Pteropus vampyrus"	1024.3	4.486	1024.3	4.486	"White & Seymour (2003)"	135	TRUE
+"Chiroptera"	"Pteropodidae"	"Rousettus aegyptiacus"	146	0.684	146	0.684	"White & Seymour (2003)"	136	TRUE
+"Chiroptera"	"Pteropodidae"	"Rousettus amplexicaudatus"	91.5	0.582	91.5	0.582	"White & Seymour (2003)"	137	TRUE
+"Chiroptera"	"Pteropodidae"	"Syconycteris australis"	15.9	0.122	16.7	0.152	"White & Seymour (2003)"	138	TRUE
+"Chiroptera"	"Pteropodidae"	"Syconycteris australis"	17.5	0.188			"McNab (1969)"	138	FALSE
+"Chiroptera"	"Rhinolophidae"	"Hipposideros galeritus"	8.5	0.05	8.5	0.05	"Heusner (1991)"	139	TRUE
+"Chiroptera"	"Vespertilionidae"	"Antrozous pallidus"	22	0.104	22	0.104	"Lovegrove (2000)"	140	TRUE
+"Chiroptera"	"Vespertilionidae"	"Chalinolobus gouldii"	17.5	0.141	17.5	0.141	"White & Seymour (2003)"	141	TRUE
+"Chiroptera"	"Vespertilionidae"	"Eptesicus fuscus"	10.4	0.116	13.3	0.113	"White & Seymour (2003)"	142	TRUE
+"Chiroptera"	"Vespertilionidae"	"Eptesicus fuscus"	16.9	0.11			"Heusner (1991)"	142	FALSE
+"Chiroptera"	"Vespertilionidae"	"Histiotus velatus"	11.2	0.088	11.2	0.088	"White & Seymour (2003)"	143	TRUE
+"Chiroptera"	"Vespertilionidae"	"Miniopterus schreibersi"	10.91	0.145	10.9	0.145	"Baudinette et al. (2000)"	144	TRUE
+"Chiroptera"	"Vespertilionidae"	"Myotis lucifugus"	5.2	0.05	5.8	0.051	"White & Seymour (2003)"	145	TRUE
+"Chiroptera"	"Vespertilionidae"	"Myotis lucifugus"	6.5	0.052			"Lovegrove (2000)"	145	FALSE
+"Chiroptera"	"Vespertilionidae"	"Myotis nigricans"	3.7	0.027	3.7	0.027	"Lovegrove (2000)"	146	TRUE
+"Chiroptera"	"Vespertilionidae"	"Myotis velifer"	11.89	0.04	11.9	0.04	"Heusner (1991)"	147	TRUE
+"Chiroptera"	"Vespertilionidae"	"Myotis vivesi"	25	0.199	25	0.199	"Lovegrove (2000)"	148	TRUE
+"Chiroptera"	"Vespertilionidae"	"Myotis yumanensis"	5	0.047	5	0.047	"Lovegrove (2000)"	149	TRUE
+"Chiroptera"	"Vespertilionidae"	"Nyctophilus geoffroyi"	8	0.062	8	0.062	"White & Seymour (2003)"	150	TRUE
+"Chiroptera"	"Vespertilionidae"	"Plecotus auritus"	10.25	0.082	10.2	0.082	"White & Seymour (2003)"	151	TRUE
+"Dasyuromorpha"	"Caluromyidae"	"Caluromys derbianus"	329	1.255	342.7	1.194	"White & Seymour (2003)"	152	TRUE
+"Dasyuromorpha"	"Caluromyidae"	"Caluromys derbianus"	357	1.135			"Lovegrove (2000)"	152	FALSE
+"Dasyuromorpha"	"Dasyuridae"	"Antechinus flavipes"	46.5	0.252	46.5	0.252	"White & Seymour (2003)"	153	TRUE
+"Dasyuromorpha"	"Dasyuridae"	"Antechinus stuartii"	22.1	0.19	25	0.189	"Heusner (1991)"	154	TRUE
+"Dasyuromorpha"	"Dasyuridae"	"Antechinus stuartii"	28.2	0.189			"White & Seymour (2003)"	154	FALSE
+"Dasyuromorpha"	"Dasyuridae"	"Antechinus swainsonii"	66.9	0.351	66.9	0.351	"White & Seymour (2003)"	155	TRUE
+"Dasyuromorpha"	"Dasyuridae"	"Dasycercus byrnei"	89	0.44	100	0.439	"Heusner (1991)"	156	TRUE
+"Dasyuromorpha"	"Dasyuridae"	"Dasycercus byrnei"	91.7	0.4			"White & Seymour (2003)"	156	FALSE
+"Dasyuromorpha"	"Dasyuridae"	"Dasycercus byrnei"	103.5	0.456			"Lovegrove (2000)"	156	FALSE
+"Dasyuromorpha"	"Dasyuridae"	"Dasycercus byrnei"	118.2	0.462			"Lovegrove (2003)"	156	FALSE
+"Dasyuromorpha"	"Dasyuridae"	"Dasycercus cristicauda"	86	0.24	91	0.26	"Lovegrove (2003)"	157	TRUE
+"Dasyuromorpha"	"Dasyuridae"	"Dasycercus cristicauda"	88.8	0.26			"Heusner (1991)"	157	FALSE
+"Dasyuromorpha"	"Dasyuridae"	"Dasycercus cristicauda"	89	0.258			"Lovegrove (2000)"	157	FALSE
+"Dasyuromorpha"	"Dasyuridae"	"Dasycercus cristicauda"	101	0.285			"White & Seymour (2003)"	157	FALSE
+"Dasyuromorpha"	"Dasyuridae"	"Dasyurus geoffroii"	1300	2.82	1326.7	2.991	"Heusner (1991)"	158	TRUE
+"Dasyuromorpha"	"Dasyuridae"	"Dasyurus geoffroii"	1354	3.172			"Lovegrove (2000)"	158	FALSE
+"Dasyuromorpha"	"Dasyuridae"	"Dasyurus hallucatus"	558	1.356	571	1.501	"White & Seymour (2003)"	159	TRUE
+"Dasyuromorpha"	"Dasyuridae"	"Dasyurus hallucatus"	584.4	1.663			"Lovegrove (2003)"	159	FALSE
+"Dasyuromorpha"	"Dasyuridae"	"Dasyurus maculatus"	1782	3.01	1782	3.142	"Heusner (1991)"	160	TRUE
+"Dasyuromorpha"	"Dasyuridae"	"Dasyurus maculatus"	1782	3.281			"White & Seymour (2003)"	160	FALSE
+"Dasyuromorpha"	"Dasyuridae"	"Dasyurus viverrinus"	909.9	2.31	945.3	2.26	"Heusner (1991)"	161	TRUE
+"Dasyuromorpha"	"Dasyuridae"	"Dasyurus viverrinus"	982	2.21			"White & Seymour (2003)"	161	FALSE
+"Dasyuromorpha"	"Dasyuridae"	"Ningaui yvonnae"	11.6	0.088	11.6	0.088	"White & Seymour (2003)"	162	TRUE
+"Dasyuromorpha"	"Dasyuridae"	"Phascogale tapoatafa"	147	0.664	153.7	0.694	"Lovegrove (2000)"	163	TRUE
+"Dasyuromorpha"	"Dasyuridae"	"Phascogale tapoatafa"	157	0.71			"White & Seymour (2003)"	163	FALSE
+"Dasyuromorpha"	"Dasyuridae"	"Phascogale tapoatafa"	157.2	0.71			"Lovegrove (2003)"	163	FALSE
+"Dasyuromorpha"	"Dasyuridae"	"Planigale gilesi"	8.9	0.071	9.1	0.058	"Lovegrove (2000)"	164	TRUE
+"Dasyuromorpha"	"Dasyuridae"	"Planigale gilesi"	9.1	0.039			"White & Seymour (2003)"	164	FALSE
+"Dasyuromorpha"	"Dasyuridae"	"Planigale gilesi"	9.4	0.07			"Heusner (1991)"	164	FALSE
+"Dasyuromorpha"	"Dasyuridae"	"Planigale ingrami"	7.1	0.063	8.8	0.065	"White & Seymour (2003)"	165	TRUE
+"Dasyuromorpha"	"Dasyuridae"	"Planigale ingrami"	10.8	0.067			"White & Seymour (2003)"	165	FALSE
+"Dasyuromorpha"	"Dasyuridae"	"Planigale maculata"	8.5	0.06	10.6	0.067	"Heusner (1991)"	166	TRUE
+"Dasyuromorpha"	"Dasyuridae"	"Planigale maculata"	13.1	0.074			"Lovegrove (2000)"	166	FALSE
+"Dasyuromorpha"	"Dasyuridae"	"Planigale tenuirostris"	7.1	0.063	7.1	0.063	"White & Seymour (2003)"	167	TRUE
+"Dasyuromorpha"	"Dasyuridae"	"Pseudantechinus macdonnellensis"	43.1	0.152	43.1	0.152	"White & Seymour (2003)"	168	TRUE
+"Dasyuromorpha"	"Dasyuridae"	"Sarcophilus laniarius"	5775	7.394	6126.8	8.664	"White & Seymour (2003)"	169	TRUE
+"Dasyuromorpha"	"Dasyuridae"	"Sarcophilus laniarius"	6500	10.153			"Lovegrove (2000)"	169	FALSE
+"Dasyuromorpha"	"Dasyuridae"	"Sminthopsis crassicaudata"	14.1	0.11	16	0.121	"Heusner (1991)"	170	TRUE
+"Dasyuromorpha"	"Dasyuridae"	"Sminthopsis crassicaudata"	15.9	0.114			"Lovegrove (2000)"	170	FALSE
+"Dasyuromorpha"	"Dasyuridae"	"Sminthopsis crassicaudata"	16.4	0.14			"White & Seymour (2003)"	170	FALSE
+"Dasyuromorpha"	"Dasyuridae"	"Sminthopsis crassicaudata"	17.7	0.123			"Lovegrove (2003)"	170	FALSE
+"Dasyuromorpha"	"Dasyuridae"	"Sminthopsis laniger"	24.2	0.132	25.8	0.141	"White & Seymour (2003)"	171	TRUE
+"Dasyuromorpha"	"Dasyuridae"	"Sminthopsis laniger"	25.8	0.141			"White & Seymour (2003)"	171	FALSE
+"Dasyuromorpha"	"Dasyuridae"	"Sminthopsis laniger"	27.4	0.15			"Lovegrove (2003)"	171	FALSE
+"Dasyuromorpha"	"Dasyuridae"	"Sminthopsis macroura"	19.35	0.126	20.6	0.128	"White & Seymour (2003)"	172	TRUE
+"Dasyuromorpha"	"Dasyuridae"	"Sminthopsis macroura"	22	0.131			"Lovegrove (2000)"	172	FALSE
+"Dasyuromorpha"	"Dasyuridae"	"Sminthopsis murina"	12.9	0.114	15.7	0.117	"Lovegrove (2000)"	173	TRUE
+"Dasyuromorpha"	"Dasyuridae"	"Sminthopsis murina"	19	0.12			"White & Seymour (2003)"	173	FALSE
+"Dasyuromorpha"	"Didelphidae"	"Chironectes minimus"	935	2.549	940.5	2.793	"White & Seymour (2003)"	174	TRUE
+"Dasyuromorpha"	"Didelphidae"	"Chironectes minimus"	946	3.061			"Lovegrove (2000)"	174	FALSE
+"Dasyuromorpha"	"Didelphidae"	"Didelphis marsupialis"	1165	3.185	1244.3	3.31	"White & Seymour (2003)"	175	TRUE
+"Dasyuromorpha"	"Didelphidae"	"Didelphis marsupialis"	1329	3.44			"Heusner (1991)"	175	FALSE
+"Dasyuromorpha"	"Didelphidae"	"Didelphis virginiana"	2488	4.641	2846.6	5.299	"White & Seymour (2003)"	176	TRUE
+"Dasyuromorpha"	"Didelphidae"	"Didelphis virginiana"	3257	6.05			"Heusner (1991)"	176	FALSE
+"Dasyuromorpha"	"Didelphidae"	"Lutreolina crassicaudata"	812	2.265	812	2.265	"White & Seymour (2003)"	177	TRUE
+"Dasyuromorpha"	"Didelphidae"	"Philander opossum"	751	1.886	751	1.886	"White & Seymour (2003)"	178	TRUE
+"Dasyuromorpha"	"Marmosidae"	"Gracilinanus microtarsus"	13	0.106	13	0.106	"White & Seymour (2003)"	179	TRUE
+"Dasyuromorpha"	"Marmosidae"	"Marmosa robinsoni"	122	0.547	122	0.547	"White & Seymour (2003)"	180	TRUE
+"Dasyuromorpha"	"Marmosidae"	"Metachirus nudicaudatus"	336	1.144	336	1.144	"White & Seymour (2003)"	181	TRUE
+"Dasyuromorpha"	"Marmosidae"	"Monodelphis brevicaudata"	75.5	0.318	91.5	0.366	"White & Seymour (2003)"	182	TRUE
+"Dasyuromorpha"	"Marmosidae"	"Monodelphis brevicaudata"	111	0.421			"Lovegrove (2000)"	182	FALSE
+"Dasyuromorpha"	"Marmosidae"	"Monodelphis domestica"	104	0.335	104	0.335	"White & Seymour (2003)"	183	TRUE
+"Dasyuromorpha"	"Myrmecobiidae"	"Myrmecobius fasciatus"	400	0.794	438.2	0.907	"White & Seymour (2003)"	184	TRUE
+"Dasyuromorpha"	"Myrmecobiidae"	"Myrmecobius fasciatus"	480	1.036			"Lovegrove (2003)"	184	FALSE
+"Diprotodontia"	"Acrobatidae"	"Acrobates pygmaeus"	14	0.084	14	0.084	"White & Seymour (2003)"	185	TRUE
+"Diprotodontia"	"Burramyidae"	"Burramys parvus"	44.3	0.205	44.3	0.205	"White & Seymour (2003)"	186	TRUE
+"Diprotodontia"	"Burramyidae"	"Cercartetus lepidus"	12.6	0.105	12.6	0.105	"White & Seymour (2003)"	187	TRUE
+"Diprotodontia"	"Burramyidae"	"Cercartetus nanus"	60	0.288	64.8	0.311	"Lovegrove (2000)"	188	TRUE
+"Diprotodontia"	"Burramyidae"	"Cercartetus nanus"	70	0.336			"White & Seymour (2003)"	188	FALSE
+"Diprotodontia"	"Macropodidae"	"Dendrolagus matschiei"	6960	7.96	6960	7.96	"White & Seymour (2003)"	189	TRUE
+"Diprotodontia"	"Macropodidae"	"Lagorchestes conspicillatus"	2660	4.749	2660	4.749	"White & Seymour (2003)"	190	TRUE
+"Diprotodontia"	"Macropodidae"	"Macropus eugenii"	4796	7.78	4796	7.78	"Heusner (1991)"	191	TRUE
+"Diprotodontia"	"Macropodidae"	"Macropus robustus"	29300	31.71	29647.9	33.056	"White & Seymour (2003)"	192	TRUE
+"Diprotodontia"	"Macropodidae"	"Macropus robustus"	30000	34.46			"Heusner (1991)"	192	FALSE
+"Diprotodontia"	"Macropodidae"	"Macropus rufus"	25000	30.13	28500	31.353	"Heusner (1991)"	193	TRUE
+"Diprotodontia"	"Macropodidae"	"Macropus rufus"	32490	32.625			"White & Seymour (2003)"	193	FALSE
+"Diprotodontia"	"Macropodidae"	"Setonix brachyurus"	2510	4.52	2702.3	4.695	"Heusner (1991)"	194	TRUE
+"Diprotodontia"	"Macropodidae"	"Setonix brachyurus"	2674	4.654			"White & Seymour (2003)"	194	FALSE
+"Diprotodontia"	"Macropodidae"	"Setonix brachyurus"	2940	4.92			"Lovegrove (2000)"	194	FALSE
+"Diprotodontia"	"Petauridae"	"Gymnobelideus leadbeateri"	166	0.574	166	0.574	"White & Seymour (2003)"	195	TRUE
+"Diprotodontia"	"Petauridae"	"Petaurus breviceps"	127	0.502	129.3	0.517	"White & Seymour (2003)"	196	TRUE
+"Diprotodontia"	"Petauridae"	"Petaurus breviceps"	128.1	0.5			"Heusner (1991)"	196	FALSE
+"Diprotodontia"	"Petauridae"	"Petaurus breviceps"	130	0.522			"Lovegrove (2000)"	196	FALSE
+"Diprotodontia"	"Petauridae"	"Petaurus breviceps"	132.2	0.546			"Lovegrove (2003)"	196	FALSE
+"Diprotodontia"	"Phalangeridae"	"Spilocuscus maculatus"	4250	6.164	4250	6.27	"Lovegrove (2000)"	197	TRUE
+"Diprotodontia"	"Phalangeridae"	"Spilocuscus maculatus"	4250	6.378			"White & Seymour (2003)"	197	FALSE
+"Diprotodontia"	"Phalangeridae"	"Trichosurus vulpecula"	1982	3.538	1993.5	3.8	"Lovegrove (2000)"	198	TRUE
+"Diprotodontia"	"Phalangeridae"	"Trichosurus vulpecula"	2005	4.081			"White & Seymour (2003)"	198	FALSE
+"Diprotodontia"	"Phascolarctidae"	"Phascolarctos cinereus"	4700	5.72	4732.4	5.744	"Heusner (1991)"	199	TRUE
+"Diprotodontia"	"Phascolarctidae"	"Phascolarctos cinereus"	4765	5.768			"White & Seymour (2003)"	199	FALSE
+"Diprotodontia"	"Potoroidae"	"Aepyprymnus rufescens"	2820	5.978	2820	5.978	"White & Seymour (2003)"	200	TRUE
+"Diprotodontia"	"Potoroidae"	"Bettongia gaimardi"	1385	3.578	1385	3.578	"White & Seymour (2003)"	201	TRUE
+"Diprotodontia"	"Potoroidae"	"Bettongia penicillata"	1018	3.132	1018	3.132	"White & Seymour (2003)"	202	TRUE
+"Diprotodontia"	"Potoroidae"	"Potorous tridactylus"	976	2.323	1045.5	2.556	"White & Seymour (2003)"	203	TRUE
+"Diprotodontia"	"Potoroidae"	"Potorous tridactylus"	1120	2.812			"Lovegrove (2000)"	203	FALSE
+"Diprotodontia"	"Pseudocheiridae"	"Cercartetus concinnus"	18.6	0.125	18.6	0.125	"Lovegrove (2000)"	204	TRUE
+"Diprotodontia"	"Pseudocheiridae"	"Petauroides volans"	1140	3.18	1140.5	3.191	"Lovegrove (2000)"	205	TRUE
+"Diprotodontia"	"Pseudocheiridae"	"Petauroides volans"	1141	3.202			"White & Seymour (2003)"	205	FALSE
+"Diprotodontia"	"Pseudocheiridae"	"Pseudocheirus peregrinus"	828	2.21	859.3	2.27	"Heusner (1991)"	206	TRUE
+"Diprotodontia"	"Pseudocheiridae"	"Pseudocheirus peregrinus"	835	2.194			"Lovegrove (2003)"	206	FALSE
+"Diprotodontia"	"Pseudocheiridae"	"Pseudocheirus peregrinus"	861	2.282			"White & Seymour (2003)"	206	FALSE
+"Diprotodontia"	"Pseudocheiridae"	"Pseudocheirus peregrinus"	916	2.402			"White & Seymour (2003)"	206	FALSE
+"Diprotodontia"	"Tarsipedidae"	"Tarsipes rostratus"	10	0.162	10	0.162	"White & Seymour (2003)"	207	TRUE
+"Diprotodontia"	"Vombatidae"	"Lasiorhinus latifrons"	25000	15.341	27348.2	16.001	"Lovegrove (2000)"	208	TRUE
+"Diprotodontia"	"Vombatidae"	"Lasiorhinus latifrons"	29917	16.69			"White & Seymour (2003)"	208	FALSE
+"Hyracoidea"	"Procaviidae"	"Dendrohyrax dorsalis"	2210	4.19	2210	4.19	"White & Seymour (2003)"	209	TRUE
+"Hyracoidea"	"Procaviidae"	"Heterohyrax brucei"	1287	3.733	1604.4	3.872	"Lovegrove (2000)"	210	TRUE
+"Hyracoidea"	"Procaviidae"	"Heterohyrax brucei"	2000	4.017			"White & Seymour (2003)"	210	FALSE
+"Hyracoidea"	"Procaviidae"	"Procavia capensis"	2250	5.021	2458	4.954	"White & Seymour (2003)"	211	TRUE
+"Hyracoidea"	"Procaviidae"	"Procavia capensis"	2400	3.682			"White & Seymour (2003)"	211	FALSE
+"Hyracoidea"	"Procaviidae"	"Procavia capensis"	2750	6.577			"White & Seymour (2003)"	211	FALSE
+"Insectivora"	"Chrysochloridae"	"Amblysomus hottentotus"	70	0.473	70	0.473	"White & Seymour (2003)"	212	TRUE
+"Insectivora"	"Chrysochloridae"	"Chrysochloris asiatica"	33	0.22	36.7	0.243	"Heusner (1991)"	213	TRUE
+"Insectivora"	"Chrysochloridae"	"Chrysochloris asiatica"	34	0.228			"Lovegrove (2000)"	213	FALSE
+"Insectivora"	"Chrysochloridae"	"Chrysochloris asiatica"	44	0.287			"White & Seymour (2003)"	213	FALSE
+"Insectivora"	"Chrysochloridae"	"Eremitalpa granti"	20	0.056	22.8	0.069	"White & Seymour (2003)"	214	TRUE
+"Insectivora"	"Chrysochloridae"	"Eremitalpa granti"	26.1	0.086			"Lovegrove (2000)"	214	FALSE
+"Insectivora"	"Erinaceidae"	"Atelerix albiventris"	450	0.828	450	0.828	"White & Seymour (2003)"	215	TRUE
+"Insectivora"	"Erinaceidae"	"Echinosorex gymnura"	721.2	2.816	721.2	2.816	"White & Seymour (2003)"	216	TRUE
+"Insectivora"	"Erinaceidae"	"Erinaceus concolor"	822.7	1.937	822.7	1.937	"White & Seymour (2003)"	217	TRUE
+"Insectivora"	"Erinaceidae"	"Erinaceus europaeus"	750	1.883	1213.5	2.434	"White & Seymour (2003)"	218	TRUE
+"Insectivora"	"Erinaceidae"	"Erinaceus europaeus"	1191.2	2.632			"Lovegrove (2000)"	218	FALSE
+"Insectivora"	"Erinaceidae"	"Erinaceus europaeus"	2000	2.91			"Heusner (1991)"	218	FALSE
+"Insectivora"	"Erinaceidae"	"Hemiechinus aethiopicus"	450	0.628	451.5	0.63	"White & Seymour (2003)"	219	TRUE
+"Insectivora"	"Erinaceidae"	"Hemiechinus aethiopicus"	453	0.632			"Lovegrove (2000)"	219	FALSE
+"Insectivora"	"Erinaceidae"	"Hemiechinus auritus"	397	0.842	398.5	0.845	"Lovegrove (2000)"	220	TRUE
+"Insectivora"	"Erinaceidae"	"Hemiechinus auritus"	400	0.848			"White & Seymour (2003)"	220	FALSE
+"Insectivora"	"Erinaceidae"	"Hylomys suillus"	57.8	0.335	57.8	0.335	"White & Seymour (2003)"	221	TRUE
+"Insectivora"	"Soricidae"	"Blarina brevicauda"	20.4	0.331	20.9	0.344	"Lovegrove (2000)"	222	TRUE
+"Insectivora"	"Soricidae"	"Blarina brevicauda"	20.5	0.366			"White & Seymour (2003)"	222	FALSE
+"Insectivora"	"Soricidae"	"Blarina brevicauda"	20.7	0.29			"Heusner (1991)"	222	FALSE
+"Insectivora"	"Soricidae"	"Blarina brevicauda"	22.1	0.397			"Lovegrove (2003)"	222	FALSE
+"Insectivora"	"Soricidae"	"Blarina carolinensis"	10.2	0.188	10.2	0.188	"White & Seymour (2003)"	223	TRUE
+"Insectivora"	"Soricidae"	"Crocidura crossei"	9.5	0.117	9.8	0.121	"Lovegrove (2003)"	224	TRUE
+"Insectivora"	"Soricidae"	"Crocidura crossei"	10.2	0.125			"White & Seymour (2003)"	224	FALSE
+"Insectivora"	"Soricidae"	"Crocidura flavescens"	33.2	0.248	33.2	0.248	"White & Seymour (2003)"	225	TRUE
+"Insectivora"	"Soricidae"	"Crocidura hildegardeae"	10	0.145	10.7	0.156	"White & Seymour (2003)"	226	TRUE
+"Insectivora"	"Soricidae"	"Crocidura hildegardeae"	11.5	0.167			"Lovegrove (2000)"	226	FALSE
+"Insectivora"	"Soricidae"	"Crocidura leucodon"	11.7	0.166	11.7	0.166	"Lovegrove (2003)"	227	TRUE
+"Insectivora"	"Soricidae"	"Crocidura luna"	11.8	0.138	12.3	0.144	"White & Seymour (2003)"	228	TRUE
+"Insectivora"	"Soricidae"	"Crocidura luna"	12.8	0.15			"Lovegrove (2000)"	228	FALSE
+"Insectivora"	"Soricidae"	"Crocidura olivieri"	38.3	0.32	38.6	0.323	"Lovegrove (2000)"	229	TRUE
+"Insectivora"	"Soricidae"	"Crocidura olivieri"	38.9	0.326			"White & Seymour (2003)"	229	FALSE
+"Insectivora"	"Soricidae"	"Crocidura poensis"	16.9	0.17	17.1	0.172	"Lovegrove (2000)"	230	TRUE
+"Insectivora"	"Soricidae"	"Crocidura poensis"	17.3	0.173			"White & Seymour (2003)"	230	FALSE
+"Insectivora"	"Soricidae"	"Crocidura russula"	9.6	0.131	10.8	0.143	"Lovegrove (2003)"	231	TRUE
+"Insectivora"	"Soricidae"	"Crocidura russula"	10.1	0.166			"Lovegrove (2000)"	231	FALSE
+"Insectivora"	"Soricidae"	"Crocidura russula"	10.4	0.128			"White & Seymour (2003)"	231	FALSE
+"Insectivora"	"Soricidae"	"Crocidura russula"	13.7	0.15			"Heusner (1991)"	231	FALSE
+"Insectivora"	"Soricidae"	"Crocidura suaveolens"	6.5	0.105	6.9	0.112	"White & Seymour (2003)"	232	TRUE
+"Insectivora"	"Soricidae"	"Crocidura suaveolens"	6.8	0.11			"Lovegrove (2003)"	232	FALSE
+"Insectivora"	"Soricidae"	"Crocidura suaveolens"	7.5	0.12			"Heusner (1991)"	232	FALSE
+"Insectivora"	"Soricidae"	"Crocidura viaria"	14.7	0.123	15	0.126	"White & Seymour (2003)"	233	TRUE
+"Insectivora"	"Soricidae"	"Crocidura viaria"	15.3	0.128			"Lovegrove (2000)"	233	FALSE
+"Insectivora"	"Soricidae"	"Cryptotis parva"	6.2	0.107	6.3	0.164	"White & Seymour (2003)"	234	TRUE
+"Insectivora"	"Soricidae"	"Cryptotis parva"	6.4	0.25			"Lovegrove (2000)"	234	FALSE
+"Insectivora"	"Soricidae"	"Neomys anomalus"	13.1	0.373	13.1	0.373	"White & Seymour (2003)"	235	TRUE
+"Insectivora"	"Soricidae"	"Neomys fodiens"	14.1	0.373	16	0.328	"Lovegrove (2000)"	236	TRUE
+"Insectivora"	"Soricidae"	"Neomys fodiens"	17.1	0.31			"Heusner (1991)"	236	FALSE
+"Insectivora"	"Soricidae"	"Neomys fodiens"	17.1	0.305			"White & Seymour (2003)"	236	FALSE
+"Insectivora"	"Soricidae"	"Notiosorex crawfordi"	4	0.074	4	0.074	"White & Seymour (2003)"	237	TRUE
+"Insectivora"	"Soricidae"	"Sorex alpinus"	7.8	0.265	7.8	0.267	"Lovegrove (2000)"	238	TRUE
+"Insectivora"	"Soricidae"	"Sorex alpinus"	7.9	0.269			"White & Seymour (2003)"	238	FALSE
+"Insectivora"	"Soricidae"	"Sorex araneus"	8.05	0.336	8.4	0.348	"White & Seymour (2003)"	239	TRUE
+"Insectivora"	"Soricidae"	"Sorex araneus"	8.7	0.361			"Lovegrove (2003)"	239	FALSE
+"Insectivora"	"Soricidae"	"Sorex cinereus"	3.5	0.176	5.2	0.238	"White & Seymour (2003)"	240	TRUE
+"Insectivora"	"Soricidae"	"Sorex cinereus"	5	0.249			"Lovegrove (2000)"	240	FALSE
+"Insectivora"	"Soricidae"	"Sorex cinereus"	7.9	0.31			"Heusner (1991)"	240	FALSE
+"Insectivora"	"Soricidae"	"Sorex coronatus"	9.1	0.29	9.1	0.29	"White & Seymour (2003)"	241	TRUE
+"Insectivora"	"Soricidae"	"Sorex minutus"	3.8	0.182	4.1	0.179	"Lovegrove (2003)"	242	TRUE
+"Insectivora"	"Soricidae"	"Sorex minutus"	4	0.172			"White & Seymour (2003)"	242	FALSE
+"Insectivora"	"Soricidae"	"Sorex minutus"	4.2	0.183			"Lovegrove (2000)"	242	FALSE
+"Insectivora"	"Soricidae"	"Sorex minutus"	4.6	0.18			"Heusner (1991)"	242	FALSE
+"Insectivora"	"Soricidae"	"Sorex ornatus"	9.7	0.292	9.7	0.292	"White & Seymour (2003)"	243	TRUE
+"Insectivora"	"Soricidae"	"Sorex vagrans"	5.2	0.157	5.2	0.157	"White & Seymour (2003)"	244	TRUE
+"Insectivora"	"Soricidae"	"Suncus etruscus"	2.4	0.08	2.4	0.063	"White & Seymour (2003)"	245	TRUE
+"Insectivora"	"Soricidae"	"Suncus etruscus"	2.5	0.05			"Heusner (1991)"	245	FALSE
+"Insectivora"	"Soricidae"	"Suncus murinus"	30.2	0.332	39.7	0.403	"White & Seymour (2003)"	246	TRUE
+"Insectivora"	"Soricidae"	"Suncus murinus"	52.3	0.49			"Heusner (1991)"	246	FALSE
+"Insectivora"	"Talpidae"	"Condylura cristata"	49	0.615	49	0.615	"White & Seymour (2003)"	247	TRUE
+"Insectivora"	"Talpidae"	"Neurotrichus gibbsii"	11.8	0.259	11.8	0.259	"White & Seymour (2003)"	248	TRUE
+"Insectivora"	"Talpidae"	"Scalopus aquaticus"	48	0.378	48	0.378	"White & Seymour (2003)"	249	TRUE
+"Insectivora"	"Talpidae"	"Scapanus latimanus"	61	0.425	61	0.425	"White & Seymour (2003)"	250	TRUE
+"Insectivora"	"Talpidae"	"Scapanus orarius"	61.2	0.358	61.2	0.358	"White & Seymour (2003)"	251	TRUE
+"Insectivora"	"Talpidae"	"Scapanus townsendii"	130.1	0.607	130.1	0.607	"Lovegrove (2000)"	252	TRUE
+"Insectivora"	"Tenrecidae"	"Echinops telfairi"	116.4	0.75	116.4	0.75	"Heusner (1991)"	253	TRUE
+"Insectivora"	"Tenrecidae"	"Geogale aurita"	6.9	0.043	6.9	0.043	"White & Seymour (2003)"	254	TRUE
+"Insectivora"	"Tenrecidae"	"Hemicentetes semispinosus"	101.9	0.404	116.4	0.38	"White & Seymour (2003)"	255	TRUE
+"Insectivora"	"Tenrecidae"	"Hemicentetes semispinosus"	133	0.358			"White & Seymour (2003)"	255	FALSE
+"Insectivora"	"Tenrecidae"	"Limnogale mergulus"	77.7	0.312	77.7	0.355	"White & Seymour (2003)"	256	TRUE
+"Insectivora"	"Tenrecidae"	"Limnogale mergulus"	77.7	0.404			"Lovegrove (2000)"	256	FALSE
+"Insectivora"	"Tenrecidae"	"Microgale cowani"	12.2	0.179	12.2	0.179	"White & Seymour (2003)"	257	TRUE
+"Insectivora"	"Tenrecidae"	"Microgale dobsoni"	44.6	0.315	44.6	0.315	"White & Seymour (2003)"	258	TRUE
+"Insectivora"	"Tenrecidae"	"Microgale talazaci"	44	0.243	44	0.243	"White & Seymour (2003)"	259	TRUE
+"Insectivora"	"Tenrecidae"	"Setifer setosus"	345	0.483	427.6	0.573	"Lovegrove (2000)"	260	TRUE
+"Insectivora"	"Tenrecidae"	"Setifer setosus"	530	0.68			"White & Seymour (2003)"	260	FALSE
+"Insectivora"	"Tenrecidae"	"Tenrec ecaudatus"	650	0.729	650	0.729	"White & Seymour (2003)"	261	TRUE
+"Lagomorpha"	"Leporidae"	"Brachylagus idahoensis"	432	2.145	432	2.145	"Lovegrove (2003)"	262	TRUE
+"Lagomorpha"	"Leporidae"	"Lepus alleni"	3000	9.205	3200.4	9.22	"White & Seymour (2003)"	263	TRUE
+"Lagomorpha"	"Leporidae"	"Lepus alleni"	3250	9.972			"Lovegrove (2000)"	263	FALSE
+"Lagomorpha"	"Leporidae"	"Lepus alleni"	3362	8.54			"Heusner (1991)"	263	FALSE
+"Lagomorpha"	"Leporidae"	"Lepus americanus"	1380	5.235	1603.4	6.708	"Hart (1971)"	264	TRUE
+"Lagomorpha"	"Leporidae"	"Lepus americanus"	1480	6.605			"Hart (1971)"	264	FALSE
+"Lagomorpha"	"Leporidae"	"Lepus americanus"	1562.8	6.975			"Lovegrove (2000)"	264	FALSE
+"Lagomorpha"	"Leporidae"	"Lepus americanus"	1581	8.468			"White & Seymour (2003)"	264	FALSE
+"Lagomorpha"	"Leporidae"	"Lepus americanus"	2100	6.65			"Heusner (1991)"	264	FALSE
+"Lagomorpha"	"Leporidae"	"Lepus arcticus"	3004.4	6.036	3004.4	6.036	"White & Seymour (2003)"	265	TRUE
+"Lagomorpha"	"Leporidae"	"Lepus californicus"	2300	7.314	2300	7.314	"White & Seymour (2003)"	266	TRUE
+"Lagomorpha"	"Leporidae"	"Lepus timidus"	3004	6.033	3014.5	8.443	"Lovegrove (2000)"	267	TRUE
+"Lagomorpha"	"Leporidae"	"Lepus timidus"	3025	11.815			"White & Seymour (2003)"	267	FALSE
+"Lagomorpha"	"Leporidae"	"Lepus townsendii"	2430	7.051	2523.2	7.698	"White & Seymour (2003)"	268	TRUE
+"Lagomorpha"	"Leporidae"	"Lepus townsendii"	2620	8.404			"Lovegrove (2000)"	268	FALSE
+"Lagomorpha"	"Leporidae"	"Oryctolagus cuniculus"	2000	6.36	2167.9	7.395	"White & Seymour (2003)"	269	TRUE
+"Lagomorpha"	"Leporidae"	"Oryctolagus cuniculus"	2350	8.6			"Heusner (1991)"	269	FALSE
+"Lagomorpha"	"Leporidae"	"Sylvilagus audubonii"	672.4	2.443	686.9	2.506	"White & Seymour (2003)"	270	TRUE
+"Lagomorpha"	"Leporidae"	"Sylvilagus audubonii"	701.7	2.57			"Heusner (1991)"	270	FALSE
+"Lagomorpha"	"Ochotonidae"	"Ochotona dauurica"	127.7	1.389	127.7	1.389	"White & Seymour (2003)"	271	TRUE
+"Lagomorpha"	"Ochotonidae"	"Ochotona princeps"	109	0.932	109	0.932	"White & Seymour (2003)"	272	TRUE
+"Macroscelidae"	"Macroscelididae"	"Elephantulus brachyrhynchus"	45.3	0.244	45.3	0.244	"White & Seymour (2003)"	273	TRUE
+"Macroscelidae"	"Macroscelididae"	"Elephantulus edwardii"	49.8	0.303	49.9	0.303	"Lovegrove (2000)"	274	TRUE
+"Macroscelidae"	"Macroscelididae"	"Elephantulus edwardii"	50	0.304			"White & Seymour (2003)"	274	FALSE
+"Macroscelidae"	"Macroscelididae"	"Elephantulus intufi"	46.49	0.29	46.5	0.29	"White & Seymour (2003)"	275	TRUE
+"Macroscelidae"	"Macroscelididae"	"Elephantulus myurus"	61	0.358	63	0.387	"Lovegrove (2003)"	276	TRUE
+"Macroscelidae"	"Macroscelididae"	"Elephantulus myurus"	62.97	0.37			"White & Seymour (2003)"	276	FALSE
+"Macroscelidae"	"Macroscelididae"	"Elephantulus myurus"	65.2	0.436			"Lovegrove (2000)"	276	FALSE
+"Macroscelidae"	"Macroscelididae"	"Elephantulus rozeti"	45.31	0.267	49	0.288	"White & Seymour (2003)"	277	TRUE
+"Macroscelidae"	"Macroscelididae"	"Elephantulus rozeti"	53	0.312			"Lovegrove (2003)"	277	FALSE
+"Macroscelidae"	"Macroscelididae"	"Elephantulus rufescens"	53	0.317	53	0.317	"White & Seymour (2003)"	278	TRUE
+"Macroscelidae"	"Macroscelididae"	"Macroscelides proboscideus"	39	0.292	39	0.292	"White & Seymour (2003)"	279	TRUE
+"Macroscelidae"	"Macroscelididae"	"Petrodromus tetradactylus"	206.1	1.001	208	0.852	"Lovegrove (2003)"	280	TRUE
+"Macroscelidae"	"Macroscelididae"	"Petrodromus tetradactylus"	208	0.859			"Lovegrove (2000)"	280	FALSE
+"Macroscelidae"	"Macroscelididae"	"Petrodromus tetradactylus"	210	0.72			"Heusner (1991)"	280	FALSE
+"Monotremata"	"Ornithorhynchidae"	"Ornithorhynchus anatinus"	693	1.082	1030.3	1.931	"White & Seymour (2003)"	281	TRUE
+"Monotremata"	"Ornithorhynchidae"	"Ornithorhynchus anatinus"	1200	2.5			"Heusner (1991)"	281	FALSE
+"Monotremata"	"Ornithorynchidae"	"Ornithorhynchus anatinus"	1315	2.663			"Lovegrove (2000)"	281	FALSE
+"Monotremata"	"Tachyglossidae"	"Tachyglossus aculeatus"	2140	1.564	2909	2.327	"Lovegrove (2000)"	282	TRUE
+"Monotremata"	"Tachyglossidae"	"Tachyglossus aculeatus"	2725	2.404			"White & Seymour (2003)"	282	FALSE
+"Monotremata"	"Tachyglossidae"	"Tachyglossus aculeatus"	3430	2.55			"Heusner (1991)"	282	FALSE
+"Monotremata"	"Tachyglossidae"	"Tachyglossus aculeatus"	3580	3.056			"Lovegrove (2000)"	282	FALSE
+"Monotremata"	"Tachyglossidae"	"Zaglossus bruijni"	10300	6.778	11848.6	6.493	"White & Seymour (2003)"	283	TRUE
+"Monotremata"	"Tachyglossidae"	"Zaglossus bruijni"	13630	6.22			"Heusner (1991)"	283	FALSE
+"Notoryctomorphia"	"Notoryctidae"	"Notoryctes caurinus"	34	0.119	34	0.119	"White & Seymour (2003)"	284	TRUE
+"Peramelemorphia"	"Peramelidae"	"Isoodon auratus"	428	0.837	428	0.837	"White & Seymour (2003)"	285	TRUE
+"Peramelemorphia"	"Peramelidae"	"Isoodon macrourus"	1551	3.202	1551	3.202	"White & Seymour (2003)"	286	TRUE
+"Peramelemorphia"	"Peramelidae"	"Isoodon obesulus"	717	1.238	717	1.238	"White & Seymour (2003)"	287	TRUE
+"Peramelemorphia"	"Peramelidae"	"Macrotis lagotis"	1011	1.974	1245.5	2.4	"Lovegrove (2000)"	288	TRUE
+"Peramelemorphia"	"Peramelidae"	"Macrotis lagotis"	1294	2.51			"White & Seymour (2003)"	288	FALSE
+"Peramelemorphia"	"Peramelidae"	"Macrotis lagotis"	1477	2.79			"Heusner (1991)"	288	FALSE
+"Peramelemorphia"	"Peramelidae"	"Perameles gunnii"	837	2.343	837	2.343	"White & Seymour (2003)"	289	TRUE
+"Peramelemorphia"	"Peramelidae"	"Perameles nasuta"	645	1.763	645	1.763	"White & Seymour (2003)"	290	TRUE
+"Peramelemorphia"	"Peroryctidae"	"Echymipera rufescens"	616	1.685	886.6	2.255	"White & Seymour (2003)"	291	TRUE
+"Peramelemorphia"	"Peroryctidae"	"Echymipera rufescens"	1276	3.018			"White & Seymour (2003)"	291	FALSE
+"Peramelemorphia"	"Peroryctidae"	"Perameles gunnii"	695	1.902	695	1.902	"White & Seymour (2003)"	292	TRUE
+"Perissodactyla"	"Equidae"	"Equus asinus"	177500	164.92	177500	164.92	"Heusner (1991)"	293	TRUE
+"Pholidota"	"Manidae"	"Manis crassicaudata"	15910	6.923	15910	6.923	"White & Seymour (2003)"	294	TRUE
+"Pholidota"	"Manidae"	"Manis javanica"	4220	6.23	4220	6.23	"Heusner (1991)"	295	TRUE
+"Pholidota"	"Manidae"	"Manis pentadactyla"	3637.5	3.727	3637.5	3.727	"White & Seymour (2003)"	296	TRUE
+"Pholidota"	"Manidae"	"Manis tetradactyla"	1430	1.278	1430	1.278	"White & Seymour (2003)"	297	TRUE
+"Pholidota"	"Manidae"	"Manis tricuspis"	1365	1.54	1930.4	2.67	"White & Seymour (2003)"	298	TRUE
+"Pholidota"	"Manidae"	"Manis tricuspis"	2730	4.63			"Heusner (1991)"	298	FALSE
+"Primates"	"Callitrichidae"	"Callithrix jacchus"	190	0.848	190	0.848	"White & Seymour (2003)"	299	TRUE
+"Primates"	"Callitrichidae"	"Callithrix pygmaea"	105	0.55	110.7	0.599	"Heusner (1991)"	300	TRUE
+"Primates"	"Callitrichidae"	"Callithrix pygmaea"	116.8	0.653			"White & Seymour (2003)"	300	FALSE
+"Primates"	"Callitrichidae"	"Saguinus geoffroyi"	225	1.305	225	1.305	"White & Seymour (2003)"	301	TRUE
+"Primates"	"Cebidae"	"Alouatta palliata"	4670	11.464	4670	11.464	"White & Seymour (2003)"	302	TRUE
+"Primates"	"Cebidae"	"Aotus trivirgatus"	820	2.466	914.5	2.499	"White & Seymour (2003)"	303	TRUE
+"Primates"	"Cebidae"	"Aotus trivirgatus"	1020	2.532			"Lovegrove (2000)"	303	FALSE
+"Primates"	"Cebidae"	"Saimiri sciureus"	800	4.39	836.7	4.429	"Heusner (1991)"	304	TRUE
+"Primates"	"Cebidae"	"Saimiri sciureus"	875	4.468			"White & Seymour (2003)"	304	FALSE
+"Primates"	"Cercopithecidae"	"Cercopithecus mitis"	8500	18.923	8648.7	19.276	"White & Seymour (2003)"	305	TRUE
+"Primates"	"Cercopithecidae"	"Cercopithecus mitis"	8800	19.637			"Lovegrove (2000)"	305	FALSE
+"Primates"	"Cercopithecidae"	"Colobus guereza"	10450	16.613	10623.6	17.037	"White & Seymour (2003)"	306	TRUE
+"Primates"	"Cercopithecidae"	"Colobus guereza"	10800	17.472			"Lovegrove (2000)"	306	FALSE
+"Primates"	"Cercopithecidae"	"Erythrocebus patas"	3000	5.958	3000	5.958	"White & Seymour (2003)"	307	TRUE
+"Primates"	"Cercopithecidae"	"Papio hamadryas"	9500	15.497	12670.8	21.095	"White & Seymour (2003)"	308	TRUE
+"Primates"	"Cercopithecidae"	"Papio hamadryas"	16900	28.713			"White & Seymour (2003)"	308	FALSE
+"Primates"	"Cheirogaleidae"	"Cheirogaleus medius"	300	1.088	300	1.088	"White & Seymour (2003)"	309	TRUE
+"Primates"	"Hominidae"	"Homo sapiens sapiens"	70000	82.78	70000	82.78	"Heusner (1991)"	310	TRUE
+"Primates"	"Indriidae"	"Propithecus verreauxi"	3350	3.738	3350	3.738	"White & Seymour (2003)"	311	TRUE
+"Primates"	"Lemuridae"	"Eulemur fulvus"	2330	4.162	2374.1	4.239	"White & Seymour (2003)"	312	TRUE
+"Primates"	"Lemuridae"	"Eulemur fulvus"	2419	4.318			"Lovegrove (2000)"	312	FALSE
+"Primates"	"Lorisidae"	"Arctocebus calabarensis"	206	0.731	206	0.731	"White & Seymour (2003)"	313	TRUE
+"Primates"	"Lorisidae"	"Euoticus elegantulus"	261.5	1.205	261.5	1.205	"White & Seymour (2003)"	314	TRUE
+"Primates"	"Lorisidae"	"Galago moholi"	170	0.285	170	0.285	"White & Seymour (2003)"	315	TRUE
+"Primates"	"Lorisidae"	"Galago senegalensis"	171.5	0.764	171.5	0.764	"White & Seymour (2003)"	316	TRUE
+"Primates"	"Lorisidae"	"Galagoides demidoff"	61	0.42	62.4	0.372	"Heusner (1991)"	317	TRUE
+"Primates"	"Lorisidae"	"Galagoides demidoff"	63.8	0.329			"White & Seymour (2003)"	317	FALSE
+"Primates"	"Lorisidae"	"Loris tardigradus"	284	0.714	284	0.714	"White & Seymour (2003)"	318	TRUE
+"Primates"	"Lorisidae"	"Nycticebus coucang"	953.3	1.292	1128.6	1.504	"Lovegrove (2000)"	319	TRUE
+"Primates"	"Lorisidae"	"Nycticebus coucang"	1160	1.523			"White & Seymour (2003)"	319	FALSE
+"Primates"	"Lorisidae"	"Nycticebus coucang"	1300	1.73			"Heusner (1991)"	319	FALSE
+"Primates"	"Lorisidae"	"Otolemur crassicaudatus"	950	2.298	993.5	2.595	"White & Seymour (2003)"	320	TRUE
+"Primates"	"Lorisidae"	"Otolemur crassicaudatus"	1039	2.93			"Heusner (1991)"	320	FALSE
+"Primates"	"Lorisidae"	"Otolemur garnettii"	1314	3.927	1314	3.927	"White & Seymour (2003)"	321	TRUE
+"Primates"	"Lorisidae"	"Perodicticus potto"	932.5	1.94	968.6	1.942	"Lovegrove (2000)"	322	TRUE
+"Primates"	"Lorisidae"	"Perodicticus potto"	964	1.824			"White & Seymour (2003)"	322	FALSE
+"Primates"	"Lorisidae"	"Perodicticus potto"	1011	2.07			"Heusner (1991)"	322	FALSE
+"Primates"	"Tarsiidae"	"Tarsius spectrum"	173	0.831	173	0.831	"White & Seymour (2003)"	323	TRUE
+"Primates"	"Tarsiidae"	"Tarsius syrichta"	113	0.43	113	0.43	"White & Seymour (2003)"	324	TRUE
+"Proboscidea"	"Elphantidae"	"Elephas maximus"	3672000	2336.5	3672000	2336.5	"Heusner (1991)"	325	TRUE
+"Rodentia"	"Agoutidae"	"Agouti paca"	9156	15.323	9156	15.323	"White & Seymour (2003)"	326	TRUE
+"Rodentia"	"Aplodontidae"	"Aplodontia rufa"	630	1.546	706.8	1.892	"White & Seymour (2003)"	327	TRUE
+"Rodentia"	"Aplodontidae"	"Aplodontia rufa"	793	2.314			"Lovegrove (2000)"	327	FALSE
+"Rodentia"	"Bathyergidae"	"Bathyergus janetta"	406	1.201	406	1.201	"White & Seymour (2003)"	328	TRUE
+"Rodentia"	"Bathyergidae"	"Bathyergus suillus"	620	1.695	664.4	1.798	"White & Seymour (2003)"	329	TRUE
+"Rodentia"	"Bathyergidae"	"Bathyergus suillus"	712	1.907			"Lovegrove (2000)"	329	FALSE
+"Rodentia"	"Bathyergidae"	"Cryptomys bocagei"	94	0.388	94	0.388	"White & Seymour (2003)"	330	TRUE
+"Rodentia"	"Bathyergidae"	"Cryptomys damarensis"	125	0.397	131.3	0.418	"Lovegrove (2000)"	331	TRUE
+"Rodentia"	"Bathyergidae"	"Cryptomys damarensis"	138	0.439			"White & Seymour (2003)"	331	FALSE
+"Rodentia"	"Bathyergidae"	"Cryptomys hottentotus"	60	0.328	78.9	0.35	"Lovegrove (2000)"	332	TRUE
+"Rodentia"	"Bathyergidae"	"Cryptomys hottentotus"	71	0.38			"Heusner (1991)"	332	FALSE
+"Rodentia"	"Bathyergidae"	"Cryptomys hottentotus"	75	0.377			"White & Seymour (2003)"	332	FALSE
+"Rodentia"	"Bathyergidae"	"Cryptomys hottentotus"	77	0.271			"Lovegrove (2000)"	332	FALSE
+"Rodentia"	"Bathyergidae"	"Cryptomys hottentotus"	79.5	0.31			"White & Seymour (2003)"	332	FALSE
+"Rodentia"	"Bathyergidae"	"Cryptomys hottentotus"	95	0.36			"Lovegrove (2000)"	332	FALSE
+"Rodentia"	"Bathyergidae"	"Cryptomys hottentotus"	102	0.455			"White & Seymour (2003)"	332	FALSE
+"Rodentia"	"Bathyergidae"	"Cryptomys mechowi"	267	0.894	269.5	0.902	"White & Seymour (2003)"	333	TRUE
+"Rodentia"	"Bathyergidae"	"Cryptomys mechowi"	272	0.91			"Lovegrove (2000)"	333	FALSE
+"Rodentia"	"Bathyergidae"	"Georychus capensis"	191	0.629	193	0.637	"Lovegrove (2000)"	334	TRUE
+"Rodentia"	"Bathyergidae"	"Georychus capensis"	195	0.645			"White & Seymour (2003)"	334	FALSE
+"Rodentia"	"Bathyergidae"	"Heliophobius argenteocinereus"	88	0.42	88.5	0.43	"Heusner (1991)"	335	TRUE
+"Rodentia"	"Bathyergidae"	"Heliophobius argenteocinereus"	89	0.44			"Heusner (1991)"	335	FALSE
+"Rodentia"	"Bathyergidae"	"Heterocephalus glaber"	32	0.114	35.3	0.128	"White & Seymour (2003)"	336	TRUE
+"Rodentia"	"Bathyergidae"	"Heterocephalus glaber"	39	0.144			"Lovegrove (2000)"	336	FALSE
+"Rodentia"	"Capromyidae"	"Capromys pilorides"	2630	3.375	2630	3.375	"White & Seymour (2003)"	337	TRUE
+"Rodentia"	"Capromyidae"	"Geocapromys brownii"	2456	4.11	2456	4.11	"White & Seymour (2003)"	338	TRUE
+"Rodentia"	"Capromyidae"	"Geocapromys ingrahami"	775	1.483	775	1.483	"White & Seymour (2003)"	339	TRUE
+"Rodentia"	"Caviidae"	"Cavia porcellus"	570	2.226	639.1	2.13	"Hart (1971)"	340	TRUE
+"Rodentia"	"Caviidae"	"Cavia porcellus"	629	1.93			"White & Seymour (2003)"	340	FALSE
+"Rodentia"	"Caviidae"	"Cavia porcellus"	728	2.25			"Heusner (1991)"	340	FALSE
+"Rodentia"	"Caviidae"	"Dolichotis salinicola"	1613	4.05	1613	4.05	"White & Seymour (2003)"	341	TRUE
+"Rodentia"	"Caviidae"	"Galea musteloides"	322	1.473	322	1.473	"White & Seymour (2003)"	342	TRUE
+"Rodentia"	"Caviidae"	"Kerodon rupestris"	801	2.011	801	2.011	"White & Seymour (2003)"	343	TRUE
+"Rodentia"	"Caviidae"	"Microcavia niata"	255	0.98	255	0.98	"White & Seymour (2003)"	344	TRUE
+"Rodentia"	"Chinchillidae"	"Chinchilla lanigera"	403	1.574	436.7	1.31	"Lovegrove (2000)"	345	TRUE
+"Rodentia"	"Chinchillidae"	"Chinchilla lanigera"	426	1.117			"White & Seymour (2003)"	345	FALSE
+"Rodentia"	"Chinchillidae"	"Chinchilla lanigera"	485	1.28			"Heusner (1991)"	345	FALSE
+"Rodentia"	"Chinchillidae"	"Lagostomus maximus"	6784	10.597	6794	10.623	"Lovegrove (2000)"	346	TRUE
+"Rodentia"	"Chinchillidae"	"Lagostomus maximus"	6804	10.65			"Heusner (1991)"	346	FALSE
+"Rodentia"	"Ctenomyidae"	"Ctenomys australis"	340	0.65	340	0.65	"White & Seymour (2003)"	347	TRUE
+"Rodentia"	"Ctenomyidae"	"Ctenomys fulvus"	300	1.054	300	1.054	"White & Seymour (2003)"	348	TRUE
+"Rodentia"	"Ctenomyidae"	"Ctenomys maulinus"	215	1.044	215	1.044	"White & Seymour (2003)"	349	TRUE
+"Rodentia"	"Ctenomyidae"	"Ctenomys peruanus"	490	1.23	490	1.23	"White & Seymour (2003)"	350	TRUE
+"Rodentia"	"Ctenomyidae"	"Ctenomys talarum"	121	0.611	121	0.611	"White & Seymour (2003)"	351	TRUE
+"Rodentia"	"Dasyproctidae"	"Dasyprocta azarae"	3849	10.521	3849	10.521	"White & Seymour (2003)"	352	TRUE
+"Rodentia"	"Dasyproctidae"	"Dasyprocta leporina"	2687	8.694	2687	8.694	"White & Seymour (2003)"	353	TRUE
+"Rodentia"	"Dasyproctidae"	"Myoprocta acouchy"	914	2.804	914	2.804	"White & Seymour (2003)"	354	TRUE
+"Rodentia"	"Dipodidae"	"Dipus sagitta?"	160	0.676	160	0.676	"White & Seymour (2003)"	355	TRUE
+"Rodentia"	"Dipodidae"	"Jaculus jaculus"	75	0.515	75	0.515	"White & Seymour (2003)"	356	TRUE
+"Rodentia"	"Dipodidae"	"Jaculus orientalis"	139	0.775	139	0.775	"White & Seymour (2003)"	357	TRUE
+"Rodentia"	"Dipodidae"	"Napaeozapus insignis"	21.6	0.22	21.8	0.22	"Heusner (1991)"	358	TRUE
+"Rodentia"	"Dipodidae"	"Napaeozapus insignis"	22	0.221			"White & Seymour (2003)"	358	FALSE
+"Rodentia"	"Dipodidae"	"Sicista betulina"	10	0.179	10	0.179	"White & Seymour (2003)"	359	TRUE
+"Rodentia"	"Dipodidae"	"Zapus hudsonius"	23.8	0.199	26.1	0.219	"White & Seymour (2003)"	360	TRUE
+"Rodentia"	"Dipodidae"	"Zapus hudsonius"	25	0.209			"Hart (1971)"	360	FALSE
+"Rodentia"	"Dipodidae"	"Zapus hudsonius"	30	0.251			"Lovegrove (2000)"	360	FALSE
+"Rodentia"	"Echimyidae"	"Proechimys semispinosus"	498	1.75	498	1.75	"White & Seymour (2003)"	361	TRUE
+"Rodentia"	"Echimyidae"	"Thrichomys apereoides"	323	1.153	323	1.153	"White & Seymour (2003)"	362	TRUE
+"Rodentia"	"Erethizontidae"	"Coendou prehensilis"	3280	5.123	3280	5.123	"White & Seymour (2003)"	363	TRUE
+"Rodentia"	"Erethizontidae"	"Erethizon dorsatum"	4290	11.966	6871	13.675	"Hart (1971)"	364	TRUE
+"Rodentia"	"Erethizontidae"	"Erethizon dorsatum"	6790	13.76			"Heusner (1991)"	364	FALSE
+"Rodentia"	"Erethizontidae"	"Erethizon dorsatum"	11136	15.531			"White & Seymour (2003)"	364	FALSE
+"Rodentia"	"Geomyidae"	"Geomys bursarius"	197	0.769	197	0.769	"Bradley & Yousef (1975)"	365	TRUE
+"Rodentia"	"Geomyidae"	"Geomys pinetis"	173	0.743	191.5	0.768	"White & Seymour (2003)"	366	TRUE
+"Rodentia"	"Geomyidae"	"Geomys pinetis"	200	0.792			"Lovegrove (2000)"	366	FALSE
+"Rodentia"	"Geomyidae"	"Geomys pinetis"	203	0.77			"Heusner (1991)"	366	FALSE
+"Rodentia"	"Geomyidae"	"Thomomys bottae"	143	0.67	143	0.67	"White & Seymour (2003)"	367	TRUE
+"Rodentia"	"Geomyidae"	"Thomomys talpoides"	82.6	0.55	97.6	0.679	"Heusner (1991)"	368	TRUE
+"Rodentia"	"Geomyidae"	"Thomomys talpoides"	105.5	0.719			"Lovegrove (2000)"	368	FALSE
+"Rodentia"	"Geomyidae"	"Thomomys talpoides"	106.8	0.792			"White & Seymour (2003)"	368	FALSE
+"Rodentia"	"Geomyidae"	"Thomomys umbrinus"	85	0.403	90	0.427	"White & Seymour (2003)"	369	TRUE
+"Rodentia"	"Geomyidae"	"Thomomys umbrinus"	95.3	0.452			"Lovegrove (2000)"	369	FALSE
+"Rodentia"	"Heteromyidae"	"Chaetodipus baileyi"	29.1	0.192	29.1	0.192	"White & Seymour (2003)"	370	TRUE
+"Rodentia"	"Heteromyidae"	"Chaetodipus californicus"	22	0.119	22	0.119	"White & Seymour (2003)"	371	TRUE
+"Rodentia"	"Heteromyidae"	"Chaetodipus fallax"	19.6	0.15	19.6	0.15	"Hinds & MacMillen (1985)"	372	TRUE
+"Rodentia"	"Heteromyidae"	"Chaetodipus formosus"	15.1	0.103	15.1	0.103	"Lovegrove (2003)"	373	TRUE
+"Rodentia"	"Heteromyidae"	"Chaetodipus hispidus"	32	0.256	35.6	0.266	"Lovegrove (2003)"	374	TRUE
+"Rodentia"	"Heteromyidae"	"Chaetodipus hispidus"	35.8	0.268			"Lovegrove (2000)"	374	FALSE
+"Rodentia"	"Heteromyidae"	"Chaetodipus hispidus"	39.5	0.276			"White & Seymour (2003)"	374	FALSE
+"Rodentia"	"Heteromyidae"	"Chaetodipus intermedius"	14.6	0.087	15.9	0.106	"Lovegrove (2000)"	375	TRUE
+"Rodentia"	"Heteromyidae"	"Chaetodipus intermedius"	15	0.1			"White & Seymour (2003)"	375	FALSE
+"Rodentia"	"Heteromyidae"	"Chaetodipus intermedius"	18.3	0.136			"Lovegrove (2003)"	375	FALSE
+"Rodentia"	"Heteromyidae"	"Chaetodipus penicillatus"	16	0.125	16	0.125	"White & Seymour (2003)"	376	TRUE
+"Rodentia"	"Heteromyidae"	"Dipodomys agilis"	60.6	0.355	60.6	0.355	"White & Seymour (2003)"	377	TRUE
+"Rodentia"	"Heteromyidae"	"Dipodomys deserti"	104.7	0.541	105.8	0.517	"Lovegrove (2003)"	378	TRUE
+"Rodentia"	"Heteromyidae"	"Dipodomys deserti"	104.9	0.524			"Lovegrove (2000)"	378	FALSE
+"Rodentia"	"Heteromyidae"	"Dipodomys deserti"	106	0.514			"White & Seymour (2003)"	378	FALSE
+"Rodentia"	"Heteromyidae"	"Dipodomys deserti"	107.5	0.49			"Heusner (1991)"	378	FALSE
+"Rodentia"	"Heteromyidae"	"Dipodomys heermanni"	63.3	0.408	63.3	0.408	"White & Seymour (2003)"	379	TRUE
+"Rodentia"	"Heteromyidae"	"Dipodomys merriami"	35	0.234	37.6	0.246	"Hart (1971)"	380	TRUE
+"Rodentia"	"Heteromyidae"	"Dipodomys merriami"	35.8	0.295			"Lovegrove (2003)"	380	FALSE
+"Rodentia"	"Heteromyidae"	"Dipodomys merriami"	36.5	0.237			"White & Seymour (2003)"	380	FALSE
+"Rodentia"	"Heteromyidae"	"Dipodomys merriami"	37.7	0.248			"Lovegrove (2000)"	380	FALSE
+"Rodentia"	"Heteromyidae"	"Dipodomys merriami"	38	0.24			"Hart (1971)"	380	FALSE
+"Rodentia"	"Heteromyidae"	"Dipodomys merriami"	43.4	0.23			"Heusner (1991)"	380	FALSE
+"Rodentia"	"Heteromyidae"	"Dipodomys microps"	51.5	0.305	54.6	0.335	"Lovegrove (2003)"	381	TRUE
+"Rodentia"	"Heteromyidae"	"Dipodomys microps"	54.2	0.33			"Heusner (1991)"	381	FALSE
+"Rodentia"	"Heteromyidae"	"Dipodomys microps"	55.7	0.336			"Lovegrove (2000)"	381	FALSE
+"Rodentia"	"Heteromyidae"	"Dipodomys microps"	57.2	0.373			"White & Seymour (2003)"	381	FALSE
+"Rodentia"	"Heteromyidae"	"Dipodomys nitratoides"	37.8	0.257	37.8	0.204	"White & Seymour (2003)"	382	TRUE
+"Rodentia"	"Heteromyidae"	"Dipodomys nitratoides"	37.8	0.162			"Lovegrove (2003)"	382	FALSE
+"Rodentia"	"Heteromyidae"	"Dipodomys ordii"	46.8	0.358	47.8	0.339	"White & Seymour (2003)"	383	TRUE
+"Rodentia"	"Heteromyidae"	"Dipodomys ordii"	48.8	0.32			"Heusner (1991)"	383	FALSE
+"Rodentia"	"Heteromyidae"	"Dipodomys panamintinus"	56.9	0.38	60.4	0.397	"Heusner (1991)"	384	TRUE
+"Rodentia"	"Heteromyidae"	"Dipodomys panamintinus"	64.2	0.414			"White & Seymour (2003)"	384	FALSE
+"Rodentia"	"Heteromyidae"	"Heteromys anomalus"	69.3	0.561	69.3	0.561	"White & Seymour (2003)"	385	TRUE
+"Rodentia"	"Heteromyidae"	"Heteromys desmarestianus"	75.8	0.553	75.8	0.553	"White & Seymour (2003)"	386	TRUE
+"Rodentia"	"Heteromyidae"	"Liomys irroratus"	44.9	0.336	46.5	0.318	"Lovegrove (2003)"	387	TRUE
+"Rodentia"	"Heteromyidae"	"Liomys irroratus"	48.1	0.301			"White & Seymour (2003)"	387	FALSE
+"Rodentia"	"Heteromyidae"	"Liomys salvini"	42.7	0.313	43.7	0.281	"Lovegrove (2003)"	388	TRUE
+"Rodentia"	"Heteromyidae"	"Liomys salvini"	43.8	0.262			"White & Seymour (2003)"	388	FALSE
+"Rodentia"	"Heteromyidae"	"Liomys salvini"	44.5	0.27			"Lovegrove (2000)"	388	FALSE
+"Rodentia"	"Heteromyidae"	"Microdipodops megacephalus"	11	0.168	11	0.168	"White & Seymour (2003)"	389	TRUE
+"Rodentia"	"Heteromyidae"	"Microdipodops pallidus"	15.2	0.11	15.2	0.11	"Lovegrove (2000)"	390	TRUE
+"Rodentia"	"Heteromyidae"	"Perognathus flavus"	8.3	0.097	8.3	0.097	"White & Seymour (2003)"	391	TRUE
+"Rodentia"	"Heteromyidae"	"Perognathus longimembris"	8.2	0.07	8.5	0.061	"Lovegrove (2000)"	392	TRUE
+"Rodentia"	"Heteromyidae"	"Perognathus longimembris"	8.9	0.053			"White & Seymour (2003)"	392	FALSE
+"Rodentia"	"Heteromyidae"	"Perognathus parvus"	19.2	0.16	19.2	0.16	"Heusner (1991)"	393	TRUE
+"Rodentia"	"Hydrochaeridae"	"Hydrochaeris hydrochaeris"	26385	36.798	26385	36.798	"White & Seymour (2003)"	394	TRUE
+"Rodentia"	"Hystricidae"	"Hystrix africaeaustralis"	11300	13.175	11300	13.175	"White & Seymour (2003)"	395	TRUE
+"Rodentia"	"Muridae"	"Acomys cahirinus"	42	0.258	42	0.258	"White & Seymour (2003)"	396	TRUE
+"Rodentia"	"Muridae"	"Acomys russatus"	51.1	0.23	55.4	0.24	"Heusner (1991)"	397	TRUE
+"Rodentia"	"Muridae"	"Acomys russatus"	55.55	0.239			"White & Seymour (2003)"	397	FALSE
+"Rodentia"	"Muridae"	"Acomys russatus"	60	0.251			"Lovegrove (2003)"	397	FALSE
+"Rodentia"	"Muridae"	"Acomys spinosissimus"	27.02	0.246	27	0.246	"White & Seymour (2003)"	398	TRUE
+"Rodentia"	"Muridae"	"Acomys subspinosus"	32.25	0.465	32.3	0.465	"White & Seymour (2003)"	399	TRUE
+"Rodentia"	"Muridae"	"Aethomys namaquensis"	57.3	0.269	62.6	0.292	"Lovegrove (2000)"	400	TRUE
+"Rodentia"	"Muridae"	"Aethomys namaquensis"	64.2	0.317			"White & Seymour (2003)"	400	FALSE
+"Rodentia"	"Muridae"	"Aethomys namaquensis"	66.6	0.293			"Lovegrove (2003)"	400	FALSE
+"Rodentia"	"Muridae"	"Akodon albiventer"	31	0.259	31	0.259	"White & Seymour (2003)"	401	TRUE
+"Rodentia"	"Muridae"	"Akodon azarae"	23.5	0.223	23.7	0.225	"Lovegrove (2000)"	402	TRUE
+"Rodentia"	"Muridae"	"Akodon azarae"	24	0.228			"White & Seymour (2003)"	402	FALSE
+"Rodentia"	"Muridae"	"Akodon lanosus"	24	0.254	24	0.254	"White & Seymour (2003)"	403	TRUE
+"Rodentia"	"Muridae"	"Akodon longipilis"	42.3	0.321	42.3	0.321	"White & Seymour (2003)"	404	TRUE
+"Rodentia"	"Muridae"	"Akodon olivaceus"	27	0.276	27	0.276	"White & Seymour (2003)"	405	TRUE
+"Rodentia"	"Muridae"	"Alticola argentatus"	37.7	0.675	37.7	0.675	"White & Seymour (2003)"	406	TRUE
+"Rodentia"	"Muridae"	"Apodemus agrarius"	21.2	0.373	21.2	0.373	"Lovegrove (2003)"	407	TRUE
+"Rodentia"	"Muridae"	"Apodemus flavicollis"	23.4	0.236	28.3	0.365	"Lovegrove (2003)"	408	TRUE
+"Rodentia"	"Muridae"	"Apodemus flavicollis"	23.9	0.242			"White & Seymour (2003)"	408	FALSE
+"Rodentia"	"Muridae"	"Apodemus flavicollis"	40.5	0.85			"Lovegrove (2000)"	408	FALSE
+"Rodentia"	"Muridae"	"Apodemus hermonensis"	20.5	0.279	20.6	0.28	"White & Seymour (2003)"	409	TRUE
+"Rodentia"	"Muridae"	"Apodemus hermonensis"	20.7	0.282			"Lovegrove (2000)"	409	FALSE
+"Rodentia"	"Muridae"	"Apodemus mystacinus"	40.4	0.312	41.3	0.351	"White & Seymour (2003)"	410	TRUE
+"Rodentia"	"Muridae"	"Apodemus mystacinus"	42.3	0.394			"Lovegrove (2000)"	410	FALSE
+"Rodentia"	"Muridae"	"Apodemus sylvaticus"	22	0.318	23.8	0.264	"Lovegrove (2000)"	411	TRUE
+"Rodentia"	"Muridae"	"Apodemus sylvaticus"	23.9	0.242			"White & Seymour (2003)"	411	FALSE
+"Rodentia"	"Muridae"	"Apodemus sylvaticus"	25.7	0.241			"Lovegrove (2003)"	411	FALSE
+"Rodentia"	"Muridae"	"Arborimus longicaudus"	21.8	0.329	21.8	0.329	"White & Seymour (2003)"	412	TRUE
+"Rodentia"	"Muridae"	"Arvicola terrestris"	92	0.595	94.7	0.613	"White & Seymour (2003)"	413	TRUE
+"Rodentia"	"Muridae"	"Arvicola terrestris"	97.5	0.631			"Lovegrove (2000)"	413	FALSE
+"Rodentia"	"Muridae"	"Auliscomys boliviensis"	76.8	0.617	76.8	0.617	"White & Seymour (2003)"	414	TRUE
+"Rodentia"	"Muridae"	"Auliscomys micropus"	62.3	0.546	62.3	0.546	"White & Seymour (2003)"	415	TRUE
+"Rodentia"	"Muridae"	"Baiomys taylori"	7.15	0.095	7.2	0.095	"White & Seymour (2003)"	416	TRUE
+"Rodentia"	"Muridae"	"Calomys callosus"	48	0.311	49.2	0.371	"Lovegrove (2000)"	417	TRUE
+"Rodentia"	"Muridae"	"Calomys callosus"	49.5	0.395			"Lovegrove (2000)"	417	FALSE
+"Rodentia"	"Muridae"	"Calomys callosus"	50.1	0.417			"White & Seymour (2003)"	417	FALSE
+"Rodentia"	"Muridae"	"Calomys lepidus"	16	0.161	16	0.161	"Lovegrove (2003)"	418	TRUE
+"Rodentia"	"Muridae"	"Calomys musculinus"	16.9	0.154	16.9	0.154	"White & Seymour (2003)"	419	TRUE
+"Rodentia"	"Muridae"	"Cannomys badius"	344	0.96	344	0.96	"White & Seymour (2003)"	420	TRUE
+"Rodentia"	"Muridae"	"Chionomys nivalis"	32.8	0.452	32.8	0.452	"White & Seymour (2003)"	421	TRUE
+"Rodentia"	"Muridae"	"Chroeomys andinus"	34.6	0.361	34.7	0.353	"White & Seymour (2003)"	422	TRUE
+"Rodentia"	"Muridae"	"Chroeomys andinus"	34.9	0.345			"Lovegrove (2003)"	422	FALSE
+"Rodentia"	"Muridae"	"Clethrionomys californicus"	18.3	0.341	18.3	0.341	"Lovegrove (2000)"	423	TRUE
+"Rodentia"	"Muridae"	"Clethrionomys gapperi"	22.3	0.275	23.4	0.291	"White & Seymour (2003)"	424	TRUE
+"Rodentia"	"Muridae"	"Clethrionomys gapperi"	23.3	0.27			"Lovegrove (2003)"	424	FALSE
+"Rodentia"	"Muridae"	"Clethrionomys gapperi"	24.6	0.332			"Lovegrove (2000)"	424	FALSE
+"Rodentia"	"Muridae"	"Clethrionomys glareolus"	18	0.311	21.5	0.312	"Hart (1971)"	425	TRUE
+"Rodentia"	"Muridae"	"Clethrionomys glareolus"	20.5	0.27			"Heusner (1991)"	425	FALSE
+"Rodentia"	"Muridae"	"Clethrionomys glareolus"	23.4	0.354			"White & Seymour (2003)"	425	FALSE
+"Rodentia"	"Muridae"	"Clethrionomys glareolus"	24.6	0.32			"Lovegrove (2003)"	425	FALSE
+"Rodentia"	"Muridae"	"Clethrionomys rufocanus"	27	0.331	27.2	0.321	"White & Seymour (2003)"	426	TRUE
+"Rodentia"	"Muridae"	"Clethrionomys rufocanus"	27.5	0.31			"Heusner (1991)"	426	FALSE
+"Rodentia"	"Muridae"	"Clethrionomys rutilus"	28	0.43	28	0.43	"White & Seymour (2003)"	427	TRUE
+"Rodentia"	"Muridae"	"Conilurus penicillatus"	213.2	0.908	213.2	0.908	"White & Seymour (2003)"	428	TRUE
+"Rodentia"	"Muridae"	"Cricetomys gambianus"	1521.4	5.703	1686.7	6.024	"Lovegrove (2000)"	429	TRUE
+"Rodentia"	"Muridae"	"Cricetomys gambianus"	1870	6.364			"White & Seymour (2003)"	429	FALSE
+"Rodentia"	"Muridae"	"Cricetulus migratorius"	30.7	0.245	30.7	0.245	"White & Seymour (2003)"	430	TRUE
+"Rodentia"	"Muridae"	"Cricetus cricetus"	336.7	1.19	365.3	1.251	"Heusner (1991)"	431	TRUE
+"Rodentia"	"Muridae"	"Cricetus cricetus"	362	1.293			"White & Seymour (2003)"	431	FALSE
+"Rodentia"	"Muridae"	"Cricetus cricetus"	400	1.272			"Hart (1971)"	431	FALSE
+"Rodentia"	"Muridae"	"Desmodillus auricularis"	71.93	0.49	71.9	0.49	"White & Seymour (2003)"	432	TRUE
+"Rodentia"	"Muridae"	"Dicrostonyx groenlandicus"	47	0.52	56.8	0.459	"Heusner (1991)"	433	TRUE
+"Rodentia"	"Muridae"	"Dicrostonyx groenlandicus"	59.62	0.551			"White & Seymour (2003)"	433	FALSE
+"Rodentia"	"Muridae"	"Dicrostonyx groenlandicus"	61	0.391			"Hart (1971)"	433	FALSE
+"Rodentia"	"Muridae"	"Dicrostonyx groenlandicus"	61	0.395			"Hart (1971)"	433	FALSE
+"Rodentia"	"Muridae"	"Eligmodontia typus"	17.5	0.167	17.5	0.167	"White & Seymour (2003)"	434	TRUE
+"Rodentia"	"Muridae"	"Euneomys chinchilloides"	65.4	0.471	65.4	0.471	"White & Seymour (2003)"	435	TRUE
+"Rodentia"	"Muridae"	"Gerbillurus paeba"	33.9	0.194	33.9	0.194	"White & Seymour (2003)"	436	TRUE
+"Rodentia"	"Muridae"	"Gerbillurus setzeri"	46.1	0.206	46.1	0.206	"White & Seymour (2003)"	437	TRUE
+"Rodentia"	"Muridae"	"Gerbillurus tytonis"	29.9	0.177	29.9	0.177	"White & Seymour (2003)"	438	TRUE
+"Rodentia"	"Muridae"	"Gerbillurus vallinus"	38.8	0.194	38.8	0.194	"White & Seymour (2003)"	439	TRUE
+"Rodentia"	"Muridae"	"Gerbillus allenbyi"	35.3	0.217	35.3	0.217	"Lovegrove (2000)"	440	TRUE
+"Rodentia"	"Muridae"	"Gerbillus dasyurus"	27.6	0.163	27.6	0.163	"White & Seymour (2003)"	441	TRUE
+"Rodentia"	"Muridae"	"Gerbillus gerbillus"	29.7	0.237	29.7	0.237	"White & Seymour (2003)"	442	TRUE
+"Rodentia"	"Muridae"	"Gerbillus nanus"	28.4	0.124	29.7	0.129	"White & Seymour (2003)"	443	TRUE
+"Rodentia"	"Muridae"	"Gerbillus nanus"	31	0.135			"Lovegrove (2000)"	443	FALSE
+"Rodentia"	"Muridae"	"Gerbillus perpallidus"	52.4	0.243	56.3	0.261	"White & Seymour (2003)"	444	TRUE
+"Rodentia"	"Muridae"	"Gerbillus perpallidus"	60.5	0.28			"Lovegrove (2003)"	444	FALSE
+"Rodentia"	"Muridae"	"Gerbillus pusillus"	12.6	0.075	12.6	0.075	"White & Seymour (2003)"	445	TRUE
+"Rodentia"	"Muridae"	"Gerbillus pyramidum"	108.5	0.454	108.5	0.454	"White & Seymour (2003)"	446	TRUE
+"Rodentia"	"Muridae"	"Golunda ellioti"	56.2	0.339	56.2	0.339	"Lovegrove (2003)"	447	TRUE
+"Rodentia"	"Muridae"	"Graomys griseoflavus"	69.4	0.469	69.4	0.469	"White & Seymour (2003)"	448	TRUE
+"Rodentia"	"Muridae"	"Hydromys chrysogaster"	900	2.97	900	2.97	"Heusner (1991)"	449	TRUE
+"Rodentia"	"Muridae"	"Isthmomys pirrensis"	137.9	0.677	137.9	0.677	"White & Seymour (2003)"	450	TRUE
+"Rodentia"	"Muridae"	"Lasiopodomys brandtii"	40.2	0.428	40.2	0.428	"White & Seymour (2003)"	451	TRUE
+"Rodentia"	"Muridae"	"Lemmiscus curtatus"	30.3	0.281	30.3	0.281	"White & Seymour (2003)"	452	TRUE
+"Rodentia"	"Muridae"	"Lemmus lemmus"	80	1.071	80	1.071	"White & Seymour (2003)"	453	TRUE
+"Rodentia"	"Muridae"	"Lemmus sibiricus"	50.2	0.503	60.8	0.667	"White & Seymour (2003)"	454	TRUE
+"Rodentia"	"Muridae"	"Lemmus sibiricus"	64	0.882			"Lovegrove (2000)"	454	FALSE
+"Rodentia"	"Muridae"	"Lemmus sibiricus"	70	0.67			"Heusner (1991)"	454	FALSE
+"Rodentia"	"Muridae"	"Lemniscomys griselda"	47.5	0.321	47.5	0.321	"White & Seymour (2003)"	455	TRUE
+"Rodentia"	"Muridae"	"Lemniscomys rosalia"	50.53	0.343	50.5	0.343	"White & Seymour (2003)"	456	TRUE
+"Rodentia"	"Muridae"	"Malacothrix typica"	21.7	0.115	21.7	0.115	"White & Seymour (2003)"	457	TRUE
+"Rodentia"	"Muridae"	"Mastomys natalensis"	41.49	0.183	41.5	0.183	"Lovegrove (2000)"	458	TRUE
+"Rodentia"	"Muridae"	"Megadontomys thomasi"	110.8	0.692	110.8	0.692	"White & Seymour (2003)"	459	TRUE
+"Rodentia"	"Muridae"	"Meriones hurrianae"	69	0.304	70.6	0.301	"White & Seymour (2003)"	460	TRUE
+"Rodentia"	"Muridae"	"Meriones hurrianae"	72.3	0.298			"Lovegrove (2003)"	460	FALSE
+"Rodentia"	"Muridae"	"Meriones tristrami"	112	0.55	112	0.55	"White & Seymour (2003)"	461	TRUE
+"Rodentia"	"Muridae"	"Meriones unguiculatus"	58.1	0.69	64.8	0.546	"Lovegrove (2003)"	462	TRUE
+"Rodentia"	"Muridae"	"Meriones unguiculatus"	67	0.43			"White & Seymour (2003)"	462	FALSE
+"Rodentia"	"Muridae"	"Meriones unguiculatus"	70	0.547			"Hart (1971)"	462	FALSE
+"Rodentia"	"Muridae"	"Mesocricetus auratus"	98	0.82	108.2	0.69	"White & Seymour (2003)"	463	TRUE
+"Rodentia"	"Muridae"	"Mesocricetus auratus"	119.5	0.58			"Heusner (1991)"	463	FALSE
+"Rodentia"	"Muridae"	"Micromys minutus"	6	0.224	7.6	0.201	"Hart (1971)"	464	TRUE
+"Rodentia"	"Muridae"	"Micromys minutus"	7.37	0.118			"White & Seymour (2003)"	464	FALSE
+"Rodentia"	"Muridae"	"Micromys minutus"	8.7	0.24			"Heusner (1991)"	464	FALSE
+"Rodentia"	"Muridae"	"Micromys minutus"	8.71	0.26			"Heusner (1991)"	464	FALSE
+"Rodentia"	"Muridae"	"Microtus agrestis"	22.3	0.38	25	0.367	"Heusner (1991)"	465	TRUE
+"Rodentia"	"Muridae"	"Microtus agrestis"	28	0.355			"White & Seymour (2003)"	465	FALSE
+"Rodentia"	"Muridae"	"Microtus arvalis"	20	0.346	21.9	0.343	"White & Seymour (2003)"	466	TRUE
+"Rodentia"	"Muridae"	"Microtus arvalis"	23.9	0.34			"Heusner (1991)"	466	FALSE
+"Rodentia"	"Muridae"	"Microtus breweri"	53.1	0.412	53.1	0.412	"White & Seymour (2003)"	467	TRUE
+"Rodentia"	"Muridae"	"Microtus californicus"	44	0.38	44	0.38	"White & Seymour (2003)"	468	TRUE
+"Rodentia"	"Muridae"	"Microtus guentheri"	43.8	0.447	43.8	0.447	"White & Seymour (2003)"	469	TRUE
+"Rodentia"	"Muridae"	"Microtus longicaudus"	28.6	0.377	32.5	0.383	"White & Seymour (2003)"	470	TRUE
+"Rodentia"	"Muridae"	"Microtus longicaudus"	30.2	0.347			"Lovegrove (2003)"	470	FALSE
+"Rodentia"	"Muridae"	"Microtus longicaudus"	31.2	0.41			"Lovegrove (2000)"	470	FALSE
+"Rodentia"	"Muridae"	"Microtus longicaudus"	41.4	0.4			"Heusner (1991)"	470	FALSE
+"Rodentia"	"Muridae"	"Microtus mexicanus"	28	0.26	28.4	0.261	"Heusner (1991)"	471	TRUE
+"Rodentia"	"Muridae"	"Microtus mexicanus"	28.8	0.262			"White & Seymour (2003)"	471	FALSE
+"Rodentia"	"Muridae"	"Microtus montanus"	30.8	0.455	32.9	0.46	"Lovegrove (2000)"	472	TRUE
+"Rodentia"	"Muridae"	"Microtus montanus"	35.1	0.465			"White & Seymour (2003)"	472	FALSE
+"Rodentia"	"Muridae"	"Microtus ochrogaster"	46.7	0.441	48.2	0.41	"White & Seymour (2003)"	473	TRUE
+"Rodentia"	"Muridae"	"Microtus ochrogaster"	47	0.459			"Lovegrove (2000)"	473	FALSE
+"Rodentia"	"Muridae"	"Microtus ochrogaster"	51	0.34			"Heusner (1991)"	473	FALSE
+"Rodentia"	"Muridae"	"Microtus oeconomus"	32	0.57	32.8	0.566	"Heusner (1991)"	474	TRUE
+"Rodentia"	"Muridae"	"Microtus oeconomus"	33.7	0.563			"White & Seymour (2003)"	474	FALSE
+"Rodentia"	"Muridae"	"Microtus pennsylvanicus"	37.8	0.457	38.2	0.428	"Lovegrove (2000)"	475	TRUE
+"Rodentia"	"Muridae"	"Microtus pennsylvanicus"	38	0.41			"Heusner (1991)"	475	FALSE
+"Rodentia"	"Muridae"	"Microtus pennsylvanicus"	38.9	0.419			"White & Seymour (2003)"	475	FALSE
+"Rodentia"	"Muridae"	"Microtus pinetorum"	23.8	0.312	24.8	0.305	"Lovegrove (2003)"	476	TRUE
+"Rodentia"	"Muridae"	"Microtus pinetorum"	25	0.28			"Heusner (1991)"	476	FALSE
+"Rodentia"	"Muridae"	"Microtus pinetorum"	25.5	0.326			"White & Seymour (2003)"	476	FALSE
+"Rodentia"	"Muridae"	"Microtus richardsoni"	51	0.5	64.5	0.701	"Heusner (1991)"	477	TRUE
+"Rodentia"	"Muridae"	"Microtus richardsoni"	65.65	0.714			"White & Seymour (2003)"	477	FALSE
+"Rodentia"	"Muridae"	"Microtus richardsoni"	80	0.964			"Lovegrove (2003)"	477	FALSE
+"Rodentia"	"Muridae"	"Microtus subterraneus"	17.8	0.276	17.8	0.276	"White & Seymour (2003)"	478	TRUE
+"Rodentia"	"Muridae"	"Microtus townsendii"	52.2	0.504	52.2	0.504	"White & Seymour (2003)"	479	TRUE
+"Rodentia"	"Muridae"	"Microtus xanthognathus"	68.5	0.55	68.5	0.55	"White & Seymour (2003)"	480	TRUE
+"Rodentia"	"Muridae"	"Millardia meltada"	67.4	0.327	67.4	0.327	"White & Seymour (2003)"	481	TRUE
+"Rodentia"	"Muridae"	"Mus minutoides"	7.92	0.124	8	0.129	"Lovegrove (2000)"	482	TRUE
+"Rodentia"	"Muridae"	"Mus minutoides"	8.06	0.134			"White & Seymour (2003)"	482	FALSE
+"Rodentia"	"Muridae"	"Mus musculus"	13.2	0.365	18	0.271	"Lovegrove (2003)"	483	TRUE
+"Rodentia"	"Muridae"	"Mus musculus"	17	0.16			"Heusner (1991)"	483	FALSE
+"Rodentia"	"Muridae"	"Mus musculus"	26	0.34			"Heusner (1991)"	483	FALSE
+"Rodentia"	"Muridae"	"Mus spretus"	21.8	0.345	21.8	0.345	"White & Seymour (2003)"	484	TRUE
+"Rodentia"	"Muridae"	"Myopus schisticolor"	26.4	0.522	26.4	0.522	"White & Seymour (2003)"	485	TRUE
+"Rodentia"	"Muridae"	"Mystromys albicaudatus"	93.78	0.707	93.8	0.707	"White & Seymour (2003)"	486	TRUE
+"Rodentia"	"Muridae"	"Nannospalax ehrenbergi"	128	0.614	133.8	0.585	"Lovegrove (2000)"	487	TRUE
+"Rodentia"	"Muridae"	"Nannospalax ehrenbergi"	134	0.568			"White & Seymour (2003)"	487	FALSE
+"Rodentia"	"Muridae"	"Nannospalax ehrenbergi"	134	0.462			"White & Seymour (2003)"	487	FALSE
+"Rodentia"	"Muridae"	"Nannospalax ehrenbergi"	135	0.64			"White & Seymour (2003)"	487	FALSE
+"Rodentia"	"Muridae"	"Nannospalax ehrenbergi"	138	0.662			"White & Seymour (2003)"	487	FALSE
+"Rodentia"	"Muridae"	"Nannospalax leucodon"	151.9	0.713	183.3	0.76	"Lovegrove (2000)"	488	TRUE
+"Rodentia"	"Muridae"	"Nannospalax leucodon"	177.9	0.63			"Heusner (1991)"	488	FALSE
+"Rodentia"	"Muridae"	"Nannospalax leucodon"	201	0.83			"White & Seymour (2003)"	488	FALSE
+"Rodentia"	"Muridae"	"Nannospalax leucodon"	208	0.893			"Hart (1971)"	488	FALSE
+"Rodentia"	"Muridae"	"Neofiber alleni"	258.1	1.209	258.1	1.209	"White & Seymour (2003)"	489	TRUE
+"Rodentia"	"Muridae"	"Neotoma albigula"	172.4	0.72	177.6	0.735	"Heusner (1991)"	490	TRUE
+"Rodentia"	"Muridae"	"Neotoma albigula"	183	0.75			"White & Seymour (2003)"	490	FALSE
+"Rodentia"	"Muridae"	"Neotoma cinerea"	205.1	0.941	256.5	1.152	"White & Seymour (2003)"	491	TRUE
+"Rodentia"	"Muridae"	"Neotoma cinerea"	320.9	1.41			"Heusner (1991)"	491	FALSE
+"Rodentia"	"Muridae"	"Neotoma fuscipes"	187	0.824	187	0.824	"White & Seymour (2003)"	492	TRUE
+"Rodentia"	"Muridae"	"Neotoma lepida"	98.7	0.413	112.5	0.46	"Lovegrove (2003)"	493	TRUE
+"Rodentia"	"Muridae"	"Neotoma lepida"	106	0.36			"Heusner (1991)"	493	FALSE
+"Rodentia"	"Muridae"	"Neotoma lepida"	110	0.485			"White & Seymour (2003)"	493	FALSE
+"Rodentia"	"Muridae"	"Neotoma lepida"	113.4	0.517			"Lovegrove (2000)"	493	FALSE
+"Rodentia"	"Muridae"	"Neotoma lepida"	138	0.554			"Hart (1971)"	493	FALSE
+"Rodentia"	"Muridae"	"Notomys alexis"	32.3	0.252	32.3	0.252	"White & Seymour (2003)"	494	TRUE
+"Rodentia"	"Muridae"	"Notomys cervinus"	33.2	0.246	33.7	0.239	"Lovegrove (2000)"	495	TRUE
+"Rodentia"	"Muridae"	"Notomys cervinus"	34.2	0.233			"White & Seymour (2003)"	495	FALSE
+"Rodentia"	"Muridae"	"Ochrotomys nuttalli"	19.5	0.151	19.5	0.151	"White & Seymour (2003)"	496	TRUE
+"Rodentia"	"Muridae"	"Oligoryzomys longicaudatus"	28.2	0.285	28.2	0.285	"White & Seymour (2003)"	497	TRUE
+"Rodentia"	"Muridae"	"Ondatra zibethicus"	842	3.89	976.3	4.363	"Heusner (1991)"	498	TRUE
+"Rodentia"	"Muridae"	"Ondatra zibethicus"	1004.6	3.586			"White & Seymour (2003)"	498	FALSE
+"Rodentia"	"Muridae"	"Ondatra zibethicus"	1100	5.952			"Hart (1971)"	498	FALSE
+"Rodentia"	"Muridae"	"Onychomys torridus"	19.1	0.165	19.1	0.165	"White & Seymour (2003)"	499	TRUE
+"Rodentia"	"Muridae"	"Otomys irroratus"	102	0.474	102	0.474	"White & Seymour (2003)"	500	TRUE
+"Rodentia"	"Muridae"	"Otomys sloggetti"	113.29	0.746	113.3	0.746	"White & Seymour (2003)"	501	TRUE
+"Rodentia"	"Muridae"	"Otomys unisulcatus"	96	0.595	96	0.595	"White & Seymour (2003)"	502	TRUE
+"Rodentia"	"Muridae"	"Oxymycterus roberti"	83.5	0.508	83.5	0.508	"White & Seymour (2003)"	503	TRUE
+"Rodentia"	"Muridae"	"Parotomys brantsii"	86.5	0.468	86.5	0.468	"White & Seymour (2003)"	504	TRUE
+"Rodentia"	"Muridae"	"Peromyscus boylii"	23.2	0.303	23.2	0.303	"White & Seymour (2003)"	505	TRUE
+"Rodentia"	"Muridae"	"Peromyscus californicus"	45.5	0.261	47	0.267	"Lovegrove (2003)"	506	TRUE
+"Rodentia"	"Muridae"	"Peromyscus californicus"	47.6	0.292			"White & Seymour (2003)"	506	FALSE
+"Rodentia"	"Muridae"	"Peromyscus californicus"	48	0.25			"Heusner (1991)"	506	FALSE
+"Rodentia"	"Muridae"	"Peromyscus crinitus"	13.6	0.1	20.5	0.162	"Heusner (1991)"	507	TRUE
+"Rodentia"	"Muridae"	"Peromyscus crinitus"	15.9	0.14			"Lovegrove (2003)"	507	FALSE
+"Rodentia"	"Muridae"	"Peromyscus crinitus"	16	0.143			"Hart (1971)"	507	FALSE
+"Rodentia"	"Muridae"	"Peromyscus crinitus"	20.9	0.173			"Lovegrove (2003)"	507	FALSE
+"Rodentia"	"Muridae"	"Peromyscus crinitus"	49.6	0.324			"White & Seymour (2003)"	507	FALSE
+"Rodentia"	"Muridae"	"Peromyscus eremicus"	20	0.179	21	0.173	"Hart (1971)"	508	TRUE
+"Rodentia"	"Muridae"	"Peromyscus eremicus"	20.7	0.15			"Heusner (1991)"	508	FALSE
+"Rodentia"	"Muridae"	"Peromyscus eremicus"	21.5	0.185			"White & Seymour (2003)"	508	FALSE
+"Rodentia"	"Muridae"	"Peromyscus eremicus"	22	0.182			"Lovegrove (2000)"	508	FALSE
+"Rodentia"	"Muridae"	"Peromyscus gossypinus"	21.5	0.206	21.5	0.206	"White & Seymour (2003)"	509	TRUE
+"Rodentia"	"Muridae"	"Peromyscus leucopus"	20	0.185	22.3	0.213	"White & Seymour (2003)"	510	TRUE
+"Rodentia"	"Muridae"	"Peromyscus leucopus"	21.4	0.189			"Lovegrove (2000)"	510	FALSE
+"Rodentia"	"Muridae"	"Peromyscus leucopus"	22.1	0.205			"Lovegrove (2003)"	510	FALSE
+"Rodentia"	"Muridae"	"Peromyscus leucopus"	22.3	0.19			"Heusner (1991)"	510	FALSE
+"Rodentia"	"Muridae"	"Peromyscus leucopus"	26	0.319			"Hart (1971)"	510	FALSE
+"Rodentia"	"Muridae"	"Peromyscus maniculatus"	17	0.17	20.5	0.219	"Heusner (1991)"	511	TRUE
+"Rodentia"	"Muridae"	"Peromyscus maniculatus"	18.7	0.203			"Lovegrove (2000)"	511	FALSE
+"Rodentia"	"Muridae"	"Peromyscus maniculatus"	18.93	0.22			"White & Seymour (2003)"	511	FALSE
+"Rodentia"	"Muridae"	"Peromyscus maniculatus"	19	0.212			"Hart (1971)"	511	FALSE
+"Rodentia"	"Muridae"	"Peromyscus maniculatus"	19	0.223			"Hart (1971)"	511	FALSE
+"Rodentia"	"Muridae"	"Peromyscus maniculatus"	19.1	0.217			"Lovegrove (2003)"	511	FALSE
+"Rodentia"	"Muridae"	"Peromyscus maniculatus"	19.53	0.222			"White & Seymour (2003)"	511	FALSE
+"Rodentia"	"Muridae"	"Peromyscus maniculatus"	20.38	0.209			"White & Seymour (2003)"	511	FALSE
+"Rodentia"	"Muridae"	"Peromyscus maniculatus"	22	0.245			"Hart (1971)"	511	FALSE
+"Rodentia"	"Muridae"	"Peromyscus maniculatus"	22.8	0.206			"White & Seymour (2003)"	511	FALSE
+"Rodentia"	"Muridae"	"Peromyscus maniculatus"	23.19	0.257			"White & Seymour (2003)"	511	FALSE
+"Rodentia"	"Muridae"	"Peromyscus maniculatus"	24.2	0.225			"Lovegrove (2003)"	511	FALSE
+"Rodentia"	"Muridae"	"Peromyscus maniculatus"	25	0.251			"Hart (1971)"	511	FALSE
+"Rodentia"	"Muridae"	"Peromyscus megalops"	66	0.515	66.1	0.511	"Hart (1971)"	512	TRUE
+"Rodentia"	"Muridae"	"Peromyscus megalops"	66.2	0.506			"White & Seymour (2003)"	512	FALSE
+"Rodentia"	"Muridae"	"Peromyscus oreas"	24.58	0.243	24.6	0.243	"White & Seymour (2003)"	513	TRUE
+"Rodentia"	"Muridae"	"Peromyscus polionotus"	12	0.12	12	0.12	"Lovegrove (2003)"	514	TRUE
+"Rodentia"	"Muridae"	"Peromyscus sitkensis"	28.3	0.261	28.3	0.261	"White & Seymour (2003)"	515	TRUE
+"Rodentia"	"Muridae"	"Peromyscus truei"	33	0.256	33.1	0.307	"Lovegrove (2000)"	516	TRUE
+"Rodentia"	"Muridae"	"Peromyscus truei"	33	0.35			"Hart (1971)"	516	FALSE
+"Rodentia"	"Muridae"	"Peromyscus truei"	33.2	0.283			"White & Seymour (2003)"	516	FALSE
+"Rodentia"	"Muridae"	"Peromyscus truei"	33.3	0.349			"White & Seymour (2003)"	516	FALSE
+"Rodentia"	"Muridae"	"Petromyscus collinus"	20.41	0.115	20.4	0.115	"Lovegrove (2003)"	517	TRUE
+"Rodentia"	"Muridae"	"Phenacomys intermedius"	21.5	0.375	21.5	0.375	"White & Seymour (2003)"	518	TRUE
+"Rodentia"	"Muridae"	"Phodopus sungorus"	25.7	0.228	31.3	0.313	"White & Seymour (2003)"	519	TRUE
+"Rodentia"	"Muridae"	"Phodopus sungorus"	31.4	0.329			"Lovegrove (2003)"	519	FALSE
+"Rodentia"	"Muridae"	"Phodopus sungorus"	33.2	0.3			"Heusner (1991)"	519	FALSE
+"Rodentia"	"Muridae"	"Phodopus sungorus"	35.9	0.425			"Lovegrove (2000)"	519	FALSE
+"Rodentia"	"Muridae"	"Phyllotis darwini"	36	0.253	47	0.333	"Lovegrove (2000)"	520	TRUE
+"Rodentia"	"Muridae"	"Phyllotis darwini"	49	0.367			"White & Seymour (2003)"	520	FALSE
+"Rodentia"	"Muridae"	"Phyllotis darwini"	59	0.398			"White & Seymour (2003)"	520	FALSE
+"Rodentia"	"Muridae"	"Phyllotis magister"	62.8	0.385	62.8	0.385	"White & Seymour (2003)"	521	TRUE
+"Rodentia"	"Muridae"	"Phyllotis xanthopygus"	55	0.316	55	0.316	"White & Seymour (2003)"	522	TRUE
+"Rodentia"	"Muridae"	"Podomys floridanus"	30.8	0.288	30.8	0.288	"White & Seymour (2003)"	523	TRUE
+"Rodentia"	"Muridae"	"Pseudomys gracilicaudatus"	79.8	0.467	79.8	0.467	"White & Seymour (2003)"	524	TRUE
+"Rodentia"	"Muridae"	"Pseudomys hermannsburgensis"	12.2	0.13	12.2	0.13	"White & Seymour (2003)"	525	TRUE
+"Rodentia"	"Muridae"	"Rattus colletti"	165.7	0.686	165.7	0.686	"White & Seymour (2003)"	526	TRUE
+"Rodentia"	"Muridae"	"Rattus fuscipes"	76	0.471	76	0.471	"White & Seymour (2003)"	527	TRUE
+"Rodentia"	"Muridae"	"Rattus lutreolus"	109	0.353	109	0.353	"White & Seymour (2003)"	528	TRUE
+"Rodentia"	"Muridae"	"Rattus norvegicus"	160	1.339	206.9	1.404	"Hart (1971)"	529	TRUE
+"Rodentia"	"Muridae"	"Rattus norvegicus"	160	1.169			"Hart (1971)"	529	FALSE
+"Rodentia"	"Muridae"	"Rattus norvegicus"	170	0.948			"Hart (1971)"	529	FALSE
+"Rodentia"	"Muridae"	"Rattus norvegicus"	170	0.96			"Heusner (1991)"	529	FALSE
+"Rodentia"	"Muridae"	"Rattus norvegicus"	225	1.506			"Hart (1971)"	529	FALSE
+"Rodentia"	"Muridae"	"Rattus norvegicus"	250	2.092			"Hart (1971)"	529	FALSE
+"Rodentia"	"Muridae"	"Rattus norvegicus"	390	2.393			"Hart (1971)"	529	FALSE
+"Rodentia"	"Muridae"	"Rattus rattus"	117	0.77	117	0.77	"Heusner (1991)"	530	TRUE
+"Rodentia"	"Muridae"	"Rattus sordidus"	187	0.595	187	0.595	"White & Seymour (2003)"	531	TRUE
+"Rodentia"	"Muridae"	"Rattus villosissimus"	185	0.585	215.3	0.69	"Lovegrove (2003)"	532	TRUE
+"Rodentia"	"Muridae"	"Rattus villosissimus"	250.6	0.813			"White & Seymour (2003)"	532	FALSE
+"Rodentia"	"Muridae"	"Reithrodon auritus"	78.7	0.428	78.7	0.428	"Lovegrove (2003)"	533	TRUE
+"Rodentia"	"Muridae"	"Reithrodontomys megalotis"	9	0.13	9	0.13	"Heusner (1991)"	534	TRUE
+"Rodentia"	"Muridae"	"Rhabdomys pumilio"	39.6	0.179	39.6	0.179	"White & Seymour (2003)"	535	TRUE
+"Rodentia"	"Muridae"	"Saccostomus campestris"	61.3	0.287	68.1	0.274	"White & Seymour (2003)"	536	TRUE
+"Rodentia"	"Muridae"	"Saccostomus campestris"	75.7	0.261			"Lovegrove (2003)"	536	FALSE
+"Rodentia"	"Muridae"	"Scotinomys teguina"	12	0.174	12	0.174	"White & Seymour (2003)"	537	TRUE
+"Rodentia"	"Muridae"	"Scotinomys xerampelinus"	15.2	0.178	15.2	0.178	"White & Seymour (2003)"	538	TRUE
+"Rodentia"	"Muridae"	"Sekeetamys calurus"	56.9	0.248	63.6	0.274	"White & Seymour (2003)"	539	TRUE
+"Rodentia"	"Muridae"	"Sekeetamys calurus"	71.2	0.303			"Lovegrove (2003)"	539	FALSE
+"Rodentia"	"Muridae"	"Sigmodon alleni"	137.8	1.134	137.8	1.134	"White & Seymour (2003)"	540	TRUE
+"Rodentia"	"Muridae"	"Sigmodon fulviventer"	137.8	1.157	137.8	1.157	"White & Seymour (2003)"	541	TRUE
+"Rodentia"	"Muridae"	"Sigmodon hispidus"	139.3	1.285	159.6	1.085	"White & Seymour (2003)"	542	TRUE
+"Rodentia"	"Muridae"	"Sigmodon hispidus"	152.4	0.71			"Heusner (1991)"	542	FALSE
+"Rodentia"	"Muridae"	"Sigmodon hispidus"	191.6	1.4			"Lovegrove (2003)"	542	FALSE
+"Rodentia"	"Muridae"	"Sigmodon leucotis"	128.6	1.04	128.6	1.04	"White & Seymour (2003)"	543	TRUE
+"Rodentia"	"Muridae"	"Sigmodon ochrognathus"	115.1	0.86	115.1	0.86	"White & Seymour (2003)"	544	TRUE
+"Rodentia"	"Muridae"	"Steatomys pratensis"	37.54	0.105	37.5	0.105	"White & Seymour (2003)"	545	TRUE
+"Rodentia"	"Muridae"	"Stochomys longicaudatus"	82.33	0.55	83.3	0.547	"Heusner (1991)"	546	TRUE
+"Rodentia"	"Muridae"	"Stochomys longicaudatus"	84.2	0.544			"White & Seymour (2003)"	546	FALSE
+"Rodentia"	"Muridae"	"Tachyoryctes splendens"	171	0.811	197	0.856	"Hart (1971)"	547	TRUE
+"Rodentia"	"Muridae"	"Tachyoryctes splendens"	191	0.842			"White & Seymour (2003)"	547	FALSE
+"Rodentia"	"Muridae"	"Tachyoryctes splendens"	234	0.92			"Heusner (1991)"	547	FALSE
+"Rodentia"	"Muridae"	"Tatera afra"	106.5	1.016	106.5	1.016	"White & Seymour (2003)"	548	TRUE
+"Rodentia"	"Muridae"	"Tatera indica"	86.8	0.421	86.9	0.422	"Lovegrove (2003)"	549	TRUE
+"Rodentia"	"Muridae"	"Tatera indica"	87	0.422			"White & Seymour (2003)"	549	FALSE
+"Rodentia"	"Muridae"	"Tatera leucogaster"	133.8	0.764	145.2	0.752	"Lovegrove (2000)"	550	TRUE
+"Rodentia"	"Muridae"	"Tatera leucogaster"	157.62	0.74			"White & Seymour (2003)"	550	FALSE
+"Rodentia"	"Muridae"	"Thallomys nigricauda"	124.7	0.382	124.7	0.382	"Lovegrove (2000)"	551	TRUE
+"Rodentia"	"Muridae"	"Thallomys paedulcus"	132.4	0.487	132.4	0.487	"White & Seymour (2003)"	552	TRUE
+"Rodentia"	"Muridae"	"Uromys caudimaculatus"	812	3.184	812	3.184	"White & Seymour (2003)"	553	TRUE
+"Rodentia"	"Myoxidae"	"Graphiurus murinus"	38.43	0.225	38.4	0.225	"Lovegrove (2003)"	554	TRUE
+"Rodentia"	"Myoxidae"	"Graphiurus ocularis"	67.8	0.37	67.8	0.37	"White & Seymour (2003)"	555	TRUE
+"Rodentia"	"Myoxidae"	"Muscardinus avellanarius"	23.5	0.351	23.5	0.351	"White & Seymour (2003)"	556	TRUE
+"Rodentia"	"Myoxidae"	"Myoxus glis"	152	0.5	174.4	0.664	"Heusner (1991)"	557	TRUE
+"Rodentia"	"Myoxidae"	"Myoxus glis"	200	0.881			"White & Seymour (2003)"	557	FALSE
+"Rodentia"	"Octodontidae"	"Aconaemys fuscus"	112	0.675	112	0.675	"White & Seymour (2003)"	558	TRUE
+"Rodentia"	"Octodontidae"	"Octodon bridgesi"	176.1	1.023	176.1	1.023	"White & Seymour (2003)"	559	TRUE
+"Rodentia"	"Octodontidae"	"Octodon degus"	193	0.949	199.6	0.958	"White & Seymour (2003)"	560	TRUE
+"Rodentia"	"Octodontidae"	"Octodon degus"	206.4	0.966			"Lovegrove (2000)"	560	FALSE
+"Rodentia"	"Octodontidae"	"Octodon lunatus"	173.2	0.957	173.2	0.957	"White & Seymour (2003)"	561	TRUE
+"Rodentia"	"Octodontidae"	"Octodontomys gliroides"	152	0.729	154.1	0.715	"White & Seymour (2003)"	562	TRUE
+"Rodentia"	"Octodontidae"	"Octodontomys gliroides"	156.3	0.702			"Lovegrove (2000)"	562	FALSE
+"Rodentia"	"Octodontidae"	"Octomys mimax"	118.6	0.642	118.6	0.642	"White & Seymour (2003)"	563	TRUE
+"Rodentia"	"Octodontidae"	"Spalacopus cyanus"	109.5	0.52	126.2	0.561	"Lovegrove (2000)"	564	TRUE
+"Rodentia"	"Octodontidae"	"Spalacopus cyanus"	135	0.596			"White & Seymour (2003)"	564	FALSE
+"Rodentia"	"Octodontidae"	"Spalacopus cyanus"	136	0.57			"Heusner (1991)"	564	FALSE
+"Rodentia"	"Octodontidae"	"Tympanoctomys barrerae"	71.4	0.43	71.4	0.43	"White & Seymour (2003)"	565	TRUE
+"Rodentia"	"Peditidae"	"Pedetes capensis"	2300	4.427	2300	4.427	"White & Seymour (2003)"	566	TRUE
+"Rodentia"	"Sciuridae"	"Ammospermophilus leucurus"	75.6	0.439	94.1	0.511	"Lovegrove (2003)"	567	TRUE
+"Rodentia"	"Sciuridae"	"Ammospermophilus leucurus"	95.7	0.524			"White & Seymour (2003)"	567	FALSE
+"Rodentia"	"Sciuridae"	"Ammospermophilus leucurus"	96	0.54			"Heusner (1991)"	567	FALSE
+"Rodentia"	"Sciuridae"	"Ammospermophilus leucurus"	112.8	0.55			"Heusner (1991)"	567	FALSE
+"Rodentia"	"Sciuridae"	"Cynomys ludovicianus"	1112.3	2.358	1112.3	2.358	"White & Seymour (2003)"	568	TRUE
+"Rodentia"	"Sciuridae"	"Epixerus wilsoni"	460	1.347	460	1.347	"White & Seymour (2003)"	569	TRUE
+"Rodentia"	"Sciuridae"	"Funisciurus anerythrus"	63	0.58	63	0.58	"Heusner (1991)"	570	TRUE
+"Rodentia"	"Sciuridae"	"Funisciurus congicus"	112.3	0.533	112.3	0.533	"White & Seymour (2003)"	571	TRUE
+"Rodentia"	"Sciuridae"	"Funisciurus isabella"	60	0.57	60	0.57	"White & Seymour (2003)"	572	TRUE
+"Rodentia"	"Sciuridae"	"Funisciurus lemniscatus"	95	0.5	95	0.5	"Heusner (1991)"	573	TRUE
+"Rodentia"	"Sciuridae"	"Funisciurus pyrrhopus"	244	1.011	244	1.011	"White & Seymour (2003)"	574	TRUE
+"Rodentia"	"Sciuridae"	"Glaucomys volans"	62.8	0.37	67.4	0.414	"Heusner (1991)"	575	TRUE
+"Rodentia"	"Sciuridae"	"Glaucomys volans"	64.25	0.377			"White & Seymour (2003)"	575	FALSE
+"Rodentia"	"Sciuridae"	"Glaucomys volans"	76	0.509			"Lovegrove (2000)"	575	FALSE
+"Rodentia"	"Sciuridae"	"Heliosciurus rufobrachium"	230	0.744	230	0.744	"White & Seymour (2003)"	576	TRUE
+"Rodentia"	"Sciuridae"	"Marmota flaviventris"	4295	8.626	4295	8.626	"White & Seymour (2003)"	577	TRUE
+"Rodentia"	"Sciuridae"	"Marmota monax"	2650	3.696	2650	3.696	"White & Seymour (2003)"	578	TRUE
+"Rodentia"	"Sciuridae"	"Paraxerus cepapi"	223.6	0.811	223.6	0.811	"White & Seymour (2003)"	579	TRUE
+"Rodentia"	"Sciuridae"	"Paraxerus palliatus"	206	0.977	274.8	1.191	"White & Seymour (2003)"	580	TRUE
+"Rodentia"	"Sciuridae"	"Paraxerus palliatus"	366.6	1.452			"White & Seymour (2003)"	580	FALSE
+"Rodentia"	"Sciuridae"	"Sciurus aberti"	624	2.402	624	2.402	"White & Seymour (2003)"	581	TRUE
+"Rodentia"	"Sciuridae"	"Sciurus carolinensis"	440	2.062	440	2.062	"White & Seymour (2003)"	582	TRUE
+"Rodentia"	"Sciuridae"	"Spermophilus armatus"	307	1.062	313.2	0.915	"Lovegrove (2000)"	583	TRUE
+"Rodentia"	"Sciuridae"	"Spermophilus armatus"	312.8	0.88			"Heusner (1991)"	583	FALSE
+"Rodentia"	"Sciuridae"	"Spermophilus armatus"	320	0.821			"White & Seymour (2003)"	583	FALSE
+"Rodentia"	"Sciuridae"	"Spermophilus beecheyi"	599.6	1.773	599.6	1.773	"White & Seymour (2003)"	584	TRUE
+"Rodentia"	"Sciuridae"	"Spermophilus beldingi"	288.56	0.8	293.7	0.796	"Heusner (1991)"	585	TRUE
+"Rodentia"	"Sciuridae"	"Spermophilus beldingi"	289.8	0.889			"Lovegrove (2000)"	585	FALSE
+"Rodentia"	"Sciuridae"	"Spermophilus beldingi"	303	0.71			"White & Seymour (2003)"	585	FALSE
+"Rodentia"	"Sciuridae"	"Spermophilus citellus"	240	1.272	240	1.272	"White & Seymour (2003)"	586	TRUE
+"Rodentia"	"Sciuridae"	"Spermophilus franklinii"	607	2.19	607	2.19	"Heusner (1991)"	587	TRUE
+"Rodentia"	"Sciuridae"	"Spermophilus lateralis"	217.6	1.317	249.6	0.967	"Lovegrove (2000)"	588	TRUE
+"Rodentia"	"Sciuridae"	"Spermophilus lateralis"	237	0.8			"White & Seymour (2003)"	588	FALSE
+"Rodentia"	"Sciuridae"	"Spermophilus lateralis"	270.16	0.74			"Heusner (1991)"	588	FALSE
+"Rodentia"	"Sciuridae"	"Spermophilus lateralis"	278.7	1.119			"Lovegrove (2003)"	588	FALSE
+"Rodentia"	"Sciuridae"	"Spermophilus mohavensis"	240	0.629	240	0.629	"White & Seymour (2003)"	589	TRUE
+"Rodentia"	"Sciuridae"	"Spermophilus parryii"	650	2.901	650	2.901	"White & Seymour (2003)"	590	TRUE
+"Rodentia"	"Sciuridae"	"Spermophilus richardsonii"	252.3	0.901	266.3	0.788	"Lovegrove (2000)"	591	TRUE
+"Rodentia"	"Sciuridae"	"Spermophilus richardsonii"	273.07	0.74			"Heusner (1991)"	591	FALSE
+"Rodentia"	"Sciuridae"	"Spermophilus richardsonii"	274	0.734			"White & Seymour (2003)"	591	FALSE
+"Rodentia"	"Sciuridae"	"Spermophilus saturatus"	252.2	0.9	256.6	0.849	"Lovegrove (2000)"	592	TRUE
+"Rodentia"	"Sciuridae"	"Spermophilus saturatus"	261.15	0.8			"Heusner (1991)"	592	FALSE
+"Rodentia"	"Sciuridae"	"Spermophilus spilosoma"	157.8	0.5	170.4	0.543	"Heusner (1991)"	593	TRUE
+"Rodentia"	"Sciuridae"	"Spermophilus spilosoma"	174	0.514			"White & Seymour (2003)"	593	FALSE
+"Rodentia"	"Sciuridae"	"Spermophilus spilosoma"	180.3	0.624			"Lovegrove (2000)"	593	FALSE
+"Rodentia"	"Sciuridae"	"Spermophilus tereticaudus"	90.8	0.334	125.1	0.501	"Lovegrove (2003)"	594	TRUE
+"Rodentia"	"Sciuridae"	"Spermophilus tereticaudus"	129	0.72			"Hart (1971)"	594	FALSE
+"Rodentia"	"Sciuridae"	"Spermophilus tereticaudus"	167	0.522			"White & Seymour (2003)"	594	FALSE
+"Rodentia"	"Sciuridae"	"Spermophilus townsendii"	212.52	0.6	224	0.634	"Heusner (1991)"	595	TRUE
+"Rodentia"	"Sciuridae"	"Spermophilus townsendii"	229	0.587			"White & Seymour (2003)"	595	FALSE
+"Rodentia"	"Sciuridae"	"Spermophilus townsendii"	231	0.722			"Lovegrove (2000)"	595	FALSE
+"Rodentia"	"Sciuridae"	"Spermophilus tridecemlineatus"	182	0.579	198.4	0.983	"Lovegrove (2000)"	596	TRUE
+"Rodentia"	"Sciuridae"	"Spermophilus tridecemlineatus"	205.4	0.783			"White & Seymour (2003)"	596	FALSE
+"Rodentia"	"Sciuridae"	"Spermophilus tridecemlineatus"	209	2.099			"Hart (1971)"	596	FALSE
+"Rodentia"	"Sciuridae"	"Spermophilus undulatus"	500	2.789	698	3.601	"Hart (1971)"	597	TRUE
+"Rodentia"	"Sciuridae"	"Spermophilus undulatus"	680	3.721			"White & Seymour (2003)"	597	FALSE
+"Rodentia"	"Sciuridae"	"Spermophilus undulatus"	1000	4.5			"Heusner (1991)"	597	FALSE
+"Rodentia"	"Sciuridae"	"Tamias alpinus"	39	0.322	39	0.322	"White & Seymour (2003)"	598	TRUE
+"Rodentia"	"Sciuridae"	"Tamias amoenus"	52.7	0.43	55.7	0.5	"Heusner (1991)"	599	TRUE
+"Rodentia"	"Sciuridae"	"Tamias amoenus"	57.1	0.537			"White & Seymour (2003)"	599	FALSE
+"Rodentia"	"Sciuridae"	"Tamias amoenus"	57.3	0.54			"Lovegrove (2003)"	599	FALSE
+"Rodentia"	"Sciuridae"	"Tamias merriami"	75	0.44	76.9	0.459	"White & Seymour (2003)"	600	TRUE
+"Rodentia"	"Sciuridae"	"Tamias merriami"	78.9	0.48			"Heusner (1991)"	600	FALSE
+"Rodentia"	"Sciuridae"	"Tamias minimus"	45.8	0.406	49.3	0.349	"White & Seymour (2003)"	601	TRUE
+"Rodentia"	"Sciuridae"	"Tamias minimus"	53	0.3			"Heusner (1991)"	601	FALSE
+"Rodentia"	"Sciuridae"	"Tamias palmeri"	69.4	0.631	69.4	0.631	"White & Seymour (2003)"	602	TRUE
+"Rodentia"	"Sciuridae"	"Tamias striatus"	87.4	0.502	89.6	0.813	"White & Seymour (2003)"	603	TRUE
+"Rodentia"	"Sciuridae"	"Tamias striatus"	91.8	1.316			"Lovegrove (2000)"	603	FALSE
+"Rodentia"	"Sciuridae"	"Tamiasciurus hudsonicus"	202	1.803	219.6	1.615	"White & Seymour (2003)"	604	TRUE
+"Rodentia"	"Sciuridae"	"Tamiasciurus hudsonicus"	224	1.41			"Heusner (1991)"	604	FALSE
+"Rodentia"	"Sciuridae"	"Tamiasciurus hudsonicus"	225	1.883			"Hart (1971)"	604	FALSE
+"Rodentia"	"Sciuridae"	"Tamiasciurus hudsonicus"	228.3	1.42			"White & Seymour (2003)"	604	FALSE
+"Rodentia"	"Sciuridae"	"Xerus inauris"	515.3	1.731	528.5	1.775	"Lovegrove (2000)"	605	TRUE
+"Rodentia"	"Sciuridae"	"Xerus inauris"	542	1.82			"White & Seymour (2003)"	605	FALSE
+"Rodentia"	"Sciuridae"	"Xerus princeps"	602	1.897	614.4	1.936	"White & Seymour (2003)"	606	TRUE
+"Rodentia"	"Sciuridae"	"Xerus princeps"	627	1.976			"Lovegrove (2000)"	606	FALSE
+"Scandentia"	"Tupaiidae"	"Ptilocercus lowii"	57.5	0.24	57.5	0.24	"Heusner (1991)"	607	TRUE
+"Scandentia"	"Tupaiidae"	"Tupaia glis"	123	0.522	123	0.522	"White & Seymour (2003)"	608	TRUE
+"Scandentia"	"Tupaiidae"	"Urogale everetti"	260.6	1.25	260.6	1.25	"White & Seymour (2003)"	609	TRUE
+"Sirenia"	"Trichechidae"	"Trichechus inunguis"	165223	64.52	167594.5	55.015	"Lovegrove (2000)"	610	TRUE
+"Sirenia"	"Trichechidae"	"Trichechus inunguis"	170000	46.91			"Heusner (1991)"	610	FALSE
+"Tubulidentata"	"Orycteropodidae"	"Orycteropus afer"	48000	34.275	48000	34.275	"White & Seymour (2003)"	611	TRUE
+"Xenarthra"	"Bradypodidae"	"Bradypus variegatus"	3790	3.827	3790	3.827	"White & Seymour (2003)"	612	TRUE
+"Xenarthra"	"Dasypodidae"	"Cabassous centralis"	3810	4.527	4061.7	4.812	"Lovegrove (2000)"	613	TRUE
+"Xenarthra"	"Dasypodidae"	"Cabassous centralis"	4330	5.116			"White & Seymour (2003)"	613	FALSE
+"Xenarthra"	"Dasypodidae"	"Chaetophractus nationi"	2150	3.118	2150	3.118	"White & Seymour (2003)"	614	TRUE
+"Xenarthra"	"Dasypodidae"	"Chaetophractus vellerosus"	1110	1.707	1110	1.707	"White & Seymour (2003)"	615	TRUE
+"Xenarthra"	"Dasypodidae"	"Chaetophractus villosus"	4540	4.508	4540	4.508	"White & Seymour (2003)"	616	TRUE
+"Xenarthra"	"Dasypodidae"	"Dasypus novemcinctus"	3320	4.49	3413.7	4.655	"Heusner (1991)"	617	TRUE
+"Xenarthra"	"Dasypodidae"	"Dasypus novemcinctus"	3510	4.825			"White & Seymour (2003)"	617	FALSE
+"Xenarthra"	"Dasypodidae"	"Euphractus sexcinctus"	8190	6.901	8190	6.901	"White & Seymour (2003)"	618	TRUE
+"Xenarthra"	"Dasypodidae"	"Priodontes maximus"	45190	16.892	45190	16.892	"White & Seymour (2003)"	619	TRUE
+"Xenarthra"	"Dasypodidae"	"Tolypeutes matacus"	1160	1.172	1160	1.172	"White & Seymour (2003)"	620	TRUE
+"Xenarthra"	"Dasypodidae"	"Zaedyus pichiy"	1740	2.192	1740	2.192	"White & Seymour (2003)"	621	TRUE
+"Xenarthra"	"Megalonychidae"	"Choloepus hoffmanni"	3770	3.364	4005.2	3.891	"White & Seymour (2003)"	622	TRUE
+"Xenarthra"	"Megalonychidae"	"Choloepus hoffmanni"	4010	3.892			"Lovegrove (2000)"	622	FALSE
+"Xenarthra"	"Megalonychidae"	"Choloepus hoffmanni"	4250	4.5			"Heusner (1991)"	622	FALSE
+"Xenarthra"	"Myrmecophagidae"	"Cyclopes didactylus"	240	0.636	240	0.636	"White & Seymour (2003)"	623	TRUE
+"Xenarthra"	"Myrmecophagidae"	"Myrmecophaga tridactyla"	30600	14.543	30600	14.543	"White & Seymour (2003)"	624	TRUE
+"Xenarthra"	"Myrmecophagidae"	"Tamandua mexicana"	3500	5.077	3884.2	5.124	"Lovegrove (2000)"	625	TRUE
+"Xenarthra"	"Myrmecophagidae"	"Tamandua mexicana"	3977	5.534			"White & Seymour (2003)"	625	FALSE
+"Xenarthra"	"Myrmecophagidae"	"Tamandua mexicana"	4210	4.79			"Heusner (1991)"	625	FALSE
+"Xenarthra"	"Myrmecophagidae"	"Tamandua tetradactyla"	3500	5.015	3500	5.015	"White & Seymour (2003)"	626	TRUE

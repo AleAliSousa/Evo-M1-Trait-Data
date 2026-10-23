@@ -7,7 +7,7 @@ Pairs come from `_keys/species_pooling.csv`; the merges and `species_cohorts.csv
 holds the default numbers. See `_keys/README_species_pooling.md`.
 
 
-Built 2026-10-20 from Evo-M1-Trait-Data commit `unknown (not a git checkout)` by `__Cytosplore_export/build_cytosplore_traits.R`.
+Built 2026-10-22 from Evo-M1-Trait-Data commit `02ea210 (from .git/HEAD; git command unavailable)` by `__Cytosplore_export/build_cytosplore_traits.R`.
 Re-run that script to regenerate everything here; do not edit these CSVs by hand.
 
 ## What this is
@@ -19,11 +19,11 @@ Comparative species traits for the 25-species `EvoM1` cohort (`_keys/species_coh
 | file | one row per | use |
 |---|---|---|
 | `EvoM1_pooled_domestic_evidence_species.csv` | species (25) | species list, taxonomy, which data labels were pooled (match level: species), per-domain counts |
-| `EvoM1_pooled_domestic_evidence_traits_wide.csv` | species x variable (638) | **recommended viewer input**: species x trait matrix, one value per cell |
+| `EvoM1_pooled_domestic_evidence_traits_wide.csv` | species x variable (770) | **recommended viewer input**: species x trait matrix, one value per cell |
 | `EvoM1_pooled_domestic_evidence_traits_wide_core.csv` | species x variable (32) | same, only traits held for >= 20 of 25 species (`in_core`) |
-| `EvoM1_pooled_domestic_evidence_variable_dictionary.csv` | variable (638) | column metadata for the wide tables: domain, structure, measure, unit, definition, coverage |
-| `EvoM1_pooled_domestic_evidence_traits_cells.csv` | species x variable cell (4250) | how each wide cell was made: n values, aggregation, min/max, sources |
-| `EvoM1_pooled_domestic_evidence_traits_long.csv` | value (4546) | full provenance: every source value behind every cell |
+| `EvoM1_pooled_domestic_evidence_variable_dictionary.csv` | variable (770) | column metadata for the wide tables: domain, structure, measure, unit, definition, coverage |
+| `EvoM1_pooled_domestic_evidence_traits_cells.csv` | species x variable cell (5086) | how each wide cell was made: n values, aggregation, min/max, sources |
+| `EvoM1_pooled_domestic_evidence_traits_long.csv` | value (5432) | full provenance: every source value behind every cell |
 | `EvoM1_pooled_domestic_evidence_domain_coverage.csv` | species | n distinct variables per domain |
 | `BUILD_INFO.txt` | - | build stamp and counts |
 
@@ -57,50 +57,56 @@ Source audit (run `python3 __Cytosplore_export/audit_cytosplore_variables.py Evo
 
 | species_sci | common_name | Order | n_variables | data_labels |
 |---|---|---|---|---|
-| Aotus nancymaae | Owl monkey | Primates | 69 | Aotus nancymaae |
-| Callithrix jacchus | Common marmoset | Primates | 271 | Callithrix jacchus |
-| Canis latrans | Coyote | Carnivora | 85 | Canis latrans |
-| Chlorocebus sabaeus | African green monkey | Primates | 40 | Chlorocebus sabaeus |
-| Dasypus novemcinctus | Armadillo | Cingulata | 98 | Dasypus novemcinctus |
-| Felis catus | Cat | Carnivora | 195 | Felis catus |
-| Gorilla gorilla gorilla | Western lowland gorilla | Primates | 294 | Gorilla gorilla gorilla; Gorilla gorilla; Gorilla sp. |
-| Heterocephalus glaber | Naked mole rat | Rodentia | 120 | Heterocephalus glaber |
-| Homo sapiens | Human | Primates | 476 | Homo sapiens |
-| Macaca mulatta | Rhesus macaque | Primates | 321 | Macaca mulatta |
-| Macaca nemestrina | Pig-tailed macaque | Primates | 86 | Macaca nemestrina |
-| Microcebus murinus | Mouse lemur | Primates | 242 | Microcebus murinus |
+| Aotus nancymaae | Owl monkey | Primates | 97 | Aotus nancymaae |
+| Callithrix jacchus | Common marmoset | Primates | 360 | Callithrix jacchus |
+| Canis latrans | Coyote | Carnivora | 86 | Canis latrans |
+| Chlorocebus sabaeus | African green monkey | Primates | 72 | Chlorocebus sabaeus |
+| Dasypus novemcinctus | Armadillo | Cingulata | 99 | Dasypus novemcinctus |
+| Felis catus | Cat | Carnivora | 196 | Felis catus |
+| Gorilla gorilla gorilla | Western lowland gorilla | Primates | 365 | Gorilla gorilla gorilla; Gorilla gorilla; Gorilla sp. |
+| Heterocephalus glaber | Naked mole rat | Rodentia | 124 | Heterocephalus glaber |
+| Homo sapiens | Human | Primates | 511 | Homo sapiens |
+| Macaca mulatta | Rhesus macaque | Primates | 409 | Macaca mulatta |
+| Macaca nemestrina | Pig-tailed macaque | Primates | 152 | Macaca nemestrina |
+| Microcebus murinus | Mouse lemur | Primates | 322 | Microcebus murinus |
 | Monodelphis domestica | Opossum | Didelphimorphia | 60 | Monodelphis domestica |
-| Mus musculus | Mouse | Rodentia | 170 | Mus musculus |
+| Mus musculus | Mouse | Rodentia | 172 | Mus musculus |
 | Mustela putorius furo | Ferret | Carnivora | 118 | Mustela putorius furo; Mustela putorius |
-| Oryctolagus cuniculus | Rabbit | Lagomorpha | 164 | Oryctolagus cuniculus |
-| Otolemur garnettii | Galago | Primates | 151 | Otolemur garnettii |
-| Pan troglodytes | Chimpanzee | Primates | 372 | Pan troglodytes |
-| Papio anubis | Baboon | Primates | 213 | Papio anubis |
-| Rattus norvegicus | Rat | Rodentia | 228 | Rattus norvegicus |
-| Saimiri boliviensis boliviensis | Bolivian squirrel monkey | Primates | 83 | Saimiri boliviensis boliviensis; Saimiri boliviensis |
-| Sapajus apella | Capuchin | Primates | 154 | Sapajus apella |
-| Sus scrofa | Pig | Artiodactyla | 157 | Sus scrofa domesticus; Sus scrofa |
-| Tupaia belangeri | Treeshrew | Scandentia | 73 | Tupaia belangeri |
+| Oryctolagus cuniculus | Rabbit | Lagomorpha | 165 | Oryctolagus cuniculus |
+| Otolemur garnettii | Galago | Primates | 202 | Otolemur garnettii |
+| Pan troglodytes | Chimpanzee | Primates | 474 | Pan troglodytes |
+| Papio anubis | Baboon | Primates | 300 | Papio anubis |
+| Rattus norvegicus | Rat | Rodentia | 229 | Rattus norvegicus |
+| Saimiri boliviensis boliviensis | Bolivian squirrel monkey | Primates | 112 | Saimiri boliviensis boliviensis; Saimiri boliviensis |
+| Sapajus apella | Capuchin | Primates | 219 | Sapajus apella |
+| Sus scrofa | Pig | Artiodactyla | 158 | Sus scrofa domesticus; Sus scrofa |
+| Tupaia belangeri | Treeshrew | Scandentia | 74 | Tupaia belangeri |
 | Urocitellus parryii | Arctic ground squirrel | NA | 32 | Urocitellus parryii |
 
 ## Variables per domain (all / core / M1-motor flagged)
 
 | domain | variables | core | m1_motor |
 |---|---|---|---|
-| brain structure & size | 187 | 2 | 5 |
+| brain structure & size | 190 | 2 | 5 |
 | cellular composition | 125 | 0 | 4 |
 | cortical & cerebellar folding | 9 | 0 | 0 |
-| body size | 2 | 2 | 0 |
+| body size | 11 | 2 | 0 |
 | metabolism | 72 | 2 | 2 |
-| life history | 21 | 10 | 0 |
-| diet & ecology | 29 | 16 | 0 |
-| behaviour & cognition | 30 | 0 | 9 |
+| life history | 27 | 10 | 0 |
+| diet & ecology | 51 | 16 | 0 |
+| behaviour & cognition | 42 | 0 | 9 |
 | sensorimotor & motor pathways | 23 | 0 | 23 |
 | hand & limb morphology | 17 | 0 | 17 |
-| sleep & torpor | 5 | 0 | 0 |
-| Unclassified | 1 | 0 | 0 |
+| sleep & torpor | 8 | 0 | 0 |
+| Unclassified | 11 | 0 | 0 |
+| behaviour | 1 | 0 | 0 |
+| brain size | 10 | 0 | 1 |
 | cellular morphology | 97 | 0 | 32 |
+| communication | 5 | 0 | 0 |
+| ecology | 34 | 0 | 2 |
+| sensory | 6 | 0 | 0 |
 | sensory performance | 20 | 0 | 0 |
+| sociality | 11 | 0 | 0 |
 
 ## Known caveats carried over from the compilation
 

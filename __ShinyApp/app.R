@@ -512,6 +512,18 @@ load_compiled <- function() {
   }
 
   out <- rbind(base, merges)
+  # Lewitus Table S2 defines nominal social-system codes, not quantitative scores.
+  # Preserve source data; decode only this source variable at the app boundary.
+  social_labels <- c(`1` = "Solitary", `2` = "Monogamous",
+                     `3` = "Multi-male", `4` = "Harem")
+  social_rows <- out$Variable == "Social_system" & out$Dataset == "EvoM1 traits"
+  social_values <- trimws(out$Value[social_rows])
+  valid <- is.na(social_values) | social_values %in% c(names(social_labels), unname(social_labels))
+  if (any(!valid)) stop("Unknown Lewitus Social_system code: ",
+                       paste(unique(social_values[!valid]), collapse = ", "))
+  decoded <- unname(social_labels[social_values])
+  out$Value[social_rows] <- ifelse(is.na(decoded), social_values, decoded)
+  out$Value_num[social_rows] <- NA_real_
   out <- out[!is.na(out$Value) & nzchar(out$Value), ]
   out[order(out$Species, out$Variable), ]
 }

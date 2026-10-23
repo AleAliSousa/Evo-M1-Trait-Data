@@ -1,7 +1,7 @@
 # V1 species-trait tables for the Cytosplore M1 viewer (DRAFT)
 
 
-Built 2026-10-20 from Evo-M1-Trait-Data commit `unknown (not a git checkout)` by `__Cytosplore_export/build_cytosplore_traits.R`.
+Built 2026-10-22 from Evo-M1-Trait-Data commit `02ea210 (from .git/HEAD; git command unavailable)` by `__Cytosplore_export/build_cytosplore_traits.R`.
 Re-run that script to regenerate everything here; do not edit these CSVs by hand.
 
 ## What this is
@@ -13,11 +13,11 @@ Comparative species traits for the 17-species `V1` cohort (`_keys/species_cohort
 | file | one row per | use |
 |---|---|---|
 | `V1_species.csv` | species (17) | species list, taxonomy, which data labels were pooled (match level: species), per-domain counts |
-| `V1_traits_wide.csv` | species x variable (634) | **recommended viewer input**: species x trait matrix, one value per cell |
-| `V1_traits_wide_core.csv` | species x variable (30) | same, only traits held for >= 14 of 17 species (`in_core`) |
-| `V1_variable_dictionary.csv` | variable (634) | column metadata for the wide tables: domain, structure, measure, unit, definition, coverage |
-| `V1_traits_cells.csv` | species x variable cell (3113) | how each wide cell was made: n values, aggregation, min/max, sources |
-| `V1_traits_long.csv` | value (3288) | full provenance: every source value behind every cell |
+| `V1_traits_wide.csv` | species x variable (766) | **recommended viewer input**: species x trait matrix, one value per cell |
+| `V1_traits_wide_core.csv` | species x variable (31) | same, only traits held for >= 14 of 17 species (`in_core`) |
+| `V1_variable_dictionary.csv` | variable (766) | column metadata for the wide tables: domain, structure, measure, unit, definition, coverage |
+| `V1_traits_cells.csv` | species x variable cell (3595) | how each wide cell was made: n values, aggregation, min/max, sources |
+| `V1_traits_long.csv` | value (3816) | full provenance: every source value behind every cell |
 | `V1_domain_coverage.csv` | species | n distinct variables per domain |
 | `BUILD_INFO.txt` | - | build stamp and counts |
 
@@ -51,42 +51,48 @@ Source audit (run `python3 __Cytosplore_export/audit_cytosplore_variables.py V1 
 
 | species_sci | common_name | Order | n_variables | data_labels |
 |---|---|---|---|---|
-| Aotus nancymaae | Owl monkey | Primates | 69 | Aotus nancymaae |
-| Callithrix jacchus | Common marmoset | Primates | 271 | Callithrix jacchus |
-| Dasypus novemcinctus | Armadillo | Cingulata | 98 | Dasypus novemcinctus |
-| Felis catus | Cat | Carnivora | 195 | Felis catus |
-| Heterocephalus glaber | Naked mole rat | Rodentia | 120 | Heterocephalus glaber |
-| Homo sapiens | Human | Primates | 476 | Homo sapiens |
-| Macaca mulatta | Rhesus macaque | Primates | 321 | Macaca mulatta |
-| Microcebus murinus | Mouse lemur | Primates | 242 | Microcebus murinus |
+| Aotus nancymaae | Owl monkey | Primates | 97 | Aotus nancymaae |
+| Callithrix jacchus | Common marmoset | Primates | 360 | Callithrix jacchus |
+| Dasypus novemcinctus | Armadillo | Cingulata | 99 | Dasypus novemcinctus |
+| Felis catus | Cat | Carnivora | 196 | Felis catus |
+| Heterocephalus glaber | Naked mole rat | Rodentia | 124 | Heterocephalus glaber |
+| Homo sapiens | Human | Primates | 511 | Homo sapiens |
+| Macaca mulatta | Rhesus macaque | Primates | 409 | Macaca mulatta |
+| Microcebus murinus | Mouse lemur | Primates | 322 | Microcebus murinus |
 | Monodelphis domestica | Opossum | Didelphimorphia | 60 | Monodelphis domestica |
-| Mus musculus | Mouse | Rodentia | 170 | Mus musculus |
+| Mus musculus | Mouse | Rodentia | 172 | Mus musculus |
 | Mustela putorius furo | Ferret | Carnivora | 100 | Mustela putorius furo |
-| Otolemur garnettii | Galago | Primates | 151 | Otolemur garnettii |
-| Pan troglodytes | Chimpanzee | Primates | 372 | Pan troglodytes |
-| Phocoena phocoena | Harbour porpoise | Artiodactyla | 67 | Phocoena phocoena |
-| Rattus norvegicus | Rat | Rodentia | 228 | Rattus norvegicus |
+| Otolemur garnettii | Galago | Primates | 202 | Otolemur garnettii |
+| Pan troglodytes | Chimpanzee | Primates | 474 | Pan troglodytes |
+| Phocoena phocoena | Harbour porpoise | Artiodactyla | 66 | Phocoena phocoena |
+| Rattus norvegicus | Rat | Rodentia | 229 | Rattus norvegicus |
 | Sus scrofa | Pig | Artiodactyla | 112 | Sus scrofa domesticus |
-| Tupaia belangeri | Treeshrew | Scandentia | 73 | Tupaia belangeri |
+| Tupaia belangeri | Treeshrew | Scandentia | 74 | Tupaia belangeri |
 
 ## Variables per domain (all / core / M1-motor flagged)
 
 | domain | variables | core | m1_motor |
 |---|---|---|---|
-| brain structure & size | 187 | 1 | 5 |
+| brain structure & size | 190 | 2 | 5 |
 | cellular composition | 125 | 0 | 4 |
 | cortical & cerebellar folding | 9 | 0 | 0 |
-| body size | 2 | 2 | 0 |
+| body size | 11 | 2 | 0 |
 | metabolism | 72 | 2 | 2 |
-| life history | 21 | 10 | 0 |
-| diet & ecology | 29 | 15 | 0 |
-| behaviour & cognition | 30 | 0 | 9 |
+| life history | 27 | 10 | 0 |
+| diet & ecology | 51 | 15 | 0 |
+| behaviour & cognition | 42 | 0 | 9 |
 | sensorimotor & motor pathways | 21 | 0 | 21 |
 | hand & limb morphology | 17 | 0 | 17 |
-| sleep & torpor | 7 | 0 | 0 |
-| Unclassified | 1 | 0 | 0 |
+| sleep & torpor | 10 | 0 | 0 |
+| Unclassified | 11 | 0 | 0 |
+| behaviour | 1 | 0 | 0 |
+| brain size | 10 | 0 | 1 |
 | cellular morphology | 93 | 0 | 28 |
+| communication | 5 | 0 | 0 |
+| ecology | 34 | 0 | 2 |
+| sensory | 6 | 0 | 0 |
 | sensory performance | 20 | 0 | 0 |
+| sociality | 11 | 0 | 0 |
 
 ## Known caveats carried over from the compilation
 

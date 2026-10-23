@@ -131,6 +131,34 @@ def folder_of_item(item):
         if c in folder_set: return c
     return ""
 
+# Public TSVs whose registry row is not pasted yet ("<item>_registry_row.xlsx"
+# waiting in the folder): link "<DOI-encoded>_<label>.tsv" to the folder that
+# has a build file "<folder>_<label>.R" / ".csv" and mentions the DOI.
+import urllib.parse
+_folder_files = {f: set(os.listdir(P(f))) for f in folders}
+_folder_text = {}
+def folder_text(folder):
+    """All small text files of a folder, read once (OneDrive reads are slow)."""
+    if folder not in _folder_text:
+        buf = []
+        for f in glob.glob(P(folder, "**", "*"), recursive=True):
+            if f.endswith((".R", ".md", ".txt", ".csv", ".tsv")) and os.path.isfile(f) and os.path.getsize(f) < 5_000_000:
+                try: buf.append(open(f, encoding="utf-8", errors="replace").read())
+                except Exception: pass
+        _folder_text[folder] = "\n".join(buf)
+    return _folder_text[folder]
+def folder_mentions_doi(folder, doi):
+    return doi in folder_text(folder)
+def infer_item_from_encoded(enc):
+    """'10.1038%2Fs41597-019-0059-9_BodyMass' -> ('GalánAcedo_etal_2019_BodyMass', 'GalánAcedo_etal_2019') or ('','')."""
+    if "_" not in enc: return "", ""
+    base, label = enc.rsplit("_", 1)
+    doi = urllib.parse.unquote(base)
+    cands = [f for f in folders if (f + "_" + label + ".R") in _folder_files[f] or (f + "_" + label + ".csv") in _folder_files[f]]
+    cands = [f for f in cands if folder_mentions_doi(f, doi)] or cands
+    if len(cands) == 1: return cands[0] + "_" + label, cands[0]
+    return "", ""
+
 # errata per folder
 errata = collections.defaultdict(list)
 for f in glob.glob(P("*", "**", "*_errata.csv"), recursive=True):
@@ -172,6 +200,16 @@ def wired(item, folder, enc=""):
         elif folder and (folder in toks or any(t.startswith(folder + "_") for t in toks)):
             folder_hits.append(name)
     return item_hits, folder_hits
+
+# Harvest merges (body_ecology, brain_mass) take ONE column per table (their
+# *_source_columns.csv says which). A table whose only wiring is such a harvest
+# still has its real content unmerged.
+HARVEST = {"body_ecology", "brain_mass"}
+harvest_cols = collections.defaultdict(set)
+for m in HARVEST:
+    for f in glob.glob(P(f"__merging_{m}", "*_source_columns.csv")):
+        for r in rd(f):
+            harvest_cols[r.get("file", "")].add(r.get("chosen_column", ""))
 
 # ---------------------------------------------------------------- scan TSVs
 SPCOL = re.compile(r"species|taxon|binomial|scientific|^animal", re.I)
@@ -217,13 +255,25 @@ for fn in sorted(os.listdir(tsv_dir)):
     regr = by_encoded.get(enc) or {}
     item = col(regr, "Item name"); folder = folder_of_item(item) if item else ""
     if not folder and item: folder = item.split("_Table")[0]
+    registry_note = ""
+    if not item:
+        item, folder = infer_item_from_encoded(enc)
+        if item:
+            registry_note = ("registry row pending paste (" + item + "_registry_row.xlsx in folder)"
+                             if (item + "_registry_row.xlsx") in _folder_files.get(folder, set())
+                             else "not in __ReadMe.xlsx; item inferred from folder build file")
     w, wf = wired(item, folder, enc)
     disp = disposition_of(folder, item)
     flags_active = col(regr, "Flags active (skips)")
+    if registry_note: flags_active = (flags_active + "; " if flags_active else "") + registry_note
     stage = col(regr, "Progress stage"); role = col(regr, "Data role (primary/secondary/both)")
     any_target = bool(sp_hits or gen_hits)
     if not any_target and not com_hits: verdict = "no target species"
     elif not any_target: verdict = "common-name hits only (check manually)"
+    elif w and set(w) <= HARVEST and any(h and h not in spcols for h in hdr if h not in harvest_cols.get(fn, set())
+                                           and re.search(r"[A-Za-z]", h) and not re.search(r"^(source|note|row|ref|n$|n_|sex|age|specimen|common|order|family|basis|printed)", h, re.I)) \
+         and not re.search(r"EXCLUDED|HOLD|SKIP|SUPERSEDED|superseded|exclude", flags_active + " " + disp):
+        verdict = "wired only via harvest merges (body/brain mass logged); check whether other columns are consumed"
     elif w and not re.search(r"EXCLUDED|HOLD|SKIP|SUPERSEDED|superseded|exclude|HOLD", flags_active + " " + disp): verdict = "in merge -> reaches export"
     elif w: verdict = "wired but flagged/held/excluded"
     elif re.search(r"EXCLUDED|HOLD|SKIP|SUPERSEDED|superseded|exclude|OUT OF SCOPE", flags_active + " " + disp): verdict = "built; excluded/held by decision"
@@ -243,6 +293,7 @@ for fn in sorted(os.listdir(tsv_dir)):
         "errata": "; ".join(sorted(set(errata.get(folder, [])))),
         "in_table_flags_on_target_rows": "; ".join(f"{k} x{v}" for k, v in flag_rows.most_common(6)),
         "registry_taxon": col(regr, "Taxon")[:60], "main_traits": col(regr, "Main Trait(s)")[:120],
+        "other_columns": "; ".join(h for h in hdr if h not in spcols and h not in harvest_cols.get(fn, set()))[:300],
         "verdict": verdict}
     rows_out.append(rec)
     for s in set(sp_hits) | set(gen_hits):
@@ -258,11 +309,7 @@ _mention_cache = {}
 def mentions(folder):
     if folder in _mention_cache: return _mention_cache[folder]
     hits = collections.Counter()
-    for f in glob.glob(P(folder, "**", "*"), recursive=True):
-        if f.endswith((".md", ".csv", ".txt", ".R", ".tsv")) and os.path.getsize(f) < 20_000_000:
-            try: txt = open(f, encoding="utf-8", errors="replace").read()
-            except Exception: continue
-            for wd in set(TARGET_RX.findall(txt)): hits[wd] += 1
+    for wd in set(TARGET_RX.findall(folder_text(folder))): hits[wd] += 1
     _mention_cache[folder] = hits
     return hits
 for r in reg:
@@ -322,6 +369,7 @@ vc = collections.Counter(r.get("verdict", "") for r in rows_out)
 tgt_tables = [r for r in rows_out if r.get("n_target_species") or r.get("n_target_genus_only")]
 nw = [r for r in tgt_tables if r["verdict"].startswith("built; NOT wired")]
 pu = [r for r in tgt_tables if r["verdict"].startswith("paper in merge")]
+pw = [r for r in tgt_tables if r["verdict"].startswith("partially wired")]
 fl = [r for r in tgt_tables if "[flagged]" in r["verdict"] or r["verdict"].startswith("wired but")]
 ex = [r for r in tgt_tables if r["verdict"].startswith("built; excluded")]
 ub_hit = [u for u in unbuilt if u["n_target_species_mentioned"] + u["n_target_genera_mentioned"] > 0]
@@ -336,6 +384,10 @@ lines = [
     "| table (item) | folder | target species | genus-only | stage | role | main traits |", "|---|---|---|---|---|---|---|",
     *[f"| {r['item_name'] or r['file']} | {r['paper_folder']} | {r['n_target_species']} | {r['n_target_genus_only']} | {r['progress_stage']} | {r['data_role']} | {r['main_traits'][:70]} |"
       for r in sorted(nw, key=lambda r: -(r['n_target_species'] + r['n_target_genus_only']))], "",
+    f"## Tables wired only through the harvest merges -- body/brain mass logged as taken; other columns may or may not be consumed (body_ecology_source_columns.csv logs the mass column only) ({len(pw)})", "",
+    "| table (item) | harvest column taken | target species | genus-only | other columns |", "|---|---|---|---|---|",
+    *[f"| {r['item_name'] or r['file']} | {', '.join(sorted(harvest_cols.get(r['file'], set())))} | {r['n_target_species']} | {r['n_target_genus_only']} | {r['other_columns'][:90]} |"
+      for r in sorted(pw, key=lambda r: -(r['n_target_species'] + r['n_target_genus_only']))], "",
     f"## Tables whose paper is in a merge but the table itself is not individually referenced ({len(pu)})", "",
     "Compilations loaded as a whole (Karbowski 2007, Kaufman 2004) land here by construction; the rest need a look at the merge inputs.", "",
     "| table (item) | paper wired in | target species | genus-only | main traits |", "|---|---|---|---|---|",

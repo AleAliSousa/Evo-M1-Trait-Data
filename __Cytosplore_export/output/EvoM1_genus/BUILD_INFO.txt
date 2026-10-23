@@ -1,33 +1,39 @@
-built:           2026-10-20 11:44:49 PDT
-repo commit:     unknown (not a git checkout)
+built:           2026-10-22 18:55:28 PDT
+repo commit:     02ea210 (from .git/HEAD; git command unavailable)
 cohort:          EvoM1 (25 species)
 match level:     genus  (any congener / Genus sp. / hybrid label counts; values pooled across them)
 core threshold:  >= 80% of cohort (>= 20 species)
 pooling mode:    off
 species without any data: none
-long rows (all values):   14761
-  of which measurement:   14593
-species x variable cells: 5793
-variables in wide:        654   (matrix fill 35.4%)
-variables in wide_core:   52   (matrix fill 92.6%)
-cells unresolved categorical: 33
-cells with numeric spread > 50%: 485
-units: 653 from key, 0 from merge rows, 1 parsed from label, 0 none
-variables flagged m1_motor_related: 97 (of which core: 0)
+long rows (all values):   19224
+  of which measurement:   19056
+species x variable cells: 6905
+variables in wide:        788   (matrix fill 35.1%)
+variables in wide_core:   53   (matrix fill 92.4%)
+cells unresolved categorical: 63
+cells with numeric spread > 50%: 761
+units: 777 from key, 0 from merge rows, 2 parsed from label, 9 none
+variables flagged m1_motor_related: 100 (of which core: 0)
 domains excluded from wide/cells/dictionary: dataset metadata
 
 variables per domain (all / core / m1_motor_related):
-  brain structure & size            187 /    5 /    5
+  brain structure & size            190 /    6 /    5
   cellular composition              125 /    7 /    4
   cortical & cerebellar folding       9 /    1 /    0
-  body size                           2 /    2 /    0
+  body size                          11 /    2 /    0
   metabolism                         72 /    3 /    2
-  life history                       21 /   13 /    0
-  diet & ecology                     29 /   20 /    0
-  behaviour & cognition              30 /    0 /    9
+  life history                       27 /   13 /    0
+  diet & ecology                     51 /   20 /    0
+  behaviour & cognition              42 /    0 /    9
   sensorimotor & motor pathways      23 /    0 /   23
   hand & limb morphology             22 /    0 /   22
-  sleep & torpor                      5 /    0 /    0
-  Unclassified                        1 /    0 /    0
+  sleep & torpor                      8 /    0 /    0
+  Unclassified                       11 /    0 /    0
+  behaviour                           1 /    0 /    0
+  brain size                         10 /    0 /    1
   cellular morphology               107 /    0 /   32
+  communication                       5 /    0 /    0
+  ecology                            35 /    0 /    2
+  sensory                             7 /    0 /    0
   sensory performance                21 /    1 /    0
+  sociality                          11 /    0 /    0

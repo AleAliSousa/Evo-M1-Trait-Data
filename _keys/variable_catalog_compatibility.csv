@@ -61,7 +61,7 @@ Regional cortex | Layer status,Regional cortex,Layer status,5,5,__merging_cortic
 Regional cortex | M1 compatibility,Regional cortex,M1 compatibility,5,5,__merging_cortical_layers; Jacobs_etal_2015; Jacobs_etal_2016; Johnson_etal_2016; Peruffo_etal_2019,Giraffa camelopardalis; Giraffa camelopardalis and Loxodonta africana; Ovis aries; Panthera tigris altaica and Neofelis nebulosa,info; primary,TRUE
 Regional cortex | Thickness,Regional cortex,Thickness,5,5,__merging_cortical_layers; Jacobs_etal_2015; Jacobs_etal_2016; Johnson_etal_2016; Peruffo_etal_2019,Giraffa camelopardalis; Giraffa camelopardalis and Loxodonta africana; Ovis aries; Panthera tigris altaica and Neofelis nebulosa,primary,TRUE
 Regional cortex | Unit,Regional cortex,Unit,5,5,__merging_cortical_layers; Jacobs_etal_2015; Jacobs_etal_2016; Johnson_etal_2016; Peruffo_etal_2019,Giraffa camelopardalis; Giraffa camelopardalis and Loxodonta africana; Ovis aries; Panthera tigris altaica and Neofelis nebulosa,primary,TRUE
-(structure-agnostic; see data columns) | category,(structure-agnostic; see data columns),category,20,4,GalánAcedo_etal_2019; Hayssen_VanTienhoven_1993; Jacobs_etal_2019; Nunn_Samson_2018,mammals; Primates,both; info; secondary,TRUE
+(structure-agnostic; see data columns) | category,(structure-agnostic; see data columns),category,20,4,GalánAcedo_etal_2019; Hayssen_etal_1993; Jacobs_etal_2019; Nunn_Samson_2018,mammals; Primates,both; info; secondary,TRUE
 CerebralCortex | length,CerebralCortex,length,9,4,Garey__2006; Raghanti_etal_2008_a; Raghanti_etal_2008_b; Raghanti_etal_2008_c,Macaca maura; Pan troglodytes; Homo sapiens; Mammalia (Table species),primary; secondary,TRUE
 CerebralCortex | count (number),CerebralCortex,count (number),8,4,HerculanoHouzel__2015; Kazu_etal_2014; Kazu_etal_2015; Reyes_etal_2016,"Artiodactyla; Mammals (24 species, 6 clades); Rattus norvegicus (postnatal development); Trichechus manatus latirostris",primary,TRUE
 Cortex | surface area,Cortex,surface area,8,4,Elston_etal_2006; Hofman__1985; Mota_HerculanoHouzel_2015; Reep_OShea_1990,Florida manatee (Trichechus manatus); Mammals; Primates,"primary; primary/secondary (per-cell source, see CSA_Ref); secondary",TRUE
@@ -116,7 +116,7 @@ Pyramidal_neuron_soma | size_um2,Pyramidal_neuron_soma,size_um2,3,3,Jacobs_etal_
 Pyramidal_neuron_soma | size_um2 SD,Pyramidal_neuron_soma,size_um2 SD,3,3,Jacobs_etal_1997; Jacobs_etal_2001; Jacobs_etal_2015,Homo sapiens; Mammalia,primary,TRUE
 Rhinencephalon | volume,Rhinencephalon,volume,3,3,Kamiya_Pirlot_1980; Pirlot__1981; Pirlot_Jiao_1985,Carnivora; Cetacea; Marsupialia,primary,TRUE
 Amygdala | count (number),Amygdala,count (number),16,2,Barger_etal_2012; Morgan_etal_2014,Hominidae + Hylobatidae + Cercopithecidae; Homo sapiens,info; primary; secondary,TRUE
-(structure-agnostic; see data columns) | integer,(structure-agnostic; see data columns),integer,14,2,Hayssen_VanTienhoven_1993; Jones_etal_2009,mammals,info,TRUE
+(structure-agnostic; see data columns) | integer,(structure-agnostic; see data columns),integer,14,2,Hayssen_etal_1993; Jones_etal_2009,mammals,info,TRUE
 Diet | percentage (relative),Diet,percentage (relative),13,2,DeCasien_Higham_2019; Wilman_etal_2014,mammals; primates,primary; secondary,TRUE
 whole-organism behaviour | count (number),whole-organism behaviour,count (number),13,2,Reader_etal_2011; Reader_Laland_2002,Primates; Primates (116 of 203 species surveyed),info; primary; secondary,TRUE
 whole-organism | Sleep.h_day,whole-organism,Sleep.h_day,12,2,Capellini_etal_2008; HerculanoHouzel__2015,"Mammals; Mammals (24 species, 6 clades); Mammals (marine)",info; primary,TRUE
@@ -188,7 +188,7 @@ see Region | surface area,see Region,surface area,3,2,Hanson_etal_2018; Karlsen_
 (structure-agnostic; see data columns) | freq.kHz,(structure-agnostic; see data columns),freq.kHz,2,2,Heffner_etal_2020; Koay_etal_1998,Mammalia (67 digitised points); Mammalia (79 markers; 34 labelled),both; secondary,TRUE
 (structure-agnostic; see data columns) | km,(structure-agnostic; see data columns),km,2,2,Kamilar_Cooper_2013; Nunn_Samson_2018,Primates,secondary,TRUE
 (structure-agnostic; see data columns) | provenance,(structure-agnostic; see data columns),provenance,2,2,Mota_HerculanoHouzel_2015; Zilles_etal_2013,Mammals,provenance,TRUE
-(structure-agnostic; see data columns) | year,(structure-agnostic; see data columns),year,2,2,Hayssen_VanTienhoven_1993; Jones_etal_2009,mammals,info,TRUE
+(structure-agnostic; see data columns) | year,(structure-agnostic; see data columns),year,2,2,Hayssen_etal_1993; Jones_etal_2009,mammals,info,TRUE
 Accessory_olfactory_bulb | volume,Accessory_olfactory_bulb,volume,2,2,Baron_etal_1996; DeCasien_Higham_2019,Chiroptera; primates,primary; secondary,TRUE
 Allocortex | volume,Allocortex,volume,2,2,Ebinger__1974; Schleifenbaum__1973,Canis; Ovis,primary,TRUE
 Capsula_interna | volume,Capsula_interna,volume,2,2,Stephan_etal_1981; Stephan_etal_1991,"10 printed historical Insectivora taxon labels; Insectivora, Scandentia & Primates",primary,TRUE
@@ -264,7 +264,7 @@ limb | percentage (relative),limb,percentage (relative),8,1,MedinaGonzález__20
 (structure-agnostic; see data columns) | Days,(structure-agnostic; see data columns),Days,7,1,Myhrvold_etal_2015,"B; B,R; B,R,M; M",secondary,FALSE
 (structure-agnostic; see data columns) | Centimeters,(structure-agnostic; see data columns),Centimeters,6,1,Myhrvold_etal_2015,"B,R, M; B,R,M",secondary,FALSE
 (structure-agnostic; see data columns) | decimal degrees (dd),(structure-agnostic; see data columns),decimal degrees (dd),6,1,Jones_etal_2009,mammals,data,FALSE
-(structure-agnostic; see data columns) | numeric,(structure-agnostic; see data columns),numeric,6,1,Hayssen_VanTienhoven_1993,mammals,info,FALSE
+(structure-agnostic; see data columns) | numeric,(structure-agnostic; see data columns),numeric,6,1,Hayssen_etal_1993,mammals,info,FALSE
 Anterior_cingulate_cortex | volume,Anterior_cingulate_cortex,volume,6,1,Butti_etal_2009,Cetacea,primary,FALSE
 Anterior_cingulate_cortex_area_24 | volume,Anterior_cingulate_cortex_area_24,volume,6,1,Nimchinsky_etal_1999,Hominoidea,primary,FALSE
 Betz cells (area 4) | length,Betz cells (area 4),length,6,1,Garey__2006,Mammalia (Table species),secondary,FALSE
@@ -296,7 +296,7 @@ vision | Acuity.cpd,vision,Acuity.cpd,5,1,Dooley_etal_2012,Australian numbat; wa
 (structure-agnostic; see data columns) | (per measure),(structure-agnostic; see data columns),(per measure),4,1,Kaufman__2004,Mammals,primary,FALSE
 (structure-agnostic; see data columns) | Order,(structure-agnostic; see data columns),Order,4,1,Hutsler_etal_2005,13 mammal species; 14 mammal species,info; primary,FALSE
 (structure-agnostic; see data columns) | grams,(structure-agnostic; see data columns),grams,4,1,Jones_etal_2009,mammals,data,FALSE
-(structure-agnostic; see data columns) | logical,(structure-agnostic; see data columns),logical,4,1,Hayssen_VanTienhoven_1993,mammals,info,FALSE
+(structure-agnostic; see data columns) | logical,(structure-agnostic; see data columns),logical,4,1,Hayssen_etal_1993,mammals,info,FALSE
 Area10 | percentage (relative),Area10,percentage (relative),4,1,Semendeferi_etal_2001,Apes & humans & macaque,primary,FALSE
 Area13 | percentage (relative),Area13,percentage (relative),4,1,Semendeferi_etal_1998,Apes & humans & macaque,primary,FALSE
 BrocaArea44 | percentage (relative),BrocaArea44,percentage (relative),4,1,PalomeroGallagher_Zilles_2018,as above,primary,FALSE
@@ -338,7 +338,7 @@ whole-organism | Time.h,whole-organism,Time.h,4,1,Ruf_Geiser_2015,"Birds & mamma
 (structure-agnostic; see data columns) | h/day,(structure-agnostic; see data columns),h/day,3,1,Nunn_Samson_2018,Primates,secondary,FALSE
 (structure-agnostic; see data columns) | historical category,(structure-agnostic; see data columns),historical category,3,1,GalánAcedo_etal_2019,Primates,secondary,FALSE
 (structure-agnostic; see data columns) | hours/day,(structure-agnostic; see data columns),hours/day,3,1,Nunn_Samson_2018,Primates,secondary,FALSE
-(structure-agnostic; see data columns) | key,(structure-agnostic; see data columns),key,3,1,Hayssen_VanTienhoven_1993,mammals,info,FALSE
+(structure-agnostic; see data columns) | key,(structure-agnostic; see data columns),key,3,1,Hayssen_etal_1993,mammals,info,FALSE
 (structure-agnostic; see data columns) | regression,(structure-agnostic; see data columns),regression,3,1,Balzeau_etal_2012,Homo,secondary,FALSE
 (structure-agnostic; see data columns) | stat.intercept,(structure-agnostic; see data columns),stat.intercept,3,1,deSousa_etal_2009,hominoids,primary,FALSE
 (structure-agnostic; see data columns) | stat.slope,(structure-agnostic; see data columns),stat.slope,3,1,deSousa_etal_2009,hominoids,primary,FALSE

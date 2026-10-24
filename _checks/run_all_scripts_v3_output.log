@@ -1,14 +1,22 @@
 
 === R runner: run_all_scripts_v2.R ===
 $ Rscript run_all_scripts_v2.R
+snapshot_freeze WARNING: unparseable check value for Garey__2006_Table3: 'Checked snapshot 22102026' -> not newly frozen; an already-locked item stays locked (expected DDMMYYYY_initials)
+snapshot_freeze WARNING: unparseable check value for Garey__2006_Table4: 'Checked snapshot 22102026' -> not newly frozen; an already-locked item stays locked (expected DDMMYYYY_initials)
+snapshot_freeze WARNING: unparseable check value for Garey__2006_Table5: 'Checked snapshot 22102026' -> not newly frozen; an already-locked item stays locked (expected DDMMYYYY_initials)
+snapshot_freeze WARNING: unparseable check value for Garey__2006_Table6: 'Checked snapshot 22102026' -> not newly frozen; an already-locked item stays locked (expected DDMMYYYY_initials)
 
-Skipping 26 script(s):
+Frozen snapshots: 3 file(s) of 3 checked item(s) locked; 0 released.
+
+Skipping 27 script(s):
   - Heuer_etal_2023/source_data/load_data.R  (frozen author code shipped with the source release; never run in a sweep)
   - run_all_scripts_v2.R  (this runner)
   - update_shinyapp.R  (publishes to shinyapps.io (rsconnect::deployApp))
   - vertebrate_opsin_explorer/app.R  (contributed Shiny app + its data setup; needs ggtree/rtrees/piggyback and runs from its own folder)
   - vertebrate_opsin_explorer/setup_data.R  (contributed Shiny app + its data setup; needs ggtree/rtrees/piggyback and runs from its own folder)
   - __merging_volumes/compare_to_reference.R  (optional QC differ; needs an external hand-supplied reference CSV (EVOM1_REFERENCE_CSV))
+  - __merging_volumes/volumes_sample_metadata_Pirlot__1981.R  (function library with a CLI (needs REPO_ROOT and NEW_PRIVATE_CSV arguments); not standalone)
+  - __Finder/app.R  (Shiny app; reads data/ relative to its own folder; run deliberately from __Finder/)
   - __ShinyApp/app.R  (ends in shinyApp(); blocks forever under Rscript)
   - _helpers/cortical_layers_source_common.R  (sourced helper library, not a standalone script)
   - _helpers/openxlsx_compat.R  (sourced helper library, not a standalone script)
@@ -18,9 +26,6 @@ Skipping 26 script(s):
   - _keys/combine_trees.R  (optional tool; needs hand-supplied published source trees)
   - _keys/resolve_taxonomy.R  (on-demand web lookup (NCBI/ITIS/GBIF); exceeds the sweep timeout)
   - _tools/__edit_all_directories.R  (mass find/replace + rename utility; run deliberately, not in a sweep)
-  - _tools/__register_cortical_layer_builds_20260815.R  (writes hard-coded Sheet1 rows 299-301; Sheet1 re-sorts, so a re-run overwrites other sources)
-  - _tools/__register_remaining_builds_20260824.R  (one-shot registry edit, applied 2026-08-24; guard intentionally fails on re-run)
-  - _tools/__update_remaining_builds_20260815.R  (one-shot registry edit, applied 2026-08-15; targets a column since renamed)
   - _tools/dataset_builder/audit_dataset_item.R  (sourced builder library; entry point load_dataset_builder.R)
   - _tools/dataset_builder/build_dataset_item.R  (sourced builder library; entry point load_dataset_builder.R)
   - _tools/dataset_builder/compiler_decisions_helpers.R  (sourced builder library; entry point load_dataset_builder.R)
@@ -28,1230 +33,1498 @@ Skipping 26 script(s):
   - _tools/dataset_builder/render_errata.R  (sourced builder library; entry point load_dataset_builder.R)
   - _tools/dataset_builder/source_match.R  (sourced builder library; entry point load_dataset_builder.R)
   - _tools/dataset_builder/validate_dataset_item.R  (sourced builder library; entry point load_dataset_builder.R)
+  - _tools/snapshot_freeze.R  (snapshot-freeze library/CLI; sourced by this runner; run deliberately (Rscript _tools/snapshot_freeze.R status))
+  - _checks/find_orphan_R_scripts.R  (exhaustive scripts x data-files scan; exceeds TIMEOUT_SEC (300 s); run deliberately)
   - _checks/parity_R_vs_py.R  (manual R-vs-Python port check; shells out to Rscript and python3)
 
-[1/611] Running: _tools/restore_registry_rows.R
+[1/744] Running: _tools/file_list.R
 
-[2/611] Running: _tools/file_list.R
+[2/744] Running: Andelin_etal_2019/Andelin_etal_2019_Table4.R
 
-[3/611] Running: Andelin_etal_2019/Andelin_etal_2019_Table4.R
+[3/744] Running: Armstrong__1979/Armstrong__1979_Tables1-9.R
 
-[4/611] Running: Armstrong__1979/Armstrong__1979_Tables1-9.R
+[4/744] Running: Ashwell__2020/Ashwell__2020_SupplementaryTable.R
 
-[5/611] Running: Ashwell__2020/Ashwell__2020_SupplementaryTable.R
+[5/744] Running: AvelinodeSouza_etal_2025/AvelinodeSouza_etal_2025_TABLE1.R
 
-[6/611] Running: AvelinodeSouza_etal_2025/AvelinodeSouza_etal_2025_TABLE1.R
+[6/744] Running: Awbrey_etal_1988/Awbrey_etal_1988_Table1.R
 
-[7/611] Running: Awbrey_etal_1988/Awbrey_etal_1988_Table1.R
+[7/744] Running: Baker_etal_2025/Baker_etal_2025_SupplementaryData1.R
 
-[8/611] Running: Baker_etal_2025/Baker_etal_2025_SupplementaryData1.R
+[8/744] Running: BallesterosYáñez_etal_2006/BallesterosYáñez_etal_2006_Figure3A.R
 
-[9/611] Running: BallesterosYáñez_etal_2006/BallesterosYáñez_etal_2006_Figure3A.R
+[9/744] Running: BallesterosYáñez_etal_2006/BallesterosYáñez_etal_2006_Figure3B.R
 
-[10/611] Running: BallesterosYáñez_etal_2006/BallesterosYáñez_etal_2006_Figure3B.R
+[10/744] Running: BallesterosYáñez_etal_2006/BallesterosYáñez_etal_2006_Figure3C.R
 
-[11/611] Running: BallesterosYáñez_etal_2006/BallesterosYáñez_etal_2006_Figure3C.R
+[11/744] Running: BallesterosYáñez_etal_2006/BallesterosYáñez_etal_2006_Table1.R
 
-[12/611] Running: BallesterosYáñez_etal_2006/BallesterosYáñez_etal_2006_Table1.R
+[12/744] Running: Balzeau_etal_2012/Balzeau_etal_2012_Table2.R
 
-[13/611] Running: Balzeau_etal_2012/Balzeau_etal_2012_Table2.R
+[13/744] Running: Balzeau_etal_2012/Balzeau_etal_2012_Table3.R
 
-[14/611] Running: Balzeau_etal_2012/Balzeau_etal_2012_Table3.R
+[14/744] Running: Balzeau_etal_2012/Balzeau_etal_2012_Table5.R
 
-[15/611] Running: Balzeau_etal_2012/Balzeau_etal_2012_Table5.R
+[15/744] Running: BarbeitoAndrés_etal_2019/BarbeitoAndrés_etal_2019.R
 
-[16/611] Running: BarbeitoAndrés_etal_2019/BarbeitoAndrés_etal_2019.R
+[16/744] Running: Barger_etal_2007/Barger_etal_2007_TABLE1.R
 
-[17/611] Running: Barger_etal_2007/Barger_etal_2007_TABLE1.R
+[17/744] Running: Barger_etal_2012/Barger_etal_2012_Table1.R
 
-[18/611] Running: Barger_etal_2012/Barger_etal_2012_Table1.R
+[18/744] Running: Barger_etal_2012/Barger_etal_2012_Table3.R
 
-[19/611] Running: Barger_etal_2012/Barger_etal_2012_Table3.R
+[19/744] Running: Barger_etal_2014/Barger_etal_2014_Table1.R
 
-[20/611] Running: Barger_etal_2014/Barger_etal_2014_Table1.R
+[20/744] Running: Barks_etal_2014/Barks_etal_2014_Fig4A.R
 
-[21/611] Running: Barks_etal_2014/Barks_etal_2014_Fig4A.R
+[21/744] Running: Barks_etal_2014/Barks_etal_2014_Fig5A.R
 
-[22/611] Running: Barks_etal_2014/Barks_etal_2014_Fig5A.R
+[22/744] Running: Barks_etal_2014/Barks_etal_2014_TABLE1.R
 
-[23/611] Running: Barks_etal_2014/Barks_etal_2014_TABLE1.R
+[23/744] Running: Barks_etal_2014/Barks_etal_2014_TABLE2.R
 
-[24/611] Running: Barks_etal_2014/Barks_etal_2014_TABLE2.R
+[24/744] Running: Barks_etal_2014/Barks_etal_2014_unpublishedviaDeCasien.R
 
-[25/611] Running: Barks_etal_2014/Barks_etal_2014_unpublishedviaDeCasien.R
+[25/744] Running: Baron_etal_1983/Baron_etal_1983_Table1.R
 
-[26/611] Running: Baron_etal_1983/Baron_etal_1983_Table1.R
+[26/744] Running: Baron_etal_1987/Baron_etal_1987_Table1.R
 
-[27/611] Running: Baron_etal_1987/Baron_etal_1987_Table1.R
+[27/744] Running: Baron_etal_1988/Baron_etal_1988_Table1.R
 
-[28/611] Running: Baron_etal_1988/Baron_etal_1988_Table1.R
+[28/744] Running: Baron_etal_1990/Baron_etal_1990_Table1.R
 
-[29/611] Running: Baron_etal_1990/Baron_etal_1990_Table1.R
+[29/744] Running: Baron_etal_1996/Baron_etal_1996_extract_snapshots.R
 
-[30/611] Running: Baron_etal_1996/Baron_etal_1996_extract_snapshots.R
+[30/744] Running: Baron_etal_1996/Baron_etal_1996_overlap_taxonomy_audit.R
 
-[31/611] Running: Baron_etal_1996/Baron_etal_1996_overlap_taxonomy_audit.R
+[31/744] Running: Baron_etal_1996/Baron_etal_1996_Table10.R
 
-[32/611] Running: Baron_etal_1996/Baron_etal_1996_Table10.R
+[32/744] Running: Baron_etal_1996/Baron_etal_1996_Table13.R
 
-[33/611] Running: Baron_etal_1996/Baron_etal_1996_Table13.R
+[33/744] Running: Baron_etal_1996/Baron_etal_1996_Table16.R
 
-[34/611] Running: Baron_etal_1996/Baron_etal_1996_Table16.R
+[34/744] Running: Baron_etal_1996/Baron_etal_1996_Table19.R
 
-[35/611] Running: Baron_etal_1996/Baron_etal_1996_Table19.R
+[35/744] Running: Baron_etal_1996/Baron_etal_1996_Table2.R
 
-[36/611] Running: Baron_etal_1996/Baron_etal_1996_Table2.R
+[36/744] Running: Baron_etal_1996/Baron_etal_1996_Table22.R
 
-[37/611] Running: Baron_etal_1996/Baron_etal_1996_Table22.R
+[37/744] Running: Baron_etal_1996/Baron_etal_1996_Table25.R
 
-[38/611] Running: Baron_etal_1996/Baron_etal_1996_Table25.R
+[38/744] Running: Baron_etal_1996/Baron_etal_1996_Table28.R
 
-[39/611] Running: Baron_etal_1996/Baron_etal_1996_Table28.R
+[39/744] Running: Baron_etal_1996/Baron_etal_1996_Table30.R
 
-[40/611] Running: Baron_etal_1996/Baron_etal_1996_Table30.R
+[40/744] Running: Baron_etal_1996/Baron_etal_1996_Table32.R
 
-[41/611] Running: Baron_etal_1996/Baron_etal_1996_Table32.R
+[41/744] Running: Baron_etal_1996/Baron_etal_1996_Table35.R
 
-[42/611] Running: Baron_etal_1996/Baron_etal_1996_Table35.R
+[42/744] Running: Baron_etal_1996/Baron_etal_1996_Table36.R
 
-[43/611] Running: Baron_etal_1996/Baron_etal_1996_Table36.R
+[43/744] Running: Baron_etal_1996/Baron_etal_1996_Table39.R
 
-[44/611] Running: Baron_etal_1996/Baron_etal_1996_Table39.R
+[44/744] Running: Baron_etal_1996/Baron_etal_1996_Table42.R
 
-[45/611] Running: Baron_etal_1996/Baron_etal_1996_Table42.R
+[45/744] Running: Baron_etal_1996/Baron_etal_1996_Table45.R
 
-[46/611] Running: Baron_etal_1996/Baron_etal_1996_Table45.R
+[46/744] Running: Baron_etal_1996/Baron_etal_1996_Table48.R
 
-[47/611] Running: Baron_etal_1996/Baron_etal_1996_Table48.R
+[47/744] Running: Baron_etal_1996/Baron_etal_1996_Table5.R
 
-[48/611] Running: Baron_etal_1996/Baron_etal_1996_Table5.R
+[48/744] Running: Baron_etal_1996/Baron_etal_1996_Table51.R
 
-[49/611] Running: Baron_etal_1996/Baron_etal_1996_Table51.R
+[49/744] Running: Baron_etal_1996/Baron_etal_1996_Table8.R
 
-[50/611] Running: Baron_etal_1996/Baron_etal_1996_Table8.R
+[50/744] Running: Barrickman_Lin_2010/Barrickman_Lin_2010_Table1.R
 
-[51/611] Running: Bauernfeind_etal_2013/Bauernfeind_etal_2013_Table1.R
+[51/744] Running: Bauernfeind_etal_2013/Bauernfeind_etal_2013_Table1.R
 
-[52/611] Running: Bauernfeind_etal_2013/Bauernfeind_etal_2013_Table2.R
+[52/744] Running: Bauernfeind_etal_2013/Bauernfeind_etal_2013_Table2.R
 
-[53/611] Running: Bauernfeind_etal_2013/Bauernfeind_etal_2013_Table3.R
+[53/744] Running: Bauernfeind_etal_2013/Bauernfeind_etal_2013_Table3.R
 
-[54/611] Running: Bianchi_etal_2012/Bianchi_etal_2012_Table1.R
+[54/744] Running: Bianchi_etal_2012/Bianchi_etal_2012_Table1.R
 
-[55/611] Running: Bianchi_etal_2012/Bianchi_etal_2012_Table2.R
+[55/744] Running: Bianchi_etal_2012/Bianchi_etal_2012_Table2.R
 
-[56/611] Running: Bjugn__1993/Bjugn__1993_TABLEI.R
+[56/744] Running: Bjugn__1993/Bjugn__1993_TABLEI.R
 
-[57/611] Running: Bjugn__1993/Bjugn__1993_TABLEII.R
+[57/744] Running: Bjugn__1993/Bjugn__1993_TABLEII.R
 
-[58/611] Running: Bjugn__1993/Bjugn__1993_TABLEIV.R
+[58/744] Running: Bjugn__1993/Bjugn__1993_TABLEIII.R
 
-[59/611] Running: Bjugn__1993/Bjugn__1993_TABLEV.R
+[59/744] Running: Bjugn__1993/Bjugn__1993_TABLEIV.R
 
-[60/611] Running: Boddy_etal_2012/Boddy_etal_2012_brainbodydatabasev2.txt.R
+[60/744] Running: Bjugn__1993/Bjugn__1993_TABLEV.R
 
-[61/611] Running: Boddy_etal_2012/Boddy_etal_2012_TableS1.R
+[61/744] Running: Boddy_etal_2012/Boddy_etal_2012_brainbodydatabasev2.txt.R
 
-[62/611] Running: Bortoff_Strick_1993/Bortoff_Strick_1993_extract_snapshot.R
+[62/744] Running: Boddy_etal_2012/Boddy_etal_2012_TableS1.R
 
-[63/611] Running: Bortoff_Strick_1993/Bortoff_Strick_1993_Table1.R
+[63/744] Running: Bortoff_Strick_1993/Bortoff_Strick_1993_extract_snapshot.R
 
-[64/611] Running: Boyer_Harrington_2018/Boyer_Harrington_2018_Table1.R
+[64/744] Running: Bortoff_Strick_1993/Bortoff_Strick_1993_Table1.R
 
-[65/611] Running: Boyer_Harrington_2019/Boyer_Harrington_2019_SOMTableS6.R
+[65/744] Running: Bowmaker_etal_1991/Bowmaker_etal_1991_Table1.R
 
-[66/611] Running: Branstetter_etal_2017/Branstetter_etal_2017_TableIV.R
+[66/744] Running: Bowmaker_etal_1991/Bowmaker_etal_1991_Table2.R
 
-[67/611] Running: Brodmann__1913/Brodmann__1913_Table1.R
+[67/744] Running: Boyer_Harrington_2018/Boyer_Harrington_2018_Table1.R
 
-[68/611] Running: Burger_etal_2019/Burger_etal_2019_SupplementaryDataSD1.R
+[68/744] Running: Boyer_Harrington_2019/Boyer_Harrington_2019_SOMTableS6.R
 
-[69/611] Running: Burish_etal_2010/Burish_etal_2010_SupplementaryTable1.R
+[69/744] Running: Braitenberg_Schüz_1998/Braitenberg_Schüz_1998_Figure62.R
 
-[70/611] Running: Burish_etal_2010/Burish_etal_2010_Table1.R
+[70/744] Running: Braitenberg_Schüz_1998/Braitenberg_Schüz_1998_Text.R
 
-[71/611] Running: Bush_Allman_2003/Bush_Allman_2003_Table1.R
+[71/744] Running: Branstetter_etal_2017/Branstetter_etal_2017_TableIV.R
 
-[72/611] Running: Bush_Allman_2004_a/Bush_Allman_2004_a_Table2.R
+[72/744] Running: Brodmann__1913/Brodmann__1913_Table1.R
 
-[73/611] Running: Bush_Allman_2004_b/Bush_Allman_2004_b_TABLE1.R
+[73/744] Running: Burger_etal_2019/Burger_etal_2019_SupplementaryDataSD1.R
 
-[74/611] Running: Bush_Allman_2004_b/Bush_Allman_2004_b_TABLE2.R
+[74/744] Running: Burish_etal_2010/Burish_etal_2010_SupplementaryTable1.R
 
-[75/611] Running: Bush_Allman_2004_b/Bush_Allman_2004_b_TABLE3.R
+[75/744] Running: Burish_etal_2010/Burish_etal_2010_Table1.R
 
-[76/611] Running: Butti_etal_2009/Butti_etal_2009_Table1.R
+[76/744] Running: Bush_Allman_2003/Bush_Allman_2003_Table1.R
 
-[77/611] Running: Butti_etal_2009/Butti_etal_2009_Table5.R
+[77/744] Running: Bush_Allman_2004_a/Bush_Allman_2004_a_Table2.R
 
-[78/611] Running: Butti_etal_2009/Butti_etal_2009_Table6.R
+[78/744] Running: Bush_Allman_2004_b/Bush_Allman_2004_b_TABLE1.R
 
-[79/611] Running: Campos_Welker_1976/Campos_Welker_1976_Table1.R
+[79/744] Running: Bush_Allman_2004_b/Bush_Allman_2004_b_TABLE2.R
 
-[80/611] Running: Capellini_etal_2008/Capellini_etal_2008_sleep-data.R
+[80/744] Running: Bush_Allman_2004_b/Bush_Allman_2004_b_TABLE3.R
 
-[81/611] Running: Caspar_etal_2022/Caspar_etal_2022_Supplementaryfile3.R
+[81/744] Running: Butti_etal_2009/Butti_etal_2009_Table1.R
 
-[82/611] Running: Caspar_etal_2022/Caspar_etal_2022_Table1.R
+[82/744] Running: Butti_etal_2009/Butti_etal_2009_Table5.R
 
-[83/611] Running: Caves_etal_2018/Caves_etal_2018_TableS1.R
+[83/744] Running: Butti_etal_2009/Butti_etal_2009_Table6.R
 
-[84/611] Running: Changizi__2001/Changizi__2001_Figure3.R
+[84/744] Running: Campbell_Tobler_1984/Campbell_Tobler_1984_Table1.R
 
-[85/611] Running: Changizi__2003/Changizi__2003_Table1.R
+[85/744] Running: Campos_Welker_1976/Campos_Welker_1976_ResultsText.R
 
-[86/611] Running: Changizi_Shimojo_2005/Changizi_Shimojo_2005_Table1.R
+[86/744] Running: Campos_Welker_1976/Campos_Welker_1976_Table1.R
 
-[87/611] Running: Changizi_Shimojo_2005/Changizi_Shimojo_2005_Table2.R
+[87/744] Running: Capellini_etal_2008/Capellini_etal_2008_sleep-data.R
 
-[88/611] Running: Changizi_Shimojo_2005/Changizi_Shimojo_2005_Table3.R
+[88/744] Running: Caspar_etal_2022/Caspar_etal_2022_Supplementaryfile3.R
 
-[89/611] Running: Changizi_Shimojo_2005/Changizi_Shimojo_2005_Table4.R
+[89/744] Running: Caspar_etal_2022/Caspar_etal_2022_Table1.R
 
-[90/611] Running: Changizi_Shimojo_2005/Changizi_Shimojo_2005_Table5.R
+[90/744] Running: Catania_etal_1999/Catania_etal_1999_Table1.R
 
-[91/611] Running: Chaplin_etal_2013/Chaplin_etal_2013_ResultsText.R
+[91/744] Running: Catania_Remple_2002/Catania_Remple_2002_Table1.R
 
-[92/611] Running: Chen_Wiens_2020/Chen_Wiens_2020_SupplementaryData3.R
+[92/744] Running: Caves_etal_2018/Caves_etal_2018_TableS1.R
 
-[93/611] Running: Collins_etal_2010/Collins_etal_2010_DatasetS1.R
+[93/744] Running: Changizi__2001/Changizi__2001_Figure3.R
 
-[94/611] Running: Collins_etal_2016/Collins_etal_2016_Table1.R
+[94/744] Running: Changizi__2003/Changizi__2003_Table1.R
 
-[95/611] Running: Conesa_etal_1991/Conesa_etal_1991_text.R
+[95/744] Running: Changizi_Shimojo_2005/Changizi_Shimojo_2005_Table1.R
 
-[96/611] Running: Dalland__1965/Dalland__1965_ResultsText.R
+[96/744] Running: Changizi_Shimojo_2005/Changizi_Shimojo_2005_Table2.R
 
-[97/611] Running: Deaner_etal_2006/Deaner_etal_2006_Table1.R
+[97/744] Running: Changizi_Shimojo_2005/Changizi_Shimojo_2005_Table3.R
 
-[98/611] Running: DeCasien_etal_2017/DeCasien_etal_2017_BrainData.R
+[98/744] Running: Changizi_Shimojo_2005/Changizi_Shimojo_2005_Table4.R
 
-[99/611] Running: DeCasien_etal_2017/DeCasien_etal_2017_referencesbraindata.R
+[99/744] Running: Changizi_Shimojo_2005/Changizi_Shimojo_2005_Table5.R
 
-[100/611] Running: DeCasien_Higham_2019/DeCasien_Higham_2019_ActivityPeriodData.R
+[100/744] Running: Chaplin_etal_2013/Chaplin_etal_2013_ResultsText.R
 
-[101/611] Running: DeCasien_Higham_2019/DeCasien_Higham_2019_BrainRegionDatamm3.R
+[101/744] Running: Chen_Wiens_2020/Chen_Wiens_2020_SupplementaryData3.R
 
-[102/611] Running: DeCasien_Higham_2019/DeCasien_Higham_2019_BrainRegionDataNotes.R
+[102/744] Running: Clancy_etal_2001/Clancy_etal_2001_Table1.R
 
-[103/611] Running: DeCasien_Higham_2019/DeCasien_Higham_2019_DietData.R
+[103/744] Running: Clancy_etal_2001/Clancy_etal_2001_Table2.R
 
-[104/611] Running: DeCasien_Higham_2019/DeCasien_Higham_2019_DQIdata.R
+[104/744] Running: Collins_etal_2010/Collins_etal_2010_DatasetS1.R
 
-[105/611] Running: DeCasien_Higham_2019/DeCasien_Higham_2019_GroupSizeDataaggregated.R
+[105/744] Running: Collins_etal_2016/Collins_etal_2016_Table1.R
 
-[106/611] Running: DeCasien_Higham_2019/DeCasien_Higham_2019_GroupSizeDatafrom38.R
+[106/744] Running: Conesa_etal_1991/Conesa_etal_1991_Text.R
 
-[107/611] Running: DeCasien_Higham_2019/DeCasien_Higham_2019_referencesbraindata.R
+[107/744] Running: Crile_Quiring_1940/Crile_Quiring_1940_Table1.R
 
-[108/611] Running: DeCasien_Higham_2019/DeCasien_Higham_2019_SocialSystemData.R
+[108/744] Running: Dalland__1965/Dalland__1965_ResultsText.R
 
-[109/611] Running: DeCasien_Higham_2019/DeCasien_Higham_2019_SourceRefsfrom38.R
+[109/744] Running: Deaner_etal_2006/Deaner_etal_2006_Table1.R
 
-[110/611] Running: deJager_etal_2022/deJager_etal_2022.R
+[110/744] Running: DeCasien_etal_2017/DeCasien_etal_2017_BrainData.R
 
-[111/611] Running: Dell_etal_2016/Dell_etal_2016_Table4.R
+[111/744] Running: DeCasien_etal_2017/DeCasien_etal_2017_referencesbraindata.R
 
-[112/611] Running: deMagalhães_etal_2024/deMagalhães_etal_2024_anagedata.txt.R
+[112/744] Running: DeCasien_Higham_2019/DeCasien_Higham_2019_ActivityPeriodData.R
 
-[113/611] Running: Demirci_etal_2023/Demirci_etal_2023_Fig.1.R
+[113/744] Running: DeCasien_Higham_2019/DeCasien_Higham_2019_BrainRegionDatamm3.R
 
-[114/611] Running: deSousa__2008/deSousa__2008_Suppl.Table5.2_extract_snapshot.R
+[114/744] Running: DeCasien_Higham_2019/DeCasien_Higham_2019_BrainRegionDataNotes.R
 
-[115/611] Running: deSousa__2008/deSousa__2008_Suppl.Table5.2.R
+[115/744] Running: DeCasien_Higham_2019/DeCasien_Higham_2019_DietData.R
 
-[116/611] Running: deSousa__2008/deSousa__2008_Table4.1_extract_snapshot.R
+[116/744] Running: DeCasien_Higham_2019/DeCasien_Higham_2019_DQIdata.R
 
-[117/611] Running: deSousa__2008/deSousa__2008_Table4.1.R
+[117/744] Running: DeCasien_Higham_2019/DeCasien_Higham_2019_GroupSizeDataaggregated.R
 
-[118/611] Running: deSousa__2008/deSousa__2008_Table5.1_extract_snapshot.R
+[118/744] Running: DeCasien_Higham_2019/DeCasien_Higham_2019_GroupSizeDatafrom38.R
 
-[119/611] Running: deSousa__2008/deSousa__2008_Table5.1.R
+[119/744] Running: DeCasien_Higham_2019/DeCasien_Higham_2019_referencesbraindata.R
 
-[120/611] Running: deSousa__2008/deSousa__2008_Table5.6_extract_snapshot.R
+[120/744] Running: DeCasien_Higham_2019/DeCasien_Higham_2019_SocialSystemData.R
 
-[121/611] Running: deSousa__2008/deSousa__2008_Table5.6.R
+[121/744] Running: DeCasien_Higham_2019/DeCasien_Higham_2019_SourceRefsfrom38.R
 
-[122/611] Running: deSousa_etal_2009/deSousa_etal_2009_Table1_extract_snapshot.R
+[122/744] Running: Deegan_Jacobs_2001/Deegan_Jacobs_2001_TextResults.R
 
-[123/611] Running: deSousa_etal_2009/deSousa_etal_2009_Table1.R
+[123/744] Running: deJager_etal_2022/deJager_etal_2022.R
 
-[124/611] Running: deSousa_etal_2009/deSousa_etal_2009_Table2.R
+[124/744] Running: Dell_etal_2016/Dell_etal_2016_Table4.R
 
-[125/611] Running: deSousa_etal_2010/deSousa_etal_2010_SupTable2.R
+[125/744] Running: deMagalhães_etal_2024/deMagalhães_etal_2024_anagedata.txt_references.R
 
-[126/611] Running: deSousa_etal_2010/deSousa_etal_2010_Table1.R
+[126/744] Running: deMagalhães_etal_2024/deMagalhães_etal_2024_anagedata.txt.R
 
-[127/611] Running: deSousa_etal_2013/deSousa_etal_2013_Table1.R
+[127/744] Running: Demirci_etal_2023/Demirci_etal_2023_Fig.1.R
 
-[128/611] Running: deSousa_etal_2022/deSousa_etal_2022_acuityblind.csv.R
+[128/744] Running: deSousa__2008/deSousa__2008_Suppl.Table5.2_extract_snapshot.R
 
-[129/611] Running: Dooley_etal_2012/Dooley_etal_2012_DiscussionText.R
+[129/744] Running: deSousa__2008/deSousa__2008_Suppl.Table5.2.R
 
-[130/611] Running: Dooley_etal_2012/Dooley_etal_2012_ResultsText.R
+[130/744] Running: deSousa__2008/deSousa__2008_Table4.1_extract_snapshot.R
 
-[131/611] Running: DosSantos_etal_2017/DosSantos_etal_2017_TableS1.R
+[131/744] Running: deSousa__2008/deSousa__2008_Table4.1.R
 
-[132/611] Running: DosSantos_etal_2020/DosSantos_etal_2020_Table1_check.R
+[132/744] Running: deSousa__2008/deSousa__2008_Table5.1_extract_snapshot.R
 
-[133/611] Running: DosSantos_etal_2020/DosSantos_etal_2020_Table1.R
+[133/744] Running: deSousa__2008/deSousa__2008_Table5.1.R
 
-[134/611] Running: DosSantos_etal_2020/DosSantos_etal_2020_unpublished.R
+[134/744] Running: deSousa__2008/deSousa__2008_Table5.6_extract_snapshot.R
 
-[135/611] Running: Dunbar__1992/Dunbar__1992_Table1.R
+[135/744] Running: deSousa__2008/deSousa__2008_Table5.6.R
 
-[136/611] Running: Eagleman_Vaughn_2021/Eagleman_Vaughn_2021_TABLE1.R
+[136/744] Running: deSousa_etal_2009/deSousa_etal_2009_Table1_extract_snapshot.R
 
-[137/611] Running: Ebinger__1974/Ebinger__1974_Tables3-4.R
+[137/744] Running: deSousa_etal_2009/deSousa_etal_2009_Table1.R
 
-[138/611] Running: Elston__2000/Elston__2000_Figure2.R
+[138/744] Running: deSousa_etal_2009/deSousa_etal_2009_Table2.R
 
-[139/611] Running: Elston_etal_2001/Elston_etal_2001_Table1.R
+[139/744] Running: deSousa_etal_2010/deSousa_etal_2010_SupTable2.R
 
-[140/611] Running: Elston_etal_2005_a/Elston_etal_2005_a_Table1.R
+[140/744] Running: deSousa_etal_2010/deSousa_etal_2010_Table1.R
 
-[141/611] Running: Elston_etal_2005_a/Elston_etal_2005_a_Table2.R
+[141/744] Running: deSousa_etal_2013/deSousa_etal_2013_Table1.R
 
-[142/611] Running: Elston_etal_2005_a/Elston_etal_2005_a_Table3.R
+[142/744] Running: deSousa_etal_2022/deSousa_etal_2022_acuityblind.csv.R
 
-[143/611] Running: Elston_etal_2005_a/Elston_etal_2005_a_Table4.R
+[143/744] Running: Dooley_etal_2012/Dooley_etal_2012_DiscussionText.R
 
-[144/611] Running: Elston_etal_2005_a/Elston_etal_2005_a_Table5.R
+[144/744] Running: Dooley_etal_2012/Dooley_etal_2012_ResultsText.R
 
-[145/611] Running: Elston_etal_2005_a/Elston_etal_2005_a_Table6.R
+[145/744] Running: DosSantos_etal_2017/DosSantos_etal_2017_TableS1.R
 
-[146/611] Running: Elston_etal_2005_b/Elston_etal_2005_b_TABLE1.R
+[146/744] Running: DosSantos_etal_2020/DosSantos_etal_2020_Table1_check.R
 
-[147/611] Running: Elston_etal_2005_b/Elston_etal_2005_b_TABLE2.R
+[147/744] Running: DosSantos_etal_2020/DosSantos_etal_2020_Table1.R
 
-[148/611] Running: Elston_etal_2005_b/Elston_etal_2005_b_TABLE3.R
+[148/744] Running: DosSantos_etal_2020/DosSantos_etal_2020_unpublished.R
 
-[149/611] Running: Elston_etal_2005_b/Elston_etal_2005_b_TABLE4.R
+[149/744] Running: Dunbar__1992/Dunbar__1992_Table1.R
 
-[150/611] Running: Elston_etal_2006/Elston_etal_2006_Table1.R
+[150/744] Running: Dunbar_Bever_1998/Dunbar_Bever_1998_Table1.R
 
-[151/611] Running: Falcone_etal_2019/Falcone_etal_2019_TABLE1.R
+[151/744] Running: Dunbar_Bever_1998/Dunbar_Bever_1998_Table2.R
 
-[152/611] Running: Falcone_etal_2019/Falcone_etal_2019_TABLE2.R
+[152/744] Running: Dunbar_Bever_1998/Dunbar_Bever_1998_Table3.R
 
-[153/611] Running: Finlay_etal_2006/Finlay_etal_2006_Table6.1.R
+[153/744] Running: Dunn_Smaers_2018/Dunn_Smaers_2018_TableS1.R
 
-[154/611] Running: Flydal_etal_2001/Flydal_etal_2001_Table2.R
+[154/744] Running: Eagleman_Vaughn_2021/Eagleman_Vaughn_2021_TABLE1.R
 
-[155/611] Running: Fobbs_etal_2011/Fobbs_etal_2011_TableS1a.R
+[155/744] Running: Ebinger__1974/Ebinger__1974_Tables3-4.R
 
-[156/611] Running: Fobbs_etal_2011/Fobbs_etal_2011_TableS1b.R
+[156/744] Running: Elston__2000/Elston__2000_Figure2.R
 
-[157/611] Running: Fobbs_etal_2011/Fobbs_etal_2011_TableS2.R
+[157/744] Running: Elston_etal_2001/Elston_etal_2001_Table1.R
 
-[158/611] Running: Fobbs_etal_2011/Fobbs_etal_2011_TableS3.R
+[158/744] Running: Elston_etal_2005_a/Elston_etal_2005_a_Table1.R
 
-[159/611] Running: Fobbs_etal_2011/Fobbs_etal_2011_TableS4.R
+[159/744] Running: Elston_etal_2005_a/Elston_etal_2005_a_Table2.R
 
-[160/611] Running: Fobbs_etal_2011/Fobbs_etal_2011_TableS5a.R
+[160/744] Running: Elston_etal_2005_a/Elston_etal_2005_a_Table3.R
 
-[161/611] Running: Fobbs_etal_2011/Fobbs_etal_2011_TableS5b.R
+[161/744] Running: Elston_etal_2005_a/Elston_etal_2005_a_Table4.R
 
-[162/611] Running: Fox_Wilczynski_1986/Fox_Wilczynski_1986_TableI.R
+[162/744] Running: Elston_etal_2005_a/Elston_etal_2005_a_Table5.R
 
-[163/611] Running: Frahm_etal_1982/Frahm_etal_1982_Table2.R
+[163/744] Running: Elston_etal_2005_a/Elston_etal_2005_a_Table6.R
 
-[164/611] Running: Frahm_etal_1984/Frahm_etal_1984_Table1.R
+[164/744] Running: Elston_etal_2005_b/Elston_etal_2005_b_TABLE1.R
 
-[165/611] Running: Frahm_etal_1984/Frahm_etal_1984_Table2.R
+[165/744] Running: Elston_etal_2005_b/Elston_etal_2005_b_TABLE2.R
 
-[166/611] Running: Frahm_etal_1997/Frahm_etal_1997_Table1.R
+[166/744] Running: Elston_etal_2005_b/Elston_etal_2005_b_TABLE3.R
 
-[167/611] Running: Frahm_etal_1998/Frahm_etal_1998_Table1.R
+[167/744] Running: Elston_etal_2005_b/Elston_etal_2005_b_TABLE4.R
 
-[168/611] Running: Frahm_Zilles_1994/Frahm_Zilles_1994_Table1.R
+[168/744] Running: Elston_etal_2006/Elston_etal_2006_Table1.R
 
-[169/611] Running: Frahm_Zilles_1994/Frahm_Zilles_1994_Table2.R
+[169/744] Running: Ernest__2003/Ernest__2003_Mammallifehistoriesv2.txt.R
 
-[170/611] Running: Fritsches_etal_2005/Fritsches_etal_2005_Fig2.R
+[170/744] Running: Falcone_etal_2019/Falcone_etal_2019_TABLE1.R
 
-[171/611] Running: Frost_Masterton_1994/Frost_Masterton_1994_Resultstext.R
+[171/744] Running: Falcone_etal_2019/Falcone_etal_2019_TABLE2.R
 
-[172/611] Running: Fu_etal_2013/Fu_etal_2013_Table1.R
+[172/744] Running: Felleman_VanEssen_1991/Felleman_VanEssen_1991_Table2.R
 
-[173/611] Running: Gabi_etal_2016/Gabi_etal_2016_TableS1.R
+[173/744] Running: Felleman_VanEssen_1991/Felleman_VanEssen_1991_Table3.R
 
-[174/611] Running: Garwicz_etal_2009/Garwicz_etal_2009_TableS1.R
+[174/744] Running: Felleman_VanEssen_1991/Felleman_VanEssen_1991_Table5.R
 
-[175/611] Running: Garwicz_etal_2009/Garwicz_etal_2009_TableS2.R
+[175/744] Running: Finlay_etal_2006/Finlay_etal_2006_Table6.1.R
 
-[176/611] Running: Genoud_etal_2018/Genoud_etal_2018_TableS2.R
+[176/744] Running: Flydal_etal_2001/Flydal_etal_2001_Table2.R
 
-[177/611] Running: Gillette_etal_1973/Gillette_etal_1973_ResultsText.R
+[177/744] Running: Fobbs_etal_2011/Fobbs_etal_2011_TableS1a.R
 
-[178/611] Running: Granatosky__2018/Granatosky__2018_TableS1.R
+[178/744] Running: Fobbs_etal_2011/Fobbs_etal_2011_TableS1b.R
 
-[179/611] Running: Haarlem_etal_2026/Haarlem_etal_2026_CFFdataset.R
+[179/744] Running: Fobbs_etal_2011/Fobbs_etal_2011_TableS2.R
 
-[180/611] Running: Hakeem_etal_2005/Hakeem_etal_2005_Table2.R
+[180/744] Running: Fobbs_etal_2011/Fobbs_etal_2011_TableS3.R
 
-[181/611] Running: Hakeem_etal_2009/Hakeem_etal_2009_Table1.R
+[181/744] Running: Fobbs_etal_2011/Fobbs_etal_2011_TableS4.R
 
-[182/611] Running: Halley_Krubitzer_2019/Halley_Krubitzer_2019_Figure1_source_audit.R
+[182/744] Running: Fobbs_etal_2011/Fobbs_etal_2011_TableS5a.R
 
-[183/611] Running: Hanson_etal_2018/Hanson_etal_2018_Table2.R
+[183/744] Running: Fobbs_etal_2011/Fobbs_etal_2011_TableS5b.R
 
-[184/611] Running: Hanson_etal_2018/Hanson_etal_2018_Table3.R
+[184/744] Running: Fox_Wilczynski_1986/Fox_Wilczynski_1986_TableI.R
 
-[185/611] Running: Heesy__2004/Heesy__2004_Table1.R
+[185/744] Running: Frahm_etal_1982/Frahm_etal_1982_Table2.R
 
-[186/611] Running: Heffner__1998/Heffner__1998_Table1.R
+[186/744] Running: Frahm_etal_1984/Frahm_etal_1984_Table1.R
 
-[187/611] Running: Heffner__2004/Heffner__2004_Table1.R
+[187/744] Running: Frahm_etal_1984/Frahm_etal_1984_Table2.R
 
-[188/611] Running: Heffner_etal_1969/Heffner_etal_1969_ResultsText.R
+[188/744] Running: Frahm_etal_1997/Frahm_etal_1997_Table1.R
 
-[189/611] Running: Heffner_etal_1994_a/Heffner_etal_1994_a_Figure1.R
+[189/744] Running: Frahm_etal_1998/Frahm_etal_1998_Table1.R
 
-[190/611] Running: Heffner_etal_1994_a/Heffner_etal_1994_a_Figure2.R
+[190/744] Running: Frahm_Zilles_1994/Frahm_Zilles_1994_Table1.R
 
-[191/611] Running: Heffner_etal_1994_b/Heffner_etal_1994_b_Figure3.R
+[191/744] Running: Frahm_Zilles_1994/Frahm_Zilles_1994_Table2.R
 
-[192/611] Running: Heffner_etal_1994_c/Heffner_etal_1994_c_Table1.R
+[192/744] Running: Fritsches_etal_2005/Fritsches_etal_2005_Fig2.R
 
-[193/611] Running: Heffner_etal_2001/Heffner_etal_2001_ResultsText.R
+[193/744] Running: Frost_Masterton_1994/Frost_Masterton_1994_ResultsText.R
 
-[194/611] Running: Heffner_etal_2003/Heffner_etal_2003_Resultstext.R
+[194/744] Running: Fu_etal_2013/Fu_etal_2013_Table1.R
 
-[195/611] Running: Heffner_etal_2006/Heffner_etal_2006_ResultsText.R
+[195/744] Running: Gabi_etal_2016/Gabi_etal_2016_TableS1.R
 
-[196/611] Running: Heffner_etal_2007/Heffner_etal_2007_Figure6.R
+[196/744] Running: GalánAcedo_etal_2019/GalánAcedo_etal_2019_BodyMass.R
 
-[197/611] Running: Heffner_etal_2008/Heffner_etal_2008_Table1.R
+[197/744] Running: GalánAcedo_etal_2019/GalánAcedo_etal_2019_DielActivity.R
 
-[198/611] Running: Heffner_etal_2010/Heffner_etal_2010_TableI.R
+[198/744] Running: GalánAcedo_etal_2019/GalánAcedo_etal_2019_Habitat.R
 
-[199/611] Running: Heffner_etal_2013/Heffner_etal_2013_Resultstext.R
+[199/744] Running: GalánAcedo_etal_2019/GalánAcedo_etal_2019_HomeRange.R
 
-[200/611] Running: Heffner_etal_2014/Heffner_etal_2014_Resultstext.R
+[200/744] Running: GalánAcedo_etal_2019/GalánAcedo_etal_2019_IUCN_Poptrend_Realm.R
 
-[201/611] Running: Heffner_etal_2015/Heffner_etal_2015_TableI.R
+[201/744] Running: GalánAcedo_etal_2019/GalánAcedo_etal_2019_Locomotion.R
 
-[202/611] Running: Heffner_etal_2016/Heffner_etal_2016_Table1.R
+[202/744] Running: GalánAcedo_etal_2019/GalánAcedo_etal_2019_TrophicGuild.R
 
-[203/611] Running: Heffner_etal_2020/Heffner_etal_2020_Figure3.R
+[203/744] Running: Gamba_etal_2015/Gamba_etal_2015_TableI.R
 
-[204/611] Running: Heffner_Heffner_1982/Heffner_Heffner_1982_ResultsText.R
+[204/744] Running: Gamba_etal_2015/Gamba_etal_2015_TableSII.R
 
-[205/611] Running: Heffner_Heffner_1985/Heffner_Heffner_1985_Resultstext.R
+[205/744] Running: Gamba_etal_2015/Gamba_etal_2015_TableSIII.R
 
-[206/611] Running: Heffner_Heffner_1992_a/Heffner_Heffner_1992_a_TABLE1.R
+[206/744] Running: Gamba_etal_2015/Gamba_etal_2015_TableSIV.R
 
-[207/611] Running: Heffner_Heffner_1992_c/Heffner_Heffner_1992_c_ResultsText.R
+[207/744] Running: Gamba_etal_2015/Gamba_etal_2015_TableSV.R
 
-[208/611] Running: Heffner_Heffner_1992_c/Heffner_Heffner_1992_c_TABLEI.R
+[208/744] Running: Gamba_etal_2015/Gamba_etal_2015_TableSVI.R
 
-[209/611] Running: Heffner_Heffner_2003/Heffner_Heffner_2003_Table19.1.R
+[209/744] Running: Gamba_etal_2015/Gamba_etal_2015_TableSVII.R
 
-[210/611] Running: Heffner_Heffner_2008/Heffner_Heffner_2008_ResultsText.R
+[210/744] Running: Gamba_etal_2015/Gamba_etal_2015_TableSVIII.R
 
-[211/611] Running: Heffner_Heffner_2010_b/Heffner_Heffner_2010_b_Table1.R
+[211/744] Running: Garey__2006/Garey__2006_Table3.R
 
-[212/611] Running: Heffner_Heffner_2010/Heffner_Heffner_2010_ResultsText.R
+[212/744] Running: Garey__2006/Garey__2006_Table4.R
 
-[213/611] Running: Heffner_Masterton_1975/Heffner_Masterton_1975_TableI.R
+[213/744] Running: Garey__2006/Garey__2006_Table5.R
 
-[214/611] Running: Heffner_Masterton_1983/Heffner_Masterton_1983_TableI.R
+[214/744] Running: Garey__2006/Garey__2006_Table6.R
 
-[215/611] Running: Heiss_etal_2004/Heiss_etal_2004_TABLE1.R
+[215/744] Running: Garwicz_etal_2009/Garwicz_etal_2009_TableS1.R
 
-[216/611] Running: Heldstab_etal_2016/Heldstab_etal_2016_TableS1.R
+[216/744] Running: Garwicz_etal_2009/Garwicz_etal_2009_TableS2.R
 
-[217/611] Running: HerculanoHouzel__2015/HerculanoHouzel__2015_Table1.R
+[217/744] Running: Genoud_etal_2018/Genoud_etal_2018_TableS2.R
 
-[218/611] Running: HerculanoHouzel__2015/HerculanoHouzel__2015_Table2.R
+[218/744] Running: Gillette_etal_1973/Gillette_etal_1973_ResultsText.R
 
-[219/611] Running: HerculanoHouzel_etal_2013/Herculano-Houzel_etal_2013_Table1-a.R
+[219/744] Running: Granatosky__2018/Granatosky__2018_TableS1.R
 
-[220/611] Running: HerculanoHouzel_etal_2013/Herculano-Houzel_etal_2013_Table1-b.R
+[220/744] Running: Grueter_etal_2013/Grueter_etal_2013_Table1.R
 
-[221/611] Running: HerculanoHouzel_etal_2015/HerculanoHouzel_etal_2015_Table1.R
+[221/744] Running: Grueter_etal_2013/Grueter_etal_2013_TableS1.R
 
-[222/611] Running: HerculanoHouzel_etal_2015/HerculanoHouzel_etal_2015_Table2.R
+[222/744] Running: Haarlem_etal_2026/Haarlem_etal_2026_CFFdataset.R
 
-[223/611] Running: HerculanoHouzel_etal_2015/HerculanoHouzel_etal_2015_Table3.R
+[223/744] Running: Hakeem_etal_2005/Hakeem_etal_2005_Table2.R
 
-[224/611] Running: HerculanoHouzel_etal_2015/HerculanoHouzel_etal_2015_Table4.R
+[224/744] Running: Hakeem_etal_2009/Hakeem_etal_2009_Table1.R
 
-[225/611] Running: HerculanoHouzel_etal_2015/HerculanoHouzel_etal_2015_Table5.R
+[225/744] Running: Halley_Krubitzer_2019/Halley_Krubitzer_2019_Figure1_source_audit.R
 
-[226/611] Running: HerculanoHouzel_etal_2016/HerculanoHouzel_etal_2016_Table2.R
+[226/744] Running: Hanson_etal_2018/Hanson_etal_2018_Table2.R
 
-[227/611] Running: HerculanoHouzel_etal_2020/HerculanoHouzel_etal_2020_TABLE1.R
+[227/744] Running: Hanson_etal_2018/Hanson_etal_2018_Table3.R
 
-[228/611] Running: HerculanoHouzel_etal_2020/HerculanoHouzel_etal_2020_TABLE2.R
+[228/744] Running: Hardus_etal_2009/Hardus_etal_2009_Table4.1.R
 
-[229/611] Running: Heuer_etal_2019/Heuer_etal_2019_S1.R
+[229/744] Running: Hardus_etal_2009/Hardus_etal_2009_Table4.2.R
 
-[230/611] Running: Heuer_etal_2019/Heuer_etal_2019_Table1_extract_snapshot.R
+[230/744] Running: Hardus_etal_2009/Hardus_etal_2009_Table4.3.R
 
-[231/611] Running: Heuer_etal_2019/Heuer_etal_2019_Table1.R
+[231/744] Running: Hardus_etal_2009/Hardus_etal_2009_Table4.4.R
 
-[232/611] Running: Heuer_etal_2023/Heuer_etal_2023_Data.R
+[232/744] Running: Hayssen_etal_1993/Hayssen_etal_1993_accounts.R
 
-[233/611] Running: HrvojMihic_etal_2026/HrvojMihic_etal_2026_SD.R
+[233/744] Running: Hayssen_etal_1993/Hayssen_etal_1993_references.R
 
-[234/611] Running: Hutsler_etal_2005/Hutsler_etal_2005_extract_snapshot.R
+[234/744] Running: Heesy__2004/Heesy__2004_Table1.R
 
-[235/611] Running: Hutsler_etal_2005/Hutsler_etal_2005_Figure3.R
+[235/744] Running: Heffner__1998/Heffner__1998_Table1.R
 
-[236/611] Running: Hutsler_etal_2005/Hutsler_etal_2005_Figure6.R
+[236/744] Running: Heffner__2004/Heffner__2004_Table1.R
 
-[237/611] Running: Hutsler_etal_2005/Hutsler_etal_2005_ReportedValues.R
+[237/744] Running: Heffner_etal_1969/Heffner_etal_1969_ResultsText.R
 
-[238/611] Running: Hutsler_etal_2005/Hutsler_etal_2005_Table1.R
+[238/744] Running: Heffner_etal_1994_a/Heffner_etal_1994_a_Figure1.R
 
-[239/611] Running: Isler_etal_2008/Isler_etal_2008_Table2.R
+[239/744] Running: Heffner_etal_1994_a/Heffner_etal_1994_a_Figure2.R
 
-[240/611] Running: Isler_etal_2008/Isler_etal_2008_Table7.R
+[240/744] Running: Heffner_etal_1994_b/Heffner_etal_1994_b_Figure3.R
 
-[241/611] Running: Isler_etal_2008/Isler_etal_2008_TableS1.R
+[241/744] Running: Heffner_etal_1994_c/Heffner_etal_1994_c_Table1.R
 
-[242/611] Running: Isler_etal_2008/Isler_etal_2008_TableS2.R
+[242/744] Running: Heffner_etal_2001/Heffner_etal_2001_ResultsText.R
 
-[243/611] Running: Isler_etal_2008/Isler_etal_2008_TableS3.R
+[243/744] Running: Heffner_etal_2003/Heffner_etal_2003_ResultsText.R
 
-[244/611] Running: Isler_etal_2008/Isler_etal_2008_Tree.nex.R
+[244/744] Running: Heffner_etal_2006/Heffner_etal_2006_ResultsText.R
 
-[245/611] Running: Iwaniuk_etal_1999/Iwaniuk_etal_1999_References.R
+[245/744] Running: Heffner_etal_2007/Heffner_etal_2007_Figure6.R
 
-[246/611] Running: Iwaniuk_etal_1999/Iwaniuk_etal_1999_Table1.R
+[246/744] Running: Heffner_etal_2008/Heffner_etal_2008_Table1.R
 
-[247/611] Running: Iwaniuk_etal_2001/Iwaniuk_etal_2001_Table1.R
+[247/744] Running: Heffner_etal_2010/Heffner_etal_2010_TableI.R
 
-[248/611] Running: Iwaniuk_etal_2001/Iwaniuk_etal_2001_Table2.R
+[248/744] Running: Heffner_etal_2013/Heffner_etal_2013_ResultsText.R
 
-[249/611] Running: Iwaniuk_etal_2001/Iwaniuk_etal_2001_Table3.R
+[249/744] Running: Heffner_etal_2014/Heffner_etal_2014_ResultsText.R
 
-[250/611] Running: Iwaniuk_etal_2001/Iwaniuk_etal_2001_Table4.R
+[250/744] Running: Heffner_etal_2015/Heffner_etal_2015_TableI.R
 
-[251/611] Running: Jackson_etal_1997/Jackson_etal_1997_ResultsText.R
+[251/744] Running: Heffner_etal_2016/Heffner_etal_2016_Table1.R
 
-[252/611] Running: Jacob_etal_2021/Jacob_etal_2021_extract_snapshot.R
+[252/744] Running: Heffner_etal_2020/Heffner_etal_2020_Figure3.R
 
-[253/611] Running: Jacob_etal_2021/Jacob_etal_2021_FIGURE4.R
+[253/744] Running: Heffner_Heffner_1982/Heffner_Heffner_1982_ResultsText.R
 
-[254/611] Running: Jacob_etal_2021/Jacob_etal_2021_TABLE1.R
+[254/744] Running: Heffner_Heffner_1985/Heffner_Heffner_1985_ResultsText.R
 
-[255/611] Running: Jacob_etal_2021/Jacob_etal_2021_TABLE2.R
+[255/744] Running: Heffner_Heffner_1992_a/Heffner_Heffner_1992_a_TABLE1.R
 
-[256/611] Running: Jacob_etal_2021/Jacob_etal_2021_TABLE3.R
+[256/744] Running: Heffner_Heffner_1992_c/Heffner_Heffner_1992_c_ResultsText.R
 
-[257/611] Running: Jacobs_etal_1997/Jacobs_etal_1997_Table1.R
+[257/744] Running: Heffner_Heffner_1992_c/Heffner_Heffner_1992_c_TABLEI.R
 
-[258/611] Running: Jacobs_etal_1997/Jacobs_etal_1997_Table2.R
+[258/744] Running: Heffner_Heffner_2003/Heffner_Heffner_2003_Table19.1.R
 
-[259/611] Running: Jacobs_etal_2001/Jacobs_etal_2001_Table1.R
+[259/744] Running: Heffner_Heffner_2008/Heffner_Heffner_2008_ResultsText.R
 
-[260/611] Running: Jacobs_etal_2001/Jacobs_etal_2001_Table2.R
+[260/744] Running: Heffner_Heffner_2010_b/Heffner_Heffner_2010_b_Table1.R
 
-[261/611] Running: Jacobs_etal_2015/Jacobs_etal_2015_Table1.R
+[261/744] Running: Heffner_Heffner_2010/Heffner_Heffner_2010_ResultsText.R
 
-[262/611] Running: Jacobs_etal_2015/Jacobs_etal_2015_Table3.R
+[262/744] Running: Heffner_Masterton_1975/Heffner_Masterton_1975_TableI.R
 
-[263/611] Running: Jacobs_etal_2015/Jacobs_etal_2015_Table4.R
+[263/744] Running: Heffner_Masterton_1983/Heffner_Masterton_1983_TableI.R
 
-[264/611] Running: Jacobs_etal_2016/Jacobs_etal_2016_Table1.R
+[264/744] Running: Heiss_etal_2004/Heiss_etal_2004_TABLE1.R
 
-[265/611] Running: Jacobs_etal_2018/Jacobs_etal_2018_extract_snapshot.R
+[265/744] Running: Heldstab_etal_2016/Heldstab_etal_2016_TableS1.R
 
-[266/611] Running: Jacobs_etal_2018/Jacobs_etal_2018_Table3.R
+[266/744] Running: HerculanoHouzel__2015/HerculanoHouzel__2015_Table1.R
 
-[267/611] Running: Jacobs_etal_2018/Jacobs_etal_2018_Table5.R
+[267/744] Running: HerculanoHouzel__2015/HerculanoHouzel__2015_Table2.R
 
-[268/611] Running: JardimMesseder_etal_2017/JardimMesseder_etal_2017_Table1.R
+[268/744] Running: HerculanoHouzel_etal_2007/HerculanoHouzel_etal_2007_Table1.R
 
-[269/611] Running: Johansen_etal_2024/Johansen_etal_2024_Table2.R
+[269/744] Running: HerculanoHouzel_etal_2013/Herculano-Houzel_etal_2013_Table1-a.R
 
-[270/611] Running: Johnson_etal_2016/Johnson_etal_2016_Table1.R
+[270/744] Running: HerculanoHouzel_etal_2013/Herculano-Houzel_etal_2013_Table1-b.R
 
-[271/611] Running: Jones_etal_2009/Jones_etal_2009_PanTHERIA1-0WR05Aug2008.txt.R
+[271/744] Running: HerculanoHouzel_etal_2015/HerculanoHouzel_etal_2015_Table1.R
 
-[272/611] Running: Jones_etal_2009/Jones_etal_2009_PanTHERIA1-0WR93Aug2008.txt.R
+[272/744] Running: HerculanoHouzel_etal_2015/HerculanoHouzel_etal_2015_Table2.R
 
-[273/611] Running: Jorstad_etal_2023/Jorstad_etal_2023_Table_S1_subclass_info.R
+[273/744] Running: HerculanoHouzel_etal_2015/HerculanoHouzel_etal_2015_Table3.R
 
-[274/611] Running: Jorstad_etal_2023/Jorstad_etal_2023_Table_S5_MERFISH.R
+[274/744] Running: HerculanoHouzel_etal_2015/HerculanoHouzel_etal_2015_Table4.R
 
-[275/611] Running: Jorstad_etal_2023/Jorstad_etal_2023_Table_S5_snRNA_EI.R
+[275/744] Running: HerculanoHouzel_etal_2015/HerculanoHouzel_etal_2015_Table5.R
 
-[276/611] Running: Jorstad_etal_2023/Jorstad_etal_2023_Table_S5_snRNA_prop.R
+[276/744] Running: HerculanoHouzel_etal_2016/HerculanoHouzel_etal_2016_Table2.R
 
-[277/611] Running: Jung_etal_2022/Jung_etal_2022_Reportedresults.R
+[277/744] Running: HerculanoHouzel_etal_2020/HerculanoHouzel_etal_2020_TABLE1.R
 
-[278/611] Running: Jung_etal_2022/Jung_etal_2022_TableS1.R
+[278/744] Running: HerculanoHouzel_etal_2020/HerculanoHouzel_etal_2020_TABLE2.R
 
-[279/611] Running: Jung_etal_2022/Jung_etal_2022_TableS2.R
+[279/744] Running: Heuer_etal_2019/Heuer_etal_2019_S1.R
 
-[280/611] Running: Kamiya_Pirlot_1980/Kamiya_Pirlot_1980_TABLE1.R
+[280/744] Running: Heuer_etal_2019/Heuer_etal_2019_Table1_extract_snapshot.R
 
-[281/611] Running: Kamiya_Pirlot_1988/Kamiya_Pirlot_1980_TABLE1.R
+[281/744] Running: Heuer_etal_2019/Heuer_etal_2019_Table1.R
 
-[282/611] Running: Karbowski__2007/Karbowski__2007_TablesS1-S23.R
+[282/744] Running: Heuer_etal_2023/Heuer_etal_2023_Data.R
 
-[283/611] Running: Karl_etal_2024/Karl_etal_2024_TABLE1.R
+[283/744] Running: Hiwatashi_etal_2011/Hiwatashi_etal_2011_TextResults.R
 
-[284/611] Running: Karlsen_Pakkenberg_2011/Karlsen_Pakkenberg_2011_reported_values.R
+[284/744] Running: Hofman__1985/Hofman__1985_Table1.R
 
-[285/611] Running: Karlsen_Pakkenberg_2011/Karlsen_Pakkenberg_2011_Table2.R
+[285/744] Running: Hohmann__1991/Hohmann__1991_Table10.R
 
-[286/611] Running: Kaskan_etal_2005/Kaskan_etal_2005_References.R
+[286/744] Running: Hohmann__1991/Hohmann__1991_Table11.R
 
-[287/611] Running: Kaskan_etal_2005/Kaskan_etal_2005_TableS1.R
+[287/744] Running: Hohmann__1991/Hohmann__1991_Table12.R
 
-[288/611] Running: Kaskan_etal_2005/Kaskan_etal_2005_TableS2.R
+[288/744] Running: Hohmann__1991/Hohmann__1991_Table3.R
 
-[289/611] Running: Kastak_Schusterman_1998/Kastak_Schusterman_1998_TablesI-II.R
+[289/744] Running: Hohmann__1991/Hohmann__1991_Table4.R
 
-[290/611] Running: Kastak_Schusterman_1999/Kastak_Schusterman_1999_ResultsText.R
+[290/744] Running: Hohmann__1991/Hohmann__1991_Table5.R
 
-[291/611] Running: Kastelein_etal_2010_b/Kastelein_etal_2010_b_TableI.R
+[291/744] Running: Hohmann__1991/Hohmann__1991_Table6.R
 
-[292/611] Running: Kaufman__2004/Kaufman__2004_TableA1.R
+[292/744] Running: Hohmann__1991/Hohmann__1991_Table7.R
 
-[293/611] Running: Kaufman__2004/Kaufman__2004_TableA10.R
+[293/744] Running: Hohmann__1991/Hohmann__1991_Table8.R
 
-[294/611] Running: Kaufman__2004/Kaufman__2004_TableA11.R
+[294/744] Running: Hohmann__1991/Hohmann__1991_Table9.R
 
-[295/611] Running: Kaufman__2004/Kaufman__2004_TableA12.R
+[295/744] Running: HrvojMihic_etal_2026/HrvojMihic_etal_2026_SD.R
 
-[296/611] Running: Kaufman__2004/Kaufman__2004_TableA13.R
+[296/744] Running: Huffman_etal_1999/Huffman_etal_1999_TABLE2.R
 
-[297/611] Running: Kaufman__2004/Kaufman__2004_TableA14.R
+[297/744] Running: Hutsler_etal_2005/Hutsler_etal_2005_extract_snapshot.R
 
-[298/611] Running: Kaufman__2004/Kaufman__2004_TableA15.R
+[298/744] Running: Hutsler_etal_2005/Hutsler_etal_2005_Figure3.R
 
-[299/611] Running: Kaufman__2004/Kaufman__2004_TableA2.R
+[299/744] Running: Hutsler_etal_2005/Hutsler_etal_2005_Figure6.R
 
-[300/611] Running: Kaufman__2004/Kaufman__2004_TableA3.R
+[300/744] Running: Hutsler_etal_2005/Hutsler_etal_2005_ReportedValues.R
 
-[301/611] Running: Kaufman__2004/Kaufman__2004_TableA4.R
+[301/744] Running: Hutsler_etal_2005/Hutsler_etal_2005_Table1.R
 
-[302/611] Running: Kaufman__2004/Kaufman__2004_TableA5.R
+[302/744] Running: Isler_etal_2008/Isler_etal_2008_Table2.R
 
-[303/611] Running: Kaufman__2004/Kaufman__2004_TableA6.R
+[303/744] Running: Isler_etal_2008/Isler_etal_2008_Table7.R
 
-[304/611] Running: Kaufman__2004/Kaufman__2004_TableA7.R
+[304/744] Running: Isler_etal_2008/Isler_etal_2008_TableS1.R
 
-[305/611] Running: Kaufman__2004/Kaufman__2004_TableA8.R
+[305/744] Running: Isler_etal_2008/Isler_etal_2008_TableS2.R
 
-[306/611] Running: Kaufman__2004/Kaufman__2004_TableA9.R
+[306/744] Running: Isler_etal_2008/Isler_etal_2008_TableS3.R
 
-[307/611] Running: Kazu_etal_2014/Kazu_etal_2014_Table1.R
+[307/744] Running: Isler_etal_2008/Isler_etal_2008_Tree.nex.R
 
-[308/611] Running: Kazu_etal_2015/Kazu_etal_2015_TABLE1.R
+[308/744] Running: Iwaniuk_etal_1999/Iwaniuk_etal_1999_References.R
 
-[309/611] Running: Kelly_etal_1986/Kelly_etal_1986_ResultsText.R
+[309/744] Running: Iwaniuk_etal_1999/Iwaniuk_etal_1999_Table1.R
 
-[310/611] Running: Kirk_Kay_2004/Kirk_Kay_2004_Table1.R
+[310/744] Running: Iwaniuk_etal_2001/Iwaniuk_etal_2001_Table1.R
 
-[311/611] Running: Kirk_Kay_2004/Kirk_Kay_2004_Table2.R
+[311/744] Running: Iwaniuk_etal_2001/Iwaniuk_etal_2001_Table2.R
 
-[312/611] Running: Koay_etal_1998_b/Koay_etal_1998_b_Resultstext.R
+[312/744] Running: Iwaniuk_etal_2001/Iwaniuk_etal_2001_Table3.R
 
-[313/611] Running: Koay_etal_1998/Koay_etal_1998_Figure6.R
+[313/744] Running: Iwaniuk_etal_2001/Iwaniuk_etal_2001_Table4.R
 
-[314/611] Running: Koay_etal_2002/Koay_etal_2002_Resultstext.R
+[314/744] Running: Jackson_etal_1997/Jackson_etal_1997_ResultsText.R
 
-[315/611] Running: Koay_etal_2003/Koay_etal_2003_ResultsText.R
+[315/744] Running: Jacob_etal_2021/Jacob_etal_2021_extract_snapshot.R
 
-[316/611] Running: Kochiyama_etal_2018/Kochiyama_etal_2018_ExtendedDataFigure4.R
+[316/744] Running: Jacob_etal_2021/Jacob_etal_2021_FIGURE4.R
 
-[317/611] Running: Kochiyama_etal_2018/Kochiyama_etal_2018_ExtendedDataTable1.R
+[317/744] Running: Jacob_etal_2021/Jacob_etal_2021_TABLE1.R
 
-[318/611] Running: Kochiyama_etal_2018/Kochiyama_etal_2018_ExtendedDataTable3.R
+[318/744] Running: Jacob_etal_2021/Jacob_etal_2021_TABLE2.R
 
-[319/611] Running: Kochiyama_etal_2018/Kochiyama_etal_2018_Figure3A.R
+[319/744] Running: Jacob_etal_2021/Jacob_etal_2021_TABLE3.R
 
-[320/611] Running: Kochiyama_etal_2018/Kochiyama_etal_2018_Figure3B.R
+[320/744] Running: Jacobs__2008/Jacobs__2008_Table1.R
 
-[321/611] Running: Kochiyama_etal_2018/Kochiyama_etal_2018_Figure3legend.R
+[321/744] Running: Jacobs__2008/Jacobs__2008_Table2.R
 
-[322/611] Running: Kochiyama_etal_2018/Kochiyama_etal_2018_FossilSpecimensText.R
+[322/744] Running: Jacobs__2009/Jacobs__2009_Table1.R
 
-[323/611] Running: Kochiyama_etal_2018/Kochiyama_etal_2018_reconcile_relative_volumes.R
+[323/744] Running: Jacobs_Deegan_1993/Jacobs_Deegan_1993_TextResults.R
 
-[324/611] Running: Krompecher_Lipak_1966/Krompecher_Lipak_1966_Table2.R
+[324/744] Running: Jacobs_Deegan_2001/Jacobs_Deegan_2001_TextResults.R
 
-[325/611] Running: Krubitzer_Kaas_1990/Krubitzer_Kaas_1990_Table1.R
+[325/744] Running: Jacobs_Deegan_2003/Jacobs_Deegan_2003_Table1.R
 
-[326/611] Running: Kruska__2014/Kruska__2014_Table2.R
+[326/744] Running: Jacobs_etal_1997/Jacobs_etal_1997_Table1.R
 
-[327/611] Running: Kruska__2014/Kruska__2014_Table3.R
+[327/744] Running: Jacobs_etal_1997/Jacobs_etal_1997_Table2.R
 
-[328/611] Running: Kruska__2014/Kruska__2014_Tables2–3.R
+[328/744] Running: Jacobs_etal_2001/Jacobs_etal_2001_Table1.R
 
-[329/611] Running: Kruska_Rohrs_1974/Kruska_Rohrs_1974_Table2.R
+[329/744] Running: Jacobs_etal_2001/Jacobs_etal_2001_Table2.R
 
-[330/611] Running: Kruska_Rohrs_1974/Kruska_Rohrs_1974_Table3.R
+[330/744] Running: Jacobs_etal_2002/Jacobs_etal_2002_Table1.R
 
-[331/611] Running: Kruska_Rohrs_1974/Kruska_Rohrs_1974_Tables2–3.R
+[331/744] Running: Jacobs_etal_2015/Jacobs_etal_2015_Table1.R
 
-[332/611] Running: Kverkova_etal_2018/Kverkova_etal_2018_Table1.R
+[332/744] Running: Jacobs_etal_2015/Jacobs_etal_2015_Table3.R
 
-[333/611] Running: Kverkova_etal_2018/Kverkova_etal_2018_TableS1.R
+[333/744] Running: Jacobs_etal_2015/Jacobs_etal_2015_Table4.R
 
-[334/611] Running: Kverkova_etal_2018/Kverkova_etal_2018_TableS5.R
+[334/744] Running: Jacobs_etal_2016/Jacobs_etal_2016_Table1.R
 
-[335/611] Running: Lassek_Rasmussen_1940/Lassek_Rasmussen_1940_Table1.R
+[335/744] Running: Jacobs_etal_2018/Jacobs_etal_2018_extract_snapshot.R
 
-[336/611] Running: Latimer__1942/Latimer__1942_TABLEI.R
+[336/744] Running: Jacobs_etal_2018/Jacobs_etal_2018_Table3.R
 
-[337/611] Running: Latimer__1956/Latimer__1956_Table2.R
+[337/744] Running: Jacobs_etal_2018/Jacobs_etal_2018_Table5.R
 
-[338/611] Running: Lewitus_etal_2013/Lewitus_etal_2013_TableA1.R
+[338/744] Running: Jacobs_etal_2019/Jacobs_etal_2019_TableS1.R
 
-[339/611] Running: Lewitus_etal_2014/Lewitus_etal_2014_ExternalDatabaseS1references.R
+[339/744] Running: Jacobs_etal_2019/Jacobs_etal_2019_TableS2.R
 
-[340/611] Running: Lewitus_etal_2014/Lewitus_etal_2014_ExternalDatabaseS1sources.R
+[340/744] Running: Jacobs_Neitz_1987/Jacobs_Neitz_1987_Table1.R
 
-[341/611] Running: Lewitus_etal_2014/Lewitus_etal_2014_TableS1.R
+[341/744] Running: JardimMesseder_etal_2017/JardimMesseder_etal_2017_Table1.R
 
-[342/611] Running: Lewitus_etal_2014/Lewitus_etal_2014_TableS8.R
+[342/744] Running: Johansen_etal_2024/Johansen_etal_2024_Table2.R
 
-[343/611] Running: Liu_etal_2016/Liu_etal_2016_TableS1.R
+[343/744] Running: Johnson_etal_2016/Johnson_etal_2016_Table1.R
 
-[344/611] Running: Lyamin_etal_2008/Lyamin_etal_2008_Table1.R
+[344/744] Running: Jones_etal_2009/Jones_etal_2009_definitions.R
 
-[345/611] Running: Lyamin_etal_2008/Lyamin_etal_2008_Table2.R
+[345/744] Running: Jones_etal_2009/Jones_etal_2009_PanTHERIA1-0WR05Aug2008.txt.R
 
-[346/611] Running: MacLarnon__1996/MacLarnon__1996_Table1.R
+[346/744] Running: Jones_etal_2009/Jones_etal_2009_PanTHERIA1-0WR93Aug2008.txt.R
 
-[347/611] Running: MacLeod__2000/MacLeod__2000_APPENDIXI.R
+[347/744] Running: Jones_etal_2009/Jones_etal_2009_reference_tables_definitions.R
 
-[348/611] Running: MacLeod_etal_2003/MacLeod_etal_2003_Table1.R
+[348/744] Running: Jones_etal_2009/Jones_etal_2009_references.R
 
-[349/611] Running: MacLeod_etal_2003/MacLeod_etal_2003_Table2.R
+[349/744] Running: Jones_etal_2009/Jones_etal_2009_WR05_vs_WR93_consistency.R
 
-[350/611] Running: Manger__2006/Manger__2006_Table1.R
+[350/744] Running: Jorstad_etal_2023/Jorstad_etal_2023_Table_S1_subclass_info.R
 
-[351/611] Running: ManyPrimates__2022/ManyPrimates__2022_speciespredictors.R
+[351/744] Running: Jorstad_etal_2023/Jorstad_etal_2023_Table_S5_MERFISH.R
 
-[352/611] Running: Matano__1986/Matano__1986_TableI.R
+[352/744] Running: Jorstad_etal_2023/Jorstad_etal_2023_Table_S5_snRNA_EI.R
 
-[353/611] Running: Matano__1992/Matano__1992_Table1.R
+[353/744] Running: Jorstad_etal_2023/Jorstad_etal_2023_Table_S5_snRNA_prop.R
 
-[354/611] Running: Matano__1992/Matano__1992_Table2.R
+[354/744] Running: Jung_etal_2022/Jung_etal_2022_Reportedresults.R
 
-[355/611] Running: Matano__1992/Matano__1992_Table3.R
+[355/744] Running: Jung_etal_2022/Jung_etal_2022_TableS1.R
 
-[356/611] Running: Matano__1992/Matano__1992_Table4.R
+[356/744] Running: Jung_etal_2022/Jung_etal_2022_TableS2.R
 
-[357/611] Running: Matano__2001/Matano__2001_TABLE2.R
+[357/744] Running: Kamilar_Cooper_2013/Kamilar_Cooper_2013_S2.R
 
-[358/611] Running: Matano_etal_1985_a/Matano_etal_1985_a_Table1.R
+[358/744] Running: Kamiya_Pirlot_1980/Kamiya_Pirlot_1980_TABLE1.R
 
-[359/611] Running: Matano_etal_1985_b/Matano_etal_1985_b_Table1.R
+[359/744] Running: Kamiya_Pirlot_1988/Kamiya_Pirlot_1980_TABLE1.R
 
-[360/611] Running: McDowell_etal_2024/McDowell_etal_2024_Table1.R
+[360/744] Running: Karbowski__2007/Karbowski__2007_TablesS1-S23.R
 
-[361/611] Running: MedinaGonzález__2026/MedinaGonzález__2026_SupplementaryFile1.R
+[361/744] Running: Karl_etal_2024/Karl_etal_2024_TABLE1.R
 
-[362/611] Running: MedinaGonzález__2026/MedinaGonzález__2026_SupplementaryFile2.R
+[362/744] Running: Karlsen_Pakkenberg_2011/Karlsen_Pakkenberg_2011_reported_values.R
 
-[363/611] Running: MedinaGonzález__2026/MedinaGonzález__2026_SupplementaryFile3.R
+[363/744] Running: Karlsen_Pakkenberg_2011/Karlsen_Pakkenberg_2011_Table2.R
 
-[364/611] Running: Møhl__1968/Møhl__1968_Table2.R
+[364/744] Running: Kaskan_etal_2005/Kaskan_etal_2005_References.R
 
-[365/611] Running: Mooney_etal_2012/Mooney_etal_2012_Table4.1.R
+[365/744] Running: Kaskan_etal_2005/Kaskan_etal_2005_TableS1.R
 
-[366/611] Running: Mooney_etal_2012/Mooney_etal_2012_Text.R
+[366/744] Running: Kaskan_etal_2005/Kaskan_etal_2005_TableS2.R
 
-[367/611] Running: Morgan_etal_2014/Morgan_etal_2014_DataS1.R
+[367/744] Running: Kastak_Schusterman_1998/Kastak_Schusterman_1998_TablesI-II.R
 
-[368/611] Running: Mota_etal_2019/Mota_etal_2019_SupplementaryTableS1.R
+[368/744] Running: Kastak_Schusterman_1999/Kastak_Schusterman_1999_ResultsText.R
 
-[369/611] Running: Mota_HerculanoHouzel_2015/Mota_HerculanoHouzel_2015_TableS1.R
+[369/744] Running: Kastelein_etal_2010_b/Kastelein_etal_2010_b_TableI.R
 
-[370/611] Running: Navarrete_etal_2016/Navarrete_etal_2016_Data.R
+[370/744] Running: Kaufman__2004/Kaufman__2004_TableA1.R
 
-[371/611] Running: Nguyen_etal_2019/Nguyen_etal_2019_Table2_extract_snapshot.R
+[371/744] Running: Kaufman__2004/Kaufman__2004_TableA10.R
 
-[372/611] Running: Nguyen_etal_2019/Nguyen_etal_2019_Table2.R
+[372/744] Running: Kaufman__2004/Kaufman__2004_TableA11.R
 
-[373/611] Running: Nimchinsky_etal_1999/Nimchinsky_etal_1999_Table1.R
+[373/744] Running: Kaufman__2004/Kaufman__2004_TableA12.R
 
-[374/611] Running: Nimchinsky_etal_1999/Nimchinsky_etal_1999_Table2.R
+[374/744] Running: Kaufman__2004/Kaufman__2004_TableA13.R
 
-[375/611] Running: Nudo_etal_1995/Nudo_etal_1995_extract_snapshot.R
+[375/744] Running: Kaufman__2004/Kaufman__2004_TableA14.R
 
-[376/611] Running: Nudo_etal_1995/Nudo_etal_1995_TABLE1.R
+[376/744] Running: Kaufman__2004/Kaufman__2004_TableA15.R
 
-[377/611] Running: Nudo_etal_1995/Nudo_etal_1995_TABLE2.R
+[377/744] Running: Kaufman__2004/Kaufman__2004_TableA2.R
 
-[378/611] Running: Nudo_etal_1995/Nudo_etal_1995_TABLE3.R
+[378/744] Running: Kaufman__2004/Kaufman__2004_TableA3.R
 
-[379/611] Running: Nudo_etal_1995/Nudo_etal_1995_TABLE4.R
+[379/744] Running: Kaufman__2004/Kaufman__2004_TableA4.R
 
-[380/611] Running: Nudo_etal_1995/Nudo_etal_1995_TABLE5.R
+[380/744] Running: Kaufman__2004/Kaufman__2004_TableA5.R
 
-[381/611] Running: Nudo_Masterton_1988/Nudo_Masterton_1988_TABLE1.R
+[381/744] Running: Kaufman__2004/Kaufman__2004_TableA6.R
 
-[382/611] Running: Nudo_Masterton_1990_III/Nudo_Masterton_1990_III_Resultstext.R
+[382/744] Running: Kaufman__2004/Kaufman__2004_TableA7.R
 
-[383/611] Running: Olkowicz_etal_2016/Olkowicz_etal_2016_DatasetS1.R
+[383/744] Running: Kaufman__2004/Kaufman__2004_TableA8.R
 
-[384/611] Running: Owren_etal_1988/Owren_etal_1988_Table1.R
+[384/744] Running: Kaufman__2004/Kaufman__2004_TableA9.R
 
-[385/611] Running: PalomeroGallagher_Zilles_2018/PalomeroGallagher_Zilles_2018_TableS3.R
+[385/744] Running: Kazu_etal_2014/Kazu_etal_2014_Table1.R
 
-[386/611] Running: Peruffo_etal_2019/Peruffo_etal_2019_Table2.R
+[386/744] Running: Kazu_etal_2015/Kazu_etal_2015_TABLE1.R
 
-[387/611] Running: Pettigrew_etal_1998/Pettigrew_etal_1998_Table1.R
+[387/744] Running: Kelly_etal_1986/Kelly_etal_1986_ResultsText.R
 
-[388/611] Running: Pettigrew_etal_1998/Pettigrew_etal_1998_Table2.R
+[388/744] Running: Kirk_Kay_2004/Kirk_Kay_2004_Table1.R
 
-[389/611] Running: Pettigrew_etal_1998/Pettigrew_etal_1998_Text.R
+[389/744] Running: Kirk_Kay_2004/Kirk_Kay_2004_Table2.R
 
-[390/611] Running: Pirlot__1981/Pirlot__1981_TABLEI.R
+[390/744] Running: Koay_etal_1998_b/Koay_etal_1998_b_ResultsText.R
 
-[391/611] Running: Pirlot__1981/Pirlot__1981_TABLEII.R
+[391/744] Running: Koay_etal_1998/Koay_etal_1998_Figure6.R
 
-[392/611] Running: Pirlot_Jiao_1985/Pirlot_Jiao_1985_Table1.R
+[392/744] Running: Koay_etal_2002/Koay_etal_2002_ResultsText.R
 
-[393/611] Running: Pirlot_Kamiya_1982/Pirlot_Kamiya_1982_Table1.R
+[393/744] Running: Koay_etal_2003/Koay_etal_2003_ResultsText.R
 
-[394/611] Running: Pirlot_Kamiya_1985/Pirlot_Kamiya_1985_Table1.R
+[394/744] Running: Kochiyama_etal_2018/Kochiyama_etal_2018_ExtendedDataFigure4.R
 
-[395/611] Running: Pirlot_Nelson_1978/Pirlot_Nelson_1978_TABLE3.R
+[395/744] Running: Kochiyama_etal_2018/Kochiyama_etal_2018_ExtendedDataTable1.R
 
-[396/611] Running: Powell_etal_2017/Powell_etal_2017_Dataset1.R
+[396/744] Running: Kochiyama_etal_2018/Kochiyama_etal_2018_ExtendedDataTable3.R
 
-[397/611] Running: Raghanti_etal_2008_a/Raghanti_etal_2008_a_Table2.R
+[397/744] Running: Kochiyama_etal_2018/Kochiyama_etal_2018_Figure3A.R
 
-[398/611] Running: Raghanti_etal_2008_b/Raghanti_etal_2008_b_Table2.R
+[398/744] Running: Kochiyama_etal_2018/Kochiyama_etal_2018_Figure3B.R
 
-[399/611] Running: Raghanti_etal_2008_c/Raghanti_etal_2008_c_Table2.R
+[399/744] Running: Kochiyama_etal_2018/Kochiyama_etal_2018_Figure3legend.R
 
-[400/611] Running: Raghanti_etal_2015/Raghanti_etal_2015_Table1.R
+[400/744] Running: Kochiyama_etal_2018/Kochiyama_etal_2018_FossilSpecimensText.R
 
-[401/611] Running: Ravizza_etal_1969/Ravizza_etal_1969_ResultsText.R
+[401/744] Running: Kochiyama_etal_2018/Kochiyama_etal_2018_reconcile_relative_volumes.R
 
-[402/611] Running: Ravizza_Masterton_1972/Ravizza_Masterton_1972_ResultsText.R
+[402/744] Running: Krompecher_Lipak_1966/Krompecher_Lipak_1966_Table2.R
 
-[403/611] Running: Reader_etal_2011/Reader_etal_2011_Data.R
+[403/744] Running: Krubitzer_etal_1997/Krubitzer_etal_1997_ResultsText.R
 
-[404/611] Running: Reep_etal_2007/Reep_etal_2007_Table1.R
+[404/744] Running: Krubitzer_Kaas_1990/Krubitzer_Kaas_1990_Table1.R
 
-[405/611] Running: Reyes_etal_2016/Reyes_etal_2016_Table1.R
+[405/744] Running: Kruska__2014/Kruska__2014_Table2.R
 
-[406/611] Running: Reyes_etal_2016/Reyes_etal_2016_Table2.R
+[406/744] Running: Kruska__2014/Kruska__2014_Table3.R
 
-[407/611] Running: Reyes_etal_2016/Reyes_etal_2016_Table3.R
+[407/744] Running: Kruska__2014/Kruska__2014_Tables2–3.R
 
-[408/611] Running: Ribeiro_etal_2013/Ribeiro_etal_2013_Table1.R
+[408/744] Running: Kruska_Rohrs_1974/Kruska_Rohrs_1974_Table2.R
 
-[409/611] Running: Ridgway__1990/Ridgway__1990_Table1.R
+[409/744] Running: Kruska_Rohrs_1974/Kruska_Rohrs_1974_Table3.R
 
-[410/611] Running: Rilling_Insel_1998/Rilling_Insel_1998_Table1.R
+[410/744] Running: Kruska_Rohrs_1974/Kruska_Rohrs_1974_Tables2–3.R
 
-[411/611] Running: Rilling_Insel_1999/Rilling_Insel_1999_Table1.R
+[411/744] Running: Kverkova_etal_2018/Kverkova_etal_2018_Table1.R
 
-[412/611] Running: Rivara_etal_2003/Rivara_etal_2003_Table1.R
+[412/744] Running: Kverkova_etal_2018/Kverkova_etal_2018_TableS1.R
 
-[413/611] Running: Rockel_etal_1980/Rockel_etal_1980_TABLE3.R
+[413/744] Running: Kverkova_etal_2018/Kverkova_etal_2018_TableS5.R
 
-[414/611] Running: Ruf_Geiser_2015/Ruf_Geiser_2015_Table1.R
+[414/744] Running: Lassek_Rasmussen_1940/Lassek_Rasmussen_1940_Table1.R
 
-[415/611] Running: Schenker_etal_2005/Schenker_etal_2005_Appendix1.R
+[415/744] Running: Latimer__1942/Latimer__1942_TABLEI.R
 
-[416/611] Running: Schenker_etal_2005/Schenker_etal_2005_Table1.R
+[416/744] Running: Latimer__1956/Latimer__1956_Table2.R
 
-[417/611] Running: Schleifenbaum__1973/Schleifenbaum__1973_Tables1-2_extract_snapshot.R
+[417/744] Running: Lewitus_etal_2012/Lewitus_etal_2012_Table1.R
 
-[418/611] Running: Schleifenbaum__1973/Schleifenbaum__1973_Tables1-2.R
+[418/744] Running: Lewitus_etal_2012/Lewitus_etal_2012_Table2.R
 
-[419/611] Running: Schmidt_etal_1984/Schmidt_etal_1984_text.R
+[419/744] Running: Lewitus_etal_2012/Lewitus_etal_2012_Table4.R
 
-[420/611] Running: Schniter_PenaherreraAguirre_2026/Schniter_PenaherreraAguirre_2026_data.R
+[420/744] Running: Lewitus_etal_2012/Lewitus_etal_2012_TableS1A.R
 
-[421/611] Running: Schusterman__1974/Schusterman__1974_Table1.R
+[421/744] Running: Lewitus_etal_2013/Lewitus_etal_2013_TableA1.R
 
-[422/611] Running: Schusterman__1981/Schusterman__1981_Table1.R
+[422/744] Running: Lewitus_etal_2014/Lewitus_etal_2014_ExternalDatabaseS1references.R
 
-[423/611] Running: Schusterman_Moore_1980/Schusterman_Moore_1980_ResultsText.R
+[423/744] Running: Lewitus_etal_2014/Lewitus_etal_2014_ExternalDatabaseS1sources.R
 
-[424/611] Running: Semendeferi_Damasio_2000/Semendeferi_Damasio_2000_Table2.R
+[424/744] Running: Lewitus_etal_2014/Lewitus_etal_2014_TableS1.R
 
-[425/611] Running: Semendeferi_etal_1998/Semendeferi_etal_1998_TABLE2.R
+[425/744] Running: Lewitus_etal_2014/Lewitus_etal_2014_TableS8.R
 
-[426/611] Running: Semendeferi_etal_1998/Semendeferi_etal_1998_TABLE4.R
+[426/744] Running: Liu_etal_2016/Liu_etal_2016_TableS1.R
 
-[427/611] Running: Semendeferi_etal_1998/Semendeferi_etal_1998_TABLE5.R
+[427/744] Running: Lukas_CluttonBrock/Lukas_CluttonBrock_2013_ReferencesforSupplementaryTable.R
 
-[428/611] Running: Semendeferi_etal_2001/Semendeferi_etal_2001_TABLE2.R
+[428/744] Running: Lukas_CluttonBrock/Lukas_CluttonBrock_2013_SupplementaryData.R
 
-[429/611] Running: Semendeferi_etal_2001/Semendeferi_etal_2001_TABLE3.R
+[429/744] Running: Lyamin_etal_2008/Lyamin_etal_2008_Table1.R
 
-[430/611] Running: Semendeferi_etal_2001/Semendeferi_etal_2001_TABLE4.R
+[430/744] Running: Lyamin_etal_2008/Lyamin_etal_2008_Table2.R
 
-[431/611] Running: Semendeferi_etal_2002/Semendeferi_etal_2002_Table1.R
+[431/744] Running: MacLarnon__1996/MacLarnon__1996_Table1.R
 
-[432/611] Running: Seymour_etal_2015/Seymour_etal_2015_TableS1.R
+[432/744] Running: MacLeod__2000/MacLeod__2000_APPENDIXI.R
 
-[433/611] Running: Seymour_etal_2017/Seymour_etal_2017_TableS1_snapshot_extract.R
+[433/744] Running: MacLeod_etal_2003/MacLeod_etal_2003_Table1.R
 
-[434/611] Running: Seymour_etal_2017/Seymour_etal_2017_TableS1.R
+[434/744] Running: MacLeod_etal_2003/MacLeod_etal_2003_Table2.R
 
-[435/611] Running: Seymour_etal_2019/Seymour_etal_2019_rspb20192208si002.R
+[435/744] Running: Manger__2006/Manger__2006_Table1.R
 
-[436/611] Running: Sherwood_etal_2003/Sherwood_etal_2003_Table1.R
+[436/744] Running: Manger_etal_2012/Manger_etal_2012_Table1.R
 
-[437/611] Running: Sherwood_etal_2004_I/Sherwood_etal_2004_I.R
+[437/744] Running: ManyPrimates__2022/build_manyprimates_items.R
 
-[438/611] Running: Sherwood_etal_2004/Sherwood_etal_2004_TABLEI.R
+[438/744] Running: ManyPrimates__2022/ManyPrimates__2022_speciespredictors.R
 
-[439/611] Running: Sherwood_etal_2004/Sherwood_etal_2004_unpublishedviaDeCasien.R
+[439/744] Running: ManyPrimates__2022/ManyPrimates__2022_STMperformance.R
 
-[440/611] Running: Sherwood_etal_2005/Sherwood_etal_2005_Table1.R
+[440/744] Running: ManyPrimates__2022/refresh_manyprimates_manifest.R
 
-[441/611] Running: Sherwood_etal_2006/Sherwood_etal_2006_Table2.R
+[441/744] Running: Matano__1986/Matano__1986_TableI.R
 
-[442/611] Running: Smaers_etal_2010/Smaers_etal_2010_Table1_Stephan_specimen_data_via_Frahm.R
+[442/744] Running: Matano__1992/Matano__1992_Table1.R
 
-[443/611] Running: Smaers_etal_2010/Smaers_etal_2010_Table1.R
+[443/744] Running: Matano__1992/Matano__1992_Table2.R
 
-[444/611] Running: Smaers_etal_2011/Smaers_etal_2011_SupplementaryTable_extract.R
+[444/744] Running: Matano__1992/Matano__1992_Table3.R
 
-[445/611] Running: Smaers_etal_2011/Smaers_etal_2011_SupplementaryTable1.R
+[445/744] Running: Matano__1992/Matano__1992_Table4.R
 
-[446/611] Running: Smaers_etal_2011/Smaers_etal_2011_SupplementaryTable2.R
+[446/744] Running: Matano__2001/Matano__2001_TABLE2.R
 
-[447/611] Running: Smaers_etal_2017/_superseded_single_table/Smaers_etal_2017_TableS1.R
+[447/744] Running: Matano_etal_1985_a/Matano_etal_1985_a_Table1.R
 
-[448/611] Running: Smaers_etal_2017/Smaers_etal_2017_TableS1part1.R
+[448/744] Running: Matano_etal_1985_b/Matano_etal_1985_b_Table1.R
 
-[449/611] Running: Smaers_etal_2017/Smaers_etal_2017_TableS1part2.R
+[449/744] Running: Mayer_etal_2019/Mayer_etal_2019_Fig6.R
 
-[450/611] Running: Smaers_etal_2018/Smaers_etal_2018_Figure2-data1.R
+[450/744] Running: McComb_Semple_2005/McComb_Semple_2005_Table1.R
 
-[451/611] Running: Stephan_etal_1970/Stephan_etal_1970_crosstable_QA.R
+[451/744] Running: McDowell_etal_2024/McDowell_etal_2024_Table1.R
 
-[452/611] Running: Stephan_etal_1970/Stephan_etal_1970_Table1.R
+[452/744] Running: MedinaGonzález__2026/MedinaGonzález__2026_SupplementaryFile1.R
 
-[453/611] Running: Stephan_etal_1970/Stephan_etal_1970_Table2.R
+[453/744] Running: MedinaGonzález__2026/MedinaGonzález__2026_SupplementaryFile2.R
 
-[454/611] Running: Stephan_etal_1970/Stephan_etal_1970_Table3.R
+[454/744] Running: MedinaGonzález__2026/MedinaGonzález__2026_SupplementaryFile3.R
 
-[455/611] Running: Stephan_etal_1970/Stephan_etal_1970_Table4.R
+[455/744] Running: Møhl__1968/Møhl__1968_Table2.R
 
-[456/611] Running: Stephan_etal_1970/Stephan_etal_1970_Table5.R
+[456/744] Running: Mooney_etal_2012/Mooney_etal_2012_Table4.1.R
 
-[457/611] Running: Stephan_etal_1970/Stephan_etal_1970_Table6.R
+[457/744] Running: Mooney_etal_2012/Mooney_etal_2012_Text.R
 
-[458/611] Running: Stephan_etal_1970/Stephan_etal_1970.R
+[458/744] Running: Morgan_etal_2014/Morgan_etal_2014_DataS1.R
 
-[459/611] Running: Stephan_etal_1981/Stephan_etal_1981_crosstable_QA.R
+[459/744] Running: MorroghBernard_etal_2008/MorroghBernard_etal_2008_Figure8.1.R
 
-[460/611] Running: Stephan_etal_1981/Stephan_etal_1981_TableI.R
+[460/744] Running: MorroghBernard_etal_2008/MorroghBernard_etal_2008_Figure8.2.R
 
-[461/611] Running: Stephan_etal_1981/Stephan_etal_1981_TableII.R
+[461/744] Running: MorroghBernard_etal_2008/MorroghBernard_etal_2008_Table8.2.R
 
-[462/611] Running: Stephan_etal_1981/Stephan_etal_1981_TableIII.R
+[462/744] Running: MorroghBernard_etal_2008/MorroghBernard_etal_2008_Table8.3.R
 
-[463/611] Running: Stephan_etal_1981/Stephan_etal_1981_TableIV.R
+[463/744] Running: MorroghBernard_etal_2008/MorroghBernard_etal_2008_Table8.5.R
 
-[464/611] Running: Stephan_etal_1981/Stephan_etal_1981_TableIX.R
+[464/744] Running: MorroghBernard_etal_2008/MorroghBernard_etal_2008_Table8.6.R
 
-[465/611] Running: Stephan_etal_1981/Stephan_etal_1981_TableV.R
+[465/744] Running: Mota_etal_2019/Mota_etal_2019_SupplementaryTableS1.R
 
-[466/611] Running: Stephan_etal_1981/Stephan_etal_1981_TableVI.R
+[466/744] Running: Mota_HerculanoHouzel_2015/Mota_HerculanoHouzel_2015_TableS1.R
 
-[467/611] Running: Stephan_etal_1981/Stephan_etal_1981_TableVII.R
+[467/744] Running: Myhrvold_etal_2015/Myhrvold_etal_2015_cell_references.R
 
-[468/611] Running: Stephan_etal_1981/Stephan_etal_1981_TableVIII.R
+[468/744] Running: Myhrvold_etal_2015/Myhrvold_etal_2015_pantheria_crosswalk.R
 
-[469/611] Running: Stephan_etal_1981/Stephan_etal_1981_TableX.R
+[469/744] Running: Myhrvold_etal_2015/Myhrvold_etal_2015_references.R
 
-[470/611] Running: Stephan_etal_1981/Stephan_etal_1981_TableXI.R
+[470/744] Running: Navarrete_etal_2016/Navarrete_etal_2016_Data.R
 
-[471/611] Running: Stephan_etal_1981/Stephan_etal_1981_TableXII.R
+[471/744] Running: Nguyen_etal_2019/Nguyen_etal_2019_Table2_extract_snapshot.R
 
-[472/611] Running: Stephan_etal_1981/Stephan_etal_1981_TableXIII.R
+[472/744] Running: Nguyen_etal_2019/Nguyen_etal_2019_Table2.R
 
-[473/611] Running: Stephan_etal_1981/Stephan_etal_1981_TableXIV.R
+[473/744] Running: Nimchinsky_etal_1999/Nimchinsky_etal_1999_Table1.R
 
-[474/611] Running: Stephan_etal_1981/Stephan_etal_1981_TableXV.R
+[474/744] Running: Nimchinsky_etal_1999/Nimchinsky_etal_1999_Table2.R
 
-[475/611] Running: Stephan_etal_1981/Stephan_etal_1981_TableXVI.R
+[475/744] Running: Nudo_etal_1995/Nudo_etal_1995_extract_snapshot.R
 
-[476/611] Running: Stephan_etal_1982/Stephan_etal_1982_Table1.R
+[476/744] Running: Nudo_etal_1995/Nudo_etal_1995_TABLE1.R
 
-[477/611] Running: Stephan_etal_1984/Stephan_etal_1984_Table1.R
+[477/744] Running: Nudo_etal_1995/Nudo_etal_1995_TABLE2.R
 
-[478/611] Running: Stephan_etal_1987/Stephan_etal_1987_Table1.R
+[478/744] Running: Nudo_etal_1995/Nudo_etal_1995_TABLE3.R
 
-[479/611] Running: Stephan_etal_1987/Stephan_etal_1987_Table2.R
+[479/744] Running: Nudo_etal_1995/Nudo_etal_1995_TABLE4.R
 
-[480/611] Running: Stephan_etal_1988/Stephan_etal_1988_Table1.R
+[480/744] Running: Nudo_etal_1995/Nudo_etal_1995_TABLE5.R
 
-[481/611] Running: Stephan_etal_1991/Stephan_etal_1991_Table10.R
+[481/744] Running: Nudo_Masterton_1988/Nudo_Masterton_1988_TABLE1.R
 
-[482/611] Running: Stephan_etal_1991/Stephan_etal_1991_Table13.R
+[482/744] Running: Nudo_Masterton_1990_III/Nudo_Masterton_1990_III_ResultsText.R
 
-[483/611] Running: Stephan_etal_1991/Stephan_etal_1991_Table16.R
+[483/744] Running: Nudo_Masterton_1990_IV/Nudo_Masterton_1990_IV_Figure2A.R
 
-[484/611] Running: Stephan_etal_1991/Stephan_etal_1991_Table19.R
+[484/744] Running: Nunn_Samson_2018/Nunn_Samson_2018_SupplementaryTable1.R
 
-[485/611] Running: Stephan_etal_1991/Stephan_etal_1991_Table2.R
+[485/744] Running: Nunn_Samson_2018/Nunn_Samson_2018_Table1.R
 
-[486/611] Running: Stephan_etal_1991/Stephan_etal_1991_Table22.R
+[486/744] Running: Olkowicz_etal_2016/Olkowicz_etal_2016_DatasetS1.R
 
-[487/611] Running: Stephan_etal_1991/Stephan_etal_1991_Table25.R
+[487/744] Running: Owren_etal_1988/Owren_etal_1988_Table1.R
 
-[488/611] Running: Stephan_etal_1991/Stephan_etal_1991_Table28.R
+[488/744] Running: PalomeroGallagher_Zilles_2018/PalomeroGallagher_Zilles_2018_TableS3.R
 
-[489/611] Running: Stephan_etal_1991/Stephan_etal_1991_Table31.R
+[489/744] Running: Pasquaretta_etal_2014/Pasquaretta_etal_2014_Extendeddatatable5.R
 
-[490/611] Running: Stephan_etal_1991/Stephan_etal_1991_Table34.R
+[490/744] Running: Peruffo_etal_2019/Peruffo_etal_2019_Table2.R
 
-[491/611] Running: Stephan_etal_1991/Stephan_etal_1991_Table37.R
+[491/744] Running: Pettigrew_etal_1998/Pettigrew_etal_1998_Table1.R
 
-[492/611] Running: Stephan_etal_1991/Stephan_etal_1991_Table40.R
+[492/744] Running: Pettigrew_etal_1998/Pettigrew_etal_1998_Table2.R
 
-[493/611] Running: Stephan_etal_1991/Stephan_etal_1991_Table43.R
+[493/744] Running: Pettigrew_etal_1998/Pettigrew_etal_1998_Text.R
 
-[494/611] Running: Stephan_etal_1991/Stephan_etal_1991_Table46.R
+[494/744] Running: Pirlot__1981/Pirlot__1981_TABLEI.R
 
-[495/611] Running: Stephan_etal_1991/Stephan_etal_1991_Table49.R
+[495/744] Running: Pirlot__1981/Pirlot__1981_TABLEII.R
 
-[496/611] Running: Stephan_etal_1991/Stephan_etal_1991_Table5.R
+[496/744] Running: Pirlot_Jiao_1985/Pirlot_Jiao_1985_Table1.R
 
-[497/611] Running: Stephan_etal_1991/Stephan_etal_1991_Table52.R
+[497/744] Running: Pirlot_Kamiya_1982/Pirlot_Kamiya_1982_Table1.R
 
-[498/611] Running: Stephan_etal_1991/Stephan_etal_1991_Table55.R
+[498/744] Running: Pirlot_Kamiya_1985/Pirlot_Kamiya_1985_Table1.R
 
-[499/611] Running: Stephan_etal_1991/Stephan_etal_1991_Table58.R
+[499/744] Running: Pirlot_Nelson_1978/Pirlot_Nelson_1978_TABLE3.R
 
-[500/611] Running: Stephan_etal_1991/Stephan_etal_1991_Table61.R
+[500/744] Running: Powell_etal_2017/Powell_etal_2017_Dataset1.R
 
-[501/611] Running: Stephan_etal_1991/Stephan_etal_1991_Table64.R
+[501/744] Running: Preuss_Kaas_1996/Preuss_Kaas_1996_ResultsText.R
 
-[502/611] Running: Stephan_etal_1991/Stephan_etal_1991_Table65.R
+[502/744] Running: Raghanti_etal_2008_a/Raghanti_etal_2008_a_Table2.R
 
-[503/611] Running: Stephan_etal_1991/Stephan_etal_1991_Table68.R
+[503/744] Running: Raghanti_etal_2008_b/Raghanti_etal_2008_b_Table2.R
 
-[504/611] Running: Stephan_etal_1991/Stephan_etal_1991_Table71.R
+[504/744] Running: Raghanti_etal_2008_c/Raghanti_etal_2008_c_Table2.R
 
-[505/611] Running: Stephan_etal_1991/Stephan_etal_1991_Table8.R
+[505/744] Running: Raghanti_etal_2015/Raghanti_etal_2015_Table1.R
 
-[506/611] Running: Stephan_Pirlot_1970/Stephan_Pirlot_1970_Table1.R
+[506/744] Running: Ravizza_etal_1969/Ravizza_etal_1969_ResultsText.R
 
-[507/611] Running: Stimpson_etal_2015/Stimpson_etal_2015_TableS1.R
+[507/744] Running: Ravizza_Masterton_1972/Ravizza_Masterton_1972_ResultsText.R
 
-[508/611] Running: Stimpson_etal_2015/Stimpson_etal_2015_TableS2.R
+[508/744] Running: Reader_etal_2011/Reader_etal_2011_Data.R
 
-[509/611] Running: Taniguchi_etal_2022/Taniguchi_etal_2022_Findings.R
+[509/744] Running: Reep_etal_2007/Reep_etal_2007_Table1.R
 
-[510/611] Running: Terhune_Ronald_1972/Terhune_Ronald_1972_Table1.R
+[510/744] Running: Reep_OShea_1990/Reep_OShea_1990_Table1.R
 
-[511/611] Running: Terhune_Ronald_1975/Terhune_Ronald_1975_Table1.R
+[511/744] Running: Reep_OShea_1990/Reep_OShea_1990_Table3.R
 
-[512/611] Running: Thomas_etal_1988/Thomas_etal_1988_TableI.R
+[512/744] Running: Reep_OShea_1990/Reep_OShea_1990_Table4.R
 
-[513/611] Running: Todorov_etal_2019/Todorov_etal_2019_rspb20191712si001.R
+[513/744] Running: Reyes_etal_2016/Reyes_etal_2016_Table1.R
 
-[514/611] Running: Tschudin__1998/Tschudin__1998_Table2.5.R
+[514/744] Running: Reyes_etal_2016/Reyes_etal_2016_Table2.R
 
-[515/611] Running: Turner_etal_2016/Turner_etal_2016_Table1.R
+[515/744] Running: Reyes_etal_2016/Reyes_etal_2016_Table3.R
 
-[516/611] Running: Upham_etal_2019/Upham_etal_2019_DNAonlyMCC.R
+[516/744] Running: Ribeiro_etal_2013/Ribeiro_etal_2013_Table1.R
 
-[517/611] Running: VanEssen_Drury_1997/VanEssen_Drury_1997_Table1.R
+[517/744] Running: Ridgway__1990/Ridgway__1990_Table1.R
 
-[518/611] Running: Veilleux_Kirk_2014/Veilleux_Kirk_2014_SupplementalTable1.R
+[518/744] Running: Rilling_Insel_1998/Rilling_Insel_1998_Table1.R
 
-[519/611] Running: Walhovd_etal_2011/Walhovd_etal_2011.R
+[519/744] Running: Rilling_Insel_1999/Rilling_Insel_1999_Table1.R
 
-[520/611] Running: Weaver__2001/Weaver__2001_NotesforTableA-15.R
+[520/744] Running: Rivara_etal_2003/Rivara_etal_2003_Table1.R
 
-[521/611] Running: Weaver__2001/Weaver__2001_TableA-11.R
+[521/744] Running: Rockel_etal_1980/Rockel_etal_1980_TABLE3.R
 
-[522/611] Running: Weaver__2001/Weaver__2001_TableA-15.R
+[522/744] Running: Ruf_Geiser_2015/Ruf_Geiser_2015_Table1.R
 
-[523/611] Running: Weibel_etal_2004/Weibel_etal_2004_Table1.R
+[523/744] Running: Sacher_Staffeldt_1974/Sacher_Staffeldt_1974_Appendix.R
 
-[524/611] Running: Weibel_etal_2004/Weibel_etal_2004_TableA.1.R
+[524/744] Running: Sarko_etal_2011/Sarko_etal_2011_ResultsText.R
 
-[525/611] Running: Wenstrup__1984/Wenstrup__1984_Figures3-5.R
+[525/744] Running: Savage_etal_2004/Savage_etal_2004_Appendix1_extract_snapshot.R
 
-[526/611] Running: Wilman_etal_2014/Wilman_etal_2014_MamFuncDat.R
+[526/744] Running: Savage_etal_2004/Savage_etal_2004_Appendix1.R
 
-[527/611] Running: Wimberly_etal_2021/Wimberly_etal_2021_MammalGait.R
+[527/744] Running: Sawaguchi__1988/Sawaguchi__1988_Appendix.R
 
-[528/611] Running: Winkler_Bryant_2021/Winkler_Bryant_2021_Figure1.R
+[528/744] Running: Schenker_etal_2005/Schenker_etal_2005_Appendix1.R
 
-[529/611] Running: Young_etal_2013_b/Young_etal_2013_b_Table1.R
+[529/744] Running: Schenker_etal_2005/Schenker_etal_2005_Table1.R
 
-[530/611] Running: Young_etal_2013/Young_etal_2013_Table1.R
+[530/744] Running: Schleifenbaum__1973/Schleifenbaum__1973_Tables1-2_extract_snapshot.R
 
-[531/611] Running: Yuen_etal_2005/Yuen_etal_2005_TableI.R
+[531/744] Running: Schleifenbaum__1973/Schleifenbaum__1973_Tables1-2.R
 
-[532/611] Running: Zhang_Sejnowski_2000/Zhang_Sejnowski_2000_Figure2.R
+[532/744] Running: Schmidt_etal_1984/Schmidt_etal_1984_Text.R
 
-[533/611] Running: Zhang_Sejnowski_2000/Zhang_Sejnowski_2000_Figure3.R
+[533/744] Running: Schniter_PenaherreraAguirre_2026/Schniter_PenaherreraAguirre_2026_data.R
 
-[534/611] Running: Zilles_etal_1986/Zilles_etal_1986_Table1.R
+[534/744] Running: Schusterman__1974/Schusterman__1974_Table1.R
 
-[535/611] Running: Zilles_etal_1986/Zilles_etal_1986_Table2.R
+[535/744] Running: Schusterman__1981/Schusterman__1981_Table1.R
 
-[536/611] Running: Zilles_etal_1989/Zilles_etal_1989_Table1.R
+[536/744] Running: Schusterman_Moore_1980/Schusterman_Moore_1980_ResultsText.R
 
-[537/611] Running: Zilles_etal_2011/Zilles_etal_2011_TableS1.R
+[537/744] Running: Seelke_etal_2014/Seelke_etal_2014_Table1.R
 
-[538/611] Running: Zilles_etal_2011/Zilles_etal_2011_TableS2.R
+[538/744] Running: Seelke_etal_2014/Seelke_etal_2014_Table3.R
 
-[539/611] Running: Zilles_etal_2011/Zilles_etal_2011_TableS3.R
+[539/744] Running: Seelke_etal_2014/Seelke_etal_2014_Table4.R
 
-[540/611] Running: Zilles_etal_2013/Zilles_etal_2013_Table1.R
+[540/744] Running: Seelke_etal_2014/Seelke_etal_2014_Table5.R
 
-[541/611] Running: Zilles_Rehkämper_1988/Zilles_Rehkämper_1988_Table12-1.R
+[541/744] Running: Seelke_etal_2016/Seelke_etal_2016_Table2.R
 
-[542/611] Running: Zilles_Rehkämper_1988/Zilles_Rehkämper_1988_Table12-2.R
+[542/744] Running: Semendeferi_Damasio_2000/Semendeferi_Damasio_2000_Table2.R
 
-[543/611] Running: Zilles_Rehkämper_1988/Zilles_Rehkämper_1988_Table12-3.R
+[543/744] Running: Semendeferi_etal_1998/Semendeferi_etal_1998_TABLE2.R
 
-[544/611] Running: Zilles_Rehkämper_1988/Zilles_Rehkämper_1988_text.R
+[544/744] Running: Semendeferi_etal_1998/Semendeferi_etal_1998_TABLE4.R
 
-[545/611] Running: ____EvoM1_TraitTable/EvoM1_read_cellcounts_data.R
+[545/744] Running: Semendeferi_etal_1998/Semendeferi_etal_1998_TABLE5.R
 
-[546/611] Running: ____EvoM1_TraitTable/EvoM1_read_corticospinal_terminations.R
+[546/744] Running: Semendeferi_etal_2001/Semendeferi_etal_2001_TABLE2.R
 
-[547/611] Running: ____EvoM1_TraitTable/EvoM1_read_dexterity_baker.R
+[547/744] Running: Semendeferi_etal_2001/Semendeferi_etal_2001_TABLE3.R
 
-[548/611] Running: ____EvoM1_TraitTable/EvoM1_read_dexterity_corticospinal_eco.R
+[548/744] Running: Semendeferi_etal_2001/Semendeferi_etal_2001_TABLE4.R
 
-[549/611] Running: ____EvoM1_TraitTable/EvoM1_read_dexterity_corticospinal.R
+[549/744] Running: Semendeferi_etal_2002/Semendeferi_etal_2002_Table1.R
 
-[550/611] Running: ____EvoM1_TraitTable/EvoM1_read_diet.R
+[550/744] Running: Seymour_etal_2015/Seymour_etal_2015_TableS1.R
 
-[551/611] Running: ____EvoM1_TraitTable/EvoM1_read_gait_excursion_medina.R
+[551/744] Running: Seymour_etal_2017/Seymour_etal_2017_TableS1_snapshot_extract.R
 
-[552/611] Running: ____EvoM1_TraitTable/EvoM1_read_gait.R
+[552/744] Running: Seymour_etal_2017/Seymour_etal_2017_TableS1.R
 
-[553/611] Running: ____EvoM1_TraitTable/EvoM1_read_gyrification_etc.R
+[553/744] Running: Seymour_etal_2019/Seymour_etal_2019_rspb20192208si002.R
 
-[554/611] Running: ____EvoM1_TraitTable/EvoM1_read_hand_liu.R
+[554/744] Running: Sherwood_etal_2003/Sherwood_etal_2003_Table1.R
 
-[555/611] Running: ____EvoM1_TraitTable/EvoM1_read_handedness.R
+[555/744] Running: Sherwood_etal_2004_I/Sherwood_etal_2004_I.R
 
-[556/611] Running: ____EvoM1_TraitTable/EvoM1_read_ILAs.R
+[556/744] Running: Sherwood_etal_2004/Sherwood_etal_2004_TABLEI.R
 
-[557/611] Running: ____EvoM1_TraitTable/EvoM1_read_innovation_reader.R
+[557/744] Running: Sherwood_etal_2004/Sherwood_etal_2004_unpublishedviaDeCasien.R
 
-[558/611] Running: ____EvoM1_TraitTable/EvoM1_read_locomotion.R
+[558/744] Running: Sherwood_etal_2005/Sherwood_etal_2005_Table1.R
 
-[559/611] Running: ____EvoM1_TraitTable/EvoM1_read_manipulation.R
+[559/744] Running: Sherwood_etal_2006/Sherwood_etal_2006_Table2.R
 
-[560/611] Running: ____EvoM1_TraitTable/EvoM1_read_sleep.R
+[560/744] Running: Sherwood_etal_2009/Sherwood_etal_2009_Table1.R
 
-[561/611] Running: ____EvoM1_TraitTable/EvoM1_read_v1_karl.R
+[561/744] Running: Sherwood_etal_2009/Sherwood_etal_2009_Table3.R
 
-[562/611] Running: ____EvoM1_TraitTable/EvoM1_read_vocal_manyprimates.R
+[562/744] Running: Shoshani_etal_2006/Shoshani_etal_2006_Table1.R
 
-[563/611] Running: ____EvoM1_TraitTable/EvoM1_read_vocal_schniter.R
+[563/744] Running: Smaers_etal_2010/Smaers_etal_2010_Table1_Stephan_specimen_data_via_Frahm.R
 
-[564/611] Running: ____EvoM1_TraitTable/EvoM1Gen_NoEstimates.R
+[564/744] Running: Smaers_etal_2010/Smaers_etal_2010_Table1.R
 
-[565/611] Running: __ShinyApp/build_data.R
+[565/744] Running: Smaers_etal_2011/Smaers_etal_2011_SupplementaryTable_extract.R
 
-[566/611] Running: __merging_behaviour/behaviour_compiled.R
+[566/744] Running: Smaers_etal_2011/Smaers_etal_2011_SupplementaryTable1.R
 
-[567/611] Running: __merging_body_ecology/body_ecology_compiled.R
+[567/744] Running: Smaers_etal_2011/Smaers_etal_2011_SupplementaryTable2.R
 
-[568/611] Running: __merging_brain_mass/brain_mass_compiled.R
+[568/744] Running: Smaers_etal_2017/_superseded_single_table/Smaers_etal_2017_TableS1.R
 
-[569/611] Running: __merging_cell_morphology/cell_morphology_compiled.R
+[569/744] Running: Smaers_etal_2017/Smaers_etal_2017_TableS1part1.R
 
-[570/611] Running: __merging_cell_morphology/standardized_term.R
+[570/744] Running: Smaers_etal_2017/Smaers_etal_2017_TableS1part2.R
 
-[571/611] Running: __merging_cellcounts/cellcounts_compiled.R
+[571/744] Running: Smaers_etal_2018/Smaers_etal_2018_Figure2-data1.R
 
-[572/611] Running: __merging_cellcounts/standardized_term.R
+[572/744] Running: Stephan_etal_1970/Stephan_etal_1970_crosstable_QA.R
 
-[573/611] Running: __merging_cerebellar_folding/cerebellar_folding_compiled.R
+[573/744] Running: Stephan_etal_1970/Stephan_etal_1970_Table1.R
 
-[574/611] Running: __merging_cerebral_metabolic_rate/standardized_term.R
+[574/744] Running: Stephan_etal_1970/Stephan_etal_1970_Table2.R
 
-[575/611] Running: __merging_cortical_areas/cortical_areas_compiled.R
+[575/744] Running: Stephan_etal_1970/Stephan_etal_1970_Table3.R
 
-[576/611] Running: __merging_cortical_areas/standardized_term.R
+[576/744] Running: Stephan_etal_1970/Stephan_etal_1970_Table4.R
 
-[577/611] Running: __merging_cortical_layers/cortical_layers_compiled.R
+[577/744] Running: Stephan_etal_1970/Stephan_etal_1970_Table5.R
 
-[578/611] Running: __merging_fossil_brain_glucose/fossil_brain_glucose_compiled.R
+[578/744] Running: Stephan_etal_1970/Stephan_etal_1970_Table6.R
 
-[579/611] Running: __merging_gyrification/gyrification_compiled.R
+[579/744] Running: Stephan_etal_1970/Stephan_etal_1970.R
 
-[580/611] Running: __merging_gyrification/standardized_term.R
+[580/744] Running: Stephan_etal_1981/Stephan_etal_1981_crosstable_QA.R
 
-[581/611] Running: __merging_sensory/sensory_compiled.R
+[581/744] Running: Stephan_etal_1981/Stephan_etal_1981_TableI.R
 
-[582/611] Running: __merging_sensory/standardized_term.R
+[582/744] Running: Stephan_etal_1981/Stephan_etal_1981_TableII.R
 
-[583/611] Running: __merging_sleep/sleep_compiled.R
+[583/744] Running: Stephan_etal_1981/Stephan_etal_1981_TableIII.R
 
-[584/611] Running: __merging_sleep/standardized_term.R
+[584/744] Running: Stephan_etal_1981/Stephan_etal_1981_TableIV.R
 
-[585/611] Running: __merging_supplementary/supplementary_compiled.R
+[585/744] Running: Stephan_etal_1981/Stephan_etal_1981_TableIX.R
 
-[586/611] Running: __merging_trees/build_mammal_tree.R
+[586/744] Running: Stephan_etal_1981/Stephan_etal_1981_TableV.R
 
-[587/611] Running: __merging_trees/build_mammal_trees_sample.R
+[587/744] Running: Stephan_etal_1981/Stephan_etal_1981_TableVI.R
 
-[588/611] Running: __merging_volumes/_audit_missing_structures.R
+[588/744] Running: Stephan_etal_1981/Stephan_etal_1981_TableVII.R
 
-[589/611] Running: __merging_volumes/check_species_name_splits.R
+[589/744] Running: Stephan_etal_1981/Stephan_etal_1981_TableVIII.R
 
-[590/611] Running: __merging_volumes/crosspub_value_match.R
+[590/744] Running: Stephan_etal_1981/Stephan_etal_1981_TableX.R
 
-[591/611] Running: __merging_volumes/source_citations.R
+[591/744] Running: Stephan_etal_1981/Stephan_etal_1981_TableXI.R
 
-[592/611] Running: __merging_volumes/standardized_term.R
+[592/744] Running: Stephan_etal_1981/Stephan_etal_1981_TableXII.R
 
-[593/611] Running: __merging_volumes/volumes_compiled_select_DeCasien.R
+[593/744] Running: Stephan_etal_1981/Stephan_etal_1981_TableXIII.R
 
-[594/611] Running: __merging_volumes/volumes_compiled_select.R
+[594/744] Running: Stephan_etal_1981/Stephan_etal_1981_TableXIV.R
 
-[595/611] Running: __merging_volumes/volumes_compiled.R
+[595/744] Running: Stephan_etal_1981/Stephan_etal_1981_TableXV.R
 
-[596/611] Running: __merging_volumes/volumes_sample_metadata_Pirlot__1981.R
+[596/744] Running: Stephan_etal_1981/Stephan_etal_1981_TableXVI.R
 
-[597/611] Running: __Cytosplore_export/build_cytosplore_traits.R
+[597/744] Running: Stephan_etal_1982/Stephan_etal_1982_Table1.R
 
-[598/611] Running: __Finder/app.R
+[598/744] Running: Stephan_etal_1984/Stephan_etal_1984_Table1.R
 
-[599/611] Running: _keys/build_trait_authority.R
+[599/744] Running: Stephan_etal_1987/Stephan_etal_1987_Table1.R
 
-[600/611] Running: _keys/build_variable_catalog.R
+[600/744] Running: Stephan_etal_1987/Stephan_etal_1987_Table2.R
 
-[601/611] Running: _keys/build_variable_definitions.R
+[601/744] Running: Stephan_etal_1988/Stephan_etal_1988_Table1.R
 
-[602/611] Running: _keys/resolve_species.R
+[602/744] Running: Stephan_etal_1991/Stephan_etal_1991_Table10.R
 
-[603/611] Running: _tools/build_cortical_layer_definitions.R
+[603/744] Running: Stephan_etal_1991/Stephan_etal_1991_Table13.R
 
-[604/611] Running: _tools/build_coverage_index.R
+[604/744] Running: Stephan_etal_1991/Stephan_etal_1991_Table16.R
 
-[605/611] Running: _checks/check_cohort_coverage.R
+[605/744] Running: Stephan_etal_1991/Stephan_etal_1991_Table19.R
 
-[606/611] Running: _checks/check_item_name_resolution.R
+[606/744] Running: Stephan_etal_1991/Stephan_etal_1991_Table2.R
 
-[607/611] Running: _checks/check_laterality_doubling.R
+[607/744] Running: Stephan_etal_1991/Stephan_etal_1991_Table22.R
 
-[608/611] Running: _checks/check_trait_authority.R
+[608/744] Running: Stephan_etal_1991/Stephan_etal_1991_Table25.R
 
-[609/611] Running: _checks/find_csv_tsv_creators.R
+[609/744] Running: Stephan_etal_1991/Stephan_etal_1991_Table28.R
 
-[610/611] Running: _checks/find_orphan_R_scripts.R
+[610/744] Running: Stephan_etal_1991/Stephan_etal_1991_Table31.R
 
-[611/611] Running: _checks/registry_snapshot.R
-There were 19 warnings (use warnings() to see them)
+[611/744] Running: Stephan_etal_1991/Stephan_etal_1991_Table34.R
+
+[612/744] Running: Stephan_etal_1991/Stephan_etal_1991_Table37.R
+
+[613/744] Running: Stephan_etal_1991/Stephan_etal_1991_Table40.R
+
+[614/744] Running: Stephan_etal_1991/Stephan_etal_1991_Table43.R
+
+[615/744] Running: Stephan_etal_1991/Stephan_etal_1991_Table46.R
+
+[616/744] Running: Stephan_etal_1991/Stephan_etal_1991_Table49.R
+
+[617/744] Running: Stephan_etal_1991/Stephan_etal_1991_Table5.R
+
+[618/744] Running: Stephan_etal_1991/Stephan_etal_1991_Table52.R
+
+[619/744] Running: Stephan_etal_1991/Stephan_etal_1991_Table55.R
+
+[620/744] Running: Stephan_etal_1991/Stephan_etal_1991_Table58.R
+
+[621/744] Running: Stephan_etal_1991/Stephan_etal_1991_Table61.R
+
+[622/744] Running: Stephan_etal_1991/Stephan_etal_1991_Table64.R
+
+[623/744] Running: Stephan_etal_1991/Stephan_etal_1991_Table65.R
+
+[624/744] Running: Stephan_etal_1991/Stephan_etal_1991_Table68.R
+
+[625/744] Running: Stephan_etal_1991/Stephan_etal_1991_Table71.R
+
+[626/744] Running: Stephan_etal_1991/Stephan_etal_1991_Table8.R
+
+[627/744] Running: Stephan_Pirlot_1970/Stephan_Pirlot_1970_Table1.R
+
+[628/744] Running: Stimpson_etal_2015/Stimpson_etal_2015_TableS1.R
+
+[629/744] Running: Stimpson_etal_2015/Stimpson_etal_2015_TableS2.R
+
+[630/744] Running: Tan_Li_1999/Tan_Li_1999_Table1.R
+
+[631/744] Running: Taniguchi_etal_2022/Taniguchi_etal_2022_Findings.R
+
+[632/744] Running: Terhune_Ronald_1972/Terhune_Ronald_1972_Table1.R
+
+[633/744] Running: Terhune_Ronald_1975/Terhune_Ronald_1975_Table1.R
+
+[634/744] Running: Thomas_etal_1988/Thomas_etal_1988_TableI.R
+
+[635/744] Running: Todorov_etal_2019/Todorov_etal_2019_rspb20191712si001.R
+
+[636/744] Running: Tschudin__1998/Tschudin__1998_Table2.5.R
+
+[637/744] Running: Turner_etal_2016/Turner_etal_2016_Table1.R
+
+[638/744] Running: Upham_etal_2019/Upham_etal_2019_DNAonlyMCC.R
+
+[639/744] Running: VanEssen_Drury_1997/VanEssen_Drury_1997_CitedV1Ranges.R
+
+[640/744] Running: VanEssen_Drury_1997/VanEssen_Drury_1997_Table1.R
+
+[641/744] Running: Veilleux_Kirk_2014/Veilleux_Kirk_2014_SupplementalTable1.R
+
+[642/744] Running: Walhovd_etal_2011/Walhovd_etal_2011.R
+
+[643/744] Running: Walker_etal_2006/Walker_etal_2006_Table8.R
+
+[644/744] Running: Weaver__2001/Weaver__2001_NotesforTableA-15.R
+
+[645/744] Running: Weaver__2001/Weaver__2001_TableA-11.R
+
+[646/744] Running: Weaver__2001/Weaver__2001_TableA-15.R
+
+[647/744] Running: Weibel_etal_2004/Weibel_etal_2004_Table1.R
+
+[648/744] Running: Weibel_etal_2004/Weibel_etal_2004_TableA.1.R
+
+[649/744] Running: Weigl_2005/Weigl__2005_Records.R
+
+[650/744] Running: Weisbecker_Goswami_2010/Weisbecker_Goswami_2010_TableS6.R
+
+[651/744] Running: Wenstrup__1984/Wenstrup__1984_Figures3-5.R
+
+[652/744] Running: Wilman_etal_2014/Wilman_etal_2014_MamFuncDat.R
+
+[653/744] Running: Wimberly_etal_2021/Wimberly_etal_2021_MammalGait.R
+
+[654/744] Running: Winkler_Bryant_2021/Winkler_Bryant_2021_Figure1.R
+
+[655/744] Running: Young_etal_2013_b/Young_etal_2013_b_Table1.R
+
+[656/744] Running: Young_etal_2013/Young_etal_2013_ResultsTextSurface.R
+
+[657/744] Running: Young_etal_2013/Young_etal_2013_Table1.R
+
+[658/744] Running: Yuen_etal_2005/Yuen_etal_2005_TableI.R
+
+[659/744] Running: Zhang_Sejnowski_2000/Zhang_Sejnowski_2000_Figure2.R
+
+[660/744] Running: Zhang_Sejnowski_2000/Zhang_Sejnowski_2000_Figure3.R
+
+[661/744] Running: Zhu_etal_2023/Zhu_etal_2023_SupplementaryData1.R
+
+[662/744] Running: Zhu_etal_2023/Zhu_etal_2023_SupplementaryData3.R
+
+[663/744] Running: Zhu_etal_2023/Zhu_etal_2023_SupplementaryReferences.R
+
+[664/744] Running: Zilles_etal_1986/Zilles_etal_1986_Table1.R
+
+[665/744] Running: Zilles_etal_1986/Zilles_etal_1986_Table2.R
+
+[666/744] Running: Zilles_etal_1989/Zilles_etal_1989_Table1.R
+
+[667/744] Running: Zilles_etal_2011/Zilles_etal_2011_TableS1.R
+
+[668/744] Running: Zilles_etal_2011/Zilles_etal_2011_TableS2.R
+
+[669/744] Running: Zilles_etal_2011/Zilles_etal_2011_TableS3.R
+
+[670/744] Running: Zilles_etal_2013/Zilles_etal_2013_Table1.R
+
+[671/744] Running: Zilles_Rehkämper_1988/Zilles_Rehkämper_1988_Table12-1.R
+
+[672/744] Running: Zilles_Rehkämper_1988/Zilles_Rehkämper_1988_Table12-2.R
+
+[673/744] Running: Zilles_Rehkämper_1988/Zilles_Rehkämper_1988_Table12-3.R
+
+[674/744] Running: Zilles_Rehkämper_1988/Zilles_Rehkämper_1988_Text.R
+
+[675/744] Running: Zimmermann__2017/Zimmermann__2017_Table5.1.R
+
+[676/744] Running: ____EvoM1_TraitTable/EvoM1_read_cellcounts_data.R
+
+[677/744] Running: ____EvoM1_TraitTable/EvoM1_read_corticospinal_terminations.R
+
+[678/744] Running: ____EvoM1_TraitTable/EvoM1_read_dexterity_baker.R
+
+[679/744] Running: ____EvoM1_TraitTable/EvoM1_read_dexterity_corticospinal_eco.R
+
+[680/744] Running: ____EvoM1_TraitTable/EvoM1_read_dexterity_corticospinal.R
+
+[681/744] Running: ____EvoM1_TraitTable/EvoM1_read_diet.R
+
+[682/744] Running: ____EvoM1_TraitTable/EvoM1_read_gait_excursion_medina.R
+
+[683/744] Running: ____EvoM1_TraitTable/EvoM1_read_gait.R
+
+[684/744] Running: ____EvoM1_TraitTable/EvoM1_read_gyrification_etc.R
+
+[685/744] Running: ____EvoM1_TraitTable/EvoM1_read_hand_liu.R
+
+[686/744] Running: ____EvoM1_TraitTable/EvoM1_read_handedness.R
+
+[687/744] Running: ____EvoM1_TraitTable/EvoM1_read_ILAs.R
+
+[688/744] Running: ____EvoM1_TraitTable/EvoM1_read_innovation_reader.R
+
+[689/744] Running: ____EvoM1_TraitTable/EvoM1_read_locomotion.R
+
+[690/744] Running: ____EvoM1_TraitTable/EvoM1_read_manipulation.R
+
+[691/744] Running: ____EvoM1_TraitTable/EvoM1_read_sleep.R
+
+[692/744] Running: ____EvoM1_TraitTable/EvoM1_read_stm_manyprimates.R
+
+[693/744] Running: ____EvoM1_TraitTable/EvoM1_read_v1_karl.R
+
+[694/744] Running: ____EvoM1_TraitTable/EvoM1_read_vocal_manyprimates.R
+
+[695/744] Running: ____EvoM1_TraitTable/EvoM1_read_vocal_schniter.R
+
+[696/744] Running: ____EvoM1_TraitTable/EvoM1Gen_NoEstimates.R
+
+[697/744] Running: __ShinyApp/build_data.R
+
+[698/744] Running: __merging_behaviour/behaviour_compiled.R
+
+[699/744] Running: __merging_body_ecology/body_ecology_compiled.R
+
+[700/744] Running: __merging_brain_mass/brain_mass_compiled.R
+
+[701/744] Running: __merging_cell_morphology/cell_morphology_compiled.R
+
+[702/744] Running: __merging_cell_morphology/standardized_term.R
+
+[703/744] Running: __merging_cellcounts/cellcounts_compiled.R
+
+[704/744] Running: __merging_cellcounts/standardized_term.R
+
+[705/744] Running: __merging_cerebellar_folding/cerebellar_folding_compiled.R
+
+[706/744] Running: __merging_cerebral_metabolic_rate/standardized_term.R
+
+[707/744] Running: __merging_cortical_areas/cortical_areas_compiled.R
+
+[708/744] Running: __merging_cortical_areas/relative_absolute_helpers.R
+
+[709/744] Running: __merging_cortical_areas/standardized_term.R
+
+[710/744] Running: __merging_cortical_layers/cortical_layers_compiled.R
+
+[711/744] Running: __merging_fossil_brain_glucose/fossil_brain_glucose_compiled.R
+
+[712/744] Running: __merging_gyrification/gyrification_compiled.R
+
+[713/744] Running: __merging_gyrification/standardized_term.R
+
+[714/744] Running: __merging_sensory/sensory_compiled.R
+
+[715/744] Running: __merging_sensory/standardized_term.R
+
+[716/744] Running: __merging_sleep/sleep_compiled.R
+
+[717/744] Running: __merging_sleep/standardized_term.R
+
+[718/744] Running: __merging_supplementary/supplementary_compiled.R
+
+[719/744] Running: __merging_trees/build_mammal_tree.R
+
+[720/744] Running: __merging_trees/build_mammal_trees_sample.R
+
+[721/744] Running: __merging_volumes/_audit_missing_structures.R
+
+[722/744] Running: __merging_volumes/check_species_name_splits.R
+
+[723/744] Running: __merging_volumes/crosspub_value_match.R
+
+[724/744] Running: __merging_volumes/source_citations.R
+
+[725/744] Running: __merging_volumes/standardized_term.R
+
+[726/744] Running: __merging_volumes/volumes_compiled_select_DeCasien.R
+
+[727/744] Running: __merging_volumes/volumes_compiled_select.R
+
+[728/744] Running: __merging_volumes/volumes_compiled.R
+
+[729/744] Running: __Cytosplore_export/build_cytosplore_traits.R
+
+[730/744] Running: _keys/build_trait_authority.R
+
+[731/744] Running: _keys/build_variable_catalog.R
+
+[732/744] Running: _keys/build_variable_definitions.R
+
+[733/744] Running: _keys/resolve_species.R
+
+[734/744] Running: _tools/build_cortical_layer_definitions.R
+
+[735/744] Running: _tools/build_coverage_index.R
+
+[736/744] Running: _checks/check_cohort_coverage.R
+
+[737/744] Running: _checks/check_item_name_resolution.R
+
+[738/744] Running: _checks/check_laterality_doubling.R
+
+[739/744] Running: _checks/check_trait_authority.R
+
+[740/744] Running: _checks/find_csv_tsv_creators.R
+
+[741/744] Running: _checks/registry_snapshot.R
+
+[742/744] Running: _checks/social_variables/check_zhu_coverage.R
+
+[743/744] Running: _checks/social_variables/compare_coverage.R
+
+[744/744] Running: _checks/social_variables/load_app.R
+There were 50 or more warnings (use warnings() to see the first 50)
 
 Finished. Log saved to:
  /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/script_execution_log.csv 
@@ -1259,10 +1532,10 @@ Finished. Log saved to:
 =====================================
 Finished!
 =====================================
-Total scripts: 637
-Successful:    592
-Failed:        19
-Skipped:       26
+Total scripts: 771
+Successful:    665
+Failed:        79
+Skipped:       27
 Not run:       0
 
 Failure log written to:
@@ -1271,111 +1544,289 @@ Failure log written to:
 Failed scripts:
 
                                                                                                                                                     script
- /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/BallesterosYáñez_etal_2006/BallesterosYáñez_etal_2006_Figure3A.R
- /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/BallesterosYáñez_etal_2006/BallesterosYáñez_etal_2006_Figure3B.R
- /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/BallesterosYáñez_etal_2006/BallesterosYáñez_etal_2006_Figure3C.R
-   /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/BallesterosYáñez_etal_2006/BallesterosYáñez_etal_2006_Table1.R
+                   /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Bowmaker_etal_1991/Bowmaker_etal_1991_Table1.R
+                   /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Bowmaker_etal_1991/Bowmaker_etal_1991_Table2.R
+               /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Campbell_Tobler_1984/Campbell_Tobler_1984_Table1.R
+              /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Deegan_Jacobs_2001/Deegan_Jacobs_2001_TextResults.R
+                      /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Dunn_Smaers_2018/Dunn_Smaers_2018_TableS1.R
                    /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Elston_etal_2005_a/Elston_etal_2005_a_Table3.R
                    /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Elston_etal_2005_a/Elston_etal_2005_a_Table4.R
                    /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Elston_etal_2005_a/Elston_etal_2005_a_Table5.R
                    /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Elston_etal_2005_a/Elston_etal_2005_a_Table6.R
+             /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/GalánAcedo_etal_2019/GalánAcedo_etal_2019_BodyMass.R
+         /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/GalánAcedo_etal_2019/GalánAcedo_etal_2019_DielActivity.R
+              /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/GalánAcedo_etal_2019/GalánAcedo_etal_2019_Habitat.R
+            /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/GalánAcedo_etal_2019/GalánAcedo_etal_2019_HomeRange.R
+  /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/GalánAcedo_etal_2019/GalánAcedo_etal_2019_IUCN_Poptrend_Realm.R
+           /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/GalánAcedo_etal_2019/GalánAcedo_etal_2019_Locomotion.R
+         /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/GalánAcedo_etal_2019/GalánAcedo_etal_2019_TrophicGuild.R
+                         /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Gamba_etal_2015/Gamba_etal_2015_TableI.R
+                       /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Gamba_etal_2015/Gamba_etal_2015_TableSII.R
+                      /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Gamba_etal_2015/Gamba_etal_2015_TableSIII.R
+                       /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Gamba_etal_2015/Gamba_etal_2015_TableSIV.R
+                        /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Gamba_etal_2015/Gamba_etal_2015_TableSV.R
+                       /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Gamba_etal_2015/Gamba_etal_2015_TableSVI.R
+                      /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Gamba_etal_2015/Gamba_etal_2015_TableSVII.R
+                     /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Gamba_etal_2015/Gamba_etal_2015_TableSVIII.R
+                     /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Grueter_etal_2013/Grueter_etal_2013_Table1.R
+                    /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Grueter_etal_2013/Grueter_etal_2013_TableS1.R
+                     /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hardus_etal_2009/Hardus_etal_2009_Table4.1.R
+                     /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hardus_etal_2009/Hardus_etal_2009_Table4.2.R
+                     /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hardus_etal_2009/Hardus_etal_2009_Table4.3.R
+                     /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hardus_etal_2009/Hardus_etal_2009_Table4.4.R
       /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heffner_Heffner_1992_c/Heffner_Heffner_1992_c_ResultsText.R
-                       /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Schmidt_etal_1984/Schmidt_etal_1984_text.R
+             /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel__2015/HerculanoHouzel__2015_Table1.R
+            /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hiwatashi_etal_2011/Hiwatashi_etal_2011_TextResults.R
+                            /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hohmann__1991/Hohmann__1991_Table10.R
+                            /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hohmann__1991/Hohmann__1991_Table11.R
+                            /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hohmann__1991/Hohmann__1991_Table12.R
+                             /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hohmann__1991/Hohmann__1991_Table3.R
+                             /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hohmann__1991/Hohmann__1991_Table4.R
+                             /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hohmann__1991/Hohmann__1991_Table5.R
+                             /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hohmann__1991/Hohmann__1991_Table6.R
+                             /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hohmann__1991/Hohmann__1991_Table7.R
+                             /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hohmann__1991/Hohmann__1991_Table8.R
+                             /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hohmann__1991/Hohmann__1991_Table9.R
+                               /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jacobs__2008/Jacobs__2008_Table1.R
+                               /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jacobs__2008/Jacobs__2008_Table2.R
+                               /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jacobs__2009/Jacobs__2009_Table1.R
+              /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jacobs_Deegan_1993/Jacobs_Deegan_1993_TextResults.R
+              /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jacobs_Deegan_2001/Jacobs_Deegan_2001_TextResults.R
+                   /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jacobs_Deegan_2003/Jacobs_Deegan_2003_Table1.R
+                       /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jacobs_etal_2002/Jacobs_etal_2002_Table1.R
+                      /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jacobs_etal_2019/Jacobs_etal_2019_TableS1.R
+                      /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jacobs_etal_2019/Jacobs_etal_2019_TableS2.R
+                     /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jacobs_Neitz_1987/Jacobs_Neitz_1987_Table1.R
+   /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jones_etal_2009/Jones_etal_2009_reference_tables_definitions.R
+                     /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kamilar_Cooper_2013/Kamilar_Cooper_2013_S2.R
+                    /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/ManyPrimates__2022/build_manyprimates_items.R
+                           /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Mayer_etal_2019/Mayer_etal_2019_Fig6.R
+                   /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/McComb_Semple_2005/McComb_Semple_2005_Table1.R
+    /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/MorroghBernard_etal_2008/MorroghBernard_etal_2008_Figure8.1.R
+    /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/MorroghBernard_etal_2008/MorroghBernard_etal_2008_Figure8.2.R
+     /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/MorroghBernard_etal_2008/MorroghBernard_etal_2008_Table8.2.R
+     /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/MorroghBernard_etal_2008/MorroghBernard_etal_2008_Table8.3.R
+     /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/MorroghBernard_etal_2008/MorroghBernard_etal_2008_Table8.5.R
+     /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/MorroghBernard_etal_2008/MorroghBernard_etal_2008_Table8.6.R
+          /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Nunn_Samson_2018/Nunn_Samson_2018_SupplementaryTable1.R
+                       /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Nunn_Samson_2018/Nunn_Samson_2018_Table1.R
+ /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Pasquaretta_etal_2014/Pasquaretta_etal_2014_Extendeddatatable5.R
+                       /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Schmidt_etal_1984/Schmidt_etal_1984_Text.R
                     /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1991/Stephan_etal_1991_Table71.R
-                   /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_body_ecology/body_ecology_compiled.R
+                                 /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Tan_Li_1999/Tan_Li_1999_Table1.R
+          /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/VanEssen_Drury_1997/VanEssen_Drury_1997_CitedV1Ranges.R
+             /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Young_etal_2013/Young_etal_2013_ResultsTextSurface.R
+                     /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Zimmermann__2017/Zimmermann__2017_Table5.1.R
                        /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_brain_mass/brain_mass_compiled.R
-                    /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/check_species_name_splits.R
              /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/volumes_compiled_select_DeCasien.R
-         /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/volumes_sample_metadata_Pirlot__1981.R
-                                                   /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__Finder/app.R
                              /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_item_name_resolution.R
-                                  /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/find_orphan_R_scripts.R
-  status
-  FAILED
-  FAILED
-  FAILED
-  FAILED
-  FAILED
-  FAILED
-  FAILED
-  FAILED
-  FAILED
-  FAILED
-  FAILED
-  FAILED
-  FAILED
-  FAILED
-  FAILED
-  FAILED
-  FAILED
-  FAILED
- TIMEOUT
+                    /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/social_variables/check_zhu_coverage.R
+                      /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/social_variables/compare_coverage.R
+                              /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/social_variables/load_app.R
+ status
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
+ FAILED
 
 Full execution log:
 /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/script_execution_log.csv 
 
 === Python check: _tools/audit_folders.py ===
 $ /Library/Frameworks/Python.framework/Versions/3.9/bin/python3 _tools/audit_folders.py
-registry data rows: 622
+registry data rows: 680
 
 ====================================================================================================
 1) NO PDF OF THE PAPER
 ====================================================================================================
-  (none)
+  Chivers__1984                    files=1   supp_pdf=0 frozen=0 derived=0 reg=0
+  Gautier__1988                    files=1   supp_pdf=0 frozen=0 derived=0 reg=0
+  Stensaas_etal_1974               files=1   supp_pdf=0 frozen=0 derived=0 reg=0
+  Terborgh__1983                   files=1   supp_pdf=0 frozen=0 derived=0 reg=0
 
 ====================================================================================================
 2) NO FROZEN SOURCE DATA IN FOLDER
 ====================================================================================================
   Babushina_etal_1991              files=1   derived=- reg=1 url=-
-  Braitenberg_Schüz_1998          files=1   derived=- reg=1 url=-
   Carlo_Stevens_2013               files=2   derived=- reg=2 url=https://doi.org/10.1073/pnas.1221398110
   Changizi_He_2005                 files=1   derived=- reg=5 url=-
+  Chivers__1984                    files=1   derived=- reg=0 url=-
   Deaner_etal_2007                 files=1   derived=- reg=0 url=-
   Dom_etal_1971                    files=1   derived=- reg=1 url=https://doi.org/10.1016/0022-510X(71)900
   Elston_Fujita_2014               files=1   derived=- reg=0 url=-
+  Feinberg_etal_1990               files=1   derived=- reg=0 url=-
+  Filiminoff_1932                  files=2   derived=- reg=0 url=-
+  Gautier__1988                    files=1   derived=- reg=0 url=-
   Halley_Krubitzer_2019            files=5   derived=['Halley_Krubitzer_2019_Figure1_source_audit.csv', 'Halley_Krubitzer_2019_Figure1_source_map.csv'] reg=1 url=https://doi.org/10.1016/j.conb.2018.12.0
+  Hayssen_etal_1993        files=67  derived=['Hayssen_etal_1993_pdf_slices.csv', 'Hayssen_etal_1993_contents.csv'] reg=1 url=https://www.cornellpress.cornell.edu/
   Heffner_Heffner_1992_b           files=1   derived=- reg=5 url=https://doi.org/10.1007/978-1-4612-2784-
   Heffner_Heffner_2018             files=1   derived=- reg=1 url=https://doi.org/10.1063/1.5038516
   Heffner_etal_1999                files=1   derived=- reg=1 url=https://doi.org/10.1037/0735-7036.113.3.
+  Henry_etal_2006                  files=2   derived=- reg=0 url=-
   Iwaniuk_etal_2000                files=2   derived=- reg=1 url=https://doi.org/10.1139/z00-023
+  Jacobs_Williams_2001             files=3   derived=- reg=2 url=https://doi.org/10.1093/cercor/11.6.558
   Johnson_etal_2002                files=2   derived=- reg=1 url=https://doi.org/10.1198/0162145027534791
   Ketten__2012                     files=1   derived=- reg=1 url=https://doi.org/10.1007/978-1-4419-7311-
+  Krubitzer_1995                   files=2   derived=- reg=0 url=-
+  Krubitzer_1998                   files=2   derived=- reg=0 url=-
+  Krubitzer_etal_1995              files=2   derived=- reg=0 url=-
+  Luethke_etal_1988                files=2   derived=- reg=0 url=-
+  Luethke_etal_1989                files=2   derived=- reg=0 url=-
+  Lyon_etal_1998                   files=2   derived=- reg=0 url=-
   MacLean_etal_2014                files=1   derived=- reg=0 url=-
   Mackes_etal_2020                 files=6   derived=['Mackes_etal_2020_ERABIS_derived.csv', 'Mackes_etal_2020_subcortical_derived.csv'] reg=3 url=-
+  Mayer_etal_2019                  files=6   derived=['Mayer_etal_2019_Fig6.csv', 'Mayer_etal_2019_Fig6_pdf_transcription.csv'] reg=1 url=https://doi.org/10.1523/JNEUROSCI.0556-1
   McGuire_Ratcliffe_2011           files=2   derived=- reg=1 url=https://doi.org/10.1098/rsbl.2010.0744
   Morelli_etal_2025                files=1   derived=- reg=1 url=-
-  Nudo_Masterton_1990_IV           files=1   derived=- reg=2 url=https://doi.org/10.1002/cne.902960405
   Reader_Laland_2002               files=2   derived=- reg=0 url=-
+  Ricklefs__2010                   files=3   derived=- reg=1 url=https://pmc.ncbi.nlm.nih.gov/articles/PM
   Rilling_Insel_1998               files=4   derived=['Rilling_Insel_1998_Table1.csv', 'rilling_insel_1998.xlsx'] reg=1 url=-
   Shultz_Dunbar_2010               files=2   derived=- reg=1 url=https://doi.org/10.1037/a0018894.supp
+  Stensaas_etal_1974               files=1   derived=- reg=0 url=-
+  Terborgh__1983                   files=1   derived=- reg=0 url=-
   Weaver__2005                     files=2   derived=- reg=0 url=-
   deJager_etal_2022                files=7   derived=['deJager_etal_2022_calibration_check.csv', 'deJager_etal_2022_calibration.csv', 'deJager_etal_2022_Table1.csv'] reg=1 url=-
+  deMagalhães_Costa_2009           files=2   derived=- reg=1 url=https://genomics.senescence.info/species
 
 ====================================================================================================
 2b) DERIVED DATA BUT NO FROZEN SOURCE (invariant-1 risk)
 ====================================================================================================
   Halley_Krubitzer_2019            files=5   derived=['Halley_Krubitzer_2019_Figure1_source_audit.csv', 'Halley_Krubitzer_2019_Figure1_source_map.csv']
+  Hayssen_etal_1993        files=67  derived=['Hayssen_etal_1993_pdf_slices.csv', 'Hayssen_etal_1993_contents.csv']
   Mackes_etal_2020                 files=6   derived=['Mackes_etal_2020_ERABIS_derived.csv', 'Mackes_etal_2020_subcortical_derived.csv']
+  Mayer_etal_2019                  files=6   derived=['Mayer_etal_2019_Fig6.csv', 'Mayer_etal_2019_Fig6_pdf_transcription.csv']
   Rilling_Insel_1998               files=4   derived=['Rilling_Insel_1998_Table1.csv', 'rilling_insel_1998.xlsx']
   deJager_etal_2022                files=7   derived=['deJager_etal_2022_calibration_check.csv', 'deJager_etal_2022_calibration.csv', 'deJager_etal_2022_Table1.csv']
 
 ====================================================================================================
 3) NO ROW IN __ReadMe.xlsx Sheet1
 ====================================================================================================
+  Bowmaker_etal_1991               files=17  paper_pdf=1 frozen=4 derived=4
+  Campbell_Tobler_1984             files=12  paper_pdf=1 frozen=2 derived=2
+  Chivers__1984                    files=1   paper_pdf=0 frozen=0 derived=0
+  Crile_Quiring_1940               files=9   paper_pdf=1 frozen=1 derived=2
   Deaner_etal_2007                 files=1   paper_pdf=1 frozen=0 derived=0
   Elston_Fujita_2014               files=1   paper_pdf=1 frozen=0 derived=0
+  Feinberg_etal_1990               files=1   paper_pdf=1 frozen=0 derived=0
+  Filiminoff_1932                  files=2   paper_pdf=1 frozen=0 derived=0
+  GalánAcedo_etal_2019             files=61  paper_pdf=1 frozen=15 derived=14
+  Gamba_etal_2015                  files=63  paper_pdf=1 frozen=34 derived=2
+  Gautier__1988                    files=1   paper_pdf=0 frozen=0 derived=0
+  Grueter_etal_2013                files=18  paper_pdf=1 frozen=6 derived=2
+  Hardus_etal_2009                 files=31  paper_pdf=1 frozen=8 derived=8
+  Henry_etal_2006                  files=2   paper_pdf=1 frozen=0 derived=0
+  Hiwatashi_etal_2011              files=18  paper_pdf=1 frozen=10 derived=2
+  Hohmann__1991                    files=73  paper_pdf=1 frozen=20 derived=20
+  Jacobs_Deegan_1993               files=11  paper_pdf=1 frozen=2 derived=2
+  Jacobs_Deegan_2003               files=10  paper_pdf=1 frozen=2 derived=2
+  Jacobs_Neitz_1987                files=11  paper_pdf=1 frozen=2 derived=2
+  Jacobs__2008                     files=17  paper_pdf=1 frozen=4 derived=4
+  Jacobs__2009                     files=11  paper_pdf=1 frozen=2 derived=2
+  Jacobs_etal_2002                 files=11  paper_pdf=1 frozen=2 derived=2
+  Jacobs_etal_2019                 files=24  paper_pdf=1 frozen=14 derived=0
+  Kamilar_Cooper_2013              files=12  paper_pdf=1 frozen=2 derived=2
+  Krubitzer_1995                   files=2   paper_pdf=1 frozen=0 derived=0
+  Krubitzer_1998                   files=2   paper_pdf=1 frozen=0 derived=0
+  Krubitzer_etal_1995              files=2   paper_pdf=1 frozen=0 derived=0
+  Luethke_etal_1988                files=2   paper_pdf=1 frozen=0 derived=0
+  Luethke_etal_1989                files=2   paper_pdf=1 frozen=0 derived=0
+  Lyon_etal_1998                   files=2   paper_pdf=1 frozen=0 derived=0
   MacLean_etal_2014                files=1   paper_pdf=1 frozen=0 derived=0
+  McComb_Semple_2005               files=11  paper_pdf=1 frozen=2 derived=2
+  MorroghBernard_etal_2008         files=57  paper_pdf=1 frozen=12 derived=12
+  Nunn_Samson_2018                 files=17  paper_pdf=1 frozen=6 derived=2
+  Pasquaretta_etal_2014            files=13  paper_pdf=1 frozen=3 derived=3
   Reader_Laland_2002               files=2   paper_pdf=1 frozen=0 derived=0
+  Shultz_Dunbar_2007               files=3   paper_pdf=1 frozen=1 derived=0
+  Stensaas_etal_1974               files=1   paper_pdf=0 frozen=0 derived=0
+  Tan_Li_1999                      files=10  paper_pdf=1 frozen=2 derived=2
+  Terborgh__1983                   files=1   paper_pdf=0 frozen=0 derived=0
   Weaver__2005                     files=2   paper_pdf=1 frozen=0 derived=0
+  Zimmermann__2017                 files=11  paper_pdf=1 frozen=2 derived=2
   vertebrate_opsin_explorer        files=71  paper_pdf=2 frozen=49 derived=0
 
-312 folders scanned; 287 clean on all three
+386 folders scanned; 321 clean on all three
 wrote /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/folder_audit.csv
 
 === Python check: _tools/check_naming.py ===
 $ /Library/Frameworks/Python.framework/Versions/3.9/bin/python3 _tools/check_naming.py
 repos checked      : PUB=/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data
-registry rows      : 622   canonical spellings: 321
+registry rows      : 680   canonical spellings: 402
 findings           : 416 in scope, 1 skipped as source/comparison files
    P2  code_string            3
    P2  data_value             300

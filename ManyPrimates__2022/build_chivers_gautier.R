@@ -1,0 +1,16 @@
+# Rebuild the seven new chapter tables and refresh only their distinct app labels.
+a<-grep("^--file=",commandArgs(FALSE),value=TRUE)
+stopifnot(length(a)==1)
+here<-dirname(normalizePath(sub("^--file=","",a[1])));repo<-dirname(here)
+catalog<-read.csv(file.path(here,"ManyPrimates_built_items.csv"))
+selected<-grepl("^(Chivers__1984|Gautier__1988)_",catalog$item)
+run<-function(p){status<-system2(file.path(R.home("bin"),"Rscript"),shQuote(p));if(status!=0)stop("Build failed: ",p)}
+Sys.setenv(DATASET_REGISTRY=file.path(here,"ManyPrimates_Chivers_Gautier_build_registry.xlsx"))
+for(p in catalog$reader[selected])run(file.path(repo,p))
+Sys.unsetenv("DATASET_REGISTRY")
+Sys.setenv(SUPPLEMENTARY_SOURCE_PUBLICATIONS="Chivers__1984;Gautier__1988")
+run(file.path(repo,"__merging_supplementary/supplementary_compiled.R"))
+Sys.unsetenv("SUPPLEMENTARY_SOURCE_PUBLICATIONS")
+file.copy(file.path(repo,"__merging_supplementary/supplementary_long.csv"),file.path(repo,"__ShinyApp/data/supplementary_long.csv"),overwrite=TRUE)
+run(file.path(repo,"_keys/build_variable_definitions.R"))
+run(file.path(repo,"_keys/build_trait_authority.R"))

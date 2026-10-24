@@ -8,7 +8,7 @@ Genus,Taxonomic genus.,,"text, 84 blank",primary,"FieldMR_SciDataPub.xls, sheet 
 SpeciesVerbatim,Species name exactly as it appears in the cited source.,,text,primary,"FieldMR_SciDataPub.xls, sheet Alldata",
 SpeciesAcceptedName,"Taxonomically-resolved accepted species name, when different from SpeciesVerbatim.",,"text, 283 blank (verbatim name accepted as-is)",primary,"FieldMR_SciDataPub.xls, sheet Alldata",
 FMR_kJ_d,Field metabolic rate.,kJ/day,"numeric, 20 blank",primary,"FieldMR_SciDataPub.xls, sheet Alldata",
-Mass_g,Body mass.,grams,numeric,primary,"FieldMR_SciDataPub.xls, sheet Alldata",
+BodyMass_g,Body mass.,grams,numeric,primary,"FieldMR_SciDataPub.xls, sheet Alldata",Renamed from the source workbook's 'Mass_g' so __merging_body_ecology's auto-harvester (which matches a body.?mass header pattern) picks this column up as a new mass source.
 Temp_C,Ambient temperature.,degrees Celsius,"numeric, 108 blank",primary,"FieldMR_SciDataPub.xls, sheet Alldata",
 Endotherm,Whether the species is an endotherm.,,"0=ectotherm (4,369 rows), 1=endotherm (268 rows)",primary,"FieldMR_SciDataPub.xls, sheet Alldata",
 Reference,"Shorthand citation for this record's source, author surname(s) + year.",,text key,primary,"FieldMR_SciDataPub.xls, sheet Alldata","Join against reference_tables/deCastro__2025_SciDataPub_references.csv on ref_key for the resolved full citation (DOI included). 169/192 unique keys (4,173/4,637 rows, 90%) resolve against the workbook's own DOI sheet; the rest are either absent from that sheet or could not be matched with confidence -- kept verbatim, not guessed (see that file's note column)."

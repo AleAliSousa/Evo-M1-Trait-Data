@@ -59,6 +59,22 @@ map <- read.csv(file.path(here, "supplementary_sources.csv"), stringsAsFactors =
                 check.names = FALSE, encoding = "UTF-8", na.strings = character(0), colClasses = "character")
 stopifnot(all(c("item", "species_col", "value_col", "Measure", "Units", "role", "aggregate") %in% names(map)))
 
+# Optional source-specific refresh preserves unrelated compiled records. It is
+# restricted to distinct labels so it cannot change an existing pooled measure.
+refresh_publications <- Sys.getenv("SUPPLEMENTARY_SOURCE_PUBLICATIONS", "")
+incremental <- nzchar(refresh_publications)
+if (incremental) {
+  selected <- map$source_publication %in% strsplit(refresh_publications, ";", fixed=TRUE)[[1]]
+  stopifnot(any(selected), all(map$label_policy[selected] == "distinct"))
+  refresh_labels <- paste(map$Measure[selected], map$Units[selected], sep="\r")
+  stopifnot(!any(refresh_labels %in% paste(map$Measure[!selected], map$Units[!selected], sep="\r")))
+  existing_long <- read.csv(file.path(here,"supplementary_long.csv"),check.names=FALSE,
+                            colClasses="character",na.strings=character(0),fileEncoding="UTF-8")
+  existing_unresolved <- read.csv(file.path(here,"supplementary_unresolved_species.csv"),
+                                  check.names=FALSE,colClasses="character",na.strings=character(0),fileEncoding="UTF-8")
+  map <- map[selected,,drop=FALSE]
+}
+
 # registry: item -> encoded public filename
 reg <- suppressWarnings(readxl::read_excel(file.path(repo, "__ReadMe.xlsx"), sheet = 1))
 enc_of <- setNames(as.character(reg[["Item encoded"]]), as.character(reg[["Item name"]]))
@@ -185,8 +201,13 @@ long <- pool[, c("Species", "measure_class", "Measure", "Units", "Value", "Value
                  "n_teams_primary", "primary_used", "Teams", "roles", "value_min", "value_max",
                  "species_printed", "accepted_name", "species_basis", "reidentified",
                  "n_specimens", "items", "label_policy")]
+if (incremental) {
+  keep <- !paste(existing_long$Measure,existing_long$Units,sep="\r") %in% refresh_labels
+  long <- rbind(existing_long[keep,,drop=FALSE],as.data.frame(long))
+}
 write.csv(long, file.path(here, "supplementary_long.csv"), row.names = FALSE, na = "", fileEncoding = "UTF-8")
 unres <- if (length(unresolved)) do.call(rbind, unresolved) else data.frame(item = character(0), printed = character(0))
+if (incremental) unres <- rbind(existing_unresolved[!existing_unresolved$item %in% map$item,,drop=FALSE],unres)
 write.csv(unres, file.path(here, "supplementary_unresolved_species.csv"), row.names = FALSE, fileEncoding = "UTF-8")
 message(sprintf("wrote supplementary_long.csv: %d rows, %d measures, %d species; %d unresolved printed names",
                 nrow(long), n_distinct(long$Measure), n_distinct(long$Species), nrow(unres)))

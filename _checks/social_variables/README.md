@@ -105,3 +105,7 @@ not proof of 814 social-data attributions); (3) add population-level marsupial a
 artiodactyl social-organization evidence; (4) target numerical group sizes for
 the nine EvoM1 species still lacking them. Keep each observation's population,
 adult/all-age denominator, aggregation statistic and wild/domestic context.
+
+## Population census follow-up (2026-10-23)
+
+See `PRIMARY_CENSUSES_2026-10-23.md` for the six-species outcome, population datasets, source limitations and coverage. Rebuild source tables with `build_population_censuses.py`; validate app outputs with `check_population_censuses.R BEFORE.rds AFTER.rds`.

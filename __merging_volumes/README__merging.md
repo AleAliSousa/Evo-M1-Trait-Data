@@ -1,5 +1,23 @@
 # Merging histologically-derived brain-structure volumes
 
+## Excluded: Heesy_etal_2011_Table1 (checked 2026-10-24)
+`Heesy_etal_2011_Table1`'s four volume columns (BrainVolume, OpticTractVolume, LGNVolume,
+V1Volume) were checked against this merge and are **not added**. Every one of its 84 rows cites a
+numbered footnote source (Stephan et al. 1981/1984/1991, Frahm et al. 1984, Bush & Allman 2004,
+etc.) rather than reporting an original measurement — the paper's own README documents this as
+`data_role = both`, with volumes specifically secondary. Cross-checking species+structure against
+`volumes_long.csv`: 57 of 84 species (68%) already carry a value for one of these four structures,
+sourced from the `Stephan_collection` team already Tier-1 in this merge. The remaining 27 species
+cite other secondary/tertiary sources not independently built here. Adding Heesy 2011 as a new
+Tier-2 "team" would average already-incorporated Stephan/Frahm values against a reprint of
+themselves — the same double-counting this merge's Tier-1/Tier-2 design exists to prevent (see
+`__merging_body_ecology`'s PanTHERIA-body-mass and `__merging_supplementary`'s Smaers-2018-volume
+exclusions for the same reasoning elsewhere in this repo). Only Heesy 2011's orbit-convergence
+values (`CONV_digitized_for_this_study = TRUE`, 8 species) are primary new measurements; those are
+merged in `__merging_supplementary` alongside the existing `Heesy__2004_Table1` orbit-convergence
+rows, not here.
+
+
 Pipeline for compiling the comparative brain **volume** dataset — the counterpart of
 `../__merging_cellcounts/`, built by copying that folder's structure. **One data type
 only**: volumes from sectioned, stained, shrinkage-corrected brains. (Cell-count /

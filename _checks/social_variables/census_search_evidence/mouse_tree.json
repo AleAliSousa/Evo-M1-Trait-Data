@@ -1,0 +1,935 @@
+{
+  "sha": "a2fd7d38284fc1ba01878a6c23449c9e9488b35b",
+  "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/trees/a2fd7d38284fc1ba01878a6c23449c9e9488b35b",
+  "tree": [
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "706e768dd64a2b28fda753489504c1953bb435cc",
+      "size": 5462,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/706e768dd64a2b28fda753489504c1953bb435cc"
+    },
+    {
+      "path": "audiomoth_environment.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "854ccc9386e7f4ec2095fa6d3242546aa5c8961e",
+      "size": 497,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/854ccc9386e7f4ec2095fa6d3242546aa5c8961e"
+    },
+    {
+      "path": "das_environment.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5fd5f83cf65bc06afd72d86c15ab1ebf033b0e98",
+      "size": 277,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/5fd5f83cf65bc06afd72d86c15ab1ebf033b0e98"
+    },
+    {
+      "path": "graphical_abstract_final_small.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "999369a35bbf2429a710d3fd55049de77638be47",
+      "size": 671921,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/999369a35bbf2429a710d3fd55049de77638be47"
+    },
+    {
+      "path": "notebooks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0a1bb8e6f864f0103e8a9cdb034703e4b8efefee",
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/trees/0a1bb8e6f864f0103e8a9cdb034703e4b8efefee"
+    },
+    {
+      "path": "notebooks/Figure 1.ipynb",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "440fb855129279b0e4f5b2684294dc51baabb9af",
+      "size": 16960239,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/440fb855129279b0e4f5b2684294dc51baabb9af"
+    },
+    {
+      "path": "notebooks/Figure 2.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8fbbf6b2b23c81243798bd086603cf7c5ef4ad9f",
+      "size": 2832447,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/8fbbf6b2b23c81243798bd086603cf7c5ef4ad9f"
+    },
+    {
+      "path": "notebooks/Figure 3.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e8104f56ac10d03cc4ebefc4a24db64372c6893",
+      "size": 2357423,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/5e8104f56ac10d03cc4ebefc4a24db64372c6893"
+    },
+    {
+      "path": "notebooks/Figure 4.ipynb",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "9adf3140be912e5f0faffc86721a5c8b8aaf06ee",
+      "size": 4413811,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/9adf3140be912e5f0faffc86721a5c8b8aaf06ee"
+    },
+    {
+      "path": "notebooks/Figure 5.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e652bbdd0b64048f558a2957539aab34a827bc77",
+      "size": 2076610,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/e652bbdd0b64048f558a2957539aab34a827bc77"
+    },
+    {
+      "path": "notebooks/Figure 6.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "45317353e5a426483ba8f0652f16bb9c526f20b9",
+      "size": 720401,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/45317353e5a426483ba8f0652f16bb9c526f20b9"
+    },
+    {
+      "path": "notebooks/Supplemental Figure 1.ipynb",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "4f53a4b7474a7850115980dd02f4fd8f371feefa",
+      "size": 767595,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/4f53a4b7474a7850115980dd02f4fd8f371feefa"
+    },
+    {
+      "path": "notebooks/Supplemental Figure 2.ipynb",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "259dd155b5b5d3dc10925e8c505724149efbedec",
+      "size": 8463399,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/259dd155b5b5d3dc10925e8c505724149efbedec"
+    },
+    {
+      "path": "notebooks/Supplemental Figure 3.ipynb",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "a7b8ed79ba92a3e9b219666b420a6ce682159620",
+      "size": 7478872,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/a7b8ed79ba92a3e9b219666b420a6ce682159620"
+    },
+    {
+      "path": "parameters",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b1ffcdf2e8ca58da4ee4c3955d5caefaaddc044b",
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/trees/b1ffcdf2e8ca58da4ee4c3955d5caefaaddc044b"
+    },
+    {
+      "path": "parameters/audio_files",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9cef8bdd86ba817813a287a9df322522a9fcf011",
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/trees/9cef8bdd86ba817813a287a9df322522a9fcf011"
+    },
+    {
+      "path": "parameters/audio_files/20220706-20220708_box22_moth00_20220708_065900.wav",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "943cbeb713e1749f7e24540e5896a7664c103021",
+      "size": 21120488,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/943cbeb713e1749f7e24540e5896a7664c103021"
+    },
+    {
+      "path": "parameters/barn_layout",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "236930318edc53cd3a07ed0187756005473e1142",
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/trees/236930318edc53cd3a07ed0187756005473e1142"
+    },
+    {
+      "path": "parameters/barn_layout/boxpos.csv",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "97314005568f783c34ad73db9581f486c2e927ef",
+      "size": 550,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/97314005568f783c34ad73db9581f486c2e927ef"
+    },
+    {
+      "path": "parameters/barn_layout/gates.csv",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "03db1d9858d2437d8af4ce0aa14532ae4e496c88",
+      "size": 68,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/03db1d9858d2437d8af4ce0aa14532ae4e496c88"
+    },
+    {
+      "path": "parameters/barn_layout/map.r",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "f8cefb5abef11a3d0b66a12114c32265bb4097a6",
+      "size": 934,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/f8cefb5abef11a3d0b66a12114c32265bb4097a6"
+    },
+    {
+      "path": "parameters/barn_layout/newbarrierpos.csv",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "3633f5640db5e301c014c143ffeacb9e8487a21c",
+      "size": 459,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/3633f5640db5e301c014c143ffeacb9e8487a21c"
+    },
+    {
+      "path": "parameters/images",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a1f3d8ff40630b4539dc8d55151324fd6719aea2",
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/trees/a1f3d8ff40630b4539dc8d55151324fd6719aea2"
+    },
+    {
+      "path": "parameters/images/audiomoth_in_case.jpeg",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "36998a086601636d188a3938a1c024b8e0d4d3bd",
+      "size": 6965755,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/36998a086601636d188a3938a1c024b8e0d4d3bd"
+    },
+    {
+      "path": "parameters/images/audiomoth_on_box.jpeg",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "6ed8583b2d58db5675acef294a5d3e36dd10753a",
+      "size": 8044986,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/6ed8583b2d58db5675acef294a5d3e36dd10753a"
+    },
+    {
+      "path": "parameters/images/barn_interior_with_audiomoths.jpeg",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "fcace7e0ba68f8801daae8510fc7cef1b763484c",
+      "size": 7027111,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/fcace7e0ba68f8801daae8510fc7cef1b763484c"
+    },
+    {
+      "path": "parameters/images/barn_map_location_scale_500m.jpeg",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "f0e8473f01655ae4f0fa50e2b943e8aeb67f754a",
+      "size": 1032370,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/f0e8473f01655ae4f0fa50e2b943e8aeb67f754a"
+    },
+    {
+      "path": "parameters/images/cartoon_panel_v1.jpeg",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "e20754fa4430c9698a33bbd43cd1b49ffec661b9",
+      "size": 1094937,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/e20754fa4430c9698a33bbd43cd1b49ffec661b9"
+    },
+    {
+      "path": "parameters/images/figure_4_alignment_schematic_final.jpeg",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "b96447ddc5fb45141539061ea6533be3f176455a",
+      "size": 83062,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/b96447ddc5fb45141539061ea6533be3f176455a"
+    },
+    {
+      "path": "parameters/images/mouse_with_box.jpeg",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "a9da655e27030db6b120a89f253e78fde04a023f",
+      "size": 8297095,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/a9da655e27030db6b120a89f253e78fde04a023f"
+    },
+    {
+      "path": "parameters/images/protective_case_closed.jpeg",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "2d1531656e9173417b329b6e2bc23ca546d77b89",
+      "size": 4563187,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/2d1531656e9173417b329b6e2bc23ca546d77b89"
+    },
+    {
+      "path": "parameters/images/protective_case_open.jpeg",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "3d5d00879645337b1f2756be168dbcd5e9fbea1d",
+      "size": 5358948,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/3d5d00879645337b1f2756be168dbcd5e9fbea1d"
+    },
+    {
+      "path": "parameters/images/segmentation_workflow_diagram.jpeg",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "03787b6f64984c9a03b0e47cac4ae5ebcdd8eeaf",
+      "size": 94414,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/03787b6f64984c9a03b0e47cac4ae5ebcdd8eeaf"
+    },
+    {
+      "path": "parameters/images/summer_barn.jpeg",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "e62217d389339d2e7122243ea52989be0b86f46a",
+      "size": 1428468,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/e62217d389339d2e7122243ea52989be0b86f46a"
+    },
+    {
+      "path": "parameters/images/two_mice_1_square_crop.jpeg",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "0d2b822a0f4ec3ea9becd6219b7f6e7890467705",
+      "size": 2594628,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/0d2b822a0f4ec3ea9becd6219b7f6e7890467705"
+    },
+    {
+      "path": "parameters/images/underside_of_protective_case.jpeg",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "5bb54ef61e6852ae7316a94e5fcdb5db51bed02c",
+      "size": 3291142,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/5bb54ef61e6852ae7316a94e5fcdb5db51bed02c"
+    },
+    {
+      "path": "parameters/json_files",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "332e254104f544f1e24f2ea7322ad5f9c8dc57a3",
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/trees/332e254104f544f1e24f2ea7322ad5f9c8dc57a3"
+    },
+    {
+      "path": "parameters/json_files/box_coordinates.json",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "9a6b42d77fe15093343b7286b433ebdc4717bd3b",
+      "size": 923,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/9a6b42d77fe15093343b7286b433ebdc4717bd3b"
+    },
+    {
+      "path": "parameters/json_files/boxes_recorded.json",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "40221ce5d0d8d8f2ec2f72f9d6540db3af6323a4",
+      "size": 5244,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/40221ce5d0d8d8f2ec2f72f9d6540db3af6323a4"
+    },
+    {
+      "path": "parameters/json_files/deployment_dates.json",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "4b8438fc4eb1eca78e1b83fd81ba7bb6990332f5",
+      "size": 1313,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/4b8438fc4eb1eca78e1b83fd81ba7bb6990332f5"
+    },
+    {
+      "path": "parameters/json_files/recording_durations.json",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "aeadbeb7af1eb70ef31acbf859b7dcfd9ebb2ec0",
+      "size": 25185,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/aeadbeb7af1eb70ef31acbf859b7dcfd9ebb2ec0"
+    },
+    {
+      "path": "parameters/json_files/recordings_by_box_20240618",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "d1c9fb1813520d0ba473f66d0c5048a937b33c38",
+      "size": 17805,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/d1c9fb1813520d0ba473f66d0c5048a937b33c38"
+    },
+    {
+      "path": "parameters/json_files/season_color_dict.json",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "5eeec203c015d20a213b3f5e7e2f05eef86e5252",
+      "size": 192,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/5eeec203c015d20a213b3f5e7e2f05eef86e5252"
+    },
+    {
+      "path": "parameters/json_files/vocalization_colors.json",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "180ce995b1ae315f58cc47e53a2cc1f6144d6d9e",
+      "size": 57,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/180ce995b1ae315f58cc47e53a2cc1f6144d6d9e"
+    },
+    {
+      "path": "setup.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "9a21e733df1c098dd47a4fabef09d8344aef53ae",
+      "size": 99,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/9a21e733df1c098dd47a4fabef09d8344aef53ae"
+    },
+    {
+      "path": "src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b5bf9addf928d0447a05b5d41ab9d534ea458883",
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/trees/b5bf9addf928d0447a05b5d41ab9d534ea458883"
+    },
+    {
+      "path": "src/__init__.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "src/__pycache__",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "90ee153fb7e588c3f2c85f8d46c1cb50654a6f2a",
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/trees/90ee153fb7e588c3f2c85f8d46c1cb50654a6f2a"
+    },
+    {
+      "path": "src/__pycache__/__init__.cpython-310.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e61e057cf3c658d97d8afeba18e34827dd25a55",
+      "size": 206,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/5e61e057cf3c658d97d8afeba18e34827dd25a55"
+    },
+    {
+      "path": "src/__pycache__/__init__.cpython-311.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1cdacba4ddaf9f731e9157977d310752592ae9ad",
+      "size": 222,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/1cdacba4ddaf9f731e9157977d310752592ae9ad"
+    },
+    {
+      "path": "src/__pycache__/__init__.cpython-38.pyc",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "87750531acf41f30bd328c92a9956c652412aed2",
+      "size": 147,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/87750531acf41f30bd328c92a9956c652412aed2"
+    },
+    {
+      "path": "src/__pycache__/__init__.cpython-39.pyc",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "c7cb184b6507c34c1f1af170cc91b3784b039190",
+      "size": 151,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/c7cb184b6507c34c1f1af170cc91b3784b039190"
+    },
+    {
+      "path": "src/__pycache__/annotation.cpython-310.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09cf49fbbb137c458a9bf32a0f29208b5f3cc180",
+      "size": 21103,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/09cf49fbbb137c458a9bf32a0f29208b5f3cc180"
+    },
+    {
+      "path": "src/__pycache__/annotation.cpython-311.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "238ddc42a46e45eed4b32fcc028999b179616ed1",
+      "size": 47236,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/238ddc42a46e45eed4b32fcc028999b179616ed1"
+    },
+    {
+      "path": "src/__pycache__/annotation.cpython-38.pyc",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "cd3724339646be7d402bfc59df11e5f5951d8ee1",
+      "size": 21923,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/cd3724339646be7d402bfc59df11e5f5951d8ee1"
+    },
+    {
+      "path": "src/__pycache__/annotation.cpython-39.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60344f9751b03cbc8436a3d13d59b93c2caeaef9",
+      "size": 21670,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/60344f9751b03cbc8436a3d13d59b93c2caeaef9"
+    },
+    {
+      "path": "src/__pycache__/ava.cpython-38.pyc",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "d8b619d6cf1294cd044550d730fd21c2424e9372",
+      "size": 8788,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/d8b619d6cf1294cd044550d730fd21c2424e9372"
+    },
+    {
+      "path": "src/__pycache__/ava.cpython-39.pyc",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "b6e5caa406bbc17d1c97ee34c10040815f78d1cd",
+      "size": 8640,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/b6e5caa406bbc17d1c97ee34c10040815f78d1cd"
+    },
+    {
+      "path": "src/__pycache__/cloudofmice.cpython-38.pyc",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "50e64cb9e622f3c68c8669ee99ccb70e71862300",
+      "size": 15439,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/50e64cb9e622f3c68c8669ee99ccb70e71862300"
+    },
+    {
+      "path": "src/__pycache__/cloudofmice.cpython-39.pyc",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "41016c146ef0ae284b7c7f21edcee27ca5863037",
+      "size": 15357,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/41016c146ef0ae284b7c7f21edcee27ca5863037"
+    },
+    {
+      "path": "src/__pycache__/evaluate.cpython-310.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e8de160252c2f1f0ac62644e805bf4455d4de5ed",
+      "size": 16863,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/e8de160252c2f1f0ac62644e805bf4455d4de5ed"
+    },
+    {
+      "path": "src/__pycache__/evaluate.cpython-311.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f340d37aae02b49a13d1e07a7806820347d55133",
+      "size": 35028,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/f340d37aae02b49a13d1e07a7806820347d55133"
+    },
+    {
+      "path": "src/__pycache__/evaluate.cpython-38.pyc",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "351db3377d9d17eb44de63aeaab0b31846017b4a",
+      "size": 13083,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/351db3377d9d17eb44de63aeaab0b31846017b4a"
+    },
+    {
+      "path": "src/__pycache__/evaluate.cpython-39.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa6082884fcef2601617a44a1e04e413eafbcec7",
+      "size": 17658,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/aa6082884fcef2601617a44a1e04e413eafbcec7"
+    },
+    {
+      "path": "src/__pycache__/features.cpython-311.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5101e656ed11df43785e02f55681af075f7feede",
+      "size": 21049,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/5101e656ed11df43785e02f55681af075f7feede"
+    },
+    {
+      "path": "src/__pycache__/features.cpython-38.pyc",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "a5cb396b904df693ec0c5b3509d0f77b0fbb5aff",
+      "size": 12117,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/a5cb396b904df693ec0c5b3509d0f77b0fbb5aff"
+    },
+    {
+      "path": "src/__pycache__/features.cpython-39.pyc",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "02c94ae112541bb34422eddf42d52aed5d3492a5",
+      "size": 12121,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/02c94ae112541bb34422eddf42d52aed5d3492a5"
+    },
+    {
+      "path": "src/__pycache__/filespaths.cpython-310.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "77518ce0878481ad01f8a4c4d481d44ed8dc0dba",
+      "size": 4545,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/77518ce0878481ad01f8a4c4d481d44ed8dc0dba"
+    },
+    {
+      "path": "src/__pycache__/filespaths.cpython-311.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "59b232f10dcee282624b377e1d5e755783ecf1cc",
+      "size": 7344,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/59b232f10dcee282624b377e1d5e755783ecf1cc"
+    },
+    {
+      "path": "src/__pycache__/filespaths.cpython-38.pyc",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "b84c07fbf97af1a5bd32e809292835f3394c1578",
+      "size": 4508,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/b84c07fbf97af1a5bd32e809292835f3394c1578"
+    },
+    {
+      "path": "src/__pycache__/filespaths.cpython-39.pyc",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "ddf7f1844fd01d50f1b3df6068149a5f964fe6c9",
+      "size": 4484,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/ddf7f1844fd01d50f1b3df6068149a5f964fe6c9"
+    },
+    {
+      "path": "src/__pycache__/modelselection.cpython-39.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d5de920587c8cea7627f3ad56f896dfbcd999e8",
+      "size": 18192,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/4d5de920587c8cea7627f3ad56f896dfbcd999e8"
+    },
+    {
+      "path": "src/__pycache__/parameters.cpython-310.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a42885cfcef89e07857b1c82d40f48f6647e62aa",
+      "size": 3305,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/a42885cfcef89e07857b1c82d40f48f6647e62aa"
+    },
+    {
+      "path": "src/__pycache__/parameters.cpython-311.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9264eb1c47dac7e763def0ba4f3a2bf640ebadc7",
+      "size": 5815,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/9264eb1c47dac7e763def0ba4f3a2bf640ebadc7"
+    },
+    {
+      "path": "src/__pycache__/parameters.cpython-38.pyc",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "7a4adafd465942372b9114a242f9bfa320138033",
+      "size": 3185,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/7a4adafd465942372b9114a242f9bfa320138033"
+    },
+    {
+      "path": "src/__pycache__/parameters.cpython-39.pyc",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "5fb41aee955d0e9d7ae7e7e6732a40a9f69a2566",
+      "size": 3232,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/5fb41aee955d0e9d7ae7e7e6732a40a9f69a2566"
+    },
+    {
+      "path": "src/__pycache__/plot.cpython-38.pyc",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "12fa6a6131ef823d5c45063a2e11a4da86ca1be6",
+      "size": 31329,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/12fa6a6131ef823d5c45063a2e11a4da86ca1be6"
+    },
+    {
+      "path": "src/__pycache__/plot.cpython-39.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a11ba36c60eaccd54d0df87db9dc53421176b6b1",
+      "size": 32073,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/a11ba36c60eaccd54d0df87db9dc53421176b6b1"
+    },
+    {
+      "path": "src/__pycache__/plotting.cpython-38.pyc",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "495b4f9045ebb89356758c46fa4ec626a3baa171",
+      "size": 14539,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/495b4f9045ebb89356758c46fa4ec626a3baa171"
+    },
+    {
+      "path": "src/__pycache__/plotting.cpython-39.pyc",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "699118057da3182b3a6b73fceffa1b0384519f5e",
+      "size": 17758,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/699118057da3182b3a6b73fceffa1b0384519f5e"
+    },
+    {
+      "path": "src/__pycache__/preprocess.cpython-38.pyc",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "040905fe1cbbd3a171ad4f224c9a4fd0d8bcbe64",
+      "size": 9486,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/040905fe1cbbd3a171ad4f224c9a4fd0d8bcbe64"
+    },
+    {
+      "path": "src/__pycache__/preprocess.cpython-39.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a53fedcae988b92af6cc322379c34d93b2eb3ed",
+      "size": 10115,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/7a53fedcae988b92af6cc322379c34d93b2eb3ed"
+    },
+    {
+      "path": "src/__pycache__/rfid.cpython-310.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "80f169da9980fe50a388c467f04591b59d02b5ee",
+      "size": 32053,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/80f169da9980fe50a388c467f04591b59d02b5ee"
+    },
+    {
+      "path": "src/__pycache__/rfid.cpython-311.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ddd06c9c6da85d913da7979a06647a050ea1749",
+      "size": 66222,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/9ddd06c9c6da85d913da7979a06647a050ea1749"
+    },
+    {
+      "path": "src/__pycache__/rfid.cpython-38.pyc",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "d30827ec740b8c899a7f442c3edf94dfa18ef69d",
+      "size": 30049,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/d30827ec740b8c899a7f442c3edf94dfa18ef69d"
+    },
+    {
+      "path": "src/__pycache__/rfid.cpython-39.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d32781179efda2a74ef03764bff57e1bf7d8878",
+      "size": 31881,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/1d32781179efda2a74ef03764bff57e1bf7d8878"
+    },
+    {
+      "path": "src/__pycache__/segmentation.cpython-310.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b4152a0a8ebf47868194c1b35ab63f2ea76b3fe9",
+      "size": 19759,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/b4152a0a8ebf47868194c1b35ab63f2ea76b3fe9"
+    },
+    {
+      "path": "src/__pycache__/segmentation.cpython-311.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b62b5c47b9438c9c13d45911f2456ed5c51cb4d",
+      "size": 34481,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/1b62b5c47b9438c9c13d45911f2456ed5c51cb4d"
+    },
+    {
+      "path": "src/__pycache__/segmentation.cpython-38.pyc",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "97ca4bcae914adc7180484b1cc972d8537a34c3b",
+      "size": 19806,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/97ca4bcae914adc7180484b1cc972d8537a34c3b"
+    },
+    {
+      "path": "src/__pycache__/segmentation.cpython-39.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d490616a77be6f8ad879f503f9477540c8a84f9e",
+      "size": 19807,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/d490616a77be6f8ad879f503f9477540c8a84f9e"
+    },
+    {
+      "path": "src/__pycache__/spectrogramming.cpython-310.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ffde3dd5a3c4e0562cef9538bf3763c00f5acdb",
+      "size": 22343,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/0ffde3dd5a3c4e0562cef9538bf3763c00f5acdb"
+    },
+    {
+      "path": "src/__pycache__/spectrogramming.cpython-311.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "786619f98c97f6a94e83c5c08d2bb4063ca98f7e",
+      "size": 36277,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/786619f98c97f6a94e83c5c08d2bb4063ca98f7e"
+    },
+    {
+      "path": "src/__pycache__/spectrogramming.cpython-38.pyc",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "db1cdc66ea70bed4d7e142e79f5a032cc1d8ae43",
+      "size": 22517,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/db1cdc66ea70bed4d7e142e79f5a032cc1d8ae43"
+    },
+    {
+      "path": "src/__pycache__/spectrogramming.cpython-39.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8466e9ff00e98e38791def1aecd401721c73d51d",
+      "size": 22458,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/8466e9ff00e98e38791def1aecd401721c73d51d"
+    },
+    {
+      "path": "src/__pycache__/timestamps.cpython-310.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3fa8316b276149731b99bfa8e30b0081b779e0c2",
+      "size": 28174,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/3fa8316b276149731b99bfa8e30b0081b779e0c2"
+    },
+    {
+      "path": "src/__pycache__/timestamps.cpython-311.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81ab68d6642cc20655c67e97219d2ed90d19d990",
+      "size": 55236,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/81ab68d6642cc20655c67e97219d2ed90d19d990"
+    },
+    {
+      "path": "src/__pycache__/timestamps.cpython-38.pyc",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "90a11cf7d37c498ddbfe93c6f83b344516e11f66",
+      "size": 28573,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/90a11cf7d37c498ddbfe93c6f83b344516e11f66"
+    },
+    {
+      "path": "src/__pycache__/timestamps.cpython-39.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e9b8972c2577546bbafce4025d946a39232a62d",
+      "size": 28497,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/9e9b8972c2577546bbafce4025d946a39232a62d"
+    },
+    {
+      "path": "src/__pycache__/utilities.cpython-38.pyc",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "79b4f09100619df21d1f977a736b9112299518ea",
+      "size": 24616,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/79b4f09100619df21d1f977a736b9112299518ea"
+    },
+    {
+      "path": "src/__pycache__/utilities.cpython-39.pyc",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "5a245fdde1598eaa992c0c965dcae68d64edfff5",
+      "size": 24612,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/5a245fdde1598eaa992c0c965dcae68d64edfff5"
+    },
+    {
+      "path": "src/__pycache__/vocsearch.cpython-38.pyc",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "e0c52a22fb2abdce124ff037f3f02c1802cc7eaa",
+      "size": 8065,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/e0c52a22fb2abdce124ff037f3f02c1802cc7eaa"
+    },
+    {
+      "path": "src/__pycache__/vocsearch.cpython-39.pyc",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "9fd3021a886ab31658ad52735da22109d2b24d61",
+      "size": 8058,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/9fd3021a886ab31658ad52735da22109d2b24d61"
+    },
+    {
+      "path": "src/__pycache__/weather.cpython-38.pyc",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "84263510285f930b0b6f49acc2d5e881241d4b69",
+      "size": 2554,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/84263510285f930b0b6f49acc2d5e881241d4b69"
+    },
+    {
+      "path": "src/__pycache__/weather.cpython-39.pyc",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "3231339b8cb405290113e4da9f22ec9cc0b61160",
+      "size": 2538,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/3231339b8cb405290113e4da9f22ec9cc0b61160"
+    },
+    {
+      "path": "src/annotation.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "f5db4ab6df4cf5e4551bae4f3c619649ab650054",
+      "size": 33360,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/f5db4ab6df4cf5e4551bae4f3c619649ab650054"
+    },
+    {
+      "path": "src/evaluate.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "ded3e5cb3b60216b913ae2e6855efe69f48182d3",
+      "size": 25100,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/ded3e5cb3b60216b913ae2e6855efe69f48182d3"
+    },
+    {
+      "path": "src/features.R",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "ecbc5dc9ec39507c46b4559c9358c1c8e60ac895",
+      "size": 4385,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/ecbc5dc9ec39507c46b4559c9358c1c8e60ac895"
+    },
+    {
+      "path": "src/features.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "ce54d8e93cdaa5415bf0d23568733e69a2acf944",
+      "size": 16878,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/ce54d8e93cdaa5415bf0d23568733e69a2acf944"
+    },
+    {
+      "path": "src/filespaths.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "689bbf5b6ddb9b0f4d3fc6f32787a4c0cf45e3e3",
+      "size": 4927,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/689bbf5b6ddb9b0f4d3fc6f32787a4c0cf45e3e3"
+    },
+    {
+      "path": "src/modelselection.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "b29dcf6693db4225b710cc71f85e3ed8e2dc28eb",
+      "size": 24500,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/b29dcf6693db4225b710cc71f85e3ed8e2dc28eb"
+    },
+    {
+      "path": "src/parameters.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "f6803a4b8ab821e2aa052e97a8893fdf9964c82d",
+      "size": 3681,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/f6803a4b8ab821e2aa052e97a8893fdf9964c82d"
+    },
+    {
+      "path": "src/plot.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "48db53e62c87ae3a5f695045d4c1300cc0c45f00",
+      "size": 61996,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/48db53e62c87ae3a5f695045d4c1300cc0c45f00"
+    },
+    {
+      "path": "src/preprocess.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "d8ffcbcbc94d35dfa9340aa9397e6b19ce5458c4",
+      "size": 14097,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/d8ffcbcbc94d35dfa9340aa9397e6b19ce5458c4"
+    },
+    {
+      "path": "src/rfid.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "39e425b9882679bbc03cbc3774660a0e74cc01eb",
+      "size": 51338,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/39e425b9882679bbc03cbc3774660a0e74cc01eb"
+    },
+    {
+      "path": "src/segmentation.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "0edd7299bf2a2996b914411a28a13cfd29f44ff5",
+      "size": 27308,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/0edd7299bf2a2996b914411a28a13cfd29f44ff5"
+    },
+    {
+      "path": "src/spectrogramming.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "d01f94602c3d8b5d2c3fcbc8d0b693279ca3f563",
+      "size": 26437,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/d01f94602c3d8b5d2c3fcbc8d0b693279ca3f563"
+    },
+    {
+      "path": "src/timestamps.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "aa14a1bc77c5e52254cf3ef61cab1bc55f902528",
+      "size": 33139,
+      "url": "https://api.github.com/repos/nickjourjine/wild-mus-vocal-ecology/git/blobs/aa14a1bc77c5e52254cf3ef61cab1bc55f902528"
+    }
+  ],
+  "truncated": false
+}

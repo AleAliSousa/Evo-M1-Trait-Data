@@ -1,62 +1,265 @@
 "script","status","error","start_time","end_time","elapsed_seconds"
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/BallesterosYáñez_etal_2006/BallesterosYáñez_etal_2006_Figure3A.R","FAILED","Error: !is.na(item_encoded) is not TRUE
-Execution halted","2026-10-19 08:57:38.787124","2026-10-19 08:57:39.693874",0.906749963760376
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/BallesterosYáñez_etal_2006/BallesterosYáñez_etal_2006_Figure3B.R","FAILED","Error: !is.na(item_encoded) is not TRUE
-Execution halted","2026-10-19 08:57:39.698949","2026-10-19 08:57:40.375442",0.676492929458618
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/BallesterosYáñez_etal_2006/BallesterosYáñez_etal_2006_Figure3C.R","FAILED","Error: !is.na(item_encoded) is not TRUE
-Execution halted","2026-10-19 08:57:40.378389","2026-10-19 08:57:41.080671",0.702282190322876
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/BallesterosYáñez_etal_2006/BallesterosYáñez_etal_2006_Table1.R","FAILED","Error: !is.na(item_encoded) is not TRUE
-Execution halted","2026-10-19 08:57:41.092122","2026-10-19 08:57:41.707",0.614877939224243
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Bowmaker_etal_1991/Bowmaker_etal_1991_Table1.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:30:24.02417","2026-10-23 12:30:24.755819",0.731649160385132
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Bowmaker_etal_1991/Bowmaker_etal_1991_Table2.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:30:24.760851","2026-10-23 12:30:25.495774",0.734923124313354
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Campbell_Tobler_1984/Campbell_Tobler_1984_Table1.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:30:40.624089","2026-10-23 12:30:41.442225",0.818135976791382
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Deegan_Jacobs_2001/Deegan_Jacobs_2001_TextResults.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:31:10.289172","2026-10-23 12:31:11.054334",0.765161991119385
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Dunn_Smaers_2018/Dunn_Smaers_2018_TableS1.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:31:47.870466","2026-10-23 12:31:48.611471",0.741004943847656
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Elston_etal_2005_a/Elston_etal_2005_a_Table3.R","FAILED","Error: Existing public TSV requires owner reconciliation; this item reader never overwrites it
-Execution halted","2026-10-19 08:59:52.961486","2026-10-19 08:59:53.871395",0.909909009933472
+Execution halted","2026-10-23 12:31:54.020563","2026-10-23 12:31:54.812926",0.792363166809082
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Elston_etal_2005_a/Elston_etal_2005_a_Table4.R","FAILED","Error: Public export refused: swapped source location still needs an owner resolution recorded in item context.
-Execution halted","2026-10-19 08:59:53.874755","2026-10-19 08:59:54.431924",0.557169198989868
+Execution halted","2026-10-23 12:31:54.823249","2026-10-23 12:31:55.447198",0.623948812484741
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Elston_etal_2005_a/Elston_etal_2005_a_Table5.R","FAILED","Error: Public export refused: swapped source location still needs an owner resolution recorded in item context.
-Execution halted","2026-10-19 08:59:54.454","2026-10-19 08:59:54.995483",0.541482925415039
+Execution halted","2026-10-23 12:31:55.457095","2026-10-23 12:31:56.020847",0.563752174377441
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Elston_etal_2005_a/Elston_etal_2005_a_Table6.R","FAILED","Error: Public export refused: swapped source location still needs an owner resolution recorded in item context.
-Execution halted","2026-10-19 08:59:54.998998","2026-10-19 08:59:55.575024",0.57602596282959
+Execution halted","2026-10-23 12:31:56.029086","2026-10-23 12:31:56.567838",0.538751840591431
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/GalánAcedo_etal_2019/GalánAcedo_etal_2019_BodyMass.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:32:22.409439","2026-10-23 12:32:23.164556",0.755116939544678
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/GalánAcedo_etal_2019/GalánAcedo_etal_2019_DielActivity.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:32:23.173171","2026-10-23 12:32:23.890925",0.717753887176514
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/GalánAcedo_etal_2019/GalánAcedo_etal_2019_Habitat.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:32:23.897027","2026-10-23 12:32:24.634592",0.737565040588379
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/GalánAcedo_etal_2019/GalánAcedo_etal_2019_HomeRange.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:32:24.647196","2026-10-23 12:32:25.411334",0.764137983322144
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/GalánAcedo_etal_2019/GalánAcedo_etal_2019_IUCN_Poptrend_Realm.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:32:25.42175","2026-10-23 12:32:26.109047",0.687296867370605
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/GalánAcedo_etal_2019/GalánAcedo_etal_2019_Locomotion.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:32:26.118586","2026-10-23 12:32:26.901489",0.782902956008911
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/GalánAcedo_etal_2019/GalánAcedo_etal_2019_TrophicGuild.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:32:26.915919","2026-10-23 12:32:27.751433",0.835513830184937
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Gamba_etal_2015/Gamba_etal_2015_TableI.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:32:27.761785","2026-10-23 12:32:28.542562",0.780776977539062
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Gamba_etal_2015/Gamba_etal_2015_TableSII.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:32:28.553316","2026-10-23 12:32:29.396652",0.843335866928101
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Gamba_etal_2015/Gamba_etal_2015_TableSIII.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:32:29.413168","2026-10-23 12:32:30.170397",0.757229089736938
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Gamba_etal_2015/Gamba_etal_2015_TableSIV.R","FAILED","Warning message:
+Printed table totals disagree with interior cells; retained as printed. See table_checks. 
+Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:32:30.178722","2026-10-23 12:32:31.014105",0.835383176803589
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Gamba_etal_2015/Gamba_etal_2015_TableSV.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:32:31.022379","2026-10-23 12:32:31.801061",0.778681993484497
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Gamba_etal_2015/Gamba_etal_2015_TableSVI.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:32:31.805411","2026-10-23 12:32:32.559763",0.754351854324341
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Gamba_etal_2015/Gamba_etal_2015_TableSVII.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:32:32.570523","2026-10-23 12:32:33.306219",0.735696077346802
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Gamba_etal_2015/Gamba_etal_2015_TableSVIII.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:32:33.317652","2026-10-23 12:32:34.118876",0.801223993301392
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Grueter_etal_2013/Grueter_etal_2013_Table1.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:32:42.106724","2026-10-23 12:32:42.90342",0.796695947647095
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Grueter_etal_2013/Grueter_etal_2013_TableS1.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:32:42.910243","2026-10-23 12:32:43.755681",0.845438003540039
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hardus_etal_2009/Hardus_etal_2009_Table4.1.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:32:47.513184","2026-10-23 12:32:48.454992",0.941807985305786
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hardus_etal_2009/Hardus_etal_2009_Table4.2.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:32:48.465582","2026-10-23 12:32:49.260699",0.795117139816284
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hardus_etal_2009/Hardus_etal_2009_Table4.3.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:32:49.284247","2026-10-23 12:32:50.09053",0.806282997131348
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hardus_etal_2009/Hardus_etal_2009_Table4.4.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:32:50.100982","2026-10-23 12:32:50.850039",0.749057054519653
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heffner_Heffner_1992_c/Heffner_Heffner_1992_c_ResultsText.R","FAILED","Error: An existing public TSV requires owner conflict review; no overwrite performed.
-Execution halted","2026-10-19 09:00:55.659659","2026-10-19 09:00:56.281412",0.621752977371216
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Schmidt_etal_1984/Schmidt_etal_1984_text.R","FAILED","Error: An existing public TSV requires owner conflict review; no overwrite performed.
-Execution halted","2026-10-19 09:04:29.230362","2026-10-19 09:04:29.840187",0.609825134277344
+Execution halted","2026-10-23 12:36:15.742209","2026-10-23 12:36:16.48433",0.742120981216431
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel__2015/HerculanoHouzel__2015_Table1.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter()         masks stats::filter()
+✖ readr::guess_encoding() masks rvest::guess_encoding()
+✖ dplyr::lag()            masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error in (html_table(html_elements(page, ""table""), fill = TRUE))[[1]] : 
+  subscript out of bounds
+Execution halted","2026-10-23 12:36:24.591411","2026-10-23 12:36:25.897304",1.30589294433594
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hiwatashi_etal_2011/Hiwatashi_etal_2011_TextResults.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:36:41.677676","2026-10-23 12:36:42.411615",0.733938932418823
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hohmann__1991/Hohmann__1991_Table10.R","FAILED","Warning message:
+Printed table arithmetic mismatch retained; inspect table_checks 
+Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:36:43.016127","2026-10-23 12:36:43.836003",0.819875955581665
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hohmann__1991/Hohmann__1991_Table11.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:36:43.844644","2026-10-23 12:36:44.637985",0.793340921401978
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hohmann__1991/Hohmann__1991_Table12.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:36:44.653694","2026-10-23 12:36:45.352916",0.699222087860107
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hohmann__1991/Hohmann__1991_Table3.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:36:45.357672","2026-10-23 12:36:46.225325",0.867653131484985
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hohmann__1991/Hohmann__1991_Table4.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:36:46.237156","2026-10-23 12:36:47.050471",0.813315153121948
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hohmann__1991/Hohmann__1991_Table5.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:36:47.071273","2026-10-23 12:36:47.785673",0.714399814605713
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hohmann__1991/Hohmann__1991_Table6.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:36:47.79273","2026-10-23 12:36:48.576205",0.783474922180176
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hohmann__1991/Hohmann__1991_Table7.R","FAILED","Warning message:
+Printed table arithmetic mismatch retained; inspect table_checks 
+Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:36:48.600997","2026-10-23 12:36:49.394272",0.793275117874146
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hohmann__1991/Hohmann__1991_Table8.R","FAILED","Warning message:
+Printed table arithmetic mismatch retained; inspect table_checks 
+Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:36:49.403264","2026-10-23 12:36:50.30253",0.899266004562378
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hohmann__1991/Hohmann__1991_Table9.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:36:50.317263","2026-10-23 12:36:51.139856",0.822593212127686
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jacobs__2008/Jacobs__2008_Table1.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:37:08.880033","2026-10-23 12:37:09.542883",0.66284990310669
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jacobs__2008/Jacobs__2008_Table2.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:37:09.556418","2026-10-23 12:37:10.30942",0.753002166748047
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jacobs__2009/Jacobs__2009_Table1.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:37:10.32188","2026-10-23 12:37:11.027971",0.706090927124023
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jacobs_Deegan_1993/Jacobs_Deegan_1993_TextResults.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:37:11.032382","2026-10-23 12:37:11.802017",0.769634962081909
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jacobs_Deegan_2001/Jacobs_Deegan_2001_TextResults.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:37:11.80777","2026-10-23 12:37:12.783194",0.97542405128479
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jacobs_Deegan_2003/Jacobs_Deegan_2003_Table1.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:37:12.791009","2026-10-23 12:37:13.567642",0.776633024215698
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jacobs_etal_2002/Jacobs_etal_2002_Table1.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:37:16.6422","2026-10-23 12:37:17.441929",0.799729108810425
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jacobs_etal_2019/Jacobs_etal_2019_TableS1.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:37:22.054491","2026-10-23 12:37:22.823502",0.7690110206604
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jacobs_etal_2019/Jacobs_etal_2019_TableS2.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:37:22.83556","2026-10-23 12:37:23.655472",0.819911956787109
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jacobs_Neitz_1987/Jacobs_Neitz_1987_Table1.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:37:23.663825","2026-10-23 12:37:24.361861",0.698035955429077
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jones_etal_2009/Jones_etal_2009_reference_tables_definitions.R","FAILED","Error: Definitions rows for Jones_etal_2009_references_availability do not match its columns. Missing: ref_number, citation_short, check_context, check_date, check_method, endnote_status, endnote_id, endnote_title_overlap, pdf_attached, evom1_folder, online_status, availability, note; extra: 
+Execution halted","2026-10-23 12:37:29.050693","2026-10-23 12:37:29.812686",0.761992931365967
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kamilar_Cooper_2013/Kamilar_Cooper_2013_S2.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:37:50.288765","2026-10-23 12:37:51.054489",0.765723943710327
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/ManyPrimates__2022/build_manyprimates_items.R","FAILED","GalánAcedo_etal_2019_HomeRange: 748 rows; 26 columns
+GalánAcedo_etal_2019_Locomotion: 576 rows; 11 columns
+GalánAcedo_etal_2019_DielActivity: 527 rows; 11 columns
+GalánAcedo_etal_2019_TrophicGuild: 570 rows; 38 columns
+GalánAcedo_etal_2019_BodyMass: 629 rows; 16 columns
+GalánAcedo_etal_2019_Habitat: 526 rows; 26 columns
+GalánAcedo_etal_2019_IUCN_Poptrend_Realm: 526 rows; 16 columns
+Grueter_etal_2013_Table1: 74 rows; 12 columns
+Pasquaretta_etal_2014_Extendeddatatable5: 78 rows; 31 columns
+Dunn_Smaers_2018_TableS1: 47 rows; 33 columns
+McComb_Semple_2005_Table1: 42 rows; 9 columns
+Gamba_etal_2015_TableI: 154 rows; 7 columns
+Gamba_etal_2015_TableSII: 195 rows; 7 columns
+Gamba_etal_2015_TableSIII: 156 rows; 7 columns
+Gamba_etal_2015_TableSIV: 240 rows; 7 columns
+Gamba_etal_2015_TableSV: 165 rows; 7 columns
+Gamba_etal_2015_TableSVI: 120 rows; 7 columns
+Gamba_etal_2015_TableSVII: 120 rows; 7 columns
+Gamba_etal_2015_TableSVIII: 144 rows; 7 columns
+Zimmermann__2017_Table5.1: 22 rows; 23 columns
+Jacobs__2008_Table1: 2 rows; 6 columns
+Jacobs__2008_Table2: 5 rows; 7 columns
+Jacobs__2009_Table1: 34 rows; 9 columns
+Nunn_Samson_2018_Table1: 30 rows; 8 columns
+Campbell_Tobler_1984_Table1: 171 rows; 31 columns
+MorroghBernard_etal_2008_Table8.2: 216 rows; 19 columns
+MorroghBernard_etal_2008_Table8.3: 108 rows; 21 columns
+MorroghBernard_etal_2008_Table8.5: 8 rows; 19 columns
+MorroghBernard_etal_2008_Table8.6: 50 rows; 14 columns
+MorroghBernard_etal_2008_Figure8.1: 35 rows; 16 columns
+MorroghBernard_etal_2008_Figure8.2: 139 rows; 18 columns
+Hardus_etal_2009_Table4.1: 32 rows; 6 columns
+Hardus_etal_2009_Table4.2: 46 rows; 13 columns
+Hardus_etal_2009_Table4.3: 36 rows; 17 columns
+Hardus_etal_2009_Table4.4: 256 rows; 15 columns
+Hohmann__1991_Table3: 232 rows; 15 columns
+Hohmann__1991_Table4: 192 rows; 15 columns
+Hohmann__1991_Table5: 58 rows; 13 columns
+Hohmann__1991_Table6: 46 rows; 13 columns
+Hohmann__1991_Table7: 312 rows; 16 columns
+Hohmann__1991_Table8: 336 rows; 16 columns
+Hohmann__1991_Table9: 264 rows; 16 columns
+Hohmann__1991_Table10: 264 rows; 16 columns
+Hohmann__1991_Table11: 52 rows; 7 columns
+Hohmann__1991_Table12: 32 rows; 9 columns
+Jacobs_Deegan_2001_TextResults: 25 rows; 16 columns
+Jacobs_Deegan_2003_Table1: 17 rows; 8 columns
+Jacobs_etal_2019_TableS1: 52 rows; 12 columns
+Jacobs_etal_2019_TableS2: 115 rows; 16 columns
+Hiwatashi_etal_2011_TextResults: 9 rows; 12 columns
+Tan_Li_1999_Table1: 20 rows; 16 columns
+Jacobs_Deegan_1993_TextResults: 9 rows; 17 columns
+Jacobs_etal_2002_Table1: 10 rows; 10 columns
+Jacobs_Neitz_1987_Table1: 9 rows; 9 columns
+Bowmaker_etal_1991_Table1: 48 rows; 9 columns
+Bowmaker_etal_1991_Table2: 12 rows; 10 columns
+Deegan_Jacobs_2001_TextResults: 10 rows; 16 columns
+Kamilar_Cooper_2013_S2: 213 rows; 51 columns
+Nunn_Samson_2018_SupplementaryTable1: 30 rows; 19 columns
+Grueter_etal_2013_TableS1: 131 rows; 17 columns
+Warning messages:
+1: In eval(ei, envir) :
+  Printed table totals disagree with interior cells; retained as printed. See table_checks.
+2: In eval(ei, envir) :
+  Printed table arithmetic mismatch retained; inspect table_checks
+3: In eval(ei, envir) :
+  Printed table arithmetic mismatch retained; inspect table_checks
+4: In eval(ei, envir) :
+  Printed table arithmetic mismatch retained; inspect table_checks
+Error in file(file, ""rt"") : cannot open the connection
+Calls: source ... withVisible -> eval -> eval -> read.csv -> read.table -> file
+In addition: Warning message:
+In file(file, ""rt"") :
+  cannot open file '/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/ManyPrimates__2022/supplementary_sources.csv': No such file or directory
+Execution halted","2026-10-23 12:38:54.876164","2026-10-23 12:39:00.068094",5.19193005561829
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Mayer_etal_2019/Mayer_etal_2019_Fig6.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
+Calls: read.csv -> read.table -> file
+In addition: Warning message:
+In file(file, ""rt"") :
+  cannot open file 'Mayer_etal_2019_Fig6_pdf_transcription.csv': No such file or directory
+Execution halted","2026-10-23 12:39:08.581522","2026-10-23 12:39:08.849212",0.267689943313599
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/McComb_Semple_2005/McComb_Semple_2005_Table1.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:39:08.853139","2026-10-23 12:39:09.658914",0.805775165557861
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/MorroghBernard_etal_2008/MorroghBernard_etal_2008_Figure8.1.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:39:15.940761","2026-10-23 12:39:16.734401",0.793639898300171
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/MorroghBernard_etal_2008/MorroghBernard_etal_2008_Figure8.2.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:39:16.742872","2026-10-23 12:39:17.498517",0.755645036697388
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/MorroghBernard_etal_2008/MorroghBernard_etal_2008_Table8.2.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:39:17.503945","2026-10-23 12:39:18.207647",0.703701972961426
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/MorroghBernard_etal_2008/MorroghBernard_etal_2008_Table8.3.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:39:18.214957","2026-10-23 12:39:18.907112",0.692154884338379
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/MorroghBernard_etal_2008/MorroghBernard_etal_2008_Table8.5.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:39:18.911509","2026-10-23 12:39:19.572093",0.660583972930908
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/MorroghBernard_etal_2008/MorroghBernard_etal_2008_Table8.6.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:39:19.577234","2026-10-23 12:39:20.257739",0.680505037307739
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Nunn_Samson_2018/Nunn_Samson_2018_SupplementaryTable1.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:40:12.227523","2026-10-23 12:40:13.50058",1.27305698394775
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Nunn_Samson_2018/Nunn_Samson_2018_Table1.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:40:13.573503","2026-10-23 12:40:14.392088",0.81858491897583
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Pasquaretta_etal_2014/Pasquaretta_etal_2014_Extendeddatatable5.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:40:18.331598","2026-10-23 12:40:19.283924",0.952326059341431
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Schmidt_etal_1984/Schmidt_etal_1984_Text.R","FAILED","Error: An existing public TSV requires owner conflict review; no overwrite performed.
+Execution halted","2026-10-23 12:40:52.347499","2026-10-23 12:40:52.954398",0.60689902305603
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1991/Stephan_etal_1991_Table71.R","FAILED","Error in file(file, ""rt"", encoding = fileEncoding) : 
   cannot open the connection
 Calls: <Anonymous> -> read.table -> file
 In addition: Warning message:
 In file(file, ""rt"", encoding = fileEncoding) :
   cannot open file '/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1991/Stephan_etal_1991_Table71_snapshot.csv': No such file or directory
-Execution halted","2026-10-19 09:05:54.539995","2026-10-19 09:05:55.066862",0.526867151260376
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_body_ecology/body_ecology_compiled.R","FAILED","Error in if (any(team_primary)) team_val[team_primary] else team_val : 
-  missing value where TRUE/FALSE needed
-Calls: lapply -> FUN
-Execution halted","2026-10-19 09:07:18.023583","2026-10-19 09:07:30.895961",12.8723781108856
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_brain_mass/brain_mass_compiled.R","FAILED","Error: no measurement basis on record for 10.1007%2Fbf00518633_Table2.tsv / brain_weight_g (paper folder 'Kruska_Rohrs_1974'). Add it to ASSIGN in _keys/build_brain_size_basis.py and re-run that builder.
-Execution halted","2026-10-19 09:07:30.946376","2026-10-19 09:07:33.701581",2.75520491600037
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/check_species_name_splits.R","FAILED","OK volumes_source_species_ids_select.csv: no split labels.
-Error in data.frame(file = sub(""\\.csv$"", """", f), Species_raw = raw, Species_final = fin,  : 
-  arguments imply differing number of rows: 1, 0
-Calls: rbind -> data.frame
-Execution halted","2026-10-19 09:08:36.017862","2026-10-19 09:08:36.420093",0.402230978012085
+Execution halted","2026-10-23 12:42:04.54468","2026-10-23 12:42:05.042697",0.498016834259033
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Tan_Li_1999/Tan_Li_1999_Table1.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:42:09.237979","2026-10-23 12:42:10.171591",0.933612108230591
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/VanEssen_Drury_1997/VanEssen_Drury_1997_CitedV1Ranges.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
+Calls: read.csv -> read.table -> file
+In addition: Warning message:
+In file(file, ""rt"") :
+  cannot open file 'VanEssen_Drury_1997_CitedV1Ranges_pdf_transcription.csv': No such file or directory
+Execution halted","2026-10-23 12:42:20.786829","2026-10-23 12:42:21.309346",0.522516965866089
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Young_etal_2013/Young_etal_2013_ResultsTextSurface.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
+Calls: read.csv -> read.table -> file
+In addition: Warning message:
+In file(file, ""rt"") :
+  cannot open file 'Young_etal_2013_ResultsTextSurface_pdf_transcription.csv': No such file or directory
+Execution halted","2026-10-23 12:42:38.690467","2026-10-23 12:42:38.974924",0.284457206726074
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Zimmermann__2017/Zimmermann__2017_Table5.1.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
+Execution halted","2026-10-23 12:42:52.975571","2026-10-23 12:42:53.749023",0.773452043533325
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_brain_mass/brain_mass_compiled.R","FAILED","Error: no measurement basis on record for 10.1002%2Fajpa.21354_Table1.tsv / brain_mass_g (paper folder 'Barrickman_Lin_2010'). Add it to ASSIGN in _keys/build_brain_size_basis.py and re-run that builder.
+Execution halted","2026-10-23 12:44:00.066194","2026-10-23 12:44:03.544413",3.4782190322876
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/volumes_compiled_select_DeCasien.R","FAILED","Error: Source review needs one documented row per listed primary source.
-Execution halted","2026-10-19 09:08:40.741762","2026-10-19 09:08:43.418998",2.67723608016968
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/volumes_sample_metadata_Pirlot__1981.R","FAILED","Error: Usage: Rscript volumes_sample_metadata_Pirlot__1981.R REPO_ROOT NEW_PRIVATE_CSV
-Execution halted","2026-10-19 09:08:52.912522","2026-10-19 09:08:53.863077",0.950554847717285
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__Finder/app.R","FAILED","Error:
-! 'data/coverage_records.csv' does not exist in current working
-  directory:
-  '/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data'.
-Backtrace:
-    ▆
- 1. ├─dplyr::mutate(...)
- 2. ├─readr::read_csv(...)
- 3. │ └─vroom::vroom(...)
- 4. │   └─vroom:::vroom_(...)
- 5. └─vroom (local) `<fn>`(""data/coverage_records.csv"")
- 6.   └─vroom:::check_path(path)
- 7.     └─cli::cli_abort(msg, call = call)
- 8.       └─rlang::abort(...)
-Execution halted","2026-10-19 09:09:01.990384","2026-10-19 09:09:03.492578",1.50219392776489
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_item_name_resolution.R","FAILED","registry Item names: 622   |   TSVs on disk: 533   |   NA.tsv present: YES -- REMOVE IT
+Execution halted","2026-10-23 12:45:34.500713","2026-10-23 12:45:36.7968",2.29608678817749
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_item_name_resolution.R","FAILED","registry Item names: 680   |   TSVs on disk: 638   |   NA.tsv present: YES -- REMOVE IT
 
 __merging_behaviour/behaviour_compiled.R                     0 item name(s) referenced   OK
 __merging_body_ecology/body_ecology_compiled.R               0 item name(s) referenced   OK
@@ -64,7 +267,7 @@ __merging_brain_mass/brain_mass_compiled.R                   0 item name(s) refe
 __merging_cell_morphology/cell_morphology_compiled.R        18 item name(s) referenced   OK
 __merging_cellcounts/cellcounts_compiled.R                  15 item name(s) referenced   OK
 __merging_cerebellar_folding/cerebellar_folding_compiled.R   0 item name(s) referenced   OK
-__merging_cortical_areas/cortical_areas_compiled.R          11 item name(s) referenced   OK
+__merging_cortical_areas/cortical_areas_compiled.R          22 item name(s) referenced   OK
 __merging_cortical_layers/cortical_layers_compiled.R         1 item name(s) referenced   OK
 __merging_fossil_brain_glucose/fossil_brain_glucose_compiled.R   0 item name(s) referenced   OK
 __merging_gyrification/gyrification_compiled.R               3 item name(s) referenced   OK
@@ -74,18 +277,99 @@ __merging_supplementary/supplementary_compiled.R             0 item name(s) refe
 __merging_volumes/volumes_compiled_select.R                 34 item name(s) referenced   OK
 __merging_volumes/volumes_compiled.R                        71 item name(s) referenced   OK
 
-orphaned TSVs (on disk, claimed by no registry row): 8
+orphaned TSVs (on disk, claimed by no registry row): 66
+      10.1002%2Fajp.1350300307_TextResults.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
       10.1002%2Fajpa.1330380234_ResultsText.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1002%2Fajpa.23427_SupplementaryTable1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1002%2Fajpa.23427_Table1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
       10.1002%2Far.20829 _Table1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1007%2F978-3-319-59478-1_5_Table5.1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1007%2Fs00265-018-2629-9_TableS1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1007%2Fs00265-018-2629-9_TableS2.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
       10.1007%2Fs00429-014-0792-y _Table1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1016%2FB978-012370880-9.00004-9_ResultsText.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1007%2Fs10764-015-9861-1_TableI.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1007%2Fs10764-015-9861-1_TableSII.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1007%2Fs10764-015-9861-1_TableSIII.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1007%2Fs10764-015-9861-1_TableSIV.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1007%2Fs10764-015-9861-1_TableSV.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1007%2Fs10764-015-9861-1_TableSVI.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1007%2Fs10764-015-9861-1_TableSVII.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1007%2Fs10764-015-9861-1_TableSVIII.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1016%2F0042-6989(87)90202-1_Table1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1016%2F0149-7634(84)90054-X_Table1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1016%2Fj.evolhumbehav.2012.09.004_Table1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1016%2Fj.evolhumbehav.2012.09.004_TableS1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1016%2FS0042-6989(01)00264-4_Table1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1016%2FS0042-6989(02)00565-5_Table1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1017%2FS0952523808080760_Table1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1017%2FS0952523808080760_Table2.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
       10.1037%2F0735-7036.102.2.99_Table1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1038%2F46947_Table1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1038%2Fs41597-019-0059-9_BodyMass.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1038%2Fs41597-019-0059-9_DielActivity.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1038%2Fs41597-019-0059-9_Habitat.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1038%2Fs41597-019-0059-9_HomeRange.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1038%2Fs41597-019-0059-9_IUCN_Poptrend_Realm.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1038%2Fs41597-019-0059-9_Locomotion.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1038%2Fs41597-019-0059-9_TrophicGuild.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1038%2Fsrep07600_Extendeddatatable5.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1093%2Facprof:oso%2F9780199213276.003.0004_Table4.1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1093%2Facprof:oso%2F9780199213276.003.0004_Table4.2.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1093%2Facprof:oso%2F9780199213276.003.0004_Table4.3.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1093%2Facprof:oso%2F9780199213276.003.0004_Table4.4.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1093%2Facprof:oso%2F9780199213276.003.0008_Figure8.1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1093%2Facprof:oso%2F9780199213276.003.0008_Figure8.2.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1093%2Facprof:oso%2F9780199213276.003.0008_Table8.2.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1093%2Facprof:oso%2F9780199213276.003.0008_Table8.3.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1093%2Facprof:oso%2F9780199213276.003.0008_Table8.5.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1093%2Facprof:oso%2F9780199213276.003.0008_Table8.6.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1098%2Frsbl.2005.0366_Table1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1098%2Frspb.2000.1421_TextResults.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1098%2Frstb.2009.0039_Table1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1098%2Frstb.2012.0341_S2.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
       10.1121%2F1.1903415_Table1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1121%2F1.3284546_ResultsText.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1159%2F000049915_TextResults.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1159%2F000156538_Table10.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1159%2F000156538_Table11.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1159%2F000156538_Table12.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1159%2F000156538_Table3.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1159%2F000156538_Table4.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1159%2F000156538_Table5.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1159%2F000156538_Table6.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1159%2F000156538_Table7.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1159%2F000156538_Table8.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1159%2F000156538_Table9.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1186%2F1471-2148-11-312_TextResults.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1242%2Fjeb.156.1.1_Table1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.1242%2Fjeb.156.1.1_Table2.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
+      10.3389%2Ffnins.2018.00534_TableS1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
       NA.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
 rows with a citation but no Item name (need _tools/file_list.R): 0
 
 all referenced item names resolve to a TSV on disk.
-run _tools/restore_registry_rows.R (adding any new row to its ROWS list), then _tools/file_list.R.","2026-10-19 09:09:44.088887","2026-10-19 09:09:45.263684",1.17479705810547
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/find_orphan_R_scripts.R","TIMEOUT","
-Execution halted","2026-10-19 09:11:12.025745","2026-10-19 09:16:12.229909",300.204164028168
+run _tools/restore_registry_rows.R (adding any new row to its ROWS list), then _tools/file_list.R.","2026-10-23 12:46:52.653812","2026-10-23 12:46:53.507726",0.853914022445679
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/social_variables/check_zhu_coverage.R","FAILED","Error: length(args) == 2 is not TRUE
+Execution halted","2026-10-23 12:49:01.074826","2026-10-23 12:49:01.401908",0.327081918716431
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/social_variables/compare_coverage.R","FAILED","Error: length(a) == 2 is not TRUE
+Execution halted","2026-10-23 12:49:01.411759","2026-10-23 12:49:01.720584",0.308825016021729
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/social_variables/load_app.R","FAILED","
+Attaching package: ‘bslib’
+
+The following object is masked from ‘package:utils’:
+
+    page
+
+
+Attaching package: ‘DT’
+
+The following objects are masked from ‘package:shiny’:
+
+    dataTableOutput, renderDataTable
+
+19 of 1054 variables have no row in _keys/variable_definitions.csv (source: local).
+  A1_Surface_Area.mm2 | A1_Surface_Area.pct_Neocortex | CorticalBuriedSurface_Area.mm2 | CorticalSurfaceInFissures.pct | DI_Surface_Area.pct_Neocortex | DL_Surface_Area.pct_Neocortex | DM_Surface_Area.pct_Neocortex | FST_Surface_Area.pct_Neocortex ... and 11 more
+  Fix: Rscript _keys/build_variable_definitions.R && Rscript __ShinyApp/build_data.R
+Error in if (length(file) != 1 || file == """") stop(gettextf(""'%s' must be a non-empty character string"",  : 
+  missing value where TRUE/FALSE needed
+Calls: saveRDS
+Execution halted","2026-10-23 12:49:01.732554","2026-10-23 12:49:05.420624",3.68807005882263

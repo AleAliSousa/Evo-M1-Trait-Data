@@ -15,8 +15,13 @@ folder<-dirname(.sp);item_name<-tools::file_path_sans_ext(basename(.sp));base<-l
 col_types<-c("text","text","text","text","text","text","text","text","numeric","numeric","numeric","numeric","text","text","numeric")
 raw<-readxl::read_excel(file.path(folder,"FieldMR_SciDataPub.xls"),sheet="Alldata",col_types=col_types)
 clean<-as.data.frame(raw)
+## Renamed Mass_g -> BodyMass_g (source column name kept verbatim nowhere else needs it): the
+## __merging_body_ecology auto-harvester matches header names against a "body.?mass" pattern, which
+## a bare "Mass_g" does not satisfy -- renaming here (not touching the shared merge script) lets the
+## existing BodyMass_g column be auto-picked up as a new "mass" source without special-casing.
+names(clean)[names(clean)=="Mass_g"]<-"BodyMass_g"
 
-stopifnot(nrow(clean)==4637L, all(c("SpeciesVerbatim","FMR_kJ_d","Mass_g","Endotherm","Reference") %in% names(clean)), !anyNA(clean$SpeciesVerbatim), !anyNA(clean$Mass_g), sum(!is.na(clean$Comment) & clean$Comment!="")==816L)
+stopifnot(nrow(clean)==4637L, all(c("SpeciesVerbatim","FMR_kJ_d","BodyMass_g","Endotherm","Reference") %in% names(clean)), !anyNA(clean$SpeciesVerbatim), !anyNA(clean$BodyMass_g), sum(!is.na(clean$Comment) & clean$Comment!="")==816L)
 
 write.csv(clean,file.path(folder,paste0(item_name,".csv")),row.names=FALSE,na="NA")
 if(!is.na(base)){fc<-readxl::read_excel(file.path(base,"__ReadMe.xlsx"),sheet="Sheet1");enc<-fc$`Item encoded`[match(item_name,fc$`Item name`)];if(!is.na(enc)&&nzchar(enc))write.table(clean,file.path(base,"__Public","comparative-data",paste0(enc,".tsv")),sep="\t",row.names=FALSE,na="NA")else warning("Registry row pending for ",item_name,"; public TSV skipped.")}

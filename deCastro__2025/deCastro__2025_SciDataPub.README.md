@@ -33,6 +33,12 @@ subset, not a complete bibliography of every citation in `Reference` — e.g. se
 ichthyology papers cited nowhere in the DOI sheet) or could not be matched with confidence —
 kept as `NOT FOUND`/unresolved rather than guessed.
 
+## Column rename
+The source workbook's `Mass_g` column is renamed to `BodyMass_g` in the built CSV (and nowhere
+else does this column's original name matter) so that `__merging_body_ecology`'s auto-harvester —
+which matches source headers against a `body.?mass` pattern — picks it up as a new body-mass
+source without special-casing. All other column names are kept as printed in the workbook.
+
 ## Data role
 **Primary** — this is the paper's own compiled dataset (per-record provenance tracked via
 `Reference`), the paper's stated contribution.

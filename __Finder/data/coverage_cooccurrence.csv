@@ -83,6 +83,7 @@ broader,Cortex,Neocortex,Didelphis marsupialis,cortical_areas; volumes,2,Surface
 broader,Cortex,Neocortex,Echinops telfairi,cortical_areas; volumes,2,Surface area; Volume,TRUE
 broader,Cortex,Neocortex,Erinaceus europaeus,cortical_areas; volumes,2,Surface area; Volume,TRUE
 broader,Cortex,Neocortex,Felis catus,CMR; cortical_areas,2,Glucose utilization (CMRglc); Surface area; Thickness,TRUE
+broader,Cortex,Neocortex,Heterocephalus glaber,cortical_areas; volumes,2,Surface area; Volume,TRUE
 broader,Cortex,Neocortex,Hydrochoerus hydrochaeris,cortical_areas; volumes,2,Surface area; Thickness; Volume,TRUE
 broader,Cortex,Neocortex,Macaca fascicularis,CMR; cortical_areas,2,Glucose utilization (CMRglc); Surface area; Thickness,TRUE
 broader,Cortex,Neocortex,Mandrillus sphinx,cortical_areas; volumes,2,Surface area; Volume,TRUE
@@ -1841,7 +1842,7 @@ broader,Cortex,Neocortex,Avahi occidentalis,volumes,1,Volume,TRUE
 broader,Cortex,Neocortex,Balionycteris maculata,volumes,1,Volume,TRUE
 broader,Cortex,Neocortex,Bassaricyon gabbii,volumes,1,Volume,TRUE
 broader,Cortex,Neocortex,Bathyergus suillus,volumes,1,Volume,TRUE
-broader,Cortex,Neocortex,Blarina brevicauda,cortical_areas,1,Surface area,FALSE
+broader,Cortex,Neocortex,Blarina brevicauda,cortical_areas,1,Surface area,TRUE
 broader,Cortex,Neocortex,Bos indicus,volumes,1,Volume,TRUE
 broader,Cortex,Neocortex,Bos taurus,cortical_areas,1,Surface area,TRUE
 broader,Cortex,Neocortex,Brachyphylla cavernarum,volumes,1,Volume,TRUE
@@ -1894,7 +1895,7 @@ broader,Cortex,Neocortex,Crocuta crocuta,volumes,1,Volume,TRUE
 broader,Cortex,Neocortex,Cryptomys hottentotus,volumes,1,Volume,TRUE
 broader,Cortex,Neocortex,Cryptomys hottentotus natalensis,volumes,1,Volume,TRUE
 broader,Cortex,Neocortex,Cryptomys hottentotus pretoriae,volumes,1,Volume,TRUE
-broader,Cortex,Neocortex,Cryptotis parva,cortical_areas,1,Surface area,FALSE
+broader,Cortex,Neocortex,Cryptotis parva,cortical_areas,1,Surface area,TRUE
 broader,Cortex,Neocortex,Cynictis penicillata,volumes,1,Volume,TRUE
 broader,Cortex,Neocortex,Cynomops abrasus,volumes,1,Volume,TRUE
 broader,Cortex,Neocortex,Cynomops greenhalli,volumes,1,Volume,TRUE
@@ -1967,7 +1968,6 @@ broader,Cortex,Neocortex,Heliophobius argenteocinereus,volumes,1,Volume,TRUE
 broader,Cortex,Neocortex,Hemicentetes semispinosus,volumes,1,Volume,TRUE
 broader,Cortex,Neocortex,Hemiechinus auritus,volumes,1,Volume,TRUE
 broader,Cortex,Neocortex,Hesperoptenus blanfordi,volumes,1,Volume,TRUE
-broader,Cortex,Neocortex,Heterocephalus glaber,volumes,1,Volume,TRUE
 broader,Cortex,Neocortex,Hipposideros armiger,volumes,1,Volume,TRUE
 broader,Cortex,Neocortex,Hipposideros ater,volumes,1,Volume,TRUE
 broader,Cortex,Neocortex,Hipposideros caffer,volumes,1,Volume,TRUE
@@ -2108,6 +2108,7 @@ broader,Cortex,Neocortex,Nyctimene robinsoni,volumes,1,Volume,TRUE
 broader,Cortex,Neocortex,Nyctimene vizcaccia,volumes,1,Volume,TRUE
 broader,Cortex,Neocortex,Nyctophilus geoffroyi,volumes,1,Volume,TRUE
 broader,Cortex,Neocortex,Odocoileus virginianus,volumes,1,Volume,TRUE
+broader,Cortex,Neocortex,Onychomys leucogaster,cortical_areas,1,Surface area,TRUE
 broader,Cortex,Neocortex,Ornithorhynchus anatinus,cortical_areas,1,Surface area,TRUE
 broader,Cortex,Neocortex,Oryzorictes hova,volumes,1,Volume,TRUE
 broader,Cortex,Neocortex,Otolemur crassicaudatus,volumes,1,Volume,TRUE
@@ -2210,7 +2211,7 @@ broader,Cortex,Neocortex,Setifer setosus,volumes,1,Volume,TRUE
 broader,Cortex,Neocortex,Sminthopsis crassicaudata,cortical_areas,1,Surface area,FALSE
 broader,Cortex,Neocortex,Solenodon paradoxus,volumes,1,Volume,TRUE
 broader,Cortex,Neocortex,Sorex araneus,volumes,1,Volume,TRUE
-broader,Cortex,Neocortex,Sorex cinereus,cortical_areas,1,Surface area,FALSE
+broader,Cortex,Neocortex,Sorex cinereus,cortical_areas,1,Surface area,TRUE
 broader,Cortex,Neocortex,Sorex longirostris,cortical_areas,1,Surface area,FALSE
 broader,Cortex,Neocortex,Sorex minutus,volumes,1,Volume,TRUE
 broader,Cortex,Neocortex,Sorex palustris,cortical_areas,1,Surface area,FALSE

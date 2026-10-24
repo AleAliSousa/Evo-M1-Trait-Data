@@ -1,0 +1,7 @@
+source,scope,status,url,limit
+Kamilar et al. 2010,253 mammals,Secondary overlap audit first,https://pmc.ncbi.nlm.nih.gov/articles/PMC3001368/,Uses PanTHERIA and Shattuck/Williams; 253 species are not 253 independent additions
+Beauchamp et al. vigilance meta-analysis,97 species; 296 effects,Primary-paper discovery queue,https://datadryad.org/dataset/doi:10.5061/dryad.fxpnvx0rs,Effect sample sizes are not automatically social group-size measurements
+Jaeggi et al. 2020 artiodactyls,100 species; 245 populations,Ingested: 245 population snapshots; 100 species categorical summaries,https://pmc.ncbi.nlm.nih.gov/articles/PMC7282923/,Secondary classifications linked to primary citations; no numerical group size inferred
+Qiu et al. 2022 marsupials,65 species; 149 populations,Partial ingestion: 141 archive records / 65 printed species; 64 merged species,https://doi.org/10.5061/dryad.jwstqjqd8,"Full Dryad149-population table blocked; one contradictory SG record and two Ailurops melanotis rows held. Categories only, not group counts"
+Shultz and Dunbar 2007 supplement,Existing repo supplement,No species-level numerical table identified,,Methods/categories/phylograms; pursue underlying Gittleman and Dunbar sources
+Dalerum 2007,119 linked Zhu/Lukas rows,Secondary compilation; trace onward,https://doi.org/10.1111/j.1469-7998.2007.00303.x,Literature compilation cannot be promoted to primary observations

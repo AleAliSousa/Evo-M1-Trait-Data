@@ -1,0 +1,58 @@
+﻿"dataset","source_column","Measure","unit_scale","rule","hayssen_key_in_reference_system"
+"Hayssen_etal_1993","NEONATAL MASS","neonate_body_mass_g",,"label: none; sex: any; central numeric values only (point/mean/mode/median; range -> midpoint); litter-size proxies (emb,cl,ps,implantations,blastocysts,ova) not admitted",
+"Hayssen_etal_1993","WEANING MASS","weaning_body_mass_g",,"label: none; sex: any; central numeric values only (point/mean/mode/median; range -> midpoint); litter-size proxies (emb,cl,ps,implantations,blastocysts,ova) not admitted",
+"Hayssen_etal_1993","LITTER SIZE","litter_size_n",,"label: none; sex: any; central numeric values only (point/mean/mode/median; range -> midpoint); litter-size proxies (emb,cl,ps,implantations,blastocysts,ova) not admitted",
+"Hayssen_etal_1993","LITTERS/YEAR","litters_per_year_n",,"label: none; sex: any; central numeric values only (point/mean/mode/median; range -> midpoint); litter-size proxies (emb,cl,ps,implantations,blastocysts,ova) not admitted",
+"Hayssen_etal_1993","GESTATION","gestation_d",,"label: none; sex: any; central numeric values only (point/mean/mode/median; range -> midpoint); litter-size proxies (emb,cl,ps,implantations,blastocysts,ova) not admitted",
+"Hayssen_etal_1993","LACTATION","weaning_age_d",,"label: in_set [wean]; sex: any; central numeric values only (point/mean/mode/median; range -> midpoint); litter-size proxies (emb,cl,ps,implantations,blastocysts,ova) not admitted",
+"Hayssen_etal_1993","INTERLITTER INTERVAL","interbirth_interval_d",,"label: none; sex: any; central numeric values only (point/mean/mode/median; range -> midpoint); litter-size proxies (emb,cl,ps,implantations,blastocysts,ova) not admitted",
+"Hayssen_etal_1993","INTERBIRTH INTERVAL","interbirth_interval_d",,"label: none; sex: any; central numeric values only (point/mean/mode/median; range -> midpoint); litter-size proxies (emb,cl,ps,implantations,blastocysts,ova) not admitted",
+"Hayssen_etal_1993","SEXUAL MATURITY","female_maturity_age_d",,"label: none; sex: f_or_unspecified; central numeric values only (point/mean/mode/median; range -> midpoint); litter-size proxies (emb,cl,ps,implantations,blastocysts,ova) not admitted",
+"Hayssen_etal_1993","SEXUAL MATURITY","male_maturity_age_d",,"label: none; sex: m; central numeric values only (point/mean/mode/median; range -> midpoint); litter-size proxies (emb,cl,ps,implantations,blastocysts,ova) not admitted",
+"Hayssen_etal_1993","NEONATAL SIZE","neonate_head_body_length_mm",,"label: in_set_or_none [HB;CR]; sex: any; central numeric values only (point/mean/mode/median; range -> midpoint); litter-size proxies (emb,cl,ps,implantations,blastocysts,ova) not admitted",
+"Hayssen_etal_1993","WEANING SIZE","weaning_head_body_length_mm",,"label: in_set_or_none [HB;CR]; sex: any; central numeric values only (point/mean/mode/median; range -> midpoint); litter-size proxies (emb,cl,ps,implantations,blastocysts,ova) not admitted",
+"Hayssen_etal_1993","CYCLE LENGTH","estrous_cycle_length_d",,"label: none; sex: any; central numeric values only (point/mean/mode/median; range -> midpoint); litter-size proxies (emb,cl,ps,implantations,blastocysts,ova) not admitted",
+"Jones_etal_2009","5-3_NeonateBodyMass_g","neonate_body_mass_g",1,"value as published; -999/blank = not published","1297"
+"Jones_etal_2009","5-4_WeaningBodyMass_g","weaning_body_mass_g",1,"value as published; -999/blank = not published","1297"
+"Jones_etal_2009","15-1_LitterSize","litter_size_n",1,"value as published; -999/blank = not published","1297"
+"Jones_etal_2009","16-1_LittersPerYear","litters_per_year_n",1,"value as published; -999/blank = not published","1297"
+"Jones_etal_2009","9-1_GestationLen_d","gestation_d",1,"value as published; -999/blank = not published","1297"
+"Jones_etal_2009","25-1_WeaningAge_d","weaning_age_d",1,"value as published; -999/blank = not published","1297"
+"Jones_etal_2009","14-1_InterbirthInterval_d","interbirth_interval_d",1,"value as published; -999/blank = not published","1297"
+"Jones_etal_2009","23-1_SexualMaturityAge_d","female_maturity_age_d",1,"PanTHERIA pools the sexes; mapped to the female measure (definition narrower)","1297"
+"Jones_etal_2009","13-2_NeonateHeadBodyLen_mm","neonate_head_body_length_mm",1,"value as published; -999/blank = not published","1297"
+"Jones_etal_2009","13-3_WeaningHeadBodyLen_mm","weaning_head_body_length_mm",1,"value as published; -999/blank = not published","1297"
+"Jones_etal_2009","17-1_MaxLongevity_m","maximum_longevity_y",0.08333333333333333,"months -> years","1297"
+"Jones_etal_2009","5-1_AdultBodyMass_g","adult_body_mass_g",1,"value as published; -999/blank = not published","1297"
+"deMagalhães_etal_2024","Birth_weight_g","neonate_body_mass_g",1,"value as published; -999/blank = not published","455"
+"deMagalhães_etal_2024","Weaning_weight_g","weaning_body_mass_g",1,"value as published; -999/blank = not published","455"
+"deMagalhães_etal_2024","Litter_Clutch_size","litter_size_n",1,"value as published; -999/blank = not published","455"
+"deMagalhães_etal_2024","Litters_Clutches_per_year","litters_per_year_n",1,"value as published; -999/blank = not published","455"
+"deMagalhães_etal_2024","Gestation_Incubation_days","gestation_d",1,"value as published; -999/blank = not published","455"
+"deMagalhães_etal_2024","Weaning_days","weaning_age_d",1,"value as published; -999/blank = not published","455"
+"deMagalhães_etal_2024","Inter_litter_Interbirth_interval_days","interbirth_interval_d",1,"value as published; -999/blank = not published","455"
+"deMagalhães_etal_2024","Female_maturity_days","female_maturity_age_d",1,"value as published; -999/blank = not published","455"
+"deMagalhães_etal_2024","Male_maturity_days","male_maturity_age_d",1,"value as published; -999/blank = not published","455"
+"deMagalhães_etal_2024","Maximum_longevity_yrs","maximum_longevity_y",1,"value as published; -999/blank = not published","455"
+"deMagalhães_etal_2024","Adult_weight_g","adult_body_mass_g",1,"value as published; -999/blank = not published","455"
+"Ernest__2003","Newborn_mass_g","neonate_body_mass_g",1,"value as published; -999/blank = not published","1"
+"Ernest__2003","Weaning_mass_g","weaning_body_mass_g",1,"value as published; -999/blank = not published","1"
+"Ernest__2003","Litter_size","litter_size_n",1,"value as published; -999/blank = not published","1"
+"Ernest__2003","Litters_per_year","litters_per_year_n",1,"value as published; -999/blank = not published","1"
+"Ernest__2003","Gestation_mo","gestation_d",30.4375,"months -> days","1"
+"Ernest__2003","Weaning_age_mo","weaning_age_d",30.4375,"months -> days","1"
+"Ernest__2003","AFR_mo","age_at_first_reproduction_d",30.4375,"age at first reproduction (conception), not sexual maturity; own measure","1"
+"Ernest__2003","Max_lifespan_mo","maximum_longevity_y",0.08333333333333333,"months -> years","1"
+"Ernest__2003","Adult_mass_g","adult_body_mass_g",1,"value as published; -999/blank = not published","1"
+"Myhrvold_etal_2015","birth_or_hatching_weight_g","neonate_body_mass_g",1,"value as published; -999/blank = not published","Hayssen"
+"Myhrvold_etal_2015","weaning_weight_g","weaning_body_mass_g",1,"value as published; -999/blank = not published","Hayssen"
+"Myhrvold_etal_2015","litter_or_clutch_size_n","litter_size_n",1,"value as published; -999/blank = not published","Hayssen"
+"Myhrvold_etal_2015","litters_or_clutches_per_y","litters_per_year_n",1,"value as published; -999/blank = not published","Hayssen"
+"Myhrvold_etal_2015","gestation_d","gestation_d",1,"value as published; -999/blank = not published","Hayssen"
+"Myhrvold_etal_2015","weaning_d","weaning_age_d",1,"value as published; -999/blank = not published","Hayssen"
+"Myhrvold_etal_2015","inter_litter_or_interbirth_interval_y","interbirth_interval_d",365.25,"years -> days","Hayssen"
+"Myhrvold_etal_2015","female_maturity_d","female_maturity_age_d",1,"value as published; -999/blank = not published","Hayssen"
+"Myhrvold_etal_2015","male_maturity_d","male_maturity_age_d",1,"value as published; -999/blank = not published","Hayssen"
+"Myhrvold_etal_2015","birth_or_hatching_svl_cm","neonate_head_body_length_mm",10,"cm -> mm","Hayssen"
+"Myhrvold_etal_2015","maximum_longevity_y","maximum_longevity_y",1,"value as published; -999/blank = not published","Hayssen"
+"Myhrvold_etal_2015","adult_body_mass_g","adult_body_mass_g",1,"value as published; -999/blank = not published","Hayssen"

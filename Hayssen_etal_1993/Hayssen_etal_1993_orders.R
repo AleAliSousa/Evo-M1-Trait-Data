@@ -106,7 +106,7 @@ for (ord in ord_rows$name) {
   if (!item_name %in% registered) next
   item_encoded <- item_encoded_of(item_name)
   tsv_path <- file.path(tsv_dir, paste0(item_encoded, ".tsv"))
-  write.table(final.dataframe, tsv_path, sep = "\t", row.names = FALSE, na = "", quote = TRUE, fileEncoding = "UTF-8")
+  write.table(final.dataframe, tsv_path, sep = "\t", row.names = FALSE, na = "", quote = TRUE, qmethod = "double", fileEncoding = "UTF-8")
   frozen <- file.path(folder, "pdf_by_order", slice_map$file[slice_map$section == ord])
   checks <- validate_dataset_item(csv_file = csv_path, tsv_file = tsv_path, readme_file = readme_file, definitions_file = definitions_file,
                                   frozen_source_file = frozen, registry = filecodes, item_name = item_name, item_encoded = item_encoded)
@@ -123,7 +123,7 @@ csv_path <- file.path(folder, paste0(item_name, ".csv")); write_bom_csv(refs, cs
 if (item_name %in% registered) {
   item_encoded <- item_encoded_of(item_name)
   tsv_path <- file.path(tsv_dir, paste0(item_encoded, ".tsv"))
-  write.table(refs, tsv_path, sep = "\t", row.names = FALSE, na = "", quote = TRUE, fileEncoding = "UTF-8")
+  write.table(refs, tsv_path, sep = "\t", row.names = FALSE, na = "", quote = TRUE, qmethod = "double", fileEncoding = "UTF-8")
   checks <- validate_dataset_item(csv_file = csv_path, tsv_file = tsv_path, readme_file = readme_file,
                                   definitions_file = file.path(out_dir, paste0(paper, "_references_definitions.csv")),
                                   frozen_source_file = file.path(folder, "pdf_by_order", slice_map$file[slice_map$section == "LiteratureCited"]),

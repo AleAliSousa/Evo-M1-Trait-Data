@@ -467,10 +467,14 @@ parse_value <- function(v) {
   } else { rest <- main; out$value_type <- "text" }
   ## unit / count word directly after the number(s)
   toks <- str_split(str_squish(rest), "\\s+")[[1]]; toks <- toks[nzchar(toks)]
-  if(length(toks) && toks[1] %in% UNITS) { out$value_unit <- toks[1]; toks <- toks[-1] }
+  ## the unit token may carry trailing punctuation: '480 g, n1' (then ', n1' is the n), '220 d: r211-229', '6 mo?' (the '?' stays
+  ## in the remainder as the book's uncertainty mark); 61 lines in the full build read 'count' before this was allowed
+  u1 <- if(length(toks)) str_replace(toks[1], "[,:?]+$", "") else ""
+  if(length(toks) && u1 %in% UNITS) { out$value_unit <- u1; toks <- if(str_detect(toks[1], "\\?$")) c("?", toks[-1]) else toks[-1] }
   else if(length(toks) && str_detect(toks[1], "^[0-9.]+%$")) { out$value_unit <- "%"; }
   if(length(toks) && str_replace(toks[1], ",$", "") %in% COUNT_WORDS) { out$count_unit <- str_replace(toks[1], ",$", ""); toks <- toks[-1] }
   if(out$value_type != "text" && is.na(out$value_unit)) out$value_unit <- "count"
+  if(length(toks) && str_detect(toks[1], "^n\\d+$") && is.na(out$n)) { out$n <- as.integer(str_sub(toks[1], 2)); toks <- toks[-1] }   # '480 g, n1'
   if(length(toks)) out$main_remainder <- paste(toks, collapse = " ")
   ## qualifier segments
   for(q in quals) {

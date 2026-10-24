@@ -1,0 +1,3 @@
+column,description,units,value_coding,data_role,source_location,notes
+source_id,Numbered source code exactly as printed in the Table 1 footnote.,,integer 1-32,primary,Heesy_etal_2011_Table1 footnote,
+citation,"Short-form citation (author[s] + year) exactly as printed; full bibliographic details are in the paper's own References section, not reproduced here.",,text,primary,Heesy_etal_2011_Table1 footnote,"Short-form only, matching house convention for footnote-numbered source lists"

@@ -1,0 +1,12 @@
+column,description,units,value_coding,data_role,source_location,notes
+Order,"Mammalian order, as grouped in the printed table.",,text,primary/secondary,Heesy_etal_2011_Table1,
+Taxon,Species (or genus-level 'sp.') name as printed.,,text,primary/secondary,Heesy_etal_2011_Table1,
+ACT,Activity pattern.,,"N=nocturnal, D=diurnal, C=cathemeral, NA=not applicable",secondary,Heesy_etal_2011_Table1,
+CONV_deg,Orbit convergence angle.,degrees,numeric,primary/secondary,Heesy_etal_2011_Table1,See CONV_digitized_for_this_study
+CONV_digitized_for_this_study,Whether this row's orbit-convergence value was newly digitized for this 2011 paper (vs. taken from a prior publication).,,TRUE/FALSE,info,Heesy_etal_2011_Table1 footnote 2,8/84 rows TRUE
+BodyMass_g,Body mass.,grams,numeric,secondary,Heesy_etal_2011_Table1,
+BrainVolume_mm3,Whole brain volume.,mm3,numeric,secondary,Heesy_etal_2011_Table1,
+OpticTractVolume_mm3,Optic tract volume.,mm3,numeric,secondary,Heesy_etal_2011_Table1,
+LGNVolume_mm3,Lateral geniculate nucleus volume.,mm3,numeric; one row (Rattus norvegicus wild type) prints a compound value '3.48/3.68' and is kept verbatim as a string,secondary,Heesy_etal_2011_Table1,
+V1Volume_mm3,Primary visual cortex (V1) volume.,mm3,numeric,secondary,Heesy_etal_2011_Table1,
+Source_codes,Comma-separated numeric source code(s) per row.,,"integers, keys into reference_tables/Heesy_etal_2011_Table1_references.csv on source_id",secondary,Heesy_etal_2011_Table1,

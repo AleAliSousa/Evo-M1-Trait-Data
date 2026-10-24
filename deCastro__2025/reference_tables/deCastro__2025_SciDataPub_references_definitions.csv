@@ -1,0 +1,7 @@
+column,description,units,value_coding,data_role,source_location,notes
+ref_key,Shorthand reference code exactly as printed in the Reference column.,,text,derived,deCastro__2025_SciDataPub,
+cited_in_column,Which column of the data item this key was extracted from.,,always 'Reference',derived,deCastro__2025_SciDataPub,
+matched_author,"First-author surname matched in the workbook's own DOI sheet, when resolved.",,"text, NA if unresolved",derived,"FieldMR_SciDataPub.xls, sheet DOI",
+matched_year,"Publication year matched in the DOI sheet, when resolved.",,"integer/text, NA if unresolved",derived,"FieldMR_SciDataPub.xls, sheet DOI",
+citation,"Full citation (author, year, title, journal, DOI), assembled from the DOI sheet's own columns, when resolved.",,"text, NA if unresolved",derived,"FieldMR_SciDataPub.xls, sheet DOI",
+note,"Match status, or the reason this key could not be resolved. 'NOT FOUND' entries are cited by the data table but absent from the workbook's own DOI sheet -- kept verbatim, not guessed at or dropped.",,text,derived,matching performed during this build; see README,

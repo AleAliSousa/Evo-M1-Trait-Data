@@ -1,0 +1,16 @@
+column,description,units,value_coding,data_role,source_location,notes
+Kingdom,Taxonomic kingdom.,,"text, 58 blank",primary,"FieldMR_SciDataPub.xls, sheet Alldata",
+Phylum,Taxonomic phylum.,,"text, 60 blank",primary,"FieldMR_SciDataPub.xls, sheet Alldata",
+Class,Taxonomic class.,,"text, 60 blank",primary,"FieldMR_SciDataPub.xls, sheet Alldata",
+Order,Taxonomic order.,,"text, 146 blank",primary,"FieldMR_SciDataPub.xls, sheet Alldata",
+Family,Taxonomic family.,,"text, 90 blank",primary,"FieldMR_SciDataPub.xls, sheet Alldata",
+Genus,Taxonomic genus.,,"text, 84 blank",primary,"FieldMR_SciDataPub.xls, sheet Alldata",
+SpeciesVerbatim,Species name exactly as it appears in the cited source.,,text,primary,"FieldMR_SciDataPub.xls, sheet Alldata",
+SpeciesAcceptedName,"Taxonomically-resolved accepted species name, when different from SpeciesVerbatim.",,"text, 283 blank (verbatim name accepted as-is)",primary,"FieldMR_SciDataPub.xls, sheet Alldata",
+FMR_kJ_d,Field metabolic rate.,kJ/day,"numeric, 20 blank",primary,"FieldMR_SciDataPub.xls, sheet Alldata",
+Mass_g,Body mass.,grams,numeric,primary,"FieldMR_SciDataPub.xls, sheet Alldata",
+Temp_C,Ambient temperature.,degrees Celsius,"numeric, 108 blank",primary,"FieldMR_SciDataPub.xls, sheet Alldata",
+Endotherm,Whether the species is an endotherm.,,"0=ectotherm (4,369 rows), 1=endotherm (268 rows)",primary,"FieldMR_SciDataPub.xls, sheet Alldata",
+Reference,"Shorthand citation for this record's source, author surname(s) + year.",,text key,primary,"FieldMR_SciDataPub.xls, sheet Alldata","Join against reference_tables/deCastro__2025_SciDataPub_references.csv on ref_key for the resolved full citation (DOI included). 169/192 unique keys (4,173/4,637 rows, 90%) resolve against the workbook's own DOI sheet; the rest are either absent from that sheet or could not be matched with confidence -- kept verbatim, not guessed (see that file's note column)."
+Comment,"Free-text comment on the record, when present.",,"text, 3,821 blank",primary,"FieldMR_SciDataPub.xls, sheet Alldata",
+Outlier,Whether this record was flagged as a statistical outlier by the dataset's own curation.,,"0=not flagged (4,238), 1=flagged (329), blank=not evaluated (70)",primary,"FieldMR_SciDataPub.xls, sheet Alldata",

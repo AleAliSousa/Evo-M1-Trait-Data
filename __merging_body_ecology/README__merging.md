@@ -131,8 +131,23 @@ source typos.
 - The all-mammal scope means most of the 5,576 species have a single (Wilman) source; the
   merge's pooling value-add is for the ~300 species measured by multiple sources.
 
-## App integration (next)
+## App integration (checked 2026-10-24)
+This TODO was stale: TraitExplorer's `data_layer.R` (`load_trait_data()`) auto-discovers every
+`__merging_*` folder from the GitHub tree listing and reads its `<domain>_long.csv` generically —
+no per-domain registration in `app.R` is needed, and `body_ecology_long.csv` is already picked up
+this way. The still-open item is dropping the now-redundant raw body-mass columns from the other
+tables' canonical pooling so `Body_Mass (g)` has a single authoritative source — not done here.
 
-Add `__merging_body_ecology/body_ecology_long.csv` as a dataset in `__ShinyApp/app.R`
-(`load_compiled`), and drop the now-redundant raw body-mass columns from the other three tables'
-canonical pooling so `Body_Mass (g)` has a single authoritative source. Not yet wired.
+## Added sources (2026-10-24)
+Two new TSVs were auto-harvested into the `mass` class via the existing `body_rx` column-name
+pattern, no code change to this script needed:
+- `Heesy_etal_2011_Table1` — already printed a `BodyMass_g` column.
+- `deCastro__2025_SciDataPub` — printed `Mass_g`; renamed to `BodyMass_g` in that item's own build
+  script (not here) to match the `body.?mass` pattern. See that item's README for the rename note.
+
+`deCastro__2025_SciDataPub` contributes 4,637 individual-level FMR-study records (many are
+repeated growth-series measurements of the same species at different life stages, not one
+species mean), which widens several species' within-species body-mass range and adds new
+`DISAGREEMENT>2x` flags in `body_ecology_dedupe_report.csv` for species it contributes heavily to
+(e.g. several fish species). These are legitimate flags reflecting genuine ontogenetic spread in
+the new source, not merge errors — reviewed, not corrected.

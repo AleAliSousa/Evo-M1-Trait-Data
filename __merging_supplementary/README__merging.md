@@ -201,3 +201,33 @@ Data3-only species, four nominal variables, with five explicitly source-reported
 primary social observations. See `Zhu_etal_2023/SOCIAL_MERGE.md` for provenance,
 duplicate handling and rebuild instructions, and `_checks/social_variables/`
 for coverage and taxonomy audits. These labels are not pooled with mating systems.
+
+
+## Heesy et al. 2011 orbit convergence + deCastro 2025 field metabolic rate (2026-10-24)
+
+`Heesy_etal_2011_Table1` adds `Orbit_convergence (deg)` (shared label, pools with
+`Heesy__2004_Table1`'s existing values) for only the **8 of 84 species** the source itself flags as
+newly digitized for this study (`CONV_digitized_for_this_study`). The remaining 76 species'
+convergence values reprint the same Stephan/Frahm-era citations already excluded from
+`__merging_volumes` for this paper (see that merge's README) and are not added here, to avoid
+re-introducing already-compiled values under a new paper label. The paper's four volume columns
+and its `ACT` (activity-pattern) column are not mapped here either: volumes are handled (and
+excluded) in `__merging_volumes`; activity pattern duplicates `__merging_body_ecology`'s
+EltonTraits-derived `Activity_pattern` coverage (5,397 species) with no added scientific content
+for this paper's 84 overlapping taxa.
+
+`deCastro__2025_SciDataPub` adds `FMR_deCastro2025 (kJ/day)` as a new, distinct label — field
+metabolic rate (whole-animal energy expenditure measured in the field, e.g. doubly-labeled water),
+not basal/resting metabolic rate, so not pooled with `__merging_body_ecology`'s `BMR_wholeanimal`.
+707 species, aggregated by mean across the dataset's 4,637 individual-level (often ontogenetic
+growth-series) records per source species.
+
+While wiring these in, three pre-existing, unrelated item-name mismatches in this file were found
+and fixed (`Boyer_Harrington_2019_SOMTableS6` -> `Boyer__2019_SOMTableS6`,
+`Semendeferi_Damasio_2000_Table2` -> `Semendeferi__2000_Table2`,
+`Winkler_Bryant_2021_Figure1` -> `Winkler__2021_Figure1`,
+`deMagalhães_etal_2024_anagedata.txt` -> `deMagalhães__2024_anagedata.txt`) and one corrupted
+`__ReadMe.xlsx` registry cell (Myhrvold's `Item number` had leaked
+`xml:space="preserve">` markup, breaking its `Item name` formula) was cleaned up -- all four were
+blocking `supplementary_compiled.R` from completing a full run at all, independent of this
+paper's own additions.

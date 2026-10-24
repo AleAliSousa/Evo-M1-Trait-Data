@@ -1,10 +1,11 @@
 """Myhrvold_etal_2015_AmnioteDatabaseAug2015.py -- reformat the amniote life-history
 database (Myhrvold et al. 2015) into a long analysis table with per-value references.
 
-Registry note: the paper's own registry rows (added by the project owner before this
-build) use Item name = "Myhrvold_etal_2015_AmnioteDatabaseAug2015.csv" -- i.e. the
-registered name already carries the ".csv" extension. ITEM_NAME below is hardcoded to
-match that exactly, rather than derived from this script's own filename.
+Registry note: the registry's "Item name" for this item is "Myhrvold_etal_2015_AmnioteDatabaseAug2015"
+(no file extension, matching house convention). An earlier version of this row had the
+original Data_Files filename (with ".csv") leaking into the registry's "Item number"
+column (plus, once, stray XML markup from a bad paste) -- both were fixed directly in
+__ReadMe.xlsx; this script's own output CSV name is independently ITEM_NAME + ".csv".
 
 Frozen sources (byte-identical copies of the two Data_Files, never edited):
   Myhrvold_etal_2015_AmnioteDatabaseAug2015_snapshot.csv            -- values, -999 = missing
@@ -17,7 +18,7 @@ import os
 import pandas as pd
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-ITEM_NAME = "Myhrvold_etal_2015_AmnioteDatabaseAug2015.csv"
+ITEM_NAME = "Myhrvold_etal_2015_AmnioteDatabaseAug2015"
 
 # ---- repo root: walk up from HERE to find __ReadMe.xlsx -----------------------------
 def find_repo_root(start):
@@ -74,9 +75,9 @@ long["source_location"] = ("Amniote_Database_Aug_2015.csv + "
 out = long[TAX_COLS + ["trait", "unit", "value", "reference", "data_role", "source_location"]]
 out = out.sort_values(["class", "order", "family", "genus", "species", "trait"]).reset_index(drop=True)
 
-out_path = os.path.join(HERE, ITEM_NAME)
+out_path = os.path.join(HERE, f"{ITEM_NAME}.csv")
 out.to_csv(out_path, index=False)
-print(f"{ITEM_NAME}: {len(out)} rows written")
+print(f"{ITEM_NAME}.csv: {len(out)} rows written")
 
 ## ---- public TSV ----------------------------------------------------------------
 if REPO:

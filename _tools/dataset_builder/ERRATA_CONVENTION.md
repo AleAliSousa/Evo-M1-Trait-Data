@@ -99,6 +99,7 @@ What the queue letter means depends on what the audited dataset *is*:
 | `sensory_data_refs_check` | an unpublished workbook | **A** (repo transcription vs PDF), **B** (indexed papers disagree) | **C** — workbook errors are reported to the curator and replaced, not recorded on a paper |
 | `stephan_primates_refs_check` | a compilation CSV | **B** (structure-key conflict → `publication_ambiguity` on the source paper) | **C** — compilation errors go to the corrected copy |
 | `DeCasien … BrainRegion_refs_check` | itself a published supplement | **P** (supplement disagrees with the source it cites → errata on `DeCasien_Higham_2019`, status *proposed*; the CSV keeps the printed value) | **A** (audit self-checks), **G** (coverage gaps) |
+| `resolve_reference_chains.py` (`_tools/dataset_builder/reference_chains/findings/`) | the repo's own reference lists (citation graph, paper level) | **R** (root unresolved: the citing paper prints an abbreviated / unresolvable citation → `publication_ambiguity`, *proposed*; or the repo list omits a printed entry → build-script fix + `repo_transcription_error`) | **M** (resolver match confirmations → matcher overrides), **K** (registry `Data role` gaps → `__ReadMe.xlsx`) |
 
 ### Rendering notes (render_errata.R, 2026-09-29)
 

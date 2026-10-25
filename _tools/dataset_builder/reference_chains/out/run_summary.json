@@ -1,0 +1,90 @@
+{
+ "relationship_rows_sibling_reprints_no_edge": [
+  "SR110",
+  "SR111",
+  "SR112",
+  "SR113",
+  "SR114",
+  "SR115",
+  "SR137",
+  "SR138",
+  "SR142",
+  "SR143",
+  "SR172",
+  "SR174",
+  "SR186",
+  "SR188"
+ ],
+ "relationship_edges": 66,
+ "reference_files_read": 79,
+ "files_skipped": [
+  [
+   "Jones_etal_2009/reference_tables/Jones_etal_2009_species_data_without_references.csv",
+   "no citation column"
+  ],
+  [
+   "Myhrvold_etal_2015/Data_Files/Amniote_Database_References_Aug_2015.csv",
+   "no citation column"
+  ],
+  [
+   "Pirlot_Kamiya_1982/reference_tables/Pirlot_Kamiya_1982_Table2_Table3_reference.csv",
+   "no citation column"
+  ],
+  [
+   "Pirlot_Kamiya_1985/reference_tables/Pirlot_Kamiya_1985_Table2_reference.csv",
+   "no citation column"
+  ]
+ ],
+ "reference_rows": 23680,
+ "self_citations": 19,
+ "edges": 20899,
+ "nodes": 19000,
+ "repo_folders": 396,
+ "resolution_levels": {
+  "Terminal_external": 19973,
+  "Orphan": 730,
+  "Terminal_unverified": 80,
+  "Intermediate": 56,
+  "Terminal": 52,
+  "Ambiguous": 5,
+  "Cycle": 3
+ },
+ "match_status": {
+  "not_in_repo": 20366,
+  "unparseable": 341,
+  "matched": 166,
+  "matched_pattern_differs": 20,
+  "ambiguous_repo_match": 5,
+  "matched_by_title": 1
+ },
+ "root_status": {
+  "external_unverified": 19977,
+  "orphan": 730,
+  "in_repo_role_unverified": 83,
+  "verified_primary_in_repo": 71,
+  "mixed": 33,
+  "self_declared_primary": 11,
+  "ambiguous": 5
+ },
+ "max_depth_hops": 4,
+ "terminal_lookup_rows": 67198,
+ "cycles": [
+  [
+   "Myhrvold_etal_2015",
+   "deMagalh\u00e3es_etal_2024"
+  ]
+ ],
+ "review_queue": {
+  "P3": 19973,
+  "P1": 742,
+  "P2": 90
+ },
+ "REVIEW_QUEUE": {
+  "R": 742,
+  "K": 69,
+  "M": 21
+ },
+ "REVIEW_QUEUE_worked": 0,
+ "resolutions_stale": 0,
+ "match_overrides_applied": 0
+}

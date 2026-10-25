@@ -76,6 +76,10 @@ no `table_checks` is simply not assessed (most tables have nothing to check).
 
 ## Reference documents
 
+- `reference_chains/README.md` — `resolve_reference_chains.py`: paper-level citation graph
+  (C → B → A) over every item's reference list, resolved to root references; its
+  `findings/REVIEW_QUEUE.csv` (queues R / M / K) feeds the errata workflow like a `*_refs_check` queue.
+
 Step-by-step procedures are in:
 
 ```

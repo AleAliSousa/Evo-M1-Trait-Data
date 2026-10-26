@@ -1,0 +1,294 @@
+{
+  "folder": "Smaers_etal_2011_b",
+  "item": "Smaers_etal_2011_b_Table2",
+  "locus": "Table2",
+  "headers": [
+    "individual_as_published",
+    "N",
+    "FR",
+    "NF",
+    "Cereb",
+    "CC",
+    "SC",
+    "FL",
+    "Brain",
+    "Str",
+    "Hipp",
+    "Piri",
+    "Medulla"
+  ],
+  "n_rows": 38,
+  "source": "/Users/crossmodal/Documents/References.Data/PDF/0220071004/Smaers-2011-Modeling the evolution of cortico-.pdf",
+  "kind": "evidence",
+  "role": "both",
+  "unit": "mixed",
+  "caption": "Table2",
+  "locator": "Table 2, printed p.186",
+  "notes": "N/FR/NF/Cereb repeat Smaers2010; CC/SC/FL are current study. Brain/Str/Hipp/Piri/Medulla are Stephan records; starred brain values from MacLeod. Keep specimen rows and blanks. Registry routes only current-study structures into the additional anatomy merge.",
+  "custom_columns": [
+    {
+      "index": 1,
+      "code": "species_and_specimen_as_published",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "both",
+      "definition": "individual_as_published"
+    },
+    {
+      "index": 2,
+      "code": "N",
+      "type": "number",
+      "unit": "mm3",
+      "factor": 1,
+      "role": "secondary",
+      "definition": "N"
+    },
+    {
+      "index": 3,
+      "code": "FR",
+      "type": "number",
+      "unit": "mm3",
+      "factor": 1,
+      "role": "secondary",
+      "definition": "FR"
+    },
+    {
+      "index": 4,
+      "code": "NF",
+      "type": "number",
+      "unit": "mm3",
+      "factor": 1,
+      "role": "secondary",
+      "definition": "NF"
+    },
+    {
+      "index": 5,
+      "code": "Cereb",
+      "type": "number",
+      "unit": "mm3",
+      "factor": 1,
+      "role": "secondary",
+      "definition": "Cereb"
+    },
+    {
+      "index": 6,
+      "code": "CC",
+      "type": "number",
+      "unit": "mm3",
+      "factor": 1,
+      "role": "primary",
+      "definition": "CC"
+    },
+    {
+      "index": 7,
+      "code": "SC",
+      "type": "number",
+      "unit": "mm3",
+      "factor": 1,
+      "role": "primary",
+      "definition": "SC"
+    },
+    {
+      "index": 8,
+      "code": "FL",
+      "type": "number",
+      "unit": "mm3",
+      "factor": 1,
+      "role": "primary",
+      "definition": "FL"
+    },
+    {
+      "index": 9,
+      "code": "Brain",
+      "type": "number",
+      "unit": "mm3",
+      "factor": 1,
+      "role": "secondary",
+      "definition": "Brain"
+    },
+    {
+      "index": 10,
+      "code": "Str",
+      "type": "number",
+      "unit": "mm3",
+      "factor": 1,
+      "role": "secondary",
+      "definition": "Str"
+    },
+    {
+      "index": 11,
+      "code": "Hipp",
+      "type": "number",
+      "unit": "mm3",
+      "factor": 1,
+      "role": "secondary",
+      "definition": "Hipp"
+    },
+    {
+      "index": 12,
+      "code": "Piri",
+      "type": "number",
+      "unit": "mm3",
+      "factor": 1,
+      "role": "secondary",
+      "definition": "Piri"
+    },
+    {
+      "index": 13,
+      "code": "Medulla",
+      "type": "number",
+      "unit": "mm3",
+      "factor": 1,
+      "role": "secondary",
+      "definition": "Medulla"
+    }
+  ],
+  "keep_rows": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    11,
+    13,
+    15,
+    17,
+    19,
+    21,
+    23,
+    25,
+    27,
+    29,
+    31,
+    33,
+    35,
+    37
+  ],
+  "snapshot": "Smaers_etal_2011_b_Table2_snapshot.csv",
+  "item_encoded": "10.1111%2Fj.1749-6632.2011.06003.x_Table2",
+  "species_col": 1,
+  "expected_rows": 19,
+  "columns": [
+    {
+      "index": 1,
+      "code": "species_and_specimen_as_published",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "both",
+      "definition": "individual_as_published"
+    },
+    {
+      "index": 2,
+      "code": "N",
+      "type": "number",
+      "unit": "mm3",
+      "factor": 1,
+      "role": "secondary",
+      "definition": "N"
+    },
+    {
+      "index": 3,
+      "code": "FR",
+      "type": "number",
+      "unit": "mm3",
+      "factor": 1,
+      "role": "secondary",
+      "definition": "FR"
+    },
+    {
+      "index": 4,
+      "code": "NF",
+      "type": "number",
+      "unit": "mm3",
+      "factor": 1,
+      "role": "secondary",
+      "definition": "NF"
+    },
+    {
+      "index": 5,
+      "code": "Cereb",
+      "type": "number",
+      "unit": "mm3",
+      "factor": 1,
+      "role": "secondary",
+      "definition": "Cereb"
+    },
+    {
+      "index": 6,
+      "code": "CC",
+      "type": "number",
+      "unit": "mm3",
+      "factor": 1,
+      "role": "primary",
+      "definition": "CC"
+    },
+    {
+      "index": 7,
+      "code": "SC",
+      "type": "number",
+      "unit": "mm3",
+      "factor": 1,
+      "role": "primary",
+      "definition": "SC"
+    },
+    {
+      "index": 8,
+      "code": "FL",
+      "type": "number",
+      "unit": "mm3",
+      "factor": 1,
+      "role": "primary",
+      "definition": "FL"
+    },
+    {
+      "index": 9,
+      "code": "Brain",
+      "type": "number",
+      "unit": "mm3",
+      "factor": 1,
+      "role": "secondary",
+      "definition": "Brain"
+    },
+    {
+      "index": 10,
+      "code": "Str",
+      "type": "number",
+      "unit": "mm3",
+      "factor": 1,
+      "role": "secondary",
+      "definition": "Str"
+    },
+    {
+      "index": 11,
+      "code": "Hipp",
+      "type": "number",
+      "unit": "mm3",
+      "factor": 1,
+      "role": "secondary",
+      "definition": "Hipp"
+    },
+    {
+      "index": 12,
+      "code": "Piri",
+      "type": "number",
+      "unit": "mm3",
+      "factor": 1,
+      "role": "secondary",
+      "definition": "Piri"
+    },
+    {
+      "index": 13,
+      "code": "Medulla",
+      "type": "number",
+      "unit": "mm3",
+      "factor": 1,
+      "role": "secondary",
+      "definition": "Medulla"
+    }
+  ],
+  "source_sha256": "ebb797a2f70a6a5650e9ec1435f536822ba1c1ca9ed8b2acbed628c5026ecd80",
+  "snapshot_sha256": "dcf53dd627d585b86d5756ea3f36d6e352220afb426885eafba8aa280b1fb68c",
+  "append_next_species_line": true
+}

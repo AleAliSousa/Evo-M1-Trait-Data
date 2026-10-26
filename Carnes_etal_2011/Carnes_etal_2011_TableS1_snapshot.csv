@@ -1,0 +1,72 @@
+Genus and species,(A)  Breeding season Duration,(B)  Estrus Duration,(C)  Number Females,(D) Number Males,(E)  Expected overlap,(F)  Dispersion,(G)  'r' seasonality value,Reference Exceptions
+Alouatta caraya,365,2.9,2,1,0,C,0.32,
+Alouatta palliata,365,3,8,2,0.7,C,0.2,
+Alouatta seniculus,365,2.8,2.5,1.5,0.1,C,0.2,F) Pope 1990
+Aotus trivirganus,365,---,1,1,0,C,0.34,A)Harcourt 1995
+Ateles paniscus,365,6,16,5,9.6,F,0.37,
+Avahi laniger,59,---,1,1,0,F,---,
+Brachyteles arachnoides,153,2,15,9.8,5.7,C,0.64,
+Callicebus moloch,212,---,1,1,0,C,0.82,"A) Valeggia et al. 1999, C&D) Plavcan 2004, F) Robinson 1979"
+Callimico goeldii,91,7,2.7,1.3,6.4,C,---,"B) van Schaik et al 1999, C&D) Heymann 2000, F) Porter 2001"
+Callithrix jacchus,365,28,2.9,2.7,6.3,C,0.2,F) Digby 1999
+Cebuella pygmaea,184,6,1.4,1.4,0,C,0.15,"B) van Schaik et al 1999, C&D) Heymann 2000"
+Cebus apella,92,5,2.3,2,1.2,C,0.66,F) Stevenson 1998
+Cebus capucinus,212,5.5,4,5.5,1.5,C,0.46,F) Boinski & Campbell 1996
+Cebus olivaceus,124,5.5,6,1,9.3,C,0.66,F) Robinson 1988
+Cercopithecus ascanius,182,3,9.5,1,4.1,C,0.25,F) Cords 1987
+Cercopithecus mitis,120,2,18,1,12,C,0.73,F) Cords 1987
+Cheirogaleus medius,61,2,1,1,0,D,---,
+Chlorocebus aethiops,92,33,4.3,3,92,C,0.85,F) Melnick & Pearl 1987
+Colobus guereza,365,8,3,1,0.6,C,---,"B) Harris & Monfort 2006, F) Oates 1977"
+Daubentonia madagascariensis,365,8,1,1,0,D,---,
+Erythrocebus patas,62,2,13,3,20,C,0.85,F) Cords 1987
+Eulemur fulvus rufus,28,2.5,2.8,3.8,8.4,C,1,"A) Ostner et al 2008, C&D) Ostner & Kappeler 2004"
+Eulemur macaco flavifrons,22,1.5,3.1,4,5.1,C,---,
+Eulemur macaco macaco,22,1.5,3.5,3.2,9.2,F,---,A) Simmen 2007
+Eulemur mongoz,61,1,1,1,0,C,0.99,
+Eulemur rubriventer,61,---,1,1,0,C,0.92,
+Galago moholi,120,2,8.1,16,2.7,D,0.43,
+Gorilla beringei beringei,365,1.5,7,2,0.1,C,---,"A) Watts 1998, B) Robbins 2001, C&D) Robbins 1999, F) Watts 2000"
+Gorilla gorilla gorilla,365,3,4.4,1.8,0.2,C,0.05,F) Robbins 2004
+Hapalemur griseus,123,1,1.3,1.3,0,C,0.88,"A) Mittermeier et al 2006, C&D) Nievergelt 2002"
+Hylobates lar,122,4,1,1,0,C,---,"A) Savini et al. 2008, B) van Schaik et al. 1999, F) Leighton 1987"
+Indri indri,31,---,1,1,0,C,---,
+Lagothrix lagotricha,184,3.1,9.8,3.3,4.3,C,0.59,"A) Nishimura 2003, C&D) Plavcan 2004, F) Stevenson 1998"
+Lemur catta,38,1,4,4.5,1.5,C,0.97,
+Leontopithecus rosalia,212,18,1.5,2,2.9,C,0.68,"A) Miller et al. 2006, B) van Schaik et al. 1999, C&D) Heymann 2000, F) Dietz and Baker 1993"
+Lophocebus albigena,212,4,7,5,2.6,C,---,F) Melnick & Pearl 1987
+Loris tardigradus,365,2,2.5,1,0,D,---,C&D) Radhakrisna & Singh 2002
+Macaca fascicularis,123,15,6.8,4,54,C,0.61,
+Macaca fuscata,46,11,9,3,97,C,0.92,
+Macaca mulatta,82,9,9,2.5,62,C,---,
+Macaca nemestrina,365,13,22,3,47,C,0.25,
+Macaca radiata,92,5,9,7,26,C,0.86,
+Macaca silenus,365,18,7,1.8,15,C,0.33,
+Macaca sinica,66,14,9.5,5,97,C,0.61,
+Macaca sylvanus,76,14,11,9,95,C,0.92,
+Microcebus murinus,28,0.1,7,4,0.2,D,---,C&D) Radspiel 2000
+Miopithecus talapoin,59,11,27,13,100,C,---,
+Nycticebus coucang,365,3.5,1,1,0,D,---,
+Otolemur crassicaudatus,61,14,1,1,0,D,---,
+Otolemur garnetti,61,5.8,1,1,0,D,---,
+Pan paniscus,365,15,8,8,14,F,---,F) Nishida & Hiraiwa-Hasegawa 1987
+Pan troglodytes,365,14,35,10,76,F,0.09,F) Nishida & Hiraiwa-Hasegawa 1987
+Papio anubis,365,6,34,14,31,C,0.19,F) Melnick & Pearl 1987
+Papio cynocephalus,365,9,13,8,13,C,0.14,F) Melnick & Pearl 1987
+Papio hamadryas,365,5,2,1,0.1,F,---,
+Papio ursinus,365,9,15,7,17,C,0.42,F) Melnick & Pearl 1987
+Perodicticus potto,184,2,1,1,0,D,0.77,"A) Fitch et al. 2003, B) van Schaik et al. 1999"
+Phaner furcifer,15,---,1,1,0,D,---,
+Piliocolobus badius,244,5,16,8,14,C,0.37,"B) van Schaik et al. 1999, F) Struhsaker 2000"
+Pongo pygmeaus,365,31,16,9,79,F,---,"C, D, F) Singleton & van Schaik 2001"
+Propithecus edwardsi,61,2,1.4,1.5,0,C,---,"A,C,D) Pochron 2005"
+Propithecus verreauxi verreauxi,90,1.5,2.5,2.5,0.3,C,---,C&D) Brockman 1994
+Saguinus fuscicollis,151,10,1,1.9,0,C,0.63,F) Goldizen et al. 1996
+Saguinus oedipus,122,11,1,2,0,C,,F) Savage 1996
+Saimiri oerstedi,59,2,16,10,30,C,0.94,F) Boinski 1999
+Saimiri sciureus,61,2,23,7,45,C,---,
+Semnopithecus entellus,365,4,19,6,6.4,C,---,F) Newton 1987
+Tarsius bancanus,90,3,1,1,0,D,---,
+Tarsius syrichta,122,4.5,1,1,0,D,---,
+Theropithecus gelada,365,9,4,1,1.4,F,0.09,F) Fedigan 1992
+Varecia variegata rubra,61,0.4,2,1,0,C,---,"A,C,D) Vasey 2007"

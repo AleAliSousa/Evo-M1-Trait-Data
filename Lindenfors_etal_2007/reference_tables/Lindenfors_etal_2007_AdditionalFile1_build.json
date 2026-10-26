@@ -1,0 +1,166 @@
+{
+  "folder": "Lindenfors_etal_2007",
+  "item": "Lindenfors_etal_2007_AdditionalFile1",
+  "locus": "AdditionalFile1",
+  "headers": [
+    "Species",
+    "Male mass\n(kg)",
+    "Female mass\n(kg)",
+    "Number\nof males",
+    "Number\nof females",
+    "Total brain\nvolume",
+    "Pons",
+    "Medulla\noblongata",
+    "Cerebellum",
+    "Mesencephalon",
+    "Diencephalon",
+    "Telencephalon"
+  ],
+  "n_rows": 21,
+  "source": "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Lindenfors_etal_2007/12915_2006_116_MOESM1_ESM.doc",
+  "kind": "social",
+  "unit": "mixed",
+  "role": "secondary",
+  "caption": "Species",
+  "locator": "Supplementary table",
+  "notes": "",
+  "snapshot": "Lindenfors_etal_2007_AdditionalFile1_snapshot.csv",
+  "item_encoded": "10.1186%2F1741-7007-5-20_AdditionalFile1",
+  "species_col": 1,
+  "keep_rows": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "expected_rows": 21,
+  "columns": [
+    {
+      "index": 1,
+      "code": "species_as_published",
+      "type": "text",
+      "unit": "",
+      "role": "secondary",
+      "factor": 1,
+      "definition": "Species"
+    },
+    {
+      "index": 2,
+      "code": "Body_mass_male.g",
+      "type": "number",
+      "unit": "g",
+      "role": "secondary",
+      "factor": 1000,
+      "definition": "Male mass\n(kg)"
+    },
+    {
+      "index": 3,
+      "code": "Body_mass_female.g",
+      "type": "number",
+      "unit": "g",
+      "role": "secondary",
+      "factor": 1000,
+      "definition": "Female mass\n(kg)"
+    },
+    {
+      "index": 4,
+      "code": "Adult_males.N",
+      "type": "number",
+      "unit": "N",
+      "role": "secondary",
+      "factor": 1,
+      "definition": "Number\nof males"
+    },
+    {
+      "index": 5,
+      "code": "Adult_females.N",
+      "type": "number",
+      "unit": "N",
+      "role": "secondary",
+      "factor": 1,
+      "definition": "Number\nof females"
+    },
+    {
+      "index": 6,
+      "code": "Brain_Vol.mm3",
+      "type": "number",
+      "unit": "mm3",
+      "role": "secondary",
+      "factor": 1,
+      "definition": "Total brain\nvolume"
+    },
+    {
+      "index": 7,
+      "code": "Pons_Vol.mm3",
+      "type": "number",
+      "unit": "mm3",
+      "role": "secondary",
+      "factor": 1,
+      "definition": "Pons"
+    },
+    {
+      "index": 8,
+      "code": "Medulla_oblongata_Vol.mm3",
+      "type": "number",
+      "unit": "mm3",
+      "role": "secondary",
+      "factor": 1,
+      "definition": "Medulla\noblongata"
+    },
+    {
+      "index": 9,
+      "code": "Cerebellum_Vol.mm3",
+      "type": "number",
+      "unit": "mm3",
+      "role": "secondary",
+      "factor": 1,
+      "definition": "Cerebellum"
+    },
+    {
+      "index": 10,
+      "code": "Mesencephalon_Vol.mm3",
+      "type": "number",
+      "unit": "mm3",
+      "role": "secondary",
+      "factor": 1,
+      "definition": "Mesencephalon"
+    },
+    {
+      "index": 11,
+      "code": "Diencephalon_Vol.mm3",
+      "type": "number",
+      "unit": "mm3",
+      "role": "secondary",
+      "factor": 1,
+      "definition": "Diencephalon"
+    },
+    {
+      "index": 12,
+      "code": "Telencephalon_Vol.mm3",
+      "type": "number",
+      "unit": "mm3",
+      "role": "secondary",
+      "factor": 1,
+      "definition": "Telencephalon"
+    }
+  ],
+  "snapshot_sha256": "738e5951d1a0840261cd2395c525a175cf131fc29ef21f68d04668401d8984f2",
+  "source_sha256": "be6bfb920bdbfa38af9ebc93e14d51f827727630e5efab850a10c133537cb6a6"
+}

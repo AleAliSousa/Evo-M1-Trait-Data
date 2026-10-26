@@ -1,3 +1,15 @@
+# Current build status — 2026-10-25
+
+1 executable item(s) registered in `__ReadMe.xlsx`.
+
+- [RedinHurtado_etal_2023_Table1](RedinHurtado_etal_2023_Table1.README.md): `RedinHurtado_etal_2023_Table1_snapshot.csv` → reader → CSV → public TSV.
+
+
+
+See `____TODO/Nick_Fran_sources_2026-10-24/build_status.csv` and `_tools/build_nick_fran_sources.R`. Human visual sign-off is not claimed.
+
+---
+
 # Is sugar as sweet to the palate as seeds are appetizing to the belly? Taste responsiveness to five food-associated carbohydrates in zoo-housed white-faced sakis, Pithecia pithecia
 
 ## Ingestion decision — compilation-first review

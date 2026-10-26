@@ -1,0 +1,235 @@
+{
+  "folder": "Suddendorf_CollierBaker_2009",
+  "item": "Suddendorf_CollierBaker_2009_Table1",
+  "locus": "Table1",
+  "headers": [
+    "subject_demographics",
+    "species_as_published",
+    "icing_check",
+    "limb_mark",
+    "head_mark",
+    "icing_from_mirror",
+    "experimenter_mirror",
+    "icing_from_head",
+    "sticker_from_head",
+    "sticker_from_foot"
+  ],
+  "n_rows": 18,
+  "source": "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Evo-M1-Trait-Data-restricted/source_library/Nick_Fran_2026-10-25/Suddendorf_CollierBaker_2009.pdf",
+  "kind": "evidence",
+  "role": "primary",
+  "unit": "mixed",
+  "caption": "Table1",
+  "locator": "Table 1, printed p.1673",
+  "notes": "18 tests on 17 individuals. Arjuna (2) repeats the same individual 10 days later. Dashes mean intervention not administered, not failure. Asterisks identify inadvertent self-marks in the published footnote. No untested condition is zero-coded.",
+  "custom_columns": [
+    {
+      "index": 1,
+      "code": "subject_demographics",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "subject_demographics"
+    },
+    {
+      "index": 2,
+      "code": "species_as_published",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "species_as_published"
+    },
+    {
+      "index": 3,
+      "code": "icing_check",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "icing_check"
+    },
+    {
+      "index": 4,
+      "code": "limb_mark",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "limb_mark"
+    },
+    {
+      "index": 5,
+      "code": "head_mark",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "head_mark"
+    },
+    {
+      "index": 6,
+      "code": "icing_from_mirror",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "icing_from_mirror"
+    },
+    {
+      "index": 7,
+      "code": "experimenter_mirror",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "experimenter_mirror"
+    },
+    {
+      "index": 8,
+      "code": "icing_from_head",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "icing_from_head"
+    },
+    {
+      "index": 9,
+      "code": "sticker_from_head",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "sticker_from_head"
+    },
+    {
+      "index": 10,
+      "code": "sticker_from_foot",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "sticker_from_foot"
+    }
+  ],
+  "snapshot": "Suddendorf_CollierBaker_2009_Table1_snapshot.csv",
+  "item_encoded": "10.1098%2Frspb.2008.1754_Table1",
+  "species_col": 1,
+  "keep_rows": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "expected_rows": 18,
+  "columns": [
+    {
+      "index": 1,
+      "code": "subject_demographics",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "subject_demographics"
+    },
+    {
+      "index": 2,
+      "code": "species_as_published",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "species_as_published"
+    },
+    {
+      "index": 3,
+      "code": "icing_check",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "icing_check"
+    },
+    {
+      "index": 4,
+      "code": "limb_mark",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "limb_mark"
+    },
+    {
+      "index": 5,
+      "code": "head_mark",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "head_mark"
+    },
+    {
+      "index": 6,
+      "code": "icing_from_mirror",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "icing_from_mirror"
+    },
+    {
+      "index": 7,
+      "code": "experimenter_mirror",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "experimenter_mirror"
+    },
+    {
+      "index": 8,
+      "code": "icing_from_head",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "icing_from_head"
+    },
+    {
+      "index": 9,
+      "code": "sticker_from_head",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "sticker_from_head"
+    },
+    {
+      "index": 10,
+      "code": "sticker_from_foot",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "sticker_from_foot"
+    }
+  ],
+  "source_sha256": "a2332a6d6a8776ccc129e15f148094e39427f40657728c45d3e7005b8203e009",
+  "snapshot_sha256": "c76fa65f79c877958ec335c2d06a19b382ac9cfcdf63f5f06e4bd1b02e40f50a"
+}

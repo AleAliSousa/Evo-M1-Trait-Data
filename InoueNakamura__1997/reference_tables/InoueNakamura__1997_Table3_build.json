@@ -1,0 +1,166 @@
+{
+  "folder": "InoueNakamura__1997",
+  "item": "InoueNakamura__1997_Table3",
+  "locus": "Table3",
+  "headers": [
+    "species_as_published",
+    "Social_behaviour",
+    "Exploratory_behaviour",
+    "Contingent_behaviour",
+    "Self_directed_behaviour",
+    "references_raw"
+  ],
+  "n_rows": 25,
+  "source": "/Users/crossmodal/Documents/References.Data/PDF/1960709854/Inoue-Nakamura-1997-Mirror Self-recognition in.pdf",
+  "kind": "evidence",
+  "role": "both",
+  "unit": "mixed",
+  "caption": "Table3",
+  "locator": "Table 3, printed p.272",
+  "notes": "Circle=positive, X=negative, dash=no available data. a=infants; b=behaviour reported in a few individuals. *=present study. Self-directed behaviour is not itself a standardized mark-test result. Common names omitted from this constructed symbol transcription; taxon spelling and footnotes retained. Literature rows excluded from independent pooling.",
+  "custom_columns": [
+    {
+      "index": 1,
+      "code": "species_as_published",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "both",
+      "definition": "species_as_published"
+    },
+    {
+      "index": 2,
+      "code": "Social_behaviour",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "both",
+      "definition": "Social_behaviour"
+    },
+    {
+      "index": 3,
+      "code": "Exploratory_behaviour",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "both",
+      "definition": "Exploratory_behaviour"
+    },
+    {
+      "index": 4,
+      "code": "Contingent_behaviour",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "both",
+      "definition": "Contingent_behaviour"
+    },
+    {
+      "index": 5,
+      "code": "Self_directed_behaviour",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "both",
+      "definition": "Self_directed_behaviour"
+    },
+    {
+      "index": 6,
+      "code": "references_raw",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "both",
+      "definition": "references_raw"
+    }
+  ],
+  "snapshot": "InoueNakamura__1997_Table3_snapshot.csv",
+  "item_encoded": "10.1111%2F1468-5884.00059_Table3",
+  "species_col": 1,
+  "keep_rows": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "expected_rows": 25,
+  "columns": [
+    {
+      "index": 1,
+      "code": "species_as_published",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "both",
+      "definition": "species_as_published"
+    },
+    {
+      "index": 2,
+      "code": "Social_behaviour",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "both",
+      "definition": "Social_behaviour"
+    },
+    {
+      "index": 3,
+      "code": "Exploratory_behaviour",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "both",
+      "definition": "Exploratory_behaviour"
+    },
+    {
+      "index": 4,
+      "code": "Contingent_behaviour",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "both",
+      "definition": "Contingent_behaviour"
+    },
+    {
+      "index": 5,
+      "code": "Self_directed_behaviour",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "both",
+      "definition": "Self_directed_behaviour"
+    },
+    {
+      "index": 6,
+      "code": "references_raw",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "both",
+      "definition": "references_raw"
+    }
+  ],
+  "source_sha256": "a4b5b9516b976cbeb34e9237c1fb0c4594afbe2668fcb1494ed0dba091f66db8",
+  "snapshot_sha256": "34ce6e56d0ac1307627f0ec5db8337ca7bac6b4fa0526049d9acae7241771502"
+}

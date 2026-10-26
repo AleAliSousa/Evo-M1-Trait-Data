@@ -1,0 +1,10 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species,Published spelling,,,,info,Mammalia,Patzke_etal_2015_Table2,,
+order,"Printed grouping, including source taxonomic ranks",,,,info,Mammalia,Patzke_etal_2015_Table2,,
+common_name,Published common name,,,,info,Mammalia,Patzke_etal_2015_Table2,,
+AHN_evidence_source_text,Exact marker combination or AHN absent; method-specific evidence,,,,info,Mammalia,Patzke_etal_2015_Table2,,
+source_key_source_text,"Exact source cell, including e.g. prefix",,,,info,Mammalia,Patzke_etal_2015_Table2,,
+source_key,Numeric keys separated by semicolon-space; split and join item references,,,,info,Mammalia,Patzke_etal_2015_Table2,,
+AHN_reported,Reported assay evidence for adult hippocampal neurogenesis,DentateGyrus,NeurogenesisEvidence.category,reported,both,Mammalia,Patzke_etal_2015_Table2,"Negative DCX result is assay-specific, not proof of biological absence. Methods differ across cited studies.",Published table; see README
+data_role,2=current study; otherwise secondary,,,,info,Mammalia,Patzke_etal_2015_Table2,,
+source,Publication token,,,,info,Mammalia,Patzke_etal_2015_Table2,,

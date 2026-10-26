@@ -1,0 +1,142 @@
+{
+  "folder": "Plotnik_etal_2006",
+  "item": "Plotnik_etal_2006_Figure3",
+  "locus": "Figure3",
+  "headers": [
+    "species_as_published",
+    "subject",
+    "condition",
+    "head_touches.N",
+    "mirror_associated_mark_touches.N",
+    "mirror_associated_sham_touches.N"
+  ],
+  "n_rows": 1,
+  "source": "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Evo-M1-Trait-Data-restricted/source_library/Nick_Fran_2026-10-25/Plotnik_etal_2006.html",
+  "kind": "evidence",
+  "role": "primary",
+  "unit": "mixed",
+  "caption": "Figure3",
+  "locator": "Figure 3 and adjacent Results",
+  "notes": "Constructed exact counts; 12 touches during or within 90 seconds after mirror proximity, within 20 cm of visible mark. Study tested three elephants; Happy passed initially, Maxine and Patty did not show increased mark touching. Later repeat tests are not independent subjects. Figure rates not digitized.",
+  "custom_columns": [
+    {
+      "index": 1,
+      "code": "species_as_published",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "species_as_published"
+    },
+    {
+      "index": 2,
+      "code": "subject",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "subject"
+    },
+    {
+      "index": 3,
+      "code": "condition",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "condition"
+    },
+    {
+      "index": 4,
+      "code": "head_touches.N",
+      "type": "number",
+      "unit": "count",
+      "factor": 1,
+      "role": "primary",
+      "definition": "head_touches.N"
+    },
+    {
+      "index": 5,
+      "code": "mirror_associated_mark_touches.N",
+      "type": "number",
+      "unit": "count",
+      "factor": 1,
+      "role": "primary",
+      "definition": "mirror_associated_mark_touches.N"
+    },
+    {
+      "index": 6,
+      "code": "mirror_associated_sham_touches.N",
+      "type": "number",
+      "unit": "count",
+      "factor": 1,
+      "role": "primary",
+      "definition": "mirror_associated_sham_touches.N"
+    }
+  ],
+  "snapshot": "Plotnik_etal_2006_Figure3_snapshot.csv",
+  "item_encoded": "10.1073%2Fpnas.0608062103_Figure3",
+  "species_col": 1,
+  "keep_rows": [
+    1
+  ],
+  "expected_rows": 1,
+  "columns": [
+    {
+      "index": 1,
+      "code": "species_as_published",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "species_as_published"
+    },
+    {
+      "index": 2,
+      "code": "subject",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "subject"
+    },
+    {
+      "index": 3,
+      "code": "condition",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "condition"
+    },
+    {
+      "index": 4,
+      "code": "head_touches.N",
+      "type": "number",
+      "unit": "count",
+      "factor": 1,
+      "role": "primary",
+      "definition": "head_touches.N"
+    },
+    {
+      "index": 5,
+      "code": "mirror_associated_mark_touches.N",
+      "type": "number",
+      "unit": "count",
+      "factor": 1,
+      "role": "primary",
+      "definition": "mirror_associated_mark_touches.N"
+    },
+    {
+      "index": 6,
+      "code": "mirror_associated_sham_touches.N",
+      "type": "number",
+      "unit": "count",
+      "factor": 1,
+      "role": "primary",
+      "definition": "mirror_associated_sham_touches.N"
+    }
+  ],
+  "source_sha256": "19add796f73eb34382a5f05a7256bdb2f5f97596bc16b3fadb9721725a629a03",
+  "snapshot_sha256": "0b4fa5233280b7bfbdca064f58d345fd6c6dc104aa9bbddbf15fe142d3c16057"
+}

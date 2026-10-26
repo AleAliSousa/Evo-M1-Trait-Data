@@ -1,0 +1,13 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species,Published binomial,,,,info,Mammalia,West_Schwerdtfeger_1985_TableIII,,
+specimen_id,Two tree shrews and two marmosets,,,,info,Mammalia,West_Schwerdtfeger_1985_TableIII,,
+structure,Published regional boundary; pre-/supracommissural hippocampus and alveus/fimbria/fornix excluded,,,,info,Mammalia,West_Schwerdtfeger_1985_TableIII,,
+standardized_volume_mm3,"Component volume standardized to species reference brain mass, mm3",HippocampalComponents,StandardizedSize.mm3,individual,primary,Mammalia,West_Schwerdtfeger_1985_TableIII,"ERRATA West_Schwerdtfeger_1985-E009 (confirmed, publication_ambiguity): printed 26.45, repo had blank | Measured volume multiplied by Stephan1981 reference brain mass / individual mass. Do not interpret as raw volume.",Published table; see README
+size_index,Published allometric size index (reference =100),HippocampalComponents,SizeIndex.reference100,individual,primary,Mammalia,West_Schwerdtfeger_1985_TableIII,"Derived index, not a separate anatomical observation.",Published table; see README
+hypothetical_hedgehog_reference_mm3,"Allometric prediction for a hedgehog of matched species body size, not a measured brain",,,,info,Mammalia,West_Schwerdtfeger_1985_TableIII,,
+printed_hedgehog_mean_mm3,"Reused TableII summary, audit metadata only",,,,info,Mammalia,West_Schwerdtfeger_1985_TableIII,,
+printed_species_mean_SI,"Repeated mean SI of two specimens, not independent subjects",,,,info,Mammalia,West_Schwerdtfeger_1985_TableIII,,
+hemisphere_scope,Not explicitly resolved; no doubling,,,,info,Mammalia,West_Schwerdtfeger_1985_TableIII,,
+normalization_source_key,Stephan1981; join item references,,,,info,Mammalia,West_Schwerdtfeger_1985_TableIII,,
+specimen_source_key,CurrentStudy; join item references,,,,info,Mammalia,West_Schwerdtfeger_1985_TableIII,,
+source,Publication token,,,,info,Mammalia,West_Schwerdtfeger_1985_TableIII,,

@@ -1,3 +1,16 @@
+# Current build status — 2026-10-25
+
+2 executable item(s) registered in `__ReadMe.xlsx`.
+
+- [Simmen_Charlot_2003_Figure1](Simmen_Charlot_2003_Figure1.README.md): `Simmen_Charlot_2003_Figure1_snapshot.csv` → reader → CSV → public TSV.
+- [Simmen_Charlot_2003_Figure2](Simmen_Charlot_2003_Figure2.README.md): `Simmen_Charlot_2003_Figure2_snapshot.csv` → reader → CSV → public TSV.
+
+
+
+See `____TODO/Nick_Fran_sources_2026-10-24/build_status.csv` and `_tools/build_nick_fran_sources.R`. Human visual sign-off is not claimed.
+
+---
+
 # A comparison of taste thresholds for sweet and astringent-tasting compounds in great apes
 
 ## Ingestion decision — compilation-first review

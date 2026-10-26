@@ -1,0 +1,104 @@
+{
+  "folder": "Chang_etal_2017",
+  "item": "Chang_etal_2017_Table1",
+  "locus": "Table1",
+  "headers": [
+    "Spontaneous mirror-induced self-directed behaviors",
+    "C1",
+    "C2",
+    "C3",
+    "M1",
+    "M2",
+    "M3"
+  ],
+  "n_rows": 9,
+  "source": "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Evo-M1-Trait-Data-restricted/source_library/Nick_Fran_2026-10-25/Chang_etal_2017.html",
+  "kind": "mirror",
+  "role": "primary",
+  "unit": "count",
+  "caption": "Spontaneous mirror-induced self-directed behaviors",
+  "locator": "Table 1; post-training, C1–C3 and M1–M3",
+  "snapshot": "Chang_etal_2017_Table1_snapshot.csv",
+  "item_encoded": "10.1073%2Fpnas.1620764114_Table1",
+  "species_col": 1,
+  "keep_rows": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "expected_rows": 9,
+  "columns": [
+    {
+      "index": 1,
+      "code": "behaviour_as_published",
+      "type": "text",
+      "unit": "",
+      "role": "primary",
+      "factor": 1,
+      "definition": "Spontaneous mirror-induced self-directed behaviors"
+    },
+    {
+      "index": 2,
+      "code": "C1_count",
+      "type": "number",
+      "unit": "count",
+      "role": "primary",
+      "factor": 1,
+      "definition": "C1"
+    },
+    {
+      "index": 3,
+      "code": "C2_count",
+      "type": "number",
+      "unit": "count",
+      "role": "primary",
+      "factor": 1,
+      "definition": "C2"
+    },
+    {
+      "index": 4,
+      "code": "C3_count",
+      "type": "number",
+      "unit": "count",
+      "role": "primary",
+      "factor": 1,
+      "definition": "C3"
+    },
+    {
+      "index": 5,
+      "code": "M1_count",
+      "type": "number",
+      "unit": "count",
+      "role": "primary",
+      "factor": 1,
+      "definition": "M1"
+    },
+    {
+      "index": 6,
+      "code": "M2_count",
+      "type": "number",
+      "unit": "count",
+      "role": "primary",
+      "factor": 1,
+      "definition": "M2"
+    },
+    {
+      "index": 7,
+      "code": "M3_count",
+      "type": "number",
+      "unit": "count",
+      "role": "primary",
+      "factor": 1,
+      "definition": "M3"
+    }
+  ],
+  "species_constant": "Macaca mulatta",
+  "source_sha256": "c2ae54f0fdc308d4bffde5b3deeb69882d51523df05b750a01549b2da7740099",
+  "snapshot_sha256": "af053fdc4c0711212f5e47d5a565733cfd5e46c6259c835d3628ec7c03e5f032"
+}

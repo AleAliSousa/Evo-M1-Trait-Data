@@ -122,3 +122,7 @@ sources (§9). If Nudo & Masterton 1989/1990b are ever built, run
 2. Merge `PROPOSED_species_key_rows.csv` into `_keys/Stephan/species_key.csv`, then delete it.
 3. The `.R` writes the public TSV once `Item encoded` is present (it is); the TSV was **not**
    written in this session.
+
+## Flag — absolute values not validated (2026-10-25)
+
+The body, brain and area values are individual FSU animals, and the green-monkey row (1,370 g / 36.54 g) is the same animal printed in Glendenning & Masterton 1998 Table 1. Primate brain masses here are 27–43% below DeCasien-2017 medians and areas are below other sources. Cause unresolved (young animals, partial brain, preparation, recording); shrinkage is neither established nor excluded. Do not pool in species means; within-paper use is fine. **Enforced** since 2026-10-26: brain and body mass rows are skipped by `__merging_brain_mass/brain_mass_value_flags.csv` and `__merging_body_ecology/body_ecology_value_flags.csv`. See `SOURCE_DISPOSITION_REGISTER.md` and `_keys/specimen_crosswalk/Green_monkey_FSU_specimen_note.md`.

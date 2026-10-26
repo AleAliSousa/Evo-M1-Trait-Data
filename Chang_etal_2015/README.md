@@ -1,3 +1,16 @@
+# Current build status — 2026-10-25
+
+2 executable item(s) registered in `__ReadMe.xlsx`.
+
+- [Chang_etal_2015_Figure2](Chang_etal_2015_Figure2.README.md): `Chang_etal_2015_Figure2_snapshot.csv` → reader → CSV → public TSV.
+- [Chang_etal_2015_Figure4](Chang_etal_2015_Figure4.README.md): `Chang_etal_2015_Figure4_snapshot.csv` → reader → CSV → public TSV.
+
+
+
+See `____TODO/Nick_Fran_sources_2026-10-24/build_status.csv` and `_tools/build_nick_fran_sources.R`. Human visual sign-off is not claimed.
+
+---
+
 # Mirror-induced self-directed behaviors in rhesus monkeys after visual-somatosensory training
 
 ## Ingestion decision — compilation-first review

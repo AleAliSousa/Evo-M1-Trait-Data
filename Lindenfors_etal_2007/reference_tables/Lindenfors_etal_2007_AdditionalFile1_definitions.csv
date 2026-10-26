@@ -1,0 +1,33 @@
+"Code","Definition","Structure","Measure","Stat","role","taxon","Reference","Note","Source Note"
+"species_as_published","Species","species_as_published","","reported","info","Mammalia","Lindenfors_etal_2007_AdditionalFile1"," Unit: ; factor from source: 1","Supplementary table"
+"Body_mass_male.g","Male mass
+(kg)","Body_mass_male","Mass","reported","secondary","Mammalia","Lindenfors_etal_2007_AdditionalFile1"," Unit: g; factor from source: 1000","Supplementary table"
+"Body_mass_female.g","Female mass
+(kg)","Body_mass_female","Mass","reported","secondary","Mammalia","Lindenfors_etal_2007_AdditionalFile1"," Unit: g; factor from source: 1000","Supplementary table"
+"Adult_males.N","Number
+of males","Adult_males","Count","reported","secondary","Mammalia","Lindenfors_etal_2007_AdditionalFile1"," Unit: N; factor from source: 1","Supplementary table"
+"Adult_females.N","Number
+of females","Adult_females","Count","reported","secondary","Mammalia","Lindenfors_etal_2007_AdditionalFile1"," Unit: N; factor from source: 1","Supplementary table"
+"Brain_Vol.mm3","Total brain
+volume","Brain_Vol","Volume","reported","secondary","Mammalia","Lindenfors_etal_2007_AdditionalFile1"," Unit: mm3; factor from source: 1","Supplementary table"
+"Pons_Vol.mm3","Pons","Pons_Vol","Volume","reported","secondary","Mammalia","Lindenfors_etal_2007_AdditionalFile1"," Unit: mm3; factor from source: 1","Supplementary table"
+"Medulla_oblongata_Vol.mm3","Medulla
+oblongata","Medulla_oblongata_Vol","Volume","reported","secondary","Mammalia","Lindenfors_etal_2007_AdditionalFile1"," Unit: mm3; factor from source: 1","Supplementary table"
+"Cerebellum_Vol.mm3","Cerebellum","Cerebellum_Vol","Volume","reported","secondary","Mammalia","Lindenfors_etal_2007_AdditionalFile1"," Unit: mm3; factor from source: 1","Supplementary table"
+"Mesencephalon_Vol.mm3","Mesencephalon","Mesencephalon_Vol","Volume","reported","secondary","Mammalia","Lindenfors_etal_2007_AdditionalFile1"," Unit: mm3; factor from source: 1","Supplementary table"
+"Diencephalon_Vol.mm3","Diencephalon","Diencephalon_Vol","Volume","reported","secondary","Mammalia","Lindenfors_etal_2007_AdditionalFile1"," Unit: mm3; factor from source: 1","Supplementary table"
+"Telencephalon_Vol.mm3","Telencephalon","Telencephalon_Vol","Volume","reported","secondary","Mammalia","Lindenfors_etal_2007_AdditionalFile1"," Unit: mm3; factor from source: 1","Supplementary table"
+"source_row","Source metadata","","","","info","","Lindenfors_etal_2007_AdditionalFile1","",""
+"Body_mass_male.g_raw","Verbatim source cell","","","","info","","Lindenfors_etal_2007_AdditionalFile1","",""
+"Body_mass_female.g_raw","Verbatim source cell","","","","info","","Lindenfors_etal_2007_AdditionalFile1","",""
+"Adult_males.N_raw","Verbatim source cell","","","","info","","Lindenfors_etal_2007_AdditionalFile1","",""
+"Adult_females.N_raw","Verbatim source cell","","","","info","","Lindenfors_etal_2007_AdditionalFile1","",""
+"Brain_Vol.mm3_raw","Verbatim source cell","","","","info","","Lindenfors_etal_2007_AdditionalFile1","",""
+"Pons_Vol.mm3_raw","Verbatim source cell","","","","info","","Lindenfors_etal_2007_AdditionalFile1","",""
+"Medulla_oblongata_Vol.mm3_raw","Verbatim source cell","","","","info","","Lindenfors_etal_2007_AdditionalFile1","",""
+"Cerebellum_Vol.mm3_raw","Verbatim source cell","","","","info","","Lindenfors_etal_2007_AdditionalFile1","",""
+"Mesencephalon_Vol.mm3_raw","Verbatim source cell","","","","info","","Lindenfors_etal_2007_AdditionalFile1","",""
+"Diencephalon_Vol.mm3_raw","Verbatim source cell","","","","info","","Lindenfors_etal_2007_AdditionalFile1","",""
+"Telencephalon_Vol.mm3_raw","Verbatim source cell","","","","info","","Lindenfors_etal_2007_AdditionalFile1","",""
+"source_item","Source metadata","","","","info","","Lindenfors_etal_2007_AdditionalFile1","",""
+"data_role","Source metadata","","","","info","","Lindenfors_etal_2007_AdditionalFile1","",""

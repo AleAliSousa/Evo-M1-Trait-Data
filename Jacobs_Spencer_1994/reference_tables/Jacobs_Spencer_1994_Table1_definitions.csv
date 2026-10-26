@@ -1,0 +1,18 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species,Genus abbreviation expanded using article title/Methods,,,,info,Dipodomys,Jacobs_Spencer_1994_Table1,,
+sex_group,Male/Female/All; All overlaps the two sex groups,,,,info,Dipodomys,Jacobs_Spencer_1994_Table1,,
+n,5+4=9 for merriami and spectabilis; four male ordii,,,,info,Dipodomys,Jacobs_Spencer_1994_Table1,,
+body_mass_mean_g,"mean body mass, g",Body,Mass.g,mean,primary,Dipodomys,Jacobs_Spencer_1994_Table1,Hippocampus = dentate gyrus + Ammon’s horn; fixed tissue. All/sex rows overlap.,Published table; see README
+body_mass_SE_g,"SE body mass, g",Body,Mass.g,SE,primary,Dipodomys,Jacobs_Spencer_1994_Table1,Hippocampus = dentate gyrus + Ammon’s horn; fixed tissue. All/sex rows overlap.,Published table; see README
+brain_mass_mean_mg,"mean brain mass, mg",WholeBrain,Mass.mg,mean,primary,Dipodomys,Jacobs_Spencer_1994_Table1,Hippocampus = dentate gyrus + Ammon’s horn; fixed tissue. All/sex rows overlap.,Published table; see README
+brain_mass_SE_mg,"SE brain mass, mg",WholeBrain,Mass.mg,SE,primary,Dipodomys,Jacobs_Spencer_1994_Table1,Hippocampus = dentate gyrus + Ammon’s horn; fixed tissue. All/sex rows overlap.,Published table; see README
+hippocampus_volume_mean_mm3,"mean hippocampus volume, mm3",Hippocampus_DG_Ammon,Vol.mm3,mean,primary,Dipodomys,Jacobs_Spencer_1994_Table1,Hippocampus = dentate gyrus + Ammon’s horn; fixed tissue. All/sex rows overlap.,Published table; see README
+hippocampus_volume_SE_mm3,"SE hippocampus volume, mm3",Hippocampus_DG_Ammon,Vol.mm3,SE,primary,Dipodomys,Jacobs_Spencer_1994_Table1,Hippocampus = dentate gyrus + Ammon’s horn; fixed tissue. All/sex rows overlap.,Published table; see README
+relative_brain_size,"Printed relative-size statistic; derived, not another raw measurement",,,,info,Dipodomys,Jacobs_Spencer_1994_Table1,,
+relative_brain_size_SE,"Printed relative-size statistic; derived, not another raw measurement",,,,info,Dipodomys,Jacobs_Spencer_1994_Table1,,
+relative_hippocampal_volume,"Printed relative-size statistic; derived, not another raw measurement",,,,info,Dipodomys,Jacobs_Spencer_1994_Table1,,
+relative_hippocampal_volume_SE,"Printed relative-size statistic; derived, not another raw measurement",,,,info,Dipodomys,Jacobs_Spencer_1994_Table1,,
+hemisphere_scope,Total as described in Methods p.127; no additional doubling,,,,info,Dipodomys,Jacobs_Spencer_1994_Table1,,
+age_class,"Adult, all males in reproductive condition",,,,info,Dipodomys,Jacobs_Spencer_1994_Table1,,
+sample_location,Sample location and collection date,,,,info,Dipodomys,Jacobs_Spencer_1994_Table1,,
+source,Publication token,,,,info,Dipodomys,Jacobs_Spencer_1994_Table1,,

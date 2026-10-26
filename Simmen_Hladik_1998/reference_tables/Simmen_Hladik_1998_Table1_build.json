@@ -1,0 +1,180 @@
+{
+  "folder": "Simmen_Hladik_1998",
+  "item": "Simmen_Hladik_1998_Table1",
+  "locus": "Table1",
+  "headers": [
+    "species_as_published",
+    "Body_mass.g",
+    "Sucrose_threshold.mM",
+    "Fructose_threshold.mM",
+    "Quinine_HCl_threshold.mM",
+    "references_raw"
+  ],
+  "n_rows": 38,
+  "source": "/Users/crossmodal/Documents/References.Data/PDF/0047610719/simmen_hladik_1998.pdf",
+  "kind": "evidence",
+  "role": "both",
+  "unit": "mixed",
+  "caption": "Table1",
+  "locator": "Table 1, printed p.130",
+  "notes": "Quinine source values are in 0.1 mM. ± describes the published threshold interval; it is not assumed to be SD or SEM. Repeated blank species rows inherit the preceding species only in the reader. Body masses are ancillary secondary data.",
+  "custom_columns": [
+    {
+      "index": 1,
+      "code": "species_as_published",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "both",
+      "definition": "species_as_published"
+    },
+    {
+      "index": 2,
+      "code": "Body_mass.g",
+      "type": "number",
+      "unit": "g",
+      "factor": 1,
+      "role": "secondary",
+      "definition": "Body_mass.g"
+    },
+    {
+      "index": 3,
+      "code": "Sucrose_threshold.mM",
+      "type": "number",
+      "unit": "mM",
+      "factor": 1,
+      "role": "both",
+      "definition": "Sucrose_threshold.mM"
+    },
+    {
+      "index": 4,
+      "code": "Fructose_threshold.mM",
+      "type": "number",
+      "unit": "mM",
+      "factor": 1,
+      "role": "both",
+      "definition": "Fructose_threshold.mM"
+    },
+    {
+      "index": 5,
+      "code": "Quinine_HCl_threshold.mM",
+      "type": "number",
+      "unit": "mM",
+      "factor": 0.1,
+      "role": "both",
+      "definition": "Quinine_HCl_threshold.mM"
+    },
+    {
+      "index": 6,
+      "code": "references_raw",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "both",
+      "definition": "references_raw"
+    }
+  ],
+  "fill_species": true,
+  "snapshot": "Simmen_Hladik_1998_Table1_snapshot.csv",
+  "item_encoded": "10.1159%2F000021575_Table1",
+  "species_col": 1,
+  "keep_rows": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38
+  ],
+  "expected_rows": 38,
+  "columns": [
+    {
+      "index": 1,
+      "code": "species_as_published",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "both",
+      "definition": "species_as_published"
+    },
+    {
+      "index": 2,
+      "code": "Body_mass.g",
+      "type": "number",
+      "unit": "g",
+      "factor": 1,
+      "role": "secondary",
+      "definition": "Body_mass.g"
+    },
+    {
+      "index": 3,
+      "code": "Sucrose_threshold.mM",
+      "type": "number",
+      "unit": "mM",
+      "factor": 1,
+      "role": "both",
+      "definition": "Sucrose_threshold.mM"
+    },
+    {
+      "index": 4,
+      "code": "Fructose_threshold.mM",
+      "type": "number",
+      "unit": "mM",
+      "factor": 1,
+      "role": "both",
+      "definition": "Fructose_threshold.mM"
+    },
+    {
+      "index": 5,
+      "code": "Quinine_HCl_threshold.mM",
+      "type": "number",
+      "unit": "mM",
+      "factor": 0.1,
+      "role": "both",
+      "definition": "Quinine_HCl_threshold.mM"
+    },
+    {
+      "index": 6,
+      "code": "references_raw",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "both",
+      "definition": "references_raw"
+    }
+  ],
+  "source_sha256": "5a935406dccd89336c8d4f72a0e5bd264b3f97a971364b66adaf867ca32a4d3a",
+  "snapshot_sha256": "aa86db48e9815d553960e00ae2bbcfe1cb56217dfe7b5f7c8aedcc4e8e464d28"
+}

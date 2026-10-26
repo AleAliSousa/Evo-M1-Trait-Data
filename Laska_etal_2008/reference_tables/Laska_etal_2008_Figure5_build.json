@@ -1,0 +1,88 @@
+{
+  "folder": "Laska_etal_2008",
+  "item": "Laska_etal_2008_Figure5",
+  "locus": "Figure5",
+  "headers": [
+    "species_as_published",
+    "compound",
+    "Weber_ratio_range"
+  ],
+  "n_rows": 4,
+  "source": "/Users/crossmodal/Documents/References.Data/PDF/2044897697/Laska-2008-Taste difference thresholds for mon.pdf",
+  "kind": "evidence",
+  "role": "primary",
+  "unit": "mixed",
+  "caption": "Figure5",
+  "locator": "Figure 5, Abstract and Table I (this study)",
+  "notes": "Constructed summary of the exact published ranges across individuals and reference concentrations. Not a species mean; condition-specific curves remain in the paper. NaCl at 200/400 mM was not tested successfully in spider monkeys.",
+  "custom_columns": [
+    {
+      "index": 1,
+      "code": "species_as_published",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "species_as_published"
+    },
+    {
+      "index": 2,
+      "code": "compound",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "compound"
+    },
+    {
+      "index": 3,
+      "code": "Weber_ratio_range",
+      "type": "number",
+      "unit": "ratio",
+      "factor": 1,
+      "role": "primary",
+      "definition": "Weber_ratio_range"
+    }
+  ],
+  "snapshot": "Laska_etal_2008_Figure5_snapshot.csv",
+  "item_encoded": "10.1002%2Fajp.20558_Figure5",
+  "species_col": 1,
+  "keep_rows": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "expected_rows": 4,
+  "columns": [
+    {
+      "index": 1,
+      "code": "species_as_published",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "species_as_published"
+    },
+    {
+      "index": 2,
+      "code": "compound",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "compound"
+    },
+    {
+      "index": 3,
+      "code": "Weber_ratio_range",
+      "type": "number",
+      "unit": "ratio",
+      "factor": 1,
+      "role": "primary",
+      "definition": "Weber_ratio_range"
+    }
+  ],
+  "source_sha256": "ce502766f0c513aa5d4cd847e7c9850871aeb71d65cb8c884a7be163d42fe6d1",
+  "snapshot_sha256": "4599076dd062e83e4ffa1b73ee5c9cbb569b6833c128a4e709ef5f2ceffb7772"
+}

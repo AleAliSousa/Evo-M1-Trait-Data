@@ -1,0 +1,125 @@
+{
+  "folder": "Mallavarapu__2001",
+  "item": "Mallavarapu__2001_ResultsText",
+  "locus": "ResultsText",
+  "headers": [
+    "species_as_published",
+    "behaviour",
+    "Play_composition.pct",
+    "denominator",
+    "age_class"
+  ],
+  "n_rows": 3,
+  "source": "/Users/crossmodal/Documents/References.Data/PDF/2442186170/Play Behavior in Infant Western Lowland Gorill.pdf",
+  "kind": "evidence",
+  "role": "primary",
+  "unit": "mixed",
+  "caption": "ResultsText",
+  "locator": "Results, printed p.22 / PDF p.28",
+  "notes": "Five captive infants; these percentages sum to 100% of play time, not all observed activity. Do not merge with Kerney time-budget percentages.",
+  "custom_columns": [
+    {
+      "index": 1,
+      "code": "species_as_published",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "species_as_published"
+    },
+    {
+      "index": 2,
+      "code": "behaviour",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "behaviour"
+    },
+    {
+      "index": 3,
+      "code": "Play_composition.pct",
+      "type": "number",
+      "unit": "percent",
+      "factor": 1,
+      "role": "primary",
+      "definition": "Play_composition.pct"
+    },
+    {
+      "index": 4,
+      "code": "denominator",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "denominator"
+    },
+    {
+      "index": 5,
+      "code": "age_class",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "age_class"
+    }
+  ],
+  "snapshot": "Mallavarapu__2001_ResultsText_snapshot.csv",
+  "item_encoded": "https%3A%2F%2Fopensiuc.lib.siu.edu%2Fuhp_theses%2F147%2F_ResultsText",
+  "species_col": 1,
+  "keep_rows": [
+    1,
+    2,
+    3
+  ],
+  "expected_rows": 3,
+  "columns": [
+    {
+      "index": 1,
+      "code": "species_as_published",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "species_as_published"
+    },
+    {
+      "index": 2,
+      "code": "behaviour",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "behaviour"
+    },
+    {
+      "index": 3,
+      "code": "Play_composition.pct",
+      "type": "number",
+      "unit": "percent",
+      "factor": 1,
+      "role": "primary",
+      "definition": "Play_composition.pct"
+    },
+    {
+      "index": 4,
+      "code": "denominator",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "denominator"
+    },
+    {
+      "index": 5,
+      "code": "age_class",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "age_class"
+    }
+  ],
+  "source_sha256": "15b21aaebc2e0ee11c2245b7ca750d17e138fc8641ccf63b0df3ac7492bfefea",
+  "snapshot_sha256": "50734e1ec3e68baf4778364b6a76b0015910a97c24ca4c19d2f35fcc7537da8c"
+}

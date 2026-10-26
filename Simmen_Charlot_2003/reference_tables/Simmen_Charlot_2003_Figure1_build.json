@@ -1,0 +1,68 @@
+{
+  "folder": "Simmen_Charlot_2003",
+  "item": "Simmen_Charlot_2003_Figure1",
+  "locus": "Figure1",
+  "headers": [
+    "species_as_published",
+    "Fructose_preference.mM"
+  ],
+  "n_rows": 3,
+  "source": "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Evo-M1-Trait-Data-restricted/source_library/Nick_Fran_2026-10-25/Simmen_Charlot_2003.pdf",
+  "kind": "evidence",
+  "role": "primary",
+  "unit": "mixed",
+  "caption": "Figure1",
+  "locator": "Figure1 and adjacent Results, pp.452–454",
+  "notes": "Constructed endpoint snapshot from exact reported intervals; response curves not digitized. No midpoint imputation. Gorilla tannin avoidance did not yield a statistically established threshold; do not code a failure or zero. Fructose results overlap later compilations.",
+  "custom_columns": [
+    {
+      "index": 1,
+      "code": "species_as_published",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "species_as_published"
+    },
+    {
+      "index": 2,
+      "code": "Fructose_preference.mM",
+      "type": "number",
+      "unit": "mM",
+      "factor": 1,
+      "role": "primary",
+      "definition": "Fructose_preference.mM"
+    }
+  ],
+  "snapshot": "Simmen_Charlot_2003_Figure1_snapshot.csv",
+  "item_encoded": "10.1016%2FS1631-0691(03)00122-7_Figure1",
+  "species_col": 1,
+  "keep_rows": [
+    1,
+    2,
+    3
+  ],
+  "expected_rows": 3,
+  "columns": [
+    {
+      "index": 1,
+      "code": "species_as_published",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "species_as_published"
+    },
+    {
+      "index": 2,
+      "code": "Fructose_preference.mM",
+      "type": "number",
+      "unit": "mM",
+      "factor": 1,
+      "role": "primary",
+      "definition": "Fructose_preference.mM"
+    }
+  ],
+  "source_sha256": "39b64220d2afd8465e18cb8421e60e0330179c3c88dd6cbcecf8d75e77e3176a",
+  "snapshot_sha256": "408dd9aa319d261dc3872d69817bf03c7d4cfa45aa6fa94f2cac620779c0ec86"
+}

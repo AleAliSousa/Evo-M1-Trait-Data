@@ -1,0 +1,107 @@
+{
+  "folder": "Laska_etal_2003",
+  "item": "Laska_etal_2003_Table1",
+  "locus": "Table1",
+  "headers": [
+    "species_as_published",
+    "Sucrose_at_citric_acid_10mM.mM",
+    "Sucrose_at_citric_acid_30mM.mM",
+    "Sucrose_at_citric_acid_50mM.mM"
+  ],
+  "n_rows": 4,
+  "source": "/Users/crossmodal/Documents/References.Data/PDF/3172685921/Laska-2003-Sour-taste-tolerance-in-four-specie.pdf",
+  "kind": "evidence",
+  "role": "primary",
+  "unit": "mixed",
+  "caption": "Table1",
+  "locator": "Table 1",
+  "notes": "Sucrose concentration needed for preference for a citric-acid/sucrose mixture over a 50 mM sucrose reference. The >1000 bound is censored, not an exact observation.",
+  "custom_columns": [
+    {
+      "index": 1,
+      "code": "species_as_published",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "species_as_published"
+    },
+    {
+      "index": 2,
+      "code": "Sucrose_at_citric_acid_10mM.mM",
+      "type": "number",
+      "unit": "mM",
+      "factor": 1,
+      "role": "primary",
+      "definition": "Sucrose_at_citric_acid_10mM.mM"
+    },
+    {
+      "index": 3,
+      "code": "Sucrose_at_citric_acid_30mM.mM",
+      "type": "number",
+      "unit": "mM",
+      "factor": 1,
+      "role": "primary",
+      "definition": "Sucrose_at_citric_acid_30mM.mM"
+    },
+    {
+      "index": 4,
+      "code": "Sucrose_at_citric_acid_50mM.mM",
+      "type": "number",
+      "unit": "mM",
+      "factor": 1,
+      "role": "primary",
+      "definition": "Sucrose_at_citric_acid_50mM.mM"
+    }
+  ],
+  "snapshot": "Laska_etal_2003_Table1_snapshot.csv",
+  "item_encoded": "10.1023%2FB%3AJOEC.0000008009.85523.7a_Table1",
+  "species_col": 1,
+  "keep_rows": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "expected_rows": 4,
+  "columns": [
+    {
+      "index": 1,
+      "code": "species_as_published",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "species_as_published"
+    },
+    {
+      "index": 2,
+      "code": "Sucrose_at_citric_acid_10mM.mM",
+      "type": "number",
+      "unit": "mM",
+      "factor": 1,
+      "role": "primary",
+      "definition": "Sucrose_at_citric_acid_10mM.mM"
+    },
+    {
+      "index": 3,
+      "code": "Sucrose_at_citric_acid_30mM.mM",
+      "type": "number",
+      "unit": "mM",
+      "factor": 1,
+      "role": "primary",
+      "definition": "Sucrose_at_citric_acid_30mM.mM"
+    },
+    {
+      "index": 4,
+      "code": "Sucrose_at_citric_acid_50mM.mM",
+      "type": "number",
+      "unit": "mM",
+      "factor": 1,
+      "role": "primary",
+      "definition": "Sucrose_at_citric_acid_50mM.mM"
+    }
+  ],
+  "source_sha256": "f7326c958a5d77d80278c05875e6ba1f841b803ec872a5fc353f717e3e95ec1a",
+  "snapshot_sha256": "06d67b30144d095172ddf383ac1e76b9115f1732446a554cf9db7c3ffb7a7fe9"
+}

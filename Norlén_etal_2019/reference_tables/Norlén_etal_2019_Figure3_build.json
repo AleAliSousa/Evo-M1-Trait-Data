@@ -1,0 +1,86 @@
+{
+  "folder": "Norlén_etal_2019",
+  "item": "Norlén_etal_2019_Figure3",
+  "locus": "Figure3",
+  "headers": [
+    "species_as_published",
+    "reference_sucrose.mM",
+    "Sucrose_Weber_ratio"
+  ],
+  "n_rows": 2,
+  "source": "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Evo-M1-Trait-Data-restricted/source_library/Nick_Fran_2026-10-25/Norlen_etal_2019.pdf",
+  "kind": "evidence",
+  "role": "primary",
+  "unit": "mixed",
+  "caption": "Figure3",
+  "locator": "Fig.3 and Results p.33",
+  "notes": "Constructed endpoint snapshot from the exact Weber ratios in Results; not digitized curve values. Same three chimpanzees as Table1 and Figures1–2.",
+  "custom_columns": [
+    {
+      "index": 1,
+      "code": "species_as_published",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "species_as_published"
+    },
+    {
+      "index": 2,
+      "code": "reference_sucrose.mM",
+      "type": "number",
+      "unit": "mM",
+      "factor": 1,
+      "role": "primary",
+      "definition": "reference_sucrose.mM"
+    },
+    {
+      "index": 3,
+      "code": "Sucrose_Weber_ratio",
+      "type": "number",
+      "unit": "ratio",
+      "factor": 1,
+      "role": "primary",
+      "definition": "Sucrose_Weber_ratio"
+    }
+  ],
+  "snapshot": "Norlén_etal_2019_Figure3_snapshot.csv",
+  "item_encoded": "10.1007%2Fs10329-018-0697-0_Figure3",
+  "species_col": 1,
+  "keep_rows": [
+    1,
+    2
+  ],
+  "expected_rows": 2,
+  "columns": [
+    {
+      "index": 1,
+      "code": "species_as_published",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "species_as_published"
+    },
+    {
+      "index": 2,
+      "code": "reference_sucrose.mM",
+      "type": "number",
+      "unit": "mM",
+      "factor": 1,
+      "role": "primary",
+      "definition": "reference_sucrose.mM"
+    },
+    {
+      "index": 3,
+      "code": "Sucrose_Weber_ratio",
+      "type": "number",
+      "unit": "ratio",
+      "factor": 1,
+      "role": "primary",
+      "definition": "Sucrose_Weber_ratio"
+    }
+  ],
+  "source_sha256": "7171013524cb6f82b0f406138c62c49500da103c63287880790b04e171f43078",
+  "snapshot_sha256": "570de34c86aa206c56a354400391182369bc734ec0e3f622b8c33d8998edbf48"
+}

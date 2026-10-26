@@ -1,0 +1,163 @@
+{
+  "folder": "Laska_etal_2009",
+  "item": "Laska_etal_2009_Table1",
+  "locus": "Table1",
+  "headers": [
+    "species_as_published",
+    "Quinine_HCl_avoidance.mM",
+    "Caffeine_avoidance.mM",
+    "Naringin_avoidance.mM",
+    "Salicin_avoidance.mM",
+    "Sucrose_octaacetate_avoidance.mM",
+    "Denatonium_benzoate_avoidance.mM"
+  ],
+  "n_rows": 3,
+  "source": "/Users/crossmodal/Documents/References.Data/PDF/0304089121/Laska-2009-Gustatory responsiveness to six bit.pdf",
+  "kind": "evidence",
+  "role": "primary",
+  "unit": "mixed",
+  "caption": "Table1",
+  "locator": "Table 1, primary rows (printed p.567)",
+  "notes": "Primary rows only; the cited comparative rows are retained in Table1_comparative_source.txt and excluded to avoid replication. All six compounds dissolved in 30 mM sucrose, compared with 30 mM sucrose. Two-minute two-bottle tests. These are avoidance, not detection thresholds.",
+  "custom_columns": [
+    {
+      "index": 1,
+      "code": "species_as_published",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "species_as_published"
+    },
+    {
+      "index": 2,
+      "code": "Quinine_HCl_avoidance.mM",
+      "type": "number",
+      "unit": "mM",
+      "factor": 1,
+      "role": "primary",
+      "definition": "Quinine_HCl_avoidance.mM"
+    },
+    {
+      "index": 3,
+      "code": "Caffeine_avoidance.mM",
+      "type": "number",
+      "unit": "mM",
+      "factor": 1,
+      "role": "primary",
+      "definition": "Caffeine_avoidance.mM"
+    },
+    {
+      "index": 4,
+      "code": "Naringin_avoidance.mM",
+      "type": "number",
+      "unit": "mM",
+      "factor": 1,
+      "role": "primary",
+      "definition": "Naringin_avoidance.mM"
+    },
+    {
+      "index": 5,
+      "code": "Salicin_avoidance.mM",
+      "type": "number",
+      "unit": "mM",
+      "factor": 1,
+      "role": "primary",
+      "definition": "Salicin_avoidance.mM"
+    },
+    {
+      "index": 6,
+      "code": "Sucrose_octaacetate_avoidance.mM",
+      "type": "number",
+      "unit": "mM",
+      "factor": 1,
+      "role": "primary",
+      "definition": "Sucrose_octaacetate_avoidance.mM"
+    },
+    {
+      "index": 7,
+      "code": "Denatonium_benzoate_avoidance.mM",
+      "type": "number",
+      "unit": "mM",
+      "factor": 1,
+      "role": "primary",
+      "definition": "Denatonium_benzoate_avoidance.mM"
+    }
+  ],
+  "snapshot": "Laska_etal_2009_Table1_snapshot.csv",
+  "item_encoded": "10.1007%2Fs10886-009-9630-8_Table1",
+  "species_col": 1,
+  "keep_rows": [
+    1,
+    2,
+    3
+  ],
+  "expected_rows": 3,
+  "columns": [
+    {
+      "index": 1,
+      "code": "species_as_published",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "species_as_published"
+    },
+    {
+      "index": 2,
+      "code": "Quinine_HCl_avoidance.mM",
+      "type": "number",
+      "unit": "mM",
+      "factor": 1,
+      "role": "primary",
+      "definition": "Quinine_HCl_avoidance.mM"
+    },
+    {
+      "index": 3,
+      "code": "Caffeine_avoidance.mM",
+      "type": "number",
+      "unit": "mM",
+      "factor": 1,
+      "role": "primary",
+      "definition": "Caffeine_avoidance.mM"
+    },
+    {
+      "index": 4,
+      "code": "Naringin_avoidance.mM",
+      "type": "number",
+      "unit": "mM",
+      "factor": 1,
+      "role": "primary",
+      "definition": "Naringin_avoidance.mM"
+    },
+    {
+      "index": 5,
+      "code": "Salicin_avoidance.mM",
+      "type": "number",
+      "unit": "mM",
+      "factor": 1,
+      "role": "primary",
+      "definition": "Salicin_avoidance.mM"
+    },
+    {
+      "index": 6,
+      "code": "Sucrose_octaacetate_avoidance.mM",
+      "type": "number",
+      "unit": "mM",
+      "factor": 1,
+      "role": "primary",
+      "definition": "Sucrose_octaacetate_avoidance.mM"
+    },
+    {
+      "index": 7,
+      "code": "Denatonium_benzoate_avoidance.mM",
+      "type": "number",
+      "unit": "mM",
+      "factor": 1,
+      "role": "primary",
+      "definition": "Denatonium_benzoate_avoidance.mM"
+    }
+  ],
+  "source_sha256": "507d7ce36107f4a5f8597ce3a4f182a905ea48b1343521845210bd091b939379",
+  "snapshot_sha256": "038b13e43d2000a3e657714da52897eee85474b6314da8a812edf49af6080689"
+}

@@ -1,3 +1,16 @@
+# Current build status — 2026-10-25
+
+2 executable item(s) registered in `__ReadMe.xlsx`.
+
+- [Chang_etal_2017_Table1](Chang_etal_2017_Table1.README.md): `Chang_etal_2017_Table1_snapshot.csv` → reader → CSV → public TSV.
+- [Chang_etal_2017_Figure2](Chang_etal_2017_Figure2.README.md): `Chang_etal_2017_Figure2_snapshot.csv` → reader → CSV → public TSV.
+
+
+
+See `____TODO/Nick_Fran_sources_2026-10-24/build_status.csv` and `_tools/build_nick_fran_sources.R`. Human visual sign-off is not claimed.
+
+---
+
 # Spontaneous expression of mirror self-recognition in monkeys after learning precise visual-proprioceptive association for mirror images
 
 ## Ingestion decision — compilation-first review

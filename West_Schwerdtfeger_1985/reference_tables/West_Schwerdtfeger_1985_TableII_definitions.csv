@@ -1,0 +1,10 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species,Published binomial,,,,info,Mammalia,West_Schwerdtfeger_1985_TableII,,
+specimen_id,Four reused hedgehog identifiers,,,,info,Mammalia,West_Schwerdtfeger_1985_TableII,,
+structure,Published regional boundary; composites overlap,,,,info,Mammalia,West_Schwerdtfeger_1985_TableII,,
+standardized_volume_mm3,"Published reference-size-standardized component volume, mm3",HippocampalComponents,StandardizedSize.mm3,individual,secondary,Mammalia,West_Schwerdtfeger_1985_TableII,"ERRATA West_Schwerdtfeger_1985-E001 (confirmed, publication_ambiguity): printed individual telencephalic volume / mean telencephalic volume, repo had blank | ERRATA West_Schwerdtfeger_1985-E004 (confirmed, publication_ambiguity): printed 157.3, repo had blank | ERRATA West_Schwerdtfeger_1985-E005 (confirmed, publication_ambiguity): printed 204.72, repo had blank | ERRATA West_Schwerdtfeger_1985-E006 (confirmed, publication_ambiguity): printed 35.2, repo had blank | ERRATA West_Schwerdtfeger_1985-E007 (confirmed, publication_ambiguity): printed 204.9, repo had blank | ERRATA West_Schwerdtfeger_1985-E008 (confirmed, publication_ambiguity): printed 40.44, repo had blank | Not a raw absolute regional volume. Normalization ambiguity documented in errata.",Published table; see README
+printed_group_mean_mm3,Repeated printed group mean for arithmetic audit; not another specimen,,,,info,Mammalia,West_Schwerdtfeger_1985_TableII,"ERRATA West_Schwerdtfeger_1985-E002 (confirmed, publication_ambiguity): printed 191.98, repo had blank | ERRATA West_Schwerdtfeger_1985-E003 (confirmed, publication_ambiguity): printed 26.72, repo had blank | ",
+hemisphere_scope,No unsupported unilateral/bilateral assignment,,,,info,Mammalia,West_Schwerdtfeger_1985_TableII,,
+normalization_source_key,Join item references on ref_key,,,,info,Mammalia,West_Schwerdtfeger_1985_TableII,,
+specimen_source_key,Join item references; reused 1984 specimens,,,,info,Mammalia,West_Schwerdtfeger_1985_TableII,,
+source,Publication token,,,,info,Mammalia,West_Schwerdtfeger_1985_TableII,,

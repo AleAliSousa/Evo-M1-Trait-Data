@@ -1,0 +1,124 @@
+{
+  "folder": "Gallup__1970",
+  "item": "Gallup__1970_Figure4",
+  "locus": "Figure4",
+  "headers": [
+    "species_as_published",
+    "cohort",
+    "subjects.N",
+    "mark_directed_response",
+    "exposure"
+  ],
+  "n_rows": 2,
+  "source": "/Users/crossmodal/Documents/References.Data/PDF/1101513895/Gallop-1970-Chimpanzees_ self-recognition.pdf",
+  "kind": "evidence",
+  "role": "primary",
+  "unit": "mixed",
+  "caption": "Figure4",
+  "locator": "Figure 4 and adjacent Results pp.86–87",
+  "notes": "Constructed cohort endpoint record; graph heights not digitized. The experimental response is reported at cohort level, so 4 is sample size, not a newly inferred count of passing subjects. Mirror-exposure controls kept separate.",
+  "custom_columns": [
+    {
+      "index": 1,
+      "code": "species_as_published",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "species_as_published"
+    },
+    {
+      "index": 2,
+      "code": "cohort",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "cohort"
+    },
+    {
+      "index": 3,
+      "code": "subjects.N",
+      "type": "number",
+      "unit": "N",
+      "factor": 1,
+      "role": "primary",
+      "definition": "subjects.N"
+    },
+    {
+      "index": 4,
+      "code": "mark_directed_response",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "mark_directed_response"
+    },
+    {
+      "index": 5,
+      "code": "exposure",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "exposure"
+    }
+  ],
+  "snapshot": "Gallup__1970_Figure4_snapshot.csv",
+  "item_encoded": "10.1126%2Fscience.167.3914.86_Figure4",
+  "species_col": 1,
+  "keep_rows": [
+    1,
+    2
+  ],
+  "expected_rows": 2,
+  "columns": [
+    {
+      "index": 1,
+      "code": "species_as_published",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "species_as_published"
+    },
+    {
+      "index": 2,
+      "code": "cohort",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "cohort"
+    },
+    {
+      "index": 3,
+      "code": "subjects.N",
+      "type": "number",
+      "unit": "N",
+      "factor": 1,
+      "role": "primary",
+      "definition": "subjects.N"
+    },
+    {
+      "index": 4,
+      "code": "mark_directed_response",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "mark_directed_response"
+    },
+    {
+      "index": 5,
+      "code": "exposure",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "exposure"
+    }
+  ],
+  "source_sha256": "e2b4f722e041ef7a9046fcb1e79dbb294ab32a3da9d23f75a928a38d7f026ae0",
+  "snapshot_sha256": "ba2e336d7a1671d1ceed178505abbf83a4c9d46a2a4c11720dfd5a177cfc94e4"
+}

@@ -1,3 +1,15 @@
+# Current build status — 2026-10-25
+
+1 executable item(s) registered in `__ReadMe.xlsx`.
+
+- [Posada_Colell_2007_TableI](Posada_Colell_2007_TableI.README.md): `Posada_Colell_2007_TableI_snapshot.csv` → reader → CSV → public TSV.
+
+
+
+See `____TODO/Nick_Fran_sources_2026-10-24/build_status.csv` and `_tools/build_nick_fran_sources.R`. Human visual sign-off is not claimed.
+
+---
+
 # Another gorilla (Gorilla gorilla gorilla) recognizes himself in a mirror
 
 ## Ingestion decision — compilation-first review
@@ -37,21 +49,23 @@ Keep subject ID, original taxon, age/rearing, sample size per condition, mirror 
 
 ## Source availability and item verification — 2026-10-25
 
-Full text not obtained — item cannot yet be verified.
+Full-text PDF verified in EndNote after the user added the remaining references.
 
-Full-text acquisition remains unresolved; do not infer item numbers from citations or review summaries.
+[Posada-2007-Another gorilla (Gorilla gorilla g.pdf](</Users/crossmodal/Documents/References.Data/PDF/0628174989/Posada-2007-Another gorilla (Gorilla gorilla g.pdf>)
 
-Acquisition URLs and SHA-256 hashes for new downloads are recorded in `source_manifest.json` alongside the source library. Source files are kept unchanged outside the public data repository. No dataset extraction or frozen item snapshot has been made.
+The original remains unchanged in EndNote; no duplicate PDF was created.
 
 ## Source items
 
-- No item assigned: Results / figures / tables: item selection pending. Unresolved — full text needed before assigning an item number.
+### Table I — Gorilla ethogram frequencies and percentages across mirror/mark conditions
 
-Item verification does not establish unique new observations. Indirect coverage in comparative compilations still requires checking.
+PDF p. 4 / printed p. 579; original table uses Roman I. Single gorilla Xebo; retain covered, uncovered and uncovered-with-mark phases and their different exposure durations. Specific mark touches are also described in Results, PDF pp. 3–4.
+
+Item identification does not clear the ingestion hold. No values have been extracted.
 
 ## Next step
 
-Acquire the source, check the full methods/results and select the exact item. Keep published tables faithful in a snapshot; if values come from prose or figures, document a constructed snapshot and its exact source locations. Source availability is documented above. No frozen snapshot, extracted data or public TSV has been created.
+Resolve compilation coverage using the verified PDF before extraction. Keep published tables faithful in a snapshot; if values come from prose or figures, document a constructed snapshot and its exact source locations. Source availability is documented above. No frozen snapshot, extracted data or public TSV has been created.
 
 The accompanying Posada_Colell_2007_registry_rows.xlsx contains a candidate row and paste instructions. Main __ReadMe.xlsx is unchanged; registration follows the repository owner-paste workflow.
 

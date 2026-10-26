@@ -1,3 +1,13 @@
+# Current build status — 2026-10-25
+
+Reference/source disposition only.
+
+- Review retained as interpretation/provenance; not an independent primary dataset.
+
+See `____TODO/Nick_Fran_sources_2026-10-24/build_status.csv` and `_tools/build_nick_fran_sources.R`. Human visual sign-off is not claimed.
+
+---
+
 # Self-recognition in primates: A comparative approach to the bidirectional properties of consciousness
 
 ## Ingestion decision — compilation-first review

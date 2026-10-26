@@ -118,6 +118,9 @@ read_delim_gh <- function(gh_rel, local, required = TRUE) read_gh(gh_rel, local,
 # GitHub locations: compiled tables from their canonical repo paths; the two
 # derived tables from the committed build output under __ShinyApp/data.
 GH <- list(
+  taste = "__merging_sensory/taste_long.csv",
+  social_mirror_play = "__merging_behaviour/social_mirror_play_long.csv",
+  claustrum_cerebellar = "__merging_volumes/claustrum_cerebellar_long.csv",
   volumes    = "__merging_volumes/volumes_long.csv",
   cellcounts = "__merging_cellcounts/cellcounts_long.csv",
   traits     = "__ShinyApp/data/evom1_traits_long.csv",
@@ -437,6 +440,9 @@ load_compiled <- function() {
         "EvoM1 traits", "Source")
   )
   merges <- rbind(
+    std_merge(GH$taste, file.path(data_dir, "taste_long.csv"), "Taste performance"),
+    std_merge(GH$social_mirror_play, file.path(data_dir, "social_mirror_play_long.csv"), "Social composition, mirror tests & play"),
+    std_merge(GH$claustrum_cerebellar, file.path(data_dir, "claustrum_cerebellar_long.csv"), "Claustrum & cerebellar anatomy"),
     std_merge(GH$body,       file.path(data_dir, "body_ecology_long.csv"), "Body & ecology"),
     # Brain mass is emitted as PARALLEL variables, one per measurement basis
     # (Brain_Mass_measured, Brain_Mass_excl_olfactory_bulb, Brain_Mass_mass_or_volume,

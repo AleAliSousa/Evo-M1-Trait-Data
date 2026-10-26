@@ -1,0 +1,125 @@
+{
+  "folder": "Suarez_Gallup_1981",
+  "item": "Suarez_Gallup_1981_Table2",
+  "locus": "Table2",
+  "headers": [
+    "subject",
+    "Pretest_wrist",
+    "Pretest_brow",
+    "Test_wrist",
+    "Test_brow"
+  ],
+  "n_rows": 2,
+  "source": "/Users/crossmodal/Documents/References.Data/PDF/3516616688/Suarez-1981-Self-recognition in chimpanzees an.pdf",
+  "kind": "evidence",
+  "role": "primary",
+  "unit": "mixed",
+  "caption": "Table2",
+  "locator": "Table 2",
+  "species_constant": "Pan troglodytes",
+  "notes": "William lost the brow dye accidentally; zero brow contacts cannot establish failure. Pretest and mark test are separate conditions. Hoboh and William are chimpanzees (Methods p.183).",
+  "custom_columns": [
+    {
+      "index": 1,
+      "code": "subject",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "subject"
+    },
+    {
+      "index": 2,
+      "code": "Pretest_wrist",
+      "type": "number",
+      "unit": "count",
+      "factor": 1,
+      "role": "primary",
+      "definition": "Pretest_wrist"
+    },
+    {
+      "index": 3,
+      "code": "Pretest_brow",
+      "type": "number",
+      "unit": "count",
+      "factor": 1,
+      "role": "primary",
+      "definition": "Pretest_brow"
+    },
+    {
+      "index": 4,
+      "code": "Test_wrist",
+      "type": "number",
+      "unit": "count",
+      "factor": 1,
+      "role": "primary",
+      "definition": "Test_wrist"
+    },
+    {
+      "index": 5,
+      "code": "Test_brow",
+      "type": "number",
+      "unit": "count",
+      "factor": 1,
+      "role": "primary",
+      "definition": "Test_brow"
+    }
+  ],
+  "snapshot": "Suarez_Gallup_1981_Table2_snapshot.csv",
+  "item_encoded": "10.1016%2FS0047-2484(81)80016-4_Table2",
+  "species_col": 1,
+  "keep_rows": [
+    1,
+    2
+  ],
+  "expected_rows": 2,
+  "columns": [
+    {
+      "index": 1,
+      "code": "subject",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "subject"
+    },
+    {
+      "index": 2,
+      "code": "Pretest_wrist",
+      "type": "number",
+      "unit": "count",
+      "factor": 1,
+      "role": "primary",
+      "definition": "Pretest_wrist"
+    },
+    {
+      "index": 3,
+      "code": "Pretest_brow",
+      "type": "number",
+      "unit": "count",
+      "factor": 1,
+      "role": "primary",
+      "definition": "Pretest_brow"
+    },
+    {
+      "index": 4,
+      "code": "Test_wrist",
+      "type": "number",
+      "unit": "count",
+      "factor": 1,
+      "role": "primary",
+      "definition": "Test_wrist"
+    },
+    {
+      "index": 5,
+      "code": "Test_brow",
+      "type": "number",
+      "unit": "count",
+      "factor": 1,
+      "role": "primary",
+      "definition": "Test_brow"
+    }
+  ],
+  "source_sha256": "a8a231877481aee3414a508bff4bfd4fd44ed930475c1e00f7d62f370f84e1d0",
+  "snapshot_sha256": "227cc0a633f2a8773ec16ad83026918f9099b82029a1b9604621e8d5838f547d"
+}

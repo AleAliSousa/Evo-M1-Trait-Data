@@ -1,0 +1,67 @@
+{
+  "source_page": 9,
+  "render_scale": 2,
+  "image_size": [
+    864,
+    1296
+  ],
+  "axis_zero_y": 1069,
+  "axis_twenty_y": 681,
+  "x_centres": [
+    186,
+    226,
+    266,
+    306,
+    346,
+    386,
+    426,
+    466,
+    506,
+    546,
+    586,
+    626
+  ],
+  "top_y": [
+    759,
+    807,
+    736,
+    705,
+    766,
+    811,
+    911,
+    968,
+    965,
+    1030,
+    986,
+    989
+  ],
+  "split_y": [
+    875,
+    914,
+    857,
+    880,
+    917,
+    939,
+    993,
+    1002,
+    983,
+    1031,
+    996,
+    998
+  ],
+  "months": [
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+    "Jan"
+  ],
+  "method": "Play=(split_y-top_y)*20/(1069-681); Groom=(1069-split_y)*20/(1069-681). Approximate graph reading, not author-supplied raw data."
+}

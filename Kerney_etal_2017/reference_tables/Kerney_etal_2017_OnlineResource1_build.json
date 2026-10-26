@@ -1,0 +1,65 @@
+{
+  "folder": "Kerney_etal_2017",
+  "item": "Kerney_etal_2017_OnlineResource1",
+  "locus": "OnlineResource1",
+  "kind": "play",
+  "role": "secondary",
+  "unit": "mixed",
+  "snapshot": "Kerney_etal_2017_OnlineResource1_snapshot.xls",
+  "headers": [
+    "Species",
+    "Mean % of time budget spent in play by species",
+    "Origin of species datapoint"
+  ],
+  "n_rows": 8,
+  "skip": 6,
+  "sheet": "Origin of Play Data",
+  "locator": "Online Resource 1",
+  "caption": "Published play and brain data; original workbook preserved",
+  "source": "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Evo-M1-Trait-Data-restricted/source_library/Nick_Fran_2026-10-25/Kerney_etal_2017_OR1.xls",
+  "item_encoded": "10.1007%2Fs10329-017-0615-x_OnlineResource1",
+  "species_col": 1,
+  "keep_rows": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "expected_rows": 8,
+  "columns": [
+    {
+      "index": 1,
+      "code": "species_as_published",
+      "type": "text",
+      "unit": "",
+      "role": "secondary",
+      "factor": 1,
+      "definition": "Species"
+    },
+    {
+      "index": 2,
+      "code": "Play_time.pct",
+      "type": "number",
+      "unit": "percent",
+      "role": "secondary",
+      "factor": 1,
+      "definition": "Mean % of time budget spent in play by species"
+    },
+    {
+      "index": 3,
+      "code": "derivation_and_references",
+      "type": "text",
+      "unit": "",
+      "role": "secondary",
+      "factor": 1,
+      "definition": "Origin of species datapoint"
+    }
+  ],
+  "notes": "Play-time data compiled from heterogeneous primary studies; preserve primary lineage and age/captivity context. OnlineResource1 is the derivation source for the same values in OnlineResource2.",
+  "source_sha256": "eb98d98caf7d68a58a803c82fe9ef03d61c92d42048bbc8af6a166ba09d2afa0",
+  "snapshot_sha256": "eb98d98caf7d68a58a803c82fe9ef03d61c92d42048bbc8af6a166ba09d2afa0"
+}

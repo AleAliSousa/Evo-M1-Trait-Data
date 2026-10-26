@@ -1,0 +1,11 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species,"Binomial given in article, matched to printed group labels",,,,info,Mammalia,West_Schwerdtfeger_1985_TableI,,
+published_label,Exact table specimen/group label,,,,info,Mammalia,West_Schwerdtfeger_1985_TableI,,
+record_type,Individual specimen or external species reference mean,,,,info,Mammalia,West_Schwerdtfeger_1985_TableI,,
+body_mass_g,"Body weight, g",Body,Mass.g,reported,both,Mammalia,West_Schwerdtfeger_1985_TableI,See data_role; reference means are not study subjects.,Published table; see README
+telencephalon_volume_mm3,"Telencephalic volume, mm3",Telencephalon,Vol.mm3,reported,secondary,Mammalia,West_Schwerdtfeger_1985_TableI,Hedgehog material reused from West 1984; laterality unresolved.,Published table; see README
+brain_mass_mg,"Brain weight, mg",WholeBrain,Mass.mg,reported,both,Mammalia,West_Schwerdtfeger_1985_TableI,,Published table; see README
+normalization_source_key,Stephan1981 reference sizes; joins item references,,,,info,Mammalia,West_Schwerdtfeger_1985_TableI,,
+specimen_source_key,Specimen provenance key; joins item references,,,,info,Mammalia,West_Schwerdtfeger_1985_TableI,,
+source,Publication token,,,,info,Mammalia,West_Schwerdtfeger_1985_TableI,,
+data_role,Primary only for tree shrew and marmoset individuals; hedgehogs and external means reused,,,,info,Mammalia,West_Schwerdtfeger_1985_TableI,,

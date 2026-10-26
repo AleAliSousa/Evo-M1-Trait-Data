@@ -1,3 +1,15 @@
+# Current build status — 2026-10-25
+
+1 executable item(s) registered in `__ReadMe.xlsx`.
+
+- [InoueNakamura__1997_Table3](InoueNakamura__1997_Table3.README.md): `InoueNakamura__1997_Table3_snapshot.csv` → reader → CSV → public TSV.
+
+
+
+See `____TODO/Nick_Fran_sources_2026-10-24/build_status.csv` and `_tools/build_nick_fran_sources.R`. Human visual sign-off is not claimed.
+
+---
+
 # Mirror self-recognition in nonhuman primates: A phylogenetic approach
 
 ## Ingestion decision — compilation-first review
@@ -37,21 +49,23 @@ Keep subject ID, original taxon, age/rearing, sample size per condition, mirror 
 
 ## Source availability and item verification — 2026-10-25
 
-Full text not obtained — item cannot yet be verified.
+Existing full-text PDF verified in EndNote. The earlier statement that full text had not been obtained was incomplete: the EndNote attachment library had not been searched.
 
-Full-text acquisition remains unresolved; do not infer item numbers from citations or review summaries.
+[Inoue-Nakamura-1997-Mirror Self-recognition in.pdf](</Users/crossmodal/Documents/References.Data/PDF/1960709854/Inoue-Nakamura-1997-Mirror Self-recognition in.pdf>)
 
-Acquisition URLs and SHA-256 hashes for new downloads are recorded in `source_manifest.json` alongside the source library. Source files are kept unchanged outside the public data repository. No dataset extraction or frozen item snapshot has been made.
+The original remains in EndNote; no duplicate PDF was created.
 
 ## Source items
 
-- No item assigned: Results / figures / tables: item selection pending. Unresolved — full text needed before assigning an item number.
+**Table 3 — Summary of responses to mirror image in primates**
 
-Item verification does not establish unique new observations. Indirect coverage in comparative compilations still requires checking.
+PDF p. 7 / printed p. 272. Mixed present-study and literature evidence: preserve asterisks, bold species and references. Circles = positive; crosses = negative; dashes = unavailable. These behavioural categories are not equivalent to standard mark-test pass/fail. Figures 1–3 contain present-study behavioural-duration results; Tables 1–2 provide subjects and definitions.
+
+Item identification does not clear the ingestion hold. No values have been extracted.
 
 ## Next step
 
-Acquire the source, check the full methods/results and select the exact item. Keep published tables faithful in a snapshot; if values come from prose or figures, document a constructed snapshot and its exact source locations. Source availability is documented above. No frozen snapshot, extracted data or public TSV has been created.
+Use the verified EndNote PDF to resolve compilation coverage before extraction. Keep published tables faithful in a snapshot; if values come from prose or figures, document a constructed snapshot and its exact source locations. Source availability is documented above. No frozen snapshot, extracted data or public TSV has been created.
 
 The accompanying InoueNakamura__1997_registry_rows.xlsx contains a candidate row and paste instructions. Main __ReadMe.xlsx is unchanged; registration follows the repository owner-paste workflow.
 

@@ -57,7 +57,9 @@ norm    <- function(h) tolower(trimws(gsub('"', "", h)))
 body_rx <- "(body.?mass|body.?weight|bodyweight|bo[wm]ass|bow_g|body_?wt)"
 EXCLUDE <- c("source","ref","note","_sd"," sd","sem","dimorph","log","raw",
              "spinal","brain","assoc",": data","original")
-SKIP    <- c("10.1016%2Fj.jhevol.2008.08.004_Table7.tsv")   # body-mass dimorphism (a ratio)
+SKIP    <- c("10.1016%2Fj.jhevol.2008.08.004_Table7.tsv",
+             "10.1159%2F000021575_Table1.tsv", # Simmen1998 secondary body covariates
+             "10.1186%2F1741-7007-5-20_AdditionalFile1.tsv") # Lindenfors2007 reused body masses   # body-mass dimorphism (a ratio)
 FACTOR  <- c(g = 1, kg = 1000, mg = 0.001)
 # 1 mL O2 = 20.1 J; 1 kcal = 4184 J  =>  kcal/day -> mL O2/h
 KCAL_DAY_TO_MLO2H <- 4184 / 20.1 / 24

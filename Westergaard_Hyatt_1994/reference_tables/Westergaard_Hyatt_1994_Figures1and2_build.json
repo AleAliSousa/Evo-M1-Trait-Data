@@ -1,0 +1,123 @@
+{
+  "folder": "Westergaard_Hyatt_1994",
+  "item": "Westergaard_Hyatt_1994_Figures1and2",
+  "locus": "Figures1and2",
+  "headers": [
+    "species_as_published",
+    "subjects.N",
+    "self_inspection_subjects.N",
+    "named_self_inspection_subjects",
+    "mark_test"
+  ],
+  "n_rows": 1,
+  "source": "/Users/crossmodal/Documents/References.Data/PDF/1734575182/Westergaard-1994-The responses of bonobos (Pan.pdf",
+  "kind": "evidence",
+  "role": "primary",
+  "unit": "mixed",
+  "caption": "Figures1and2",
+  "locator": "Figures 1–2 and Results/Discussion",
+  "notes": "Constructed exact study endpoint. Both figures describe the same nine bonobos; one record prevents counting them twice. Mirror-aided self-inspection, not a dye mark test; graph rates not digitized.",
+  "custom_columns": [
+    {
+      "index": 1,
+      "code": "species_as_published",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "species_as_published"
+    },
+    {
+      "index": 2,
+      "code": "subjects.N",
+      "type": "number",
+      "unit": "N",
+      "factor": 1,
+      "role": "primary",
+      "definition": "subjects.N"
+    },
+    {
+      "index": 3,
+      "code": "self_inspection_subjects.N",
+      "type": "number",
+      "unit": "N",
+      "factor": 1,
+      "role": "primary",
+      "definition": "self_inspection_subjects.N"
+    },
+    {
+      "index": 4,
+      "code": "named_self_inspection_subjects",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "named_self_inspection_subjects"
+    },
+    {
+      "index": 5,
+      "code": "mark_test",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "mark_test"
+    }
+  ],
+  "snapshot": "Westergaard_Hyatt_1994_Figures1and2_snapshot.csv",
+  "item_encoded": "10.1007%2FBF02435514_Figures1and2",
+  "species_col": 1,
+  "keep_rows": [
+    1
+  ],
+  "expected_rows": 1,
+  "columns": [
+    {
+      "index": 1,
+      "code": "species_as_published",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "species_as_published"
+    },
+    {
+      "index": 2,
+      "code": "subjects.N",
+      "type": "number",
+      "unit": "N",
+      "factor": 1,
+      "role": "primary",
+      "definition": "subjects.N"
+    },
+    {
+      "index": 3,
+      "code": "self_inspection_subjects.N",
+      "type": "number",
+      "unit": "N",
+      "factor": 1,
+      "role": "primary",
+      "definition": "self_inspection_subjects.N"
+    },
+    {
+      "index": 4,
+      "code": "named_self_inspection_subjects",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "named_self_inspection_subjects"
+    },
+    {
+      "index": 5,
+      "code": "mark_test",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "mark_test"
+    }
+  ],
+  "source_sha256": "dec82f3a1f51799ee0bb31e6074e9a7dd6956079df446f3cf4b4af846d231552",
+  "snapshot_sha256": "4d6b41154cbc90dc1ef5917191a4c6e893a0e1d0f4df6fbcb6ac21d96ebe3cf2"
+}

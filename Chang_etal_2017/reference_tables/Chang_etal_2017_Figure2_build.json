@@ -1,0 +1,107 @@
+{
+  "folder": "Chang_etal_2017",
+  "item": "Chang_etal_2017_Figure2",
+  "locus": "Figure2",
+  "headers": [
+    "subject",
+    "training",
+    "test_context",
+    "dye_mark_test_result"
+  ],
+  "n_rows": 3,
+  "source": "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Evo-M1-Trait-Data-restricted/source_library/Nick_Fran_2026-10-25/Chang_etal_2017.html",
+  "kind": "evidence",
+  "role": "primary",
+  "unit": "mixed",
+  "caption": "Figure2",
+  "locator": "Figure 2 and Results",
+  "species_constant": "Macaca mulatta",
+  "notes": "Constructed exact outcomes stated in prose; same M1–M3 as Table1. All three passed following enhanced visual-proprioceptive training. Trained and untrained conditions remain distinct. Graph touching counts not digitized.",
+  "custom_columns": [
+    {
+      "index": 1,
+      "code": "subject",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "subject"
+    },
+    {
+      "index": 2,
+      "code": "training",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "training"
+    },
+    {
+      "index": 3,
+      "code": "test_context",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "test_context"
+    },
+    {
+      "index": 4,
+      "code": "dye_mark_test_result",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "dye_mark_test_result"
+    }
+  ],
+  "snapshot": "Chang_etal_2017_Figure2_snapshot.csv",
+  "item_encoded": "10.1073%2Fpnas.1620764114_Figure2",
+  "species_col": 1,
+  "keep_rows": [
+    1,
+    2,
+    3
+  ],
+  "expected_rows": 3,
+  "columns": [
+    {
+      "index": 1,
+      "code": "subject",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "subject"
+    },
+    {
+      "index": 2,
+      "code": "training",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "training"
+    },
+    {
+      "index": 3,
+      "code": "test_context",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "test_context"
+    },
+    {
+      "index": 4,
+      "code": "dye_mark_test_result",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "dye_mark_test_result"
+    }
+  ],
+  "source_sha256": "c2ae54f0fdc308d4bffde5b3deeb69882d51523df05b750a01549b2da7740099",
+  "snapshot_sha256": "7d08656074f9abca8ad15f3edbf07507f9200c3805ae1096735e3355f0d6b7e9"
+}

@@ -1,0 +1,224 @@
+{
+  "folder": "Smaers_etal_2013",
+  "item": "Smaers_etal_2013_Table1",
+  "locus": "Table1",
+  "headers": [
+    "species_as_published",
+    "individual",
+    "Brain",
+    "Left_PCH",
+    "Left_FM",
+    "Left_PF",
+    "Right_PCH",
+    "Right_FM",
+    "Right_PF"
+  ],
+  "n_rows": 25,
+  "source": "/Users/crossmodal/Documents/References.Data/PDF/3727226183/Smaers-2013-Laterality and the evolution of th.pdf",
+  "kind": "evidence",
+  "role": "both",
+  "unit": "mixed",
+  "caption": "Table1",
+  "locator": "Table 1, printed p.61",
+  "notes": "Volumes mL → mm3. PCH measured for this study; FM/PF from previous work. Left/right kept separate. Table contains 25 rows although Methods states 29 individuals; no missing individuals invented.",
+  "custom_columns": [
+    {
+      "index": 1,
+      "code": "species_as_published",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "both",
+      "definition": "species_as_published"
+    },
+    {
+      "index": 2,
+      "code": "individual",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "both",
+      "definition": "individual"
+    },
+    {
+      "index": 3,
+      "code": "Brain",
+      "type": "number",
+      "unit": "mm3",
+      "factor": 1000,
+      "role": "secondary",
+      "definition": "Brain"
+    },
+    {
+      "index": 4,
+      "code": "Left_PCH",
+      "type": "number",
+      "unit": "mm3",
+      "factor": 1000,
+      "role": "primary",
+      "definition": "Left_PCH"
+    },
+    {
+      "index": 5,
+      "code": "Left_FM",
+      "type": "number",
+      "unit": "mm3",
+      "factor": 1000,
+      "role": "secondary",
+      "definition": "Left_FM"
+    },
+    {
+      "index": 6,
+      "code": "Left_PF",
+      "type": "number",
+      "unit": "mm3",
+      "factor": 1000,
+      "role": "secondary",
+      "definition": "Left_PF"
+    },
+    {
+      "index": 7,
+      "code": "Right_PCH",
+      "type": "number",
+      "unit": "mm3",
+      "factor": 1000,
+      "role": "primary",
+      "definition": "Right_PCH"
+    },
+    {
+      "index": 8,
+      "code": "Right_FM",
+      "type": "number",
+      "unit": "mm3",
+      "factor": 1000,
+      "role": "secondary",
+      "definition": "Right_FM"
+    },
+    {
+      "index": 9,
+      "code": "Right_PF",
+      "type": "number",
+      "unit": "mm3",
+      "factor": 1000,
+      "role": "secondary",
+      "definition": "Right_PF"
+    }
+  ],
+  "fill_species": true,
+  "snapshot": "Smaers_etal_2013_Table1_snapshot.csv",
+  "item_encoded": "10.1111%2Fnyas.12047_Table1",
+  "species_col": 1,
+  "keep_rows": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "expected_rows": 25,
+  "columns": [
+    {
+      "index": 1,
+      "code": "species_as_published",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "both",
+      "definition": "species_as_published"
+    },
+    {
+      "index": 2,
+      "code": "individual",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "both",
+      "definition": "individual"
+    },
+    {
+      "index": 3,
+      "code": "Brain",
+      "type": "number",
+      "unit": "mm3",
+      "factor": 1000,
+      "role": "secondary",
+      "definition": "Brain"
+    },
+    {
+      "index": 4,
+      "code": "Left_PCH",
+      "type": "number",
+      "unit": "mm3",
+      "factor": 1000,
+      "role": "primary",
+      "definition": "Left_PCH"
+    },
+    {
+      "index": 5,
+      "code": "Left_FM",
+      "type": "number",
+      "unit": "mm3",
+      "factor": 1000,
+      "role": "secondary",
+      "definition": "Left_FM"
+    },
+    {
+      "index": 6,
+      "code": "Left_PF",
+      "type": "number",
+      "unit": "mm3",
+      "factor": 1000,
+      "role": "secondary",
+      "definition": "Left_PF"
+    },
+    {
+      "index": 7,
+      "code": "Right_PCH",
+      "type": "number",
+      "unit": "mm3",
+      "factor": 1000,
+      "role": "primary",
+      "definition": "Right_PCH"
+    },
+    {
+      "index": 8,
+      "code": "Right_FM",
+      "type": "number",
+      "unit": "mm3",
+      "factor": 1000,
+      "role": "secondary",
+      "definition": "Right_FM"
+    },
+    {
+      "index": 9,
+      "code": "Right_PF",
+      "type": "number",
+      "unit": "mm3",
+      "factor": 1000,
+      "role": "secondary",
+      "definition": "Right_PF"
+    }
+  ],
+  "source_sha256": "119a78531116761deaef378f4625c550d92ee76ea191706e8a5ab18dfd02eed0",
+  "snapshot_sha256": "e5251d66503d3e603cf62215ad787b87869938a58942c803df440c2e7d0d091e"
+}

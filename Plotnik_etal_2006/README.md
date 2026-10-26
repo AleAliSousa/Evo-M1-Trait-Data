@@ -1,3 +1,15 @@
+# Current build status — 2026-10-25
+
+1 executable item(s) registered in `__ReadMe.xlsx`.
+
+- [Plotnik_etal_2006_Figure3](Plotnik_etal_2006_Figure3.README.md): `Plotnik_etal_2006_Figure3_snapshot.csv` → reader → CSV → public TSV.
+
+
+
+See `____TODO/Nick_Fran_sources_2026-10-24/build_status.csv` and `_tools/build_nick_fran_sources.R`. Human visual sign-off is not claimed.
+
+---
+
 # Self-recognition in an Asian elephant
 
 ## Ingestion decision — compilation-first review

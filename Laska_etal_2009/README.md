@@ -1,3 +1,15 @@
+# Current build status — 2026-10-25
+
+1 executable item(s) registered in `__ReadMe.xlsx`.
+
+- [Laska_etal_2009_Table1](Laska_etal_2009_Table1.README.md): `Laska_etal_2009_Table1_snapshot.csv` → reader → CSV → public TSV.
+
+
+
+See `____TODO/Nick_Fran_sources_2026-10-24/build_status.csv` and `_tools/build_nick_fran_sources.R`. Human visual sign-off is not claimed.
+
+---
+
 # Gustatory responsiveness to six bitter tastants in three species of nonhuman primates
 
 ## Ingestion decision — compilation-first review
@@ -31,21 +43,23 @@ Squirrel monkeys, spider monkeys and pigtail macaques. Preserve solvent/backgrou
 
 ## Source availability and item verification — 2026-10-25
 
-Full text not obtained — item cannot yet be verified.
+Full-text PDF verified in EndNote after the user added the remaining references.
 
-Full-text acquisition remains unresolved; do not infer item numbers from citations or review summaries.
+[Laska-2009-Gustatory responsiveness to six bit.pdf](</Users/crossmodal/Documents/References.Data/PDF/0304089121/Laska-2009-Gustatory responsiveness to six bit.pdf>)
 
-Acquisition URLs and SHA-256 hashes for new downloads are recorded in `source_manifest.json` alongside the source library. Source files are kept unchanged outside the public data repository. No dataset extraction or frozen item snapshot has been made.
+The original remains unchanged in EndNote; no duplicate PDF was created.
 
 ## Source items
 
-- No item assigned: Source tables / results to select. Unresolved — full text needed before assigning an item number.
+### Table 1 — Comparative taste-avoidance thresholds for six bitter tastants
 
-Item verification does not establish unique new observations. Indirect coverage in comparative compilations still requires checking.
+PDF pp. 8–9 / printed pp. 567–568, including continuation. Combines this study and cited earlier studies across taxa; retain source, species, compound and sucrose background. Figures 1–3 describe the present-study response curves; avoid double-counting.
+
+Item identification does not clear the ingestion hold. No values have been extracted.
 
 ## Next step
 
-Acquire the original full text before assigning unresolved table/figure/text items. Preserve printed units, species names, sample sizes and source citations in a faithful snapshot. For digital supplements retain the downloaded bytes unchanged. Build and validate only after item selection and provenance review.
+Resolve compilation coverage and any underlying-data gap using the verified PDF before extraction. Preserve printed units, species names, sample sizes and source citations in a faithful snapshot. For digital supplements retain the downloaded bytes unchanged. Build and validate only after item selection and provenance review.
 
 Laska_etal_2009_registry_rows.xlsx contains candidate rows aligned to the live registry and HOW_TO_PASTE instructions. The owner registers the selected items; the main registry has not been edited. Source availability is documented above. No frozen snapshot, analysis CSV, public TSV or R reader has been created.
 

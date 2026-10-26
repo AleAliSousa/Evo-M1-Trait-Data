@@ -1,3 +1,16 @@
+# Current build status — 2026-10-25
+
+1 executable item(s) registered in `__ReadMe.xlsx`.
+
+- [Westergaard_Hyatt_1994_Figures1and2](Westergaard_Hyatt_1994_Figures1and2.README.md): `Westergaard_Hyatt_1994_Figures1and2_snapshot.csv` → reader → CSV → public TSV.
+
+- Both figures share nine animals; one exact endpoint record. Behavioural rate curves not digitized.
+- Both figures share nine animals; one exact endpoint record. Behavioural rate curves not digitized.
+
+See `____TODO/Nick_Fran_sources_2026-10-24/build_status.csv` and `_tools/build_nick_fran_sources.R`. Human visual sign-off is not claimed.
+
+---
+
 # The responses of bonobos (Pan paniscus) to their mirror images: Evidence of selfrecognition
 
 ## Ingestion decision — compilation-first review
@@ -37,21 +50,27 @@ Keep subject ID, original taxon, age/rearing, sample size per condition, mirror 
 
 ## Source availability and item verification — 2026-10-25
 
-Full text not obtained — item cannot yet be verified.
+Full-text PDF verified in EndNote after the user added the remaining references.
 
-Full-text acquisition remains unresolved; do not infer item numbers from citations or review summaries.
+[Westergaard-1994-The responses of bonobos (Pan.pdf](</Users/crossmodal/Documents/References.Data/PDF/1734575182/Westergaard-1994-The responses of bonobos (Pan.pdf>)
 
-Acquisition URLs and SHA-256 hashes for new downloads are recorded in `source_manifest.json` alongside the source library. Source files are kept unchanged outside the public data repository. No dataset extraction or frozen item snapshot has been made.
+The original remains unchanged in EndNote; no duplicate PDF was created.
 
 ## Source items
 
-- No item assigned: Results / figures / tables: item selection pending. Unresolved — full text needed before assigning an item number.
+### Figure 1 — Bonobo mirror-on/off differences in behavioural frequencies
 
-Item verification does not establish unique new observations. Indirect coverage in comparative compilations still requires checking.
+PDF p. 2 / printed p. 274. Adjusted frequencies by age class and behavioural category; Table 1 provides subjects and Table 2 definitions. This is not a standard mark-test pass-rate dataset.
+
+### Figure 2 — Bonobo mirror-on/off differences in behavioural durations
+
+PDF p. 4 / printed p. 276. Relative durations by age class and behavioural category; same study as Figure 1, distinct measurement endpoint.
+
+Item identification does not clear the ingestion hold. No values have been extracted.
 
 ## Next step
 
-Acquire the source, check the full methods/results and select the exact item. Keep published tables faithful in a snapshot; if values come from prose or figures, document a constructed snapshot and its exact source locations. Source availability is documented above. No frozen snapshot, extracted data or public TSV has been created.
+Resolve compilation coverage using the verified PDF before extraction. Keep published tables faithful in a snapshot; if values come from prose or figures, document a constructed snapshot and its exact source locations. Source availability is documented above. No frozen snapshot, extracted data or public TSV has been created.
 
 The accompanying Westergaard_Hyatt_1994_registry_rows.xlsx contains a candidate row and paste instructions. Main __ReadMe.xlsx is unchanged; registration follows the repository owner-paste workflow.
 

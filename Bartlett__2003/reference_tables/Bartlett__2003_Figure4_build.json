@@ -1,0 +1,87 @@
+{
+  "folder": "Bartlett__2003",
+  "item": "Bartlett__2003_Figure4",
+  "locus": "Figure4",
+  "headers": [
+    "species_as_published",
+    "age_class",
+    "Play_share_of_social_activity.pct"
+  ],
+  "n_rows": 3,
+  "source": "/Users/crossmodal/Documents/References.Data/PDF/2426206476/Bartlett-2003-Intragroup and intergroup social.pdf",
+  "kind": "evidence",
+  "role": "primary",
+  "unit": "mixed",
+  "caption": "Figure4",
+  "locator": "Figure 4 and Results p.251",
+  "notes": "Constructed exact endpoints from adjacent prose. Juveniles are included in immatures; rows overlap and must not be averaged. Percentage of social activity, not total activity.",
+  "custom_columns": [
+    {
+      "index": 1,
+      "code": "species_as_published",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "species_as_published"
+    },
+    {
+      "index": 2,
+      "code": "age_class",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "age_class"
+    },
+    {
+      "index": 3,
+      "code": "Play_share_of_social_activity.pct",
+      "type": "number",
+      "unit": "percent",
+      "factor": 1,
+      "role": "primary",
+      "definition": "Play_share_of_social_activity.pct"
+    }
+  ],
+  "snapshot": "Bartlett__2003_Figure4_snapshot.csv",
+  "item_encoded": "10.1023%2FA%3A1023088814263_Figure4",
+  "species_col": 1,
+  "keep_rows": [
+    1,
+    2,
+    3
+  ],
+  "expected_rows": 3,
+  "columns": [
+    {
+      "index": 1,
+      "code": "species_as_published",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "species_as_published"
+    },
+    {
+      "index": 2,
+      "code": "age_class",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "age_class"
+    },
+    {
+      "index": 3,
+      "code": "Play_share_of_social_activity.pct",
+      "type": "number",
+      "unit": "percent",
+      "factor": 1,
+      "role": "primary",
+      "definition": "Play_share_of_social_activity.pct"
+    }
+  ],
+  "source_sha256": "011094c43c91a695ecfa87a01dc3ba96d3d6805f5266f5f434c636ef8808c353",
+  "snapshot_sha256": "be222e3593797ace110e5b582c044fc19de43b4f36c343821089e7e1f5f9da8b"
+}

@@ -1,3 +1,13 @@
+# Current build status — 2026-10-25
+
+Reference/source disposition only.
+
+- Body-mass compilation is already an upstream source of repository studies, e.g. Bauernfeind2013. No cell-level novel gap has been established; not added as an independent body-mass sample. This does not claim every row is already covered.
+
+See `____TODO/Nick_Fran_sources_2026-10-24/build_status.csv` and `_tools/build_nick_fran_sources.R`. Human visual sign-off is not claimed.
+
+---
+
 # Body mass in comparative primatology
 
 ## Ingestion decision — compilation-first review
@@ -31,21 +41,23 @@ Overlap review before extraction. Values already occur indirectly in Powell 2017
 
 ## Source availability and item verification — 2026-10-25
 
-Full text not obtained — item cannot yet be verified.
+Existing full-text PDF verified in EndNote. The earlier statement that full text had not been obtained was incomplete: the EndNote attachment library had not been searched.
 
-Full-text acquisition remains unresolved; do not infer item numbers from citations or review summaries.
+[Smith-1997-Body mass in compara.pdf](</Users/crossmodal/Documents/References.Data/PDF/1038828825/Smith-1997-Body mass in compara.pdf>)
 
-Acquisition URLs and SHA-256 hashes for new downloads are recorded in `source_manifest.json` alongside the source library. Source files are kept unchanged outside the public data repository. No dataset extraction or frozen item snapshot has been made.
+The original remains in EndNote; no duplicate PDF was created.
 
 ## Source items
 
-- No item assigned: Source tables / results to select. Unresolved — full text needed before assigning an item number.
+**Table 5 — Body mass of extant primates**
 
-Item verification does not establish unique new observations. Indirect coverage in comparative compilations still requires checking.
+PDF pp. 16–26 / printed pp. 538–548, including continuations. Preserve male/female values, sample sizes, wild/captive status and references; consult explanatory notes and appendix. Reuse values already covered by existing compilations.
+
+Item identification does not clear the ingestion hold. No values have been extracted.
 
 ## Next step
 
-Acquire the original full text before assigning unresolved table/figure/text items. Preserve printed units, species names, sample sizes and source citations in a faithful snapshot. For digital supplements retain the downloaded bytes unchanged. Build and validate only after item selection and provenance review.
+Use the verified EndNote PDF to resolve compilation coverage before extraction. Preserve printed units, species names, sample sizes and source citations in a faithful snapshot. For digital supplements retain the downloaded bytes unchanged. Build and validate only after item selection and provenance review.
 
 Smith_Jungers_1997_registry_rows.xlsx contains candidate rows aligned to the live registry and HOW_TO_PASTE instructions. The owner registers the selected items; the main registry has not been edited. Source availability is documented above. No frozen snapshot, analysis CSV, public TSV or R reader has been created.
 

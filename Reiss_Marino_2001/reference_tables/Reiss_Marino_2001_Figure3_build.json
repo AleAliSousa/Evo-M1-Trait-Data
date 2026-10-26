@@ -1,0 +1,161 @@
+{
+  "folder": "Reiss_Marino_2001",
+  "item": "Reiss_Marino_2001_Figure3",
+  "locus": "Figure3",
+  "headers": [
+    "species_as_published",
+    "subject",
+    "phase",
+    "mark_sessions.N",
+    "first_behaviour_mark_oriented.N",
+    "ambiguous_sessions.N",
+    "endpoint"
+  ],
+  "n_rows": 1,
+  "source": "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Evo-M1-Trait-Data-restricted/source_library/Nick_Fran_2026-10-25/Reiss_Marino_2001.html",
+  "kind": "evidence",
+  "role": "primary",
+  "unit": "mixed",
+  "caption": "Figure3",
+  "locator": "Figure 3C and adjacent Phase 2 Results",
+  "notes": "Constructed exact session counts reported in prose. Two ambiguous sessions are not failures. This is subject 1; sessions are not independent animals. Dolphins inspect the mark by positioning, not hand-touching; figure durations and latencies not digitized.",
+  "custom_columns": [
+    {
+      "index": 1,
+      "code": "species_as_published",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "species_as_published"
+    },
+    {
+      "index": 2,
+      "code": "subject",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "subject"
+    },
+    {
+      "index": 3,
+      "code": "phase",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "phase"
+    },
+    {
+      "index": 4,
+      "code": "mark_sessions.N",
+      "type": "number",
+      "unit": "N",
+      "factor": 1,
+      "role": "primary",
+      "definition": "mark_sessions.N"
+    },
+    {
+      "index": 5,
+      "code": "first_behaviour_mark_oriented.N",
+      "type": "number",
+      "unit": "N",
+      "factor": 1,
+      "role": "primary",
+      "definition": "first_behaviour_mark_oriented.N"
+    },
+    {
+      "index": 6,
+      "code": "ambiguous_sessions.N",
+      "type": "number",
+      "unit": "N",
+      "factor": 1,
+      "role": "primary",
+      "definition": "ambiguous_sessions.N"
+    },
+    {
+      "index": 7,
+      "code": "endpoint",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "endpoint"
+    }
+  ],
+  "snapshot": "Reiss_Marino_2001_Figure3_snapshot.csv",
+  "item_encoded": "10.1073%2Fpnas.101086398_Figure3",
+  "species_col": 1,
+  "keep_rows": [
+    1
+  ],
+  "expected_rows": 1,
+  "columns": [
+    {
+      "index": 1,
+      "code": "species_as_published",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "species_as_published"
+    },
+    {
+      "index": 2,
+      "code": "subject",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "subject"
+    },
+    {
+      "index": 3,
+      "code": "phase",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "phase"
+    },
+    {
+      "index": 4,
+      "code": "mark_sessions.N",
+      "type": "number",
+      "unit": "N",
+      "factor": 1,
+      "role": "primary",
+      "definition": "mark_sessions.N"
+    },
+    {
+      "index": 5,
+      "code": "first_behaviour_mark_oriented.N",
+      "type": "number",
+      "unit": "N",
+      "factor": 1,
+      "role": "primary",
+      "definition": "first_behaviour_mark_oriented.N"
+    },
+    {
+      "index": 6,
+      "code": "ambiguous_sessions.N",
+      "type": "number",
+      "unit": "N",
+      "factor": 1,
+      "role": "primary",
+      "definition": "ambiguous_sessions.N"
+    },
+    {
+      "index": 7,
+      "code": "endpoint",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "endpoint"
+    }
+  ],
+  "source_sha256": "e7a47eaeae620fea7d3e1535b1412d0b2eb6ec80f7c38d383f34eb69e6ae07b7",
+  "snapshot_sha256": "c2feaa06059569c5aaca7b3ea6351a846726c62129b44c2bcea82873302a5862"
+}

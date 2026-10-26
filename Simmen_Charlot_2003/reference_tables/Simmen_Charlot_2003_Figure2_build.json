@@ -1,0 +1,67 @@
+{
+  "folder": "Simmen_Charlot_2003",
+  "item": "Simmen_Charlot_2003_Figure2",
+  "locus": "Figure2",
+  "headers": [
+    "species_as_published",
+    "Tannic_acid_inhibition.mM"
+  ],
+  "n_rows": 2,
+  "source": "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Evo-M1-Trait-Data-restricted/source_library/Nick_Fran_2026-10-25/Simmen_Charlot_2003.pdf",
+  "kind": "evidence",
+  "role": "primary",
+  "unit": "mixed",
+  "caption": "Figure2",
+  "locator": "Figure2 and adjacent Results, pp.452–454",
+  "notes": "Constructed endpoint snapshot from exact reported intervals; response curves not digitized. No midpoint imputation. Gorilla tannin avoidance did not yield a statistically established threshold; do not code a failure or zero. Fructose results overlap later compilations.",
+  "custom_columns": [
+    {
+      "index": 1,
+      "code": "species_as_published",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "species_as_published"
+    },
+    {
+      "index": 2,
+      "code": "Tannic_acid_inhibition.mM",
+      "type": "number",
+      "unit": "mM",
+      "factor": 1,
+      "role": "primary",
+      "definition": "Tannic_acid_inhibition.mM"
+    }
+  ],
+  "snapshot": "Simmen_Charlot_2003_Figure2_snapshot.csv",
+  "item_encoded": "10.1016%2FS1631-0691(03)00122-7_Figure2",
+  "species_col": 1,
+  "keep_rows": [
+    1,
+    2
+  ],
+  "expected_rows": 2,
+  "columns": [
+    {
+      "index": 1,
+      "code": "species_as_published",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "species_as_published"
+    },
+    {
+      "index": 2,
+      "code": "Tannic_acid_inhibition.mM",
+      "type": "number",
+      "unit": "mM",
+      "factor": 1,
+      "role": "primary",
+      "definition": "Tannic_acid_inhibition.mM"
+    }
+  ],
+  "source_sha256": "39b64220d2afd8465e18cb8421e60e0330179c3c88dd6cbcecf8d75e77e3176a",
+  "snapshot_sha256": "9badaf7df95bc3245ea43eaa0074e22142693f273b44bc78e66cb29a79808614"
+}

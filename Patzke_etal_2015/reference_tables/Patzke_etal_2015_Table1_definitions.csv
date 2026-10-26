@@ -1,0 +1,12 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species,Published label including LA specimen suffix and spelling; repeated labels retained,,,,info,Mammalia,Patzke_etal_2015_Table1,,
+order,"Printed order heading, carried within table column",,,,info,Mammalia,Patzke_etal_2015_Table1,,
+brain_mass_mg,"Published brain mass, mg",WholeBrain,Mass.mg,reported,both,Mammalia,Patzke_etal_2015_Table1,"source_key 5=current study, others secondary; source sample types differ.",Published table; see README
+brain_volume_mm3,"Published brain volume, mm3",WholeBrain,DerivedSize.mm3,reported,both,Mammalia,Patzke_etal_2015_Table1,"ERRATA Patzke_etal_2015-E001 (confirmed, publication_ambiguity): printed 0.077 ml, repo had blank | ERRATA Patzke_etal_2015-E002 (confirmed, publication_ambiguity): printed 1253.9 ml, repo had blank | ERRATA Patzke_etal_2015-E003 (confirmed, publication_ambiguity): printed 1293.6 ml, repo had blank | ERRATA Patzke_etal_2015-E004 (confirmed, publication_ambiguity): printed 1255.2 ml, repo had blank | ERRATA Patzke_etal_2015-E005 (confirmed, publication_ambiguity): printed 7.0 ml, repo had blank | ERRATA Patzke_etal_2015-E006 (confirmed, publication_ambiguity): printed 2.92 ml, repo had blank | ERRATA Patzke_etal_2015-E007 (confirmed, publication_ambiguity): printed 1.14 ml, repo had blank | ERRATA Patzke_etal_2015-E008 (confirmed, publication_ambiguity): printed 0.027 ml, repo had blank | Table states Vb=Mb/1.036, not independently measured brain volume; discrepancies kept.",Published table; see README
+hippocampus_volume_mm3,"Published hippocampal volume, mm3",Hippocampus,Vol.mm3,reported,both,Mammalia,Patzke_etal_2015_Table1,Only source 5 is current-study MRI. Preserve per-row source and unresolved laterality.,Published table; see README
+source_key,Exact numeric key; join item references,,,,info,Mammalia,Patzke_etal_2015_Table1,,
+record_id,Stable ordinal in left-column then right-column reading order; not a biological specimen ID,,,,info,Mammalia,Patzke_etal_2015_Table1,,
+data_role,Current-study vs reused values; not a guarantee of independent specimens across papers,,,,info,Mammalia,Patzke_etal_2015_Table1,,
+brain_volume_basis,"Derived brain volume, not a second independent measurement",,,,info,Mammalia,Patzke_etal_2015_Table1,,
+hemisphere_scope,Source-specific scope unresolved; no doubling,,,,info,Mammalia,Patzke_etal_2015_Table1,,
+source,Publication token,,,,info,Mammalia,Patzke_etal_2015_Table1,,

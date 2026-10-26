@@ -1,0 +1,25 @@
+Point,Curve (as labelled),Curve legend (caption),Marker,"x (px, scan)","y (px, scan)",lg f [kHz],"I, dB (rel. 1 µW/cm²)",Digitisation note
+W01,1,water,filled circle,931.8,689.9,-0.317,-49.8,First water point; start of the solid line.
+W02,1,water,filled circle,1074.5,710.2,-0.032,-53.1,
+W03,1,water,filled circle,1164.4,729.8,0.148,-56.3,
+W04,1,water,filled circle,1232.8,914.5,0.284,-86.6,
+W05,1,water,filled circle,1324.0,935.7,0.466,-90.1,
+W06,1,water,filled circle,1434.5,1039.2,0.687,-107.0,
+W07,1,water,filled circle,1592.5,1019.4,1.003,-103.8,
+W08,1,water,filled circle,1678.7,982.4,1.175,-97.7,
+W09,1,water,filled circle,1717.7,1019.8,1.253,-103.8,
+W10,1,water,filled circle,1745.0,936.2,1.307,-90.1,
+W11,1,water,filled circle,1830.4,842.9,1.478,-74.8,
+W12,1,water,filled circle,1864.8,738.7,1.547,-57.8,
+W13,1,water,filled circle,1893.4,556.9,1.604,-28.0,Last water point; top of the solid line.
+A01,2,air,open circle,571.9,560.0,-1.036,-28.5,First air point; start of the dashed line.
+A02,2,air,open circle,725.0,639.2,-0.730,-41.5,
+A03,2,air,open circle,779.3,673.0,-0.622,-47.0,
+A04,2,air,open circle,931.2,738.8,-0.318,-57.8,
+A05,2,air,open circle,1076.6,828.1,-0.028,-72.4,
+A06,2,air,open circle,1232.1,876.9,0.283,-80.4,At the crossing of the two lines; centre taken from the open centre of the ring.
+A07,2,air,open circle,1432.2,934.0,0.683,-89.8,
+A08,2,air,open circle,1584.1,910.1,0.986,-85.9,Isolated marker above the dashed line.
+A09,2,air,open circle,1697.3,894.2,1.212,-83.3,
+A10,2,air,open circle,1741.2,773.0,1.300,-63.4,
+A11,2,air,open circle,1785.3,708.9,1.388,-52.9,

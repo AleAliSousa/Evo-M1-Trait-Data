@@ -1,0 +1,111 @@
+{
+  "folder": "Chang_etal_2015",
+  "item": "Chang_etal_2015_Figure2",
+  "locus": "Figure2",
+  "headers": [
+    "subject",
+    "training",
+    "test_context",
+    "dye_mark_test_result"
+  ],
+  "n_rows": 7,
+  "source": "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Evo-M1-Trait-Data-restricted/source_library/Nick_Fran_2026-10-25/Chang_etal_2015.pdf",
+  "kind": "evidence",
+  "role": "primary",
+  "unit": "mixed",
+  "caption": "Figure2",
+  "locator": "Figure 2 and Results pp.213–214",
+  "species_constant": "Macaca mulatta",
+  "notes": "Constructed exact individual outcomes stated in prose. Five of seven trained monkeys passed in the home cage; all seven passed chair tests. These contexts must not be collapsed. Not spontaneous untrained MSR; bar heights not digitized.",
+  "custom_columns": [
+    {
+      "index": 1,
+      "code": "subject",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "subject"
+    },
+    {
+      "index": 2,
+      "code": "training",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "training"
+    },
+    {
+      "index": 3,
+      "code": "test_context",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "test_context"
+    },
+    {
+      "index": 4,
+      "code": "dye_mark_test_result",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "dye_mark_test_result"
+    }
+  ],
+  "snapshot": "Chang_etal_2015_Figure2_snapshot.csv",
+  "item_encoded": "10.1016%2Fj.cub.2014.11.016_Figure2",
+  "species_col": 1,
+  "keep_rows": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "expected_rows": 7,
+  "columns": [
+    {
+      "index": 1,
+      "code": "subject",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "subject"
+    },
+    {
+      "index": 2,
+      "code": "training",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "training"
+    },
+    {
+      "index": 3,
+      "code": "test_context",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "test_context"
+    },
+    {
+      "index": 4,
+      "code": "dye_mark_test_result",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "dye_mark_test_result"
+    }
+  ],
+  "source_sha256": "81ad1735b13918c0e3992ec7e1fd4c95fbf2aa67c0a156d0f52a4bd5512c57f5",
+  "snapshot_sha256": "793192704c74efa8347ba44219e7162413e4378450654eabb53e70615bf41ae9"
+}

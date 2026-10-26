@@ -1,3 +1,18 @@
+# Current build status — 2026-10-25
+
+4 executable item(s) registered in `__ReadMe.xlsx`.
+
+- [Suarez_Gallup_1981_Table2](Suarez_Gallup_1981_Table2.README.md): `Suarez_Gallup_1981_Table2_snapshot.csv` → reader → CSV → public TSV.
+- [Suarez_Gallup_1981_Figure3](Suarez_Gallup_1981_Figure3.README.md): `Suarez_Gallup_1981_Figure3_snapshot.csv` → reader → CSV → public TSV.
+- [Suarez_Gallup_1981_Figure7](Suarez_Gallup_1981_Figure7.README.md): `Suarez_Gallup_1981_Figure7_snapshot.csv` → reader → CSV → public TSV.
+- [Suarez_Gallup_1981_Figure11](Suarez_Gallup_1981_Figure11.README.md): `Suarez_Gallup_1981_Figure11_snapshot.csv` → reader → CSV → public TSV.
+
+
+
+See `____TODO/Nick_Fran_sources_2026-10-24/build_status.csv` and `_tools/build_nick_fran_sources.R`. Human visual sign-off is not claimed.
+
+---
+
 # Self-recognition in chimpanzees and orangutans, but not gorillas
 
 ## Ingestion decision — compilation-first review
@@ -37,21 +52,35 @@ Keep subject ID, original taxon, age/rearing, sample size per condition, mirror 
 
 ## Source availability and item verification — 2026-10-25
 
-Full text not obtained — item cannot yet be verified.
+Full-text PDF verified in EndNote after the user added the remaining references.
 
-Full-text acquisition remains unresolved; do not infer item numbers from citations or review summaries.
+[Suarez-1981-Self-recognition in chimpanzees an.pdf](</Users/crossmodal/Documents/References.Data/PDF/3516616688/Suarez-1981-Self-recognition in chimpanzees an.pdf>)
 
-Acquisition URLs and SHA-256 hashes for new downloads are recorded in `source_manifest.json` alongside the source library. Source files are kept unchanged outside the public data repository. No dataset extraction or frozen item snapshot has been made.
+The original remains unchanged in EndNote; no duplicate PDF was created.
 
 ## Source items
 
-- No item assigned: Results / figures / tables: item selection pending. Unresolved — full text needed before assigning an item number.
+### Figure 3 — Gorilla mark-directed responses by condition and marked location
 
-Item verification does not establish unique new observations. Indirect coverage in comparative compilations still requires checking.
+PDF p. 4 / printed p. 178. Preserve wrist versus brow/ear responses and pre-test versus mirror-test conditions; retain sample/protocol from Methods.
+
+### Figure 7 — Orangutan mark-directed responses by condition and marked location
+
+PDF p. 6 / printed p. 180. Single orangutan; preserve wrist versus brow and pre-test versus test conditions.
+
+### Figure 11 — Chimpanzee mark-directed responses after the longer exposure protocol
+
+PDF p. 8 / printed p. 182. Totals combined across two chimpanzees; preserve aggregate status and exposure protocol.
+
+### Table 2 — Individual chimpanzee mark responses after four days of exposure
+
+PDF p. 9 / printed p. 183. Hoboh and William, wrist/brow and pre-test/test conditions. Methods report accidental loss of most brow dye for William; do not interpret his result as an unqualified failure. Keep this shorter protocol distinct from Figure 11.
+
+Item identification does not clear the ingestion hold. No values have been extracted.
 
 ## Next step
 
-Acquire the source, check the full methods/results and select the exact item. Keep published tables faithful in a snapshot; if values come from prose or figures, document a constructed snapshot and its exact source locations. Source availability is documented above. No frozen snapshot, extracted data or public TSV has been created.
+Resolve compilation coverage using the verified PDF before extraction. Keep published tables faithful in a snapshot; if values come from prose or figures, document a constructed snapshot and its exact source locations. Source availability is documented above. No frozen snapshot, extracted data or public TSV has been created.
 
 The accompanying Suarez_Gallup_1981_registry_rows.xlsx contains a candidate row and paste instructions. Main __ReadMe.xlsx is unchanged; registration follows the repository owner-paste workflow.
 

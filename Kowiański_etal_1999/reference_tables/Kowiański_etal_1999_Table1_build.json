@@ -1,0 +1,124 @@
+{
+  "folder": "Kowiański_etal_1999",
+  "item": "Kowiański_etal_1999_Table1",
+  "locus": "Table1",
+  "headers": [
+    "Species",
+    "Vh (mm3)",
+    "Vc (mm3)",
+    "Vi (mm3)",
+    "Va (mm3)",
+    "Vcl (mm3)",
+    "Vcd (mm3)",
+    "Vcv (mm3)",
+    "Vcl/Vh (%)"
+  ],
+  "n_rows": 9,
+  "source": "/Users/crossmodal/Documents/References.Data/PDF/3015358599/Kowianski-1999-Comparative anatomy.pdf",
+  "kind": "anatomy",
+  "role": "primary",
+  "unit": "mm3",
+  "caption": "Volumes of the cerebral hemisphere, cortices and claustrum in selected species of mammals",
+  "locator": "PDF p.5 / printed p.48",
+  "notes": "Published mean ± SEM. Optical disector density; total neuron number calculated as volume × numerical density. Methods p.46 explicitly says values are from FIXED brains and were NOT transformed to fresh-brain values. Hemisphere basis retained, without doubling.",
+  "snapshot": "Kowiański_etal_1999_Table1_snapshot.csv",
+  "item_encoded": "10.1159%2F000006581_Table1",
+  "species_col": 1,
+  "keep_rows": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "expected_rows": 9,
+  "columns": [
+    {
+      "index": 1,
+      "code": "species_as_published",
+      "type": "text",
+      "unit": "",
+      "role": "primary",
+      "factor": 1,
+      "definition": "Species"
+    },
+    {
+      "index": 2,
+      "code": "Hemisphere_Vol.mm3",
+      "type": "number",
+      "unit": "mm3",
+      "role": "primary",
+      "factor": 1,
+      "definition": "Vh (mm3)"
+    },
+    {
+      "index": 3,
+      "code": "Cortex_Vol.mm3",
+      "type": "number",
+      "unit": "mm3",
+      "role": "primary",
+      "factor": 1,
+      "definition": "Vc (mm3)"
+    },
+    {
+      "index": 4,
+      "code": "Isocortex_Vol.mm3",
+      "type": "number",
+      "unit": "mm3",
+      "role": "primary",
+      "factor": 1,
+      "definition": "Vi (mm3)"
+    },
+    {
+      "index": 5,
+      "code": "Allocortex_Vol.mm3",
+      "type": "number",
+      "unit": "mm3",
+      "role": "primary",
+      "factor": 1,
+      "definition": "Va (mm3)"
+    },
+    {
+      "index": 6,
+      "code": "Claustrum_Vol.mm3",
+      "type": "number",
+      "unit": "mm3",
+      "role": "primary",
+      "factor": 1,
+      "definition": "Vcl (mm3)"
+    },
+    {
+      "index": 7,
+      "code": "Claustrum_dorsal_Vol.mm3",
+      "type": "number",
+      "unit": "mm3",
+      "role": "primary",
+      "factor": 1,
+      "definition": "Vcd (mm3)"
+    },
+    {
+      "index": 8,
+      "code": "Claustrum_ventral_Vol.mm3",
+      "type": "number",
+      "unit": "mm3",
+      "role": "primary",
+      "factor": 1,
+      "definition": "Vcv (mm3)"
+    },
+    {
+      "index": 9,
+      "code": "Claustrum_hemisphere.pct",
+      "type": "number",
+      "unit": "percent",
+      "role": "primary",
+      "factor": 1,
+      "definition": "Vcl/Vh (%)"
+    }
+  ],
+  "source_sha256": "0bbc0ce343b336c45564d2e786a56f7d1f14bf996eeeaba4eb7d98eb6bcf5cdd",
+  "snapshot_sha256": "dea828c79ec20ef38609fc3e657fed6e68bb176754001d33b6ff8017083da444"
+}

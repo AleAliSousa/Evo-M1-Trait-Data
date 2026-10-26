@@ -247,6 +247,8 @@ rows <- lapply(tsvs, function(fn) {
   url <- ""; kind <- "Other"
   if (startsWith(ident, "10.")) {
     url <- paste0("https://doi.org/", ident); kind <- "DOI"
+  } else if (grepl("^https?://", ident)) {
+    url <- ident; kind <- "Repository"
   } else if (grepl("^PMID", ident, ignore.case = TRUE)) {
     url  <- paste0("https://pubmed.ncbi.nlm.nih.gov/", gsub("[^0-9]", "", ident), "/")
     kind <- "PubMed"
@@ -278,9 +280,13 @@ rows <- lapply(tsvs, function(fn) {
   ln <- ln[nzchar(ln)]
   hdr <- if (length(ln)) strsplit(ln[1], "\t", fixed = TRUE)[[1]] else character(0)
   hdr <- gsub('^"|"$', "", hdr)                 # strip surrounding quotes
+  # Quoted multiline references are one record, not one record per physical line.
+  record_count <- tryCatch(nrow(read.delim(file.path(pub, fn), check.names = FALSE,
+                       colClasses = "character", na.strings = NULL)),
+                       error = function(e) max(0L, length(ln) - 1L))
   data.frame(file = fn, identifier = ident, id_type = kind, table_label = label,
              url = url, readme = rm,
-             n_rows = max(0L, length(ln) - 1L), n_cols = length(hdr),
+             n_rows = record_count, n_cols = length(hdr),
              columns = paste(hdr, collapse = "; "),
              citation = cit, citation_short = short,
              first_author = auth, year = yr,

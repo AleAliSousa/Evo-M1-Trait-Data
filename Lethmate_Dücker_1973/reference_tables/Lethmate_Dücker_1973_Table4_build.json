@@ -1,0 +1,136 @@
+{
+  "folder": "Lethmate_Dücker_1973",
+  "item": "Lethmate_Dücker_1973_Table4",
+  "locus": "Table4",
+  "headers": [
+    "species_as_published",
+    "Autor",
+    "sozialbezogene_Reaktion",
+    "selbstbezogene_Reaktion",
+    "Farbmarkierungstest"
+  ],
+  "n_rows": 14,
+  "source": "/Users/crossmodal/Documents/References.Data/PDF/3006968052/Lethmate-2010-Untersuchungen zum Selbsterkenne.pdf",
+  "kind": "evidence",
+  "role": "both",
+  "unit": "mixed",
+  "caption": "Table4",
+  "locator": "Tab.4, printed p.266",
+  "notes": "Plus/minus are reported reactions. Nicht getestet means not tested. Current observations and literature are separated by Autor; compiled Gallup rows are not new independent experiments. Ateles is genus-level.",
+  "custom_columns": [
+    {
+      "index": 1,
+      "code": "species_as_published",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "both",
+      "definition": "species_as_published"
+    },
+    {
+      "index": 2,
+      "code": "Autor",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "both",
+      "definition": "Autor"
+    },
+    {
+      "index": 3,
+      "code": "sozialbezogene_Reaktion",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "both",
+      "definition": "sozialbezogene_Reaktion"
+    },
+    {
+      "index": 4,
+      "code": "selbstbezogene_Reaktion",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "both",
+      "definition": "selbstbezogene_Reaktion"
+    },
+    {
+      "index": 5,
+      "code": "Farbmarkierungstest",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "both",
+      "definition": "Farbmarkierungstest"
+    }
+  ],
+  "snapshot": "Lethmate_Dücker_1973_Table4_snapshot.csv",
+  "item_encoded": "10.1111%2Fj.1439-0310.1973.tb02094.x_Table4",
+  "species_col": 1,
+  "keep_rows": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "expected_rows": 14,
+  "columns": [
+    {
+      "index": 1,
+      "code": "species_as_published",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "both",
+      "definition": "species_as_published"
+    },
+    {
+      "index": 2,
+      "code": "Autor",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "both",
+      "definition": "Autor"
+    },
+    {
+      "index": 3,
+      "code": "sozialbezogene_Reaktion",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "both",
+      "definition": "sozialbezogene_Reaktion"
+    },
+    {
+      "index": 4,
+      "code": "selbstbezogene_Reaktion",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "both",
+      "definition": "selbstbezogene_Reaktion"
+    },
+    {
+      "index": 5,
+      "code": "Farbmarkierungstest",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "both",
+      "definition": "Farbmarkierungstest"
+    }
+  ],
+  "source_sha256": "7e3b5261f08a20ca0ca8d468c7d4f49e66001ec92469329a763a6f5692907aa2",
+  "snapshot_sha256": "1d7a38b0a205c687669b4567e01e23aafa0185237a73b61f08e67360aac5440c"
+}

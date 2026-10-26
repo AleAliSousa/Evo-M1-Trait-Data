@@ -1,3 +1,16 @@
+# Current build status — 2026-10-25
+
+2 executable item(s) registered in `__ReadMe.xlsx`.
+
+- [Kerney_etal_2017_OnlineResource1](Kerney_etal_2017_OnlineResource1.README.md): `Kerney_etal_2017_OnlineResource1_snapshot.xls` → reader → CSV → public TSV.
+- [Kerney_etal_2017_OnlineResource2](Kerney_etal_2017_OnlineResource2.README.md): `Kerney_etal_2017_OnlineResource2_snapshot.xlsx` → reader → CSV → public TSV.
+
+
+
+See `____TODO/Nick_Fran_sources_2026-10-24/build_status.csv` and `_tools/build_nick_fran_sources.R`. Human visual sign-off is not claimed.
+
+---
+
 # The coevolution of play and the cortico-cerebellar system in primates
 
 ## Ingestion decision — compilation-first review

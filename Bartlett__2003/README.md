@@ -1,3 +1,16 @@
+# Current build status — 2026-10-25
+
+2 executable item(s) registered in `__ReadMe.xlsx`.
+
+- [Bartlett__2003_Figure4](Bartlett__2003_Figure4.README.md): `Bartlett__2003_Figure4_snapshot.csv` → reader → CSV → public TSV.
+- [Bartlett__2003_Figure5](Bartlett__2003_Figure5.README.md): `Bartlett__2003_Figure5_snapshot.csv` → reader → CSV → public TSV.
+
+
+
+See `____TODO/Nick_Fran_sources_2026-10-24/build_status.csv` and `_tools/build_nick_fran_sources.R`. Human visual sign-off is not claimed.
+
+---
+
 # Intragroup and intergroup social interactions in white-handed gibbons
 
 ## Ingestion decision — compilation-first review
@@ -31,21 +44,27 @@ Primary-source review. Verify age classes, denominators and exact table. Check o
 
 ## Source availability and item verification — 2026-10-25
 
-Full text not obtained — item cannot yet be verified.
+Full-text PDF verified in EndNote after the user added the remaining references.
 
-Full-text acquisition remains unresolved; do not infer item numbers from citations or review summaries.
+[Bartlett-2003-Intragroup and intergroup social.pdf](</Users/crossmodal/Documents/References.Data/PDF/2426206476/Bartlett-2003-Intragroup and intergroup social.pdf>)
 
-Acquisition URLs and SHA-256 hashes for new downloads are recorded in `source_manifest.json` alongside the source library. Source files are kept unchanged outside the public data repository. No dataset extraction or frozen item snapshot has been made.
+The original remains unchanged in EndNote; no duplicate PDF was created.
 
 ## Source items
 
-- No item assigned: Source tables / results to select. Unresolved — full text needed before assigning an item number.
+### Figure 4 — Gibbon grooming, play and contact by age/sex class
 
-Item verification does not establish unique new observations. Indirect coverage in comparative compilations still requires checking.
+PDF p. 9 / printed p. 247. Percentages of SOCIAL activity allocated to each behaviour, not percentages of all activity. The dissertation citation mismatch and Kerney overlap hold remain unresolved.
+
+### Figure 5 — Monthly variation in gibbon play and grooming activity
+
+PDF p. 9 / printed p. 247. Monthly percentage of activity; preserve month, sampling and denominator. Do not combine with Figure 4 without a justified conversion. Check Kerney coverage before extraction.
+
+Item identification does not clear the ingestion hold. No values have been extracted.
 
 ## Next step
 
-Acquire the original full text before assigning unresolved table/figure/text items. Preserve printed units, species names, sample sizes and source citations in a faithful snapshot. For digital supplements retain the downloaded bytes unchanged. Build and validate only after item selection and provenance review.
+Resolve compilation coverage and any underlying-data gap using the verified PDF before extraction. Preserve printed units, species names, sample sizes and source citations in a faithful snapshot. For digital supplements retain the downloaded bytes unchanged. Build and validate only after item selection and provenance review.
 
 Bartlett__2003_registry_rows.xlsx contains candidate rows aligned to the live registry and HOW_TO_PASTE instructions. The owner registers the selected items; the main registry has not been edited. Source availability is documented above. No frozen snapshot, analysis CSV, public TSV or R reader has been created.
 

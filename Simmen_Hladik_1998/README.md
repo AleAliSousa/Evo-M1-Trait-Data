@@ -1,3 +1,15 @@
+# Current build status — 2026-10-25
+
+1 executable item(s) registered in `__ReadMe.xlsx`.
+
+- [Simmen_Hladik_1998_Table1](Simmen_Hladik_1998_Table1.README.md): `Simmen_Hladik_1998_Table1_snapshot.csv` → reader → CSV → public TSV.
+
+
+
+See `____TODO/Nick_Fran_sources_2026-10-24/build_status.csv` and `_tools/build_nick_fran_sources.R`. Human visual sign-off is not claimed.
+
+---
+
 # Sweet and bitter taste discrimination in primates: Scaling effects across species
 
 ## Ingestion decision — compilation-first review
@@ -31,21 +43,23 @@ Determine primary versus reused values per row. Keep sweet and bitter compounds 
 
 ## Source availability and item verification — 2026-10-25
 
-Full text not obtained — item cannot yet be verified.
+Existing full-text PDF verified in EndNote. The earlier statement that full text had not been obtained was incomplete: the EndNote attachment library had not been searched.
 
-Full-text acquisition remains unresolved; do not infer item numbers from citations or review summaries.
+[simmen_hladik_1998.pdf](</Users/crossmodal/Documents/References.Data/PDF/0047610719/simmen_hladik_1998.pdf>)
 
-Acquisition URLs and SHA-256 hashes for new downloads are recorded in `source_manifest.json` alongside the source library. Source files are kept unchanged outside the public data repository. No dataset extraction or frozen item snapshot has been made.
+The original remains in EndNote; no duplicate PDF was created.
 
 ## Source items
 
-- No item assigned: Source tables / results to select. Unresolved — full text needed before assigning an item number.
+**Table 1 — Species, mean body weight and taste thresholds**
 
-Item verification does not establish unique new observations. Indirect coverage in comparative compilations still requires checking.
+PDF p. 2 / printed p. 130. Sucrose, fructose and quinine HCl thresholds; published sources plus unpublished results. Preserve the quinine column multiplier and per-row references. Compare with Norlen/Redin before extraction.
+
+Item identification does not clear the ingestion hold. No values have been extracted.
 
 ## Next step
 
-Acquire the original full text before assigning unresolved table/figure/text items. Preserve printed units, species names, sample sizes and source citations in a faithful snapshot. For digital supplements retain the downloaded bytes unchanged. Build and validate only after item selection and provenance review.
+Use the verified EndNote PDF to resolve compilation coverage before extraction. Preserve printed units, species names, sample sizes and source citations in a faithful snapshot. For digital supplements retain the downloaded bytes unchanged. Build and validate only after item selection and provenance review.
 
 Simmen_Hladik_1998_registry_rows.xlsx contains candidate rows aligned to the live registry and HOW_TO_PASTE instructions. The owner registers the selected items; the main registry has not been edited. Source availability is documented above. No frozen snapshot, analysis CSV, public TSV or R reader has been created.
 

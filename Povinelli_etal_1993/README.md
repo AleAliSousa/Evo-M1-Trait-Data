@@ -1,3 +1,15 @@
+# Current build status — 2026-10-25
+
+1 executable item(s) registered in `__ReadMe.xlsx`.
+
+- [Povinelli_etal_1993_Table5](Povinelli_etal_1993_Table5.README.md): `Povinelli_etal_1993_Table5_snapshot.csv` → reader → CSV → public TSV.
+
+
+
+See `____TODO/Nick_Fran_sources_2026-10-24/build_status.csv` and `_tools/build_nick_fran_sources.R`. Human visual sign-off is not claimed.
+
+---
+
 # Self-recognition in chimpanzees (Pan troglodytes): Distribution, ontogeny, and patterns of emergence
 
 ## Ingestion decision — compilation-first review

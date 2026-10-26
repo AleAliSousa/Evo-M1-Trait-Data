@@ -1,0 +1,56 @@
+{
+  "folder": "Suarez_Gallup_1981",
+  "item": "Suarez_Gallup_1981_Figure7",
+  "locus": "Figure7",
+  "headers": [
+    "species_as_published",
+    "subject",
+    "mark_test_result"
+  ],
+  "n_rows": 2,
+  "expected_rows": 2,
+  "keep_rows": [
+    1,
+    2
+  ],
+  "source": "/Users/crossmodal/Documents/References.Data/PDF/3516616688/Suarez-1981-Self-recognition in chimpanzees an.pdf",
+  "kind": "evidence",
+  "role": "primary",
+  "caption": "Constructed endpoints from Figure7",
+  "locator": "Figure7 and orangutan Results p.180",
+  "notes": "Dyak did not inspect his visible wrist mark either, so the authors explicitly call the result inconclusive. Do not count Dyak as a failed test.",
+  "snapshot": "Suarez_Gallup_1981_Figure7_snapshot.csv",
+  "item_encoded": "10.1016%2FS0047-2484(81)80016-4_Figure7",
+  "species_col": 1,
+  "columns": [
+    {
+      "index": 1,
+      "code": "species_as_published",
+      "type": "text",
+      "unit": "",
+      "role": "primary",
+      "factor": 1,
+      "definition": "species_as_published"
+    },
+    {
+      "index": 2,
+      "code": "subject",
+      "type": "text",
+      "unit": "",
+      "role": "primary",
+      "factor": 1,
+      "definition": "subject"
+    },
+    {
+      "index": 3,
+      "code": "mark_test_result",
+      "type": "text",
+      "unit": "",
+      "role": "primary",
+      "factor": 1,
+      "definition": "mark_test_result"
+    }
+  ],
+  "snapshot_sha256": "adb0e3ccb138e2a4e4d799b38ce07e769b69c770ebd5c6dc68e52e77beb49418",
+  "source_sha256": "a8a231877481aee3414a508bff4bfd4fd44ed930475c1e00f7d62f370f84e1d0"
+}

@@ -1,0 +1,176 @@
+{
+  "folder": "Kerney_etal_2017",
+  "item": "Kerney_etal_2017_OnlineResource2",
+  "locus": "OnlineResource2",
+  "kind": "play",
+  "role": "secondary",
+  "unit": "mixed",
+  "snapshot": "Kerney_etal_2017_OnlineResource2_snapshot.xlsx",
+  "headers": [
+    "Species",
+    "Mean % of time budget spent in play",
+    "Adult-adult social play frequency score\n(U = Unobserved; I = Infrequent; C = Common)",
+    "Prefrontal cortex grey matter (PFG)",
+    "Non-prefrontal heteromodal cortical association area grey matter (CortAssG)",
+    "Posterior cerebellum (pCereb)",
+    "Prefrontal cortex grey matter and posterior cerebellum (PFG + pCereb)",
+    "Non-prefrontal heteromodal cortical association area grey matter and posterior cerebellum (CortAssG + pCereb)",
+    "Primary visual cortex grey matter (StriateG)",
+    "Medial anterior cerebellum (mCereb)",
+    "StriateG + mCereb",
+    "nonStriateG",
+    "nonCereb"
+  ],
+  "n_rows": 19,
+  "skip": 5,
+  "sheet": "Dataset",
+  "locator": "Online Resource 2",
+  "caption": "Published play and brain data; original workbook preserved",
+  "source": "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Evo-M1-Trait-Data-restricted/source_library/Nick_Fran_2026-10-25/Kerney_etal_2017_OR2.xlsx",
+  "item_encoded": "10.1007%2Fs10329-017-0615-x_OnlineResource2",
+  "species_col": 1,
+  "keep_rows": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "expected_rows": 19,
+  "columns": [
+    {
+      "index": 1,
+      "code": "species_as_published",
+      "type": "text",
+      "unit": "",
+      "role": "secondary",
+      "factor": 1,
+      "definition": "Species"
+    },
+    {
+      "index": 2,
+      "code": "Play_time.pct",
+      "type": "number",
+      "unit": "percent",
+      "role": "secondary",
+      "factor": 1,
+      "definition": "Mean % of time budget spent in play"
+    },
+    {
+      "index": 3,
+      "code": "Adult_social_play_category",
+      "type": "text",
+      "unit": "category",
+      "role": "secondary",
+      "factor": 1,
+      "definition": "Adult-adult social play frequency score\n(U = Unobserved; I = Infrequent; C = Common)"
+    },
+    {
+      "index": 4,
+      "code": "PFG_volume_as_reported",
+      "type": "number",
+      "unit": "source volume units",
+      "role": "secondary",
+      "factor": 1,
+      "definition": "Prefrontal cortex grey matter (PFG)"
+    },
+    {
+      "index": 5,
+      "code": "CortAssG_volume_as_reported",
+      "type": "number",
+      "unit": "source volume units",
+      "role": "secondary",
+      "factor": 1,
+      "definition": "Non-prefrontal heteromodal cortical association area grey matter (CortAssG)"
+    },
+    {
+      "index": 6,
+      "code": "pCereb_volume_as_reported",
+      "type": "number",
+      "unit": "source volume units",
+      "role": "secondary",
+      "factor": 1,
+      "definition": "Posterior cerebellum (pCereb)"
+    },
+    {
+      "index": 7,
+      "code": "PFG_plus_pCereb_volume_as_reported",
+      "type": "number",
+      "unit": "source volume units",
+      "role": "secondary",
+      "factor": 1,
+      "definition": "Prefrontal cortex grey matter and posterior cerebellum (PFG + pCereb)"
+    },
+    {
+      "index": 8,
+      "code": "CortAssG_plus_pCereb_volume_as_reported",
+      "type": "number",
+      "unit": "source volume units",
+      "role": "secondary",
+      "factor": 1,
+      "definition": "Non-prefrontal heteromodal cortical association area grey matter and posterior cerebellum (CortAssG + pCereb)"
+    },
+    {
+      "index": 9,
+      "code": "StriateG_volume_as_reported",
+      "type": "number",
+      "unit": "source volume units",
+      "role": "secondary",
+      "factor": 1,
+      "definition": "Primary visual cortex grey matter (StriateG)"
+    },
+    {
+      "index": 10,
+      "code": "mCereb_volume_as_reported",
+      "type": "number",
+      "unit": "source volume units",
+      "role": "secondary",
+      "factor": 1,
+      "definition": "Medial anterior cerebellum (mCereb)"
+    },
+    {
+      "index": 11,
+      "code": "StriateG_plus_mCereb_volume_as_reported",
+      "type": "number",
+      "unit": "source volume units",
+      "role": "secondary",
+      "factor": 1,
+      "definition": "StriateG + mCereb"
+    },
+    {
+      "index": 12,
+      "code": "nonStriateG_volume_as_reported",
+      "type": "number",
+      "unit": "source volume units",
+      "role": "secondary",
+      "factor": 1,
+      "definition": "nonStriateG"
+    },
+    {
+      "index": 13,
+      "code": "nonCereb_volume_as_reported",
+      "type": "number",
+      "unit": "source volume units",
+      "role": "secondary",
+      "factor": 1,
+      "definition": "nonCereb"
+    }
+  ],
+  "notes": "Play time is the behavioural measure. Anatomy values retain author workbook units (no conversion asserted here) and repeat Smaers/de Sousa/Frahm sources. Adult-social-play categories repeat Iwaniuk2001; neither anatomy nor ordinal categories enter a second merge.",
+  "source_sha256": "cdb39bd7fcbe5d690d7cff4bec77f5fbd24b0cea467c1758b1d7c75e3a7b3d86",
+  "snapshot_sha256": "cdb39bd7fcbe5d690d7cff4bec77f5fbd24b0cea467c1758b1d7c75e3a7b3d86"
+}

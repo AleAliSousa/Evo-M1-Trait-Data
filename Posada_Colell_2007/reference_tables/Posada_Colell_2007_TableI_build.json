@@ -1,0 +1,170 @@
+{
+  "folder": "Posada_Colell_2007",
+  "item": "Posada_Colell_2007_TableI",
+  "locus": "TableI",
+  "headers": [
+    "behaviour",
+    "Covered_count",
+    "Covered_percent",
+    "Uncovered_count",
+    "Uncovered_percent",
+    "Marked_count",
+    "Marked_percent"
+  ],
+  "n_rows": 9,
+  "source": "/Users/crossmodal/Documents/References.Data/PDF/0628174989/Posada-2007-Another gorilla (Gorilla gorilla g.pdf",
+  "kind": "evidence",
+  "role": "primary",
+  "unit": "mixed",
+  "caption": "TableI",
+  "locator": "Table I",
+  "species_constant": "Gorilla gorilla gorilla",
+  "notes": "One male Xebo; differing session durations. Printed Agonistic percentage 2 and Uncovered total 3751 do not match displayed counts; preserve and flag, not correct. Total row repeats components.",
+  "custom_columns": [
+    {
+      "index": 1,
+      "code": "behaviour",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "behaviour"
+    },
+    {
+      "index": 2,
+      "code": "Covered_count",
+      "type": "number",
+      "unit": "count",
+      "factor": 1,
+      "role": "primary",
+      "definition": "Covered_count"
+    },
+    {
+      "index": 3,
+      "code": "Covered_percent",
+      "type": "number",
+      "unit": "percent",
+      "factor": 1,
+      "role": "primary",
+      "definition": "Covered_percent"
+    },
+    {
+      "index": 4,
+      "code": "Uncovered_count",
+      "type": "number",
+      "unit": "count",
+      "factor": 1,
+      "role": "primary",
+      "definition": "Uncovered_count"
+    },
+    {
+      "index": 5,
+      "code": "Uncovered_percent",
+      "type": "number",
+      "unit": "percent",
+      "factor": 1,
+      "role": "primary",
+      "definition": "Uncovered_percent"
+    },
+    {
+      "index": 6,
+      "code": "Marked_count",
+      "type": "number",
+      "unit": "count",
+      "factor": 1,
+      "role": "primary",
+      "definition": "Marked_count"
+    },
+    {
+      "index": 7,
+      "code": "Marked_percent",
+      "type": "number",
+      "unit": "percent",
+      "factor": 1,
+      "role": "primary",
+      "definition": "Marked_percent"
+    }
+  ],
+  "snapshot": "Posada_Colell_2007_TableI_snapshot.csv",
+  "item_encoded": "10.1002%2Fajp.20355_TableI",
+  "species_col": 1,
+  "keep_rows": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "expected_rows": 9,
+  "columns": [
+    {
+      "index": 1,
+      "code": "behaviour",
+      "type": "text",
+      "unit": "",
+      "factor": 1,
+      "role": "primary",
+      "definition": "behaviour"
+    },
+    {
+      "index": 2,
+      "code": "Covered_count",
+      "type": "number",
+      "unit": "count",
+      "factor": 1,
+      "role": "primary",
+      "definition": "Covered_count"
+    },
+    {
+      "index": 3,
+      "code": "Covered_percent",
+      "type": "number",
+      "unit": "percent",
+      "factor": 1,
+      "role": "primary",
+      "definition": "Covered_percent"
+    },
+    {
+      "index": 4,
+      "code": "Uncovered_count",
+      "type": "number",
+      "unit": "count",
+      "factor": 1,
+      "role": "primary",
+      "definition": "Uncovered_count"
+    },
+    {
+      "index": 5,
+      "code": "Uncovered_percent",
+      "type": "number",
+      "unit": "percent",
+      "factor": 1,
+      "role": "primary",
+      "definition": "Uncovered_percent"
+    },
+    {
+      "index": 6,
+      "code": "Marked_count",
+      "type": "number",
+      "unit": "count",
+      "factor": 1,
+      "role": "primary",
+      "definition": "Marked_count"
+    },
+    {
+      "index": 7,
+      "code": "Marked_percent",
+      "type": "number",
+      "unit": "percent",
+      "factor": 1,
+      "role": "primary",
+      "definition": "Marked_percent"
+    }
+  ],
+  "source_sha256": "82f00282c5b96c22fd70ec9908df5f01b3f8e6ca074d042415cf18d03c359a44",
+  "snapshot_sha256": "800805d22fc042ae1d7c1292bde1ac7f34d79166ece1a4a118a310e1075ea1cc"
+}

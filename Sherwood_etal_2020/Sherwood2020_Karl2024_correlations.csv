@@ -1,0 +1,8 @@
+"measure","n","Karl_column","Sherwood_column","pearson_r_log10","spearman_rho","leave_one_species_out_r_min","leave_one_species_out_r_max"
+"brain_mass",4,"Karl_brain_mass_g","Sherwood_brain_mass_g",0.999564333727279,1,0.999646166113646,0.999988508269588
+"synapse_density_V1_II_III",4,"Karl_synapse_density_per_mm2","Sherwood_V1_II_III_synapse_density_per_mm3",-0.241033228657735,-0.2,-0.684718828672842,0.899742140134383
+"synapse_density_V1_V_VI",4,"Karl_synapse_density_per_mm2","Sherwood_V1_V_VI_synapse_density_per_mm3",-0.603432862145126,-0.2,-0.881378679066023,0.735510785633947
+"neuron_density_V1_II_III",4,"Karl_neuron_density_per_mm2","Sherwood_V1_II_III_neuron_density_per_mm3",0.81680200449531,1,0.849553026511105,0.998671457634481
+"neuron_density_V1_V_VI",4,"Karl_neuron_density_per_mm2","Sherwood_V1_V_VI_neuron_density_per_mm3",0.605942871760798,0.4,0.153246449698331,0.916467854849133
+"synapses_per_neuron_V1_II_III",4,"Karl_synapses_per_neuron_areal","Sherwood_V1_II_III_synapses_per_neuron",0.677798978803987,0.8,0.502300302736019,0.950334014359178
+"synapses_per_neuron_V1_V_VI",4,"Karl_synapses_per_neuron_areal","Sherwood_V1_V_VI_synapses_per_neuron",0.643569710842088,0.8,0.419035333419089,0.974856974437024

@@ -98,6 +98,7 @@ papers <- tribble(
   "MacLeod_etal_2003_Table2",             "Zilles",             2003,
   "Bauernfeind_etal_2013_Table1",         "Zilles",             2013,
   "Bauernfeind_etal_2013_Table2",         "Zilles",             2013,
+  "Amunts_etal_2005_Table1",             "Zilles",             2005,  # ten human brains; measured L+R means, individual shrinkage correction
   "Bush_Allman_2003_Table1",              "Bush",               2003,
   "Bush_Allman_2004_b_TABLE1",            "Bush",               2004,
   "Bush_Allman_2004_a_Table2",            "Bush",               2004,  # ref 55 (frontal/neocortex GM+WM; 55 spp incl. Cheirogaleus/Mandrillus). Derives Neocortex_Vol.mm3 (GM+WM) in the reshape below. Same team 'Bush' as 2003/2004b (Tier-2, averaged).
@@ -649,6 +650,19 @@ if (nrow(lat_src_doubled)) {
                   paste0("published value is 2x one hemisphere, doubled by the source (not by ",
                          "this merge): ", Source, " -- see laterality_known.csv"))))
 }
+# Amunts' right-side Table 1 totals disagree with its prose. The bilateral means
+# inherit that ambiguity; carry the source errata into the existing flag product.
+amunts_errata <- read_csv(file.path(base, "Amunts_etal_2005", "reference_tables",
+                                   "Amunts_etal_2005_errata.csv"), show_col_types = FALSE)
+amunts_flags <- amunts_errata %>%
+  filter(status != "withdrawn") %>%
+  mutate(Original_Term = sub("_right_mean_mm3$", "_bilateral_mean_mm3", variable)) %>%
+  inner_join(terms %>% filter(Reference == "Amunts_etal_2005_Table1"), by = "Original_Term") %>%
+  transmute(Species = "Homo sapiens", Variable = Standardized_Term,
+            flag = "publication_ambiguity",
+            detail = paste0(errata_id, " (", status, "): ", printed_value,
+                            "; bilateral mean follows Table 1. See source errata."))
+flags <- bind_rows(flags, amunts_flags)
 write_csv(flags, "volumes_flags.csv")
 
 volumes_wide <- volumes_long %>% pivot_wider(id_cols=Species, names_from=Variable, values_from=Value) %>% arrange(Species)

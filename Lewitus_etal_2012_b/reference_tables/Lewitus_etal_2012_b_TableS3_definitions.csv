@@ -1,0 +1,14 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species,Species name as published,,,,info,Mammalia,Lewitus_etal_2012_b_TableS3,,
+glia_neuron_ratio_V1,Glia/neuron ratio,V1,GliaNeuronRatio.Stereology,mean,secondary,Mammalia,Lewitus_etal_2012_b_TableS3,"Left hemisphere; V1 layers II–VI; CA1–3 pyramidal cell region, not whole hippocampus. Never combine with isotropic-fractionator densities. Unknown tissue shrinkage. Published precision retained.",Workbook S3
+neuronal_density_V1_cells_mm3,"Neuronal density, cells/mm3",V1,NeuronalDensity.cells.mm3.Stereology,mean,secondary,Mammalia,Lewitus_etal_2012_b_TableS3,"Left hemisphere; V1 layers II–VI; CA1–3 pyramidal cell region, not whole hippocampus. Never combine with isotropic-fractionator densities. Unknown tissue shrinkage. Published precision retained.",Workbook S3
+glial_density_V1_cells_mm3,"Glial density, cells/mm3",V1,GlialDensity.cells.mm3.Stereology,mean,secondary,Mammalia,Lewitus_etal_2012_b_TableS3,"Left hemisphere; V1 layers II–VI; CA1–3 pyramidal cell region, not whole hippocampus. Never combine with isotropic-fractionator densities. Unknown tissue shrinkage. Published precision retained.",Workbook S3
+glia_neuron_ratio_CA1to3,Glia/neuron ratio,Hippocampus_CA1to3,GliaNeuronRatio.Stereology,mean,primary,Mammalia,Lewitus_etal_2012_b_TableS3,"Left hemisphere; V1 layers II–VI; CA1–3 pyramidal cell region, not whole hippocampus. Never combine with isotropic-fractionator densities. Unknown tissue shrinkage. Published precision retained.",Workbook S3
+neuronal_density_CA1to3_cells_mm3,"Neuronal density, cells/mm3",Hippocampus_CA1to3,NeuronalDensity.cells.mm3.Stereology,mean,primary,Mammalia,Lewitus_etal_2012_b_TableS3,"Left hemisphere; V1 layers II–VI; CA1–3 pyramidal cell region, not whole hippocampus. Never combine with isotropic-fractionator densities. Unknown tissue shrinkage. Published precision retained.",Workbook S3
+glial_density_CA1to3_cells_mm3,"Glial density, cells/mm3",Hippocampus_CA1to3,GlialDensity.cells.mm3.Stereology,mean,primary,Mammalia,Lewitus_etal_2012_b_TableS3,"Left hemisphere; V1 layers II–VI; CA1–3 pyramidal cell region, not whole hippocampus. Never combine with isotropic-fractionator densities. Unknown tissue shrinkage. Published precision retained.",Workbook S3
+hemisphere,Sampled hemisphere,,,,info,Mammalia,Lewitus_etal_2012_b_TableS3,,
+age_class,Adult except two juveniles identified in Methods,,,,info,Mammalia,Lewitus_etal_2012_b_TableS3,,
+V1_data_role,Secondary/reused V1 measurements from earlier Lewitus study,,,,info,Mammalia,Lewitus_etal_2012_b_TableS3,,
+CA1to3_data_role,New CA1–3 measurement role,,,,info,Mammalia,Lewitus_etal_2012_b_TableS3,,
+V1_source_key,Reference key; join reference_tables item references on ref_key,,,,info,Mammalia,Lewitus_etal_2012_b_TableS3,,
+source,Publication folder token,,,,info,Mammalia,Lewitus_etal_2012_b_TableS3,,

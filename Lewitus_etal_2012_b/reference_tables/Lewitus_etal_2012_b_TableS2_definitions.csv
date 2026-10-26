@@ -1,0 +1,15 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species,Species name as published,,,,info,Mammalia,Lewitus_etal_2012_b_TableS2,,
+StrGc_source,Unconverted source value; caption mm3 conflicts with Figure 4 um3,DentateGyrus_granular_layer,,,info,Mammalia,Lewitus_etal_2012_b_TableS2,Keep as evidence; not a second measured trait.,S2
+DG_granular_layer_volume_mm3,"Layer volume in mm3, converted from Figure 4 units",DentateGyrus_granular_layer,Vol.mm3,mean,primary,Mammalia,Lewitus_etal_2012_b_TableS2,"ERRATA Lewitus_etal_2012_b-E001 (confirmed, publication_ambiguity): printed mm3 (caption); μm3 (Figure 4), repo had blank | Raw / 1e9. Laterality unresolved for these volume estimates; exclude from bilateral volume merge.",S2; Figure 4 legend p.2558
+StrMol_source,Unconverted source value; caption mm3 conflicts with Figure 4 um3,DentateGyrus_molecular_layer,,,info,Mammalia,Lewitus_etal_2012_b_TableS2,Keep as evidence; not a second measured trait.,S2
+DG_molecular_layer_volume_mm3,"Layer volume in mm3, converted from Figure 4 units",DentateGyrus_molecular_layer,Vol.mm3,mean,primary,Mammalia,Lewitus_etal_2012_b_TableS2,"ERRATA Lewitus_etal_2012_b-E002 (confirmed, publication_ambiguity): printed mm3 (caption); μm3 (Figure 4), repo had blank | Raw / 1e9. Laterality unresolved for these volume estimates; exclude from bilateral volume merge.",S2; Figure 4 legend p.2558
+CrbGc_source,Unconverted source value; caption mm3 conflicts with Figure 4 um3,Cerebellum_granular_layer,,,info,Mammalia,Lewitus_etal_2012_b_TableS2,Keep as evidence; not a second measured trait.,S2
+cerebellar_granular_layer_volume_mm3,"Layer volume in mm3, converted from Figure 4 units",Cerebellum_granular_layer,Vol.mm3,mean,primary,Mammalia,Lewitus_etal_2012_b_TableS2,"ERRATA Lewitus_etal_2012_b-E003 (confirmed, publication_ambiguity): printed mm3 (caption); μm3 (Figure 4), repo had blank | Raw / 1e9. Laterality unresolved for these volume estimates; exclude from bilateral volume merge.",S2; Figure 4 legend p.2558
+brain_mass_mg,"Brain mass, mg",WholeBrain,Mass.mg,mean,primary,Mammalia,Lewitus_etal_2012_b_TableS2,Recorded specimen brain weights per Methods; convert g ×1000.,S2 col 8
+body_mass_g,"Species body mass, g",Body,Mass.g,mean,secondary,Mammalia,Lewitus_etal_2012_b_TableS2,Jones et al. 2009; kg ×1000.,S2 col 9 footnote *
+gestation_days,"Gestation length, days",,Gestation.days,mean,secondary,Mammalia,Lewitus_etal_2012_b_TableS2,Jones et al. 2009.,S2 col 10 footnote *
+body_gestation_source_key,Reference key; join item references on ref_key,,,,info,Mammalia,Lewitus_etal_2012_b_TableS2,,
+volume_unit_basis,Evidence for unit conversion,,,,info,Mammalia,Lewitus_etal_2012_b_TableS2,,
+volume_laterality,Unresolved side coverage for layer-volume estimates,,,,info,Mammalia,Lewitus_etal_2012_b_TableS2,,
+source,Publication folder token,,,,info,Mammalia,Lewitus_etal_2012_b_TableS2,,

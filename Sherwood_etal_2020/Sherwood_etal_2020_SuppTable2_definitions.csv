@@ -1,0 +1,15 @@
+output_column,source_header,unit,derivation
+species_as_published,Species,,as published
+brain_mass_g,Brain Mass,g,as published
+synapse_density_V1_II_III_per_mm3,Synapse density in V1 layers II-III,count/mm^3,as published
+synapse_density_V1_V_VI_per_mm3,Synapse density in V1 layers V-VI,count/mm^3,as published
+synapse_density_IT_II_III_per_mm3,Synapse density in IT layers II-III,count/mm^3,as published
+synapse_density_IT_V_VI_per_mm3,Synapse density in IT layers V-VI,count/mm^3,as published
+neuron_density_V1_II_III_per_mm3,Neuron density in V1 layers II-III,count/mm^3,as published
+neuron_density_V1_V_VI_per_mm3,Neuron density in V1 layers V-VI,count/mm^3,as published
+neuron_density_IT_II_III_per_mm3,Neuron density in IT layers II-III,count/mm^3,as published
+neuron_density_IT_V_VI_per_mm3,Neuron density in IT layers V-VI,count/mm^3,as published
+synapses_per_neuron_V1_II_III,Synapses per neuron in V1 layers II-III,count/count,source Excel formula: synapse density / neuron density
+synapses_per_neuron_V1_V_VI,Synapses per neuron in V1 layers V-VI,count/count,source Excel formula: synapse density / neuron density
+synapses_per_neuron_IT_II_III,Synapses per neuron in IT layers II-III,count/count,source Excel formula: synapse density / neuron density
+synapses_per_neuron_IT_V_VI,Synapses per neuron in IT layers V-VI,count/count,source Excel formula: synapse density / neuron density

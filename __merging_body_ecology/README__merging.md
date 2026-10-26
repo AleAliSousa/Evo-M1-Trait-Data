@@ -151,3 +151,13 @@ species mean), which widens several species' within-species body-mass range and 
 `DISAGREEMENT>2x` flags in `body_ecology_dedupe_report.csv` for species it contributes heavily to
 (e.g. several fish species). These are legitimate flags reflecting genuine ontogenetic spread in
 the new source, not merge errors — reviewed, not corrected.
+
+
+## Value vetoes (added 2026-10-26)
+
+`body_ecology_value_flags.csv` drops named harvested rows before pooling. Schema as `__merging_volumes/volumes_select_value_flags.csv`
+plus `n_expected`: a veto must match exactly that many rows or the build stops (a veto can neither silently do nothing nor silently drop
+more). Only `action = skip` is implemented. Vetoed rows are removed from the pool and from `body_ecology_unfiltered.csv` and listed in
+`body_ecology_vetoed_rows.csv`. Current veto (flag `fsu_unvalidated_weights`): Nudo et al. 1995 Table 1 body weight (24 rows; individual FSU animals, not species means).
+Reason: absolute values of this single-animal FSU lineage are not validated (owner policy); see `_keys/specimen_crosswalk/Green_monkey_FSU_specimen_note.md`.
+Implemented in `body_ecology_compiled.R`.

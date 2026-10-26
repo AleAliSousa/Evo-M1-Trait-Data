@@ -119,3 +119,16 @@ Homo 1,333 g, Gorilla 446 g, Macaca mulatta 94 g, Microcebus murinus 1.78 g, Sor
   yet; would need parsing.
 - A few source rows use trinomials/subspecies (e.g. `Homo sapiens sapiens`, `Papio cynocephalus
   anubis`) that don't collapse to the binomial — add key rows if a specific species needs merging.
+
+
+## Value vetoes (added 2026-10-26)
+
+`brain_mass_value_flags.csv` drops named harvested rows before pooling. Schema as `__merging_volumes/volumes_select_value_flags.csv`
+plus `n_expected`: a veto must match exactly that many rows or the build stops (a veto can neither silently do nothing nor silently drop
+more). Only `action = skip` is implemented. Vetoed rows are removed from the pool and from `brain_mass_unfiltered.csv` and listed in
+`brain_mass_vetoed_rows.csv`. Current vetoes (flags `fsu_unvalidated_weights`, and `extraction_error_zero` for one row): Nudo et al. 1995 Table 1 brain weight (24 rows) and the
+5 DeCasien 2017 rows whose source is Glendenning 1998 (green monkey 36.54 g, rhesus 53.7, slow loris 7.88, galago 3.2, brown lemur 9.5).
+Reason: absolute values of this single-animal FSU lineage are not validated and are treated as non-shrinkage-corrected (owner policy);
+see `_keys/specimen_crosswalk/Green_monkey_FSU_specimen_note.md`. Implemented in both `build_brain_mass_merge.py` and
+`brain_mass_compiled.R`. Note: the R twin currently stops during pooling on the present inputs (an NA `role`), independent of this change.
+The `extraction_error_zero` veto drops the DeCasien 2017 *Chlorocebus aethiops* row with brain mass 0 (source Haug 1987; DeCasien marks it IGNORE). Haug 1987 Table 2 (`Haug__1987/`) prints a vervet brain volume of 64 cm3: the 0 is a blank volume carried through Boddy 2012 and DeCasien 2017. Effect: the cell's `n_sources` 7 -> 6 and `value_min` 0 -> 60; the pooled value is unchanged.

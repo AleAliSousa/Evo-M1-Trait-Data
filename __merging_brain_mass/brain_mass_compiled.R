@@ -219,6 +219,30 @@ for (t in targets) {
 }
 uf <- do.call(rbind, uf)
 
+## ---- value vetoes: brain_mass_value_flags.csv ----------------------------------------
+## Same schema and `skip` action as __merging_volumes/volumes_select_value_flags.csv, plus n_expected:
+## a veto must match exactly that many harvested rows or the build stops. Species "*" = all.
+## Vetoed rows leave the pool and brain_mass_unfiltered.csv; they are listed in brain_mass_vetoed_rows.csv.
+vetoed <- uf[0, , drop = FALSE]; vetoed$veto_flag <- character(0)
+vpath <- file.path(out, "brain_mass_value_flags.csv")
+if (file.exists(vpath)) {
+  fl <- read.csv(vpath, stringsAsFactors = FALSE, colClasses = "character", check.names = FALSE)
+  bad <- setdiff(unique(trimws(fl$action)), "skip")
+  if (length(bad)) stop("brain_mass_value_flags.csv: unknown action(s) ", paste(bad, collapse = ", "), ". Only `skip` is implemented.", call. = FALSE)
+  for (i in seq_len(nrow(fl))) {
+    fsp <- trimws(fl$Species[i]); frv <- trimws(fl$raw_value[i])
+    sel <- uf$Source == trimws(fl$Source[i])
+    if (fsp != "*") sel <- sel & uf$Species == fsp
+    if (nzchar(frv)) sel <- sel & uf$raw_value == frv
+    if (sum(sel) != as.integer(fl$n_expected[i]))
+      stop(sprintf("brain_mass_value_flags.csv row %d (%s / %s / %s) matched %d harvested rows, expected %s.",
+                   i, fl$Source[i], fsp, if (nzchar(frv)) frv else "*", sum(sel), fl$n_expected[i]), call. = FALSE)
+    vetoed <- rbind(vetoed, cbind(uf[sel, , drop = FALSE], veto_flag = fl$flag[i]))
+    uf <- uf[!sel, , drop = FALSE]
+  }
+  message("value vetoes: dropped ", nrow(vetoed), " row(s) from the pool")
+}
+
 # pool -- WITHIN basis only, never across
 long <- list(); dedupe <- list()
 for (key in sort(unique(paste(uf$Species, uf$measure_emitted, sep = "\r")))) {
@@ -265,6 +289,7 @@ for (sp in sort(unique(long$Species))) {
 }
 cross <- do.call(rbind, cross)
 
+write.csv(vetoed, file.path(out,"brain_mass_vetoed_rows.csv"), row.names=FALSE, na="")
 write.csv(uf,   file.path(out,"brain_mass_unfiltered.csv"), row.names=FALSE)
 write.csv(long, file.path(out,"brain_mass_long.csv"), row.names=FALSE)
 write.csv(dedupe, file.path(out,"brain_mass_dedupe_report.csv"), row.names=FALSE)

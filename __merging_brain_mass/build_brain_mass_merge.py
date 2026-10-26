@@ -329,9 +329,38 @@ if unattributed:
     sys.exit(f"ABORT: {len(unattributed)} harvested rows have no basis in "
              f"_keys/brain_size_basis.csv: {seen}\nAdd them there before pooling.")
 
+# ---- value vetoes: brain_mass_value_flags.csv --------------------------------------
+# Same schema and `skip` action as __merging_volumes/volumes_select_value_flags.csv, plus
+# n_expected: a veto must match exactly that many harvested rows or the build stops, so a veto
+# can neither silently do nothing nor silently drop more than intended. Species `*` = all.
+# Vetoed rows leave the pool and brain_mass_unfiltered.csv and are listed in
+# brain_mass_vetoed_rows.csv so the exclusion stays auditable.
+VETO_PATH = os.path.join(HERE, "brain_mass_value_flags.csv")
+vetoed = []
+if os.path.exists(VETO_PATH):
+    _flags = read_csv_rows(VETO_PATH)
+    _bad = {f["action"].strip() for f in _flags} - {"skip"}
+    if _bad:
+        sys.exit(f"ABORT: brain_mass_value_flags.csv: unknown action(s) {sorted(_bad)}. Only `skip` is implemented.")
+    for _i, f in enumerate(_flags, 1):
+        _sp, _rv = f["Species"].strip(), f["raw_value"].strip()
+        _hit = [r for r in uf if r["Source"] == f["Source"].strip()
+                and (_sp == "*" or r["Species"] == _sp) and (not _rv or r["raw_value"] == _rv)]
+        if len(_hit) != int(f["n_expected"]):
+            sys.exit(f"ABORT: brain_mass_value_flags.csv row {_i} ({f['Source']} / {_sp} / {_rv or '*'}) "
+                     f"matched {len(_hit)} harvested rows, expected {f['n_expected']}.")
+        _ids = {id(r) for r in _hit}
+        vetoed += [dict(r, veto_flag=f["flag"]) for r in _hit]
+        uf = [r for r in uf if id(r) not in _ids]
+    print(f"value vetoes: dropped {len(vetoed)} row(s) from the pool", file=sys.stderr)
+
 UF_COLS = ["Species", "Measure", "Units", "Value_g", "raw_value", "raw_unit", "Source",
            "first_author", "Year", "Team", "role", "paper", "column", "poolable_group",
            "basis", "measure_emitted"]
+with open(os.path.join(HERE, "brain_mass_vetoed_rows.csv"), "w", newline="", encoding="utf-8") as fh:
+    w = csv.DictWriter(fh, fieldnames=UF_COLS + ["veto_flag"])
+    w.writeheader()
+    w.writerows(vetoed)
 with open(os.path.join(HERE, "brain_mass_unfiltered.csv"), "w", newline="", encoding="utf-8") as fh:
     w = csv.DictWriter(fh, fieldnames=UF_COLS)
     w.writeheader()

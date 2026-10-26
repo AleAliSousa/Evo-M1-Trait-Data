@@ -1,0 +1,13 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species,Published binomial expanded from genus abbreviation,,,,info,Apodemus,Slomianka_West_1989_Table1,,
+population,"Three distinct geographic samples, Methods p.545",,,,info,Apodemus,Slomianka_West_1989_Table1,,
+sex,All adult males,,,,info,Apodemus,Slomianka_West_1989_Table1,,
+age_class,Adult,,,,info,Apodemus,Slomianka_West_1989_Table1,,
+n,Six animals per geographic group,,,,info,Apodemus,Slomianka_West_1989_Table1,,
+hemisphere,"Left hemisphere, Results p.547",,,,info,Apodemus,Slomianka_West_1989_Table1,,
+structure,"Printed component label, including number; overlapping composites remain distinct",,,,info,Apodemus,Slomianka_West_1989_Table1,,
+volume_mean_mm3,"Left-hemisphere component mean volume, mm3",HippocampalComponentsAndTelencephalon,Vol.mm3,mean,primary,Apodemus,Slomianka_West_1989_Table1,"ERRATA Slomianka_West_1989-E001 (confirmed, publication_ambiguity): printed 2.13, repo had blank | ERRATA Slomianka_West_1989-E002 (confirmed, publication_ambiguity): printed 1.55, repo had blank | ERRATA Slomianka_West_1989-E003 (confirmed, publication_ambiguity): printed 20.22, repo had blank | ",
+volume_SD_mm3,"Left-hemisphere component SD, mm3",HippocampalComponentsAndTelencephalon,Vol.mm3,SD,primary,Apodemus,Slomianka_West_1989_Table1,,
+body_mass_mean_g,"Group mean body mass, g",Body,Mass.g,mean,primary,Apodemus,Slomianka_West_1989_Table1,"Methods p.545; repeated across structures, not independent subjects.",
+body_mass_SD_g,"Group SD body mass, g",Body,Mass.g,SD,primary,Apodemus,Slomianka_West_1989_Table1,Methods p.545; repeated across structures.,
+source,Publication folder token,,,,info,Apodemus,Slomianka_West_1989_Table1,,

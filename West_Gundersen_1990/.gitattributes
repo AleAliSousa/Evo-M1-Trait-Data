@@ -1,0 +1,3 @@
+# Frozen sources must survive Git checkout without byte conversion.
+*.pdf binary
+*_snapshot.csv -text

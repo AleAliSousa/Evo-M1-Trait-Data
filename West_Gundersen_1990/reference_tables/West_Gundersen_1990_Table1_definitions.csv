@@ -1,0 +1,10 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species,Human cohort,,,,info,Homo sapiens,West_Gundersen_1990_Table1,,
+patient_id,Published patient number; joins Table2 through unique age,,,,info,Homo sapiens,West_Gundersen_1990_Table1,,
+sex,"Five males, Materials p.3",,,,info,Homo sapiens,West_Gundersen_1990_Table1,,
+age_years,"Age at death, years",,,,info,Homo sapiens,West_Gundersen_1990_Table1,,
+brain_mass_mg,"Brain mass at autopsy, mg",WholeBrain,Mass.mg,individual,primary,Homo sapiens,West_Gundersen_1990_Table1,,
+body_mass_g,"Body mass, g",Body,Mass.g,individual,primary,Homo sapiens,West_Gundersen_1990_Table1,,
+height_m,"Body height, m",Body,Length.m,individual,primary,Homo sapiens,West_Gundersen_1990_Table1,,
+cause_of_death,Published cause of death,,,,info,Homo sapiens,West_Gundersen_1990_Table1,,
+source,Publication folder token,,,,info,Homo sapiens,West_Gundersen_1990_Table1,,

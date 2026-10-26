@@ -1,0 +1,8 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species,Published common-name taxon label,,,,info,Mammalia,Meyer__1981_TableII,,
+n,"Brains per taxon, Methods p.62",,,,info,Mammalia,Meyer__1981_TableII,,
+structure,Published dissection boundary; amygdala plus pyriform cortex retained as combined structure,,,,info,Mammalia,Meyer__1981_TableII,,
+mass_mean_mg,"Mean fixed-tissue component mass, mg",BrainComponents_as_structure,Mass.mg,mean,primary,Mammalia,Meyer__1981_TableII,Structure column identifies each of 13 anatomical components. g ×1000; not a volume.,
+mass_SE_mg,"Standard error of component mass, mg",BrainComponents_as_structure,Mass.mg,SE,primary,Mammalia,Meyer__1981_TableII,,
+hemisphere_scope,"Pieces from entire brain summed, Methods p.63",,,,info,Mammalia,Meyer__1981_TableII,,
+source,Publication folder token,,,,info,Mammalia,Meyer__1981_TableII,,

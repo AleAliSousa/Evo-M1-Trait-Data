@@ -1,0 +1,33 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+individual_id,Published subject identifier; retain zoo and trial number in observation key,,,,info,Carnivora,BensonAmram_etal_2016_DatasetS1,,
+zoo,zoo,,,,info,Carnivora,BensonAmram_etal_2016_DatasetS1,,
+date_tested,Test date ISO yyyy-mm-dd from Excel date serial,,,,info,Carnivora,BensonAmram_etal_2016_DatasetS1,,
+common_name,common name,,,,info,Carnivora,BensonAmram_etal_2016_DatasetS1,,
+species,Species name as published,,,,info,Carnivora,BensonAmram_etal_2016_DatasetS1,,
+genus,genus,,,,info,Carnivora,BensonAmram_etal_2016_DatasetS1,,
+family,family,,,,info,Carnivora,BensonAmram_etal_2016_DatasetS1,,
+suborder,suborder,,,,info,Carnivora,BensonAmram_etal_2016_DatasetS1,,
+sex,sex,,,,info,Carnivora,BensonAmram_etal_2016_DatasetS1,,
+trial_number,trial number,,,,info,Carnivora,BensonAmram_etal_2016_DatasetS1,,
+successful_opening_box,Successful opening of puzzle box; original y/n,,PuzzleBoxSuccess.binary,trial,primary,Carnivora,BensonAmram_etal_2016_DatasetS1,Repeated trials of the same individual are not independent animals.,Dataset S1; # identifies first-trial-only scores
+latency_to_approach_s,"Latency to approach puzzle box, seconds",,Latency.s,trial,primary,Carnivora,BensonAmram_etal_2016_DatasetS1,Repeated trials of the same individual are not independent animals.,Dataset S1; # identifies first-trial-only scores
+time_working_s,"Time working to open box, seconds",,Duration.s,trial,primary,Carnivora,BensonAmram_etal_2016_DatasetS1,Repeated trials of the same individual are not independent animals.,Dataset S1; # identifies first-trial-only scores
+behavioral_diversity,Behavioral diversity score; first trial only,,BehavioralDiversity.score,trial,primary,Carnivora,BensonAmram_etal_2016_DatasetS1,"ERRATA BensonAmram_etal_2016-E001 (confirmed, publication_ambiguity): printed 8, repo had blank | Repeated trials of the same individual are not independent animals.",Dataset S1; # identifies first-trial-only scores
+dexterity_score,Dexterity score; first trial only,,Dexterity.score,trial,primary,Carnivora,BensonAmram_etal_2016_DatasetS1,"ERRATA BensonAmram_etal_2016-E002 (confirmed, publication_ambiguity): printed 9, repo had blank | Repeated trials of the same individual are not independent animals.",Dataset S1; # identifies first-trial-only scores
+species_average_group_size,Species-average social group size,,GroupSize.n,mean,secondary,Carnivora,BensonAmram_etal_2016_DatasetS1,Species covariate; not experimentally measured group size. See article for social grouping sources.,Dataset S1
+group_size_category,group size category,,,,info,Carnivora,BensonAmram_etal_2016_DatasetS1,,
+retrieved_food,N means reward not retrieved despite opening; missing does not establish retrieval,,,,info,Carnivora,BensonAmram_etal_2016_DatasetS1,,
+fed_before_trial,fed before trial,,,,info,Carnivora,BensonAmram_etal_2016_DatasetS1,,
+body_mass_g,"Species body mass, g",Body,Mass.g,mean,secondary,Carnivora,BensonAmram_etal_2016_DatasetS1,Finarelli and Flynn 2009; kg ×1000; repeated across trials.,Dataset S1 footnote &
+brain_volume_mm3,"Species-average volume covariate, mm3",WholeBrain,Vol.mm3,mean,secondary,Carnivora,BensonAmram_etal_2016_DatasetS1,Repeated across trials; never independent brain specimens. Finarelli and Flynn 2009; mL ×1000.,Dataset S1 footnotes @ and %
+cerebellum_brainstem_volume_mm3,"Species-average volume covariate, mm3",CerebellumBrainstem,Vol.mm3,mean,secondary,Carnivora,BensonAmram_etal_2016_DatasetS1,Repeated across trials; never independent brain specimens. Swanson et al. 2012; endocast volume.,Dataset S1 footnotes @ and %
+anterior_cerebrum_volume_mm3,"Species-average volume covariate, mm3",AnteriorCerebrum,Vol.mm3,mean,secondary,Carnivora,BensonAmram_etal_2016_DatasetS1,Repeated across trials; never independent brain specimens. Swanson et al. 2012; endocast volume.,Dataset S1 footnotes @ and %
+posterior_cerebrum_volume_mm3,"Species-average volume covariate, mm3",PosteriorCerebrum,Vol.mm3,mean,secondary,Carnivora,BensonAmram_etal_2016_DatasetS1,Repeated across trials; never independent brain specimens. Swanson et al. 2012; endocast volume.,Dataset S1 footnotes @ and %
+total_endocranial_volume_mm3,"Species-average volume covariate, mm3",EndocranialVolume,Vol.mm3,mean,secondary,Carnivora,BensonAmram_etal_2016_DatasetS1,Repeated across trials; never independent brain specimens. Swanson et al. 2012; endocast volume.,Dataset S1 footnotes @ and %
+puzzle_box_size,puzzle box size,,,,info,Carnivora,BensonAmram_etal_2016_DatasetS1,,
+brain_body_source_key,Join item references on ref_key,,,,info,Carnivora,BensonAmram_etal_2016_DatasetS1,,
+regional_volume_source_key,Join item references on ref_key,,,,info,Carnivora,BensonAmram_etal_2016_DatasetS1,,
+behavior_data_role,Primary trial measurements,,,,info,Carnivora,BensonAmram_etal_2016_DatasetS1,,
+anatomy_data_role,Secondary species covariates,,,,info,Carnivora,BensonAmram_etal_2016_DatasetS1,,
+source,Publication folder token,,,,info,Carnivora,BensonAmram_etal_2016_DatasetS1,,
+first_trial_score_exception,TRUE for non-first-trial scores contrary to the source footnote,,,,info,Carnivora,BensonAmram_etal_2016_DatasetS1,"Dogo, WCSRC, trial 3: diversity 8 and dexterity 9 retained.",Dataset S1 footnote #

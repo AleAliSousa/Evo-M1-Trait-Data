@@ -1,0 +1,11 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species,Published common-name taxon label; no unprinted binomial inferred,,,,info,Mammalia,Meyer__1981_TableI,,
+n,"Brains per taxon, Methods p.62",,,,info,Mammalia,Meyer__1981_TableI,,
+body_mass_g,"Mean body mass, g",Body,Mass.g,mean,primary,Mammalia,Meyer__1981_TableI,"Table I. Human and sheep body weights estimated; these have no SE. Fixed brain masses, not fresh volumes.",
+body_mass_SE_g,"Standard error of body mass, g",Body,Mass.g,SE,primary,Mammalia,Meyer__1981_TableI,"Table I. Human and sheep body weights estimated; these have no SE. Fixed brain masses, not fresh volumes.",
+brain_mass_mg,"Mean brain mass, mg",WholeBrain,Mass.mg,mean,primary,Mammalia,Meyer__1981_TableI,"Table I. Human and sheep body weights estimated; these have no SE. Fixed brain masses, not fresh volumes.",
+brain_mass_SE_mg,"Standard error of brain mass, mg",WholeBrain,Mass.mg,SE,primary,Mammalia,Meyer__1981_TableI,"Table I. Human and sheep body weights estimated; these have no SE. Fixed brain masses, not fresh volumes.",
+brain_body_ratio_g_kg,"Printed brain/body mass ratio, g/kg",WholeBrain/Body,MassRatio.g.kg,mean,primary,Mammalia,Meyer__1981_TableI,Keep independently reported ratio.,
+brain_body_ratio_SE_g_kg,"SE of printed brain/body ratio, g/kg",WholeBrain/Body,MassRatio.g.kg,SE,primary,Mammalia,Meyer__1981_TableI,,
+body_mass_basis,Estimated for sheep and humans; other taxa weighed,,,,info,Mammalia,Meyer__1981_TableI,,
+source,Publication folder token,,,,info,Mammalia,Meyer__1981_TableI,,

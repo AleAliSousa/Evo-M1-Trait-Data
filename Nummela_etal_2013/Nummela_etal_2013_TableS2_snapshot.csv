@@ -1,0 +1,147 @@
+"Table S2. Body mass (kg), axial eye diameter (Eye, mm), cribriform plate area (Nose, mm²), tympanic membrane area (Ear, mm²), habitats and diets of 119 mammalian species. Code = species code. Habitats Ae=aerial; Aq=aquatic; Ar=arboreal; F=fossorial; T=terrestrial. Diets C=carnivore; P=piscivore; I=insectivore; H=herbivore; Om=omnivore; Other. Res = residuals. Habitat, diet and body mass: Nowak (1999). Other sources: (1) Steindorff (1947); (2) Werner (1960); (3) Henson (1961); (4) Suthers and Wallis (1970); (5) Hughes (1975); (6) Ritland (1982); (7) Pettigrew et al. (1988); (8) Plassmann and Brändle (1992); (9) Rosowski (1992); (10) Nummela (1995); (11) Mason (2001); (12) Supin et al. (2001); (13) Howland et al. (2004); (14) Lange et al. (2004); (15) Pihlström et al. (2005); (16) Kirk (2006); (17) Nummela et al. (2004); (18) Nummela and Sánchez-Villagra (2006); (19) This study.",,,,,,,,,,,,,
+"Order
+Species",Code,Hab,Diet,"Body
+mass",Eye,Nose,Ear,Res eye,"Res
+nose",Res ear,"Eye
+source","Nose
+source","Ear
+source"
+Monotremata,,,,,,,,,,,,,
+Tachyglossus aculeatus,Ta,T,I,4.750,8.400,98.00,11.50,-0.177,-0.012,-0.178,"5,13",15,"9,11"
+Didelphimorphia,,,,,,,,,,,,,
+Caluromys philander,cp,Ar,Om,0.350,8.700,32.95,4.080,0.114,0.006,-0.239,6,19,18
+Didelphis marsupialis,Dm,T,Om,1.500,9.340,104.0,7.180,-0.009,0.113,-0.208,6,19,11
+Marmosa robinsoni,mR,Ar,I,0.085,6.600,26.73,5.380,0.143,0.098,-0.089,6,19,18
+Dasyuromorphia,,,,,,,,,,,,,
+Dasyurus viverrinus,dv,T,C,1.075,10.60,55.10,15.13,0.081,0.008,-0.025,6,19,18
+Diprotodontia,,,,,,,,,,,,,
+Phalanger orientalis,pO,Ar,H,2.948,11.40,61.94,15.20,0.006,-0.066,-0.087,6,19,18
+Trichosurus vulpecula,Tv,Ar,H,2.395,13.70,80.80,29.80,0.107,0.013,0.072,6,19,18
+Macropus eugenii,me,T,H,4.250,23.70,109.2,27.00,0.285,0.022,0.014,6,19,18
+Macropus rufus,mr,T,H,55.00,31.30,196.0,43.00,0.135,-0.101,-0.046,1,19,2
+Tubulidentata,,,,,,,,,,,,,
+Orycteropus afer,Oa,T,I,70.00,20.50,1760,93.30,-0.075,0.352,0.107,6,15,11
+Afrosoricida,,,,,,,,,,,,,
+Hemicentetes semispinosus,Hs,T,I,0.180,1.930,33.76,6.200,-0.470,0.076,-0.106,6,19,11
+Setifer setosus,Ss,T,I,0.225,3.350,56.40,12.60,-0.254,0.166,0.034,6,19,11
+Tenrec ecaudatus,te,T,I,2.000,4.380,83.36,10.37,-0.369,0.037,-0.146,6,19,11
+Proboscidea,,,,,,,,,,,,,
+Elephas maximus,Em,T,H,4060,33.47,4840,454.0,-0.291,0.174,0.194,"1,6,13",19,10
+Loxodonta africana,La,T,H,4350,45.30,10200,855.0,-0.167,0.329,0.327,"6,13",19,10
+Cingulata,,,,,,,,,,,,,
+Tolypeutes matacus,Tm,T,I,1.295,6.500,180.4,12.00,-0.151,0.247,-0.087,6,19,11
+Zaedyus pichiy,Zp,T,I,1.500,6.200,193.0,32.40,-0.187,0.247,0.119,6,15,19
+Pilosa,,,,,,,,,,,,,
+Cyclopes didactylus,Cy,Ar,I,0.266,10.20,28.20,8.760,0.212,-0.001,-0.055,6,19,19
+Myrmecophaga tridactyla,My,T,I,28.50,10.70,900.0,58.10,-0.262,0.294,0.061,6,15,11
+Erinaceomorpha,,,,,,,,,,,,,
+Erinaceus europaeus,Ee,T,I,0.750,6.500,94.28,17.22,-0.094,0.160,0.027,1,15,11
+Hemiechinus auritus,Ha,T,I,0.160,6.400,63.20,22.94,0.063,0.224,0.185,6,19,10
+Soricomorpha,,,,,,,,,,,,,
+Suncus murinus,Su,T,I,0.003,1.950,28.73,3.920,-0.032,0.441,0.053,6,19,11
+Blarina brevicauda,Bb,T,I,0.023,1.140,18.15,4.330,-0.481,0.142,-0.054,"6,13",19,11
+Talpa europaea,tE,F,I,0.093,1.400,28.52,9.490,-0.539,0.104,0.028,6,15,"10,11"
+Scalopus aquaticus,Sa,F,I,0.090,0.900,27.46,10.82,-0.728,0.099,0.059,6,15,"3,11"
+Chiroptera,,,,,,,,,,,,,
+Desmodus rotundus,Dr,Ae,Other,0.033,2.800,14.90,4.670,-0.129,0.064,-0.060,6,15,19
+Glossophaga soricina,Gs,Ae,H,0.011,2.400,7.780,2.400,-0.080,0.031,-0.136,6,15,3
+Carollia perspicillata,Cp,Ae,H,0.030,2.620,13.32,2.370,-0.148,0.049,-0.202,4,15,11
+Artibeus jamaicensis,Aj,Ae,H,0.042,4.010,17.30,3.500,0.002,0.073,-0.138,"6,13",15,19
+Molossus molossus,Mo,Ae,I,0.014,2.200,6.600,2.340,-0.143,-0.029,-0.156,6,15,19
+Plecotus auritus,pl,Ae,I,0.010,2.400,5.900,4.750,-0.069,-0.020,0.019,13,15,11
+Myotis myotis,mm,Ae,I,0.033,3.100,8.180,5.290,-0.085,-0.066,-0.033,4,15,10
+Nyctalus noctula,Nn,Ae,I,0.028,1.7,7.4,3.39,-0.328,-0.072,-0.120,4,19,19
+Pholidota,,,,,,,,,,,,,
+Manis javanica,Mj,Ar,I,6.000,7.400,268.0,29.30,-0.257,0.183,0.010,6,15,19
+Carnivora,,,,,,,,,,,,,
+Urocyon cinereoargenteus,Uc,T,C,4.750,16.50,207.1,34.34,0.116,0.150,0.059,"6,13",15,19
+Vulpes vulpes,Vv,T,C,9.000,20.55,511.0,49.00,0.145,0.284,0.096,6,15,11
+Canis latrans,Cl,T,C,13.50,18.66,570.0,89.50,0.059,0.268,0.202,13,15,19
+Canis lupus,cL,T,C,49.00,22.80,640.0,86.10,0.009,0.167,0.112,"1,6,13",15,10
+Ursus arctos,Ua,T,Om,200.0,18.00,1004,65.80,-0.242,0.127,-0.035,6,15,19
+Ursus maritimus,Um,T,C,475.0,20.50,1634,74.00,-0.277,0.148,-0.064,1,19,2
+Ailurus fulgens,Af,T,H,4.500,13.00,169.0,29.80,0.018,0.111,0.032,6,15,19
+Callorhinus ursinus,Cu,Aq,P,158.0,41.40,506.0,24.20,0.145,0.001,-0.238,13,15,11
+Eumetopias jubatus,Ej,Aq,P,695.0,31.25,500.9,25.90,-0.134,-0.146,-0.316,"1,13",19,11
+Zalophus californianus,Zc,Aq,P,225.0,37.00,547.0,17.31,0.058,-0.016,-0.333,6,15,11
+Odobenus rosmarus,Or,Aq,Other,1050,26.50,291.0,88.00,-0.250,-0.304,-0.077,"1,12,13",19,2
+Erignathus barbatus,eB,Aq,P,280.0,33.30,310.0,90.80,-0.011,-0.161,0.013,13,19,11
+Pagophilus groenlandicus,Pg,Aq,P,127.5,35.65,254.1,99.00,0.103,-0.127,0.082,"12,13",19,2
+Halichoerus grypus,Hg,Aq,P,207.5,33.00,386.0,76.00,0.017,-0.084,-0.007,1,15,10
+Pusa hispida,pH,Aq,P,104.5,34.70,159.0,71.06,0.112,-0.210,0.022,13,15,10
+Phoca vitulina,PV,Aq,P,110.0,35.25,302.0,78.50,0.114,-0.075,0.041,1,19,"2,10"
+Cystophora cristata,Cc,Aq,P,272.0,55.00,508.0,98.40,0.210,-0.051,0.032,13,15,11
+Bassariscus astutus,Ba,T,Om,1.080,12.50,132.9,24.10,0.152,0.198,0.076,6,15,19
+Procyon lotor,Pl,T,Om,7.000,12.60,248.0,35.50,-0.043,0.151,0.042,13,19,19
+Meles meles,ME,T,Om,13.00,9.500,360.0,50.40,-0.230,0.172,0.079,"1,6",15,"11,19"
+Gulo gulo,Gg,T,C,19.50,14.00,350.0,54.00,-0.105,0.126,0.069,1,15,19
+Mustela nivalis,Mn,T,C,0.138,5.400,20.60,9.490,0.005,-0.005,0.003,6,15,10
+Mustela putorius,Mp,T,C,0.958,7.500,175.0,19.98,-0.057,0.270,0.043,13,19,2
+Lutra lutra,Ll,Aq,P,8.550,13.28,110.0,24.20,-0.041,-0.045,-0.054,13,15,19
+Enhydra lutris,El,Aq,Other,30.00,12.35,271.9,20.61,-0.205,0.029,-0.168,13,15,19
+Ichneumia albicauda,Ia,T,C,3.500,13.65,212.0,30.80,0.066,0.185,0.055,"6,13",15,19
+Felis catus,fC,T,C,3.900,22.10,117.1,39.70,0.264,0.045,0.103,"7,13",19,"8,9,10"
+Lynx lynx,Fl,T,C,23.00,26.82,194.0,60.70,0.160,-0.018,0.084,13,15,19
+Acinonyx jubatus,aJ,T,C,46.50,36.70,156.0,70.10,0.222,-0.135,0.070,6,15,19
+Puma concolor,Fc,T,C,69.50,32.00,347.0,63.20,0.120,0,0.023,1,15,19
+Prionailurus viverrinus,Fv,T,C,10.85,24.20,60.40,47.75,0.195,-0.198,0.079,6,19,19
+Panthera uncia,Pu,T,C,50.00,31.40,248.0,77.40,0.146,-0.041,0.087,6,15,19
+Panthera leo,PL,T,C,185.0,37.90,624.0,109.0,0.089,0.031,0.079,"1,6,13",15,10
+Perissodactyla,,,,,,,,,,,,,
+Equus caballus,Ec,T,H,530.0,41.67,785.0,60.84,0.020,-0.022,-0.114,"1,6,13",19,"2,10"
+Equus burchelli,Eb,T,H,280.0,41.90,1408,56.25,0.089,0.168,-0.090,"6,13",15,19
+Diceros bicornis,Db,T,H,1100,24.90,2120,46.24,-0.282,0.123,-0.219,"1,6,13",15,"10,17"
+Artiodactyla,,,,,,,,,,,,,
+Camelus bactrianus,Cb,T,H,495.0,40.00,655.0,138.1,0.009,-0.054,0.068,6,19,19
+Lama guanicoe,Lg,T,H,110.0,36.00,433.9,79.60,0.122,0.003,0.044,13,15,19
+Hippopotamus amphibius,hA,Aq,H,2750,29.20,1940,111.5,-0.309,0.014,-0.086,13,15,"10,17"
+Sus scrofa,SS,T,Om,195.0,24.80,1940,62.10,-0.100,0.273,-0.046,13,15,10
+Giraffa camelopardalis,Gc,T,H,800.0,44.40,801.0,64.30,0.003,-0.057,-0.128,"1,13",19,17
+Capreolus capreolus,CC,T,H,32.50,24.35,588.1,18.84,0.082,0.189,-0.192,"1,13",15,11
+Rangifer tarandus,Rt,T,H,189.0,30.00,1450,36.70,-0.014,0.212,-0.159,13,15,19
+Odocoileus virginianus,Ov,T,H,125.0,24.50,1170,35.64,-0.059,0.206,-0.139,"6,13",15,19
+Sylvicapra grimmia,Sg,T,H,18.50,26.00,418.2,40.10,0.169,0.170,0.007,6,15,19
+Antilope cervicapra,Ac,T,H,37.50,28.00,490.2,61.50,0.127,0.135,0.056,6,15,19
+Eudorcas thomsonii,Gt,T,H,23.00,25.00,364.0,64.50,0.129,0.118,0.097,13,15,19
+Rupicapra rupicapra,Rr,T,H,37.00,28.90,456.0,36.60,0.142,0.121,-0.056,13,15,19
+Ovis dalli,Od,T,H,62.70,31.60,573.0,48.16,0.125,0.119,-0.030,6,15,19
+Rodentia,,,,,,,,,,,,,
+Sciurus carolinensis,Sc,Ar,H,0.540,10.30,55.50,24.30,0.141,0.077,0.121,"6,13",19,11
+Marmota marmota,Mm,T,H,5.250,14.66,77.26,51.80,0.054,-0.074,0.142,13,19,19
+Pteromys volans,pv,Ar,H,0.130,10.80,14.98,24.60,0.312,-0.068,0.214,6,15,19
+Glis glis,gg,Ar,H,0.125,7.300,14.60,14.75,0.146,-0.070,0.105,6,15,19
+Castor fiber,cF,Aq,H,18.50,11.28,139.0,37.30,-0.193,-0.070,-0.008,6,15,11
+Ondatra zibethicus,Oz,Aq,H,1.249,10.33,24.60,18.32,0.054,-0.182,0.007,13,15,10
+Cricetus cricetus,cc,T,H,0.510,4.990,26.10,12.60,-0.168,-0.082,-0.018,13,19,11
+Peromyscus maniculatus,Pm,T,H,0.017,4.900,13.18,4.040,0.184,0.102,-0.050,6,15,19
+Rattus rattus,RR,Ar,Om,0.200,6.310,21.44,9.550,0.033,-0.033,-0.019,6,19,10
+Rattus norvegicus,RN,T,Om,0.300,5.940,21.07,9.000,-0.036,-0.076,-0.057,"7,13",15,"8,10,14"
+Mus musculus,mu,T,Om,0.021,4.340,7.950,3.200,0.109,-0.028,-0.114,"7,13",15,"9,11"
+Georychus capensis,gC,F,H,0.181,2.900,15.05,11.70,-0.294,-0.100,0.032,6,19,11
+Hystrix cristata,Hc,T,H,20.00,11.24,322.0,34.20,-0.203,0.105,-0.032,"6,13",19,11
+Erethizon dorsatum,Ed,T,H,10.75,11.05,152.0,36.00,-0.145,0.003,0.018,"6,13",15,11
+Chinchilla lanigera,CL,T,H,0.650,10.10,23.30,63.70,0.113,-0.130,0.319,6,15,"9,10"
+Cavia porcellus,cP,T,H,1.000,10.00,22.75,24.40,0.063,-0.177,0.083,6,15,10
+Lagomorpha,,,,,,,,,,,,,
+Oryctolagus cuniculus,Oc,T,H,1.800,18.10,68.10,28.20,0.259,0.003,0.078,13,15,"10,11"
+Scandentia,,,,,,,,,,,,,
+Tupaia minor,tm,T,I,0.200,7.500,29.05,6.760,0.108,0.034,-0.094,6,19,11
+Primates,,,,,,,,,,,,,
+Eulemur macaco,EM,Ar,H,2.500,15.30,77.97,18.50,0.151,0.001,-0.034,16,15,19
+Varecia variegata,vV,Ar,H,3.850,18.50,59.00,20.00,0.188,-0.102,-0.045,16,19,19
+Nycticebus coucang,Nc,Ar,Om,1.188,15.53,35.80,22.75,0.236,-0.096,0.058,"6,16",19,10
+Perodicticus potto,po,Ar,Om,1.225,12.55,41.50,25.60,0.140,-0.067,0.081,"6,16",15,10
+Galago senegalensis,gS,A,I,0.198,12.90,14.82,19.00,0.345,-0.112,0.131,6,19,10
+Otolemur crassicaudatus,oC,Ar,I,1.300,16.30,48.30,19.60,0.248,-0.039,0.020,16,19,11
+Saimiri sciureus,ss,Ar,H,0.925,14.95,3.460,25.00,0.246,-0.579,0.094,"6,7",19,10
+Callithrix jacchus,Cj,Ar,Om,0.342,11.60,4.160,15.60,0.241,-0.441,0.054,"6,13,16",19,11
+Saguinus midas,sM,Ar,Om,0.563,12.20,1.930,18.23,0.210,-0.657,0.056,16,15,19
+Aotus trivirgatus,at,Ar,H,0.800,20.30,12.90,26.00,0.394,-0.279,0.111,6,19,10
+Macaca mulatta,mM,Ar,H,8.000,18.53,11.00,32.00,0.111,-0.538,0.011,"7,13,16",19,2
+Papio cynocephalus,PC,T,Om,17.50,19.80,30.90,45.00,0.057,-0.391,0.036,13,19,10
+Cercopithecus diana,cD,Ar,H,4.550,19.50,20.60,30.90,0.193,-0.347,0.039,16,15,19
+Cercopithecus mitis,cM,Ar,H,9.000,18.00,16.10,37.20,0.086,-0.467,0.036,13,15,10
+Pongo pygmaeus,pp,Ar,H,60.00,22.60,75.00,37.95,-0.016,-0.319,-0.079,6,15,11
+Gorilla gorilla,gG,T,H,172.5,22.50,135.0,97.00,-0.130,-0.294,0.058,13,15,11
+Pan troglodytes,pt,T,H,48.00,20.40,96.80,91.60,-0.037,-0.241,0.127,"13,16",19,10
+Homo sapiens,hs,T,Om,68.50,24.10,132.0,64.30,-0.002,-0.209,0.027,7,19,"8,9,10"

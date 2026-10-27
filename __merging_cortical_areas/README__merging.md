@@ -163,6 +163,8 @@ scientific integration decision, not registration. Percentage-only, group-level,
 source-conflicted values stay outside the numerical merge until their denominator and sampling
 rules are explicit.
 
+The Kaskan `M1 surface.xlsx` workbook is a guide to source papers and passages, not a numeric source for this database. Three source loci were built and registered on 2026-10-20 and corrected on 2026-10-21 to use PDF text transcriptions only: `Mayer_etal_2019_Fig6` (three explicitly printed **M1 hand-representation** areas; case 15-02 excluded), `VanEssen_Drury_1997_CitedV1Ranges` (two **secondary** historical ranges printed in Van Essen & Drury's PDF; workbook midpoints excluded), and `Young_etal_2013_ResultsTextSurface` (eight primary whole-cortex values in Results text, with case overlap to audit). None is wired into this merge. The Mayer hand area needs its own regional term; the historical ranges are provenance only; the Young cases require overlap resolution before pooling. Older items that appear in the workbook predate this import and retain their own source documentation.
+
 | Item | Intended downstream disposition |
 |---|---|
 | `Catania_etal_1999_Table1` | queue total neocortex plus mapped S1/S2, A1, V1 with case 2A arithmetic and fixation/shrinkage flags |

@@ -1,0 +1,322 @@
+Supporting Information
+MacLean et al. 10.1073/pnas.1323533111
+SI Text
+Data Sources. Phylogenies. We used a composite phylogeny based
+on the Bininda-Emonds mammal supertree (1), a dated con-
+sensus tree from Version 3 of 10kTrees (2), the Timetree of Life
+(3), and an estimated divergence date of 15 kya for gray wolves
+and domestic dogs (4).
+Anatomical and ecological data. Endocranial volumes (ECVs) and
+body masses were taken from major published databases and
+supplemented from the primary literature as necessary. Brain
+data reported as masses were converted to volumes by dividing
+the mass by the density of fresh brain tissue (1.036) (5). These data
+and the associated sources are shown in Table S1 . Data on av-
+erage social group sizes, dietary breadth, and the percent of fruit
+in the diet were used for primates only and were also collected
+from major published datasets with missing data supplemented
+from the primary literature. These data and the associated sources
+are shown in Table S2. We did not include ecological variables for
+nonprimate species because these variables are not well docu-
+mented for the majority of nonprimate species in our sample and
+those that are available would not allow for systematic comparison.
+Statistical analysis. All statistical analyses were performed in R
+Version 3.0.1 (6). Phylogenetic analyses incorporated the Anal-
+yses of Phylogenetics and Evolution in R Language (APE) (7),
+Comparative Analyses of Phylogenetics and Evolution in R
+(8), and Phytools (9) packages. We inspected all phylogenetic
+generalized least squares (PGLS) models for outliers, defined as
+species with a studentized phylogenetic residual value of >3 (10).
+There were no outliers in any statistical models according to this
+criterion. ECV, body mass, home range, day journey length, and
+group size data were log transformed for analysis. Proportions
+(scores on both cognitive tasks, and proportion of fruit in the
+diet) were arcsine square-root transformed for analysis to better
+meet the assumptions of statistical models. Because home range
+size, day journey length, and the defensibility index (d-index)
+covary with body mass, we extracted residuals from a PGLS
+model with each of these variables regressed against body mass.
+The residuals from these models were used as measures of de-
+viance from the expected value based on the scaling relationship
+with body mass.
+Coordination of research effort. These studies were designed and
+coordinated through three workshops held at the National Evo-
+lutionary Synthesis Center (NESCent, Durham, NC). Research
+methods were shared through a public wiki that hosted written
+descriptions and movie demonstrations of the experimental pro-
+tocols. Contributors coordinated their contributions with E.L.M.
+who provided assistance and feedback to ensure that all species
+and groups of animals were tested in a comparable manner.
+Subjects. We tested 567 subjects representing 36 species of
+mammals and birds. The testing location for each species is shown
+in Table S3 and details regarding subjects ’ ages, sexes, and ex-
+periment participation are shown in Table S4 . With the excep-
+tion of four species [white carneau pigeon ( Columba livia ),
+swamp sparrow ( Melospiza georgiana ), song sparrow ( Melospiza
+melodia), and rhesus macaque ( Macaca mulatta )], we collected
+data from both males and females of each species.
+A-Not-B Task. Subjects. Three hundred forty-four individuals (27
+species) participated in the A-not-B task (mean species n = 9.6 ±
+2.2). Average species scores on this task are shown in Table S5 .
+Data for rhesus macaques were excluded from analysis due to
+a procedural error in which the experimenter did not manipulate
+each of the containers during the baiting process. Data for one
+gorilla and one pigeon were also excluded from analysis because
+the test trial was conducted before the subject met the famil-
+iarization criterion.
+Apparatus and procedure. The apparatus varied slightly depending
+on the species being tested, but in all cases the crucial variables
+were the same. We followed the experimental procedure used by
+Amici et al. (11). Three opaque containers were used as possible
+hiding locations for a piece of food. Sessions consisted of three
+familiarization trials and a test trial. In familiarization trials,
+subjects watched as a piece of food was hidden in one container
+(container A) at the exterior of a three-container array. The
+experimenter then covered each of the containers and subjects
+were allowed to search for this food. The experimenter recorded
+the location of the subjects ’ first search (subjects searched by
+touching or overturning a container, or by moving their head,
+hand, beak, or trunk into one of the possible hiding places). In
+familiarization trials the food was always hidden in the same
+location, and subjects were required to locate this food correctly
+on three consecutive familiarization trials to advance to the test
+trial. If a subject searched in the incorrect location on any of the
+familiarization trials, the test trial was not conducted and sub-
+jects instead began a new session, starting with the familiariza-
+tion trials. If subjects responded correctly on all three familiar-
+ization trials, the test trial was administered. In the test trial,
+subjects initially saw the food hidden in the same container
+(container A), but then watched as the food was moved to an-
+other container at the other end of the array (container B; Movie
+S1). Subjects were then allowed to search for the hidden food by
+touching a container or moving their head, hand, beak, or trunk
+into one of the hiding locations, and the accuracy of the first
+search location was recorded. The A-not-B error is characterized
+by a perseverative search in the location where food was pre-
+viously hidden instead of the new location that the food was
+moved to (12).
+Cylinder Task. Subjects. Four hundred thirty-nine individuals (32
+species) participated in the cylinder task (mean species n = 12.2 ±
+2.2). Average species scores on this task are shown in Table S5 .
+Apparatus and procedure. The apparatus consisted of an opaque
+cylinder and a transparent cylinder. The cylinders were open at
+both ends and mounted to a base so that subjects were required to
+move to, or reach from the side of the cylinder to obtain the food.
+The size of the apparatus varied depending on the size of the
+species and was designed so that an individual could reach inside
+the cylinder with an arm, head, or beak but could not enter the
+cylinder entirely. The procedure consisted of familiarization trials
+and test trials. The familiarization trials served to habituate
+subjects to the apparatus and demonstrate a basic understanding
+of the task by giving them experience retrieving a piece of food
+from within the cylinder. In these trials the experimenter showed
+the subject a piece of food and placed it inside the opaque cyl-
+inder. The subject was then allowed to approach and retrieve this
+item. If the subject did not approach within this time the trial was
+repeated. On every trial the experimenter coded whether the
+subject’s first attempt to retrieve the item was through the front
+of the apparatus (incorrect) or from the side (correct —successful
+detour). Subjects were permitted to retrieve the food reward on
+all trials regardless of the accuracy of their first attempt. Subjects
+were required to retrieve the food reward (on their first attempt)
+by detouring to the side of the cylinder in four of five consecutive
+trials before advancing to the test. Once this criterion was met
+subjects advanced to test trials.
+MacLean et al. www.pnas.org/cgi/content/short/1323533111 1o f5
+Test trials were identical to the familiarization trials except that
+the transparent cylinder was used. Thus, subjects were required to
+inhibit the desire to reach directly for the visible food, in favor of
+a detour to the side of the apparatus (13). We conducted 10 trials
+with all subjects with the exception of zebra finches who received
+9 trials ( Variations in Tests Procedures Between Species ). The ex-
+perimenter coded whether subjects ’ first attempt to retrieve the
+food was through the front (incorrect —subject made physical
+contact with front of cylinder when reaching for food) or the side
+(correct) of the apparatus ( Movie S2 ). Again, subjects were al-
+lowed to retrieve the food item on all trials regardless of the
+accuracy of their first attempt.
+Variations in Tests Procedures Between Species. We took several
+measures to ensure that all species met basic motivational and
+temperamental criteria before being tested (e.g., were habituated
+to human experimenters and any novel objects introduced during
+the test). In both tasks, several species (coyotes, domestic dogs
+tested in Germany, Eurasian jays, fox squirrels, marmosets,
+orange-winged amazons, pigeons, scrub jays, song sparrows, spider
+monkeys, squirrel monkeys, swamp sparrows, and zebra finches)
+were initially habituated to the presence of the apparatus and/or
+a human experimenter to assure that subjects were not fearful of
+the novel objects or humans manipulating these objects during the
+test. In the A-not-B task several species were familiarized with the
+procedure for making choices (e.g., by touching or searching
+inside the opaque containers) before starting the test. For all
+lemur species, domestic dogs, and pigeons this familiarization
+entailed food being hidden in each of the three possible hiding
+locations until subjects reliably approached or touched the
+container holding the hidden food (the behavioral response re-
+quired in the test). In the A-not-B task, subjects were required to
+choose correctly on three consecutive familiarization trials before
+the test trial was administered. For golden snub-nosed monkeys,
+orange-winged amazons, squirrel monkeys (Kyoto University
+population), and stump-tailed macaques an incorrect response
+during familiarization trials immediately terminated the session
+and a new block of familiarization trials began. For the remaining
+species, an error during familiarization trials did not immediately
+terminate the session and the remaining trials in that block of
+familiarization trials were conducted before beginning a new
+session. Lastly, in the cylinder task zebra finches were required to
+make 3 of 4 correct responses during familiarization (criterion for
+all other species was 4 of 5) before advancing to test, and only
+9 test trials (as opposed to 10) were conducted. Because the number
+of familiarization trials required was unrelated to subsequent test
+performance, it is unlikely that these minor differences signifi-
+cantly impacted the main results. Again, many of these variations
+were introduced by research teams as necessary for assuring their
+species was habituated to the testing context. Although slight
+procedural differences were introduced as a result, this helped
+assure that motivation and habituation to the testing environment
+were similar across species.
+Intraspecific Population Differences. To assess whether different
+populations of the same species performed similarly on these
+tasks, we collected data from two different populations (from
+different research groups) for six of the species in our sample. We
+compared these populations using Mann–Whitney (cylinder task)
+and χ2 (A-not-B) tests. In the majority of cases there were no
+significant differences between populations of the same species
+on either task ( Table S6 ). For both tasks, scores from the two
+populations were significantly correlated across species (cylinder
+task: R = 0.95, P = 0.01; A-not-B task: R = 0.87, P = 0.03).
+Supplemental Analyses. Other ecological variables. In addition to
+social group size and frugivory we explored possible associations
+between four other socioecological variables —home range size,
+day journey length, the d-index, and arboreality/terrestriality —
+and performance on the cognitive tests. These analyses were
+exploratory in nature and represent major socioecological vari-
+ables that have been included in previous comparative studies.
+None of these variables was associated with scores in either cog-
+nitive test or the composite measure ( Table S7 and Fig. S1).
+Observational measures of cognition. Data for social learning, tool
+use, innovation, extractive foraging, and tactical deception were
+corrected for research effort and obtained from Reader et al. (14)
+and Byrne and Corp (15). A principal components analysis with
+these variables and the composite measure from our experimental
+tasks yielded one principal component with an eigenvalue >1
+(Fig. S2). This principal component explained 78% of interspecific
+variance. Because the observational measures of cognition were
+highly correlated with one another, we also derived the first prin-
+cipal component from a principal components analysis (PCA) of
+these observational measures, which is identical to the g-score
+provided by Reader et al. (14) but calculated using only the pri-
+mate species in our study. PCA scores from this model covaried
+positively with our experimental measures in a phylogenetic re-
+gression (Table S7).
+Previous experience in cognitive tasks. To assess whether variance in
+performance was related to previous experience in cognitive
+studies we divided the sample into species for which the tested
+population had participated in five or less, or more than five
+previous cognitive studies (as reported to E.L.M. by each research
+group). This measure of experience was not associated with com-
+posite scores across species (t21 = 0.91, P = 0.37, R2 = 0.04).
+Comparison of absolute and relative ECV models. Across the entire
+sample, and within primates, absolute ECV was a stronger pre-
+dictor of composite scores than residual ECV (residuals from
+a model of ECV predicted by body mass). To directly compare
+these models we evaluated the change in the Akaike information
+criterion (AICc) between the best fitting model (absolute ECV)
+and the alternative model (ECV residuals) across the entire
+sample, and within primates. These analyses revealed large dif-
+ferences in AICc (16) between the models, indicating much
+stronger support for the absolute ECV model across the entire
+sample ( ΔAICc = 17.85), and within primates ( ΔAICc = 10.09).
+Maximum likelihood ancestral state reconstruction. Ancestral states
+(estimated composite scores) in the primate phylogeny were
+estimated using the ace function from the APE package (7). This
+analysis incorporated a Brownian motion model of evolution in
+which trait variance accumulates following a random walk.
+1. Bininda-Emonds ORP, et al. (2007) The delayed rise of present-day mammals. Nature
+446(7135):507–512.
+2. Arnold C, Matthews LJ, Nunn CL (2010) The 10k trees website: A new online resource
+for primate phylogeny. Evol Anthropol 19(3):114–118.
+3. Hedges SB, Kumar S, eds (2009) The Timetree of Life (Oxford Univ Press,
+Oxford).
+4. Savolainen P, Zhang YP, Luo J, Lundeberg J, Leitner T (2002a) Genetic evidence for an
+East Asian origin of domestic dogs. Science 298(5598):1610–1613.
+5. Isler K, et al. (2008) Endocranial volumes of primate species: Scaling analyses using
+a comprehensive and reliable data set. J Hum Evol 55(6):967–978.
+6. R Development Core Team (2011) R: A language and environment for statistical
+computing. (R Foundation for Statistical Computing, Vienna, Austria).
+7. Paradis E, Claude J, Strimmer K (2004) APE: Analyses of phylogenetics and evolution in
+R language. Bioinformatics 20(2):289–290.
+8. Orme D, et al. (2012) caper: Comparative Analyses of Phylogenetics and Evolution in R. R
+package Version 0.5. Available at http://CRAN.R-project.org/package=caper. Accessed
+February 20, 2012.
+9. Revell LJ (2012) phytools: An R package for phylogenetic comparative biology (and
+other things). Methods Ecol Evol 3(2):217–223.
+10. Jones KE, Purvis A (1997) An optimum body size for mammals? Comparative evidence
+from bats. Funct Ecol 11(6):751–756.
+11. Amici F, Aureli F, Call J (2008) Fission-fusion dynamics, behavioral flexibility, and
+inhibitory control in primates. Curr Biol 18(18):1415–1419.
+12. Piaget J (1954) The Construction of Reality in the Child (Basic Books, New York).
+MacLean et al. www.pnas.org/cgi/content/short/1323533111 2o f5
+13. Diamond A (1990) Developmental time course in human infants and infant monkeys,
+and the neural bases of, inhibitory control in reaching. Ann N Y Acad Sci 608:637–669,
+discussion 669 –676.
+14. Reader SM, Hager Y, Laland KN (2011) The evolution of primate general and cultural
+intelligence. Philos Trans R Soc Lond B Biol Sci 366(1567):1017–1027.
+15. Byrne RW, Corp N (2004) Neocortex size predicts deception rate in primates. Proc Biol
+Sci 271(1549):1693–1699.
+16. Burnham KP, Anderson DR (2002) Model Selection and Multi-Model Inference: A
+Practical Information-Theoretic Approach (Springer, New York).
+17. Mlikovsky J (1990) Brain size in birds: 4. Passeriformes. Acta Soc Zool Bohem 54:
+27–37.
+18. Iwaniuk AN, Nelson JE (2003) Developmental differences are correlated with relative
+brain size in birds: A comparative analysis. Can J Zool 81(12):1913–1928.
+19. Crile G, Quiring DP (1940) A record of the body weight and certain organ and gland
+weights of 3690 animals. Ohio J Sci 40:219–260.
+20. Gittleman JL (1986) Carnivore brain size, behavioral ecology, and phylogeny. J
+Mammal 67(1):23–36.
+21. Shoshani J, Kupsky WJ, Marchant GH (2006) Elephant brain. Part I: Gross morphology,
+functions, comparative anatomy, and evolution. Brain Res Bull 70(2):124–157.
+22. Mace GM, Harvey PH, Cluttonbrock TH (1981) Brain size and ecology in small mammals.
+JZ o o l193:333–354.
+23. Isler K, van Schaik CP (2006) Metabolic costs of brain size evolution.Biol Lett 2(4):557–560.
+24. Nunn CL, van Schaik C (2001) A comparative approach to reconstructing the
+socioecology of extinct primates. Reconstructing Behavior in the Fossil Record , eds
+Plavcan JM, Jungers WL, Kay RF, Schaik CPv (Kluwer/Plenum, New York), pp 159 –216.
+25. Ossi K, Kamilar JM (2006) Environmental and phylogenetic correlates of Eulemur
+behavior and ecology (primates: Lemuridae). Behav Ecol Sociobiol 61(1):53–64.
+26. Bean A (2004) Ecology of sex differences in great ape foraging. Comparative Primate
+Socioecology, ed Lee PC (Cambridge Univ Press, Cambridge, UK), pp 339 –362.
+27. Barton RA (1999) The evolutionary ecology of the primate brain. Comparative
+Primate Socioecology, ed Lee PC (Cambridge Univ Press, Cambridge, UK), pp 167 –203.
+28. Zhao D, Li B, Watanabe K (2011) Impact of group size on female reproductive success
+of free-ranging Rhinopithecus roxellana in the Qinling Mountains, China. Folia
+Primatol (Basel) 82(1):1–12.
+29. Rylands AB (1982) The behaviour and ecology of three species of marmosets and
+tamarins (callitrichidae, primates) in Brazil. PhD thesis (University of Cambridge,
+Cambridge, UK).
+30. Nunn CL (2002) Spleen size, disease risk and sexual selection: A comparative study in
+primates. Evol Ecol Res 4(1):91–107.
+31. Britt A (2000) Diet and feeding behaviour of the black-and-white ruffed lemur
+(Varecia variegata variegata ) in the Betampona Reserve, eastern Madagascar. Folia
+Primatol (Basel) 71(3):133–141.
+Fig. S1. Primate composite scores as a function of relative home range size, day journey length, d-index, and arboriality/terrestriality. A, primarily arbo real;
+NW, New World; OW, Old World; T, primarily terrestrial. Plots show transformed data.
+MacLean et al. www.pnas.org/cgi/content/short/1323533111 3o f5
+Fig. S2. Variance explained by the first six principal components (PC1 –6) in a model including social learning, innovation, extractive foraging, tool use, tactical
+deception, and the composite score from the experimental measures of cognition in primates. All variables loaded positively on the first principal c omponent,
+which explained 78% of variance (PC1 loadings: composite score, 0.39; social learning, 0.41; innovation, 0.39; tool use, 0.41; extractive foraging , 0.42; and de-
+ception, 0.42). Note that this analysis differs from the one used to generate scores as a predictor of performance on the cognitive tasks (reported in Table S7).
+Movie S1. Movie examples of test trials for the A-not-B task.
+Movie S1
+MacLean et al. www.pnas.org/cgi/content/short/1323533111 4o f5
+Movie S2. Movie examples of test trials for the cylinder task.
+Movie S2
+Other Supporting Information Files
+Table S1 (DOCX)
+Table S2 (DOCX)
+Table S3 (DOCX)
+Table S4 (DOCX)
+Table S5 (DOCX)
+Table S6 (DOCX)
+Table S7 (DOCX)
+MacLean et al. www.pnas.org/cgi/content/short/1323533111 5o f5

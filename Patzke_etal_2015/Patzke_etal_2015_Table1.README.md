@@ -1,0 +1,30 @@
+# Patzke_etal_2015_Table1
+
+Patzke, N., Spocter, M. A., Karlsson, K. Æ., Bertelsen, M. F., Haagensen, M., Chawana, R., Streicher, S., Kaswera, C., Gilissen, E., Alagaili, A. N., Mohammed, O. B., Reep, R. L., Bennett, N. C., Siegel, J. M., Ihunwo, A. O., & Manger, P. R. (2015). In contrast to many other mammals, cetaceans have relatively small hippocampi that appear to lack adult neurogenesis. Brain Structure and Function, 220, 361–383. https://doi.org/10.1007/s00429-013-0660-1
+
+Table 1 (PDF pp.3–7) is retained in full, including the two parallel column blocks and wrapped species names. It contains 381 rows, including repeated labels and individual elephants, rather than 381 independent species. Eleven rows use source 5: two hippos, two harbour porpoises, one bottlenose dolphin, two minke whales, one black rhino and three African elephants. The other 370 rows are secondary to five cited sources.
+
+All three numerical columns are preserved: brain mass g→mg, brain volume cm³→mm³, hippocampal volume cm³→mm³. The table explicitly derives Vb from mass with density 1.036 g/cm³. Reader checks that stated identity with source-rounding tolerance, retains discrepancies and records them as errata. Current-study regional volumes come from MRI (Methods p.7); absolute anatomical/laterality and specimen overlap must be checked before merging. The Manger collection also underlies other repository papers; source 5 must not be treated automatically as a new independent cohort. Older Stephan/Baron/Reep/Montie values are not added again to aggregate volume inputs.
+
+AI source comparison performed on 2026-10-26. Human RA verification remains pending.
+
+Rebuild with `Rscript Patzke_etal_2015_Table1.R` from any directory. The frozen source is read locally and the registry supplies the encoded public TSV name. Published taxon labels remain unchanged apart from explicitly described formatting. No global species key or unsupported hemisphere conversion is introduced. Source records enter the database and variable catalog; aggregate merge inputs are unchanged pending source/specimen and anatomical mapping.
+
+<!-- errata:begin -->
+## Errata
+
+Generated from `reference_tables/Patzke_etal_2015_errata.csv` by `_tools/dataset_builder/render_errata.R` -- edit the CSV, not this block. See `_tools/dataset_builder/ERRATA_CONVENTION.md`.
+
+| id | variable | where printed | printed | repo value before | issue | proposed | status | evidence | note |
+|---|---|---|---|---|---|---|---|---|---|
+| Patzke_etal_2015-E001 | brain_volume_mm3 | Table 1 pp.3–7; output ordinal and label 14 Micropotamogale lamottei | 0.077 ml |  | publication_ambiguity |  | confirmed | Footnote states Vb=Mb/1.036; printed mass implies 772.200772200772 mm³ versus published 77 mm³. Source visually checked. Montie rows may reflect measured volumes rather than the universal footnote; no substitution. | Published values retained; no inferred correction. |
+| Patzke_etal_2015-E002 | brain_volume_mm3 | Table 1 pp.3–7; output ordinal and label 105 Lagenorhynchus acutus | 1253.9 ml |  | publication_ambiguity |  | confirmed | Footnote states Vb=Mb/1.036; printed mass implies 1247297.2972973 mm³ versus published 1253900 mm³. Source visually checked. Montie rows may reflect measured volumes rather than the universal footnote; no substitution. | Published values retained; no inferred correction. |
+| Patzke_etal_2015-E003 | brain_volume_mm3 | Table 1 pp.3–7; output ordinal and label 106 Lagenorhynchus acutus | 1293.6 ml |  | publication_ambiguity |  | confirmed | Footnote states Vb=Mb/1.036; printed mass implies 1283494.20849421 mm³ versus published 1293600 mm³. Source visually checked. Montie rows may reflect measured volumes rather than the universal footnote; no substitution. | Published values retained; no inferred correction. |
+| Patzke_etal_2015-E004 | brain_volume_mm3 | Table 1 pp.3–7; output ordinal and label 107 Lagenorhynchus acutus | 1255.2 ml |  | publication_ambiguity |  | confirmed | Footnote states Vb=Mb/1.036; printed mass implies 1259942.08494208 mm³ versus published 1255200 mm³. Source visually checked. Montie rows may reflect measured volumes rather than the universal footnote; no substitution. | Published values retained; no inferred correction. |
+| Patzke_etal_2015-E005 | brain_volume_mm3 | Table 1 pp.3–7; output ordinal and label 130 Pteropus poliocephalus | 7.0 ml |  | publication_ambiguity |  | confirmed | Footnote states Vb=Mb/1.036; printed mass implies 6978.76447876448 mm³ versus published 7000 mm³. Source visually checked. Montie rows may reflect measured volumes rather than the universal footnote; no substitution. | Published values retained; no inferred correction. |
+| Patzke_etal_2015-E006 | brain_volume_mm3 | Table 1 pp.3–7; output ordinal and label 139 Dobsonia praedatrix | 2.92 ml |  | publication_ambiguity |  | confirmed | Footnote states Vb=Mb/1.036; printed mass implies 2905.40540540541 mm³ versus published 2920 mm³. Source visually checked. Montie rows may reflect measured volumes rather than the universal footnote; no substitution. | Published values retained; no inferred correction. |
+| Patzke_etal_2015-E007 | brain_volume_mm3 | Table 1 pp.3–7; output ordinal and label 164 Notopteris macdonaldi | 1.14 ml |  | publication_ambiguity |  | confirmed | Footnote states Vb=Mb/1.036; printed mass implies 1409.26640926641 mm³ versus published 1140 mm³. Source visually checked. Montie rows may reflect measured volumes rather than the universal footnote; no substitution. | Published values retained; no inferred correction. |
+| Patzke_etal_2015-E008 | brain_volume_mm3 | Table 1 pp.3–7; output ordinal and label 226 Hipposideros sperois | 0.027 ml |  | publication_ambiguity |  | confirmed | Footnote states Vb=Mb/1.036; printed mass implies 270.27027027027 mm³ versus published 27 mm³. Source visually checked. Montie rows may reflect measured volumes rather than the universal footnote; no substitution. | Published values retained; no inferred correction. |
+
+8 recorded, 0 open (proposed), 8 confirmed, 0 withdrawn.
+<!-- errata:end -->

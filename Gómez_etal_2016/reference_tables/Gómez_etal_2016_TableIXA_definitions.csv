@@ -1,0 +1,10 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species,Exact published taxon label including synonym and footnote digits; not necessarily a unique current species,,,,info,Mammalia,Gómez_etal_2016_TableIXA,,
+family,"Printed family, spelling retained",,,,info,Mammalia,Gómez_etal_2016_TableIXA,,
+deaths_n,Total dead individuals included in the compiled evidence,MortalitySample,Deaths.n,reported,secondary,Mammalia,Gómez_etal_2016_TableIXA,Denominator for source percentage; mixed contexts and source coverage.,Published table; see README
+conspecific_deaths_percent,Percentage of sampled deaths attributed to intraspecific interactions,ConspecificLethalViolence,Mortality.percent,reported,secondary,Mammalia,Gómez_etal_2016_TableIXA,"Sampled deaths, not annual mortality risk. Zero does not establish absence of behavior; do not back-calculate integer counts from rounded percentages.",Published table; see README
+source_key,Printed numeric keys separated by semicolon-space; split and join item references; unresolved concatenated keys retained,,,,info,Mammalia,Gómez_etal_2016_TableIXA,"ERRATA Gómez_etal_2016-E001 (confirmed, publication_ambiguity): printed 396701, repo had blank | ERRATA Gómez_etal_2016-E002 (confirmed, publication_ambiguity): printed 898999, repo had blank | ERRATA Gómez_etal_2016-E003 (confirmed, publication_ambiguity): printed 468998, repo had blank | ",
+source_key_source_text,Exact source cell for audit,,,,info,Mammalia,Gómez_etal_2016_TableIXA,,
+taxon_footnote,"1 congener substitution; 2 subspecies collapsed; 3 closest-relative substitution; 4 synonym, as printed",,,,info,Mammalia,Gómez_etal_2016_TableIXA,,
+data_role,"Literature compilation, not independent primary observations",,,,info,Mammalia,Gómez_etal_2016_TableIXA,,
+source,Publication token,,,,info,Mammalia,Gómez_etal_2016_TableIXA,,

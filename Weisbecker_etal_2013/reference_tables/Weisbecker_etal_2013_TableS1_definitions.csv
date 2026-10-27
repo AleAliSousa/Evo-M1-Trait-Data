@@ -1,0 +1,13 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species,"Source species label, outer whitespace removed; source text also retained",,,,info,Marsupialia,Weisbecker_etal_2013_TableS1,,
+male_body_mass_g,"Male literature body mass, g",Body,Mass.g,reported,secondary,Marsupialia,Weisbecker_etal_2013_TableS1,"Alternative estimates and sex-specific masses are separate variables, not independent specimens.",Published table; see README
+female_body_mass_g,"Female literature body mass, g",Body,Mass.g,reported,secondary,Marsupialia,Weisbecker_etal_2013_TableS1,"Alternative estimates and sex-specific masses are separate variables, not independent specimens.",Published table; see README
+average_body_mass_g,"Published sex-averaged body mass, g",Body,Mass.g,reported,secondary,Marsupialia,Weisbecker_etal_2013_TableS1,"Alternative estimates and sex-specific masses are separate variables, not independent specimens.",Published table; see README
+endocranial_volume_mm3,"Brain volume column: Ashwell-based endocranial volume, mm3",EndocranialVolume,Vol.mm3,reported,secondary,Marsupialia,Weisbecker_etal_2013_TableS1,"Alternative estimates and sex-specific masses are separate variables, not independent specimens.",Published table; see README
+mandible_estimated_body_mass_g,"Mandible-length-estimated body mass from Ashwell2008, g",Body,MassEstimated.g,reported,secondary,Marsupialia,Weisbecker_etal_2013_TableS1,"Alternative estimates and sex-specific masses are separate variables, not independent specimens.",Published table; see README
+species_source_text,"Exact original species cell, including whitespace",,,,info,Marsupialia,Weisbecker_etal_2013_TableS1,,
+brain_volume_source_key,Ashwell2008 source collection; 2013 taxonomic/adult-only revisions described in article,,,,info,Marsupialia,Weisbecker_etal_2013_TableS1,,
+mandible_mass_source_key,Join item references,,,,info,Marsupialia,Weisbecker_etal_2013_TableS1,,
+literature_mass_source_key,Placeholder for missing TableS2 bibliography; per-species source not inferred,,,,info,Marsupialia,Weisbecker_etal_2013_TableS1,,
+data_role,Secondary compilation,,,,info,Marsupialia,Weisbecker_etal_2013_TableS1,,
+source,Publication token,,,,info,Marsupialia,Weisbecker_etal_2013_TableS1,,

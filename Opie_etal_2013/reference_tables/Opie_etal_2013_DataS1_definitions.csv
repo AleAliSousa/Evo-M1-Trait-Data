@@ -1,0 +1,23 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species,Exact tree label; underscores/subspecies retained,,,,info,Primates,Opie_etal_2013_DataS1,,
+family_source_group,Published Family heading filled down; labels include higher taxonomic groups,,,,info,Primates,Opie_etal_2013_DataS1,,
+common_name,Published common name,,,,info,Primates,Opie_etal_2013_DataS1,,
+mating_system,Published mating-system category,MatingSystem,Behavior.category,reported,secondary,Primates,Opie_etal_2013_DataS1,"Author categories retained. DD=data deficient, distinct from Low, Absent, No and blank.",Published table; see README
+paternal_care,Published paternal-care category,PaternalCare,Behavior.category,reported,secondary,Primates,Opie_etal_2013_DataS1,"Author categories retained. DD=data deficient, distinct from Low, Absent, No and blank.",Published table; see README
+female_ranging,Discrete/Overlap/DD author coding,FemaleRanging,Behavior.category,reported,secondary,Primates,Opie_etal_2013_DataS1,"Author categories retained. DD=data deficient, distinct from Low, Absent, No and blank.",Published table; see README
+gestation_days,"Gestation length, days",Gestation,Duration.days,reported,secondary,Primates,Opie_etal_2013_DataS1,"Author categories retained. DD=data deficient, distinct from Low, Absent, No and blank.",Published table; see README
+weaning_days,"Weaning age (lactation), days",Weaning,Duration.days,reported,secondary,Primates,Opie_etal_2013_DataS1,"Author categories retained. DD=data deficient, distinct from Low, Absent, No and blank.",Published table; see README
+weaning_proportion,L/(G+L) as supplied,ReproductiveCycle,Duration.ratio,reported,secondary,Primates,Opie_etal_2013_DataS1,"Author categories retained. DD=data deficient, distinct from Low, Absent, No and blank.",Published table; see README
+seasonal_breeding,"Seasonal breeders (with time out), author coding",BreedingSeasonality,Behavior.category,reported,secondary,Primates,Opie_etal_2013_DataS1,"Author categories retained. DD=data deficient, distinct from Low, Absent, No and blank.",Published table; see README
+infanticide,High/Low/DD author coding,Infanticide,Behavior.category,reported,secondary,Primates,Opie_etal_2013_DataS1,"Author categories retained. DD=data deficient, distinct from Low, Absent, No and blank.",Published table; see README
+total_publications,"Web of Science publication count, not a sample size",,,,info,Primates,Opie_etal_2013_DataS1,,
+additional_source_key,Row-level additional references; semicolon-space delimiter; join lookup,,,,info,Primates,Opie_etal_2013_DataS1,,
+source,Publication token,,,,info,Primates,Opie_etal_2013_DataS1,,
+mating_system_source_key,"Column-wide source keys from workbook row4, not proof each source measured every species; split semicolon-space and join lookup",,,,info,Primates,Opie_etal_2013_DataS1,,
+paternal_care_source_key,"Column-wide source keys from workbook row4, not proof each source measured every species; split semicolon-space and join lookup",,,,info,Primates,Opie_etal_2013_DataS1,,
+female_ranging_source_key,"Column-wide source keys from workbook row4, not proof each source measured every species; split semicolon-space and join lookup",,,,info,Primates,Opie_etal_2013_DataS1,,
+gestation_days_source_key,"Column-wide source keys from workbook row4, not proof each source measured every species; split semicolon-space and join lookup",,,,info,Primates,Opie_etal_2013_DataS1,,
+weaning_days_source_key,"Column-wide source keys from workbook row4, not proof each source measured every species; split semicolon-space and join lookup",,,,info,Primates,Opie_etal_2013_DataS1,,
+seasonal_breeding_source_key,"Column-wide source keys from workbook row4, not proof each source measured every species; split semicolon-space and join lookup",,,,info,Primates,Opie_etal_2013_DataS1,,
+infanticide_source_key,"Column-wide source keys from workbook row4, not proof each source measured every species; split semicolon-space and join lookup",,,,info,Primates,Opie_etal_2013_DataS1,,
+data_role,"Compiled species coding, not new primary samples",,,,info,Primates,Opie_etal_2013_DataS1,,

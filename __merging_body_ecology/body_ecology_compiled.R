@@ -218,10 +218,17 @@ for (path in sort(list.files(pub, pattern = "\\.tsv$", full.names = TRUE))) {
   if (is.na(pc$col)) next
   ci <- match(pc$col, headers); drows <- rows[-1]; if (!length(drows)) next
   raw <- cell(drows, ci); val <- suppressWarnings(as.numeric(raw))
-  ok <- !is.na(val); if (!any(ok)) next
+  ok <- !is.na(val)
+  if (fn == "10.1159%2F000142809_TableI.tsv" && "merge_eligible" %in% headers)
+    ok <- ok & toupper(cell(drows, match("merge_eligible", headers))) %in% c("TRUE", "1", "YES")
+  if (!any(ok)) next
   sp <- get_species(fn, headers, drows[seq_len(min(length(drows), 59))], drows)
   team <- team_ay[[m$ay]] %||% (if (nzchar(m$author)) m$author else fn)
   role <- role_ay[[m$ay]] %||% "secondary"
+  if (fn == "10.1159%2F000142809_TableI.tsv" && "data_role" %in% headers) {
+    row_role <- cell(drows, match("data_role", headers))[ok]
+    role <- ifelse(!is.na(row_role) & nzchar(row_role), row_role, role)
+  }
   uf[[length(uf) + 1L]] <- keep_rows(blk(sp[ok], val[ok] * FACTOR[[pc$unit]], raw[ok], pc$unit,
                                          "mass", "Body_Mass", "g", fn, m$author, m$year, team, role))
 }

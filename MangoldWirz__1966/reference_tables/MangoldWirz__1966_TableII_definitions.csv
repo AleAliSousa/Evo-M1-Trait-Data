@@ -1,0 +1,10 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species,Species label as printed,,,,info,Mammals,MangoldWirz__1966_TableII,Historical names retained,Table II pp. 462-464
+NI,Neopallium index,Neopallium,index,,info,Mammals,MangoldWirz__1966_TableII,Dimensionless cerebralisation index; do not pool with volumes,Methods p. 455 and Table II
+RhI,Olfactory cortex index,Riechrinde,index,,info,Mammals,MangoldWirz__1966_TableII,Dimensionless cerebralisation index; do not pool with volumes,Methods p. 455 and Table II
+CI,C-index,Cerebellum,index,,info,Mammals,MangoldWirz__1966_TableII,Dimensionless cerebralisation index; do not pool with volumes,Table II
+StI,Stammrest index,Stammrest,index,,info,Mammals,MangoldWirz__1966_TableII,Dimensionless cerebralisation index; do not pool with volumes,Methods p. 455 and Table II
+N_over_TH_pct,N as percent of total brain,Neopallium,percent,,info,Mammals,MangoldWirz__1966_TableII,Derived percentage rather than absolute volume,Table II
+Rh_over_N_pct,Rh as percent of N,Riechrinde,percent,,info,Mammals,MangoldWirz__1966_TableII,Derived percentage rather than absolute volume,Table II
+C_over_TH_pct,C as percent of total brain,Cerebellum,percent,,info,Mammals,MangoldWirz__1966_TableII,Derived percentage rather than absolute volume,Table II
+St_over_TH_pct,St as percent of total brain,Stammrest,percent,,info,Mammals,MangoldWirz__1966_TableII,Derived percentage rather than absolute volume,Table II

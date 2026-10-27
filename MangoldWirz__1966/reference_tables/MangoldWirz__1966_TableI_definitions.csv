@@ -1,0 +1,7 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species,Species label as printed,,,,info,Mammals,MangoldWirz__1966_TableI,Historical names require taxonomic review,Table I pp. 456-462
+body_weight_g,Body weight converted to grams from the printed value,Body,Mass.g,,secondary,Mammals,MangoldWirz__1966_TableI,Source-only pending specimen and age comparability review,Table I column K
+brain_weight_g,Whole-brain weight in grams as printed,Brain,Mass.g,,secondary,Mammals,MangoldWirz__1966_TableI,Source-only pending specimen and preparation comparability review,Table I column G
+TI,Total-brain cerebralisation index,Brain,index,,info,Mammals,MangoldWirz__1966_TableI,Dimensionless index; not a mass,Table I column TI
+source_flag,Attribution from printed superscript or star,,,,info,Mammals,MangoldWirz__1966_TableI,Stephan means borrowed value; author_own means author's own analysis,Table I footnotes
+merge_eligible,FALSE for all rows pending specimen and measurement comparability review,,,,method,Mammals,MangoldWirz__1966_TableI,Controls whole-brain and body-mass harvest,Curatorial decision

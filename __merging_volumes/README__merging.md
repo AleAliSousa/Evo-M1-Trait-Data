@@ -1,5 +1,9 @@
 # Merging histologically-derived brain-structure volumes
 
+## Source-only historical regional comparison
+
+`MangoldWirz__1966/comparison/` contains a long-form transcription of the 1966 regional indices/proportions and a comparison with Dunbar neocortex-ratio tables. Its proportions are not measured mm³ volumes; the comparison is not an input to `volumes_compiled.R`. The companion README records the explicit Mangold-Wirz citation in Shultz & Dunbar (2006) and the different volume sources named by Dunbar's primate and carnivore/insectivore papers.
+
 ## Excluded: Heesy_etal_2011_Table1 (checked 2026-10-24)
 `Heesy_etal_2011_Table1`'s four volume columns (BrainVolume, OpticTractVolume, LGNVolume,
 V1Volume) were checked against this merge and are **not added**. Every one of its 84 rows cites a

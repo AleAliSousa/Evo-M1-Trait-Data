@@ -1,0 +1,4 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+systematic_unit,Systematic group as printed,,,,info,Mammals,Wirz__1950_TableI,Group level rather than species level,Table I pp. 145-147
+included_taxa_as_printed,Taxa used for the relation exponent as printed,,,,info,Mammals,Wirz__1950_TableI,Historical abbreviations retained,Table I pp. 145-147
+relation_exponent_r,Group allometric relation exponent r,Brain versus body,exponent,,info,Mammals,Wirz__1950_TableI,Model parameter; do not pool as brain mass or species observation,Table I pp. 145-147

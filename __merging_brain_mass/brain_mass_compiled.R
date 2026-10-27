@@ -204,7 +204,16 @@ for (t in targets) {
   basis <- basis_of(paper, t$col)
   for (r in t$rows[-1]) {
     if (length(r) < t$ci) next
+    if (t$fn == "10.1159%2F000142809_TableI.tsv" && "merge_eligible" %in% t$headers) {
+      gate <- match("merge_eligible", t$headers)
+      if (length(r) < gate || !toupper(trimws(r[gate])) %in% c("TRUE", "1", "YES")) next
+    }
     v <- suppressWarnings(as.numeric(gsub('"',"",r[t$ci]))); if (is.na(v)) next
+    row_role <- role
+    if (t$fn == "10.1159%2F000142809_TableI.tsv" && "data_role" %in% t$headers) {
+      role_i <- match("data_role", t$headers)
+      if (length(r) >= role_i && nzchar(trimws(r[role_i]))) row_role <- trimws(r[role_i])
+    }
     sp_printed <- get_sp(r); rs <- resolve(sp_printed, if (nzchar(paper)) paper else NA_character_)
     sp <- rs$accepted_name; if (is.na(sp) || !nzchar(sp) || tolower(sp) %in% c("na","none")) next
     uf[[length(uf)+1L]] <- data.frame(Species=sp, species_printed=sp_printed, accepted_name=sp,
@@ -212,7 +221,7 @@ for (t in targets) {
       # 10 significant digits: the mg->g conversion leaves float noise (3550 * 0.001 =
       # 3.5500000000000003) that R and Python would then write out differently.
       Value_g=as.numeric(sprintf("%.10g", v*FACTOR[[unit]])), raw_value=gsub('"',"",r[t$ci]), raw_unit=unit,
-      Source=t$fn, first_author=t$author, Year=t$year, Team=team, role=role,
+      Source=t$fn, first_author=t$author, Year=t$year, Team=team, role=row_role,
       paper=paper, column=t$col, poolable_group=grp, basis=basis, measure_emitted=meas,
       stringsAsFactors=FALSE)
   }

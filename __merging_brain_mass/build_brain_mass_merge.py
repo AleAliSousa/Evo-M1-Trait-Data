@@ -306,19 +306,26 @@ for t in targets:
     for r in t["rows"][1:]:
         if len(r) <= t["ci"]:
             continue
+        if t["fn"] == "10.1159%2F000142809_TableI.tsv" and "merge_eligible" in t["headers"]:
+            eligible = r[t["headers"].index("merge_eligible")].strip().upper()
+            if eligible not in ("TRUE", "1", "YES"):
+                continue
         v = num(r[t["ci"]])
         if v is None:
             continue
         sp = resolve(get_sp(r))
         if not sp or sp.lower() in ("na", "none"):
             continue
+        row_role = role
+        if t["fn"] == "10.1159%2F000142809_TableI.tsv" and "data_role" in t["headers"]:
+            row_role = r[t["headers"].index("data_role")].strip() or role
         uf.append(dict(Species=sp, Measure="Brain_Mass", Units="g", # 10 significant digits: the mg->g conversion leaves float noise (3550 * 0.001 =
                            # 3.5500000000000003) that would be written out verbatim here and
                            # would not match the R twin. 10 sig digits is far finer than any
                            # source reports and makes the two builders write the same double.
                            Value_g=float("%.10g" % (v * FACTOR[unit])),
                        raw_value=r[t["ci"]].replace('"', ""), raw_unit=unit, Source=t["fn"],
-                       first_author=t["author"], Year=t["year"], Team=team, role=role,
+                       first_author=t["author"], Year=t["year"], Team=team, role=row_role,
                        paper=folder, column=t["col"], poolable_group=grp,
                        basis=basis_col.get((folder, t["col"]), {}).get("basis", ""),
                        measure_emitted=FAMILY.get(grp, "")))

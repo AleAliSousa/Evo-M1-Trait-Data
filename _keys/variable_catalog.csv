@@ -4083,3 +4083,15 @@ Strier_etal_2014,Strier_etal_2014_TableS2,dispersal,Sex-biased dispersal,Sex-bia
 Strier_etal_2014,Strier_etal_2014_TableS1,mean_group_size,Social group size,Social group size,NA,individuals,individuals,mean,secondary,Primates,"Mean group size over observations; where multiple groups exist, source averages their summaries"
 Strier_etal_2014,Strier_etal_2014_TableS2,group_size,Social group size,Social group size,NA,individuals,individuals,reported,secondary,Primates,"Published group size; for longpop, average group size in the observation year"
 Strier_etal_2014,Strier_etal_2014_TableS1,group_size_CV,Social group size variability,Social group size variability,NA,CV,CV,CV,secondary,Primates,Published coefficient of variation in group size; temporal or cross-sectional according to study_type
+MangoldWirz__1966,MangoldWirz__1966_TableI,body_weight_g,Body,Body,,Mass.g,mass,,secondary,Mammals,Body weight in grams; source-only pending specimen and age review
+MangoldWirz__1966,MangoldWirz__1966_TableI,brain_weight_g,Brain,Brain,,Mass.g,mass,,secondary,Mammals,Whole-brain weight in grams; source-only pending specimen and preparation review
+MangoldWirz__1966,MangoldWirz__1966_TableI,TI,Brain,Brain,,index,size index (allometric),,info,Mammals,Total-brain cerebralisation index
+Wirz__1950,Wirz__1950_TableI,relation_exponent_r,Brain versus body,Brain versus body,,exponent,exponent,,info,Mammals,Group-level allometric relation exponent r
+MangoldWirz__1966,MangoldWirz__1966_TableII,NI,Neopallium,Neopallium,,index,size index (allometric),,info,Mammals,Neopallium index
+MangoldWirz__1966,MangoldWirz__1966_TableII,RhI,Riechrinde,Riechrinde,,index,size index (allometric),,info,Mammals,Olfactory cortex index
+MangoldWirz__1966,MangoldWirz__1966_TableII,CI,Cerebellum,Cerebellum,,index,size index (allometric),,info,Mammals,C-index
+MangoldWirz__1966,MangoldWirz__1966_TableII,StI,Stammrest,Stammrest,,index,size index (allometric),,info,Mammals,Stammrest index
+MangoldWirz__1966,MangoldWirz__1966_TableII,N_over_TH_pct,Neopallium,Neopallium,,percent,percentage (relative),,info,Mammals,N as percent of total brain
+MangoldWirz__1966,MangoldWirz__1966_TableII,Rh_over_N_pct,Riechrinde,Riechrinde,,percent,percentage (relative),,info,Mammals,Rh as percent of N
+MangoldWirz__1966,MangoldWirz__1966_TableII,C_over_TH_pct,Cerebellum,Cerebellum,,percent,percentage (relative),,info,Mammals,C as percent of total brain
+MangoldWirz__1966,MangoldWirz__1966_TableII,St_over_TH_pct,Stammrest,Stammrest,,percent,percentage (relative),,info,Mammals,St as percent of total brain

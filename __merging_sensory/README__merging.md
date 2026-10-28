@@ -100,7 +100,7 @@ a digitised one; within one provenance tier the later measurement still wins. Ev
   never carried into the table — `source` is a generic pointer. **Recoverable**: assigning
   the letters from the paper's Table 1 would release 20 species of both measures. The one
   row the paper measured itself is already in.
-- **`Heffner__2004_Table1`** (19 primates, high and low limits). No attribution column at
+- **`Heffner__2004_TABLE1`** (19 primates, high and low limits). No attribution column at
   all; its footnotes are methodological ("Extrapolated value based on a threshold of 50 dB or
   higher", "Tested using headphones"), not citations.
 - **`Heffner__1998_Table1`** (19 species) is birds, excluded by the mammal gate.

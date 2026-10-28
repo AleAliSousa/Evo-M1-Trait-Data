@@ -1,4 +1,4 @@
-# Heffner__2004_Table1
+# Heffner__2004_TABLE1
 
 ## Source
 Heffner, R. S. (2004). Primate hearing from a mammalian perspective. *The
@@ -39,11 +39,11 @@ Printed table → image-verified snapshot → analysis csv → public TSV.
 
 | file | role |
 |---|---|
-| `Heffner__2004_Table1_snapshot.csv` | frozen source, transcribed from the page-image render, footnote markers kept in their own columns exactly as printed |
-| `reference_tables/Heffner__2004_Table1_footnotes.csv` | footnote-number → citation text, transcribed from the table's own footnote block |
-| `Heffner__2004_Table1.R` | reads the snapshot, resolves footnotes, writes CSV + public TSV |
-| `Heffner__2004_Table1.csv` | one row per species (19) |
-| `reference_tables/Heffner__2004_Table1_definitions.csv` | data dictionary |
+| `Heffner__2004_TABLE1_snapshot.csv` | frozen source, transcribed from the page-image render, footnote markers kept in their own columns exactly as printed |
+| `reference_tables/Heffner__2004_TABLE1_footnotes.csv` | footnote-number → citation text, transcribed from the table's own footnote block |
+| `Heffner__2004_TABLE1.R` | reads the snapshot, resolves footnotes, writes CSV + public TSV |
+| `Heffner__2004_TABLE1.csv` | one row per species (19) |
+| `reference_tables/Heffner__2004_TABLE1_definitions.csv` | data dictionary |
 
 ## Data role
 All 19 rows are secondary: compiled by Heffner (2004) from prior published

@@ -1,0 +1,32 @@
+Row_as_printed,Footnote_marker_as_printed,Scientific_name_as_printed,Predicted_high_frequency_hearing_limit_kHz,Observed_high_frequency_hearing_limit_kHz,Excess_high_frequency_hearing_octaves,Row_type,Printed_note
+Table 1 caption: Echolocators hear higher than similar sized non-echolocating bats.,,,,,,caption,
+Species,,,Predicted high-frequency hearing limit in kHz (column header carries footnote l),Observed high-frequency hearing limit in kHz,Excess high-frequency hearing in octaves,column_header,
+Laryngeal echolocators,,,,,,group_header,
+Big Brown Bat,a,Eptesicus fuscus,79.66,105.0,0.398,species,
+Horseshoe Bat,b,Rhinolophus ferrumequinum,76.94,103.0,0.421,species,
+Little Brown Bat,c,Myotis lucifugus,85.63,115.0,0.425,species,
+Common Vampire Bat,d,Desmodus rotundus,74.09,112.9,0.608,species,
+Fish-catching Bat,e,Noctilio leporinus,65.11,111.0,0.770,species,
+Greater Spear-nosed bat,f,Phyllostomus hastatus,60.18,105.0,0.803,species,
+Short-tailed Fruit Bat,g,Carollia perspicillata,81.47,150.0,0.881,species,
+Dolphin,h,Tursiops truncatus,68.72,136.0,0.985,species,
+Jamaican Fruit Bat,i,Artibeus jamaicensis,64.57,130.0,1.010,species,
+Mean deviation of echolocators,,,,,0.700,mean_deviation,bold in print
+Non-echolocators,,,,,,group_header,
+Straw-colored Fruit Bat,j,Eidolon helvum,54.05,41.3,-0.388,species,minus sign in print
+Dog-faced Fruit Bat,j,Cynopterus brachyotis,65.38,70.0,0.098,species,
+Egyptian Fruit Bat,k,Rousettus aegyptiacus,55.63,64.0,0.202,species,
+Mean deviation of non-echolocating bats,,,,,-0.029,mean_deviation,minus sign in print
+Footnotes as printed (verbatim),,,,,,footnote_block,
+a,a,,,,,footnote,"Dalland, 1965; Koay et al., 1997."
+b,b,,,,,footnote,"Long and Schnitzler, 1975."
+c,c,,,,,footnote,"Dalland, 1965."
+d,d,,,,,footnote,Current report.
+e,e,,,,,footnote,"Wenstrup, 1984."
+f,f,,,,,footnote,"Koay et al., 2002."
+g,g,,,,,footnote,"Koay et al., 2003."
+h,h,,,,,footnote,"Johnson, 1967; Ljungblad et al., 1982."
+i,i,,,,,footnote,"Heffner et al., 2003."
+j,j,,,,,footnote,"Heffner et al., 2006."
+k,k,,,,,footnote,"Koay et al., 1998 (note that this Pteropodidae echolocates using paired tongue clicks, thought to be secondarily acquired)."
+l,l,,,,,footnote,Regression equation: log (high-frequency hearing limit) = 2.52 − (0.3642) (log interaural distance in ms).

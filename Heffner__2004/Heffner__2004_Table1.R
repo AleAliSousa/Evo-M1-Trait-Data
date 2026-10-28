@@ -1,4 +1,4 @@
-## Heffner__2004_Table1.R -- snapshot -> analysis CSV + public TSV
+## Heffner__2004_TABLE1.R -- snapshot -> analysis CSV + public TSV
 ##
 ## Heffner, R. S. (2004). Primate hearing from a mammalian perspective.
 ## Anat Rec A 281A(1):1111-1122. doi:10.1002/ar.a.20117
@@ -21,7 +21,7 @@
   stop("Run with Rscript file.R, or open in RStudio and click Source (save first).", call. = FALSE)
 })
 folder    <- dirname(.sp)
-item_name <- tools::file_path_sans_ext(basename(.sp))   # "Heffner__2004_Table1"
+item_name <- tools::file_path_sans_ext(basename(.sp))   # "Heffner__2004_TABLE1"
 base <- local({
   d <- folder
   while (dirname(d) != d && !file.exists(file.path(d, "__ReadMe.xlsx"))) d <- dirname(d)

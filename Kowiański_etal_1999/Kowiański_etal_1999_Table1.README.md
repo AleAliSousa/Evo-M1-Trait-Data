@@ -10,4 +10,4 @@ Build: frozen source → analysis CSV → registry-coded public TSV. Numeric sou
 
 Source inspection: assistant checked; no human visual sign-off claimed.
 
-Rebuild: `Rscript Kowianski_etal_1999/Kowiański_etal_1999_Table1.R`.
+Rebuild: `Rscript Kowiański_etal_1999/Kowiański_etal_1999_Table1.R`.

@@ -739,7 +739,7 @@ unbuilt sensory/hearing items (Heffner-authored/related). All are now complete w
 `Heffner_etal_2015`, `Heffner_Heffner_1992_c`, `Pettigrew_etal_1998_Table2` (platypus visual-cortex
 magnification, 13 species), `Heffner__1998_Table1` (19-species domestic hearing table),
 `Mooney_etal_2012_Table4.1` (31 published odontocete audiograms, 18 species), and
-`Heffner__2004_Table1` — the last **image-verified**: its OCR text layer had scrambled footnote
+`Heffner__2004_TABLE1` — the last **image-verified**: its OCR text layer had scrambled footnote
 superscripts into numeric cells and silently dropped several minus signs, so the source PDF page was
 rendered to an image and all 19 rows re-transcribed by eye, then cross-checked by recomputing each
 row's hearing-range-in-octaves from its printed high/low limits. **Public TSV mirrors for all 7 (plus

@@ -1,0 +1,23 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,Harmonised species via _keys/General/species_key.csv (source_publication = Filiminoff_1932),,Species,,info,Homo sapiens,Filiminoff_1932_Tablep70,Table prints no species; name from the title,title p. 1
+species_as_published,Species wording as printed in the paper title ('beim erwachsenen Menschen'),,,,info,Homo sapiens,Filiminoff_1932_Tablep70,,
+hemisphere_label_as_printed,Row label exactly as printed (brain code + d. = rechts / s. = links),,,,info,Homo sapiens,Filiminoff_1932_Tablep70,"13 hemispheres, 9 brains; row order as printed",p. 70
+brain_code,"Brain identifier without hemisphere suffix (Ar = Russian, Ae = Jewish, A Bur = Buryat, A kit = Chinese series, per protocol headers)",,,,info,Homo sapiens,Filiminoff_1932_Tablep70,Ae 2 is a distinct brain from Ar 2 (protocols 5 and 6),pp. 35-70
+protocol_number,Case number of the protocol in section III (1-13),,,,info,Homo sapiens,Filiminoff_1932_Tablep70,,pp. 35-70
+hemisphere,right / left,,,,info,Homo sapiens,Filiminoff_1932_Tablep70,from 'Rechte/Linke Hemisphäre' headers and d./s. suffix,
+group_as_printed,"Ethnic/national label printed in the case header (Russe, Russin, Jude, Burjat, Chinese)",,,,info,Homo sapiens,Filiminoff_1932_Tablep70,kept verbatim; historical labels,
+sex_inferred,Sex inferred from grammatical gender of group_as_printed (Russin = female; others masculine = male),,,,info,Homo sapiens,Filiminoff_1932_Tablep70,not printed explicitly; inference,reference_tables/Filiminoff_1932_Tablep70_cases.csv
+age_years,Age at death as printed in the case header,,,,info,Homo sapiens,Filiminoff_1932_Tablep70,left hemispheres inherit from the right-hemisphere header of the same brain,
+brain_weight_g,Hirngewicht as printed (unit not printed; grams presumed),,,,info,Homo sapiens,Filiminoff_1932_Tablep70,whole fresh brain weight before alcohol fixation (presumed),
+structure_as_printed,Column header as printed: R. occ. / Area 17 / Area 18 / Area 19,,,,info,Homo sapiens,Filiminoff_1932_Tablep70,,
+structure,"Canonical structure: Regio_occipitalis, Area_striata (Brodmann 17), Area_18, Area_19",,,,info,Homo sapiens,Filiminoff_1932_Tablep70,Area_striata matches _keys/anatomy_reference.csv; Regio occipitalis = 17+18+19 (printed sums verified),
+area_as_printed,Cell text as printed (unit only in first row; '—' = not measured),,,,info,Homo sapiens,Filiminoff_1932_Tablep70,,
+area_mm2,"Cortical surface area of the structure, one hemisphere, as printed (serial-section method, celloidin; not shrinkage-corrected)",Regio_occipitalis; Area_striata; Area_18; Area_19,Area.mm2,value,primary,Homo sapiens,Filiminoff_1932_Tablep70,Values per hemisphere; Ar 1 d./s.: only Area 17 measured,
+area_cm2,area_mm2 / 100 (project unit for areal extent),Regio_occipitalis; Area_striata; Area_18; Area_19,Area.cm2,value,primary,Homo sapiens,Filiminoff_1932_Tablep70,Area 17 range 22.08-28.77 cm2 = the 22-29 cm2 cited by Van Essen & Drury 1997,
+area_cm2_shrinkage_corrected,"area_mm2 x 1.2 / 100 -- author's shrinkage coefficient (p. 71); derived, not printed per case",Regio_occipitalis; Area_striata; Area_18; Area_19,Area.cm2,value (corrected),primary,Homo sapiens,Filiminoff_1932_Tablep70,"ERRATA Filiminoff_1932-E003 (proposed, publication_error): printed 3036 mm², repo had blank, proposed 3136 mm² | Author prints corrected range only (Area 17 2650-3452 mm2); reproduces x1.2",
+pct_of_regio_occipitalis_as_printed,"Percentage cell as printed ('= 24,2 ⁰/₀')",,,,info,Homo sapiens,Filiminoff_1932_Tablep70,,
+pct_of_regio_occipitalis,"Area as % of the whole Regio occipitalis of that hemisphere, as printed",Regio_occipitalis; Area_striata; Area_18; Area_19,pct.Regio_occipitalis,value,primary,Homo sapiens,Filiminoff_1932_Tablep70,"ERRATA Filiminoff_1932-E001 (proposed, publication_ambiguity): printed = 24,4, repo had 24.4, proposed 24.5 | ERRATA Filiminoff_1932-E002 (proposed, publication_ambiguity): printed = 38,6, repo had 38.6, proposed 38.5 | ",
+source_location,Page locus of the table and case headers,,,,info,Homo sapiens,Filiminoff_1932_Tablep70,,
+data_role,primary = the author's own measurements,,,,info,Homo sapiens,Filiminoff_1932_Tablep70,,
+Method:observation_level,One row per hemisphere x structure (13 x 4 = 52 rows; 6 rows are printed dashes),,,,method,Homo sapiens,Filiminoff_1932_Tablep70,Individual-level; 3 brains contribute both hemispheres -- do not treat hemispheres as independent individuals,
+Method:unit_conversion,mm2 -> cm2 divide by 100; shrinkage correction x1.2 per p. 71 (verified against the printed corrected range and Regio/18/19 corrected means),,,,method,Homo sapiens,Filiminoff_1932_Tablep70,,

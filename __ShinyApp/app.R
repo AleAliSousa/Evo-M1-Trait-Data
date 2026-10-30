@@ -1,10 +1,7 @@
 # =============================================================================
 # Evo-M1-Trait-Data explorer  -- public Shiny app
-# Two views:
-#   1. Compiled database  : harmonized long tables (brain structure, cell counts,
-#                            behaviour, ecology, and folding), searchable / plottable.
-#   2. Source tables      : the per-publication TSVs in __Public/comparative-data,
-#                            each linked to its DOI / PubMed / ISBN source.
+# Species-first trait coverage, searchable compiled data, size-adjusted
+# regression, cohort coverage, glossary and per-publication source tables.
 #
 # Self-contained: all data lives in ./data and is bundled on deploy.
 # Deploy with:  rsconnect::deployApp("__ShinyApp")   (see DEPLOY.md)
@@ -14,6 +11,7 @@ library(shiny)
 library(bslib)
 library(DT)
 library(ggplot2)
+source("explorer.R", local = TRUE)
 
 # ---- Data source ------------------------------------------------------------
 # Two possible sources: the public GitHub repo, and the local ./data bundle that
@@ -458,8 +456,8 @@ load_compiled <- function() {
     std_merge(GH$claustrum_cerebellar, file.path(data_dir, "claustrum_cerebellar_long.csv"), "Claustrum & cerebellar anatomy"),
     std_merge(GH$body,       file.path(data_dir, "body_ecology_long.csv"), "Body & ecology"),
     # Brain mass is emitted as PARALLEL variables, one per measurement basis
-    # (Brain_Mass_measured, Brain_Mass_excl_olfactory_bulb, Brain_Mass_mass_or_volume,
-    # Brain_size_sum_of_structures); nothing is pooled across bases. Endocranial volume
+    # (measured, excluding olfactory bulbs, or explicitly derived estimates);
+    # unresolved mixed-basis records are held for review. Endocranial volume
     # is its own merge, in mL, and is never converted to a mass.
     std_merge(GH$brain_mass, file.path(data_dir, "brain_mass_long.csv"),   "Brain mass"),
     std_merge(GH$ecv, file.path(data_dir, "endocranial_volume_long.csv"),
@@ -571,6 +569,11 @@ clade_choices <- c("All", if (!is.null(taxonomy))
   sort(unique(taxonomy$Order[nzchar(taxonomy$Order)])))
 
 sp_choices  <- sort(unique(compiled$Species))
+species_index <- build_species_index(sp_choices, taxonomy, unalias)
+# Genus-level completion is explicit in the explorer's species table. It fills
+# navigation metadata only; measurement values stay attached to their species.
+tax_order <- setNames(species_index$Order, species_index$Species)
+clade_choices <- c("All", sort(unique(species_index$Order)))
 
 # ---- Variable organisation + glossary --------------------------------------
 # The `Dataset` column above says which MERGE a value came from — useful
@@ -645,7 +648,7 @@ POOL_LABEL <- c(
   endocranial_volume_female = "endocranial capacity, female-only means")
 
 look <- function(map, k) {
-  if (!length(map)) return("")
+  if (!length(map)) return(rep("", length(k)))
   v <- unname(map[k]); v[is.na(v)] <- ""; v
 }
 
@@ -716,6 +719,8 @@ var_choices_meas <- grouped_choices(present[meas_ok])
 # sources -- the Compiled database tab is where disagreement is inspected.
 meas_labels <- present[meas_ok]
 var_dom     <- setNames(var_domain, present)
+numeric_labels <- intersect(meas_labels, unique(compiled$Variable[is.finite(compiled$Value_num)]))
+var_choices_numeric <- grouped_choices(numeric_labels)
 
 cov_pairs <- unique(compiled[
   compiled$Variable %in% meas_labels & nzchar(trimws(compiled$Value)),
@@ -1074,10 +1079,17 @@ read_tree_any <- function(src) {
 load_tree <- function() {
   if (!have_phylo_pkgs) return(NULL)
   exts <- c("nwk", "tre", "newick", "nex", "tree")
+  if (SOURCE == "local") {
+    for (e in exts) {
+      loc <- file.path(repo_dir, "_keys", paste0("mammal_tree.", e))
+      if (file.exists(loc)) { tr <- read_tree_any(loc); if (!is.null(tr)) return(tr) }
+    }
+  }
   for (e in exts) {                      # local fallback first (fast)
     loc <- file.path(data_dir, paste0("mammal_tree.", e))
     if (file.exists(loc)) { tr <- read_tree_any(loc); if (!is.null(tr)) return(tr) }
   }
+  if (SOURCE == "local") return(NULL)
   for (e in exts) {                      # then GitHub
     tr <- read_tree_any(paste0(GH_BASE, "_keys/mammal_tree.", e))
     if (!is.null(tr)) return(tr)
@@ -1149,27 +1161,29 @@ basis_conflict <- function(a, b) {
 # by species coverage so the widest is the default, and the basis is named in the
 # model summary. Body size is any measurement in the `body size` domain.
 n_species_of <- function(labs) vapply(labs, function(l)
-  length(unique(compiled$Species[compiled$Variable == l & !is.na(compiled$Value_num)])),
+  length(unique(compiled$Species[compiled$Variable == l & is.finite(compiled$Value_num)])),
   integer(1))
 size_choices <- function(labs) {
   if (!length(labs)) return(character(0))
   n <- n_species_of(labs); o <- order(-n)
   setNames(labs[o], sprintf("%s  (%s species)", labs[o], format(n[o], big.mark = ",")))
 }
-body_size_choices  <- size_choices(present[meas_ok & var_domain == "body size"])
-brain_size_choices <- size_choices(present[meas_ok & look(lab_family, present) == "brain_size"])
+body_size_choices  <- size_choices(intersect(numeric_labels, present[var_domain == "body size"]))
+brain_size_choices <- size_choices(intersect(numeric_labels, present[look(lab_family, present) == "brain_size"]))
 
 # Species-mean wide table for any set of variables: one row per species with a
 # value for every one of them (mean if several sources), plus taxonomic order.
-species_means <- function(vars, species = NULL) {
-  d <- compiled[compiled$Variable %in% vars & !is.na(compiled$Value_num),
+species_means <- function(vars, species = NULL, complete = TRUE) {
+  vars <- unique(vars)
+  d <- compiled[compiled$Variable %in% vars & is.finite(compiled$Value_num),
                 c("Species", "Variable", "Value_num")]
   if (!is.null(species)) d <- d[d$Species %in% species, , drop = FALSE]
-  if (!nrow(d)) return(NULL)
-  m <- tapply(d$Value_num, list(d$Species, d$Variable), mean)
-  w <- data.frame(Species = rownames(m), stringsAsFactors = FALSE, check.names = FALSE)
-  for (v in vars) w[[v]] <- if (v %in% colnames(m)) unname(m[, v]) else NA_real_
-  w <- w[stats::complete.cases(w[vars]), , drop = FALSE]
+  sp <- if (is.null(species)) sort(unique(d$Species)) else unique(species)
+  w <- data.frame(Species = sp, stringsAsFactors = FALSE, check.names = FALSE)
+  m <- if (nrow(d)) tapply(d$Value_num, list(d$Species, d$Variable), mean) else NULL
+  for (v in vars) w[[v]] <- if (!is.null(m) && v %in% colnames(m))
+    unname(m[match(sp, rownames(m)), v]) else rep(NA_real_, length(sp))
+  if (complete) w <- w[Reduce(`&`, lapply(w[vars], is.finite)), , drop = FALSE]
   w$Order <- unname(tax_order[w$Species]); w$Order[is.na(w$Order)] <- "Unknown"
   w
 }
@@ -1184,9 +1198,11 @@ species_means <- function(vars, species = NULL) {
 # species' residual from the covariates-only model -- Y relative to size.
 reg_fit <- function(w, y, x, covs, logscale, method) {
   vars <- c(y, x, covs)
+  if (anyDuplicated(vars)) return(list(err = "Choose distinct variables for Y, X and each covariate."))
   nm   <- c("y", "x", if (length(covs)) paste0("c", seq_along(covs)))
   d <- data.frame(Species = w$Species, Order = w$Order, stringsAsFactors = FALSE)
   for (i in seq_along(vars)) d[[nm[i]]] <- w[[vars[i]]]
+  d <- d[Reduce(`&`, lapply(d[nm], is.finite)), , drop = FALSE]
   n_dropped <- 0L
   if (isTRUE(logscale)) {
     pos <- Reduce(`&`, lapply(nm, function(v) d[[v]] > 0))
@@ -1217,6 +1233,11 @@ reg_fit <- function(w, y, x, covs, logscale, method) {
                               k + 3, k)))
   f_full <- stats::reformulate(nm[-1], "y")
   f_red  <- if (length(covs)) stats::reformulate(nm[-(1:2)], "y") else y ~ 1
+  constant <- vars[vapply(d[nm], function(v) length(unique(v)) < 2L, logical(1))]
+  if (length(constant)) return(list(err = paste("No variation in the selected species:", paste(constant, collapse = ", "))))
+  design <- stats::model.matrix(f_full, d)
+  if (qr(design)$rank < ncol(design))
+    return(list(err = "The predictors are exactly collinear in this sample. Remove a redundant size control or covariate."))
   # Pagel's lambda is estimated by maximising the profile likelihood over [0, 1]
   # with lambda FIXED in each gls() call. Letting gls() estimate lambda itself
   # (fixed = FALSE, as pgls_fit() does) fails with "false convergence" or
@@ -1309,6 +1330,7 @@ reg_fit <- function(w, y, x, covs, logscale, method) {
 
 ui <- page_navbar(
   title = "Evo-M1 Comparative Brain-Trait Data",
+  id = "main_nav",
   theme = bs_theme(version = 5, bootswatch = "flatly"),
   fillable = FALSE,
 
@@ -1320,6 +1342,47 @@ ui <- page_navbar(
       font-weight: 600; color: #2c3e50; background: #ecf0f1;
     }
   "))),
+
+  nav_panel(
+    title = "Species explorer", value = "species_explorer",
+    layout_sidebar(
+      sidebar = sidebar(
+        width = 340,
+        helpText("Find traits for one species or compare a set. Start with an ",
+                 "order, a genus, or a species name. Blank species means all ",
+                 "species in the selected order / genera."),
+        selectInput("e_order", "Order", choices = c("All orders" = "", setdiff(clade_choices, "All"))),
+        selectizeInput("e_genus", "Genus (optional)", choices = NULL, multiple = TRUE,
+                       options = list(placeholder = "e.g. Ctenomys")),
+        selectizeInput("e_species", "Species (one or more; blank = all above)",
+                       choices = NULL, multiple = TRUE,
+                       options = list(placeholder = "Type a scientific name")),
+        actionButton("e_ctenomys", "Explore Ctenomys (tuco-tucos)", class = "btn-outline-secondary btn-sm"),
+        hr(),
+        selectizeInput("e_domain", "Trait domain (blank = all)", choices = domain_levels, multiple = TRUE),
+        radioButtons("e_coverage", "Show traits available in",
+                     choices = c("Any selected species" = "any", "Every selected species" = "all")),
+        downloadButton("e_download", "Download values + sources", class = "btn-primary btn-sm"),
+        downloadButton("e_coverage_download", "Download trait coverage", class = "btn-outline-secondary btn-sm"),
+        hr(),
+        actionButton("e_to_regression", "Use these species in Regression", class = "btn-outline-primary btn-sm")
+      ),
+      uiOutput("e_summary"),
+      navset_card_tab(
+        nav_panel("Available traits",
+                  p(class = "text-muted small", "Counts include numeric and categorical measurements. ",
+                    "Coverage describes records in the compiled database; source tables may contain additional unmerged data. ",
+                    "Hover a trait for its definition."),
+                  DTOutput("e_traits")),
+        nav_panel("Compare values",
+                  p(class = "text-muted small", "One column per species. A dash means no compiled value; zero is a recorded value. ",
+                    "Multiple values are separated by |. Select up to 60 species for this view."),
+                  DTOutput("e_matrix")),
+        nav_panel("Values & sources", DTOutput("e_values")),
+        nav_panel("Selected species", DTOutput("e_species_table"))
+      )
+    )
+  ),
 
   # ---------------------------------------------------------------- Compiled --
   nav_panel(
@@ -1409,7 +1472,7 @@ ui <- page_navbar(
 
   # --------------------------------------------------------------- Regression --
   nav_panel(
-    title = "Regression",
+    title = "Regression", value = "regression",
     layout_sidebar(
       sidebar = sidebar(
         width = 360,
@@ -1447,6 +1510,9 @@ ui <- page_navbar(
                     choices = clade_choices, selected = "All"),
         selectInput("r_cohort", "Restrict to cohort",
                     choices = c("All species in the compilation" = "", cohort_choices)),
+        selectizeInput("r_species_filter", "Species subset (blank = all above)",
+                       choices = NULL, multiple = TRUE,
+                       options = list(placeholder = "Or send a set from Species explorer")),
         downloadButton("r_download", "Download species data + residuals (CSV)",
                        class = "btn-primary btn-sm")
       ),
@@ -1454,9 +1520,14 @@ ui <- page_navbar(
       navset_card_tab(
         nav_panel(
           "Model",
+          uiOutput("r_sample_summary"),
           uiOutput("r_summary"),
           DTOutput("r_coef"),
-          uiOutput("r_compare")
+          uiOutput("r_compare"),
+          h5("Before and after adjustment"),
+          p(class = "text-muted small", "Both fits use the same species and transformation. ",
+            "This separates the effect of adjustment from a change in sample."),
+          DTOutput("r_adjustment")
         ),
         nav_panel(
           "Partial plot",
@@ -1467,12 +1538,16 @@ ui <- page_navbar(
                            options = list(placeholder = "type to label points"))
           ),
           plotOutput("r_plot", height = "540px"),
-          helpText("Added-variable plot: Y and X each with the covariates regressed ",
-                   "out (OLS residuals), so the slope shown is X's effect holding ",
-                   "the covariates fixed. With no covariates this is the plain ",
-                   "scatter. The line is the fitted model's X coefficient ",
-                   "(orange = OLS, black = PGLS).")
+          helpText("Y and X each with the covariates regressed out by OLS. ",
+                   "The orange line fits these residuals. For PGLS this scatter is ",
+                   "descriptive only; the phylogenetic effect is reported in the Model tab. ",
+                   "With no covariates this is the plain scatter.")
         ),
+        nav_panel("Data coverage",
+                  p(class = "text-muted small", "Every species in the chosen scope, including exclusions. ",
+                    "Only finite numeric values enter a model; log10 also requires positive values."),
+                  downloadButton("r_audit_download", "Download inclusion / exclusion list"),
+                  DTOutput("r_audit_table")),
         nav_panel(
           "Species",
           p(class = "text-muted",
@@ -1705,6 +1780,127 @@ ui <- page_navbar(
 # ---- Server -----------------------------------------------------------------
 
 server <- function(input, output, session) {
+
+  # ---- Species-first browsing -----------------------------------------------
+  e_pending_genus <- reactiveVal(character())
+  e_order_rows <- reactive({
+    d <- species_index
+    if (length(input$e_order) && nzchar(input$e_order)) d <- d[d$Order == input$e_order, ]
+    d
+  })
+  observeEvent(e_order_rows(), {
+    genera <- sort(unique(e_order_rows()$Genus))
+    wanted <- isolate(e_pending_genus())
+    if (!length(wanted)) wanted <- isolate(input$e_genus)
+    updateSelectizeInput(session, "e_genus", choices = genera,
+                         selected = intersect(wanted, genera), server = TRUE)
+  })
+  observeEvent(input$e_genus, {
+    if (length(e_pending_genus()) && all(e_pending_genus() %in% input$e_genus)) e_pending_genus(character())
+  })
+  e_candidates <- reactive({
+    d <- e_order_rows()
+    if (length(input$e_genus)) d <- d[d$Genus %in% input$e_genus, ]
+    d$Species
+  })
+  observeEvent(e_candidates(), {
+    sp <- e_candidates()
+    updateSelectizeInput(session, "e_species", choices = sp,
+                         selected = intersect(isolate(input$e_species), sp), server = TRUE)
+  })
+  e_selected <- reactive({
+    sp <- e_candidates()
+    if (length(input$e_species)) return(intersect(input$e_species, sp))
+    if (length(input$e_genus) || (length(input$e_order) && nzchar(input$e_order))) return(sp)
+    character()
+  })
+  observeEvent(input$e_ctenomys, {
+    # Preserve the requested genus through the Order -> Genus browser roundtrip.
+    e_pending_genus("Ctenomys")
+    updateSelectInput(session, "e_order", selected = "Rodentia")
+    updateSelectizeInput(session, "e_genus", choices = sort(unique(species_index$Genus[species_index$Order == "Rodentia"])),
+                         selected = "Ctenomys", server = TRUE)
+    updateSelectizeInput(session, "e_species", selected = character())
+    updateSelectizeInput(session, "e_domain", selected = character())
+    updateRadioButtons(session, "e_coverage", selected = "any")
+  })
+  e_traits <- reactive({
+    sp <- e_selected()
+    validate(need(length(sp), "Choose an order, genus or species to see available traits."))
+    trait_coverage(compiled, sp, input$e_domain, identical(input$e_coverage, "all"))
+  })
+  e_values <- reactive({
+    d <- compiled[compiled$Species %in% e_selected() & compiled$Variable %in% e_traits()$Variable &
+                    has_trait_value(compiled$Value),
+                  c("Species", "Variable", "Value", "Unit", "Source", "Teams", "Dataset")]
+    units <- look(lab_unit, d$Variable)
+    d$Unit[!is.na(units) & nzchar(units)] <- units[!is.na(units) & nzchar(units)]
+    d$Domain <- unname(var_dom[d$Variable])
+    d[order(d$Species, d$Domain, d$Variable), ]
+  })
+  output$e_summary <- renderUI({
+    sp <- e_selected()
+    if (!length(sp)) return(div(class = "alert alert-light border", "Start with a species or a group. Try Ctenomys using the example button."))
+    t <- e_traits()
+    inferred <- sum(species_index$Order_basis[match(sp, species_index$Species)] == "Inferred from genus (one recorded order)")
+    div(class = "alert alert-light border",
+        strong(sprintf("%s species · %s available traits · %s shared by all", format(length(sp), big.mark = ","),
+                       format(nrow(t), big.mark = ","), sum(t$Species_with_data == length(sp)))),
+        div(class = "small", "Counts follow the domain and coverage filters. Species are kept separate; genus selection does not pool values."),
+        if (inferred) div(class = "small text-muted", sprintf("Order inferred from an unambiguous genus match for %d species; see Selected species.", inferred)))
+  })
+  output$e_traits <- renderDT({
+    t <- e_traits()
+    if (length(e_selected()) == 1L) {
+      d <- e_values()
+      values <- vapply(split(d$Value, d$Variable), function(v) paste(unique(v), collapse = " | "), character(1))
+      t$Value <- unname(values[t$Variable])
+      t <- t[c("Variable", "Value", "Domain", "Unit", "Definition")]
+    } else t$Selected_species <- NULL
+    t$Variable <- label_html(t$Variable)
+    datatable(t, rownames = FALSE, filter = "top", escape = which(names(t) != "Variable"),
+              colnames = gsub("_", " ", sub("Coverage_percent", "Coverage (%)", names(t))),
+              options = list(pageLength = 20, scrollX = TRUE, order = list(),
+                             columnDefs = list(list(visible = FALSE, targets = match("Definition", names(t)) - 1L))))
+  })
+  output$e_matrix <- renderDT({
+    sp <- e_selected(); t <- e_traits()
+    validate(need(length(sp) <= 60L, "Select up to 60 species to compare values side by side. Values & sources and downloads remain available for larger sets."))
+    d <- trait_value_matrix(e_values(), sp, t$Variable)
+    for (cl in names(d)) d[[cl]][is.na(d[[cl]])] <- "—"
+    datatable(d, rownames = FALSE, filter = "top", options = list(pageLength = 20, scrollX = TRUE))
+  })
+  output$e_values <- renderDT({
+    datatable(e_values(), rownames = FALSE, filter = "top", options = list(pageLength = 20, scrollX = TRUE))
+  })
+  output$e_species_table <- renderDT({
+    sp <- e_selected(); t <- e_traits()
+    d <- species_index[match(sp, species_index$Species), ]
+    pairs <- unique(e_values()[c("Species", "Variable")])
+    counts <- table(pairs$Species)
+    d$Available_traits <- as.integer(counts[d$Species]); d$Available_traits[is.na(d$Available_traits)] <- 0L
+    datatable(d, rownames = FALSE, filter = "top", options = list(pageLength = 20, scrollX = TRUE))
+  })
+  output$e_download <- downloadHandler(
+    filename = function() paste0("evom1_species_values_", Sys.Date(), ".csv"),
+    content = function(file) write.csv(e_values(), file, row.names = FALSE))
+  output$e_coverage_download <- downloadHandler(
+    filename = function() paste0("evom1_species_trait_coverage_", Sys.Date(), ".csv"),
+    content = function(file) {
+      d <- e_traits()
+      d$Selected_species_names <- rep(paste(e_selected(), collapse = "; "), nrow(d))
+      write.csv(d, file, row.names = FALSE)
+    })
+  updateSelectizeInput(session, "r_species_filter", choices = sp_choices, server = TRUE)
+  observeEvent(input$e_to_regression, {
+    sp <- e_selected()
+    if (!length(sp)) { showNotification("Select species in the explorer first.", type = "message"); return() }
+    updateSelectInput(session, "r_clade", selected = "All")
+    updateSelectInput(session, "r_cohort", selected = "")
+    updateSelectizeInput(session, "r_species_filter", choices = sp_choices,
+                         selected = sp, server = TRUE)
+    nav_select("main_nav", "regression", session = session)
+  })
 
   # server-side choices (fast for large lists)
   updateSelectizeInput(session, "c_species", choices = sp_choices, server = TRUE)
@@ -1949,11 +2145,11 @@ server <- function(input, output, session) {
   })
 
   # ---- Regression: Y ~ X + covariates
-  updateSelectizeInput(session, "r_y", choices = var_choices_meas, server = TRUE,
+  updateSelectizeInput(session, "r_y", choices = var_choices_numeric, server = TRUE,
                        selected = "Neocortex_Vol.mm3")
-  updateSelectizeInput(session, "r_x", choices = var_choices_meas, server = TRUE,
+  updateSelectizeInput(session, "r_x", choices = var_choices_numeric, server = TRUE,
                        selected = unname(brain_size_choices[1]))
-  updateSelectizeInput(session, "r_other", choices = var_choices_meas, server = TRUE)
+  updateSelectizeInput(session, "r_other", choices = var_choices_numeric, server = TRUE)
 
   # Model terms. A covariate that is also Y or X is dropped (and said so), since
   # "X controlling for X" is not a model.
@@ -1969,17 +2165,28 @@ server <- function(input, output, session) {
          dup  = intersect(covs, c(input$r_y, input$r_x)))
   })
 
+  r_scope <- reactive({
+    sp <- sp_choices
+    if (!is.null(input$r_cohort) && nzchar(input$r_cohort))
+      sp <- intersect(sp, unique(unlist(cohort_species(input$r_cohort)$labels, use.names = FALSE)))
+    if (!is.null(input$r_clade) && input$r_clade != "All") sp <- sp[tax_order[sp] == input$r_clade]
+    if (length(input$r_species_filter)) sp <- intersect(sp, input$r_species_filter)
+    sp
+  })
+  r_candidates <- reactive({
+    t <- r_terms()
+    species_means(c(t$y, t$x, t$covs), species = r_scope(), complete = FALSE)
+  })
+  r_audit <- reactive({
+    t <- r_terms()
+    regression_audit(r_candidates(), unique(c(t$y, t$x, t$covs)), isTRUE(input$r_log), input$r_method, tree)
+  })
   r_data <- reactive({
     t <- r_terms()
     validate(need(t$y != t$x, "Choose different variables for Y and X."))
-    coh <- if (!is.null(input$r_cohort) && nzchar(input$r_cohort))
-      unique(unlist(cohort_species(input$r_cohort)$labels, use.names = FALSE)) else NULL
-    w <- species_means(c(t$y, t$x, t$covs), species = coh)
-    if (!is.null(w) && !is.null(input$r_clade) && input$r_clade != "All")
-      w <- w[w$Order == input$r_clade, , drop = FALSE]
-    validate(need(!is.null(w) && nrow(w) > 0,
-                  "No species have values for every selected variable."))
-    w
+    w <- r_candidates()
+    vars <- unique(c(t$y, t$x, t$covs))
+    w[Reduce(`&`, lapply(w[vars], is.finite)), , drop = FALSE]
   })
 
   r_fit <- reactive({
@@ -1990,6 +2197,39 @@ server <- function(input, output, session) {
     f <- r_fit()
     validate(need(is.null(f$err), f$err))
     f
+  })
+
+  output$r_sample_summary <- renderUI({
+    t <- r_terms(); w <- r_candidates(); a <- r_audit()
+    xy <- sum(is.finite(w[[t$y]]) & is.finite(w[[t$x]]))
+    complete <- sum(!nzchar(a$Missing_variables))
+    div(class = "alert alert-light border small",
+        strong(sprintf("%d species in scope → %d with X + Y → %d with all controls → %d eligible for this fit",
+                       nrow(w), xy, complete, sum(a$Status == "Included"))),
+        div("See Data coverage for missing variables and exclusions. Eligibility does not guarantee enough variation to fit a model."))
+  })
+  output$r_audit_table <- renderDT({
+    datatable(r_audit(), rownames = FALSE, filter = "top", options = list(pageLength = 20, scrollX = TRUE))
+  })
+  output$r_audit_download <- downloadHandler(
+    filename = function() paste0("evom1_regression_inclusion_", Sys.Date(), ".csv"),
+    content = function(file) write.csv(r_audit(), file, row.names = FALSE))
+  r_unadjusted <- reactive({
+    f <- r_ok()
+    if (!length(f$covs)) return(f)
+    reg_fit(f$species, f$vars[1], f$vars[2], character(), f$logscale, f$method)
+  })
+  output$r_adjustment <- renderDT({
+    f <- r_fit(); req(is.null(f$err))
+    simple <- r_unadjusted()
+    validate(need(is.null(simple$err), simple$err))
+    row <- function(g, label) data.frame(Model = label, Species = g$n,
+                                         X_slope = g$slope, SE = g$coef$SE[2], p = g$p,
+                                         Controls = if (length(g$covs)) paste(g$covs, collapse = "; ") else "None")
+    d <- row(simple, "Unadjusted")
+    if (length(f$covs)) d <- rbind(d, row(f, "Adjusted"))
+    datatable(d, rownames = FALSE, options = list(dom = "t", ordering = FALSE, scrollX = TRUE)) |>
+      formatSignif(c("X_slope", "SE", "p"), digits = 3)
   })
 
   observeEvent(r_ok(), {
@@ -2074,7 +2314,7 @@ server <- function(input, output, session) {
   })
 
   output$r_coef <- renderDT({
-    f <- r_ok()
+    f <- r_fit(); req(is.null(f$err))
     tab <- f$coef
     tab$Term <- ifelse(tab$Term == "(Intercept)", tab$Term, label_html(tab$Term))
     datatable(tab, rownames = FALSE, escape = FALSE,
@@ -2083,7 +2323,7 @@ server <- function(input, output, session) {
   })
 
   output$r_compare <- renderUI({
-    f <- r_ok()
+    f <- r_fit(); req(is.null(f$err))
     base <- if (length(f$covs)) "the covariates alone" else "an intercept-only model"
     div(class = "alert alert-light border py-2 px-2 mt-2 small",
         tags$strong("Adding X: "),
@@ -2108,8 +2348,9 @@ server <- function(input, output, session) {
     g <- if (colour_by) g + geom_point(aes(colour = Order), alpha = 0.8, size = 2.4)
          else g + geom_point(alpha = 0.75, size = 2.4, colour = "#2c7fb8")
     if (colour_by) g <- g + labs(colour = "Order")
-    g <- g + geom_abline(intercept = f$av_intercept, slope = f$slope,
-                         colour = if (f$method == "OLS") "#d95f0e" else "black",
+    display_fit <- stats::lm(ry ~ rx, data = a)
+    g <- g + geom_abline(intercept = stats::coef(display_fit)[1], slope = stats::coef(display_fit)[2],
+                         colour = "#d95f0e",
                          linewidth = 0.8)
     lab <- a[a$Species %in% input$r_label, , drop = FALSE]
     if (nrow(lab))
@@ -2117,7 +2358,8 @@ server <- function(input, output, session) {
                          vjust = -0.8, check_overlap = TRUE) +
         coord_cartesian(clip = "off")             # keep edge labels whole
     g + labs(x = xl, y = yl,
-             title = sprintf("slope = %.3g,  p = %.3g,  %s = %.3f%s", f$slope, f$p,
+             title = if (f$method != "OLS") sprintf("OLS residual view; PGLS X coefficient = %.3g, p = %.3g", f$slope, f$p)
+                     else sprintf("slope = %.3g,  p = %.3g,  %s = %.3f%s", f$slope, f$p,
                              if (f$method == "OLS") "R²" else "R²_lik", f$r2,
                              if (has_c) sprintf(",  partial %s of X = %.3f",
                                                 if (f$method == "OLS") "R²" else "R²_lik",

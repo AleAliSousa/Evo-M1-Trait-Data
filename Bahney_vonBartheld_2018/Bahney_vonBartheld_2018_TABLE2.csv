@@ -1,0 +1,9 @@
+species_as_published,Species,n_specimens,data_role,method,segment,cells_million,cells_sd_million,range_min_million,range_max_million,nonneuronal_pct,glia_pct,neuron_pct,endothelial_pct,ratio_type,ratio,ratio_sd,segment_comparison,p_value,significant,ratio_printed,source_row
+Homo sapiens,Homo sapiens,3,primary,Isotropic fractionator (IF),Cervical (c),535.5,98.9,424,615,86.5,,13.5,,nNNR,7.2,2.91,c. vs. th.,0.34,n.s.,7.2 ± 2.91,3
+Homo sapiens,Homo sapiens,3,primary,Isotropic fractionator (IF),Thoracic (th),670.3,131.9,557,815,86,,14,,nNNR,5.3,1.03,c. vs lu.,0.87,n.s.,5.3 ± 1.03,4
+Homo sapiens,Homo sapiens,3,primary,Isotropic fractionator (IF),Lumbar (lu),457.9,97.7,350,539,87.4,,12.6,,nNNR,6.9,0.6,c. vs th.+lu.,0.42,n.s.,6.9 ± 0.60,5
+Homo sapiens,Homo sapiens,3,primary,Isotropic fractionator (IF),Total,1660,251.8,1400,1900,86.6,,13.4,,nNNR,6.5,1.03,,,,6.5 ± 1.03,6
+Homo sapiens,Homo sapiens,3,primary,Stereology,Cervical (c),479.6,33.4,445,519,,80.5,13.5,6.8,GNR,7.1,2.94,c. vs th.,0.54,n.s.,7.1 ± 2.94,9
+Homo sapiens,Homo sapiens,3,primary,Stereology,Thoracic (th),544.4,57.9,486,602,,72.6,14,13.4,GNR,5.7,2.42,c. vs lu.,0.42,n.s.,5.7 ± 2.42,10
+Homo sapiens,Homo sapiens,3,primary,Stereology,Lumbar (lu),445.4,76,367,511,,71.2,12.6,16.3,GNR,5.6,0.47,c. vs th.+lu.,0.33,n.s.,5.6 ± 0.47,11
+Homo sapiens,Homo sapiens,3,primary,Stereology,Total,1469,50.3,1298,1575,,74.8,13.4,12.2,GNR,6.1,0.86,,,,6.1 ± 0.86,12

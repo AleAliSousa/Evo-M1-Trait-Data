@@ -1,0 +1,9 @@
+Species,Common name,Specimen ID,Sex,"Age, y","Cut section thickness, μm",Brain regions
+Macaca mulatta,Rhesus macaque,M203,M,11.2,40,"M1, S1, P, T, F"
+M. mulatta,Rhesus macaque,M104,M,6.5,40,"M1, P"
+M. mulatta,Rhesus macaque,M105,M,2.8,40,"S1, T"
+Felis catus,Cat,C105,Unknown,Unknown,40,"M1, S1, P, T, F"
+Rattus sp.,Rat,R105,M,Adult,40,"M1, S1, P, T"
+Mus sp.,Mouse,MS305,F,Adult,40,"M1, S1, P, T"
+Mus sp.,Mouse,MS205,F,Adult,40,"M1, S1, P, T"
+"F, frontal; M1, primary motor cortex; P, parietal; S1, primary somatosensory cortex; T, temporal.",,,,,,

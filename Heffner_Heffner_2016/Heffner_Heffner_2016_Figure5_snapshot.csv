@@ -1,0 +1,30 @@
+element,printed_text,figure_role
+caption,Figure 5. Relationship between the width of the field of best vision (75% isodensity contour) and sound-localization thresholds for 22 species of mammals. Species with narrow fields of best vision have smaller thresholds than those with larger fields of best vision. Modified from Heffner et al. (2001).,"figure caption, verbatim"
+axis_title_x,Width of Field of Best Vision (in degrees),"x-axis title, verbatim"
+axis_title_y,Sound-localization Threshold (in degrees),"y-axis title, verbatim"
+axis_ticks_x,1; 3; 10; 30; 100; 180; 200,x-axis tick labels as printed (logarithmic)
+axis_ticks_y,1; 3; 6; 10; 20; 30; 40,y-axis tick labels as printed (logarithmic)
+statistic,r = .89,regression statistic printed inside the panel
+statistic,"p < .001, n = 22",regression statistics printed inside the panel
+species_label,domestic mouse,label of one plotted data point
+species_label,cattle,label of one plotted data point
+species_label,marmot,label of one plotted data point
+species_label,gerbil,label of one plotted data point
+species_label,grasshopper mouse,label of one plotted data point
+species_label,hamster,label of one plotted data point
+species_label,Egyptian fruit bat,label of one plotted data point
+species_label,least weasel,label of one plotted data point
+species_label,ferret,label of one plotted data point
+species_label,chinchilla,label of one plotted data point
+species_label,big brown bat,label of one plotted data point
+species_label,Norway rat,label of one plotted data point
+species_label,short-tailed fruit bat,label of one plotted data point
+species_label,straw-colored fruit bat,label of one plotted data point
+species_label,greater spear-nosed bat,label of one plotted data point
+species_label,Jamaican fruit bat,label of one plotted data point
+species_label,Japanese macaque,label of one plotted data point
+species_label,dog,label of one plotted data point
+species_label,cat,label of one plotted data point
+species_label,pig,label of one plotted data point
+species_label,Virginia opposum,label of one plotted data point
+species_label,human,label of one plotted data point

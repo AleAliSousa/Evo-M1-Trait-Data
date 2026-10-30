@@ -1,0 +1,15 @@
+species_as_published,Species,species_basis,social_play_pct,nonsocial_play_pct,brain_mass_g,brain_mass_mg,body_mass_g,striatum_vol_mm3,sources_printed,n_sources_cited,study_setting,data_role,source_row
+Callithrix jacchus,Callithrix jacchus,verbatim,1.32,0.89,7.9,7900,288,372,"Lewis, 1997e; Stevenson and Poole, 1976, 1982e; Voland, 1977e",3,captive,secondary,3
+Cebus albifrons,Cebus albifrons,verbatim,6.17,3.18,82,82000,2489,3258,"Bernstein, 1965e; Marshall, 1998e",2,captive,secondary,4
+Cercocebus albigena,Lophocebus albigena,synonym:legacy_override,9,,99.1,99100,7362,4146,"Cahill, 1978e",1,captive,secondary,5
+Cercopithecus mitis,Cercopithecus mitis,verbatim,4,,75,75000,5821,2733,"Lawes and Piper, 1992f",1,wild,secondary,6
+Colobus badius,Piliocolobus badius,synonym:legacy_override,3.38,2.41,73.8,73800,7998,3217,"Clutton-Brock, 1974f; Marsh, 1981f; Struhsaker, 1975f",3,wild,secondary,7
+Erythrocebus patas,Erythrocebus patas,verbatim,7.81,,106.6,106600,8690,3624,"Rowell and Chism, 1986e",1,captive,secondary,8
+Gorilla gorilla,Gorilla gorilla,hub,14.79,2.55,505.9,505900,114551,14567,"Fischer and Nadler, 1978e; Fossey, 1979f; Freeman and Alcock, 1973e",3,mixed (captive and wild sources),secondary,9
+Hylobates lar,Hylobates lar,verbatim,12.3,0.5,107.7,107700,5559,4784,"Bartlett, 1999f; Bernstein and Schusterman, 1964e",2,mixed (captive and wild sources),secondary,10
+Macaca mulatta,Macaca mulatta,verbatim,5.5,1.28,95.1,95100,5902,4032,"Chamove, 1973e; Ehardt and Bernstein, 1987e; Gard and Meier, 1977e; Post and Baulu, 1978e",4,captive,secondary,11
+Nycticebus coucang,Nycticebus coucang,verbatim,1.01,1.2,10,10000,659,760,"Glassman and Wells, 1984e; Lewis, 1997e",2,captive,secondary,12
+Pan troglodytes,Pan troglodytes,verbatim,22.49,8.97,410.3,410300,37844,12246,"Bloomsmith, 1989e; Bloomsmith et al., 1994e; King et al., 1980e; Kraemer, 1979f; Kraemer et al., 1982f; Lewis, 2000e; Mendoza-Granados and Sommer, 1995e",7,mixed (captive and wild sources),secondary,13
+Papio spp.,Papio sp.,verbatim,12.5,5.51,172.8,172800,17623,7182,"Chalmers, 1980f; Cheney, 1978f; Coelho and Bramblett, 1982e; Owens, 1975a,bf; Rose, 1977f; Young and Hankins, 1979e; Young et al., 1982e",7,mixed (captive and wild sources),secondary,14
+Pithecia spp.,Pithecia sp.,verbatim,2.98,4.2,34.9,34900,2019,1918,"Dugmore, 1986e; Potter, 1999e",2,captive,secondary,15
+Saguinus oedipus,Saguinus oedipus,verbatim,1.8,1.87,10,10000,417,453,"Potter, 1999e",1,captive,secondary,16

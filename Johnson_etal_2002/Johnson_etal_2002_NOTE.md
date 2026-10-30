@@ -1,5 +1,9 @@
 # Johnson et al. 2002 — deferred (decimal-glyph extraction hazard)
 
+> **Resolved 2026-10-28:** Table 1 is now built from an image-based transcription
+> (`Johnson_etal_2002_Table1.README.md`); all 26 x.5 cells checked on 500-dpi crops and all 113 cells
+> equal Deaner_etal_2006_Table1. The text below is the original deferral record, kept for history.
+
 Johnson VE, Deaner RO, van Schaik CP (2002). *Bayesian analysis of rank data with application to
 primate intelligence experiments.* JASA 97(457):8–17. doi:10.1198/016214502753479185.
 Registry item `Johnson_etal_2002_Table1` ("Rankings of 24 primate genera across 30 procedures").

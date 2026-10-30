@@ -1,0 +1,10 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species_row,Order of the species row in the printed table,,,,info,Mammalia (20 spp),Heffner_Heffner_1992_b_TABLE34.2,,
+animal_as_printed,Common name as printed in the Species column,,,,info,Mammalia (20 spp),Heffner_Heffner_1992_b_TABLE34.2,Printed name kept verbatim,Table 34.2 p.696
+species,Harmonised binomial from _keys/General/species_key.csv (source_publication = Heffner_Heffner_1992_b),,Species,,info,Mammalia (20 spp),Heffner_Heffner_1992_b_TABLE34.2,Hedgehog mapping is a hypothesis (see key note),
+binaural_cue_group_as_printed,Printed Ability group heading the row sits under,,,,info,Mammalia (20 spp),Heffner_Heffner_1992_b_TABLE34.2,"Kept verbatim incl. Greek symbols; Δθ = binaural phase/time cue, ΔI = binaural intensity cue; the last heading prints ""Δt or Δfi""",Table 34.2 Ability column
+binaural_cue_use,Coded group: both | time_cue_reduced_or_absent | intensity_cue_reduced_or_absent | neither,,Class.nominal,,secondary,Mammalia (20 spp),Heffner_Heffner_1992_b_TABLE34.2,Direct recode of the printed heading,
+uses_time_cue,Use of the binaural time (phase) cue implied by the group: yes | reduced_or_absent | no,,Class.nominal,,secondary,Mammalia (20 spp),Heffner_Heffner_1992_b_TABLE34.2,Derived from binaural_cue_use,
+uses_intensity_cue,Use of the binaural intensity cue implied by the group: yes | reduced_or_absent | no,,Class.nominal,,secondary,Mammalia (20 spp),Heffner_Heffner_1992_b_TABLE34.2,Derived from binaural_cue_use,
+source_as_printed,Source study as printed in the Source column,,Source,,info,Mammalia (20 spp),Heffner_Heffner_1992_b_TABLE34.2,"Join on ref_key in reference_tables/Heffner_Heffner_1992_b_TABLE34.2_references.csv (one key per cell; no multi-citations in this table). ""Mooney unpublished Master’s thesis"" has no bibliography entry",
+data_role,secondary on every row (compiled from the cited studies),,,,info,,Heffner_Heffner_1992_b_TABLE34.2,Roadmap for primary ingestion; do not merge as new data,

@@ -1,0 +1,15 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,harmonised name via _keys/General/species_key.csv (source_publication Morelli_etal_2025); genus or 'species unspecified' where the common label does not determine the species,,,,info,Mammalia (9 labelled animals of 23 plotted),Morelli_etal_2025_Figure5,,
+species_as_published,common-name label printed in Fig. 5,,,,info,Mammalia (9 labelled animals of 23 plotted),Morelli_etal_2025_Figure5,,
+WhiteMatter_Vol.mm3,white matter volume (WMV) from the printed annotation 'WMV: ~<n> mm3',WhiteMatter,Vol.mm3,mean,secondary,Mammalia (9 labelled animals of 23 plotted),Morelli_etal_2025_Figure5,"WMV_source_keys bind to reference_tables/Morelli_etal_2025_Figure5_references.csv (split on '; ', join on ref_key)",printed with '~' (approximate)
+WhiteMatter_Vol_approximate,TRUE where the annotation prints '~' before the WMV value,,,,info,Mammalia (9 labelled animals of 23 plotted),Morelli_etal_2025_Figure5,,
+SleepTime.pct24h,"sleep time (ST) as % of 24 h, from the printed annotation 'ST: <n>%'",,Pct.24h,mean,secondary,Mammalia (9 labelled animals of 23 plotted),Morelli_etal_2025_Figure5,ST_source_keys bind to the references file,
+SleepTime.h_derived,sleep time in hours = SleepTime.pct24h x 24 / 100 (derived; not printed),,Time.h,mean,info,Mammalia (9 labelled animals of 23 plotted),Morelli_etal_2025_Figure5,derived for comparison with Siegel__2022 etc.,
+WMV_annotation_as_printed,WMV annotation verbatim,,,,info,Mammalia (9 labelled animals of 23 plotted),Morelli_etal_2025_Figure5,,
+ST_annotation_as_printed,ST annotation verbatim,,,,info,Mammalia (9 labelled animals of 23 plotted),Morelli_etal_2025_Figure5,,
+WMV_source_keys,"legend's WMV sources as printed, '; '-separated (apply to all 23 points; no per-animal attribution)",,,,info,Mammalia (9 labelled animals of 23 plotted),Morelli_etal_2025_Figure5,,
+ST_source_keys,"legend's sleep-time sources as printed, '; '-separated (Chudler's tabulated values based on the listed papers)",,,,info,Mammalia (9 labelled animals of 23 plotted),Morelli_etal_2025_Figure5,"Hozer et al., 2019 applies only to the unlabelled lesser mouse lemur point",
+source_attribution_level,statement that sources are not attributed per animal,,,,info,Mammalia (9 labelled animals of 23 plotted),Morelli_etal_2025_Figure5,,
+source_location,figure panel and position of the annotation,,,,info,Mammalia (9 labelled animals of 23 plotted),Morelli_etal_2025_Figure5,,
+data_role,secondary (compiled from cited sources),,,,info,Mammalia (9 labelled animals of 23 plotted),Morelli_etal_2025_Figure5,,
+Method:constructed_snapshot,9 text annotations transcribed verbatim from Fig. 5 (400-dpi render); 14 unlabelled scatter points not digitised,,,,method,Mammalia (9 labelled animals of 23 plotted),Morelli_etal_2025_Figure5,printed statistic r = 0.5561 (p < 0.01) in figure vs r = 0.5562 in text (p. 97),

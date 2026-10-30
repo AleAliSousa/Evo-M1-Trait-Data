@@ -1,8 +1,8 @@
 Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
 Family,primate family,,,info,Primates,Iwaniuk_etal_2001_Table4,forward-filled to every row in the R script,
-Species,species scientific binomial (expanded from the source shorthand; one spelling corrected),,Species,,primary,Primates,Iwaniuk_etal_2001_Table4,"Galago sengalensis -> Galago senegalensis; reconcile to _keys/Stephan/species_key.csv",
-Sex play,"sexual-play score (ordinal, 0-2)",Behaviour,,rank,primary,Primates,Iwaniuk_etal_2001_Table4,NA where not assessed,
-Non-sex play,"non-sexual-play score (ordinal, 0-2)",Behaviour,,rank,primary,Primates,Iwaniuk_etal_2001_Table4,,
-Total play,total play score (sum of sex + non-sex play),Behaviour,,,primary,Primates,Iwaniuk_etal_2001_Table4,,
+Species,species scientific binomial (expanded from the source shorthand; one spelling corrected),,Species,,primary,Primates,Iwaniuk_etal_2001_Table4,Galago sengalensis -> Galago senegalensis; reconcile to _keys/Stephan/species_key.csv,
+Sex play,"sexual-play score (ordinal, 0-2)",Behaviour,,rank,secondary,Primates,Iwaniuk_etal_2001_Table4,"NA where not assessed; republication: these scores are Pellis & Iwaniuk (2000) Ethology Table 1 (Pellis_Iwaniuk_2000_Table1), identical on every comparable shared cell; that item is the primary and supplies Play_sex_score / Play_nonsex_score to the merge",
+Non-sex play,"non-sexual-play score (ordinal, 0-2)",Behaviour,,rank,secondary,Primates,Iwaniuk_etal_2001_Table4,"republication: these scores are Pellis & Iwaniuk (2000) Ethology Table 1 (Pellis_Iwaniuk_2000_Table1), identical on every comparable shared cell; that item is the primary and supplies Play_sex_score / Play_nonsex_score to the merge",
+Total play,total play score (sum of sex + non-sex play),Behaviour,,,secondary,Primates,Iwaniuk_etal_2001_Table4,"republication: these scores are Pellis & Iwaniuk (2000) Ethology Table 1 (Pellis_Iwaniuk_2000_Table1), identical on every comparable shared cell; that item is the primary and supplies Play_sex_score / Play_nonsex_score to the merge",
 Brain size,relative brain size (residual from the regression against body size),WholeBrain,BrainSize.residual,,primary,Primates,Iwaniuk_etal_2001_Table4,small +/- residual values,
 Neocortex size,relative neocortex size (residual from the regression against body size),Neocortex,Neocortex.residual,,primary,Primates,Iwaniuk_etal_2001_Table4,NA where not available,

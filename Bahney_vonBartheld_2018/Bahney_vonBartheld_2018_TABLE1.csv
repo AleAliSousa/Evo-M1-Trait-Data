@@ -1,0 +1,9 @@
+species_as_published,Species,n_specimens,data_role,method,segment,cells_million,cells_sd_million,range_min_million,range_max_million,nonneuronal_pct,glia_pct,neuron_pct,endothelial_pct,ratio_type,ratio,ratio_sd,segment_comparison,p_value,significant,ratio_printed,source_row
+Macaca fascicularis,Macaca fascicularis,3,primary,Isotropic fractionator (IF),Cervical (c),82.7,18.2,68,103,74.3,,25.7,,nNNR,3,0.75,c. vs th.,0.26,n.s.,3.0 ± 0.75,3
+Macaca fascicularis,Macaca fascicularis,3,primary,Isotropic fractionator (IF),Thoracic (th),118,6.2,111,120,78.5,,21.5,,nNNR,3.7,0.42,c. vs lu.,0.75,n.s.,3.7 ± 0.42,4
+Macaca fascicularis,Macaca fascicularis,3,primary,Isotropic fractionator (IF),Lumbar (lu),74.3,42.6,42,122,71.8,,28.2,,nNNR,2.8,0.92,c. vs th.+ lu.,0.71,n.s.,2.8 ± 0.92,5
+Macaca fascicularis,Macaca fascicularis,3,primary,Isotropic fractionator (IF),Total,275,55.5,230,337,74.9,,25.1,,nNNR,3.2,0.47,,,,3.2 ± 0.47,6
+Macaca fascicularis,Macaca fascicularis,3,primary,Stereology,Cervical (c),67.6,15.6,49,78,,66.9,10.4,22.6,GNR,7.3,3.61,c. vs th.,0.41,n.s.,7.3 ± 3.61,9
+Macaca fascicularis,Macaca fascicularis,3,primary,Stereology,Thoracic (th),89.7,10.9,83,102,,68.4,12.9,18.7,GNR,5.3,0.85,c. vs lu.,0.25,n.s.,5.3 ± 0. 85,10
+Macaca fascicularis,Macaca fascicularis,3,primary,Stereology,Lumbar (lu),48.9,7.9,40,54,,61.3,16.7,22,GNR,4.2,1.95,c vs th.+lu.,0.16,n.s.,4.2 ± 1. 95,11
+Macaca fascicularis,Macaca fascicularis,3,primary,Stereology,Total,206.2,31.2,172,334,,65.5,13.3,21.1,GNR,5.6,1.57,,,,5.6 ± 1.57,12

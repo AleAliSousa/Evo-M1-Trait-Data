@@ -143,6 +143,13 @@ SPECIES_OVERRIDE <- c(
 )
 
 binom <- "^[A-Z][a-z]+ [a-z][a-z-]+"
+check_species_names <- function(species) {
+  duplicate <- !is.na(species) & grepl("^([A-Z][a-z]+) \\1 ", species, perl = TRUE)
+  if (any(duplicate)) stop("Repeated genus in harvested species names: ",
+    paste(head(unique(species[duplicate]), 6), collapse = "; "),
+    ". Check source-column assembly before pooling.", call. = FALSE)
+  invisible(TRUE)
+}
 species_col <- function(headers, sample) {
   # Which column holds the binomial? Score every column on the sample rows by how often its value
   # looks like "Genus species"; >= 0.5 wins. Otherwise Genus + Species epithet, otherwise a named
@@ -155,7 +162,20 @@ species_col <- function(headers, sample) {
   if (length(best) && sc[best] >= 0.5) { i <- best; return(function(rows) cell(rows, i)) }
   g <- which(norm(headers) == "genus"); s <- which(norm(headers) %in% c("species", "species epithet"))
   if (length(g) && length(s)) { gi <- g[1]; si <- s[1]
-    return(function(rows) trimws(paste(cell(rows, gi), cell(rows, si)))) }
+    # Species can be a full underscore-separated name, not just an epithet.
+    # Inspect each row, but return its original text for the shared resolver.
+    # Do not strip repeated words from accepted names or change other sources'
+    # column-selection rules here.
+    return(function(rows) {
+      genus <- cell(rows, gi); species <- cell(rows, si)
+      normalised <- trimws(gsub("[[:space:]]+", " ", gsub("_", " ", species, fixed = TRUE)))
+      full <- !is.na(species) & grepl(binom, normalised)
+      absent <- is.na(species) | !nzchar(species) | tolower(species) %in% c("na", "none")
+      answer <- trimws(paste(genus, species))
+      answer[full] <- species[full]
+      answer[absent] <- NA_character_
+      answer
+    }) }
   h <- which(norm(headers) %in% c("species","scientific","scientific name","taxon","binomial",
                                   "genus species","species name","species_name","animal"))
   if (length(h)) { i <- h[1]; return(function(rows) cell(rows, i)) }
@@ -329,6 +349,7 @@ if (file.exists(wp)) {
 
 uf <- do.call(rbind, uf)
 colmap <- do.call(rbind, colmap)
+check_species_names(uf$Species)
 
 ## ---- value vetoes: body_ecology_value_flags.csv ----------------------------------------
 ## Same schema and `skip` action as __merging_volumes/volumes_select_value_flags.csv, plus n_expected:

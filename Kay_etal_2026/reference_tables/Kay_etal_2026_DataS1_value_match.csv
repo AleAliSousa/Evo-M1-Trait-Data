@@ -1,0 +1,136 @@
+variable,genus,KayDataS1_value_mm3,status,source_candidates_mm3,source_item,note
+BrainVol,Alouatta,49009.0,equals_species_value,Alouatta sp.=49009,"Stephan_etal_1981_TableII + TableIII (Total_brain_net_volume, mm3)",
+BrainVol,Aotus,16195.0,equals_species_value,Aotus trivirgatus=16195,"Stephan_etal_1981_TableII + TableIII (Total_brain_net_volume, mm3)",
+BrainVol,Ateles,101034.0,equals_species_value,Ateles geoffroyi=101034,"Stephan_etal_1981_TableII + TableIII (Total_brain_net_volume, mm3)",
+BrainVol,Avahi,9461.0,equals_genus_mean,Avahi l. laniger=9798; Avahi laniger occidentalis=9124,"Stephan_etal_1981_TableII + TableIII (Total_brain_net_volume, mm3)",
+BrainVol,Callimico,10510.0,equals_species_value,Callimico goeldii=10510,"Stephan_etal_1981_TableII + TableIII (Total_brain_net_volume, mm3)",
+BrainVol,Callithrix,7241.0,equals_species_value,Callithrix jacchus=7241,"Stephan_etal_1981_TableII + TableIII (Total_brain_net_volume, mm3)",
+BrainVol,Cebuella,4302.0,equals_species_value,Cebuella pygmaea=4302,"Stephan_etal_1981_TableII + TableIII (Total_brain_net_volume, mm3)",
+BrainVol,Cebus,66939.0,equals_species_value,Cebus sp.=66939,"Stephan_etal_1981_TableII + TableIII (Total_brain_net_volume, mm3)",
+BrainVol,Cercopithecus,67034.5,equals_mean_of_two_source_species,Cercopithecus mitis=70564; Cercopithecus ascanius=63505; Cercopithecus talapoin=37776,"Stephan_etal_1981_TableII + TableIII (Total_brain_net_volume, mm3)","equals the mean of C. mitis and C. ascanius only (C. talapoin is listed under Miopithecus in Data S1, value equal to Stephan's C. talapoin)"
+BrainVol,Cheirogaleus,4667.0,equals_genus_mean,Cheirogaleus major=6373; Cheirogaleus medius=2961,"Stephan_etal_1981_TableII + TableIII (Total_brain_net_volume, mm3)",
+BrainVol,Daubentonia,42611.0,equals_species_value,Daubentonia madagascar.=42611,"Stephan_etal_1981_TableII + TableIII (Total_brain_net_volume, mm3)",
+BrainVol,Erythrocebus,103167.0,equals_species_value,Erythrocebus patas=103167,"Stephan_etal_1981_TableII + TableIII (Total_brain_net_volume, mm3)",
+BrainVol,Eulemur,22106.0,no_candidate_genus,,"Stephan_etal_1981_TableII + TableIII (Total_brain_net_volume, mm3)",Data S1 genus name not used in the source table (e.g. Eulemur/Otolemur/Galagoides under older genus names in Stephan 1981); not matched by name - check manually
+BrainVol,Galago,4512.0,equals_species_value,Galago crassicaudatus=9668; Galago demidovii=3203; Galago senegalensis=4512,"Stephan_etal_1981_TableII + TableIII (Total_brain_net_volume, mm3)",
+BrainVol,Galagoides,3203.0,no_candidate_genus,,"Stephan_etal_1981_TableII + TableIII (Total_brain_net_volume, mm3)",Data S1 genus name not used in the source table (e.g. Eulemur/Otolemur/Galagoides under older genus names in Stephan 1981); not matched by name - check manually
+BrainVol,Gorilla,470359.0,equals_species_value,Gorilla gorilla=470359,"Stephan_etal_1981_TableII + TableIII (Total_brain_net_volume, mm3)",
+BrainVol,Homo,1251850.0,equals_species_value,Homo sapiens sapiens=1.25185e+06,"Stephan_etal_1981_TableII + TableIII (Total_brain_net_volume, mm3)",
+BrainVol,Hylobates,97505.0,equals_species_value,Hylobates lar=97505,"Stephan_etal_1981_TableII + TableIII (Total_brain_net_volume, mm3)",
+BrainVol,Indri,36285.0,equals_species_value,Indri indri=36285,"Stephan_etal_1981_TableII + TableIII (Total_brain_net_volume, mm3)",
+BrainVol,Lagothrix,95503.0,equals_species_value,Lagothrix lagotricha=95503,"Stephan_etal_1981_TableII + TableIII (Total_brain_net_volume, mm3)",
+BrainVol,Leontocebus,9569.0,no_candidate_genus,,"Stephan_etal_1981_TableII + TableIII (Total_brain_net_volume, mm3)",Data S1 genus name not used in the source table (e.g. Eulemur/Otolemur/Galagoides under older genus names in Stephan 1981); not matched by name - check manually
+BrainVol,Lepilemur,7175.0,equals_species_value,Lepilemur ruficaudatus=7175,"Stephan_etal_1981_TableII + TableIII (Total_brain_net_volume, mm3)",
+BrainVol,Lophocebus,97603.0,no_candidate_genus,,"Stephan_etal_1981_TableII + TableIII (Total_brain_net_volume, mm3)",Data S1 genus name not used in the source table (e.g. Eulemur/Otolemur/Galagoides under older genus names in Stephan 1981); not matched by name - check manually
+BrainVol,Loris,6269.0,equals_species_value,Loris tardigradus=6269,"Stephan_etal_1981_TableII + TableIII (Total_brain_net_volume, mm3)",
+BrainVol,Macaca,87896.0,equals_species_value,Macaca mulatta=87896,"Stephan_etal_1981_TableII + TableIII (Total_brain_net_volume, mm3)",
+BrainVol,Microcebus,1680.0,equals_species_value,Microcebus murinus=1680,"Stephan_etal_1981_TableII + TableIII (Total_brain_net_volume, mm3)",
+BrainVol,Miopithecus,37776.0,no_candidate_genus,,"Stephan_etal_1981_TableII + TableIII (Total_brain_net_volume, mm3)",Data S1 genus name not used in the source table (e.g. Eulemur/Otolemur/Galagoides under older genus names in Stephan 1981); not matched by name - check manually
+BrainVol,Nasalis,92000.0,differs,Nasalis larvatus=92797,"Stephan_etal_1981_TableII + TableIII (Total_brain_net_volume, mm3)",Data S1 92000 vs Stephan 1981 Nasalis larvatus 92797 mm3 (0.86%); provisional cross-source disagreement
+BrainVol,Nycticebus,11755.0,equals_species_value,Nycticebus coucang=11755,"Stephan_etal_1981_TableII + TableIII (Total_brain_net_volume, mm3)",
+BrainVol,Otolemur,9668.0,no_candidate_genus,,"Stephan_etal_1981_TableII + TableIII (Total_brain_net_volume, mm3)",Data S1 genus name not used in the source table (e.g. Eulemur/Otolemur/Galagoides under older genus names in Stephan 1981); not matched by name - check manually
+BrainVol,Pan,382103.0,equals_species_value,Pan troglodytes=382103,"Stephan_etal_1981_TableII + TableIII (Total_brain_net_volume, mm3)",
+BrainVol,Papio,190957.0,equals_species_value,Papio anubis=190957,"Stephan_etal_1981_TableII + TableIII (Total_brain_net_volume, mm3)",
+BrainVol,Perodicticus,13212.0,equals_species_value,Perodicticus potto=13212,"Stephan_etal_1981_TableII + TableIII (Total_brain_net_volume, mm3)",
+BrainVol,Piliocolobus,73818.0,no_candidate_genus,,"Stephan_etal_1981_TableII + TableIII (Total_brain_net_volume, mm3)",Data S1 genus name not used in the source table (e.g. Eulemur/Otolemur/Galagoides under older genus names in Stephan 1981); not matched by name - check manually
+BrainVol,Pithecia,32867.0,equals_species_value,Pithecia monacha=32867,"Stephan_etal_1981_TableII + TableIII (Total_brain_net_volume, mm3)",
+BrainVol,Plecturocebus,17944.0,no_candidate_genus,,"Stephan_etal_1981_TableII + TableIII (Total_brain_net_volume, mm3)",Data S1 genus name not used in the source table (e.g. Eulemur/Otolemur/Galagoides under older genus names in Stephan 1981); not matched by name - check manually
+BrainVol,Propithecus,25194.0,equals_species_value,Propithecus verreauxi=25194,"Stephan_etal_1981_TableII + TableIII (Total_brain_net_volume, mm3)",
+BrainVol,Pygathrix,72530.0,equals_species_value,Pygathrix nemaeus=72530,"Stephan_etal_1981_TableII + TableIII (Total_brain_net_volume, mm3)",
+BrainVol,Saguinus,9537.0,equals_species_value,Saguinus oedipus=9537; Saguinus tamarin=9569,"Stephan_etal_1981_TableII + TableIII (Total_brain_net_volume, mm3)",
+BrainVol,Saimiri,22572.0,equals_species_value,Saimiri sciureus=22572,"Stephan_etal_1981_TableII + TableIII (Total_brain_net_volume, mm3)",
+BrainVol,Tarsius,3393.0,equals_species_value,Tarsius sp.=3393,"Stephan_etal_1981_TableII + TableIII (Total_brain_net_volume, mm3)",
+BrainVol,Tupaia,2714.5,equals_genus_mean,Tupaia glis=2999; Tupaia minor=2430,"Stephan_etal_1981_TableII + TableIII (Total_brain_net_volume, mm3)",
+BrainVol,Varecia,29713.0,no_candidate_genus,,"Stephan_etal_1981_TableII + TableIII (Total_brain_net_volume, mm3)",Data S1 genus name not used in the source table (e.g. Eulemur/Otolemur/Galagoides under older genus names in Stephan 1981); not matched by name - check manually
+NeocortexVol,Alouatta,31660.0,equals_species_value,Alouatta sp.=31660,"Stephan_etal_1981_TableV + TableVI (Neocortex, mm3)",
+NeocortexVol,Aotus,9950.0,equals_species_value,Aotus trivirgatus=9950,"Stephan_etal_1981_TableV + TableVI (Neocortex, mm3)",
+NeocortexVol,Ateles,70856.0,equals_species_value,Ateles geoffroyi=70856,"Stephan_etal_1981_TableV + TableVI (Neocortex, mm3)",
+NeocortexVol,Avahi,4628.0,equals_genus_mean,Avahi l. laniger=4813; Avahi laniger occidentalis=4443,"Stephan_etal_1981_TableV + TableVI (Neocortex, mm3)",
+NeocortexVol,Callimico,6476.0,equals_species_value,Callimico goeldii=6476,"Stephan_etal_1981_TableV + TableVI (Neocortex, mm3)",
+NeocortexVol,Callithrix,4371.0,equals_species_value,Callithrix jacchus=4371,"Stephan_etal_1981_TableV + TableVI (Neocortex, mm3)",
+NeocortexVol,Cebuella,2535.0,equals_species_value,Cebuella pygmaea=2535,"Stephan_etal_1981_TableV + TableVI (Neocortex, mm3)",
+NeocortexVol,Cebus,46429.0,equals_species_value,Cebus sp.=46429,"Stephan_etal_1981_TableV + TableVI (Neocortex, mm3)",
+NeocortexVol,Cercopithecus,47549.5,equals_mean_of_two_source_species,Cercopithecus mitis=49933; Cercopithecus ascanius=45166; Cercopithecus talapoin=26427,"Stephan_etal_1981_TableV + TableVI (Neocortex, mm3)","equals the mean of C. mitis and C. ascanius only (C. talapoin is listed under Miopithecus in Data S1, value equal to Stephan's C. talapoin)"
+NeocortexVol,Cheirogaleus,2079.5,equals_genus_mean,Cheirogaleus major=2938; Cheirogaleus medius=1221,"Stephan_etal_1981_TableV + TableVI (Neocortex, mm3)",
+NeocortexVol,Erythrocebus,77141.0,equals_species_value,Erythrocebus patas=77141,"Stephan_etal_1981_TableV + TableVI (Neocortex, mm3)",
+NeocortexVol,Eulemur,12207.0,no_candidate_genus,,"Stephan_etal_1981_TableV + TableVI (Neocortex, mm3)",Data S1 genus name not used in the source table (e.g. Eulemur/Otolemur/Galagoides under older genus names in Stephan 1981); not matched by name - check manually
+NeocortexVol,Galago,2139.0,equals_species_value,Galago crassicaudatus=4723; Galago demidovii=1568; Galago senegalensis=2139,"Stephan_etal_1981_TableV + TableVI (Neocortex, mm3)",
+NeocortexVol,Galagoides,1568.0,no_candidate_genus,,"Stephan_etal_1981_TableV + TableVI (Neocortex, mm3)",Data S1 genus name not used in the source table (e.g. Eulemur/Otolemur/Galagoides under older genus names in Stephan 1981); not matched by name - check manually
+NeocortexVol,Gorilla,341444.0,equals_species_value,Gorilla gorilla=341444,"Stephan_etal_1981_TableV + TableVI (Neocortex, mm3)",
+NeocortexVol,Homo,1006520.0,equals_species_value,Homo sapiens sapiens=1.00652e+06,"Stephan_etal_1981_TableV + TableVI (Neocortex, mm3)",
+NeocortexVol,Hylobates,65800.0,equals_species_value,Hylobates lar=65800,"Stephan_etal_1981_TableV + TableVI (Neocortex, mm3)",
+NeocortexVol,Indri,20114.0,equals_species_value,Indri indri=20114,"Stephan_etal_1981_TableV + TableVI (Neocortex, mm3)",
+NeocortexVol,Lagothrix,65873.0,equals_species_value,Lagothrix lagotricha=65873,"Stephan_etal_1981_TableV + TableVI (Neocortex, mm3)",
+NeocortexVol,Leontocebus,5883.0,no_candidate_genus,,"Stephan_etal_1981_TableV + TableVI (Neocortex, mm3)",Data S1 genus name not used in the source table (e.g. Eulemur/Otolemur/Galagoides under older genus names in Stephan 1981); not matched by name - check manually
+NeocortexVol,Lepilemur,3282.0,equals_species_value,Lepilemur ruficaudatus=3282,"Stephan_etal_1981_TableV + TableVI (Neocortex, mm3)",
+NeocortexVol,Lophocebus,68733.0,no_candidate_genus,,"Stephan_etal_1981_TableV + TableVI (Neocortex, mm3)",Data S1 genus name not used in the source table (e.g. Eulemur/Otolemur/Galagoides under older genus names in Stephan 1981); not matched by name - check manually
+NeocortexVol,Loris,3524.0,equals_species_value,Loris tardigradus=3524,"Stephan_etal_1981_TableV + TableVI (Neocortex, mm3)",
+NeocortexVol,Macaca,63482.0,equals_species_value,Macaca mulatta=63482,"Stephan_etal_1981_TableV + TableVI (Neocortex, mm3)",
+NeocortexVol,Microcebus,740.0,equals_species_value,Microcebus murinus=740,"Stephan_etal_1981_TableV + TableVI (Neocortex, mm3)",
+NeocortexVol,Miopithecus,26427.0,no_candidate_genus,,"Stephan_etal_1981_TableV + TableVI (Neocortex, mm3)",Data S1 genus name not used in the source table (e.g. Eulemur/Otolemur/Galagoides under older genus names in Stephan 1981); not matched by name - check manually
+NeocortexVol,Nasalis,62685.0,equals_species_value,Nasalis larvatus=62685,"Stephan_etal_1981_TableV + TableVI (Neocortex, mm3)",Data S1 92000 vs Stephan 1981 Nasalis larvatus 92797 mm3 (0.86%); provisional cross-source disagreement
+NeocortexVol,Nycticebus,6192.0,equals_species_value,Nycticebus coucang=6192,"Stephan_etal_1981_TableV + TableVI (Neocortex, mm3)",
+NeocortexVol,Otolemur,4723.0,no_candidate_genus,,"Stephan_etal_1981_TableV + TableVI (Neocortex, mm3)",Data S1 genus name not used in the source table (e.g. Eulemur/Otolemur/Galagoides under older genus names in Stephan 1981); not matched by name - check manually
+NeocortexVol,Pan,291592.0,equals_species_value,Pan troglodytes=291592,"Stephan_etal_1981_TableV + TableVI (Neocortex, mm3)",
+NeocortexVol,Papio,140142.0,equals_species_value,Papio anubis=140142,"Stephan_etal_1981_TableV + TableVI (Neocortex, mm3)",
+NeocortexVol,Perodicticus,6683.0,equals_species_value,Perodicticus potto=6683,"Stephan_etal_1981_TableV + TableVI (Neocortex, mm3)",
+NeocortexVol,Piliocolobus,50906.0,no_candidate_genus,,"Stephan_etal_1981_TableV + TableVI (Neocortex, mm3)",Data S1 genus name not used in the source table (e.g. Eulemur/Otolemur/Galagoides under older genus names in Stephan 1981); not matched by name - check manually
+NeocortexVol,Pithecia,21028.0,equals_species_value,Pithecia monacha=21028,"Stephan_etal_1981_TableV + TableVI (Neocortex, mm3)",
+NeocortexVol,Plecturocebus,11163.0,no_candidate_genus,,"Stephan_etal_1981_TableV + TableVI (Neocortex, mm3)",Data S1 genus name not used in the source table (e.g. Eulemur/Otolemur/Galagoides under older genus names in Stephan 1981); not matched by name - check manually
+NeocortexVol,Propithecus,13170.0,equals_species_value,Propithecus verreauxi=13170,"Stephan_etal_1981_TableV + TableVI (Neocortex, mm3)",
+NeocortexVol,Pygathrix,48763.0,equals_species_value,Pygathrix nemaeus=48763,"Stephan_etal_1981_TableV + TableVI (Neocortex, mm3)",
+NeocortexVol,Saguinus,5894.0,equals_species_value,Saguinus oedipus=5894; Saguinus tamarin=5883,"Stephan_etal_1981_TableV + TableVI (Neocortex, mm3)",
+NeocortexVol,Saimiri,15541.0,equals_species_value,Saimiri sciureus=15541,"Stephan_etal_1981_TableV + TableVI (Neocortex, mm3)",
+NeocortexVol,Tarsius,1768.0,equals_species_value,Tarsius sp.=1768,"Stephan_etal_1981_TableV + TableVI (Neocortex, mm3)",
+NeocortexVol,Tupaia,905.0,equals_genus_mean,Tupaia glis=1036; Tupaia minor=774,"Stephan_etal_1981_TableV + TableVI (Neocortex, mm3)",
+NeocortexVol,Varecia,15293.0,no_candidate_genus,,"Stephan_etal_1981_TableV + TableVI (Neocortex, mm3)",Data S1 genus name not used in the source table (e.g. Eulemur/Otolemur/Galagoides under older genus names in Stephan 1981); not matched by name - check manually
+FrontalGrayMatterVol,Alouatta,5540.0,equals_species_value,Alouatta palliata=5540,Bush_Allman_2004_a_Table2 (frontal_grey_cm3 x1000),
+FrontalGrayMatterVol,Aotus,1340.0,equals_species_value,Aotus trivirgatus=1340,Bush_Allman_2004_a_Table2 (frontal_grey_cm3 x1000),
+FrontalGrayMatterVol,Ateles,11350.0,equals_species_value,Ateles sp.=11350,Bush_Allman_2004_a_Table2 (frontal_grey_cm3 x1000),
+FrontalGrayMatterVol,Cercocebus,14340.0,equals_species_value,Cercocebus torquatus=14340,Bush_Allman_2004_a_Table2 (frontal_grey_cm3 x1000),
+FrontalGrayMatterVol,Cercopithecus,9660.0,equals_species_value,Cercopithecus nictitans=9660,Bush_Allman_2004_a_Table2 (frontal_grey_cm3 x1000),
+FrontalGrayMatterVol,Cheirogaleus,230.0,equals_species_value,Cheirogaleus medius=230,Bush_Allman_2004_a_Table2 (frontal_grey_cm3 x1000),
+FrontalGrayMatterVol,Cheracebus,1210.0,no_candidate_genus,,Bush_Allman_2004_a_Table2 (frontal_grey_cm3 x1000),Data S1 genus name not used in the source table (e.g. Eulemur/Otolemur/Galagoides under older genus names in Stephan 1981); not matched by name - check manually
+FrontalGrayMatterVol,Daubentonia,7000.0,equals_species_value,Daubentonia madagascariensis=7000,Bush_Allman_2004_a_Table2 (frontal_grey_cm3 x1000),
+FrontalGrayMatterVol,Eulemur,2840.0,equals_species_value,Eulemur mongoz=2840,Bush_Allman_2004_a_Table2 (frontal_grey_cm3 x1000),
+FrontalGrayMatterVol,Galago,300.0,equals_species_value,Galago senegalensis=300,Bush_Allman_2004_a_Table2 (frontal_grey_cm3 x1000),
+FrontalGrayMatterVol,Homo,209700.0,equals_species_value,Homo sapiens=209700,Bush_Allman_2004_a_Table2 (frontal_grey_cm3 x1000),
+FrontalGrayMatterVol,Hylobates,15660.0,equals_species_value,Hylobates lar=15660,Bush_Allman_2004_a_Table2 (frontal_grey_cm3 x1000),
+FrontalGrayMatterVol,Lemur,2740.0,equals_species_value,Lemur catta=2740,Bush_Allman_2004_a_Table2 (frontal_grey_cm3 x1000),
+FrontalGrayMatterVol,Macaca,9900.0,equals_species_value,Macaca mulatta=9900,Bush_Allman_2004_a_Table2 (frontal_grey_cm3 x1000),
+FrontalGrayMatterVol,Mandrillus,9900.0,differs,Mandrillus sphinx=19170,Bush_Allman_2004_a_Table2 (frontal_grey_cm3 x1000),Data S1 value is 0.52x Bush & Allman 2004 Mandrillus sphinx (9900/19170); provisional cross-source disagreement - check the printed source table
+FrontalGrayMatterVol,Microcebus,90.0,equals_species_value,Microcebus murinus=90,Bush_Allman_2004_a_Table2 (frontal_grey_cm3 x1000),
+FrontalGrayMatterVol,Nycticebus,1160.0,equals_species_value,Nycticebus coucang=1160,Bush_Allman_2004_a_Table2 (frontal_grey_cm3 x1000),
+FrontalGrayMatterVol,Otolemur,880.0,equals_species_value,Otolemur crassicaudatus=880,Bush_Allman_2004_a_Table2 (frontal_grey_cm3 x1000),
+FrontalGrayMatterVol,Pan,62520.0,equals_species_value,Pan troglodytes=62520,Bush_Allman_2004_a_Table2 (frontal_grey_cm3 x1000),
+FrontalGrayMatterVol,Papio,25740.0,equals_species_value,Papio hamadryas=25740,Bush_Allman_2004_a_Table2 (frontal_grey_cm3 x1000),
+FrontalGrayMatterVol,Perodicticus,1320.0,equals_species_value,Perodicticus potto=1320,Bush_Allman_2004_a_Table2 (frontal_grey_cm3 x1000),
+FrontalGrayMatterVol,Propithecus,2250.0,equals_species_value,Propithecus verreauxi=2250,Bush_Allman_2004_a_Table2 (frontal_grey_cm3 x1000),
+FrontalGrayMatterVol,Saimiri,2540.0,equals_species_value,Saimiri sciureus=2540,Bush_Allman_2004_a_Table2 (frontal_grey_cm3 x1000),
+FrontalGrayMatterVol,Semnopithecus,15870.0,equals_species_value,Semnopithecus entellus=15870,Bush_Allman_2004_a_Table2 (frontal_grey_cm3 x1000),
+FrontalGrayMatterVol,Tarsius,200.0,equals_species_value,Tarsius sp.=200,Bush_Allman_2004_a_Table2 (frontal_grey_cm3 x1000),
+NonFrontalGrayMatterVol,Alouatta,11620.0,equals_species_value,Alouatta palliata=11620,Bush_Allman_2004_a_Table2 (rest_of_cortex_grey_cm3 x1000),
+NonFrontalGrayMatterVol,Aotus,3890.0,equals_species_value,Aotus trivirgatus=3890,Bush_Allman_2004_a_Table2 (rest_of_cortex_grey_cm3 x1000),
+NonFrontalGrayMatterVol,Ateles,19580.0,equals_species_value,Ateles sp.=19580,Bush_Allman_2004_a_Table2 (rest_of_cortex_grey_cm3 x1000),
+NonFrontalGrayMatterVol,Cercocebus,33580.0,equals_species_value,Cercocebus torquatus=33580,Bush_Allman_2004_a_Table2 (rest_of_cortex_grey_cm3 x1000),
+NonFrontalGrayMatterVol,Cercopithecus,26340.0,equals_species_value,Cercopithecus nictitans=26340,Bush_Allman_2004_a_Table2 (rest_of_cortex_grey_cm3 x1000),
+NonFrontalGrayMatterVol,Cheirogaleus,660.0,equals_species_value,Cheirogaleus medius=660,Bush_Allman_2004_a_Table2 (rest_of_cortex_grey_cm3 x1000),
+NonFrontalGrayMatterVol,Cheracebus,3910.0,no_candidate_genus,,Bush_Allman_2004_a_Table2 (rest_of_cortex_grey_cm3 x1000),Data S1 genus name not used in the source table (e.g. Eulemur/Otolemur/Galagoides under older genus names in Stephan 1981); not matched by name - check manually
+NonFrontalGrayMatterVol,Daubentonia,12790.0,equals_species_value,Daubentonia madagascariensis=12790,Bush_Allman_2004_a_Table2 (rest_of_cortex_grey_cm3 x1000),
+NonFrontalGrayMatterVol,Eulemur,5350.0,equals_species_value,Eulemur mongoz=5350,Bush_Allman_2004_a_Table2 (rest_of_cortex_grey_cm3 x1000),
+NonFrontalGrayMatterVol,Galago,1040.0,equals_species_value,Galago senegalensis=1040,Bush_Allman_2004_a_Table2 (rest_of_cortex_grey_cm3 x1000),
+NonFrontalGrayMatterVol,Homo,345660.0,equals_species_value,Homo sapiens=345660,Bush_Allman_2004_a_Table2 (rest_of_cortex_grey_cm3 x1000),
+NonFrontalGrayMatterVol,Hylobates,29460.0,equals_species_value,Hylobates lar=29460,Bush_Allman_2004_a_Table2 (rest_of_cortex_grey_cm3 x1000),
+NonFrontalGrayMatterVol,Lemur,6220.0,equals_species_value,Lemur catta=6220,Bush_Allman_2004_a_Table2 (rest_of_cortex_grey_cm3 x1000),
+NonFrontalGrayMatterVol,Macaca,20630.0,equals_species_value,Macaca mulatta=20630,Bush_Allman_2004_a_Table2 (rest_of_cortex_grey_cm3 x1000),
+NonFrontalGrayMatterVol,Mandrillus,20630.0,differs,Mandrillus sphinx=52160,Bush_Allman_2004_a_Table2 (rest_of_cortex_grey_cm3 x1000),Data S1 value is 0.40x Bush & Allman 2004 Mandrillus sphinx (20630/52160); provisional cross-source disagreement - check the printed source table
+NonFrontalGrayMatterVol,Microcebus,500.0,equals_species_value,Microcebus murinus=500,Bush_Allman_2004_a_Table2 (rest_of_cortex_grey_cm3 x1000),
+NonFrontalGrayMatterVol,Nycticebus,3250.0,equals_species_value,Nycticebus coucang=3250,Bush_Allman_2004_a_Table2 (rest_of_cortex_grey_cm3 x1000),
+NonFrontalGrayMatterVol,Otolemur,2210.0,equals_species_value,Otolemur crassicaudatus=2210,Bush_Allman_2004_a_Table2 (rest_of_cortex_grey_cm3 x1000),
+NonFrontalGrayMatterVol,Pan,100650.0,equals_species_value,Pan troglodytes=100650,Bush_Allman_2004_a_Table2 (rest_of_cortex_grey_cm3 x1000),
+NonFrontalGrayMatterVol,Papio,53360.0,equals_species_value,Papio hamadryas=53360,Bush_Allman_2004_a_Table2 (rest_of_cortex_grey_cm3 x1000),
+NonFrontalGrayMatterVol,Perodicticus,2590.0,equals_species_value,Perodicticus potto=2590,Bush_Allman_2004_a_Table2 (rest_of_cortex_grey_cm3 x1000),
+NonFrontalGrayMatterVol,Propithecus,7590.0,equals_species_value,Propithecus verreauxi=7590,Bush_Allman_2004_a_Table2 (rest_of_cortex_grey_cm3 x1000),
+NonFrontalGrayMatterVol,Saimiri,7900.0,equals_species_value,Saimiri sciureus=7900,Bush_Allman_2004_a_Table2 (rest_of_cortex_grey_cm3 x1000),
+NonFrontalGrayMatterVol,Semnopithecus,35980.0,equals_species_value,Semnopithecus entellus=35980,Bush_Allman_2004_a_Table2 (rest_of_cortex_grey_cm3 x1000),
+NonFrontalGrayMatterVol,Tarsius,1270.0,equals_species_value,Tarsius sp.=1270,Bush_Allman_2004_a_Table2 (rest_of_cortex_grey_cm3 x1000),

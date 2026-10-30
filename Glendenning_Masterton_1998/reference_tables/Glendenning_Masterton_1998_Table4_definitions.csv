@@ -1,0 +1,14 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+list_as_printed,Column heading as printed (nucleus or cluster),,,,info,Mammalia (53 spp),Glendenning_Masterton_1998_Table4,,Table 4
+nucleus_or_cluster,Code of the ranked nucleus/cluster,,,,info,Mammalia (53 spp),Glendenning_Masterton_1998_Table4,CN = AVCN+PVCN+DCN; SO = MTB+LSO+MSO,
+table_part,A (p.72) or B (p.73),,,,info,Mammalia (53 spp),Glendenning_Masterton_1998_Table4,,
+printed_row,"Row position in the printed column (1-54, Average row included)",,,,info,Mammalia (53 spp),Glendenning_Masterton_1998_Table4,,
+rank_largest_first,"Rank among the 53 animals, 1 = largest relative size (Average row excluded)",,rank,rank,primary,Mammalia (53 spp),Glendenning_Masterton_1998_Table4,Based on Table 3 entries; ranks less than 6 apart are not reliably different (footnote),Table 4
+animal_as_printed,"Common name as printed, significance marks stripped",,,,info,Mammalia (53 spp),Glendenning_Masterton_1998_Table4,"""Gropher, pocket"" kept verbatim (printed typo)",
+species_as_printed,Binomial from Table 1,,,,info,Mammalia (53 spp),Glendenning_Masterton_1998_Table4,,
+species,Harmonised binomial (General key),,Species,,info,Mammalia (53 spp),Glendenning_Masterton_1998_Table4,,
+significance_mark,Printed mark: * or ** (blank = none),,,,info,Mammalia (53 spp),Glendenning_Masterton_1998_Table4,,
+p_value_class,* = p<0.05; ** = p<0.01 (deviation from average),,Class.ordinal,,primary,Mammalia (53 spp),Glendenning_Masterton_1998_Table4,"Marks at the top = significantly large, at the bottom = significantly small",
+relative_to_average,"above_average / below_average = printed above or below the ""Average"" row",,Class.nominal,,primary,Mammalia (53 spp),Glendenning_Masterton_1998_Table4,,
+average_printed_row,"Printed row position of ""Average"" in that column",,,,info,Mammalia (53 spp),Glendenning_Masterton_1998_Table4,,
+data_role,primary (derived ranking),,,,info,Mammalia (53 spp),Glendenning_Masterton_1998_Table4,,

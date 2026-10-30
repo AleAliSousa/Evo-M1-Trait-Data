@@ -1,0 +1,10 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+animal_as_printed,Common name as printed (alphabetical list),,,,info,Mammalia (53 spp),Glendenning_Masterton_1998_Table7,,Table 7
+species_as_printed,Binomial from Table 1,,,,info,Mammalia (53 spp),Glendenning_Masterton_1998_Table7,,
+species,Harmonised binomial (General key),,Species,,info,Mammalia (53 spp),Glendenning_Masterton_1998_Table7,,
+r_similarity_to_average_form,"Correlation of the animal's relative-size profile of the superior olives (MTB, LSO, MSO) with the average profile","superior olives (MTB, LSO, MSO)",r,correlation,primary,Mammalia (53 spp),Glendenning_Masterton_1998_Table7,Printed in both lists; identical in both (checked),Table 7
+rank_most_similar_first,Position in the descending list among the 53 animals (1 = least deviant),,rank,rank,primary,Mammalia (53 spp),Glendenning_Masterton_1998_Table7,ranks less than 12 apart not reliably different,
+deviance_annotation,Printed annotation: least deviant / most deviant,,,,info,Mammalia (53 spp),Glendenning_Masterton_1998_Table7,,
+relative_to_average_similarity,above_average / below_average vs the printed Average similarity,,Class.nominal,,primary,Mammalia (53 spp),Glendenning_Masterton_1998_Table7,,
+average_similarity_r_printed,"Printed ""Average similarity"" r",,r,mean,info,Mammalia (53 spp),Glendenning_Masterton_1998_Table7,Same on every row,
+data_role,primary (derived),,,,info,Mammalia (53 spp),Glendenning_Masterton_1998_Table7,,

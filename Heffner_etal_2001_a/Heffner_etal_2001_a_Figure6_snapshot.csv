@@ -1,0 +1,34 @@
+element,code,printed_text,figure_role
+caption,,"FIG. 6. Relationship between the width of the field of best vision (region of ganglion-cell densities at least 75% of maximum) and sound-localization threshold for 24 species of mammals (note logarithmic scale on both axes). Species with narrow fields of best vision have better localization acuity (smaller thresholds) than species with broad fields of best vision, r = 0.916, P < 0.0001. B, big brown bat (Eptesicus fuscus); C, domestic cat (Felis domesticus); Ch, chinchilla (Chinchilla laniger); Cm, chipmunk (Tamias striatus); Cw, cow (Bos taurus); D, dog (Canis familiaris); E, Egyptian fruit bat (Rousettus aegyptiacus); F, ferret (Mustela putorius); Gm, grasshopper mouse (Onychomys leucogaster); Gr, gerbil (Meriones unguiculatus); Hm, hamster (Mesocricetus auritus); J, Jamaican fruit bat (Artibeus jamaicensis); M, man (Homo sapiens); Md, domestic mouse (Mus musculus); Mk, macaque (Macaca fuscata); Mm, marmot (Marmota monax); Op, virginia opossum (Didelphis virginiana); P, pig (Sus scrofa); Pd, prairie dog (Cynomys ludovicianus); Rb, domestic rabbit (Oryctolagus cuniculus); Rw, wild norway rat (Rattus norvegicus); Sp, spiny mouse (Acomys cahirinus); W, least weasel (Mustela nivalis); Wr, wood rat (Neotoma floridana); for citations, see Heffner et al., 1994.","figure caption, verbatim (glyph-corrected; verified against a 200-dpi render of p.419)"
+axis_title_x,,Width of the Field of Best Vision (degrees),"x-axis title printed on the plot, verbatim"
+axis_title_y,,Sound-localization Threshold (degrees),"y-axis title printed on the plot, verbatim"
+axis_ticks_x,,1; 3; 5; 10; 30; 50; 100; 180,x-axis tick labels as printed (logarithmic)
+axis_ticks_y,,1.5; 3; 5; 10; 30,y-axis tick labels as printed (logarithmic)
+statistic_caption,,r = 0.916,correlation as printed in the caption
+statistic_caption,,P < 0.0001,significance as printed in the caption
+statistic_panel,,r = .916,"correlation as printed inside the plot panel (no leading zero, unlike the caption)"
+citation_note,,"for citations, see Heffner et al., 1994",the caption's own pointer to the per-species value sources
+species_label,B,big brown bat (Eptesicus fuscus),"plotted data point: letter code, common name and binomial as printed in the legend"
+species_label,C,domestic cat (Felis domesticus),"plotted data point: letter code, common name and binomial as printed in the legend"
+species_label,Ch,chinchilla (Chinchilla laniger),"plotted data point: letter code, common name and binomial as printed in the legend"
+species_label,Cm,chipmunk (Tamias striatus),"plotted data point: letter code, common name and binomial as printed in the legend"
+species_label,Cw,cow (Bos taurus),"plotted data point: letter code, common name and binomial as printed in the legend"
+species_label,D,dog (Canis familiaris),"plotted data point: letter code, common name and binomial as printed in the legend"
+species_label,E,Egyptian fruit bat (Rousettus aegyptiacus),"plotted data point: letter code, common name and binomial as printed in the legend"
+species_label,F,ferret (Mustela putorius),"plotted data point: letter code, common name and binomial as printed in the legend"
+species_label,Gm,grasshopper mouse (Onychomys leucogaster),"plotted data point: letter code, common name and binomial as printed in the legend"
+species_label,Gr,gerbil (Meriones unguiculatus),"plotted data point: letter code, common name and binomial as printed in the legend"
+species_label,Hm,hamster (Mesocricetus auritus),"plotted data point: letter code, common name and binomial as printed in the legend"
+species_label,J,Jamaican fruit bat (Artibeus jamaicensis),"plotted data point: letter code, common name and binomial as printed in the legend"
+species_label,M,man (Homo sapiens),"plotted data point: letter code, common name and binomial as printed in the legend"
+species_label,Md,domestic mouse (Mus musculus),"plotted data point: letter code, common name and binomial as printed in the legend"
+species_label,Mk,macaque (Macaca fuscata),"plotted data point: letter code, common name and binomial as printed in the legend"
+species_label,Mm,marmot (Marmota monax),"plotted data point: letter code, common name and binomial as printed in the legend"
+species_label,Op,virginia opossum (Didelphis virginiana),"plotted data point: letter code, common name and binomial as printed in the legend"
+species_label,P,pig (Sus scrofa),"plotted data point: letter code, common name and binomial as printed in the legend"
+species_label,Pd,prairie dog (Cynomys ludovicianus),"plotted data point: letter code, common name and binomial as printed in the legend"
+species_label,Rb,domestic rabbit (Oryctolagus cuniculus),"plotted data point: letter code, common name and binomial as printed in the legend"
+species_label,Rw,wild norway rat (Rattus norvegicus),"plotted data point: letter code, common name and binomial as printed in the legend"
+species_label,Sp,spiny mouse (Acomys cahirinus),"plotted data point: letter code, common name and binomial as printed in the legend"
+species_label,W,least weasel (Mustela nivalis),"plotted data point: letter code, common name and binomial as printed in the legend"
+species_label,Wr,wood rat (Neotoma floridana),"plotted data point: letter code, common name and binomial as printed in the legend"

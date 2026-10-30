@@ -161,3 +161,35 @@ more). Only `action = skip` is implemented. Vetoed rows are removed from the poo
 `body_ecology_vetoed_rows.csv`. Current veto (flag `fsu_unvalidated_weights`): Nudo et al. 1995 Table 1 body weight (24 rows; individual FSU animals, not species means).
 Reason: absolute values of this single-animal FSU lineage are not validated (owner policy); see `_keys/specimen_crosswalk/Green_monkey_FSU_specimen_note.md`.
 Implemented in `body_ecology_compiled.R`.
+
+## Species-name assembly repair (2026-10-29)
+
+The Galán-Acedo 2019 BodyMass source has both `Genus` and a full,
+underscore-separated `Species` field. The importer's binomial detector only
+recognised space-separated names, so its fallback incorrectly joined the two:
+`Aotus` + `Aotus_azarae` became `Aotus Aotus azarae`. The error was introduced
+by the body/ecology importer; the published source fields were intact.
+
+The fallback now distinguishes a full name from an epithet per row, allowing
+underscores and extra whitespace while preserving the original source text.
+The shared resolver still decides accepted identity (e.g. the source's
+`Aotus_azarae` maps to the project's `Aotus azarai`). Valid tautonyms and
+subspecies such as `Bison bison` and `Gorilla gorilla gorilla` are preserved.
+A check before pooling rejects repeated leading genus words.
+
+The correction reattached **565 harvested body-mass records**, eliminating
+**465 malformed labels**. The existing harvested snapshot was re-pooled with
+the canonical pooler, preserving its measurements, sources, value vetoes, and
+unaffected species' records. **188 existing Body_Mass estimates changed** as
+their previously disconnected source records joined the correct species;
+other trait values did not change. This targeted repair does not incorporate
+unrelated source/key changes since the previous full build.
+
+The old-to-corrected mapping and record counts are in
+`_checks/body_ecology_species_name_repair_20261029.csv`. Run
+`Rscript _checks/body_ecology_species_parsing.R` from the repository root to
+check the parser against the source and verify that compiled outputs have no
+repeated genus labels. The broader heuristic that guesses species columns can
+also select common-name, species-group or citation columns in other sources;
+those cases require a separate source-by-source audit and are not corrected
+by this repair.

@@ -1,0 +1,44 @@
+cns_part,common_name,species_as_published,Species,species_variant_matched,brain_weight_printed,brain_mass_mg_min,brain_mass_mg_max,brain_mass_mg,brain_mass_estimated,GNR_printed,GNR_min,GNR_max,GNR,GNR_estimated,references,data_role,source_row
+Cerebral cortex,Frog,(Rana temporaria),Rana temporaria,(Rana temporaria),(0.1),100,100,100,TRUE,0.25,0.25,0.25,0.25,FALSE,"Friede, 1954",secondary,3
+Cerebral cortex,Pygmy white-toothed shrew,Suncus etruscus,Suncus etruscus,Suncus etruscus,0.1,100,100,100,FALSE,0.15,0.15,0.15,0.15,FALSE,"Stolzenburg et al., 1989",secondary,4
+Cerebral cortex,Hoy’s pygmy shrew,Microsorex hoyi,Sorex hoyi,Microsorex hoyi,0.1,100,100,100,FALSE,0.30,0.3,0.3,0.3,FALSE,"Stolzenburg et al., 1989",secondary,5
+Cerebral cortex,Mouse,,Mus sp.,Mouse,(0.4),400,400,400,TRUE,0.29–0.42,0.29,0.42,0.355,FALSE,"Friede, 1954",secondary,6
+Cerebral cortex,European mole,Talpa europaea,Talpa europaea,Talpa europaea,1.0,1000,1000,1000,FALSE,0.62,0.62,0.62,0.62,FALSE,"Stolzenburg et al., 1989",secondary,7
+Cerebral cortex,European mole,Talpa europaeus,Talpa europaea,Talpa europaeus,1.4,1400,1400,1400,FALSE,0.84,0.84,0.84,0.84,FALSE,"Haug, 1987",secondary,8
+Cerebral cortex,Rat (Wistar),Rattus norvegicus,Rattus norvegicus,Rattus norvegicus,2.0,2000,2000,2000,FALSE,0.51,0.51,0.51,0.51,FALSE,"Davanlou & Smith, 2004",secondary,9
+Cerebral cortex,Chicken,,Gallus gallus,Chicken,(3.0),3000,3000,3000,TRUE,0.46,0.46,0.46,0.46,FALSE,"Friede, 1954",secondary,10
+Cerebral cortex,Hedgehog,Erinaceus europaeus,Erinaceus europaeus,Erinaceus europaeus,3.7,3700,3700,3700,FALSE,1.89,1.89,1.89,1.89,FALSE,"Haug, 1987",secondary,11
+Cerebral cortex,Giant otter shrew,Potamogale velox,Potamogale velox,Potamogale velox,3.9,3900,3900,3900,FALSE,1.2,1.2,1.2,1.2,FALSE,"Stolzenburg et al., 1989",secondary,12
+Cerebral cortex,Checkered elephant shrew,Rhynchocyon cirnei,Rhynchocyon cirnei,Rhynchocyon cirnei,5.7,5700,5700,5700,FALSE,0.75,0.75,0.75,0.75,FALSE,"Stolzenburg et al., 1989",secondary,13
+Cerebral cortex,Opossum,Didelphis virginiana,Didelphis virginiana,Didelphis virginiana,7.8,7800,7800,7800,FALSE,1.88,1.88,1.88,1.88,FALSE,"Haug, 1987",secondary,14
+Cerebral cortex,Marmoset,Callithrix jacchus,Callithrix jacchus,Callithrix jacchus,9.4,9400,9400,9400,FALSE,2.67,2.67,2.67,2.67,FALSE,"Haug, 1987",secondary,15
+Cerebral cortex,Rabbit,(Oryctolagus cuniculus),Oryctolagus cuniculus,(Oryctolagus cuniculus),(12),12000,12000,12000,TRUE,0.32–0.49,0.32,0.49,0.405,FALSE,"Friede, 1954",secondary,16
+Cerebral cortex,Cat,Felis domestica,Felis catus,Felis domestica,28.7,28700,28700,28700,FALSE,0.80,0.8,0.8,0.8,FALSE,"Haug, 1987",secondary,17
+Cerebral cortex,Talapoin,Cercopithecus talapoin,Miopithecus talapoin,Cercopithecus talapoin,36,36000,36000,36000,FALSE,0.58,0.58,0.58,0.58,FALSE,"Haug, 1987",secondary,18
+Cerebral cortex,Rhesus macaque,Macaca mulatta,Macaca mulatta,Macaca mulatta,96.1,96100,96100,96100,FALSE,0.82,0.82,0.82,0.82,FALSE,"Lidow & Song, 2001",secondary,19
+Cerebral cortex,Rhesus macaque,Macaca mulatta,Macaca mulatta,Macaca mulatta,86–96,86000,96000,91000,FALSE,0.56,0.56,0.56,0.56,FALSE,"Christensen et al., 2007",secondary,20
+Cerebral cortex,Moore macaque,Macaca maura,Macaca maura,Macaca maura,(90–97),90000,97000,93500,TRUE,0.7–1.3,0.7,1.3,1,FALSE,"Sherwood et al., 2006",secondary,21
+Cerebral cortex,Harbor porpoise,Phocoena phocoena,Phocoena phocoena,Phocoena phocoena,219–248,219000,248000,233500,FALSE,2.34,2.34,2.34,2.34,FALSE,"Walløe et al., 2010",secondary,22
+Cerebral cortex,Chimpanzee,Pan troglodytes,Pan troglodytes,Pan troglodytes,(384–420),384000,420000,402000,TRUE,0.9–1.5,0.9,1.5,1.2,FALSE,"Sherwood et al., 2006",secondary,23
+Cerebral cortex,Chimpanzee,Pan troglodytes,Pan troglodytes,Pan troglodytes,433,433000,433000,433000,FALSE,0.72,0.72,0.72,0.72,FALSE,"Haug, 1987",secondary,24
+Cerebral cortex,Common porpoise,Phocaena phocaena,Phocoena phocoena,Phocaena phocaena,483,483000,483000,483000,FALSE,5.67,5.67,5.67,5.67,FALSE,"Haug, 1987",secondary,25
+Cerebral cortex,Harp seal,Pagophilus groenlandicus,Pagophilus groenlandicus,Pagophilus groenlandicus,542,542000,542000,542000,FALSE,2.87,2.87,2.87,2.87,FALSE,"Walløe et al., 2010",secondary,26
+Cerebral cortex,Common dolphin,Delphinus delphinus,Delphinus delphis,Delphinus delphinus,715,715000,715000,715000,FALSE,3.55,3.55,3.55,3.55,FALSE,"Haug, 1987",secondary,27
+Cerebral cortex,Bottlenosed dolphin,Tursiops truncatus,Tursiops truncatus,Tursiops truncatus,1345,1345000,1345000,1345000,FALSE,2.88,2.88,2.88,2.88,FALSE,"Haug, 1987",secondary,28
+Cerebral cortex,Human,Homo sapiens,Homo sapiens,Homo sapiens,(1300–1400),1300000,1400000,1350000,TRUE,1.66,1.66,1.66,1.66,FALSE,"Sherwood et al., 2006",secondary,29
+Cerebral cortex,Human,Homo sapiens,Homo sapiens,Homo sapiens,1400,1400000,1400000,1400000,FALSE,1–2,1,2,1.5,FALSE,"von Bartheld et al., 2016",secondary,30
+Cerebral cortex,Minke whale,Balaenoptera acutorostrata,Balaenoptera acutorostrata,Balaenoptera acutorostrata,(2700),2700000,2700000,2700000,TRUE,7.67,7.67,7.67,7.67,FALSE,"Eriksen & Pakkenberg, 2007",secondary,31
+Cerebral cortex,Pilot whale,Globicephala melas,Globicephala melas,Globicephala melas,3062–4618,3062000,4618000,3840000,FALSE,3.41,3.41,3.41,3.41,FALSE,"Mortensen et al., 2014",secondary,32
+Cerebral cortex,Elephant,Loxodonta africana,Loxodonta africana,Loxodonta africana,4148,4148000,4148000,4148000,FALSE,6.86,6.86,6.86,6.86,FALSE,"Haug, 1987",secondary,33
+Cerebral cortex,Minke whale,Balaenoptera physales L.,Balaenoptera physalus,Balaenoptera physales L.,6500–7150,6500000,7150000,6825000,FALSE,4.54,4.54,4.54,4.54,FALSE,"Hawkins & Olszewski, 1957",secondary,34
+Cerebellum,Rat,Rattus norvegicus,Rattus norvegicus,Rattus norvegicus,(2),2000,2000,2000,TRUE,0.30,0.3,0.3,0.3,FALSE,"Giuffrida et al., 1979",secondary,36
+Cerebellum,Rat,Rattus norvegicus,Rattus norvegicus,Rattus norvegicus,(2),2000,2000,2000,TRUE,0.06,0.06,0.06,0.06,FALSE,"Korbo et al., 1993",secondary,37
+Cerebellum,Human,Homo sapiens,Homo sapiens,Homo sapiens,(1220),1220000,1220000,1220000,TRUE,0.03,0.03,0.03,0.03,FALSE,"Andersen et al., 1992",secondary,38
+Cerebellum,Human,Homo sapiens,Homo sapiens,Homo sapiens,1409,1409000,1409000,1409000,FALSE,(0.035),0.035,0.035,0.035,TRUE,"Andersen & Pakkenberg, 2003",secondary,39
+Cerebellum,Human,Homo sapiens,Homo sapiens,Homo sapiens,1220,1220000,1220000,1220000,FALSE,(0.057),0.057,0.057,0.057,TRUE,"Andersen et al., 2012",secondary,40
+Spinal Cord,Northern leopard frog,Rana pipiens,Lithobates pipiens,Rana pipiens,(0.1),100,100,100,TRUE,0.78,0.78,0.78,0.78,FALSE,"Chvátal et al., 2001",secondary,42
+Spinal Cord,Albino mouse,Mus musculus,Mus musculus,Mus musculus,(0.4),400,400,400,TRUE,2.28,2.28,2.28,2.28,FALSE,"Bjugn, 1993",secondary,43
+Spinal Cord,Red-eared turtle,Trachemys scripta elegans,Trachemys scripta,Trachemys scripta elegans,(0.5),500,500,500,TRUE,2.61,2.61,2.61,2.61,FALSE,"Walløe et al., 2011",secondary,44
+Spinal Cord,"Rat (Wistar, female)",Rattus norvegicus,Rattus norvegicus,Rattus norvegicus,(2),2000,2000,2000,TRUE,2.72,2.72,2.72,2.72,FALSE,"Bjugn & Gundersen, 1993",secondary,45
+Spinal Cord,Monkey,Macaca fascicularis,Macaca fascicularis,Macaca fascicularis,(75),75000,75000,75000,TRUE,2.1–4.9,2.1,4.9,3.5,FALSE,This Study,primary,46
+Spinal Cord,Human,Homo sapiens,Homo sapiens,Homo sapiens,(1300),1300000,1300000,1300000,TRUE,6.1–6.9,6.1,6.9,6.5,FALSE,This Study,primary,47

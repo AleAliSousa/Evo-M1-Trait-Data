@@ -60,3 +60,7 @@ brain-mass / volumes cross-check. Both are all-mammal (1,552 species).
 ## Checks
 - Analysis CSV = 1,552 rows (one per species; no duplicate binomials). First-party compilation;
   no independent curated copy to audit against.
+
+## 2026-10-29: measured versus estimated mass
+
+The source's `Mean_brain_mass_g` is a mixture of direct mass measurements and volume-derived mass estimates. In the currently audited harvest, at least 617 of 1,552 species entries (39.8%) trace to endocranial capacity, including the now-read Mace methods. This is a lower bound; remaining untraced records are not thereby established as weighed masses. The brain-mass merge retains known calculations in separate estimated-mass traits, preserves their reported gram values and source basis, and keeps unresolved cases in review. Burger's 1 g/cm3 convention does not justify reversing a copied value that may already include an earlier compiler's conversion. See `__merging_brain_mass/README__merging.md`.

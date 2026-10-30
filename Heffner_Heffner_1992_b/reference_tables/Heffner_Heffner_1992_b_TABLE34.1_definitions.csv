@@ -1,0 +1,13 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+animal_as_printed,Animal common name as printed in Table 34.1,,,,info,Mammalia (4 spp),Heffner_Heffner_1992_b_TABLE34.1,Printed name kept verbatim,Table 34.1 p.692
+species,Harmonised binomial from _keys/General/species_key.csv (source_publication = Heffner_Heffner_1992_b),,Species,,info,Mammalia (4 spp),Heffner_Heffner_1992_b_TABLE34.1,Common-name -> binomial mapping is curator judgement; see key note column,
+head_radius_mm,Radius of head,Head,Length.mm,value,info,Mammalia (4 spp),Heffner_Heffner_1992_b_TABLE34.1,"Printed ""Radius of head (in mm)""; source of radii not cited in the chapter",Table 34.1 col 2
+quantity,Which calculated quantity the row carries: interaural_time_difference or phase_ambiguity_frequency,,,,info,Mammalia (4 spp),Heffner_Heffner_1992_b_TABLE34.1,,
+azimuth_deg,Sound-source azimuth from midline for which the value was calculated,,deg,,info,Mammalia (4 spp),Heffner_Heffner_1992_b_TABLE34.1,ITD printed at 90 and 10 deg; phase-ambiguity frequency at 90 and 30 deg (as printed),Table 34.1 headers
+value,Numeric value (thousands separator removed),,us | kHz,value,primary,Mammalia (4 spp),Heffner_Heffner_1992_b_TABLE34.1,"ERRATA Heffner_Heffner_1992_b-E001 (proposed, publication_error): printed 1.210, repo had blank, proposed 1.205 | ITD in microseconds; frequency of phase ambiguity in kHz (unit column). Calculated with the Kuhn (1977) formula, not measured",Table 34.1 footnote
+unit,Unit of value,,,,info,,Heffner_Heffner_1992_b_TABLE34.1,,
+value_as_printed,Cell exactly as printed,,,,info,,Heffner_Heffner_1992_b_TABLE34.1,Trailing zeros kept (e.g. 12.700),
+value_origin,calculated_by_authors on every row,,,,info,,Heffner_Heffner_1992_b_TABLE34.1,,
+method_ref_key,Printed key of the formula source,,,,info,,Heffner_Heffner_1992_b_TABLE34.1,Join on ref_key in reference_tables/Heffner_Heffner_1992_b_TABLE34.1_references.csv,
+data_role,primary = new calculation in this chapter,,,,info,,Heffner_Heffner_1992_b_TABLE34.1,Model-derived physical quantities; not behavioural measurements,
+Method:calculation,ITD = Kuhn (1977) spherical-head low-frequency model; phase ambiguity at f = 1/(2 ITD),,,,method,,Heffner_Heffner_1992_b_TABLE34.1,Table checks (README) reproduce these relations; the Dog 90-deg phase-ambiguity value disagrees (see errata),

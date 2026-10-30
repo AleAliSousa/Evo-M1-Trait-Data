@@ -59,6 +59,56 @@ sources**; TraitExplorer discovers the folder automatically; `__Cytosplore_expor
   `questionable` and `low` records are excluded for `Maximum_longevity` and nothing else.
 - **AnAge BMR** (`Metabolic_rate_W`) is converted W -> mL O2/h at 20.1 J per mL O2 (x 3600/20.1 = 179.104),
   the same oxyjoule equivalent `__merging_body_ecology` uses for the 2017 jhevol kcal/day column.
+- **Human regional protein concentrations (added 2026-10-28).** Sjölin et al. 2022 (Mol Brain 15:52,
+  `Sjölin_etal_2022_SupplementaryData`) measured GFAP, MBP, NFL, tau, UCHL1 and total protein by
+  ELISA/BCA in 17 CNS regions of 10 post-mortem donors — 168 samples, one species. Because the app's
+  compiled database is keyed species × variable and cannot carry region as a second axis, each
+  **region × analyte is one label** (`FrontalCortex_GFAP (µg/g)` … `Cerebellum_TotalProtein (mg/g)`),
+  giving 102 mapping rows, all `distinct`, `domain = molecular composition`,
+  `measure_class = protein_concentration`, `role = primary`. `Structure` is the canonical term where
+  one exists (`Hippocampus`, `Thalamus`, `Mesencephalon`, `Pons`, `Medulla_oblongata`, `Cerebellum`,
+  `Capsula_interna`, `Caudate_nucleus`); the lobe-specific grey/white terms (`FrontalGrey` aside) and
+  `SpinalCord_cervical` are new. The mapped columns are the item's per-g-of-wet-tissue columns
+  (`*_ug_per_g`, `total_protein_mg_per_g`), which the item derives from the published supernatant
+  concentrations × 0.01 — see that item's README for the 10 mL/g basis.
+  - **New aggregate `geomean`.** These concentrations are log-normal and the paper summarises them as
+    geometric means, so `agg_fun()` gained a `geomean` branch (positive values only). With it the
+    merged value reproduces every one of the 102 printed cells of the paper's Table 2 to within 4.5%,
+    i.e. within the rounding of its two significant figures; an arithmetic mean would not. Values are
+    unadjusted — Table 2 additionally adjusts MBP and NFL for donor warm time (hippocampus excepted).
+  - **One species.** These labels populate the compiled-database and coverage views; they cannot
+    carry a cross-species regression on their own. `n_specimens` is 10 per label, except the
+    hippocampus labels (8 donors) and two cells blank in the source (9).
+  - `_keys/build_variable_definitions.R` lists `Sjölin_etal_2022` among the publications whose labels
+    take their definition from the item's own definitions file, so each label reads as the analyte
+    definition plus this mapping's region note. Six analyte acronyms were added to `_keys/glossary.csv`.
+- **Primate play: the primary replaces the republication (2026-10-28).** `Play_sex_score` and
+  `Play_nonsex_score` were mapped from `Iwaniuk_etal_2001_Table4` (secondary). Building
+  `Pellis_Iwaniuk_2000_Table1` showed that Iwaniuk's Table 4 **reprints Pellis & Iwaniuk (2000)
+  Table 1**: on the 64 species the two tables share (accepted-name join, 0 Iwaniuk-only), every
+  comparable cell is identical — 62/62 sexual scores and 63/63 non-sexual scores — and the
+  non-comparable cells are missing on both sides. The six cells Pellis prints as `2/3` are
+  represented in Iwaniuk by the first (byproduct) value, 2, for the five of them he carries.
+  So the two mapping rows were **re-pointed to the primary**: `Play_sex_score` (69 species, was 62)
+  and `Play_nonsex_score` (70, was 63) now come from `Pellis_Iwaniuk_2000_Table1` with
+  `role = primary`, and the Iwaniuk rows for those two labels were deleted so the republication is
+  not counted as a second source. **`Play_total_score` stays with Iwaniuk** (61 species): it is his
+  own published column, the sum of the two components, and Pellis prints no total.
+  Three further labels enter from the primary, none of which Iwaniuk reprints:
+  `Play_nonsex_score_raised_ceiling` (the second value of the `2/3` cells, used for the social
+  assessment hypothesis), `Play_presence` (the binary absent/present column) and
+  `Social_organization_score_strepsirrhine` (0–3, the 20 strepsirrhine species only; domain
+  `sociality`). `Iwaniuk_etal_2001_Table4`'s own definitions file was re-flagged `secondary` for its
+  three play columns, naming the primary.
+- **Graham 2011 play percentages (2026-10-28).** `Graham__2011_TABLEI` contributes
+  `Play_social_time_pct_Graham2011` (14 taxa) and `Play_nonsocial_time_pct_Graham2011` (11 taxa) as
+  `secondary` — percentages of the activity budget that Graham averaged over the 37 studies cited
+  per row. They are **deliberately distinct labels, pooled with nothing**: the Pellis scores are
+  ordinal prevalence ratings, `__merging_behaviour/social_mirror_play_long.csv` carries time-budget
+  play on *other* denominators (Bartlett 2003 = share of social activity, Kerney 2017 = share of all
+  activity, Mallavarapu 2001 = share of play time), and Graham's denominator is the whole activity
+  budget. Graham's brain, body and striatum columns are **not taken** — Barton (1999) and Stephan
+  et al. (1981) republished; the volume and mass merges are authoritative for those.
 - **M1 neuron number** (Herculano-Houzel, Kaas & de Oliveira-Souza 2016 Table 2): OBSERVED `N_M1` rows
   only (5 species); predicted rows, `N_SC` (Burish 2010, already `SpinalCord_N.n` in cellcounts) and the
   `N_M1/N_SC` ratio (built on predicted components) are not taken.
@@ -169,6 +219,9 @@ sources**; TraitExplorer discovers the folder automatically; `__Cytosplore_expor
 | deMagalhães_etal_2024_anagedata.txt | Metabolic_rate_W | BMR_wholeanimal (mL O2/h) [shared] | secondary | first | AnAge basal/resting metabolic rate in W; x 3600/20.1 -> mL O2/h using the same 20.1 J per mL O2 oxyjoule equivalent as body_ecology; shared label with body_ecology (4 compilations already pooled there; AnAge partly cites the same primaries) |
 | deMagalhães_etal_2024_anagedata.txt | Temperature_K | Body_temperature (C) [distinct] | secondary | first | body temperature paired with the AnAge metabolic-rate measurement; K - 273.15 -> deg C |
 | HerculanoHouzel_etal_2016_Table2 | N_M1 | M1_neuron_number (count) [distinct] | secondary | first | M1 neuron number as compiled by Herculano-Houzel, Kaas & de Oliveira-Souza 2016 (Table 2) from the authors' own isotropic-fractionator studies; OBSERVED rows only (predicted N_M1 rows excluded). N_SC NOT taken (Burish 2010 already in cellcounts as SpinalCord_N.n); N_M1/N_SC ratio NOT taken (uses predicted components) |
+| Sjölin_etal_2022_SupplementaryData | `*_ug_per_g`, `total_protein_mg_per_g` (6 analytes) x `region_code` A-Q (17 regions) | `<Region>_<Analyte>` (µg/g; total protein mg/g) [distinct] - 102 labels | primary | geomean | one mapping row per region x analyte; see the "Human regional protein concentrations" decision above |
+| Pellis_Iwaniuk_2000_Table1 | play_sexual / play_nonsexual_byproduct / play_nonsexual_social_assessment / play_presence / social_organization | Play_sex_score, Play_nonsex_score, Play_nonsex_score_raised_ceiling, Play_presence (score/category) [distinct]; Social_organization_score_strepsirrhine (score) [distinct] | primary | first | replaces the two Iwaniuk play-score rows; see the decision above |
+| Graham__2011_TABLEI | social_play_pct / nonsocial_play_pct | Play_social_time_pct_Graham2011, Play_nonsocial_time_pct_Graham2011 (percent) [distinct] | secondary | first | activity-budget percentages; never pooled with the ordinal scores or the social_mirror_play measures |
 
 
 ## ManyPrimates supplements, 2026-10-21

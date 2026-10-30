@@ -1,0 +1,17 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+marker_id,"Marker id (m01-m22, ordered by x pixel) from the extract script",,,,info,Mammalia (22 spp),Heffner_Heffner_2018_Figure3,Join key to the snapshot and label assignment,
+label_as_printed,Species label printed in the figure,,,,info,Mammalia (22 spp),Heffner_Heffner_2018_Figure3,Printed common name kept verbatim,Figure 3 p.130001-4
+species,Harmonised binomial from _keys/General/species_key.csv (source_publication = Heffner_Heffner_2018),,Species,,info,Mammalia (22 spp),Heffner_Heffner_2018_Figure3,marmot -> Marmota sp. (species not given); hamster -> Mesocricetus auratus is a hypothesis,
+width_field_best_vision_deg,"Width of the field of best vision (horizontal width of retina with ganglion-cell density >= 75% of maximum), digitised",Retina,deg,value,secondary,Mammalia (22 spp),Heffner_Heffner_2018_Figure3,Piecewise log calibration between printed ticks; human (0.70 deg) lies below the lowest tick and is extrapolated,x axis
+sound_localization_threshold_deg,"Sound-localization threshold (minimum audible angle), digitised",,deg,value,secondary,Mammalia (22 spp),Heffner_Heffner_2018_Figure3,"ERRATA Heffner_Heffner_2018-E001 (proposed, publication_ambiguity): printed 17° (text); figure point reads 15.42° (digitised), repo had blank | Piecewise log calibration between printed ticks",y axis
+width_field_best_vision_deg_globalfit,"Same, single least-squares log-axis calibration",Retina,deg,value,info,,Heffner_Heffner_2018_Figure3,Uncertainty bracket only; use the piecewise column,
+sound_localization_threshold_deg_globalfit,"Same, single least-squares log-axis calibration",,deg,value,info,,Heffner_Heffner_2018_Figure3,Uncertainty bracket only,
+calibration_spread_pct_x,100 x (globalfit / piecewise - 1) for x,,pct,,info,,Heffner_Heffner_2018_Figure3,Largest at the crowded 100-200 deg ticks (up to -4%),
+calibration_spread_pct_y,100 x (globalfit / piecewise - 1) for y,,pct,,info,,Heffner_Heffner_2018_Figure3,,
+extrapolated,Non-blank when the point lies outside the printed tick range,,,,info,,Heffner_Heffner_2018_Figure3,,
+label_confidence,Confidence of the label-to-marker assignment,,,,info,,Heffner_Heffner_2018_Figure3,All 22 high: one printed label per marker,
+value_origin,digitised_from_figure on every row,,,,method,,Heffner_Heffner_2018_Figure3,,
+figure_source_ref_key,Source printed in the figure caption,,Source,,info,,Heffner_Heffner_2018_Figure3,Join on ref_key in reference_tables/Heffner_Heffner_2018_Figure3_references.csv,
+candidate_original_source,Original study traced through another repo item (value-confirmed); blank = not traced,,Source,,info,,Heffner_Heffner_2018_Figure3,"Join on ref_key in the references table (cited_in_column starts ""candidate_original_source""); not printed in this paper",
+data_role,secondary on every row (compiled; reproduced from Heffner & Heffner 2016),,,,info,,Heffner_Heffner_2018_Figure3,Use published table/text values where they exist,
+Method:digitisation,"Pixel digitisation of the embedded 1144x812 bitmap: 7+7 printed ticks, ring-template detection (22/22 markers), circle-fit centres",,,,method,,Heffner_Heffner_2018_Figure3,Heffner_Heffner_2018_Figure3_extract.py; check image Heffner_Heffner_2018_Figure3_digitisation_check.png,

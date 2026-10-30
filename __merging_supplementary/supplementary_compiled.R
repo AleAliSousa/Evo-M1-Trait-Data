@@ -103,6 +103,9 @@ agg_fun <- function(v, how) {
   if (how == "first") return(v[1])
   if (how == "mean")   return(if (all(!is.na(vn))) mean(vn) else v[1])
   if (how == "median") return(if (all(!is.na(vn))) median(vn) else v[1])
+  ## geomean: for log-normal quantities whose own paper summarises them that way
+  ## (Sjölin 2022 tissue protein concentrations). Needs strictly positive values.
+  if (how == "geomean") return(if (all(!is.na(vn)) && all(vn > 0)) exp(mean(log(vn))) else v[1])
   if (how == "mode")   return(names(sort(table(v), decreasing = TRUE))[1])
   if (how == "any_Y")  return(if (any(v == "Y")) "Y" else "N")
   stop("unknown aggregate: ", how)

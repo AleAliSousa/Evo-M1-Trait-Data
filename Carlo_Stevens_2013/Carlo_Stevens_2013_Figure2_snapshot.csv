@@ -1,0 +1,25 @@
+point_id,legend_marker,cortical thickness (mm),A: Number of cells under 1 mm2 (thousands of cells),B: Number of neurons under 1 mm2 (thousands of cells),C: Number of glia under 1 mm2 (thousands of cells),check A-(B+C) (thousands),ncc_A,ncc_B,ncc_C,occluded_in,note
+1,mouse,0.737,145.9,102.0,43.6,0.3,0.93,0.89,0.78,,
+2,mouse,0.810,119.9,85.0,34.6,0.2,0.92,0.91,0.80,,
+3,mouse,0.977,147.5,97.2,49.9,0.4,0.86,0.60,0.81,,
+4,mouse,1.013,138.2,93.8,44.0,0.3,0.71,0.59,0.70,,
+5,mouse,1.106,142.5,91.0,51.1,0.3,0.58,0.48,0.69,,
+6,monkey,1.120,135.3,94.0,42.2,-0.9,0.61,0.48,0.58,B;C,marker occluded in panel(s) B;C: coordinates of the concentric visible marker used
+7,mouse,1.120,135.3,94.0,42.2,-0.9,0.61,0.48,0.58,A,marker occluded in panel(s) A: coordinates of the concentric visible marker used
+8,mouse,1.193,168.3,112.6,55.4,0.2,0.89,0.77,0.73,,
+9,rat,1.236,136.8,87.4,49.1,0.2,0.93,0.96,0.59,,
+10,mouse,1.240,159.1,116.0,42.8,0.3,0.91,0.76,0.71,,
+11,cat,1.492,132.7,74.0,58.1,0.6,0.94,0.92,0.70,,
+12,monkey,1.542,155.5,101.0,54.2,0.2,0.73,0.82,0.46,,
+13,monkey,1.560,140.2,82.6,57.3,0.3,0.93,0.95,0.49,,
+14,cat,1.592,120.1,70.6,48.9,0.6,0.90,0.96,0.75,,
+15,rat,1.604,157.7,96.0,61.3,0.3,0.79,0.67,0.73,,
+16,rat,1.698,154.9,95.8,58.7,0.3,0.57,0.47,0.56,,
+17,monkey,1.709,162.6,100.6,61.6,0.4,0.72,0.56,0.50,,
+18,monkey,1.746,154.2,95.6,58.5,0.1,0.58,0.36,0.45,,panel B marker found by local monkey-template search (overlaps regression lines)
+19,monkey,1.764,139.6,92.0,47.3,0.3,0.63,0.48,0.81,,
+20,monkey,1.777,136.6,95.6,40.7,0.2,0.69,0.42,0.80,,panel B marker found by local monkey-template search (overlaps regression lines)
+21,rat,1.807,167.1,108.4,58.3,0.3,0.83,0.89,0.70,,
+22,cat,1.858,163.8,88.2,75.0,0.6,0.77,0.71,0.78,,
+23,cat,1.904,153.2,81.0,71.8,0.4,0.74,0.78,0.77,,
+24,monkey,2.416,175.0,96.0,78.5,0.5,0.91,0.67,0.74,,

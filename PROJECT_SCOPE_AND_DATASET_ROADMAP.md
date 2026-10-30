@@ -1098,7 +1098,29 @@ TSV uploaded to `__Public/comparative-data` on a future pass once the connector 
 clears; the analysis CSVs themselves are already complete and uploaded to each item's
 own folder, so this is a copy-only follow-up, not a re-build.
 
-## Current order of work (refreshed 2026-09-28; audit in `_checks/registry_audit_20260928.md`)
+## Current order of work (refreshed 2026-10-28; audit in `_checks/registry_audit_20261028.md`)
+
+> **Top of the queue as of 2026-10-28.** Registry integrity is clean: 787 data rows, 0 lost rows
+> (the 30 missing snapshot keys are renames or the `#n` format change), and 0 malformed keys.
+> The binding constraint is now **registration**. (a) Paste the 26 new `*_registry_row.xlsx`
+> workbooks from the 2026-10-28 build pass. Their TSVs use derived `Item encoded` codes until the
+> rows land; check each against the TSV stem. (b) Register the 31 built-but-unregistered folders.
+> These are the ManyPrimates, colour-vision and Nick–Fran intakes, and they account for most of
+> the 66 orphan TSVs. (c) Fix the Bahney 2018 col-A DOI autofill (`ar.23729/30/31` should be
+> `ar.23728`). (d) Rename the 4 mismatched TSVs and Trash the stale `NA.tsv`. (e) Rerun `file_list.R` and
+> `registry_snapshot.R`. **Tool defects** were found by all build agents: `build_dataset_item()`
+> cannot run self-locating, tidyverse scripts through `sys.source()`, and `validate_dataset_item()`
+> gives a false registry_row PASS when Sheet1 contains NA Item-name rows. **Merge-wiring
+> candidates** from the new builds: Glendenning & Masterton 1998 Tables 1–7 (auditory brainstem
+> volumes and cells) go to `__merging_volumes`/`__merging_cellcounts`. Heffner 1992b, Heffner
+> 1999 and Heffner 2018 go to `__merging_sensory`. Filiminoff 1932 V1 area goes to
+> `__merging_cortical_areas` (it is the human V1 primary that Van Essen & Drury 1997 cite).
+> Bahney 2018 glia/neuron goes to `__merging_cellcounts`, as a secondary that needs its refs
+> roadmap. Kay 2026 Data S1 goes to `__merging_volumes`, checking the Stephan/Bush–Allman
+> overlap first. Still blocked: McGuire & Ratcliffe 2011 and Shultz & Dunbar 2010 (one manual
+> download each), Stensaas 1974 and Terborgh 1983 (no PDF), and the ~30 `candidate` Heffner, Koay
+> and Masterton figure items (the figure-digitisation queue). The list below is the 2026-09-28
+> order, kept for history.
 
 > **Top of the queue as of 2026-09-28 — see new items 11–14 below.** Registry hygiene is now clean
 > (0 lost rows, 0 trailing-`_` keys, 0 XML corruption, orphaned TSVs down 43 → 8), so the binding

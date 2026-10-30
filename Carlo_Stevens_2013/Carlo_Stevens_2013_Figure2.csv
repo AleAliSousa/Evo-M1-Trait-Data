@@ -1,0 +1,25 @@
+point_id,species_as_published,Species,cortical_thickness_mm,cells_per_mm2,neurons_per_mm2,glia_per_mm2,glia_neuron_ratio,occluded_in,digitization_note,value_type,data_role
+1,mouse,Mus sp.,0.737,145900,102000,43600,0.427,,,"digitized from figure (approx. +/- 0.5 thousand cells, +/- 0.005 mm)",primary
+2,mouse,Mus sp.,0.81,119900,85000,34600,0.407,,,"digitized from figure (approx. +/- 0.5 thousand cells, +/- 0.005 mm)",primary
+3,mouse,Mus sp.,0.977,147500,97200,49900,0.513,,,"digitized from figure (approx. +/- 0.5 thousand cells, +/- 0.005 mm)",primary
+4,mouse,Mus sp.,1.013,138200,93800,44000,0.469,,,"digitized from figure (approx. +/- 0.5 thousand cells, +/- 0.005 mm)",primary
+5,mouse,Mus sp.,1.106,142500,91000,51100,0.562,,,"digitized from figure (approx. +/- 0.5 thousand cells, +/- 0.005 mm)",primary
+6,monkey,Macaca mulatta,1.12,135300,94000,42200,0.449,B;C,marker occluded in panel(s) B;C: coordinates of the concentric visible marker used,"digitized from figure (approx. +/- 0.5 thousand cells, +/- 0.005 mm)",primary
+7,mouse,Mus sp.,1.12,135300,94000,42200,0.449,A,marker occluded in panel(s) A: coordinates of the concentric visible marker used,"digitized from figure (approx. +/- 0.5 thousand cells, +/- 0.005 mm)",primary
+8,mouse,Mus sp.,1.193,168300,112600,55400,0.492,,,"digitized from figure (approx. +/- 0.5 thousand cells, +/- 0.005 mm)",primary
+9,rat,Rattus sp.,1.236,136800,87400,49100,0.562,,,"digitized from figure (approx. +/- 0.5 thousand cells, +/- 0.005 mm)",primary
+10,mouse,Mus sp.,1.24,159100,116000,42800,0.369,,,"digitized from figure (approx. +/- 0.5 thousand cells, +/- 0.005 mm)",primary
+11,cat,Felis catus,1.492,132700,74000,58100,0.785,,,"digitized from figure (approx. +/- 0.5 thousand cells, +/- 0.005 mm)",primary
+12,monkey,Macaca mulatta,1.542,155500,101000,54200,0.537,,,"digitized from figure (approx. +/- 0.5 thousand cells, +/- 0.005 mm)",primary
+13,monkey,Macaca mulatta,1.56,140200,82600,57300,0.694,,,"digitized from figure (approx. +/- 0.5 thousand cells, +/- 0.005 mm)",primary
+14,cat,Felis catus,1.592,120100,70600,48900,0.693,,,"digitized from figure (approx. +/- 0.5 thousand cells, +/- 0.005 mm)",primary
+15,rat,Rattus sp.,1.604,157700,96000,61300,0.639,,,"digitized from figure (approx. +/- 0.5 thousand cells, +/- 0.005 mm)",primary
+16,rat,Rattus sp.,1.698,154900,95800,58700,0.613,,,"digitized from figure (approx. +/- 0.5 thousand cells, +/- 0.005 mm)",primary
+17,monkey,Macaca mulatta,1.709,162600,100600,61600,0.612,,,"digitized from figure (approx. +/- 0.5 thousand cells, +/- 0.005 mm)",primary
+18,monkey,Macaca mulatta,1.746,154200,95600,58500,0.612,,panel B marker found by local monkey-template search (overlaps regression lines),"digitized from figure (approx. +/- 0.5 thousand cells, +/- 0.005 mm)",primary
+19,monkey,Macaca mulatta,1.764,139600,92000,47300,0.514,,,"digitized from figure (approx. +/- 0.5 thousand cells, +/- 0.005 mm)",primary
+20,monkey,Macaca mulatta,1.777,136600,95600,40700,0.426,,panel B marker found by local monkey-template search (overlaps regression lines),"digitized from figure (approx. +/- 0.5 thousand cells, +/- 0.005 mm)",primary
+21,rat,Rattus sp.,1.807,167100,108400,58300,0.538,,,"digitized from figure (approx. +/- 0.5 thousand cells, +/- 0.005 mm)",primary
+22,cat,Felis catus,1.858,163800,88200,75000,0.85,,,"digitized from figure (approx. +/- 0.5 thousand cells, +/- 0.005 mm)",primary
+23,cat,Felis catus,1.904,153200,81000,71800,0.886,,,"digitized from figure (approx. +/- 0.5 thousand cells, +/- 0.005 mm)",primary
+24,monkey,Macaca mulatta,2.416,175000,96000,78500,0.818,,,"digitized from figure (approx. +/- 0.5 thousand cells, +/- 0.005 mm)",primary

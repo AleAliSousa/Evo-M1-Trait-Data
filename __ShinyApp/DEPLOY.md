@@ -74,21 +74,49 @@ Rscript update_shinyapp.R --no-deploy
 
 ## What the app contains
 
-- **Compiled database** — harmonized long tables across three dataset families:
+- **Species explorer** — start with Order → Genus → one or more species, or
+  search a scientific species name directly. Leave species blank to inspect
+  every species in the selected order or genera. The **Explore Ctenomys
+  (tuco-tucos)** button loads the full genus. View traits present in **any** or
+  **every** selected species, narrow by domain, compare values side by side
+  (up to 60 species), inspect sources, and download values or trait coverage.
+  Missing cells stay missing; numeric zero and categorical values count as
+  available. Counts refer to compiled measurements, not every raw source table.
+  Where a species lacks an Order, a unique Order recorded for its genus is used
+  for navigation and explicitly marked in **Selected species**. Ambiguous or
+  unmatched cases remain **Unknown**. Genus selection never pools trait values.
+- **Regression** — numeric response and predictor, with body size, brain size
+  (one explicitly selected measurement basis), both, or additional covariates.
+  **Use these species in Regression** transfers the explorer's species set.
+  Scope, X/Y availability, completeness, and log/tree eligibility counts show
+  the sample losses; **Data coverage** lists and exports individual exclusions.
+  **Before and after adjustment** fits unadjusted and adjusted models on the
+  same species. OLS and optional PGLS are supported. Constant and exactly
+  collinear predictors return an explanatory message. The partial scatter uses
+  OLS residuals and an OLS line; PGLS coefficients are reported separately.
+- **Compiled database** — harmonized long tables including
   **brain-structure volumes**, **cell counts**, and the **EvoM1 trait table**
   (behavioural, ecological, life-history, and cellular traits — dexterity,
   corticospinal tract, gyrification, interlaminar astrocytes, locomotion, gait,
   manipulation, handedness, diet & foraging, vocal repertoire, V1 synapse /
-  mitochondria / neuron density, and more). ~18,000 non-missing values across
-  ~580 species and ~350 measurements. Filter by dataset, species, measurement,
+  mitochondria / neuron density, and more). Filter by dataset, species, measurement,
   and source; download the current selection; scatter any two numeric variables
   (log-log with fit line).
-- **Source tables** — every per-publication TSV in `__Public/comparative-data`
-  (~195), each shown with its full citation and linked to its DOI / PubMed /
+- **Source tables** — every per-publication TSV in `__Public/comparative-data`,
+  each shown with its full citation and linked to its DOI / PubMed /
   ISBN / dissertation record (the identifier is the clickable link text), with
   source notes where available.
 - **About tab** — dataset summary plus a CC BY 4.0 license and attribution
   notice.
+
+Run the species-explorer and regression checks from the repo root:
+
+```bash
+Rscript _checks/shiny_species_regression.R
+```
+
+These checks read local data and do not rebuild it. Local mode also reads the
+phylogeny from `_keys/mammal_tree.*` without attempting a network fetch.
 
 ## Files
 

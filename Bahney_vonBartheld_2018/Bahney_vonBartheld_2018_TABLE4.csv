@@ -1,0 +1,113 @@
+common_name,species_as_published,Species,species_variant_matched,brain_mass_printed,brain_mass_mg,brain_mass_estimated,cns_part,nNNR_printed,nNNR_min,nNNR_max,nNNR,nNNR_approximate,references,data_role,source_row
+Smoky shrew,Sorex fumeus,Sorex fumeus,Sorex fumeus,0.2,200,FALSE,Cerebral cortex,1.01,1.01,1.01,1.01,FALSE,"Sarko et al., 2009",secondary,2
+Smoky shrew,Sorex fumeus,Sorex fumeus,Sorex fumeus,0.2,200,FALSE,Cerebellum,0.25,0.25,0.25,0.25,FALSE,"Sarko et al., 2009",secondary,2
+Smoky shrew,Sorex fumeus,Sorex fumeus,Sorex fumeus,0.2,200,FALSE,Rest of brain,1.48,1.48,1.48,1.48,FALSE,"Sarko et al., 2009",secondary,2
+Short tailed shrew,Blarina brevicauda,Blarina brevicauda,Blarina brevicauda,0.4,400,FALSE,Cerebral cortex,1.00,1,1,1,FALSE,"Sarko et al., 2009",secondary,3
+Short tailed shrew,Blarina brevicauda,Blarina brevicauda,Blarina brevicauda,0.4,400,FALSE,Rest of brain,1.96,1.96,1.96,1.96,FALSE,"Sarko et al., 2009",secondary,3
+Mouse,Mus musculus,Mus musculus,Mus musculus,0.4,400,FALSE,Cerebral cortex,0.88,0.88,0.88,0.88,FALSE,"Herculano-Houzel et al., 2006",secondary,4
+Mouse,Mus musculus,Mus musculus,Mus musculus,0.4,400,FALSE,Cerebellum,0.17,0.17,0.17,0.17,FALSE,"Herculano-Houzel et al., 2006",secondary,4
+Mouse,Mus musculus,Mus musculus,Mus musculus,0.4,400,FALSE,Rest of brain,1.25,1.25,1.25,1.25,FALSE,"Herculano-Houzel et al., 2006",secondary,4
+Mouse,Mus musculus,Mus musculus,Mus musculus,0.5,500,FALSE,Cerebral cortex,3.4,3.4,3.4,3.4,FALSE,"Fu et al., 2013",secondary,5
+Mouse,Mus musculus,Mus musculus,Mus musculus,0.5,500,FALSE,Cerebellum,0.23,0.23,0.23,0.23,FALSE,"Fu et al., 2013",secondary,5
+Mouse,Mus musculus,Mus musculus,Mus musculus,0.5,500,FALSE,Rest of brain,3.7–3.9,3.7,3.9,3.8,FALSE,"Fu et al., 2013",secondary,5
+Mouse,Mus musculus,Mus musculus,Mus musculus,0.5,500,FALSE,Spinal cord,4.05,4.05,4.05,4.05,FALSE,"Fu et al., 2013",secondary,5
+Golden mole,Amblysomus h.,Amblysomus hottentotus,Amblysomus h.,0.8,800,FALSE,Cerebral cortex,0.98,0.98,0.98,0.98,FALSE,"Neves et al., 2014",secondary,6
+Golden mole,Amblysomus h.,Amblysomus hottentotus,Amblysomus h.,0.8,800,FALSE,Cerebellum,0.24,0.24,0.24,0.24,FALSE,"Neves et al., 2014",secondary,6
+Golden mole,Amblysomus h.,Amblysomus hottentotus,Amblysomus h.,0.8,800,FALSE,Rest of brain,1.84,1.84,1.84,1.84,FALSE,"Neves et al., 2014",secondary,6
+Hairy-tailed mole,Parascalops breweri,Parascalops breweri,Parascalops breweri,0.8,800,FALSE,Cerebral cortex,2.81,2.81,2.81,2.81,FALSE,"Sarko et al., 2009",secondary,7
+Hairy-tailed mole,Parascalops breweri,Parascalops breweri,Parascalops breweri,0.8,800,FALSE,Cerebellum,0.07,0.07,0.07,0.07,FALSE,"Sarko et al., 2009",secondary,7
+Hairy-tailed mole,Parascalops breweri,Parascalops breweri,Parascalops breweri,0.8,800,FALSE,Rest of brain,4.42,4.42,4.42,4.42,FALSE,"Sarko et al., 2009",secondary,7
+Star-nosed mole,Condylura cristata,Condylura cristata,Condylura cristata,0.8,800,FALSE,Cerebral cortex,1.93,1.93,1.93,1.93,FALSE,"Sarko et al., 2009",secondary,8
+Star-nosed mole,Condylura cristata,Condylura cristata,Condylura cristata,0.8,800,FALSE,Cerebellum,0.18,0.18,0.18,0.18,FALSE,"Sarko et al., 2009",secondary,8
+Star-nosed mole,Condylura cristata,Condylura cristata,Condylura cristata,0.8,800,FALSE,Rest of brain,3.85,3.85,3.85,3.85,FALSE,"Sarko et al., 2009",secondary,8
+Hamster,Mesocrycetus,Mesocricetus auratus,Mesocrycetus,1.0,1000,FALSE,Cerebral cortex,2.41,2.41,2.41,2.41,FALSE,"Herculano-Houzel et al., 2006",secondary,9
+Hamster,Mesocrycetus,Mesocricetus auratus,Mesocrycetus,1.0,1000,FALSE,Cerebellum,0.12,0.12,0.12,0.12,FALSE,"Herculano-Houzel et al., 2006",secondary,9
+Hamster,Mesocrycetus,Mesocricetus auratus,Mesocrycetus,1.0,1000,FALSE,Rest of brain,2.31,2.31,2.31,2.31,FALSE,"Herculano-Houzel et al., 2006",secondary,9
+Elephant shrew,Elephantulus myurus,Elephantulus myurus,Elephantulus myurus,1.0,1000,FALSE,Cerebral cortex,1.10,1.1,1.1,1.1,FALSE,"Neves et al., 2014",secondary,10
+Elephant shrew,Elephantulus myurus,Elephantulus myurus,Elephantulus myurus,1.0,1000,FALSE,Cerebellum,0.26,0.26,0.26,0.26,FALSE,"Neves et al., 2014",secondary,10
+Elephant shrew,Elephantulus myurus,Elephantulus myurus,Elephantulus myurus,1.0,1000,FALSE,Rest of brain,2.05,2.05,2.05,2.05,FALSE,"Neves et al., 2014",secondary,10
+Eastern mole,Scalopus aquaticus,Scalopus aquaticus,Scalopus aquaticus,1.1,1100,FALSE,Cerebral cortex,1.30,1.3,1.3,1.3,FALSE,"Sarko et al., 2009",secondary,11
+Eastern mole,Scalopus aquaticus,Scalopus aquaticus,Scalopus aquaticus,1.1,1100,FALSE,Cerebellum,0.11,0.11,0.11,0.11,FALSE,"Sarko et al., 2009",secondary,11
+Eastern mole,Scalopus aquaticus,Scalopus aquaticus,Scalopus aquaticus,1.1,1100,FALSE,Rest of brain,2.75,2.75,2.75,2.75,FALSE,"Sarko et al., 2009",secondary,11
+Mouse lemur,Microcebus murinus,Microcebus murinus,Microcebus murinus,1.8,1800,FALSE,Cerebral cortex,3.17,3.17,3.17,3.17,FALSE,Gabi et al. 2010,secondary,12
+Mouse lemur,Microcebus murinus,Microcebus murinus,Microcebus murinus,1.8,1800,FALSE,Cerebellum,0.08,0.08,0.08,0.08,FALSE,Gabi et al. 2010,secondary,12
+Mouse lemur,Microcebus murinus,Microcebus murinus,Microcebus murinus,1.8,1800,FALSE,Rest of brain,4.63,4.63,4.63,4.63,FALSE,Gabi et al. 2010,secondary,12
+Mouse lemur,Microcebus murinus,Microcebus murinus,Microcebus murinus,1.8,1800,FALSE,Spinal cord,12.66,12.66,12.66,12.66,FALSE,"Burish et al., 2010",secondary,13
+Rat (Wistar),Rattus norvegicus,Rattus norvegicus,Rattus norvegicus,1.8,1800,FALSE,Cerebral cortex,1.47,1.47,1.47,1.47,FALSE,"Herculano-Houzel et al., 2006",secondary,14
+Rat (Wistar),Rattus norvegicus,Rattus norvegicus,Rattus norvegicus,1.8,1800,FALSE,Cerebellum,0.21,0.21,0.21,0.21,FALSE,"Herculano-Houzel et al., 2006",secondary,14
+Rat (Wistar),Rattus norvegicus,Rattus norvegicus,Rattus norvegicus,1.8,1800,FALSE,Rest of brain,1.90,1.9,1.9,1.9,FALSE,"Herculano-Houzel et al., 2006",secondary,14
+Rat (Wistar),Rattus norvegicus,Rattus norvegicus,Rattus norvegicus,2.0,2000,FALSE,Cerebral cortex,1.47,1.47,1.47,1.47,FALSE,"Herculano-Houzel & Lent, 2005",secondary,15
+Rat (Wistar),Rattus norvegicus,Rattus norvegicus,Rattus norvegicus,2.0,2000,FALSE,Cerebellum,0.21,0.21,0.21,0.21,FALSE,"Herculano-Houzel & Lent, 2005",secondary,15
+Rat (Wistar),Rattus norvegicus,Rattus norvegicus,Rattus norvegicus,2.0,2000,FALSE,Rest of brain,2.53,2.53,2.53,2.53,FALSE,"Herculano-Houzel & Lent, 2005",secondary,15
+Rat (Wistar),Rattus norvegicus,Rattus norvegicus,Rattus norvegicus,(2),2000,TRUE,Cerebral cortex,∼2.0,2,2,2,TRUE,"Bandeira et al., 2009",secondary,16
+Rat (Wistar),Rattus norvegicus,Rattus norvegicus,Rattus norvegicus,(2),2000,TRUE,Rest of brain,∼2.5,2.5,2.5,2.5,TRUE,"Bandeira et al., 2009",secondary,16
+Rat (Wistar) female,Rattus norvegicus,Rattus norvegicus,Rattus norvegicus,(2),2000,TRUE,Spinal cord,3.55,3.55,3.55,3.55,FALSE,"Bjugn & Gundersen, 1993",secondary,17
+Four-toed elephant shrew,Petrodomus tetrad.,Petrodromus tetradactylus,Petrodomus tetrad.,2.4,2400,FALSE,Cerebral cortex,1.21,1.21,1.21,1.21,FALSE,"Neves et al., 2014",secondary,18
+Four-toed elephant shrew,Petrodomus tetrad.,Petrodromus tetradactylus,Petrodomus tetrad.,2.4,2400,FALSE,Cerebellum,0.30,0.3,0.3,0.3,FALSE,"Neves et al., 2014",secondary,18
+Four-toed elephant shrew,Petrodomus tetrad.,Petrodromus tetradactylus,Petrodomus tetrad.,2.4,2400,FALSE,Rest of brain,2.30,2.3,2.3,2.3,FALSE,"Neves et al., 2014",secondary,18
+Tree shrew,Tupaia glis,Tupaia glis,Tupaia glis,2.8,2800,FALSE,Cerebral cortex,1.42,1.42,1.42,1.42,FALSE,"Herculano-Houzel et al., 2007",secondary,19
+Tree shrew,Tupaia glis,Tupaia glis,Tupaia glis,2.8,2800,FALSE,Cerebellum,0.11,0.11,0.11,0.11,FALSE,"Herculano-Houzel et al., 2007",secondary,19
+Tree shrew,Tupaia glis,Tupaia glis,Tupaia glis,2.8,2800,FALSE,Rest of brain,3.87,3.87,3.87,3.87,FALSE,"Herculano-Houzel et al., 2007",secondary,19
+Tree shrew,Tupaia glis,Tupaia glis,Tupaia glis,2.8,2800,FALSE,Spinal cord,15.60,15.6,15.6,15.6,FALSE,"Burish et al., 2010",secondary,20
+Guinea pig,Cavia porcellus,Cavia porcellus,Cavia porcellus,3.8,3800,FALSE,Cerebral cortex,2.50,2.5,2.5,2.5,FALSE,"Herculano-Houzel et al., 2006",secondary,21
+Guinea pig,Cavia porcellus,Cavia porcellus,Cavia porcellus,3.8,3800,FALSE,Cerebellum,0.21,0.21,0.21,0.21,FALSE,"Herculano-Houzel et al., 2006",secondary,21
+Guinea pig,Cavia porcellus,Cavia porcellus,Cavia porcellus,3.8,3800,FALSE,Rest of brain,3.30,3.3,3.3,3.3,FALSE,"Herculano-Houzel et al., 2006",secondary,21
+Marmoset,Callithrix jacchus,Callithrix jacchus,Callithrix jacchus,7.8,7800,FALSE,Cerebral cortex,1.62,1.62,1.62,1.62,FALSE,"Herculano-Houzel et al., 2007",secondary,22
+Marmoset,Callithrix jacchus,Callithrix jacchus,Callithrix jacchus,7.8,7800,FALSE,Cerebellum,0.14,0.14,0.14,0.14,FALSE,"Herculano-Houzel et al., 2007",secondary,22
+Marmoset,Callithrix jacchus,Callithrix jacchus,Callithrix jacchus,7.8,7800,FALSE,Rest of brain,4.91,4.91,4.91,4.91,FALSE,"Herculano-Houzel et al., 2007",secondary,22
+Marmoset,Callithrix jacchus,Callithrix jacchus,Callithrix jacchus,7.8,7800,FALSE,Spinal cord,12.21,12.21,12.21,12.21,FALSE,"Burish et al., 2010",secondary,23
+Galago,Otolemur garnetti,Otolemur garnettii,Otolemur garnetti,10.2,10200,FALSE,Cerebral cortex,1.78,1.78,1.78,1.78,FALSE,"Herculano-Houzel et al., 2007",secondary,24
+Galago,Otolemur garnetti,Otolemur garnettii,Otolemur garnetti,10.2,10200,FALSE,Cerebellum,0.14,0.14,0.14,0.14,FALSE,"Herculano-Houzel et al., 2007",secondary,24
+Galago,Otolemur garnetti,Otolemur garnettii,Otolemur garnetti,10.2,10200,FALSE,Rest of brain,7.09,7.09,7.09,7.09,FALSE,"Herculano-Houzel et al., 2007",secondary,24
+Galago,Otolemur garnetti,Otolemur garnettii,Otolemur garnetti,10.2,10200,FALSE,Spinal cord,15.44,15.44,15.44,15.44,FALSE,"Burish et al., 2010",secondary,25
+Western tree hyrax,Dendrohyrax dorsalis,Dendrohyrax dorsalis,Dendrohyrax dorsalis,12.8,12800,FALSE,Cerebral cortex,1.84,1.84,1.84,1.84,FALSE,"Neves et al., 2014",secondary,26
+Western tree hyrax,Dendrohyrax dorsalis,Dendrohyrax dorsalis,Dendrohyrax dorsalis,12.8,12800,FALSE,Cerebellum,0.22,0.22,0.22,0.22,FALSE,"Neves et al., 2014",secondary,26
+Western tree hyrax,Dendrohyrax dorsalis,Dendrohyrax dorsalis,Dendrohyrax dorsalis,12.8,12800,FALSE,Rest of brain,3.41,3.41,3.41,3.41,FALSE,"Neves et al., 2014",secondary,26
+Goeldi’s marmoset,Callimico goeldii,Callimico goeldii,Callimico goeldii,(13),13000,TRUE,Cerebral cortex,2.00,2,2,2,FALSE,"Gabi et al., 2010",secondary,27
+Goeldi’s marmoset,Callimico goeldii,Callimico goeldii,Callimico goeldii,(13),13000,TRUE,Rest of brain,3.61,3.61,3.61,3.61,FALSE,"Gabi et al., 2010",secondary,27
+Owl monkey,Aotus trivirgatus,Aotus trivirgatus,Aotus trivirgatus,15.7,15700,FALSE,Cerebral cortex,1.57,1.57,1.57,1.57,FALSE,"Herculano-Houzel et al., 2007",secondary,28
+Owl monkey,Aotus trivirgatus,Aotus trivirgatus,Aotus trivirgatus,15.7,15700,FALSE,Cerebellum,0.14,0.14,0.14,0.14,FALSE,"Herculano-Houzel et al., 2007",secondary,28
+Owl monkey,Aotus trivirgatus,Aotus trivirgatus,Aotus trivirgatus,15.7,15700,FALSE,Rest of brain,6.36,6.36,6.36,6.36,FALSE,"Herculano-Houzel et al., 2007",secondary,28
+Owl monkey,Aotus trivirgatus,Aotus trivirgatus,Aotus trivirgatus,15.7,15700,FALSE,Spinal cord,15.64,15.64,15.64,15.64,FALSE,"Burish et al., 2010",secondary,29
+Rock hyrax,Provacia capensis,Procavia capensis,Provacia capensis,16.9,16900,FALSE,Cerebral cortex,1.90,1.9,1.9,1.9,FALSE,"Neves et al., 2014",secondary,30
+Rock hyrax,Provacia capensis,Procavia capensis,Provacia capensis,16.9,16900,FALSE,Cerebellum,0.18,0.18,0.18,0.18,FALSE,"Neves et al., 2014",secondary,30
+Rock hyrax,Provacia capensis,Procavia capensis,Provacia capensis,16.9,16900,FALSE,Rest of brain,2.35,2.35,2.35,2.35,FALSE,"Neves et al., 2014",secondary,30
+Agouti,Dasyprocta primnolopha,Dasyprocta prymnolopha,Dasyprocta primnolopha,18.4,18400,FALSE,Cerebral cortex,3.76,3.76,3.76,3.76,FALSE,"Herculano-Houzel et al., 2006",secondary,31
+Agouti,Dasyprocta primnolopha,Dasyprocta prymnolopha,Dasyprocta primnolopha,18.4,18400,FALSE,Cerebellum,0.22,0.22,0.22,0.22,FALSE,"Herculano-Houzel et al., 2006",secondary,31
+Agouti,Dasyprocta primnolopha,Dasyprocta prymnolopha,Dasyprocta primnolopha,18.4,18400,FALSE,Rest of brain,4.23,4.23,4.23,4.23,FALSE,"Herculano-Houzel et al., 2006",secondary,31
+Squirrel monkey,Saimiri sciureus,Saimiri sciureus,Saimiri sciureus,30.2,30200,FALSE,Cerebral cortex,1.20,1.2,1.2,1.2,FALSE,"Herculano-Houzel et al., 2007",secondary,32
+Squirrel monkey,Saimiri sciureus,Saimiri sciureus,Saimiri sciureus,30.2,30200,FALSE,Cerebellum,0.07,0.07,0.07,0.07,FALSE,"Herculano-Houzel et al., 2007",secondary,32
+Squirrel monkey,Saimiri sciureus,Saimiri sciureus,Saimiri sciureus,30.2,30200,FALSE,Rest of brain,4.62,4.62,4.62,4.62,FALSE,"Herculano-Houzel et al., 2007",secondary,32
+Squirrel monkey,Saimiri sciureus,Saimiri sciureus,Saimiri sciureus,30.2,30200,FALSE,Spinal cord,19.45,19.45,19.45,19.45,FALSE,"Burish et al., 2010",secondary,33
+Crab-eating macaque,Macaca fascicularis,Macaca fascicularis,Macaca fascicularis,46.2,46200,FALSE,Cerebral cortex,3.45,3.45,3.45,3.45,FALSE,"Gabi et al., 2010",secondary,34
+Crab-eating macaque,Macaca fascicularis,Macaca fascicularis,Macaca fascicularis,46.2,46200,FALSE,Cerebellum,0.05,0.05,0.05,0.05,FALSE,"Gabi et al., 2010",secondary,34
+Crab-eating macaque,Macaca fascicularis,Macaca fascicularis,Macaca fascicularis,46.2,46200,FALSE,Rest of brain,3.97,3.97,3.97,3.97,FALSE,"Gabi et al., 2010",secondary,34
+,Macaca fascicularis,Macaca fascicularis,Macaca fascicularis,46.2,46200,FALSE,Spinal cord,31.69,31.69,31.69,31.69,FALSE,"Burish et al., 2010",secondary,35
+,Macaca fascicularis,Macaca fascicularis,Macaca fascicularis,(75),75000,TRUE,Spinal cord,3.2–5.6,3.2,5.6,4.4,FALSE,Current study,primary,36
+Capuchin monkey,Cebus paella,Sapajus apella,Cebus paella,52.2,52200,FALSE,Cerebral cortex,2.24,2.24,2.24,2.24,FALSE,"Herculano-Houzel et al., 2007",secondary,37
+Capuchin monkey,Cebus paella,Sapajus apella,Cebus paella,52.2,52200,FALSE,Cerebellum,0.10,0.1,0.1,0.1,FALSE,"Herculano-Houzel et al., 2007",secondary,37
+Capuchin monkey,Cebus paella,Sapajus apella,Cebus paella,52.2,52200,FALSE,Rest of brain,8.18,8.18,8.18,8.18,FALSE,"Herculano-Houzel et al., 2007",secondary,37
+Bonnet macaque,Macaca radiata,Macaca radiata,Macaca radiata,61.5,61500,FALSE,Cerebral cortex,2.30,2.3,2.3,2.3,FALSE,"Gabi et al., 2010",secondary,38
+Bonnet macaque,Macaca radiata,Macaca radiata,Macaca radiata,61.5,61500,FALSE,Cerebellum,0.22,0.22,0.22,0.22,FALSE,"Gabi et al., 2010",secondary,38
+Bonnet macaque,Macaca radiata,Macaca radiata,Macaca radiata,61.5,61500,FALSE,Rest of brain,10.04,10.04,10.04,10.04,FALSE,"Gabi et al., 2010",secondary,38
+Bonnet macaque,Macaca radiata,Macaca radiata,Macaca radiata,61.5,61500,FALSE,Spinal cord,37.08,37.08,37.08,37.08,FALSE,"Burish et al., 2010",secondary,39
+Capybara,Hydrochoerus,Hydrochoerus hydrochaeris,Hydrochoerus,76,76000,FALSE,Cerebral cortex,6.04,6.04,6.04,6.04,FALSE,"Herculano-Houzel et al., 2006",secondary,40
+Capybara,Hydrochoerus,Hydrochoerus hydrochaeris,Hydrochoerus,76,76000,FALSE,Cerebellum,0.49,0.49,0.49,0.49,FALSE,"Herculano-Houzel et al., 2006",secondary,40
+Capybara,Hydrochoerus,Hydrochoerus hydrochaeris,Hydrochoerus,76,76000,FALSE,Rest of brain,6.19,6.19,6.19,6.19,FALSE,"Herculano-Houzel et al., 2006",secondary,40
+Rhesus macaque,Macaca mulatta,Macaca mulatta,Macaca mulatta,87.3,87300,FALSE,Cerebral cortex,3.08,3.08,3.08,3.08,FALSE,"Herculano-Houzel et al., 2007",secondary,41
+Rhesus macaque,Macaca mulatta,Macaca mulatta,Macaca mulatta,87.3,87300,FALSE,Cerebellum,0.20,0.2,0.2,0.2,FALSE,"Herculano-Houzel et al., 2007",secondary,41
+Rhesus macaque,Macaca mulatta,Macaca mulatta,Macaca mulatta,87.3,87300,FALSE,Rest of brain,7.93,7.93,7.93,7.93,FALSE,"Herculano-Houzel et al., 2007",secondary,41
+Rhesus macaque,Macaca mulatta,Macaca mulatta,Macaca mulatta,87.3,87300,FALSE,Spinal cord,37.97,37.97,37.97,37.97,FALSE,"Burish et al., 2010",secondary,42
+Yellow baboon,Papio cynocephalus,Papio cynocephalus,Papio cynocephalus,151.2,151200,FALSE,Cerebral cortex,2.63,2.63,2.63,2.63,FALSE,"Gabi et al., 2010",secondary,43
+Yellow baboon,Papio cynocephalus,Papio cynocephalus,Papio cynocephalus,151.2,151200,FALSE,Cerebellum,0.07,0.07,0.07,0.07,FALSE,"Gabi et al., 2010",secondary,43
+Yellow baboon,Papio cynocephalus,Papio cynocephalus,Papio cynocephalus,151.2,151200,FALSE,Rest of brain,3.88,3.88,3.88,3.88,FALSE,"Gabi et al., 2010",secondary,43
+Human,Homo sapiens,Homo sapiens,Homo sapiens,1291,1291000,FALSE,Cerebral cortex,4.32,4.32,4.32,4.32,FALSE,"Andrade-Moraes et al., 2013",secondary,44
+Human,Homo sapiens,Homo sapiens,Homo sapiens,1291,1291000,FALSE,Cerebellum,0.29,0.29,0.29,0.29,FALSE,"Andrade-Moraes et al., 2013",secondary,44
+Human,Homo sapiens,Homo sapiens,Homo sapiens,1291,1291000,FALSE,Rest of brain,11.10,11.1,11.1,11.1,FALSE,"Andrade-Moraes et al., 2013",secondary,44
+Human,Homo sapiens,Homo sapiens,Homo sapiens,(1300),1300000,TRUE,Spinal cord,6.1–6.9,6.1,6.9,6.5,FALSE,This study,primary,45
+Human,Homo sapiens,Homo sapiens,Homo sapiens,1509,1509000,FALSE,Cerebral cortex,3.76,3.76,3.76,3.76,FALSE,"Azevedo et al., 2009",secondary,46
+Human,Homo sapiens,Homo sapiens,Homo sapiens,1509,1509000,FALSE,Cerebellum,0.23,0.23,0.23,0.23,FALSE,"Azevedo et al., 2009",secondary,46
+Human,Homo sapiens,Homo sapiens,Homo sapiens,1509,1509000,FALSE,Rest of brain,11.35,11.35,11.35,11.35,FALSE,"Azevedo et al., 2009",secondary,46
+Elephant,Loxodonta africana,Loxodonta africana,Loxodonta africana,4619,4619000,FALSE,Cerebral cortex,26.8,26.8,26.8,26.8,FALSE,"Herculano-Houzel et al., 2014",secondary,47
+Elephant,Loxodonta africana,Loxodonta africana,Loxodonta africana,4619,4619000,FALSE,Cerebellum,0.15,0.15,0.15,0.15,FALSE,"Herculano-Houzel et al., 2014",secondary,47
+Elephant,Loxodonta africana,Loxodonta africana,Loxodonta africana,4619,4619000,FALSE,Rest of brain,36.9,36.9,36.9,36.9,FALSE,"Herculano-Houzel et al., 2014",secondary,47

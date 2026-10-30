@@ -12,17 +12,18 @@ same basis, because the sources are not all reporting the same quantity.
                                       olfactory bulbs (isotropic-fractionator group:
                                       Herculano-Houzel 2015, Kazu 2014/2015,
                                       Avelino-de-Souza 2025) - systematically smaller
-  Brain_Mass_mass_or_volume           compilations whose values are masses for some
-                                      species and volumes converted at 1 cm3 = 1 g for
-                                      others, not distinguishable per row (Burger 2019,
-                                      Herculano-Houzel 2015 'brain.mass..g.or.cm3.')
+  mass_or_volume_mixed                internal harvest/review state only. Reviewed
+                                      masses move to the measured stream; other records
+                                      stay in brain_mass_basis_review.csv. No ambiguous
+                                      production trait or fallback is currently approved.
   Brain_size_sum_of_structures        a whole-brain figure obtained by summing measured
                                       sub-structures, olfactory bulbs included
                                       (Kverkova 2018)
 
-The basis of each source column is read from _keys/brain_size_basis.csv, which
+The default basis of each source column is read from _keys/brain_size_basis.csv, which
 records it from the source's own definitions file and marks it `unknown` where the
-source does not say. Endocranial volume is NOT here: cranial capacity is the
+source does not say. brain_mass_row_basis.csv supplies guarded source-row decisions.
+Endocranial volume is NOT here: cranial capacity is the
 capacity of the braincase, not a brain mass, and lives in
 __merging_endocranial_volume/.
 
@@ -55,6 +56,13 @@ FACTOR = {"g": 1.0, "kg": 1000.0, "mg": 0.001}
 SKIP = {
     "UMI%3A3311323_Table4.1.tsv",
     "UMI%3A3311323_Table5.1.tsv",
+    # Built as secondary provenance, not an independent weighed-mass source.
+    # Mace's original table needs a governed correction/relay decision before
+    # pooling with corrected later estimates. Isler's g/cc rows remain untyped.
+    "10.1111%2Fj.1469-7998.1981.tb03449.x_TableI.tsv",
+    "10.1016%2Fj.jhevol.2012.03.009_1-s2.0-S0047248412000577-mmc2.xls.tsv",
+    # Jones relays joint body/brain source lists, including existing Baron data.
+    "10.1086%2F421334_datafile1.tsv",
 }
 BINOM_RX = re.compile(r"^[A-Z][a-z]+ [a-z][a-z-]+")
 # Tables that carry no per-row species column because every row is the same
@@ -74,16 +82,18 @@ FAMILY = {
     "mass_measured": "Brain_Mass_measured",
     "mass_measured_specimen": "Brain_Mass_measured",
     "mass_measured_excl_ob": "Brain_Mass_excl_olfactory_bulb",
-    "mass_or_volume_mixed": "Brain_Mass_mass_or_volume",
+    "mass_or_volume_mixed": "Brain_Mass_mass_or_volume",  # harvest/review label only; never pooled
     "sum_of_parts_incl_ob": "Brain_size_sum_of_structures",
-    # Weaver 2001: "brain mass" computed from a measured brain volume (extant) or from an
-    # endocranial volume via Ruff et al. 1997 (fossils). Not a weighed mass, and not the
-    # same as the mass-or-volume compilations either -- those at least weigh some species.
-    "mass_from_volume_or_ecv": "Brain_Mass_from_volume_or_ecv",
+    # Weaver and other explicit calculated masses use estimate labels. Keep the
+    # original volume subtype separate wherever the source evidence establishes it.
+    "mass_from_volume_or_ecv": "Brain_Mass_estimated_from_volume",
+    "mass_estimated_from_volume": "Brain_Mass_estimated_from_volume",
+    "mass_estimated_from_brain_volume": "Brain_Mass_estimated_from_brain_volume",
+    "mass_estimated_from_endocranial_volume": "Brain_Mass_estimated_from_endocranial_volume",
 }
 # FAMILY is many-to-one (mass_measured and mass_measured_specimen both emit
 # Brain_Mass_measured), so de-duplicate before using the Measures as column names
-MEASURES_OUT = sorted(set(FAMILY.values()))
+MEASURES_OUT = sorted(set(FAMILY.values()) - {"Brain_Mass_mass_or_volume"})
 def round_n(x, d):
     """Round half away from zero at `d` decimals, identically in R and Python.
 
@@ -261,80 +271,131 @@ def species_getter(headers, sample):
     return lambda r: ""
 
 
-# ---- pass 1: locate column + per (author, column) magnitude for unit-less cols
-targets, gmax = [], defaultdict(float)
-for path in sorted(glob.glob(os.path.join(PUB, "*.tsv"))):
-    fn = os.path.basename(path)
-    if fn in SKIP:
-        continue
-    with open(path, encoding="utf-8", errors="replace") as fh:
-        lines = fh.read().splitlines()
-    if not lines:
-        continue
-    rows = [ln.split("\t") for ln in lines]
-    headers = [h.replace('"', "") for h in rows[0]]
-    if not any(BRAIN_RX.search(n(h)) for h in headers):
-        continue
-    col = pick_column(headers)
-    if col is None:
-        continue
-    ci = headers.index(col)
-    vals = [num(r[ci]) for r in rows[1:] if len(r) > ci]
-    vals = [v for v in vals if v is not None]
-    if not vals:
-        continue
-    mi = manifest.get(fn, {})
-    author, year = mi.get("first_author", ""), str(mi.get("year", "") or "")
-    targets.append(dict(fn=fn, rows=rows, headers=headers, col=col, ci=ci,
-                        author=author, year=year))
-    if named_unit(col) is None:
-        k = (author.lower(), n(col))
-        gmax[k] = max(gmax[k], max(vals))
-
-# ---- pass 2: harvest --------------------------------------------------------
-uf = []
-for t in targets:
-    unit = named_unit(t["col"]) or ("mg" if gmax[(t["author"].lower(), n(t["col"]))] > 20000 else "g")
-    ay = (t["author"].lower(), t["year"])
-    team = team_ay.get(ay) or (t["author"] if t["author"] else t["fn"])
-    role = role_ay.get(ay, "secondary")
-    folder = folder_of(t["author"], t["year"], t["col"])
-    grp = basis_grp.get((folder, t["col"]), "")
-    fixed_species = SPECIES_OVERRIDE.get(t["fn"])
-    get_sp = (lambda r, _s=fixed_species: _s) if fixed_species else \
-        species_getter(t["headers"], t["rows"][1:60])
-    for r in t["rows"][1:]:
-        if len(r) <= t["ci"]:
+# --reclassify-current re-pools the last successful harvest plus its retained
+# review/veto rows. This supports reviewed classification updates without guessing
+# bases for newly added source tables that are not yet ready for a fresh harvest.
+if "--reclassify-current" in sys.argv:
+    uf = []
+    for filename in ("brain_mass_unfiltered.csv", "brain_mass_basis_review.csv", "brain_mass_vetoed_rows.csv"):
+        path = os.path.join(HERE, filename)
+        if os.path.exists(path):
+            for r in read_csv_rows(path):
+                r.pop("veto_flag", None)
+                r["Value_g"] = float(r["Value_g"])
+                uf.append(r)
+else:
+    # ---- pass 1: locate column + per (author, column) magnitude for unit-less cols
+    targets, gmax = [], defaultdict(float)
+    for path in sorted(glob.glob(os.path.join(PUB, "*.tsv"))):
+        fn = os.path.basename(path)
+        if fn in SKIP:
             continue
-        if t["fn"] == "10.1159%2F000142809_TableI.tsv" and "merge_eligible" in t["headers"]:
-            eligible = r[t["headers"].index("merge_eligible")].strip().upper()
-            if eligible not in ("TRUE", "1", "YES"):
+        with open(path, encoding="utf-8", errors="replace") as fh:
+            lines = fh.read().splitlines()
+        if not lines:
+            continue
+        rows = [ln.split("\t") for ln in lines]
+        headers = [h.replace('"', "") for h in rows[0]]
+        if not any(BRAIN_RX.search(n(h)) for h in headers):
+            continue
+        col = pick_column(headers)
+        if col is None:
+            continue
+        ci = headers.index(col)
+        vals = [num(r[ci]) for r in rows[1:] if len(r) > ci]
+        vals = [v for v in vals if v is not None]
+        if not vals:
+            continue
+        mi = manifest.get(fn, {})
+        author, year = mi.get("first_author", ""), str(mi.get("year", "") or "")
+        targets.append(dict(fn=fn, rows=rows, headers=headers, col=col, ci=ci,
+                            author=author, year=year))
+        if named_unit(col) is None:
+            k = (author.lower(), n(col))
+            gmax[k] = max(gmax[k], max(vals))
+
+    # ---- pass 2: harvest --------------------------------------------------------
+    uf = []
+    for t in targets:
+        unit = named_unit(t["col"]) or ("mg" if gmax[(t["author"].lower(), n(t["col"]))] > 20000 else "g")
+        ay = (t["author"].lower(), t["year"])
+        team = team_ay.get(ay) or (t["author"] if t["author"] else t["fn"])
+        role = role_ay.get(ay, "secondary")
+        folder = folder_of(t["author"], t["year"], t["col"])
+        grp = basis_grp.get((folder, t["col"]), "")
+        fixed_species = SPECIES_OVERRIDE.get(t["fn"])
+        get_sp = (lambda r, _s=fixed_species: _s) if fixed_species else \
+            species_getter(t["headers"], t["rows"][1:60])
+        for r in t["rows"][1:]:
+            if len(r) <= t["ci"]:
                 continue
-        v = num(r[t["ci"]])
-        if v is None:
-            continue
-        sp = resolve(get_sp(r))
-        if not sp or sp.lower() in ("na", "none"):
-            continue
-        row_role = role
-        if t["fn"] == "10.1159%2F000142809_TableI.tsv" and "data_role" in t["headers"]:
-            row_role = r[t["headers"].index("data_role")].strip() or role
-        uf.append(dict(Species=sp, Measure="Brain_Mass", Units="g", # 10 significant digits: the mg->g conversion leaves float noise (3550 * 0.001 =
-                           # 3.5500000000000003) that would be written out verbatim here and
-                           # would not match the R twin. 10 sig digits is far finer than any
-                           # source reports and makes the two builders write the same double.
-                           Value_g=float("%.10g" % (v * FACTOR[unit])),
-                       raw_value=r[t["ci"]].replace('"', ""), raw_unit=unit, Source=t["fn"],
-                       first_author=t["author"], Year=t["year"], Team=team, role=row_role,
-                       paper=folder, column=t["col"], poolable_group=grp,
-                       basis=basis_col.get((folder, t["col"]), {}).get("basis", ""),
-                       measure_emitted=FAMILY.get(grp, "")))
+            if t["fn"] == "10.1159%2F000142809_TableI.tsv" and "merge_eligible" in t["headers"]:
+                eligible = r[t["headers"].index("merge_eligible")].strip().upper()
+                if eligible not in ("TRUE", "1", "YES"):
+                    continue
+            v = num(r[t["ci"]])
+            if v is None:
+                continue
+            sp = resolve(get_sp(r))
+            if not sp or sp.lower() in ("na", "none"):
+                continue
+            row_role = role
+            if t["fn"] == "10.1159%2F000142809_TableI.tsv" and "data_role" in t["headers"]:
+                row_role = r[t["headers"].index("data_role")].strip() or role
+            uf.append(dict(Species=sp, Measure="Brain_Mass", Units="g", # 10 significant digits: the mg->g conversion leaves float noise (3550 * 0.001 =
+                               # 3.5500000000000003) that would be written out verbatim here and
+                               # would not match the R twin. 10 sig digits is far finer than any
+                               # source reports and makes the two builders write the same double.
+                               Value_g=float("%.10g" % (v * FACTOR[unit])),
+                           raw_value=r[t["ci"]].replace('"', ""), raw_unit=unit, Source=t["fn"],
+                           first_author=t["author"], Year=t["year"], Team=team, role=row_role,
+                           paper=folder, column=t["col"], poolable_group=grp,
+                           basis=basis_col.get((folder, t["col"]), {}).get("basis", ""),
+                           measure_emitted=FAMILY.get(grp, "")))
 
-unattributed = [r for r in uf if not r["poolable_group"]]
-if unattributed:
-    seen = sorted({(r["paper"], r["column"]) for r in unattributed})
-    sys.exit(f"ABORT: {len(unattributed)} harvested rows have no basis in "
-             f"_keys/brain_size_basis.csv: {seen}\nAdd them there before pooling.")
+    unattributed = [r for r in uf if not r["poolable_group"]]
+    if unattributed:
+        seen = sorted({(r["paper"], r["column"]) for r in unattributed})
+        sys.exit(f"ABORT: {len(unattributed)} harvested rows have no basis in "
+                 f"_keys/brain_size_basis.csv: {seen}\nAdd them there before pooling.")
+
+# ---- explicit source-row measurement decisions ------------------------------
+# Column defaults are only defaults. A reviewed record can have a known physical
+# basis even when its containing compilation mixes masses and volumes.
+for r in uf:
+    r.setdefault("basis_resolution_id", "")
+    r.setdefault("original_quantity", "")
+    r.setdefault("basis_resolution_evidence", "")
+    r["pool_eligible"] = str(r.get("pool_eligible", "True")).lower() == "true"
+    r["measure_emitted"] = FAMILY.get(r["poolable_group"], r["measure_emitted"])
+    if r["poolable_group"] == "mass_from_volume_or_ecv" and not r["original_quantity"]:
+        r["original_quantity"] = "volume_subtype_unchecked"
+row_key = lambda r: (r["Source"], r["Species"], r["column"], float(r["Value_g"]))
+by_key = defaultdict(list)
+for r in uf:
+    by_key[row_key(r)].append(r)
+resolutions = read_csv_rows(os.path.join(HERE, "brain_mass_row_basis.csv"))
+if len({r["resolution_id"] for r in resolutions}) != len(resolutions):
+    sys.exit("ABORT: duplicate row-basis resolution IDs")
+for f in resolutions:
+    hit = by_key.get(row_key(f), [])
+    if len(hit) != int(f["n_expected"]):
+        sys.exit(f"ABORT: {f['resolution_id']} matched {len(hit)} rows, expected {f['n_expected']}")
+    if f["poolable_group"] and f["poolable_group"] not in FAMILY:
+        sys.exit(f"ABORT: unknown resolved basis family {f['poolable_group']}")
+    for r in hit:
+        r["basis_resolution_id"] = f["resolution_id"]
+        r["original_quantity"] = f["original_quantity"]
+        r["basis_resolution_evidence"] = f["evidence"]
+        r["pool_eligible"] = f["pool_eligible"].lower() == "true"
+        if f["poolable_group"]:
+            r["poolable_group"] = f["poolable_group"]
+            r["basis"] = f["basis"]
+            r["measure_emitted"] = FAMILY[f["poolable_group"]]
+        if f["Team_override"]:
+            r["Team"] = f["Team_override"]
+        if f["role_override"]:
+            r["role"] = f["role_override"]
 
 # ---- value vetoes: brain_mass_value_flags.csv --------------------------------------
 # Same schema and `skip` action as __merging_volumes/volumes_select_value_flags.csv, plus
@@ -363,13 +424,24 @@ if os.path.exists(VETO_PATH):
 
 UF_COLS = ["Species", "Measure", "Units", "Value_g", "raw_value", "raw_unit", "Source",
            "first_author", "Year", "Team", "role", "paper", "column", "poolable_group",
-           "basis", "measure_emitted"]
+           "basis", "measure_emitted", "basis_resolution_id", "original_quantity",
+           "basis_resolution_evidence", "pool_eligible"]
 with open(os.path.join(HERE, "brain_mass_vetoed_rows.csv"), "w", newline="", encoding="utf-8") as fh:
-    w = csv.DictWriter(fh, fieldnames=UF_COLS + ["veto_flag"])
+    w = csv.DictWriter(fh, fieldnames=UF_COLS + ["veto_flag"], extrasaction="ignore")
     w.writeheader()
     w.writerows(vetoed)
+# Unresolved/composite/converted-volume records are retained for review, never
+# exposed as a g-valued mass-or-volume trait. No fallback exception is approved.
+review = [r for r in uf if r["poolable_group"] == "mass_or_volume_mixed"]
+for r in review:
+    r["pool_eligible"] = False
+uf = [r for r in uf if r["poolable_group"] != "mass_or_volume_mixed"]
+with open(os.path.join(HERE, "brain_mass_basis_review.csv"), "w", newline="", encoding="utf-8") as fh:
+    w = csv.DictWriter(fh, fieldnames=UF_COLS, extrasaction="ignore")
+    w.writeheader()
+    w.writerows(review)
 with open(os.path.join(HERE, "brain_mass_unfiltered.csv"), "w", newline="", encoding="utf-8") as fh:
-    w = csv.DictWriter(fh, fieldnames=UF_COLS)
+    w = csv.DictWriter(fh, fieldnames=UF_COLS, extrasaction="ignore")
     w.writeheader()
     w.writerows(uf)
 
@@ -377,6 +449,8 @@ with open(os.path.join(HERE, "brain_mass_unfiltered.csv"), "w", newline="", enco
 long_rows, dedupe, cross = [], [], []
 by_sp_fam = defaultdict(list)
 for r in uf:
+    if not r["pool_eligible"]:
+        continue
     by_sp_fam[(r["Species"], r["measure_emitted"])].append(r)
 
 for (sp, meas) in sorted(by_sp_fam):
@@ -412,14 +486,40 @@ for (sp, meas) in sorted(by_sp_fam):
                                f"{r['first_author']}{r['Year']}({r['Team']},{r['role']})="
                                f"{r['Value_g']:.2f}" for r in d)))
 
+# Combined best-available view: choose one existing species-level value. It is
+# not a new observation or an average across measurement/derivation methods.
+COMBINED = "Brain mass (measured or estimated from volume)"
+COMBINED_PRIORITY = ["Brain_Mass_measured", "Brain_Mass_estimated_from_brain_volume",
+                     "Brain_Mass_estimated_from_endocranial_volume", "Brain_Mass_estimated_from_volume"]
+METHOD = {"Brain_Mass_measured": "directly measured",
+          "Brain_Mass_estimated_from_brain_volume": "estimated from brain-tissue volume",
+          "Brain_Mass_estimated_from_endocranial_volume": "estimated from endocranial volume",
+          "Brain_Mass_estimated_from_volume": "estimated from volume; subtype unresolved"}
+separate = {(r["Species"], r["Measure"]): r for r in long_rows}
+combined = []
+for sp in sorted({r["Species"] for r in long_rows}):
+    selected = next((separate[(sp, m)] for m in COMBINED_PRIORITY if (sp, m) in separate), None)
+    if selected is None:
+        continue
+    r = dict(selected)
+    r.update(Measure=COMBINED, selected_measure=selected["Measure"],
+             measurement_method=METHOD[selected["Measure"]],
+             selection_reason="first available: measured > brain-tissue-volume estimate > endocranial-volume estimate > volume estimate of unresolved subtype")
+    combined.append(r)
+long_rows.extend(combined)
 long_rows.sort(key=lambda r: (r["Species"], r["Measure"]))
 LONG_COLS = ["Species", "measure_class", "Measure", "Units", "Value", "Value_median",
              "n_sources", "n_teams", "n_teams_primary", "primary_used", "Teams", "roles",
-             "basis", "value_min", "value_max"]
+             "basis", "value_min", "value_max", "selected_measure", "measurement_method", "selection_reason"]
 with open(os.path.join(HERE, "brain_mass_long.csv"), "w", newline="", encoding="utf-8") as fh:
     w = csv.DictWriter(fh, fieldnames=LONG_COLS)
     w.writeheader()
     w.writerows(long_rows)
+
+with open(os.path.join(HERE, "brain_mass_combined_provenance.csv"), "w", newline="", encoding="utf-8") as fh:
+    w = csv.DictWriter(fh, fieldnames=LONG_COLS)
+    w.writeheader()
+    w.writerows(combined)
 
 dedupe.sort(key=lambda r: -r["n_sources"])
 with open(os.path.join(HERE, "brain_mass_dedupe_report.csv"), "w", newline="",
@@ -434,6 +534,8 @@ with open(os.path.join(HERE, "brain_mass_dedupe_report.csv"), "w", newline="",
 # bases differ for the species that have more than one. This is the review list.
 bysp = defaultdict(dict)
 for r in long_rows:
+    if r["Measure"] == COMBINED:
+        continue
     bysp[r["Species"]][r["Measure"]] = r["Value"]
 for sp in sorted(bysp):
     got = bysp[sp]

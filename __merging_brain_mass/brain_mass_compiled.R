@@ -93,7 +93,14 @@ species_getter <- function(headers, sample) {
 }
 
 # pass 1: locate column + global unit-less max per (author, col)
-files <- list.files(pub, "\\.tsv$", full.names = TRUE); targets <- list(); gmax <- list()
+files <- list.files(pub, "\\.tsv$", full.names = TRUE)
+## Secondary provenance builds: Mace's weights estimate skull capacities, and
+## Isler's mixed g/cc values have no recoverable per-row primary source here.
+files <- files[!basename(files) %in% c(
+  "10.1111%2Fj.1469-7998.1981.tb03449.x_TableI.tsv",
+  "10.1016%2Fj.jhevol.2012.03.009_1-s2.0-S0047248412000577-mmc2.xls.tsv",
+  "10.1086%2F421334_datafile1.tsv")]
+targets <- list(); gmax <- list()
 for (path in files) {
   fn <- basename(path); lines <- readLines(path, warn = FALSE); if (!length(lines)) next
   rows <- strsplit(lines, "\t", fixed = TRUE); headers <- gsub('"',"",rows[[1]])
@@ -143,7 +150,10 @@ FAMILY <- c(mass_measured           = "Brain_Mass_measured",
             mass_measured_excl_ob   = "Brain_Mass_excl_olfactory_bulb",
             mass_or_volume_mixed    = "Brain_Mass_mass_or_volume",
             sum_of_parts_incl_ob    = "Brain_size_sum_of_structures",
-            mass_from_volume_or_ecv = "Brain_Mass_from_volume_or_ecv")
+            mass_from_volume_or_ecv = "Brain_Mass_estimated_from_volume",
+            mass_estimated_from_volume = "Brain_Mass_estimated_from_volume",
+            mass_estimated_from_brain_volume = "Brain_Mass_estimated_from_brain_volume",
+            mass_estimated_from_endocranial_volume = "Brain_Mass_estimated_from_endocranial_volume")
 grp_of <- function(paper, col) {
   i <- which(basis_key$paper == paper & basis_key$column == col)
   if (length(i)) basis_key$poolable_group[i[1]] else NA_character_
@@ -181,52 +191,94 @@ folder_of <- function(author, year, col) {
   if (length(h)) h[1] else ""
 }
 
-# pass 2: harvest
-uf <- list()
-for (t in targets) {
-  gm <- gmax[[paste(tolower(t$author), norm(t$col))]] %||% 0
-  unit <- named_unit(t$col); if (is.na(unit)) unit <- if (gm > 20000) "mg" else "g"
-  ay <- paste(tolower(t$author), t$year)
-  team <- team_ay[[ay]] %||% (if (nzchar(t$author)) t$author else t$fn)
-  role <- role_ay[[ay]] %||% "secondary"
-  get_sp <- species_getter(t$headers, t$rows[2:min(length(t$rows),60)])
-  paper <- folder_of(t$author, t$year, t$col)
-  grp   <- grp_of(paper, t$col)
-  if (!nzchar(t$author) || !nzchar(t$year))
-    stop(sprintf(paste0("%s has no author/year in __ShinyApp/data/source_manifest.csv or __ReadMe.xlsx, so its paper folder ",
-                        "(and measurement basis) cannot be resolved. Its __ReadMe.xlsx row is missing: run ",
-                        "_tools/restore_registry_rows.R, then _tools/file_list.R, then __ShinyApp/build_data.R, ",
-                        "and re-run this script."), t$fn), call. = FALSE)
-  if (is.na(grp))
-    stop(sprintf("no measurement basis on record for %s / %s (paper folder '%s'). Add it to ASSIGN in _keys/build_brain_size_basis.py and re-run that builder.",
-                 t$fn, t$col, paper), call. = FALSE)
-  meas  <- FAMILY[[grp]]
-  basis <- basis_of(paper, t$col)
-  for (r in t$rows[-1]) {
-    if (length(r) < t$ci) next
-    if (t$fn == "10.1159%2F000142809_TableI.tsv" && "merge_eligible" %in% t$headers) {
-      gate <- match("merge_eligible", t$headers)
-      if (length(r) < gate || !toupper(trimws(r[gate])) %in% c("TRUE", "1", "YES")) next
+## Reclassify the last successful harvest while newly added tables await basis
+## curation. Recombine the retained review/veto rows so reruns are lossless.
+if ("--reclassify-current" %in% commandArgs(trailingOnly=TRUE)) {
+  parts <- lapply(c("brain_mass_unfiltered.csv", "brain_mass_basis_review.csv", "brain_mass_vetoed_rows.csv"), function(f) {
+    p <- file.path(out,f)
+    if(file.exists(p)) read.csv(p,check.names=FALSE,colClasses="character",na.strings=NULL) else NULL
+  })
+  parts <- Filter(Negate(is.null),parts)
+  cols <- unique(unlist(lapply(parts,names))); cols <- setdiff(cols,"veto_flag")
+  parts <- lapply(parts,function(d) { for(n in setdiff(cols,names(d)))d[[n]]<-"";d[,cols,drop=FALSE] })
+  uf <- do.call(rbind,parts);uf$Value_g<-as.numeric(uf$Value_g)
+} else {
+  # pass 2: harvest
+  uf <- list()
+  for (t in targets) {
+    gm <- gmax[[paste(tolower(t$author), norm(t$col))]] %||% 0
+    unit <- named_unit(t$col); if (is.na(unit)) unit <- if (gm > 20000) "mg" else "g"
+    ay <- paste(tolower(t$author), t$year)
+    team <- team_ay[[ay]] %||% (if (nzchar(t$author)) t$author else t$fn)
+    role <- role_ay[[ay]] %||% "secondary"
+    get_sp <- species_getter(t$headers, t$rows[2:min(length(t$rows),60)])
+    paper <- folder_of(t$author, t$year, t$col)
+    grp   <- grp_of(paper, t$col)
+    if (!nzchar(t$author) || !nzchar(t$year))
+      stop(sprintf(paste0("%s has no author/year in __ShinyApp/data/source_manifest.csv or __ReadMe.xlsx, so its paper folder ",
+                          "(and measurement basis) cannot be resolved. Its __ReadMe.xlsx row is missing: run ",
+                          "_tools/restore_registry_rows.R, then _tools/file_list.R, then __ShinyApp/build_data.R, ",
+                          "and re-run this script."), t$fn), call. = FALSE)
+    if (is.na(grp))
+      stop(sprintf("no measurement basis on record for %s / %s (paper folder '%s'). Add it to ASSIGN in _keys/build_brain_size_basis.py and re-run that builder.",
+                   t$fn, t$col, paper), call. = FALSE)
+    meas  <- FAMILY[[grp]]
+    basis <- basis_of(paper, t$col)
+    for (r in t$rows[-1]) {
+      if (length(r) < t$ci) next
+      if (t$fn == "10.1159%2F000142809_TableI.tsv" && "merge_eligible" %in% t$headers) {
+        gate <- match("merge_eligible", t$headers)
+        if (length(r) < gate || !toupper(trimws(r[gate])) %in% c("TRUE", "1", "YES")) next
+      }
+      v <- suppressWarnings(as.numeric(gsub('"',"",r[t$ci]))); if (is.na(v)) next
+      row_role <- role
+      if (t$fn == "10.1159%2F000142809_TableI.tsv" && "data_role" %in% t$headers) {
+        role_i <- match("data_role", t$headers)
+        if (length(r) >= role_i && nzchar(trimws(r[role_i]))) row_role <- trimws(r[role_i])
+      }
+      sp_printed <- get_sp(r); rs <- resolve(sp_printed, if (nzchar(paper)) paper else NA_character_)
+      sp <- rs$accepted_name; if (is.na(sp) || !nzchar(sp) || tolower(sp) %in% c("na","none")) next
+      uf[[length(uf)+1L]] <- data.frame(Species=sp, species_printed=sp_printed, accepted_name=sp,
+        species_basis=rs$species_basis, reidentified=rs$reidentified, Measure="Brain_Mass", Units="g",
+        # 10 significant digits: the mg->g conversion leaves float noise (3550 * 0.001 =
+        # 3.5500000000000003) that R and Python would then write out differently.
+        Value_g=as.numeric(sprintf("%.10g", v*FACTOR[[unit]])), raw_value=gsub('"',"",r[t$ci]), raw_unit=unit,
+        Source=t$fn, first_author=t$author, Year=t$year, Team=team, role=row_role,
+        paper=paper, column=t$col, poolable_group=grp, basis=basis, measure_emitted=meas,
+        stringsAsFactors=FALSE)
     }
-    v <- suppressWarnings(as.numeric(gsub('"',"",r[t$ci]))); if (is.na(v)) next
-    row_role <- role
-    if (t$fn == "10.1159%2F000142809_TableI.tsv" && "data_role" %in% t$headers) {
-      role_i <- match("data_role", t$headers)
-      if (length(r) >= role_i && nzchar(trimws(r[role_i]))) row_role <- trimws(r[role_i])
-    }
-    sp_printed <- get_sp(r); rs <- resolve(sp_printed, if (nzchar(paper)) paper else NA_character_)
-    sp <- rs$accepted_name; if (is.na(sp) || !nzchar(sp) || tolower(sp) %in% c("na","none")) next
-    uf[[length(uf)+1L]] <- data.frame(Species=sp, species_printed=sp_printed, accepted_name=sp,
-      species_basis=rs$species_basis, reidentified=rs$reidentified, Measure="Brain_Mass", Units="g",
-      # 10 significant digits: the mg->g conversion leaves float noise (3550 * 0.001 =
-      # 3.5500000000000003) that R and Python would then write out differently.
-      Value_g=as.numeric(sprintf("%.10g", v*FACTOR[[unit]])), raw_value=gsub('"',"",r[t$ci]), raw_unit=unit,
-      Source=t$fn, first_author=t$author, Year=t$year, Team=team, role=row_role,
-      paper=paper, column=t$col, poolable_group=grp, basis=basis, measure_emitted=meas,
-      stringsAsFactors=FALSE)
   }
+  uf <- do.call(rbind, uf)
+
 }
-uf <- do.call(rbind, uf)
+
+## Explicit row-level decisions override compilation-wide unknown basis.
+for(n in c("basis_resolution_id","original_quantity","basis_resolution_evidence"))
+  if(!n %in% names(uf))uf[[n]]<-""
+if(!"pool_eligible" %in% names(uf))uf$pool_eligible<-TRUE
+uf$pool_eligible<-tolower(as.character(uf$pool_eligible))=="true"
+stopifnot(all(uf$poolable_group %in% names(FAMILY)))
+uf$measure_emitted<-unname(FAMILY[uf$poolable_group])
+legacy_estimate<-uf$poolable_group=="mass_from_volume_or_ecv" & !nzchar(uf$original_quantity)
+uf$original_quantity[legacy_estimate]<-"volume_subtype_unchecked"
+resolutions<-read.csv(file.path(out,"brain_mass_row_basis.csv"),check.names=FALSE,colClasses="character",na.strings=NULL)
+stopifnot(!anyDuplicated(resolutions$resolution_id))
+for(i in seq_len(nrow(resolutions))) {
+  f<-resolutions[i,]
+  sel<-uf$Source==f$Source & uf$Species==f$Species & uf$column==f$column & uf$Value_g==as.numeric(f$Value_g)
+  if(sum(sel)!=as.integer(f$n_expected))stop(f$resolution_id," matched ",sum(sel)," rows, expected ",f$n_expected)
+  uf$basis_resolution_id[sel]<-f$resolution_id
+  uf$original_quantity[sel]<-f$original_quantity
+  uf$basis_resolution_evidence[sel]<-f$evidence
+  uf$pool_eligible[sel]<-tolower(f$pool_eligible)=="true"
+  if(nzchar(f$poolable_group)) {
+    stopifnot(f$poolable_group %in% names(FAMILY))
+    uf$poolable_group[sel]<-f$poolable_group;uf$basis[sel]<-f$basis
+    uf$measure_emitted[sel]<-FAMILY[[f$poolable_group]]
+  }
+  if(nzchar(f$Team_override))uf$Team[sel]<-f$Team_override
+  if(nzchar(f$role_override))uf$role[sel]<-f$role_override
+}
 
 ## ---- value vetoes: brain_mass_value_flags.csv ----------------------------------------
 ## Same schema and `skip` action as __merging_volumes/volumes_select_value_flags.csv, plus n_expected:
@@ -252,11 +304,19 @@ if (file.exists(vpath)) {
   message("value vetoes: dropped ", nrow(vetoed), " row(s) from the pool")
 }
 
+## Unresolved, composite and not-yet-restored volume records stay in review.
+## No species has an approved ambiguous fallback, so none enters a production trait.
+review<-uf[uf$poolable_group=="mass_or_volume_mixed",,drop=FALSE]
+review$pool_eligible<-FALSE
+write.csv(review,file.path(out,"brain_mass_basis_review.csv"),row.names=FALSE,na="")
+uf<-uf[uf$poolable_group!="mass_or_volume_mixed",,drop=FALSE]
+pool<-uf[uf$pool_eligible,,drop=FALSE]
+
 # pool -- WITHIN basis only, never across
 long <- list(); dedupe <- list()
-for (key in sort(unique(paste(uf$Species, uf$measure_emitted, sep = "\r")))) {
+for (key in sort(unique(paste(pool$Species, pool$measure_emitted, sep = "\r")))) {
   parts <- strsplit(key, "\r", fixed = TRUE)[[1]]; sp <- parts[1]; meas <- parts[2]
-  d <- uf[uf$Species == sp & uf$measure_emitted == meas, ]; tv <- tapply(d$Value_g, d$Team, mean)
+  d <- pool[pool$Species == sp & pool$measure_emitted == meas, ]; tv <- tapply(d$Value_g, d$Team, mean)
   trole <- tapply(seq_len(nrow(d)), d$Team, function(ix) if (any(d$role[ix]=="primary")) "primary" else d$role[ix][1])
   prim <- tv[trole[names(tv)] == "primary"]; used <- if (length(prim)) prim else tv
   long[[length(long)+1L]] <- data.frame(Species=sp, measure_class="mass", Measure=meas, Units="g",
@@ -276,18 +336,41 @@ long <- long[order(long$Species, long$Measure), ]
 ## Species naming columns (SPECIES_NAMING.md v1): long is pooled per species x measure, so
 ## species_printed / species_basis list the distinct printed names / bases of the unfiltered rows that
 ## resolved to this Species; accepted_name == Species; reidentified = any such row was a reident.
-sp_cols <- as.data.frame(species_columns_summary(uf, "Species"))
-ix <- match(long$Species, sp_cols$Species)
-long$species_printed <- sp_cols$species_printed[ix]; long$accepted_name <- long$Species
-long$species_basis   <- sp_cols$species_basis[ix];   long$reidentified  <- sp_cols$reidentified[ix]
+if(all(c("species_printed","species_basis","reidentified") %in% names(pool))) {
+  sp_cols <- as.data.frame(species_columns_summary(uf, "Species"))
+  ix <- match(long$Species, sp_cols$Species)
+  long$species_printed <- sp_cols$species_printed[ix]; long$accepted_name <- long$Species
+  long$species_basis   <- sp_cols$species_basis[ix];   long$reidentified  <- sp_cols$reidentified[ix]
+
+}
+
+# Best-available combined view selects a single existing value per species.
+COMBINED <- "Brain mass (measured or estimated from volume)"
+combined_priority <- c("Brain_Mass_measured","Brain_Mass_estimated_from_brain_volume",
+                       "Brain_Mass_estimated_from_endocranial_volume","Brain_Mass_estimated_from_volume")
+method <- c("directly measured","estimated from brain-tissue volume",
+            "estimated from endocranial volume","estimated from volume; subtype unresolved")
+long$selected_measure<-"";long$measurement_method<-"";long$selection_reason<-""
+combined<-list()
+for(sp in sort(unique(long$Species))) {
+  d<-long[long$Species==sp & long$Measure %in% combined_priority,,drop=FALSE]
+  if(!nrow(d))next
+  j<-which.min(match(d$Measure,combined_priority));r<-d[j,,drop=FALSE]
+  r$selected_measure<-r$Measure;r$measurement_method<-method[match(r$Measure,combined_priority)]
+  r$Measure<-COMBINED
+  r$selection_reason<-"first available: measured > brain-tissue-volume estimate > endocranial-volume estimate > volume estimate of unresolved subtype"
+  combined[[length(combined)+1L]]<-r
+}
+combined<-do.call(rbind,combined)
+long<-rbind(long,combined);long<-long[order(long$Species,long$Measure),]
 
 # Cross-basis comparison: the one thing the split makes unreadable from the long table alone.
 # One row per species carrying more than one basis, so a reader can see how far the bases
 # disagree for the same animal without any of it having been pooled.
-meas_order <- sort(unique(unname(FAMILY)))
+meas_order <- sort(setdiff(unique(unname(FAMILY)),"Brain_Mass_mass_or_volume"))
 cross <- list()
 for (sp in sort(unique(long$Species))) {
-  d <- long[long$Species == sp, ]
+  d <- long[long$Species == sp & long$Measure != COMBINED, ]
   if (nrow(d) < 2) next
   v <- setNames(as.list(rep("", length(meas_order))), meas_order)
   v[d$Measure] <- as.list(d$Value)
@@ -301,9 +384,11 @@ cross <- do.call(rbind, cross)
 write.csv(vetoed, file.path(out,"brain_mass_vetoed_rows.csv"), row.names=FALSE, na="")
 write.csv(uf,   file.path(out,"brain_mass_unfiltered.csv"), row.names=FALSE)
 write.csv(long, file.path(out,"brain_mass_long.csv"), row.names=FALSE)
+write.csv(combined,file.path(out,"brain_mass_combined_provenance.csv"),row.names=FALSE,na="")
 write.csv(dedupe, file.path(out,"brain_mass_dedupe_report.csv"), row.names=FALSE)
 write.csv(cross, file.path(out,"brain_size_basis_comparison.csv"), row.names=FALSE)
-# wide: one column per basis, because they are different quantities
+# wide: retain the separate bases and the explicitly labelled selection view
+meas_order<-sort(unique(long$Measure))
 wide <- data.frame(Species=sort(unique(long$Species)), stringsAsFactors=FALSE)
 for (m in meas_order) {
   ix <- match(wide$Species, long$Species[long$Measure == m])

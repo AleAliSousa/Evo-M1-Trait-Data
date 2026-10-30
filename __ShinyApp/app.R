@@ -237,11 +237,24 @@ load_compiled <- function() {
   # A merge long file has Measure/Units/Value/n_sources/Teams (no Variable/Source).
   std_merge <- function(gh_rel, local, dataset) {
     d <- read_csv_gh(gh_rel, local)
+    # Unresolved mixed-basis records belong in the review table, including when
+    # an older merge is loaded. No species has an approved ambiguous fallback.
+    if (dataset == "Brain mass") {
+      d <- d[d$Measure != "Brain_Mass_mass_or_volume", , drop = FALSE]
+      d$Measure[d$Measure == "Brain_Mass_from_volume_or_ecv"] <- "Brain_Mass_estimated_from_volume"
+    }
     lab <- paste0(d$Measure, " (", d$Units, ")")
+    provenance <- paste0("EvoM1 ", tolower(d$Measure), " merge (", d$n_sources, " sources)")
+    if (dataset == "Brain mass" && all(c("selected_measure", "measurement_method") %in% names(d))) {
+      selected <- d$Measure == "Brain mass (measured or estimated from volume)"
+      provenance[selected] <- paste0("Selected ", d$measurement_method[selected],
+                                    "; ", d$selected_measure[selected],
+                                    " (", d$n_sources[selected], " source reports)")
+    }
     data.frame(
       Species = d$Species, Dataset = dataset, Variable = lab,
       Value = as.character(d$Value), Value_num = suppressWarnings(as.numeric(d$Value)),
-      Source = paste0("EvoM1 ", tolower(d$Measure), " merge (", d$n_sources, " sources)"),
+      Source = provenance,
       Teams = as.character(d$Teams),
       N_sources = suppressWarnings(as.integer(d$n_sources)),
       Variable_raw = lab, Unit = d$Units, Unit_raw = d$Units,
@@ -593,11 +606,10 @@ lab_meas   <- vd_get("Measure");       lab_unit   <- vd_get("Unit")
 lab_terms  <- vd_get("glossary_terms")
 lab_defsrc <- vd_get("definition_source")
 lab_ismeas <- vd_get("is_measurement")
-# Measurement basis. Whole-brain size is reported on bases that are not the same
-# quantity -- a weighed mass, a mass excluding the olfactory bulbs, a compilation
-# mixing masses with volumes converted at 1 cm3 = 1 g, a sum of sub-structures, an
-# endocranial capacity. Labels that share a poolable_group are the same quantity;
-# labels with different non-empty groups are not, and the plot says so.
+# Measurement/derivation basis. Direct and volume-derived mass estimates share
+# a target quantity, but retain different methods and assumptions. Raw cranial
+# capacity remains a volume. poolable_group records which bases are pooled;
+# differing groups stay visible in comparisons rather than being silently merged.
 lab_pool   <- vd_get("poolable_group")
 # comparability family: which variables are candidate estimates of the same thing
 lab_family <- vd_get("poolable_family")
@@ -608,6 +620,10 @@ POOL_LABEL <- c(
   sum_of_parts_incl_ob      = "sum of measured sub-structures, olfactory bulbs included",
   mass_from_volume_or_ecv   = paste("not weighed: computed from a measured brain volume, or",
                                     "from an endocranial volume"),
+  mass_estimated_from_volume = "brain mass estimated from volume; volume subtype not resolved",
+  mass_estimated_from_brain_volume = "brain mass estimated from brain-tissue volume",
+  mass_estimated_from_endocranial_volume = "brain mass estimated from skull capacity (endocranial volume)",
+  mass_measured_or_estimated_selection = "best-available mass; measured preferred, otherwise a labelled volume-derived estimate",
   volume_total              = "brain volume including the ventricles",
   # sensory measures: the method is the basis, because a behavioural threshold and a
   # number computed from retinal cell density are not the same measurement

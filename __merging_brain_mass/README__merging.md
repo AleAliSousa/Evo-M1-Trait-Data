@@ -1,5 +1,114 @@
 # Merging brain-mass data
 
+## Current policy: measured mass and volume-derived mass estimates
+
+Known calculated masses are valid **estimated-mass** traits. There is no need to
+invert them back into cc to retain them as estimates. The reported gram values
+remain unchanged, with their original measurement basis and compiler derivation
+kept in `brain_mass_row_basis.csv` and the typed unfiltered table:
+
+| Trait | Meaning | Species in current output |
+|---|---|---:|
+| `Brain_Mass_measured` | Directly measured brain mass | 678 |
+| `Brain_Mass_estimated_from_brain_volume` | Calculated from brain-tissue volume | 25 |
+| `Brain_Mass_estimated_from_endocranial_volume` | Calculated from skull capacity | 637 |
+| `Brain_Mass_estimated_from_volume` | Calculated from volume; subtype not resolved | 17 |
+
+The separate traits remain available. The owner-requested combined trait is
+**Brain mass (measured or estimated from volume) (g)**. It selects one existing
+value per species: measured mass first, then a brain-tissue-volume estimate,
+then an endocranial-volume estimate, then an estimate with volume subtype
+unresolved. It does not average across these methods or create new observations.
+Explicitly olfactory-bulb-excluded masses, sums of structures and unresolved-method
+records are not used as substitutes for whole-brain mass.
+
+The combined view covers **1,277 species**: 678 measured, 1 brain-tissue-volume
+estimate, 590 endocranial-volume estimates and 8 estimates of unresolved volume
+subtype. `selected_measure`, `measurement_method`, `selection_reason`, original
+basis and source counts are retained in the long output and in
+`brain_mass_combined_provenance.csv`; the app Source field shows the selected
+method. Separate traits and all existing values are unchanged. The combined view
+is excluded from the cross-basis comparison, where repeating its selected value
+would falsely create an additional basis.
+
+`Brain_Mass_mass_or_volume` remains retired because it obscures this distinction.
+
+The earlier 526 known-volume-origin reports have been restored as mass estimates.
+The now-read Mace methods resolve another **397 Mace-only reports**: Mace's printed
+brain weights were calculated from measured braincase capacities, including when
+later compilers apply the documented rodent correction. This yields **923 newly
+routed estimate reports** (890 skull-capacity-derived, 29 brain-tissue-derived,
+4 with volume subtype unchecked), with one nonadult report excluded from pooling.
+Existing explicitly derived Weaver values use the generic estimate label too.
+Reprints citing an explicitly identified single upstream work share a team, so
+Boddy/Burger relays of the same work do not become independent teams. Compound
+citations and unresolved aliases are not silently split.
+
+In this audited harvest, **273/630 Boddy species entries (43.3%)** and
+**617/1552 Burger species entries (39.8%)** trace to endocranial-capacity-derived
+estimates. These are lower bounds, not a claim that every other entry is weighed.
+The datasets overlap, so these counts must not be added as independent samples.
+Boddy states 1.036 g/cm3 for its conversions; Burger states a 1 g per cm3
+convention. An older conversion can survive in a copied value, so Burger's
+convention is not used to reverse every row. No source number was changed here.
+
+Current output: **2,685 trait cells / 1,294 species** (1,408 separate-trait cells plus 1,277 combined-view rows), 4,655 typed source rows and
+1,444 held review rows (1,439 unresolved and 5 mixed-component averages). Original
+raw-volume datasets still retain their volume traits. The fresh-harvest basis-key
+block noted below is unchanged; this reclassifies the last valid harvest.
+
+## Historical first pass: explicit row types; no ambiguous production trait
+
+`Brain_Mass_mass_or_volume` is no longer a production variable. No species has
+an approved exception demonstrating that an untyped value is its only available
+brain-size record. Missing provenance is a review state, not a gram-valued trait.
+The app also rejects this label when loading an older merge.
+
+`brain_mass_row_basis.csv` records 2,798 guarded decisions covering the 2,868
+previous mixed-stream records plus one preexisting typed mass held for possible
+specimen overlap. Decisions match source file, species, column and
+gram value, and must match exactly `n_expected` rows. They preserve physical type,
+source evidence and age scope. Both builders apply them before pooling:
+
+- 501 confirmed mass records now carry `Brain_Mass_measured`; preparation state
+  remains unspecified rather than being inferred. Of these, 145 nonadult or
+  age-ambiguous records are retained in the typed unfiltered table but have
+  `pool_eligible = FALSE`.
+- 2,367 other records remain in `brain_mass_basis_review.csv`: 1,836 unresolved,
+  493 endocranial-volume-derived, 29 brain-volume-derived, 4 with volume subtype
+  unchecked, and 5 composite averages. Known volume origin alone does not justify
+  treating a converted gram value as the original cc measurement; those records
+  need original-value/conversion recovery before volume ingestion.
+- Source roles are row-specific: the Boddy original Sherwood records can be
+  primary; literature relays remain secondary. No new specimen identity is
+  inferred from numerical equality. Team-level pooling otherwise keeps its
+  existing primary-preferred behavior; reported-source counts are not counts of
+  proven independent observations.
+
+All five quoted *Trachypithecus francoisi* reports are explicitly mass, including
+the 91.2 g juvenile, which is excluded from species pooling. The adult 94.4 g
+Boddy mean and its relays now form the measured-mass stream, retaining 94.4 g.
+The preexisting Bauernfeind 102.1 g record (male, age 16, GAAP individual 51106a)
+is also explicitly mass but is excluded from species pooling pending overlap
+review: it matches the Sherwood adult male in mass, sex and reported age. This
+is not a confirmed specimen-identity assertion; independent sampling must be
+established before adding the single specimen to the inclusive adult mean.
+
+The first-pass outputs were regenerated from the **last successful harvest** with
+`python3 __merging_brain_mass/build_brain_mass_merge.py --reclassify-current`
+and independently reproduced by the R twin with the same flag. This mode
+recombines typed, review and veto rows, then reapplies decisions and vetoes; it is
+lossless and rerunnable. A fresh source harvest currently stops on 19 newly added
+paper/column groups (999 rows) lacking basis-key entries. Their types were not
+guessed to bypass that guard. No source TSV, snapshot, shared registry or hosted
+deployment was changed.
+
+First-pass coverage: 744 cells / 706 species, 3,732 typed source rows (including the
+145 age exclusions and one possible-overlap exclusion), 2,367 held review rows and 30 existing veto rows.
+R and Python pooled values/counts agree; all 6,099 previously retained records
+are accounted for with their source values unchanged. Older coverage figures in
+the historical notes below predate this row-level policy.
+
 ## Update: HrvojMihic et al. 2026 added
 Added `HrvojMihic_etal_2026_SD` (601 adult great apes — gorilla, orangutan, bonobo, chimpanzee —
 individual necropsy brain weight, with body weight for a 276-animal chimpanzee 15+ subset) to the

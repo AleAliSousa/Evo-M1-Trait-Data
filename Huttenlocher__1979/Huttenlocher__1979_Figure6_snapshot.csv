@@ -1,0 +1,15 @@
+# Huttenlocher__1979 Figure6 constructed snapshot -- pixel digitisation of the embedded page bitmap (1950 x 3000 px, 8-bit grey), PDF p. 9.
+# ordinate: ticks at rows [1825.0, 1913.0, 2001.5, 2091.0, 2179.0, 2268.0, 2355.5] -> [1400, 1200, 1000, 800, 600, 400, 200] grams (linear fit, max residual 1.291).
+# abscissa (BROKEN, piecewise linear): NB=394.0 px; 0.5=484.0 px; 1=570.0 px; 2=744.0 px; 5=879.0 px; 10=1098.0 px; Adult=1229.0 px; Aged (74-90)=1318.0 px
+# 10 markers resolved: {'open_circle': np.int64(10)}
+figure,series_as_printed,plot_symbol,px_x,px_y,age_column,age_years_from_abscissa,abscissa_segment,age_in_axis_break,value_in_figure_units,figure_units
+Figure6,Total brain weight,open_circle,397.4,2297.6,years,0.013,segment NB-2,no,331.899,grams
+Figure6,Total brain weight,open_circle,402.7,2254.6,years,0.043,segment NB-2,no,429.252,grams
+Figure6,Total brain weight,open_circle,482.4,2118.9,years,0.499,segment NB-2,no,735.646,grams
+Figure6,Total brain weight,open_circle,489.3,2182.0,years,0.539,segment NB-2,no,593.144,grams
+Figure6,Total brain weight,open_circle,561.2,2052.4,years,0.951,segment NB-2,no,885.831,grams
+Figure6,Total brain weight,open_circle,564.0,2085.8,years,0.967,segment NB-2,no,810.436,grams
+Figure6,Total brain weight,open_circle,747.1,1935.3,years,2.015,segment NB-2,no,1150.324,grams
+Figure6,Total brain weight,open_circle,965.9,1959.7,years,6.983,segment 5-10,no,1095.292,grams
+Figure6,Total brain weight,open_circle,1230.6,1898.6,Adult,,categorical,no,1233.393,grams
+Figure6,Total brain weight,open_circle,1316.8,1874.2,Aged (74-90),,categorical,no,1288.528,grams

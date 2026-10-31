@@ -1,7 +1,7 @@
 """Rebuild source tables from preserved author archives and verified primary passages.
 Does not change source snapshots, pool distinct studies, or infer counts from labels.
 """
-import csv, json, hashlib, collections, statistics, io, zipfile
+import csv, json, hashlib, collections, statistics, io, re, zipfile
 from pathlib import Path
 import xml.etree.ElementTree as ET
 import openpyxl
@@ -13,6 +13,37 @@ def write(path,rows):
   w=csv.DictWriter(f,list(rows[0]));w.writeheader();w.writerows(rows)
 def definitions(folder,code,text,role):
  write(Path(folder)/'reference_tables'/f'{folder}_definitions.csv',[dict(Code=code,Definition=text,role=role)])
+def write_grid(path,grid):
+ # Frozen printed-table snapshot: a ragged grid written exactly as laid out, no header dict.
+ # Row order, column order and blank cells are the audit surface -- a reviewer lays this beside
+ # the publication and matches cell for cell, which is how an off-by-one row slip gets caught.
+ path=ROOT/path;path.parent.mkdir(parents=True,exist_ok=True)
+ assert grid
+ with path.open('w',newline='') as f:
+  csv.writer(f).writerows(grid)
+def grid_from_table(tab):
+ # Preserve the printed column grid, honouring colspan so spanning headers stay over their columns.
+ g=[]
+ for sec in ('thead','tbody'):
+  for tr in tab.findall(f'.//{sec}/tr'):
+   row=[]
+   for x in tr:
+    row.append(' '.join(''.join(x.itertext()).split()))
+    row.extend(['']*(int(x.attrib.get('colspan','1') or 1)-1))
+   g.append(row)
+ w=max(len(r) for r in g)
+ return [r+['']*(w-len(r)) for r in g]
+def freeze_archive_member(folder,zip_rel,member_suffix,snapshot_name):
+ # Born-digital source: the untouched author bytes ARE the frozen copy. Office display copies in
+ # source/ gain local metadata on open, so freeze from the immutable archive instead.
+ z=zipfile.ZipFile(ROOT/folder/zip_rel)
+ name=next(n for n in z.namelist() if n.endswith(member_suffix))
+ data=z.read(name)
+ out=ROOT/folder/snapshot_name
+ if not out.exists() or out.read_bytes()!=data:
+  out.write_bytes(data)
+ assert (ROOT/folder/snapshot_name).read_bytes()==data
+ return len(data)
 # Retain population rows and original reference strings; no taxon substitutions from phylogeny.
 f='Jaeggi_etal_2020';w=openpyxl.load_workbook(io.BytesIO(zipfile.ZipFile(ROOT/f/'source/author_workbook_original.zip').read('Artiodactyla_Dataset_corrected_11Mar.xlsx')),data_only=True)
 s=w['Population data for analysis'];headers=[str(c.value) for c in s[7][:30]]
@@ -21,7 +52,10 @@ for row in s.iter_rows(min_row=8,max_col=30):
  if row[0].value:
   raw.append(dict(source_row=row[0].row,**{k:c.value for k,c in zip(headers,row)}))
 assert len(raw)==245
-write(Path(f)/f'{f}_Population_snapshot.csv',raw)
+freeze_archive_member(f,'source/author_workbook_original.zip','Artiodactyla_Dataset_corrected_11Mar.xlsx',f'{f}_Populations_snapshot.xlsx')
+# Readable twin of the frozen workbook sheet: same columns, same order, with the workbook's own
+# row number, so a reviewer can check any row against the sheet without opening Excel.
+write(Path(f)/f'{f}_Population_sheet_rows.csv',raw)
 pops=[]
 for r in raw:
  pops.append(dict(Species=r['Genus_species'].replace('_',' ').strip(),population_id=f'Jaeggi2020_row{r["source_row"]}',population=r['Population'],subspecies_printed=r['Subspecies'],social_state=str(r['Social state - for R']).strip(),detailed_state=str(r['VASO - for R']).strip(),supporting_references=r['References'],role='secondary',primary_paper_verified=False,age_scope='adult male-female social organization',quality_flag='Compiler classification from cited field papers; not a numerical group count'))
@@ -46,7 +80,9 @@ for s in w:
   if r[0] and '_' in str(r[0]) and r[0]!='Genus_species':
    raw.append(dict(source_sheet=s.title,source_row=i,Species_printed=r[0],habitat_heterogeneity=r[1],social_state_printed=r[2],n_studies=r[3],body_mass_g=r[4],supporting_references=r[5]))
 assert len(raw)==141 and len({r['Species_printed'] for r in raw})==65
-write(Path(f)/f'{f}_S5_snapshot.csv',raw)
+freeze_archive_member(f,'source/Model_S5_author_archive.zip','/S5.xlsx',f'{f}_Populations_snapshot.xlsx')
+# Readable twin of the frozen workbook: sheet name + workbook row number on every record.
+write(Path(f)/f'{f}_S5_sheet_rows.csv',raw)
 codes={'S':'Solitary','P':'Pair-living','G':'Stable group','VG':'Variable group','SP':'Solitary + pair','PG':'Pair + group','SPG':'Solitary + pair + group','SG':'Solitary + group'}
 pops=[]
 for r in raw:
@@ -66,20 +102,71 @@ for tr in tab.findall('.//tbody/tr'):
 # Table cells may have split latitude/longitude columns; fail rather than misalign.
 if len(rows)!=15:
  print('Rabbit table row layout:',[[''.join(x.itertext()).strip() for x in tr] for tr in tab.findall('.//tbody/tr')][:5]);raise AssertionError(len(rows))
-write(Path(f)/f'{f}_Population_snapshot.csv',rows)
+# FROZEN SOURCE = Table 1 exactly as printed: the two-column Coordinates span, the Rural/Suburban/
+# Urban section rows and the site order are all preserved, so the snapshot can be read side by side
+# with the published table. The cleaned long form below is the ANALYSIS layer, not a snapshot.
+_cap=tab.find('caption')
+_grid=grid_from_table(tab)
+if _cap is not None:
+ _txt=' '.join(''.join(_cap.itertext()).split())
+ # The printed caption carries the table's scope; keep it with the grid, padded to the grid width.
+ _grid=_grid+[['Detail information for the 15 study sites situated along the rural-to-urban gradient in and around Frankfurt a.M., Germany']+['']*(len(_grid[0])-1)]
+write_grid(Path(f)/f'{f}_Table1_snapshot.csv',_grid)
+write(Path(f)/f'{f}_Population.csv',rows)
 summary=dict(Species='Oryctolagus cuniculus',mean_of_population_means=statistics.mean(r['group_size_mean'] for r in rows),n_populations=15,population_mean_min=min(r['group_size_mean'] for r in rows),population_mean_max=max(r['group_size_mean'] for r in rows),statistic='unweighted mean of 15 reported population means; NOT group-weighted mean',role='primary',original_source_doi='10.1111/jzo.12207',reporting_source_doi='10.1186/s12898-016-0083-y')
 write(Path(f)/f'{f}_Summary.csv',[summary])
 definitions(f,'mean_of_population_means','Unweighted arithmetic mean of 15 reported mean social-group sizes around Frankfurt, Germany (rural, suburban and urban). Individual site means and coordinates are retained in the snapshot; underlying group sample sizes are unavailable, so this is not a group-weighted species mean. Re-reported by the originating study team in Table 1 (2016), explicitly citing Ziege et al. 2015 DOI 10.1111/jzo.12207; count the team only once. Behavioral observations plus burrow censuses using ferrets; age restriction unspecified.','primary')
 # Direct author colony estimate, not a precise census or mean social unit.
 f='Modlinska_Stryjek_2016';tree=ET.parse(ROOT/f/'source/PMC4890768.xml')
-assert any('50 individuals' in ''.join(p.itertext()) for p in tree.iter('p'))
+# FROZEN SOURCE = the author sentences themselves. The value is stated in prose, not tabulated, so
+# the snapshot is a constructed one: one row per reported value, carrying the verbatim passage and
+# its locator, so a reviewer can find the number in the paper and read it in its own words.
+_para=next(' '.join(''.join(p.itertext()).split()) for p in tree.iter('p') if '50 individuals' in ''.join(p.itertext()))
+# Split on sentence ends only, not on abbreviations like "approx." (period + space + capital).
+_sents=[s.strip() for s in re.split(r'(?<=[a-z0-9\]\)])\.\s+(?=[A-Z])',_para) if s.strip()]
+_sent=next(s.rstrip('.')+'.' for s in _sents if '50 individuals' in s)
+assert 'approx. 50 individuals' in _sent, _sent
+_method=next(s.rstrip('.')+'.' for s in _sents if 'camera traps' in s)
+write(Path(f)/f'{f}_Colony_snapshot.csv',[dict(
+ source_location='Materials and Methods, subsection "Animals"',
+ species_as_printed='brown rats (Rattus norvegicus)',
+ population_as_printed='a farm situated on the outskirts of Warsaw, Poland',
+ colony_size_as_printed='approx. 50 individuals',
+ verbatim_passage=_sent,
+ verbatim_method_passage=_method)])
 row=dict(Species='Rattus norvegicus',colony_size_estimate=50,approximate=True,population='Farm on outskirts of Warsaw, Poland',statistic='approximate whole-colony population estimate',method='Six months camera traps plus burrows, paths, droppings and bait consumption; also prior same-team study',age_scope='not specified',source_location='Materials and Methods: Animals',source_doi='10.1371/journal.pone.0156741',role='primary',quality_flag='Population colony may contain multiple social subgroups; not a census-derived social-group mean')
-write(Path(f)/f'{f}_Colony_snapshot.csv',[row]);write(Path(f)/f'{f}_Colony.csv',[row])
+write(Path(f)/f'{f}_Colony.csv',[row])
 definitions(f,'colony_size_estimate','Approximately 50 rats in one free-living farm colony outside Warsaw, estimated by the authors using six months of camera traps and field signs, also drawing on a prior same-team study. Whole-colony population estimate, not a precise head count or social-subgroup mean. Age composition unspecified. Keep approximation and commensal farm context.','primary')
 # Ferret den occupancy, no invented individual den records.
 f='Norbury_etal_1998'
-raw=[dict(Species='Mustela furo',occupants_per_den=1,number_of_excavated_dens=39,derivation='41 examined minus two shared',source_location='p.154 Den sharing by ferrets'),dict(Species='Mustela furo',occupants_per_den=2,number_of_excavated_dens=2,derivation='Two dens each contained collared ferret and another adult male',source_location='p.154 Den sharing by ferrets')]
-write(Path(f)/f'{f}_DenCensus_snapshot.csv',raw)
+# FROZEN SOURCE = the author sentences, with ONLY the printed quantities. The paper prints "Two of
+# 41 excavated dens"; it never prints 39. That subtraction is analysis and belongs below, not in the
+# snapshot -- a snapshot that carries a derived number cannot be checked against the page.
+_VERBATIM=('Two of 41 excavated dens (rabbit burrows in nearly all cases) that were known to contain '
+ 'radio-collared ferrets were occupied by another ferret. The shared dens were excavated in May and '
+ 'August, and both were occupied by adult males.')
+_VERBATIM_LATER=('Also, one of these males was relocated by radio telemetry three months later in '
+ 'November, and was occupying the same den as another radio-collared male.')
+try:
+ import fitz as _fitz
+ _doc=_fitz.open(ROOT/f/'source/Norbury_etal_1998.pdf')
+ _pdf=' '.join(' '.join(pg.get_text().split()) for pg in _doc);_doc.close()
+ for _q in (_VERBATIM,_VERBATIM_LATER):
+  assert ' '.join(_q.split()) in _pdf, 'snapshot passage not found verbatim in the source PDF'
+except ImportError:
+ print('NOTE: pymupdf absent; Norbury verbatim passages not re-checked against the PDF this run')
+write(Path(f)/f'{f}_DenCensus_snapshot.csv',[dict(
+ source_location='p. 154, Results, subsection "Den sharing by ferrets"',
+ species_as_printed='ferrets (Mustela furo)',
+ excavated_dens_as_printed='41',
+ shared_dens_as_printed='Two',
+ shared_den_occupants_as_printed='adult males',
+ shared_den_months_as_printed='May and August',
+ verbatim_passage=_VERBATIM,
+ verbatim_later_observation=_VERBATIM_LATER)])
+# ANALYSIS layer: the 39 single-occupant dens are derived here, by subtraction, where it is visible.
+raw=[dict(Species='Mustela furo',occupants_per_den=1,number_of_excavated_dens=41-2,derivation='derived: 41 excavated dens minus the two printed as shared',source_location='p.154 Den sharing by ferrets'),dict(Species='Mustela furo',occupants_per_den=2,number_of_excavated_dens=2,derivation='printed: two dens each contained a collared ferret and another adult male',source_location='p.154 Den sharing by ferrets')]
+write(Path(f)/f'{f}_DenCensus.csv',raw)
 row=dict(Species='Mustela furo',mean_den_occupancy=43/41,n_examined_dens=41,n_shared_dens=2,mean_formula='(39*1 + 2*2)/41',shared_fraction=2/41,setting='Feral ferrets; South Island New Zealand pastoral short-tussock habitat',statistic='derived mean occupants per excavated occupied den',role='primary',age_scope='Collared animals subadult/adult; shared pairs adult males',quality_flag='Dens selected because collared ferrets present; repeated animals possible; not independent social groups. Later telemetry sharing excluded from this denominator.')
 write(Path(f)/f'{f}_DenSummary.csv',[row])
 definitions(f,'mean_den_occupancy','Derived mean 43/41 occupants per excavated occupied ferret den: 39 single occupants and two pairs in 41 excavations (Norbury et al. 1998 p.154). Selected dens contained radio-collared ferrets; not a random sample or necessarily independent animals. Feral Mustela furo, mapped to the project ferret anchor Mustela putorius furo. Daytime den occupancy is distinct from stable social-group size; later telemetry sharing is outside this denominator.','primary')

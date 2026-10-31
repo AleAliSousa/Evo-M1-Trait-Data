@@ -1,0 +1,4 @@
+comparison_id,equation_key_a,equation_key_b,n_printed,p_printed,verbatim_sentence,note
+V1_vs_S1,V1,S1,22,< 0.021,"The slope of the regression of log V1 is significantly different from S1 (n = 22, p < 0.021) and from A1 (n = 13, p < 0.011).","n is the number of independent contrasts entering the comparison, not a species count; the test statistic itself is not printed."
+V1_vs_A1,V1,A1,13,< 0.011,"The slope of the regression of log V1 is significantly different from S1 (n = 22, p < 0.021) and from A1 (n = 13, p < 0.011).",Same sentence as V1_vs_S1.
+Vtot_vs_Atot,Vtot,Atot,24,< 0.011,"The slope of the regression of total visual cortex is significantly different from total auditory cortex (n = 24, p < 0.011).",

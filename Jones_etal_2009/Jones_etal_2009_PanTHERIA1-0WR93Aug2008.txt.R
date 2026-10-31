@@ -1,6 +1,6 @@
 ## Jones et al. (2009), PanTHERIA 1.0
 ## Input: PanTHERIA_1-0_WR93_Aug2008.txt (original tab-delimited publication file; treated as frozen snapshot)
-## Output: Jones_etal_2009_PanTHERIA1-0WR93Aug2008.txt.csv and encoded public .txt from __ReadMe.xlsx
+## Output: Jones_etal_2009_PanTHERIA1-0WR93Aug2008.txt.csv and encoded public .tsv (byte-identical copy of the tab-delimited publication file) from __ReadMe.xlsx
 ## Missing-value sentinel -999 is preserved exactly as published.
 
 options(scipen = 999)
@@ -25,14 +25,14 @@ if(!is.na(base)) {
   fc <- readxl::read_excel(file.path(base,"__ReadMe.xlsx"),sheet="Sheet1")
   item_encoded <- fc$`Item encoded`[match(item_name,fc$`Item name`)]
   public_dir <- file.path(base,"__Public","comparative-data")
-  if(is.na(item_encoded) || !nzchar(item_encoded)) warning("No Item encoded entry; public TXT skipped.")
-  else if(!dir.exists(public_dir)) warning("Public directory unavailable; public TXT skipped.")
+  if(is.na(item_encoded) || !nzchar(item_encoded)) warning("No Item encoded entry; public TSV skipped.")
+  else if(!dir.exists(public_dir)) warning("Public directory unavailable; public TSV skipped.")
   else {
     raw <- readBin(input,"raw",n=file.info(input)$size)
-    target <- file.path(public_dir,item_encoded)
+    target <- file.path(public_dir,paste0(item_encoded,".tsv"))
     con <- file(target,"wb"); writeBin(raw,con); close(con)
     stopifnot(identical(unname(tools::md5sum(input)),unname(tools::md5sum(target))))
-    message("Wrote byte-identical public file: ",target)
+    message("Wrote byte-identical public TSV: ",target)
   }
-} else warning("Repository root not found; public TXT skipped.")
+} else warning("Repository root not found; public TSV skipped.")
 message(item_name,": ",nrow(dat)," rows and ",ncol(dat)," columns")

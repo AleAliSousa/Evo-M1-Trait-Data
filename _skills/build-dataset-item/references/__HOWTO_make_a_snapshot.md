@@ -57,9 +57,60 @@ The snapshot is the **audit anchor** between the paper and our analysis.
 - **Durability.** Papers, links and supplementary files disappear. The snapshot
   is our own permanent copy. *(We keep a hardcopy snapshot file even when the
   data is also available at a URL.)*
+- **Catching the slip a machine cannot see.** Transcription is done by people,
+  and the characteristic human error is not a mistyped digit — it is a value
+  landing one cell away from where it belongs: reading along row 1 but keying
+  into row 2, so a number is quietly attributed to the next species down; or
+  picking up the neighbouring column when two columns sit close together, so an
+  SE is recorded as a mean. Nothing downstream can detect this. The value is
+  perfectly plausible, it parses, it passes every range check, and it is simply
+  attached to the wrong animal. **It is caught only by a human looking at the
+  snapshot beside the source and seeing that the rows no longer line up.** That
+  comparison is the reason row order, column order and blank cells are
+  preserved — see *A human must do the comparison*, below.
 
 If the clean data ever looks wrong, the snapshot is how we find out whether the
 mistake came from the paper or from our cleaning.
+
+## A human must do the comparison
+
+The snapshot only earns its keep when someone actually puts it next to the
+source and reads across. Do this before the item is signed off, and record the
+outcome in the `Human visual check of snapshot` column of `__ReadMe.xlsx`.
+
+**Read along rows, not down columns.** Take a printed row, read it left to
+right in the publication, and read the same row left to right in the snapshot.
+Checking a column at a time is exactly how an off-by-one row shift survives a
+review: every value in the column is present and correct, just displaced by one
+position, and scanning a single column makes that look fine.
+
+Dwell on the places where a transcriber's eye can jump:
+
+- **The first and last rows of the table, and either side of a section break**
+  (a clade or group heading). A spanning heading row is the easiest place to
+  gain or lose one row, after which everything below is misattributed.
+- **Rows where a cell is blank, `n.a.` or `—`.** A blank is the commonest cause
+  of a shift: the eye skips it, the next value moves up a row, and every value
+  below is off by one.
+- **Adjacent columns of the same kind** — mean next to SE, N next to n, left
+  hemisphere next to right. These swap without ever looking wrong.
+- **Rows where the species is repeated**, or where two species have similar
+  names. If a value is attributed to the wrong one of a repeated pair, no
+  species-level check will notice.
+- **Multi-row or merged headers.** Confirm each sub-header still sits under its
+  own parent, with blank padding where the parent spans several columns. If a
+  spanning header has slid, the whole block beneath it is mislabelled.
+
+A useful tell: pick two or three values at random from the *middle* of the
+table, find them in the publication, and confirm the species and the column
+heading — not just the number. If a row shift has happened, a midtable spot
+check finds it immediately, whereas checking the first row never will.
+
+When the snapshot and the source disagree, do not quietly correct the snapshot.
+Decide which kind of error it is and handle it accordingly: a **transcription**
+error (ours) is fixed in the frozen file and noted; a **publication** error
+(theirs) is kept exactly as printed and recorded as an erratum — see the errata
+convention. Never silently overwrite a printed value.
 
 ## The one golden rule
 
@@ -130,10 +181,23 @@ Keep everything that is in the printed table, even if it looks messy:
 - [ ] **Printed totals / sum rows** (keep the label blank if the print has none)
       and percentage columns — the reader uses them to check the table
       (build HOWTO §7a)
-- [ ] **Row order** as published
+- [ ] **Row order** as published — never sorted, never deduplicated
+- [ ] **Column order** as published, and **blank padding under a spanning
+      header**, so every sub-column still sits beneath its parent
+- [ ] **One snapshot row per printed row**, including blank and section rows.
+      Dropping an empty row shortens the table and silently shifts every row
+      below it against the publication, which is what makes a transcription
+      slip invisible.
 
 Cleaning (numbers → numeric, splitting columns, NCBI species names, etc.) comes
 later, in the script. Not here.
+
+These last three are not tidiness. They are what makes the side-by-side check
+work: if the snapshot has the same rows in the same order and the same columns
+in the same order as the printed page, a value that has drifted one cell is
+visible at a glance. Reshape the table — sort it, unpivot it, drop the blanks —
+and that check is gone, because there is no longer a printed row to compare a
+snapshot row against.
 
 ## What belongs outside the snapshot
 
@@ -248,5 +312,11 @@ Copy the format of any existing `*.README.md`.
 - Did I save a local snapshot file, even though the data is online?
 - Does the `.R` **read** the snapshot (rather than write it from hardcoded
   values), and does the snapshot actually differ from the clean CSV?
+- Does my snapshot have **the same number of rows as the printed table**,
+  in the same order, blanks and section rows included — so row *n* of the
+  snapshot is row *n* of the page?
+- Did a human read a few rows **across** against the source, including some
+  from the middle of the table, checking the species and column heading and
+  not only the number? Is that recorded in `Human visual check of snapshot`?
 
 If yes to all of them, the snapshot is proper.

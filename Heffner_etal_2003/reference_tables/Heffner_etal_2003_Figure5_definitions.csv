@@ -1,0 +1,15 @@
+variable,definition,units,notes
+marker_id,Row key: markers numbered left to right along the abscissa,text,
+marker_type,"open circle / filled circle (one of the eight bat species keyed in the caption) / open triangle (subterranean, excluded from the printed correlation)",text,
+label_as_printed,The caption key or common name printed beside the marker; empty where the marker is unlabelled,text,
+species_as_published,Same as label_as_printed; empty for unlabelled markers,text,
+label_confidence,Confidence of the visual label-to-marker assignment,high/medium,Assignments in reference_tables/Heffner_etal_2003_Figure5_label_assignment.csv.
+functional_interaural_distance_us,Digitised abscissa value,microseconds,
+highest_audible_frequency_60dB_kHz,Digitised ordinate value,kHz,
+in_printed_correlation,"Whether the point is in the caption's r = -0.792, n = 67 correlation",text,
+source_ref_key,Join key into reference_tables/Heffner_etal_2003_Figure5_references.csv; empty where the figure keys no source,text,The caption keys sources only for the eight bat species; the comparison labels and all unlabelled circles are UNRESOLVED.
+value_origin,Whether the value was printed in the source or read off a plotted figure,text,"always 'digitised_from_figure' in this item. Digitisation: the markers of Fig. 5 were pixel-digitised from the embedded 755 x 945 px bitmap by Heffner_etal_2003_Figure5_extract.py (tick calibration; ring / disc / triangle template matching). Estimated error +/- 0.9% on both axes (log-fit residuals on the printed ticks) plus about 0.3% per pixel of marker centring; four independent checks against numbers printed in this paper agree to 0.0-4.7%. The figure contains 70 plotted points (the caption's n = 67 circles plus three subterranean open triangles); 62 were individually resolved (51 open circles, 8 filled circles, 3 triangles) and 8 circles could NOT be separated from an overlapping neighbour and are absent from this item. No point was inferred. Only 21 of the resolved markers carry a printed label; the other 41 keep Species = NA."
+value_precision,Per-row statement of the digitisation uncertainty,text,
+data_role,Whether the row is this paper's own new measurement (primary) or a value it reproduces from another study (secondary),text,
+Species,Accepted binomial resolved from the printed name via _keys/General/species_key.csv (source_publication = this paper's folder name),text,
+species_basis,"How the binomial was arrived at (verbatim / our_judgment / hypothesis / unspecified_in_source), from the species key",text,

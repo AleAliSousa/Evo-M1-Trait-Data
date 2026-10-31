@@ -1,0 +1,34 @@
+# Feinberg_etal_1990 FIG. 11(c) constructed snapshot -- pixel digitisation of the embedded page bitmap (1890 x 2850 px, 8-bit grey), PDF p. 4.
+# SECONDARY DATA: the plotted observations are Chugani et al. (1987), frontal cortex.
+# abscissa: ticks at px [308, 390, 473, 557, 640, 722, 803, 886] -> [0, 5, 10, 15, 20, 25, 30, 35] years (linear, max residual 0.079).
+# ordinate: label centres at rows [1373.5, 1534.5, 1695.8, 1855.5, 2017.5] -> [100, 80, 60, 40, 20] umol min^-1 100 g^-1 (linear, max residual 0.093).
+# the panel plots 29 points (Table 2, N); 28 were individually resolved.
+panel,series_as_printed,plot_symbol,px_x,px_y,detection,age_years,value_in_figure_units,figure_units
+Figure1(c),Cerebral metabolic rate (raw observations),open_circle,307.2,2056.2,enclosed_hole,-0.056,15.152,umol min^-1 100 g^-1
+Figure1(c),Cerebral metabolic rate (raw observations),open_circle,309.0,2019.9,enclosed_hole,0.048,19.661,umol min^-1 100 g^-1
+Figure1(c),Cerebral metabolic rate (raw observations),open_circle,312.8,2030.3,enclosed_hole,0.282,18.361,umol min^-1 100 g^-1
+Figure1(c),Cerebral metabolic rate (raw observations),open_circle,312.8,2045.3,enclosed_hole,0.284,16.506,umol min^-1 100 g^-1
+Figure1(c),Cerebral metabolic rate (raw observations),open_circle,314.1,1938.3,enclosed_hole,0.362,29.807,umol min^-1 100 g^-1
+Figure1(c),Cerebral metabolic rate (raw observations),open_circle,317.4,2007.4,enclosed_hole,0.561,21.212,umol min^-1 100 g^-1
+Figure1(c),Cerebral metabolic rate (raw observations),open_circle,320.0,1993.0,template_match,0.716,23.002,umol min^-1 100 g^-1
+Figure1(c),Cerebral metabolic rate (raw observations),open_circle,322.4,1961.4,enclosed_hole,0.863,26.929,umol min^-1 100 g^-1
+Figure1(c),Cerebral metabolic rate (raw observations),open_circle,330.4,1859.0,enclosed_hole,1.346,39.654,umol min^-1 100 g^-1
+Figure1(c),Cerebral metabolic rate (raw observations),open_circle,331.4,1932.4,enclosed_hole,1.406,30.534,umol min^-1 100 g^-1
+Figure1(c),Cerebral metabolic rate (raw observations),open_circle,331.5,1997.5,enclosed_hole,1.414,22.438,umol min^-1 100 g^-1
+Figure1(c),Cerebral metabolic rate (raw observations),open_circle,360.6,1727.1,enclosed_hole,3.174,56.054,umol min^-1 100 g^-1
+Figure1(c),Cerebral metabolic rate (raw observations),open_circle,363.7,1705.1,enclosed_hole,3.359,58.791,umol min^-1 100 g^-1
+Figure1(c),Cerebral metabolic rate (raw observations),open_circle,397.8,1712.9,enclosed_hole,5.426,57.815,umol min^-1 100 g^-1
+Figure1(c),Cerebral metabolic rate (raw observations),open_circle,410.3,1696.0,enclosed_hole,6.179,59.923,umol min^-1 100 g^-1
+Figure1(c),Cerebral metabolic rate (raw observations),open_circle,416.4,1809.9,enclosed_hole,6.548,45.759,umol min^-1 100 g^-1
+Figure1(c),Cerebral metabolic rate (raw observations),open_circle,420.0,1699.0,template_match,6.767,59.546,umol min^-1 100 g^-1
+Figure1(c),Cerebral metabolic rate (raw observations),open_circle,423.3,1798.1,enclosed_hole,6.967,47.233,umol min^-1 100 g^-1
+Figure1(c),Cerebral metabolic rate (raw observations),open_circle,429.6,1809.7,enclosed_hole,7.35,45.787,umol min^-1 100 g^-1
+Figure1(c),Cerebral metabolic rate (raw observations),open_circle,442.2,1693.3,enclosed_hole,8.113,60.256,umol min^-1 100 g^-1
+Figure1(c),Cerebral metabolic rate (raw observations),open_circle,446.1,1710.6,enclosed_hole,8.346,58.105,umol min^-1 100 g^-1
+Figure1(c),Cerebral metabolic rate (raw observations),open_circle,447.5,1813.1,enclosed_hole,8.432,45.369,umol min^-1 100 g^-1
+Figure1(c),Cerebral metabolic rate (raw observations),open_circle,458.4,1793.6,enclosed_hole,9.09,47.787,umol min^-1 100 g^-1
+Figure1(c),Cerebral metabolic rate (raw observations),open_circle,463.4,1779.5,enclosed_hole,9.396,49.54,umol min^-1 100 g^-1
+Figure1(c),Cerebral metabolic rate (raw observations),open_circle,467.6,1825.6,enclosed_hole,9.646,43.816,umol min^-1 100 g^-1
+Figure1(c),Cerebral metabolic rate (raw observations),open_circle,504.0,1808.5,enclosed_hole,11.85,45.935,umol min^-1 100 g^-1
+Figure1(c),Cerebral metabolic rate (raw observations),open_circle,528.8,1832.5,enclosed_hole,13.352,42.953,umol min^-1 100 g^-1
+Figure1(c),Cerebral metabolic rate (raw observations),open_circle,555.6,1839.3,enclosed_hole,14.972,42.105,umol min^-1 100 g^-1

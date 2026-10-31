@@ -11,3 +11,16 @@ The merge table contains the set of states observed across populations, never a 
 Rebuild: `python3 _checks/social_variables/build_population_censuses.py` from the repository root. Source input is unchanged. Definitions and the supplementary source mapping specify the app label and secondary role.
 
 Source integrity: local Office copies acquired added custom metadata without changes to worksheet/document content. Authoritative original bytes are preserved inside ZIP archives; the rebuild reads the archived workbook. source_manifest.csv hashes the archives and other non-Office evidence, not mutable display copies.
+
+## Snapshot provenance — repaired 2026-10-31
+
+`Jaeggi_etal_2020_Populations_snapshot.xlsx` is now **byte-identical to the author's workbook**
+(177,036 bytes), extracted straight from `source/author_workbook_original.zip` by
+`build_population_censuses.py`. The previous file was an Office display copy that had gained local
+metadata on open (183,616 bytes), so it was not the untouched download the house rule requires.
+
+`Jaeggi_etal_2020_Population_snapshot.csv` has been renamed to
+`Jaeggi_etal_2020_Population_sheet_rows.csv`: it is a readable twin of the frozen sheet — the
+workbook's own column headers and row order, with the workbook row number on every record — not a
+second snapshot. `Jaeggi_etal_2020_Populations.csv` and `_SocialStates.csv` are unchanged
+(245 population rows, 100 species).

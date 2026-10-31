@@ -1,0 +1,30 @@
+Table 1: Specific scaling exponents of the regional cerebral glucose utilization rate CMRglc against brain volume,,,,,
+Brain structure,Scaling exponent,95% confidence intervals,Correlation R2,p-value,Species (n)
+Cerebral cortex,-0.15 ± 0.03,-0.22 to -0.08,0.870,0.0022,7
+  Visual,-0.12 ± 0.03,-0.17 to -0.08,0.932,0.0018,6
+  Prefrontal,-0.17 ± 0.03,-0.23 to -0.10,0.953,0.0044,5
+  Frontal,-0.14 ± 0.02,-0.17 to -0.12,0.997,0.0015,4
+  Sensorimotor,-0.15 ± 0.02,-0.19 to -0.11,0.945,0.0002,7
+  Parietal,-0.15 ± 0.03,-0.20 to -0.11,0.954,0.0008,6
+  Temporal,-0.15 ± 0.05,-0.27 to -0.03,0.680,0.0224,7
+  Cingulate,-0.16 ± 0.03,-0.23 to -0.09,0.912,0.0030,6
+  Occipital,-0.20 ± 0.12,-0.53 to 0.12,0.563,0.1439,5
+Thalamus,-0.15 ± 0.03,-0.22 to -0.08,0.858,0.0027,7
+Hypothalamus,-0.10 ± 0.04,-0.20 to -0.01,0.692,0.0402,6
+  Mammillary body,-0.15 ± 0.07,-0.30 to -0.00,0.773,0.0495,5
+Cerebellum,-0.15 ± 0.04,-0.24 to -0.06,0.840,0.0102,6
+Basal ganglia,,,,,
+  Caudate,-0.15 ± 0.03,-0.22 to -0.08,0.905,0.0035,6
+  Substantia nigra,-0.14 ± 0.02,-0.18 to -0.10,0.956,0.0007,6
+  Globus pallidus,-0.16 ± 0.04,-0.24 to -0.08,0.926,0.0088,5
+Limbic system,,,,,
+  Hippocampus,-0.14 ± 0.03,-0.19 to -0.09,0.919,0.0007,7
+  Amygdala,-0.12 ± 0.03,-0.17 to -0.07,0.919,0.0025,6
+  Septum,-0.16 ± 0.03,-0.23 to -0.09,0.944,0.0057,5
+Brain stem,,,,,
+  Superior colliculus,-0.06 ± 0.05,-0.19 to 0.06,0.448,0.2168,5
+  Inferior colliculus,0.05 ± 0.09,-0.14 to 0.23,0.174,0.4843,5
+White matter,,,,,
+  Corpus callosum,-0.23 ± 0.09,-0.40 to -0.06,0.947,0.0271,4
+  Internal capsule,-0.24 ± 0.12,-0.48 to 0.00,0.902,0.0504,4
+"The t-test showed that population mean of the exponents in the second column was significantly greater than the exponent -0.25 (p = 9 × 10-9, degrees of freedom (df) = 21 if white matter included; p = 2 × 10-9, df = 19 if white matter excluded).",,,,,

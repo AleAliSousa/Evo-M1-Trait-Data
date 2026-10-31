@@ -22,7 +22,7 @@ options(scipen = 999)
 })
 folder      <- dirname(.sp)                              # this paper's folder
 item_name   <- tools::file_path_sans_ext(basename(.sp))  # = file name, matches __ReadMe.xlsx
-source_name <- sub("_Table1$", "", item_name)             # Hofman__1985_TableI -> Hofman__1985
+source_name <- sub("_TableI$", "", item_name)             # Hofman__1985_TableI -> Hofman__1985
 snapshot_csv <- paste0(item_name, "_snapshot.csv")
 output_csv  <- paste0(item_name, ".csv")                 # project convention: output derives from script name
 base        <- local({                                   # repo root; NA if run as a lone folder

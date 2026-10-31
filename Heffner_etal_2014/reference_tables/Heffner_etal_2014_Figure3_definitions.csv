@@ -1,0 +1,15 @@
+variable,definition,units,notes
+point_id,Row key: frequency index (1-14) plus the animal letter,text,
+species_as_published,Common name as printed in the figure title ('Alpaca Audiogram'),text,
+individual,"Individual alpaca, as the letter plotted at that point",A/B/C,The letters are the plot symbols; the solid line is their mean.
+frequency_kHz,"Test frequency, as the abscissa tick label is PRINTED",kHz,"ERRATA Heffner_etal_2014-E001 (proposed, publication_ambiguity): printed 20, repo had 20, proposed 22.5 | ERRATA Heffner_etal_2014-E001: the tick printed '20' sits at the log position of 22.5 kHz, which the Results text names as a test frequency. The printed label is kept here; the position-implied value is in frequency_kHz_from_tick_position."
+frequency_kHz_from_tick_position,Frequency implied by the tick's pixel position under a log fit to the other 13 ticks,kHz,
+threshold_dB_SPL,Digitised detection threshold for that individual at that frequency,dB SPL,
+mean_threshold_dB_SPL_3_animals,"Mean of the three individuals at that frequency (derived here, not printed)",dB SPL,
+inter_individual_range_dB,max - min of the three individuals at that frequency (derived here),dB,
+marker_glyphs_overlapped,Whether the letter was printed merged with its neighbour and had to be split at the nominal glyph size,yes/no,
+value_origin,Whether the value was printed in the source or read off a plotted figure,text,"always 'digitised_from_figure' in this item. Digitisation: the 42 letter markers (A/B/C) of Fig. 3 were pixel-digitised from the embedded 682 x 1015 px bitmap by Heffner_etal_2014_Figure3_extract.py (axis-tick calibration, letter template matching). Estimated error +/- 0.4 dB: the mean of the three letters reproduces the three means the Results text prints (70.5 / -0.5 / 79 dB) to -0.29, -0.40 and -0.23 dB. The figure contains 42 plotted points (14 frequencies x 3 animals) and all 42 were individually resolved; 10 of them were printed as a merged glyph pair (column marker_glyphs_overlapped = yes) and were split at the nominal glyph size rather than measured separately."
+value_precision,Per-row statement of the digitisation uncertainty,text,
+data_role,Whether the row is this paper's own new measurement (primary) or a value it reproduces from another study (secondary),text,
+Species,Accepted binomial resolved from the printed name via _keys/General/species_key.csv (source_publication = this paper's folder name),text,
+species_basis,"How the binomial was arrived at (verbatim / our_judgment / hypothesis / unspecified_in_source), from the species key",text,

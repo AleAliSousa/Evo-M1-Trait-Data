@@ -98,3 +98,44 @@ labour in `_tools/restore_registry_rows.R`. Nothing consumes `Completed100` by I
   Diprotodontia, Didelphimorphia and Dasyuromorphia. Zero there means a placental-only tree.
 - No comparison script: first-party published tree, no independent curated copy to audit
   against. The audit that matters is the coverage report in `__merging_trees/`.
+
+## Decision 2026-10-31 — `Completed100` is a tree item, not a TSV item
+
+`Upham_etal_2019_Completed100` has a registry row with a blank Progress stage, and the question
+was whether it owes a public TSV. **It does not.** Decision and basis:
+
+**What the item is.** The folder content for it is `Completed100_topoCons_NDexp/output.nex` —
+27 MB, a NEXUS tree distribution: 100 complete trees (5,911 tips each) subsampled and pruned from
+vertlife.org on 2026-08-24 out of the `MamPhy_BDvr_Completed_5911sp_topoCons_NDexp` pseudoposterior.
+It is a phylogeny, not a table, and no table can be squeezed out of it without discarding what it
+is for. The 100 trees share **one tip set** (the sample build verifies this), so a tip inventory
+would be a single 5,911-row table repeated 100 times; what actually varies across the 100 trees —
+topology and branch lengths, i.e. the placement uncertainty the item exists to propagate into PGLS —
+is exactly what a tip table cannot carry.
+
+**The precedent.** `Isler_etal_2008_Tree.nex` is the repo's existing tree-as-tree item: Progress
+stage FINISHED, `Source format = tree`, and **no public TSV**. Worth recording precisely, because
+it is slightly richer than "trees get nothing": Isler *does* publish a public artifact — a
+byte-identical `10.1016%2Fj.jhevol.2008.08.004_Tree.nex` in `__Public/comparative-data/`, under the
+Item encoded with a `.nex` extension rather than `.tsv`.
+
+The sibling item in *this* folder goes the other way: `Upham_etal_2019_DNAonlyMCC` keeps its `.tre`
+local and publishes a derived **tip inventory** as `…_DNAonlyMCC.tsv`. That is the right shape for a
+single MCC summary tree whose tip set is the useful tabular view; it is the wrong shape here.
+
+**Conclusion.** `Completed100` follows `Isler_etal_2008_Tree.nex` in principle — a tree is not a TSV
+item, and no TSV will be written for it. Two points left for the owner:
+
+- Whether to also publish the nexus itself as `10.1371%2Fjournal.pbio.3000494_Completed100.nex`,
+  the way Isler publishes its tree. Against: 27 MB in `__Public/`, and nothing currently consumes
+  `Completed100` by Item encoded — `__merging_trees/build_mammal_trees_sample.R` reads the nexus
+  directly off disk. This pass did **not** write that file.
+- `Completed100_topoCons_NDexp/config.yaml` preserves the vertlife job request and contains a
+  **personal email address**. It should not be copied into `__Public/` or any published artifact.
+  Nothing in this pass copied it.
+
+**Proposed registry stage:** `FINISHED` — the download is frozen, documented here, and wired into
+`__merging_trees/build_mammal_trees_sample.R` → `_keys/mammal_trees_sample100.nwk`; the only
+outstanding item is the optional public `.nex` above. Proposed in
+`Upham_etal_2019_Completed100_registry_row.xlsx` for the owner to paste; the registry has not been
+edited by this pass.

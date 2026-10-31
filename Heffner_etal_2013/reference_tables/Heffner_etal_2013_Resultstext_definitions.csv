@@ -3,7 +3,7 @@ species_row,Row number (2 rows for this item),integer,
 binomial,Species binomial,text,
 common_name,Common name as printed in the paper,text,
 n_individuals,Number of animals tested,integer,Blank for the derived Phyllostomus hastatus row (no new individuals tested here)
-best_sensitivity_dB,Lowest mean absolute threshold reported in Results text,dB SPL,"""the average best hearing of three Common vampire bats of 5 dB at 20 kHz""; blank for the derived row"
+best_sensitivity_dB,Lowest mean absolute threshold reported in Results text,dB SPL,"ERRATA Heffner_etal_2013-E001 (proposed, repo_transcription_error): printed −5, repo had 5, proposed -5 | ""the average best hearing of three Common vampire bats of 5 dB at 20 kHz""; blank for the derived row"
 best_frequency_kHz,Frequency at which the best sensitivity was measured,kHz,Blank for the derived row
 hearing_range_low_60dBSPL_kHz,Low-frequency edge of the 60-dB SPL hearing range,kHz,"D. rotundus: 716 Hz as stated in Abstract/Results (flagged 710 Hz inconsistency in Discussion, see README); P. hastatus: ~1.77 kHz stated in Discussion text"
 hearing_range_high_60dBSPL_kHz,High-frequency edge of the 60-dB SPL hearing range,kHz,"D. rotundus: 113 kHz stated in text; P. hastatus: 105.0 kHz from this paper's own Table 1"

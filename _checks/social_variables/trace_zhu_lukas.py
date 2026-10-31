@@ -7,8 +7,8 @@ def write(path,rows):
  with path.open('w',newline='') as f:
   w=csv.DictWriter(f,list(rows[0]));w.writeheader();w.writerows(rows)
 z=read(R/'Zhu_etal_2023/Zhu_etal_2023_SocialOrganization.csv')
-l=read(R/'Lukas_CluttonBrock/Lukas_CluttonBrock_2013_SupplementaryData.csv')
-refs={r['ref_key']:r for r in read(R/'Lukas_CluttonBrock/reference_tables/Lukas_CluttonBrock_2013_SupplementaryData_references.csv')}
+l=read(R/'Lukas_CluttonBrock_2013/Lukas_CluttonBrock_2013_SupplementaryData.csv')
+refs={r['ref_key']:r for r in read(R/'Lukas_CluttonBrock_2013/reference_tables/Lukas_CluttonBrock_2013_SupplementaryData_references.csv')}
 normal=lambda s:s.replace('_',' ').strip().casefold()
 name_ids=collections.defaultdict(set)
 for r in read(R/'_keys/ncbi_taxonomy_snapshot.csv'):

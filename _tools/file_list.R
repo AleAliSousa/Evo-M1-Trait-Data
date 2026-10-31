@@ -86,6 +86,7 @@ derive_formula_values <- function(data_row) {
   year <- text_before(text_after(citation, "("), ")")
   authors <- text_before(citation, paste0(" (", year, ")"))
   first_author <- gsub("[- ]", "", text_before(citation, ","))
+  if (grepl("^Hardus ME,", citation)) first_author <- "Hardus"
   # has_amp <- grepl("&", authors, fixed = TRUE)
   # other_author <- ""
   # if (has_amp) {
@@ -94,7 +95,7 @@ derive_formula_values <- function(data_row) {
   #   other_author <- if (comma_count > 2L) "etal" else trimws(text_before(text_after(authors, "& "), ","))
   # }
   has_amp      <- grepl("&", authors, fixed = TRUE)
-  has_ellipsis <- grepl("…", authors, fixed = TRUE)
+  has_ellipsis <- grepl("…", authors, fixed = TRUE) || grepl("et al", authors, fixed = TRUE)
   other_author <- ""
   if (has_ellipsis) {
     other_author <- "etal"
@@ -184,7 +185,15 @@ formula_family <- function(r) c(
     ")"
   ),
   sprintf('_xlfn.TEXTBEFORE(_xlfn.TEXTAFTER(A%d, "("), ")")', r),                       # G: year
-  sprintf('E%d & IF(F%d<>"", "_" & SUBSTITUTE(F%d," ",""), "_") & IF(G%d<>"", "_" & G%d, "_") & IF(B%d<>"", "_" & B%d, "")',
+  ## 2026-10-31: H now strips apostrophes, straight and curly, the same way column
+  ## E already stripped hyphens -- this is what turns Reep_O'Shea_1990 into the
+  ## Reep_OShea_1990 Item name that matches the renamed folder. The workbook's H
+  ## cells were updated to this form in Excel; until this line was updated to match,
+  ## the audit rejected all 21 shared-formula master cells (H2, H66, H130, ... H936)
+  ## as "non-canonical" and refused to run. Only the masters carry formula text --
+  ## the continuation cells are <f t="shared" si="n"/> and audit as empty -- which is
+  ## why the error named exactly those 21 rows.
+  sprintf('SUBSTITUTE(SUBSTITUTE(E%d & IF(F%d<>"", "_" & SUBSTITUTE(F%d," ",""), "_") & IF(G%d<>"", "_" & G%d, "_") & IF(B%d<>"", "_" & B%d, ""),"\'",""),"\u2019","")',
           r, r, r, r, r, r, r),                                                        # H: Publication name
   paste0(                                                                              # I: DOI (or Alt)
     "_xlfn.LET(\n",

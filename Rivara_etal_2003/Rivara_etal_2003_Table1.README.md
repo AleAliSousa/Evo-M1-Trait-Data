@@ -61,3 +61,65 @@ No comparison/check folder is included in the public-style package. Checks and m
 6. Public writing additionally requires a **fresh**, unique registry match on the script's own derived Item name, authoritative printed Table1 label, nonempty safe Item encoded, and mounted repo-level `__Public/comparative-data/`. Missing or old registry match produces **no public export and no fallback filename**. Run canonical audit/build/validator in the corrected repository and record actual results; do not infer PASS from the Python preview. Summaries remain reference-only and are never public trait TSV rows.
 
 No original workbook, generated formulas, source PDF, keys, merge scripts, prior approval runs, old ZIPs, earlier sensory packages, or pinned portable runner are changed. This cortical item is **not** added to or claimed covered by the earlier portable-13 run. Delivery uses only output-surface CopyArtifact; no shared upload, GitHub or other outgoing writes are made.
+
+
+---
+
+## 2026-10-31 — registry identity resolved, item stem renamed, public TSV released
+
+Three things changed today. None of them touched a measured value: the six
+case rows and their numbers are exactly as they were.
+
+**1. The duplicate-identity question is closed.** The provisional registry
+row `Rivara_etal_2003_Betzcells` (Candidate A06) and this folder's Table 1
+build were the same item - this paper publishes exactly one table. On being
+asked which one `Betzcells` should be, the owner answered "Betzcells =
+TABLE 1 (all caps)" and resolved it in the live workbook by editing the
+single existing row rather than adding one. Registry row 689 now reads
+`Item number = TABLE 1`, `Item name = Rivara_etal_2003_TABLE1`,
+`Item encoded = 10.1002%2Far.a.10015_TABLE1`. No second row exists and none
+was created, as step 3 of the instructions above required.
+
+**2. The item stem is now `Rivara_etal_2003_TABLE1` (all caps).** The owner
+renamed the folder's files to match the printed label. The build script and
+its reference tables still carried the old mixed-case stem, which broke the
+reader's own `context$Ref == item_name` assertion, so they were brought into
+line: `expected_basename` in the `.R`, and the identifier strings in
+`..._context.csv` (2), `..._definitions.csv` (29) and `..._references.csv`
+(1). The one visible consequence in the data is the `Ref` column, which now
+reads `Rivara_etal_2003_TABLE1` on every row instead of
+`Rivara_etal_2003_Table1`. The registry lookup in the reader was
+re-pointed from the retired `Betzcells` name to the script's own derived
+`item_name`, and the printed-label guard from `Table1` to `TABLE1`.
+
+**3. The reader has now actually been run in R, and the public TSV was
+released.** Previous passes prepared these files without R ("Python preview
+only"); the reader has now been executed cleanly with
+`Rscript --vanilla` (R 4.5.3) in a UTF-8 locale - note that it must be run
+in a UTF-8 locale, because its `fileEncoding = "UTF-8"` reads of the
+micrometre-cubed characters truncate silently under a C locale. It wrote
+`Rivara_etal_2003_TABLE1.csv` (6 case rows), regenerated
+`reference_tables/Rivara_etal_2003_TABLE1_published_summary.csv` (3 summary
+rows) and, with `EVOM1_RIVARA_R_GATE` set, exported
+`__Public/comparative-data/10.1002%2Far.a.10015_TABLE1.tsv`.
+
+**Be clear about what authorised that export.** The gate was set on the
+strength of the owner's explicit in-session instruction of 2026-10-31,
+which chose the course described as "finish its registration ... lifts the
+withheld public TSV". It is **not** a record that the scientific review
+demanded in step 5 above has happened. It has not. The recorded HOLDs stand
+unchanged and travel with the data:
+`merge_gate = HOLD_SOURCE_UNCERTAINTY_NO_MERGE` on every case row,
+`HOLD_PUBLISHED_SUMMARY_REFERENCE_ONLY` on the three summary rows, and the
+unreconciled Table-1-versus-Results discrepancies recorded in the
+definitions file (case E pyramidal count 1,873,740 printed in the table
+against a Results prose maximum of 1,673,740; case E Betz soma volume
+113,125.2 um3 against a prose maximum of 113,146). Nothing is merged.
+To withdraw the export, delete that one TSV and re-run `_tools/file_list.R`.
+
+**Still pending:** human visual curation of Table 1 against printed p.143
+(`Human visual curation` remains blank); resolution of the two
+Table-versus-Results discrepancies, which should become rows in
+`reference_tables/Rivara_etal_2003_errata.csv` under the errata convention
+once checked against the page; and the owner's scientific pre-export
+review.

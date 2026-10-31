@@ -1,0 +1,16 @@
+variable,definition,units,notes
+species_as_published,Species name as given by the paper (title and abstract); Table I itself prints no species column,text,Single-species paper: all 10 killer whales are Orcinus orca
+Species,Accepted binomial resolved from species_as_published via _keys/General/species_key.csv (source_publication = Branstetter_etal_2017); the build stops if that filter returns no rows,text,
+common_name,Common name for the species,text,
+frequency_khz,Test frequency as printed in the kHz column of Table I,kHz,"23 printed frequencies, 0.1-160 kHz"
+subject,"Printed subject column: killer whales A-H (this study) and Vigga / Yakka (Szymanski et al., 1999)",text,Individual identities and demographics are in Table II
+threshold_db_re_1uPa,"Average behavioral threshold for that subject at that frequency, as printed",dB re 1 uPa,One row per printed cell; blank printed cells (frequency not tested for that subject) produce no row
+threshold_printed,The threshold token exactly as printed in Table I,text,Preserves printed precision (all cells are printed as integers)
+subject_data_role,"primary = measured in this study (A-H); secondary = reproduced from an earlier study (Vigga, Yakka)",text,Join subject_source on ref_key in reference_tables/Branstetter_etal_2017_TableI_references.csv
+subject_source,Printed provenance of the subject's thresholds: 'this study' or the cited earlier study,text,Secondary-source key; split on '; ' and join ref_key to reference_tables/Branstetter_etal_2017_TableI_references.csv
+included_in_row_statistics,"FALSE for killer whales A and B; the table caption states they were excluded from Mean, Median, N and SD because of hearing loss",logical,Their thresholds are still printed and are kept here
+row_mean_db,"Printed row Mean for that frequency (metadata, repeated on every subject row of the frequency)",dB re 1 uPa,"Printed statistic, not recomputed; see Table checks in the README"
+row_median_db,Printed row Median for that frequency (metadata),dB re 1 uPa,"Printed statistic, not recomputed"
+row_n_printed,Printed row N (number of subjects entering the row statistics) for that frequency (metadata),integer,"Equals the count of printed thresholds among C-H, Vigga and Yakka in every one of the 23 rows"
+row_sd_db,Printed row SD for that frequency (metadata); blank where the printed cell is blank (N = 1),dB,Not reproducible from the printed integers: the printed statistics were computed on unrounded thresholds
+Method:observation_level,"One row per printed (frequency x individual subject) threshold. These are per-individual values, NOT a species mean: pool or use the paper's own composite (Table IV) before any species-level use.",,method

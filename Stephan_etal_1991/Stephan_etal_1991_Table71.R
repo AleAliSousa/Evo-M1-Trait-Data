@@ -31,29 +31,29 @@ printed_pages <- c("493", "494")
 pdf_pages <- c("99", "100")
 stop_label <- NA_character_  # first-column label after which printed rows are not taxon rows (e.g. printed averages); NA = none
 item_metadata <- list(
-  Source_volume_unit = "mm²",
-  Observation_level = "published historical-taxon structure value; printed n individuals; specimen linkage unresolved",
-  Statistic = "author-reported value (mean over n individuals where n>1 is presumed, not stated in held extract); estimator/normalization unestablished",
-  Laterality = "UNESTABLISHED: unilateral versus bilateral scope of paired structures",
-  Measurement_method = "UNESTABLISHED: Methods pp.12–24 absent",
+  Source_area_unit = "mm2 (printed with a superscript 2 in the Table 71 caption)",
+  Observation_level = "published historical-taxon midsagittal area value; printed n individuals; specimen linkage unresolved",
+  Statistic = "author-reported value (mean over n individuals where n>1; n printed per row); estimator/normalization unestablished",
+  Laterality = "midsagittal sectional AREA of a midline commissural/chiasmatic complex; laterality does not apply as it does to paired volumes",
+  Measurement_method = "UNESTABLISHED: Methods pp.12-24 absent from the held extract",
   Shrinkage_correction = "UNESTABLISHED from held quantitative-table source",
-  Metric_normalization = "UNESTABLISHED: book standardization possible; not certified raw stereology",
+  Metric_normalization = "UNESTABLISHED: book standardization possible; not certified raw planimetry",
   Age_provenance = "UNESTABLISHED for this table row",
-  Data_origin = "provisional primary author-reported volumes; method/primary-origin certification pending",
-  Dependency_note = "Three separate midsagittal fiber areas, each an independent structure; no totals. Areas (mm²), not volumes.",
+  Data_origin = "provisional primary author-reported areas; method/primary-origin certification pending",
+  Dependency_note = "Areas, not volumes: do NOT pool with any *_Vol.mm3 column. Table72 prints size indices and Table73 supraspecific average indices derived from these areas; this table is the area source for both.",
   N_transcription_note = "n transcribed from the rendered page image by an AI assistant; the PDF text layer drops many thin '1' glyphs, so no n was taken from OCR, imputed, forward-filled or borrowed from another table.",
   Missingness_note = NA_character_,
-  Source_gap = "Held 178-page chapter-10 tables/atlas extract begins printed p.395; Methods pp.12–24 and full bibliography absent. Measurement estimator, metric normalization and shrinkage correction unestablished; not certified raw stereology.",
-  Accepted_taxon_gate = "HOLD: collection-scoped Stephan mapping pending; printed historical name retained",
+  Source_gap = "Held 178-page chapter-10 tables/atlas extract begins printed p.395; Methods pp.12-24 and full bibliography absent. Measurement estimator, metric normalization and shrinkage correction unestablished; not certified raw planimetry.",
+  Accepted_taxon_gate = "RESOLVED: printed name mapped to accepted_name via _keys/Stephan/species_key.csv (source_publication = Stephan_etal_1991); printed historical name retained in Species_Stephan1991",
   Anatomy_gate = "HOLD: author abbreviation/term preserved; canonical comparability unresolved",
   Specimen_gate = "HOLD: specimen identity/overlap unresolved; no independent-cohort assertion",
   Method_gate = "HOLD: method/shrinkage/normalization unestablished",
-  Laterality_gate = "HOLD: no approved both-sided volume routing",
+  Laterality_gate = "N/A: midsagittal area, not a paired-structure volume",
   Primary_ingestion_eligible = "FALSE",
   Merge_eligible = "FALSE",
-  Publication_gate = "HOLD: R execution, human visual curation and owner registration pending; no public TSV prepared",
-  Source_reader = "Microsoft Copilot AI assistant (page images rendered at 200 dpi; text layer used only as locator)",
-  Source_read_date = "2026-10-14",
+  Publication_gate = "HOLD: human visual curation pending",
+  Source_reader = "Claude (Anthropic) AI assistant (page images rendered at 300 dpi with pdftools::pdf_convert; the OCR text layer was rejected where it disagreed with the image)",
+  Source_read_date = "2026-10-31",
   Human_visual_curation = "PENDING: no human has checked these values against the page images"
 )
 
@@ -108,8 +108,20 @@ for (i in seq_len(nrow(source))) {
   }
   if (length(parts)) paste(parts, collapse = "; ") else "No missing or non-numeric volume token in this printed row"
 }, character(1))
+# ---- collection-scoped species resolution (_keys/Stephan/species_key.csv) ----
+.key_file <- file.path(base, "_keys", "Stephan", "species_key.csv")
+if (!file.exists(.key_file)) stop("Stephan collection species key not found: ", .key_file)
+.key <- utils::read.csv(.key_file, colClasses = "character", check.names = FALSE, encoding = "UTF-8")
+.key <- .key[.key$source_publication == "Stephan_etal_1991", , drop = FALSE]
+if (nrow(.key) == 0L)
+  stop("No _keys/Stephan/species_key.csv rows for source_publication == \"Stephan_etal_1991\"; key rows are scoped to the paper folder name.")
+.lk <- stats::setNames(.key$accepted_name, .key$variant_name)
+.species <- unname(.lk[.data[[1L]]])
+if (anyNA(.species))
+  stop("Printed taxon labels absent from the Stephan species key: ", paste(.data[[1L]][is.na(.species)], collapse = "; "))
+
 final.dataframe <- data.frame(Reference = rep(item_name, nrow(.data)), Source_row = seq_len(nrow(.data)),
-                              Species_Stephan1991 = .data[[1L]], Family_as_published = .family,
+                              Species_Stephan1991 = .data[[1L]], Species = .species, Family_as_published = .family,
                               stringsAsFactors = FALSE, check.names = FALSE)
 if (single_n) final.dataframe[["n"]] <- .num(.data[[n_positions[1L]]])
 for (j in seq_along(measure_codes)) {

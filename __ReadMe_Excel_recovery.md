@@ -57,3 +57,49 @@ These backups are evidence, not automatic restore targets: an older version can 
 ## Request to give a future assistant
 
 “Read `__ReadMe_Excel_recovery.md` beside the registry. Excel shows the content-recovery warning again. Back up the current file, diagnose its actual structural defect, and repair it while preserving all registry data, formulas, cached results, and styles. Check cell ordering, but do not assume it is the cause this time. Verify reopening in Excel if available.”
+
+## Recurrence on 31 October 2026: same warning, different cause
+
+**Cause.** Cell order was fine this time. Between 23:58 on 30 October and 00:12 on 31 October (Pacific), a script updated 171 Sheet1 cells (status notes with a light-blue fill). It rewrote `xl/worksheets/sheet1.xml` and `xl/styles.xml` with Python's `xml.etree.ElementTree`. ElementTree renamed the namespace prefixes (`mc`, `xr`, `x14ac`, `r` became `ns1` to `ns4`) and dropped declarations it judged unused. The root `mc:Ignorable` value still listed `x14ac xr xr2 xr3` (sheet) and `x14ac x16r2 xr` (styles), but those prefixes were no longer declared. Excel therefore rejects the parts, and Excel for the web refused to open the file at all (unsupported workbook).
+
+**Tell-tale signs.**
+- `ns0:`/`ns1:`-style prefixes in a worksheet or styles part.
+- An XML declaration in single quotes (`<?xml version='1.0' encoding='UTF-8'?>`).
+- `standalone="yes"` missing from the XML declaration.
+
+**Repair.** The repair changed those two parts only.
+- It restored the original prefixes and namespace declarations, copied byte-for-byte from the pre-edit backup `_checks/__ReadMe_backup_20261031_pre_edit.xlsx`.
+- It left all element names, attribute values and text, and the other 23 ZIP parts, unchanged.
+
+**Checks.**
+- The namespace-aware content is identical to the damaged file.
+- All 32,334 cells on the three sheets are identical, including values, the 7,277 formulas (1,725 of them array formulas), cached results and styles.
+- The 171 new cells are present.
+- Excel for the web opened the repaired copy and returned every Sheet1 value in A1:AH943, matching the stored values.
+
+The assistant's tools can change an Excel file only through Excel for the web, which could not open the damaged file. So the owner puts the repaired copy in place with an in-place overwrite, which keeps the same file and its version history. The owner's reopen in desktop Excel is the final check.
+
+**Evidence (private):** `../../Evo-M1-Trait-Data-restricted/restricted_checks/ReadMe_recovery_2026-10-31/` contains:
+- the damaged file before repair;
+- the repaired file;
+- a test copy of the damaged file;
+- `RECOVERY_LOG_2026-10-31.md`, with hashes and the full list of checks.
+
+**Add to step 4 of "If it happens again".** In every XML part, each prefix named in `mc:Ignorable` (or in an `mc:Choice Requires`) must be declared:
+
+```
+python3 - __ReadMe.xlsx <<'EOF'
+import re, sys, zipfile
+z = zipfile.ZipFile(sys.argv[1])
+for n in z.namelist():
+    if n.endswith(('.xml', '.rels')):
+        t = z.read(n).decode('utf-8', 'replace')
+        declared = set(re.findall(r'xmlns:([\w.-]+)=', t))
+        for v in re.findall(r':Ignorable="([^"]*)"', t):
+            missing = [p for p in v.split() if p not in declared]
+            if missing:
+                print(n, 'undeclared Ignorable prefixes:', missing)
+EOF
+```
+
+**Prevention.** Scripts that edit registry XML must not re-serialise it with `xml.etree.ElementTree`. Use `lxml` (it keeps the original prefixes) or targeted text edits. Then run the check above, as well as the cell-order check, before the file syncs.

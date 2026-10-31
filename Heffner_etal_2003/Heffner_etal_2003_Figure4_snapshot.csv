@@ -1,0 +1,54 @@
+# Heffner_etal_2003_Figure4 constructed snapshot -- digitised audiogram polylines.
+# x ticks [1, 2, 4, 8, 16, 20, 25, 32, 40, 56, 80, 100, 140, 160] kHz at px [125.0, 229.5, 334.0, 436.0, 540.0, 574.5, 608.0, 644.5, 679.0, 729.0, 784.0, 818.0, 868.0, 888.0]; log-fit residuals (%): [0.32, 0.51, 0.71, -0.76, -0.89, -0.26, -0.29, -0.7, -0.07, -0.46, 0.46, 0.76, 0.37, 0.32]
+# y ticks [90, 80, 70, 60, 50, 40, 30, 20, 10, 0] dB SPL at px [14.5, 71.0, 125.0, 181.5, 235.0, 289.0, 346.0, 400.0, 453.5, 510.0]; linear-fit residuals (dB): [0.18, -0.11, 0.05, -0.24, 0.02, 0.18, -0.2, -0.03, 0.22, -0.07]
+# vertex frequencies are AS EXTRACTED, not snapped to nominal test frequencies.
+species_as_printed,line_style,vertex_index,px_x,px_y,frequency_kHz,threshold_dB_SPL,trace_rms_px,trace_columns
+Carollia perspicillata,thick grey line; label '(47 us)',1,332.0,116.0,3.975,71.69,2.45,555
+Carollia perspicillata,thick grey line; label '(47 us)',2,368.5,181.0,5.068,59.85,2.45,555
+Carollia perspicillata,thick grey line; label '(47 us)',3,406.0,237.0,6.503,49.65,2.45,555
+Carollia perspicillata,thick grey line; label '(47 us)',4,496.0,425.0,11.834,15.41,2.45,555
+Carollia perspicillata,thick grey line; label '(47 us)',5,526.0,449.0,14.447,11.04,2.45,555
+Carollia perspicillata,thick grey line; label '(47 us)',6,531.0,460.0,14.936,9.04,2.45,555
+Carollia perspicillata,thick grey line; label '(47 us)',7,607.0,509.0,24.761,0.12,2.45,555
+Carollia perspicillata,thick grey line; label '(47 us)',8,617.5,497.0,26.552,2.3,2.45,555
+Carollia perspicillata,thick grey line; label '(47 us)',9,646.0,460.0,32.094,9.04,2.45,555
+Carollia perspicillata,thick grey line; label '(47 us)',10,682.5,393.5,40.914,21.15,2.45,555
+Carollia perspicillata,thick grey line; label '(47 us)',11,712.0,311.5,49.784,36.09,2.45,555
+Carollia perspicillata,thick grey line; label '(47 us)',12,756.5,396.2,66.933,20.65,2.45,555
+Carollia perspicillata,thick grey line; label '(47 us)',13,766.0,417.0,71.299,16.87,2.45,555
+Carollia perspicillata,thick grey line; label '(47 us)',14,788.5,378.2,82.81,23.93,2.45,555
+Carollia perspicillata,thick grey line; label '(47 us)',15,801.0,362.5,89.989,26.8,2.45,555
+Carollia perspicillata,thick grey line; label '(47 us)',16,831.0,349.0,109.864,29.26,2.45,555
+Carollia perspicillata,thick grey line; label '(47 us)',17,850.0,350.5,124.664,28.98,2.45,555
+Carollia perspicillata,thick grey line; label '(47 us)',18,868.0,268.0,140.52,44.01,2.45,555
+Carollia perspicillata,thick grey line; label '(47 us)',19,889.0,75.0,161.586,79.16,2.45,555
+Artibeus jamaicensis,thin black line; label '(96 us)',1,228.0,122.0,1.99,70.6,1.07,642
+Artibeus jamaicensis,thin black line; label '(96 us)',2,379.0,288.0,5.434,40.36,1.07,642
+Artibeus jamaicensis,thin black line; label '(96 us)',3,495.0,433.0,11.755,13.96,1.07,642
+Artibeus jamaicensis,thin black line; label '(96 us)',4,539.0,461.5,15.752,8.77,1.07,642
+Artibeus jamaicensis,thin black line; label '(96 us)',5,644.0,430.0,31.67,14.5,1.07,642
+Artibeus jamaicensis,thin black line; label '(96 us)',6,678.0,389.0,39.707,21.97,1.07,642
+Artibeus jamaicensis,thin black line; label '(96 us)',7,712.0,425.5,49.784,15.32,1.07,642
+Artibeus jamaicensis,thin black line; label '(96 us)',8,730.0,437.5,56.116,13.14,1.07,642
+Artibeus jamaicensis,thin black line; label '(96 us)',9,782.0,355.0,79.306,28.16,1.07,642
+Artibeus jamaicensis,thin black line; label '(96 us)',10,800.0,282.5,89.393,41.37,1.07,642
+Artibeus jamaicensis,thin black line; label '(96 us)',11,817.0,315.5,100.095,35.36,1.07,642
+Artibeus jamaicensis,thin black line; label '(96 us)',12,830.0,295.0,109.135,39.09,1.07,642
+Artibeus jamaicensis,thin black line; label '(96 us)',13,869.0,130.5,141.458,69.05,1.07,642
+Phyllostomus hastatus,dotted line; label '(108 us)',1,125.0,54.5,1.003,82.89,2.55,518
+Phyllostomus hastatus,dotted line; label '(108 us)',2,224.0,194.5,1.938,57.39,2.55,518
+Phyllostomus hastatus,dotted line; label '(108 us)',3,279.0,265.0,2.794,44.55,2.55,518
+Phyllostomus hastatus,dotted line; label '(108 us)',4,283.0,265.0,2.869,44.55,2.55,518
+Phyllostomus hastatus,dotted line; label '(108 us)',5,329.0,329.0,3.897,32.9,2.55,518
+Phyllostomus hastatus,dotted line; label '(108 us)',6,425.0,429.0,7.379,14.69,2.55,518
+Phyllostomus hastatus,dotted line; label '(108 us)',7,438.0,439.5,8.046,12.77,2.55,518
+Phyllostomus hastatus,dotted line; label '(108 us)',8,496.0,455.0,11.834,9.95,2.55,518
+Phyllostomus hastatus,dotted line; label '(108 us)',9,541.0,474.0,15.963,6.49,2.55,518
+Phyllostomus hastatus,dotted line; label '(108 us)',10,576.0,503.0,20.147,1.21,2.55,518
+Phyllostomus hastatus,dotted line; label '(108 us)',11,651.0,489.5,33.18,3.67,2.55,518
+Phyllostomus hastatus,dotted line; label '(108 us)',12,682.0,463.0,40.778,8.49,2.55,518
+Phyllostomus hastatus,dotted line; label '(108 us)',13,706.0,433.5,47.836,13.87,2.55,518
+Phyllostomus hastatus,dotted line; label '(108 us)',14,752.0,457.0,64.959,9.59,2.55,518
+Phyllostomus hastatus,dotted line; label '(108 us)',15,784.0,402.5,80.368,19.51,2.55,518
+Phyllostomus hastatus,dotted line; label '(108 us)',16,814.0,258.5,98.117,45.74,2.55,518
+Phyllostomus hastatus,dotted line; label '(108 us)',17,831.0,145.0,109.864,66.41,2.55,518

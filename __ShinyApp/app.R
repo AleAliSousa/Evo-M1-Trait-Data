@@ -1,6 +1,7 @@
 # =============================================================================
 # Evo-M1-Trait-Data explorer  -- public Shiny app
-# Species-first trait coverage, searchable compiled data, size-adjusted
+# Species-first trait coverage, brain-structure comparison within a species,
+# searchable compiled data, cross-source reconciliation, size-adjusted
 # regression, cohort coverage, glossary and per-publication source tables.
 #
 # Self-contained: all data lives in ./data and is bundled on deploy.
@@ -1056,6 +1057,29 @@ label_html <- function(labs) {
   out
 }
 
+# ---- Brain structures + source reconciliation --------------------------------
+# Shared with TraitExplorer (keep the two copies of structure_reconcile.R
+# identical). Built once at startup from the compiled table and the variable
+# key; nothing here changes a value, pools variables or edits a key.
+#   sr_meta  : one row per variable label -- structure as the label states it,
+#              the key's structure group, unit, unit dimension, comparison key
+#   sr_rows  : numeric structure-level rows, value in the base unit
+#   sr_cands : candidate pairs of variables that look like the same trait from
+#              different sources, with species-by-species agreement statistics
+source("structure_reconcile.R", local = TRUE)
+sr_first <- compiled[!duplicated(compiled$Variable), c("Variable", "Dataset")]
+sr_meta  <- sr_label_meta(sr_first$Variable, sr_first$Dataset, vardef)
+sr_rows  <- sr_structure_rows(compiled, sr_meta)
+bs_species_choices <- sr_species_choices(sr_rows)
+sr_cands <- tryCatch(sr_candidates(compiled, sr_meta, canon), error = function(e) {
+  message("Source-reconciliation candidates not built: ", conditionMessage(e))
+  data.frame()
+})
+message(sprintf(paste0("Brain structures: %d structure-level variables, %d species comparable. ",
+                       "Reconciliation: %d candidate pairs."),
+                sum(sr_meta$is_brain), length(bs_species_choices), nrow(sr_cands)))
+nz1 <- function(x) !is.null(x) && length(x) > 0 && !is.na(x[1]) && nzchar(x[1])
+
 # ---- Phylogeny (for PGLS phylogenetic regression) ---------------------------
 # Drop a mammal tree at _keys/mammal_tree.<nwk|tre|nex> (e.g. an Upham et al.
 # 2019 / VertLife mammal tree). Tips "Genus_species[_Family_Order]" are matched
@@ -1384,6 +1408,54 @@ ui <- page_navbar(
     )
   ),
 
+  # ---------------------------------------------------------- Brain structures --
+  nav_panel(
+    title = "Brain structures", value = "brain_structures",
+    layout_sidebar(
+      sidebar = sidebar(
+        width = 340,
+        helpText("Compare brain structures within one species: every structure-level ",
+                 "value the compilation holds for one kind of measurement, side by side. ",
+                 "Species are listed only where at least two structures share a measurement."),
+        selectizeInput("bs_species", "Species", choices = NULL,
+                       options = list(placeholder = "Type a scientific name")),
+        selectInput("bs_key", "Measurement", choices = NULL),
+        selectInput("bs_ref", "Express as % of", choices = c("Absolute values" = "")),
+        checkboxInput("bs_log", "Log\u2081\u2080 axis", value = TRUE),
+        sliderInput("bs_top", "Structures shown in the chart", min = 5, max = 150,
+                    value = 40, step = 5),
+        selectizeInput("bs_compare", "Add species for comparison (optional, up to 3)",
+                       choices = NULL, multiple = TRUE,
+                       options = list(maxItems = 3, placeholder = "same measurement and structures")),
+        hr(),
+        helpText(class = "text-muted small",
+                 "Units are put on one scale (volumes in mm\u00b3, masses in g) before ",
+                 "comparison. Each variable stays a separate row: two variables for the same ",
+                 "structure are shown side by side, never averaged. Structures can be nested ",
+                 "(Neocortex contains its grey matter and its areas), so percentages are not ",
+                 "additive and are never summed."),
+        downloadButton("bs_download", "Download structure table (CSV)", class = "btn-primary btn-sm")
+      ),
+      uiOutput("bs_summary"),
+      navset_card_tab(
+        nav_panel("Chart", plotOutput("bs_plot", height = "680px")),
+        nav_panel("Table",
+                  p(class = "text-muted small",
+                    "One row per variable and source dataset. ", strong("Value"),
+                    " is the mean of that variable's records for the species; ",
+                    strong("Min"), "/", strong("Max"), " show their range. ",
+                    strong("Structure from"), " says whether the structure was read from ",
+                    "the label, from the variable key, or parsed from a label the key does not yet list."),
+                  DTOutput("bs_table")),
+        nav_panel("Structures \u00d7 measurements",
+                  p(class = "text-muted small",
+                    "Which structures this species has data for, and for which kinds of ",
+                    "measurement. Use it to pick a measurement with the structures you need."),
+                  DTOutput("bs_matrix"))
+      )
+    )
+  ),
+
   # ---------------------------------------------------------------- Compiled --
   nav_panel(
     title = "Compiled database",
@@ -1466,6 +1538,61 @@ ui <- page_navbar(
                    strong("Regression"), " tab."),
           plotOutput("p_plot", height = "540px")
         )
+      )
+    )
+  ),
+
+  # --------------------------------------------------------- Reconcile sources --
+  nav_panel(
+    title = "Reconcile sources", value = "reconcile",
+    layout_sidebar(
+      sidebar = sidebar(
+        width = 340,
+        helpText("Variables that look like the same trait reported by different sources: ",
+                 "the same structure, measurement, unit and life-stage/sex scope, or the same ",
+                 "name once the source tag is removed. Each pair is compared species by species."),
+        selectizeInput("rc_verdict", "Verdict", choices = SR_VERDICTS,
+                       selected = setdiff(SR_VERDICTS, "no shared species (complementary coverage)"),
+                       multiple = TRUE),
+        radioButtons("rc_kind", "Traits",
+                     choices = c("All" = "all", "Brain structures" = "S", "Other traits" = "N"),
+                     inline = TRUE),
+        textInput("rc_search", "Variable contains", placeholder = "e.g. Neocortex, Gestation"),
+        numericInput("rc_tol", "Flag a species when values differ by more than (%)",
+                     value = 10, min = 1, max = 100, step = 1),
+        hr(),
+        helpText(class = "text-muted small",
+                 strong("same values"), ": \u2265 90% of shared species within 1%. ",
+                 strong("agree within 10%"), ": median ratio within 10% and \u2265 75% of species within 10%. ",
+                 strong("median agrees, wide scatter"), ": centred on 1 but under 75% of species within 10%. ",
+                 strong("consistent offset"), ": a steady ratio away from 1 (unit, boundary or definition difference). ",
+                 strong("different measurement basis"), ": the variable key records different bases ",
+                 "(poolable_group). Nothing here pools or edits data; record a decision in ",
+                 tags$code("_keys/variable_canonical.csv"), " (supersede / keep_separate) and it ",
+                 "appears in the Decision column."),
+        downloadButton("rc_download_pairs", "Download candidate pairs (CSV)", class = "btn-primary btn-sm")
+      ),
+      uiOutput("rc_summary"),
+      navset_card_tab(
+        id = "rc_tabs",
+        nav_panel("Candidate pairs", value = "pairs",
+                  p(class = "text-muted small", "Select a row to open the pair and its group. ",
+                    "Ratios are B / A on species means in base units."),
+                  DTOutput("rc_pairs")),
+        nav_panel("Pair detail", value = "detail",
+                  uiOutput("rc_pair_head"),
+                  plotOutput("rc_pair_plot", height = "460px"),
+                  DTOutput("rc_pair_table"),
+                  downloadButton("rc_download_pair", "Download this comparison (CSV)",
+                                 class = "btn-outline-primary btn-sm")),
+        nav_panel("Reconciled view", value = "group",
+                  uiOutput("rc_group_head"),
+                  selectizeInput("rc_precedence", "Precedence: the first variable with a value wins",
+                                 choices = NULL, multiple = TRUE, width = "100%",
+                                 options = list(plugins = list("remove_button"))),
+                  DTOutput("rc_group_table"),
+                  downloadButton("rc_download_group", "Download reconciled view (CSV)",
+                                 class = "btn-outline-primary btn-sm"))
       )
     )
   ),
@@ -1731,6 +1858,18 @@ ui <- page_navbar(
         "OLS or phylogenetic GLS, with an added-variable plot, the gain in fit ",
         "from the predictor over the covariates alone, collinearity (VIF) checks, ",
         "and each species' residual on the covariates for download."),
+      h5("Brain structures"),
+      p("For one species, every structure-level value the compilation holds for one kind ",
+        "of measurement (volume, mass, neuron number, cerebral metabolic rate, ...) on one ",
+        "unit scale, optionally as a percentage of a reference such as a weighed whole-brain ",
+        "mass, and optionally beside up to three other species. Two variables for the same ",
+        "structure stay side by side; nothing is averaged across variables."),
+      h5("Reconcile sources"),
+      p("Pairs of variables that look like the same trait from different sources, compared ",
+        "species by species: agreement, consistent offsets, disagreements and differences in ",
+        "measurement basis. A reconciled view lists every source per species and applies a ",
+        "precedence order you choose (first available wins), naming where each value came ",
+        "from. Decisions are recorded in ", tags$code("_keys/variable_canonical.csv"), "."),
       h5("Cohort coverage"),
       p("Trait coverage for named species sets \u2014 the species a project ",
         "actually works on, rather than the whole compilation. For each ",
@@ -2688,6 +2827,287 @@ server <- function(input, output, session) {
                                   input$k_cohort, Sys.Date(),
                                   if (k_mode() == "off") "" else paste0("_pooled_", k_mode())),
     content  = function(file) write.csv(k_tt_shown(), file, row.names = FALSE)
+  )
+
+  # ---- Brain structures within a species ---------------------------------------
+  updateSelectizeInput(session, "bs_species", choices = bs_species_choices, server = TRUE,
+                       selected = if ("Homo sapiens" %in% bs_species_choices) "Homo sapiens"
+                                  else unname(bs_species_choices)[1])
+  observeEvent(input$bs_species, {
+    req(nz1(input$bs_species))
+    updateSelectInput(session, "bs_key", choices = sr_keys_for(sr_rows, input$bs_species))
+    others <- setdiff(unname(bs_species_choices), input$bs_species)
+    updateSelectizeInput(session, "bs_compare", choices = others, server = TRUE,
+                         selected = intersect(isolate(input$bs_compare), others))
+  })
+  observeEvent(list(input$bs_species, input$bs_key), {
+    req(nz1(input$bs_species), nz1(input$bs_key))
+    refs <- sr_reference_choices(compiled, sr_meta, input$bs_species, input$bs_key)
+    keep <- if (isolate(input$bs_ref) %in% refs) isolate(input$bs_ref) else ""
+    updateSelectInput(session, "bs_ref", choices = c("Absolute values" = "", refs), selected = keep)
+  })
+
+  bs_prof <- reactive({
+    req(nz1(input$bs_species), nz1(input$bs_key))
+    sp <- unique(c(input$bs_species, input$bs_compare))
+    p <- sr_profile(sr_rows, sp, input$bs_key)
+    if (!nrow(p)) return(p)
+    if (nz1(input$bs_ref)) {
+      ref <- vapply(sp, function(s) sr_reference_value(compiled, sr_meta, s, input$bs_ref), numeric(1))
+      p$Reference <- input$bs_ref
+      p$Reference_value <- unname(ref[p$Species])
+      p$Pct_of_reference <- signif(100 * p$Value / p$Reference_value, 4)
+    }
+    p
+  })
+
+  output$bs_summary <- renderUI({
+    p <- bs_prof()
+    if (!nrow(p)) return(div(class = "alert alert-secondary",
+                             "No structure-level values for this species and measurement."))
+    foc <- p[p$Species == input$bs_species, , drop = FALSE]
+    n_multi <- length(unique(foc$Structure[foc$Same_structure_rows > 1]))
+    n_parsed <- sum(foc$Structure_from == "parsed from label")
+    tagList(
+      div(class = "alert alert-light",
+          strong(em(input$bs_species)), ": ", strong(length(unique(foc$Structure))),
+          " structures with ", strong(foc$Unit[1]), " values from ",
+          length(unique(foc$Dataset)), " compiled dataset(s).",
+          if (nz1(input$bs_ref)) tagList(" Shown as % of ", code(input$bs_ref), ".")),
+      if (n_multi) div(class = "alert alert-warning",
+                       strong(n_multi), " structure(s) are reported by more than one variable or dataset. ",
+                       "They are shown side by side, not averaged; the ", strong("Reconcile sources"),
+                       " tab compares them species by species."),
+      if (nz1(input$bs_ref) && any(!is.finite(p$Reference_value)))
+        div(class = "alert alert-warning", "The reference has no value for: ",
+            paste(unique(p$Species[!is.finite(p$Reference_value)]), collapse = ", "),
+            ". Those species are left out of the chart."),
+      if (n_parsed) div(class = "text-muted small", n_parsed,
+                        " row(s) come from variables the key does not list yet; their structure ",
+                        "was read from the label (Structure from = parsed from label).")
+    )
+  })
+
+  output$bs_plot <- renderPlot({
+    p <- bs_prof()
+    validate(need(nrow(p) > 0, "No structure-level values for this species and measurement."))
+    pct <- "Pct_of_reference" %in% names(p)
+    sc <- if (pct) 100 / p$Reference_value else rep(1, nrow(p))
+    p$y <- p$Value * sc; p$lo <- p$Min * sc; p$hi <- p$Max * sc
+    p <- p[is.finite(p$y) & (!isTRUE(input$bs_log) | p$y > 0), , drop = FALSE]
+    validate(need(nrow(p) > 0, "Nothing to plot (no reference value, or no positive values on a log axis)."))
+    # A structure carried by several variables/datasets gets one row per series.
+    nser <- tapply(paste(p$Variable, p$Dataset), p$Structure, function(x) length(unique(x)))
+    p$Row <- ifelse(nser[p$Structure] > 1,
+                    paste0(p$Structure, "  [", p$Variable, " | ", p$Dataset, "]"), p$Structure)
+    foc <- p[p$Species == input$bs_species, , drop = FALSE]
+    foc <- foc[order(-foc$y), , drop = FALSE]
+    rows <- utils::head(unique(foc$Row), input$bs_top)
+    p <- p[p$Row %in% rows, , drop = FALSE]
+    p$Row <- factor(p$Row, levels = rev(rows))
+    base <- if (isTRUE(input$bs_log)) min(p$y[p$y > 0]) / 2 else 0
+    # Several species: offset each species' point within its structure row
+    # (computed here rather than with position_dodge, which does not dodge
+    # points along a discrete y axis).
+    sp_lv <- unique(c(input$bs_species, p$Species))
+    n_sp <- length(sp_lv)
+    off <- if (n_sp > 1) seq(-0.3, 0.3, length.out = n_sp) else 0
+    p$ypos <- as.numeric(p$Row) + off[match(p$Species, sp_lv)]
+    p$col <- if (n_sp > 1) p$Species else p$Dataset
+    p$base <- base
+    lv <- levels(p$Row)
+    g <- ggplot(p, aes(y = ypos, x = y, colour = col)) +
+      geom_segment(aes(x = base, xend = y, yend = ypos), linewidth = 0.6, alpha = 0.5) +
+      geom_point(size = 2.6) +
+      geom_errorbar(data = p[p$N_values > 1, , drop = FALSE],
+                    aes(xmin = lo, xmax = hi), width = 0.25, orientation = "y") +
+      scale_y_continuous(breaks = seq_along(lv), labels = lv, expand = expansion(add = 0.6)) +
+      labs(x = if (pct) paste0("% of ", input$bs_ref) else p$Unit[1],
+           y = NULL, colour = if (n_sp > 1) "Species" else "Dataset",
+           title = names(sr_keys_for(sr_rows, input$bs_species))[
+             match(input$bs_key, sr_keys_for(sr_rows, input$bs_species))]) +
+      theme_minimal(base_size = 13) +
+      theme(panel.grid.major.y = element_blank(), panel.grid.minor.y = element_blank(),
+            legend.position = "bottom")
+    if (isTRUE(input$bs_log)) g <- g + scale_x_log10()
+    g
+  })
+
+  output$bs_table <- renderDT({
+    p <- bs_prof()
+    validate(need(nrow(p) > 0, "No rows."))
+    show <- p
+    show$Same_structure_rows <- NULL
+    names(show)[names(show) == "Structure_from"] <- "Structure from"
+    names(show)[names(show) == "Structure_group"] <- "Structure group (key)"
+    show$Variable <- label_html(p$Variable)
+    num_cols <- intersect(c("Value", "Min", "Max", "Reference_value"), names(show))
+    for (cl in num_cols) show[[cl]] <- signif(show[[cl]], 5)
+    datatable(show, rownames = FALSE, filter = "top",
+              escape = which(names(show) != "Variable"),
+              options = list(pageLength = 25, scrollX = TRUE))
+  })
+
+  output$bs_matrix <- renderDT({
+    req(nz1(input$bs_species))
+    m <- sr_species_matrix(sr_rows, input$bs_species)
+    validate(need(nrow(m) > 0, "No structure-level values for this species."))
+    datatable(m, rownames = FALSE, filter = "top",
+              options = list(pageLength = 25, scrollX = TRUE))
+  })
+
+  output$bs_download <- downloadHandler(
+    filename = function() sprintf("evom1_brain_structures_%s_%s.csv",
+                                  gsub("[^A-Za-z0-9]+", "_", input$bs_species), Sys.Date()),
+    content = function(file) write.csv(bs_prof(), file, row.names = FALSE)
+  )
+
+  # ---- Reconcile sources --------------------------------------------------------
+  rc_filtered <- reactive({
+    d <- sr_cands
+    if (!nrow(d)) return(d)
+    d <- d[as.character(d$Verdict) %in% input$rc_verdict, , drop = FALSE]
+    if (!identical(input$rc_kind, "all"))
+      d <- d[startsWith(d$Group, paste0(input$rc_kind, "|")), , drop = FALSE]
+    q <- tolower(trimws(input$rc_search))
+    if (nzchar(q)) d <- d[grepl(q, tolower(d$Series_A), fixed = TRUE) |
+                            grepl(q, tolower(d$Series_B), fixed = TRUE), , drop = FALSE]
+    d
+  })
+
+  output$rc_summary <- renderUI({
+    if (!nrow(sr_cands)) return(div(class = "alert alert-secondary",
+                                    "No candidate pairs were found at startup."))
+    v <- table(factor(as.character(sr_cands$Verdict), levels = SR_VERDICTS))
+    div(class = "alert alert-light",
+        strong(nrow(sr_cands)), " candidate pairs in ",
+        length(unique(sr_cands$Group)), " groups. ",
+        paste(sprintf("%s: %d", names(v), as.integer(v)), collapse = " \u00b7 "),
+        ". ", strong(sum(nzchar(sr_cands$Decision_on_record))), " pairs already have a decision on record.")
+  })
+
+  output$rc_pairs <- renderDT({
+    d <- rc_filtered()
+    validate(need(nrow(d) > 0, "No candidate pairs match these filters."))
+    show <- d; show$Group <- NULL; show$Verdict <- as.character(show$Verdict)
+    names(show) <- gsub("_", " ", names(show))
+    datatable(show, rownames = FALSE, selection = "single", filter = "top",
+              options = list(pageLength = 15, scrollX = TRUE))
+  })
+
+  rc_sel <- reactive({
+    i <- input$rc_pairs_rows_selected
+    d <- rc_filtered()
+    if (!length(i) || !nrow(d) || i > nrow(d)) return(NULL)
+    d[i, , drop = FALSE]
+  })
+  observeEvent(input$rc_pairs_rows_selected, {
+    nav_select("rc_tabs", "detail")
+  }, ignoreInit = TRUE)
+
+  rc_detail <- reactive({
+    s <- rc_sel(); req(s)
+    sr_pair_detail(compiled, sr_meta, s$Series_A, s$Series_B, tol = input$rc_tol / 100)
+  })
+
+  output$rc_pair_head <- renderUI({
+    s <- rc_sel()
+    if (is.null(s)) return(div(class = "alert alert-secondary",
+                               "Select a pair on the Candidate pairs tab."))
+    d <- rc_detail()
+    tagList(
+      h5(HTML(paste0("A: ", label_html(sub(" @ .*$", "", s$Series_A)),
+                     if (grepl(" @ ", s$Series_A)) paste0(" <span class='text-muted'>(", esc(sub("^.* @ ", "", s$Series_A)), ")</span>") else "",
+                     "<br>B: ", label_html(sub(" @ .*$", "", s$Series_B)),
+                     if (grepl(" @ ", s$Series_B)) paste0(" <span class='text-muted'>(", esc(sub("^.* @ ", "", s$Series_B)), ")</span>") else ""))),
+      p(strong(as.character(s$Verdict)), " \u2014 ", s$Shared_species, " shared species; median B/A = ",
+        s$Median_ratio_B_over_A, "; ", sum(d$Status == "DIFFERS"), " species differ by more than ",
+        input$rc_tol, "%. Values in ", s$Unit, "."),
+      if (nz1(s$Decision_on_record)) div(class = "alert alert-info", strong("Decision on record: "),
+                                         s$Decision_on_record)
+    )
+  })
+
+  output$rc_pair_plot <- renderPlot({
+    d <- rc_detail()
+    d <- d[is.finite(d$Value_A) & is.finite(d$Value_B) & d$Value_A > 0 & d$Value_B > 0, , drop = FALSE]
+    validate(need(nrow(d) > 0, "These two variables share no species with positive values, so there is nothing to plot. Their coverage is listed below."))
+    tol <- input$rc_tol / 100
+    rng <- range(c(d$Value_A, d$Value_B))
+    ln <- data.frame(x = rng, y = rng)
+    ggplot(d, aes(Value_A, Value_B)) +
+      geom_line(data = ln, aes(x, y), colour = "grey30") +
+      geom_line(data = transform(ln, y = y * (1 + tol)), aes(x, y), linetype = "dashed", colour = "grey60") +
+      geom_line(data = transform(ln, y = y * (1 - tol)), aes(x, y), linetype = "dashed", colour = "grey60") +
+      geom_point(aes(colour = Status), size = 2.6, alpha = 0.85) +
+      scale_x_log10() + scale_y_log10() +
+      scale_colour_manual(values = c(same = "#2c7fb8", `within tolerance` = "#41ab5d",
+                                     DIFFERS = "#d7301f", `not comparable` = "grey50")) +
+      labs(x = paste0("A (", rc_sel()$Unit, ")"), y = paste0("B (", rc_sel()$Unit, ")"),
+           caption = sprintf("Solid line: A = B. Dashed: \u00b1%s%%.", input$rc_tol)) +
+      theme_minimal(base_size = 13)
+  })
+
+  output$rc_pair_table <- renderDT({
+    d <- rc_detail()
+    datatable(d, rownames = FALSE, filter = "top",
+              options = list(pageLength = 15, scrollX = TRUE))
+  })
+
+  output$rc_download_pair <- downloadHandler(
+    filename = function() sprintf("evom1_reconcile_pair_%s.csv", Sys.Date()),
+    content = function(file) write.csv(rc_detail(), file, row.names = FALSE)
+  )
+  output$rc_download_pairs <- downloadHandler(
+    filename = function() sprintf("evom1_reconcile_candidates_%s.csv", Sys.Date()),
+    content = function(file) write.csv(rc_filtered(), file, row.names = FALSE)
+  )
+
+  # All series in the selected pair's group, widest coverage first.
+  rc_group_series <- reactive({
+    s <- rc_sel(); req(s)
+    g <- sr_cands[sr_cands$Group == s$Group, , drop = FALSE]
+    ser <- unique(c(g$Series_A, g$Series_B))
+    n <- vapply(ser, function(x) {
+      i <- match(x, c(g$Series_A, g$Series_B))
+      c(g$Species_A, g$Species_B)[i]
+    }, numeric(1))
+    ser[order(-n)]
+  })
+  observeEvent(rc_group_series(), {
+    updateSelectizeInput(session, "rc_precedence", choices = rc_group_series(),
+                         selected = rc_group_series())
+  })
+
+  output$rc_group_head <- renderUI({
+    s <- rc_sel()
+    if (is.null(s)) return(div(class = "alert alert-secondary",
+                               "Select a pair on the Candidate pairs tab."))
+    p(class = "text-muted small",
+      "Every variable in this candidate group, one column each (", s$Unit, "). ",
+      strong("Preferred value"), " takes the first variable in the precedence list that has a value ",
+      "for the species, and ", strong("Taken from"), " names it; it is a fallback rule, not an average. ",
+      "Remove and re-add variables to change the order. Species whose variables differ by more than ",
+      input$rc_tol, "% are flagged and listed first.")
+  })
+
+  rc_group <- reactive({
+    ser <- rc_group_series()
+    prec <- if (length(input$rc_precedence)) input$rc_precedence else ser
+    sr_reconciled_view(compiled, sr_meta, ser, precedence = prec, tol = input$rc_tol / 100)
+  })
+
+  output$rc_group_table <- renderDT({
+    d <- rc_group()
+    validate(need(nrow(d) > 0, "No values."))
+    num <- vapply(d, is.numeric, logical(1))
+    d[num] <- lapply(d[num], function(x) signif(x, 6))
+    datatable(d, rownames = FALSE, filter = "top",
+              options = list(pageLength = 15, scrollX = TRUE))
+  })
+  output$rc_download_group <- downloadHandler(
+    filename = function() sprintf("evom1_reconciled_view_%s.csv", Sys.Date()),
+    content = function(file) write.csv(rc_group(), file, row.names = FALSE)
   )
 }
 

@@ -148,8 +148,22 @@ plotted, lg f with f in kHz; the build converts it to Hz (f = 1000 x 10^lg f).
 | `Babushina_etal_1991_Figure2_snapshot.csv` | done: digitised points, as read |
 | `Babushina_etal_1991_Figure2_digitisation_check.png` | done: visual check aid |
 | `Babushina_etal_1991_Figures1-3_crosscheck.R` / `.csv` / `.png` | done: cross-figure check (R NOT RUN) |
-| `Babushina_etal_1991_Figure2.R`, `.csv`, public TSV, `reference_tables/..._definitions.csv` | not built yet |
+| `Babushina_etal_1991_Figure2.R`, `Babushina_etal_1991_Figure2.csv`, public TSV, `reference_tables/Babushina_etal_1991_Figure2_definitions.csv` | built 2026-10-30 (see Build) |
 
 Human visual check of the snapshot: pending. The digitisation was done and
 checked by an AI assistant only; record the person and date in `__ReadMe.xlsx`
 when checked.
+
+## Build (2026-10-30)
+`Babushina_etal_1991_Figure2.R` reads the frozen snapshot (as text, never edited) and writes the
+tidy analysis CSV `Babushina_etal_1991_Figure2.csv` (one row per digitised point) and the public TSV
+`__Public/comparative-data/Biophysics%3A36%3A909-913_Figure2.tsv`. It keeps the printed curve legend as
+`species_as_published`, harmonises it through `_keys/General/species_key.csv`
+(rows with `source_publication = Babushina_etal_1991`; the script stops if none),
+converts lg f to Hz and keeps the level in the plotted unit
+(plus dB SPL, identical to the left scale, and the right-hand µbar reading).
+Run clean with `LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 Rscript --vanilla Babushina_etal_1991/Babushina_etal_1991_Figure2.R`
+(R 4.5.3) on 2026-10-30 by an AI assistant (Claude) for A. de Sousa.
+Cited curves of other species are listed (roadmap only, not digitised) in `reference_tables/Babushina_etal_1991_Figure2_references.csv`.
+Data dictionary: `reference_tables/Babushina_etal_1991_Figure2_definitions.csv`. Registry update
+proposal: `Babushina_etal_1991_Figure2_registry_row.xlsx`.

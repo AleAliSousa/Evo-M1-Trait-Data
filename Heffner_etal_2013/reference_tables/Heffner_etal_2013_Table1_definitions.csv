@@ -1,0 +1,14 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+table_row,Species row order as printed (1-12),,,,info,Chiroptera + Tursiops (12 spp),Heffner_etal_2013_Table1,,
+group_as_printed,Group header ('Laryngeal echolocators' / 'Non-echolocators'),,,,info,,Heffner_etal_2013_Table1,,
+common_name_as_printed,Common name as printed,,,,info,,Heffner_etal_2013_Table1,,
+footnote_marker,Superscript footnote mark on the row (source of the observed limit),,Source,,info,,Heffner_etal_2013_Table1,,
+species_as_published,Binomial as printed,,,,info,,Heffner_etal_2013_Table1,,
+species,Harmonised binomial from _keys/General/species_key.csv (source_publication = Heffner_etal_2013),,Species,,info,,Heffner_etal_2013_Table1,,
+predicted_high_freq_limit_kHz,Predicted high-frequency hearing limit from footnote-l regression on functional interaural distance,Auditory system,Freq.kHz,predicted,info,,Heffner_etal_2013_Table1,"log(limit) = 2.52 − 0.3642 log(interaural distance, µs)",Column header footnote l
+observed_high_freq_limit_60dB_kHz,Observed high-frequency hearing limit (60 dB SPL),Auditory system,Freq.kHz,value,secondary,,Heffner_etal_2013_Table1,Primary only for D. rotundus (data_role),
+excess_high_freq_hearing_octaves,log2(observed / predicted),Auditory system,octaves,value,info,,Heffner_etal_2013_Table1,Verified in the build,
+source_footnote_as_printed,Footnote text verbatim,,Source,,info,,Heffner_etal_2013_Table1,,
+source_ref_keys,"Cited works parsed from the footnote, '; '-separated",,Source,,info,,Heffner_etal_2013_Table1,Split on '; ' and join on ref_key in reference_tables/Heffner_etal_2013_Table1_references.csv,
+data_role,"primary (footnote d, 'Current report') or secondary",,,,info,,Heffner_etal_2013_Table1,,
+Method:observation_level,Species-level summary values,,,,method,,Heffner_etal_2013_Table1,,

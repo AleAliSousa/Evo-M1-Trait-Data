@@ -1,14 +1,15 @@
-# Shultz & Dunbar 2010 — awaiting one manual download
+# Shultz & Dunbar 2010 — source and build status
 
-Registry item `Shultz_Dunbar_2010_TableS1` (doi:10.1037/a0018894, J Comp Psychol 124:252–260,
-"Species differences in executive function correlate with hippocampus volume and neocortex ratio
-across nonhuman primates"). Stage NOT STARTED.
+The paper PDF and original `Supplementary_Information_PS.doc` are present.
+`Shultz_Dunbar_2010_SupplementaryTable1.R` now extracts the Word table
+structurally and writes 121 study rows, including nine blank individual
+counts and both `Lagothrix sp.` rows. The prior 110-row text-pattern
+extraction omitted these 11 rows and has been replaced. `TableS1.csv` is
+also emitted to match the registry item name, plus the registered public TSV.
 
-The supplement is one .doc file. Automated fetch reaches the APA landing page but APA serves the
-binary in a way the sandbox cannot save (2026-08-31). **One click needed:**
-
-https://supp.apa.org/psycarticles/supplemental/a0018894/Supplementary_Information_PS.doc
-
-Save it into this folder as-is (keep the filename), plus the paper PDF from EndNote if available.
-Then the build proceeds: freeze the .doc as source → snapshot → .R → csv → TSV
-(encoded `10.1037%2Fa0018894_TableS1`).
+`Shultz_Dunbar_2010_Figure1.R` builds 63 separately visible plotted markers
+from a frozen digitization. See `Shultz_Dunbar_2010_Figure1.README.md` for
+identity evidence, unresolved genus/species assignments, and why the
+visible-point R-squared differs from the published value. Species are not
+silently assigned to genus-averaged scores. Restricted checks contain the
+source-volume comparisons and reproducible audit.

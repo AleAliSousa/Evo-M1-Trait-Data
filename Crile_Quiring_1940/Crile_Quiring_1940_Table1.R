@@ -160,5 +160,5 @@ if (is.na(item_encoded) || !nzchar(item_encoded)) {
   warning("Shared folder not found: ", tsv_dir, "; TSV skipped.")
 } else {
   write.table(clean, file.path(path.expand(tsv_dir), paste0(item_encoded, ".tsv")),
-              sep = "\t", row.names = FALSE)
+              sep = "\t", row.names = FALSE, quote = TRUE, qmethod = "double")
 }

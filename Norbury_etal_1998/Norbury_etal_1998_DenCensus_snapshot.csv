@@ -1,3 +1,2 @@
-Species,occupants_per_den,number_of_excavated_dens,derivation,source_location
-Mustela furo,1,39,41 examined minus two shared,p.154 Den sharing by ferrets
-Mustela furo,2,2,Two dens each contained collared ferret and another adult male,p.154 Den sharing by ferrets
+source_location,species_as_printed,excavated_dens_as_printed,shared_dens_as_printed,shared_den_occupants_as_printed,shared_den_months_as_printed,verbatim_passage,verbatim_later_observation
+"p. 154, Results, subsection ""Den sharing by ferrets""",ferrets (Mustela furo),41,Two,adult males,May and August,"Two of 41 excavated dens (rabbit burrows in nearly all cases) that were known to contain radio-collared ferrets were occupied by another ferret. The shared dens were excavated in May and August, and both were occupied by adult males.","Also, one of these males was relocated by radio telemetry three months later in November, and was occupying the same den as another radio-collared male."

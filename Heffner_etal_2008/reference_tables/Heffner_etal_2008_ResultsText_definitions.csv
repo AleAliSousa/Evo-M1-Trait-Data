@@ -1,0 +1,19 @@
+variable,definition,units,notes
+species_as_published,"Species name exactly as the Results prose gives it, usually abbreviated (E. helvum / C. brachyotis); '; '-separated where one sentence reports a value for both species",text,The full binomials are printed in the title and in Table 1
+Species,Accepted binomial resolved from the abbreviated prose name via _keys/General/species_key.csv (source_publication = Heffner_etal_2008); the build stops if that filter returns no rows or if an abbreviation does not resolve to exactly one key entry,text,
+value_row,Row number in the constructed snapshot; the stable locator back to the verbatim sentence,integer,
+results_section,Numbered Results subsection the value was reported in (3.1 noise localization thresholds; 3.2 retinal analysis),text,
+quantity,"What was measured, in the paper's own wording",text,"Not a controlled vocabulary: it is the prose description, so that the row stays matchable to the sentence"
+value,"Numeric value of the quantity; word-numbers printed in the prose ('the two E. helvum', 'retinae of one E. helvum') are converted to integers; NA where the paper reports the measurement as not obtained",numeric,See units and value_qualifier; never read value without them
+value_printed,"The value exactly as printed in the sentence, including word-numbers and the 'n.a.' token for the measurement the paper states it could not make",text,
+units,"Unit of the value: degrees, mm, individuals, retinae; empty for the not-obtained row",text,
+value_qualifier,"Hedge printed with the value: 'approximately' (retinal visual angle, binocular field) or 'or greater' (the angle at which every individual performed perfectly). Empty where the paper states the value plainly",text,A qualified value is not a point estimate
+is_approximate,TRUE where the printed value is hedged with 'approximately',logical,TRUE for the 190 deg retinal visual angle and the 60 deg binocular field
+reported_as_absent,"TRUE for the one row where the paper states the measurement could not be made (no C. brachyotis retinae, by agreement with the Lubee Bat Conservancy)",logical,"This is a reported absence, not an unexplained gap: keep it rather than dropping the row"
+source_printed_page,Printed journal page the sentence is on (83 or 84 of Hearing Research 241: 80-86),integer,
+source_pdf_page,Page of the local PDF carrying the sentence,integer,printed page = PDF page + 79
+verbatim_sentence,"The sentence the value was read from, verbatim from the PDF text layer with the two PDF ligature glyphs (fi, fl) expanded",text,This is what makes the constructed snapshot auditable: a reviewer can find each number on the printed page
+data_role,primary throughout: every value in this item is a measurement made in this study,text,
+source,Provenance token; 'this study' for every row,text,"No value in this item is compiled from another paper, so no references file is needed"
+Method:observation_level,"Species-level values from two individuals each for sound localization (Fig. 1 plots the individuals; only the means are in the prose) and from one retina for every E. helvum retinal measure. These are small-n species estimates, not population means.",,method
+Method:extraction,"Values published only in running text. The frozen source is a constructed snapshot built by Heffner_etal_2008_ResultsText_extract_snapshot.R, which locates each sentence in the PDF text layer between two anchored printed literals and pulls the number out of the located sentence with a capture group; no value is typed into either script.",,method

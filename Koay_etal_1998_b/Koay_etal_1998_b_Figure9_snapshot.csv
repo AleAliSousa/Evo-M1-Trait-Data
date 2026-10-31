@@ -1,0 +1,25 @@
+caption_key_label,point_drawn_as,width_of_field_of_best_vision_deg_as_read,sound_localization_threshold_deg_as_read,x_px_native,y_px_native,note
+1,numeral,16.12,4.49,1759.0,1543.0,
+2,numeral,4.40,4.91,1202.5,1508.0,
+3,numeral,0.69,1.29,410.0,2028.0,
+4,numeral,130.80,21.83,2656.0,928.0,
+5,numeral,155.83,30.98,2731.0,792.0,the numeral 5 abuts the numeral 23; positions are approximate
+6,numeral,95.56,26.99,2521.5,845.5,
+7,disc,123.10,32.44,2630.0,774.0,two discs touch at this point (labels 15 and 7); each was measured separately but they are not independently resolved
+8*,numeral,177.38,176.20,2786.5,116.0,
+9,disc,162.90,18.62,2750.0,990.0,two discs touch at this point (labels 9 and 16); each was measured separately but they are not independently resolved
+10,disc,71.13,18.95,2395.0,983.0,
+11,numeral,100.83,18.38,2544.5,995.0,"the numerals 14 and 11 are printed abutting as ""1411""; positions are approximate"
+12,numeral,210.83,26.11,2860.5,858.5,
+13,numeral,53.56,12.58,2273.5,1142.5,
+14,numeral,83.75,18.76,2465.0,987.0,"the numerals 14 and 11 are printed abutting as ""1411""; positions are approximate"
+15,disc,116.94,32.36,2608.0,775.0,two discs touch at this point (labels 15 and 7); each was measured separately but they are not independently resolved
+16,disc,151.53,17.10,2719.0,1023.0,two discs touch at this point (labels 9 and 16); each was measured separately but they are not independently resolved
+17*,numeral,133.42,61.47,2664.5,525.5,
+18,numeral,5.17,7.90,1272.0,1323.5,
+19,numeral,23.12,11.78,1913.5,1168.0,"the numerals 20 and 19 are printed abutting as ""2019""; positions are approximate"
+20,numeral,19.70,11.57,1845.0,1175.0,"the numerals 20 and 19 are printed abutting as ""2019""; the typesetter has nudged them apart, so label 20's position is displaced. Its threshold (about 11.6 deg) disagrees with Fig. 8 of this same paper (7.9 deg) and with Heffner and Heffner (1992a) Table 1 (8.5 deg): treat label 20 as unresolved"
+21,numeral,5.02,5.62,1259.5,1456.0,
+22,numeral,11.86,4.53,1627.5,1540.0,
+23,numeral,136.58,29.27,2674.5,814.0,the numeral 23 abuts the numeral 5; positions are approximate
+Big Brown Bat,disc,147.68,13.67,2708.0,1110.0,

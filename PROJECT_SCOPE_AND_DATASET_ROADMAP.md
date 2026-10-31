@@ -1098,6 +1098,67 @@ TSV uploaded to `__Public/comparative-data` on a future pass once the connector 
 clears; the analysis CSVs themselves are already complete and uploaded to each item's
 own folder, so this is a copy-only follow-up, not a re-build.
 
+## Current order of work (refreshed 2026-10-31; audit in `_checks/registry_audit_20261031.md`)
+
+> **Top of the queue as of 2026-10-31.** Registry integrity is clean: 890 data rows, **0 lost rows**
+> (the one key that looked lost, `Winkler_Bryant_2021_Figure1 #2`, was an exact duplicate pair that
+> has been deduplicated), 0 blank Item names and 0 XML corruption. The figure-digitisation queue is
+> now essentially cleared — **26 items built and validated** this pass across 17 folders (Heffner ×7, Koay ×4,
+> Wenstrup 1984 Fig 8, Kaskan ×2, Karbowski Table 1, Branstetter Table I, Stephan Table 71,
+> Heffner 2008 ResultsText, Rivara TABLE 1, Jung ×2, PanTHERIA ×2, Myhrvold ×3). The binding
+> constraint has moved to **name reconciliation and merge wiring**, not registration.
+>
+> 1. **Reconcile the 27 orphan TSVs — they are name mismatches, not missing rows.** Every one belongs
+>    to an item that already has a Sheet1 row. Trash the 6 stale literal-colon Morrogh-Bernard files
+>    and `NA.tsv`; rename Hardus's 4 to `acprof%3Aoso`; decide the Galán-Acedo double extension
+>    (strip `.csv` from col D, or rename 7 files); reconcile the 4 colour-vision `Text:…` vs
+>    `TextResults` Item numbers; rename the 5 carried over from 2026-09-30.
+> 2. **Paste the staged registry rows and rerun `file_list.R` + `registry_snapshot.R`.** 10 new
+>    workbooks for unregistered folders (Ferrell Table 1, MacLean TableS1–S7, Sherwood SuppTable1–2)
+>    plus one per item built this pass. 233 keys are new since the 2026-10-26 snapshot.
+> 3. **Fix `_tools/audit_folders.py` `norm()`** — it drops non-ASCII instead of folding it, so
+>    Norlén, Ballesteros-Yáñez, Kowiański, Gómez, Galán-Acedo, de Magalhães, Zilles-Rehkämper,
+>    Braitenberg-Schüz, Lethmate-Dücker and Medina-González false-positive as unregistered. Use
+>    `unicodedata.normalize('NFKD', …).encode('ascii','ignore')`. Then rename either
+>    `Hardus_etal_2009/` or the `HardusME__2009_*` Item names so the two sides match.
+> 4. **Social-variables snapshots: DONE 2026-10-31 — register those 7 folders.** All seven now
+>    freeze the source rather than the product: printed-grid snapshots for Ziege Table 1 and Wiafe
+>    Table 3, constructed snapshots carrying verbatim passages and locators for Devillard,
+>    Modlinska, Norbury and the Wiafe abstract, and byte-identical author workbooks for Jaeggi and
+>    Qiu. No derived value changed; both builders are idempotent. Wiafe's duplicate
+>    `Wiafe__2019_` pair is resolved — but decide whether the folder should be renamed
+>    `Wiafe__2019` (single-author house convention; also touches the species key).
+> 5. **Merge wiring — still zero.** No item from the 2026-10-28 or 2026-10-31 passes appears in any
+>    `__merging_*/*.R`. Wire the audiogram items into `__merging_sensory`, Glendenning & Masterton
+>    into `__merging_volumes`/`__merging_cellcounts`, Filiminoff into `__merging_cortical_areas`,
+>    Bahney into `__merging_cellcounts`, Kay 2026 into `__merging_volumes` (Stephan/Bush–Allman
+>    overlap first), and Sherwood 2020 / MacLean 2014 once registered.
+> 6. **Clear the three trailing-`_` keys** (`Anderson_Gallup_2015_`, `Gallup__1977_`,
+>    `Nunn_etal_2001_`) — whole-paper REFERENCE-ONLY/HOLD rows with a blank Item number, which breaks
+>    `read_item()`. They were 0 on 2026-10-28.
+> 7. **Owner decisions pending:** the Rivara TSV was released on an in-session instruction without
+>    the scientific review its README demands (undo = delete that TSV + rerun `file_list.R`); the 8
+>    FINISHED-with-no-TSV rows need a label or convention decision, now in their third audit; Jones
+>    2009's single shared definitions file needs a split or a recorded exemption; Kaskan Figure 3's
+>    README overstates panel b (6 of 8 diurnal points resolved, not 8) and its *Saimiri* panel-a/b
+>    identification is unresolved at 0.20 log units.
+> 8. **Blocked:** `Frost_Masterton_1994_Figure3` needs a glyph classifier (letter markers `d/e/v/r`
+>    overlap the joining lines; five extraction methods reached ~60–90% recall per series).
+>    Stensaas 1974 and Terborgh 1983 still have no PDF. McGuire & Ratcliffe 2011 and Shultz &
+>    Dunbar 2010 supplements were obtained this pass and are no longer download-blocked.
+>
+> 9. **Snapshot HOWTO updated 2026-10-31** (`_skills/build-dataset-item/references/__HOWTO_make_a_snapshot.md`,
+>    republished to the installed `build-dataset-item` skill, which was four sections behind). It
+>    now states why row and column alignment is preserved: the characteristic human transcription
+>    error is a value landing one cell away — reading row 1 and keying row 2, so a number is
+>    attributed to the next species down — which parses, passes every range check, and is invisible
+>    to software. A new section, *A human must do the comparison*, tells the reviewer to read
+>    **across rows rather than down columns**, names the places the eye jumps (blank cells, section
+>    headings, adjacent mean/SE columns, repeated species, merged headers), and asks for a midtable
+>    spot check on species **and** column heading, recorded in `Human visual check of snapshot`.
+>
+> The list below is the 2026-10-28 order, kept for history.
+
 ## Current order of work (refreshed 2026-10-28; audit in `_checks/registry_audit_20261028.md`)
 
 > **Top of the queue as of 2026-10-28.** Registry integrity is clean: 787 data rows, 0 lost rows

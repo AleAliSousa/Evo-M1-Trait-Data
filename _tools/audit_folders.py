@@ -4,7 +4,7 @@
    2) lacks the frozen source data in the folder (any format; URL in registry excuses it)
    3) lacks a row in __ReadMe.xlsx Sheet1
 """
-import os, re, zipfile, csv
+import os, re, zipfile, csv, unicodedata
 from xml.etree import ElementTree as ET
 
 # Derived from this script's own location (_tools/ lives at the dataset root), so the audit
@@ -50,7 +50,9 @@ DATA_EXT = {'.csv', '.tsv', '.xlsx', '.xls', '.xlsm', '.txt', '.json', '.dta', '
 SUPP_PAT = re.compile(r'MOESM|_ESM|suppl|supp[0-9]|_si_|Supplement|TableS|Table_S|Data_S|DataS|sd[0-9]|appendix',
                       re.I)
 
-def norm(s): return re.sub(r'[^a-z0-9]', '', (s or '').lower())
+def norm(s):
+    folded = unicodedata.normalize('NFKD', s or '').encode('ascii', 'ignore').decode('ascii')
+    return re.sub(r'[^a-z0-9]', '', folded.lower())
 
 rows = []
 for d in folders:

@@ -1,0 +1,14 @@
+variable,definition,units,notes
+label_as_printed,The label text as printed beside the scale; four labels name two species,text,
+species_as_published,One species from that label,text,
+scale_side,Which side of the scale the label is printed on (the caption's convenience grouping),text,
+localization_threshold_deg,"Digitised minimum audible angle, piecewise-log calibration between adjacent printed ticks",degrees,
+localization_threshold_deg_globalfit,Same position under a single least-squares log fit to all seven printed ticks,degrees,
+calibration_spread_pct,100 * (globalfit / piecewise - 1): the calibration uncertainty for that point,percent,
+shares_tick_with,"Other species sharing the same printed tick, '; '-separated",text,
+figure_source_ref_key,Join key(s) into reference_tables/Heffner_etal_2014_Figure9_references.csv (split on '; '),text,"The caption gives only two collective reviews; NO per-species source is keyed, so an individual point cannot be traced to its primary study from this figure."
+value_origin,Whether the value was printed in the source or read off a plotted figure,text,"always 'digitised_from_figure' in this item. Digitisation: the 34 leader lines of Fig. 9 were pixel-digitised from the embedded 1535 x 754 px bitmap by Heffner_etal_2014_Figure9_extract.py. Estimated error +/- 0.5% in degrees (calibration spread between the piecewise and single log fits; the single fit's residuals on the seven printed ticks are -0.31% to +0.44%), plus about 0.2% per pixel of leader-line placement. The figure contains 34 plotted ticks carrying 38 species (four labels name two species each) and all 34 were individually resolved; no point was inferred."
+value_precision,Per-row statement of the digitisation uncertainty,text,
+data_role,Whether the row is this paper's own new measurement (primary) or a value it reproduces from another study (secondary),text,
+Species,Accepted binomial resolved from the printed name via _keys/General/species_key.csv (source_publication = this paper's folder name),text,
+species_basis,"How the binomial was arrived at (verbatim / our_judgment / hypothesis / unspecified_in_source), from the species key",text,

@@ -26,7 +26,7 @@ Data role: **primary**.
   measures) and public TSV `__Public/comparative-data/PMID%3A682579_Table1.tsv`. Splits mean/SD, strips
   footnote marks into `footnote_marks`, parses age bounds; weight kg × 1000 → **g** (project unit), lengths
   kept in cm. Until the registry row is pasted, the script derives Item encoded from the registry_row.xlsx
-  (warning printed) — the Filiminoff_1932 pattern.
+  (warning printed) — the Filiminoff__1932 pattern.
 - Species: printed "Yucatan miniature pig" → `Sus scrofa domesticus` via `_keys/General/species_key.csv`
   (`source_publication = Panepinto_etal_1978`, basis `our_judgment`).
 

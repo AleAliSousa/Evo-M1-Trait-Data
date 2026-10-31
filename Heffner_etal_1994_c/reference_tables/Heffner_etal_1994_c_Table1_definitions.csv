@@ -5,4 +5,4 @@ binomial,Species binomial where independently confirmable from this paper's text
 common_name,Common name as printed in Table 1,text,
 localization_threshold_deg,Minimum-audible-angle left/right sound-localization threshold,degrees,Blank/NA for pocket gopher (no threshold obtainable per footnote b; printed as a dash)
 data_role,Whether the row is this paper's own new measurement or cited from a prior study,text,Only chinchilla ("Present report") is primary
-source,Citation for the value as printed in Table 1's Source column,text,Wood rat and grasshopper mouse share an identical printed citation -- see README flag 1
+source,Citation for the value as printed in Table 1's Source column,text,"ERRATA Heffner_etal_1994_c-E001 (proposed, publication_ambiguity): printed Heffner and Heffner, 1988a, repo had Heffner and Heffner, 1988a | Wood rat and grasshopper mouse share an identical printed citation -- see README flag 1"

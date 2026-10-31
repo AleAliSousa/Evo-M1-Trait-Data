@@ -1,21 +1,10 @@
-field,definition,units_or_transform,provenance
-Species,Species label used in the supplement,underscore-separated binomial,publication supplement
-BoW,Body weight sexual dimorphism,ln(male arithmetic mean/female arithmetic mean),unpublished individual records via Frahm except the female Miopithecus value
-BrW,Brain weight sexual dimorphism,ln(male arithmetic mean/female arithmetic mean),unpublished individual records via Frahm
-BrVol,Brain volume sexual dimorphism,ln(male arithmetic mean/female arithmetic mean),unpublished individual records via Frahm
-VEN,Ventricles sexual dimorphism,ln(male arithmetic mean/female arithmetic mean),unpublished individual records via Frahm
-REST,Rest term sexual dimorphism,ln(male arithmetic mean/female arithmetic mean),unpublished individual records via Frahm
-NET,Total brain net sexual dimorphism,ln(male arithmetic mean/female arithmetic mean),unpublished individual records via Frahm
-OBL,Medulla oblongata sexual dimorphism,ln(male arithmetic mean/female arithmetic mean),unpublished individual records via Frahm
-CER,Cerebellum sexual dimorphism,ln(male arithmetic mean/female arithmetic mean),unpublished individual records via Frahm
-MES,Mesencephalon sexual dimorphism,ln(male arithmetic mean/female arithmetic mean),unpublished individual records via Frahm
-DIE,Diencephalon including globus pallidus and excluding hypophysis sexual dimorphism,ln(male arithmetic mean/female arithmetic mean),unpublished individual records via Frahm
-TEL,Telencephalon sexual dimorphism,ln(male arithmetic mean/female arithmetic mean),unpublished individual records via Frahm
-BOL,Olfactory bulb including accessory olfactory bulb sexual dimorphism,ln(male arithmetic mean/female arithmetic mean),unpublished individual records via Frahm
-PAL,Lobus piriformis including palaeocortex and amygdala sexual dimorphism,ln(male arithmetic mean/female arithmetic mean),unpublished individual records via Frahm
-SEP,Septum sexual dimorphism,ln(male arithmetic mean/female arithmetic mean),unpublished individual records via Frahm
-STR,Striatum sexual dimorphism,ln(male arithmetic mean/female arithmetic mean),unpublished individual records via Frahm
-SCH,Schizocortex sexual dimorphism,ln(male arithmetic mean/female arithmetic mean),unpublished individual records via Frahm
-HIP,Hippocampus sexual dimorphism,ln(male arithmetic mean/female arithmetic mean),unpublished individual records via Frahm
-NEO,Neocortex including white and grey matter sexual dimorphism,ln(male arithmetic mean/female arithmetic mean),unpublished individual records via Frahm
-TOT,Total sexual dimorphism,ln(male arithmetic mean/female arithmetic mean),unpublished individual records via Frahm
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+source_row,Row position in dimorphdata.csv (1 = first data row),,,,info,12 primate species (Stephan/Frahm collection sub-sample),Todorov_etal_2019_rspb20191712si001,,
+Species_Todorov2019,"Species as printed in the supplement (underscore binomial), never altered",,,,info,12 primate species (Stephan/Frahm collection sub-sample),Todorov_etal_2019_rspb20191712si001,,
+species_harmonised,Accepted name from _keys/Stephan/species_key.csv (source_publication = Todorov_etal_2019),,,,info,12 primate species (Stephan/Frahm collection sub-sample),Todorov_etal_2019_rspb20191712si001,11 verbatim; Plecturocebus_moloch -> Callicebus moloch (synonym:NCBI 9523),
+variable_code,"Supplement column header (BoW ... TOT), as printed",,,,info,12 primate species (Stephan/Frahm collection sub-sample),Todorov_etal_2019_rspb20191712si001,Methods abbreviates medulla oblongata as MED; supplement column is OBL,
+variable_label,Structure named by variable_code (Methods p.3 wording where given),,,,info,12 primate species (Stephan/Frahm collection sub-sample),Todorov_etal_2019_rspb20191712si001,,
+ln_male_over_female,Sexual dimorphism value as published for species x variable,see variable_label,ln ratio (dimensionless),ln(male arithmetic mean / female arithmetic mean),data,12 primate species (Stephan/Frahm collection sub-sample),Todorov_etal_2019_rspb20191712si001,Derived summary of unpublished Frahm records; NOT an absolute volume; do not merge into __merging_volumes. Methods text calls it 'the ratio'; signed values show the published numbers are its natural log.,rspb20191712_si_001.zip/dimorphdata.csv
+measure,Constant: description of ln_male_over_female,,,,info,12 primate species (Stephan/Frahm collection sub-sample),Todorov_etal_2019_rspb20191712si001,,
+ref_key,Value source key(s); join to reference_tables/Todorov_etal_2019_rspb20191712si001_references.csv on ref_key after splitting on '; ',,,,info,12 primate species (Stephan/Frahm collection sub-sample),Todorov_etal_2019_rspb20191712si001,'Frahm unpublished; 71' only for Miopithecus_talapoin BoW (female body weight from ref 71),
+data_role,secondary: compiled/derived from unpublished Frahm (Stephan collection) records,,,,info,12 primate species (Stephan/Frahm collection sub-sample),Todorov_etal_2019_rspb20191712si001,,

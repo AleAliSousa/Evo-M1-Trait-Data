@@ -1,0 +1,60 @@
+point_id,panel,series,x_tick_as_printed,marker,x_px,y_px,frequency_khz_digitised,threshold_db_spl_digitised
+P01,Least Weasel,A,.016,letter glyph 'A',331.5,309.0,0.0156,68.4
+P02,Least Weasel,A,.031,letter glyph 'A',381.5,348.0,0.0311,58.8
+P03,Least Weasel,A,.062,letter glyph 'A',432.5,381.0,0.0628,50.6
+P04,Least Weasel,A,.125,"letter glyph 'A,B' (shared)",482.5,402.8,0.125,45.2
+P05,Least Weasel,A,.250,letter glyph 'A',533.0,450.0,0.2506,33.5
+P06,Least Weasel,A,.500,letter glyph 'A',583.0,510.0,0.4989,18.7
+P07,Least Weasel,A,1,letter glyph 'A',633.5,596.0,1.0,-2.5
+P08,Least Weasel,A,2,"letter glyph 'A,B' (shared)",684.0,620.8,2.0044,-8.7
+P09,Least Weasel,A,4,letter glyph 'A',733.5,581.0,3.9626,1.2
+P10,Least Weasel,A,8,letter glyph 'A',784.5,559.0,7.9975,6.6
+P11,Least Weasel,A,16,letter glyph 'A',835.0,596.5,16.0302,-2.7
+P12,Least Weasel,A,32,letter glyph 'A',885.5,546.5,32.1308,9.7
+P13,Least Weasel,A,,letter glyph 'A',911.5,506.0,45.9618,19.7
+P14,Least Weasel,A,64,"letter glyph 'A,B' (shared)",935.5,308.8,63.9608,68.4
+P15,Least Weasel,B,.016,letter glyph 'B',331.5,229.5,0.0156,88.1
+P16,Least Weasel,B,.031,letter glyph 'B',381.5,295.5,0.0311,71.7
+P17,Least Weasel,B,.062,letter glyph 'B',432.5,339.0,0.0628,61.0
+P18,Least Weasel,B,.125,"letter glyph 'A,B' (shared)",482.5,402.8,0.125,45.2
+P19,Least Weasel,B,.250,letter glyph 'B',533.0,480.5,0.2506,26.0
+P20,Least Weasel,B,.500,letter glyph 'B',583.0,523.5,0.4989,15.4
+P21,Least Weasel,B,1,letter glyph 'B',633.5,581.0,1.0,1.2
+P22,Least Weasel,B,2,"letter glyph 'A,B' (shared)",684.0,620.8,2.0044,-8.7
+P23,Least Weasel,B,4,letter glyph 'B',733.5,566.0,3.9626,4.9
+P24,Least Weasel,B,8,letter glyph 'B',784.5,585.0,7.9975,0.2
+P25,Least Weasel,B,16,letter glyph 'B',835.0,583.0,16.0302,0.7
+P26,Least Weasel,B,32,letter glyph 'B',885.5,564.5,32.1308,5.2
+P27,Least Weasel,B,,letter glyph 'B',911.5,564.5,45.9618,5.2
+P28,Least Weasel,B,64,"letter glyph 'A,B' (shared)",935.5,308.8,63.9608,68.4
+P29,Least Weasel,mean (line),.016,large filled dot on threshold line (inferred A/B mean),331.5,270.4,0.0156,77.9
+P30,Least Weasel,mean (line),.031,large filled dot on threshold line (inferred A/B mean),381.5,320.4,0.0311,65.6
+P31,Least Weasel,mean (line),.062,large filled dot on threshold line (inferred A/B mean),432.5,361.4,0.0628,55.4
+P32,Least Weasel,mean (line),.125,line vertex (segment intersection),482.5,407.7,0.125,44.0
+P33,Least Weasel,mean (line),.250,large filled dot on threshold line (inferred A/B mean),533.0,464.8,0.2506,29.9
+P34,Least Weasel,mean (line),.500,line vertex (segment intersection),583.0,518.8,0.4989,16.5
+P35,Least Weasel,mean (line),1,line vertex (segment intersection),633.5,588.3,1.0,-0.6
+P36,Least Weasel,mean (line),2,line vertex (segment intersection),684.0,622.3,2.0044,-9.0
+P37,Least Weasel,mean (line),4,line vertex (segment intersection),733.5,573.4,3.9626,3.0
+P38,Least Weasel,mean (line),8,large filled dot on threshold line (inferred A/B mean),784.5,572.5,7.9975,3.3
+P39,Least Weasel,mean (line),16,line vertex (segment intersection),835.0,589.7,16.0302,-1.0
+P40,Least Weasel,mean (line),32,line vertex (segment intersection),885.5,554.8,32.1308,7.6
+P41,Least Weasel,mean (line),,large filled dot on threshold line (inferred A/B mean),911.5,534.1,45.9618,12.8
+P42,Least Weasel,mean (line),64,line end (top),935.5,320.0,63.9608,65.7
+P43,Least Weasel,background noise (dots),,"small dot (background noise, per caption)",342.2,478.5,0.0181,26.5
+P44,Least Weasel,background noise (dots),,"small dot (background noise, per caption)",348.8,473.5,0.0198,27.7
+P45,Least Weasel,background noise (dots),,"small dot (background noise, per caption)",358.8,478.2,0.0228,26.6
+P46,Least Weasel,background noise (dots),,"small dot (background noise, per caption)",366.6,478.4,0.0254,26.5
+P47,Least Weasel,background noise (dots),,"small dot (background noise, per caption)",374.6,472.0,0.0283,28.1
+P48,Least Weasel,background noise (dots),,"small dot (background noise, per caption)",384.2,487.9,0.0323,24.2
+P49,Least Weasel,background noise (dots),,"small dot (background noise, per caption)",393.2,493.6,0.0366,22.8
+P50,Least Weasel,background noise (dots),,"small dot (background noise, per caption)",400.3,502.0,0.0403,20.7
+P51,Least Weasel,background noise (dots),,"small dot (background noise, per caption)",408.1,510.4,0.0449,18.6
+P52,Least Weasel,background noise (dots),,"small dot (background noise, per caption)",417.2,510.8,0.0509,18.5
+P53,Least Weasel,background noise (dots),,"small dot (background noise, per caption)",423.8,515.0,0.0557,17.5
+P54,Least Weasel,background noise (dots),,"small dot (background noise, per caption)",432.1,518.0,0.0625,16.7
+P55,Least Weasel,background noise (dots),,"small dot (background noise, per caption)",442.6,513.7,0.0722,17.8
+P56,Least Weasel,background noise (dots),,"small dot (background noise, per caption)",451.6,525.3,0.0817,14.9
+P57,Least Weasel,background noise (dots),,"small dot (background noise, per caption)",458.1,529.4,0.0894,13.9
+P58,Least Weasel,background noise (dots),,"small dot (background noise, per caption)",467.2,533.6,0.1013,12.9
+P59,Least Weasel,background noise (dots),,"small dot (background noise, per caption)",474.7,531.8,0.1123,13.3

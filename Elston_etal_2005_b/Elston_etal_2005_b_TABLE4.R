@@ -64,6 +64,16 @@ multiplier <- 1
 for (stat in c("mean", "sd", "sem", "minimum", "maximum"))
   final.dataframe[[paste0("somal_area_", stat, "_um2")]] <- as.numeric(final.dataframe[[paste0(stat, "_as_printed")]]) * multiplier
 if (anyNA(final.dataframe$n_animals) || any(final.dataframe$n_animals != 1L)) stop("Animal sample context invalid.")
+## ---- species harmonisation: collection-scoped key, rows keyed by the paper FOLDER name ----
+key <- utils::read.csv(file.path(base, "_keys", "General", "species_key.csv"), colClasses = "character",
+                       na.strings = NULL, check.names = FALSE, encoding = "UTF-8")
+key <- key[key$source_publication == basename(folder), , drop = FALSE]
+if (nrow(key) == 0L) stop("species_key filter returned zero rows for source_publication = ", basename(folder))
+lk <- stats::setNames(key$accepted_name, key$variant_name)
+final.dataframe$Species <- unname(lk[final.dataframe$species_as_published])
+if (anyNA(final.dataframe$Species))
+  stop("Printed name(s) missing from species_key: ",
+       paste(unique(final.dataframe$species_as_published[is.na(final.dataframe$Species)]), collapse = "; "))
 utils::write.csv(final.dataframe, file.path(folder, paste0(item_name, ".csv")), row.names = FALSE, na = "", fileEncoding = "UTF-8")
 # Re-read the actual registry on each invocation; never use a cached row number or guessed encoded name.
 registered <- FALSE
@@ -93,7 +103,7 @@ if (file.exists(file.path(base, "__ReadMe.xlsx"))) {
       isTRUE(getOption("evom1.publish", FALSE)) && isTRUE(getOption("evom1.elston_owner_release", FALSE))
   }
 }
-publication_allowed <- FALSE # This unregistered proposal is analysis-only in this prepared reader.
+# 2026-10-30: item is now registered in Sheet1 (exact Item name); the former hard "unregistered" override is removed.
 if (publication_allowed) {
   dir.create(file.path(base, "__Public", "comparative-data"), recursive = TRUE, showWarnings = FALSE)
   utils::write.table(final.dataframe, file.path(base, "__Public", "comparative-data", paste0(item_encoded, ".tsv")),

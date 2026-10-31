@@ -83,3 +83,15 @@ functional interaural distance in microseconds.
    corrected.
 2. **Row 2 is a derived value, not a direct quotation** -- see Pipeline
    section above for the full calculation and its two source statements.
+
+<!-- errata:begin -->
+## Errata
+
+Generated from `reference_tables/Heffner_etal_2013_errata.csv` by `_tools/dataset_builder/render_errata.R` -- edit the CSV, not this block. See `_tools/dataset_builder/ERRATA_CONVENTION.md`.
+
+| id | variable | where printed | printed | repo value before | issue | proposed | status | evidence | note |
+|---|---|---|---|---|---|---|---|---|---|
+| Heffner_etal_2013-E001 | best_sensitivity_dB | Results p. 44 ('where their mean threshold was −5 dB SPL') and Discussion 4.1.2 p. 45 ('of −5 dB at 20 kHz'); row Desmodus rotundus | −5 | 5 | repo_transcription_error | -5 | proposed | PDF text layer encodes the minus sign as control byte \x05, so plain-text extraction drops it; page renders of pp. 44-45 show '−5'; Fig. 2 vector extraction gives the minimum −5.0 dB SPL at 19.9 kHz (Heffner_etal_2013_Figure2). | Fix in Heffner_etal_2013_ResultsText snapshot/.R, then confirm. |
+
+1 recorded, 1 open (proposed), 0 confirmed, 0 withdrawn.
+<!-- errata:end -->

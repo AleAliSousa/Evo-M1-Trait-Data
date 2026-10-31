@@ -1,4 +1,4 @@
-Build status update, 2026-10-21 (supersedes earlier pending inventory below): all scoped items in this folder are built and wired to the source browser: GalánAcedo_etal_2019_HomeRange, GalánAcedo_etal_2019_Locomotion, GalánAcedo_etal_2019_DielActivity, GalánAcedo_etal_2019_TrophicGuild, GalánAcedo_etal_2019_BodyMass, GalánAcedo_etal_2019_Habitat, GalánAcedo_etal_2019_IUCN_Poptrend_Realm. Individual item READMEs describe grain, definitions and species-merge eligibility. Registry owner paste and printed-source visual sign-off remain pending.
+Build status update, 2026-10-21 (supersedes earlier pending inventory below): all scoped items in this folder are built and wired to the source browser: GalánAcedo_etal_2019_HomeRange, GalánAcedo_etal_2019_Locomotion, GalánAcedo_etal_2019_DielActivity, GalánAcedo_etal_2019_TrophicGuild, GalánAcedo_etal_2019_BodyMass, GalánAcedo_etal_2019_Habitat, GalánAcedo_etal_2019_IUCNPoptrendRealm. Individual item READMEs describe grain, definitions and species-merge eligibility. Registry owner paste and printed-source visual sign-off remain pending.
 
 # Galán-Acedo et al. 2019
 

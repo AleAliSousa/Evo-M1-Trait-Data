@@ -53,6 +53,13 @@ Started for the Finder's Coverage tab (`__Finder/README.md`); usable by any merg
   `cortical_areas`, `CMR`, `GLI`, `cortical_layers`). `relation` says how the term relates to the concept
   (`same`, `contains`, `part_of`, `overlaps`, …); `link_class` is `direct` or `proxy`; `boundary_basis`
   names how the term's boundary was drawn. A first step on follow-up (3) below.
+  **2026-10-31:** 47 rows added (domain `weights` introduced; new concepts `Olfactory_bulb`,
+  `Medulla_oblongata`, `Mesencephalon`, `Pons`, `Tectum`, `Tegmentum`, `Striatum`, `Diencephalon`,
+  `Telencephalon`, `Spinal_cord`, `Rest_of_brain`, `Olfactory_cortex`, `Corpus_callosum`, `Mammillary_body`)
+  so that TraitExplorer's Region Comparison can pair cell counts, brain-part weights, volumes and CMR
+  on the same structure. All `status = drafted`; proxy rows (`CerebralCortex` -> Neocortex,
+  `Palaeocortex` -> Olfactory_cortex, `DiencephalonStriatum` -> Diencephalon) need an owner check.
+  Pre-change copy: `specimen_crosswalk/audit/anatomy_crosswalk_backup_2026-10-31.csv`.
 - **`structure_boundary_basis.csv`** — one row per paper × column, in the pattern of `brain_size_basis.csv`:
   dimension (2D surface / 3D volume / rate / index), boundary basis, source role, and what must never be
   pooled with it. Separates the four Smaers products (2017 Brodmann surfaces; 2017 compiled volumes;

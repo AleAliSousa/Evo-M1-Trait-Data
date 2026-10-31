@@ -1,0 +1,11 @@
+"Figure 2. Cortical area scaling. Contrasts of log primary neocortical areas A (primary somatosensory, S1; primary visual, V1; primary motor, M1; and primary auditory, A1) and log totals of auditory, somatosensory, motor and visual neocortical areas B Log(primary neocortical areas A) and log totals of auditory, somatosensory, motor and visual neocortical areas B are regressed on log(total neocortex size) (y-axis). The intercepts of the lines have been adjusted for easier visualization of the relative slope.",,,,,
+row,equation_key_printed,panel,panel_line_label_printed,equation_printed,r2_printed
+1,V1,a,VI,V1 = 1.086x - 1.225,0.907
+2,Vtot,b,visual,Vtot = 1.27x - 1.49,0.935
+3,S1,a,SI,S1 = 0.664x - 0.292,0.794
+4,SStot,b,somatosensory,SStot = 0.796x - 0.337,0.881
+5,A1,a,AI,A1 = 0.697x - 1.075,0.919
+6,Atot,b,auditory,Atot = 0.895x - 1.363,0.93
+7,M,a,MI,M = 0.84x - 0.826,0.86
+8,Mtot,b,motor,Mtot = 1.044x - 1.34,0.903
+"Printed legend, Proc R Soc B 272:94 (PDF page 5): 'The equations and r2 values are as follows: ...'",,,,,

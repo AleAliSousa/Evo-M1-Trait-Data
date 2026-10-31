@@ -71,5 +71,23 @@ out_path <- file.path(folder, paste0(item_name, ".csv"))
 write_csv(result, out_path)
 message("Wrote ", nrow(result), " rows to ", out_path)
 
-## Public TSV mirror (registry key = Item encoded); written via the house
-## file_list.R pipeline, not duplicated here.
+## Public TSV. `Item encoded` is read from __ReadMe.xlsx BY ITEM NAME -- the registry is the
+## authority for the filename. file_list.R only INDEXES existing TSVs; it never writes one, so
+## the earlier note deferring this to that pipeline meant the item never got a public copy.
+root <- folder
+while (dirname(root) != root && !file.exists(file.path(root, "__ReadMe.xlsx"))) root <- dirname(root)
+if (file.exists(file.path(root, "__ReadMe.xlsx")) && requireNamespace("readxl", quietly = TRUE)) {
+  registry <- readxl::read_excel(file.path(root, "__ReadMe.xlsx"), sheet = "Sheet1")
+  item_encoded <- registry[["Item encoded"]][match(item_name, registry[["Item name"]])]
+  if (length(item_encoded) == 1L && !is.na(item_encoded) && nzchar(item_encoded) &&
+      !grepl("_$", item_encoded)) {
+    tsv_dir <- file.path(root, "__Public", "comparative-data")
+    dir.create(tsv_dir, showWarnings = FALSE, recursive = TRUE)
+    write.table(result, file.path(tsv_dir, paste0(item_encoded, ".tsv")), sep = "\t",
+                row.names = FALSE, quote = TRUE, na = "", fileEncoding = "UTF-8")
+    message(item_name, ": public TSV ", item_encoded, ".tsv")
+  } else {
+    warning(item_name, ": no usable 'Item encoded' in __ReadMe.xlsx; run _tools/file_list.R first. ",
+            "Public TSV not written.")
+  }
+}

@@ -1,0 +1,18 @@
+variable,definition,units,notes
+species_as_published,"Common name as printed beside the scales, with the footnote asterisk stripped",text,
+cue_group,"Side of the scale: uses both binaural locus cues, or only one",text,
+binaural_cue_use,"Which cue the species uses, from the printed type style per the captions",text,roman (left) = both cues; bold italic (right) = only time cues; bold upright (right) = only intensity cues. Read visually in reference_tables/Heffner_etal_2014_Figures10-11_label_typography.csv.
+printed_type_style,The type style actually observed for that label,text,
+footnote_asterisk,"Whether the label carries the caption's '*' (elephants and goats also use intensity cues, but only at low frequencies)",yes/no,
+sound_localization_threshold_deg,Digitised minimum audible angle from Fig. 10 (linear scale),degrees,
+sound_localization_threshold_deg_globalfit,Same from the single linear fit to the eight printed ticks,degrees,
+functional_interaural_distance_us,Digitised functional interaural distance from Fig. 11 (log scale),microseconds,"ERRATA Heffner_etal_2014-E002 (proposed, cross_source_disagreement): printed n/a (plotted position only), repo had 90.344 | "
+functional_interaural_distance_us_globalfit,Same from the single log fit to the nine printed ticks,microseconds,
+shares_tick_Fig10,"Other species on the same Fig. 10 tick, '; '-separated (their individual values are inferred, not resolved)",text,
+shares_tick_Fig11,"Other species on the same Fig. 11 tick, '; '-separated (their individual values are inferred, not resolved)",text,
+figure_source_ref_key,Join key(s) into reference_tables/Heffner_etal_2014_Figures10-11_references.csv (split on '; '),text,Neither caption keys a per-species source; the only citation either prints is Heffner and Heffner (1982) for the asterisked species.
+value_origin,Whether the value was printed in the source or read off a plotted figure,text,"always 'digitised_from_figure' in this item. Digitisation: the 24 leader lines of Fig. 10 and the 24 of Fig. 11 were pixel-digitised from the embedded 1273 x 754 and 1280 x 754 px bitmaps by Heffner_etal_2014_Figures10-11_extract.py. Estimated error +/- 0.04 deg on Fig. 10 (linear-fit residuals on the eight printed ticks) and +/- 0.35% on Fig. 11 (log-fit residuals on the nine printed ticks). Each figure contains 24 plotted ticks carrying 25 species, and all 48 ticks were individually resolved. Two Fig. 11 ticks are each shared by two species whose leader lines converge on one point (Egyptian fruit bat + prairie dog; kangaroo rat + Jamaican fruit bat), and one Fig. 10 and one Fig. 11 label name two species; those species are given the same value and flagged in shares_tick_Fig10 / shares_tick_Fig11 -- their individual positions are INFERRED from a shared marker, not resolved."
+value_precision,Per-row statement of the digitisation uncertainty,text,
+data_role,Whether the row is this paper's own new measurement (primary) or a value it reproduces from another study (secondary),text,
+Species,Accepted binomial resolved from the printed name via _keys/General/species_key.csv (source_publication = this paper's folder name),text,
+species_basis,"How the binomial was arrived at (verbatim / our_judgment / hypothesis / unspecified_in_source), from the species key",text,

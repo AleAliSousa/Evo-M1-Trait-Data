@@ -1,0 +1,22 @@
+variable,definition,units,notes
+species_as_published,Binomial as printed in the panel heading,text,
+common_name_as_published,Common name as printed in the panel heading,text,
+retina_flatmount_area_mm2,Area enclosed by the drawn outline of the flat-mounted retina,mm^2,
+retina_nasotemporal_extent_mm,Greatest nasal-temporal (horizontal) extent of the outline,mm,Section 3.2 prints 'was 4.6 mm in diameter' (P. hastatus) and 'approximately 2.6 mm in diameter' (C. perspicillata).
+retina_superoinferior_extent_mm,Greatest superior-inferior (vertical) extent of the outline,mm,
+area_ge25pct_maxdensity_mm2,Shaded area with ganglion-cell density at least 25% of maximum (all three zones),mm^2,
+area_ge50pct_maxdensity_mm2,Area with density at least 50% of maximum,mm^2,
+area_ge75pct_maxdensity_mm2,Area with density at least 75% of maximum -- the field of best vision,mm^2,
+pct_retina_ge50,area_ge50pct_maxdensity_mm2 as a percentage of retina_flatmount_area_mm2,percent,
+pct_retina_ge75,area_ge75pct_maxdensity_mm2 as a percentage of retina_flatmount_area_mm2,percent,
+fbv75_nasotemporal_extent_mm,Greatest horizontal extent of the >=75% zone,mm,
+fbv75_superoinferior_extent_mm,Greatest vertical extent of the >=75% zone,mm,
+fbv75_width_deg_from_text,Angular width of the field of best vision as PRINTED in Section 3.2 (51 deg / 110 deg),degrees,Not measured from the figure; carried so the retinal-mm reading can be expressed in degrees. The sibling item Heffner_etal_2007_Figure6 is the source of record for these two numbers.
+implied_deg_per_mm_retina,fbv75_width_deg_from_text / fbv75_nasotemporal_extent_mm,degrees per mm,Internal consistency test: the ratio between species (1.71) matches the inverse ratio of their retinal extents (1.69) to 0.8%.
+scale_bar_px,Length of the printed 1 mm scale bar in bitmap pixels,pixels,
+mm_per_px,1 / scale_bar_px,mm per pixel,
+value_origin,Whether the value was printed in the source or read off a plotted figure,text,"always 'digitised_from_figure' in this item. Digitisation: Fig. 4 has no axes, so it was digitised by SCALE-BAR PLANIMETRY of the embedded 444 x 906 px bitmap by Heffner_etal_2007_Figure4_extract.py: the printed 1 mm bars measure 75 px (left panel) and 124 px (right panel), and the shaded zones were separated by grey level inside the filled retinal outline. Estimated error about +/- 3% on areas (one pixel of contour edge taken round the outline) and +/- 0.027 mm (P. hastatus) / +/- 0.016 mm (C. perspicillata) on linear extents. The figure contains two panels (two retinae, each with three nested contours) and both were fully resolved; nothing was inferred."
+value_precision,Per-row statement of the digitisation uncertainty,text,
+data_role,Whether the row is this paper's own new measurement (primary) or a value it reproduces from another study (secondary),text,
+Species,Accepted binomial resolved from the printed name via _keys/General/species_key.csv (source_publication = this paper's folder name),text,
+species_basis,"How the binomial was arrived at (verbatim / our_judgment / hypothesis / unspecified_in_source), from the species key",text,

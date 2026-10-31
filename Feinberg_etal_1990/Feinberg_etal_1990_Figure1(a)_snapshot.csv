@@ -1,0 +1,18 @@
+# Feinberg_etal_1990 FIG. 11(a) constructed snapshot -- pixel digitisation of the embedded page bitmap (1890 x 2850 px, 8-bit grey), PDF p. 4.
+# SECONDARY DATA: the plotted observations are Huttenlocher (1979).
+# abscissa: ticks at px [322, 402, 482, 562, 642, 722, 802, 882] -> [0, 5, 10, 15, 20, 25, 30, 35] years (linear, max residual 0.000).
+# ordinate: label centres at rows [457.8, 610.5, 766.5, 921.5, 1077.5] -> [25, 20, 15, 10, 5] synapses mm^-3 x 10^8 (linear, max residual 0.039).
+# the panel plots 12 points (Table 2, N); 12 were individually resolved.
+panel,series_as_printed,plot_symbol,px_x,px_y,detection,age_years,value_in_figure_units,figure_units
+Figure1(a),Synaptic density (raw observations),open_circle,322.0,952.5,enclosed_hole,0.002,9.009,synapses mm^-3 x 10^8
+Figure1(a),Synaptic density (raw observations),open_circle,322.6,865.7,enclosed_hole,0.037,11.81,synapses mm^-3 x 10^8
+Figure1(a),Synaptic density (raw observations),open_circle,327.3,854.6,enclosed_hole,0.333,12.168,synapses mm^-3 x 10^8
+Figure1(a),Synaptic density (raw observations),open_circle,330.9,788.6,enclosed_hole,0.554,14.295,synapses mm^-3 x 10^8
+Figure1(a),Synaptic density (raw observations),open_circle,333.0,812.4,enclosed_hole,0.688,13.529,synapses mm^-3 x 10^8
+Figure1(a),Synaptic density (raw observations),open_circle,334.7,758.7,enclosed_hole,0.791,15.261,synapses mm^-3 x 10^8
+Figure1(a),Synaptic density (raw observations),open_circle,338.7,703.9,enclosed_hole,1.044,17.026,synapses mm^-3 x 10^8
+Figure1(a),Synaptic density (raw observations),open_circle,353.9,726.2,enclosed_hole,1.996,16.307,synapses mm^-3 x 10^8
+Figure1(a),Synaptic density (raw observations),open_circle,417.8,723.5,enclosed_hole,5.988,16.394,synapses mm^-3 x 10^8
+Figure1(a),Synaptic density (raw observations),open_circle,434.7,734.7,enclosed_hole,7.043,16.034,synapses mm^-3 x 10^8
+Figure1(a),Synaptic density (raw observations),open_circle,577.1,876.2,enclosed_hole,15.942,11.469,synapses mm^-3 x 10^8
+Figure1(a),Synaptic density (raw observations),open_circle,802.3,900.9,enclosed_hole,30.02,10.675,synapses mm^-3 x 10^8

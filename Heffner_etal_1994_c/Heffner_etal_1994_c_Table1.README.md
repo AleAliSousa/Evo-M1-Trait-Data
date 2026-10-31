@@ -72,3 +72,15 @@ Threshold in degrees of minimum audible angle, as printed.
    *Dipodomys* species.
 3. **Pocket gopher** has no numeric threshold (printed as an em dash); left
    blank/NA rather than fabricated.
+
+<!-- errata:begin -->
+## Errata
+
+Generated from `reference_tables/Heffner_etal_1994_c_errata.csv` by `_tools/dataset_builder/render_errata.R` -- edit the CSV, not this block. See `_tools/dataset_builder/ERRATA_CONVENTION.md`.
+
+| id | variable | where printed | printed | repo value before | issue | proposed | status | evidence | note |
+|---|---|---|---|---|---|---|---|---|---|
+| Heffner_etal_1994_c-E001 | source | Table 1, p. 253, row "Wood rat" (Source column); the Fig. 7 legend directs the reader to Table 1 for the remaining citations | Heffner and Heffner, 1988a | Heffner and Heffner, 1988a | publication_ambiguity |  | proposed | Table 1 (p. 253) cites "Heffner and Heffner, 1988a" for BOTH the wood rat (19.0 deg) and the grasshopper mouse (19.3 deg). The reference list (p. 256) gives 1988a as "Sound localization in a predatory rodent, the northern grasshopper mouse (Onychomys leucogaster). J. Comp. Psychol. 102, 66-71", a paper whose title names only Onychomys leucogaster. No separate wood-rat source appears anywhere in this paper. | The repo keeps the printed citation key. A wood-rat (Neotoma floridana) localization threshold may be reported within the 1988a paper alongside the grasshopper mouse, or the key may be a typesetting slip for a different Heffner & Heffner 1988 letter; not resolvable from this PDF. Do not treat the 1988a citation as verified provenance for the wood-rat value. The same printed key is inherited by Heffner_etal_1994_c_Figure7 (errata -E002), whose Fig. 7 legend directs the reader to this Table 1 cell. |
+
+1 recorded, 1 open (proposed), 0 confirmed, 0 withdrawn.
+<!-- errata:end -->

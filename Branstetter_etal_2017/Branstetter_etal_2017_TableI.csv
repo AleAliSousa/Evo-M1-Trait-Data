@@ -1,0 +1,97 @@
+"species_as_published","Species","common_name","frequency_khz","subject","threshold_db_re_1uPa","threshold_printed","subject_data_role","subject_source","included_in_row_statistics","row_mean_db","row_median_db","row_n_printed","row_sd_db"
+"Orcinus orca","Orcinus orca","Killer whale",0.1,"H",123,"123","primary","this study",TRUE,123,123,1,
+"Orcinus orca","Orcinus orca","Killer whale",0.25,"D",104,"104","primary","this study",TRUE,104,104,2,0
+"Orcinus orca","Orcinus orca","Killer whale",0.25,"H",104,"104","primary","this study",TRUE,104,104,2,0
+"Orcinus orca","Orcinus orca","Killer whale",0.3,"C",104,"104","primary","this study",TRUE,104,104,1,
+"Orcinus orca","Orcinus orca","Killer whale",0.5,"D",103,"103","primary","this study",TRUE,103,103,5,6
+"Orcinus orca","Orcinus orca","Killer whale",0.5,"E",100,"100","primary","this study",TRUE,103,103,5,6
+"Orcinus orca","Orcinus orca","Killer whale",0.5,"F",106,"106","primary","this study",TRUE,103,103,5,6
+"Orcinus orca","Orcinus orca","Killer whale",0.5,"G",110,"110","primary","this study",TRUE,103,103,5,6
+"Orcinus orca","Orcinus orca","Killer whale",0.5,"H",96,"96","primary","this study",TRUE,103,103,5,6
+"Orcinus orca","Orcinus orca","Killer whale",1,"C",106,"106","primary","this study",TRUE,102,103,6,7
+"Orcinus orca","Orcinus orca","Killer whale",1,"D",110,"110","primary","this study",TRUE,102,103,6,7
+"Orcinus orca","Orcinus orca","Killer whale",1,"E",91,"91","primary","this study",TRUE,102,103,6,7
+"Orcinus orca","Orcinus orca","Killer whale",1,"F",99,"99","primary","this study",TRUE,102,103,6,7
+"Orcinus orca","Orcinus orca","Killer whale",1,"G",107,"107","primary","this study",TRUE,102,103,6,7
+"Orcinus orca","Orcinus orca","Killer whale",1,"H",100,"100","primary","this study",TRUE,102,103,6,7
+"Orcinus orca","Orcinus orca","Killer whale",2.5,"C",75,"75","primary","this study",TRUE,78,78,6,6
+"Orcinus orca","Orcinus orca","Killer whale",2.5,"D",71,"71","primary","this study",TRUE,78,78,6,6
+"Orcinus orca","Orcinus orca","Killer whale",2.5,"E",81,"81","primary","this study",TRUE,78,78,6,6
+"Orcinus orca","Orcinus orca","Killer whale",2.5,"F",85,"85","primary","this study",TRUE,78,78,6,6
+"Orcinus orca","Orcinus orca","Killer whale",2.5,"G",83,"83","primary","this study",TRUE,78,78,6,6
+"Orcinus orca","Orcinus orca","Killer whale",2.5,"H",70,"70","primary","this study",TRUE,78,78,6,6
+"Orcinus orca","Orcinus orca","Killer whale",4,"Vigga",59,"59","secondary","Szymanski et al. (1999)",TRUE,61,61,2,2
+"Orcinus orca","Orcinus orca","Killer whale",4,"Yakka",62,"62","secondary","Szymanski et al. (1999)",TRUE,61,61,2,2
+"Orcinus orca","Orcinus orca","Killer whale",5,"A",102,"102","primary","this study",FALSE,68,65,6,9
+"Orcinus orca","Orcinus orca","Killer whale",5,"B",95,"95","primary","this study",FALSE,68,65,6,9
+"Orcinus orca","Orcinus orca","Killer whale",5,"C",65,"65","primary","this study",TRUE,68,65,6,9
+"Orcinus orca","Orcinus orca","Killer whale",5,"D",56,"56","primary","this study",TRUE,68,65,6,9
+"Orcinus orca","Orcinus orca","Killer whale",5,"E",65,"65","primary","this study",TRUE,68,65,6,9
+"Orcinus orca","Orcinus orca","Killer whale",5,"F",80,"80","primary","this study",TRUE,68,65,6,9
+"Orcinus orca","Orcinus orca","Killer whale",5,"G",80,"80","primary","this study",TRUE,68,65,6,9
+"Orcinus orca","Orcinus orca","Killer whale",5,"H",65,"65","primary","this study",TRUE,68,65,6,9
+"Orcinus orca","Orcinus orca","Killer whale",8,"Vigga",55,"55","secondary","Szymanski et al. (1999)",TRUE,58,58,2,4
+"Orcinus orca","Orcinus orca","Killer whale",8,"Yakka",60,"60","secondary","Szymanski et al. (1999)",TRUE,58,58,2,4
+"Orcinus orca","Orcinus orca","Killer whale",10,"B",82,"82","primary","this study",FALSE,57,57,6,4
+"Orcinus orca","Orcinus orca","Killer whale",10,"C",63,"63","primary","this study",TRUE,57,57,6,4
+"Orcinus orca","Orcinus orca","Killer whale",10,"D",58,"58","primary","this study",TRUE,57,57,6,4
+"Orcinus orca","Orcinus orca","Killer whale",10,"E",55,"55","primary","this study",TRUE,57,57,6,4
+"Orcinus orca","Orcinus orca","Killer whale",10,"F",53,"53","primary","this study",TRUE,57,57,6,4
+"Orcinus orca","Orcinus orca","Killer whale",10,"G",53,"53","primary","this study",TRUE,57,57,6,4
+"Orcinus orca","Orcinus orca","Killer whale",10,"H",60,"60","primary","this study",TRUE,57,57,6,4
+"Orcinus orca","Orcinus orca","Killer whale",12,"Vigga",50,"50","secondary","Szymanski et al. (1999)",TRUE,45,45,2,7
+"Orcinus orca","Orcinus orca","Killer whale",12,"Yakka",40,"40","secondary","Szymanski et al. (1999)",TRUE,45,45,2,7
+"Orcinus orca","Orcinus orca","Killer whale",16,"Vigga",44,"44","secondary","Szymanski et al. (1999)",TRUE,46,46,2,3
+"Orcinus orca","Orcinus orca","Killer whale",16,"Yakka",48,"48","secondary","Szymanski et al. (1999)",TRUE,46,46,2,3
+"Orcinus orca","Orcinus orca","Killer whale",20,"A",67,"67","primary","this study",FALSE,46,50,8,8
+"Orcinus orca","Orcinus orca","Killer whale",20,"B",57,"57","primary","this study",FALSE,46,50,8,8
+"Orcinus orca","Orcinus orca","Killer whale",20,"C",53,"53","primary","this study",TRUE,46,50,8,8
+"Orcinus orca","Orcinus orca","Killer whale",20,"D",47,"47","primary","this study",TRUE,46,50,8,8
+"Orcinus orca","Orcinus orca","Killer whale",20,"E",51,"51","primary","this study",TRUE,46,50,8,8
+"Orcinus orca","Orcinus orca","Killer whale",20,"F",50,"50","primary","this study",TRUE,46,50,8,8
+"Orcinus orca","Orcinus orca","Killer whale",20,"G",54,"54","primary","this study",TRUE,46,50,8,8
+"Orcinus orca","Orcinus orca","Killer whale",20,"H",50,"50","primary","this study",TRUE,46,50,8,8
+"Orcinus orca","Orcinus orca","Killer whale",20,"Vigga",38,"38","secondary","Szymanski et al. (1999)",TRUE,46,50,8,8
+"Orcinus orca","Orcinus orca","Killer whale",20,"Yakka",30,"30","secondary","Szymanski et al. (1999)",TRUE,46,50,8,8
+"Orcinus orca","Orcinus orca","Killer whale",32,"Vigga",55,"55","secondary","Szymanski et al. (1999)",TRUE,46,46,2,13
+"Orcinus orca","Orcinus orca","Killer whale",32,"Yakka",36,"36","secondary","Szymanski et al. (1999)",TRUE,46,46,2,13
+"Orcinus orca","Orcinus orca","Killer whale",40,"A",57,"57","primary","this study",FALSE,53,53,6,5
+"Orcinus orca","Orcinus orca","Killer whale",40,"B",48,"48","primary","this study",FALSE,53,53,6,5
+"Orcinus orca","Orcinus orca","Killer whale",40,"C",53,"53","primary","this study",TRUE,53,53,6,5
+"Orcinus orca","Orcinus orca","Killer whale",40,"D",59,"59","primary","this study",TRUE,53,53,6,5
+"Orcinus orca","Orcinus orca","Killer whale",40,"E",49,"49","primary","this study",TRUE,53,53,6,5
+"Orcinus orca","Orcinus orca","Killer whale",40,"F",47,"47","primary","this study",TRUE,53,53,6,5
+"Orcinus orca","Orcinus orca","Killer whale",40,"G",53,"53","primary","this study",TRUE,53,53,6,5
+"Orcinus orca","Orcinus orca","Killer whale",40,"H",59,"59","primary","this study",TRUE,53,53,6,5
+"Orcinus orca","Orcinus orca","Killer whale",45,"Vigga",54,"54","secondary","Szymanski et al. (1999)",TRUE,48,48,2,8
+"Orcinus orca","Orcinus orca","Killer whale",45,"Yakka",42,"42","secondary","Szymanski et al. (1999)",TRUE,48,48,2,8
+"Orcinus orca","Orcinus orca","Killer whale",56,"B",53,"53","primary","this study",FALSE,54,50,4,12
+"Orcinus orca","Orcinus orca","Killer whale",56,"C",52,"52","primary","this study",TRUE,54,50,4,12
+"Orcinus orca","Orcinus orca","Killer whale",56,"E",48,"48","primary","this study",TRUE,54,50,4,12
+"Orcinus orca","Orcinus orca","Killer whale",56,"F",45,"45","primary","this study",TRUE,54,50,4,12
+"Orcinus orca","Orcinus orca","Killer whale",56,"G",72,"72","primary","this study",TRUE,54,50,4,12
+"Orcinus orca","Orcinus orca","Killer whale",60,"Vigga",63,"63","secondary","Szymanski et al. (1999)",TRUE,52,52,2,16
+"Orcinus orca","Orcinus orca","Killer whale",60,"Yakka",41,"41","secondary","Szymanski et al. (1999)",TRUE,52,52,2,16
+"Orcinus orca","Orcinus orca","Killer whale",80,"B",58,"58","primary","this study",FALSE,72,72,8,13
+"Orcinus orca","Orcinus orca","Killer whale",80,"C",64,"64","primary","this study",TRUE,72,72,8,13
+"Orcinus orca","Orcinus orca","Killer whale",80,"D",75,"75","primary","this study",TRUE,72,72,8,13
+"Orcinus orca","Orcinus orca","Killer whale",80,"E",58,"58","primary","this study",TRUE,72,72,8,13
+"Orcinus orca","Orcinus orca","Killer whale",80,"F",97,"97","primary","this study",TRUE,72,72,8,13
+"Orcinus orca","Orcinus orca","Killer whale",80,"G",79,"79","primary","this study",TRUE,72,72,8,13
+"Orcinus orca","Orcinus orca","Killer whale",80,"H",74,"74","primary","this study",TRUE,72,72,8,13
+"Orcinus orca","Orcinus orca","Killer whale",80,"Vigga",69,"69","secondary","Szymanski et al. (1999)",TRUE,72,72,8,13
+"Orcinus orca","Orcinus orca","Killer whale",80,"Yakka",60,"60","secondary","Szymanski et al. (1999)",TRUE,72,72,8,13
+"Orcinus orca","Orcinus orca","Killer whale",100,"B",71,"71","primary","this study",FALSE,85,82,7,13
+"Orcinus orca","Orcinus orca","Killer whale",100,"C",82,"82","primary","this study",TRUE,85,82,7,13
+"Orcinus orca","Orcinus orca","Killer whale",100,"D",112,"112","primary","this study",TRUE,85,82,7,13
+"Orcinus orca","Orcinus orca","Killer whale",100,"E",83,"83","primary","this study",TRUE,85,82,7,13
+"Orcinus orca","Orcinus orca","Killer whale",100,"G",79,"79","primary","this study",TRUE,85,82,7,13
+"Orcinus orca","Orcinus orca","Killer whale",100,"H",91,"91","primary","this study",TRUE,85,82,7,13
+"Orcinus orca","Orcinus orca","Killer whale",100,"Vigga",77,"77","secondary","Szymanski et al. (1999)",TRUE,85,82,7,13
+"Orcinus orca","Orcinus orca","Killer whale",100,"Yakka",74,"74","secondary","Szymanski et al. (1999)",TRUE,85,82,7,13
+"Orcinus orca","Orcinus orca","Killer whale",113,"B",116,"116","primary","this study",FALSE,116,119,3,21
+"Orcinus orca","Orcinus orca","Killer whale",113,"D",135,"135","primary","this study",TRUE,116,119,3,21
+"Orcinus orca","Orcinus orca","Killer whale",113,"E",119,"119","primary","this study",TRUE,116,119,3,21
+"Orcinus orca","Orcinus orca","Killer whale",113,"H",94,"94","primary","this study",TRUE,116,119,3,21
+"Orcinus orca","Orcinus orca","Killer whale",120,"Yakka",108,"108","secondary","Szymanski et al. (1999)",TRUE,108,108,1,
+"Orcinus orca","Orcinus orca","Killer whale",160,"H",122,"122","primary","this study",TRUE,122,122,1,

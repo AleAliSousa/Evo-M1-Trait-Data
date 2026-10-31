@@ -1,0 +1,27 @@
+# Huttenlocher__1979 Figure3 constructed snapshot -- pixel digitisation of the embedded page bitmap (1950 x 3000 px, 8-bit grey), PDF p. 5.
+# ordinate: ticks at rows [1917.5, 2105.0, 2290.5, 2476.0] -> [20, 15, 10, 5] synapses/mm3 x 10^8 (linear fit, max residual 0.022).
+# abscissa (BROKEN, piecewise linear): NB=354.0 px; 0.5=428.0 px; 1=503.0 px; 5=577.0 px; 10=652.0 px; 15=726.0 px; 20=800.0 px; 40=875.0 px; 60=949.0 px; 80=1024.0 px; 100=1097.0 px
+# 22 markers resolved: {'filled_circle': np.int64(22)}
+figure,series_as_printed,plot_symbol,px_x,px_y,age_column,age_years_from_abscissa,abscissa_segment,age_in_axis_break,value_in_figure_units,figure_units
+Figure3,"Synapse counts, layer 3 middle frontal gyrus",filled_circle,356.0,2333.1,years,0.014,segment NB-1,no,8.85,synapses/mm3 x 10^8
+Figure3,"Synapse counts, layer 3 middle frontal gyrus",filled_circle,359.0,2222.5,years,0.035,segment NB-1,no,11.822,synapses/mm3 x 10^8
+Figure3,"Synapse counts, layer 3 middle frontal gyrus",filled_circle,375.4,2211.9,years,0.145,segment NB-1,no,12.105,synapses/mm3 x 10^8
+Figure3,"Synapse counts, layer 3 middle frontal gyrus",filled_circle,429.2,2128.6,years,0.506,segment NB-1,no,14.344,synapses/mm3 x 10^8
+Figure3,"Synapse counts, layer 3 middle frontal gyrus",filled_circle,452.3,2164.5,years,0.661,segment NB-1,no,13.38,synapses/mm3 x 10^8
+Figure3,"Synapse counts, layer 3 middle frontal gyrus",filled_circle,458.6,2097.3,years,0.703,segment NB-1,no,15.186,synapses/mm3 x 10^8
+Figure3,"Synapse counts, layer 3 middle frontal gyrus",filled_circle,495.0,2028.2,years,0.947,segment NB-1,no,17.041,synapses/mm3 x 10^8
+Figure3,"Synapse counts, layer 3 middle frontal gyrus",filled_circle,520.8,2053.2,years,1.121,segment NB-1 (extrapolated),yes,16.372,synapses/mm3 x 10^8
+Figure3,"Synapse counts, layer 3 middle frontal gyrus",filled_circle,579.4,2049.5,years,5.139,segment 5-20,no,16.469,synapses/mm3 x 10^8
+Figure3,"Synapse counts, layer 3 middle frontal gyrus",filled_circle,606.7,2060.7,years,6.981,segment 5-20,no,16.168,synapses/mm3 x 10^8
+Figure3,"Synapse counts, layer 3 middle frontal gyrus",filled_circle,747.8,2240.5,years,16.474,segment 5-20,no,11.338,synapses/mm3 x 10^8
+Figure3,"Synapse counts, layer 3 middle frontal gyrus",filled_circle,843.4,2268.1,years,31.457,segment 40-100 (extrapolated),yes,10.596,synapses/mm3 x 10^8
+Figure3,"Synapse counts, layer 3 middle frontal gyrus",filled_circle,915.0,2198.0,years,50.77,segment 40-100,no,12.48,synapses/mm3 x 10^8
+Figure3,"Synapse counts, layer 3 middle frontal gyrus",filled_circle,928.2,2334.7,years,54.346,segment 40-100,no,8.808,synapses/mm3 x 10^8
+Figure3,"Synapse counts, layer 3 middle frontal gyrus",filled_circle,966.7,2267.1,years,64.734,segment 40-100,no,10.624,synapses/mm3 x 10^8
+Figure3,"Synapse counts, layer 3 middle frontal gyrus",filled_circle,976.1,2216.0,years,67.259,segment 40-100,no,11.996,synapses/mm3 x 10^8
+Figure3,"Synapse counts, layer 3 middle frontal gyrus",filled_circle,980.8,2246.0,years,68.517,segment 40-100,no,11.19,synapses/mm3 x 10^8
+Figure3,"Synapse counts, layer 3 middle frontal gyrus",filled_circle,992.5,2255.2,years,71.687,segment 40-100,no,10.943,synapses/mm3 x 10^8
+Figure3,"Synapse counts, layer 3 middle frontal gyrus",filled_circle,999.7,2302.5,years,73.642,segment 40-100,no,9.673,synapses/mm3 x 10^8
+Figure3,"Synapse counts, layer 3 middle frontal gyrus",filled_circle,1014.5,2285.0,years,77.615,segment 40-100,no,10.141,synapses/mm3 x 10^8
+Figure3,"Synapse counts, layer 3 middle frontal gyrus",filled_circle,1020.2,2300.7,years,79.156,segment 40-100,no,9.72,synapses/mm3 x 10^8
+Figure3,"Synapse counts, layer 3 middle frontal gyrus",filled_circle,1061.5,2339.2,years,90.31,segment 40-100,no,8.687,synapses/mm3 x 10^8

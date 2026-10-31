@@ -75,6 +75,16 @@ index <- match(join_key(final.dataframe), join_key(context))
 if (anyNA(index) || nrow(final.dataframe) != nrow(context)) stop("Incomplete context/source join.")
 final.dataframe <- cbind(final.dataframe, context[index, context_columns, drop = FALSE])
 if (anyNA(final.dataframe)) stop("Unexpected missing analysis value.")
+## ---- species harmonisation: collection-scoped key, rows keyed by the paper FOLDER name ----
+key <- utils::read.csv(file.path(base, "_keys", "General", "species_key.csv"), colClasses = "character",
+                       na.strings = NULL, check.names = FALSE, encoding = "UTF-8")
+key <- key[key$source_publication == basename(folder), , drop = FALSE]
+if (nrow(key) == 0L) stop("species_key filter returned zero rows for source_publication = ", basename(folder))
+lk <- stats::setNames(key$accepted_name, key$variant_name)
+final.dataframe$Species <- unname(lk[final.dataframe$species_as_published])
+if (anyNA(final.dataframe$Species))
+  stop("Printed name(s) missing from species_key: ",
+       paste(unique(final.dataframe$species_as_published[is.na(final.dataframe$Species)]), collapse = "; "))
 utils::write.csv(final.dataframe, file.path(folder, paste0(item_name, ".csv")),
   row.names = FALSE, na = "", fileEncoding = "UTF-8")
 source_doi <- unique(context$source_doi)

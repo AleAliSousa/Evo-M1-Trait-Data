@@ -1,6 +1,6 @@
 # Prepared reader; NOT executed in the preparation environment (R is absent).
 # Counts retain cells, soma size retains µm³; never double left-hemisphere values.
-expected_basename <- "Rivara_etal_2003_Table1.R"
+expected_basename <- "Rivara_etal_2003_TABLE1.R"
 candidates <- character()
 for (frame in rev(sys.frames())) {
   for (field in c("ofile", "file")) {
@@ -104,12 +104,18 @@ if (file.exists(file.path(root, "__ReadMe.xlsx")) && requireNamespace("readxl", 
   filecodes <- readxl::read_excel(file.path(root, "__ReadMe.xlsx"), sheet = "Sheet1")
   required <- c("Item name", "Item number", "Item encoded")
   if (all(required %in% names(filecodes))) {
+    # This paper publishes exactly one table (printed "TABLE 1", p.143). The
+    # former provisional registry row (Item number "Betz cells", Item name
+    # Rivara_etal_2003_Betzcells) was the same item under a different label; the
+    # owner resolved it on 2026-10-31 by renaming Item number to "TABLE 1", so
+    # the registered Item name is now Rivara_etal_2003_TABLE1 and matches this
+    # script's own filename. Resolve by Item name, never by row number.
     match_rows <- which(!is.na(filecodes$`Item name`) & filecodes$`Item name` == item_name)
     if (length(match_rows) == 1L) {
       row <- match_rows[[1L]]
       number <- gsub("[[:space:]]", "", as.character(filecodes$`Item number`[[row]]))
       code <- as.character(filecodes$`Item encoded`[[row]])
-      if (!is.na(number) && number == "Table1" && !is.na(code) && nzchar(code) &&
+      if (!is.na(number) && number == "TABLE1" && !is.na(code) && nzchar(code) &&
           !grepl("_$|[/\\\\]", code) && !code %in% c("notfound", "NA")) item_encoded <- code
     }
   }

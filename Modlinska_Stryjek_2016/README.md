@@ -7,3 +7,14 @@ The authors' Materials and Methods / Animals report approximately 50 rats in one
 This is a primary approximate whole-colony population estimate, NOT an exact census, a typical social-subgroup size or a mean of colonies. Age scope is unspecified. The approximate flag and commensal farm context remain in the table and definition. It enters a population-group label, not the generic social-group-size pool.
 
 Rebuild with `_checks/social_variables/build_population_censuses.py`.
+
+## Snapshot provenance — repaired 2026-10-31
+
+Until 2026-10-31 `Modlinska_Stryjek_2016_Colony_snapshot.csv` was written as a byte-identical copy
+of `Modlinska_Stryjek_2016_Colony.csv` — a cleaned analysis row, not the source.
+
+It is now a **constructed snapshot**: the value is stated in prose, so the snapshot carries the
+printed wording (`approx. 50 individuals`, `brown rats (Rattus norvegicus)`) with the verbatim
+Methods sentence and the method sentence beside it, located at Materials and Methods, subsection
+"Animals". `build_population_censuses.py` extracts both sentences from `source/PMC4890768.xml` and
+asserts the printed phrase is present, so the snapshot tracks the source rather than the product.

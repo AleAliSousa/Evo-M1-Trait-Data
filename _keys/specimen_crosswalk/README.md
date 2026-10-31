@@ -184,3 +184,35 @@ companion for joining and `collection_qualifier` keeps the rest, because
 "ex Yerkes" and "later NMHM/AFIP" are information a controlled vocabulary would
 destroy. Two rows may be treated as the same collection only when their
 `collection_group` sets intersect; `UNKNOWN` never matches `UNKNOWN`.
+
+## Taxon resolution key (added 2026-10-31)
+
+`specimen_taxon_resolution.csv` maps **every distinct `resolved_taxon` string** in
+`specimen_crosswalk.csv` to a species-level `accepted_name` that exists in
+`_keys/species_reference.csv`, so the specimen layer joins to the rest of the
+database on one name per animal. `resolved_taxon` itself is left as the best
+identity statement for the individual (a trinomial such as *Gorilla beringei
+graueri* or a genus-only label stays as it is); `accepted_name` is the join key.
+
+| column | meaning |
+|---|---|
+| `resolved_taxon` | the string as it appears (or appeared) in `specimen_crosswalk.resolved_taxon` |
+| `accepted_name` | species-level name in `species_reference.csv` (or `Genus sp.` when only the genus is known) |
+| `basis` | `exact` · `spelling` · `nomenclature` (synonym, genus transfer, domestic form) · `subspecies_to_species` · `rank_above_species` · `common_name` · `display_alias` · `exact_taxonomy_key` · `needs_review` |
+| `status` | `resolved` or `review` (accepted_name is a placeholder; do not join on it) |
+| `in_species_reference` | whether `accepted_name` occurs in `species_reference.csv` |
+| `apply_to_crosswalk` / `row_status` | `TRUE` / `superseded_in_crosswalk` marks the 63 strings rewritten in `specimen_crosswalk.resolved_taxon` on 2026-10-31 (378 rows): 40 nomenclature (258 rows), 19 spelling (114 rows), 3 genus-only labels normalised to `Genus sp.` (`Caiman`, `Tupaia`, `Nycticebus`; 5 rows) and 1 common name (`Capybara` -> *Hydrochoerus hydrochaeris*; 1 row). Per-row log in `audit/specimen_taxon_resolution_changelog_2026-10-31.csv`, pre-change file in `audit/specimen_crosswalk_backup_2026-10-31.csv`. `current` rows are the strings now present. |
+| `decided_by` / `decided_date` | provenance of the decision; session-made decisions are marked *pending owner sign-off* |
+
+Rules: a spelling or nomenclature correction (*Rattus norwegicus* -> *Rattus
+norvegicus*, *Felis domestica* -> *Felis catus*) changes no identity claim and is
+applied in place. A subspecies label is **not** rewritten — it carries more
+information than the species — and only its `accepted_name` is lifted to species
+rank. Nothing is ever resolved below the rank the source supports; a label the
+source itself queried (`Tupaia (?)`, `Cebus 5`) stays `review`.
+
+Consumers (TraitExplorer, any merge that pools specimens by species) should join
+`specimen_crosswalk.resolved_taxon` -> `specimen_taxon_resolution.resolved_taxon`
+and use `accepted_name` where `status = resolved`. When a new crosswalk row
+introduces a string not in this key, add a row here rather than editing the
+specimen row.

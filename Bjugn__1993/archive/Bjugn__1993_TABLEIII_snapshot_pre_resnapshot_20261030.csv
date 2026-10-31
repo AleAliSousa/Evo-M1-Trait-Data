@@ -1,0 +1,15 @@
+TABLE III
+Data from animal 1 showing how the coefficient of error (CE) for the estimate of cell number in gray matter was calculated
+F = number of fields where cells were counted. P = number of points falling on the transverse sections. Q- = number of cells counted in the oblique sections.
+Slab,Q-,F,P,Xi=Q-·P/F,A=Xi·Xi,B=Xi·Xi+1,C=Xi·Xi+2
+1,39,36,23,24.9,620,647,281
+2,34,34,26,26.0,676,294,200
+3,17,15,10,11.3,128,87,158
+4,17,22,10,7.7,59,108,179
+5,52,41,11,14.0,196,326,218
+6,37,35,22,23.3,543,363,112
+7,10,9,14,15.6,243,75,
+8,3,5,8,4.8,23,,
+Σ,209,197,124,127.6,2488,1900,1148
+CE formula,CE = sqrt((3A+C-4B)/12) / ΣXi = sqrt(84.3)/127.6 = 0.072
+Note,"ΣQ-/ΣF · ΣP = 209/197 · 124 = 131.6 ≠ Σ(Q-/F · P) = 127.6. The latter is used only for estimating CE, while the first is used for the unbiased estimate of cell number (see ref. 32)."

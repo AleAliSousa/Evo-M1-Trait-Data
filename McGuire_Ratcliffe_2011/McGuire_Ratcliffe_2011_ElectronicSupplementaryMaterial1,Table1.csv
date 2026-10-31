@@ -1,0 +1,65 @@
+species_printed,accepted_name,family_printed,body_mass_g,brain_volume_mm3,neocortex_volume_mm3,hippocampus_volume_mm3,medulla_oblongata_volume_mm3,cerebellum_volume_mm3,migration_category,migration_category_ref_keys,measurement_source,data_role,source
+Cynopterus brachyotis,Cynopterus brachyotis,Pteropodidae,33.9,946.9,287.6,80.9,68.3,122.7,Sedentary,9; 18,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Cynopterus horsfieldi,Cynopterus horsfieldii,Pteropodidae,59.3,1325.3,432.3,110.3,92.7,180.5,Sedentary,18,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Eidolon helvum,Eidolon helvum,Pteropodidae,262,4140.9,1406,258.1,273.7,463.3,Migratory,9; 18; 20; 23; 24; 29,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Epomophorus wahlbergi,Epomophorus wahlbergi,Pteropodidae,74.1,1751,,,,,Migratory,18; 19,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Macroglossus minimus,Macroglossus minimus,Pteropodidae,14.6,541.5,155.7,47,41.3,79.2,Sedentary,9,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Myonycteris torquata,Myonycteris torquata,Pteropodidae,36.2,1116.8,336.5,85.7,82.2,155.8,Migratory,9; 18; 20; 29,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Pteropus alecto,Pteropus alecto,Pteropodidae,595,6794.4,2716,357.4,392.1,843.7,Migratory,9; 20,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Pteropus poliocephalus,Pteropus poliocephalus,Pteropodidae,695,6978.8,2710,358.5,431.6,880.3,Migratory,7; 9; 20; 21; 30,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Pteropus scapulatus,Pteropus scapulatus,Pteropodidae,375,5173.7,2078,267.8,284.3,682,Migratory,8; 9; 20; 21,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Syconycteris australis,Syconycteris australis,Pteropodidae,14.7,550.2,170,48.4,37.9,64.9,Sedentary,9,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Hipposideros commersoni,Macronycteris commersoni,Hipposideridae,99.2,723,171.7,47.8,86.5,128.4,Migratory,6; 19,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Hipposideros lankadiva,Hipposideros lankadiva,Hipposideridae,48.5,707.5,154.5,48.8,93,127.3,Migratory,11,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Triaenops persicus,Triaenops persicus,Hipposideridae,13.7,261.6,48.1,17.4,38.7,66.1,Migratory,19,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Rhinolophus ferrumequinum,Rhinolophus ferrumequinum,Rhinolophuidae,23.5,337.8,,,,,Sedentary,9; 12; 13; 26; 28,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Rhinolophus hipposideros,Rhinolophus hipposideros,Rhinolophuidae,4.6,143.8,19,13.6,23,30.4,Sedentary,9; 12; 13; 26; 28,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Rhinolophus landeri,Rhinolophus landeri,Rhinolophuidae,9.7,267.4,50.6,19.1,35.3,56.3,Migratory,19,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Rhinolophus mehelyi,Rhinolophus mehelyi,Rhinolophuidae,9.7,299.2,,,,,Sedentary,9; 13,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Cardioderma cor,Cardioderma cor,Megadermatidae,26,646.7,186.3,32.3,71.5,111.7,Sedentary,9,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Lavia frons,Lavia frons,Megadermatidae,23.4,621.6,171.4,25.8,67.7,138.8,Sedentary,9,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Macroderma gigas,Macroderma gigas,Megadermatidae,119.8,1644.8,510.5,68.9,186.7,301.4,Sedentary,9,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Rhinopoma microphyllum,Rhinopoma microphyllum,Rhinopomatidae,29.4,373.6,77.5,25.8,51.3,60.4,Migratory,1; 11,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Coleura afra,Coleura afra,Emballonuridae,11.5,248.1,52.5,12.4,33.1,49.1,Sedentary,9,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Emballonura monticola,Emballonura monticola,Emballonuridae,5.3,160.2,32.1,7.61,21,31.8,Migratory,17,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Emballonura semicaudata,Emballonura semicaudata,Emballonuridae,7,177.6,36,10.1,25.7,36,Migratory,17,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Saccopteryx bilineata,Saccopteryx bilineata,Emballonuridae,8.4,223,43.9,12.2,27.2,37.8,Sedentary,9,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Taphozous australis,Taphozous australis,Emballonuridae,24,499,101.8,25.5,65.8,104.1,Sedentary,9,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Taphozous mauritianus,Taphozous mauritianus,Emballonuridae,29,531.8,105.9,25.4,70.4,114,Migratory,19,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Taphozous melanopogon,Taphozous melanopogon,Emballonuridae,22.7,517.4,113.2,23.7,67,112.7,Migratory,1; 11,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Nycteris grandis,Nycteris grandis,Nycteridae,29.8,684.4,187,36.2,80.3,139,Sedentary,9,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Nycteris thebaica,Nycteris thebaica,Nycteridae,8.9,311.8,85.7,17.4,39.6,58,Sedentary,19,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Noctilio leporinus,Noctilio leporinus,Noctilionidae,58,1141.9,361.7,50.5,124.4,194.1,Sedentary,9,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Desmodus rotundus,Desmodus rotundus,Phyllostomidae,36.3,964.3,312.5,42.4,80,166.4,Sedentary,9,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Diaemus youngi,Diaemus youngi,Phyllostomidae,34.6,944,,,,,Sedentary,9,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Diphylla ecaudata,Diphylla ecaudata,Phyllostomidae,30.9,770.3,231.1,41,63.1,132,Sedentary,9,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Glossophaga soricina,Glossophaga soricina,Phyllostomidae,9.9,379.3,88,31.4,37.9,81.6,Sedentary,10; 18,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Leptonycteris curasoae,Leptonycteris curasoae,Phyllostomidae,24.5,588.8,140.3,47.7,62.2,119.4,Migratory,2; 9; 10; 15; 16; 20; 22,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Leptonycteris nivalis,Leptonycteris nivalis,Phyllostomidae,22.8,565.6,144.3,42.2,56,104.4,Migratory,9; 10; 16; 18; 20,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Phyllostomus hastatus,Phyllostomus hastatus,Phyllostomidae,91.8,1480.7,438.9,79.8,140.2,281.3,Sedentary,9,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Vampyrum spectrum,Vampyrum spectrum,Phyllostomidae,173,2497.1,757.7,110.4,233.5,532.7,Sedentary,9,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Barbastella barbastellus,Barbastella barbastellus,Vespertilionidae,5.8,176.6,,,,,Migratory,9; 12; 13,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Eptesicus fuscus,Eptesicus fuscus,Vespertilionidae,13.6,229.7,43.3,19.7,31.1,38.7,Sedentary,2; 3; 9; 18,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Eptesicus serotinus,Cnephaeus serotinus,Vespertilionidae,23.4,299.2,55.7,27.6,47.1,55.2,Sedentary,3; 9; 28,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Ia io,Ia io,Vespertilionidae,53.3,734.6,141.3,47.1,95.3,145.6,Migratory,18,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Lasiurus borealis,Lasiurus borealis,Vespertilionidae,7.8,164.1,27.9,9,23.4,40.9,Migratory,2; 3; 4; 9; 12; 18; 20; 22,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Myotis bechsteinii,Myotis bechsteinii,Vespertilionidae,9.5,255.8,36.3,25.5,39.4,42.5,Sedentary,3; 9; 13,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Myotis dasycneme,Myotis dasycneme,Vespertilionidae,15,299.2,46.5,25.2,49.3,49.8,Migratory,3; 9; 12; 13; 26; 28,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Myotis daubentonii,Myotis daubentonii,Vespertilionidae,7,222,,,,,Migratory,3; 9; 12; 13,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Myotis lucifugus,Myotis lucifugus,Vespertilionidae,7.9,163.1,,,,,Migratory,2; 3; 5; 8; 9; 12; 18; 20; 22,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Myotis myotis,Myotis myotis,Vespertilionidae,25.6,468.1,78.3,35.6,70.3,87.1,Migratory,3; 9; 12; 13; 27,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Myotis nattereri,Myotis nattereri,Vespertilionidae,7,212.4,34.8,21.4,31.6,37.4,Sedentary,3; 9; 13; 28,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Nyctalus noctula,Nyctalus noctula,Vespertilionidae,27,351.4,54.9,19.2,57.6,80.5,Migratory,3; 9; 12; 13; 18; 20; 26; 27; 28,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Perimyotis subflavus,Perimyotis subflavus,Vespertilionidae,5.3,120.7,16.6,10.9,18.3,21.3,Migratory,3; 9; 22,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Pipistrellus kuhlii,Pipistrellus kuhlii,Vespertilionidae,6.3,160.2,,,,,Sedentary,3; 9; 13,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Pipistrellus nanus,Afronycteris nanus,Vespertilionidae,3.9,96.5,15.7,6.27,15.2,18.5,Sedentary,3; 19,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Plecotus auritus,Plecotus auritus,Vespertilionidae,6.6,229.7,,,,,Sedentary,3; 9; 13; 28,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Scotophilus dinganii,Scotophilus dinganii,Vespertilionidae,24.3,421.8,87.2,22.7,58.2,81.5,Sedentary,3; 6,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Scotophilus nigrita,Scotophilus nigrita,Vespertilionidae,101.3,1009.7,,,,,Migratory,19,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Miniopterus australis,Miniopterus australis,Miniopteridae,7.1,196.9,37.6,15,27.2,39.7,Migratory,17,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Miniopterus inflatus,Miniopterus inflatus,Miniopteridae,14.9,313.7,55.9,19,43.8,79.5,Migratory,17,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Miniopterus schreibersii,Miniopterus schreibersii,Miniopteridae,11.4,245.2,,,,,Migratory,3; 9; 10; 12; 13; 18; 20; 25; 26; 27; 28,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Chaerephon pumila,Mops pumilus,Molossidae,10.3,234.6,44.3,12.2,36.3,41.8,Sedentary,18,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Eumops perotis,Eumops perotis,Molossidae,47.5,774.1,,,,,Sedentary,18; 22,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Molossus ater,Molossus ater,Molossidae,33.6,507.7,113.8,24.4,66,93.8,Sedentary,18,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011
+Mops condylurus,Mops condylurus,Molossidae,27.2,441.1,102,22.9,58.6,74.4,Migratory,19,Baron_etal_1996,secondary,McGuire_Ratcliffe_2011

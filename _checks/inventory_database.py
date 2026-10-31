@@ -1,6 +1,7 @@
 """Read-only registry and filesystem inventory; writes its own report files."""
 from collections import Counter
 import csv
+from datetime import date
 import json
 from pathlib import Path
 import subprocess
@@ -10,6 +11,7 @@ import unicodedata
 import openpyxl
 
 root = Path(__file__).resolve().parents[1]
+as_of = date.today().isoformat()
 registry_path = root / "__ReadMe.xlsx"
 rows = list(openpyxl.load_workbook(registry_path, read_only=True, data_only=True)["Sheet1"].values)
 headers = rows[0]
@@ -60,7 +62,7 @@ listed_public = {f'{r["encoded"]}.tsv' for r in records if r["encoded"]}
 citation_only = sum(bool(get(r, "Citation (APA 7th-Annotated)")) and not get(r, "Item name")
                     for r in rows[1:])
 summary = {
-    "as_of": "2026-10-29", "registry_rows": len(records), "unique_item_names": len(item_counts),
+    "as_of": as_of, "registry_rows": len(records), "unique_item_names": len(item_counts),
     "citation_only_rows": citation_only, "public_tsv_files": len(public_names),
     "registered_with_public_tsv": sum(r["public_tsv"] for r in records),
     "registered_without_public_tsv": sum(not r["public_tsv"] for r in records),
@@ -103,8 +105,8 @@ report["compiled_outputs"] = merged
 summary["merge_domains"] = len({r["domain"] for r in merged})
 summary["compiled_output_csvs"] = len(merged)
 out = root / "_checks"
-(out / "database_inventory_2026-10-29.json").write_text(json.dumps(report, indent=2, ensure_ascii=False, default=str) + "\n")
-lines = ["# Evo-M1 database inventory", "", "Registry and filesystem snapshot: 2026-10-29. File presence is checked on disk; progress labels are copied from the live registry.", "",
+(out / f"database_inventory_{as_of}.json").write_text(json.dumps(report, indent=2, ensure_ascii=False, default=str) + "\n")
+lines = ["# Evo-M1 database inventory", "", f"Registry and filesystem snapshot: {as_of}. File presence is checked on disk; progress labels are copied from the live registry.", "",
          "## Counts", "", "| Measure | Count |", "|---|---:|"]
 for key in ("registry_rows", "unique_item_names", "citation_only_rows", "public_tsv_files",
             "registered_with_public_tsv", "registered_without_public_tsv", "new_since_head",
@@ -123,8 +125,8 @@ for r in recent:
     if len(progress) > 90:
         progress = progress[:87] + "..."
     lines.append(f'| {r["item"]} | {yn("public_tsv")} | {yn("analysis_csv")} | {yn("build_script")} | {yn("snapshot")} | {yn("definitions")} | {progress} |')
-lines += ["", "Eight of these items were built or completed in this pass: Dlugosz Table S1; Franco Table 1 and Text; Garcia–Ravignani sp1; Heffner ResultsText and Figure 6; Martin Supporting Information S1 and Mammalian Vocalisation Data.",
-          "The other 11 recent items already had public TSVs. All 19 now have a public TSV, analysis CSV, R script, frozen source, definitions, and README on disk.", ""]
+complete_recent = sum(all(r[k] for k in ("public_tsv", "analysis_csv", "build_script", "snapshot", "definitions", "readme")) for r in recent)
+lines += ["", f"{complete_recent} of {len(recent)} items added since the latest commit have a public TSV, analysis CSV, R script, frozen source, definitions, and README on disk. File presence alone does not certify human visual review.", ""]
 lines += ["", "## Registry health", "",
           f'- Repeated item names: {len(summary["duplicate_item_names"])}; these include the registry’s intentional `#n` multi-row convention and need row-level review before any deduplication.',
           f'- Repeated encoded names: {len(summary["duplicate_encoded_names"])}.',
@@ -167,5 +169,5 @@ if summary["unlisted_public_tsv_files"]:
     lines += ["### Unlisted public TSV files", ""]
     lines.extend(f'- `{n}`' for n in summary["unlisted_public_tsv_files"])
     lines.append("")
-(out / "database_inventory_2026-10-29.md").write_text("\n".join(lines), encoding="utf-8")
+(out / f"database_inventory_{as_of}.md").write_text("\n".join(lines), encoding="utf-8")
 print(json.dumps({k: v for k, v in summary.items() if not isinstance(v, (list, dict))}, indent=2))

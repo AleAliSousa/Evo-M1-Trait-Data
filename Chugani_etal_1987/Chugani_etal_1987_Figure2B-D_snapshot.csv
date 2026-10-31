@@ -1,0 +1,233 @@
+# Chugani_etal_1987 FIG 2 constructed snapshot -- pixel digitisation of the embedded page bitmaps (2400 x 3449 px, 8-bit grey), panel(s) B, C, D.
+# Each series carries 29 individual patients (Table 1) + 1 adult mean = 30 plotted points; 270 points are plotted in total and 226 were individually resolved.
+# Unresolved points are ABSENT (never interpolated): they lie in the birth-to-1-year cluster and the 6.7-7.5 y cluster, where glyphs overprint.
+# panel B calibration: y-axis col 632 = age 0; x-axis row 2065 = 0 umol/min/100 g; y-axis top row 1266 = 72; 67.131 px/year (fit on 19 1-year ticks); points resolved 103 of 120.
+# panel C calibration: y-axis col 637 = age 0; x-axis row 2987 = 0 umol/min/100 g; y-axis top row 2191 = 72; 66.863 px/year (fit on 15 1-year ticks); points resolved 80 of 90.
+# panel D calibration: y-axis col 633 = age 0; x-axis row 1154 = 0 umol/min/100 g; y-axis top row 356 = 72; 67.123 px/year (fit on 19 1-year ticks); points resolved 43 of 60.
+panel,series_as_printed,plot_symbol,subject_slot,age_as_printed_Table1,px_x,px_y,age_years_from_abscissa,lCMRGlc_umol_min_100g,ncc
+B,Transverse temporal cortex,triangle,P03,8 weeks,639,1681,0.121,34.6,0.619
+B,Sensorimotor cortex,circle,P04,13.5 weeks,640,1788,0.136,24.96,0.601
+B,Anterior cingulate cortex,open_circle,P03,8 weeks,640,1814,0.136,22.62,0.371
+B,Transverse temporal cortex,triangle,P04,13.5 weeks,641,1778,0.151,25.86,0.624
+B,Sensorimotor cortex,circle,P02,5 weeks,642,1868,0.166,17.75,0.468
+B,Sensorimotor cortex,circle,P03,8 weeks,643,1833,0.18,20.91,0.576
+B,Calcarine cortex,square,P03,8 weeks,644,1842,0.195,20.1,0.499
+B,Anterior cingulate cortex,open_circle,P04,13.5 weeks,644,1855,0.195,18.92,0.455
+B,Sensorimotor cortex,circle,P05,4 months,645,1822,0.21,21.9,0.471
+B,Transverse temporal cortex,triangle,P05,4 months,646,1816,0.225,22.44,0.641
+B,Anterior cingulate cortex,open_circle,P05,4 months,649,1878,0.27,16.85,0.478
+B,Calcarine cortex,square,P05,4 months,649,1886,0.27,16.13,0.647
+B,Calcarine cortex,square,P04,13.5 weeks,655,1862,0.359,18.29,0.548
+B,Transverse temporal cortex,triangle,P06,6.25 months,657,1805,0.389,23.43,0.858
+B,Anterior cingulate cortex,open_circle,P06,6.25 months,658,1849,0.404,19.46,0.428
+B,Transverse temporal cortex,triangle,P07,7.6 months,666,1679,0.523,34.78,0.913
+B,Calcarine cortex,square,P06,6.25 months,666,1697,0.523,33.16,0.745
+B,Sensorimotor cortex,circle,P07,7.6 months,666,1709,0.523,32.08,0.71
+B,Anterior cingulate cortex,open_circle,P07,7.6 months,666,1738,0.523,29.47,0.668
+B,Calcarine cortex,square,P07,7.6 months,677,1810,0.687,22.98,0.762
+B,Anterior cingulate cortex,open_circle,P08,1 year,698,1756,1.0,27.84,0.674
+B,Sensorimotor cortex,circle,P08,1 year,698,1785,1.0,25.23,0.889
+B,Calcarine cortex,square,P08,1 year,699,1719,1.015,31.18,0.9
+B,Transverse temporal cortex,triangle,P08,1 year,699,1735,1.015,29.74,0.854
+B,Transverse temporal cortex,triangle,P10,1.5 years,728,1553,1.447,46.14,0.865
+B,Calcarine cortex,square,P10,1.5 years,728,1596,1.447,42.26,0.908
+B,Sensorimotor cortex,circle,P10,1.5 years,728,1621,1.447,40.01,0.902
+B,Anterior cingulate cortex,open_circle,P10,1.5 years,728,1640,1.447,38.3,0.655
+B,Transverse temporal cortex,triangle,P09,1.5 years,734,1777,1.536,25.95,0.748
+B,Sensorimotor cortex,circle,P11,1.6 years,734,1786,1.536,25.14,0.74
+B,Sensorimotor cortex,circle,P09,1.5 years,734,1808,1.536,23.16,0.491
+B,Anterior cingulate cortex,open_circle,P09,1.5 years,734,1814,1.536,22.62,0.571
+B,Calcarine cortex,square,P11,1.6 years,742,1721,1.655,31.0,0.753
+B,Anterior cingulate cortex,open_circle,P11,1.6 years,742,1737,1.655,29.56,0.596
+B,Transverse temporal cortex,triangle,P11,1.6 years,743,1682,1.67,34.51,0.929
+B,Calcarine cortex,square,P12,3.5 years,857,1341,3.368,65.24,0.78
+B,Transverse temporal cortex,triangle,P12,3.5 years,858,1389,3.383,60.92,0.779
+B,Anterior cingulate cortex,open_circle,P12,3.5 years,858,1462,3.383,54.34,0.553
+B,Sensorimotor cortex,circle,P13,3.7 years,871,1393,3.577,60.56,0.729
+B,Calcarine cortex,square,P13,3.7 years,872,1348,3.592,64.61,0.61
+B,Sensorimotor cortex,circle,P12,3.5 years,872,1354,3.592,64.07,0.569
+B,Anterior cingulate cortex,open_circle,P13,3.7 years,872,1405,3.592,59.47,0.584
+B,Transverse temporal cortex,triangle,P14,5.7 years,1011,1412,5.662,58.84,0.802
+B,Anterior cingulate cortex,open_circle,P14,5.7 years,1011,1423,5.662,57.85,0.594
+B,Sensorimotor cortex,circle,P14,5.7 years,1011,1431,5.662,57.13,0.643
+B,Calcarine cortex,square,P14,5.7 years,1014,1354,5.707,64.07,0.918
+B,Calcarine cortex,square,P15,6.7 years,1071,1279,6.556,70.83,0.942
+B,Transverse temporal cortex,triangle,P15,6.7 years,1071,1329,6.556,66.32,0.897
+B,Sensorimotor cortex,circle,P15,6.7 years,1071,1406,6.556,59.38,0.902
+B,Transverse temporal cortex,triangle,P16,6.8 years,1081,1497,6.705,51.18,0.673
+B,Calcarine cortex,square,P16,6.8 years,1082,1486,6.72,52.18,0.807
+B,Anterior cingulate cortex,open_circle,P16,6.8 years,1083,1559,6.735,45.6,0.723
+B,Calcarine cortex,square,P18,7.1 years,1098,1300,6.958,68.94,0.923
+B,Transverse temporal cortex,triangle,P17,7 years,1098,1407,6.958,59.29,0.35
+B,Transverse temporal cortex,triangle,P18,7.1 years,1099,1428,6.973,57.4,0.929
+B,Sensorimotor cortex,circle,P18,7.1 years,1101,1455,7.003,54.97,0.747
+B,Anterior cingulate cortex,open_circle,P18,7.1 years,1104,1407,7.048,59.29,0.673
+B,Calcarine cortex,square,P17,7 years,1105,1337,7.062,65.6,0.731
+B,Sensorimotor cortex,circle,P17,7 years,1105,1344,7.062,64.97,0.641
+B,Sensorimotor cortex,circle,P19,7.2 years,1110,1485,7.137,52.27,0.692
+B,Anterior cingulate cortex,open_circle,P19,7.2 years,1111,1550,7.152,46.41,0.486
+B,Transverse temporal cortex,triangle,P19,7.2 years,1112,1510,7.167,50.01,0.933
+B,Calcarine cortex,square,P19,7.2 years,1124,1486,7.346,52.18,0.749
+B,Anterior cingulate cortex,open_circle,P20,7.5 years,1125,1539,7.36,47.4,0.665
+B,Transverse temporal cortex,triangle,P20,7.5 years,1125,1546,7.36,46.77,0.558
+B,Sensorimotor cortex,circle,P20,7.5 years,1125,1565,7.36,45.06,0.77
+B,Calcarine cortex,square,P22,8.5 years,1192,1357,8.358,63.8,0.665
+B,Transverse temporal cortex,triangle,P21,8.4 years,1192,1371,8.358,62.54,0.593
+B,Sensorimotor cortex,circle,P21,8.4 years,1192,1428,8.358,57.4,0.793
+B,Anterior cingulate cortex,open_circle,P22,8.5 years,1193,1381,8.373,61.64,0.622
+B,Anterior cingulate cortex,open_circle,P21,8.4 years,1199,1533,8.463,47.94,0.593
+B,Calcarine cortex,square,P21,8.4 years,1199,1540,8.463,47.31,0.661
+B,Sensorimotor cortex,circle,P22,8.5 years,1199,1583,8.463,43.43,0.883
+B,Transverse temporal cortex,triangle,P23,8.6 years,1200,1559,8.478,45.6,0.885
+B,Anterior cingulate cortex,open_circle,P23,8.6 years,1204,1442,8.537,56.14,0.735
+B,Sensorimotor cortex,circle,P23,8.6 years,1204,1459,8.537,54.61,0.923
+B,Calcarine cortex,square,P23,8.6 years,1205,1356,8.552,63.89,0.69
+B,Transverse temporal cortex,triangle,P22,8.5 years,1206,1422,8.567,57.94,0.811
+B,Transverse temporal cortex,triangle,P24,9.3 years,1249,1491,9.208,51.72,0.646
+B,Calcarine cortex,square,P24,9.3 years,1249,1505,9.208,50.46,0.466
+B,Anterior cingulate cortex,open_circle,P24,9.3 years,1249,1536,9.208,47.67,0.733
+B,Sensorimotor cortex,circle,P24,9.3 years,1249,1551,9.208,46.32,0.793
+B,Calcarine cortex,square,P25,9.5 years,1264,1500,9.431,50.91,0.504
+B,Transverse temporal cortex,triangle,P25,9.5 years,1265,1507,9.446,50.28,0.366
+B,Anterior cingulate cortex,open_circle,P25,9.5 years,1266,1518,9.461,49.29,0.7
+B,Sensorimotor cortex,circle,P25,9.5 years,1266,1544,9.461,46.95,0.837
+B,Calcarine cortex,square,P26,9.8 years,1282,1502,9.699,50.73,0.891
+B,Transverse temporal cortex,triangle,P26,9.8 years,1282,1556,9.699,45.87,0.933
+B,Anterior cingulate cortex,open_circle,P26,9.8 years,1282,1585,9.699,43.25,0.673
+B,Sensorimotor cortex,circle,P26,9.8 years,1282,1606,9.699,41.36,0.893
+B,Calcarine cortex,square,P27,12 years,1432,1510,11.934,50.01,0.918
+B,Anterior cingulate cortex,open_circle,P27,12 years,1433,1563,11.948,45.24,0.64
+B,Transverse temporal cortex,triangle,P27,12 years,1433,1578,11.948,43.88,0.842
+B,Sensorimotor cortex,circle,P27,12 years,1433,1623,11.948,39.83,0.938
+B,Calcarine cortex,square,P28,13.5 years,1533,1492,13.438,51.63,0.892
+B,Transverse temporal cortex,triangle,P28,13.5 years,1533,1536,13.438,47.67,0.921
+B,Anterior cingulate cortex,open_circle,P28,13.5 years,1533,1576,13.438,44.07,0.813
+B,Sensorimotor cortex,circle,P28,13.5 years,1533,1643,13.438,38.03,0.902
+B,Sensorimotor cortex,circle,P29,15.1 years,1636,1620,14.972,40.1,0.913
+B,Calcarine cortex,square,Adult,adult group,1785,1725,17.192,30.64,0.908
+B,Sensorimotor cortex,circle,Adult,adult group,1796,1802,17.356,23.7,0.923
+B,Anterior cingulate cortex,open_circle,Adult,adult group,1809,1735,17.549,29.74,0.593
+B,Transverse temporal cortex,triangle,Adult,adult group,1821,1731,17.728,30.1,0.83
+C,Thalamus,triangle,P01,5 days,645,2808,0.092,16.19,0.337
+C,Thalamus,triangle,P03,8 weeks,646,2526,0.107,41.7,0.742
+C,Thalamus,triangle,P02,5 weeks,647,2589,0.122,36.0,0.704
+C,Lenticular nuclei,circle,P04,13.5 weeks,647,2596,0.122,35.37,0.698
+C,Lenticular nuclei,circle,P01,5 days,648,2775,0.137,19.18,0.345
+C,Lenticular nuclei,circle,P02,5 weeks,649,2757,0.152,20.8,0.428
+C,Thalamus,triangle,P04,13.5 weeks,650,2701,0.167,25.87,0.913
+C,Lenticular nuclei,circle,P03,8 weeks,650,2735,0.167,22.79,0.539
+C,Caudate (head),square,P03,8 weeks,654,2752,0.227,21.26,0.348
+C,Caudate (head),square,P04,13.5 weeks,654,2776,0.227,19.09,0.455
+C,Thalamus,triangle,P05,4 months,660,2760,0.317,20.53,0.425
+C,Caudate (head),square,P05,4 months,660,2785,0.317,18.27,0.695
+C,Lenticular nuclei,circle,P05,4 months,661,2733,0.332,22.97,0.635
+C,Thalamus,triangle,P06,6.25 months,671,2607,0.481,34.37,0.909
+C,Caudate (head),square,P06,6.25 months,674,2656,0.526,29.94,0.919
+C,Lenticular nuclei,circle,P07,7.6 months,675,2574,0.541,37.36,0.919
+C,Caudate (head),square,P07,7.6 months,682,2753,0.646,21.17,0.964
+C,Lenticular nuclei,circle,P06,6.25 months,683,2712,0.661,24.87,0.894
+C,Thalamus,triangle,P07,7.6 months,683,2732,0.661,23.07,0.949
+C,Caudate (head),square,P08,1 year,704,2687,0.975,27.14,0.932
+C,Lenticular nuclei,circle,P08,1 year,705,2644,0.99,31.03,0.759
+C,Thalamus,triangle,P08,1 year,705,2651,0.99,30.39,0.63
+C,Lenticular nuclei,circle,P10,1.5 years,733,2540,1.408,40.43,0.915
+C,Thalamus,triangle,P09,1.5 years,735,2581,1.438,36.72,0.622
+C,Caudate (head),square,P09,1.5 years,735,2590,1.438,35.91,0.58
+C,Thalamus,triangle,P11,1.6 years,741,2727,1.528,23.52,0.905
+C,Lenticular nuclei,circle,P11,1.6 years,741,2748,1.528,21.62,0.917
+C,Caudate (head),square,P10,1.5 years,741,2777,1.528,18.99,0.918
+C,Lenticular nuclei,circle,P09,1.5 years,748,2587,1.633,36.18,0.666
+C,Caudate (head),square,P11,1.6 years,748,2627,1.633,32.56,0.973
+C,Thalamus,triangle,P10,1.5 years,749,2674,1.648,28.31,0.877
+C,Lenticular nuclei,circle,P12,3.5 years,864,2386,3.368,54.36,0.828
+C,Thalamus,triangle,P12,3.5 years,865,2409,3.383,52.28,0.787
+C,Caudate (head),square,P12,3.5 years,865,2427,3.383,50.65,0.931
+C,Lenticular nuclei,circle,P13,3.7 years,878,2371,3.577,55.72,0.907
+C,Caudate (head),square,P13,3.7 years,878,2401,3.577,53.01,0.806
+C,Thalamus,triangle,P13,3.7 years,878,2443,3.577,49.21,0.949
+C,Lenticular nuclei,circle,P14,5.7 years,1018,2320,5.671,60.33,0.902
+C,Caudate (head),square,P14,5.7 years,1018,2369,5.671,55.9,0.945
+C,Thalamus,triangle,P14,5.7 years,1019,2414,5.686,51.83,0.893
+C,Lenticular nuclei,circle,P16,6.8 years,1088,2497,6.718,44.32,0.949
+C,Caudate (head),square,P16,6.8 years,1089,2549,6.733,39.62,0.982
+C,Lenticular nuclei,circle,P18,7.1 years,1105,2316,6.972,60.69,0.936
+C,Caudate (head),square,P18,7.1 years,1105,2365,6.972,56.26,0.906
+C,Thalamus,triangle,P17,7 years,1105,2404,6.972,52.73,0.555
+C,Lenticular nuclei,circle,P19,7.2 years,1112,2337,7.077,58.79,0.919
+C,Caudate (head),square,P17,7 years,1112,2401,7.077,53.01,0.527
+C,Caudate (head),square,P19,7.2 years,1119,2487,7.181,45.23,0.739
+C,Thalamus,triangle,P19,7.2 years,1119,2508,7.181,43.33,0.878
+C,Thalamus,triangle,P18,7.1 years,1120,2470,7.196,46.76,0.692
+C,Lenticular nuclei,circle,P20,7.5 years,1135,2446,7.421,48.93,0.926
+C,Thalamus,triangle,P20,7.5 years,1136,2494,7.436,44.59,0.909
+C,Caudate (head),square,P20,7.5 years,1136,2518,7.436,42.42,0.865
+C,Lenticular nuclei,circle,P21,8.4 years,1198,2384,8.363,54.54,0.628
+C,Thalamus,triangle,P22,8.5 years,1199,2363,8.378,56.44,0.913
+C,Caudate (head),square,P22,8.5 years,1199,2452,8.378,48.39,0.954
+C,Lenticular nuclei,circle,P23,8.6 years,1206,2520,8.483,42.24,0.926
+C,Thalamus,triangle,P23,8.6 years,1206,2548,8.483,39.71,0.748
+C,Caudate (head),square,P23,8.6 years,1206,2559,8.483,38.71,0.758
+C,Lenticular nuclei,circle,P22,8.5 years,1212,2347,8.572,57.89,0.91
+C,Lenticular nuclei,circle,P24,9.3 years,1255,2417,9.215,51.56,0.898
+C,Caudate (head),square,P24,9.3 years,1255,2496,9.215,44.41,0.613
+C,Thalamus,triangle,P24,9.3 years,1256,2469,9.23,46.85,0.941
+C,Lenticular nuclei,circle,P25,9.5 years,1272,2436,9.47,49.84,0.908
+C,Thalamus,triangle,P25,9.5 years,1272,2507,9.47,43.42,0.878
+C,Caudate (head),square,P25,9.5 years,1273,2485,9.485,45.41,0.936
+C,Lenticular nuclei,circle,P26,9.8 years,1289,2452,9.724,48.39,0.928
+C,Caudate (head),square,P26,9.8 years,1289,2507,9.724,43.42,0.928
+C,Lenticular nuclei,circle,P27,12 years,1439,2450,11.967,48.57,0.725
+C,Caudate (head),square,P27,12 years,1440,2464,11.982,47.31,0.803
+C,Thalamus,triangle,P27,12 years,1441,2492,11.997,44.77,0.913
+C,Lenticular nuclei,circle,P28,13.5 years,1539,2479,13.463,45.95,0.687
+C,Caudate (head),square,P28,13.5 years,1540,2494,13.478,44.59,0.737
+C,Thalamus,triangle,P28,13.5 years,1541,2510,13.493,43.15,0.87
+C,Lenticular nuclei,circle,P29,15.1 years,1644,2488,15.033,45.14,0.849
+C,Thalamus,triangle,P29,15.1 years,1645,2502,15.048,43.87,0.783
+C,Caudate (head),square,P29,15.1 years,1645,2526,15.048,41.7,0.905
+C,Caudate (head),square,Adult,adult group,1792,2631,17.247,32.2,0.919
+C,Lenticular nuclei,circle,Adult,adult group,1809,2615,17.501,33.65,0.909
+C,Thalamus,triangle,Adult,adult group,1826,2631,17.755,32.2,0.945
+D,Brainstem,circle,P03,8 weeks,641,902,0.126,22.74,0.726
+D,Brainstem,circle,P02,5 weeks,642,925,0.14,20.66,0.644
+D,Brainstem,circle,P04,13.5 weeks,644,941,0.17,19.22,0.789
+D,Cerebellar cortex,square,P05,4 months,645,963,0.185,17.23,0.754
+D,Brainstem,circle,P05,4 months,650,976,0.26,16.06,0.5
+D,Cerebellar cortex,square,P03,8 weeks,650,988,0.26,14.98,0.464
+D,Cerebellar cortex,square,P04,13.5 weeks,656,1006,0.349,13.35,0.721
+D,Brainstem,circle,P07,7.6 months,669,879,0.543,24.81,0.9
+D,Cerebellar cortex,square,P07,7.6 months,670,932,0.558,20.03,0.928
+D,Brainstem,circle,P08,1 year,699,888,0.99,24.0,0.928
+D,Cerebellar cortex,square,P08,1 year,700,934,1.004,19.85,0.964
+D,Cerebellar cortex,square,P10,1.5 years,729,858,1.437,26.71,0.936
+D,Brainstem,circle,P10,1.5 years,729,882,1.437,24.54,0.943
+D,Brainstem,circle,P09,1.5 years,736,957,1.541,17.77,0.474
+D,Cerebellar cortex,square,P11,1.6 years,736,991,1.541,14.71,0.913
+D,Brainstem,circle,P11,1.6 years,744,947,1.66,18.68,0.647
+D,Cerebellar cortex,square,P12,3.5 years,862,785,3.418,33.29,0.95
+D,Cerebellar cortex,square,P13,3.7 years,874,859,3.597,26.62,0.908
+D,Cerebellar cortex,square,P14,5.7 years,1015,740,5.697,37.35,0.977
+D,Brainstem,circle,P14,5.7 years,1016,807,5.712,31.31,0.94
+D,Cerebellar cortex,square,P15,6.7 years,1076,761,6.606,35.46,0.968
+D,Cerebellar cortex,square,P16,6.8 years,1087,892,6.77,23.64,0.937
+D,Brainstem,circle,P18,7.1 years,1102,726,6.993,38.62,0.483
+D,Cerebellar cortex,square,P17,7 years,1103,716,7.008,39.52,0.646
+D,Cerebellar cortex,square,P18,7.1 years,1111,728,7.128,38.44,0.651
+D,Cerebellar cortex,square,P19,7.2 years,1117,818,7.217,30.32,0.768
+D,Brainstem,circle,P19,7.2 years,1117,826,7.217,29.59,0.675
+D,Brainstem,circle,P20,7.5 years,1129,915,7.396,21.56,0.919
+D,Cerebellar cortex,square,P20,7.5 years,1130,885,7.411,24.27,0.968
+D,Brainstem,circle,P22,8.5 years,1196,784,8.394,33.38,0.91
+D,Cerebellar cortex,square,P22,8.5 years,1198,823,8.424,29.86,0.899
+D,Cerebellar cortex,square,P23,8.6 years,1204,757,8.513,35.82,0.732
+D,Brainstem,circle,P23,8.6 years,1211,767,8.617,34.92,0.624
+D,Cerebellar cortex,square,P24,9.3 years,1254,829,9.258,29.32,0.784
+D,Brainstem,circle,P25,9.5 years,1270,858,9.496,26.71,0.917
+D,Cerebellar cortex,square,P25,9.5 years,1271,827,9.511,29.5,0.785
+D,Cerebellar cortex,square,P26,9.8 years,1287,868,9.75,25.8,0.923
+D,Brainstem,circle,P27,12 years,1439,758,12.014,35.73,0.88
+D,Cerebellar cortex,square,P27,12 years,1439,861,12.014,26.44,0.912
+D,Cerebellar cortex,square,P28,13.5 years,1539,864,13.504,26.17,0.913
+D,Brainstem,circle,P28,13.5 years,1540,829,13.519,29.32,0.872
+D,Cerebellar cortex,square,Adult,adult group,1803,948,17.437,18.59,0.908
+D,Brainstem,circle,Adult,adult group,1815,921,17.616,21.02,0.931

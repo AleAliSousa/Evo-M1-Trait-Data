@@ -14,3 +14,15 @@ Held records: the excluded-sheet row11 for Macropus giganteus has SG (solitary +
 Next: acquire the full Dryad workbook to reconcile the eight-record count difference and recover exact population locations and full citations, then reconcile all rows by references and location. Do not append the full table to this subset as independent data. Rebuild with `_checks/social_variables/build_population_censuses.py`.
 
 Source integrity: local Office copies acquired added custom metadata without changes to worksheet/document content. Authoritative original bytes are preserved inside ZIP archives; the rebuild reads the archived workbook. source_manifest.csv hashes the archives and other non-Office evidence, not mutable display copies.
+
+## Snapshot provenance — repaired 2026-10-31
+
+`Qiu_etal_2022_Populations_snapshot.xlsx` is now **byte-identical to the author's S5 workbook**
+(23,014 bytes), extracted straight from `source/Model_S5_author_archive.zip` by
+`build_population_censuses.py`. The previous file was an Office display copy carrying local
+metadata (30,241 bytes).
+
+`Qiu_etal_2022_S5_snapshot.csv` has been renamed to `Qiu_etal_2022_S5_sheet_rows.csv`: a readable
+twin of the frozen workbook carrying the sheet name and workbook row number on every record, not a
+second snapshot. `Qiu_etal_2022_Populations.csv` and `_SocialStates.csv` are unchanged (141 records,
+65 printed species).

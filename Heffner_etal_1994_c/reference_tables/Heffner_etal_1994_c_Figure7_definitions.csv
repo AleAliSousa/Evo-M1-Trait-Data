@@ -1,0 +1,18 @@
+variable,definition,units,notes
+species_code_as_published,"The one- or two-letter code printed in the figure, which IS the plotted symbol",text,Three codes are printed in parentheses in the figure (the subterranean species); see code_printed_in_parentheses.
+code_printed_in_parentheses,Whether the figure prints the code inside parentheses,yes/no,
+common_name_in_legend,"Common name the Fig. 7 legend gives for that code, verbatim",text,"From reference_tables/Heffner_etal_1994_c_Figure7_legend_codes.csv; 'Rd, domestic Nmway rat' is the legend's own typo for Norway."
+interaural_distance_us,"Digitised abscissa value, piecewise-log calibration between adjacent printed ticks",microseconds,
+localization_threshold_deg,"Digitised ordinate value, piecewise-log calibration",degrees,
+interaural_distance_us_globalfit,Same position under a single log fit to the five printed abscissa ticks,microseconds,
+localization_threshold_deg_globalfit,Same under a single log fit to the six printed ordinate ticks,degrees,
+calibration_spread_pct_x,100 * (globalfit / piecewise - 1) on the abscissa,percent,Reaches ~11% on this scan.
+calibration_spread_pct_y,Same on the ordinate,percent,Within ~2%.
+position_basis,Whether the position came from a printed dot or from the ink centroid of the printed code,text,"Code-anchored rows are approximate positions, not measurements: see value_precision and the README."
+shares_marker_with,"The other species on the same printed dot, where a dot serves two species",text,"Gr/K, C/Op, Mk/P and SI/D each share one dot; those two species are therefore given the same coordinates -- INFERRED, not independently resolved."
+source_ref_key,"Join key into reference_tables/Heffner_etal_1994_c_Figure7_references.csv; empty where neither the legend nor Table 1 gives a source (codes D, H, M, Mk, W)",text,"ERRATA Heffner_etal_1994_c-E002 (proposed, publication_ambiguity): printed Heffner and Heffner, 1988a, repo had Heffner and Heffner, 1988a | "
+value_origin,Whether the value was printed in the source or read off a plotted figure,text,"always 'digitised_from_figure' in this item. Digitisation: the left panel of Fig. 7 was pixel-digitised from a 200-ppi bilevel page scan by Heffner_etal_1994_c_Figure7_extract.py. In this figure the two-letter species CODES are the plotted symbols and a round dot appears only where a code was displaced. Estimated error: the abscissa ticks are not evenly log-spaced on this scan, so x carries a calibration spread of -10.9% to +10.5% (y: -1.9% to +1.5%); on top of that, a code-anchored position may be displaced from its datum by up to about one character -- checked against this paper's own Table 1, the six dot-anchored species agree to within 2.7% while the five code-anchored species scatter by -40.9% to +11.6%. The panel contains 29 plotted species; 13 sit on 8 printed dots (five dots are shared by two species each, so those positions are INFERRED from a shared marker) and the remaining 16 are located only by their printed code. The right panel plots residuals (a derived quantity) and was not digitised."
+value_precision,Per-row statement of the digitisation uncertainty,text,
+data_role,Whether the row is this paper's own new measurement (primary) or a value it reproduces from another study (secondary),text,
+Species,Accepted binomial resolved from the printed name via _keys/General/species_key.csv (source_publication = this paper's folder name),text,
+species_basis,"How the binomial was arrived at (verbatim / our_judgment / hypothesis / unspecified_in_source), from the species key",text,

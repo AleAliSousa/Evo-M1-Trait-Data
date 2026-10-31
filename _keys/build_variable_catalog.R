@@ -47,7 +47,10 @@ files <- list.files(root, pattern = "_[Dd]efinitions.*\\.csv$", recursive = TRUE
 ## and it carries its own `domain` column, which collided with anat's `domain` in the
 ## left_join below and broke the catalog transmute ("object 'domain' not found",
 ## sweep 2026-08-29). Excluded. (__Public likewise holds only copies.)
-files <- files[!str_detect(files, "__Archive|/_keys/|/_checks/|/\\.git/|/__ShinyApp/|/__Public/")]
+## A retired item lives on in its paper folder's own `archive/` subfolder (e.g.
+## Westergaard_Hyatt_1994/archive/, 2026-10-30). Its definitions file must not re-enter the
+## catalog — it was being indexed under the publication name "archive".
+files <- files[!str_detect(files, "__Archive|/[Aa]rchive/|/_keys/|/_checks/|/\\.git/|/__ShinyApp/|/__Public/")]
 
 read_def <- function(f) {
   d <- tryCatch(suppressWarnings(read_csv(f, col_types = cols(.default = col_character()),

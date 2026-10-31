@@ -1,0 +1,14 @@
+variable,definition,units,notes
+point_id,Row key: abbreviated species plus vertex number along the curve,text,
+species_as_published,Binomial as printed beside the curve's arrow,text,
+line_style_as_printed,The drawn line style and the interaural distance printed with the species label,text,"Curve identity is fixed by the three printed arrows: thick grey -> C. perspicillata, thin black -> A. jamaicensis, dotted -> P. hastatus."
+vertex_index,"Position of the vertex along the curve, left (low frequency) to right",integer,
+frequency_kHz,"Frequency of the polyline vertex, AS EXTRACTED",kHz,The paper does not print the tested frequencies; vertices are NOT snapped to a nominal test series.
+threshold_dB_SPL,Digitised threshold at that vertex,dB SPL,
+functional_interaural_distance_us,Value printed in parentheses after the species name in the figure,microseconds,"Printed, not digitised."
+source_ref_key,Join key into reference_tables/Heffner_etal_2003_Figure4_references.csv,text,
+value_origin,Whether the value was printed in the source or read off a plotted figure,text,"always 'digitised_from_figure' in this item. Digitisation: the three audiogram polylines of Fig. 4 were pixel-digitised from the embedded 617 x 945 px bitmap by Heffner_etal_2003_Figure4_extract.py (tick calibration; grey-level and connectivity curve separation; Douglas-Peucker vertex detection at 2.0-3.0 px). Estimated error +/- 0.2 dB for the thin black curve and +/- 0.45 dB for the thick grey and dotted curves (the rms of the fitted polyline against the traced pixels), and +/- 0.9% in frequency (log-fit residuals on the 14 printed ticks). The figure contains three curves and all three were resolved end to end; it does not mark the tested frequencies, so the 49 vertices are the digitiser's breakpoints, reported as extracted and NOT snapped to a nominal test series -- a vertex is not guaranteed to be a tested frequency, and a tested frequency on a straight run may have no vertex."
+value_precision,Per-row statement of the digitisation uncertainty,text,
+data_role,Whether the row is this paper's own new measurement (primary) or a value it reproduces from another study (secondary),text,
+Species,Accepted binomial resolved from the printed name via _keys/General/species_key.csv (source_publication = this paper's folder name),text,
+species_basis,"How the binomial was arrived at (verbatim / our_judgment / hypothesis / unspecified_in_source), from the species key",text,

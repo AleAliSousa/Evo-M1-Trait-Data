@@ -1,0 +1,19 @@
+# Huttenlocher__1979 Figure4 constructed snapshot -- pixel digitisation of the embedded page bitmap (1950 x 3000 px, 8-bit grey), PDF p. 6.
+# ordinate: ticks at rows [297.0, 376.5, 451.5, 529.5, 607.0, 684.0] -> [12, 10, 8, 6, 4, 2] neurons/mm3 x 10^4 (linear fit, max residual 0.039).
+# abscissa (BROKEN, piecewise linear): NB=352.0 px; 0.5=428.0 px; 1=502.0 px; 2=652.0 px; 5=766.0 px; 10=956.0 px; Adult=1068.0 px; Aged (74-90)=1144.0 px
+# 14 markers resolved: {'open_circle': np.int64(10), 'filled_circle': np.int64(4)}
+figure,series_as_printed,plot_symbol,px_x,px_y,age_column,age_years_from_abscissa,abscissa_segment,age_in_axis_break,value_in_figure_units,figure_units
+Figure4,"Neuronal density, Schade and Van Groenigen",filled_circle,356.5,382.5,years,0.027,segment NB-2,no,9.806,neurons/mm3 x 10^4
+Figure4,"Neuronal density, Schade and Van Groenigen",filled_circle,428.6,648.9,years,0.509,segment NB-2,no,2.911,neurons/mm3 x 10^4
+Figure4,"Neuronal density, Schade and Van Groenigen",filled_circle,653.6,688.7,years,2.01,segment NB-2,no,1.881,neurons/mm3 x 10^4
+Figure4,"Neuronal density, Schade and Van Groenigen",filled_circle,1077.7,718.5,Adult,,categorical,no,1.11,neurons/mm3 x 10^4
+Figure4,"Neuronal density, present study",open_circle,357.5,307.7,years,0.034,segment NB-2,no,11.742,neurons/mm3 x 10^4
+Figure4,"Neuronal density, present study",open_circle,363.7,542.5,years,0.076,segment NB-2,no,5.665,neurons/mm3 x 10^4
+Figure4,"Neuronal density, present study",open_circle,377.5,601.5,years,0.168,segment NB-2,no,4.138,neurons/mm3 x 10^4
+Figure4,"Neuronal density, present study",open_circle,427.5,675.9,years,0.502,segment NB-2,no,2.212,neurons/mm3 x 10^4
+Figure4,"Neuronal density, present study",open_circle,452.4,682.4,years,0.667,segment NB-2,no,2.044,neurons/mm3 x 10^4
+Figure4,"Neuronal density, present study",open_circle,495.1,694.5,years,0.953,segment NB-2,no,1.732,neurons/mm3 x 10^4
+Figure4,"Neuronal density, present study",open_circle,653.5,696.4,years,2.01,segment NB-2,no,1.683,neurons/mm3 x 10^4
+Figure4,"Neuronal density, present study",open_circle,842.4,708.4,years,7.01,segment 5-10,no,1.372,neurons/mm3 x 10^4
+Figure4,"Neuronal density, present study",open_circle,1067.5,718.6,Adult,,categorical,no,1.106,neurons/mm3 x 10^4
+Figure4,"Neuronal density, present study",open_circle,1144.0,718.2,Aged (74-90),,categorical,no,1.117,neurons/mm3 x 10^4

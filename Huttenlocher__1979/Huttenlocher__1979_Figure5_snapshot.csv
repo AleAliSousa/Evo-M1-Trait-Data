@@ -1,0 +1,15 @@
+# Huttenlocher__1979 Figure5 constructed snapshot -- pixel digitisation of the embedded page bitmap (1950 x 3000 px, 8-bit grey), PDF p. 9.
+# ordinate: ticks at rows [317.0, 393.5, 469.5, 545.5, 621.5] -> [10, 8, 6, 4, 2] synapses/neuron x 10^4 (linear fit, max residual 0.005).
+# abscissa (BROKEN, piecewise linear): NB=342.0 px; 0.5=418.0 px; 1=493.0 px; 2=646.0 px; 5=758.0 px; 10=947.0 px; Adult=1060.0 px; Aged (74-90)=1136.0 px
+# 10 markers resolved: {'open_triangle': np.int64(10)}
+figure,series_as_printed,plot_symbol,px_x,px_y,age_column,age_years_from_abscissa,abscissa_segment,age_in_axis_break,value_in_figure_units,figure_units
+Figure5,Mean synapses per neuron,open_triangle,342.4,669.3,years,0.004,segment NB-2,no,0.746,synapses/neuron x 10^4
+Figure5,Mean synapses per neuron,open_triangle,352.5,619.3,years,0.07,segment NB-2,no,2.06,synapses/neuron x 10^4
+Figure5,Mean synapses per neuron,open_triangle,366.0,589.1,years,0.16,segment NB-2,no,2.853,synapses/neuron x 10^4
+Figure5,Mean synapses per neuron,open_triangle,416.2,471.7,years,0.49,segment NB-2,no,5.94,synapses/neuron x 10^4
+Figure5,Mean synapses per neuron,open_triangle,439.5,433.8,years,0.643,segment NB-2,no,6.935,synapses/neuron x 10^4
+Figure5,Mean synapses per neuron,open_triangle,486.5,327.5,years,0.952,segment NB-2,no,9.73,synapses/neuron x 10^4
+Figure5,Mean synapses per neuron,open_triangle,643.6,344.5,years,1.986,segment NB-2,no,9.282,synapses/neuron x 10^4
+Figure5,Mean synapses per neuron,open_triangle,832.9,301.3,years,6.981,segment 5-10,no,10.417,synapses/neuron x 10^4
+Figure5,Mean synapses per neuron,open_triangle,1060.3,390.2,Adult,,categorical,no,8.081,synapses/neuron x 10^4
+Figure5,Mean synapses per neuron,open_triangle,1135.8,436.2,Aged (74-90),,categorical,no,6.873,synapses/neuron x 10^4

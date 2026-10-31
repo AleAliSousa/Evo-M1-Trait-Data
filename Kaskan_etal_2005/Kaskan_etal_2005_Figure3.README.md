@@ -72,3 +72,100 @@ The owner's intent is to eventually cross-reference every digitized point agains
 `unidentified_NN` placeholders — likely using each species' independently-known neocortex/V1
 literature values (from the studies cited in TableS1's reference-letter column) to match against
 this file's `log_total_neocortex` values. That matching has **not** been attempted here.
+
+
+---
+
+## Pipeline (added 2026-10-31: frozen snapshot and build script)
+
+Until now this item had an analysis CSV, a definitions file and this README
+but **no frozen source and no build script** - a violation of invariant 1
+(all cleaning must be reproducible from a frozen source). Both now exist,
+and nothing in `Kaskan_etal_2005_Figure3.csv` was changed to make them fit:
+the script reproduces the CSV that was already on disk **byte for byte**,
+and it says so, or warns, on every run.
+
+| file | role |
+|---|---|
+| `Kaskan_etal_2005_Figure3_snapshot.csv` | frozen capture: one row per resolved marker, as captured |
+| `Kaskan_etal_2005_Figure3.R` | develops the capture into the analysis CSV + public TSV |
+| `Kaskan_etal_2005_Figure3.csv` | analysis rows (46), unchanged |
+| `reference_tables/Kaskan_etal_2005_Figure3_definitions.csv` | data dictionary, now carrying the precision caveats |
+| `__Public/comparative-data/10.1098%2Frspb.2004.2925_Figure3.tsv` | public copy |
+
+### What the frozen snapshot holds, and how honest it is
+The snapshot is the **capture layer**: for each of the 46 resolved markers,
+the panel, the panel's printed y-axis label (`log VI` / `log total visual
+cortex`), the marker shape as drawn (filled square / open circle / +), the
+legend entry that shape stands for as printed (`nocturnal species` /
+`diurnal species` / `Monotremata`), the arrow label printed beside the
+marker where there is one (`Galago s.`, `Aotus t.`, `Callithrix j.`,
+`Saimiri s.` - panel b only), how the point was identified, any annotation
+the capture recorded, and the captured x and y as captured.
+
+The build then does the cleaning that the CSV already reflects: panel ->
+`y_variable`, legend entry -> `group`, arrow label -> binomial through
+`_keys/General/species_key.csv` (four rows added for this item, expanding
+the abbreviations against the Electronic Appendix A roster), and sequential
+`unidentified_NN` numbering within each panel in capture order. The
+coordinates pass through **as captured strings**, so no numeric
+re-formatting can perturb them.
+
+**One caveat about the snapshot itself.** The original digitisation's
+working files (the pixel coordinates, the calibration, the grid overlays)
+were not retained, so this frozen file could not be rebuilt from them. It
+reconstructs the capture layer from the published CSV plus a fresh reading
+of the figure for the marker shapes, legend wording, arrow labels and
+identification basis. It is therefore a faithful record of *what was
+captured*, but it is not an independent re-digitisation, and it cannot
+corroborate the coordinates. A genuine re-digitisation remains the only way
+to do that.
+
+## Table checks
+
+A digitised scatter has no internal arithmetic. Two structural facts can
+still be checked, and both bear directly on how far the capture can be
+trusted, so the reader runs them into `table_checks`:
+
+1. **Markers resolved vs the totals the paper states** (20 nocturnal,
+   8 diurnal, 2 monotremes per panel).
+2. **Cross-panel x agreement.** Figure 3a and 3b share their x-axis, so a
+   species' `log_total_neocortex` must be the same in both panels, within
+   the stated +-0.1 log-unit digitisation uncertainty.
+
+Result of the recorded run (`Rscript --vanilla`, 2026-10-31):
+**6 pass, 3 undercount, 1 mismatch.**
+
+- Panel a: nocturnal 13/20 (undercount), diurnal 8/8 (pass),
+  monotremata 2/2 (pass).
+- Panel b: nocturnal 15/20 (undercount), diurnal **6/8 (undercount)**,
+  monotremata 2/2 (pass).
+- Cross-panel x: *Galago senegalensis* (0.05), *Aotus trivirgatus* (0.05)
+  and *Callithrix jacchus* (0.10) pass; ***Saimiri sciureus* fails at 0.20
+  log units** (panel a 3.35, panel b 3.15), twice the tolerance.
+
+Two of these results correct statements made earlier in this README.
+
+- The note above that "Diurnal (8/8) and monotremata (2/2) counts matched
+  the paper's stated totals exactly in both panels, which is the main basis
+  for confidence in the method" **is not borne out by the file**: panel b
+  carries only 6 diurnal points, not 8. The monotremata claim holds, and
+  the diurnal claim holds for panel a only. Since that count was "the main
+  basis for confidence in the method", the confidence it supported should
+  be reduced accordingly.
+- The `(uncertain match)` flag on *Saimiri sciureus* in panel a was
+  recorded as a subjective judgement. The cross-panel check now makes it
+  quantitative and worse than "uncertain": at 0.20 log units apart the two
+  panels' points cannot both be the same species under the stated
+  precision. Treat the panel-a *Saimiri* identification as **unresolved**,
+  not merely uncertain.
+
+Neither finding was repaired in the data: the CSV is unchanged and both are
+reported here.
+
+## Data role
+`secondary (digitised)` on every row, excluded from every measurement
+merge. This item's value is as a roadmap: it shows which species the paper
+plotted and roughly where, so the primary per-species areas can be fetched
+from the sources compiled in `Kaskan_etal_2005_TableS1` rather than from
+these coordinates.

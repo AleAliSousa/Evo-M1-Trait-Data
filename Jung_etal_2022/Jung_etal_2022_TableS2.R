@@ -44,3 +44,20 @@ names(x) <- c(
 x[] <- lapply(x, function(z) if (is.character(z)) trimws(z) else z)
 write.csv(x, output_file, row.names = FALSE, na = "", fileEncoding = "UTF-8")
 message("Wrote: ", output_file)
+
+base <- local({
+  d <- folder
+  while (dirname(d) != d && !file.exists(file.path(d, "__ReadMe.xlsx"))) d <- dirname(d)
+  if (file.exists(file.path(d, "__ReadMe.xlsx"))) d else NA_character_
+})
+if (!is.na(base)) {
+  fc <- readxl::read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
+  item_encoded <- fc$`Item encoded`[match(item_name, fc$`Item name`)]
+  if (is.na(item_encoded) || !nzchar(item_encoded)) {
+    warning("Registry row pending for ", item_name, "; public TSV skipped.")
+  } else {
+    utils::write.table(x, file.path(base, "__Public", "comparative-data", paste0(item_encoded, ".tsv")),
+                       sep = "\t", row.names = FALSE, na = "")
+    message("Wrote: ", file.path(base, "__Public", "comparative-data", paste0(item_encoded, ".tsv")))
+  }
+} else warning("Repository root not found; public TSV skipped.")

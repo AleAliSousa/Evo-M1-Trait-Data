@@ -1,4 +1,4 @@
-# Stephan_etal_1988_Table1.R
+# Stephan_etal_1988_TABLE1.R
 #
 # Stephan, H., Baron, G., & Frahm, H. D. (1988). Comparative size of brains and brain
 # components. In H. D. Steklis & J. Erwin (Eds.), Comparative Primate Biology, Vol. 4:
@@ -17,8 +17,8 @@
 # row3 tier-2 ((g)|(mg)|(1)|(2)|(3)|(4)); data from row 4. Numbers are printed with thousands
 # commas (e.g. 1,330,000) -- parse_number() strips them.
 #
-# Input  : Stephan_etal_1988_Table1_snapshot.xlsx       sheet: Table1
-# Outputs: Stephan_etal_1988_Table1.csv                 one row per species (52)
+# Input  : Stephan_etal_1988_TABLE1_snapshot.xlsx       sheet: Table1
+# Outputs: Stephan_etal_1988_TABLE1.csv                 one row per species (52)
 #          <ISBN>_TABLE1.tsv in __Public/comparative-data/  (named from __ReadMe.xlsx)
 
 suppressPackageStartupMessages({
@@ -47,9 +47,9 @@ base      <- local({                                     # repo root; NA if run 
 })
 setwd(folder)
 
-snapshot_file  <- "Stephan_etal_1988_Table1_snapshot.xlsx"
+snapshot_file  <- "Stephan_etal_1988_TABLE1_snapshot.xlsx"
 snapshot_sheet <- "Table1"
-output_file    <- "Stephan_etal_1988_Table1.csv"
+output_file    <- "Stephan_etal_1988_TABLE1.csv"
 header_rows    <- 3L
 
 pos <- c("species_disp","BoW","BrW","EI","activity","diet","locomotion","refs")

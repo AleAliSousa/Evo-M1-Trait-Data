@@ -74,7 +74,13 @@ pan_defs <- tibble(printed = tds[hit], unit_cell = tds[hit + 1L]) %>%
   distinct(code, .keep_all = TRUE)
 cat("PanTHERIA variable definitions parsed from metadata.htm:", nrow(pan_defs), "\n")
 if (nrow(pan_defs) < 30L) stop("Fewer than 30 PanTHERIA definitions parsed from metadata.htm.")
-pan_cols <- names(read_csv(f_pan, col_types=cols(.default="c"), n_max=1, progress=FALSE))
+## The PanTHERIA item CSV was rebuilt long (one row per species x variable) on 2026-10-30, so the
+## published variable names live in variable_as_published, not in the header. Both layouts are
+## accepted: the wide header is used when that column is absent.
+pan_head <- read_csv(f_pan, col_types=cols(.default="c"), n_max=1, progress=FALSE)
+pan_cols <- if ("variable_as_published" %in% names(pan_head)) {
+  unique(read_csv(f_pan, col_types=cols(.default="c"), progress=FALSE)$variable_as_published)
+} else names(pan_head)
 pan_code_of <- function(v) sub("^([0-9]+-[0-9]+)_.*$", "\\1", v)
 
 ## Declared mapping. unit_scale multiplies an Amniote value to give PanTHERIA units.
@@ -174,7 +180,10 @@ mam <- vals %>% mutate(row_id = row_number()) %>% filter(class == "Mammalia") %>
   transmute(row_id, order, family, genus, species, subspecies, amniote_binomial = paste(genus, species),
             amniote_name = ifelse(subspecies == "-999", amniote_binomial, paste(genus, species, subspecies)))
 pan <- read_csv(f_pan, col_types=cols(.default="c"), progress=FALSE)
-pan_bin <- unique(pan$MSW05_Binomial)
+## Wide layout prints the binomial as MSW05_Binomial; the long rebuild carries the same printed
+## name as Species_Jones2009 (species_harmonised is the resolved anchor and is not used here).
+pan_bin <- unique(if (!is.null(pan$MSW05_Binomial)) pan$MSW05_Binomial else pan$Species_Jones2009)
+if (!length(pan_bin)) stop("No PanTHERIA binomial column found in ", f_pan, call.=FALSE)
 cat("\nAmniote Mammalia rows:", nrow(mam), "| with subspecies:", sum(mam$subspecies != "-999"), "| PanTHERIA WR05 binomials:", length(pan_bin), "\n")
 
 ## tier 2: Supplemental Table 4 (Original Name -> Transformed Name); reverse lookup

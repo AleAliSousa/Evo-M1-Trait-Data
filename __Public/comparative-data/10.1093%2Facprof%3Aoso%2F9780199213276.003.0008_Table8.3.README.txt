@@ -1,0 +1,13 @@
+# MorroghBernard_etal_2008_Table8.3
+
+Morrogh-Bernard, H. C., Husson, S. J., Knott, C. D., Wich, S. A., van Schaik, C. P., van Noordwijk, M. A., Lackman-Ancrenaz, I., Marshall, A. J., Kanamori, T., Kuze, N., & bin Sakong, R. (2008). Orangutan activity budgets and diet: A comparison between species, populations and habitats. In S. A. Wich et al. (Eds.), Orangutans: Geographic Variation in Behavioral Ecology and Conservation (pp. 119–134). Oxford University Press. https://doi.org/10.1093/acprof:oso/9780199213276.003.0008
+
+Source: /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/MorroghBernard_etal_2008/Morrogh-Bernard-2009-Orangutan activity budget.pdf. Locus: PDF p.8 / printed p.126. Source table snapshot: `MorroghBernard_etal_2008_Table8.3_snapshot.csv` and `MorroghBernard_etal_2008_Table8.3_snapshot_notes.txt`. Caption/footnotes, original table order, labels and empty cells are retained. Extraction and machine visual check: Codex, 2026-10-21; this is not an owner/RA check. Owner visual check remains pending for transcribed sources. 9 snapshot rows; grain: site × age-sex × activity.
+
+Preserve site, year, sex/age, taxonomic labels and study sources. Do not turn active-period length into measured sleep duration.
+
+Table 8.3. Activity budgets as percentage of a 12-hour period. F feeding; R resting; T traveling. UFM unflanged males; FM flanged males; SAF sexually active females (with dependent infants); NSAF non-sexually active females. Table formatting marks highest in bold and lowest underlined within site/activity; values preserved and ranks can be recovered. Tanjung Puting: Galdikas (1988), Mentoko: Mitani (1989), Ulu Segama: MacKinnon (1974). Box 8.1 adds the difference between active period and 12 hours to resting; resting is not equivalent to measured sleep.
+
+Reader: `MorroghBernard_etal_2008_Table8.3.R`. Numeric fields are derived explicitly; raw source cells remain available. Source_row links the analysis back to the snapshot. Published contextual information, if needed, is kept separately in reference_tables/MorroghBernard_etal_2008_Table8.3_context.csv and joined by Source_row. No taxa are inferred from genus-only examples. Source-specific records must not be pooled as independent observations with reused compilations.
+
+Build uses Item name and Item encoded from the registry. During owner registration use DATASET_REGISTRY=ManyPrimates__2022/ManyPrimates_all_items_build_registry.xlsx. Routine registry insertion remains the owner's step. Public TSV is written only under __Public/comparative-data.

@@ -34,4 +34,4 @@ three verbatim Methods sentences and their locator (Materials and methods, first
 printed p. 204). The script asserts each passage appears verbatim in the PDF and fails if it does
 not, so the snapshot cannot drift from the source.
 
-`Devillard_etal_2003_ColonySize.csv` is unchanged and remains the analysis layer.
+`Devillard_etal_2003_ColonySize.csv` is unchanged and remains the analysis layer — built since 2026-10-31 by `Devillard_etal_2003_ColonySize.R`, which reads the constructed snapshot, parses the printed `70 feral cats` and stops if that wording changes. `build_colony_size.py` writes the snapshot only. The item is unregistered, so the script writes the CSV and reports that the public TSV is skipped until a registry row exists.

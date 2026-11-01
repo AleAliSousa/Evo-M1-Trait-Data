@@ -1,267 +1,300 @@
 "script","status","error","start_time","end_time","elapsed_seconds"
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Bowmaker_etal_1991/Bowmaker_etal_1991_Table1.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:30:24.02417","2026-10-23 12:30:24.755819",0.731649160385132
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Bowmaker_etal_1991/Bowmaker_etal_1991_Table2.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:30:24.760851","2026-10-23 12:30:25.495774",0.734923124313354
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Campbell_Tobler_1984/Campbell_Tobler_1984_Table1.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:30:40.624089","2026-10-23 12:30:41.442225",0.818135976791382
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Deegan_Jacobs_2001/Deegan_Jacobs_2001_TextResults.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:31:10.289172","2026-10-23 12:31:11.054334",0.765161991119385
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Dunn_Smaers_2018/Dunn_Smaers_2018_TableS1.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:31:47.870466","2026-10-23 12:31:48.611471",0.741004943847656
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Elston_etal_2005_a/Elston_etal_2005_a_Table3.R","FAILED","Error: Existing public TSV requires owner reconciliation; this item reader never overwrites it
-Execution halted","2026-10-23 12:31:54.020563","2026-10-23 12:31:54.812926",0.792363166809082
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Elston_etal_2005_a/Elston_etal_2005_a_Table4.R","FAILED","Error: Public export refused: swapped source location still needs an owner resolution recorded in item context.
-Execution halted","2026-10-23 12:31:54.823249","2026-10-23 12:31:55.447198",0.623948812484741
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Elston_etal_2005_a/Elston_etal_2005_a_Table5.R","FAILED","Error: Public export refused: swapped source location still needs an owner resolution recorded in item context.
-Execution halted","2026-10-23 12:31:55.457095","2026-10-23 12:31:56.020847",0.563752174377441
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Elston_etal_2005_a/Elston_etal_2005_a_Table6.R","FAILED","Error: Public export refused: swapped source location still needs an owner resolution recorded in item context.
-Execution halted","2026-10-23 12:31:56.029086","2026-10-23 12:31:56.567838",0.538751840591431
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/GalánAcedo_etal_2019/GalánAcedo_etal_2019_BodyMass.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:32:22.409439","2026-10-23 12:32:23.164556",0.755116939544678
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/GalánAcedo_etal_2019/GalánAcedo_etal_2019_DielActivity.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:32:23.173171","2026-10-23 12:32:23.890925",0.717753887176514
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/GalánAcedo_etal_2019/GalánAcedo_etal_2019_Habitat.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:32:23.897027","2026-10-23 12:32:24.634592",0.737565040588379
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/GalánAcedo_etal_2019/GalánAcedo_etal_2019_HomeRange.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:32:24.647196","2026-10-23 12:32:25.411334",0.764137983322144
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/GalánAcedo_etal_2019/GalánAcedo_etal_2019_IUCN_Poptrend_Realm.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:32:25.42175","2026-10-23 12:32:26.109047",0.687296867370605
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/GalánAcedo_etal_2019/GalánAcedo_etal_2019_Locomotion.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:32:26.118586","2026-10-23 12:32:26.901489",0.782902956008911
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/GalánAcedo_etal_2019/GalánAcedo_etal_2019_TrophicGuild.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:32:26.915919","2026-10-23 12:32:27.751433",0.835513830184937
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Gamba_etal_2015/Gamba_etal_2015_TableI.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:32:27.761785","2026-10-23 12:32:28.542562",0.780776977539062
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Gamba_etal_2015/Gamba_etal_2015_TableSII.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:32:28.553316","2026-10-23 12:32:29.396652",0.843335866928101
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Gamba_etal_2015/Gamba_etal_2015_TableSIII.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:32:29.413168","2026-10-23 12:32:30.170397",0.757229089736938
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Gamba_etal_2015/Gamba_etal_2015_TableSIV.R","FAILED","Warning message:
-Printed table totals disagree with interior cells; retained as printed. See table_checks. 
-Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:32:30.178722","2026-10-23 12:32:31.014105",0.835383176803589
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Gamba_etal_2015/Gamba_etal_2015_TableSV.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:32:31.022379","2026-10-23 12:32:31.801061",0.778681993484497
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Gamba_etal_2015/Gamba_etal_2015_TableSVI.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:32:31.805411","2026-10-23 12:32:32.559763",0.754351854324341
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Gamba_etal_2015/Gamba_etal_2015_TableSVII.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:32:32.570523","2026-10-23 12:32:33.306219",0.735696077346802
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Gamba_etal_2015/Gamba_etal_2015_TableSVIII.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:32:33.317652","2026-10-23 12:32:34.118876",0.801223993301392
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Grueter_etal_2013/Grueter_etal_2013_Table1.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:32:42.106724","2026-10-23 12:32:42.90342",0.796695947647095
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Grueter_etal_2013/Grueter_etal_2013_TableS1.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:32:42.910243","2026-10-23 12:32:43.755681",0.845438003540039
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hardus_etal_2009/Hardus_etal_2009_Table4.1.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:32:47.513184","2026-10-23 12:32:48.454992",0.941807985305786
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hardus_etal_2009/Hardus_etal_2009_Table4.2.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:32:48.465582","2026-10-23 12:32:49.260699",0.795117139816284
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hardus_etal_2009/Hardus_etal_2009_Table4.3.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:32:49.284247","2026-10-23 12:32:50.09053",0.806282997131348
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hardus_etal_2009/Hardus_etal_2009_Table4.4.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:32:50.100982","2026-10-23 12:32:50.850039",0.749057054519653
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heffner_Heffner_1992_c/Heffner_Heffner_1992_c_ResultsText.R","FAILED","Error: An existing public TSV requires owner conflict review; no overwrite performed.
-Execution halted","2026-10-23 12:36:15.742209","2026-10-23 12:36:16.48433",0.742120981216431
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel__2015/HerculanoHouzel__2015_Table1.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_tools/file_list.R","FAILED","Error: Non-canonical Sheet1 naming formula(s): E282, F282, E283, F283, E284, F284, E285, F285, F672. Review explicitly; file_list.R will not overwrite them.
+Execution halted","2026-10-31 19:22:39.705103","2026-10-31 19:22:42.365993",2.66089010238647
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Mayer_etal_2019/Mayer_etal_2019_Fig6.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
+Calls: read.csv -> read.table -> file
+In addition: Warning message:
+In file(file, ""rt"") :
+  cannot open file 'Mayer_etal_2019_Fig6_pdf_transcription.csv': No such file or directory
+Execution halted","2026-10-31 19:37:14.008934","2026-10-31 19:37:14.334907",0.325973033905029
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/VanEssen_Drury_1997/VanEssen_Drury_1997_CitedV1Ranges.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
+Calls: read.csv -> read.table -> file
+In addition: Warning message:
+In file(file, ""rt"") :
+  cannot open file 'VanEssen_Drury_1997_CitedV1Ranges_pdf_transcription.csv': No such file or directory
+Execution halted","2026-10-31 19:40:57.696556","2026-10-31 19:40:57.966319",0.269762992858887
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Westergaard_Hyatt_1994/archive/Westergaard_Hyatt_1994_Figures1and2.R","FAILED","Error in file(filename, ""r"", encoding = encoding) : 
+  cannot open the connection
+Calls: source -> file
+In addition: Warning message:
+In file(filename, ""r"", encoding = encoding) :
+  cannot open file '/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Westergaard_Hyatt_1994/_helpers/build_source_table.R': No such file or directory
+Execution halted","2026-10-31 19:41:10.549453","2026-10-31 19:41:10.84147",0.292016983032227
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Young_etal_2013/Young_etal_2013_ResultsTextSurface.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
+Calls: read.csv -> read.table -> file
+In addition: Warning message:
+In file(file, ""rt"") :
+  cannot open file 'Young_etal_2013_ResultsTextSurface_pdf_transcription.csv': No such file or directory
+Execution halted","2026-10-31 19:41:19.385463","2026-10-31 19:41:19.649006",0.263542890548706
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__ShinyApp/build_data.R","FAILED","repo: /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data
+out:  /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__ShinyApp/data
+Error: data/ must not duplicate canonical repo files, but these do:
+  supplementary_long.csv  (canonical: __merging_supplementary/supplementary_long.csv)
+Delete them from data/ and let the app read the canonical copy.
+Execution halted","2026-10-31 19:41:54.460971","2026-10-31 19:41:54.799909",0.338937997817993
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_brain_mass/brain_mass_compiled.R","FAILED","Error: no measurement basis on record for 10.1002%2Fajp.20898_TABLEI.tsv / brain_mass_g (paper folder 'Graham__2011'). Add it to ASSIGN in _keys/build_brain_size_basis.py and re-run that builder.
+Execution halted","2026-10-31 19:42:23.403357","2026-10-31 19:42:28.412227",5.00886988639832
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/volumes_compiled_select_DeCasien.R","FAILED","Error: 31 source(s) and 1433 species-region cell(s) still need review. Audits were written; NO final long/wide/analysis table was produced. Missing regional Ns and independently unavailable measurements were not fabricated.
+Execution halted","2026-10-31 19:44:07.754779","2026-10-31 19:44:12.422001",4.66722178459167
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/volumes_compiled.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
 ✔ dplyr     1.2.1     ✔ readr     2.2.0
 ✔ forcats   1.0.1     ✔ stringr   1.6.0
 ✔ ggplot2   4.0.3     ✔ tibble    3.3.1
 ✔ lubridate 1.9.5     ✔ tidyr     1.3.2
 ✔ purrr     1.2.2     
 ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter()         masks stats::filter()
-✖ readr::guess_encoding() masks rvest::guess_encoding()
-✖ dplyr::lag()            masks stats::lag()
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
 ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
-Error in (html_table(html_elements(page, ""table""), fill = TRUE))[[1]] : 
-  subscript out of bounds
-Execution halted","2026-10-23 12:36:24.591411","2026-10-23 12:36:25.897304",1.30589294433594
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hiwatashi_etal_2011/Hiwatashi_etal_2011_TextResults.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:36:41.677676","2026-10-23 12:36:42.411615",0.733938932418823
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hohmann__1991/Hohmann__1991_Table10.R","FAILED","Warning message:
-Printed table arithmetic mismatch retained; inspect table_checks 
-Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:36:43.016127","2026-10-23 12:36:43.836003",0.819875955581665
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hohmann__1991/Hohmann__1991_Table11.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:36:43.844644","2026-10-23 12:36:44.637985",0.793340921401978
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hohmann__1991/Hohmann__1991_Table12.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:36:44.653694","2026-10-23 12:36:45.352916",0.699222087860107
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hohmann__1991/Hohmann__1991_Table3.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:36:45.357672","2026-10-23 12:36:46.225325",0.867653131484985
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hohmann__1991/Hohmann__1991_Table4.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:36:46.237156","2026-10-23 12:36:47.050471",0.813315153121948
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hohmann__1991/Hohmann__1991_Table5.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:36:47.071273","2026-10-23 12:36:47.785673",0.714399814605713
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hohmann__1991/Hohmann__1991_Table6.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:36:47.79273","2026-10-23 12:36:48.576205",0.783474922180176
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hohmann__1991/Hohmann__1991_Table7.R","FAILED","Warning message:
-Printed table arithmetic mismatch retained; inspect table_checks 
-Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:36:48.600997","2026-10-23 12:36:49.394272",0.793275117874146
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hohmann__1991/Hohmann__1991_Table8.R","FAILED","Warning message:
-Printed table arithmetic mismatch retained; inspect table_checks 
-Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:36:49.403264","2026-10-23 12:36:50.30253",0.899266004562378
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Hohmann__1991/Hohmann__1991_Table9.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:36:50.317263","2026-10-23 12:36:51.139856",0.822593212127686
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jacobs__2008/Jacobs__2008_Table1.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:37:08.880033","2026-10-23 12:37:09.542883",0.66284990310669
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jacobs__2008/Jacobs__2008_Table2.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:37:09.556418","2026-10-23 12:37:10.30942",0.753002166748047
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jacobs__2009/Jacobs__2009_Table1.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:37:10.32188","2026-10-23 12:37:11.027971",0.706090927124023
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jacobs_Deegan_1993/Jacobs_Deegan_1993_TextResults.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:37:11.032382","2026-10-23 12:37:11.802017",0.769634962081909
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jacobs_Deegan_2001/Jacobs_Deegan_2001_TextResults.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:37:11.80777","2026-10-23 12:37:12.783194",0.97542405128479
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jacobs_Deegan_2003/Jacobs_Deegan_2003_Table1.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:37:12.791009","2026-10-23 12:37:13.567642",0.776633024215698
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jacobs_etal_2002/Jacobs_etal_2002_Table1.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:37:16.6422","2026-10-23 12:37:17.441929",0.799729108810425
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jacobs_etal_2019/Jacobs_etal_2019_TableS1.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:37:22.054491","2026-10-23 12:37:22.823502",0.7690110206604
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jacobs_etal_2019/Jacobs_etal_2019_TableS2.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:37:22.83556","2026-10-23 12:37:23.655472",0.819911956787109
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jacobs_Neitz_1987/Jacobs_Neitz_1987_Table1.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:37:23.663825","2026-10-23 12:37:24.361861",0.698035955429077
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jones_etal_2009/Jones_etal_2009_reference_tables_definitions.R","FAILED","Error: Definitions rows for Jones_etal_2009_references_availability do not match its columns. Missing: ref_number, citation_short, check_context, check_date, check_method, endnote_status, endnote_id, endnote_title_overlap, pdf_attached, evom1_folder, online_status, availability, note; extra: 
-Execution halted","2026-10-23 12:37:29.050693","2026-10-23 12:37:29.812686",0.761992931365967
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kamilar_Cooper_2013/Kamilar_Cooper_2013_S2.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:37:50.288765","2026-10-23 12:37:51.054489",0.765723943710327
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/ManyPrimates__2022/build_manyprimates_items.R","FAILED","GalánAcedo_etal_2019_HomeRange: 748 rows; 26 columns
-GalánAcedo_etal_2019_Locomotion: 576 rows; 11 columns
-GalánAcedo_etal_2019_DielActivity: 527 rows; 11 columns
-GalánAcedo_etal_2019_TrophicGuild: 570 rows; 38 columns
-GalánAcedo_etal_2019_BodyMass: 629 rows; 16 columns
-GalánAcedo_etal_2019_Habitat: 526 rows; 26 columns
-GalánAcedo_etal_2019_IUCN_Poptrend_Realm: 526 rows; 16 columns
-Grueter_etal_2013_Table1: 74 rows; 12 columns
-Pasquaretta_etal_2014_Extendeddatatable5: 78 rows; 31 columns
-Dunn_Smaers_2018_TableS1: 47 rows; 33 columns
-McComb_Semple_2005_Table1: 42 rows; 9 columns
-Gamba_etal_2015_TableI: 154 rows; 7 columns
-Gamba_etal_2015_TableSII: 195 rows; 7 columns
-Gamba_etal_2015_TableSIII: 156 rows; 7 columns
-Gamba_etal_2015_TableSIV: 240 rows; 7 columns
-Gamba_etal_2015_TableSV: 165 rows; 7 columns
-Gamba_etal_2015_TableSVI: 120 rows; 7 columns
-Gamba_etal_2015_TableSVII: 120 rows; 7 columns
-Gamba_etal_2015_TableSVIII: 144 rows; 7 columns
-Zimmermann__2017_Table5.1: 22 rows; 23 columns
-Jacobs__2008_Table1: 2 rows; 6 columns
-Jacobs__2008_Table2: 5 rows; 7 columns
-Jacobs__2009_Table1: 34 rows; 9 columns
-Nunn_Samson_2018_Table1: 30 rows; 8 columns
-Campbell_Tobler_1984_Table1: 171 rows; 31 columns
-MorroghBernard_etal_2008_Table8.2: 216 rows; 19 columns
-MorroghBernard_etal_2008_Table8.3: 108 rows; 21 columns
-MorroghBernard_etal_2008_Table8.5: 8 rows; 19 columns
-MorroghBernard_etal_2008_Table8.6: 50 rows; 14 columns
-MorroghBernard_etal_2008_Figure8.1: 35 rows; 16 columns
-MorroghBernard_etal_2008_Figure8.2: 139 rows; 18 columns
-Hardus_etal_2009_Table4.1: 32 rows; 6 columns
-Hardus_etal_2009_Table4.2: 46 rows; 13 columns
-Hardus_etal_2009_Table4.3: 36 rows; 17 columns
-Hardus_etal_2009_Table4.4: 256 rows; 15 columns
-Hohmann__1991_Table3: 232 rows; 15 columns
-Hohmann__1991_Table4: 192 rows; 15 columns
-Hohmann__1991_Table5: 58 rows; 13 columns
-Hohmann__1991_Table6: 46 rows; 13 columns
-Hohmann__1991_Table7: 312 rows; 16 columns
-Hohmann__1991_Table8: 336 rows; 16 columns
-Hohmann__1991_Table9: 264 rows; 16 columns
-Hohmann__1991_Table10: 264 rows; 16 columns
-Hohmann__1991_Table11: 52 rows; 7 columns
-Hohmann__1991_Table12: 32 rows; 9 columns
-Jacobs_Deegan_2001_TextResults: 25 rows; 16 columns
-Jacobs_Deegan_2003_Table1: 17 rows; 8 columns
-Jacobs_etal_2019_TableS1: 52 rows; 12 columns
-Jacobs_etal_2019_TableS2: 115 rows; 16 columns
-Hiwatashi_etal_2011_TextResults: 9 rows; 12 columns
-Tan_Li_1999_Table1: 20 rows; 16 columns
-Jacobs_Deegan_1993_TextResults: 9 rows; 17 columns
-Jacobs_etal_2002_Table1: 10 rows; 10 columns
-Jacobs_Neitz_1987_Table1: 9 rows; 9 columns
-Bowmaker_etal_1991_Table1: 48 rows; 9 columns
-Bowmaker_etal_1991_Table2: 12 rows; 10 columns
-Deegan_Jacobs_2001_TextResults: 10 rows; 16 columns
-Kamilar_Cooper_2013_S2: 213 rows; 51 columns
-Nunn_Samson_2018_SupplementaryTable1: 30 rows; 19 columns
-Grueter_etal_2013_TableS1: 131 rows; 17 columns
+New names:
+• `` -> `...35`
+• `` -> `...36`
+• `` -> `...37`
+Laterality guard OK: 36 one-side column(s) correctly suffixed, 12 author-doubled column(s) correctly unsuffixed (of the tables this merge reads).
+Error: paper_long('Stephan_etal_1970_TABLE1'): no measured columns matched the term map. df cols: Species, group, body_weight_g, brain_weight_mg, total_brain_net_mm3, medulla_oblongata_mm3, cerebellum_mm3, mesencephalon_mm3, diencephalon_mm3, telencephalon_mm3, source
+Execution halted","2026-10-31 19:44:14.964542","2026-10-31 19:44:16.136791",1.17224907875061
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_tools/build_coverage_index.R","FAILED","Warning message:
+Unknown or uninitialised column: `accepted_name`. 
+Error in `transmute()`:
+ℹ In argument: `species = coalesce(accepted_name, Species)`.
+Caused by error:
+! object 'accepted_name' not found
+Backtrace:
+     ▆
+  1. ├─READERS[[r$domain]](r$term, r$source_pattern)
+  2. │ ├─dplyr::transmute(...)
+  3. │ └─dplyr:::transmute.data.frame(...)
+  4. │   └─dplyr:::mutate_cols(.data, dots, by)
+  5. │     ├─base::withCallingHandlers(...)
+  6. │     └─dplyr:::mutate_col(dots[[i]], data, mask, new_columns)
+  7. │       └─mask$eval_all_mutate(quo)
+  8. │         └─dplyr (local) eval()
+  9. ├─dplyr::coalesce(accepted_name, Species)
+ 10. │ └─rlang::list2(...)
+ 11. └─base::.handleSimpleError(...)
+ 12.   └─dplyr (local) h(simpleError(msg, call))
+ 13.     └─rlang::abort(message, class = error_class, parent = parent, call = error_call)
+Execution halted","2026-10-31 19:44:43.728375","2026-10-31 19:44:44.715755",0.987380027770996
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_tools/build_nick_fran_sources.R","FAILED","New names:
+• `` -> `...35`
+• `` -> `...36`
+• `` -> `...37`
+Norlén_etal_2019_Table1: 41 rows, CSV + public TSV
+New names:
+• `` -> `...35`
+• `` -> `...36`
+• `` -> `...37`
+RedinHurtado_etal_2023_Table1: 42 rows, CSV + public TSV
+New names:
+• `` -> `...35`
+• `` -> `...36`
+• `` -> `...37`
+Carnes_etal_2011_TableS1: 71 rows, CSV + public TSV
+New names:
+• `` -> `...35`
+• `` -> `...36`
+• `` -> `...37`
+Lindenfors_etal_2007_AdditionalFile1: 21 rows, CSV + public TSV
+New names:
+• `` -> `...35`
+• `` -> `...36`
+• `` -> `...37`
+Chang_etal_2017_Table1: 9 rows, CSV + public TSV
+New names:
+• `` -> `...35`
+• `` -> `...36`
+• `` -> `...37`
+Kowiański_etal_1999_Table1: 9 rows, CSV + public TSV
+New names:
+• `` -> `...35`
+• `` -> `...36`
+• `` -> `...37`
+Kowiański_etal_1999_Table2: 9 rows, CSV + public TSV
+New names:
+• `` -> `...35`
+• `` -> `...36`
+• `` -> `...37`
+Simmen_Hladik_1998_Table1: 38 rows, CSV + public TSV
+New names:
+• `` -> `...35`
+• `` -> `...36`
+• `` -> `...37`
+Laska_etal_2009_Table1: 3 rows, CSV + public TSV
+New names:
+• `` -> `...35`
+• `` -> `...36`
+• `` -> `...37`
+Laska_etal_2003_Table1: 4 rows, CSV + public TSV
+New names:
+• `` -> `...35`
+• `` -> `...36`
+• `` -> `...37`
+Simmen_Charlot_2003_Figure1: 3 rows, CSV + public TSV
+New names:
+• `` -> `...35`
+• `` -> `...36`
+• `` -> `...37`
+Simmen_Charlot_2003_Figure2: 2 rows, CSV + public TSV
+New names:
+• `` -> `...35`
+• `` -> `...36`
+• `` -> `...37`
+Norlén_etal_2019_Figure3: 2 rows, CSV + public TSV
+New names:
+• `` -> `...35`
+• `` -> `...36`
+• `` -> `...37`
+Laska_etal_2008_Figure5: 4 rows, CSV + public TSV
+New names:
+• `` -> `...35`
+• `` -> `...36`
+• `` -> `...37`
+Mallavarapu__2001_ResultsText: 3 rows, CSV + public TSV
+New names:
+• `` -> `...35`
+• `` -> `...36`
+• `` -> `...37`
+Bartlett__2003_Figure4: 3 rows, CSV + public TSV
+New names:
+• `` -> `...35`
+• `` -> `...36`
+• `` -> `...37`
+Smaers_etal_2011_b_Table2: 19 rows, CSV + public TSV
+New names:
+• `` -> `...35`
+• `` -> `...36`
+• `` -> `...37`
+Smaers_etal_2013_Table1: 25 rows, CSV + public TSV
+New names:
+• `` -> `...35`
+• `` -> `...36`
+• `` -> `...37`
+Suarez_Gallup_1981_Table2: 2 rows, CSV + public TSV
+New names:
+• `` -> `...35`
+• `` -> `...36`
+• `` -> `...37`
+Posada_Colell_2007_TableI: 9 rows, CSV + public TSV
+New names:
+• `` -> `...35`
+• `` -> `...36`
+• `` -> `...37`
+Povinelli_etal_1993_Table5: 30 rows, CSV + public TSV
+New names:
+• `` -> `...35`
+• `` -> `...36`
+• `` -> `...37`
+Suddendorf_CollierBaker_2009_Table1: 18 rows, CSV + public TSV
+New names:
+• `` -> `...35`
+• `` -> `...36`
+• `` -> `...37`
+Lethmate_Dücker_1973_Table4: 14 rows, CSV + public TSV
+New names:
+• `` -> `...35`
+• `` -> `...36`
+• `` -> `...37`
+InoueNakamura__1997_Table3: 25 rows, CSV + public TSV
+New names:
+• `` -> `...35`
+• `` -> `...36`
+• `` -> `...37`
+Gallup__1970_Figure4: 2 rows, CSV + public TSV
+New names:
+• `` -> `...35`
+• `` -> `...36`
+• `` -> `...37`
+Reiss_Marino_2001_Figure3: 1 rows, CSV + public TSV
+New names:
+• `` -> `...35`
+• `` -> `...36`
+• `` -> `...37`
+Plotnik_etal_2006_Figure3: 1 rows, CSV + public TSV
+New names:
+• `` -> `...35`
+• `` -> `...36`
+• `` -> `...37`
+Chang_etal_2015_Figure2: 7 rows, CSV + public TSV
+New names:
+• `` -> `...35`
+• `` -> `...36`
+• `` -> `...37`
+Chang_etal_2017_Figure2: 3 rows, CSV + public TSV
+New names:
+• `` -> `...35`
+• `` -> `...36`
+• `` -> `...37`
+Kerney_etal_2017_OnlineResource1: 8 rows, CSV + public TSV
+New names:
+• `` -> `...35`
+• `` -> `...36`
+• `` -> `...37`
+Kerney_etal_2017_OnlineResource2: 19 rows, CSV + public TSV
+New names:
+• `` -> `...35`
+• `` -> `...36`
+• `` -> `...37`
+Norlén_etal_2019_Figure2: 11 rows, CSV + public TSV
+New names:
+• `` -> `...35`
+• `` -> `...36`
+• `` -> `...37`
+Bartlett__2003_Figure5: 12 rows, CSV + public TSV
+New names:
+• `` -> `...35`
+• `` -> `...36`
+• `` -> `...37`
+Suarez_Gallup_1981_Figure3: 4 rows, CSV + public TSV
+New names:
+• `` -> `...35`
+• `` -> `...36`
+• `` -> `...37`
+Suarez_Gallup_1981_Figure7: 2 rows, CSV + public TSV
+New names:
+• `` -> `...35`
+• `` -> `...36`
+• `` -> `...37`
+Suarez_Gallup_1981_Figure11: 2 rows, CSV + public TSV
+New names:
+• `` -> `...35`
+• `` -> `...36`
+• `` -> `...37`
+Chang_etal_2015_Figure4: 4 rows, CSV + public TSV
+Warning message:
+In build_source_table(file.path(base, x$folder), x$item, base) :
+  Posada_Colell_2007_TableI: published totals do not match components; values retained unchanged
+taste: 232 observations -> 159 selected cells; 5 cells retain conflicting/alternative reports
+social_mirror_play: 549 observations -> 517 selected cells; 24 cells retain conflicting/alternative reports
+claustrum_cerebellar: 100 observations -> 82 selected cells; 0 cells retain conflicting/alternative reports
 Warning messages:
-1: In eval(ei, envir) :
-  Printed table totals disagree with interior cells; retained as printed. See table_checks.
-2: In eval(ei, envir) :
-  Printed table arithmetic mismatch retained; inspect table_checks
-3: In eval(ei, envir) :
-  Printed table arithmetic mismatch retained; inspect table_checks
-4: In eval(ei, envir) :
-  Printed table arithmetic mismatch retained; inspect table_checks
-Error in file(file, ""rt"") : cannot open the connection
-Calls: source ... withVisible -> eval -> eval -> read.csv -> read.table -> file
-In addition: Warning message:
-In file(file, ""rt"") :
-  cannot open file '/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/ManyPrimates__2022/supplementary_sources.csv': No such file or directory
-Execution halted","2026-10-23 12:38:54.876164","2026-10-23 12:39:00.068094",5.19193005561829
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Mayer_etal_2019/Mayer_etal_2019_Fig6.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
-Calls: read.csv -> read.table -> file
-In addition: Warning message:
-In file(file, ""rt"") :
-  cannot open file 'Mayer_etal_2019_Fig6_pdf_transcription.csv': No such file or directory
-Execution halted","2026-10-23 12:39:08.581522","2026-10-23 12:39:08.849212",0.267689943313599
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/McComb_Semple_2005/McComb_Semple_2005_Table1.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:39:08.853139","2026-10-23 12:39:09.658914",0.805775165557861
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/MorroghBernard_etal_2008/MorroghBernard_etal_2008_Figure8.1.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:39:15.940761","2026-10-23 12:39:16.734401",0.793639898300171
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/MorroghBernard_etal_2008/MorroghBernard_etal_2008_Figure8.2.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:39:16.742872","2026-10-23 12:39:17.498517",0.755645036697388
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/MorroghBernard_etal_2008/MorroghBernard_etal_2008_Table8.2.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:39:17.503945","2026-10-23 12:39:18.207647",0.703701972961426
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/MorroghBernard_etal_2008/MorroghBernard_etal_2008_Table8.3.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:39:18.214957","2026-10-23 12:39:18.907112",0.692154884338379
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/MorroghBernard_etal_2008/MorroghBernard_etal_2008_Table8.5.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:39:18.911509","2026-10-23 12:39:19.572093",0.660583972930908
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/MorroghBernard_etal_2008/MorroghBernard_etal_2008_Table8.6.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:39:19.577234","2026-10-23 12:39:20.257739",0.680505037307739
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Nunn_Samson_2018/Nunn_Samson_2018_SupplementaryTable1.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:40:12.227523","2026-10-23 12:40:13.50058",1.27305698394775
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Nunn_Samson_2018/Nunn_Samson_2018_Table1.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:40:13.573503","2026-10-23 12:40:14.392088",0.81858491897583
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Pasquaretta_etal_2014/Pasquaretta_etal_2014_Extendeddatatable5.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:40:18.331598","2026-10-23 12:40:19.283924",0.952326059341431
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Schmidt_etal_1984/Schmidt_etal_1984_Text.R","FAILED","Error: An existing public TSV requires owner conflict review; no overwrite performed.
-Execution halted","2026-10-23 12:40:52.347499","2026-10-23 12:40:52.954398",0.60689902305603
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1991/Stephan_etal_1991_Table71.R","FAILED","Error in file(file, ""rt"", encoding = fileEncoding) : 
-  cannot open the connection
-Calls: <Anonymous> -> read.table -> file
-In addition: Warning message:
-In file(file, ""rt"", encoding = fileEncoding) :
-  cannot open file '/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1991/Stephan_etal_1991_Table71_snapshot.csv': No such file or directory
-Execution halted","2026-10-23 12:42:04.54468","2026-10-23 12:42:05.042697",0.498016834259033
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Tan_Li_1999/Tan_Li_1999_Table1.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:42:09.237979","2026-10-23 12:42:10.171591",0.933612108230591
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/VanEssen_Drury_1997/VanEssen_Drury_1997_CitedV1Ranges.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
-Calls: read.csv -> read.table -> file
-In addition: Warning message:
-In file(file, ""rt"") :
-  cannot open file 'VanEssen_Drury_1997_CitedV1Ranges_pdf_transcription.csv': No such file or directory
-Execution halted","2026-10-23 12:42:20.786829","2026-10-23 12:42:21.309346",0.522516965866089
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Young_etal_2013/Young_etal_2013_ResultsTextSurface.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
-Calls: read.csv -> read.table -> file
-In addition: Warning message:
-In file(file, ""rt"") :
-  cannot open file 'Young_etal_2013_ResultsTextSurface_pdf_transcription.csv': No such file or directory
-Execution halted","2026-10-23 12:42:38.690467","2026-10-23 12:42:38.974924",0.284457206726074
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Zimmermann__2017/Zimmermann__2017_Table5.1.R","FAILED","Error: Register this item in __ReadMe.xlsx, or set DATASET_REGISTRY to the supplied staging workbook
-Execution halted","2026-10-23 12:42:52.975571","2026-10-23 12:42:53.749023",0.773452043533325
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_brain_mass/brain_mass_compiled.R","FAILED","Error: no measurement basis on record for 10.1002%2Fajpa.21354_Table1.tsv / brain_mass_g (paper folder 'Barrickman_Lin_2010'). Add it to ASSIGN in _keys/build_brain_size_basis.py and re-run that builder.
-Execution halted","2026-10-23 12:44:00.066194","2026-10-23 12:44:03.544413",3.4782190322876
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/volumes_compiled_select_DeCasien.R","FAILED","Error: Source review needs one documented row per listed primary source.
-Execution halted","2026-10-23 12:45:34.500713","2026-10-23 12:45:36.7968",2.29608678817749
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_item_name_resolution.R","FAILED","registry Item names: 680   |   TSVs on disk: 638   |   NA.tsv present: YES -- REMOVE IT
+1: resolve_species: 25 duplicate (source_publication, variant_name) spoke row(s) ignored (first wins), e.g. Sherwood_etal_2020 / Alouatta_caraya 
+2: resolve_species: 25 duplicate (source_publication, variant_name) spoke row(s) ignored (first wins), e.g. Sherwood_etal_2020 / Alouatta_caraya 
+3: resolve_species: 25 duplicate (source_publication, variant_name) spoke row(s) ignored (first wins), e.g. Sherwood_etal_2020 / Alouatta_caraya 
+Warning message:
+In left_join(., anat, by = "".struct_key"") :
+  Detected an unexpected many-to-many relationship between `x` and `y`.
+ℹ Row 5 of `x` matches multiple rows in `y`.
+ℹ Row 85 of `y` matches multiple rows in `x`.
+ℹ If a many-to-many relationship is expected, set `relationship =
+  ""many-to-many""` to silence this warning.
+variable_catalog.csv: 4489 measured variables from 361 papers
+compatibility groups: 1654  | poolable (>=2 papers): 283
+repo: /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data
+out:  /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__ShinyApp/data
+Error: data/ must not duplicate canonical repo files, but these do:
+  supplementary_long.csv  (canonical: __merging_supplementary/supplementary_long.csv)
+Delete them from data/ and let the app read the canonical copy.
+Execution halted
+Error: Build failed: __ShinyApp/build_data.R
+Execution halted","2026-10-31 19:44:44.723044","2026-10-31 19:44:54.501092",9.77804803848267
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_item_name_resolution.R","FAILED","New names:
+• `` -> `...35`
+• `` -> `...36`
+• `` -> `...37`
+registry Item names: 915   |   TSVs on disk: 868   |   NA.tsv present: no
 
 __merging_behaviour/behaviour_compiled.R                     0 item name(s) referenced   OK
+__merging_behaviour/social_mirror_play_compiled.R            0 item name(s) referenced   OK
 __merging_body_ecology/body_ecology_compiled.R               0 item name(s) referenced   OK
 __merging_brain_mass/brain_mass_compiled.R                   0 item name(s) referenced   OK
 __merging_cell_morphology/cell_morphology_compiled.R        18 item name(s) referenced   OK
@@ -271,87 +304,178 @@ __merging_cortical_areas/cortical_areas_compiled.R          22 item name(s) refe
 __merging_cortical_layers/cortical_layers_compiled.R         1 item name(s) referenced   OK
 __merging_fossil_brain_glucose/fossil_brain_glucose_compiled.R   0 item name(s) referenced   OK
 __merging_gyrification/gyrification_compiled.R               3 item name(s) referenced   OK
+__merging_life_history/life_history_compiled.R               0 item name(s) referenced   OK
 __merging_sensory/sensory_compiled.R                         5 item name(s) referenced   OK
+__merging_sensory/taste_compiled.R                           0 item name(s) referenced   OK
 __merging_sleep/sleep_compiled.R                             4 item name(s) referenced   OK
 __merging_supplementary/supplementary_compiled.R             0 item name(s) referenced   OK
+__merging_volumes/claustrum_cerebellar_compiled.R            0 item name(s) referenced   OK
 __merging_volumes/volumes_compiled_select.R                 34 item name(s) referenced   OK
-__merging_volumes/volumes_compiled.R                        71 item name(s) referenced   OK
+__merging_volumes/volumes_compiled.R                        72 item name(s) referenced   OK
 
-orphaned TSVs (on disk, claimed by no registry row): 66
-      10.1002%2Fajp.1350300307_TextResults.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1002%2Fajpa.1330380234_ResultsText.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1002%2Fajpa.23427_SupplementaryTable1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1002%2Fajpa.23427_Table1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1002%2Far.20829 _Table1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1007%2F978-3-319-59478-1_5_Table5.1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1007%2Fs00265-018-2629-9_TableS1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1007%2Fs00265-018-2629-9_TableS2.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1007%2Fs00429-014-0792-y _Table1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1007%2Fs10764-015-9861-1_TableI.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1007%2Fs10764-015-9861-1_TableSII.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1007%2Fs10764-015-9861-1_TableSIII.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1007%2Fs10764-015-9861-1_TableSIV.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1007%2Fs10764-015-9861-1_TableSV.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1007%2Fs10764-015-9861-1_TableSVI.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1007%2Fs10764-015-9861-1_TableSVII.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1007%2Fs10764-015-9861-1_TableSVIII.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1016%2F0042-6989(87)90202-1_Table1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1016%2F0149-7634(84)90054-X_Table1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1016%2Fj.evolhumbehav.2012.09.004_Table1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1016%2Fj.evolhumbehav.2012.09.004_TableS1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1016%2FS0042-6989(01)00264-4_Table1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1016%2FS0042-6989(02)00565-5_Table1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1017%2FS0952523808080760_Table1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1017%2FS0952523808080760_Table2.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1037%2F0735-7036.102.2.99_Table1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1038%2F46947_Table1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1038%2Fs41597-019-0059-9_BodyMass.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1038%2Fs41597-019-0059-9_DielActivity.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1038%2Fs41597-019-0059-9_Habitat.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1038%2Fs41597-019-0059-9_HomeRange.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1038%2Fs41597-019-0059-9_IUCN_Poptrend_Realm.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1038%2Fs41597-019-0059-9_Locomotion.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1038%2Fs41597-019-0059-9_TrophicGuild.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1038%2Fsrep07600_Extendeddatatable5.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1093%2Facprof:oso%2F9780199213276.003.0004_Table4.1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1093%2Facprof:oso%2F9780199213276.003.0004_Table4.2.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1093%2Facprof:oso%2F9780199213276.003.0004_Table4.3.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1093%2Facprof:oso%2F9780199213276.003.0004_Table4.4.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1093%2Facprof:oso%2F9780199213276.003.0008_Figure8.1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1093%2Facprof:oso%2F9780199213276.003.0008_Figure8.2.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1093%2Facprof:oso%2F9780199213276.003.0008_Table8.2.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1093%2Facprof:oso%2F9780199213276.003.0008_Table8.3.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1093%2Facprof:oso%2F9780199213276.003.0008_Table8.5.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1093%2Facprof:oso%2F9780199213276.003.0008_Table8.6.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1098%2Frsbl.2005.0366_Table1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1098%2Frspb.2000.1421_TextResults.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1098%2Frstb.2009.0039_Table1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1098%2Frstb.2012.0341_S2.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1121%2F1.1903415_Table1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1159%2F000049915_TextResults.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1159%2F000156538_Table10.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1159%2F000156538_Table11.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1159%2F000156538_Table12.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1159%2F000156538_Table3.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1159%2F000156538_Table4.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1159%2F000156538_Table5.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1159%2F000156538_Table6.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1159%2F000156538_Table7.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1159%2F000156538_Table8.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1159%2F000156538_Table9.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1186%2F1471-2148-11-312_TextResults.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1242%2Fjeb.156.1.1_Table1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.1242%2Fjeb.156.1.1_Table2.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      10.3389%2Ffnins.2018.00534_TableS1.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-      NA.tsv   <- no registry row claims this file: a lost row, OR the build script wrote a non-canonical filename, OR the row's item key changed after the build (check all three before restoring anything)
-rows with a citation but no Item name (need _tools/file_list.R): 0
+orphaned TSVs (on disk, claimed by no registry row): 0
+rows with a citation but no Item name (need _tools/file_list.R): 4
+      Sheet1 row 943: Karlsen, A. S., & Pakkenberg, B. (2011). Total numbers of ne...
+      Sheet1 row 944: Karlsen, A. S., & Pakkenberg, B. (2011). Total numbers of ne...
+      Sheet1 row 945: Mackes, N. K., Golm, D., Sarkar, S., Kumsta, R., Rutter, M.,...
+      Sheet1 row 946: Walhovd, K. B., Westlye, L. T., Amlien, I., Espeseth, T., Re...
 
 all referenced item names resolve to a TSV on disk.
-run _tools/restore_registry_rows.R (adding any new row to its ROWS list), then _tools/file_list.R.","2026-10-23 12:46:52.653812","2026-10-23 12:46:53.507726",0.853914022445679
+run _tools/restore_registry_rows.R (adding any new row to its ROWS list), then _tools/file_list.R.","2026-10-31 19:45:44.771637","2026-10-31 19:45:45.622999",0.851361989974976
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_trait_authority.R","FAILED","158 of 1355 variables have no row in _keys/variable_definitions.csv (source: local).
+  A1_Surface_Area.mm2 | A1_Surface_Area.pct_Neocortex | Adult_females.N (N) | Adult_males.N (N) | Amygdala_centromedial_Vol.mm3 | Amygdala_laterobasal_Vol.mm3 | Amygdala_superficial_Vol.mm3 | Breeding_season.d (d) ... and 150 more
+  Fix: Rscript _keys/build_variable_definitions.R && Rscript __ShinyApp/build_data.R
+Brain structures: 816 structure-level variables, 650 species comparable. Reconciliation: 179 candidate pairs.
+trait_authority.csv: 1355 rows | app labels: 1355
+
+                    adjudicated adopted_from_variable_canonical 
+                             11                              29 
+           auto_single_producer 
+                           1315 
+
+----------------------------------------------------------------------
+FAIL  VALIDITY: 130 row(s) name an authority that does not produce that label:
+    Adult_females.N (N) -> __merging_behaviour  (actual producers: )
+    Adult_males.N (N) -> __merging_behaviour  (actual producers: )
+    Breeding_season.d (d) -> __merging_behaviour  (actual producers: )
+    Caffeine_avoidance_30mM_sucrose_background (mM) -> __merging_sensory  (actual producers: )
+    Cerebrocerebellum_volume_Smaers2011 (mm3) -> __merging_volumes  (actual producers: )
+    Denatonium_benzoate_avoidance_30mM_sucrose_background (mM) -> __merging_sensory  (actual producers: )
+    Estrus_duration.d (d) -> __merging_behaviour  (actual producers: )
+    Expected_overlap (proportion) -> __merging_behaviour  (actual producers: )
+    Flocculonodular_lobe_volume_Smaers2011 (mm3) -> __merging_volumes  (actual producers: )
+    Fructose_detection_threshold (mM) -> __merging_sensory  (actual producers: )
+    Fructose_preference_threshold (mM) -> __merging_sensory  (actual producers: )
+    Glucose_detection_threshold (mM) -> __merging_sensory  (actual producers: )
+    Glucose_preference_threshold (mM) -> __merging_sensory  (actual producers: )
+    Groom_time.pct_Apr_Bartlett2003_digitized (percent) -> __merging_behaviour  (actual producers: )
+    Groom_time.pct_Aug_Bartlett2003_digitized (percent) -> __merging_behaviour  (actual producers: )
+    Groom_time.pct_Dec_Bartlett2003_digitized (percent) -> __merging_behaviour  (actual producers: )
+    Groom_time.pct_Feb_Bartlett2003_digitized (percent) -> __merging_behaviour  (actual producers: )
+    Groom_time.pct_Jan_Bartlett2003_digitized (percent) -> __merging_behaviour  (actual producers: )
+    Groom_time.pct_Jul_Bartlett2003_digitized (percent) -> __merging_behaviour  (actual producers: )
+    Groom_time.pct_Jun_Bartlett2003_digitized (percent) -> __merging_behaviour  (actual producers: )
+    Groom_time.pct_Mar_Bartlett2003_digitized (percent) -> __merging_behaviour  (actual producers: )
+    Groom_time.pct_May_Bartlett2003_digitized (percent) -> __merging_behaviour  (actual producers: )
+    Groom_time.pct_Nov_Bartlett2003_digitized (percent) -> __merging_behaviour  (actual producers: )
+    Groom_time.pct_Oct_Bartlett2003_digitized (percent) -> __merging_behaviour  (actual producers: )
+    Groom_time.pct_Sep_Bartlett2003_digitized (percent) -> __merging_behaviour  (actual producers: )
+    Lactose_detection_threshold (mM) -> __merging_sensory  (actual producers: )
+    Lactose_preference_threshold (mM) -> __merging_sensory  (actual producers: )
+    Left_PCH_volume_Smaers2013 (mm3) -> __merging_volumes  (actual producers: )
+    Maltose_detection_threshold (mM) -> __merging_sensory  (actual producers: )
+    Maltose_preference_threshold (mM) -> __merging_sensory  (actual producers: )
+    Mirror_Agonistic_Covered_count_Xebo_Posada2007 (count) -> __merging_behaviour  (actual producers: )
+    Mirror_Agonistic_Marked_count_Xebo_Posada2007 (count) -> __merging_behaviour  (actual producers: )
+    Mirror_Agonistic_Uncovered_count_Xebo_Posada2007 (count) -> __merging_behaviour  (actual producers: )
+    Mirror_Contingent_Covered_count_Xebo_Posada2007 (count) -> __merging_behaviour  (actual producers: )
+    Mirror_Contingent_Marked_count_Xebo_Posada2007 (count) -> __merging_behaviour  (actual producers: )
+    Mirror_Contingent_Uncovered_count_Xebo_Posada2007 (count) -> __merging_behaviour  (actual producers: )
+    Mirror_Directing_the_hindquarter_to_the_mirror_and_looking_behind_toward_the_mirror_Chang2017_control (mean count/subject) -> __merging_behaviour  (actual producers: )
+    Mirror_Directing_the_hindquarter_to_the_mirror_and_looking_behind_toward_the_mirror_Chang2017_trained (mean count/subject) -> __merging_behaviour  (actual producers: )
+    Mirror_dye_mark_pass_fraction_Chang2015_somatosensory_trained_home_cage (proportion) -> __merging_behaviour  (actual producers: )
+    Mirror_dye_mark_pass_fraction_Chang2017_proprioceptive_trained (proportion) -> __merging_behaviour  (actual producers: )
+    Mirror_Exploratory_Covered_count_Xebo_Posada2007 (count) -> __merging_behaviour  (actual producers: )
+    Mirror_Exploratory_Marked_count_Xebo_Posada2007 (count) -> __merging_behaviour  (actual producers: )
+    Mirror_Exploratory_Uncovered_count_Xebo_Posada2007 (count) -> __merging_behaviour  (actual producers: )
+    Mirror_First_looking_at_the_mirror_and_then_looking_at_and_touching_his_own_genital_area_Chang2017_control (mean count/subject) -> __merging_behaviour  (actual producers: )
+    Mirror_First_looking_at_the_mirror_and_then_looking_at_and_touching_his_own_genital_area_Chang2017_trained (mean count/subject) -> __merging_behaviour  (actual producers: )
+    Mirror_First_looking_at_the_mirror_and_then_raising_a_leg_to_examine_his_own_genital_area_Chang2017_control (mean count/subject) -> __merging_behaviour  (actual producers: )
+    Mirror_First_looking_at_the_mirror_and_then_raising_a_leg_to_examine_his_own_genital_area_Chang2017_trained (mean count/subject) -> __merging_behaviour  (actual producers: )
+    Mirror_Glance_Covered_count_Xebo_Posada2007 (count) -> __merging_behaviour  (actual producers: )
+    Mirror_Glance_Marked_count_Xebo_Posada2007 (count) -> __merging_behaviour  (actual producers: )
+    Mirror_Glance_Uncovered_count_Xebo_Posada2007 (count) -> __merging_behaviour  (actual producers: )
+    Mirror_GR_Chang2015_control (mean count/subject) -> __merging_behaviour  (actual producers: )
+    Mirror_GR_Chang2015_trained (mean count/subject) -> __merging_behaviour  (actual producers: )
+    Mirror_GU_Chang2015_control (mean count/subject) -> __merging_behaviour  (actual producers: )
+    Mirror_GU_Chang2015_trained (mean count/subject) -> __merging_behaviour  (actual producers: )
+    Mirror_Guided_Covered_count_Xebo_Posada2007 (count) -> __merging_behaviour  (actual producers: )
+    Mirror_Guided_Marked_count_Xebo_Posada2007 (count) -> __merging_behaviour  (actual producers: )
+    Mirror_Guided_Uncovered_count_Xebo_Posada2007 (count) -> __merging_behaviour  (actual producers: )
+    Mirror_head_mark_pass_fraction_Suddendorf2009 (proportion) -> __merging_behaviour  (actual producers: )
+    Mirror_head_touches.N_Happy_first_mark_day_Plotnik2006 (count) -> __merging_behaviour  (actual producers: )
+    Mirror_Looking_at_the_mirror_and_touching_his_own_face_head_or_teeth_or_pulling_his_own_face_or_head_hair_and_then_looking_at_or_smelling_at_his_fingers_Chang2017_control (mean count/subject) -> __merging_behaviour  (actual producers: )
+    Mirror_Looking_at_the_mirror_and_touching_his_own_face_head_or_teeth_or_pulling_his_own_face_or_head_hair_and_then_looking_at_or_smelling_at_his_fingers_Chang2017_trained (mean count/subject) -> __merging_behaviour  (actual producers: )
+    Mirror_Looking_at_the_mirror_then_touching_body_parts_Chang2017_control (mean count/subject) -> __merging_behaviour  (actual producers: )
+    Mirror_Looking_at_the_mirror_then_touching_body_parts_Chang2017_trained (mean count/subject) -> __merging_behaviour  (actual producers: )
+    Mirror_mark_orientation_session_fraction_Reiss2001_subject1_phase2 (proportion) -> __merging_behaviour  (actual producers: )
+    Mirror_mark_pass_fraction_Povinelli1993 (proportion) -> __merging_behaviour  (actual producers: )
+    Mirror_mark_response_Gallup1970_experimental (category) -> __merging_behaviour  (actual producers: )
+    Mirror_mark_response_Gallup1970_naive_controls (category) -> __merging_behaviour  (actual producers: )
+    Mirror_mark_result_Dyak_Suarez1981 (category) -> __merging_behaviour  (actual producers: )
+    Mirror_mark_result_Homer_Suarez1981 (category) -> __merging_behaviour  (actual producers: )
+    Mirror_mark_result_Inaki_Suarez1981 (category) -> __merging_behaviour  (actual producers: )
+    Mirror_mark_result_Jini_Suarez1981 (category) -> __merging_behaviour  (actual producers: )
+    Mirror_mark_result_Kanting_Suarez1981 (category) -> __merging_behaviour  (actual producers: )
+    Mirror_mark_result_Katoomba_Suarez1981 (category) -> __merging_behaviour  (actual producers: )
+    Mirror_mark_result_Ozoum_Suarez1981 (category) -> __merging_behaviour  (actual producers: )
+    Mirror_mark_result_Tai_Suarez1981 (category) -> __merging_behaviour  (actual producers: )
+    Mirror_mirror_associated_mark_touches.N_Happy_first_mark_day_Plotnik2006 (count) -> __merging_behaviour  (actual producers: )
+    Mirror_mirror_associated_sham_touches.N_Happy_first_mark_day_Plotnik2006 (count) -> __merging_behaviour  (actual producers: )
+    Mirror_Pretest_brow_Hoboh_Suarez1981 (count) -> __merging_behaviour  (actual producers: )
+    Mirror_Pretest_brow_William_Suarez1981 (count) -> __merging_behaviour  (actual producers: )
+    Mirror_Pretest_wrist_Hoboh_Suarez1981 (count) -> __merging_behaviour  (actual producers: )
+    Mirror_Pretest_wrist_William_Suarez1981 (count) -> __merging_behaviour  (actual producers: )
+    Mirror_self_directed_behaviour_Inoue1997 (category) -> __merging_behaviour  (actual producers: )
+    Mirror_Self_directed_Covered_count_Xebo_Posada2007 (count) -> __merging_behaviour  (actual producers: )
+    Mirror_Self_directed_Marked_count_Xebo_Posada2007 (count) -> __merging_behaviour  (actual producers: )
+    Mirror_Self_directed_Uncovered_count_Xebo_Posada2007 (count) -> __merging_behaviour  (actual producers: )
+    Mirror_Self_referred_Covered_count_Xebo_Posada2007 (count) -> __merging_behaviour  (actual producers: )
+    Mirror_Self_referred_Marked_count_Xebo_Posada2007 (count) -> __merging_behaviour  (actual producers: )
+    Mirror_Self_referred_Uncovered_count_Xebo_Posada2007 (count) -> __merging_behaviour  (actual producers: )
+    Mirror_Stare_Covered_count_Xebo_Posada2007 (count) -> __merging_behaviour  (actual producers: )
+    Mirror_Stare_Marked_count_Xebo_Posada2007 (count) -> __merging_behaviour  (actual producers: )
+    Mirror_Stare_Uncovered_count_Xebo_Posada2007 (count) -> __merging_behaviour  (actual producers: )
+    Mirror_Test_brow_Hoboh_Suarez1981 (count) -> __merging_behaviour  (actual producers: )
+    Mirror_Test_brow_William_Suarez1981 (count) -> __merging_behaviour  (actual producers: )
+    Mirror_Test_wrist_Hoboh_Suarez1981 (count) -> __merging_behaviour  (actual producers: )
+    Mirror_Test_wrist_William_Suarez1981 (count) -> __merging_behaviour  (actual producers: )
+    Mother-infant_play_share_of_play_time_infants_Mallavarapu2001 (percent) -> __merging_behaviour  (actual producers: )
+    MSG_Weber_ratio_across_tested_conditions (ratio) -> __merging_sensory  (actual producers: )
+    NaCl_Weber_ratio_across_tested_conditions (ratio) -> __merging_sensory  (actual producers: )
+    Naringin_avoidance_30mM_sucrose_background (mM) -> __merging_sensory  (actual producers: )
+    Play_share_of_social_activity_adult_Bartlett2003 (percent) -> __merging_behaviour  (actual producers: )
+    Play_share_of_social_activity_immature_Bartlett2003 (percent) -> __merging_behaviour  (actual producers: )
+    Play_share_of_social_activity_juvenile_Bartlett2003 (percent) -> __merging_behaviour  (actual producers: )
+    Play_time_all_activity_Kerney2017 (percent) -> __merging_behaviour  (actual producers: )
+    Play_time.pct_Apr_Bartlett2003_digitized (percent) -> __merging_behaviour  (actual producers: )
+    Play_time.pct_Aug_Bartlett2003_digitized (percent) -> __merging_behaviour  (actual producers: )
+    Play_time.pct_Dec_Bartlett2003_digitized (percent) -> __merging_behaviour  (actual producers: )
+    Play_time.pct_Feb_Bartlett2003_digitized (percent) -> __merging_behaviour  (actual producers: )
+    Play_time.pct_Jan_Bartlett2003_digitized (percent) -> __merging_behaviour  (actual producers: )
+    Play_time.pct_Jul_Bartlett2003_digitized (percent) -> __merging_behaviour  (actual producers: )
+    Play_time.pct_Jun_Bartlett2003_digitized (percent) -> __merging_behaviour  (actual producers: )
+    Play_time.pct_Mar_Bartlett2003_digitized (percent) -> __merging_behaviour  (actual producers: )
+    Play_time.pct_May_Bartlett2003_digitized (percent) -> __merging_behaviour  (actual producers: )
+    Play_time.pct_Nov_Bartlett2003_digitized (percent) -> __merging_behaviour  (actual producers: )
+    Play_time.pct_Oct_Bartlett2003_digitized (percent) -> __merging_behaviour  (actual producers: )
+    Play_time.pct_Sep_Bartlett2003_digitized (percent) -> __merging_behaviour  (actual producers: )
+    Quinine_HCl_avoidance_30mM_sucrose_background (mM) -> __merging_sensory  (actual producers: )
+    Quinine_HCl_legacy_threshold (mM) -> __merging_sensory  (actual producers: )
+    Right_PCH_volume_Smaers2013 (mm3) -> __merging_volumes  (actual producers: )
+    Salicin_avoidance_30mM_sucrose_background (mM) -> __merging_sensory  (actual producers: )
+    Seasonality_r (index) -> __merging_behaviour  (actual producers: )
+    Social_play_share_of_play_time_infants_Mallavarapu2001 (percent) -> __merging_behaviour  (actual producers: )
+    Solitary_play_share_of_play_time_infants_Mallavarapu2001 (percent) -> __merging_behaviour  (actual producers: )
+    Spinocerebellum_volume_Smaers2011 (mm3) -> __merging_volumes  (actual producers: )
+    Sucrose_at_citric_acid_10mM_preference_over_50mM_sucrose (mM) -> __merging_sensory  (actual producers: )
+    Sucrose_at_citric_acid_30mM_preference_over_50mM_sucrose (mM) -> __merging_sensory  (actual producers: )
+    Sucrose_at_citric_acid_50mM_preference_over_50mM_sucrose (mM) -> __merging_sensory  (actual producers: )
+    Sucrose_detection_threshold (mM) -> __merging_sensory  (actual producers: )
+    Sucrose_octaacetate_avoidance_30mM_sucrose_background (mM) -> __merging_sensory  (actual producers: )
+    Sucrose_preference_threshold (mM) -> __merging_sensory  (actual producers: )
+    Tannic_acid_inhibition_threshold (mM) -> __merging_sensory  (actual producers: )
+
+Error: check_trait_authority.R: 1 guard(s) failed.
+Execution halted","2026-10-31 19:45:46.097564","2026-10-31 19:45:51.769789",5.67222499847412
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/social_variables/check_population_censuses.R","FAILED","Error: length(args) == 2 is not TRUE
+Execution halted","2026-10-31 19:49:30.940395","2026-10-31 19:49:31.292223",0.35182785987854
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/social_variables/check_social_expansion.R","FAILED","Error: length(args) == 2 is not TRUE
+Execution halted","2026-10-31 19:49:31.303931","2026-10-31 19:49:31.513661",0.209729909896851
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/social_variables/check_zhu_coverage.R","FAILED","Error: length(args) == 2 is not TRUE
-Execution halted","2026-10-23 12:49:01.074826","2026-10-23 12:49:01.401908",0.327081918716431
+Execution halted","2026-10-31 19:49:31.526221","2026-10-31 19:49:31.741298",0.215076923370361
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/social_variables/compare_coverage.R","FAILED","Error: length(a) == 2 is not TRUE
-Execution halted","2026-10-23 12:49:01.411759","2026-10-23 12:49:01.720584",0.308825016021729
+Execution halted","2026-10-31 19:49:31.752145","2026-10-31 19:49:31.945999",0.193853855133057
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/social_variables/load_app.R","FAILED","
 Attaching package: ‘bslib’
 
@@ -366,10 +490,11 @@ The following objects are masked from ‘package:shiny’:
 
     dataTableOutput, renderDataTable
 
-19 of 1054 variables have no row in _keys/variable_definitions.csv (source: local).
-  A1_Surface_Area.mm2 | A1_Surface_Area.pct_Neocortex | CorticalBuriedSurface_Area.mm2 | CorticalSurfaceInFissures.pct | DI_Surface_Area.pct_Neocortex | DL_Surface_Area.pct_Neocortex | DM_Surface_Area.pct_Neocortex | FST_Surface_Area.pct_Neocortex ... and 11 more
+158 of 1355 variables have no row in _keys/variable_definitions.csv (source: local).
+  A1_Surface_Area.mm2 | A1_Surface_Area.pct_Neocortex | Adult_females.N (N) | Adult_males.N (N) | Amygdala_centromedial_Vol.mm3 | Amygdala_laterobasal_Vol.mm3 | Amygdala_superficial_Vol.mm3 | Breeding_season.d (d) ... and 150 more
   Fix: Rscript _keys/build_variable_definitions.R && Rscript __ShinyApp/build_data.R
+Brain structures: 816 structure-level variables, 650 species comparable. Reconciliation: 179 candidate pairs.
 Error in if (length(file) != 1 || file == """") stop(gettextf(""'%s' must be a non-empty character string"",  : 
   missing value where TRUE/FALSE needed
 Calls: saveRDS
-Execution halted","2026-10-23 12:49:01.732554","2026-10-23 12:49:05.420624",3.68807005882263
+Execution halted","2026-10-31 19:49:31.966126","2026-10-31 19:49:37.332782",5.36665606498718

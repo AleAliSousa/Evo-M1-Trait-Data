@@ -8,7 +8,12 @@ This is a same-originating-team re-report of the 2015 census study (https://doi.
 
 The merge summary is 4.14, the equal-weight mean of the 15 published site means. It is NOT a group-weighted mean, an adult-only mean, or a universal species mean. Underlying group sample sizes are unavailable here. The source-specific label states population mean and the definition states the aggregation. All population rows remain intact for later selection.
 
-Rebuild with `_checks/social_variables/build_population_censuses.py`.
+Rebuild (changed 2026-10-31): `_checks/social_variables/build_population_censuses.py` regenerates the
+printed-grid snapshot from the PMC XML; `Ziege_etal_2016_Population.R` then unpivots that grid into the
+15 population rows and `Ziege_etal_2016_Summary.R` computes the unweighted mean from them (run second).
+The python no longer writes those two CSVs. Values are unchanged; whole-number site means now print as
+`10` rather than `10.0` (the printed `10.00` stays in the snapshot). The items are unregistered, so the
+public TSV is skipped with a message.
 
 ## Snapshot provenance — repaired 2026-10-31
 

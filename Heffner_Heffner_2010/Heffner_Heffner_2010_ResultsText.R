@@ -73,13 +73,16 @@ write.csv(final.dataframe, final_csv, row.names = FALSE, na = "")
 if (!is.na(tsv_dir) && dir.exists(tsv_dir)) {
   filecodes    <- read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
   ## Registry lookup name differs from this file's name (added 2026-09-27): the citation's first author is "Heffner, Jr., H.", and the extra comma makes the registry formula read it as "etal", giving Heffner_etal_2010_ResultsText (a different paper from the Heffner_etal_2010 folder's TableI).
-  ## Only the lookup uses it; the local files keep this folder's naming.
-  registry_item_name <- "Heffner_etal_2010_ResultsText"
+  ## Prefer the corrected key after owner paste; accept the legacy key until then.
+  registry_item_names <- c("Heffner_Heffner_2010_ResultsText", "Heffner_etal_2010_ResultsText")
   nfc <- function(x) if (requireNamespace("stringi", quietly = TRUE)) stringi::stri_trans_nfc(x) else x
-  item_encoded <- filecodes$`Item encoded`[match(nfc(registry_item_name), nfc(filecodes$`Item name`))]
+  hits <- match(nfc(registry_item_names), nfc(filecodes$`Item name`))
+  hits <- hits[!is.na(hits)]
+  item_encoded <- if (length(hits)) filecodes$`Item encoded`[hits[1]] else NA_character_
   if (length(item_encoded) != 1L || is.na(item_encoded) || !nzchar(item_encoded) ||
       grepl("_$", item_encoded))
-    stop("No usable 'Item encoded' in __ReadMe.xlsx for ", registry_item_name,
+    stop("No usable 'Item encoded' in __ReadMe.xlsx for ",
+         paste(registry_item_names, collapse = " or "),
          " -- refusing to write NA.tsv.", call. = FALSE)
   write.table(final.dataframe, file.path(tsv_dir, paste0(item_encoded, ".tsv")),
               sep = "\t", row.names = FALSE, na = "")

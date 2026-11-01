@@ -98,9 +98,19 @@ utils::write.csv(final.dataframe, file.path(folder, paste0(item_name, ".csv")),
 if (identical(Sys.getenv("EVOM1_ALLOW_PUBLIC_TSV"), "YES")) {
   if (!dir.exists(file.path(base, "__Public", "comparative-data")))
     stop("Canonical public directory is absent; do not create an alternative TSV.")
-  if (file.exists(file.path(base, "__Public", "comparative-data", paste0(item_encoded, ".tsv"))))
-    stop("An existing public TSV requires owner conflict review; no overwrite performed.")
-  utils::write.table(final.dataframe,
-              file.path(base, "__Public", "comparative-data", paste0(item_encoded, ".tsv")),
-              sep = "\t", row.names = FALSE, na = "", fileEncoding = "UTF-8")
+  .dest <- file.path(base, "__Public", "comparative-data", paste0(item_encoded, ".tsv"))
+  ## Owner conflict review is for a real DIVERGENCE, not for a rebuild that would write the same
+  ## bytes: compare first (2026-10-31), stop only when this build would change the published file.
+  if (file.exists(.dest)) {
+    .tmp <- tempfile(fileext = ".tsv")
+    utils::write.table(final.dataframe, .tmp, sep = "\t", row.names = FALSE, na = "", fileEncoding = "UTF-8")
+    .same <- identical(readLines(.dest, warn = FALSE), readLines(.tmp, warn = FALSE))
+    unlink(.tmp)
+    if (!.same)
+      stop("An existing public TSV requires owner conflict review; no overwrite performed.")
+    message("Public TSV already identical to this build; left untouched: ", .dest)
+  } else {
+    utils::write.table(final.dataframe, .dest,
+                sep = "\t", row.names = FALSE, na = "", fileEncoding = "UTF-8")
+  }
 } else warning("Shared publication not attempted in this prepared batch; older upload approvals unaffected; R and live-code checks pending.")

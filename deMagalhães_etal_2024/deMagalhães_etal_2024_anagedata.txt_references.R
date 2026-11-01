@@ -1,4 +1,4 @@
-# deMagalhães_etal_2024_anagedata.txt_references.R
+# deMagalhães_etal_2024_anagedata.txt_references.R
 #
 # Build the AnAge Build-15 bibliography lookup and its row-level join to anage_data.txt.
 # The browser-print PDF is a complete 1,467-row bibliography table with BIBLIOID,

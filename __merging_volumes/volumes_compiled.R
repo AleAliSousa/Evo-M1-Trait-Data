@@ -45,12 +45,12 @@ papers <- tribble(
   ~item,                                  ~team,                ~year,
   # Stephan 1970 split one-item-per-printed-table (was bundled Tables1-6). Tables 1-3 =
   # fundamental parts in insectivores/prosimians/simians; Tables 4-6 = telencephalon components, same taxa.
-  "Stephan_etal_1970_Table1",             "Stephan_collection", 1970,
-  "Stephan_etal_1970_Table2",             "Stephan_collection", 1970,
-  "Stephan_etal_1970_Table3",             "Stephan_collection", 1970,
-  "Stephan_etal_1970_Table4",             "Stephan_collection", 1970,
-  "Stephan_etal_1970_Table5",             "Stephan_collection", 1970,
-  "Stephan_etal_1970_Table6",             "Stephan_collection", 1970,
+  "Stephan_etal_1970_TABLE1",             "Stephan_collection", 1970,
+  "Stephan_etal_1970_TABLE2",             "Stephan_collection", 1970,
+  "Stephan_etal_1970_TABLE3",             "Stephan_collection", 1970,
+  "Stephan_etal_1970_TABLE4",             "Stephan_collection", 1970,
+  "Stephan_etal_1970_TABLE5",             "Stephan_collection", 1970,
+  "Stephan_etal_1970_TABLE6",             "Stephan_collection", 1970,
   # Stephan 1981 split one-item-per-printed-table (was bundled TablesI-VI, which actually spanned I-XVI).
   "Stephan_etal_1981_TableI",             "Stephan_collection", 1981,
   "Stephan_etal_1981_TableII",            "Stephan_collection", 1981,
@@ -155,12 +155,12 @@ filecodes <- read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
 enc_override <- c("Bush_Allman_2004_a_Table2"   = "10.1073%2Fpnas.0305760101_Table2",
                   "Reep_etal_2007_Table1"       = "10.1159%2F000101491_Table1",
                   # Stephan 1970 split into 6 per-table items (ISBN-coded; The Primate Brain has no DOI).
-                  "Stephan_etal_1970_Table1" = "ISBN%3A0390672505_TABLE1",
-                  "Stephan_etal_1970_Table2" = "ISBN%3A0390672505_TABLE2",
-                  "Stephan_etal_1970_Table3" = "ISBN%3A0390672505_TABLE3",
-                  "Stephan_etal_1970_Table4" = "ISBN%3A0390672505_TABLE4",
-                  "Stephan_etal_1970_Table5" = "ISBN%3A0390672505_TABLE5",
-                  "Stephan_etal_1970_Table6" = "ISBN%3A0390672505_TABLE6",
+                  "Stephan_etal_1970_TABLE1" = "ISBN%3A0390672505_TABLE1",
+                  "Stephan_etal_1970_TABLE2" = "ISBN%3A0390672505_TABLE2",
+                  "Stephan_etal_1970_TABLE3" = "ISBN%3A0390672505_TABLE3",
+                  "Stephan_etal_1970_TABLE4" = "ISBN%3A0390672505_TABLE4",
+                  "Stephan_etal_1970_TABLE5" = "ISBN%3A0390672505_TABLE5",
+                  "Stephan_etal_1970_TABLE6" = "ISBN%3A0390672505_TABLE6",
                   # Stephan 1981 split into 16 per-table items. All share the paper's single DOI
                   # 10.1159/000155963; pin it here so the drifted VIII/IX/X registry encodings
                   # (000155964/5/6) can't send those tables to a missing TSV.

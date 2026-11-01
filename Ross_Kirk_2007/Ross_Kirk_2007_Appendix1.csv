@@ -2,11 +2,11 @@ species_as_published,genus_as_published,epithet_as_published,Species,species_bas
 Alces alces,Alces,alces,Alces alces,verbatim,Artiodactyla,c,cathemeral,1,2750,36.6,28.5,primary,3
 Ammotragus lervia,Ammotragus,lervia,Ammotragus lervia,synonym:NCBI,Artiodactyla,c,cathemeral,2,1500,34.5,26.5,primary,4
 Antilope cervicapra,Antilope,cervicapra,Antilope cervicapra,synonym:NCBI,Artiodactyla,c,cathemeral,1,1250,28,20,primary,5
-Camelus bactrianus,Camelus,bactrianus,Camelus bactrianus,hub,Artiodactyla,d,diurnal,2,2000,40,29,primary,6
-Capra ibex,Capra,ibex,Capra ibex,synonym:NCBI,Artiodactyla,c,cathemeral,1,1400,35,25.5,primary,7
+Camelus bactrianus,Camelus,bactrianus,Camelus bactrianus,verbatim,Artiodactyla,d,diurnal,2,2000,40,29,primary,6
+Capra ibex,Capra,ibex,Capra ibex,verbatim,Artiodactyla,c,cathemeral,1,1400,35,25.5,primary,7
 Capricornis sumatraensis,Capricornis,sumatraensis,Capricornis sumatraensis,synonym:NCBI,Artiodactyla,c,cathemeral,1,1500,29,22.5,primary,8
-Cervus nippon,Cervus,nippon,Cervus nippon,synonym:NCBI,Artiodactyla,c,cathemeral,1,1300,20,16,primary,9
-Connochaetes gnou,Connochaetes,gnou,Connochaetes gnou,synonym:NCBI,Artiodactyla,c,cathemeral,1,1750,26.5,18.8,primary,10
+Cervus nippon,Cervus,nippon,Cervus nippon,verbatim,Artiodactyla,c,cathemeral,1,1300,20,16,primary,9
+Connochaetes gnou,Connochaetes,gnou,Connochaetes gnou,verbatim,Artiodactyla,c,cathemeral,1,1750,26.5,18.8,primary,10
 Dama dama,Dama,dama,Dama dama,verbatim,Artiodactyla,c,cathemeral,1,1450,34,25.3,primary,11
 Elaphurus davidianus,Elaphurus,davidianus,Elaphurus davidianus,verbatim,Artiodactyla,c,cathemeral,4,1500,33.8,24.7,primary,12
 Gazella dorcas,Gazella,dorcas,Gazella dorcas,synonym:NCBI,Artiodactyla,c,cathemeral,1,1100,26,18.5,primary,13
@@ -17,7 +17,7 @@ Odocoileus hemionus,Odocoileus,hemionus,Odocoileus hemionus,synonym:NCBI,Artioda
 Odocoileus virginianus,Odocoileus,virginianus,Odocoileus virginianus,verbatim,Artiodactyla,c,cathemeral,2,1450,27,19.3,primary,18
 Okapia johnstoni,Okapia,johnstoni,Okapia johnstoni,synonym:NCBI,Artiodactyla,d,diurnal,1,2100,27.1,19.9,primary,19
 Oryx gazella,Oryx,gazella,Oryx gazella,synonym:NCBI,Artiodactyla,c,cathemeral,2,1975,37.1,26.4,primary,20
-Ovis dalli,Ovis,dalli,Ovis dalli,synonym:NCBI,Artiodactyla,c,cathemeral,2,1263,31.7,22.7,primary,21
+Ovis dalli,Ovis,dalli,Ovis dalli,verbatim,Artiodactyla,c,cathemeral,2,1263,31.7,22.7,primary,21
 Strepsiceros spekei,Strepsiceros,spekei,Tragelaphus spekii,synonym:NCBI,Artiodactyla,c,cathemeral,2,1338,30.3,23.9,primary,22
 Strepsiceros strepsiceros,Strepsiceros,strepsiceros,Tragelaphus strepsiceros,synonym:MDD_to_NCBI,Artiodactyla,c,cathemeral,1,2200,41.7,31.4,primary,23
 Sylvicapra grimmia,Sylvicapra,grimmia,Sylvicapra grimmia,synonym:NCBI,Artiodactyla,n,nocturnal,1,1000,26,20.5,primary,24
@@ -155,7 +155,7 @@ Hapalemur griseus,Hapalemur,griseus,Hapalemur griseus,verbatim,Primates,d,diurna
 Hylobates lar,Hylobates,lar,Hylobates lar,verbatim,Primates,d,diurnal,1,530,17.7,10,primary,156
 Hylobates leucogenys,Hylobates,leucogenys,Nomascus leucogenys,synonym:NCBI,Primates,d,diurnal,1,546,18.9,11.2,primary,157
 Hylobates sp.,Hylobates,sp.,Hylobates sp.,hub,Primates,d,diurnal,3,500,19.9,10.7,primary,158
-Lagothrix lagotricha,Lagothrix,lagotricha,Lagothrix lagothricha,spelling,Primates,d,diurnal,2,508,20,10,primary,159
+Lagothrix lagotricha,Lagothrix,lagotricha,Lagothrix lagotricha,hub,Primates,d,diurnal,2,508,20,10,primary,159
 Lemur catta,Lemur,catta,Lemur catta,verbatim,Primates,d,diurnal,3,425,15.6,12,primary,160
 Leontopithecus rosalia,Leontopithecus,rosalia,Leontopithecus rosalia,verbatim,Primates,d,diurnal,1,261,11.2,6.6,primary,161
 Leontopithecus sp.,Leontopithecus,sp.,Leontopithecus sp.,verbatim,Primates,d,diurnal,1,268,12.2,6.5,primary,162
@@ -165,7 +165,7 @@ Loris tardigradus,Loris,tardigradus,Loris tardigradus,verbatim,Primates,n,noctur
 Macaca fuscata,Macaca,fuscata,Macaca fuscata,verbatim,Primates,d,diurnal,1,540,17.4,9.9,primary,166
 Macaca fascicularis,Macaca,fascicularis,Macaca fascicularis,verbatim,Primates,d,diurnal,3,517,18.4,9.6,primary,167
 Macaca radiata,Macaca,radiata,Macaca radiata,verbatim,Primates,d,diurnal,3,483,18.6,9.3,primary,168
-Macaca sp.,Macaca,sp.,Macaca sp.,verbatim,Primates,d,diurnal,3,488,19.7,10.3,primary,169
+Macaca sp.,Macaca,sp.,Macaca sp.,unspecified_in_source,Primates,d,diurnal,3,488,19.7,10.3,primary,169
 Macaca mulatta,Macaca,mulatta,Macaca mulatta,verbatim,Primates,d,diurnal,3,553,20,10.8,primary,170
 Macaca nemestrina,Macaca,nemestrina,Macaca nemestrina,verbatim,Primates,d,diurnal,3,516,20.4,11.4,primary,171
 Macaca silenus,Macaca,silenus,Macaca silenus,verbatim,Primates,d,diurnal,1,535,20.4,11.8,primary,172

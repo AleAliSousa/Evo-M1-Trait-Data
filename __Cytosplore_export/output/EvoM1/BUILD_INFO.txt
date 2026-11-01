@@ -1,39 +1,40 @@
-built:           2026-10-23 12:45:52 PDT
-repo commit:     6a4f181 (from .git/HEAD; git command unavailable)
+built:           2026-10-31 19:44:26 PDT
+repo commit:     e3f8164 (from .git/HEAD; git command unavailable)
 cohort:          EvoM1 (25 species)
 match level:     species
 core threshold:  >= 80% of cohort (>= 20 species)
 pooling mode:    off
 species without any data: none
-long rows (all values):   5417
-  of which measurement:   5365
-species x variable cells: 5106
-variables in wide:        775   (matrix fill 26.4%)
-variables in wide_core:   34   (matrix fill 91.2%)
+long rows (all values):   5739
+  of which measurement:   5687
+species x variable cells: 5423
+variables in wide:        988   (matrix fill 22.0%)
+variables in wide_core:   34   (matrix fill 91.6%)
 cells unresolved categorical: 0
-cells with numeric spread > 50%: 9
-units: 764 from key, 0 from merge rows, 2 parsed from label, 9 none
+cells with numeric spread > 50%: 10
+units: 876 from key, 95 from merge rows, 8 parsed from label, 9 none
 variables flagged m1_motor_related: 95 (of which core: 0)
 domains excluded from wide/cells/dictionary: dataset metadata
 
 variables per domain (all / core / m1_motor_related):
-  brain structure & size            190 /    2 /    5
+  brain structure & size            192 /    2 /    5
   cellular composition              125 /    0 /    4
   cortical & cerebellar folding       9 /    0 /    0
   body size                          11 /    2 /    0
-  metabolism                         72 /    1 /    2
+  metabolism                         70 /    1 /    2
   life history                       27 /   10 /    0
   diet & ecology                     51 /   15 /    0
-  behaviour & cognition              47 /    4 /    9
+  behaviour & cognition              56 /    4 /    9
   sensorimotor & motor pathways      23 /    0 /   23
   hand & limb morphology             17 /    0 /   17
   sleep & torpor                      8 /    0 /    0
-  Unclassified                       11 /    0 /    0
+  Unclassified                      112 /    0 /    0
   behaviour                           1 /    0 /    0
   brain size                         10 /    0 /    1
   cellular morphology                97 /    0 /   32
   communication                       5 /    0 /    0
   ecology                            34 /    0 /    2
+  molecular composition             102 /    0 /    0
   sensory                             6 /    0 /    0
   sensory performance                20 /    0 /    0
-  sociality                          11 /    0 /    0
+  sociality                          12 /    0 /    0

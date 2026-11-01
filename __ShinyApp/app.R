@@ -1175,8 +1175,50 @@ basis_conflict <- function(a, b) {
     if (pb %in% names(POOL_LABEL)) POOL_LABEL[[pb]] else pb)
 }
 
+# ---- Species-level consolidation --------------------------------------------
+# A species usually carries several rows for one variable: several sources
+# pooled by a merge, two merges sharing a label (Body_Mass from body_ecology and
+# PanTHERIA), or several specimens kept at row level. The plot and the
+# Regression tab need ONE value per species x variable, and that collapse is
+# where a single bad row does its damage. Before 2026-10-31 the collapse was the
+# arithmetic mean: Zilles 2011 Table S2 lists a 101.3 g brain for a mouse lemur
+# (body and brain cells transposed in the published supplement), and that one
+# row put Microcebus murinus at 6.3 g against 17 other reports of 1.5-2.0 g;
+# Baron 1996's extractor gave seven bats a 3 mm3 brain. A mean moves by an order
+# of magnitude on such a row; a median does not move at all. So:
+#   pool_value   median across the species' rows (= the value when there is one)
+#   pool_spread  max/min across the rows -- the sources' disagreement. A species
+#                whose sources differ by more than DISCORD_RATIO is still plotted
+#                and modelled, but is marked (hollow point; Discordant column)
+#                and can be excluded with one click. Hiding it silently would
+#                hide exactly the rows a curator needs to see.
+# The merges themselves are untouched; this is read-time consolidation only.
+DISCORD_RATIO <- 2
+pool_value  <- function(v) stats::median(v)
+pool_spread <- function(v) if (length(v) > 1L && min(v) > 0) max(v) / min(v) else 1
+# One row per species, one column per variable (value), plus the per-variable
+# spread; `d` has Species / Variable / Value_num and only finite values.
+collapse_species <- function(d, vars, species = NULL) {
+  sp <- if (is.null(species)) sort(unique(d$Species)) else unique(species)
+  w <- data.frame(Species = sp, stringsAsFactors = FALSE, check.names = FALSE)
+  val <- if (nrow(d)) tapply(d$Value_num, list(d$Species, d$Variable), pool_value) else NULL
+  spr <- if (nrow(d)) tapply(d$Value_num, list(d$Species, d$Variable), pool_spread) else NULL
+  disc <- rep("", length(sp))
+  for (v in vars) {
+    if (!is.null(val) && v %in% colnames(val)) {
+      w[[v]] <- unname(val[match(sp, rownames(val)), v])
+      s <- unname(spr[match(sp, rownames(spr)), v])
+      hit <- !is.na(s) & s > DISCORD_RATIO
+      disc[hit] <- ifelse(nzchar(disc[hit]), paste0(disc[hit], "; ", v, sprintf(" (%.1fx)", s[hit])),
+                          paste0(v, sprintf(" (%.1fx)", s[hit])))
+    } else w[[v]] <- rep(NA_real_, length(sp))
+  }
+  w$Discordant_sources <- disc
+  w
+}
+
 # ---- Multiple regression (Regression tab) -----------------------------------
-# Y ~ X + covariates on species means. The covariates are usually body size,
+# Y ~ X + covariates on species values (median across sources). The covariates are usually body size,
 # whole-brain size, or both: "does X still predict Y once size is accounted for?"
 # Any other measurement may be added as a covariate as well.
 #
@@ -1195,18 +1237,15 @@ size_choices <- function(labs) {
 body_size_choices  <- size_choices(intersect(numeric_labels, present[var_domain == "body size"]))
 brain_size_choices <- size_choices(intersect(numeric_labels, present[look(lab_family, present) == "brain_size"]))
 
-# Species-mean wide table for any set of variables: one row per species with a
-# value for every one of them (mean if several sources), plus taxonomic order.
+# Species-level wide table for any set of variables: one row per species with a
+# value for every one of them (median if several sources -- see collapse_species),
+# the Discordant_sources column, plus taxonomic order.
 species_means <- function(vars, species = NULL, complete = TRUE) {
   vars <- unique(vars)
   d <- compiled[compiled$Variable %in% vars & is.finite(compiled$Value_num),
                 c("Species", "Variable", "Value_num")]
   if (!is.null(species)) d <- d[d$Species %in% species, , drop = FALSE]
-  sp <- if (is.null(species)) sort(unique(d$Species)) else unique(species)
-  w <- data.frame(Species = sp, stringsAsFactors = FALSE, check.names = FALSE)
-  m <- if (nrow(d)) tapply(d$Value_num, list(d$Species, d$Variable), mean) else NULL
-  for (v in vars) w[[v]] <- if (!is.null(m) && v %in% colnames(m))
-    unname(m[match(sp, rownames(m)), v]) else rep(NA_real_, length(sp))
+  w <- collapse_species(d, vars, species)
   if (complete) w <- w[Reduce(`&`, lapply(w[vars], is.finite)), , drop = FALSE]
   w$Order <- unname(tax_order[w$Species]); w$Order[is.na(w$Order)] <- "Unknown"
   w
@@ -1333,6 +1372,8 @@ reg_fit <- function(w, y, x, covs, logscale, method) {
   b <- tt[2, 1]
   sp <- data.frame(Species = d$Species, Order = d$Order, stringsAsFactors = FALSE)
   for (i in seq_along(vars)) sp[[vars[i]]] <- w[[vars[i]]][match(d$Species, w$Species)]
+  if ("Discordant_sources" %in% names(w))
+    sp$Discordant_sources <- w$Discordant_sources[match(d$Species, w$Species)]
   sp$Y_resid_on_covariates <- as.numeric(stats::resid(red))
   sp$Fitted_full <- as.numeric(stats::fitted(full))
   sp$Resid_full  <- as.numeric(stats::resid(full))
@@ -1520,20 +1561,26 @@ ui <- page_navbar(
             checkboxInput("p_log", "Log₁₀ both axes", value = TRUE)
           ),
           layout_columns(
-            col_widths = c(4, 8),
+            col_widths = c(4, 4, 4),
             checkboxInput("p_pgls",
                           "Phylogenetic regression (PGLS)", value = FALSE),
             selectInput("p_model", "Phylogenetic model",
                         choices = c("Pagel's lambda" = "Pagel",
                                     "Brownian motion" = "Brownian"),
-                        selected = "Pagel")
+                        selected = "Pagel"),
+            checkboxInput("p_drop_discord",
+                          sprintf("Exclude species whose sources differ > %gx", DISCORD_RATIO),
+                          value = FALSE)
           ),
           uiOutput("p_axis_defs"),
           uiOutput("p_pgls_note"),
           helpText("Each point is a species with values for both variables ",
-                   "(mean if several sources). Filter or colour by taxonomic ",
+                   "(median if several sources; a hollow point means the sources ",
+                   sprintf("for that species differ by more than %gx, so its value ", DISCORD_RATIO),
+                   "rests on disagreeing reports). Filter or colour by taxonomic ",
                    "order; enable PGLS to fit a phylogenetically-corrected ",
-                   "regression (orange = OLS, black = PGLS). To control for body ",
+                   "regression (orange = OLS, black = PGLS). The OLS slope, SE, R² ",
+                   "and n are printed under the plot. To control for body ",
                    "or brain size, or to add further variables, use the ",
                    strong("Regression"), " tab."),
           plotOutput("p_plot", height = "540px")
@@ -1604,7 +1651,7 @@ ui <- page_navbar(
       sidebar = sidebar(
         width = 360,
         helpText("Does X predict Y once size is accounted for? Fits ",
-                 tags$code("Y ~ X + covariates"), " on species means, by OLS or ",
+                 tags$code("Y ~ X + covariates"), " on species values (median across sources), by OLS or ",
                  "phylogenetic GLS. Pick body size, brain size or both as the ",
                  "control, and optionally add further covariates."),
         selectizeInput("r_y", "Response (Y)", choices = NULL),
@@ -1678,7 +1725,8 @@ ui <- page_navbar(
         nav_panel(
           "Species",
           p(class = "text-muted",
-            "One row per species in the model: the raw species means, then ",
+            "One row per species in the model: the species values (median across sources; ",
+            tags$code("Discordant_sources"), " names any variable whose sources differ > 2x), then ",
             tags$code("Y_resid_on_covariates"), " — Y relative to the ",
             "covariates alone (for example, brain-part size relative to body ",
             "size) — and the full model's fitted values and residuals, in ",
@@ -1852,7 +1900,7 @@ ui <- page_navbar(
         "their own kind (body size, life history, diet & ecology, metabolism, ",
         "behaviour & cognition) instead of being pooled into one trait bucket."),
       h5("Regression"),
-      p("Multiple regression on species means: a response, a predictor of ",
+      p("Multiple regression on species values (median across sources): a response, a predictor of ",
         "interest, and covariates — body size, whole-brain size (on one ",
         "measurement basis at a time), both, or any other measurement. Fitted by ",
         "OLS or phylogenetic GLS, with an added-variable plot, the gain in fit ",
@@ -2176,23 +2224,33 @@ server <- function(input, output, session) {
   # ---- Compiled: plot
   p_data <- reactive({
     req(input$p_x, input$p_y)
-    d  <- compiled[compiled$Variable %in% c(input$p_x, input$p_y) &
-                     !is.na(compiled$Value_num), ]
+    if (input$p_x == input$p_y) return(NULL)
+    vars <- c(input$p_x, input$p_y)
+    d  <- compiled[compiled$Variable %in% vars & is.finite(compiled$Value_num),
+                   c("Species", "Variable", "Value_num")]
     if (nrow(d) == 0) return(NULL)
-    ag <- aggregate(Value_num ~ Species + Variable, data = d, FUN = mean)
-    names(ag)[names(ag) == "Value_num"] <- "Value"
-    w  <- reshape(ag, idvar = "Species", timevar = "Variable", direction = "wide")
-    names(w) <- sub("^Value\\.", "", names(w))
-    keep <- c("Species", input$p_x, input$p_y)
-    keep <- keep[keep %in% names(w)]
-    if (length(keep) < 3) return(NULL)
-    w <- w[, keep]
-    w <- w[stats::complete.cases(w), ]
+    # one value per species x variable (median across sources) + source spread
+    w <- collapse_species(d, vars)
+    w <- w[is.finite(w[[vars[1]]]) & is.finite(w[[vars[2]]]), , drop = FALSE]
+    w$Discordant <- nzchar(w$Discordant_sources)
+    if (isTRUE(input$p_drop_discord)) w <- w[!w$Discordant, , drop = FALSE]
     # attach taxonomic order; filter to the chosen clade
     w$Order <- unname(tax_order[w$Species]); w$Order[is.na(w$Order)] <- "Unknown"
     if (!is.null(input$p_clade) && input$p_clade != "All")
       w <- w[w$Order == input$p_clade, ]
     w
+  })
+
+  # OLS summary for the plotted (log or linear) space: slope +- SE, R2, n. The
+  # orange geom_smooth line is this fit; the numbers belong beside it.
+  p_ols <- reactive({
+    w <- p_data(); if (is.null(w) || nrow(w) < 3) return(NULL)
+    x <- w[[input$p_x]]; y <- w[[input$p_y]]
+    if (isTRUE(input$p_log)) { ok <- x > 0 & y > 0; x <- log10(x[ok]); y <- log10(y[ok]) }
+    if (length(x) < 3 || length(unique(x)) < 2) return(NULL)
+    f <- stats::lm(y ~ x); s <- summary(f)
+    list(slope = coef(f)[2], se = s$coefficients[2, 2], r2 = s$r.squared, n = length(x),
+         intercept = coef(f)[1])
   })
 
   # phylogenetic regression result for the current plot (NULL unless enabled)
@@ -2257,18 +2315,41 @@ server <- function(input, output, session) {
                   "No species have values for both selected variables."))
     x <- input$p_x; y <- input$p_y
     colour_by <- isTRUE(input$p_colour) && length(unique(w$Order)) > 1
+    n_disc <- sum(w$Discordant)
+    # Discordant species (sources differ > DISCORD_RATIO) are drawn hollow so a
+    # reader can see which points rest on disagreeing sources.
+    w$Sources <- factor(ifelse(w$Discordant, "disagree", "agree"), levels = c("agree", "disagree"))
     g <- ggplot(w, aes(x = .data[[x]], y = .data[[y]]))
     if (colour_by) {
-      g <- g + geom_point(aes(colour = Order), alpha = 0.8, size = 2.4) +
+      g <- g + geom_point(aes(colour = Order, shape = Sources), alpha = 0.8, size = 2.4,
+                          stroke = 0.9) +
         labs(colour = "Order")
     } else {
-      g <- g + geom_point(alpha = 0.75, size = 2.4, colour = "#2c7fb8")
+      g <- g + geom_point(aes(shape = Sources), alpha = 0.75, size = 2.4, stroke = 0.9,
+                          colour = "#2c7fb8")
     }
+    g <- g + scale_shape_manual(
+      values = c(agree = 16, disagree = 1), drop = FALSE,
+      labels = c(agree = "sources agree",
+                 disagree = sprintf("sources differ > %gx (hollow)", DISCORD_RATIO)),
+      name = "Species value = median of") +
+      guides(shape = if (n_disc) "legend" else "none")
+    ols <- p_ols()
+    cap <- if (is.null(ols)) NULL else
+      sprintf("OLS%s: slope = %.3f \u00b1 %.3f (SE), R\u00b2 = %.3f, n = %d",
+              if (isTRUE(input$p_log)) " (log\u2081\u2080\u2013log\u2081\u2080)" else "",
+              ols$slope, ols$se, ols$r2, ols$n)
     g <- g + labs(x = x, y = y,
-                  subtitle = paste(nrow(w), "species with both measurements")) +
-      theme_minimal(base_size = 14)
+                  subtitle = paste0(nrow(w), " species with both measurements",
+                                    if (n_disc) sprintf("; %d with sources differing > %gx (hollow)",
+                                                        n_disc, DISCORD_RATIO) else ""),
+                  caption = cap) +
+      theme_minimal(base_size = 14) +
+      theme(plot.caption = element_text(hjust = 0, size = 12, colour = "#d95f0e"))
     if (isTRUE(input$p_log)) {
-      g <- g + scale_x_log10() + scale_y_log10() +
+      # 10^k tick labels instead of 1e+02
+      g <- g + scale_x_log10(labels = scales::label_log()) +
+        scale_y_log10(labels = scales::label_log()) +
         geom_smooth(method = "lm", se = FALSE, linewidth = 0.6,
                     colour = "#d95f0e")
     } else {
@@ -2969,7 +3050,9 @@ server <- function(input, output, session) {
     d <- d[as.character(d$Verdict) %in% input$rc_verdict, , drop = FALSE]
     if (!identical(input$rc_kind, "all"))
       d <- d[startsWith(d$Group, paste0(input$rc_kind, "|")), , drop = FALSE]
-    q <- tolower(trimws(input$rc_search))
+    # input$rc_search is NULL until the Reconcile tab's UI has initialised (and in
+    # shiny::testServer), and nzchar(NULL) is logical(0) -- an error inside if().
+    q <- tolower(trimws(if (is.null(input$rc_search)) "" else input$rc_search))
     if (nzchar(q)) d <- d[grepl(q, tolower(d$Series_A), fixed = TRUE) |
                             grepl(q, tolower(d$Series_B), fixed = TRUE), , drop = FALSE]
     d

@@ -77,9 +77,9 @@ final.dataframe <- long
 write.csv(final.dataframe, final_csv, row.names = FALSE, na = "")
 if (!is.na(tsv_dir) && dir.exists(tsv_dir)) {
   filecodes    <- read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
-  ## Registry lookup name differs from this file's name (added 2026-09-27): the registry keeps the printed Roman numeral ("Table I"), so its Item name is Schusterman__1974_TableI.
-  ## Only the lookup uses it; the local files keep this folder's naming.
-  registry_item_name <- "Schusterman__1974_TableI"
+  ## The registry kept the printed Roman numeral ("Schusterman__1974_TableI") until it was renamed
+  ## to this file's own item name (checked 2026-10-31), so the lookup is by item_name again.
+  registry_item_name <- item_name
   nfc <- function(x) if (requireNamespace("stringi", quietly = TRUE)) stringi::stri_trans_nfc(x) else x
   item_encoded <- filecodes$`Item encoded`[match(nfc(registry_item_name), nfc(filecodes$`Item name`))]
   if (length(item_encoded) != 1L || is.na(item_encoded) || !nzchar(item_encoded) ||

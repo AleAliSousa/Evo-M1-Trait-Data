@@ -6,7 +6,11 @@ The authors' Materials and Methods / Animals report approximately 50 rats in one
 
 This is a primary approximate whole-colony population estimate, NOT an exact census, a typical social-subgroup size or a mean of colonies. Age scope is unspecified. The approximate flag and commensal farm context remain in the table and definition. It enters a population-group label, not the generic social-group-size pool.
 
-Rebuild with `_checks/social_variables/build_population_censuses.py`.
+Rebuild (changed 2026-10-31): `_checks/social_variables/build_population_censuses.py` writes the
+constructed snapshot from the PMC XML; `Modlinska_Stryjek_2016_Colony.R` then builds the analysis row
+from it, parsing the printed `approx. 50 individuals` and stopping if that wording changes. Output is
+unchanged apart from R's `TRUE` spelling in `approximate`. The item is unregistered, so the public TSV
+is skipped with a message.
 
 ## Snapshot provenance — repaired 2026-10-31
 

@@ -21,7 +21,7 @@ Compilations contributing secondary-only cells (cells):
 - GalánAcedo_etal_2019: 98
 - Karbowski__2007: 79
 - Nunn_Samson_2018: 75
-- deMagalhães_etal_2024: 61
+- deMagalhães_etal_2024: 61
 - Dunn_Smaers_2018: 55
 - Myhrvold_etal_2015: 42
 - Heffner_Masterton_1975: 31

@@ -432,7 +432,7 @@ RESOLVED = {
     # Table 12-1 "Brain and Body Weights from Literature" compiles orang-utan values from
     # multiple 19th/20th-century sources; the chapter text explicitly flags uncertainty
     # about whether the compiled brain weights are fresh -- textbook case for "unspecified".
-    ("Zilles_Rehkämper_1988", "Brain_weight_g"):
+    ("Zilles_Rehkämper_1988", "Brain_weight_g"):
         ("mass", "mass_compilation_unspecified", "unknown", "unknown", "unknown",
          "unknown", "mass_measured", True, "quoted", P),
     # ---- volume columns ---------------------------------------------------

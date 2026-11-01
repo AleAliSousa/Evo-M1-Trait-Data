@@ -26,7 +26,11 @@ setwd(folder)
 # Load docxtractr
 library(docxtractr)
 # Define the PDF file path
-docx <- read_docx("https://static-content.springer.com/esm/art%3A10.1038%2Fs41598-018-26062-8/MediaObjects/41598_2018_26062_MOESM1_ESM.docx")
+# The publisher's supplement is already in this folder as the untouched download; read that and
+# fall back to the URL only if it is missing, so the build no longer needs the network (2026-10-31).
+docx_url   <- "https://static-content.springer.com/esm/art%3A10.1038%2Fs41598-018-26062-8/MediaObjects/41598_2018_26062_MOESM1_ESM.docx"
+docx_local <- file.path(folder, "41598_2018_26062_MOESM1_ESM.docx")
+docx <- read_docx(if (file.exists(docx_local)) docx_local else docx_url)
 # Use docx_extract_all_tbls
 tables5 <- docx_extract_all_tbls(docx,guess_header=TRUE,preserve=FALSE,trim=TRUE)
 

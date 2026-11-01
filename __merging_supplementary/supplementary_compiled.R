@@ -48,8 +48,21 @@ suppressPackageStartupMessages({ library(readr); library(dplyr) })
 if (!isTRUE(l10n_info()[["UTF-8"]])) try(Sys.setlocale("LC_CTYPE", "en_US.UTF-8"), silent = TRUE)
 
 here <- {
+  ## When this file is source()d from another script (ManyPrimates__2022/build_manyprimates_items.R
+  ## does that), --file= names the CALLING script, so the innermost source() frame pointing at this
+  ## file wins; Rscript and a plain working directory are the fallbacks, in that order.
+  me <- "supplementary_compiled.R"
+  d <- NULL
+  for (k in rev(seq_along(sys.frames()))) {
+    of <- tryCatch(sys.frames()[[k]]$ofile, error = function(e) NULL)
+    if (is.character(of) && length(of) == 1L && basename(of) == me && file.exists(of)) {
+      d <- dirname(normalizePath(of)); break
+    }
+  }
   f <- grep("^--file=", commandArgs(FALSE), value = TRUE)
-  if (length(f)) dirname(normalizePath(sub("^--file=", "", f[1]))) else getwd()
+  if (is.null(d) && length(f) && basename(sub("^--file=", "", f[1])) == me)
+    d <- dirname(normalizePath(sub("^--file=", "", f[1])))
+  if (is.null(d)) getwd() else d
 }
 repo <- normalizePath(file.path(here, ".."))
 stopifnot(dir.exists(file.path(repo, "_keys")))
@@ -88,8 +101,10 @@ read_source <- function(m) {
     if (grepl("\\.tsv$", p)) return(read.delim(p, stringsAsFactors = FALSE, check.names = FALSE, encoding = "UTF-8"))
     return(read.csv(p, stringsAsFactors = FALSE, check.names = FALSE, encoding = "UTF-8"))
   }
-  enc <- enc_of[[m$item]]
-  if (is.null(enc) || is.na(enc) || !nzchar(enc)) stop("item not in __ReadMe.xlsx: ", m$item)
+  ## single-bracket lookup: a name that is not in the registry gives NA and the explanatory stop
+  ## below, where [[ ]] threw "subscript out of bounds" and hid which item was missing.
+  enc <- unname(enc_of[m$item])
+  if (length(enc) != 1L || is.na(enc) || !nzchar(enc)) stop("item not in __ReadMe.xlsx: ", m$item)
   p <- file.path(repo, "__Public", "comparative-data", paste0(sub("\\.tsv$", "", enc), ".tsv"))
   if (!file.exists(p)) stop("public TSV missing for ", m$item, ": ", p)
   read.delim(p, stringsAsFactors = FALSE, check.names = FALSE, encoding = "UTF-8")

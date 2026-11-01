@@ -67,13 +67,16 @@ if (!is.na(base)) {
   
   if (!is.na(item_encoded) && nzchar(item_encoded)) {
     
+    ## The public file is always <Item encoded>.tsv; this item's encoded name ends in ".txt"
+    ## (it carries the source filename), which is why the suffix was dropped here until
+    ## 2026-10-31. The older extension-less copy in __Public is for the owner to remove.
     write.table(
       dat,
       file.path(
         base,
         "__Public",
         "comparative-data",
-        item_encoded
+        paste0(item_encoded, ".tsv")
       ),
       sep = "\t",
       row.names = FALSE,
@@ -81,6 +84,6 @@ if (!is.na(base)) {
       na = ""
     )
     
-    message("Wrote public file: ", item_encoded)
+    message("Wrote public file: ", paste0(item_encoded, ".tsv"))
   }
 }

@@ -61,3 +61,7 @@ n_only_WR05,Count of tokens only in WR05,,count,,info,mammals,Jones_etal_2009_WR
 n_only_WR93,Count of tokens only in WR93,,count,,info,mammals,Jones_etal_2009_WR05_vs_WR93_consistency_references,,
 count,Name of a summary count printed by Jones_etal_2009_WR05_vs_WR93_consistency.R,,,,info,mammals,Jones_etal_2009_WR05_vs_WR93_consistency_summary,,
 value,Its value for the current run,,count,,info,mammals,Jones_etal_2009_WR05_vs_WR93_consistency_summary,,
+ref_key,Reference index number exactly as the data file's References column prints it; one row per cited work,,integer,,info,mammals,Jones_etal_2009_PanTHERIA1-0WR05Aug2008.txt_references,multi-citations are split on '; ' in the data column and bind back on this key,
+cited_in_column,Name of the data-file column the key was read from (References),,,,info,mammals,Jones_etal_2009_PanTHERIA1-0WR05Aug2008.txt_references,,
+citation,"Full bibliographic entry verbatim for that number, from Jones_etal_2009_references",,,,info,mammals,Jones_etal_2009_PanTHERIA1-0WR05Aug2008.txt_references,,
+note,"Printing problems kept verbatim: truncated bibliography entries, and fused tokens decoded via Jones_etal_2009_References_malformed_tokens",,,,info,mammals,Jones_etal_2009_PanTHERIA1-0WR05Aug2008.txt_references,,

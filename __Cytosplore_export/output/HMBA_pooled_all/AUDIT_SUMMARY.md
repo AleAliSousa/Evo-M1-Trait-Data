@@ -25,7 +25,7 @@ Compilations contributing secondary-only cells (cells):
 - Heiss_etal_2004: 26
 - Bianchi_etal_2012: 21
 - Pasquaretta_etal_2014: 18
-- deMagalhães_etal_2024: 13
+- deMagalhães_etal_2024: 13
 - Boyer_Harrington_2019: 9
 - Iwaniuk_etal_2001: 9
 - Heffner_Masterton_1975: 9

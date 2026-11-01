@@ -11,7 +11,13 @@ These are SECONDARY classifications compiled from primary field studies. No clai
 
 Held records: the excluded-sheet row11 for Macropus giganteus has SG (solitary + group), in conflict with the paper's statement that SG was absent. It stays in snapshots but is excluded from the merge. Ailurops melanotis (two rows) is retained in snapshots but held from merging pending an NCBI identity anchor; ITIS recognizes it as a distinct valid species (TSN709403), so it must not be collapsed into A. ursinus. The final merge includes 64 species, with partial coverage explicitly stated in the definition.
 
-Next: acquire the full Dryad workbook to reconcile the eight-record count difference and recover exact population locations and full citations, then reconcile all rows by references and location. Do not append the full table to this subset as independent data. Rebuild with `_checks/social_variables/build_population_censuses.py`.
+Next: acquire the full Dryad workbook to reconcile the eight-record count difference and recover exact population locations and full citations, then reconcile all rows by references and location. Do not append the full table to this subset as independent data. Rebuild (changed 2026-10-31):
+`_checks/social_variables/build_population_censuses.py` freezes the S5 workbook and the sheet twin;
+`Qiu_etal_2022_Populations.R` then builds the 141 population rows from the frozen workbook and
+`Qiu_etal_2022_SocialStates.R` the 65 species state sets (run second, and it drops the held SG record).
+The python no longer writes those two CSVs. Output is unchanged except R's `TRUE`/`FALSE` spelling in
+`primary_paper_verified` and `merge_eligible`. Both items are still unregistered, so the public TSV is
+skipped with a message.
 
 Source integrity: local Office copies acquired added custom metadata without changes to worksheet/document content. Authoritative original bytes are preserved inside ZIP archives; the rebuild reads the archived workbook. source_manifest.csv hashes the archives and other non-Office evidence, not mutable display copies.
 

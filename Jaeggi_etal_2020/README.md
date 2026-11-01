@@ -8,7 +8,14 @@ All 245 population records across 100 printed species are transcribed from the p
 
 The merge table contains the set of states observed across populations, never a first or modal species state. No counts are inferred from solitary or pair labels. The original population rows remain available. The historical guanaco name Lama glama guanicoe maps to Lama guanicoe using MDD taxon 1006386; it must not map to the domestic llama.
 
-Rebuild: `python3 _checks/social_variables/build_population_censuses.py` from the repository root. Source input is unchanged. Definitions and the supplementary source mapping specify the app label and secondary role.
+Rebuild (changed 2026-10-31): `python3 _checks/social_variables/build_population_censuses.py` from the
+repository root freezes the snapshot and the readable sheet twin; the analysis layer is then built in R
+by `Jaeggi_etal_2020_Populations.R` (frozen workbook -> 245 population rows) and
+`Jaeggi_etal_2020_SocialStates.R` (those rows -> 100 species state sets, run second). The python no
+longer writes the two CSVs, so each file has one writer. The R rebuild reproduces them cell for cell
+except that `primary_paper_verified` now prints R's `FALSE` instead of python's `False`. Neither item is
+in `__ReadMe.xlsx`, so each script writes its CSV and reports that the public TSV is skipped until a
+registry row exists. Source input is unchanged. Definitions and the supplementary source mapping specify the app label and secondary role.
 
 Source integrity: local Office copies acquired added custom metadata without changes to worksheet/document content. Authoritative original bytes are preserved inside ZIP archives; the rebuild reads the archived workbook. source_manifest.csv hashes the archives and other non-Office evidence, not mutable display copies.
 

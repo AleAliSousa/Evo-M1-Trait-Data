@@ -40,7 +40,13 @@ evom1_restricted <- function(quiet = FALSE) {
   here <- local({                      # this repo's root: nearest ancestor with __ReadMe.xlsx
     d <- normalizePath(getwd(), mustWork = FALSE)
     a <- grep("^--file=", commandArgs(FALSE), value = TRUE)
-    if (length(a)) d <- dirname(normalizePath(sub("^--file=", "", a[1])))
+    ## Rscript passes --file= exactly as typed, so it is often RELATIVE to the directory the build
+    ## was launched from -- and a build that has already setwd() elsewhere can no longer resolve it.
+    ## Only use it when it still points at a real file; otherwise keep the working directory.
+    if (length(a)) {
+      f <- sub("^--file=", "", a[1])
+      if (file.exists(f)) d <- dirname(normalizePath(f))
+    }
     while (dirname(d) != d && !file.exists(file.path(d, "__ReadMe.xlsx"))) d <- dirname(d)
     if (file.exists(file.path(d, "__ReadMe.xlsx"))) d else NA_character_
   })

@@ -90,7 +90,7 @@ df cols: Species, body_weight_g, brain_weight_mg, total_brain_net_mm3, medulla_o
 
 Line 66 registers the item as `Stephan_etal_1970_Tables1-6` and line 92 points it at the
 combined TSV `ISBN%3A0390672505_Tables1-6`. But `standardized_term_volumes.csv` is keyed
-per table — `Stephan_etal_1970_Table1`, `_Table2`, … (rows 214+) — so the lookup for the
+per table — `Stephan_etal_1970_TABLE1`, `_Table2`, … (rows 214+) — so the lookup for the
 combined item finds nothing and `paper_long()` stops at line 303.
 
 The mappings themselves already exist and cover the columns in the error message

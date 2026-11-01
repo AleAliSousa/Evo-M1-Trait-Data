@@ -1,4 +1,4 @@
-# Stephan_etal_1988_Table1
+# Stephan_etal_1988_TABLE1
 
 ## Source
 
@@ -20,9 +20,9 @@ primates). The chapter has many other tables (Table 3 = per-structure size index
 |---|---|
 | `stephan_etal_1988.pdf` | The publication (38-page chapter). |
 | `stephan_etal_1988.xlsx` | Raw Adobe PDF→Excel export of the whole chapter (all 20 sheets, uncleaned). Provenance; not read by the scripts. |
-| `Stephan_etal_1988_Table1_snapshot.xlsx` | **Snapshot** (sheet `Table1`): Table 1 reproduced journal-style — caption; tier-1 header (BoW \| BrW \| EI \| Ecoethological characteristics); tier-2 ((g)\|(mg)\|(1)–(4)); grade rows (Tenrecinae/Scandentia/Prosimians/Simians) and species (`<code> <binomial>`); two footnote rows. Values transcribed from the **printed PDF page** (thousands commas kept). |
-| `Stephan_etal_1988_Table1.R` | Reformat → `Stephan_etal_1988_Table1.csv` (+ identifier-named TSV). Reads only the snapshot. |
-| `reference_tables/Stephan_etal_1988_Table1_definitions.csv` | Data dictionary (10-column schema). |
+| `Stephan_etal_1988_TABLE1_snapshot.xlsx` | **Snapshot** (sheet `Table1`): Table 1 reproduced journal-style — caption; tier-1 header (BoW \| BrW \| EI \| Ecoethological characteristics); tier-2 ((g)\|(mg)\|(1)–(4)); grade rows (Tenrecinae/Scandentia/Prosimians/Simians) and species (`<code> <binomial>`); two footnote rows. Values transcribed from the **printed PDF page** (thousands commas kept). |
+| `Stephan_etal_1988_TABLE1.R` | Reformat → `Stephan_etal_1988_TABLE1.csv` (+ identifier-named TSV). Reads only the snapshot. |
+| `reference_tables/Stephan_etal_1988_TABLE1_definitions.csv` | Data dictionary (10-column schema). |
 | `__Public/comparative-data/ISBN%3A0845140000_TABLE1.tsv` | Shared public copy (named from `__ReadMe.xlsx` Item encoded). |
 
 ## Snapshot fidelity notes

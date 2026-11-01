@@ -484,11 +484,11 @@
     },
     {
       "row": 665,
-      "item": "Sjölin_etal_2022_SupplementaryData",
+      "item": "Sjölin_etal_2022_SupplementaryData",
       "encoded": "10.1186%2Fs13041-022-00935-6_SupplementaryData",
       "progress": "BUILT; WIRED LOCALLY (snapshot, R, CSV, TSV, definitions, README, __merging_supplementary 102 labels); validation passed 2026-10-28; hosted app not published in this batch",
       "data_role": "primary",
-      "folder": "Sjölin_etal_2022",
+      "folder": "Sjölin_etal_2022",
       "public_tsv": true,
       "analysis_csv": true,
       "build_script": true,
@@ -714,7 +714,7 @@
       "encoded": "10.1016%2Fj.neuroscience.2005.11.038_Figure3A",
       "progress": null,
       "data_role": null,
-      "folder": "BallesterosYáñez_etal_2006",
+      "folder": "BallesterosYáñez_etal_2006",
       "public_tsv": true,
       "analysis_csv": true,
       "build_script": true,
@@ -728,7 +728,7 @@
       "encoded": "10.1016%2Fj.neuroscience.2005.11.038_Figure3B",
       "progress": null,
       "data_role": null,
-      "folder": "BallesterosYáñez_etal_2006",
+      "folder": "BallesterosYáñez_etal_2006",
       "public_tsv": true,
       "analysis_csv": true,
       "build_script": true,
@@ -742,7 +742,7 @@
       "encoded": "10.1016%2Fj.neuroscience.2005.11.038_Figure3C",
       "progress": null,
       "data_role": null,
-      "folder": "BallesterosYáñez_etal_2006",
+      "folder": "BallesterosYáñez_etal_2006",
       "public_tsv": true,
       "analysis_csv": true,
       "build_script": true,
@@ -756,7 +756,7 @@
       "encoded": "10.1016%2Fj.neuroscience.2005.11.038_Table1",
       "progress": null,
       "data_role": null,
-      "folder": "BallesterosYáñez_etal_2006",
+      "folder": "BallesterosYáñez_etal_2006",
       "public_tsv": true,
       "analysis_csv": true,
       "build_script": true,
@@ -1568,7 +1568,7 @@
       "encoded": "10.1007%2F978-3-662-03733-1_Figure62",
       "progress": "BUILT (R run 2026-10-22; public TSV written; human visual check of the digitization pending)",
       "data_role": "primary (first publication of Greilich 1984 unpublished thesis data)",
-      "folder": "Braitenberg_Schüz_1998",
+      "folder": "Braitenberg_Schüz_1998",
       "public_tsv": true,
       "analysis_csv": true,
       "build_script": true,
@@ -1582,7 +1582,7 @@
       "encoded": "10.1007%2F978-3-662-03733-1_Text",
       "progress": "BUILT (R run 2026-10-22; public TSV written; re-run R after the same-day context revision; human visual check pending)",
       "data_role": "primary (volumes, thickness); secondary (neurons per mm², from Schüz & Palm 1989); per-record roles in the item context table",
-      "folder": "Braitenberg_Schüz_1998",
+      "folder": "Braitenberg_Schüz_1998",
       "public_tsv": true,
       "analysis_csv": true,
       "build_script": true,
@@ -2422,7 +2422,7 @@
       "encoded": "10.1093%2Fnar%2Fgkad927_anagedata.txt",
       "progress": "FINISHED",
       "data_role": "secondary",
-      "folder": "deMagalhães_etal_2024",
+      "folder": "deMagalhães_etal_2024",
       "public_tsv": true,
       "analysis_csv": true,
       "build_script": true,
@@ -7350,7 +7350,7 @@
       "encoded": "10.1111%2Fj.1439-0310.1973.tb02094.x_Table4",
       "progress": "BUILT; WIRED LOCALLY; validation passed; hosted app not published in this batch",
       "data_role": "both",
-      "folder": "Lethmate_Dücker_1973",
+      "folder": "Lethmate_Dücker_1973",
       "public_tsv": true,
       "analysis_csv": true,
       "build_script": true,
@@ -7994,7 +7994,7 @@
       "encoded": "10.1002%2Fjez.70069_SupplementaryFile1",
       "progress": null,
       "data_role": "both",
-      "folder": "MedinaGonzález__2026",
+      "folder": "MedinaGonzález__2026",
       "public_tsv": true,
       "analysis_csv": true,
       "build_script": true,
@@ -8008,7 +8008,7 @@
       "encoded": "10.1002%2Fjez.70069_SupplementaryFile2",
       "progress": null,
       "data_role": "both",
-      "folder": "MedinaGonzález__2026",
+      "folder": "MedinaGonzález__2026",
       "public_tsv": true,
       "analysis_csv": true,
       "build_script": true,
@@ -8022,7 +8022,7 @@
       "encoded": "10.1002%2Fjez.70069_SupplementaryFile3",
       "progress": null,
       "data_role": "both",
-      "folder": "MedinaGonzález__2026",
+      "folder": "MedinaGonzález__2026",
       "public_tsv": true,
       "analysis_csv": true,
       "build_script": true,
@@ -8288,7 +8288,7 @@
       "encoded": "10.1007%2Fs10329-018-0697-0_Figure2",
       "progress": "BUILT; WIRED LOCALLY; validation passed; hosted app not published in this batch",
       "data_role": "primary",
-      "folder": "Norlén_etal_2019",
+      "folder": "Norlén_etal_2019",
       "public_tsv": true,
       "analysis_csv": true,
       "build_script": true,
@@ -8302,7 +8302,7 @@
       "encoded": "10.1007%2Fs10329-018-0697-0_Figure3",
       "progress": "BUILT; WIRED LOCALLY; validation passed; hosted app not published in this batch",
       "data_role": "primary",
-      "folder": "Norlén_etal_2019",
+      "folder": "Norlén_etal_2019",
       "public_tsv": true,
       "analysis_csv": true,
       "build_script": true,
@@ -8316,7 +8316,7 @@
       "encoded": "10.1007%2Fs10329-018-0697-0_Table1",
       "progress": "BUILT; WIRED LOCALLY; validation passed; hosted app not published in this batch",
       "data_role": "both",
-      "folder": "Norlén_etal_2019",
+      "folder": "Norlén_etal_2019",
       "public_tsv": true,
       "analysis_csv": true,
       "build_script": true,
@@ -9782,11 +9782,11 @@
     },
     {
       "row": 665,
-      "item": "Sjölin_etal_2022_SupplementaryData",
+      "item": "Sjölin_etal_2022_SupplementaryData",
       "encoded": "10.1186%2Fs13041-022-00935-6_SupplementaryData",
       "progress": "BUILT; WIRED LOCALLY (snapshot, R, CSV, TSV, definitions, README, __merging_supplementary 102 labels); validation passed 2026-10-28; hosted app not published in this batch",
       "data_role": "primary",
-      "folder": "Sjölin_etal_2022",
+      "folder": "Sjölin_etal_2022",
       "public_tsv": true,
       "analysis_csv": true,
       "build_script": true,
@@ -11508,7 +11508,7 @@
       "encoded": "ISBN%3A9780195043716_Table12-1",
       "progress": null,
       "data_role": null,
-      "folder": "Zilles_Rehkämper_1988",
+      "folder": "Zilles_Rehkämper_1988",
       "public_tsv": true,
       "analysis_csv": true,
       "build_script": true,
@@ -11522,7 +11522,7 @@
       "encoded": "ISBN%3A9780195043716_Table12-2",
       "progress": "FINISHED",
       "data_role": null,
-      "folder": "Zilles_Rehkämper_1988",
+      "folder": "Zilles_Rehkämper_1988",
       "public_tsv": true,
       "analysis_csv": true,
       "build_script": true,
@@ -11536,7 +11536,7 @@
       "encoded": "ISBN%3A9780195043716_Table12-3",
       "progress": null,
       "data_role": null,
-      "folder": "Zilles_Rehkämper_1988",
+      "folder": "Zilles_Rehkämper_1988",
       "public_tsv": true,
       "analysis_csv": true,
       "build_script": true,
@@ -11550,7 +11550,7 @@
       "encoded": "ISBN%3A9780195043716_Text",
       "progress": null,
       "data_role": null,
-      "folder": "Zilles_Rehkämper_1988",
+      "folder": "Zilles_Rehkämper_1988",
       "public_tsv": true,
       "analysis_csv": true,
       "build_script": true,
@@ -11840,7 +11840,7 @@
       "files": 8
     },
     {
-      "folder": "BallesterosYáñez_etal_2006",
+      "folder": "BallesterosYáñez_etal_2006",
       "registered_rows": 4,
       "files": 18
     },
@@ -11955,7 +11955,7 @@
       "files": 6
     },
     {
-      "folder": "Braitenberg_Schüz_1998",
+      "folder": "Braitenberg_Schüz_1998",
       "registered_rows": 2,
       "files": 11
     },
@@ -13090,7 +13090,7 @@
       "files": 6
     },
     {
-      "folder": "Lethmate_Dücker_1973",
+      "folder": "Lethmate_Dücker_1973",
       "registered_rows": 1,
       "files": 7
     },
@@ -13255,7 +13255,7 @@
       "files": 2
     },
     {
-      "folder": "MedinaGonzález__2026",
+      "folder": "MedinaGonzález__2026",
       "registered_rows": 3,
       "files": 13
     },
@@ -13330,7 +13330,7 @@
       "files": 4
     },
     {
-      "folder": "Norlén_etal_2019",
+      "folder": "Norlén_etal_2019",
       "registered_rows": 3,
       "files": 14
     },
@@ -13755,7 +13755,7 @@
       "files": 6
     },
     {
-      "folder": "Sjölin_etal_2022",
+      "folder": "Sjölin_etal_2022",
       "registered_rows": 1,
       "files": 9
     },
@@ -14055,7 +14055,7 @@
       "files": 4
     },
     {
-      "folder": "Zilles_Rehkämper_1988",
+      "folder": "Zilles_Rehkämper_1988",
       "registered_rows": 4,
       "files": 20
     },
@@ -14095,7 +14095,7 @@
       "files": 6
     },
     {
-      "folder": "deMagalhães_etal_2024",
+      "folder": "deMagalhães_etal_2024",
       "registered_rows": 1,
       "files": 9
     },

@@ -88,7 +88,11 @@ DS <- c(
   ## added 2026-09-27: the app now serves __merging_cell_morphology (app.R std_cell_morphology)
   "Cell type, size & morphology" = "__merging_cell_morphology",
   ## added 2026-10-15: app.R std_merge(GH$supplementary)
-  "Supplementary sources"    = "__merging_supplementary"
+  "Supplementary sources"    = "__merging_supplementary",
+  ## added 2026-10-31: three app.R std_merge() tables whose long files live in existing merge folders
+  "Taste performance"        = "__merging_sensory",
+  "Social composition, mirror tests & play" = "__merging_behaviour",
+  "Claustrum & cerebellar anatomy" = "__merging_volumes"
 )
 seen <- unique(compiled$Dataset)
 unmapped <- setdiff(seen, names(DS))

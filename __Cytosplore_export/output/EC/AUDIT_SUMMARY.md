@@ -22,7 +22,7 @@ Compilations contributing secondary-only cells (cells):
 - Karbowski__2007: 79
 - Nunn_Samson_2018: 75
 - Dunn_Smaers_2018: 55
-- deMagalhães_etal_2024: 51
+- deMagalhães_etal_2024: 51
 - Myhrvold_etal_2015: 34
 - Heffner_Masterton_1975: 30
 - Pasquaretta_etal_2014: 27

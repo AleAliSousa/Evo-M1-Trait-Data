@@ -5,7 +5,10 @@ here<-dirname(normalizePath(sub("^--file=","",a[1])));repo<-dirname(here)
 catalog<-read.csv(file.path(here,"ManyPrimates_built_items.csv"))
 selected<-grepl("^(Chivers__1984|Gautier__1988)_",catalog$item)
 run<-function(p){status<-system2(file.path(R.home("bin"),"Rscript"),shQuote(p));if(status!=0)stop("Build failed: ",p)}
-Sys.setenv(DATASET_REGISTRY=file.path(here,"ManyPrimates_Chivers_Gautier_build_registry.xlsx"))
+# The batch identity workbook was a stand-in until these items reached __ReadMe.xlsx; if it is
+# gone, build against the live registry instead of pointing at a missing file.
+wb<-file.path(here,"ManyPrimates_Chivers_Gautier_build_registry.xlsx")
+if(file.exists(wb))Sys.setenv(DATASET_REGISTRY=wb)else Sys.unsetenv("DATASET_REGISTRY")
 for(p in catalog$reader[selected])run(file.path(repo,p))
 Sys.unsetenv("DATASET_REGISTRY")
 Sys.setenv(SUPPLEMENTARY_SOURCE_PUBLICATIONS="Chivers__1984;Gautier__1988")

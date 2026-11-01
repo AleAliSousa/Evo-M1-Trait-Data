@@ -102,9 +102,10 @@ final.dataframe <- tibble(
 write.csv(final.dataframe, final_csv, row.names = FALSE, na = "")
 if (!is.na(tsv_dir) && dir.exists(tsv_dir)) {
   filecodes    <- read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
-  ## Registry lookup name differs from this file's name (added 2026-09-27): the registry row covers the printed Table 1 and Table 3 together ("Table 1 + Table 3").
-  ## Only the lookup uses it; the local files keep this folder's naming.
-  registry_item_name <- "Owren_etal_1988_Table1+Table3"
+  ## The registry row covers the printed Table 1 and Table 3 together; it was listed as
+  ## "Owren_etal_1988_Table1+Table3" until the registry renamed it to this file's own item name
+  ## (checked 2026-10-31), so the lookup is by item_name again.
+  registry_item_name <- item_name
   nfc <- function(x) if (requireNamespace("stringi", quietly = TRUE)) stringi::stri_trans_nfc(x) else x
   item_encoded <- filecodes$`Item encoded`[match(nfc(registry_item_name), nfc(filecodes$`Item name`))]
   if (length(item_encoded) != 1L || is.na(item_encoded) || !nzchar(item_encoded) ||

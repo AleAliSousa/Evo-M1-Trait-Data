@@ -37,3 +37,15 @@ Data role: **primary** (specimen catalogue of the authors' own collection). [TO 
 No public comparison folder exists, and no independent 0-mismatch audit is claimed. [TO CHECK: whether the committed CSV was produced by an R run of `Zilles_etal_2011_TableS2.R`; no execution log is held in the folder.] Definitions: `reference_tables/Zilles_etal_2011_TableS2_definitions.csv` (added 2026-10-13 alongside this README). Expected analysis rows: **119**.
 
 Pending: owner registry check; clean R audit → dry run → build → validate; human visual curation of the snapshot; collection-scoped species mapping; resolution of the [TO CHECK] items above before any merge.
+
+<!-- errata:begin -->
+## Errata
+
+Generated from `reference_tables/Zilles_etal_2011_errata.csv` by `_tools/dataset_builder/render_errata.R` -- edit the CSV, not this block. See `_tools/dataset_builder/ERRATA_CONVENTION.md`.
+
+| id | variable | where printed | printed | repo value before | issue | proposed | status | evidence | note |
+|---|---|---|---|---|---|---|---|---|---|
+| Zilles_etal_2011-E001 | brain_weight_fresh_g | Supplementary Table 2 (nyas_5978_sm_table2.xls), Microcebus murinus, catalogue number 1077 (source_row 39) | body_weight_g = 1.96; brain_weight_fresh_g = 101.3 | 101.3 | publication_error | brain_weight_fresh_g = 1.96; body_weight_g = 101.3 (cells transposed) | confirmed | The publisher's own supplementary XLS prints body 1.96 g and brain 101.3 g for this specimen. The other 10 M. murinus specimens in Tables S1-S2 weigh 29.8-98.3 g with brains of 1.54-2.00 g (1640-2000 mg), and no mouse lemur has a 101 g brain; the two cells are transposed. Carried into __merging_brain_mass as a 101.3 g measured brain mass, pulling the pooled species value to 6.30 g (17 other reports: 1.54-2.00 g). | CSV keeps the printed value. Correction layer: __merging_brain_mass/brain_mass_value_flags.csv skips the 101.3 raw value (publication_error_transposed_cells). |
+
+1 recorded, 0 open (proposed), 1 confirmed, 0 withdrawn.
+<!-- errata:end -->

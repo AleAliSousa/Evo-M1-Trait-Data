@@ -43,7 +43,7 @@ Data-role labels in the registry: 274 `primary`, 183 `secondary`, 82 `both`, and
 | Martin_etal_2017_MammalianVocalisationDataMartinetal.xlsx | Yes | Yes | Yes | Yes | Yes | (blank) |
 | Pellis_Iwaniuk_2000_Table1 | Yes | Yes | Yes | Yes | Yes | BUILT; WIRED LOCALLY (extract script, snapshot, R, CSV, TSV, definitions, README; 5 lab... |
 | Ross_Kirk_2007_Appendix1 | Yes | Yes | Yes | Yes | Yes | BUILT (extract script, snapshot, R, CSV, TSV, definitions, README); validation 8/8 2026... |
-| Sjölin_etal_2022_SupplementaryData | Yes | Yes | Yes | Yes | Yes | BUILT; WIRED LOCALLY (snapshot, R, CSV, TSV, definitions, README, __merging_supplementa... |
+| Sjölin_etal_2022_SupplementaryData | Yes | Yes | Yes | Yes | Yes | BUILT; WIRED LOCALLY (snapshot, R, CSV, TSV, definitions, README, __merging_supplementa... |
 
 Eight of these items were built or completed in this pass: Dlugosz Table S1; Franco Table 1 and Text; Garcia–Ravignani sp1; Heffner ResultsText and Figure 6; Martin Supporting Information S1 and Mammalian Vocalisation Data.
 The other 11 recent items already had public TSVs. All 19 now have a public TSV, analysis CSV, R script, frozen source, definitions, and README on disk.

@@ -8,6 +8,22 @@ Original PDF downloaded 2026-10-23 from the publisher:
 https://threatenedtaxa.org/index.php/JoTT/article/download/4026/6224
 CC BY 4.0. Not found in the local EndNote metadata search.
 
+## Build chain (R owns the analysis layer, added 2026-10-31)
+
+| file | written by | reads |
+|---|---|---|
+| `Wiafe__2019_Table3_snapshot.csv`, `Wiafe__2019_GroupSizes_snapshot.csv` | `build_group_sizes.py` (transcription only) | the PDF, by hand |
+| `Wiafe__2019_Table3.csv` | `Wiafe__2019_Table3.R` | the Table 3 snapshot |
+| `Wiafe__2019_GroupSizes.csv` | `Wiafe__2019_GroupSizes.R` | the abstract snapshot |
+
+`build_group_sizes.py` no longer writes the CSVs (one writer per file). Both R scripts resolve the
+printed names through `_keys/General/species_key.csv` (four `source_publication = Wiafe__2019`
+rows, basis `common_name`, added 2026-10-31) and stop if those rows disappear. Neither item is in
+`__ReadMe.xlsx` yet, so each writes its CSV and reports that the public TSV is skipped until a
+registry row exists. The R rebuild reproduces `Wiafe__2019_Table3.csv` cell for cell; in
+`Wiafe__2019_GroupSizes.csv` the Green Monkey mean is now the number `10` rather than the string
+`10.0` — the printed `10.0` is preserved in the snapshot.
+
 `build_group_sizes.py` reproduces the transcription. Table 3 (PDF page 8,
 printed p.13528) was visually checked. All 16 sector rows, names, zeros and range
 strings remain in the snapshot. The source's overall abstract summary is a

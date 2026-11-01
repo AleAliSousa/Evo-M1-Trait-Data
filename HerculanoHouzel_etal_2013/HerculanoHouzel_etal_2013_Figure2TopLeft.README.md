@@ -1,0 +1,5 @@
+# HerculanoHouzel_etal_2013_Figure2TopLeft
+
+The registered Figure 2 top-left item has 18 mouse cortical-area points. Its source is the paper's printed Table 1, preserved in `HerculanoHouzel_etal_2013_Table1-a_snapshot.xlsx` (`Table1a` sheet). Figure 2 plots cortical-area volume against neuron number for these same 18 areas. The reader maps the figure's abbreviated region labels to Table 1 area names, takes the printed mean neuron count, and calculates volume in mm³ as mean neurons / neurons per mm³. This avoids estimating coordinates from the printed graph.
+
+Run `Rscript HerculanoHouzel_etal_2013_Figure2TopLeft.R` from any working directory. It writes the same-stem CSV and the registry-encoded public TSV. `HerculanoHouzel_etal_2013_Figure2TopLeft_legacy_digitized.tsv` preserves the previous approximate graph-digitized TSV for comparison; it is not the reader's source. The new values should be checked against the printed Table 1 and Figure 2 before treating them as independently visually verified.

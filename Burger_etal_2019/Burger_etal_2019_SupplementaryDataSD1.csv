@@ -59,16 +59,16 @@
 "Oreotragus oreotragus","Oreotragus_oreotragus","Artiodactyla","Bovidae","Oreotragus","oreotragus","","","",59.4,11000,"IslerVanSchaik2012","",0.002690273,-0.268692193
 "Gazella dorcas","Gazella_dorcas","Artiodactyla","Bovidae","Gazella","dorcas","","","",70.8,17275,"IslerVanSchaik2012","",-0.068083295,-0.25556625
 "Sylvicapra grimmia","Sylvicapra_grimmia","Artiodactyla","Bovidae","Sylvicapra","grimmia","","","",77.2,12625,"IslerVanSchaik2012","",0.071641689,-0.253426642
-"Cephalophus zebra","Cephalophus_zebra","Artiodactyla","Bovidae","Cephalophus","zebra","","","",83,10000,"IslerVanSchaik2012","",0.17902672,-0.251695517
-"Cephalophus natalensis","Cephalophus_natalensis","Artiodactyla","Bovidae","Cephalophus","natalensis","","","",84.1,12500,"Perez-Barberia.etal.2007","Dunbar.2006",0.112061445,-0.247613546
-"Cephalophus nigrifrons","Cephalophus_nigrifrons","Artiodactyla","Bovidae","Cephalophus","nigrifrons","","","",85,13650,"Perez-Barberia.etal.2007","Dunbar.2006",0.088017132,-0.239882629
+"Cephalophula zebra","Cephalophus_zebra","Artiodactyla","Bovidae","Cephalophus","zebra","","","",83,10000,"IslerVanSchaik2012","",0.17902672,-0.251695517
+"Cephalophorus natalensis","Cephalophus_natalensis","Artiodactyla","Bovidae","Cephalophus","natalensis","","","",84.1,12500,"Perez-Barberia.etal.2007","Dunbar.2006",0.112061445,-0.247613546
+"Cephalophorus nigrifrons","Cephalophus_nigrifrons","Artiodactyla","Bovidae","Cephalophus","nigrifrons","","","",85,13650,"Perez-Barberia.etal.2007","Dunbar.2006",0.088017132,-0.239882629
 "Capreolus capreolus","Capreolus_capreolus","Artiodactyla","Cervidae","Capreolus","capreolus","","","",92.7,17472,"IslerVanSchaik2012","",0.045269724,-0.238212469
 "Cephalophus dorsalis","Cephalophus_dorsalis","Artiodactyla","Bovidae","Cephalophus","dorsalis","","","",92.897,19998.6187,"Barton&Capellini2011","",0.00219824,-0.2244173
 "Cephalophus leucogaster","Cephalophus_leucogaster","Artiodactyla","Bovidae","Cephalophus","leucogaster","","","",93,13000,"Perez-Barberia.etal.2007","Dunbar.2006",0.142973275,-0.223265432
 "Pecari tajacu","Pecari_tajacu","Artiodactyla","Tayassuidae","Pecari","tajacu","","","",101.5,18309,"IslerVanSchaik2012","",0.069414389,-0.219101038
 "Redunca fulvorufula","Redunca_fulvorufula","Artiodactyla","Bovidae","Redunca","fulvorufula","","","",109,31000,"Perez-Barberia.etal.2007","Dunbar.2006",-0.071149535,-0.21897114
 "Antilope cervicapra","Antilope_cervicapra","Artiodactyla","Bovidae","Antilope","cervicapra","","","",110.8,28800,"IslerVanSchaik2012","",-0.040059147,-0.21661238
-"Capra hircus","Capra_hircus","Artiodactyla","Bovidae","Capra","hircus","","","",115,27660,"IslerVanSchaik2012","",-0.010745713,-0.208322349
+"Capra aegagrus hircus","Capra_hircus","Artiodactyla","Bovidae","Capra","hircus","","","",115,27660,"IslerVanSchaik2012","",-0.010745713,-0.208322349
 "Litocranius walleri","Litocranius_walleri","Artiodactyla","Bovidae","Litocranius","walleri","","","",117.5,39750,"IslerVanSchaik2012","",-0.119520491,-0.204674723
 "Rupicapra rupicapra","Rupicapra_rupicapra","Artiodactyla","Bovidae","Rupicapra","rupicapra","","","",117.8,27167,"IslerVanSchaik2012","",0.005559661,-0.203623029
 "Pelea capreolus","Pelea_capreolus","Artiodactyla","Bovidae","Pelea","capreolus","","","",121,24000,"IslerVanSchaik2012","",0.057572943,-0.196358311
@@ -109,10 +109,10 @@
 "Camelus bactrianus","Camelus_bactrianus","Artiodactyla","Camelidae","Camelus","bactrianus","","","",575,4e+05,"Perez-Barberia.etal.2007","Dunbar.2006",-0.181939574,0.00102404
 "Mustela erminea","Mustela_erminea","Carnivora","Mustelidae","Mustela","erminea","5","","Both",4.57,156.43,"Boddy2012","Crile&Quiring1940,Warncke1908",0.274137251,0.067295272
 "Mephitis mephitis","Mephitis_mephitis","Carnivora","Mephitidae","Mephitis","mephitis","3","","Both",10.15,1980,"Boddy2012","Crile&Quiring1940",-0.206079371,-0.303263127
-"Pusa caspica","Pusa_caspica","Carnivora","Phocidae","Pusa","caspica","2","","Both",162.5,62750,"Boddy2012","Bininda-Emonds 2000",-0.127413808,-0.075287386
+"Phoca caspica","Pusa_caspica","Carnivora","Phocidae","Pusa","caspica","2","","Both",162.5,62750,"Boddy2012","Bininda-Emonds 2000",-0.127413808,-0.075287386
 "Pusa sibirica","Pusa_sibirica","Carnivora","Phocidae","Pusa","sibirica","2","","Both",187.5,89500,"Boddy2012","Bininda-Emonds 2000",-0.180923944,-0.11345721
 "Pusa hispida","Pusa_hispida","Carnivora","Phocidae","Pusa","hispida","2","","Both",196.25,69085,"Boddy2012","Bininda-Emonds 2000",-0.07678532,-0.020503731
-"Histriophoca fasciata","Histriophoca_fasciata","Carnivora","Phocidae","Histriophoca","fasciata","2","","Both",248.75,87580,"Boddy2012","Bininda-Emonds 2000",-0.051098491,0.015431358
+"Phoca fasciata","Histriophoca_fasciata","Carnivora","Phocidae","Histriophoca","fasciata","2","","Both",248.75,87580,"Boddy2012","Bininda-Emonds 2000",-0.051098491,0.015431358
 "Phoca largha","Phoca_largha","Carnivora","Phocidae","Phoca","largha","2","","Both",253.75,91500,"Boddy2012","Bininda-Emonds 2000",-0.056717775,0.011703747
 "Panthera tigris","Panthera_tigris","Carnivora","Felidae","Panthera","tigris","3","","Both",269.73,195000,"Boddy2012","Crile & Quiring 1940; Sherwoodetal.2008; Silva & Downing 1995",-0.276656979,-0.1755459
 "Arctocephalus galapagoensis","Arctocephalus_galapagoensis","Carnivora","Otariidae","Arctocephalus","galapagoensis","2","","Both",291.25,45950,"Boddy2012","Bininda-Emonds 2000",0.227495855,0.266160204
@@ -165,7 +165,7 @@
 "Arctocephalus philippii","Arctocephalus_philippii","Carnivora","Otariidae","Arctocephalus","philippii","1","","Male",415,140000,"Boddy2012","Bininda-Emonds 2000",0.01839279,0.105188444
 "Genetta pardina","Genetta_pardina","Carnivora","Viverridae","Genetta","pardina","","","",15.4,1032,"VonBonin1937","",0.18721638,0.061882016
 "Mustela nivalis","Mustela_nivalis","Carnivora","Mustelidae","Mustela","nivalis","","","",2,60,"IslerVanSchaik2012","",0.227380513,-0.020860777
-"Mustela frenata","Mustela_frenata","Carnivora","Mustelidae","Mustela","frenata","","","",4,165,"IslerVanSchaik2012","",0.198907958,-0.005629741
+"Neogale frenata","Mustela_frenata","Carnivora","Mustelidae","Mustela","frenata","","","",4,165,"IslerVanSchaik2012","",0.198907958,-0.005629741
 "Mustela altaica","Mustela_altaica","Carnivora","Mustelidae","Mustela","altaica",">10","","",4.48,190,"Gittleman1986","",0.202173315,0.003730551
 "Ictonyx libyca","Ictonyx_libyca","Carnivora","Mustelidae","Ictonyx","libyca",">10","","",4.48,230,"Gittleman1986","",0.139942067,-0.050246652
 "Poecilogale albinucha","Poecilogale_albinucha","Carnivora","Mustelidae","Poecilogale","albinucha","","","",4.5,250,"IslerVanSchaik2012","",0.114717187,-0.071869245
@@ -181,7 +181,7 @@
 "Prionodon linsang","Prionodon_linsang","Carnivora","Viverridae","Prionodon","linsang","","","",8.5,698,"IslerVanSchaik2012","",0.056483962,-0.085744047
 "Ictonyx striatus","Ictonyx_striatus","Carnivora","Mustelidae","Ictonyx","striatus","","","",8.5,713,"IslerVanSchaik2012","",0.049558318,-0.091751108
 "Mustela nigripes","Mustela_nigripes","Carnivora","Mustelidae","Mustela","nigripes","","","",8.5,809,"IslerVanSchaik2012","",0.008413696,-0.127438511
-"Galerella sanguinea","Galerella_sanguinea","Carnivora","Herpestidae","Galerella","sanguinea","","","",8.8,533,"IslerVanSchaik2012","",0.159394677,0.005515079
+"Herpestes sanguineus","Galerella_sanguinea","Carnivora","Herpestidae","Galerella","sanguinea","","","",8.8,533,"IslerVanSchaik2012","",0.159394677,0.005515079
 "Prionodon pardicolor","Prionodon_pardicolor","Carnivora","Viverridae","Prionodon","pardicolor",">10","","",9.03,450,"Gittleman1986","",0.225736284,0.064543649
 "Crossarchus obscurus","Crossarchus_obscurus","Carnivora","Herpestidae","Crossarchus","obscurus","","","",9.99,865,"Perez-Barberia.etal.2007","Dunbar_1998",0.056759368,-0.076201276
 "Suricata suricatta","Suricata_suricatta","Carnivora","Herpestidae","Suricata","suricatta","","","",10.3,725,"IslerVanSchaik2012","",0.127540209,-0.013048158
@@ -190,7 +190,7 @@
 "Mungos mungo","Mungos_mungo","Carnivora","Herpestidae","Mungos","mungo","","","",10.5,860,"IslerVanSchaik2012","",0.080271439,-0.052939655
 "Galidia elegans","Galidia_elegans","Carnivora","Eupleridae","Galidia","elegans","","","",10.7,914,"IslerVanSchaik2012","",0.068629926,-0.061950219
 "Salanoia concolor","Salanoia_concolor","Carnivora","Eupleridae","Salanoia","concolor",">10","","",11.02,780,"Gittleman1986","",0.133066913,-0.004362397
-"Galerella pulverulenta","Galerella_pulverulenta","Carnivora","Herpestidae","Galerella","pulverulenta",">10","","",11.02,840,"Gittleman1986","",0.108928179,-0.025299489
+"Herpestes pulverulentus","Galerella_pulverulenta","Carnivora","Herpestidae","Galerella","pulverulenta",">10","","",11.02,840,"Gittleman1986","",0.108928179,-0.025299489
 "Herpestes fuscus","Herpestes_fuscus","Carnivora","Herpestidae","Herpestes","fuscus",">10","","",12.55,1120,"Gittleman1986","",0.071685395,-0.050113715
 "Conepatus humboldtii","Conepatus_humboldtii","Carnivora","Mephitidae","Conepatus","humboldtii","","","",12.6,1294,"Perez-Barberia.etal.2007","Dunbar_1998",0.026374592,-0.08918568
 "Genetta genetta","Genetta_genetta","Carnivora","Viverridae","Genetta","genetta","","","",14,1820,"IslerVanSchaik2012","",-0.038971773,-0.139795779
@@ -272,10 +272,10 @@
 "Arctonyx collaris","Arctonyx_collaris","Carnivora","Mustelidae","Arctonyx","collaris","","","",49.4,10490,"IslerVanSchaik2012","",-0.061906183,-0.087057465
 "Cerdocyon thous","Cerdocyon_thous","Carnivora","Canidae","Cerdocyon","thous","","","",49.5,5600,"Perez-Barberia.etal.2007","Dunbar_1998",0.143414543,0.091147021
 "Lontra canadensis","Lontra_canadensis","Carnivora","Mustelidae","Lontra","canadensis","","","",50.5,7850,"IslerVanSchaik2012","",0.042088488,0.004412446
-"Canis adustus","Canis_adustus","Carnivora","Canidae","Canis","adustus","","","",50.8,6155,"Perez-Barberia.etal.2007","Dunbar_1998",0.123892751,0.075707776
+"Lupulella adusta","Canis_adustus","Carnivora","Canidae","Canis","adustus","","","",50.8,6155,"Perez-Barberia.etal.2007","Dunbar_1998",0.123892751,0.075707776
 "Lycalopex culpaeus","Lycalopex_culpaeus","Carnivora","Canidae","Lycalopex","culpaeus","","","",51.4,8840,"IslerVanSchaik2012","",0.011072917,-0.021471832
 "Caracal caracal","Caracal_caracal","Carnivora","Felidae","Caracal","caracal","","","",51.9,7690,"Perez-Barberia.etal.2007","Dunbar_1998",0.060672017,0.022106318
-"Canis mesomelas","Canis_mesomelas","Carnivora","Canidae","Canis","mesomelas","1","","",54.8,8000,"Boddy2012","Warncke 1908; Silva & Downing 1995",0.071412364,0.034554057
+"Lupulella mesomelas","Canis_mesomelas","Carnivora","Canidae","Canis","mesomelas","1","","",54.8,8000,"Boddy2012","Warncke 1908; Silva & Downing 1995",0.071412364,0.034554057
 "Lontra longicaudis","Lontra_longicaudis","Carnivora","Mustelidae","Lontra","longicaudis","","","",57.4,8000,"IslerVanSchaik2012","",0.091543698,0.054685391
 "Profelis aurata","Profelis_aurata","Carnivora","Felidae","Profelis","aurata",">10","","",57.97,11940,"Gittleman1986","",-0.034601849,-0.054159642
 "Lutrogale perspicillata","Lutrogale_perspicillata","Carnivora","Mustelidae","Lutrogale","perspicillata","","","",61,7300,"IslerVanSchaik2012","",0.14778726,0.10697303
@@ -294,7 +294,7 @@
 "Aonyx capensis","Aonyx_capensis","Carnivora","Mustelidae","Aonyx","capensis","","","",94.6,19110,"IslerVanSchaik2012","",0.024892308,0.025653368
 "Hyaena hyaena","Hyaena_hyaena","Carnivora","Hyaenidae","Hyaena","hyaena","","","",97.5,36300,"IslerVanSchaik2012","",-0.170980589,-0.142500607
 "Uncia uncia","Uncia_uncia","Carnivora","Felidae","Uncia","uncia","","","",101.5,32500,"IslerVanSchaik2012","",-0.117501383,-0.093798622
-"Hyaena brunnea","Hyaena_brunnea","Carnivora","Hyaenidae","Hyaena","brunnea","","","",106.7,39300,"IslerVanSchaik2012","",-0.157685467,-0.125774921
+"Parahyaena brunnea","Hyaena_brunnea","Carnivora","Hyaenidae","Hyaena","brunnea","","","",106.7,39300,"IslerVanSchaik2012","",-0.157685467,-0.125774921
 "Acinonyx jubatus","Acinonyx_jubatus","Carnivora","Felidae","Acinonyx","jubatus","","","",111,43000,"IslerVanSchaik2012","",-0.169834106,-0.134036398
 "Enhydra lutris","Enhydra_lutris","Carnivora","Mustelidae","Enhydra","lutris","","","",119,23600,"IslerVanSchaik2012","",0.055809014,0.065687291
 "Chrysocyon brachyurus","Chrysocyon_brachyurus","Carnivora","Canidae","Chrysocyon","brachyurus","","","",120.3,23250,"IslerVanSchaik2012","",0.065394509,0.074627274
@@ -349,19 +349,19 @@
 "Balaenoptera borealis","Balaenoptera_borealis","Cetacea","Balaenopteridae","Balaenoptera","borealis","","","",4900,36666666.67,"Boddy2012","Jacobs & Jensen 1964; Silva & Downing 1995",-0.723083455,0.601787526
 "Megaptera novaeangliae","Megaptera_novaeangliae","Cetacea","Balaenopteridae","Megaptera","novaeangliae","","","",6100,30050000,"Boddy2012","Jacobs & Jensen 1964; Silva & Downing 1995",-0.563128888,0.658806163
 "Physeter catodon","Physeter_catodon","Cetacea","Physeteridae","Physeter","catodon","","","",8183,37416650.04,"Montgomery.etal.2013","",-0.506962148,0.663360314
-"Rhynchonycteris naso","Rhynchonycteris_naso","Chiroptera","Emballonuridae","Rhynchonycteris","naso","4","4","",0.11,4.3,"Jones&MacLarnon2004","",-0.173736804,-0.010131225
+"","Rhynchonycteris_naso","Chiroptera","Emballonuridae","Rhynchonycteris","naso","4","4","",0.11,4.3,"Jones&MacLarnon2004","",-0.173736804,-0.010131225
 "Myotis nigricans","Myotis_nigricans","Chiroptera","Vespertilionidae","Myotis","nigricans","6","6","",0.127,4.45,"Jones&MacLarnon2004","",-0.122494537,0.042924774
 "Rhinolophus hipposideros","Rhinolophus_hipposideros","Chiroptera","Rhinolophidae","Rhinolophus","hipposideros","10","10","",0.1495,4.55,"Jones&MacLarnon2004","",-0.058895672,0.014345969
 "Myotis mystacinus","Myotis_mystacinus","Chiroptera","Vespertilionidae","Myotis","mystacinus","2","2","",0.15717,4.85,"Jones&MacLarnon2004","",-0.057965159,0.0136094
 "Myotis nattereri","Myotis_nattereri","Chiroptera","Vespertilionidae","Myotis","nattereri","1","1","",0.22,7.15,"Jones&MacLarnon2004","",-0.038336521,-0.144098708
 "Saccopteryx bilineata","Saccopteryx_bilineata","Chiroptera","Emballonuridae","Saccopteryx","bilineata","1","1","",0.2252,7.78,"Jones&MacLarnon2004","",-0.055696235,0.003539909
 "Hipposideros bicolor","Hipposideros_bicolor","Chiroptera","Hipposideridae","Hipposideros","bicolor","11","11","",0.23833,8.38,"Jones&MacLarnon2004","",-0.055284447,0.002012036
-"Hipposideros caffer","Hipposideros_caffer","Chiroptera","Hipposideridae","Hipposideros","caffer","17","17","",0.313,10.9,"Jones&MacLarnon2004","",-0.02255647,0.027875634
-"Pteronotus davyi","Pteronotus_davyi","Chiroptera","Mormoopidae","Pteronotus","davyi","1","1","",0.32,10.6,"Jones&MacLarnon2004","",-0.003860271,0.047300496
-"Eptesicus serotinus","Eptesicus_serotinus","Chiroptera","Vespertilionidae","Eptesicus","serotinus","1","1","",0.327,22.15,"Jones&MacLarnon2004","",-0.234515604,-0.202596558
+"","Hipposideros_caffer","Chiroptera","Hipposideridae","Hipposideros","caffer","17","17","",0.313,10.9,"Jones&MacLarnon2004","",-0.02255647,0.027875634
+"","Pteronotus_davyi","Chiroptera","Mormoopidae","Pteronotus","davyi","1","1","",0.32,10.6,"Jones&MacLarnon2004","",-0.003860271,0.047300496
+"Cnephaeus serotinus","Eptesicus_serotinus","Chiroptera","Vespertilionidae","Eptesicus","serotinus","1","1","",0.327,22.15,"Jones&MacLarnon2004","",-0.234515604,-0.202596558
 "Gardnerycteris crenulata","Mimon_crenulatum","Chiroptera","Phyllostomidae","Mimon","crenulatum","4","4","",0.33367,13.78,"Jones&MacLarnon2004","",-0.071151389,-0.026840625
 "Rhinolophus ferrumequinum","Rhinolophus_ferrumequinum","Chiroptera","Rhinolophidae","Rhinolophus","ferrumequinum","","","",0.35,23.5,"Jones&MacLarnon2004","",-0.224266088,-0.193891713
-"Nycteris arge","Nycteris_arge","Chiroptera","Nycteridae","Nycteris","arge","4","4","",0.35567,10.65,"Jones&MacLarnon2004","",0.040504164,0.091542067
+"","Nycteris_arge","Chiroptera","Nycteridae","Nycteris","arge","4","4","",0.35567,10.65,"Jones&MacLarnon2004","",0.040504164,0.091542067
 "Nyctalus noctula","Nyctalus_noctula","Chiroptera","Vespertilionidae","Nyctalus","noctula","","","",0.362,26,"Jones&MacLarnon2004","",-0.242554979,-0.214820098
 "Mormoops megalophylla","Mormoops_megalophylla","Chiroptera","Mormoopidae","Mormoops","megalophylla","1","1","",0.40033,15.53,"Jones&MacLarnon2004","",-0.03099245,0.010196871
 "Glossophaga soricina","Glossophaga_soricina","Chiroptera","Phyllostomidae","Glossophaga","soricina","48","48","",0.41267,10.23,"Jones&MacLarnon2004","",0.118165429,0.170253825
@@ -375,7 +375,7 @@
 "Casinycteris argynnis","Casinycteris_argynnis","Chiroptera","Pteropodidae","Casinycteris","argynnis","1","1","",0.86483,30.72,"Jones&MacLarnon2004","",0.081330799,0.104710287
 "Desmodus rotundus","Desmodus_rotundus","Chiroptera","Phyllostomidae","Desmodus","rotundus","12","12","",0.916,33.26,"Jones&MacLarnon2004","",0.080419513,0.101724881
 "Cynopterus brachyotis","Cynopterus_brachyotis","Chiroptera","Pteropodidae","Cynopterus","brachyotis","5","5","",0.95275,32.11,"Jones&MacLarnon2004","",0.108964557,0.131188638
-"Diaemus youngi","Diaemus_youngi","Chiroptera","Phyllostomidae","Diaemus","youngi","6","6","",0.971,34.67,"Jones&MacLarnon2004","",0.092219448,0.112440798
+"","Diaemus_youngi","Chiroptera","Phyllostomidae","Diaemus","youngi","6","6","",0.971,34.67,"Jones&MacLarnon2004","",0.092219448,0.112440798
 "Artibeus jamaicensis","Artibeus_jamaicensis","Chiroptera","Phyllostomidae","Artibeus","jamaicensis","101","101","",0.98025,39.33,"Jones&MacLarnon2004","",0.055259112,0.072187814
 "Phyllostomus discolor","Phyllostomus_discolor","Chiroptera","Phyllostomidae","Phyllostomus","discolor","3","3","",1.101333,35.22,"Jones&MacLarnon2004","",0.14179219,0.161602606
 "Artibeus lituratus","Artibeus_lituratus","Chiroptera","Phyllostomidae","Artibeus","lituratus","23","23","",1.171,56.73,"Jones&MacLarnon2004","",0.013161431,0.020526088
@@ -386,278 +386,278 @@
 "Epomophorus gambianus","Epomophorus_gambianus","Chiroptera","Pteropodidae","Epomophorus","gambianus","","","",4.3285,309,"Jones&MacLarnon2004","",0.028827607,-0.008063071
 "Pteropus vampyrus","Pteropus_vampyrus","Chiroptera","Pteropodidae","Pteropus","vampyrus","","","",9.654,1078.07,"Jones&MacLarnon2004","",-0.029822625,-0.099338449
 "Pteropus melanotus","Pteropus_melanotus","Chiroptera","Pteropodidae","Pteropus","melanotus","","","",10.6,1261.4,"VonBonin1937","",-0.040378924,-0.113995123
-"Tylonycteris pachypus","Tylonycteris_pachypus","Chiroptera","Vespertilionidae","Tylonycteris","pachypus","","","",0.077,4.6,"Jones&MacLarnon2004","",-0.350605998,-0.277649702
-"Craseonycteris thonglongyai","Craseonycteris_thonglongyai","Chiroptera","Craseonycteridae","Craseonycteris","thonglongyai",">1",">1","",0.087,2.56,"Jones&MacLarnon2004","",-0.106687315,-0.018430007
-"Glischropus tylopus","Glischropus_tylopus","Chiroptera","Vespertilionidae","Glischropus","tylopus","","","",0.099,4.95,"Jones&MacLarnon2004","",-0.265347274,-0.194305566
+"","Tylonycteris_pachypus","Chiroptera","Vespertilionidae","Tylonycteris","pachypus","","","",0.077,4.6,"Jones&MacLarnon2004","",-0.350605998,-0.277649702
+"","Craseonycteris_thonglongyai","Chiroptera","Craseonycteridae","Craseonycteris","thonglongyai",">1",">1","",0.087,2.56,"Jones&MacLarnon2004","",-0.106687315,-0.018430007
+"","Glischropus_tylopus","Chiroptera","Vespertilionidae","Glischropus","tylopus","","","",0.099,4.95,"Jones&MacLarnon2004","",-0.265347274,-0.194305566
 "Neoromicia nanus","Neoromicia_nanus","Chiroptera","Vespertilionidae","Neoromicia","nanus","","","",0.1,3.9,"Jones&MacLarnon2004","",-0.18332631,-0.106059987
 "Myotis siligorensis","Myotis_siligorensis","Chiroptera","Vespertilionidae","Myotis","siligorensis","","","",0.103,3.46,"Jones&MacLarnon2004","",-0.131497346,-0.051105596
-"Pipistrellus coromandra","Pipistrellus_coromandra","Chiroptera","Vespertilionidae","Pipistrellus","coromandra","","","",0.105,4.6,"Jones&MacLarnon2004","",-0.215907424,-0.142951128
+"","Pipistrellus_coromandra","Chiroptera","Vespertilionidae","Pipistrellus","coromandra","","","",0.105,4.6,"Jones&MacLarnon2004","",-0.215907424,-0.142951128
 "Rhogeessa tumida","Rhogeessa_tumida","Chiroptera","Vespertilionidae","Rhogeessa","tumida","","","",0.1055,5.05,"Jones&MacLarnon2004","",-0.244244703,-0.173725187
 "Pipistrellus papuanus","Pipistrellus_papuanus","Chiroptera","Vespertilionidae","Pipistrellus","papuanus","","","",0.11,3.34,"Patzke.etal.2015","Baron, et al 1996",-0.091444555,-0.0990197
 "Rhogeessa parvula","Rhogeessa_parvula","Chiroptera","Vespertilionidae","Rhogeessa","parvula","","","",0.111,4.35,"Jones&MacLarnon2004","",-0.173572146,-0.09915688
-"Pipistrellus tenuis","Pipistrellus_tenuis","Chiroptera","Vespertilionidae","Pipistrellus","tenuis","","","",0.113,5.2,"Jones&MacLarnon2004","",-0.223952781,-0.154197479
-"Kerivoula phalaena","Kerivoula_phalaena","Chiroptera","Vespertilionidae","Kerivoula","phalaena","","","",0.116,3,"Jones&MacLarnon2004","",-0.033410021,-0.276334758
+"","Pipistrellus_tenuis","Chiroptera","Vespertilionidae","Pipistrellus","tenuis","","","",0.113,5.2,"Jones&MacLarnon2004","",-0.223952781,-0.154197479
+"","Kerivoula_phalaena","Chiroptera","Vespertilionidae","Kerivoula","phalaena","","","",0.116,3,"Jones&MacLarnon2004","",-0.033410021,-0.276334758
 "Tylonycteris robustula","Tylonycteris_robustula","Chiroptera","Vespertilionidae","Tylonycteris","robustula","","","",0.116,7.6,"Jones&MacLarnon2004","",-0.336182059,0.050706307
 "Pipistrellus javanicus","Pipistrellus_javanicus","Chiroptera","Vespertilionidae","Pipistrellus","javanicus","","","",0.119,4.5,"Jones&MacLarnon2004","",-0.154390708,-0.080860569
 "Vespadelus pumilus","Vespadelus_pumilus","Chiroptera","Vespertilionidae","Vespadelus","pumilus","","","",0.122,5.45,"Jones&MacLarnon2004","",-0.205966404,-0.137437089
 "Myotis muricola","Myotis_muricola","Chiroptera","Vespertilionidae","Myotis","muricola","","","",0.125,4.95,"Jones&MacLarnon2004","",-0.164072455,-0.117067685
-"Pipistrellus subflavus","Pipistrellus_subflavus","Chiroptera","Vespertilionidae","Pipistrellus","subflavus","","","",0.125,5.3,"Jones&MacLarnon2004","",-0.186325663,-0.093030747
-"Myotis albescens","Myotis_albescens","Chiroptera","Vespertilionidae","Myotis","albescens","","","",0.126,4,"Jones&MacLarnon2004","",-0.091202379,-0.014597072
-"Furipterus horrens","Furipterus_horrens","Chiroptera","Furipteridae","Furipterus","horrens","","","",0.127,3.43,"Jones&MacLarnon2004","",-0.037694339,-0.048672678
-"Saccopteryx canescens","Saccopteryx_canescens","Chiroptera","Emballonuridae","Saccopteryx","canescens","","","",0.13,3.4,"Jones&MacLarnon2004","",-0.024693279,0.056155195
-"Myotis yumanensis","Myotis_yumanensis","Chiroptera","Vespertilionidae","Myotis","yumanensis","","","",0.13,4.6,"Jones&MacLarnon2004","",-0.123153371,-0.050197074
+"","Pipistrellus_subflavus","Chiroptera","Vespertilionidae","Pipistrellus","subflavus","","","",0.125,5.3,"Jones&MacLarnon2004","",-0.186325663,-0.093030747
+"","Myotis_albescens","Chiroptera","Vespertilionidae","Myotis","albescens","","","",0.126,4,"Jones&MacLarnon2004","",-0.091202379,-0.014597072
+"","Furipterus_horrens","Chiroptera","Furipteridae","Furipterus","horrens","","","",0.127,3.43,"Jones&MacLarnon2004","",-0.037694339,-0.048672678
+"","Saccopteryx_canescens","Chiroptera","Emballonuridae","Saccopteryx","canescens","","","",0.13,3.4,"Jones&MacLarnon2004","",-0.024693279,0.056155195
+"","Myotis_yumanensis","Chiroptera","Vespertilionidae","Myotis","yumanensis","","","",0.13,4.6,"Jones&MacLarnon2004","",-0.123153371,-0.050197074
 "Hypsugo crassulus","Hypsugo_crassulus","Chiroptera","Vespertilionidae","Hypsugo","crassulus","","","",0.132,6.1,"Jones&MacLarnon2004","",-0.20845264,-0.142865082
-"Myotis fortidens","Myotis_fortidens","Chiroptera","Vespertilionidae","Myotis","fortidens","","","",0.1325,4.35,"Jones&MacLarnon2004","",-0.096679246,-0.022263981
-"Aselliscus tricuspidatus","Aselliscus_tricuspidatus","Chiroptera","Hipposideridae","Aselliscus","tricuspidatus",">1",">1","",0.134,4.4,"Jones&MacLarnon2004","",-0.095512925,-0.021396049
+"","Myotis_fortidens","Chiroptera","Vespertilionidae","Myotis","fortidens","","","",0.1325,4.35,"Jones&MacLarnon2004","",-0.096679246,-0.022263981
+"","Aselliscus_tricuspidatus","Chiroptera","Hipposideridae","Aselliscus","tricuspidatus",">1",">1","",0.134,4.4,"Jones&MacLarnon2004","",-0.095512925,-0.021396049
 "Hypsugo imbricatus","Hypsugo_imbricatus","Chiroptera","Vespertilionidae","Hypsugo","imbricatus","","","",0.137,6.8,"Jones&MacLarnon2004","",-0.227690638,-0.164939374
 "Hypsugo pulveratus","Hypsugo_pulveratus","Chiroptera","Vespertilionidae","Hypsugo","pulveratus","","","",0.143,5.3,"Jones&MacLarnon2004","",-0.127899639,-0.146323904
 "Scotozous dormeri","Scotozous_dormeri","Chiroptera","Vespertilionidae","Scotozous","dormeri","","","",0.143,6.8,"Jones&MacLarnon2004","",-0.209075168,-0.058641661
 "Glauconycteris beatrix","Glauconycteris_beatrix","Chiroptera","Vespertilionidae","Glauconycteris","beatrix","","","",0.144,5.5,"Jones&MacLarnon2004","",-0.13693841,-0.068647534
 "Peropteryx trinitatis","Peropteryx_trinitatis","Chiroptera","Emballonuridae","Peropteryx","trinitatis","","","",0.1495,5,"Hutcheon.etal.2002","",-0.08961491,-0.018835603
 "Aselliscus stoliczkanus","Aselliscus_stoliczkanus","Chiroptera","Hipposideridae","Aselliscus","stoliczkanus",">1",">1","",0.15,4.9,"Jones&MacLarnon2004","",-0.08158434,-0.010277566
-"Hipposideros halophyllus","Hipposideros_halophyllus","Chiroptera","Hipposideridae","Hipposideros","halophyllus","","","",0.152,4,"Jones&MacLarnon2004","",-0.009729336,0.066875971
-"Peropteryx macrotis","Peropteryx_macrotis","Chiroptera","Emballonuridae","Peropteryx","macrotis","","","",0.1566,5.4,"Jones&MacLarnon2004","",-0.094532392,-0.025762443
-"Eptesicus pachyotis","Eptesicus_pachyotis","Chiroptera","Vespertilionidae","Eptesicus","pachyotis",">1",">1","",0.158,6.6,"Jones&MacLarnon2004","",-0.156030296,-0.20550992
-"Hesperoptenus blanfordi","Hesperoptenus_blanfordi","Chiroptera","Vespertilionidae","Hesperoptenus","blanfordi","","","",0.158,7.3,"Jones&MacLarnon2004","",-0.188864791,-0.127965989
+"","Hipposideros_halophyllus","Chiroptera","Hipposideridae","Hipposideros","halophyllus","","","",0.152,4,"Jones&MacLarnon2004","",-0.009729336,0.066875971
+"","Peropteryx_macrotis","Chiroptera","Emballonuridae","Peropteryx","macrotis","","","",0.1566,5.4,"Jones&MacLarnon2004","",-0.094532392,-0.025762443
+"","Eptesicus_pachyotis","Chiroptera","Vespertilionidae","Eptesicus","pachyotis",">1",">1","",0.158,6.6,"Jones&MacLarnon2004","",-0.156030296,-0.20550992
+"","Hesperoptenus_blanfordi","Chiroptera","Vespertilionidae","Hesperoptenus","blanfordi","","","",0.158,7.3,"Jones&MacLarnon2004","",-0.188864791,-0.127965989
 "Scotorepens sanborni","Scotorepens_sanborni","Chiroptera","Vespertilionidae","Scotorepens","sanborni","","","",0.158,9.1,"Jones&MacLarnon2004","",-0.260654351,-0.092499608
-"Saccopteryx leptura","Saccopteryx_leptura","Chiroptera","Emballonuridae","Saccopteryx","leptura","","","",0.1605,4.9,"Jones&MacLarnon2004","",-0.052200562,0.019106212
+"","Saccopteryx_leptura","Chiroptera","Emballonuridae","Saccopteryx","leptura","","","",0.1605,4.9,"Jones&MacLarnon2004","",-0.052200562,0.019106212
 "Myotis lucifugus","Myotis_lucifugus","Chiroptera","Vespertilionidae","Myotis","lucifugus","","","",0.16133,8,"Jones&MacLarnon2004","",-0.209632364,-0.151124267
-"Emballonura monticola","Emballonura_monticola","Chiroptera","Emballonuridae","Emballonura","monticola",">1",">1","",0.163,5.4,"Jones&MacLarnon2004","",-0.077136545,-0.008366596
+"","Emballonura_monticola","Chiroptera","Emballonuridae","Emballonura","monticola",">1",">1","",0.163,5.4,"Jones&MacLarnon2004","",-0.077136545,-0.008366596
 "Rhinolophus pusillus","Rhinolophus_pusillus","Chiroptera","Rhinolophidae","Rhinolophus","pusillus","","","",0.164,4.7,"Jones&MacLarnon2004","",-0.029257959,0.043136837
-"Pipistrellus kuhlii","Pipistrellus_kuhlii","Chiroptera","Vespertilionidae","Pipistrellus","kuhlii","","","",0.166,6.3,"Jones&MacLarnon2004","",-0.119426616,-0.054681349
-"Nyctophilus geoffroyi","Nyctophilus_geoffroyi","Chiroptera","Vespertilionidae","Nyctophilus","geoffroyi","","","",0.167,7.2,"Jones&MacLarnon2004","",-0.160312593,-0.099053664
+"","Pipistrellus_kuhlii","Chiroptera","Vespertilionidae","Pipistrellus","kuhlii","","","",0.166,6.3,"Jones&MacLarnon2004","",-0.119426616,-0.054681349
+"","Nyctophilus_geoffroyi","Chiroptera","Vespertilionidae","Nyctophilus","geoffroyi","","","",0.167,7.2,"Jones&MacLarnon2004","",-0.160312593,-0.099053664
 "Miniopterus australis","Miniopterus_australis","Chiroptera","Vespertilionidae","Miniopterus","australis","","","",0.17,7.1,"Jones&MacLarnon2004","",-0.14802449,-0.114943011
-"Lasiurus borealis","Lasiurus_borealis","Chiroptera","Vespertilionidae","Lasiurus","borealis","","","",0.17,7.7,"Jones&MacLarnon2004","",-0.174449015,-0.086400398
-"Myotis montivagus","Myotis_montivagus","Chiroptera","Vespertilionidae","Myotis","montivagus","","","",0.17,8.3,"Jones&MacLarnon2004","",-0.198889766,-0.141342836
-"Myotis riparius","Myotis_riparius","Chiroptera","Vespertilionidae","Myotis","riparius","","","",0.173,7.95,"Jones&MacLarnon2004","",-0.177259232,-0.118587444
-"Emballonura raffrayana","Emballonura_raffrayana","Chiroptera","Emballonuridae","Emballonura","raffrayana",">1",">1","",0.174,5.9,"Jones&MacLarnon2004","",-0.077618856,-0.011160925
-"Cyttarops alecto","Cyttarops_alecto","Chiroptera","Emballonuridae","Cyttarops","alecto",">1",">1","",0.175,5.3,"Jones&MacLarnon2004","",-0.040197627,0.02906035
-"Molossops temminckii","Molossops_temminckii","Chiroptera","Molossidae","Molossops","temminckii","","","",0.181,6.8,"Jones&MacLarnon2004","",-0.10673263,-0.043981367
-"Pipistrellus ceylonicus","Pipistrellus_ceylonicus","Chiroptera","Vespertilionidae","Pipistrellus","ceylonicus","","","",0.182,10.1,"Jones&MacLarnon2004","",-0.233200348,-0.180778043
+"","Lasiurus_borealis","Chiroptera","Vespertilionidae","Lasiurus","borealis","","","",0.17,7.7,"Jones&MacLarnon2004","",-0.174449015,-0.086400398
+"","Myotis_montivagus","Chiroptera","Vespertilionidae","Myotis","montivagus","","","",0.17,8.3,"Jones&MacLarnon2004","",-0.198889766,-0.141342836
+"","Myotis_riparius","Chiroptera","Vespertilionidae","Myotis","riparius","","","",0.173,7.95,"Jones&MacLarnon2004","",-0.177259232,-0.118587444
+"","Emballonura_raffrayana","Chiroptera","Emballonuridae","Emballonura","raffrayana",">1",">1","",0.174,5.9,"Jones&MacLarnon2004","",-0.077618856,-0.011160925
+"","Cyttarops_alecto","Chiroptera","Emballonuridae","Cyttarops","alecto",">1",">1","",0.175,5.3,"Jones&MacLarnon2004","",-0.040197627,0.02906035
+"","Molossops_temminckii","Chiroptera","Molossidae","Molossops","temminckii","","","",0.181,6.8,"Jones&MacLarnon2004","",-0.10673263,-0.043981367
+"","Pipistrellus_ceylonicus","Chiroptera","Vespertilionidae","Pipistrellus","ceylonicus","","","",0.182,10.1,"Jones&MacLarnon2004","",-0.233200348,-0.180778043
 "Barbastella barbastellus","Barbastella_barbastellus","Chiroptera","Vespertilionidae","Barbastella","barbastellus",">1",">1","",0.184,6,"Jones&MacLarnon2004","",-0.05882476,0.007194357
-"Emballonura semicaudata","Emballonura_semicaudata","Chiroptera","Emballonuridae","Emballonura","semicaudata",">1",">1","",0.184,7,"Jones&MacLarnon2004","",-0.109035314,-0.047040879
-"Chalinolobus morio","Chalinolobus_morio","Chiroptera","Vespertilionidae","Chalinolobus","morio",">1",">1","",0.1845,8.35,"Jones&MacLarnon2004","",-0.165298622,-0.107908502
+"","Emballonura_semicaudata","Chiroptera","Emballonuridae","Emballonura","semicaudata",">1",">1","",0.184,7,"Jones&MacLarnon2004","",-0.109035314,-0.047040879
+"","Chalinolobus_morio","Chiroptera","Vespertilionidae","Chalinolobus","morio",">1",">1","",0.1845,8.35,"Jones&MacLarnon2004","",-0.165298622,-0.107908502
 "Cynomops planirostris","Cynomops_planirostris","Chiroptera","Molossidae","Cynomops","planirostris",">1",">1","",0.185,7.25,"Jones&MacLarnon2004","",-0.118111489,-0.057033245
 "Phoniscus atrox","Phoniscus_atrox","Chiroptera","Vespertilionidae","Phoniscus","atrox","","","",0.188,4.2,"Jones&MacLarnon2004","",0.066692805,0.142024261
-"Myotis hasseltii","Myotis_hasseltii","Chiroptera","Vespertilionidae","Myotis","hasseltii","","","",0.188,7.5,"Jones&MacLarnon2004","",-0.122167912,-0.061974795
-"Rhinolophus lepidus","Rhinolophus_lepidus","Chiroptera","Rhinolophidae","Rhinolophus","lepidus","","","",0.18833,5.6,"Jones&MacLarnon2004","",-0.026250453,0.041569983
-"Eptesicus furinalis","Eptesicus_furinalis","Chiroptera","Vespertilionidae","Eptesicus","furinalis",">1",">1","",0.1895,7.6,"Jones&MacLarnon2004","",-0.123030834,-0.063183533
+"","Myotis_hasseltii","Chiroptera","Vespertilionidae","Myotis","hasseltii","","","",0.188,7.5,"Jones&MacLarnon2004","",-0.122167912,-0.061974795
+"","Rhinolophus_lepidus","Chiroptera","Rhinolophidae","Rhinolophus","lepidus","","","",0.18833,5.6,"Jones&MacLarnon2004","",-0.026250453,0.041569983
+"","Eptesicus_furinalis","Chiroptera","Vespertilionidae","Eptesicus","furinalis",">1",">1","",0.1895,7.6,"Jones&MacLarnon2004","",-0.123030834,-0.063183533
 "Neoromicia flavescens","Neoromicia_flavescens","Chiroptera","Vespertilionidae","Neoromicia","flavescens","","","",0.19,10.5,"Jones&MacLarnon2004","",-0.227169196,-0.17576095
-"Rhinolophus cornutus","Rhinolophus_cornutus","Chiroptera","Rhinolophidae","Rhinolophus","cornutus","","","",0.194,6.6,"Jones&MacLarnon2004","",-0.066885653,-0.003354966
-"Myotis horsfieldii","Myotis_horsfieldii","Chiroptera","Vespertilionidae","Myotis","horsfieldii","","","",0.197,6.3,"Jones&MacLarnon2004","",-0.045068478,0.019676789
-"Hipposideros ater","Hipposideros_ater","Chiroptera","Hipposideridae","Hipposideros","ater","","","",0.198,5.83,"Jones&MacLarnon2004","",-0.017615285,0.049154262
-"Eptesicus brasiliensis","Eptesicus_brasiliensis","Chiroptera","Vespertilionidae","Eptesicus","brasiliensis",">1",">1","",0.19833,9.03,"Jones&MacLarnon2004","",-0.159407771,-0.104061728
+"","Rhinolophus_cornutus","Chiroptera","Rhinolophidae","Rhinolophus","cornutus","","","",0.194,6.6,"Jones&MacLarnon2004","",-0.066885653,-0.003354966
+"","Myotis_horsfieldii","Chiroptera","Vespertilionidae","Myotis","horsfieldii","","","",0.197,6.3,"Jones&MacLarnon2004","",-0.045068478,0.019676789
+"","Hipposideros_ater","Chiroptera","Hipposideridae","Hipposideros","ater","","","",0.198,5.83,"Jones&MacLarnon2004","",-0.017615285,0.049154262
+"","Eptesicus_brasiliensis","Chiroptera","Vespertilionidae","Eptesicus","brasiliensis",">1",">1","",0.19833,9.03,"Jones&MacLarnon2004","",-0.159407771,-0.104061728
 "Myotis bocagii","Myotis_bocagii","Chiroptera","Vespertilionidae","Myotis","bocagii","1","1","",0.2,7.3,"Jones&MacLarnon2004","",-0.086491883,-0.095318187
 "Myotis velifer","Myotis_velifer","Chiroptera","Vespertilionidae","Myotis","velifer","","","",0.2,8.9,"Jones&MacLarnon2004","",-0.151042836,-0.02559308
 "Rhinolophus malayanus","Rhinolophus_malayanus","Chiroptera","Rhinolophidae","Rhinolophus","malayanus","","","",0.202,6.4,"Jones&MacLarnon2004","",-0.03931295,0.025021147
-"Kerivoula pellucida","Kerivoula_pellucida","Chiroptera","Vespertilionidae","Kerivoula","pellucida","","","",0.203,4.1,"Jones&MacLarnon2004","",0.107880141,0.183840754
+"","Kerivoula_pellucida","Chiroptera","Vespertilionidae","Kerivoula","pellucida","","","",0.203,4.1,"Jones&MacLarnon2004","",0.107880141,0.183840754
 "Glauconycteris poensis","Glauconycteris_poensis","Chiroptera","Vespertilionidae","Glauconycteris","poensis","","","",0.205,8.6,"Jones&MacLarnon2004","",-0.129150202,-0.072530307
 "Rhinolophus macrotis","Rhinolophus_macrotis","Chiroptera","Rhinolophidae","Rhinolophus","macrotis","","","",0.208,6.3,"Jones&MacLarnon2004","",-0.021471369,0.043273898
-"Hipposideros cervinus","Hipposideros_cervinus","Chiroptera","Hipposideridae","Hipposideros","cervinus","","","",0.214,7.3,"Jones&MacLarnon2004","",-0.057108105,0.003790697
+"","Hipposideros_cervinus","Chiroptera","Hipposideridae","Hipposideros","cervinus","","","",0.214,7.3,"Jones&MacLarnon2004","",-0.057108105,0.003790697
 "Eptesicus fuscus","Eptesicus_fuscus","Chiroptera","Vespertilionidae","Eptesicus","fuscus",">1",">1","",0.21433,11.23,"Jones&MacLarnon2004","",-0.196732877,-0.147079492
 "Miniopterus pusillus","Miniopterus_pusillus","Chiroptera","Vespertilionidae","Miniopterus","pusillus","","","",0.216,8.6,"Jones&MacLarnon2004","",-0.106450311,-0.049830417
-"Murina tubinaris","Murina_tubinaris","Chiroptera","Vespertilionidae","Murina","tubinaris","","","",0.217,5.45,"Jones&MacLarnon2004","",0.0441335,0.112662814
-"Cormura brevirostris","Cormura_brevirostris","Chiroptera","Emballonuridae","Cormura","brevirostris",">1",">1","",0.219,8.2,"Jones&MacLarnon2004","",-0.084946356,-0.027082953
-"Mormopterus jugularis","Mormopterus_jugularis","Chiroptera","Molossidae","Mormopterus","jugularis","","","",0.22,11.5,"Jones&MacLarnon2004","",-0.193131794,0.02310435
-"Myotis annectans","Myotis_annectans","Chiroptera","Vespertilionidae","Myotis","annectans","","","",0.221,9.8,"Jones&MacLarnon2004","",-0.139057899,-0.085848335
-"Thyroptera tricolor","Thyroptera_tricolor","Chiroptera","Thyropteridae","Thyroptera","tricolor","","","",0.23,4.5,"Jones&MacLarnon2004","",0.131790167,0.205320305
+"","Murina_tubinaris","Chiroptera","Vespertilionidae","Murina","tubinaris","","","",0.217,5.45,"Jones&MacLarnon2004","",0.0441335,0.112662814
+"","Cormura_brevirostris","Chiroptera","Emballonuridae","Cormura","brevirostris",">1",">1","",0.219,8.2,"Jones&MacLarnon2004","",-0.084946356,-0.027082953
+"","Mormopterus_jugularis","Chiroptera","Molossidae","Mormopterus","jugularis","","","",0.22,11.5,"Jones&MacLarnon2004","",-0.193131794,0.02310435
+"","Myotis_annectans","Chiroptera","Vespertilionidae","Myotis","annectans","","","",0.221,9.8,"Jones&MacLarnon2004","",-0.139057899,-0.085848335
+"","Thyroptera_tricolor","Chiroptera","Thyropteridae","Thyroptera","tricolor","","","",0.23,4.5,"Jones&MacLarnon2004","",0.131790167,0.205320305
 "Myotis daubentonii","Myotis_daubentonii","Chiroptera","Vespertilionidae","Myotis","daubentonii","1","1","",0.23,7.75,"Jones&MacLarnon2004","",-0.045278353,0.014058662
 "Eptesicus dimissus","Eptesicus_dimissus","Chiroptera","Vespertilionidae","Eptesicus","dimissus",">1",">1","",0.231,15,"Jones&MacLarnon2004","",-0.258488355,-0.216392448
 "Hipposideros pomona","Hipposideros_pomona","Chiroptera","Hipposideridae","Hipposideros","pomona","","","",0.233,6.2,"Jones&MacLarnon2004","",0.03303291,-0.193365182
 "Rhinolophus thomasi","Rhinolophus_thomasi","Chiroptera","Rhinolophidae","Rhinolophus","thomasi","","","",0.233,9,"Jones&MacLarnon2004","",-0.088356321,0.098195926
-"Mormopterus beccarii","Mormopterus_beccarii","Chiroptera","Molossidae","Mormopterus","beccarii","","","",0.233,14.2,"Jones&MacLarnon2004","",-0.236892064,-0.032923393
+"","Mormopterus_beccarii","Chiroptera","Molossidae","Mormopterus","beccarii","","","",0.233,14.2,"Jones&MacLarnon2004","",-0.236892064,-0.032923393
 "Pteronotus personatus","Pteronotus_personatus","Chiroptera","Mormoopidae","Pteronotus","personatus","","","",0.234,7.8,"Jones&MacLarnon2004","",-0.039885026,0.019284087
-"Hipposideros fulvus","Hipposideros_fulvus","Chiroptera","Hipposideridae","Hipposideros","fulvus","","","",0.236,7,"Jones&MacLarnon2004","",-0.000941134,0.061053301
+"","Hipposideros_fulvus","Chiroptera","Hipposideridae","Hipposideros","fulvus","","","",0.236,7,"Jones&MacLarnon2004","",-0.000941134,0.061053301
 "Plecotus auritus","Plecotus_auritus","Chiroptera","Vespertilionidae","Plecotus","auritus","","","",0.238,6.6,"Jones&MacLarnon2004","",0.021889574,0.085420262
-"Nycteris nana","Nycteris_nana","Chiroptera","Nycteridae","Nycteris","nana","","","",0.239,6.95,"Jones&MacLarnon2004","",0.006879712,0.069061307
-"Myotis altarium","Myotis_altarium","Chiroptera","Vespertilionidae","Myotis","altarium","","","",0.24,11,"Jones&MacLarnon2004","",-0.140864234,-0.090670568
-"Chalinolobus gouldii","Chalinolobus_gouldii","Chiroptera","Vespertilionidae","Chalinolobus","gouldii",">1",">1","",0.24,11.7,"Jones&MacLarnon2004","",-0.160959301,-0.143990764
+"","Nycteris_nana","Chiroptera","Nycteridae","Nycteris","nana","","","",0.239,6.95,"Jones&MacLarnon2004","",0.006879712,0.069061307
+"","Myotis_altarium","Chiroptera","Vespertilionidae","Myotis","altarium","","","",0.24,11,"Jones&MacLarnon2004","",-0.140864234,-0.090670568
+"","Chalinolobus_gouldii","Chiroptera","Vespertilionidae","Chalinolobus","gouldii",">1",">1","",0.24,11.7,"Jones&MacLarnon2004","",-0.160959301,-0.143990764
 "Asellia tridens","Asellia_tridens","Chiroptera","Hipposideridae","Asellia","tridens",">1",">1","",0.24,12.8,"Jones&MacLarnon2004","",-0.190227651,-0.112376377
-"Rhinolophus clivosus","Rhinolophus_clivosus","Chiroptera","Rhinolophidae","Rhinolophus","clivosus","","","",0.242,20.1,"Jones&MacLarnon2004","",-0.333614445,-0.299159777
-"Natalus tumidirostris","Natalus_tumidirostris","Chiroptera","Natalidae","Natalus","tumidirostris","","","",0.245,6.9,"Jones&MacLarnon2004","",0.019999702,0.082369809
-"Rhinonicteris aurantia","Rhinonicteris_aurantia","Chiroptera","Hipposideridae","Rhinonicteris","aurantia","","","",0.249,8.65,"Jones&MacLarnon2004","",-0.046592975,0.009875564
-"Nyctophilus timoriensis","Nyctophilus_timoriensis","Chiroptera","Vespertilionidae","Nyctophilus","timoriensis","","","",0.254,10.9,"Jones&MacLarnon2004","",-0.113267091,-0.062834987
-"Myotis adversus","Myotis_adversus","Chiroptera","Vespertilionidae","Myotis","adversus","","","",0.2545,11.25,"Jones&MacLarnon2004","",-0.122707634,-0.073100706
-"Rhinolophus capensis","Rhinolophus_capensis","Chiroptera","Rhinolophidae","Rhinolophus","capensis","","","",0.256,12.8,"Jones&MacLarnon2004","",-0.162198928,-0.115962041
-"Murina huttoni","Murina_huttoni","Chiroptera","Vespertilionidae","Murina","huttoni","","","",0.258,8.8,"Jones&MacLarnon2004","",-0.036772591,0.019247075
+"","Rhinolophus_clivosus","Chiroptera","Rhinolophidae","Rhinolophus","clivosus","","","",0.242,20.1,"Jones&MacLarnon2004","",-0.333614445,-0.299159777
+"","Natalus_tumidirostris","Chiroptera","Natalidae","Natalus","tumidirostris","","","",0.245,6.9,"Jones&MacLarnon2004","",0.019999702,0.082369809
+"","Rhinonicteris_aurantia","Chiroptera","Hipposideridae","Rhinonicteris","aurantia","","","",0.249,8.65,"Jones&MacLarnon2004","",-0.046592975,0.009875564
+"","Nyctophilus_timoriensis","Chiroptera","Vespertilionidae","Nyctophilus","timoriensis","","","",0.254,10.9,"Jones&MacLarnon2004","",-0.113267091,-0.062834987
+"","Myotis_adversus","Chiroptera","Vespertilionidae","Myotis","adversus","","","",0.2545,11.25,"Jones&MacLarnon2004","",-0.122707634,-0.073100706
+"","Rhinolophus_capensis","Chiroptera","Rhinolophidae","Rhinolophus","capensis","","","",0.256,12.8,"Jones&MacLarnon2004","",-0.162198928,-0.115962041
+"","Murina_huttoni","Chiroptera","Vespertilionidae","Murina","huttoni","","","",0.258,8.8,"Jones&MacLarnon2004","",-0.036772591,0.019247075
 "Coleura afra","Coleura_afra","Chiroptera","Emballonuridae","Coleura","afra",">1",">1","",0.2585,11.5,"Jones&MacLarnon2004","",-0.123093928,-0.074060842
-"Rhinolophus coelophyllus","Rhinolophus_coelophyllus","Chiroptera","Rhinolophidae","Rhinolophus","coelophyllus","","","",0.259,7.7,"Jones&MacLarnon2004","",0.008401827,0.067907832
-"Myotis tricolor","Myotis_tricolor","Chiroptera","Vespertilionidae","Myotis","tricolor","","","",0.259,13.6,"Jones&MacLarnon2004","",-0.176886015,-0.132231961
+"","Rhinolophus_coelophyllus","Chiroptera","Rhinolophidae","Rhinolophus","coelophyllus","","","",0.259,7.7,"Jones&MacLarnon2004","",0.008401827,0.067907832
+"","Myotis_tricolor","Chiroptera","Vespertilionidae","Myotis","tricolor","","","",0.259,13.6,"Jones&MacLarnon2004","",-0.176886015,-0.132231961
 "Myotis bechsteinii","Myotis_bechsteinii","Chiroptera","Vespertilionidae","Myotis","bechsteinii","2","2","",0.26,9,"Jones&MacLarnon2004","",-0.040738894,0.014694034
-"Rhinolophus megaphyllus","Rhinolophus_megaphyllus","Chiroptera","Rhinolophidae","Rhinolophus","megaphyllus","","","",0.2605,9.8,"Jones&MacLarnon2004","",-0.067642445,-0.014432881
-"Hipposideros ruber","Hipposideros_ruber","Chiroptera","Hipposideridae","Hipposideros","ruber","","","",0.265,7.3,"Jones&MacLarnon2004","",0.035723996,-0.060202722
+"","Rhinolophus_megaphyllus","Chiroptera","Rhinolophidae","Rhinolophus","megaphyllus","","","",0.2605,9.8,"Jones&MacLarnon2004","",-0.067642445,-0.014432881
+"","Hipposideros_ruber","Chiroptera","Hipposideridae","Hipposideros","ruber","","","",0.265,7.3,"Jones&MacLarnon2004","",0.035723996,-0.060202722
 "Murina cyclotis","Murina_cyclotis","Chiroptera","Vespertilionidae","Murina","cyclotis","","","",0.265,7.88,"Jones&MacLarnon2004","",0.010821249,0.096622798
-"Miniopterus fuscus","Miniopterus_fuscus","Chiroptera","Vespertilionidae","Miniopterus","fuscus","","","",0.265,11.4,"Jones&MacLarnon2004","",-0.109463833,0.069723944
-"Rhinolophus paradoxolophus","Rhinolophus_paradoxolophus","Chiroptera","Rhinolophidae","Rhinolophus","paradoxolophus","","","",0.267,9.3,"Jones&MacLarnon2004","",-0.039881409,0.014695418
-"Hipposideros ridleyi","Hipposideros_ridleyi","Chiroptera","Hipposideridae","Hipposideros","ridleyi","","","",0.269,9.65,"Jones&MacLarnon2004","",-0.048673774,0.004938503
+"","Miniopterus_fuscus","Chiroptera","Vespertilionidae","Miniopterus","fuscus","","","",0.265,11.4,"Jones&MacLarnon2004","",-0.109463833,0.069723944
+"","Rhinolophus_paradoxolophus","Chiroptera","Rhinolophidae","Rhinolophus","paradoxolophus","","","",0.267,9.3,"Jones&MacLarnon2004","",-0.039881409,0.014695418
+"","Hipposideros_ridleyi","Chiroptera","Hipposideridae","Hipposideros","ridleyi","","","",0.269,9.65,"Jones&MacLarnon2004","",-0.048673774,0.004938503
 "Miniopterus schreibersii","Miniopterus_schreibersii","Chiroptera","Vespertilionidae","Miniopterus","schreibersii","6","6","",0.2703,11.78,"Jones&MacLarnon2004","",-0.111544089,-0.063139079
 "Triaenops persicus","Triaenops_persicus","Chiroptera","Hipposideridae","Triaenops","persicus","","","",0.2705,13.7,"Jones&MacLarnon2004","",-0.160404775,-0.115941996
 "Miniopterus medius","Miniopterus_medius","Chiroptera","Vespertilionidae","Miniopterus","medius","","","",0.27122,11.71,"Hutcheon.etal.2002","",-0.108127109,-0.059566491
 "Micronycteris megalotis","Micronycteris_megalotis","Chiroptera","Phyllostomidae","Micronycteris","megalotis","","","",0.274,6.5,"Jones&MacLarnon2004","",0.08803616,0.151965462
 "Mops pumilus","Chaerephon_pumilus","Chiroptera","Molossidae","Chaerephon","pumilus",">1",">1","",0.274,12.09,"Jones&MacLarnon2004","",-0.114100408,-0.066373585
 "Rhinopoma hardwickii","Rhinopoma_hardwickii","Chiroptera","Rhinopomatidae","Rhinopoma","hardwickii","","","",0.275,12.9,"Jones&MacLarnon2004","",-0.133641028,-0.087607323
-"Rhinolophus landeri","Rhinolophus_landeri","Chiroptera","Rhinolophidae","Rhinolophus","landeri","","","",0.276,9.65,"Jones&MacLarnon2004","",-0.037516972,0.016095305
-"Rhinolophus robinsoni","Rhinolophus_robinsoni","Chiroptera","Rhinolophidae","Rhinolophus","robinsoni","","","",0.2785,8.5,"Jones&MacLarnon2004","",0.007730816,0.064656079
-"Nycteris thebaica","Nycteris_thebaica","Chiroptera","Nycteridae","Nycteris","thebaica","","","",0.2785,8.95,"Jones&MacLarnon2004","",-0.009072421,0.046505961
-"Hipposideros galeritus","Hipposideros_galeritus","Chiroptera","Hipposideridae","Hipposideros","galeritus","","","",0.279,10.4,"Jones&MacLarnon2004","",-0.057201595,-0.005543503
-"Nycteris hispida","Nycteris_hispida","Chiroptera","Nycteridae","Nycteris","hispida","","","",0.284,7.8,"Jones&MacLarnon2004","",0.044217456,-0.033203049
-"Hipposideros speoris","Hipposideros_speoris","Chiroptera","Hipposideridae","Hipposideros","speoris","","","",0.284,11.5,"Jones&MacLarnon2004","",-0.082236135,0.103386569
+"","Rhinolophus_landeri","Chiroptera","Rhinolophidae","Rhinolophus","landeri","","","",0.276,9.65,"Jones&MacLarnon2004","",-0.037516972,0.016095305
+"","Rhinolophus_robinsoni","Chiroptera","Rhinolophidae","Rhinolophus","robinsoni","","","",0.2785,8.5,"Jones&MacLarnon2004","",0.007730816,0.064656079
+"","Nycteris_thebaica","Chiroptera","Nycteridae","Nycteris","thebaica","","","",0.2785,8.95,"Jones&MacLarnon2004","",-0.009072421,0.046505961
+"","Hipposideros_galeritus","Chiroptera","Hipposideridae","Hipposideros","galeritus","","","",0.279,10.4,"Jones&MacLarnon2004","",-0.057201595,-0.005543503
+"","Nycteris_hispida","Chiroptera","Nycteridae","Nycteris","hispida","","","",0.284,7.8,"Jones&MacLarnon2004","",0.044217456,-0.033203049
+"","Hipposideros_speoris","Chiroptera","Hipposideridae","Hipposideros","speoris","","","",0.284,11.5,"Jones&MacLarnon2004","",-0.082236135,0.103386569
 "Molossus molossus","Molossus_molossus","Chiroptera","Molossidae","Molossus","molossus","","","",0.28467,13.23,"Jones&MacLarnon2004","",-0.126859696,-0.08148549
 "Rhinolophus stheno","Rhinolophus_stheno","Chiroptera","Rhinolophidae","Rhinolophus","stheno","","","",0.285,8.5,"Jones&MacLarnon2004","",0.017750477,0.07467574
 "Micronycteris minuta","Micronycteris_minuta","Chiroptera","Phyllostomidae","Micronycteris","minuta","","","",0.286,6.9,"Jones&MacLarnon2004","",0.087199651,0.149569758
-"Ametrida centurio","Ametrida_centurio","Chiroptera","Phyllostomidae","Ametrida","centurio",">1",">1","",0.29,10.5,"Jones&MacLarnon2004","",-0.043524799,0.007883447
+"","Ametrida_centurio","Chiroptera","Phyllostomidae","Ametrida","centurio",">1",">1","",0.29,10.5,"Jones&MacLarnon2004","",-0.043524799,0.007883447
 "Cynomops greenhalli","Cynomops_greenhalli","Chiroptera","Molossidae","Cynomops","greenhalli",">1",">1","",0.3,17.5,"Jones&MacLarnon2004","",-0.195189635,-0.15711841
-"Rhinolophus acuminatus","Rhinolophus_acuminatus","Chiroptera","Rhinolophidae","Rhinolophus","acuminatus","","","",0.302,12.1,"Jones&MacLarnon2004","",-0.072113332,-0.024408096
+"","Rhinolophus_acuminatus","Chiroptera","Rhinolophidae","Rhinolophus","acuminatus","","","",0.302,12.1,"Jones&MacLarnon2004","",-0.072113332,-0.024408096
 "Micronycteris schmidtorum","Micronycteris_schmidtorum","Chiroptera","Phyllostomidae","Micronycteris","schmidtorum","","","",0.308,7.8,"Jones&MacLarnon2004","",0.079449833,0.138618946
-"Rhinolophus mehelyi","Rhinolophus_mehelyi","Chiroptera","Rhinolophidae","Rhinolophus","mehelyi","","","",0.31,9.7,"Jones&MacLarnon2004","",0.011252308,0.064729657
-"Kerivoula papillosa","Kerivoula_papillosa","Chiroptera","Vespertilionidae","Kerivoula","papillosa","","","",0.31,10.1,"Jones&MacLarnon2004","",-0.001910042,0.050512263
-"Myotis dasycneme","Myotis_dasycneme","Chiroptera","Vespertilionidae","Myotis","dasycneme","1","1","",0.31,15,"Jones&MacLarnon2004","",-0.130738641,-0.088642734
+"","Rhinolophus_mehelyi","Chiroptera","Rhinolophidae","Rhinolophus","mehelyi","","","",0.31,9.7,"Jones&MacLarnon2004","",0.011252308,0.064729657
+"","Kerivoula_papillosa","Chiroptera","Vespertilionidae","Kerivoula","papillosa","","","",0.31,10.1,"Jones&MacLarnon2004","",-0.001910042,0.050512263
+"","Myotis_dasycneme","Chiroptera","Vespertilionidae","Myotis","dasycneme","1","1","",0.31,15,"Jones&MacLarnon2004","",-0.130738641,-0.088642734
 "Macrophyllum macrophyllum","Macrophyllum_macrophyllum","Chiroptera","Phyllostomidae","Macrophyllum","macrophyllum","","","",0.321,8.6,"Jones&MacLarnon2004","",0.06560097,0.122220864
 "Miniopterus magnater","Miniopterus_magnater","Chiroptera","Vespertilionidae","Miniopterus","magnater","","","",0.324,15,"Jones&MacLarnon2004","",-0.111555325,-0.069459418
 "Miniopterus inflatus","Miniopterus_inflatus","Chiroptera","Vespertilionidae","Miniopterus","inflatus","","","",0.3265,15.05,"Jones&MacLarnon2004","",-0.10930109,-0.067292068
 "Rhinolophus pearsonii","Rhinolophus_pearsonii","Chiroptera","Rhinolophidae","Rhinolophus","pearsonii","","","",0.332,13.9,"Jones&MacLarnon2004","",-0.076154679,-0.032070294
 "Miniopterus tristis","Miniopterus_tristis","Chiroptera","Vespertilionidae","Miniopterus","tristis","","","",0.333,15.6,"Jones&MacLarnon2004","",-0.112431224,-0.071359321
-"Choeroniscus godmani","Choeroniscus_godmani","Chiroptera","Phyllostomidae","Choeroniscus","godmani",">1",">1","",0.34,6.1,"Jones&MacLarnon2004","",0.202452346,0.268039904
-"Scotophilus kuhlii","Scotophilus_kuhlii","Chiroptera","Vespertilionidae","Scotophilus","kuhlii","","","",0.34233,19.6,"Jones&MacLarnon2004","",-0.174779786,-0.139667432
+"","Choeroniscus_godmani","Chiroptera","Phyllostomidae","Choeroniscus","godmani",">1",">1","",0.34,6.1,"Jones&MacLarnon2004","",0.202452346,0.268039904
+"","Scotophilus_kuhlii","Chiroptera","Vespertilionidae","Scotophilus","kuhlii","","","",0.34233,19.6,"Jones&MacLarnon2004","",-0.174779786,-0.139667432
 "Pteronotus gymnonotus","Pteronotus_gymnonotus","Chiroptera","Mormoopidae","Pteronotus","gymnonotus","","","",0.343,13.6,"Jones&MacLarnon2004","",-0.054891659,-0.010237605
 "Hsunycteris thomasi","Lonchophylla_thomasi","Chiroptera","Phyllostomidae","Lonchophylla","thomasi","","","",0.3435,7.2,"Jones&MacLarnon2004","",0.152897677,0.214156606
 "Mesophylla macconnelli","Mesophylla_macconnelli","Chiroptera","Phyllostomidae","Mesophylla","macconnelli","","","",0.3445,7.55,"Jones&MacLarnon2004","",0.138699179,0.198718815
 "Rhinolophus affinis","Rhinolophus_affinis","Chiroptera","Rhinolophidae","Rhinolophus","affinis","","","",0.3475,13.5,"Jones&MacLarnon2004","",-0.046827093,-0.001980354
-"Rhinolophus trifoliatus","Rhinolophus_trifoliatus","Chiroptera","Rhinolophidae","Rhinolophus","trifoliatus","","","",0.351,14.8,"Jones&MacLarnon2004","",-0.072421021,-0.029974656
+"","Rhinolophus_trifoliatus","Chiroptera","Rhinolophidae","Rhinolophus","trifoliatus","","","",0.351,14.8,"Jones&MacLarnon2004","",-0.072421021,-0.029974656
 "Lionycteris spurrelli","Lionycteris_spurrelli","Chiroptera","Phyllostomidae","Lionycteris","spurrelli","","","",0.352,7.55,"Jones&MacLarnon2004","",0.148052616,0.208072252
 "Rhinophylla pumilio","Rhinophylla_pumilio","Chiroptera","Phyllostomidae","Rhinophylla","pumilio","","","",0.356,8.9,"Jones&MacLarnon2004","",0.099377166,0.155101815
-"Chaerephon jobensis","Chaerephon_jobensis","Chiroptera","Molossidae","Chaerephon","jobensis",">1",">1","",0.36,16.5,"Jones&MacLarnon2004","",-0.096842634,-0.057235157
-"Hipposideros calcaratus","Hipposideros_calcaratus","Chiroptera","Hipposideridae","Hipposideros","calcaratus","","","",0.369,11.35,"Jones&MacLarnon2004","",0.035748415,0.08512429
-"Lonchorhina aurita","Lonchorhina_aurita","Chiroptera","Phyllostomidae","Lonchorhina","aurita","","","",0.377,18,"Jones&MacLarnon2004","",-0.105145466,-0.067809748
-"Scotomanes ornatus","Scotomanes_ornatus","Chiroptera","Vespertilionidae","Scotomanes","ornatus","","","",0.384,21.8,"Jones&MacLarnon2004","",-0.159544157,-0.127209263
+"","Chaerephon_jobensis","Chiroptera","Molossidae","Chaerephon","jobensis",">1",">1","",0.36,16.5,"Jones&MacLarnon2004","",-0.096842634,-0.057235157
+"","Hipposideros_calcaratus","Chiroptera","Hipposideridae","Hipposideros","calcaratus","","","",0.369,11.35,"Jones&MacLarnon2004","",0.035748415,0.08512429
+"","Lonchorhina_aurita","Chiroptera","Phyllostomidae","Lonchorhina","aurita","","","",0.377,18,"Jones&MacLarnon2004","",-0.105145466,-0.067809748
+"","Scotomanes_ornatus","Chiroptera","Vespertilionidae","Scotomanes","ornatus","","","",0.384,21.8,"Jones&MacLarnon2004","",-0.159544157,-0.127209263
 "Chaerephon plicatus","Chaerephon_plicatus","Chiroptera","Molossidae","Chaerephon","plicatus",">1",">1","",0.385,20.5,"Jones&MacLarnon2004","",-0.138387493,-0.1044473
 "Choeroniscus minor","Choeroniscus_minor","Chiroptera","Phyllostomidae","Choeroniscus","minor",">1",">1","",0.389,9.6,"Jones&MacLarnon2004","",0.113215623,0.021872845
-"Nycteris macrotis","Nycteris_macrotis","Chiroptera","Nycteridae","Nycteris","macrotis","","","",0.389,14.5,"Jones&MacLarnon2004","",-0.02110819,0.16696353
+"","Nycteris_macrotis","Chiroptera","Nycteridae","Nycteris","macrotis","","","",0.389,14.5,"Jones&MacLarnon2004","",-0.02110819,0.16696353
 "Macrotus californicus","Macrotus_californicus","Chiroptera","Phyllostomidae","Macrotus","californicus","","","",0.39,13,"Stankowich2016","",0.015575631,-0.192995166
 "Mops leucostigma","Mops_leucostigma","Chiroptera","Molossidae","Mops","leucostigma","6","6","",0.39,26.79,"Patzke.etal.2015/Pantheria","Baron, et al 1996",-0.219948557,0.061407722
-"Tadarida aegyptiaca","Tadarida_aegyptiaca","Chiroptera","Molossidae","Tadarida","aegyptiaca","","","",0.393,17.7,"Jones&MacLarnon2004","",-0.081619786,-0.043845255
+"","Tadarida_aegyptiaca","Chiroptera","Molossidae","Tadarida","aegyptiaca","","","",0.393,17.7,"Jones&MacLarnon2004","",-0.081619786,-0.043845255
 "Vampyressa pusilla","Vampyressa_pusilla","Chiroptera","Phyllostomidae","Vampyressa","pusilla","","","",0.394,8.55,"Jones&MacLarnon2004","",0.156491429,0.213263561
-"Rhinopoma microphyllum","Rhinopoma_microphyllum","Chiroptera","Rhinopomatidae","Rhinopoma","microphyllum","","","",0.4035,27.1,"Jones&MacLarnon2004","",-0.208917092,-0.182264084
-"Rhinolophus eloquens","Rhinolophus_eloquens","Chiroptera","Rhinolophidae","Rhinolophus","eloquens","","","",0.4045,19.05,"Jones&MacLarnon2004","",-0.093035316,-0.057179843
+"","Rhinopoma_microphyllum","Chiroptera","Rhinopomatidae","Rhinopoma","microphyllum","","","",0.4035,27.1,"Jones&MacLarnon2004","",-0.208917092,-0.182264084
+"","Rhinolophus_eloquens","Chiroptera","Rhinolophidae","Rhinolophus","eloquens","","","",0.4045,19.05,"Jones&MacLarnon2004","",-0.093035316,-0.057179843
 "Monophyllus plethodon","Monophyllus_plethodon","Chiroptera","Phyllostomidae","Monophyllus","plethodon","","","",0.4125,14.9,"Jones&MacLarnon2004","",-0.004497619,0.037772929
 "Hipposideros larvatus","Hipposideros_larvatus","Chiroptera","Hipposideridae","Hipposideros","larvatus","","","",0.4165,19.85,"Jones&MacLarnon2004","",-0.093738108,-0.058956668
 "Cynomops abrasus","Cynomops_abrasus","Chiroptera","Molossidae","Cynomops","abrasus",">1",">1","",0.418,33.3,"Jones&MacLarnon2004","",-0.260691174,-0.239417187
-"Mops condylurus","Mops_condylurus","Chiroptera","Molossidae","Mops","condylurus","","","",0.42225,26.65,"Jones&MacLarnon2004","",-0.183736865,-0.156646676
+"","Mops_condylurus","Chiroptera","Molossidae","Mops","condylurus","","","",0.42225,26.65,"Jones&MacLarnon2004","",-0.183736865,-0.156646676
 "Anoura caudifer","Anoura_caudifer","Chiroptera","Phyllostomidae","Anoura","caudifer",">1",">1","",0.4225,10.5,"Jones&MacLarnon2004","",0.119903917,0.171312163
 "Lonchophylla mordax","Lonchophylla_mordax","Chiroptera","Phyllostomidae","Lonchophylla","mordax","","","",0.432,10.7,"Jones&MacLarnon2004","",0.123415035,-0.074439117
-"Mops niveiventer","Mops_niveiventer","Chiroptera","Molossidae","Mops","niveiventer","","","",0.432,21.7,"Jones&MacLarnon2004","",-0.106894051,0.174330648
+"","Mops_niveiventer","Chiroptera","Molossidae","Mops","niveiventer","","","",0.432,21.7,"Jones&MacLarnon2004","",-0.106894051,0.174330648
 "Glossophaga longirostris","Glossophaga_longirostris","Chiroptera","Phyllostomidae","Glossophaga","longirostris","","","",0.435,11.2,"Jones&MacLarnon2004","",0.111544724,0.16126795
-"Scotophilus dinganii","Scotophilus_dinganii","Chiroptera","Vespertilionidae","Scotophilus","dinganii","","","",0.4385,24.3,"Jones&MacLarnon2004","",-0.137268444,-0.107768083
-"Rhinolophus yunanensis","Rhinolophus_yunanensis","Chiroptera","Rhinolophidae","Rhinolophus","yunanensis","","","",0.439,23.5,"Jones&MacLarnon2004","",-0.125869612,-0.095495237
-"Harpiocephalus harpia","Harpiocephalus_harpia","Chiroptera","Vespertilionidae","Harpiocephalus","harpia","","","",0.442,13.5,"Jones&MacLarnon2004","",0.057640368,0.102487107
-"Artibeus phaeotis","Artibeus_phaeotis","Chiroptera","Phyllostomidae","Artibeus","phaeotis",">1",">1","",0.448,11.8,"Jones&MacLarnon2004","",0.107335337,0.155696057
+"","Scotophilus_dinganii","Chiroptera","Vespertilionidae","Scotophilus","dinganii","","","",0.4385,24.3,"Jones&MacLarnon2004","",-0.137268444,-0.107768083
+"","Rhinolophus_yunanensis","Chiroptera","Rhinolophidae","Rhinolophus","yunanensis","","","",0.439,23.5,"Jones&MacLarnon2004","",-0.125869612,-0.095495237
+"","Harpiocephalus_harpia","Chiroptera","Vespertilionidae","Harpiocephalus","harpia","","","",0.442,13.5,"Jones&MacLarnon2004","",0.057640368,0.102487107
+"","Artibeus_phaeotis","Chiroptera","Phyllostomidae","Artibeus","phaeotis",">1",">1","",0.448,11.8,"Jones&MacLarnon2004","",0.107335337,0.155696057
 "Carollia castanea","Carollia_castanea","Chiroptera","Phyllostomidae","Carollia","castanea",">1",">1","",0.4485,12.55,"Jones&MacLarnon2004","",0.087748296,0.134500166
 "Artibeus cinereus","Artibeus_cinereus","Chiroptera","Phyllostomidae","Artibeus","cinereus",">1",">1","",0.4685,12.4,"Jones&MacLarnon2004","",0.110612011,0.157677817
-"Taphozous longimanus","Taphozous_longimanus","Chiroptera","Emballonuridae","Taphozous","longimanus","","","",0.47,23.2,"Jones&MacLarnon2004","",-0.092051328,-0.061341504
-"Mops mops","Mops_mops","Chiroptera","Molossidae","Mops","mops","","","",0.4725,30.95,"Jones&MacLarnon2004","",-0.183627738,-0.160442998
-"Nycteris javanica","Nycteris_javanica","Chiroptera","Nycteridae","Nycteris","javanica","","","",0.475,17.7,"Jones&MacLarnon2004","",0.000681273,0.038455804
-"Artibeus glaucus","Artibeus_glaucus","Chiroptera","Phyllostomidae","Artibeus","glaucus",">1",">1","",0.476,12.2,"Jones&MacLarnon2004","",0.122805808,-0.16343523
-"Nycteris tragata","Nycteris_tragata","Chiroptera","Nycteridae","Nycteris","tragata","","","",0.476,14.4,"Jones&MacLarnon2004","",0.068803315,0.170296156
+"","Taphozous_longimanus","Chiroptera","Emballonuridae","Taphozous","longimanus","","","",0.47,23.2,"Jones&MacLarnon2004","",-0.092051328,-0.061341504
+"","Mops_mops","Chiroptera","Molossidae","Mops","mops","","","",0.4725,30.95,"Jones&MacLarnon2004","",-0.183627738,-0.160442998
+"","Nycteris_javanica","Chiroptera","Nycteridae","Nycteris","javanica","","","",0.475,17.7,"Jones&MacLarnon2004","",0.000681273,0.038455804
+"","Artibeus_glaucus","Chiroptera","Phyllostomidae","Artibeus","glaucus",">1",">1","",0.476,12.2,"Jones&MacLarnon2004","",0.122805808,-0.16343523
+"","Nycteris_tragata","Chiroptera","Nycteridae","Nycteris","tragata","","","",0.476,14.4,"Jones&MacLarnon2004","",0.068803315,0.170296156
 "Scotophilus heathii","Scotophilus_heathii","Chiroptera","Vespertilionidae","Scotophilus","heathii","","","",0.476,31.5,"Jones&MacLarnon2004","",-0.186160076,0.111965033
-"Taphozous australis","Taphozous_australis","Chiroptera","Emballonuridae","Taphozous","australis","","","",0.5035,22.9,"Jones&MacLarnon2004","",-0.057910295,-0.026860656
-"Balionycteris maculata","Balionycteris_maculata","Chiroptera","Pteropodidae","Balionycteris","maculata",">1",">1","",0.51067,14.33,"Jones&MacLarnon2004","",0.100923949,0.144212894
+"","Taphozous_australis","Chiroptera","Emballonuridae","Taphozous","australis","","","",0.5035,22.9,"Jones&MacLarnon2004","",-0.057910295,-0.026860656
+"","Balionycteris_maculata","Chiroptera","Pteropodidae","Balionycteris","maculata",">1",">1","",0.51067,14.33,"Jones&MacLarnon2004","",0.100923949,0.144212894
 "Pteronotus parnellii","Pteronotus_parnellii","Chiroptera","Mormoopidae","Pteronotus","parnellii","","","",0.5315,19.1,"Jones&MacLarnon2004","",0.024695629,0.060482664
 "Taphozous melanopogon","Taphozous_melanopogon","Chiroptera","Emballonuridae","Taphozous","melanopogon","","","",0.536,22.7,"Jones&MacLarnon2004","",-0.027887735,0.00339093
 "Chiroderma trinitatum","Chiroderma_trinitatum","Chiroptera","Phyllostomidae","Chiroderma","trinitatum",">1",">1","",0.537,13.7,"Jones&MacLarnon2004","",0.137402241,0.094730818
 "Sphaeronycteris toxophyllum","Sphaeronycteris_toxophyllum","Chiroptera","Phyllostomidae","Sphaeronycteris","toxophyllum","","","",0.537,17.55,"Jones&MacLarnon2004","",0.056734084,0.181865021
-"Hipposideros maggietaylorae","Hipposideros_maggietaylorae","Chiroptera","Hipposideridae","Hipposideros","maggietaylorae","","","",0.5425,20.5,"Jones&MacLarnon2004","",0.01055152,-0.058222751
-"Taphozous hildegardeae","Taphozous_hildegardeae","Chiroptera","Emballonuridae","Taphozous","hildegardeae","","","",0.5425,27.45,"Jones&MacLarnon2004","",-0.084540721,0.044491713
-"Artibeus toltecus","Artibeus_toltecus","Chiroptera","Phyllostomidae","Artibeus","toltecus",">1",">1","",0.544,16.45,"Jones&MacLarnon2004","",0.083442306,0.12312902
-"Taphozous mauritianus","Taphozous_mauritianus","Chiroptera","Emballonuridae","Taphozous","mauritianus","","","",0.5505,29,"Jones&MacLarnon2004","",-0.096075041,-0.071191217
-"Noctilio albiventris","Noctilio_albiventris","Chiroptera","Noctilionidae","Noctilio","albiventris","","","",0.5735,35.6,"Jones&MacLarnon2004","",-0.145088557,-0.125558328
+"","Hipposideros_maggietaylorae","Chiroptera","Hipposideridae","Hipposideros","maggietaylorae","","","",0.5425,20.5,"Jones&MacLarnon2004","",0.01055152,-0.058222751
+"","Taphozous_hildegardeae","Chiroptera","Emballonuridae","Taphozous","hildegardeae","","","",0.5425,27.45,"Jones&MacLarnon2004","",-0.084540721,0.044491713
+"","Artibeus_toltecus","Chiroptera","Phyllostomidae","Artibeus","toltecus",">1",">1","",0.544,16.45,"Jones&MacLarnon2004","",0.083442306,0.12312902
+"","Taphozous_mauritianus","Chiroptera","Emballonuridae","Taphozous","mauritianus","","","",0.5505,29,"Jones&MacLarnon2004","",-0.096075041,-0.071191217
+"","Noctilio_albiventris","Chiroptera","Noctilionidae","Noctilio","albiventris","","","",0.5735,35.6,"Jones&MacLarnon2004","",-0.145088557,-0.125558328
 "Platyrrhinus brachycephalus","Platyrrhinus_brachycephalus","Chiroptera","Phyllostomidae","Platyrrhinus","brachycephalus","","","",0.583,12.9,"Jones&MacLarnon2004","",0.192694833,0.238728538
 "Anoura geoffroyi","Anoura_geoffroyi","Chiroptera","Phyllostomidae","Anoura","geoffroyi",">1",">1","",0.583,15,"Jones&MacLarnon2004","",0.14356822,0.185664126
-"Hipposideros lekaguli","Hipposideros_lekaguli","Chiroptera","Hipposideridae","Hipposideros","lekaguli","","","",0.584,30.3,"Jones&MacLarnon2004","",-0.084703122,-0.060964216
+"","Hipposideros_lekaguli","Chiroptera","Hipposideridae","Hipposideros","lekaguli","","","",0.584,30.3,"Jones&MacLarnon2004","",-0.084703122,-0.060964216
 "Leptonycteris nivalis","Leptonycteris_nivalis","Chiroptera","Phyllostomidae","Leptonycteris","nivalis","","","",0.5855,22.9,"Jones&MacLarnon2004","",0.007617129,0.038666769
 "Rhinolophus luctus","Rhinolophus_luctus","Chiroptera","Rhinolophidae","Rhinolophus","luctus","","","",0.5905,33.9,"Jones&MacLarnon2004","",-0.116464206,-0.095656459
-"Syconycteris australis","Syconycteris_australis","Chiroptera","Pteropodidae","Syconycteris","australis","","","",0.592,15.84,"Jones&MacLarnon2004","",0.13247327,0.173146558
-"Hipposideros turpis","Hipposideros_turpis","Chiroptera","Hipposideridae","Hipposideros","turpis","","","",0.599,34.8,"Jones&MacLarnon2004","",-0.118792023,-0.098668388
-"Macroglossus minimus","Macroglossus_minimus","Chiroptera","Pteropodidae","Macroglossus","minimus","","","",0.607,17.03,"Jones&MacLarnon2004","",0.119745434,0.158527453
+"","Syconycteris_australis","Chiroptera","Pteropodidae","Syconycteris","australis","","","",0.592,15.84,"Jones&MacLarnon2004","",0.13247327,0.173146558
+"","Hipposideros_turpis","Chiroptera","Hipposideridae","Hipposideros","turpis","","","",0.599,34.8,"Jones&MacLarnon2004","",-0.118792023,-0.098668388
+"","Macroglossus_minimus","Chiroptera","Pteropodidae","Macroglossus","minimus","","","",0.607,17.03,"Jones&MacLarnon2004","",0.119745434,0.158527453
 "Ardops nichollsi","Ardops_nichollsi","Chiroptera","Phyllostomidae","Ardops","nichollsi",">1",">1","",0.61,15,"Jones&MacLarnon2004","",0.1632295,0.205325407
-"Chironax melanocephalus","Chironax_melanocephalus","Chiroptera","Pteropodidae","Chironax","melanocephalus",">1",">1","",0.612,17.63,"Jones&MacLarnon2004","",0.112029813,-0.079085551
-"Eumops auripendulus","Eumops_auripendulus","Chiroptera","Molossidae","Eumops","auripendulus","","","",0.612,33.8,"Jones&MacLarnon2004","",-0.099970428,0.149907804
+"","Chironax_melanocephalus","Chiroptera","Pteropodidae","Chironax","melanocephalus",">1",">1","",0.612,17.63,"Jones&MacLarnon2004","",0.112029813,-0.079085551
+"","Eumops_auripendulus","Chiroptera","Molossidae","Eumops","auripendulus","","","",0.612,33.8,"Jones&MacLarnon2004","",-0.099970428,0.149907804
 "Rhinolophus hildebrandtii","Rhinolophus_hildebrandtii","Chiroptera","Rhinolophidae","Rhinolophus","hildebrandtii","","","",0.63,29.1,"Jones&MacLarnon2004","",-0.038613069,-0.01381912
 "Artibeus concolor","Artibeus_concolor","Chiroptera","Phyllostomidae","Artibeus","concolor",">1",">1","",0.633,19.4,"Jones&MacLarnon2004","",0.095519751,0.130899889
-"Lavia frons","Lavia_frons","Chiroptera","Megadermatidae","Lavia","frons","","","",0.644,23.5,"Jones&MacLarnon2004","",0.040551735,0.07092611
-"Eumops glaucinus","Eumops_glaucinus","Chiroptera","Molossidae","Eumops","glaucinus","","","",0.6565,36.85,"Jones&MacLarnon2004","",-0.097627973,-0.078998757
-"Megaderma spasma","Megaderma_spasma","Chiroptera","Megadermatidae","Megaderma","spasma","","","",0.667,23.8,"Jones&MacLarnon2004","",0.051659842,0.081703024
-"Saccolaimus saccolaimus","Saccolaimus_saccolaimus","Chiroptera","Emballonuridae","Saccolaimus","saccolaimus","","","",0.6705,43,"Jones&MacLarnon2004","",-0.138737606,-0.124138132
+"","Lavia_frons","Chiroptera","Megadermatidae","Lavia","frons","","","",0.644,23.5,"Jones&MacLarnon2004","",0.040551735,0.07092611
+"","Eumops_glaucinus","Chiroptera","Molossidae","Eumops","glaucinus","","","",0.6565,36.85,"Jones&MacLarnon2004","",-0.097627973,-0.078998757
+"","Megaderma_spasma","Chiroptera","Megadermatidae","Megaderma","spasma","","","",0.667,23.8,"Jones&MacLarnon2004","",0.051659842,0.081703024
+"","Saccolaimus_saccolaimus","Chiroptera","Emballonuridae","Saccolaimus","saccolaimus","","","",0.6705,43,"Jones&MacLarnon2004","",-0.138737606,-0.124138132
 "Cardioderma cor","Cardioderma_cor","Chiroptera","Megadermatidae","Cardioderma","cor",">1",">1","",0.6725,25.5,"Jones&MacLarnon2004","",-0.160404775,-0.115941996
 "Sturnira ludovici","Sturnira_ludovici","Chiroptera","Phyllostomidae","Sturnira","ludovici","","","",0.676,25.9,"Jones&MacLarnon2004","",0.029938346,0.057773839
 "Megaloglossus woermanni","Megaloglossus_woermanni","Chiroptera","Pteropodidae","Megaloglossus","woermanni","","","",0.6795,18,"Jones&MacLarnon2004","",0.150702645,0.188038363
-"Taphozous theobaldi","Taphozous_theobaldi","Chiroptera","Emballonuridae","Taphozous","theobaldi","","","",0.681,39.8,"Jones&MacLarnon2004","",-0.106800007,-0.09018146
-"Macroglossus sobrinus","Macroglossus_sobrinus","Chiroptera","Pteropodidae","Macroglossus","sobrinus","","","",0.692,21.7,"Jones&MacLarnon2004","",0.097728297,0.130183231
+"","Taphozous_theobaldi","Chiroptera","Emballonuridae","Taphozous","theobaldi","","","",0.681,39.8,"Jones&MacLarnon2004","",-0.106800007,-0.09018146
+"","Macroglossus_sobrinus","Chiroptera","Pteropodidae","Macroglossus","sobrinus","","","",0.692,21.7,"Jones&MacLarnon2004","",0.097728297,0.130183231
 "Chiroderma villosum","Chiroderma_villosum","Chiroptera","Phyllostomidae","Chiroderma","villosum",">1",">1","",0.706,24.8,"Jones&MacLarnon2004","",0.062932543,0.091901139
 "Scotonycteris zenkeri","Scotonycteris_zenkeri","Chiroptera","Pteropodidae","Scotonycteris","zenkeri","","","",0.71,21.35,"Jones&MacLarnon2004","",0.114176991,0.147056467
-"Hipposideros diadema","Hipposideros_diadema","Chiroptera","Hipposideridae","Hipposideros","diadema","","","",0.715,43.6,"Jones&MacLarnon2004","",-0.115343913,-0.10110623
+"","Hipposideros_diadema","Chiroptera","Hipposideridae","Hipposideros","diadema","","","",0.715,43.6,"Jones&MacLarnon2004","",-0.115343913,-0.10110623
 "Sturnira tildae","Sturnira_tildae","Chiroptera","Phyllostomidae","Sturnira","tildae","","","",0.7255,24,"Jones&MacLarnon2004","",0.085445686,0.115270383
-"Paranyctimene raptor","Paranyctimene_raptor","Chiroptera","Pteropodidae","Paranyctimene","raptor","","","",0.731,26.1,"Jones&MacLarnon2004","",0.061403446,0.089038102
-"Hipposideros lankadiva","Hipposideros_lankadiva","Chiroptera","Hipposideridae","Hipposideros","lankadiva","","","",0.733,48.5,"Jones&MacLarnon2004","",-0.139237736,-0.127780809
-"Nycteris grandis","Nycteris_grandis","Chiroptera","Nycteridae","Nycteris","grandis","","","",0.7355,29.4,"Jones&MacLarnon2004","",0.025288272,0.049814436
+"","Paranyctimene_raptor","Chiroptera","Pteropodidae","Paranyctimene","raptor","","","",0.731,26.1,"Jones&MacLarnon2004","",0.061403446,0.089038102
+"","Hipposideros_lankadiva","Chiroptera","Hipposideridae","Hipposideros","lankadiva","","","",0.733,48.5,"Jones&MacLarnon2004","",-0.139237736,-0.127780809
+"","Nycteris_grandis","Chiroptera","Nycteridae","Nycteris","grandis","","","",0.7355,29.4,"Jones&MacLarnon2004","",0.025288272,0.049814436
 "Platyrrhinus lineatus","Platyrrhinus_lineatus","Chiroptera","Phyllostomidae","Platyrrhinus","lineatus","","","",0.741,22.6,"Jones&MacLarnon2004","",0.11420376,0.145597695
 "Macronycteris commersoni","Hipposideros_commersoni","Chiroptera","Hipposideridae","Hipposideros","commersoni","","","",0.74475,101.25,"Jones&MacLarnon2004","",-0.372073374,-0.379833246
-"Otomops martiensseni","Otomops_martiensseni","Chiroptera","Molossidae","Otomops","martiensseni","","","",0.7555,41.75,"Jones&MacLarnon2004","",-0.077292849,-0.06192315
+"","Otomops_martiensseni","Chiroptera","Molossidae","Otomops","martiensseni","","","",0.7555,41.75,"Jones&MacLarnon2004","",-0.077292849,-0.06192315
 "Chiroderma salvini","Chiroderma_salvini","Chiroptera","Phyllostomidae","Chiroderma","salvini",">1",">1","",0.787,24.3,"Jones&MacLarnon2004","",0.116736691,0.146237051
 "Tonatia bidens","Tonatia_bidens","Chiroptera","Phyllostomidae","Tonatia","bidens","","","",0.788,29.4,"Jones&MacLarnon2004","",0.055231813,0.079757977
 "Hipposideros armiger","Hipposideros_armiger","Chiroptera","Hipposideridae","Hipposideros","armiger","","","",0.8,56,"Jones&MacLarnon2004","",-0.148086871,-0.140384067
 "Diphylla ecaudata","Diphylla_ecaudata","Chiroptera","Phyllostomidae","Diphylla","ecaudata",">1",">1","",0.8015,31.05,"Jones&MacLarnon2004","",0.044823253,0.067923771
-"Eumops perotis","Eumops_perotis","Chiroptera","Molossidae","Eumops","perotis","","","",0.802,47.5,"Jones&MacLarnon2004","",-0.093381183,-0.081380304
-"Micropteropus pusillus","Micropteropus_pusillus","Chiroptera","Pteropodidae","Micropteropus","pusillus","","","",0.82,25.2,"Jones&MacLarnon2004","",0.122730002,0.151280848
-"Megaerops ecaudatus","Megaerops_ecaudatus","Chiroptera","Pteropodidae","Megaerops","ecaudatus","","","",0.82233,24.67,"Jones&MacLarnon2004","",0.130885891,0.159991707
-"Nyctimene albiventer","Nyctimene_albiventer","Chiroptera","Pteropodidae","Nyctimene","albiventer","","","",0.825,29.7,"Jones&MacLarnon2004","",0.071852674,0.096113772
-"Sphaerias blanfordi","Sphaerias_blanfordi","Chiroptera","Pteropodidae","Sphaerias","blanfordi","","","",0.832,29.5,"Jones&MacLarnon2004","",0.077722897,0.102160407
+"","Eumops_perotis","Chiroptera","Molossidae","Eumops","perotis","","","",0.802,47.5,"Jones&MacLarnon2004","",-0.093381183,-0.081380304
+"","Micropteropus_pusillus","Chiroptera","Pteropodidae","Micropteropus","pusillus","","","",0.82,25.2,"Jones&MacLarnon2004","",0.122730002,0.151280848
+"","Megaerops_ecaudatus","Chiroptera","Pteropodidae","Megaerops","ecaudatus","","","",0.82233,24.67,"Jones&MacLarnon2004","",0.130885891,0.159991707
+"","Nyctimene_albiventer","Chiroptera","Pteropodidae","Nyctimene","albiventer","","","",0.825,29.7,"Jones&MacLarnon2004","",0.071852674,0.096113772
+"","Sphaerias_blanfordi","Chiroptera","Pteropodidae","Sphaerias","blanfordi","","","",0.832,29.5,"Jones&MacLarnon2004","",0.077722897,0.102160407
 "Phyllostomus elongatus","Phyllostomus_elongatus","Chiroptera","Phyllostomidae","Phyllostomus","elongatus","","","",0.885,44.9,"Jones&MacLarnon2004","",-0.032276661,-0.01880607
 "Lyroderma lyra","Megaderma_lyra","Chiroptera","Megadermatidae","Megaderma","lyra","","","",0.8935,35.3,"Jones&MacLarnon2004","",0.050229073,0.069980251
 "Trachops cirrhosus","Trachops_cirrhosus","Chiroptera","Phyllostomidae","Trachops","cirrhosus","","","",0.9115,36.45,"Jones&MacLarnon2004","",0.048448972,0.067363144
 "Vampyrodes caraccioli","Vampyrodes_caraccioli","Chiroptera","Phyllostomidae","Vampyrodes","caraccioli","","","",0.947,39.7,"Jones&MacLarnon2004","",0.037222292,0.053906521
-"Penthetor lucasi","Penthetor_lucasi","Chiroptera","Pteropodidae","Penthetor","lucasi","","","",0.9475,35,"Jones&MacLarnon2004","",0.078493756,0.09846777
-"Megaerops niphanae","Megaerops_niphanae","Chiroptera","Pteropodidae","Megaerops","niphanae","","","",0.958,32.6,"Jones&MacLarnon2004","",0.106418092,0.128246762
-"Nyctimene vizcaccia","Nyctimene_vizcaccia","Chiroptera","Pteropodidae","Nyctimene","vizcaccia","","","",0.988,35.4,"Jones&MacLarnon2004","",0.092970035,0.112647355
-"Melonycteris woodfordi","Melonycteris_woodfordi","Chiroptera","Pteropodidae","Melonycteris","woodfordi","","","",1.0185,35.5,"Jones&MacLarnon2004","",0.105255297,0.124858968
-"Scotophilus nigrita","Scotophilus_nigrita","Chiroptera","Vespertilionidae","Scotophilus","nigrita","","","",1.046,101,"Jones&MacLarnon2004","",-0.223746951,-0.231442276
+"","Penthetor_lucasi","Chiroptera","Pteropodidae","Penthetor","lucasi","","","",0.9475,35,"Jones&MacLarnon2004","",0.078493756,0.09846777
+"","Megaerops_niphanae","Chiroptera","Pteropodidae","Megaerops","niphanae","","","",0.958,32.6,"Jones&MacLarnon2004","",0.106418092,0.128246762
+"","Nyctimene_vizcaccia","Chiroptera","Pteropodidae","Nyctimene","vizcaccia","","","",0.988,35.4,"Jones&MacLarnon2004","",0.092970035,0.112647355
+"","Melonycteris_woodfordi","Chiroptera","Pteropodidae","Melonycteris","woodfordi","","","",1.0185,35.5,"Jones&MacLarnon2004","",0.105255297,0.124858968
+"","Scotophilus_nigrita","Chiroptera","Vespertilionidae","Scotophilus","nigrita","","","",1.046,101,"Jones&MacLarnon2004","",-0.223746951,-0.231442276
 "Cynopterus sphinx","Cynopterus_sphinx","Chiroptera","Pteropodidae","Cynopterus","sphinx",">1",">1","",1.061,42.4,"Jones&MacLarnon2004","",0.065155987,0.080122334
 "Platyrrhinus infuscus","Platyrrhinus_infuscus","Chiroptera","Phyllostomidae","Platyrrhinus","infuscus","","","",1.11,50.3,"Jones&MacLarnon2004","",0.029111474,0.039616965
-"Myonycteris torquata","Myonycteris_torquata","Chiroptera","Pteropodidae","Myonycteris","torquata","","","",1.11585,36.4,"Jones&MacLarnon2004","",0.136745233,0.155695243
+"","Myonycteris_torquata","Chiroptera","Pteropodidae","Myonycteris","torquata","","","",1.11585,36.4,"Jones&MacLarnon2004","",0.136745233,0.155695243
 "Platyrrhinus vittatus","Platyrrhinus_vittatus","Chiroptera","Phyllostomidae","Platyrrhinus","vittatus","","","",1.175,36.6,"Jones&MacLarnon2004","",0.157392489,0.176199437
-"Nyctimene robinsoni","Nyctimene_robinsoni","Chiroptera","Pteropodidae","Nyctimene","robinsoni","","","",1.23067,47.03,"Jones&MacLarnon2004","",0.095825065,0.108085571
+"","Nyctimene_robinsoni","Chiroptera","Pteropodidae","Nyctimene","robinsoni","","","",1.23067,47.03,"Jones&MacLarnon2004","",0.095825065,0.108085571
 "Eonycteris spelaea","Eonycteris_spelaea","Chiroptera","Pteropodidae","Eonycteris","spelaea",">1",">1","",1.26,54.86,"Jones&MacLarnon2004","",0.055892917,0.064132705
 "Brachyphylla cavernarum","Brachyphylla_cavernarum","Chiroptera","Phyllostomidae","Brachyphylla","cavernarum",">1",">1","",1.278,46.75,"Jones&MacLarnon2004","",0.114159346,0.126575758
-"Melonycteris melanops","Melonycteris_melanops","Chiroptera","Pteropodidae","Melonycteris","melanops","","","",1.288,47.45,"Jones&MacLarnon2004","",0.112703359,0.124731736
+"","Melonycteris_melanops","Chiroptera","Pteropodidae","Melonycteris","melanops","","","",1.288,47.45,"Jones&MacLarnon2004","",0.112703359,0.124731736
 "Phylloderma stenops","Phylloderma_stenops","Chiroptera","Phyllostomidae","Phylloderma","stenops","","","",1.338,46.1,"Jones&MacLarnon2004","",0.138645165,0.151427133
-"Cheiromeles torquatus","Cheiromeles_torquatus","Chiroptera","Molossidae","Cheiromeles","torquatus",">1",">1","",1.366,168.5,"Jones&MacLarnon2004","",-0.274538368,-0.295596552
-"Notopteris macdonaldi","Notopteris_macdonaldi","Chiroptera","Pteropodidae","Notopteris","macdonaldi","","","",1.45275,70.18,"Jones&MacLarnon2004","",0.037494347,0.039304101
+"","Cheiromeles_torquatus","Chiroptera","Molossidae","Cheiromeles","torquatus",">1",">1","",1.366,168.5,"Jones&MacLarnon2004","",-0.274538368,-0.295596552
+"","Notopteris_macdonaldi","Chiroptera","Pteropodidae","Notopteris","macdonaldi","","","",1.45275,70.18,"Jones&MacLarnon2004","",0.037494347,0.039304101
 "Phyllostomus hastatus","Phyllostomus_hastatus","Chiroptera","Phyllostomidae","Phyllostomus","hastatus","","","",1.53175,90,"Jones&MacLarnon2004","",-0.020531252,-0.025215955
-"Epomophorus labiatus","Epomophorus_labiatus","Chiroptera","Pteropodidae","Epomophorus","labiatus",">1",">1","",1.58867,64.1,"Jones&MacLarnon2004","",0.10585393,0.110029633
-"Rousettus amplexicaudatus","Rousettus_amplexicaudatus","Chiroptera","Pteropodidae","Rousettus","amplexicaudatus","","","",1.62725,80.38,"Jones&MacLarnon2004","",0.042556358,0.040823101
+"","Epomophorus_labiatus","Chiroptera","Pteropodidae","Epomophorus","labiatus",">1",">1","",1.58867,64.1,"Jones&MacLarnon2004","",0.10585393,0.110029633
+"","Rousettus_amplexicaudatus","Chiroptera","Pteropodidae","Rousettus","amplexicaudatus","","","",1.62725,80.38,"Jones&MacLarnon2004","",0.042556358,0.040823101
 "Macroderma gigas","Macroderma_gigas","Chiroptera","Megadermatidae","Macroderma","gigas","","","",1.7,120,"Jones&MacLarnon2004","",-0.068975134,-0.081170858
 "Chrotopterus auritus","Chrotopterus_auritus","Chiroptera","Phyllostomidae","Chrotopterus","auritus","","","",1.74,87,"Stankowich2016","",0.045872651,0.042073076
 "Lissonycteris angolensis","Lissonycteris_angolensis","Chiroptera","Pteropodidae","Lissonycteris","angolensis","","","",1.762,84.15,"Jones&MacLarnon2004","",0.062178256,0.05924829
 "Epomophorus wahlbergi","Epomophorus_wahlbergi","Chiroptera","Pteropodidae","Epomophorus","wahlbergi",">1",">1","",1.96133,81.51,"Jones&MacLarnon2004","",0.119105539,0.117007795
 "Epomops franqueti","Epomops_franqueti","Chiroptera","Pteropodidae","Epomops","franqueti",">1",">1","",2.213,118.25,"Jones&MacLarnon2004","",0.050342475,0.038530307
-"Dobsonia inermis","Dobsonia_inermis","Chiroptera","Pteropodidae","Dobsonia","inermis",">1",">1","",2.7,149.5,"Jones&MacLarnon2004","",0.06034409,0.04240954
+"","Dobsonia_inermis","Chiroptera","Pteropodidae","Dobsonia","inermis",">1",">1","",2.7,149.5,"Jones&MacLarnon2004","",0.06034409,0.04240954
 "Vampyrum spectrum","Vampyrum_spectrum","Chiroptera","Phyllostomidae","Vampyrum","spectrum","","","",2.8685,181,"Jones&MacLarnon2004","",0.02435657,0.00143001
-"Dobsonia praedatrix","Dobsonia_praedatrix","Chiroptera","Pteropodidae","Dobsonia","praedatrix",">1",">1","",2.97488,190.52,"Jones&MacLarnon2004","",0.023474516,-0.000790383
-"Dobsonia moluccensis","Dobsonia_moluccensis","Chiroptera","Pteropodidae","Dobsonia","moluccensis",">1",">1","",4.43,325,"Jones&MacLarnon2004","",0.022450099,-0.015758651
+"","Dobsonia_praedatrix","Chiroptera","Pteropodidae","Dobsonia","praedatrix",">1",">1","",2.97488,190.52,"Jones&MacLarnon2004","",0.023474516,-0.000790383
+"","Dobsonia_moluccensis","Chiroptera","Pteropodidae","Dobsonia","moluccensis",">1",">1","",4.43,325,"Jones&MacLarnon2004","",0.022450099,-0.015758651
 "Eidolon helvum","Eidolon_helvum","Chiroptera","Pteropodidae","Eidolon","helvum",">1",">1","",4.4325,266.75,"Jones&MacLarnon2004","",0.087029909,0.053977985
 "Pteropus temminckii","Pteropus_temminckii","Chiroptera","Pteropodidae","Pteropus","temminckii","","","",4.89,250,"Jones&MacLarnon2004","",0.150813532,0.119454787
-"Pteropus mahaganus","Pteropus_mahaganus","Chiroptera","Pteropodidae","Pteropus","mahaganus","","","",5.28,465,"Jones&MacLarnon2004","",-0.017997972,-0.065559197
+"","Pteropus_mahaganus","Chiroptera","Pteropodidae","Pteropus","mahaganus","","","",5.28,465,"Jones&MacLarnon2004","",-0.017997972,-0.065559197
 "Pteropus hypomelanus","Pteropus_hypomelanus","Chiroptera","Pteropodidae","Pteropus","hypomelanus","","","",5.302,390,"Jones&MacLarnon2004","",0.041099615,-0.001869323
 "Pteropus scapulatus","Pteropus_scapulatus","Chiroptera","Pteropodidae","Pteropus","scapulatus","","","",5.36,375,"Jones&MacLarnon2004","",0.058599804,0.016654869
-"Pteropus samoensis","Pteropus_samoensis","Chiroptera","Pteropodidae","Pteropus","samoensis","","","",5.792,310,"Jones&MacLarnon2004","",0.154266318,0.117291282
-"Pteropus tonganus","Pteropus_tonganus","Chiroptera","Pteropodidae","Pteropus","tonganus","","","",6.075,428.75,"Jones&MacLarnon2004","",0.069351246,0.023909096
-"Pteropus lylei","Pteropus_lylei","Chiroptera","Pteropodidae","Pteropus","lylei","","","",6.12967,316.67,"Jones&MacLarnon2004","",0.171940874,0.083474135
-"Pteropus macrotis","Pteropus_macrotis","Chiroptera","Pteropodidae","Pteropus","macrotis","","","",6.12967,366,"Jones&MacLarnon2004","",0.124784818,0.134410037
+"","Pteropus_samoensis","Chiroptera","Pteropodidae","Pteropus","samoensis","","","",5.792,310,"Jones&MacLarnon2004","",0.154266318,0.117291282
+"","Pteropus_tonganus","Chiroptera","Pteropodidae","Pteropus","tonganus","","","",6.075,428.75,"Jones&MacLarnon2004","",0.069351246,0.023909096
+"","Pteropus_lylei","Chiroptera","Pteropodidae","Pteropus","lylei","","","",6.12967,316.67,"Jones&MacLarnon2004","",0.171940874,0.083474135
+"","Pteropus_macrotis","Chiroptera","Pteropodidae","Pteropus","macrotis","","","",6.12967,366,"Jones&MacLarnon2004","",0.124784818,0.134410037
 "Pteropus alecto","Pteropus_alecto","Chiroptera","Pteropodidae","Pteropus","alecto","","","",7.03967,595,"Jones&MacLarnon2004","",0.026621659,-0.027376001
 "Pteropus poliocephalus","Pteropus_poliocephalus","Chiroptera","Pteropodidae","Pteropus","poliocephalus","","","",7.2298,695,"Jones&MacLarnon2004","",-0.012405704,-0.07045937
-"Pteropus rufus","Pteropus_rufus","Chiroptera","Pteropodidae","Pteropus","rufus","","","",7.25,338.83,"Jones&MacLarnon2004","",0.222810383,0.183513595
+"","Pteropus_rufus","Chiroptera","Pteropodidae","Pteropus","rufus","","","",7.25,338.83,"Jones&MacLarnon2004","",0.222810383,0.183513595
 "Pteropus giganteus","Pteropus_giganteus","Chiroptera","Pteropodidae","Pteropus","giganteus","","","",7.78,577,"Jones&MacLarnon2004","",0.080054911,0.026859289
-"Pteropus conspicillatus","Pteropus_conspicillatus","Chiroptera","Pteropodidae","Pteropus","conspicillatus","","","",8.35,750,"Jones&MacLarnon2004","",0.025346916,-0.034695229
-"Pteropus neohibernicus","Pteropus_neohibernicus","Chiroptera","Pteropodidae","Pteropus","neohibernicus","","","",9.114,840,"Jones&MacLarnon2004","",0.026455608,-0.036545408
+"","Pteropus_conspicillatus","Chiroptera","Pteropodidae","Pteropus","conspicillatus","","","",8.35,750,"Jones&MacLarnon2004","",0.025346916,-0.034695229
+"","Pteropus_neohibernicus","Chiroptera","Pteropodidae","Pteropus","neohibernicus","","","",9.114,840,"Jones&MacLarnon2004","",0.026455608,-0.036545408
 "Dasypus novemcinctus","Dasypus_novemcinctus","Cingulata","Dasypodidae","Dasypus","novemcinctus","11","","Both",8.5,2743.5,"Boddy2012","Crile&Quiring1940",-0.389357295,NA
 "Cabassous unicinctus","Cabassous_unicinctus","Cingulata","Dasypodidae","Cabassous","unicinctus","1","","Male",23.68,3930,"Boddy2012","Pirlot & Kamiya 1983",-0.061461289,NA
 "Zaedyus pichiy","Zaedyus_pichiy","Cingulata","Dasypodidae","Zaedyus","pichiy","","","",7.98,1740,"Stankowich2016","",-0.268455178,NA
@@ -857,12 +857,12 @@
 "Ochotona princeps","Ochotona_princeps","Lagomorpha","Ochotonidae","Ochotona","princeps",">1,<10","","Both",2.39,169,"Boddy2012","Mace.etal1981",-0.032556275,-0.020880976
 "Ochotona rufescens","Ochotona_rufescens","Lagomorpha","Ochotonidae","Ochotona","rufescens",">1,<10","","Both",2.75,250,"Boddy2012","Mace.etal1981",-0.099162633,-0.063181636
 "Sylvilagus audubonii","Sylvilagus_audubonii","Lagomorpha","Leporidae","Sylvilagus","audubonii",">1,<10","","Both",6.07,792.5,"Boddy2012","Mace.etal1981",-0.131104539,-0.023507204
-"Sylvilagus bachmani","Sylvilagus_bachmani","Lagomorpha","Leporidae","Sylvilagus","bachmani",">1,<10","","Both",6.58,712.4,"Boddy2012","Mace.etal1981",-0.061360497,0.039622707
+"","Sylvilagus_bachmani","Lagomorpha","Leporidae","Sylvilagus","bachmani",">1,<10","","Both",6.58,712.4,"Boddy2012","Mace.etal1981",-0.061360497,0.039622707
 "Sylvilagus floridanus","Sylvilagus_floridanus","Lagomorpha","Leporidae","Sylvilagus","floridanus",">1,<10","","Both",7.56,1036,"Boddy2012","Mace.etal1981",-0.123042601,0.001186124
 "Lepus americanus","Lepus_americanus","Lagomorpha","Leporidae","Lepus","americanus",">1,<10","","Both",9.72,1500,"Boddy2012","Mace.etal1981",-0.134447868,0.012754191
-"Lepus capensis","Lepus_capensis","Lagomorpha","Leporidae","Lepus","capensis",">2,<11","","Both",10.78,2412.5,"Boddy2012","Crile&Quiring1940,Mace.etal1981",-0.244278843,-0.067579478
+"","Lepus_capensis","Lagomorpha","Leporidae","Lepus","capensis",">2,<11","","Both",10.78,2412.5,"Boddy2012","Crile&Quiring1940,Mace.etal1981",-0.244278843,-0.067579478
 "Oryctolagus cuniculus","Oryctolagus_cuniculus","Lagomorpha","Leporidae","Oryctolagus","cuniculus",">3,<12","","Both",11.09,2157.6,"Boddy2012","Mace.etal1981,Warncke1908",-0.195593432,-0.02582565
-"Lepus nigricollis","Lepus_nigricollis","Lagomorpha","Leporidae","Lepus","nigricollis",">1,<10","","Both",11.49,1961,"Boddy2012","Mace.etal1981",-0.149084658,0.014752486
+"","Lepus_nigricollis","Lagomorpha","Leporidae","Lepus","nigricollis",">1,<10","","Both",11.49,1961,"Boddy2012","Mace.etal1981",-0.149084658,0.014752486
 "Lepus californicus","Lepus_californicus","Lagomorpha","Leporidae","Lepus","californicus",">1,<10","","Both",13.23,2314.9,"Boddy2012","Mace.etal1981",-0.141886321,0.032249584
 "Lepus europaeus","Lepus_europaeus","Lagomorpha","Leporidae","Lepus","europaeus","","","both",14.35,1954,"Boddy2012","Mace 1981",-0.051387999,0.112227169
 "Lepus arcticus","Lepus_arcticus","Lagomorpha","Leporidae","Lepus","arcticus","4","","both",15.8,4231,"Boddy2012","Mace 1981",-0.261223978,-0.049653196
@@ -876,7 +876,7 @@
 "Dromiciops gliroides","Dromiciops_gliroides","Microbiotheria","Microbiotheriidae","Dromiciops","gliroides","2","","Both",0.81,24,"Ashwell2008/Weisbecker.etal.2013","",0.133293289,NA
 "Ornithorhynchus anatinus","Ornithorhynchus_anatinus","Monotremata","Ornithorhynchidae","Ornithorhynchus","anatinus","1","","",10.08,1389,"Boddy2012","Macrini.etal2006",-0.093611611,NA
 "Tachyglossus aculeatus","Tachyglossus_aculeatus","Monotremata","Tachyglossidae","Tachyglossus","aculeatus","","","",20.73,4250,"Boddy2012","Macrini 2006",-0.144741204,NA
-"Zaglossus bruijni","Zaglossus_bruijni","Monotremata","Tachyglossidae","Zaglossus","bruijni","","","",37.35,7500,"Boddy2012","Macrini 2006",-0.074055852,NA
+"Zaglossus bruijnii","Zaglossus_bruijni","Monotremata","Tachyglossidae","Zaglossus","bruijni","","","",37.35,7500,"Boddy2012","Macrini 2006",-0.074055852,NA
 "Notoryctes caurinus","Notoryctes_caurinus","Notoryctemorphia","Notoryctidae","Notoryctes","caurinus","2","","Both",0.78,55,"Ashwell2008/Weisbecker.etal.2013","",-0.153213198,NA
 "Rhyncholestes raphanurus","Rhyncholestes_raphanurus","Paucituberculata","Caenolestidae","Rhyncholestes","raphanurus","1","","Both",0.65,23.5,"Ashwell2008/Weisbecker.etal.2013","",0.044579224,NA
 "Caenolestes fuliginosus","Caenolestes_fuliginosus","Paucituberculata","Caenolestidae","Caenolestes","fuliginosus","1","","Both",0.68,35,"Ashwell2008/Weisbecker.etal.2013","",-0.06557655,NA
@@ -1052,7 +1052,7 @@
 "Loris tardigradus","Loris_tardigradus","Primates","Lorisidae","Loris","tardigradus","3","","F or both",6,322,"Boddy2012","Sherwood.etal2008,Boddy2012,Stephan.etal1981",0.157218268,-0.078922327
 "Perodicticus potto","Perodicticus_potto","Primates","Lorisidae","Perodicticus","potto","4","","F or both",12.07,929.33,"Boddy2012","Boddy2012,Sherwood.etal2008,Stephan.etal1981,Warncke1908",0.115535548,-0.141086206
 "Tarsius bancanus","Tarsius_bancanus","Primates","Tarsiidae","Tarsius","bancanus","1","","Female",2.7,77.6,"Boddy2012","Sherwood.etal2008,Boddy2012",0.273930658,0.06528702
-"Nycticebus pygmaeus","Nycticebus_pygmaeus","Primates","Lorisidae","Nycticebus","pygmaeus","1","","Female",7.8,480,"Boddy2012","Sherwood.etal2008,Boddy2012",0.1411214,-0.102733783
+"Xanthonycticebus pygmaeus","Nycticebus_pygmaeus","Primates","Lorisidae","Nycticebus","pygmaeus","1","","Female",7.8,480,"Boddy2012","Sherwood.etal2008,Boddy2012",0.1411214,-0.102733783
 "Saimiri boliviensis","Saimiri_boliviensis","Primates","Cebidae","Saimiri","boliviensis","1","","Female",24.06,750,"Boddy2012","Sherwoodetal.2008; Silva & Downing 1995",0.484956064,0.232477076
 "Colobus guereza","Colobus_guereza","Primates","Cercopithecidae","Colobus","guereza","1","","Female",83.9,10281.25,"Boddy2012","Sherwoodetal.2008; Silva & Downing 1995",0.174676065,-0.128391779
 "Cercocebus agilis","Cercocebus_agilis","Primates","Cercopithecidae","Cercocebus","agilis","1","","Female",95.3,4700,"Boddy2012","Sherwoodetal.2008; Silva & Downing 1995",0.484970397,0.19702816
@@ -1167,17 +1167,17 @@
 "Elephas maximus","Elephas_maximus","Proboscidea","Elephantidae","Elephas","maximus","2","","Female",5211.25,2765457.5,"Boddy2012","Shoshani 2006; Tower 1954; Silva & Downing 1995",0.145548448,NA
 "Micromys minutus","Micromys_minutus","Rodentia","Muridae","Micromys","minutus",">1,<10","","Both",0.29,6.4,"Boddy2012","Mace.etal1981",0.117733679,0.007669805
 "Perognathus flavus","Perognathus_flavus","Rodentia","Heteromyidae","Perognathus","flavus",">10","","Both",0.31,8.4,"Boddy2012","Hafner1984,Mace.etal1981",0.058122076,-0.039293593
-"Mus booduga","Mus_booduga","Rodentia","Muridae","Mus","booduga",">1,<10","","Both",0.31,14.6,"Boddy2012","Mace.etal1981",-0.121934758,-0.193639019
+"","Mus_booduga","Rodentia","Muridae","Mus","booduga",">1,<10","","Both",0.31,14.6,"Boddy2012","Mace.etal1981",-0.121934758,-0.193639019
 "Perognathus longimembris","Perognathus_longimembris","Rodentia","Heteromyidae","Perognathus","longimembris",">6,<16","","Both",0.33,8.15,"Boddy2012","Hafner1984,Mace.etal1981",0.09511567,-0.003705304
 "Reithrodontomys megalotis","Reithrodontomys_megalotis","Rodentia","Cricetidae","Reithrodontomys","megalotis",">1,<10","","Both",0.4,10.7,"Boddy2012","Mace.etal1981",0.089991279,0.003832095
 "Peromyscus polionotus","Peromyscus_polionotus","Rodentia","Cricetidae","Peromyscus","polionotus","94","","Both",0.42,13.32,"Boddy2012","Mace&Eisenberg1982",0.039839587,-0.036132384
 "Lagurus lagurus","Lagurus_lagurus","Rodentia","Cricetidae","Lagurus","lagurus",">1,<10","","Both",0.42,20.1,"Boddy2012","Mace.etal1981",-0.09418052,-0.151014947
-"Otomys angoniensis","Otomys_angoniensis","Rodentia","Muridae","Otomys","angoniensis",">1,<10","","Both",0.42,95,"Boddy2012","Mace.etal1981",-0.600080835,-0.584674686
+"","Otomys_angoniensis","Rodentia","Muridae","Otomys","angoniensis",">1,<10","","Both",0.42,95,"Boddy2012","Mace.etal1981",-0.600080835,-0.584674686
 "Chaetodipus penicillatus","Chaetodipus_penicillatus","Rodentia","Heteromyidae","Chaetodipus","penicillatus",">10","","Both",0.46,16.25,"Boddy2012","Hafner1984,Mace.etal1981",0.014585677,-0.052138471
 "Napaeozapus insignis","Napaeozapus_insignis","Rodentia","Dipodidae","Napaeozapus","insignis",">1,<10","","Both",0.48,23.2,"Boddy2012","Mace.etal1981",-0.082907949,-0.133071032
 "Chaetodipus formosus","Chaetodipus_formosus","Rodentia","Heteromyidae","Chaetodipus","formosus",">10","","Both",0.49,18.1,"Boddy2012","Hafner1984,Mace.etal1981",0.006904695,-0.054804564
-"Zapus princeps","Zapus_princeps","Rodentia","Dipodidae","Zapus","princeps",">1,<10","","Both",0.5,24.5,"Boddy2012","Mace.etal1981",-0.08293792,-0.130565125
-"Mus platythrix","Mus_platythrix","Rodentia","Muridae","Mus","platythrix",">1,<10","","Both",0.5,29.2,"Boddy2012","Mace.etal1981",-0.140101021,-0.17956556
+"","Zapus_princeps","Rodentia","Dipodidae","Zapus","princeps",">1,<10","","Both",0.5,24.5,"Boddy2012","Mace.etal1981",-0.08293792,-0.130565125
+"","Mus_platythrix","Rodentia","Muridae","Mus","platythrix",">1,<10","","Both",0.5,29.2,"Boddy2012","Mace.etal1981",-0.140101021,-0.17956556
 "Myodes glareolus","Myodes_glareolus","Rodentia","Cricetidae","Myodes","glareolus",">1,<10","","Both",0.52,17.9,"Boddy2012","Mace.etal1981",0.03633115,-0.025894916
 "Microtus oregoni","Microtus_oregoni","Rodentia","Cricetidae","Microtus","oregoni",">1,<10","","Both",0.52,22,"Boddy2012","Mace.etal1981",-0.030846705,-0.083480038
 "Heterocephalus glaber","Heterocephalus_glaber","Rodentia","Bathyergidae","Heterocephalus","glaber",">1,<10","","Both",0.52,60.8,"Boddy2012","Mace.etal1981",-0.361960425,-0.36731202
@@ -1186,7 +1186,7 @@
 "Zapus hudsonius","Zapus_hudsonius","Rodentia","Dipodidae","Zapus","hudsonius",">1,<10","","Both",0.55,17.47,"Boddy2012","Mace.etal1981",0.068610663,0.005253629
 "Microtus arvalis","Microtus_arvalis","Rodentia","Cricetidae","Microtus","arvalis",">1,<10","","Both",0.55,30.4,"Boddy2012","Mace.etal1981",-0.111826506,-0.149417822
 "Microdipodops megacephalus","Microdipodops_megacephalus","Rodentia","Heteromyidae","Microdipodops","megacephalus",">9,<18","","Both",0.56,13.85,"Boddy2012","Hafner1984,Mace.etal1981",0.152069045,0.077911909
-"Myodes gapperi","Myodes_gapperi","Rodentia","Cricetidae","Myodes","gapperi",">1,<10","","Both",0.56,16.9,"Boddy2012","Mace.etal1981",0.08724075,0.02234084
+"Clethrionomys gapperi","Myodes_gapperi","Rodentia","Cricetidae","Myodes","gapperi",">1,<10","","Both",0.56,16.9,"Boddy2012","Mace.etal1981",0.08724075,0.02234084
 "Myodes rutilus","Myodes_rutilus","Rodentia","Cricetidae","Myodes","rutilus",">1,<10","","Both",0.56,17.6,"Boddy2012","Mace.etal1981",0.074021156,0.011008952
 "Peromyscus merriami","Peromyscus_merriami","Rodentia","Cricetidae","Peromyscus","merriami","5","","Both",0.56,20.72,"Boddy2012","Mace&Eisenberg1982",0.020862855,-0.034558553
 "Microtus pinetorum","Microtus_pinetorum","Rodentia","Cricetidae","Microtus","pinetorum",">1,<10","","Both",0.56,24.9,"Boddy2012","Mace.etal1981",-0.038994893,-0.08586885
@@ -1203,13 +1203,13 @@
 "Peromyscus melanotis","Peromyscus_melanotis","Rodentia","Cricetidae","Peromyscus","melanotis","10","","Both",0.63,39.6,"Boddy2012","Mace&Eisenberg1982",-0.138965639,-0.164259788
 "Oligoryzomys longicaudatus","Oligoryzomys_longicaudatus","Rodentia","Cricetidae","Oligoryzomys","longicaudatus",">1,<10","","Both",0.67,26.6,"Boddy2012","Mace.etal1981",0.017379968,-0.026422172
 "Peromyscus gossypinus","Peromyscus_gossypinus","Rodentia","Cricetidae","Peromyscus","gossypinus","53","","Both",0.68,28.25,"Boddy2012","Mace&Eisenberg1982",0.004211286,-0.036791652
-"Praomys daltoni","Praomys_daltoni","Rodentia","Muridae","Praomys","daltoni",">1,<10","","Both",0.68,35,"Boddy2012","Mace.etal1981",-0.06557655,-0.09661406
+"","Praomys_daltoni","Rodentia","Muridae","Praomys","daltoni",">1,<10","","Both",0.68,35,"Boddy2012","Mace.etal1981",-0.06557655,-0.09661406
 "Chaetodipus hispidus","Chaetodipus_hispidus","Rodentia","Heteromyidae","Chaetodipus","hispidus",">10","","Both",0.68,37.1,"Boddy2012","Hafner1984,Mace.etal1981",-0.084556124,-0.112883425
-"Gerbillus gleadowi","Gerbillus_gleadowi","Rodentia","Muridae","Gerbillus","gleadowi",">1,<10","","Both",0.69,26.1,"Boddy2012","Mace.etal1981",0.03633516,-0.008349589
+"","Gerbillus_gleadowi","Rodentia","Muridae","Gerbillus","gleadowi",">1,<10","","Both",0.69,26.1,"Boddy2012","Mace.etal1981",0.03633516,-0.008349589
 "Microtus montanus","Microtus_montanus","Rodentia","Cricetidae","Microtus","montanus",">1,<10","","Both",0.69,39.7,"Boddy2012","Mace.etal1981",-0.100278596,-0.125455438
 "Rhabdomys pumilio","Rhabdomys_pumilio","Rodentia","Muridae","Rhabdomys","pumilio",">1,<10","","Both",0.69,39.71,"Boddy2012","Mace.etal1981",-0.100360632,-0.125525759
-"Microtus guentheri","Microtus_guentheri","Rodentia","Cricetidae","Microtus","guentheri",">1,<10","","Both",0.69,51.3,"Boddy2012","Mace.etal1981",-0.183774508,-0.197028462
-"Chiropodomys gliroides","Chiropodomys_gliroides","Rodentia","Muridae","Chiropodomys","gliroides",">1,<10","","Both",0.7,25.3,"Boddy2012","Mace.etal1981",0.052724192,0.006591479
+"","Microtus_guentheri","Rodentia","Cricetidae","Microtus","guentheri",">1,<10","","Both",0.69,51.3,"Boddy2012","Mace.etal1981",-0.183774508,-0.197028462
+"","Chiropodomys_gliroides","Rodentia","Muridae","Chiropodomys","gliroides",">1,<10","","Both",0.7,25.3,"Boddy2012","Mace.etal1981",0.052724192,0.006591479
 "Peromyscus yucatanicus","Peromyscus_yucatanicus","Rodentia","Cricetidae","Peromyscus","yucatanicus","20","","Both",0.7,26.3,"Boddy2012","Mace&Eisenberg1982",0.040097655,-0.004232038
 "Chaetodipus baileyi","Chaetodipus_baileyi","Rodentia","Heteromyidae","Chaetodipus","baileyi",">10","","Both",0.7,29.75,"Boddy2012","Hafner1984,Mace.etal1981",-5.11e-05,-0.038647734
 "Apodemus flavicollis","Apodemus_flavicollis","Rodentia","Muridae","Apodemus","flavicollis",">1,<10","","Both",0.7,32.3,"Boddy2012","Mace.etal1981",-0.026838041,-0.061609579
@@ -1219,89 +1219,89 @@
 "Dicrostonyx groenlandicus","Dicrostonyx_groenlandicus","Rodentia","Cricetidae","Dicrostonyx","groenlandicus",">1,<10","","Both",0.72,68.4,"Boddy2012","Mace.etal1981",-0.258996017,-0.258869277
 "Microtus pennsylvanicus","Microtus_pennsylvanicus","Rodentia","Cricetidae","Microtus","pennsylvanicus",">95","","Both",0.74,30.13,"Boddy2012","Crile&Quiring1940,Mace.etal1981",0.01994839,-0.018057872
 "Microtus agrestis","Microtus_agrestis","Rodentia","Cricetidae","Microtus","agrestis",">1","","Both",0.74,32.4,"Boddy2012","Count1947,Mace.etal1981",-0.003711236,-0.038338997
-"Peromyscus truei","Peromyscus_truei","Rodentia","Cricetidae","Peromyscus","truei","67","","Both",0.75,27.35,"Boddy2012","Mace&Eisenberg1982",0.057309575,0.014800718
-"Uranomys ruddi","Uranomys_ruddi","Rodentia","Muridae","Uranomys","ruddi",">1,<10","","Both",0.77,33.6,"Boddy2012","Mace.etal1981",0.00170196,-0.031234266
-"Liomys pictus","Liomys_pictus","Rodentia","Heteromyidae","Liomys","pictus",">9,<18","","Both",0.77,43.35,"Boddy2012","Hafner1984,Mace.etal1981",-0.081286172,-0.102372019
+"","Peromyscus_truei","Rodentia","Cricetidae","Peromyscus","truei","67","","Both",0.75,27.35,"Boddy2012","Mace&Eisenberg1982",0.057309575,0.014800718
+"","Uranomys_ruddi","Rodentia","Muridae","Uranomys","ruddi",">1,<10","","Both",0.77,33.6,"Boddy2012","Mace.etal1981",0.00170196,-0.031234266
+"","Liomys_pictus","Rodentia","Heteromyidae","Liomys","pictus",">9,<18","","Both",0.77,43.35,"Boddy2012","Hafner1984,Mace.etal1981",-0.081286172,-0.102372019
 "Liomys salvini","Liomys_salvini","Rodentia","Heteromyidae","Liomys","salvini",">1,<10","","Both",0.77,44.9,"Boddy2012","Mace.etal1981",-0.092729206,-0.112181033
 "Microtus californicus","Microtus_californicus","Rodentia","Cricetidae","Microtus","californicus",">1,<10","","Both",0.78,43.3,"Boddy2012","Mace.etal1981",-0.075306387,-0.096445912
 "Onychomys leucogaster","Onychomys_leucogaster","Rodentia","Cricetidae","Onychomys","leucogaster","80","","Both",0.8,27.39,"Boddy2012","Mann&Towe2002",0.084862268,0.042421386
 "Saccostomus campestris","Saccostomus_campestris","Rodentia","Nesomyidae","Saccostomus","campestris",">1,<10","","Both",0.82,49.35,"Boddy2012","Mace.etal1981",-0.096186974,-0.11124341
 "Gerbillurus paeba","Gerbillurus_paeba","Rodentia","Muridae","Gerbillurus","paeba",">1,<10","","Both",0.84,24,"Boddy2012","Mace.etal1981",0.149087556,0.100501304
-"Praomys morio","Praomys_morio","Rodentia","Muridae","Praomys","morio",">1,<10","","Both",0.84,46.5,"Boddy2012","Mace.etal1981",-0.066345709,-0.084168938
+"","Praomys_morio","Rodentia","Muridae","Praomys","morio",">1,<10","","Both",0.84,46.5,"Boddy2012","Mace.etal1981",-0.066345709,-0.084168938
 "Dicrostonyx torquatus","Dicrostonyx_torquatus","Rodentia","Cricetidae","Dicrostonyx","torquatus",">1,<10","","Both",0.84,73,"Boddy2012","Mace.etal1981",-0.213249491,-0.210095437
-"Lemniscomys striatus","Lemniscomys_striatus","Rodentia","Muridae","Lemniscomys","striatus",">1,<10","","Both",0.85,46.2,"Boddy2012","Mace.etal1981",-0.059097817,-0.077222096
+"","Lemniscomys_striatus","Rodentia","Muridae","Lemniscomys","striatus",">1,<10","","Both",0.85,46.2,"Boddy2012","Mace.etal1981",-0.059097817,-0.077222096
 "Praomys tullbergi","Praomys_tullbergi","Rodentia","Muridae","Praomys","tullbergi",">1,<10","","Both",0.86,37.2,"Boddy2012","Mace.etal1981",0.016556634,-0.011645466
 "Lemmus lemmus","Lemmus_lemmus","Rodentia","Cricetidae","Lemmus","lemmus",">1,<10","","Both",0.86,68.9,"Boddy2012","Mace.etal1981",-0.184202424,-0.18373692
 "Gerbillus pyramidum","Gerbillus_pyramidum","Rodentia","Muridae","Gerbillus","pyramidum",">1,<10","","Both",0.88,40.9,"Boddy2012","Mace.etal1981",-0.004344705,-0.028136469
-"Microtus townsendii","Microtus_townsendii","Rodentia","Cricetidae","Microtus","townsendii",">1,<10","","Both",0.88,45.8,"Boddy2012","Mace.etal1981",-0.041201672,-0.059730406
+"","Microtus_townsendii","Rodentia","Cricetidae","Microtus","townsendii",">1,<10","","Both",0.88,45.8,"Boddy2012","Mace.etal1981",-0.041201672,-0.059730406
 "Oryzomys palustris","Oryzomys_palustris","Rodentia","Cricetidae","Oryzomys","palustris",">1,<10","","Both",0.88,47.1,"Boddy2012","Mace.etal1981",-0.050318327,-0.067545239
-"Rattus exulans","Rattus_exulans","Rodentia","Muridae","Rattus","exulans",">1,<10","","Both",0.89,60.3,"Boddy2012","Mace.etal1981",-0.125884037,-0.131619714
+"","Rattus_exulans","Rodentia","Muridae","Rattus","exulans",">1,<10","","Both",0.89,60.3,"Boddy2012","Mace.etal1981",-0.125884037,-0.131619714
 "Micaelamys namaquensis","Micaelamys_namaquensis","Rodentia","Muridae","Micaelamys","namaquensis",">1,<10","","Both",0.89,79.4,"Boddy2012","Mace.etal1981",-0.215512254,-0.208449374
 "Dicrostonyx richardsoni","Dicrostonyx_richardsoni","Rodentia","Cricetidae","Dicrostonyx","richardsoni","7","","Both",0.8983,52.1,"Boddy2012","Crile&Quiring1940",-0.093711553,-0.105074189
 "Dipodillus campestris","Dipodillus_campestris","Rodentia","Muridae","Dipodillus","campestris",">1,<10","","Both",0.9,27.5,"Boddy2012","Mace.etal1981",0.134709282,0.092454822
-"Lemmus trimucronatus","Lemmus_trimucronatus","Rodentia","Cricetidae","Lemmus","trimucronatus","5","","Both",0.9,69.6,"Boddy2012","Mace.etal1981",0.165712949,0.134940466
+"","Lemmus_trimucronatus","Rodentia","Cricetidae","Lemmus","trimucronatus","5","","Both",0.9,69.6,"Boddy2012","Mace.etal1981",0.165712949,0.134940466
 "Peromyscus californicus","Peromyscus_californicus","Rodentia","Cricetidae","Peromyscus","californicus","29","","Both",0.91,43.53,"Boddy2012","Mace&Eisenberg1982",-0.010085191,-0.030978308
 "Peromyscus aztecus","Peromyscus_aztecus","Rodentia","Cricetidae","Peromyscus","aztecus","10","","Both",0.92,39.73,"Boddy2012","Mace&Eisenberg1982",0.024414094,-0.000727613
 "Podomys floridanus","Podomys_floridanus","Rodentia","Cricetidae","Podomys","floridanus","10","","Both",0.94,33.47,"Boddy2012","Mace&Eisenberg1982",0.089601774,0.056485241
 "Peromyscus melanophrys","Peromyscus_melanophrys","Rodentia","Cricetidae","Peromyscus","melanophrys","39","","Both",0.94,45,"Boddy2012","Mace&Eisenberg1982",-0.006816714,-0.026165066
-"Mus musculoides","Mus_musculoides","Rodentia","Muridae","Mus","musculoides","1<N<10","1<N<10","Both",0.96,8.23,"Mace.etal.1981","",0.555691264,0.457324624
+"","Mus_musculoides","Rodentia","Muridae","Mus","musculoides","1<N<10","1<N<10","Both",0.96,8.23,"Mace.etal.1981","",0.555691264,0.457324624
 "Notomys alexis","Notomys_alexis","Rodentia","Muridae","Notomys","alexis",">1,<10","","Both",0.96,37,"Boddy2012","Mace.etal1981",0.066085344,0.037632504
 "Grammomys cometes","Grammomys_cometes","Rodentia","Muridae","Grammomys","cometes",">1,<10","","Both",0.96,40.7,"Boddy2012","Mace.etal1981",0.035040545,0.01102078
 "Meriones hurrianae","Meriones_hurrianae","Rodentia","Muridae","Meriones","hurrianae",">1,<10","","Both",0.97,71.3,"Boddy2012","Mace.etal1981",-0.143081975,-0.14102389
-"Lophuromys flavopunctatus","Lophuromys_flavopunctatus","Rodentia","Muridae","Lophuromys","flavopunctatus",">1,<10","","Both",1.01,60,"Boddy2012","Mace.etal1981",-0.069328108,-0.075295767
-"Peromyscus mexicanus","Peromyscus_mexicanus","Rodentia","Cricetidae","Peromyscus","mexicanus","55","","Both",1.02,46.55,"Boddy2012","Mace&Eisenberg1982",0.017625124,-0.000148118
+"","Lophuromys_flavopunctatus","Rodentia","Muridae","Lophuromys","flavopunctatus",">1,<10","","Both",1.01,60,"Boddy2012","Mace.etal1981",-0.069328108,-0.075295767
+"","Peromyscus_mexicanus","Rodentia","Cricetidae","Peromyscus","mexicanus","55","","Both",1.02,46.55,"Boddy2012","Mace&Eisenberg1982",0.017625124,-0.000148118
 "Peromyscus melanocarpus","Peromyscus_melanocarpus","Rodentia","Cricetidae","Peromyscus","melanocarpus","3","","Both",1.03,58.8,"Boddy2012","Mace&Eisenberg1982",-0.054231754,-0.061139082
 "Pseudomys hermannsburgensis","Pseudomys_hermannsburgensis","Rodentia","Muridae","Pseudomys","hermannsburgensis","1<N<10","1<N<10","Both",1.08,13.38,"Mace.etal.1981","",0.448550122,0.372787194
 "Nyctomys sumichrasti","Nyctomys_sumichrasti","Rodentia","Cricetidae","Nyctomys","sumichrasti",">1,<10","","Both",1.08,60,"Boddy2012","Mace.etal1981",-0.040225727,-0.046193385
 "Dipodomys merriami","Dipodomys_merriami","Rodentia","Heteromyidae","Dipodomys","merriami",">12","","Both",1.1,39.4,"Boddy2012","Glendenning1998,Hafner1984,Mace.etal1981",0.104735734,0.079206081
-"Rattus niobe","Rattus_niobe","Rodentia","Muridae","Rattus","niobe",">1,<10","","Both",1.1,42.1,"Boddy2012","Mace.etal1981",0.08314613,0.060699388
-"Hybomys trivirgatus","Hybomys_trivirgatus","Rodentia","Muridae","Hybomys","trivirgatus",">1,<10","","Both",1.1,57.5,"Boddy2012","Mace.etal1981",-0.018394115,-0.02634131
-"Beamys hindei","Beamys_hindei","Rodentia","Nesomyidae","Beamys","hindei",">1,<10","","Both",1.11,89.75,"Boddy2012","Mace.etal1981",-0.159490115,-0.146728125
-"Peromyscus megalops","Peromyscus_megalops","Rodentia","Cricetidae","Peromyscus","megalops","18","","Both",1.12,66.2,"Boddy2012","Mace&Eisenberg1982",-0.056461808,-0.057855659
-"Pogonomys sylvestris","Pogonomys_sylvestris","Rodentia","Muridae","Pogonomys","sylvestris",">1,<10","","Both",1.13,41.2,"Boddy2012","Mace.etal1981",0.101870613,0.078418769
+"","Rattus_niobe","Rodentia","Muridae","Rattus","niobe",">1,<10","","Both",1.1,42.1,"Boddy2012","Mace.etal1981",0.08314613,0.060699388
+"","Hybomys_trivirgatus","Rodentia","Muridae","Hybomys","trivirgatus",">1,<10","","Both",1.1,57.5,"Boddy2012","Mace.etal1981",-0.018394115,-0.02634131
+"","Beamys_hindei","Rodentia","Nesomyidae","Beamys","hindei",">1,<10","","Both",1.11,89.75,"Boddy2012","Mace.etal1981",-0.159490115,-0.146728125
+"","Peromyscus_megalops","Rodentia","Cricetidae","Peromyscus","megalops","18","","Both",1.12,66.2,"Boddy2012","Mace&Eisenberg1982",-0.056461808,-0.057855659
+"","Pogonomys_sylvestris","Rodentia","Muridae","Pogonomys","sylvestris",">1,<10","","Both",1.13,41.2,"Boddy2012","Mace.etal1981",0.101870613,0.078418769
 "Meriones unguiculatus","Meriones_unguiculatus","Rodentia","Muridae","Meriones","unguiculatus",">1,<10","","Both",1.13,57.4,"Boddy2012","Mace.etal1981",-0.006141388,-0.014169543
-"Lophuromys sikapusi","Lophuromys_sikapusi","Rodentia","Muridae","Lophuromys","sikapusi",">1,<10","","Both",1.13,60.7,"Boddy2012","Mace.etal1981",-0.024349154,-0.029777312
+"","Lophuromys_sikapusi","Rodentia","Muridae","Lophuromys","sikapusi",">1,<10","","Both",1.13,60.7,"Boddy2012","Mace.etal1981",-0.024349154,-0.029777312
 "Heteromys desmarestianus","Heteromys_desmarestianus","Rodentia","Heteromyidae","Heteromys","desmarestianus",">7,<17","","Both",1.13,74.65,"Boddy2012","Hafner1984,Mace.etal1981",-0.091730615,-0.087536965
 "Sigmodon hispidus","Sigmodon_hispidus","Rodentia","Cricetidae","Sigmodon","hispidus",">1,<10","","Both",1.14,132.5,"Boddy2012","Mace.etal1981",-0.274795475,-0.243914488
 "Pseudomys australis","Pseudomys_australis","Rodentia","Muridae","Pseudomys","australis",">1,<10","","Both",1.16,50,"Boddy2012","Mace.etal1981",0.050194988,0.035747174
 "Peromyscus guatemalensis","Peromyscus_guatemalensis","Rodentia","Cricetidae","Peromyscus","guatemalensis","9","","Both",1.16,52.83,"Boddy2012","Mace&Eisenberg1982",0.032261868,0.020374833
 "Cryptomys hottentotus","Cryptomys_hottentotus","Rodentia","Bathyergidae","Cryptomys","hottentotus",">1,<10","","Both",1.17,98.4,"Boddy2012","Mace.etal1981",-0.166597989,-0.149556293
-"Malacomys edwardsi","Malacomys_edwardsi","Rodentia","Muridae","Malacomys","edwardsi",">1,<10","","Both",1.18,60,"Boddy2012","Mace.etal1981",-0.001767475,-0.007735133
-"Dipodomys microps","Dipodomys_microps","Rodentia","Heteromyidae","Dipodomys","microps",">11,<20","","Both",1.22,62.8,"Boddy2012","Hafner1984,Mace.etal1981",-0.002146083,-0.005992301
+"","Malacomys_edwardsi","Rodentia","Muridae","Malacomys","edwardsi",">1,<10","","Both",1.18,60,"Boddy2012","Mace.etal1981",-0.001767475,-0.007735133
+"","Dipodomys_microps","Rodentia","Heteromyidae","Dipodomys","microps",">11,<20","","Both",1.22,62.8,"Boddy2012","Hafner1984,Mace.etal1981",-0.002146083,-0.005992301
 "Thomomys talpoides","Thomomys_talpoides","Rodentia","Geomyidae","Thomomys","talpoides",">4,<13","","Both",1.24,105.65,"Boddy2012","Hafner1984,Mace.etal1981",-0.164518181,-0.144169897
-"Aethomys chrysophilus","Aethomys_chrysophilus","Rodentia","Muridae","Aethomys","chrysophilus",">1,<10","","Both",1.25,117,"Boddy2012","Mace.etal1981",-0.194267429,-0.16917295
+"","Aethomys_chrysophilus","Rodentia","Muridae","Aethomys","chrysophilus",">1,<10","","Both",1.25,117,"Boddy2012","Mace.etal1981",-0.194267429,-0.16917295
 "Megadontomys thomasi","Megadontomys_thomasi","Rodentia","Cricetidae","Megadontomys","thomasi","9","","Both",1.26,111,"Boddy2012","Mace&Eisenberg1982",-0.173659577,-0.151013667
 "Paramelomys rubex","Paramelomys_rubex","Rodentia","Muridae","Paramelomys","rubex",">1,<10","","Both",1.27,49.7,"Boddy2012","Mace.etal1981",0.091500949,0.076773222
 "Tscherskia triton","Tscherskia_triton","Rodentia","Cricetidae","Tscherskia","triton",">1,<10","","Both",1.29,25,"Boddy2012","Mace.etal1981",0.322101282,0.275413747
-"Melomys rufescens","Melomys_rufescens","Rodentia","Muridae","Melomys","rufescens",">1,<10","","Both",1.29,54.7,"Boddy2012","Mace.etal1981",0.067063448,0.056794313
-"Melomys cervinipes","Melomys_cervinipes","Rodentia","Muridae","Melomys","cervinipes",">1,<10","","Both",1.31,70,"Boddy2012","Mace.etal1981",-0.006588741,-0.005386529
+"","Melomys_rufescens","Rodentia","Muridae","Melomys","rufescens",">1,<10","","Both",1.29,54.7,"Boddy2012","Mace.etal1981",0.067063448,0.056794313
+"","Melomys_cervinipes","Rodentia","Muridae","Melomys","cervinipes",">1,<10","","Both",1.31,70,"Boddy2012","Mace.etal1981",-0.006588741,-0.005386529
 "Dipodillus dasyurus","Dipodillus_dasyurus","Rodentia","Muridae","Dipodillus","dasyurus",">1,<10","","Both",1.32,20.5,"Boddy2012","Mace.etal1981",0.396725709,0.340807806
-"Ototylomys phyllotis","Ototylomys_phyllotis","Rodentia","Cricetidae","Ototylomys","phyllotis",">1,<10","","Both",1.33,63,"Boddy2012","Mace.etal1981",0.034310038,0.030611712
+"","Ototylomys_phyllotis","Rodentia","Cricetidae","Ototylomys","phyllotis",">1,<10","","Both",1.33,63,"Boddy2012","Mace.etal1981",0.034310038,0.030611712
 "Arvicanthis niloticus","Arvicanthis_niloticus","Rodentia","Muridae","Arvicanthis","niloticus",">1,<10","","Both",1.33,84.5,"Boddy2012","Mace.etal1981",-0.061327961,-0.051369557
-"Dipodomys agilis","Dipodomys_agilis","Rodentia","Heteromyidae","Dipodomys","agilis",">1,<10","","Both",1.34,61.4,"Boddy2012","Mace.etal1981",0.045942406,0.041047562
-"Otomys irroratus","Otomys_irroratus","Rodentia","Muridae","Otomys","irroratus",">1,<10","","Both",1.38,141,"Boddy2012","Mace.etal1981",-0.212073852,-0.178300871
+"","Dipodomys_agilis","Rodentia","Heteromyidae","Dipodomys","agilis",">1,<10","","Both",1.34,61.4,"Boddy2012","Mace.etal1981",0.045942406,0.041047562
+"","Otomys_irroratus","Rodentia","Muridae","Otomys","irroratus",">1,<10","","Both",1.38,141,"Boddy2012","Mace.etal1981",-0.212073852,-0.178300871
 "Tamias amoenus","Tamias_amoenus","Rodentia","Sciuridae","Tamias","amoenus",">1,<10","","Both",1.39,50.8,"Boddy2012","Mace.etal1981",0.12358147,0.109871959
 "Mystromys albicaudatus","Mystromys_albicaudatus","Rodentia","Nesomyidae","Mystromys","albicaudatus",">1,<10","","Both",1.39,80,"Boddy2012","Mace.etal1981",-0.024339596,-0.016926561
-"Rattus tunneyi","Rattus_tunneyi","Rodentia","Muridae","Rattus","tunneyi",">1,<10","","Both",1.41,76.2,"Boddy2012","Mace.etal1981",-0.002283876,0.00286564
+"","Rattus_tunneyi","Rodentia","Muridae","Rattus","tunneyi",">1,<10","","Both",1.41,76.2,"Boddy2012","Mace.etal1981",-0.002283876,0.00286564
 "Holochilus sciureus","Holochilus_sciureus","Rodentia","Cricetidae","Holochilus","sciureus",">1,<10","","Both",1.41,112.3,"Boddy2012","Mace.etal1981",-0.128603627,-0.105416147
-"Aethomys hindei","Aethomys_hindei","Rodentia","Muridae","Aethomys","hindei",">1,<10","","Both",1.42,146.3,"Boddy2012","Mace.etal1981",-0.211683615,-0.176194365
+"","Aethomys_hindei","Rodentia","Muridae","Aethomys","hindei",">1,<10","","Both",1.42,146.3,"Boddy2012","Mace.etal1981",-0.211683615,-0.176194365
 "Pogonomys macrourus","Pogonomys_macrourus","Rodentia","Muridae","Pogonomys","macrourus",">1,<10","","Both",1.43,73.9,"Boddy2012","Mace.etal1981",0.01381604,0.017540024
 "Heliophobius argenteocinereus","Heliophobius_argenteocinereus","Rodentia","Bathyergidae","Heliophobius","argenteocinereus",">1,<10","","Both",1.43,160,"Boddy2012","Mace.etal1981",-0.237792933,-0.198140176
 "Dipodomys heermanni","Dipodomys_heermanni","Rodentia","Heteromyidae","Dipodomys","heermanni",">11,<20","","Both",1.44,65.65,"Boddy2012","Hafner1984,Mace.etal1981",0.05540013,0.053618236
 "Dipodomys ordii","Dipodomys_ordii","Rodentia","Heteromyidae","Dipodomys","ordii",">5,<14","","Both",1.45,57.1,"Boddy2012","Hafner1984,Mace.etal1981",0.103855025,0.095583137
-"Thomomys bottae","Thomomys_bottae","Rodentia","Geomyidae","Thomomys","bottae",">8,<17","","Both",1.47,162.95,"Boddy2012","Hafner1984,Mace.etal1981",-0.231762477,-0.191259963
-"Rattus verecundus","Rattus_verecundus","Rodentia","Muridae","Rattus","verecundus",">1,<10","","Both",1.48,59.4,"Boddy2012","Mace.etal1981",0.099885867,0.093450747
+"Megascapheus bottae","Thomomys_bottae","Rodentia","Geomyidae","Thomomys","bottae",">8,<17","","Both",1.47,162.95,"Boddy2012","Hafner1984,Mace.etal1981",-0.231762477,-0.191259963
+"","Rattus_verecundus","Rodentia","Muridae","Rattus","verecundus",">1,<10","","Both",1.48,59.4,"Boddy2012","Mace.etal1981",0.099885867,0.093450747
 "Abeomelomys sevia","Abeomelomys_sevia","Rodentia","Muridae","Abeomelomys","sevia",">1,<10","","Both",1.49,61.4,"Boddy2012","Mace.etal1981",0.092023877,0.087129032
 "Jaculus jaculus","Jaculus_jaculus","Rodentia","Dipodidae","Jaculus","jaculus",">1","","Both",1.53,64.2,"Boddy2012","Count1947,Mace.etal1981",0.089003913,0.086183199
 "Peromyscus grandis","Peromyscus_grandis","Rodentia","Cricetidae","Peromyscus","grandis","2","","Both",1.53,77.32,"Boddy2012","Mace&Eisenberg1982",0.028435743,0.034263926
 "Grammomys poensis","Grammomys_poensis","Rodentia","Muridae","Grammomys","poensis","1<N<10","1<N<10","Both",1.55,50.2,"Mace.etal.1981","",0.1747684,0.160506263
-"Gerbilliscus afra","Gerbilliscus_afra","Rodentia","Muridae","Gerbilliscus","afra",">1,<10","","Both",1.56,65,"Boddy2012","Mace.etal1981",0.093403297,0.091158592
+"Gerbilliscus afer","Gerbilliscus_afra","Rodentia","Muridae","Gerbilliscus","afra",">1,<10","","Both",1.56,65,"Boddy2012","Mace.etal1981",0.093403297,0.091158592
 "Gerbilliscus brantsii","Gerbilliscus_brantsii","Rodentia","Muridae","Gerbilliscus","brantsii",">1,<10","","Both",1.56,91.7,"Boddy2012","Mace.etal1981",-0.018689719,-0.004927982
 "Spalacopus cyanus","Spalacopus_cyanus","Rodentia","Octodontidae","Spalacopus","cyanus",">1,<10","","Both",1.58,93,"Boddy2012","Mace.etal1981",-0.017742482,-0.003325989
 "Tamias minimus","Tamias_minimus","Rodentia","Sciuridae","Tamias","minimus",">1,<10","","Both",1.6,45.3,"Boddy2012","Mace.etal1981",0.222011129,0.202971829
 "Spermophilus canus","Spermophilus_canus","Rodentia","Sciuridae","Spermophilus","canus","30","","Both",1.6,154,"Mateju2016","Hayssen 2008",-0.176559427,-0.138684418
 "Maxomys whiteheadi","Maxomys_whiteheadi","Rodentia","Muridae","Maxomys","whiteheadi","1<N<10","1<N<10","Both",1.62,46.3,"Mace.etal.1981","",0.220294003,0.202270292
-"Rattus lutreolus","Rattus_lutreolus","Rodentia","Muridae","Rattus","lutreolus",">1,<10","","Both",1.64,92.7,"Boddy2012","Mace.etal1981",-0.0005033,0.013762911
+"","Rattus_lutreolus","Rodentia","Muridae","Rattus","lutreolus",">1,<10","","Both",1.64,92.7,"Boddy2012","Mace.etal1981",-0.0005033,0.013762911
 "Arvicola amphibius","Arvicola_amphibius","Rodentia","Cricetidae","Arvicola","amphibius",">1,<10","","Both",1.64,168.3,"Boddy2012","Mace.etal1981",-0.194758374,-0.152753302
 "Cremnomys cutchicus","Cremnomys_cutchicus","Rodentia","Muridae","Cremnomys","cutchicus","1<N<10","1<N<10","Both",1.67,50,"Mace.etal.1981","",0.20845347,0.194005656
 "Spermophilus mollis","Spermophilus_mollis","Rodentia","Sciuridae","Spermophilus","mollis","30","","Both",1.67,117.1,"Mateju2016","Hayssen 2008",-0.068739248,-0.043605032
@@ -1309,7 +1309,7 @@
 "Rattus fuscipes","Rattus_fuscipes","Rodentia","Muridae","Rattus","fuscipes",">1","","Both",1.69,122,"Boddy2012","Mace.etal1981",-0.076921339,-0.049880464
 "Tamias quadrivittatus","Tamias_quadrivittatus","Rodentia","Sciuridae","Tamias","quadrivittatus",">1,<10","","Both",1.7,62.3,"Boddy2012","Mace.etal1981",0.144546729,0.14032871
 "Rattus nitidus","Rattus_nitidus","Rodentia","Muridae","Rattus","nitidus",">1,<10","","Both",1.7,101,"Boddy2012","Mace.etal1981",-0.012829714,0.005425004
-"Rattus sordidus","Rattus_sordidus","Rodentia","Muridae","Rattus","sordidus",">1,<10","","Both",1.7,120.67,"Boddy2012","Mace.etal1981",-0.070788701,-0.044257668
+"","Rattus_sordidus","Rodentia","Muridae","Rattus","sordidus",">1,<10","","Both",1.7,120.67,"Boddy2012","Mace.etal1981",-0.070788701,-0.044257668
 "Glaucomys volans","Glaucomys_volans","Rodentia","Sciuridae","Glaucomys","volans",">1,<10","","Both",1.71,73.1,"Boddy2012","Mace.etal1981",0.095021442,0.098239167
 "Isthmomys pirrensis","Isthmomys_pirrensis","Rodentia","Cricetidae","Isthmomys","pirrensis","10","","Both",1.71,138,"Boddy2012","Mace&Eisenberg1982",-0.111951744,-0.079179062
 "Dipodomys deserti","Dipodomys_deserti","Rodentia","Heteromyidae","Dipodomys","deserti",">9,<18","","Both",1.74,122.45,"Boddy2012","Hafner1984,Mace.etal1981",-0.065458026,-0.038245905
@@ -1319,13 +1319,13 @@
 "Tatera indica","Tatera_indica","Rodentia","Muridae","Tatera","indica",">1,<10","","Both",1.84,139.7,"Boddy2012","Mace.etal1981",-0.084118058,-0.050775901
 "Tamias speciosus","Tamias_speciosus","Rodentia","Sciuridae","Tamias","speciosus",">1,<10","","Both",1.86,59.9,"Boddy2012","Mace.etal1981",0.196406788,0.190361545
 "Paramelomys levipes","Paramelomys_levipes","Rodentia","Muridae","Paramelomys","levipes",">1,<10","","Both",1.86,83.4,"Boddy2012","Mace.etal1981",0.088601375,0.097950321
-"Hylopetes spadiceus","Hylopetes_spadiceus","Rodentia","Sciuridae","Hylopetes","spadiceus",">1,<10","","Both",1.87,87.5,"Boddy2012","Mace.etal1981",0.075298392,0.086879476
+"","Hylopetes_spadiceus","Rodentia","Sciuridae","Hylopetes","spadiceus",">1,<10","","Both",1.87,87.5,"Boddy2012","Mace.etal1981",0.075298392,0.086879476
 "Spalax ehrenbergi","Spalax_ehrenbergi","Rodentia","Spalacidae","Spalax","ehrenbergi",">1,<10","","Both",1.88,197,"Boddy2012","Mace.etal1981",-0.186731427,-0.137402765
-"Tachyoryctes splendens","Tachyoryctes_splendens","Rodentia","Spalacidae","Tachyoryctes","splendens",">1,<10","","Both",1.88,234,"Boddy2012","Mace.etal1981",-0.242794166,-0.185459965
-"Spermophilus townsendii","Spermophilus_townsendii","Rodentia","Sciuridae","Spermophilus","townsendii","27","","Both",1.89,149.5,"Mateju2016","",-0.09455787,-0.058062234
+"","Tachyoryctes_splendens","Rodentia","Spalacidae","Tachyoryctes","splendens",">1,<10","","Both",1.88,234,"Boddy2012","Mace.etal1981",-0.242794166,-0.185459965
+"","Spermophilus_townsendii","Rodentia","Sciuridae","Spermophilus","townsendii","27","","Both",1.89,149.5,"Mateju2016","",-0.09455787,-0.058062234
 "Rattus morotaiensis","Rattus_morotaiensis","Rodentia","Muridae","Rattus","morotaiensis",">1,<10","","Both",1.92,134.1,"Boddy2012","Mace.etal1981",-0.052308809,-0.02086953
 "Dipodomys spectabilis","Dipodomys_spectabilis","Rodentia","Heteromyidae","Dipodomys","spectabilis",">10,<19","","Both",1.93,144.55,"Boddy2012","Hafner1984,Mace.etal1981",-0.074494942,-0.039565411
-"Pectinator spekei","Pectinator_spekei","Rodentia","Ctenodactylidae","Pectinator","spekei",">1,<10","","Both",1.93,180,"Boddy2012","Mace.etal1981",-0.145936406,-0.100805315
+"","Pectinator_spekei","Rodentia","Ctenodactylidae","Pectinator","spekei",">1,<10","","Both",1.93,180,"Boddy2012","Mace.etal1981",-0.145936406,-0.100805315
 "Tamiops mcclellandii","Tamiops_mcclellandii","Rodentia","Sciuridae","Tamiops","mcclellandii",">1,<10","","Both",1.95,39,"Boddy2012","Mace.etal1981",0.356701402,0.330697132
 "Tamias dorsalis","Tamias_dorsalis","Rodentia","Sciuridae","Tamias","dorsalis",">1,<10","","Both",1.98,62.2,"Boddy2012","Mace.etal1981",0.211286249,0.206993512
 "Tamias palmeri","Tamias_palmeri","Rodentia","Sciuridae","Tamias","palmeri",">1,<10","","Both",1.99,60.8,"Boddy2012","Mace.etal1981",0.220889308,0.215537713
@@ -1337,8 +1337,8 @@
 "Neotoma albigula","Neotoma_albigula","Rodentia","Cricetidae","Neotoma","albigula",">1,<10","","Both",2.17,223.1,"Boddy2012","Mace.etal1981",-0.164954923,-0.109839396
 "Ammospermophilus leucurus","Ammospermophilus_leucurus","Rodentia","Sciuridae","Ammospermophilus","leucurus","12","","Both",2.25,105.85,"Mateju2016","",0.093626626,0.114062876
 "Spermophilus tridecemlineatus","Spermophilus_tridecemlineatus","Rodentia","Sciuridae","Spermophilus","tridecemlineatus","30","","Both",2.27,149.8,"Mateju2016","Hayssen 2008",-0.015646789,0.020942089
-"Geomys breviceps","Geomys_breviceps","Rodentia","Geomyidae","Geomys","breviceps","1<N<10","1<N<10","Both",2.29,138.8,"Mace.etal.1981","",0.013004825,0.046046365
-"Massoutiera mzabi","Massoutiera_mzabi","Rodentia","Ctenodactylidae","Massoutiera","mzabi",">1,<10","","Both",2.32,182.6,"Boddy2012","Mace.etal1981",-0.070676974,-0.024878848
+"","Geomys_breviceps","Rodentia","Geomyidae","Geomys","breviceps","1<N<10","1<N<10","Both",2.29,138.8,"Mace.etal.1981","",0.013004825,0.046046365
+"","Massoutiera_mzabi","Rodentia","Ctenodactylidae","Massoutiera","mzabi",">1,<10","","Both",2.32,182.6,"Boddy2012","Mace.etal1981",-0.070676974,-0.024878848
 "Spermophilus spilosoma","Spermophilus_spilosoma","Rodentia","Sciuridae","Spermophilus","spilosoma","30","","Both",2.37,132.7,"Mateju2016","Hayssen 2008",0.042556731,0.073507873
 "Ammospermophilus harrisii","Ammospermophilus_harrisii","Rodentia","Sciuridae","Ammospermophilus","harrisii","12","","Both",2.405,107.15,"Mateju2016","Hayssen 2008",0.118583167,0.139587178
 "Tamias townsendii","Tamias_townsendii","Rodentia","Sciuridae","Tamias","townsendii",">1,<10","","Both",2.44,89.4,"Boddy2012","Mace.etal1981",0.183849448,0.196429699
@@ -1361,50 +1361,50 @@
 "Paraxerus cepapi","Paraxerus_cepapi","Rodentia","Sciuridae","Paraxerus","cepapi",">1,<10","","Both",2.85,216,"Boddy2012","Mace.etal1981",-0.036035336,0.017575912
 "Spermophilus alashanicus","Spermophilus_alashanicus","Rodentia","Sciuridae","Spermophilus","alashanicus","7","","Both",2.89,200,"Mateju2016","",-0.004914306,0.045117323
 "Spermophilus citellus","Spermophilus_citellus","Rodentia","Sciuridae","Spermophilus","citellus","32","","Both",2.89,288.5,"Mateju2016","",-0.12425227,-0.057179649
-"Spermophilus beldingi","Spermophilus_beldingi","Rodentia","Sciuridae","Spermophilus","beldingi","30","","Both",2.96,246.9,"Mateju2016","Hayssen 2008",-0.063139389,-0.003309244
+"","Spermophilus_beldingi","Rodentia","Sciuridae","Spermophilus","beldingi","30","","Both",2.96,246.9,"Mateju2016","Hayssen 2008",-0.063139389,-0.003309244
 "Spermophilus adocetus","Spermophilus_adocetus","Rodentia","Sciuridae","Spermophilus","adocetus","16","","Both",3.01,155.52,"Mateju2016/Pantheria","",0.094687912,0.13301975
 "Glaucomys sabrinus","Glaucomys_sabrinus","Rodentia","Sciuridae","Glaucomys","sabrinus",">1,<10","","Both",3.01,174,"Boddy2012","Mace.etal1981",0.058115325,0.101669584
 "Neotoma floridana","Neotoma_floridana","Rodentia","Cricetidae","Neotoma","floridana",">1,<10","","Both",3.04,257.7,"Boddy2012","Mace.etal1981",-0.065502641,-0.003681187
 "Spermophilus xanthoprymnus","Spermophilus_xanthoprymnus","Rodentia","Sciuridae","Spermophilus","xanthoprymnus","22","","Both",3.04,267.9,"Mateju2016","",-0.078146479,-0.014519535
-"Spermophilus lateralis","Spermophilus_lateralis","Rodentia","Sciuridae","Spermophilus","lateralis","30","","Both",3.06,168.85,"Mateju2016","Hayssen 2008",0.075056483,0.117213308
+"","Spermophilus_lateralis","Rodentia","Sciuridae","Spermophilus","lateralis","30","","Both",3.06,168.85,"Mateju2016","Hayssen 2008",0.075056483,0.117213308
 "Spermophilus armatus","Spermophilus_armatus","Rodentia","Sciuridae","Spermophilus","armatus","30","","Both",3.09,371.1,"Mateju2016","Hayssen 2008",-0.17720124,-0.09841797
-"Spermophilus richardsonii","Spermophilus_richardsonii","Rodentia","Sciuridae","Spermophilus","richardsonii","30","","Both",3.18,331.5,"Mateju2016","",-0.127976695,-0.054442024
-"Iomys horsfieldii","Iomys_horsfieldii","Rodentia","Sciuridae","Iomys","horsfieldii",">1,<10","","Both",3.38,155.5,"Boddy2012","Mace.etal1981",0.145080008,0.183405863
+"","Spermophilus_richardsonii","Rodentia","Sciuridae","Spermophilus","richardsonii","30","","Both",3.18,331.5,"Mateju2016","",-0.127976695,-0.054442024
+"","Iomys_horsfieldii","Rodentia","Sciuridae","Iomys","horsfieldii",">1,<10","","Both",3.38,155.5,"Boddy2012","Mace.etal1981",0.145080008,0.183405863
 "Spermophilus saturatus","Spermophilus_saturatus","Rodentia","Sciuridae","Spermophilus","saturatus","30","","Both",3.38,242.7,"Mateju2016","Hayssen 2008",7.41e-05,0.059106261
 "Leopoldamys siporanus","Leopoldamys_siporanus","Rodentia","Muridae","Leopoldamys","siporanus",">1,<10","","Both",3.39,332.7,"Boddy2012","Mace.etal1981",-0.101381079,-0.027678342
 "Spermophilus erythrogenys","Spermophilus_erythrogenys","Rodentia","Sciuridae","Spermophilus","erythrogenys","31","","Both",3.44,351,"Mateju2016","",-0.112463232,-0.036270003
 "Spermophilus relictus","Spermophilus_relictus","Rodentia","Sciuridae","Spermophilus","relictus","19","","Both",3.49,340.5,"Mateju2016","",-0.096303656,-0.021523051
 "Spermophilus mexicanus","Spermophilus_mexicanus","Rodentia","Sciuridae","Spermophilus","mexicanus","20","","Both",3.5,274.5,"Mateju2016","",-0.024879318,0.039879614
 "Sundamys muelleri","Sundamys_muelleri","Rodentia","Muridae","Sundamys","muelleri","1<N<10","1<N<10","Both",3.5,311.6,"Mace.etal.1981","",-0.066171023,0.004484202
-"Pteromyscus pulverulentus","Pteromyscus_pulverulentus","Rodentia","Sciuridae","Pteromyscus","pulverulentus",">1,<10","","Both",3.55,400,"Boddy2012","Mace.etal1981",-0.141358369,-0.059087019
-"Spermophilus undulatus","Spermophilus_undulatus","Rodentia","Sciuridae","Spermophilus","undulatus","33","","Both",3.73,677.3,"Mateju2016","Hayssen 2008",-0.291420281,-0.184653352
+"","Pteromyscus_pulverulentus","Rodentia","Sciuridae","Pteromyscus","pulverulentus",">1,<10","","Both",3.55,400,"Boddy2012","Mace.etal1981",-0.141358369,-0.059087019
+"","Spermophilus_undulatus","Rodentia","Sciuridae","Spermophilus","undulatus","33","","Both",3.73,677.3,"Mateju2016","Hayssen 2008",-0.291420281,-0.184653352
 "Bathyergus suillus","Bathyergus_suillus","Rodentia","Bathyergidae","Bathyergus","suillus",">1,<10","","Both",3.75,1175,"Boddy2012","Mace.etal1981",-0.468542089,-0.336151228
 "Tamiasciurus hudsonicus","Tamiasciurus_hudsonicus","Rodentia","Sciuridae","Tamiasciurus","hudsonicus",">1,<10","","Both",3.83,188.9,"Boddy2012","Mace.etal1981",0.135985325,0.183361132
-"Spermophilus columbianus","Spermophilus_columbianus","Rodentia","Sciuridae","Spermophilus","columbianus","30","","Both",3.95,465.8,"Mateju2016","Hayssen 2008",-0.144594702,-0.055239943
-"Spermophilus franklinii","Spermophilus_franklinii","Rodentia","Sciuridae","Spermophilus","franklinii","30","","Both",3.96,443.05,"Mateju2016","Hayssen 2008",-0.127186405,-0.040160678
+"","Spermophilus_columbianus","Rodentia","Sciuridae","Spermophilus","columbianus","30","","Both",3.95,465.8,"Mateju2016","Hayssen 2008",-0.144594702,-0.055239943
+"","Spermophilus_franklinii","Rodentia","Sciuridae","Spermophilus","franklinii","30","","Both",3.96,443.05,"Mateju2016","Hayssen 2008",-0.127186405,-0.040160678
 "Leopoldamys sabanus","Leopoldamys_sabanus","Rodentia","Muridae","Leopoldamys","sabanus","1<N<10","1<N<10","Both",3.98,332.7,"Mace.etal.1981","",-0.031697705,0.042005032
-"Heliosciurus gambianus","Heliosciurus_gambianus","Rodentia","Sciuridae","Heliosciurus","gambianus",">1,<10","","Both",3.99,295,"Boddy2012","Mace.etal1981",0.008565567,0.07667449
+"","Heliosciurus_gambianus","Rodentia","Sciuridae","Heliosciurus","gambianus",">1,<10","","Both",3.99,295,"Boddy2012","Mace.etal1981",0.008565567,0.07667449
 "Cavia aperea","Cavia_aperea","Rodentia","Caviidae","Cavia","aperea",">2,<11","","Both",4.04,306.45,"Boddy2012","Mace.etal1981,Warncke1908",0.001570716,0.071450784
 "Spermophilus major","Spermophilus_major","Rodentia","Sciuridae","Spermophilus","major","31","","Both",4.12,535,"Mateju2016","",-0.17141072,-0.075613553
-"Hoplomys gymnurus","Hoplomys_gymnurus","Rodentia","Echimyidae","Hoplomys","gymnurus",">1,<10","","Both",4.13,330,"Boddy2012","Mace.etal1981",-0.012976555,0.060347177
+"","Hoplomys_gymnurus","Rodentia","Echimyidae","Hoplomys","gymnurus",">1,<10","","Both",4.13,330,"Boddy2012","Mace.etal1981",-0.012976555,0.060347177
 "Funisciurus anerythrus","Funisciurus_anerythrus","Rodentia","Sciuridae","Funisciurus","anerythrus",">1,<10","","Both",4.14,218,"Boddy2012","Mace.etal1981",0.123118061,0.177157994
-"Rhinosciurus laticaudatus","Rhinosciurus_laticaudatus","Rodentia","Sciuridae","Rhinosciurus","laticaudatus",">1,<10","","Both",4.28,240,"Boddy2012","Mace.etal1981",0.10624514,0.164756924
-"Hydromys chrysogaster","Hydromys_chrysogaster","Rodentia","Muridae","Hydromys","chrysogaster",">1,<10","","Both",4.33,698,"Boddy2012","Mace.etal1981",-0.236447067,-0.128279901
+"","Rhinosciurus_laticaudatus","Rodentia","Sciuridae","Rhinosciurus","laticaudatus",">1,<10","","Both",4.28,240,"Boddy2012","Mace.etal1981",0.10624514,0.164756924
+"","Hydromys_chrysogaster","Rodentia","Muridae","Hydromys","chrysogaster",">1,<10","","Both",4.33,698,"Boddy2012","Mace.etal1981",-0.236447067,-0.128279901
 "Funisciurus pyrropus","Funisciurus_pyrropus","Rodentia","Sciuridae","Funisciurus","pyrropus",">1,<10","","Both",4.38,200,"Boddy2012","Mace.etal1981",0.175661962,0.225693591
-"Callosciurus nigrovittatus","Callosciurus_nigrovittatus","Rodentia","Sciuridae","Callosciurus","nigrovittatus",">1,<10","","Both",4.44,202,"Boddy2012","Mace.etal1981",0.178329761,0.228824201
+"","Callosciurus_nigrovittatus","Rodentia","Sciuridae","Callosciurus","nigrovittatus",">1,<10","","Both",4.44,202,"Boddy2012","Mace.etal1981",0.178329761,0.228824201
 "Geocapromys ingrahami","Geocapromys_ingrahami","Rodentia","Capromyidae","Geocapromys","ingrahami",">1,<10","","Both",4.46,717.3,"Boddy2012","Mace.etal1981",-0.232484243,-0.123048457
-"Funisciurus carruthersi","Funisciurus_carruthersi","Rodentia","Sciuridae","Funisciurus","carruthersi",">1,<10","","Both",4.48,268,"Boddy2012","Mace.etal1981",0.09013639,0.153780693
+"","Funisciurus_carruthersi","Rodentia","Sciuridae","Funisciurus","carruthersi",">1,<10","","Both",4.48,268,"Boddy2012","Mace.etal1981",0.09013639,0.153780693
 "Spermophilus fulvus","Spermophilus_fulvus","Rodentia","Sciuridae","Spermophilus","fulvus","32","","Both",4.55,720,"Mateju2016","",-0.225031465,-0.115420931
-"Mesembriomys gouldii","Mesembriomys_gouldii","Rodentia","Muridae","Mesembriomys","gouldii",">1,<10","","Both",4.59,1110,"Boddy2012","Mace.etal1981",-0.362224335,-0.23248039
+"","Mesembriomys_gouldii","Rodentia","Muridae","Mesembriomys","gouldii",">1,<10","","Both",4.59,1110,"Boddy2012","Mace.etal1981",-0.362224335,-0.23248039
 "Berylmys bowersi","Berylmys_bowersi","Rodentia","Muridae","Berylmys","bowersi","1<N<10","1<N<10","Both",4.63,360.7,"Mace.etal.1981","",0.007679966,0.085141131
 "Leopoldamys edwardsi","Leopoldamys_edwardsi","Rodentia","Muridae","Leopoldamys","edwardsi","1<N<10","1<N<10","Both",4.81,332.1,"Mace.etal.1981","",0.051152249,0.124771029
 "Callosciurus notatus","Callosciurus_notatus","Rodentia","Sciuridae","Callosciurus","notatus",">1,<10","","Both",4.91,209.5,"Boddy2012","Mace.etal1981",0.210153681,0.262343767
 "Ondatra zibethicus","Ondatra_zibethicus","Rodentia","Cricetidae","Ondatra","zibethicus",">2,<11","","Both",5.03,1136.45,"Boddy2012","Crile&Quiring1940,Mace.etal1981",-0.330139622,-0.199300347
-"Xerus rutilus","Xerus_rutilus","Rodentia","Sciuridae","Xerus","rutilus",">1,<10","","Both",5.09,317.5,"Boddy2012","Mace.etal1981",0.090368949,0.161896624
+"","Xerus_rutilus","Rodentia","Sciuridae","Xerus","rutilus",">1,<10","","Both",5.09,317.5,"Boddy2012","Mace.etal1981",0.090368949,0.161896624
 "Cynomys gunnisoni","Cynomys_gunnisoni","Rodentia","Sciuridae","Cynomys","gunnisoni","30","","Both",5.14,642.3,"Mateju2016","Hayssen 2008",-0.13488347,-0.030584418
 "Spermophilus atricapillus","Spermophilus_atricapillus","Rodentia","Sciuridae","Spermophilus","atricapillus","18","","Both",5.24,427.5,"Mateju2016","",0.00608727,0.091451197
-"Heliosciurus ruwenzorii","Heliosciurus_ruwenzorii","Rodentia","Sciuridae","Heliosciurus","ruwenzorii",">1,<10","","Both",5.4,291,"Boddy2012","Mace.etal1981",0.144433243,0.211907178
-"Dremomys rufigenis","Dremomys_rufigenis","Rodentia","Sciuridae","Dremomys","rufigenis",">1,<10","","Both",5.41,240,"Boddy2012","Mace.etal1981",0.207998636,0.26651042
+"","Heliosciurus_ruwenzorii","Rodentia","Sciuridae","Heliosciurus","ruwenzorii",">1,<10","","Both",5.4,291,"Boddy2012","Mace.etal1981",0.144433243,0.211907178
+"","Dremomys_rufigenis","Rodentia","Sciuridae","Dremomys","rufigenis",">1,<10","","Both",5.41,240,"Boddy2012","Mace.etal1981",0.207998636,0.26651042
 "Otospermophilus beecheyi","Spermophilus_beecheyi","Rodentia","Sciuridae","Spermophilus","beecheyi","29","","Both",5.42,564.9,"Mateju2016","Hayssen 2008",-0.070022157,0.028304429
 "Cynomys mexicanus","Cynomys_mexicanus","Rodentia","Sciuridae","Cynomys","mexicanus","12","","Both",5.525,998,"Mateju2016","",-0.247060091,-0.122263265
 "Cynomys parvidens","Cynomys_parvidens","Rodentia","Sciuridae","Cynomys","parvidens","25","","Both",5.58,576,"Mateju2016","Hayssen 2008",-0.063725485,0.035506177
@@ -1415,25 +1415,25 @@
 "Sciurus granatensis","Sciurus_granatensis","Rodentia","Sciuridae","Sciurus","granatensis",">1,<10","","Both",5.91,400,"Boddy2012","Mace.etal1981",0.080000759,0.162272109
 "Sciurus vulgaris","Sciurus_vulgaris","Rodentia","Sciuridae","Sciurus","vulgaris",">2","","Both",5.93,327.4,"Boddy2012","Count1947,Mace.etal1981",0.146704559,0.21966038
 "Callosciurus caniceps","Callosciurus_caniceps","Rodentia","Sciuridae","Callosciurus","caniceps",">1,<10","","Both",6.02,240,"Boddy2012","Mace.etal1981",0.254397862,0.312909647
-"Spermophilopsis leptodactylus","Spermophilopsis_leptodactylus","Rodentia","Sciuridae","Spermophilopsis","leptodactylus",">1,<10","","Both",6.18,495,"Boddy2012","Mace.etal1981",0.029992209,0.122174969
-"Callosciurus prevostii","Callosciurus_prevostii","Rodentia","Sciuridae","Callosciurus","prevostii",">1,<10","","Both",6.52,439,"Boddy2012","Mace.etal1981",0.092357198,0.178955794
+"","Spermophilopsis_leptodactylus","Rodentia","Sciuridae","Spermophilopsis","leptodactylus",">1,<10","","Both",6.18,495,"Boddy2012","Mace.etal1981",0.029992209,0.122174969
+"","Callosciurus_prevostii","Rodentia","Sciuridae","Callosciurus","prevostii",">1,<10","","Both",6.52,439,"Boddy2012","Mace.etal1981",0.092357198,0.178955794
 "Cricetomys gambianus","Cricetomys_gambianus","Rodentia","Nesomyidae","Cricetomys","gambianus",">1,<10","","Both",6.57,1150,"Boddy2012","Mace.etal1981",-0.218002903,-0.08661234
-"Xerus erythropus","Xerus_erythropus","Rodentia","Sciuridae","Xerus","erythropus",">1,<10","","Both",6.68,722.5,"Boddy2012","Mace.etal1981",-0.059395426,0.050376328
-"Proechimys semispinosus","Proechimys_semispinosus","Rodentia","Echimyidae","Proechimys","semispinosus",">2,<20","","Both",6.87,544.75,"Boddy2012","Mace.etal1981",0.044766154,0.14140334
+"","Xerus_erythropus","Rodentia","Sciuridae","Xerus","erythropus",">1,<10","","Both",6.68,722.5,"Boddy2012","Mace.etal1981",-0.059395426,0.050376328
+"","Proechimys_semispinosus","Rodentia","Echimyidae","Proechimys","semispinosus",">2,<20","","Both",6.87,544.75,"Boddy2012","Mace.etal1981",0.044766154,0.14140334
 "Spermophilus variegatus","Spermophilus_variegatus","Rodentia","Sciuridae","Spermophilus","variegatus","29","","Both",7.01,703.15,"Mateju2016","",-0.029611387,0.078897696
 "Aplodontia rufa","Aplodontia_rufa","Rodentia","Aplodontiidae","Aplodontia","rufa",">1,<10","","Both",7.04,806,"Boddy2012","Mace.etal1981",-0.07222245,0.04263616
 "Sciurus carolinensis","Sciurus_carolinensis","Rodentia","Sciuridae","Sciurus","carolinensis",">1","","Both",7.41,503.17,"Boddy2012","Count1947,Glendenning1998,Mace.etal1981",0.103489737,0.196433915
-"Sciurus aberti","Sciurus_aberti","Rodentia","Sciuridae","Sciurus","aberti","1<N<10","1<N<10","Both",7.44,626.5,"Mace.etal.1981","",0.033839056,0.136979646
-"Xerus inauris","Xerus_inauris","Rodentia","Sciuridae","Xerus","inauris",">1,<10","","Both",7.65,400,"Boddy2012","Mace.etal1981",0.192074713,0.274346063
-"Petaurista elegans","Petaurista_elegans","Rodentia","Sciuridae","Petaurista","elegans",">1,<10","","Both",7.76,924,"Boddy2012","Mace.etal1981",-0.074436494,0.046776985
-"Sciurus aureogaster","Sciurus_aureogaster","Rodentia","Sciuridae","Sciurus","aureogaster",">1,<10","","Both",7.81,595,"Boddy2012","Mace.etal1981",0.071720391,0.172461545
+"","Sciurus_aberti","Rodentia","Sciuridae","Sciurus","aberti","1<N<10","1<N<10","Both",7.44,626.5,"Mace.etal.1981","",0.033839056,0.136979646
+"","Xerus_inauris","Rodentia","Sciuridae","Xerus","inauris",">1,<10","","Both",7.65,400,"Boddy2012","Mace.etal1981",0.192074713,0.274346063
+"","Petaurista_elegans","Rodentia","Sciuridae","Petaurista","elegans",">1,<10","","Both",7.76,924,"Boddy2012","Mace.etal1981",-0.074436494,0.046776985
+"","Sciurus_aureogaster","Rodentia","Sciuridae","Sciurus","aureogaster",">1,<10","","Both",7.81,595,"Boddy2012","Mace.etal1981",0.071720391,0.172461545
 "Sciurus niger","Sciurus_niger","Rodentia","Sciuridae","Sciurus","niger",">3","","Both",7.91,516.32,"Boddy2012","Count1947,Mace.etal1981,Warncke1908",0.123444779,0.217588906
-"Ratufa affinis","Ratufa_affinis","Rodentia","Sciuridae","Ratufa","affinis",">1,<10","","Both",9.85,982.5,"Boddy2012","Mace.etal1981",0.00914239,0.133211166
-"Aeromys tephromelas","Aeromys_tephromelas","Rodentia","Sciuridae","Aeromys","tephromelas",">1,<10","","Both",10.34,1189,"Boddy2012","Mace.etal1981",-0.031910845,0.101030928
+"","Ratufa_affinis","Rodentia","Sciuridae","Ratufa","affinis",">1,<10","","Both",9.85,982.5,"Boddy2012","Mace.etal1981",0.00914239,0.133211166
+"","Aeromys_tephromelas","Rodentia","Sciuridae","Aeromys","tephromelas",">1,<10","","Both",10.34,1189,"Boddy2012","Mace.etal1981",-0.031910845,0.101030928
 "Ratufa bicolor","Ratufa_bicolor","Rodentia","Sciuridae","Ratufa","bicolor",">1,<10","","Both",11.01,1320,"Boddy2012","Mace.etal1981",-0.038688435,0.09911474
 "Protoxerus stangeri","Protoxerus_stangeri","Rodentia","Sciuridae","Protoxerus","stangeri","1<N<10","1<N<10","Both",11.33,639.5,"Mace.etal.1981","",0.209806364,0.313902211
 "Marmota menzbieri","Marmota_menzbieri","Rodentia","Sciuridae","Marmota","menzbieri","6","","Both",11.4,3015,"Mateju2016","Hayssen 2008",-0.292608416,-0.116387743
-"Petaurista petaurista","Petaurista_petaurista","Rodentia","Sciuridae","Petaurista","petaurista",">1","","Both",11.77,1811.5,"Boddy2012","Count1947,Mace.etal1981",-0.112798545,0.039726798
+"","Petaurista_petaurista","Rodentia","Sciuridae","Petaurista","petaurista",">1","","Both",11.77,1811.5,"Boddy2012","Count1947,Mace.etal1981",-0.112798545,0.039726798
 "Marmota flaviventris","Marmota_flaviventris","Rodentia","Sciuridae","Marmota","flaviventris","48","","Both",12.27,3350.5,"Mateju2016","Hayssen 2008",-0.295035751,-0.113907598
 "Marmota bobak","Marmota_bobak","Rodentia","Sciuridae","Marmota","bobak","26","","Both",12.56,4922,"Mateju2016","",-0.410165816,-0.211148866
 "Marmota camtschatica","Marmota_camtschatica","Rodentia","Sciuridae","Marmota","camtschatica","32","","Both",12.63,3314.5,"Mateju2016","",-0.278958231,-0.098332539
@@ -1476,7 +1476,7 @@
 "Mastomys natalensis","Mastomys_natalensis","Rodentia","Muridae","Mastomys","natalensis","","","",0.719,46.026,"Barton&Capellini2011","",-0.130558785,-0.148858569
 "Mesocricetus auratus","Mesocricetus_auratus","Rodentia","Cricetidae","Mesocricetus","auratus","","","",1,120,"Savage and West 2006","Meddis R 1983",-0.299424056,-0.273151993
 "Psammomys obesus","Psammomys_obesus","Rodentia","Muridae","Psammomys","obesus","","","",1.3,69.1,"IslerVanSchaik2012","",-0.005701651,-0.005101329
-"Rattus norvegicus","Rattus_rattus","Rodentia","Muridae","Rattus","rattus","","","",1.4,150,"IslerVanSchaik2012","",-0.225979198,-0.189328263
+"Rattus rattus","Rattus_rattus","Rodentia","Muridae","Rattus","rattus","","","",1.4,150,"IslerVanSchaik2012","",-0.225979198,-0.189328263
 "Lemmus sibiricus","Lemmus_sibiricus","Rodentia","Cricetidae","Lemmus","sibiricus","","","",1.49,70,"Stankowich2016","",0.049326232,0.050528444
 "Holochilus chacarius","Holochilus_chacarius","Rodentia","Cricetidae","Holochilus","chacarius","1","1","",1.61,204,"Pirlot&BeeDeSperoni1987","",-0.265436461,-0.21448377
 "Tamias cinereicollis","Tamias_cinereicollis","Rodentia","Sciuridae","Tamias","cinereicollis","","","",1.8,61.7,"IslerVanSchaik2012","",0.172522504,0.167854364
@@ -1532,7 +1532,7 @@
 "Sorex cinereus","Sorex_cinereus","Soricomorpha","Soricidae","Sorex","cinereus",">1,<10","","Both",0.17,3.9,"Boddy2012","Mace.etal1981",0.047122611,0.112251241
 "Sorex vagrans","Sorex_vagrans","Soricomorpha","Soricidae","Sorex","vagrans",">1,<10","","Both",0.17,5.3,"Boddy2012","Mace.etal1981",-0.052786755,0.011439788
 "Crocidura russula","Crocidura_russula","Soricomorpha","Soricidae","Crocidura","russula",">3,<12","","Both",0.19,10.45,"Boddy2012","Stephan.etal1981,Mace.etal1981",-0.225614425,-0.163384496
-"Sorex trowbridgii","Sorex_trowbridgii","Soricomorpha","Soricidae","Sorex","trowbridgii",">1,<10","","Both",0.21,5.3,"Boddy2012","Mace.etal1981",0.038983619,0.103210162
+"","Sorex_trowbridgii","Soricomorpha","Soricidae","Sorex","trowbridgii",">1,<10","","Both",0.21,5.3,"Boddy2012","Mace.etal1981",0.038983619,0.103210162
 "Sorex fumeus","Sorex_fumeus","Soricomorpha","Soricidae","Sorex","fumeus",">1,<10","","Both",0.21,8.9,"Boddy2012","Mace.etal1981",-0.129853537,-0.067151432
 "Sorex monticolus","Sorex_monticolus","Soricomorpha","Soricidae","Sorex","monticolus",">1,<10","","Both",0.23,6.3,"Boddy2012","Mace.etal1981",0.022193132,0.085911349
 "Sorex araneus","Sorex_araneus","Soricomorpha","Soricidae","Sorex","araneus",">6,<16","","Both",0.23,8.9,"Boddy2012","Stephan.etal1981,Mace.etal1981",-0.090344996,-0.027642891
@@ -1546,7 +1546,7 @@
 "Condylura cristata","Condylura_cristata","Soricomorpha","Talpidae","Condylura","cristata",">1,<10","","Both",1.37,50,"Boddy2012","Mace.etal1981",0.122457566,0.18008363
 "Talpa europaea","Talpa_europaea","Soricomorpha","Talpidae","Talpa","europaea",">4,<13","","Both",1.4,77.83,"Boddy2012","Stephan.etal1981,Mace.etal1981,Warncke1908",-0.012269061,0.04405561
 "Scalopus aquaticus","Scalopus_aquaticus","Soricomorpha","Talpidae","Scalopus","aquaticus",">1,<10","","Both",1.48,39.6,"Boddy2012","Mace.etal1981",0.231955526,0.290267408
-"Scapanus townsendii","Scapanus_townsendii","Soricomorpha","Talpidae","Scapanus","townsendii",">1,<10","","Both",2.02,70,"Boddy2012","Mace.etal1981",0.181491333,0.238127841
+"","Scapanus_townsendii","Soricomorpha","Talpidae","Scapanus","townsendii",">1,<10","","Both",2.02,70,"Boddy2012","Mace.etal1981",0.181491333,0.238127841
 "Galemys pyrenaicus","Galemys_pyrenaicus","Soricomorpha","Talpidae","Galemys","pyrenaicus","2","","",1.33,57.5,"Boddy2012","Stephan.etal1981",0.064064841,0.121279869
 "Desmana moschata","Desmana_moschata","Soricomorpha","Talpidae","Desmana","moschata","1","","",4,440,"Boddy2012","Stephan.etal1981",-0.12057153,-0.069341357
 "Solenodon paradoxus","Solenodon_paradoxus","Soricomorpha","Solenodontidae","Solenodon","paradoxus","2","","",4.67,900,"Boddy2012","Stephan.etal1981",-0.28640916,-0.237283607

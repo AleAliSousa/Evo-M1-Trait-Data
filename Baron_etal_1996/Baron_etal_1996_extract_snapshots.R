@@ -122,6 +122,18 @@ extract_page <- function(pg, ncol, y_min, y_max = Inf) {
   pg <- pg[order(pg$y, pg$x), ]
   pg$text <- fix_tok(pg$text); pg <- pg[nzchar(pg$text), ]
   pg <- merge_split_numbers(pg)
+  # The column header "n  mm3  %  mm3  %  mm3  %" is repeated at the top of every
+  # page of Table 8, and the superscript 3 of each "mm3" reaches the text layer as
+  # its own numeric token "3". Left in, those three tokens are clustered into the
+  # mm3 columns and attached to the first species row of the page (2026-10-31:
+  # seven species carried NET = VENT = REST = 3 mm3 -- Baron_etal_1996-E001..E007).
+  # A numeral is a header token when a "mm" token sits on the same line.
+  mm_y <- pg$y[pg$text == "mm"]
+  if (length(mm_y)) {
+    hdr_num <- grepl("^[0-9]$", pg$text) &
+      vapply(pg$y, function(y) any(abs(y - mm_y) <= 6), logical(1))
+    pg <- pg[!hdr_num, ]
+  }
   isnum <- grepl("^[0-9][0-9.,]*$", pg$text)
   nm <- pg[!isnum, ]; recs <- character(0); recy <- numeric(0)
   if (nrow(nm)) {

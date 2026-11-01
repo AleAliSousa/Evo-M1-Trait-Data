@@ -1,5 +1,7 @@
 # Run from the repo root: Rscript _checks/shiny_species_regression.R
 # Uses local canonical data only; does not rebuild or change any data files.
+# 2026-10-31: brain-size predictor renamed from `Brain_Mass_mass_or_volume (g)` (dropped from the app on
+# 2026-10-29, mixed-basis records go to review) to the pooled basis label `Brain mass (measured or estimated from volume) (g)`.
 library(testthat)
 Sys.setenv(EVOM1_SOURCE = "local")
 repo <- normalizePath(getwd())
@@ -75,7 +77,7 @@ test_that("sample audit agrees with log and tree exclusions", {
 test_that("server selectors, species subsets and model comparison work together", {
   shiny::testServer(app$server, {
     session$setInputs(e_order = "Rodentia", e_genus = "Ctenomys", e_coverage = "any",
-                      r_y = "Neocortex_Vol.mm3", r_x = "Brain_Mass_mass_or_volume (g)",
+                      r_y = "Neocortex_Vol.mm3", r_x = "Brain mass (measured or estimated from volume) (g)",
                       r_control = "body", r_body = "Body_Mass (g)", r_log = TRUE,
                       r_method = "OLS", r_clade = "All", r_cohort = "")
     expect_gte(length(e_selected()), 60L)

@@ -1,6 +1,6 @@
 Species,Species_printed,Standardized_Term,Value,Units,source,team,ref,species_confidence,dependency_group,species_printed,accepted_name,species_basis,reidentified
 Chlorocebus pygerythrus,Vervet monkey,REM_sleep_pct,6,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,medium,REM_pct,Vervet monkey,Chlorocebus pygerythrus,our_judgment,FALSE
-Eulemur mongoz,Mongoose lemur,REM_sleep_pct,7,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,high,REM_pct,Mongoose lemur,Eulemur mongoz,synonym:legacy_key,FALSE
+Eulemur mongoz,Mongoose lemur,REM_sleep_pct,7,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,high,REM_pct,Mongoose lemur,Eulemur mongoz,common_name,FALSE
 Microcebus murinus,Gray mouse lemur,REM_sleep_pct,7,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,high,REM_pct,Gray mouse lemur,Microcebus murinus,our_judgment,FALSE
 Ateles geoffroyi,Spider monkey,REM_sleep_pct,7,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,review,REM_pct,Spider monkey,Ateles sp.,our_judgment,FALSE
 Papio cynocephalus,Yellow baboon,REM_sleep_pct,8,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,high,REM_pct,Yellow baboon,Papio cynocephalus,our_judgment,FALSE
@@ -8,22 +8,22 @@ Erythrocebus patas,Patas monkey,REM_sleep_pct,9,percent,Eagleman_Vaughn_2021_TAB
 Eulemur macaco,Black lemur,REM_sleep_pct,9,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,high,REM_pct,Black lemur,Eulemur macaco,our_judgment,FALSE
 Macaca sylvanus,Barbary macaque,REM_sleep_pct,9,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,high,REM_pct,Barbary macaque,Macaca sylvanus,our_judgment,FALSE
 Galago senegalensis,Senegal galago,REM_sleep_pct,9,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,high,REM_pct,Senegal galago,Galago senegalensis,our_judgment,FALSE
-Chlorocebus sabaeus,Green monkey,REM_sleep_pct,9,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,medium,REM_pct,Green monkey,Chlorocebus sabaeus,synonym:legacy_key,FALSE
+Chlorocebus sabaeus,Green monkey,REM_sleep_pct,9,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,medium,REM_pct,Green monkey,Chlorocebus sabaeus,common_name,FALSE
 Eulemur fulvus,Brown lemur,REM_sleep_pct,9,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,review,REM_pct,Brown lemur,Eulemur fulvus,our_judgment,FALSE
 Papio papio,Guinea baboon,REM_sleep_pct,11,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,high,REM_pct,Guinea baboon,Papio papio,our_judgment,FALSE
 Aotus trivirgatus,Three-striped night monkey,REM_sleep_pct,11,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,high,REM_pct,Three-striped night monkey,Three-striped night monkey,unresolved,FALSE
-Macaca fascicularis,Long-tailed macaque,REM_sleep_pct,11,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,high,REM_pct,Long-tailed macaque,Long-tailed macaque,unresolved,FALSE
+Macaca fascicularis,Long-tailed macaque,REM_sleep_pct,11,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,high,REM_pct,Long-tailed macaque,Macaca fascicularis,common_name,FALSE
 Macaca nemestrina,Pigtail macaque,REM_sleep_pct,12,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,high,REM_pct,Pigtail macaque,Macaca nemestrina,our_judgment,FALSE
 Pongo pygmaeus,Bornean orangutan,REM_sleep_pct,12,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,high,REM_pct,Bornean orangutan,Pongo pygmaeus,our_judgment,FALSE
-Papio hamadryas,Hamadryas baboon,REM_sleep_pct,13,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,high,REM_pct,Hamadryas baboon,Papio hamadryas,synonym:legacy_key,FALSE
+Papio hamadryas,Hamadryas baboon,REM_sleep_pct,13,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,high,REM_pct,Hamadryas baboon,Papio hamadryas,common_name,FALSE
 Papio anubis,Olive baboon,REM_sleep_pct,13,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,high,REM_pct,Olive baboon,Papio anubis,our_judgment,FALSE
 Macaca radiata,Bonnet macaque,REM_sleep_pct,14,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,high,REM_pct,Bonnet macaque,Macaca radiata,our_judgment,FALSE
 Callithrix jacchus,Common marmoset,REM_sleep_pct,14,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,high,REM_pct,Common marmoset,Callithrix jacchus,our_judgment,FALSE
-Macaca arctoides,Stump-tailed macaque,REM_sleep_pct,15,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,high,REM_pct,Stump-tailed macaque,Stump-tailed macaque,unresolved,FALSE
+Macaca arctoides,Stump-tailed macaque,REM_sleep_pct,15,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,high,REM_pct,Stump-tailed macaque,Macaca arctoides,common_name,FALSE
 Saimiri sciureus,Common squirrel monkey,REM_sleep_pct,15,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,high,REM_pct,Common squirrel monkey,Saimiri sciureus,our_judgment,FALSE
 Pan troglodytes,Chimpanzee,REM_sleep_pct,16,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,high,REM_pct,Chimpanzee,Pan troglodytes,our_judgment,FALSE
 Macaca mulatta,Rhesus monkey,REM_sleep_pct,18,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,high,REM_pct,Rhesus monkey,Macaca mulatta,synonym:legacy_key,FALSE
-Homo sapiens,Human,REM_sleep_pct,21,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,high,REM_pct,Human,Homo sapiens,synonym:legacy_key,FALSE
+Homo sapiens,Human,REM_sleep_pct,21,percent,Eagleman_Vaughn_2021_TABLE1,Eagleman_2021,Table,high,REM_pct,Human,Homo sapiens,our_judgment,FALSE
 Aotus trivirgatus,Aotus trivirgatus,Sleep_h_day,16.97,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel__2015,Table,high,dailysleep,Aotus trivirgatus,Aotus trivirgatus,verbatim,FALSE
 Callithrix sp.,Callithrix sp.,Sleep_h_day,10.22,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel__2015,Table,high,dailysleep,Callithrix sp.,Callithrix sp.,hub,FALSE
 Cebus apella,Cebus apella,Sleep_h_day,5.95,hours/day,HerculanoHouzel__2015_Table1,HerculanoHouzel__2015,Table,high,dailysleep,Cebus apella,Cebus apella,hub,FALSE
@@ -112,30 +112,30 @@ Cricetus cricetus,Cricetus cricetus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table
 Cynomys leucurus,Cynomys leucurus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Cynomys leucurus,Cynomys leucurus,verbatim,FALSE
 Cynomys ludovicianus,Cynomys ludovicianus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Cynomys ludovicianus,Cynomys ludovicianus,verbatim,FALSE
 Cynomys parvidens,Cynomys parvidens,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Cynomys parvidens,Cynomys parvidens,unresolved,FALSE
-Eliomys quercinus,Eliomys quercinus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Eliomys quercinus,Eliomys quercinus,unresolved,FALSE
+Eliomys quercinus,Eliomys quercinus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Eliomys quercinus,Eliomys quercinus,synonym:NCBI,FALSE
 Fukomys damarensis,Fukomys damarensis,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Fukomys damarensis,Fukomys damarensis,verbatim,FALSE
 Gerbillus pusillus,Gerbillus pusillus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Gerbillus pusillus,Gerbillus pusillus,unresolved,FALSE
-Glirulus japonicus,Glirulus japonicus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Glirulus japonicus,Glirulus japonicus,unresolved,FALSE
+Glirulus japonicus,Glirulus japonicus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Glirulus japonicus,Glirulus japonicus,synonym:NCBI,FALSE
 Glis glis,Glis glis,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Glis glis,Myoxus glis,synonym:legacy_key,FALSE
-Graphiurus murinus,Graphiurus murinus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Graphiurus murinus,Graphiurus murinus,unresolved,FALSE
+Graphiurus murinus,Graphiurus murinus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Graphiurus murinus,Graphiurus murinus,synonym:NCBI,FALSE
 Graphiurus ocularis,Graphiurus ocularis,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Graphiurus ocularis,Graphiurus ocularis,unresolved,FALSE
-Ictidomys tridecemlineatus,Ictidomys tridecemlineatus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Ictidomys tridecemlineatus,Ictidomys tridecemlineatus,unresolved,FALSE
-Jaculus orientalis,Jaculus orientalis,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Jaculus orientalis,Jaculus orientalis,unresolved,FALSE
+Ictidomys tridecemlineatus,Ictidomys tridecemlineatus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Ictidomys tridecemlineatus,Spermophilus tridecemlineatus,synonym:NCBI,FALSE
+Jaculus orientalis,Jaculus orientalis,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Jaculus orientalis,Jaculus orientalis,synonym:NCBI,FALSE
 Marmota broweri,Marmota broweri,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Marmota broweri,Marmota broweri,unresolved,FALSE
 Marmota flaviventris,Marmota flaviventris,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Marmota flaviventris,Marmota flaviventris,verbatim,FALSE
-Marmota marmota,Marmota marmota,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Marmota marmota,Marmota marmota,unresolved,FALSE
-Marmota monax,Marmota monax,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Marmota monax,Marmota monax,unresolved,FALSE
+Marmota marmota,Marmota marmota,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Marmota marmota,Marmota marmota,synonym:NCBI,FALSE
+Marmota monax,Marmota monax,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Marmota monax,Marmota monax,synonym:NCBI,FALSE
 Mesocricetus auratus,Mesocricetus auratus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Mesocricetus auratus,Mesocricetus auratus,verbatim,FALSE
-Mesocricetus brandti,Mesocricetus brandti,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Mesocricetus brandti,Mesocricetus brandti,unresolved,FALSE
+Mesocricetus brandti,Mesocricetus brandti,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Mesocricetus brandti,Mesocricetus brandti,synonym:NCBI,FALSE
 Microdipodops pallidus,Microdipodops pallidus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Microdipodops pallidus,Microdipodops pallidus,unresolved,FALSE
 Mus musculus,Mus musculus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Mus musculus,Mus musculus,verbatim,FALSE
-Muscardinus avellanarius,Muscardinus avellanarius,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Muscardinus avellanarius,Muscardinus avellanarius,unresolved,FALSE
+Muscardinus avellanarius,Muscardinus avellanarius,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Muscardinus avellanarius,Muscardinus avellanarius,synonym:NCBI,FALSE
 Perognathus californicus,Perognathus californicus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Perognathus californicus,Perognathus californicus,unresolved,FALSE
 Perognathus fasciatus,Perognathus fasciatus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Perognathus fasciatus,Perognathus fasciatus,unresolved,FALSE
 Perognathus longimembris,Perognathus longimembris,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Perognathus longimembris,Perognathus longimembris,verbatim,FALSE
-Perognathus parvus,Perognathus parvus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Perognathus parvus,Perognathus parvus,unresolved,FALSE
-Peromyscus boylii,Peromyscus boylii,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Peromyscus boylii,Peromyscus boylii,unresolved,FALSE
-Peromyscus crinitus,Peromyscus crinitus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Peromyscus crinitus,Peromyscus crinitus,unresolved,FALSE
+Perognathus parvus,Perognathus parvus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Perognathus parvus,Perognathus parvus,synonym:NCBI,FALSE
+Peromyscus boylii,Peromyscus boylii,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Peromyscus boylii,Peromyscus boylii,synonym:NCBI,FALSE
+Peromyscus crinitus,Peromyscus crinitus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Peromyscus crinitus,Peromyscus crinitus,synonym:NCBI,FALSE
 Peromyscus eremicus,Peromyscus eremicus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Peromyscus eremicus,Peromyscus eremicus,verbatim,FALSE
 Peromyscus gossypinus,Peromyscus gossypinus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Peromyscus gossypinus,Peromyscus gossypinus,verbatim,FALSE
 Peromyscus leucopus,Peromyscus leucopus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Peromyscus leucopus,Peromyscus leucopus,verbatim,FALSE
@@ -143,8 +143,8 @@ Peromyscus maniculatus,Peromyscus maniculatus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2
 Petromyscus collinus,Petromyscus collinus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Petromyscus collinus,Petromyscus collinus,unresolved,FALSE
 Phodopus sungorus,Phodopus sungorus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Phodopus sungorus,Phodopus sungorus,verbatim,FALSE
 Phyllotis darwini,Phyllotis darwini,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Phyllotis darwini,Phyllotis darwinii,spelling,FALSE
-Reithrodontomys megalotis,Reithrodontomys megalotis,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Reithrodontomys megalotis,Reithrodontomys megalotis,unresolved,FALSE
-Saccostomus campestris,Saccostomus campestris,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Saccostomus campestris,Saccostomus campestris,unresolved,FALSE
+Reithrodontomys megalotis,Reithrodontomys megalotis,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Reithrodontomys megalotis,Reithrodontomys megalotis,synonym:NCBI,FALSE
+Saccostomus campestris,Saccostomus campestris,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Saccostomus campestris,Saccostomus campestris,synonym:NCBI,FALSE
 Spermophilus armatus,Spermophilus armatus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Spermophilus armatus,Spermophilus armatus,unresolved,FALSE
 Spermophilus beecheyi,Spermophilus beecheyi,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Spermophilus beecheyi,Otospermophilus beecheyi,synonym:NCBI,FALSE
 Spermophilus beldingi,Spermophilus beldingi,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Spermophilus beldingi,Spermophilus beldingi,unresolved,FALSE
@@ -161,9 +161,9 @@ Spermophilus tereticaudus,Spermophilus tereticaudus,Torpor_type,HIB,DT|HIB,Ruf_G
 Spermophilus variegatus,Spermophilus variegatus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Spermophilus variegatus,Spermophilus variegatus,unresolved,FALSE
 Spermophilus xanthoprymnus,Spermophilus xanthoprymnus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Spermophilus xanthoprymnus,Spermophilus xanthoprymnus,unresolved,FALSE
 Steatomys pratensis,Steatomys pratensis,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Steatomys pratensis,Steatomys pratensis,unresolved,FALSE
-Tamias amoenus,Tamias amoenus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Tamias amoenus,Tamias amoenus,unresolved,FALSE
+Tamias amoenus,Tamias amoenus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Tamias amoenus,Tamias amoenus,hub,FALSE
 Tamias striatus,Tamias striatus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Tamias striatus,Tamias striatus,verbatim,FALSE
-Zapus hudsonius,Zapus hudsonius,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Zapus hudsonius,Zapus hudsonius,unresolved,FALSE
+Zapus hudsonius,Zapus hudsonius,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Zapus hudsonius,Zapus hudsonius,synonym:NCBI,FALSE
 Zapus princeps,Zapus princeps,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Zapus princeps,Zapus princeps,unresolved,FALSE
 Cheirogaleus crossleyi,Cheirogaleus crossleyi,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Cheirogaleus crossleyi,Cheirogaleus crossleyi,unresolved,FALSE
 Cheirogaleus medius,Cheirogaleus medius,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Cheirogaleus medius,Cheirogaleus medius,verbatim,FALSE
@@ -174,44 +174,44 @@ Microcebus myoxinus,Microcebus myoxinus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Ta
 Microcebus ravelobensis,Microcebus ravelobensis,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Microcebus ravelobensis,Microcebus ravelobensis,unresolved,FALSE
 Meles meles,Meles meles,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Meles meles,Meles meles,verbatim,FALSE
 Mephitis mephitis,Mephitis mephitis,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Mephitis mephitis,Mephitis mephitis,verbatim,FALSE
-Proteles cristata,Proteles cristata,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Proteles cristata,Proteles cristata,unresolved,FALSE
+Proteles cristata,Proteles cristata,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Proteles cristata,Proteles cristata,synonym:NCBI,FALSE
 Taxidea taxus,Taxidea taxus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Taxidea taxus,Taxidea taxus,verbatim,FALSE
-Ursus americanus,Ursus americanus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Ursus americanus,Ursus americanus,unresolved,FALSE
+Ursus americanus,Ursus americanus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Ursus americanus,Ursus americanus,verbatim,FALSE
 Ursus arctos,Ursus arctos,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Ursus arctos,Ursus arctos,verbatim,FALSE
-Barbastella barbastellus,Barbastella barbastellus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Barbastella barbastellus,Barbastella barbastellus,unresolved,FALSE
-Carollia perspicillata,Carollia perspicillata,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Carollia perspicillata,Carollia perspicillata,unresolved,FALSE
+Barbastella barbastellus,Barbastella barbastellus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Barbastella barbastellus,Barbastella barbastellus,synonym:NCBI,FALSE
+Carollia perspicillata,Carollia perspicillata,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Carollia perspicillata,Carollia perspicillata,synonym:NCBI,FALSE
 Chalinolobus gouldii,Chalinolobus gouldii,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Chalinolobus gouldii,Chalinolobus gouldii,unresolved,FALSE
-Corynorhinus rafinesquii,Corynorhinus rafinesquii,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Corynorhinus rafinesquii,Corynorhinus rafinesquii,unresolved,FALSE
+Corynorhinus rafinesquii,Corynorhinus rafinesquii,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Corynorhinus rafinesquii,Corynorhinus rafinesquii,synonym:NCBI,FALSE
 Eptesicus fuscus,Eptesicus fuscus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Eptesicus fuscus,Eptesicus fuscus,verbatim,FALSE
-Glossophaga soricina,Glossophaga soricina,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Glossophaga soricina,Glossophaga soricina,unresolved,FALSE
+Glossophaga soricina,Glossophaga soricina,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Glossophaga soricina,Glossophaga soricina,synonym:NCBI,FALSE
 Hipposideros terasensis,Hipposideros terasensis,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Hipposideros terasensis,Hipposideros terasensis,unresolved,FALSE
-Lasiurus borealis,Lasiurus borealis,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Lasiurus borealis,Lasiurus borealis,unresolved,FALSE
-Lasiurus cinereus,Lasiurus cinereus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Lasiurus cinereus,Lasiurus cinereus,unresolved,FALSE
-Macroglossus minimus,Macroglossus minimus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Macroglossus minimus,Macroglossus minimus,unresolved,FALSE
+Lasiurus borealis,Lasiurus borealis,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Lasiurus borealis,Lasiurus borealis,verbatim,FALSE
+Lasiurus cinereus,Lasiurus cinereus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Lasiurus cinereus,Lasiurus cinereus,hub,FALSE
+Macroglossus minimus,Macroglossus minimus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Macroglossus minimus,Macroglossus minimus,verbatim,FALSE
 Megaloglossus woermanni,Megaloglossus woermanni,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Megaloglossus woermanni,Megaloglossus woermanni,verbatim,FALSE
 Miniopterus schreibersii,Miniopterus schreibersii,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Miniopterus schreibersii,Miniopterus schreibersii,verbatim,FALSE
-Mops condylurus,Mops condylurus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Mops condylurus,Mops condylurus,unresolved,FALSE
+Mops condylurus,Mops condylurus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Mops condylurus,Mops condylurus,verbatim,FALSE
 Myotis adversus,Myotis adversus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Myotis adversus,Myotis adversus,unresolved,FALSE
 Myotis lucifugus,Myotis lucifugus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Myotis lucifugus,Myotis lucifugus,verbatim,FALSE
 Myotis myotis,Myotis myotis,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Myotis myotis,Myotis myotis,verbatim,FALSE
 Myotis nattereri,Myotis nattereri,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Myotis nattereri,Myotis nattereri,verbatim,FALSE
-Myotis velifer,Myotis velifer,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Myotis velifer,Myotis velifer,unresolved,FALSE
-Nyctalus noctula,Nyctalus noctula,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Nyctalus noctula,Nyctalus noctula,unresolved,FALSE
-Nycteris thebaica,Nycteris thebaica,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Nycteris thebaica,Nycteris thebaica,unresolved,FALSE
+Myotis velifer,Myotis velifer,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Myotis velifer,Myotis velifer,synonym:NCBI,FALSE
+Nyctalus noctula,Nyctalus noctula,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Nyctalus noctula,Nyctalus noctula,synonym:NCBI,FALSE
+Nycteris thebaica,Nycteris thebaica,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Nycteris thebaica,Nycteris thebaica,verbatim,FALSE
 Nyctimene albiventer,Nyctimene albiventer,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Nyctimene albiventer,Nyctimene albiventer,unresolved,FALSE
 Nyctophilus bifax,Nyctophilus bifax,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Nyctophilus bifax,Nyctophilus bifax,unresolved,FALSE
 Nyctophilus geoffroyi,Nyctophilus geoffroyi,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Nyctophilus geoffroyi,Nyctophilus geoffroyi,unresolved,FALSE
 Nyctophilus gouldi,Nyctophilus gouldi,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Nyctophilus gouldi,Nyctophilus gouldi,verbatim,FALSE
-Pipistrellus pipistrellus,Pipistrellus pipistrellus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Pipistrellus pipistrellus,Pipistrellus pipistrellus,unresolved,FALSE
+Pipistrellus pipistrellus,Pipistrellus pipistrellus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Pipistrellus pipistrellus,Pipistrellus pipistrellus,synonym:NCBI,FALSE
 Pipistrellus subflavus,Pipistrellus subflavus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Pipistrellus subflavus,Pipistrellus subflavus,unresolved,FALSE
 Plecotus auritus,Plecotus auritus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Plecotus auritus,Plecotus auritus,verbatim,FALSE
 Rhinolophus ferrumequinum,Rhinolophus ferrumequinum,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Rhinolophus ferrumequinum,Rhinolophus ferrumequinum,verbatim,FALSE
 Rhinolophus hipposideros,Rhinolophus hipposideros,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Rhinolophus hipposideros,Rhinolophus hipposideros,verbatim,FALSE
-Rhinopoma microphyllum,Rhinopoma microphyllum,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Rhinopoma microphyllum,Rhinopoma microphyllum,unresolved,FALSE
-Scotophilus dinganii,Scotophilus dinganii,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Scotophilus dinganii,Scotophilus dinganii,unresolved,FALSE
+Rhinopoma microphyllum,Rhinopoma microphyllum,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Rhinopoma microphyllum,Rhinopoma microphyllum,verbatim,FALSE
+Scotophilus dinganii,Scotophilus dinganii,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Scotophilus dinganii,Scotophilus dinganii,verbatim,FALSE
 Scotophilus mhlanganii,Scotophilus mhlanganii,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Scotophilus mhlanganii,Scotophilus mhlanganii,unresolved,FALSE
 Sturnira lilium,Sturnira lilium,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Sturnira lilium,Sturnira lilium,verbatim,FALSE
-Syconycteris australis,Syconycteris australis,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Syconycteris australis,Syconycteris australis,unresolved,FALSE
+Syconycteris australis,Syconycteris australis,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Syconycteris australis,Syconycteris australis,verbatim,FALSE
 Tadarida aegyptiaca,Tadarida aegyptiaca,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Tadarida aegyptiaca,Tadarida aegyptiaca,unresolved,FALSE
 Tadarida brasiliensis,Tadarida brasiliensis,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Tadarida brasiliensis,Tadarida brasiliensis,hub,FALSE
 Tadarida teniotis,Tadarida teniotis,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Tadarida teniotis,Tadarida teniotis,unresolved,FALSE
@@ -219,25 +219,25 @@ Vespadelus vulturnus,Vespadelus vulturnus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015
 Atelerix algirus,Atelerix algirus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Atelerix algirus,Atelerix algirus,verbatim,FALSE
 Atelerix frontalis,Atelerix frontalis,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Atelerix frontalis,Atelerix frontalis,unresolved,FALSE
 Crocidura flavescens,Crocidura flavescens,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Crocidura flavescens,Crocidura flavescens,verbatim,FALSE
-Crocidura leucodon,Crocidura leucodon,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Crocidura leucodon,Crocidura leucodon,unresolved,FALSE
+Crocidura leucodon,Crocidura leucodon,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Crocidura leucodon,Crocidura leucodon,synonym:NCBI,FALSE
 Crocidura russula,Crocidura russula,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Crocidura russula,Crocidura russula,verbatim,FALSE
-Crocidura suaveolens,Crocidura suaveolens,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Crocidura suaveolens,Crocidura suaveolens,unresolved,FALSE
+Crocidura suaveolens,Crocidura suaveolens,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Crocidura suaveolens,Crocidura suaveolens,synonym:NCBI,FALSE
 Erinaceus europaeus,Erinaceus europaeus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Erinaceus europaeus,Erinaceus europaeus,verbatim,FALSE
-Notiosorex crawfordi,Notiosorex crawfordi,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Notiosorex crawfordi,Notiosorex crawfordi,unresolved,FALSE
+Notiosorex crawfordi,Notiosorex crawfordi,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Notiosorex crawfordi,Notiosorex crawfordi,synonym:NCBI,FALSE
 Sorex sinuosus,Sorex sinuosus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Sorex sinuosus,Sorex sinuosus,unresolved,FALSE
 Suncus etruscus,Suncus etruscus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Suncus etruscus,Suncus etruscus,verbatim,FALSE
-Zaedyus pichiy,Zaedyus pichiy,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Zaedyus pichiy,Zaedyus pichiy,unresolved,FALSE
+Zaedyus pichiy,Zaedyus pichiy,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Zaedyus pichiy,Zaedyus pichiy,synonym:NCBI,FALSE
 Amblysomus hottentotus,Amblysomus hottentotus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Amblysomus hottentotus,Amblysomus hottentotus,verbatim,FALSE
 Echinops telfairi,Echinops telfairi,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Echinops telfairi,Echinops telfairi,verbatim,FALSE
-Geogale aurita,Geogale aurita,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Geogale aurita,Geogale aurita,unresolved,FALSE
+Geogale aurita,Geogale aurita,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Geogale aurita,Geogale aurita,verbatim,FALSE
 Microgale dobsoni,Microgale dobsoni,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Microgale dobsoni,Nesogale dobsoni,synonym:legacy_override,FALSE
 Setifer setosus,Setifer setosus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Setifer setosus,Setifer setosus,verbatim,FALSE
 Tenrec ecaudatus,Tenrec ecaudatus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Tenrec ecaudatus,Tenrec ecaudatus,verbatim,FALSE
 Elephantulus edwardii,Elephantulus edwardii,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Elephantulus edwardii,Elephantulus edwardii,unresolved,FALSE
 Elephantulus myurus,Elephantulus myurus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Elephantulus myurus,Elephantulus myurus,verbatim,FALSE
-Elephantulus rozeti,Elephantulus rozeti,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Elephantulus rozeti,Elephantulus rozeti,unresolved,FALSE
+Elephantulus rozeti,Elephantulus rozeti,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Elephantulus rozeti,Petrosaltator rozeti,synonym:NCBI,FALSE
 Elephantulus rupestris,Elephantulus rupestris,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Elephantulus rupestris,Elephantulus rupestris,unresolved,FALSE
-Macroscelides proboscideus,Macroscelides proboscideus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Macroscelides proboscideus,Macroscelides proboscideus,unresolved,FALSE
+Macroscelides proboscideus,Macroscelides proboscideus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Macroscelides proboscideus,Macroscelides proboscideus,synonym:NCBI,FALSE
 Acrobates pygmaeus,Acrobates pygmaeus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Acrobates pygmaeus,Acrobates pygmaeus,verbatim,FALSE
 Burramys parvus,Burramys parvus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Burramys parvus,Burramys parvus,verbatim,FALSE
 Cercartetus concinnus,Cercartetus concinnus,Torpor_type,HIB,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Cercartetus concinnus,Cercartetus concinnus,verbatim,FALSE
@@ -252,19 +252,19 @@ Antechinus stuartii,Antechinus stuartii,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Ta
 Dasycercus cristicauda/blythi,Dasycercus cristicauda/blythi,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Dasycercus cristicauda/blythi,Dasycercus cristicauda/blythi,unresolved,FALSE
 Dasykaluta rosamondae,Dasykaluta rosamondae,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Dasykaluta rosamondae,Dasykaluta rosamondae,unresolved,FALSE
 Dasyuroides byrnei,Dasyuroides byrnei,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Dasyuroides byrnei,Dasyuroides byrnei,verbatim,FALSE
-Dasyurus geoffroii,Dasyurus geoffroii,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Dasyurus geoffroii,Dasyurus geoffroii,unresolved,FALSE
+Dasyurus geoffroii,Dasyurus geoffroii,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Dasyurus geoffroii,Dasyurus geoffroii,verbatim,FALSE
 Dasyurus hallucatus,Dasyurus hallucatus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Dasyurus hallucatus,Dasyurus hallucatus,verbatim,FALSE
 Dasyurus viverrinus,Dasyurus viverrinus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Dasyurus viverrinus,Dasyurus viverrinus,verbatim,FALSE
-Myrmecobius fasciatus,Myrmecobius fasciatus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Myrmecobius fasciatus,Myrmecobius fasciatus,unresolved,FALSE
+Myrmecobius fasciatus,Myrmecobius fasciatus,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Myrmecobius fasciatus,Myrmecobius fasciatus,synonym:NCBI,FALSE
 Ningaui yvonnae,Ningaui yvonnae,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Ningaui yvonnae,Ningaui yvonnae,unresolved,FALSE
-Planigale gilesi,Planigale gilesi,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Planigale gilesi,Planigale gilesi,unresolved,FALSE
+Planigale gilesi,Planigale gilesi,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Planigale gilesi,Planigale gilesi,synonym:NCBI,FALSE
 Planigale ingrami,Planigale ingrami,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Planigale ingrami,Planigale ingrami,verbatim,FALSE
 Planigale maculata,Planigale maculata,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Planigale maculata,Planigale maculata,verbatim,FALSE
-Planigale tenuirostris,Planigale tenuirostris,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Planigale tenuirostris,Planigale tenuirostris,unresolved,FALSE
+Planigale tenuirostris,Planigale tenuirostris,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Planigale tenuirostris,Planigale tenuirostris,synonym:NCBI,FALSE
 Pseudantechinus macdonnellensis,Pseudantechinus macdonnellensis,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Pseudantechinus macdonnellensis,Pseudantechinus macdonnellensis,unresolved,FALSE
 Sminthopsis crassicaudata,Sminthopsis crassicaudata,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Sminthopsis crassicaudata,Sminthopsis crassicaudata,verbatim,FALSE
 Sminthopsis douglasi,Sminthopsis douglasi,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Sminthopsis douglasi,Sminthopsis douglasi,unresolved,FALSE
-Sminthopsis macroura,Sminthopsis macroura,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Sminthopsis macroura,Sminthopsis macroura,unresolved,FALSE
+Sminthopsis macroura,Sminthopsis macroura,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Sminthopsis macroura,Sminthopsis macroura,verbatim,FALSE
 Sminthopsis murina,Sminthopsis murina,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Sminthopsis murina,Sminthopsis murina,verbatim,FALSE
 Sminthopsis ooldea,Sminthopsis ooldea,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Sminthopsis ooldea,Sminthopsis ooldea,unresolved,FALSE
 Gracilinanus agilis,Gracilinanus agilis,Torpor_type,DT,DT|HIB,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Gracilinanus agilis,Gracilinanus agilis,unresolved,FALSE
@@ -322,26 +322,26 @@ Cricetus cricetus,Cricetus cricetus,Torpor_Tb_min_C,3.6,deg C,Ruf_Geiser_2015_Ta
 Cynomys leucurus,Cynomys leucurus,Torpor_Tb_min_C,8,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Cynomys leucurus,Cynomys leucurus,verbatim,FALSE
 Cynomys ludovicianus,Cynomys ludovicianus,Torpor_Tb_min_C,15,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Cynomys ludovicianus,Cynomys ludovicianus,verbatim,FALSE
 Cynomys parvidens,Cynomys parvidens,Torpor_Tb_min_C,6,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Cynomys parvidens,Cynomys parvidens,unresolved,FALSE
-Eliomys quercinus,Eliomys quercinus,Torpor_Tb_min_C,1,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Eliomys quercinus,Eliomys quercinus,unresolved,FALSE
+Eliomys quercinus,Eliomys quercinus,Torpor_Tb_min_C,1,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Eliomys quercinus,Eliomys quercinus,synonym:NCBI,FALSE
 Fukomys damarensis,Fukomys damarensis,Torpor_Tb_min_C,28.5,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Fukomys damarensis,Fukomys damarensis,verbatim,FALSE
 Gerbillus pusillus,Gerbillus pusillus,Torpor_Tb_min_C,16.7,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Gerbillus pusillus,Gerbillus pusillus,unresolved,FALSE
 Glis glis,Glis glis,Torpor_Tb_min_C,1,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Glis glis,Myoxus glis,synonym:legacy_key,FALSE
-Graphiurus murinus,Graphiurus murinus,Torpor_Tb_min_C,1.5,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Graphiurus murinus,Graphiurus murinus,unresolved,FALSE
-Ictidomys tridecemlineatus,Ictidomys tridecemlineatus,Torpor_Tb_min_C,1.5,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Ictidomys tridecemlineatus,Ictidomys tridecemlineatus,unresolved,FALSE
-Jaculus orientalis,Jaculus orientalis,Torpor_Tb_min_C,10,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Jaculus orientalis,Jaculus orientalis,unresolved,FALSE
+Graphiurus murinus,Graphiurus murinus,Torpor_Tb_min_C,1.5,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Graphiurus murinus,Graphiurus murinus,synonym:NCBI,FALSE
+Ictidomys tridecemlineatus,Ictidomys tridecemlineatus,Torpor_Tb_min_C,1.5,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Ictidomys tridecemlineatus,Spermophilus tridecemlineatus,synonym:NCBI,FALSE
+Jaculus orientalis,Jaculus orientalis,Torpor_Tb_min_C,10,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Jaculus orientalis,Jaculus orientalis,synonym:NCBI,FALSE
 Marmota flaviventris,Marmota flaviventris,Torpor_Tb_min_C,7.5,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Marmota flaviventris,Marmota flaviventris,verbatim,FALSE
-Marmota marmota,Marmota marmota,Torpor_Tb_min_C,2.4,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Marmota marmota,Marmota marmota,unresolved,FALSE
-Marmota monax,Marmota monax,Torpor_Tb_min_C,5,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Marmota monax,Marmota monax,unresolved,FALSE
+Marmota marmota,Marmota marmota,Torpor_Tb_min_C,2.4,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Marmota marmota,Marmota marmota,synonym:NCBI,FALSE
+Marmota monax,Marmota monax,Torpor_Tb_min_C,5,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Marmota monax,Marmota monax,synonym:NCBI,FALSE
 Mesocricetus auratus,Mesocricetus auratus,Torpor_Tb_min_C,4,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Mesocricetus auratus,Mesocricetus auratus,verbatim,FALSE
 Microdipodops pallidus,Microdipodops pallidus,Torpor_Tb_min_C,6,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Microdipodops pallidus,Microdipodops pallidus,unresolved,FALSE
 Mus musculus,Mus musculus,Torpor_Tb_min_C,16,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Mus musculus,Mus musculus,verbatim,FALSE
-Muscardinus avellanarius,Muscardinus avellanarius,Torpor_Tb_min_C,0,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Muscardinus avellanarius,Muscardinus avellanarius,unresolved,FALSE
+Muscardinus avellanarius,Muscardinus avellanarius,Torpor_Tb_min_C,0,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Muscardinus avellanarius,Muscardinus avellanarius,synonym:NCBI,FALSE
 Perognathus californicus,Perognathus californicus,Torpor_Tb_min_C,15,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Perognathus californicus,Perognathus californicus,unresolved,FALSE
 Perognathus fasciatus,Perognathus fasciatus,Torpor_Tb_min_C,11,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Perognathus fasciatus,Perognathus fasciatus,unresolved,FALSE
 Perognathus longimembris,Perognathus longimembris,Torpor_Tb_min_C,4,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Perognathus longimembris,Perognathus longimembris,verbatim,FALSE
-Perognathus parvus,Perognathus parvus,Torpor_Tb_min_C,2,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Perognathus parvus,Perognathus parvus,unresolved,FALSE
-Peromyscus boylii,Peromyscus boylii,Torpor_Tb_min_C,18,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Peromyscus boylii,Peromyscus boylii,unresolved,FALSE
-Peromyscus crinitus,Peromyscus crinitus,Torpor_Tb_min_C,17,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Peromyscus crinitus,Peromyscus crinitus,unresolved,FALSE
+Perognathus parvus,Perognathus parvus,Torpor_Tb_min_C,2,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Perognathus parvus,Perognathus parvus,synonym:NCBI,FALSE
+Peromyscus boylii,Peromyscus boylii,Torpor_Tb_min_C,18,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Peromyscus boylii,Peromyscus boylii,synonym:NCBI,FALSE
+Peromyscus crinitus,Peromyscus crinitus,Torpor_Tb_min_C,17,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Peromyscus crinitus,Peromyscus crinitus,synonym:NCBI,FALSE
 Peromyscus eremicus,Peromyscus eremicus,Torpor_Tb_min_C,16,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Peromyscus eremicus,Peromyscus eremicus,verbatim,FALSE
 Peromyscus gossypinus,Peromyscus gossypinus,Torpor_Tb_min_C,14,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Peromyscus gossypinus,Peromyscus gossypinus,verbatim,FALSE
 Peromyscus leucopus,Peromyscus leucopus,Torpor_Tb_min_C,16.8,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Peromyscus leucopus,Peromyscus leucopus,verbatim,FALSE
@@ -349,8 +349,8 @@ Peromyscus maniculatus,Peromyscus maniculatus,Torpor_Tb_min_C,13.4,deg C,Ruf_Gei
 Petromyscus collinus,Petromyscus collinus,Torpor_Tb_min_C,18,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Petromyscus collinus,Petromyscus collinus,unresolved,FALSE
 Phodopus sungorus,Phodopus sungorus,Torpor_Tb_min_C,12.3,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Phodopus sungorus,Phodopus sungorus,verbatim,FALSE
 Phyllotis darwini,Phyllotis darwini,Torpor_Tb_min_C,17.5,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Phyllotis darwini,Phyllotis darwinii,spelling,FALSE
-Reithrodontomys megalotis,Reithrodontomys megalotis,Torpor_Tb_min_C,13,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Reithrodontomys megalotis,Reithrodontomys megalotis,unresolved,FALSE
-Saccostomus campestris,Saccostomus campestris,Torpor_Tb_min_C,25,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Saccostomus campestris,Saccostomus campestris,unresolved,FALSE
+Reithrodontomys megalotis,Reithrodontomys megalotis,Torpor_Tb_min_C,13,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Reithrodontomys megalotis,Reithrodontomys megalotis,synonym:NCBI,FALSE
+Saccostomus campestris,Saccostomus campestris,Torpor_Tb_min_C,25,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Saccostomus campestris,Saccostomus campestris,synonym:NCBI,FALSE
 Spermophilus beecheyi,Spermophilus beecheyi,Torpor_Tb_min_C,6.1,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Spermophilus beecheyi,Otospermophilus beecheyi,synonym:NCBI,FALSE
 Spermophilus citellus,Spermophilus citellus,Torpor_Tb_min_C,-0.7,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Spermophilus citellus,Spermophilus citellus,verbatim,FALSE
 Spermophilus columbianus,Spermophilus columbianus,Torpor_Tb_min_C,0,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Spermophilus columbianus,Spermophilus columbianus,unresolved,FALSE
@@ -363,7 +363,7 @@ Spermophilus saturatus,Spermophilus saturatus,Torpor_Tb_min_C,0.3,deg C,Ruf_Geis
 Spermophilus variegatus,Spermophilus variegatus,Torpor_Tb_min_C,8,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Spermophilus variegatus,Spermophilus variegatus,unresolved,FALSE
 Spermophilus xanthoprymnus,Spermophilus xanthoprymnus,Torpor_Tb_min_C,4,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Spermophilus xanthoprymnus,Spermophilus xanthoprymnus,unresolved,FALSE
 Steatomys pratensis,Steatomys pratensis,Torpor_Tb_min_C,16.4,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Steatomys pratensis,Steatomys pratensis,unresolved,FALSE
-Tamias amoenus,Tamias amoenus,Torpor_Tb_min_C,-0.2,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Tamias amoenus,Tamias amoenus,unresolved,FALSE
+Tamias amoenus,Tamias amoenus,Torpor_Tb_min_C,-0.2,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Tamias amoenus,Tamias amoenus,hub,FALSE
 Tamias striatus,Tamias striatus,Torpor_Tb_min_C,4.9,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Tamias striatus,Tamias striatus,verbatim,FALSE
 Zapus princeps,Zapus princeps,Torpor_Tb_min_C,5.5,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Zapus princeps,Zapus princeps,unresolved,FALSE
 Cheirogaleus crossleyi,Cheirogaleus crossleyi,Torpor_Tb_min_C,9,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Cheirogaleus crossleyi,Cheirogaleus crossleyi,unresolved,FALSE
@@ -375,41 +375,41 @@ Microcebus myoxinus,Microcebus myoxinus,Torpor_Tb_min_C,6.8,deg C,Ruf_Geiser_201
 Microcebus ravelobensis,Microcebus ravelobensis,Torpor_Tb_min_C,25,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Microcebus ravelobensis,Microcebus ravelobensis,unresolved,FALSE
 Meles meles,Meles meles,Torpor_Tb_min_C,28,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Meles meles,Meles meles,verbatim,FALSE
 Mephitis mephitis,Mephitis mephitis,Torpor_Tb_min_C,26,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Mephitis mephitis,Mephitis mephitis,verbatim,FALSE
-Proteles cristata,Proteles cristata,Torpor_Tb_min_C,31,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Proteles cristata,Proteles cristata,unresolved,FALSE
+Proteles cristata,Proteles cristata,Torpor_Tb_min_C,31,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Proteles cristata,Proteles cristata,synonym:NCBI,FALSE
 Taxidea taxus,Taxidea taxus,Torpor_Tb_min_C,28,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Taxidea taxus,Taxidea taxus,verbatim,FALSE
-Ursus americanus,Ursus americanus,Torpor_Tb_min_C,29.4,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Ursus americanus,Ursus americanus,unresolved,FALSE
+Ursus americanus,Ursus americanus,Torpor_Tb_min_C,29.4,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Ursus americanus,Ursus americanus,verbatim,FALSE
 Ursus arctos,Ursus arctos,Torpor_Tb_min_C,32.5,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Ursus arctos,Ursus arctos,verbatim,FALSE
-Carollia perspicillata,Carollia perspicillata,Torpor_Tb_min_C,22,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Carollia perspicillata,Carollia perspicillata,unresolved,FALSE
+Carollia perspicillata,Carollia perspicillata,Torpor_Tb_min_C,22,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Carollia perspicillata,Carollia perspicillata,synonym:NCBI,FALSE
 Chalinolobus gouldii,Chalinolobus gouldii,Torpor_Tb_min_C,5,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Chalinolobus gouldii,Chalinolobus gouldii,unresolved,FALSE
-Corynorhinus rafinesquii,Corynorhinus rafinesquii,Torpor_Tb_min_C,13.9,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Corynorhinus rafinesquii,Corynorhinus rafinesquii,unresolved,FALSE
+Corynorhinus rafinesquii,Corynorhinus rafinesquii,Torpor_Tb_min_C,13.9,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Corynorhinus rafinesquii,Corynorhinus rafinesquii,synonym:NCBI,FALSE
 Eptesicus fuscus,Eptesicus fuscus,Torpor_Tb_min_C,1,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Eptesicus fuscus,Eptesicus fuscus,verbatim,FALSE
-Glossophaga soricina,Glossophaga soricina,Torpor_Tb_min_C,21,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Glossophaga soricina,Glossophaga soricina,unresolved,FALSE
+Glossophaga soricina,Glossophaga soricina,Torpor_Tb_min_C,21,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Glossophaga soricina,Glossophaga soricina,synonym:NCBI,FALSE
 Hipposideros terasensis,Hipposideros terasensis,Torpor_Tb_min_C,13.8,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Hipposideros terasensis,Hipposideros terasensis,unresolved,FALSE
-Lasiurus borealis,Lasiurus borealis,Torpor_Tb_min_C,3,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Lasiurus borealis,Lasiurus borealis,unresolved,FALSE
-Lasiurus cinereus,Lasiurus cinereus,Torpor_Tb_min_C,2,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Lasiurus cinereus,Lasiurus cinereus,unresolved,FALSE
-Macroglossus minimus,Macroglossus minimus,Torpor_Tb_min_C,21.6,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Macroglossus minimus,Macroglossus minimus,unresolved,FALSE
+Lasiurus borealis,Lasiurus borealis,Torpor_Tb_min_C,3,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Lasiurus borealis,Lasiurus borealis,verbatim,FALSE
+Lasiurus cinereus,Lasiurus cinereus,Torpor_Tb_min_C,2,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Lasiurus cinereus,Lasiurus cinereus,hub,FALSE
+Macroglossus minimus,Macroglossus minimus,Torpor_Tb_min_C,21.6,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Macroglossus minimus,Macroglossus minimus,verbatim,FALSE
 Megaloglossus woermanni,Megaloglossus woermanni,Torpor_Tb_min_C,26.2,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Megaloglossus woermanni,Megaloglossus woermanni,verbatim,FALSE
 Miniopterus schreibersii,Miniopterus schreibersii,Torpor_Tb_min_C,5,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Miniopterus schreibersii,Miniopterus schreibersii,verbatim,FALSE
-Mops condylurus,Mops condylurus,Torpor_Tb_min_C,13,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Mops condylurus,Mops condylurus,unresolved,FALSE
+Mops condylurus,Mops condylurus,Torpor_Tb_min_C,13,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Mops condylurus,Mops condylurus,verbatim,FALSE
 Myotis adversus,Myotis adversus,Torpor_Tb_min_C,9,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Myotis adversus,Myotis adversus,unresolved,FALSE
 Myotis lucifugus,Myotis lucifugus,Torpor_Tb_min_C,1.3,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Myotis lucifugus,Myotis lucifugus,verbatim,FALSE
 Myotis myotis,Myotis myotis,Torpor_Tb_min_C,2,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Myotis myotis,Myotis myotis,verbatim,FALSE
 Myotis nattereri,Myotis nattereri,Torpor_Tb_min_C,7,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Myotis nattereri,Myotis nattereri,verbatim,FALSE
-Myotis velifer,Myotis velifer,Torpor_Tb_min_C,0.6,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Myotis velifer,Myotis velifer,unresolved,FALSE
-Nyctalus noctula,Nyctalus noctula,Torpor_Tb_min_C,3,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Nyctalus noctula,Nyctalus noctula,unresolved,FALSE
-Nycteris thebaica,Nycteris thebaica,Torpor_Tb_min_C,27,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Nycteris thebaica,Nycteris thebaica,unresolved,FALSE
+Myotis velifer,Myotis velifer,Torpor_Tb_min_C,0.6,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Myotis velifer,Myotis velifer,synonym:NCBI,FALSE
+Nyctalus noctula,Nyctalus noctula,Torpor_Tb_min_C,3,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Nyctalus noctula,Nyctalus noctula,synonym:NCBI,FALSE
+Nycteris thebaica,Nycteris thebaica,Torpor_Tb_min_C,27,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Nycteris thebaica,Nycteris thebaica,verbatim,FALSE
 Nyctimene albiventer,Nyctimene albiventer,Torpor_Tb_min_C,25.5,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Nyctimene albiventer,Nyctimene albiventer,unresolved,FALSE
 Nyctophilus bifax,Nyctophilus bifax,Torpor_Tb_min_C,7.3,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Nyctophilus bifax,Nyctophilus bifax,unresolved,FALSE
 Nyctophilus geoffroyi,Nyctophilus geoffroyi,Torpor_Tb_min_C,1.4,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Nyctophilus geoffroyi,Nyctophilus geoffroyi,unresolved,FALSE
 Nyctophilus gouldi,Nyctophilus gouldi,Torpor_Tb_min_C,2.3,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Nyctophilus gouldi,Nyctophilus gouldi,verbatim,FALSE
-Pipistrellus pipistrellus,Pipistrellus pipistrellus,Torpor_Tb_min_C,3,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Pipistrellus pipistrellus,Pipistrellus pipistrellus,unresolved,FALSE
+Pipistrellus pipistrellus,Pipistrellus pipistrellus,Torpor_Tb_min_C,3,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Pipistrellus pipistrellus,Pipistrellus pipistrellus,synonym:NCBI,FALSE
 Plecotus auritus,Plecotus auritus,Torpor_Tb_min_C,-2,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Plecotus auritus,Plecotus auritus,verbatim,FALSE
 Rhinolophus ferrumequinum,Rhinolophus ferrumequinum,Torpor_Tb_min_C,9,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Rhinolophus ferrumequinum,Rhinolophus ferrumequinum,verbatim,FALSE
-Rhinopoma microphyllum,Rhinopoma microphyllum,Torpor_Tb_min_C,23,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Rhinopoma microphyllum,Rhinopoma microphyllum,unresolved,FALSE
-Scotophilus dinganii,Scotophilus dinganii,Torpor_Tb_min_C,18.5,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Scotophilus dinganii,Scotophilus dinganii,unresolved,FALSE
+Rhinopoma microphyllum,Rhinopoma microphyllum,Torpor_Tb_min_C,23,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Rhinopoma microphyllum,Rhinopoma microphyllum,verbatim,FALSE
+Scotophilus dinganii,Scotophilus dinganii,Torpor_Tb_min_C,18.5,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Scotophilus dinganii,Scotophilus dinganii,verbatim,FALSE
 Scotophilus mhlanganii,Scotophilus mhlanganii,Torpor_Tb_min_C,17.2,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Scotophilus mhlanganii,Scotophilus mhlanganii,unresolved,FALSE
 Sturnira lilium,Sturnira lilium,Torpor_Tb_min_C,22,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Sturnira lilium,Sturnira lilium,verbatim,FALSE
-Syconycteris australis,Syconycteris australis,Torpor_Tb_min_C,17.2,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Syconycteris australis,Syconycteris australis,unresolved,FALSE
+Syconycteris australis,Syconycteris australis,Torpor_Tb_min_C,17.2,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Syconycteris australis,Syconycteris australis,verbatim,FALSE
 Tadarida aegyptiaca,Tadarida aegyptiaca,Torpor_Tb_min_C,6,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Tadarida aegyptiaca,Tadarida aegyptiaca,unresolved,FALSE
 Tadarida brasiliensis,Tadarida brasiliensis,Torpor_Tb_min_C,9,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Tadarida brasiliensis,Tadarida brasiliensis,hub,FALSE
 Tadarida teniotis,Tadarida teniotis,Torpor_Tb_min_C,6.7,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Tadarida teniotis,Tadarida teniotis,unresolved,FALSE
@@ -417,24 +417,24 @@ Vespadelus vulturnus,Vespadelus vulturnus,Torpor_Tb_min_C,5,deg C,Ruf_Geiser_201
 Atelerix algirus,Atelerix algirus,Torpor_Tb_min_C,9.7,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Atelerix algirus,Atelerix algirus,verbatim,FALSE
 Atelerix frontalis,Atelerix frontalis,Torpor_Tb_min_C,1,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Atelerix frontalis,Atelerix frontalis,unresolved,FALSE
 Crocidura flavescens,Crocidura flavescens,Torpor_Tb_min_C,19,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Crocidura flavescens,Crocidura flavescens,verbatim,FALSE
-Crocidura leucodon,Crocidura leucodon,Torpor_Tb_min_C,18.6,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Crocidura leucodon,Crocidura leucodon,unresolved,FALSE
+Crocidura leucodon,Crocidura leucodon,Torpor_Tb_min_C,18.6,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Crocidura leucodon,Crocidura leucodon,synonym:NCBI,FALSE
 Crocidura russula,Crocidura russula,Torpor_Tb_min_C,17.9,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Crocidura russula,Crocidura russula,verbatim,FALSE
-Crocidura suaveolens,Crocidura suaveolens,Torpor_Tb_min_C,21.6,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Crocidura suaveolens,Crocidura suaveolens,unresolved,FALSE
+Crocidura suaveolens,Crocidura suaveolens,Torpor_Tb_min_C,21.6,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Crocidura suaveolens,Crocidura suaveolens,synonym:NCBI,FALSE
 Erinaceus europaeus,Erinaceus europaeus,Torpor_Tb_min_C,5.4,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Erinaceus europaeus,Erinaceus europaeus,verbatim,FALSE
-Notiosorex crawfordi,Notiosorex crawfordi,Torpor_Tb_min_C,27.4,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Notiosorex crawfordi,Notiosorex crawfordi,unresolved,FALSE
+Notiosorex crawfordi,Notiosorex crawfordi,Torpor_Tb_min_C,27.4,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Notiosorex crawfordi,Notiosorex crawfordi,synonym:NCBI,FALSE
 Suncus etruscus,Suncus etruscus,Torpor_Tb_min_C,12,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Suncus etruscus,Suncus etruscus,verbatim,FALSE
-Zaedyus pichiy,Zaedyus pichiy,Torpor_Tb_min_C,12.5,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Zaedyus pichiy,Zaedyus pichiy,unresolved,FALSE
+Zaedyus pichiy,Zaedyus pichiy,Torpor_Tb_min_C,12.5,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Zaedyus pichiy,Zaedyus pichiy,synonym:NCBI,FALSE
 Amblysomus hottentotus,Amblysomus hottentotus,Torpor_Tb_min_C,8.6,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Amblysomus hottentotus,Amblysomus hottentotus,verbatim,FALSE
 Echinops telfairi,Echinops telfairi,Torpor_Tb_min_C,11,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Echinops telfairi,Echinops telfairi,verbatim,FALSE
-Geogale aurita,Geogale aurita,Torpor_Tb_min_C,16,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Geogale aurita,Geogale aurita,unresolved,FALSE
+Geogale aurita,Geogale aurita,Torpor_Tb_min_C,16,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Geogale aurita,Geogale aurita,verbatim,FALSE
 Microgale dobsoni,Microgale dobsoni,Torpor_Tb_min_C,20,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Microgale dobsoni,Nesogale dobsoni,synonym:legacy_override,FALSE
 Setifer setosus,Setifer setosus,Torpor_Tb_min_C,13,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Setifer setosus,Setifer setosus,verbatim,FALSE
 Tenrec ecaudatus,Tenrec ecaudatus,Torpor_Tb_min_C,15,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Tenrec ecaudatus,Tenrec ecaudatus,verbatim,FALSE
 Elephantulus edwardii,Elephantulus edwardii,Torpor_Tb_min_C,9.3,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Elephantulus edwardii,Elephantulus edwardii,unresolved,FALSE
 Elephantulus myurus,Elephantulus myurus,Torpor_Tb_min_C,5.5,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Elephantulus myurus,Elephantulus myurus,verbatim,FALSE
-Elephantulus rozeti,Elephantulus rozeti,Torpor_Tb_min_C,5.1,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Elephantulus rozeti,Elephantulus rozeti,unresolved,FALSE
+Elephantulus rozeti,Elephantulus rozeti,Torpor_Tb_min_C,5.1,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Elephantulus rozeti,Petrosaltator rozeti,synonym:NCBI,FALSE
 Elephantulus rupestris,Elephantulus rupestris,Torpor_Tb_min_C,12,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Elephantulus rupestris,Elephantulus rupestris,unresolved,FALSE
-Macroscelides proboscideus,Macroscelides proboscideus,Torpor_Tb_min_C,9.4,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Macroscelides proboscideus,Macroscelides proboscideus,unresolved,FALSE
+Macroscelides proboscideus,Macroscelides proboscideus,Torpor_Tb_min_C,9.4,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Macroscelides proboscideus,Macroscelides proboscideus,synonym:NCBI,FALSE
 Acrobates pygmaeus,Acrobates pygmaeus,Torpor_Tb_min_C,1.6,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Acrobates pygmaeus,Acrobates pygmaeus,verbatim,FALSE
 Burramys parvus,Burramys parvus,Torpor_Tb_min_C,1.8,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Burramys parvus,Burramys parvus,verbatim,FALSE
 Cercartetus concinnus,Cercartetus concinnus,Torpor_Tb_min_C,4.7,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Cercartetus concinnus,Cercartetus concinnus,verbatim,FALSE
@@ -449,17 +449,17 @@ Antechinus stuartii,Antechinus stuartii,Torpor_Tb_min_C,19.9,deg C,Ruf_Geiser_20
 Dasycercus cristicauda/blythi,Dasycercus cristicauda/blythi,Torpor_Tb_min_C,10.8,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Dasycercus cristicauda/blythi,Dasycercus cristicauda/blythi,unresolved,FALSE
 Dasykaluta rosamondae,Dasykaluta rosamondae,Torpor_Tb_min_C,21,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Dasykaluta rosamondae,Dasykaluta rosamondae,unresolved,FALSE
 Dasyuroides byrnei,Dasyuroides byrnei,Torpor_Tb_min_C,20.4,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Dasyuroides byrnei,Dasyuroides byrnei,verbatim,FALSE
-Dasyurus geoffroii,Dasyurus geoffroii,Torpor_Tb_min_C,23.1,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Dasyurus geoffroii,Dasyurus geoffroii,unresolved,FALSE
+Dasyurus geoffroii,Dasyurus geoffroii,Torpor_Tb_min_C,23.1,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Dasyurus geoffroii,Dasyurus geoffroii,verbatim,FALSE
 Dasyurus hallucatus,Dasyurus hallucatus,Torpor_Tb_min_C,28.4,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Dasyurus hallucatus,Dasyurus hallucatus,verbatim,FALSE
 Dasyurus viverrinus,Dasyurus viverrinus,Torpor_Tb_min_C,25,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Dasyurus viverrinus,Dasyurus viverrinus,verbatim,FALSE
-Myrmecobius fasciatus,Myrmecobius fasciatus,Torpor_Tb_min_C,19.1,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Myrmecobius fasciatus,Myrmecobius fasciatus,unresolved,FALSE
+Myrmecobius fasciatus,Myrmecobius fasciatus,Torpor_Tb_min_C,19.1,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Myrmecobius fasciatus,Myrmecobius fasciatus,synonym:NCBI,FALSE
 Ningaui yvonnae,Ningaui yvonnae,Torpor_Tb_min_C,15.3,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Ningaui yvonnae,Ningaui yvonnae,unresolved,FALSE
-Planigale gilesi,Planigale gilesi,Torpor_Tb_min_C,14.3,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Planigale gilesi,Planigale gilesi,unresolved,FALSE
+Planigale gilesi,Planigale gilesi,Torpor_Tb_min_C,14.3,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Planigale gilesi,Planigale gilesi,synonym:NCBI,FALSE
 Planigale maculata,Planigale maculata,Torpor_Tb_min_C,19.6,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Planigale maculata,Planigale maculata,verbatim,FALSE
 Pseudantechinus macdonnellensis,Pseudantechinus macdonnellensis,Torpor_Tb_min_C,15.9,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Pseudantechinus macdonnellensis,Pseudantechinus macdonnellensis,unresolved,FALSE
 Sminthopsis crassicaudata,Sminthopsis crassicaudata,Torpor_Tb_min_C,10.8,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Sminthopsis crassicaudata,Sminthopsis crassicaudata,verbatim,FALSE
 Sminthopsis douglasi,Sminthopsis douglasi,Torpor_Tb_min_C,16.9,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Sminthopsis douglasi,Sminthopsis douglasi,unresolved,FALSE
-Sminthopsis macroura,Sminthopsis macroura,Torpor_Tb_min_C,11.3,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Sminthopsis macroura,Sminthopsis macroura,unresolved,FALSE
+Sminthopsis macroura,Sminthopsis macroura,Torpor_Tb_min_C,11.3,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Sminthopsis macroura,Sminthopsis macroura,verbatim,FALSE
 Sminthopsis murina,Sminthopsis murina,Torpor_Tb_min_C,15,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Sminthopsis murina,Sminthopsis murina,verbatim,FALSE
 Gracilinanus agilis,Gracilinanus agilis,Torpor_Tb_min_C,20,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Gracilinanus agilis,Gracilinanus agilis,unresolved,FALSE
 Marmosa microtarsus,Marmosa microtarsus,Torpor_Tb_min_C,16,deg C,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Marmosa microtarsus,Marmosa microtarsus,unresolved,FALSE
@@ -500,36 +500,36 @@ Cricetus cricetus,Cricetus cricetus,Torpor_bout_max_h,160,hours,Ruf_Geiser_2015_
 Cynomys leucurus,Cynomys leucurus,Torpor_bout_max_h,199,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Cynomys leucurus,Cynomys leucurus,verbatim,FALSE
 Cynomys ludovicianus,Cynomys ludovicianus,Torpor_bout_max_h,214,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Cynomys ludovicianus,Cynomys ludovicianus,verbatim,FALSE
 Cynomys parvidens,Cynomys parvidens,Torpor_bout_max_h,418,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Cynomys parvidens,Cynomys parvidens,unresolved,FALSE
-Eliomys quercinus,Eliomys quercinus,Torpor_bout_max_h,480,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Eliomys quercinus,Eliomys quercinus,unresolved,FALSE
+Eliomys quercinus,Eliomys quercinus,Torpor_bout_max_h,480,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Eliomys quercinus,Eliomys quercinus,synonym:NCBI,FALSE
 Gerbillus pusillus,Gerbillus pusillus,Torpor_bout_max_h,20,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Gerbillus pusillus,Gerbillus pusillus,unresolved,FALSE
-Glirulus japonicus,Glirulus japonicus,Torpor_bout_max_h,380,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Glirulus japonicus,Glirulus japonicus,unresolved,FALSE
+Glirulus japonicus,Glirulus japonicus,Torpor_bout_max_h,380,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Glirulus japonicus,Glirulus japonicus,synonym:NCBI,FALSE
 Glis glis,Glis glis,Torpor_bout_max_h,977,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Glis glis,Myoxus glis,synonym:legacy_key,FALSE
-Graphiurus murinus,Graphiurus murinus,Torpor_bout_max_h,192,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Graphiurus murinus,Graphiurus murinus,unresolved,FALSE
+Graphiurus murinus,Graphiurus murinus,Torpor_bout_max_h,192,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Graphiurus murinus,Graphiurus murinus,synonym:NCBI,FALSE
 Graphiurus ocularis,Graphiurus ocularis,Torpor_bout_max_h,312,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Graphiurus ocularis,Graphiurus ocularis,unresolved,FALSE
-Ictidomys tridecemlineatus,Ictidomys tridecemlineatus,Torpor_bout_max_h,456,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Ictidomys tridecemlineatus,Ictidomys tridecemlineatus,unresolved,FALSE
-Jaculus orientalis,Jaculus orientalis,Torpor_bout_max_h,158,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Jaculus orientalis,Jaculus orientalis,unresolved,FALSE
+Ictidomys tridecemlineatus,Ictidomys tridecemlineatus,Torpor_bout_max_h,456,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Ictidomys tridecemlineatus,Spermophilus tridecemlineatus,synonym:NCBI,FALSE
+Jaculus orientalis,Jaculus orientalis,Torpor_bout_max_h,158,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Jaculus orientalis,Jaculus orientalis,synonym:NCBI,FALSE
 Marmota broweri,Marmota broweri,Torpor_bout_max_h,480,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Marmota broweri,Marmota broweri,unresolved,FALSE
 Marmota flaviventris,Marmota flaviventris,Torpor_bout_max_h,360,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Marmota flaviventris,Marmota flaviventris,verbatim,FALSE
-Marmota marmota,Marmota marmota,Torpor_bout_max_h,353,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Marmota marmota,Marmota marmota,unresolved,FALSE
-Marmota monax,Marmota monax,Torpor_bout_max_h,185,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Marmota monax,Marmota monax,unresolved,FALSE
+Marmota marmota,Marmota marmota,Torpor_bout_max_h,353,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Marmota marmota,Marmota marmota,synonym:NCBI,FALSE
+Marmota monax,Marmota monax,Torpor_bout_max_h,185,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Marmota monax,Marmota monax,synonym:NCBI,FALSE
 Mesocricetus auratus,Mesocricetus auratus,Torpor_bout_max_h,264,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Mesocricetus auratus,Mesocricetus auratus,verbatim,FALSE
-Mesocricetus brandti,Mesocricetus brandti,Torpor_bout_max_h,144,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Mesocricetus brandti,Mesocricetus brandti,unresolved,FALSE
+Mesocricetus brandti,Mesocricetus brandti,Torpor_bout_max_h,144,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Mesocricetus brandti,Mesocricetus brandti,synonym:NCBI,FALSE
 Microdipodops pallidus,Microdipodops pallidus,Torpor_bout_max_h,84,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Microdipodops pallidus,Microdipodops pallidus,unresolved,FALSE
 Mus musculus,Mus musculus,Torpor_bout_max_h,11,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Mus musculus,Mus musculus,verbatim,FALSE
-Muscardinus avellanarius,Muscardinus avellanarius,Torpor_bout_max_h,624,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Muscardinus avellanarius,Muscardinus avellanarius,unresolved,FALSE
+Muscardinus avellanarius,Muscardinus avellanarius,Torpor_bout_max_h,624,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Muscardinus avellanarius,Muscardinus avellanarius,synonym:NCBI,FALSE
 Perognathus californicus,Perognathus californicus,Torpor_bout_max_h,15.4,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Perognathus californicus,Perognathus californicus,unresolved,FALSE
 Perognathus fasciatus,Perognathus fasciatus,Torpor_bout_max_h,17,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Perognathus fasciatus,Perognathus fasciatus,unresolved,FALSE
 Perognathus longimembris,Perognathus longimembris,Torpor_bout_max_h,112,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Perognathus longimembris,Perognathus longimembris,verbatim,FALSE
-Perognathus parvus,Perognathus parvus,Torpor_bout_max_h,192,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Perognathus parvus,Perognathus parvus,unresolved,FALSE
-Peromyscus boylii,Peromyscus boylii,Torpor_bout_max_h,8.8,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Peromyscus boylii,Peromyscus boylii,unresolved,FALSE
-Peromyscus crinitus,Peromyscus crinitus,Torpor_bout_max_h,9.5,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Peromyscus crinitus,Peromyscus crinitus,unresolved,FALSE
+Perognathus parvus,Perognathus parvus,Torpor_bout_max_h,192,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Perognathus parvus,Perognathus parvus,synonym:NCBI,FALSE
+Peromyscus boylii,Peromyscus boylii,Torpor_bout_max_h,8.8,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Peromyscus boylii,Peromyscus boylii,synonym:NCBI,FALSE
+Peromyscus crinitus,Peromyscus crinitus,Torpor_bout_max_h,9.5,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Peromyscus crinitus,Peromyscus crinitus,synonym:NCBI,FALSE
 Peromyscus eremicus,Peromyscus eremicus,Torpor_bout_max_h,11.2,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Peromyscus eremicus,Peromyscus eremicus,verbatim,FALSE
 Peromyscus leucopus,Peromyscus leucopus,Torpor_bout_max_h,13,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Peromyscus leucopus,Peromyscus leucopus,verbatim,FALSE
 Peromyscus maniculatus,Peromyscus maniculatus,Torpor_bout_max_h,10.8,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Peromyscus maniculatus,Peromyscus maniculatus,hub,FALSE
 Phodopus sungorus,Phodopus sungorus,Torpor_bout_max_h,13.8,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Phodopus sungorus,Phodopus sungorus,verbatim,FALSE
 Phyllotis darwini,Phyllotis darwini,Torpor_bout_max_h,12,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Phyllotis darwini,Phyllotis darwinii,spelling,FALSE
-Reithrodontomys megalotis,Reithrodontomys megalotis,Torpor_bout_max_h,10,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Reithrodontomys megalotis,Reithrodontomys megalotis,unresolved,FALSE
-Saccostomus campestris,Saccostomus campestris,Torpor_bout_max_h,2.7,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Saccostomus campestris,Saccostomus campestris,unresolved,FALSE
+Reithrodontomys megalotis,Reithrodontomys megalotis,Torpor_bout_max_h,10,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Reithrodontomys megalotis,Reithrodontomys megalotis,synonym:NCBI,FALSE
+Saccostomus campestris,Saccostomus campestris,Torpor_bout_max_h,2.7,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Saccostomus campestris,Saccostomus campestris,synonym:NCBI,FALSE
 Spermophilus armatus,Spermophilus armatus,Torpor_bout_max_h,576,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Spermophilus armatus,Spermophilus armatus,unresolved,FALSE
 Spermophilus beecheyi,Spermophilus beecheyi,Torpor_bout_max_h,72,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Spermophilus beecheyi,Otospermophilus beecheyi,synonym:NCBI,FALSE
 Spermophilus beldingi,Spermophilus beldingi,Torpor_bout_max_h,400,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Spermophilus beldingi,Spermophilus beldingi,unresolved,FALSE
@@ -546,9 +546,9 @@ Spermophilus tereticaudus,Spermophilus tereticaudus,Torpor_bout_max_h,120,hours,
 Spermophilus variegatus,Spermophilus variegatus,Torpor_bout_max_h,172,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Spermophilus variegatus,Spermophilus variegatus,unresolved,FALSE
 Spermophilus xanthoprymnus,Spermophilus xanthoprymnus,Torpor_bout_max_h,468,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Spermophilus xanthoprymnus,Spermophilus xanthoprymnus,unresolved,FALSE
 Steatomys pratensis,Steatomys pratensis,Torpor_bout_max_h,16.9,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Steatomys pratensis,Steatomys pratensis,unresolved,FALSE
-Tamias amoenus,Tamias amoenus,Torpor_bout_max_h,312,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Tamias amoenus,Tamias amoenus,unresolved,FALSE
+Tamias amoenus,Tamias amoenus,Torpor_bout_max_h,312,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Tamias amoenus,Tamias amoenus,hub,FALSE
 Tamias striatus,Tamias striatus,Torpor_bout_max_h,150,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Tamias striatus,Tamias striatus,verbatim,FALSE
-Zapus hudsonius,Zapus hudsonius,Torpor_bout_max_h,451,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Zapus hudsonius,Zapus hudsonius,unresolved,FALSE
+Zapus hudsonius,Zapus hudsonius,Torpor_bout_max_h,451,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Zapus hudsonius,Zapus hudsonius,synonym:NCBI,FALSE
 Zapus princeps,Zapus princeps,Torpor_bout_max_h,650,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Zapus princeps,Zapus princeps,unresolved,FALSE
 Cheirogaleus crossleyi,Cheirogaleus crossleyi,Torpor_bout_max_h,168,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Cheirogaleus crossleyi,Cheirogaleus crossleyi,unresolved,FALSE
 Cheirogaleus medius,Cheirogaleus medius,Torpor_bout_max_h,1680,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Cheirogaleus medius,Cheirogaleus medius,verbatim,FALSE
@@ -560,11 +560,11 @@ Microcebus ravelobensis,Microcebus ravelobensis,Torpor_bout_max_h,7,hours,Ruf_Ge
 Mephitis mephitis,Mephitis mephitis,Torpor_bout_max_h,20,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Mephitis mephitis,Mephitis mephitis,verbatim,FALSE
 Taxidea taxus,Taxidea taxus,Torpor_bout_max_h,22,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Taxidea taxus,Taxidea taxus,verbatim,FALSE
 Eptesicus fuscus,Eptesicus fuscus,Torpor_bout_max_h,600,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Eptesicus fuscus,Eptesicus fuscus,verbatim,FALSE
-Glossophaga soricina,Glossophaga soricina,Torpor_bout_max_h,17.5,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Glossophaga soricina,Glossophaga soricina,unresolved,FALSE
+Glossophaga soricina,Glossophaga soricina,Torpor_bout_max_h,17.5,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Glossophaga soricina,Glossophaga soricina,synonym:NCBI,FALSE
 Hipposideros terasensis,Hipposideros terasensis,Torpor_bout_max_h,456,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Hipposideros terasensis,Hipposideros terasensis,unresolved,FALSE
-Lasiurus borealis,Lasiurus borealis,Torpor_bout_max_h,260,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Lasiurus borealis,Lasiurus borealis,unresolved,FALSE
-Lasiurus cinereus,Lasiurus cinereus,Torpor_bout_max_h,135,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Lasiurus cinereus,Lasiurus cinereus,unresolved,FALSE
-Macroglossus minimus,Macroglossus minimus,Torpor_bout_max_h,9.5,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Macroglossus minimus,Macroglossus minimus,unresolved,FALSE
+Lasiurus borealis,Lasiurus borealis,Torpor_bout_max_h,260,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Lasiurus borealis,Lasiurus borealis,verbatim,FALSE
+Lasiurus cinereus,Lasiurus cinereus,Torpor_bout_max_h,135,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Lasiurus cinereus,Lasiurus cinereus,hub,FALSE
+Macroglossus minimus,Macroglossus minimus,Torpor_bout_max_h,9.5,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Macroglossus minimus,Macroglossus minimus,verbatim,FALSE
 Miniopterus schreibersii,Miniopterus schreibersii,Torpor_bout_max_h,288,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Miniopterus schreibersii,Miniopterus schreibersii,verbatim,FALSE
 Myotis adversus,Myotis adversus,Torpor_bout_max_h,192,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Myotis adversus,Myotis adversus,unresolved,FALSE
 Myotis lucifugus,Myotis lucifugus,Torpor_bout_max_h,1152,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Myotis lucifugus,Myotis lucifugus,verbatim,FALSE
@@ -576,9 +576,9 @@ Nyctophilus gouldi,Nyctophilus gouldi,Torpor_bout_max_h,259,hours,Ruf_Geiser_201
 Pipistrellus subflavus,Pipistrellus subflavus,Torpor_bout_max_h,1800,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Pipistrellus subflavus,Pipistrellus subflavus,unresolved,FALSE
 Rhinolophus ferrumequinum,Rhinolophus ferrumequinum,Torpor_bout_max_h,432,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Rhinolophus ferrumequinum,Rhinolophus ferrumequinum,verbatim,FALSE
 Rhinolophus hipposideros,Rhinolophus hipposideros,Torpor_bout_max_h,2064,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Rhinolophus hipposideros,Rhinolophus hipposideros,verbatim,FALSE
-Scotophilus dinganii,Scotophilus dinganii,Torpor_bout_max_h,19,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Scotophilus dinganii,Scotophilus dinganii,unresolved,FALSE
+Scotophilus dinganii,Scotophilus dinganii,Torpor_bout_max_h,19,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Scotophilus dinganii,Scotophilus dinganii,verbatim,FALSE
 Scotophilus mhlanganii,Scotophilus mhlanganii,Torpor_bout_max_h,18.5,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Scotophilus mhlanganii,Scotophilus mhlanganii,unresolved,FALSE
-Syconycteris australis,Syconycteris australis,Torpor_bout_max_h,8.2,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Syconycteris australis,Syconycteris australis,unresolved,FALSE
+Syconycteris australis,Syconycteris australis,Torpor_bout_max_h,8.2,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Syconycteris australis,Syconycteris australis,verbatim,FALSE
 Tadarida aegyptiaca,Tadarida aegyptiaca,Torpor_bout_max_h,228,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Tadarida aegyptiaca,Tadarida aegyptiaca,unresolved,FALSE
 Tadarida teniotis,Tadarida teniotis,Torpor_bout_max_h,192,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Tadarida teniotis,Tadarida teniotis,unresolved,FALSE
 Atelerix algirus,Atelerix algirus,Torpor_bout_max_h,168,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Atelerix algirus,Atelerix algirus,verbatim,FALSE
@@ -587,16 +587,16 @@ Crocidura russula,Crocidura russula,Torpor_bout_max_h,3,hours,Ruf_Geiser_2015_Ta
 Erinaceus europaeus,Erinaceus europaeus,Torpor_bout_max_h,288,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Erinaceus europaeus,Erinaceus europaeus,verbatim,FALSE
 Sorex sinuosus,Sorex sinuosus,Torpor_bout_max_h,1,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Sorex sinuosus,Sorex sinuosus,unresolved,FALSE
 Suncus etruscus,Suncus etruscus,Torpor_bout_max_h,7.6,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Suncus etruscus,Suncus etruscus,verbatim,FALSE
-Zaedyus pichiy,Zaedyus pichiy,Torpor_bout_max_h,112,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Zaedyus pichiy,Zaedyus pichiy,unresolved,FALSE
+Zaedyus pichiy,Zaedyus pichiy,Torpor_bout_max_h,112,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Zaedyus pichiy,Zaedyus pichiy,synonym:NCBI,FALSE
 Amblysomus hottentotus,Amblysomus hottentotus,Torpor_bout_max_h,96,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Amblysomus hottentotus,Amblysomus hottentotus,verbatim,FALSE
 Echinops telfairi,Echinops telfairi,Torpor_bout_max_h,264,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Echinops telfairi,Echinops telfairi,verbatim,FALSE
 Setifer setosus,Setifer setosus,Torpor_bout_max_h,3600,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Setifer setosus,Setifer setosus,verbatim,FALSE
 Tenrec ecaudatus,Tenrec ecaudatus,Torpor_bout_max_h,6480,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Tenrec ecaudatus,Tenrec ecaudatus,verbatim,FALSE
 Elephantulus edwardii,Elephantulus edwardii,Torpor_bout_max_h,44,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Elephantulus edwardii,Elephantulus edwardii,unresolved,FALSE
 Elephantulus myurus,Elephantulus myurus,Torpor_bout_max_h,39,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Elephantulus myurus,Elephantulus myurus,verbatim,FALSE
-Elephantulus rozeti,Elephantulus rozeti,Torpor_bout_max_h,20.1,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Elephantulus rozeti,Elephantulus rozeti,unresolved,FALSE
+Elephantulus rozeti,Elephantulus rozeti,Torpor_bout_max_h,20.1,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Elephantulus rozeti,Petrosaltator rozeti,synonym:NCBI,FALSE
 Elephantulus rupestris,Elephantulus rupestris,Torpor_bout_max_h,12,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Elephantulus rupestris,Elephantulus rupestris,unresolved,FALSE
-Macroscelides proboscideus,Macroscelides proboscideus,Torpor_bout_max_h,18,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Macroscelides proboscideus,Macroscelides proboscideus,unresolved,FALSE
+Macroscelides proboscideus,Macroscelides proboscideus,Torpor_bout_max_h,18,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Macroscelides proboscideus,Macroscelides proboscideus,synonym:NCBI,FALSE
 Acrobates pygmaeus,Acrobates pygmaeus,Torpor_bout_max_h,192,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Acrobates pygmaeus,Acrobates pygmaeus,verbatim,FALSE
 Burramys parvus,Burramys parvus,Torpor_bout_max_h,480,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Burramys parvus,Burramys parvus,verbatim,FALSE
 Cercartetus concinnus,Cercartetus concinnus,Torpor_bout_max_h,264,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Cercartetus concinnus,Cercartetus concinnus,verbatim,FALSE
@@ -611,16 +611,16 @@ Antechinus stuartii,Antechinus stuartii,Torpor_bout_max_h,9,hours,Ruf_Geiser_201
 Dasycercus cristicauda/blythi,Dasycercus cristicauda/blythi,Torpor_bout_max_h,20.8,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Dasycercus cristicauda/blythi,Dasycercus cristicauda/blythi,unresolved,FALSE
 Dasykaluta rosamondae,Dasykaluta rosamondae,Torpor_bout_max_h,16.4,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Dasykaluta rosamondae,Dasykaluta rosamondae,unresolved,FALSE
 Dasyuroides byrnei,Dasyuroides byrnei,Torpor_bout_max_h,7.5,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Dasyuroides byrnei,Dasyuroides byrnei,verbatim,FALSE
-Myrmecobius fasciatus,Myrmecobius fasciatus,Torpor_bout_max_h,15.3,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Myrmecobius fasciatus,Myrmecobius fasciatus,unresolved,FALSE
+Myrmecobius fasciatus,Myrmecobius fasciatus,Torpor_bout_max_h,15.3,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Myrmecobius fasciatus,Myrmecobius fasciatus,synonym:NCBI,FALSE
 Ningaui yvonnae,Ningaui yvonnae,Torpor_bout_max_h,12.3,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Ningaui yvonnae,Ningaui yvonnae,unresolved,FALSE
-Planigale gilesi,Planigale gilesi,Torpor_bout_max_h,15.3,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Planigale gilesi,Planigale gilesi,unresolved,FALSE
+Planigale gilesi,Planigale gilesi,Torpor_bout_max_h,15.3,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Planigale gilesi,Planigale gilesi,synonym:NCBI,FALSE
 Planigale ingrami,Planigale ingrami,Torpor_bout_max_h,4,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Planigale ingrami,Planigale ingrami,verbatim,FALSE
 Planigale maculata,Planigale maculata,Torpor_bout_max_h,1.8,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Planigale maculata,Planigale maculata,verbatim,FALSE
-Planigale tenuirostris,Planigale tenuirostris,Torpor_bout_max_h,4,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Planigale tenuirostris,Planigale tenuirostris,unresolved,FALSE
+Planigale tenuirostris,Planigale tenuirostris,Torpor_bout_max_h,4,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Planigale tenuirostris,Planigale tenuirostris,synonym:NCBI,FALSE
 Pseudantechinus macdonnellensis,Pseudantechinus macdonnellensis,Torpor_bout_max_h,14.3,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Pseudantechinus macdonnellensis,Pseudantechinus macdonnellensis,unresolved,FALSE
 Sminthopsis crassicaudata,Sminthopsis crassicaudata,Torpor_bout_max_h,19.5,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Sminthopsis crassicaudata,Sminthopsis crassicaudata,verbatim,FALSE
 Sminthopsis douglasi,Sminthopsis douglasi,Torpor_bout_max_h,8.8,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Sminthopsis douglasi,Sminthopsis douglasi,unresolved,FALSE
-Sminthopsis macroura,Sminthopsis macroura,Torpor_bout_max_h,25.9,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Sminthopsis macroura,Sminthopsis macroura,unresolved,FALSE
+Sminthopsis macroura,Sminthopsis macroura,Torpor_bout_max_h,25.9,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Sminthopsis macroura,Sminthopsis macroura,verbatim,FALSE
 Sminthopsis murina,Sminthopsis murina,Torpor_bout_max_h,8,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Sminthopsis murina,Sminthopsis murina,verbatim,FALSE
 Marmosa microtarsus,Marmosa microtarsus,Torpor_bout_max_h,9,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Marmosa microtarsus,Marmosa microtarsus,unresolved,FALSE
 Thylamys elegans,Thylamys elegans,Torpor_bout_max_h,20,hours,Ruf_Geiser_2015_Table1,RufGeiser_2015,Table,high,torpor,Thylamys elegans,Thylamys elegans,verbatim,FALSE

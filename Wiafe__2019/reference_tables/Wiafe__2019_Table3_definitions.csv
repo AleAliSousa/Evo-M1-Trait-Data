@@ -1,0 +1,8 @@
+Code,Definition,role
+common_name_printed,Common name exactly as printed in the first column of Table 3 (printed p. 13528).,context
+Species,Accepted binomial resolved from the printed common name through _keys/General/species_key.csv (source_publication = Wiafe__2019); the paper prints the binomials beside these common names in its abstract.,context
+sector,"Park sector heading printed in the Table 3 band header (Eastern, Southern, Western, Northern); Mole National Park, Ghana.",context
+group_size_mean,"Mean number of individuals per observed group in that sector, as printed. A printed 0 marks a sector in which the species was not recorded; it is not a zero-sized social group. Ten-minute observations of groups encountered on 40 five-kilometre transects; no adult-only restriction stated. Population-specific, not a species mean.",primary
+group_size_SE,Standard error printed beside the sector mean. Printed 0 accompanies the unobserved-sector zeros.,primary
+range_printed,"Range of group sizes as printed (en dash), unparsed.",primary
+source_location,Locator for the printed table.,context

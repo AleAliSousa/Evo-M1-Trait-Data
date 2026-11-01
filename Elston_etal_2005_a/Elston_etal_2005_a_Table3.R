@@ -120,6 +120,10 @@ if (file.exists(file.path(root, "__ReadMe.xlsx")) && requireNamespace("readxl", 
   filecodes <- readxl::read_excel(file.path(root, "__ReadMe.xlsx"), sheet = "Sheet1", trim_ws = FALSE)
   required <- c("Item name", "Item encoded", "Item number", "DOI (or Alt)",
                 "Citation (APA 7th-Annotated)", "DOI if different from article or doi Alt ")
+  ## Registry headers have gained and lost trailing spaces over time (the column-C header lost its
+  ## trailing space before 2026-10-31), so match on trimmed names and address the columns the same way.
+  names(filecodes) <- trimws(names(filecodes))
+  required <- trimws(required)
   if (!all(required %in% names(filecodes))) stop("Current registry headers are incomplete")
   matches <- which(!is.na(filecodes[["Item name"]]) & filecodes[["Item name"]] == item_name)
   if (length(matches) != 1L) stop("Current exact Item name must match once")
@@ -129,7 +133,7 @@ if (file.exists(file.path(root, "__ReadMe.xlsx")) && requireNamespace("readxl", 
   registered.doi <- as.character(filecodes[["DOI (or Alt)"]][matches])
   registered.citation <- as.character(filecodes[["Citation (APA 7th-Annotated)"]][matches])
   registered.item <- as.character(filecodes[["Item number"]][matches])
-  override <- as.character(filecodes[["DOI if different from article or doi Alt "]][matches])
+  override <- as.character(filecodes[["DOI if different from article or doi Alt"]][matches])
   registry.matches.source <- isTRUE(!is.na(item_encoded) && nzchar(item_encoded) &&
     !grepl("_$|[/\\\\]", item_encoded) && identical(item_encoded, expected.encoded) &&
     !is.na(registered.doi) && identical(utils::URLdecode(registered.doi), source.doi) &&
@@ -148,9 +152,22 @@ if (identical(getOption("evom1.publish", FALSE), TRUE)) {
   public <- file.path(root, "__Public", "comparative-data")
   if (!dir.exists(public)) stop("Canonical public directory not mounted")
   destination <- file.path(public, paste0(item_encoded, ".tsv"))
-  if (file.exists(destination)) stop("Existing public TSV requires owner reconciliation; this item reader never overwrites it")
-  utils::write.table(final.dataframe, destination, sep = "\t", row.names = FALSE,
-                     quote = FALSE, na = "", fileEncoding = "UTF-8")
+  ## Owner reconciliation is for a real DIVERGENCE: a rebuild that would write the identical file
+  ## is a no-op, so compare first (2026-10-31) and never overwrite a published TSV that differs.
+  if (file.exists(destination)) {
+    tmp.destination <- tempfile(fileext = ".tsv")
+    utils::write.table(final.dataframe, tmp.destination, sep = "\t", row.names = FALSE,
+                       quote = FALSE, na = "", fileEncoding = "UTF-8")
+    identical.to.published <- identical(readLines(destination, warn = FALSE),
+                                        readLines(tmp.destination, warn = FALSE))
+    unlink(tmp.destination)
+    if (!identical.to.published)
+      stop("Existing public TSV requires owner reconciliation; this item reader never overwrites it")
+    message("Public TSV already identical to this build; left untouched: ", destination)
+  } else {
+    utils::write.table(final.dataframe, destination, sep = "\t", row.names = FALSE,
+                       quote = FALSE, na = "", fileEncoding = "UTF-8")
+  }
 } else {
   message("Analysis CSV only. Public TSV WITHHELD; no registry, keys or merge updates.")
 }

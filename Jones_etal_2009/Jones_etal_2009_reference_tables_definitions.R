@@ -96,9 +96,24 @@ defs <- bind_rows(
   D(R9, "count", "Name of a summary count printed by Jones_etal_2009_WR05_vs_WR93_consistency.R"),
   D(R9, "value", "Its value for the current run", "count")
 )
+## The item builds (Jones_etal_2009_PanTHERIA1-0WR*Aug2008.txt.R) write a per-item references file
+## next to these: one row per reference number actually cited by that taxonomy's data file, in the
+## house ref_key schema (build-dataset-item, "per-row source citations are data"). The rows are
+## generated for whichever of those files exist, so the definitions follow the item builds.
+item_refs <- sub("\\.csv$", "", basename(list.files(out_dir, pattern = "\\.txt_references\\.csv$")))
+for (ir in item_refs) defs <- bind_rows(defs,
+  D(ir, "ref_key", "Reference index number exactly as the data file's References column prints it; one row per cited work", "integer",
+    note="multi-citations are split on '; ' in the data column and bind back on this key"),
+  D(ir, "cited_in_column", "Name of the data-file column the key was read from (References)"),
+  D(ir, "citation", "Full bibliographic entry verbatim for that number, from Jones_etal_2009_references"),
+  D(ir, "note", "Printing problems kept verbatim: truncated bibliography entries, and fused tokens decoded via Jones_etal_2009_References_malformed_tokens"))
+
 ## every column of every non-definitions CSV in reference_tables/ must have exactly one row
 csvs <- list.files(out_dir, pattern="\\.csv$", full.names=TRUE)
 csvs <- csvs[!grepl("_definitions\\.csv$", csvs)]
+## A table that carries its OWN <item>_definitions.csv documents itself (e.g.
+## Jones_etal_2009_references_availability); this master file covers the rest.
+csvs <- csvs[!file.exists(sub("\\.csv$", "_definitions.csv", csvs))]
 if(!length(csvs)) stop("No CSVs found in reference_tables/.", call.=FALSE)
 for(f in csvs) {
   item <- sub("\\.csv$", "", basename(f))

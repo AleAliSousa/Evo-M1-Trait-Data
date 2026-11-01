@@ -56,12 +56,12 @@ Saimiri sciureus,GI,1.55,Lewitus_etal_2014_TableS1,Lewitus_2014,TableS1,Zilles_G
 Varecia variegata,GI,1.315,Lewitus_etal_2014_TableS1,Lewitus_2014,TableS1,Zilles_GI_lineage,Varecia variegata,Varecia variegata,verbatim,FALSE
 Cynocephalus volans,GI,1.343,Lewitus_etal_2014_TableS1,Lewitus_2014,TableS1,Zilles_GI_lineage,Cynocephalus volans,Cynocephalus volans,verbatim,FALSE
 Tupaia glis,GI,1.062,Lewitus_etal_2014_TableS1,Lewitus_2014,TableS1,Zilles_GI_lineage,Tupaia glis,Tupaia glis,verbatim,FALSE
-Ovis aries,GI,1.94,Lewitus_etal_2014_TableS1,Lewitus_2014,TableS1,Zilles_GI_lineage,Ovis aries,Ovis aries,hub,FALSE
+Ovis aries,GI,1.94,Lewitus_etal_2014_TableS1,Lewitus_2014,TableS1,Zilles_GI_lineage,Ovis aries,Ovis aries,verbatim,FALSE
 Capra hircus domestica,GI,2.278,Lewitus_etal_2014_TableS1,Lewitus_2014,TableS1,Zilles_GI_lineage,Capra hircus domestica,Capra hircus domestica,verbatim,FALSE
 Bos taurus indicus,GI,2.53,Lewitus_etal_2014_TableS1,Lewitus_2014,TableS1,Zilles_GI_lineage,Bos taurus indicus,Bos indicus,synonym:NCBI,FALSE
 Odocoileus virginianus,GI,2.27,Lewitus_etal_2014_TableS1,Lewitus_2014,TableS1,Zilles_GI_lineage,Odocoileus virginiatus,Odocoileus virginiatus,unresolved,FALSE
 Phocoena phocoena,GI,4.13,Lewitus_etal_2014_TableS1,Lewitus_2014,TableS1,Zilles_GI_lineage,Phocoena phocoena,Phocoena phocoena,verbatim,FALSE
-Delphinus delphis,GI,3.99,Lewitus_etal_2014_TableS1,Lewitus_2014,TableS1,Zilles_GI_lineage,Delphinus delphis,Delphinus delphis,unresolved,FALSE
+Delphinus delphis,GI,3.99,Lewitus_etal_2014_TableS1,Lewitus_2014,TableS1,Zilles_GI_lineage,Delphinus delphis,Delphinus delphis,synonym:NCBI,FALSE
 Tursiops truncatus,GI,4.76,Lewitus_etal_2014_TableS1,Lewitus_2014,TableS1,Zilles_GI_lineage,Tursiops truncatus,Tursiops truncatus,verbatim,FALSE
 Pseudorca crassidens,GI,4.97,Lewitus_etal_2014_TableS1,Lewitus_2014,TableS1,Zilles_GI_lineage,Pseudorca crassidens,Pseudorca crassidens,hub,FALSE
 Globicephala macrorhynchus,GI,5.24,Lewitus_etal_2014_TableS1,Lewitus_2014,TableS1,Zilles_GI_lineage,Globicephala macrorhynchus,Globicephala macrorhynchus,hub,FALSE
@@ -126,7 +126,7 @@ Papio cynocephalus,GI,1.985,Lewitus_etal_2014_TableS8,Lewitus_2014,TableS8,Zille
 Pongo pygmaeus,GI,2.21,Lewitus_etal_2014_TableS8,Lewitus_2014,TableS8,Zilles_GI_lineage,Pongo pygmaeus,Pongo pygmaeus,hub,FALSE
 Gorilla gorilla,GI,2.26,Lewitus_etal_2014_TableS8,Lewitus_2014,TableS8,Zilles_GI_lineage,Gorilla gorilla,Gorilla gorilla,hub,FALSE
 Homo sapiens,GI,2.56,Lewitus_etal_2014_TableS8,Lewitus_2014,TableS8,Zilles_GI_lineage,Homo sapiens,Homo sapiens,verbatim,FALSE
-Zaglossus bruijni,GI,1.51,Zilles_etal_2013_Table1,Zilles_2013,[7],Zilles_GI_lineage,Zaglossus bruijni,Zaglossus bruijni,unresolved,FALSE
+Zaglossus bruijni,GI,1.51,Zilles_etal_2013_Table1,Zilles_2013,[7],Zilles_GI_lineage,Zaglossus bruijni,Zaglossus bruijnii,synonym:NCBI,FALSE
 Marmosa sp.,GI,1.01,Zilles_etal_2013_Table1,Zilles_2013,[5],Zilles_GI_lineage,Marmosa sp.,Marmosa sp.,verbatim,FALSE
 Didelphis virginiana,GI,1.11,Zilles_etal_2013_Table1,Zilles_2013,[5],Zilles_GI_lineage,Didelphis virginiana,Didelphis virginiana,verbatim,FALSE
 Sarcophilus harrisii,GI,1.33,Zilles_etal_2013_Table1,Zilles_2013,[7],Zilles_GI_lineage,Sarcophilus harrisii,Sarcophilus harrisii,verbatim,FALSE
@@ -169,12 +169,12 @@ Odocoileus virginianus,GI,2.27,Zilles_etal_2013_Table1,Zilles_2013,[4],Zilles_GI
 Bos taurus,GI,2.54,Zilles_etal_2013_Table1,Zilles_2013,[7],Zilles_GI_lineage,Bos taurus,Bos taurus,verbatim,FALSE
 Bos taurus,GI,2.49,Zilles_etal_2013_Table1,Zilles_2013,[87],Zilles_GI_lineage,Bos taurus,Bos taurus,verbatim,FALSE
 Bos taurus indicus,GI,2.53,Zilles_etal_2013_Table1,Zilles_2013,[4],Zilles_GI_lineage,Bos taurus indicus,Bos indicus,synonym:NCBI,FALSE
-Ovis aries,GI,2.29,Zilles_etal_2013_Table1,Zilles_2013,[7],Zilles_GI_lineage,Ovis aries,Ovis aries,hub,FALSE
-Ovis aries,GI,1.94,Zilles_etal_2013_Table1,Zilles_2013,[87],Zilles_GI_lineage,Ovis aries,Ovis aries,hub,FALSE
+Ovis aries,GI,2.29,Zilles_etal_2013_Table1,Zilles_2013,[7],Zilles_GI_lineage,Ovis aries,Ovis aries,verbatim,FALSE
+Ovis aries,GI,1.94,Zilles_etal_2013_Table1,Zilles_2013,[87],Zilles_GI_lineage,Ovis aries,Ovis aries,verbatim,FALSE
 Capra hircus domestica,GI,1.81,Zilles_etal_2013_Table1,Zilles_2013,[7],Zilles_GI_lineage,Capra aegagrus hircus,Capra aegagrus hircus,hub,FALSE
 Phocoena phocoena,GI,3,Zilles_etal_2013_Table1,Zilles_2013,[7],Zilles_GI_lineage,Phocoena phocoena,Phocoena phocoena,verbatim,FALSE
 Pseudorca crassidens,GI,4.97,Zilles_etal_2013_Table1,Zilles_2013,[5],Zilles_GI_lineage,Pseudorca crassidens,Pseudorca crassidens,hub,FALSE
-Delphinus delphis,GI,3.99,Zilles_etal_2013_Table1,Zilles_2013,[5],Zilles_GI_lineage,Delphinus delphis,Delphinus delphis,unresolved,FALSE
+Delphinus delphis,GI,3.99,Zilles_etal_2013_Table1,Zilles_2013,[5],Zilles_GI_lineage,Delphinus delphis,Delphinus delphis,synonym:NCBI,FALSE
 Tursiops truncatus,GI,4.47,Zilles_etal_2013_Table1,Zilles_2013,[5],Zilles_GI_lineage,Tursiops truncatus,Tursiops truncatus,verbatim,FALSE
 Tursiops aduncus,GI,4.75,Zilles_etal_2013_Table1,Zilles_2013,[5],Zilles_GI_lineage,Tursiops aduncus,Tursiops aduncus,verbatim,FALSE
 Globicephala melas,GI,5.03,Zilles_etal_2013_Table1,Zilles_2013,[5],Zilles_GI_lineage,Globicephala melas,Globicephala melas,verbatim,FALSE

@@ -1,13 +1,18 @@
-Hanson et al. 2018 - Table 2 (striatal neuron/glia density, glia:neuron ratio, soma area)
+Hanson et al. 2018 - Table 2 (striatal neuron/glia density, ratio, soma area)
 DOI: 10.1002/dneu.22554
-Source        Hanson_etal_2018.pdf (Table 2)
-Snapshot      Hanson_etal_2018_Table2_snapshot.csv   (printed layout: heading rows, label column, WS/TD column, row/column order as printed)
-              Re-transcribed 2026-10-15 by AI assistant (manual entry, method 5) from Hanson_etal_2018.pdf p.536;
-              verified cell-by-cell against the PDF text layer by word coordinates (24/24 rows match).
-              Printed minus signs kept as U+2212; Adobe PDF->Excel export (Hanson_etal_2018.xlsx) was used for reference only (glyph-garbled).
-Derived       Hanson_etal_2018_Table2.R -> Hanson_etal_2018_Table2.csv   <-- USE THIS
-              (mean/SD split into numeric columns; stat rows dropped)
-Definitions   Hanson_etal_2018_definitions.csv
-Online        __Public/comparative-data/10.1002%2Fdneu.22554_Table2.tsv
 
-Notes         Regions dC/mC/aP/NA; groups WS / TD; group means +/- SEM (n=5/group).
+Source
+  Hanson_etal_2018.pdf, Table 2 (article page 536; PDF page 6).
+
+Snapshot
+  Hanson_etal_2018_Table2_snapshot.xlsx
+  Full printed table: WS/TD values, percentage changes, t statistics, df, p values, signs and symbols.
+  This snapshot requires visual sign-off against the source page before release.
+
+Data readable (USE THIS)
+  Hanson_etal_2018_Table2.R -> Hanson_etal_2018_Table2.csv
+  Splits printed mean ± SEM values into numeric mean/SEM columns and keeps one row per region x group.
+  The uncertainties are SEM: they reproduce the reported Welch t statistics as standard errors.
+
+Online database
+  __Public/comparative-data/10.1002%2Fdneu.22554_Table2.tsv

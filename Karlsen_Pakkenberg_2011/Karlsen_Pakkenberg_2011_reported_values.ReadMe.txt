@@ -1,21 +1,24 @@
-Karlsen & Pakkenberg 2011 - reported values (published Results-text values)
+Karlsen & Pakkenberg 2011 - values reported in Results text
 DOI: 10.1093/cercor/bhr033
-Source        Karlsen_Pakkenberg_2011.pdf (Results text, incl. Figure 2/3 values)
-Snapshot      Karlsen_Pakkenberg_2011_reported_values_snapshot.csv   (values quoted in text; Control vs DS;
-              kept FAITHFUL, including the published astrocyte error below)
-Corrections   One published value is corrected in the derived table (snapshot left faithful):
-              - Control temporal-cortex astrocyte density: published 46.7 -> corrected 23.13 x10^6/cm3.
-                Why: 46.7 is exactly 2x the authors' own counting record (23.13); and 46.7 would make
-                astrocytes ~53% of temporal glial density (88.6), contradicting the paper's OWN stated
-                glial composition (astrocytes ~29% of glia). 23.13 gives ~26%, consistent with the paper.
-              - DS temporal astrocyte density (85.9) is NOT changed - it could not be independently
-                verified (the authors' DS records are the pre-correction version); flagged in the
-                Correction_note column, use with caution.
-Derived       Karlsen_Pakkenberg_2011_reported_values.R -> Karlsen_Pakkenberg_2011_reported_values_derived.csv  <-- USE THIS
-              (numeric; carries the correction above + a Correction_note column)
-Definitions   Karlsen_Pakkenberg_2011_definitions.csv
-Online        __Public/comparative-data/10.1093%2Fcercor%2Fbhr033_reportedvalues.tsv
 
-Notes         Uniquely provides BASAL GANGLIA cell numbers/densities (neuron, astrocyte, oligodendrocyte,
-              microglia) not covered by the neocortical counting workbooks; plus global/regional cortical
-              densities. Groups Control / DS.
+Source
+  Karlsen_Pakkenberg_2011.pdf, Results text on article pages 2521-2522.
+
+Snapshot
+  Karlsen_Pakkenberg_2011_reported_values_snapshot.xlsx
+  Faithful transcription of explicitly reported values, including the published Control temporal
+  astrocyte density of 46.7 x10^6/cm3. Source page/section is retained per row.
+  This snapshot requires visual sign-off against the source pages before release.
+
+Correction
+  The clean table corrects Control temporal astrocyte density 46.7 -> 23.13 x10^6/cm3.
+  The R script asserts the snapshot contains exactly one matching 46.7 row before changing it.
+  The author workbook gives 23.13; 46.7 is approximately 2x that value and would imply ~53% astrocytes,
+  contradicting the paper's own ~29% astrocyte fraction. The snapshot intentionally remains unchanged.
+  DS temporal astrocyte density 85.9 is retained and flagged as not independently verified.
+
+Data readable (USE THIS)
+  Karlsen_Pakkenberg_2011_reported_values.R -> Karlsen_Pakkenberg_2011_reported_values.csv
+
+Online database
+  __Public/comparative-data/10.1093%2Fcercor%2Fbhr033_reportedvalues.tsv

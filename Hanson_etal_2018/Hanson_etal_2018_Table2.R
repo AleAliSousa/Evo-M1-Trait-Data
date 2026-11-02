@@ -1,8 +1,7 @@
-## Hanson et al. 2018 - Table 2 : snapshot -> derived
-## Faithful snapshot (Hanson_etal_2018_Table2_snapshot.csv) reproduces the published Table 2 verbatim
-## (WS/TD + Average percent change / t-statistics / df / P-value rows, mean ± SD).
-## Derived = analysis-amenable: split "mean ± SD" into numeric *_mean / *_SD columns, one row per
-## Region x Group; the stat rows (%change, t, df, P) are dropped (kept in the snapshot for provenance).
+## Hanson et al. 2018 - Table 2 : snapshot -> analysis-ready CSV
+## The XLSX snapshot preserves the complete published table. The values are means ± SEM:
+## the printed uncertainties reproduce the Welch t statistics when treated as standard errors.
+## The clean CSV splits means/SEMs and retains one row per Region x Group.
 
 .sp <- local({
   a <- grep("^--file=", commandArgs(FALSE), value = TRUE)
@@ -15,25 +14,20 @@
   stop("Run with Rscript file.R, or open in RStudio and Source.", call. = FALSE)
 })
 folder <- dirname(.sp); setwd(folder); options(stringsAsFactors = FALSE)
-suppressMessages({ library(tidyr); library(dplyr) })
+suppressMessages({ library(readxl); library(tidyr); library(dplyr) })
 
-## snapshot is in the printed layout: caption row, then a header row (blank, blank, dC, mC, aP, NA);
-## measure label printed only on the WS row; stat labels in column 1 -> read as text, no header
-raw <- read.csv("Hanson_etal_2018_Table2_snapshot.csv", header = FALSE, skip = 2,
-                colClasses = "character", na.strings = character(0))
-names(raw) <- c("Measure", "Stat", "dC", "mC", "aP", "NA")
+raw <- as.data.frame(read_excel("Hanson_etal_2018_Table2_snapshot.xlsx", sheet = "Table 2", skip = 1,
+                                .name_repair = "minimal"), check.names = FALSE)
 
 ## keep only the group value rows (WS, TD); drop stat rows
 val <- raw[raw$Stat %in% c("WS", "TD"), ]
-## measure label is printed once per block (on the WS row) -> carry it down to the TD row
-for (i in seq_len(nrow(val))) if (!nzchar(val$Measure[i])) val$Measure[i] <- val$Measure[i - 1]
 
-## split "mean ± SD" -> numeric mean/SD (strip thousands commas)
+## split "mean ± SEM" -> numeric mean/SEM (strip thousands commas)
 split_pm <- function(x) {
   x <- gsub(",", "", trimws(as.character(x)))
   parts <- strsplit(x, "\\s*±\\s*")
   list(mean = suppressWarnings(as.numeric(sapply(parts, `[`, 1))),
-       sd   = suppressWarnings(as.numeric(sapply(parts, `[`, 2))))
+       sem  = suppressWarnings(as.numeric(sapply(parts, `[`, 2))))
 }
 regions <- c(dC = "Caudate nucleus (dorsal)", mC = "Caudate nucleus (medial)",
              aP = "Putamen (associative)",    NA_ = "Nucleus Accumbens")
@@ -42,37 +36,37 @@ codes <- c("dC","mC","aP","NA")
 measure_key <- c("Average neuron density" = "Neuron_density.per.mm3",
                  "Average glia density"   = "Glia_density.per.mm3",
                  "Glia per neuron"        = "Glia_Neuron_ratio",
-                 "Average soma area (µm²)"= "Soma_area.um2")
+                 "Average soma area (µm2)"= "Soma_area.um2")
 
 long <- do.call(rbind, lapply(seq_len(nrow(val)), function(i) {
   m <- measure_key[[ val$Measure[i] ]]; grp <- val$Stat[i]
   do.call(rbind, lapply(codes, function(cc) {
     sp <- split_pm(val[[cc]][i])
     data.frame(Region_code = cc, Group = grp, var = m,
-               mean = sp$mean, sd = sp$sd)
+               mean = sp$mean, sem = sp$sem)
   }))
 }))
 
 wide_mean <- long %>% select(Region_code, Group, var, mean) %>% pivot_wider(names_from = var, values_from = mean)
-wide_sd   <- long %>% select(Region_code, Group, var, sd)   %>% pivot_wider(names_from = var, values_from = sd)
-names(wide_sd)[-(1:2)] <- paste0(names(wide_sd)[-(1:2)], ".SD")
+wide_sem  <- long %>% select(Region_code, Group, var, sem) %>% pivot_wider(names_from = var, values_from = sem)
+names(wide_sem)[-(1:2)] <- paste0(names(wide_sem)[-(1:2)], ".SEM")
 
 reg_lab <- c(dC = "Caudate nucleus (dorsal)", mC = "Caudate nucleus (medial)",
              aP = "Putamen (associative)", "NA" = "Nucleus Accumbens")
-out <- merge(wide_mean, wide_sd, by = c("Region_code","Group"))
+out <- merge(wide_mean, wide_sem, by = c("Region_code","Group"))
 out$Region <- reg_lab[out$Region_code]
 out$taxon <- "Homo sapiens"; out$n <- 5L
 out <- out[order(match(out$Region_code, codes), out$Group),
            c("Region","Region_code","Group","n","taxon",
-             "Neuron_density.per.mm3","Neuron_density.per.mm3.SD",
-             "Glia_density.per.mm3","Glia_density.per.mm3.SD",
-             "Glia_Neuron_ratio","Glia_Neuron_ratio.SD",
-             "Soma_area.um2","Soma_area.um2.SD")]
-write.csv(out, "Hanson_etal_2018_Table2.csv", row.names = FALSE)
-cat("Table2 derived:", nrow(out), "rows\n")
+             "Neuron_density.per.mm3","Neuron_density.per.mm3.SEM",
+             "Glia_density.per.mm3","Glia_density.per.mm3.SEM",
+             "Glia_Neuron_ratio","Glia_Neuron_ratio.SEM",
+             "Soma_area.um2","Soma_area.um2.SEM")]
+write.csv(out, "Hanson_etal_2018_Table2.csv", row.names = FALSE, na = "NA")
+cat("Table 2:", nrow(out), "analysis-ready rows\n")
 
 
-## ---- public TSV (database "online" copy) : regenerate from the derived table ----
+## ---- public TSV (database online copy) ----
 ## Written into <repo-root>/__Public/comparative-data when run inside the repo (root = has __ReadMe.xlsx).
 .tsv_base <- local({ d <- folder
   while (dirname(d) != d && !file.exists(file.path(d, "__ReadMe.xlsx"))) d <- dirname(d)
@@ -80,6 +74,6 @@ cat("Table2 derived:", nrow(out), "rows\n")
 if (!is.na(.tsv_base)) {
   .td <- file.path(.tsv_base, "__Public", "comparative-data")
   if (!dir.exists(.td)) dir.create(.td, recursive = TRUE)
-  write.table(read.csv("Hanson_etal_2018_Table2.csv", check.names = FALSE),
-              file.path(.td, "10.1002%2Fdneu.22554_Table2.tsv"), sep = "\t", row.names = FALSE)
+  write.table(out, file.path(.td, "10.1002%2Fdneu.22554_Table2.tsv"),
+              sep = "\t", row.names = FALSE, quote = TRUE, na = "NA", eol = "\n")
 }

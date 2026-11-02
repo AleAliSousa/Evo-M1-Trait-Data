@@ -1,7 +1,6 @@
-## Hanson et al. 2018 - Table 3 : snapshot -> derived
-## Faithful snapshot reproduces published Table 3 (oligodendrocyte density WS/TD/t/df/p/%increase +
-## oligodendrocytes-as-%-of-glia). Derived = numeric oligo density mean/SD + oligo % of glia, per
-## Region x Group (dC, mC only); stat rows dropped (kept in snapshot).
+## Hanson et al. 2018 - Table 3 : snapshot -> analysis-ready CSV
+## The XLSX snapshot preserves the complete published table. The density values are means ± SEM:
+## the printed uncertainties reproduce the Welch t statistics when treated as standard errors.
 
 .sp <- local({
   a <- grep("^--file=", commandArgs(FALSE), value = TRUE)
@@ -14,19 +13,15 @@
   stop("Run with Rscript file.R, or open in RStudio and Source.", call. = FALSE)
 })
 folder <- dirname(.sp); setwd(folder); options(stringsAsFactors = FALSE)
+suppressMessages(library(readxl))
 
-## snapshot is in the printed layout: caption row, then a header row (blank, blank, dC, mC);
-## measure label printed only on the WS row; stat labels in column 1 -> read as text, no header
-raw <- read.csv("Hanson_etal_2018_Table3_snapshot.csv", header = FALSE, skip = 2,
-                colClasses = "character", na.strings = character(0))
-names(raw) <- c("Measure", "Stat", "dC", "mC")
-## measure label is printed once per block (on the WS row) -> carry it down to the TD row
-for (i in seq_len(nrow(raw))) if (raw$Stat[i] %in% c("WS", "TD") && !nzchar(raw$Measure[i])) raw$Measure[i] <- raw$Measure[i - 1]
+raw <- as.data.frame(read_excel("Hanson_etal_2018_Table3_snapshot.xlsx", sheet = "Table 3", skip = 1,
+                                .name_repair = "minimal"), check.names = FALSE)
 num <- function(x) suppressWarnings(as.numeric(gsub("[,%]", "", trimws(as.character(x)))))
 split_pm <- function(x) {
   x <- gsub(",", "", trimws(as.character(x))); p <- strsplit(x, "\\s*±\\s*")
   list(mean = suppressWarnings(as.numeric(sapply(p, `[`, 1))),
-       sd   = suppressWarnings(as.numeric(sapply(p, `[`, 2))))
+       sem  = suppressWarnings(as.numeric(sapply(p, `[`, 2))))
 }
 codes <- c("dC","mC"); reg_lab <- c(dC="Caudate nucleus (dorsal)", mC="Caudate nucleus (medial)")
 
@@ -38,15 +33,15 @@ rows <- do.call(rbind, lapply(codes, function(cc) {
     sp <- split_pm(od[[cc]][od$Stat==g])
     data.frame(Region = reg_lab[[cc]], Region_code = cc, Group = g, n = 5L, taxon = "Homo sapiens",
                Oligodendrocyte_density.per.mm3 = sp$mean,
-               Oligodendrocyte_density.per.mm3.SD = sp$sd,
+               Oligodendrocyte_density.per.mm3.SEM = sp$sem,
                Oligodendrocyte_pct_of_glia = num(pct[[cc]][pct$Stat==g]))
   }))
 }))
-write.csv(rows, "Hanson_etal_2018_Table3.csv", row.names = FALSE)
-cat("Table3 derived:", nrow(rows), "rows\n")
+write.csv(rows, "Hanson_etal_2018_Table3.csv", row.names = FALSE, na = "NA")
+cat("Table 3:", nrow(rows), "analysis-ready rows\n")
 
 
-## ---- public TSV (database "online" copy) : regenerate from the derived table ----
+## ---- public TSV (database online copy) ----
 ## Written into <repo-root>/__Public/comparative-data when run inside the repo (root = has __ReadMe.xlsx).
 .tsv_base <- local({ d <- folder
   while (dirname(d) != d && !file.exists(file.path(d, "__ReadMe.xlsx"))) d <- dirname(d)
@@ -54,6 +49,6 @@ cat("Table3 derived:", nrow(rows), "rows\n")
 if (!is.na(.tsv_base)) {
   .td <- file.path(.tsv_base, "__Public", "comparative-data")
   if (!dir.exists(.td)) dir.create(.td, recursive = TRUE)
-  write.table(read.csv("Hanson_etal_2018_Table3.csv", check.names = FALSE),
-              file.path(.td, "10.1002%2Fdneu.22554_Table3.tsv"), sep = "\t", row.names = FALSE)
+  write.table(rows, file.path(.td, "10.1002%2Fdneu.22554_Table3.tsv"),
+              sep = "\t", row.names = FALSE, quote = TRUE, na = "NA", eol = "\n")
 }

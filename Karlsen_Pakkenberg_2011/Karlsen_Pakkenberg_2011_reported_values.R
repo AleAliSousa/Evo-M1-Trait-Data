@@ -1,7 +1,7 @@
-## Karlsen & Pakkenberg 2011 - reported values (published Results text) : snapshot -> derived
+## Karlsen & Pakkenberg 2011 - reported Results-text values : snapshot -> analysis-ready CSV
 ## Values stated verbatim in the paper's Results text, incl. BASAL GANGLIA cell numbers/densities
 ## (which the neocortical counting workbooks do not cover) and a few cortical density values.
-## Derived = numeric long table (drop non-numeric), analysis-amenable, WITH one documented correction
+## The clean CSV is a numeric long table with one documented correction
 ## of a published error (see section 3) so downstream analysis uses the correct value.
 
 .sp <- local({
@@ -19,10 +19,14 @@ base <- local({ d <- folder
   while (dirname(d) != d && !file.exists(file.path(d, "__ReadMe.xlsx"))) d <- dirname(d)
   if (file.exists(file.path(d, "__ReadMe.xlsx"))) d else NA_character_ })
 setwd(folder); options(scipen = 999, stringsAsFactors = FALSE)
+suppressMessages(library(readxl))
 
 ## 1. READ SNAPSHOT (faithful to the published text; keeps the erroneous value)
-s <- read.csv("Karlsen_Pakkenberg_2011_reported_values_snapshot.csv", check.names = FALSE)
+s <- as.data.frame(read_excel("Karlsen_Pakkenberg_2011_reported_values_snapshot.xlsx",
+                              sheet = "Reported values", skip = 2,
+                              .name_repair = "minimal"), check.names = FALSE)
 s$Value <- suppressWarnings(as.numeric(gsub(",", "", trimws(as.character(s$Value)))))
+s$CV <- suppressWarnings(as.numeric(trimws(as.character(s$CV))))
 s <- s[!is.na(s$Value), ]
 
 ## 2. add a Correction_note column (blank unless a cell is corrected below)
@@ -37,7 +41,10 @@ s$Correction_note <- ""
 ## 85.9 is left as published: it could not be independently verified - the authors' DS records are the
 ## pre-correction version - so it is flagged, not changed.)
 row_err <- which(s$Region == "Temporal" & s$Group == "Control" & s$Measure == "Astrocyte_density")
-stopifnot(length(row_err) == 1)
+if (length(row_err) != 1L) stop("Expected exactly one Control/Temporal/Astrocyte_density row.", call. = FALSE)
+if (!identical(as.numeric(s$Value[row_err]), 46.7)) {
+  stop("Expected the faithful published value 46.7 before correction; found ", s$Value[row_err], call. = FALSE)
+}
 cat("BEFORE correction: Temporal/Control/Astrocyte_density =", s$Value[row_err], "\n")
 s$Value[row_err] <- 23.13
 s$Correction_note[row_err] <- "Corrected from published 46.7 (2x error; see ReadMe). Value = authors' record 23.13; restores 29% astrocyte fraction."
@@ -47,10 +54,11 @@ cat("AFTER  correction: Temporal/Control/Astrocyte_density =", s$Value[row_err],
 row_ds <- which(s$Region == "Temporal" & s$Group == "DS" & s$Measure == "Astrocyte_density")
 if (length(row_ds) == 1) s$Correction_note[row_ds] <- "Published 85.9 kept as-is; not independently verifiable (DS records are pre-correction). Use with caution."
 
-## 4. SAVE derived (USE THIS) + online TSV
-write.csv(s, "Karlsen_Pakkenberg_2011_reported_values_derived.csv", row.names = FALSE)
+## 4. SAVE analysis-ready table + online TSV
+write.csv(s, "Karlsen_Pakkenberg_2011_reported_values.csv", row.names = FALSE, na = "NA")
 if (!is.na(base)) {
   td <- file.path(base, "__Public", "comparative-data"); if (!dir.exists(td)) dir.create(td, recursive = TRUE)
-  write.table(s, file.path(td, "10.1093%2Fcercor%2Fbhr033_reportedvalues.tsv"), sep = "\t", row.names = FALSE)
+  write.table(s, file.path(td, "10.1093%2Fcercor%2Fbhr033_reportedvalues.tsv"),
+              sep = "\t", row.names = FALSE, quote = TRUE, na = "NA", eol = "\n")
 }
-cat("reported_values derived:", nrow(s), "numeric rows; regions:", paste(unique(s$Region), collapse=", "), "\n")
+cat("Reported values:", nrow(s), "numeric rows; regions:", paste(unique(s$Region), collapse=", "), "\n")

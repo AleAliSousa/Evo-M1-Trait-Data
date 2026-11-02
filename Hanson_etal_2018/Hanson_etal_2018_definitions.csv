@@ -4,13 +4,13 @@ Region_code,Printed region code (dC/mC/aP/NA),see Region,,group,info,Homo sapien
 Group,TD (typically developing) or WS (Williams syndrome),see Region,,group,info,Homo sapiens,Hanson_etal_2018,,
 n,Sample size per group,see Region,,count,info,Homo sapiens,Hanson_etal_2018,n=5 per group,
 Neuron_density.per.mm3,Average neuron numerical density,see Region,density.per.mm3,group mean,primary,Homo sapiens,Hanson_etal_2018,,Table 2 (stereology optical disector)
-Neuron_density.per.mm3.SD,SD of neuron density,see Region,density.per.mm3,SD,info,Homo sapiens,Hanson_etal_2018,,Table 2
+Neuron_density.per.mm3.SEM,SEM of neuron density,see Region,density.per.mm3,SEM,info,Homo sapiens,Hanson_etal_2018,Printed uncertainty reproduces the Welch t statistic as SEM,Table 2
 Glia_density.per.mm3,Average glial density,see Region,density.per.mm3,group mean,primary,Homo sapiens,Hanson_etal_2018,,Table 2
-Glia_density.per.mm3.SD,SD of glia density,see Region,density.per.mm3,SD,info,Homo sapiens,Hanson_etal_2018,,Table 2
+Glia_density.per.mm3.SEM,SEM of glia density,see Region,density.per.mm3,SEM,info,Homo sapiens,Hanson_etal_2018,Printed uncertainty reproduces the Welch t statistic as SEM,Table 2
 Glia_Neuron_ratio,Glia-to-neuron ratio,see Region,ratio,group mean,primary,Homo sapiens,Hanson_etal_2018,,Table 2
-Glia_Neuron_ratio.SD,SD of glia-to-neuron ratio,see Region,ratio,SD,info,Homo sapiens,Hanson_etal_2018,,Table 2
+Glia_Neuron_ratio.SEM,SEM of glia-to-neuron ratio,see Region,ratio,SEM,info,Homo sapiens,Hanson_etal_2018,Printed uncertainty reproduces the Welch t statistic as SEM,Table 2
 Soma_area.um2,Average neuronal soma area,see Region,area.um2,group mean,secondary,Homo sapiens,Hanson_etal_2018,,Table 2
-Soma_area.um2.SD,SD of soma area,see Region,area.um2,SD,info,Homo sapiens,Hanson_etal_2018,,Table 2
+Soma_area.um2.SEM,SEM of soma area,see Region,area.um2,SEM,info,Homo sapiens,Hanson_etal_2018,Printed uncertainty reproduces the Welch t statistic as SEM,Table 2
 Oligodendrocyte_density.per.mm3,Oligodendrocyte density (dC/mC only),Caudate nucleus,density.per.mm3,group mean,primary,Homo sapiens,Hanson_etal_2018,,Table 3
-Oligodendrocyte_density.per.mm3.SD,SD of oligodendrocyte density,Caudate nucleus,density.per.mm3,SD,info,Homo sapiens,Hanson_etal_2018,,Table 3
+Oligodendrocyte_density.per.mm3.SEM,SEM of oligodendrocyte density,Caudate nucleus,density.per.mm3,SEM,info,Homo sapiens,Hanson_etal_2018,Printed uncertainty reproduces the Welch t statistic as SEM,Table 3
 Oligodendrocyte_pct_of_glia,Oligodendrocytes as percent of total glia (dC/mC),Caudate nucleus,pct.glia,group mean,secondary,Homo sapiens,Hanson_etal_2018,,Table 3

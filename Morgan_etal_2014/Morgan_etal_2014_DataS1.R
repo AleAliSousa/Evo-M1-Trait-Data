@@ -1,6 +1,6 @@
-## Morgan et al. 2014 - Data S1 : snapshot -> derived
+## Morgan et al. 2014 - Data S1 : snapshot -> analysis-ready CSV
 ## Snapshot = the originally published PLoS ONE Data S1 spreadsheet (Morgan_etal_2014_DataS1_snapshot.xlsx),
-## verbatim. Derived = per-individual data rows only (drop the Mean / SD / (Mean x2) / note summary rows),
+## verbatim. The clean CSV keeps per-individual data rows only (drops Mean/SD/note rows),
 ## all measured columns coerced numeric. Both groups (ASD, Control) kept.
 
 .sp <- local({
@@ -21,12 +21,12 @@ df <- snap[snap$Diagnosis %in% c("ASD", "Control"), ]          # per-individual 
 ## coerce all non-identifier columns to numeric
 idcols <- c("Case","Diagnosis","Hemisphere")
 for (cc in setdiff(names(df), idcols)) df[[cc]] <- suppressWarnings(as.numeric(df[[cc]]))
-write.csv(df, "Morgan_etal_2014_DataS1_derived.csv", row.names = FALSE)
-cat(sprintf("derived: %d individuals (%d Control, %d ASD), %d cols\n",
-            nrow(df), sum(df$Diagnosis=="Control"), sum(df$Diagnosis=="ASD"), ncol(df)))
+write.csv(df, "Morgan_etal_2014_DataS1.csv", row.names = FALSE, na = "NA")
+cat(sprintf("Data S1: %d individuals (%d Control, %d ASD), %d columns\n",
+            nrow(df), sum(df$Diagnosis == "Control"), sum(df$Diagnosis == "ASD"), ncol(df)))
 
 
-## ---- public TSV (database "online" copy) : regenerate from the derived table ----
+## ---- public TSV (database online copy) ----
 ## Written into <repo-root>/__Public/comparative-data when run inside the repo (root = has __ReadMe.xlsx).
 .tsv_base <- local({ d <- folder
   while (dirname(d) != d && !file.exists(file.path(d, "__ReadMe.xlsx"))) d <- dirname(d)
@@ -34,6 +34,6 @@ cat(sprintf("derived: %d individuals (%d Control, %d ASD), %d cols\n",
 if (!is.na(.tsv_base)) {
   .td <- file.path(.tsv_base, "__Public", "comparative-data")
   if (!dir.exists(.td)) dir.create(.td, recursive = TRUE)
-  write.table(read.csv("Morgan_etal_2014_DataS1_derived.csv", check.names = FALSE),
-              file.path(.td, "10.1371%2Fjournal.pone.0110356_DataS1.tsv"), sep = "\t", row.names = FALSE)
+  write.table(df, file.path(.td, "10.1371%2Fjournal.pone.0110356_DataS1.tsv"),
+              sep = "\t", row.names = FALSE, quote = TRUE, na = "NA", eol = "\n")
 }

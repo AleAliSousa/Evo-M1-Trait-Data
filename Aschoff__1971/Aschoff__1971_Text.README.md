@@ -1,9 +1,9 @@
 # Aschoff__1971_Text
 
-**Item name** `Aschoff__1971_Text` · **Item number** `Text` · **Item encoded** `Aschoff%3A1971%3AEnergiehaushalt_Text` — *derived, awaiting registration*
+**Item name** `Aschoff__1971_Text` · **Item number** `Text` · **Item encoded** `ISBN%3A9783541051816_Text` — *derived, awaiting registration*
 ( Paste `Aschoff__1971_Text_registry_row.xlsx`, run `_tools/file_list.R`, rename the TSV if the registry differs.)
 
-Aschoff, J. (1971). Temperaturregulation [section of: Aschoff, J., Günther, B., & Kramer, K., *Energiehaushalt und Temperaturregulation*]. In O. H. Gauer, K. Kramer, & R. Jung (Eds.), *Physiologie des Menschen, Band 2*. Urban & Schwarzenberg. (No DOI; scanned 12-page excerpt, Tabelle 1 on p. 44, Abb. 1 on p. 45.)
+Aschoff, J. (1971). Temperaturregulation [section of: Aschoff, J., Günther, B., & Kramer, K., *Energiehaushalt und Temperaturregulation*]. In O. H. Gauer, K. Kramer, & R. Jung (Eds.), *Physiologie des Menschen, Band 2*. Urban & Schwarzenberg. (No DOI; ISBN-13 9783541051816; scanned 12-page excerpt, Tabelle 1 on p. 44, Abb. 1 on p. 45.)
 
 **Item full original title:** Values printed in Abb. 1 (Topographie der Wärmebildung, p. 45) and in the running text and the Tabelle 1 caption of pp. 44-45.
 
@@ -19,7 +19,7 @@ Source (PDF)
   -> Aschoff__1971_Text_snapshot.csv   FROZEN (constructed): 30 rows x 10 cols
   -> Aschoff__1971_Text.R   parse + label + table checks (cross-checks Aschoff__1971_Tabelle1.csv when present)
   -> Aschoff__1971_Text.csv   29 rows x 17 cols  ("use this")
-  -> __Public/comparative-data/Aschoff%3A1971%3AEnergiehaushalt_Text.tsv
+  -> __Public/comparative-data/ISBN%3A9783541051816_Text.tsv
   -> reference_tables/Aschoff__1971_Text_definitions.csv
 ```
 

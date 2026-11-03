@@ -72,7 +72,7 @@ report_checks <- function(table_checks) {
 }
 UMOL_PER_ML_O2 <- 44.64          # umol O2 per mL O2 (22.4 L/mol at STP: 1000/22.4)
 
-code_src <- "Aschoff:1971:Energiehaushalt"   # no DOI: alternative code for registry col C (owner to confirm)
+code_src <- "ISBN:9783541051816"   # chapter has no DOI: ISBN-13 of the book (Physiologie des Menschen Bd. 2, Urban & Schwarzenberg 1971); registry col C must match
 
 snap <- read_snapshot(paste0(base, "_snapshot.csv"))
 stopifnot(identical(dim(snap), c(11L, 6L)), snap[5, 1] == "Haut", snap[11, 1] == "Splanchnikus-\ngebiet",

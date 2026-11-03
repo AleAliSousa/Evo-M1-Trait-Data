@@ -35,7 +35,9 @@
 #   measure_class, domain, Structure, poolable_group, poolable_family
 #                       -> written to _keys/variable_domain.csv by the key step below
 #   role                primary | secondary | both   (paper's role for this column)
-#   aggregate           first | mean | median | mode | any_Y   (per resolved species)
+#   aggregate           first | mean | median | geomean | mode | any_Y | wmean:<column>
+#                       (per resolved species; wmean:<column> = mean weighted by that column
+#                       of the same rows, e.g. wmean:sample_size)
 #   note                free text, copied to README table
 #
 # Species: resolve_species(printed, source_publication) -- the single house
@@ -111,8 +113,9 @@ read_source <- function(m) {
 }
 
 num_or_text <- function(x) suppressWarnings(as.numeric(x))
-agg_fun <- function(v, how) {
-  v <- v[!is.na(v) & nzchar(as.character(v))]
+agg_fun <- function(v, how, w = NULL) {
+  keep <- !is.na(v) & nzchar(as.character(v))
+  v <- v[keep]
   if (!length(v)) return(NA)
   vn <- num_or_text(v)
   if (how == "first") return(v[1])
@@ -121,6 +124,15 @@ agg_fun <- function(v, how) {
   ## geomean: for log-normal quantities whose own paper summarises them that way
   ## (Sjölin 2022 tissue protein concentrations). Needs strictly positive values.
   if (how == "geomean") return(if (all(!is.na(vn)) && all(vn > 0)) exp(mean(log(vn))) else v[1])
+  ## wmean: mean weighted by another column of the same rows (aggregate "wmean:<column>").
+  ## Püschel 2026 S1 Data prints one row per source study with its n; the n-weighted mean is the
+  ## pooled species value (it reproduces Caspar et al. 2022 Table 1 where the samples coincide).
+  ## A missing or non-positive weight falls back to the plain mean.
+  if (how == "wmean") {
+    if (any(is.na(vn))) return(v[1])
+    wn <- if (is.null(w)) rep(NA_real_, length(vn)) else num_or_text(w[keep])
+    return(if (all(!is.na(wn)) && all(wn > 0)) sum(vn * wn) / sum(wn) else mean(vn))
+  }
   if (how == "mode")   return(names(sort(table(v), decreasing = TRUE))[1])
   if (how == "any_Y")  return(if (any(v == "Y")) "Y" else "N")
   stop("unknown aggregate: ", how)
@@ -134,6 +146,10 @@ for (i in seq_len(nrow(map))) {
   d <- cache[[key]]
   if (!m$value_col %in% names(d))
     stop(m$item, ": column not found: ", m$value_col, "\n  have: ", paste(names(d), collapse = ", "))
+  how  <- sub(":.*$", "", m$aggregate)                                   # "wmean:<column>" -> "wmean"
+  wcol <- if (grepl(":", m$aggregate, fixed = TRUE)) sub("^[^:]*:", "", m$aggregate) else ""
+  if (nzchar(wcol) && !wcol %in% names(d))
+    stop(m$item, ": weight column not found: ", wcol, "\n  have: ", paste(names(d), collapse = ", "))
   # species_col: a column name, else an R expression over the table's columns
   # (the Amniote DB and AnAge print genus and epithet in separate columns).
   species_of <- function(d) {
@@ -158,6 +174,7 @@ for (i in seq_len(nrow(map))) {
   ok <- !is.na(val) & nzchar(printed) & !printed %in% c("NA", "")
   d2 <- data.frame(printed = printed[ok], val = val[ok], stringsAsFactors = FALSE)
   if (!nrow(d2)) { message("  (no values) ", m$item, " / ", m$value_col); next }
+  d2$w <- if (nzchar(wcol)) as.character(d[[wcol]])[ok] else rep(NA_character_, nrow(d2))
   if (nzchar(m$transform)) {
     vn <- num_or_text(d2$val)
     vt <- eval(parse(text = paste0("vn ", m$transform)))
@@ -172,7 +189,7 @@ for (i in seq_len(nrow(map))) {
   if (!nrow(d2)) next
   sp <- split(d2, d2$accepted)
   rows <- lapply(sp, function(g) {
-    v <- agg_fun(g$val, m$aggregate); vn <- num_or_text(g$val)
+    v <- agg_fun(g$val, how, g$w); vn <- num_or_text(g$val)
     data.frame(
       Species = g$accepted[1], measure_class = m$measure_class, Measure = m$Measure, Units = m$Units,
       Value = as.character(v),

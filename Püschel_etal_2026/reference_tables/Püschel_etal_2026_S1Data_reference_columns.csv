@@ -1,0 +1,14 @@
+key_column,applies_to,separator,note
+handedness_reference,mean_mhi; sd_mhi; st_err_mhi; mean_mabshi; sd_mabshi; st_err_mabshi; sample_size,,full citation printed per variable
+body_mass_ref,body_mass_kg; body_mass_g,,full citation printed per variable
+ecv_reference,ecv_cm3; ecv_mm3,,full citation printed per variable
+tool_use_reference,tool_use,,full citation printed per variable
+substrate_reference,substrate,,full citation printed per variable
+fruit_reference,fruit_pct,,full citation printed per variable
+diet_reference,diet_pct,,"full citation printed per variable; multi-citation cells separated by ""; "" (diet, Nomascus siki)"
+social_system_reference,social_system,,full citation printed per variable
+imi_ref,imi,,full citation printed per variable
+cl_ref,cl,,full citation printed per variable
+extractive_reference,extractive,,full citation printed per variable
+social_learning_reference,social_learning,,full citation printed per variable
+bm_dimo_reference,bm_dimo,,"cell ends with the method note ""; computed as M/F"" (not a citation)"

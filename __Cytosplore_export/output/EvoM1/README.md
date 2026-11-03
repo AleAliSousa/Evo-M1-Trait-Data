@@ -1,7 +1,7 @@
 # EvoM1 species-trait tables for the Cytosplore M1 viewer (DRAFT)
 
 
-Built 2026-10-31 from Evo-M1-Trait-Data commit `e3f8164 (from .git/HEAD; git command unavailable)` by `__Cytosplore_export/build_cytosplore_traits.R`.
+Built 2026-11-02 from Evo-M1-Trait-Data commit `bf2fd8c (from .git/HEAD; git command unavailable)` by `__Cytosplore_export/build_cytosplore_traits.R`.
 Re-run that script to regenerate everything here; do not edit these CSVs by hand.
 
 ## What this is
@@ -13,11 +13,11 @@ Comparative species traits for the 25-species `EvoM1` cohort (`_keys/species_coh
 | file | one row per | use |
 |---|---|---|
 | `EvoM1_species.csv` | species (25) | species list, taxonomy, which data labels were pooled (match level: species), per-domain counts |
-| `EvoM1_traits_wide.csv` | species x variable (988) | **recommended viewer input**: species x trait matrix, one value per cell |
+| `EvoM1_traits_wide.csv` | species x variable (992) | **recommended viewer input**: species x trait matrix, one value per cell |
 | `EvoM1_traits_wide_core.csv` | species x variable (34) | same, only traits held for >= 20 of 25 species (`in_core`) |
-| `EvoM1_variable_dictionary.csv` | variable (988) | column metadata for the wide tables: domain, structure, measure, unit, definition, coverage |
-| `EvoM1_traits_cells.csv` | species x variable cell (5423) | how each wide cell was made: n values, aggregation, min/max, sources |
-| `EvoM1_traits_long.csv` | value (5739) | full provenance: every source value behind every cell |
+| `EvoM1_variable_dictionary.csv` | variable (992) | column metadata for the wide tables: domain, structure, measure, unit, definition, coverage |
+| `EvoM1_traits_cells.csv` | species x variable cell (5442) | how each wide cell was made: n values, aggregation, min/max, sources |
+| `EvoM1_traits_long.csv` | value (5758) | full provenance: every source value behind every cell |
 | `EvoM1_domain_coverage.csv` | species | n distinct variables per domain |
 | `BUILD_INFO.txt` | - | build stamp and counts |
 
@@ -60,13 +60,13 @@ Source audit (run `python3 __Cytosplore_export/audit_cytosplore_variables.py Evo
 | Gorilla gorilla gorilla | Western lowland gorilla | Primates | 413 | Gorilla gorilla gorilla; Gorilla gorilla; Gorilla sp. |
 | Heterocephalus glaber | Naked mole rat | Rodentia | 129 | Heterocephalus glaber |
 | Homo sapiens | Human | Primates | 636 | Homo sapiens |
-| Macaca mulatta | Rhesus macaque | Primates | 444 | Macaca mulatta |
+| Macaca mulatta | Rhesus macaque | Primates | 460 | Macaca mulatta |
 | Macaca nemestrina | Pig-tailed macaque | Primates | 178 | Macaca nemestrina |
 | Microcebus murinus | Mouse lemur | Primates | 339 | Microcebus murinus |
 | Monodelphis domestica | Opossum | Didelphimorphia | 64 | Monodelphis domestica |
 | Mus musculus | Mouse | Rodentia | 174 | Mus musculus |
 | Mustela putorius furo | Ferret | Carnivora | 102 | Mustela putorius furo |
-| Oryctolagus cuniculus | Rabbit | Lagomorpha | 175 | Oryctolagus cuniculus |
+| Oryctolagus cuniculus | Rabbit | Lagomorpha | 178 | Oryctolagus cuniculus |
 | Otolemur garnettii | Galago | Primates | 212 | Otolemur garnettii |
 | Pan troglodytes | Chimpanzee | Primates | 515 | Pan troglodytes |
 | Papio anubis | Baboon | Primates | 312 | Papio anubis |
@@ -92,7 +92,7 @@ Source audit (run `python3 __Cytosplore_export/audit_cytosplore_variables.py Evo
 | sensorimotor & motor pathways | 23 | 0 | 23 |
 | hand & limb morphology | 17 | 0 | 17 |
 | sleep & torpor | 8 | 0 | 0 |
-| Unclassified | 112 | 0 | 0 |
+| Unclassified | 116 | 0 | 0 |
 | behaviour | 1 | 0 | 0 |
 | brain size | 10 | 0 | 1 |
 | cellular morphology | 97 | 0 | 32 |

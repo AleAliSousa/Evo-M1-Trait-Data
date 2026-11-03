@@ -222,6 +222,7 @@ sources**; TraitExplorer discovers the folder automatically; `__Cytosplore_expor
 | Sjölin_etal_2022_SupplementaryData | `*_ug_per_g`, `total_protein_mg_per_g` (6 analytes) x `region_code` A-Q (17 regions) | `<Region>_<Analyte>` (µg/g; total protein mg/g) [distinct] - 102 labels | primary | geomean | one mapping row per region x analyte; see the "Human regional protein concentrations" decision above |
 | Pellis_Iwaniuk_2000_Table1 | play_sexual / play_nonsexual_byproduct / play_nonsexual_social_assessment / play_presence / social_organization | Play_sex_score, Play_nonsex_score, Play_nonsex_score_raised_ceiling, Play_presence (score/category) [distinct]; Social_organization_score_strepsirrhine (score) [distinct] | primary | first | replaces the two Iwaniuk play-score rows; see the decision above |
 | Graham__2011_TABLEI | social_play_pct / nonsocial_play_pct | Play_social_time_pct_Graham2011, Play_nonsocial_time_pct_Graham2011 (percent) [distinct] | secondary | first | activity-budget percentages; never pooled with the ordinal scores or the social_mirror_play measures |
+| Püschel_etal_2026_S1Data | mean_mhi / mean_mabshi | Handedness_index_mean_Püschel2026 (HI), Handedness_strength_mean_Püschel2026 (abs(HI)) [distinct] | secondary | wmean:sample_size | study rows pooled within species by n; never pooled with __merging_behaviour's Caspar 2022 handedness labels; see the 2026-11-03 section below |
 
 
 ## ManyPrimates supplements, 2026-10-21
@@ -284,3 +285,22 @@ and fixed (`Boyer_Harrington_2019_SOMTableS6` -> `Boyer__2019_SOMTableS6`,
 `xml:space="preserve">` markup, breaking its `Item name` formula) was cleaned up -- all four were
 blocking `supplementary_compiled.R` from completing a full run at all, independent of this
 paper's own additions.
+
+
+## Püschel et al. 2026 handedness (2026-11-03)
+
+`Püschel_etal_2026_S1Data` is S1 Data of Püschel, Hurwitz & Venditti 2026 (*PLoS Biol* 24: e3003771). It adds two secondary labels with `distinct` policy, each covering 41 anthropoid species including *Homo sapiens*:
+- `Handedness_index_mean_Püschel2026 (HI)`
+- `Handedness_strength_mean_Püschel2026 (abs(HI))`
+
+- **New aggregate `wmean:<column>`.** S1 Data prints one row per source study (71 rows), each with its `sample_size`. The species value is the mean weighted by that column, which is the pooled sample mean.
+  - `agg_fun()` gained a `wmean` branch. The loop reads the weight column named after the colon, and a missing or non-positive weight falls back to the plain mean. Every existing aggregate behaves as before.
+  - Caspar et al. 2022 pooled studies the same way. For 34 species, an n-weighted subset of S1 Data rows reproduces Caspar's Table 1 within its printed precision.
+  - The merged value uses all of a species' rows. It equals Caspar's for the 29 species whose rows are exactly Caspar's set, and differs where Püschel added studies.
+  - An unweighted mean would misstate the species: *Pan troglodytes* MHI is 0.141 weighted (4 studies, 580 animals) but 0.240 unweighted.
+  - `n_specimens` counts study rows, not animals.
+- **Not pooled with Caspar.** `__merging_behaviour` already carries Caspar et al. 2022's `Handedness_index_mean (HI)` and `Handedness_strength_mean (abs(HI))`. 26 S1 Data rows are Caspar's own samples and 23 more are literature samples that Caspar pooled. So the new labels stay distinct and have no `poolable_group`.
+- **Covariates not taken.** S1 Data's 12 species-level covariates reprint other works: Galán-Acedo 2019, Powell 2017, Caspar 2022, Reader 2011, Melchionna 2020, Grabowski 2022, Plavcan 1995 and web pages. Some values are the authors' own imputations. The repo builds, or should build, them from those sources.
+- **Definitions.** `_keys/build_variable_definitions.R` binds both labels to the item's definitions of `mean_mhi` and `mean_mabshi`.
+- **Rows written without R.** A Python mirror of `supplementary_compiled.R` wrote the 82 rows in `supplementary_long.csv` and the 2 rows in `_keys/variable_domain.csv` on 2026-11-03, sorted as a full run sorts them (R NOT RUN). Run `Rscript __merging_supplementary/supplementary_compiled.R`; it should reproduce them, then follow the usual key steps above. The quick `SUPPLEMENTARY_SOURCE_PUBLICATIONS="Püschel_etal_2026"` refresh also works, but it appends the rows at the end and rewrites the file with every field quoted.
+- The cross-source comparison is in the restricted repo: `restricted_checks/Püschel_etal_2026/comparison/`.

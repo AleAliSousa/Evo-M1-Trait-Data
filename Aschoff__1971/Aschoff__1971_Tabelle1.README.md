@@ -1,9 +1,9 @@
 # Aschoff__1971_Tabelle1
 
-**Item name** `Aschoff__1971_Tabelle1` · **Item number** `Tabelle 1` · **Item encoded** `Aschoff%3A1971%3AEnergiehaushalt_Tabelle1` — *derived, awaiting registration*
+**Item name** `Aschoff__1971_Tabelle1` · **Item number** `Tabelle 1` · **Item encoded** `ISBN%3A9783541051816_Tabelle1` — *derived, awaiting registration*
 ( Paste `Aschoff__1971_Tabelle1_registry_row.xlsx`, run `_tools/file_list.R`, rename the TSV if the registry differs.)
 
-Aschoff, J. (1971). Temperaturregulation [section of: Aschoff, J., Günther, B., & Kramer, K., *Energiehaushalt und Temperaturregulation*]. In O. H. Gauer, K. Kramer, & R. Jung (Eds.), *Physiologie des Menschen, Band 2*. Urban & Schwarzenberg. (No DOI; scanned 12-page excerpt, Tabelle 1 on p. 44, Abb. 1 on p. 45.)
+Aschoff, J. (1971). Temperaturregulation [section of: Aschoff, J., Günther, B., & Kramer, K., *Energiehaushalt und Temperaturregulation*]. In O. H. Gauer, K. Kramer, & R. Jung (Eds.), *Physiologie des Menschen, Band 2*. Urban & Schwarzenberg. (No DOI; ISBN-13 9783541051816; scanned 12-page excerpt, Tabelle 1 on p. 44, Abb. 1 on p. 45.)
 
 **Item full original title:** Tabelle 1. Sauerstoffaufnahme bzw. Wärmebildung der Organe im ruhenden Körper. (65 kg Gewicht, 270 cm³/min Sauerstoffaufnahme), p. 44.
 
@@ -19,7 +19,7 @@ Source (PDF)
   -> Aschoff__1971_Tabelle1_snapshot.csv   FROZEN: 11 rows x 6 cols
   -> Aschoff__1971_Tabelle1.R   clean + parse German numerals + convert units + table checks
   -> Aschoff__1971_Tabelle1.csv   7 rows x 24 cols  ("use this")
-  -> __Public/comparative-data/Aschoff%3A1971%3AEnergiehaushalt_Tabelle1.tsv
+  -> __Public/comparative-data/ISBN%3A9783541051816_Tabelle1.tsv
   -> reference_tables/Aschoff__1971_Tabelle1_definitions.csv
 ```
 

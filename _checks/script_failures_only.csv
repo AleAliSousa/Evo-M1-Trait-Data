@@ -1,41 +1,62 @@
 "script","status","error","start_time","end_time","elapsed_seconds"
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_tools/file_list.R","FAILED","Error: Non-canonical Sheet1 naming formula(s): E282, F282, E283, F283, E284, F284, E285, F285, F672. Review explicitly; file_list.R will not overwrite them.
-Execution halted","2026-10-31 19:22:39.705103","2026-10-31 19:22:42.365993",2.66089010238647
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_tools/file_list.R","FAILED","Error: Non-canonical Sheet1 naming formula(s): E295, F295, E296, F296, E297, F297, E298, F298, F712. Review explicitly; file_list.R will not overwrite them.
+Execution halted","2026-11-02 23:34:20.983705","2026-11-02 23:34:23.927895",2.94419002532959
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Mayer_etal_2019/Mayer_etal_2019_Fig6.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
 Calls: read.csv -> read.table -> file
 In addition: Warning message:
 In file(file, ""rt"") :
   cannot open file 'Mayer_etal_2019_Fig6_pdf_transcription.csv': No such file or directory
-Execution halted","2026-10-31 19:37:14.008934","2026-10-31 19:37:14.334907",0.325973033905029
+Execution halted","2026-11-02 23:49:46.52722","2026-11-02 23:49:46.970315",0.443094968795776
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Sherwood_etal_2020/Sherwood2020_Karl2024_correlation.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
+Calls: read.csv -> read.table -> file
+In addition: Warning message:
+In file(file, ""rt"") :
+  cannot open file '/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Sherwood_etal_2020/Sherwood_etal_2020_SuppTable2.csv': No such file or directory
+Execution halted","2026-11-02 23:52:49.480946","2026-11-02 23:52:49.739558",0.258611917495728
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/VanEssen_Drury_1997/VanEssen_Drury_1997_CitedV1Ranges.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
 Calls: read.csv -> read.table -> file
 In addition: Warning message:
 In file(file, ""rt"") :
   cannot open file 'VanEssen_Drury_1997_CitedV1Ranges_pdf_transcription.csv': No such file or directory
-Execution halted","2026-10-31 19:40:57.696556","2026-10-31 19:40:57.966319",0.269762992858887
+Execution halted","2026-11-02 23:54:00.636552","2026-11-02 23:54:00.972771",0.33621883392334
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Westergaard_Hyatt_1994/archive/Westergaard_Hyatt_1994_Figures1and2.R","FAILED","Error in file(filename, ""r"", encoding = encoding) : 
   cannot open the connection
 Calls: source -> file
 In addition: Warning message:
 In file(filename, ""r"", encoding = encoding) :
   cannot open file '/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Westergaard_Hyatt_1994/_helpers/build_source_table.R': No such file or directory
-Execution halted","2026-10-31 19:41:10.549453","2026-10-31 19:41:10.84147",0.292016983032227
+Execution halted","2026-11-02 23:54:16.001345","2026-11-02 23:54:16.267963",0.266618013381958
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Young_etal_2013/Young_etal_2013_ResultsTextSurface.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
 Calls: read.csv -> read.table -> file
 In addition: Warning message:
 In file(file, ""rt"") :
   cannot open file 'Young_etal_2013_ResultsTextSurface_pdf_transcription.csv': No such file or directory
-Execution halted","2026-10-31 19:41:19.385463","2026-10-31 19:41:19.649006",0.263542890548706
+Execution halted","2026-11-02 23:54:24.896592","2026-11-02 23:54:25.226007",0.329415082931519
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__ShinyApp/build_data.R","FAILED","repo: /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data
 out:  /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__ShinyApp/data
 Error: data/ must not duplicate canonical repo files, but these do:
   supplementary_long.csv  (canonical: __merging_supplementary/supplementary_long.csv)
 Delete them from data/ and let the app read the canonical copy.
-Execution halted","2026-10-31 19:41:54.460971","2026-10-31 19:41:54.799909",0.338937997817993
+Execution halted","2026-11-02 23:55:02.591741","2026-11-02 23:55:02.969663",0.37792181968689
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_brain_mass/brain_mass_compiled.R","FAILED","Error: no measurement basis on record for 10.1002%2Fajp.20898_TABLEI.tsv / brain_mass_g (paper folder 'Graham__2011'). Add it to ASSIGN in _keys/build_brain_size_basis.py and re-run that builder.
-Execution halted","2026-10-31 19:42:23.403357","2026-10-31 19:42:28.412227",5.00886988639832
+Execution halted","2026-11-02 23:55:33.596875","2026-11-02 23:55:39.235265",5.6383900642395
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_sensory/sensory_compiled.R","FAILED","Warning messages:
+1: In x[nzchar(x)] <- str_split(x, "";"")[[1]][nzchar(str_split(x, "";"")[[1]])] :
+  number of items to replace is not a multiple of replacement length
+2: In x[nzchar(x)] <- str_split(x, "";"")[[1]][nzchar(str_split(x, "";"")[[1]])] :
+  number of items to replace is not a multiple of replacement length
+3: In x[nzchar(x)] <- str_split(x, "";"")[[1]][nzchar(str_split(x, "";"")[[1]])] :
+  number of items to replace is not a multiple of replacement length
+4: In x[nzchar(x)] <- str_split(x, "";"")[[1]][nzchar(str_split(x, "";"")[[1]])] :
+  number of items to replace is not a multiple of replacement length
+5: In x[nzchar(x)] <- str_split(x, "";"")[[1]][nzchar(str_split(x, "";"")[[1]])] :
+  number of items to replace is not a multiple of replacement length
+Error in `$<-.data.frame`(`*tmp*`, ""paper"", value = ""Grande__1980"") : 
+  replacement has 1 row, data has 0
+Calls: bind_rows -> list2 -> lapply -> FUN -> $<- -> $<-.data.frame
+Execution halted","2026-11-02 23:56:04.678326","2026-11-02 23:56:06.488684",1.81035804748535
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/volumes_compiled_select_DeCasien.R","FAILED","Error: 31 source(s) and 1433 species-region cell(s) still need review. Audits were written; NO final long/wide/analysis table was produced. Missing regional Ns and independently unavailable measurements were not fabricated.
-Execution halted","2026-10-31 19:44:07.754779","2026-10-31 19:44:12.422001",4.66722178459167
+Execution halted","2026-11-02 23:57:19.762315","2026-11-02 23:57:24.526443",4.76412796974182
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/volumes_compiled.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
 ✔ dplyr     1.2.1     ✔ readr     2.2.0
 ✔ forcats   1.0.1     ✔ stringr   1.6.0
@@ -46,13 +67,9 @@ Execution halted","2026-10-31 19:44:07.754779","2026-10-31 19:44:12.422001",4.66
 ✖ dplyr::filter() masks stats::filter()
 ✖ dplyr::lag()    masks stats::lag()
 ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
-New names:
-• `` -> `...35`
-• `` -> `...36`
-• `` -> `...37`
 Laterality guard OK: 36 one-side column(s) correctly suffixed, 12 author-doubled column(s) correctly unsuffixed (of the tables this merge reads).
 Error: paper_long('Stephan_etal_1970_TABLE1'): no measured columns matched the term map. df cols: Species, group, body_weight_g, brain_weight_mg, total_brain_net_mm3, medulla_oblongata_mm3, cerebellum_mm3, mesencephalon_mm3, diencephalon_mm3, telencephalon_mm3, source
-Execution halted","2026-10-31 19:44:14.964542","2026-10-31 19:44:16.136791",1.17224907875061
+Execution halted","2026-11-02 23:57:27.209088","2026-11-02 23:57:28.452479",1.24339079856873
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_tools/build_coverage_index.R","FAILED","Warning message:
 Unknown or uninitialised column: `accepted_name`. 
 Error in `transmute()`:
@@ -74,191 +91,43 @@ Backtrace:
  11. └─base::.handleSimpleError(...)
  12.   └─dplyr (local) h(simpleError(msg, call))
  13.     └─rlang::abort(message, class = error_class, parent = parent, call = error_call)
-Execution halted","2026-10-31 19:44:43.728375","2026-10-31 19:44:44.715755",0.987380027770996
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_tools/build_nick_fran_sources.R","FAILED","New names:
-• `` -> `...35`
-• `` -> `...36`
-• `` -> `...37`
-Norlén_etal_2019_Table1: 41 rows, CSV + public TSV
-New names:
-• `` -> `...35`
-• `` -> `...36`
-• `` -> `...37`
+Execution halted","2026-11-02 23:57:57.873763","2026-11-02 23:57:58.881291",1.00752782821655
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_tools/build_nick_fran_sources.R","FAILED","Norlén_etal_2019_Table1: 41 rows, CSV + public TSV
 RedinHurtado_etal_2023_Table1: 42 rows, CSV + public TSV
-New names:
-• `` -> `...35`
-• `` -> `...36`
-• `` -> `...37`
 Carnes_etal_2011_TableS1: 71 rows, CSV + public TSV
-New names:
-• `` -> `...35`
-• `` -> `...36`
-• `` -> `...37`
 Lindenfors_etal_2007_AdditionalFile1: 21 rows, CSV + public TSV
-New names:
-• `` -> `...35`
-• `` -> `...36`
-• `` -> `...37`
 Chang_etal_2017_Table1: 9 rows, CSV + public TSV
-New names:
-• `` -> `...35`
-• `` -> `...36`
-• `` -> `...37`
 Kowiański_etal_1999_Table1: 9 rows, CSV + public TSV
-New names:
-• `` -> `...35`
-• `` -> `...36`
-• `` -> `...37`
 Kowiański_etal_1999_Table2: 9 rows, CSV + public TSV
-New names:
-• `` -> `...35`
-• `` -> `...36`
-• `` -> `...37`
 Simmen_Hladik_1998_Table1: 38 rows, CSV + public TSV
-New names:
-• `` -> `...35`
-• `` -> `...36`
-• `` -> `...37`
 Laska_etal_2009_Table1: 3 rows, CSV + public TSV
-New names:
-• `` -> `...35`
-• `` -> `...36`
-• `` -> `...37`
 Laska_etal_2003_Table1: 4 rows, CSV + public TSV
-New names:
-• `` -> `...35`
-• `` -> `...36`
-• `` -> `...37`
 Simmen_Charlot_2003_Figure1: 3 rows, CSV + public TSV
-New names:
-• `` -> `...35`
-• `` -> `...36`
-• `` -> `...37`
 Simmen_Charlot_2003_Figure2: 2 rows, CSV + public TSV
-New names:
-• `` -> `...35`
-• `` -> `...36`
-• `` -> `...37`
 Norlén_etal_2019_Figure3: 2 rows, CSV + public TSV
-New names:
-• `` -> `...35`
-• `` -> `...36`
-• `` -> `...37`
 Laska_etal_2008_Figure5: 4 rows, CSV + public TSV
-New names:
-• `` -> `...35`
-• `` -> `...36`
-• `` -> `...37`
 Mallavarapu__2001_ResultsText: 3 rows, CSV + public TSV
-New names:
-• `` -> `...35`
-• `` -> `...36`
-• `` -> `...37`
 Bartlett__2003_Figure4: 3 rows, CSV + public TSV
-New names:
-• `` -> `...35`
-• `` -> `...36`
-• `` -> `...37`
 Smaers_etal_2011_b_Table2: 19 rows, CSV + public TSV
-New names:
-• `` -> `...35`
-• `` -> `...36`
-• `` -> `...37`
 Smaers_etal_2013_Table1: 25 rows, CSV + public TSV
-New names:
-• `` -> `...35`
-• `` -> `...36`
-• `` -> `...37`
 Suarez_Gallup_1981_Table2: 2 rows, CSV + public TSV
-New names:
-• `` -> `...35`
-• `` -> `...36`
-• `` -> `...37`
 Posada_Colell_2007_TableI: 9 rows, CSV + public TSV
-New names:
-• `` -> `...35`
-• `` -> `...36`
-• `` -> `...37`
 Povinelli_etal_1993_Table5: 30 rows, CSV + public TSV
-New names:
-• `` -> `...35`
-• `` -> `...36`
-• `` -> `...37`
 Suddendorf_CollierBaker_2009_Table1: 18 rows, CSV + public TSV
-New names:
-• `` -> `...35`
-• `` -> `...36`
-• `` -> `...37`
 Lethmate_Dücker_1973_Table4: 14 rows, CSV + public TSV
-New names:
-• `` -> `...35`
-• `` -> `...36`
-• `` -> `...37`
 InoueNakamura__1997_Table3: 25 rows, CSV + public TSV
-New names:
-• `` -> `...35`
-• `` -> `...36`
-• `` -> `...37`
 Gallup__1970_Figure4: 2 rows, CSV + public TSV
-New names:
-• `` -> `...35`
-• `` -> `...36`
-• `` -> `...37`
 Reiss_Marino_2001_Figure3: 1 rows, CSV + public TSV
-New names:
-• `` -> `...35`
-• `` -> `...36`
-• `` -> `...37`
 Plotnik_etal_2006_Figure3: 1 rows, CSV + public TSV
-New names:
-• `` -> `...35`
-• `` -> `...36`
-• `` -> `...37`
 Chang_etal_2015_Figure2: 7 rows, CSV + public TSV
-New names:
-• `` -> `...35`
-• `` -> `...36`
-• `` -> `...37`
 Chang_etal_2017_Figure2: 3 rows, CSV + public TSV
-New names:
-• `` -> `...35`
-• `` -> `...36`
-• `` -> `...37`
 Kerney_etal_2017_OnlineResource1: 8 rows, CSV + public TSV
-New names:
-• `` -> `...35`
-• `` -> `...36`
-• `` -> `...37`
 Kerney_etal_2017_OnlineResource2: 19 rows, CSV + public TSV
-New names:
-• `` -> `...35`
-• `` -> `...36`
-• `` -> `...37`
 Norlén_etal_2019_Figure2: 11 rows, CSV + public TSV
-New names:
-• `` -> `...35`
-• `` -> `...36`
-• `` -> `...37`
 Bartlett__2003_Figure5: 12 rows, CSV + public TSV
-New names:
-• `` -> `...35`
-• `` -> `...36`
-• `` -> `...37`
 Suarez_Gallup_1981_Figure3: 4 rows, CSV + public TSV
-New names:
-• `` -> `...35`
-• `` -> `...36`
-• `` -> `...37`
 Suarez_Gallup_1981_Figure7: 2 rows, CSV + public TSV
-New names:
-• `` -> `...35`
-• `` -> `...36`
-• `` -> `...37`
 Suarez_Gallup_1981_Figure11: 2 rows, CSV + public TSV
-New names:
-• `` -> `...35`
-• `` -> `...36`
-• `` -> `...37`
 Chang_etal_2015_Figure4: 4 rows, CSV + public TSV
 Warning message:
 In build_source_table(file.path(base, x$folder), x$item, base) :
@@ -267,9 +136,9 @@ taste: 232 observations -> 159 selected cells; 5 cells retain conflicting/altern
 social_mirror_play: 549 observations -> 517 selected cells; 24 cells retain conflicting/alternative reports
 claustrum_cerebellar: 100 observations -> 82 selected cells; 0 cells retain conflicting/alternative reports
 Warning messages:
-1: resolve_species: 25 duplicate (source_publication, variant_name) spoke row(s) ignored (first wins), e.g. Sherwood_etal_2020 / Alouatta_caraya 
-2: resolve_species: 25 duplicate (source_publication, variant_name) spoke row(s) ignored (first wins), e.g. Sherwood_etal_2020 / Alouatta_caraya 
-3: resolve_species: 25 duplicate (source_publication, variant_name) spoke row(s) ignored (first wins), e.g. Sherwood_etal_2020 / Alouatta_caraya 
+1: resolve_species: 26 duplicate (source_publication, variant_name) spoke row(s) ignored (first wins), e.g. Sherwood_etal_2020 / Alouatta_caraya 
+2: resolve_species: 26 duplicate (source_publication, variant_name) spoke row(s) ignored (first wins), e.g. Sherwood_etal_2020 / Alouatta_caraya 
+3: resolve_species: 26 duplicate (source_publication, variant_name) spoke row(s) ignored (first wins), e.g. Sherwood_etal_2020 / Alouatta_caraya 
 Warning message:
 In left_join(., anat, by = "".struct_key"") :
   Detected an unexpected many-to-many relationship between `x` and `y`.
@@ -277,8 +146,8 @@ In left_join(., anat, by = "".struct_key"") :
 ℹ Row 85 of `y` matches multiple rows in `x`.
 ℹ If a many-to-many relationship is expected, set `relationship =
   ""many-to-many""` to silence this warning.
-variable_catalog.csv: 4489 measured variables from 361 papers
-compatibility groups: 1654  | poolable (>=2 papers): 283
+variable_catalog.csv: 5058 measured variables from 383 papers
+compatibility groups: 1767  | poolable (>=2 papers): 349
 repo: /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data
 out:  /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__ShinyApp/data
 Error: data/ must not duplicate canonical repo files, but these do:
@@ -286,52 +155,20 @@ Error: data/ must not duplicate canonical repo files, but these do:
 Delete them from data/ and let the app read the canonical copy.
 Execution halted
 Error: Build failed: __ShinyApp/build_data.R
-Execution halted","2026-10-31 19:44:44.723044","2026-10-31 19:44:54.501092",9.77804803848267
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_item_name_resolution.R","FAILED","New names:
-• `` -> `...35`
-• `` -> `...36`
-• `` -> `...37`
-registry Item names: 915   |   TSVs on disk: 868   |   NA.tsv present: no
-
-__merging_behaviour/behaviour_compiled.R                     0 item name(s) referenced   OK
-__merging_behaviour/social_mirror_play_compiled.R            0 item name(s) referenced   OK
-__merging_body_ecology/body_ecology_compiled.R               0 item name(s) referenced   OK
-__merging_brain_mass/brain_mass_compiled.R                   0 item name(s) referenced   OK
-__merging_cell_morphology/cell_morphology_compiled.R        18 item name(s) referenced   OK
-__merging_cellcounts/cellcounts_compiled.R                  15 item name(s) referenced   OK
-__merging_cerebellar_folding/cerebellar_folding_compiled.R   0 item name(s) referenced   OK
-__merging_cortical_areas/cortical_areas_compiled.R          22 item name(s) referenced   OK
-__merging_cortical_layers/cortical_layers_compiled.R         1 item name(s) referenced   OK
-__merging_fossil_brain_glucose/fossil_brain_glucose_compiled.R   0 item name(s) referenced   OK
-__merging_gyrification/gyrification_compiled.R               3 item name(s) referenced   OK
-__merging_life_history/life_history_compiled.R               0 item name(s) referenced   OK
-__merging_sensory/sensory_compiled.R                         5 item name(s) referenced   OK
-__merging_sensory/taste_compiled.R                           0 item name(s) referenced   OK
-__merging_sleep/sleep_compiled.R                             4 item name(s) referenced   OK
-__merging_supplementary/supplementary_compiled.R             0 item name(s) referenced   OK
-__merging_volumes/claustrum_cerebellar_compiled.R            0 item name(s) referenced   OK
-__merging_volumes/volumes_compiled_select.R                 34 item name(s) referenced   OK
-__merging_volumes/volumes_compiled.R                        72 item name(s) referenced   OK
-
-orphaned TSVs (on disk, claimed by no registry row): 0
-rows with a citation but no Item name (need _tools/file_list.R): 4
-      Sheet1 row 943: Karlsen, A. S., & Pakkenberg, B. (2011). Total numbers of ne...
-      Sheet1 row 944: Karlsen, A. S., & Pakkenberg, B. (2011). Total numbers of ne...
-      Sheet1 row 945: Mackes, N. K., Golm, D., Sarkar, S., Kumsta, R., Rutter, M.,...
-      Sheet1 row 946: Walhovd, K. B., Westlye, L. T., Amlien, I., Espeseth, T., Re...
-
-all referenced item names resolve to a TSV on disk.
-run _tools/restore_registry_rows.R (adding any new row to its ROWS list), then _tools/file_list.R.","2026-10-31 19:45:44.771637","2026-10-31 19:45:45.622999",0.851361989974976
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_trait_authority.R","FAILED","158 of 1355 variables have no row in _keys/variable_definitions.csv (source: local).
-  A1_Surface_Area.mm2 | A1_Surface_Area.pct_Neocortex | Adult_females.N (N) | Adult_males.N (N) | Amygdala_centromedial_Vol.mm3 | Amygdala_laterobasal_Vol.mm3 | Amygdala_superficial_Vol.mm3 | Breeding_season.d (d) ... and 150 more
+Execution halted","2026-11-02 23:57:58.890235","2026-11-02 23:58:08.738078",9.84784317016602
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_tools/registry_apply.R","FAILED","Error in col_of(ed$column[i]) : 
+  No Sheet1 column named 'Snapshot name if unchanged'
+Execution halted","2026-11-02 23:58:08.744138","2026-11-02 23:58:09.452487",0.708348989486694
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_trait_authority.R","FAILED","162 of 1359 variables have no row in _keys/variable_definitions.csv (source: local).
+  A1_Surface_Area.mm2 | A1_Surface_Area.pct_Neocortex | Adult_females.N (N) | Adult_males.N (N) | Amygdala_centromedial_Vol.mm3 | Amygdala_laterobasal_Vol.mm3 | Amygdala_superficial_Vol.mm3 | Breeding_season.d (d) ... and 154 more
   Fix: Rscript _keys/build_variable_definitions.R && Rscript __ShinyApp/build_data.R
-Brain structures: 816 structure-level variables, 650 species comparable. Reconciliation: 179 candidate pairs.
-trait_authority.csv: 1355 rows | app labels: 1355
+Brain structures: 820 structure-level variables, 650 species comparable. Reconciliation: 179 candidate pairs.
+trait_authority.csv: 1359 rows | app labels: 1359
 
                     adjudicated adopted_from_variable_canonical 
                              11                              29 
            auto_single_producer 
-                           1315 
+                           1319 
 
 ----------------------------------------------------------------------
 FAIL  VALIDITY: 130 row(s) name an authority that does not produce that label:
@@ -467,15 +304,15 @@ FAIL  VALIDITY: 130 row(s) name an authority that does not produce that label:
     Tannic_acid_inhibition_threshold (mM) -> __merging_sensory  (actual producers: )
 
 Error: check_trait_authority.R: 1 guard(s) failed.
-Execution halted","2026-10-31 19:45:46.097564","2026-10-31 19:45:51.769789",5.67222499847412
+Execution halted","2026-11-02 23:59:00.913444","2026-11-02 23:59:06.62974",5.71629595756531
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/social_variables/check_population_censuses.R","FAILED","Error: length(args) == 2 is not TRUE
-Execution halted","2026-10-31 19:49:30.940395","2026-10-31 19:49:31.292223",0.35182785987854
+Execution halted","2026-11-03 00:03:36.623921","2026-11-03 00:03:36.903748",0.279827117919922
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/social_variables/check_social_expansion.R","FAILED","Error: length(args) == 2 is not TRUE
-Execution halted","2026-10-31 19:49:31.303931","2026-10-31 19:49:31.513661",0.209729909896851
+Execution halted","2026-11-03 00:03:36.915798","2026-11-03 00:03:37.2199",0.304101943969727
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/social_variables/check_zhu_coverage.R","FAILED","Error: length(args) == 2 is not TRUE
-Execution halted","2026-10-31 19:49:31.526221","2026-10-31 19:49:31.741298",0.215076923370361
+Execution halted","2026-11-03 00:03:37.228152","2026-11-03 00:03:37.55314",0.324987888336182
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/social_variables/compare_coverage.R","FAILED","Error: length(a) == 2 is not TRUE
-Execution halted","2026-10-31 19:49:31.752145","2026-10-31 19:49:31.945999",0.193853855133057
+Execution halted","2026-11-03 00:03:37.563353","2026-11-03 00:03:37.93202",0.368666887283325
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/social_variables/load_app.R","FAILED","
 Attaching package: ‘bslib’
 
@@ -490,11 +327,11 @@ The following objects are masked from ‘package:shiny’:
 
     dataTableOutput, renderDataTable
 
-158 of 1355 variables have no row in _keys/variable_definitions.csv (source: local).
-  A1_Surface_Area.mm2 | A1_Surface_Area.pct_Neocortex | Adult_females.N (N) | Adult_males.N (N) | Amygdala_centromedial_Vol.mm3 | Amygdala_laterobasal_Vol.mm3 | Amygdala_superficial_Vol.mm3 | Breeding_season.d (d) ... and 150 more
+162 of 1359 variables have no row in _keys/variable_definitions.csv (source: local).
+  A1_Surface_Area.mm2 | A1_Surface_Area.pct_Neocortex | Adult_females.N (N) | Adult_males.N (N) | Amygdala_centromedial_Vol.mm3 | Amygdala_laterobasal_Vol.mm3 | Amygdala_superficial_Vol.mm3 | Breeding_season.d (d) ... and 154 more
   Fix: Rscript _keys/build_variable_definitions.R && Rscript __ShinyApp/build_data.R
-Brain structures: 816 structure-level variables, 650 species comparable. Reconciliation: 179 candidate pairs.
+Brain structures: 820 structure-level variables, 650 species comparable. Reconciliation: 179 candidate pairs.
 Error in if (length(file) != 1 || file == """") stop(gettextf(""'%s' must be a non-empty character string"",  : 
   missing value where TRUE/FALSE needed
 Calls: saveRDS
-Execution halted","2026-10-31 19:49:31.966126","2026-10-31 19:49:37.332782",5.36665606498718
+Execution halted","2026-11-03 00:03:37.941884","2026-11-03 00:03:44.037049",6.09516501426697

@@ -62,6 +62,22 @@ KAUF_SOKOLOFF_PRINTED = {
 }
 
 
+MANIFEST_NAME = "primary_item_ingestion_manifest.csv"
+# Fixed counts after the 2026-11 primary-item extension (pre-extension:
+# 2,161 provenance / 1,444 pool / 235 cells / 44 dedupe / 335 primary works /
+# 339 cited works / 2,361 links).
+EXPECTED = {
+    "manifest": 261, "manifest_pool": 106, "unfiltered": 2422, "pool": 1547,
+    "merged": 254, "dedupe": 95, "registry": 339, "cited_registry": 345, "links": 2622,
+    "dedupe_kennedy_1978": 14, "dedupe_passero_1981": 15,
+}
+PRIMARY_CHECK_EXCLUSIONS = {
+    "Karbowski__2007:TableS21:1:CMRgl": "primary_check_value_not_in_primary",
+    "Kaufman__2004:TableA6:70:CMRgl": "primary_check_compilation_error",
+    "Karbowski__2007:TableS2:11:CMRgl": "primary_check_contradicts_primary",
+}
+
+
 def read(name):
     with (HERE / name).open(newline="", encoding="utf-8-sig") as handle:
         return list(csv.DictReader(handle))
@@ -146,10 +162,28 @@ def validate_raw_value_round_trip(unfiltered):
     cache = {}
     karb_snapshot = karbowski_snapshot_cells()
     karb_printed = {}
+    item_cells = {}
+    manifest = {row["record_id"]: row for row in read(MANIFEST_NAME)}
     for row in unfiltered:
         compilation = row["Compilation"]
         table = row["Table"]
         source_row = int(row["source_row"])
+        if row["record_id"] in manifest:
+            # Primary items and Mink 1981: every printed lexeme must be a cell of the
+            # named public item CSV, and the row must mirror its manifest entry.
+            entry = manifest[row["record_id"]]
+            assert compilation == entry["Compilation"] and table == entry["item_name"]
+            assert row["Value_raw"] == entry["Value_raw"] and row["SD_raw"] == entry["SD_raw"]
+            assert math.isclose(float(row["Value"]), float(entry["Value"]), abs_tol=1e-9)
+            path = BASE / compilation / f"{table}.csv"
+            if path not in item_cells:
+                item_cells[path] = {
+                    value.strip() for source in source_rows(path) for value in source.values()
+                    if value is not None
+                }
+            for lexeme in row["Value_raw"].split(" | "):
+                assert lexeme.strip() in item_cells[path], (row["record_id"], lexeme)
+            continue
         if compilation == "Kaufman__2004":
             path = BASE / "Kaufman__2004" / f"Kaufman__2004_{table}.csv"
             value_column, sd_column, printed_value_column, printed_sd_column = kauf_columns[row["Measure"]]
@@ -271,7 +305,10 @@ def validate_reconciliation(unfiltered, merged, dedupe, registry, wide):
         reports_by_primary_cell[key].append(index)
         reporting_by_primary_cell[key].add(row["Compilation"])
 
-    priority = {"Heiss_etal_2004": 0, "Kaufman__2004": 1, "Karbowski__2007": 2}
+    priority = {"Heiss_etal_2004": 0, "Kaufman__2004": 1, "Karbowski__2007": 2,
+                "Mink_etal_1981": 3}
+    priority.update({row["Compilation"]: 0 for row in unfiltered
+                     if row["compilation_role"] == "primary_study"})
     dropped_indices = set()
     expected_dedupe = {}
     for key, indices in reports_by_primary_cell.items():
@@ -393,14 +430,31 @@ def check():
     shiny_path = BASE / "__ShinyApp/data/cerebral_metabolic_rate_long.csv"
     shiny_copy = source_rows(shiny_path) if shiny_path.exists() else None
 
-    assert len(unfiltered) == 2161
-    assert sum(row["include_in_primary_merge"] == "True" for row in unfiltered) == 1444
-    assert len(merged) == 235
-    assert len(dedupe) == 44
-    assert len(registry) == 335
-    assert len(cited_registry) == 339
-    assert len(links) == 2361
+    manifest = read(MANIFEST_NAME)
+    assert len(manifest) == EXPECTED["manifest"]
+    assert sum(row["include_in_primary_merge"] == "True" for row in manifest) == EXPECTED["manifest_pool"]
+    assert len(unfiltered) == EXPECTED["unfiltered"]
+    assert sum(row["include_in_primary_merge"] == "True" for row in unfiltered) == EXPECTED["pool"]
+    assert len(merged) == EXPECTED["merged"]
+    assert len(dedupe) == EXPECTED["dedupe"]
+    assert len(registry) == EXPECTED["registry"]
+    assert len(cited_registry) == EXPECTED["cited_registry"]
+    assert len(links) == EXPECTED["links"]
     assert len(issues) == 5
+    # Mink 1981 is a secondary compilation: provenance only, never pooled.
+    mink = [row for row in unfiltered if row["Compilation"] == "Mink_etal_1981"]
+    assert len(mink) == 8 and all(row["include_in_primary_merge"] == "False" for row in mink)
+    # Primary-item rows enter only as direct/hemisphere-mean primary reports.
+    assert all(
+        row["derivation_role"] in {"direct_primary", "primary_hemisphere_mean"}
+        for row in unfiltered
+        if row["compilation_role"] == "primary_study" and row["include_in_primary_merge"] == "True"
+    )
+    # Compilation rows shown by the primary-item audit to be unsupported stay out.
+    by_id = {row["record_id"]: row for row in unfiltered}
+    for record_id, reason in PRIMARY_CHECK_EXCLUSIONS.items():
+        assert by_id[record_id]["include_in_primary_merge"] == "False"
+        assert by_id[record_id]["exclusion_reason"] == reason
     assert len(arm_report) == 77
     if shiny_copy is not None:
         assert shiny_copy == merged
@@ -586,8 +640,8 @@ def check():
         "kennedy_1978": {"Macaca mulatta"},
         "passero_1981": {"Oryctolagus cuniculus"},
     }
-    assert sum(row["primary_reference_id"] == "kennedy_1978" for row in dedupe) == 3
-    assert sum(row["primary_reference_id"] == "passero_1981" for row in dedupe) == 5
+    assert sum(row["primary_reference_id"] == "kennedy_1978" for row in dedupe) == EXPECTED["dedupe_kennedy_1978"]
+    assert sum(row["primary_reference_id"] == "passero_1981" for row in dedupe) == EXPECTED["dedupe_passero_1981"]
     karbowski = [row for row in unfiltered if row["Compilation"] == "Karbowski__2007"]
     karbowski_condition_overrides = [
         row for row in karbowski
@@ -738,7 +792,8 @@ def check():
     assert all(row["reference_id"] in cited_registry_ids for row in links)
     assert all(row["reference_level"] == "primary" for row in registry)
     assert cited_registry_ids - registry_ids == {
-        "dastur_1985", "clarke_1994", "sokoloff_1984", "madsen_1993"
+        "dastur_1985", "clarke_1994", "sokoloff_1984", "madsen_1993",
+        "kety_1957", "mcilwain_1956",  # cited only by Mink 1981 (provenance)
     }
     assert {
         row["reference_id"]: (row["reference_level"], row["source_type"])
@@ -748,6 +803,8 @@ def check():
         "clarke_1994": ("secondary", "book_chapter"),
         "sokoloff_1984": ("secondary", "book"),
         "madsen_1993": ("secondary", "pooled_reanalysis"),
+        "kety_1957": ("secondary", "book_chapter"),
+        "mcilwain_1956": ("secondary", "review"),
     }
     links_by_record = {}
     for link in links:

@@ -1,0 +1,8 @@
+"organ_as_published","KWx_as_printed","correlation_as_printed","K_printed","exponent_printed","correlation_printed","note"
+"Liver","0.39W^0.70","0.97",0.39,0.7,0.97,NA
+"Kidneys","0.066W^0.71","0.97",0.066,0.71,0.97,NA
+"Brain","0.76W^0.71","0.94",0.76,0.71,0.94,NA
+"Heart","0.03W^0.88","0.96",0.03,0.88,0.96,NA
+"Lung","0.016W^0.92","0.97",0.016,0.92,0.97,NA
+"All 5 organs","0.406W^0.77","0.97",0.406,0.77,0.97,NA
+"All orga minus lung","0.448W^[cut]","0.[cut]",NA,NA,NA,"cut off at the right edge of the scan"

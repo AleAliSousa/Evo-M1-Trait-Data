@@ -1,0 +1,67 @@
+"printed_row","structure_order","section_as_published","structure_as_published","group_as_published","column_as_published","arm_id","n","cell_as_printed","mean_printed","dispersion_printed","dispersion_type","footnote_marks","measure","unit_as_printed","value_numeric","dispersion_numeric","CMRglc.umol_100g_min","species_as_published","note"
+5,1,NA,"Visual cortex",NA,"Control (n = 5)","control",5,"76.4 ± 8.8","76.4","8.8","SE",NA,"CMRglc","µmol/100 g/min",76.4,8.8,76.4,"rabbits (New Zealand White)",NA
+5,1,NA,"Visual cortex",NA,"Hypnosis (n = 5)","hypnosis",5,"50.3 ± 7.1","50.3","7.1","SE",NA,"CMRglc","µmol/100 g/min",50.3,7.1,50.3,"rabbits (New Zealand White)",NA
+5,1,NA,"Visual cortex",NA,"% Decrease","pct_decrease_hypnosis",5,"34.1**","34.1",NA,NA,"**","CMRglc_pct_decrease","% of control",34.1,NA,NA,"rabbits (New Zealand White)","Stars: * P < 0.05; ** P < 0.01; *** P < 0.005 by Student's t-test (hypnosis vs control)."
+6,2,NA,"Auditory cortex",NA,"Control (n = 5)","control",5,"102.3 ± 9.6","102.3","9.6","SE",NA,"CMRglc","µmol/100 g/min",102.3,9.6,102.3,"rabbits (New Zealand White)",NA
+6,2,NA,"Auditory cortex",NA,"Hypnosis (n = 5)","hypnosis",5,"80.1 ± 9.8","80.1","9.8","SE",NA,"CMRglc","µmol/100 g/min",80.1,9.8,80.1,"rabbits (New Zealand White)",NA
+6,2,NA,"Auditory cortex",NA,"% Decrease","pct_decrease_hypnosis",5,"21.7*","21.7",NA,NA,"*","CMRglc_pct_decrease","% of control",21.7,NA,NA,"rabbits (New Zealand White)","Stars: * P < 0.05; ** P < 0.01; *** P < 0.005 by Student's t-test (hypnosis vs control)."
+7,3,NA,"Parietal cortex",NA,"Control (n = 5)","control",5,"73.1 ± 7.8","73.1","7.8","SE",NA,"CMRglc","µmol/100 g/min",73.1,7.8,73.1,"rabbits (New Zealand White)",NA
+7,3,NA,"Parietal cortex",NA,"Hypnosis (n = 5)","hypnosis",5,"55.7 ± 3.4","55.7","3.4","SE",NA,"CMRglc","µmol/100 g/min",55.7,3.4,55.7,"rabbits (New Zealand White)",NA
+7,3,NA,"Parietal cortex",NA,"% Decrease","pct_decrease_hypnosis",5,"23.8*","23.8",NA,NA,"*","CMRglc_pct_decrease","% of control",23.8,NA,NA,"rabbits (New Zealand White)","Stars: * P < 0.05; ** P < 0.01; *** P < 0.005 by Student's t-test (hypnosis vs control)."
+8,4,NA,"Sensory cortex",NA,"Control (n = 5)","control",5,"75.4 ± 7.5","75.4","7.5","SE",NA,"CMRglc","µmol/100 g/min",75.4,7.5,75.4,"rabbits (New Zealand White)",NA
+8,4,NA,"Sensory cortex",NA,"Hypnosis (n = 5)","hypnosis",5,"45.6 ± 6.8","45.6","6.8","SE",NA,"CMRglc","µmol/100 g/min",45.6,6.8,45.6,"rabbits (New Zealand White)",NA
+8,4,NA,"Sensory cortex",NA,"% Decrease","pct_decrease_hypnosis",5,"39.5***","39.5",NA,NA,"***","CMRglc_pct_decrease","% of control",39.5,NA,NA,"rabbits (New Zealand White)","Stars: * P < 0.05; ** P < 0.01; *** P < 0.005 by Student's t-test (hypnosis vs control)."
+9,5,NA,"Motor cortex",NA,"Control (n = 5)","control",5,"89.9 ± 6.2","89.9","6.2","SE",NA,"CMRglc","µmol/100 g/min",89.9,6.2,89.9,"rabbits (New Zealand White)",NA
+9,5,NA,"Motor cortex",NA,"Hypnosis (n = 5)","hypnosis",5,"63.2 ± 6.2","63.2","6.2","SE",NA,"CMRglc","µmol/100 g/min",63.2,6.2,63.2,"rabbits (New Zealand White)",NA
+9,5,NA,"Motor cortex",NA,"% Decrease","pct_decrease_hypnosis",5,"29.7***","29.7",NA,NA,"***","CMRglc_pct_decrease","% of control",29.7,NA,NA,"rabbits (New Zealand White)","Stars: * P < 0.05; ** P < 0.01; *** P < 0.005 by Student's t-test (hypnosis vs control)."
+10,6,NA,"Thalamus",NA,"Control (n = 5)","control",5,"80.1 ± 5.9","80.1","5.9","SE",NA,"CMRglc","µmol/100 g/min",80.1,5.9,80.1,"rabbits (New Zealand White)",NA
+10,6,NA,"Thalamus",NA,"Hypnosis (n = 5)","hypnosis",5,"61.6 ± 1.9","61.6","1.9","SE",NA,"CMRglc","µmol/100 g/min",61.6,1.9,61.6,"rabbits (New Zealand White)",NA
+10,6,NA,"Thalamus",NA,"% Decrease","pct_decrease_hypnosis",5,"23.1***","23.1",NA,NA,"***","CMRglc_pct_decrease","% of control",23.1,NA,NA,"rabbits (New Zealand White)","Stars: * P < 0.05; ** P < 0.01; *** P < 0.005 by Student's t-test (hypnosis vs control)."
+11,7,NA,"Medial geniculate body",NA,"Control (n = 5)","control",5,"108.2 ± 1.9","108.2","1.9","SE",NA,"CMRglc","µmol/100 g/min",108.2,1.9,108.2,"rabbits (New Zealand White)",NA
+11,7,NA,"Medial geniculate body",NA,"Hypnosis (n = 5)","hypnosis",5,"94.7 ± 5.5","94.7","5.5","SE",NA,"CMRglc","µmol/100 g/min",94.7,5.5,94.7,"rabbits (New Zealand White)",NA
+11,7,NA,"Medial geniculate body",NA,"% Decrease","pct_decrease_hypnosis",5,"12.5*","12.5",NA,NA,"*","CMRglc_pct_decrease","% of control",12.5,NA,NA,"rabbits (New Zealand White)","Stars: * P < 0.05; ** P < 0.01; *** P < 0.005 by Student's t-test (hypnosis vs control)."
+12,8,NA,"Lateral geniculate body",NA,"Control (n = 5)","control",5,"80.7 ± 4.9","80.7","4.9","SE",NA,"CMRglc","µmol/100 g/min",80.7,4.9,80.7,"rabbits (New Zealand White)",NA
+12,8,NA,"Lateral geniculate body",NA,"Hypnosis (n = 5)","hypnosis",5,"67.2 ± 4.0","67.2","4.0","SE",NA,"CMRglc","µmol/100 g/min",67.2,4,67.2,"rabbits (New Zealand White)",NA
+12,8,NA,"Lateral geniculate body",NA,"% Decrease","pct_decrease_hypnosis",5,"16.7","16.7",NA,NA,NA,"CMRglc_pct_decrease","% of control",16.7,NA,NA,"rabbits (New Zealand White)",NA
+13,9,NA,"Hypothalamus",NA,"Control (n = 5)","control",5,"62.0 ± 3.3","62.0","3.3","SE",NA,"CMRglc","µmol/100 g/min",62,3.3,62,"rabbits (New Zealand White)",NA
+13,9,NA,"Hypothalamus",NA,"Hypnosis (n = 5)","hypnosis",5,"52.2 ± 4.8","52.2","4.8","SE",NA,"CMRglc","µmol/100 g/min",52.2,4.8,52.2,"rabbits (New Zealand White)",NA
+13,9,NA,"Hypothalamus",NA,"% Decrease","pct_decrease_hypnosis",5,"15.8**","15.8",NA,NA,"**","CMRglc_pct_decrease","% of control",15.8,NA,NA,"rabbits (New Zealand White)","Stars: * P < 0.05; ** P < 0.01; *** P < 0.005 by Student's t-test (hypnosis vs control)."
+14,10,NA,"Mammillary body",NA,"Control (n = 5)","control",5,"67.6 ± 2.8","67.6","2.8","SE",NA,"CMRglc","µmol/100 g/min",67.6,2.8,67.6,"rabbits (New Zealand White)",NA
+14,10,NA,"Mammillary body",NA,"Hypnosis (n = 5)","hypnosis",5,"58.1 ± 2.4","58.1","2.4","SE",NA,"CMRglc","µmol/100 g/min",58.1,2.4,58.1,"rabbits (New Zealand White)",NA
+14,10,NA,"Mammillary body",NA,"% Decrease","pct_decrease_hypnosis",5,"14.0**","14.0",NA,NA,"**","CMRglc_pct_decrease","% of control",14,NA,NA,"rabbits (New Zealand White)","Stars: * P < 0.05; ** P < 0.01; *** P < 0.005 by Student's t-test (hypnosis vs control)."
+15,11,NA,"Hippocampus",NA,"Control (n = 5)","control",5,"58.1 ± 2.5","58.1","2.5","SE",NA,"CMRglc","µmol/100 g/min",58.1,2.5,58.1,"rabbits (New Zealand White)",NA
+15,11,NA,"Hippocampus",NA,"Hypnosis (n = 5)","hypnosis",5,"44.5 ± 4.1","44.5","4.1","SE",NA,"CMRglc","µmol/100 g/min",44.5,4.1,44.5,"rabbits (New Zealand White)",NA
+15,11,NA,"Hippocampus",NA,"% Decrease","pct_decrease_hypnosis",5,"23.4***","23.4",NA,NA,"***","CMRglc_pct_decrease","% of control",23.4,NA,NA,"rabbits (New Zealand White)","Stars: * P < 0.05; ** P < 0.01; *** P < 0.005 by Student's t-test (hypnosis vs control)."
+16,12,NA,"Amygdala",NA,"Control (n = 5)","control",5,"39.1 ± 1.4","39.1","1.4","SE",NA,"CMRglc","µmol/100 g/min",39.1,1.4,39.1,"rabbits (New Zealand White)",NA
+16,12,NA,"Amygdala",NA,"Hypnosis (n = 5)","hypnosis",5,"28.2 ± 2.7","28.2","2.7","SE",NA,"CMRglc","µmol/100 g/min",28.2,2.7,28.2,"rabbits (New Zealand White)",NA
+16,12,NA,"Amygdala",NA,"% Decrease","pct_decrease_hypnosis",5,"27.9**","27.9",NA,NA,"**","CMRglc_pct_decrease","% of control",27.9,NA,NA,"rabbits (New Zealand White)","Stars: * P < 0.05; ** P < 0.01; *** P < 0.005 by Student's t-test (hypnosis vs control)."
+17,13,NA,"Caudate-putamen",NA,"Control (n = 5)","control",5,"85.8 ± 5.2","85.8","5.2","SE",NA,"CMRglc","µmol/100 g/min",85.8,5.2,85.8,"rabbits (New Zealand White)",NA
+17,13,NA,"Caudate-putamen",NA,"Hypnosis (n = 5)","hypnosis",5,"59.4 ± 7.1","59.4","7.1","SE",NA,"CMRglc","µmol/100 g/min",59.4,7.1,59.4,"rabbits (New Zealand White)",NA
+17,13,NA,"Caudate-putamen",NA,"% Decrease","pct_decrease_hypnosis",5,"30.5***","30.5",NA,NA,"***","CMRglc_pct_decrease","% of control",30.5,NA,NA,"rabbits (New Zealand White)","Stars: * P < 0.05; ** P < 0.01; *** P < 0.005 by Student's t-test (hypnosis vs control)."
+18,14,NA,"Globus pallidus",NA,"Control (n = 5)","control",5,"42.1 ± 2.3","42.1","2.3","SE",NA,"CMRglc","µmol/100 g/min",42.1,2.3,42.1,"rabbits (New Zealand White)",NA
+18,14,NA,"Globus pallidus",NA,"Hypnosis (n = 5)","hypnosis",5,"34.5 ± 2.7","34.5","2.7","SE",NA,"CMRglc","µmol/100 g/min",34.5,2.7,34.5,"rabbits (New Zealand White)",NA
+18,14,NA,"Globus pallidus",NA,"% Decrease","pct_decrease_hypnosis",5,"18.0*","18.0",NA,NA,"*","CMRglc_pct_decrease","% of control",18,NA,NA,"rabbits (New Zealand White)","Stars: * P < 0.05; ** P < 0.01; *** P < 0.005 by Student's t-test (hypnosis vs control)."
+19,15,NA,"Septal nucleus",NA,"Control (n = 5)","control",5,"48.3 ± 1.9","48.3","1.9","SE",NA,"CMRglc","µmol/100 g/min",48.3,1.9,48.3,"rabbits (New Zealand White)",NA
+19,15,NA,"Septal nucleus",NA,"Hypnosis (n = 5)","hypnosis",5,"35.4 ± 1.8","35.4","1.8","SE",NA,"CMRglc","µmol/100 g/min",35.4,1.8,35.4,"rabbits (New Zealand White)",NA
+19,15,NA,"Septal nucleus",NA,"% Decrease","pct_decrease_hypnosis",5,"26.7***","26.7",NA,NA,"***","CMRglc_pct_decrease","% of control",26.7,NA,NA,"rabbits (New Zealand White)","Stars: * P < 0.05; ** P < 0.01; *** P < 0.005 by Student's t-test (hypnosis vs control)."
+20,16,NA,"Superior olive",NA,"Control (n = 5)","control",5,"94.6 ± 4.9","94.6","4.9","SE",NA,"CMRglc","µmol/100 g/min",94.6,4.9,94.6,"rabbits (New Zealand White)",NA
+20,16,NA,"Superior olive",NA,"Hypnosis (n = 5)","hypnosis",5,"85.1 ± 8.3","85.1","8.3","SE",NA,"CMRglc","µmol/100 g/min",85.1,8.3,85.1,"rabbits (New Zealand White)",NA
+20,16,NA,"Superior olive",NA,"% Decrease","pct_decrease_hypnosis",5,"10.0","10.0",NA,NA,NA,"CMRglc_pct_decrease","% of control",10,NA,NA,"rabbits (New Zealand White)",NA
+21,17,NA,"Substantia nigra",NA,"Control (n = 5)","control",5,"48.3 ± 3.2","48.3","3.2","SE",NA,"CMRglc","µmol/100 g/min",48.3,3.2,48.3,"rabbits (New Zealand White)",NA
+21,17,NA,"Substantia nigra",NA,"Hypnosis (n = 5)","hypnosis",5,"40.0 ± 3.9","40.0","3.9","SE",NA,"CMRglc","µmol/100 g/min",40,3.9,40,"rabbits (New Zealand White)",NA
+21,17,NA,"Substantia nigra",NA,"% Decrease","pct_decrease_hypnosis",5,"17.2","17.2",NA,NA,NA,"CMRglc_pct_decrease","% of control",17.2,NA,NA,"rabbits (New Zealand White)",NA
+22,18,NA,"Inferior colliculus",NA,"Control (n = 5)","control",5,"125.5 ± 3.2","125.5","3.2","SE",NA,"CMRglc","µmol/100 g/min",125.5,3.2,125.5,"rabbits (New Zealand White)",NA
+22,18,NA,"Inferior colliculus",NA,"Hypnosis (n = 5)","hypnosis",5,"113.2 ± 3.6","113.2","3.6","SE",NA,"CMRglc","µmol/100 g/min",113.2,3.6,113.2,"rabbits (New Zealand White)",NA
+22,18,NA,"Inferior colliculus",NA,"% Decrease","pct_decrease_hypnosis",5,"9.8","9.8",NA,NA,NA,"CMRglc_pct_decrease","% of control",9.8,NA,NA,"rabbits (New Zealand White)",NA
+23,19,NA,"Superior colliculus",NA,"Control (n = 5)","control",5,"62.1 ± 1.4","62.1","1.4","SE",NA,"CMRglc","µmol/100 g/min",62.1,1.4,62.1,"rabbits (New Zealand White)",NA
+23,19,NA,"Superior colliculus",NA,"Hypnosis (n = 5)","hypnosis",5,"56.8 ± 2.0","56.8","2.0","SE",NA,"CMRglc","µmol/100 g/min",56.8,2,56.8,"rabbits (New Zealand White)",NA
+23,19,NA,"Superior colliculus",NA,"% Decrease","pct_decrease_hypnosis",5,"8.5","8.5",NA,NA,NA,"CMRglc_pct_decrease","% of control",8.5,NA,NA,"rabbits (New Zealand White)",NA
+24,20,NA,"Pontine gray matter",NA,"Control (n = 5)","control",5,"46.9 ± 2.2","46.9","2.2","SE",NA,"CMRglc","µmol/100 g/min",46.9,2.2,46.9,"rabbits (New Zealand White)",NA
+24,20,NA,"Pontine gray matter",NA,"Hypnosis (n = 5)","hypnosis",5,"35.4 ± 2.9","35.4","2.9","SE",NA,"CMRglc","µmol/100 g/min",35.4,2.9,35.4,"rabbits (New Zealand White)",NA
+24,20,NA,"Pontine gray matter",NA,"% Decrease","pct_decrease_hypnosis",5,"24.5*","24.5",NA,NA,"*","CMRglc_pct_decrease","% of control",24.5,NA,NA,"rabbits (New Zealand White)","Stars: * P < 0.05; ** P < 0.01; *** P < 0.005 by Student's t-test (hypnosis vs control)."
+25,21,NA,"Internal capsule",NA,"Control (n = 5)","control",5,"26.1 ± 2.5","26.1","2.5","SE",NA,"CMRglc","µmol/100 g/min",26.1,2.5,26.1,"rabbits (New Zealand White)",NA
+25,21,NA,"Internal capsule",NA,"Hypnosis (n = 5)","hypnosis",5,"18.8 ± 1.2","18.8","1.2","SE",NA,"CMRglc","µmol/100 g/min",18.8,1.2,18.8,"rabbits (New Zealand White)",NA
+25,21,NA,"Internal capsule",NA,"% Decrease","pct_decrease_hypnosis",5,"27.9","27.9",NA,NA,NA,"CMRglc_pct_decrease","% of control",27.9,NA,NA,"rabbits (New Zealand White)",NA
+26,22,NA,"Pontine white",NA,"Control (n = 5)","control",5,"27.0 ± 1.1","27.0","1.1","SE",NA,"CMRglc","µmol/100 g/min",27,1.1,27,"rabbits (New Zealand White)",NA
+26,22,NA,"Pontine white",NA,"Hypnosis (n = 5)","hypnosis",5,"19.3 ± 2.9","19.3","2.9","SE",NA,"CMRglc","µmol/100 g/min",19.3,2.9,19.3,"rabbits (New Zealand White)",NA
+26,22,NA,"Pontine white",NA,"% Decrease","pct_decrease_hypnosis",5,"28.5","28.5",NA,NA,NA,"CMRglc_pct_decrease","% of control",28.5,NA,NA,"rabbits (New Zealand White)",NA

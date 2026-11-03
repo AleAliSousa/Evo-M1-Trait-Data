@@ -1,0 +1,22 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+text_row,Row of the constructed text snapshot.,,,,info,Homo sapiens,Buchsbaum_etal_1989_Text,,Summary p. 1349; RESULTS p. 1353.
+page,Journal page.,,,,info,Homo sapiens,Buchsbaum_etal_1989_Text,,Summary p. 1349; RESULTS p. 1353.
+location,Section of the passage.,,,,info,Homo sapiens,Buchsbaum_etal_1989_Text,,Summary p. 1349; RESULTS p. 1353.
+passage_as_printed,Sentence quoted.,,,,info,Homo sapiens,Buchsbaum_etal_1989_Text,,Summary p. 1349; RESULTS p. 1353.
+subjects_as_printed,Subjects as printed.,,,,info,Homo sapiens,Buchsbaum_etal_1989_Text,,Summary p. 1349; RESULTS p. 1353.
+state_as_printed,State as printed.,,,,info,Homo sapiens,Buchsbaum_etal_1989_Text,,Summary p. 1349; RESULTS p. 1353.
+region_as_printed,Region as printed.,,,,info,Homo sapiens,Buchsbaum_etal_1989_Text,,Summary p. 1349; RESULTS p. 1353.
+value_printed,Printed value lexeme.,,,,info,Homo sapiens,Buchsbaum_etal_1989_Text,,Summary p. 1349; RESULTS p. 1353.
+dispersion_printed,Printed dispersion lexeme.,,,,info,Homo sapiens,Buchsbaum_etal_1989_Text,,Summary p. 1349; RESULTS p. 1353.
+units_printed,Units as printed.,,,,info,Homo sapiens,Buchsbaum_etal_1989_Text,,Summary p. 1349; RESULTS p. 1353.
+value_numeric,mean_printed parsed (printed unit).,,,,primary,Homo sapiens,Buchsbaum_etal_1989_Text,"ERRATA Buchsbaum_etal_1989-E001 (proposed, publication_ambiguity): printed 23, repo had blank, proposed 32 | ",Summary p. 1349; RESULTS p. 1353.
+dispersion_numeric,dispersion_printed parsed (NA if malformed).,,,,info,Homo sapiens,Buchsbaum_etal_1989_Text,"ERRATA Buchsbaum_etal_1989-E002 (proposed, publication_ambiguity): printed 3.7; 4.3, repo had blank | ",Summary p. 1349; RESULTS p. 1353.
+measure,Quantity of the row.,,,,info,Homo sapiens,Buchsbaum_etal_1989_Text,,Summary p. 1349; RESULTS p. 1353.
+CMRglc.umol_100g_min,"Glucose utilization, µmol/100 g/min (project unit).",,CMRglc.umol_100g_min,mean,primary,Homo sapiens,Buchsbaum_etal_1989_Text,,Summary p. 1349; RESULTS p. 1353.
+arm_id,Constructed identifier of the printed arm (see Method:arms).,,,,info,Homo sapiens,Buchsbaum_etal_1989_Text,,Summary p. 1349; RESULTS p. 1353.
+value_status,restatement / derived_from_table.,,,,info,Homo sapiens,Buchsbaum_etal_1989_Text,,Summary p. 1349; RESULTS p. 1353.
+species_as_published,Species/subjects as the paper names them.,,,,info,Homo sapiens,Buchsbaum_etal_1989_Text,,Summary p. 1349; RESULTS p. 1353.
+note,Row-level note.,,,,info,Homo sapiens,Buchsbaum_etal_1989_Text,,Summary p. 1349; RESULTS p. 1353.
+Method:observation_level,One row per printed value.,,,,method,Homo sapiens,Buchsbaum_etal_1989_Text,,Summary p. 1349; RESULTS p. 1353.
+Method:arms,see value_status,,,,method,Homo sapiens,Buchsbaum_etal_1989_Text,,Summary p. 1349; RESULTS p. 1353.
+Method:units,Printed micromoles/100g/min = µmol/100 g/min; no conversion.,,,,method,Homo sapiens,Buchsbaum_etal_1989_Text,,Summary p. 1349; RESULTS p. 1353.

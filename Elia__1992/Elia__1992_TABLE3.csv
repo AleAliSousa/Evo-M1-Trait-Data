@@ -1,0 +1,12 @@
+"printed_row","species_order","species_as_published","species","body_mass.g","liver_mass.g","kidneys_mass.g","brain_mass.g","heart_mass.g","lung_mass.g","all5_printed.g","all_minus_lung_printed.g","Brain_Mass.mg","lung_in_parentheses","all_minus_lung_as_printed","ref_key","note"
+4,1,"Elephant","Elephant (species unspecified)",6650000,6300,1200,5700,2200,6650,22050,15400,5700000,TRUE,"15,400","17","Lung printed in parentheses: '(6,650)', no explanation printed; parsed as 6650 g and flagged."
+5,2,"Steer","Bos taurus",7e+05,5000,1000,500,2300,3900,12700,8800,5e+05,FALSE,"8,800","17",NA
+6,3,"Horse","Equus caballus",6e+05,6700,1600,670,4250,5400,13220,18620,670000,FALSE,"18,620","17",NA
+7,4,"Dairy cow","Bos taurus",488000,6460,1160,400,1880,3600,13440,9840,4e+05,FALSE,"9,840","17",NA
+8,5,"Hog","Sus scrofa domesticus",125000,1600,260,120,350,1300,3530,2230,120000,FALSE,"2,230","17",NA
+9,6,"Human","Homo sapiens",60000,1700,250,1300,320,1000,4570,3570,1300000,FALSE,"3,570","17",NA
+10,7,"Sheep","Ovis aries",52000,960,160,106,280,710,2216,1506,106000,FALSE,"1,506","17",NA
+11,8,"Dog","Canis lupus familiaris",10000,420,70,75,85,120,770,650,75000,FALSE,"650","17",NA
+12,9,"Monkey","Monkey (species unspecified)",4500,110,21,42,23,30,226,196,42000,FALSE,"196","17",NA
+13,10,"Guinea pig","Cavia porcellus",800,27,5.6,4.7,2.3,5,44.6,NA,4700,FALSE,"39.[cut]","17","'All organs minus lung' cell cut off at the right edge of the scan ('39.' / '17.' visible); value not read, NA."
+14,11,"Rat","Rattus sp.",250,12,2.1,2,0.94,1.3,18.34,NA,2000,FALSE,"17.[cut]","17","'All organs minus lung' cell cut off at the right edge of the scan ('39.' / '17.' visible); value not read, NA."

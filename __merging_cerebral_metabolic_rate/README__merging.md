@@ -13,6 +13,9 @@ The reusable procedure is `_skills/reconcile-data-compilations/SKILL.md`.
 | `Heiss_etal_2004` | primary study | Its 26 regional CMRgl rows enter directly under `heiss_2004`. |
 | `Kaufman__2004` Tables A1-A14 | secondary compilation, with a small number of self-primary “Present Study” rows | Each table row is joined to its underlying primary work. Table A15 compiler means are not used. |
 | `Karbowski__2007` Tables S1-S23 | secondary compilation | Direct singleton-source rows are joined to their primary works. Compiler/derived rows remain in provenance but not in primary-only means. |
+| Primary items built from the compilations' cited works (2026-11): `Heiss_etal_1985`, `Kennedy_etal_1978`, `Palombo_etal_1990`, `Passero_etal_1981`, `Bouilleret_etal_2000`, `Nemoto_etal_1994`, `Buchsbaum_etal_1989`, `Noda_etal_2002`, `Chugani_etal_1987` | primary studies | Read through `primary_item_ingestion_manifest.csv`. A primary item's own printed value governs any compilation reprint of the same primary/cell (see "Primary-item extension"). |
+| Anaesthetised / isolated-brain primary items: `Nilsson_Siesjö_1976`, `Schmidt_etal_1945`, `Sahlin_etal_1987`, `Gilboe_Betz_1973`, `Meguro_etal_1999`, `Nakanishi_etal_1997` | primary studies | Provenance only (`explicitly_anesthetized` / `isolated_perfused_brain_anesthetized`). |
+| `Mink_etal_1981` TABLE 1 | secondary compilation | Its 8 cited CMRO2 rows (5 brain, 3 spinal cord) are provenance only. None qualifies for the pool (anaesthetised, isolated brain, in-vitro slices, or a review). Its 37 model-predicted brain rates are never ingested. |
 
 Kaufman and Karbowski are recorded in `Compilation`. Every cited bibliography
 work is recorded separately in `source_reference_ids`, with an explicit
@@ -195,27 +198,30 @@ which requires pandas, plus the generated catalog CSVs.
 
 ## Outputs
 
-- `cerebral_metabolic_rate_long.csv`: 235 Species × Region × Measure cells,
-  covering 14 species and 40 canonical regions. There are 201 metabolic cells
-  (`CMRgl`, `CMRO2`) and 34 perfusion cells (`CBF`).
+- `cerebral_metabolic_rate_long.csv`: 254 Species × Region × Measure cells,
+  covering 14 species and 40 canonical regions. There are 216 metabolic cells
+  (`CMRgl`, `CMRO2`) and 38 perfusion cells (`CBF`).
 - `cerebral_metabolic_rate_wide.csv`: one row per species.
-- `cerebral_metabolic_rate_unfiltered.csv`: all 2,161 source/provenance records,
-  including excluded compiler and derived rows; 1,444 are currently in the
-  conservative primary pool.
+- `cerebral_metabolic_rate_unfiltered.csv`: all 2,422 source/provenance records,
+  including excluded compiler and derived rows, primary-item rows and Mink 1981
+  rows; 1,547 are currently in the conservative primary pool.
+- `primary_item_ingestion_manifest.csv`: 261 primary-item / Mink rows (106 eligible
+  for the pool), one per printed value or right/left pair, each with its item CSV
+  and locator.
 - `cerebral_metabolic_rate_arm_ambiguity_report.csv`: 77 unresolved
   within-primary arm groups covering 157 quarantined Kaufman rows.
-- `cerebral_metabolic_rate_value_reference_links.csv`: 2,361 value-source links,
+- `cerebral_metabolic_rate_value_reference_links.csv`: 2,622 value-source links,
   including compound, estimate, compiler-average, and cross-area-summary lineage.
   Only the three unresolved Zimmer measurement records have no link.
-- `cerebral_metabolic_rate_cited_references.csv`: all 339 resolved cited works,
+- `cerebral_metabolic_rate_cited_references.csv`: all 345 resolved cited works,
   with source level/type.
-- `cerebral_metabolic_rate_primary_references.csv`: the 335 true primary works
-  across both compilations plus Heiss.
+- `cerebral_metabolic_rate_primary_references.csv`: the 339 true primary works
+  across both compilations, Heiss 2004, and the primary works cited only by Mink 1981.
 - `cerebral_metabolic_rate_reference_resolution_issues.csv`: explicit unresolved
   and non-primary-lineage issues (Zimmer plus the four non-primary cited works).
-- `cerebral_metabolic_rate_dedupe_report.csv`: 44 same-source, same-taxon,
+- `cerebral_metabolic_rate_dedupe_report.csv`: 95 same-source, same-taxon,
   same-region, same-measure, same-unit, same-condition collisions resolved for
-  the merge.
+  the merge (a primary item, when present, is the kept report).
 - `cerebral_metabolic_rate_source_species_ids.csv`: printed-to-canonical taxon
   provenance.
 
@@ -227,6 +233,66 @@ all direct singleton-primary rows, not just rows admitted to the conservative me
 and records merge eligibility separately. Current counts are generated in the
 restricted findings file rather than copied here, so this public documentation
 cannot silently drift from the comparison output.
+
+## Primary-item extension (2026-11)
+
+Fifteen primary works cited by the compilations or by Mink 1981 were built as
+their own dataset items: snapshot, build script, CSV, README with table checks,
+errata and a registry row. They await registration in `__ReadMe.xlsx`. The
+restricted audit writes one extract per paper (every printed arm) and generates
+`primary_item_ingestion_manifest.csv` with
+`__energetics_comparison/merge_ingestion/build_primary_item_manifest.py`. The
+builder reads only the manifest. The validator checks every manifest lexeme
+against the named public item CSV.
+
+Rules:
+
+1. **Eligible arms.** Only conscious, non-anaesthetised control arms are
+   eligible:
+   - Heiss 1985: awake non-dreamers.
+   - Kennedy 1978: conscious normal.
+   - Palombo 1990, Passero 1981 and Bouilleret 2000: controls.
+   - Nemoto 1994: Table 3 conscious total.
+   - Buchsbaum 1989: awake.
+   - Noda 2002: young-adult average.
+   - Chugani 1987: adults aged 19–30.
+
+   Right and left values of one structure in the same control animals are
+   averaged (`primary_hemisphere_mean`).
+2. **One-to-one mapping only.** A primary row enters the pool only when exactly
+   one printed structure maps directly to the canonical region. Sub-region,
+   "nearest" and "no canonical" mappings stay in provenance, as do regions
+   reached by several printed structures (`primary_multiple_structures_map_to_region`).
+   The compilation's own composite then remains the pooled value, and no new
+   composite is created.
+3. **Primary governs reprints.** A primary item has dedupe priority 0, so its
+   printed value replaces Kaufman or Karbowski reprints of the same
+   primary/cell. Both reprints remain in provenance and in the dedupe report.
+4. **Provenance-only sources.** Anaesthetised or isolated-brain primaries, and
+   all Mink 1981 rows, are provenance only.
+5. **Primary-check exclusions.** Three compilation rows that the primary items
+   show to be unsupported leave the pool (`PRIMARY_CHECK_EXCLUSIONS` in the
+   builder):
+   - Karbowski Bouilleret Pallidum 0.76: no pallidum is printed in the paper.
+   - Kaufman Passero Neocortex 77.4: the paper's five cortical rows average
+     83.42. The merged rabbit Neocortex cell is now Karbowski's 0.83 µmol/g/min
+     composite, i.e. 83.0.
+   - Karbowski Kennedy whole brain 0.36: the paper prints 29.
+
+Effect against the pre-extension snapshot:
+
+- **Cells:** +20 (16 *Macaca mulatta*, 3 *Oryctolagus cuniculus*, 1 *Mus
+  musculus*) and −1 (mouse Pallidum, unsourced).
+- **Values:** 40 existing cells change value (median |change| 0.6%, 9 above 5%).
+- **Unchanged:** 194 cells, 14 species and 40 regions. The pool still draws on
+  210 primary works, because every new item's work was already present through
+  a compilation.
+- **Provenance:** all 2,161 earlier provenance rows are retained. The only
+  status changes are the three exclusions.
+
+The cell-level diff is
+`__energetics_comparison/merge_regression/merge_diff_pre_vs_post_primary_items.csv`
+in the restricted repository.
 
 ## Known comparison cautions
 

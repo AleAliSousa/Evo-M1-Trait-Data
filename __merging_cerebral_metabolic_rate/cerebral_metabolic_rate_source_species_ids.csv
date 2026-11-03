@@ -1,36 +1,57 @@
 Species,Species_printed,Compilations,n_rows,note
+Bos,Bos sp,Mink_etal_1981,1,
 Canis lupus familiaris,Canis,Kaufman__2004,76,Kaufman genus label; binomial assigned by standard-lab-species convention
+Canis lupus familiaris,Canis familiaris,Mink_etal_1981,1,
+Canis lupus familiaris,adult mongrel dogs (canine),Gilboe_Betz_1973,2,
 Canis lupus familiaris,dog,Karbowski__2007,2,
+Canis lupus familiaris,"mongrel dogs, male and female, 8-16 kg",Nakanishi_etal_1997,4,
 Capra aegagrus hircus,Capra,Kaufman__2004,3,Kaufman genus label; binomial assigned by standard-lab-species convention
 Capra aegagrus hircus,goat,Karbowski__2007,2,
+Cavia,Cavia sp,Mink_etal_1981,1,
 Equus caballus,Equus,Kaufman__2004,2,Kaufman genus label; binomial assigned by standard-lab-species convention
 Felis catus,Felis,Kaufman__2004,45,Kaufman genus label; binomial assigned by standard-lab-species convention
+Felis catus,Felis domestica,Mink_etal_1981,1,
 Felis catus,average cat,Karbowski__2007,16,
 Felis catus,cat,Karbowski__2007,50,
 Homo sapiens,Homo,Kaufman__2004,609,Kaufman genus label; binomial assigned by standard-lab-species convention
-Homo sapiens,Homo sapiens,Heiss_etal_2004,26,
+Homo sapiens,Homo sapiens,Heiss_etal_2004; Mink_etal_1981,27,
 Homo sapiens,average human,Karbowski__2007,11,
-Homo sapiens,human,Karbowski__2007,55,
+Homo sapiens,human,Chugani_etal_1987; Karbowski__2007,69,
+Homo sapiens,normal human subjects,Heiss_etal_1985,22,
+Homo sapiens,normal volunteers (male subjects),Buchsbaum_etal_1989,13,
 Lepus sp.,Lepus,Kaufman__2004,13,Kaufman genus label; binomial assigned by standard-lab-species convention
+Lithobates pipiens,Rana pipiens,Mink_etal_1981,1,
 Macaca fascicularis,M fascic,Kaufman__2004,31,
+Macaca mulatta,Indian rhesus monkeys; 3 experiments on spider monkeys (ateles pentadactylus) (METHODS),Schmidt_etal_1945,2,
 Macaca mulatta,M fascic,Kaufman__2004,5,Primary-source override: Kennedy et al. (1978) studied Macaca mulatta; Kaufman printed M fascic.
 Macaca mulatta,M mulatta,Kaufman__2004,84,
+Macaca mulatta,Macaca mulatta,Palombo_etal_1990,62,
+Macaca mulatta,Macaca rhesus,Mink_etal_1981,1,
 Macaca mulatta,average monkey,Karbowski__2007,19,
+Macaca mulatta,male rhesus monkeys (Macaca mulatta),Noda_etal_2002,14,
 Macaca mulatta,monkey,Karbowski__2007,59,
+Macaca mulatta,rhesus monkey,Kennedy_etal_1978,32,
+Macaca mulatta,rhesus monkeys (Macaca mulatta),Nemoto_etal_1994,3,
 Meriones unguiculatus,Gerbil,Kaufman__2004,6,Kaufman genus label; binomial assigned by standard-lab-species convention
 Meriones unguiculatus,Meriones,Kaufman__2004,24,Kaufman genus label; binomial assigned by standard-lab-species convention
 Mus musculus,Mus,Kaufman__2004,75,Kaufman genus label; binomial assigned by standard-lab-species convention
+Mus musculus,adult male Swiss albino mice,Bouilleret_etal_2000,23,
 Mus musculus,average mouse,Karbowski__2007,4,
 Mus musculus,mouse,Karbowski__2007,27,
 Oryctolagus cuniculus,Lepus,Kaufman__2004,8,Primary-source override: Passero et al. (1981) studied rabbit (Oryctolagus cuniculus); Kaufman printed Lepus.
 Oryctolagus cuniculus,rabbit,Karbowski__2007,19,
+Oryctolagus cuniculus,rabbits (New Zealand White),Passero_etal_1981,20,
 Ovis aries,Ovis,Kaufman__2004,7,Kaufman genus label; binomial assigned by standard-lab-species convention
 Ovis aries,sheep,Karbowski__2007,4,
 Papio anubis,Papio,Kaufman__2004,82,Kaufman genus label; binomial assigned by standard-lab-species convention
+Papio anubis,Papio anubis,Meguro_etal_1999,38,
 Papio anubis,baboon,Karbowski__2007,16,
+Papio cynocephalus,baboons (Papio cynocephalus),Sahlin_etal_1987,2,
 Rattus norvegicus,Rattus,Kaufman__2004,610,Kaufman genus label; binomial assigned by standard-lab-species convention
+Rattus norvegicus,Rattus sp,Mink_etal_1981,1,
 Rattus norvegicus,average rat,Karbowski__2007,23,
 Rattus norvegicus,rat,Karbowski__2007,101,
+Rattus norvegicus,rats (male Wistar),Nilsson_Siesjö_1976,2,
 Saimiri sciureus,Saimiri,Kaufman__2004,12,Kaufman genus label; binomial assigned by standard-lab-species convention
 Spermophilus tridecemlineatus,squirrel,Karbowski__2007,2,
 Sus scrofa,Sus,Kaufman__2004,33,Kaufman genus label; binomial assigned by standard-lab-species convention

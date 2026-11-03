@@ -1,0 +1,24 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+text_row,Row of the constructed text snapshot (one row per printed value).,,,,info,Homo sapiens,Heiss_etal_1985_Text,,Abstract p. 362 and RESULTS p. 364 (PDF pages 1 and 3).
+page,Journal page.,,,,info,Homo sapiens,Heiss_etal_1985_Text,,Abstract p. 362 and RESULTS p. 364 (PDF pages 1 and 3).
+location,Section/column/legend of the passage.,,,,info,Homo sapiens,Heiss_etal_1985_Text,,Abstract p. 362 and RESULTS p. 364 (PDF pages 1 and 3).
+passage_as_printed,"The sentence the value comes from, quoted.",,,,info,Homo sapiens,Heiss_etal_1985_Text,,Abstract p. 362 and RESULTS p. 364 (PDF pages 1 and 3).
+subjects_as_printed,Subjects as the sentence names them.,,,,info,Homo sapiens,Heiss_etal_1985_Text,,Abstract p. 362 and RESULTS p. 364 (PDF pages 1 and 3).
+state_as_printed,State/condition as the sentence gives it.,,,,info,Homo sapiens,Heiss_etal_1985_Text,,Abstract p. 362 and RESULTS p. 364 (PDF pages 1 and 3).
+region_as_printed,Region as the sentence gives it.,,,,info,Homo sapiens,Heiss_etal_1985_Text,,Abstract p. 362 and RESULTS p. 364 (PDF pages 1 and 3).
+value_printed,Printed value lexeme.,,,,info,Homo sapiens,Heiss_etal_1985_Text,,Abstract p. 362 and RESULTS p. 364 (PDF pages 1 and 3).
+dispersion_printed,Printed dispersion lexeme.,,,,info,Homo sapiens,Heiss_etal_1985_Text,,Abstract p. 362 and RESULTS p. 364 (PDF pages 1 and 3).
+dispersion_type,SD where printed.,,,,info,Homo sapiens,Heiss_etal_1985_Text,,Abstract p. 362 and RESULTS p. 364 (PDF pages 1 and 3).
+units_printed,Units as printed.,,,,info,Homo sapiens,Heiss_etal_1985_Text,,Abstract p. 362 and RESULTS p. 364 (PDF pages 1 and 3).
+value_numeric,value_printed parsed to a number.,,,,primary,Homo sapiens,Heiss_etal_1985_Text,,Abstract p. 362 and RESULTS p. 364 (PDF pages 1 and 3).
+dispersion_numeric,dispersion_printed parsed.,,,,info,Homo sapiens,Heiss_etal_1985_Text,,Abstract p. 362 and RESULTS p. 364 (PDF pages 1 and 3).
+measure,"CMRglc, CMRO2 or the % quantity.",,,,info,Homo sapiens,Heiss_etal_1985_Text,,Abstract p. 362 and RESULTS p. 364 (PDF pages 1 and 3).
+CMRglc.umol_100g_min,"Glucose utilization, µmol/100 g/min (NA for non-rate rows).",,CMRglc.umol_100g_min,mean,primary,Homo sapiens,Heiss_etal_1985_Text,,Abstract p. 362 and RESULTS p. 364 (PDF pages 1 and 3).
+n,Number of subjects behind the value where determinable.,,,,info,Homo sapiens,Heiss_etal_1985_Text,,Abstract p. 362 and RESULTS p. 364 (PDF pages 1 and 3).
+restates_cell,TABLE I cell the text value restates (NA = new value).,,,,info,Homo sapiens,Heiss_etal_1985_Text,,Abstract p. 362 and RESULTS p. 364 (PDF pages 1 and 3).
+value_status,new / restatement / cited / derived_from_cited / new_estimate / new_single_animal.,,,,info,Homo sapiens,Heiss_etal_1985_Text,,Abstract p. 362 and RESULTS p. 364 (PDF pages 1 and 3).
+species_as_published,Subjects as printed.,,,,info,Homo sapiens,Heiss_etal_1985_Text,,Abstract p. 362 and RESULTS p. 364 (PDF pages 1 and 3).
+note,Row-level note.,,,,info,Homo sapiens,Heiss_etal_1985_Text,,Abstract p. 362 and RESULTS p. 364 (PDF pages 1 and 3).
+Method:observation_level,One row per printed value; see value_status / observation_level.,,,,method,Homo sapiens,Heiss_etal_1985_Text,,Abstract p. 362 and RESULTS p. 364 (PDF pages 1 and 3).
+Method:arms,see value_status,,,,method,Homo sapiens,Heiss_etal_1985_Text,,Abstract p. 362 and RESULTS p. 364 (PDF pages 1 and 3).
+Method:units,Printed in µmol/100 g/min (project unit for CMRglc); no conversion.,,,,method,Homo sapiens,Heiss_etal_1985_Text,,Abstract p. 362 and RESULTS p. 364 (PDF pages 1 and 3).

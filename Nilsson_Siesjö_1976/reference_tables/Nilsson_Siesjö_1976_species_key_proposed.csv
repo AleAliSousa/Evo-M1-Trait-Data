@@ -1,0 +1,4 @@
+variant_name,accepted_name,source_publication,collection,ncbi_taxid,basis,note
+rats (male Wistar),Rattus norvegicus,Nilsson_Siesjö_1976,General,10116,our_judgment,"METHODS: male Wistar rats (laboratory strain of R. norvegicus); NCBI rank species; verified by esearch/esummary on NCBI Taxonomy, 2026-11-02. items: Nilsson_Siesjö_1976_TABLEIII, _Text"
+man,Homo sapiens,Nilsson_Siesjö_1976,General,9606,our_judgment,"cited values only (Text rows 11-12, 15); standard taxid, not re-queried this session"
+dog,Canis lupus familiaris,Nilsson_Siesjö_1976,General,9615,our_judgment,"cited value only (Text row 13); NCBI rank subspecies; verified by esearch/esummary on NCBI Taxonomy, 2026-11-02"

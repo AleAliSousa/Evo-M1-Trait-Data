@@ -12,7 +12,7 @@ The source provides **no accession, house name, or institution per row**. Public
 
 ## Supplementary Table 2: species means
 
-25 species rows, one per species, with brain mass (g), synapse and neuron densities (counts/mm³), and synapses per neuron (dimensionless). `Sherwood_etal_2020_SuppTable2.csv` preserves all 13 printed measures in wide form and adds the source row number. `Sherwood_etal_2020_SuppTable2_definitions.csv` maps each output column to its printed header and unit. The four synapses-per-neuron columns are formulas in the publisher workbook. The build uses their saved values and checks each against synapse density divided by neuron density.
+25 species rows, one per species, with brain mass (g), synapse and neuron densities (counts/mm³), and synapses per neuron (dimensionless). `Sherwood_etal_2020_SupplementaryTable2.csv` preserves all 13 printed measures in wide form and adds the source row number. `Sherwood_etal_2020_SupplementaryTable2_definitions.csv` maps each output column to its printed header and unit. The four synapses-per-neuron columns are formulas in the publisher workbook. The build uses their saved values and checks each against synapse density divided by neuron density.
 
 The source prints species names with underscores in Table 2; these are retained in `species_as_published`. Table 2 values are species means, including for the two species with two sampled individuals. They are **not** additional individual specimens and are not added to the specimen crosswalk.
 

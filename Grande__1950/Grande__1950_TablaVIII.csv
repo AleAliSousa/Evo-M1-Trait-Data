@@ -1,0 +1,6 @@
+"printed_row","row_order","species_as_published","quantity_as_published","value_printed","unit_as_printed","variable_code","value_numeric","value_converted","unit_converted","n_observations","n_subjects","ref_keys_source","note"
+4,1,"cerebro humano","Consumo de oxigeno por 100 g. de cerebro y minuto","3,3","c. c.","CMRO2",3.3,147.312,"umol O2/100 g/min",34,14,"KETY y SCHMIDT (1948)",NA
+5,2,"cerebro humano","Diferencia arterio-venosa de oxigeno (volúmenes por 100)","6,3","volumenes por 100","AVdiff_O2",6.3,2.8123,"umol O2/mL blood",34,14,"KETY y SCHMIDT (1948)","Printed as volumes per 100 (vol %: mL O2 per 100 mL blood); converted to umol O2 per mL blood = x 44.64/100."
+6,3,"cerebro humano","Flujo de sangre cerebral (por 100 gramos y minuto)","54","c. c.","CBF",54,54,"mL blood/100 g/min",34,14,"KETY y SCHMIDT (1948)","Unit printed as 'c. c.' per 100 g and min (mL blood)."
+7,4,"cerebro humano","Consumo de oxigeno total del cerebro (por minuto)","46","c. c.","CMRO2_total",46,2053.44,"umol O2/min",34,14,"KETY y SCHMIDT (1948)",NA
+8,5,"cerebro humano","Flujo de sangre total del cerebro (por minuto)","756","c. c.","CBF_total",756,756,"mL blood/min",34,14,"KETY y SCHMIDT (1948)",NA

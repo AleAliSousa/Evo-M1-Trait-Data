@@ -1,0 +1,5 @@
+variant_name,accepted_name,source_publication,collection,ncbi_taxid,basis,note
+adult mongrel dogs (canine),Canis lupus familiaris,Gilboe_Betz_1973,General,9615,our_judgment,"METHODS p. 588 'adult mongrel dogs'; NCBI rank subspecies; verified by esearch/esummary on NCBI Taxonomy, 2026-11-02. items: Gilboe_Betz_1973_TABLE1-3, _Text"
+unanesthetized human,Homo sapiens,Gilboe_Betz_1973,General,9606,our_judgment,"cited value only (Text row 5); standard taxid, not re-queried this session"
+cat,Felis catus,Gilboe_Betz_1973,General,9685,our_judgment,"cited value only (Text row 8); verified by esearch/esummary on NCBI Taxonomy, 2026-11-02"
+monkey,,Gilboe_Betz_1973,General,,unspecified_in_source,"cited values only (Text rows 6-7); the citing passage names no species; refs 44, 57 (57 = Schmidt et al. 1945, rhesus + spider monkeys)"

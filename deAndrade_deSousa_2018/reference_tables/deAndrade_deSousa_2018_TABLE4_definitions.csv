@@ -1,0 +1,11 @@
+﻿Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species_as_published,"Species exactly as printed (genus abbreviated: S. = Sapajus, C. = Cebus).",,,,info,Sapajus spp. and Cebus spp. (captive capuchins),deAndrade_deSousa_2018_TABLE4,Printed abbreviation kept; accepted names via _keys/General/species_key.csv.,"TABLE 4, p. 7."
+Species,Accepted binomial from _keys/General/species_key.csv (source_publication deAndrade_deSousa_2018).,,,,info,Sapajus spp. and Cebus spp. (captive capuchins),deAndrade_deSousa_2018_TABLE4,,"TABLE 4, p. 7."
+ncbi_taxid,NCBI taxonomy id of the accepted name (from the key).,,,,info,Sapajus spp. and Cebus spp. (captive capuchins),deAndrade_deSousa_2018_TABLE4,,"TABLE 4, p. 7."
+n_left,Individuals classified left-handed by the HI cut-points.,,,,trait,Sapajus spp. and Cebus spp. (captive capuchins),deAndrade_deSousa_2018_TABLE4,Count of individuals.,"TABLE 4, p. 7."
+n_ambidextrous,Individuals classified ambidextrous by the HI cut-points.,,,,trait,Sapajus spp. and Cebus spp. (captive capuchins),deAndrade_deSousa_2018_TABLE4,Count of individuals.,"TABLE 4, p. 7."
+n_right,Individuals classified right-handed by the HI cut-points.,,,,trait,Sapajus spp. and Cebus spp. (captive capuchins),deAndrade_deSousa_2018_TABLE4,Count of individuals.,"TABLE 4, p. 7."
+n_total_printed,Total individuals printed for the species.,,,,info,Sapajus spp. and Cebus spp. (captive capuchins),deAndrade_deSousa_2018_TABLE4,Equals the row sum (table check).,"TABLE 4, p. 7."
+observation_level,What one row is.,,,,info,Sapajus spp. and Cebus spp. (captive capuchins),deAndrade_deSousa_2018_TABLE4,,"TABLE 4, p. 7."
+source_locator,Printed location of the row.,,,,info,Sapajus spp. and Cebus spp. (captive capuchins),deAndrade_deSousa_2018_TABLE4,,"TABLE 4, p. 7."
+data_role,primary = the authors own data.,,,,info,Sapajus spp. and Cebus spp. (captive capuchins),deAndrade_deSousa_2018_TABLE4,,"TABLE 4, p. 7."

@@ -24,16 +24,20 @@ existing products:
 
 | axis | this merge | where the neighbouring construct lives |
 |---|---|---|
-| **cell type** | pyramidal L3 / L5, gigantopyramidal (Betz), Meynert, VEN, fork, fusiform L6, felid Golgi classes, corticospinal, thalamic relay, interlaminar astrocyte | whole-structure neuron/glia totals (no cell type) → `__merging_cellcounts` |
+| **cell type** | pyramidal L3 / L5, gigantopyramidal (Betz), Meynert, VEN, fork, fusiform L6, felid Golgi classes, corticospinal, thalamic relay, interlaminar astrocyte | whole-structure neuron/glia totals (no cell type) → `__merging_cell_counts_isotropic_fractionator` or `__merging_cell_counts_histology`, by counting method |
 | **cell size** | soma volume / area / length / diameter / depth | structure volume → `__merging_volumes`; layer thickness → `__merging_cortical_layers` |
 | **cell morphology** | dendritic volume, length, segments, trees, basal field area, Sholl complexity, spine number and density | gyrification / folding → `__merging_gyrification`, `__merging_cerebellar_folding` |
 
 **Deliberately excluded (kept in their own products, never merged here):**
 
-- **Counts and densities of neurons/glia without a cell type** (Herculano-Houzel, Kaas, Pakkenberg,
-  Morgan, Lewitus glia/neuron ratios): `__merging_cellcounts`. Glia *subtype* numbers
-  (astrocyte / oligodendrocyte / microglia in Karlsen & Pakkenberg 2011, Morgan 2014, Hanson 2018
-  Table 3) are cell-type composition **by count** and belong there too; all three are human-only.
+- **Counts and densities of neurons/glia without a cell type** go to a cell-count merge chosen by
+  counting method: isotropic or flow fractionator (Herculano-Houzel, Kaas) →
+  `__merging_cell_counts_isotropic_fractionator`; counts in tissue sections (Pakkenberg, Morgan,
+  Lewitus, Munger glia and astrocyte densities and glia/neuron ratios) → `__merging_cell_counts_histology`.
+  Glia *subtype* numbers (astrocyte / oligodendrocyte / microglia in Karlsen & Pakkenberg 2011,
+  Morgan 2014, Hanson 2018 Table 3) are cell-type composition **by count** and belong in the histology
+  merge; all three are human-only. Each source's method and treatment:
+  `_keys/cell_count_methods/source_methods.csv` (4 Nov 2026).
 - **Corticospinal soma counts, regional densities and population distribution** (Nudo 1995
   Tables 2–5 except the soma diameter): sensorimotor & motor-pathways scope (not yet wired anywhere;
   see `SOURCE_INVENTORY.csv`).

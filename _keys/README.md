@@ -66,6 +66,14 @@ Started for the Finder's Coverage tab (`__Finder/README.md`); usable by any merg
   2011 whole-lobe volumes; 2011/2017 section-block prefrontal and frontal-motor volumes).
 - **`coverage_targets.csv`** — named acquisition targets (`planned`) and unsourced gaps (`wanted`).
 
+## Cell-count methods (added 2026-11-04)
+
+- **`cell_count_methods/`** — how each cell number, density and ratio was counted (`methods.csv`); each
+  source's method, target merge, treatment and flag (`source_methods.csv`); when methods may be combined
+  in the opt-in pooled product (`pooling_rules.csv`); and the log through which experts propose changes
+  (`expert_reviews.csv`). Read by both cell-count merges; checked by `_checks/check_cell_count_methods.R`.
+  Summary and update procedure in its `README.md`.
+
 ## Provenance & follow-ups
 
 Built from `__merging_cellcounts/` (`cellcounts_source_species_ids.csv`, `standardized_term_cellcounts.csv`), `Stephan_temp_to_organize/csvs/Species_Codes.csv`, the harvested Stephan name variants, and the Baron 1983/1987 MDD crosswalks.

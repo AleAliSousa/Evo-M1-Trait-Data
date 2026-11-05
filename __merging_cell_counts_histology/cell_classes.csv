@@ -1,0 +1,8 @@
+cell_class,cells_phrase,definition,identified_by,notes
+glia,glial cells identified by morphology in Nissl-stained sections,"All glial cells (astrocytes, oligodendrocytes and microglia together), identified by nuclear and cytoplasmic morphology in Nissl-stained sections",Nissl morphology,Whether endothelial cells were excluded depends on the source; check its Methods.
+astrocyte,astrocytes,"Astrocytes identified by an immunomarker, named in the marker column",immunohistochemistry (marker),A marker-defined subset: GFAP labels mainly fibrous and interlaminar astrocytes; EAAT2 labels astrocytes that express the glutamate transporter. Never pooled across markers.
+neuron,neurons,Neurons identified by morphology in Nissl-stained sections or by NeuN immunoreactivity,Nissl morphology or NeuN,Nissl-based counts can score small neurons as glia (pooling rule PR02).
+oligodendrocyte,oligodendrocytes,Oligodendrocytes identified by morphology or by an oligodendrocyte-lineage marker,Nissl morphology or marker,
+microglia,microglia,Microglia identified by morphology or by a microglial marker (for example Iba1),Nissl morphology or marker,
+endothelial,endothelial cells,Endothelial cells of capillaries and other vessels,Nissl morphology or marker,
+non_neuronal,non-neuronal cells,All non-neuronal cells: glia plus endothelial and other non-neuronal cells,Nissl morphology,The histological counterpart of the isotropic fractionator's non-neuronal fraction; still kept apart from it (pooling rule PR00).

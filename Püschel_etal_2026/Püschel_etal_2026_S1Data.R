@@ -229,7 +229,12 @@ if (any(table_checks$status == "mismatch"))
 
 ## ---- 6. Write the analysis CSV ----
 csv_path <- file.path(item_dir, paste0(item_name, ".csv"))
-utils::write.csv(final.dataframe, csv_path, row.names = FALSE, na = "", fileEncoding = "UTF-8")
+## UTF-8 WITH BOM so Excel on macOS shows the accents (Galán-Acedo, ...) instead of Mac Roman mojibake (C6).
+## Without the BOM Excel decodes the UTF-8 bytes as Mac Roman ("Gal<sqrt>an"). The public TSV stays BOM-free.
+.csv_txt <- enc2utf8(paste0(paste(utils::capture.output(
+  utils::write.csv(final.dataframe, stdout(), row.names = FALSE, na = "")), collapse = "\n"), "\n"))
+.con <- file(csv_path, open = "wb")
+writeBin(as.raw(c(0xEF, 0xBB, 0xBF)), .con); writeBin(charToRaw(.csv_txt), .con); close(.con)
 
 ## ---- 7. Public TSV: look up Item encoded from __ReadMe.xlsx by Item name, write TSV ----
 filecodes <- readxl::read_excel(file.path(root, "__ReadMe.xlsx"), sheet = "Sheet1")

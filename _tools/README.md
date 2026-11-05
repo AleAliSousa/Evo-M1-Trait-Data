@@ -51,6 +51,7 @@ usage: `_skills/build-dataset-item/SKILL.md`.
 | `build_cortical_layer_definitions.R` | regenerates the cortical-layer definition tables | yes |
 | `__update_remaining_builds_20260815.R` | one-off registration; finds its rows with `match()` on Item name, so re-running is safe | yes |
 | `__edit_all_directories.R` | mass find/replace and rename across the repo | **no** — skipped; run deliberately |
+| `__rename_cell_counts_20261104.R` | one-off (owner decision 4 Nov 2026): renames the fractionator cell-count merge and the imputation folder from `cellcounts` to `cell_counts`, the files inside them, and every reference in scripts and notes; **dry run by default** | yes, as a dry run — idempotent once applied; apply deliberately |
 | `__register_cortical_layer_builds_20260815.R` | one-off registration of three cortical-layer builds | **no** — skipped; see the warning below |
 
 A tool that stays in the sweep must be **idempotent**: running it twice must do

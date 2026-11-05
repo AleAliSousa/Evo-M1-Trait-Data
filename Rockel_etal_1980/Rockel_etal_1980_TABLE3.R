@@ -1,3 +1,5 @@
+## Owner decision 2026-11-04: EXCLUDED from every merge (historical model-based profile counts,
+## not unbiased stereology). Merge_eligible stays FALSE on every row; Merge_hold records the decision.
 ## Owner decision 2026-10-16: the public TSV is written automatically with the analysis CSV.
 ## Release switches default ON here; every identity/registry/overwrite check below is unchanged.
 if (!nzchar(Sys.getenv("EVOM1_WRITE_PUBLIC_TSV"))) Sys.setenv(EVOM1_WRITE_PUBLIC_TSV = "YES")
@@ -125,7 +127,7 @@ for (.i in seq_along(.labels)) {
       Data_role = if (.missing) "info" else if (.aggregate) "derived_author_summary" else "primary",
       Primary_area_record = !.aggregate && !.missing,
       Merge_eligible = FALSE,
-      Merge_hold = "HOLD: historical profile method; collection-specific taxonomy/anatomy and owner method-compatible route pending; not modern unbiased counts.",
+      Merge_hold = "EXCLUDED (owner decision 2026-11-04): historical model-based neuronal profile counts, not unbiased stereology; never merged. Modern stereological re-count of the same question: Carlo & Stevens 2013.",
       Source_locus = "Table 3, printed p.226; methods pp.221-223; discussion pp.230-232",
       Reference = item_name, stringsAsFactors = FALSE), .joined)
   }

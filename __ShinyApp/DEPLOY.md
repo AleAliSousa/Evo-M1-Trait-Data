@@ -167,6 +167,7 @@ At runtime the app reads its data over HTTP from the public GitHub repo
 |------|-----------------------|
 | Brain-structure volumes | `__merging_volumes/volumes_long.csv` |
 | Cell counts | `__merging_cellcounts/cellcounts_long.csv` |
+| Cell counts (histology) | `__merging_cell_counts_histology/cell_counts_histology_long.csv` |
 | EvoM1 traits (derived) | `__ShinyApp/data/evom1_traits_long.csv` |
 | Source-table catalogue (derived) | `__ShinyApp/data/source_manifest.csv` |
 | The source tables | `__Public/comparative-data/…` (fetched on demand) |
@@ -222,6 +223,21 @@ console at startup, and a warning banner on the Data Directory tab naming which
 source the keys came from.
 
 ## Run locally
+
+To reopen the local preview at the same address used in this chat, run this
+from the repo root and keep the R process running:
+
+```bash
+EVOM1_SOURCE=local Rscript -e 'shiny::runApp("__ShinyApp", host="127.0.0.1", port=3876, launch.browser=TRUE)'
+```
+
+The preview at `http://127.0.0.1:3876/` stops when its R process exits; it is
+separate from the public shinyapps.io app. Restart R after code or data changes
+and reload the browser. Species explorer and Regression open their filter
+sidebars by default even in narrow panes; the sidebar arrow can collapse them.
+If the entire **Species explorer** tab is absent from the public app, its app
+code needs redeploying: pushing data or using `--no-deploy` does not update tabs
+or controls.
 
 ```r
 install.packages(c("shiny", "bslib", "DT", "ggplot2", "ape"))  # ape = optional, for PGLS

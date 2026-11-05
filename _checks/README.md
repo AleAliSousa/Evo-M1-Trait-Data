@@ -25,6 +25,7 @@ Consequences of the rule, and why it is worth keeping:
 | `registry_snapshot.R` | writes a plain-text copy of `__ReadMe.xlsx` Sheet1 and names any row that has vanished since the last run |
 | `find_csv_tsv_creators.R` | which script creates each CSV/TSV, and which data files have no creator |
 | `find_orphan_R_scripts.R` | scripts with no data input or output |
+| `check_cell_count_methods.R` | the counting-method tables in `_keys/cell_count_methods/`: ids resolve, values are in the vocabulary, accepted rows cite accepted reviews, exclusions carry a reason and evidence |
 | `parity_R_vs_py.R` | **temporary.** Diffs `check_laterality_doubling.R` against its retired `.py` twin. Delete both once they agree. Skipped by the sweep because it shells out to `Rscript` and `python3`. |
 
 Committed outputs worth knowing about:

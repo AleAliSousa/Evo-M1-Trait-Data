@@ -1,0 +1,8 @@
+measure,label_suffix,unit,definition_template,quantity_type,notes
+density,density,cells/mm3,"Number of {cells} per mm3 of processed tissue (numerical density, Nv)",volumetric density,Depends on tissue shrinkage and on how section thickness was measured; compare within one counting-method family (pooling rule PR04). Totals are more robust across studies than densities.
+number,number,cells,Total number of {cells} in the structure (N),total count,"Usually optical fractionator, or Nv multiplied by a Cavalieri reference volume; record whether one hemisphere or both."
+fraction_of_glia,fraction_of_glia,ratio,Fraction of all glia in the same region that are {cells},ratio,"Usually the mean of per-animal ratios, which is not the ratio of the two density means (Munger et al. 2022)."
+fraction_of_neurons,fraction_of_neurons,percent,Percentage of all neurons in the same region that are {cells},ratio,
+glia_neuron_ratio,glia_neuron_ratio,ratio,"Glial cells per neuron counted in the same sections (glia-neuron ratio, GNR)",ratio,"A histological GNR separates glia from endothelial cells; the isotropic fractionator's non-neuron to neuron ratio (nNNR) does not, so the two are never pooled (pooling rule PR03)."
+areal_density,areal_density,cells/mm2,"Number of {cells} under 1 mm2 of cortical surface, through the full cortical depth",areal density,Pooling with fractionator values is held for expert review (pooling rule PR06).
+section_density,section_density,cells/mm2,Number of {cells} per mm2 of tissue section (two-dimensional profile density),section density,Depends on section thickness and cell size; never pooled across studies (pooling rule PR05).

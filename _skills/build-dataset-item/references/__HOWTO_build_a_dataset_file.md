@@ -22,7 +22,7 @@ Source (PDF / journal Excel / Adobe export)
   → comparison      QA: frozen source ↔ curated data, 0 mismatches  (comparison/..._compare_to_*.R)
   → definitions     data dictionary, one row per variable      (reference_tables/..._definitions.csv)
   → README          source, steps, checks                      (..._Table<N>.README.md)
-  → merge           added to __merging_volumes / __merging_cellcounts (if PRIMARY)
+  → merge           added to __merging_volumes / a cell-count merge chosen by counting method (if PRIMARY)
 ```
 
 ## The two outputs have different jobs
@@ -429,7 +429,11 @@ Merges are kept **one per data type** — never mix measure classes in a single 
 Current and planned merge folders, each following the same `standardized_term` + compile pattern
 (with its own teams and resolution rule):
 
-- **`__merging_cellcounts/`** — optical-fractionator neuron/cell counts (Herculano-Houzel, Kverkova, …).
+- **`__merging_cell_counts_isotropic_fractionator/`** — isotropic- and flow-fractionator neuron/cell counts
+  (Herculano-Houzel, Kverková, Kaas, …).
+- **`__merging_cell_counts_histology/`** — counts and densities made in tissue sections: design-based
+  stereology; older model-based counts kept but off by default. Each source's counting method,
+  target merge and treatment: `_keys/cell_count_methods/` (record a new source there).
 - **`__merging_volumes/`** — histologically-derived structure volumes (Stephan collection + Bush, …).
 - **`__merging_cerebral_metabolic_rate/`** — brain cerebral metabolic rate (CMRgl/CMRO2/CBF;
   Kaufman, Karbowski, Heiss). Compilation-aware resolution (dedupes primary studies shared

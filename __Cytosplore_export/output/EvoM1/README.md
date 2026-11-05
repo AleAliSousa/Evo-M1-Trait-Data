@@ -1,7 +1,7 @@
 # EvoM1 species-trait tables for the Cytosplore M1 viewer (DRAFT)
 
 
-Built 2026-11-02 from Evo-M1-Trait-Data commit `bf2fd8c (from .git/HEAD; git command unavailable)` by `__Cytosplore_export/build_cytosplore_traits.R`.
+Built 2026-11-03 from Evo-M1-Trait-Data commit `3d23de4 (from .git/HEAD; git command unavailable)` by `__Cytosplore_export/build_cytosplore_traits.R`.
 Re-run that script to regenerate everything here; do not edit these CSVs by hand.
 
 ## What this is
@@ -13,11 +13,11 @@ Comparative species traits for the 25-species `EvoM1` cohort (`_keys/species_coh
 | file | one row per | use |
 |---|---|---|
 | `EvoM1_species.csv` | species (25) | species list, taxonomy, which data labels were pooled (match level: species), per-domain counts |
-| `EvoM1_traits_wide.csv` | species x variable (992) | **recommended viewer input**: species x trait matrix, one value per cell |
+| `EvoM1_traits_wide.csv` | species x variable (994) | **recommended viewer input**: species x trait matrix, one value per cell |
 | `EvoM1_traits_wide_core.csv` | species x variable (34) | same, only traits held for >= 20 of 25 species (`in_core`) |
-| `EvoM1_variable_dictionary.csv` | variable (992) | column metadata for the wide tables: domain, structure, measure, unit, definition, coverage |
-| `EvoM1_traits_cells.csv` | species x variable cell (5442) | how each wide cell was made: n values, aggregation, min/max, sources |
-| `EvoM1_traits_long.csv` | value (5758) | full provenance: every source value behind every cell |
+| `EvoM1_variable_dictionary.csv` | variable (994) | column metadata for the wide tables: domain, structure, measure, unit, definition, coverage |
+| `EvoM1_traits_cells.csv` | species x variable cell (5456) | how each wide cell was made: n values, aggregation, min/max, sources |
+| `EvoM1_traits_long.csv` | value (5772) | full provenance: every source value behind every cell |
 | `EvoM1_domain_coverage.csv` | species | n distinct variables per domain |
 | `BUILD_INFO.txt` | - | build stamp and counts |
 
@@ -57,22 +57,22 @@ Source audit (run `python3 __Cytosplore_export/audit_cytosplore_variables.py Evo
 | Chlorocebus sabaeus | African green monkey | Primates | 79 | Chlorocebus sabaeus |
 | Dasypus novemcinctus | Armadillo | Cingulata | 103 | Dasypus novemcinctus |
 | Felis catus | Cat | Carnivora | 199 | Felis catus |
-| Gorilla gorilla gorilla | Western lowland gorilla | Primates | 413 | Gorilla gorilla gorilla; Gorilla gorilla; Gorilla sp. |
+| Gorilla gorilla gorilla | Western lowland gorilla | Primates | 415 | Gorilla gorilla gorilla; Gorilla gorilla; Gorilla sp. |
 | Heterocephalus glaber | Naked mole rat | Rodentia | 129 | Heterocephalus glaber |
-| Homo sapiens | Human | Primates | 636 | Homo sapiens |
-| Macaca mulatta | Rhesus macaque | Primates | 460 | Macaca mulatta |
-| Macaca nemestrina | Pig-tailed macaque | Primates | 178 | Macaca nemestrina |
+| Homo sapiens | Human | Primates | 638 | Homo sapiens |
+| Macaca mulatta | Rhesus macaque | Primates | 462 | Macaca mulatta |
+| Macaca nemestrina | Pig-tailed macaque | Primates | 180 | Macaca nemestrina |
 | Microcebus murinus | Mouse lemur | Primates | 339 | Microcebus murinus |
 | Monodelphis domestica | Opossum | Didelphimorphia | 64 | Monodelphis domestica |
 | Mus musculus | Mouse | Rodentia | 174 | Mus musculus |
 | Mustela putorius furo | Ferret | Carnivora | 102 | Mustela putorius furo |
 | Oryctolagus cuniculus | Rabbit | Lagomorpha | 178 | Oryctolagus cuniculus |
 | Otolemur garnettii | Galago | Primates | 212 | Otolemur garnettii |
-| Pan troglodytes | Chimpanzee | Primates | 515 | Pan troglodytes |
-| Papio anubis | Baboon | Primates | 312 | Papio anubis |
+| Pan troglodytes | Chimpanzee | Primates | 517 | Pan troglodytes |
+| Papio anubis | Baboon | Primates | 314 | Papio anubis |
 | Rattus norvegicus | Rat | Rodentia | 225 | Rattus norvegicus |
 | Saimiri boliviensis boliviensis | Bolivian squirrel monkey | Primates | 116 | Saimiri boliviensis boliviensis; Saimiri boliviensis |
-| Sapajus apella | Capuchin | Primates | 235 | Sapajus apella |
+| Sapajus apella | Capuchin | Primates | 237 | Sapajus apella |
 | Sus scrofa | Pig | Artiodactyla | 113 | Sus scrofa domesticus |
 | Tupaia belangeri | Treeshrew | Scandentia | 79 | Tupaia belangeri |
 | Urocitellus parryii | Arctic ground squirrel | Rodentia | 37 | Urocitellus parryii |
@@ -88,7 +88,7 @@ Source audit (run `python3 __Cytosplore_export/audit_cytosplore_variables.py Evo
 | metabolism | 70 | 1 | 2 |
 | life history | 27 | 10 | 0 |
 | diet & ecology | 51 | 15 | 0 |
-| behaviour & cognition | 56 | 4 | 9 |
+| behaviour & cognition | 58 | 4 | 11 |
 | sensorimotor & motor pathways | 23 | 0 | 23 |
 | hand & limb morphology | 17 | 0 | 17 |
 | sleep & torpor | 8 | 0 | 0 |

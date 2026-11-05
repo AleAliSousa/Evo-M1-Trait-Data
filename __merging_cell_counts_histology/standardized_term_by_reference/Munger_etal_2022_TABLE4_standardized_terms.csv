@@ -1,0 +1,21 @@
+Reference,term_type,Original_Term,Standardized_Term,statistic,cell_class,marker,region,layer,unit,note
+Munger_etal_2022_TABLE4,column,species,Species,,,,,,,accepted binomial written by Munger_etal_2022_TABLE4.R
+Munger_etal_2022_TABLE4,column,species_as_published,species_printed,,,,,,,species as printed in the Table 4 header
+Munger_etal_2022_TABLE4,column,variable_row,DROP,,,,,,,printed row order
+Munger_etal_2022_TABLE4,column,variable_printed,measure_printed,,,,,,,row label as printed
+Munger_etal_2022_TABLE4,column,variable_code,row_key,,,,,,,names the measure of each row; see the row_value terms below
+Munger_etal_2022_TABLE4,column,abbreviation_printed,DROP,,,,,,,printed abbreviation; also inside variable_printed
+Munger_etal_2022_TABLE4,column,region_printed,region_printed,,,,,,,
+Munger_etal_2022_TABLE4,column,unit_printed,unit_printed,,,,,,,
+Munger_etal_2022_TABLE4,column,value_printed,value_printed,,,,,,,cell as printed: mean ± SD (n)
+Munger_etal_2022_TABLE4,column,mean,statistic,mean,,,,,,
+Munger_etal_2022_TABLE4,column,sd,statistic,sd,,,,,,
+Munger_etal_2022_TABLE4,column,n,n,,,,,,individuals,number of individuals analysed (table note)
+Munger_etal_2022_TABLE4,column,source,DROP,,,,,,,paper folder; the merge records the item
+Munger_etal_2022_TABLE4,row_value,Total_glia_density_layer_I_Gv_mm3,density,,glia,,PFC_area9,I,cells/mm3,"Gv: total glia, Nissl, optical fractionator"
+Munger_etal_2022_TABLE4,row_value,Total_glia_density_WM_Gv_mm3,density,,glia,,PFC_area9,WM,cells/mm3,"Gv: total glia, Nissl, optical fractionator"
+Munger_etal_2022_TABLE4,row_value,GFAP_ir_astrocyte_density_layer_I_GFAPv_mm3,density,,astrocyte,GFAP,PFC_area9,I,cells/mm3,GFAPv: GFAP-immunoreactive astrocytes (interlaminar astrocytes in layer I)
+Munger_etal_2022_TABLE4,row_value,GFAP_ir_astrocyte_density_WM_GFAPv_mm3,density,,astrocyte,GFAP,PFC_area9,WM,cells/mm3,GFAPv: GFAP-immunoreactive (fibrous) astrocytes
+Munger_etal_2022_TABLE4,row_value,GFAPv_Gv_layer_I,fraction_of_glia,,astrocyte,GFAP,PFC_area9,I,ratio,"GFAPv/Gv: mean of per-animal ratios, not the ratio of the two density means; printed to 2 decimals"
+Munger_etal_2022_TABLE4,row_value,GFAPv_Gv_WM,fraction_of_glia,,astrocyte,GFAP,PFC_area9,WM,ratio,"GFAPv/Gv: mean of per-animal ratios, not the ratio of the two density means"
+Munger_etal_2022_TABLE4,row_value,EAAT2_ir_astrocyte_density_WM_EAAT2v_mm3,density,,astrocyte,EAAT2,PFC_area9,WM,cells/mm3,EAAT2v: EAAT2-immunoreactive astrocytes

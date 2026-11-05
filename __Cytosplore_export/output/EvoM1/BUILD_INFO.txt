@@ -1,19 +1,19 @@
-built:           2026-11-02 23:57:38 PST
-repo commit:     bf2fd8c (from .git/HEAD; git command unavailable)
+built:           2026-11-03 19:55:33 PST
+repo commit:     3d23de4 (from .git/HEAD; git command unavailable)
 cohort:          EvoM1 (25 species)
 match level:     species
 core threshold:  >= 80% of cohort (>= 20 species)
 pooling mode:    off
 species without any data: none
-long rows (all values):   5758
-  of which measurement:   5706
-species x variable cells: 5442
-variables in wide:        992   (matrix fill 21.9%)
+long rows (all values):   5772
+  of which measurement:   5720
+species x variable cells: 5456
+variables in wide:        994   (matrix fill 22.0%)
 variables in wide_core:   34   (matrix fill 91.6%)
 cells unresolved categorical: 0
 cells with numeric spread > 50%: 10
-units: 876 from key, 99 from merge rows, 8 parsed from label, 9 none
-variables flagged m1_motor_related: 95 (of which core: 0)
+units: 878 from key, 99 from merge rows, 8 parsed from label, 9 none
+variables flagged m1_motor_related: 97 (of which core: 0)
 domains excluded from wide/cells/dictionary: dataset metadata
 
 variables per domain (all / core / m1_motor_related):
@@ -24,7 +24,7 @@ variables per domain (all / core / m1_motor_related):
   metabolism                         70 /    1 /    2
   life history                       27 /   10 /    0
   diet & ecology                     51 /   15 /    0
-  behaviour & cognition              56 /    4 /    9
+  behaviour & cognition              58 /    4 /   11
   sensorimotor & motor pathways      23 /    0 /   23
   hand & limb morphology             17 /    0 /   17
   sleep & torpor                      8 /    0 /    0

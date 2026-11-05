@@ -1,0 +1,6 @@
+family,method_tag,slug,notes
+histology_design_based,stereology,stereology,"Design-based stereology: optical fractionator, optical or physical disector."
+histology_model_based,profile counts,profile_counts,"Model-based profile counts in sections, with or without an Abercrombie-type correction. Off by default; never pooled (pooling rule PR07)."
+histology_unverified,histology unverified,histology_unverified,"Counted in sections, but the counting probe has not been checked; included with a flag."
+histology_2d,section areal,section_areal,"Two-dimensional densities per mm2 of section or per field; own label, never pooled across studies (pooling rule PR05)."
+tracer,tracer-labelled,tracer,Labelled subpopulations; a different quantity from total counts (pooling rule PR08).

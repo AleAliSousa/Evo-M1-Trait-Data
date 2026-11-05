@@ -1,0 +1,3 @@
+source,filter,flag_type,note,recorded_by,recorded_date
+Munger_etal_2022_TABLE4,"variable_code == ""Total_glia_density_WM_Gv_mm3"" & species_as_published == ""Pan troglodytes""",source_internal_discrepancy,"Table 4 prints 267,012 per mm3; the Discussion (p. 12) gives 287,469 for chimpanzee white-matter glia. Table value kept, not corrected.",AI assistant (Microsoft Copilot),2026-11-04
+Munger_etal_2022_TABLE4,"variable_code == ""Total_glia_density_WM_Gv_mm3"" & species_as_published == ""Homo sapiens""",source_internal_discrepancy,"Table 4 prints 120,832 per mm3; the Discussion gives 120,833 for human white-matter glia. Table value kept, not corrected.",AI assistant (Microsoft Copilot),2026-11-04

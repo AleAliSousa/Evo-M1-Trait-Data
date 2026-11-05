@@ -223,6 +223,7 @@ sources**; TraitExplorer discovers the folder automatically; `__Cytosplore_expor
 | Pellis_Iwaniuk_2000_Table1 | play_sexual / play_nonsexual_byproduct / play_nonsexual_social_assessment / play_presence / social_organization | Play_sex_score, Play_nonsex_score, Play_nonsex_score_raised_ceiling, Play_presence (score/category) [distinct]; Social_organization_score_strepsirrhine (score) [distinct] | primary | first | replaces the two Iwaniuk play-score rows; see the decision above |
 | Graham__2011_TABLEI | social_play_pct / nonsocial_play_pct | Play_social_time_pct_Graham2011, Play_nonsocial_time_pct_Graham2011 (percent) [distinct] | secondary | first | activity-budget percentages; never pooled with the ordinal scores or the social_mirror_play measures |
 | Püschel_etal_2026_S1Data | mean_mhi / mean_mabshi | Handedness_index_mean_Püschel2026 (HI), Handedness_strength_mean_Püschel2026 (abs(HI)) [distinct] | secondary | wmean:sample_size | study rows pooled within species by n; never pooled with __merging_behaviour's Caspar 2022 handedness labels; see the 2026-11-03 section below |
+| Munger_etal_2022_TABLE4 | `mean` filtered by `variable_code` (5 printed variables: astrocyte soma volumes, GLUT1 vessels) | `PFC_area9_<layer>_<measure>` (um3, mm3 as printed, %) [distinct] - 5 labels | primary | first | Brodmann area 9 layer I / adjacent WM / grey matter, 4 primates; one row per species already. The 7 cell densities and ratios moved to `__merging_cell_counts_histology` on 2026-11-04; see the 2026-11-04 section below |
 
 
 ## ManyPrimates supplements, 2026-10-21
@@ -304,3 +305,30 @@ paper's own additions.
 - **Definitions.** `_keys/build_variable_definitions.R` binds both labels to the item's definitions of `mean_mhi` and `mean_mabshi`.
 - **Rows written without R.** A Python mirror of `supplementary_compiled.R` wrote the 82 rows in `supplementary_long.csv` and the 2 rows in `_keys/variable_domain.csv` on 2026-11-03, sorted as a full run sorts them (R NOT RUN). Run `Rscript __merging_supplementary/supplementary_compiled.R`; it should reproduce them, then follow the usual key steps above. The quick `SUPPLEMENTARY_SOURCE_PUBLICATIONS="Püschel_etal_2026"` refresh also works, but it appends the rows at the end and rewrites the file with every field quoted.
 - The cross-source comparison is in the restricted repo: `restricted_checks/Püschel_etal_2026/comparison/`.
+
+
+## Munger et al. 2022 area 9 astrocytes (2026-11-04)
+
+`Munger_etal_2022_TABLE4` is Table 4 of Munger, Edler, Hopkins, Hof, Sherwood & Raghanti 2022 (*J Comp Neurol*, doi:10.1002/cne.25387): species means (± SD, n) for *Macaca nemestrina*, *Papio anubis*, *Pan troglodytes* and *Homo sapiens* in **Brodmann area 9** (dorsolateral prefrontal cortex, not M1). Five of its 12 variables are mapped here as primary labels with `distinct` policy, one mapping row each (`filter = variable_code == "<code>"`, `value_col = mean`, `aggregate = first`, since the item already has one row per species and variable):
+
+| label | measure_class / domain | Structure |
+|---|---|---|
+| `PFC_area9_L1_GFAP_astrocyte_soma_volume (um3)`, `PFC_area9_WM_GFAP_astrocyte_soma_volume (um3)`, `PFC_area9_WM_EAAT2_astrocyte_soma_volume (um3)` | soma_morphometry / cellular morphology | PFC_area9, FrontalWhite |
+| `PFC_area9_GLUT1_vessel_volume (mm3 as printed)`, `PFC_area9_GLUT1_vessel_area_fraction (%)` | vascular_glucose_transporter / metabolism | PFC_area9 |
+
+- **Densities and ratios moved (2026-11-04).** The 7 cell densities and GFAPv/Gv ratios left this merge the same day:
+  - glia and GFAP-ir astrocyte density in layer I and the white matter;
+  - GFAPv/Gv in layer I and the white matter;
+  - EAAT2-ir astrocyte density in the white matter.
+
+  They are now in `__merging_cell_counts_histology` (cells counted in sections), with method-tagged labels such as `PFC_area9_L1_glia_density [stereology] (cells/mm3)`. The old-to-new label table is in that folder's README. Removed from here, by hand and without R:
+  - their 7 mapping rows in `supplementary_sources.csv`;
+  - their 28 rows in `supplementary_long.csv`;
+  - their 7 "Supplementary sources" rows in `_keys/variable_domain.csv`.
+
+  The flags travelled with them: chimpanzee and human white-matter glia (text vs table), and the GFAPv/Gv ratios being means of per-animal ratios.
+- **Not pooled with anything.** The three soma volumes are astrocyte nucleator volumes. `__merging_cell_morphology`'s `[stereology]` soma volumes are of neurons, so no `poolable_group` is set.
+- **GLUT1 vessel volume unit.** Printed "mm3"; values of 1e8 do not fit that unit (µm3 per mm3 of tissue would). Kept as printed, labelled `mm3 as printed`, not converted.
+- **Long-term owner.** The soma volumes belong with `__merging_cell_morphology`, where `_keys/cell_count_methods/source_methods.csv` routes them (`route_elsewhere`); this mapping is the interim route. GLUT1 stays here. Owner decision.
+- **Specimens.** The individuals behind these means are Munger Table 1 (`Munger_etal_2022_TABLE1`), registered in `_keys/specimen_crosswalk/` with five probable cross-paper chimpanzee links (Munger2022_specimen_note.md).
+- **Rows.** This item now gives 20 rows in `supplementary_long.csv` (5 labels × 4 species) and 5 rows in `_keys/variable_domain.csv`. The removals above were made without R (R NOT RUN). A full run of `Rscript __merging_supplementary/supplementary_compiled.R` should reproduce the file; then follow the usual key steps (`_keys/build_variable_definitions.R`, trait authority) and `__ShinyApp/build_data.R`.

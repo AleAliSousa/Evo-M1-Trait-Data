@@ -4,6 +4,12 @@
 **Registry identity:** `10.1093%2Fbrain%2F103.2.221_TABLE3`  
 **Citation:** Rockel, A. J., Hiorns, R. W., & Powell, T. P. S. (1980). The basic uniformity in structure of the neocortex. *Brain, 103*(2), 221–244. https://doi.org/10.1093/brain/103.2.221
 
+## Owner decision, 4 Nov 2026: excluded from all merges
+
+- **Flagged and excluded from every merge**, including the planned histology cell-count merge. These are model-based counts: two-dimensional profile counts of neurons with a visible nucleolus in 25-µm paraffin sections, made before design-based stereology was in common use, printed without shrinkage correction (see the method gate below).
+- The item stays built for provenance and stays visible in the app's source-table browser. `Merge_eligible` remains FALSE on every row, and `Merge_hold` now records the exclusion. Re-run `Rockel_etal_1980_TABLE3.R` to refresh the analysis CSV and the public TSV.
+- Context: the uniformity claim is contested. Herculano-Houzel et al. (2008, *PNAS* 105:12593), using the isotropic fractionator, found that the number of neurons under 1 mm² of cortex varies about threefold across primates. Carlo & Stevens (2013, *PNAS* 110:1488) repeated the counts with modern stereology in four of Rockel's species and reported agreement with Rockel. For neurons or glia under a unit of cortical surface, use `Carlo_Stevens_2013_Figure2` or the fractionator data, not this item.
+
 ## Source → snapshot
 
 Printed Table 3, **“COMPARISON OF CELL COUNTS,” p.226 (document page 6)** is the frozen source. Methods on pp.221–223, Table 1 on p.223, Table 2 on p.224 and discussion on pp.230–232 supply the separate item-scoped context.
@@ -48,7 +54,7 @@ The Table 3 footnote says mouse, rat, cat and man means come from **two samples 
 - Area labels remain as published. Primates' methods/results context includes motor area 4, somatic sensory cortex, probably frontal area 9, parietal area 7, and temporal area 22; no blanket primate Brodmann mapping is imposed on other species. Visual refers to source area 17. Anatomical/merge homology remains owner-reviewed.
 - Human visual source sampling includes **both hemispheres**, specifically posterior/middle calcarine-sulcus thirds. Other positions have **unstated laterality**. There is no blanket LEFT/bilateral designation, hemisphere multiplication, or conversion to a whole-structure bilateral total.
 
-`Record_type`, `Data_role` and `Primary_area_record` are row-level dependency gates. The registry's source role remains **primary**, but **every `Merge_eligible` value is FALSE** under historical-method, collection-specific taxonomy/anatomy and owner-routing holds. Neither the existing method hold nor source primary origin authorizes promotion to a modern neuron-count merge.
+`Record_type`, `Data_role` and `Primary_area_record` are row-level dependency gates. The registry's source role remains **primary**, but **every `Merge_eligible` value is FALSE** under historical-method and collection-specific taxonomy/anatomy holds, and by the owner's exclusion of 4 Nov 2026. Neither the existing method hold nor source primary origin authorizes promotion to a modern neuron-count merge.
 
 ## R execution and online database — NOT RUN / WITHHELD
 

@@ -133,6 +133,14 @@ GH <- list(
   cortical_areas  = "__merging_cortical_areas/cortical_areas_long.csv",
   cortical_layers = "__merging_cortical_layers/cortical_layers_m1_long.csv",
   cell_morphology = "__merging_cell_morphology/cell_morphology_long.csv",
+  # 2026-11-04: cells counted in tissue sections (design-based stereology first;
+  # model-based profile counts kept but off by default). Same long schema as
+  # cell_morphology, read by std_cell_morphology(). Every label carries its
+  # counting method, e.g. "[stereology]", so it never averages with the
+  # isotropic-fractionator values under "Cell counts". Which sources come in is
+  # set by _keys/cell_count_methods/source_methods.csv; see
+  # __merging_cell_counts_histology/README__merging.md.
+  cell_counts_histology = "__merging_cell_counts_histology/cell_counts_histology_long.csv",
   fossil_bgu = "__merging_fossil_brain_glucose/fossil_brain_glucose_long.csv",
   gyrification = "__merging_gyrification/gyrification_long.csv",
   sensory    = "__merging_sensory/sensory_long.csv",
@@ -476,6 +484,8 @@ load_compiled <- function() {
             "Cortical layer thickness"),
     std_cell_morphology(GH$cell_morphology, file.path(data_dir, "cell_morphology_long.csv"),
             "Cell type, size & morphology"),
+    std_cell_morphology(GH$cell_counts_histology,
+            file.path(data_dir, "cell_counts_histology_long.csv"), "Cell counts (histology)"),
     std_fossil_bgu(GH$fossil_bgu, file.path(data_dir, "fossil_brain_glucose_long.csv"),
             "Fossil brain glucose"),
     std_gyrification(GH$gyrification, file.path(data_dir, "gyrification_long.csv"),
@@ -1413,6 +1423,8 @@ ui <- page_navbar(
     layout_sidebar(
       sidebar = sidebar(
         width = 340,
+        title = "Choose species",
+        open = TRUE, # Keep the filters visible on narrow browser panes too.
         helpText("Find traits for one species or compare a set. Start with an ",
                  "order, a genus, or a species name. Blank species means all ",
                  "species in the selected order / genera."),
@@ -1650,6 +1662,8 @@ ui <- page_navbar(
     layout_sidebar(
       sidebar = sidebar(
         width = 360,
+        title = "Model settings",
+        open = TRUE,
         helpText("Does X predict Y once size is accounted for? Fits ",
                  tags$code("Y ~ X + covariates"), " on species values (median across sources), by OLS or ",
                  "phylogenetic GLS. Pick body size, brain size or both as the ",

@@ -66,10 +66,10 @@ Known issues). None was wired into any `__merging_*` script before this draft (`
 | `Elston_etal_2006_Table1` | Elston | 7 | 39 | pyramidal_L3 | PFC_granular, V1, V2 | basal_dendritic_field_area, spine_count | 35 | 10 (footnote *t*) |
 | `Sherwood_etal_2003_Table1` | Sherwood | 25 | 282 | gigantopyramidal, meynert, pyramidal_L5 | M1, V1 | soma_volume | 0 | 0 |
 | `Nimchinsky_etal_1999_Table2` | Hof | 5 | 30 | fusiform_L6, pyramidal_L5, ven | ACC | soma_volume | 0 | 0 |
-| `Butti_etal_2009_Table5` | Hof | 4 | 23 | ven | ACC, ACC_subgenual, PFC_area10, anterior_insula | ven_count, ven_pct | 0 | 0 |
+| `Butti_etal_2009_Table5` | Hof | 4 | 23 | ven | ACC, ACC_subgenual, frontal_pole, anterior_insula | ven_count, ven_pct | 0 | 0 |
 | `Butti_etal_2009_Table6` | Hof | 4 | 28 | fusiform_L6, pyramidal_L5, ven | ACC (inferred) | soma_volume, ven_index | 0 | 0 |
 | `Hakeem_etal_2009_Table1` | Hof | 1 | 10 | ven, all_neurons | FI | ven_count, ven_pct, reference_neuron_count | 0 | 0 |
-| `Raghanti_etal_2015_Table1` | Sherwood | 8 | 64 | ven, fork_cell | ACC, PFC_area10, anterior_insula, occipital_pole | ven_pct, fork_pct | 0 | 0 |
+| `Raghanti_etal_2015_Table1` | Sherwood | 8 | 64 | ven, fork_cell | ACC, frontal_pole, anterior_insula, occipital_pole | ven_pct, fork_pct | 0 | 0 |
 | `Falcone_etal_2019_TABLE1` | Falcone | 47 | 180 | interlaminar_astrocyte | frontal | ila_presence (categorical) | 0 | 0 |
 | `Falcone_etal_2019_TABLE2` | Falcone | 47 | 226 | interlaminar_astrocyte | frontal | ila_linear_density, ila_primary_processes, ila_total_processes, ila_total_length, ila_complexity | 0 | 0 |
 | `Armstrong__1979_Tables1-9` | Armstrong | 5 (incl. *Hylobates* sp.) | 40 | thalamic_relay | LGN parvo/magno, MGN parvo, VB | soma_volume (perikaryal) | 0 | 0 |
@@ -100,6 +100,8 @@ One row per (source × species × specimen × region × layer × cell type × me
 | `method` | source-stated or lineage default (Golgi tracing, Lucifer-Yellow injection, nucleator/rotator stereology, Nissl perikaryal volumetry, optical fractionator, GFAP + Neurolucida) |
 | `data_role`, `dependency`, `merge_default`, `ref` | primary/secondary per row; named parent when a value is re-reported; `merge_default = FALSE` only where the same value is already merged from its own table |
 | `source_note`, `term_note`, `curation_note` | source flags (e.g. `gigantopyramidal_absent=TRUE`, `underestimate=TRUE`), term-map notes, compile-time notes (unit rescale, inferred region) |
+
+**Frontal pole is a position, not area 10 (owner, 4 Nov 2026).** Raghanti et al. 2015 and Butti et al. 2009 sampled the frontal pole of cetaceans, ungulates, the rock hyrax and (Raghanti) one human as a sampling position, not a homologous area. `region_crosswalk.csv` therefore maps their "frontal_pole" and "FP" to `frontal_pole`, not `PFC_area10`. Area 10 is used only where the source names Brodmann area 10 in a primate (Bianchi 2012, Elston 2000). App labels changed accordingly: `frontal_pole_ven_ven_pct [nissl_count]`, `frontal_pole_fork_cell_fork_pct [nissl_count]` and `frontal_pole_ven_ven_count [fractionator]` (formerly `PFC_area10_...`). The 4 Nov outputs were relabelled without R (18 long rows, 17 coverage rows, 3 `_keys/variable_domain.csv` rows); re-running `cell_morphology_compiled.R` reproduces them.
 
 ## Merge rules drafted (all subject to owner sign-off)
 
@@ -135,7 +137,7 @@ One row per (source × species × specimen × region × layer × cell type × me
 6. **Absence is not missing.** Jacobs 2018 Table 5 `gigantopyramidal_absent = TRUE` species keep an
    empty gigantopyramidal row flagged in `source_note`; Falcone 2019 `No` / `rudimentary` presence
    classes are categorical values, not blanks.
-7. **Team-aware within-team resolution is NOT applied yet.** Unlike `__merging_cellcounts` §8, no
+7. **Team-aware within-team resolution is NOT applied yet.** Unlike `__merging_cell_counts_isotropic_fractionator` §8, no
    most-recent-wins pass runs here. Two same-team, same-method (Golgi) overlaps exist and both stay
    as separate rows for now, because the values differ and are therefore distinct measurements:
    - *Homo sapiens* M1 layer III pyramidal, `Bianchi_etal_2012_Table2` (Jacobs 1997/2001 data) vs
@@ -191,7 +193,7 @@ One row per (source × species × specimen × region × layer × cell type × me
   taxonomy pass.
 - Nguyen 2019 `Species_scientific_printed` is *Panthera leo leo* (subspecies) against `Species`
   *Panthera leo*; Jacobs 2018 has *Panthera tigris altaica*. Subspecies handling follows whatever
-  `__merging_cellcounts` does for the same names.
+  `__merging_cell_counts_isotropic_fractionator` does for the same names.
 
 ## Files
 
@@ -233,6 +235,6 @@ and decide its `data_role` / dependency rows in the compile's `case_when` blocks
 ## Registry / roadmap follow-ups (not done here)
 
 - `__ReadMe.xlsx` is untouched. No new registry rows are needed — all 18 sources are already registered.
-- `PROJECT_SCOPE_AND_DATASET_ROADMAP.md` item 9 (Jacobs 2018 → "`__merging_cellcounts` as a regional
+- `PROJECT_SCOPE_AND_DATASET_ROADMAP.md` item 9 (Jacobs 2018 → "`__merging_cell_counts_isotropic_fractionator` as a regional
   M1 sub-trait") should be re-pointed to this folder if the owner accepts the scope above; the same
   applies to the "Jacobs regional M1 morphology" audit note (roadmap do-first step 5).

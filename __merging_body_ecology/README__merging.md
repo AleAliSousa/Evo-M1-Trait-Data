@@ -1,7 +1,7 @@
 # Merging body & ecology data
 
 Pipeline for compiling **whole-organism** traits — the body/ecology counterpart of
-`__merging_volumes/`, `__merging_cellcounts/`, and `__merging_cerebral_metabolic_rate/`.
+`__merging_volumes/`, `__merging_cell_counts_isotropic_fractionator/`, and `__merging_cerebral_metabolic_rate/`.
 These are organism-level measures (body mass, body BMR, ecology / life-history), a different
 family from the brain-structure merges, so they get their own merge.
 

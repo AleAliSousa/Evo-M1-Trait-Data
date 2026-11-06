@@ -77,11 +77,11 @@ Prefrontal_cortex,broader,Cortex,cortical_areas,Prefrontal_Surface_Area.mm2,Smae
 Neocortex,broader,Cortex,cortical_areas,CorticalSurface_Area.mm2,,same,direct,per_source,primary,cortical_areas README,drafted,
 Neocortex,broader,Cortex,cortical_areas,CorticalThickness.mm,,same,direct,per_source,primary,cortical_areas README,drafted,
 Neocortex,broader,Cortex,cellcounts,CerebralCortex,,contains (neocortex + hippocampus),proxy,isotropic_fractionator,primary,anatomy_reference (CerebralCortexNoHippocampus exists separately),drafted,
-Cerebellum,broader,Cerebellum,cellcounts,Cerebellum,,same,direct,isotropic_fractionator,primary,cellcounts_long structure prefix,drafted,volumes excluded here (trait_authority RULE-1)
-Whole_brain,broader,Whole brain,cellcounts,WholeBrain,,same,direct,isotropic_fractionator,primary,cellcounts_long structure prefix,drafted,volumes excluded here (trait_authority RULE-1)
-Amygdala,broader,Limbic,cellcounts,Amygdala,,same,direct,isotropic_fractionator,primary,cellcounts_long structure prefix,drafted,volumes excluded here (trait_authority RULE-1)
-Hippocampus,broader,Limbic,cellcounts,Hippocampus,,same,direct,isotropic_fractionator,primary,cellcounts_long structure prefix,drafted,volumes excluded here (trait_authority RULE-1)
-Septum,broader,Limbic,cellcounts,Septum,,same,direct,isotropic_fractionator,primary,cellcounts_long structure prefix,drafted,volumes excluded here (trait_authority RULE-1)
-Thalamus,broader,Diencephalon,cellcounts,Thalamus,,same,direct,isotropic_fractionator,primary,cellcounts_long structure prefix,drafted,volumes excluded here (trait_authority RULE-1)
-Hypothalamus,broader,Diencephalon,cellcounts,Hypothalamus,,same,direct,isotropic_fractionator,primary,cellcounts_long structure prefix,drafted,volumes excluded here (trait_authority RULE-1)
-Basal_ganglia,broader,Basal ganglia,cellcounts,Striatum,,overlaps,proxy,isotropic_fractionator,primary,cellcounts_long structure prefix,drafted,
+Cerebellum,broader,Cerebellum,cellcounts,Cerebellum,,same,direct,isotropic_fractionator,primary,cell_counts_isotropic_fractionator_long structure prefix,drafted,volumes excluded here (trait_authority RULE-1)
+Whole_brain,broader,Whole brain,cellcounts,WholeBrain,,same,direct,isotropic_fractionator,primary,cell_counts_isotropic_fractionator_long structure prefix,drafted,volumes excluded here (trait_authority RULE-1)
+Amygdala,broader,Limbic,cellcounts,Amygdala,,same,direct,isotropic_fractionator,primary,cell_counts_isotropic_fractionator_long structure prefix,drafted,volumes excluded here (trait_authority RULE-1)
+Hippocampus,broader,Limbic,cellcounts,Hippocampus,,same,direct,isotropic_fractionator,primary,cell_counts_isotropic_fractionator_long structure prefix,drafted,volumes excluded here (trait_authority RULE-1)
+Septum,broader,Limbic,cellcounts,Septum,,same,direct,isotropic_fractionator,primary,cell_counts_isotropic_fractionator_long structure prefix,drafted,volumes excluded here (trait_authority RULE-1)
+Thalamus,broader,Diencephalon,cellcounts,Thalamus,,same,direct,isotropic_fractionator,primary,cell_counts_isotropic_fractionator_long structure prefix,drafted,volumes excluded here (trait_authority RULE-1)
+Hypothalamus,broader,Diencephalon,cellcounts,Hypothalamus,,same,direct,isotropic_fractionator,primary,cell_counts_isotropic_fractionator_long structure prefix,drafted,volumes excluded here (trait_authority RULE-1)
+Basal_ganglia,broader,Basal ganglia,cellcounts,Striatum,,overlaps,proxy,isotropic_fractionator,primary,cell_counts_isotropic_fractionator_long structure prefix,drafted,

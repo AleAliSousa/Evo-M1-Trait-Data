@@ -9,7 +9,7 @@ Full table title (for `__ReadMe.xlsx`): **"Table 4. Grey-Level Index in area 13"
 This item was built during the `__merging_GLI` gap check: the paper's Table 4 GLI values were not
 previously extracted into this repo (only the Table 2 volumetric item existed — see
 `Semendeferi_etal_1998_TABLE2.ReadMe.md`, which flagged "Neuron/GLI tables (paper Tables 4-5)" as
-unbuilt beyond the cell-count table). Re-checking against `__merging_cellcounts` confirmed Table 4
+unbuilt beyond the cell-count table). Re-checking against `__merging_cell_counts_isotropic_fractionator` confirmed Table 4
 GLI values are not present anywhere in the repo. This item extracts them.
 
 ## What GLI is

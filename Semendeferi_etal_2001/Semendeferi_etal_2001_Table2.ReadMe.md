@@ -17,7 +17,7 @@ gorilla area 10 = cortex of the frontal pole.
 ## Provenance
 Primary cytoarchitectonic volumetry, **C. & O. Vogt Institute (Zilles), Duesseldorf = Stephan/Zilles
 collection** (brain volumes identical to the 1998 area-13 paper -> same specimens). Prefrontal subregion
-(frontal pole area 10). n = 1 per species. Neuron/GLI tables -> `__merging_cellcounts`.
+(frontal pole area 10). n = 1 per species. Neuron/GLI tables -> `__merging_cell_counts_isotropic_fractionator`.
 
 ## Species note
 Binomials from common names; reconcile to `_keys/Stephan/species_key.csv`.

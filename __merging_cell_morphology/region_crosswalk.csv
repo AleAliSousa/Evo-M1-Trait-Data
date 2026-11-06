@@ -7,7 +7,7 @@ Reference,region_printed,region,note
 *,V2,V2,second visual area (area 18)
 *,Area18,V2,Bianchi 2012
 *,Area3b,S1_3b,"primary somatosensory cortex, area 3b"
-*,Area10,PFC_area10,frontal pole / area 10
+*,Area10,PFC_area10,"Brodmann area 10 (frontopolar cortex), primates; never used for the frontal pole of species that lack area 10"
 *,Area11,PFC_area11,orbitofrontal area 11
 *,Area12,PFC_area12,orbitofrontal area 12
 *,gPFC,PFC_granular,granular prefrontal cortex (Elston 2006)
@@ -21,7 +21,7 @@ Reference,region_printed,region,note
 *,ACC,ACC,anterior cingulate cortex
 *,FI,FI,frontoinsular cortex
 *,SUBG,ACC_subgenual,Butti 2009 subgenual ROI (verify against paper Table 2)
-*,frontal_pole,PFC_area10,Raghanti 2015
+*,frontal_pole,frontal_pole,"frontal pole, a sampling position (not area 10 in species that lack area 10)"
 *,acc,ACC,Raghanti 2015
 *,anterior_insula,anterior_insula,Raghanti 2015
 *,occipital_pole,occipital_pole,Raghanti 2015
@@ -33,7 +33,7 @@ Reference,region_printed,region,note
 *,frontal cortex layer I,frontal,Falcone 2019 ILA sampled from dorsal + ventral frontal cortex
 *,pooled_multiregion,pooled_multiregion,Jacobs 2015 Table 4: pooled sample across the regions named in region_printed
 Butti_etal_2009_Table5,AI,anterior_insula,Butti 2009 ROI
-Butti_etal_2009_Table5,FP,PFC_area10,Butti 2009 frontal pole ROI
+Butti_etal_2009_Table5,FP,frontal_pole,"Butti 2009 frontal pole ROI (cetaceans): a sampling position, not area 10"
 *,primary motor cortex,M1,Nguyen 2019 region column
 *,primary visual cortex,V1,Nguyen 2019 region column
 *,Area7a,parietal_7a,Elston 2000

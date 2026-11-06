@@ -121,7 +121,7 @@ GH <- list(
   social_mirror_play = "__merging_behaviour/social_mirror_play_long.csv",
   claustrum_cerebellar = "__merging_volumes/claustrum_cerebellar_long.csv",
   volumes    = "__merging_volumes/volumes_long.csv",
-  cellcounts = "__merging_cellcounts/cellcounts_long.csv",
+  cellcounts = "__merging_cell_counts_isotropic_fractionator/cell_counts_isotropic_fractionator_long.csv",
   traits     = "__ShinyApp/data/evom1_traits_long.csv",
   body       = "__merging_body_ecology/body_ecology_long.csv",
   brain_mass = "__merging_brain_mass/brain_mass_long.csv",
@@ -454,7 +454,7 @@ load_compiled <- function() {
   base <- rbind(
     std(GH$volumes,    file.path(data_dir, "volumes_long.csv"),
         "Brain-structure volumes", "Teams", "n_teams"),
-    std(GH$cellcounts, file.path(data_dir, "cellcounts_long.csv"),
+    std(GH$cellcounts, file.path(data_dir, "cell_counts_isotropic_fractionator_long.csv"),
         "Cell counts", "Source"),
     std(GH$traits,     file.path(data_dir, "evom1_traits_long.csv"),
         "EvoM1 traits", "Source")

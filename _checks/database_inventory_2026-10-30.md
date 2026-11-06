@@ -65,9 +65,9 @@ Files ending in `_long.csv`, `_wide.csv`, `_unfiltered.csv`, or `_compiled.csv` 
 | __merging_brain_mass | `brain_mass_unfiltered.csv` | 4655 | 20 |
 | __merging_brain_mass | `brain_mass_wide.csv` | 1294 | 8 |
 | __merging_cell_morphology | `cell_morphology_long.csv` | 3155 | 35 |
-| __merging_cellcounts | `cellcounts_long.csv` | 3259 | 8 |
-| __merging_cellcounts | `cellcounts_unfiltered.csv` | 5912 | 4 |
-| __merging_cellcounts | `cellcounts_wide.csv` | 86 | 166 |
+| __merging_cell_counts_isotropic_fractionator | `cell_counts_isotropic_fractionator_long.csv` | 3259 | 8 |
+| __merging_cell_counts_isotropic_fractionator | `cell_counts_isotropic_fractionator_unfiltered.csv` | 5912 | 4 |
+| __merging_cell_counts_isotropic_fractionator | `cell_counts_isotropic_fractionator_wide.csv` | 86 | 166 |
 | __merging_cerebellar_folding | `cerebellar_folding_long.csv` | 383 | 18 |
 | __merging_cerebellar_folding | `cerebellar_folding_wide.csv` | 56 | 8 |
 | __merging_cerebral_metabolic_rate | `cerebral_metabolic_rate_long.csv` | 235 | 14 |

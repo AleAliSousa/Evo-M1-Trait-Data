@@ -38,7 +38,7 @@ Two corrections/additions made after the initial merge, prompted by the project 
 | Herculano-Houzel et al. 2015 Table 3 | ~40 mammals | RoB ("Rest of Brain") Mass, g | primary (measured) | Yes |
 | Herculano-Houzel et al. 2015 Table 4 | ~29 mammals | Olfactory bulb Mass, g | primary (measured) | Yes |
 | Herculano-Houzel et al. 2015 Table 5 | ~40 mammals | Brain mass, g | — | **No** — whole-brain mass, `__merging_brain_mass`'s domain |
-| Herculano-Houzel et al. 2020 Table 1/2 | bats | `MBRAIN` (whole-brain, g); `NCX`/`NCB`/`NRoB` (neuron **counts**, not mass) | — | **No** — no part-*mass* column at all, only whole-brain mass (excluded per above) and neuron counts, which belong to `__merging_cellcounts`, not this weight merge |
+| Herculano-Houzel et al. 2020 Table 1/2 | bats | `MBRAIN` (whole-brain, g); `NCX`/`NCB`/`NRoB` (neuron **counts**, not mass) | — | **No** — no part-*mass* column at all, only whole-brain mass (excluded per above) and neuron counts, which belong to `__merging_cell_counts_isotropic_fractionator`, not this weight merge |
 | Kverkova et al. 2018 Table S1 | ~11 African mole-rats and relatives | Brain_Mass.g x `<part>_p.C.Brain` (14 parts, see below) | **derived** (not measured) | Yes, flagged |
 
 Kverkova's table publishes **part volume as a percent of total brain volume** (`..._p.C.Brain`,

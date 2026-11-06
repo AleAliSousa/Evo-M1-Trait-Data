@@ -312,7 +312,7 @@ Compilations loaded as a whole (Karbowski 2007, Kaufman 2004) land here by const
 | Heffner_Heffner_1985_Figure3 | candidate | primary | Mustela (1) | extract if full curve/individuals wanted |
 | Heffner_Heffner_1985_Figure6 | candidate | secondary | Mustela (1) | optional comparative compilation; check overlap with registered Heffner items |
 | Mayer_etal_2019_Fig6 | BUILT from PDF Results text; public TSV  | primary | Sapajus (1) |  |
-| Rivara_etal_2003_Betzcells | candidate | primary | Homo sapiens (1) | Priority 1. Access: Subscription (Wiley). Suggested home: __merging_cellcounts ( |
+| Rivara_etal_2003_Betzcells | candidate | primary | Homo sapiens (1) | Priority 1. Access: Subscription (Wiley). Suggested home: __merging_cell_counts_isotropic_fractionator ( |
 | Seelke_etal_2014_Table1 | PREPARED (CSV built; owner registry past | primary | Monodelphis domestica (1) |  |
 | Seelke_etal_2014_Table3 | PREPARED (CSV built; owner registry past | primary | Monodelphis domestica (1) |  |
 | Seelke_etal_2014_Table4 | PREPARED (CSV built; owner registry past | primary | Monodelphis domestica (1) |  |

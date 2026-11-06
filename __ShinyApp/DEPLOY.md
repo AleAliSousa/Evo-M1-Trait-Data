@@ -166,7 +166,7 @@ At runtime the app reads its data over HTTP from the public GitHub repo
 | Data | Fetched from (GitHub) |
 |------|-----------------------|
 | Brain-structure volumes | `__merging_volumes/volumes_long.csv` |
-| Cell counts | `__merging_cellcounts/cellcounts_long.csv` |
+| Cell counts | `__merging_cell_counts_isotropic_fractionator/cell_counts_isotropic_fractionator_long.csv` |
 | Cell counts (histology) | `__merging_cell_counts_histology/cell_counts_histology_long.csv` |
 | EvoM1 traits (derived) | `__ShinyApp/data/evom1_traits_long.csv` |
 | Source-table catalogue (derived) | `__ShinyApp/data/source_manifest.csv` |

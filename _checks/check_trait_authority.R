@@ -77,7 +77,7 @@ eval(parse(text = paste(src[seq_len(cut - 1)], collapse = "\n")), envir = app_en
 setwd(owd)
 compiled <- get("compiled", envir = app_env)
 
-DS <- c("Brain-structure volumes"="__merging_volumes","Cell counts"="__merging_cellcounts",
+DS <- c("Brain-structure volumes"="__merging_volumes","Cell counts"="__merging_cell_counts_isotropic_fractionator",
         "EvoM1 traits"="____EvoM1_TraitTable (melted)","Body & ecology"="__merging_body_ecology",
         "Brain mass"="__merging_brain_mass","Behaviour"="__merging_behaviour",
         "Brain-part weights"="__merging_weights","Endocranial volume"="__merging_endocranial_volume",

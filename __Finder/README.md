@@ -52,6 +52,6 @@ All key rows start as `status = drafted` and await curator confirmation, as in `
 - Metabolic-rate values from Kaufman 2004 and Karbowski 2007 are review compilations; their primaries
   are not traced individually, so those records are 🟡. Heiss 2004 (human FDG-PET) is primary.
 - Young 2013 (M1 cell/neuron densities) and Herculano-Houzel 2013 (mouse areas) are built but not wired
-  into `__merging_cellcounts`; they show as 🔵. HH 2013 "Motor" is M1 + M2, so it is a proxy for M1.
+  into `__merging_cell_counts_isotropic_fractionator`; they show as 🔵. HH 2013 "Motor" is M1 + M2, so it is a proxy for M1.
 - MEC/LEC: no data and no agreed boundary definition yet (target W003).
 - The app reads `data/` locally; GitHub fetch via `_tools/lib_gh.R` (APP_PLAN B.2) is not wired yet.

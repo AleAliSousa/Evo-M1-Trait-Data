@@ -1,7 +1,7 @@
 # Merging sensory data
 
 Pipeline for compiling the comparative **sensory performance** dataset — the psychophysical
-counterpart of `__merging_volumes/` (structure) and `__merging_cellcounts/` (cells), built on
+counterpart of `__merging_volumes/` (structure) and `__merging_cell_counts_isotropic_fractionator/` (cells), built on
 the **compilation-aware** pattern of `__merging_cerebral_metabolic_rate/`.
 
 ## Measurement method is part of the measure name

@@ -45,7 +45,7 @@ differently depending on which sub-dataset it lands in:
   Stephan key at all: it resolved names through an NCBI backbone cache
   (`volumes_species_ids_cache.csv`) plus `_keys/volumes_species_overrides.csv` keyed by item name
   (both migrated into the spokes on 2026-09-28 and no longer read for resolution).
-- **Cell counts** (`__merging_cellcounts/cellcounts_compiled.R`, step 4) ignores the spoke keys and
+- **Cell counts** (`__merging_cell_counts_isotropic_fractionator/cell_counts_isotropic_fractionator_compiled.R`, step 4) ignores the spoke keys and
   resolves names with a **live NCBI `name2taxid()` lookup** to an NCBI "preferred name".
 - A few per-paper build scripts (the `Bush_Allman_*` ones) *also* harmonise in-script, against
   whichever key directory they happen to point at (`Stephan` in one, `Allman` in others).
@@ -245,8 +245,8 @@ sub-datasets resolves identically by construction.
 5. **Repoint `volumes_compiled.R`** to `source()` the resolver and replace the local `accepted()` +
    single-key read. Re-run; **diff `volumes_long.csv` against the pre-migration copy — expect zero
    changes** (volumes already uses the Stephan key, so this should be behaviour-preserving).
-6. **Repoint `cellcounts_compiled.R`** to `resolve_species()` (v1: NCBI view from the hub) instead of
-   the live `name2taxid()`. Because anchors are seeded from NCBI (R1), diff `cellcounts_long.csv` and
+6. **Repoint `cell_counts_isotropic_fractionator_compiled.R`** to `resolve_species()` (v1: NCBI view from the hub) instead of
+   the live `name2taxid()`. Because anchors are seeded from NCBI (R1), diff `cell_counts_isotropic_fractionator_long.csv` and
    expect **near-zero** name changes; review any that do change. (In v2 this becomes
    `resolve_species(..., taxonomy = "NCBI")`, behaviour-identical.)
 7. **Remove in-script harmonisation** from `Bush_Allman_2003/2004_a/2004_b` (and don't add it to new

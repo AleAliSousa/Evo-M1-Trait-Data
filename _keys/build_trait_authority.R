@@ -70,7 +70,7 @@ if (!nrow(compiled)) stop("app.R produced an empty compiled table.")
 # Dataset display name -> the repo folder that produces it.
 DS <- c(
   "Brain-structure volumes"  = "__merging_volumes",
-  "Cell counts"              = "__merging_cellcounts",
+  "Cell counts"              = "__merging_cell_counts_isotropic_fractionator",
   "EvoM1 traits"             = "____EvoM1_TraitTable (melted)",
   "Body & ecology"           = "__merging_body_ecology",
   "Brain mass"               = "__merging_brain_mass",

@@ -110,7 +110,7 @@ baselines, so those too were read by coordinate.
 ### Findings that change what should be merged
 
 1. **`Kazu_etal_2014_Table1` must not be merged as built.** All five species are already in
-   `cellcounts_wide.csv` from HH 2015 at full precision, and this is the **2014 printing** — the
+   `cell_counts_isotropic_fractionator_wide.csv` from HH 2015 at full precision, and this is the **2014 printing** — the
    2015 corrigendum changes **71 of 195 cells (36%)**. Confirmed here: printed `WholeBrain_N.n`
    disagrees with `cortex + cerebellum + RoB` by −0.4% to −22.0%, and the corrigendum's values are
    what make it hold. What the table genuinely adds is the **sub-structures** (hippocampus, cortical
@@ -222,9 +222,9 @@ gives **69.3 ± 1.8** (the SEM matches exactly), and its O/N maximum of 34.190 h
 `Flags active (skips) = superseded by Kazu_etal_2015_TABLE1 - do not merge`, and its README carries
 a banner.
 
-### Wired into `__merging_cellcounts` — by the existing team rule, not by hand
+### Wired into `__merging_cell_counts_isotropic_fractionator` — by the existing team rule, not by hand
 
-Added to `cellcounts_compiled.R`'s `item_name` on 2026-08-06. Kazu is Herculano-Houzel–team work,
+Added to `cell_counts_isotropic_fractionator_compiled.R`'s `item_name` on 2026-08-06. Kazu is Herculano-Houzel–team work,
 so §8.2.H's existing resolution handles it: within a team, priority is **date, then number of
 species**, and only the best-priority source survives per **species × variable**. My earlier
 suggestion to hand-pick the sub-structure columns was unnecessary — the rule already does it.
@@ -249,10 +249,10 @@ two different measurements rather than two printings of one.
 Also added: `standardized_term_by_reference/Kazu_etal_2015_TABLE1_standardized_terms.csv` (identity
 map — the build already emits canonical `<Structure>_<Measure>` names — with `n → WholeBrain_n`;
 every column listed, because the compile renames by `match()` and an unlisted column becomes an
-`NA` column name), `standardized_term_cellcounts.csv` regenerated (498 → 544 rows, nothing lost),
-and the rule written up in `__merging_cellcounts/README__merging.md`.
+`NA` column name), `standardized_term_cell_counts_isotropic_fractionator.csv` regenerated (498 → 544 rows, nothing lost),
+and the rule written up in `__merging_cell_counts_isotropic_fractionator/README__merging.md`.
 
-**Still to run in R:** `standardized_term.R`, then `cellcounts_compiled.R`.
+**Still to run in R:** `standardized_term.R`, then `cell_counts_isotropic_fractionator_compiled.R`.
 
 ---
 

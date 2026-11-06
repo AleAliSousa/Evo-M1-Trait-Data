@@ -55,7 +55,7 @@ are recorded in `Region` / the definitions rather than silently harmonised.
 ## *** REGIONAL — never pooled ***
 
 These are **within-cortex regional densities**. *Homo sapiens* already carries whole-cortex
-`CerebralCortex_*` values in `__merging_cellcounts` (from Herculano-Houzel et al. 2015).
+`CerebralCortex_*` values in `__merging_cell_counts_isotropic_fractionator` (from Herculano-Houzel et al. 2015).
 The seven values here must **never** be averaged into, summed with, or substituted for
 those — exactly the rule `Jacobs_etal_2018/README.md` states for M1. They also must not be
 pooled with each other (see the unweighted-mean point above), and V1 must not be added to
@@ -65,7 +65,7 @@ pooled with each other (see the unweighted-mean point above), and V1 must not be
 (`PrefrontalCortexGrey`, `FrontalCortexGrey`, …, `V1CortexGrey`). It is **mechanically
 derived** from the printed label in the `.R` rather than hand-listed, because the regional
 vocabulary decision is still open in
-`__merging_cellcounts/HH_coverage_gaps_scaffold.md` ("Design note"). Rename it there when
+`__merging_cell_counts_isotropic_fractionator/HH_coverage_gaps_scaffold.md` ("Design note"). Rename it there when
 that decision is made; nothing downstream depends on the current spelling.
 
 ## Units
@@ -139,14 +139,14 @@ Unchanged from the scaffold, and this build does not settle it. Two live options
 
 1. **Reference only** (what `HerculanoHouzel_etal_2013` mouse areas does today): keep the
    built table for provenance and leave `Ribeiro_etal_2013_Table1` commented out in
-   `cellcounts_compiled.R` `item_name`.
+   `cell_counts_isotropic_fractionator_compiled.R` `item_name`.
 2. **Merge as regional terms**: requires the regional-vocabulary decision in
    `HH_coverage_gaps_scaffold.md`, and a reshape — the merge expects **species-as-rows**,
    and this table is one species × seven regions. The standardized-terms file would have to
    map region × measure into 21 wide columns (`PrefrontalCortexGrey_N.p.mg`, …), i.e. the
    `.R` would need a pivot step added after section 5.
 
-Nothing in `__merging_cellcounts/` was touched by this build (no standardized-terms file
+Nothing in `__merging_cell_counts_isotropic_fractionator/` was touched by this build (no standardized-terms file
 was written; there was no stub for this paper). No `.tsv` was written to
 `__Public/comparative-data/` — the `.R` writes it when sourced; publishing is separate.
 

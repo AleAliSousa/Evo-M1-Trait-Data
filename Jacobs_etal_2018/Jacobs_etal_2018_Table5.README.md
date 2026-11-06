@@ -113,7 +113,7 @@ reproducing exactly validates `SoSizeh`; the soma-depth means validate `SoDepthi
    in the snapshot.
 3. Resolve `species_sci` via `_keys`, taking binomials from Table 1/Table 3.
 4. Register in `__ReadMe.xlsx` (`Data role = primary`), write the DOI-coded public TSV (invariant 2).
-5. Wire into `__merging_cellcounts` as a **regional (M1) sub-trait** with its own standardized terms.
+5. Wire into `__merging_cell_counts_isotropic_fractionator` as a **regional (M1) sub-trait** with its own standardized terms.
    `method = Golgi (2-D somatodendritic tracing)` — **not** interchangeable with the unbiased
    stereology in Table 3, even where both report a soma measure for the same species.
 

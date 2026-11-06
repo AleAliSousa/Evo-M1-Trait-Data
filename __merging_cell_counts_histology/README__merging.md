@@ -2,7 +2,7 @@
 
 Cells counted **in tissue sections**: densities, totals and ratios of neurons and glia, across species and regions. One row per printed statistic (long format). Started on 4 November 2026 with Munger et al. 2022, Table 4.
 
-> **R NOT RUN.** The script was written without R. The first outputs in this folder come from a Python mirror of `cell_counts_histology_compiled.R`. Run the script once (see "Run") and compare the outputs before relying on them.
+> **Checked in R (4 Nov 2026, 17:16 PST).** The script was written without R, and the first outputs came from a Python mirror. The owner's run of `cell_counts_histology_compiled.R` reproduced them byte for byte: all seven output files and the "Cell counts (histology)" rows of `_keys/variable_domain.csv`.
 
 ## Why this merge is separate
 
@@ -11,7 +11,7 @@ The counting method decides which merge a value goes to. This was an owner decis
 | Merge | What is counted |
 |---|---|
 | **this folder** | Cells counted in sections. Design-based stereology (optical fractionator, disector) comes first. Model-based profile counts are kept but **off by default**. |
-| the isotropic-fractionator merge (`__merging_cellcounts`) | Nuclei counted in homogenates (isotropic or flow fractionator). |
+| the isotropic-fractionator merge (`__merging_cell_counts_isotropic_fractionator`) | Nuclei counted in homogenates (isotropic or flow fractionator). |
 
 Methods are **never pooled here**. Every app label ends with its method tag, for example `[stereology]`, so the app cannot average a stereology density with a fractionator density. Combining methods is reserved for a separate, opt-in pooled product, and only where a rule in `_keys/cell_count_methods/pooling_rules.csv` allows it. Rule PR00 is "never" by default. PR01, for totals, cites Bahney & von Bartheld 2014: fractionator counts were about 100% of stereology counts in primate white matter.
 
@@ -122,13 +122,13 @@ Rscript _keys/build_variable_definitions.R
 
 Then run Update_ShinyApp. The app reads `cell_counts_histology_long.csv` directly; nothing is copied into `__ShinyApp/data/`.
 
-On the first R run:
+Checks for a run:
 - `cell_counts_histology_long.csv` should have the same 56 rows and values.
 - The routing file should read 28 / 12 / 8.
 - The pending file should list 30 rows.
 - `variable_domain.csv` should end with the same 7 "Cell counts (histology)" rows.
 
-Any difference means the mirror and the script disagree; the R output is then authoritative, but say what differed.
+The first R run (4 Nov 2026) matched on every point. After any later change, the R output is authoritative.
 
 ## Provenance
 

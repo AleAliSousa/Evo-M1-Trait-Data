@@ -9,7 +9,7 @@
 ## Counting method decides the merge (owner decision, 4 Nov 2026; review RV-2026-005):
 ##   * this merge            - cells counted in sections: design-based stereology first;
 ##                             model-based profile counts are kept but off by default
-##   * the isotropic-fractionator merge (__merging_cellcounts) - homogenate counts
+##   * the isotropic-fractionator merge (__merging_cell_counts_isotropic_fractionator) - homogenate counts
 ## Values are never pooled across methods here. Every app label carries its method
 ## tag ("[stereology]"), so the app cannot average a stereology density with anything
 ## else. Pooling, where an expert-reviewed rule allows it, belongs to a separate opt-in

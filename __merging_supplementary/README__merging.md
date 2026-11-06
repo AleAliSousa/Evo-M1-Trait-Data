@@ -20,6 +20,9 @@ sources**; TraitExplorer discovers the folder automatically; `__Cytosplore_expor
 - `supplementary_long.csv` -- std_merge schema + `n_specimens`, `items`, `label_policy`.
 - `supplementary_unresolved_species.csv` -- printed names `resolve_species()` could not anchor; they
   are kept in the long table under the cleaned printed string with `species_basis = unresolved`.
+- `supplementary_label_definitions.csv` -- definitions for labels whose source column carries no
+  label-specific definition (one `state` column serves many traits). `Code` = the label without its
+  unit; `_keys/build_variable_definitions.R` finds it as a whole-label source definition (pass 1).
 
 ## Decisions
 - **Shared labels (5).** PanTHERIA gestation, weaning age, litter size, maximum longevity (months/12)
@@ -224,6 +227,10 @@ sources**; TraitExplorer discovers the folder automatically; `__Cytosplore_expor
 | Graham__2011_TABLEI | social_play_pct / nonsocial_play_pct | Play_social_time_pct_Graham2011, Play_nonsocial_time_pct_Graham2011 (percent) [distinct] | secondary | first | activity-budget percentages; never pooled with the ordinal scores or the social_mirror_play measures |
 | Püschel_etal_2026_S1Data | mean_mhi / mean_mabshi | Handedness_index_mean_Püschel2026 (HI), Handedness_strength_mean_Püschel2026 (abs(HI)) [distinct] | secondary | wmean:sample_size | study rows pooled within species by n; never pooled with __merging_behaviour's Caspar 2022 handedness labels; see the 2026-11-03 section below |
 | Munger_etal_2022_TABLE4 | `mean` filtered by `variable_code` (5 printed variables: astrocyte soma volumes, GLUT1 vessels) | `PFC_area9_<layer>_<measure>` (um3, mm3 as printed, %) [distinct] - 5 labels | primary | first | Brodmann area 9 layer I / adjacent WM / grey matter, 4 primates; one row per species already. The 7 cell densities and ratios moved to `__merging_cell_counts_histology` on 2026-11-04; see the 2026-11-04 section below |
+| Preuss_etal_1999_Fig2 | `state` filtered by `trait` | `V1_L4A_CO_dense_band_Preuss1999 (category)` [distinct] | primary | mode | CO-dense band of V1 layer 4A, 6 taxa (Fig. 2 legend); see the 2026-11-05 section below |
+| Preuss_etal_1999_MainText | `state` filtered by `trait` (5 traits) | `V1_L4B_CO_band_Preuss1999`, `V1_L4A_NPNF_vertical_elements_Preuss1999`, `V1_L4A_NPNF_bridging_bands_Preuss1999`, `V1_L4A_NPNF_mesh_Preuss1999`, `V1_L4A_MAP2_mesh_Preuss1999` (category) [distinct] | primary | mode | V1 layer 4A/4B observations, 2-7 taxa; group statements expanded to the taxa examined |
+| Preuss_Coleman_2002_MainText | `state` filtered by `trait` (4 traits) | `V1_L4A_Cat301_mesh_Preuss2002`, `V1_L4A_CB_pattern_Preuss2002`, `V1_Cat301_densest_layer_Preuss2002`, `V1_L4A_CB_Cat301_complementary_Preuss2002` (category) [distinct] | primary | mode | Cat-301 and calbindin observations, 2-6 taxa |
+| Preuss_Coleman_2002_Fig11Matrix | `state` of `row_type == "derived"` rows, filtered by `trait` (5 characters) | `V1_L4A_<character>_Preuss2002Fig11` (category) [distinct] - 5 labels | both | mode | Fig. 11 reconstruction; a genus gets a state only where its printed letter code includes the character; genus anchors (Pan sp. ...) |
 
 
 ## ManyPrimates supplements, 2026-10-21
@@ -332,3 +339,51 @@ paper's own additions.
 - **Long-term owner.** The soma volumes belong with `__merging_cell_morphology`, where `_keys/cell_count_methods/source_methods.csv` routes them (`route_elsewhere`); this mapping is the interim route. GLUT1 stays here. Owner decision.
 - **Specimens.** The individuals behind these means are Munger Table 1 (`Munger_etal_2022_TABLE1`), registered in `_keys/specimen_crosswalk/` with five probable cross-paper chimpanzee links (Munger2022_specimen_note.md).
 - **Rows.** This item now gives 20 rows in `supplementary_long.csv` (5 labels × 4 species) and 5 rows in `_keys/variable_domain.csv`. The removals above were made without R (R NOT RUN). A full run of `Rscript __merging_supplementary/supplementary_compiled.R` should reproduce the file; then follow the usual key steps (`_keys/build_variable_definitions.R`, trait authority) and `__ShinyApp/build_data.R`.
+
+## Preuss et al. 1999 and Preuss & Coleman 2002: V1 layer 4 traits (2026-11-05)
+
+Fifteen categorical labels from the two Preuss papers on primary visual cortex (Preuss, Qi & Kaas 1999, *PNAS*
+96:11601, doi:10.1073/pnas.96.20.11601; Preuss & Coleman 2002, *Cereb Cortex* 12:671, doi:10.1093/cercor/12.7.671).
+All are `distinct`, `Units = category` (text states, so the app lists them but does not plot them),
+`domain = cellular composition`, `measure_class = v1_layer4_architecture`, `Structure = V1`, `aggregate = mode`
+(each item already has one row per taxon and trait). Ten are the authors' observations (`primary`); five come from
+the Fig. 11 reconstruction (`both`).
+
+| label | taxa | states | from |
+|---|---|---|---|
+| `V1_L4A_CO_dense_band_Preuss1999 (category)` | 6 | absent, present | `Preuss_etal_1999_Fig2` |
+| `V1_L4B_CO_band_Preuss1999 (category)` | 7 | absent, present | `Preuss_etal_1999_MainText` |
+| `V1_L4A_NPNF_vertical_elements_Preuss1999 (category)` | 6 | present | `Preuss_etal_1999_MainText` |
+| `V1_L4A_NPNF_bridging_bands_Preuss1999 (category)` | 2 | present | `Preuss_etal_1999_MainText` |
+| `V1_L4A_NPNF_mesh_Preuss1999 (category)` | 7 | absent, present | `Preuss_etal_1999_MainText` |
+| `V1_L4A_MAP2_mesh_Preuss1999 (category)` | 7 | absent, present | `Preuss_etal_1999_MainText` |
+| `V1_L4A_Cat301_mesh_Preuss2002 (category)` | 6 | absent, present | `Preuss_Coleman_2002_MainText` |
+| `V1_L4A_CB_pattern_Preuss2002 (category)` | 6 | dense irregular territories, label-sparse band, uniform, moderate density | `Preuss_Coleman_2002_MainText` |
+| `V1_Cat301_densest_layer_Preuss2002 (category)` | 4 | layer 4B, layer 6 | `Preuss_Coleman_2002_MainText` |
+| `V1_L4A_CB_Cat301_complementary_Preuss2002 (category)` | 2 | absent, present | `Preuss_Coleman_2002_MainText` |
+| `V1_L4A_direct_LGN_input_Preuss2002Fig11 (category)` | 9 | absent, present | `Preuss_Coleman_2002_Fig11Matrix` |
+| `V1_L4A_CO_dense_band_Preuss2002Fig11 (category)` | 11 | absent, present | `Preuss_Coleman_2002_Fig11Matrix` |
+| `V1_L4A_CB_level_Preuss2002Fig11 (category)` | 7 | dense in interstitial zones, increased, sparse | `Preuss_Coleman_2002_Fig11Matrix` |
+| `V1_L4A_NPNF_pattern_Preuss2002Fig11 (category)` | 7 | dense in mesh bands, sparse | `Preuss_Coleman_2002_Fig11Matrix` |
+| `V1_L4A_Cat301_pattern_Preuss2002Fig11 (category)` | 6 | dense in mesh bands, sparse | `Preuss_Coleman_2002_Fig11Matrix` |
+
+- **Source-suffixed, never pooled.** `_Preuss1999`, `_Preuss2002` and `_Preuss2002Fig11` keep observation and
+  reconstruction apart. The two CO-band labels cover the same six genera (Saimiri, Ateles, Macaca, Pongo, Pan, Homo)
+  and agree.
+- **Taxa.** Own material is keyed by the Methods binomials (`Macaca` pooled -> Macaca sp.; vervets ->
+  Chlorocebus aethiops). The Fig. 11 labels are per genus (`Pan sp.`, `Pongo sp.`, `Saimiri sp.`, ...; Homo ->
+  Homo sapiens; Erythrocebus -> E. patas; Miopithecus -> M. talapoin), so they sit beside, not on, the species rows.
+- **Filters** drop group rows (`taxon_level != "clade or group"`); in Fig. 11 only `row_type == "derived"` rows are
+  read, and genera whose letter code lacks the character have a blank state and are skipped.
+- **Not taken:** human-only sizes (pale zones 60-120 um, Cat-301+ somata 10-20 and 20-25 um, capsules 80-100 um,
+  calbindin+ somata ~10 um); layer-3 NPNF (not layer 4); staining-strength rows (antibody sensitivity, not anatomy);
+  human-only compartment details; 1999 Fig. 1 (literature model, no species) and Fig. 6 (tree interpretation of the
+  same observations); the other figure items, which repeat the Main Text states. All stay in the item CSVs/TSVs and
+  in the app's source-table browser.
+- **Definitions.** `supplementary_label_definitions.csv` (new) holds one definition per label. Seven glossary terms
+  were added for the tooltips: CO, NPNF, MAP2, Cat301, CB, L4A, L4B.
+- **Rows written without R (R NOT RUN).** A Python mirror wrote the 93 rows in `supplementary_long.csv`, 15 rows each
+  in `_keys/variable_domain.csv` and `_keys/variable_definitions.csv`, and 15 rows (the Preuss public TSVs) in
+  `__ShinyApp/data/source_manifest.csv`. To confirm, run `Rscript __merging_supplementary/supplementary_compiled.R`,
+  `Rscript _keys/build_variable_definitions.R`, the trait-authority steps and `Rscript __ShinyApp/build_data.R`, then
+  push to GitHub (the deployed app reads GitHub).

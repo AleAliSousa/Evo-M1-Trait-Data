@@ -1,6 +1,6 @@
 ## Sensory compiled merge -- comparative SENSORY PERFORMANCE (percepts only).
 ## Counterpart of __merging_volumes/volumes_compiled.R and
-## __merging_cellcounts/cellcounts_compiled.R, built on the COMPILATION-AWARE
+## __merging_cell_counts_isotropic_fractionator/cell_counts_isotropic_fractionator_compiled.R, built on the COMPILATION-AWARE
 ## pattern of __merging_cerebral_metabolic_rate (see README__merging.md, and
 ## __HOWTO_build_a_dataset_file.md sections 9-10).
 ##

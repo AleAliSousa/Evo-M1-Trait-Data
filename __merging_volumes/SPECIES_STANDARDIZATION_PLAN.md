@@ -31,7 +31,7 @@
 
 1. **`Species` (capital)** is the canonical **binomial** species column in every output TSV/CSV.
    It is the most common header already, so it's the default. Renaming to merge-specific names
-   happens only at compile time via each paper's term map (the `../__merging_cellcounts` pattern).
+   happens only at compile time via each paper's term map (the `../__merging_cell_counts_isotropic_fractionator` pattern).
 2. Retire the per-paper `Species_<token>` convention (`Species_Stephan1981`, `Species_deSousa2010`,
    …) and the one-off `Species name` (AvelinodeSouza, DosSantos 2020) → all become `Species`.
 3. **Common-name-only tables** (a column called `Species`/`species` that actually holds common

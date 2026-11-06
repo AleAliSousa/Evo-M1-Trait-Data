@@ -114,7 +114,7 @@ match the pattern (blank, dash, or "n.a."), and the parse drops them rather than
 non-matching cells so `nrow(ms) == nrow(out)` always. Check the published Table 3 for which
 two nuclei are blank before deciding whether `NA` is the right value.
 
-### 4. `__imputing_cellcounts/cellcounts_imputations_diagnostic.R` — all-NA density
+### 4. `__imputing_cell_counts/cell_counts_isotropic_fractionator_imputations_diagnostic.R` — all-NA density
 
 ```
 Error in density.default(x = c(NA_real_, NA_real_, ...)): need at least 2 points to

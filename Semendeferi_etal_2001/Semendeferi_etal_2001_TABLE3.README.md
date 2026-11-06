@@ -9,7 +9,7 @@ Full table title (for `__ReadMe.xlsx`): **"Table 3. Grey-level index in area 10"
 Built during the `__merging_GLI` gap check: the paper's Table 3 GLI values were not previously
 extracted into this repo (only the Table 2 volumetric item existed — see
 `Semendeferi_etal_2001_TABLE2.ReadMe.md`, which flagged "Neuron/GLI tables" as pointing only to
-`__merging_cellcounts`, and `__merging_cellcounts` was confirmed to carry no GLI column). This item
+`__merging_cell_counts_isotropic_fractionator`, and `__merging_cell_counts_isotropic_fractionator` was confirmed to carry no GLI column). This item
 extracts them, as the area-10 counterpart to `Semendeferi_etal_1998_TABLE4_GLI` (area 13).
 
 ## What GLI is

@@ -88,7 +88,7 @@ Five were listed on 2026-09-18; Walhovd (above) is resolved. The remaining four 
 or `/Users/crossmodal/...` (`setwd()`, `repo <-`, `here <-`, or direct `read_excel()` paths):
 `Barger_etal_2014`, `Granatosky__2018`, `Karbowski__2007`, `Lewitus_etal_2013`,
 `MedinaGonzález__2026` (×3), `Upham_etal_2019`, `Wilman_etal_2014`, `Wimberly_etal_2021`,
-18 readers in `____EvoM1_TraitTable/`, `__merging_cellcounts` (×2), `__merging_cerebral_metabolic_rate/
+18 readers in `____EvoM1_TraitTable/`, `__merging_cell_counts_isotropic_fractionator` (×2), `__merging_cerebral_metabolic_rate/
 standardized_term.R`, `__merging_sensory` (×2), `__merging_trees` (×2), `__merging_volumes/
 standardized_term.R`, `_keys/build_variable_catalog.R`, `_keys/resolve_taxonomy.R`
 (`compare_to_reference.R` is handled above). The house replacement is the self-locating root

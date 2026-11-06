@@ -16,7 +16,7 @@ Herculano-Houzel S, Collins CE, Wong P, Kaas JH (2007). *Cellular scaling rules 
 ## Lewitus 2014 (ref 85) comparability
 Table 1 holds the comparable quantities: brain mass, body mass, total neurons (`N.n`) and non-neuronal cells (`O.n`). Lewitus's copy is secondary; prefer this table.
 
-## Overlap with repo (checked against `__merging_cellcounts/cellcounts_long.csv`)
+## Overlap with repo (checked against `__merging_cell_counts_isotropic_fractionator/cell_counts_isotropic_fractionator_long.csv`)
 The same species are already held from `HerculanoHouzel_etal_2015_Table5` (WholeBrain_N.n, _O.n, _Mass.g, Body_Mass.g):
 - Identical: Tupaia glis, Callithrix jacchus, Otolemur garnettii, Aotus trivirgatus, Cebus (as Sapajus apella), all four columns; Saimiri brain mass and neurons.
 - DIFFERENT: *Saimiri sciureus* non-neurons 2,075.03 M here vs 2,073,030,000 in 2015 Table5 (one digit; verify against the 2015 PDF; the printed 2007 value is kept); Saimiri body mass n.a. here vs 859 g in 2015.

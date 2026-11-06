@@ -99,7 +99,7 @@ the curator's judgement and the shape of the source table.
   handling** (§6) are all table-dependent.
 
 When in doubt: copy the closest model folder (volumes → `Stephan_etal_1982`; cell counts → see the
-cell-count lineage and `__merging_cellcounts/README__merging.md`), and keep the six invariants.
+cell-count lineage and `__merging_cell_counts_isotropic_fractionator/README__merging.md`), and keep the six invariants.
 
 ---
 

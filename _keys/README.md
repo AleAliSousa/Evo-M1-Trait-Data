@@ -76,7 +76,7 @@ Started for the Finder's Coverage tab (`__Finder/README.md`); usable by any merg
 
 ## Provenance & follow-ups
 
-Built from `__merging_cellcounts/` (`cellcounts_source_species_ids.csv`, `standardized_term_cellcounts.csv`), `Stephan_temp_to_organize/csvs/Species_Codes.csv`, the harvested Stephan name variants, and the Baron 1983/1987 MDD crosswalks.
+Built from `__merging_cell_counts_isotropic_fractionator/` (`cell_counts_isotropic_fractionator_source_species_ids.csv`, `standardized_term_cell_counts_isotropic_fractionator.csv`), `Stephan_temp_to_organize/csvs/Species_Codes.csv`, the harvested Stephan name variants, and the Baron 1983/1987 MDD crosswalks.
 
 Open: (1) **taxonomy-currency pass** — run `resolve_taxonomy.R`, which fills current `Order_resolved` / `Family_resolved` for all 179 from **NCBI Taxonomy first** (by taxid where present, else by name), falling back to **ITIS** then **GBIF**, recording the source and flagging any disagreement with the existing MDD order. (NCBI's eutils API was not reachable from the build sandbox, so this is a script to run in your environment.) (2) resolve **NCBI taxids** for the Stephan-only species so every row has the stable ID; (3) **cross-domain structure harmonization** — map the Latin volume structures to the English cell-count structures within `anatomy_reference.csv` (e.g. `Bulbus_olfactorius` <-> `OlfactoryBulb`) so the two collections' structures can be compared.
 

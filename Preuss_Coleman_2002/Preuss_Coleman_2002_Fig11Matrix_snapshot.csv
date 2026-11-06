@@ -1,0 +1,53 @@
+﻿row,row_type,locus,page,panel,taxon_as_printed,taxon_in_methods,marker,layer,feature,state_as_read,value_low,value_high,unit,n_as_printed,applies_to,printed_wording,evidence,note
+1,letter_key,Fig. 11 legend: letter code,684,,,,LGN connections,4A,direct LGN (P-layer) input to layer 4A,a,,,,,,the presence or absence of direct projections from LGN to 4A,legend,
+2,letter_key,Fig. 11 legend: letter code,684,,,,CO,4A,CO-dense band in layer 4A,b,,,,,,the presence or absence of a CO-dense band,legend,
+3,letter_key,Fig. 11 legend: letter code,684,,,,calbindin,4A,calbindin level in layer 4A,c,,,,,,level of expression of calbindin in 4A,legend,
+4,letter_key,Fig. 11 legend: letter code,684,,,,NPNF,4A,NPNF expression pattern in layer 4A,d,,,,,,pattern of expression of NPNF,legend,
+5,letter_key,Fig. 11 legend: letter code,684,,,,Cat-301,4A,Cat-301 expression pattern in layer 4A,e,,,,,,the pattern of expression of Cat-301,legend,
+6,terminal_label,Fig. 11 diagram: genus label and letter code,685,,Saimiri,,,,kinds of data published (letter code),abcde,,,,,,abcde,figure image,vernacular name in the legend (p. 684): squirrel monkeys
+7,terminal_label,Fig. 11 diagram: genus label and letter code,685,,Cebus,,,,kinds of data published (letter code),ab,,,,,,ab,figure image,vernacular name in the legend (p. 684): capuchin monkeys
+8,terminal_label,Fig. 11 diagram: genus label and letter code,685,,Callithrix,,,,kinds of data published (letter code),abc,,,,,,abc,figure image,vernacular name in the legend (p. 684): marmosets
+9,terminal_label,Fig. 11 diagram: genus label and letter code,685,,Aotus,,,,kinds of data published (letter code),ab,,,,,,ab,figure image,vernacular name in the legend (p. 684): owl monkeys
+10,terminal_label,Fig. 11 diagram: genus label and letter code,685,,Ateles,,,,kinds of data published (letter code),abcde,,,,,,abcde,figure image,vernacular name in the legend (p. 684): spider monkeys
+11,terminal_label,Fig. 11 diagram: genus label and letter code,685,,Macaca,,,,kinds of data published (letter code),abcde,,,,,,abcde,figure image,vernacular name in the legend (p. 684): macaque monkeys
+12,terminal_label,Fig. 11 diagram: genus label and letter code,685,,Papio,,,,kinds of data published (letter code),a,,,,,,a,figure image,vernacular name in the legend (p. 684): baboons
+13,terminal_label,Fig. 11 diagram: genus label and letter code,685,,Cercopithecus,,,,kinds of data published (letter code),abd,,,,,,abd,figure image,vernacular name in the legend (p. 684): guenons (including green monkeys)
+14,terminal_label,Fig. 11 diagram: genus label and letter code,685,,Erythrocebus,,,,kinds of data published (letter code),a,,,,,,a,figure image,vernacular name in the legend (p. 684): patas monkeys
+15,terminal_label,Fig. 11 diagram: genus label and letter code,685,,Miopithecus,,,,kinds of data published (letter code),b,,,,,,b,figure image,vernacular name in the legend (p. 684): talapoin monkeys
+16,terminal_label,Fig. 11 diagram: genus label and letter code,685,,Pongo,,,,kinds of data published (letter code),bcde,,,,,,bcde,figure image,vernacular name in the legend (p. 684): orangutans
+17,terminal_label,Fig. 11 diagram: genus label and letter code,685,,Pan,,,,kinds of data published (letter code),bcde,,,,,,bcde,figure image,vernacular name in the legend (p. 684): chimpanzees
+18,terminal_label,Fig. 11 diagram: genus label and letter code,685,,Homo,,,,kinds of data published (letter code),bcde,,,,,,bcde,figure image,vernacular name in the legend (p. 684): humans
+19,clade_label,Fig. 11 diagram: clade label,685,,New World monkeys,,,,,label,,,,,Saimiri; Cebus; Callithrix; Aotus; Ateles,New World monkeys,figure image,
+20,clade_label,Fig. 11 diagram: clade label,685,,Old World monkeys,,,,,label,,,,,Macaca; Papio; Cercopithecus; Erythrocebus; Miopithecus,Old World monkeys,figure image,
+21,clade_label,Fig. 11 diagram: clade label,685,,hominoids,,,,,label,,,,,Pongo; Pan; Homo,hominoids,figure image,
+22,annotation,Fig. 11 diagram: annotation box,685,,Ancestral organization,,model,4A,honeycomb organization of layer 4A,present,,,,,root,"Ancestral organization honeycomb pattern, with",figure image,arrow to the root of the anthropoid tree
+23,annotation,Fig. 11 diagram: annotation box,685,,Ancestral organization,,LGN connections,4A,direct LGN (P-layer) input to layer 4A,present,,,,,root,direct P-LGN input,figure image,arrow to the root of the anthropoid tree
+24,annotation,Fig. 11 diagram: annotation box,685,,Ancestral organization,,CO,4A,CO-dense band in layer 4A,present,,,,,root,CO-dense band,figure image,arrow to the root of the anthropoid tree
+25,annotation,Fig. 11 diagram: annotation box,685,,Ancestral organization,,calbindin,4A,calbindin level in layer 4A,sparse,,,,,root,sparse CB,figure image,arrow to the root of the anthropoid tree
+26,annotation,Fig. 11 diagram: annotation box,685,,Ancestral organization,,NPNF and MAP2,4A,NPNF expression pattern in layer 4A,sparse,,,,,root,"sparse NPNF and MAP2, concentrated in pyramidal-cell cones and apical bundles",figure image,arrow to the root of the anthropoid tree
+27,annotation,Fig. 11 diagram: annotation box,685,,Ancestral organization,,Cat-301,4A,Cat-301 expression pattern in layer 4A,sparse,,,,,root,sparse Cat-301,figure image,arrow to the root of the anthropoid tree
+28,annotation,Fig. 11 diagram: annotation box,685,,Aotus specializations,,LGN connections,4A,direct LGN (P-layer) input to layer 4A,absent,,,,,Aotus,loss of direct LGN input,figure image,arrow to the Aotus branch
+29,annotation,Fig. 11 diagram: annotation box,685,,Aotus specializations,,CO,4A,CO-dense band in layer 4A,absent,,,,,Aotus,loss of CO-dense band,figure image,arrow to the Aotus branch
+30,annotation,Fig. 11 diagram: annotation box,685,,Hominoid specializations,,CO,4A,CO-dense band in layer 4A,absent,,,,,Pongo; Pan; Homo,loss of CO-dense band,figure image,"filled arrow to the hominoid stem (before Pongo, Pan and Homo diverged)"
+31,annotation,Fig. 11 diagram: annotation box,685,,Hominoid specializations,,calbindin,4A,calbindin level in layer 4A,increased,,,,,Pongo; Pan; Homo,increased CB,figure image,"filled arrow to the hominoid stem (before Pongo, Pan and Homo diverged)"
+32,annotation,Fig. 11 diagram: annotation box,685,,Human specializations,,NPNF and Cat-301,4A,mesh-like layer 4A,present,,,,,Homo,"Human specializations meshwork pattern, with",figure image,open arrow to the Homo branch (after the Pan-Homo split)
+33,annotation,Fig. 11 diagram: annotation box,685,,Human specializations,,NPNF,4A,NPNF expression pattern in layer 4A,dense in mesh bands,,,,,Homo,dense NPNF & Cat-301 in mesh bands,figure image,open arrow to the Homo branch (after the Pan-Homo split)
+34,annotation,Fig. 11 diagram: annotation box,685,,Human specializations,,Cat-301,4A,Cat-301 expression pattern in layer 4A,dense in mesh bands,,,,,Homo,dense NPNF & Cat-301 in mesh bands,figure image,open arrow to the Homo branch (after the Pan-Homo split)
+35,annotation,Fig. 11 diagram: annotation box,685,,Human specializations,,calbindin,4A,calbindin level in layer 4A,dense in interstitial zones,,,,,Homo,dense CB in interstitial zones,figure image,open arrow to the Homo branch (after the Pan-Homo split)
+36,statement,Fig. 11 legend,684,,hominoids,,NPNF,3,dense NPNF staining in layer 3,increased,,,,,,a conspicuous increase in expression of NPNF in layer 3,legend,denoted with the asterisk in the photomicrograph set; associated with hominoid evolution
+37,photo_mark,Fig. 11 photomicrograph set: mark,685,,Saimiri,Saimiri sciureus,CO,4A,,no mark,,,,,,,figure image,row label CO; column label Saimiri
+38,photo_mark,Fig. 11 photomicrograph set: mark,685,,Saimiri,Saimiri sciureus,CB,4A,,no mark,,,,,,,figure image,row label CB; column label Saimiri
+39,photo_mark,Fig. 11 photomicrograph set: mark,685,,Saimiri,Saimiri sciureus,NPNF,4A,,no mark,,,,,,,figure image,row label NPNF; column label Saimiri
+40,photo_mark,Fig. 11 photomicrograph set: mark,685,,Saimiri,Saimiri sciureus,Cat-301,4A,,no mark,,,,,,,figure image,row label Cat-301; column label Saimiri
+41,photo_mark,Fig. 11 photomicrograph set: mark,685,,Macaca,Macaca,CO,4A,,no mark,,,,,,,figure image,row label CO; column label Macaca
+42,photo_mark,Fig. 11 photomicrograph set: mark,685,,Macaca,Macaca,CB,4A,,no mark,,,,,,,figure image,row label CB; column label Macaca
+43,photo_mark,Fig. 11 photomicrograph set: mark,685,,Macaca,Macaca,NPNF,4A,,no mark,,,,,,,figure image,row label NPNF; column label Macaca
+44,photo_mark,Fig. 11 photomicrograph set: mark,685,,Macaca,Macaca,Cat-301,4A,,no mark,,,,,,,figure image,row label Cat-301; column label Macaca
+45,photo_mark,Fig. 11 photomicrograph set: mark,685,,Pan,Pan troglodytes,CO,4A,,filled arrow,,,,,,filled arrow,figure image,row label CO; column label Pan
+46,photo_mark,Fig. 11 photomicrograph set: mark,685,,Pan,Pan troglodytes,CB,4A,,filled arrow,,,,,,filled arrow,figure image,row label CB; column label Pan
+47,photo_mark,Fig. 11 photomicrograph set: mark,685,,Pan,Pan troglodytes,NPNF,3,,asterisk,,,,,,asterisk (*),figure image,row label NPNF; column label Pan
+48,photo_mark,Fig. 11 photomicrograph set: mark,685,,Pan,Pan troglodytes,Cat-301,4A,,no mark,,,,,,,figure image,row label Cat-301; column label Pan
+49,photo_mark,Fig. 11 photomicrograph set: mark,685,,Homo,Homo sapiens,CO,4A,,no mark,,,,,,,figure image,row label CO; column label Homo
+50,photo_mark,Fig. 11 photomicrograph set: mark,685,,Homo,Homo sapiens,CB,4A,,open arrow,,,,,,open arrow,figure image,row label CB; column label Homo
+51,photo_mark,Fig. 11 photomicrograph set: mark,685,,Homo,Homo sapiens,NPNF,4A,,open arrow,,,,,,open arrow,figure image,row label NPNF; column label Homo
+52,photo_mark,Fig. 11 photomicrograph set: mark,685,,Homo,Homo sapiens,Cat-301,4A,,open arrow,,,,,,open arrow,figure image,row label Cat-301; column label Homo

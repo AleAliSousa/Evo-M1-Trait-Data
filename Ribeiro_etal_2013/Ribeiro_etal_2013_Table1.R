@@ -13,7 +13,7 @@
 ## *** REGIONAL, NEVER POOLED ***
 ## These are WITHIN-CORTEX regional densities. They must never be averaged into, or
 ## compared as equals with, the whole-cortex CerebralCortex_* terms that Homo sapiens
-## already has in __merging_cellcounts (from Herculano-Houzel et al. 2015) — exactly the
+## already has in __merging_cell_counts_isotropic_fractionator (from Herculano-Houzel et al. 2015) — exactly the
 ## rule Jacobs_etal_2018/README.md states for M1. The seven region means are also not
 ## weighted by region mass, so they cannot be recombined into a cortex-wide mean.
 ##
@@ -142,7 +142,7 @@ stopifnot(nrow(body) == 7, body[1, 1] == "Prefrontal", body[7, 1] == "V1")
 
 ## 5. BUILD ONE ROW PER PRINTED REGION ---------------------------------------------------------
 ## `region_term` is a MECHANICAL derivation of the printed label, offered as the
-## never-pooled regional vocabulary discussed in __merging_cellcounts/
+## never-pooled regional vocabulary discussed in __merging_cell_counts_isotropic_fractionator/
 ## HH_coverage_gaps_scaffold.md ("Design note"). That naming decision is still open, so the
 ## term is derived here rather than hand-listed, and the printed label is kept beside it.
 out <- NULL

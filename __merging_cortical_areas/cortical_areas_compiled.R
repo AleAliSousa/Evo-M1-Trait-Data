@@ -1,5 +1,5 @@
 ## Compile the comparative cortical-area dataset (number of areas + cortical surface area).
-## Pattern mirrors __merging_volumes / __merging_cellcounts: read each source's public TSV, relabel
+## Pattern mirrors __merging_volumes / __merging_cell_counts_isotropic_fractionator: read each source's public TSV, relabel
 ## its columns via the stacked standardized-term map, stack to long, summarise to wide.
 ## Outputs: cortical_areas_long.csv, cortical_areas_wide.csv, cortical_areas_source_species_ids.csv
 suppressWarnings(suppressMessages(library(tidyverse)))

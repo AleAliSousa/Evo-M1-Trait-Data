@@ -47,4 +47,4 @@ Suzana Herculano-Houzel is a co-author, and this paper uses the **same isotropic
 
 **Measures** (per structure): `Mass.g`, `N.n` (neurons), `O.n` (other/non-neuronal cells), `N.p.mg`, `O.p.mg`, `O.p.N` (other-per-neuron) — identical to the HH measure set.
 
-See `AvelinodeSouza_etal_2025_definitions.csv` for full per-term definitions, and `__merging_cellcounts/standardized_term_by_reference/AvelinodeSouza_etal_2025_TABLE1_standardized_terms.csv` for the term→standardized mapping used by the pipeline.
+See `AvelinodeSouza_etal_2025_definitions.csv` for full per-term definitions, and `__merging_cell_counts_isotropic_fractionator/standardized_term_by_reference/AvelinodeSouza_etal_2025_TABLE1_standardized_terms.csv` for the term→standardized mapping used by the pipeline.

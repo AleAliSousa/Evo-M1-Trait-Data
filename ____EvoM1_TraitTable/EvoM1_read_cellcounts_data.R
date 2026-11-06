@@ -5,11 +5,11 @@ library(tidyverse)
 library(writexl)
 
 # Read data
-cellcounts_long <- read.csv("./__merging_cellcounts/cellcounts_long.csv", check.names=FALSE)
+cell_counts_isotropic_fractionator_long <- read.csv("./__merging_cell_counts_isotropic_fractionator/cell_counts_isotropic_fractionator_long.csv", check.names=FALSE)
 
 # For Project M1 Evo: Export CerebralCortex Mass.g, N.n, O.n, I.p.N and their Sources
-# cellcounts_selected_long <- filter(cellcounts_long, Variable %in% c("CerebralCortex_Mass.g","CerebralCortex_N.n", "CerebralCortex_O.n", "CerebralCortex_I.p.C", "WholeBrain_Mass.g","WholeBrain_N.n", "WholeBrain_O.n", "WholeBrain_I.p.C",  "SpinalCord_Mass.g","SpinalCord_N.n", "SpinalCord_O.n"))
-cellcounts_selected_long <- cellcounts_long
+# cellcounts_selected_long <- filter(cell_counts_isotropic_fractionator_long, Variable %in% c("CerebralCortex_Mass.g","CerebralCortex_N.n", "CerebralCortex_O.n", "CerebralCortex_I.p.C", "WholeBrain_Mass.g","WholeBrain_N.n", "WholeBrain_O.n", "WholeBrain_I.p.C",  "SpinalCord_Mass.g","SpinalCord_N.n", "SpinalCord_O.n"))
+cellcounts_selected_long <- cell_counts_isotropic_fractionator_long
 # # Pivot for variables and values
 cellcounts_selected_values <- pivot_wider(cellcounts_selected_long, id_cols = Species, names_from = Variable, values_from = Value)
 # Pivot for sources

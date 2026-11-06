@@ -129,7 +129,7 @@ Recomputed from the snapshot and matched against statistics the paper states ind
 3. Resolve `species_sci` via `_keys`; keep `Species` and `Species_binomial` printed.
 4. Register in `__ReadMe.xlsx` (`Data role = primary` — this is original stereology),
    then write the DOI-coded public TSV (invariant 2).
-5. Wire into `__merging_cellcounts` as a **regional (M1) sub-trait**, its own team — **never** pooled
+5. Wire into `__merging_cell_counts_isotropic_fractionator` as a **regional (M1) sub-trait**, its own team — **never** pooled
    with whole-cortex neuron counts. See `README.md` (this folder).
 
 ## Relation to the rest of the repo

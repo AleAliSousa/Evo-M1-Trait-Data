@@ -2,7 +2,7 @@
 
 Compiles a comparative dataset of **number of cortical areas** and **cortical surface area** across
 papers, following the same `standardized_term` + compile pattern as `__merging_volumes` and
-`__merging_cellcounts`.
+`__merging_cell_counts_isotropic_fractionator`.
 
 ## Traits merged (standardized terms)
 

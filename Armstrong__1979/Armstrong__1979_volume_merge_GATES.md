@@ -140,7 +140,7 @@ Of 106 rows, **46 are `measure == "volume"` with `unit == "mm3"`**; of those, **
 Primary structures: `LGB`, `LGBp`, `LGBm`, `MGBp`, `VB`. Primary taxa: *Homo sapiens*,
 *Pan troglodytes*, *Gorilla gorilla*, *Hylobates lar*, *Hylobates* sp. The other 60 rows are
 neuronal density, estimated neuron number and perikaryal volume — those belong to
-`__merging_cellcounts`, not here.
+`__merging_cell_counts_isotropic_fractionator`, not here.
 
 ## Gate 1 — Armstrong's LGB is 5–6× below the LGN already in the merge
 

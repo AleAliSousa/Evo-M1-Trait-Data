@@ -39,7 +39,7 @@ POPS = {"wild", "domestic", "mixed", "unknown"}
 # provenance column per long file = the token vocabulary the app carries as `Teams`
 # (app.R load_compiled(); keep the two in step)
 PROV_COL = {
-    "volumes_long.csv": "Teams", "cellcounts_long.csv": "Source", "evom1_traits_long.csv": "Source",
+    "volumes_long.csv": "Teams", "cell_counts_isotropic_fractionator_long.csv": "Source", "evom1_traits_long.csv": "Source",
     "body_ecology_long.csv": "Teams", "brain_mass_long.csv": "Teams",
     "endocranial_volume_long.csv": "Teams", "behaviour_long.csv": "Teams",
     "behaviour_observations_long.csv": "Team", "cerebellar_folding_long.csv": "Teams",

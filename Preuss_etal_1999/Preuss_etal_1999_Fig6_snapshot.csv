@@ -1,0 +1,17 @@
+﻿row,row_type,locus,page,panel,taxon_as_printed,taxon_in_methods,marker,layer,feature,state_as_read,value_low,value_high,unit,n_as_printed,applies_to,printed_wording,evidence,note
+1,terminal_label,Fig. 6 diagram: terminal label,11605,,New World monkeys,,,,,label,,,,,,New World monkeys,figure image,
+2,terminal_label,Fig. 6 diagram: terminal label,11605,,Old World monkeys,,,,,label,,,,,,Old World monkeys,figure image,
+3,terminal_label,Fig. 6 diagram: terminal label,11605,,Hylobates,,,,,label with ?,,,,,,Hylobates ?,figure image,'?' under the label; Discussion (p. 11605): no information about CO activity in gibbons
+4,terminal_label,Fig. 6 diagram: terminal label,11605,,Pongo,,,,,label,,,,,,Pongo,figure image,
+5,terminal_label,Fig. 6 diagram: terminal label,11605,,Gorilla,,,,,label with ?,,,,,,Gorilla ?,figure image,"'?' under the label; Discussion (p. 11605): no CO data for gorillas, expected to resemble Homo, Pan and Pongo"
+6,terminal_label,Fig. 6 diagram: terminal label,11605,,Pan,,,,,label,,,,,,Pan,figure image,
+7,terminal_label,Fig. 6 diagram: terminal label,11605,,Homo,,,,,label,,,,,,Homo,figure image,
+8,clade_label,Fig. 6 diagram: clade label,11605,,hominoids,,,,,label,,,,,Hylobates; Pongo; Gorilla; Pan; Homo,hominoids,figure image,
+9,annotation,Fig. 6 diagram: annotation,11605,,Ancestral organization,,model,4A,honeycomb organization of layer 4A,present,,,,,root,Ancestral organization: Layer 4A with “honeycomb” architecture,figure image,arrow to the root of the tree (ancestral anthropoid)
+10,annotation,Fig. 6 diagram: annotation,11605,,branch below the great apes and humans,,CO,4A,CO-dense band in layer 4A,absent,,,,,Hylobates; Pongo; Gorilla; Pan; Homo,Loss of CO-dense 4A band,figure image,"two arrows: one to the stem below Pongo, one to the stem below Hylobates (before or after the gibbon split is left open; Discussion p. 11605)"
+11,annotation,Fig. 6 diagram: annotation,11605,,branch below the great apes and humans,,CO,4B,CO staining band in layer 4B (darker than in monkeys),present,,,,,Hylobates; Pongo; Gorilla; Pan; Homo,increased CO activity in 4B,figure image,same two arrows as the 4A change
+12,annotation,Fig. 6 diagram: annotation,11605,,Homo branch,,NPNF and MAP 2,4A,mesh-like layer 4A,present,,,,,Homo,Layer 4A with mesh-like architecture,figure image,arrow to the Homo terminal branch
+13,statement,Discussion (citing Fig. 6),11605,,New World monkeys,,CO,4A,CO-dense band in layer 4A,present,,,,,,dense CO staining in layer 4A and light staining in layer 4B,Discussion,'in most New World and Old World monkeys that have been examined' (literature and own data); suggested ancestral pattern
+14,statement,Discussion (citing Fig. 6),11605,,New World monkeys,,CO,4B,CO staining band in layer 4B (darker than in monkeys),absent,,,,,,dense CO staining in layer 4A and light staining in layer 4B,Discussion,light 4B staining 'in most New World and Old World monkeys that have been examined'
+15,statement,Discussion (citing Fig. 6),11605,,Old World monkeys,,CO,4A,CO-dense band in layer 4A,present,,,,,,dense CO staining in layer 4A and light staining in layer 4B,Discussion,'in most New World and Old World monkeys that have been examined' (literature and own data); suggested ancestral pattern
+16,statement,Discussion (citing Fig. 6),11605,,Old World monkeys,,CO,4B,CO staining band in layer 4B (darker than in monkeys),absent,,,,,,dense CO staining in layer 4A and light staining in layer 4B,Discussion,light 4B staining 'in most New World and Old World monkeys that have been examined'

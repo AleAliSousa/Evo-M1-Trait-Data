@@ -18,7 +18,7 @@ species -> binomial. `area13_volume_mm3` = right-hemisphere orbitofrontal area 1
 Primary cytoarchitectonic volumetry from the **C. & O. Vogt Institute (Zilles/Schleicher), Duesseldorf
 = the Stephan/Zilles collection** -> same brains as Stephan/Frahm (brain volumes match). Maps to a
 prefrontal subregion (orbitofrontal area 13); not a whole Heiss lobe. n = 1 per species (6 hominoids).
-Neuron/GLI tables (paper Tables 4-5) are a cell-count source for `__merging_cellcounts`.
+Neuron/GLI tables (paper Tables 4-5) are a cell-count source for `__merging_cell_counts_isotropic_fractionator`.
 
 ## Species note
 Binomials assigned from common names; reconcile to `_keys/Stephan/species_key.csv`.

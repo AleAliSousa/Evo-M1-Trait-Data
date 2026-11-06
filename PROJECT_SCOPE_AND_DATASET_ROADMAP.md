@@ -472,7 +472,7 @@ figures.
 | 6 | Cerebellar folding — **Heuer et al. 2023** (eLife 12:e85907) | ✅ **BUILT 2026-08-15** | `Heuer_etal_2023/` | dedicated `__merging_cerebellar_folding` + Shiny app; **never pooled with Ashwell 2020 foliation or neocortical GI** |
 | 7 | Medina-González 2026 — limb excursion, 182 mammals | ✅ **BUILT 2026-09** (from the Wiley online supplement, not the still-restricted Zenodo record) | `MedinaGonzález__2026/` | wired into `__merging_behaviour` |
 | 8 | Corticospinal / CM termination extent | ✅ **BUILT 2026-08-15**, renamed to the house pattern + re-keyed to the article DOI same day | `Bortoff_Strick_1993/` (Table 1, curated) | behaviour (`CST_termination_grade` + cautious CM inference), team `Bortoff_Strick`, **primary** |
-| 9 | ~~Betz cells (compile-from-lit)~~ → **Jacobs et al. 2018** — gigantopyramidal + M1 pyramidal morphology | IN, **snapshots built 2026-08-04** | `Jacobs_etal_2018/` (Tables 3 + 5) | `__merging_cellcounts` as **regional M1** sub-trait (never pooled with whole-cortex counts) |
+| 9 | ~~Betz cells (compile-from-lit)~~ → **Jacobs et al. 2018** — gigantopyramidal + M1 pyramidal morphology | IN, **snapshots built 2026-08-04** | `Jacobs_etal_2018/` (Tables 3 + 5) | `__merging_cell_counts_isotropic_fractionator` as **regional M1** sub-trait (never pooled with whole-cortex counts) |
 | — | Reader lineage — technical innovation (2002 classic + 2011 Dryad) | ✅ **BUILT + WIRED 2026-08-15** | `Reader_etal_2011/` (+ `innovation_reader.xlsx`) | `__merging_behaviour` (report counts + effort variables) |
 
 Each scaffold folder has a **README** (source citation + DOI, download/freeze steps, `__ReadMe.xlsx`
@@ -683,7 +683,7 @@ journal download.
   (2018). *Comparative morphology of gigantopyramidal neurons in primary motor cortex across
   mammals.* **J Comp Neurol 526(3):496–536.** DOI **10.1002/cne.24349** · PMID **29088505** ·
   EndNote `[4950]`.
-- **Merge:** `__merging_cellcounts` as a **regional M1 sub-trait** (never pooled with whole-cortex
+- **Merge:** `__merging_cell_counts_isotropic_fractionator` as a **regional M1 sub-trait** (never pooled with whole-cortex
   neuron counts), beside `Young_etal_2013_Table1` — checked, no species or measure collision with
   Young.
 - **Built:** two snapshots, both verified against the paper's own statistics.
@@ -709,7 +709,7 @@ registered** whenever convenient — it is **compilation** that is gated, not sh
 
 Large isotropic-fractionator neuron-count datasets exist for **squamates + turtles (107 species)**
 and **birds (111 species)**, produced with the same method as the Herculano-Houzel mammal set. They
-are the obvious first non-mammal additions to `__merging_cellcounts` **if and when the compilations
+are the obvious first non-mammal additions to `__merging_cell_counts_isotropic_fractionator` **if and when the compilations
 open to non-mammals**, **but** `resolve_taxonomy.R` is MDD-gated and will silently drop non-mammals,
 and `species_reference.csv` has no `Class` column. Ingest only after Part 3 do-first steps 1 & 4
 (add `Class`; add a non-mammal resolver path). Flagged here so they are not lost.
@@ -1130,8 +1130,8 @@ own folder, so this is a copy-only follow-up, not a re-build.
 >    `Wiafe__2019` (single-author house convention; also touches the species key).
 > 5. **Merge wiring — still zero.** No item from the 2026-10-28 or 2026-10-31 passes appears in any
 >    `__merging_*/*.R`. Wire the audiogram items into `__merging_sensory`, Glendenning & Masterton
->    into `__merging_volumes`/`__merging_cellcounts`, Filiminoff into `__merging_cortical_areas`,
->    Bahney into `__merging_cellcounts`, Kay 2026 into `__merging_volumes` (Stephan/Bush–Allman
+>    into `__merging_volumes`/`__merging_cell_counts_isotropic_fractionator`, Filiminoff into `__merging_cortical_areas`,
+>    Bahney into `__merging_cell_counts_isotropic_fractionator`, Kay 2026 into `__merging_volumes` (Stephan/Bush–Allman
 >    overlap first), and Sherwood 2020 / MacLean 2014 once registered.
 > 6. **Clear the three trailing-`_` keys** (`Anderson_Gallup_2015_`, `Gallup__1977_`,
 >    `Nunn_etal_2001_`) — whole-paper REFERENCE-ONLY/HOLD rows with a blank Item number, which breaks
@@ -1173,10 +1173,10 @@ own folder, so this is a copy-only follow-up, not a re-build.
 > cannot run self-locating, tidyverse scripts through `sys.source()`, and `validate_dataset_item()`
 > gives a false registry_row PASS when Sheet1 contains NA Item-name rows. **Merge-wiring
 > candidates** from the new builds: Glendenning & Masterton 1998 Tables 1–7 (auditory brainstem
-> volumes and cells) go to `__merging_volumes`/`__merging_cellcounts`. Heffner 1992b, Heffner
+> volumes and cells) go to `__merging_volumes`/`__merging_cell_counts_isotropic_fractionator`. Heffner 1992b, Heffner
 > 1999 and Heffner 2018 go to `__merging_sensory`. Filiminoff 1932 V1 area goes to
 > `__merging_cortical_areas` (it is the human V1 primary that Van Essen & Drury 1997 cite).
-> Bahney 2018 glia/neuron goes to `__merging_cellcounts`, as a secondary that needs its refs
+> Bahney 2018 glia/neuron goes to `__merging_cell_counts_isotropic_fractionator`, as a secondary that needs its refs
 > roadmap. Kay 2026 Data S1 goes to `__merging_volumes`, checking the Stephan/Bush–Allman
 > overlap first. Still blocked: McGuire & Ratcliffe 2011 and Shultz & Dunbar 2010 (one manual
 > download each), Stensaas 1974 and Terborgh 1983 (no PDF), and the ~30 `candidate` Heffner, Koay
@@ -1225,7 +1225,7 @@ own folder, so this is a copy-only follow-up, not a re-build.
    AG×FI). Outputs regenerated offline (329 long rows, 66 species) — **re-run
    `standardized_term.R` + `cortical_areas_compiled.R` in RStudio to confirm.** Remaining from this
    intake: the regional CELL-COUNT reshape (Kaas V1/M1 densities, HH 2013 mouse areas) — design
-   decision recorded in `__merging_cellcounts/WIRING_into_cellcounts.md` (owner choice: wide
+   decision recorded in `__merging_cell_counts_isotropic_fractionator/WIRING_into_cell_counts_isotropic_fractionator.md` (owner choice: wide
    per-area columns vs a separate regional product); Mota 2019 VG/VW volumes HELD for a
    `__merging_volumes` overlap audit.
    **Surface-area candidates from the Project Kaskan review sheet (2026-08-25).** The restricted
@@ -1446,7 +1446,7 @@ non-mammals later?*
 ## What the repo already does right
 
 - **Storage is long, not wide.** `compiled` in `__ShinyApp/app.R` is a union of three long tables
-  (`volumes_long.csv`, `cellcounts_long.csv`, `evom1_traits_long.csv`) in
+  (`volumes_long.csv`, `cell_counts_isotropic_fractionator_long.csv`, `evom1_traits_long.csv`) in
   `Species × Variable × Value × Source` shape. Ragged coverage costs nothing here — a species with
   only body mass just has fewer rows. This is the right foundation; keep it.
 - **Concept-pooling already exists.** `_keys/variable_canonical.csv` pools duplicated backbone
@@ -1468,7 +1468,7 @@ non-mammals later?*
    flat unique species list.
 2. **Backbone traits are physically duplicated across merges.** Body/brain mass is stored
    independently in every merge:
-   - `Body_Mass.g`: volumes_long **99**, cellcounts_long **80**, traits **102**
+   - `Body_Mass.g`: volumes_long **99**, cell_counts_isotropic_fractionator_long **80**, traits **102**
    - `Brain_Mass`: volumes **97**, cellcounts **70**, traits **154**
 
    Pooling papers over this at display time, but re-deriving the same value in each merge, is where

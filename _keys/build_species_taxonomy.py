@@ -132,7 +132,7 @@ def ord_of(s):
 
 # compiled species universe
 comp = set()
-for fn in ['volumes_long.csv', 'cellcounts_long.csv', 'evom1_traits_long.csv']:
+for fn in ['volumes_long.csv', 'cell_counts_isotropic_fractionator_long.csv', 'evom1_traits_long.csv']:
     fp = p('__ShinyApp/data', fn)
     if os.path.exists(fp):
         for r in csv.DictReader(open(fp)):

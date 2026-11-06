@@ -133,7 +133,7 @@ read_volumes <- function(term, pat) {
                  build_script = "__merging_volumes/volumes_compiled.R")
 }
 
-cc <- rd("__merging_cellcounts", "cellcounts_long.csv")
+cc <- rd("__merging_cell_counts_isotropic_fractionator", "cell_counts_isotropic_fractionator_long.csv")
 CC_MEASURE <- tribble(
   ~code,    ~measurement,                 ~measurement_class,  ~units,
   "C.n",    "Total cell count",           "Cell measurements", "count",
@@ -157,8 +157,8 @@ read_cellcounts <- function(term, pat) {
                  source = Source, merge_status = "active",
                  flag_note = if_else(str_detect(measurement, "Non-neuronal"),
                                      "isotropic fractionator 'other cells' (non-neuronal; mostly glia)", ""),
-                 dataset_source = "__merging_cellcounts/cellcounts_long.csv",
-                 build_script = "__merging_cellcounts/cellcounts_compiled.R")
+                 dataset_source = "__merging_cell_counts_isotropic_fractionator/cell_counts_isotropic_fractionator_long.csv",
+                 build_script = "__merging_cell_counts_isotropic_fractionator/cell_counts_isotropic_fractionator_compiled.R")
 }
 
 cmr <- rd("__merging_cerebral_metabolic_rate", "cerebral_metabolic_rate_long.csv")

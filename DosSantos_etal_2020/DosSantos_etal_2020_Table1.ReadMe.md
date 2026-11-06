@@ -17,7 +17,7 @@ authors' team, Alex Tikky). Independent checks show the unpublished data is inte
 agrees with older publications (e.g. Herculano-Houzel et al. 2015).
 
 **We therefore use `DosSantos_etal_2020_unpublished` — not this published Table 1 — in the merged
-cell-counts dataset** (`__merging_cellcounts/cellcounts_compiled.R`, where this item is commented out).
+cell-counts dataset** (`__merging_cell_counts_isotropic_fractionator/cell_counts_isotropic_fractionator_compiled.R`, where this item is commented out).
 This file is retained only as a faithful **snapshot** of the published table, for the audit trail.
 
 - Check script: `DosSantos_etal_2020_Table1_check.R` — moved to the private repo Evo-M1-Trait-Data-restricted, `restricted_checks/_cross_table/DosSantos_2020_published_vs_authors_unpublished/` (it reads the authors' unpublished spreadsheet, so it cannot be public)

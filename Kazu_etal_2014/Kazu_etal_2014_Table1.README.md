@@ -57,7 +57,7 @@ Every exponent was read from its own small-font glyph, so no `10^6`/`10^9` is gu
 |---|---|---|
 | Sus scrofa domesticus | *Sus scrofa domesticus* | domestic pig |
 | Antidorcas marsupialis | *Antidorcas marsupialis* | springbok |
-| Damaliscus dorcas phillipsi | *Damaliscus pygargus phillipsi* | blesbok; **name changed** since 2014, and this is the form already used in `cellcounts_source_species_ids.csv` |
+| Damaliscus dorcas phillipsi | *Damaliscus pygargus phillipsi* | blesbok; **name changed** since 2014, and this is the form already used in `cell_counts_isotropic_fractionator_source_species_ids.csv` |
 | Tragelaphus stripceros | *Tragelaphus strepsiceros* | greater kudu; **"stripceros" is a misprint** — the Methods spell it correctly. The 2015 corrigendum reprints the same misprint |
 | Giraffa camelopardalis | *Giraffa camelopardalis* | giraffe, a **juvenile** (Methods) |
 
@@ -66,7 +66,7 @@ in the script. Until `PROPOSED_species_key_rows.csv` is merged into
 `_keys/Stephan/species_key.csv`, the `.R` reads that staging file and **warns**.
 
 ⚠️ **The scaffold's species claim was wrong.** The old README (and
-`__merging_cellcounts/HH_coverage_gaps_scaffold.md`) said this paper adds collared peccary,
+`__merging_cell_counts_isotropic_fractionator/HH_coverage_gaps_scaffold.md`) said this paper adds collared peccary,
 gemsbok, blue wildebeest, lesser kudu and warthog. **None of those animals is in this
 paper.** Kazu 2014 has exactly five artiodactyls, and all five are **already in the merge**
 from Herculano-Houzel et al. 2015 Tables 1–5. What this paper actually adds is *finer
@@ -147,14 +147,14 @@ neurons **4.8**-fold (not 5.0).
 
 **And the corrected values are already in the merge.** All five species carry
 `WholeBrain`, `CerebralCortex`, `Cerebellum`, `RoB` and (except the blesbok)
-`OlfactoryBulb` counts in `__merging_cellcounts/cellcounts_wide.csv`, sourced from
+`OlfactoryBulb` counts in `__merging_cell_counts_isotropic_fractionator/cell_counts_isotropic_fractionator_wide.csv`, sourced from
 `HerculanoHouzel_etal_2015_Table1..5`, at **full precision** and matching the corrigendum
 (e.g. *Sus* `CerebralCortex_N.n` = 307,082,404 ↔ corrigendum 307.08 × 10⁶; `DN_CXT` 7,276 ↔
 7,276; giraffe `Cerebellum_O.p.mg` 81,505 ↔ the paper's quoted maximum).
 
 ### Recommendation
 
-1. **Do not add `Kazu_etal_2014_Table1` to `cellcounts_compiled.R` `item_name`.** Its
+1. **Do not add `Kazu_etal_2014_Table1` to `cell_counts_isotropic_fractionator_compiled.R` `item_name`.** Its
    whole-structure values are superseded and its species are already present.
 2. In `__ReadMe.xlsx` Sheet 1, keep `Data role = primary` (this is the primary study) and
    set **`Flags active (skips)`** to something like *"EXCLUDED from merged cellcounts:
@@ -169,7 +169,7 @@ neurons **4.8**-fold (not 5.0).
 
 ## Not done here (deliberately)
 
-* `__merging_cellcounts/standardized_term_by_reference/Kazu_etal_2014_Table1_standardized_terms.csv`
+* `__merging_cell_counts_isotropic_fractionator/standardized_term_by_reference/Kazu_etal_2014_Table1_standardized_terms.csv`
   is **left as the old stub** and still names columns this build does not produce
   (`Body mass, g`, `Cortex neurons`, …). It is not updated because the table should not be
   merged; when a corrigendum build replaces it, the mapping is a one-liner —

@@ -5,7 +5,8 @@ each method can and cannot tell apart, and how the merges treat it. The merges r
 method rules are not written into merge scripts. Experts can propose changes through
 `expert_reviews.csv` (see *How to update*, below).
 
-Started 4 Nov 2026 (owner decisions RV-2026-001 to RV-2026-005). Checked by
+Started 4 Nov 2026 (owner decisions RV-2026-001 to RV-2026-005; method corrections for neuron-subtype
+sources RV-2026-006 to RV-2026-010, same day). Checked by
 `_checks/check_cell_count_methods.R`.
 
 ## Files
@@ -25,8 +26,9 @@ Started 4 Nov 2026 (owner decisions RV-2026-001 to RV-2026-005). Checked by
 | `__merging_cell_counts_histology` | counts made in tissue sections: design-based stereology by default; older model-based counts kept but off by default |
 | `__merging_cell_morphology` | named cell types described by size or shape (von Economo neurons, interlaminar astrocytes, soma volumes) |
 
-Folder names follow the 4 Nov 2026 decision (RV-2026-004); `_tools/__rename_cell_counts_20261104.R`
-renames the existing merge and every reference to it.
+Folder names follow the 4 Nov 2026 decisions (RV-2026-004; RV-2026-011: inside the fractionator merge the term
+`cellcounts` becomes `cell_counts_isotropic_fractionator` too); `_tools/__rename_cell_counts_20261104.R`
+renames the existing merge, the files inside it and every reference to them.
 
 ## The methods in brief
 
@@ -93,6 +95,30 @@ Filters are R expressions on the item's public TSV columns, as in
   elephant ratios (Herculano-Houzel et al. 2014, in the 2015 dataset), lie well above the trend of
   other species (Bahney & von Bartheld 2018).
 
+## Neuron-subtype counts (4 Nov 2026)
+
+Counts of named neuron types, recorded by how they were counted. The cell type itself (identified by
+shape in Nissl sections, or by an immunomarker) is a separate question from the counting method.
+
+| Source | Counted | Method (`method_id`) | Percentages are of |
+|---|---|---|---|
+| Butti et al. 2009, Table 5 | VEN totals and percentages; 4 cetaceans, one hemisphere each | optical fractionator | all neurons in the region |
+| Hakeem et al. 2009, Table 1 | VEN and neuron totals in FI; one elephant, both hemispheres | stereology, probe not named (`STEREO_UNSPECIFIED`; RV-2026-008) | neurons in layers 3 and 5 of FI |
+| Raghanti et al. 2015, Table 1 | VENs and fork cells; 8 species, one brain each | optical fractionator (RV-2026-006) | layer V neurons |
+| Rivara et al. 2003, Table 1 | Betz and other layer Vb pyramidal cells, left M1; 6 humans | optical fractionator | (on hold; nothing merged) |
+| Sherwood et al. 2009, Table 3 | CB-, CR-, PV- and NPY-immunoreactive interneurons; NPNFP-immunoreactive neurons | optical disector with fractionator sampling (`STEREO_DISECTOR`; RV-2026-007) | Nissl-stained neurons of layers II-VI of S1 (layer V for NPNFP) |
+
+- **Not counts:** Nimchinsky et al. 1999, Table 1 (VEN abundance classes scored by eye; RV-2026-009);
+  Butti et al. 2009, Table 6 (soma volumes and the VEN index; RV-2026-010).
+- **Different denominators are different quantities.** A VEN percentage of layer V neurons and one of
+  all neurons in a region must never share a label or be averaged.
+- **Regions are positions where the source says so.** Raghanti et al. 2015 chose frontal pole,
+  anterior cingulate, anterior insula and occipital pole as sampling positions, not homologues. The
+  frontal pole is never recorded as area 10 in animals that lack area 10 (owner, 4 Nov 2026).
+- **Still open:** whether these counts stay in the cell-morphology merge (where the VEN and fork-cell
+  values are today, tagged `[fractionator]` and `[nissl_count]`) or move to the histology merge with
+  the Betz-cell and interneuron counts.
+
 ## How to update (for experts)
 
 1. **Propose.** Add one row per changed field to `expert_reviews.csv` with `status = proposed`:
@@ -120,7 +146,8 @@ Rows written by the AI assistant carry `status = proposed` until the owner or an
   fractionator with a measured surface (Herculano-Houzel et al. 2008; Collins; Young) measure the same
   quantity but reached opposite conclusions about uniformity. May they ever be pooled?
 - Probe and correction used by Haug 1987 and Stolzenburg et al. 1989, and the stereological probe of
-  Lewitus et al. 2012 and Carlo & Stevens 2013 (recorded as `STEREO_UNSPECIFIED`).
+  Lewitus et al. 2012, Carlo & Stevens 2013 and Hakeem et al. 2009 (recorded as `STEREO_UNSPECIFIED`;
+  Hakeem's Gundersen and Schmitz-Hof coefficients of error suggest the optical fractionator).
 - Keep or hold the outlying ratios flagged by Bahney & von Bartheld 2018 (Burish 2010; elephant 2014)?
 - Default for Armstrong 1979 perikaryal volumes in the cell-morphology merge.
 

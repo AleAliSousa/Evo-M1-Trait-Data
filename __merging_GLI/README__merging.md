@@ -41,7 +41,7 @@ its area 44/45 GLI against GLI reported for other areas in four other papers: ar
    - `Semendeferi_etal_1998` (`semendeferi_etal_1998.pdf`, 27 pages): **has a GLI table** — Table 4,
      "Grey-Level Index in area 13" (29 GLI mentions in the text). Not previously built in this
      repo (the existing `Semendeferi_etal_1998_TABLE2` item covers only Table 2 volumes; its
-     README flagged Tables 4-5 as unbuilt beyond a cell-count pointer, and `__merging_cellcounts`
+     README flagged Tables 4-5 as unbuilt beyond a cell-count pointer, and `__merging_cell_counts_isotropic_fractionator`
      was checked and confirmed to carry no GLI column). **Extracted and built this pass** as
      `Semendeferi_etal_1998_TABLE4_GLI` (see below).
    - `Semendeferi_etal_2001` (`semendeferi_etal_2001.pdf`, 18 pages): **has a GLI table** — Table 3,

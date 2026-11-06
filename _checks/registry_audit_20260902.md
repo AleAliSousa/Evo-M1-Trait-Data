@@ -50,7 +50,7 @@ Drury 1997, Chaplin 2013 (all await the R rerun / wiring pass).
 
 New-merge-group watch: `____Spinal_cord_etc/` staging (corticospinal + pyramidal tract PDFs,
 `__ReadMe_SpinalCord.txt`) is the next candidate group; surface areas keep flowing to
-`__merging_cortical_areas`, counts to `__merging_cellcounts`.
+`__merging_cortical_areas`, counts to `__merging_cell_counts_isotropic_fractionator`.
 
 ## Actions taken
 

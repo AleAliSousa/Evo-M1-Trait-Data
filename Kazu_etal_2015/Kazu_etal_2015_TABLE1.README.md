@@ -93,7 +93,7 @@ corrected:
 
 ## Merged — the team rule does the de-duplication, no manual column filtering
 
-**LIVE in `__merging_cellcounts/cellcounts_compiled.R` since 2026-08-06.** Kazu is
+**LIVE in `__merging_cell_counts_isotropic_fractionator/cell_counts_isotropic_fractionator_compiled.R` since 2026-08-06.** Kazu is
 Herculano-Houzel–team work, so it goes through §8.2.H's existing resolution: within a team each
 source gets a priority by **date, then number of species**, and for every species × variable only
 the best-priority source survives. Nothing here is special-cased.

@@ -49,6 +49,6 @@ columns per species × term.
 - **HELD:** `VT/VG/VW` cortical volumes — await a `__merging_volumes` overlap audit (grey/white
   cortical volumes vs Stephan/HH cortex volumes) before any wiring.
 - **Skipped:** `N` (cortical neurons) — largely a compilation of the lab's previously published
-  counts already in `__merging_cellcounts` via the HH-team tables; ingesting it would double-count.
+  counts already in `__merging_cell_counts_isotropic_fractionator` via the HH-team tables; ingesting it would double-count.
 - Excluded from `__merging_gyrification` (the derivable AT/AE folding index is MHH's FI, not the
   Zilles GI).

@@ -314,7 +314,7 @@ ADAPTERS = [
     ("Cerebellar folding",        ad_std_merge(M("__merging_cerebellar_folding/cerebellar_folding_long.csv"))),
     ("Supplementary sources",     ad_std_merge(M("__merging_supplementary/supplementary_long.csv"))),
     ("Brain-structure volumes",   ad_volumes(M("__merging_volumes/volumes_long.csv"))),
-    ("Cell counts",               ad_simple_source(M("__merging_cellcounts/cellcounts_long.csv"), "Species", "Variable", "Source")),
+    ("Cell counts",               ad_simple_source(M("__merging_cell_counts_isotropic_fractionator/cell_counts_isotropic_fractionator_long.csv"), "Species", "Variable", "Source")),
     ("EvoM1 traits",              ad_traits(M("__ShinyApp/data/evom1_traits_long.csv"))),
     ("Cerebral metabolic rate",   ad_cmr(M("__merging_cerebral_metabolic_rate/cerebral_metabolic_rate_long.csv"))),
     ("Grey-level index",          ad_gli(M("__merging_GLI/GLI_long.csv"))),

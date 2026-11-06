@@ -23,9 +23,9 @@ rows, not here.
 
 
 Pipeline for compiling the comparative brain **volume** dataset — the counterpart of
-`../__merging_cellcounts/`, built by copying that folder's structure. **One data type
+`../__merging_cell_counts_isotropic_fractionator/`, built by copying that folder's structure. **One data type
 only**: volumes from sectioned, stained, shrinkage-corrected brains. (Cell-count /
-optical-fractionator data live in `../__merging_cellcounts/`.)
+optical-fractionator data live in `../__merging_cell_counts_isotropic_fractionator/`.)
 
 ## Companion output: areal (laminar) proportions are NOT mm3 volumes
 
@@ -225,7 +225,7 @@ within ±25 % (only Homo and Crocidura deviate). They resolve as:
    `volumes_unfiltered.csv`; species review table `volumes_source_species_ids.csv`; source
    inventory `volumes_species_sources.csv`. Needs `tidyverse`, `readxl`, **`taxizedb`**.
 
-### Species resolution (step 4 — mirrors `../__merging_cellcounts` §4, with extras)
+### Species resolution (step 4 — mirrors `../__merging_cell_counts_isotropic_fractionator` §4, with extras)
 
 No per-paper "tokens" any more. The species **column** is found from the term map (the
 `Original_Term` whose `Standardized_Term == "Species"`), and species **names** are resolved in a

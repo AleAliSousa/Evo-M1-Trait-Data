@@ -1,5 +1,5 @@
 # Merging histologically-derived brain-structure VOLUMES  (two-tier resolution)
-# Mirror of ../__merging_cellcounts/cellcounts_compiled.R for the volume data type.
+# Mirror of ../__merging_cell_counts_isotropic_fractionator/cell_counts_isotropic_fractionator_compiled.R for the volume data type.
 #
 # RULE (see README__merging.md):
 #  Tier 1 "Stephan_collection" (coauthor group, same Vogt specimens; one evolving

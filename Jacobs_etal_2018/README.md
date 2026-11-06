@@ -39,7 +39,7 @@ reproduce exactly. See the per-table READMEs.
 
 ## Regional M1 — never pooled with whole-cortex counts
 
-These belong with `__merging_cellcounts` as a **regional (M1-only) sub-trait**, analogous to how
+These belong with `__merging_cell_counts_isotropic_fractionator` as a **regional (M1-only) sub-trait**, analogous to how
 `M1_Surface_Area.mm2` sits apart from whole-cortex surface in `__merging_cortical_areas`
 (`trait_class = regional`). They must **never** be pooled with whole-cortex neuron counts. Sits beside
 `Young_etal_2013_Table1` (M1 cell count / surface area / mass) — checked 2026-08-04, no species or

@@ -42,6 +42,6 @@ M1-dedicated paper, the two are never averaged. The "somatosensory/premotor bloc
 Cortex" rows are dissection blocks — provenance only, not wired. The left-hemisphere V1
 serial-section row is a volume and is excluded by the merge's area filter. Cell/neuron **counts**
 in this table are NOT yet in any merge — they await the regional cell-count reshape
-(`__merging_cellcounts/WIRING_into_cellcounts.md`).
+(`__merging_cell_counts_isotropic_fractionator/WIRING_into_cell_counts_isotropic_fractionator.md`).
 
 Pipeline: Source → Snapshot ✅ → Data readable ✅ → Species note ✅ → Online database ✅ → Merge (areas) ✅

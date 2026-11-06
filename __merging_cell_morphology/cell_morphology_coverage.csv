@@ -249,14 +249,6 @@ Odocoileus virginianus,species,ACC,V,fork_cell,fork_pct,percent,1,Raghanti_etal_
 Ovis aries,species,ACC,V,fork_cell,fork_pct,percent,1,Raghanti_etal_2015_Table1,1
 Procavia capensis,species,ACC,V,fork_cell,fork_pct,percent,1,Raghanti_etal_2015_Table1,1
 Sus scrofa domesticus,species,ACC,V,fork_cell,fork_pct,percent,1,Raghanti_etal_2015_Table1,1
-Balaena mysticetus,species,PFC_area10,V,fork_cell,fork_pct,percent,1,Raghanti_etal_2015_Table1,1
-Bos taurus,species,PFC_area10,V,fork_cell,fork_pct,percent,1,Raghanti_etal_2015_Table1,1
-Equus ferus caballus,species,PFC_area10,V,fork_cell,fork_pct,percent,1,Raghanti_etal_2015_Table1,1
-Homo sapiens,species,PFC_area10,V,fork_cell,fork_pct,percent,1,Raghanti_etal_2015_Table1,1
-Odocoileus virginianus,species,PFC_area10,V,fork_cell,fork_pct,percent,1,Raghanti_etal_2015_Table1,1
-Ovis aries,species,PFC_area10,V,fork_cell,fork_pct,percent,1,Raghanti_etal_2015_Table1,1
-Procavia capensis,species,PFC_area10,V,fork_cell,fork_pct,percent,1,Raghanti_etal_2015_Table1,1
-Sus scrofa domesticus,species,PFC_area10,V,fork_cell,fork_pct,percent,1,Raghanti_etal_2015_Table1,1
 Balaena mysticetus,species,anterior_insula,V,fork_cell,fork_pct,percent,1,Raghanti_etal_2015_Table1,1
 Bos taurus,species,anterior_insula,V,fork_cell,fork_pct,percent,1,Raghanti_etal_2015_Table1,1
 Equus ferus caballus,species,anterior_insula,V,fork_cell,fork_pct,percent,1,Raghanti_etal_2015_Table1,1
@@ -265,6 +257,14 @@ Odocoileus virginianus,species,anterior_insula,V,fork_cell,fork_pct,percent,1,Ra
 Ovis aries,species,anterior_insula,V,fork_cell,fork_pct,percent,1,Raghanti_etal_2015_Table1,1
 Procavia capensis,species,anterior_insula,V,fork_cell,fork_pct,percent,1,Raghanti_etal_2015_Table1,1
 Sus scrofa domesticus,species,anterior_insula,V,fork_cell,fork_pct,percent,1,Raghanti_etal_2015_Table1,1
+Balaena mysticetus,species,frontal_pole,V,fork_cell,fork_pct,percent,1,Raghanti_etal_2015_Table1,1
+Bos taurus,species,frontal_pole,V,fork_cell,fork_pct,percent,1,Raghanti_etal_2015_Table1,1
+Equus ferus caballus,species,frontal_pole,V,fork_cell,fork_pct,percent,1,Raghanti_etal_2015_Table1,1
+Homo sapiens,species,frontal_pole,V,fork_cell,fork_pct,percent,1,Raghanti_etal_2015_Table1,1
+Odocoileus virginianus,species,frontal_pole,V,fork_cell,fork_pct,percent,1,Raghanti_etal_2015_Table1,1
+Ovis aries,species,frontal_pole,V,fork_cell,fork_pct,percent,1,Raghanti_etal_2015_Table1,1
+Procavia capensis,species,frontal_pole,V,fork_cell,fork_pct,percent,1,Raghanti_etal_2015_Table1,1
+Sus scrofa domesticus,species,frontal_pole,V,fork_cell,fork_pct,percent,1,Raghanti_etal_2015_Table1,1
 Balaena mysticetus,species,occipital_pole,V,fork_cell,fork_pct,percent,1,Raghanti_etal_2015_Table1,1
 Bos taurus,species,occipital_pole,V,fork_cell,fork_pct,percent,1,Raghanti_etal_2015_Table1,1
 Equus ferus caballus,species,occipital_pole,V,fork_cell,fork_pct,percent,1,Raghanti_etal_2015_Table1,1
@@ -1540,9 +1540,9 @@ Tursiops truncatus,species,ACC,V,ven,ven_count,count,1,Butti_etal_2009_Table5,1
 Grampus griseus,species,ACC_subgenual,V,ven,ven_count,count,1,Butti_etal_2009_Table5,1
 Tursiops truncatus,species,ACC_subgenual,V,ven,ven_count,count,1,Butti_etal_2009_Table5,1
 Loxodonta africana,species,FI,V,ven,ven_count,count,1,Hakeem_etal_2009_Table1,2
-Megaptera novaeangliae,species,PFC_area10,V,ven,ven_count,count,1,Butti_etal_2009_Table5,1
 Delphinapterus leucas,species,anterior_insula,V,ven,ven_count,count,1,Butti_etal_2009_Table5,1
 Megaptera novaeangliae,species,anterior_insula,V,ven,ven_count,count,1,Butti_etal_2009_Table5,1
+Megaptera novaeangliae,species,frontal_pole,V,ven,ven_count,count,1,Butti_etal_2009_Table5,1
 Delphinapterus leucas,species,ACC,V,ven,ven_index,ratio,1,Butti_etal_2009_Table6,1
 Grampus griseus,species,ACC,V,ven,ven_index,ratio,1,Butti_etal_2009_Table6,1
 Megaptera novaeangliae,species,ACC,V,ven,ven_index,ratio,1,Butti_etal_2009_Table6,1
@@ -1559,14 +1559,6 @@ Sus scrofa domesticus,species,ACC,V,ven,ven_pct,percent,1,Raghanti_etal_2015_Tab
 Grampus griseus,species,ACC_subgenual,V,ven,ven_pct,percent,1,Butti_etal_2009_Table5,1
 Tursiops truncatus,species,ACC_subgenual,V,ven,ven_pct,percent,1,Butti_etal_2009_Table5,1
 Loxodonta africana,species,FI,V,ven,ven_pct,percent,1,Hakeem_etal_2009_Table1,2
-Balaena mysticetus,species,PFC_area10,V,ven,ven_pct,percent,1,Raghanti_etal_2015_Table1,1
-Bos taurus,species,PFC_area10,V,ven,ven_pct,percent,1,Raghanti_etal_2015_Table1,1
-Equus ferus caballus,species,PFC_area10,V,ven,ven_pct,percent,1,Raghanti_etal_2015_Table1,1
-Homo sapiens,species,PFC_area10,V,ven,ven_pct,percent,1,Raghanti_etal_2015_Table1,1
-Odocoileus virginianus,species,PFC_area10,V,ven,ven_pct,percent,1,Raghanti_etal_2015_Table1,1
-Ovis aries,species,PFC_area10,V,ven,ven_pct,percent,1,Raghanti_etal_2015_Table1,1
-Procavia capensis,species,PFC_area10,V,ven,ven_pct,percent,1,Raghanti_etal_2015_Table1,1
-Sus scrofa domesticus,species,PFC_area10,V,ven,ven_pct,percent,1,Raghanti_etal_2015_Table1,1
 Balaena mysticetus,species,anterior_insula,V,ven,ven_pct,percent,1,Raghanti_etal_2015_Table1,1
 Bos taurus,species,anterior_insula,V,ven,ven_pct,percent,1,Raghanti_etal_2015_Table1,1
 Delphinapterus leucas,species,anterior_insula,V,ven,ven_pct,percent,1,Butti_etal_2009_Table5,1
@@ -1577,6 +1569,14 @@ Odocoileus virginianus,species,anterior_insula,V,ven,ven_pct,percent,1,Raghanti_
 Ovis aries,species,anterior_insula,V,ven,ven_pct,percent,1,Raghanti_etal_2015_Table1,1
 Procavia capensis,species,anterior_insula,V,ven,ven_pct,percent,1,Raghanti_etal_2015_Table1,1
 Sus scrofa domesticus,species,anterior_insula,V,ven,ven_pct,percent,1,Raghanti_etal_2015_Table1,1
+Balaena mysticetus,species,frontal_pole,V,ven,ven_pct,percent,1,Raghanti_etal_2015_Table1,1
+Bos taurus,species,frontal_pole,V,ven,ven_pct,percent,1,Raghanti_etal_2015_Table1,1
+Equus ferus caballus,species,frontal_pole,V,ven,ven_pct,percent,1,Raghanti_etal_2015_Table1,1
+Homo sapiens,species,frontal_pole,V,ven,ven_pct,percent,1,Raghanti_etal_2015_Table1,1
+Odocoileus virginianus,species,frontal_pole,V,ven,ven_pct,percent,1,Raghanti_etal_2015_Table1,1
+Ovis aries,species,frontal_pole,V,ven,ven_pct,percent,1,Raghanti_etal_2015_Table1,1
+Procavia capensis,species,frontal_pole,V,ven,ven_pct,percent,1,Raghanti_etal_2015_Table1,1
+Sus scrofa domesticus,species,frontal_pole,V,ven,ven_pct,percent,1,Raghanti_etal_2015_Table1,1
 Balaena mysticetus,species,occipital_pole,V,ven,ven_pct,percent,1,Raghanti_etal_2015_Table1,1
 Bos taurus,species,occipital_pole,V,ven,ven_pct,percent,1,Raghanti_etal_2015_Table1,1
 Equus ferus caballus,species,occipital_pole,V,ven,ven_pct,percent,1,Raghanti_etal_2015_Table1,1

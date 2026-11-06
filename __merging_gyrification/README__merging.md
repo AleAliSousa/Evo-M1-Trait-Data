@@ -2,7 +2,7 @@
 
 Compiles a comparative dataset of the **whole-cortex gyrification index (GI)** across papers,
 following the same `standardized_term` + compile pattern as `__merging_volumes`,
-`__merging_cellcounts`, and `__merging_cortical_areas`.
+`__merging_cell_counts_isotropic_fractionator`, and `__merging_cortical_areas`.
 
 ## Scope: GI only
 

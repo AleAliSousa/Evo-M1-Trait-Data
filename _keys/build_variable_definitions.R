@@ -343,6 +343,36 @@ if (!is.null(supp_map) && nrow(supp_map)) for (i in seq_len(nrow(supp_map))) {
   outd$definition_source[j] <- rel; outd$matched_code[j] <- m$value_col
 }
 
+# Observation-backed merges (social composition / mirror tests / play, taste, claustrum &
+# cerebellar anatomy). Their *_observations_long.csv records, for every app label, the
+# source item and the printed Code it was drawn from, so the definition comes from that
+# item's own *_definitions.csv rather than being composed from the label. Only labels no
+# earlier pass resolved are touched, so a quoted definition is never overwritten.
+obs_files <- c("__merging_behaviour/social_mirror_play_observations_long.csv",
+               "__merging_sensory/taste_observations_long.csv",
+               "__merging_volumes/claustrum_cerebellar_observations_long.csv")
+n_obs <- 0L
+for (of in obs_files) {
+  ob <- rd(file.path(repo, of)); if (is.null(ob) || !nrow(ob)) next
+  ob$label <- paste0(ob$Measure, " (", ob$Units, ")")
+  ob$prio  <- suppressWarnings(as.numeric(ob$priority)); ob$prio[is.na(ob$prio)] <- 0
+  ob <- ob[order(-ob$prio), ]
+  for (j in which(!nzchar(outd$definition) & outd$label %in% ob$label)) {
+    h <- ob[ob$label == outd$label[j], ][1, ]
+    fs <- unique(c(Sys.glob(file.path(repo, "*", "reference_tables", paste0(h$Source_item, "_definitions.csv"))),
+                   Sys.glob(file.path(repo, "*", paste0(h$Source_item, "_definitions.csv")))))
+    if (!length(fs)) next
+    ds <- rd(fs[1]); if (is.null(ds) || !all(c("Code", "Definition") %in% names(ds))) next
+    hit <- which(ds$Code == h$Code); if (!length(hit)) next
+    outd$definition[j]        <- trim(ds$Definition[hit[1]])
+    outd$definition_kind[j]   <- "source_definition_observation_mapping"
+    outd$definition_source[j] <- sub(paste0("^", repo, "/"), "", fs[1])
+    outd$matched_code[j]      <- h$Code
+    n_obs <- n_obs + 1L
+  }
+}
+message("definitions taken from observation-merge item mappings: ", n_obs)
+
 outd <- outd[order(outd$domain, outd$measure_class, outd$label), ]
 
 # Definitions quote source text carrying non-ASCII characters (micro sign, en-dash,

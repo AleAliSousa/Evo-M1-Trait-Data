@@ -32,6 +32,8 @@ library(stringr)
 folder_path <- paste0(folder, "/") #Note there are two underscores in the file name -- this is because there is a single author.  See __ReadMe.xlsx
 tabledirectxl <- read_excel(paste0(folder_path,"MacLarnon__1996_Table1_snapshot.xlsx"))
 
+
+
 ## Create a new "Order" column 
 Order_column <- rep(NA, nrow(tabledirectxl))
 tabledirectxl <- cbind(Order = Order_column, tabledirectxl)
@@ -96,8 +98,8 @@ tabledirectxl <- tabledirectxl %>%
   relocate(`Body weight (g): Data Source`, .after = `Body weight (g)`)
 
 tabledirectxl <- tabledirectxl %>%
-  mutate(`Body weight (mg): Data Source` = NA) %>%
-  relocate(`Body weight (mg): Data Source`, .after = `Body weight (mg)`)
+  mutate(`Brain weight (mg): Data Source` = NA) %>%
+  relocate(`Brain weight (mg): Data Source`, .after = `Brain weight (mg)`)
 
 tabledirectxl <- tabledirectxl %>%
   mutate(`Spinal cord weight (mg): Data Source` = NA) %>%
@@ -123,15 +125,15 @@ tabledirectxl$`Body weight (g): Data Source`[33:34] <- "Latimer & Sawin (1955)"
 tabledirectxl$`Body weight (g): Data Source`[35:36] <- "Latimer & Sawin (1957)"
 tabledirectxl$`Body weight (g): Data Source`[2] <- "Nayak (1933)"
 
-tabledirectxl$`Body weight (mg): Data Source`[c(3:5, 7:9, 13:19, 21)] <- "Martin & MacLarnon (unpublished data collection)"
-tabledirectxl$`Body weight (mg): Data Source`[c(6, 10, 20)] <- "Present study (Formol–saline subset)"
-tabledirectxl$`Body weight (mg): Data Source`[11:12] <- "Hopf & Claussen  (1971)"
-tabledirectxl$`Body weight (mg): Data Source`[c(27:29, 37:45)] <- "Krompecher & Lipák  (1966)"
-tabledirectxl$`Body weight (mg): Data Source`[22:26] <- "Ridgway et al. (1966)"
-tabledirectxl$`Body weight (mg): Data Source`[30:31] <- "Donaldson & Hatai (1911)"
-tabledirectxl$`Body weight (mg): Data Source`[32] <- "Latimer (1950)"
-tabledirectxl$`Body weight (mg): Data Source`[33:34] <- "Latimer & Sawin (1955)"
-tabledirectxl$`Body weight (mg): Data Source`[35:36] <- "Latimer & Sawin (1957)"
+tabledirectxl$`Brain weight (mg): Data Source`[c(3:5, 7:9, 13:19, 21)] <- "Martin & MacLarnon (unpublished data collection)"
+tabledirectxl$`Brain weight (mg): Data Source`[c(6, 10, 20)] <- "Present study (Formol–saline subset)"
+tabledirectxl$`Brain weight (mg): Data Source`[11:12] <- "Hopf & Claussen  (1971)"
+tabledirectxl$`Brain weight (mg): Data Source`[c(27:29, 37:45)] <- "Krompecher & Lipák  (1966)"
+tabledirectxl$`Brain weight (mg): Data Source`[22:26] <- "Ridgway et al. (1966)"
+tabledirectxl$`Brain weight (mg): Data Source`[30:31] <- "Donaldson & Hatai (1911)"
+tabledirectxl$`Brain weight (mg): Data Source`[32] <- "Latimer (1950)"
+tabledirectxl$`Brain weight (mg): Data Source`[33:34] <- "Latimer & Sawin (1955)"
+tabledirectxl$`Brain weight (mg): Data Source`[35:36] <- "Latimer & Sawin (1957)"
 
 tabledirectxl$`Spinal cord weight (mg): Data Source`[c(3, 5:10, 13, 20)] <- "Present study (Formol–saline subset)"
 tabledirectxl$`Spinal cord weight (mg): Data Source`[c(4, 14, 15)] <- "Present study (Non-Formol–saline subset)"
@@ -163,7 +165,7 @@ tabledirectxl <- tabledirectxl %>%
 ## Create a new "Spinal cord length (mm): Dissection: Sex (specified)" column
 tabledirectxl <- tabledirectxl %>%
   mutate(`Spinal cord length (mm): Dissection: Sex (specified)` = NA) %>%
-  relocate(`Spinal cord length (mm): Dissection: Sex (specified)`, .after = `Body weight (mg): Data Source`)
+  relocate(`Spinal cord length (mm): Dissection: Sex (specified)`, .after = `Brain weight (mg): Data Source`)
 
 ## Adding the Sex and removing it from Spinal cord length (mm): Dissection column
 tabledirectxl$`Spinal cord length (mm): Dissection: Sex (specified)`[21] <- "M"
@@ -175,28 +177,44 @@ tabledirectxl$`Spinal cord length (mm): Dissection`[33] <- "162.98"
 
 ## Remove asterisks from all columns
 tabledirectxl$"Body weight (g)" <- gsub("\\*", "", tabledirectxl$"Body weight (g)")
-tabledirectxl$"Body weight (mg)" <- gsub("\\*", "", tabledirectxl$"Body weight (mg)")
+tabledirectxl$"Brain weight (mg)" <- gsub("\\*", "", tabledirectxl$"Brain weight (mg)")
 
 ## Remove space(a character) from in between numbers
 tabledirectxl$"Body weight (g)" <- gsub(" ", "", tabledirectxl$"Body weight (g)")
-tabledirectxl$"Body weight (mg)" <- gsub(" ", "", tabledirectxl$"Body weight (mg)")
+tabledirectxl$"Brain weight (mg)" <- gsub(" ", "", tabledirectxl$"Brain weight (mg)")
 tabledirectxl$"Spinal cord weight (mg)" <- gsub(" ", "", tabledirectxl$"Spinal cord weight (mg)")
 tabledirectxl$"Spinal cord length (mm): Dissection" <- gsub(" ", "", tabledirectxl$"Spinal cord length (mm): Dissection")
 tabledirectxl$"Spinal cord length (mm): ΣDCL" <- gsub(" ", "", tabledirectxl$"Spinal cord length (mm): ΣDCL")
 
 ## Remove ·(a character) from in between numbers
 tabledirectxl$"Body weight (g)" <- gsub("·", ".", tabledirectxl$"Body weight (g)")
-tabledirectxl$"Body weight (mg)" <- gsub("·", ".", tabledirectxl$"Body weight (mg)")
+tabledirectxl$"Brain weight (mg)" <- gsub("·", ".", tabledirectxl$"Brain weight (mg)")
 tabledirectxl$"Spinal cord weight (mg)" <- gsub("·", ".", tabledirectxl$"Spinal cord weight (mg)")
 tabledirectxl$"Spinal cord length (mm): Dissection" <- gsub("·", ".", tabledirectxl$"Spinal cord length (mm): Dissection")
 tabledirectxl$"Spinal cord length (mm): ΣDCL" <- gsub("·", ".", tabledirectxl$"Spinal cord length (mm): ΣDCL")
 
 ## Convert columns from chr to numerical
 tabledirectxl$`Body weight (g)`<- as.numeric(tabledirectxl$`Body weight (g)`)
-tabledirectxl$`Body weight (mg)` <- as.numeric(tabledirectxl$`Body weight (mg)`)
+tabledirectxl$`Brain weight (mg)` <- as.numeric(tabledirectxl$`Brain weight (mg)`)
 tabledirectxl$`Spinal cord weight (mg)` <- as.numeric(tabledirectxl$`Spinal cord weight (mg)`)
 tabledirectxl$`Spinal cord length (mm): Dissection` <- as.numeric(tabledirectxl$`Spinal cord length (mm): Dissection`)
 tabledirectxl$`Spinal cord length (mm): ΣDCL` <- as.numeric(tabledirectxl$`Spinal cord length (mm): ΣDCL`)
+
+## ---- Source check of the rabbit rows (added 2026-11-06; no change to the data) ----
+## "Oryctolagus cuniculus (small subspecies)" cites Latimer & Sawin (1955) J Comp Neurol 103:513-539
+## (PDF in ../Latimer_Sawin_1955/). All six values match that paper's NORMAL (non-dwarf) race X groups,
+## gross body weight, read on the page images:
+##   males,   n = 35: body 1972.3 g (Table 1, panel B), spinal cord 3.945 g (Table 7), brain 9.265 g (Table 4)
+##   females, n = 30: body 2480.0 g (Table 1, panel C), spinal cord 4.537 g (Table 7), brain 9.755 g (Table 5)
+## Mink et al. (1981) Table 1 pairs the female body and brain weights with the male cord weight; that is
+## recorded on the Mink item (erratum Mink_etal_1981-E005), not here. The guard stops the build if these
+## rows ever change.
+r_rab55 <- which(tabledirectxl$Species == "Oryctolagus  cuniculus" & tabledirectxl$`Subspecies size` %in% "Small")
+stopifnot(length(r_rab55) == 2L,
+          identical(tabledirectxl$Sex[r_rab55], c("M", "F")),
+          isTRUE(all.equal(tabledirectxl$`Body weight (g)`[r_rab55], c(1972, 2480))),
+          isTRUE(all.equal(tabledirectxl$`Spinal cord weight (mg)`[r_rab55], c(3945, 4537))),
+          isTRUE(all.equal(tabledirectxl$`Brain weight (mg)`[r_rab55], c(9265, 9755))))
 
 #3. Save
 

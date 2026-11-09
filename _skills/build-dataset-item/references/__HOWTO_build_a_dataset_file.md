@@ -212,12 +212,27 @@ write.table(df, paste0(tsv_dir, item_encoded, ".tsv"), sep = "\t", row.names = F
 ```
 
 In `__ReadMe.xlsx` **Sheet1**, one row per table:
-- **You set** `Item number` (col D) — *exactly as printed* — and the descriptive columns
-  (Source type, Team, Main Trait(s), Data role, Flags, Note). These are safe to edit.
-- **Never edit cols E–M** (`end`, Publication name, authors, year, DOI, **Item name**,
-  **Item encoded**, auto-generated public TSV lookup) — they are **formulas** that build Item
-  name/encoded from the other
-  cells. Editing them by hand (or letting openpyxl rewrite the workbook) strips the cached values
+- **You set** `Item number` (col D) — *exactly as printed* —, `Item full original title`
+  (col M: the printed caption, typed by hand) and the descriptive columns N–AJ
+  (Source format, Source filetype, N.B., Progress stage, Snapshot filename, Snapshot filetype,
+  Source URL link, the three Flags columns, Topic, Taxon, Main/Other Trait(s), Material type,
+  Method, Measure type, Team, Collection, Data role, Source (if secondary), recommendation,
+  Human visual check of snapshot). These are safe to edit. Keep format and filetype apart:
+  - **N** `Source format (table, figure, text; legibility notes)`: the form of the source plus
+    legibility/method notes, e.g. `table; scanned; transcribed`. Never a file type.
+  - **O** `Source filetype (pdf, xlsx, csv…)`: the source file's type, lower case, no dot.
+  - **R** `Snapshot filename (only if not <Item name>_snapshot)`: leave blank when the snapshot
+    has the standard name `<Item name>_snapshot.<ext>`.
+  - **S** `Snapshot filetype (csv, xlsx, tsv…)`: the snapshot's type, lower case, no dot. A CSV
+    source with a CSV snapshot has `csv` in both O and S.
+  (These four headers were renamed on 2026-11-08; before, they were `Source format`,
+  `Source file type`, `Snapshot (if filename is not Item name)` and `Snapshot filetype`.)
+  Col B (`sequence`) and col C (DOI override) are typed by hand too. A registry-row file
+  must carry B, C, D and M verbatim from the live row, never blanks.
+- **Never edit cols E–L** (1st Author, other author(s), year, Publication name, DOI (or Alt),
+  **Item name**, **Item encoded**, auto-generated public TSV lookup) — they are **formulas** that
+  build Item name/encoded from the other
+  cells. (Until 2026-11-07 this line said "E–M", which wrongly included the manual title column M.) Editing them by hand (or letting openpyxl rewrite the workbook) strips the cached values
   the pipeline reads. If you must set a flag programmatically, edit the target cells at the XML
   level so the formulas survive (see how the Smaers 2017 flag was set).
 - If the shared `__Public` folder isn't mounted, the reformat writes the TSV locally and warns —
@@ -412,7 +427,7 @@ table-numbered one under `reference_tables/` and delete the stray. (The 7–8 co
 Many tables **re-use earlier data under new labels** and should **not** be merged as if new.
 
 - **The flag** is the **`Data role`** column in `__ReadMe.xlsx` (`primary` / `secondary` / `both`).
-  Set `secondary` (or `both` for a mix), and name the primary source in `Source type` / a `Flags`
+  Set `secondary` (or `both` for a mix), and name the primary source in `Source (if secondary)` (col AH) / a `Flags`
   cell (e.g. Smaers 2017 primary-visual = "de Sousa 2010 = Frahm 1984 area striata").
 - **Confirm by value** when you suspect re-use: `__merging_volumes/crosspub_value_match.R` matches a
   paper's values against every source, label- and unit-agnostic — **identical values = same data**.

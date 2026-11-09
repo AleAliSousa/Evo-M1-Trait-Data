@@ -1,0 +1,2 @@
+variant_name,accepted_name,source_publication,collection,ncbi_taxid,basis,note
+Monodelphis domestica,Monodelphis domestica,Frost_etal_2000,General,13616,verbatim,"binomial as printed in the title, abstract and METHODS (""Gray Short-tailed opossums (Monodelphis domestica; 7 male, 5 female)""); TABLE 1 prints case numbers only, so species_as_published is taken from the title; items: Frost_etal_2000_TABLE1; ncbi_taxid as in the General key's existing Monodelphis domestica rows (Glendenning_Masterton_1998, Nudo_Masterton_1990_IV); not re-queried against NCBI in this session"

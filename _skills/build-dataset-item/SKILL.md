@@ -90,14 +90,38 @@ snapshot.
    `attr(report, "table_checks")` and prints any that did not pass; they do
    not change the invariant statuses. No `table_checks` means not assessed.
 6. **Register** — emit `<Item>_registry_row.xlsx` in the paper folder, built
-   against the live Sheet1 header row of `__ReadMe.xlsx` (currently A–AN).
-   Fill ONLY column A (citation), C (only if overriding the DOI), D
-   (`Item number`, e.g. "Table 1"), and the descriptive columns N→AN (title,
-   notes, Progress stage, Snapshot, Source Type/format, URLs, Possible
-   Traits, Sample type, Method, Subcategory, Main Trait(s), Taxon group,
-   Data role per §9 of the build HOWTO, Measure type, relevance). Leave B
-   and E–M blank and grey — formula/generated, filled by `_tools/file_list.R`.
-   Include a HOW_TO_PASTE sheet. The **owner** pastes the row as values into
+   against the live Sheet1 header row of `__ReadMe.xlsx` (currently A–AJ;
+   read the header, never assume it).
+   Fill column A (citation), C (only if overriding the DOI), D
+   (`Item number`, e.g. "Table 1"), M (`Item full original title`: the
+   printed caption, a MANUAL column) and the descriptive columns N→AJ
+   (Source format, Source filetype, N.B., Progress stage, Snapshot filename,
+   Snapshot filetype, URLs, flags, Topic, Taxon, Main/Other Trait(s),
+   Material type, Method, Measure type, Team, Collection, Data role per §9
+   of the build HOWTO, Source (if secondary), recommendation, human visual
+   check). Keep format and filetype apart:
+   - N `Source format (table, figure, text; legibility notes)`: the form of
+     the source plus legibility/method notes, e.g.
+     `table; scanned; transcribed`. Never a file type.
+   - O `Source filetype (pdf, xlsx, csv…)`: the source file's type, lower
+     case, no dot.
+   - R `Snapshot filename (only if not <Item name>_snapshot)`: leave blank
+     when the snapshot has the standard name `<Item name>_snapshot.<ext>`.
+   - S `Snapshot filetype (csv, xlsx, tsv…)`: the snapshot's type, lower
+     case, no dot. A CSV source with a CSV snapshot has `csv` in both O and S.
+   These four headers were renamed on 2026-11-08 (before: `Source format`,
+   `Source file type`, `Snapshot (if filename is not Item name)`,
+   `Snapshot filetype`); a row file or change list written earlier uses the
+   old names. Only E–L are formulas
+   (1st Author, other author(s), year, Publication name, DOI (or Alt), Item
+   name, Item encoded, Public TSV match): leave them blank and grey; the
+   workbook and `_tools/file_list.R` fill them. B (`sequence`), C, D and M
+   are typed by the owner: when the row already exists, copy them VERBATIM
+   from the live registry and never leave them blank, because a blank pasted
+   over M erases the owner's title. (Until 2026-11-07 this step said "E–M",
+   which wrongly treated M as generated.)
+   Include a HOW_TO_PASTE sheet; for an update of an existing row it says to
+   paste M→AJ (or N→AJ) by Item name and never E–L. The **owner** pastes the row as values into
    the first empty Sheet1 row, runs `file_list.R`, then verifies K/L: Item
    name matches, Item encoded has no trailing `_` and equals the public TSV
    stem (rename the TSV if not — the registry is the authority). Never

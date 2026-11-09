@@ -46,6 +46,16 @@ DELIBERATE = {
 }
 # snapshot filenames that legitimately depart from the convention
 SNAPSHOT_EXCEPTIONS = set()          # e.g. {'SomePaper_2001/odd_snapshot_name.xlsx'}
+# __ReadMe.xlsx Sheet1 header of the snapshot-filename column (R), current name first.
+# Former names stay listed so an older copy of the registry still reads. Until 2026-11-08
+# this script looked for a column named exactly 'Snapshot', which no longer existed, so
+# the registry snapshot-name check (section 1) had silently stopped running.
+SNAPSHOT_FILENAME_HEADERS = (
+    'Snapshot filename (only if not <Item name>_snapshot)',   # from 2026-11-08
+    'Snapshot (if filename is not Item name)',
+    'Snapshot name if unchanged',
+    'Snapshot',
+)
 # dated archives and other frozen historical copies: reported at P4, never a build failure,
 # because rewriting them would falsify the record they exist to preserve.
 HISTORICAL_PREFIX = ('specimen_registry/archive/', '_checks/archive/')
@@ -102,15 +112,22 @@ def read_registry(root):
     g = grid('xl/worksheets/sheet1.xml')
     hdr = g[0]
     COL = {v: k for k, v in hdr.items() if v}
+    snap_hdr = next((h for h in SNAPSHOT_FILENAME_HEADERS if h in COL), None)
+    if snap_hdr is None:
+        print("WARNING: __ReadMe.xlsx Sheet1 has no snapshot-filename column (expected '%s'); "
+              "the registry snapshot-name check is skipped. Update SNAPSHOT_FILENAME_HEADERS "
+              "in _tools/check_naming.py." % SNAPSHOT_FILENAME_HEADERS[0], file=sys.stderr)
 
     def cell(r, name):
+        if not name:
+            return ''
         return (r.get(COL.get(name, '~')) or '').strip()
 
     rows = []
     for i, r in enumerate(g[1:], start=2):
         d = dict(xlrow=i, pub=cell(r, 'Publication name'), a=cell(r, '1st Author'),
                  o=cell(r, 'other author(s)'), y=cell(r, 'year'), seq=cell(r, 'sequence'),
-                 item=cell(r, 'Item name'), snap=cell(r, 'Snapshot'),
+                 item=cell(r, 'Item name'), snap=cell(r, snap_hdr),
                  stage=cell(r, 'Progress stage'))
         if any([d['pub'], d['a'], d['item'], d['y']]):
             rows.append(d)
@@ -252,7 +269,7 @@ def main():
             r = check_token(m.group(1))
             if r:
                 add('P2', 'registry_snapshot_value', 'PUB', '__ReadMe.xlsx', d['xlrow'],
-                    r[1], r[0], 'Snapshot column names a file with the wrong spelling')
+                    r[1], r[0], 'Snapshot filename column (R) names a file with the wrong spelling')
 
     # ---- 2. folders, filenames, file contents --------------------------------------
     disk_base = collections.defaultdict(set)

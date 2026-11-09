@@ -18,3 +18,7 @@ The nearby workbook rows 153–160 are figure-derived estimates of **all M1**. T
 - `reference_tables/Mayer_etal_2019_Fig6_definitions.csv`: field meanings.
 
 The article PDF was located in the local EndNote library and copied here as `Mayer_etal_2019.pdf`. No public TSV or cortical-area merge entry has been created; the hand-representation area needs a distinct standardized term.
+
+## Update 2026-11-09
+
+The R script now finds its own folder (so the repo-wide run_all sweep can run it from the repo root) and writes the public TSV `10.1523%2FJNEUROSCI.0556-19.2019_Fig6.tsv` (Item encoded looked up in `__ReadMe.xlsx` by Item name), which had been missing. The transcription, the checks and the CSV are unchanged. The TSV now in `__Public/comparative-data/` was written from the CSV by a Python mirror of `write.table(sep = "\t", na = "")` (R NOT RUN); rerun the R to confirm.

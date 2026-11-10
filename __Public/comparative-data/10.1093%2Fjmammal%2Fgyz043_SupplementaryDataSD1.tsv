@@ -917,7 +917,7 @@
 "Bradypus tridactylus"	"Bradypus_tridactylus"	"Pilosa"	"Bradypodidae"	"Bradypus"	"tridactylus"	"1"	""	""	24.9	4097	"Boddy2012"	"Crile & Quiring 1940; Warncke 1908; Silva & Downing 1995"	-0.053198825	NA
 "Microcebus rufus"	"Microcebus_rufus"	"Primates"	"Cheirogaleidae"	"Microcebus"	"rufus"	"9"	"87"	"Both"	1.716401667	42.5	"islerPrim2008"	""	0.273292219	0.076282519
 "Cheirogaleus adipicaudatus"	"Cheirogaleus_adipicaudatus"	"Primates"	"Cheirogaleidae"	"Cheirogaleus"	"adipicaudatus"	"2"	""	"Both"	3.037359	340	"islerPrim2008/Amniote"	""	-0.156154303	-0.393345979
-"Galago thomasi"	"Galago_thomasi"	"Primates"	"Galagidae"	"Galago"	"thomasi"	"2"	"3"	"Both"	3.1175415	116.5	"islerPrim2008"	""	0.204029767	-0.012465448
+"Galagoides thomasi"	"Galago_thomasi"	"Primates"	"Galagidae"	"Galago"	"thomasi"	"2"	"3"	"Both"	3.1175415	116.5	"islerPrim2008"	""	0.204029767	-0.012465448
 "Cheirogaleus medius"	"Cheirogaleus_medius"	"Primates"	"Cheirogaleidae"	"Cheirogaleus"	"medius"	"4"	""	"Both"	3.34	179.67	"Boddy2012"	"Sherwood.etal2008,Boddy2012,Stephan.etal1981"	0.09285046	-0.132016262
 "Tarsius syrichta"	"Tarsius_syrichta"	"Primates"	"Tarsiidae"	"Tarsius"	"syrichta"	"9"	"27"	"Both"	3.358721556	125.5	"islerPrim2008"	""	0.212152952	-0.005780208
 "Galago moholi"	"Galago_moholi"	"Primates"	"Galagidae"	"Galago"	"moholi"	"61"	"49"	"Both"	3.705247654	148.379097	"islerPrim2008"	""	0.200248941	-0.020920214
@@ -947,7 +947,7 @@
 "Otolemur crassicaudatus"	"Otolemur_crassicaudatus"	"Primates"	"Galagidae"	"Otolemur"	"crassicaudatus"	"15"	"101"	"Both"	11.77750484	1150	"islerPrim2008"	""	0.035485019	-0.22525366
 "Leontopithecus chrysomelas"	"Leontopithecus_chrysomelas"	"Primates"	"Cebidae"	"Leontopithecus"	"chrysomelas"	"3"	"2"	"Both"	11.84274929	655	"islerPrim2008"	""	0.221228354	-0.028633505
 "Leontopithecus rosalia"	"Leontopithecus_rosalia"	"Primates"	"Cebidae"	"Leontopithecus"	"rosalia"	"4"	""	"Both"	13.05	512.38	"Boddy2012"	"Boddy2012,Sherwood.etal2008,Warncke1908"	0.343373914	0.098257289
-"Hapalemur alaotrensis"	"Hapalemur_alaotrensis"	"Primates"	"Lemuridae"	"Hapalemur"	"alaotrensis"	"1"	"58"	"Both"	13.8	1239.5	"islerPrim2008"	""	0.079899071	-0.182287825
+"Hapalemur griseus"	"Hapalemur_alaotrensis"	"Primates"	"Lemuridae"	"Hapalemur"	"alaotrensis"	"1"	"58"	"Both"	13.8	1239.5	"islerPrim2008"	""	0.079899071	-0.182287825
 "Saguinus geoffroyi"	"Saguinus_geoffroyi"	"Primates"	"Cebidae"	"Saguinus"	"geoffroyi"	"20"	""	"both"	14.27	634.67	"Boddy2012"	"Crile & Quiring 1940; Hrdlicka 1925; Rowe 1996; Sherwoodetal.2008 "	0.312469884	0.063217294
 "Aotus trivirgatus"	"Aotus_trivirgatus"	"Primates"	"Aotidae"	"Aotus"	"trivirgatus"	"266"	""	"both"	16.04	701.68	"Boddy2012"	"Warncke 1908; Bronson 1981; Stephan 1981; Sherwoodetal.2008; Silva & Downing 1995"	0.330556628	0.0793645
 "Callicebus caligatus"	"Callicebus_caligatus"	"Primates"	"Pitheciidae"	"Callicebus"	"caligatus"	"4"	"1"	"Both"	17.25	880	"islerPrim2008"	""	0.288383004	0.032815189
@@ -987,7 +987,7 @@
 "Chlorocebus sabaeus"	"Chlorocebus_sabaeus"	"Primates"	"Cercopithecidae"	"Chlorocebus"	"sabaeus"	"7"	"6"	"Both"	64.91330945	4311.8	"islerPrim2008"	""	0.346290943	0.060014523
 "Cercopithecus doggetti"	"Cercopithecus_doggetti"	"Primates"	"Cercopithecidae"	"Cercopithecus"	"doggetti"	"4"	"4"	"Both"	65.35648964	6350.333333	"islerPrim2008"	""	0.223141314	-0.070616214
 "Cercopithecus hamlyni"	"Cercopithecus_hamlyni"	"Primates"	"Cercopithecidae"	"Cercopithecus"	"hamlyni"	"5"	"20"	"Both"	65.9	4425	"islerPrim2008"	""	0.344401528	0.057624345
-"Cebus xanthosternos"	"Cebus_xanthosternos"	"Primates"	"Cebidae"	"Cebus"	"xanthosternos"	"11"	"10"	"Both"	66.08735914	2440.47619	"islerPrim2008"	""	0.53946532	0.264187077
+"Sapajus xanthosternos"	"Cebus_xanthosternos"	"Primates"	"Cebidae"	"Cebus"	"xanthosternos"	"11"	"10"	"Both"	66.08735914	2440.47619	"islerPrim2008"	""	0.53946532	0.264187077
 "Macaca fascicularis"	"Macaca_fascicularis"	"Primates"	"Cercopithecidae"	"Macaca"	"fascicularis"	"52"	""	"both"	66.93	3109.45	"Boddy2012"	"Bronson 1981; Hrdlicka 1925; Warncke 1908; Silva & Downing 1995"	0.466060269	0.186100869
 "Sapajus nigritus"	"Cebus_nigritus"	"Primates"	"Cebidae"	"Cebus"	"nigritus"	"87"	"87"	"Both"	67.06601569	2730.833333	"islerPrim2008"	""	0.509233626	0.231783164
 "Cercopithecus albogularis"	"Cercopithecus_albogularis"	"Primates"	"Cercopithecidae"	"Cercopithecus"	"albogularis"	"33"	"31"	"Both"	70.09979995	5619.835417	"islerPrim2008"	""	0.293374435	0.001978328

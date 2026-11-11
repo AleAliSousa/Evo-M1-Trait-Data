@@ -228,6 +228,17 @@ if (!is.null(cohorts)) {
 # ---- Load & harmonize compiled data (once, at startup) ----------------------
 
 load_compiled <- function() {
+  # Some merges retain richer provenance than others. Never discard those
+  # columns merely to make their schemas line up.
+  bind_compiled <- function(...) {
+    frames <- list(...)
+    cols <- unique(unlist(lapply(frames, names)))
+    do.call(rbind, lapply(frames, function(d) {
+      for (cl in setdiff(cols, names(d))) d[[cl]] <- rep("", nrow(d))
+      d[cols]
+    }))
+  }
+  field <- function(d, name) if (name %in% names(d)) as.character(d[[name]]) else rep("", nrow(d))
   # Value is kept as text (so categorical traits like Diet are shown as-is);
   # Value_num is the numeric parse used for plotting.
   std <- function(gh_rel, local, dataset, source_col, n_col = NULL) {
@@ -236,6 +247,8 @@ load_compiled <- function() {
       Species = d$Species, Dataset = dataset, Variable = d$Variable,
       Value = as.character(d$Value), Value_num = suppressWarnings(as.numeric(d$Value)),
       Source = d[[source_col]],
+      Items = if ("Sources" %in% names(d)) field(d, "Sources") else field(d, source_col),
+      Source_details = field(d, "Source_detail"),
       Teams = as.character(d[[source_col]]),
       N_sources = if (!is.null(n_col)) suppressWarnings(as.integer(d[[n_col]])) else NA_integer_,
       Variable_raw = d$Variable, Unit = NA_character_, Unit_raw = NA_character_,
@@ -262,6 +275,8 @@ load_compiled <- function() {
       Species = d$Species, Dataset = dataset, Variable = lab,
       Value = as.character(d$Value), Value_num = suppressWarnings(as.numeric(d$Value)),
       Source = provenance,
+      Items = field(d, "items"),
+      Source_details = if ("measurement_method" %in% names(d)) field(d, "measurement_method") else field(d, "roles"),
       Teams = as.character(d$Teams),
       N_sources = suppressWarnings(as.integer(d$n_sources)),
       Variable_raw = lab, Unit = d$Units, Unit_raw = d$Units,
@@ -281,6 +296,8 @@ load_compiled <- function() {
       Value = as.character(d$Value), Value_num = suppressWarnings(as.numeric(d$Value)),
       Source = paste0("EvoM1 cerebral metabolic rate merge (", d$n_studies,
                       " primary studies; ", d$Compilations, ")"),
+      Items = field(d, "Compilations_used"),
+      Source_details = field(d, "Primary_references"),
       Teams = as.character(d$Compilations),
       N_sources = suppressWarnings(as.integer(d$n_studies)),
       Variable_raw = lab, Unit = d$Units, Unit_raw = d$Units,
@@ -451,7 +468,7 @@ load_compiled <- function() {
       stringsAsFactors = FALSE)
   }
 
-  base <- rbind(
+  base <- bind_compiled(
     std(GH$volumes,    file.path(data_dir, "volumes_long.csv"),
         "Brain-structure volumes", "Teams", "n_teams"),
     std(GH$cellcounts, file.path(data_dir, "cell_counts_isotropic_fractionator_long.csv"),
@@ -459,7 +476,7 @@ load_compiled <- function() {
     std(GH$traits,     file.path(data_dir, "evom1_traits_long.csv"),
         "EvoM1 traits", "Source")
   )
-  merges <- rbind(
+  merges <- bind_compiled(
     std_merge(GH$taste, file.path(data_dir, "taste_long.csv"), "Taste performance"),
     std_merge(GH$social_mirror_play, file.path(data_dir, "social_mirror_play_long.csv"), "Social composition, mirror tests & play"),
     std_merge(GH$claustrum_cerebellar, file.path(data_dir, "claustrum_cerebellar_long.csv"), "Claustrum & cerebellar anatomy"),
@@ -499,7 +516,7 @@ load_compiled <- function() {
     # quantities, label_policy = shared in supplementary_sources.csv); the app
     # pools them like any second source. Everything else is a new label.
     std_merge(GH$supplementary, file.path(data_dir, "supplementary_long.csv"),
-              "Supplementary sources")
+              "Additional published datasets")
   )
 
   # unify species labels everywhere so synonyms line up
@@ -539,7 +556,8 @@ load_compiled <- function() {
     base <- base[keep, ]
   }
 
-  out <- rbind(base, merges)
+  out <- bind_compiled(base, merges)
+  for (cl in c("Items", "Source_details")) out[[cl]][is.na(out[[cl]])] <- ""
   # Lewitus Table S2 defines nominal social-system codes, not quantitative scores.
   # Preserve source data; decode only this source variable at the app boundary.
   social_labels <- c(`1` = "Solitary", `2` = "Monogamous",
@@ -564,6 +582,25 @@ manifest <- manifest[order(manifest$identifier, manifest$table_label), ]
 manifest$picker <- paste0(manifest$citation_short,
                           ifelse(nzchar(manifest$table_label),
                                  paste0("  —  ", manifest$table_label), ""))
+
+# Exact item identities come from the source registry at build time. A
+# publication-only match is explicitly labelled, never presented as an exact item.
+source_items <- function(tokens, catalogue = manifest) {
+  tokens <- unique(trimws(unlist(strsplit(paste(tokens, collapse = ";"), "[;|]"))))
+  tokens <- tokens[!is.na(tokens) & nzchar(tokens)]
+  if (!"item_name" %in% names(catalogue)) return(catalogue[FALSE, ])
+  exact <- catalogue[catalogue$item_name %in% tokens, , drop = FALSE]
+  exact$Match <- rep("Exact source item", nrow(exact))
+  compact <- function(x) tolower(gsub("[^[:alnum:]]", "", x))
+  contributor <- compact(catalogue$first_author)
+  author_year <- paste0(contributor, catalogue$year)
+  candidates <- catalogue$publication %in% tokens | catalogue$team %in% tokens |
+    contributor %in% compact(tokens) | author_year %in% compact(tokens)
+  pubs <- catalogue[candidates & !catalogue$publication %in% exact$publication, , drop = FALSE]
+  pubs$Match <- rep("Publication / contributor only — inspect its items", nrow(pubs))
+  rbind(exact, pubs)
+}
+source_url <- function(file) paste0("https://github.com/AleAliSousa/Evo-M1-Trait-Data/blob/main/", SRC_DIR, pct(file))
 
 # Species taxonomy (Order/Family) for the plot clade filter/colour. Taxonomy is
 # not a measurement, so it lives here, not among the variables.
@@ -727,7 +764,7 @@ var_choices_meas <- grouped_choices(present[meas_ok])
 # data about the animal, and counting it would report a hole as filled.
 # A cell is "covered" if at least one source gives a non-empty value, so
 # coverage is a statement about availability, not about agreement between
-# sources -- the Compiled database tab is where disagreement is inspected.
+# sources -- the Plot & data table is where disagreement is inspected.
 meas_labels <- present[meas_ok]
 var_dom     <- setNames(var_domain, present)
 numeric_labels <- intersect(meas_labels, unique(compiled$Variable[is.finite(compiled$Value_num)]))
@@ -1077,6 +1114,7 @@ label_html <- function(labs) {
 #   sr_cands : candidate pairs of variables that look like the same trait from
 #              different sources, with species-by-species agreement statistics
 source("structure_reconcile.R", local = TRUE)
+source("structure_scatter.R", local = TRUE)
 sr_first <- compiled[!duplicated(compiled$Variable), c("Variable", "Dataset")]
 sr_meta  <- sr_label_meta(sr_first$Variable, sr_first$Dataset, vardef)
 sr_rows  <- sr_structure_rows(compiled, sr_meta)
@@ -1137,38 +1175,6 @@ tip_binom <- function(tips) {
     paste(z[1:2], collapse = " "), character(1))
 }
 tree_ready <- !is.null(tree)
-
-# Fit PGLS for the current plot data (w: Species + x/y numeric columns).
-pgls_fit <- function(w, xv, yv, logscale, model) {
-  if (!have_phylo_pkgs)
-    return(list(err = "Phylogenetic packages (ape, nlme) are not installed on the server."))
-  if (!tree_ready)
-    return(list(err = "No mammal tree found. Add _keys/mammal_tree.nwk (see PHYLO_SETUP.md)."))
-  bin <- tip_binom(tree$tip.label)
-  m <- match(tolower(w$Species), tolower(bin))
-  w$tip <- tree$tip.label[m]
-  w <- w[!is.na(w$tip) & !duplicated(w$tip), , drop = FALSE]
-  X <- w[[xv]]; Y <- w[[yv]]
-  if (isTRUE(logscale)) { X <- suppressWarnings(log10(X)); Y <- suppressWarnings(log10(Y)) }
-  d <- data.frame(x = X, y = Y, tip = w$tip, stringsAsFactors = FALSE)
-  d <- d[is.finite(d$x) & is.finite(d$y), , drop = FALSE]
-  if (nrow(d) < 4)
-    return(list(err = paste0("Only ", nrow(d), " species match the tree; need ≥ 4 for PGLS.")))
-  phy <- ape::keep.tip(tree, d$tip)
-  d <- d[match(phy$tip.label, d$tip), , drop = FALSE]   # align row order to tips
-  rownames(d) <- d$tip
-  cs <- if (model == "Brownian") ape::corBrownian(1, phy, form = ~tip)
-        else ape::corPagel(1, phy, form = ~tip, fixed = FALSE)
-  fit <- tryCatch(nlme::gls(y ~ x, data = d, correlation = cs, method = "ML"),
-                  error = function(e) NULL)
-  if (is.null(fit)) return(list(err = "PGLS did not converge for these variables."))
-  tt <- summary(fit)$tTable
-  lam <- if (model == "Brownian") 1 else
-    tryCatch(as.numeric(coef(fit$modelStruct$corStruct, unconstrained = FALSE))[1],
-             error = function(e) NA_real_)
-  list(intercept = tt[1, 1], slope = tt[2, 1], p = tt[2, 4],
-       lambda = lam, n = nrow(d), model = model, logscale = logscale)
-}
 
 # Basis warning for two plotted / modelled variables. Scoped by COMPARABILITY
 # FAMILY, not just by group: two variables warn when they are candidate estimates
@@ -1313,7 +1319,7 @@ reg_fit <- function(w, y, x, covs, logscale, method) {
     return(list(err = "The predictors are exactly collinear in this sample. Remove a redundant size control or covariate."))
   # Pagel's lambda is estimated by maximising the profile likelihood over [0, 1]
   # with lambda FIXED in each gls() call. Letting gls() estimate lambda itself
-  # (fixed = FALSE, as pgls_fit() does) fails with "false convergence" or
+  # (fixed = FALSE) fails with "false convergence" or
   # "infinite values" on many multi-predictor sets, whatever the starting value;
   # a fixed-lambda fit is plain GLS and always converges. The returned fit
   # carries the chosen lambda as attr "lambda".
@@ -1442,7 +1448,7 @@ ui <- page_navbar(
         downloadButton("e_download", "Download values + sources", class = "btn-primary btn-sm"),
         downloadButton("e_coverage_download", "Download trait coverage", class = "btn-outline-secondary btn-sm"),
         hr(),
-        actionButton("e_to_regression", "Use these species in Regression", class = "btn-outline-primary btn-sm")
+        actionButton("e_to_regression", "Use these species in Plot & data", class = "btn-outline-primary btn-sm")
       ),
       uiOutput("e_summary"),
       navset_card_tab(
@@ -1455,7 +1461,7 @@ ui <- page_navbar(
                   p(class = "text-muted small", "One column per species. A dash means no compiled value; zero is a recorded value. ",
                     "Multiple values are separated by |. Select up to 60 species for this view."),
                   DTOutput("e_matrix")),
-        nav_panel("Values & sources", DTOutput("e_values")),
+        nav_panel("Values & sources", p(class = "text-muted small", "Select a row to open its source items and original references."), DTOutput("e_values")),
         nav_panel("Selected species", DTOutput("e_species_table"))
       )
     )
@@ -1472,14 +1478,15 @@ ui <- page_navbar(
                  "Species are listed only where at least two structures share a measurement."),
         selectizeInput("bs_species", "Species", choices = NULL,
                        options = list(placeholder = "Type a scientific name")),
+        conditionalPanel("input.bs_tabs != 'scatter'",
         selectInput("bs_key", "Measurement", choices = NULL),
         selectInput("bs_ref", "Express as % of", choices = c("Absolute values" = "")),
         checkboxInput("bs_log", "Log\u2081\u2080 axis", value = TRUE),
         sliderInput("bs_top", "Structures shown in the chart", min = 5, max = 150,
-                    value = 40, step = 5),
+                    value = 40, step = 5)),
         selectizeInput("bs_compare", "Add species for comparison (optional, up to 3)",
                        choices = NULL, multiple = TRUE,
-                       options = list(maxItems = 3, placeholder = "same measurement and structures")),
+                       options = list(maxItems = 3, placeholder = "overlay or show in separate panels")),
         hr(),
         helpText(class = "text-muted small",
                  "Units are put on one scale (volumes in mm\u00b3, masses in g) before ",
@@ -1487,14 +1494,34 @@ ui <- page_navbar(
                  "structure are shown side by side, never averaged. Structures can be nested ",
                  "(Neocortex contains its grey matter and its areas), so percentages are not ",
                  "additive and are never summed."),
-        downloadButton("bs_download", "Download structure table (CSV)", class = "btn-primary btn-sm")
+        conditionalPanel("input.bs_tabs != 'scatter'",
+          downloadButton("bs_download", "Download structure table (CSV)", class = "btn-primary btn-sm"))
       ),
-      uiOutput("bs_summary"),
+      conditionalPanel("input.bs_tabs != 'scatter'", uiOutput("bs_summary")),
       navset_card_tab(
-        nav_panel("Chart", plotOutput("bs_plot", height = "680px")),
+        id = "bs_tabs",
+        nav_panel("Chart", value = "chart", plotOutput("bs_plot", height = "680px")),
+        nav_panel("Scatterplot / regression", value = "scatter",
+          p(class = "text-muted small", "Each point is a brain structure with both measurements. Pick one series per structure when sources overlap. Compare species on shared axes or in separate panels; lines are fitted separately within each species."),
+          layout_columns(col_widths = c(6, 6),
+            selectInput("bs_xkey", "X measurement", choices = NULL),
+            selectInput("bs_ykey", "Y measurement", choices = NULL)),
+          layout_columns(col_widths = c(6, 6),
+            selectizeInput("bs_xseries", "X series (blank = all)", choices = NULL, multiple = TRUE),
+            selectizeInput("bs_yseries", "Y series (blank = all)", choices = NULL, multiple = TRUE)),
+          layout_columns(col_widths = c(4, 4, 4),
+            checkboxInput("bs_scatter_log", "Log₁₀ both axes", value = TRUE),
+            checkboxInput("bs_scatter_label", "Label structures", value = TRUE),
+            checkboxInput("bs_scatter_facet", "Separate species panels (free scales)", value = FALSE)),
+          uiOutput("bs_scatter_note"),
+          plotOutput("bs_scatter", height = "560px"),
+          DTOutput("bs_scatter_stats"),
+          downloadButton("bs_scatter_download", "Download paired structures + sources"),
+          p(class = "text-muted small", "Select a paired row to inspect both measurements and their sources."),
+          DTOutput("bs_scatter_data")),
         nav_panel("Table",
                   p(class = "text-muted small",
-                    "One row per variable and source dataset. ", strong("Value"),
+                    "Select a row to inspect its sources. One row per variable and compiled dataset. ", strong("Value"),
                     " is the mean of that variable's records for the species; ",
                     strong("Min"), "/", strong("Max"), " show their range. ",
                     strong("Structure from"), " says whether the structure was read from ",
@@ -1509,190 +1536,42 @@ ui <- page_navbar(
     )
   ),
 
-  # ---------------------------------------------------------------- Compiled --
-  nav_panel(
-    title = "Compiled database",
-    layout_sidebar(
-      sidebar = sidebar(
-        width = 340,
-        helpText("Harmonized cross-species measurements. Narrow by what the ",
-                 "measurement IS (domain, then measure class), then download or ",
-                 "plot the current selection. Hover any variable name for its ",
-                 "definition and the expansion of any abbreviation it contains."),
-        selectizeInput("c_domain", "Domain (blank = all)",
-                       choices = domain_levels, multiple = TRUE,
-                       options = list(placeholder = "e.g. cellular composition")),
-        selectizeInput("c_class", "Measure class (blank = all in domain)",
-                       choices = NULL, multiple = TRUE,
-                       options = list(placeholder = "narrows within the domain")),
-        # The full list runs to thousands of species, which is unusable when the
-        # question is about one project's animals. Restricting to a cohort
-        # filters the table AND narrows the species picker below to that cohort.
-        selectInput("c_cohort", "Restrict to cohort",
-                    choices = c("All species in the compilation" = "",
-                                cohort_choices)),
-        selectizeInput("c_species", "Species (blank = all in cohort)",
-                       choices = NULL, multiple = TRUE,
-                       options = list(placeholder = "Type to search species...",
-                                      maxOptions = 2000)),
-        selectizeInput("c_variable", "Variable (blank = all)",
-                       choices = NULL, multiple = TRUE,
-                       options = list(placeholder = "Type to search variables...",
-                                      maxOptions = 2000)),
-        checkboxInput("c_measonly", "Measurements only (hide QC / provenance flags)",
-                      value = TRUE),
-        hr(),
-        helpText(class = "text-muted small",
-                 "Provenance filters \u2014 which compiled table a value came from."),
-        selectInput("c_dataset", "Source dataset",
-                    choices = sort(unique(compiled$Dataset)),
-                    selected = sort(unique(compiled$Dataset)),
-                    multiple = TRUE),
-        textInput("c_source", "Source contains", placeholder = "e.g. Stephan"),
-        downloadButton("c_download", "Download current table (CSV)",
-                       class = "btn-primary btn-sm")
-      ),
-      navset_card_tab(
-        nav_panel(
-          "Table",
-          uiOutput("c_count"),
-          DTOutput("c_table")
-        ),
-        nav_panel(
-          "Plot (X vs Y)",
-          layout_columns(
-            col_widths = c(6, 6),
-            selectizeInput("p_x", "X variable", choices = NULL),
-            selectizeInput("p_y", "Y variable", choices = NULL)
-          ),
-          layout_columns(
-            col_widths = c(4, 4, 4),
-            selectInput("p_clade", "Clade (taxonomic order)",
-                        choices = clade_choices, selected = "All"),
-            checkboxInput("p_colour", "Colour by order", value = TRUE),
-            checkboxInput("p_log", "Log₁₀ both axes", value = TRUE)
-          ),
-          layout_columns(
-            col_widths = c(4, 4, 4),
-            checkboxInput("p_pgls",
-                          "Phylogenetic regression (PGLS)", value = FALSE),
-            selectInput("p_model", "Phylogenetic model",
-                        choices = c("Pagel's lambda" = "Pagel",
-                                    "Brownian motion" = "Brownian"),
-                        selected = "Pagel"),
-            checkboxInput("p_drop_discord",
-                          sprintf("Exclude species whose sources differ > %gx", DISCORD_RATIO),
-                          value = FALSE)
-          ),
-          uiOutput("p_axis_defs"),
-          uiOutput("p_pgls_note"),
-          helpText("Each point is a species with values for both variables ",
-                   "(median if several sources; a hollow point means the sources ",
-                   sprintf("for that species differ by more than %gx, so its value ", DISCORD_RATIO),
-                   "rests on disagreeing reports). Filter or colour by taxonomic ",
-                   "order; enable PGLS to fit a phylogenetically-corrected ",
-                   "regression (orange = OLS, black = PGLS). The OLS slope, SE, R² ",
-                   "and n are printed under the plot. To control for body ",
-                   "or brain size, or to add further variables, use the ",
-                   strong("Regression"), " tab."),
-          plotOutput("p_plot", height = "540px")
-        )
-      )
-    )
-  ),
-
-  # --------------------------------------------------------- Reconcile sources --
-  nav_panel(
-    title = "Reconcile sources", value = "reconcile",
-    layout_sidebar(
-      sidebar = sidebar(
-        width = 340,
-        helpText("Variables that look like the same trait reported by different sources: ",
-                 "the same structure, measurement, unit and life-stage/sex scope, or the same ",
-                 "name once the source tag is removed. Each pair is compared species by species."),
-        selectizeInput("rc_verdict", "Verdict", choices = SR_VERDICTS,
-                       selected = setdiff(SR_VERDICTS, "no shared species (complementary coverage)"),
-                       multiple = TRUE),
-        radioButtons("rc_kind", "Traits",
-                     choices = c("All" = "all", "Brain structures" = "S", "Other traits" = "N"),
-                     inline = TRUE),
-        textInput("rc_search", "Variable contains", placeholder = "e.g. Neocortex, Gestation"),
-        numericInput("rc_tol", "Flag a species when values differ by more than (%)",
-                     value = 10, min = 1, max = 100, step = 1),
-        hr(),
-        helpText(class = "text-muted small",
-                 strong("same values"), ": \u2265 90% of shared species within 1%. ",
-                 strong("agree within 10%"), ": median ratio within 10% and \u2265 75% of species within 10%. ",
-                 strong("median agrees, wide scatter"), ": centred on 1 but under 75% of species within 10%. ",
-                 strong("consistent offset"), ": a steady ratio away from 1 (unit, boundary or definition difference). ",
-                 strong("different measurement basis"), ": the variable key records different bases ",
-                 "(poolable_group). Nothing here pools or edits data; record a decision in ",
-                 tags$code("_keys/variable_canonical.csv"), " (supersede / keep_separate) and it ",
-                 "appears in the Decision column."),
-        downloadButton("rc_download_pairs", "Download candidate pairs (CSV)", class = "btn-primary btn-sm")
-      ),
-      uiOutput("rc_summary"),
-      navset_card_tab(
-        id = "rc_tabs",
-        nav_panel("Candidate pairs", value = "pairs",
-                  p(class = "text-muted small", "Select a row to open the pair and its group. ",
-                    "Ratios are B / A on species means in base units."),
-                  DTOutput("rc_pairs")),
-        nav_panel("Pair detail", value = "detail",
-                  uiOutput("rc_pair_head"),
-                  plotOutput("rc_pair_plot", height = "460px"),
-                  DTOutput("rc_pair_table"),
-                  downloadButton("rc_download_pair", "Download this comparison (CSV)",
-                                 class = "btn-outline-primary btn-sm")),
-        nav_panel("Reconciled view", value = "group",
-                  uiOutput("rc_group_head"),
-                  selectizeInput("rc_precedence", "Precedence: the first variable with a value wins",
-                                 choices = NULL, multiple = TRUE, width = "100%",
-                                 options = list(plugins = list("remove_button"))),
-                  DTOutput("rc_group_table"),
-                  downloadButton("rc_download_group", "Download reconciled view (CSV)",
-                                 class = "btn-outline-primary btn-sm"))
-      )
-    )
-  ),
-
   # --------------------------------------------------------------- Regression --
   nav_panel(
-    title = "Regression", value = "regression",
+    title = "Plot & data", value = "regression",
     layout_sidebar(
       sidebar = sidebar(
         width = 360,
-        title = "Model settings",
+        title = "Choose measurements",
         open = TRUE,
-        helpText("Does X predict Y once size is accounted for? Fits ",
-                 tags$code("Y ~ X + covariates"), " on species values (median across sources), by OLS or ",
-                 "phylogenetic GLS. Pick body size, brain size or both as the ",
-                 "control, and optionally add further covariates."),
+        helpText("Choose two measurements to make a scatterplot. Add controls or a phylogenetic model when needed. The Data & sources table shows the records behind your selection."),
         selectizeInput("r_y", "Response (Y)", choices = NULL),
         selectizeInput("r_x", "Predictor of interest (X)", choices = NULL),
+        checkboxInput("r_log", "Log₁₀ all variables", value = TRUE),
+        tags$details(tags$summary("Adjustments & phylogeny (optional)"),
         selectInput("r_control", "Control for",
                     choices = c("Nothing (simple regression)" = "none",
                                 "Body size" = "body",
                                 "Brain size" = "brain",
                                 "Body size and brain size" = "both"),
-                    selected = "body"),
+                    selected = "none"),
         conditionalPanel(
           "input.r_control == 'body' || input.r_control == 'both'",
           selectInput("r_body", "Body-size variable", choices = body_size_choices)),
         conditionalPanel(
           "input.r_control == 'brain' || input.r_control == 'both'",
-          selectInput("r_brain", "Brain-size variable (one basis; never pooled)",
+          selectInput("r_brain", "Brain-size variable",
                       choices = brain_size_choices)),
         selectizeInput("r_other", "Additional covariate(s) (optional)",
                        choices = NULL, multiple = TRUE,
                        options = list(maxItems = 2,
                                       placeholder = "any other measurement")),
-        checkboxInput("r_log", "Log₁₀ all variables", value = TRUE),
+        checkboxInput("r_drop_discord", "Exclude species whose sources differ > 2x", value = FALSE),
         radioButtons("r_method", "Method",
                      choices = c("Ordinary least squares" = "OLS",
                                  "PGLS — Pagel's λ" = "Pagel",
                                  "PGLS — Brownian motion" = "Brownian"),
-                     selected = "OLS"),
+                     selected = "OLS")),
         hr(),
         selectInput("r_clade", "Clade (taxonomic order)",
                     choices = clade_choices, selected = "All"),
@@ -1705,9 +1584,46 @@ ui <- page_navbar(
                        class = "btn-primary btn-sm")
       ),
       uiOutput("r_warnings"),
+      uiOutput("r_axis_defs"),
       navset_card_tab(
+        id = "analysis_tabs",
+        nav_panel("Scatterplot", value = "scatter",
+          layout_columns(col_widths = c(4, 8),
+            checkboxInput("r_colour", "Colour by order", value = TRUE),
+            selectizeInput("r_label", "Label species", choices = NULL, multiple = TRUE)),
+          plotOutput("r_plot", height = "540px"),
+          helpText("With controls selected, this plots X and Y after removing their relationships with the controls. Orange = OLS; black = PGLS for a simple regression. With controls, the PGLS coefficient is reported in Statistics.")),
+        nav_panel("Data & sources", value = "data",
+          p(class = "text-muted small", "Select a row to trace its measurement to source items and the publication. Species filters at left apply to both plot and table. Table filters below apply only to this table."),
+          checkboxInput("c_model_vars", "Show only X, Y and selected controls", value = TRUE),
+          tags$details(tags$summary("Filter table / choose columns"),
+        selectizeInput("c_domain", "Domain (blank = all)",
+                       choices = domain_levels, multiple = TRUE,
+                       options = list(placeholder = "e.g. cellular composition")),
+        selectizeInput("c_class", "Measure class (blank = all in domain)",
+                       choices = NULL, multiple = TRUE,
+                       options = list(placeholder = "narrows within the domain")),
+        selectizeInput("c_variable", "Variable (blank = all)",
+                       choices = NULL, multiple = TRUE,
+                       options = list(placeholder = "Type to search variables...",
+                                      maxOptions = 2000)),
+        checkboxInput("c_measonly", "Measurements only (hide QC / provenance flags)",
+                      value = TRUE),
+        hr(),
+        helpText(class = "text-muted small",
+                 "Provenance filters \u2014 which compiled table a value came from."),
+        selectInput("c_dataset", "Compiled dataset",
+                    choices = sort(unique(compiled$Dataset)),
+                    selected = sort(unique(compiled$Dataset)),
+                    multiple = TRUE),
+        textInput("c_source", "Source or item contains", placeholder = "e.g. Stephan"),
+            selectizeInput("c_columns", "Visible columns", choices = c("Species", "Domain", "Class", "Variable", "Value", "Unit", "Source", "Items", "N_sources", "Dataset", "Definition"),
+              selected = c("Species", "Variable", "Value", "Unit", "Source", "Items", "Dataset"), multiple = TRUE),
+            helpText("Additional published datasets are source-specific measurements not covered by the main subject merges. They include primary studies and literature compilations; see each row's sources.")),
+          downloadButton("c_download", "Download table with definitions and sources"),
+          uiOutput("c_count"), DTOutput("c_table")),
         nav_panel(
-          "Model",
+          "Statistics",
           uiOutput("r_sample_summary"),
           uiOutput("r_summary"),
           DTOutput("r_coef"),
@@ -1716,20 +1632,6 @@ ui <- page_navbar(
           p(class = "text-muted small", "Both fits use the same species and transformation. ",
             "This separates the effect of adjustment from a change in sample."),
           DTOutput("r_adjustment")
-        ),
-        nav_panel(
-          "Partial plot",
-          layout_columns(
-            col_widths = c(4, 8),
-            checkboxInput("r_colour", "Colour by order", value = TRUE),
-            selectizeInput("r_label", "Label species", choices = NULL, multiple = TRUE,
-                           options = list(placeholder = "type to label points"))
-          ),
-          plotOutput("r_plot", height = "540px"),
-          helpText("Y and X each with the covariates regressed out by OLS. ",
-                   "The orange line fits these residuals. For PGLS this scatter is ",
-                   "descriptive only; the phylogenetic effect is reported in the Model tab. ",
-                   "With no covariates this is the plain scatter.")
         ),
         nav_panel("Data coverage",
                   p(class = "text-muted small", "Every species in the chosen scope, including exclusions. ",
@@ -1747,6 +1649,57 @@ ui <- page_navbar(
             "the transformed (log₁₀ if chosen) scale."),
           DTOutput("r_species")
         )
+      )
+    )
+  ),
+
+  # --------------------------------------------------------- Reconcile sources --
+  nav_panel(
+    title = "Compare sources", value = "reconcile",
+    layout_sidebar(
+      sidebar = sidebar(
+        width = 340,
+        helpText("Check whether two reports of a measurement agree. 1. Search for a trait. 2. Select a pair. 3. Inspect differences by species. This is optional; to find a measurement's origin, select its row in Plot & data or Species explorer."),
+        selectizeInput("rc_verdict", "Verdict", choices = SR_VERDICTS,
+                       selected = setdiff(SR_VERDICTS, "no shared species (complementary coverage)"),
+                       multiple = TRUE),
+        radioButtons("rc_kind", "Traits",
+                     choices = c("All" = "all", "Brain structures" = "S", "Other traits" = "N"),
+                     inline = TRUE),
+        textInput("rc_search", "Variable contains", placeholder = "e.g. Neocortex, Gestation"),
+        numericInput("rc_tol", "Flag a species when values differ by more than (%)",
+                     value = 10, min = 1, max = 100, step = 1),
+        hr(),
+        helpText(class = "text-muted small",
+                 strong("same values"), ": \u2265 90% of shared species within 1%. ",
+                 strong("agree within 10%"), ": median ratio within 10% and \u2265 75% of species within 10%. ",
+                 strong("median agrees, wide scatter"), ": centred on 1 but under 75% of species within 10%. ",
+                 strong("consistent offset"), ": a steady ratio away from 1 (unit, boundary or definition difference). ",
+                 strong("different measurement basis"), ": methods or definitions differ",
+                 ". Unit changes such as mL to mm³ are exact conversions (1 mL = 1,000 mm³). Differences in anatomy, method or volume versus mass remain separate. These comparisons do not change the database."),
+        downloadButton("rc_download_pairs", "Download candidate pairs (CSV)", class = "btn-primary btn-sm")
+      ),
+      uiOutput("rc_summary"),
+      navset_card_tab(
+        id = "rc_tabs",
+        nav_panel("Candidate pairs", value = "pairs",
+                  p(class = "text-muted small", "Select a row to open the pair and its group. ",
+                    "Ratios are B / A on species means in base units."),
+                  DTOutput("rc_pairs")),
+        nav_panel("Pair detail", value = "detail",
+                  uiOutput("rc_pair_head"),
+                  plotOutput("rc_pair_plot", height = "460px"),
+                  DTOutput("rc_pair_table"),
+                  downloadButton("rc_download_pair", "Download this comparison (CSV)",
+                                 class = "btn-outline-primary btn-sm")),
+        nav_panel("Preview preferred values", value = "group",
+                  uiOutput("rc_group_head"),
+                  selectizeInput("rc_precedence", "Preferred source order (preview only; first available value wins)",
+                                 choices = NULL, multiple = TRUE, width = "100%",
+                                 options = list(plugins = list("remove_button"))),
+                  DTOutput("rc_group_table"),
+                  downloadButton("rc_download_group", "Download reconciled view (CSV)",
+                                 class = "btn-outline-primary btn-sm"))
       )
     )
   ),
@@ -1901,7 +1854,7 @@ ui <- page_navbar(
       h3("Evo-M1 Comparative Brain-Trait Data"),
       p("An interface to search and download comparative brain-trait data ",
         "compiled for the Evo-M1 project."),
-      h5("Compiled database"),
+      h5("Plot & data"),
       p("Measurements from many primary sources, harmonized to common species ",
         "names and structure terms. ", strong(format(nrow(compiled), big.mark = ",")),
         " values across ", strong(length(sp_choices)), " species and ",
@@ -1913,8 +1866,8 @@ ui <- page_navbar(
         "and behavioural traits relating to body and ecology therefore sit with ",
         "their own kind (body size, life history, diet & ecology, metabolism, ",
         "behaviour & cognition) instead of being pooled into one trait bucket."),
-      h5("Regression"),
-      p("Multiple regression on species values (median across sources): a response, a predictor of ",
+      h5("Statistics"),
+      p("The Statistics view in Plot & data fits regression on species values (median across sources): a response, a predictor of ",
         "interest, and covariates — body size, whole-brain size (on one ",
         "measurement basis at a time), both, or any other measurement. Fitted by ",
         "OLS or phylogenetic GLS, with an added-variable plot, the gain in fit ",
@@ -1925,13 +1878,9 @@ ui <- page_navbar(
         "of measurement (volume, mass, neuron number, cerebral metabolic rate, ...) on one ",
         "unit scale, optionally as a percentage of a reference such as a weighed whole-brain ",
         "mass, and optionally beside up to three other species. Two variables for the same ",
-        "structure stay side by side; nothing is averaged across variables."),
-      h5("Reconcile sources"),
-      p("Pairs of variables that look like the same trait from different sources, compared ",
-        "species by species: agreement, consistent offsets, disagreements and differences in ",
-        "measurement basis. A reconciled view lists every source per species and applies a ",
-        "precedence order you choose (first available wins), naming where each value came ",
-        "from. Decisions are recorded in ", tags$code("_keys/variable_canonical.csv"), "."),
+        "structure stay side by side; nothing is averaged across variables. The scatterplot pairs two measurements of the same structures and can overlay species or give each species its own panel."),
+      h5("Compare sources"),
+      p("An optional comparison of reports of the same trait. Search for a measurement, select a pair, and inspect where species values agree or differ. Preferred values are a temporary preview and do not edit the database. Unit conversions such as mL to mm³ use exact factors; changes of method or anatomy remain visible."),
       h5("Cohort coverage"),
       p("Trait coverage for named species sets \u2014 the species a project ",
         "actually works on, rather than the whole compilation. For each ",
@@ -2033,7 +1982,7 @@ server <- function(input, output, session) {
   e_values <- reactive({
     d <- compiled[compiled$Species %in% e_selected() & compiled$Variable %in% e_traits()$Variable &
                     has_trait_value(compiled$Value),
-                  c("Species", "Variable", "Value", "Unit", "Source", "Teams", "Dataset")]
+                  c("Species", "Variable", "Value", "Unit", "Source", "Items", "Source_details", "Teams", "Dataset")]
     units <- look(lab_unit, d$Variable)
     d$Unit[!is.na(units) & nzchar(units)] <- units[!is.na(units) & nzchar(units)]
     d$Domain <- unname(var_dom[d$Variable])
@@ -2072,7 +2021,7 @@ server <- function(input, output, session) {
     datatable(d, rownames = FALSE, filter = "top", options = list(pageLength = 20, scrollX = TRUE))
   })
   output$e_values <- renderDT({
-    datatable(e_values(), rownames = FALSE, filter = "top", options = list(pageLength = 20, scrollX = TRUE))
+    datatable(e_values(), rownames = FALSE, filter = "top", selection = "single", options = list(pageLength = 20, scrollX = TRUE))
   })
   output$e_species_table <- renderDT({
     sp <- e_selected(); t <- e_traits()
@@ -2103,30 +2052,46 @@ server <- function(input, output, session) {
     nav_select("main_nav", "regression", session = session)
   })
 
+  show_measurement_sources <- function(d) {
+    if (!nrow(d)) return(invisible(NULL))
+    tokens <- c(d$Items, d$Teams, d$Source)
+    m <- source_items(tokens)
+    joined <- function(x) paste(unique(x[!is.na(x) & nzchar(x)]), collapse = " | ")
+    unit <- look(lab_unit, d$Variable)
+    unit[!nzchar(unit)] <- d$Unit[!nzchar(unit)]
+    source_link <- function(url, label) tags$a(href = url, target = "_blank", rel = "noopener", label)
+    showModal(modalDialog(
+      title = paste(d$Species[1], "—", d$Variable[1]), size = "l", easyClose = TRUE,
+      p(strong("Recorded value(s): "), joined(paste(d$Variable, "=", d$Value, unit))),
+      p(tip_for(d$Variable[1])),
+      p(strong("Source report: "), joined(d$Source)),
+      if (nz1(joined(d$Items))) p(strong("Source items: "), joined(d$Items)),
+      if (nz1(joined(d$Teams))) p(strong("Contributors: "), joined(d$Teams)),
+      if (nz1(joined(d$Source_details))) p(strong("Original references / processing: "), joined(d$Source_details)),
+      if (nrow(m)) tagList(h5("Trace to the source"), lapply(seq_len(nrow(m)), function(i) {
+        div(class = "border rounded p-2 mb-2",
+          strong(m$item_name[i]), " · ", m$Match[i],
+          p(class = "small", m$citation[i]),
+          if (nz1(m$source_title[i])) p(m$source_title[i]),
+          if (nz1(m$role[i])) p(strong("Item data role: "), m$role[i]),
+          if (nz1(m$upstream_source[i])) p(strong("Earlier sources reported by this compilation: "), m$upstream_source[i]),
+          source_link(source_url(m$file[i]), "Open extracted item"), " · ",
+          if (nz1(m$url[i])) source_link(m$url[i], "Open publication"))
+      })) else p("No exact registered item link is available for these source tokens. The original source text above is retained; use Source tables to search the citation."),
+      p(class = "text-muted small", "An extracted item can itself be a literature compilation. Its source/reference columns identify the earlier study. A publication-only match lists possible items; it does not establish which one supplied this value."),
+      footer = modalButton("Close")))
+  }
+  observeEvent(input$c_table_rows_selected, {
+    i <- input$c_table_rows_selected
+    if (length(i) == 1L) show_measurement_sources(c_display()[i, , drop = FALSE])
+  })
+  observeEvent(input$e_values_rows_selected, {
+    i <- input$e_values_rows_selected
+    if (length(i) == 1L) show_measurement_sources(e_values()[i, , drop = FALSE])
+  })
+
   # server-side choices (fast for large lists)
-  updateSelectizeInput(session, "c_species", choices = sp_choices, server = TRUE)
   updateSelectizeInput(session, "c_variable", choices = var_choices, server = TRUE)
-
-  # Cohort restriction: the names the compiled data are keyed on for the chosen
-  # cohort (empty = no restriction). Kept as one reactive so the table filter and
-  # the species picker can never disagree about what the cohort contains.
-  c_cohort_species <- reactive({
-    ch <- input$c_cohort
-    if (is.null(ch) || !nzchar(ch)) return(character(0))
-    sort(unique(unlist(cohort_species(ch)$labels, use.names = FALSE)))
-  })
-
-  observeEvent(c_cohort_species(), ignoreNULL = FALSE, {
-    keep <- c_cohort_species()
-    ch <- if (length(keep)) intersect(sp_choices, keep) else sp_choices
-    updateSelectizeInput(session, "c_species", choices = ch,
-                         selected = intersect(input$c_species, ch), server = TRUE)
-  })
-  # Plot axes offer measurements only — a QC flag on an axis is never wanted.
-  updateSelectizeInput(session, "p_x", choices = var_choices_meas, server = TRUE,
-                       selected = "Body_Mass (g)")
-  updateSelectizeInput(session, "p_y", choices = var_choices_meas, server = TRUE,
-                       selected = "Neocortex_Vol.mm3")
 
   # Measure-class choices cascade from the chosen domain(s).
   observeEvent(input$c_domain, ignoreNULL = FALSE, {
@@ -2153,7 +2118,11 @@ server <- function(input, output, session) {
 
   # ---- Compiled: filtered data
   c_filtered <- reactive({
-    d <- compiled
+    d <- compiled[compiled$Species %in% r_scope(), , drop = FALSE]
+    if (isTRUE(input$c_model_vars)) {
+      t <- r_terms()
+      d <- d[d$Variable %in% c(t$x, t$y, t$covs), , drop = FALSE]
+    }
     # concept filters first (domain -> measure class -> variable)
     if (length(input$c_domain))
       d <- d[look(lab_domain, d$Variable) %in% input$c_domain, ]
@@ -2162,14 +2131,10 @@ server <- function(input, output, session) {
     if (isTRUE(input$c_measonly))
       d <- d[!(toupper(look(lab_ismeas, d$Variable)) == "FALSE"), ]
     if (length(input$c_variable)) d <- d[d$Variable %in% input$c_variable, ]
-    # cohort restriction applies whether or not individual species are picked
-    coh_sp <- c_cohort_species()
-    if (length(coh_sp)) d <- d[d$Species %in% coh_sp, ]
-    if (length(input$c_species))  d <- d[d$Species  %in% input$c_species, ]
     # provenance filters
     if (length(input$c_dataset)) d <- d[d$Dataset %in% input$c_dataset, ]
-    if (nzchar(input$c_source))
-      d <- d[grepl(input$c_source, d$Source, ignore.case = TRUE), ]
+    if (nz1(input$c_source))
+      d <- d[grepl(tolower(input$c_source), tolower(paste(d$Source, d$Teams, d$Items)), fixed = TRUE), ]
     d
   })
 
@@ -2208,21 +2173,26 @@ server <- function(input, output, session) {
       Value    = d$Value,
       Unit     = look(lab_unit, d$Variable),
       Source   = d$Source,
+      Items    = d$Items,
+      Teams    = d$Teams,
+      Source_details = d$Source_details,
       N_sources = d$N_sources,
       Dataset  = d$Dataset,
       stringsAsFactors = FALSE)
     out$Domain[!nzchar(out$Domain)] <- "Unclassified"
+    out$Definition <- look(lab_def, d$Variable)
     out
   })
 
   output$c_table <- renderDT({
     d <- c_display()
-    show <- d
-    show$Variable <- label_html(d$Variable)   # hover = definition + abbreviations
-    datatable(show,
-              rownames = FALSE, filter = "top", escape = FALSE,
-              options = list(pageLength = 25, scrollX = TRUE,
-                             order = list(list(0, "asc"))))
+    cols <- intersect(input$c_columns, names(d))
+    if (!length(cols)) cols <- c("Species", "Variable", "Value", "Source")
+    show <- d[, cols, drop = FALSE]
+    if ("Variable" %in% cols) show$Variable <- label_html(show$Variable)
+    datatable(show, rownames = FALSE, filter = "top", selection = "single",
+              escape = which(names(show) != "Variable"),
+              options = list(pageLength = 25, scrollX = TRUE, order = list()))
   })
 
   # The download carries the definition text too, so the CSV stands alone.
@@ -2234,149 +2204,6 @@ server <- function(input, output, session) {
       write.csv(d, file, row.names = FALSE)
     }
   )
-
-  # ---- Compiled: plot
-  p_data <- reactive({
-    req(input$p_x, input$p_y)
-    if (input$p_x == input$p_y) return(NULL)
-    vars <- c(input$p_x, input$p_y)
-    d  <- compiled[compiled$Variable %in% vars & is.finite(compiled$Value_num),
-                   c("Species", "Variable", "Value_num")]
-    if (nrow(d) == 0) return(NULL)
-    # one value per species x variable (median across sources) + source spread
-    w <- collapse_species(d, vars)
-    w <- w[is.finite(w[[vars[1]]]) & is.finite(w[[vars[2]]]), , drop = FALSE]
-    w$Discordant <- nzchar(w$Discordant_sources)
-    if (isTRUE(input$p_drop_discord)) w <- w[!w$Discordant, , drop = FALSE]
-    # attach taxonomic order; filter to the chosen clade
-    w$Order <- unname(tax_order[w$Species]); w$Order[is.na(w$Order)] <- "Unknown"
-    if (!is.null(input$p_clade) && input$p_clade != "All")
-      w <- w[w$Order == input$p_clade, ]
-    w
-  })
-
-  # OLS summary for the plotted (log or linear) space: slope +- SE, R2, n. The
-  # orange geom_smooth line is this fit; the numbers belong beside it.
-  p_ols <- reactive({
-    w <- p_data(); if (is.null(w) || nrow(w) < 3) return(NULL)
-    x <- w[[input$p_x]]; y <- w[[input$p_y]]
-    if (isTRUE(input$p_log)) { ok <- x > 0 & y > 0; x <- log10(x[ok]); y <- log10(y[ok]) }
-    if (length(x) < 3 || length(unique(x)) < 2) return(NULL)
-    f <- stats::lm(y ~ x); s <- summary(f)
-    list(slope = coef(f)[2], se = s$coefficients[2, 2], r2 = s$r.squared, n = length(x),
-         intercept = coef(f)[1])
-  })
-
-  # phylogenetic regression result for the current plot (NULL unless enabled)
-  p_pgls <- reactive({
-    if (!isTRUE(input$p_pgls)) return(NULL)
-    w <- p_data(); if (is.null(w) || !nrow(w)) return(NULL)
-    pgls_fit(w, input$p_x, input$p_y, input$p_log, input$p_model)
-  })
-
-  # What the two plotted variables actually mean — shown inline, because on a
-  # scatter plot the axis names are the only labels a reader gets.
-  output$p_axis_defs <- renderUI({
-    req(input$p_x, input$p_y)
-    row1 <- function(tag, lab) {
-      d <- look(lab_def, lab); u <- look(lab_unit, lab)
-      dm <- look(lab_domain, lab)
-      if (!nzchar(d)) return(NULL)
-      tags$div(
-        tags$strong(paste0(tag, ": ")), tags$code(lab),
-        if (nzchar(dm)) tags$span(class = "text-muted small", paste0("  [", dm, "]")),
-        tags$br(),
-        tags$span(class = "small", d),
-        if (nzchar(u)) tags$span(class = "text-muted small", paste0("  (unit: ", u, ")")))
-    }
-    a <- row1("X", input$p_x); b <- row1("Y", input$p_y)
-    # Basis warning: the two axes are whole-brain size on DIFFERENT bases, so the
-    # relationship between them is partly an artefact of what each one includes.
-    # See basis_conflict() for why it is scoped by comparability family.
-    bc <- basis_conflict(input$p_x, input$p_y)
-    warn <- NULL
-    if (!is.null(bc)) {
-      warn <- div(class = "alert alert-warning py-1 px-2 small mb-2",
-                  tags$strong("Incompatible measurement bases. "),
-                  sprintf("X is %s; Y is %s. These are not the same quantity, so they are ",
-                          bc[1], bc[2]),
-                  "kept as separate variables and are not pooled anywhere in the app. ",
-                  "See the Glossary tab and _keys/brain_size_basis.csv.")
-    }
-    if (is.null(a) && is.null(b)) return(warn)
-    tagList(warn,
-      div(class = "alert alert-light border py-2 px-2 mb-2", a,
-          if (!is.null(a) && !is.null(b)) tags$hr(class = "my-1"), b))
-  })
-
-  output$p_pgls_note <- renderUI({
-    if (!isTRUE(input$p_pgls)) return(NULL)
-    res <- p_pgls()
-    if (is.null(res)) return(NULL)
-    if (!is.null(res$err))
-      return(div(class = "alert alert-warning py-1 px-2 small mb-1", res$err))
-    div(class = "alert alert-light border py-1 px-2 small mb-1",
-        sprintf("PGLS (%s): slope = %.3g, p = %.3g%s, n = %d species%s",
-                if (res$model == "Brownian") "Brownian" else "Pagel's λ",
-                res$slope, res$p,
-                if (res$model == "Brownian") "" else sprintf(", λ = %.2f", res$lambda),
-                res$n, if (res$logscale) " (log₁₀–log₁₀)" else ""))
-  })
-
-  output$p_plot <- renderPlot({
-    w <- p_data()
-    validate(need(!is.null(w) && nrow(w) > 0,
-                  "No species have values for both selected variables."))
-    x <- input$p_x; y <- input$p_y
-    colour_by <- isTRUE(input$p_colour) && length(unique(w$Order)) > 1
-    n_disc <- sum(w$Discordant)
-    # Discordant species (sources differ > DISCORD_RATIO) are drawn hollow so a
-    # reader can see which points rest on disagreeing sources.
-    w$Sources <- factor(ifelse(w$Discordant, "disagree", "agree"), levels = c("agree", "disagree"))
-    g <- ggplot(w, aes(x = .data[[x]], y = .data[[y]]))
-    if (colour_by) {
-      g <- g + geom_point(aes(colour = Order, shape = Sources), alpha = 0.8, size = 2.4,
-                          stroke = 0.9) +
-        labs(colour = "Order")
-    } else {
-      g <- g + geom_point(aes(shape = Sources), alpha = 0.75, size = 2.4, stroke = 0.9,
-                          colour = "#2c7fb8")
-    }
-    g <- g + scale_shape_manual(
-      values = c(agree = 16, disagree = 1), drop = FALSE,
-      labels = c(agree = "sources agree",
-                 disagree = sprintf("sources differ > %gx (hollow)", DISCORD_RATIO)),
-      name = "Species value = median of") +
-      guides(shape = if (n_disc) "legend" else "none")
-    ols <- p_ols()
-    cap <- if (is.null(ols)) NULL else
-      sprintf("OLS%s: slope = %.3f \u00b1 %.3f (SE), R\u00b2 = %.3f, n = %d",
-              if (isTRUE(input$p_log)) " (log\u2081\u2080\u2013log\u2081\u2080)" else "",
-              ols$slope, ols$se, ols$r2, ols$n)
-    g <- g + labs(x = x, y = y,
-                  subtitle = paste0(nrow(w), " species with both measurements",
-                                    if (n_disc) sprintf("; %d with sources differing > %gx (hollow)",
-                                                        n_disc, DISCORD_RATIO) else ""),
-                  caption = cap) +
-      theme_minimal(base_size = 14) +
-      theme(plot.caption = element_text(hjust = 0, size = 12, colour = "#d95f0e"))
-    if (isTRUE(input$p_log)) {
-      # 10^k tick labels instead of 1e+02
-      g <- g + scale_x_log10(labels = scales::label_log()) +
-        scale_y_log10(labels = scales::label_log()) +
-        geom_smooth(method = "lm", se = FALSE, linewidth = 0.6,
-                    colour = "#d95f0e")
-    } else {
-      g <- g + geom_smooth(method = "lm", se = FALSE, linewidth = 0.6,
-                           colour = "#d95f0e")
-    }
-    # PGLS line (black) on top, drawn in the same (log or linear) space
-    res <- p_pgls()
-    if (!is.null(res) && is.null(res$err))
-      g <- g + geom_abline(intercept = res$intercept, slope = res$slope,
-                           colour = "black", linewidth = 0.8)
-    g
-  })
 
   # ---- Regression: Y ~ X + covariates
   updateSelectizeInput(session, "r_y", choices = var_choices_numeric, server = TRUE,
@@ -2393,10 +2220,16 @@ server <- function(input, output, session) {
     covs <- c(if (ctl %in% c("body", "both")) input$r_body,
               if (ctl %in% c("brain", "both")) input$r_brain,
               input$r_other)
-    covs <- unique(covs[!is.na(covs) & nzchar(covs)])
+    covs <- as.character(unique(covs[!is.na(covs) & nzchar(covs)]))
     list(y = input$r_y, x = input$r_x,
          covs = setdiff(covs, c(input$r_y, input$r_x)),
          dup  = intersect(covs, c(input$r_y, input$r_x)))
+  })
+
+  output$r_axis_defs <- renderUI({
+    t <- r_terms()
+    tags$details(tags$summary("Measurement definitions & units"),
+      lapply(unique(c(t$x, t$y, t$covs)), function(v) p(strong(v), tags$br(), tip_for(v))))
   })
 
   r_scope <- reactive({
@@ -2413,14 +2246,19 @@ server <- function(input, output, session) {
   })
   r_audit <- reactive({
     t <- r_terms()
-    regression_audit(r_candidates(), unique(c(t$y, t$x, t$covs)), isTRUE(input$r_log), input$r_method, tree)
+    w <- r_candidates()
+    a <- regression_audit(w, unique(c(t$y, t$x, t$covs)), isTRUE(input$r_log), input$r_method, tree)
+    if (isTRUE(input$r_drop_discord)) a$Status[a$Status == "Included" & nzchar(w$Discordant_sources)] <- "Sources differ > 2x"
+    a
   })
   r_data <- reactive({
     t <- r_terms()
     validate(need(t$y != t$x, "Choose different variables for Y and X."))
     w <- r_candidates()
     vars <- unique(c(t$y, t$x, t$covs))
-    w[Reduce(`&`, lapply(w[vars], is.finite)), , drop = FALSE]
+    keep <- Reduce(`&`, lapply(w[vars], is.finite))
+    if (isTRUE(input$r_drop_discord)) keep <- keep & !nzchar(w$Discordant_sources)
+    w[keep, , drop = FALSE]
   })
 
   r_fit <- reactive({
@@ -2572,16 +2410,42 @@ server <- function(input, output, session) {
   })
 
   output$r_plot <- renderPlot({
-    f <- r_ok(); a <- f$av
+    f <- r_fit()
+    # A scatterplot is useful even with too few species to estimate a model.
+    if (!is.null(f$err)) {
+      t <- r_terms()
+      validate(need(!length(t$covs), f$err))
+      w <- r_data()
+      if (isTRUE(input$r_log)) w <- w[w[[t$x]] > 0 & w[[t$y]] > 0, , drop = FALSE]
+      validate(need(nrow(w), "No species have values for both axes on this scale."))
+      w$X <- if (isTRUE(input$r_log)) log10(w[[t$x]]) else w[[t$x]]
+      w$Y <- if (isTRUE(input$r_log)) log10(w[[t$y]]) else w[[t$y]]
+      w$Source_agreement <- ifelse(nzchar(w$Discordant_sources), "Sources differ > 2x", "No > 2x spread")
+      g <- ggplot(w, aes(X, Y, shape = Source_agreement))
+      if (isTRUE(input$r_colour)) g <- g + geom_point(aes(colour = Order), size = 2.8)
+      else g <- g + geom_point(colour = "#2c7fb8", size = 2.8)
+      labelled <- w[w$Species %in% input$r_label, , drop = FALSE]
+      if (nrow(labelled)) g <- g + geom_text(data = labelled, aes(label = Species), vjust = -0.8, size = 3)
+      lg <- function(v) if (isTRUE(input$r_log)) paste("log10", v) else v
+      return(g + scale_shape_manual(values = c("No > 2x spread" = 16, "Sources differ > 2x" = 1)) +
+        labs(x = lg(t$x), y = lg(t$y), title = "Available species", subtitle = f$err,
+             shape = "Source agreement") + theme_minimal(base_size = 13))
+    }
+    a <- f$av
+    a$Source_agreement <- ifelse(nzchar(f$species$Discordant_sources[match(a$Species, f$species$Species)]), "Sources differ > 2x", "No > 2x spread")
     lg <- function(v) if (f$logscale) paste0("log10 ", v) else v
     has_c <- length(f$covs) > 0
     xl <- if (has_c) paste0(lg(f$vars[2]), "  |  covariates (residual)") else lg(f$vars[2])
     yl <- if (has_c) paste0(lg(f$vars[1]), "  |  covariates (residual)") else lg(f$vars[1])
     colour_by <- isTRUE(input$r_colour) && length(unique(a$Order)) > 1
     g <- ggplot(a, aes(x = rx, y = ry))
-    g <- if (colour_by) g + geom_point(aes(colour = Order), alpha = 0.8, size = 2.4)
-         else g + geom_point(alpha = 0.75, size = 2.4, colour = "#2c7fb8")
+    g <- if (colour_by) g + geom_point(aes(colour = Order, shape = Source_agreement), alpha = 0.8, size = 2.4)
+         else g + geom_point(aes(shape = Source_agreement), alpha = 0.75, size = 2.4, colour = "#2c7fb8")
+    g <- g + scale_shape_manual(values = c("No > 2x spread" = 16, "Sources differ > 2x" = 1), name = "Source agreement")
     if (colour_by) g <- g + labs(colour = "Order")
+    if (f$method != "OLS" && !has_c) {
+      g <- g + geom_abline(intercept = f$coef$Estimate[1], slope = f$slope, colour = "black", linewidth = 0.8)
+    }
     display_fit <- stats::lm(ry ~ rx, data = a)
     g <- g + geom_abline(intercept = stats::coef(display_fit)[1], slope = stats::coef(display_fit)[2],
                          colour = "#d95f0e",
@@ -2668,6 +2532,7 @@ server <- function(input, output, session) {
                           m$identifier, "</a>"),
                    m$identifier)
     tab <- data.frame(
+      Item = m$item_name,
       Citation = m$citation,
       Table    = m$table_label,
       Rows     = m$n_rows,
@@ -2942,6 +2807,96 @@ server <- function(input, output, session) {
     updateSelectInput(session, "bs_ref", choices = c("Absolute values" = "", refs), selected = keep)
   })
 
+  # ---- Structure scatter: exact anatomical matches, one pair per structure.
+  observeEvent(input$bs_species, {
+    keys <- sr_keys_for(sr_rows, input$bs_species)
+    choose <- function(pattern, fallback) {
+      hit <- grep(pattern, names(keys), ignore.case = TRUE)
+      if (length(hit)) unname(keys[hit[1]]) else unname(keys[min(fallback, length(keys))])
+    }
+    updateSelectInput(session, "bs_xkey", choices = keys, selected = choose("metabolic.*CMRgl", 1))
+    updateSelectInput(session, "bs_ykey", choices = keys, selected = choose("astrocyte|neuron number", 2))
+  })
+  observe({
+    sp <- unique(c(input$bs_species, input$bs_compare))
+    for (axis in c("x", "y")) {
+      key <- input[[paste0("bs_", axis, "key")]]
+      if (!nz1(key)) next
+      p <- sr_profile(sr_rows, sp, key)
+      choices <- if (nrow(p)) sort(unique(paste(p$Variable, p$Dataset, sep = " @ "))) else character()
+      id <- paste0("bs_", axis, "series")
+      updateSelectizeInput(session, id, choices = choices,
+        selected = intersect(isolate(input[[id]]), choices), server = TRUE)
+    }
+  })
+  bs_pairs <- reactive({
+    req(nz1(input$bs_species), nz1(input$bs_xkey), nz1(input$bs_ykey))
+    validate(need(input$bs_xkey != input$bs_ykey, "Choose two different measurements."))
+    structure_pairs(sr_rows, unique(c(input$bs_species, input$bs_compare)),
+                    input$bs_xkey, input$bs_ykey, input$bs_xseries, input$bs_yseries)
+  })
+  bs_scatter_data <- reactive({
+    structure_plot_data(bs_pairs()$data, isTRUE(input$bs_scatter_log))
+  })
+  bs_scatter_stats <- reactive(structure_fit_stats(bs_scatter_data()))
+  output$bs_scatter_note <- renderUI({
+    pairs <- bs_pairs(); d <- bs_scatter_data()
+    absent <- setdiff(unique(c(input$bs_species, input$bs_compare)), d$Species)
+    tagList(
+      p(class = "text-muted small", sprintf("%d paired structures; %d ambiguous species/structure matches excluded; %d unmatched species/structures. %d pairs excluded by the axis scale.",
+        nrow(d), pairs$ambiguous, pairs$unmatched, nrow(pairs$data) - nrow(d)),
+        " Ambiguous matches have multiple series on an axis; narrow the X / Y series selectors to resolve them."),
+      if (length(absent)) p("No plotted pairs for: ", paste(absent, collapse = ", ")),
+      p(class = "text-muted small", "Structures may overlap or be nested. These OLS fits describe regional associations; they do not establish independent regional samples or a causal relationship. Astrocyte counts and total non-neuronal counts remain different measurements."))
+  })
+  output$bs_scatter <- renderPlot({
+    d <- bs_scatter_data(); stats <- bs_scatter_stats()
+    validate(need(nrow(d), "No unambiguous structures have both measurements. Try another measurement or narrow the series selectors."))
+    label <- function(axis) {
+      key <- input[[paste0("bs_", axis, "key")]]
+      nm <- sr_meta$cmp_name[match(key, sr_meta$cmp_key)]
+      if (isTRUE(input$bs_scatter_log)) paste("log10", nm) else nm
+    }
+    g <- ggplot(d, aes(X, Y, colour = Species)) + geom_point(size = 3) +
+      labs(x = label("x"), y = label("y"), colour = "Species") + theme_minimal(base_size = 13) +
+      theme(legend.position = "bottom")
+    fitted <- stats[stats$Status == "OLS within species", , drop = FALSE]
+    if (nrow(fitted)) g <- g + geom_abline(data = fitted, aes(intercept = Intercept, slope = Slope, colour = Species), linewidth = 0.7)
+    if (isTRUE(input$bs_scatter_label)) g <- g + geom_text(aes(label = Structure), vjust = -0.7, size = 3, check_overlap = TRUE)
+    if (isTRUE(input$bs_scatter_facet)) g <- g + facet_wrap(~Species, scales = "free")
+    g
+  })
+  output$bs_scatter_stats <- renderDT({
+    d <- bs_scatter_stats()
+    validate(need(nrow(d), "No paired structures to fit."))
+    datatable(d, rownames = FALSE, options = list(dom = "t", scrollX = TRUE)) |>
+      formatSignif(c("Slope", "Intercept", "SE", "p", "R_squared"), digits = 4)
+  })
+  output$bs_scatter_data <- renderDT({
+    d <- bs_scatter_data()
+    validate(need(nrow(d), "No paired data."))
+    datatable(d, rownames = FALSE, filter = "top", selection = "single", options = list(pageLength = 10, scrollX = TRUE))
+  })
+  observeEvent(input$bs_scatter_data_rows_selected, {
+    i <- input$bs_scatter_data_rows_selected
+    if (length(i) != 1L) return()
+    pair <- bs_scatter_data()[i, , drop = FALSE]
+    d <- compiled[compiled$Species == pair$Species &
+      ((compiled$Variable == pair$Variable_X & compiled$Dataset == pair$Dataset_X) |
+       (compiled$Variable == pair$Variable_Y & compiled$Dataset == pair$Dataset_Y)), , drop = FALSE]
+    show_measurement_sources(d)
+  })
+  output$bs_scatter_download <- downloadHandler(
+    filename = function() paste0("evom1_structure_pairs_", Sys.Date(), ".csv"),
+    content = function(file) write.csv(bs_scatter_data(), file, row.names = FALSE))
+  observeEvent(input$bs_table_rows_selected, {
+    i <- input$bs_table_rows_selected
+    if (length(i) != 1L) return()
+    p <- bs_prof()[i, , drop = FALSE]
+    d <- compiled[compiled$Species == p$Species & compiled$Variable == p$Variable & compiled$Dataset == p$Dataset, , drop = FALSE]
+    show_measurement_sources(d)
+  })
+
   bs_prof <- reactive({
     req(nz1(input$bs_species), nz1(input$bs_key))
     sp <- unique(c(input$bs_species, input$bs_compare))
@@ -2971,7 +2926,7 @@ server <- function(input, output, session) {
           if (nz1(input$bs_ref)) tagList(" Shown as % of ", code(input$bs_ref), ".")),
       if (n_multi) div(class = "alert alert-warning",
                        strong(n_multi), " structure(s) are reported by more than one variable or dataset. ",
-                       "They are shown side by side, not averaged; the ", strong("Reconcile sources"),
+                       "They are shown side by side, not averaged; the ", strong("Compare sources"),
                        " tab compares them species by species."),
       if (nz1(input$bs_ref) && any(!is.finite(p$Reference_value)))
         div(class = "alert alert-warning", "The reference has no value for: ",
@@ -3038,7 +2993,7 @@ server <- function(input, output, session) {
     show$Variable <- label_html(p$Variable)
     num_cols <- intersect(c("Value", "Min", "Max", "Reference_value"), names(show))
     for (cl in num_cols) show[[cl]] <- signif(show[[cl]], 5)
-    datatable(show, rownames = FALSE, filter = "top",
+    datatable(show, rownames = FALSE, filter = "top", selection = "single",
               escape = which(names(show) != "Variable"),
               options = list(pageLength = 25, scrollX = TRUE))
   })

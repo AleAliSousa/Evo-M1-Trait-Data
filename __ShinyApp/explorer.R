@@ -22,6 +22,10 @@ build_species_index <- function(species, taxonomy, canonical = identity) {
   inferred <- !known & !is.na(fallback)
   out$Order[known] <- hit[known]
   out$Order_basis[known] <- "Species taxonomy key"
+  if ("Order_basis" %in% names(tx)) {
+    basis <- tx$Order_basis[match(out$Species[known], tx$Species)]
+    out$Order_basis[known] <- ifelse(is.na(basis) | !nzchar(basis), "Species taxonomy key", basis)
+  }
   out$Order[inferred] <- fallback[inferred]
   out$Order_basis[inferred] <- "Inferred from genus (one recorded order)"
   out

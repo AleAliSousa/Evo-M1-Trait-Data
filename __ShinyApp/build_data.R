@@ -257,6 +257,16 @@ rows <- lapply(tsvs, function(fn) {
   }
 
   hit <- which(by_enc[[enc_col]] == base)
+  item_name <- if (length(hit)) trim(by_enc[["Item name"]][hit[1]]) else ""
+  item_field <- function(name) {
+    v <- if (length(hit) && name %in% names(by_enc)) trim(by_enc[[name]][hit[1]]) else ""
+    if (is.na(v)) "" else v
+  }
+  team <- item_field("Team")
+  role <- item_field("Data role (primary/secondary/both)")
+  upstream_source <- item_field("Source (if secondary)")
+  source_title <- item_field("Item full original title")
+  publication <- if (nzchar(item_name)) sub("_[^_]+$", "", item_name) else ""
   if (!length(hit)) hit <- which(enc_pref == ident_enc)
   cit <- auth <- yr <- ""
   if (length(hit)) {
@@ -284,7 +294,7 @@ rows <- lapply(tsvs, function(fn) {
   record_count <- tryCatch(nrow(read.delim(file.path(pub, fn), check.names = FALSE,
                        colClasses = "character", na.strings = NULL)),
                        error = function(e) max(0L, length(ln) - 1L))
-  data.frame(file = fn, identifier = ident, id_type = kind, table_label = label,
+  data.frame(file = fn, item_name = item_name, publication = publication, team = team, role = role, upstream_source = upstream_source, source_title = source_title, identifier = ident, id_type = kind, table_label = label,
              url = url, readme = rm,
              n_rows = record_count, n_cols = length(hdr),
              columns = paste(hdr, collapse = "; "),

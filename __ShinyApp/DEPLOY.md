@@ -8,6 +8,28 @@ data, and how to run it locally.
 
 ---
 
+## Exploring measurements
+
+- **Species explorer:** find traits, then select a row under **Values & sources** to see source items, publication links, and original references where retained.
+- **Plot & data:** replaces the separate Compiled database and Regression tabs. Start with X and Y; use **Adjustments & phylogeny** for controls and PGLS. The plot, model, inclusion audit, and table share species/order/cohort filters. Hollow points indicate source reports differing by more than 2x. Small samples still show a scatter even when no model can be fitted.
+- **Data & sources:** initially shows X, Y, and controls. Uncheck that option to browse every measurement. Expand **Filter table / choose columns** for domain, class, dataset, source/item search, and the useful original table columns. These table filters do not change the regression; the shared species filters do. Downloads include definitions, item tokens, contributors, and retained source details. Select a row to open its source panel.
+- **Brain structures → Scatterplot / regression:** choose two kinds of measurement. Points pair the same stated anatomical structure within each species. Ambiguous matches are excluded until the series selectors identify one value on each axis. Added species can overlay on common axes or use separate panels with free scales. OLS statistics are calculated per species on the plotted scale; empty/insufficient overlap is reported. Select a paired row to inspect its two measurements. Astrocyte-specific measures are offered only where the compilation actually has them; non-neuronal counts are not relabelled as astrocyte counts.
+- **Compare sources:** optional agreement checks, formerly Reconcile sources. Select a candidate pair to inspect species differences. **Preview preferred values** is a temporary first-available selection, not a database edit. Exact unit changes (1 mL = 1,000 mm³) are distinct from differences in anatomy or measurement method.
+
+“Additional published datasets” replaces the vague “Supplementary sources” label. It covers source-specific traits outside the main subject merges, including primary observations and literature compilations. It does not mean all records are secondary or redundant. Source panels display the registry's item role and earlier-source notes when available. Exact item matches and publication/contributor-only candidates are labelled separately; a candidate is not asserted to be the originating item. The source catalogue includes item names for searching.
+
+## Rebuilding taxonomy and checking changes
+
+The taxonomy builder reads the canonical `__merging_*/*_long.csv` outputs, the species reference, the dated offline NCBI snapshot, existing name keys, and genus/family lookups. It no longer depends on deleted copies under `__ShinyApp/data`. It preserves species labels while classifying recognized aliases. `_keys/genus_taxonomy_fallbacks.csv` supplies documented fossil-genus classifications when NCBI has no entry; `Order_basis` records the route in the app's **Selected species** table. Conflicting genus mappings are not propagated. Missing common-name and non-mammal classifications remain explicit.
+
+```bash
+python3 _keys/build_species_taxonomy.py
+Rscript __ShinyApp/build_data.R
+Rscript _checks/shiny_usability.R
+```
+
+The source manifest now carries exact registry item names, publication identifiers, team, data role, item title, and earlier-source notes. Rebuild and push this manifest together with app changes. The two generated files under `data/` remain the only bundled derived tables; taxonomy is read from `_keys/species_taxonomy.csv`.
+
 ## Updating the app after you change data
 
 Whenever you change any data in this repo (a spreadsheet, a merge, a source

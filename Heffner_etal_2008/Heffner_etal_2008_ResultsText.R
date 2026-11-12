@@ -9,7 +9,7 @@
 ## (sections 3.1 and 3.2, printed pp. 83-84), not in any table. The frozen
 ## source is therefore a CONSTRUCTED snapshot, one row per reported value
 ## with the verbatim sentence and printed page, built by
-## Heffner_etal_2008_ResultsText_extract_snapshot.R from the PDF text layer.
+## Heffner_etal_2008_ResultsText_snapshot.R from the PDF text layer.
 ## This script reads that frozen file and develops it; it never rebuilds it.
 
 ## 0. PATHS --------------------------------------------------------

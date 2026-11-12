@@ -1,0 +1,18 @@
+species_as_published	region	trait	value	unit	stat	n	data_role	note	source_location
+Macropus eugenii	central visual field	orientation pinwheel density	2.81	count per hypercolumn area	mean	2	primary	Individual values 2.97; 2.65	Article Results, p. 2
+Macropus eugenii	central visual field	orientation column spacing	1.42	mm	mean	2	primary	Individual values 1.55; 1.28 mm	Article Results, p. 2
+Macropus eugenii	peripheral visual field	orientation pinwheel density	2.53	count per hypercolumn area	mean	4	primary	Individual values 2.37; 1.95; 2.95; 2.86	Article Results, pp. 2-3
+Macropus eugenii	peripheral visual field	orientation column spacing	1.44	mm	mean	4	primary	Individual values 1.74; 1.14; 1.27; 1.61 mm	Article Results, pp. 2-3
+Macropus eugenii	central visual field	cardinal orientation map area	65	percent	mean	2	primary		Article Results, p. 3
+Macropus eugenii	peripheral visual field	cardinal orientation map area	76	percent	mean	4	primary		Article Results, p. 3
+Macropus eugenii	V1	orientation-selective neurons	70	percent	approximate	195	primary	195 well-isolated single units recorded; article states around 70% were orientation selective	Article Results, p. 3
+Macropus eugenii	V1	nonoriented single-filter neurons	24	percent	proportion	195	primary		Figure 2D and Results, p. 3
+Macropus eugenii	V1	oriented single-filter neurons	43	percent	proportion	195	primary		Figure 2D and Results, p. 3
+Macropus eugenii	V1	oriented multifilter neurons	33	percent	proportion	195	primary		Figure 2D and Results, p. 3
+Macropus eugenii	central visual field	receptive field longest axis	2.3	degrees	mean		primary	SD 0.96 degrees	Article Results, p. 3
+Macropus eugenii	peripheral visual field	receptive field longest axis	3.1	degrees	mean		primary	SD 0.97 degrees	Article Results, p. 3
+Macropus eugenii	V1 superficial layers	optical versus single-unit orientation preference r-squared	0.676	dimensionless	r_squared	49	primary	P = 0.001; median absolute difference 8 degrees	Article Results, p. 3
+Macropus eugenii	V1 vertical recording tracks	orientation preference SD across cells	23.84	degrees	mean	16	primary	Across-track SD 10.85 degrees	Article Results, p. 3
+Macropus eugenii	retina	central-to-peripheral retinal ganglion cell density ratio	20	ratio	reported		secondary	Value discussed as prior retinal information	Article Discussion, p. 5
+Macropus eugenii	V1	orientation pinwheel density	2.62	count per hypercolumn area	mean	6	primary	SD 0.40	Article Results, p. 6 / Figure 5B
+Macropus eugenii	V1	orientation column spacing	1.43	mm	mean	6	primary	SD 0.40 mm	Article Results, p. 6 / Figure 5A

@@ -17,7 +17,7 @@ PDF in this folder: `Passero-1981-Depression of cerebral glucose ut.pdf`, MOVED 
 
 ```
 Source (PDF)
-  -> Passero_etal_1981_extract_snapshot.R   writes the frozen snapshot(s)
+  -> Passero_etal_1981_TABLEII_snapshot.R   writes the frozen snapshot(s)
   -> Passero_etal_1981_TABLEII_snapshot.csv   FROZEN: 26 rows x 4 cols
   -> Passero_etal_1981_TABLEII.R   clean + parse + table checks
   -> Passero_etal_1981_TABLEII.csv   66 rows x 20 cols  ("use this")
@@ -27,7 +27,7 @@ Source (PDF)
 
 ## Who read the values, when, and how it was checked
 
-**Hand transcription** (HOWTO method 5) by an AI assistant (Claude) on 2026-11-02 from 300-dpi renders of PDF page 4 (900 dpi for the caudate-putamen row), typed as a verbatim printed-layout block into `Passero_etal_1981_extract_snapshot.R` (freezes, refuses to overwrite). The OCR layer, read afterwards, agreed on all 66 numbers; it garbles only the significance stars.
+**Hand transcription** (HOWTO method 5) by an AI assistant (Claude) on 2026-11-02 from 300-dpi renders of PDF page 4 (900 dpi for the caudate-putamen row), typed as a verbatim printed-layout block into `Passero_etal_1981_TABLEII_snapshot.R` (freezes, refuses to overwrite). The OCR layer, read afterwards, agreed on all 66 numbers; it garbles only the significance stars.
 
 The build script `Passero_etal_1981_TABLEII.R` reads the frozen file and contains no table values. It was run with
 `Rscript` (conda env `r`, R with readxl) from a clean session on 2026-11-02.

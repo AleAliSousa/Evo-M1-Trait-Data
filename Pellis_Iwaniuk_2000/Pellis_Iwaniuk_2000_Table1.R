@@ -11,7 +11,7 @@
 ## Table 4 republishes the same scores for 64 primate species (see the README's value match).
 ##
 ## Frozen source: Pellis_Iwaniuk_2000_Table1_snapshot.csv, written by
-## Pellis_Iwaniuk_2000_extract_snapshot.R from the PDF text layer (glyph map and the
+## Pellis_Iwaniuk_2000_Table1_snapshot.R from the PDF text layer (glyph map and the
 ## 200-dpi page-render check are documented there). No score is typed into either script.
 ##
 ## Scoring, as the paper defines it (pp. 1085-1086 and the Table 1 footnotes):

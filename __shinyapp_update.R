@@ -1,0 +1,192 @@
+# =============================================================================
+# update_shinyapp.R  —  one program to update the Evo-M1 Shiny app from your
+# own computer. Run it after you change any data (spreadsheets, merges, source
+# tables) and it will:
+#
+#   1. BUILD   rebuild the two derived files + the offline fallback copies
+#              (Rscript __ShinyApp/build_data.R)
+#   2. PUSH    commit + push to GitHub  <-- this is what updates the LIVE data,
+#              because the app reads its data straight from GitHub at runtime
+#   3. DEPLOY  re-upload the app itself to shinyapps.io (only needed when app.R
+#              or the fallback data changes; done by default to be safe)
+#
+# ---------------------------------------------------------------------------
+# HOW TO RUN IT
+# ---------------------------------------------------------------------------
+#   • Easiest — double-click the launcher for your computer:
+#         macOS    ->  __ShinyApp_Update.command
+#   • In a terminal, from anywhere:
+#         Rscript "/full/path/to/__shinyapp_update.R"
+#   • In R / RStudio:
+#         source("/full/path/to/__shinyapp_update.R")
+#
+# It finds the repo folder on its own, so you never need to setwd() or cd.
+#
+# ---------------------------------------------------------------------------
+# OPTIONS  (append to the Rscript / launcher command, in any order)
+# ---------------------------------------------------------------------------
+#   --no-deploy   just refresh the data on GitHub; skip the shinyapps.io upload
+#                 (use this for a plain data update — the live app picks it up)
+#   --no-push     rebuild + deploy but do NOT commit/push to GitHub
+#   --no-build    skip the data rebuild (deploy/push what is already on disk)
+#   --all         stage EVERY change in the repo for the commit (the old behaviour).
+#                 By default only the app and the data it reads are staged (step 2)
+#   --help        show this list and exit
+#
+# ---------------------------------------------------------------------------
+# ONE-TIME SETUP  (only ever needed once on a new computer)
+# ---------------------------------------------------------------------------
+#   1. Install R:  https://cran.r-project.org
+#   2. Get a shinyapps.io token: log in at https://www.shinyapps.io ->
+#      Account -> Tokens -> Show -> "Show secret" -> Copy to clipboard.
+#      Paste the copied line into R once, e.g.:
+#          rsconnect::setAccountInfo(name="...", token="...", secret="...")
+#      (This script installs rsconnect for you and reminds you if it's missing.)
+#   Any R packages that are missing are installed automatically the first time.
+# =============================================================================
+
+`%||%` <- function(a, b) if (is.null(a) || length(a) == 0 || is.na(a[1])) b else a
+
+# ---- pretty logging ---------------------------------------------------------
+.step <- function(...) message("\n==> ", ...)
+.ok   <- function(...) message("    ✓ ", ...)
+.warn <- function(...) message("    ! ", ...)
+.die  <- function(...) stop(paste0(...), call. = FALSE)
+
+# ---- parse command-line flags (work under Rscript and source()) -------------
+.argv <- commandArgs(trailingOnly = TRUE)
+if ("--help" %in% .argv || "-h" %in% .argv) {
+  cat(readLines(sub("^--file=", "",
+      grep("^--file=", commandArgs(FALSE), value = TRUE)[1] %||% ""))[seq_len(60)],
+      sep = "\n")
+  quit(save = "no", status = 0)
+}
+DO_BUILD  <- !("--no-build"  %in% .argv)
+DO_PUSH   <- !("--no-push"   %in% .argv)
+DO_DEPLOY <- !("--no-deploy" %in% .argv)
+STAGE_ALL <-  ("--all"       %in% .argv)
+
+# ---- locate the repo root (this script lives at the repo root) --------------
+find_repo <- function() {
+  a <- grep("^--file=", commandArgs(FALSE), value = TRUE)          # Rscript
+  if (length(a)) return(normalizePath(dirname(sub("^--file=", "", a[1]))))
+  if (requireNamespace("rstudioapi", quietly = TRUE) &&
+      rstudioapi::isAvailable()) {                                 # RStudio Source
+    p <- tryCatch(rstudioapi::getSourceEditorContext()$path, error = function(e) "")
+    if (nzchar(p)) return(normalizePath(dirname(p)))
+  }
+  # last resort: the current working directory, if it looks like the repo
+  if (dir.exists(file.path(getwd(), "__ShinyApp"))) return(normalizePath(getwd()))
+  .die("Could not locate the repo folder. Run this script from inside the ",
+       "Evo-M1-Trait-Data folder, or double-click Update_ShinyApp.command / .bat.")
+}
+REPO    <- find_repo()
+APP_DIR <- file.path(REPO, "__ShinyApp")
+if (!dir.exists(APP_DIR))
+  .die("No __ShinyApp folder found under: ", REPO,
+       "\n    This script must sit at the top of the Evo-M1-Trait-Data folder.")
+message("Repo folder: ", REPO)
+
+# ---- make sure required R packages are present (install missing ones) --------
+ensure_pkgs <- function(pkgs, why) {
+  missing <- pkgs[!vapply(pkgs, requireNamespace, logical(1), quietly = TRUE)]
+  if (!length(missing)) return(invisible())
+  .step("Installing missing R package(s) for ", why, ": ",
+        paste(missing, collapse = ", "))
+  repos <- getOption("repos")
+  if (is.null(repos) || is.na(repos["CRAN"]) || repos["CRAN"] == "@CRAN@")
+    repos <- c(CRAN = "https://cloud.r-project.org")
+  install.packages(missing, repos = repos)
+  still <- missing[!vapply(missing, requireNamespace, logical(1), quietly = TRUE)]
+  if (length(still))
+    .die("Could not install: ", paste(still, collapse = ", "),
+         "\n    Install it by hand in R:  install.packages(c(",
+         paste(sprintf('\"%s\"', still), collapse = ", "), "))")
+}
+
+# ---- 1. BUILD ---------------------------------------------------------------
+if (DO_BUILD) {
+  ensure_pkgs("readxl", "the data rebuild")
+  .step("1/3  Rebuilding derived data (build_data.R) …")
+  rc <- system2(file.path(R.home("bin"), "Rscript"),
+                shQuote(file.path(APP_DIR, "build_data.R")))
+  if (rc != 0)
+    .die("build_data.R failed (see the error above). Nothing was pushed or ",
+         "deployed. Fix the data problem and re-run.")
+  .ok("Derived data rebuilt.")
+} else .step("1/3  Skipping data rebuild (--no-build).")
+
+# ---- 2. PUSH to GitHub (this updates the LIVE app's data) --------------------
+git <- function(...) suppressWarnings(
+  system2("git", c("-C", shQuote(REPO), ...), stdout = TRUE, stderr = TRUE))
+
+if (DO_PUSH) {
+  if (Sys.which("git") == "")
+    .die("git is not installed. Install it from https://git-scm.com and re-run, ",
+         "or use --no-push to skip this step.")
+  .step("2/3  Committing + pushing to GitHub …")
+  if (STAGE_ALL) {
+    invisible(git("add", "-A"))
+  } else {
+    # Stage the app and what it reads from GitHub (DEPLOY.md, "Where the data
+    # comes from"), plus the two inputs build_data.R reads. Everything else in the
+    # repo (documents, paper folders, PDFs, drafts) stays unstaged, so a data
+    # refresh cannot publish unrelated work in progress. --all restores the old
+    # behaviour.
+    stage_paths <- c("__ShinyApp",
+                     grep("^__merging_", list.files(REPO), value = TRUE),
+                     "_keys", "__Public", "____EvoM1_TraitTable", "__ReadMe.xlsx")
+    stage_paths <- stage_paths[file.exists(file.path(REPO, stage_paths))]
+    invisible(git("add", "--", shQuote(stage_paths)))
+    left <- sum(substr(git("status", "--porcelain"), 2, 2) != " ")  # not in the index
+    if (left > 0)
+      .warn(left, " other changed file(s) were NOT staged (they are not data the app ",
+            "reads). Commit them yourself, or re-run with --all to include them.")
+  }
+  staged <- git("diff", "--cached", "--quiet")               # exit 1 if changes
+  if (!is.null(attr(staged, "status")) && attr(staged, "status") != 0) {
+    msg <- paste0("Refresh Shiny app data ", format(Sys.time(), "%Y-%m-%d %H:%M"))
+    invisible(git("commit", "-m", shQuote(msg)))
+    .ok("Committed: ", msg)
+  } else .ok("No data changes to commit — repo already current.")
+
+  # push current branch to its upstream, with a few retries for flaky networks
+  pushed <- FALSE
+  for (attempt in 1:4) {
+    out <- git("push")
+    if (is.null(attr(out, "status")) || attr(out, "status") == 0) { pushed <- TRUE; break }
+    .warn("push attempt ", attempt, " failed; retrying in ", 2^attempt, "s …")
+    Sys.sleep(2^attempt)
+  }
+  if (pushed) .ok("Pushed to GitHub — the live app now serves the new data.")
+  else .warn("Could not push to GitHub after 4 tries. Check your connection / ",
+             "credentials and run `git push` by hand. (Deploy will still proceed.)")
+} else .step("2/3  Skipping GitHub push (--no-push).")
+
+# ---- 3. DEPLOY the app to shinyapps.io --------------------------------------
+if (DO_DEPLOY) {
+  ensure_pkgs(c("rsconnect", "shiny", "bslib", "DT", "ggplot2"),
+              "the shinyapps.io deploy")
+  .step("3/3  Deploying to shinyapps.io …")
+  accts <- tryCatch(rsconnect::accounts(), error = function(e) NULL)
+  if (is.null(accts) || nrow(accts) == 0) {
+    .warn("No shinyapps.io account is configured on this computer yet.")
+    message(
+      "    The data was refreshed on GitHub, but the app was NOT re-deployed.\n",
+      "    To finish one-time setup, run this once in R (get the exact line from\n",
+      "    shinyapps.io -> Account -> Tokens -> Show -> \"Show secret\"):\n\n",
+      "        rsconnect::setAccountInfo(name=\"...\", token=\"...\", secret=\"...\")\n\n",
+      "    then re-run this updater.")
+  } else {
+    rsconnect::deployApp(
+      appDir      = APP_DIR,
+      appName     = "evo-m1-brain-traits",
+      appTitle    = "Evo-M1 Comparative Brain-Trait Data",
+      forceUpdate = TRUE
+    )
+    .ok("Deployed. The public URL is printed just above ",
+        "(…shinyapps.io/evo-m1-brain-traits/).")
+  }
+} else .step("3/3  Skipping shinyapps.io deploy (--no-deploy).")
+
+.step("All done ✅")

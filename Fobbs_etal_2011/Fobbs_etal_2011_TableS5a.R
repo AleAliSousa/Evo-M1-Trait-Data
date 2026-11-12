@@ -5,7 +5,7 @@
 # The source wording and historical nomenclature are preserved; taxonomy is not modernized.
 #
 # Source  : nyas_6036_sm_table5a.doc
-# Helper  : Fobbs_etal_2011_build_snapshot.py
+# Snapshot script: Fobbs_etal_2011_TableS5a_snapshot.py (not run by this script)
 # Snapshot: Fobbs_etal_2011_TableS5a_snapshot.xlsx, sheet "TableS5a"
 # Outputs : Fobbs_etal_2011_TableS5a.csv
 #           <Item encoded>.tsv under __Public/comparative-data/
@@ -28,17 +28,7 @@ folder <- dirname(.sp); setwd(folder)
 item_name <- tools::file_path_sans_ext(basename(.sp))
 source_doc <- "nyas_6036_sm_table5a.doc"
 snapshot_xlsx <- paste0(item_name, "_snapshot.xlsx")
-helper <- "Fobbs_etal_2011_build_snapshot.py"
 
-# Rebuild the frozen snapshot from the digital supplementary document only when
-# absent or explicitly requested. Default FALSE protects the audited snapshot.
-rebuild_snapshot <- FALSE
-if (rebuild_snapshot || !file.exists(snapshot_xlsx)) {
-  if (!file.exists(source_doc)) stop("Missing source document: ", source_doc, call.=FALSE)
-  if (!file.exists(helper)) stop("Missing snapshot helper: ", helper, call.=FALSE)
-  status <- system2("python3", c(shQuote(helper), shQuote(item_name)))
-  if (!identical(status, 0L) || !file.exists(snapshot_xlsx)) stop("Snapshot build failed.", call.=FALSE)
-}
 
 raw <- read_excel(snapshot_xlsx, sheet="TableS5a", skip=1, col_names=TRUE, col_types="text")
 if (ncol(raw) != 9L) stop("Expected 9 columns; found ", ncol(raw), ".", call.=FALSE)
@@ -62,6 +52,38 @@ for (i in which(is_cont)) {
   rows$continuation_note[j] <- paste(na.omit(c(rows$continuation_note[j], rows$species[i])), collapse="; ")
 }
 final.dataframe <- rows %>% filter(!is_group, !is_cont, !is.na(specimen_number))
+
+# In-cell qualifiers (D3: reproduce the committed CSV/TSV). Ten rows print an age/size qualifier inside
+# the species cell. The committed CSV/TSV (Phase-1 species-metadata fix, git 9e9b566 / 1d56a5e, 2026-09-27)
+# carries the bare binomial in `species` and the qualifier in `continuation_note`; until now that was a
+# hand patch the script did not reproduce. The explicit table below is the only place this is done, keyed on
+# the exact printed string (no pattern matching), and each key must match the expected number of rows.
+#   * qualifier : the printed age/size, moved to continuation_note as "(...)" ("-9 cm." -> "(9 cm.)").
+#   * typo fix  : `Chelhydra` -> `Chelydra` ONLY for the 7 snapping-turtle rows that carry a qualifier.
+#                 The genus typo is in the SOURCE; the 4 snapping-turtle rows without a qualifier
+#                 (source_row 86, 88, 89, 96) still print `Chelhydra serpentina` as in the source.
+#                 needs_owner: fix those 4 too, or keep the source spelling everywhere?
+#   * "A. mississippiensis-25cm" -> "Alligator mississippiensis": the abbreviation is expanded to the full
+#                 binomial used by the 12 neighbouring rows of the same common name (American Alligator).
+# Every other cell stays as printed.
+species_fix <- tibble::tribble(
+  ~printed,                         ~species_fixed,               ~qualifier,  ~n_expected,
+  "Chelhydra serpentina (6 day)",   "Chelydra serpentina",        "(6 day)",   3L,
+  "Chelhydra serpentina (1 day)",   "Chelydra serpentina",        "(1 day)",   1L,
+  "Chelhydra serpentina (3 day)",   "Chelydra serpentina",        "(3 day)",   3L,
+  "Sternotherus odoratus-9 cm.",    "Sternotherus odoratus",      "(9 cm.)",   1L,
+  "A. mississippiensis-25cm",       "Alligator mississippiensis", "(25cm)",    1L,
+  "Columba livia 1 day",            "Columba livia",              "(1 day)",   1L
+)
+for (k in seq_len(nrow(species_fix))) {
+  hit <- which(final.dataframe$species == species_fix$printed[k])
+  if (length(hit) != species_fix$n_expected[k])
+    stop("species_fix: expected ", species_fix$n_expected[k], " row(s) printing '", species_fix$printed[k],
+         "', found ", length(hit), ".", call.=FALSE)
+  final.dataframe$continuation_note[hit] <- vapply(final.dataframe$continuation_note[hit], function(x)
+    paste(na.omit(c(x, species_fix$qualifier[k])), collapse="; "), character(1))
+  final.dataframe$species[hit] <- species_fix$species_fixed[k]
+}
 
 if (!nrow(final.dataframe)) stop("No catalog records remained after cleaning.", call.=FALSE)
 final.dataframe <- final.dataframe %>% mutate(source_row = row_number(), .before=1)

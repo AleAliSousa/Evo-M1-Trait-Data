@@ -20,7 +20,7 @@
 ## split migration_category_ref_keys on "; " before joining.
 ##
 ## Snapshot frozen from the PDF text layer by
-## <Item>_extract_snapshot.R (no value typed), verified row by row against a page render
+## <Item>_snapshot.R (no value typed), verified row by row against a page render
 ## of ESM 1 pp. 1-2 by an AI assistant on 2026-10-31.
 
 ## 0. PATHS --------------------------------------------------------

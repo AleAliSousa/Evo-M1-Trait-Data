@@ -10,7 +10,7 @@
 # back-transformed) printed on the first row of each species -- 626 species.
 #
 # Frozen source: Savage_etal_2004_Appendix1_snapshot.csv, written from the PDF text layer by
-# Savage_etal_2004_Appendix1_extract_snapshot.R (values exactly as printed: "·" decimal, spaced
+# Savage_etal_2004_Appendix1_snapshot.R (values exactly as printed: "·" decimal, spaced
 # thousands). This script reads it; it never contains table values.
 # The bibliography (printed pp. 265-267) is read from the same journal PDF for the references table.
 

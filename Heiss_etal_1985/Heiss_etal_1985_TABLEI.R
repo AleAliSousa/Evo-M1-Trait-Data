@@ -5,7 +5,7 @@
 # during sleep and wakefulness (µmol/100 g/min)", p. 363.
 #
 # Reads the frozen snapshot (Heiss_etal_1985_TABLEI_snapshot.csv, written by
-# Heiss_etal_1985_extract_snapshot.R) and does all the cleaning:
+# Heiss_etal_1985_TABLEI_snapshot.R) and does all the cleaning:
 #   - one analysis row per printed cell (24 regions x 4 printed columns), in
 #     printed order, reading along each row;
 #   - splits each cell into its printed mean and S.D. lexemes and parses them;

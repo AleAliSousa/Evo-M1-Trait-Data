@@ -15,7 +15,7 @@ PDF in this folder: `Holliday_etal_1967.pdf` (copied from `References.Data/PDF/0
 
 ```
 Source (PDF)
-  -> Holliday_etal_1967_extract_snapshot.R   writes the frozen snapshot(s)
+  -> Holliday_etal_1967_TableII_snapshot.R   writes the frozen snapshot
   -> Holliday_etal_1967_TableII_snapshot.csv   FROZEN: 11 rows x 9 cols
   -> Holliday_etal_1967_TableII.R   clean + convert units + table checks
   -> Holliday_etal_1967_TableII.csv   14 rows x 23 cols  ("use this")
@@ -25,7 +25,7 @@ Source (PDF)
 
 ## Who read the values, when, and how it was checked
 
-**Hand transcription** (method 5) by an AI assistant (Claude) on 2026-11-03 from 170/350-dpi renders of PDF page 5 (journal p. 189), typed as a verbatim printed-layout block into `Holliday_etal_1967_extract_snapshot.R`, which freezes it and refuses to overwrite a differing frozen copy. The PDF is a scanned reprint with **no text layer** (0 characters on all 11 pages), so there is no machine second reading; instead every cell was re-read against the page image and against the earlier working transcription (`holliday_1967_table3_transcribed.csv`, `classic_human_brain_partition.csv`): no cell differs. The build script reads the frozen file, contains no table values, and was run with `Rscript` (conda env `r`) on 2026-11-03.
+**Hand transcription** (method 5) by an AI assistant (Claude) on 2026-11-03 from 170/350-dpi renders of PDF page 5 (journal p. 189), typed as a verbatim printed-layout block into `Holliday_etal_1967_TableII_snapshot.R`, which freezes it and refuses to overwrite a differing frozen copy. The PDF is a scanned reprint with **no text layer** (0 characters on all 11 pages), so there is no machine second reading; instead every cell was re-read against the page image and against the earlier working transcription (`holliday_1967_table3_transcribed.csv`, `classic_human_brain_partition.csv`): no cell differs. The build script reads the frozen file, contains no table values, and was run with `Rscript` (conda env `r`) on 2026-11-03.
 
 ### Snapshot and analysis CSV
 

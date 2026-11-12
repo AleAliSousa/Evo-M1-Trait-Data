@@ -2,7 +2,7 @@
 # (19 species / 7 orders, 617 traced neurons)
 #
 # PRINTED SOURCE -> the frozen copy is Jacobs_etal_2018_Table5_snapshot.xlsx (sheet "Table5"),
-# captured by Jacobs_etal_2018_extract_snapshot.py. This script reads ONLY that snapshot.
+# captured by Jacobs_etal_2018_Table5_snapshot.R. This script reads ONLY that snapshot.
 #
 # Output shape: ONE ROW PER SPECIES x NEURON TYPE (53 rows). The three types - Superficial
 # (layer III pyramidal), Deep (layer V pyramidal) and Gigantopyramidal (Betz in primates) - are

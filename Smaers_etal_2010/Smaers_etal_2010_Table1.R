@@ -6,8 +6,9 @@
 ## Reads the published PDF directly (no hand transcription and no Acrobat export).
 ## Table values are volumes in mm3: e.g. chimpanzee Brain = 444981 mm3 = 444.981 cm3.
 ##
+## Reads the frozen snapshot (written by Smaers_etal_2010_Table1_snapshot.R); never writes it.
+##
 ## Outputs beside this script:
-##   Smaers_etal_2010_Table1_snapshot.csv  raw values as printed in Table 1
 ##   Smaers_etal_2010_Table1.csv           analysis-ready data
 ## and, when run inside the full Evo-M1-Trait-Data repo, the DOI-coded TSV in
 ##   __Public/comparative-data/
@@ -34,103 +35,14 @@ base      <- local({
 setwd(folder)
 options(scipen = 999)
 
-suppressPackageStartupMessages({
-  library(pdftools)
-  library(readxl)
-})
+library(readxl)
 
-## ---- locate source PDF -------------------------------------------------------
-pdfs <- list.files(folder, pattern = "\\.pdf$", full.names = TRUE, ignore.case = TRUE)
-if (length(pdfs) != 1L) {
-  stop("Expected exactly one PDF in ", folder, "; found ", length(pdfs), ".", call. = FALSE)
-}
-pdf_file <- pdfs[1]
-
-## ---- extract Table 1 directly from PDF --------------------------------------
-## pdf_text() preserves the fixed-width table layout. Find the page by caption
-## rather than assuming that Table 1 will always be PDF page 3.
-pages <- pdftools::pdf_text(pdf_file)
-table_page <- which(grepl(
-  "Table 1\\. Volumetric measurements of neopallium and frontal lobe white and grey matter",
-  pages,
-  fixed = FALSE
-))
-
-if (length(table_page) != 1L) {
-  stop("Could not uniquely locate Table 1 in the PDF.", call. = FALSE)
-}
-
-lines <- strsplit(pages[table_page], "\\n", fixed = FALSE)[[1]]
-
-first_row <- which(grepl("^\\s*Pan troglodytes\\s+280\\s+321677", lines))[1]
-last_row  <- which(grepl("^\\s*Cebus albifrons\\s+1200\\s+52450", lines))[1]
-
-if (is.na(first_row) || is.na(last_row) || last_row < first_row) {
-  stop("Could not identify the Table 1 data rows in the PDF text.", call. = FALSE)
-}
-
-rows <- lines[first_row:last_row]
-rows <- rows[nzchar(trimws(rows))]
-
-## ---- absolute column origin --------------------------------------------------
-## Table 1 is printed rotated, so the rotated page furniture -- the page number
-## and the "PLoS ONE | www.plosone.org" running head -- is typeset in the left
-## margin of the table's own text block. Depending on the poppler build behind
-## pdftools it either occupies a line of its own or is merged onto the
-## Cercopithecus ascanius line.
-##
-## Do NOT re-origin rows with sub("^\\s+", "", ...). That assumes every row is
-## indented identically. The merged line is not, so stripping shifts its
-## fixed-width fields ~45 characters and silently corrupts the row while still
-## leaving 18 rows for the count check to pass. Slice against the absolute column
-## where the Species labels start instead: anything sitting in the left margin
-## then falls outside every field window and is ignored.
-origin <- as.integer(regexpr("Pan troglodytes", lines[first_row], fixed = TRUE))
-if (is.na(origin) || origin < 1L) {
-  stop("Could not locate the Species column origin in the PDF text.", call. = FALSE)
-}
-
-## Fixed-width starts, measured from the Species column origin rather than from
-## character 1 of the line. These preserve blank cells in the Semendeferi and
-## Stephan columns, unlike a simple whitespace split, which would shift columns
-## whenever a value is absent.
-field <- function(x, first, last = 10000L) {
-  trimws(substr(x, origin - 1L + first, origin - 1L + last))
-}
-num <- function(x) {
-  x[x == ""] <- NA_character_
-  suppressWarnings(as.numeric(x))
-}
-
-## Keep only lines carrying a label in the Species window. This drops a page
-## number or running head that poppler left alone in the left margin.
-rows <- rows[nzchar(field(rows, 1, 23))]
-
-if (length(rows) != 18L) {
-  stop("Expected 18 species rows in Table 1; extracted ", length(rows), ".", call. = FALSE)
-}
-
-snapshot <- data.frame(
-  Species                         = field(rows,   1,  23),
-  `Specimen #`                    = field(rows,  24,  42),
-  N                               = num(field(rows,  43,  63)),
-  Nw                              = num(field(rows,  64,  75)),
-  Ng                              = num(field(rows,  76,  89)),
-  FR                              = num(field(rows,  90, 103)),
-  FRw                             = num(field(rows, 104, 115)),
-  FRg                             = num(field(rows, 116, 126)),
-  `Fr/Neo (%) Current study`      = num(field(rows, 127, 150)),
-  `Fr/Neo (%) Semendeferi 1997`   = field(rows, 151, 171),
-  `Fr/Neo (%) Semendeferi 2002`   = field(rows, 172, 192),
-  `Stephan unpublished N`         = num(field(rows, 193, 213)),
-  Brain                           = num(field(rows, 214, 227)),
-  BG                              = num(field(rows, 228, 10000)),
-  check.names = FALSE,
-  stringsAsFactors = FALSE
-)
-
-snapshot[["Fr/Neo (%) Semendeferi 1997"]][snapshot[["Fr/Neo (%) Semendeferi 1997"]] == ""] <- NA_character_
-snapshot[["Fr/Neo (%) Semendeferi 2002"]][snapshot[["Fr/Neo (%) Semendeferi 2002"]] == ""] <- NA_character_
+## ---- read snapshot (written by Smaers_etal_2010_Table1_snapshot.R) -----------------
+snapshot <- read.csv(file.path(folder, paste0(item_name, "_snapshot.csv")),
+                     colClasses = c(Species = "character", `Specimen #` = "character",
+                                    `Fr/Neo (%) Semendeferi 1997` = "character",
+                                    `Fr/Neo (%) Semendeferi 2002` = "character"),
+                     na.strings = "", check.names = FALSE, stringsAsFactors = FALSE)
 
 ## ---- validate, then write ---------------------------------------------------
 ## Expand only the abbreviations used in the printed Species column. Keep the
@@ -166,21 +78,6 @@ if (anyNA(species)) {
        paste(unique(snapshot$Species[is.na(species)]), collapse = ", "),
        call. = FALSE)
 }
-
-## Stephan unpublished N and BG are legitimately blank for some species, so they
-## are deliberately not required here.
-required   <- c("N", "Nw", "Ng", "FR", "FRw", "FRg", "Brain")
-incomplete <- vapply(snapshot[required], anyNA, logical(1))
-if (any(incomplete)) {
-  stop("Table 1 prints a value for every species in ",
-       paste(required[incomplete], collapse = ", "),
-       "; the parse lost some. Check the fixed-width offsets.", call. = FALSE)
-}
-
-write.csv(snapshot,
-          file = file.path(folder, paste0(item_name, "_snapshot.csv")),
-          row.names = FALSE,
-          na = "")
 
 ## ---- clean ------------------------------------------------------------------
 clean <- data.frame(
@@ -224,7 +121,7 @@ write.csv(final.dataframe,
           file = file.path(folder, paste0(item_name, ".csv")),
           row.names = FALSE,
           na = "")
-message("Wrote ", item_name, "_snapshot.csv and ", item_name, ".csv (", nrow(final.dataframe), " rows).")
+message("Wrote ", item_name, ".csv (", nrow(final.dataframe), " rows).")
 
 if (is.na(base)) {
   warning("Repo root not found; TSV skipped.")

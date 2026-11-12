@@ -26,7 +26,6 @@ Consequences of the rule, and why it is worth keeping:
 | `find_csv_tsv_creators.R` | which script creates each CSV/TSV, and which data files have no creator |
 | `find_orphan_R_scripts.R` | scripts with no data input or output |
 | `check_cell_count_methods.R` | the counting-method tables in `_keys/cell_count_methods/`: ids resolve, values are in the vocabulary, accepted rows cite accepted reviews, exclusions carry a reason and evidence |
-| `parity_R_vs_py.R` | **temporary.** Diffs `check_laterality_doubling.R` against its retired `.py` twin. Delete both once they agree. Skipped by the sweep because it shells out to `Rscript` and `python3`. |
 
 Committed outputs worth knowing about:
 
@@ -37,9 +36,28 @@ Committed outputs worth knowing about:
 - `script_execution_log.csv`, `script_failures_only.csv` — written by
   `run_all_scripts_v2.R` at the repo root, not by anything in here.
 - `R_vs_python_builders.{md,csv}` — the record of the 2026-08-07 decision to
-  retire the Python builders, kept because it states the rule that a `.py` goes
-  only once its R twin is proven equal. The script that generated it is in
-  `_archive/`.
+  retire the Python builders (a `.py` goes only once its R twin is proven
+  equal) — now in [`../_archive/script_repairs/`](../_archive/script_repairs/README.md).
+
+## What belongs here — and what does not
+
+`_checks/` holds **only checks that will run again, and the latest output of
+each run** (overwritten every time). Two other kinds of file land here by
+default and should not stay:
+
+- **One-off investigations** (a search for papers, an intake batch, an
+  inventory, a dated audit). While the work is live, its report can sit here.
+  When it is finished or superseded, move its scripts and reports together into
+  [`../_archive/YYYY-MM_<topic>/`](../_archive/README.md) with a short README.
+  The sweep skips `_archive/`, so archived scripts stop being re-run.
+- **Files about one paper or merge** go to that folder (e.g. Püschel worklists
+  in `Püschel_etal_2026/`, the body-ecology name-repair table in
+  `__merging_body_ecology/`).
+
+Tool state that a `_tools/` script reads or appends to stays where the tool
+expects it, even though it is not a check output. That covers
+`paper_citations.csv`, `paper_pdf_provenance.csv`, `registry_pending.csv` and
+`snapshot_freeze/`.
 
 ## Known duplication, deliberately not fixed yet
 

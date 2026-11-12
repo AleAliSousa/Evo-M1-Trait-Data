@@ -13,7 +13,7 @@
 ## species with both measures.
 ##
 ## The figures are raster images, so the leader-line positions were pixel-digitised from
-## the embedded bitmaps by Heffner_etal_2014_Figures10-11_extract.py, which wrote the
+## the embedded bitmaps by Heffner_etal_2014_Figures10-11_snapshot.R, which wrote the
 ## frozen Heffner_etal_2014_Figures10-11_snapshot.csv. The printed type style (roman /
 ## bold / italic) encodes which binaural cue each species uses and is read visually in
 ## reference_tables/Heffner_etal_2014_Figures10-11_label_typography.csv.
@@ -68,8 +68,6 @@ typo <- read.csv(file.path(folder, "reference_tables", paste0(item_name, "_label
                  stringsAsFactors = FALSE, encoding = "UTF-8")
 refs <- read.csv(file.path(folder, "reference_tables", paste0(item_name, "_references.csv")),
                  stringsAsFactors = FALSE, encoding = "UTF-8")
-f9   <- read.csv(file.path(folder, "Heffner_etal_2014_Figure9_snapshot.csv"),
-                 comment.char = "#", stringsAsFactors = FALSE, encoding = "UTF-8")
 stopifnot(nrow(snap) == 48L, nrow(typo) == 25L)
 
 ## 3. CLEAN: split multi-species labels, strip the footnote asterisk, go wide ----
@@ -112,17 +110,12 @@ final.dataframe <- wide %>%
 stopifnot(!anyNA(final.dataframe$binaural_cue_use))
 
 ## 4. TABLE CHECKS (HOWTO 7a) -----------------------------------------
-## Fig. 10 vs Fig. 9 of the same paper: 19 species appear on both thresholds scales.
-f9l <- f9 %>% mutate(sp = strsplit(label_as_printed, ",\\s*")) %>% tidyr::unnest_longer(sp)
-cmp <- inner_join(final.dataframe, f9l, by = c("species_as_published" = "sp"))
-d10v9 <- cmp$sound_localization_threshold_deg - cmp$localization_threshold_deg
+## (The Fig. 10 vs Fig. 9 comparison needs the Figure9 snapshot, so it lives in
+## internal_checks/Heffner_etal_2014_Figures10-11_internal_check.R; this script reads only its own snapshot.)
 gv <- function(s, col) final.dataframe[[col]][final.dataframe$species_as_published == s]
 table_checks <- tibble::tribble(
   ~check_id, ~basis, ~observed, ~printed, ~tolerance,
   "alpaca_MAA_Fig10", "alpaca threshold (deg); Results III.B: 23 deg", gv("alpaca", "sound_localization_threshold_deg"), 23, 1.0,
-  "Fig10_vs_Fig9_max", "largest |Fig.10 - Fig.9| threshold over the species on both scales (deg)",
-                       max(abs(d10v9)), 0, 0.6,
-  "Fig10_vs_Fig9_n",   "species common to Figs. 9 and 10", nrow(cmp), 21, 0,
   "Cp_interaural",     "short-tailed fruit bat interaural distance (us); Fig. 4 of Heffner et al. 2003 prints 47 us",
                        gv("short-tailed fruit bat", "functional_interaural_distance_us"), 47, 3,
   "Ph_interaural",     "greater spear-nosed bat interaural distance (us); Koay et al. 2002 / Fig. 4 of Heffner et al. 2003 print 108 us",

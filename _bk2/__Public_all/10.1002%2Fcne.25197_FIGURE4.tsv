@@ -1,0 +1,7 @@
+species_as_published	region	panel	measure	measure_as_printed	solver_type	n_group	n_group_basis	group_mean_count	anova_F	anova_df_between	anova_df_within	anova_p	anova_partial_eta_sq	posthoc_vs_solver_p	source
+Procyon lotor	hippocampus	A	total_nuclei	total HC nuclei	Nonsolver	6	caption	35237500	6.067	2	15	0.0117	0.447	0.012	Jacob_etal_2021 FIGURE 4 (values from Results §3.1 text + caption)
+Procyon lotor	hippocampus	A	total_nuclei	total HC nuclei	Intermediate	5	derived: F(2,15), total N = 18	39017500	6.067	2	15	0.0117	0.447	0.0663	Jacob_etal_2021 FIGURE 4 (values from Results §3.1 text + caption)
+Procyon lotor	hippocampus	A	total_nuclei	total HC nuclei	Solver	7	caption	51472917	6.067	2	15	0.0117	0.447		Jacob_etal_2021 FIGURE 4 (values from Results §3.1 text + caption)
+Procyon lotor	hippocampus	B	nonneuronal_nuclei	total nonneuronal HC nuclei	Nonsolver	6	caption	31523979	3.847	2	14	0.0466	0.355	0.0706	Jacob_etal_2021 FIGURE 4 (values from Results §3.1 text + caption)
+Procyon lotor	hippocampus	B	nonneuronal_nuclei	total nonneuronal HC nuclei	Intermediate	4	derived: NeuN exclusion + F(2,14)	32545144	3.847	2	14	0.0466	0.355	0.1006	Jacob_etal_2021 FIGURE 4 (values from Results §3.1 text + caption)
+Procyon lotor	hippocampus	B	nonneuronal_nuclei	total nonneuronal HC nuclei	Solver	7	caption	43959439	3.847	2	14	0.0466	0.355		Jacob_etal_2021 FIGURE 4 (values from Results §3.1 text + caption)

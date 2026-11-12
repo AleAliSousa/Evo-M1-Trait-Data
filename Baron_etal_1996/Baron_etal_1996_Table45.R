@@ -1,6 +1,6 @@
 # Baron, Stephan & Frahm 1996, Table45: Lutgemeier's (1962) subdivision of the "bicortex", reprinted in the book. Secondary. The four sub-region keys are printed as abbreviations only and are carried verbatim.
 # Frozen source: Baron_etal_1996_Table45_snapshot.csv, produced by the coordinate-based
-# PDF transcription in Baron_etal_1996_extract_snapshots.R, which is checked on
+# PDF transcription in Baron_etal_1996_Table45_snapshot.R, which is checked on
 # every run against the frozen Table 10 and Table 32 snapshots.
 
 suppressPackageStartupMessages(library(readxl))

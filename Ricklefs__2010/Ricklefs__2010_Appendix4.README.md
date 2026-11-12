@@ -26,7 +26,7 @@ project's only cross-vertebrate table of ageing rates.
 - `reference_tables/Ricklefs__2010_Appendix4_definitions.csv`: data dictionary.
 - `ricklefs-2010-life-history-connections-to-rates-of-aging-in-terrestrial-vertebrates.pdf`: article PDF;
   `sapp.pdf`: Supporting Information (38 pp.). Both were downloaded in a browser by the owner on 2026-10-23 and kept unchanged.
-- `Ricklefs__2010_SIAppendices_extract_snapshot.R`: writes both snapshots from the SI word boxes
+- `Ricklefs__2010_Appendix4_snapshot.R`: writes this item's snapshot (Appendix 4; Appendix 6 has its own script) from the SI word boxes
   (`pdftools::pdf_data`). No values are stored in the script.
   - A row that prints all of its section's numeric columns (missing values print ".") is read in printed order.
   - A row with a cell left empty is placed by x position against that page's column right edges.

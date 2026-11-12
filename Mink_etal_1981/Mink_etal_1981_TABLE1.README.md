@@ -23,7 +23,7 @@ page images.
 
 ```
 Source (scanned PDF pp. 7-8)
-  -> Mink_etal_1981_TABLE1_extract_snapshot.R   writes the frozen snapshot
+  -> Mink_etal_1981_TABLE1_snapshot.R   writes the frozen snapshot
   -> Mink_etal_1981_TABLE1_snapshot.xlsx        FROZEN: 72 rows x 13 cols, sheet "TABLE1"
   -> Mink_etal_1981_TABLE1.R                    clean + parse + table checks
   -> Mink_etal_1981_TABLE1.csv                  42 rows x 32 cols  ("use this")
@@ -39,7 +39,7 @@ Build order: **`Mink_etal_1981_REFERENCES.R` must be run first** — the TABLE 1
 
 Transcribed by an **AI assistant (Claude) on 2026-10-31** from 500-dpi renders of PDF pages 7
 and 8, read column group by column group at 2–5× zoom, with the page rotated upright. The
-printed layout is written out verbatim inside `Mink_etal_1981_TABLE1_extract_snapshot.R`, which
+printed layout is written out verbatim inside `Mink_etal_1981_TABLE1_snapshot.R`, which
 freezes it to the `.xlsx` and **refuses to overwrite a frozen copy that differs**. The build
 script reads that frozen file and contains no table values.
 

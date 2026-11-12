@@ -1,0 +1,23 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,species binomial (curator-assigned),,,,info,Homo sapiens; Macaca sp.,VanEssen_Drury_1997_Text,Visible Man = Homo sapiens; case 79-0 = Macaca sp. (species unknown per Drury et al. 1996a),
+common_name,common name,,,,info,Homo sapiens; Macaca sp.,VanEssen_Drury_1997_Text,,
+specimen,specimen the value describes,,,,info,Homo sapiens; Macaca sp.,VanEssen_Drury_1997_Text,Visible Man (one adult male cadaver digital atlas) or macaque case 79-0 right hemisphere; blank for the cited literature ranges,
+structure,cortical region the row describes,,,,info,Homo sapiens; Macaca sp.,VanEssen_Drury_1997_Text,V1; estimated visual cortex; cerebral neocortex; buried neocortex; frontal lobe; occipital lobe,
+hemisphere,"hemisphere the value refers to, as transcribed",,,,info,Homo sapiens; Macaca sp.,VanEssen_Drury_1997_Text,left / right / average / one hemisphere; blank where the text does not say,
+method,"how the value was obtained, as transcribed",,,,method,Homo sapiens; Macaca sp.,VanEssen_Drury_1997_Text,blank where the snapshot leaves it blank,
+area_cm2,surface area as printed,cerebral cortex,Area.cm2,value,primary or secondary,Homo sapiens; Macaca sp.,VanEssen_Drury_1997_Text,per hemisphere; blank where only a percentage is printed,Results text
+area_mm2,surface area converted to mm2 (area_cm2 x 100),cerebral cortex,Area.mm2,value,derived,Homo sapiens; Macaca sp.,VanEssen_Drury_1997_Text,conversion done in R,
+range_min_cm2,"lower end of a cited human V1 range, as printed",V1,Area.cm2,min,secondary,Homo sapiens,VanEssen_Drury_1997_Text,cited primary named in cited_primary,Results: Estimating the extent of area V1
+range_max_cm2,"upper end of a cited human V1 range, as printed",V1,Area.cm2,max,secondary,Homo sapiens,VanEssen_Drury_1997_Text,,
+range_min_mm2,range_min_cm2 x 100,V1,Area.mm2,min,derived,Homo sapiens,VanEssen_Drury_1997_Text,checked against the curator's mm2 column in the snapshot,
+range_max_mm2,range_max_cm2 x 100,V1,Area.mm2,max,derived,Homo sapiens,VanEssen_Drury_1997_Text,checked against the curator's mm2 column in the snapshot,
+pct_neocortex,"area as percent of total neocortex, as printed",cerebral cortex,pct.neocortex,percent,primary or secondary,Homo sapiens; Macaca sp.,VanEssen_Drury_1997_Text,Visible Man percentages recompute from Table 1 hemisphere totals (text checks); macaque denominator is the whole case 79-0 reconstruction (see source_issue_note),
+where_in_paper,Results subsection holding the value,,,,provenance,Homo sapiens; Macaca sp.,VanEssen_Drury_1997_Text,"journal pp. 7089 (V1), 7098-7099 (visual cortex; macaque comparison)",
+data_role,"primary / primary synthesis / secondary, as transcribed",,,,provenance,Homo sapiens; Macaca sp.,VanEssen_Drury_1997_Text,"blank in the snapshot for the buried, frontal and occipital comparison rows",
+cited_primary,work the authors quote for a literature range,,,,provenance,Homo sapiens,VanEssen_Drury_1997_Text,Stensaas et al. 1974; Filiminoff 1932 (Filimonoff); not case-level data,
+source_note,"row-level source note, as transcribed",,,,provenance,Homo sapiens; Macaca sp.,VanEssen_Drury_1997_Text,,
+source,registry item name,,,,provenance,Homo sapiens; Macaca sp.,VanEssen_Drury_1997_Text,,
+source_flags,pipe-delimited flags a merge must read,,,,quality,Homo sapiens; Macaca sp.,VanEssen_Drury_1997_Text,single_atlas_individual; secondary_value; secondary_citation_range; not_case_level; secondary_reconstruction; single_case; species_unspecified; denominator_includes_non_neocortex,
+source_issue_note,plain-language explanation of the flags,,,,quality,Homo sapiens; Macaca sp.,VanEssen_Drury_1997_Text,,
+Method:observation_level,one row per printed value (specimen x structure x hemisphere); two rows are literature ranges,,,,method,Homo sapiens; Macaca sp.,VanEssen_Drury_1997_Text,do not pool the cited ranges with case-level areas,
+Method:text_checks,printed percentages recomputed from Table 1 hemisphere totals of the same paper; snapshot mm2 vs cm2 x 100,,,,method,Homo sapiens; Macaca sp.,VanEssen_Drury_1997_Text,"12 checks, all pass (Python mirror; R NOT RUN)",

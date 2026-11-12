@@ -1,0 +1,214 @@
+# Latimer_Sawin_1955_TABLE1_snapshot.R: split from Latimer_Sawin_1955_extract_snapshot.R (one script per output); writes only Latimer_Sawin_1955_TABLE1_snapshot.*
+# Latimer_Sawin_1955_TABLE1_snapshot.R ---------------------------------------
+#
+# Builds the six frozen snapshots of Latimer, H. B., & Sawin, P. B. (1955). The
+# weight of the brain, of its parts and the weight and length of the spinal cord
+# in the rabbit (race X). Journal of Comparative Neurology, 103(3), 513-539.
+# https://doi.org/10.1002/cne.901030307
+#
+#   Latimer_Sawin_1955_TABLE1_snapshot.xlsx   sheet "TABLE1": TABLE 1, p. 517
+#                                             (PDF page 5), body weight and length
+#   Latimer_Sawin_1955_TABLE2_snapshot.xlsx   sheet "TABLE2": TABLE 2, p. 518
+#                                             (PDF page 6), brain and brain parts
+#   Latimer_Sawin_1955_TABLE4_snapshot.xlsx   sheet "TABLE4": TABLE 4, p. 524
+#                                             (PDF page 12), brain and brain parts,
+#                                             35 normal vs 15 dwarf males
+#   Latimer_Sawin_1955_TABLE5_snapshot.xlsx   sheet "TABLE5": TABLE 5, p. 525
+#                                             (PDF page 13), the same for 30 normal
+#                                             vs 20 dwarf females
+#   Latimer_Sawin_1955_TABLE6_snapshot.xlsx   sheet "TABLE6": TABLE 6, p. 526
+#                                             (PDF page 14), spinal cord, 50 males
+#                                             vs 50 females
+#   Latimer_Sawin_1955_TABLE7_snapshot.xlsx   sheet "TABLE7": TABLE 7, p. 527
+#                                             (PDF page 15), spinal cord, normal vs
+#                                             dwarf males and females
+#
+# TABLE 3 (empirical formulae) and TABLE 8 (correlations) are not registered and
+# are not snapshotted here.
+#
+# The source is a 1955 journal scan: Acrobat Paper Capture OCR laid over 300-ppi
+# bitonal page images. The OCR text layer is NOT reliable and nothing was taken
+# from it: on these two pages it reads "2.47" where the page prints 4.47 (TABLE 1,
+# Panel B, dwarf males, nose-anus length, Coef. var.), "XALES" for MALES, "Cody
+# weight" for Body weight, "30 I O R X A L" for 30 NORMAL, "Erdn" for Brain, and
+# it garbles the TABLE 2 column headers. On pages 12-15 it reads "9.205" where the
+# page prints 9.265 (TABLE 4, NORMAL Brain Average), "O.OG39" for 0.0639 and
+# "3.5-1" for 3.54 (TABLE 4), "80 dwarf" for 20 dwarf (TABLE 5 caption), "1.61"
+# for 1.64 (TABLE 7, dwarf females, Cord L. % of B.L., Stand. dev.), "Cord r,."
+# for Cord L., "5 0 MALES" for 50 MALES and "YAI.UE" for VALUE. The values below
+# are a HAND TRANSCRIPTION read from the page images (__HOWTO_make_a_snapshot.md
+# method 5; the Mink_etal_1981 printed-layout-block pattern). This script freezes
+# each block to .xlsx and refuses to overwrite a frozen copy that differs; the
+# build scripts (Latimer_Sawin_1955_TABLE1.R, _TABLE2.R, _TABLE4.R, _TABLE5.R,
+# _TABLE6.R, _TABLE7.R) READ the frozen files.
+# No cleaning happens here.
+#
+# Fidelity decisions, all of them reversible from the frozen files:
+#
+#  * One snapshot row per PRINTED ROW, in printed order: the table number, the
+#    caption (its printed line breaks are typesetting and are joined with a
+#    space), panel titles and block headings, the header tiers, the data rows and,
+#    under TABLE 1, the printed footnote. Neither table prints a blank row.
+#  * Columns as printed: row label | first group (Average, Stand. dev., Coef. var.)
+#    | second group (the same three) | "t" VALUES. A spanning group header ("50
+#    MALES", "35 NORMAL", ...) sits in the first column of its span with blank
+#    padding to its right. The "t" VALUES header spans both header tiers and sits
+#    in the upper one.
+#  * A header printed on two lines ("Stand." over "dev.") is ONE cell holding a
+#    real newline (written "\\n" in the blocks below).
+#  * Small capitals are written as capitals ("50 MALES", "VALUES"). The printed
+#    quotes around t are typographic and are written “t”. The row label prints an
+#    en dash in "nose–anus" (the running text prints a hyphen); kept.
+#  * TABLE 1 Panels B and C print only the group labels ("35 NORMAL", "15 DWARF");
+#    they do not repeat the statistic header row or the "t" header. Reproduced as
+#    printed, not repaired.
+#  * TABLE 2's first block ("Weights in grams", per the caption) has no block
+#    heading of its own; the other two blocks do. Reproduced as printed.
+#  * Every numeric cell is kept as printed text, trailing zeros included
+#    ("1870.0", "0.060"), and with its printed number of decimals: TABLE 7 prints
+#    the Stand. dev. of the 30 normal females' cord weight with two decimals
+#    ("0.38") where the rest of that column prints three. Kept.
+#  * TABLES 4 and 5 print all three block headings, "Weights in grams" included
+#    (TABLE 2 prints none over its grams block), and their third heading reads
+#    "Percentages of brain weight" (TABLE 2: "Percentages of total brain weight").
+#    Their group headers print no n ("NORMAL", "DWARF"); the n is in the caption.
+#    Block headings sit in the first column, as in TABLE 2.
+#  * TABLE 4 prints a footnote under its last row ("In tables 4, 5, and 7, ...");
+#    TABLES 5, 6 and 7 print none. Reproduced where printed.
+#  * TABLE 6 prints the singular "“t”" over "VALUE"; TABLES 4, 5 and 7 print
+#    VALUES. Kept.
+#  * TABLES 6 and 7 print two row labels on two lines ("Cord, % of" over "net
+#    B.W."; "Cord L., % of" over "B.L."), their numbers level with the second
+#    line. Such a label is ONE cell holding a real newline, on the row of its
+#    numbers. TABLE 7 breaks its female label differently ("Cord, % of net" over
+#    "B.W."); kept as printed. The wide space in "Cord,  gm" and "net  B.W." is
+#    justification to the column and is written as one space.
+#  * TABLE 7 is printed in two blocks headed "35 normal and 15 dwarf males" and
+#    "30 normal and 20 dwarf females"; the column headers are printed once, above
+#    the first block. Reproduced as printed.
+#
+# TABLES 1 and 2 transcribed by an AI assistant on 2026-11-06 from the PDF's own
+# 300-ppi page images (extracted without resampling), read at 1x, 2x and 4x zoom,
+# then cross-read cell by cell against the OCR text layer: 161 numeric cells, one
+# disagreement (the 4.47 above), resolved from the image and by arithmetic
+# (100 x 19.4 / 433.6 = 4.47).
+# TABLES 4, 5, 6 and 7 transcribed by an AI assistant on 2026-11-07 from 300-dpi
+# renders of PDF pages 12-15 (pdftoppm -r 300), read at 1x and 2x zoom and at 4x
+# for every cell the text layer reads differently, then cross-read cell by cell
+# against the OCR text layer: 280 numeric cells, four numeric disagreements (9.205,
+# O.OG39, 3.5-1 and 1.61 above), each resolved from the image; the caption's 20
+# (text layer "80") also agrees with TABLE 1 Panel C ("20 DWARF").
+#
+# R NOT RUN — outputs written by a Python mirror; Alexandra to run the R. The six
+# frozen .xlsx files were written by a Python mirror of this script that parses
+# the blocks below (TABLES 1 and 2 on 2026-11-06, TABLES 4-7 on 2026-11-07); run
+# this script once to confirm that it reports all six frozen snapshots as
+# identical (nothing is rewritten).
+# ---------------------------------------------------------------------------
+
+.sp <- local({
+  a <- grep("^--file=", commandArgs(FALSE), value = TRUE)
+  if (length(a)) return(normalizePath(sub("^--file=", "", a[1])))
+  if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+    p <- rstudioapi::getSourceEditorContext()$path
+    if (!nzchar(p)) p <- rstudioapi::getActiveDocumentContext()$path
+    if (nzchar(p)) return(normalizePath(p))
+  }
+  stop("Run with Rscript file.R, or open in RStudio and click Source (save first).", call. = FALSE)
+})
+folder <- dirname(.sp)
+paper  <- basename(folder)
+item_name <- sub("_snapshot$", "", tools::file_path_sans_ext(basename(.sp)))  # = item name (this script is <Item>_snapshot.R)
+
+suppressPackageStartupMessages(library(openxlsx))
+
+## The printed sheets, one line per worksheet row, cells separated by "|", an
+## empty field where the page (or a header tier) is blank. "\\n" inside a field is
+## a printed line break WITHIN one cell.
+printed_TABLE1 <- "
+TABLE 1|||||||
+Weight and length of the body for the entire group of 50 males and 50 females in panel A. Panels B and C show similar data for the normal and dwarf males and females|||||||
+Panel A All rabbits together|||||||
+|50 MALES|||50 FEMALES|||“t”\\nVALUES
+|Average|Stand.\\ndev.|Coef.\\nvar.|Average|Stand.\\ndev.|Coef.\\nvar.|
+Body weight, gross|1870.0|301.8|16.14|2192.9|459.7|20.96|4.11
+Body weight, net|1565.4|244.4|15.61|1734.9|337.3|19.44|2.86
+Body length, nose–anus|454.6|24.1|5.30|478.3|33.7|7.05|4.00
+Panel B Males|||||||
+35 normal and 15 dwarf males|||||||
+|35 NORMAL|||15 DWARF|||
+Body weight, gross|1972.3|274.3|13.91|1630.6|234.1|14.36|4.20
+Body weight, net|1650.0|214.6|13.01|1367.9|196.4|14.36|4.32
+Body length, nose–anus|463.7|20.8|4.49|433.6|19.4|4.47|4.76
+Panel C Females|||||||
+30 normal and 20 dwarf females|||||||
+|30 NORMAL|||20 DWARF|||
+Body weight, gross|2480.0|345.4|13.93|1762.1|219.5|12.46|8.24
+Body weight, net|1959.3|230.7|11.78|1398.4|139.5|9.98|9.73
+Body length, nose–anus|496.8|16.3|3.27|444.3|20.4|4.59|10.20
+In tables 1, 2 and 6, “t” values of 2.63 and above are significant at 1% and “t” values from 1.98 to 2.62 are significant at 5%.|||||||
+"
+
+NCOL <- 8L
+
+to_grid <- function(txt) {
+  lines <- strsplit(trimws(txt, which = "both"), "\n", fixed = TRUE)[[1]]
+  stopifnot(all(lengths(regmatches(lines, gregexpr("|", lines, fixed = TRUE))) == NCOL - 1L))
+  g <- do.call(rbind, lapply(lines, function(line) {
+    x <- strsplit(line, "|", fixed = TRUE)[[1]]
+    length(x) <- NCOL
+    x
+  }))
+  g[] <- gsub("\\n", "\n", g, fixed = TRUE)
+  g[!is.na(g) & g == ""] <- NA_character_
+  g
+}
+grid_T1 <- to_grid(printed_TABLE1)
+## Structural guards. A data row prints all seven numeric cells.
+is_num_row <- function(g) apply(g[, 2:NCOL, drop = FALSE], 1, function(x)
+  all(!is.na(x) & grepl("^[0-9]+\\.[0-9]+$", x)))
+## TABLE 1: 21 printed rows; 3 panels x 3 rows = 9 data rows.
+stopifnot(nrow(grid_T1) == 21L, sum(is_num_row(grid_T1)) == 9L,
+          sum(grepl("^Panel [A-C] ", grid_T1[, 1])) == 3L,
+          grid_T1[1, 1] == "TABLE 1")
+freeze_xlsx <- function(grid, file, sheet) {
+  if (file.exists(file)) {
+    old <- as.matrix(readxl::read_excel(file, sheet = sheet, col_names = FALSE,
+                                        .name_repair = "minimal"))
+    new <- grid
+    dimnames(old) <- NULL; dimnames(new) <- NULL
+    old[is.na(old)] <- ""; new[is.na(new)] <- ""
+    if (!identical(dim(old), dim(new)) || !identical(unname(old), unname(new)))
+      stop(basename(file), ": the frozen snapshot on disk differs from the block in this ",
+           "script. Refusing to overwrite. Reconcile the difference against the PDF page ",
+           "image and move the superseded file to archive/ before re-running.", call. = FALSE)
+    message(basename(file), ": frozen snapshot already on disk and identical; nothing written.")
+    return(invisible(FALSE))
+  }
+  data_rows  <- which(is_num_row(grid))
+  hdr_rows   <- which(!is_num_row(grid) & is.na(grid[, 1]))        # header tiers
+  label_rows <- setdiff(which(!is_num_row(grid) & !is.na(grid[, 1])),
+                        c(2L, grep("^In tables", grid[, 1])))       # titles, headings
+  wb <- createWorkbook()
+  addWorksheet(wb, sheet)
+  writeData(wb, sheet, as.data.frame(grid, stringsAsFactors = FALSE),
+            colNames = FALSE, keepNA = FALSE)
+  addStyle(wb, sheet, createStyle(textDecoration = "bold", wrapText = TRUE,
+                                  valign = "top", halign = "center"),
+           rows = hdr_rows, cols = seq_len(NCOL), gridExpand = TRUE)
+  addStyle(wb, sheet, createStyle(textDecoration = "bold"), rows = label_rows, cols = 1L)
+  addStyle(wb, sheet, createStyle(textDecoration = "italic"), rows = 2L, cols = 1L)
+  addStyle(wb, sheet, createStyle(halign = "right"), rows = data_rows,
+           cols = 2:NCOL, gridExpand = TRUE)
+  wrap_rows <- data_rows[grepl("\n", grid[data_rows, 1], fixed = TRUE)]  # two-line row labels
+  if (length(wrap_rows))
+    addStyle(wb, sheet, createStyle(wrapText = TRUE), rows = wrap_rows, cols = 1L)
+  setColWidths(wb, sheet, cols = 1, widths = 30)
+  setColWidths(wb, sheet, cols = 2:NCOL, widths = 12)
+  saveWorkbook(wb, file, overwrite = FALSE)
+  message(basename(file), ": wrote ", nrow(grid), " rows x ", NCOL, " cols (",
+          length(data_rows), " printed data rows)")
+  invisible(TRUE)
+}
+
+freeze_xlsx(grid_T1, file.path(folder, paste0(item_name, "_snapshot.xlsx")), "TABLE1")

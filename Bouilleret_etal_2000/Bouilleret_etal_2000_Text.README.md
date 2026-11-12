@@ -17,7 +17,7 @@ PDF in this folder: `Bouilleret-2000-Mapping of the progressive met.pdf`, MOVED 
 
 ```
 Source (PDF)
-  -> Bouilleret_etal_2000_extract_snapshot.R   writes the frozen snapshot(s)
+  -> Bouilleret_etal_2000_Text_snapshot.R   writes the frozen snapshot(s)
   -> Bouilleret_etal_2000_Text_snapshot.csv   FROZEN: 4 rows x 10 cols
   -> Bouilleret_etal_2000_Text.R   clean + parse + table checks
   -> Bouilleret_etal_2000_Text.csv   3 rows x 18 cols  ("use this")
@@ -27,7 +27,7 @@ Source (PDF)
 
 ## Who read the values, when, and how it was checked
 
-**Text-layer extraction** (HOWTO method 3, Jacob_etal_2021 pattern): `Bouilleret_etal_2000_extract_snapshot.R` reads the born-digital text layer with `pdftools` at run time (no table value is typed in the script), decodes the publisher symbol font with a fixed documented map (`"` -> ±, trailing `U`/`UU` -> `*`/`**`, `Ž n s 4.` -> `(n = 4)`, `mmolr100 grmin` -> µmol/100 g/min), anchors on printed literals, and freezes the snapshots (refuses to overwrite). Every decoded cell and significance mark was then checked by an AI assistant (Claude) on 2026-11-02 against 330-dpi renders of PDF pages 4-5. In the RESULTS passage the parenthesis glyphs are separate, mis-positioned tokens in the text layer; they are dropped from the quoted passage (no digit affected).
+**Text-layer extraction** (HOWTO method 3, Jacob_etal_2021 pattern): `Bouilleret_etal_2000_Text_snapshot.R` reads the born-digital text layer with `pdftools` at run time (no table value is typed in the script), decodes the publisher symbol font with a fixed documented map (`"` -> ±, trailing `U`/`UU` -> `*`/`**`, `Ž n s 4.` -> `(n = 4)`, `mmolr100 grmin` -> µmol/100 g/min), anchors on printed literals, and freezes the snapshots (refuses to overwrite). Every decoded cell and significance mark was then checked by an AI assistant (Claude) on 2026-11-02 against 330-dpi renders of PDF pages 4-5. In the RESULTS passage the parenthesis glyphs are separate, mis-positioned tokens in the text layer; they are dropped from the quoted passage (no digit affected).
 
 The build script `Bouilleret_etal_2000_Text.R` reads the frozen file and contains no table values. It was run with
 `Rscript` (conda env `r`, R with readxl) from a clean session on 2026-11-02.

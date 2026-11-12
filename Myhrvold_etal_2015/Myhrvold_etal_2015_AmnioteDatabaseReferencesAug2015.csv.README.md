@@ -16,15 +16,19 @@ holds the citation string naming the study (or studies, or derivation) behind it
 
 ## Frozen source — digital-native, bytes untouched
 `Myhrvold_etal_2015_AmnioteDatabaseReferencesAug2015_snapshot.csv` was **already present** in this
-folder (it is an input to the value item's `.py` build). It was checked this pass rather than
+folder (it is an input to the value item's build). It was checked this pass rather than
 re-created: md5 `58ce0c047162154dd752cfdd16c1dd26`, **byte-identical** to
 `Data_Files/Amniote_Database_References_Aug_2015.csv`. Reused as-is; nothing re-saved or converted.
 
 ## Build
 `Myhrvold_etal_2015_AmnioteDatabaseReferencesAug2015.csv.R` (R, matching the repo house dialect
-and the three other `.R` scripts in this folder). Before pivoting it **asserts the alignment this
-item exists to provide**: the References file and the value file must share a column list and be
-row-for-row, taxon-for-taxon identical in the seven taxonomy columns. The build stops otherwise.
+and the three other `.R` scripts in this folder). It reads only its own snapshot. The
+**alignment this item exists to provide** (the References file and the value file share a column list and are
+row-for-row, taxon-for-taxon identical in the seven taxonomy columns) is a cross-item check against the sibling
+Database snapshot, so it lives in `internal_checks/Myhrvold_etal_2015_AmnioteDatabaseReferencesAug2015.csv_internal_check.R`
+(build HOWTO 7b; read-only), result in `internal_checks/Myhrvold_etal_2015_AmnioteDatabaseReferencesAug2015.csv_internal_check.csv`.
+Actual R run (temp copy, 2026-11-12): **3 pass, 0 mismatch** (same columns, 21,322 rows each, 0 differing taxonomy cells of
+21,322 x 7). A misalignment is now a warning and a `mismatch` row there; it no longer stops the build.
 `row_id` is carried so any reference row can be matched back to its value cell exactly.
 
 ## Printed citation forms
@@ -43,7 +47,7 @@ classifies each string; counts across the 113,101 rows:
 of `reference_tables/Myhrvold_etal_2015_AmnioteDatabaseReferencesAug2015.csv_definitions.csv` and runs:
 
 1. value in `Amniote_Database_Aug_2015.csv` at (taxonomy, trait);
-2. this item's matching cell → the printed citation string (alignment asserted by the build);
+2. this item's matching cell → the printed citation string (alignment checked in `internal_checks/`);
 3. `Myhrvold_etal_2015_cell_references.R` parses that string with the documented grammar into
    `reference_tables/Myhrvold_etal_2015_cell_references_part001` … `_part007.csv` —
    **322,572 rows**, one per (cell × contributing reference), **0 parse failures** — carrying

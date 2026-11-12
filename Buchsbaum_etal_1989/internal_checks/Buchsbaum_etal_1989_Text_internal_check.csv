@@ -1,0 +1,14 @@
+"check_id","basis","observed","printed","difference","tolerance","status","note"
+"nrem_mean","text 14.0 vs table Lateral cortex Mean NREM",14,14,0,0,"pass",NA
+"nrem_sd","text SD 3.7 vs table Lateral cortex Mean NREM SD",3.7,4.1,-0.399999999999999,0,"mismatch",NA
+"awake_mean","text 21.4 vs table Lateral cortex Mean Awake",21.4,21.4,0,0,"pass",NA
+"awake_sd","text SD 6.3 vs table Lateral cortex Mean Awake SD",6.3,6.3,0,0,"pass",NA
+"rem_mean","text 19.2 vs table Lateral cortex Mean REM",19.2,19.2,0,0,"pass",NA
+"rem_sd","text SD 4.3 vs table Lateral cortex Mean REM SD",4.3,3.9,0.4,0,"mismatch",NA
+"medial_frontal_diff","text 10.5 vs table Medial frontal Awake - NREM",10.5,10.5,0,0.1,"pass",NA
+"medial_frontal_pct","text 38.2% vs 100 x (Awake - NREM)/Awake, Medial frontal",38.1818181818182,38.2,-0.018181818181823,0.4,"pass",NA
+"putamen_diff","text 7.5 vs table Putamen Awake - NREM",7.5,7.5,0,0.1,"pass",NA
+"putamen_pct","text 28.4% vs 100 x (Awake - NREM)/Awake, Putamen",28.4090909090909,28.4,0.00909090909091148,0.4,"pass",NA
+"largest_pct_is_medial_frontal","largest % NREM decrease among the 12 regions = Medial frontal (observed = its rank)",1,1,0,0,"pass",NA
+"smallest_pct_is_putamen","smallest % NREM decrease among the 12 regions = Putamen (observed = its rank from the bottom)",1,1,0,0,"pass",NA
+"summary_23pct","Summary 'about a 23% reduction ... across the entire brain' vs 100 x (Awake - NREM)/Awake of the Grand Mean",32.3008849557522,23,9.30088495575222,1.5,"mismatch","'about' allows a wide tolerance (1.5 points); the table gives 32.3"

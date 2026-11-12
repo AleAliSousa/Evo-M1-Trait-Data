@@ -25,7 +25,7 @@ footnote and were verified by the authors' own 20-50 h observations on ten speci
 | file | what it is |
 |---|---|
 | `Pellis-2000-Adult-Adult Play in Primates_ Comp.pdf` | the publication |
-| `Pellis_Iwaniuk_2000_extract_snapshot.R` | PDF text layer -> frozen snapshot (no value typed in the script) |
+| `Pellis_Iwaniuk_2000_Table1_snapshot.R` | PDF text layer -> frozen snapshot (no value typed in the script) |
 | `Pellis_Iwaniuk_2000_Table1_snapshot.csv` | the frozen source: caption, two-tier header, 71 rows in printed order, both footnotes |
 | `Pellis_Iwaniuk_2000_Table1.R` | build: snapshot -> analysis CSV + public TSV |
 | `Pellis_Iwaniuk_2000_Table1.csv` | analysis CSV, 71 rows x 12 columns |
@@ -34,7 +34,7 @@ footnote and were verified by the authors' own 20-50 h observations on ten speci
 
 ## Source -> snapshot
 
-The source is a printed table, so a snapshot is required. `Pellis_Iwaniuk_2000_extract_snapshot.R`
+The source is a printed table, so a snapshot is required. `Pellis_Iwaniuk_2000_Table1_snapshot.R`
 pulls every score from the PDF's text layer at run time; only the caption, the two-tier column
 headers and the two footnote lines are literals, each verified by an anchor assertion. The script
 refuses to overwrite a differing frozen copy (writes `*_snapshot_NEW.csv` and stops).

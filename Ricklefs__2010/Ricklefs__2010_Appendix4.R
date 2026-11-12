@@ -10,7 +10,7 @@
 # (ref 5, Note a), Loison et al. 1999 (ref 6, Note b).
 #
 # Frozen source: Ricklefs__2010_Appendix4_snapshot.csv, written from the SI text layer by
-# Ricklefs__2010_SIAppendices_extract_snapshot.R. This script reads it; it never contains table values.
+# Ricklefs__2010_Appendix4_snapshot.R. This script reads it; it never contains table values.
 
 ## ---- 0. Paths: self-locating, so it runs from any working directory ----
 .sp <- local({

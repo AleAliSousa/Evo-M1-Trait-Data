@@ -8,10 +8,13 @@ Latimer, H. B., & Sawin, P. B. (1955). The weight of the brain, of its parts and
 **Item full original title:** TABLE 6. *Weights, lengths and percentage weights and lengths of the spinal cord in 50 male and
 50 female rabbits* (p. 526, PDF page 14).
 
-> **R NOT RUN — outputs written by a Python mirror; Alexandra to run the R.** The frozen snapshot, the analysis CSV, the public TSV and every table-check result quoted here were
-> produced on 2026-11-07 by a Python mirror of the R scripts in this folder. Run, in this order:
-> `Latimer_Sawin_1955_extract_snapshot.R` (it should report all six frozen snapshots as identical), `Latimer_Sawin_1955_TABLE1.R`, then `Latimer_Sawin_1955_TABLE6.R`
-> (it reads `Latimer_Sawin_1955_TABLE1.csv` for its cross-table checks); then `render_errata()` on the paper folder.
+> **Rebuild order** (R; run each script with `Rscript` from any directory, it locates itself):
+> 1. `Latimer_Sawin_1955_TABLE6_snapshot.R` writes only this item's frozen snapshot and refuses to overwrite a differing copy
+>    (run in a temporary copy of the repo it reports the frozen snapshot as identical; checked 2026-11-12);
+> 2. `Latimer_Sawin_1955_TABLE6.R` reads only its own snapshot and writes the CSV and the public TSV; run it before `Latimer_Sawin_1955_TABLE7.R`, which reads this CSV;
+> 3. `internal_checks/Latimer_Sawin_1955_TABLE6_internal_check.R` (optional, read-only) is the cross-item check against `Latimer_Sawin_1955_TABLE1.csv`: run `Latimer_Sawin_1955_TABLE1.R` before it.
+> then `render_errata()` on the paper folder.
+> *R run, 2026-11-12:* `Latimer_Sawin_1955_TABLE6.R` and the check script were run in R in a temporary copy of the repo; the CSV and public TSV are byte-identical to the committed files.
 Run it before `Latimer_Sawin_1955_TABLE7.R`, which reads this CSV.
 
 ## Source
@@ -24,9 +27,9 @@ The paper-level note (MacLarnon 1996, Mink et al. 1981) is in `Latimer_Sawin_195
 
 ```
 Source (scanned PDF, page 14)
-  -> Latimer_Sawin_1955_extract_snapshot.R       writes the frozen snapshots of TABLES 1, 2, 4, 5, 6 and 7
+  -> Latimer_Sawin_1955_TABLE6_snapshot.R       writes the frozen snapshot of TABLE6
   -> Latimer_Sawin_1955_TABLE6_snapshot.xlsx     FROZEN: 8 rows x 8 cols, sheet "TABLE6"
-  -> Latimer_Sawin_1955_TABLE6.R                 clean + parse + table checks (reads Latimer_Sawin_1955_TABLE1.csv for the informative checks)
+  -> Latimer_Sawin_1955_TABLE6.R                 clean + parse + table checks (reads only its own snapshot; the cross-item check against TABLE1.csv is internal_checks/Latimer_Sawin_1955_TABLE6_internal_check.R)
   -> Latimer_Sawin_1955_TABLE6.csv               28 rows x 19 cols  ("use this")
   -> __Public/comparative-data/10.1002%2Fcne.901030307_TABLE6.tsv
   -> reference_tables/Latimer_Sawin_1955_TABLE6_definitions.csv
@@ -38,13 +41,13 @@ Source (scanned PDF, page 14)
 
 **Hand transcription** (HOWTO method 5) by an AI assistant on 2026-11-07 from a 300-dpi render of PDF page 14
 (`pdftoppm -r 300`), read at 1× and 2× zoom, and at 4× where a reader disagreed, and typed as a verbatim printed-layout block
-into `Latimer_Sawin_1955_extract_snapshot.R` (freezes; refuses to overwrite a differing copy). Cross-read cell by cell against the PDF's OCR
+into `Latimer_Sawin_1955_TABLE6_snapshot.R` (freezes; refuses to overwrite a differing copy). Cross-read cell by cell against the PDF's OCR
 text layer (28 numeric cells, **no numeric disagreement**; the labels and headers are garbled instead, below) and against an
 independent tesseract OCR of the same render (one disagreement, a tesseract misread: `0.0382` for the printed **0.032**, the
 50 FEMALES Stand. dev. of "Cord, % of net B.W.", snapshot F7; read at 4× and consistent with its Coef. var., 100 × 0.032/0.253
 = 12.6 against the printed 12.85 within rounding). The build script reads the frozen file and contains no table values.
 
-**R NOT RUN — outputs written by a Python mirror; Alexandra to run the R.** The mirror parses the printed-layout block out of the R extract script and follows the build script step by step, writing the CSV and the TSV as R's `write.csv` / `write.table` would. No R run has confirmed the outputs yet.
+**R NOT RUN — outputs written by a Python mirror; Alexandra to run the R.** The mirror parses the printed-layout block out of the R extract script and follows the build script step by step, writing the CSV and the TSV as R's `write.csv` / `write.table` would. No R run has confirmed the outputs yet. *Update 2026-11-12:* the R scripts were run in R in a temporary copy of the repo and reproduced the committed CSV and public TSV byte for byte.
 
 ### OCR traps (text layer vs page image)
 
@@ -104,13 +107,18 @@ TABLE 6 prints Coef. var. and t values that can be recomputed from its own cells
 against TABLE 1's body measures. `Latimer_Sawin_1955_TABLE6.R` re-runs them into `table_checks` (build HOWTO §7a). The pooling of TABLE 7's
 normal and dwarf groups against this table runs in `Latimer_Sawin_1955_TABLE7.R` (it needs this CSV).
 
+**Cross-item check in `internal_checks/`.** The informative comparison of the two percentage rows with TABLE 1 needs `Latimer_Sawin_1955_TABLE1.csv`, so it is not
+part of `Latimer_Sawin_1955_TABLE6.R` (which reads only its own snapshot). It is `internal_checks/Latimer_Sawin_1955_TABLE6_internal_check.R`, which writes
+`internal_checks/Latimer_Sawin_1955_TABLE6_internal_check.csv`. Result (actual R run, 2026-11-12): 4 checks, all `not_evaluable` (informative). `Latimer_Sawin_1955_TABLE6.R` itself now
+reports 11 pass, 1 mismatch (`t_cord_length`, errata E005).
+
 | relation | rule and tolerance |
 |---|---|
 | Coef. var. = 100 × Stand. dev. / Average, every group (8) | worst case of 100 × (SD + ½ unit) / (Average − ½ unit) minus the recomputed value, plus ½ unit of the printed Coef. var. |
 | "t" values, males vs females (4) | **pooled-variance Student t** from the printed Averages, SDs and n = 50 + 50; tolerance as for TABLES 1 and 2 |
 | The two percentage rows vs the ratio of the printed means: 100 × Average cord weight / TABLE 1 Panel A Average net body weight, and 100 × Average cord length / TABLE 1 Panel A Average nose–anus length (4) | **informative only**: no pass criterion, status `not_evaluable` |
 
-**Result of the Python mirror: 11 pass, 1 mismatch, 4 not evaluable (the 4 informative comparisons), of 16.** (R NOT RUN — outputs written by a Python mirror; Alexandra to run the R.)
+**Result of the Python mirror: 11 pass, 1 mismatch, 4 not evaluable (the 4 informative comparisons), of 16.** (R NOT RUN — outputs written by a Python mirror; Alexandra to run the R.) *Actual R run, 2026-11-12: the same counts* (item script and internal check together).
 
 | family | checks | pass | mismatch | not evaluable |
 |---|---|---|---|---|

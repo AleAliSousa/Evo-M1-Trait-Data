@@ -20,3 +20,6 @@ Data readable (USE THIS)
 
 Online database
   __Public/comparative-data/10.1093%2Fcercor%2Fbhr033_authordata(groupmeans).tsv
+
+
+TO DO (later, owner decision 2026-11-12): authordata builds ONE analysis CSV from TWO snapshots (authordata_control_snapshot.xlsx and authordata_DS_snapshot.xlsx), and neither is named <Item>_snapshot.xlsx. Decide whether this is one item with a combined snapshot or two items (control, DS), then rename/split the snapshots and script per the one-snapshot-per-item rule. Left unchanged on purpose for now.

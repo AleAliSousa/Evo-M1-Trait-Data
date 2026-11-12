@@ -39,7 +39,7 @@ aggregated them from 37 primary studies that are not themselves registered here.
 | file | what it is |
 |---|---|
 | `Graham-2011-Coevolutionary relationship betwee.pdf` | the publication |
-| `Graham__2011_extract_snapshot.R` | PDF text layer -> frozen snapshot (values, per-row sources and footnotes all extracted, nothing typed) |
+| `Graham__2011_TABLEI_snapshot.R` | PDF text layer -> frozen snapshot (values, per-row sources and footnotes all extracted, nothing typed) |
 | `Graham__2011_TABLEI_snapshot.csv` | the frozen source: caption, header, 14 rows, the 6 footnotes |
 | `Graham__2011_TABLEI.R` | build: snapshot -> analysis CSV + public TSV |
 | `Graham__2011_TABLEI.csv` | analysis CSV, 14 rows x 14 columns |
@@ -49,7 +49,7 @@ aggregated them from 37 primary studies that are not themselves registered here.
 
 ## Source -> snapshot
 
-Printed table, so a snapshot is required. `Graham__2011_extract_snapshot.R` reads the PDF text layer
+Printed table, so a snapshot is required. `Graham__2011_TABLEI_snapshot.R` reads the PDF text layer
 at run time and reattaches the wrapped binomials ("Callithrix" / "  jacchus") and the wrapped
 Sources cells; the six footnote texts are extracted too, so the only literals in the script are the
 caption and the column-header stubs, each anchor-verified. A differing extraction is written to

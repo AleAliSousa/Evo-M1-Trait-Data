@@ -2,7 +2,7 @@
 # somata, per species.
 #
 # PRINTED SOURCE -> the frozen copy is Nudo_etal_1995_TABLE5_snapshot.xlsx (sheet "TABLE5"),
-# captured by Nudo_etal_1995_extract_snapshot.py from a 300-dpi render of p. 188. This script
+# captured by Nudo_etal_1995_TABLE5_snapshot.R from a 300-dpi render of p. 188. This script
 # reads ONLY that snapshot.
 #
 # Output shape: ONE ROW PER SPECIES (24), printed row order kept (identical to TABLES 2 and 4).

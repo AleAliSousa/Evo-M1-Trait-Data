@@ -4,7 +4,7 @@
 # DOI 10.1007/BF03011974. Item TABLEII.
 #
 # Reads the frozen snapshot Nakanishi_etal_1997_TABLEII_snapshot.csv (written by
-# Nakanishi_etal_1997_extract_snapshot.R) and reshapes it to one analysis row per printed
+# Nakanishi_etal_1997_TABLEII_snapshot.R) and reshapes it to one analysis row per printed
 # value cell: mean / dispersion / footnote marks (dagger = different from control)
 # split into their own fields, period / time / group attached, anesthesia per arm,
 # CMRO2 also given in the merge's standard unit. The page sets each Period and Time
@@ -32,7 +32,7 @@ locus <- sub(paste0("^", paper, "_"), "", item_name)
 
 doi <- "10.1007/BF03011974"
 
-## ---- read the frozen snapshot (written by <paper>_extract_snapshot.R) ----------
+## ---- read the frozen snapshot (written by Nakanishi_etal_1997_TABLEII_snapshot.R) ----------
 read_snapshot <- function(file, header = FALSE) {
   x <- read.csv(file, header = header, colClasses = "character", na.strings = character(0),
                 check.names = FALSE, encoding = "UTF-8")

@@ -4,9 +4,10 @@
 # Values printed in the ABSTRACT (p. 362) and RESULTS (p. 364) rather than in a
 # table. Reads the constructed, frozen snapshot
 # Heiss_etal_1985_Text_snapshot.csv (one row per printed value,
-# written by Heiss_etal_1985_extract_snapshot.R), classifies each value as NEW
-# (printed nowhere else) or a RESTATEMENT of a TABLE I cell, and checks every
-# restatement against the frozen TABLE I snapshot.
+# written by Heiss_etal_1985_Text_snapshot.R), classifies each value as NEW
+# (printed nowhere else) or a RESTATEMENT of a TABLE I cell. The check of every
+# restatement against the frozen TABLE I snapshot needs the sibling item and lives in
+# internal_checks/Heiss_etal_1985_Text_internal_check.R (build HOWTO s.7b).
 #
 # Only one value is new: the non-dreamers' whole-brain rate DURING SLEEP,
 # 31.6 ± 1.42 µmol/100 g/min (RESULTS, p. 364). TABLE I prints that state only
@@ -51,9 +52,6 @@ num_of <- function(x) suppressWarnings(as.numeric(gsub("\\s+", "", x)))   # "- 9
 
 tx <- read_snapshot(paste0(base, "_snapshot.csv"), header = TRUE)
 stopifnot(nrow(tx) == 8L, identical(tx$text_row, as.character(1:8)))
-t1 <- read_snapshot(paste0(paper, "_TABLEI_snapshot.csv"))
-stopifnot(identical(dim(t1), c(33L, 5L)))
-t1_cell <- function(region_label, col) t1[match(region_label, gsub("\n", " ", t1[, 1], fixed = TRUE)), col]
 WB <- "Whole brain (all regions weighted according to size)"
 
 final.dataframe <- data.frame(
@@ -92,62 +90,6 @@ final.dataframe$note[final.dataframe$text_row == 7L] <-
   "Non-dreamers' whole-brain rate during sleep. Printed only here; TABLE I gives this state only as a % change (-12.6 ± 4.73)."
 final.dataframe$note[final.dataframe$text_row == 1L] <-
   "Printed as a positive 'decrease ... averaging 12.6'; TABLE I prints the same quantity as -12.6."
-
-## ---- table checks ---------------------------------------------------------------
-
-chk <- function(id, basis, observed, printed, tol, note = NA_character_) {
-  ok <- !is.na(observed) & !is.na(printed)
-  data.frame(check_id = id, basis = basis, observed = observed, printed = printed,
-             difference = observed - printed, tolerance = tol,
-             status = ifelse(!ok, "not_evaluable", ifelse(abs(observed - printed) <= tol + 1e-9, "pass", "mismatch")),
-             note = note, stringsAsFactors = FALSE)
-}
-
-v <- function(r) final.dataframe$value_numeric[final.dataframe$text_row == r]
-s <- function(r) final.dataframe$dispersion_numeric[final.dataframe$text_row == r]
-wb_nd_awake <- t1_cell(WB, 2); wb_nd_pct <- t1_cell(WB, 3)
-wb_dr_awake <- t1_cell(WB, 4); wb_dr_pct <- t1_cell(WB, 5)
-table_checks <- rbind(
-  chk("restate_1_mean", "text row 1 (abstract) 12.6 vs |TABLE I whole-brain non-dreamers % change|",
-      v(1), abs(num_of(mean_lexeme(wb_nd_pct))), 0),
-  chk("restate_1_sd",   "text row 1 (abstract) S.D. 4.73 vs TABLE I whole-brain non-dreamers % change S.D.",
-      s(1), num_of(disp_lexeme(wb_nd_pct)), 0),
-  chk("restate_2", "text row 2 (abstract) 2.1% vs TABLE I Lentiform nucleus, Dreamer % change",
-      v(2), num_of(t1_cell("Lentiform nucleus", 5)), 0),
-  chk("restate_3", "text row 3 (abstract) 30.0% vs TABLE I Sup. front. cortex, Dreamer % change",
-      v(3), num_of(t1_cell("Sup. front. cortex", 5)), 0),
-  chk("restate_4", "text row 4 (abstract) 16.4% vs TABLE I whole brain, Dreamer % change",
-      v(4), num_of(wb_dr_pct), 0),
-  chk("restate_5", "text row 5 (p. 364) 30.3 vs TABLE I whole brain, Dreamer Awake",
-      v(5), num_of(wb_dr_awake), 0),
-  chk("restate_6_mean", "text row 6 (p. 364) 36.2 vs TABLE I whole brain, Non-dreamers Awake",
-      v(6), num_of(mean_lexeme(wb_nd_awake)), 0),
-  chk("restate_6_sd", "text row 6 (p. 364) S.D. 2.38 vs TABLE I whole brain, Non-dreamers Awake S.D.",
-      s(6), num_of(disp_lexeme(wb_nd_awake)), 0),
-  chk("restate_8", "text row 8 (p. 364) + 16.4% vs TABLE I whole brain, Dreamer % change",
-      v(8), num_of(wb_dr_pct), 0),
-  ## the one new value against the table's awake rate and % change:
-  ## 36.2 x (1 - 12.6/100) = 31.64; tolerance = rounding of the two printed
-  ## inputs (±0.05 each, propagated) + half a unit of the printed 31.6.
-  ## (A mean of ratios need not equal the ratio of means; this is a consistency
-  ## check, not an identity.)
-  chk("sleep_rate_vs_pct", "text row 7 31.6 vs TABLE I whole brain non-dreamers Awake x (1 + % change/100)",
-      num_of(mean_lexeme(wb_nd_awake)) * (1 + num_of(mean_lexeme(wb_nd_pct)) / 100), v(7),
-      0.05 * (1 + num_of(mean_lexeme(wb_nd_pct)) / 100) +
-        num_of(mean_lexeme(wb_nd_awake)) * 0.05 / 100 + 0.05,
-      "consistency, not identity: mean of individual ratios vs ratio of means")
-)
-
-tally <- table(factor(table_checks$status, c("pass", "mismatch", "not_evaluable")))
-message(item_name, ": table checks  pass=", tally[["pass"]], "  mismatch=", tally[["mismatch"]],
-        "  not_evaluable=", tally[["not_evaluable"]])
-if (tally[["mismatch"]] > 0L) {
-  bad <- table_checks[table_checks$status == "mismatch", ]
-  for (i in seq_len(nrow(bad)))
-    warning(sprintf("%s: %s observed %.6g vs printed %.6g (diff %.3g, tol %.3g)",
-                    bad$check_id[i], bad$basis[i], bad$observed[i], bad$printed[i],
-                    bad$difference[i], bad$tolerance[i]), call. = FALSE)
-}
 
 ## ---- outputs ----------------------------------------------------------------
 write.csv(final.dataframe, paste0(base, ".csv"), row.names = FALSE, na = "NA",

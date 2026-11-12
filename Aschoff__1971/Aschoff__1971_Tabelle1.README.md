@@ -15,7 +15,7 @@ PDF in this folder: `aschoff_1971.pdf` (copied from `References.Data/PDF/2480964
 
 ```
 Source (PDF)
-  -> Aschoff__1971_extract_snapshot.R   writes the frozen snapshot(s)
+  -> Aschoff__1971_Tabelle1_snapshot.R   writes the frozen snapshot(s)
   -> Aschoff__1971_Tabelle1_snapshot.csv   FROZEN: 11 rows x 6 cols
   -> Aschoff__1971_Tabelle1.R   clean + parse German numerals + convert units + table checks
   -> Aschoff__1971_Tabelle1.csv   7 rows x 24 cols  ("use this")
@@ -25,7 +25,7 @@ Source (PDF)
 
 ## Who read the values, when, and how it was checked
 
-**Hand transcription** (method 5) by an AI assistant (Claude) on 2026-11-03 from 170/300-dpi renders of PDF page 2 (book p. 44), typed as a verbatim printed-layout block into `Aschoff__1971_extract_snapshot.R`, which freezes it and refuses to overwrite a differing frozen copy. The OCR text layer of Tabelle 1 (poor scan, decimal commas and thousands points intact) was read afterwards as an independent second reading and agrees on all 42 value cells. The build script reads the frozen file, contains no table values, and was run with `Rscript` (conda env `r`) on 2026-11-03.
+**Hand transcription** (method 5) by an AI assistant (Claude) on 2026-11-03 from 170/300-dpi renders of PDF page 2 (book p. 44), typed as a verbatim printed-layout block into `Aschoff__1971_Tabelle1_snapshot.R`, which freezes it and refuses to overwrite a differing frozen copy. The OCR text layer of Tabelle 1 (poor scan, decimal commas and thousands points intact) was read afterwards as an independent second reading and agrees on all 42 value cells. The build script reads the frozen file, contains no table values, and was run with `Rscript` (conda env `r`) on 2026-11-03.
 
 ### Snapshot and analysis CSV
 

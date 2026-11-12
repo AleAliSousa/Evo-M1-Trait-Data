@@ -1,3 +1,4 @@
+## Garwicz_etal_2009_TableS1.R -- reads Garwicz_etal_2009_TableS1_snapshot.csv and Garwicz_etal_2009_TableS2_snapshot.csv; builds the analysis CSV + public TSV.
 ## 0. PATHS (NO setwd) -------------------------------------------------------
 
 ## ---- paths: self-contained (Rscript or RStudio; full repo or lone folder) ----
@@ -28,44 +29,16 @@ snapshot_s2   <- file.path(paper_dir, "Garwicz_etal_2009_TableS2_snapshot.csv")
 final_csv     <- file.path(paper_dir, paste0(table_name, ".csv"))
 readme_xlsx   <- file.path(dataset_root, "__ReadMe.xlsx")
 public_tsv_dir<- file.path(dataset_root, "__Public", "comparative-data")
-pdf_file <- file.path(paper_dir, "0905777106si.pdf")
 ## 1. PACKAGES ---------------------------------------------------------------
-# Uses 'tabulapdf' (maintained successor to 'tabulizer'). The old, orphaned
-# 'tabulizerjars' dependency has been removed -- tabulapdf does not need it.
-library(rJava)
-library(tabulapdf)
 library(dplyr)
 library(tidyr)
 library(stringr)
 library(readxl)
-## 2. EXTRACT BOTH TABLES + SAVE SNAPSHOTS -----------------------------------
-# Table S1 (taxonomy) is on page 5, Table S2 (database) on page 6. Target each
-# table's data rows with fixed column separators and assign headers directly
-# (so the old "first row as header" / PC-PN rename patches are no longer
-# needed). Coordinates are PDF points (1/72") from the top-left.
-# --- Table S1: page 5, 4 columns ---
-s1 <- extract_tables(
-  pdf_file, pages = 5, guess = FALSE,
-  area = list(c(69, 30, 320, 545)),
-  columns = list(c(140, 290, 425)),
-  output = "matrix"
-)
-df2 <- as.data.frame(s1[[1]], stringsAsFactors = FALSE)
-colnames(df2) <- c("Lay term", "Order/suborder", "Family", "Genus/species")
-# --- Table S2: page 6, 9 columns ("WO, days" splits into PN and PC) ---
-s2 <- extract_tables(
-  pdf_file, pages = 6, guess = FALSE,
-  area = list(c(84, 30, 335, 575)),
-  columns = list(c(125, 188, 255, 322, 380, 431, 468, 515)),
-  output = "matrix"
-)
-df1 <- as.data.frame(s2[[1]], stringsAsFactors = FALSE)
-colnames(df1) <- c(
-  "Species (lay term)", "AbsBrM, g", "NeoBrM (1), g", "BoM, g", "Gest., days",
-  "WO, days_PN", "WO, days_PC", "Pre/Alt", "HSP"
-)
-write.csv(df1, snapshot_s2, row.names = FALSE)
-write.csv(df2, snapshot_s1, row.names = FALSE)
+## 2. READ SNAPSHOTS --------------------------------------------------------
+# Frozen snapshots: TableS1_snapshot.csv (written by Garwicz_etal_2009_TableS1_snapshot.R) and
+# TableS2_snapshot.csv (written by Garwicz_etal_2009_TableS2_snapshot.R); this script only reads them.
+df2 <- read.csv(snapshot_s1, colClasses = "character", check.names = FALSE)
+df1 <- read.csv(snapshot_s2, colClasses = "character", check.names = FALSE)
 ## 3. MAKE DATA READABLE -----------------------------------------------------
 # Merge taxonomy (S1) onto the database (S2) by the common (lay) name.
 colnames(df2)[colnames(df2) == "Lay term"] <- "Common name"

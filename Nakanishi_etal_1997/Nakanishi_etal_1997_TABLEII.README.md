@@ -16,7 +16,7 @@ PDF `Nakanishi-1997-Inhibition of cerebral metaboli.pdf` (moved from `cereb meta
 
 ```
 Source PDF
-  -> Nakanishi_etal_1997_extract_snapshot.R   verbatim printed block; refuses to overwrite a differing frozen copy
+  -> Nakanishi_etal_1997_TABLEII_snapshot.R   verbatim printed block; refuses to overwrite a differing frozen copy
   -> Nakanishi_etal_1997_TABLEII_snapshot.csv   FROZEN: 19 printed rows
   -> Nakanishi_etal_1997_TABLEII.R              parse + table checks (no values typed)
   -> Nakanishi_etal_1997_TABLEII.csv            28 rows ("use this")

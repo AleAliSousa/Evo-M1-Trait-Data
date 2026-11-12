@@ -1,0 +1,19 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,accepted taxon,,,,info,Macaca sp.,Drury_etal_1996_Table2,Macaca sp.: the paper gives no species (commercially acquired brain),
+species_as_published,taxon word printed in the caption,,,,info,Macaca sp.,Drury_etal_1996_Table2,'Macaque',
+specimen,specimen,,,,info,Macaca sp.,Drury_etal_1996_Table2,"case 79-0, right cerebral hemisphere",
+area_label_as_printed,cortical area label exactly as printed,,,,info,Macaca sp.,Drury_etal_1996_Table2,'MST1' and 'S11' are the typeface's MSTl and SII,
+area_label,"cortical area label, standard form",,,,info,Macaca sp.,Drury_etal_1996_Table2,MST1 -> MSTl; S11 -> SII; all others as printed,Felleman & Van Essen (1991) nomenclature
+system,functional group heading the row sits under,,,,info,Macaca sp.,Drury_etal_1996_Table2,Visual areas ... Paleocortex; blank for neocortex subtotal and totals,
+visual_subgroup,lobe sub-heading within Visual areas,,,,info,Macaca sp.,Drury_etal_1996_Table2,Occipital / Temporal / Parietal / Frontal; blank otherwise,
+cortex_class,neocortex or non-neocortex (rows after 'Subtotal (neocortex)'),,,,info,Macaca sp.,Drury_etal_1996_Table2,'all' for the two total rows,
+row_type,"area, subtotal or total",,,,info,Macaca sp.,Drury_etal_1996_Table2,pool only row_type == 'area'; subtotals and totals are printed sums,
+area_mm2,surface area of the subdivision on the 3-D reconstruction,cerebral cortex,Area.mm2,value,primary,Macaca sp.,Drury_etal_1996_Table2,one hemisphere; whole mm2 as printed,Table 2 column 2
+pct_total_cortex,"area as percent of total cerebral cortex (7,205 mm2)",cerebral cortex,pct.total_cortex,percent,primary,Macaca sp.,Drury_etal_1996_Table2,"as printed (1 decimal); denominator includes hippocampal, transitional and paleocortex",Table 2 column 3
+method,how the areas were measured,,,,method,Macaca sp.,Drury_etal_1996_Table2,,
+printed_block,left or right column block of the printed table,,,,provenance,Macaca sp.,Drury_etal_1996_Table2,,
+printed_line,line number within that block (headings counted),,,,provenance,Macaca sp.,Drury_etal_1996_Table2,,
+source,registry item name,,,,provenance,Macaca sp.,Drury_etal_1996_Table2,,
+Method:observation_level,one row per cortical subdivision of ONE hemisphere of ONE animal; subtotals and totals kept as their own rows,,,,method,Macaca sp.,Drury_etal_1996_Table2,,
+Method:table_checks,subtotals/totals recomputed from cells (half a mm2 per summed cell); percents recomputed as 100 x area / 7205,,,,method,Macaca sp.,Drury_etal_1996_Table2,"95 checks, all pass (Python mirror; R NOT RUN)",
+Method:two_dimensional_map,"the footnote says flat-map (2-D) areas were within a few percent except V3, V3A, PIP and FEF (> 20%)",,,,note,Macaca sp.,Drury_etal_1996_Table2,values here are 3-D reconstruction areas,Table 2 footnote a

@@ -11,4 +11,4 @@ DOI,digital object identifier of the source paper,,,,info,Primates,Bortoff_Stric
 Source_location,exact source pages and figures supporting the code,,,,info,Primates,Bortoff_Strick_1993_Table1,every cell is traceable to a named page or figure,
 Evidence_summary,short paraphrase of the source evidence,,,,info,Primates,Bortoff_Strick_1993_Table1,no long quotations,
 Curatorial_note,scope or uncertainty note attached to the coding decision,,,,note,Primates,Bortoff_Strick_1993_Table1,,
-Method:coding,"CST_termination_grade is a 3-level ordinal assigned only from an explicit species-level terminal-field description; no unit conversion applies (sec 6). Broad review or clade-level statements are never coded.",,,,method,Primates,Bortoff_Strick_1993_Table1,rubric printed in Bortoff_Strick_1993_extract_snapshot.R and the README,
+Method:coding,"CST_termination_grade is a 3-level ordinal assigned only from an explicit species-level terminal-field description; no unit conversion applies (sec 6). Broad review or clade-level statements are never coded.",,,,method,Primates,Bortoff_Strick_1993_Table1,rubric printed in Bortoff_Strick_1993_Table1_snapshot.R and the README,

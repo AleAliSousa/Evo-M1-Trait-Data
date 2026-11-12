@@ -1,0 +1,3 @@
+"check_id","basis","observed","printed","difference","tolerance","status","note"
+"derivation","max |Fig5 x Fig4 - nearest Fig3 value| (x 10^8 synapses/mm3); 0 if Fig. 5 = Fig. 3 / Fig. 4",1.01,0,1.01,1.1,"pass","the largest deviation is the 'Aged (74-90)' column, where Fig. 5 plots one mean but Fig. 3 plots four separate brains"
+"derivation_mean","mean |Fig5 x Fig4 - nearest Fig3 value| (x 10^8 synapses/mm3)",0.24,0,0.24,0.4,"pass",""

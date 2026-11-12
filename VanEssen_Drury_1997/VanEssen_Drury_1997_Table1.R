@@ -3,8 +3,9 @@
 ## ONE individual: the Visible Man (Visible Human Project, NLM) — a digital atlas built from
 ## 1 mm section images of a single adult male cadaver. Areas are tile-area sums on the 3-D
 ## reconstructions (NOT flat-map areas; authors call their total a likely slight underestimate).
-## Table 1: per-hemisphere neocortex + 5 lobes + sulcal/gyral totals. A separate frozen text
-## snapshot adds human V1 and visual-cortex estimates plus the macaque case 79-0 comparison.
+## Table 1: per-hemisphere neocortex + 5 lobes + sulcal/gyral totals. The Results-text values
+## (human V1 and visual cortex, the macaque case 79-0 comparison, the cited V1 ranges) are the
+## separate item VanEssen_Drury_1997_Text since 10 Nov 2026.
 ## Snapshot frozen from the curator's transcription; all cleaning here (golden rule).
 
 options(scipen = 999)
@@ -58,9 +59,8 @@ table_clean <- data.frame(
   stringsAsFactors = FALSE, check.names = FALSE
 )
 
-text_clean <- read.csv(file.path(folder, paste0(item_name, "_text_snapshot.csv")),
-                       stringsAsFactors = FALSE, na.strings = "")
-clean <- rbind(table_clean, text_clean[names(table_clean)])
+## Results-text rows now live in VanEssen_Drury_1997_Text (owner moved the text snapshot, 9 Nov 2026).
+clean <- table_clean
 clean$source <- item_name
 append_flag <- function(x, flag) ifelse(!nzchar(x), flag, paste(x, flag, sep = "|"))
 append_note <- function(x, note) ifelse(!nzchar(x), note, paste(x, note, sep = " "))
@@ -80,18 +80,6 @@ clean$source_issue_note[table_rows] <- append_note(
   clean$source_issue_note[table_rows],
   "Areas are tile sums on a 3-D reconstruction, not flat-map areas; the authors describe total area as a likely slight underestimate."
 )
-human_v1 <- human & clean$structure == "V1"
-clean$source_flags[human_v1] <- append_flag(clean$source_flags[human_v1], "secondary_value")
-
-macaque <- clean$Species == "Macaca sp."
-clean$source_flags[macaque] <- "secondary_reconstruction|single_case|species_unspecified|cross_study_macaque_total_conflict|cross_study_v2_fraction_conflict"
-clean$source_issue_note[macaque] <- paste0(
-  "This paper identifies the animal only as macaque and reuses case 79-0 from Drury et al. 1996a. ",
-  "Its 72 cm2 neocortex differs from Felleman & Van Essen's 99.40 cm2 text / 99.70 cm2 table composite, ",
-  "and its text gives V2 as approximately 9% versus 12.2% in Felleman & Van Essen Table 2. ",
-  "Do not pool without reconciling specimen, method, and denominator."
-)
-
 csv_file <- file.path(folder, paste0(item_name, ".csv"))
 write.csv(clean, csv_file, row.names = FALSE)
 message(item_name, ": ", nrow(clean), " rows written")

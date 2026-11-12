@@ -17,9 +17,9 @@ PDF in this folder: `heiss_etal_1985.pdf`, COPIED (bytes identical) from the End
 
 ```
 Source (PDF)
-  -> Heiss_etal_1985_extract_snapshot.R   writes the frozen snapshot(s)
+  -> Heiss_etal_1985_Text_snapshot.R   writes the frozen snapshot(s)
   -> Heiss_etal_1985_Text_snapshot.csv   FROZEN: 9 rows x 10 cols
-  -> Heiss_etal_1985_Text.R   clean + parse + table checks
+  -> Heiss_etal_1985_Text.R   clean + parse
   -> Heiss_etal_1985_Text.csv   8 rows x 20 cols  ("use this")
   -> __Public/comparative-data/10.1016%2F0006-8993(85)91537-9_Text.tsv
   -> reference_tables/Heiss_etal_1985_Text_definitions.csv
@@ -27,7 +27,7 @@ Source (PDF)
 
 ## Who read the values, when, and how it was checked
 
-**Hand transcription** (HOWTO method 5) by an AI assistant (Claude) on 2026-11-02 from 300/400-dpi renders of PDF pages 1-3, typed as a verbatim printed-layout block into `Heiss_etal_1985_extract_snapshot.R`, which freezes it and refuses to overwrite a differing frozen copy. The OCR text layer was read only afterwards, as a second reading: it agreed on every TABLE I value and every text value.
+**Hand transcription** (HOWTO method 5) by an AI assistant (Claude) on 2026-11-02 from 300/400-dpi renders of PDF pages 1-3, typed as a verbatim printed-layout block into `Heiss_etal_1985_Text_snapshot.R`, which freezes it and refuses to overwrite a differing frozen copy. The OCR text layer was read only afterwards, as a second reading: it agreed on every TABLE I value and every text value.
 
 The build script `Heiss_etal_1985_Text.R` reads the frozen file and contains no table values. It was run with
 `Rscript` (conda env `r`, R with readxl) from a clean session on 2026-11-02.
@@ -40,7 +40,13 @@ for which values are new, restatements, or cited.
 
 ## Table checks
 
-Result of an actual R run (2026-11-02): **10 pass, 0 mismatch, 0 not evaluable**, of 10 checks.
+All 10 checks compare the text values with the sibling item TABLE I, so they are **cross-item checks in
+`internal_checks/`** (build HOWTO 7b): `internal_checks/Heiss_etal_1985_Text_internal_check.R` (read-only; reads the Text and TABLEI
+snapshots) writes `internal_checks/Heiss_etal_1985_Text_internal_check.csv`. The item script `Heiss_etal_1985_Text.R` reads only
+its own snapshot and carries no `table_checks`.
+
+Result of an actual R run (temp copy, 2026-11-12; same as the earlier in-script run of 2026-11-02): **10 pass, 0 mismatch,
+0 not evaluable**, of 10 checks.
 
 | check | basis | observed | printed | difference | tolerance | status |
 |---|---|---|---|---|---|---|

@@ -15,7 +15,7 @@ PDF in this folder: `Grande-1950-[Cerebral consumption of oxygen].pdf` (17 pages
 
 ```
 Source (PDF)
-  -> Grande__1950_extract_snapshot.R   writes the frozen snapshot(s) (verbatim printed-layout blocks; refuses to overwrite)
+  -> Grande__1950_TablaVI_snapshot.R   writes the frozen snapshot(s) (verbatim printed-layout blocks; refuses to overwrite)
   -> Grande__1950_TablaVI_snapshot.csv   FROZEN: 19 rows x 6 cols (3 caption rows, header, 15 species rows)
   -> Grande__1950_TablaVI.R   clean + parse + convert units + table checks
   -> Grande__1950_TablaVI.csv   15 rows x 20 cols  ("use this")
@@ -25,7 +25,7 @@ Source (PDF)
 
 ## Who read the values, when, and how it was checked
 
-**Hand transcription** (HOWTO method 5) by an AI assistant (Claude) on 2026-11-03 from 170-450-dpi renders and crops of PDF page 6 (pymupdf; read as page images and zoomed crops), typed as a verbatim printed-layout block into the folder's `*_extract_snapshot.R`, which freezes it and refuses to overwrite a differing frozen copy. The PDF text layer is OCR of a 1950 scan and is not a usable second reading; as a weak presence check only, 73 of the 75 numeric cells occur as tokens on the page text (the two absent, `21,7` and `0,014`, are OCR misreads and were confirmed on the image). Every value was **re-read cell by cell from the page image at high zoom** and, for the species tables, compared by script with an earlier transcription held in `Evo-M1-Trait-Data-restricted/__energetics_comparison/classic_energetics_compilations/` (used only as a starting point): 0 differences. The build `*.R` reads the frozen file, contains no table values, and was run with `Rscript` (conda env `r`, `LC_ALL=en_US.UTF-8`) on 2026-11-03.
+**Hand transcription** (HOWTO method 5) by an AI assistant (Claude) on 2026-11-03 from 170-450-dpi renders and crops of PDF page 6 (pymupdf; read as page images and zoomed crops), typed as a verbatim printed-layout block into the folder's `Grande__1950_TablaVI_snapshot.R`, which freezes it and refuses to overwrite a differing frozen copy. The PDF text layer is OCR of a 1950 scan and is not a usable second reading; as a weak presence check only, 73 of the 75 numeric cells occur as tokens on the page text (the two absent, `21,7` and `0,014`, are OCR misreads and were confirmed on the image). Every value was **re-read cell by cell from the page image at high zoom** and, for the species tables, compared by script with an earlier transcription held in `Evo-M1-Trait-Data-restricted/__energetics_comparison/classic_energetics_compilations/` (used only as a starting point): 0 differences. The build `*.R` reads the frozen file, contains no table values, and was run with `Rscript` (conda env `r`, `LC_ALL=en_US.UTF-8`) on 2026-11-03.
 
 ### Snapshot and analysis CSV
 

@@ -8,7 +8,7 @@ Full title (`__ReadMe.xlsx`): **"Table 2. Volumes for cortical regions for 55 sp
 
 ## Source -> Snapshot
 HTML download from the PNAS site (`05760table2.html`). `Bush_Allman_2004b_Table2_snapshot.csv` =
-faithful parse: 55 species x FrG, RoG, FrRat, WhBr, NeoG, NeoW, Act, Diet, Gr, Grsz (cm3).
+faithful parse (written by `Bush_Allman_2004_a_Table2_snapshot.R`): 55 species x FrG, RoG, FrRat, WhBr, NeoG, NeoW, Act, Diet, Gr, Grsz (cm3).
 
 ## Data readable
 `Bush_Allman_2004b_Table2.R` -> `Bush_Allman_2004b_Table2.csv` / `.tsv` (use this): columns renamed

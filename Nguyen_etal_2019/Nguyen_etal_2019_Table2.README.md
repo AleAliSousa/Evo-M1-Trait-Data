@@ -15,7 +15,7 @@ count, spine count/density, soma area, and soma depth; `n` is neurons traced.
 
 ## Pipeline and representation
 
-1. `Nguyen_etal_2019_Table2_extract_snapshot.R` contains the visually checked
+1. `Nguyen_etal_2019_Table2_snapshot.R` contains the visually checked
    transcription and writes `Nguyen_etal_2019_Table2_snapshot.csv`. Each printed
    `mean ± SEM` cell is split into adjacent mean/SEM fields without changing the
    numbers; dashes remain missing.

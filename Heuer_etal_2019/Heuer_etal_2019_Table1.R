@@ -1,7 +1,7 @@
 # Heuer et al. 2019 - Table 1: list of species included (34 primate species, 65 individuals)
 #
 # PRINTED SOURCE -> the frozen copy is Heuer_etal_2019_Table1_snapshot.xlsx (sheet "Table1"),
-# a hand-verified transcription built by Heuer_etal_2019_Table1_make_snapshot.py. This script
+# a hand-verified transcription built by Heuer_etal_2019_Table1_snapshot.R. This script
 # reads ONLY that snapshot.
 #
 # WHAT THIS TABLE IS - AND IS NOT. Table 1 is the sample roster: species, binomial, number of

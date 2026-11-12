@@ -7,7 +7,7 @@
 ##
 ## Input
 ##   deSousa__2008_Suppl.Table5.2_snapshot.xlsx     (sheet "Suppl.Table5.2")
-##   built by deSousa__2008_Suppl.Table5.2_extract_snapshot.R from the PDF text layer
+##   built by deSousa__2008_Suppl.Table5.2_snapshot.R from the PDF text layer
 ##
 ## Output
 ##   deSousa__2008_Suppl.Table5.2.csv               one row per specimen (6)

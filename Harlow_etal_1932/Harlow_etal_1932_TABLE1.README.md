@@ -9,6 +9,7 @@ Psychology*, 13(3), 313-343. https://doi.org/10.1037/h0073864
 | file | what it is |
 |---|---|
 | `Harlow_etal_1932_TABLE1_snapshot.csv` | the frozen snapshot: the table as printed |
+| `Harlow_etal_1932_TABLE1_snapshot.R` | writes only the snapshot above (printed-layout block; refuses to overwrite a differing frozen copy) |
 | `Harlow_etal_1932_TABLE1.R` | reformat: snapshot -> analysis CSV + public TSV |
 | `Harlow_etal_1932_TABLE1.csv` | analysis-ready data ("use this") |
 | `reference_tables/Harlow_etal_1932_TABLE1_definitions.csv` | data dictionary |
@@ -25,7 +26,7 @@ The source is a **1932 scanned journal page**. The PDF carries an OCR text layer
 emits table columns out of reading order and corrupts digits, so it was **not** used for any
 value. Every cell was read off page renders at 200-600 dpi by an **AI assistant (Claude) on
 2026-10-31** and typed verbatim into the frozen snapshot through
-``Harlow_etal_1932_extract_snapshots.py`` (the printed-layout block lives in that script;
+``Harlow_etal_1932_TABLE1_snapshot.R`` (the printed-layout block lives in that script;
 re-running it refuses to overwrite a differing frozen copy). The same session re-rendered each
 table at 400-600 dpi with the column rules visible and read every row left to right against the
 transcription.

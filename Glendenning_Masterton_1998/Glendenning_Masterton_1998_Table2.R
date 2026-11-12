@@ -6,7 +6,7 @@
 ## the 10 nuclei, per animal (53 rows) + printed Average / Standard deviation /
 ## % variation rows. DERIVED in this paper from Table 1 (each cell = 100 x
 ## nucleus / Total); not reused from another paper. Frozen source written by
-## Glendenning_Masterton_1998_extract_snapshot.py (text-layer coordinates).
+## Glendenning_Masterton_1998_Table2_snapshot.py (text-layer coordinates).
 ## Summary rows stay in the snapshot; the analysis CSV carries the 53 animals.
 
 ## 0. PATHS --------------------------------------------------------

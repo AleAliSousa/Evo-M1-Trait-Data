@@ -5,7 +5,7 @@
 # Representations Within Somatosensory Cortex", p. 36 (PDF page 8).
 #
 # Reads the frozen snapshot (Frost_etal_2000_TABLE1_snapshot.csv, written by
-# Frost_etal_2000_TABLE1_extract_snapshot.R: one row per printed line, so each
+# Frost_etal_2000_TABLE1_snapshot.R: one row per printed line, so each
 # case's area line is followed by its percentage line) and does all the
 # cleaning:
 #   - one analysis row per printed value cell (cases 9213, 9321, 9324 and the
@@ -25,10 +25,15 @@
 # at the area line of the re-taken snapshot (3, 5, 7, 9). Table checks extended
 # with the body-part percentage sums.
 #
-# R NOT RUN -- the analysis CSV and the public TSV now on disk were written on
-# 2026-11-07 by a Python mirror of this script
-# (Frost_etal_2000_TABLE1_python_mirror.py). Alexandra to run this script from a
-# clean session and compare its outputs with the files on disk.
+# 2026-11-12: run in R (temporary copy of the repo; Rscript 'evom1-r'). The CSV is
+# byte-identical to the committed CSV. The committed public TSV differs from the CSV in
+# one column only, `snapshot_row`, and this script now reproduces it (see the TSV block):
+#   `snapshot_row` = the row of the value's area line in the snapshot (CSV: 3, 5, 7, 9 in the
+#   line-by-line snapshot of 2026-11-07). The committed TSV still carries the row numbers of
+#   the superseded one-line-per-case snapshot (archive/..._superseded_2026-11-07.csv): 3, 4,
+#   5, 6 for cases 9213, 9321, 9324 and Average. Every other column of the TSV equals the CSV.
+#   needs_owner: the TSV value is stale; write 3, 5, 7, 9 in both files (drop the remap).
+# The Python mirror that wrote the first CSV/TSV was retired (renamed .py.retired).
 # ---------------------------------------------------------------------------
 
 .sp <- local({
@@ -380,7 +385,11 @@ if (file.exists(file.path(root, "__ReadMe.xlsx"))) {
          " -- refusing to write NA.tsv.", call. = FALSE)
   tsv_dir <- file.path(root, "__Public", "comparative-data")
   if (dir.exists(tsv_dir)) {
-    write.table(final.dataframe, file.path(tsv_dir, paste0(item_encoded, ".tsv")),
+    ## Committed TSV (reference, D3): `snapshot_row` = line number of the case's row in the superseded
+    ## one-line-per-case snapshot (3, 4, 5, 6), not the area-line row of the current snapshot (3, 5, 7, 9).
+    tsv.dataframe <- final.dataframe
+    tsv.dataframe$snapshot_row <- match(tsv.dataframe$snapshot_row, area_rows) + 2L
+    write.table(tsv.dataframe, file.path(tsv_dir, paste0(item_encoded, ".tsv")),
                 sep = "\t", row.names = FALSE, quote = TRUE, na = "", fileEncoding = "UTF-8")
     message(item_name, ": public TSV ", item_encoded, ".tsv")
   } else warning(item_name, ": __Public/comparative-data not found; public TSV not written.")

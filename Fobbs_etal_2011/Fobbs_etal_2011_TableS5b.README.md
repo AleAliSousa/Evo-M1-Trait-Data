@@ -10,9 +10,9 @@ The folder had the legacy Word supplement, a built snapshot/CSV/R script, but no
 
 - **Frozen source (printed/legacy, snapshot required):** `nyas_6036_sm_table5b.doc` is a legacy journal Word
   document (not a structured, machine-readable export), so a frozen snapshot is required per
-  `__HOWTO_build_a_dataset_file.md` §0a invariant 1. `Fobbs_etal_2011_build_snapshot.py` converts it
+  `__HOWTO_build_a_dataset_file.md` §0a invariant 1. `Fobbs_etal_2011_TableS5b_snapshot.py` converts it
   losslessly into `Fobbs_etal_2011_TableS5b_snapshot.xlsx` (sheet `TableS5b`); the snapshot is **not** rebuilt on every
-  run (`rebuild_snapshot = FALSE` in the `.R` script) so the already-audited snapshot is protected
+  run (the `.R` script only reads it) so the already-audited snapshot is protected
   from silent drift.
 - **Reformat:** `Fobbs_etal_2011_TableS5b.R` reads the frozen snapshot by position, hard-checks the expected column
   count, assigns house-dialect column names, drops rows that are wholly blank or are printed

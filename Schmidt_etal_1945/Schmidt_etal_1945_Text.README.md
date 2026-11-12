@@ -18,16 +18,16 @@ PDF `schmidt_etal_1945.pdf` (copied from EndNote PDF/1682367563/), journal pp. 3
 
 ```
 Source PDF
-  -> Schmidt_etal_1945_extract_snapshot.R        verbatim printed block, refuses to overwrite a differing frozen copy
+  -> Schmidt_etal_1945_Text_snapshot.R        verbatim printed block, refuses to overwrite a differing frozen copy
   -> Schmidt_etal_1945_Text_snapshot.csv   FROZEN: 3 printed numbers
-  -> Schmidt_etal_1945_Text.R              parse + table checks (no values typed)
+  -> Schmidt_etal_1945_Text.R              parse (no values typed)
   -> Schmidt_etal_1945_Text.csv            3 rows (one per printed value)  ("use this")
   -> __Public/comparative-data/10.1152%2Fajplegacy.1945.143.1.33_Text.tsv
   -> reference_tables/Schmidt_etal_1945_Text_definitions.csv
   -> reference_tables/Schmidt_etal_1945_Text_references.csv   (cited_refs -> citation)
 ```
 
-Build order: the table items before `Schmidt_etal_1945_Text.R` (its restatement checks read their CSVs).
+The item script reads only its own snapshot. Build order for the cross-item check: `Schmidt_etal_1945_TABLE6` before `internal_checks/Schmidt_etal_1945_Text_internal_check.R` (it reads `Schmidt_etal_1945_TABLE6.csv`).
 
 ## Who read the values, when, and how it was checked
 
@@ -35,7 +35,11 @@ Constructed by an AI assistant (Claude) on 2026-11-02: each passage was located 
 
 ## Table checks
 
-Result of an actual R run (2026-11-02): **1 pass, 0 mismatch, 0 not evaluable.** Tolerance: half a unit in the last printed decimal of every input, propagated, plus half a unit of the printed result (significant-digit units for the scaled human values of Schmidt TABLE 6). 'Not evaluable' marks relations that hold only per animal (mean of products/ratios) or values that cannot be traced.
+The only check, the restatement against the sibling TABLE 6 (the p. 46 value vs the TABLE 6 "Normal" maximum O2 uptake), is a
+**cross-item check in `internal_checks/`** (build HOWTO 7b): `internal_checks/Schmidt_etal_1945_Text_internal_check.R` (read-only)
+writes `internal_checks/Schmidt_etal_1945_Text_internal_check.csv`. Result of an actual R run (temp copy, 2026-11-12; same as the
+earlier in-script run of 2026-11-02): **1 pass, 0 mismatch, 0 not evaluable.** The item script carries no `table_checks`.
+ Tolerance: half a unit in the last printed decimal of every input, propagated, plus half a unit of the printed result (significant-digit units for the scaled human values of Schmidt TABLE 6). 'Not evaluable' marks relations that hold only per animal (mean of products/ratios) or values that cannot be traced.
 
 ## Data role
 

@@ -5,7 +5,7 @@
 # Source wording, historical taxonomy, group headings, and uncertainty markers are preserved.
 #
 # Source  : nyas_5978_sm_table2.xls
-# Helper  : Zilles_etal_2011_build_snapshot.py
+# Snapshot script: Zilles_etal_2011_TableS2_snapshot.py (not run by this script)
 # Snapshot: Zilles_etal_2011_TableS2_snapshot.xlsx, sheet "TableS2"
 # Outputs : Zilles_etal_2011_TableS2.csv
 #           <Item encoded>.tsv under __Public/comparative-data/
@@ -25,16 +25,6 @@ suppressPackageStartupMessages({library(readxl); library(readr); library(dplyr);
 folder <- dirname(.sp); setwd(folder)
 item_name <- tools::file_path_sans_ext(basename(.sp))
 source_xls <- "nyas_5978_sm_table2.xls"; snapshot_xlsx <- paste0(item_name, "_snapshot.xlsx")
-helper <- "Zilles_etal_2011_build_snapshot.py"
-
-# FALSE protects the frozen snapshot. Set TRUE only to intentionally rebuild it.
-rebuild_snapshot <- FALSE
-if (rebuild_snapshot || !file.exists(snapshot_xlsx)) {
- if (!file.exists(source_xls)) stop("Missing source workbook: ", source_xls, call.=FALSE)
- if (!file.exists(helper)) stop("Missing snapshot helper: ", helper, call.=FALSE)
- status <- system2("python3", c(shQuote(helper), shQuote(item_name)))
- if (!identical(status,0L) || !file.exists(snapshot_xlsx)) stop("Snapshot build failed.", call.=FALSE)
-}
 raw <- read_excel(snapshot_xlsx, sheet="TableS2", skip=1, col_names=TRUE, col_types="text")
 if (ncol(raw) != 11L) stop("Expected 11 columns; found ", ncol(raw), ".", call.=FALSE)
 names(raw) <- c("code", "species", "sex", "catalogue_number", "body_weight_g", "brain_weight_fresh_g", "brain_material", "staining", "section_thickness_um", "plane_of_sectioning", "distance_between_sections")

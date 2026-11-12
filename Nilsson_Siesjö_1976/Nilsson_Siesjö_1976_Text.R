@@ -5,7 +5,7 @@
 #
 # Values printed in running text rather than in a table. Reads the constructed,
 # frozen snapshot Nilsson_Siesjö_1976_Text_snapshot.csv (one row per printed
-# number, written by Nilsson_Siesjö_1976_extract_snapshot.R), parses each printed lexeme
+# number, written by Nilsson_Siesjö_1976_Text_snapshot.R), parses each printed lexeme
 # (single value, range 'a-b', bound '<x'), attaches the variable the passage
 # reports (curator mapping by text_row below) and the merge's standard units,
 # and checks restatements against the paper's own tables. No value is typed here.
@@ -29,7 +29,7 @@ locus <- sub(paste0("^", paper, "_"), "", item_name)
 
 doi <- "10.1111/j.1748-1716.1976.tb10172.x"
 
-## ---- read the frozen snapshot (written by <paper>_extract_snapshot.R) ----------
+## ---- read the frozen snapshot (written by <Item>_snapshot.R) ----------
 read_snapshot <- function(file, header = FALSE) {
   x <- read.csv(file, header = header, colClasses = "character", na.strings = character(0),
                 check.names = FALSE, encoding = "UTF-8")

@@ -28,13 +28,15 @@ AnAge download.
   feeds each analysis column.
 - `ricklefs-2010-life-history-connections-to-rates-of-aging-in-terrestrial-vertebrates.pdf`: article PDF;
   `sapp.pdf`: Supporting Information (38 pp.). Both were downloaded in a browser by the owner on 2026-10-23 and kept unchanged.
-- `Ricklefs__2010_SIAppendices_extract_snapshot.R`: writes both snapshots from the SI word boxes
+- `Ricklefs__2010_Appendix6_snapshot.R`: writes this item's snapshot (Appendix 6; Appendix 4 has its own script) from the SI word boxes
   (`pdftools::pdf_data`). No values are stored in the script.
   - A row that prints all of its section's numeric columns (missing values print ".") is read in printed order.
   - A row with a cell left empty is placed by x position against that page's column right edges.
   - The script refuses to overwrite a snapshot that differs from a fresh extraction.
 - `Ricklefs__2010_taxonomy_check.R` → `reference_tables/Ricklefs__2010_taxonomy_check.csv`: QA. It compares
   the printed Order/Family/binomial with AnAge Build 15 and with the other appendix.
+- `internal_checks/Ricklefs__2010_Appendix6_internal_check.R` → `internal_checks/Ricklefs__2010_Appendix6_internal_check.csv`:
+  cross-item check against the Appendix 4 snapshot (read-only; see Table checks).
 - `reference_tables/Ricklefs__2010_errata.csv`: errata for both items (rendered below).
 
 ## Reader / provenance
@@ -50,6 +52,17 @@ The values were read from the SI text layer by the extract script, run by an AI 
 - Units are as printed: d, g, m, y.
 - The bird header "Growth rate k (d)" is a unit misprint for 1/d (erratum E009).
 - Reptile masses partly come from length (SI Appendix 7).
+
+## Table checks
+The table prints no totals of its own, so there is no check inside the item script. One cross-item check needs the
+Appendix 4 snapshot and therefore lives in `internal_checks/Ricklefs__2010_Appendix6_internal_check.R`
+(output `internal_checks/Ricklefs__2010_Appendix6_internal_check.csv`): does every Appendix 6 species also appear in
+Appendix 4 by its exact printed binomial? Result (actual R run, 2026-11-12): **410 of 425 match; 15 do not**
+(check `species_in_Appendix4`, status `mismatch`, tolerance 0). The 15 are kept as printed and not folded together: Capra ibex;
+Damaliscus lunatus; Rupicapra pyrenaica; Dama dama; Mustela erminea; Mirounga leonina; Pusa hispida; Didelphis virginiana;
+Equus burchellii; Papio hamadryas; Homo sapiens; Apodemus flavicollis; Clethrionomys glareolus; Himantopus himantopus;
+Boa constrictor. As noted under Reader / provenance, most differences are Appendix 4 misspellings
+(see `reference_tables/Ricklefs__2010_taxonomy_check.csv`). Nothing from Appendix 4 enters this item's CSV/TSV.
 
 ## Data role
 **Secondary**: a copy of AnAge (ref 7) as of the analysis. Do not merge it as primary data. Use it to trace and

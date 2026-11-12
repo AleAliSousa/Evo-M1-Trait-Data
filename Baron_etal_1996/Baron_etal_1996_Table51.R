@@ -1,6 +1,6 @@
 # Baron, Stephan & Frahm 1996, Table51: Pirlot's volume data for six species that Tables 10 and 32 do not cover, reprinted in the book as two stacked blocks. Secondary. Paleocortex and amygdala are pooled here, whereas Table 32 separates them.
 # Frozen source: Baron_etal_1996_Table51_snapshot.csv, produced by the coordinate-based
-# PDF transcription in Baron_etal_1996_extract_snapshots.R, which is checked on
+# PDF transcription in Baron_etal_1996_Table51_snapshot.R, which is checked on
 # every run against the frozen Table 10 and Table 32 snapshots.
 
 suppressPackageStartupMessages(library(readxl))

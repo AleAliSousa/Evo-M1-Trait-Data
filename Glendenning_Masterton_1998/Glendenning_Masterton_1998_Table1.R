@@ -11,7 +11,7 @@
 ## Nowak [1991] (secondary); bat body/brain courtesy of D. Wong.
 ##
 ## Frozen source: Glendenning_Masterton_1998_Table1_snapshot.csv, written by
-## Glendenning_Masterton_1998_extract_snapshot.py from the born-digital text
+## Glendenning_Masterton_1998_Table1_snapshot.py from the born-digital text
 ## layer (word coordinates; no values typed) and checked against page renders.
 ## No __ReadMe.xlsx row yet: Item encoded derived by the house convention.
 

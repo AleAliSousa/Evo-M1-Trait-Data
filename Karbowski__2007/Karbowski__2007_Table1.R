@@ -124,7 +124,7 @@ read_supp <- function(tid) {
   p <- file.path(folder, paste0("Karbowski__2007_Table", tid, ".csv"))
   if (!file.exists(p))
     stop("Sibling supplementary build missing: ", basename(p),
-         " -- run Karbowski__2007_TablesS1-S23.R first.", call. = FALSE)
+         " -- run the Karbowski__2007_TableS<N>.R scripts first.", call. = FALSE)
   read_csv(p, show_col_types = FALSE, progress = FALSE)
 }
 supp_rows <- function(tid, sub) {

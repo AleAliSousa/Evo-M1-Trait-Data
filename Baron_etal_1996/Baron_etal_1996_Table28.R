@@ -1,6 +1,6 @@
 # Baron, Stephan & Frahm 1996, Table28: volumes of the cerebellar nuclei. The CER column is the same measure as Table 10's cerebellum.
 # Frozen source: Baron_etal_1996_Table28_snapshot.csv, produced by the coordinate-based
-# PDF transcription in Baron_etal_1996_extract_snapshots.R, which is checked on
+# PDF transcription in Baron_etal_1996_Table28_snapshot.R, which is checked on
 # every run against the frozen Table 10 and Table 32 snapshots.
 
 suppressPackageStartupMessages(library(readxl))

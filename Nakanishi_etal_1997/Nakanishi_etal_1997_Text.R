@@ -5,7 +5,7 @@
 #
 # Values printed in running text (Abstract, Results, Discussion). Reads the constructed,
 # frozen snapshot Nakanishi_etal_1997_Text_snapshot.csv (one row per printed
-# number, written by Nakanishi_etal_1997_extract_snapshot.R), parses each lexeme
+# number, written by Nakanishi_etal_1997_Text_snapshot.R), parses each lexeme
 # (single value or range 'a~b'), attaches the variable the passage reports and the
 # merge's standard units, and checks restatements against TABLE II. No value is typed here.
 # ---------------------------------------------------------------------------
@@ -28,7 +28,7 @@ locus <- sub(paste0("^", paper, "_"), "", item_name)
 
 doi <- "10.1007/BF03011974"
 
-## ---- read the frozen snapshot (written by <paper>_extract_snapshot.R) ----------
+## ---- read the frozen snapshot (written by Nakanishi_etal_1997_Text_snapshot.R) ----------
 read_snapshot <- function(file, header = FALSE) {
   x <- read.csv(file, header = header, colClasses = "character", na.strings = character(0),
                 check.names = FALSE, encoding = "UTF-8")

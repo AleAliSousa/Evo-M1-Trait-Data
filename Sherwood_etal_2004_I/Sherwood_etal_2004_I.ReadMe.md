@@ -10,13 +10,17 @@ so this folder is **not part of the volume merge** (`__merging_volumes/`). Built
 convention as a standalone cytoarchitecture dataset.
 
 ## Source -> Snapshot
-`Sherwood_etal_2004_l.xlsx` sheets `publishedTable4`/`publishedTable5` frozen as
-`..._Table4_snapshot.csv` / `..._Table5_snapshot.csv` (faithful to print; Table 5 is transposed,
-species in columns, as printed).
+The published tables (Adobe export of the PDF) are frozen as `Sherwood_etal_2004_I_Table4_snapshot.xlsx`
+(sheet `publishedTable4`) and `Sherwood_etal_2004_I_Table5_snapshot.xlsx` (sheet `publishedTable5`),
+faithful to print: row 1 is the printed caption, the headings follow; Table 5 is transposed, species in
+columns, as printed. There is no snapshot script (digital export, hand-kept). `Sherwood_etal_2004_l.xlsx`
+is the earlier reformatted workbook and is no longer read by any script.
 
 ## Data readable
-`Sherwood_etal_2004_I.R` -> `Sherwood_etal_2004_I_Table4.csv` and `..._Table5.csv` (tidy, species in
-rows). `GLI_M1.csv` is a pre-existing convenience file joining Table 4 (layer GLI) and Table 5
+`Sherwood_etal_2004_I_Table4.R` -> `Sherwood_etal_2004_I_Table4.csv` and `Sherwood_etal_2004_I_Table5.R` -> `Sherwood_etal_2004_I_Table5.csv`
+(tidy, species in rows). Each script reads only its own snapshot; `Table5.R` skips the caption row and
+transposes the printed layout (features in rows) to species in rows. The `source` column holds the
+paper token `Sherwood_etal_2004_I`, as in the committed CSV/TSV. `GLI_M1.csv` is a pre-existing convenience file joining Table 4 (layer GLI) and Table 5
 (profile moments) by species.
 
 ## Note on __ReadMe.xlsx

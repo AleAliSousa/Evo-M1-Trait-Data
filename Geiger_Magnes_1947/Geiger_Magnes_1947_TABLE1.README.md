@@ -18,7 +18,7 @@ O2 consumption per 15-min period of perfusion, three groups by functional state 
 
 ```
 Source PDF
-  -> Geiger_Magnes_1947_extract_snapshot.R        verbatim printed block, refuses to overwrite a differing frozen copy
+  -> Geiger_Magnes_1947_TABLE1_snapshot.R        verbatim printed block, refuses to overwrite a differing frozen copy
   -> Geiger_Magnes_1947_TABLE1_snapshot.csv   FROZEN: 28 printed rows
   -> Geiger_Magnes_1947_TABLE1.R              parse + table checks (no values typed)
   -> Geiger_Magnes_1947_TABLE1.csv            127 rows (one per printed value)  ("use this")

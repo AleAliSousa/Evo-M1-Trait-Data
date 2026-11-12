@@ -18,7 +18,7 @@ Glucose and O2 consumption of the perfused brain in 12 experiments.
 
 ```
 Source PDF
-  -> Geiger_Magnes_1947_extract_snapshot.R        verbatim printed block, refuses to overwrite a differing frozen copy
+  -> Geiger_Magnes_1947_TABLE2_snapshot.R        verbatim printed block, refuses to overwrite a differing frozen copy
   -> Geiger_Magnes_1947_TABLE2_snapshot.csv   FROZEN: 17 printed rows
   -> Geiger_Magnes_1947_TABLE2.R              parse + table checks (no values typed)
   -> Geiger_Magnes_1947_TABLE2.csv            72 rows (one per printed value)  ("use this")

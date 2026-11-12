@@ -88,9 +88,22 @@ the curator's judgement and the shape of the source table.
   is the most robust for messy multi-tier headers and is preferred for the volumes lineage; a plain
   header read (`read_excel`/`read.csv` with real headers) is fine for clean tables. The invariant is
   reproducibility from the frozen snapshot, *not* the read method.
-- **Where the snapshot comes from.** A hand-built `_snapshot.xlsx`, or an `*_extract.R` / scrape that
-  builds the snapshot from a PDF (`tabulapdf`) or HTML (`rvest`) and saves it before cleaning. A
-  combined extract-then-clean script is acceptable **provided it writes the snapshot hardcopy first**.
+- **Where the snapshot comes from.** A hand-built `_snapshot.xlsx`, or a `<Item>_snapshot.R` that
+  builds the snapshot from a PDF (`tabulapdf`) or HTML (`rvest`) and saves it. The snapshot script is
+  always separate from the item script (see the **one-script-per-output rule** below); a combined
+  extract-then-clean script is **not** allowed.
+
+**One-script-per-output rule (house convention).**
+
+- Every analysis CSV/TSV has its own script, `<Item>.R`, named exactly like the CSV. One script never
+  writes two items.
+- The item script only **reads** the frozen snapshot; it never writes it.
+- If a snapshot has to be generated (scrape, PDF extract, `pdftools` regex), that is a separate script
+  with the same name plus `_snapshot`: `<Item>_snapshot.R` -> `<Item>_snapshot.<ext>`. Not every item has
+  one: a digital-native source copy-renamed by hand, or a hand transcription, has no snapshot script.
+- One snapshot per item. Items never share a snapshot file. If a paper table feeds two items, give each its
+  own copy (`<ItemA>_snapshot.<ext>`, `<ItemB>_snapshot.<ext>`) and, where a snapshot script exists, its
+  own `<Item>_snapshot.R`. Do not name scripts `*_extract_snapshot.R`, `*_extract.R` or `*_extract_snapshots.R`.
 - **Where species harmonisation happens.** Centrally via `_keys/Stephan/species_key.csv` (volumes
   default) **or** by sourcing that same key inside the per-paper script (the Bush pattern) — as long
   as the printed name is preserved (invariant 3) and the key file stays the single source of truth.
@@ -113,8 +126,9 @@ One folder per publication; one set of files per **table** built. `<Folder>` is 
 <Folder>/
   <rawfile>.pdf                              the publication (keep it)
   <rawfile>.xlsx                             Adobe "Export PDF → Excel" of the paper (provenance)
-  <Folder>_Table<N>_snapshot.xlsx            the snapshot (sheet "Table<N>")
-  <Folder>_Table<N>.R                        reformat: snapshot → CSV (+ TSV)
+  <Folder>_Table<N>_snapshot.xlsx            the snapshot (sheet "Table<N>"), this item's own, never shared
+  <Folder>_Table<N>_snapshot.R               OPTIONAL: writes ONLY the snapshot above (scrape / PDF extract)
+  <Folder>_Table<N>.R                        reformat: reads the snapshot → CSV (+ TSV); never writes the snapshot
   <Folder>_Table<N>.csv                      analysis-ready data ("use this")
   <Folder>_Table<N>.README.md                source + steps + checks
   reference_tables/
@@ -156,10 +170,9 @@ source→snapshot step is reproducible rather than hand-typed (see `Smaers_etal_
 ## 3. Reformat (`<Folder>_Table<N>.R`): snapshot → analysis CSV
 
 The reformat does **all** the cleaning the snapshot deliberately left undone. Its input is the
-**frozen snapshot** — either read it directly, or, if the script also *builds* the snapshot from a
-PDF/HTML source, **write the snapshot hardcopy first and then clean from it** (the extract and the
-clean may live in one script, e.g. `Burish_etal_2010`, `Smaers_etal_2011_..._extract.R`, or in two).
-What matters is that the cleaning is reproducible from a saved snapshot, not silently from the source.
+**frozen snapshot**, which the script reads directly. If the snapshot is built from a PDF/HTML source,
+that happens in the separate `<Item>_snapshot.R` (run first); `<Item>.R` never builds it. The cleaning
+is thus reproducible from a saved snapshot, not silently from the source.
 
 Reading method is the curator's choice (see §0a): **positional** (`col_names = FALSE`) is preferred
 for multi-tier/footnote-heavy headers; a plain header read is fine for clean tables. Pattern for the
@@ -188,14 +201,14 @@ cleaned `data.frame` literals and writes both the "snapshot" and the CSV from th
 source at all: the two files are the same product twice, and nothing independent remains to audit
 the cleaning against (see the snapshot HOWTO, "The other way to fake a snapshot"). The build `.R`
 **reads** the frozen file — it never contains the table's values. Where the frozen file's values
-come from is a separate, earlier step with its own rules: **prefer a dedicated `*_extract_snapshot.R`
+come from is a separate, earlier step with its own rules: **prefer a dedicated `<Item>_snapshot.R`
 that pulls the values from the PDF's text layer at run time** (regex captures + anchored printed
-literals, no values in the script — `Jacob_etal_2021_extract_snapshot.R` is the model, including
+literals, no values in the script — the (legacy-named) `Jacob_etal_2021_extract_snapshot.R` is the model, including
 two-column reading-order reconstruction and a guard that refuses to overwrite a differing frozen
 copy); when the source is a scan with no usable text layer, a hand transcription typed **into the
 frozen file** (or a verbatim printed-layout block inside the extract script, the
-`Jacobs_etal_2018_extract_snapshot.R` pattern) is the fallback. Either way the extract writes the
-hardcopy first and the build reads it.
+legacy `Jacobs_etal_2018_extract_snapshot.R` pattern, now `<Item>_snapshot.R`) is the fallback. Either way the
+snapshot script writes the hardcopy and the item script only reads it.
 
 ---
 
@@ -372,6 +385,35 @@ tables have none; then there is nothing to do — don't invent a check.
 
 Examples: `Kamiya_Pirlot_1980_TABLE1.R` (one sum row), `Pirlot_Nelson_1978_TABLE3.R` (three species
 columns, with dash cells and a misprinted row the check exposes).
+
+## 7b. Cross-item internal checks — `<Paper>/internal_checks/`
+
+A check that needs a **sibling item's** snapshot (e.g. Table 6 compared with the mean row of Table 4,
+a text restatement compared with Table I, a derived figure multiplied against another figure) is
+not part of building the item. It lives in its own folder inside the paper folder, apart from the
+snapshots and the CSV/TSV scripts:
+
+```
+<Paper>/internal_checks/<Item>_internal_check.R     reads snapshots (own + siblings), writes the result below
+<Paper>/internal_checks/<Item>_internal_check.csv   one row per check, same columns as table_checks (§7a)
+```
+
+- This is **not** the `Evo-M1-Trait-Data-restricted` comparison folder (that holds comparisons with
+  other datasets and never lives in the public repo); `internal_checks/` only tests the paper
+  against itself.
+- The item script `<Item>.R` reads **only its own snapshot** and never a sibling's snapshot or
+  CSV. Checks that use only the item's own snapshot (sum rows, percentages) stay in the item script
+  and in `table_checks` (§7a); only the cross-item part moves.
+- The check script only reads: it never writes a snapshot, analysis CSV or TSV, and never changes a
+  value. A mismatch is warned and kept as printed (same rules as §7a: tolerances, dashes are not
+  zeros, errata via `ERRATA_CONVENTION.md`).
+- Same self-locating header and house variable names as the item script (`folder`, `base`,
+  `item_name` derived from the file name minus `_internal_check`).
+- Note it in the item's ReadMe (`## Table checks`: "cross-item check in `internal_checks/`, result ...").
+- **Not a check = not moved.** If the sibling read supplies values that end up in the item's CSV/TSV
+  (an animal-name lookup, a join key, a derived item), it is a data dependency, not a check:
+  leave it, record it as `needs_owner`, and the owner decides how to make the item self-contained
+  (e.g. a `reference_tables/<Item>_<lookup>.csv` that belongs to the item).
 
 ---
 

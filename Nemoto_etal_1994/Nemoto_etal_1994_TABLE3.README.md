@@ -18,15 +18,17 @@ Total (conscious), basal (isoelectric thiopental) and active (= total - basal) c
 
 ```
 Source PDF
-  -> Nemoto_etal_1994_extract_snapshot.R        verbatim printed block, refuses to overwrite a differing frozen copy
+  -> Nemoto_etal_1994_TABLE3_snapshot.R        verbatim printed block, refuses to overwrite a differing frozen copy
   -> Nemoto_etal_1994_TABLE3_snapshot.csv   FROZEN: 11 printed rows
-  -> Nemoto_etal_1994_TABLE3.R              parse + table checks (no values typed)
+  -> Nemoto_etal_1994_TABLE3.R              parse + own-snapshot table checks (no values typed)
   -> Nemoto_etal_1994_TABLE3.csv            21 rows (one per printed value)  ("use this")
   -> __Public/comparative-data/10.1097%2F00008506-199407000-00004_TABLE3.tsv
   -> reference_tables/Nemoto_etal_1994_TABLE3_definitions.csv
 ```
 
-TABLE 3's checks read the frozen TABLE 2 snapshot.
+The item script reads only its own snapshot. TABLE 3's comparison with TABLE 2 (Total / Basal vs the
+TABLE 2 measurement means) needs the sibling TABLE 2 snapshot and lives in `internal_checks/`
+(build HOWTO 7b), see Table checks below.
 
 ## Who read the values, when, and how it was checked
 
@@ -39,7 +41,16 @@ Transcribed **blind** by an AI assistant (Claude) on 2026-11-02 from 300-dpi pag
 
 ## Table checks
 
-Result of an actual R run (2026-11-02): **6 pass, 6 mismatch, 3 not evaluable.** Tolerance: half a unit in the last printed decimal of every input, propagated, plus half a unit of the printed result (significant-digit units for the scaled human values of Schmidt TABLE 6). 'Not evaluable' marks relations that hold only per animal (mean of products/ratios) or values that cannot be traced.
+Result of an actual R run (2026-11-02, all 15 checks in the item script): **6 pass, 6 mismatch, 3 not evaluable.**
+Since the cross-item split the same 15 checks run in two places (R run in a temp copy, 2026-11-12, same result):
+
+* `Nemoto_etal_1994_TABLE3.R` (`table_checks`, own snapshot only: Active = Total - Basal, Basal % + Active % = 100, OGI):
+  **5 pass, 1 mismatch (`active_CMRG`), 3 not evaluable.**
+* **Cross-item check in `internal_checks/`:** `internal_checks/Nemoto_etal_1994_TABLE3_internal_check.R` (read-only; reads the
+  TABLE 3 and TABLE 2 snapshots) writes `internal_checks/Nemoto_etal_1994_TABLE3_internal_check.csv`:
+  **1 pass, 5 mismatch** (Total CBF, Basal CBF, Total CMRO2, Total CMRG, Basal CMRG vs the TABLE 2 means; kept as printed).
+
+Tolerance: half a unit in the last printed decimal of every input, propagated, plus half a unit of the printed result (significant-digit units for the scaled human values of Schmidt TABLE 6). 'Not evaluable' marks relations that hold only per animal (mean of products/ratios) or values that cannot be traced.
 
 Every mismatch is recorded as an erratum below (Nemoto_etal_1994-E001, Nemoto_etal_1994-E002, Nemoto_etal_1994-E003, Nemoto_etal_1994-E004, Nemoto_etal_1994-E005, Nemoto_etal_1994-E006); the printed values are kept in the snapshot, CSV and TSV.
 

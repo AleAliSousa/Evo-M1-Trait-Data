@@ -7,7 +7,7 @@
 # the normal and dwarf rabbits", p. 527 (PDF page 15).
 #
 # Reads the frozen snapshot (Latimer_Sawin_1955_TABLE7_snapshot.xlsx, written by
-# Latimer_Sawin_1955_extract_snapshot.R) and does all the cleaning:
+# Latimer_Sawin_1955_TABLE7_snapshot.R) and does all the cleaning:
 #   - one analysis row per printed numeric cell, in printed order, read along each
 #     printed row: 8 printed rows x 7 cells = 56 rows (long format);
 #   - two printed blocks, "35 normal and 15 dwarf males" and "30 normal and 20 dwarf

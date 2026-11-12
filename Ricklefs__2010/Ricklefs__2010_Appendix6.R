@@ -9,7 +9,7 @@
 # Three printed sections with different columns: Mammals, Birds, Reptiles and amphibians.
 #
 # Frozen source: Ricklefs__2010_Appendix6_snapshot.csv, written from the SI text layer by
-# Ricklefs__2010_SIAppendices_extract_snapshot.R (sections stacked; headers as printed per section).
+# Ricklefs__2010_Appendix6_snapshot.R (sections stacked; headers as printed per section).
 # This script reads it; it never contains table values.
 
 ## ---- 0. Paths: self-locating, so it runs from any working directory ----
@@ -72,13 +72,8 @@ final.dataframe <- data.frame(
   Max_longevity_y      = pick("Oldest (y)", "Longevity (y)"),
   stringsAsFactors = FALSE)
 
-# ---- 3. Check: every species here has Weibull parameters in Appendix 4 (same analysis set) ----
-a4 <- file.path(item_dir, paste0(folder, "_Appendix4_snapshot.csv"))
-if (file.exists(a4)) {
-  a4s <- read.csv(a4, check.names = FALSE, colClasses = "character", encoding = "UTF-8")
-  in4 <- final.dataframe$Species_Ricklefs2010 %in% paste(a4s$Genus, a4s$Species)
-  cat("species also in Appendix 4 (exact printed binomial):", sum(in4), "/", nrow(final.dataframe), "\n")
-}
+# ---- 3. (Check "every species here is also in Appendix 4" needs the Appendix 4 snapshot, so it lives in
+#         internal_checks/Ricklefs__2010_Appendix6_internal_check.R; this script reads only its own snapshot.) ----
 
 # ---- 4. References (citation filled from the SI list below) ----
 references <- data.frame(ref_key = "7", cited_in_column = "(caption)", citation = "",

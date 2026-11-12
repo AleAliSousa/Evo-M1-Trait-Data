@@ -18,7 +18,7 @@ Insulin hypoglycaemia and glucose (one experiment). The O2 CONSUMED header print
 
 ```
 Source PDF
-  -> Schmidt_etal_1945_extract_snapshot.R        verbatim printed block, refuses to overwrite a differing frozen copy
+  -> Schmidt_etal_1945_TABLE5_snapshot.R        verbatim printed block, refuses to overwrite a differing frozen copy
   -> Schmidt_etal_1945_TABLE5_snapshot.csv   FROZEN: 8 printed rows
   -> Schmidt_etal_1945_TABLE5.R              parse + table checks (no values typed)
   -> Schmidt_etal_1945_TABLE5.csv            45 rows (one per printed value)  ("use this")

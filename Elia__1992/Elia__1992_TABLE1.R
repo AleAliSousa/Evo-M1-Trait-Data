@@ -5,7 +5,7 @@
 # TABLE 1 "Contribution of different organs and tissues to body weight and basal metabolic rate in the
 # reference male, reference female, and a child", p. 63.   SECONDARY compilation (see README).
 #
-# Reads the frozen snapshot (Elia__1992_TABLE1_snapshot.csv, written by Elia__1992_extract_snapshot.R) and:
+# Reads the frozen snapshot (Elia__1992_TABLE1_snapshot.csv, written by Elia__1992_TABLE1_snapshot.R) and:
 #   - reshapes to one analysis row per printed cell group (organ x subject: reference male / reference
 #     female / child 0.5 y), in printed order, reading down each organ row; the 'Total' row is kept as
 #     row_type 'total'; the 'Miscellaneous tissues by difference' row as row_type 'by_difference';

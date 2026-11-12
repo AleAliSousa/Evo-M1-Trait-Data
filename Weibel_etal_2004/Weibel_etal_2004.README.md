@@ -25,7 +25,9 @@ Names as published: "Equus caballlus" (sic, horse rows), "Helogale pervula" (sic
 ## Source → Snapshot → Data readable
 Both tables transcribed from the folder PDF (`pdftotext -layout`; Table 1 verified against the
 rendered page image) into `Weibel_etal_2004_Tables_snapshot.xlsx` (sheets `Table1`, `TableA1`,
-`notes`). Per-item `.R` → `.csv` (**use these**) + public TSVs. Definitions in
+`notes`); since the one-snapshot-per-item convention each item reads its own byte-identical copy
+(`Weibel_etal_2004_Table1_snapshot.xlsx`, `Weibel_etal_2004_TableA.1_snapshot.xlsx`); the original
+shared file is kept for the owner to retire. Per-item `.R` → `.csv` (**use these**) + public TSVs. Definitions in
 `reference_tables/`. Built offline 2026-08-31 (Python mirror) — re-run both .R in RStudio.
 
 ## Merge note — NOT yet wired

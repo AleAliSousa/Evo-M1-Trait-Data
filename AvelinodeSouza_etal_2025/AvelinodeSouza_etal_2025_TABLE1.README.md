@@ -14,7 +14,8 @@ Download publication PDF from source (DOI): https://doi.org/10.1002/cne.70089
 
 Table 1 extracted from the PDF (page 5) with `tabulapdf` (`extract_tables(pdf_file, pages = c(5))`); headers reassembled and broken row-labels merged in the script.
 
-- `AvelinodeSouza_etal_2025_TABLE1.R` — extraction + standardization script
+- `AvelinodeSouza_etal_2025_TABLE1_snapshot.R` — extraction script (writes only the snapshot)
+- `AvelinodeSouza_etal_2025_TABLE1.R` — standardization script (reads the snapshot)
 - `AvelinodeSouza_etal_2025_TABLE1_snapshot.csv` — raw snapshot (Structure × Measure, long)
 
 ## Data readable

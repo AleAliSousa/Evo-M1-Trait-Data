@@ -8,7 +8,7 @@
 # males and females", p. 517 (PDF page 5).
 #
 # Reads the frozen snapshot (Latimer_Sawin_1955_TABLE1_snapshot.xlsx, written by
-# Latimer_Sawin_1955_extract_snapshot.R) and does all the cleaning:
+# Latimer_Sawin_1955_TABLE1_snapshot.R) and does all the cleaning:
 #   - one analysis row per printed numeric cell, in printed order, read along each
 #     printed row: 9 printed rows x 7 cells = 63 rows (long format);
 #   - panel, sex, group and n come from the printed panel titles and group headers

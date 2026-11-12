@@ -1,0 +1,8 @@
+"obs_row"	"binomial"	"common_name"	"subject"	"metric"	"frequency_khz"	"value"	"value_unit"	"evidence_type"	"data_role"	"source"
+1	"Mustela putorius"	"Ferret"	"mean (97 & 98)"	"hearing_range_60dB_low"	0.037	60	"dB SPL criterion"	"text (Results, p.271)"	"primary"	"this study"
+2	"Mustela putorius"	"Ferret"	"mean (97 & 98)"	"hearing_range_60dB_high"	44	60	"dB SPL criterion"	"text (Results, p.271)"	"primary"	"this study"
+3	"Mustela putorius"	"Ferret"	"mean (97 & 98)"	"best_sensitivity_region_low"	8		"kHz (qualitative region bound)"	"text (Results, p.271)"	"primary"	"this study"
+4	"Mustela putorius"	"Ferret"	"mean (97 & 98)"	"best_sensitivity_region_high"	12		"kHz (qualitative region bound)"	"text (Results, p.271)"	"primary"	"this study"
+5	"Mustela putorius"	"Ferret"	"ferret 97"	"best_threshold_approx"	8	-10	"dB SPL (approx)"	"figure (digitized, Fig. 2)"	"primary"	"this study"
+6	"Mustela putorius"	"Ferret"	"ferret 98"	"best_threshold_approx"	12	-5	"dB SPL (approx)"	"figure (digitized, Fig. 2)"	"primary"	"this study"
+7	"Mustela putorius"	"Ferret"	"ferret 97 vs 98"	"mid_freq_discrepancy_8kHz"	8	27	"dB (difference)"	"text (Discussion, p.272)"	"primary"	"this study"

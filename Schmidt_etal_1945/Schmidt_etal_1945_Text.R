@@ -5,10 +5,11 @@
 #
 # Values printed in running text rather than in a table. Reads the constructed,
 # frozen snapshot Schmidt_etal_1945_Text_snapshot.csv (one row per printed
-# number, written by Schmidt_etal_1945_extract_snapshot.R), parses each printed lexeme
+# number, written by Schmidt_etal_1945_Text_snapshot.R), parses each printed lexeme
 # (single value, range 'a-b', bound '<x'), attaches the variable the passage
 # reports (curator mapping by text_row below) and the merge's standard units,
-# and checks restatements against the paper's own tables. No value is typed here.
+# and keeps the restatement check against the paper's own tables out of this script (it needs
+# a sibling item: internal_checks/Schmidt_etal_1945_Text_internal_check.R). No value is typed here.
 # ---------------------------------------------------------------------------
 
 .sp <- local({
@@ -29,7 +30,7 @@ locus <- sub(paste0("^", paper, "_"), "", item_name)
 
 doi <- "10.1152/ajplegacy.1945.143.1.33"
 
-## ---- read the frozen snapshot (written by <paper>_extract_snapshot.R) ----------
+## ---- read the frozen snapshot (written by Schmidt_etal_1945_Text_snapshot.R) ----------
 read_snapshot <- function(file, header = FALSE) {
   x <- read.csv(file, header = header, colClasses = "character", na.strings = character(0),
                 check.names = FALSE, encoding = "UTF-8")
@@ -75,15 +76,6 @@ hu_sig <- function(lex) { s <- gsub("[^0-9.]", "", lex)
   ifelse(grepl("\\.", s), hu(lex), { z <- nchar(s) - nchar(sub("0+$", "", s)); 0.5 * 10^z }) }
 cell_num <- function(r, c) num(parse_cell(snap[r, c])$value_printed)
 cell_lex <- function(r, c) parse_cell(snap[r, c])$value_printed
-table_checks <- data.frame(check_id = character(), basis = character(), observed = numeric(),
-                           printed = numeric(), difference = numeric(), tolerance = numeric(),
-                           status = character(), note = character(), stringsAsFactors = FALSE)
-add_check <- function(id, basis, observed, printed, tolerance, note = NA_character_, status = NULL) {
-  if (is.null(status)) status <- if (is.na(observed) || is.na(printed)) "not_evaluable" else
-    if (abs(observed - printed) <= tolerance + 1e-9) "pass" else "mismatch"
-  table_checks[nrow(table_checks) + 1L, ] <<- list(id, basis, observed, printed,
-    observed - printed, tolerance, status, note)
-}
 
 ## ---- unit standardisation (the merge's factors) -----------------------------------
 ## CMRO2: ml O2 -> umol x 44.64 (as __merging_cerebral_metabolic_rate, O2_UMOL_PER_ML).
@@ -137,24 +129,6 @@ final.dataframe$value_std  <- vapply(std, function(s) s[[1]], numeric(1))
 final.dataframe$units_std  <- vapply(std, function(s) s[[2]], character(1))
 final.dataframe$conversion <- vapply(std, function(s) s[[3]], character(1))
 final.dataframe$note <- tx$curator_note
-
-## ---- table checks (build HOWTO s.7a): restatements against the paper's tables --
-
-t6 <- read.csv(paste0(paper, "_TABLE6.csv"), stringsAsFactors = FALSE, encoding = "UTF-8")
-mx <- t6$value[t6$variable == "CMRO2_ml_100g_min" & grepl("maximum", t6$row_label_as_printed)][1]
-add_check("discussion_row1", 'p. 46 value = TABLE 6 "Normal" maximum O2 uptake', mx, final.dataframe$value[1], 0)
-
-
-tally <- table(factor(table_checks$status, c("pass", "mismatch", "not_evaluable")))
-message(item_name, ": table checks  pass=", tally[["pass"]], "  mismatch=", tally[["mismatch"]],
-        "  not_evaluable=", tally[["not_evaluable"]])
-if (tally[["mismatch"]] > 0L) {
-  bad <- table_checks[table_checks$status == "mismatch", ]
-  for (i in seq_len(nrow(bad)))
-    warning(sprintf("%s: %s observed %.6g vs printed %.6g (diff %.3g, tol %.3g)", bad$check_id[i],
-                    bad$basis[i], bad$observed[i], bad$printed[i], bad$difference[i],
-                    bad$tolerance[i]), call. = FALSE)
-}
 
 ## ---- outputs ----------------------------------------------------------------
 write_utf8_table(final.dataframe, paste0(base, ".csv"), sep = ",", na = "NA")

@@ -2,10 +2,11 @@
 #
 # Buchsbaum et al. (1989), Life Sciences 45: 1349-1356. Values printed in the
 # Summary (p. 1349) and RESULTS (p. 1353). Reads the constructed, frozen
-# snapshot; checks every value against the frozen table snapshot. Rows 2-4
-# restate the Lateral-cortex "Mean" row of the table (same means) but print
-# different SDs for NREM and REM; rows 5-8 are differences/percentages computed
-# from table means; row 1 is a whole-brain % reduction. No value typed.
+# snapshot. Rows 2-4 restate the Lateral-cortex "Mean" row of the table (same
+# means) but print different SDs for NREM and REM; rows 5-8 are
+# differences/percentages computed from table means; row 1 is a whole-brain %
+# reduction. No value typed. The comparison with the TableI snapshot needs the
+# sibling item and lives in internal_checks/Buchsbaum_etal_1989_Text_internal_check.R.
 
 .sp <- local({
   a <- grep("^--file=", commandArgs(FALSE), value = TRUE)
@@ -69,10 +70,6 @@ long_cells <- function(snap, rows, arms, section, species, structure = snap[rows
 
 tx <- read_snapshot(paste0(base, "_snapshot.csv"), header = TRUE)
 stopifnot(nrow(tx) == 8L)
-tb <- read_snapshot(paste0(paper, "_TableI_snapshot.csv"))
-stopifnot(identical(dim(tb), c(27L, 7L)))
-row_of <- function(label, after = NULL) { i <- which(tb[, 1] == label); if (!is.null(after)) i <- i[i > which(tb[, 1] == after)][1]; i[1] }
-lat_mean <- row_of("Mean", "Lateral cortex")
 final.dataframe <- data.frame(
   text_row = as.integer(tx$text_row), page = tx$page, location = tx$location,
   passage_as_printed = tx$passage_as_printed, subjects_as_printed = tx$subjects_as_printed,
@@ -89,50 +86,6 @@ final.dataframe$value_status <- ifelse(final.dataframe$measure == "CMRglc", "res
 final.dataframe$value_status[final.dataframe$text_row == 3L] <- "restatement_of_table_mean"
 final.dataframe$species_as_published <- "normal volunteers"
 final.dataframe$note <- NA_character_
-
-
-chk <- function(id, basis, observed, printed, tol, note = NA_character_) {
-  ok <- !is.na(observed) & !is.na(printed)
-  data.frame(check_id = id, basis = basis, observed = observed, printed = printed,
-             difference = observed - printed, tolerance = tol,
-             status = ifelse(!ok, "not_evaluable", ifelse(abs(observed - printed) <= tol + 1e-9, "pass", "mismatch")),
-             note = note, stringsAsFactors = FALSE)
-}
-
-
-tv <- function(r, c) as.numeric(tb[r, c])
-mf <- row_of("Medial frontal"); pu <- row_of("Putamen"); gm <- row_of("Grand Mean")
-v <- function(r) final.dataframe$value_numeric[final.dataframe$text_row == r]
-s <- function(r) final.dataframe$dispersion_numeric[final.dataframe$text_row == r]
-regs <- which(grepl("^[0-9]+\\.[0-9]$", tb[, 2]) & !(tb[, 1] %in% c("Mean", "Grand Mean")))
-pct <- 100 * (as.numeric(tb[regs, 2]) - as.numeric(tb[regs, 4])) / as.numeric(tb[regs, 2])
-table_checks <- rbind(
-  chk("nrem_mean", "text 14.0 vs table Lateral cortex Mean NREM", v(2), tv(lat_mean, 4), 0),
-  chk("nrem_sd",   "text SD 3.7 vs table Lateral cortex Mean NREM SD", s(2), tv(lat_mean, 5), 0),
-  chk("awake_mean", "text 21.4 vs table Lateral cortex Mean Awake", v(3), tv(lat_mean, 2), 0),
-  chk("awake_sd",   "text SD 6.3 vs table Lateral cortex Mean Awake SD", s(3), tv(lat_mean, 3), 0),
-  chk("rem_mean", "text 19.2 vs table Lateral cortex Mean REM", v(4), tv(lat_mean, 6), 0),
-  chk("rem_sd",   "text SD 4.3 vs table Lateral cortex Mean REM SD", s(4), tv(lat_mean, 7), 0),
-  chk("medial_frontal_diff", "text 10.5 vs table Medial frontal Awake - NREM", tv(mf, 2) - tv(mf, 4), v(5), 0.1),
-  chk("medial_frontal_pct", "text 38.2% vs 100 x (Awake - NREM)/Awake, Medial frontal", 100 * (tv(mf, 2) - tv(mf, 4)) / tv(mf, 2), v(6), 0.4),
-  chk("putamen_diff", "text 7.5 vs table Putamen Awake - NREM", tv(pu, 2) - tv(pu, 4), v(7), 0.1),
-  chk("putamen_pct", "text 28.4% vs 100 x (Awake - NREM)/Awake, Putamen", 100 * (tv(pu, 2) - tv(pu, 4)) / tv(pu, 2), v(8), 0.4),
-  chk("largest_pct_is_medial_frontal", "largest % NREM decrease among the 12 regions = Medial frontal (observed = its rank)", rank(-pct)[tb[regs, 1] == "Medial frontal"], 1, 0),
-  chk("smallest_pct_is_putamen", "smallest % NREM decrease among the 12 regions = Putamen (observed = its rank from the bottom)", rank(pct)[tb[regs, 1] == "Putamen"], 1, 0),
-  chk("summary_23pct", "Summary 'about a 23% reduction ... across the entire brain' vs 100 x (Awake - NREM)/Awake of the Grand Mean",
-      100 * (tv(gm, 2) - tv(gm, 4)) / tv(gm, 2), v(1), 1.5, "'about' allows a wide tolerance (1.5 points); the table gives 32.3")
-)
-
-tally <- table(factor(table_checks$status, c("pass", "mismatch", "not_evaluable")))
-message(item_name, ": table checks  pass=", tally[["pass"]], "  mismatch=", tally[["mismatch"]],
-        "  not_evaluable=", tally[["not_evaluable"]])
-if (tally[["mismatch"]] > 0L) {
-  bad <- table_checks[table_checks$status == "mismatch", ]
-  for (i in seq_len(nrow(bad)))
-    warning(sprintf("%s: %s observed %.6g vs printed %.6g (diff %.3g, tol %.3g)",
-                    bad$check_id[i], bad$basis[i], bad$observed[i], bad$printed[i],
-                    bad$difference[i], bad$tolerance[i]), call. = FALSE)
-}
 
 
 ## ---- outputs ----------------------------------------------------------------

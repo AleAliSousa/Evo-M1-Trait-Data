@@ -18,7 +18,7 @@ Three sequential whole-brain measurements in six conscious monkeys, then three u
 
 ```
 Source PDF
-  -> Nemoto_etal_1994_extract_snapshot.R        verbatim printed block, refuses to overwrite a differing frozen copy
+  -> Nemoto_etal_1994_TABLE2_snapshot.R        verbatim printed block, refuses to overwrite a differing frozen copy
   -> Nemoto_etal_1994_TABLE2_snapshot.csv   FROZEN: 11 printed rows
   -> Nemoto_etal_1994_TABLE2.R              parse + table checks (no values typed)
   -> Nemoto_etal_1994_TABLE2.csv            18 rows (one per printed value)  ("use this")

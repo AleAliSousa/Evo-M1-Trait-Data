@@ -17,7 +17,7 @@ PDF in this folder: `elia_1997 p384-411.pdf`, COPIED (bytes identical) from the 
 
 ```
 Source (PDF)
-  -> Elia__1997_extract_snapshot.R   writes the frozen snapshot
+  -> Elia__1997_TABLE8_snapshot.R   writes the frozen snapshot
   -> Elia__1997_TABLE8_snapshot.csv   FROZEN: 16 rows x 11 cols
   -> Elia__1997_TABLE8.R   parse + derived columns + table checks
   -> Elia__1997_TABLE8.csv   6 rows x 36 cols  ("use this")
@@ -27,7 +27,7 @@ Source (PDF)
 
 ### Who read the values, when, and how it was checked
 
-**Hand transcription** (HOWTO method 5) by an AI assistant (Claude) on 2026-11-03 from 110- and 300-dpi renders of PDF page 19 (printed p. 401), typed as a verbatim printed-layout block into `Elia__1997_extract_snapshot.R`, which freezes it and refuses to overwrite a differing frozen copy or to run outside a UTF-8 locale. The OCR text layer was not usable for the table. The only independent check is the table's own arithmetic (below): all 51 relations were re-run, which would expose a mis-keyed digit. There was no earlier transcription of this table to compare with, and **no second human reading yet**. The build script reads the frozen file, contains no table values, and was run with `Rscript` (conda env `evom1-r`, `LC_ALL=en_US.UTF-8`) on 2026-11-03.
+**Hand transcription** (HOWTO method 5) by an AI assistant (Claude) on 2026-11-03 from 110- and 300-dpi renders of PDF page 19 (printed p. 401), typed as a verbatim printed-layout block into `Elia__1997_TABLE8_snapshot.R`, which freezes it and refuses to overwrite a differing frozen copy or to run outside a UTF-8 locale. The OCR text layer was not usable for the table. The only independent check is the table's own arithmetic (below): all 51 relations were re-run, which would expose a mis-keyed digit. There was no earlier transcription of this table to compare with, and **no second human reading yet**. The build script reads the frozen file, contains no table values, and was run with `Rscript` (conda env `evom1-r`, `LC_ALL=en_US.UTF-8`) on 2026-11-03.
 
 ### Structure of the snapshot and of the analysis CSV
 

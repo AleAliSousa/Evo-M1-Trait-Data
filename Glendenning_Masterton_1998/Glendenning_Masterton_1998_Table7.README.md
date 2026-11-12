@@ -21,7 +21,7 @@ No `__ReadMe.xlsx` row existed for this paper. **Item encoded is derived by the 
 ## Pipeline (reader named)
 
 1. **Source:** `Glendenning-1998-Comparative Morphometry of Ma.pdf` (born-digital Karger PDF).
-2. **Snapshot:** `Glendenning_Masterton_1998_Table7_snapshot.csv`, written by `Glendenning_Masterton_1998_extract_snapshot.py` (conda env `python`) from the text layer by word coordinates — no value typed by hand; caption and footnotes captured verbatim to `reference_tables/Glendenning_Masterton_1998_Table7_footnotes.csv`. The script asserts the table's structure before writing and refuses to overwrite a differing frozen copy; a second run reports "unchanged". Extraction by an AI assistant on 2026-10-28, checked against page renders (p. 84).
+2. **Snapshot:** `Glendenning_Masterton_1998_Table7_snapshot.csv`, written by `Glendenning_Masterton_1998_Table7_snapshot.R` (R, `pdftools`; port of the retired `Glendenning_Masterton_1998_Table7_snapshot.py.retired`, regenerated snapshot byte-identical in a temp dir) from the text layer by word coordinates — no value typed by hand; caption and footnotes captured verbatim to `reference_tables/Glendenning_Masterton_1998_Table7_footnotes.csv`. The script asserts the table's structure before writing and refuses to overwrite a differing frozen copy; a second run reports "unchanged". Extraction by an AI assistant on 2026-10-28, checked against page renders (p. 84).
 3. **Data readable:** `Glendenning_Masterton_1998_Table7.R` — run 2026-10-28 with `Rscript --vanilla` in env `evom1-r` (R 4.5.3): completed, 53 rows × 9 columns.
 4. **Online database:** public TSV `__Public/comparative-data/10.1159%2F000006530_Table7.tsv` from the same script.
 
@@ -32,7 +32,7 @@ Species: printed names kept; harmonised through `_keys/General/species_key.csv` 
 | file | what it is |
 |---|---|
 | `Glendenning_Masterton_1998_Table7_snapshot.csv` | frozen snapshot (printed layout) |
-| `Glendenning_Masterton_1998_extract_snapshot.py` | text-layer extraction of all seven table snapshots |
+| `Glendenning_Masterton_1998_Table7_snapshot.R` | text-layer extraction of this table's snapshot (R, `pdftools`) |
 | `Glendenning_Masterton_1998_Table7.R` | snapshot → analysis CSV + public TSV |
 | `Glendenning_Masterton_1998_Table7.csv` | analysis data |
 | `reference_tables/Glendenning_Masterton_1998_Table7_definitions.csv` | data dictionary |

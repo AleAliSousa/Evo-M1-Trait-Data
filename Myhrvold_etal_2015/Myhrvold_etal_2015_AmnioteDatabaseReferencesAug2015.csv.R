@@ -58,21 +58,12 @@ if(!identical(names(x)[seq_along(TAX)], TAX))
   stop("Taxonomy columns are not the published first seven.", call.=FALSE)
 TRAIT <- setdiff(names(x), TAX)
 
-## ---- alignment with the value table (the join this item exists to serve) -----
-## The two files must be row-for-row, taxon-for-taxon aligned for a reference cell to
-## name the source of the value cell beside it. Assert it rather than assume it.
-value_snapshot <- file.path(folder, "Myhrvold_etal_2015_AmnioteDatabaseAug2015_snapshot.csv")
-if(file.exists(value_snapshot)) {
-  v <- read_csv(value_snapshot, col_types = cols(.default = col_character()),
-                show_col_types = FALSE, progress = FALSE)
-  if(!identical(names(v), names(x)))
-    stop("Database and References files do not share a column list.", call.=FALSE)
-  if(!identical(as.matrix(v[, TAX]), as.matrix(x[, TAX])))
-    stop("Database and References files are not row-for-row, taxon-for-taxon aligned.", call.=FALSE)
-  aligned <- TRUE
-} else {
-  stop("Missing ", basename(value_snapshot), "; alignment with the value table cannot be verified.", call.=FALSE)
-}
+## ---- alignment with the value table -----------------------------------------
+## The two snapshots must be row-for-row, taxon-for-taxon aligned for a reference cell to name the
+## source of the value cell beside it. That comparison needs the sibling (Database) snapshot, so it
+## is not made here: it lives in
+## internal_checks/Myhrvold_etal_2015_AmnioteDatabaseReferencesAug2015.csv_internal_check.R
+## (build HOWTO 7b). This script reads only its own snapshot.
 
 ## ---- units, from the paper's own field-information table ---------------------
 field_info <- read.csv(file.path(folder, "Supplemental_Materials",
@@ -130,5 +121,5 @@ if(!is.na(base)) {
 } else warning("Repository root not found; public TSV skipped.")
 
 cat(item_name, ":", nrow(final.dataframe), "rows x", ncol(final.dataframe), "columns;",
-    length(TRAIT), "trait columns; alignment with the value table verified:", aligned, "\n")
+    length(TRAIT), "trait columns\n")
 print(table(final.dataframe$cell_form))

@@ -18,7 +18,7 @@ Normocapnia (n = 8), hypocapnia and hypercapnia (n = 4 each). The table prints n
 
 ```
 Source PDF
-  -> Nilsson_Siesjö_1976_extract_snapshot.R        verbatim printed block, refuses to overwrite a differing frozen copy
+  -> Nilsson_Siesjö_1976_TABLEIII_snapshot.R        verbatim printed block, refuses to overwrite a differing frozen copy
   -> Nilsson_Siesjö_1976_TABLEIII_snapshot.csv   FROZEN: 5 printed rows
   -> Nilsson_Siesjö_1976_TABLEIII.R              parse + table checks (no values typed)
   -> Nilsson_Siesjö_1976_TABLEIII.csv            18 rows (one per printed value)  ("use this")

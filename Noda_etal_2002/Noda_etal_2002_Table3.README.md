@@ -18,7 +18,7 @@ Not built: Table 1 (physiological variables). Fig. 1 (individual rCBF vs rCMRglc
 
 ```
 Source (PDF)
-  -> Noda_etal_2002_extract_snapshot.R   writes the frozen snapshot(s)
+  -> Noda_etal_2002_Table3_snapshot.R   writes the frozen snapshot(s)
   -> Noda_etal_2002_Table3_snapshot.csv   FROZEN: 15 rows x 10 cols
   -> Noda_etal_2002_Table3.R   clean + parse + table checks
   -> Noda_etal_2002_Table3.csv   57 rows x 21 cols  ("use this")
@@ -28,7 +28,7 @@ Source (PDF)
 
 ## Who read the values, when, and how it was checked
 
-**Hand transcription** (method 5) by an AI assistant (Claude) on 2026-11-02 from 330-dpi renders of PDF page 4, typed into `Noda_etal_2002_extract_snapshot.R` (one script writes both tables; freezes; refuses to overwrite). The born-digital text layer ("±" encoded as "6", superscripts detached) agrees on all 76 mean ± SD pairs. The build `Noda_etal_2002_Table3.R` reads the frozen file, contains no table values, and was run with `Rscript`
+**Hand transcription** (method 5) by an AI assistant (Claude) on 2026-11-02 from 330-dpi renders of PDF page 4, typed into `Noda_etal_2002_Table3_snapshot.R` (one script writes both tables; freezes; refuses to overwrite). The born-digital text layer ("±" encoded as "6", superscripts detached) agrees on all 76 mean ± SD pairs. The build `Noda_etal_2002_Table3.R` reads the frozen file, contains no table values, and was run with `Rscript`
 (conda env `r`) on 2026-11-02.
 
 ### Snapshot and analysis CSV

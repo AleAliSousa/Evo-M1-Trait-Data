@@ -20,32 +20,12 @@ base <- dataset_root <- local({                                      # repo root
 })
 setwd(folder)
 
-setwd(folder)
 
-# Table 1
-# Open pdf in Adobe Acrobat
-# Export >  Microsoft Excel Workbook > Settings: Create Worksheet for each Table
-# Copy and paste all rows containing Table 1
-
-# Read direct from xl
-library(readxl)
-tabledirectxl <- read_excel("Jardim-Messeder-2017-Dogs Have the Most N_Tables.xlsx", sheet=6)
-
-
-## 2. FIX FORMATTING AND SAVE SNAPSHOT
-# Remove table name header and bottom note
-# Set the next row as the new header
-colnames(tabledirectxl) <- as.character(unlist(tabledirectxl[1, ]))
-# Remove the first row since it's now the header
-tabledirectxl <- tabledirectxl[-1, ]
-# Remove the last 4 rows which are notes and other things
-tabledirectxl <- tabledirectxl[1:(nrow(tabledirectxl)-4), ]
-
-# Delete empty columns that contain only NA values and have no header names.
-tabledirectxl <- tabledirectxl[, colSums(is.na(tabledirectxl)) != nrow(tabledirectxl), drop = FALSE]
-
-# Save snapshot to a CSV file 
-write.csv(tabledirectxl, file = "JardimMesseder_etal_2017_Table1_snapshot.csv", row.names = FALSE)
+## 2. READ SNAPSHOT (written by JardimMesseder_etal_2017_Table1_snapshot.R)
+tabledirectxl <- read.csv(paste0(item_name, "_snapshot.csv"), check.names = FALSE, colClasses = "character",
+                          na.strings = "NA", stringsAsFactors = FALSE)
+# the snapshot header cell above "MBD, kg" is NA (empty in the source); write.csv stored it as "NA"
+names(tabledirectxl)[names(tabledirectxl) == "NA"] <- NA_character_
 
 ## 3. MAKE DATA READABLE
 

@@ -1,0 +1,3 @@
+"check_id","basis","observed","printed","difference","tolerance","status","note"
+"Fig10_vs_Fig9_max","largest |Fig.10 - Fig.9| threshold over the species on both scales (deg)",0.511,0,0.511,0.6,"pass","both figures digitised independently from their own bitmaps; 'printed' = 0 (the two plots should agree); tolerance 0.6 deg"
+"Fig10_vs_Fig9_n","species common to Figs. 9 and 10",21,21,0,0,"pass","species names matched as printed after splitting 'A, B' labels and stripping the footnote asterisk"

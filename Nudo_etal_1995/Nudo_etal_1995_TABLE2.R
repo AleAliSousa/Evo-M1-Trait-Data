@@ -2,7 +2,7 @@
 # cortical region of origin, per species (HRP retrograde labelling, C1-C2 hemisection).
 #
 # PRINTED SOURCE -> the frozen copy is Nudo_etal_1995_TABLE2_snapshot.xlsx (sheet "TABLE2"),
-# captured by Nudo_etal_1995_extract_snapshot.py from 300-dpi renders of p. 185. This script
+# captured by Nudo_etal_1995_TABLE2_snapshot.R from 300-dpi renders of p. 185. This script
 # reads ONLY that snapshot.
 #
 # Output shape: ONE ROW PER SPECIES (24), printed row order kept.

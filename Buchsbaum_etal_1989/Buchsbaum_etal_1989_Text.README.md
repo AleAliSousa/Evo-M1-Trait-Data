@@ -18,9 +18,9 @@ The Summary also states the study involved 36 volunteers; the table arms are n =
 
 ```
 Source (PDF)
-  -> Buchsbaum_etal_1989_extract_snapshot.R   writes the frozen snapshot(s)
+  -> Buchsbaum_etal_1989_Text_snapshot.R   writes the frozen snapshot
   -> Buchsbaum_etal_1989_Text_snapshot.csv   FROZEN: 9 rows x 10 cols
-  -> Buchsbaum_etal_1989_Text.R   clean + parse + table checks
+  -> Buchsbaum_etal_1989_Text.R   clean + parse
   -> Buchsbaum_etal_1989_Text.csv   8 rows x 18 cols  ("use this")
   -> __Public/comparative-data/10.1016%2F0024-3205(89)90021-0_Text.tsv
   -> reference_tables/Buchsbaum_etal_1989_Text_definitions.csv
@@ -28,7 +28,7 @@ Source (PDF)
 
 ## Who read the values, when, and how it was checked
 
-**Hand transcription** (method 5) by an AI assistant (Claude) on 2026-11-02 from 200/400-dpi renders of PDF pages 1, 5 and 6, typed into `Buchsbaum_etal_1989_extract_snapshot.R` (freezes; refuses to overwrite). The OCR layer (typewriter face; "i" for "l") agrees on all 96 table numbers. The build `Buchsbaum_etal_1989_Text.R` reads the frozen file, contains no table values, and was run with `Rscript`
+**Hand transcription** (method 5) by an AI assistant (Claude) on 2026-11-02 from 200/400-dpi renders of PDF pages 1, 5 and 6, typed into `Buchsbaum_etal_1989_Text_snapshot.R` (freezes; refuses to overwrite). The OCR layer (typewriter face; "i" for "l") agrees on all 96 table numbers. The build `Buchsbaum_etal_1989_Text.R` reads the frozen file, contains no table values, and was run with `Rscript`
 (conda env `r`) on 2026-11-02.
 
 ### Constructed snapshot
@@ -37,7 +37,15 @@ One row per printed value, sentence quoted; `value_status` says whether a value 
 
 ## Table checks
 
-Result of an actual R run (2026-11-02): **10 pass, 3 mismatch, 0 not evaluable**, of 13 checks.
+The text values are compared only with the sibling item TableI (its snapshot), so the item script
+`Buchsbaum_etal_1989_Text.R` reads only its own snapshot and carries no table check. All 13 checks are
+**cross-item checks in `internal_checks/`** (build HOWTO 7b): script
+`internal_checks/Buchsbaum_etal_1989_Text_internal_check.R` (read-only), result
+`internal_checks/Buchsbaum_etal_1989_Text_internal_check.csv`.
+
+Result of an actual R run (temp copy, 2026-11-12; same result as the earlier in-script run of
+2026-11-02): **10 pass, 3 mismatch, 0 not evaluable**, of 13 checks. The three mismatches stay as
+printed (errata rows E001/E002).
 
 | check | basis | observed | printed | difference | tolerance | status |
 |---|---|---|---|---|---|---|

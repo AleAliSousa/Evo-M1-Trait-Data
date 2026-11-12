@@ -5,7 +5,7 @@
 # mature mammals", p. 66.   Footnote a: "Calculated using data from Brody (17)" = Brody (1945),
 # Bioenergetics and Growth.  SECONDARY compilation (see README).
 #
-# Reads the frozen snapshot (Elia__1992_TABLE3_snapshot.csv, written by Elia__1992_extract_snapshot.R) and:
+# Reads the frozen snapshot (Elia__1992_TABLE3_snapshot.csv, written by Elia__1992_TABLE3_snapshot.R) and:
 #   - one analysis row per printed species row (11), in printed order; every printed cell is kept as
 #     text (*_as_printed for the two cells whose print needs it) AND parsed, nothing is repaired;
 #   - the printed Lung of the elephant is in parentheses "(6,650)": parsed, flagged in lung_in_parentheses;

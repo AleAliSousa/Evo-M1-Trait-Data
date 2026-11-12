@@ -17,10 +17,7 @@ This paper contains **no data table at all**: every value it reports lives in a 
 ## Method, precision, and what was resolved
 
 - **Digitisation method:** pixel digitisation of the **embedded grey page bitmap (1950 × 3000 px)** at
-  native resolution — never a re-render — by `Huttenlocher__1979_Figures3-6_extract.py` (conda env
-  `python`; pymupdf, numpy, scipy), run 2026‑10‑31; a second run reports "snapshot unchanged". One
-  script builds all four figure snapshots, because the four figures share one calibration routine and
-  one marker-detection routine. Open markers are found as the white region each outline encloses;
+  native resolution — never a re-render — by `Huttenlocher__1979_Figure5_snapshot.R` (R port, pdfimages + `png`; run 2026‑11‑12 in a temp dir, the regenerated snapshot is byte-identical to the frozen one; the Python original is retired as `Huttenlocher__1979_Figure5_snapshot.py.retired`); a second run reports "snapshot unchanged". Each figure has its own script; the four share the same calibration and marker-detection code, repeated in each. Open markers are found as the white region each outline encloses;
   filled markers by eroding the dark mask with a disk, which removes the fitted curve and the error
   bars and leaves one blob per marker.
 - **The abscissa is broken and piecewise linear.** Figures 4, 5 and 6 print `NB 0.5 1 2 // 5 10 // Adult Aged(74-90)`.
@@ -51,6 +48,8 @@ This paper contains **no data table at all**: every value it reports lives in a 
 | synapses per neuron at birth | ~7,500 | "about 10,000 at birth" (p. 202) | pass |
 | synapses per neuron at age one year | ~97,000 | "to 100,000 at age one year" (p. 202) | pass |
 
+The two derivation rows (max / mean |Fig5 × Fig4 − nearest Fig3 value|) are cross-item checks: they need the Figure 4 and Figure 3 snapshots, so they now run in `internal_checks/Huttenlocher__1979_Figure5_internal_check.R` → `Huttenlocher__1979_Figure5_internal_check.csv` (build HOWTO 7b). **Result (R run 2026‑11‑12): max 1.01 × 10⁸, mean 0.24 × 10⁸, both pass (tolerances 1.1 and 0.4).** `Huttenlocher__1979_Figure5.R` keeps the other three checks and reads only its own snapshot.
+
 The derivation test multiplies each triangle by the neuronal density plotted at the same abscissa in
 Fig. 4 and asks whether the product is one of the 22 synaptic densities plotted in Fig. 3. It is, to a
 mean of 0.24 ×10⁸. The single large deviation is the `Aged (74-90)` column, where Fig. 5 plots one
@@ -62,7 +61,7 @@ Mismatches are **reported, not reconciled**: no value was adjusted on either sid
 
 | file | role |
 |---|---|
-| `Huttenlocher__1979_Figures3-6_extract.py` | reproducible bitmap digitisation → the frozen snapshots of all four figure items |
+| `Huttenlocher__1979_Figure5_snapshot.R` | reproducible bitmap digitisation (R) → the frozen snapshot of this item (one script per item) |
 | `Huttenlocher__1979_Figure5_snapshot.csv` | constructed snapshot: the digitisation as captured, in the figure's own axis units |
 | `Huttenlocher__1979_Figure5.R` | snapshot → analysis CSV + public TSV; `table_checks` |
 | `Huttenlocher__1979_Figure5.csv` | analysis data, 10 rows |

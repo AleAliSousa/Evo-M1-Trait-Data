@@ -1,7 +1,7 @@
 # Nudo et al. 1995 - TABLE 3: corticospinal (CS) somata counts averaged BY TAXONOMIC ORDER.
 #
 # PRINTED SOURCE -> the frozen copy is Nudo_etal_1995_TABLE3_snapshot.xlsx (sheet "TABLE3"),
-# captured by Nudo_etal_1995_extract_snapshot.py from a 300-dpi render of p. 187 (right
+# captured by Nudo_etal_1995_TABLE3_snapshot.R from a 300-dpi render of p. 187 (right
 # column, immediately above TABLE 4). This script reads ONLY that snapshot.
 #
 # Output shape: ONE ROW PER TAXONOMIC ORDER (9). There is NO species column and no species to

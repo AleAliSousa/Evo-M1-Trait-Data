@@ -1,0 +1,2 @@
+"check_id","basis","observed","printed","difference","tolerance","status","note"
+"equal_weight_gray_white_average","DISCUSSION p. 298: (mean of 31 gray rows + mean of 8 white rows)/2 vs printed 29",30.0403225806452,29,1.04032258064516,1,"mismatch","gray mean 46.581, white mean 13.500"

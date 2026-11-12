@@ -1,0 +1,2 @@
+"check_id","basis","observed","printed","difference","tolerance","status","note"
+"species_in_Appendix4","Appendix 6 species whose exact printed binomial (Genus Species) also appears in Appendix 4 (count)",410,425,-15,0,"mismatch","printed = all 425 Appendix 6 rows (the SI describes both appendices as the species of this analysis); no spelling variants or synonyms are folded together, so a miss may be a printing/taxonomy difference"

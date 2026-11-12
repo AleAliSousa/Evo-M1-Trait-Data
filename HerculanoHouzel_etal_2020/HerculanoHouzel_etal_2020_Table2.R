@@ -27,34 +27,11 @@ snapshot_csv  <- file.path(paper_dir, paste0(table_name, "_snapshot.csv"))
 final_csv     <- file.path(paper_dir, paste0(table_name, ".csv"))
 readme_xlsx   <- file.path(dataset_root, "__ReadMe.xlsx")
 public_tsv_dir<- file.path(dataset_root, "__Public", "comparative-data")
-# --- YOU SET THIS MANUALLY ---
-pdf_file <- file.path(paper_dir, "Herculano-Houze-2020-Microchiropterans have a.pdf")
 ## 1. PACKAGES ---------------------------------------------------------------
-# Migrated from the retired 'tabulizer' package to 'tabulapdf' (its maintained
-# successor). Both wrap the same tabula-java engine.
-library(rJava)
-library(tabulapdf)
 library(tidyverse)
 library(readxl)
-## 2. EXTRACT TABLE 2 --------------------------------------------------------
-# Table 2 is on page 4. Target the data rows with fixed column separators
-# (PDF points from top-left): area = c(top, left, bottom, right);
-# columns = x of the 8 separators between the 9 columns.
-tables1 <- extract_tables(
-  pdf_file,
-  pages   = 4,
-  guess   = FALSE,
-  area    = list(c(553, 48, 730, 545)),
-  columns = list(c(140, 196, 267, 322, 377, 430, 468, 511)),
-  output  = "matrix"
-)
-df1 <- as.data.frame(tables1[[1]], stringsAsFactors = FALSE)
-colnames(df1) <- c(
-  "Species", "Micro/mega", "Family",
-  "NCX", "NCB", "NRoB", "DN,CX", "DN,Cb", "DN,RoB"
-)
-## 3. SAVE SNAPSHOT ----------------------------------------------------------
-write.csv(df1, snapshot_csv, row.names = FALSE)
+## 2. READ SNAPSHOT (written by HerculanoHouzel_etal_2020_TABLE2_snapshot.R; never regenerated here) ----
+df1 <- read.csv(snapshot_csv, colClasses = "character", check.names = FALSE, stringsAsFactors = FALSE)
 ## 4. MAKE DATA READABLE -----------------------------------------------------
 num_cols <- c("NCX", "NCB", "NRoB", "DN,CX", "DN,Cb", "DN,RoB")
 result_df <- df1 %>%

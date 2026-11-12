@@ -44,7 +44,7 @@ optional: `BoW, [CV_BoW], BrW, [CV_BrW], [n_BoW, n_BrW | n], Source`. Single-
 specimen (n=1) rows omit both CV columns entirely (variability can't be
 computed from one specimen), and some rows collapse `n_BoW`/`n_BrW` into a
 single shared value while others print them separately even when equal.
-`Baron_etal_1996_Table5_extract.py` resolves this with a small type-based
+`Baron_etal_1996_Table5_snapshot.R` resolves this with a small type-based
 state machine: CV values are always printed with exactly one decimal place
 and BrW is never printed with a decimal point in this table, so "does the
 next token have a decimal point" reliably distinguishes a CV column from
@@ -87,7 +87,7 @@ than treating the whole item as uniformly primary.
 
 1. `baron_etal_1996 book Comparative Neurobiology.pdf`, PDF pages 22-32, is
    the printed source.
-2. `Baron_etal_1996_Table5_extract.py` reads the PDF text layer and writes
+2. `Baron_etal_1996_Table5_snapshot.R` (R port, 2026-11-12, of the retired `Baron_etal_1996_Table5_snapshot.py.retired`; run in a temp dir it regenerates the frozen snapshot byte-for-byte) reads the PDF text layer and writes
    `Baron_etal_1996_Table5_snapshot.csv`. Its OCR-repair step and full
    line-classification logic are documented in code.
 3. `Baron_etal_1996_Table5.R` reads only the frozen snapshot and writes the
@@ -138,7 +138,7 @@ errors in species names. Two categories were handled differently:
   stigma`→`leucostigma`, `Ametrida centuria`→`centurio`, `Miniopterus
   infiatus`→`inflatus`, and `D. moluee.`→`D. molucc.` (×2, Dobsonia
   moluccensis abbreviated). These are listed explicitly in
-  `Baron_etal_1996_Table5_extract.py`'s `NAME_FIXES`.
+  `Baron_etal_1996_Table5_snapshot.R`'s `NAME_FIXES`.
 - **Other cosmetic letterform/spacing artifacts were left as printed**
   (not individually image-checked), consistent with this repo's existing
   convention and Table 2's own README.

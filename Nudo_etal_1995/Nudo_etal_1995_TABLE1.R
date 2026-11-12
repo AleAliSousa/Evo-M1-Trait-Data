@@ -2,7 +2,7 @@
 # for the 24 species / 21 genera in the corticospinal survey.
 #
 # PRINTED SOURCE -> the frozen copy is Nudo_etal_1995_TABLE1_snapshot.xlsx (sheet "TABLE1"),
-# captured by Nudo_etal_1995_extract_snapshot.py from 300-dpi renders of p. 183. This script
+# captured by Nudo_etal_1995_TABLE1_snapshot.R from 300-dpi renders of p. 183. This script
 # reads ONLY that snapshot.
 #
 # Output shape: ONE ROW PER SPECIES (24). Printed row order is kept (it is the same order the

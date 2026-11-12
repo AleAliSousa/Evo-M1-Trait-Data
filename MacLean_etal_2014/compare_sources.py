@@ -1,4 +1,12 @@
-"""Extract the main-paper bibliography and compare S1 ECV to the ECV merge."""
+"""Extract the main-paper bibliography and compare S1 ECV to the ECV merge.
+
+Python is kept only for the main-paper bibliography (MacLean_etal_2014_MainPaperReferences.csv):
+it needs pypdf's text layout, which an R PDF reader (poppler) does not reproduce (it finds 40 of
+the 201 entries and spaces punctuation differently). The other outputs of this script
+(SIReferences, TableS1/S2_source_links, S1_vs_ECV_merge) are now written by
+internal_checks/MacLean_etal_2014_TableS1_internal_check.R and ..._TableS2_internal_check.R,
+byte-identical to the copies this script leaves in this folder.
+"""
 import csv
 import re
 from pathlib import Path

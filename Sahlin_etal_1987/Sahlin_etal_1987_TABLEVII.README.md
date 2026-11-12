@@ -18,7 +18,7 @@ Nimodipine 0.5 ug/kg/min i.v. during normotension and hypertension. 'Before SAH'
 
 ```
 Source PDF
-  -> Sahlin_etal_1987_extract_snapshot.R        verbatim printed block, refuses to overwrite a differing frozen copy
+  -> Sahlin_etal_1987_TABLEVII_snapshot.R        verbatim printed block, refuses to overwrite a differing frozen copy
   -> Sahlin_etal_1987_TABLEVII_snapshot.csv   FROZEN: 8 printed rows
   -> Sahlin_etal_1987_TABLEVII.R              parse + table checks (no values typed)
   -> Sahlin_etal_1987_TABLEVII.csv            12 rows (one per printed value)  ("use this")

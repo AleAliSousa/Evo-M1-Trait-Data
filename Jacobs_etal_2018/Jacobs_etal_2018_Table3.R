@@ -2,7 +2,7 @@
 # (unbiased stereology, 20 species: 11 carnivores + 9 primates, one animal per species)
 #
 # PRINTED SOURCE -> the frozen copy is Jacobs_etal_2018_Table3_snapshot.xlsx (sheet "Table3"),
-# captured by Jacobs_etal_2018_extract_snapshot.py. This script reads ONLY that snapshot.
+# captured by Jacobs_etal_2018_Table3_snapshot.R. This script reads ONLY that snapshot.
 #
 # Output shape: ONE ROW PER SPECIES x NEURON CLASS (20 x 2 = 40). The printed table is wide -
 # six measure blocks (pyramidal / gigantopyramidal x length / area / volume), each with its own

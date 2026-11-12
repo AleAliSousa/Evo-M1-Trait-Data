@@ -9,7 +9,7 @@
 ##          Nothing is digitized from pixels.
 ## Frozen : Jacob_etal_2021_FIGURE4_snapshot.csv — a CONSTRUCTED snapshot
 ##          (see __HOWTO_make_a_snapshot.md, "When there is no table"), built
-##          by Jacob_etal_2021_extract_snapshot.R from the PDF text layer:
+##          by Jacob_etal_2021_FIGURE4_snapshot.R from the PDF text layer:
 ##          printed strings kept verbatim (the text layer renders x-bar-c as
 ##          "xc" and holds a stray space in two panel-B means), one row per
 ##          group x panel, with a provenance column naming the sentence each

@@ -39,9 +39,9 @@ Rscript __merging_supplementary/supplementary_compiled.R
 Rscript _keys/build_variable_definitions.R
 Rscript _keys/build_trait_authority.R
 Rscript _checks/check_trait_authority.R
-Rscript _checks/social_variables/load_app.R /tmp/zhu_after.rds
+Rscript _archive/2026-10_social_variables_expansion/social_variables/load_app.R /tmp/zhu_after.rds
 # Capture BEFORE.rds with load_app.R before adding Zhu; then:
-Rscript _checks/social_variables/check_zhu_coverage.R BEFORE.rds /tmp/zhu_after.rds
+Rscript _archive/2026-10_social_variables_expansion/social_variables/check_zhu_coverage.R BEFORE.rds /tmp/zhu_after.rds
 ```
 
 Coverage uses the actual local Shiny loader and its display aliases, plus the

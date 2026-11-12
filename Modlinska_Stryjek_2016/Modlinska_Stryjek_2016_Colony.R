@@ -7,7 +7,7 @@
 ## Frozen source: Modlinska_Stryjek_2016_Colony_snapshot.csv -- a CONSTRUCTED snapshot, because the
 ##   value is stated in prose (Materials and Methods, "Animals"), not tabulated: the printed wording
 ##   ("approx. 50 individuals") with the verbatim sentence and the method sentence beside it,
-##   extracted from source/PMC4890768.xml by _checks/social_variables/build_population_censuses.py.
+##   extracted from source/PMC4890768.xml by _archive/2026-10_social_variables_expansion/social_variables/build_population_censuses.py.
 ##
 ## PRIMARY but approximate: a whole-colony population estimate for one free-living farm colony, not
 ## a head count and not a social-subgroup mean. The colony may hold several social subgroups.

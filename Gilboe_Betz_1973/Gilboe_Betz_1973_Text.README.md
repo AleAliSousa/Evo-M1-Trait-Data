@@ -18,7 +18,7 @@ PDF `gilboe_betz_1973.pdf` (copied from EndNote PDF/2362825621/), journal pp. 58
 
 ```
 Source PDF
-  -> Gilboe_Betz_1973_extract_snapshot.R        verbatim printed block, refuses to overwrite a differing frozen copy
+  -> Gilboe_Betz_1973_Text_snapshot.R        verbatim printed block, refuses to overwrite a differing frozen copy
   -> Gilboe_Betz_1973_Text_snapshot.csv   FROZEN: 15 printed numbers
   -> Gilboe_Betz_1973_Text.R              parse + table checks (no values typed)
   -> Gilboe_Betz_1973_Text.csv            15 rows (one per printed value)  ("use this")

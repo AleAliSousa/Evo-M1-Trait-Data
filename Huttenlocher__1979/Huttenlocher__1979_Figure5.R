@@ -12,7 +12,7 @@
 ## independent evidence; see the definitions Note and the README.
 ##
 ## The page is a grey SCAN; the markers were pixel-digitised from the embedded page bitmap
-## by Huttenlocher__1979_Figures3-6_extract.py, which wrote the frozen
+## by Huttenlocher__1979_Figure5_snapshot.R, which wrote the frozen
 ## Huttenlocher__1979_Figure5_snapshot.csv. value_origin = digitised_from_figure on every row.
 ##
 ## THE ABSCISSA IS BROKEN AND PIECEWISE LINEAR, and two of its columns ('Adult',
@@ -82,32 +82,17 @@ final.dataframe <- snap %>%
             data_role = "primary")
 
 ## 4. TABLE CHECKS (HOWTO 7a) ------------------------------------------------
-## FIG. 5 IS DERIVED, NOT MEASURED. The caption says "derived from data of the present
-## study", and p. 202 says the value was calculated from packing density together with
-## synaptic density. The check therefore multiplies each triangle by the neuronal
-## density plotted at the same abscissa in Fig. 4 and asks whether the product is one of
-## the 22 synaptic densities plotted in Fig. 3.
-f4 <- read.csv(file.path(folder, "Huttenlocher__1979_Figure4_snapshot.csv"),
-               comment.char = "#", stringsAsFactors = FALSE)
-f3 <- read.csv(file.path(folder, "Huttenlocher__1979_Figure3_snapshot.csv"),
-               comment.char = "#", stringsAsFactors = FALSE)
-f4o <- f4[f4$plot_symbol == "open_circle", ][order(f4$px_x[f4$plot_symbol == "open_circle"]), ]
-f5  <- final.dataframe[order(final.dataframe$age_years, na.last = TRUE), ]
-f5  <- final.dataframe[order(match(final.dataframe$point_id, final.dataframe$point_id)), ]
-implied <- final.dataframe$Synapses_per_neuron.count *
-           (f4o$value_in_figure_units * 1e4)                      # synapses/neuron x neurons/mm3
-nearest <- sapply(implied, function(v) f3$value_in_figure_units[which.min(abs(f3$value_in_figure_units * 1e8 - v))] * 1e8)
-dev <- abs(implied - nearest) / 1e8
+## FIG. 5 IS DERIVED, NOT MEASURED (caption: "derived from data of the present study"; p. 202:
+## calculated from packing density together with synaptic density). The check that multiplies each
+## triangle by the neuronal density of Fig. 4 and asks whether the product is one of the 22 synaptic
+## densities of Fig. 3 needs the Figure4 and Figure3 snapshots, so it lives in
+## internal_checks/Huttenlocher__1979_Figure5_internal_check.R (HOWTO 7b); this item reads only its
+## own snapshot. The checks below use only the Figure5 snapshot.
 H <- final.dataframe
 table_checks <- tibble::tribble(
   ~check_id, ~basis, ~observed, ~printed, ~tolerance, ~note,
   "n_points",     "triangles resolved in Fig. 5", nrow(final.dataframe), 10, 0,
                   "no printed count; matches the 10 open circles of Fig. 4 one for one",
-  "derivation",   "max |Fig5 x Fig4 - nearest Fig3 value| (x 10^8 synapses/mm3); 0 if Fig. 5 = Fig. 3 / Fig. 4",
-                  round(max(dev), 2), 0, 1.1,
-                  "the largest deviation is the 'Aged (74-90)' column, where Fig. 5 plots one mean but Fig. 3 plots four separate brains",
-  "derivation_mean", "mean |Fig5 x Fig4 - nearest Fig3 value| (x 10^8 synapses/mm3)",
-                  round(mean(dev), 2), 0, 0.4, "",
   "birth_value",  "synapses per neuron at birth (p. 202: 'about 10,000 at birth')",
                   round(min(H$Synapses_per_neuron.count, na.rm = TRUE), -2), 10000, 3000, "",
   "oneyear_value","synapses per neuron at age one year (p. 202: 'to 100,000 at age one year')",

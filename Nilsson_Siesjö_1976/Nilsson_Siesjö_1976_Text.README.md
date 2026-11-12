@@ -18,7 +18,7 @@ PDF `Nilsson-1976-A method for determi.pdf` (copied from EndNote PDF/3443299141/
 
 ```
 Source PDF
-  -> Nilsson_Siesjö_1976_extract_snapshot.R        verbatim printed block, refuses to overwrite a differing frozen copy
+  -> Nilsson_Siesjö_1976_Text_snapshot.R        verbatim printed block, refuses to overwrite a differing frozen copy
   -> Nilsson_Siesjö_1976_Text_snapshot.csv   FROZEN: 15 printed numbers
   -> Nilsson_Siesjö_1976_Text.R              parse + table checks (no values typed)
   -> Nilsson_Siesjö_1976_Text.csv            15 rows (one per printed value)  ("use this")

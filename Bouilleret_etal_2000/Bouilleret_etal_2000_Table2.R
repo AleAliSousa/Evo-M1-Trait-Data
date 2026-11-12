@@ -11,7 +11,7 @@
 # epilepticus, n = 3), day 15, 30 and 120 (n = 4 each).
 #
 # Reads the frozen snapshot (Bouilleret_etal_2000_Table2_snapshot.csv, written by
-# Bouilleret_etal_2000_extract_snapshot.R):
+# Bouilleret_etal_2000_Table2_snapshot.R):
 #   - one analysis row per printed cell (48 structure-side rows x 5 arms), in
 #     printed order;
 #   - the printed section heading carried down; the printed side (", right" /

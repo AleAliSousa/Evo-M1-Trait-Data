@@ -15,7 +15,7 @@ PDF in this folder: `Holliday_etal_1967.pdf`. Sibling item `Holliday_etal_1967_T
 
 ```
 Source (PDF)
-  -> Holliday_etal_1967_extract_snapshot.R   writes the frozen snapshot(s)
+  -> Holliday_etal_1967_TableIII_snapshot.R   writes the frozen snapshot
   -> Holliday_etal_1967_TableIII_snapshot.csv   FROZEN: 14 rows x 10 cols
   -> Holliday_etal_1967_TableIII.R   clean + convert units + table checks
   -> Holliday_etal_1967_TableIII.csv   9 rows x 27 cols  ("use this")
@@ -25,7 +25,7 @@ Source (PDF)
 
 ## Who read the values, when, and how it was checked
 
-**Hand transcription** (method 5) by an AI assistant (Claude) on 2026-11-03 from 200-dpi renders of PDF page 7 (journal p. 191), typed as a verbatim printed-layout block into `Holliday_etal_1967_extract_snapshot.R`, which freezes it and refuses to overwrite a differing frozen copy. The PDF is a scanned reprint with **no text layer** (0 characters on all 11 pages), so there is no machine second reading; instead every cell was re-read against the page image and against the earlier working transcription (`holliday_1967_table3_transcribed.csv`, `classic_human_brain_partition.csv`): no cell differs. The build script reads the frozen file, contains no table values, and was run with `Rscript` (conda env `r`) on 2026-11-03.
+**Hand transcription** (method 5) by an AI assistant (Claude) on 2026-11-03 from 200-dpi renders of PDF page 7 (journal p. 191), typed as a verbatim printed-layout block into `Holliday_etal_1967_TableIII_snapshot.R`, which freezes it and refuses to overwrite a differing frozen copy. The PDF is a scanned reprint with **no text layer** (0 characters on all 11 pages), so there is no machine second reading; instead every cell was re-read against the page image and against the earlier working transcription (`holliday_1967_table3_transcribed.csv`, `classic_human_brain_partition.csv`): no cell differs. The build script reads the frozen file, contains no table values, and was run with `Rscript` (conda env `r`) on 2026-11-03.
 
 ### Snapshot and analysis CSV
 

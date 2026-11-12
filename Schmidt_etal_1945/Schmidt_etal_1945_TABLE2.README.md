@@ -12,15 +12,15 @@ Schmidt, C. F., Kety, S. S., & Pennes, H. H. (1945). The gaseous metabolism of t
 
 PDF `schmidt_etal_1945.pdf` (copied from EndNote PDF/1682367563/), journal pp. 33-52 (PDF pages 1-20). Text layer: OCR text layer, unusable for tables (TABLE 4 is printed sideways); values read from 300/500-dpi renders.
 
-Graded haemorrhage and reinfusion. TABLE 2 prints no brain weight; the % by brain check takes the brain weight of the same experiment number from TABLE 1.
+Graded haemorrhage and reinfusion. TABLE 2 prints no brain weight; the % by brain check takes the brain weight of the same experiment number from TABLE 1 (cross-item check in `internal_checks/`).
 
 ## Pipeline
 
 ```
 Source PDF
-  -> Schmidt_etal_1945_extract_snapshot.R        verbatim printed block, refuses to overwrite a differing frozen copy
+  -> Schmidt_etal_1945_TABLE2_snapshot.R        verbatim printed block, refuses to overwrite a differing frozen copy
   -> Schmidt_etal_1945_TABLE2_snapshot.csv   FROZEN: 25 printed rows
-  -> Schmidt_etal_1945_TABLE2.R              parse + table checks (no values typed)
+  -> Schmidt_etal_1945_TABLE2.R              parse + own-snapshot table checks (no values typed)
   -> Schmidt_etal_1945_TABLE2.csv            210 rows (one per printed value)  ("use this")
   -> __Public/comparative-data/10.1152%2Fajplegacy.1945.143.1.33_TABLE2.tsv
   -> reference_tables/Schmidt_etal_1945_TABLE2_definitions.csv
@@ -37,7 +37,15 @@ Transcribed **blind** by an AI assistant (Claude) on 2026-11-02 from 300-dpi pag
 
 ## Table checks
 
-Result of an actual R run (2026-11-02): **57 pass, 4 mismatch, 0 not evaluable.** Tolerance: half a unit in the last printed decimal of every input, propagated, plus half a unit of the printed result (significant-digit units for the scaled human values of Schmidt TABLE 6). 'Not evaluable' marks relations that hold only per animal (mean of products/ratios) or values that cannot be traced.
+Result of an actual R run (2026-11-02, all 61 checks in the item script): **57 pass, 4 mismatch, 0 not evaluable.**
+Since the cross-item split the same checks run in two places (R run in a temp copy, 2026-11-12, same result):
+
+* `Schmidt_etal_1945_TABLE2.R` (`table_checks`, own snapshot only: A-V O2 = Art. - Vein, O2 uptake = A-V O2 x flow / 100):
+  **41 pass, 1 mismatch, 0 not evaluable.**
+* **Cross-item check in `internal_checks/`** (build HOWTO 7b): `internal_checks/Schmidt_etal_1945_TABLE2_internal_check.R`
+  (read-only; reads the TABLE 2 and TABLE 1 snapshots) writes `internal_checks/Schmidt_etal_1945_TABLE2_internal_check.csv`:
+  % O2 by brain recomputed with the TABLE 1 brain weight, **16 pass, 3 mismatch** (kept as printed).
+ Tolerance: half a unit in the last printed decimal of every input, propagated, plus half a unit of the printed result (significant-digit units for the scaled human values of Schmidt TABLE 6). 'Not evaluable' marks relations that hold only per animal (mean of products/ratios) or values that cannot be traced.
 
 Every mismatch is recorded as an erratum below (Schmidt_etal_1945-E006, Schmidt_etal_1945-E007, Schmidt_etal_1945-E008, Schmidt_etal_1945-E009); the printed values are kept in the snapshot, CSV and TSV.
 

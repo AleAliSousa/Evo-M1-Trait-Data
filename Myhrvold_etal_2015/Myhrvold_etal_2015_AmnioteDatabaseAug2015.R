@@ -15,7 +15,8 @@
 ##
 ## This is the R port of Myhrvold_etal_2015_AmnioteDatabaseAug2015.py (added 2026-10-31 so the
 ## item builds in R like its three siblings); it writes the same CSV and TSV byte for byte, so the
-## published table does not churn. The .py is kept as the record of the original build.
+## published table does not churn. The .py is retired (renamed to
+## Myhrvold_etal_2015_AmnioteDatabaseAug2015.py.retired; R first, item scripts are R).
 ##
 ## DATA ROLE = SECONDARY throughout: the database is itself a compilation, and each cell's
 ## reference names the work the value was actually reported in (or the derivation, e.g.

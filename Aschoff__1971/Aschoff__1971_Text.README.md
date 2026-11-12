@@ -15,7 +15,7 @@ PDF in this folder: `aschoff_1971.pdf`. Constructed item (there is no printed ta
 
 ```
 Source (PDF)
-  -> Aschoff__1971_extract_snapshot.R   writes the frozen snapshot(s)
+  -> Aschoff__1971_Text_snapshot.R   writes the frozen snapshot(s)
   -> Aschoff__1971_Text_snapshot.csv   FROZEN (constructed): 30 rows x 10 cols
   -> Aschoff__1971_Text.R   parse + label + table checks (cross-checks Aschoff__1971_Tabelle1.csv when present)
   -> Aschoff__1971_Text.csv   29 rows x 17 cols  ("use this")
@@ -25,7 +25,7 @@ Source (PDF)
 
 ## Who read the values, when, and how it was checked
 
-**Hand transcription** (method 5) by an AI assistant (Claude) on 2026-11-03 from 170/300-dpi renders of PDF page 2 (book pp. 44-45), typed as a verbatim printed-layout block into `Aschoff__1971_extract_snapshot.R`, which freezes it and refuses to overwrite a differing frozen copy. Abb. 1 is a figure: every printed number was read from the 300-dpi crop of the figure (the OCR text layer garbles it); the running-text sentences were checked against the OCR text layer afterwards and agree. The build script reads the frozen file, contains no table values, and was run with `Rscript` (conda env `r`) on 2026-11-03.
+**Hand transcription** (method 5) by an AI assistant (Claude) on 2026-11-03 from 170/300-dpi renders of PDF page 2 (book pp. 44-45), typed as a verbatim printed-layout block into `Aschoff__1971_Text_snapshot.R`, which freezes it and refuses to overwrite a differing frozen copy. Abb. 1 is a figure: every printed number was read from the 300-dpi crop of the figure (the OCR text layer garbles it); the running-text sentences were checked against the OCR text layer afterwards and agree. The build script reads the frozen file, contains no table values, and was run with `Rscript` (conda env `r`) on 2026-11-03.
 
 ### Values included
 

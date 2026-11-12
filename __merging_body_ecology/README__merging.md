@@ -186,7 +186,7 @@ other trait values did not change. This targeted repair does not incorporate
 unrelated source/key changes since the previous full build.
 
 The old-to-corrected mapping and record counts are in
-`_checks/body_ecology_species_name_repair_20261029.csv`. Run
+`__merging_body_ecology/body_ecology_species_name_repair_20261029.csv`. Run
 `Rscript _checks/body_ecology_species_parsing.R` from the repository root to
 check the parser against the source and verify that compiled outputs have no
 repeated genus labels. The broader heuristic that guesses species columns can

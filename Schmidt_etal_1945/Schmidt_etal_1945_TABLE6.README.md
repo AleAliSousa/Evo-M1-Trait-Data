@@ -18,15 +18,15 @@ Summary of TABLES 1-5 plus values scaled to a 1400 g human brain. The human colu
 
 ```
 Source PDF
-  -> Schmidt_etal_1945_extract_snapshot.R        verbatim printed block, refuses to overwrite a differing frozen copy
+  -> Schmidt_etal_1945_TABLE6_snapshot.R        verbatim printed block, refuses to overwrite a differing frozen copy
   -> Schmidt_etal_1945_TABLE6_snapshot.csv   FROZEN: 9 printed rows
-  -> Schmidt_etal_1945_TABLE6.R              parse + table checks (no values typed)
+  -> Schmidt_etal_1945_TABLE6.R              parse + own-snapshot table checks (no values typed)
   -> Schmidt_etal_1945_TABLE6.csv            30 rows (one per printed value)  ("use this")
   -> __Public/comparative-data/10.1152%2Fajplegacy.1945.143.1.33_TABLE6.tsv
   -> reference_tables/Schmidt_etal_1945_TABLE6_definitions.csv
 ```
 
-Build order: TABLES 1-5 before TABLE 6 (its checks read their CSVs).
+The item script reads only its own snapshot. Build order for the cross-item check: TABLES 1-5 (CSVs) before `internal_checks/Schmidt_etal_1945_TABLE6_internal_check.R`, which reads their CSVs and the TABLE 1 snapshot.
 
 ## Who read the values, when, and how it was checked
 
@@ -39,7 +39,16 @@ Transcribed **blind** by an AI assistant (Claude) on 2026-11-02 from 300-dpi pag
 
 ## Table checks
 
-Result of an actual R run (2026-11-02): **20 pass, 0 mismatch, 2 not evaluable.** Tolerance: half a unit in the last printed decimal of every input, propagated, plus half a unit of the printed result (significant-digit units for the scaled human values of Schmidt TABLE 6). 'Not evaluable' marks relations that hold only per animal (mean of products/ratios) or values that cannot be traced.
+Result of an actual R run (2026-11-02, all 22 checks in the item script): **20 pass, 0 mismatch, 2 not evaluable.**
+Since the cross-item split the same checks run in two places (R run in a temp copy, 2026-11-12, same result):
+
+* `Schmidt_etal_1945_TABLE6.R` (`table_checks`, own snapshot only: 1400 g human value = 14 x monkey value per 100 g):
+  **12 pass, 0 mismatch, 0 not evaluable.**
+* **Cross-item checks in `internal_checks/`** (build HOWTO 7b): `internal_checks/Schmidt_etal_1945_TABLE6_internal_check.R`
+  (read-only; reads the TABLE 6 and TABLE 1 snapshots and the TABLE 1-5 analysis CSVs) writes
+  `internal_checks/Schmidt_etal_1945_TABLE6_internal_check.csv`: "Normal" rows vs TABLE 1 and highest/lowest rows vs TABLES 1-5,
+  **8 pass, 0 mismatch, 2 not evaluable** (the two not-evaluable rows are errata E025/E026).
+ Tolerance: half a unit in the last printed decimal of every input, propagated, plus half a unit of the printed result (significant-digit units for the scaled human values of Schmidt TABLE 6). 'Not evaluable' marks relations that hold only per animal (mean of products/ratios) or values that cannot be traced.
 
 Every mismatch is recorded as an erratum below (Schmidt_etal_1945-E025, Schmidt_etal_1945-E026); the printed values are kept in the snapshot, CSV and TSV.
 

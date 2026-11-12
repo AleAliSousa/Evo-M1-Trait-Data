@@ -1,0 +1,14 @@
+Region_code	Structure	Subregion	AAL_atlas_regions	n_AAL_regions	source
+Fr SM	FrontalLobe	superior and middle	Frontal_Sup; Frontal_Mid; Supp_Motor_Area	3	Kochiyama_etal_2018
+Fr I	FrontalLobe	inferior	Frontal_Inf_Oper; Frontal_Inf_Tri	2	Kochiyama_etal_2018
+Fr O	FrontalLobe	orbitofrontal	Frontal_Sup_Orb; Frontal_Mid_Orb; Frontal_Inf_Orb; Frontal_Med_Orb; Rectus	5	Kochiyama_etal_2018
+Sm	SensorimotorCortex	whole (sensorimotor)	Precentral; Postcentral; Paracentral_Lobule	3	Kochiyama_etal_2018
+Pa SI	ParietalLobe	superior and inferior	Parietal_Sup; Parietal_Inf; Precuneus	3	Kochiyama_etal_2018
+Pa TP	ParietalLobe	temporo-parietal junction	SupraMarginal; Angular	2	Kochiyama_etal_2018
+Te SM	TemporalLobe	superior and middle	Temporal_Sup; Temporal_Mid	2	Kochiyama_etal_2018
+Te I	TemporalLobe	inferior/medial	Temporal_Inf; ParaHippocampal; Temporal_Pole_Sup; Temporal_Pole_Mid	4	Kochiyama_etal_2018
+Oc SM	OccipitalLobe	superior and middle	Calcarine; Cuneus; Occipital_Sup; Occipital_Mid	4	Kochiyama_etal_2018
+Oc I	OccipitalLobe	inferior	Occipital_Inf; Lingual	2	Kochiyama_etal_2018
+Ce A	Cerebellum	anterior	Cerebelum_3; Cerebelum_4_5	2	Kochiyama_etal_2018
+Ce P	Cerebellum	posterior	Cerebelum_Crus1; Cerebelum_Crus2; Cerebelum_6; Cerebelum_7b; Cerebelum_8; Cerebelum_9; Cerebelum_10	7	Kochiyama_etal_2018
+Ce V	Cerebellum	vermis	Vermis_1_2; Vermis_3; Vermis_4_5; Vermis_6; Vermis_7; Vermis_8; Vermis_9; Vermis_10	8	Kochiyama_etal_2018

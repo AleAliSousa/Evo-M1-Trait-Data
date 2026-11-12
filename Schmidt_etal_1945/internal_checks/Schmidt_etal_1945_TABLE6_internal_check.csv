@@ -1,0 +1,11 @@
+"check_id","basis","observed","printed","difference","tolerance","status","note"
+"normal_mean_O2","""Normal"" mean O2 uptake = TABLE 1 Average",3.7,3.7,0,0.1,"pass",NA
+"normal_mean_CBF","""Normal"" mean blood flow = TABLE 1 Average",46.9,47,-0.100000000000001,0.55,"pass",NA
+"normal_min_O2","""Normal"" minimum O2 uptake = TABLE 1 minimum",2.5,2.5,0,0.1,"pass",NA
+"normal_min_CBF","""Normal"" minimum blood flow = TABLE 1 minimum",33.4,33,0.399999999999999,0.55,"pass",NA
+"normal_max_O2","""Normal"" maximum O2 uptake = TABLE 1 maximum",4.5,4.5,0,0.1,"pass",NA
+"normal_max_CBF","""Normal"" maximum blood flow = TABLE 1 maximum",73.6,74,-0.400000000000006,0.55,"pass",NA
+"highest_O2","Highest of all O2 uptake = largest O2 uptake printed in TABLES 1-5",6.5,6.5,0,0.05,"pass","largest printed: Schmidt_etal_1945_TABLE4 row 37"
+"highest_CBF","Highest of all (picrotoxin convulsion) blood flow vs flow printed on the row with the largest O2 uptake",60.1,91,-30.9,NA,"not_evaluable","that row prints flow 60.1; the largest flow printed anywhere in TABLES 1-5 is 85.6; the printed 91 does not occur in TABLES 1-5"
+"lowest_with_recovery_pair","Lowest with recovery (hemorrhage): O2 uptake and flow pair printed on one row of TABLES 1-5",1.85,1.85,0,0,"pass","found: Schmidt_etal_1945_TABLE2 row 9"
+"lowest_of_all_O2","Lowest of all (moribund) O2 uptake vs smallest O2 uptake printed in TABLES 1-5",0.43,0.39,0.04,NA,"not_evaluable","smallest printed: 0.43 (Schmidt_etal_1945_TABLE3 row 20, flow 10.6); 0.39 and 5 do not occur in TABLES 1-5"

@@ -1,0 +1,51 @@
+species	specimen	sex	sample	brain_volume_cm3	cerebellum_volume_cm3	vermis_volume_cm3	hemisphere_volume_cm3	stephan_collection	section_plane	brainweight_known	source
+Homo sapiens	Homo sapiens (139/95)	M	Hirnforschung	1174.7	125.3	10.6	114.6	FALSE	coronal	TRUE	MacLeod_etal_2003
+Homo sapiens	Homo sapiens (H9/88)	M	Hirnforschung	1582.6	182.1	15.7	166.3	FALSE	coronal	TRUE	MacLeod_etal_2003
+Homo sapiens	Homo sapiens (SN382/81)	F	Hirnforschung	1102.3	138.2	9.6	128.6	FALSE	coronal	TRUE	MacLeod_etal_2003
+Homo sapiens	Homo sapiens (71/84)	F	Hirnforschung	1093.6	133.2	12.3	120.9	FALSE	horizontal	TRUE	MacLeod_etal_2003
+Homo sapiens	Homo sapiens (14/94)	F	Hirnforschung	1137.2	136.9	14.7	122.1	FALSE	coronal	TRUE	MacLeod_etal_2003
+Homo sapiens	Homo sapiens (146/86)	M	Hirnforschung	1387.1	138.6	9.5	129	FALSE	coronal	TRUE	MacLeod_etal_2003
+Homo sapiens	Homo sapiens (SN201/86)	M	Hirnforschung	1176.6	132	9.9	122.1	FALSE	horizontal	TRUE	MacLeod_etal_2003
+Homo sapiens	Homo sapiens (503/81)	F	Hirnforschung	1264.5	139.8	11.2	128.7	FALSE	horizontal	TRUE	MacLeod_etal_2003
+Gorilla gorilla	Gorilla gorilla (A375)	M	Hirnforschung	434.4	60.1	7.2	52.9	TRUE	coronal	TRUE	MacLeod_etal_2003
+Gorilla gorilla	Gorilla gorilla (1001)	NA	Hirnforschung	414.5	51	4.5	46.5	FALSE	coronal	TRUE	MacLeod_etal_2003
+Gorilla gorilla	Gorilla gorilla (YN82-140)	F	Hirnforschung	362.9	48.5	5.8	42.8	FALSE	coronal	TRUE	MacLeod_etal_2003
+Pan paniscus	Pan paniscus (YN86-137)	F	Hirnforschung	378.4	54.1	5.7	48.3	FALSE	coronal	TRUE	MacLeod_etal_2003
+Pan paniscus	Pan paniscus (Zahlia 1/97)	F	Hirnforschung	312.7	53	7.8	45.2	FALSE	coronal	TRUE	MacLeod_etal_2003
+Pan troglodytes	Pan troglodytes (YN89-278)	M	Hirnforschung	405.4	53.5	4.2	49.3	FALSE	horizontal	TRUE	MacLeod_etal_2003
+Pan troglodytes	Pan troglodytes (1548)	NA	Hirnforschung	265	28.2	3.7	24.5	FALSE	coronal	FALSE	MacLeod_etal_2003
+Pan troglodytes	Pan troglodytes (PAN 1)	F	Hirnforschung	424.7	56.5	7.5	49	TRUE	coronal	TRUE	MacLeod_etal_2003
+Pan troglodytes	Pan troglodytes (Bathsheba 4/97)	F	Hirnforschung	347	47.8	6.8	41	FALSE	coronal	TRUE	MacLeod_etal_2003
+Pan troglodytes	Pan troglodytes (Schimpanse 280)	M	Hirnforschung	445	45.3	5.7	39.6	TRUE	coronal	TRUE	MacLeod_etal_2003
+Pan troglodytes	Pan troglodytes (Schimpanse 278)	F	Hirnforschung	405.4	53.3	NA	NA	TRUE	sagittal	TRUE	MacLeod_etal_2003
+Pan troglodytes	Pan troglodytes (Schimpanse A269)	M	Hirnforschung	333.5	40.6	3.4	37.2	TRUE	horizontal	TRUE	MacLeod_etal_2003
+Pongo pygmaeus	Pongo pygmaeus (0475)	F	Hirnforschung	221	22.4	3.5	18.8	FALSE	coronal	TRUE	MacLeod_etal_2003
+Pongo pygmaeus	Pongo pygmaeus (YN85-38)	M	Hirnforschung	356.2	41.2	NA	NA	FALSE	coronal	TRUE	MacLeod_etal_2003
+Pongo pygmaeus	Pongo pygmaeus (Harry 2/97)	M	Hirnforschung	424.7	54.3	5.4	48.9	FALSE	coronal	TRUE	MacLeod_etal_2003
+Pongo pygmaeus	Pongo pygmaeus (Briggs 5/97)	M	Hirnforschung	333	39.2	3.7	35.5	FALSE	coronal	TRUE	MacLeod_etal_2003
+Hylobates lar	Hylobates lar (YN81-146)	F	Hirnforschung	88.8	10.6	2	8.6	FALSE	coronal	TRUE	MacLeod_etal_2003
+Hylobates lar	Hylobates lar (2436) (LH)	NA	Hirnforschung	107.9	14.5	2.3	12.2	FALSE	coronal	FALSE	MacLeod_etal_2003
+Hylobates lar	Hylobates lar (1547)	M	Hirnforschung	79.3	12.3	2.4	9.9	FALSE	coronal	TRUE	MacLeod_etal_2003
+Hylobates lar	Hylobates lar (Disco 3/97)	F	Hirnforschung	115.8	13.8	2.3	11.5	FALSE	coronal	TRUE	MacLeod_etal_2003
+Hylobates lar	Hylobates lar (1203)	M	Hirnforschung	98.4	12	2.6	9.4	TRUE	coronal	TRUE	MacLeod_etal_2003
+Erythrocebus patas	Erythrocebus patas (1545)	M	Hirnforschung	89	7.9	2.7	5.2	FALSE	coronal	FALSE	MacLeod_etal_2003
+Macaca mulatta	Macaca mulatta (Rhesus 516)	F	Hirnforschung	101.2	9.8	3.3	6.4	FALSE	coronal	TRUE	MacLeod_etal_2003
+Macaca mulatta	Macaca mulatta (Rhesus R4)	NA	Hirnforschung	108.3	9.4	3	6.3	FALSE	horizontal	FALSE	MacLeod_etal_2003
+Cercopithecus sp.	Cercopithecus sp. (S)	NA	Hirnforschung	57	5.6	2.2	3.3	FALSE	coronal	FALSE	MacLeod_etal_2003
+Cercopithecus sp.	Cercopithecus sp. (CER)	M	Hirnforschung	71	6.8	3.1	3.6	FALSE	coronal	FALSE	MacLeod_etal_2003
+Cercocebus albigena	Cercocebus albigena (A221)	M	Hirnforschung	112	11.7	4	7.7	FALSE	coronal	TRUE	MacLeod_etal_2003
+Papio cynocephalus	Papio cynocephalus (P3)	F	Hirnforschung	141.9	12.8	3.5	9.3	FALSE	coronal	TRUE	MacLeod_etal_2003
+Papio cynocephalus	Papio cynocephalus (P4)	F	Hirnforschung	150.7	15.3	4.4	11	FALSE	coronal	TRUE	MacLeod_etal_2003
+Ateles paniscus	Ateles paniscus (2412)	NA	Hirnforschung	107.3	10.7	3.9	6.8	FALSE	coronal	FALSE	MacLeod_etal_2003
+Ateles paniscus	Ateles paniscus (1541)	M	Hirnforschung	93	11.7	2.9	8.7	FALSE	coronal	FALSE	MacLeod_etal_2003
+Ateles paniscus	Ateles paniscus (1538)	M	Hirnforschung	71.8	8.7	2.3	6.4	FALSE	coronal	FALSE	MacLeod_etal_2003
+Alouatta seniculus	Alouatta seniculus (1961/8)	M	Hirnforschung	36.5	4.3	1.6	2.7	FALSE	coronal	FALSE	MacLeod_etal_2003
+Alouatta seniculus	Alouatta seniculus (1961/9)	F	Hirnforschung	38.3	4	1.3	2.7	FALSE	coronal	TRUE	MacLeod_etal_2003
+Cebus sp.	Cebus sp. 1 LH RH coronal	M	Hirnforschung	79.1	7.3	2.5	4.8	FALSE	sagittal	FALSE	MacLeod_etal_2003
+Cebus sp.	Cebus sp. 5	NA	Hirnforschung	73.9	6.8	2.2	4.6	FALSE	coronal	FALSE	MacLeod_etal_2003
+Saimiri sciureus	Saimiri sciureus (1064)	F	Hirnforschung	19	1.9	0.9	1	FALSE	coronal	TRUE	MacLeod_etal_2003
+Saimiri sciureus	Saimiri sciureus (2408)	M	Hirnforschung	20.7	1.9	1	0.9	FALSE	coronal	FALSE	MacLeod_etal_2003
+Aotus trivirgatus	Aotus trivirgatus (1536)	F	Hirnforschung	18.9	1.7	1	1.2	FALSE	coronal	FALSE	MacLeod_etal_2003
+Aotus trivirgatus	Aotus trivirgatus (K197)	F	Hirnforschung	15.8	1.7	0.8	0.9	FALSE	coronal	TRUE	MacLeod_etal_2003
+Aotus trivirgatus	Aotus trivirgatus (888)	NA	Hirnforschung	19.7	1.8	0.9	0.8	FALSE	coronal	FALSE	MacLeod_etal_2003
+Aotus trivirgatus	Aotus trivirgatus (1535)	F	Hirnforschung	22.1	1.8	0.9	0.9	FALSE	coronal	FALSE	MacLeod_etal_2003

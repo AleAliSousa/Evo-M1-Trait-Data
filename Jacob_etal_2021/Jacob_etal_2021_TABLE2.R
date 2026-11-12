@@ -6,7 +6,7 @@
 ##          (PDF p. 9). Thionin-stained layer-V FI cortex; intermediate-solver
 ##          tissue was unavailable, so only Nonsolver and Solver rows exist.
 ## Frozen : Jacob_etal_2021_TABLE2_snapshot.csv — extracted from the PDF text layer by
-##          Jacob_etal_2021_extract_snapshot.R (extract-then-freeze), printed
+##          Jacob_etal_2021_TABLE2_snapshot.R (extract-then-freeze), printed
 ##          layout kept (caption, headers incl. footnote markers a/b,
 ##          "mean ± SEM" cells, table notes). This script READS it; it never
 ##          writes or regenerates the snapshot.

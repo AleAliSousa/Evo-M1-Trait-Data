@@ -8,7 +8,7 @@
 ## logarithmic scale (1-180 deg) of behaviourally determined sound-localization
 ## thresholds; each printed common name is joined to the scale by a leader line whose
 ## meeting point is the datum. The figure is a raster image, so the 34 leader lines were
-## pixel-digitised from the embedded bitmap by Heffner_etal_2014_Figure9_extract.py,
+## pixel-digitised from the embedded bitmap by Heffner_etal_2014_Figure9_snapshot.R,
 ## which wrote the frozen Heffner_etal_2014_Figure9_snapshot.csv.
 ##
 ## SECONDARY. The caption says only "For specific citations, see Heffner and Heffner,

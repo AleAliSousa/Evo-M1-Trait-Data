@@ -1,0 +1,4 @@
+"check_id","basis","observed","printed","difference","tolerance","status","note"
+"columns_aligned","Database vs References snapshot: number of column positions whose name differs (0 = same column list)",0,0,0,0,"pass",NA
+"row_count_aligned","Database vs References snapshot: number of rows (observed = References, printed = Database)",21322,21322,0,0,"pass",NA
+"taxonomy_aligned","Database vs References snapshot: number of taxonomy cells (class ... common_name) that differ row for row (0 = aligned)",0,0,0,0,"pass","21322 rows x 7 taxonomy columns compared cell by cell"

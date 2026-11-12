@@ -36,7 +36,7 @@ Activity pattern is likewise compiled from the literature plus the authors' own 
 | file | what it is |
 |---|---|
 | `ross_kirk_2007.pdf` | the publication |
-| `Ross_Kirk_2007_extract_snapshot.R` | PDF text layer -> frozen snapshot (two printed columns per page, reading order reconstructed) |
+| `Ross_Kirk_2007_Appendix1_snapshot.R` | PDF text layer -> frozen snapshot (two printed columns per page, reading order reconstructed) |
 | `Ross_Kirk_2007_Appendix1_snapshot.csv` | the frozen source: title, header, 260 rows in printed order, the appendix's Notes line |
 | `Ross_Kirk_2007_Appendix1.R` | build: snapshot -> analysis CSV + public TSV |
 | `Ross_Kirk_2007_Appendix1.csv` | analysis CSV, 260 rows x 14 columns |

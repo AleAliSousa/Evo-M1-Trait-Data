@@ -17,7 +17,7 @@ PDF in this folder: `heiss_etal_1985.pdf`, COPIED (bytes identical) from the End
 
 ```
 Source (PDF)
-  -> Heiss_etal_1985_extract_snapshot.R   writes the frozen snapshot(s)
+  -> Heiss_etal_1985_TABLEI_snapshot.R   writes the frozen snapshot(s)
   -> Heiss_etal_1985_TABLEI_snapshot.csv   FROZEN: 33 rows x 5 cols
   -> Heiss_etal_1985_TABLEI.R   clean + parse + table checks
   -> Heiss_etal_1985_TABLEI.csv   96 rows x 20 cols  ("use this")
@@ -27,7 +27,7 @@ Source (PDF)
 
 ## Who read the values, when, and how it was checked
 
-**Hand transcription** (HOWTO method 5) by an AI assistant (Claude) on 2026-11-02 from 300/400-dpi renders of PDF pages 1-3, typed as a verbatim printed-layout block into `Heiss_etal_1985_extract_snapshot.R`, which freezes it and refuses to overwrite a differing frozen copy. The OCR text layer was read only afterwards, as a second reading: it agreed on every TABLE I value and every text value.
+**Hand transcription** (HOWTO method 5) by an AI assistant (Claude) on 2026-11-02 from 300/400-dpi renders of PDF pages 1-3, typed as a verbatim printed-layout block into `Heiss_etal_1985_TABLEI_snapshot.R`, which freezes it and refuses to overwrite a differing frozen copy. The OCR text layer was read only afterwards, as a second reading: it agreed on every TABLE I value and every text value.
 
 The build script `Heiss_etal_1985_TABLEI.R` reads the frozen file and contains no table values. It was run with
 `Rscript` (conda env `r`, R with readxl) from a clean session on 2026-11-02.

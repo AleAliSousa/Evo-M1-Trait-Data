@@ -16,10 +16,10 @@ check fixture's VA quarantine for KK-cited values.
 | file | what it is |
 | --- | --- |
 | `kirk_kay_2004.pdf` | the chapter PDF (frozen source; born-digital) |
-| `Kirk_Kay_2004_extract_snapshot.py` | snapshot builder; `--verify` audits every transcribed token against the PDF text layer (clean 2026-08-31) |
+| `Kirk_Kay_2004_Table1_snapshot.R`, `Kirk_Kay_2004_Table2_snapshot.R` | snapshot builders (one per item; R ports of the retired `…_snapshot.py.retired` scripts, regenerated CSVs byte-identical in a temp dir); `--verify` audits every transcribed token against the PDF text layer (pdftools; clean 2026-11-12) |
 | `…_Table1_snapshot.csv`, `…_Table2_snapshot.csv` | frozen snapshots as printed (37 + 42 rows; en-dash ranges, substrate qualifiers, misspellings, typographic apostrophes kept verbatim) |
 | `…_Table1.R`, `…_Table2.R` | canonical reformats: snapshot → CSV + public TSV (one row per printed substrate segment) |
-| `Kirk_Kay_2004_mirror.py` | offline Python mirror that generated the committed outputs — delete after an RStudio run of the `.R`s reproduces them |
+| `Kirk_Kay_2004_mirror.py.retired` | retired offline Python mirror that first generated the committed outputs; the `.R` scripts were run in a temp dir 2026-11-12 and reproduce the committed CSVs and public TSVs byte-for-byte |
 | `…_Table1.csv` (39 rows), `…_Table2.csv` (46 rows) | analysis-ready data ("use these") |
 | `reference_tables/…_definitions.csv` ×2 | data dictionaries |
 | `reference_tables/Kirk_Kay_2004_footnotes.csv` | both tables' printed notes, verbatim |

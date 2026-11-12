@@ -11,7 +11,7 @@ original in `erred/Seymour_etal_2016/`).
 
 - **Source:** `rsos170846supp1.docx` — the Word supplement (one table, "Revised data",
   30 fossil-hominin specimens + footnotes + a 22-entry reference list).
-- **Extract → snapshot:** `Seymour_etal_2017_TableS1_snapshot_extract.R` (pure R:
+- **Extract → snapshot:** `Seymour_etal_2017_TableS1_snapshot.R` (pure R:
   `officer` to read the .docx paragraphs + table cells, `openxlsx` to write the sheet)
   builds the frozen `Seymour_etal_2017_TableS1_snapshot.xlsx` (sheet `TableS1`): caption,
   the 11 headers, the 30 specimen rows **with footnote superscripts kept verbatim** (e.g.

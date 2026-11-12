@@ -15,7 +15,7 @@ PDF in this folder: `holliday_1971.pdf` (copied from `References.Data/PDF/392693
 
 ```
 Source (PDF)
-  -> Holliday__1971_extract_snapshot.R   writes the frozen snapshot(s)
+  -> Holliday__1971_TABLEI_snapshot.R   writes the frozen snapshot(s)
   -> Holliday__1971_TABLEI_snapshot.csv   FROZEN: 14 rows x 6 cols
   -> Holliday__1971_TABLEI.R   clean + convert units + table checks
   -> Holliday__1971_TABLEI.csv   8 rows x 24 cols  ("use this")
@@ -25,7 +25,7 @@ Source (PDF)
 
 ## Who read the values, when, and how it was checked
 
-**Hand transcription** (method 5) by an AI assistant (Claude) on 2026-11-03 from 170/330-dpi renders of PDF page 2, typed as a verbatim printed-layout block into `Holliday__1971_extract_snapshot.R`, which freezes it and refuses to overwrite a differing frozen copy. The PDF is a poor scan of a bound volume with a garbled OCR layer (footnote marks lost), so the OCR text was not a usable second reading; every cell was re-read at 330 dpi and against the earlier working transcription (`classic_human_brain_partition.csv`: brain 4.2, 1.40 kg, 23.3%, total BMR 1,780). The Muscle superscript is faint and read as 4. The build script reads the frozen file, contains no table values, and was run with `Rscript` (conda env `r`) on 2026-11-03.
+**Hand transcription** (method 5) by an AI assistant (Claude) on 2026-11-03 from 170/330-dpi renders of PDF page 2, typed as a verbatim printed-layout block into `Holliday__1971_TABLEI_snapshot.R`, which freezes it and refuses to overwrite a differing frozen copy. The PDF is a poor scan of a bound volume with a garbled OCR layer (footnote marks lost), so the OCR text was not a usable second reading; every cell was re-read at 330 dpi and against the earlier working transcription (`classic_human_brain_partition.csv`: brain 4.2, 1.40 kg, 23.3%, total BMR 1,780). The Muscle superscript is faint and read as 4. The build script reads the frozen file, contains no table values, and was run with `Rscript` (conda env `r`) on 2026-11-03.
 
 ### Snapshot and analysis CSV
 

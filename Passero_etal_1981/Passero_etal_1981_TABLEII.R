@@ -7,7 +7,7 @@
 # (tonic immobility, n = 5), means ± S.E.
 #
 # Reads the frozen snapshot (Passero_etal_1981_TABLEII_snapshot.csv, written by
-# Passero_etal_1981_extract_snapshot.R):
+# Passero_etal_1981_TABLEII_snapshot.R):
 #   - one analysis row per printed cell (22 structures x 3 printed columns:
 #     Control, Hypnosis, % Decrease), in printed order;
 #   - significance stars kept in footnote_marks;

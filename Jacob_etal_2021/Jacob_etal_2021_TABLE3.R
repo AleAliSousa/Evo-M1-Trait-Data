@@ -4,7 +4,7 @@
 ##          doi 10.1002/cne.25197 — TABLE 3 "Cytoarchitecture analysis of the
 ##          hilus of the dentate gyrus region in raccoons" (PDF p. 11).
 ## Frozen : Jacob_etal_2021_TABLE3_snapshot.csv — extracted from the PDF text layer by
-##          Jacob_etal_2021_extract_snapshot.R (extract-then-freeze), printed
+##          Jacob_etal_2021_TABLE3_snapshot.R (extract-then-freeze), printed
 ##          layout kept, incl. the "*" on the Solver fusiform cell
 ##          ("1.42 ± 0.15*"; Figure 7 caption: *p = .0495 vs intermediates;
 ##          ANOVA F(2,11) = 4.640, p = .035). This script READS the snapshot;

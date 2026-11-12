@@ -1,6 +1,6 @@
 # Baron, Stephan & Frahm 1996, Table30: volumes of some mesencephalic and diencephalic components: the lateral lemniscus nuclei and the geniculate bodies with the dorsal/ventral split of CGL.
 # Frozen source: Baron_etal_1996_Table30_snapshot.csv, produced by the coordinate-based
-# PDF transcription in Baron_etal_1996_extract_snapshots.R, which is checked on
+# PDF transcription in Baron_etal_1996_Table30_snapshot.R, which is checked on
 # every run against the frozen Table 10 and Table 32 snapshots.
 
 suppressPackageStartupMessages(library(readxl))

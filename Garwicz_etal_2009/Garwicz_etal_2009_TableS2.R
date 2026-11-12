@@ -2,9 +2,8 @@
 ## Table S2. Database for multiple-regression model
 ##
 ## Input  : Garwicz_etal_2009_TableS2_snapshot.csv  (frozen extraction from
-##          0905777106si.pdf, page 6; already produced by the sibling
-##          Garwicz_etal_2009_TableS1.R build, which extracts both S1 and S2
-##          in one pass)
+##          0905777106si.pdf, page 6; written by
+##          Garwicz_etal_2009_TableS2_snapshot.R)
 ## Output : Garwicz_etal_2009_TableS2.csv
 ##          __Public/comparative-data/<Item encoded>.tsv
 ##

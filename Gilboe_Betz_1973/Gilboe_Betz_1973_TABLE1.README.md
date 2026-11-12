@@ -18,7 +18,7 @@ Perfusion conditions incl. brain weight and blood flow rate, halothane vs sodium
 
 ```
 Source PDF
-  -> Gilboe_Betz_1973_extract_snapshot.R        verbatim printed block, refuses to overwrite a differing frozen copy
+  -> Gilboe_Betz_1973_TABLE1_snapshot.R        verbatim printed block, refuses to overwrite a differing frozen copy
   -> Gilboe_Betz_1973_TABLE1_snapshot.csv   FROZEN: 16 printed rows
   -> Gilboe_Betz_1973_TABLE1.R              parse + table checks (no values typed)
   -> Gilboe_Betz_1973_TABLE1.csv            26 rows (one per printed value)  ("use this")

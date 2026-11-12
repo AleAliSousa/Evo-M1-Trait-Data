@@ -1,0 +1,3 @@
+"check_id","basis","observed","printed","difference","tolerance","status","note"
+"si_reference_list_complete","SI reference list parsed from MacLean_etal_2014_SIText_extracted.txt: entries parsed vs the 31 numbered entries printed",31,31,0,0,"pass","numbers must run consecutively from 1 up to the line 'Fig. S1.'; cross-resource: reads the SI text"
+"source_numbers_resolve","distinct source numbers cited in column source_numbers_as_published of MacLean_etal_2014_TableS1.csv that resolve to an SI reference vs distinct numbers cited",8,8,0,0,"pass","cross-item: reads MacLean_etal_2014_TableS1.csv (sibling analysis CSV) and the SI text; 38 links written"

@@ -26,11 +26,8 @@ setwd(folder)
 options(scipen = 999)
 library(rvest); library(readxl)
 
-## 1. SNAPSHOT (faithful) - parse the published HTML table verbatim
-tab <- html_table(read_html("05760table2.html"))[[1]]
-colnames(tab) <- c("species","FrG","RoG","FrRat","WhBr","NeoG","NeoW","Act","Diet","Gr","Grsz")
-tab <- tab[-1, ]                                   # drop the repeated header row
-write.csv(tab, "Bush_Allman_2004_a_Table2_snapshot.csv", row.names = FALSE)
+## 1. SNAPSHOT (faithful) - read the frozen snapshot (written by Bush_Allman_2004_a_Table2_snapshot.R)
+tab <- read.csv(paste0(item_name, "_snapshot.csv"), colClasses = "character", check.names = FALSE)
 
 ## 2. HARMONIZE species names to the project key
 key <- read.csv("../_keys/Stephan/species_key.csv", stringsAsFactors = FALSE)

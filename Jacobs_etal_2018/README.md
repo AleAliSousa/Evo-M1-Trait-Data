@@ -29,7 +29,7 @@ DOI **10.1002/cne.24349** · PMID **29088505** · EndNote `[4950]`.
 |---|---|
 | `Jacobs_etal_2018_Table3_snapshot.xlsx` + `_Table3.README.md` | **Unbiased stereology.** 20 species (11 carnivore + 9 primate), layer V pyramidal **and** gigantopyramidal soma length / area / volume, with body and brain mass |
 | `Jacobs_etal_2018_Table5_snapshot.xlsx` + `_Table5.README.md` | **Golgi morphology.** 19 species / 7 orders × 3 neuron types (superficial layer III, deep layer V, gigantopyramidal), 617 traced neurons: soma size and depth, dendritic volume, length, segment length, segment count, spine number, spine density |
-| `Jacobs_etal_2018_extract_snapshot.py` | the capture script (both tables print rotated 90°; no R in this environment) |
+| `Jacobs_etal_2018_Table3_snapshot.R`, `Jacobs_etal_2018_Table5_snapshot.R` | the capture scripts, one per table (both tables print rotated 90°); each writes only its own `_snapshot.xlsx` |
 | `reference_tables/*_definitions.csv` | data dictionaries |
 
 Both snapshots verified against statistics the paper states independently — the traced-neuron totals

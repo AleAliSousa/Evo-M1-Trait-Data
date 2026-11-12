@@ -4,7 +4,7 @@
 ##          doi 10.1002/cne.25197 — TABLE 1 "Hemisphere and brain area weights"
 ##          (PDF p. 5). Raccoon (Procyon lotor), three problem-solving groups.
 ## Frozen : Jacob_etal_2021_TABLE1_snapshot.csv — extracted from the PDF text layer by
-##          Jacob_etal_2021_extract_snapshot.R (extract-then-freeze), printed
+##          Jacob_etal_2021_TABLE1_snapshot.R (extract-then-freeze), printed
 ##          layout kept (caption row, printed headers, "mean ± SEM" cells,
 ##          footnote marker "a", table notes). This script READS it; it never
 ##          writes or regenerates the snapshot.

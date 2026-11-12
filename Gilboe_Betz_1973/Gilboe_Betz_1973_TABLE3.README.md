@@ -18,7 +18,7 @@ Control vs experimental O2 uptake during pentylenetetrazol (5 brains) and epinep
 
 ```
 Source PDF
-  -> Gilboe_Betz_1973_extract_snapshot.R        verbatim printed block, refuses to overwrite a differing frozen copy
+  -> Gilboe_Betz_1973_TABLE3_snapshot.R        verbatim printed block, refuses to overwrite a differing frozen copy
   -> Gilboe_Betz_1973_TABLE3_snapshot.csv   FROZEN: 5 printed rows
   -> Gilboe_Betz_1973_TABLE3.R              parse + table checks (no values typed)
   -> Gilboe_Betz_1973_TABLE3.csv            14 rows (one per printed value)  ("use this")

@@ -20,35 +20,12 @@ base <- dataset_root <- local({                                      # repo root
 })
 setwd(folder)
 
-setwd(folder)
-
-# Read directly from online docx file
-# Load docxtractr
-library(docxtractr)
-# Define the PDF file path
-# The publisher's supplement is already in this folder as the untouched download; read that and
-# fall back to the URL only if it is missing, so the build no longer needs the network (2026-10-31).
-docx_url   <- "https://static-content.springer.com/esm/art%3A10.1038%2Fs41598-018-26062-8/MediaObjects/41598_2018_26062_MOESM1_ESM.docx"
-docx_local <- file.path(folder, "41598_2018_26062_MOESM1_ESM.docx")
-docx <- read_docx(if (file.exists(docx_local)) docx_local else docx_url)
-# Use docx_extract_all_tbls
-tables5 <- docx_extract_all_tbls(docx,guess_header=TRUE,preserve=FALSE,trim=TRUE)
-
-# Replace any "." with "" in the column names
-colnames(tables5[[5]]) <- gsub("\\.", " ", colnames(tables5[[5]]))
-# Replace any "106" with ", x 10ˆ6" in the column names with a single space before "x"
-colnames(tables5[[5]]) <- gsub("\\s*106", ", x 10ˆ6", colnames(tables5[[5]]))
-
-# Replace any "±" "± " or " ±" without both a space before/after to " ± " with spaces both before and after in data of tables1[[1]]
-tables5[[5]] <- apply(tables5[[5]], 2, function(x) gsub("(?<![[:space:]])±( |%)|(?<![[:space:]])± | ±(?![[:space:]])", " ± ", x, perl=TRUE))
-
-# Save the data frame to a "primary or equivalent" to a CSV file
-write.csv(tables5[[5]], file = "Kverkova_etal_2018_TableS5_snapshot.csv", row.names = FALSE)
+## 1. SOURCE (frozen snapshot Kverkova_etal_2018_TableS5_snapshot.csv, written by Kverkova_etal_2018_TableS5_snapshot.R)
 
 ## 2. MAKE READABLE
 
 # Convert the table matrix into a dataframe
-df5 <- as.data.frame(tables5[[5]])
+df5 <- read.csv(paste0(item_name, "_snapshot.csv"), check.names = FALSE, colClasses = "character")
 
 # Define the columns to split and their corresponding new column names
 library(tidyr)

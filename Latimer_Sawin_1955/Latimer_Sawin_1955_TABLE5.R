@@ -8,7 +8,7 @@
 # "80 dwarf", as the OCR text layer does; the page prints 20.)
 #
 # Reads the frozen snapshot (Latimer_Sawin_1955_TABLE5_snapshot.xlsx, written by
-# Latimer_Sawin_1955_extract_snapshot.R) and does all the cleaning:
+# Latimer_Sawin_1955_TABLE5_snapshot.R) and does all the cleaning:
 #   - one analysis row per printed numeric cell, in printed order, read along each
 #     printed row: 14 printed rows x 7 cells = 98 rows (long format);
 #   - three printed blocks: "Weights in grams", "Percentages of net body weight",
@@ -26,22 +26,19 @@
 #     section 7a): Coef. var. = 100 x Stand. dev. / Average; the "t" values
 #     (normal vs dwarf) from the Averages, SDs and n; Brain = sum of its four parts
 #     (grams, each group; the paper weighs the four parts and sums them, p. 515);
-#     the percentages of brain weight add to 100 (each group). Across tables: the
-#     NORMAL and DWARF Averages pooled (n-weighted) against TABLE 2 (all the
-#     animals of the same sex), every row of the grams block, and the n. The
-#     percentages of net body weight are a mean of per-animal ratios, so they are
-#     compared with the ratio of the printed means (TABLE 1 net body weight of the
-#     same group) only as an INFORMATIVE check (no pass criterion). Mismatches are
-#     warned, noted on the row and kept as printed.
+#     the percentages of brain weight add to 100 (each group). Mismatches are
+#     warned, noted on the row and kept as printed. The checks across tables (the
+#     NORMAL and DWARF Averages pooled against TABLE 2, the n, and the informative
+#     comparison with TABLE 1) need sibling CSVs and are in
+#     internal_checks/Latimer_Sawin_1955_TABLE5_internal_check.R.
 # No table value is typed in this script.
 #
-# Build order: Latimer_Sawin_1955_TABLE1.R and Latimer_Sawin_1955_TABLE2.R first
-# (the cross-table checks read Latimer_Sawin_1955_TABLE1.csv and _TABLE2.csv;
-# without them those checks are not evaluated).
+# Build order: none (this script reads only its own snapshot). The cross-item check
+# internal_checks/Latimer_Sawin_1955_TABLE5_internal_check.R reads Latimer_Sawin_1955_TABLE1.csv
+# and _TABLE2.csv: run TABLE1.R and TABLE2.R before it.
 #
-# R NOT RUN — outputs written by a Python mirror; Alexandra to run the R.
-# Written 2026-11-07 by an AI assistant. The analysis CSV, the public TSV and the
-# table-check results quoted in the README come from a Python mirror of this script.
+# Written 2026-11-07 by an AI assistant. Run in R on 2026-11-12 in a temporary copy of the repo:
+# the analysis CSV and the public TSV are byte-identical to the committed files.
 
 .sp <- local({
   a <- grep("^--file=", commandArgs(FALSE), value = TRUE)
@@ -267,75 +264,11 @@ for (g_ in unique(w$group)) {
   rows_pct[[length(rows_pct) + 1L]] <- vapply(g$printed_row, function(p) row_of(p, g$side[1], "mean"), integer(1))
 }
 
-## 5. Across tables (1 + 5): NORMAL n + DWARF n = TABLE 2 n, and the NORMAL and DWARF
-##    Averages pooled (n-weighted) = the TABLE 2 Average of all the animals of this sex,
-##    every row of the grams block. TABLE 2 is read from its analysis CSV as printed text.
-t2_csv <- paste0(paper, "_TABLE2.csv")
-gm   <- w[w$block == "weight", ]
-strs <- unique(gm$structure_as_published)
-t2 <- NULL; t2_n <- NA_integer_
-if (file.exists(t2_csv)) {
-  t2 <- read.csv(t2_csv, colClasses = "character", encoding = "UTF-8")   # keeps "9.349" as printed
-  t2 <- t2[t2$block == "weight" & t2$statistic == "mean" & t2$sex == sex & t2$group == "all", ]
-  stopifnot(nrow(t2) == length(strs), all(strs %in% t2$structure_as_published))
-  t2_n <- as.integer(unique(t2$n)); stopifnot(length(t2_n) == 1L)
-}
-x_missing <- if (is.null(t2)) paste0(t2_csv, " not found; run Latimer_Sawin_1955_TABLE2.R first.") else NA_character_
-tc_xn <- chk(paste0("n_vs_TABLE2_", sex),
-             sprintf("NORMAL n + DWARF n (caption) = TABLE 2 n [%s]", sex),
-             grpL$n + grpR$n, t2_n, 0, x_missing)
-rows_xn <- list(integer(0))
-tc_xm <- NULL; rows_xm <- list()
-for (s_ in strs) {
-  nd <- gm[gm$structure_as_published == s_, ]
-  nd <- nd[match(c(grpL$group, grpR$group), nd$group), ]
-  a_txt <- if (is.null(t2)) NA_character_ else t2$value_printed[match(s_, t2$structure_as_published)]
-  a_val <- if (is.null(t2)) NA_real_ else as.numeric(t2$value[match(s_, t2$structure_as_published)])
-  tc_xm <- rbind(tc_xm, chk(paste0("pooled_vs_TABLE2_", nd$measure[1], "_", sex),
-    sprintf("NORMAL and DWARF Averages pooled (n-weighted) = TABLE 2 Average of all the %ss [%s]",
-            sex, nd$measure[1]),
-    sum(nd$n * nd$mean) / sum(nd$n), a_val,
-    sum(nd$n * half_unit(nd$mean_txt)) / sum(nd$n) + half_unit(a_txt),
-    if (is.null(t2)) x_missing else
-      sprintf("(%d x %s + %d x %s) / %d vs TABLE 2 %s", nd$n[1], nd$mean_txt[1], nd$n[2],
-              nd$mean_txt[2], sum(nd$n), a_txt)))
-  rows_xm[[length(rows_xm) + 1L]] <- c(row_of(nd$printed_row[1], nd$side[1], "mean"),
-                                       row_of(nd$printed_row[2], nd$side[2], "mean"))
-}
+## (The cross-item checks that need the sibling analysis CSV live in
+##  internal_checks/Latimer_Sawin_1955_TABLE5_internal_check.R; this script reads only its own snapshot.)
 
-## 6. INFORMATIVE ONLY (10): percentages of net body weight vs the ratio of the printed
-##    means, 100 x Average grams (this table) / Average net body weight of the same sex
-##    and group (TABLE 1, Panel B males or Panel C females). A mean of ratios need not
-##    equal a ratio of means: no pass criterion, status not_evaluable.
-t1_csv <- paste0(paper, "_TABLE1.csv")
-pb  <- w[w$block == "pct_net_body_weight", ]
-gmm <- gm[match(paste(pb$structure_as_published, pb$group), paste(gm$structure_as_published, gm$group)), ]
-if (file.exists(t1_csv)) {
-  t1 <- read.csv(t1_csv, colClasses = "character", encoding = "UTF-8")   # keeps "1959.3" as printed
-  net <- t1[t1$measure == "body_weight_net" & t1$statistic == "mean" & t1$sex == sex &
-              t1$group %in% c(grpL$group, grpR$group), ]
-  stopifnot(nrow(net) == 2L)
-  net_txt <- net$value_printed[match(pb$group, net$group)]
-  net_val <- as.numeric(net$value[match(pb$group, net$group)])
-  net_pan <- net$panel[match(pb$group, net$group)]
-  rom <- 100 * gmm$mean / net_val
-  info_note <- sprintf("INFORMATIVE ONLY, no pass criterion: the printed value is a mean of per-animal percentages; the ratio of the printed means, 100 x %s g / %s g (TABLE 1 Panel %s net body weight, %s %s), need not equal it. Ratio of means minus printed = %+.4f (%+.1f%% of the printed value).",
-                       gmm$mean_txt, net_txt, net_pan, sex, pb$group, rom - pb$mean,
-                       100 * (rom - pb$mean) / pb$mean)
-} else {
-  rom <- rep(NA_real_, nrow(pb))
-  info_note <- paste0("INFORMATIVE ONLY: ", t1_csv, " not found; run Latimer_Sawin_1955_TABLE1.R first.")
-}
-tc_info <- data.frame(check_id = paste0("info_ratio_of_means_", pb$measure, "_", pb$group),
-                      basis = sprintf("Percentage of net body weight (mean of ratios) vs 100 x Average grams / Average net body weight (ratio of means) [%s, %s %s]",
-                                      pb$structure_as_published, sex, pb$group),
-                      observed = rom, printed = pb$mean, difference = rom - pb$mean,
-                      tolerance = NA_real_, status = "not_evaluable", note = info_note,
-                      stringsAsFactors = FALSE)
-rows_info <- rep(list(integer(0)), nrow(tc_info))
-
-table_checks <- rbind(tc_cv, tc_t, tc_sum, tc_pct, tc_xn, tc_xm, tc_info)
-check_rows   <- c(rows_cv, rows_t, rows_sum, rows_pct, rows_xn, rows_xm, rows_info)
+table_checks <- rbind(tc_cv, tc_t, tc_sum, tc_pct)
+check_rows   <- c(rows_cv, rows_t, rows_sum, rows_pct)
 rownames(table_checks) <- NULL
 
 ## ---- per-row notes for the checks that did not pass -----------------------------------
@@ -356,10 +289,6 @@ for (i in which(table_checks$status == "mismatch")) {
   } else if (startsWith(id, "pct_brain_weight_sum_")) {
     sprintf("Table check %s: the four percentages of brain weight add to %.2f, not 100 (allowance %.2f). Kept as printed.",
             id, ob, tl)
-  } else if (startsWith(id, "pooled_vs_TABLE2_")) {
-    sprintf("Table check %s: the NORMAL and DWARF Averages pooled (n-weighted), %s, give %.4f g; TABLE 2 prints %s g for all the %ss (pooled minus TABLE 2 = %+.4f g; rounding of the printed cells allows +/-%.4f g). Kept as printed.",
-            id, sub(" vs TABLE 2 .*$", "", table_checks$note[i]), ob,
-            sub("^.* vs TABLE 2 ", "", table_checks$note[i]), sex, ob - pr, tl)
   } else {
     sprintf("Table check %s: recomputed %.4f, printed %s (allowance %.4f). Kept as printed.",
             id, ob, format(pr), tl)
@@ -370,8 +299,7 @@ for (i in which(table_checks$status == "mismatch")) {
 
 tally <- table(factor(table_checks$status, c("pass", "mismatch", "not_evaluable")))
 message(item_name, ": table checks  pass=", tally[["pass"]], "  mismatch=", tally[["mismatch"]],
-        "  not_evaluable=", tally[["not_evaluable"]], " (the not_evaluable rows include the ",
-        nrow(tc_info), " informative ratio-of-means comparisons)")
+        "  not_evaluable=", tally[["not_evaluable"]])
 if (tally[["mismatch"]] > 0L) {
   bad <- table_checks[table_checks$status == "mismatch", ]
   for (i in seq_len(nrow(bad)))

@@ -5,7 +5,7 @@
 # cerebral hemispheres, p. 864, of MPTP-induced hemiparkinsonian monkeys (mean ± SEM).
 #
 # Reads the frozen snapshot (Palombo_etal_1990_Table3_snapshot.csv, written by
-# Palombo_etal_1990_extract_snapshot.R). The five Palombo table scripts are the
+# Palombo_etal_1990_Table3_snapshot.R). The five Palombo table scripts are the
 # same reader; only the item name (taken from this file's name) differs, and
 # the table checks that apply to this table are selected by `locus`.
 #   - one analysis row per printed cell (structure x 4 arms), in printed order,

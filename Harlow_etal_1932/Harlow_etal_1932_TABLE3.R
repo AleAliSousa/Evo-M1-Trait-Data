@@ -62,11 +62,11 @@ printed_label <- c(lab[1], paste(lab[2], lab[3], sep = " | "), lab[4:11])
 val <- d[-3, 3:5]                                # 10 value rows
 stopifnot(nrow(val) == 10L, all(val != ""))
 
-## roster: FAMILIAR NAME -> printed binomial, from this paper's TABLE 1
-t1 <- read.csv("Harlow_etal_1932_TABLE1_snapshot.csv", header = FALSE,
+## roster: FAMILIAR NAME -> printed binomial, from this item's own reference_tables/<Item>_animal_lookup.csv
+## (the TABLE 1 roster rows for these animals, copied verbatim; the item reads no sibling snapshot)
+lk <- read.csv(file.path("reference_tables", paste0(item_name, "_animal_lookup.csv")),
                colClasses = "character", na.strings = NULL)
-t1 <- t1[t1[[6]] %in% c("Male", "Female"), ]
-roster <- setNames(paste(sub("\\*$", "", t1[[2]]), t1[[3]]), t1[[4]])
+roster <- setNames(paste(sub("\\*$", "", lk$genus), lk$species), lk$familiar_name)
 
 ## familiar name = the TABLE 1 roster name the printed label ends with ...
 fam <- vapply(printed_label, function(s0) {

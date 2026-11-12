@@ -8,7 +8,7 @@ Page154 (PDF page6) was visually verified. Of 41 excavated dens known to contain
 Derived mean occupancy = (39×1 + 2×2)/41 = 1.0487804878. This is daytime occupancy of selected occupied dens, not a random sample of independent social groups or an all-season social-group mean. The sample can include repeated animals. A further pair observed by telemetry in November is retained in this note but excluded from the excavation denominator. Ferrets were feral in South Island New Zealand pastoral habitat. Source Mustela furo is an NCBI synonym of the project's Mustela putorius furo anchor (taxid9669).
 
 A separate Den_occupancy_mean_Norbury1998 label prevents inflating conventional group-size coverage.
-Rebuild (changed 2026-10-31): `_checks/social_variables/build_population_censuses.py` writes the
+Rebuild (changed 2026-10-31): `_archive/2026-10_social_variables_expansion/social_variables/build_population_censuses.py` writes the
 constructed snapshot of the printed quantities; `Norbury_etal_1998_DenCensus.R` then derives the 39
 single-occupant dens by subtraction and `Norbury_etal_1998_DenSummary.R` the mean occupancy from that
 count table (run second). The python no longer writes those two CSVs. The mean is unchanged in value and

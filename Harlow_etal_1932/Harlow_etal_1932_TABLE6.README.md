@@ -9,9 +9,11 @@ Psychology*, 13(3), 313-343. https://doi.org/10.1037/h0073864
 | file | what it is |
 |---|---|
 | `Harlow_etal_1932_TABLE6_snapshot.xlsx` | the frozen snapshot: the table as printed |
+| `Harlow_etal_1932_TABLE6_snapshot.R` | writes only the snapshot above (printed-layout block; refuses to overwrite a differing frozen copy) |
 | `Harlow_etal_1932_TABLE6.R` | reformat: snapshot -> analysis CSV + public TSV |
 | `Harlow_etal_1932_TABLE6.csv` | analysis-ready data ("use this") |
 | `reference_tables/Harlow_etal_1932_TABLE6_definitions.csv` | data dictionary |
+| `reference_tables/Harlow_etal_1932_TABLE6_animal_lookup.csv` | familiar name -> printed genus + species, copied verbatim from the TABLE 1 roster rows of the animals in this table |
 | `Harlow_etal_1932_TABLE6.README.md` | this file |
 
 **Analysis rows** — 60 (10 animals x 3 delays x 2 methods). **Observation level** — individual animal x delay x method.
@@ -25,7 +27,7 @@ The source is a **1932 scanned journal page**. The PDF carries an OCR text layer
 emits table columns out of reading order and corrupts digits, so it was **not** used for any
 value. Every cell was read off page renders at 200-600 dpi by an **AI assistant (Claude) on
 2026-10-31** and typed verbatim into the frozen snapshot through
-``Harlow_etal_1932_extract_snapshots.py`` (the printed-layout block lives in that script;
+``Harlow_etal_1932_TABLE6_snapshot.R`` (the printed-layout block lives in that script;
 re-running it refuses to overwrite a differing frozen copy). The same session re-rendered each
 table at 400-600 dpi with the column rules visible and read every row left to right against the
 transcription.
@@ -53,6 +55,16 @@ Row VI prints `Macaque (Blackie)`, but TABLE 1 lists Blackie as the Barbary ape 
 and its footnote says the authors deliberately group the Barbary ape with the macaques. The
 species therefore comes from the TABLE 1 roster, not from the taxon word printed here; the
 printed word is kept in `taxon_word_printed`.
+
+## Animal lookup
+
+`species_printed` comes from the paper's TABLE 1 (the roster that gives each animal's genus and species
+against its familiar name). This item used to read the TABLE 1 snapshot directly; since the item scripts
+read only their own snapshot, the rows it needs are now an item-owned copy,
+`reference_tables/Harlow_etal_1932_TABLE6_animal_lookup.csv` (columns `familiar_name`, `genus`, `species`; the genus keeps its
+printed footnote asterisk, e.g. `Simia*`, which the script strips). The values are copied verbatim from
+`Harlow_etal_1932_TABLE1_snapshot.csv`; this is a data dependency, not a check. The CSV and the public TSV
+are byte-identical to those built before the change.
 
 ## Table checks
 

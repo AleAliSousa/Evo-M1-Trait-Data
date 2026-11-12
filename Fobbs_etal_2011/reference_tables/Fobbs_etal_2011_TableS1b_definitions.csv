@@ -9,5 +9,5 @@ time_unit,Unit qualifying age_at_death where printed,,,,info,various (multi-taxo
 sex,"Sex of the specimen, as printed ('unknown' where not recorded)",,,,info,various (multi-taxon catalog; see item scope),Fobbs_etal_2011_TableS1b,,
 plane,Histological plane of section,,,,info,various (multi-taxon catalog; see item scope),Fobbs_etal_2011_TableS1b,,
 study,Study/investigator name printed alongside some rows,,,,info,various (multi-taxon catalog; see item scope),Fobbs_etal_2011_TableS1b,,
-Method:frozen_source,"nyas_6036_sm_table1b.doc (legacy journal Word supplement) is the frozen source, converted losslessly to a snapshot workbook by Fobbs_etal_2011_build_snapshot.py; the snapshot is not rebuilt unless explicitly requested (rebuild_snapshot=FALSE guards the audited snapshot)",,,,method,,,,
+Method:frozen_source,"nyas_6036_sm_table1b.doc (legacy journal Word supplement) is the frozen source, converted losslessly to a snapshot workbook by Fobbs_etal_2011_TableS1b_snapshot.py; the snapshot is not rebuilt unless explicitly requested (the item script only reads it)",,,,method,,,,
 Method:scope,Non-human comparative specimens catalogued alongside the human collection (Table S1a). 164 catalog records after cleaning (printed section-label/blank rows removed).,,,,method,,,Fobbs_etal_2011_TableS1b,

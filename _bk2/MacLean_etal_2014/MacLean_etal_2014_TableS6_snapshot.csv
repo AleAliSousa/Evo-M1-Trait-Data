@@ -1,0 +1,11 @@
+source_row,c1,c2,c3,c4,c5,c6,c7,c8
+1, , ,Cylinder Task,Cylinder Task,Cylinder Task,A not B Task,A not B Task,A not B Task
+2,Common Name,Latin Name,Mann-Whitney U,N,p value,χ2,N,p value
+3,capuchin monkey,Cebus apella,65.5,21,0.65,0.99,28,0.32
+4,chimpanzee,Pan troglodytes ,-,-,-,0.44,14,0.51
+5,domestic dog,Canis familiaris,134,65,< 0.01,0.64,65,0.92
+6,gorilla,Gorilla gorilla,9,8,1,*,11,-
+7,orangutan,Pongo pygmaeus,17.5,10,0.47,0,11,1
+8,squirrel monkey,Saimiri sciureus,11,18,< 0.01,0.01,18,0.42
+9, , , , , , , , 
+10,* Performance was identical between populations,* Performance was identical between populations,* Performance was identical between populations, , , , , 

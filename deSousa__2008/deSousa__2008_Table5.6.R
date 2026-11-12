@@ -6,7 +6,7 @@
 ##
 ## Input
 ##   deSousa__2008_Table5.6_snapshot.xlsx        (sheet "Table5.6")
-##   built by deSousa__2008_Table5.6_extract_snapshot.R from the PDF text layer
+##   built by deSousa__2008_Table5.6_snapshot.R from the PDF text layer
 ##
 ## Output
 ##   deSousa__2008_Table5.6.csv                  one row per species (6)

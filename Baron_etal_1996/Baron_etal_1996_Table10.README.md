@@ -15,7 +15,7 @@ printed `n` and remain missing rather than being inferred.
 
 1. `baron_etal_1996 book Comparative Neurobiology.pdf`, PDF pages 56–63, is the
    printed source.
-2. `Baron_etal_1996_extract_snapshots.py` reads the PDF text layer and writes
+2. `Baron_etal_1996_Table10_snapshot.R` (R port, 2026-11-12, of the retired `Baron_etal_1996_Table10_snapshot.py.retired`; run in a temp dir it regenerates the frozen snapshot byte-for-byte) reads the PDF text layer and writes
    `Baron_etal_1996_Table10_snapshot.csv`. Its small, literal OCR-repair table is
    documented in code and was checked against rendered page images.
 3. `Baron_etal_1996_Table10.R` reads only the frozen snapshot and writes the

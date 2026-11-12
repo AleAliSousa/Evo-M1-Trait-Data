@@ -1,0 +1,79 @@
+Group	Species	Family	Interaction	Context	Sex ratio	Group Size N	Number of connections I	Diameter D	Density	Neocortex ratio Cr	Global Efficiency	Average Dyadic Efficiency	Centralisation index	Modularity	Observation period (months)	focal hours per group	Reference	Source_row	Male_fraction	Group_size	Connections_count	Network_diameter	Network_density	Neocortex_ratio	Global_efficiency	Average_dyadic_efficiency	Centralisation_index	Observation_months	Focal_hours	Reference_keys
+1	Alouatta palliata	Aotidae	Proximities	Wild	0.5	17	85	2	0.625	1.82	0.1	0.813	39.5	0.254	Unknown	Unknown	14	2	0.5	17	85	2	0.625	1.82	0.1	0.813	39.5			14
+2	ateles geoffroyi	Atelidae	Body contacts	Wild	0.4286	15	46	3	0.438	2.35	0.1087	0.7143	81.2	0.4	4	161	15	3	0.4286	15	46	3	0.438	2.35	0.1087	0.7143	81.2	4	161	15
+3	Cebus capucinus	Cebidae	Body contacts	Wild	0	7	19	2	0.905	4.88	0.1842	0.9524	34.7	0.214	5	110	16–18	4	0	7	19	2	0.905	4.88	0.1842	0.9524	34.7	5	110	16; 17; 18
+4	Cebus capucinus	Cebidae	Body contacts	Wild	0.3333	12	12	4	0.182	4.88	0.25	0.4767	110.58	0.415	14	107	18,19	5	0.3333	12	12	4	0.182	4.88	0.25	0.4767	110.58	14	107	18; 19
+5	Cebus capucinus	Cebidae	Body contacts	Wild	0.5	14	22	4	0.242	4.88	0.1591	0.5156	91.46	0.489	14	59	18,19	6	0.5	14	22	4	0.242	4.88	0.1591	0.5156	91.46	14	59	18; 19
+6	Cebus capucinus	Cebidae	Body contacts	Wild	0.6923	13	21	3	0.269	4.88	0.2063	0.5769	71.61	0.357	10	88	18,19	7	0.6923	13	21	3	0.269	4.88	0.2063	0.5769	71.61	10	88	18; 19
+7	Cebus capucinus	Cebidae	Body contacts	Wild	0	5	10	1	1	4.88	0.5	1	32.32	0.208	5	110	16–18	8	0	5	10	1	1	4.88	0.5	1	32.32	5	110	16; 17; 18
+8	Cebus capucinus	Cebidae	Body contacts	Wild	0	6	15	1	1	4.88	0.4	1	41.16	0.197	24	603	18,20	9	0	6	15	1	1	4.88	0.4	1	41.16	24	603	18; 20
+9	Cebus capucinus	Cebidae	Body contacts	Wild	0	10	44	2	0.978	4.88	0.1136	0.9889	14.25	0.31	5	110	16–18	10	0	10	44	2	0.978	4.88	0.1136	0.9889	14.25	5	110	16; 17; 18
+10	Saimiri sciureus	Cebidae	Proximities	Captive	0.25	8	16	3	0.571	2.21	0.1667	0.4556	71.13	0.499	1	112	21	11	0.25	8	16	3	0.571	2.21	0.1667	0.4556	71.13	1	112	21
+11	Saimiri sciureus	Cebidae	Proximities	Captive	0.3	10	24	3	0.533	2.21	0.1389	0.7519	70.2	0.603	1	180	21	12	0.3	10	24	3	0.533	2.21	0.1389	0.7519	70.2	1	180	21
+12	Saimiri sciureus	Cebidae	Body contacts	Captive	0.3333	12	66	1	1	2.21	0.1818	1	28.05	0.339	1	11	8	13	0.3333	12	66	1	1	2.21	0.1818	1	28.05	1	11	8
+13	Saimiri sciureus	Cebidae	Proximities	Captive	0.4444	9	16	4	0.444	2.21	0.1406	0.6968	108.56	0.748	1	144	21	14	0.4444	9	16	4	0.444	2.21	0.1406	0.6968	108.56	1	144	21
+14	Sapajus apella	Cebidae	Body contacts	Wild	0.1818	11	33	3	0.6	4.88	0.1111	0.785	84.71	0.382	8	124	18,23,24	15	0.1818	11	33	3	0.6	4.88	0.1111	0.785	84.71	8	124	18; 23; 24
+15	Sapajus apella	Cebidae	Body contacts	Wild	0.2667	15	21	4	0.2	4.88	0.1786	0.523	92.94	0.308	8	73	18,23,24	16	0.2667	15	21	4	0.2	4.88	0.1786	0.523	92.94	8	73	18; 23; 24
+16	Sapajus apella	Cebidae	Body contacts	Wild	0.2857	10	25	3	0.556	4.88	0.1333	0.7519	90.39	0.001	15	542	18,25	17	0.2857	10	25	3	0.556	4.88	0.1333	0.7519	90.39	15	542	18; 25
+17	Sapajus apella	Cebidae	Body contacts	Wild	0.3	10	37	2	0.822	4.88	0.1351	0.911	97.5	0.41	24	1466	18,26	18	0.3	10	37	2	0.822	4.88	0.1351	0.911	97.5	24	1466	18; 26
+18	Sapajus apella	Cebidae	Body contacts	Wild	0.4	8	13	3	0.464	4.88	0.2051	0.6458	117.29	0.412	15	721	18,25	19	0.4	8	13	3	0.464	4.88	0.2051	0.6458	117.29	15	721	18; 25
+19	Sapajus apella	Cebidae	Body contacts	Wild	0.5	12	33	2	0.5	4.88	0.1818	0.697	95.1	0.362	2	300	22	20	0.5	12	33	2	0.5	4.88	0.1818	0.697	95.1	2	300	22
+20	Sapajus apella	Cebidae	Body contacts	Captive	0.5714	7	21	1	1	4.88	0.3333	1	37.09	0.237	1	11	8	21	0.5714	7	21	1	1	4.88	0.3333	1	37.09	1	11	8
+21	Sapajus paella	Cebidae	Body contacts	Wild	0	5	9	2	0.9	4.88	0.2778	0.95	21.58	0.362	2	300	22	22	0	5	9	2	0.9	4.88	0.2778	0.95	21.58	2	300	22
+22	Sapajus paella	Cebidae	Body contacts	Wild	0.25	8	17	2	0.607	4.88	0.2353	0.804	104.38	0.491	8	83	18,23,24	23	0.25	8	17	2	0.607	4.88	0.2353	0.804	104.38	8	83	18; 23; 24
+23	Cercopithecus diana	Cercopithecidae	Body contacts	Captive	0.4286	7	19	2	0.905	2.29	0.1842	0.9524	57.21	0.373	6	88	27	24	0.4286	7	19	2	0.905	2.29	0.1842	0.9524	57.21	6	88	27
+24	cercopithecus mitis	Cercopithecidae	Body contacts	Wild	0	17	102	2	0.75	2.42	0.0833	0.875	31.21	0.197	18	Unknown	28	25	0	17	102	2	0.75	2.42	0.0833	0.875	31.21	18		28
+25	Chlorocebus pygerythrus	Cercopithecidae	Body contacts	Wild	0.3947	38	460	2	0.654	2.17	0.0413	0.8184	29.48	0.195	24	Unknown	29,30	26	0.3947	38	460	2	0.654	2.17	0.0413	0.8184	29.48	24		29; 30
+26	Chlorocebus pygerythrus	Cercopithecidae	Body contacts	Wild	0.4	25	217	2	0.723	2.17	0.0576	0.8617	33.56	0.189	24	Unknown	29,30	27	0.4	25	217	2	0.723	2.17	0.0576	0.8617	33.56	24		29; 30
+27	Chlorocebus pygerythrus	Cercopithecidae	Body contacts	Wild	0.5385	26	259	3	0.797	2.17	0.0335	0.8979	19.78	0.178	24	Unknown	29,30	28	0.5385	26	259	3	0.797	2.17	0.0335	0.8979	19.78	24		29; 30
+28	Erythrocebus patas	Cercopithecidae	Body contacts	Wild	0.1111	8	28	1	1	2.96	0.2857	1	26.72	0.372	1	259	31	29	0.1111	8	28	1	1	2.96	0.2857	1	26.72	1	259	31
+29	Macaca arctoides	Cercopithecidae	Body contacts	Wild	0.381	21	40	4	0.19	2.43	0.1313	0.5885	55.88	0.295	3	300	32	30	0.381	21	40	4	0.19	2.43	0.1313	0.5885	55.88	3	300	32
+30	Macaca arctoides	Cercopithecidae	Body contacts	Captive	0.1429	14	90	2	0.989	2.43	0.0778	0.9945	47.64	0.22	28	191	33	31	0.1429	14	90	2	0.989	2.43	0.0778	0.9945	47.64	28	191	33
+31	Macaca fuscata	Cercopithecidae	Body contacts	Wild	0.36	25	248	2	0.823	2.6	0.0504	0.91	7.39	0.227	12	288	34	32	0.36	25	248	2	0.823	2.6	0.0504	0.91	7.39	12	288	34
+32	Macaca fuscata	Cercopithecidae	Body contacts	Wild	0.4194	31	117	4	0.252	2.6	0.0662	0.579	53.09	0.392	16	1179	35	33	0.4194	31	117	4	0.252	2.6	0.0662	0.579	53.09	16	1179	35
+33	Macaca fuscata	Cercopithecidae	Body contacts	Wild	0.4667	15	30	4	0.286	2.45	0.125	0.5699	65.57	0.455	12	764	36	34	0.4667	15	30	4	0.286	2.45	0.125	0.5699	65.57	12	764	36
+34	Macaca fuscata	Cercopithecidae	Proximities	Captive	0.3571	14	90	2	0.989	2.45	0.0787	0.9877	42.135	0.322	12	273	37	35	0.3571	14	90	2	0.989	2.45	0.0787	0.9877	42.135	12	273	37
+35	Macaca fuscata	Cercopithecidae	Body contacts	Wild	0.3333	21	64	3	0.305	2.45	0.1094	0.6349	89.7	0.489	12	140	38	36	0.3333	21	64	3	0.305	2.45	0.1094	0.6349	89.7	12	140	38
+36	Macaca fuscata	Cercopithecidae	Body contacts	Captive	0.3636	22	125	2	0.541	2.45	0.088	0.7706	37.94	0.435	8	108	39	37	0.3636	22	125	2	0.541	2.45	0.088	0.7706	37.94	8	108	39
+37	Macaca mulatta	Cercopithecidae	Body contacts	Wild	0.4375	16	49	4	0.408	2.6	0.0816	0.7875	69.64	0.312	2	72	40	38	0.4375	16	49	4	0.408	2.6	0.0816	0.7875	69.64	2	72	40
+38	Macaca mulatta	Cercopithecidae	Body contacts	Captive	0.2222	9	34	2	0.944	2.6	0.1324	0.9722	13.49	0.251	6	480	41	39	0.2222	9	34	2	0.944	2.6	0.1324	0.9722	13.49	6	480	41
+39	Macaca mulatta	Cercopithecidae	Body contacts	Captive	0.4	10	32	2	0.711	2.6	0.1563	0.8556	22.45	0.399	6	480	41	40	0.4	10	32	2	0.711	2.6	0.1563	0.8556	22.45	6	480	41
+40	Macaca nigra	Cercopithecidae	Body contacts	Captive	0.375	16	98	2	0.817	Unknown	0.0816	0.9083	21.88	0.247	8	289	39,41	41	0.375	16	98	2	0.817		0.0816	0.9083	21.88	8	289	39; 41
+41	Macaca radiata	Cercopithecidae	Body contacts	Wild	0.3478	23	162	2	0.64	2.28	0.071	0.8182	34.32	0.228	3	Unknown	43	42	0.3478	23	162	2	0.64	2.28	0.071	0.8182	34.32	3		43
+42	Macaca radiata	Cercopithecidae	Body contacts	Wild	0.4375	16	89	2	0.742	2.28	0.0899	0.8714	26.75	0.297	5	470	42	43	0.4375	16	89	2	0.742	2.28	0.0899	0.8714	26.75	5	470	42
+43	Macaca tonkeana	Cercopithecidae	Body contacts	Captive	0.2857	15	28	4	0.267	Unknown	0.1339	0.5067	78.78	0.187	11	254	41,46	44	0.2857	15	28	4	0.267		0.1339	0.5067	78.78	11	254	41; 46
+44	Macaca tonkeana	Cercopithecidae	Body contacts	Captive	0.3	10	37	2	0.822	Unknown	0.1351	0.9111	24.16	0.256	5	10	41,45	45	0.3	10	37	2	0.822		0.1351	0.9111	24.16	5	10	41; 45
+45	Macaca tonkeana	Cercopithecidae	Body contacts	Captive	0.48	25	231	2	0.77	Unknown	0.0541	0.885	11.38	0.255	6	120	41	46	0.48	25	231	2	0.77		0.0541	0.885	11.38	6	120	41
+46	Macaca tonkeana	Cercopithecidae	Body contacts	Captive	0.5625	18	150	2	0.981	Unknown	0.06	0.992	20.41	0.208	7	1000	41,44	47	0.5625	18	150	2	0.981		0.06	0.992	20.41	7	1000	41; 44
+47	Macaca tonkeana	Cercopithecidae	Body contacts	Captive	0.5714	10	45	1	1	Unknown	0.2222	1	15.39	0.212	7	1000	41,44	48	0.5714	10	45	1	1		0.2222	1	15.39	7	1000	41; 44
+48	Mandrillus sphinx	Cercopithecidae	Body contacts	Captive	0.2778	18	24	5	0.157	Unknown	0.15	0.4243	58.24	0.367	5	120	47	49	0.2778	18	24	5	0.157		0.15	0.4243	58.24	5	120	47
+49	Papio ursinus	Cercopithecidae	Body contacts	Wild	0.2667	15	69	2	0.657	2.81	0.1087	0.8286	65.96	0.368	14	359	7	50	0.2667	15	69	2	0.657	2.81	0.1087	0.8286	65.96	14	359	7
+50	Homo sapiens	Hominidae	Proximities	NA	0	22	39	5	0.169	4.1	0.1128	0.488	24.35	0.483	Unknown	Unknown	49	51	0	22	39	5	0.169	4.1	0.1128	0.488	24.35			49
+51	Homo sapiens	Hominidae	Proximities	NA	1	34	55	5	0.098	4.1	0.1236	0.494	38.94	0.44	36	Unknown	51	52	1	34	55	5	0.098	4.1	0.1236	0.494	38.94	36		51
+52	Homo sapiens	Hominidae	Proximities	NA	0.4138	29	240	2	0.591	4.1	0.0604	0.796	16.86	0.185	Unknown	Unknown	50	53	0.4138	29	240	2	0.591	4.1	0.0604	0.796	16.86			50
+53	Homo sapiens	Hominidae	Proximities	NA	0.5455	11	46	2	0.836	4.1	0.1196	0.918	81.18	0.293	Unknown	Unknown	48	54	0.5455	11	46	2	0.836	4.1	0.1196	0.918	81.18			48
+54	Pan paniscus	Hominidae	Proximities	Captive	0.6	5	9	2	0.9	3.22	0.2778	0.95	45.61	0.066	2	60	52	55	0.6	5	9	2	0.9	3.22	0.2778	0.95	45.61	2	60	52
+55	Pan troglodytes	Hominidae	Body contacts	Wild	1	15	27	4	0.257	3.22	0.1389	0.5425	52.71	0.222	6	360	55,56	56	1	15	27	4	0.257	3.22	0.1389	0.5425	52.71	6	360	55; 56
+56	Pan troglodytes	Hominidae	Body contacts	Wild	0.3333	12	50	2	0.758	3.22	0.12	0.8788	48.3	0.331	7	1800	54	57	0.3333	12	50	2	0.758	3.22	0.12	0.8788	48.3	7	1800	54
+57	Pan troglodytes	Hominidae	Body contacts	Captive	1	9	31	2	0.861	3.22	0.1452	0.9583	46.7	0.174	4	12	53	58	1	9	31	2	0.861	3.22	0.1452	0.9583	46.7	4	12	53
+58	Pan troglodytes	Hominidae	Body contacts	Captive	0.1667	5	10	1	1	3.22	0.5	1	47.99	0.19	4	12	53	59	0.1667	5	10	1	1	3.22	0.5	1	47.99	4	12	53
+59	Pan troglodytes	Hominidae	Body contacts	Captive	0.1818	11	55	1	1	3.22	0.2	1	28.59	0.134	4	12	53	60	0.1818	11	55	1	1	3.22	0.2	1	28.59	4	12	53
+60	Pan troglodytes	Hominidae	Proximities	Captive	0.2857	7	21	1	1	3.22	0.1842	0.9524	47.4	0.204	4	12	53	61	0.2857	7	21	1	1	3.22	0.1842	0.9524	47.4	4	12	53
+61	Pan troglodytes	Hominidae	Proximities	Captive	0.2857	7	21	1	1	3.22	0.3333	1	30.78	0.191	4	12	53	62	0.2857	7	21	1	1	3.22	0.3333	1	30.78	4	12	53
+62	Pan troglodytes	Hominidae	Body contacts	Captive	0.3333	9	18	1	1	3.22	0.5	1	35.62	0.176	4	12	53	63	0.3333	9	18	1	1	3.22	0.5	1	35.62	4	12	53
+63	Pan troglodytes	Hominidae	Proximities	Captive	0.3333	6	11	2	0.733	3.22	0.2727	0.8667	75.91	0.255	4	12	53	64	0.3333	6	11	2	0.733	3.22	0.2727	0.8667	75.91	4	12	53
+64	Pan troglodytes	Hominidae	Proximities	Captive	0.3333	6	15	1	1	3.22	0.4	1	29.08	0.195	4	12	53	65	0.3333	6	15	1	1	3.22	0.4	1	29.08	4	12	53
+65	Pan troglodytes	Hominidae	Proximities	Captive	0.375	8	26	2	0.929	3.22	0.1538	0.9643	32.87	0.145	4	12	53	66	0.375	8	26	2	0.929	3.22	0.1538	0.9643	32.87	4	12	53
+66	Pan troglodytes	Hominidae	Body contacts	Captive	0.5	8	28	1	1	3.22	0.2857	1	49.3	0.153	4	12	53	67	0.5	8	28	1	1	3.22	0.2857	1	49.3	4	12	53
+67	Pan troglodytes	Hominidae	Body contacts	Captive	0.5	10	45	1	1	3.22	0.2222	1	27.16	0.108	4	12	53	68	0.5	10	45	1	1	3.22	0.2222	1	27.16	4	12	53
+68	Pan troglodytes	Hominidae	Body contacts	Wild	0.3276	58	1643	2	0.994	3.22	0.0177	0.9967	7.89	0.247	3	155	57,58	69	0.3276	58	1643	2	0.994	3.22	0.0177	0.9967	7.89	3	155	57; 58
+69	Pan troglodytes	Hominidae	Proximities	Wild	0.4286	21	108	2	0.514	3.22	0.0972	0.99	12.07	0.366	7	190	59	70	0.4286	21	108	2	0.514	3.22	0.0972	0.99	12.07	7	190	59
+70	Pan troglodytes	Hominidae	Proximities	Captive	0.6471	17	134	2	0.985	3.22	0.0634	0.982	37.01	0.204	12	466	6	71	0.6471	17	134	2	0.985	3.22	0.0634	0.982	37.01	12	466	6
+71	Pongo	Hominidae	Proximities	Captive	0.2	5	6	3	0.6	3.17	0.2778	0.783	95.94	0.535	2	50	52	72	0.2	5	6	3	0.6	3.17	0.2778	0.783	95.94	2	50	52
+72	Eulemur catta	Lemuridae	Proximities	Wild	0.5	12	55	2	0.833	1.18	0.1091	0.9167	67.69	0.367	2	286	60	73	0.5	12	55	2	0.833	1.18	0.1091	0.9167	67.69	2	286	60
+73	Eulemur catta	Lemuridae	Proximities	Wild	0.5	12	59	2	0.894	1.18	0.1017	0.947	57.26	0.427	3	171	60	74	0.5	12	59	2	0.894	1.18	0.1017	0.947	57.26	3	171	60
+74	Eulemur catta	Lemuridae	Proximities	Wild	0.5455	11	42	2	0.764	1.18	0.131	0.8818	79.54	0.55	2	276	60	75	0.5455	11	42	2	0.764	1.18	0.131	0.8818	79.54	2	276	60
+75	Eulemur fulvus	Lemuridae	Body contacts	Captive	0.6364	11	48	2	0.873	1.23	0.1146	0.9364	42.23	0.463	4	18	61	76	0.6364	11	48	2	0.873	1.23	0.1146	0.9364	42.23	4	18	61
+76	Eulemur rufifrons	Lemuridae	Proximities	Wild	0.5833	12	42	2	0.636	1.23	0.1429	0.8182	43.29	0.312	10	110	62	77	0.5833	12	42	2	0.636	1.23	0.1429	0.8182	43.29	10	110	62
+77	Eulemur rufifrons	Lemuridae	Proximities	Wild	0.6364	11	33	2	0.6	1.23	0.1667	0.8	91.17	0.367	10	129	62	78	0.6364	11	33	2	0.6	1.23	0.1667	0.8	91.17	10	129	62
+78	Eulemur rufifrons	Lemuridae	Proximities	Wild	0.6429	14	45	3	0.495	1.23	0.1037	0.7097	90.11	0.441	10	120	62	79	0.6429	14	45	3	0.495	1.23	0.1037	0.7097	90.11	10	120	62

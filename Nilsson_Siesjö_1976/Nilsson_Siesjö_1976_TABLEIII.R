@@ -4,7 +4,7 @@
 # DOI 10.1111/j.1748-1716.1976.tb10172.x. Item TABLEIII.
 #
 # Reads the frozen snapshot Nilsson_Siesjö_1976_TABLEIII_snapshot.csv (written by
-# Nilsson_Siesjö_1976_extract_snapshot.R) and reshapes it to one analysis row per printed
+# Nilsson_Siesjö_1976_TABLEIII_snapshot.R) and reshapes it to one analysis row per printed
 # value cell: mean / dispersion / n / footnote marks split into their own fields,
 # the printed species, anesthesia and preparation attached, CMRO2 / CMRgl / CBF also
 # given in the merge's standard units. The cell map below names snapshot rows and
@@ -30,7 +30,7 @@ locus <- sub(paste0("^", paper, "_"), "", item_name)
 
 doi <- "10.1111/j.1748-1716.1976.tb10172.x"
 
-## ---- read the frozen snapshot (written by <paper>_extract_snapshot.R) ----------
+## ---- read the frozen snapshot (written by <Item>_snapshot.R) ----------
 read_snapshot <- function(file, header = FALSE) {
   x <- read.csv(file, header = header, colClasses = "character", na.strings = character(0),
                 check.names = FALSE, encoding = "UTF-8")

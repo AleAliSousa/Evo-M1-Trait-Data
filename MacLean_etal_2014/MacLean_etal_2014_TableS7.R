@@ -1,5 +1,5 @@
 # Build analysis CSV for published supplementary Table S7.
-# Run extract_supplement_snapshots.py first when the source DOCX files change.
+# Run MacLean_etal_2014_TableS7_snapshot.R first when the source DOCX files change.
 args <- grep('^--file=', commandArgs(FALSE), value = TRUE)
 if (length(args) != 1L) stop('Run this saved script with Rscript.')
 folder <- dirname(normalizePath(sub('^--file=', '', args[[1L]])))

@@ -8,11 +8,13 @@ Latimer, H. B., & Sawin, P. B. (1955). The weight of the brain, of its parts and
 **Item full original title:** TABLE 2. *Weights in grams and percentage weights of the brain and of its parts in 50 male
 and in 50 female rabbits* (p. 518, PDF page 6).
 
-> **R NOT RUN — outputs written by a Python mirror; Alexandra to run the R.** The frozen snapshot, the analysis CSV, the public TSV and every table-check result quoted here were
-> produced on 2026-11-06 by a Python mirror of the R scripts in this folder. Run, in this order:
-> `Latimer_Sawin_1955_extract_snapshot.R`, `Latimer_Sawin_1955_TABLE1.R`, `Latimer_Sawin_1955_TABLE2.R` — after fixing column A of the registry rows, or the build
-> scripts stop before the TSV. *Update 2026-11-07:* column A has been fixed by the owner, and the extract script now freezes
-> six snapshots (TABLES 1, 2, 4, 5, 6, 7); TABLES 4 and 5 read this table's CSV for their cross-table checks.
+> **Rebuild order** (R; run each script with `Rscript` from any directory, it locates itself):
+> 1. `Latimer_Sawin_1955_TABLE2_snapshot.R` writes only this item's frozen snapshot and refuses to overwrite a differing copy
+>    (run in a temporary copy of the repo it reports the frozen snapshot as identical; checked 2026-11-12);
+> 2. `Latimer_Sawin_1955_TABLE2.R` reads only its own snapshot and writes the CSV and the public TSV;
+> 3. `internal_checks/Latimer_Sawin_1955_TABLE2_internal_check.R` (optional, read-only) is the cross-item check against `Latimer_Sawin_1955_TABLE1.csv`: run `Latimer_Sawin_1955_TABLE1.R` before it.
+> then `render_errata()` on the paper folder.
+> *R run, 2026-11-12:* `Latimer_Sawin_1955_TABLE2.R` and the check script were run in R in a temporary copy of the repo; the CSV and public TSV are byte-identical to the committed files. TABLES 4 and 5 read this table's CSV for their cross-table checks (see their READMEs).
 
 ## Source
 
@@ -26,9 +28,9 @@ built; TABLES 3 and 8 unregistered).
 
 ```
 Source (scanned PDF, page 6)
-  -> Latimer_Sawin_1955_extract_snapshot.R       writes the frozen snapshots of TABLES 1, 2, 4, 5, 6 and 7
+  -> Latimer_Sawin_1955_TABLE2_snapshot.R       writes the frozen snapshot of TABLE2
   -> Latimer_Sawin_1955_TABLE2_snapshot.xlsx     FROZEN: 20 rows x 8 cols, sheet "TABLE2"
-  -> Latimer_Sawin_1955_TABLE2.R                 clean + parse + table checks (reads Latimer_Sawin_1955_TABLE1.csv for one informative check)
+  -> Latimer_Sawin_1955_TABLE2.R                 clean + parse + table checks (reads only its own snapshot; the cross-item check against TABLE1.csv is internal_checks/Latimer_Sawin_1955_TABLE2_internal_check.R)
   -> Latimer_Sawin_1955_TABLE2.csv               98 rows x 21 cols  ("use this")
   -> __Public/comparative-data/10.1002%2Fcne.901030307_TABLE2.tsv
   -> reference_tables/Latimer_Sawin_1955_TABLE2_definitions.csv
@@ -40,12 +42,12 @@ Source (scanned PDF, page 6)
 
 **Hand transcription** (HOWTO method 5) by an AI assistant on 2026-11-06 from the PDF's own 300-ppi image of page 6
 (extracted with `pdfimages`, no resampling), read at 1× and 2× zoom and typed as a verbatim printed-layout block into
-`Latimer_Sawin_1955_extract_snapshot.R` (freezes; refuses to overwrite a differing copy). Cross-read cell by cell against the OCR text
+`Latimer_Sawin_1955_TABLE2_snapshot.R` (freezes; refuses to overwrite a differing copy). Cross-read cell by cell against the OCR text
 layer: 98 numeric cells, **no numeric disagreement**; the text layer garbles the labels and headers instead ("Erdn" for
 Brain in the first row, "dverage", "' :d." and "v","rf." for the column headers, "wrights" for weights, "fcmale" for
 female). The build script reads the frozen file and contains no table values.
 
-**R NOT RUN — outputs written by a Python mirror; Alexandra to run the R.** The mirror parses the printed-layout block out of the R extract script and follows the build script step by
+**R NOT RUN — outputs written by a Python mirror; Alexandra to run the R.** The mirror parses the printed-layout block out of the R extract script and follows the build script step by *Update 2026-11-12:* the R scripts were run in R in a temporary copy of the repo and reproduced the committed CSV and public TSV byte for byte.
 step, writing the CSV and the TSV as R's `write.csv` / `write.table` would. No R run has confirmed the outputs yet.
 
 ### Structure of the snapshot
@@ -87,6 +89,12 @@ TABLE 2 prints a total (Brain, whose weight the paper defines as the sum of its 
 must add to 100, Coef. var. and t values. `Latimer_Sawin_1955_TABLE2.R` re-runs them into `table_checks` (build HOWTO §7a); comparisons
 are in the printed units and nothing is changed to make a check pass.
 
+**Cross-item check in `internal_checks/`.** The informative comparison of the percentage of net body weight with TABLE 1 needs
+`Latimer_Sawin_1955_TABLE1.csv`, so it is not part of `Latimer_Sawin_1955_TABLE2.R` (which reads only its own snapshot). It is
+`internal_checks/Latimer_Sawin_1955_TABLE2_internal_check.R`, which writes `internal_checks/Latimer_Sawin_1955_TABLE2_internal_check.csv`.
+Result (actual R run, 2026-11-12): 10 checks, all `not_evaluable` (informative, no pass criterion). `Latimer_Sawin_1955_TABLE2.R` itself now reports 44 pass, 2 mismatch
+(the counts below are unchanged apart from the moved informative row).
+
 | relation | rule and tolerance |
 |---|---|
 | Coef. var. = 100 × Stand. dev. / Average, every group (28) | worst case of 100 × (SD + ½ unit) / (Average − ½ unit) minus the recomputed value, plus ½ unit of the printed Coef. var. |
@@ -95,7 +103,7 @@ are in the printed units and nothing is changed to make a check pass.
 | Percentages of total brain weight add to 100 (2) | no total is printed; 100 by definition; ½ unit (0.005) per summed cell = 0.02 |
 | Percentages of net body weight vs the ratio of the printed means, 100 × Average grams / TABLE 1 Panel A Average net body weight (10) | **informative only**: a mean of per-animal ratios need not equal a ratio of means; no pass criterion, status `not_evaluable` |
 
-**Result of the Python mirror: 44 pass, 2 mismatch, 10 not evaluable (the 10 informative comparisons), of 56 rows.** (R NOT RUN — outputs written by a Python mirror; Alexandra to run the R.)
+**Result of the Python mirror: 44 pass, 2 mismatch, 10 not evaluable (the 10 informative comparisons), of 56 rows.** (R NOT RUN — outputs written by a Python mirror; Alexandra to run the R.) *Actual R run, 2026-11-12: the same counts* (item script and internal check together).
 
 | family | checks | pass | mismatch | not evaluable |
 |---|---|---|---|---|

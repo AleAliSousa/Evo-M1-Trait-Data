@@ -17,20 +17,20 @@ corpus callosum measurements were not always taken on the same specimens.
 
 1. `baron_etal_1996 book Comparative Neurobiology.pdf`, PDF pages 4-11, is the
    printed source.
-2. `Baron_etal_1996_Table2_extract.py` reads the PDF text layer for 7 of the
+2. `Baron_etal_1996_Table2_snapshot.R` (R port, 2026-11-12, of the retired `Baron_etal_1996_Table2_snapshot.py.retired`; run in a temp dir it regenerates the frozen snapshot byte-for-byte) reads the PDF text layer for 7 of the
    8 pages and writes `Baron_etal_1996_Table2_snapshot.csv`. Its OCR-repair
    table and cell-fix list are documented in code.
 3. `Baron_etal_1996_Table2.R` reads only the frozen snapshot and writes the
    local analysis CSV plus `ISBN%3A9783764353704_Table2.tsv` in `__Public`.
 
-### Why this table needed a new parser (not just an extension of Baron_etal_1996_extract_snapshots.py)
+### Why this table needed a new parser (not just an extension of Baron_etal_1996_Table10_snapshot.R)
 
 Tables 10 and 32 are one-species-per-line with a single, uniform set of
 trailing numeric columns. Table 2's extracted text is not one-row-per-line
 (many species are crammed onto a single "line" by the PDF text layer), and
 each row independently may be missing its leading `n`, its `HH` value, its
 trailing `n2`, and/or its `CCL` value — any subset of these four optional
-slots can be dashed out in the print. `Baron_etal_1996_Table2_extract.py`
+slots can be dashed out in the print. `Baron_etal_1996_Table2_snapshot.R`
 handles this with a global name/number-run regex over each page's cleaned
 text, followed by a small state machine that assigns tokens to
 `n, BL, HL, HW, HH, n2, CCL` in strict column order, typing each token as
@@ -57,7 +57,7 @@ measurement) to disambiguate which slots are present.
   name pattern, and the parser has no way to anchor the following numbers
   to a species). Repaired via an explicit literal-replacement table in code,
   the same style as the LINE_REPAIRS/NAME_REPAIRS dictionaries in
-  `Baron_etal_1996_extract_snapshots.py`.
+  `Baron_etal_1996_Table10_snapshot.R`.
 - **8 single-specimen (n=1) rows had both their `n`/`n2` integer tokens
   silently dropped by the text extraction** — not represented by any
   garbled remnant, so no regex could catch them. These were surfaced by a
@@ -70,7 +70,7 @@ measurement) to disambiguate which slots are present.
   phalaena` (whose name was also truncated to "a" by the same underlying
   issue and is corrected alongside), and `Phoniscus atrox` (n and n2 for the
   latter seven). All eight fixes are listed explicitly in
-  `Baron_etal_1996_Table2_extract.py`'s `CELL_FIXES`/`NAME_FIXES`.
+  `Baron_etal_1996_Table2_snapshot.R`'s `CELL_FIXES`/`NAME_FIXES`.
 - Beyond the above, no exhaustive re-transcription of all 303 rows against
   the page images was performed; cosmetic OCR spelling artifacts in species
   names that do not affect column alignment (e.g. stray spaces like

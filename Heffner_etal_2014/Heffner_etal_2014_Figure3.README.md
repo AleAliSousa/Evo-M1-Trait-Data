@@ -20,8 +20,9 @@ else. Use `Heffner_etal_2014_ResultsText` for the headline values.
 ## Method, precision, and what was resolved
 
 - **Digitisation method:** pixel digitisation of the **embedded 682 × 1015 px bitmap** at native
-  resolution (never a re-render) by `Heffner_etal_2014_Figure3_extract.py` (conda env `python`;
-  pymupdf, numpy, scipy), run 2026-10-31; a second run reports "snapshot unchanged".
+  resolution (never a re-render) by `Heffner_etal_2014_Figure3_snapshot.R` (R port of the former `_snapshot.py`, now
+  `_snapshot.py.retired`; conda env `evom1-r`: magick + poppler `pdfimages`), first run 2026-10-31 in Python; the R port
+  regenerates the frozen snapshot **byte-identically** (run in a temporary directory, never in place).
   Axis lines were found as the longest fully dark column/row, ticks as the dark runs just outside
   them, giving nine ordinate ticks (80…0 dB SPL, linear fit, residuals ≤ 0.24 dB) and 14 abscissa
   ticks (log fit). Letter glyphs were segmented as connected components inside the plot frame
@@ -54,7 +55,7 @@ The 60-dB arrows digitise to 0.039 kHz and 33.6 kHz against the text's 40 Hz and
 
 | file | role |
 |---|---|
-| `Heffner_etal_2014_Figure3_extract.py` | reproducible bitmap digitisation -> frozen snapshot (Python: pymupdf, numpy, scipy, pandas, pillow) |
+| `Heffner_etal_2014_Figure3_snapshot.R` | reproducible bitmap digitisation -> frozen snapshot (R: magick, poppler `pdfimages`); the earlier Python version is kept as `Heffner_etal_2014_Figure3_snapshot.py.retired` |
 | `Heffner_etal_2014_Figure3_snapshot.csv` | constructed snapshot (the digitisation as captured, in the figure's own units) |
 | `Heffner_etal_2014_Figure3.R` | snapshot -> analysis CSV + public TSV; `table_checks` |
 | `Heffner_etal_2014_Figure3.csv` | analysis data |

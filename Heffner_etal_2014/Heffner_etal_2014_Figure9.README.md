@@ -19,8 +19,9 @@ No value in this figure is printed as a number anywhere in the paper.
 ## Method, precision, and what was resolved
 
 - **Digitisation method:** pixel digitisation of the **embedded 1535 × 754 px bitmap** at native
-  resolution by `Heffner_etal_2014_Figure9_extract.py` (conda env `python`), run 2026-10-31;
-  a second run reports "snapshot unchanged". The grey value bar was located by its two black border
+  resolution by `Heffner_etal_2014_Figure9_snapshot.R` (R port of the former `_snapshot.py`, now
+  `_snapshot.py.retired`; conda env `evom1-r`: magick + poppler `pdfimages`), first run 2026-10-31 in Python; the R port
+  regenerates the frozen snapshot **byte-identically** (run in a temporary directory, never in place). The grey value bar was located by its two black border
   columns; the scale ticks are the dark runs projecting inward from each border, and the seven
   printed labels (180, 100, 50, 20, 10, 5, 1°) were matched to them. A species leader line is a
   connected component touching a border from outside and wider than 30 px; the row where it meets
@@ -58,7 +59,7 @@ to its primary study from this figure alone; both collective reviews are recorde
 
 | file | role |
 |---|---|
-| `Heffner_etal_2014_Figure9_extract.py` | reproducible bitmap digitisation -> frozen snapshot (Python: pymupdf, numpy, scipy, pandas, pillow) |
+| `Heffner_etal_2014_Figure9_snapshot.R` | reproducible bitmap digitisation -> frozen snapshot (R: magick, poppler `pdfimages`); the earlier Python version is kept as `Heffner_etal_2014_Figure9_snapshot.py.retired` |
 | `Heffner_etal_2014_Figure9_snapshot.csv` | constructed snapshot (the digitisation as captured, in the figure's own units) |
 | `Heffner_etal_2014_Figure9.R` | snapshot -> analysis CSV + public TSV; `table_checks` |
 | `Heffner_etal_2014_Figure9.csv` | analysis data |

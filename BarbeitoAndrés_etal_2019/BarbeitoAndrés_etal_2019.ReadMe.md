@@ -13,10 +13,11 @@ sub-tables, frozen here as three faithful snapshots:
 - `..._volumes_snapshot.csv`     - Absolute volumes (mm3), per specimen, 13 regions incl Total.
 - `..._cellnumber_snapshot.csv`  - Cell number, per animal, 5 region groups x {Total, Neurons, Non-neurons}.
 - `..._celldensity_snapshot.csv` - Cell density, same layout.
+Snapshot scripts (one per item; each writes only its own snapshot CSV+TSV from `data_figshare.xlsx`): `..._volumes_snapshot.R`, `..._cellnumber_snapshot.R`, `..._celldensity_snapshot.R`. Item scripts (`..._volumes.R`, `..._cellnumber.R`, `..._celldensity.R`, `..._tidy.R`) only READ the snapshots; the former single script `BarbeitoAndrés_etal_2019.R` was split into these.
 Groups: **C** = control, **LP** = low protein, **LCP** = low calorie + protein (labels as published).
 
 ## Data readable
-`BarbeitoAndrés_etal_2019.R` -> `BarbeitoAndrés_etal_2019_tidy.csv`: one tidy long table aligned to a
+`BarbeitoAndrés_etal_2019_tidy.R` -> `BarbeitoAndrés_etal_2019_tidy.csv`: one tidy long table aligned to a
 generic developmental schema `species, reference, group, specimen, region, cell_type, measure, value,
 units`. `measure` in {absolute_volume (mm3), cell_number, cell_density}.
 

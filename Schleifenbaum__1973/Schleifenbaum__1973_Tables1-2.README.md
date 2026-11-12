@@ -18,7 +18,7 @@ composition derived from Table 2 and is not duplicated.
 
 1. The printed sources are PDF pages 3–4. Table 2 is rotated 90° in the PDF and
    was checked in the correct orientation.
-2. `Schleifenbaum__1973_Tables1-2_extract_snapshot.R` writes two frozen CSVs:
+2. `Schleifenbaum__1973_Tables1-2_snapshot.R` writes two frozen CSVs:
    Table 1 in printed row order and Table 2 in its printed structure-as-rows
    layout. German decimal commas, asterisks, parentheses, and dashes survive in
    the snapshots.

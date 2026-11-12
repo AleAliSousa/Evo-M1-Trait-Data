@@ -18,7 +18,7 @@ Eleven 'normal' experiments and their Average. **Kaufman 2004 and Mink 1981 use 
 
 ```
 Source PDF
-  -> Schmidt_etal_1945_extract_snapshot.R        verbatim printed block, refuses to overwrite a differing frozen copy
+  -> Schmidt_etal_1945_TABLE1_snapshot.R        verbatim printed block, refuses to overwrite a differing frozen copy
   -> Schmidt_etal_1945_TABLE1_snapshot.csv   FROZEN: 17 printed rows
   -> Schmidt_etal_1945_TABLE1.R              parse + table checks (no values typed)
   -> Schmidt_etal_1945_TABLE1.csv            116 rows (one per printed value)  ("use this")

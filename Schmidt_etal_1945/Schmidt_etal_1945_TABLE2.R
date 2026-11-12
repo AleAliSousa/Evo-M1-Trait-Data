@@ -4,12 +4,14 @@
 # DOI 10.1152/ajplegacy.1945.143.1.33. Item TABLE2.
 #
 # Reads the frozen snapshot Schmidt_etal_1945_TABLE2_snapshot.csv (written by
-# Schmidt_etal_1945_extract_snapshot.R) and reshapes it to one analysis row per printed
+# Schmidt_etal_1945_TABLE2_snapshot.R) and reshapes it to one analysis row per printed
 # value cell: mean / dispersion / n / footnote marks split into their own fields,
 # the printed species, anesthesia and preparation attached, CMRO2 / CMRgl / CBF also
 # given in the merge's standard units. The cell map below names snapshot rows and
 # columns and the variable each holds; no table value is typed in this script.
-# Table checks (build HOWTO s.7a) are left in `table_checks`.
+# Table checks that use only this snapshot (build HOWTO s.7a) are left in `table_checks`; the
+# % O2 by brain check needs the TABLE 1 brain weight and lives in
+# internal_checks/Schmidt_etal_1945_TABLE2_internal_check.R (build HOWTO s.7b).
 # ---------------------------------------------------------------------------
 
 .sp <- local({
@@ -30,7 +32,7 @@ locus <- sub(paste0("^", paper, "_"), "", item_name)
 
 doi <- "10.1152/ajplegacy.1945.143.1.33"
 
-## ---- read the frozen snapshot (written by <paper>_extract_snapshot.R) ----------
+## ---- read the frozen snapshot (written by Schmidt_etal_1945_TABLE2_snapshot.R) ----------
 read_snapshot <- function(file, header = FALSE) {
   x <- read.csv(file, header = header, colClasses = "character", na.strings = character(0),
                 check.names = FALSE, encoding = "UTF-8")
@@ -206,9 +208,6 @@ final.dataframe$note[flag] <- paste0("expt ", final.dataframe$row_label_as_print
 chk_rows <- data_rows
 expt <- sapply(chk_rows, function(r) one_line(snap[r, 1]))
 for (i in seq_along(expt)) if (!nzchar(expt[i]) && i > 1) expt[i] <- expt[i - 1]
-t1 <- read_snapshot(paste0(paper, "_TABLE1_snapshot.csv"))
-bw <- setNames(sapply(6:16, function(r) num(t1[r, 12])), sapply(6:16, function(r) t1[r, 1]))
-brain_g <- unname(bw[expt])
 for (i in seq_along(chk_rows)) {
   r <- chk_rows[i]; tag <- paste0(" [row ", r, ": expt ", expt[i], ", ", one_line(snap[r, 2]), "]")
   add_check(paste0("AV_O2_row", r), paste0("A-V O2 = Art. - Vein O2 content", tag),
@@ -216,13 +215,6 @@ for (i in seq_along(chk_rows)) {
   a <- cell_num(r, 8); f <- cell_num(r, 9)
   add_check(paste0("O2_uptake_row", r), paste0("O2 uptake = A-V O2 x blood flow / 100", tag), a * f / 100, cell_num(r, 10),
             hu(cell_lex(r, 8)) * f / 100 + a * hu(cell_lex(r, 9)) / 100 + hu(cell_lex(r, 10)))
-  tot <- cell_num(r, 11); pc <- cell_num(r, 12); o <- cell_num(r, 10)
-  if (!is.na(tot) && !is.na(pc) && !is.na(brain_g[i])) {
-    obs <- o * brain_g[i] / 100 / tot * 100
-    add_check(paste0("pct_by_brain_row", r), paste0("% O2 by brain = O2 uptake x brain weight/100 / Total x 100", tag), obs, pc,
-              obs * (hu(cell_lex(r, 10)) / o + hu(cell_lex(r, 11)) / tot) + hu(cell_lex(r, 12)),
-              paste0("brain weight ", brain_g[i], " g (TABLE 1, same experiment number)"))
-  }
 }
 
 

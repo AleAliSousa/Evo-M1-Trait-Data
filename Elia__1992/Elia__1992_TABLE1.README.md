@@ -15,7 +15,7 @@ PDF in this folder: `Elia_1992_Organ and Tissue - Energy Metabolism pp61-77.pdf`
 
 ```
 Source (PDF)
-  -> Elia__1992_extract_snapshot.R   writes the frozen snapshots (TABLE1 and TABLE3)
+  -> Elia__1992_TABLE1_snapshot.R   writes the frozen snapshot (one script per item)
   -> Elia__1992_TABLE1_snapshot.csv   FROZEN: 15 rows x 11 cols
   -> Elia__1992_TABLE1.R   reshape + parse + unit columns + table checks
   -> Elia__1992_TABLE1.csv   24 rows x 24 cols  ("use this")
@@ -25,7 +25,7 @@ Source (PDF)
 
 ### Who read the values, when, and how it was checked
 
-**Hand transcription** (HOWTO method 5) by an AI assistant (Claude) on 2026-11-03 from 200-800-dpi renders of PDF pages 3 (TABLE 1, sideways scan) and 6 (TABLE 3), typed as verbatim printed-layout blocks into `Elia__1992_extract_snapshot.R`, which freezes them and refuses to overwrite a differing frozen copy (it also refuses to run outside a UTF-8 locale, because an early run in a C locale had mangled the non-ASCII glyphs `×` and `²`; the frozen files were re-taken in UTF-8 and checked for those glyphs). The PDF is a photocopy scan whose OCR text layer is garbled, so it was not used as a source. The build scripts read the frozen files and contain no table values; they were run with `Rscript` (conda env `evom1-r`, R 4.4.3, `LC_ALL=en_US.UTF-8`) on 2026-11-03.
+**Hand transcription** (HOWTO method 5) by an AI assistant (Claude) on 2026-11-03 from 200-800-dpi renders of PDF pages 3 (TABLE 1, sideways scan) and 6 (TABLE 3), typed as verbatim printed-layout blocks into `Elia__1992_TABLE1_snapshot.R` (TABLE 1) and `Elia__1992_TABLE3_snapshot.R` (TABLE 3), which freeze them and refuses to overwrite a differing frozen copy (it also refuses to run outside a UTF-8 locale, because an early run in a C locale had mangled the non-ASCII glyphs `×` and `²`; the frozen files were re-taken in UTF-8 and checked for those glyphs). The PDF is a photocopy scan whose OCR text layer is garbled, so it was not used as a source. The build scripts read the frozen files and contain no table values; they were run with `Rscript` (conda env `evom1-r`, R 4.4.3, `LC_ALL=en_US.UTF-8`) on 2026-11-03.
 
 **Re-verification.** The values were read first from the page images; only afterwards were they compared with the earlier transcription in `Evo-M1-Trait-Data-restricted/__energetics_comparison/classic_energetics_compilations/` (`elia_1992_table3_transcribed.csv`, and the Elia rows of `classic_human_brain_partition.csv`). TABLE 3: all 8 numeric columns x 11 rows agree cell by cell (88 cells, 0 differences; the earlier file left the two cut-off cells blank, as here). TABLE 1: the brain rows agree (1.4 / 1.2 kg, 240 kcal/kg/day, 20 / 21%, 1680 / 1340 kcal/day). New in this build relative to the earlier transcription: the whole of TABLE 1 (all organs, the child column, footnotes a-c), the K x W^x and correlation rows of TABLE 3, and the cut-off/smudge flags.
 

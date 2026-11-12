@@ -27,7 +27,7 @@ Results prose -> **constructed** snapshot -> analysis csv -> public TSV.
 
 | file | role |
 |---|---|
-| `Heffner_etal_2008_ResultsText_extract_snapshot.R` | builds the constructed snapshot from the PDF text layer |
+| `Heffner_etal_2008_ResultsText_snapshot.R` | builds the constructed snapshot from the PDF text layer |
 | `Heffner_etal_2008_ResultsText_snapshot.csv` | frozen constructed source (11 rows) |
 | `Heffner_etal_2008_ResultsText.R` | reads the frozen snapshot, writes CSV + public TSV |
 | `Heffner_etal_2008_ResultsText.csv` | analysis rows (11 x 16) |
@@ -45,7 +45,7 @@ hedge, and - the point of the whole thing - **the verbatim sentence the
 number came from**. A reviewer can read the sentence, turn to the printed
 page, and confirm the number without reconstructing anything.
 
-**Extraction method (provenance).** `..._extract_snapshot.R` reads the
+**Extraction method (provenance).** `..._snapshot.R` reads the
 PDF text layer with `pdftools::pdf_data`, reconstructs the two-column
 reading order by splitting word boxes on x and sorting by (y, x), rejoins
 words hyphenated at line ends, and expands the two PDF ligature glyphs

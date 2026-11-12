@@ -4,12 +4,14 @@
 # DOI 10.1152/ajplegacy.1945.143.1.33. Item TABLE6.
 #
 # Reads the frozen snapshot Schmidt_etal_1945_TABLE6_snapshot.csv (written by
-# Schmidt_etal_1945_extract_snapshot.R) and reshapes it to one analysis row per printed
+# Schmidt_etal_1945_TABLE6_snapshot.R) and reshapes it to one analysis row per printed
 # value cell: mean / dispersion / n / footnote marks split into their own fields,
 # the printed species, anesthesia and preparation attached, CMRO2 / CMRgl / CBF also
 # given in the merge's standard units. The cell map below names snapshot rows and
 # columns and the variable each holds; no table value is typed in this script.
-# Table checks (build HOWTO s.7a) are left in `table_checks`.
+# Table checks that use only this snapshot (build HOWTO s.7a) are left in `table_checks`; the
+# comparisons with TABLE 1 (snapshot) and TABLES 1-5 (analysis CSVs) live in
+# internal_checks/Schmidt_etal_1945_TABLE6_internal_check.R (build HOWTO s.7b).
 # ---------------------------------------------------------------------------
 
 .sp <- local({
@@ -30,7 +32,7 @@ locus <- sub(paste0("^", paper, "_"), "", item_name)
 
 doi <- "10.1152/ajplegacy.1945.143.1.33"
 
-## ---- read the frozen snapshot (written by <paper>_extract_snapshot.R) ----------
+## ---- read the frozen snapshot (written by Schmidt_etal_1945_TABLE6_snapshot.R) ----------
 read_snapshot <- function(file, header = FALSE) {
   x <- read.csv(file, header = header, colClasses = "character", na.strings = character(0),
                 check.names = FALSE, encoding = "UTF-8")
@@ -192,40 +194,12 @@ stopifnot(nrow(final.dataframe) == expected_values)
 ## ---- table checks (build HOWTO s.7a) ---------------------------------------
 
 ## The human columns are the monkey values scaled from 100 g to a 1400 g brain (x 14,
-## from the printed header); the "Normal" rows summarise TABLE 1; the other rows
-## should be traceable to a printed row of TABLES 1-5 (their analysis CSVs).
+## from the printed header). (The "Normal" rows summarise TABLE 1 and the other rows should be
+## traceable to a printed row of TABLES 1-5: those cross-item checks are in internal_checks/.)
 for (r in 4:9) for (cp in list(c(2L, 5L), c(3L, 6L))) {
   m <- cell_num(r, cp[1])
   add_check(paste0("human_scaling_row", r, "_col", cp[2]), paste0("1400 g human value = 14 x monkey value per 100 g [", one_line(snap[r, 1]), "]"),
             14 * m, cell_num(r, cp[2]), 14 * hu_sig(cell_lex(r, cp[1])) + hu_sig(cell_lex(r, cp[2]))) }
-t1 <- read_snapshot(paste0(paper, "_TABLE1_snapshot.csv"))
-t1n <- function(r, c) num(t1[r, c])
-o2 <- sapply(6:16, function(r) t1n(r, 7)); fl <- sapply(6:16, function(r) t1n(r, 6))
-add_check("normal_mean_O2", '"Normal" mean O2 uptake = TABLE 1 Average', t1n(17, 7), cell_num(4, 2), hu(t1[17, 7]) + hu(cell_lex(4, 2)))
-add_check("normal_mean_CBF", '"Normal" mean blood flow = TABLE 1 Average', t1n(17, 6), cell_num(4, 3), hu(t1[17, 6]) + hu(cell_lex(4, 3)))
-add_check("normal_min_O2", '"Normal" minimum O2 uptake = TABLE 1 minimum', min(o2), cell_num(5, 2), hu(t1[6, 7]) + hu(cell_lex(5, 2)))
-add_check("normal_min_CBF", '"Normal" minimum blood flow = TABLE 1 minimum', min(fl), cell_num(5, 3), hu(t1[6, 6]) + hu(cell_lex(5, 3)))
-add_check("normal_max_O2", '"Normal" maximum O2 uptake = TABLE 1 maximum', max(o2), cell_num(6, 2), hu(t1[6, 7]) + hu(cell_lex(6, 2)))
-add_check("normal_max_CBF", '"Normal" maximum blood flow = TABLE 1 maximum', max(fl), cell_num(6, 3), hu(t1[6, 6]) + hu(cell_lex(6, 3)))
-prev <- do.call(rbind, lapply(paste0(paper, "_TABLE", 1:5, ".csv"), function(f) read.csv(f, stringsAsFactors = FALSE, encoding = "UTF-8")))
-po2 <- prev[prev$variable == "CMRO2_ml_100g_min" & !is.na(prev$value), ]
-pfl <- prev[prev$variable == "CBF_ml_100g_min" & !is.na(prev$value), ]
-both <- merge(po2[, c("item_name", "printed_row", "value")], pfl[, c("item_name", "printed_row", "value")],
-              by = c("item_name", "printed_row"), suffixes = c("_o2", "_flow"))
-hit_o2 <- both[which.max(both$value_o2), ]
-add_check("highest_O2", "Highest of all O2 uptake = largest O2 uptake printed in TABLES 1-5", max(po2$value), cell_num(7, 2), hu(cell_lex(7, 2)),
-          paste0("largest printed: ", hit_o2$item_name, " row ", hit_o2$printed_row))
-add_check("highest_CBF", "Highest of all (picrotoxin convulsion) blood flow vs flow printed on the row with the largest O2 uptake", hit_o2$value_flow, cell_num(7, 3), NA_real_,
-          paste0("that row prints flow ", hit_o2$value_flow, "; the largest flow printed anywhere in TABLES 1-5 is ", max(pfl$value),
-                 "; the printed 91 does not occur in TABLES 1-5"), status = "not_evaluable")
-rec <- both[abs(both$value_o2 - cell_num(8, 2)) < 1e-9 & abs(both$value_flow - cell_num(8, 3)) < 1e-9, ]
-add_check("lowest_with_recovery_pair", "Lowest with recovery (hemorrhage): O2 uptake and flow pair printed on one row of TABLES 1-5",
-          if (nrow(rec)) cell_num(8, 2) else NA_real_, cell_num(8, 2), 0,
-          if (nrow(rec)) paste0("found: ", rec$item_name[1], " row ", rec$printed_row[1]) else "pair not found")
-low <- both[which.min(both$value_o2), ]
-add_check("lowest_of_all_O2", "Lowest of all (moribund) O2 uptake vs smallest O2 uptake printed in TABLES 1-5", min(po2$value), cell_num(9, 2), NA_real_,
-          paste0("smallest printed: ", low$value_o2, " (", low$item_name, " row ", low$printed_row, ", flow ", low$value_flow,
-                 "); 0.39 and 5 do not occur in TABLES 1-5"), status = "not_evaluable")
 
 
 tally <- table(factor(table_checks$status, c("pass", "mismatch", "not_evaluable")))

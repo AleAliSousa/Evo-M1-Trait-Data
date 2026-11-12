@@ -10,9 +10,9 @@ The folder had the legacy Word supplement, a built snapshot/CSV/R script, but no
 
 - **Frozen source (printed/legacy, snapshot required):** `nyas_6036_sm_table5a.doc` is a legacy journal Word
   document (not a structured, machine-readable export), so a frozen snapshot is required per
-  `__HOWTO_build_a_dataset_file.md` §0a invariant 1. `Fobbs_etal_2011_build_snapshot.py` converts it
+  `__HOWTO_build_a_dataset_file.md` §0a invariant 1. `Fobbs_etal_2011_TableS5a_snapshot.py` converts it
   losslessly into `Fobbs_etal_2011_TableS5a_snapshot.xlsx` (sheet `TableS5a`); the snapshot is **not** rebuilt on every
-  run (`rebuild_snapshot = FALSE` in the `.R` script) so the already-audited snapshot is protected
+  run (the `.R` script only reads it) so the already-audited snapshot is protected
   from silent drift.
 - **Reformat:** `Fobbs_etal_2011_TableS5a.R` reads the frozen snapshot by position, hard-checks the expected column
   count, assigns house-dialect column names, drops rows that are wholly blank or are printed
@@ -62,8 +62,36 @@ for printed age/size annotations, e.g. the `Gallus domesticus (10 day embry.)` r
 `specimen_crosswalk.csv` rows for these specimens were corrected the same way, appending an
 explanatory note rather than deleting the original printed-value record.
 
-This was a targeted, hand-applied correction, not a script change: `Fobbs_etal_2011_TableS5a.R`
-only splits a continuation note when it was printed on its own row in the source document, so it
-would not have caught these in-cell suffixes on a rerun. If the frozen snapshot is ever rebuilt or
-the CSV regenerated from `Fobbs_etal_2011_TableS5a.R`, this same set of 10 rows will need the fix
-reapplied.
+**Update 2026-11-12 (script now reproduces the committed files).** The correction above was first a hand
+patch. `Fobbs_etal_2011_TableS5a.R` now carries it as an explicit `species_fix` table keyed on the exact
+printed string (6 strings, 10 rows; the script stops if a key does not match the expected number of rows), so a rerun
+reproduces the committed CSV and public TSV byte-for-byte (checked in a temporary mini-repo against
+`git show HEAD:` of both files; every other column, row and the other six Fobbs items are unchanged).
+What the 10 rows (`source_row` 87, 90–95, 98, 197, 296) show:
+
+| printed `species` | `species` now | `continuation_note` |
+|---|---|---|
+| `Chelhydra serpentina (6 day)` (×3), `(1 day)` (×1), `(3 day)` (×3) | `Chelydra serpentina` | `(6 day)`, `(1 day)`, `(3 day)` |
+| `Sternotherus odoratus-9 cm.` | `Sternotherus odoratus` | `(9 cm.)` |
+| `A. mississippiensis-25cm` | `Alligator mississippiensis` | `(25cm)` |
+| `Columba livia 1 day` | `Columba livia` | `(1 day)` |
+
+The qualifier text is the printed text (punctuation normalised into parentheses); no numeric value, specimen
+number or other column was touched. Two corrections go beyond splitting the qualifier and are the curators'
+choices, recorded here (typo / abbreviation, not a change of value):
+- **Genus typo `Chelhydra` → `Chelydra`** is made only on the 7 snapping-turtle rows that carry a qualifier. The
+  typo is in the *source*: the 4 snapping-turtle rows without a qualifier (`source_row` 86, 88, 89, 96) still print
+  the source spelling `Chelhydra serpentina` in the CSV/TSV, so the file is inconsistent within the species.
+  **needs_owner:** correct those 4 rows too (then the committed CSV/TSV change and downstream keys need a look),
+  or keep the source spelling everywhere?
+- **`A. mississippiensis` → `Alligator mississippiensis`** expands the abbreviation to the full binomial printed on
+  the 12 neighbouring American Alligator rows.
+
+## Table checks
+None: the catalog prints no totals or other relation that can be recomputed from its cells (nothing to check).
+No cross-item check (`internal_checks/`) applies.
+
+## Snapshot script
+`Fobbs_etal_2011_TableS5a_snapshot.py` stays in Python: it needs LibreOffice (`soffice`) to convert the legacy
+`.doc` to `.docx`, which cannot be run or verified in the agent sandbox; the owner can run it locally.
+A possible R port (soffice call + officer/xml2 + openxlsx) is left for after the owner confirms `soffice` works locally.

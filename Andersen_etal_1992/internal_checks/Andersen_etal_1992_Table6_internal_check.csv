@@ -1,0 +1,7 @@
+"check_id","basis","observed","printed","difference","tolerance","status","note"
+"region_sum_Granule","sum of 4 regions, row 'Granule' vs Table 4 Mean, column 'Granule' (10^6)",100999,101100,-101,200.5,"pass","cross-table: reads Andersen_etal_1992_Table4_snapshot.csv"
+"region_sum_Purkinje","sum of 4 regions, row 'Purkinje' vs Table 4 Mean, column 'Purkinje' (10^6)",30.52,30.5,0.0199999999999996,0.07,"pass","cross-table: reads Andersen_etal_1992_Table4_snapshot.csv"
+"region_sum_Golgi","sum of 4 regions, row 'Golgi' vs Table 4 Mean, column 'Golgi/g' (10^6)",81.33,81.3,0.0300000000000011,0.115,"pass","cross-table: reads Andersen_etal_1992_Table4_snapshot.csv"
+"region_sum_Glial_in_granular_layer","sum of 4 regions, row 'Glial in granular layer' vs Table 4 Mean, column 'Glial/g' (10^6)",1329,1330,-1,11.5,"pass","cross-table: reads Andersen_etal_1992_Table4_snapshot.csv"
+"region_sum_Glial_in_molecular_layer","sum of 4 regions, row 'Glial in molecular layer' vs Table 4 Mean, column 'Glial/m' (10^6)",1031.1,1030,1.09999999999991,5.65,"pass","cross-table: reads Andersen_etal_1992_Table4_snapshot.csv"
+"region_sum_Neurons_in_molecular_layer","sum of 4 regions, row 'Neurons in molecular layer' vs Table 4 Mean, column 'Neurons/m' (10^6)",1636,1630,6,16,"pass","cross-table: reads Andersen_etal_1992_Table4_snapshot.csv"

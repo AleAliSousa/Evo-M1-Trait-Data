@@ -12,7 +12,7 @@
 ## reference_tables/Graham__2011_TABLEI_references.csv and bind back on sources_printed
 ## (split on "; ", join on ref_key).
 ##
-## Frozen source: Graham__2011_TABLEI_snapshot.csv, written by Graham__2011_extract_snapshot.R
+## Frozen source: Graham__2011_TABLEI_snapshot.csv, written by Graham__2011_TABLEI_snapshot.R
 ## from the PDF text layer (no value typed in either script).
 ##
 ## A printed en dash in % nonsocial play means the measure was not reported for that taxon

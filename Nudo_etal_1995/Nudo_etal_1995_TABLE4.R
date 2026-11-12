@@ -1,7 +1,7 @@
 # Nudo et al. 1995 - TABLE 4: MAXIMUM surface density of corticospinal (CS) somata, by region.
 #
 # PRINTED SOURCE -> the frozen copy is Nudo_etal_1995_TABLE4_snapshot.xlsx (sheet "TABLE4"),
-# captured by Nudo_etal_1995_extract_snapshot.py from a 300-dpi render of p. 187. This script
+# captured by Nudo_etal_1995_TABLE4_snapshot.R from a 300-dpi render of p. 187. This script
 # reads ONLY that snapshot.
 #
 # Output shape: ONE ROW PER SPECIES (24), printed row order kept (identical to TABLES 2 and 5).

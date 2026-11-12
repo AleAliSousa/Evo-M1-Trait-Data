@@ -5,7 +5,7 @@
 ## species and/or subspecies of bats. (PDF pp. 22-32, printed pp. 284-294)
 ##
 ## Input  : Baron_etal_1996_Table5_snapshot.csv (frozen transcription; see
-##          Baron_etal_1996_Table5_extract.py for the reproducible extraction
+##          Baron_etal_1996_Table5_snapshot.R for the reproducible extraction
 ##          pipeline and Baron_etal_1996_Table5.README.md for the full record)
 ## Output : Baron_etal_1996_Table5.csv
 ##          __Public/comparative-data/<Item encoded>.tsv

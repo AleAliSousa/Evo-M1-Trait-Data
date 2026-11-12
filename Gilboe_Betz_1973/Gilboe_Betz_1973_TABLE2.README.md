@@ -18,7 +18,7 @@ O2 uptake, CO2 efflux and RQ of the isolated brain. **Mink 1981's dog value 3.4 
 
 ```
 Source PDF
-  -> Gilboe_Betz_1973_extract_snapshot.R        verbatim printed block, refuses to overwrite a differing frozen copy
+  -> Gilboe_Betz_1973_TABLE2_snapshot.R        verbatim printed block, refuses to overwrite a differing frozen copy
   -> Gilboe_Betz_1973_TABLE2_snapshot.csv   FROZEN: 6 printed rows
   -> Gilboe_Betz_1973_TABLE2.R              parse + table checks (no values typed)
   -> Gilboe_Betz_1973_TABLE2.csv            9 rows (one per printed value)  ("use this")

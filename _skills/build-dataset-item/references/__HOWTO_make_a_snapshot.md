@@ -128,9 +128,10 @@ already converted to flags — written out as `..._snapshot.csv` on every run is
 nothing to audit the cleaning against. The tell: the "snapshot" and the clean
 CSV are the same file. A hand transcription is fine (that's method 5 below),
 but it must be typed **as printed, into the frozen file**, and the `.R` must
-**read** that file — never regenerate it. An `*_extract.R` that *builds* a
-snapshot from the PDF/HTML source is different and fine: it saves the captured
-hardcopy first, then cleaning starts from that file.
+**read** that file — never regenerate it. A `<Item>_snapshot.R` that *builds* a
+snapshot from the PDF/HTML source is different and fine: it only saves the captured
+hardcopy, and the separate `<Item>.R` then cleans from that file. Snapshot script and item script are never
+combined, each item has its own snapshot, and snapshots are never shared between items.
 
 ## Choosing the format (evidence, not product)
 
@@ -228,9 +229,9 @@ without changing the faithful snapshot.
 
 2. **Web-scrape the publisher's HTML.** Pull the table from the open-access
    HTML version (PMC, journal site) in R with `rvest` — handy when the PDF won't
-   extract (e.g. a wide, rotated table). **The scraping script must also save
-   the snapshot**: write it to `..._snapshot.csv` *before* any cleaning, so the
-   scrape is captured as a hardcopy on every run (don't rely on the live URL
+   extract (e.g. a wide, rotated table). **The scraping goes in its own
+   `<Item>_snapshot.R`**, which writes `<Item>_snapshot.csv` *before* any cleaning (the
+   cleaning lives in `<Item>.R`), so the scrape is captured as a hardcopy (don't rely on the live URL
    alone). Cross-check against the PDF and note the HTML source in the ReadMe.
    *(Worked example in the repo: `HerculanoHouzel__2015/` Table 1.)*
 
@@ -239,7 +240,7 @@ without changing the faithful snapshot.
    works best for text-based PDFs; scanned documents may require OCR (e.g., 
    tesseract). Plain `pdftools::pdf_text` + regex also works well for small
    tables and for values printed in running text — worked example:
-   `Jacob_etal_2021/Jacob_etal_2021_extract_snapshot.R` (no values typed in the
+   `Jacob_etal_2021/Jacob_etal_2021_extract_snapshot.R` (legacy name; new scripts are `<Item>_snapshot.R`; no values typed in the
    script; anchored printed literals for headers/notes; two-column reading-order
    reconstruction; refuses to overwrite a differing frozen copy). Prefer this
    over manual entry whenever the PDF has a usable text layer.

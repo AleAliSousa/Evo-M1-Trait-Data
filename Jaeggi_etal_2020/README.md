@@ -8,7 +8,7 @@ All 245 population records across 100 printed species are transcribed from the p
 
 The merge table contains the set of states observed across populations, never a first or modal species state. No counts are inferred from solitary or pair labels. The original population rows remain available. The historical guanaco name Lama glama guanicoe maps to Lama guanicoe using MDD taxon 1006386; it must not map to the domestic llama.
 
-Rebuild (changed 2026-10-31): `python3 _checks/social_variables/build_population_censuses.py` from the
+Rebuild (changed 2026-10-31): `python3 _archive/2026-10_social_variables_expansion/social_variables/build_population_censuses.py` from the
 repository root freezes the snapshot and the readable sheet twin; the analysis layer is then built in R
 by `Jaeggi_etal_2020_Populations.R` (frozen workbook -> 245 population rows) and
 `Jaeggi_etal_2020_SocialStates.R` (those rows -> 100 species state sets, run second). The python no

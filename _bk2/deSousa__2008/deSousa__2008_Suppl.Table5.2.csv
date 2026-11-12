@@ -1,0 +1,7 @@
+species,species_as_published,code,archive_code_as_published,semendeferi_correction_factor,semendeferi_brain_volume_mm3,semendeferi_area_13_volume_mm3,semendeferi_area_10_volume_mm3,current_correction_factor,current_brain_volume_mm3,current_area_13_volume_mm3,current_area_10_volume_mm3,footnote,source
+Homo sapiens,human,hs20,SN-20784,1.9,1158300,366.2,14217.7,2.1,1302100,412.8,16026.3,"* brain volume differs because Semendeferi calculated it from the fixed weight (1200g), whereas the dissertation used the fresh weight (1349g)",deSousa__2008
+Pan troglodytes,chimp,pt1,Schimp 1,2.1,393000,269.9,2239.2,2,424700,255.2,2117.3,,deSousa__2008
+Pan paniscus,bonobo,ppy,YN 86-137,2.5,378400,110.5,2804.9,2.6,378400,116.8,2966.9,,deSousa__2008
+Gorilla gorilla,gorilla,ggy,YN82-140,2,362900,273.2,1942.5,2,362900,278.3,2061,,deSousa__2008
+Pongo pygmaeus,orang,ouy,YN 85-38,2,356900,316.6,1611.1,2.1,356200,330,1679.3,** the fresh weight for this specimen is 440g,deSousa__2008
+Hylobates lar,gibbon,hly,YN 81-146,2.1,88800,51.5,203.5,2.1,88800,51.1,202.1,,deSousa__2008

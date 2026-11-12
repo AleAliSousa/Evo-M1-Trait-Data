@@ -58,7 +58,8 @@ build_dataset_item(item_dir, item_name, dry_run = FALSE)        # 3. build + val
    `__HOWTO_make_a_snapshot.md`: freeze the table exactly as printed *before*
    any cleaning — headers, footnote marks, `n.a.`/blank cells, row order, all
    preserved.
-3. **Build** — write/extend `<Folder>_Table<N>.R` per §3 of the build HOWTO:
+3. **Build** — write/extend `<Folder>_Table<N>.R` per §3 of the build HOWTO
+   (one script per CSV/TSV, named like it; it only *reads* the snapshot):
    read the frozen source, clean, convert to project units, keep the printed
    species name, write the analysis CSV, look up `Item encoded` in
    `__ReadMe.xlsx` by `Item name` and write the public TSV to
@@ -130,6 +131,27 @@ snapshot.
 
 ## House rules (live only here)
 
+- **One script per output; snapshot scripts are separate and per item.** Each CSV/TSV is written by its
+  own `<Item>.R`, which only reads the snapshot. If an item needs a generated snapshot (scrape / PDF
+  extract), it has `<Item>_snapshot.R` (same name + `_snapshot`) that writes only
+  `<Item>_snapshot.<ext>`. Not every item has one. Never write the snapshot and the CSV/TSV from one
+  script, and never share one snapshot between items: give each item its own copy (and its own
+  `_snapshot.R` if one exists). Retire the `*_extract_snapshot.R` / `*_extract.R` names.
+
+- **Item scripts read only their own snapshot; cross-item checks go to `internal_checks/`.** A check
+  that needs a sibling item's snapshot lives in `<Paper>/internal_checks/<Item>_internal_check.R` and
+  writes `<Item>_internal_check.csv` there (build HOWTO §7b). It is separate from the snapshot and
+  CSV/TSV scripts and is not the `-restricted` comparison folder. A sibling read that feeds values
+  into the CSV/TSV is a data dependency, not a check: leave it and flag it.
+- **R first.** Item scripts (CSV/TSV) are always R. Snapshot scripts are R too; use Python only when a
+  snapshot cannot be made in R, and then only for the snapshot (`<Item>_snapshot.py`), never for a
+  CSV/TSV. Record why Python was needed in the script header.
+- **The committed CSV/TSV is the reference.** If a script's output differs from the committed
+  CSV/TSV, the script is fixed to reproduce the committed file, not the other way round, unless the
+  owner says otherwise. Values stay true to the source; a correction inside a paper folder is only
+  for a typo, an obvious transcription error or a stated fault in the value, and is always recorded
+  in the folder (errata row, a comment in the script for something minor, or the ReadMe). Other
+  changes or omissions happen downstream, not in the paper folder.
 - **Species keys are collection-scoped, not global.** Each collection/lineage
   keeps its own `_keys/<Collection>/species_key.csv` (`Stephan`, `Allman`,
   `HerculanoHouzel`, `Ashwell`, …), with rows keyed by paper token within that

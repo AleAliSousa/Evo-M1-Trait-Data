@@ -22,7 +22,9 @@ Both are frozen byte-identical as `Myhrvold_etal_2015_AmnioteDatabaseAug2015_sna
 and `Myhrvold_etal_2015_AmnioteDatabaseReferencesAug2015_snapshot.csv`.
 
 ## Build
-`Myhrvold_etal_2015_AmnioteDatabaseAug2015.py` melts both wide tables to long (one row
+`Myhrvold_etal_2015_AmnioteDatabaseAug2015.R` (the original `.py` build is retired as
+`Myhrvold_etal_2015_AmnioteDatabaseAug2015.py.retired`; the R script reproduces the committed CSV and TSV byte for byte)
+melts both wide tables to long (one row
 per species x trait), attaches the matching reference string, drops rows whose value is
 the `-999` sentinel (113,105 of 618,338 species x trait combinations have a value), and
 adds `unit` from `Supplemental_Table_9_Dataset_Field_Information.csv`

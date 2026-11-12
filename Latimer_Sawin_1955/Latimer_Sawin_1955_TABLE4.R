@@ -7,7 +7,7 @@
 # rabbits", p. 524 (PDF page 12).
 #
 # Reads the frozen snapshot (Latimer_Sawin_1955_TABLE4_snapshot.xlsx, written by
-# Latimer_Sawin_1955_extract_snapshot.R) and does all the cleaning:
+# Latimer_Sawin_1955_TABLE4_snapshot.R) and does all the cleaning:
 #   - one analysis row per printed numeric cell, in printed order, read along each
 #     printed row: 14 printed rows x 7 cells = 98 rows (long format);
 #   - three printed blocks: "Weights in grams", "Percentages of net body weight",

@@ -25,10 +25,11 @@ No value in either figure is printed as a number anywhere in the paper.
 
 - **Digitisation method:** pixel digitisation of the **embedded 1273 × 754 px (Fig. 10) and
   1280 × 754 px (Fig. 11) bitmaps** at native resolution by
-  `Heffner_etal_2014_Figures10-11_extract.py` (conda env `python`), run 2026-10-31; a second run
-  reports "snapshot unchanged". Same geometry as Fig. 9: grey bar located by its black border
+  `Heffner_etal_2014_Figures10-11_snapshot.R` (R port of the former `_snapshot.py`, now
+  `_snapshot.py.retired`; conda env `evom1-r`: magick + poppler `pdfimages`), first run 2026-10-31 in Python; the R port
+  regenerates the frozen snapshot **byte-identically** (run in a temporary directory, never in place). Same geometry as Fig. 9: grey bar located by its black border
   columns, calibration from the numeric labels printed inside the bar, species leader lines as the
-  connected components touching a border from outside and wider than 30 px.
+  connected components touching a border from outside and wider than 40 px.
 - **Estimated error in each figure's own units:** Fig. 10 **±0.04°** (the linear fit to the eight
   printed ticks 35…0 leaves residuals of −0.031 to +0.039°); Fig. 11 **±0.35%** (the log fit to the
   nine printed ticks 4000…40 leaves residuals of −0.34% to +0.19%). Add roughly one pixel of
@@ -47,20 +48,21 @@ No value in either figure is printed as a number anywhere in the paper.
   The style was read visually and frozen in
   `reference_tables/Heffner_etal_2014_Figures10-11_label_typography.csv`.
 
-## Cross-checks (actual R run 2026-10-31)
+## Table checks (actual R run 2026-10-31; cross-item check run 2026-11-12)
 
 | check | observed | expected | status |
 |---|---|---|---|
 | alpaca threshold, Fig. 10 | 22.96° | 23° (Results III.B) | pass |
-| largest Fig. 10 − Fig. 9 threshold difference, 21 shared species | 0.51° | ≤ 0.6° | pass |
-| species common to Figs. 9 and 10 | 21 | 21 | pass |
 | short-tailed fruit bat interaural distance | 47.3 µs | 47 µs (Heffner et al. 2003, Fig. 4) | pass |
 | greater spear-nosed bat interaural distance | 107.5 µs | 108 µs (Koay et al. 2002) | pass |
 | **Jamaican fruit bat interaural distance** | **90.3 µs** | **96 µs (Heffner et al. 2003)** | **mismatch** |
 | species in the item | 25 | 25 | pass |
 
-The independent agreement between Fig. 10 and Fig. 9 (two different scales in the same paper,
-digitised independently, 21 species in common, worst case 0.51°) is the main evidence that the
+**Cross-item check in `internal_checks/`** (needs the Figure9 snapshot, so it is not part of this item's script, which reads only its own snapshot): `internal_checks/Heffner_etal_2014_Figures10-11_internal_check.R` writes
+`internal_checks/Heffner_etal_2014_Figures10-11_internal_check.csv`. Result (actual R run, 2026-11-12): largest
+Fig. 10 − Fig. 9 threshold difference over the 21 species common to both scales **0.511°** (tolerance 0.6°, pass);
+species common to Figs. 9 and 10 **21** (expected 21, pass). The independent agreement between Fig. 10 and Fig. 9
+(two different scales in the same paper, digitised independently, 21 species in common, worst case 0.51°) is the main evidence that the
 method is sound. The Jamaican fruit bat mismatch is recorded as
 `Heffner_etal_2014-E002` (`cross_source_disagreement`): that point shares its Fig. 11 tick with the
 kangaroo rat, so the figure cannot place the two separately. Prefer the printed 96 µs.
@@ -76,7 +78,8 @@ the Fig. 9 caption of the same paper. All three works, and that limitation, are 
 
 | file | role |
 |---|---|
-| `Heffner_etal_2014_Figures10-11_extract.py` | reproducible bitmap digitisation -> frozen snapshot (Python: pymupdf, numpy, scipy, pandas, pillow) |
+| `Heffner_etal_2014_Figures10-11_snapshot.R` | reproducible bitmap digitisation -> frozen snapshot (R: magick, poppler `pdfimages`); the earlier Python version is kept as `Heffner_etal_2014_Figures10-11_snapshot.py.retired` |
+| `internal_checks/Heffner_etal_2014_Figures10-11_internal_check.R` / `.csv` | cross-item check Fig. 10 vs the Figure9 snapshot (read-only; see Table checks) |
 | `Heffner_etal_2014_Figures10-11_snapshot.csv` | constructed snapshot (the digitisation as captured, in the figure's own units) |
 | `Heffner_etal_2014_Figures10-11.R` | snapshot -> analysis CSV + public TSV; `table_checks` |
 | `Heffner_etal_2014_Figures10-11.csv` | analysis data |

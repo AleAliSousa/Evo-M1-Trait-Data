@@ -19,7 +19,7 @@ Page range: the article runs pp. 860-869 (Crossref; the Table 1 page header read
 
 ```
 Source (PDF)
-  -> Palombo_etal_1990_extract_snapshot.R   writes the frozen snapshot(s)
+  -> Palombo_etal_1990_Table3_snapshot.R   writes the frozen snapshot(s)
   -> Palombo_etal_1990_Table3_snapshot.csv   FROZEN: 19 rows x 5 cols
   -> Palombo_etal_1990_Table3.R   clean + parse + table checks
   -> Palombo_etal_1990_Table3.csv   56 rows x 21 cols  ("use this")
@@ -29,7 +29,7 @@ Source (PDF)
 
 ## Who read the values, when, and how it was checked
 
-**Hand transcription** (HOWTO method 5) by an AI assistant (Claude) on 2026-11-02 from 450-dpi crops of PDF pages 4, 5 and 7, read row by row across all four columns, typed as verbatim printed-layout blocks into `Palombo_etal_1990_extract_snapshot.R` (one script writes all five table snapshots; freezes, refuses to overwrite). The OCR layer was NOT used: it confuses 5/7/1 (e.g. "51" for the printed 57 in Table 1 Body of caudate, "31" for the printed 37 in Table 2 Lateral geniculate).
+**Hand transcription** (HOWTO method 5) by an AI assistant (Claude) on 2026-11-02 from 450-dpi crops of PDF pages 4, 5 and 7, read row by row across all four columns, typed as verbatim printed-layout blocks into `Palombo_etal_1990_Table3_snapshot.R` (one script writes all five table snapshots; freezes, refuses to overwrite). The OCR layer was NOT used: it confuses 5/7/1 (e.g. "51" for the printed 57 in Table 1 Body of caudate, "31" for the printed 37 in Table 2 Lateral geniculate).
 
 The build script `Palombo_etal_1990_Table3.R` reads the frozen file and contains no table values. It was run with
 `Rscript` (conda env `r`, R with readxl) from a clean session on 2026-11-02.

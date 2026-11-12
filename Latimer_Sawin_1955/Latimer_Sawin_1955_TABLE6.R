@@ -7,7 +7,7 @@
 # 50 male and 50 female rabbits", p. 526 (PDF page 14).
 #
 # Reads the frozen snapshot (Latimer_Sawin_1955_TABLE6_snapshot.xlsx, written by
-# Latimer_Sawin_1955_extract_snapshot.R) and does all the cleaning:
+# Latimer_Sawin_1955_TABLE6_snapshot.R) and does all the cleaning:
 #   - one analysis row per printed numeric cell, in printed order, read along each
 #     printed row: 4 printed rows x 7 cells = 28 rows (long format);
 #   - sex and n from the printed group headers ("50 MALES", "50 FEMALES"), checked
@@ -24,21 +24,20 @@
 #     paper's proposed rows in reference_tables/), never from an inline map;
 #   - the table's own relations are re-run into `table_checks` (build HOWTO
 #     section 7a): Coef. var. = 100 x Stand. dev. / Average; the "t" values (male vs
-#     female) from the Averages, SDs and n. The two percentage rows are means of
-#     per-animal ratios, so they are compared with the ratio of the printed means
-#     (TABLE 1 Panel A net body weight and nose-anus length) only as an INFORMATIVE
-#     check (no pass criterion). Mismatches are warned, noted on the row and kept
-#     as printed. (The normal and dwarf groups of TABLE 7 are pooled against this
+#     female) from the Averages, SDs and n. Mismatches are warned, noted on the row
+#     and kept as printed. The informative comparison of the two percentage rows
+#     with TABLE 1 needs TABLE 1's CSV and is in
+#     internal_checks/Latimer_Sawin_1955_TABLE6_internal_check.R. (The normal and dwarf groups of TABLE 7 are pooled against this
 #     table in Latimer_Sawin_1955_TABLE7.R.)
 # No table value is typed in this script.
 #
-# Build order: Latimer_Sawin_1955_TABLE1.R first (the informative checks read
-# Latimer_Sawin_1955_TABLE1.csv; without it those rows are not evaluated); this
-# script before Latimer_Sawin_1955_TABLE7.R, which reads this CSV.
+# Build order: this script before Latimer_Sawin_1955_TABLE7.R, which reads this CSV.
+# (This script itself reads only its own snapshot. The cross-item check
+# internal_checks/Latimer_Sawin_1955_TABLE6_internal_check.R reads Latimer_Sawin_1955_TABLE1.csv:
+# run TABLE1.R before it.)
 #
-# R NOT RUN — outputs written by a Python mirror; Alexandra to run the R.
-# Written 2026-11-07 by an AI assistant. The analysis CSV, the public TSV and the
-# table-check results quoted in the README come from a Python mirror of this script.
+# Written 2026-11-07 by an AI assistant. Run in R on 2026-11-12 in a temporary copy of the repo:
+# the analysis CSV and the public TSV are byte-identical to the committed files.
 
 .sp <- local({
   a <- grep("^--file=", commandArgs(FALSE), value = TRUE)
@@ -232,43 +231,11 @@ tc_t <- chk(paste("t", tt$measure, sep = "_"),
                     t_alt))
 rows_t <- as.list(which(cells$statistic == "t"))
 
-## 3. INFORMATIVE ONLY (4): the two percentage rows vs the ratio of the printed means,
-##    100 x Average cord weight (g) / Average net body weight (g) and 100 x Average cord
-##    length (mm) / Average nose-anus body length (mm), TABLE 1 Panel A (all animals of
-##    the sex). A mean of ratios need not equal a ratio of means: no pass criterion,
-##    status not_evaluable.
-ratio_of <- c(cord_weight_pct_net_body_weight = "cord_weight",
-              cord_length_pct_body_length     = "cord_length")
-t1_measure <- c(cord_weight_pct_net_body_weight = "body_weight_net",
-                cord_length_pct_body_length     = "body_length_nose_anus")
-t1_csv <- paste0(paper, "_TABLE1.csv")
-pb  <- w[w$measure %in% names(ratio_of), ]
-num <- w[match(paste(ratio_of[pb$measure], pb$sex), paste(w$measure, w$sex)), ]
-if (file.exists(t1_csv)) {
-  t1 <- read.csv(t1_csv, colClasses = "character", encoding = "UTF-8")   # keeps "1565.4" as printed
-  den <- t1[t1$statistic == "mean" & t1$group == "all", ]
-  den <- den[match(paste(t1_measure[pb$measure], pb$sex), paste(den$measure, den$sex)), ]
-  stopifnot(!anyNA(den$value))
-  rom <- 100 * num$mean / as.numeric(den$value)
-  info_note <- sprintf("INFORMATIVE ONLY, no pass criterion: the printed value is a mean of per-animal percentages; the ratio of the printed means, 100 x %s %s / %s %s (TABLE 1 Panel %s %s, %s), need not equal it. Ratio of means minus printed = %+.4f (%+.1f%% of the printed value).",
-                       num$mean_txt, unit_of[num$measure], den$value_printed, unit_of[num$measure],
-                       den$panel, den$measure_as_published, pb$sex, rom - pb$mean,
-                       100 * (rom - pb$mean) / pb$mean)
-} else {
-  rom <- rep(NA_real_, nrow(pb))
-  info_note <- paste0("INFORMATIVE ONLY: ", t1_csv, " not found; run Latimer_Sawin_1955_TABLE1.R first.")
-}
-tc_info <- data.frame(check_id = paste0("info_ratio_of_means_", pb$measure, "_", pb$sex),
-                      basis = sprintf("%s (mean of ratios) vs 100 x Average %s / TABLE 1 Average %s (ratio of means) [%s]",
-                                      pb$measure_as_published, ratio_of[pb$measure],
-                                      t1_measure[pb$measure], pb$sex),
-                      observed = rom, printed = pb$mean, difference = rom - pb$mean,
-                      tolerance = NA_real_, status = "not_evaluable", note = info_note,
-                      stringsAsFactors = FALSE)
-rows_info <- rep(list(integer(0)), nrow(tc_info))
+## (The cross-item checks that need the sibling analysis CSV live in
+##  internal_checks/Latimer_Sawin_1955_TABLE6_internal_check.R; this script reads only its own snapshot.)
 
-table_checks <- rbind(tc_cv, tc_t, tc_info)
-check_rows   <- c(rows_cv, rows_t, rows_info)
+table_checks <- rbind(tc_cv, tc_t)
+check_rows   <- c(rows_cv, rows_t)
 rownames(table_checks) <- NULL
 
 ## ---- per-row notes for the checks that did not pass -----------------------------------
@@ -293,8 +260,7 @@ for (i in which(table_checks$status == "mismatch")) {
 
 tally <- table(factor(table_checks$status, c("pass", "mismatch", "not_evaluable")))
 message(item_name, ": table checks  pass=", tally[["pass"]], "  mismatch=", tally[["mismatch"]],
-        "  not_evaluable=", tally[["not_evaluable"]], " (the not_evaluable rows are the ",
-        nrow(tc_info), " informative ratio-of-means comparisons)")
+        "  not_evaluable=", tally[["not_evaluable"]])
 if (tally[["mismatch"]] > 0L) {
   bad <- table_checks[table_checks$status == "mismatch", ]
   for (i in seq_len(nrow(bad)))

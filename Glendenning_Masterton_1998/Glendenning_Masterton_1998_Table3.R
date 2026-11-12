@@ -6,7 +6,7 @@
 ## 10 nuclei plus the clusters CN (AVCN + PVCN + DCN) and SO (MTB + LSO + MSO),
 ## 53 animals. DERIVED in this paper (Methods: log V, then V' = (V - mu)/sigma).
 ## Minus signs are printed as en dashes. Frozen source written by
-## Glendenning_Masterton_1998_extract_snapshot.py.
+## Glendenning_Masterton_1998_Table3_snapshot.py.
 
 ## 0. PATHS --------------------------------------------------------
 .sp <- local({

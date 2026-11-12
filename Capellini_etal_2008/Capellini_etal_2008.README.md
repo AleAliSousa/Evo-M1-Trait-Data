@@ -30,8 +30,8 @@ actually measured each row — Capellini is the compiler, not the measurer.
 
 ## Build
 
-`Capellini_etal_2008_sleep-data.R` — reads the three frozen CSVs, resolves species, derives the two
-standardized terms, writes the analysis CSV and the DOI-coded public TSV for each.
+One script per item, `Capellini_etal_2008_sleep-dataFemale.R`, `..._sleep-dataMale.R`, `..._sleep-dataMixed.R` — each reads its own frozen CSV, resolves species, derives the two
+standardized terms, writes its analysis CSV and DOI-coded public TSV.
 
 No unit conversion is needed: sleep times are printed in **hours per day** and kept that way; the
 sleep cycle is printed in **minutes**. The one derivation is
@@ -96,6 +96,6 @@ Merge wiring into `__merging_sleep` is **not** done — no merge script was touc
 - 40 + 89 + 54 = 183 records out, matching the three frozen files row-for-row.
 - Every `REM_sleep_pct` recomputed from the written TSV reproduces `100 × REM_h / Sleep_h_day`.
 - No species name resolved outside `species_key.csv`.
-- **Re-run `Capellini_etal_2008_sleep-data.R` in RStudio** to confirm it reproduces these files —
+- **Re-run `Capellini_etal_2008_sleep-data{Female,Male,Mixed}.R` in RStudio** to confirm it reproduces these files —
   the committed CSV/TSV were written by an offline mirror of the script (no R in the authoring
   environment).

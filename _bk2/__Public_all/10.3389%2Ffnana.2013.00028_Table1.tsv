@@ -1,0 +1,8 @@
+"Species"	"Species_Ribeiro2013"	"n"	"Region"	"region_term"	"CorticalGrey_N.p.mg"	"CorticalGrey_N.p.mg_SE"	"CorticalGrey_O.p.mg"	"CorticalGrey_O.p.mg_SE"	"CorticalGrey_O.p.N"	"CorticalGrey_O.p.N_SE"	"sig_N.p.mg"	"sig_O.p.mg"	"sig_O.p.N"	"parse_flags"	"ONratio_check_from_densities"	"ONratio_check_pct_diff"
+"Homo sapiens"	"human"	1	"Prefrontal"	"PrefrontalCortexGrey"	17742	4240	40055	9543	2.291	0.366	NA	NA	NA	NA	2.25763724495547	1.4777730620397
+"Homo sapiens"	"human"	1	"Frontal"	"FrontalCortexGrey"	18768	3996	49660	6587	2.713	0.391	NA	NA	NA	NA	2.64599317988065	2.53238824003222
+"Homo sapiens"	"human"	1	"Temporal"	"TemporalCortexGrey"	18013	4124	46245	7092	2.638	0.43	NA	NA	NA	NA	2.56731249653028	2.75336576927234
+"Homo sapiens"	"human"	1	"Insula"	"InsulaCortexGrey"	19897	5628	40999	9774	2.102	0.333	NA	NA	NA	NA	2.06056189375283	2.01101002463474
+"Homo sapiens"	"human"	1	"Parietal"	"ParietalCortexGrey"	25394	4595	55565	9017	2.208	0.295	"***"	NA	NA	NA	2.18811530282744	0.908759110951155
+"Homo sapiens"	"human"	1	"Posterior"	"PosteriorCortexGrey"	38960	6901	65347	7359	1.712	0.263	"*"	"*"	"**"	NA	1.67728439425051	2.06975071541157
+"Homo sapiens"	"human"	1	"V1"	"V1CortexGrey"	58162	13641	74214	11325	1.306	0.191	"*"	"*"	"**"	NA	1.27598775833018	2.35207912253752

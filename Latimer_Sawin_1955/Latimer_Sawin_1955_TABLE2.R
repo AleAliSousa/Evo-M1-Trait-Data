@@ -7,7 +7,7 @@
 # 50 male and in 50 female rabbits", p. 518 (PDF page 6).
 #
 # Reads the frozen snapshot (Latimer_Sawin_1955_TABLE2_snapshot.xlsx, written by
-# Latimer_Sawin_1955_extract_snapshot.R) and does all the cleaning:
+# Latimer_Sawin_1955_TABLE2_snapshot.R) and does all the cleaning:
 #   - one analysis row per printed numeric cell, in printed order, read along each
 #     printed row: 14 printed rows x 7 cells = 98 rows (long format);
 #   - three blocks: weights in grams (no block heading is printed; the caption says
@@ -23,18 +23,17 @@
 #     section 7a): Coef. var. = 100 x Stand. dev. / Average; the "t" values from the
 #     Averages, SDs and n; Brain = sum of its four parts (grams; the paper weighs the
 #     four parts and sums them, p. 515); the percentages of total brain weight add
-#     to 100. The percentages of net body weight are a mean of per-animal ratios,
-#     so they are compared with the ratio of the printed means (TABLE 1, Panel A,
-#     net body weight) only as an INFORMATIVE check (no pass criterion). Mismatches
-#     are warned, noted on the row and kept as printed.
+#     to 100. Mismatches are warned, noted on the row and kept as printed. The
+#     informative comparison of the percentages of net body weight with TABLE 1
+#     needs TABLE 1's CSV and is in internal_checks/Latimer_Sawin_1955_TABLE2_internal_check.R.
 # No table value is typed in this script.
 #
-# Build order: run Latimer_Sawin_1955_TABLE1.R first (the informative check reads
-# Latimer_Sawin_1955_TABLE1.csv; without it those rows are not evaluated).
+# Build order: none (this script reads only its own snapshot). The cross-item check
+# internal_checks/Latimer_Sawin_1955_TABLE2_internal_check.R reads Latimer_Sawin_1955_TABLE1.csv:
+# run TABLE1.R before it.
 #
-# R NOT RUN — outputs written by a Python mirror; Alexandra to run the R.
-# Written 2026-11-06 by an AI assistant. The analysis CSV, the public TSV and the
-# table-check results quoted in the README come from a Python mirror of this script.
+# Written 2026-11-06 by an AI assistant. Run in R on 2026-11-12 in a temporary copy of the repo:
+# the analysis CSV and the public TSV are byte-identical to the committed files.
 
 .sp <- local({
   a <- grep("^--file=", commandArgs(FALSE), value = TRUE)
@@ -257,37 +256,11 @@ for (s in unique(w$sex)) {
   rows_pct[[length(rows_pct) + 1L]] <- vapply(g$printed_row, function(p) row_of(p, g$side[1], "mean"), integer(1))
 }
 
-## 5. INFORMATIVE ONLY (10): percentages of net body weight vs the ratio of the
-##    printed means, 100 x Average grams (this table) / Average net body weight
-##    (TABLE 1, Panel A). A mean of ratios need not equal a ratio of means: no pass
-##    criterion, status not_evaluable.
-t1_csv <- paste0(paper, "_TABLE1.csv")
-pb <- w[w$block == "pct_net_body_weight", ]
-gm <- w[w$block == "weight", ]
-gm <- gm[match(paste(pb$structure_as_published, pb$sex), paste(gm$structure_as_published, gm$sex)), ]
-if (file.exists(t1_csv)) {
-  t1 <- read.csv(t1_csv, colClasses = "character", encoding = "UTF-8")   # keeps "1565.4" as printed
-  net <- t1[t1$measure == "body_weight_net" & t1$statistic == "mean" & t1$group == "all", ]
-  stopifnot(nrow(net) == 2L)
-  net_txt <- net$value_printed[match(pb$sex, net$sex)]
-  net_val <- as.numeric(net$value[match(pb$sex, net$sex)])
-  rom <- 100 * gm$mean / net_val
-  info_note <- sprintf("INFORMATIVE ONLY, no pass criterion: the printed value is a mean of per-animal percentages; the ratio of the printed means, 100 x %s g / %s g (TABLE 1 Panel A net body weight), need not equal it. Ratio of means minus printed = %+.4f (%+.1f%% of the printed value).",
-                       gm$mean_txt, net_txt, rom - pb$mean, 100 * (rom - pb$mean) / pb$mean)
-} else {
-  rom <- rep(NA_real_, nrow(pb))
-  info_note <- paste0("INFORMATIVE ONLY: ", t1_csv, " not found; run Latimer_Sawin_1955_TABLE1.R first.")
-}
-tc_info <- data.frame(check_id = paste0("info_ratio_of_means_", pb$measure, "_", pb$sex),
-                      basis = sprintf("Percentage of net body weight (mean of ratios) vs 100 x Average grams / Average net body weight (ratio of means) [%s, %s]",
-                                      pb$structure_as_published, pb$sex),
-                      observed = rom, printed = pb$mean, difference = rom - pb$mean,
-                      tolerance = NA_real_, status = "not_evaluable", note = info_note,
-                      stringsAsFactors = FALSE)
-rows_info <- rep(list(integer(0)), nrow(tc_info))
+## (The cross-item checks that need the sibling analysis CSV live in
+##  internal_checks/Latimer_Sawin_1955_TABLE2_internal_check.R; this script reads only its own snapshot.)
 
-table_checks <- rbind(tc_cv, tc_t, tc_sum, tc_pct, tc_info)
-check_rows   <- c(rows_cv, rows_t, rows_sum, rows_pct, rows_info)
+table_checks <- rbind(tc_cv, tc_t, tc_sum, tc_pct)
+check_rows   <- c(rows_cv, rows_t, rows_sum, rows_pct)
 rownames(table_checks) <- NULL
 
 ## ---- per-row notes for the checks that did not pass -----------------------------------
@@ -318,8 +291,7 @@ for (i in which(table_checks$status == "mismatch")) {
 
 tally <- table(factor(table_checks$status, c("pass", "mismatch", "not_evaluable")))
 message(item_name, ": table checks  pass=", tally[["pass"]], "  mismatch=", tally[["mismatch"]],
-        "  not_evaluable=", tally[["not_evaluable"]], " (the not_evaluable rows are the ",
-        nrow(tc_info), " informative ratio-of-means comparisons)")
+        "  not_evaluable=", tally[["not_evaluable"]])
 if (tally[["mismatch"]] > 0L) {
   bad <- table_checks[table_checks$status == "mismatch", ]
   for (i in seq_len(nrow(bad)))

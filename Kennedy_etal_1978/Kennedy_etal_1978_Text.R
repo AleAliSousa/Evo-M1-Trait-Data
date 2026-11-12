@@ -5,7 +5,7 @@
 # Fig 2 (p. 299) and Fig 3 (p. 300), not in the table.
 #
 # Reads the constructed, frozen snapshot Kennedy_etal_1978_Text_snapshot.csv
-# (one row per printed value, written by Kennedy_etal_1978_extract_snapshot.R)
+# (one row per printed value, written by Kennedy_etal_1978_Text_snapshot.R)
 # and classifies each value by provenance, because the passage mixes this
 # paper's own results with values it CITES:
 #   new_estimate      29   whole-brain estimate the authors compute from their
@@ -58,8 +58,6 @@ num_of <- function(x) suppressWarnings(as.numeric(gsub("\\s+", "", x)))   # "- 9
 
 tx <- read_snapshot(paste0(base, "_snapshot.csv"), header = TRUE)
 stopifnot(nrow(tx) == 10L, identical(tx$text_row, as.character(1:10)))
-tb <- read_snapshot(paste0(paper, "_Table_snapshot.csv"))
-stopifnot(identical(dim(tb), c(52L, 2L)))
 
 ML_O2_TO_UMOL <- 44.64      # µmol O2 per mL O2 (STP), the factor used by __merging_cerebral_metabolic_rate
 
@@ -115,20 +113,10 @@ chk <- function(id, basis, observed, printed, tol, note = NA_character_) {
              note = note, stringsAsFactors = FALSE)
 }
 
-rows <- which(grepl("±", tb[, 2]))
-sec  <- ifelse(tb[, 1] %in% c("Gray matter", "White matter"), tb[, 1], NA_character_)
-for (i in 2:length(sec)) if (is.na(sec[i])) sec[i] <- sec[i - 1]
-val  <- num_of(mean_lexeme(tb[rows, 2]))
-gray <- val[sec[rows] == "Gray matter"]; white <- val[sec[rows] == "White matter"]
-stopifnot(length(gray) == 31L, length(white) == 8L)
 v <- function(r) final.dataframe$value_numeric[final.dataframe$text_row == r]
+## The gray/white equal-weight average vs the Table item needs the sibling snapshot and lives
+## in internal_checks/Kennedy_etal_1978_Text_internal_check.R (build HOWTO 7b).
 table_checks <- rbind(
-  ## each printed cell is an integer (±0.5), so each group mean is uncertain by
-  ## at most ±0.5 and their average by ±0.5; plus half a unit of the printed 29.
-  chk("equal_weight_gray_white_average",
-      "DISCUSSION p. 298: (mean of 31 gray rows + mean of 8 white rows)/2 vs printed 29",
-      (mean(gray) + mean(white)) / 2, v(4), 0.5 + 0.5,
-      sprintf("gray mean %.3f, white mean %.3f", mean(gray), mean(white))),
   ## 3.7 mL O2 -> µmol O2 (/22.4 mL per mmol) -> glucose (6 O2 : 1 glucose)
   chk("o2_to_glucose_equivalent",
       "DISCUSSION p. 298: 3.7 cc O2/100 g/min / 22.4 mL/mmol x 1000 / 6 vs printed 'approximately 28'",

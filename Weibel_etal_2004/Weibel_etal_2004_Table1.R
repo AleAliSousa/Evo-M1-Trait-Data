@@ -27,7 +27,7 @@ base <- local({ d <- folder
 setwd(folder)
 library(readxl)
 
-raw <- as.data.frame(read_excel(file.path(folder, "Weibel_etal_2004_Tables_snapshot.xlsx"),
+raw <- as.data.frame(read_excel(file.path(folder, paste0(item_name, "_snapshot.xlsx")),
                                 sheet = "Table1"))
 stopifnot(nrow(raw) == 34)
 flag <- c("Tamias striatus", "Spalax ehrenbergi", "Rattus norvegicus",

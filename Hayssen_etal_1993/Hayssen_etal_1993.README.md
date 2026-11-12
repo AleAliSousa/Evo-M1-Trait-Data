@@ -29,7 +29,7 @@ compilation-level agreement into traceable provenance.
   named as the book prints it (`Macroscelidae`) while the slice map and the items use `Macroscelidea`.
 - `Hayssen_etal_1993_accounts.R` → `reference_tables/Hayssen_etal_1993_accounts_<Family>.csv` (136 families) — the
   species-account transcription (see "Species accounts (step 2)").
-- `Hayssen_etal_1993_orders.R` → `Hayssen_etal_1993_<Order>.csv` (20 orders) and `Hayssen_etal_1993_LiteratureCited.csv` —
+- one `Hayssen_etal_1993_<Order>.R` per item → `Hayssen_etal_1993_<Order>.csv` (20 orders) and `Hayssen_etal_1993_LiteratureCited.csv` —
   the dataset items: each order's family tables bound in the book's order, plus the references table; the public TSV
   of every item registered in `__ReadMe.xlsx` is written to `__Public/comparative-data/<Item encoded>.tsv`.
 - `Hayssen_etal_1993_registry_rows.R` → `Hayssen_etal_1993_registry_rows.xlsx` — the 21 registry rows (one per order +
@@ -48,7 +48,7 @@ CYCLE LENGTH, GESTATION, LACTATION, INTERLITTER INTERVAL, SEASONALITY (and other
 and the trailing `2940` is the Literature Cited number. Abbreviations are defined on printed p. 5
 (front-matter slice). Multi-value species continue on indented lines without repeating the name.
 
-## Transcription plan (step 1 done — see "Reference table"; step 2 done — all 136 families of the book, see "Species accounts (step 2)"; step 3 — per-order items built by `Hayssen_etal_1993_orders.R`, registry rows in `Hayssen_etal_1993_registry_rows.xlsx`, see "Registry")
+## Transcription plan (step 1 done — see "Reference table"; step 2 done — all 136 families of the book, see "Species accounts (step 2)"; step 3 — per-order items built by one `Hayssen_etal_1993_<Order>.R` each, registry rows in `Hayssen_etal_1993_registry_rows.xlsx`, see "Registry")
 
 1. `Hayssen_etal_1993_references.R` → `reference_tables/Hayssen_etal_1993_references.csv`:
    one row per reference number from the Literature Cited slice (numbers with letter suffixes such as `3625a`
@@ -70,7 +70,7 @@ One item per order (Item number = the order as the slice files name it: `Monotre
 `Perissodactyla`, `Hyracoidea`, `Tubulidentata`, `Artiodactyla`, `Pholidota`, `Rodentia`, `Lagomorpha`, `Macroscelidea`)
 plus `LiteratureCited`; Item name = `Hayssen_etal_1993_<Item number>`, Item encoded = `ISBN%3A9780801417535_<Item number>`
 (column C carries the ISBN override). As of 2026-10-24 only `Hayssen_etal_1993_Primates` is registered in `__ReadMe.xlsx`;
-the other 20 rows are prepared in `Hayssen_etal_1993_registry_rows.xlsx` and `Hayssen_etal_1993_orders.R` writes their
+the other 20 rows are prepared in `Hayssen_etal_1993_registry_rows.xlsx` and the per-order `Hayssen_etal_1993_<Order>.R` scripts write their
 public TSVs as soon as their rows are in the registry (it reports and skips unregistered items). The frozen source of each
 order item is its PDF slice in `pdf_by_order/` (SHA-256 in the slice map); the frozen source of the Literature Cited item
 is the Literature Cited slice.

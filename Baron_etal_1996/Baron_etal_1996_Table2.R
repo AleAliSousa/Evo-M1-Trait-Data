@@ -4,7 +4,7 @@
 ## Table 2. Linear measures of brains in mm (PDF pp. 4-11, printed pp. 266-273)
 ##
 ## Input  : Baron_etal_1996_Table2_snapshot.csv (frozen transcription; see
-##          Baron_etal_1996_Table2_extract.py for the reproducible extraction
+##          Baron_etal_1996_Table2_snapshot.R for the reproducible extraction
 ##          pipeline and Baron_etal_1996_Table2.README.md for the full record)
 ## Output : Baron_etal_1996_Table2.csv
 ##          __Public/comparative-data/<Item encoded>.tsv

@@ -4,7 +4,7 @@
 # DOI 10.1097/00008506-199407000-00004. Item TABLE2.
 #
 # Reads the frozen snapshot Nemoto_etal_1994_TABLE2_snapshot.csv (written by
-# Nemoto_etal_1994_extract_snapshot.R) and reshapes it to one analysis row per printed
+# Nemoto_etal_1994_TABLE2_snapshot.R) and reshapes it to one analysis row per printed
 # value cell: mean / dispersion / n / footnote marks split into their own fields,
 # the printed species, anesthesia and preparation attached, CMRO2 / CMRgl / CBF also
 # given in the merge's standard units. The cell map below names snapshot rows and
@@ -30,7 +30,7 @@ locus <- sub(paste0("^", paper, "_"), "", item_name)
 
 doi <- "10.1097/00008506-199407000-00004"
 
-## ---- read the frozen snapshot (written by <paper>_extract_snapshot.R) ----------
+## ---- read the frozen snapshot (written by Nemoto_etal_1994_TABLE2_snapshot.R) ----------
 read_snapshot <- function(file, header = FALSE) {
   x <- read.csv(file, header = header, colClasses = "character", na.strings = character(0),
                 check.names = FALSE, encoding = "UTF-8")

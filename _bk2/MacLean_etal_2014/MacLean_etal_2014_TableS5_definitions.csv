@@ -1,0 +1,8 @@
+"output_column","source_header","unit","value_type","note"
+"Reference","item key","","constant",""
+"source_row","source row","","row locator",""
+"common_name_as_published","Common Name","","text",""
+"species_as_published","Latin Name","","text",""
+"cylinder_score","Cylinder Task","score","numeric","Missing dash -> blank"
+"a_not_b_score","A not B Task","score","numeric","Missing dash -> blank"
+"composite_score","Composite Score","score","numeric","As published; not recomputed"

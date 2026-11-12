@@ -14,7 +14,7 @@ Open-access HTML version (PubMed Central): https://pmc.ncbi.nlm.nih.gov/articles
 
 Table 1 is printed in **rotated landscape across two pages** and does **not**
 extract cleanly from the PDF. (Table 2 in this folder *is* pulled from the PDF
-with `tabulapdf` — see `Herculano-Houze-2015_Table2.R` — but Table 1 is wider
+with `tabulapdf` — see `HerculanoHouzel__2015_Table2_snapshot.R` — but Table 1 is wider
 and broke up.)
 
 ## --> Snapshot

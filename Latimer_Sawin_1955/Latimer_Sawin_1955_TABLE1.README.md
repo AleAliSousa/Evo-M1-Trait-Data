@@ -8,12 +8,13 @@ Latimer, H. B., & Sawin, P. B. (1955). The weight of the brain, of its parts and
 **Item full original title:** TABLE 1. *Weight and length of the body for the entire group of 50 males and 50 females in
 panel A. Panels B and C show similar data for the normal and dwarf males and females* (p. 517, PDF page 5).
 
-> **R NOT RUN — outputs written by a Python mirror; Alexandra to run the R.** The frozen snapshot, the analysis CSV, the public TSV and every table-check result quoted here were
-> produced on 2026-11-06 by a Python mirror of the R scripts in this folder. Run, in this order:
-> `Latimer_Sawin_1955_extract_snapshot.R` (it should report both frozen snapshots as identical), `Latimer_Sawin_1955_TABLE1.R`,
-> `Latimer_Sawin_1955_TABLE2.R` — after fixing column A of the registry rows, or the two build scripts stop before the TSV.
-> *Update 2026-11-07:* column A of both rows has been fixed by the owner, and the extract script now freezes six snapshots
-> (TABLES 1, 2, 4, 5, 6, 7) and should report all six as identical; TABLES 4–7 have their own build scripts and READMEs.
+> **Rebuild order** (R; run each script with `Rscript` from any directory, it locates itself):
+> 1. `Latimer_Sawin_1955_TABLE1_snapshot.R` writes only this item's frozen snapshot and refuses to overwrite a differing copy
+>    (run in a temporary copy of the repo it reports the frozen snapshot as identical; checked 2026-11-12);
+> 2. `Latimer_Sawin_1955_TABLE1.R` reads only its own snapshot and writes the CSV and the public TSV. TABLE 1's CSV is read by the cross-item check
+>    `internal_checks/Latimer_Sawin_1955_TABLE2_internal_check.R` (and `_TABLE5_`, `_TABLE6_`) and by `Latimer_Sawin_1955_TABLE4.R` / `_TABLE7.R`: run it first.
+> then `render_errata()` on the paper folder.
+> *R run, 2026-11-12:* `Latimer_Sawin_1955_TABLE1.R` was run in R in a temporary copy of the repo; its CSV and public TSV are byte-identical to the committed files. This supersedes the earlier statement that the outputs came from a Python mirror.
 
 ## Source
 
@@ -25,7 +26,7 @@ so every value was read from the page images.
 
 ```
 Source (scanned PDF, page 5)
-  -> Latimer_Sawin_1955_extract_snapshot.R       writes the frozen snapshots of TABLES 1, 2, 4, 5, 6 and 7
+  -> Latimer_Sawin_1955_TABLE1_snapshot.R       writes the frozen snapshot of TABLE1
   -> Latimer_Sawin_1955_TABLE1_snapshot.xlsx     FROZEN: 21 rows x 8 cols, sheet "TABLE1"
   -> Latimer_Sawin_1955_TABLE1.R                 clean + parse + table checks
   -> Latimer_Sawin_1955_TABLE1.csv               63 rows x 20 cols  ("use this")
@@ -35,17 +36,17 @@ Source (scanned PDF, page 5)
   -> reference_tables/Latimer_Sawin_1955_errata.csv                 (E001 belongs to this item)
 ```
 
-Build order: `Latimer_Sawin_1955_TABLE1.R` before `Latimer_Sawin_1955_TABLE2.R` (TABLE 2's informative check reads this CSV).
+Build order: `Latimer_Sawin_1955_TABLE1.R` before the cross-item check `internal_checks/Latimer_Sawin_1955_TABLE2_internal_check.R` (and `_TABLE5_`, `_TABLE6_`), and before `Latimer_Sawin_1955_TABLE4.R` / `_TABLE7.R`, which still read this CSV.
 
 ## Who read the values, when, and how it was checked
 
 **Hand transcription** (HOWTO method 5) by an AI assistant on 2026-11-06 from the PDF's own 300-ppi image of page 5
 (extracted with `pdfimages`, no resampling), read at 1×, 2× and 4× zoom and typed as a verbatim printed-layout block into
-`Latimer_Sawin_1955_extract_snapshot.R`, which freezes it to the .xlsx and refuses to overwrite a differing copy. The block was then
+`Latimer_Sawin_1955_TABLE1_snapshot.R`, which freezes it to the .xlsx and refuses to overwrite a differing copy. The block was then
 cross-read cell by cell against the OCR text layer: 63 numeric cells, **one disagreement**, resolved from the image (below).
 The build script reads the frozen file and contains no table values.
 
-**R NOT RUN — outputs written by a Python mirror; Alexandra to run the R.** The mirror parses the printed-layout block out of the R extract script, so the two cannot drift apart, follows
+**R NOT RUN — outputs written by a Python mirror; Alexandra to run the R.** The mirror parses the printed-layout block out of the R extract script, so the two cannot drift apart, follows *Update 2026-11-12:* the R scripts were run in R in a temporary copy of the repo and reproduced the committed CSV and public TSV byte for byte.
 the build script step by step and writes the CSV and the TSV as R's `write.csv` / `write.table` would. No R run has
 confirmed the outputs yet.
 
@@ -111,7 +112,7 @@ changed to make a check pass.
 | Panel A n = normal n + dwarf n (2) | exact |
 | Panel A Average = n-weighted mean of the Panel B (males) or Panel C (females) normal and dwarf Averages (6) | ½ unit of each subgroup Average, n-weighted, plus ½ unit of the Panel A Average (= 0.10) |
 
-**Result of the Python mirror: 32 pass, 3 mismatch, 0 not evaluable, of 35 checks.** (R NOT RUN — outputs written by a Python mirror; Alexandra to run the R.)
+**Result of the Python mirror: 32 pass, 3 mismatch, 0 not evaluable, of 35 checks.** (R NOT RUN — outputs written by a Python mirror; Alexandra to run the R.) *Actual R run, 2026-11-12: the same counts* (item script and internal check together).
 
 | family | checks | pass | mismatch | not evaluable |
 |---|---|---|---|---|

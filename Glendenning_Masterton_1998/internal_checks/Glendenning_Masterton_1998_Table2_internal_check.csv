@@ -1,0 +1,2 @@
+"check_id","basis","observed","printed","difference","tolerance","status","note"
+"animal_names_vs_table1","Table 2 'Animal' rows 1-53 vs Table 1 'Common name' rows 1-53 (same order): number of rows with an identical printed name",53,53,0,0,"pass","exact string match of printed names; Table 2's Average / Standard deviation / % variation rows are not animals and are left out"

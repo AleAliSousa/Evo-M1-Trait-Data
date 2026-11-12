@@ -4,7 +4,7 @@
 # DOI 10.1016/0006-8993(87)90069-2. Item TABLEVII.
 #
 # Reads the frozen snapshot Sahlin_etal_1987_TABLEVII_snapshot.csv (written by
-# Sahlin_etal_1987_extract_snapshot.R) and reshapes it to one analysis row per printed
+# Sahlin_etal_1987_TABLEVII_snapshot.R) and reshapes it to one analysis row per printed
 # value cell: mean / dispersion / n / footnote marks split into their own fields,
 # the printed species, anesthesia and preparation attached, CMRO2 / CMRgl / CBF also
 # given in the merge's standard units. The cell map below names snapshot rows and
@@ -30,7 +30,7 @@ locus <- sub(paste0("^", paper, "_"), "", item_name)
 
 doi <- "10.1016/0006-8993(87)90069-2"
 
-## ---- read the frozen snapshot (written by <paper>_extract_snapshot.R) ----------
+## ---- read the frozen snapshot (written by Sahlin_etal_1987_TABLEVII_snapshot.R) ----------
 read_snapshot <- function(file, header = FALSE) {
   x <- read.csv(file, header = header, colClasses = "character", na.strings = character(0),
                 check.names = FALSE, encoding = "UTF-8")

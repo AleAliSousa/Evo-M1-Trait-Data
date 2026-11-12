@@ -6,7 +6,7 @@
 ##   Proc R Soc B 287:20200035. https://doi.org/10.1098/rspb.2020.0035
 ## Frozen source: Jaeggi_etal_2020_Populations_snapshot.xlsx = the author's
 ##   Artiodactyla_Dataset_corrected_11Mar.xlsx, byte-identical to the copy inside
-##   source/author_workbook_original.zip (frozen by _checks/social_variables/build_population_censuses.py,
+##   source/author_workbook_original.zip (frozen by _archive/2026-10_social_variables_expansion/social_variables/build_population_censuses.py,
 ##   which keeps the snapshot and the readable sheet twin; this script owns the analysis layer).
 ##
 ## SECONDARY: 245 population classifications compiled from primary field studies, not new

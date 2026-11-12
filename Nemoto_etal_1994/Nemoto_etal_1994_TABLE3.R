@@ -4,12 +4,14 @@
 # DOI 10.1097/00008506-199407000-00004. Item TABLE3.
 #
 # Reads the frozen snapshot Nemoto_etal_1994_TABLE3_snapshot.csv (written by
-# Nemoto_etal_1994_extract_snapshot.R) and reshapes it to one analysis row per printed
+# Nemoto_etal_1994_TABLE3_snapshot.R) and reshapes it to one analysis row per printed
 # value cell: mean / dispersion / n / footnote marks split into their own fields,
 # the printed species, anesthesia and preparation attached, CMRO2 / CMRgl / CBF also
 # given in the merge's standard units. The cell map below names snapshot rows and
 # columns and the variable each holds; no table value is typed in this script.
-# Table checks (build HOWTO s.7a) are left in `table_checks`.
+# Table checks that use only this snapshot (build HOWTO s.7a) are left in `table_checks`; the
+# comparison of the Total / Basal cells with TABLE 2 needs the sibling snapshot and lives in
+# internal_checks/Nemoto_etal_1994_TABLE3_internal_check.R (build HOWTO s.7b).
 # ---------------------------------------------------------------------------
 
 .sp <- local({
@@ -30,7 +32,7 @@ locus <- sub(paste0("^", paper, "_"), "", item_name)
 
 doi <- "10.1097/00008506-199407000-00004"
 
-## ---- read the frozen snapshot (written by <paper>_extract_snapshot.R) ----------
+## ---- read the frozen snapshot (written by Nemoto_etal_1994_TABLE3_snapshot.R) ----------
 read_snapshot <- function(file, header = FALSE) {
   x <- read.csv(file, header = header, colClasses = "character", na.strings = character(0),
                 check.names = FALSE, encoding = "UTF-8")
@@ -198,17 +200,9 @@ stopifnot(nrow(final.dataframe) == expected_values)
 
 ## ---- table checks (build HOWTO s.7a) ---------------------------------------
 
-## TABLE 3 is derived from TABLE 2 (RESULTS: totals are the averages of the three
-## conscious measurements; METHODS: basal = isoelectric-EEG values, active = total - basal).
-t2 <- read_snapshot(paste0(paper, "_TABLE2_snapshot.csv"))
-t2n <- function(r, c) num(parse_cell(t2[r, c])$value_printed)
-t2h <- function(r, c) hu(parse_cell(t2[r, c])$value_printed)
+## TABLE 3: active = total - basal (METHODS), printed % of total (own cells only; the comparison
+## with TABLE 2 is in internal_checks/).
 for (spec in list(list(r3 = 3L, c2 = 2L, nm = "CBF"), list(r3 = 5L, c2 = 3L, nm = "CMRO2"), list(r3 = 7L, c2 = 4L, nm = "CMRG"))) {
-  tot <- mean(sapply(4:6, function(i) t2n(i, spec$c2))); bas <- mean(sapply(8:10, function(i) t2n(i, spec$c2)))
-  add_check(paste0("total_", spec$nm), paste0("TABLE 3 ", spec$nm, " Total = mean of TABLE 2 measurements 1-3"),
-            tot, cell_num(spec$r3, 2), t2h(4, spec$c2) + hu(cell_lex(spec$r3, 2)))
-  add_check(paste0("basal_", spec$nm), paste0("TABLE 3 ", spec$nm, " Basal = mean of TABLE 2 measurements 4-6"),
-            bas, cell_num(spec$r3, 3), t2h(8, spec$c2) + hu(cell_lex(spec$r3, 3)))
   add_check(paste0("active_", spec$nm), paste0("TABLE 3 ", spec$nm, " Active = Total - Basal (printed cells)"),
             cell_num(spec$r3, 2) - cell_num(spec$r3, 3), cell_num(spec$r3, 4),
             hu(cell_lex(spec$r3, 2)) + hu(cell_lex(spec$r3, 3)) + hu(cell_lex(spec$r3, 4)))

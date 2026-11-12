@@ -22,7 +22,7 @@ PDF text layer → snapshot → R → usable csv/tsv.
 
 | file | role |
 |---|---|
-| `deSousa__2008_Table5.6_extract_snapshot.R` | reads the PDF text layer, writes the frozen snapshot |
+| `deSousa__2008_Table5.6_snapshot.R` | reads the PDF text layer, writes the frozen snapshot |
 | `deSousa__2008_Table5.6_snapshot.xlsx` (sheet `Table5.6`) | frozen source, printed layout and units |
 | `deSousa__2008_Table5.6.R` | reads the snapshot, cleans, writes CSV + public TSV |
 | `deSousa__2008_Table5.6.csv` | one row per species (6) |

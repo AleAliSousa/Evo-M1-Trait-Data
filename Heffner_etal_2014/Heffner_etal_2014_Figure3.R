@@ -8,7 +8,7 @@
 ## detection thresholds of three alpacas at 14 frequencies; the plotted symbols ARE the
 ## letters A, B and C, one per individual, and the solid line is their mean. The figure
 ## is a raster image, so the 42 letters were pixel-digitised from the embedded bitmap by
-## Heffner_etal_2014_Figure3_extract.py (tick calibration + letter template matching),
+## Heffner_etal_2014_Figure3_snapshot.R (tick calibration + letter template matching),
 ## which wrote the frozen Heffner_etal_2014_Figure3_snapshot.csv.
 ## value_origin = digitised_from_figure on every row; data_role = primary (this paper's
 ## own measurements).

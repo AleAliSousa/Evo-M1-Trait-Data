@@ -18,7 +18,7 @@ Not built: Table 1 (lesion-damage scores, no metabolic value). "Analysis I" (all
 
 ```
 Source (PDF)
-  -> Meguro_etal_1999_extract_snapshot.R   writes the frozen snapshot(s)
+  -> Meguro_etal_1999_Table2_snapshot.R   writes the frozen snapshot(s)
   -> Meguro_etal_1999_Table2_snapshot.csv   FROZEN: 42 rows x 9 cols
   -> Meguro_etal_1999_Table2.R   clean + parse + table checks
   -> Meguro_etal_1999_Table2.csv   152 rows x 26 cols  ("use this")
@@ -28,7 +28,7 @@ Source (PDF)
 
 ## Who read the values, when, and how it was checked
 
-**Hand transcription** (method 5) by an AI assistant (Claude) on 2026-11-02 from 280-dpi renders of PDF page 7, typed as a verbatim printed-layout block into `Meguro_etal_1999_extract_snapshot.R` (freezes; refuses to overwrite). The text layer was used afterwards as an independent second reading: all 152 mean (SD) pairs agree. A first freeze had a spurious empty 10th column (structural slip, no value affected); it was moved to `archive/` before any comparison and the table re-frozen with 9 columns. The build `Meguro_etal_1999_Table2.R` reads the frozen file, contains no table values, and was run with `Rscript`
+**Hand transcription** (method 5) by an AI assistant (Claude) on 2026-11-02 from 280-dpi renders of PDF page 7, typed as a verbatim printed-layout block into `Meguro_etal_1999_Table2_snapshot.R` (freezes; refuses to overwrite). The text layer was used afterwards as an independent second reading: all 152 mean (SD) pairs agree. A first freeze had a spurious empty 10th column (structural slip, no value affected); it was moved to `archive/` before any comparison and the table re-frozen with 9 columns. The build `Meguro_etal_1999_Table2.R` reads the frozen file, contains no table values, and was run with `Rscript`
 (conda env `r`) on 2026-11-02.
 
 ### Snapshot and analysis CSV

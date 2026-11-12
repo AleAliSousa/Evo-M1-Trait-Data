@@ -17,7 +17,7 @@ PDF in this folder: `kennedy_etal_1978.pdf`, COPIED from the EndNote library (Re
 
 ```
 Source (PDF)
-  -> Kennedy_etal_1978_extract_snapshot.R   writes the frozen snapshot(s)
+  -> Kennedy_etal_1978_Text_snapshot.R   writes the frozen snapshot
   -> Kennedy_etal_1978_Text_snapshot.csv   FROZEN: 11 rows x 10 cols
   -> Kennedy_etal_1978_Text.R   clean + parse + table checks
   -> Kennedy_etal_1978_Text.csv   10 rows x 20 cols  ("use this")
@@ -27,7 +27,7 @@ Source (PDF)
 
 ## Who read the values, when, and how it was checked
 
-**Hand transcription** (HOWTO method 5) by an AI assistant (Claude) on 2026-11-02 from 300/500-dpi renders of PDF pages 5-8, typed as a verbatim printed-layout block into `Kennedy_etal_1978_extract_snapshot.R` (freezes, refuses to overwrite a differing copy). The OCR text layer is garbled (figure labels interleaved, "pmoles" for µmoles) and was not used.
+**Hand transcription** (HOWTO method 5) by an AI assistant (Claude) on 2026-11-02 from 300/500-dpi renders of PDF pages 5-8, typed as a verbatim printed-layout block into `Kennedy_etal_1978_Text_snapshot.R` (freezes, refuses to overwrite a differing copy). The OCR text layer is garbled (figure labels interleaved, "pmoles" for µmoles) and was not used.
 
 The build script `Kennedy_etal_1978_Text.R` reads the frozen file and contains no table values. It was run with
 `Rscript` (conda env `r`, R with readxl) from a clean session on 2026-11-02.
@@ -40,11 +40,21 @@ for which values are new, restatements, or cited.
 
 ## Table checks
 
-Result of an actual R run (2026-11-02): **3 pass, 1 mismatch, 0 not evaluable**, of 4 checks.
+Of the four checks, three use only this item's own snapshot and stay in `Kennedy_etal_1978_Text.R`
+(`table_checks`); the fourth needs the sibling Table snapshot and was moved to `internal_checks/`
+(build HOWTO 7b): `internal_checks/Kennedy_etal_1978_Text_internal_check.R` (read-only), result in
+`internal_checks/Kennedy_etal_1978_Text_internal_check.csv`.
+
+Result of an actual R run (temp copy, 2026-11-12; same as the earlier in-script run of 2026-11-02):
+in-script **3 pass, 0 mismatch, 0 not evaluable**; cross-item check in `internal_checks/`
+**0 pass, 1 mismatch** (`equal_weight_gray_white_average`: observed 30.04 vs printed 29, difference
+1.04, tolerance 1; kept as printed). Together 3 pass, 1 mismatch of 4. (The `note` of text row 4 in the
+CSV still says "See table_checks"; that check now lives in `internal_checks/`, and the CSV text was left
+untouched.)
 
 | check | basis | observed | printed | difference | tolerance | status |
 |---|---|---|---|---|---|---|
-| `equal_weight_gray_white_average` | DISCUSSION p. 298: (mean of 31 gray rows + mean of 8 white rows)/2 vs printed 29 | 30.04 | 29 | 1.04 | 1 | mismatch |
+| `equal_weight_gray_white_average` (in `internal_checks/`) | DISCUSSION p. 298: (mean of 31 gray rows + mean of 8 white rows)/2 vs printed 29 | 30.04 | 29 | 1.04 | 1 | mismatch |
 | `o2_to_glucose_equivalent` | DISCUSSION p. 298: 3.7 cc O2/100 g/min / 22.4 mL/mmol x 1000 / 6 vs printed 'approximately 28' | 27.53 | 28 | -0.4702 | 0.872 | pass |
 | `restatement_28` | text row 5 vs text row 2 | 28 | 28 | 0 | 0 | pass |
 | `restatement_31` | text row 6 vs text row 3 | 31 | 31 | 0 | 0 | pass |

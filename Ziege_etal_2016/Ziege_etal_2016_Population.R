@@ -4,10 +4,10 @@
 ## Source: Ziege, M., Babitsch, D., Brix, M., et al. (2016). Importance of latrine communication in
 ##   European rabbits shifts along a rural-to-urban gradient. BMC Ecology 16:29.
 ##   https://doi.org/10.1186/s12898-016-0083-y
-## Frozen source: Ziege_etal_2016_Table1_snapshot.csv = Table 1 exactly as printed (the Coordinates
+## Frozen source: Ziege_etal_2016_Population_snapshot.csv (byte-identical copy of Ziege_etal_2016_Table1_snapshot.csv) = Table 1 exactly as printed (the Coordinates
 ##   header spanning two columns, the Rural / Suburban / Urban section rows, printed site order and
 ##   the caption), generated from source/PMC4908761.xml by
-##   _checks/social_variables/build_population_censuses.py. This script owns the analysis layer.
+##   _archive/2026-10_social_variables_expansion/social_variables/build_population_censuses.py. This script owns the analysis layer.
 ##
 ## PRIMARY at the team level but a re-report: the same group published these censuses in 2015
 ## (10.1111/jzo.12207), which has not been retrieved; both DOIs travel on every row so the team is
@@ -53,7 +53,7 @@ check_species <- function(printed) {
 }
 
 ## ---- read the frozen printed grid ----
-grid <- utils::read.csv(file.path(item_dir, paste0(folder, "_Table1_snapshot.csv")), header = FALSE,
+grid <- utils::read.csv(file.path(item_dir, paste0(item_name, "_snapshot.csv")), header = FALSE,
                         colClasses = "character", check.names = FALSE, na.strings = character(0),
                         encoding = "UTF-8")
 if (ncol(grid) != 7L) stop("expected the 7-column printed grid, got ", ncol(grid), call. = FALSE)

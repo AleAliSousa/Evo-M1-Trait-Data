@@ -1,0 +1,5 @@
+"source_row"	"species_as_published"	"group"	"behaviour_class"	"subjects.N_raw"	"subjects.N"	"events_in_5_days_mean_raw"	"events_in_5_days_mean"	"events_in_5_days_mean_uncertainty"	"source_item"	"data_role"
+1	"Macaca mulatta"	"trained"	"GR"	"7"	7	"23 ± 4"	23	4	"Chang_etal_2015_Figure4"	"primary"
+2	"Macaca mulatta"	"trained"	"GU"	"7"	7	"12 ± 3"	12	3	"Chang_etal_2015_Figure4"	"primary"
+3	"Macaca mulatta"	"control"	"GR"	"4"	4	"7 ± 3"	7	3	"Chang_etal_2015_Figure4"	"primary"
+4	"Macaca mulatta"	"control"	"GU"	"4"	4	"0"	0		"Chang_etal_2015_Figure4"	"primary"

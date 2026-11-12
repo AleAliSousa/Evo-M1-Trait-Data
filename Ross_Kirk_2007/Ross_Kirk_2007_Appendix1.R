@@ -10,7 +10,7 @@
 ## those column definitions.
 ##
 ## Frozen source: Ross_Kirk_2007_Appendix1_snapshot.csv, written by
-## Ross_Kirk_2007_extract_snapshot.R from the PDF text layer (two-column reading order and the
+## Ross_Kirk_2007_Appendix1_snapshot.R from the PDF text layer (two-column reading order and the
 ## render check are documented there). No value is typed into either script.
 ##
 ## Role: PRIMARY for the eye measures. The eyes were dissected and measured by the authors

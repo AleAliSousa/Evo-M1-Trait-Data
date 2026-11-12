@@ -7,7 +7,7 @@ supragranular layer enlargement in rodent, carnivore and primate species. *Brain
 1052, 71–81. DOI **10.1016/j.brainres.2005.06.015** · PMID **16018988**.
 
 The EndNote PDF was copied into this folder and checksum-locked in
-`Hutsler_etal_2005_extract_snapshot.py` (SHA-256
+`Hutsler_etal_2005_Table1_snapshot.R` (SHA-256
 `93c8718ba14f86e30eef3fabd135c263f86e1de195239f9a1909cb640da8d665`).
 
 ## What is built
@@ -21,7 +21,7 @@ The EndNote PDF was copied into this folder and checksum-locked in
 | `outputs/.../Hutsler_etal_2005_build.xlsx` | review workbook | The four clean tables, definitions and QA notes in one human-readable workbook |
 
 Each item has a frozen CSV snapshot, an `.R` build script, an analysis CSV, an item README and a
-definition table. `Hutsler_etal_2005_extract_snapshot.py` verifies the PDF and can regenerate the
+definition table. `Hutsler_etal_2005_Table1_snapshot.R` verifies the PDF and can regenerate the
 exact Table 1 snapshot or extract the embedded figure JPEGs used for digitization.
 
 ## The M1 boundary

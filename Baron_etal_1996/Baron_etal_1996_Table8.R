@@ -1,6 +1,6 @@
 # Baron, Stephan & Frahm 1996, Table8: volumes of net brain (NET), ventricles (VENT) and rests (REST). Only the mm3 columns are printed measurements; the percentage columns are the book's own derivation against the standard brain volume and are carried for reference.
 # Frozen source: Baron_etal_1996_Table8_snapshot.csv, produced by the coordinate-based
-# PDF transcription in Baron_etal_1996_extract_snapshots.R, which is checked on
+# PDF transcription in Baron_etal_1996_Table8_snapshot.R, which is checked on
 # every run against the frozen Table 10 and Table 32 snapshots.
 
 suppressPackageStartupMessages(library(readxl))

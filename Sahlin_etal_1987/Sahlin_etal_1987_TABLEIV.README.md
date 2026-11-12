@@ -18,7 +18,7 @@ Control (Before SAH) and one week after experimental subarachnoid haemorrhage, a
 
 ```
 Source PDF
-  -> Sahlin_etal_1987_extract_snapshot.R        verbatim printed block, refuses to overwrite a differing frozen copy
+  -> Sahlin_etal_1987_TABLEIV_snapshot.R        verbatim printed block, refuses to overwrite a differing frozen copy
   -> Sahlin_etal_1987_TABLEIV_snapshot.csv   FROZEN: 7 printed rows
   -> Sahlin_etal_1987_TABLEIV.R              parse + table checks (no values typed)
   -> Sahlin_etal_1987_TABLEIV.csv            8 rows (one per printed value)  ("use this")

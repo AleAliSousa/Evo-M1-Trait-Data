@@ -17,7 +17,7 @@ PDF in this folder: `kennedy_etal_1978.pdf`, COPIED from the EndNote library (Re
 
 ```
 Source (PDF)
-  -> Kennedy_etal_1978_extract_snapshot.R   writes the frozen snapshot(s)
+  -> Kennedy_etal_1978_Table_snapshot.R   writes the frozen snapshot
   -> Kennedy_etal_1978_Table_snapshot.csv   FROZEN: 52 rows x 2 cols
   -> Kennedy_etal_1978_Table.R   clean + parse + table checks
   -> Kennedy_etal_1978_Table.csv   39 rows x 20 cols  ("use this")
@@ -27,7 +27,7 @@ Source (PDF)
 
 ## Who read the values, when, and how it was checked
 
-**Hand transcription** (HOWTO method 5) by an AI assistant (Claude) on 2026-11-02 from 300/500-dpi renders of PDF pages 5-8, typed as a verbatim printed-layout block into `Kennedy_etal_1978_extract_snapshot.R` (freezes, refuses to overwrite a differing copy). The OCR text layer is garbled (figure labels interleaved, "pmoles" for µmoles) and was not used.
+**Hand transcription** (HOWTO method 5) by an AI assistant (Claude) on 2026-11-02 from 300/500-dpi renders of PDF pages 5-8, typed as a verbatim printed-layout block into `Kennedy_etal_1978_Table_snapshot.R` (freezes, refuses to overwrite a differing copy). The OCR text layer is garbled (figure labels interleaved, "pmoles" for µmoles) and was not used.
 
 The build script `Kennedy_etal_1978_Table.R` reads the frozen file and contains no table values. It was run with
 `Rscript` (conda env `r`, R with readxl) from a clean session on 2026-11-02.

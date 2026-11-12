@@ -18,7 +18,7 @@ Normotension vs angiotensin-induced hypertension. 'Before SAH' normotensive CMRO
 
 ```
 Source PDF
-  -> Sahlin_etal_1987_extract_snapshot.R        verbatim printed block, refuses to overwrite a differing frozen copy
+  -> Sahlin_etal_1987_TABLEVI_snapshot.R        verbatim printed block, refuses to overwrite a differing frozen copy
   -> Sahlin_etal_1987_TABLEVI_snapshot.csv   FROZEN: 8 printed rows
   -> Sahlin_etal_1987_TABLEVI.R              parse + table checks (no values typed)
   -> Sahlin_etal_1987_TABLEVI.csv            12 rows (one per printed value)  ("use this")

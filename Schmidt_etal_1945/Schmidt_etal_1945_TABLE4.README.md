@@ -18,7 +18,7 @@ Convulsants (metrazol, coramine, picrotoxin), benzedrine and pentothal. Printed 
 
 ```
 Source PDF
-  -> Schmidt_etal_1945_extract_snapshot.R        verbatim printed block, refuses to overwrite a differing frozen copy
+  -> Schmidt_etal_1945_TABLE4_snapshot.R        verbatim printed block, refuses to overwrite a differing frozen copy
   -> Schmidt_etal_1945_TABLE4_snapshot.csv   FROZEN: 51 printed rows
   -> Schmidt_etal_1945_TABLE4.R              parse + table checks (no values typed)
   -> Schmidt_etal_1945_TABLE4.csv            440 rows (one per printed value)  ("use this")

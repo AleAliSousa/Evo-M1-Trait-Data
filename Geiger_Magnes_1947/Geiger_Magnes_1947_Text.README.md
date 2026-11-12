@@ -18,7 +18,7 @@ PDF `geiger_magnes_1947.pdf` (copied from EndNote PDF/3219674176/), journal pp. 
 
 ```
 Source PDF
-  -> Geiger_Magnes_1947_extract_snapshot.R        verbatim printed block, refuses to overwrite a differing frozen copy
+  -> Geiger_Magnes_1947_Text_snapshot.R        verbatim printed block, refuses to overwrite a differing frozen copy
   -> Geiger_Magnes_1947_Text_snapshot.csv   FROZEN: 19 printed numbers
   -> Geiger_Magnes_1947_Text.R              parse + table checks (no values typed)
   -> Geiger_Magnes_1947_Text.csv            19 rows (one per printed value)  ("use this")

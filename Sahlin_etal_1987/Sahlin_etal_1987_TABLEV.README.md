@@ -18,7 +18,7 @@ Normocapnia vs hypercapnia, before and after SAH (subsets of the TABLE IV animal
 
 ```
 Source PDF
-  -> Sahlin_etal_1987_extract_snapshot.R        verbatim printed block, refuses to overwrite a differing frozen copy
+  -> Sahlin_etal_1987_TABLEV_snapshot.R        verbatim printed block, refuses to overwrite a differing frozen copy
   -> Sahlin_etal_1987_TABLEV_snapshot.csv   FROZEN: 7 printed rows
   -> Sahlin_etal_1987_TABLEV.R              parse + table checks (no values typed)
   -> Sahlin_etal_1987_TABLEV.csv            8 rows (one per printed value)  ("use this")

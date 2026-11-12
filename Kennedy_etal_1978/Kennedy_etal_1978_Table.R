@@ -5,7 +5,7 @@
 # Utilization in Normal, Conscious Monkeys", p. 298.
 #
 # Reads the frozen snapshot (Kennedy_etal_1978_Table_snapshot.csv, written by
-# Kennedy_etal_1978_extract_snapshot.R) and does all the cleaning:
+# Kennedy_etal_1978_Table_snapshot.R) and does all the cleaning:
 #   - one analysis row per printed structure (39), in printed order;
 #   - the printed section heading (Gray matter / White matter) carried down;
 #   - the footnote mark "^a" on a structure name moved to footnote_marks and

@@ -1,0 +1,30 @@
+species,species_as_published,code,sex,age_as_published,age_yrs,collection,plane_of_section,body_mass_g,brain_mass_mg,correction_factor,brain_volume_mm3,left_V1_volume_mm3,left_LGN_volume_mm3,neocortex_volume_mm3,source
+Homo sapiens,Homo sapiens,hs14,m,37,37,Zilles,coronal,,1437000,2.01,1387070,9390,190,1116800,deSousa__2008
+Homo sapiens,Homo sapiens,hs16,m,54,54,Zilles,coronal,,1757000,2.44,1695950,10400,270,,deSousa__2008
+Homo sapiens,Homo sapiens,hs18,m,56,56,Zilles,coronal,,1270000,2.19,1225870,7490,170,,deSousa__2008
+Homo sapiens,Homo sapiens,hs20,m,75,75,Zilles,coronal,,1349000,2.14,1302120,8500,170,,deSousa__2008
+Homo sapiens,Homo sapiens,hs28,m,69,69,Zilles,coronal,,1360000,2.12,1312740,9180,170,,deSousa__2008
+Homo sapiens,Homo sapiens,hs29,f,85,85,Zilles,coronal,,1046000,1.66,1009650,5280,100,,deSousa__2008
+Homo sapiens,Homo sapiens,hs38,f,59,59,Zilles,coronal,,1142000,2.05,1102320,6000,140,865200,deSousa__2008
+Homo sapiens,Homo sapiens,hs5,f,79,79,Zilles,coronal,,1350000,1.92,1303090,7590,190,,deSousa__2008
+Homo sapiens,Homo sapiens,hs56,f,72,72,Zilles,coronal,,1216000,1.81,1173750,5400,130,,deSousa__2008
+Homo sapiens,Homo sapiens,hs6,f,79,79,Zilles,coronal,,1110000,1.46,1071430,7010,160,,deSousa__2008
+Pan troglodytes,Pan troglodytes,ptd,,NA,,Zilles,coronal,,,2.05,264990,2800,90,198300,deSousa__2008
+Pan troglodytes,Pan troglodytes,ptb,f,24,24,Zilles,coronal,80000,359500,2,347010,4700,170,262800,deSousa__2008
+Pan troglodytes,Pan troglodytes,pt1,f,22,22,Zilles,coronal,50000,440000,1.99,424710,4780,170,297400,deSousa__2008
+Pan troglodytes,Pan troglodytes,pty,m,22,22,Zilles,horizontal,53000,420000,2.24,405410,5180,170,300100,deSousa__2008
+Pan troglodytes,Pan troglodytes,ptc1,f,NA,,Yakovlev-Haleem,sagittal,6800,,2.05,261110,3960,70,,deSousa__2008
+Pan troglodytes,Pan troglodytes,ptc3,m,6 or 7,,Yakovlev-Haleem,sagittal,20410,,2.05,276810,3780,80,,deSousa__2008
+Pan troglodytes,Pan troglodytes,ptw1,,NA,,Welker,coronal,,,2.05,257660,3730,,,deSousa__2008
+Pan paniscus,Pan paniscus,ppy,f,2,2,Zilles,coronal,10400,392000,2.6,378380,7340,150,279000,deSousa__2008
+Pan paniscus,Pan paniscus,ppz,f,A,,Zilles,coronal,,324000,1.63,312740,5690,130,214400,deSousa__2008
+Pan paniscus,Pan paniscus,ppm,f,25,25,Sherwood-Hof,coronal,,337000,2.74,325290,4390,130,,deSousa__2008
+Gorilla gorilla,Gorilla gorilla,ggy,f,20,20,Zilles,coronal,84700,376000,2.04,362930,4040,150,254300,deSousa__2008
+Gorilla gorilla,Gorilla gorilla,gga,m,JUV,,Stephan,coronal,22000,450000,1.87,434360,5090,160,313100,deSousa__2008
+Pongo pygmaeus,Pongo pygmaeus,ouh,m,37,37,Zilles,coronal,114000,440000,2.28,424710,4150,140,298900,deSousa__2008
+Pongo pygmaeus,Pongo pygmaeus,ouy,m,16.5,16.5,Zilles,coronal,58000,369000,2.08,356180,3500,90,268500,deSousa__2008
+Pongo pygmaeus,Pongo pygmaeus,oub,m,34,34,Zilles,coronal,140000,345000,2.15,333010,4690,160,240300,deSousa__2008
+Hylobates lar,Hylobates lar,hly,f,A,,Zilles,coronal,4000,92000,2.09,88800,1790,80,59600,deSousa__2008
+Hylobates lar,Hylobates lar,hld,f,22,22,Zilles,coronal,,120000,2.16,115830,2290,90,77000,deSousa__2008
+Symphalangus syndactylus,Syndactylus symphalangus,ss1,m,33,33,Sherwood-Hof,coronal,,138700,2.91,133880,2730,,,deSousa__2008
+Macaca fascicularis,Macaca fascicularis,mf2,m,3,3,Zilles,coronal,2900,57600,1.9,55600,1360,50,,deSousa__2008

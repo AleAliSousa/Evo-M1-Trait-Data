@@ -4,10 +4,10 @@
 # corticomotoneuronal (CM) connection.
 #
 # FROZEN SOURCE -> Bortoff_Strick_1993_Table1_snapshot.xlsx (sheet "Table1"), built by
-# Bortoff_Strick_1993_extract_snapshot.R from the PDF in this folder. This script reads
+# Bortoff_Strick_1993_Table1_snapshot.R from the PDF in this folder. This script reads
 # ONLY that snapshot. The paper prints no species x trait table; the snapshot is a
 # curatorial capture of the Results prose and Figures 3-11, one row per species, every cell
-# carrying its page/figure. See the extract script and the README for the 0-2 rubric.
+# carrying its page/figure. See the snapshot script and the README for the 0-2 rubric.
 #
 # Output shape: ONE ROW PER SPECIES (2).
 #

@@ -9,7 +9,7 @@
 ## function of age, as filled circles, for 22 brains from newborn to about 90 years.
 ##
 ## The page is a grey SCAN; the markers were pixel-digitised from the embedded page bitmap
-## by Huttenlocher__1979_Figures3-6_extract.py, which wrote the frozen
+## by Huttenlocher__1979_Figure3_snapshot.R, which wrote the frozen
 ## Huttenlocher__1979_Figure3_snapshot.csv. value_origin = digitised_from_figure on every row.
 ##
 ## THE ABSCISSA IS BROKEN AND PIECEWISE LINEAR, and two of its columns ('Adult',

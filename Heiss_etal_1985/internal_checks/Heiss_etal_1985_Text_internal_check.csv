@@ -1,0 +1,11 @@
+"check_id","basis","observed","printed","difference","tolerance","status","note"
+"restate_1_mean","text row 1 (abstract) 12.6 vs |TABLE I whole-brain non-dreamers % change|",12.6,12.6,0,0,"pass",NA
+"restate_1_sd","text row 1 (abstract) S.D. 4.73 vs TABLE I whole-brain non-dreamers % change S.D.",4.73,4.73,0,0,"pass",NA
+"restate_2","text row 2 (abstract) 2.1% vs TABLE I Lentiform nucleus, Dreamer % change",2.1,2.1,0,0,"pass",NA
+"restate_3","text row 3 (abstract) 30.0% vs TABLE I Sup. front. cortex, Dreamer % change",30,30,0,0,"pass",NA
+"restate_4","text row 4 (abstract) 16.4% vs TABLE I whole brain, Dreamer % change",16.4,16.4,0,0,"pass",NA
+"restate_5","text row 5 (p. 364) 30.3 vs TABLE I whole brain, Dreamer Awake",30.3,30.3,0,0,"pass",NA
+"restate_6_mean","text row 6 (p. 364) 36.2 vs TABLE I whole brain, Non-dreamers Awake",36.2,36.2,0,0,"pass",NA
+"restate_6_sd","text row 6 (p. 364) S.D. 2.38 vs TABLE I whole brain, Non-dreamers Awake S.D.",2.38,2.38,0,0,"pass",NA
+"restate_8","text row 8 (p. 364) + 16.4% vs TABLE I whole brain, Dreamer % change",16.4,16.4,0,0,"pass",NA
+"sleep_rate_vs_pct","text row 7 31.6 vs TABLE I whole brain non-dreamers Awake x (1 + % change/100)",31.6388,31.6,0.0388000000000019,0.1118,"pass","consistency, not identity: mean of individual ratios vs ratio of means"

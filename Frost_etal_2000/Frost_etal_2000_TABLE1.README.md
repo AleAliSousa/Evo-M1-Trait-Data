@@ -1,9 +1,10 @@
 # Frost_etal_2000_TABLE1
 
-> **R NOT RUN — outputs written by a Python mirror; Alexandra to run the R.**
-> The R scripts below are the deliverables. The frozen snapshot, the analysis CSV and the public TSV
-> now on disk were written on 2026-11-07 by `Frost_etal_2000_TABLE1_python_mirror.py`, a line-for-line
-> Python mirror of the two R scripts, because R was not available in the assistant's environment.
+> **R run 2026-11-12.** The R scripts are the deliverables and were run in a temporary copy of the repo:
+> `Frost_etal_2000_TABLE1_snapshot.R` rebuilds the frozen snapshot byte-identically and
+> `Frost_etal_2000_TABLE1.R` reproduces the committed CSV byte-for-byte and the committed public TSV
+> byte-for-byte (see *`snapshot_row` in the public TSV* below). The Python mirror that stood in for R on
+> 2026-11-07 is retired (`Frost_etal_2000_TABLE1_python_mirror.py.retired`, see *Retired Python mirror*).
 >
 > **Snapshot re-taken 2026-11-07.** The AI assistant re-took the snapshot on 2026-11-07 at the owner's
 > request (“Frost snapshot would have been better with all the rows with (%) left in for better visual
@@ -48,7 +49,7 @@ representations within S1, for the three most complete maps, with the printed me
 
 ```
 Source (born-digital PDF)
-  -> Frost_etal_2000_TABLE1_extract_snapshot.R   text layer -> frozen snapshot (refuses to overwrite a differing copy unless --retake)
+  -> Frost_etal_2000_TABLE1_snapshot.R   text layer -> frozen snapshot (refuses to overwrite a differing copy unless --retake)
   -> Frost_etal_2000_TABLE1_snapshot.csv          FROZEN: 13 rows x 8 cols, one row per printed line
   -> Frost_etal_2000_TABLE1.R                     clean + parse + table checks
   -> Frost_etal_2000_TABLE1.csv                   28 rows x 22 cols ("use this")
@@ -59,7 +60,7 @@ Source (born-digital PDF)
 ## Who read the values, when, and how it was checked
 
 * **Reader: the extraction script, from the PDF text layer** (snapshot HOWTO method 3, the
-  `Jacob_etal_2021_extract_snapshot.R` pattern). `Frost_etal_2000_TABLE1_extract_snapshot.R` finds the
+  `Jacob_etal_2021_extract_snapshot.R` pattern). `Frost_etal_2000_TABLE1_snapshot.R` finds the
   caption on PDF page 8, reads the table line by line from the text layer's physical layout, checks the
   caption, the column header and the footnote against anchored printed literals, places each cell under
   the printed column header nearest to it, checks every line's printed form (case numbers, areas,
@@ -78,23 +79,20 @@ Source (born-digital PDF)
   13 lines in the same order and agrees on every value but one: it reads 9321 Rostrum as "(58%)", where
   the page (zoomed render) and the text layer both show **(53%)** (2.19 / 4.12 = 53.2%), so the snapshot
   keeps 53. **Human check still pending.**
-* **R NOT RUN.** The snapshot, CSV and TSV on disk were written by
-  `Frost_etal_2000_TABLE1_python_mirror.py` (poppler `pdftotext -layout` in place of
-  `pdftools::pdf_text`, which uses the same physical-layout engine; R's `write.table`/`write.csv`
-  quoting, `NA` handling and 15-significant-digit number format reproduced). To confirm, from the repo
-  root, run the extract script first (without `--retake`) and then the build:
+* **R run (2026-11-12).** Snapshot script, without `--retake`, in a temporary copy with no snapshot present: writes
+  `Frost_etal_2000_TABLE1_snapshot.csv` byte-identical to the frozen file (with the frozen file present it reports
+  "frozen snapshot already on disk and identical"). Build script: `table checks pass=52 mismatch=0 not_evaluable=3 (of 55)`,
+  CSV and public TSV byte-identical to the committed files. Packages: `pdftools` (snapshot), `readxl` (registry lookup).
 
-  ```
-  Rscript Frost_etal_2000/Frost_etal_2000_TABLE1_extract_snapshot.R   # expect: "frozen snapshot already on disk and identical; nothing written."
-  Rscript Frost_etal_2000/Frost_etal_2000_TABLE1.R                    # expect: table checks pass=52 mismatch=0 not_evaluable=3 (of 55)
-  ```
+### Retired Python mirror
 
-  then compare the rewritten `Frost_etal_2000_TABLE1.csv` and public TSV with the mirror's copies. If
-  they differ, the R output is authoritative. If the extract script instead stops and writes
-  `Frost_etal_2000_TABLE1_snapshot_NEW.csv`, R's text layer differs from the mirror's: compare the two
-  files against the page before doing anything else (never `--retake` without that comparison).
-  Packages: `pdftools` (extract), `readxl` (registry lookup). Once the R reproduces the files, the mirror
-  script can be deleted.
+`Frost_etal_2000_TABLE1_python_mirror.py` (now `.py.retired`, renamed 2026-11-12) was a line-for-line Python
+stand-in for the two R scripts, used on 2026-11-06/07 when R was not available. It wrote the snapshot, the CSV and
+the TSV from one script, which the one-script-per-output rule does not allow. Run on 2026-11-12 in a temporary copy
+(poppler `pdftotext -layout` instead of `pdftools`), it gave a snapshot and CSV byte-identical to the committed files
+and a `table_checks` table of 55 rows with no difference from the R one (values, status and notes). Its only addition
+was an optional `--checks-out` dump of `table_checks` to a file; the R script keeps `table_checks` in memory (build HOWTO
+§7a: QA metadata, not a file in the paper folder), so nothing was ported. It was a pure cross-check of the R pipeline.
 
 ### Snapshot re-take (2026-11-07)
 
@@ -114,8 +112,8 @@ PDF, move the superseded file to `archive/`, re-run):
 4. A further run without `--retake` reported "frozen snapshot already on disk and identical".
 
 No printed value changed: the new snapshot holds the same 65 numbers, case numbers, caption, header and
-footnote text as the old one, laid out one printed line per row. Steps 1–4 were run by the Python
-mirror (R NOT RUN).
+footnote text as the old one, laid out one printed line per row. Steps 1–4 were run on 2026-11-07 by the
+Python mirror (since retired); on 2026-11-12 the R snapshot script reproduced the same file byte-for-byte.
 
 ### Structure of the snapshot
 
@@ -154,7 +152,14 @@ of the table.
   `species_as_published`, `species`, `data_role` = primary, `note`.
 * **Change on 2026-11-07:** the CSV keeps its 28 rows, 22 columns and every value, note included,
   except `snapshot_row`, which now points into the re-taken snapshot: 9213 stays 3; 9321 4 → 5; 9324
-  5 → 7; Average 6 → 9 (21 cells). The public TSV changes in the same way.
+  5 → 7; Average 6 → 9 (21 cells). The committed public TSV was not regenerated after this change: see
+  *`snapshot_row` in the public TSV*.
+* **`snapshot_row` in the public TSV.** `snapshot_row` = the row of the value's area line in the snapshot. In the CSV it is
+  3, 5, 7, 9 (the line-by-line snapshot). The committed public TSV still carries the row numbers of the superseded
+  one-line-per-case snapshot (`archive/…_superseded_2026-11-07.csv`): 3, 4, 5, 6 for 9213, 9321, 9324 and Average; the
+  other 21 columns equal the CSV. To keep the TSV as committed, the build script remaps `snapshot_row` for the TSV only
+  (`match(snapshot_row, area_rows) + 2`). **needs_owner:** the TSV value is stale and the CSV and TSV now disagree in this
+  one column; decide whether to write 3, 5, 7, 9 in both (delete the remap, regenerate the TSV).
 * **Observation level:** individual animals plus the printed mean of those same animals. Use the case
   rows or the printed Average, not both. One hemisphere was mapped per animal (METHODS p. 31).
 * **Units:** areas printed in mm² and kept in mm² (no conversion); percentages as printed.
@@ -169,7 +174,8 @@ percentage; for a mean, half a unit of the inputs plus half a unit of the printe
 √(n/(n−1)) × half a unit of the inputs plus half a unit of the printed SD. Each check's `note` also
 says whether the printed value is reproduced exactly at its printed precision.
 
-**Result — Python mirror, R execution pending: 52 pass, 0 mismatch, 3 not evaluable, of 55.**
+**Result — R run 2026-11-12: 52 pass, 0 mismatch, 3 not evaluable, of 55.** All checks use this item's own snapshot; there
+is no cross-item check (`internal_checks/` not needed). The Python mirror (retired) gave the same 55 rows.
 51 of the 52 passes reproduce the printed value exactly at its printed precision.
 
 | relation | checks | result | largest difference |
@@ -276,12 +282,12 @@ TABLE 1 is the paper's only table. Values printed elsewhere that could become it
 | file | role |
 |---|---|
 | `Frost-2000-Somatosensory and motor representat.pdf` | the publication (born-digital) |
-| `Frost_etal_2000_TABLE1_extract_snapshot.R` | text layer -> frozen snapshot (guarded; `--retake` only for a deliberate re-take) |
+| `Frost_etal_2000_TABLE1_snapshot.R` | text layer -> frozen snapshot (guarded; `--retake` only for a deliberate re-take) |
 | `Frost_etal_2000_TABLE1_snapshot.csv` | frozen snapshot, one row per printed line, 13 rows x 8 cols (never edited by hand) |
 | `archive/Frost_etal_2000_TABLE1_snapshot_superseded_2026-11-07.csv` | the superseded 7-row snapshot of 2026-11-06, kept for provenance; not read by any script |
 | `Frost_etal_2000_TABLE1.R` | snapshot -> analysis CSV + public TSV + `table_checks` |
 | `Frost_etal_2000_TABLE1.csv` | analysis CSV ("use this"), 28 rows x 22 cols |
-| `Frost_etal_2000_TABLE1_python_mirror.py` | R NOT RUN stand-in that wrote the outputs; delete once the R reproduces them |
+| `Frost_etal_2000_TABLE1_python_mirror.py.retired` | retired Python stand-in (renamed, not deleted); a pure cross-check of the R pipeline, see *Retired Python mirror* |
 | `reference_tables/Frost_etal_2000_TABLE1_definitions.csv` | data dictionary (10-column schema) |
 | `reference_tables/Frost_etal_2000_species_key_proposed.csv` | proposed `_keys/General/species_key.csv` row |
 | `__Public/comparative-data/10.1002%2F(SICI)1096-9861(20000522)421%3A1%3C29%3A%3AAID-CNE3%3E3.0.CO;2-9_TABLE1.tsv` | public TSV (repo level) |

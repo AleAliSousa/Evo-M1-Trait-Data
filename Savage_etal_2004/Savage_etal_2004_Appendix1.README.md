@@ -18,7 +18,7 @@ It also adds a species-level mammalian BMR table.
 ## Files
 - `Savage-2004-The predominance of quarter-power.pdf`: the journal PDF, born-digital with a text layer, taken from
   the owner's EndNote library (SHA-256 `cfc3fea83e82fb48080be629b6acae654846cc00f811fb279a5eb971d2cd955c`).
-- `Savage_etal_2004_Appendix1_extract_snapshot.R`: builds the frozen snapshot from the PDF **word boxes**
+- `Savage_etal_2004_Appendix1_snapshot.R`: builds the frozen snapshot from the PDF **word boxes**
   (`pdftools::pdf_data`). No values are typed or stored in the script.
   - The rotated margin footer ("© 2004 British Ecological Society, Functional Ecology, 18, 257–282") interleaves with
     the last rows of every page in plain text extraction. It is removed by glyph height: the footer is 7 pt and the
@@ -38,7 +38,7 @@ It also adds a species-level mammalian BMR table.
 - `reference_tables/Savage_etal_2004_errata.csv`: errata (rendered below).
 
 ## Reader / provenance
-The values were read from the PDF text layer by `Savage_etal_2004_Appendix1_extract_snapshot.R`, run by an AI
+The values were read from the PDF text layer by `Savage_etal_2004_Appendix1_snapshot.R`, run by an AI
 assistant on 2026-10-23. They were checked by the arithmetic table check below and by the stated species count
 (Methods p. 259: "values for 626 species"; the extraction finds exactly 626 species-average rows). **An RA
 side-by-side check of the snapshot against the PDF pages is still pending**: record it in the last

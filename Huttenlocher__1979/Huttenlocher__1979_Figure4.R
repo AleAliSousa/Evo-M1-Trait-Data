@@ -11,7 +11,7 @@
 ## registry Data role is therefore 'both', and data_role is set PER ROW from the symbol.
 ##
 ## The page is a grey SCAN; the markers were pixel-digitised from the embedded page bitmap
-## by Huttenlocher__1979_Figures3-6_extract.py, which wrote the frozen
+## by Huttenlocher__1979_Figure4_snapshot.R, which wrote the frozen
 ## Huttenlocher__1979_Figure4_snapshot.csv. value_origin = digitised_from_figure on every row.
 ##
 ## THE ABSCISSA IS BROKEN AND PIECEWISE LINEAR, and two of its columns ('Adult',

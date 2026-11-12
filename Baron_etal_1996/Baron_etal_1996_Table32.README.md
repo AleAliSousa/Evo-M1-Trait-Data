@@ -11,7 +11,7 @@ hippocampus, schizocortex, and neocortex.
 
 1. The printed source is PDF pages 138–145 of
    `baron_etal_1996 book Comparative Neurobiology.pdf`.
-2. `Baron_etal_1996_extract_snapshots.py` writes the frozen
+2. `Baron_etal_1996_Table32_snapshot.R` (R port, 2026-11-12, of the retired `Baron_etal_1996_Table32_snapshot.py.retired`; run in a temp dir it regenerates the frozen snapshot byte-for-byte) writes the frozen
    `Baron_etal_1996_Table32_snapshot.csv`; literal OCR repairs are recorded in
    the script.
 3. `Baron_etal_1996_Table32.R` reads that snapshot and the Table 10 snapshot.

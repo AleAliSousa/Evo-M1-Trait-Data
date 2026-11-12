@@ -5,7 +5,7 @@
 | File | |
 |---|---|
 | `Bortoff_Strick_1993.pdf` | the publication (open-access, Europe PMC) |
-| `Bortoff_Strick_1993_extract_snapshot.R` | builds the frozen snapshot from the curated rows |
+| `Bortoff_Strick_1993_Table1_snapshot.R` | builds the frozen snapshot from the curated rows |
 | `Bortoff_Strick_1993_Table1_snapshot.xlsx` | frozen source (sheet `Table1`) |
 | `Bortoff_Strick_1993_Table1.R` | reformat: snapshot → CSV (+ public TSV + trait table) |
 | `Bortoff_Strick_1993_Table1.csv` | analysis table — **2 rows = 2 species**, 12 columns |
@@ -30,7 +30,7 @@ The paper prints **no species × trait table**. The comparative result lives in 
 and in Figures 3–11: for each species the authors describe where the WGA-HRP corticospinal terminal
 field sits in the spinal grey. So there is no printed table to reproduce, and the frozen copy
 (invariant 1) is instead a hand-verified curatorial capture — one row per species, every cell
-carrying the page or figure it came from. `Bortoff_Strick_1993_extract_snapshot.R` rebuilds it;
+carrying the page or figure it came from. `Bortoff_Strick_1993_Table1_snapshot.R` rebuilds it;
 nothing is cleaned, resolved or converted in the snapshot itself.
 
 *(This replaces the earlier `create_snapshot.mjs`, which required the `@oai/artifact-tool` runtime
@@ -83,14 +83,14 @@ is merged in `__merging_behaviour` under team **Bortoff_Strick**, measure class 
 ## Adding a species
 
 Requires a species-specific tract-tracing or electrophysiology result with the exact page/figure
-recorded in `Source_location`. Add the row in `Bortoff_Strick_1993_extract_snapshot.R` **only if it
+recorded in `Source_location`. Add the row in `Bortoff_Strick_1993_Table1_snapshot.R` **only if it
 is still Bortoff & Strick data** — a different paper gets its **own folder** and its own registry
 row, and the two are pooled in `__merging_behaviour`, not inside this table.
 
 ## Rebuild
 
 ```
-Rscript Bortoff_Strick_1993/Bortoff_Strick_1993_extract_snapshot.R   # only if the rows change
+Rscript Bortoff_Strick_1993/Bortoff_Strick_1993_Table1_snapshot.R   # only if the rows change
 Rscript Bortoff_Strick_1993/Bortoff_Strick_1993_Table1.R
 Rscript ____EvoM1_TraitTable/EvoM1_read_corticospinal_terminations.R
 Rscript __merging_behaviour/behaviour_compiled.R

@@ -15,7 +15,7 @@ these structures in its own Table 1 key (PDF pp. 264-265). Columns carried:
 ## Reproducible pipeline
 
 1. `baron_etal_1996 book Comparative Neurobiology.pdf`, pages 136, is the printed source.
-2. `Baron_etal_1996_extract_snapshots.R` reads the PDF **word coordinates**
+2. `Baron_etal_1996_Table30_snapshot.R` reads the PDF **word coordinates**
    (`pdftools::pdf_data`) and writes `Baron_etal_1996_Table30_snapshot.csv`. The book
    sets several tables in a staircase in which a row's values sit a half-line
    above its species name, so line-based parsing is not reliable; species names

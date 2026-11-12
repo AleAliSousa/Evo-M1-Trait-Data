@@ -6,7 +6,7 @@
 ## Frozen source: Norbury_etal_1998_DenCensus_snapshot.csv -- a CONSTRUCTED snapshot holding only
 ##   PRINTED quantities (41 excavated dens, "Two" shared, "adult males", "May and August") plus the
 ##   two verbatim p. 154 sentences, checked against source/Norbury_etal_1998.pdf by
-##   _checks/social_variables/build_population_censuses.py.
+##   _archive/2026-10_social_variables_expansion/social_variables/build_population_censuses.py.
 ##
 ## The 39 single-occupant dens are NOT printed in the paper; they are derived here, by subtraction,
 ## where the derivation is visible per row. No identifiers are invented for individual dens.

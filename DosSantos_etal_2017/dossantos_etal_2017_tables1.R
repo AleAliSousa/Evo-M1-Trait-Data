@@ -33,25 +33,9 @@ setwd(folder)
 
 #Load readr
 library(readr)
-# Read the text version 
-sheetfromtxt <- read_delim("452856_sm10.txt", 
-                            delim = "\t", escape_double = FALSE, 
-                            trim_ws = TRUE, skip = 1)
+# Read the frozen snapshot (written by DosSantos_etal_2017_TableS1_snapshot.R)
+sheetfromtxt <- read_csv(paste0(item_name, "_snapshot.csv"), show_col_types = FALSE)
 
-## 2. FIX FORMATTING ERROR TO ALIGN CELLS AND SAVE SNAPSHOT
-# Delete 2 empty columns by column names #left one name since there will be shifting and hard to work with nameless column
-sheetfromtxt <- sheetfromtxt[, !colnames(sheetfromtxt) %in% c("?", "...15")]
-# Align column headers / Remove unwanted extra column header. Takes names from columns 1-7, adds next to them names from columns 9-last. Assigns new names to original df
-names(sheetfromtxt) = c(names(sheetfromtxt)[1:7],  names(sheetfromtxt)[9:length(names(sheetfromtxt))])
-# Delete empty columns that contain only NA values and have no header names.
-sheetfromtxt <- sheetfromtxt[, colSums(is.na(sheetfromtxt)) != nrow(sheetfromtxt), drop = FALSE]
-# rename column names
-colnames(sheetfromtxt)[colnames(sheetfromtxt) == "...1"] ="_"
-colnames(sheetfromtxt)[colnames(sheetfromtxt) == "...13"] ="Δ"
-# rename string in column names
-colnames(sheetfromtxt) = gsub("\\b..\\b", ". ", colnames(sheetfromtxt))
-# Save it as snapshot
-write.csv(sheetfromtxt, file = "DosSantos_etal_2017_TableS1_snapshot.csv", row.names = FALSE)
 
 
 ## 3. CORRECT ERRATUM

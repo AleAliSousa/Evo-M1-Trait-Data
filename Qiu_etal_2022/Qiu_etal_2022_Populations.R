@@ -5,7 +5,7 @@
 ##   organization. Proc R Soc B 289:20221589. https://doi.org/10.1098/rspb.2022.1589
 ## Frozen source: Qiu_etal_2022_Populations_snapshot.xlsx = the author's S5 workbook, byte-identical
 ##   to the copy inside source/Model_S5_author_archive.zip (frozen by
-##   _checks/social_variables/build_population_censuses.py; this script owns the analysis layer).
+##   _archive/2026-10_social_variables_expansion/social_variables/build_population_censuses.py; this script owns the analysis layer).
 ##
 ## The archive is a recoverable SUBSET (141 records, 65 printed species) of the inaccessible full
 ## Dryad table (149 populations reported); population locations are absent from it. SECONDARY

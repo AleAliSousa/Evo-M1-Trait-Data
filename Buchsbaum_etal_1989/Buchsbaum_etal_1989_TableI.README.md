@@ -18,7 +18,7 @@ The Summary also states the study involved 36 volunteers; the table arms are n =
 
 ```
 Source (PDF)
-  -> Buchsbaum_etal_1989_extract_snapshot.R   writes the frozen snapshot(s)
+  -> Buchsbaum_etal_1989_TableI_snapshot.R   writes the frozen snapshot
   -> Buchsbaum_etal_1989_TableI_snapshot.csv   FROZEN: 27 rows x 7 cols
   -> Buchsbaum_etal_1989_TableI.R   clean + parse + table checks
   -> Buchsbaum_etal_1989_TableI.csv   48 rows x 18 cols  ("use this")
@@ -28,7 +28,7 @@ Source (PDF)
 
 ## Who read the values, when, and how it was checked
 
-**Hand transcription** (method 5) by an AI assistant (Claude) on 2026-11-02 from 200/400-dpi renders of PDF pages 1, 5 and 6, typed into `Buchsbaum_etal_1989_extract_snapshot.R` (freezes; refuses to overwrite). The OCR layer (typewriter face; "i" for "l") agrees on all 96 table numbers. The build `Buchsbaum_etal_1989_TableI.R` reads the frozen file, contains no table values, and was run with `Rscript`
+**Hand transcription** (method 5) by an AI assistant (Claude) on 2026-11-02 from 200/400-dpi renders of PDF pages 1, 5 and 6, typed into `Buchsbaum_etal_1989_TableI_snapshot.R` (freezes; refuses to overwrite). The OCR layer (typewriter face; "i" for "l") agrees on all 96 table numbers. The build `Buchsbaum_etal_1989_TableI.R` reads the frozen file, contains no table values, and was run with `Rscript`
 (conda env `r`) on 2026-11-02.
 
 ### Snapshot and analysis CSV

@@ -14,7 +14,7 @@
 # Input
 #   Seymour_etal_2017_TableS1_snapshot.xlsx        sheet: TableS1
 #     Frozen, journal-faithful snapshot built from the Word supplement
-#     (rsos170846supp1.docx) by Seymour_etal_2017_TableS1_snapshot_extract.py.
+#     (rsos170846supp1.docx) by Seymour_etal_2017_TableS1_snapshot.R.
 #     Row 1 caption, row 2 the 11 column headers, rows 3-32 the 30 specimen rows
 #     (footnote superscripts kept verbatim, e.g. body mass "70.0a", age "0.05A"),
 #     then the footnote-letter notes and the numbered reference list.

@@ -15,7 +15,7 @@ measurement source).
 ## Pipeline
 | file | role |
 |---|---|
-| `McGuire_Ratcliffe_2011_ElectronicSupplementaryMaterial1,Table1_extract_snapshot.R` | builds the frozen snapshot from the ESM PDF text layer (no value typed in the script) |
+| `McGuire_Ratcliffe_2011_ElectronicSupplementaryMaterial1,Table1_snapshot.R` | builds the frozen snapshot from the ESM PDF text layer (no value typed in the script) |
 | `McGuire_Ratcliffe_2011_ElectronicSupplementaryMaterial1,Table1_snapshot.csv` | frozen source: 66 rows = the 64 printed species rows in printed order plus the 2 printed group-summary rows; printed column order, printed blank cells, printed Family padding, printed reference numbers |
 | `McGuire_Ratcliffe_2011_ElectronicSupplementaryMaterial1,Table1_extract_references.R` | builds the references lookup from the ESM reference list and the paper's reference 17 |
 | `McGuire_Ratcliffe_2011_ElectronicSupplementaryMaterial1,Table1.R` | reads the snapshot; harmonises species; writes CSV + public TSV; `table_checks` |

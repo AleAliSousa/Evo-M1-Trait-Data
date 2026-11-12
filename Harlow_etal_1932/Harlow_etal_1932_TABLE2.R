@@ -2,8 +2,9 @@
 ## Input : Harlow_etal_1932_TABLE2_snapshot.xlsx  (frozen; printed layout)
 ## Output: Harlow_etal_1932_TABLE2.csv + public TSV
 ## Reshaped LONG: one analysis row per animal x printed delay block that carries
-## any value.  Species come from this paper's own TABLE 1 roster, joined on the
-## printed FAMILIAR NAME, then through _keys/General/species_key.csv.
+## any value.  Species come from this item's reference_tables/..._animal_lookup.csv (the
+## paper's TABLE 1 roster rows), joined on the printed FAMILIAR NAME, then through
+## _keys/General/species_key.csv.
 options(scipen = 999, stringsAsFactors = FALSE)
 ## the printed dagger footnote mark must survive into the CSV/TSV; a C locale
 ## would write it as the literal "<U+2020>"
@@ -54,11 +55,11 @@ delay_s[delay_lab == "Over 180 seconds"] <- NA_real_
 d <- s[7:30, ]                                   # the 24 printed animal rows
 stopifnot(nrow(d) == 24L, d[1, 1] == "Orang-outan", d[24, 1] == "Lemur")
 
-## roster: FAMILIAR NAME -> printed binomial, from this paper's TABLE 1
-t1 <- read.csv("Harlow_etal_1932_TABLE1_snapshot.csv", header = FALSE,
+## roster: FAMILIAR NAME -> printed binomial, from this item's own reference_tables/<Item>_animal_lookup.csv
+## (the TABLE 1 roster rows for these animals, copied verbatim; the item reads no sibling snapshot)
+lk <- read.csv(file.path("reference_tables", paste0(item_name, "_animal_lookup.csv")),
                colClasses = "character", na.strings = NULL)
-t1 <- t1[t1[[6]] %in% c("Male", "Female"), ]
-roster <- setNames(paste(sub("\\*$", "", t1[[2]]), t1[[3]]), t1[[4]])
+roster <- setNames(paste(sub("\\*$", "", lk$genus), lk$species), lk$familiar_name)
 stopifnot(length(roster) == 24L, all(d[[2]] %in% names(roster)))
 
 ## Footnote marks printed in an "Over 180 seconds" cell resolve the delay.

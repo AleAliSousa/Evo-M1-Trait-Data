@@ -5,7 +5,7 @@
 # column); the dentate gyrus is not a row of Table 2.
 #
 # Reads the constructed, frozen snapshot Bouilleret_etal_2000_Text_snapshot.csv
-# (written by Bouilleret_etal_2000_extract_snapshot.R from the PDF text layer):
+# (written by Bouilleret_etal_2000_Text_snapshot.R from the PDF text layer):
 #   58   control mice (group value; n = 4 per Table 2's control group)
 #   27   lowest single value recorded in kainate-treated mice, any time point
 #   179  highest single value recorded in kainate-treated mice, any time point

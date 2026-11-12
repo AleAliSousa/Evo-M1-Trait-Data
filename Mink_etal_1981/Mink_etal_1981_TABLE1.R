@@ -4,7 +4,7 @@
 # TABLE 1 "Ratios of CNS metabolism to resting body metabolism" (pp. R208-R209).
 #
 # Reads the frozen snapshot (Mink_etal_1981_TABLE1_snapshot.xlsx, written by
-# Mink_etal_1981_TABLE1_extract_snapshot.R) and does all the cleaning:
+# Mink_etal_1981_TABLE1_snapshot.R) and does all the cleaning:
 #   - strips the printed reference numbers "(nn)" and footnote marks "^x" into
 #     their own columns, keeping the printed animal name verbatim;
 #   - splits the two-line Body2 ranges and the two-line Body metabolic rate;

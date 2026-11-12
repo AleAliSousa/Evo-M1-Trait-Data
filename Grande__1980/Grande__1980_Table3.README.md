@@ -15,7 +15,7 @@ PDF in this folder: `Grande_1980.pdf` (British Library On Demand copy; PDF page 
 
 ```
 Source (PDF)
-  -> Grande__1980_extract_snapshot.R   writes the frozen snapshot(s) (verbatim printed-layout blocks; refuses to overwrite)
+  -> Grande__1980_Table3_snapshot.R   writes the frozen snapshot(s) (verbatim printed-layout blocks; refuses to overwrite)
   -> Grande__1980_Table3_snapshot.csv   FROZEN: 19 rows x 6 cols (caption, 3 header tiers, 14 species rows, footnote)
   -> Grande__1980_Table3.R   clean + parse + convert units + table checks
   -> Grande__1980_Table3.csv   14 rows x 18 cols  ("use this")

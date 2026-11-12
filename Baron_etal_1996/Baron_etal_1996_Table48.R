@@ -1,6 +1,6 @@
 # Baron, Stephan & Frahm 1996, Table48: Brodmann's (1913) cortical surface-area measurements, reprinted in the book: one Chiroptera row plus 14 non-Chiroptera species. Secondary, and probably redundant against the repo's own Brodmann__1913_Table1 build - diff before use.
 # Frozen source: Baron_etal_1996_Table48_snapshot.csv, produced by the coordinate-based
-# PDF transcription in Baron_etal_1996_extract_snapshots.R, which is checked on
+# PDF transcription in Baron_etal_1996_Table48_snapshot.R, which is checked on
 # every run against the frozen Table 10 and Table 32 snapshots.
 
 suppressPackageStartupMessages(library(readxl))

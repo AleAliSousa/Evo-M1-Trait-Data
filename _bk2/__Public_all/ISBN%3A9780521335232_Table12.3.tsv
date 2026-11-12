@@ -1,0 +1,49 @@
+Character	Hypothesis	Warning_calls	State_printed	Numeric_result
+Loud call	1	excluded	P	
+Loud call	1	included	P	
+Loud call	2	excluded	P	
+Loud call	2	included	P	
+‘Gobble’ call	1	excluded	P	
+‘Gobble’ call	1	included	P	
+‘Gobble’ call	2	excluded	P	
+‘Gobble’ call	2	included	P	
+High-pitched type 6 call	1	excluded	P	
+High-pitched type 6 call	1	included	P	
+High-pitched type 6 call	2	excluded	?(P)	
+High-pitched type 6 call	2	included	?(P)	
+Quavering of type 2 and 6 calls	1	excluded	A	
+Quavering of type 2 and 6 calls	1	included	A	
+Quavering of type 2 and 6 calls	2	excluded	?(P)	
+Quavering of type 2 and 6 calls	2	included	?(P)	
+Highly-pitched noisy components (type 2)	1	excluded	P	
+Highly-pitched noisy components (type 2)	1	included	P	
+Highly-pitched noisy components (type 2)	2	excluded	?(A)	
+Highly-pitched noisy components (type 2)	2	included	?(A)	
+Type 2 & 6 association	1	excluded	A	
+Type 2 & 6 association	1	included	A	
+Type 2 & 6 association	2	excluded	?(A)	
+Type 2 & 6 association	2	included	?(A)	
+Type 2 & 6 fusion	1	excluded	P	
+Type 2 & 6 fusion	1	included	P	
+Type 2 & 6 fusion	2	excluded	?(A)	
+Type 2 & 6 fusion	2	included	?(A)	
+High-pitched warning calls	1	excluded	/	
+High-pitched warning calls	1	included	P	
+High-pitched warning calls	2	excluded	/	
+High-pitched warning calls	2	included	?(P)	
+Unitary warning calls	1	excluded	/	
+Unitary warning calls	1	included	P	
+Unitary warning calls	2	excluded	/	
+Unitary warning calls	2	included	?(P)	
+Other types of warning calls	1	excluded	/	
+Other types of warning calls	1	included	A	
+Other types of warning calls	2	excluded	/	
+Other types of warning calls	2	included	?(A)	
+Number of characters	1	excluded	16	16
+Number of characters	1	included	22	22
+Number of characters	2	excluded	16	16
+Number of characters	2	included	22	22
+Number of steps	1	excluded	35	35
+Number of steps	1	included	44	44
+Number of steps	2	excluded	29	29
+Number of steps	2	included	39	39

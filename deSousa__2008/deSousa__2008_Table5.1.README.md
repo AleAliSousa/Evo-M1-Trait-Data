@@ -24,7 +24,7 @@ PDF text layer → snapshot → R → usable csv/tsv.
 
 | file | role |
 |---|---|
-| `deSousa__2008_Table5.1_extract_snapshot.R` | reads the PDF text layer, writes the frozen snapshot |
+| `deSousa__2008_Table5.1_snapshot.R` | reads the PDF text layer, writes the frozen snapshot |
 | `deSousa__2008_Table5.1_snapshot.xlsx` (sheet `Table5.1`) | frozen source, printed layout and units |
 | `deSousa__2008_Table5.1.R` | reads the snapshot, cleans, converts units, writes CSV + public TSV |
 | `deSousa__2008_Table5.1.csv` | one row per specimen (29) |
@@ -34,7 +34,7 @@ Structures: Total brain net volume, Area striata grey matter (left V1),
 Corpus geniculatum laterale (left LGN), Neocortex.
 
 ## Who read the values, when, and how it was checked
-The values were **not transcribed by hand**. `deSousa__2008_Table5.1_extract_snapshot.R`
+The values were **not transcribed by hand**. `deSousa__2008_Table5.1_snapshot.R`
 reads them from the dissertation PDF's own text layer at run time
 (`pdftools::pdf_data()`, page 209) and places each token in its printed column by
 x-position; only the caption, the two header tiers and the footnote are printed

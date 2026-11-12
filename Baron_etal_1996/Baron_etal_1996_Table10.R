@@ -1,6 +1,6 @@
 # Baron, Stephan & Frahm 1996, Table 10: volumes of five fundamental brain parts.
 # Frozen source: Baron_etal_1996_Table10_snapshot.csv, produced by the checked
-# PDF-text extraction in Baron_etal_1996_extract_snapshots.py.
+# PDF-text extraction in Baron_etal_1996_Table10_snapshot.R.
 
 suppressPackageStartupMessages(library(readxl))
 

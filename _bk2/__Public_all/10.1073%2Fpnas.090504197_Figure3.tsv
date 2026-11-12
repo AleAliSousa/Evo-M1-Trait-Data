@@ -1,0 +1,7 @@
+"result_as_printed"	"value"	"unit_or_interpretation"	"source_as_printed"	"extraction_note"	"value_origin"
+"theoretical slope"	3	"G versus inferred L, log-log"	"Figure 3 caption"	"Dashed line"	"printed_in_caption_or_prose"
+"least-squares slope"	3.3	"G versus inferred L, log-log"	"Figure 3 caption"	"Reported slope"	"printed_in_caption_or_prose"
+"robust absolute-deviations slope"	3.2	"G versus inferred L, log-log"	"Figure 3 caption"	"Not shown in plot"	"printed_in_caption_or_prose"
+"assumed p"	0.08	"areal wiring fraction"	"Figure 3 caption; Eq. 13"	"Used to infer L"	"printed_in_caption_or_prose"
+"mouse L"	3	"mm"	"ref. 30; text following Figure 3"	"Mouse is discussed as comparison, NOT a plotted Figure 3 observation"	"printed_in_caption_or_prose"
+"mouse G"	112	"mm3"	"text following Figure 3"	"Mouse is discussed as comparison, NOT a plotted Figure 3 observation"	"printed_in_caption_or_prose"

@@ -1,0 +1,7 @@
+"check_id","basis","observed","printed","difference","tolerance","status","note"
+"total_CBF","TABLE 3 CBF Total = mean of TABLE 2 measurements 1-3",74,76,-2,1,"mismatch",NA
+"basal_CBF","TABLE 3 CBF Basal = mean of TABLE 2 measurements 4-6",46.3333333333333,48,-1.66666666666666,1,"mismatch",NA
+"total_CMRO2","TABLE 3 CMRO2 Total = mean of TABLE 2 measurements 1-3",5.58666666666667,5.95,-0.363333333333333,0.01,"mismatch",NA
+"basal_CMRO2","TABLE 3 CMRO2 Basal = mean of TABLE 2 measurements 4-6",3.1,3.1,0,0.01,"pass",NA
+"total_CMRG","TABLE 3 CMRG Total = mean of TABLE 2 measurements 1-3",7.70333333333333,8.09,-0.386666666666667,0.01,"mismatch",NA
+"basal_CMRG","TABLE 3 CMRG Basal = mean of TABLE 2 measurements 4-6",2.91333333333333,3.13,-0.216666666666667,0.01,"mismatch",NA

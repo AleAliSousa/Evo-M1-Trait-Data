@@ -18,7 +18,7 @@ Epinephrine infusion.
 
 ```
 Source PDF
-  -> Schmidt_etal_1945_extract_snapshot.R        verbatim printed block, refuses to overwrite a differing frozen copy
+  -> Schmidt_etal_1945_TABLE3_snapshot.R        verbatim printed block, refuses to overwrite a differing frozen copy
   -> Schmidt_etal_1945_TABLE3_snapshot.csv   FROZEN: 20 printed rows
   -> Schmidt_etal_1945_TABLE3.R              parse + table checks (no values typed)
   -> Schmidt_etal_1945_TABLE3.csv            144 rows (one per printed value)  ("use this")

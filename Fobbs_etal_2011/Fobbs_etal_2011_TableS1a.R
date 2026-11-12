@@ -5,7 +5,7 @@
 # The source wording and historical nomenclature are preserved; taxonomy is not modernized.
 #
 # Source  : nyas_6036_sm_table1a.doc
-# Helper  : Fobbs_etal_2011_build_snapshot.py
+# Snapshot script: Fobbs_etal_2011_TableS1a_snapshot.py (not run by this script)
 # Snapshot: Fobbs_etal_2011_TableS1a_snapshot.xlsx, sheet "TableS1a"
 # Outputs : Fobbs_etal_2011_TableS1a.csv
 #           <Item encoded>.tsv under __Public/comparative-data/
@@ -28,17 +28,7 @@ folder <- dirname(.sp); setwd(folder)
 item_name <- tools::file_path_sans_ext(basename(.sp))
 source_doc <- "nyas_6036_sm_table1a.doc"
 snapshot_xlsx <- paste0(item_name, "_snapshot.xlsx")
-helper <- "Fobbs_etal_2011_build_snapshot.py"
 
-# Rebuild the frozen snapshot from the digital supplementary document only when
-# absent or explicitly requested. Default FALSE protects the audited snapshot.
-rebuild_snapshot <- FALSE
-if (rebuild_snapshot || !file.exists(snapshot_xlsx)) {
-  if (!file.exists(source_doc)) stop("Missing source document: ", source_doc, call.=FALSE)
-  if (!file.exists(helper)) stop("Missing snapshot helper: ", helper, call.=FALSE)
-  status <- system2("python3", c(shQuote(helper), shQuote(item_name)))
-  if (!identical(status, 0L) || !file.exists(snapshot_xlsx)) stop("Snapshot build failed.", call.=FALSE)
-}
 
 raw <- read_excel(snapshot_xlsx, sheet="TableS1a", skip=1, col_names=TRUE, col_types="text")
 if (ncol(raw) != 10L) stop("Expected 10 columns; found ", ncol(raw), ".", call.=FALSE)

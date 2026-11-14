@@ -11,7 +11,7 @@
 | Do differently named regions or measures represent the same thing? | `anatomy_crosswalk.csv`, `structure_boundary_basis.csv`, and the source-specific definitions. A shared name or ontology link alone does not establish equivalent boundaries. |
 | May observations be combined, or do papers repeat the same data? | `source_relationships.csv`, `trait_authority.csv`, the applicable method/pooling rules, and specimen records in `specimen_crosswalk/`. |
 
-The compiled `__merging_*/` products carry the values and their source fields. The references here explain their identities and meanings; no single key replaces the source's methods or specimen provenance. Files such as `variable_definitions.csv` are built from paper-local `reference_tables/*_definitions.csv` and other project inputs; correct those inputs or the builder when a generated row is wrong.
+The compiled `__merging_*/` products carry the values and their source fields. The references here explain their identities and meanings; no single key replaces the source's methods or specimen provenance. **For users and reviewers, the normal task is to check these files against the paper and the compiled output, not edit them.** Record a suspected error with the affected row, source location, and reason. A correction can then be made in the authoritative input (or builder for a generated file) and checked in the regenerated output. For example, `variable_definitions.csv` is built from paper-local `reference_tables/*_definitions.csv` and other project inputs.
 
 ## During compilation: source-label keys
 
@@ -19,7 +19,7 @@ A source table preserves the paper's printed name or column. The species resolve
 
 **Team-specific terminology is a special case.** Where a collection repeatedly uses its own structure codes or column conventions, filtering the mapping to that team saves repeated translation work. For example, Stephan-associated volume papers reuse and change structure codes; Herculano-Houzel-associated tables have recurring structure/measure labels. `Stephan/anatomy_key.csv`, `HerculanoHouzel/anatomy_key.csv`, and `Allman/anatomy_key.csv` currently store these mappings separately. They could form one filterable anatomy table once their differing schemas are aligned. They do not define the project's general neuroanatomy or prove that same-named measurements across papers have identical boundaries.
 
-A paper does not need a new team folder merely because it has a new author. Add source-specific definitions, context, and evidence in that paper's `reference_tables/`; add active species rows to the mapping with the applicable `collection` value, and add an anatomy mapping when the source label needs translation. The current storage layout requires placing those rows in the corresponding collection file. Paper-local `*species_key_proposed.csv` files are proposals until reviewed and promoted to an active key.
+A paper does not need a new team folder merely because it has a new author. During a new-paper ingestion, the build/curation workflow places source-specific definitions and evidence in that paper's `reference_tables/` and maps any new labels into the shared compilation keys. Reviewers should check those results against the paper and report discrepancies; they need not edit either location. The current storage layout places active species rows in the corresponding collection file. Paper-local `*species_key_proposed.csv` files are proposals until reviewed and promoted to an active key.
 
 ## Cross-paper interpretation
 

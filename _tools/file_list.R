@@ -115,6 +115,7 @@ derive_formula_values <- function(data_row) {
     if (nzchar(year)) paste0("_", year) else "_",
     if (nzchar(sequence)) paste0("_", sequence) else ""
   )
+  publication_name <- gsub("[\u0027\u2019]", "", publication_name)
   doi <- if (nzchar(doi_alt)) doi_alt else text_after(citation, "https://doi.org/")
   doi <- gsub("/", "%2F", doi, fixed = TRUE)
   doi <- gsub(":", "%3A", doi, fixed = TRUE)
@@ -289,8 +290,10 @@ for (r in populated_rows) {
   new_f <- formula_family(r)[2]
   
   # Replace only formulas that exactly match a known historical family.
+  simple_f <- sprintf('IF(ISNUMBER(SEARCH("et al",A%d)),"etal","")', r)
   if (identical(normalize_formula(actual), normalize_formula(old_f)) ||
-      identical(normalize_formula(actual), normalize_formula(prev_f))) {
+      identical(normalize_formula(actual), normalize_formula(prev_f)) ||
+      identical(normalize_formula(actual), normalize_formula(simple_f))) {
     writeFormula(
       wb,
       sheet = "Sheet1",

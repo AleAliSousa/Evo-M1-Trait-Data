@@ -1,9 +1,9 @@
 species_as_published	Species	species_basis	social_play_pct	nonsocial_play_pct	brain_mass_g	brain_mass_mg	body_mass_g	striatum_vol_mm3	sources_printed	n_sources_cited	study_setting	data_role	source_row
 Callithrix jacchus	Callithrix jacchus	verbatim	1.32	0.89	7.9	7900	288	372	Lewis, 1997e; Stevenson and Poole, 1976, 1982e; Voland, 1977e	3	captive	secondary	3
 Cebus albifrons	Cebus albifrons	verbatim	6.17	3.18	82	82000	2489	3258	Bernstein, 1965e; Marshall, 1998e	2	captive	secondary	4
-Cercocebus albigena	Lophocebus albigena	synonym:legacy_override	9		99.1	99100	7362	4146	Cahill, 1978e	1	captive	secondary	5
+Cercocebus albigena	Lophocebus albigena	synonym:NCBI	9		99.1	99100	7362	4146	Cahill, 1978e	1	captive	secondary	5
 Cercopithecus mitis	Cercopithecus mitis	verbatim	4		75	75000	5821	2733	Lawes and Piper, 1992f	1	wild	secondary	6
-Colobus badius	Piliocolobus badius	synonym:legacy_override	3.38	2.41	73.8	73800	7998	3217	Clutton-Brock, 1974f; Marsh, 1981f; Struhsaker, 1975f	3	wild	secondary	7
+Colobus badius	Piliocolobus badius	synonym:NCBI	3.38	2.41	73.8	73800	7998	3217	Clutton-Brock, 1974f; Marsh, 1981f; Struhsaker, 1975f	3	wild	secondary	7
 Erythrocebus patas	Erythrocebus patas	verbatim	7.81		106.6	106600	8690	3624	Rowell and Chism, 1986e	1	captive	secondary	8
 Gorilla gorilla	Gorilla gorilla	hub	14.79	2.55	505.9	505900	114551	14567	Fischer and Nadler, 1978e; Fossey, 1979f; Freeman and Alcock, 1973e	3	mixed (captive and wild sources)	secondary	9
 Hylobates lar	Hylobates lar	verbatim	12.3	0.5	107.7	107700	5559	4784	Bartlett, 1999f; Bernstein and Schusterman, 1964e	2	mixed (captive and wild sources)	secondary	10

@@ -47,6 +47,10 @@ out_dir <- file.path(repo, "__Finder", "data")
 dir.create(out_dir, recursive = TRUE, showWarnings = FALSE)
 
 rd <- function(...) read_csv(file.path(repo, ...), show_col_types = FALSE, guess_max = 1e5)
+with_accepted_name <- function(d) {
+  if (!"accepted_name" %in% names(d)) d$accepted_name <- d$Species
+  d
+}
 log <- c("# Coverage index build log", paste0("Generated: ", format(Sys.time(), "%Y-%m-%d %H:%M")), "")
 
 # ---- keys --------------------------------------------------------------------
@@ -101,7 +105,7 @@ empty <- tibble(species = character(), measurement = character(), measurement_cl
                 merge_status = character(), flag_note = character(),
                 dataset_source = character(), build_script = character())
 
-ca <- rd("__merging_cortical_areas", "cortical_areas_long.csv")
+ca <- with_accepted_name(rd("__merging_cortical_areas", "cortical_areas_long.csv"))
 read_cortical_areas <- function(term, pat) {
   d <- ca |> filter(Standardized_Term == term)
   if (nzchar(pat)) d <- d |> filter(str_detect(source, fixed(pat)))
@@ -121,7 +125,7 @@ read_cortical_areas <- function(term, pat) {
                  build_script = "__merging_cortical_areas/cortical_areas_compiled.R")
 }
 
-vol <- rd("__merging_volumes", "volumes_long.csv")
+vol <- with_accepted_name(rd("__merging_volumes", "volumes_long.csv"))
 read_volumes <- function(term, pat) {
   d <- vol |> filter(Variable == term)
   if (nzchar(pat)) d <- d |> filter(str_detect(Sources, fixed(pat)))
@@ -133,7 +137,7 @@ read_volumes <- function(term, pat) {
                  build_script = "__merging_volumes/volumes_compiled.R")
 }
 
-cc <- rd("__merging_cell_counts_isotropic_fractionator", "cell_counts_isotropic_fractionator_long.csv")
+cc <- with_accepted_name(rd("__merging_cell_counts_isotropic_fractionator", "cell_counts_isotropic_fractionator_long.csv"))
 CC_MEASURE <- tribble(
   ~code,    ~measurement,                 ~measurement_class,  ~units,
   "C.n",    "Total cell count",           "Cell measurements", "count",
@@ -161,7 +165,7 @@ read_cellcounts <- function(term, pat) {
                  build_script = "__merging_cell_counts_isotropic_fractionator/cell_counts_isotropic_fractionator_compiled.R")
 }
 
-cmr <- rd("__merging_cerebral_metabolic_rate", "cerebral_metabolic_rate_long.csv")
+cmr <- with_accepted_name(rd("__merging_cerebral_metabolic_rate", "cerebral_metabolic_rate_long.csv"))
 CMR_MEASURE <- c(CMRgl = "Glucose utilization (CMRglc)", CMRO2 = "Oxygen consumption (CMRO2)",
                  CBF = "Blood flow (CBF)", Total_glucose_utilization = "Total glucose utilization",
                  Total_O2_consumption = "Total O2 consumption")
@@ -176,7 +180,7 @@ read_cmr <- function(term, pat) {
                  build_script = "__merging_cerebral_metabolic_rate/build_cerebral_metabolic_rate_merge.py")
 }
 
-gli <- rd("__merging_GLI", "GLI_long.csv")
+gli <- with_accepted_name(rd("__merging_GLI", "GLI_long.csv"))
 read_gli <- function(term, pat) {
   d <- gli |> filter(area_as_published == term)
   if (nzchar(pat)) d <- d |> filter(str_detect(source, fixed(pat)))
@@ -188,7 +192,7 @@ read_gli <- function(term, pat) {
                  build_script = "__merging_GLI/GLI_compiled.py")
 }
 
-cl <- rd("__merging_cortical_layers", "cortical_layers_m1_long.csv")
+cl <- with_accepted_name(rd("__merging_cortical_layers", "cortical_layers_m1_long.csv"))
 read_layers <- function(term, pat) {
   d <- cl |> filter(m1_compatible %in% TRUE, taxon_level == "species", str_starts(status, "active"))
   if (nzchar(pat)) d <- d |> filter(str_detect(source, fixed(pat)))

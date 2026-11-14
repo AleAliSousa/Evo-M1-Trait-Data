@@ -56,14 +56,16 @@ TIMEOUT_SEC <- 300
 ## Each entry is a regex matched against the repo-relative path, plus the reason
 ## recorded in the log so a SKIPPED row is self-explaining.
 SKIP_PATTERNS <- c(
-  "(^|/)run_all_scripts"        = "this runner",
+  "(^|/)_?run_all_scripts"       = "this runner",
   "(^|/)safely_guard_setwd"     = "sourced helper, not a standalone script",
-  "(^|/)update_shinyapp\\.R$"   = "publishes to shinyapps.io (rsconnect::deployApp)",
+  "(^|/)(update_shinyapp|__shinyapp_update)\\.R$" = "publishes to shinyapps.io (rsconnect::deployApp)",
   "^__ShinyApp/app\\.R$"        = "ends in shinyApp(); blocks forever under Rscript",
   "(^|/)__edit_all_directories\\.R$" = "mass find/replace + rename utility; run deliberately, not in a sweep",
   ## list.files() below is recursive from the repo root, so a retired script would
   ## keep running -- and keep failing -- for as long as it sat in _archive/.
   "^_archive/"                  = "retired; kept for the record, not for running",
+  "^_bk2/"                      = "backup copy; canonical scripts live outside _bk2",
+  "(^|/)archive/"               = "retired archive script",
   ## Sourced libraries, not scripts. Running one standalone just defines functions
   ## and exits -- harmless but meaningless, and it made them look like tools.
   "^_helpers/"                  = "sourced helper library, not a standalone script",
@@ -87,11 +89,21 @@ SKIP_PATTERNS <- c(
   ## rewrites _keys/species_reference.csv from live services. Run it deliberately.
   ## (Added 2026-09-27 after the 2026-09-26 sweep timed out at 185/215.)
   "^_keys/resolve_taxonomy\\.R$" = "on-demand web lookup (NCBI/ITIS/GBIF); exceeds the sweep timeout",
+  "^Herberstein_etal_2022/Herberstein_etal_2022_animaltraits_raw_Mammalia\\.R$" =
+    "on-demand GitHub download; source snapshots are already present locally",
+  "^ManyPrimates__2022/build_manyprimates_items\\.R$" =
+    "bulk rebuild includes items awaiting owner registry paste; run selected items deliberately",
+  "^Hardus_etal_2009/Hardus_etal_2009_Table4\\.[1-4]\\.R$" =
+    "2009 chapter items are not registered; 2008 chapter rows must not be reused without provenance review",
+  "^__merging_volumes/volumes_compiled_select_DeCasien\\.R$" =
+    "curation gate requires review of source and species-region cells before publishing",
+  "^_checks/find_csv_tsv_creators\\.R$" = "exhaustive source scan; exceeds the sweep timeout",
   ## Curator action tool, not a build. When a proposal exists, running this script without
   ## --dry-run applies accepted canonical-variable decisions and removes them from the proposal;
   ## when no proposal exists it necessarily stops. Either outcome is inappropriate in a sweep.
   "^_keys/apply_variable_canonical_proposed\\.R$" =
     "curator action tool; applies adjudicated proposal rows and must be run deliberately",
+  "^_tools/registry_apply\\.R$" = "curator action tool; applying registry edits requires an explicit changes CSV",
   ## Same class: an on-demand QC differ whose reference table is an EXTERNAL hand-assembled CSV
   ## kept outside the repo (path in the script / EVOM1_REFERENCE_CSV). Without it the script
   ## can only hit its input guard, which is what the 2026-09-18 sweep logged as FAILED.
@@ -228,7 +240,18 @@ if (freeze_on) {
   }
 }
 
-log_file <- file.path(checks_dir, "script_execution_log.csv")
+published_log_file <- file.path(checks_dir, "script_execution_log.csv")
+## OneDrive can time out when a large CSV is rewritten for every script.
+## Keep the active log on the local filesystem, then publish checkpoints.
+log_file <- tempfile("script_execution_log_", tmpdir = tempdir(), fileext = ".csv")
+publish_log <- function() {
+  for (attempt in seq_len(3L)) {
+    if (isTRUE(file.copy(log_file, published_log_file, overwrite = TRUE))) return(invisible(TRUE))
+    Sys.sleep(attempt)
+  }
+  warning("Could not copy run log to ", published_log_file)
+  invisible(FALSE)
+}
 
 run_log <- data.frame(
   script         = r_scripts,
@@ -241,6 +264,7 @@ run_log <- data.frame(
 )
 
 write.csv(run_log, log_file, row.names = FALSE)
+publish_log()
 
 n_skip <- sum(run_log$status == "SKIPPED")
 if (n_skip) {
@@ -300,9 +324,11 @@ for (k in seq_along(todo)) {
   }
 
   write.csv(run_log, log_file, row.names = FALSE)
+  if (k %% 25L == 0L) publish_log()
 }
 
-cat("\nFinished. Log saved to:\n", log_file, "\n")
+publish_log()
+cat("\nFinished. Log saved to:\n", published_log_file, "\n")
 
 ## ---- Summarise results ----
 
@@ -347,4 +373,5 @@ if (file.exists(log_file)) {
 }
 
 cat("\nFull execution log:\n")
-cat(log_file, "\n")
+cat(published_log_file, "\n")
+if (exists("failed") && nrow(failed)) quit(save = "no", status = 1L)

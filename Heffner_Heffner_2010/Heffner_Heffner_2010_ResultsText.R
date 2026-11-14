@@ -74,7 +74,7 @@ if (!is.na(tsv_dir) && dir.exists(tsv_dir)) {
   filecodes    <- read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
   ## Registry lookup name differs from this file's name (added 2026-09-27): the citation's first author is "Heffner, Jr., H.", and the extra comma makes the registry formula read it as "etal", giving Heffner_etal_2010_ResultsText (a different paper from the Heffner_etal_2010 folder's TableI).
   ## Prefer the corrected key after owner paste; accept the legacy key until then.
-  registry_item_names <- c("Heffner_Heffner_2010_ResultsText", "Heffner_etal_2010_ResultsText")
+  registry_item_names <- c("Heffner_Heffner_2010_a_ResultsText", "Heffner_Heffner_2010_ResultsText", "Heffner_etal_2010_ResultsText")
   nfc <- function(x) if (requireNamespace("stringi", quietly = TRUE)) stringi::stri_trans_nfc(x) else x
   hits <- match(nfc(registry_item_names), nfc(filecodes$`Item name`))
   hits <- hits[!is.na(hits)]

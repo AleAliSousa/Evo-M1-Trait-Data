@@ -14,6 +14,7 @@ Sys.unsetenv("DATASET_REGISTRY")
 Sys.setenv(SUPPLEMENTARY_SOURCE_PUBLICATIONS="Chivers__1984;Gautier__1988")
 run(file.path(repo,"__merging_supplementary/supplementary_compiled.R"))
 Sys.unsetenv("SUPPLEMENTARY_SOURCE_PUBLICATIONS")
-file.copy(file.path(repo,"__merging_supplementary/supplementary_long.csv"),file.path(repo,"__ShinyApp/data/supplementary_long.csv"),overwrite=TRUE)
+# The app reads the canonical merge through GH; do not recreate the removed
+# data/ copy, which build_data.R rejects as a stale duplicate.
 run(file.path(repo,"_keys/build_variable_definitions.R"))
 run(file.path(repo,"_keys/build_trait_authority.R"))

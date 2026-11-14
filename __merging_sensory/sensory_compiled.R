@@ -155,6 +155,7 @@ ref_key <- function(text){
 }
 
 ## ---- 1. load sources, emit STUDY-LEVEL rows ---------------------------------------------
+enc_override <- c("Koay_etal_1998_Figure6" = "10.1037%2F0735-7036.112.4.371_Figure6")
 rows <- tibble(Species=character(), Measure=character(), Value=double(), Medium=character(),
                method_basis=character(), poolable_group=character(),
                population=character(), Source_item=character(), Study_keys=list(),
@@ -423,7 +424,7 @@ errata <- bind_rows(lapply(errata_files, function(f) {
   e <- read.csv(text = readLines(f, encoding = "UTF-8", warn = FALSE), colClasses = "character",
                 check.names = FALSE, na.strings = character(), encoding = "UTF-8")
   names(e) <- sub("^\ufeff", "", names(e))
-  e$paper <- basename(dirname(dirname(f))); e
+  e$paper <- rep(basename(dirname(dirname(f))), nrow(e)); e
 }))
 if (!nrow(errata)) errata <- tibble(errata_id=character(), item=character(), variable=character(),
                                     locator=character(), issue_type=character(), status=character(),

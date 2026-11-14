@@ -1,0 +1,14 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species,Human participants in both PET centers,,,,info,Homo sapiens,Borghammer_etal_2012_TableS1,Clinical group summaries are not species means,Journal-supplied supplementary Word document
+center,Aarhus or Cologne study center as printed,,,,info,Homo sapiens,Borghammer_etal_2012_TableS1,Absolute CMRglc differed systematically between centers; keep centers separate,Supplementary Table 1 and accompanying prose
+group,Printed Controls or PD group,,,,info,Homo sapiens,Borghammer_etal_2012_TableS1,PD = Parkinson disease,Supplementary Table 1
+n,Number of participants in the center and group,,,,info,Homo sapiens,Borghammer_etal_2012_TableS1,"Aarhus: Controls 8 and PD 12; Cologne: Controls 3 and PD 9",Supplementary Table 1
+measure_as_published,GM; WM; or GM/WM as printed,cerebral gray/white matter,,,info,Homo sapiens,Borghammer_etal_2012_TableS1,"GM = global mean; WM = white matter; GM/WM is their ratio",Supplementary Table 1
+cell_as_printed,Printed mean ± dispersion and any significance stars,cerebral gray/white matter,,,note,Homo sapiens,Borghammer_etal_2012_TableS1,Preserves the source cell before parsing,Supplementary Table 1
+mean,First numeric component of the printed cell,cerebral gray/white matter,CMRglc.umol_100g_min_or_ratio,mean,primary,Homo sapiens,Borghammer_etal_2012_TableS1,Unit is µmol/100g/min for GM and WM; GM/WM is unitless,Supplementary Table 1
+dispersion,Second numeric component after ±,cerebral gray/white matter,CMRglc.umol_100g_min_or_ratio,dispersion,primary,Homo sapiens,Borghammer_etal_2012_TableS1,The table does not label this component as SD or SEM,Supplementary Table 1
+dispersion_type,Interpretation of the second printed component,,,,method,Homo sapiens,Borghammer_etal_2012_TableS1,Unspecified in printed table,Supplementary Table 1
+unit_as_published,µmol/100g/min for GM and WM rates; ratio for GM/WM,cerebral gray/white matter,,,info,Homo sapiens,Borghammer_etal_2012_TableS1,See measure_as_published to disambiguate,Supplementary Table 1 footnote
+significance_mark,* or ** attached to Aarhus values,cerebral gray/white matter,P.value,threshold,info,Homo sapiens,Borghammer_etal_2012_TableS1,"* p < 0.05; ** p < 0.001 vs corresponding Cologne group (t-test)",Supplementary Table 1 footnote
+Method:observation_level,One row per measure by center and clinical group,,,,method,Homo sapiens,Borghammer_etal_2012_TableS1,12 cells from 3 measures times four center/group arms; do not pool centers,Supplementary Table 1
+Method:source_extraction,Reads a byte-identical frozen .doc copy and converts to temporary HTML with macOS textutil before parsing its first table,,,,method,Homo sapiens,Borghammer_etal_2012_TableS1,The untouched journal file remains separate; temporary HTML is not a source snapshot,ane_1556_sm_tablesi_s2-figures1.doc

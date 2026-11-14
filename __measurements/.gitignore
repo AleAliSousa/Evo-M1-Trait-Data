@@ -1,0 +1,11 @@
+__pycache__/
+*.sqlite
+*.sqlite-*
+primary/
+secondary/
+review/
+source_tables.csv
+measurement_summary.csv
+measure_files.csv
+*.sqlite.new
+other_public_files.csv

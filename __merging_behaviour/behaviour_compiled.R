@@ -227,3 +227,7 @@ message("behaviour: ", nrow(long), " (Species x Measure) rows, ", length(unique(
         " species; multi-source: ", sum(long$n_sources > 1),
         " (VocalRepertoire ", sum(long$Measure=="VocalRepertoire" & long$n_sources>1),
         ", Dexterity ", sum(long$Measure=="Dexterity" & long$n_sources>1), ")")
+
+# Pilot crosswalk QA runs after outputs are written; it never changes merge selection.
+pilot_status <- system2("python3", file.path("..", "_checks", "check_ontology_pilot.py"))
+if (pilot_status != 0L) stop("Ontology pilot QA failed", call. = FALSE)

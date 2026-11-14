@@ -78,7 +78,7 @@ stopifnot(all(diffs < 0.15))
 write.csv(final.dataframe, final_csv, row.names = FALSE, na = "")
 if (!is.na(tsv_dir) && dir.exists(tsv_dir)) {
   filecodes    <- read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
-  item_encoded <- filecodes$`Item encoded`[match(item_name, filecodes$`Item name`)]
+  item_encoded <- filecodes$`Item encoded`[match("Heffner_etal_2001_b_ResultsText", filecodes$`Item name`)]
   if (length(item_encoded) != 1L || is.na(item_encoded) || !nzchar(item_encoded) ||
       grepl("_$", item_encoded))
     stop("No usable 'Item encoded' in __ReadMe.xlsx for ", item_name,

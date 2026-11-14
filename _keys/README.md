@@ -1,39 +1,29 @@
-# _keys — shared references + per-team keys
+# `_keys` — shared identities, definitions, and comparison rules
 
-These keys homogenize species names and anatomy terms across publications and carry current taxonomy. The design is **hub-and-spoke**: a small number of shared *reference* tables (the "third taxonomy" everything points to), and a separate *key* per team group that maps that collection's spellings/terms onto the references.
+`_keys` supports compilation and use of the project data. **The main reference for using compiled data is the shared set of species identities, anatomical concepts, variable definitions, and comparison/provenance rules.** Species source-label mappings form one logical table: filter its `collection` column to see a team's rows. The current author-named folders store parts of that table for compilation convenience; they are not separate authorities or the main way to browse the finished data.
 
-**Why keep teams separate (not one blended key):** the team groups are distinct specimen collections. Stephan/Frahm/Baron is one collection (mostly Düsseldorf); Herculano-Houzel is another, and its papers re-report **the same individuals** across tables. They should be *aligned* for cross-collection comparison via the shared references, never merged at the specimen level. Per-team keys also stay a manageable size as many more papers are added, and a new team group is just a new subfolder.
+## Start here when using compiled data
 
-```
-_keys/
-  species_reference.csv      <- shared "third taxonomy" for species (the hub)
-  anatomy_reference.csv      <- shared canonical structure vocabulary (the hub)
-  Stephan/
-    species_key.csv          <- Stephan spellings -> accepted_name
-    anatomy_key.csv          <- Stephan structure codes -> canonical structure
-  HerculanoHouzel/
-    species_key.csv          <- HH spellings -> accepted_name (+ ncbi_taxid)
-    anatomy_key.csv          <- HH raw terms -> standardized term
-```
+| Question | Shared reference |
+| --- | --- |
+| Which organism does this row represent? | `species_reference.csv` (`accepted_name` is the project identity anchor); `SPECIES_NAMING.md` explains resolution and taxonomic qualifications. |
+| What brain structure or other variable was measured? | `anatomy_reference.csv`, `variable_definitions.csv`, `variable_catalog.csv`, and `glossary.csv`. Read the definition and unit, not just the column name. |
+| Do differently named regions or measures represent the same thing? | `anatomy_crosswalk.csv`, `structure_boundary_basis.csv`, and the source-specific definitions. A shared name or ontology link alone does not establish equivalent boundaries. |
+| May observations be combined, or do papers repeat the same data? | `source_relationships.csv`, `trait_authority.csv`, the applicable method/pooling rules, and specimen records in `specimen_crosswalk/`. |
 
-## Shared hubs
+The compiled `__merging_*/` products carry the values and their source fields. The references here explain their identities and meanings; no single key replaces the source's methods or specimen provenance. Files such as `variable_definitions.csv` are built from paper-local `reference_tables/*_definitions.csv` and other project inputs; correct those inputs or the builder when a generated row is wrong.
 
-**`species_reference.csv`** — one row per canonical species (179). The single table both teams reference. Columns: `accepted_name` (the join anchor), `ncbi_taxid` (stable external ID; the third taxonomy's identifier), `in_Stephan` / `in_HerculanoHouzel`, the historical Stephan taxonomy (`Order_Stephan1981`, `Suborder_Stephan1981`, `Family_Stephan1981`, `code_Stephan1981`), the modern taxonomy (`Order_MDD`, `Family_MDD`, `mdd_accepted_name` — filled for the Baron species so far), and `needs_taxonomy_review` (TRUE where no modern order is assigned yet). 85 rows carry an NCBI taxid; 13 species are measured by both collections.
+## During compilation: source-label keys
 
-**`anatomy_reference.csv`** — the canonical structure vocabulary (181 structures), `domain`-tagged: 92 `cell_counts` (English terms, e.g. `OlfactoryBulb`) + 89 `brain_structure_volume` (Latin Stephan terms, e.g. `Bulbus_olfactorius`), with the measures seen per structure.
+A source table preserves the paper's printed name or column. The species resolver reads all `_keys/*/species_key.csv` files, combines their rows in memory, and uses `(source_publication, variant_name)` to map printed names to `accepted_name` in `species_reference.csv`. Because these files share a schema and include `collection`, they could also be stored as one CSV without changing the logical mapping: filtering `collection` would recover the team view. `General` is the collection value for papers without a named collection assignment. See `SPECIES_NAMING.md`.
 
-## Per-team keys
+**Team-specific terminology is a special case.** Where a collection repeatedly uses its own structure codes or column conventions, filtering the mapping to that team saves repeated translation work. For example, Stephan-associated volume papers reuse and change structure codes; Herculano-Houzel-associated tables have recurring structure/measure labels. `Stephan/anatomy_key.csv`, `HerculanoHouzel/anatomy_key.csv`, and `Allman/anatomy_key.csv` currently store these mappings separately. They could form one filterable anatomy table once their differing schemas are aligned. They do not define the project's general neuroanatomy or prove that same-named measurements across papers have identical boundaries.
 
-Each maps a collection's raw labels to the hub; it never references the other team.
+A paper does not need a new team folder merely because it has a new author. Add source-specific definitions, context, and evidence in that paper's `reference_tables/`; add active species rows to the mapping with the applicable `collection` value, and add an anatomy mapping when the source label needs translation. The current storage layout requires placing those rows in the corresponding collection file. Paper-local `*species_key_proposed.csv` files are proposals until reviewed and promoted to an active key.
 
-- **`Stephan/species_key.csv`** (1,010 variant rows): `accepted_name`, `source_publication`, `variant_name` — every spelling seen in the Stephan-collection papers.
-- **`Stephan/anatomy_key.csv`** (247 rows): `reference`, `canonical_structure`, `measure`, `anatomy_code`, `original_column` — each volume paper's structure code/header mapped to a canonical Latin structure (harvested from each paper's `AAAA_Anatomy_code` row across 20 volume papers). E.g. `Bulbus_olfactorius` is coded `11` in Stephan 1981, `BOL` in Baron 1987, and `MOB` in Baron 1983.
-- **`HerculanoHouzel/species_key.csv`** (87): `accepted_name`, `ncbi_taxid`, `variant_name`, `source_datasets`.
-- **`HerculanoHouzel/anatomy_key.csv`** (871): `standardized_term`, `structure`, `measure`, `original_term_variant`, `reference` — each paper's raw column header mapped to a canonical structure + measure.
+## Cross-paper interpretation
 
-## How to use it (at the compilation step)
-
-A paper's species name → look up in its team's `species_key.csv` → `accepted_name` → `species_reference.csv` (taxonomy, NCBI taxid). A paper's structure label → its team's `anatomy_key.csv` → `standardized_term` → `anatomy_reference.csv`. Adding a paper = adding rows to its team's key (and any new species/structures to the shared reference). Adding a team = a new subfolder.
+`anatomy_crosswalk.csv` links concepts across data domains; `structure_boundary_basis.csv` records source-specific boundaries. `variable_definitions.csv` separates structure, measure, unit, and definition where available. `source_relationships.csv` records reprints, extensions, supersession, and independent remeasurements. These are the layers to use when comparing compiled values across publications. Draft or unreviewed links should not be treated as pooling instructions.
 
 ## Wild/domestic pooling keys (added 2026-10-20, read-time only)
 
@@ -45,14 +35,14 @@ A paper's species name → look up in its team's `species_key.csv` → `accepted
   evidence from the source row. Drives the `domestic_evidence` mode. Seeded by
   `build_population_status.py`; hand edits survive a re-run. `README_population_status.md`.
 
-## Cross-domain structure keys (added 2026-10-07, all rows `drafted`)
+## Cross-domain structure references (added 2026-10-07, all rows `drafted`)
 
 Started for the Finder's Coverage tab (`__Finder/README.md`); usable by any merge.
 
 - **`anatomy_crosswalk.csv`** — one row per concept × domain × term (domains: `volumes`, `cellcounts`,
   `cortical_areas`, `CMR`, `GLI`, `cortical_layers`). `relation` says how the term relates to the concept
   (`same`, `contains`, `part_of`, `overlaps`, …); `link_class` is `direct` or `proxy`; `boundary_basis`
-  names how the term's boundary was drawn. A first step on follow-up (3) below.
+  names how the term's boundary was drawn.
   **2026-10-31:** 47 rows added (domain `weights` introduced; new concepts `Olfactory_bulb`,
   `Medulla_oblongata`, `Mesencephalon`, `Pons`, `Tectum`, `Tegmentum`, `Striatum`, `Diencephalon`,
   `Telencephalon`, `Spinal_cord`, `Rest_of_brain`, `Olfactory_cortex`, `Corpus_callosum`, `Mammillary_body`)
@@ -74,17 +64,14 @@ Started for the Finder's Coverage tab (`__Finder/README.md`); usable by any merg
   (`expert_reviews.csv`). Read by both cell-count merges; checked by `_checks/check_cell_count_methods.R`.
   Summary and update procedure in its `README.md`.
 
-## Provenance & follow-ups
+## Historical origins
 
-Built from `__merging_cell_counts_isotropic_fractionator/` (`cell_counts_isotropic_fractionator_source_species_ids.csv`, `standardized_term_cell_counts_isotropic_fractionator.csv`), `Stephan_temp_to_organize/csvs/Species_Codes.csv`, the harvested Stephan name variants, and the Baron 1983/1987 MDD crosswalks.
-
-Open: (1) **taxonomy-currency pass** — run `resolve_taxonomy.R`, which fills current `Order_resolved` / `Family_resolved` for all 179 from **NCBI Taxonomy first** (by taxid where present, else by name), falling back to **ITIS** then **GBIF**, recording the source and flagging any disagreement with the existing MDD order. (NCBI's eutils API was not reachable from the build sandbox, so this is a script to run in your environment.) (2) resolve **NCBI taxids** for the Stephan-only species so every row has the stable ID; (3) **cross-domain structure harmonization** — map the Latin volume structures to the English cell-count structures within `anatomy_reference.csv` (e.g. `Bulbus_olfactorius` <-> `OlfactoryBulb`) so the two collections' structures can be compared.
-
+Some shared references began with Stephan volume keys and isotropic-fractionator cell-count mappings. They now serve a wider set of papers and data domains; their current scope should be read from the tables and build scripts rather than inferred from those origins.
 
 ## NCBI reconciliation and temporal grade (2026-10-22)
 
-The hub and spokes now share verified taxids. `taxon_name` and `temporal_grade`
-are separate hub attributes, returned by the R and Python species resolvers
+The shared species reference and source-label keys carry reconciled taxids. `taxon_name` and `temporal_grade`
+are separate identity attributes, returned by the R and Python species resolvers
 along with NCBI name, rank, and mapping basis. Early and archaic H. sapiens
 retain their project concept anchors while carrying 9606; the archaic mapping
 is explicitly a published source hypothesis. Grade and specimen evidence

@@ -32,7 +32,8 @@ norm  <- function(h) tolower(trimws(gsub('"', "", h)))
 brain_rx <- "brain.{0,3}(mass|weight|wt)"
 EXCLUDE <- c("neonat","fetal","cerebel","cortex","cortic","olfact","rest of brain","diencephal",
              "mesencephal","pons","medulla","hemisphere","white","grey","gray","region",
-             "residual","resid","net","ratio","source","ref","note","_sd"," sd",": data","%","index","relative")
+             "residual","resid","net","ratio","source","ref","note","_sd"," sd",": data","%","index","relative",
+             "printed","_min","_max","estimated")
 FACTOR <- c(g = 1, kg = 1000, mg = 0.001)
 
 read_csv <- function(p) read.csv(p, stringsAsFactors = FALSE, check.names = FALSE)
@@ -189,6 +190,22 @@ folder_of <- function(author, year, col) {
   if (length(h) > 1) { k <- h[!is.na(vapply(h, grp_of, character(1), col = col))]
                        if (length(k)) return(k[1]) }
   if (length(h)) h[1] else ""
+}
+
+if (!"--reclassify-current" %in% commandArgs(trailingOnly = TRUE)) {
+  missing_basis <- do.call(rbind, lapply(targets, function(t) {
+    paper <- folder_of(t$author, t$year, t$col)
+    if (nzchar(paper) && !is.na(grp_of(paper, t$col))) return(NULL)
+    data.frame(file = t$fn, paper = paper, column = t$col,
+               first_author = t$author, year = t$year)
+  }))
+  review_file <- file.path(out, "brain_mass_basis_missing.csv")
+  if (!is.null(missing_basis) && nrow(missing_basis)) {
+    write.csv(unique(missing_basis), review_file, row.names = FALSE)
+    stop(nrow(missing_basis), " source column(s) have no documented brain-size basis; review ",
+         review_file, ". No partial merge was written.", call. = FALSE)
+  }
+  if (file.exists(review_file)) file.remove(review_file)
 }
 
 ## Reclassify the last successful harvest while newly added tables await basis

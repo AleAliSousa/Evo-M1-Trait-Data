@@ -331,6 +331,19 @@ ASSIGN = {
     ("Jacobs_etal_2015", "Mean Brain mass (g)"):
         ("mass", "mass_compilation_unspecified", "unknown", "unknown", "unknown",
          "unknown", "mass_measured", True, "quoted", T),
+    # Graham 2011 TABLE I footnote b attributes the brain-size values to Barton
+    # (1999); Graham did not measure them or state their fixation basis.
+    ("Graham__2011", "brain_mass_g"):
+        ("mass", "mass_compilation_unspecified", "unknown", "unknown", "unknown",
+         "unknown", "mass_measured", True, "quoted", T),
+    # Table 1 mixes literature values with one brain measurement from this
+    # study; fixation and included tissue are not stated for the column.
+    ("Barrickman_Lin_2010", "brain_mass_g"): A,
+    # Bahney & von Bartheld 2018 TABLES 3-4 republish brain weights from cited
+    # sources; the rows do not identify a common fixation basis.
+    ("Bahney_vonBartheld_2018", "brain_mass_mg"):
+        ("mass", "mass_compilation_unspecified", "unknown", "unknown", "unknown",
+         "unknown", "mass_measured", True, "quoted", T),
     # HrvojMihic_etal_2026_SD (Dataset S1/S2): per-individual necropsy brain weight for 601
     # adult great apes; neither dataset states fixation state or olfactory-bulb inclusion --
     # default "unstated" tuple A.
@@ -487,7 +500,8 @@ BRAIN_RX = re.compile(r"brain.{0,3}(mass|weight|wt)", re.I)
 EXCLUDE = ["neonat", "fetal", "cerebel", "cortex", "cortic", "olfact", "rest of brain",
            "diencephal", "mesencephal", "pons", "medulla", "hemisphere", "white", "grey",
            "gray", "region", "residual", "resid", "net", "ratio", "source", "ref", "note",
-           "_sd", " sd", ": data", "%", "index", "relative"]
+           "_sd", " sd", ": data", "%", "index", "relative",
+           "printed", "_min", "_max", "estimated"]
 
 
 def pick_column(headers):

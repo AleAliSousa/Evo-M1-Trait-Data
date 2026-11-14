@@ -480,6 +480,21 @@ Many tables **re-use earlier data under new labels** and should **not** be merge
 
 ---
 
+## 9a. Post-folder measurement processing
+
+After the item outputs, definitions and provenance are built, run the repository-level
+`python __measurements/build_measurements.py` stage (see `__measurements/README.md`).
+It reads the public TSVs together with item definitions, registry roles and measurement-basis
+keys, numbers report-level measurements, retains source-row context, and partitions by quantity
+into primary, secondary and unresolved-role outputs. Its direct-brain-weight, combined-weight
+and endocranial-volume filters keep measurement method separate from source provenance.
+Unknown methods, unit mappings, mixed roles and malformed source rows remain explicit review
+work. The secondary folder supplies checks, lineage and documented special-case evidence;
+secondary reports do not become independent primary observations. This processing stage precedes
+species-level aggregation; existing merges remain separate downstream consumers during rollout.
+
+---
+
 ## 10. Merge — one folder per data type (`__merging_*`)
 
 Merges are kept **one per data type** — never mix measure classes in a single merged table.

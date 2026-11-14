@@ -6,7 +6,7 @@
   if (length(a)) return(normalizePath(sub('^--file=', '', a[1])))
   of <- tryCatch(sys.frames()[[1]]$ofile, error = function(e) NULL)
   if (is.character(of) && length(of) == 1L && nzchar(of)) return(normalizePath(of))
-  in_repo <- file.path(getwd(), 'Weigl_2005', 'Weigl__2005_Records.R')
+  in_repo <- file.path(getwd(), 'Weigl__2005', 'Weigl__2005_Records.R')
   if (file.exists(in_repo)) return(normalizePath(in_repo))
   stop('Run with Rscript or sys.source.', call. = FALSE)
 })

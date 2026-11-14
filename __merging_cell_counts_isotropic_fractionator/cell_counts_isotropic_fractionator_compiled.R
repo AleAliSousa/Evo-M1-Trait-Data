@@ -991,3 +991,8 @@ cell_counts_isotropic_fractionator_wide <- arrange(pivot_wider(cell_counts_isotr
 # # keep a record of sources for the datapoints
 # cell_counts_isotropic_fractionator_sources_wide <- arrange(pivot_wider(cell_counts_isotropic_fractionator_long, id_cols = Species, names_from = Variable, values_from = Source), Species)
 write_csv(cell_counts_isotropic_fractionator_wide, "cell_counts_isotropic_fractionator_wide.csv")
+
+# Validate the draft ontology pilot against current rule tables and merge outputs.
+# This writes a QA alignment report; draft decisions do not alter selected values.
+pilot_status <- system2("python3", file.path("..", "_checks", "check_ontology_pilot.py"))
+if (pilot_status != 0L) stop("Ontology pilot QA failed", call. = FALSE)

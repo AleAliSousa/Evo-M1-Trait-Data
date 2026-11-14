@@ -154,6 +154,8 @@ filecodes <- read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
 # maintained by hand to preserve its formula columns). Remove an entry once its row exists.
 enc_override <- c("Bush_Allman_2004_a_Table2"   = "10.1073%2Fpnas.0305760101_Table2",
                   "Reep_etal_2007_Table1"       = "10.1159%2F000101491_Table1",
+                  "Smaers_etal_2011_SupplementaryTable1" = "10.1159%2F000323671_SupplementaryTable1",
+                  "Smaers_etal_2011_SupplementaryTable2" = "10.1159%2F000323671_SupplementaryTable2",
                   # Stephan 1970 split into 6 per-table items (ISBN-coded; The Primate Brain has no DOI).
                   "Stephan_etal_1970_TABLE1" = "ISBN%3A0390672505_TABLE1",
                   "Stephan_etal_1970_TABLE2" = "ISBN%3A0390672505_TABLE2",
@@ -300,7 +302,7 @@ nrm <- function(x) tolower(trimws(gsub("\\s+"," ", gsub("[._]"," ", x))))
 num <- function(x) suppressWarnings(as.numeric(gsub(",","", as.character(x))))
 
 paper_long <- function(row) {
-  it <- row$item; df <- read_item(it); tmap <- terms %>% filter(Reference == it)
+  it <- row$item; df <- read_item(it); tmap <- terms %>% filter(tolower(Reference) == tolower(it))
 
   # Canonicalize column headers to the term map's Original_Term spelling up front. TSV headers drift
   # in case/punctuation after re-encoding (e.g. nucleus_tractus_olfactorius_mm3 vs the term map's
@@ -444,7 +446,9 @@ paper_long <- function(row) {
   # Match data columns to term-map Original_Terms CASE/SEPARATOR-INSENSITIVELY: re-encoded TSVs drift
   # in case/punctuation (e.g. corpus_geniculatum_laterale_mm3 vs Corpus_...). Exclude the species col.
   ckey <- function(x) tolower(gsub("[ ._]+", "", x))
-  tkey <- ckey(tmap$Original_Term)
+  # Newly encoded source tables may already use the standardized column names.
+  tkey <- c(ckey(tmap$Original_Term), ckey(tmap$Standardized_Term))
+  tstandard <- rep(tmap$Standardized_Term, 2L)
   keep <- names(df)[ckey(names(df)) %in% tkey & names(df) != spcol]
   if (!length(keep))
     stop("paper_long('", it, "'): no measured columns matched the term map. df cols: ",
@@ -453,7 +457,7 @@ paper_long <- function(row) {
                    across(all_of(keep), num)) %>%
     pivot_longer(-Species, names_to="orig", values_to="Value") %>%
     filter(!is.na(Value)) %>%
-    mutate(Variable = tmap$Standardized_Term[match(ckey(orig), tkey)],
+    mutate(Variable = tstandard[match(ckey(orig), tkey)],
            Source = it, Team = row$team, Year = row$year) %>%
     select(Species, Variable, Value, Source, Team, Year)
 }
@@ -725,3 +729,7 @@ message("Provenance: ", nrow(contrib), " species x variable x source contributio
 
 message(nrow(volumes_wide), " species x ", ncol(volumes_wide)-1, " variables from ", nrow(papers),
         " tables | flags: ", nrow(flags))
+
+# Pilot crosswalk QA runs after outputs are written; it never changes merge selection.
+pilot_status <- system2("python3", file.path("..", "_checks", "check_ontology_pilot.py"))
+if (pilot_status != 0L) stop("Ontology pilot QA failed", call. = FALSE)

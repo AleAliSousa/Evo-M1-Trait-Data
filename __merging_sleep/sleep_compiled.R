@@ -129,3 +129,7 @@ readr::write_csv(wide, "sleep_wide.csv")
 message("sleep: ", nrow(long), " long rows, ", nrow(wide), " species; per term: ",
         paste(sprintf("%s=%d", terms, sapply(terms, function(t) sum(long$Standardized_Term == t))),
               collapse = ", "))
+
+# Pilot crosswalk QA runs after outputs are written; it never changes merge selection.
+pilot_status <- system2("python3", file.path("..", "_checks", "check_ontology_pilot.py"))
+if (pilot_status != 0L) stop("Ontology pilot QA failed", call. = FALSE)

@@ -26,6 +26,7 @@ import shutil
 import signal
 import subprocess
 import sys
+import tempfile
 import time
 from collections import Counter, deque
 from dataclasses import dataclass
@@ -35,7 +36,7 @@ from typing import Tuple
 
 
 ROOT = Path(__file__).resolve().parent
-R_RUNNER = "run_all_scripts_v2.R"
+R_RUNNER = "_run_all_scripts_v2.R"
 R_LOG = Path("_checks/script_execution_log.csv")
 REPORT = Path("_checks/run_all_scripts_v3_report.csv")
 OUTPUT_LOG = Path("_checks/run_all_scripts_v3_output.log")
@@ -310,7 +311,10 @@ def actual_run(args, root):
     (root / "_checks").mkdir(parents=True, exist_ok=True)
     records = []
     interrupted = False
-    with (root / OUTPUT_LOG).open("wb") as output:
+    log_fd, log_name = tempfile.mkstemp(prefix="evom1_python_", suffix=".log")
+    os.close(log_fd)
+    local_log = Path(log_name)
+    with local_log.open("wb") as output:
         if not args.python_only:
             r_records = run_r(root, args.r_timeout, output)
             records.extend(r_records)
@@ -340,6 +344,8 @@ def actual_run(args, root):
             print("{}: {}{}".format(check.path, result["status"],
                                    " — " + result["detail"] if result["detail"] else ""),
                   flush=True)
+    shutil.copyfile(local_log, root / OUTPUT_LOG)
+    local_log.unlink()
     write_report(root / REPORT, records)
     r_script_failed = any(item["phase"] == "R script" and
                           item["status"] in FAILURE_STATUSES for item in records)

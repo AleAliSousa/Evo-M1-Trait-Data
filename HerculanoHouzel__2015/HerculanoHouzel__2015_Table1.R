@@ -59,14 +59,15 @@ public_tsv_dir<- file.path(dataset_root, "__Public", "comparative-data")
 library(rvest)
 library(tidyverse)
 library(readxl)
-page <- read_html("https://pmc.ncbi.nlm.nih.gov/articles/PMC4614783/")
-raw  <- (page |> html_elements("table") |> html_table(fill = TRUE))[[1]]
-# The scraped header row is split/garbled by html_table(); restore the column
-# labels exactly as printed in the published Table 1 so the snapshot can be
-# eyeballed against the paper.
-colnames(raw) <- c("species", "brain mass (g or cm3)", "daily sleep (h)",
-                   "D/A (N mg−1 mm−2)", "NCX", "DNCX (N mg−1)",
-                   "ACX (mm2)", "O/N", "T", "MCX (g or cm3)")
+if ("--refresh-snapshot" %in% commandArgs(trailingOnly = TRUE)) {
+  page <- read_html("https://pmc.ncbi.nlm.nih.gov/articles/PMC4614783/")
+  raw  <- (page |> html_elements("table") |> html_table(fill = TRUE))[[1]]
+  # The scraped header row is split/garbled by html_table(); restore the column
+  # labels exactly as printed in the published Table 1.
+  colnames(raw) <- c("species", "brain mass (g or cm3)", "daily sleep (h)",
+                     "D/A (N mg−1 mm−2)", "NCX", "DNCX (N mg−1)",
+                     "ACX (mm2)", "O/N", "T", "MCX (g or cm3)")
+}
 
 ## 2. DATA READABLE (snapshot --> analysis-ready) ------------------------------
 ## Read the frozen snapshot back; all cleaning happens here, never above.

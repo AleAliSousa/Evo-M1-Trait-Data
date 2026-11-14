@@ -1,3 +1,284 @@
 
-=== R runner: run_all_scripts_v2.R ===
-$ Rscript run_all_scripts_v2.R
+=== Python check: _tools/audit_folders.py ===
+$ /Users/crossmodal/anaconda3/bin/python3 _tools/audit_folders.py
+registry data rows: 1036
+
+====================================================================================================
+1) NO PDF OF THE PAPER
+====================================================================================================
+  Anderson_Gallup_2015             files=1   supp_pdf=0 frozen=0 derived=0 reg=1
+  Canteloup_etal_2013              files=0   supp_pdf=0 frozen=0 derived=0 reg=0
+  Chang_etal_2015                  files=14  supp_pdf=0 frozen=2 derived=2 reg=2
+  Chang_etal_2017                  files=15  supp_pdf=0 frozen=2 derived=2 reg=2
+  Chatagny_etal_2013               files=0   supp_pdf=0 frozen=0 derived=0 reg=0
+  Cochet_Vauclair_2012             files=0   supp_pdf=0 frozen=0 derived=0 reg=0
+  Cubí_Llorente_2021               files=0   supp_pdf=0 frozen=0 derived=0 reg=0
+  Fleagle__2013                    files=0   supp_pdf=0 frozen=0 derived=0 reg=0
+  Gallup__1977                     files=1   supp_pdf=0 frozen=0 derived=0 reg=1
+  Geissmann_etal_2000              files=0   supp_pdf=0 frozen=0 derived=0 reg=0
+  Gómez_etal_2016                  files=9   supp_pdf=1 frozen=2 derived=1 reg=1
+  Ha__2009                         files=0   supp_pdf=0 frozen=0 derived=0 reg=0
+  Heiss_etal_1984                  files=1   supp_pdf=0 frozen=0 derived=0 reg=0
+  InoueNakamura__1997              files=8   supp_pdf=0 frozen=1 derived=1 reg=1
+  Jaeggi_etal_2020                 files=13  supp_pdf=1 frozen=6 derived=3 reg=2
+  Kerney_etal_2017                 files=15  supp_pdf=0 frozen=2 derived=2 reg=2
+  Kowiański_etal_1999              files=17  supp_pdf=0 frozen=3 derived=2 reg=2
+  Lilak_Phillips_2008              files=0   supp_pdf=0 frozen=0 derived=0 reg=0
+  Maille_etal_2013                 files=0   supp_pdf=0 frozen=0 derived=0 reg=0
+  Meguerditchian_etal_2012         files=0   supp_pdf=0 frozen=0 derived=0 reg=0
+  Modlinska_Stryjek_2016           files=7   supp_pdf=0 frozen=2 derived=1 reg=1
+  MotesRodrigo_etal_2018           files=0   supp_pdf=0 frozen=0 derived=0 reg=0
+  Nelson_Boeving_2015              files=0   supp_pdf=0 frozen=0 derived=0 reg=0
+  Nelson_etal_2015                 files=0   supp_pdf=0 frozen=0 derived=0 reg=0
+  Nemoto_etal_1994                 files=17  supp_pdf=0 frozen=3 derived=3 reg=2
+  Nguyen__2003                     files=0   supp_pdf=0 frozen=0 derived=0 reg=0
+  Norlén_etal_2019                 files=22  supp_pdf=0 frozen=3 derived=3 reg=4
+  Opie_etal_2013                   files=7   supp_pdf=0 frozen=2 derived=0 reg=1
+  Padrell_etal_2019                files=0   supp_pdf=0 frozen=0 derived=0 reg=0
+  Phillips_Hopkins_2007            files=0   supp_pdf=0 frozen=0 derived=0 reg=0
+  Plotnik_etal_2006                files=8   supp_pdf=0 frozen=1 derived=1 reg=1
+  Povinelli_etal_1993              files=8   supp_pdf=0 frozen=1 derived=1 reg=1
+  Qiu_etal_2022                    files=15  supp_pdf=0 frozen=8 derived=3 reg=2
+  RedinHurtado_etal_2023           files=9   supp_pdf=0 frozen=1 derived=1 reg=1
+  Regaiolli_etal_2018              files=0   supp_pdf=0 frozen=0 derived=0 reg=0
+  Reiss_Marino_2001                files=8   supp_pdf=0 frozen=1 derived=1 reg=1
+  Ruppell__2013                    files=0   supp_pdf=0 frozen=0 derived=0 reg=0
+  Schmitt_etal_2008                files=0   supp_pdf=0 frozen=0 derived=0 reg=0
+  Schweitzer_etal_2007             files=0   supp_pdf=0 frozen=0 derived=0 reg=0
+  Simmen_Charlot_2003              files=15  supp_pdf=0 frozen=2 derived=2 reg=2
+  Simmen_Hladik_1998               files=8   supp_pdf=0 frozen=1 derived=1 reg=1
+  Smaers_etal_2011_b               files=7   supp_pdf=0 frozen=1 derived=1 reg=3
+  Smaers_etal_2013                 files=7   supp_pdf=0 frozen=1 derived=1 reg=2
+  Smith_Jungers_1997               files=1   supp_pdf=0 frozen=0 derived=0 reg=1
+  Soria_etal_2021                  files=6   supp_pdf=0 frozen=1 derived=2 reg=1
+  Spinozzi_etal_1998               files=0   supp_pdf=0 frozen=0 derived=0 reg=0
+  Spoelstra__2021                  files=0   supp_pdf=0 frozen=0 derived=0 reg=0
+  Stensaas_etal_1974               files=1   supp_pdf=0 frozen=0 derived=0 reg=0
+  Suddendorf_CollierBaker_2009     files=8   supp_pdf=0 frozen=1 derived=1 reg=1
+  Terborgh__1983                   files=1   supp_pdf=0 frozen=0 derived=0 reg=0
+  VanRoosmalen_Klein_1988          files=0   supp_pdf=0 frozen=0 derived=0 reg=0
+  Vauclair_etal_2005               files=0   supp_pdf=0 frozen=0 derived=0 reg=0
+  Weisbecker_etal_2013             files=7   supp_pdf=0 frozen=2 derived=0 reg=1
+  Zhao_etal_2012                   files=0   supp_pdf=0 frozen=0 derived=0 reg=0
+  Zhao_etal_2016                   files=0   supp_pdf=0 frozen=0 derived=0 reg=0
+  Ziege_etal_2016                  files=10  supp_pdf=0 frozen=3 derived=2 reg=2
+  animaltraits_raw_Mammalia        files=0   supp_pdf=0 frozen=0 derived=0 reg=0
+  out                              files=1   supp_pdf=0 frozen=1 derived=0 reg=0
+
+====================================================================================================
+2) NO FROZEN SOURCE DATA IN FOLDER
+====================================================================================================
+  Anderson_Gallup_2015             files=1   derived=- reg=1 url=-
+  Canteloup_etal_2013              files=0   derived=- reg=0 url=-
+  Caspar_etal_2018                 files=1   derived=- reg=0 url=-
+  Changizi_He_2005                 files=3   derived=- reg=5 url=-
+  Chapelain_Hogervorst_2009        files=1   derived=- reg=0 url=-
+  Chatagny_etal_2013               files=0   derived=- reg=0 url=-
+  Cochet_Vauclair_2012             files=0   derived=- reg=0 url=-
+  Cordain_etal_2000                files=1   derived=- reg=0 url=-
+  Cubí_Llorente_2021               files=0   derived=- reg=0 url=-
+  Deaner_etal_2007                 files=3   derived=- reg=0 url=-
+  Elston_Fujita_2014               files=3   derived=- reg=0 url=-
+  Fan_etal_2017                    files=1   derived=- reg=0 url=-
+  Fleagle__2013                    files=0   derived=- reg=0 url=-
+  Gallup__1977                     files=1   derived=- reg=1 url=-
+  Geissmann_etal_2000              files=0   derived=- reg=0 url=-
+  Ha__2009                         files=0   derived=- reg=0 url=-
+  Halley_Krubitzer_2019            files=5   derived=['Halley_Krubitzer_2019_Figure1_source_audit.csv', 'Halley_Krubitzer_2019_Figure1_source_map.csv'] reg=1 url=-
+  Harlow_Maslow_1932               files=1   derived=- reg=8 url=-
+  Hayssen_etal_1993                files=219 derived=['Hayssen_etal_1993_Perissodactyla.csv', 'Hayssen_etal_1993_Chiroptera.csv', 'Hayssen_etal_1993_LiteratureCited.csv', 'Hayssen_etal_1993_Lagomorpha.csv', 'Hayssen_etal_1993_Edentata.csv', 'Hayssen_etal_1993_pdf_slices.csv', 'Hayssen_etal_1993_Insectivora.csv', 'Hayssen_etal_1993_Marsupialia.csv', 'Hayssen_etal_1993_Pholidota.csv', 'Hayssen_etal_1993_contents.csv', 'Hayssen_etal_1993_Cetacea.csv', 'Hayssen_etal_1993_Macroscelidea.csv', 'Hayssen_etal_1993_Carnivora.csv', 'Hayssen_etal_1993_Sirenia.csv', 'Hayssen_etal_1993_Primates.csv', 'Hayssen_etal_1993_Artiodactyla.csv', 'Hayssen_etal_1993_Tubulidentata.csv', 'Hayssen_etal_1993_Monotremata.csv', 'Hayssen_etal_1993_Dermoptera.csv', 'Hayssen_etal_1993_Rodentia.csv', 'Hayssen_etal_1993_Proboscidea.csv', 'Hayssen_etal_1993_Scandentia.csv', 'Hayssen_etal_1993_Hyracoidea.csv'] reg=21 url=-
+  Heiss_etal_1984                  files=1   derived=- reg=0 url=-
+  Henry_etal_2006                  files=2   derived=- reg=0 url=-
+  Hopkins_etal_2003                files=1   derived=- reg=0 url=-
+  Hopkins_etal_2011                files=1   derived=- reg=0 url=-
+  Jacobs_Williams_2001             files=3   derived=- reg=3 url=-
+  Ketten__2012                     files=3   derived=- reg=1 url=-
+  Krubitzer__1995                  files=2   derived=- reg=0 url=-
+  Krubitzer__1998                  files=2   derived=- reg=0 url=-
+  Krubitzer_etal_1995              files=2   derived=- reg=0 url=-
+  Lilak_Phillips_2008              files=0   derived=- reg=0 url=-
+  Luethke_etal_1988                files=2   derived=- reg=0 url=-
+  Luethke_etal_1989                files=2   derived=- reg=0 url=-
+  Lyon_etal_1998                   files=2   derived=- reg=0 url=-
+  Maille_etal_2013                 files=0   derived=- reg=0 url=-
+  MangoldWirz__1966                files=17  derived=['MangoldWirz__1966_TableII_source.tsv', 'MangoldWirz__1966_TableI_source.tsv', 'MangoldWirz__1966_TableI.csv', 'MangoldWirz__1966_TableII.csv', 'comparison/MangoldWirz__1966_downstream_provenance_audit.csv', 'comparison/MangoldWirz__1966_neocortex_ratio_comparison.csv', 'comparison/MangoldWirz__1966_regional_index_proportion_long.csv'] reg=2 url=-
+  Mayer_etal_2019                  files=6   derived=['Mayer_etal_2019_Fig6.csv', 'Mayer_etal_2019_Fig6_pdf_transcription.csv'] reg=1 url=-
+  Meguerditchian_etal_2012         files=0   derived=- reg=0 url=-
+  Morino_etal_2017                 files=1   derived=- reg=0 url=-
+  MotesRodrigo_etal_2018           files=0   derived=- reg=0 url=-
+  Nelson_Boeving_2015              files=0   derived=- reg=0 url=-
+  Nelson_etal_2011                 files=1   derived=- reg=0 url=-
+  Nelson_etal_2015                 files=0   derived=- reg=0 url=-
+  Nguyen__2003                     files=0   derived=- reg=0 url=-
+  Nunn_etal_2001                   files=2   derived=- reg=1 url=-
+  Olude_etal_2015                  files=1   derived=- reg=0 url=-
+  Padrell_etal_2019                files=0   derived=- reg=0 url=-
+  Phillips_Hopkins_2007            files=0   derived=- reg=0 url=-
+  Phillips_Sherwood_2005           files=1   derived=- reg=1 url=-
+  Phillips_Sherwood_2007_a         files=1   derived=- reg=0 url=-
+  Phillips_Sherwood_2007_b         files=1   derived=- reg=0 url=-
+  Phillips_etal_2007               files=1   derived=- reg=0 url=-
+  Plavcan_vanSchaik_1997_b         files=1   derived=- reg=1 url=-
+  Pontzer_etal_2014                files=2   derived=- reg=1 url=-
+  Reader_Laland_2002               files=4   derived=- reg=0 url=-
+  Regaiolli_etal_2018              files=0   derived=- reg=0 url=-
+  Rilling_Insel_1998               files=4   derived=['Rilling_Insel_1998_Table1.csv', 'rilling_insel_1998.xlsx'] reg=1 url=-
+  Ruppell__2013                    files=0   derived=- reg=0 url=-
+  Schmitt_etal_2008                files=0   derived=- reg=0 url=-
+  Schweitzer_etal_2007             files=0   derived=- reg=0 url=-
+  Smith_Jungers_1997               files=1   derived=- reg=1 url=-
+  Soto_etal_2022                   files=1   derived=- reg=0 url=-
+  Spinozzi_etal_1998               files=0   derived=- reg=0 url=-
+  Spoelstra__2021                  files=0   derived=- reg=0 url=-
+  Stensaas_etal_1974               files=1   derived=- reg=0 url=-
+  Terborgh__1983                   files=1   derived=- reg=0 url=-
+  VanRoosmalen_Klein_1988          files=0   derived=- reg=0 url=-
+  Vauclair_etal_2005               files=0   derived=- reg=0 url=-
+  Weaver__2005                     files=2   derived=- reg=0 url=-
+  Wirz__1950                       files=6   derived=['Wirz__1950_TableI.csv', 'Wirz__1950_TableI_source.tsv'] reg=1 url=-
+  Zhao_etal_2012                   files=0   derived=- reg=0 url=-
+  Zhao_etal_2016                   files=0   derived=- reg=0 url=-
+  animaltraits_raw_Mammalia        files=0   derived=- reg=0 url=-
+  deJager_etal_2022                files=7   derived=['deJager_etal_2022_calibration_check.csv', 'deJager_etal_2022_calibration.csv', 'deJager_etal_2022_Table1.csv'] reg=1 url=-
+  deMagalhães_Costa_2009           files=2   derived=- reg=1 url=-
+
+====================================================================================================
+2b) DERIVED DATA BUT NO FROZEN SOURCE (invariant-1 risk)
+====================================================================================================
+  Halley_Krubitzer_2019            files=5   derived=['Halley_Krubitzer_2019_Figure1_source_audit.csv', 'Halley_Krubitzer_2019_Figure1_source_map.csv']
+  Hayssen_etal_1993                files=219 derived=['Hayssen_etal_1993_Perissodactyla.csv', 'Hayssen_etal_1993_Chiroptera.csv', 'Hayssen_etal_1993_LiteratureCited.csv', 'Hayssen_etal_1993_Lagomorpha.csv', 'Hayssen_etal_1993_Edentata.csv', 'Hayssen_etal_1993_pdf_slices.csv', 'Hayssen_etal_1993_Insectivora.csv', 'Hayssen_etal_1993_Marsupialia.csv', 'Hayssen_etal_1993_Pholidota.csv', 'Hayssen_etal_1993_contents.csv', 'Hayssen_etal_1993_Cetacea.csv', 'Hayssen_etal_1993_Macroscelidea.csv', 'Hayssen_etal_1993_Carnivora.csv', 'Hayssen_etal_1993_Sirenia.csv', 'Hayssen_etal_1993_Primates.csv', 'Hayssen_etal_1993_Artiodactyla.csv', 'Hayssen_etal_1993_Tubulidentata.csv', 'Hayssen_etal_1993_Monotremata.csv', 'Hayssen_etal_1993_Dermoptera.csv', 'Hayssen_etal_1993_Rodentia.csv', 'Hayssen_etal_1993_Proboscidea.csv', 'Hayssen_etal_1993_Scandentia.csv', 'Hayssen_etal_1993_Hyracoidea.csv']
+  MangoldWirz__1966                files=17  derived=['MangoldWirz__1966_TableII_source.tsv', 'MangoldWirz__1966_TableI_source.tsv', 'MangoldWirz__1966_TableI.csv', 'MangoldWirz__1966_TableII.csv', 'comparison/MangoldWirz__1966_downstream_provenance_audit.csv', 'comparison/MangoldWirz__1966_neocortex_ratio_comparison.csv', 'comparison/MangoldWirz__1966_regional_index_proportion_long.csv']
+  Mayer_etal_2019                  files=6   derived=['Mayer_etal_2019_Fig6.csv', 'Mayer_etal_2019_Fig6_pdf_transcription.csv']
+  Rilling_Insel_1998               files=4   derived=['Rilling_Insel_1998_Table1.csv', 'rilling_insel_1998.xlsx']
+  Wirz__1950                       files=6   derived=['Wirz__1950_TableI.csv', 'Wirz__1950_TableI_source.tsv']
+  deJager_etal_2022                files=7   derived=['deJager_etal_2022_calibration_check.csv', 'deJager_etal_2022_calibration.csv', 'deJager_etal_2022_Table1.csv']
+
+====================================================================================================
+3) NO ROW IN __ReadMe.xlsx Sheet1
+====================================================================================================
+  Baizer_etal_2014                 files=6   paper_pdf=1 frozen=2 derived=0
+  Canteloup_etal_2013              files=0   paper_pdf=0 frozen=0 derived=0
+  Caspar_etal_2018                 files=1   paper_pdf=1 frozen=0 derived=0
+  Chapelain_Hogervorst_2009        files=1   paper_pdf=1 frozen=0 derived=0
+  Chatagny_etal_2013               files=0   paper_pdf=0 frozen=0 derived=0
+  Cochet_Vauclair_2012             files=0   paper_pdf=0 frozen=0 derived=0
+  Cordain_etal_2000                files=1   paper_pdf=1 frozen=0 derived=0
+  Cubí_Llorente_2021               files=0   paper_pdf=0 frozen=0 derived=0
+  Deaner_etal_2007                 files=3   paper_pdf=1 frozen=0 derived=0
+  Elston_Fujita_2014               files=3   paper_pdf=1 frozen=0 derived=0
+  Fan_etal_2017                    files=1   paper_pdf=1 frozen=0 derived=0
+  Fleagle__2013                    files=0   paper_pdf=0 frozen=0 derived=0
+  Geissmann_etal_2000              files=0   paper_pdf=0 frozen=0 derived=0
+  Ha__2009                         files=0   paper_pdf=0 frozen=0 derived=0
+  Hardus_etal_2009                 files=27  paper_pdf=1 frozen=8 derived=4
+  Heiss_etal_1984                  files=1   paper_pdf=0 frozen=0 derived=0
+  Henry_etal_2006                  files=2   paper_pdf=1 frozen=0 derived=0
+  Hopkins_etal_2003                files=1   paper_pdf=1 frozen=0 derived=0
+  Hopkins_etal_2011                files=1   paper_pdf=1 frozen=0 derived=0
+  Isler_vanSchaik_2006             files=5   paper_pdf=1 frozen=1 derived=0
+  Isler_vanSchaik_2009             files=5   paper_pdf=1 frozen=1 derived=0
+  Krubitzer__1995                  files=2   paper_pdf=1 frozen=0 derived=0
+  Krubitzer__1998                  files=2   paper_pdf=1 frozen=0 derived=0
+  Krubitzer_etal_1995              files=2   paper_pdf=1 frozen=0 derived=0
+  Lilak_Phillips_2008              files=0   paper_pdf=0 frozen=0 derived=0
+  Luethke_etal_1988                files=2   paper_pdf=1 frozen=0 derived=0
+  Luethke_etal_1989                files=2   paper_pdf=1 frozen=0 derived=0
+  Lyon_etal_1998                   files=2   paper_pdf=1 frozen=0 derived=0
+  Maille_etal_2013                 files=0   paper_pdf=0 frozen=0 derived=0
+  Meguerditchian_etal_2012         files=0   paper_pdf=0 frozen=0 derived=0
+  Morino_etal_2017                 files=1   paper_pdf=1 frozen=0 derived=0
+  MotesRodrigo_etal_2018           files=0   paper_pdf=0 frozen=0 derived=0
+  Nelson_Boeving_2015              files=0   paper_pdf=0 frozen=0 derived=0
+  Nelson_etal_2011                 files=1   paper_pdf=1 frozen=0 derived=0
+  Nelson_etal_2015                 files=0   paper_pdf=0 frozen=0 derived=0
+  Nguyen__2003                     files=0   paper_pdf=0 frozen=0 derived=0
+  Olude_etal_2015                  files=1   paper_pdf=1 frozen=0 derived=0
+  Padrell_etal_2019                files=0   paper_pdf=0 frozen=0 derived=0
+  Phillips_Hopkins_2007            files=0   paper_pdf=0 frozen=0 derived=0
+  Phillips_Sherwood_2007_a         files=1   paper_pdf=1 frozen=0 derived=0
+  Phillips_Sherwood_2007_b         files=1   paper_pdf=1 frozen=0 derived=0
+  Phillips_etal_2007               files=1   paper_pdf=1 frozen=0 derived=0
+  Reader_Laland_2002               files=4   paper_pdf=1 frozen=0 derived=0
+  Regaiolli_etal_2018              files=0   paper_pdf=0 frozen=0 derived=0
+  Ruppell__2013                    files=0   paper_pdf=0 frozen=0 derived=0
+  Schmitt_etal_2008                files=0   paper_pdf=0 frozen=0 derived=0
+  Schweitzer_etal_2007             files=0   paper_pdf=0 frozen=0 derived=0
+  Shultz_Dunbar_2007               files=5   paper_pdf=1 frozen=1 derived=0
+  Soto_etal_2022                   files=1   paper_pdf=1 frozen=0 derived=0
+  Spinozzi_etal_1998               files=0   paper_pdf=0 frozen=0 derived=0
+  Spoelstra__2021                  files=0   paper_pdf=0 frozen=0 derived=0
+  Stensaas_etal_1974               files=1   paper_pdf=0 frozen=0 derived=0
+  Terborgh__1983                   files=1   paper_pdf=0 frozen=0 derived=0
+  VanRoosmalen_Klein_1988          files=0   paper_pdf=0 frozen=0 derived=0
+  Vauclair_etal_2005               files=0   paper_pdf=0 frozen=0 derived=0
+  Weaver__2005                     files=2   paper_pdf=1 frozen=0 derived=0
+  Zhao_etal_2012                   files=0   paper_pdf=0 frozen=0 derived=0
+  Zhao_etal_2016                   files=0   paper_pdf=0 frozen=0 derived=0
+  animaltraits_raw_Mammalia        files=0   paper_pdf=0 frozen=0 derived=0
+  out                              files=1   paper_pdf=0 frozen=1 derived=0
+
+577 folders scanned; 474 clean on all three
+wrote /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/folder_audit.csv
+
+=== Python check: _tools/check_naming.py ===
+$ /Users/crossmodal/anaconda3/bin/python3 _tools/check_naming.py
+repos checked      : PUB=/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data
+registry rows      : 1036   canonical spellings: 587
+findings           : 23417 in scope, 7 skipped as source/comparison files
+   P3  data_value             9450
+   P4  code_comment           1
+   P4  data_value             13899
+   P4  doc                    60
+   P4  filename               6
+   P4  unreadable             1
+
+wrote /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/naming_check.csv
+VERDICT: PASS
+
+=== Python check: _checks/check_taxon_clarity.py ===
+$ /Users/crossmodal/anaconda3/bin/python3 _checks/check_taxon_clarity.py
+register: 11 rows (9 wildcard printed names, 2 source-specific)
+clarity classes in use: {'subspecies_unstated': 2, 'domestication_unstated': 3, 'determinate': 3, 'genus_indet': 3}
+
+coverage against 10681 observed (source, printed_name) pairs:
+  judged      100 pairs      938 values  (0.8% of values)
+  unjudged  10581 pairs   122170 values
+
+unjudged AND resolving more than one way (11) -- these are actively inconsistent:
+  Human                        (merge: __merging_cell_morphology)   -> Homo sapiens; Human
+  African lion                 (merge: __merging_cell_morphology)   -> African lion; Panthera leo
+  Caracal                      (merge: __merging_cell_morphology)   -> Caracal; Caracal caracal
+  Chacma baboon                (merge: __merging_cell_morphology)   -> Chacma baboon; Papio ursinus
+  Golden lion tamarin          (merge: __merging_cell_morphology)   -> Golden lion tamarin; Leontopithecus rosalia
+  African wild dog             (merge: __merging_cell_morphology)   -> African wild dog; Lycaon pictus
+  Siberian tiger               (merge: __merging_cell_morphology)   -> Siberian tiger; Panthera tigris altaica
+  Banded mongoose              (merge: __merging_cell_morphology)   -> Banded mongoose; Mungos mungo
+  Giraffe                      (merge: __merging_cell_morphology)   -> Giraffe; Giraffa camelopardalis
+  Pongo abelii                 (merge: __merging_endocranial_volume) -> Pongo abelii; Pongo sp.
+  Pongo pygmaeus               (merge: __merging_endocranial_volume) -> Pongo pygmaeus; Pongo sp.
+
+unjudged pairs whose printed name is a single word (common name, no binomial): 302
+  sheep                        n=  252  resolves_to=Ovis aries
+  Human                        n=  130  resolves_to=Homo sapiens; Human
+  Caracal                      n=   72  resolves_to=Caracal; Caracal caracal
+  Chimpanzee                   n=   64  resolves_to=Pan troglodytes
+  human                        n=   56  resolves_to=Homo sapiens
+  Giraffe                      n=   52  resolves_to=Giraffe; Giraffa camelopardalis
+  bonobo                       n=   32  resolves_to=Pan paniscus
+  chimpanzee                   n=   32  resolves_to=Pan troglodytes
+  gibbon                       n=   32  resolves_to=Hylobates lar
+  gorilla                      n=   32  resolves_to=Gorilla gorilla
+
+highest-value unjudged pairs (the worklist):
+  Panthera pardus pardus             n=  262  (merge: __merging_cell_morphology)
+  sheep                              n=  252  (merge: __merging_cortical_layers)
+  Acinonyx jubatus jubatus           n=  240  (merge: __merging_cell_morphology)
+  Panthera leo leo                   n=  188  (merge: __merging_cell_morphology)
+  Human                              n=  130  (merge: __merging_cell_morphology)
+  Balaenoptera acutorostrata         n=   96  AvelinodeSouza_etal_2025
+  Pan troglodytes                    n=   87  (merge: __merging_behaviour)
+  Macaca fascicularis                n=   84  (merge: __merging_behaviour)
+  Pongo pygmaeus                     n=   79  (merge: __merging_behaviour)
+  Macaca mulatta                     n=   77  (merge: __merging_behaviour)
+
+OK: register is well-formed.

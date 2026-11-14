@@ -71,6 +71,7 @@ if (!nrow(compiled)) stop("app.R produced an empty compiled table.")
 DS <- c(
   "Brain-structure volumes"  = "__merging_volumes",
   "Cell counts"              = "__merging_cell_counts_isotropic_fractionator",
+  "Cell counts (histology)"  = "__merging_cell_counts_histology",
   "EvoM1 traits"             = "____EvoM1_TraitTable (melted)",
   "Body & ecology"           = "__merging_body_ecology",
   "Brain mass"               = "__merging_brain_mass",
@@ -89,6 +90,7 @@ DS <- c(
   "Cell type, size & morphology" = "__merging_cell_morphology",
   ## added 2026-10-15: app.R std_merge(GH$supplementary)
   "Supplementary sources"    = "__merging_supplementary",
+  "Additional published datasets" = "__merging_supplementary",
   ## added 2026-10-31: three app.R std_merge() tables whose long files live in existing merge folders
   "Taste performance"        = "__merging_sensory",
   "Social composition, mirror tests & play" = "__merging_behaviour",

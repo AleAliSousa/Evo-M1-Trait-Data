@@ -1,0 +1,9 @@
+# Borghammer et al. 2012 — Supplementary Table 1
+
+**Source:** `ane_1556_sm_tablesi_s2-figures1.doc`, the journal-supplied supplementary online information to Borghammer et al. (2012), DOI 10.1111/j.1600-0404.2011.01556.x. The printed caption is “Supplementary Table 1. Quantitative CMRglc values in the two study samples.”
+
+`Borghammer_etal_2012_TableS1_snapshot.doc` is a byte-identical copy of the supplied digital source. The R reader converts that frozen copy to temporary HTML with macOS `textutil` and parses the first Word table. This preserves the original document while providing 12 analysis rows (GM, WM, GM/WM × Aarhus/Cologne × Controls/PD). Each row keeps the published cell, mean, second numeric component, sample size, units, and significance mark. The `±` component is not labelled SD or SEM in the table, so its type is left unspecified.
+
+The footnote gives GM and WM CMRglc units as µmol/100g/min and `* p < 0.05`, `** p < 0.001` for Aarhus versus the corresponding Cologne group. GM/WM is a unitless ratio. Aarhus n = 8 controls and 12 PD; Cologne n = 3 controls and 9 PD. The accompanying text reports significant between-center differences in absolute values and says further analyses used normalized data. **Keep centers separate; do not treat these clinical arms as independent species observations.**
+
+An AI assistant checked the converted table structure and numeric lexemes on 2026-11-12. The digital snapshot requires no PDF transcription, but the Word-to-HTML extraction and analysis CSV still need a human source-side review. The registry has no exact `Borghammer_etal_2012_TableS1` row yet, so the script currently writes the analysis CSV only. The item-scoped registry row file proposes the title and metadata for owner registration; a rerun will write the public TSV once the row is present.

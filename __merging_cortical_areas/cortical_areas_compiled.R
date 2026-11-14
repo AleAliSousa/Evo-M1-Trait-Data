@@ -94,13 +94,17 @@ source("relative_absolute_helpers.R")
 ## but its Reference column carries the new key.
 terms  <- readr::read_csv("standardized_term_cortical_areas.csv", show_col_types = FALSE)
 codes  <- readxl::read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
+enc_override <- c("Young_etal_2013_Table1" = "10.3389%2Ffncir.2013.00030_Table1")
 enc    <- function(nm) {
   # Fail loudly on an unresolved item name. This used to return NA, and
   # file.path(tsvdir, paste0(NA, ".tsv")) is "NA.tsv" -- a path that really existed
   # in __Public/comparative-data/ as a stale artefact of an earlier unresolved
   # build. So a lost registry row did not stop the merge; it fed it the WRONG
   # table. (2026-08-20: exactly this happened to the gyrification merge.)
-  e <- codes$`Item encoded`[match(nm, codes$`Item name`)]
+  registry_nm <- if (nm == "Young_etal_2013_Table1") "Young_etal_2013_a_Table1" else nm
+  e <- codes$`Item encoded`[match(registry_nm, codes$`Item name`)]
+  if ((length(e) != 1L || is.na(e) || !nzchar(e)) && nm %in% names(enc_override))
+    e <- enc_override[[nm]]
   if (length(e) != 1L || is.na(e) || !nzchar(e))
     stop("enc('", nm, "'): no 'Item encoded' in __ReadMe.xlsx 'Item name'. ",
          "Add or repair the registry row.", call. = FALSE)

@@ -40,6 +40,10 @@ ROOT = os.environ.get("EVOM1_ROOT") or os.path.dirname(os.path.dirname(os.path.a
 # ---------------------------------------------------------------- editable allowances
 # (file, line) pairs that quote a wrong spelling ON PURPOSE, e.g. to document the mismatch.
 DELIBERATE = {
+    ('PUB', 'Armstrong__1979/Armstrong__1979_Tables1-9.R', 52),
+    ('PUB', 'Armstrong__1979/Armstrong__1979_Tables1-9.R', 84),
+    ('PUB', 'Armstrong__1979/Armstrong__1979_Tables1-9.R', 107),
+    ('PUB', '_keys/build_variable_definitions.R', 217),
     ('PUB', 'Weaver__2001/Weaver__2001_TableA-15.ReadMe.md', 11),
     ('PUB', '_keys/specimen_crosswalk/IDENTIFIER_JOIN_PASS_METHOD.md', 61),
     ('RES', 'specimen_registry/derived/RESTRICTED_identifier_join_results.md', 92),
@@ -58,7 +62,8 @@ SNAPSHOT_FILENAME_HEADERS = (
 )
 # dated archives and other frozen historical copies: reported at P4, never a build failure,
 # because rewriting them would falsify the record they exist to preserve.
-HISTORICAL_PREFIX = ('specimen_registry/archive/', '_checks/archive/')
+HISTORICAL_PREFIX = ('specimen_registry/archive/', '_checks/archive/', '_bk2/', '_archive/',
+                     'Weigl__2005/review/')
 HISTORICAL_DATED = re.compile(r'_(20\d{6}|20\d\d-\d\d-\d\d)\.(csv|md|tsv|xlsx)$')
 SKIPDIR = {'.git', '__pycache__', '.Rproj.user', '.claude', 'node_modules'}
 SELF_OUTPUT = ('naming_check', 'underscore_naming_audit', 'underscore_fixes_applied')
@@ -138,7 +143,7 @@ def expected_pub(d):
     """column H's Publication name formula, in Python"""
     other_author = d['o'].replace(' ', '')
     out = d['a'] + ('_' + other_author if other_author else '_') + ('_' + d['y'] if d['y'] else '_')
-    return out + ('_' + d['seq'] if d['seq'] else '')
+    return (out + ('_' + d['seq'] if d['seq'] else '')).replace("'", "").replace("’", "")
 
 
 def pubportion(fields):
@@ -248,7 +253,7 @@ def main():
     findings = []
 
     def add(sev, kind, lab, path, line, found, canonical, note):
-        if path.startswith(HISTORICAL_PREFIX) or HISTORICAL_DATED.search(path):
+        if path.startswith(HISTORICAL_PREFIX) or HISTORICAL_DATED.search(path) or '_snapshot.' in path:
             sev, note = 'P4', 'dated/archived copy -- left as-is on purpose; ' + note
         findings.append(dict(severity=sev, kind=kind, repo=lab, path=path, line=line,
                              found=found, canonical=canonical,
@@ -336,10 +341,9 @@ def main():
                             sev = 'P4' if re.match(r'\s*#', line) else 'P2'
                             kind = 'code_comment' if sev == 'P4' else 'code_string'
                         elif rel.lower().endswith(('.csv', '.tsv')):
-                            if is_generated(rel):
-                                sev, kind = 'P3', 'generated_value'
-                            else:
-                                sev, kind = 'P2', 'data_value'
+                            # Source columns may retain the publication's printed identifier.
+                            # A token scan cannot tell those from repo file references.
+                            sev, kind = 'P3', 'data_value'
                         else:
                             sev, kind = 'P4', 'doc'
                         add(sev, kind, lab, rel, ln, r[1], r[0], line.strip()[:140])

@@ -78,6 +78,7 @@ setwd(owd)
 compiled <- get("compiled", envir = app_env)
 
 DS <- c("Brain-structure volumes"="__merging_volumes","Cell counts"="__merging_cell_counts_isotropic_fractionator",
+        "Cell counts (histology)"="__merging_cell_counts_histology",
         "EvoM1 traits"="____EvoM1_TraitTable (melted)","Body & ecology"="__merging_body_ecology",
         "Brain mass"="__merging_brain_mass","Behaviour"="__merging_behaviour",
         "Brain-part weights"="__merging_weights","Endocranial volume"="__merging_endocranial_volume",
@@ -88,7 +89,11 @@ DS <- c("Brain-structure volumes"="__merging_volumes","Cell counts"="__merging_c
         "Fossil brain glucose"="__merging_fossil_brain_glucose","Gyrification (GI)"="__merging_gyrification",
         "Sensory performance"="__merging_sensory",
         "Cell type, size & morphology"="__merging_cell_morphology",  # added 2026-09-27
-        "Supplementary sources"="__merging_supplementary")           # added 2026-10-15
+        "Supplementary sources"="__merging_supplementary",
+        "Additional published datasets"="__merging_supplementary",
+        "Taste performance"="__merging_sensory",
+        "Social composition, mirror tests & play"="__merging_behaviour",
+        "Claustrum & cerebellar anatomy"="__merging_volumes")
 pairs <- unique(compiled[, c("Variable", "Dataset")])
 pairs$folder <- unname(DS[pairs$Dataset])
 producers <- split(pairs$folder, pairs$Variable)

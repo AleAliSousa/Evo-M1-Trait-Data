@@ -58,7 +58,7 @@ snapshot_csv <- file.path(folder, paste0(item_name, "_snapshot.csv"))
 ## 1. HELPERS (pixel work on the bitmap embedded in the PDF) --------
 ## Rows/columns are kept 0-based in the arithmetic, exactly as in the original Python
 ## builder; `px()` converts a 0-based half-open slice (python a[r0:r1, c0:c1]) into an R sub-matrix.
-suppressPackageStartupMessages(library(magick))
+suppressPackageStartupMessages(library(png))
 
 ## the embedded bitmap, at native resolution, as an integer matrix [row, col] (never a re-render):
 ## poppler's pdfimages writes the image stream itself; the image is chosen by page + expected shape.
@@ -68,8 +68,9 @@ load_bitmap <- function(pdf, page_no, shape) {
                 stdout = FALSE, stderr = FALSE)
   if (st != 0) stop("pdfimages (poppler) failed on ", pdf, call. = FALSE)
   for (f in list.files(tmp, full.names = TRUE)) {
-    d <- image_data(image_read(f), channels = "gray")
-    a <- t(matrix(as.integer(d[1, , ]), nrow = dim(d)[2], ncol = dim(d)[3]))
+    d <- png::readPNG(f)
+    if (length(dim(d)) != 2L) stop("expected a greyscale embedded PNG: ", f, call. = FALSE)
+    a <- matrix(as.integer(round(d * 255)), nrow = nrow(d), ncol = ncol(d))
     if (identical(dim(a), as.integer(shape))) return(a)
   }
   stop("no embedded bitmap of shape ", paste(shape, collapse = " x "), " on PDF page ", page_no, call. = FALSE)

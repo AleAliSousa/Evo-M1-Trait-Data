@@ -114,6 +114,10 @@ SOURCE_STATEMENTS = {
                          "and 2% paraformaldehyde.", PAPER_PROSE),
     "Collins_etal_2016": ("After postfixing in 4% (wt/vol) paraformaldehyde for 2 wk, each sheet "
                           "was cut into small pieces", PAPER_PROSE),
+    "Kverkova_etal_2018": ("Brains were dissected and weighed immediately after perfusion. "
+                            "The volume of the perfused brain was calculated by dividing the "
+                            "brain mass by the fixed brain tissue density (1.036 g/cm3).",
+                            PAPER_PROSE),
     "Weaver__2001": ("from measured brain volume (extant) or endocranial volume via Ruff et al. "
                      "1997 (fossils)", FOLDER_NOTE),
     "Changizi_Shimojo_2005": ("Brain mass information is used throughout the paper, and these "
@@ -375,7 +379,10 @@ FOLDER_QUOTES = {
     ("AvelinodeSouza_etal_2025", "Whole brain_Mass, g"):
         "whole brain (both sides), NOT including the olfactory bulbs",
     ("Kverkova_etal_2018", "Brain_Mass.g"):
-        "Whole brain; appx. sum of 14 structures incl Olfactory bulbs",
+        "Brain_Mass.g -- Table S1 species mean brain mass (folder definitions code "
+        "Mass.g: 'mass in grams'); brains dissected and weighed immediately after "
+        "perfusion (paper Methods). The definitions file's 'sum of 14 structures' "
+        "wording describes the Fig3 whole-brain VOLUME, not this mass column.",
     ("MacLeod__2000", "brain_weight_g"):
         "uses the estimated brain weight when a row prints both a with-meninges weight and an "
         "estimated weight (e.g. A375)",
@@ -414,6 +421,17 @@ RESOLVED = {
          "mass_measured", True, "quoted", P),
     ("Collins_etal_2016", "brain_mass_g"):
         ("mass", "mass_fixed", "fixed", "unknown", "unknown", "unknown",
+         "mass_measured", True, "quoted", P),
+    # Kverkova_etal_2018 Table S1, Brain_Mass.g: the ASSIGN entry took the folder
+    # definitions file's Fig3 "Brain" description (a total brain VOLUME, approx.
+    # sum of 14 structures) as the basis of this MASS column. The paper's Methods
+    # state the brains were dissected and weighed immediately after perfusion,
+    # and that the perfused-brain volume was derived FROM the mass (mass /
+    # 1.036 g/cm3) -- the mass is the primary measurement. Weighed whole brain,
+    # olfactory bulbs included (the brain was weighed before dissection into
+    # compartments), so it pools as a measured fixed mass.
+    ("Kverkova_etal_2018", "Brain_Mass.g"):
+        ("mass", "mass_fixed", "fixed", "yes", "unknown", "unknown",
          "mass_measured", True, "quoted", P),
     ("Weaver__2001", "Brain_Mass.mg"):
         ("mass", "mass_from_volume_or_ecv", "derived", "unknown", "unknown", "unknown",

@@ -1,48 +1,109 @@
-# Baker_etal_2025_SupplementaryData1
+# Baker et al. 2025 — Supplementary Data 1 (species brain & body mass)
 
-## Source
+Baker J, Barton RA, Venditti C (2025). *Macroevolutionary brain scaling is a
+microevolutionary metaphenomenon.* Nature Communications 17.
+doi:10.1038/s41467-025-66843-0
 
-Supplement: `42003_2025_8686_MOESM3_ESM.xlsx` (Supplementary Data 1)
-PDF: `Baker-2025-Human-dexterity-and-brains-evolved-.pdf`
+Supplementary Data **1** — species-level body mass and whole-brain mass for
+**4,679 species** across seven animal classes, collated from the literature,
+with the source of every value recorded per row (37 sources; full citations on
+the file's "Reference List" sheet). The mammal subset is **1,684 species**.
 
-Paper: Baker, J., Barton, R. A., & Venditti, C. (2025). *Human dexterity and brains evolved hand in hand.* Communications Biology 8(1). https://doi.org/10.1038/s42003-025-08686-5
+## What we built
 
-Data: **Supplementary Data 1**, two sheets — `Data` (178 taxa × hand-bone, brain/body, and behavioural columns) and `References` (51 numbered primary sources plus three global behavioural sources).
+- **Frozen source (digital-native, no snapshot):** the journal download
+  `41467_2025_66843_MOESM3_ESM.xlsx` is machine-readable, so it **is** the
+  frozen source — kept verbatim in this folder, never edited
+  (see `_skills/build-dataset-item/references/__HOWTO_build_a_dataset_file.md`
+  §0a invariant 1).
+- **Reformat:** `Baker_etal_2025_SupplementaryData1.R` reads the frozen source
+  (sheet "Data S1"), keeps the mammal rows, adds `species_sci` (printed name
+  with underscores replaced by spaces; printed name preserved verbatim as
+  `Species_Baker2025`), and writes:
+  - `Baker_etal_2025_SupplementaryData1.csv` (analysis-ready, 1,684 rows)
+  - `__Public/comparative-data/10.1038%2Fs41467-025-66843-0_SupplementaryData1.tsv`
+    (public, DOI-encoded — name is the expected Item encoded; see Registry)
+- **Definitions:** `reference_tables/Baker_etal_2025_SupplementaryData1_definitions.csv`.
+- **Reader:** the publisher XLSX was downloaded from nature.com on 2026-11-16
+  and the CSV/TSV were extracted by Muse (Buddy), Michael Proulx's AI
+  assistant, with a Python equivalent of the .R build; every value was
+  cross-checked against the frozen source programmatically (row counts, no
+  duplicates, spot values). **R execution of the .R script is pending** — the
+  script reproduces the same outputs from the frozen source.
 
-## This paper is **secondary**
+## Data role
 
-Baker et al. did not measure the specimens; they compiled hand-bone lengths, brain/body sizes and behaviour from many **primary** sources. Each data cell carries a numeric reference token in `Bone References` or `Brain References` that keys into the supplement's second sheet. The build resolves those tokens to their primary citations, so the output stands on its own.
+**Secondary (compilation).** Every value is compiled from an earlier
+publication named in the row's `Source` column; the underlying primaries are
+the merge-worthy sources. The paper's own methods: only whole-brain masses
+were used (masses reported excluding the olfactory bulb were excluded);
+juvenile values were excluded; where only endocranial volumes were available
+they were converted to mass at **1 g = 1 cm³**. The per-row basis (weighed
+mass vs volume-converted) is **not** flagged in the source, so before this
+item can feed `__merging_brain_mass` its `Brain_mass_g` column needs a
+basis classification in `_keys/brain_size_basis.csv` (compilation,
+basis unresolved per row — the Burger 2019 pattern), and pooling must stay
+primary-preferred so these values never displace a primary measurement.
 
-## Layout
+## Quality caveats
 
-The **final outputs (csv, tsv) come only from the paper, via the snapshot** — the References sheet is transcribed once into `reference_tables/` and used to resolve tokens.
+- Brain-mass values are a **mixture of weighed masses and volume-derived
+  estimates** with no per-row flag (see Data role). Do not treat the column
+  as uniformly measured.
+- Values were rounded to 4 decimal places in the analysis CSV/TSV to strip
+  binary float noise present in the publisher file (e.g. a body mass of
+  58560.0000000006 g). The frozen source is unrounded.
+- The paper's mammal taxonomy is as printed in 2025; a small number of
+  printed names are older synonyms of the project's accepted names. No
+  synonym bridges were added: add rows to `_keys/Stephan/species_key.csv`
+  (source_publication = Baker2025) if a specific project species needs
+  recovering.
 
-| Path | Role |
-|---|---|
-| `Baker_etal_2025_SupplementaryData1_snapshot.xlsx` | Faithful copy of the published supplement (sheets `Data`, `References`). Source of truth. |
-| `Baker_etal_2025_SupplementaryData1.R` | **Preparation** → `Baker_etal_2025_SupplementaryData1.csv` (+ DOI-named TSV). Reads only the snapshot. |
-| `Baker_etal_2025_SupplementaryData1.csv` | Lean, analysis-ready table, 178 rows. |
-| `reference_tables/Baker_etal_2025_references.csv` | **Primary references off sheet 2**, number → short + full citation, with category (bone / brain / behavior) and notes. |
-| `reference_tables/Baker_etal_2025_definitions.csv` | Data dictionary (columns, units; documentation only). |
-| `comparison/` | Reserved for QA outputs. |
+## Species names
 
-## 1. Preparation — `Baker_etal_2025_SupplementaryData1.R` → `...csv`
+Printed `Species` (underscore binomial) preserved as `Species_Baker2025`;
+`species_sci` is the same name with spaces. 1,684 mammal rows, no duplicate
+species, every row carries both masses.
 
-Reads **only** the snapshot `Data` sheet. One row per taxon (178), 45 columns. Only obvious in-place fixes:
+## Registry
 
-- Values parsed to numbers; blanks → `NA`.
-- The restricted-data placeholder `*` (Lemelin 1996 strepsirrhine hand data, withheld from the supplement) → `NA`, and the row flagged `bone_data_restricted = TRUE` (26 rows).
-- `Tree Name` (e.g. `Adapis_parisiensis`) → canonical binomial `Species` (`Adapis parisiensis`); the original label is kept as `Tree_Name`.
-- **Reference resolution:** `Bone References` / `Brain References` tokens are split on `;`/`,`, the trailing `*` on `40*` is stripped, and each number is mapped to a short primary citation in new `*_References_resolved` columns. The raw numeric tokens are retained (`Bone_References`, `Brain_References`) so the mapping to `references.csv` stays explicit.
+**PENDING — owner step.** This item is not yet registered in `__ReadMe.xlsx`
+Sheet1. The registry row still needs: Item number `Supplementary Data 1`,
+Item full original title (the printed caption), and the descriptive columns
+N–AJ (Source format: table; Source filetype: xlsx; Data role: secondary;
+Source (if secondary): per-row literature sources named in the Source column;
+Human visual check of snapshot: Not applicable: tabulated and digital
+already). Columns E–L are formulas and must not be hand-edited. The public
+TSV has been written under the expected Item encoded
+`10.1038%2Fs41467-025-66843-0_SupplementaryData1`; the .R build looks the
+code up in the registry once the row exists and warns until then.
 
-Measurements are left in the paper's published units — **log10** of length (mm), mass (g) or volume (cm³) — not back-transformed. See the definitions table.
+## Downstream use
 
-On save it writes the CSV next to the script and a tab-separated copy named by the item's encoded DOI (`10.1038%2Fs42003-025-08686-5_SupplementaryData1`, from `__ReadMe.xlsx`) into the shared `__Public/comparative-data/` folder.
+Candidate for the `__merging_brain_mass` harvest as a **secondary**
+compilation (after the basis classification above) and for
+`__merging_body_ecology` (body mass, secondary). Worked example of the gap it
+fills: of the 298 `compiled_genome_data` cohort species (added 2026-11-16),
+150 lack the combined brain-mass trait in the current merge output; this
+dataset carries a published brain mass for **67** of them, including 7 of the
+8 cohort species that have a neocortex volume but no brain mass
+(*Eumetopias jubatus* 575 g; *Puma concolor* 128 g; *Mustela erminea*
+4.11 g; *Mustela nivalis* 1.67 g; *Neogale vison* 7.2 g;
+*Rhinopoma microphyllum* 0.387 g; *Fukomys damarensis* 1.3353 g, compiled
+from Kverková et al. 2018 — itself a primary source in this repo).
 
-## 2. Primary references — `reference_tables/Baker_etal_2025_references.csv`
+## Checks
 
-Transcribed from the `References` sheet. Numbers **1–25 + 40** are hand-bone sources, **26–39** are brain/body sources, and three whole-column behavioural sources are appended: tool use = Bentley-Condit 2010, binocularity = Ross 1995, workspace = Feix et al. 2015. Grouped entries are preserved with notes: **6** = Rolian personal communication (sub-sources Rolian 2009, Nelson et al. 2011); **32** = the Stephan/Frahm brain-volume series (Frahm 1982, Stephan 1981, Stephan 1984); **40** = Lemelin 1996 dissertation, **restricted** — values withheld from the supplement and shown as `*`.
+- Analysis CSV = 1,684 rows (one per mammal species; no duplicates; no
+  missing body or brain mass). Counts verified against the frozen source:
+  4,679 total rows (mammals 1,684; birds 1,327; bony fish 1,097; non-avian
+  reptiles 278; amphibians 172; cartilaginous fish 64; insects 57).
+- No independent curated copy of this table exists to audit against, so no
+  comparison/ step (per HOWTO §7, its absence is not a defect here).
 
-## 3. Definitions — `reference_tables/Baker_etal_2025_definitions.csv`
+## Table checks
 
-One row per output column with its unit. Documents the output; the preparation script does not read it. Taxonomy harmonisation (matching `Species` across papers) is a later, cross-paper step.
+The published table prints no totals or other checkable arithmetic, so there
+is no §7a relation to check. The .R build instead records two structural
+checks in `table_checks` (one row per species; no missing masses) — both pass
+on the frozen source as downloaded.

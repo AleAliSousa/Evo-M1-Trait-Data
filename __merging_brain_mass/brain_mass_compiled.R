@@ -278,7 +278,7 @@ stopifnot(all(uf$poolable_group %in% names(FAMILY)))
 uf$measure_emitted<-unname(FAMILY[uf$poolable_group])
 legacy_estimate<-uf$poolable_group=="mass_from_volume_or_ecv" & !nzchar(uf$original_quantity)
 uf$original_quantity[legacy_estimate]<-"volume_subtype_unchecked"
-resolutions<-read.csv(file.path(out,"brain_mass_row_basis.csv"),check.names=FALSE,colClasses="character",na.strings=NULL)
+resolutions<-read.csv(file.path(repo,"__metadata","curation","brain_mass_row_basis.csv"),check.names=FALSE,colClasses="character",na.strings=NULL)
 stopifnot(!anyDuplicated(resolutions$resolution_id))
 for(i in seq_len(nrow(resolutions))) {
   f<-resolutions[i,]
@@ -302,7 +302,7 @@ for(i in seq_len(nrow(resolutions))) {
 ## a veto must match exactly that many harvested rows or the build stops. Species "*" = all.
 ## Vetoed rows leave the pool and brain_mass_unfiltered.csv; they are listed in brain_mass_vetoed_rows.csv.
 vetoed <- uf[0, , drop = FALSE]; vetoed$veto_flag <- character(0)
-vpath <- file.path(out, "brain_mass_value_flags.csv")
+vpath <- file.path(repo, "__metadata", "curation", "brain_mass_value_flags.csv")
 if (file.exists(vpath)) {
   fl <- read.csv(vpath, stringsAsFactors = FALSE, colClasses = "character", check.names = FALSE)
   bad <- setdiff(unique(trimws(fl$action)), "skip")

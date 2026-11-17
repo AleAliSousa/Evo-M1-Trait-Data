@@ -1,0 +1,15 @@
+output_file_id,input_file_id,relation,source_locator,note
+bahney-t1-csv,bahney-t1-builder,produced_by,,Producer declared in file registry
+bahney-t2-csv,bahney-t2-builder,produced_by,,Producer declared in file registry
+bahney-t3-csv,bahney-t3-builder,produced_by,,Producer declared in file registry
+bahney-t4-csv,bahney-t4-builder,produced_by,,Producer declared in file registry
+bahney-t1-snapshot,bahney-paper,transcribed_from,,Item README documents manual paper transcription
+bahney-t2-snapshot,bahney-paper,transcribed_from,,Item README documents manual paper transcription
+bahney-t1-tsv,bahney-t1-builder,produced_by,,Producer declared in file registry
+bahney-t1-tsv,bahney-t1-csv,exported_from,,Same registered item build
+bahney-t2-tsv,bahney-t2-builder,produced_by,,Producer declared in file registry
+bahney-t2-tsv,bahney-t2-csv,exported_from,,Same registered item build
+bahney-t3-tsv,bahney-t3-builder,produced_by,,Producer declared in file registry
+bahney-t3-tsv,bahney-t3-csv,exported_from,,Same registered item build
+bahney-t4-tsv,bahney-t4-builder,produced_by,,Producer declared in file registry
+bahney-t4-tsv,bahney-t4-csv,exported_from,,Same registered item build

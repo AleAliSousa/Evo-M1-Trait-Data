@@ -1,23 +1,23 @@
-built:           2026-11-13 16:26:25 PST
-repo commit:     33dccf3 (from .git/HEAD; git command unavailable)
+built:           2026-11-14 13:11:12 PST
+repo commit:     8bb4a63 (from .git/HEAD; git command unavailable)
 cohort:          EvoM1 (25 species)
 match level:     species
 core threshold:  >= 80% of cohort (>= 20 species)
 pooling mode:    off
 species without any data: none
-long rows (all values):   5841
-  of which measurement:   5789
-species x variable cells: 5525
-variables in wide:        1020   (matrix fill 21.7%)
+long rows (all values):   5840
+  of which measurement:   5788
+species x variable cells: 5524
+variables in wide:        1019   (matrix fill 21.7%)
 variables in wide_core:   34   (matrix fill 91.6%)
 cells unresolved categorical: 0
 cells with numeric spread > 50%: 10
-units: 1020 from key, 0 from merge rows, 0 parsed from label, 0 none
+units: 1019 from key, 0 from merge rows, 0 parsed from label, 0 none
 variables flagged m1_motor_related: 102 (of which core: 0)
 domains excluded from wide/cells/dictionary: dataset metadata
 
 variables per domain (all / core / m1_motor_related):
-  brain structure & size            214 /    2 /    5
+  brain structure & size            213 /    2 /    5
   cellular composition              146 /    0 /    4
   cortical & cerebellar folding       9 /    0 /    0
   body size                          11 /    2 /    0

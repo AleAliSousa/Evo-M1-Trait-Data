@@ -24,13 +24,26 @@ p. 704. `Chvátal` restored from the page image (text-layer accent glyph).
 ## Data role — secondary compilation (with two primary rows)
 Every row except the paper's own spinal-cord rows ("This Study") is compiled from earlier
 publications; `data_role` marks rows `primary`/`secondary`; registry **Data role = both**.
+The two `This Study` rows are primary reports for the spinal-cord GNR, but their brain
+weights are printed as `(75)` and `(1300)`. Parentheses denote estimated numerical
+values in the table footnote. Therefore `data_role = primary` is a **row-level** label,
+not evidence that these brain masses were directly weighed by this paper. Keep the
+brain-mass origin unresolved and do not use these cells as independent primary brain
+weights. Table 4 repeats the same estimated brain-mass values.
 Do **not** merge the secondary rows as new data — use
 `reference_tables/Bahney_vonBartheld_2018_TABLE3_references.csv` (join `references` == `ref_key`) as the roadmap to the
 primary sources (many are already items in this repo, e.g. Herculano-Houzel et al. 2006/2007,
 Sarko et al. 2009, Gabi et al. 2010, Burish et al. 2010, Neves et al. 2014, Haug 1987, Stolzenburg et al. 1989).
+`reference_tables/Bahney_vonBartheld_2018_TABLE3_reference_columns.csv` declares
+`row_overall` citation scope. The paper's row-level References cell does not specify
+separate sources for brain weight and GNR, so source-to-variable attribution remains
+unresolved until the cited work is checked.
 
 ## Reference notes (kept verbatim, not corrected)
 - All printed keys resolve to exactly one bibliography entry (LITERATURE CITED, pp. 708–710).
+- The Mortensen et al. 2014 lookup was checked against the PDF bibliography:
+  an adjacent Nathaniel & Nathaniel 1966 entry had been appended during extraction
+  and has been removed from this lookup row.
 - Friede 1954 title prints "Der quantitative Anteil der Glia and der Cortexentwicklung" (kept verbatim).
 - Hawkins & Olszewski 1957 row: common name "Minke whale" but binomial "Balaenoptera physales L." (= fin whale *B. physalus*); harmonised to the binomial and flagged in the species key.
 
@@ -45,11 +58,6 @@ Printed Latin names kept in `species_as_published` (parentheses included); harmo
 ## Table checks
 Not assessed: the table has no printed totals or additive relation (ratios are not additive).
 
-## Registry note (action for owner)
-`__ReadMe.xlsx` Sheet1 col A for **TABLE 2, TABLE 3 and TABLE 4** ends in an auto-incremented
-DOI (`…/ar.23729`, `…/ar.23730`, `…/ar.23731`); the article DOI is **10.1002/ar.23728**
-(PDF p. 697; TABLE 1 row). The formula columns therefore resolve `Item encoded` to
-`10.1002%2Far.2372{9,30,31}_TABLE{2,3,4}`. The build scripts detect this and write the TSV
-under the house-formula code `10.1002%2Far.23728_TABLE<N>` with a warning. The
-`<Item>_registry_row.xlsx` files carry the corrected citation; once col A is fixed and
-`_tools/file_list.R` re-run, the lookup and the TSV name agree and the guard is inert.
+## Registry check
+The live `__ReadMe.xlsx` row and public TSV now use the article DOI
+`10.1002/ar.23728` and encoded stem `10.1002%2Far.23728_TABLE3`.

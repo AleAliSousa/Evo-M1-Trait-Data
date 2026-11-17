@@ -1,0 +1,10 @@
+output_file_id,input_file_id,relation,source_locator,note
+kennedy-table-csv,kennedy-table-builder,produced_by,,Producer declared in file registry
+kennedy-text-csv,kennedy-text-builder,produced_by,,Producer declared in file registry
+kennedy-table-snapshot,kennedy-table-snapshot-builder,produced_by,,Producer declared in file registry
+kennedy-text-snapshot,kennedy-text-snapshot-builder,produced_by,,Producer declared in file registry
+kennedy-text-check,kennedy-text-check-builder,produced_by,,Producer declared in file registry
+kennedy-table-tsv,kennedy-table-builder,produced_by,,Producer declared in file registry
+kennedy-table-tsv,kennedy-table-csv,exported_from,,Same registered item build
+kennedy-text-tsv,kennedy-text-builder,produced_by,,Producer declared in file registry
+kennedy-text-tsv,kennedy-text-csv,exported_from,,Same registered item build

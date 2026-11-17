@@ -1,0 +1,42 @@
+tracer_file,in_hansen_main_matrix,table1_receptor_transporter,table1_neurotransmitter,table1_tracer,table1_measure,table1_n,table1_references,hansen_ref_numbers,value_unit,unit_source,note
+5HT1a_cumi_hc8_beliveau,0,,,,,,,9,see_source,not stated in paper,"Methods comparison group: 5-HT1A (refs 9,69). alternative 5-HT1A map ([11C]CUMI-101) in the Methods tracer comparison; Beliveau et al. 2017 atlas (ref 9); measure not stated in Hansen et al."
+5HT1a_way_hc36_savli,1,5-HT1A,Serotonin,[11C]WAY-100635,BPND,35 (17),Savli et al.69,69,BPND,Table 1,Table 1 prints n = 35 but filename encodes hc36
+5HT1b_az_hc36_beliveau,0,,,,,,,9,see_source,not stated in paper,"Methods comparison group: 5-HT1B (refs 9,69,70). alternative 5-HT1B map ([11C]AZ10419369); Beliveau et al. 2017 atlas (ref 9); measure not stated in Hansen et al."
+5HT1b_p943_hc22_savli,1,5-HT1B,Serotonin,[11C]P943,BPND,23 (8),Savli et al.69,69,BPND,Table 1,Table 1 prints n = 23 but filename encodes hc22
+5HT1b_p943_hc65_gallezot,1,5-HT1B,Serotonin,[11C]P943,BPND,65 (16),Gallezot et al.70–76,70;71;72;73;74;75;76,BPND,Table 1,
+5HT2a_alt_hc19_savli,0,,,,,,,69,see_source,not stated in paper,"Methods comparison group: 5-HT2A (refs 9,69,96). alternative 5-HT2A map (altanserin), Savli et al. 2012 (ref 69); measure not stated in Hansen et al."
+5HT2a_cimbi_hc29_beliveau,1,5-HT2A,Serotonin,[11C]Cimbi-36,Bmax,29 (14),Beliveau et al.9,9,Bmax_pmol_mL,Table 1,
+5HT2a_mdl_hc3_talbot,0,,,,,,,96,see_source,not stated in paper,"Methods comparison group: 5-HT2A (refs 9,69,96). alternative 5-HT2A map (MDL100907), Talbot et al. 2012 (ref 96); measure not stated in Hansen et al."
+5HT4_sb20_hc59_beliveau,1,5-HT4,Serotonin,[11C]SB207145,Bmax,59 (18),Beliveau et al.9,9,Bmax_pmol_mL,Table 1,
+5HT6_gsk_hc30_radhakrishnan,1,5-HT6,Serotonin,[11C]GSK215083,BPND,30 (0),"Radhakrishnan et al.77,78",77;78,BPND,Table 1,
+5HTT_dasb_hc100_beliveau,1,5-HTT*,Serotonin,[11C]DASB,Bmax,100 (71),Beliveau et al.9,9,Bmax_pmol_mL,Table 1,
+5HTT_dasb_hc30_savli,0,,,,,,,69,BPND,"Methods p.14 (inferred): the non-ref-9 DASB map is ""not"" converted to density; Savli et al. 2012 maps are listed as BPND in Table 1","Methods comparison group: 5-HTT (refs 9,69). alternative 5-HTT map, Savli et al. 2012 (ref 69); unit inferred, not printed for this map"
+A4B2_flubatine_hc30_hillmer,1,α4β2,Acetylcholine,[18F]Flubatine,VT,30 (10),"Hillmer et al.79,80",79;80,VT,Table 1,
+CB1_FMPEPd2_hc22_laurikainen,0,,,,,,,97,see_source,not stated in paper,"Methods comparison group: CB1 (refs 89,97). alternative CB1 map ([18F]FMPEP-d2), Laurikainen et al. 2019 (ref 97)"
+CB1_omar_hc77_normandin,1,CB1,Cannabinoid,[11C]OMAR,VT,77 (28),Normandin et al.89–92,89;90;91;92,VT,Table 1,
+D1_SCH23390_hc13_kaller,1,D1,Dopamine,[11C]SCH23390,BPND,13 (7),Kaller et al.58,58,BPND,Table 1,
+D2_fallypride_hc49_jaworska,0,,,,,,,98,see_source,not stated in paper,"Methods comparison group: D2 (refs 59,60,98,99). alternative D2 map (fallypride), Jaworska et al. 2020 (ref 98)"
+D2_flb457_hc37_smith,1,D2,Dopamine,[11C]FLB-457,BPND,37 (20),"Smith et al.59,60",59;60,BPND,Table 1,
+D2_flb457_hc55_sandiego,1,D2,Dopamine,[11C]FLB-457,BPND,55 (29),Sandiego et al.59–63,59;60;61;62;63,BPND,Table 1,
+D2_raclopride_hc7_alakurtti,0,,,,,,,99,see_source,not stated in paper,"Methods comparison group: D2 (refs 59,60,98,99). alternative D2 map (raclopride), Alakurtti et al. 2015 (ref 99); Methods: raclopride has unreliable cortical binding and is inappropriate for cortical D2 mapping"
+DAT_fepe2i_hc6_sasaki,0,,,,,,,100,see_source,not stated in paper,"Methods comparison group: DAT (refs 64,100). alternative DAT map ([18F]FE-PE2I), Sasaki et al. 2012 (ref 100)"
+DAT_fpcit_hc174_dukart_spect,1,DAT*,Dopamine,[123I]-FP-CIT,SUVR,174 (65),Dukart et al.64,64,SUVR,Table 1,
+GABAa-bz_flumazenil_hc16_norgaard,1,GABAA/BZ,GABA,[11C]Flumazenil,Bmax,16 (9),Nørgaard et al.8,8,Bmax_pmol_mL,Table 1,
+GABAa_FLUMAZENIL_c11,0,,,,,,,,see_source,not stated in paper,"Methods comparison group: not cited in paper. file not cited in Hansen et al. 2022; filename matches a JuSpace (Dukart et al. 2021, ref 7) map name; n and source study not encoded in filename"
+GABAa_flumazenil_hc6_dukart,0,,,,,,,64,see_source,not stated in paper,"Methods comparison group: GABAA (refs 8,64). alternative GABAA map (flumazenil), Dukart et al. 2018 (ref 64); Methods: not converted to density"
+H3_cban_hc8_gallezot,1,H3,Histamine,[11C]GSK189254,VT,8 (1),Gallezot et al.88,88,VT,Table 1,
+M1_lsn_hc24_naganawa,1,M1,Acetylcholine,[11C]LSN3172176,BPND,24 (11),Naganawa et al.81,81,BPND,Table 1,
+MU_carfentanil_hc204_kantonen,1,MOR,Opioid,[11C]Carfentanil,BPND,204 (72),Kantonen et al.93,93,BPND,Table 1,
+MU_carfentanil_hc39_turtonen,0,,,,,,,101,see_source,not stated in paper,"Methods comparison group: MOR (refs 93,101). alternative MOR map (carfentanil), Turtonen et al. 2021 (ref 101); partly overlapping participants with the Kantonen map"
+NAT_MRB_hc10_hesse,0,,,,,,,102,see_source,not stated in paper,"Methods comparison group: NET (refs 65,102). alternative NET map ([11C]MRB), Hesse et al. 2017 (ref 102)"
+NAT_MRB_hc77_ding,1,NET*,Norepinephrine,[11C]MRB,BPND,77 (27),Ding et al.65–68,65;66;67;68,BPND,Table 1,
+NMDA_ge179_hc29_galovic,1,NMDA,Glutamate,[18F]GE-179,VT,29 (8),Galovic et al.84–86,84;85;86,VT,Table 1,
+SERT_DASB_HC30,0,,,,,,,,see_source,not stated in paper,"Methods comparison group: not cited in paper. file not cited in Hansen et al. 2022; filename matches a JuSpace (Dukart et al. 2021, ref 7) map name; HC30 token read as n = 30; source study not encoded; values differ from 5HTT_dasb_hc30_savli (r = 0.98, not identical)"
+SERT_MADAM_c11,0,,,,,,,,see_source,not stated in paper,"Methods comparison group: not cited in paper. file not cited in Hansen et al. 2022; filename matches a JuSpace (Dukart et al. 2021, ref 7) map name; n and source study not encoded in filename"
+VAChT_feobv_hc18_aghourian_sum,1,VAChT*,Acetylcholine,[18F]FEOBV,SUVR,18 (13),Aghourian et al.82,82,SUVR,Table 1,
+VAChT_feobv_hc3_spreng,1,VAChT*,Acetylcholine,[18F]FEOBV,SUVR,3 (3),"PI: Schmitz, T. W. & Spreng, R. N.",,SUVR,Table 1,
+VAChT_feobv_hc4_tuominen,1,VAChT*,Acetylcholine,[18F]FEOBV,SUVR,4 (1),"PI: Tuominen, L. & Guimond, S.",,SUVR,Table 1,
+VAChT_feobv_hc5_bedard_sum,1,VAChT*,Acetylcholine,[18F]FEOBV,SUVR,5 (1),Bedard et al.83,83,SUVR,Table 1,
+mGluR5_abp_hc22_rosaneto,1,mGluR5,Glutamate,[11C]ABP688,BPND,22 (10),"PI: Rosa-Neto, P. & Kobayashi, E.",,BPND,Table 1,
+mGluR5_abp_hc28_dubois,1,mGluR5,Glutamate,[11C]ABP688,BPND,28 (13),DuBois et al.87,87,BPND,Table 1,
+mGluR5_abp_hc73_smart,1,mGluR5,Glutamate,[11C]ABP688,BPND,73 (48),Smart et al.52,52,BPND,Table 1,

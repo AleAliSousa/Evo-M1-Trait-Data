@@ -47,11 +47,6 @@ thoracic and lumbar spinal cord, respectively (Table 2)", but Table 2 prints ste
 7.1 / 5.7 / 5.6; the text values match the IF **nNNR** column (7.2 / 5.3 / 6.9) to rounding.
 The CSV keeps the printed table values; candidate `publication_ambiguity` erratum (not filed — owner decision).
 
-## Registry note (action for owner)
-`__ReadMe.xlsx` Sheet1 col A for **TABLE 2, TABLE 3 and TABLE 4** ends in an auto-incremented
-DOI (`…/ar.23729`, `…/ar.23730`, `…/ar.23731`); the article DOI is **10.1002/ar.23728**
-(PDF p. 697; TABLE 1 row). The formula columns therefore resolve `Item encoded` to
-`10.1002%2Far.2372{9,30,31}_TABLE{2,3,4}`. The build scripts detect this and write the TSV
-under the house-formula code `10.1002%2Far.23728_TABLE<N>` with a warning. The
-`<Item>_registry_row.xlsx` files carry the corrected citation; once col A is fixed and
-`_tools/file_list.R` re-run, the lookup and the TSV name agree and the guard is inert.
+## Registry check
+The live `__ReadMe.xlsx` row and public TSV now use the article DOI
+`10.1002/ar.23728` and encoded stem `10.1002%2Far.23728_TABLE2`.

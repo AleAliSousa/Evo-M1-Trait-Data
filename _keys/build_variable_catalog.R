@@ -16,8 +16,10 @@
 suppressPackageStartupMessages({
   library(readr); library(dplyr); library(stringr); library(purrr); library(tidyr)
 })
-## Set working directory to this script folder
-setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_keys")
+## Resolve inputs relative to this script, so the build works from any cwd.
+script_arg <- grep("^--file=", commandArgs(trailingOnly = FALSE), value = TRUE)
+if (length(script_arg) != 1L) stop("Run with Rscript _keys/build_variable_catalog.R")
+setwd(dirname(normalizePath(sub("^--file=", "", script_arg))))
 root <- ".."   # repo root, relative to _keys/
 
 # admin/metadata columns that are NOT measured traits

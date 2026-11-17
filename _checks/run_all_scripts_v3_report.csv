@@ -1,5 +1,5 @@
 phase,script,command,status,started_at,ended_at,elapsed_seconds,exit_code,detail
-Python check,_tools/audit_folders.py,/Users/crossmodal/anaconda3/bin/python3 _tools/audit_folders.py,SUCCESS,2026-11-14T01:21:24+00:00,2026-11-14T01:21:26+00:00,2.62,0,
-Python check,_tools/check_naming.py,/Users/crossmodal/anaconda3/bin/python3 _tools/check_naming.py,SUCCESS,2026-11-14T01:21:26+00:00,2026-11-14T01:22:16+00:00,49.20,0,
-Python check,_checks/check_taxon_clarity.py,/Users/crossmodal/anaconda3/bin/python3 _checks/check_taxon_clarity.py,SUCCESS,2026-11-14T01:22:16+00:00,2026-11-14T01:22:16+00:00,0.08,0,
-Python check,_keys/verify_source_statements.py,/Users/crossmodal/anaconda3/bin/python3 _keys/verify_source_statements.py,SKIPPED,,,,,optional pypdfium2 is not installed; install it to verify source PDFs
+Python check,_tools/audit_folders.py,/Library/Frameworks/Python.framework/Versions/3.9/bin/python3 _tools/audit_folders.py,SUCCESS,2026-11-14T21:12:40+00:00,2026-11-14T21:12:43+00:00,3.42,0,
+Python check,_tools/check_naming.py,/Library/Frameworks/Python.framework/Versions/3.9/bin/python3 _tools/check_naming.py,SUCCESS,2026-11-14T21:12:43+00:00,2026-11-14T21:13:42+00:00,58.95,0,
+Python check,_checks/check_taxon_clarity.py,/Library/Frameworks/Python.framework/Versions/3.9/bin/python3 _checks/check_taxon_clarity.py,SUCCESS,2026-11-14T21:13:42+00:00,2026-11-14T21:13:42+00:00,0.13,0,
+Python check,_keys/verify_source_statements.py,/Library/Frameworks/Python.framework/Versions/3.9/bin/python3 _keys/verify_source_statements.py,SUCCESS,2026-11-14T21:13:42+00:00,2026-11-14T21:13:45+00:00,2.52,0,

@@ -1,9 +1,6 @@
 # Kennedy_etal_1978_Table
 
-**Item name** `Kennedy_etal_1978_Table` · **Item number** `Table (unnumbered)` · **Item encoded** `10.1002%2Fana.410040402_Table` — *derived, awaiting registration*
-(the item is not yet in `__ReadMe.xlsx`; the code was derived as the registry formula would build it,
-DOI with `/` percent-encoded + `_` + item locus, the Mink_etal_1981 convention. Paste
-`Kennedy_etal_1978_Table_registry_row.xlsx`, run `_tools/file_list.R`, and rename the TSV if the registry resolves a different code.)
+**Item name** `Kennedy_etal_1978_Table` · **Item number** `Table (unnumbered)` · **Item encoded** `10.1002%2Fana.410040402_Table` — registered in `__ReadMe.xlsx`.
 
 Kennedy, C., Sakurada, O., Shinohara, M., Jehle, J., & Sokoloff, L. (1978). Local cerebral glucose utilization in the normal conscious macaque monkey. *Annals of Neurology*, 4(4), 293-301. <https://doi.org/10.1002/ana.410040402>
 

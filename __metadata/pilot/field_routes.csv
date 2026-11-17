@@ -1,0 +1,527 @@
+item_id,metadata_field,artifact_id,locator,assertion_kind,granularity,checkpoint
+ManyPrimates__2022_STMperformance,reporting_reference,registry-readme,Sheet1; Item name=ManyPrimates__2022_STMperformance; DOI URL,registry_hint,item,item_processing
+ManyPrimates__2022_STMperformance,item_definition,many-stm-definitions,Code=column; Definition; Structure; Measure; Stat; role,item_definition,column,item_processing
+ManyPrimates__2022_STMperformance,item_output,many-stm-tsv,whole public TSV,registered_item_output,item,inventory_extraction
+ManyPrimates__2022_speciespredictors,reporting_reference,registry-readme,Sheet1; Item name=ManyPrimates__2022_speciespredictors; DOI URL,registry_hint,item,item_processing
+ManyPrimates__2022_speciespredictors,item_definition,many-pred-definitions,Code=column; Definition; Structure; Measure; Stat; role,item_definition,column,item_processing
+ManyPrimates__2022_speciespredictors,item_output,many-pred-tsv,whole public TSV,registered_item_output,item,inventory_extraction
+Mink_etal_1981_REFERENCES,reporting_reference,registry-readme,Sheet1; Item name=Mink_etal_1981_REFERENCES; DOI URL,registry_hint,item,item_processing
+Mink_etal_1981_REFERENCES,item_definition,mink-refs-definitions,Code=column; Definition; Structure; Measure; Stat; role,item_definition,column,item_processing
+Mink_etal_1981_REFERENCES,item_output,mink-refs-tsv,whole public TSV,registered_item_output,item,inventory_extraction
+Mink_etal_1981_TABLE1,reporting_reference,registry-readme,Sheet1; Item name=Mink_etal_1981_TABLE1; DOI URL,registry_hint,item,item_processing
+Mink_etal_1981_TABLE1,item_definition,mink-t1-definitions,Code=column; Definition; Structure; Measure; Stat; role,item_definition,column,item_processing
+Mink_etal_1981_TABLE1,item_output,mink-t1-tsv,whole public TSV,registered_item_output,item,inventory_extraction
+Boddy_etal_2012_TableS1,reporting_reference,registry-readme,Sheet1; Item name=Boddy_etal_2012_TableS1; DOI URL,registry_hint,item,item_processing
+Boddy_etal_2012_TableS1,item_definition,boddy-s1-definitions,Code=column; Definition; Structure; Measure; Stat; role,item_definition,column,item_processing
+Boddy_etal_2012_TableS1,item_output,boddy-s1-tsv,whole public TSV,registered_item_output,item,inventory_extraction
+Boddy_etal_2012_brainbodydatabasev2.txt,reporting_reference,registry-readme,Sheet1; Item name=Boddy_etal_2012_brainbodydatabasev2.txt; DOI URL,registry_hint,item,item_processing
+Boddy_etal_2012_brainbodydatabasev2.txt,item_definition,boddy-raw-definitions,Code=column; Definition; Structure; Measure; Stat; role,item_definition,column,item_processing
+Boddy_etal_2012_brainbodydatabasev2.txt,item_output,boddy-raw-tsv,whole public TSV,registered_item_output,item,inventory_extraction
+Falcone_etal_2019_TABLE1,reporting_reference,registry-readme,Sheet1; Item name=Falcone_etal_2019_TABLE1; DOI URL,registry_hint,item,item_processing
+Falcone_etal_2019_TABLE1,item_definition,falcone-t1-definitions,Code=column; Definition; Structure; Measure; Stat; role,item_definition,column,item_processing
+Falcone_etal_2019_TABLE1,item_output,falcone-t1-tsv,whole public TSV,registered_item_output,item,inventory_extraction
+Falcone_etal_2019_TABLE2,reporting_reference,registry-readme,Sheet1; Item name=Falcone_etal_2019_TABLE2; DOI URL,registry_hint,item,item_processing
+Falcone_etal_2019_TABLE2,item_definition,falcone-t2-definitions,Code=column; Definition; Structure; Measure; Stat; role,item_definition,column,item_processing
+Falcone_etal_2019_TABLE2,item_output,falcone-t2-tsv,whole public TSV,registered_item_output,item,inventory_extraction
+ManyPrimates__2022_STMperformance,original_source,many-stm-source,printed table or supplied supplement,direct_source,table,snapshot
+ManyPrimates__2022_STMperformance,frozen_snapshot,many-stm-snapshot,frozen table or complete workbook,snapshot_evidence,table,snapshot
+ManyPrimates__2022_speciespredictors,original_source,many-pred-source,printed table or supplied supplement,direct_source,table,snapshot
+ManyPrimates__2022_speciespredictors,frozen_snapshot,many-pred-snapshot,frozen table or complete workbook,snapshot_evidence,table,snapshot
+Mink_etal_1981_REFERENCES,original_source,mink-paper,printed table or supplied supplement,direct_source,table,snapshot
+Mink_etal_1981_REFERENCES,frozen_snapshot,mink-refs-snapshot,frozen table or complete workbook,snapshot_evidence,table,snapshot
+Mink_etal_1981_TABLE1,original_source,mink-paper,printed table or supplied supplement,direct_source,table,snapshot
+Mink_etal_1981_TABLE1,frozen_snapshot,mink-t1-snapshot,frozen table or complete workbook,snapshot_evidence,table,snapshot
+Boddy_etal_2012_TableS1,original_source,boddy-s1-source,printed table or supplied supplement,direct_source,table,snapshot
+Boddy_etal_2012_TableS1,frozen_snapshot,boddy-s1-source,frozen table or complete workbook,snapshot_evidence,table,snapshot
+Boddy_etal_2012_brainbodydatabasev2.txt,original_source,boddy-raw-source,printed table or supplied supplement,direct_source,table,snapshot
+Boddy_etal_2012_brainbodydatabasev2.txt,frozen_snapshot,boddy-raw-source,frozen table or complete workbook,snapshot_evidence,table,snapshot
+Falcone_etal_2019_TABLE1,original_source,falcone-paper,printed table or supplied supplement,direct_source,table,snapshot
+Falcone_etal_2019_TABLE1,frozen_snapshot,falcone-t1-snapshot,frozen table or complete workbook,snapshot_evidence,table,snapshot
+Falcone_etal_2019_TABLE2,original_source,falcone-paper,printed table or supplied supplement,direct_source,table,snapshot
+Falcone_etal_2019_TABLE2,frozen_snapshot,falcone-t2-snapshot,frozen table or complete workbook,snapshot_evidence,table,snapshot
+ManyPrimates__2022_STMperformance,reported_value,many-stm-tsv,stm_prop_correct*,source_row_value,cell,inventory_extraction
+ManyPrimates__2022_STMperformance,printed_species,many-stm-tsv,Species,source_row_taxon,row,taxon_review
+ManyPrimates__2022_speciespredictors,reported_value,many-pred-tsv,13 predictor columns,source_row_value,cell,inventory_extraction
+ManyPrimates__2022_speciespredictors,printed_species,many-pred-tsv,Species,source_row_taxon,row,taxon_review
+Mink_etal_1981_TABLE1,reported_value,mink-t1-tsv,brain_weight.g; brain_metabolic_rate.cm3O2.100g.min; spinal_cord_weight.g,source_row_value,cell,inventory_extraction
+Mink_etal_1981_TABLE1,printed_species,mink-t1-tsv,species_as_published,source_row_taxon,row,taxon_review
+Boddy_etal_2012_TableS1,reported_value,boddy-s1-tsv,Brain Mass (g),source_row_value,cell,inventory_extraction
+Boddy_etal_2012_TableS1,printed_species,boddy-s1-tsv,Species Name,source_row_taxon,row,taxon_review
+Boddy_etal_2012_brainbodydatabasev2.txt,reported_value,boddy-raw-tsv,Brain Mass (g),source_row_value,cell,inventory_extraction
+Boddy_etal_2012_brainbodydatabasev2.txt,printed_species,boddy-raw-tsv,Updated Species Name (from Wilson & Reeder Mammal Species of the World),source_row_taxon,row,taxon_review
+Falcone_etal_2019_TABLE1,reported_value,falcone-t1-tsv,ILA Pial Dorsal; ILA Pial Ventral; ILA Subpial Dorsal; ILA Subpial Ventral,source_row_value,cell,inventory_extraction
+Falcone_etal_2019_TABLE1,printed_species,falcone-t1-tsv,Scientific name,source_row_taxon,row,taxon_review
+Falcone_etal_2019_TABLE2,reported_value,falcone-t2-tsv,ILA linear density; ILA primary processes; ILA total processes; ILA total length; ILA complexity,source_row_value,cell,inventory_extraction
+Falcone_etal_2019_TABLE2,printed_species,falcone-t2-tsv,Scientific name,source_row_taxon,row,taxon_review
+Mink_etal_1981_REFERENCES,reference_entry,mink-refs-tsv,ref_number; citation; year,registered_metadata_item,reference_entry,inventory_extraction
+ManyPrimates__2022_STMperformance,original_method,many-paper,Methods; delayed three-cup task,published_method,item,method_review
+Mink_etal_1981_TABLE1,original_method,mink-paper,Table 1 footnotes and Methods,published_method,item,method_review
+Boddy_etal_2012_TableS1,original_method,boddy-paper,Data collection; volume-to-mass density,published_method,item,method_review
+Boddy_etal_2012_brainbodydatabasev2.txt,original_method,boddy-paper,Data collection; original post-mortem specimens,published_method,item,method_review
+Falcone_etal_2019_TABLE1,original_method,falcone-paper,Methods; GFAP immunohistochemistry,published_method,item,method_review
+Falcone_etal_2019_TABLE2,original_method,falcone-paper,Methods; GFAP and Neurolucida; complexity formula,published_method,item,method_review
+ManyPrimates__2022_speciespredictors,upstream_reference,many-pred-tsv,twelve predictor_source columns; life_expectancy has no source,reported_citation,cell,source_trace
+ManyPrimates__2022_speciespredictors,source_comment,many-pred-tsv,twelve predictor_comment columns,reported_annotation,cell,source_trace
+ManyPrimates__2022_speciespredictors,source_manifest,many-source-manifest,item; encoded; doi; citation; locus,collection_manifest,item,snapshot
+ManyPrimates__2022_speciespredictors,build_manifest,many-built-manifest,item; public_tsv; reader; rows; columns,collection_manifest,item,item_processing
+ManyPrimates__2022_STMperformance,species_lookup_dependency,many-pred-csv,common_name; Species,sibling_item_dependency,species,item_processing
+Mink_etal_1981_TABLE1,upstream_reference,mink-t1-tsv,ref_keys_*; printed_footnote_marks,reported_reference_key,cell,source_trace
+Mink_etal_1981_TABLE1,upstream_reference,mink-t1-lookup,ref_key; cited_in_column; citation,citation_lookup,reference_entry,source_trace
+Mink_etal_1981_TABLE1,citation_dependency,mink-refs-csv,ref_number; citation; year,registered_metadata_dependency,reference_entry,source_trace
+Mink_etal_1981_TABLE1,source_comment,mink-t1-tsv,note; printed_footnote_marks,reported_annotation,row,method_review
+Mink_etal_1981_TABLE1,source_erratum,mink-t1-errata,errata_id; variable; locator; status,curator_issue,issue,snapshot
+Mink_etal_1981_TABLE1,species_resolution_candidate,mink-t1-proposed-species,variant_name; accepted_name; source_publication,proposed_not_active,taxon_name,taxon_review
+Boddy_etal_2012_TableS1,upstream_reference,boddy-s1-tsv,Reference,reported_citation,row,source_trace
+Boddy_etal_2012_TableS1,source_comment,boddy-s1-tsv,Notes,reported_annotation,row,method_review
+Boddy_etal_2012_brainbodydatabasev2.txt,upstream_reference,boddy-raw-tsv,Source,reported_citation,row,source_trace
+Boddy_etal_2012_brainbodydatabasev2.txt,source_comment,boddy-raw-tsv,Notes; Brain Volume; Sex; No. Individuals; Age Class,reported_annotation,row,method_review
+Falcone_etal_2019_TABLE1,taxon_conflict_evidence,falcone-paper,Table 1 prints Cercopithecus kandti,published_taxon,row,taxon_review
+Falcone_etal_2019_TABLE2,taxon_conflict_evidence,falcone-paper,Table 2 prints Cercocebus kandti,published_taxon,row,taxon_review
+Falcone_etal_2019_TABLE2,snapshot_taxon_discrepancy,falcone-t2-snapshot,Cercopithecus kandti,transcription_conflict,row,taxon_review
+ManyPrimates__2022_STMperformance,accepted_species,species-reference,accepted_name; ncbi_taxid,active_taxon_anchor,taxon_name,taxon_review
+ManyPrimates__2022_speciespredictors,accepted_species,species-reference,accepted_name; ncbi_taxid,active_taxon_anchor,taxon_name,taxon_review
+Mink_etal_1981_TABLE1,accepted_species,species-reference,accepted_name; ncbi_taxid,active_taxon_anchor,taxon_name,taxon_review
+Boddy_etal_2012_TableS1,accepted_species,species-reference,accepted_name; ncbi_taxid,active_taxon_anchor,taxon_name,taxon_review
+Boddy_etal_2012_brainbodydatabasev2.txt,accepted_species,species-reference,accepted_name; ncbi_taxid,active_taxon_anchor,taxon_name,taxon_review
+Falcone_etal_2019_TABLE1,accepted_species,species-reference,accepted_name; ncbi_taxid,active_taxon_anchor,taxon_name,taxon_review
+Falcone_etal_2019_TABLE2,accepted_species,species-reference,accepted_name; ncbi_taxid,active_taxon_anchor,taxon_name,taxon_review
+ManyPrimates__2022_STMperformance,measure_index,variable-index,item; Code; Measure; measure_class; role,derived_index_lookup,item_column,inventory_extraction
+ManyPrimates__2022_speciespredictors,measure_index,variable-index,item; Code; Measure; measure_class; role,derived_index_lookup,item_column,inventory_extraction
+Mink_etal_1981_TABLE1,measure_index,variable-index,item; Code; Measure; measure_class; role,derived_index_lookup,item_column,inventory_extraction
+Boddy_etal_2012_TableS1,measure_index,variable-index,item; Code; Measure; measure_class; role,derived_index_lookup,item_column,inventory_extraction
+Falcone_etal_2019_TABLE1,measure_index,variable-index,item; Code; Measure; measure_class; role,derived_index_lookup,item_column,inventory_extraction
+Falcone_etal_2019_TABLE2,measure_index,variable-index,item; Code; Measure; measure_class; role,derived_index_lookup,item_column,inventory_extraction
+Falcone_etal_2019_TABLE1,species_variant_candidate,species-key-ashwell,variant_name; accepted_name; source_publication,active_crosswalk_candidate,taxon_name,taxon_review
+Falcone_etal_2019_TABLE1,species_variant_candidate,species-key-general,variant_name; accepted_name; source_publication,active_crosswalk_candidate,taxon_name,taxon_review
+Falcone_etal_2019_TABLE1,species_variant_candidate,species-key-herculanohouzel,variant_name; accepted_name; source_publication,active_crosswalk_candidate,taxon_name,taxon_review
+Falcone_etal_2019_TABLE1,species_variant_candidate,species-key-stephan,variant_name; accepted_name; source_publication,active_crosswalk_candidate,taxon_name,taxon_review
+Falcone_etal_2019_TABLE2,species_variant_candidate,species-key-ashwell,variant_name; accepted_name; source_publication,active_crosswalk_candidate,taxon_name,taxon_review
+Falcone_etal_2019_TABLE2,species_variant_candidate,species-key-general,variant_name; accepted_name; source_publication,active_crosswalk_candidate,taxon_name,taxon_review
+Falcone_etal_2019_TABLE2,species_variant_candidate,species-key-herculanohouzel,variant_name; accepted_name; source_publication,active_crosswalk_candidate,taxon_name,taxon_review
+Falcone_etal_2019_TABLE2,species_variant_candidate,species-key-stephan,variant_name; accepted_name; source_publication,active_crosswalk_candidate,taxon_name,taxon_review
+Boddy_etal_2012_TableS1,brain_size_basis,brain-basis,paper; column; basis; state; poolable_group,curated_basis_key,paper_column,method_review
+Boddy_etal_2012_TableS1,brain_mass_row_basis,brain-mass-row-basis,Source; column; source_records; resolution_id,curated_source_row_decision,source_row,method_review
+Boddy_etal_2012_TableS1,source_role_decision,brain-mass-row-basis,Source; column; source_records; role_override; original_reference,curated_source_row_decision,source_row,source_trace
+Boddy_etal_2012_TableS1,pool_eligibility,brain-mass-row-basis,Source; column; source_records; pool_eligible,curated_source_row_decision,source_row,qualification
+Boddy_etal_2012_TableS1,brain_mass_pool_audit,brain-mass-merge,species; team; basis; role,downstream_selection_audit,species_report,source_choice
+ManyPrimates__2022_speciespredictors,behaviour_overlap_audit,behaviour-observations,species; source; value,downstream_selection_audit,species_report,source_choice
+ManyPrimates__2022_speciespredictors,behaviour_selected_audit,behaviour-selected,species; selected value; source,downstream_selection_audit,species,source_choice
+Boddy_etal_2012_TableS1,source_choice_species_key,species-key-stephan,variant_name; accepted_name; source_publication,active_crosswalk_candidate,taxon_name,source_choice
+Buchsbaum_etal_1989_TableI,reporting_reference,registry-readme,Sheet1; Item name=Buchsbaum_etal_1989_TableI; DOI URL,registry_hint,item,item_processing
+Buchsbaum_etal_1989_TableI,item_definition,buchsbaum-definitions,Code=column or printed region; Definition; Structure; Measure; Stat; role,item_definition,column,item_processing
+Buchsbaum_etal_1989_TableI,item_output,buchsbaum-tsv,whole public TSV,registered_item_output,item,inventory_extraction
+Buchsbaum_etal_1989_TableI,original_source,buchsbaum-paper,Table I journal page 1354; PDF page 6,direct_source,table,snapshot
+Buchsbaum_etal_1989_TableI,snapshot_builder,buchsbaum-snapshot-builder,printed Table I transcription,snapshot_extraction,table,snapshot
+Buchsbaum_etal_1989_TableI,frozen_snapshot,buchsbaum-snapshot,Table I; all awake NREM REM means and SDs,snapshot_evidence,table,snapshot
+Buchsbaum_etal_1989_TableI,item_builder,buchsbaum-builder,snapshot to long region-arm rows,item_processing,item,item_processing
+Buchsbaum_etal_1989_TableI,reported_value,buchsbaum-tsv,CMRglc.umol_100g_min; mean_printed; dispersion_printed,source_row_value,cell,inventory_extraction
+Buchsbaum_etal_1989_TableI,printed_species,buchsbaum-tsv,species_as_published,source_row_taxon,row,taxon_review
+Buchsbaum_etal_1989_TableI,accepted_species,species-reference,accepted_name; ncbi_taxid,active_taxon_anchor,taxon_name,taxon_review
+Buchsbaum_etal_1989_TableI,species_resolution_candidate,buchsbaum-proposed-species,variant_name; accepted_name; source_publication,proposed_not_active,taxon_name,taxon_review
+Buchsbaum_etal_1989_TableI,original_method,buchsbaum-paper,FDG-PET methods; awake NREM REM arms,published_method,item,method_review
+Buchsbaum_etal_1989_TableI,arm_and_statistic,buchsbaum-tsv,arm_id; n; dispersion_type; row_type,reported_context,region_arm,method_review
+Buchsbaum_etal_1989_TableI,region_definition,buchsbaum-definitions,Code=structure_as_published; Structure; Note,item_definition,region,method_review
+Buchsbaum_etal_1989_TableI,unit_definition,buchsbaum-definitions,Code=CMRglc.umol_100g_min; Measure; Method:units,item_definition,column,method_review
+Buchsbaum_etal_1989_TableI,source_role_definition,buchsbaum-definitions,Code=CMRglc.umol_100g_min; role=primary,item_definition,column,source_trace
+Buchsbaum_etal_1989_TableI,source_erratum,buchsbaum-errata,errata_id; variable; locator; status,curator_issue,issue,snapshot
+Kaufman__2004_TableA3,reporting_reference,registry-readme,Sheet1; Item name=Kaufman__2004_TableA3; Citation; UMI:3147447,registry_hint,item,item_processing
+Kaufman__2004_TableA3,item_definition,kaufman-definitions,Code=column; Definition; Structure; Measure; Stat; role,item_definition,column,item_processing
+Kaufman__2004_TableA3,item_output,kaufman-tsv,whole public TSV,registered_item_output,item,inventory_extraction
+Kaufman__2004_TableA3,original_source,kaufman-paper,Table A3; PDF page 125,direct_source,table,snapshot
+Kaufman__2004_TableA3,source_digitization,kaufman-source-workbook,dissertation table capture for cross-check,source_data,table,snapshot
+Kaufman__2004_TableA3,frozen_snapshot,kaufman-snapshot,Table A3 verbatim per-study rows,snapshot_evidence,table,snapshot
+Kaufman__2004_TableA3,source_correction_overlay,kaufman-source-corrections,checked OCR and citation corrections,item_processing,study_row,item_processing
+Kaufman__2004_TableA3,item_builder,kaufman-builder,snapshot and source corrections to table,item_processing,item,item_processing
+Kaufman__2004_TableA3,reported_value,kaufman-tsv,CMRgl_umol_100g_min; CMRgl_SD; n,source_row_value,cell,inventory_extraction
+Kaufman__2004_TableA3,printed_species,kaufman-tsv,Species,source_row_taxon,row,taxon_review
+Kaufman__2004_TableA3,accepted_species,species-reference,accepted_name; ncbi_taxid,active_taxon_anchor,taxon_name,taxon_review
+Kaufman__2004_TableA3,species_variant_candidate,species-key-general,variant_name; accepted_name; source_publication=Kaufman__2004,active_crosswalk_candidate,taxon_name,taxon_review
+Kaufman__2004_TableA3,reported_method,kaufman-tsv,Anesthesia; Mode,reported_context,study_row,method_review
+Kaufman__2004_TableA3,reported_citation,kaufman-tsv,Reference,reported_citation,study_row,source_trace
+Kaufman__2004_TableA3,upstream_reference,kaufman-reference-lookup,ref_key; citation; source_reference_id; primary_reference_id; resolution_status,citation_lookup,reference_entry,source_trace
+Kaufman__2004_TableA3,upstream_item_row,buchsbaum-tsv,printed_row=16; structure_as_published=Thalamus; arm_id=awake; n=10; mean=24.3; SD=7.2,relay_comparator,cell,source_trace
+Kaufman__2004_TableA3,region_definition,kaufman-definitions,Code=Region; TableA3=Thalamus,item_definition,region,method_review
+Kaufman__2004_TableA3,unit_definition,kaufman-definitions,Code=CMRgl_umol_100g_min; Measure; Note=umol/100 g/min,item_definition,column,method_review
+Kaufman__2004_TableA3,source_role_definition,kaufman-definitions,Code=CMRgl_umol_100g_min; role=secondary,item_definition,column,source_trace
+Heffner_Heffner_2010_b_Table1,item_definition,heffner-definitions,Code=column; Definition; Structure; Measure; Stat; role; Source Note,item_definition,column,item_processing
+Heffner_Heffner_2010_b_Table1,item_output,heffner-tsv,whole public TSV,registered_item_output,item,inventory_extraction
+Heffner_Heffner_2010_b_Table1,original_source,heffner-paper,Table 1 p. 2081 and footnotes,published_source,table,snapshot
+Heffner_Heffner_2010_b_Table1,frozen_snapshot,heffner-snapshot,printed Species; Ref (freq); Ref (BM length); three value columns,snapshot_evidence,table,snapshot
+Heffner_Heffner_2010_b_Table1,item_builder,heffner-builder,snapshot to species-row CSV and TSV,item_processing,item,item_processing
+Heffner_Heffner_2010_b_Table1,analysis_table,heffner-csv,one species row with three measures,item_processing,species_row,item_processing
+Heffner_Heffner_2010_b_Table1,footnote_lookup,heffner-footnotes,letter -> definition; abbreviations and multi-work entries retained,citation_lookup,footnote_letter,source_trace
+Heffner_Heffner_2010_b_Table1,source_role_definition,heffner-definitions,Code=measured column; role=secondary; data_role source context,item_definition,column,source_trace
+Bahney_vonBartheld_2018_TABLE1,item_definition,bahney-t1-definitions,Code=column; Definition; Structure; Measure; Stat; role; Source Note,item_definition,column,item_processing
+Bahney_vonBartheld_2018_TABLE1,item_output,bahney-t1-tsv,whole public TSV,registered_item_output,item,inventory_extraction
+Bahney_vonBartheld_2018_TABLE1,original_source,bahney-paper,"Table 1; journal page 701; caption, methods and footnotes",published_source,table,snapshot
+Bahney_vonBartheld_2018_TABLE1,frozen_snapshot,bahney-t1-snapshot,Table 1; frozen printed rows and footnotes,snapshot_evidence,table,snapshot
+Bahney_vonBartheld_2018_TABLE1,item_builder,bahney-t1-builder,snapshot to Table 1 CSV and public TSV,item_processing,item,item_processing
+Bahney_vonBartheld_2018_TABLE1,analysis_table,bahney-t1-csv,Table 1 transformed rows plus source_row,item_processing,row,item_processing
+Bahney_vonBartheld_2018_TABLE1,source_note,bahney-t1-readme,"Table 1 extraction, calculations and source-role caveats",curator_note,item,item_processing
+Bahney_vonBartheld_2018_TABLE2,item_definition,bahney-t2-definitions,Code=column; Definition; Structure; Measure; Stat; role; Source Note,item_definition,column,item_processing
+Bahney_vonBartheld_2018_TABLE2,item_output,bahney-t2-tsv,whole public TSV,registered_item_output,item,inventory_extraction
+Bahney_vonBartheld_2018_TABLE2,frozen_snapshot,bahney-t2-snapshot,Table 2; frozen printed rows and footnotes,snapshot_evidence,table,snapshot
+Bahney_vonBartheld_2018_TABLE2,item_builder,bahney-t2-builder,snapshot to Table 2 CSV and public TSV,item_processing,item,item_processing
+Bahney_vonBartheld_2018_TABLE2,analysis_table,bahney-t2-csv,Table 2 transformed rows plus source_row,item_processing,row,item_processing
+Bahney_vonBartheld_2018_TABLE2,source_note,bahney-t2-readme,"Table 2 extraction, calculations and source-role caveats",curator_note,item,item_processing
+Bahney_vonBartheld_2018_TABLE3,item_definition,bahney-t3-definitions,Code=column; Definition; Structure; Measure; Stat; role; Source Note,item_definition,column,item_processing
+Bahney_vonBartheld_2018_TABLE3,item_output,bahney-t3-tsv,whole public TSV,registered_item_output,item,inventory_extraction
+Bahney_vonBartheld_2018_TABLE3,frozen_snapshot,bahney-t3-snapshot,Table 3; frozen printed rows and footnotes,snapshot_evidence,table,snapshot
+Bahney_vonBartheld_2018_TABLE3,item_builder,bahney-t3-builder,snapshot to Table 3 CSV and public TSV,item_processing,item,item_processing
+Bahney_vonBartheld_2018_TABLE3,analysis_table,bahney-t3-csv,Table 3 transformed rows plus source_row,item_processing,row,item_processing
+Bahney_vonBartheld_2018_TABLE3,source_note,bahney-t3-readme,"Table 3 extraction, calculations and source-role caveats",curator_note,item,item_processing
+Bahney_vonBartheld_2018_TABLE3,upstream_reference,bahney-t3-references,ref_key; cited_in_column=References (printed); citation; note; output column is lowercase references,citation_lookup,reference_entry,source_trace
+Bahney_vonBartheld_2018_TABLE4,item_definition,bahney-t4-definitions,Code=column; Definition; Structure; Measure; Stat; role; Source Note,item_definition,column,item_processing
+Bahney_vonBartheld_2018_TABLE4,item_output,bahney-t4-tsv,whole public TSV,registered_item_output,item,inventory_extraction
+Bahney_vonBartheld_2018_TABLE4,frozen_snapshot,bahney-t4-snapshot,Table 4; frozen printed rows and footnotes,snapshot_evidence,table,snapshot
+Bahney_vonBartheld_2018_TABLE4,item_builder,bahney-t4-builder,snapshot to Table 4 CSV and public TSV,item_processing,item,item_processing
+Bahney_vonBartheld_2018_TABLE4,analysis_table,bahney-t4-csv,Table 4 transformed rows plus source_row,item_processing,row,item_processing
+Bahney_vonBartheld_2018_TABLE4,source_note,bahney-t4-readme,"Table 4 extraction, calculations and source-role caveats",curator_note,item,item_processing
+Bahney_vonBartheld_2018_TABLE4,upstream_reference,bahney-t4-references,ref_key; cited_in_column=References (printed); citation; note; output column is lowercase references,citation_lookup,reference_entry,source_trace
+Heffner_Heffner_2010_b_Table1,reporting_reference,registry-readme,Sheet1; Item name=Heffner_Heffner_2010_b_Table1; DOI URL,registry_hint,item,item_processing
+Heffner_Heffner_2010_b_Table1,reported_value,heffner-tsv,audible_freq_high_60dBSPL_khz; interaural_distance_functional_us; basilar_membrane_length_mm,source_row_value,cell,inventory_extraction
+Heffner_Heffner_2010_b_Table1,printed_species,heffner-tsv,species_as_published; final row retains PDF Tursiops truncates despite older snapshot normalization,source_row_taxon,row,taxon_review
+Heffner_Heffner_2010_b_Table1,output_species,heffner-tsv,binomial; editorial correction requires evidence,item_processing,row,taxon_review
+Heffner_Heffner_2010_b_Table1,accepted_species,species-reference,accepted_name; ncbi_taxid,active_taxon_anchor,taxon_name,taxon_review
+Heffner_Heffner_2010_b_Table1,species_variant_candidate,species-key-general,variant_name; accepted_name; source_publication; no Heffner-specific row asserted,active_crosswalk_candidate,taxon_name,taxon_review
+Heffner_Heffner_2010_b_Table1,measure_index,variable-index,item; Code; Measure; measure_class; role,derived_index_lookup,item_column,inventory_extraction
+Heffner_Heffner_2010_b_Table1,method_definition,heffner-definitions,Code=audible_freq_high_60dBSPL_khz; interaural_distance_functional_us; basilar_membrane_length_mm; Definition; Source Note,item_definition,column,method_review
+Heffner_Heffner_2010_b_Table1,source_citation_keys,heffner-snapshot,Ref (freq) and Ref (BM length) are measure-specific; no letter printed for interaural distance,reported_citation,cell,source_trace
+Heffner_Heffner_2010_b_Table1,source_role_review,heffner-paper,Letter compiles prior reports; Table 1 values are secondary including Tursiops,published_source,cell,source_trace
+Bahney_vonBartheld_2018_TABLE1,reporting_reference,registry-readme,Sheet1; Item name=Bahney_vonBartheld_2018_TABLE1; DOI URL=10.1002/ar.23728,registry_hint,item,item_processing
+Bahney_vonBartheld_2018_TABLE1,reported_value,bahney-t1-tsv,cells_million; ratio,source_row_value,cell,inventory_extraction
+Bahney_vonBartheld_2018_TABLE1,printed_species,bahney-t1-tsv,species_as_published; Tables 1-2 species identified in caption/Results,source_row_taxon,row,taxon_review
+Bahney_vonBartheld_2018_TABLE1,accepted_species,species-reference,accepted_name; ncbi_taxid,active_taxon_anchor,taxon_name,taxon_review
+Bahney_vonBartheld_2018_TABLE1,species_variant_candidate,species-key-general,variant_name; accepted_name; source_publication=Bahney_vonBartheld_2018,active_crosswalk_candidate,taxon_name,taxon_review
+Bahney_vonBartheld_2018_TABLE1,measure_index,variable-index,item; Code; Measure; measure_class; role,derived_index_lookup,item_column,inventory_extraction
+Bahney_vonBartheld_2018_TABLE1,reported_role,bahney-t1-tsv,data_role per row; Tables 3-4 include own-study and compiled rows,reported_context,row,source_trace
+Bahney_vonBartheld_2018_TABLE1,reported_method,bahney-t1-tsv,method; ratio_type; segment,reported_context,row,method_review
+Bahney_vonBartheld_2018_TABLE1,original_method,bahney-paper,Methods and Table 1 caption; IF and stereology for own-study rows,published_method,table,method_review
+Bahney_vonBartheld_2018_TABLE2,reporting_reference,registry-readme,Sheet1; Item name=Bahney_vonBartheld_2018_TABLE2; DOI URL=10.1002/ar.23728,registry_hint,item,item_processing
+Bahney_vonBartheld_2018_TABLE2,original_source,bahney-paper,"Table 2; journal page 703; caption, methods and footnotes",published_source,table,snapshot
+Bahney_vonBartheld_2018_TABLE2,reported_value,bahney-t2-tsv,cells_million; ratio,source_row_value,cell,inventory_extraction
+Bahney_vonBartheld_2018_TABLE2,printed_species,bahney-t2-tsv,species_as_published; Tables 1-2 species identified in caption/Results,source_row_taxon,row,taxon_review
+Bahney_vonBartheld_2018_TABLE2,accepted_species,species-reference,accepted_name; ncbi_taxid,active_taxon_anchor,taxon_name,taxon_review
+Bahney_vonBartheld_2018_TABLE2,species_variant_candidate,species-key-general,variant_name; accepted_name; source_publication=Bahney_vonBartheld_2018,active_crosswalk_candidate,taxon_name,taxon_review
+Bahney_vonBartheld_2018_TABLE2,measure_index,variable-index,item; Code; Measure; measure_class; role,derived_index_lookup,item_column,inventory_extraction
+Bahney_vonBartheld_2018_TABLE2,reported_role,bahney-t2-tsv,data_role per row; Tables 3-4 include own-study and compiled rows,reported_context,row,source_trace
+Bahney_vonBartheld_2018_TABLE2,reported_method,bahney-t2-tsv,method; ratio_type; segment,reported_context,row,method_review
+Bahney_vonBartheld_2018_TABLE2,original_method,bahney-paper,Methods and Table 2 caption; IF and stereology for own-study rows,published_method,table,method_review
+Bahney_vonBartheld_2018_TABLE3,reporting_reference,registry-readme,Sheet1; Item name=Bahney_vonBartheld_2018_TABLE3; DOI URL=10.1002/ar.23728,registry_hint,item,item_processing
+Bahney_vonBartheld_2018_TABLE3,original_source,bahney-paper,"Table 3; journal page 704; caption, methods and footnotes",published_source,table,snapshot
+Bahney_vonBartheld_2018_TABLE3,reported_value,bahney-t3-tsv,brain_mass_mg; GNR,source_row_value,cell,inventory_extraction
+Bahney_vonBartheld_2018_TABLE3,printed_species,bahney-t3-tsv,species_as_published; Tables 1-2 species identified in caption/Results,source_row_taxon,row,taxon_review
+Bahney_vonBartheld_2018_TABLE3,accepted_species,species-reference,accepted_name; ncbi_taxid,active_taxon_anchor,taxon_name,taxon_review
+Bahney_vonBartheld_2018_TABLE3,species_variant_candidate,species-key-general,variant_name; accepted_name; source_publication=Bahney_vonBartheld_2018,active_crosswalk_candidate,taxon_name,taxon_review
+Bahney_vonBartheld_2018_TABLE3,measure_index,variable-index,item; Code; Measure; measure_class; role,derived_index_lookup,item_column,inventory_extraction
+Bahney_vonBartheld_2018_TABLE3,reported_role,bahney-t3-tsv,data_role per row; Tables 3-4 include own-study and compiled rows,reported_context,row,source_trace
+Bahney_vonBartheld_2018_TABLE3,method_gap,bahney-t3-readme,Compiled row gives CNS part and citation but not original acquisition method; inspect cited study,curator_issue,item_column,method_review
+Bahney_vonBartheld_2018_TABLE3,original_method,bahney-paper,Methods and Table 3 caption; IF and stereology for own-study rows,published_method,table,method_review
+Bahney_vonBartheld_2018_TABLE3,reported_citation,bahney-t3-tsv,references (lowercase item column); row-level printed key,reported_citation,row,source_trace
+Bahney_vonBartheld_2018_TABLE3,citation_scope_review,bahney-t3-readme,"Per-row citation may not support every measure, especially brain mass versus ratio",curator_issue,item_column,source_trace
+Bahney_vonBartheld_2018_TABLE4,reporting_reference,registry-readme,Sheet1; Item name=Bahney_vonBartheld_2018_TABLE4; DOI URL=10.1002/ar.23728,registry_hint,item,item_processing
+Bahney_vonBartheld_2018_TABLE4,original_source,bahney-paper,"Table 4; journal page 706; caption, methods and footnotes",published_source,table,snapshot
+Bahney_vonBartheld_2018_TABLE4,reported_value,bahney-t4-tsv,brain_mass_mg; nNNR,source_row_value,cell,inventory_extraction
+Bahney_vonBartheld_2018_TABLE4,printed_species,bahney-t4-tsv,species_as_published; Tables 1-2 species identified in caption/Results,source_row_taxon,row,taxon_review
+Bahney_vonBartheld_2018_TABLE4,accepted_species,species-reference,accepted_name; ncbi_taxid,active_taxon_anchor,taxon_name,taxon_review
+Bahney_vonBartheld_2018_TABLE4,species_variant_candidate,species-key-general,variant_name; accepted_name; source_publication=Bahney_vonBartheld_2018,active_crosswalk_candidate,taxon_name,taxon_review
+Bahney_vonBartheld_2018_TABLE4,measure_index,variable-index,item; Code; Measure; measure_class; role,derived_index_lookup,item_column,inventory_extraction
+Bahney_vonBartheld_2018_TABLE4,reported_role,bahney-t4-tsv,data_role per row; Tables 3-4 include own-study and compiled rows,reported_context,row,source_trace
+Bahney_vonBartheld_2018_TABLE4,method_gap,bahney-t4-readme,Compiled row gives CNS part and citation but not original acquisition method; inspect cited study,curator_issue,item_column,method_review
+Bahney_vonBartheld_2018_TABLE4,original_method,bahney-paper,Methods and Table 4 caption; IF and stereology for own-study rows,published_method,table,method_review
+Bahney_vonBartheld_2018_TABLE4,reported_citation,bahney-t4-tsv,references (lowercase item column); row-level printed key,reported_citation,row,source_trace
+Bahney_vonBartheld_2018_TABLE4,citation_scope_review,bahney-t4-readme,"Per-row citation may not support every measure, especially brain mass versus ratio",curator_issue,item_column,source_trace
+Bahney_vonBartheld_2018_TABLE3,citation_scope_declaration,bahney-t3-reference-columns,key_column=references; applies_to=row_overall; match_basis=declared,reviewed_scope_declaration,item_column,source_trace
+Bahney_vonBartheld_2018_TABLE4,citation_scope_declaration,bahney-t4-reference-columns,key_column=references; applies_to=row_overall; match_basis=declared,reviewed_scope_declaration,item_column,source_trace
+Heffner_Heffner_2010_b_Table1,upstream_reference,heffner-references,ref_key; cited_in_column; citation; note,citation_lookup,reference_entry,source_trace
+Heffner_Heffner_2010_b_Table1,citation_scope_declaration,heffner-reference-columns,key_column=ref_freq_key or ref_bm_length_keys; applies_to is measure-specific,reviewed_scope_declaration,item_column,source_trace
+Heffner_Heffner_2010_b_Table1,reported_citation,heffner-tsv,ref_freq_key; ref_bm_length_keys; keys extracted from printed snapshot,reported_citation,cell,source_trace
+Heffner_Heffner_2010_b_Table1,source_match,heffner-source-match,item; row_id; key_column; ref_key; variable; citation; match_basis; status,generated_citation_audit,source_row_variable_reference,source_trace
+Heffner_Heffner_2010_b_Table1,source_match_summary,heffner-source-match-summary,ref_key; variable; species; n_rows; status,generated_citation_audit,reference_variable,source_trace
+Heffner_Heffner_2010_b_Table1,source_match_issues,heffner-source-match-issues,issue; key_column; ref_key; row_id; variable; detail,generated_citation_audit,issue,source_trace
+Fobbs_etal_2011_TableS1a,reporting_reference,registry-readme,Sheet1; Item name=Fobbs_etal_2011_TableS1a; DOI URL=10.1111/j.1749-6632.2011.06036.x,registry_hint,item,item_processing
+Fobbs_etal_2011_TableS1a,item_definition,fobbs-s1a-definitions,Code; Definition; Structure; Measure; Stat; role; Method:scope,item_definition,column,item_processing
+Fobbs_etal_2011_TableS1a,item_output,fobbs-s1a-tsv,whole registered TSV,registered_item_output,item,inventory_extraction
+Fobbs_etal_2011_TableS1a,original_publication,fobbs-paper,article methods; collection provenance,published_source,publication,snapshot
+Fobbs_etal_2011_TableS1a,original_source,fobbs-s1a-source-doc,"supplement Table S1a; printed rows, headings and notes",published_source,printed_catalog,snapshot
+Fobbs_etal_2011_TableS1a,snapshot_builder,fobbs-s1a-snapshot-builder,published DOC to frozen XLSX,snapshot_extraction,item,snapshot
+Fobbs_etal_2011_TableS1a,frozen_snapshot,fobbs-s1a-snapshot,printed layout before item cleaning,snapshot_evidence,printed_catalog,snapshot
+Fobbs_etal_2011_TableS1a,item_builder,fobbs-s1a-builder,frozen workbook to catalog CSV and public TSV,item_processing,item,item_processing
+Fobbs_etal_2011_TableS1a,analysis_table,fobbs-s1a-csv,"cleaned catalog records; source_row assigned after filtering/reflow, not original DOC row",item_processing,catalog_record,item_processing
+Fobbs_etal_2011_TableS1a,source_note,fobbs-s1a-readme,catalog scope and extraction notes,curator_note,item,item_processing
+Fobbs_etal_2011_TableS1a,specimen_metadata,fobbs-s1a-tsv,"age_at_death; gestational_age; crown_to_rump_length_mm; crown_to_heel_length_mm; sex; plane_of_section; specimen or preparation grain, not species brain trait",reported_catalog_field,catalog_record,inventory_extraction
+Fobbs_etal_2011_TableS1a,catalog_scope,fobbs-s1a-definitions,Code=Method:scope; human developmental and clinical collection,item_definition,item,qualification
+Fobbs_etal_2011_TableS1a,catalog_method,fobbs-s1a-definitions,Code=Method:frozen_source; published DOC and extraction process,item_definition,item,method_review
+Fobbs_etal_2011_TableS1a,specimen_identity,fobbs-specimen-crosswalk,source_publication=Fobbs_etal_2011; item_reference may append #rowN; accession not necessarily unique; review row link,curated_specimen_candidate,specimen_record,taxon_review
+Fobbs_etal_2011_TableS1a,taxon_context,fobbs-s1a-source-doc,source DOC states human; no printed per-row species,published_taxon_context,catalog,taxon_review
+Fobbs_etal_2011_TableS1a,output_taxon_annotation,fobbs-s1a-csv,Species_binomial=Homo sapiens; species_basis=verbatim; assigned from overall source context,item_taxon_annotation,catalog_record,taxon_review
+Fobbs_etal_2011_TableS1a,reported_value,fobbs-s1a-tsv,crown_to_rump_length_mm; crown_to_heel_length_mm; specimen body lengths only; hold before species-level trait use,source_row_value,specimen_cell,inventory_extraction
+Fobbs_etal_2011_TableS1a,measure_definition_caveat,fobbs-s1a-definitions,length columns have Measure=count although definition says length in mm; needs correction/review,definition_issue,column,method_review
+Fobbs_etal_2011_TableS1b,reporting_reference,registry-readme,Sheet1; Item name=Fobbs_etal_2011_TableS1b; DOI URL=10.1111/j.1749-6632.2011.06036.x,registry_hint,item,item_processing
+Fobbs_etal_2011_TableS1b,item_definition,fobbs-s1b-definitions,Code; Definition; Structure; Measure; Stat; role; Method:scope,item_definition,column,item_processing
+Fobbs_etal_2011_TableS1b,item_output,fobbs-s1b-tsv,whole registered TSV,registered_item_output,item,inventory_extraction
+Fobbs_etal_2011_TableS1b,original_publication,fobbs-paper,article methods; collection provenance,published_source,publication,snapshot
+Fobbs_etal_2011_TableS1b,original_source,fobbs-s1b-source-doc,"supplement Table S1b; printed rows, headings and notes",published_source,printed_catalog,snapshot
+Fobbs_etal_2011_TableS1b,snapshot_builder,fobbs-s1b-snapshot-builder,published DOC to frozen XLSX,snapshot_extraction,item,snapshot
+Fobbs_etal_2011_TableS1b,frozen_snapshot,fobbs-s1b-snapshot,printed layout before item cleaning,snapshot_evidence,printed_catalog,snapshot
+Fobbs_etal_2011_TableS1b,item_builder,fobbs-s1b-builder,frozen workbook to catalog CSV and public TSV,item_processing,item,item_processing
+Fobbs_etal_2011_TableS1b,analysis_table,fobbs-s1b-csv,"cleaned catalog records; source_row assigned after filtering/reflow, not original DOC row",item_processing,catalog_record,item_processing
+Fobbs_etal_2011_TableS1b,source_note,fobbs-s1b-readme,catalog scope and extraction notes,curator_note,item,item_processing
+Fobbs_etal_2011_TableS1b,specimen_metadata,fobbs-s1b-tsv,"species; specifics; experimental; normative_controls; age_at_death; sex; plane; study; specimen or preparation grain, not species brain trait",reported_catalog_field,catalog_record,inventory_extraction
+Fobbs_etal_2011_TableS1b,catalog_scope,fobbs-s1b-definitions,Code=Method:scope; non-human comparative catalog,item_definition,item,qualification
+Fobbs_etal_2011_TableS1b,catalog_method,fobbs-s1b-definitions,Code=Method:frozen_source; published DOC and extraction process,item_definition,item,method_review
+Fobbs_etal_2011_TableS1b,specimen_identity,fobbs-specimen-crosswalk,source_publication=Fobbs_etal_2011; item_reference may append #rowN; accession not necessarily unique; review row link,curated_specimen_candidate,specimen_record,taxon_review
+Fobbs_etal_2011_TableS1b,taxon_context,fobbs-s1b-tsv,species; specifics; printed name retained,source_row_taxon,catalog_record,taxon_review
+Fobbs_etal_2011_TableS2,reporting_reference,registry-readme,Sheet1; Item name=Fobbs_etal_2011_TableS2; DOI URL=10.1111/j.1749-6632.2011.06036.x,registry_hint,item,item_processing
+Fobbs_etal_2011_TableS2,item_definition,fobbs-s2-definitions,Code; Definition; Structure; Measure; Stat; role; Method:scope,item_definition,column,item_processing
+Fobbs_etal_2011_TableS2,item_output,fobbs-s2-tsv,whole registered TSV,registered_item_output,item,inventory_extraction
+Fobbs_etal_2011_TableS2,original_publication,fobbs-paper,article methods; collection provenance,published_source,publication,snapshot
+Fobbs_etal_2011_TableS2,original_source,fobbs-s2-source-doc,"supplement Table S2; printed rows, headings and notes",published_source,printed_catalog,snapshot
+Fobbs_etal_2011_TableS2,snapshot_builder,fobbs-s2-snapshot-builder,published DOC to frozen XLSX,snapshot_extraction,item,snapshot
+Fobbs_etal_2011_TableS2,frozen_snapshot,fobbs-s2-snapshot,printed layout before item cleaning,snapshot_evidence,printed_catalog,snapshot
+Fobbs_etal_2011_TableS2,item_builder,fobbs-s2-builder,frozen workbook to catalog CSV and public TSV,item_processing,item,item_processing
+Fobbs_etal_2011_TableS2,analysis_table,fobbs-s2-csv,"cleaned catalog records; source_row assigned after filtering/reflow, not original DOC row",item_processing,catalog_record,item_processing
+Fobbs_etal_2011_TableS2,source_note,fobbs-s2-readme,catalog scope and extraction notes,curator_note,item,item_processing
+Fobbs_etal_2011_TableS2,specimen_metadata,fobbs-s2-tsv,"animal_number; brain_part; stains_used; plane_of_section; section_thickness; total_number_of_sections; total_number_of_slides; embedding_medium; specimen or preparation grain, not species brain trait",reported_catalog_field,catalog_record,inventory_extraction
+Fobbs_etal_2011_TableS2,catalog_scope,fobbs-s2-definitions,Code=Method:scope; comparative brain sections catalog,item_definition,item,qualification
+Fobbs_etal_2011_TableS2,catalog_method,fobbs-s2-definitions,Code=Method:frozen_source; published DOC and extraction process,item_definition,item,method_review
+Fobbs_etal_2011_TableS2,specimen_identity,fobbs-specimen-crosswalk,source_publication=Fobbs_etal_2011; item_reference may append #rowN; accession not necessarily unique; review row link,curated_specimen_candidate,specimen_record,taxon_review
+Fobbs_etal_2011_TableS2,taxon_context,fobbs-s2-tsv,common_name; printed name retained,source_row_taxon,catalog_record,taxon_review
+Fobbs_etal_2011_TableS2,item_taxon_lookup,fobbs-s2-taxa,printed_name; printed_column; Species_binomial; taxon_rank; species_basis; builder uses this lookup,item_taxon_annotation,printed_taxon,taxon_review
+Fobbs_etal_2011_TableS2,output_taxon_annotation,fobbs-s2-csv,Species_binomial; species_basis joined from item-scoped lookup,item_taxon_annotation,catalog_record,taxon_review
+Fobbs_etal_2011_TableS3,reporting_reference,registry-readme,Sheet1; Item name=Fobbs_etal_2011_TableS3; DOI URL=10.1111/j.1749-6632.2011.06036.x,registry_hint,item,item_processing
+Fobbs_etal_2011_TableS3,item_definition,fobbs-s3-definitions,Code; Definition; Structure; Measure; Stat; role; Method:scope,item_definition,column,item_processing
+Fobbs_etal_2011_TableS3,item_output,fobbs-s3-tsv,whole registered TSV,registered_item_output,item,inventory_extraction
+Fobbs_etal_2011_TableS3,original_publication,fobbs-paper,article methods; collection provenance,published_source,publication,snapshot
+Fobbs_etal_2011_TableS3,original_source,fobbs-s3-source-doc,"supplement Table S3; printed rows, headings and notes",published_source,printed_catalog,snapshot
+Fobbs_etal_2011_TableS3,snapshot_builder,fobbs-s3-snapshot-builder,published DOC to frozen XLSX,snapshot_extraction,item,snapshot
+Fobbs_etal_2011_TableS3,frozen_snapshot,fobbs-s3-snapshot,printed layout before item cleaning,snapshot_evidence,printed_catalog,snapshot
+Fobbs_etal_2011_TableS3,item_builder,fobbs-s3-builder,frozen workbook to catalog CSV and public TSV,item_processing,item,item_processing
+Fobbs_etal_2011_TableS3,analysis_table,fobbs-s3-csv,"cleaned catalog records; source_row assigned after filtering/reflow, not original DOC row",item_processing,catalog_record,item_processing
+Fobbs_etal_2011_TableS3,source_note,fobbs-s3-readme,catalog scope and extraction notes,curator_note,item,item_processing
+Fobbs_etal_2011_TableS3,specimen_metadata,fobbs-s3-tsv,"animal_number; plane_of_section; total_number_of_sections; slide_size; specimen or preparation grain, not species brain trait",reported_catalog_field,catalog_record,inventory_extraction
+Fobbs_etal_2011_TableS3,catalog_scope,fobbs-s3-definitions,Code=Method:scope; non-mammalian brain sections catalog,item_definition,item,qualification
+Fobbs_etal_2011_TableS3,catalog_method,fobbs-s3-definitions,Code=Method:frozen_source; published DOC and extraction process,item_definition,item,method_review
+Fobbs_etal_2011_TableS3,specimen_identity,fobbs-specimen-crosswalk,source_publication=Fobbs_etal_2011; item_reference may append #rowN; accession not necessarily unique; review row link,curated_specimen_candidate,specimen_record,taxon_review
+Fobbs_etal_2011_TableS3,taxon_context,fobbs-s3-tsv,common_name; scientific_name; printed name retained,source_row_taxon,catalog_record,taxon_review
+Fobbs_etal_2011_TableS4,reporting_reference,registry-readme,Sheet1; Item name=Fobbs_etal_2011_TableS4; DOI URL=10.1111/j.1749-6632.2011.06036.x,registry_hint,item,item_processing
+Fobbs_etal_2011_TableS4,item_definition,fobbs-s4-definitions,Code; Definition; Structure; Measure; Stat; role; Method:scope,item_definition,column,item_processing
+Fobbs_etal_2011_TableS4,item_output,fobbs-s4-tsv,whole registered TSV,registered_item_output,item,inventory_extraction
+Fobbs_etal_2011_TableS4,original_publication,fobbs-paper,article methods; collection provenance,published_source,publication,snapshot
+Fobbs_etal_2011_TableS4,original_source,fobbs-s4-source-doc,"supplement Table S4; printed rows, headings and notes",published_source,printed_catalog,snapshot
+Fobbs_etal_2011_TableS4,snapshot_builder,fobbs-s4-snapshot-builder,published DOC to frozen XLSX,snapshot_extraction,item,snapshot
+Fobbs_etal_2011_TableS4,frozen_snapshot,fobbs-s4-snapshot,printed layout before item cleaning,snapshot_evidence,printed_catalog,snapshot
+Fobbs_etal_2011_TableS4,item_builder,fobbs-s4-builder,frozen workbook to catalog CSV and public TSV,item_processing,item,item_processing
+Fobbs_etal_2011_TableS4,analysis_table,fobbs-s4-csv,"cleaned catalog records; source_row assigned after filtering/reflow, not original DOC row",item_processing,catalog_record,item_processing
+Fobbs_etal_2011_TableS4,source_note,fobbs-s4-readme,catalog scope and extraction notes,curator_note,item,item_processing
+Fobbs_etal_2011_TableS4,specimen_metadata,fobbs-s4-tsv,"box_number; specimens; plane; stain; collection_group; specimen or preparation grain, not species brain trait",reported_catalog_field,catalog_record,inventory_extraction
+Fobbs_etal_2011_TableS4,catalog_scope,fobbs-s4-definitions,Code=Method:scope; storage-box inventory,item_definition,item,qualification
+Fobbs_etal_2011_TableS4,catalog_method,fobbs-s4-definitions,Code=Method:frozen_source; published DOC and extraction process,item_definition,item,method_review
+Fobbs_etal_2011_TableS4,specimen_identity,fobbs-specimen-crosswalk,source_publication=Fobbs_etal_2011; item_reference may append #rowN; accession not necessarily unique; review row link,curated_specimen_candidate,specimen_record,taxon_review
+Fobbs_etal_2011_TableS4,taxon_context,fobbs-s4-tsv,specimens; printed name retained,source_row_taxon,catalog_record,taxon_review
+Fobbs_etal_2011_TableS4,item_taxon_lookup,fobbs-s4-taxa,printed_name; printed_column; Species_binomial; taxon_rank; species_basis; builder uses this lookup,item_taxon_annotation,printed_taxon,taxon_review
+Fobbs_etal_2011_TableS4,output_taxon_annotation,fobbs-s4-csv,Species_binomial; species_basis joined from item-scoped lookup,item_taxon_annotation,catalog_record,taxon_review
+Fobbs_etal_2011_TableS5a,reporting_reference,registry-readme,Sheet1; Item name=Fobbs_etal_2011_TableS5a; DOI URL=10.1111/j.1749-6632.2011.06036.x,registry_hint,item,item_processing
+Fobbs_etal_2011_TableS5a,item_definition,fobbs-s5a-definitions,Code; Definition; Structure; Measure; Stat; role; Method:scope,item_definition,column,item_processing
+Fobbs_etal_2011_TableS5a,item_output,fobbs-s5a-tsv,whole registered TSV,registered_item_output,item,inventory_extraction
+Fobbs_etal_2011_TableS5a,original_publication,fobbs-paper,article methods; collection provenance,published_source,publication,snapshot
+Fobbs_etal_2011_TableS5a,original_source,fobbs-s5a-source-doc,"supplement Table S5a; printed rows, headings and notes",published_source,printed_catalog,snapshot
+Fobbs_etal_2011_TableS5a,snapshot_builder,fobbs-s5a-snapshot-builder,published DOC to frozen XLSX,snapshot_extraction,item,snapshot
+Fobbs_etal_2011_TableS5a,frozen_snapshot,fobbs-s5a-snapshot,printed layout before item cleaning,snapshot_evidence,printed_catalog,snapshot
+Fobbs_etal_2011_TableS5a,item_builder,fobbs-s5a-builder,frozen workbook to catalog CSV and public TSV,item_processing,item,item_processing
+Fobbs_etal_2011_TableS5a,analysis_table,fobbs-s5a-csv,"cleaned catalog records; source_row assigned after filtering/reflow, not original DOC row",item_processing,catalog_record,item_processing
+Fobbs_etal_2011_TableS5a,source_note,fobbs-s5a-readme,catalog scope and extraction notes,curator_note,item,item_processing
+Fobbs_etal_2011_TableS5a,specimen_metadata,fobbs-s5a-tsv,"specimen_number; material; stain; plane; section_thickness_micrometers; number_of_slides; number_of_sections; specimen or preparation grain, not species brain trait",reported_catalog_field,catalog_record,inventory_extraction
+Fobbs_etal_2011_TableS5a,catalog_scope,fobbs-s5a-definitions,Code=Method:scope; comparative brain sections catalog,item_definition,item,qualification
+Fobbs_etal_2011_TableS5a,catalog_method,fobbs-s5a-definitions,Code=Method:frozen_source; published DOC and extraction process,item_definition,item,method_review
+Fobbs_etal_2011_TableS5a,specimen_identity,fobbs-specimen-crosswalk,source_publication=Fobbs_etal_2011; item_reference may append #rowN; accession not necessarily unique; review row link,curated_specimen_candidate,specimen_record,taxon_review
+Fobbs_etal_2011_TableS5a,taxon_context,fobbs-s5a-tsv,species; common_name; printed name retained,source_row_taxon,catalog_record,taxon_review
+Fobbs_etal_2011_TableS5b,reporting_reference,registry-readme,Sheet1; Item name=Fobbs_etal_2011_TableS5b; DOI URL=10.1111/j.1749-6632.2011.06036.x,registry_hint,item,item_processing
+Fobbs_etal_2011_TableS5b,item_definition,fobbs-s5b-definitions,Code; Definition; Structure; Measure; Stat; role; Method:scope,item_definition,column,item_processing
+Fobbs_etal_2011_TableS5b,item_output,fobbs-s5b-tsv,whole registered TSV,registered_item_output,item,inventory_extraction
+Fobbs_etal_2011_TableS5b,original_publication,fobbs-paper,article methods; collection provenance,published_source,publication,snapshot
+Fobbs_etal_2011_TableS5b,original_source,fobbs-s5b-source-doc,"supplement Table S5b; printed rows, headings and notes",published_source,printed_catalog,snapshot
+Fobbs_etal_2011_TableS5b,snapshot_builder,fobbs-s5b-snapshot-builder,published DOC to frozen XLSX,snapshot_extraction,item,snapshot
+Fobbs_etal_2011_TableS5b,frozen_snapshot,fobbs-s5b-snapshot,printed layout before item cleaning,snapshot_evidence,printed_catalog,snapshot
+Fobbs_etal_2011_TableS5b,item_builder,fobbs-s5b-builder,frozen workbook to catalog CSV and public TSV,item_processing,item,item_processing
+Fobbs_etal_2011_TableS5b,analysis_table,fobbs-s5b-csv,"cleaned catalog records; source_row assigned after filtering/reflow, not original DOC row",item_processing,catalog_record,item_processing
+Fobbs_etal_2011_TableS5b,source_note,fobbs-s5b-readme,catalog scope and extraction notes,curator_note,item,item_processing
+Fobbs_etal_2011_TableS5b,specimen_metadata,fobbs-s5b-tsv,"animal_number; stains; plane; number_of_slides; comments; specimen or preparation grain, not species brain trait",reported_catalog_field,catalog_record,inventory_extraction
+Fobbs_etal_2011_TableS5b,catalog_scope,fobbs-s5b-definitions,Code=Method:scope; non-mammalian brain sections catalog,item_definition,item,qualification
+Fobbs_etal_2011_TableS5b,catalog_method,fobbs-s5b-definitions,Code=Method:frozen_source; published DOC and extraction process,item_definition,item,method_review
+Fobbs_etal_2011_TableS5b,specimen_identity,fobbs-specimen-crosswalk,source_publication=Fobbs_etal_2011; item_reference may append #rowN; accession not necessarily unique; review row link,curated_specimen_candidate,specimen_record,taxon_review
+Fobbs_etal_2011_TableS5b,taxon_context,fobbs-s5b-tsv,common_name; printed name retained,source_row_taxon,catalog_record,taxon_review
+Fobbs_etal_2011_TableS5b,item_taxon_lookup,fobbs-s5b-taxa,printed_name; printed_column; Species_binomial; taxon_rank; species_basis; builder uses this lookup,item_taxon_annotation,printed_taxon,taxon_review
+Fobbs_etal_2011_TableS5b,output_taxon_annotation,fobbs-s5b-csv,Species_binomial; species_basis joined from item-scoped lookup,item_taxon_annotation,catalog_record,taxon_review
+Kennedy_etal_1978_Table,reporting_reference,registry-readme,Sheet1; Item name=Kennedy_etal_1978_Table; DOI URL=10.1002/ana.410040402,registry_hint,item,item_processing
+Kennedy_etal_1978_Table,item_definition,kennedy-table-definitions,Code; Definition; Structure; Measure; Stat; role; Source Note,item_definition,column_and_region,item_processing
+Kennedy_etal_1978_Table,item_output,kennedy-table-tsv,whole registered TSV,registered_item_output,item,inventory_extraction
+Kennedy_etal_1978_Table,original_source,kennedy-paper,unnumbered table journal p. 298,direct_source,printed_table,snapshot
+Kennedy_etal_1978_Table,snapshot_builder,kennedy-table-snapshot-builder,PDF page renders to frozen transcription,snapshot_extraction,item,snapshot
+Kennedy_etal_1978_Table,frozen_snapshot,kennedy-table-snapshot,printed layout or passage with source locator before parsing,snapshot_evidence,printed_row,snapshot
+Kennedy_etal_1978_Table,item_builder,kennedy-table-builder,snapshot to analysis CSV and registered TSV,item_processing,item,item_processing
+Kennedy_etal_1978_Table,analysis_table,kennedy-table-csv,parsed values and printed context,item_processing,region_group_mean,item_processing
+Kennedy_etal_1978_Table,source_note,kennedy-table-readme,extraction and check notes; live registry confirms item,curator_note,item,item_processing
+Kennedy_etal_1978_Table,reported_value,kennedy-table-tsv,CMRglc.umol_100g_min; value_numeric; mean_printed; dispersion_numeric,source_row_value,cell,inventory_extraction
+Kennedy_etal_1978_Table,printed_species,kennedy-table-tsv,"species_as_published; paper wording, not a harmonized key",source_row_taxon,row,taxon_review
+Kennedy_etal_1978_Table,accepted_species,species-reference,accepted_name; ncbi_taxid; only after review of primary versus cited-source taxon,active_taxon_anchor,taxon_name,taxon_review
+Kennedy_etal_1978_Table,species_resolution_candidate,kennedy-proposed-species,variant_name; accepted_name; proposed only; secondary Text monkey may be mixed species,proposed_not_active,taxon_name,taxon_review
+Kennedy_etal_1978_Table,unit_definition,kennedy-table-definitions,Code=Method:units; measure-specific unit notes,item_definition,column,method_review
+Kennedy_etal_1978_Table,observation_level,kennedy-table-definitions,Code=Method:observation_level; Method:arms; group means versus single-animal values,item_definition,row_group,method_review
+Kennedy_etal_1978_Table,original_method,kennedy-paper,Methods: conscious macaque 2-deoxyglucose protocol; distinguish cited text rows,published_method,publication,method_review
+Kennedy_etal_1978_Table,region_definition,kennedy-table-definitions,Code=structure_as_published name; 39 structure-specific rows,item_definition,region,method_review
+Kennedy_etal_1978_Table,arm_and_statistic,kennedy-table-tsv,arm_id; n; dispersion_type; structure_as_published; group mean,reported_context,region_group_mean,method_review
+Kennedy_etal_1978_Table,source_role_review,kennedy-table-definitions,Code=CMRglc.umol_100g_min; role=primary for original table group means,item_definition,column,source_trace
+Kennedy_etal_1978_Table,footnote_context,kennedy-table-tsv,"footnote_marks; n=6 on marked rows, otherwise n=7",reported_context,region_group_mean,method_review
+Kennedy_etal_1978_Text,reporting_reference,registry-readme,Sheet1; Item name=Kennedy_etal_1978_Text; DOI URL=10.1002/ana.410040402,registry_hint,item,item_processing
+Kennedy_etal_1978_Text,item_definition,kennedy-text-definitions,Code; Definition; Structure; Measure; Stat; role; Source Note,item_definition,column_and_region,item_processing
+Kennedy_etal_1978_Text,item_output,kennedy-text-tsv,whole registered TSV,registered_item_output,item,inventory_extraction
+Kennedy_etal_1978_Text,original_source,kennedy-paper,DISCUSSION p. 298; Fig 2-3 legends pp. 299-300,direct_source,text_passage,snapshot
+Kennedy_etal_1978_Text,snapshot_builder,kennedy-text-snapshot-builder,PDF page renders to frozen transcription,snapshot_extraction,item,snapshot
+Kennedy_etal_1978_Text,frozen_snapshot,kennedy-text-snapshot,printed layout or passage with source locator before parsing,snapshot_evidence,text_passage,snapshot
+Kennedy_etal_1978_Text,item_builder,kennedy-text-builder,snapshot to analysis CSV and registered TSV,item_processing,item,item_processing
+Kennedy_etal_1978_Text,analysis_table,kennedy-text-csv,parsed values and printed context,item_processing,printed_text_value,item_processing
+Kennedy_etal_1978_Text,source_note,kennedy-text-readme,extraction and check notes; live registry confirms item,curator_note,item,item_processing
+Kennedy_etal_1978_Text,reported_value,kennedy-text-tsv,CMRglc.umol_100g_min; CMRO2.umol_100g_min; value_numeric; value_printed,source_row_value,cell,inventory_extraction
+Kennedy_etal_1978_Text,printed_species,kennedy-text-tsv,"species_as_published; paper wording, not a harmonized key",source_row_taxon,row,taxon_review
+Kennedy_etal_1978_Text,accepted_species,species-reference,accepted_name; ncbi_taxid; only after review of primary versus cited-source taxon,active_taxon_anchor,taxon_name,taxon_review
+Kennedy_etal_1978_Text,species_resolution_candidate,kennedy-proposed-species,variant_name; accepted_name; proposed only; secondary Text monkey may be mixed species,proposed_not_active,taxon_name,taxon_review
+Kennedy_etal_1978_Text,unit_definition,kennedy-text-definitions,Code=Method:units; measure-specific unit notes,item_definition,column,method_review
+Kennedy_etal_1978_Text,observation_level,kennedy-text-definitions,Code=Method:observation_level; Method:arms; group means versus single-animal values,item_definition,row_group,method_review
+Kennedy_etal_1978_Text,original_method,kennedy-paper,Methods: conscious macaque 2-deoxyglucose protocol; distinguish cited text rows,published_method,publication,method_review
+Kennedy_etal_1978_Text,source_role_review,kennedy-text-tsv,"data_role by text_row is authoritative for role; rows 1-3 and 5-6 secondary, 4 and 7-10 primary; generic definition role must not override",reported_role,printed_text_value,source_trace
+Kennedy_etal_1978_Text,reported_citation,kennedy-text-tsv,cited_ref=20 or 22 on secondary rows; restatement rows retain citation,reported_citation,printed_text_value,source_trace
+Kennedy_etal_1978_Text,value_status,kennedy-text-tsv,value_status; restates_text_row; new estimate versus cited or repeated value,reported_context,printed_text_value,qualification
+Kennedy_etal_1978_Text,source_erratum,kennedy-errata,Kennedy_etal_1978-E001; proposal concerning printed 29; keep source value,curator_issue,issue,qualification
+Kennedy_etal_1978_Text,cross_item_check,kennedy-text-check,equal_weight_gray_white_average; mismatch retained,item_check,issue,qualification
+Kennedy_etal_1978_Text,cross_item_check_builder,kennedy-text-check-builder,read-only recomputation from both Kennedy item snapshots,item_check,item,qualification
+Kennedy_etal_1978_Text,upstream_reference,kennedy-text-references,ref_key; citation; source_reference_id; cited_work_type; original_measurement_status; source_item; ref 20 identified but ref 22 original unresolved,citation_lookup,reference_entry,source_trace
+Kennedy_etal_1978_Text,cited_work_bibliography,kennedy-paper,References 20 and 22 in the published bibliography,published_reference,reference_entry,source_trace
+Fobbs_etal_2011_TableS2,measure_definition_caveat,fobbs-s2-definitions,Code=section_thickness; Definition gives a thickness with unit but Measure=count; needs review,definition_issue,column,method_review
+Fobbs_etal_2011_TableS5a,measure_definition_caveat,fobbs-s5a-definitions,Code=section_thickness_micrometers; Definition gives micrometers but Measure=count; needs review,definition_issue,column,method_review
+Fobbs_etal_2011_TableS1a,source_role_review,fobbs-paper,Article compiles legacy museum collections; primary status of catalog record does not identify original observer of each specimen field,published_source_role_context,catalog_record,source_trace
+Fobbs_etal_2011_TableS1b,source_role_review,fobbs-paper,Article compiles legacy museum collections; primary status of catalog record does not identify original observer of each specimen field,published_source_role_context,catalog_record,source_trace
+Fobbs_etal_2011_TableS2,source_role_review,fobbs-paper,Article compiles legacy museum collections; primary status of catalog record does not identify original observer of each specimen field,published_source_role_context,catalog_record,source_trace
+Fobbs_etal_2011_TableS3,source_role_review,fobbs-paper,Article compiles legacy museum collections; primary status of catalog record does not identify original observer of each specimen field,published_source_role_context,catalog_record,source_trace
+Fobbs_etal_2011_TableS4,source_role_review,fobbs-paper,Article compiles legacy museum collections; primary status of catalog record does not identify original observer of each specimen field,published_source_role_context,catalog_record,source_trace
+Fobbs_etal_2011_TableS5a,source_role_review,fobbs-paper,Article compiles legacy museum collections; primary status of catalog record does not identify original observer of each specimen field,published_source_role_context,catalog_record,source_trace
+Fobbs_etal_2011_TableS5b,source_role_review,fobbs-paper,Article compiles legacy museum collections; primary status of catalog record does not identify original observer of each specimen field,published_source_role_context,catalog_record,source_trace
+Buchsbaum_etal_1989_Text,reporting_reference,registry-readme,Sheet1; Item name=Buchsbaum_etal_1989_Text; DOI URL,registry_hint,item,item_processing
+Buchsbaum_etal_1989_Text,original_source,buchsbaum-paper,Discussion text and figure context; located passages,direct_source,printed_text_value,snapshot
+Buchsbaum_etal_1989_Text,snapshot_builder,buchsbaum-text-snapshot-builder,printed text extraction,snapshot_extraction,printed_text_value,snapshot
+Buchsbaum_etal_1989_Text,frozen_snapshot,buchsbaum-text-snapshot,text_row; page; location; passage_as_printed,snapshot_evidence,printed_text_value,snapshot
+Buchsbaum_etal_1989_Text,item_builder,buchsbaum-text-builder,snapshot to located quantitative text rows,item_processing,item,item_processing
+Buchsbaum_etal_1989_Text,analysis_table,buchsbaum-text-csv,whole item CSV,generated_table,printed_text_value,item_processing
+Buchsbaum_etal_1989_Text,item_output,buchsbaum-text-tsv,whole public TSV,registered_item_output,item,inventory_extraction
+Buchsbaum_etal_1989_Text,item_definition,buchsbaum-text-definitions,Code; Definition; Structure; Measure; Stat; role,item_definition,column,item_processing
+Kaufman__2004_TableA1,reporting_reference,registry-readme,Sheet1; Item name=Kaufman__2004_TableA1; DOI URL or citation,registry_hint,item,item_processing
+Kaufman__2004_TableA1,original_source,kaufman-paper,Dissertation Appendix Table A1,direct_source,table,snapshot
+Kaufman__2004_TableA1,frozen_snapshot,kaufman-a01-snapshot,Table A1 printed capture,snapshot_evidence,study_row,snapshot
+Kaufman__2004_TableA1,source_correction_overlay,kaufman-source-corrections,apply_kaufman_source_corrections(item_name=Kaufman__2004_TableA1),item_processing,study_row,item_processing
+Kaufman__2004_TableA1,item_builder,kaufman-a01-builder,Snapshot to Table A1 analysis matrix,item_processing,item,item_processing
+Kaufman__2004_TableA1,analysis_table,kaufman-a01-csv,whole item CSV,generated_table,study_row,item_processing
+Kaufman__2004_TableA1,item_output,kaufman-a01-tsv,whole public TSV,registered_item_output,item,inventory_extraction
+Kaufman__2004_TableA1,item_definition,kaufman-definitions,Code=column; shared Kaufman appendix definitions,item_definition,column,item_processing
+Kaufman__2004_TableA2,reporting_reference,registry-readme,Sheet1; Item name=Kaufman__2004_TableA2; DOI URL or citation,registry_hint,item,item_processing
+Kaufman__2004_TableA2,original_source,kaufman-paper,Dissertation Appendix Table A2,direct_source,table,snapshot
+Kaufman__2004_TableA2,frozen_snapshot,kaufman-a02-snapshot,Table A2 printed capture,snapshot_evidence,study_row,snapshot
+Kaufman__2004_TableA2,source_correction_overlay,kaufman-source-corrections,apply_kaufman_source_corrections(item_name=Kaufman__2004_TableA2),item_processing,study_row,item_processing
+Kaufman__2004_TableA2,item_builder,kaufman-a02-builder,Snapshot to Table A2 analysis matrix,item_processing,item,item_processing
+Kaufman__2004_TableA2,analysis_table,kaufman-a02-csv,whole item CSV,generated_table,study_row,item_processing
+Kaufman__2004_TableA2,item_output,kaufman-a02-tsv,whole public TSV,registered_item_output,item,inventory_extraction
+Kaufman__2004_TableA2,item_definition,kaufman-definitions,Code=column; shared Kaufman appendix definitions,item_definition,column,item_processing
+Kaufman__2004_TableA4,reporting_reference,registry-readme,Sheet1; Item name=Kaufman__2004_TableA4; DOI URL or citation,registry_hint,item,item_processing
+Kaufman__2004_TableA4,original_source,kaufman-paper,Dissertation Appendix Table A4,direct_source,table,snapshot
+Kaufman__2004_TableA4,frozen_snapshot,kaufman-a04-snapshot,Table A4 printed capture,snapshot_evidence,study_row,snapshot
+Kaufman__2004_TableA4,source_correction_overlay,kaufman-source-corrections,apply_kaufman_source_corrections(item_name=Kaufman__2004_TableA4),item_processing,study_row,item_processing
+Kaufman__2004_TableA4,item_builder,kaufman-a04-builder,Snapshot to Table A4 analysis matrix,item_processing,item,item_processing
+Kaufman__2004_TableA4,analysis_table,kaufman-a04-csv,whole item CSV,generated_table,study_row,item_processing
+Kaufman__2004_TableA4,item_output,kaufman-a04-tsv,whole public TSV,registered_item_output,item,inventory_extraction
+Kaufman__2004_TableA4,item_definition,kaufman-definitions,Code=column; shared Kaufman appendix definitions,item_definition,column,item_processing
+Kaufman__2004_TableA5,reporting_reference,registry-readme,Sheet1; Item name=Kaufman__2004_TableA5; DOI URL or citation,registry_hint,item,item_processing
+Kaufman__2004_TableA5,original_source,kaufman-paper,Dissertation Appendix Table A5,direct_source,table,snapshot
+Kaufman__2004_TableA5,frozen_snapshot,kaufman-a05-snapshot,Table A5 printed capture,snapshot_evidence,study_row,snapshot
+Kaufman__2004_TableA5,source_correction_overlay,kaufman-source-corrections,apply_kaufman_source_corrections(item_name=Kaufman__2004_TableA5),item_processing,study_row,item_processing
+Kaufman__2004_TableA5,item_builder,kaufman-a05-builder,Snapshot to Table A5 analysis matrix,item_processing,item,item_processing
+Kaufman__2004_TableA5,analysis_table,kaufman-a05-csv,whole item CSV,generated_table,study_row,item_processing
+Kaufman__2004_TableA5,item_output,kaufman-a05-tsv,whole public TSV,registered_item_output,item,inventory_extraction
+Kaufman__2004_TableA5,item_definition,kaufman-definitions,Code=column; shared Kaufman appendix definitions,item_definition,column,item_processing
+Kaufman__2004_TableA6,reporting_reference,registry-readme,Sheet1; Item name=Kaufman__2004_TableA6; DOI URL or citation,registry_hint,item,item_processing
+Kaufman__2004_TableA6,original_source,kaufman-paper,Dissertation Appendix Table A6,direct_source,table,snapshot
+Kaufman__2004_TableA6,frozen_snapshot,kaufman-a06-snapshot,Table A6 printed capture,snapshot_evidence,study_row,snapshot
+Kaufman__2004_TableA6,source_correction_overlay,kaufman-source-corrections,apply_kaufman_source_corrections(item_name=Kaufman__2004_TableA6),item_processing,study_row,item_processing
+Kaufman__2004_TableA6,item_builder,kaufman-a06-builder,Snapshot to Table A6 analysis matrix,item_processing,item,item_processing
+Kaufman__2004_TableA6,analysis_table,kaufman-a06-csv,whole item CSV,generated_table,study_row,item_processing
+Kaufman__2004_TableA6,item_output,kaufman-a06-tsv,whole public TSV,registered_item_output,item,inventory_extraction
+Kaufman__2004_TableA6,item_definition,kaufman-definitions,Code=column; shared Kaufman appendix definitions,item_definition,column,item_processing
+Kaufman__2004_TableA7,reporting_reference,registry-readme,Sheet1; Item name=Kaufman__2004_TableA7; DOI URL or citation,registry_hint,item,item_processing
+Kaufman__2004_TableA7,original_source,kaufman-paper,Dissertation Appendix Table A7,direct_source,table,snapshot
+Kaufman__2004_TableA7,frozen_snapshot,kaufman-a07-snapshot,Table A7 printed capture,snapshot_evidence,study_row,snapshot
+Kaufman__2004_TableA7,source_correction_overlay,kaufman-source-corrections,apply_kaufman_source_corrections(item_name=Kaufman__2004_TableA7),item_processing,study_row,item_processing
+Kaufman__2004_TableA7,item_builder,kaufman-a07-builder,Snapshot to Table A7 analysis matrix,item_processing,item,item_processing
+Kaufman__2004_TableA7,analysis_table,kaufman-a07-csv,whole item CSV,generated_table,study_row,item_processing
+Kaufman__2004_TableA7,item_output,kaufman-a07-tsv,whole public TSV,registered_item_output,item,inventory_extraction
+Kaufman__2004_TableA7,item_definition,kaufman-definitions,Code=column; shared Kaufman appendix definitions,item_definition,column,item_processing
+Kaufman__2004_TableA8,reporting_reference,registry-readme,Sheet1; Item name=Kaufman__2004_TableA8; DOI URL or citation,registry_hint,item,item_processing
+Kaufman__2004_TableA8,original_source,kaufman-paper,Dissertation Appendix Table A8,direct_source,table,snapshot
+Kaufman__2004_TableA8,frozen_snapshot,kaufman-a08-snapshot,Table A8 printed capture,snapshot_evidence,study_row,snapshot
+Kaufman__2004_TableA8,source_correction_overlay,kaufman-source-corrections,apply_kaufman_source_corrections(item_name=Kaufman__2004_TableA8),item_processing,study_row,item_processing
+Kaufman__2004_TableA8,item_builder,kaufman-a08-builder,Snapshot to Table A8 analysis matrix,item_processing,item,item_processing
+Kaufman__2004_TableA8,analysis_table,kaufman-a08-csv,whole item CSV,generated_table,study_row,item_processing
+Kaufman__2004_TableA8,item_output,kaufman-a08-tsv,whole public TSV,registered_item_output,item,inventory_extraction
+Kaufman__2004_TableA8,item_definition,kaufman-definitions,Code=column; shared Kaufman appendix definitions,item_definition,column,item_processing
+Kaufman__2004_TableA9,reporting_reference,registry-readme,Sheet1; Item name=Kaufman__2004_TableA9; DOI URL or citation,registry_hint,item,item_processing
+Kaufman__2004_TableA9,original_source,kaufman-paper,Dissertation Appendix Table A9,direct_source,table,snapshot
+Kaufman__2004_TableA9,frozen_snapshot,kaufman-a09-snapshot,Table A9 printed capture,snapshot_evidence,study_row,snapshot
+Kaufman__2004_TableA9,source_correction_overlay,kaufman-source-corrections,apply_kaufman_source_corrections(item_name=Kaufman__2004_TableA9),item_processing,study_row,item_processing
+Kaufman__2004_TableA9,item_builder,kaufman-a09-builder,Snapshot to Table A9 analysis matrix,item_processing,item,item_processing
+Kaufman__2004_TableA9,analysis_table,kaufman-a09-csv,whole item CSV,generated_table,study_row,item_processing
+Kaufman__2004_TableA9,item_output,kaufman-a09-tsv,whole public TSV,registered_item_output,item,inventory_extraction
+Kaufman__2004_TableA9,item_definition,kaufman-definitions,Code=column; shared Kaufman appendix definitions,item_definition,column,item_processing
+Kaufman__2004_TableA10,reporting_reference,registry-readme,Sheet1; Item name=Kaufman__2004_TableA10; DOI URL or citation,registry_hint,item,item_processing
+Kaufman__2004_TableA10,original_source,kaufman-paper,Dissertation Appendix Table A10,direct_source,table,snapshot
+Kaufman__2004_TableA10,frozen_snapshot,kaufman-a10-snapshot,Table A10 printed capture,snapshot_evidence,study_row,snapshot
+Kaufman__2004_TableA10,source_correction_overlay,kaufman-source-corrections,apply_kaufman_source_corrections(item_name=Kaufman__2004_TableA10),item_processing,study_row,item_processing
+Kaufman__2004_TableA10,item_builder,kaufman-a10-builder,Snapshot to Table A10 analysis matrix,item_processing,item,item_processing
+Kaufman__2004_TableA10,analysis_table,kaufman-a10-csv,whole item CSV,generated_table,study_row,item_processing
+Kaufman__2004_TableA10,item_output,kaufman-a10-tsv,whole public TSV,registered_item_output,item,inventory_extraction
+Kaufman__2004_TableA10,item_definition,kaufman-definitions,Code=column; shared Kaufman appendix definitions,item_definition,column,item_processing
+Kaufman__2004_TableA11,reporting_reference,registry-readme,Sheet1; Item name=Kaufman__2004_TableA11; DOI URL or citation,registry_hint,item,item_processing
+Kaufman__2004_TableA11,original_source,kaufman-paper,Dissertation Appendix Table A11,direct_source,table,snapshot
+Kaufman__2004_TableA11,frozen_snapshot,kaufman-a11-snapshot,Table A11 printed capture,snapshot_evidence,study_row,snapshot
+Kaufman__2004_TableA11,source_correction_overlay,kaufman-source-corrections,apply_kaufman_source_corrections(item_name=Kaufman__2004_TableA11),item_processing,study_row,item_processing
+Kaufman__2004_TableA11,item_builder,kaufman-a11-builder,Snapshot to Table A11 analysis matrix,item_processing,item,item_processing
+Kaufman__2004_TableA11,analysis_table,kaufman-a11-csv,whole item CSV,generated_table,study_row,item_processing
+Kaufman__2004_TableA11,item_output,kaufman-a11-tsv,whole public TSV,registered_item_output,item,inventory_extraction
+Kaufman__2004_TableA11,item_definition,kaufman-definitions,Code=column; shared Kaufman appendix definitions,item_definition,column,item_processing
+Kaufman__2004_TableA12,reporting_reference,registry-readme,Sheet1; Item name=Kaufman__2004_TableA12; DOI URL or citation,registry_hint,item,item_processing
+Kaufman__2004_TableA12,original_source,kaufman-paper,Dissertation Appendix Table A12,direct_source,table,snapshot
+Kaufman__2004_TableA12,frozen_snapshot,kaufman-a12-snapshot,Table A12 printed capture,snapshot_evidence,study_row,snapshot
+Kaufman__2004_TableA12,source_correction_overlay,kaufman-source-corrections,apply_kaufman_source_corrections(item_name=Kaufman__2004_TableA12),item_processing,study_row,item_processing
+Kaufman__2004_TableA12,item_builder,kaufman-a12-builder,Snapshot to Table A12 analysis matrix,item_processing,item,item_processing
+Kaufman__2004_TableA12,analysis_table,kaufman-a12-csv,whole item CSV,generated_table,study_row,item_processing
+Kaufman__2004_TableA12,item_output,kaufman-a12-tsv,whole public TSV,registered_item_output,item,inventory_extraction
+Kaufman__2004_TableA12,item_definition,kaufman-definitions,Code=column; shared Kaufman appendix definitions,item_definition,column,item_processing
+Kaufman__2004_TableA13,reporting_reference,registry-readme,Sheet1; Item name=Kaufman__2004_TableA13; DOI URL or citation,registry_hint,item,item_processing
+Kaufman__2004_TableA13,original_source,kaufman-paper,Dissertation Appendix Table A13,direct_source,table,snapshot
+Kaufman__2004_TableA13,frozen_snapshot,kaufman-a13-snapshot,Table A13 printed capture,snapshot_evidence,study_row,snapshot
+Kaufman__2004_TableA13,source_correction_overlay,kaufman-source-corrections,apply_kaufman_source_corrections(item_name=Kaufman__2004_TableA13),item_processing,study_row,item_processing
+Kaufman__2004_TableA13,item_builder,kaufman-a13-builder,Snapshot to Table A13 analysis matrix,item_processing,item,item_processing
+Kaufman__2004_TableA13,analysis_table,kaufman-a13-csv,whole item CSV,generated_table,study_row,item_processing
+Kaufman__2004_TableA13,item_output,kaufman-a13-tsv,whole public TSV,registered_item_output,item,inventory_extraction
+Kaufman__2004_TableA13,item_definition,kaufman-definitions,Code=column; shared Kaufman appendix definitions,item_definition,column,item_processing
+Kaufman__2004_TableA14,reporting_reference,registry-readme,Sheet1; Item name=Kaufman__2004_TableA14; DOI URL or citation,registry_hint,item,item_processing
+Kaufman__2004_TableA14,original_source,kaufman-paper,Dissertation Appendix Table A14,direct_source,table,snapshot
+Kaufman__2004_TableA14,frozen_snapshot,kaufman-a14-snapshot,Table A14 printed capture,snapshot_evidence,study_row,snapshot
+Kaufman__2004_TableA14,source_correction_overlay,kaufman-source-corrections,apply_kaufman_source_corrections(item_name=Kaufman__2004_TableA14),item_processing,study_row,item_processing
+Kaufman__2004_TableA14,item_builder,kaufman-a14-builder,Snapshot to Table A14 analysis matrix,item_processing,item,item_processing
+Kaufman__2004_TableA14,analysis_table,kaufman-a14-csv,whole item CSV,generated_table,study_row,item_processing
+Kaufman__2004_TableA14,item_output,kaufman-a14-tsv,whole public TSV,registered_item_output,item,inventory_extraction
+Kaufman__2004_TableA14,item_definition,kaufman-definitions,Code=column; shared Kaufman appendix definitions,item_definition,column,item_processing
+Kaufman__2004_TableA15,reporting_reference,registry-readme,Sheet1; Item name=Kaufman__2004_TableA15; DOI URL or citation,registry_hint,item,item_processing
+Kaufman__2004_TableA15,original_source,kaufman-paper,Dissertation Appendix Table A15,direct_source,table,snapshot
+Kaufman__2004_TableA15,frozen_snapshot,kaufman-a15-snapshot,Table A15 printed capture,snapshot_evidence,species_weighting_region_measure,snapshot
+Kaufman__2004_TableA15,item_builder,kaufman-a15-builder,Snapshot to Table A15 analysis matrix,item_processing,item,item_processing
+Kaufman__2004_TableA15,analysis_table,kaufman-a15-csv,whole item CSV,generated_table,species_weighting_region_measure,item_processing
+Kaufman__2004_TableA15,item_output,kaufman-a15-tsv,whole public TSV,registered_item_output,item,inventory_extraction
+Kaufman__2004_TableA15,item_definition,kaufman-definitions,Code=column; shared Kaufman appendix definitions,item_definition,column,item_processing

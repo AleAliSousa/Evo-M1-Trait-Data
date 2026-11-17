@@ -1,0 +1,45 @@
+content_role,content_group,definition
+behavior_measurements,measurement,Original behavioral measurement matrix
+bibliography,citation,Published bibliography entries
+box_catalog,specimen_catalog,Storage-box inventory records
+check_derivation,review_audit,Code that derives or checks a source value
+citation_lookup,citation,Printed citation key to cited-work lookup
+citation_scope,citation,Declaration of which cell or row a citation applies to
+compiled_measurements,measurement,Compiled reported measurements
+compiled_measurements_with_citations,measurement,Compiled measurements with citation fields
+compiled_source_reports,measurement,Rows representing cited or original reports
+derived_compilation_summary,derived_data,Summary derived from preceding registered reports
+errata_ledger,review_audit,Tracked proposed or resolved source correction
+field_definitions,definition,Item column and measure definitions
+frozen_snapshot,source_evidence,Frozen pre-cleaning source matrix
+generated_check_result,review_audit,Generated cross-item or arithmetic check
+generated_source_match,review_audit,Generated source-to-value citation match
+generated_source_match_issues,review_audit,Unresolved generated source-match issues
+generated_source_match_summary,review_audit,Summary of generated source matches
+item_documentation,documentation,Item-specific narrative extraction documentation
+item_note,documentation,Paper or item-specific explanatory note
+mixed_measurements_with_citations,measurement,Original and cited values in one registered matrix
+mixed_text_reports_with_citations,measurement,Original and cited values extracted from prose
+original_measurements,measurement,Original observations or group summaries
+original_text_reports,measurement,Original values extracted from prose
+proposed_taxon_mapping,taxon,Paper-local taxon mapping awaiting authority review
+publication_evidence,source_evidence,Published paper used as source evidence
+published_supplement,source_evidence,Published supplemental source document
+snapshot_derivation,processing,Script producing a frozen source snapshot
+source_correction_rule,processing,Reproducible correction overlay applied in an item build
+source_inventory,provenance,Manifest of item sources or built outputs
+specimen_catalog,specimen_catalog,Specimen or collection inventory records
+specimen_catalog_with_lengths,specimen_catalog,Specimen inventory with body-length observations
+supplied_source_matrix,source_evidence,Author-supplied source matrix before item processing
+taxon_annotation_lookup,taxon,Paper-local printed-name annotation lookup
+trait_compilation,measurement,Compiled trait values
+trait_compilation_with_sources,measurement,Compiled trait values with paired source fields
+variable_workbook,source_evidence,Workbook carrying source variables or annotations
+pipeline_code,processing,Script that builds or checks pipeline resources
+pipeline_configuration,processing,Shared input that configures the pilot build or accepted authority
+pipeline_resource_registry,provenance,File-level registry of pipeline resources and dependencies
+pipeline_documentation,documentation,Documentation for the pilot pipeline
+metadata_catalog,provenance,Generated resource and field-route catalog
+qualification_report,review_audit,Generated point qualification report or issue table
+assertion_audit,review_audit,Generated field assertion and evidence inventory
+selection_report,review_audit,Generated source-choice report or view

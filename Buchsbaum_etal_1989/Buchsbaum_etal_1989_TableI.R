@@ -24,8 +24,6 @@
 folder <- dirname(.sp); setwd(folder)
 item_name <- sub("\\.R$", "", basename(.sp))
 base  <- item_name
-paper <- basename(folder)
-locus <- sub(paste0("^", paper, "_"), "", item_name)
 
 read_snapshot <- function(file, header = FALSE) {
   x <- read.csv(file, header = header, colClasses = "character", na.strings = character(0),
@@ -150,28 +148,19 @@ message(item_name, ": ", nrow(final.dataframe), " rows x ", ncol(final.dataframe
         " cols written to ", base, ".csv")
 
 ## ---- public TSV ---------------------------------------------------------------
-## Item encoded is looked up in __ReadMe.xlsx by Item name. While the item is not
-## yet registered, the code is derived exactly as the registry formula would
-## build it (DOI with "/" percent-encoded, "_", item locus) and the README says
-## the item awaits registration; the registry stays the authority.
-doi <- "10.1016/0024-3205(89)90021-0"
+## The live registry is required before writing the public item TSV.
 root <- folder
 while (dirname(root) != root && !file.exists(file.path(root, "__ReadMe.xlsx"))) root <- dirname(root)
-item_encoded <- NA_character_
-if (file.exists(file.path(root, "__ReadMe.xlsx"))) {
-  registry <- readxl::read_excel(file.path(root, "__ReadMe.xlsx"), sheet = "Sheet1",
-                                 .name_repair = "minimal")
-  item_encoded <- registry[["Item encoded"]][match(item_name, registry[["Item name"]])]
-}
-if (length(item_encoded) != 1L || is.na(item_encoded) || !nzchar(item_encoded)) {
-  item_encoded <- paste0(gsub("/", "%2F", doi, fixed = TRUE), "_", locus)
-  message(item_name, ": not (yet) in __ReadMe.xlsx; public TSV named by the derived code ",
-          item_encoded, " (awaiting registration)")
-}
+if (!file.exists(file.path(root, "__ReadMe.xlsx"))) stop("Repository registry not found")
+registry <- readxl::read_excel(file.path(root, "__ReadMe.xlsx"), sheet = "Sheet1",
+                               .name_repair = "minimal")
+registry_row <- which(registry[["Item name"]] == item_name & !is.na(registry[["Item name"]]))
+if (length(registry_row) != 1L) stop("Expected one registered item row for ", item_name)
+item_encoded <- registry[["Item encoded"]][registry_row]
+if (is.na(item_encoded) || !nzchar(item_encoded)) stop("Registered Item encoded is blank for ", item_name)
 stopifnot(!grepl("_$", item_encoded))
 tsv_dir <- file.path(root, "__Public", "comparative-data")
-if (dir.exists(tsv_dir)) {
-  write.table(final.dataframe, file.path(tsv_dir, paste0(item_encoded, ".tsv")),
-              sep = "\t", row.names = FALSE, quote = TRUE, na = "", fileEncoding = "UTF-8")
-  message(item_name, ": public TSV ", item_encoded, ".tsv")
-} else warning(item_name, ": __Public/comparative-data not found; public TSV not written.")
+if (!dir.exists(tsv_dir)) stop("Public TSV directory not found")
+write.table(final.dataframe, file.path(tsv_dir, paste0(item_encoded, ".tsv")),
+            sep = "\t", row.names = FALSE, quote = TRUE, na = "", fileEncoding = "UTF-8")
+message(item_name, ": public TSV ", item_encoded, ".tsv")

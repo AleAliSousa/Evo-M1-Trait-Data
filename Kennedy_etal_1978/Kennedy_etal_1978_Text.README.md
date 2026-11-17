@@ -1,9 +1,6 @@
 # Kennedy_etal_1978_Text
 
-**Item name** `Kennedy_etal_1978_Text` · **Item number** `data from text` · **Item encoded** `10.1002%2Fana.410040402_Text` — *derived, awaiting registration*
-(the item is not yet in `__ReadMe.xlsx`; the code was derived as the registry formula would build it,
-DOI with `/` percent-encoded + `_` + item locus, the Mink_etal_1981 convention. Paste
-`Kennedy_etal_1978_Text_registry_row.xlsx`, run `_tools/file_list.R`, and rename the TSV if the registry resolves a different code.)
+**Item name** `Kennedy_etal_1978_Text` · **Item number** `data from text` · **Item encoded** `10.1002%2Fana.410040402_Text` — registered in `__ReadMe.xlsx`.
 
 Kennedy, C., Sakurada, O., Shinohara, M., Jehle, J., & Sokoloff, L. (1978). Local cerebral glucose utilization in the normal conscious macaque monkey. *Annals of Neurology*, 4(4), 293-301. <https://doi.org/10.1002/ana.410040402>
 
@@ -23,6 +20,7 @@ Source (PDF)
   -> Kennedy_etal_1978_Text.csv   10 rows x 20 cols  ("use this")
   -> __Public/comparative-data/10.1002%2Fana.410040402_Text.tsv
   -> reference_tables/Kennedy_etal_1978_Text_definitions.csv
+  -> reference_tables/Kennedy_etal_1978_Text_references.csv (numbered citation lookup for pilot)
 ```
 
 ## Who read the values, when, and how it was checked
@@ -62,6 +60,8 @@ untouched.)
 ## Data role
 
 **primary** for the table. The text item is **both**: 29, 121, 47/67 and 107 are this paper's own; 3.7 cc O2 (Schmidt, Kety & Pennes 1945, ref 20), its glucose equivalent 28, and the human 31 (ref 22) are CITED and flagged `data_role = secondary` row by row; do not merge them as Kennedy 1978 data.
+
+The pilot resolves refs 20 and 22 through `reference_tables/Kennedy_etal_1978_Text_references.csv`. Ref 20 identifies Schmidt et al. 1945; its pooled monkey mean does not inherit Kennedy's rhesus identity. Ref 22 identifies a review chapter, so the original study behind its human value still needs tracing. The pilot also holds the printed whole-brain estimate of 29 while its open erratum is reviewed, and holds illustrative single-animal values and restatements outside the species-level choice.
 
 ## Species names
 

@@ -51,13 +51,27 @@ stopifnot(nrow(snap) == 21)
 final.dataframe <- tibble(
   species_row = seq_len(nrow(snap)),
   binomial    = snap$Species,
+  # The PDF prints "Tursiops truncates" in its final row (Table 1, p. 2081).
+  # The older snapshot normalized that typo. Keep both representations here;
+  # the accepted name is resolved only through the project taxon keys.
+  species_as_published = ifelse(snap$Species == "Tursiops truncatus",
+                                "Tursiops truncates", snap$Species),
   common_name = snap$`Common name`,
   audible_freq_high_60dBSPL_khz = as.numeric(snap$`High-frequency Hearing Limit (kHz)`),
+  ref_freq_key = snap$`Ref (freq)`,
   interaural_distance_functional_us = as.numeric(snap$`Functional Interaural Distance (us)`),
   basilar_membrane_length_mm = as.numeric(snap$`Basilar Membrane Length (mm)`),
-  data_role = ifelse(snap$Species == "Tursiops truncatus", "primary", "secondary"),
-  source = "see reference_tables/Heffner_Heffner_2010_b_Table1_footnotes.csv for per-row citation letters"
+  ref_bm_length_keys = snap$`Ref (BM length)`,
+  # Table 1 compiles hearing and membrane values from cited works. The
+  # interaural distances have no per-row source or acquisition protocol.
+  data_role = "secondary",
+  source = "Heffner and Heffner 2010 Table 1; see ref_freq_key and ref_bm_length_keys"
 )
+stopifnot(nrow(final.dataframe) == 21L,
+          identical(final.dataframe$species_as_published[21L], "Tursiops truncates"),
+          all(final.dataframe$data_role == "secondary"),
+          all(nzchar(final.dataframe$ref_freq_key)),
+          all(nzchar(final.dataframe$ref_bm_length_keys)))
 
 ## 4. WRITE CSV + PUBLIC TSV ------------------------------------------
 write.csv(final.dataframe, final_csv, row.names = FALSE, na = "")
@@ -71,3 +85,9 @@ if (!is.na(tsv_dir) && dir.exists(tsv_dir)) {
   write.table(final.dataframe, file.path(tsv_dir, paste0(item_encoded, ".tsv")),
               sep = "\t", row.names = FALSE, na = "")
 } else warning("__Public not mounted; TSV not written -- copy later")
+
+## 5. ITEM-SCOPED CITATION MATCH -----------------------------------------
+if (!is.na(base)) {
+  source(file.path(base, "_tools", "dataset_builder", "source_match.R"))
+  build_source_match(folder, item_name, strict = TRUE)
+}

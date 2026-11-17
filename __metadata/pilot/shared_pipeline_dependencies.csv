@@ -1,0 +1,401 @@
+output_file_id,input_file_id,relation,source_locator,note
+shared_measurements_inventory,registry-readme,reads,,"Prebuilt inventory also scans all public TSVs, beyond the ten-paper pilot."
+shared_measurements_inventory,variable-index,reads,,
+shared_measurements_inventory,brain-basis,reads,,
+shared_measurements_inventory,brain-mass-row-basis,reads,,
+shared_measurements_inventory,measurement-column-rules,reads,,
+shared_measurements_inventory,measurement-item-roles,reads,,
+shared_measurements_inventory,measurement-report-links,reads,,
+shared_catalog_db,shared_items,reads,,
+shared_catalog_db,shared_artifacts,reads,,
+shared_catalog_db,shared_field_routes,reads,,
+shared_catalog_db,registry-readme,reads,,
+shared_folder_db,shared_artifacts,reads,,
+shared_folder_db,shared_field_routes,reads,,
+shared_folder_db,shared_content_roles,reads,,
+shared_folder_db,shared_authority_statuses,reads,,
+shared_folder_db,registry-readme,reads,,
+shared_folder_db,file_registry_ManyPrimates__2022,reads,pipeline_files.csv,
+shared_folder_db,file_registry_Mink_etal_1981,reads,pipeline_files.csv,
+shared_folder_db,file_registry_Boddy_etal_2012,reads,pipeline_files.csv,
+shared_folder_db,file_registry_Falcone_etal_2019,reads,pipeline_files.csv,
+shared_folder_db,file_registry_Buchsbaum_etal_1989,reads,pipeline_files.csv,
+shared_folder_db,file_registry_Kaufman__2004,reads,pipeline_files.csv,
+shared_folder_db,file_registry_Heffner_Heffner_2010_b,reads,pipeline_files.csv,
+shared_folder_db,file_registry_Bahney_vonBartheld_2018,reads,pipeline_files.csv,
+shared_folder_db,file_registry_Fobbs_etal_2011,reads,pipeline_files.csv,
+shared_folder_db,file_registry_Kennedy_etal_1978,reads,pipeline_files.csv,
+shared_folder_audit,shared_artifacts,reads,,
+shared_folder_audit,shared_field_routes,reads,,
+shared_folder_audit,shared_content_roles,reads,,
+shared_folder_audit,shared_authority_statuses,reads,,
+shared_folder_audit,registry-readme,reads,,
+shared_folder_audit,file_registry_ManyPrimates__2022,reads,pipeline_files.csv,
+shared_folder_audit,file_registry_Mink_etal_1981,reads,pipeline_files.csv,
+shared_folder_audit,file_registry_Boddy_etal_2012,reads,pipeline_files.csv,
+shared_folder_audit,file_registry_Falcone_etal_2019,reads,pipeline_files.csv,
+shared_folder_audit,file_registry_Buchsbaum_etal_1989,reads,pipeline_files.csv,
+shared_folder_audit,file_registry_Kaufman__2004,reads,pipeline_files.csv,
+shared_folder_audit,file_registry_Heffner_Heffner_2010_b,reads,pipeline_files.csv,
+shared_folder_audit,file_registry_Bahney_vonBartheld_2018,reads,pipeline_files.csv,
+shared_folder_audit,file_registry_Fobbs_etal_2011,reads,pipeline_files.csv,
+shared_folder_audit,file_registry_Kennedy_etal_1978,reads,pipeline_files.csv,
+shared_route_coverage,shared_artifacts,reads,,
+shared_route_coverage,shared_field_routes,reads,,
+shared_route_coverage,shared_content_roles,reads,,
+shared_route_coverage,shared_authority_statuses,reads,,
+shared_route_coverage,registry-readme,reads,,
+shared_route_coverage,file_registry_ManyPrimates__2022,reads,pipeline_files.csv,
+shared_route_coverage,file_registry_Mink_etal_1981,reads,pipeline_files.csv,
+shared_route_coverage,file_registry_Boddy_etal_2012,reads,pipeline_files.csv,
+shared_route_coverage,file_registry_Falcone_etal_2019,reads,pipeline_files.csv,
+shared_route_coverage,file_registry_Buchsbaum_etal_1989,reads,pipeline_files.csv,
+shared_route_coverage,file_registry_Kaufman__2004,reads,pipeline_files.csv,
+shared_route_coverage,file_registry_Heffner_Heffner_2010_b,reads,pipeline_files.csv,
+shared_route_coverage,file_registry_Bahney_vonBartheld_2018,reads,pipeline_files.csv,
+shared_route_coverage,file_registry_Fobbs_etal_2011,reads,pipeline_files.csv,
+shared_route_coverage,file_registry_Kennedy_etal_1978,reads,pipeline_files.csv,
+shared_route_coverage,shared_scope,reads,,
+shared_specimen_screen,shared_catalog_db,reads,,
+shared_specimen_screen,shared_measurements_inventory,reads,,
+shared_specimen_screen,shared_scope,reads,,
+shared_excluded_context,shared_catalog_db,reads,,
+shared_excluded_context,shared_measurements_inventory,reads,,
+shared_excluded_context,shared_scope,reads,,
+shared_definition_issues,shared_catalog_db,reads,,
+shared_definition_issues,shared_measurements_inventory,reads,,
+shared_definition_issues,shared_scope,reads,,
+shared_pilot_points,shared_catalog_db,reads,,
+shared_pilot_points,shared_measurements_inventory,reads,,
+shared_pilot_points,shared_scope,reads,,
+shared_review_points,shared_catalog_db,reads,,
+shared_review_points,shared_measurements_inventory,reads,,
+shared_review_points,shared_scope,reads,,
+shared_qualification_summary,shared_catalog_db,reads,,
+shared_qualification_summary,shared_measurements_inventory,reads,,
+shared_qualification_summary,shared_scope,reads,,
+shared_inventory_disagreement,shared_catalog_db,reads,,
+shared_inventory_disagreement,shared_measurements_inventory,reads,,
+shared_inventory_disagreement,shared_scope,reads,,
+shared_lineage_links,shared_catalog_db,reads,,
+shared_lineage_links,shared_measurements_inventory,reads,,
+shared_lineage_links,shared_scope,reads,,
+shared_review_points,shared_pilot_points,derives_from,,Derived from the in-memory point table in the same qualification build.
+shared_qualification_summary,shared_pilot_points,derives_from,,Derived from the in-memory point table in the same qualification build.
+shared_inventory_disagreement,shared_pilot_points,derives_from,,Derived from the in-memory point table in the same qualification build.
+shared_lineage_links,shared_pilot_points,derives_from,,Derived from the in-memory point table in the same qualification build.
+shared_pilot_points,species-reference,reads,,
+shared_pilot_points,brain-mass-row-basis,reads,,
+shared_pilot_points,species-key-allman,reads,,
+shared_pilot_points,species-key-ashwell,reads,,
+shared_pilot_points,species-key-general,reads,,
+shared_pilot_points,species-key-herculanohouzel,reads,,
+shared_pilot_points,species-key-hof,reads,,
+shared_pilot_points,species-key-lyamin,reads,,
+shared_pilot_points,species-key-sato,reads,,
+shared_pilot_points,species-key-stephan,reads,,
+shared_pilot_points,species-key-zhu,reads,,
+shared_pilot_points,many-stm-definitions,reads,Code=column; Definition; Structure; Measure; Stat; role,
+shared_pilot_points,many-pred-definitions,reads,Code=column; Definition; Structure; Measure; Stat; role,
+shared_pilot_points,mink-t1-definitions,reads,Code=column; Definition; Structure; Measure; Stat; role,
+shared_pilot_points,boddy-s1-definitions,reads,Code=column; Definition; Structure; Measure; Stat; role,
+shared_pilot_points,boddy-raw-definitions,reads,Code=column; Definition; Structure; Measure; Stat; role,
+shared_pilot_points,falcone-t1-definitions,reads,Code=column; Definition; Structure; Measure; Stat; role,
+shared_pilot_points,falcone-t2-definitions,reads,Code=column; Definition; Structure; Measure; Stat; role,
+shared_pilot_points,buchsbaum-definitions,reads,Code=column or printed region; Definition; Structure; Measure; Stat; role,
+shared_pilot_points,kaufman-definitions,reads,Code=column; Definition; Structure; Measure; Stat; role,
+shared_pilot_points,heffner-definitions,reads,Code=column; Definition; Structure; Measure; Stat; role; Source Note,
+shared_pilot_points,bahney-t1-definitions,reads,Code=column; Definition; Structure; Measure; Stat; role; Source Note,
+shared_pilot_points,bahney-t2-definitions,reads,Code=column; Definition; Structure; Measure; Stat; role; Source Note,
+shared_pilot_points,bahney-t3-definitions,reads,Code=column; Definition; Structure; Measure; Stat; role; Source Note,
+shared_pilot_points,bahney-t4-definitions,reads,Code=column; Definition; Structure; Measure; Stat; role; Source Note,
+shared_pilot_points,fobbs-s1a-definitions,reads,Code; Definition; Structure; Measure; Stat; role; Method:scope,
+shared_pilot_points,kennedy-table-definitions,reads,Code; Definition; Structure; Measure; Stat; role; Source Note,
+shared_pilot_points,kennedy-text-definitions,reads,Code; Definition; Structure; Measure; Stat; role; Source Note,
+shared_pilot_points,mink-t1-tsv,reads,ref_keys_*; printed_footnote_marks,
+shared_pilot_points,mink-t1-lookup,reads,ref_key; cited_in_column; citation,
+shared_pilot_points,kaufman-reference-lookup,reads,ref_key; citation; source_reference_id; primary_reference_id; resolution_status,
+shared_pilot_points,bahney-t3-references,reads,ref_key; cited_in_column=References (printed); citation; note; output column is lowercase references,
+shared_pilot_points,bahney-t4-references,reads,ref_key; cited_in_column=References (printed); citation; note; output column is lowercase references,
+shared_pilot_points,bahney-t3-reference-columns,reads,key_column=references; applies_to=row_overall; match_basis=declared,
+shared_pilot_points,bahney-t4-reference-columns,reads,key_column=references; applies_to=row_overall; match_basis=declared,
+shared_pilot_points,heffner-references,reads,ref_key; cited_in_column; citation; note,
+shared_pilot_points,heffner-reference-columns,reads,key_column=ref_freq_key or ref_bm_length_keys; applies_to is measure-specific,
+shared_pilot_points,kennedy-text-references,reads,ref_key; citation; source_reference_id; cited_work_type; original_measurement_status; source_item; ref 20 identified but ref 22 original unresolved,
+shared_point_assertions,shared_pilot_points,reads,,
+shared_point_assertions,shared_scope,reads,,
+shared_point_assertions,shared_catalog_db,reads,,
+shared_point_assertions,registry-readme,validates_against,,
+shared_point_assertions,species-reference,validates_against,,
+shared_point_assertions,brain-mass-row-basis,validates_against,,
+shared_point_assertions,kaufman-reference-lookup,validates_against,,
+shared_point_assertions,many-stm-definitions,validates_against,Code=column; Definition; Structure; Measure; Stat; role,
+shared_point_assertions,many-stm-tsv,validates_against,whole public TSV,
+shared_point_assertions,many-pred-definitions,validates_against,Code=column; Definition; Structure; Measure; Stat; role,
+shared_point_assertions,many-pred-tsv,validates_against,whole public TSV,
+shared_point_assertions,mink-t1-definitions,validates_against,Code=column; Definition; Structure; Measure; Stat; role,
+shared_point_assertions,mink-t1-tsv,validates_against,whole public TSV,
+shared_point_assertions,boddy-s1-definitions,validates_against,Code=column; Definition; Structure; Measure; Stat; role,
+shared_point_assertions,boddy-s1-tsv,validates_against,whole public TSV,
+shared_point_assertions,boddy-raw-definitions,validates_against,Code=column; Definition; Structure; Measure; Stat; role,
+shared_point_assertions,boddy-raw-tsv,validates_against,whole public TSV,
+shared_point_assertions,falcone-t1-definitions,validates_against,Code=column; Definition; Structure; Measure; Stat; role,
+shared_point_assertions,falcone-t1-tsv,validates_against,whole public TSV,
+shared_point_assertions,falcone-t2-definitions,validates_against,Code=column; Definition; Structure; Measure; Stat; role,
+shared_point_assertions,falcone-t2-tsv,validates_against,whole public TSV,
+shared_point_assertions,buchsbaum-definitions,validates_against,Code=column or printed region; Definition; Structure; Measure; Stat; role,
+shared_point_assertions,buchsbaum-tsv,validates_against,whole public TSV,
+shared_point_assertions,kaufman-definitions,validates_against,Code=column; Definition; Structure; Measure; Stat; role,
+shared_point_assertions,kaufman-tsv,validates_against,whole public TSV,
+shared_point_assertions,heffner-definitions,validates_against,Code=column; Definition; Structure; Measure; Stat; role; Source Note,
+shared_point_assertions,heffner-tsv,validates_against,whole public TSV,
+shared_point_assertions,bahney-t1-definitions,validates_against,Code=column; Definition; Structure; Measure; Stat; role; Source Note,
+shared_point_assertions,bahney-t1-tsv,validates_against,whole public TSV,
+shared_point_assertions,bahney-t2-definitions,validates_against,Code=column; Definition; Structure; Measure; Stat; role; Source Note,
+shared_point_assertions,bahney-t2-tsv,validates_against,whole public TSV,
+shared_point_assertions,bahney-t3-definitions,validates_against,Code=column; Definition; Structure; Measure; Stat; role; Source Note,
+shared_point_assertions,bahney-t3-tsv,validates_against,whole public TSV,
+shared_point_assertions,bahney-t4-definitions,validates_against,Code=column; Definition; Structure; Measure; Stat; role; Source Note,
+shared_point_assertions,bahney-t4-tsv,validates_against,whole public TSV,
+shared_point_assertions,fobbs-s1a-definitions,validates_against,Code; Definition; Structure; Measure; Stat; role; Method:scope,
+shared_point_assertions,fobbs-s1a-tsv,validates_against,whole registered TSV,
+shared_point_assertions,kennedy-table-definitions,validates_against,Code; Definition; Structure; Measure; Stat; role; Source Note,
+shared_point_assertions,kennedy-table-tsv,validates_against,whole registered TSV,
+shared_point_assertions,kennedy-text-definitions,validates_against,Code; Definition; Structure; Measure; Stat; role; Source Note,
+shared_point_assertions,kennedy-text-tsv,validates_against,whole registered TSV,
+shared_assertion_evidence,shared_pilot_points,reads,,
+shared_assertion_evidence,shared_scope,reads,,
+shared_assertion_evidence,shared_catalog_db,reads,,
+shared_assertion_evidence,registry-readme,validates_against,,
+shared_assertion_evidence,species-reference,validates_against,,
+shared_assertion_evidence,brain-mass-row-basis,validates_against,,
+shared_assertion_evidence,kaufman-reference-lookup,validates_against,,
+shared_assertion_evidence,many-stm-definitions,validates_against,Code=column; Definition; Structure; Measure; Stat; role,
+shared_assertion_evidence,many-stm-tsv,validates_against,whole public TSV,
+shared_assertion_evidence,many-pred-definitions,validates_against,Code=column; Definition; Structure; Measure; Stat; role,
+shared_assertion_evidence,many-pred-tsv,validates_against,whole public TSV,
+shared_assertion_evidence,mink-t1-definitions,validates_against,Code=column; Definition; Structure; Measure; Stat; role,
+shared_assertion_evidence,mink-t1-tsv,validates_against,whole public TSV,
+shared_assertion_evidence,boddy-s1-definitions,validates_against,Code=column; Definition; Structure; Measure; Stat; role,
+shared_assertion_evidence,boddy-s1-tsv,validates_against,whole public TSV,
+shared_assertion_evidence,boddy-raw-definitions,validates_against,Code=column; Definition; Structure; Measure; Stat; role,
+shared_assertion_evidence,boddy-raw-tsv,validates_against,whole public TSV,
+shared_assertion_evidence,falcone-t1-definitions,validates_against,Code=column; Definition; Structure; Measure; Stat; role,
+shared_assertion_evidence,falcone-t1-tsv,validates_against,whole public TSV,
+shared_assertion_evidence,falcone-t2-definitions,validates_against,Code=column; Definition; Structure; Measure; Stat; role,
+shared_assertion_evidence,falcone-t2-tsv,validates_against,whole public TSV,
+shared_assertion_evidence,buchsbaum-definitions,validates_against,Code=column or printed region; Definition; Structure; Measure; Stat; role,
+shared_assertion_evidence,buchsbaum-tsv,validates_against,whole public TSV,
+shared_assertion_evidence,kaufman-definitions,validates_against,Code=column; Definition; Structure; Measure; Stat; role,
+shared_assertion_evidence,kaufman-tsv,validates_against,whole public TSV,
+shared_assertion_evidence,heffner-definitions,validates_against,Code=column; Definition; Structure; Measure; Stat; role; Source Note,
+shared_assertion_evidence,heffner-tsv,validates_against,whole public TSV,
+shared_assertion_evidence,bahney-t1-definitions,validates_against,Code=column; Definition; Structure; Measure; Stat; role; Source Note,
+shared_assertion_evidence,bahney-t1-tsv,validates_against,whole public TSV,
+shared_assertion_evidence,bahney-t2-definitions,validates_against,Code=column; Definition; Structure; Measure; Stat; role; Source Note,
+shared_assertion_evidence,bahney-t2-tsv,validates_against,whole public TSV,
+shared_assertion_evidence,bahney-t3-definitions,validates_against,Code=column; Definition; Structure; Measure; Stat; role; Source Note,
+shared_assertion_evidence,bahney-t3-tsv,validates_against,whole public TSV,
+shared_assertion_evidence,bahney-t4-definitions,validates_against,Code=column; Definition; Structure; Measure; Stat; role; Source Note,
+shared_assertion_evidence,bahney-t4-tsv,validates_against,whole public TSV,
+shared_assertion_evidence,fobbs-s1a-definitions,validates_against,Code; Definition; Structure; Measure; Stat; role; Method:scope,
+shared_assertion_evidence,fobbs-s1a-tsv,validates_against,whole registered TSV,
+shared_assertion_evidence,kennedy-table-definitions,validates_against,Code; Definition; Structure; Measure; Stat; role; Source Note,
+shared_assertion_evidence,kennedy-table-tsv,validates_against,whole registered TSV,
+shared_assertion_evidence,kennedy-text-definitions,validates_against,Code; Definition; Structure; Measure; Stat; role; Source Note,
+shared_assertion_evidence,kennedy-text-tsv,validates_against,whole registered TSV,
+shared_assertion_db,shared_pilot_points,reads,,
+shared_assertion_db,shared_scope,reads,,
+shared_assertion_db,shared_catalog_db,reads,,
+shared_assertion_db,registry-readme,validates_against,,
+shared_assertion_db,species-reference,validates_against,,
+shared_assertion_db,brain-mass-row-basis,validates_against,,
+shared_assertion_db,kaufman-reference-lookup,validates_against,,
+shared_assertion_db,many-stm-definitions,validates_against,Code=column; Definition; Structure; Measure; Stat; role,
+shared_assertion_db,many-stm-tsv,validates_against,whole public TSV,
+shared_assertion_db,many-pred-definitions,validates_against,Code=column; Definition; Structure; Measure; Stat; role,
+shared_assertion_db,many-pred-tsv,validates_against,whole public TSV,
+shared_assertion_db,mink-t1-definitions,validates_against,Code=column; Definition; Structure; Measure; Stat; role,
+shared_assertion_db,mink-t1-tsv,validates_against,whole public TSV,
+shared_assertion_db,boddy-s1-definitions,validates_against,Code=column; Definition; Structure; Measure; Stat; role,
+shared_assertion_db,boddy-s1-tsv,validates_against,whole public TSV,
+shared_assertion_db,boddy-raw-definitions,validates_against,Code=column; Definition; Structure; Measure; Stat; role,
+shared_assertion_db,boddy-raw-tsv,validates_against,whole public TSV,
+shared_assertion_db,falcone-t1-definitions,validates_against,Code=column; Definition; Structure; Measure; Stat; role,
+shared_assertion_db,falcone-t1-tsv,validates_against,whole public TSV,
+shared_assertion_db,falcone-t2-definitions,validates_against,Code=column; Definition; Structure; Measure; Stat; role,
+shared_assertion_db,falcone-t2-tsv,validates_against,whole public TSV,
+shared_assertion_db,buchsbaum-definitions,validates_against,Code=column or printed region; Definition; Structure; Measure; Stat; role,
+shared_assertion_db,buchsbaum-tsv,validates_against,whole public TSV,
+shared_assertion_db,kaufman-definitions,validates_against,Code=column; Definition; Structure; Measure; Stat; role,
+shared_assertion_db,kaufman-tsv,validates_against,whole public TSV,
+shared_assertion_db,heffner-definitions,validates_against,Code=column; Definition; Structure; Measure; Stat; role; Source Note,
+shared_assertion_db,heffner-tsv,validates_against,whole public TSV,
+shared_assertion_db,bahney-t1-definitions,validates_against,Code=column; Definition; Structure; Measure; Stat; role; Source Note,
+shared_assertion_db,bahney-t1-tsv,validates_against,whole public TSV,
+shared_assertion_db,bahney-t2-definitions,validates_against,Code=column; Definition; Structure; Measure; Stat; role; Source Note,
+shared_assertion_db,bahney-t2-tsv,validates_against,whole public TSV,
+shared_assertion_db,bahney-t3-definitions,validates_against,Code=column; Definition; Structure; Measure; Stat; role; Source Note,
+shared_assertion_db,bahney-t3-tsv,validates_against,whole public TSV,
+shared_assertion_db,bahney-t4-definitions,validates_against,Code=column; Definition; Structure; Measure; Stat; role; Source Note,
+shared_assertion_db,bahney-t4-tsv,validates_against,whole public TSV,
+shared_assertion_db,fobbs-s1a-definitions,validates_against,Code; Definition; Structure; Measure; Stat; role; Method:scope,
+shared_assertion_db,fobbs-s1a-tsv,validates_against,whole registered TSV,
+shared_assertion_db,kennedy-table-definitions,validates_against,Code; Definition; Structure; Measure; Stat; role; Source Note,
+shared_assertion_db,kennedy-table-tsv,validates_against,whole registered TSV,
+shared_assertion_db,kennedy-text-definitions,validates_against,Code; Definition; Structure; Measure; Stat; role; Source Note,
+shared_assertion_db,kennedy-text-tsv,validates_against,whole registered TSV,
+shared_selection_db,shared_pilot_points,reads,,
+shared_selection_db,shared_lineage_links,reads,,
+shared_selection_db,shared_scope,reads,,
+shared_selection_db,shared_catalog_db,reads,,
+shared_selection_db,heffner-source-match,reads,,
+shared_selection_decisions,shared_pilot_points,reads,,
+shared_selection_decisions,shared_lineage_links,reads,,
+shared_selection_decisions,shared_scope,reads,,
+shared_selection_decisions,shared_catalog_db,reads,,
+shared_selection_decisions,heffner-source-match,reads,,
+shared_species_traits,shared_pilot_points,reads,,
+shared_species_traits,shared_lineage_links,reads,,
+shared_species_traits,shared_scope,reads,,
+shared_species_traits,shared_catalog_db,reads,,
+shared_species_traits,heffner-source-match,reads,,
+shared_held_reports,shared_pilot_points,reads,,
+shared_held_reports,shared_lineage_links,reads,,
+shared_held_reports,shared_scope,reads,,
+shared_held_reports,shared_catalog_db,reads,,
+shared_held_reports,heffner-source-match,reads,,
+shared_relay_check,shared_pilot_points,reads,,
+shared_relay_check,shared_lineage_links,reads,,
+shared_relay_check,shared_scope,reads,,
+shared_relay_check,shared_catalog_db,reads,,
+shared_relay_check,heffner-source-match,reads,,
+shared_artifact_derivation_preview,shared_artifacts,reads,,Read by preview_artifact_derivation.R to compare legacy artifact fields with file-level registry.
+shared_artifact_derivation_preview,shared_items,reads,,Read by preview_artifact_derivation.R to compare legacy artifact fields with file-level registry.
+shared_artifact_derivation_preview,shared_files_manifest,reads,,Read by preview_artifact_derivation.R to compare legacy artifact fields with file-level registry.
+shared_artifact_derivation_preview,file_registry_ManyPrimates__2022,reads,,Read by preview_artifact_derivation.R to compare legacy artifact fields with file-level registry.
+shared_artifact_derivation_preview,file_registry_Mink_etal_1981,reads,,Read by preview_artifact_derivation.R to compare legacy artifact fields with file-level registry.
+shared_artifact_derivation_preview,file_registry_Boddy_etal_2012,reads,,Read by preview_artifact_derivation.R to compare legacy artifact fields with file-level registry.
+shared_artifact_derivation_preview,file_registry_Falcone_etal_2019,reads,,Read by preview_artifact_derivation.R to compare legacy artifact fields with file-level registry.
+shared_artifact_derivation_preview,file_registry_Buchsbaum_etal_1989,reads,,Read by preview_artifact_derivation.R to compare legacy artifact fields with file-level registry.
+shared_artifact_derivation_preview,file_registry_Kaufman__2004,reads,,Read by preview_artifact_derivation.R to compare legacy artifact fields with file-level registry.
+shared_artifact_derivation_preview,file_registry_Heffner_Heffner_2010_b,reads,,Read by preview_artifact_derivation.R to compare legacy artifact fields with file-level registry.
+shared_artifact_derivation_preview,file_registry_Bahney_vonBartheld_2018,reads,,Read by preview_artifact_derivation.R to compare legacy artifact fields with file-level registry.
+shared_artifact_derivation_preview,file_registry_Fobbs_etal_2011,reads,,Read by preview_artifact_derivation.R to compare legacy artifact fields with file-level registry.
+shared_artifact_derivation_preview,file_registry_Kennedy_etal_1978,reads,,Read by preview_artifact_derivation.R to compare legacy artifact fields with file-level registry.
+shared_artifact_derivation_report,shared_artifacts,reads,,Read by preview_artifact_derivation.R to compare legacy artifact fields with file-level registry.
+shared_artifact_derivation_report,shared_items,reads,,Read by preview_artifact_derivation.R to compare legacy artifact fields with file-level registry.
+shared_artifact_derivation_report,shared_files_manifest,reads,,Read by preview_artifact_derivation.R to compare legacy artifact fields with file-level registry.
+shared_artifact_derivation_report,file_registry_ManyPrimates__2022,reads,,Read by preview_artifact_derivation.R to compare legacy artifact fields with file-level registry.
+shared_artifact_derivation_report,file_registry_Mink_etal_1981,reads,,Read by preview_artifact_derivation.R to compare legacy artifact fields with file-level registry.
+shared_artifact_derivation_report,file_registry_Boddy_etal_2012,reads,,Read by preview_artifact_derivation.R to compare legacy artifact fields with file-level registry.
+shared_artifact_derivation_report,file_registry_Falcone_etal_2019,reads,,Read by preview_artifact_derivation.R to compare legacy artifact fields with file-level registry.
+shared_artifact_derivation_report,file_registry_Buchsbaum_etal_1989,reads,,Read by preview_artifact_derivation.R to compare legacy artifact fields with file-level registry.
+shared_artifact_derivation_report,file_registry_Kaufman__2004,reads,,Read by preview_artifact_derivation.R to compare legacy artifact fields with file-level registry.
+shared_artifact_derivation_report,file_registry_Heffner_Heffner_2010_b,reads,,Read by preview_artifact_derivation.R to compare legacy artifact fields with file-level registry.
+shared_artifact_derivation_report,file_registry_Bahney_vonBartheld_2018,reads,,Read by preview_artifact_derivation.R to compare legacy artifact fields with file-level registry.
+shared_artifact_derivation_report,file_registry_Fobbs_etal_2011,reads,,Read by preview_artifact_derivation.R to compare legacy artifact fields with file-level registry.
+shared_artifact_derivation_report,file_registry_Kennedy_etal_1978,reads,,Read by preview_artifact_derivation.R to compare legacy artifact fields with file-level registry.
+shared_file_registry_db,registry-readme,reads,,
+shared_file_registry_db,shared_files_manifest,reads,,
+shared_file_registry_db,shared_dependencies_manifest,reads,,
+shared_file_registry_db,shared_artifacts,reads,,
+shared_file_registry_db,shared_field_routes,reads,,
+shared_file_registry_db,shared_content_roles,reads,,
+shared_file_registry_db,shared_authority_statuses,reads,,
+shared_file_registry_db,file_registry_ManyPrimates__2022,reads,,
+shared_file_registry_db,file_registry_Mink_etal_1981,reads,,
+shared_file_registry_db,file_registry_Boddy_etal_2012,reads,,
+shared_file_registry_db,file_registry_Falcone_etal_2019,reads,,
+shared_file_registry_db,file_registry_Buchsbaum_etal_1989,reads,,
+shared_file_registry_db,file_registry_Kaufman__2004,reads,,
+shared_file_registry_db,file_registry_Heffner_Heffner_2010_b,reads,,
+shared_file_registry_db,file_registry_Bahney_vonBartheld_2018,reads,,
+shared_file_registry_db,file_registry_Fobbs_etal_2011,reads,,
+shared_file_registry_db,file_registry_Kennedy_etal_1978,reads,,
+shared_file_registry_db,file_dependencies_ManyPrimates__2022,reads,,
+shared_file_registry_db,file_dependencies_Mink_etal_1981,reads,,
+shared_file_registry_db,file_dependencies_Boddy_etal_2012,reads,,
+shared_file_registry_db,file_dependencies_Falcone_etal_2019,reads,,
+shared_file_registry_db,file_dependencies_Buchsbaum_etal_1989,reads,,
+shared_file_registry_db,file_dependencies_Kaufman__2004,reads,,
+shared_file_registry_db,file_dependencies_Heffner_Heffner_2010_b,reads,,
+shared_file_registry_db,file_dependencies_Bahney_vonBartheld_2018,reads,,
+shared_file_registry_db,file_dependencies_Fobbs_etal_2011,reads,,
+shared_file_registry_db,file_dependencies_Kennedy_etal_1978,reads,,
+shared_definition_types,bahney-t1-csv,reads,,Definition-row classification input
+shared_definition_types,bahney-t1-definitions,reads,,Definition-row classification input
+shared_definition_types,bahney-t2-csv,reads,,Definition-row classification input
+shared_definition_types,bahney-t2-definitions,reads,,Definition-row classification input
+shared_definition_types,bahney-t3-csv,reads,,Definition-row classification input
+shared_definition_types,bahney-t3-definitions,reads,,Definition-row classification input
+shared_definition_types,bahney-t4-csv,reads,,Definition-row classification input
+shared_definition_types,bahney-t4-definitions,reads,,Definition-row classification input
+shared_definition_types,boddy-raw-csv,reads,,Definition-row classification input
+shared_definition_types,boddy-raw-definitions,reads,,Definition-row classification input
+shared_definition_types,boddy-s1-csv,reads,,Definition-row classification input
+shared_definition_types,boddy-s1-definitions,reads,,Definition-row classification input
+shared_definition_types,buchsbaum-csv,reads,,Definition-row classification input
+shared_definition_types,buchsbaum-definitions,reads,,Definition-row classification input
+shared_definition_types,buchsbaum-text-csv,reads,,Definition-row classification input
+shared_definition_types,buchsbaum-text-definitions,reads,,Definition-row classification input
+shared_definition_types,falcone-t1-csv,reads,,Definition-row classification input
+shared_definition_types,falcone-t1-definitions,reads,,Definition-row classification input
+shared_definition_types,falcone-t2-csv,reads,,Definition-row classification input
+shared_definition_types,falcone-t2-definitions,reads,,Definition-row classification input
+shared_definition_types,file_registry_Bahney_vonBartheld_2018,reads,,Definition-row classification input
+shared_definition_types,file_registry_Boddy_etal_2012,reads,,Definition-row classification input
+shared_definition_types,file_registry_Buchsbaum_etal_1989,reads,,Definition-row classification input
+shared_definition_types,file_registry_Falcone_etal_2019,reads,,Definition-row classification input
+shared_definition_types,file_registry_Fobbs_etal_2011,reads,,Definition-row classification input
+shared_definition_types,file_registry_Heffner_Heffner_2010_b,reads,,Definition-row classification input
+shared_definition_types,file_registry_Kaufman__2004,reads,,Definition-row classification input
+shared_definition_types,file_registry_Kennedy_etal_1978,reads,,Definition-row classification input
+shared_definition_types,file_registry_ManyPrimates__2022,reads,,Definition-row classification input
+shared_definition_types,file_registry_Mink_etal_1981,reads,,Definition-row classification input
+shared_definition_types,fobbs-s1a-csv,reads,,Definition-row classification input
+shared_definition_types,fobbs-s1a-definitions,reads,,Definition-row classification input
+shared_definition_types,fobbs-s1b-csv,reads,,Definition-row classification input
+shared_definition_types,fobbs-s1b-definitions,reads,,Definition-row classification input
+shared_definition_types,fobbs-s2-csv,reads,,Definition-row classification input
+shared_definition_types,fobbs-s2-definitions,reads,,Definition-row classification input
+shared_definition_types,fobbs-s3-csv,reads,,Definition-row classification input
+shared_definition_types,fobbs-s3-definitions,reads,,Definition-row classification input
+shared_definition_types,fobbs-s4-csv,reads,,Definition-row classification input
+shared_definition_types,fobbs-s4-definitions,reads,,Definition-row classification input
+shared_definition_types,fobbs-s5a-csv,reads,,Definition-row classification input
+shared_definition_types,fobbs-s5a-definitions,reads,,Definition-row classification input
+shared_definition_types,fobbs-s5b-csv,reads,,Definition-row classification input
+shared_definition_types,fobbs-s5b-definitions,reads,,Definition-row classification input
+shared_definition_types,heffner-csv,reads,,Definition-row classification input
+shared_definition_types,heffner-definitions,reads,,Definition-row classification input
+shared_definition_types,kaufman-a01-csv,reads,,Definition-row classification input
+shared_definition_types,kaufman-a02-csv,reads,,Definition-row classification input
+shared_definition_types,kaufman-a04-csv,reads,,Definition-row classification input
+shared_definition_types,kaufman-a05-csv,reads,,Definition-row classification input
+shared_definition_types,kaufman-a06-csv,reads,,Definition-row classification input
+shared_definition_types,kaufman-a07-csv,reads,,Definition-row classification input
+shared_definition_types,kaufman-a08-csv,reads,,Definition-row classification input
+shared_definition_types,kaufman-a09-csv,reads,,Definition-row classification input
+shared_definition_types,kaufman-a10-csv,reads,,Definition-row classification input
+shared_definition_types,kaufman-a11-csv,reads,,Definition-row classification input
+shared_definition_types,kaufman-a12-csv,reads,,Definition-row classification input
+shared_definition_types,kaufman-a13-csv,reads,,Definition-row classification input
+shared_definition_types,kaufman-a14-csv,reads,,Definition-row classification input
+shared_definition_types,kaufman-a15-csv,reads,,Definition-row classification input
+shared_definition_types,kaufman-csv,reads,,Definition-row classification input
+shared_definition_types,kaufman-definitions,reads,,Definition-row classification input
+shared_definition_types,kennedy-table-csv,reads,,Definition-row classification input
+shared_definition_types,kennedy-table-definitions,reads,,Definition-row classification input
+shared_definition_types,kennedy-text-csv,reads,,Definition-row classification input
+shared_definition_types,kennedy-text-definitions,reads,,Definition-row classification input
+shared_definition_types,many-pred-csv,reads,,Definition-row classification input
+shared_definition_types,many-pred-definitions,reads,,Definition-row classification input
+shared_definition_types,many-stm-csv,reads,,Definition-row classification input
+shared_definition_types,many-stm-definitions,reads,,Definition-row classification input
+shared_definition_types,mink-refs-csv,reads,,Definition-row classification input
+shared_definition_types,mink-refs-definitions,reads,,Definition-row classification input
+shared_definition_types,mink-t1-csv,reads,,Definition-row classification input
+shared_definition_types,mink-t1-definitions,reads,,Definition-row classification input
+shared_definition_types,shared_field_routes,reads,,Definition-row classification input
+shared_file_registry_db,shared_file_exclusions,reads,,Coverage-scan exclusions

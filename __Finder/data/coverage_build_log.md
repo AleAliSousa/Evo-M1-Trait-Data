@@ -1,5 +1,5 @@
 # Coverage index build log
-Generated: 2026-11-13 17:30
+Generated: 2026-11-14 13:12
 
 - cortical_areas M1_Surface_Area.mm2: 1 row(s) not used (status superseded_by_Young_etal_2013)
 - no rows: Brain_stem / CMR / Brain_stem

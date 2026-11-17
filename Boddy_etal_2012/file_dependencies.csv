@@ -1,0 +1,7 @@
+output_file_id,input_file_id,relation,source_locator,note
+boddy-s1-csv,boddy-s1-builder,produced_by,,Producer declared in file registry
+boddy-raw-csv,boddy-raw-builder,produced_by,,Producer declared in file registry
+boddy-s1-tsv,boddy-s1-builder,produced_by,,Producer declared in file registry
+boddy-s1-tsv,boddy-s1-csv,exported_from,,Same registered item build
+boddy-raw-tsv,boddy-raw-builder,produced_by,,Producer declared in file registry
+boddy-raw-tsv,boddy-raw-csv,exported_from,,Same registered item build

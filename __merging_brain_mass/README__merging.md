@@ -5,7 +5,7 @@
 Known calculated masses are valid **estimated-mass** traits. There is no need to
 invert them back into cc to retain them as estimates. The reported gram values
 remain unchanged, with their original measurement basis and compiler derivation
-kept in `brain_mass_row_basis.csv` and the typed unfiltered table:
+kept in `__metadata/curation/brain_mass_row_basis.csv` and the typed unfiltered table:
 
 | Trait | Meaning | Species in current output |
 |---|---|---:|
@@ -64,7 +64,7 @@ an approved exception demonstrating that an untyped value is its only available
 brain-size record. Missing provenance is a review state, not a gram-valued trait.
 The app also rejects this label when loading an older merge.
 
-`brain_mass_row_basis.csv` records 2,798 guarded decisions covering the 2,868
+`__metadata/curation/brain_mass_row_basis.csv` records 2,798 guarded decisions covering the 2,868
 previous mixed-stream records plus one preexisting typed mass held for possible
 specimen overlap. Decisions match source file, species, column and
 gram value, and must match exactly `n_expected` rows. They preserve physical type,
@@ -232,7 +232,7 @@ Homo 1,333 g, Gorilla 446 g, Macaca mulatta 94 g, Microcebus murinus 1.78 g, Sor
 
 ## Value vetoes (added 2026-10-26)
 
-`brain_mass_value_flags.csv` drops named harvested rows before pooling. Schema as `__merging_volumes/volumes_select_value_flags.csv`
+`__metadata/curation/brain_mass_value_flags.csv` records curated row vetoes applied before pooling. Schema as `__merging_volumes/volumes_select_value_flags.csv`
 plus `n_expected`: a veto must match exactly that many rows or the build stops (a veto can neither silently do nothing nor silently drop
 more). Only `action = skip` is implemented. Vetoed rows are removed from the pool and from `brain_mass_unfiltered.csv` and listed in
 `brain_mass_vetoed_rows.csv`. Current vetoes (flags `fsu_unvalidated_weights`, and `extraction_error_zero` for one row): Nudo et al. 1995 Table 1 brain weight (24 rows) and the

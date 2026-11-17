@@ -1,0 +1,14 @@
+authority_status,definition
+generated_audit,Generated check or match output that records results and issues but is not source authority
+item_processing,Registered item matrix produced by its R builder
+processing_script,Project code that transforms or checks source material
+project_definition,Project-authored field or measure definition requiring item-level review
+project_documentation,Project-authored explanatory README or note
+project_inventory,Project-authored source or build inventory
+project_lookup,Project-authored lookup from printed keys to citations or names
+project_reference,Project-supplied ancillary reference workbook
+project_rule,Project-authored correction or processing rule
+proposed,Unadopted taxon or other metadata proposal
+review_ledger,Issue and resolution ledger with row-level statuses
+source_evidence,Published or author-supplied source or frozen source snapshot
+curated_authority,Reviewed project-level crosswalk or decision table used as an active authority

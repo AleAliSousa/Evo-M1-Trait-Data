@@ -1,0 +1,1322 @@
+{
+ "badges": [
+  "Dataset;#71555A"
+ ],
+ "highlightColor": null,
+ "meta": {
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+  "creator": [
+   {
+    "@type": "Person",
+    "familyName": "Palomero-Gallagher",
+    "givenName": "Nicola",
+    "name": "Palomero-Gallagher, N.",
+    "sameAs": null
+   },
+   {
+    "@type": "Person",
+    "familyName": "Zilles",
+    "givenName": "Karl",
+    "name": "Zilles, K.",
+    "sameAs": null
+   }
+  ],
+  "description": "This dataset contains the densities (in fmol/mg protein) of receptors for classical neurotransmitters of CA2 (hippocampus) obtained by means of quantitative _in vitro_ autoradiography. The receptor densities are visualized as _fingerprints_ (**fp**), which provide the mean density and standard deviation for each of the analyzed receptor types, averaged across samples. Information on the used tissue samples and corresponding subjects, as well as analyzed receptors accompanies each provided dataset version.",
+  "identifier": [
+   "https://nexus.humanbrainproject.org/v0/data/minds/core/dataset/v1.0.0/18a2c78a-a2e7-42dd-b468-3efdfaea1c54",
+   "https://kg.ebrains.eu/api/instances/18a2c78a-a2e7-42dd-b468-3efdfaea1c54",
+   "https://doi.org/10.25493/7XN4-CZQ"
+  ],
+  "keywords": null,
+  "license": null,
+  "name": "Density measurements of different receptors for CA2 (Hippocampus) [rat]",
+  "url": null,
+  "version": "v2"
+ },
+ "id": "18a2c78a-a2e7-42dd-b468-3efdfaea1c54",
+ "type": [
+  "Dataset version"
+ ],
+ "category": "Dataset",
+ "title": "Density measurements of different receptors for CA2 (Hippocampus) [rat] (v2)",
+ "fields": {
+  "releasedAt": {
+   "value": "2020-03-28"
+  },
+  "projects": [
+   {
+    "reference": "77aeb65e-9ff1-46b2-9f58-e11b2a0687d2",
+    "value": "Quantitative receptor data for human, non-human primate, and rodent brains"
+   },
+   {
+    "reference": "7de90abb-d94a-451d-ba82-987fe0d9d3c9",
+    "value": "Rodent receptor data in Waxholm space"
+   }
+  ],
+  "keywords": [
+   {
+    "value": "brain mapping"
+   }
+  ],
+  "accessibility": {
+   "value": "free access"
+  },
+  "citation": {
+   "value": "10.25493/7XN4-CZQ"
+  },
+  "custodians": [
+   {
+    "reference": "d77176e3-faa9-4c93-8dc0-7f3663c6d2ee",
+    "value": "Palomero-Gallagher, N."
+   },
+   {
+    "reference": "8a047744-5b04-4c2c-abb3-cc2dfbdc12ea",
+    "value": "Zilles, K."
+   }
+  ],
+  "description": {
+   "value": "This dataset contains the densities (in fmol/mg protein) of receptors for classical neurotransmitters of CA2 (hippocampus) obtained by means of quantitative _in vitro_ autoradiography. The receptor densities are visualized as _fingerprints_ (**fp**), which provide the mean density and standard deviation for each of the analyzed receptor types, averaged across samples. Information on the used tissue samples and corresponding subjects, as well as analyzed receptors accompanies each provided dataset version."
+  },
+  "studyTargets": [
+   {
+    "reference": "d5c4ea75-f2d4-4f56-8873-08b987ca85d5",
+    "value": "AMPA receptor"
+   },
+   {
+    "reference": "b70f6dab-e348-4e8d-98e0-f0a0bab91edb",
+    "value": "kainate receptor"
+   },
+   {
+    "reference": "f17b424a-231f-4720-a0a2-62e1de5d40a4",
+    "value": "NMDA receptor"
+   },
+   {
+    "reference": "4236a398-eb19-410d-bb03-b8f5392c227b",
+    "value": "GABA-A receptor"
+   },
+   {
+    "reference": "e0356f06-794f-4757-a344-571cac502ae8",
+    "value": "M1 receptor"
+   },
+   {
+    "reference": "46dd381b-8e01-4a36-8bf7-392ae8189029",
+    "value": "M2 receptor"
+   },
+   {
+    "reference": "b5b8e4e6-ad68-48e4-8a97-81a086b64c9b",
+    "value": "alpha-1 receptor"
+   },
+   {
+    "reference": "851ae407-16c1-47bc-9ace-fee318a49796",
+    "value": "alpha-2 receptor"
+   },
+   {
+    "reference": "c8aed49b-d635-44b4-b503-8e78813592f5",
+    "value": "5-HT1A receptor"
+   },
+   {
+    "reference": "546301c5-14b5-443a-b1de-5dd3ed0c33ec",
+    "value": "5-HT2 receptor"
+   }
+  ],
+  "technique": [
+   {
+    "reference": "43327295-650b-47c4-bb6f-113ed70bd87a",
+    "value": "cytoarchitectonic mapping"
+   },
+   {
+    "reference": "712a3814-f9f3-4b67-b316-126333b6a0f3",
+    "value": "silver staining"
+   },
+   {
+    "reference": "43185154-18b5-4e25-b3dc-22813863fa15",
+    "value": "cryosectioning"
+   },
+   {
+    "reference": null,
+    "value": "semantic anchoring"
+   },
+   {
+    "reference": null,
+    "value": "inter-subject analysis"
+   },
+   {
+    "reference": "291e2a6c-3d23-4870-99b7-683046eb00c5",
+    "value": "autoradiography"
+   },
+   {
+    "reference": null,
+    "value": "quantitative analysis"
+   }
+  ],
+  "fileRepositoryId": "a1ebd5c3-1754-45ac-b664-82a8e5f96102",
+  "queryBuilderText": {
+   "value": "To make programmatic use of the (meta-)data of EBRAINS, you have different options to interact with the <a href=\"https://kg.ebrains.eu\" target=\"_blank\">EBRAINS Knowledge Graph (KG)</a>:\n\n<b>KG Query Builder</b>\nWith the <a href=\"https://query.kg.ebrains.eu\" target=\"_blank\">KG Query Builder</a>, you can design your own query to retrieve metadata for this instance and those of the same type conveniently via UI without the requirement of learning a graph query language (see the <a href=\"https://docs.kg.ebrains.eu/9b511d36d7608eafc94ea43c918f16b6/tutorials.html\" target=\"_blank\">tutorial</a>). You can also save the query and use it with the REST-API and the KG Core SDKs (see below).\n\n<a href=\"https://query.kg.ebrains.eu/queries?type=https%3A%2F%2Fopenminds.om-i.org%2Ftypes%2FDatasetVersion&instanceId=18a2c78a-a2e7-42dd-b468-3efdfaea1c54\" class=\"btn btn-secondary build-query\" style=\"color:#fff\" target=\"_blank\">Build a query for this instance</a>\n\n\n<b>KG REST-API</b>\nYou can use the <a href=\"https://core.kg.ebrains.eu/swagger-ui.html\" target=\"_blank\">KG REST-API</a> to access and/or manipulate metadata on the EBRAINS KG as well as to run queries saved previously in the KG Query Builder.\n\n<b>KG Core SDKs</b>\nThe <a href=\"https://github.com/HumanBrainProject/kg-core-sdks\" target=\"_blank\">KG Core SDKs</a> provide convenient ways to authenticate and make use of the functionality of the KG REST-API with your favorite programming language (currently available for Python and JavaScript/TypeScript).\n\n<b>fairgraph</b>\n<a href=\"https://fairgraph.readthedocs.io\" _target=\"blank\">fairgraph</a> is a python library which enriches the KG Core Python SDK with knowledge about the metadata structure of choice at EBRAINS called <a href=\"https://openminds.om-i.org\" _target=\"blank\">openMINDS</a> and provides additional mechanisms to further simplify the interaction and manipulation of metadata instances on the EBRAINS KG."
+  },
+  "studiedBrainRegion": [
+   {
+    "reference": null,
+    "value": "cornu ammonis 2 (Waxholm Space Rat Brain Atlas)"
+   }
+  ],
+  "preparation": [
+   {
+    "reference": "77f7c7e7-ad5f-4001-b246-7f50981076b1",
+    "value": "ex vivo"
+   }
+  ],
+  "license_info": {
+   "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode",
+   "value": "Creative Commons Attribution Non Commercial Share Alike 4.0 International"
+  },
+  "anatomicalLocationOfTissueSamples": [
+   {
+    "reference": "d54e8226-20c0-4522-a40c-ec61d36c7b27",
+    "value": "brain"
+   }
+  ],
+  "specimenBySubject": {
+   "children": [
+    {
+     "children": [
+      {
+       "color": "#78b5b5",
+       "data": {
+        "type": {
+         "value": "Dataset.TissueSampleCollection"
+        },
+        "additionalRemarks": null,
+        "age": null,
+        "ageCategory": null,
+        "anatomicalLocation": [
+         {
+          "reference": "d54e8226-20c0-4522-a40c-ec61d36c7b27",
+          "value": "brain"
+         }
+        ],
+        "attributes": null,
+        "geneticStrainType": [
+         {
+          "reference": null,
+          "value": "wildtype"
+         }
+        ],
+        "id": "aad9c765-e60a-4a63-a63c-6912d11740fb",
+        "laterality": [
+         {
+          "reference": null,
+          "value": "right"
+         },
+         {
+          "reference": null,
+          "value": "left"
+         }
+        ],
+        "origin": {
+         "reference": "9f495e52-754d-4196-be82-5de56bd86836",
+         "value": "brain"
+        },
+        "pathology": null,
+        "serviceLinks": null,
+        "sex": [
+         {
+          "reference": "744c9204-4aea-4eff-a4f4-d79f008b355f",
+          "value": "male"
+         }
+        ],
+        "species": [
+         {
+          "reference": "ab532423-1fd7-4255-8c6f-f99dc6df814f",
+          "value": "Rattus norvegicus"
+         }
+        ],
+        "strain": [
+         {
+          "reference": null,
+          "value": "Wistar"
+         }
+        ],
+        "tissueSampleType": {
+         "reference": "79cc4385-acb4-467b-a45d-fdc85c26f2ee",
+         "value": "tissue slice"
+        },
+        "tissueSamples": null,
+        "title": {
+         "value": "b01"
+        },
+        "weight": null
+       },
+       "key": "26b7cdeb-92c1-473a-90b8-6c541ff7262d",
+       "parentRelationType": "descendentFrom",
+       "title": "Tissue sample collection b01"
+      }
+     ],
+     "color": "#ffbe00",
+     "data": {
+      "type": {
+       "value": "Dataset.Subject"
+      },
+      "additionalRemarks": null,
+      "age": null,
+      "ageCategory": [
+       {
+        "reference": "584611b0-3c4b-418f-8617-127adafb0cea",
+        "value": "adult"
+       }
+      ],
+      "attributes": null,
+      "geneticStrainType": [
+       {
+        "reference": null,
+        "value": "wildtype"
+       }
+      ],
+      "handedness": null,
+      "id": "b7e5c950-8719-4870-b317-7de6d357d4ab",
+      "otherPublications": [
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b7e5c950-8719-4870-b317-7de6d357d4ab"
+        },
+        "reference": "b2c4e380-ce96-4325-8a82-f24c0143448b",
+        "value": "10.25493/1DB6-YXW"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b7e5c950-8719-4870-b317-7de6d357d4ab"
+        },
+        "reference": "a9a60163-a070-4611-896c-393b1d8342d9",
+        "value": "10.25493/2AYK-4JG"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b7e5c950-8719-4870-b317-7de6d357d4ab"
+        },
+        "reference": "18a2c78a-a2e7-42dd-b468-3efdfaea1c54",
+        "value": "10.25493/7XN4-CZQ"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b7e5c950-8719-4870-b317-7de6d357d4ab"
+        },
+        "reference": "904d8506-60ac-4dc6-85fd-83555bd2c5e4",
+        "value": "10.25493/CKYK-2VE"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b7e5c950-8719-4870-b317-7de6d357d4ab"
+        },
+        "reference": "ae50e708-0552-43b7-8bcd-aa3a002c687d",
+        "value": "10.25493/FDHF-AWY"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b7e5c950-8719-4870-b317-7de6d357d4ab"
+        },
+        "reference": "19cc79ac-fecd-4576-90e3-e7cabd42fe9f",
+        "value": "10.25493/P4DW-4RN"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b7e5c950-8719-4870-b317-7de6d357d4ab"
+        },
+        "reference": "74385d61-058f-4288-8711-440fe4b90840",
+        "value": "10.25493/X0NS-FP7"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b7e5c950-8719-4870-b317-7de6d357d4ab"
+        },
+        "reference": "f3a71b29-9074-42e2-a3ac-425e6a2ff0e9",
+        "value": "10.25493/YETC-BN2"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b7e5c950-8719-4870-b317-7de6d357d4ab"
+        },
+        "reference": "f61c27af-d18e-4abc-9b02-96c09d49e542",
+        "value": "10.25493/YMPG-3AF"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b7e5c950-8719-4870-b317-7de6d357d4ab"
+        },
+        "reference": "4a96960d-76f9-4c83-b1f6-4dc54be77a6e",
+        "value": "10.25493/Z4RW-7DN"
+       }
+      ],
+      "pathology": null,
+      "serviceLinks": null,
+      "sex": [
+       {
+        "reference": "744c9204-4aea-4eff-a4f4-d79f008b355f",
+        "value": "male"
+       }
+      ],
+      "species": [
+       {
+        "reference": "ab532423-1fd7-4255-8c6f-f99dc6df814f",
+        "value": "Rattus norvegicus"
+       }
+      ],
+      "strain": [
+       {
+        "reference": null,
+        "value": "Wistar"
+       }
+      ],
+      "title": {
+       "value": "wr01"
+      },
+      "weight": null
+     },
+     "key": "291a3133-ce7c-4b42-a7d6-89caa858f5d2",
+     "parentRelationType": null,
+     "title": "Subject wr01"
+    },
+    {
+     "children": [
+      {
+       "color": "#78b5b5",
+       "data": {
+        "type": {
+         "value": "Dataset.TissueSampleCollection"
+        },
+        "additionalRemarks": null,
+        "age": null,
+        "ageCategory": null,
+        "anatomicalLocation": [
+         {
+          "reference": "d54e8226-20c0-4522-a40c-ec61d36c7b27",
+          "value": "brain"
+         }
+        ],
+        "attributes": null,
+        "geneticStrainType": [
+         {
+          "reference": null,
+          "value": "wildtype"
+         }
+        ],
+        "id": "e74a1b26-0fef-48e8-9a6f-2fc40f00a992",
+        "laterality": [
+         {
+          "reference": null,
+          "value": "left"
+         },
+         {
+          "reference": null,
+          "value": "right"
+         }
+        ],
+        "origin": {
+         "reference": "9f495e52-754d-4196-be82-5de56bd86836",
+         "value": "brain"
+        },
+        "pathology": null,
+        "serviceLinks": null,
+        "sex": [
+         {
+          "reference": "744c9204-4aea-4eff-a4f4-d79f008b355f",
+          "value": "male"
+         }
+        ],
+        "species": [
+         {
+          "reference": "ab532423-1fd7-4255-8c6f-f99dc6df814f",
+          "value": "Rattus norvegicus"
+         }
+        ],
+        "strain": [
+         {
+          "reference": null,
+          "value": "Wistar"
+         }
+        ],
+        "tissueSampleType": {
+         "reference": "79cc4385-acb4-467b-a45d-fdc85c26f2ee",
+         "value": "tissue slice"
+        },
+        "tissueSamples": null,
+        "title": {
+         "value": "b02"
+        },
+        "weight": null
+       },
+       "key": "e989ecfa-767b-4ad8-a99f-7ad91d8102a5",
+       "parentRelationType": "descendentFrom",
+       "title": "Tissue sample collection b02"
+      }
+     ],
+     "color": "#ffbe00",
+     "data": {
+      "type": {
+       "value": "Dataset.Subject"
+      },
+      "additionalRemarks": null,
+      "age": null,
+      "ageCategory": [
+       {
+        "reference": "584611b0-3c4b-418f-8617-127adafb0cea",
+        "value": "adult"
+       }
+      ],
+      "attributes": null,
+      "geneticStrainType": [
+       {
+        "reference": null,
+        "value": "wildtype"
+       }
+      ],
+      "handedness": null,
+      "id": "021d0d4c-2ad2-4a46-b621-3b40a0d610b2",
+      "otherPublications": [
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "021d0d4c-2ad2-4a46-b621-3b40a0d610b2"
+        },
+        "reference": "b2c4e380-ce96-4325-8a82-f24c0143448b",
+        "value": "10.25493/1DB6-YXW"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "021d0d4c-2ad2-4a46-b621-3b40a0d610b2"
+        },
+        "reference": "a9a60163-a070-4611-896c-393b1d8342d9",
+        "value": "10.25493/2AYK-4JG"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "021d0d4c-2ad2-4a46-b621-3b40a0d610b2"
+        },
+        "reference": "18a2c78a-a2e7-42dd-b468-3efdfaea1c54",
+        "value": "10.25493/7XN4-CZQ"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "021d0d4c-2ad2-4a46-b621-3b40a0d610b2"
+        },
+        "reference": "904d8506-60ac-4dc6-85fd-83555bd2c5e4",
+        "value": "10.25493/CKYK-2VE"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "021d0d4c-2ad2-4a46-b621-3b40a0d610b2"
+        },
+        "reference": "ae50e708-0552-43b7-8bcd-aa3a002c687d",
+        "value": "10.25493/FDHF-AWY"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "021d0d4c-2ad2-4a46-b621-3b40a0d610b2"
+        },
+        "reference": "19cc79ac-fecd-4576-90e3-e7cabd42fe9f",
+        "value": "10.25493/P4DW-4RN"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "021d0d4c-2ad2-4a46-b621-3b40a0d610b2"
+        },
+        "reference": "74385d61-058f-4288-8711-440fe4b90840",
+        "value": "10.25493/X0NS-FP7"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "021d0d4c-2ad2-4a46-b621-3b40a0d610b2"
+        },
+        "reference": "f3a71b29-9074-42e2-a3ac-425e6a2ff0e9",
+        "value": "10.25493/YETC-BN2"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "021d0d4c-2ad2-4a46-b621-3b40a0d610b2"
+        },
+        "reference": "f61c27af-d18e-4abc-9b02-96c09d49e542",
+        "value": "10.25493/YMPG-3AF"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "021d0d4c-2ad2-4a46-b621-3b40a0d610b2"
+        },
+        "reference": "4a96960d-76f9-4c83-b1f6-4dc54be77a6e",
+        "value": "10.25493/Z4RW-7DN"
+       }
+      ],
+      "pathology": null,
+      "serviceLinks": null,
+      "sex": [
+       {
+        "reference": "744c9204-4aea-4eff-a4f4-d79f008b355f",
+        "value": "male"
+       }
+      ],
+      "species": [
+       {
+        "reference": "ab532423-1fd7-4255-8c6f-f99dc6df814f",
+        "value": "Rattus norvegicus"
+       }
+      ],
+      "strain": [
+       {
+        "reference": null,
+        "value": "Wistar"
+       }
+      ],
+      "title": {
+       "value": "wr02"
+      },
+      "weight": null
+     },
+     "key": "a3656f3a-ba58-429d-b85a-2c4eec3db981",
+     "parentRelationType": null,
+     "title": "Subject wr02"
+    },
+    {
+     "children": [
+      {
+       "color": "#78b5b5",
+       "data": {
+        "type": {
+         "value": "Dataset.TissueSampleCollection"
+        },
+        "additionalRemarks": null,
+        "age": null,
+        "ageCategory": null,
+        "anatomicalLocation": [
+         {
+          "reference": "d54e8226-20c0-4522-a40c-ec61d36c7b27",
+          "value": "brain"
+         }
+        ],
+        "attributes": null,
+        "geneticStrainType": [
+         {
+          "reference": null,
+          "value": "wildtype"
+         }
+        ],
+        "id": "788d98dc-7843-40c9-bc86-deec91384f60",
+        "laterality": [
+         {
+          "reference": null,
+          "value": "left"
+         },
+         {
+          "reference": null,
+          "value": "right"
+         }
+        ],
+        "origin": {
+         "reference": "9f495e52-754d-4196-be82-5de56bd86836",
+         "value": "brain"
+        },
+        "pathology": null,
+        "serviceLinks": null,
+        "sex": [
+         {
+          "reference": "744c9204-4aea-4eff-a4f4-d79f008b355f",
+          "value": "male"
+         }
+        ],
+        "species": [
+         {
+          "reference": "ab532423-1fd7-4255-8c6f-f99dc6df814f",
+          "value": "Rattus norvegicus"
+         }
+        ],
+        "strain": [
+         {
+          "reference": null,
+          "value": "Wistar"
+         }
+        ],
+        "tissueSampleType": {
+         "reference": "79cc4385-acb4-467b-a45d-fdc85c26f2ee",
+         "value": "tissue slice"
+        },
+        "tissueSamples": null,
+        "title": {
+         "value": "b03"
+        },
+        "weight": null
+       },
+       "key": "710c022b-f170-472c-a0a4-336e35624bd8",
+       "parentRelationType": "descendentFrom",
+       "title": "Tissue sample collection b03"
+      }
+     ],
+     "color": "#ffbe00",
+     "data": {
+      "type": {
+       "value": "Dataset.Subject"
+      },
+      "additionalRemarks": null,
+      "age": null,
+      "ageCategory": [
+       {
+        "reference": "584611b0-3c4b-418f-8617-127adafb0cea",
+        "value": "adult"
+       }
+      ],
+      "attributes": null,
+      "geneticStrainType": [
+       {
+        "reference": null,
+        "value": "wildtype"
+       }
+      ],
+      "handedness": null,
+      "id": "12a327fd-226c-4eda-b49c-c749704b8a6b",
+      "otherPublications": [
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "12a327fd-226c-4eda-b49c-c749704b8a6b"
+        },
+        "reference": "b2c4e380-ce96-4325-8a82-f24c0143448b",
+        "value": "10.25493/1DB6-YXW"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "12a327fd-226c-4eda-b49c-c749704b8a6b"
+        },
+        "reference": "a9a60163-a070-4611-896c-393b1d8342d9",
+        "value": "10.25493/2AYK-4JG"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "12a327fd-226c-4eda-b49c-c749704b8a6b"
+        },
+        "reference": "18a2c78a-a2e7-42dd-b468-3efdfaea1c54",
+        "value": "10.25493/7XN4-CZQ"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "12a327fd-226c-4eda-b49c-c749704b8a6b"
+        },
+        "reference": "904d8506-60ac-4dc6-85fd-83555bd2c5e4",
+        "value": "10.25493/CKYK-2VE"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "12a327fd-226c-4eda-b49c-c749704b8a6b"
+        },
+        "reference": "ae50e708-0552-43b7-8bcd-aa3a002c687d",
+        "value": "10.25493/FDHF-AWY"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "12a327fd-226c-4eda-b49c-c749704b8a6b"
+        },
+        "reference": "19cc79ac-fecd-4576-90e3-e7cabd42fe9f",
+        "value": "10.25493/P4DW-4RN"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "12a327fd-226c-4eda-b49c-c749704b8a6b"
+        },
+        "reference": "74385d61-058f-4288-8711-440fe4b90840",
+        "value": "10.25493/X0NS-FP7"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "12a327fd-226c-4eda-b49c-c749704b8a6b"
+        },
+        "reference": "f3a71b29-9074-42e2-a3ac-425e6a2ff0e9",
+        "value": "10.25493/YETC-BN2"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "12a327fd-226c-4eda-b49c-c749704b8a6b"
+        },
+        "reference": "f61c27af-d18e-4abc-9b02-96c09d49e542",
+        "value": "10.25493/YMPG-3AF"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "12a327fd-226c-4eda-b49c-c749704b8a6b"
+        },
+        "reference": "4a96960d-76f9-4c83-b1f6-4dc54be77a6e",
+        "value": "10.25493/Z4RW-7DN"
+       }
+      ],
+      "pathology": null,
+      "serviceLinks": null,
+      "sex": [
+       {
+        "reference": "744c9204-4aea-4eff-a4f4-d79f008b355f",
+        "value": "male"
+       }
+      ],
+      "species": [
+       {
+        "reference": "ab532423-1fd7-4255-8c6f-f99dc6df814f",
+        "value": "Rattus norvegicus"
+       }
+      ],
+      "strain": [
+       {
+        "reference": null,
+        "value": "Wistar"
+       }
+      ],
+      "title": {
+       "value": "wr03"
+      },
+      "weight": null
+     },
+     "key": "a4bf54a2-fcd8-45ca-a22a-f14a6b0a4fb0",
+     "parentRelationType": null,
+     "title": "Subject wr03"
+    },
+    {
+     "children": [
+      {
+       "color": "#78b5b5",
+       "data": {
+        "type": {
+         "value": "Dataset.TissueSampleCollection"
+        },
+        "additionalRemarks": null,
+        "age": null,
+        "ageCategory": null,
+        "anatomicalLocation": [
+         {
+          "reference": "d54e8226-20c0-4522-a40c-ec61d36c7b27",
+          "value": "brain"
+         }
+        ],
+        "attributes": null,
+        "geneticStrainType": [
+         {
+          "reference": null,
+          "value": "wildtype"
+         }
+        ],
+        "id": "4e4b6b0e-f77e-4f71-a534-8434265ec749",
+        "laterality": [
+         {
+          "reference": null,
+          "value": "left"
+         },
+         {
+          "reference": null,
+          "value": "right"
+         }
+        ],
+        "origin": {
+         "reference": "9f495e52-754d-4196-be82-5de56bd86836",
+         "value": "brain"
+        },
+        "pathology": null,
+        "serviceLinks": null,
+        "sex": [
+         {
+          "reference": "744c9204-4aea-4eff-a4f4-d79f008b355f",
+          "value": "male"
+         }
+        ],
+        "species": [
+         {
+          "reference": "ab532423-1fd7-4255-8c6f-f99dc6df814f",
+          "value": "Rattus norvegicus"
+         }
+        ],
+        "strain": [
+         {
+          "reference": null,
+          "value": "Wistar"
+         }
+        ],
+        "tissueSampleType": {
+         "reference": "79cc4385-acb4-467b-a45d-fdc85c26f2ee",
+         "value": "tissue slice"
+        },
+        "tissueSamples": null,
+        "title": null,
+        "weight": null
+       },
+       "key": "672d3310-a02a-4338-aec7-781642f4043c",
+       "parentRelationType": "descendentFrom",
+       "title": "Tissue sample collection quantRecData_b04_sub-wr04"
+      }
+     ],
+     "color": "#ffbe00",
+     "data": {
+      "type": {
+       "value": "Dataset.Subject"
+      },
+      "additionalRemarks": null,
+      "age": null,
+      "ageCategory": [
+       {
+        "reference": "584611b0-3c4b-418f-8617-127adafb0cea",
+        "value": "adult"
+       }
+      ],
+      "attributes": null,
+      "geneticStrainType": [
+       {
+        "reference": null,
+        "value": "wildtype"
+       }
+      ],
+      "handedness": null,
+      "id": "8f0db67a-a1c7-4a61-ba78-882f4febc9ee",
+      "otherPublications": [
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "8f0db67a-a1c7-4a61-ba78-882f4febc9ee"
+        },
+        "reference": "b2c4e380-ce96-4325-8a82-f24c0143448b",
+        "value": "10.25493/1DB6-YXW"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "8f0db67a-a1c7-4a61-ba78-882f4febc9ee"
+        },
+        "reference": "a9a60163-a070-4611-896c-393b1d8342d9",
+        "value": "10.25493/2AYK-4JG"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "8f0db67a-a1c7-4a61-ba78-882f4febc9ee"
+        },
+        "reference": "18a2c78a-a2e7-42dd-b468-3efdfaea1c54",
+        "value": "10.25493/7XN4-CZQ"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "8f0db67a-a1c7-4a61-ba78-882f4febc9ee"
+        },
+        "reference": "904d8506-60ac-4dc6-85fd-83555bd2c5e4",
+        "value": "10.25493/CKYK-2VE"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "8f0db67a-a1c7-4a61-ba78-882f4febc9ee"
+        },
+        "reference": "ae50e708-0552-43b7-8bcd-aa3a002c687d",
+        "value": "10.25493/FDHF-AWY"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "8f0db67a-a1c7-4a61-ba78-882f4febc9ee"
+        },
+        "reference": "19cc79ac-fecd-4576-90e3-e7cabd42fe9f",
+        "value": "10.25493/P4DW-4RN"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "8f0db67a-a1c7-4a61-ba78-882f4febc9ee"
+        },
+        "reference": "74385d61-058f-4288-8711-440fe4b90840",
+        "value": "10.25493/X0NS-FP7"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "8f0db67a-a1c7-4a61-ba78-882f4febc9ee"
+        },
+        "reference": "f3a71b29-9074-42e2-a3ac-425e6a2ff0e9",
+        "value": "10.25493/YETC-BN2"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "8f0db67a-a1c7-4a61-ba78-882f4febc9ee"
+        },
+        "reference": "f61c27af-d18e-4abc-9b02-96c09d49e542",
+        "value": "10.25493/YMPG-3AF"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "8f0db67a-a1c7-4a61-ba78-882f4febc9ee"
+        },
+        "reference": "4a96960d-76f9-4c83-b1f6-4dc54be77a6e",
+        "value": "10.25493/Z4RW-7DN"
+       }
+      ],
+      "pathology": null,
+      "serviceLinks": null,
+      "sex": [
+       {
+        "reference": "744c9204-4aea-4eff-a4f4-d79f008b355f",
+        "value": "male"
+       }
+      ],
+      "species": [
+       {
+        "reference": "ab532423-1fd7-4255-8c6f-f99dc6df814f",
+        "value": "Rattus norvegicus"
+       }
+      ],
+      "strain": [
+       {
+        "reference": null,
+        "value": "Wistar"
+       }
+      ],
+      "title": {
+       "value": "wr04"
+      },
+      "weight": null
+     },
+     "key": "94118e2f-83c4-4af9-9358-8d1ee82238a6",
+     "parentRelationType": null,
+     "title": "Subject wr04"
+    },
+    {
+     "children": [
+      {
+       "color": "#78b5b5",
+       "data": {
+        "type": {
+         "value": "Dataset.TissueSampleCollection"
+        },
+        "additionalRemarks": null,
+        "age": null,
+        "ageCategory": null,
+        "anatomicalLocation": [
+         {
+          "reference": "d54e8226-20c0-4522-a40c-ec61d36c7b27",
+          "value": "brain"
+         }
+        ],
+        "attributes": null,
+        "geneticStrainType": [
+         {
+          "reference": null,
+          "value": "wildtype"
+         }
+        ],
+        "id": "ed776fd5-5c64-447d-a87b-b0068c145646",
+        "laterality": null,
+        "origin": {
+         "reference": "9f495e52-754d-4196-be82-5de56bd86836",
+         "value": "brain"
+        },
+        "pathology": null,
+        "serviceLinks": null,
+        "sex": [
+         {
+          "reference": "744c9204-4aea-4eff-a4f4-d79f008b355f",
+          "value": "male"
+         }
+        ],
+        "species": [
+         {
+          "reference": "ab532423-1fd7-4255-8c6f-f99dc6df814f",
+          "value": "Rattus norvegicus"
+         }
+        ],
+        "strain": [
+         {
+          "reference": null,
+          "value": "Wistar"
+         }
+        ],
+        "tissueSampleType": {
+         "reference": "79cc4385-acb4-467b-a45d-fdc85c26f2ee",
+         "value": "tissue slice"
+        },
+        "tissueSamples": null,
+        "title": {
+         "value": "b05"
+        },
+        "weight": null
+       },
+       "key": "f6ee0ffd-b7ab-4a8a-b2db-9a4ecf14614d",
+       "parentRelationType": "descendentFrom",
+       "title": "Tissue sample collection b05"
+      }
+     ],
+     "color": "#ffbe00",
+     "data": {
+      "type": {
+       "value": "Dataset.Subject"
+      },
+      "additionalRemarks": null,
+      "age": null,
+      "ageCategory": [
+       {
+        "reference": "584611b0-3c4b-418f-8617-127adafb0cea",
+        "value": "adult"
+       }
+      ],
+      "attributes": null,
+      "geneticStrainType": [
+       {
+        "reference": null,
+        "value": "wildtype"
+       }
+      ],
+      "handedness": null,
+      "id": "c244dadc-9802-4314-8f44-07d93682806a",
+      "otherPublications": [
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "c244dadc-9802-4314-8f44-07d93682806a"
+        },
+        "reference": "18a2c78a-a2e7-42dd-b468-3efdfaea1c54",
+        "value": "10.25493/7XN4-CZQ"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "c244dadc-9802-4314-8f44-07d93682806a"
+        },
+        "reference": "904d8506-60ac-4dc6-85fd-83555bd2c5e4",
+        "value": "10.25493/CKYK-2VE"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "c244dadc-9802-4314-8f44-07d93682806a"
+        },
+        "reference": "19cc79ac-fecd-4576-90e3-e7cabd42fe9f",
+        "value": "10.25493/P4DW-4RN"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "c244dadc-9802-4314-8f44-07d93682806a"
+        },
+        "reference": "74385d61-058f-4288-8711-440fe4b90840",
+        "value": "10.25493/X0NS-FP7"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "c244dadc-9802-4314-8f44-07d93682806a"
+        },
+        "reference": "f3a71b29-9074-42e2-a3ac-425e6a2ff0e9",
+        "value": "10.25493/YETC-BN2"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "c244dadc-9802-4314-8f44-07d93682806a"
+        },
+        "reference": "f61c27af-d18e-4abc-9b02-96c09d49e542",
+        "value": "10.25493/YMPG-3AF"
+       }
+      ],
+      "pathology": null,
+      "serviceLinks": null,
+      "sex": [
+       {
+        "reference": "744c9204-4aea-4eff-a4f4-d79f008b355f",
+        "value": "male"
+       }
+      ],
+      "species": [
+       {
+        "reference": "ab532423-1fd7-4255-8c6f-f99dc6df814f",
+        "value": "Rattus norvegicus"
+       }
+      ],
+      "strain": [
+       {
+        "reference": null,
+        "value": "Wistar"
+       }
+      ],
+      "title": {
+       "value": "wr05"
+      },
+      "weight": null
+     },
+     "key": "9d57c4b3-ce46-4642-a694-5c6a30d6c6c3",
+     "parentRelationType": null,
+     "title": "Subject wr05"
+    }
+   ],
+   "color": "#e3dcdc",
+   "data": {
+    "geneticStrainTypes": [
+     {
+      "count": [
+       "5 subjects",
+       "5 tissue sample collections"
+      ],
+      "reference": null,
+      "value": "wildtype"
+     }
+    ],
+    "numberOfSubjectGroups": null,
+    "numberOfSubjects": {
+     "value": "5"
+    },
+    "numberOfTissueSampleCollections": {
+     "value": "5"
+    },
+    "numberOfTissueSamples": null,
+    "pathology": null,
+    "sex": [
+     {
+      "count": [
+       "5 subjects",
+       "5 tissue sample collections"
+      ],
+      "reference": "744c9204-4aea-4eff-a4f4-d79f008b355f",
+      "value": "male"
+     }
+    ],
+    "species": [
+     {
+      "count": [
+       "5 subjects",
+       "5 tissue sample collections"
+      ],
+      "reference": "ab532423-1fd7-4255-8c6f-f99dc6df814f",
+      "value": "Rattus norvegicus"
+     }
+    ],
+    "strains": [
+     {
+      "count": [
+       "5 subjects",
+       "5 tissue sample collections"
+      ],
+      "reference": null,
+      "value": "Wistar"
+     }
+    ],
+    "title": null,
+    "type": {
+     "value": "Dataset.SpecimenOverview"
+    }
+   },
+   "key": "root",
+   "legend": {
+    "#ffbe00": "Subject",
+    "#78b5b5": "Tissue sample collection"
+   },
+   "parentRelationType": null,
+   "title": "Specimen"
+  },
+  "otherVersions": [
+   {
+    "children": {
+     "innovation": {
+      "value": "This dataset contains the densities (in fmol/mg protein) of receptors for classical neurotransmitters of CA2 (hippocampus) obtained by means of quantitative _in vitro_ autoradiography. The receptor densities are visualized as _fingerprints_ (**fp**), which provide the mean density and standard deviation for each of the analyzed receptor types, averaged across samples. Information on the used tissue samples and corresponding subjects, as well as analyzed receptors accompanies each provided dataset version."
+     },
+     "version": {
+      "reference": "2ebf072e-5424-4b4a-9f08-0e3d86d060d4",
+      "value": "Overview"
+     }
+    }
+   },
+   {
+    "children": {
+     "innovation": {
+      "value": "This version includes the density measurements (**fp**) of CA2 for 10 receptor types for the classical neurotransmitters glutamate, GABA, acetylcholine, noradrenalin/norepinephrine, and serotonin."
+     },
+     "version": {
+      "reference": null,
+      "value": "v2 (current)"
+     }
+    }
+   },
+   {
+    "children": {
+     "innovation": {
+      "value": "This version includes the density measurements (**fp**) of CA2 for 4 receptor types for the classical neurotransmitters glutamate, and GABA."
+     },
+     "version": {
+      "reference": "6af93f57-b16d-436f-b05c-6d8bb4385250",
+      "value": "v1"
+     }
+    }
+   }
+  ],
+  "newInThisVersion": {
+   "value": "This version includes the density measurements (**fp**) of CA2 for 10 receptor types for the classical neurotransmitters glutamate, GABA, acetylcholine, noradrenalin/norepinephrine, and serotonin."
+  },
+  "experimentalApproach": [
+   {
+    "reference": "efa9154a-1bd3-49ed-8c96-e96744a6ba55",
+    "value": "anatomy"
+   },
+   {
+    "reference": "2ba8de18-a092-4e5e-82af-394cf32fe399",
+    "value": "microscopy"
+   },
+   {
+    "reference": "84d95941-85b5-4392-b50b-ef74aebccd2c",
+    "value": "expression characterization"
+   },
+   {
+    "reference": "4ccfa2b8-fe75-4a17-98b7-e01b922c8f03",
+    "value": "histology"
+   },
+   {
+    "reference": "53bb0dc2-7193-4a53-8150-036e218cff10",
+    "value": "multimodal research"
+   }
+  ],
+  "contributors": [
+   {
+    "reference": "d77176e3-faa9-4c93-8dc0-7f3663c6d2ee",
+    "value": "Palomero-Gallagher, N."
+   },
+   {
+    "reference": "8a047744-5b04-4c2c-abb3-cc2dfbdc12ea",
+    "value": "Zilles, K."
+   }
+  ],
+  "doi": {
+   "value": "10.25493/7XN4-CZQ"
+  },
+  "publications": [
+   {
+    "value": "Zilles, K., Schleicher, A., Palomero-Gallagher, N., & Amunts, K. (2002). Quantitative Analysis of Cyto- and Receptor Architecture of the Human Brain. Brain Mapping: The Methods, 573–602. https://doi.org/10.1016/b978-012693019-1/50023-x\n[DOI: 10.1016/B978-012693019-1/50023-X]\n[DOI: 10.1016/B978-012693019-1/50023-X]: https://doi.org/10.1016/B978-012693019-1/50023-X"
+   },
+   {
+    "value": "(Ed.). (2018). Cyto- and receptor architectonic mapping of the human brain. Brain Banking, 355–387. https://doi.org/10.1016/b978-0-444-63639-3.00024-4\n[DOI: 10.1016/B978-0-444-63639-3.00024-4]\n[DOI: 10.1016/B978-0-444-63639-3.00024-4]: https://doi.org/10.1016/B978-0-444-63639-3.00024-4"
+   }
+  ]
+ },
+ "disclaimer": "Please alert us at [curation-support@ebrains.eu](mailto:curation-support@ebrains.eu) for errors or quality concerns regarding the dataset, so we can forward this information to the Data Custodian responsible.",
+ "group": "public"
+}

@@ -1,0 +1,58 @@
+item,column_name,n_inventory_candidates
+Bahney_vonBartheld_2018_TABLE1,cells_sd_million,8
+Bahney_vonBartheld_2018_TABLE1,range_max_million,8
+Bahney_vonBartheld_2018_TABLE1,range_min_million,8
+Bahney_vonBartheld_2018_TABLE1,ratio_sd,8
+Bahney_vonBartheld_2018_TABLE2,cells_sd_million,8
+Bahney_vonBartheld_2018_TABLE2,range_max_million,8
+Bahney_vonBartheld_2018_TABLE2,range_min_million,8
+Bahney_vonBartheld_2018_TABLE2,ratio_sd,8
+Bahney_vonBartheld_2018_TABLE3,GNR_max,43
+Bahney_vonBartheld_2018_TABLE3,GNR_min,43
+Bahney_vonBartheld_2018_TABLE3,brain_mass_mg_max,43
+Bahney_vonBartheld_2018_TABLE3,brain_mass_mg_min,43
+Bahney_vonBartheld_2018_TABLE4,nNNR_max,112
+Bahney_vonBartheld_2018_TABLE4,nNNR_min,112
+Boddy_etal_2012_TableS1,Body Mass (g),630
+Boddy_etal_2012_TableS1,EQ,630
+Boddy_etal_2012_TableS1,Independent contrast derived EQ,630
+Boddy_etal_2012_TableS1,PGLS-ML dervived EQ,630
+Boddy_etal_2012_TableS1,Reference,630
+Boddy_etal_2012_brainbodydatabasev2.txt,Age Class,1703
+Boddy_etal_2012_brainbodydatabasev2.txt,Body Mass (g),1826
+Boddy_etal_2012_brainbodydatabasev2.txt,Body Mass Standard Deviation,237
+Boddy_etal_2012_brainbodydatabasev2.txt,Brain Mass Standard Deviation,78
+Boddy_etal_2012_brainbodydatabasev2.txt,Brain Volume,317
+Boddy_etal_2012_brainbodydatabasev2.txt,Brain Volume Standard Deviation,207
+Boddy_etal_2012_brainbodydatabasev2.txt,Notes,1037
+Boddy_etal_2012_brainbodydatabasev2.txt,Order,1998
+Boddy_etal_2012_brainbodydatabasev2.txt,Sex,1210
+Boddy_etal_2012_brainbodydatabasev2.txt,Source,1998
+Boddy_etal_2012_brainbodydatabasev2.txt,Species Name (from original article),1998
+Boddy_etal_2012_brainbodydatabasev2.txt,Updated Species Name (from Wilson & Reeder Mammal Species of the World),1998
+Boddy_etal_2012_brainbodydatabasev2.txt,source_dataset,1998
+Buchsbaum_etal_1989_TableI,value_numeric,48
+Kaufman__2004_TableA3,CBF_SD,15
+Kaufman__2004_TableA3,CMRO2_SD,11
+Kaufman__2004_TableA3,CMRgl_SD,107
+Kaufman__2004_TableA3,n,126
+Kennedy_etal_1978_Table,value_numeric,39
+Kennedy_etal_1978_Text,value_numeric,10
+ManyPrimates__2022_STMperformance,Species,41
+ManyPrimates__2022_STMperformance,common_name,41
+ManyPrimates__2022_STMperformance,n_individuals,41
+ManyPrimates__2022_STMperformance,n_sites,41
+ManyPrimates__2022_STMperformance,n_trials,41
+Mink_etal_1981_TABLE1,body_metabolic_rate_body2.cm3O2.100g.min,42
+Mink_etal_1981_TABLE1,body_metabolic_rate_used.cm3O2.100g.min,42
+Mink_etal_1981_TABLE1,body_metabolism.cm3O2.min,42
+Mink_etal_1981_TABLE1,body_weight_cns_specimen.g,42
+Mink_etal_1981_TABLE1,body_weight_metabolism_specimen_high.g,42
+Mink_etal_1981_TABLE1,body_weight_metabolism_specimen_low.g,42
+Mink_etal_1981_TABLE1,brain_metabolism.cm3O2.min,42
+Mink_etal_1981_TABLE1,brain_weight.mg,42
+Mink_etal_1981_TABLE1,cns_metabolism.cm3O2.min,42
+Mink_etal_1981_TABLE1,cns_to_body_metabolism_ratio,42
+Mink_etal_1981_TABLE1,spinal_cord_weight.mg,41
+Mink_etal_1981_TABLE1,spinal_metabolic_rate.cm3O2.100g.min,41
+Mink_etal_1981_TABLE1,spinal_metabolism.cm3O2.min,42

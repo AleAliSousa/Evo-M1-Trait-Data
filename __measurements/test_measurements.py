@@ -1,9 +1,39 @@
 """Small semantic fixtures: IDs, source roles, method filters and conversion aliases."""
-import csv,sqlite3,tempfile,unittest
+import csv,re,sqlite3,tempfile,unittest,zipfile
 from pathlib import Path
 import openpyxl
-from build_measurements import build, role_of, standardize, brain_basis, run_local
+from build_measurements import build, role_of, standardize, brain_basis, run_local, load_registry_rows, item_metadata_files
 class StageTest(unittest.TestCase):
+ def test_top_level_definitions_with_reference_tables_precedence(self):
+  with tempfile.TemporaryDirectory() as t:
+   root=Path(t);paper=root/'Falcone_etal_2019';paper.mkdir()
+   top=paper/'Falcone_etal_2019_TABLE2_definitions.csv'
+   top.write_text('Code,Definition\nILA complexity,top-level definition\n')
+   definition,refs=item_metadata_files(root,'Falcone_etal_2019','Falcone_etal_2019_TABLE2')
+   self.assertEqual(definition,top)
+   self.assertEqual(refs,paper/'reference_tables/Falcone_etal_2019_TABLE2_references.csv')
+   refdir=paper/'reference_tables';refdir.mkdir()
+   preferred=refdir/top.name;preferred.write_text('Code,Definition\nILA complexity,preferred definition\n')
+   definition,_=item_metadata_files(root,'Falcone_etal_2019','Falcone_etal_2019_TABLE2')
+   self.assertEqual(definition,preferred)
+ def test_registry_dimension_underreport(self):
+  with tempfile.TemporaryDirectory() as t:
+   root=Path(t);healthy=root/'registry.xlsx';broken=root/'underreported.xlsx'
+   w=openpyxl.Workbook();s=w.active;s.title='Sheet1'
+   s.append(['Item encoded','Item name','Publication name','Data role (primary/secondary/both)'])
+   s.append(['animal','Example_Table1','Example','primary'])
+   w.save(healthy)
+   with zipfile.ZipFile(healthy) as src,zipfile.ZipFile(broken,'w') as dst:
+    for info in src.infolist():
+     data=src.read(info.filename)
+     if info.filename=='xl/worksheets/sheet1.xml':
+      data,n=re.subn(rb'<dimension ref="[^"]+"',b'<dimension ref="A1"',data,count=1)
+      self.assertEqual(n,1)
+     dst.writestr(info,data)
+   self.assertEqual(openpyxl.load_workbook(broken,read_only=True)['Sheet1'].max_row,1)
+   rows=load_registry_rows(broken)
+   self.assertEqual(len(rows),2)
+   self.assertEqual(rows[1][1],'Example_Table1')
  def test_uncertainty_and_units(self):
   self.assertEqual(role_of("primary","secondary"),"review")
   self.assertEqual(role_of("both","both"),"review")

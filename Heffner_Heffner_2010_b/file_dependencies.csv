@@ -1,0 +1,7 @@
+output_file_id,input_file_id,relation,source_locator,note
+heffner-csv,heffner-builder,produced_by,,Producer declared in file registry
+heffner-source-match,heffner-builder,produced_by,,Producer declared in file registry
+heffner-source-match-issues,heffner-builder,produced_by,,Producer declared in file registry
+heffner-source-match-summary,heffner-builder,produced_by,,Producer declared in file registry
+heffner-tsv,heffner-builder,produced_by,,Producer declared in file registry
+heffner-tsv,heffner-csv,exported_from,,Same registered item build

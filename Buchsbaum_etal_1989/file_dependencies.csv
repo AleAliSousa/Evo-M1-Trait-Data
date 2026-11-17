@@ -1,0 +1,10 @@
+output_file_id,input_file_id,relation,source_locator,note
+buchsbaum-csv,buchsbaum-builder,produced_by,,Producer declared in file registry
+buchsbaum-text-csv,buchsbaum-text-builder,produced_by,,Producer declared in file registry
+buchsbaum-snapshot,buchsbaum-snapshot-builder,produced_by,,Producer declared in file registry
+buchsbaum-text-snapshot,buchsbaum-text-snapshot-builder,produced_by,,Producer declared in file registry
+extra_Buchsbaum_etal_1989_internal_checks_Buchsbaum_etal_1989_Text_internal_check_csv,extra_Buchsbaum_etal_1989_internal_checks_Buchsbaum_etal_1989_Text_internal_check_R,produced_by,,Producer declared in file registry
+buchsbaum-tsv,buchsbaum-builder,produced_by,,Producer declared in file registry
+buchsbaum-tsv,buchsbaum-csv,exported_from,,Same registered item build
+buchsbaum-text-tsv,buchsbaum-text-builder,produced_by,,Producer declared in file registry
+buchsbaum-text-tsv,buchsbaum-text-csv,exported_from,,Same registered item build

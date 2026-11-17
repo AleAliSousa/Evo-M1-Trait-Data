@@ -10,6 +10,16 @@ python __measurements/build_measurements.py
 
 Requires Python 3 and openpyxl. The public TSVs, registry, paper folders, keys and existing merges are inputs. They are read without modification. `config/` contains deliberate processing decisions, with AnimalTraits as the first explicit adapter. Other tables use their existing definitions, variable catalog and brain-size basis keys. This first inventory is not a claim that every measurement has been fully curated.
 
+The [metadata architecture](../__metadata/README.md) and its
+[eight-item source catalog](../__metadata/pilot/README.md) distinguish
+registered observation and bibliography items, paper-folder metadata,
+project authority, derived indexes, and downstream merge products. The
+pilot gate uses catalog routes; this full inventory builder still reads its
+legacy input paths directly.
+The [single-pipeline pilot proposal](pilot_single_pipeline/README.md)
+describes a smaller R path from post-snapshot reports to qualified species
+choices and includes a direct-selection feasibility check.
+
 ## Outputs and context
 
 - `measurements.sqlite`: the complete relational dataset. `points` holds measurements, `source_rows` holds each successfully parsed source row as JSON, `reference_links` holds value-to-reference links, and `files` records source hashes and coverage. `item_context` captures the registry row, definitions and reference list used in this build; `report_relations` links alternate representations of the same report. `basis_context` captures the brain-size basis keys, including fixation state and olfactory-bulb or CSF boundaries.
@@ -51,6 +61,21 @@ WHERE data_role = 'primary' AND review_reason = '';
 
 Select multiple measurement types with `points.measure`; no broad brain/mass name guess determines biological quantity. Existing brain basis keys can identify brain mass or endocranial volume. Other definitions retain their existing measure classes until explicitly mapped. A review reason means a value needs work before analysis, including when its source role is known.
 
+## Source role and review are different questions
+
+Primary and secondary describe the value's source. A primary report can still
+need review because its species, method, unit, or definition is unresolved.
+A secondary report can have complete metadata and pass a qualification gate,
+while remaining secondary. Mixed values combine original and relayed inputs.
+
+The current inventory uses data_role = review as a placeholder when it
+cannot choose a single primary or secondary role from the item and variable
+metadata. It is not another kind of source and does not mean secondary.
+Also, review_reason may be nonempty even when data_role is primary or
+secondary. The pilot in pilot_metadata/ records these axes separately as
+source_role, qualification_pass, and blocker_codes; later source
+selection is a further decision.
+
 ## AnimalTraits processing choices
 
 The adapter retains one measurement for each supplied standardized body mass, brain mass, whole-body metabolic rate, and mass-specific metabolic rate. Body-mass range endpoints are separate statistics. Appended aliases such as `Brain_Mass.mg` and `Source_row`, original-value audit columns and sample sizes remain context rather than becoming additional observations. Project units are g, mg, W, W/g, and mm3. Original brain volumes are preserved as volume representations of the same source observation; they must not be counted as an additional independent animal or experiment alongside the converted mass.
@@ -75,4 +100,12 @@ Curated primary↔secondary relationships can be added to `config/report_links.c
 
 The command builds and indexes SQLite in local temporary storage, then copies the completed database and CSVs into this folder. This avoids database locking and index-write errors observed when SQLite writes directly inside OneDrive. Failed runs do not replace the last completed dataset. `--exports-only` regenerates filters and partitions from the saved inventory.
 
-Initial inventory (2026-11-13): 1,017 canonical TSVs accounted for; 1,013 fully parsed, three partially parsed, one blocked by header structure. The 102 malformed rows are retained in `review/source_issues.csv`. There are 2,330,177 reported/candidate cells, including unresolved candidates that can turn out to be metadata; this is not a count of independent biological observations. AnimalTraits contributes 8,935 report representations/statistics, with 1,250 explicit links between original-volume and standardized-mass representations.
+Current inventory (rebuilt 2026-11-14): 1,017 canonical TSVs accounted for;
+1,013 fully parsed, three partially parsed, one blocked by header structure.
+The 102 malformed rows are retained in review/source_issues.csv. There are
+2,330,859 reported/candidate cells, including unresolved candidates that
+can turn out to be metadata; this is not a count of independent biological
+observations. The ManyPrimates predictor item now contributes 509 values
+across 13 compiled predictors. AnimalTraits contributes 8,935 report
+representations/statistics, with 1,250 explicit links between original-volume
+and standardized-mass representations.

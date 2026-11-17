@@ -33,7 +33,7 @@ __Public/comparative-data/UMI%3A3147447_TableAxx.tsv   ← DOI/UMI-named public 
 
 Each table has a self-contained `.R` (derives its own name from the filename, matches
 `__ReadMe.xlsx`) that reads only its snapshot. Column meanings and units are in
-`Kaufman__2004_definitions.csv`.
+`reference_tables/Kaufman__2004_definitions.csv`.
 
 ## Files
 
@@ -46,7 +46,7 @@ Each table has a self-contained `.R` (derives its own name from the filename, ma
 | `Kaufman__2004_source_corrections.R` | Checked overlay for confirmed OCR/column-shift defects in A1-A14; never edits snapshots. |
 | `Kaufman__2004_TableA1..A15.csv` | Clean, analysis-ready tables. **Use these.** |
 | `reference_tables/Kaufman__2004_TablesA1-A14_references.csv` | Exact cleaned table citation → full cited-source bibliography entry, source level/type, stable source ID, and primary ID where applicable. |
-| `Kaufman__2004_definitions.csv` | Data dictionary (documentation only; not read by the scripts). |
+| `reference_tables/Kaufman__2004_definitions.csv` | Data dictionary (documentation only; not read by the scripts). |
 | `old/` | Superseded Python build/compare scripts and earlier comparison outputs. |
 
 ## The 15 tables

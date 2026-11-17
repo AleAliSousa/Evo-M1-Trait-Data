@@ -30,7 +30,7 @@ Of 15 species in both Nudo Table 1 and Glendenning Table 1, 10 have identical bo
 ## Recommended treatment
 
 - Keep the row out of species-mean pooling for brain mass, body mass and surface area; keep within-paper comparisons (same animals, same method).
-- **Enforced in the merges (2026-10-26)** by value-veto files: `__merging_brain_mass/brain_mass_value_flags.csv` (Nudo 24 rows; DeCasien/Glendenning 5 rows) and `__merging_body_ecology/body_ecology_value_flags.csv` (Nudo 24 rows). The reason is owner policy (unvalidated, treated as non-shrinkage-corrected), not demonstrated shrinkage.
+- **Enforced in the merges (2026-10-26)** by value-veto files: `__metadata/curation/brain_mass_value_flags.csv` (Nudo 24 rows; DeCasien/Glendenning 5 rows) and `__merging_body_ecology/body_ecology_value_flags.csv` (Nudo 24 rows). The reason is owner policy (unvalidated, treated as non-shrinkage-corrected), not demonstrated shrinkage.
 - Record it once. Boddy, DeCasien and Nudo rows are relays or retabulations of the Glendenning/FSU measurement, not independent sources.
 - Do not rewrite the printed taxon to *C. sabaeus* or *C. aethiops* on the strength of either label.
 

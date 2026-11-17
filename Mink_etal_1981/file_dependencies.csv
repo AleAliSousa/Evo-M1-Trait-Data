@@ -1,0 +1,10 @@
+output_file_id,input_file_id,relation,source_locator,note
+mink-refs-csv,mink-refs-builder,produced_by,,Producer declared in file registry
+mink-t1-csv,mink-t1-builder,produced_by,,Producer declared in file registry
+mink-refs-snapshot,mink-paper,transcribed_from,,Item README documents manual paper transcription
+mink-t1-snapshot,mink-t1-snapshot-builder,produced_by,,Producer declared in file registry
+mink-t1-lookup,mink-t1-builder,produced_by,,Producer declared in file registry
+mink-refs-tsv,mink-refs-builder,produced_by,,Producer declared in file registry
+mink-refs-tsv,mink-refs-csv,exported_from,,Same registered item build
+mink-t1-tsv,mink-t1-builder,produced_by,,Producer declared in file registry
+mink-t1-tsv,mink-t1-csv,exported_from,,Same registered item build

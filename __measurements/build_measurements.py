@@ -22,6 +22,7 @@ def write(path,fields,rows):
 def role_of(variable_role,item_role):
     roles={x for x in (variable_role,item_role) if x in {'primary','secondary'}}
     if len(roles)==1:return next(iter(roles))
+    # Legacy partition name: role unresolved/conflicting, not a secondary source.
     return 'review'
 def inferred_unit(code):
     # Only explicit terminal unit labels. No biological inference from trait names.
@@ -42,11 +43,32 @@ def brain_basis(basis,quantity):
     if basis in {'mass_estimated_from_endocranial_volume','mass_from_endocranial_volume'}:return 'estimated_from_endocranial_volume'
     if basis=='mass_estimated_from_volume':return 'estimated_from_volume'
     return 'unresolved'
+def load_registry_rows(path):
+    registry=openpyxl.load_workbook(path,read_only=True,data_only=True)
+    sheet=registry['Sheet1']
+    # Some saved workbooks declare A1 as their entire used range even though
+    # cells extend far beyond it. ReadOnlyWorksheet trusts that declaration
+    # unless its dimensions are reset before iteration.
+    if sheet.max_row==1 or sheet.max_column==1:sheet.reset_dimensions()
+    rows=list(sheet.values)
+    registry.close()
+    return rows
+def item_metadata_files(root,paper,item):
+    paper_dir=root/str(paper)
+    reference_dir=paper_dir/'reference_tables'
+    definition_file=reference_dir/f'{item}_definitions.csv'
+    if not definition_file.is_file():
+        top_level=paper_dir/f'{item}_definitions.csv'
+        if top_level.is_file():definition_file=top_level
+    references_file=reference_dir/f'{item}_references.csv'
+    if not references_file.is_file():
+        top_level=paper_dir/f'{item}_references.csv'
+        if top_level.is_file():references_file=top_level
+    return definition_file,references_file
 def build(root=ROOT,out=HERE,resume=False):
     out.mkdir(exist_ok=True,parents=True)
     for d in ['primary','secondary','review']: (out/d).mkdir(exist_ok=True)
-    registry=openpyxl.load_workbook(root/'__ReadMe.xlsx',read_only=True,data_only=True)
-    rows=list(registry['Sheet1'].values);headers=rows[0];by_stem=collections.defaultdict(list)
+    rows=load_registry_rows(root/'__ReadMe.xlsx');headers=rows[0];by_stem=collections.defaultdict(list)
     for row in rows[1:]:
         d=dict(zip(headers,row));stem=d.get('Item encoded')
         if stem:by_stem[str(stem)].append(d)
@@ -56,7 +78,7 @@ def build(root=ROOT,out=HERE,resume=False):
     overrides={(d['item'],d['column']):d for d in load(HERE/'config/column_rules.csv')}
     role_rules={d['item']:d for d in load(HERE/'config/item_roles.csv')}
     row_basis=collections.defaultdict(list)
-    for r in load(root/'__merging_brain_mass/brain_mass_row_basis.csv'):
+    for r in load(root/'__metadata/curation/brain_mass_row_basis.csv'):
         for locator in r.get('source_records','').split('; '):
             m=re.search(r'([^/]+[.]tsv):(\d+)$',locator)
             if m:row_basis[(m.group(1),int(m.group(2)),r.get('column',''))].append(r)
@@ -86,10 +108,10 @@ def build(root=ROOT,out=HERE,resume=False):
         itemrole=str(reg.get('Data role (primary/secondary/both)') or '').lower()
         if item in role_rules:itemrole=role_rules[item]['role']
         definitions={}
-        definition_file=root/str(paper)/'reference_tables'/f'{item}_definitions.csv'
+        definition_file,references_file=item_metadata_files(root,paper,item)
         for d in load(definition_file):
             if d.get('Code'):definitions.setdefault(d['Code'],[]).append(d)
-        references=load(definition_file.with_name(f'{item}_references.csv'))
+        references=load(references_file)
         db.execute('INSERT OR REPLACE INTO item_context VALUES (?,?,?,?)',(item,json.dumps(reg,default=str,ensure_ascii=False),json.dumps(definitions,ensure_ascii=False),json.dumps(references,ensure_ascii=False)))
         key_columns=collections.defaultdict(list)
         for r in references:key_columns[r.get('cited_in_column','')].append(r)
@@ -137,7 +159,7 @@ def build(root=ROOT,out=HERE,resume=False):
                         r=rb[0];val_g=standardize(numeric,unit,'brain_mass')[0]
                         if r.get('Species')==species and val_g is not None and number(r.get('Value_g')) is not None and math.isclose(val_g/1000,float(r['Value_g']),rel_tol=1e-8):
                             measure='brain_mass';measurement_basis=brain_basis(r.get('basis',''),r.get('original_quantity',''))
-                            evidence=r.get('evidence','')+'; __merging_brain_mass/brain_mass_row_basis.csv:'+r.get('resolution_id','')
+                            evidence=r.get('evidence','')+'; __metadata/curation/brain_mass_row_basis.csv:'+r.get('resolution_id','')
                     method=row.get(rule.get('method_column',''),'')
                     if item=='Herberstein_etal_2022_Observations' and col=='brain size':
                         unit=row.get('brain size - units','');originalunit=row.get('original brain size - units','')
@@ -172,7 +194,7 @@ def build(root=ROOT,out=HERE,resume=False):
                         for ref in refs:
                             if cell and cell==ref.get('ref_key'):
                                 rid='REF-'+digest(ref.get('citation') or cell)[:24]
-                                links.append((point,rid,cell,ref.get('citation',''),'unresolved','reported_source',str(definition_file.with_name(f'{item}_references.csv').relative_to(root))))
+                                links.append((point,rid,cell,ref.get('citation',''),'unresolved','reported_source',str(references_file.relative_to(root))))
                     # Already-present citation fields retain the reported work without asserting primary status.
                     if not links and row.get('fullReference'):
                         rid='REF-'+digest(row['fullReference'])[:24];links.append((point,rid,row.get('inTextReference',''),row['fullReference'],'unresolved','reported_source','source row fullReference'))

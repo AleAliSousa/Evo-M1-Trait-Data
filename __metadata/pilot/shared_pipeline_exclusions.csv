@@ -1,0 +1,8 @@
+path_glob,reason
+__metadata/pilot/.gitignore,Repository ignore configuration rather than a pilot data or metadata resource
+__measurements/pilot_metadata/pilot_metadata.sqlite,Legacy merge-dependent pilot database not produced by the seven-step run
+__measurements/pilot_metadata/behavior_preference_audit.csv,Legacy merge-dependent audit not produced by the seven-step run
+__measurements/pilot_metadata/primary_preference_audit.csv,Legacy merge-dependent audit not produced by the seven-step run
+__measurements/pilot_metadata/mixed_team_audit.csv,Legacy merge-dependent audit not produced by the seven-step run
+__measurements/pilot_metadata/selection_examples.csv,Legacy merge-dependent audit not produced by the seven-step run
+__measurements/pilot_single_pipeline/pilot_sources_*.sqlite,Interrupted temporary selector databases

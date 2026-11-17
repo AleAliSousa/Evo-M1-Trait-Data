@@ -6,7 +6,7 @@
 # dissertation PDF; ALL cleaning happens here. One row per published study entry.
 #
 # Units: CMRgl (glucose) & CMRO2 (oxygen) in umol/100 g/min; CBF (blood flow) in mL/100 g/min.
-# Columns documented in Kaufman__2004_definitions.csv.
+# Columns documented in reference_tables/Kaufman__2004_definitions.csv.
 
 suppressPackageStartupMessages({
   library(readr); library(dplyr); library(stringr); library(readxl)

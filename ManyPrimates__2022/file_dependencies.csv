@@ -1,0 +1,10 @@
+output_file_id,input_file_id,relation,source_locator,note
+many-stm-csv,many-stm-builder,produced_by,,Producer declared in file registry
+many-pred-csv,many-pred-builder,produced_by,,Producer declared in file registry
+many-stm-snapshot,many-stm-source,copied_from,,README documents byte-identical source copy
+many-pred-snapshot,many-pred-snapshot-builder,produced_by,,Producer declared in file registry
+many-pred-snapshot,many-pred-source,derived_from,,Source named in the inspected snapshot writer
+many-stm-tsv,many-stm-builder,produced_by,,Producer declared in file registry
+many-stm-tsv,many-stm-csv,exported_from,,Same registered item build
+many-pred-tsv,many-pred-builder,produced_by,,Producer declared in file registry
+many-pred-tsv,many-pred-csv,exported_from,,Same registered item build

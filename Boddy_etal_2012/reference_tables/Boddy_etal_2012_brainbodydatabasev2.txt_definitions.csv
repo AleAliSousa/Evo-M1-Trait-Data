@@ -8,7 +8,7 @@ Brain Mass (g),brain mass in grams as reported or converted by the original sour
 Brain Mass Standard Deviation,standard deviation of Brain Mass (g) across individuals,Brain,mass_g SD,,primary,Mammalia,Boddy_etal_2012_brainbodydatabasev2,blank where only a single individual or no SD reported,
 Body Mass (g),body mass in grams as reported by the original source,Body,mass_g,,primary,Mammalia,Boddy_etal_2012_brainbodydatabasev2,,
 Body Mass Standard Deviation,standard deviation of Body Mass (g) across individuals,Body,mass_g SD,,primary,Mammalia,Boddy_etal_2012_brainbodydatabasev2,blank where only a single individual or no SD reported,
-Sex,sex of the measured individual(s) (e.g. M, F, M&F),,,info,,Mammalia,Boddy_etal_2012_brainbodydatabasev2,,
+Sex,"sex of the measured individual(s) (e.g. M, F, M&F)",,,info,,Mammalia,Boddy_etal_2012_brainbodydatabasev2,,
 No. Individuals,number of individuals the row's values are based on,,count,,info,,Boddy_etal_2012_brainbodydatabasev2,blank where not reported,
 Age Class,reported or estimated age class of the individual(s) (e.g. Adult; Not Adult),,,info,,Mammalia,Boddy_etal_2012_brainbodydatabasev2,estimated from body mass where noted,
 Source,original literature source the measurement was compiled from,,,info,,,Boddy_etal_2012_brainbodydatabasev2,per-row citation to the underlying primary source; see paper's own bibliography for full reference,

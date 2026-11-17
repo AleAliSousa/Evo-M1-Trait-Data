@@ -37,20 +37,37 @@ Printed table -> snapshot -> analysis csv -> public TSV.
 | file | role |
 |---|---|
 | `Heffner_Heffner_2010_b_Table1_snapshot.csv` | frozen source, printed layout, incl. footnote letters |
-| `Heffner_Heffner_2010_b_Table1.R` | reads the snapshot, writes CSV + public TSV |
-| `Heffner_Heffner_2010_b_Table1.csv` | tidy analysis rows |
-| `reference_tables/Heffner_Heffner_2010_b_Table1_definitions.csv` | data dictionary |
-| `reference_tables/Heffner_Heffner_2010_b_Table1_footnotes.csv` | full text of footnote letters a-jj (column definitions + per-species citations) |
+| `Heffner_Heffner_2010_b_Table1.R` | reads the snapshot, writes CSV + public TSV, and builds source matches |
+| `Heffner_Heffner_2010_b_Table1.csv` | tidy analysis rows; retains two independent printed citation-key columns and the taxon as published |
+| `reference_tables/Heffner_Heffner_2010_b_Table1_definitions.csv` | ten-column item dictionary with variable-level quantity, role, method limitations, and exact table/footnote locators |
+| `reference_tables/Heffner_Heffner_2010_b_Table1_footnotes.csv` | wording of printed footnotes a-jj |
+| `reference_tables/Heffner_Heffner_2010_b_Table1_references.csv` | item-scoped key-to-citation lookup; full bibliography from printed p. 2082 where available |
+| `reference_tables/Heffner_Heffner_2010_b_Table1_reference_columns.csv` | reviewed key-column-to-measure declarations |
+| `reference_tables/Heffner_Heffner_2010_b_Table1_source_match*.csv` | regenerated cell-level citation matches and issues |
 
 ## Data role
-Only the *Tursiops truncatus* row (species_row 21) is marked `primary`;
-it is the value used by SensoryData_compiled. The other 20 species are
-printed in the same table and retained as `secondary` for completeness.
+All 21 rows are secondary reports from a comparative letter. Use by
+SensoryData_compiled does not make its *Tursiops* row an original measurement.
+For that row, hearing limit 136 kHz cites Johnson (1967), and basilar
+membrane length 40.7 mm cites Ketten (1992), through footnotes ii and jj.
+The functional interaural distance of 75 microseconds has no per-row
+citation or acquisition protocol in Table 1; its original source remains
+unresolved. A cited work is not automatically confirmed as the original
+measurement; review the cited work before assigning primary lineage.
 
 ## Observation level
-Species-level values, each drawn by the letter's authors from a distinct
-previously published source (see footnotes csv for the citation attached
-to each species' frequency and basilar-membrane-length values).
+Species-level values. Frequency and basilar-membrane-length values have
+*separate* printed superscript references, now preserved as `ref_freq_key`
+and `ref_bm_length_keys`. Some membrane cells cite two keys; hearing
+footnotes m and q each name two works under one key. These are retained
+as compound citations until the original value can be attributed to one
+work. The distance column has only a quantity definition (footnote b).
+
+The PDF prints *Tursiops truncates* in the last row. The older frozen
+snapshot silently normalized this to *Tursiops truncatus*. The built
+item now preserves the PDF wording in `species_as_published`, retains
+`binomial = Tursiops truncatus` for existing consumers, and leaves
+accepted-name validation to `_keys`.
 
 ## Units
 High-frequency hearing limit in kHz (60-dB-SPL criterion); functional

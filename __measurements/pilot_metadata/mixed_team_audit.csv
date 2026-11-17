@@ -1,0 +1,46 @@
+Species,Measure,Team,poolable_group,roles,n_primary,n_secondary,sources
+Alouatta seniculus,Brain_Mass,Stephan_collection,mass_measured,primary | secondary,2,1,ISBN%3A0390672505_TABLE3.tsv | ISBN%3A0390672505_Tables1-6.tsv | PMID%3A9672110_Table1.tsv
+Aotus trivirgatus,Brain_Mass,Stephan_collection,mass_measured,primary | secondary,3,1,10.1159%2F000155963_TableIII.tsv | ISBN%3A0390672505_TABLE3.tsv | ISBN%3A0390672505_Tables1-6.tsv | PMID%3A9672110_Table1.tsv
+Callicebus moloch,Brain_Mass,Stephan_collection,mass_measured,primary | secondary,3,1,10.1159%2F000155963_TableIII.tsv | ISBN%3A0390672505_TABLE3.tsv | ISBN%3A0390672505_Tables1-6.tsv | PMID%3A9672110_Table1.tsv
+Callimico goeldii,Brain_Mass,Stephan_collection,mass_measured,primary | secondary,1,1,10.1159%2F000155963_TableIII.tsv | PMID%3A9672110_Table1.tsv
+Callithrix jacchus,Brain_Mass,Stephan_collection,mass_measured,primary | secondary,3,1,10.1159%2F000155963_TableIII.tsv | ISBN%3A0390672505_TABLE3.tsv | ISBN%3A0390672505_Tables1-6.tsv | PMID%3A9672110_Table1.tsv
+Cebuella pygmaea,Brain_Mass,Stephan_collection,mass_measured,primary | secondary,1,1,10.1159%2F000155963_TableIII.tsv | PMID%3A9672110_Table1.tsv
+Cebus albifrons,Brain_Mass,Stephan_collection,mass_measured,primary | secondary,2,1,ISBN%3A0390672505_TABLE3.tsv | ISBN%3A0390672505_Tables1-6.tsv | PMID%3A9672110_Table1.tsv
+Cercopithecus ascanius,Brain_Mass,Stephan_collection,mass_measured,primary | secondary,3,1,10.1159%2F000155963_TableIII.tsv | ISBN%3A0390672505_TABLE3.tsv | ISBN%3A0390672505_Tables1-6.tsv | PMID%3A9672110_Table1.tsv
+Cercopithecus ascanius,Brain_Mass,Zilles,mass_measured,primary | secondary,4,1,10.1111%2Fj.1749-6632.2011.05978.x_TableS1.tsv | 10.1159%2F000346495_Table1.tsv
+Cercopithecus mitis,Brain_Mass,Stephan_collection,mass_measured,primary | secondary,3,1,10.1159%2F000155963_TableIII.tsv | ISBN%3A0390672505_TABLE3.tsv | ISBN%3A0390672505_Tables1-6.tsv | PMID%3A9672110_Table1.tsv
+Cercopithecus mitis,Brain_Mass,Zilles,mass_measured,primary | secondary,2,1,10.1016%2Fj.jhevol.2012.12.003_Table1.tsv | 10.1111%2Fj.1749-6632.2011.05978.x_TableS1.tsv | 10.1159%2F000346495_Table1.tsv
+Cheirogaleus major,Brain_Mass,Stephan_collection,mass_measured,primary | secondary,3,1,10.1159%2F000155963_TableII.tsv | ISBN%3A0390672505_TABLE2.tsv | ISBN%3A0390672505_Tables1-6.tsv | PMID%3A9672110_Table1.tsv
+Colobus angolensis,Brain_Mass,Zilles,mass_measured,primary | secondary,1,1,10.1016%2Fj.jhevol.2012.12.003_Table1.tsv | 10.1159%2F000346495_Table1.tsv
+Erythrocebus patas,Brain_Mass,Stephan_collection,mass_measured,primary | secondary,1,1,10.1159%2F000155963_TableIII.tsv | PMID%3A9672110_Table1.tsv
+Erythrocebus patas,Brain_Mass,Zilles,mass_measured,primary | secondary,2,1,10.1111%2Fj.1749-6632.2011.05978.x_TableS1.tsv | 10.1159%2F000346495_Table1.tsv
+Galago senegalensis,Brain_Mass,Stephan_collection,mass_measured,primary | secondary,3,1,10.1159%2F000155963_TableII.tsv | ISBN%3A0390672505_TABLE2.tsv | ISBN%3A0390672505_Tables1-6.tsv | PMID%3A9672110_Table1.tsv
+Galagoides demidoff,Brain_Mass,Stephan_collection,mass_measured,primary | secondary,3,1,10.1159%2F000155963_TableII.tsv | ISBN%3A0390672505_TABLE2.tsv | ISBN%3A0390672505_Tables1-6.tsv | PMID%3A9672110_Table1.tsv
+Gorilla gorilla,Brain_Mass,Zilles,mass_measured,primary | secondary,10,1,10.1016%2Fj.jhevol.2009.11.011_Table1.tsv | 10.1016%2Fj.jhevol.2012.12.003_Table1.tsv | 10.1111%2Fj.1749-6632.2011.05978.x_TableS1.tsv | 10.1111%2Fj.1749-6632.2011.05978.x_TableS2.tsv | 10.1159%2F000346495_Table1.tsv
+Homo sapiens,Brain_Mass,Zilles,mass_measured,primary | secondary,16,1,10.1016%2Fj.jhevol.2009.11.011_Table1.tsv | 10.1016%2Fj.jhevol.2012.12.003_Table1.tsv | 10.1111%2Fj.1749-6632.2011.05978.x_TableS1.tsv | 10.1159%2F000346495_Table1.tsv
+Hylobates lar,Brain_Mass,Zilles,mass_measured,primary | secondary,5,1,10.1016%2Fj.jhevol.2009.11.011_Table1.tsv | 10.1016%2Fj.jhevol.2012.12.003_Table1.tsv | 10.1111%2Fj.1749-6632.2011.05978.x_TableS1.tsv | 10.1111%2Fj.1749-6632.2011.05978.x_TableS2.tsv | 10.1159%2F000346495_Table1.tsv
+Hylobates muelleri,Brain_Mass,Zilles,mass_measured,primary | secondary,1,1,10.1016%2Fj.jhevol.2012.12.003_Table1.tsv | 10.1159%2F000346495_Table1.tsv
+Indri indri,Brain_Mass,Stephan_collection,mass_measured,primary | secondary,3,1,10.1159%2F000155963_TableII.tsv | ISBN%3A0390672505_TABLE2.tsv | ISBN%3A0390672505_Tables1-6.tsv | PMID%3A9672110_Table1.tsv
+Lophocebus albigena,Brain_Mass,Stephan_collection,mass_measured,primary | secondary,3,1,10.1159%2F000155963_TableIII.tsv | ISBN%3A0390672505_TABLE3.tsv | ISBN%3A0390672505_Tables1-6.tsv | PMID%3A9672110_Table1.tsv
+Lophocebus albigena,Brain_Mass,Zilles,mass_measured,primary | secondary,4,1,10.1016%2Fj.jhevol.2012.12.003_Table1.tsv | 10.1111%2Fj.1749-6632.2011.05978.x_TableS1.tsv | 10.1159%2F000346495_Table1.tsv
+Loris tardigradus,Brain_Mass,Stephan_collection,mass_measured,primary | secondary,3,1,10.1159%2F000155963_TableII.tsv | ISBN%3A0390672505_TABLE2.tsv | ISBN%3A0390672505_Tables1-6.tsv | PMID%3A9672110_Table1.tsv
+Macaca fascicularis,Brain_Mass,Zilles,mass_measured,primary | secondary,1,1,10.1016%2Fj.jhevol.2009.11.011_Table1.tsv | 10.1159%2F000346495_Table1.tsv
+Macaca mulatta,Brain_Mass,Stephan_collection,mass_measured,primary | secondary,3,1,10.1159%2F000155963_TableIII.tsv | ISBN%3A0390672505_TABLE3.tsv | ISBN%3A0390672505_Tables1-6.tsv | PMID%3A9672110_Table1.tsv
+Macaca mulatta,Brain_Mass,Zilles,mass_measured,primary | secondary,2,1,10.1111%2Fj.1749-6632.2011.05978.x_TableS1.tsv | 10.1159%2F000346495_Table1.tsv
+Microcebus murinus,Brain_Mass,Stephan_collection,mass_measured,primary | secondary,3,1,10.1159%2F000155963_TableII.tsv | ISBN%3A0390672505_TABLE2.tsv | ISBN%3A0390672505_Tables1-6.tsv | PMID%3A9672110_Table1.tsv
+Miopithecus talapoin,Brain_Mass,Stephan_collection,mass_measured,primary | secondary,3,1,10.1159%2F000155963_TableIII.tsv | ISBN%3A0390672505_TABLE3.tsv | ISBN%3A0390672505_Tables1-6.tsv | PMID%3A9672110_Table1.tsv
+Miopithecus talapoin,Brain_Mass,Zilles,mass_measured,primary | secondary,3,1,10.1111%2Fj.1749-6632.2011.05978.x_TableS1.tsv | 10.1159%2F000346495_Table1.tsv
+Nasalis larvatus,Brain_Mass,Stephan_collection,mass_measured,primary | secondary,1,1,10.1159%2F000155963_TableIII.tsv | PMID%3A9672110_Table1.tsv
+Nasalis larvatus,Brain_Mass,Zilles,mass_measured,primary | secondary,1,1,10.1111%2Fj.1749-6632.2011.05978.x_TableS1.tsv | 10.1159%2F000346495_Table1.tsv
+Otolemur crassicaudatus,Brain_Mass,Stephan_collection,mass_measured,primary | secondary,3,1,10.1159%2F000155963_TableII.tsv | ISBN%3A0390672505_TABLE2.tsv | ISBN%3A0390672505_Tables1-6.tsv | PMID%3A9672110_Table1.tsv
+Pan paniscus,Brain_Mass,Zilles,mass_measured,primary | secondary,8,1,10.1016%2Fj.jhevol.2009.11.011_Table1.tsv | 10.1016%2Fj.jhevol.2012.12.003_Table1.tsv | 10.1111%2Fj.1749-6632.2011.05978.x_TableS2.tsv | 10.1159%2F000346495_Table1.tsv
+Pan troglodytes,Brain_Mass,Stephan_collection,mass_measured,primary | secondary,3,1,10.1159%2F000155963_TableIII.tsv | ISBN%3A0390672505_TABLE3.tsv | ISBN%3A0390672505_Tables1-6.tsv | PMID%3A9672110_Table1.tsv
+Pan troglodytes,Brain_Mass,Zilles,mass_measured,primary | secondary,10,1,10.1016%2Fj.jhevol.2009.11.011_Table1.tsv | 10.1016%2Fj.jhevol.2012.12.003_Table1.tsv | 10.1111%2Fj.1749-6632.2011.05978.x_TableS1.tsv | 10.1111%2Fj.1749-6632.2011.05978.x_TableS2.tsv | 10.1159%2F000346495_Table1.tsv
+Papio anubis,Brain_Mass,Stephan_collection,mass_measured,primary | secondary,1,1,10.1159%2F000155963_TableIII.tsv | PMID%3A9672110_Table1.tsv
+Papio anubis,Brain_Mass,Zilles,mass_measured,primary | secondary,3,1,10.1111%2Fj.1749-6632.2011.05978.x_TableS1.tsv | 10.1159%2F000346495_Table1.tsv
+Piliocolobus badius,Brain_Mass,Zilles,mass_measured,primary | secondary,4,1,10.1016%2Fj.jhevol.2012.12.003_Table1.tsv | 10.1111%2Fj.1749-6632.2011.05978.x_TableS1.tsv | 10.1159%2F000346495_Table1.tsv
+Pithecia monachus,Brain_Mass,Stephan_collection,mass_measured,primary | secondary,3,1,10.1159%2F000155963_TableIII.tsv | ISBN%3A0390672505_TABLE3.tsv | ISBN%3A0390672505_Tables1-6.tsv | PMID%3A9672110_Table1.tsv
+Pongo pygmaeus,Brain_Mass,Zilles,mass_measured,primary | secondary,7,1,10.1016%2Fj.jhevol.2009.11.011_Table1.tsv | 10.1016%2Fj.jhevol.2012.12.003_Table1.tsv | 10.1111%2Fj.1749-6632.2011.05978.x_TableS2.tsv | 10.1159%2F000346495_Table1.tsv
+Saguinus midas,Brain_Mass,Stephan_collection,mass_measured,primary | secondary,3,1,10.1159%2F000155963_TableIII.tsv | ISBN%3A0390672505_TABLE3.tsv | ISBN%3A0390672505_Tables1-6.tsv | PMID%3A9672110_Table1.tsv
+Saguinus oedipus,Brain_Mass,Stephan_collection,mass_measured,primary | secondary,3,1,10.1159%2F000155963_TableIII.tsv | ISBN%3A0390672505_TABLE3.tsv | ISBN%3A0390672505_Tables1-6.tsv | PMID%3A9672110_Table1.tsv
+Tarsius sp.,Brain_Mass,Stephan_collection,mass_measured,primary | secondary,1,1,10.1159%2F000155963_TableII.tsv | PMID%3A9672110_Table1.tsv

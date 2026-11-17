@@ -1,0 +1,2375 @@
+{
+ "badges": [
+  "Dataset;#71555A"
+ ],
+ "highlightColor": null,
+ "meta": {
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+  "creator": [
+   {
+    "@type": "Person",
+    "familyName": "Dickscheid",
+    "givenName": "Timo",
+    "name": "Dickscheid, T.",
+    "sameAs": null
+   },
+   {
+    "@type": "Person",
+    "familyName": "Bludau",
+    "givenName": "Sebastian",
+    "name": "Bludau, S.",
+    "sameAs": null
+   },
+   {
+    "@type": "Person",
+    "familyName": "Paquola",
+    "givenName": "Casey",
+    "name": "Paquola, C.",
+    "sameAs": null
+   },
+   {
+    "@type": "Person",
+    "familyName": "Schiffer",
+    "givenName": "Christian",
+    "name": "Schiffer, C.",
+    "sameAs": null
+   },
+   {
+    "@type": "Person",
+    "familyName": "Upschulte",
+    "givenName": "Eric",
+    "name": "Upschulte, E.",
+    "sameAs": null
+   },
+   {
+    "@type": "Person",
+    "familyName": "Amunts",
+    "givenName": "Katrin",
+    "name": "Amunts, K.",
+    "sameAs": null
+   }
+  ],
+  "description": "This dataset contains cortical image patches of the cytoarchitectonic Area hOc4d (Cuneus), extracted from microscopic scans of the original tissue sections of the BigBrain model ([Amunts et al., 2013](https://www.science.org/doi/10.1126/science.1235381)), together with manual annotations of cortical layers and automatic segmentations of cell bodies, as well as individual and averaged reports of cortical thicknesses and densities of cells.\n\nThe histological sections were prepared as described in the original publication of the BigBrain. The cell instance segmentations have been computed using openly accessible code available on the [FZJ-INM1-BDA github](https://github.com/FZJ-INM1-BDA/celldetection) and a pre-trained model for Contour Proposal Networks (CPN; [Upschulte et al., 2022](https://doi.org/10.1016/j.media.2022.102371)).",
+  "identifier": [
+   "https://nexus.humanbrainproject.org/v0/data/minds/core/dataset/v1.0.0/8cd8506e-3a6f-406e-92c8-b52dda1dea23",
+   "https://kg.ebrains.eu/api/instances/8cd8506e-3a6f-406e-92c8-b52dda1dea23",
+   "https://doi.org/10.25493/ZXQX-JKP"
+  ],
+  "keywords": null,
+  "license": null,
+  "name": "Layer-specific distributions of segmented cells in Area hOc4d (Cuneus) of BigBrain",
+  "url": null,
+  "version": "v1"
+ },
+ "id": "8cd8506e-3a6f-406e-92c8-b52dda1dea23",
+ "type": [
+  "Dataset version"
+ ],
+ "category": "Dataset",
+ "title": "Layer-specific distributions of segmented cells in Area hOc4d (Cuneus) of BigBrain (v1)",
+ "fields": {
+  "releasedAt": {
+   "value": "2022-06-29"
+  },
+  "projects": [
+   {
+    "reference": "f06a2fd1-a9ca-42a3-b754-adaa025adb10",
+    "value": "Layer-specific distributions of segmented cells in different cytoarchitectonic regions of BigBrain iso cortex"
+   }
+  ],
+  "keywords": [
+   {
+    "value": "automatic cell segmentation"
+   }
+  ],
+  "accessibility": {
+   "value": "free access"
+  },
+  "citation": {
+   "value": "10.25493/ZXQX-JKP"
+  },
+  "custodians": [
+   {
+    "reference": "ac2d5fde-4202-47da-97c5-87f7a35a8efd",
+    "value": "Dickscheid, T."
+   }
+  ],
+  "description": {
+   "value": "This dataset contains cortical image patches of the cytoarchitectonic Area hOc4d (Cuneus), extracted from microscopic scans of the original tissue sections of the BigBrain model ([Amunts et al., 2013](https://www.science.org/doi/10.1126/science.1235381)), together with manual annotations of cortical layers and automatic segmentations of cell bodies, as well as individual and averaged reports of cortical thicknesses and densities of cells.\n\nThe histological sections were prepared as described in the original publication of the BigBrain. The cell instance segmentations have been computed using openly accessible code available on the [FZJ-INM1-BDA github](https://github.com/FZJ-INM1-BDA/celldetection) and a pre-trained model for Contour Proposal Networks (CPN; [Upschulte et al., 2022](https://doi.org/10.1016/j.media.2022.102371))."
+  },
+  "studyTargets": [
+   {
+    "reference": "fabc079b-38e9-437b-a94e-bb2032712674",
+    "value": "neuron"
+   }
+  ],
+  "technique": [
+   {
+    "reference": null,
+    "value": "deep learning"
+   },
+   {
+    "reference": "43327295-650b-47c4-bb6f-113ed70bd87a",
+    "value": "cytoarchitectonic mapping"
+   },
+   {
+    "reference": null,
+    "value": "anatomical segmentation technique"
+   }
+  ],
+  "fileRepositoryId": "67ba612c-c65e-4cfa-88dc-4fdf2a8769dc",
+  "queryBuilderText": {
+   "value": "To make programmatic use of the (meta-)data of EBRAINS, you have different options to interact with the <a href=\"https://kg.ebrains.eu\" target=\"_blank\">EBRAINS Knowledge Graph (KG)</a>:\n\n<b>KG Query Builder</b>\nWith the <a href=\"https://query.kg.ebrains.eu\" target=\"_blank\">KG Query Builder</a>, you can design your own query to retrieve metadata for this instance and those of the same type conveniently via UI without the requirement of learning a graph query language (see the <a href=\"https://docs.kg.ebrains.eu/9b511d36d7608eafc94ea43c918f16b6/tutorials.html\" target=\"_blank\">tutorial</a>). You can also save the query and use it with the REST-API and the KG Core SDKs (see below).\n\n<a href=\"https://query.kg.ebrains.eu/queries?type=https%3A%2F%2Fopenminds.om-i.org%2Ftypes%2FDatasetVersion&instanceId=8cd8506e-3a6f-406e-92c8-b52dda1dea23\" class=\"btn btn-secondary build-query\" style=\"color:#fff\" target=\"_blank\">Build a query for this instance</a>\n\n\n<b>KG REST-API</b>\nYou can use the <a href=\"https://core.kg.ebrains.eu/swagger-ui.html\" target=\"_blank\">KG REST-API</a> to access and/or manipulate metadata on the EBRAINS KG as well as to run queries saved previously in the KG Query Builder.\n\n<b>KG Core SDKs</b>\nThe <a href=\"https://github.com/HumanBrainProject/kg-core-sdks\" target=\"_blank\">KG Core SDKs</a> provide convenient ways to authenticate and make use of the functionality of the KG REST-API with your favorite programming language (currently available for Python and JavaScript/TypeScript).\n\n<b>fairgraph</b>\n<a href=\"https://fairgraph.readthedocs.io\" _target=\"blank\">fairgraph</a> is a python library which enriches the KG Core Python SDK with knowledge about the metadata structure of choice at EBRAINS called <a href=\"https://openminds.om-i.org\" _target=\"blank\">openMINDS</a> and provides additional mechanisms to further simplify the interaction and manipulation of metadata instances on the EBRAINS KG."
+  },
+  "studiedBrainRegion": [
+   {
+    "reference": null,
+    "value": "Area hOc4d (Cuneus) (Julich-Brain Atlas)"
+   },
+   {
+    "reference": "c60967b3-97b9-4894-b03e-c742daa375cb",
+    "value": "cortical layer I"
+   },
+   {
+    "reference": "ab6f34ad-80a4-4faf-a975-ab649a1caf53",
+    "value": "cortical layer II"
+   },
+   {
+    "reference": "ab66301d-1686-4f9e-ab6d-0e776d57fa12",
+    "value": "cortical layer III"
+   },
+   {
+    "reference": "ce4d09e8-cdf6-4f5f-9821-521fd9525290",
+    "value": "cortical layer IV"
+   },
+   {
+    "reference": "7d0d3ff9-e3de-4210-8965-d3eebb4e53bc",
+    "value": "cortical layer V"
+   },
+   {
+    "reference": "9812966e-1fcd-480b-ba39-da0caf090b8f",
+    "value": "cortical layer VI"
+   }
+  ],
+  "preparation": [
+   {
+    "reference": "77f7c7e7-ad5f-4001-b246-7f50981076b1",
+    "value": "ex vivo"
+   },
+   {
+    "reference": "a3c483d1-e63b-4075-b126-f81699111e94",
+    "value": "in silico"
+   }
+  ],
+  "license_info": {
+   "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode",
+   "value": "Creative Commons Attribution Non Commercial Share Alike 4.0 International"
+  },
+  "anatomicalLocationOfTissueSamples": [
+   {
+    "reference": "d54e8226-20c0-4522-a40c-ec61d36c7b27",
+    "value": "brain"
+   }
+  ],
+  "specimenBySubject": {
+   "children": [
+    {
+     "children": [
+      {
+       "children": [
+        {
+         "children": [
+          {
+           "color": "#3176e1",
+           "data": {
+            "type": {
+             "value": "Dataset.TissueSample"
+            },
+            "additionalRemarks": {
+             "value": "The brain was serially sectioned from back to front in 7404 slices. This slice represents slice number 0706."
+            },
+            "age": null,
+            "ageCategory": null,
+            "anatomicalLocation": null,
+            "attributes": [
+             {
+              "reference": null,
+              "value": "stained"
+             },
+             {
+              "reference": null,
+              "value": "fixated"
+             },
+             {
+              "reference": null,
+              "value": "mounted"
+             }
+            ],
+            "geneticStrainType": null,
+            "id": "b3aabdb4-0ac8-4a66-a8b1-4b606f7aa4fc",
+            "laterality": null,
+            "origin": {
+             "reference": "9f495e52-754d-4196-be82-5de56bd86836",
+             "value": "brain"
+            },
+            "pathology": null,
+            "serviceLinks": null,
+            "sex": [
+             {
+              "reference": "744c9204-4aea-4eff-a4f4-d79f008b355f",
+              "value": "male"
+             }
+            ],
+            "species": [
+             {
+              "reference": "97c070c6-8e1f-4ee8-9d28-18c7945921dd",
+              "value": "Homo sapiens"
+             }
+            ],
+            "strain": null,
+            "tissueSampleType": {
+             "reference": "79cc4385-acb4-467b-a45d-fdc85c26f2ee",
+             "value": "tissue slice"
+            },
+            "title": {
+             "value": "0706"
+            },
+            "weight": null
+           },
+           "key": "c08e16f0-d0f5-49a0-b923-dd2cb17e4afe",
+           "parentRelationType": "partOf",
+           "title": "Tissue sample 0706"
+          },
+          {
+           "color": "#3176e1",
+           "data": {
+            "type": {
+             "value": "Dataset.TissueSample"
+            },
+            "additionalRemarks": {
+             "value": "The brain was serially sectioned from back to front in 7404 slices. This slice represents slice number 0721."
+            },
+            "age": null,
+            "ageCategory": null,
+            "anatomicalLocation": null,
+            "attributes": [
+             {
+              "reference": null,
+              "value": "stained"
+             },
+             {
+              "reference": null,
+              "value": "mounted"
+             },
+             {
+              "reference": null,
+              "value": "fixated"
+             }
+            ],
+            "geneticStrainType": null,
+            "id": "54930b9f-7268-445f-83b5-29811eee59f0",
+            "laterality": null,
+            "origin": {
+             "reference": "9f495e52-754d-4196-be82-5de56bd86836",
+             "value": "brain"
+            },
+            "pathology": null,
+            "serviceLinks": null,
+            "sex": [
+             {
+              "reference": "744c9204-4aea-4eff-a4f4-d79f008b355f",
+              "value": "male"
+             }
+            ],
+            "species": [
+             {
+              "reference": "97c070c6-8e1f-4ee8-9d28-18c7945921dd",
+              "value": "Homo sapiens"
+             }
+            ],
+            "strain": null,
+            "tissueSampleType": {
+             "reference": "79cc4385-acb4-467b-a45d-fdc85c26f2ee",
+             "value": "tissue slice"
+            },
+            "title": {
+             "value": "0721"
+            },
+            "weight": null
+           },
+           "key": "b279f961-afce-4f14-8842-7acce76ae917",
+           "parentRelationType": "partOf",
+           "title": "Tissue sample 0721"
+          },
+          {
+           "color": "#3176e1",
+           "data": {
+            "type": {
+             "value": "Dataset.TissueSample"
+            },
+            "additionalRemarks": {
+             "value": "The brain was serially sectioned from back to front in 7404 slices. This slice represents slice number 0736."
+            },
+            "age": null,
+            "ageCategory": null,
+            "anatomicalLocation": null,
+            "attributes": [
+             {
+              "reference": null,
+              "value": "mounted"
+             },
+             {
+              "reference": null,
+              "value": "stained"
+             },
+             {
+              "reference": null,
+              "value": "fixated"
+             }
+            ],
+            "geneticStrainType": null,
+            "id": "89d096b2-d81e-44cd-8850-b346ca8dd9ee",
+            "laterality": null,
+            "origin": {
+             "reference": "9f495e52-754d-4196-be82-5de56bd86836",
+             "value": "brain"
+            },
+            "pathology": null,
+            "serviceLinks": null,
+            "sex": [
+             {
+              "reference": "744c9204-4aea-4eff-a4f4-d79f008b355f",
+              "value": "male"
+             }
+            ],
+            "species": [
+             {
+              "reference": "97c070c6-8e1f-4ee8-9d28-18c7945921dd",
+              "value": "Homo sapiens"
+             }
+            ],
+            "strain": null,
+            "tissueSampleType": {
+             "reference": "79cc4385-acb4-467b-a45d-fdc85c26f2ee",
+             "value": "tissue slice"
+            },
+            "title": {
+             "value": "0736"
+            },
+            "weight": null
+           },
+           "key": "5613e0ec-9983-4d70-aceb-fc7624302115",
+           "parentRelationType": "partOf",
+           "title": "Tissue sample 0736"
+          },
+          {
+           "color": "#3176e1",
+           "data": {
+            "type": {
+             "value": "Dataset.TissueSample"
+            },
+            "additionalRemarks": {
+             "value": "The brain was serially sectioned from back to front in 7404 slices. This slice represents slice number 0781."
+            },
+            "age": null,
+            "ageCategory": null,
+            "anatomicalLocation": null,
+            "attributes": [
+             {
+              "reference": null,
+              "value": "fixated"
+             },
+             {
+              "reference": null,
+              "value": "stained"
+             },
+             {
+              "reference": null,
+              "value": "mounted"
+             }
+            ],
+            "geneticStrainType": null,
+            "id": "fd34b5f2-80e6-4e0d-90c6-2bbeaa016de6",
+            "laterality": null,
+            "origin": {
+             "reference": "9f495e52-754d-4196-be82-5de56bd86836",
+             "value": "brain"
+            },
+            "pathology": null,
+            "serviceLinks": null,
+            "sex": [
+             {
+              "reference": "744c9204-4aea-4eff-a4f4-d79f008b355f",
+              "value": "male"
+             }
+            ],
+            "species": [
+             {
+              "reference": "97c070c6-8e1f-4ee8-9d28-18c7945921dd",
+              "value": "Homo sapiens"
+             }
+            ],
+            "strain": null,
+            "tissueSampleType": {
+             "reference": "79cc4385-acb4-467b-a45d-fdc85c26f2ee",
+             "value": "tissue slice"
+            },
+            "title": {
+             "value": "0781"
+            },
+            "weight": null
+           },
+           "key": "13389dd1-8b3b-4381-89b8-0e6fd96d89ad",
+           "parentRelationType": "partOf",
+           "title": "Tissue sample 0781"
+          },
+          {
+           "color": "#3176e1",
+           "data": {
+            "type": {
+             "value": "Dataset.TissueSample"
+            },
+            "additionalRemarks": {
+             "value": "The brain was serially sectioned from back to front in 7404 slices. This slice represents slice number 0826."
+            },
+            "age": null,
+            "ageCategory": null,
+            "anatomicalLocation": null,
+            "attributes": [
+             {
+              "reference": null,
+              "value": "stained"
+             },
+             {
+              "reference": null,
+              "value": "mounted"
+             },
+             {
+              "reference": null,
+              "value": "fixated"
+             }
+            ],
+            "geneticStrainType": null,
+            "id": "37ce4ca6-176d-4151-9561-f8474987e599",
+            "laterality": null,
+            "origin": {
+             "reference": "9f495e52-754d-4196-be82-5de56bd86836",
+             "value": "brain"
+            },
+            "pathology": null,
+            "serviceLinks": null,
+            "sex": [
+             {
+              "reference": "744c9204-4aea-4eff-a4f4-d79f008b355f",
+              "value": "male"
+             }
+            ],
+            "species": [
+             {
+              "reference": "97c070c6-8e1f-4ee8-9d28-18c7945921dd",
+              "value": "Homo sapiens"
+             }
+            ],
+            "strain": null,
+            "tissueSampleType": {
+             "reference": "79cc4385-acb4-467b-a45d-fdc85c26f2ee",
+             "value": "tissue slice"
+            },
+            "title": {
+             "value": "0826"
+            },
+            "weight": null
+           },
+           "key": "710fb916-9406-4db3-9ad0-0a063f57e866",
+           "parentRelationType": "partOf",
+           "title": "Tissue sample 0826"
+          },
+          {
+           "color": "#3176e1",
+           "data": {
+            "type": {
+             "value": "Dataset.TissueSample"
+            },
+            "additionalRemarks": {
+             "value": "The brain was serially sectioned from back to front in 7404 slices. This slice represents slice number 0856."
+            },
+            "age": null,
+            "ageCategory": null,
+            "anatomicalLocation": null,
+            "attributes": [
+             {
+              "reference": null,
+              "value": "mounted"
+             },
+             {
+              "reference": null,
+              "value": "stained"
+             },
+             {
+              "reference": null,
+              "value": "fixated"
+             }
+            ],
+            "geneticStrainType": null,
+            "id": "9ac1f209-6dea-4faa-a542-130f64a2f80f",
+            "laterality": null,
+            "origin": {
+             "reference": "9f495e52-754d-4196-be82-5de56bd86836",
+             "value": "brain"
+            },
+            "pathology": null,
+            "serviceLinks": null,
+            "sex": [
+             {
+              "reference": "744c9204-4aea-4eff-a4f4-d79f008b355f",
+              "value": "male"
+             }
+            ],
+            "species": [
+             {
+              "reference": "97c070c6-8e1f-4ee8-9d28-18c7945921dd",
+              "value": "Homo sapiens"
+             }
+            ],
+            "strain": null,
+            "tissueSampleType": {
+             "reference": "79cc4385-acb4-467b-a45d-fdc85c26f2ee",
+             "value": "tissue slice"
+            },
+            "title": {
+             "value": "0856"
+            },
+            "weight": null
+           },
+           "key": "9c84173c-1315-4860-96df-3967f8db9450",
+           "parentRelationType": "partOf",
+           "title": "Tissue sample 0856"
+          },
+          {
+           "color": "#3176e1",
+           "data": {
+            "type": {
+             "value": "Dataset.TissueSample"
+            },
+            "additionalRemarks": {
+             "value": "The brain was serially sectioned from back to front in 7404 slices. This slice represents slice number 0961."
+            },
+            "age": null,
+            "ageCategory": null,
+            "anatomicalLocation": null,
+            "attributes": [
+             {
+              "reference": null,
+              "value": "mounted"
+             },
+             {
+              "reference": null,
+              "value": "stained"
+             },
+             {
+              "reference": null,
+              "value": "fixated"
+             }
+            ],
+            "geneticStrainType": null,
+            "id": "2465e66c-aae0-4557-961a-055374d7bdff",
+            "laterality": null,
+            "origin": {
+             "reference": "9f495e52-754d-4196-be82-5de56bd86836",
+             "value": "brain"
+            },
+            "pathology": null,
+            "serviceLinks": null,
+            "sex": [
+             {
+              "reference": "744c9204-4aea-4eff-a4f4-d79f008b355f",
+              "value": "male"
+             }
+            ],
+            "species": [
+             {
+              "reference": "97c070c6-8e1f-4ee8-9d28-18c7945921dd",
+              "value": "Homo sapiens"
+             }
+            ],
+            "strain": null,
+            "tissueSampleType": {
+             "reference": "79cc4385-acb4-467b-a45d-fdc85c26f2ee",
+             "value": "tissue slice"
+            },
+            "title": {
+             "value": "0961"
+            },
+            "weight": null
+           },
+           "key": "ca2e8491-c198-4b32-9516-1888df97d5a6",
+           "parentRelationType": "partOf",
+           "title": "Tissue sample 0961"
+          },
+          {
+           "color": "#3176e1",
+           "data": {
+            "type": {
+             "value": "Dataset.TissueSample"
+            },
+            "additionalRemarks": {
+             "value": "The brain was serially sectioned from back to front in 7404 slices. This slice represents slice number 1006."
+            },
+            "age": null,
+            "ageCategory": null,
+            "anatomicalLocation": null,
+            "attributes": [
+             {
+              "reference": null,
+              "value": "fixated"
+             },
+             {
+              "reference": null,
+              "value": "mounted"
+             },
+             {
+              "reference": null,
+              "value": "stained"
+             }
+            ],
+            "geneticStrainType": null,
+            "id": "725378ab-e17f-40cf-90e0-0de88a37b461",
+            "laterality": null,
+            "origin": {
+             "reference": "9f495e52-754d-4196-be82-5de56bd86836",
+             "value": "brain"
+            },
+            "pathology": null,
+            "serviceLinks": null,
+            "sex": [
+             {
+              "reference": "744c9204-4aea-4eff-a4f4-d79f008b355f",
+              "value": "male"
+             }
+            ],
+            "species": [
+             {
+              "reference": "97c070c6-8e1f-4ee8-9d28-18c7945921dd",
+              "value": "Homo sapiens"
+             }
+            ],
+            "strain": null,
+            "tissueSampleType": {
+             "reference": "79cc4385-acb4-467b-a45d-fdc85c26f2ee",
+             "value": "tissue slice"
+            },
+            "title": {
+             "value": "1006"
+            },
+            "weight": null
+           },
+           "key": "709d146d-c874-4a4c-8f93-01093fe628e9",
+           "parentRelationType": "partOf",
+           "title": "Tissue sample 1006"
+          }
+         ],
+         "color": "#78b5b5",
+         "data": {
+          "type": {
+           "value": "Dataset.TissueSampleCollection"
+          },
+          "additionalRemarks": {
+           "value": "The brain was fixed in formalin, MR-imaged, embedded in paraffin, and serially cut with a microtome into 20\u00b5m thick sections. Silver staining for cell bodies was performed using a modified Merker method ([Merker, 1983](https://doi.org/10.1016/0165-0270(83)90086-9))."
+          },
+          "age": null,
+          "ageCategory": null,
+          "anatomicalLocation": null,
+          "attributes": [
+           {
+            "reference": null,
+            "value": "stained"
+           },
+           {
+            "reference": null,
+            "value": "mounted"
+           },
+           {
+            "reference": null,
+            "value": "fixated"
+           }
+          ],
+          "geneticStrainType": null,
+          "id": "635e18c9-8e0b-4ec4-8b30-7a425fa979ff",
+          "laterality": null,
+          "origin": {
+           "reference": "9f495e52-754d-4196-be82-5de56bd86836",
+           "value": "brain"
+          },
+          "pathology": null,
+          "serviceLinks": null,
+          "sex": [
+           {
+            "reference": "744c9204-4aea-4eff-a4f4-d79f008b355f",
+            "value": "male"
+           }
+          ],
+          "species": [
+           {
+            "reference": "97c070c6-8e1f-4ee8-9d28-18c7945921dd",
+            "value": "Homo sapiens"
+           }
+          ],
+          "strain": null,
+          "tissueSampleType": {
+           "reference": "79cc4385-acb4-467b-a45d-fdc85c26f2ee",
+           "value": "tissue slice"
+          },
+          "tissueSamples": {
+           "value": "total: 7404, used in this dataset: 8"
+          },
+          "title": {
+           "value": "brain-20"
+          },
+          "weight": null
+         },
+         "key": "a629f057-4373-4a4a-aa5a-5719216849d2",
+         "parentRelationType": "descendentFrom",
+         "title": "Tissue sample collection brain-20"
+        }
+       ],
+       "color": "#3176e1",
+       "data": {
+        "type": {
+         "value": "Dataset.TissueSample"
+        },
+        "additionalRemarks": {
+         "value": "The stated tissue sample weight was measured before fixation (fresh brain weight). The stated tissue sample age refers to the time window in which the autopsy happened ('age' of the brain before fixation)."
+        },
+        "age": {
+         "value": "8 - 36 hour"
+        },
+        "ageCategory": null,
+        "anatomicalLocation": [
+         {
+          "reference": "d54e8226-20c0-4522-a40c-ec61d36c7b27",
+          "value": "brain"
+         }
+        ],
+        "attributes": [
+         {
+          "reference": null,
+          "value": "untreated"
+         }
+        ],
+        "geneticStrainType": null,
+        "id": "337f294f-fb2a-4554-8329-6c784775d091",
+        "laterality": null,
+        "origin": {
+         "reference": "9f495e52-754d-4196-be82-5de56bd86836",
+         "value": "brain"
+        },
+        "pathology": null,
+        "serviceLinks": null,
+        "sex": [
+         {
+          "reference": "744c9204-4aea-4eff-a4f4-d79f008b355f",
+          "value": "male"
+         }
+        ],
+        "species": [
+         {
+          "reference": "97c070c6-8e1f-4ee8-9d28-18c7945921dd",
+          "value": "Homo sapiens"
+         }
+        ],
+        "strain": null,
+        "tissueSampleType": {
+         "reference": null,
+         "value": "whole brain"
+        },
+        "title": {
+         "value": "B20"
+        },
+        "weight": {
+         "value": "1392 gram"
+        }
+       },
+       "key": "bb617cae-ae20-4d66-9611-c224ce4f165f",
+       "parentRelationType": "descendentFrom",
+       "title": "Tissue sample B20"
+      }
+     ],
+     "color": "#ffbe00",
+     "data": {
+      "type": {
+       "value": "Dataset.Subject"
+      },
+      "additionalRemarks": null,
+      "age": {
+       "value": "65 year"
+      },
+      "ageCategory": [
+       {
+        "reference": "ee1b45fc-6376-4af8-becc-b11fae811f89",
+        "value": "late adult"
+       }
+      ],
+      "attributes": [
+       {
+        "reference": "aa7e62c5-5f03-4015-b66e-e9c0e04e2303",
+        "value": "deceased"
+       }
+      ],
+      "geneticStrainType": null,
+      "handedness": null,
+      "id": "b76ec229-3819-4f1c-aa87-016be36bd9ed",
+      "otherPublications": [
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "d07f9305-1e75-4548-a348-b155fb323d31",
+        "value": "10.1126/science.1235381"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "13e6ec48-4fec-4e9a-9bcf-45036d3c8ef9",
+        "value": "10.1371/journal.pbio.3000678"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "91f96913-11ec-45e3-91d1-4e016c72fe7e",
+        "value": "10.17605/OSF.IO/X542S"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "26d25994-634c-40af-b88f-2a36e8e1d508",
+        "value": "10.25493/18ED-DS3"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "412a639b-63a6-448d-a387-272488458501",
+        "value": "10.25493/18S5-89W"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "0f150118-cd28-4929-a3b1-1ea8b7b6c3d2",
+        "value": "10.25493/1FHW-7BW"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "c09b4ea5-2f36-46ff-b65c-16871c6ec1c8",
+        "value": "10.25493/1S98-8RF"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "1847a851-ffc5-4524-8e30-6042ae192b40",
+        "value": "10.25493/1WG8-WBE"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "1fdbca83-520c-4172-b8b7-f54a33d97bd4",
+        "value": "10.25493/1ZJF-12G"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "d7270c0b-9294-4cf9-addf-052be3a62da7",
+        "value": "10.25493/2RAV-WSZ"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "ea8fb74b-0ecc-4801-9522-b4c2cb2a2a5c",
+        "value": "10.25493/2V62-TTG"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "cf7a4c38-7c91-4d4f-b430-b6217ca42314",
+        "value": "10.25493/33MJ-0RM"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "a420c0f0-a0ca-48d3-bd19-379546bf2c42",
+        "value": "10.25493/34GR-JZW"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "20c510ae-938a-4ef5-bcc6-d6724e2f6d01",
+        "value": "10.25493/35K1-BTX"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "298e8a4e-33ab-4c01-bd7f-9f9174a48604",
+        "value": "10.25493/36YT-G89"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "45cd8c3e-0772-45c8-8cab-d99fd029a56c",
+        "value": "10.25493/37FB-5CA"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "87c6dea7-bdf7-4049-9975-6a9925df393f",
+        "value": "10.25493/3GSV-T4A"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "4ed77f39-6bad-4ffe-9042-c4210f0969d0",
+        "value": "10.25493/3SM6-HGM"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "57ef9217-56dc-4a19-86e9-b28e6557ac26",
+        "value": "10.25493/3XNC-JWU"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "d3b25fad-baeb-44c0-952e-60c256eb9e34",
+        "value": "10.25493/4027-K9Y"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "ab191c17-8cd8-4622-aaac-eee11b2fa670",
+        "value": "10.25493/46HK-XMM"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "319f7185-736e-432f-a783-d0f5bb2f533b",
+        "value": "10.25493/4962-YCM"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "eb37f56c-769c-4596-b5c4-a6dafd285a77",
+        "value": "10.25493/4N71-6SX"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "998b27f3-f815-4a87-8e8e-9341a6205189",
+        "value": "10.25493/4NC6-YX5"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "f7ec0574-6c0e-4ce6-a487-41f666c7b50d",
+        "value": "10.25493/4ZAW-SFU"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "a2b407d3-e8be-444f-964f-695d46672fa0",
+        "value": "10.25493/4ZCF-3FF"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "b8a4c4ce-4a28-4ae8-893e-0694dd46d41b",
+        "value": "10.25493/594D-830"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "95fb3fee-b4b6-4eda-97db-76c2c07fac0c",
+        "value": "10.25493/5BJY-QRK"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "d7a071d6-01d2-4642-8c6f-5b678abd601a",
+        "value": "10.25493/5DC3-K2A"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "7dae93bd-cea1-44f6-ae5b-1992bb15a732",
+        "value": "10.25493/5PSE-1MV"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "0e9d3573-bf28-4ce8-9462-d69755c72a73",
+        "value": "10.25493/6495-07U"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "6891d991-9cf6-45bd-923b-755d84137748",
+        "value": "10.25493/6G50-YFU"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "5789e9e3-0fb5-4452-859c-6fe5c5ea63e1",
+        "value": "10.25493/6M2H-RFU"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "279c7da6-28d8-4782-850b-2284e694e604",
+        "value": "10.25493/6M5A-JJ0"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "df2c8de3-370c-4fc0-b822-c7cf7268b4bc",
+        "value": "10.25493/6RNA-WG4"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "996db6bf-66e3-4679-bf87-77418edf135e",
+        "value": "10.25493/7QE6-PBE"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "24ff7ea7-064c-490c-8dfb-31da6c7a68ab",
+        "value": "10.25493/7S00-ARE"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "958b848a-6d33-4f3c-b480-a5f5b0e8329b",
+        "value": "10.25493/7ZYC-DBV"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "e89ffce2-1f17-44b3-8c5f-53906d691a8e",
+        "value": "10.25493/89ZF-PF7"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "fb438a0a-6086-4507-97c6-fbc23e4afba0",
+        "value": "10.25493/8B19-6XY"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "02b56db7-a083-44f3-91dc-72bb67f3fd0a",
+        "value": "10.25493/8MKD-D77"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "c7647341-25de-4a1f-9302-fbe8932deda0",
+        "value": "10.25493/8WSN-JQ8"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "cd8e723a-b05d-4e50-aa6b-5e58c6ef6321",
+        "value": "10.25493/97G0-08A"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "2039bce9-6096-496b-b6c6-9dc6bfaa0e0e",
+        "value": "10.25493/A7BC-W92"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "2108bb85-9c01-41e9-b1e4-6b12e4191a71",
+        "value": "10.25493/ABKW-YFB"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "5ed180d5-6b7e-4dda-98e7-6815af9c88d4",
+        "value": "10.25493/AEGJ-FDC"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "4ef7f8e8-2b48-4b48-a8ab-9488b6321b83",
+        "value": "10.25493/AJQN-PTS"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "c8e23d85-909c-4efc-a2f4-fb3ed2a5c01f",
+        "value": "10.25493/B3ZK-JY4"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "5e25d3a7-79d7-4a68-bb26-f54ec7c6cba7",
+        "value": "10.25493/B5FJ-RP9"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "1a9ce543-b919-4e8c-9ca3-b53b8f9451f9",
+        "value": "10.25493/B65P-57X"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "72bf4008-78a6-41e0-9337-61ec53c39c27",
+        "value": "10.25493/B87N-ZDX"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "49b5857e-7498-4fe9-8dbe-1cc0fa153091",
+        "value": "10.25493/B9M6-5G8"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "74e01f78-62b8-4b22-9e63-da5ea7235325",
+        "value": "10.25493/BB0T-Z8D"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "60bd6360-f787-4cb6-abcf-cfb823c85767",
+        "value": "10.25493/BCV6-XK3"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "f1c3a229-ee3b-4c65-90c3-62cd317b77bf",
+        "value": "10.25493/BJR2-KYK"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "9ac12654-7886-4ae1-93b9-21d7c3aecf57",
+        "value": "10.25493/BMNK-B8F"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "0d348a38-63f5-4845-82ea-bb23b7c01725",
+        "value": "10.25493/BPRA-AZV"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "3a8a3d6a-2ddd-4d8d-bda4-650715761f47",
+        "value": "10.25493/BY38-TBW"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "be3e1a10-437f-4b16-ad08-f6f45e4d5953",
+        "value": "10.25493/C5RJ-DX2"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "7442b255-7463-460f-9869-102e693280f0",
+        "value": "10.25493/CEYF-5QT"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "630a7e78-8879-4207-8409-a2a75ffd95f8",
+        "value": "10.25493/CKQW-PG4"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "c681405f-7ecd-4cf7-b1df-1c355907777a",
+        "value": "10.25493/CT6W-GBH"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "8c44a251-69b9-48cc-87bc-ae8080b9e1a7",
+        "value": "10.25493/D41S-AG7"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "dae2408a-95d0-4f63-ab37-f0756dff4720",
+        "value": "10.25493/DA0M-GM"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "4b0bc981-b50d-46d0-8ff6-51f39b9c5f91",
+        "value": "10.25493/DBZG-QZ"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "696d6062-3b86-498f-9ca6-e4d67b433396",
+        "value": "10.25493/DGEZ-Q93"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "1c5e78f7-a5df-4a64-bd7b-77cbb7584d30",
+        "value": "10.25493/DGGC-X7Q"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "c91d1ce7-5595-4aed-84f6-ef2a5c66d51a",
+        "value": "10.25493/DPYN-DG6"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "1e89016e-a6f8-42e4-ac5e-9c3a01dd3248",
+        "value": "10.25493/DW5A-YMD"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "c3e2b016-dfa2-48f4-b89a-33e0d9cb22a3",
+        "value": "10.25493/E00T-W2F"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "f25c6728-2b53-4304-aa36-6165bbca3971",
+        "value": "10.25493/E1FY-2C4"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "a04a3178-c247-4a55-bb4c-eb985e1c1e8a",
+        "value": "10.25493/EACY-5N4"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "483837bb-73a5-46cc-b9fe-b59a3da420bf",
+        "value": "10.25493/EH7J-NP0"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "cd37444b-45d8-477d-9f10-92dcf1d4073c",
+        "value": "10.25493/EJBW-G5D"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "55a09d5c-a2bf-4c7b-a2d1-52bb8a39306b",
+        "value": "10.25493/EK0H-B9W"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "f2cd6b97-e42d-41af-a01b-5caf2d692e28",
+        "value": "10.25493/EVPC-MVH"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "7ef95e2f-860f-4411-abfe-1b1d18458e3d",
+        "value": "10.25493/EVVV-TCJ"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "31c93311-4f99-4cb2-902b-957cba0d07e1",
+        "value": "10.25493/F4H0-Z13"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "16a71c7c-8940-4fc8-b2a7-d667933c2f2a",
+        "value": "10.25493/F781-V5J"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "32afecaf-7a48-4056-94e0-8edfaa4838aa",
+        "value": "10.25493/F9Y0-1D0"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "f425afb1-5eb5-4f07-8782-dac156efc377",
+        "value": "10.25493/FEDE-Y69"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "bf11f1b2-4acc-4b87-95e9-496e40f9bbe4",
+        "value": "10.25493/FJX8-JMT"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "088a8f2d-1a54-403d-abd3-d805a9d797f2",
+        "value": "10.25493/FK7Y-SMZ"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "56022472-cfc5-47dc-8bd5-c58839b335cd",
+        "value": "10.25493/FMDD-SMU"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "3e97a739-267a-47f6-94f8-f0a9a0832c3c",
+        "value": "10.25493/FP6M-FRP"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "63093617-9b72-45f5-88e6-f648ad05ae79",
+        "value": "10.25493/FVBY-84C"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "2c0951c1-62da-443e-90b7-33baa7b19800",
+        "value": "10.25493/G1RC-V96"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "c04fa2a3-fb1e-486a-9069-92081b85b210",
+        "value": "10.25493/GATJ-TQ0"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "29c712b6-b6e4-4899-b294-2470f22475c0",
+        "value": "10.25493/GQ0N-28B"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "e91315a9-4ad4-4f4f-b463-28c30cd3e442",
+        "value": "10.25493/GQPV-YAB"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "762b8ed5-8467-4bd6-ac3c-0aa0e1815cd3",
+        "value": "10.25493/GX3R-2ET"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "70b450e1-a96b-4a00-8442-e3628970d73b",
+        "value": "10.25493/H0NZ-BJ7"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "cff64b2c-b8f1-4383-bd39-2808acce8cc6",
+        "value": "10.25493/HNZP-56M"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "80177f7b-02e4-41f3-ad48-15b4409ebf6b",
+        "value": "10.25493/J4HZ-14X"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "68ef7f39-8c26-452b-ac73-8e45469355c8",
+        "value": "10.25493/JFQA-6EV"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "820056df-5713-4c36-ab98-648d060d9235",
+        "value": "10.25493/JMBE-YJB"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "d9814dcb-1d50-4d95-8014-77dba2ee7d73",
+        "value": "10.25493/JMCR-ZNQ"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "bef07b17-0ade-4850-8887-46ff04406de0",
+        "value": "10.25493/JN40-NCG"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "cb9af633-dce7-495b-90b2-b4427f06408d",
+        "value": "10.25493/JRKY-264"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "73c1fa55-d099-4854-8cda-c9a403c6080a",
+        "value": "10.25493/JWTF-PAB"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "dd2858a9-6565-4a27-b8fa-34776cb51a12",
+        "value": "10.25493/JYA8-BDU"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "9ac6674e-2d6f-4831-ab25-8af17acca232",
+        "value": "10.25493/K0X6-KKB"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "7145f9d1-8ee3-4cdf-b407-ec7555844c68",
+        "value": "10.25493/K54A-YC9"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "d71d369a-c401-4d7e-b97a-3fb78eed06c5",
+        "value": "10.25493/K8Q7-CG9"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "71c992e1-e4d9-4acf-9d19-2e6e855199a6",
+        "value": "10.25493/KDER-D45"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "4de12895-708a-49fa-acef-7e8376836e65",
+        "value": "10.25493/KGJ3-XC6"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "2416cc4c-be1e-4b87-be2e-caf13abd453b",
+        "value": "10.25493/KGK5-VKP"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "0e7d4830-9125-490b-bdf6-1840a5a99933",
+        "value": "10.25493/KM37-91K"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "51e138c5-3c44-4910-a0e6-f7ea6065d787",
+        "value": "10.25493/KN1A-YX4"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "f1fe19e8-99bd-44bc-9616-a52850680777",
+        "value": "10.25493/KNSN-XB4"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "7ab22b35-e327-4572-92f8-73c37863eea9",
+        "value": "10.25493/KSY8-H3F"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "45f2e012-3740-47ee-9fe5-9199358c9f5a",
+        "value": "10.25493/M3P4-F60"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "28c4a9a7-c1b8-4f41-88c7-d33e9b5c59f4",
+        "value": "10.25493/MFHQ-Q3A"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "bfa7f344-016e-48da-bc34-9cd2f7f19148",
+        "value": "10.25493/MPV4-8G"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "23dd10a9-95db-4ff3-8dd7-b0f89c49b270",
+        "value": "10.25493/MS4Q-5X9"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "45689ca2-df48-4260-a908-56a9d4eb344e",
+        "value": "10.25493/N127-HWS"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "5a4e5a04-5d10-4f88-ac01-30409e3d67e0",
+        "value": "10.25493/N8F7-BEG"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "7b42d372-117e-4ea3-96d8-8e0b3d067ea5",
+        "value": "10.25493/N8GG-QPV"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "db3c28f2-432c-442a-a314-4dec7e5b2ed6",
+        "value": "10.25493/NJD4-CM4"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "83b5e265-83b0-482b-aa5f-e2ddd9abd755",
+        "value": "10.25493/P3QK-2V6"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "f746514d-b79a-48e2-9c07-39f7c62459cf",
+        "value": "10.25493/PH0C-EKX"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "b9bd793d-6e26-4a41-b112-b9b528f57b87",
+        "value": "10.25493/PRBE-DG"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "3afb8c40-c290-4d43-bbce-949a708ed388",
+        "value": "10.25493/PV5Q-SFR"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "a0b8048a-e156-4ff3-ba57-9188df0c649c",
+        "value": "10.25493/PVEY-DPX"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "9771cd50-a957-4c77-9aee-c343aa90dae5",
+        "value": "10.25493/Q3PA-5GB"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "6395c04d-e36d-4b31-986a-3f502f9124c3",
+        "value": "10.25493/Q65B-FMZ"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "a61a3323-1188-46c3-91cc-6bb197df3067",
+        "value": "10.25493/QC0G-XJK"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "4302f412-e000-4aa9-9d57-50a7d0c40c4c",
+        "value": "10.25493/QNKF-KN4"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "4fc47c12-5eba-4716-8dc7-95913dcbfbcc",
+        "value": "10.25493/QS00-PJ9"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "692ae4fa-8cd5-4714-90f5-9ad91ba5d792",
+        "value": "10.25493/R8EH-E9R"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "87c78deb-3cc3-45a0-b6e4-394f646b03fd",
+        "value": "10.25493/RHVJ-F9B"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "6290eaf9-69df-4c44-883a-678c0395b187",
+        "value": "10.25493/RNQP-F5U"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "99fed086-f2f8-4c3b-858e-a2e3e3d8e791",
+        "value": "10.25493/RQKR-WE4"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "abab654b-5fdc-4989-a2d9-4b2941064b11",
+        "value": "10.25493/S1GS-D6R"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "1a6febc4-4534-4267-8ee3-f24a69f49a5a",
+        "value": "10.25493/S9P0-QPT"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "57ace487-2266-43a2-ad04-597ede6400d8",
+        "value": "10.25493/SGGR-3GU"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "5b92550d-46fd-420a-b0a2-16a0f7c16502",
+        "value": "10.25493/SHJB-NP2"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "c23187ac-cacf-4093-b6b2-d3195ab6d882",
+        "value": "10.25493/T1C3-Z2B"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "96e80a3a-180d-4452-a985-5d08add076fa",
+        "value": "10.25493/T4C4-SY8"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "57dd1e54-5ee2-4fa0-9fc4-6b31cdc956a2",
+        "value": "10.25493/T9BS-516"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "c87e6845-0516-4b68-a5bf-94f3b3945cef",
+        "value": "10.25493/TA54-1N8"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "dbd06025-e811-489e-8dc7-b2b4c2960853",
+        "value": "10.25493/THE9-VQU"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "3bb68a67-33cc-4f9b-be89-df6bdb52f065",
+        "value": "10.25493/TKJG-9D5"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "cb40a501-b155-4c2f-8df3-0ee7c5f1ed00",
+        "value": "10.25493/TKTP-7NR"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "d9063c7f-dfaf-4c55-a359-72b6f2e02bc1",
+        "value": "10.25493/TMFG-6FQ"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "f31c7b7b-c645-428a-a2df-2b1ed51af318",
+        "value": "10.25493/TWNR-351"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "b4a392c9-f07d-4c36-9f3e-aca800ec1c46",
+        "value": "10.25493/TX16-DWP"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "7169358d-46ba-4ef7-8ddc-065418a910a7",
+        "value": "10.25493/TZ99-8JX"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "d60ea31c-fa6e-46dc-9122-1996bbbc9712",
+        "value": "10.25493/V9PK-H82"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "cdd4e615-dfbf-4109-8042-8a20e6bcbf2e",
+        "value": "10.25493/V9S8-KVV"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "2f777ee0-355a-40f1-8100-e4b99ef105ce",
+        "value": "10.25493/VAYZ-07B"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "04624498-d7e6-4d63-ae45-e98c017e9634",
+        "value": "10.25493/VGY4-SZS"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "a4fcf64f-a4da-49b6-a5ac-0b2e52e0c9c5",
+        "value": "10.25493/VN48-P3C"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "d3c4e8f8-d8b7-4cc8-8dfb-744dc41473f3",
+        "value": "10.25493/VP8C-5F1"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "798992f1-ce6d-43f7-a410-e0dc574af7b0",
+        "value": "10.25493/VQYX-1HS"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "ca80fc61-48a8-47bb-acf5-658044d1a426",
+        "value": "10.25493/W2D1-DJF"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "35b22d8b-997a-45c0-8ebc-99d589db5a71",
+        "value": "10.25493/WJQ5-HWC"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "e8ea1fbf-6f31-4e0a-8ebf-8375ce08b9d7",
+        "value": "10.25493/WTM8-6QU"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "aaca15b8-db32-4ec5-917e-ac1ad49c908b",
+        "value": "10.25493/WWD5-2JX"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "643fca49-cda0-4bb0-af14-020ba5617b10",
+        "value": "10.25493/WZSZ-V7Y"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "7953505c-095f-43fa-a1b1-53fd65f4bfbf",
+        "value": "10.25493/X0M7-49M"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "2fd3a847-9246-4f73-a85f-7811d40d7117",
+        "value": "10.25493/X4S6-E64"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "4b21bce3-c564-4d50-b9c0-ffc7d4dca179",
+        "value": "10.25493/XXK2-MEE"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "d2292a19-6af1-4d99-b5a8-0319a10d23b9",
+        "value": "10.25493/XYA4-9TZ"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "fd95cad7-8beb-4abb-bf5d-1cd4bdefa5e5",
+        "value": "10.25493/Y1P3-YYN"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "43ece479-fcea-4f96-86e9-b197cea4edb6",
+        "value": "10.25493/Y9WF-Z5V"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "94681fd3-d98c-4806-bad0-659fe39b27ce",
+        "value": "10.25493/YC6P-NBU"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "42921577-c977-4562-85c6-a56f2ee87386",
+        "value": "10.25493/YFG8-3R7"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "f181072a-ac2e-4dfd-a2b0-a26aee48459d",
+        "value": "10.25493/YH0A-SF6"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "ea4ce6db-9adf-4080-9d6d-c3d455673feb",
+        "value": "10.25493/YM3R-9SP"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "ff9fccd0-41bd-4236-9236-8b70f7a6ba48",
+        "value": "10.25493/YS8Z-S68"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "b2f37528-0d3d-4f55-90f4-4073086e4564",
+        "value": "10.25493/YVWP-9AQ"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "5079e40f-7274-4348-9939-2a852644d230",
+        "value": "10.25493/Z6GM-61X"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "78801754-16c1-4df2-9b2e-1b10c28a10c2",
+        "value": "10.25493/Z6NG-4MU"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "85e4aaad-73f8-4edd-938c-6ffeea4ee0a0",
+        "value": "10.25493/ZAZE-87K"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "4fde95a9-e5ca-4630-abae-d0cc15d06e89",
+        "value": "10.25493/ZR6F-V8P"
+       },
+       {
+        "context": {
+         "tab": "Specimens",
+         "targetId": "b76ec229-3819-4f1c-aa87-016be36bd9ed"
+        },
+        "reference": "8cd8506e-3a6f-406e-92c8-b52dda1dea23",
+        "value": "10.25493/ZXQX-JKP"
+       }
+      ],
+      "pathology": null,
+      "serviceLinks": null,
+      "sex": [
+       {
+        "reference": "744c9204-4aea-4eff-a4f4-d79f008b355f",
+        "value": "male"
+       }
+      ],
+      "species": [
+       {
+        "reference": "97c070c6-8e1f-4ee8-9d28-18c7945921dd",
+        "value": "Homo sapiens"
+       }
+      ],
+      "strain": null,
+      "title": {
+       "value": "sub-20"
+      },
+      "weight": null
+     },
+     "key": "533084d9-a680-4281-9104-4e8e74afd3cf",
+     "parentRelationType": null,
+     "title": "Subject sub-20"
+    }
+   ],
+   "color": "#e3dcdc",
+   "data": {
+    "geneticStrainTypes": null,
+    "numberOfSubjectGroups": null,
+    "numberOfSubjects": {
+     "value": "1"
+    },
+    "numberOfTissueSampleCollections": {
+     "value": "1"
+    },
+    "numberOfTissueSamples": {
+     "value": "9"
+    },
+    "pathology": null,
+    "sex": [
+     {
+      "count": [
+       "1 subject",
+       "9 tissue samples",
+       "1 tissue sample collection"
+      ],
+      "reference": "744c9204-4aea-4eff-a4f4-d79f008b355f",
+      "value": "male"
+     }
+    ],
+    "species": [
+     {
+      "count": [
+       "1 subject",
+       "9 tissue samples",
+       "1 tissue sample collection"
+      ],
+      "reference": "97c070c6-8e1f-4ee8-9d28-18c7945921dd",
+      "value": "Homo sapiens"
+     }
+    ],
+    "strains": null,
+    "title": null,
+    "type": {
+     "value": "Dataset.SpecimenOverview"
+    }
+   },
+   "key": "root",
+   "legend": {
+    "#ffbe00": "Subject",
+    "#3176e1": "Tissue sample",
+    "#78b5b5": "Tissue sample collection"
+   },
+   "parentRelationType": null,
+   "title": "Specimen"
+  },
+  "experimentalApproach": [
+   {
+    "reference": "b761fae4-8608-4de2-88b5-ed53dfdf826e",
+    "value": "cell morphology"
+   },
+   {
+    "reference": "5216ce91-9097-41d1-a87b-3d386dda18c5",
+    "value": "informatics"
+   },
+   {
+    "reference": "efa9154a-1bd3-49ed-8c96-e96744a6ba55",
+    "value": "anatomy"
+   },
+   {
+    "reference": "4ccfa2b8-fe75-4a17-98b7-e01b922c8f03",
+    "value": "histology"
+   },
+   {
+    "reference": "2ba8de18-a092-4e5e-82af-394cf32fe399",
+    "value": "microscopy"
+   }
+  ],
+  "contributors": [
+   {
+    "reference": "ac2d5fde-4202-47da-97c5-87f7a35a8efd",
+    "value": "Dickscheid, T."
+   },
+   {
+    "reference": "8e05318b-4e11-454c-a49b-f81e3589dc98",
+    "value": "Bludau, S."
+   },
+   {
+    "reference": "c16900e6-99a6-4601-95dc-c5fe617755c0",
+    "value": "Paquola, C."
+   },
+   {
+    "reference": "d5f892af-a003-4e54-9c88-0c10ec3da455",
+    "value": "Schiffer, C."
+   },
+   {
+    "reference": "fcea7c27-7275-4a75-956c-6d543b7ff031",
+    "value": "Upschulte, E."
+   },
+   {
+    "reference": "01784c79-9a7b-4b47-83b6-0f50c075af81",
+    "value": "Amunts, K."
+   }
+  ],
+  "doi": {
+   "value": "10.25493/ZXQX-JKP"
+  },
+  "publications": [
+   {
+    "value": "Upschulte, E., Harmeling, S., Amunts, K., & Dickscheid, T. (2022). Contour proposal networks for biomedical instance segmentation. Medical Image Analysis, 77, 102371. https://doi.org/10.1016/j.media.2022.102371\n[DOI: 10.1016/j.media.2022.102371]\n[DOI: 10.1016/j.media.2022.102371]: https://doi.org/10.1016/j.media.2022.102371"
+   }
+  ]
+ },
+ "disclaimer": "Please alert us at [curation-support@ebrains.eu](mailto:curation-support@ebrains.eu) for errors or quality concerns regarding the dataset, so we can forward this information to the Data Custodian responsible.",
+ "group": "public"
+}

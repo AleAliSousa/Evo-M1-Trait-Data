@@ -22,7 +22,8 @@ same basis, because the sources are not all reporting the same quantity.
 
 The default basis of each source column is read from _keys/brain_size_basis.csv, which
 records it from the source's own definitions file and marks it `unknown` where the
-source does not say. brain_mass_row_basis.csv supplies guarded source-row decisions.
+source does not say. __metadata/curation/brain_mass_row_basis.csv supplies
+guarded source-row decisions.
 Endocranial volume is NOT here: cranial capacity is the
 capacity of the braincase, not a brain mass, and lives in
 __merging_endocranial_volume/.
@@ -374,7 +375,8 @@ row_key = lambda r: (r["Source"], r["Species"], r["column"], float(r["Value_g"])
 by_key = defaultdict(list)
 for r in uf:
     by_key[row_key(r)].append(r)
-resolutions = read_csv_rows(os.path.join(HERE, "brain_mass_row_basis.csv"))
+resolutions = read_csv_rows(os.path.join(REPO, "__metadata", "curation",
+                                         "brain_mass_row_basis.csv"))
 if len({r["resolution_id"] for r in resolutions}) != len(resolutions):
     sys.exit("ABORT: duplicate row-basis resolution IDs")
 for f in resolutions:
@@ -403,7 +405,7 @@ for f in resolutions:
 # can neither silently do nothing nor silently drop more than intended. Species `*` = all.
 # Vetoed rows leave the pool and brain_mass_unfiltered.csv and are listed in
 # brain_mass_vetoed_rows.csv so the exclusion stays auditable.
-VETO_PATH = os.path.join(HERE, "brain_mass_value_flags.csv")
+VETO_PATH = os.path.join(REPO, "__metadata", "curation", "brain_mass_value_flags.csv")
 vetoed = []
 if os.path.exists(VETO_PATH):
     _flags = read_csv_rows(VETO_PATH)

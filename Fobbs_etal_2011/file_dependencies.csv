@@ -1,0 +1,36 @@
+output_file_id,input_file_id,relation,source_locator,note
+fobbs-s1a-csv,fobbs-s1a-builder,produced_by,,Producer declared in file registry
+fobbs-s1b-csv,fobbs-s1b-builder,produced_by,,Producer declared in file registry
+fobbs-s2-csv,fobbs-s2-builder,produced_by,,Producer declared in file registry
+fobbs-s3-csv,fobbs-s3-builder,produced_by,,Producer declared in file registry
+fobbs-s4-csv,fobbs-s4-builder,produced_by,,Producer declared in file registry
+fobbs-s5a-csv,fobbs-s5a-builder,produced_by,,Producer declared in file registry
+fobbs-s5b-csv,fobbs-s5b-builder,produced_by,,Producer declared in file registry
+fobbs-s1a-snapshot,fobbs-s1a-snapshot-builder,produced_by,,Producer declared in file registry
+fobbs-s1a-snapshot,fobbs-s1a-source-doc,derived_from,,Source named in the inspected snapshot writer
+fobbs-s1b-snapshot,fobbs-s1b-snapshot-builder,produced_by,,Producer declared in file registry
+fobbs-s1b-snapshot,fobbs-s1b-source-doc,derived_from,,Source named in the inspected snapshot writer
+fobbs-s2-snapshot,fobbs-s2-snapshot-builder,produced_by,,Producer declared in file registry
+fobbs-s2-snapshot,fobbs-s2-source-doc,derived_from,,Source named in the inspected snapshot writer
+fobbs-s3-snapshot,fobbs-s3-snapshot-builder,produced_by,,Producer declared in file registry
+fobbs-s3-snapshot,fobbs-s3-source-doc,derived_from,,Source named in the inspected snapshot writer
+fobbs-s4-snapshot,fobbs-s4-snapshot-builder,produced_by,,Producer declared in file registry
+fobbs-s4-snapshot,fobbs-s4-source-doc,derived_from,,Source named in the inspected snapshot writer
+fobbs-s5a-snapshot,fobbs-s5a-snapshot-builder,produced_by,,Producer declared in file registry
+fobbs-s5a-snapshot,fobbs-s5a-source-doc,derived_from,,Source named in the inspected snapshot writer
+fobbs-s5b-snapshot,fobbs-s5b-snapshot-builder,produced_by,,Producer declared in file registry
+fobbs-s5b-snapshot,fobbs-s5b-source-doc,derived_from,,Source named in the inspected snapshot writer
+fobbs-s1a-tsv,fobbs-s1a-builder,produced_by,,Producer declared in file registry
+fobbs-s1a-tsv,fobbs-s1a-csv,exported_from,,Same registered item build
+fobbs-s1b-tsv,fobbs-s1b-builder,produced_by,,Producer declared in file registry
+fobbs-s1b-tsv,fobbs-s1b-csv,exported_from,,Same registered item build
+fobbs-s2-tsv,fobbs-s2-builder,produced_by,,Producer declared in file registry
+fobbs-s2-tsv,fobbs-s2-csv,exported_from,,Same registered item build
+fobbs-s3-tsv,fobbs-s3-builder,produced_by,,Producer declared in file registry
+fobbs-s3-tsv,fobbs-s3-csv,exported_from,,Same registered item build
+fobbs-s4-tsv,fobbs-s4-builder,produced_by,,Producer declared in file registry
+fobbs-s4-tsv,fobbs-s4-csv,exported_from,,Same registered item build
+fobbs-s5a-tsv,fobbs-s5a-builder,produced_by,,Producer declared in file registry
+fobbs-s5a-tsv,fobbs-s5a-csv,exported_from,,Same registered item build
+fobbs-s5b-tsv,fobbs-s5b-builder,produced_by,,Producer declared in file registry
+fobbs-s5b-tsv,fobbs-s5b-csv,exported_from,,Same registered item build

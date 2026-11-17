@@ -1,6 +1,6 @@
 
 === Python check: _tools/audit_folders.py ===
-$ /Users/crossmodal/anaconda3/bin/python3 _tools/audit_folders.py
+$ /Library/Frameworks/Python.framework/Versions/3.9/bin/python3 _tools/audit_folders.py
 registry data rows: 1036
 
 ====================================================================================================
@@ -221,11 +221,11 @@ registry data rows: 1036
 wrote /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/folder_audit.csv
 
 === Python check: _tools/check_naming.py ===
-$ /Users/crossmodal/anaconda3/bin/python3 _tools/check_naming.py
+$ /Library/Frameworks/Python.framework/Versions/3.9/bin/python3 _tools/check_naming.py
 repos checked      : PUB=/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data
 registry rows      : 1036   canonical spellings: 587
-findings           : 23417 in scope, 7 skipped as source/comparison files
-   P3  data_value             9450
+findings           : 23411 in scope, 7 skipped as source/comparison files
+   P3  data_value             9444
    P4  code_comment           1
    P4  data_value             13899
    P4  doc                    60
@@ -236,7 +236,7 @@ wrote /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo
 VERDICT: PASS
 
 === Python check: _checks/check_taxon_clarity.py ===
-$ /Users/crossmodal/anaconda3/bin/python3 _checks/check_taxon_clarity.py
+$ /Library/Frameworks/Python.framework/Versions/3.9/bin/python3 _checks/check_taxon_clarity.py
 register: 11 rows (9 wildcard printed names, 2 source-specific)
 clarity classes in use: {'subspecies_unstated': 2, 'domestication_unstated': 3, 'determinate': 3, 'genus_indet': 3}
 
@@ -282,3 +282,30 @@ highest-value unjudged pairs (the worklist):
   Macaca mulatta                     n=   77  (merge: __merging_behaviour)
 
 OK: register is well-formed.
+
+=== Python check: _keys/verify_source_statements.py ===
+$ /Library/Frameworks/Python.framework/Versions/3.9/bin/python3 _keys/verify_source_statements.py
+paper                        verdict   run  source
+Armstrong__1979              OK         18/18  the paper's own prose
+Ashwell__2020                OK         22/22  the paper's own prose
+Baron_etal_1996              OK         16/16  the source table's caption and column headers
+Changizi_Shimojo_2005        OK         29/29  the paper's own prose
+Collins_etal_2016            OK         17/17  the paper's own prose
+Finlay_etal_2006             OK          7/7   the paper's own prose
+Frahm_etal_1998              OK          6/6   the source table's caption and column headers
+Garwicz_etal_2009            OK         10/10  the paper's own prose
+MacLeod_etal_2003            OK         18/18  the paper's own prose
+Manger__2006                 OK         18/18  the source table's caption and column headers
+Olkowicz_etal_2016           OK         21/21  the paper's own prose
+Schleifenbaum__1973          OK          9/18  the paper's own prose
+Semendeferi_Damasio_2000     OK         18/18  the paper's own prose
+Semendeferi_etal_1998        OK         24/24  the paper's own prose
+Semendeferi_etal_2001        OK         20/20  the paper's own prose
+Smaers_etal_2011             OK         16/16  the paper's own prose
+Smaers_etal_2018             OK         19/19  the paper's own prose
+Stephan_etal_1970            OK         18/18  the paper's own prose
+Turner_etal_2016             OK          8/14  the paper's own prose
+Weaver__2001                 OK         --  folder definitions file
+deSousa_etal_2010            OK         16/16  the paper's own prose
+
+21 statements checked, 0 failed

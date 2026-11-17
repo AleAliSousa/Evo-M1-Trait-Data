@@ -1,0 +1,7 @@
+output_file_id,input_file_id,relation,source_locator,note
+falcone-t1-csv,falcone-t1-builder,produced_by,,Producer declared in file registry
+falcone-t2-csv,falcone-t2-builder,produced_by,,Producer declared in file registry
+falcone-t1-tsv,falcone-t1-builder,produced_by,,Producer declared in file registry
+falcone-t1-tsv,falcone-t1-csv,exported_from,,Same registered item build
+falcone-t2-tsv,falcone-t2-builder,produced_by,,Producer declared in file registry
+falcone-t2-tsv,falcone-t2-csv,exported_from,,Same registered item build

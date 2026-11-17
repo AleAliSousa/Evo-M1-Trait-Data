@@ -1,0 +1,75 @@
+{
+ "badges": [
+  "Dataset;#F77183"
+ ],
+ "highlightColor": null,
+ "id": "307effe7-4834-42bb-8e66-f2c0b006be1a",
+ "type": [
+  "Dataset"
+ ],
+ "category": "DatasetVersions",
+ "title": "Density measurements of different receptors for CA1 (Hippocampus) [rat]",
+ "fields": {
+  "citation": {
+   "value": "10.25493/A9DQ-TXC"
+  },
+  "custodians": [
+   {
+    "reference": "d77176e3-faa9-4c93-8dc0-7f3663c6d2ee",
+    "value": "Palomero-Gallagher, N."
+   },
+   {
+    "reference": "8a047744-5b04-4c2c-abb3-cc2dfbdc12ea",
+    "value": "Zilles, K."
+   }
+  ],
+  "citationHint": {
+   "value": "Using this citation allows you to reference all versions of this dataset with one citation.\nUsage of version specific data and metadata should be acknowledged by citing the individual dataset version."
+  },
+  "description": {
+   "value": "This dataset contains the densities (in fmol/mg protein) of receptors for classical neurotransmitters of CA1 (hippocampus) obtained by means of quantitative _in vitro_ autoradiography. The receptor densities are visualized as _fingerprints_ (**fp**), which provide the mean density and standard deviation for each of the analyzed receptor types, averaged across samples. Information on the used tissue samples and corresponding subjects, as well as analyzed receptors accompanies each provided dataset version."
+  },
+  "queryBuilderText": {
+   "value": "To make programmatic use of the (meta-)data of EBRAINS, you have different options to interact with the <a href=\"https://kg.ebrains.eu\" target=\"_blank\">EBRAINS Knowledge Graph (KG)</a>:\n\n<b>KG Query Builder</b>\nWith the <a href=\"https://query.kg.ebrains.eu\" target=\"_blank\">KG Query Builder</a>, you can design your own query to retrieve metadata for this instance and those of the same type conveniently via UI without the requirement of learning a graph query language (see the <a href=\"https://docs.kg.ebrains.eu/9b511d36d7608eafc94ea43c918f16b6/tutorials.html\" target=\"_blank\">tutorial</a>). You can also save the query and use it with the REST-API and the KG Core SDKs (see below).\n\n<a href=\"https://query.kg.ebrains.eu/queries?type=https%3A%2F%2Fopenminds.om-i.org%2Ftypes%2FDataset&instanceId=307effe7-4834-42bb-8e66-f2c0b006be1a\" class=\"btn btn-secondary build-query\" style=\"color:#fff\" target=\"_blank\">Build a query for this instance</a>\n\n\n<b>KG REST-API</b>\nYou can use the <a href=\"https://core.kg.ebrains.eu/swagger-ui.html\" target=\"_blank\">KG REST-API</a> to access and/or manipulate metadata on the EBRAINS KG as well as to run queries saved previously in the KG Query Builder.\n\n<b>KG Core SDKs</b>\nThe <a href=\"https://github.com/HumanBrainProject/kg-core-sdks\" target=\"_blank\">KG Core SDKs</a> provide convenient ways to authenticate and make use of the functionality of the KG REST-API with your favorite programming language (currently available for Python and JavaScript/TypeScript).\n\n<b>fairgraph</b>\n<a href=\"https://fairgraph.readthedocs.io\" _target=\"blank\">fairgraph</a> is a python library which enriches the KG Core Python SDK with knowledge about the metadata structure of choice at EBRAINS called <a href=\"https://openminds.om-i.org\" _target=\"blank\">openMINDS</a> and provides additional mechanisms to further simplify the interaction and manipulation of metadata instances on the EBRAINS KG."
+  },
+  "datasets": [
+   {
+    "children": {
+     "innovation": {
+      "value": "This version includes the density measurements (**fp**) of CA1 for 10 receptor types for the classical neurotransmitters glutamate, GABA, acetylcholine, noradrenalin/norepinephrine, and serotonin."
+     },
+     "version": {
+      "reference": "f61c27af-d18e-4abc-9b02-96c09d49e542",
+      "value": "v2"
+     }
+    }
+   },
+   {
+    "children": {
+     "innovation": {
+      "value": "This version includes the density measurements (**fp**) of CA1 for 4 receptor types for the classical neurotransmitters glutamate, and GABA."
+     },
+     "version": {
+      "reference": "4c445b24-0426-414c-ba44-7452736c9702",
+      "value": "v1"
+     }
+    }
+   }
+  ],
+  "authors": [
+   {
+    "reference": "d77176e3-faa9-4c93-8dc0-7f3663c6d2ee",
+    "value": "Palomero-Gallagher, N."
+   },
+   {
+    "reference": "8a047744-5b04-4c2c-abb3-cc2dfbdc12ea",
+    "value": "Zilles, K."
+   }
+  ],
+  "doi": {
+   "value": "10.25493/A9DQ-TXC"
+  }
+ },
+ "disclaimer": "Please alert us at [curation-support@ebrains.eu](mailto:curation-support@ebrains.eu) for errors or quality concerns regarding the dataset, so we can forward this information to the Data Custodian responsible.",
+ "group": "public"
+}

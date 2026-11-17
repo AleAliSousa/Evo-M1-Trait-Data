@@ -1,3 +1,25 @@
 "script","status","error","start_time","end_time","elapsed_seconds"
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Amunts_etal_2005/Amunts_etal_2005_Table1.R","FAILED","Error in utils::unzip(zip_path, list = TRUE) : 
+  zip file '/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__ReadMe.xlsx' cannot be opened
+Calls: <Anonymous> ... <Anonymous> -> read_fun -> <Anonymous> -> <Anonymous>
+Execution halted","2026-11-14 12:43:45.905889","2026-11-14 12:43:47.037536",1.13164687156677
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_brain_mass/brain_mass_compiled.R","FAILED","Error: 40 source column(s) have no documented brain-size basis; review /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_brain_mass/brain_mass_basis_missing.csv. No partial merge was written.
-Execution halted","2026-11-13 17:30:24.718106","2026-11-13 17:30:31.014945",6.29683899879456
+Execution halted","2026-11-14 13:08:52.411463","2026-11-14 13:08:58.750652",6.33918905258179
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/body_ecology_species_parsing.R","FAILED","Error in file(filename, ""r"") : cannot open the connection
+Calls: parse -> file
+In addition: Warning message:
+In file(filename, ""r"") :
+  cannot open file '__merging_body_ecology/body_ecology_compiled.R': No such file or directory
+Execution halted","2026-11-14 13:12:29.145963","2026-11-14 13:12:29.716911",0.570948123931885
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_cohort_coverage.R","FAILED","Error: Run this from the repo root: __ShinyApp/app.R not found.
+Execution halted","2026-11-14 13:12:30.506356","2026-11-14 13:12:30.792358",0.286001920700073
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/shiny_species_regression.R","FAILED","Error in setwd(file.path(repo, ""__ShinyApp"")) : 
+  cannot change working directory
+Execution halted","2026-11-14 13:12:39.347773","2026-11-14 13:12:39.767138",0.419364929199219
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/shiny_usability.R","FAILED","Error in file(filename, ""r"", encoding = encoding) : 
+  cannot open the connection
+Calls: source -> file
+In addition: Warning message:
+In file(filename, ""r"", encoding = encoding) :
+  cannot open file '_checks/shiny_species_regression.R': No such file or directory
+Execution halted","2026-11-14 13:12:39.775773","2026-11-14 13:12:39.995667",0.219893932342529

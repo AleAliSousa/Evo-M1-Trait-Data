@@ -1,9 +1,12 @@
-variable,definition,units,notes
-species_row,Row number after removing header/blank lines (printed table order),integer,
-binomial,Species binomial as printed in Table 1,text,
-common_name,Common name as printed in Table 1,text,
-audible_freq_high_60dBSPL_khz,Highest audible frequency at 60-dB SPL (footnote a),kHz,Cited source varies by row -- see footnotes csv
-interaural_distance_functional_us,"Time required for a sound to travel from one auditory meatus to the other, or bulla to bulla for underwater animals (footnote b)",microseconds,No per-row citation letter is printed for this column
-basilar_membrane_length_mm,Basilar membrane length,mm,Cited source varies by row -- see footnotes csv
-data_role,Whether this row's values are used by SensoryData_compiled (primary) or not,text,Only Tursiops truncatus is primary
-source,Human-readable combination of the footnote citations for this row,text,Full citation text is in reference_tables/Heffner_Heffner_2010_b_Table1_footnotes.csv
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species_row,Row number in the frozen Table 1 snapshot,,,,info,Mammalia,Heffner_Heffner_2010_b_Table1,Constructed extraction locator; not a measurement,Printed Table 1 p. 2081; 21 species rows
+binomial,Normalized species label used by the existing item output,,Species,,info,Mammalia,Heffner_Heffner_2010_b_Table1,Resolve accepted name through _keys; differs from the printed dolphin spelling,Printed Table 1 p. 2081 Species column
+species_as_published,Species name as printed in Table 1,,Species,,info,Mammalia,Heffner_Heffner_2010_b_Table1,Final row reads Tursiops truncates in the PDF; the older frozen snapshot normalized it to Tursiops truncatus,Printed Table 1 p. 2081 final species row
+common_name,Common name as printed in Table 1,,,,info,Mammalia,Heffner_Heffner_2010_b_Table1,Porpoise (in water) is the paper's common-name wording,Printed Table 1 p. 2081 Species column
+audible_freq_high_60dBSPL_khz,Highest audible frequency at 60-dB SPL,Hearing,Frequency.kHz,reported_value,secondary,Mammalia,Heffner_Heffner_2010_b_Table1,Each value cites a distinct source through ref_freq_key; original audiometric protocol requires cited-paper review,Printed Table 1 p. 2081 High-frequency Hearing Limit heading and footnote a
+ref_freq_key,Printed superscript citation key for the hearing-limit value,,Reference,,info,Mammalia,Heffner_Heffner_2010_b_Table1,Resolve using the item references table; footnotes m and q cite more than one work under one key,Printed Table 1 p. 2081 hearing-limit cell superscripts and footnotes c-jj
+interaural_distance_functional_us,Time required for sound to travel between auditory meatuses or between bullae in underwater animals,Functional head size,Time.us,reported_value,secondary,Mammalia,Heffner_Heffner_2010_b_Table1,Footnote b defines the quantity but the table gives no per-row citation or measurement protocol; original source remains unresolved,Printed Table 1 p. 2081 Functional Interaural Distance heading and footnote b
+basilar_membrane_length_mm,Basilar membrane length,Basilar membrane,Length.mm,reported_value,secondary,Mammalia,Heffner_Heffner_2010_b_Table1,Each value cites a distinct source through ref_bm_length_keys; original anatomical protocol requires cited-paper review,Printed Table 1 p. 2081 Basilar Membrane Length heading and row superscripts
+ref_bm_length_keys,Printed superscript citation keys for the basilar-membrane-length value,,Reference,,info,Mammalia,Heffner_Heffner_2010_b_Table1,Comma-separated when multiple printed footnotes support the cell,Printed Table 1 p. 2081 basilar-membrane cell superscripts and footnotes c-jj
+data_role,Classification of this Table 1 report as a secondary compilation,,Source role,,info,Mammalia,Heffner_Heffner_2010_b_Table1,This is a report-level role; it does not certify the original source of uncited interaural-distance cells,Printed Table 1 p. 2081 source footnotes; paper text p. 2080
+source,Reporting-work pointer and location of item-specific reference keys,,Source,,info,Mammalia,Heffner_Heffner_2010_b_Table1,Per-variable keys are retained in separate columns,Printed Table 1 p. 2081 and Literature Cited p. 2082

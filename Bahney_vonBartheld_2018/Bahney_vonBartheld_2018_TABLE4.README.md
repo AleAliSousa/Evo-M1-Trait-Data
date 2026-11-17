@@ -24,15 +24,31 @@ p. 706. The text layer drops the `∼` glyph on the Bandeira et al. (2009) row; 
 ## Data role — secondary compilation (with two primary rows)
 Every row except the paper's own spinal-cord rows ("This study" / "Current study") is compiled from earlier
 publications; `data_role` marks rows `primary`/`secondary`; registry **Data role = both**.
+The two own-study rows are primary reports for the spinal-cord nNNR, but both
+brain-mass cells are parenthesized estimates: `(75)` for the monkey and `(1300)`
+for the human. Thus `data_role = primary` describes the row's ratio provenance,
+not direct brain weighing. Treat these masses as estimated context with unresolved
+origin, not as independent primary brain-mass observations. Table 3 repeats them.
 Do **not** merge the secondary rows as new data — use
 `reference_tables/Bahney_vonBartheld_2018_TABLE4_references.csv` (join `references` == `ref_key`) as the roadmap to the
 primary sources (many are already items in this repo, e.g. Herculano-Houzel et al. 2006/2007,
 Sarko et al. 2009, Gabi et al. 2010, Burish et al. 2010, Neves et al. 2014).
+`reference_tables/Bahney_vonBartheld_2018_TABLE4_reference_columns.csv` declares
+`row_overall` citation scope. The paper does not attribute brain mass and nNNR
+to separate sources within a row; that assignment requires inspection of the
+cited work.
 
 ## Reference notes (kept verbatim, not corrected)
 - All printed keys resolve to exactly one bibliography entry (LITERATURE CITED, pp. 708–710).
 - `Gabi et al. 2010` is printed once without the comma; kept as a separate key (same work as `Gabi et al., 2010`).
-- Brain-mass unit is not printed in the Table 4 header; g assumed (Table 3 header; identical values for shared species) and converted to mg.
+  Both lookup rows were checked against the PDF bibliography; an adjacent
+  García-Amado & Prensa 2012 entry had been appended during extraction and
+  has been removed. The source-match tool normalizes the two printed Gabi
+  keys to one citation and reports one harmless `reference_never_cited` issue
+  for the alternate punctuation.
+- Brain-mass unit is not printed in the Table 4 header; g is inferred from the
+  Table 3 header and identical values for shared species, then converted to mg.
+  Keep this as a reviewed unit inference rather than a printed unit.
 
 ## Units
 Brain mass g → mg (× 1000). Ranges (e.g. `0.29–0.42`) keep min/max and a midpoint;
@@ -45,11 +61,6 @@ Printed Latin names kept in `species_as_published` (parentheses included); harmo
 ## Table checks
 Not assessed: the table has no printed totals or additive relation (ratios are not additive).
 
-## Registry note (action for owner)
-`__ReadMe.xlsx` Sheet1 col A for **TABLE 2, TABLE 3 and TABLE 4** ends in an auto-incremented
-DOI (`…/ar.23729`, `…/ar.23730`, `…/ar.23731`); the article DOI is **10.1002/ar.23728**
-(PDF p. 697; TABLE 1 row). The formula columns therefore resolve `Item encoded` to
-`10.1002%2Far.2372{9,30,31}_TABLE{2,3,4}`. The build scripts detect this and write the TSV
-under the house-formula code `10.1002%2Far.23728_TABLE<N>` with a warning. The
-`<Item>_registry_row.xlsx` files carry the corrected citation; once col A is fixed and
-`_tools/file_list.R` re-run, the lookup and the TSV name agree and the guard is inert.
+## Registry check
+The live `__ReadMe.xlsx` row and public TSV now use the article DOI
+`10.1002/ar.23728` and encoded stem `10.1002%2Far.23728_TABLE4`.

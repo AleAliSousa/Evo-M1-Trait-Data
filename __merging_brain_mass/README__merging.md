@@ -131,6 +131,23 @@ normalization mismatch on "ä" between the harvested TSV filename and the basis-
 than a missing classification; not investigated further here, flagged for whoever maintains the R
 script. **The outputs below are from the Python builder**, which completed without error.
 
+## Update: Kverkova et al. 2018 Brain_Mass.g reclassified (2026-11-17)
+
+The basis classification of `Kverkova_etal_2018` Table S1 `Brain_Mass.g`
+(11 bathyergid species) is corrected from `sum_of_structure_volumes` to
+`mass_fixed`, poolable group `mass_measured`, via a `RESOLVED` entry in
+`_keys/build_brain_size_basis.py` (the generated `_keys/brain_size_basis.csv`
+row was updated to match). The earlier assignment took the folder definitions
+file's Fig3 `Brain` description — a total brain *volume*, approx. sum of 14
+structures — as the basis of the mass column. The paper's Methods state the
+brains were "dissected and weighed immediately after perfusion", and that the
+perfused-brain volume was derived *from* the mass (mass / 1.036 g/cm3): the
+mass is the primary measurement, weighed whole with olfactory bulbs included.
+Effect on the next merge run: the 11 species' values (e.g. *Fukomys
+damarensis* 1.39 g) enter `Brain_Mass_measured` and the combined trait
+"Brain mass (measured or estimated from volume)". No source values changed.
+Classification made 2026-11-17 (M. Proulx / Muse, from the paper's Methods).
+
 Pipeline for compiling **whole-brain mass** across species — a sibling of the body-mass merge
 (`__merging_body_ecology/`) and structured like `__merging_cerebral_metabolic_rate/`. Brain mass
 is a brain measure (not organism/ecology), so it lives in its own merge rather than in

@@ -258,3 +258,30 @@ Reason: absolute values of this single-animal FSU lineage are not validated and 
 see `_keys/specimen_crosswalk/Green_monkey_FSU_specimen_note.md`. Implemented in both `build_brain_mass_merge.py` and
 `brain_mass_compiled.R`. Note: the R twin currently stops during pooling on the present inputs (an NA `role`), independent of this change.
 The `extraction_error_zero` veto drops the DeCasien 2017 *Chlorocebus aethiops* row with brain mass 0 (source Haug 1987; DeCasien marks it IGNORE). Haug 1987 Table 2 (`Haug__1987/`) prints a vervet brain volume of 64 cm3: the 0 is a blank volume carried through Boddy 2012 and DeCasien 2017. Effect: the cell's `n_sources` 7 -> 6 and `value_min` 0 -> 60; the pooled value is unchanged.
+
+## Update: Baker et al. 2025 (Nat Commun) wired into the brain-mass merge (2026-11-17)
+
+`Baker_etal_2025_b` Supplementary Data 1 `Brain_mass_g` (1,684 mammal species
+means) is classified in `_keys/brain_size_basis.csv` as `mass_or_volume_mixed`
+(secondary, in the merge), following the Burger et al. 2019 SD1 precedent: the
+paper converted endocranial volumes to mass at 1 g = 1 cm3 where only volumes
+were available and does not flag the basis per row.
+
+1,337 guarded row decisions in `__metadata/curation/brain_mass_row_basis.csv`
+split the compilation by the per-row `Source` column Baker itself supplies:
+840 rows to `mass_measured` (Baron, Stephan & Frahm 1996; McNab & Eisenberg
+1989; Kverkova et al. 2018, basis `mass_fixed`; Sacher & Staffeldt 1974;
+Tsuboi et al. 2018; Lopez-Torres et al. 2017; Stephan, Baron & Frahm 1991;
+Manger 2006; Marino et al. 2006; Herculano-Houzel et al. 2014; Dos Santos
+et al. 2018; Mangold-Wirz 1966) and 497 rows to
+`mass_estimated_from_endocranial_volume` (Isler et al. 2008; Isler & van
+Schaik 2009, 2012, 2014; Isler 2011). These are source-level assignments from
+Baker's Source column, not per-value re-checks against the primary
+publications; each decision's evidence field says so.
+
+347 rows are deliberately left unpooled: 224 sourced from Boddy et al. 2012
+and 56 from Burger et al. 2019 (both themselves `mass_or_volume_mixed`), and
+67 flagged for verification first (Weisbecker, Ashwell & Fisher marsupials
+38; Kaufman et al. 2008, a brain-volume paper, 18; Shultz & Dunbar 2010, 9;
+Barton & Capellini 2011, 2). The decisions take effect on the next merge run
+whose harvest includes Baker's public TSV.

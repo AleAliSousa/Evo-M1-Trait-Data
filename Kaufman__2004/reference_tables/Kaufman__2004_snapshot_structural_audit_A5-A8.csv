@@ -1,0 +1,52 @@
+table,snapshot_row,pdf_page,column,ocr_value,printed_value
+TableA5,73,136,Reference,(,"(Sokoloff et al., 1977)"
+TableA5,73,136,n,,10
+TableA5,73,136,Anesthesia,,none
+TableA5,73,136,Glucose,1977,36.0
+TableA5,73,136,Glucose_SD,10,2.0
+TableA5,73,136,Oxygen,36.0,
+TableA5,73,136,Oxygen_SD,2.0,
+TableA6,67,140,Anesthesia,342.0 20.1 108.2 6.3,
+TableA6,67,140,Oxygen,,342.0
+TableA6,67,140,Oxygen_SD,,20.1
+TableA6,67,140,BloodFlow,,108.2
+TableA6,67,140,BloodFlow_SD,,6.3
+TableA6,68,140,Anesthesia,Sevoflurane 171.9 7.6 68.4 3.5,Sevoflurane
+TableA6,68,140,Oxygen,,171.9
+TableA6,68,140,Oxygen_SD,,7.6
+TableA6,68,140,BloodFlow,,68.4
+TableA6,68,140,BloodFlow_SD,,3.5
+TableA6,69,140,Anesthesia,Sevoflurane 162.5 19.2 77.7 8.7,Sevoflurane
+TableA6,69,140,Oxygen,,162.5
+TableA6,69,140,Oxygen_SD,,19.2
+TableA6,69,140,BloodFlow,,77.7
+TableA6,69,140,BloodFlow_SD,,8.7
+TableA6,71,140,Anesthesia,Morphine 55.0 12.0,Morphine
+TableA6,71,140,BloodFlow,,55.0
+TableA6,71,140,BloodFlow_SD,,12.0
+TableA6,72,140,Anesthesia,Halothane 69.0 23.0,Halothane
+TableA6,72,140,BloodFlow,,69.0
+TableA6,72,140,BloodFlow_SD,,23.0
+TableA6,73,140,Anesthesia,Isoflurane 41.0 16.0,Isoflurane
+TableA6,73,140,BloodFlow,,41.0
+TableA6,73,140,BloodFlow_SD,,16.0
+TableA6,130,143,Reference,(,"(Sokoloff et al., 1977)"
+TableA6,130,143,n,,10
+TableA6,130,143,Anesthesia,,none
+TableA6,130,143,Glucose,1977,124.4
+TableA6,130,143,Glucose_SD,10,3.6
+TableA6,130,143,Oxygen,124.4,
+TableA6,130,143,Oxygen_SD,3.6,
+TableA7,101,146,Anesthesia,‘ none,none
+TableA7,109,146,Reference,(,"(Sokoloff et al., 1977)"
+TableA7,109,146,n,,10
+TableA7,109,146,Anesthesia,,none
+TableA7,109,146,Glucose,1977,112.0
+TableA7,109,146,Glucose_SD,10,4.0
+TableA8,97,149,Reference,(,"(Sokoloff et al., 1977)"
+TableA8,97,149,n,,10
+TableA8,97,149,Anesthesia,,none
+TableA8,97,149,Glucose,1977,110.0
+TableA8,97,149,Glucose_SD,10,3.0
+TableA8,97,149,Oxygen,110.0,
+TableA8,97,149,Oxygen_SD,3.0,

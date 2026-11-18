@@ -26,7 +26,8 @@ both compilations reprint it.
 ## Reference catalogs
 
 Run `build_primary_reference_catalogs.py` when a source table or its reference
-resolution changes.  It reads only the PDFs in the two source folders and writes:
+resolution changes. It reads Kaufman's maintained source-local bibliography and
+the Karbowski PDF, and writes:
 
 - `Kaufman__2004/reference_tables/Kaufman__2004_TablesA1-A14_references.csv`
 - `Karbowski__2007/reference_tables/Karbowski__2007_TablesS1-S23_references.csv`

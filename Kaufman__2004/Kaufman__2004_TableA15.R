@@ -2,8 +2,8 @@
 # Computed species-level summary (N, Mean, SD, CV, CV* = unbiased CV) for each
 # genus x weighting x brain region x energetic measure.
 #
-# Snapshot -> clean tidy CSV. The snapshot is the faithful capture of the printed
-# Table A15 statistics; this script only adds units and orders rows.
+# Snapshot -> clean tidy CSV. The snapshot transcribes the printed Table A15
+# statistics; this script only adds units and orders rows.
 #
 # Weightings: unweighted (each study counts equally) / weighted (each individual counts).
 # Measures/units: CMRgl (glucose) & CMRO2 (oxygen) umol/100 g/min; CBF (blood flow) mL/100 g/min.

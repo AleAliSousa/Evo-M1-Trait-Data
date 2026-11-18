@@ -24,11 +24,13 @@ The suffix vocabulary preserves the existing R tool contracts:
 
 | Suffix | Registered `content_role` | One row represents |
 | --- | --- | --- |
+| `bibliography` | `bibliography` | One source bibliography entry; extraction and review status are recorded separately. |
 | `definitions` | `field_definitions` | A legacy definition record; see row-type note below. |
 | `references` | `citation_lookup` | A printed citation key or cited-work resolution. |
 | `footnotes` | `citation_lookup` | A printed footnote letter and its meaning. |
 | `reference_columns` | `citation_scope` | A rule connecting a citation column to values. |
 | `errata` | `errata_ledger` | A proposed or reviewed discrepancy. |
+| `ocr_audit` | `errata_ledger` | A source-text OCR correction with its original and checked transcription and PDF locator. |
 | `species_key_proposed` | `proposed_taxon_mapping` | A proposed printed-name mapping, not an adopted `_keys` decision. |
 | `taxa` | `taxon_annotation_lookup` | A printed taxon annotation in an item. |
 | `source_match` | `generated_source_match` | A generated source-cell match. |

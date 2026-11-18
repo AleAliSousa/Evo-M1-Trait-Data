@@ -64,3 +64,25 @@ brain-mass / volumes cross-check. Both are all-mammal (1,552 species).
 ## 2026-10-29: measured versus estimated mass
 
 The source's `Mean_brain_mass_g` is a mixture of direct mass measurements and volume-derived mass estimates. In the currently audited harvest, at least 617 of 1,552 species entries (39.8%) trace to endocranial capacity, including the now-read Mace methods. This is a lower bound; remaining untraced records are not thereby established as weighed masses. The brain-mass merge retains known calculations in separate estimated-mass traits, preserves their reported gram values and source basis, and keeps unresolved cases in review. Burger's 1 g/cm3 convention does not justify reversing a copied value that may already include an earlier compiler's conversion. See `__merging_brain_mass/README__merging.md`.
+
+## Reference linkage
+
+`BrainReference1` and `BrainReference2` retain the source's exact abbreviated
+labels, including compressed spelling (e.g. `Stephanetal.1981`). The journal
+CSV is the frozen source. `reference_tables/Burger_etal_2019_SupplementaryDataSD1_references.csv`
+indexes individual printed labels to entries in the supplied SD2 bibliography;
+multiple labels can map to the same entry. `reference_columns.csv` declares
+both fields as sources for `Mean_brain_mass_g`, and the derived `source_match`
+files record row-level links. These are reported source attributions, not proof
+that every cited study is primary or that it measured each value directly.
+
+Rebuild the reference index from the two journal downloads with
+`python3 Burger_etal_2019/Burger_etal_2019_references.py`, then run
+`source('_tools/dataset_builder/source_match.R'); build_source_match('Burger_etal_2019', 'Burger_etal_2019_SupplementaryDataSD1')`
+from the repository root. The index matches first author and year against SD2,
+with explicit aliases for the primate Isler label, von Bonin and PanTHERIA.
+Labels without a unique SD2 match are left unresolved, including SD1/SD2 year
+disagreements; these are not silently equated. The `value_without_key` issues
+for an empty optional `BrainReference2` are expected. Source-match's
+punctuation-tolerant matching can attribute synonymous spellings to one of the
+listed keys; the `key_cell_as_printed` column preserves the original cell.

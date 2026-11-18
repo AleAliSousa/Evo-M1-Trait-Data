@@ -276,6 +276,7 @@ def load_kaufman_bibliography(path: Path) -> list[dict[str, str]]:
         if not match:
             raise RuntimeError(f"No parenthesized year in Kaufman bibliography entry {index}: {citation}")
         parsed.append({
+            "entry_id": expected_id,
             "citation": citation,
             "year": match.group(1),
             "suffix": match.group(2).lower(),
@@ -410,6 +411,7 @@ def match_kaufman(raw: str, bibliography: list[dict[str, str]]) -> dict[str, str
         "status": "resolved",
         "locator": entry["locator"],
         "core": core,
+        "bibliography_entry_id": entry.get("entry_id", ""),
     }
 
 
@@ -473,7 +475,7 @@ def karbowski_number_for(author: str, year: str) -> int | None:
     return mapping.get((author, year))
 
 
-def write_catalog(path: Path, rows: list[dict[str, str]]) -> None:
+def write_catalog(path: Path, rows: list[dict[str, str]], *, bibliography_entry: bool = False) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     fields = [
         "ref_key", "cited_in_column", "citation", "note",
@@ -481,6 +483,8 @@ def write_catalog(path: Path, rows: list[dict[str, str]]) -> None:
         "primary_reference_id", "reference_core", "resolution_status",
         "evidence_file", "evidence_locator", "cited_in_tables", "occurrence_count",
     ]
+    if bibliography_entry:
+        fields.append("bibliography_entry_id")
     with path.open("w", newline="", encoding="utf-8") as handle:
         writer = csv.DictWriter(handle, fieldnames=fields, lineterminator="\n")
         writer.writeheader()
@@ -521,6 +525,7 @@ def build() -> None:
                 "evidence_locator": match["locator"],
                 "cited_in_tables": "; ".join(sorted(kauf_tables[raw])),
                 "occurrence_count": kauf_counts[raw],
+                "bibliography_entry_id": match.get("bibliography_entry_id", ""),
             }
         )
 
@@ -593,7 +598,7 @@ def build() -> None:
         )
 
     # Resolve and validate both source catalogs before replacing either output.
-    write_catalog(KAUF_OUT, kauf_rows)
+    write_catalog(KAUF_OUT, kauf_rows, bibliography_entry=True)
     write_catalog(KARB_OUT, karb_rows)
     with ISSUES_OUT.open("w", newline="", encoding="utf-8") as handle:
         fields = ["issue_id", "compilation", "reference_raw", "issue_type", "status",

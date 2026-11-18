@@ -1,0 +1,14 @@
+"check_id","basis","observed","printed","difference","tolerance","status","note"
+"adult_laminar_sum_low","p. 44-45 adult: I 0.2 + II/III low + IVb low + IVcα low + IVcβ low + V low + VI low vs printed total 2.1 (IVa not measurable)",2.03,2.1,-0.0700000000000003,0.1,"pass",NA
+"adult_laminar_sum_high","p. 44-45 adult: I 0.2 + II/III high + IVb high + IVcα high + IVcβ high + V high + VI high vs printed total 2.5",2.47,2.5,-0.0300000000000002,0.1,"pass",NA
+"fourmonth_IVc_sublayers","p. 44 4-month: IVcα 0.21 + IVcβ 0.29 vs printed IVc 0.51",0.5,0.51,-0.01,0.01,"pass",NA
+"restatement_320","p. 56 row 74 vs p. 45 row 49 (µm)",320,320,0,0,"pass",NA
+"restatement_450","p. 56 row 75 vs p. 45 row 50 (µm)",450,450,0,0,"pass",NA
+"restatement_650","p. 56 row 78 (µm) vs p. 45 row 55 (mm), compared in mm",0.65,0.65,0,0,"pass",NA
+"restatement_800","p. 56 row 79 (µm) vs p. 45 row 57 (mm), compared in mm",0.8,0.8,0,0,"pass",NA
+"restatement_2to3_low","p. 56 row 83 low vs p. 45 row 52 low",2,2,0,0,"pass",NA
+"restatement_2to3_high","p. 56 row 83 high vs p. 45 row 52 high",3,3,0,0,"pass",NA
+"mean_puff_diameter_in_range","p. 45: mean 340 within 300-380",1,1,0,0,"pass","340 within [300, 380]"
+"mean_puff_density_in_range","p. 45: mean 2.35 within 2.0-3.0",1,1,0,0,"pass","2.35 within [2, 3]"
+"mean_spacing_rows_in_range","p. 45: mean 0.65 within 0.5-0.8",1,1,0,0,"pass","0.65 within [0.5, 0.8]"
+"mean_spacing_between_in_range","p. 45: mean 0.8 within 0.65-1.05",1,1,0,0,"pass","0.8 within [0.65, 1.05]"

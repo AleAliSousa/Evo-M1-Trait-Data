@@ -1,7 +1,7 @@
 Species,Reference,n,Anesthesia,Mode,Glucose,Glucose_SD,Oxygen,Oxygen_SD,BloodFlow,BloodFlow_SD
 Homo,"(Alkire et al., 1995)",6,none,PET,29.00,8.00,,,,
 Homo,"(Blomqvist et al., 1994)",3,none,PET,25.70,nr,,,,
-Homo,"(Delvenne etal., 1997)",10,none,PET,24.65,2.58,,,,
+Homo,"(Delvenne et al., 1997)",10,none,PET,24.65,2.58,,,,
 Homo,"(Hasselbalch et al., 1994)",9,none,PET,30.70,5.00,,,,
 Homo,"(Heiss et al., 1985)",6,none,PET,36.20,2.38,,,,
 Homo,"(Kaye et al., 1990)",12,none,PET,29.25,3.40,,,,
@@ -21,10 +21,10 @@ Homo,"(Jobes et al., 1977)",6,none,PET,23.00,3.70,144.20,41.50,48.20,10.80
 Homo,"(Madsen et al., 1995)",8,none,PET,23.30,2.40,142.50,18.90,50.60,4.90
 Homo,"(Mielck et al., 1998)",9,none,PET,22.20,3.90,147.30,31.30,45.00,10.00
 Homo,"(Mielck et al., 1998)",9,Desflurane,PET,14.40,3.90,71.40,8.90,35.00,6.00
-Homo,"(Ogawaetal., 1996)",7,none,PET,24.90,7.21,136.74,31.69,42.54,2.19
+Homo,"(Ogawa et al., 1996)",7,none,PET,24.90,7.21,136.74,31.69,42.54,2.19
 Homo,"(Redies et al., 1989)",4,none,PET,29.00,2.00,154.00,24.00,43.00,12.00
 Homo,"(Scheinberg and Stead, 1949)",20,none,PET,34.40,7.80,169.20,24.60,64.70,12.10
-Homo,"(Felding et al., 1995)",9,"Halothane, N 20",Kety-Schmidt,,,93.80,13.40,33.00,8.00
+Homo,"(Felding et al., 1995)",9,"Halothane, N2O",Kety-Schmidt,,,93.80,13.40,33.00,8.00
 Homo,"(Frackowiak et al., 1980)",11,none,PET,,,201.79,46.40,49.80,12.50
 Homo,"(Jakobsen et al., 1990)",8,none,Kety-Schmidt,,,142.86,17.90,52.60,8.30
 Homo,"(Carpenter et al., 1991)",20,none,PET,,,117.86,22.80,47.70,9.00
@@ -37,99 +37,98 @@ Homo,"(Madsen et al., 1992)",10,none,Kety-Schmidt,,,171.43,25.40,56.35,14.40
 Homo,"(Madsen et al., 1993)",12,none,Kety-Schmidt,,,162.05,21.00,46.90,7.00
 Homo,"(Meyer et al., 1987)",3,none,PET,,,165.00,nr,63.00,nr
 Homo,"(Mintun et al., 2002)",7,none,PET,,,191.96,47.20,53.50,14.60
-Homo,"(Olsen etal., 1992a)",19,none,Kety-Schmidt,,,162.90,33.50,52.00,nr
+Homo,"(Olsen et al., 1992a)",19,none,Kety-Schmidt,,,162.90,33.50,52.00,nr
 Homo,"(Olsen et al., 1992b)",8,none,Kety-Schmidt,,,174.10,19.20,58.00,9.30
-Homo,"(Olsen etal., 1993)",8,none,Kety-Schmidt,,,161.16,nr,59.90,nr
-Homo,"(Olsen etal., 1995)",8,none,Kety-Schmidt,,,129.50,22.30,67.00,13.00
+Homo,"(Olsen et al., 1993)",8,none,Kety-Schmidt,,,161.16,nr,59.90,nr
+Homo,"(Olsen et al., 1995)",8,none,Kety-Schmidt,,,129.50,22.30,67.00,13.00
 Homo,"(Renou et al., 1978)",7,none,Kety-Schmidt,,,138.84,31.30,56.80,10.40
 Homo,"(Sari et al., 1976)",13,none,Kety-Schmidt,,,138.40,26.80,46.00,7.00
 Homo,"(Schmidt et al., 1990)",8,none,Kety-Schmidt,,,165.18,nr,52.00,nr
 Homo,"(Schmidt et al., 1991)",8,none,Kety-Schmidt,,,156.25,15.62,52.00,4.40
 Homo,"(Seitz and Roland, 1992)",5,none,PET,,,160.70,31.30,54.60,9.30
-Homo,"(Vafaee etal., 1998)",6,none,PET,,,159.90,19.60,,
-Homo,"(Vemhiet et al., 1978)",8,none,Kety-Schmidt,,,127.20,35.70,55.00,8.00
-Homo,"(Vorstmp et al., 1984)",6,none,Kety-Schmidt,,,158.04,39.30,56.00,6.00
+Homo,"(Vafaee et al., 1998)",6,none,PET,,,159.90,19.60,,
+Homo,"(Vernhiet et al., 1978)",8,none,Kety-Schmidt,,,127.20,35.70,55.00,8.00
+Homo,"(Vorstrup et al., 1984)",6,none,Kety-Schmidt,,,158.04,39.30,56.00,6.00
 Homo,"(Wessen et al., 1997)",6,none,PET,,,187.00,58.00,52.00,15.00
-Homo,"(Wolff etal., 1994)",8,none,Kety-Schmidt,,,183.00,nr,64.00,nr
+Homo,"(Wolff et al., 1994)",8,none,Kety-Schmidt,,,183.00,nr,64.00,nr
 Homo,"(Wollman et al., 1964)",13,none,Kety-Schmidt,,,137.95,8.50,44.40,2.20
 Homo,"(Mintun et al., 1984)",5,none,PET,,,191.90,16.50,,
 Homo,"(Elman et al., 1999)",13,none,PET,,,,,38.10,7.76
 Papio,"(Hamar et al., 1979)",5,Phencyclidine,Kety-Schmidt,24.64,1.70,175.40,34.90,39.40,4.76
-Papio,"(Harper and MacKenzie, 1977)",7,"Phencyclidine, N 20",Kety-Schmidt,25.30,5.60,144.20,20.10,51.00,5.30
-Papio,"(McCulloch and Harper, 1977)",4,"Phencyclidine, N 20",Kety-Schmidt,18.30,nr,143.80,nr,44.00,nr
+Papio,"(Harper and MacKenzie, 1977)",7,"Phencyclidine, N2O",Kety-Schmidt,25.30,5.60,144.20,20.10,51.00,5.30
+Papio,"(McCulloch and Harper, 1977)",4,"Phencyclidine, N2O",Kety-Schmidt,18.30,nr,143.80,nr,44.00,nr
 Papio,"(Reivich et al., 1972)",3,Phencyclidine,Kety-Schmidt,24.60,2.90,175.40,27.00,38.00,5.20
 Papio,"(Tagashira et al., 1977)",17,Pentobarbital,Kety-Schmidt,23.20,9.00,124.60,25.40,37.90,8.50
-Papio,"(Van Aken et al., 1986)",6,"Phencyclidine, N 20",Kety-Schmidt,24.42,6.53,162.50,44.60,48.30,3.50
-Papio,"(Van Hemelrijck et al., 1990)",7,"Phencyclidine, N 20",Kety-Schmidt,20.76,3.70,90.60,19.70,50.01,4.49
-Papio,"(Brussel et al., 1991)",8,"Phencyclidine, N 20",Kety-Schmidt,,,151.80,35.70,55.80,8.00
-Papio,"(Pappata et al., 1993)",5,"Midazolam, N 20",PET,,,122.30,15.60,35.60,4.60
-Papio,"(Sahlin et al., 1986)",11,"Phencyclidine, N 20",Kety-Schmidt,,,145.50,6.25,58.20,10.70
-Papio,"(Schumann et al., 1998)",10,"Fentanyl, N 20",PET,,,134.40,16.10,29.30,3.00
-Papio,"(TouzanietaL, 1995)",7,"Etomidate, N 20",PET,,,124.60,42.40,32.50,14.60
-Papio,"(Sahlin et al., 1987)",13,N 20,Kety-Schmidt,,,143.75,5.80,63.20,4.40
+Papio,"(Van Aken et al., 1986)",6,"Phencyclidine, N2O",Kety-Schmidt,24.42,6.53,162.50,44.60,48.30,3.50
+Papio,"(Van Hemelrijck et al., 1990)",7,"Phencyclidine, N2O",Kety-Schmidt,20.76,3.70,90.60,19.70,50.01,4.49
+Papio,"(Brussel et al., 1991)",8,"Phencyclidine, N2O",Kety-Schmidt,,,151.80,35.70,55.80,8.00
+Papio,"(Pappata et al., 1993)",5,"Midazolam, N2O",PET,,,122.30,15.60,35.60,4.60
+Papio,"(Sahlin et al., 1986)",11,"Phencyclidine, N2O",Kety-Schmidt,,,145.50,6.25,58.20,10.70
+Papio,"(Schumann et al., 1998)",10,"Fentanyl, N2O",PET,,,134.40,16.10,29.30,3.00
+Papio,"(Touzani et al., 1995)",7,"Etomidate, N2O",PET,,,124.60,42.40,32.50,14.60
+Papio,"(Sahlin et al., 1987)",13,N2O,Kety-Schmidt,,,143.75,5.80,63.20,4.40
 Papio,"(Kawamura et al., 1975)",11,Pentobarbital,Kety-Schmidt,,,110.16,10.80,41.30,4.50
 Papio,"(Aoyagi et al., 1975)",12,Pentobarbital,Kety-Schmidt,,,115.40,12.50,36.50,5.40
-Papio,"(Harper et al., 1981)",4,"Phencyclidine, N 20",Kety-Schmidt,,,195.50,12.10,62.60,3.60
-Papio,"(Young et al., 1996)",4,"Etomidate, N 20",PET,,,148.66,1.04,36.95,9.25
-Papio,Present Study,2,N 20,PET,35.52,,,,,
+Papio,"(Harper et al., 1981)",4,"Phencyclidine, N2O",Kety-Schmidt,,,195.50,12.10,62.60,3.60
+Papio,"(Young et al., 1996)",4,"Etomidate, N2O",PET,,,148.66,1.04,36.95,9.25
+Papio,Present Study,2,N2O,PET,35.52,,,,,
 M mulatta,"(Fein, 1975)",19,N20,Kety-Schmidt,32.75,nr,165.18,nr,40.60,nr
 M mulatta,"(Mehta et al., 1980)",5,none,Kety-Schmidt,61.30,12.30,270.10,60.20,100.60,14.10
 M mulatta,"(Nemoto et al., 1994)",3,none,Kety-Schmidt,44.90,15.40,265.60,24.10,76.10,20.50
 M mulatta,"(Yao et al., 1992)",4,none,Kety-Schmidt,43.30,9.60,304.90,32.30,80.00,12.00
 M mulatta,"(Schmidt et al., 1945)",11,Thiopentone,Kety-Schmidt,,,165.18,31.25,46.90,11.70
-M mulatta,"(Kliefothetal., 1979)",10,Ketamine,Kety-Schmidt,,,151.80,20.00,48.70,8.50
+M mulatta,"(Kliefoth et al., 1979)",10,Ketamine,Kety-Schmidt,,,151.80,20.00,48.70,8.50
 M mulatta,"(Cross et al., 2000)",6,none,PET,34.60,6.90,,,,
 M fascic,"(Rockoff et al., 1980)",10,none,Kety-Schmidt,31.64,11.40,136.16,70.50,43.00,3.20
 Canis,"(Michenfelder, 1974)",7,Halothane,Kety-Schmidt,26.10,3.30,178.10,37.80,40.00,10.60
-Canis,"(Roald etal., 1986a)",6,"Halothane, N 20",Kety-Schmidt,24.60,1.80,208.04,19.60,50.90,9.80
-Canis,"(Zimmer, 1975)",13,& Ethylene urea,Kety-Schmidt,27.67,3.99,167.40,53.00,45.60,7.20
-Canis,"(Hamer etal., 1978)",10,"Halothane, N 20",Kety-Schmidt,28.90,4.30,169.60,34.80,60.30,8.10
-Canis,"(Sieberetal., 1993)",8,none,Kety-Schmidt,44.50,5.00,205.40,22.30,,
-Canis,"(Frizzell et al., 1993)",13,"Isoflurane, N 20",Kety-Schmidt,35.90,7.80,147.30,12.10,,
+Canis,"(Roald et al., 1986a)",6,"Halothane, N2O",Kety-Schmidt,24.60,1.80,208.04,19.60,50.90,9.80
+Canis,"(Zimmer, 1975)",13,"Allobarbital, Urethan, & Ethylene urea",Kety-Schmidt,27.67,3.99,167.40,53.00,45.60,7.20
+Canis,"(Hamer et al., 1978)",10,"Halothane, N2O",Kety-Schmidt,28.90,4.30,169.60,34.80,60.30,8.10
+Canis,"(Sieber et al., 1993)",8,none,Kety-Schmidt,44.50,5.00,205.40,22.30,,
+Canis,"(Frizzell et al., 1993)",13,"Isoflurane, N2O",Kety-Schmidt,35.90,7.80,147.30,12.10,,
 Canis,"(Astrup et al., 1981)",12,Halothane,Kety-Schmidt,,,46.50,4.80,19.60,1.80
 Canis,"(McPherson et al., 1997)",5,Isoflurane,Kety-Schmidt,,,156.25,30.00,66.00,17.90
 Canis,"(McPherson et al., 1997)",6,Isoflurane,Kety-Schmidt,,,160.70,8.90,74.00,7.00
-Canis,"(Roald et al., 1986b)",6,"Halothane, N 20",Kety-Schmidt,,,188.40,40.40,45.00,12.50
+Canis,"(Roald et al., 1986b)",6,"Halothane, N2O",Kety-Schmidt,,,188.40,40.40,45.00,12.50
 Canis,"(Sakabe et al., 1974)",16,Halothane,Kety-Schmidt,,,263.40,64.50,62.70,16.90
 Canis,"(Nakanishi et al., 1997)",7,Halothane,Kety-Schmidt,,,272.77,9.38,63.00,5.00
-Canis,"(Nakanishi et al., 1997)",7,"Halothane, N 20",Kety-Schmidt,,,317.00,17.40,173.00,26.00
+Canis,"(Nakanishi et al., 1997)",7,"Halothane, N2O",Kety-Schmidt,,,317.00,17.40,173.00,26.00
 Canis,"(Lanier et al., 1994)",6,Halothane,Kety-Schmidt,,,170.98,17.90,66.00,8.00
 Canis,"(Lanier et al., 1990)",6,Halothane,Kety-Schmidt,,,173.21,7.59,70.00,6.00
-Canis,"(Roald et al., 1991)",6,"Isoflurane, N 20",Kety-Schmidt,,,163.39,10.27,103.00,15.00
+Canis,"(Roald et al., 1991)",6,"Isoflurane, N2O",Kety-Schmidt,,,163.39,10.27,103.00,15.00
 Canis,"(Milde et al., 1990)",18,Halothane,Kety-Schmidt,,,180.80,5.36,83.00,6.00
-Canis,"(Roald etal., 1988)",6,Halothane,Kety-Schmidt,,,141.52,13.40,51.50,6.40
-Canis,"(Roald et al., 1989)",5,"Isoflurane, N 20",Kety-Schmidt,,,200.45,4.50,58.80,4.80
-Canis,"(Fleischer et al., 1988)",9,"Halothane, N 20",Kety-Schmidt,,,236.60,17.90,66.00,4.00
-,"(McPherson and Traystman,",,,,,,,,,
-Canis,1988),12,Isoflurane,Kety-Schmidt,,,162.95,17.90,69.50,11.00
-Canis,"(Milde et al., 1985)",6,"Halothane, N 20",Kety-Schmidt,,,246.43,12.10,145.00,23.00
+Canis,"(Roald et al., 1988)",6,Halothane,Kety-Schmidt,,,141.52,13.40,51.50,6.40
+Canis,"(Roald et al., 1989)",5,"Isoflurane, N2O",Kety-Schmidt,,,200.45,4.50,58.80,4.80
+Canis,"(Fleischer et al., 1988)",9,"Halothane, N2O",Kety-Schmidt,,,236.60,17.90,66.00,4.00
+Canis,"(McPherson and Traystman, 1988)",12,Isoflurane,Kety-Schmidt,,,162.95,17.90,69.50,11.00
+Canis,"(Milde et al., 1985)",6,"Halothane, N2O",Kety-Schmidt,,,246.43,12.10,145.00,23.00
 Canis,"(Lanier et al., 1985)",12,Halothane,Kety-Schmidt,,,191.07,7.40,62.60,4.30
 Canis,"(Lanier et al., 1986)",12,Halothane,Kety-Schmidt,,,159.20,8.00,67.00,6.00
-Canis,"(Nugent et al., 1982)",12,"Halothane, N 20",Kety-Schmidt,,,240.85,13.40,112.00,11.00
+Canis,"(Nugent et al., 1982)",12,"Halothane, N2O",Kety-Schmidt,,,240.85,13.40,112.00,11.00
 Canis,"(Steen et al., 1983)",6,Spinal Anesthesia,Kety-Schmidt,,,220.98,14.30,56.00,7.00
 Canis,"(Miyauchi et al., 1985)",10,Halothane,Kety-Schmidt,,,267.90,8.90,59.00,3.00
-Canis,"(Artru and Michenfelder, 1980)",14,"Halothane, N 20",Kety-Schmidt,,,205.40,8.90,78.00,7.00
-Canis,"(Boarini et al., 1984)",10,N 20,Kety-Schmidt,,,218.75,20,57.00,4.00
-Canis,"(Kassell et al., 1983)",6,"Halothane, N 20",Kety-Schmidt,,,151.80,17.90,68.00,6.00
+Canis,"(Artru and Michenfelder, 1980)",14,"Halothane, N2O",Kety-Schmidt,,,205.40,8.90,78.00,7.00
+Canis,"(Boarini et al., 1984)",10,N2O,Kety-Schmidt,,,218.75,.20,57.00,4.00
+Canis,"(Kassell et al., 1983)",6,"Halothane, N2O",Kety-Schmidt,,,151.80,17.90,68.00,6.00
 Canis,"(Qureshi et al., 1999)",10,Pentobarbital,Kety-Schmidt,,,73.20,9.00,22.90,1.90
 Canis,"(Rhodes et al., 1981)",6,Pentobarbital,PET,,,159.82,36.20,39.90,8.30
-Canis,"(Forsman et al., 1986)",6,"Halothane, N 20",Kety-Schmidt,,,243.30,4.00,62.00,11.00
-Canis,"(Artru and Michenfelder, 1981)",6,"Halothane, N 20",Kety-Schmidt,,,220.98,17.90,124.00,12.00
+Canis,"(Forsman et al., 1986)",6,"Halothane, N2O",Kety-Schmidt,,,243.30,4.00,62.00,11.00
+Canis,"(Artru and Michenfelder, 1981)",6,"Halothane, N2O",Kety-Schmidt,,,220.98,17.90,124.00,12.00
 Canis,"(Chen et al., 1984)",9,Pentobarbital,Kety-Schmidt,,,156.25,26.80,49.50,5.30
 Canis,"(Sturaitis et al., 1994)",10,Isoflurane,Kety-Schmidt,,,151.80,22.30,,
 Canis,"(Roth et al., 1970)",12,none,Microspheres,,,,,30.80,6.60
 Sus,"(Poulsen et al., 1997)",7,"Ketamine, Midazolam",PET,25.25,3.00,171.00,18.00,37.00,3.00
-Sus,"(Akeson et al., 1992)",9,"Fentanyl, N 20",Kety-Schmidt,,,194.00,24.00,56.10,9.90
+Sus,"(Akeson et al., 1992)",9,"Fentanyl, N2O",Kety-Schmidt,,,194.00,24.00,56.10,9.90
 Sus,"(Miller et al., 1987)",4,Pentobarbital,Microspheres,,,84.80,26.80,30.00,10.00
 Sus,"(Sakoh et al., 2000)",11,"Fentanyl, Midazolam",PET,,,197.00,7.70,42.30,1.20
-Sus,"(Stange et al., 1989)",8,"Droperidol, N 20",Microspheres,,,102.70,50.60,34.00,17.00
+Sus,"(Stange et al., 1989)",8,"Droperidol, N2O",Microspheres,,,102.70,50.60,34.00,17.00
 Sus,"(Madsen et al., 1990a)",18,"Ketamine, Midazolam",Microspheres,,,,,45.60,
-Lepus,"(Drummond et al., 1986)",12,"Morphine, N 20",Kety-Schmidt,,,143.30,38.80,46.50,27.70
+Lepus,"(Drummond et al., 1986)",12,"Morphine, N2O",Kety-Schmidt,,,143.30,38.80,46.50,27.70
 Lepus,"(Kaieda et al., 1989)",8,Halothane,Kety-Schmidt,,,165.20,62.50,71.00,30.00
 Lepus,"(Kaieda et al., 1989)",8,Isoflurane,Kety-Schmidt,,,120.50,49.10,65.00,23.00
 Lepus,"(Pearce et al., 1981)",38,Halothane,Kety-Schmidt,,,205.40,107.10,48.00,18.50
-Lepus,"(Todd etal., 1994)",7,Isoflurane,Microspheres,,,145.50,46.00,77.00,19.00
-Felis,"(Van Zijl et al., 1997)",10,"Isoflurane, N 20",NMR,21.90,3.30,,,,
+Lepus,"(Todd et al., 1994)",7,Isoflurane,Microspheres,,,145.50,46.00,77.00,19.00
+Felis,"(Van Zijl et al., 1997)",10,"Isoflurane, N2O",NMR,21.90,3.30,,,,
 Felis,"(Haller et al., 1990)",7,Alpha Chloralose,Kety-Schmidt,35.20,13.20,147.32,5.40,38.00,16.00
 Felis,"(Unterberg et al., 1988)",7,Alpha Chloralose,Microspheres,32.00,6.00,117.00,14.00,29.60,2.20
 Felis,"(Andersen et al., 1988)",24,Alpha Chloralose,Microspheres,29.00,4.00,107.00,13.00,29.90,2.80
@@ -137,10 +136,10 @@ Felis,"(Fiat and Kang, 1993)",5,Pentobarbital,NMR,,,120.00,60.00,38.00,12.00
 Felis,"(Kobayashi et al., 1992)",20,Alpha Chloralose,Kety-Schmidt,,,232.14,40.20,60.00,6.00
 Felis,"(Stingele et al., 1996)",9,Fentanyl,Microspheres,,,258.90,26.80,76.00,9.00
 Felis,"(Frewen et al., 1989)",6,Ketamine,Kety-Schmidt,,,91.10,26.20,52.60,16.70
-Felis,"(Todd and Drummond, 1984)",18,N 20,Kety-Schmidt,,,196.40,15.60,51.00,4.00
+Felis,"(Todd and Drummond, 1984)",18,N2O,Kety-Schmidt,,,196.40,15.60,51.00,4.00
 Felis,"(Pekar et al., 1995)",7,Pentobarbital,NMR,,,150.00,50.00,,
 Meriones,"(Van Uitert and Levy, 1978)",10,none,Kety-Schmidt,,,,,102.00,12.60
-Rattus,"(B linetal., 1991)",10,none,Sokoloff,56.10,7.10,,,,
+Rattus,"(Blin et al., 1991)",10,none,Sokoloff,56.10,7.10,,,,
 Rattus,"(Borgstrom et al., 1976)",7,none,Sokoloff,60.00,15.90,,,,
 Rattus,"(Duelli et al., 2000)",5,none,Sokoloff,72.00,5.60,,,,
 Rattus,"(Hawkins et al., 1974)",27,none,Sokoloff,62.00,8.00,,,,
@@ -149,38 +148,38 @@ Rattus,"(Soncrant et al., 1992)",16,none,Sokoloff,84.00,2.00,,,,
 Rattus,"(Linde et al., 1999)",8,none,Kety-Schmidt,66.00,17.00,374.00,84.00,106.00,23.00
 Rattus,"(Madsen et al., 1998)",31,none,Kety-Schmidt,66.00,nr,392.00,nr,108.00,25.00
 Rattus,"(Meldrum and Nilsson, 1976)",10,none,Kety-Schmidt,77.00,19.00,440.00,,100.00,9.50
-Rattus,"(Takei etal., 1983)",15,none,Kety-Schmidt,92.00,31.00,495.00,85.20,104.00,15.50
-Rattus,"(TakeietaL, 1983)",15,none,Kety-Schmidt,97.00,38.70,485.00,77.50,107.00,15.50
-Rattus,"(Takei etal., 1983)",15,none,Kety-Schmidt,84.00,27.10,498.00,89.10,103.00,11.60
+Rattus,"(Takei et al., 1983)",15,none,Kety-Schmidt,92.00,31.00,495.00,85.20,104.00,15.50
+Rattus,"(Takei et al., 1983)",15,none,Kety-Schmidt,97.00,38.70,485.00,77.50,107.00,15.50
+Rattus,"(Takei et al., 1983)",15,none,Kety-Schmidt,84.00,27.10,498.00,89.10,103.00,11.60
 Rattus,"(Magata et al., 1995)",7,Pentobarbital,PET,51.00,14.00,,,61.00,7.00
-Rattus,"(Gjedde and Hindfelt, 1975)",6,N 20,Kety-Schmidt,,,352.70,76.30,106.00,17.10
-Rattus,"(Gjedde etal., 1977)",10,N 20,Kety-Schmidt,,,357.10,84.80,108.00,6.30
-Rattus,"(Hauerberg and Juhler, 1997)",8,"Halothane, N 20",Kety-Schmidt,,,321.40,84.80,130.00,29.00
-Rattus,"(Nemoto et al., 1996a)",17,N 20,Kety-Schmidt,,,342.19,63.20,111.50,27.00
-Rattus,"(Nilsson and Siesjo, 1975)",5,Fentanyl,Kety-Schmidt,,,495.50,17.90,135.00,13.00
-Rattus,"(Harp et al., 1976)",9,N 20,Kety-Schmidt,,,459.80,8.90,108.00,5.00
+Rattus,"(Gjedde and Hindfelt, 1975)",6,N2O,Kety-Schmidt,,,352.70,76.30,106.00,17.10
+Rattus,"(Gjedde et al., 1977)",10,N2O,Kety-Schmidt,,,357.10,84.80,108.00,6.30
+Rattus,"(Hauerberg and Juhler, 1997)",8,"Halothane, N2O",Kety-Schmidt,,,321.40,84.80,130.00,29.00
+Rattus,"(Nemoto et al., 1996a)",17,N2O,Kety-Schmidt,,,342.19,63.20,111.50,27.00
+Rattus,"(Nilsson and Siesjö, 1975)",5,Fentanyl,Kety-Schmidt,,,495.50,17.90,135.00,13.00
+Rattus,"(Harp et al., 1976)",9,N2O,Kety-Schmidt,,,459.80,8.90,108.00,5.00
 Rattus,"(Harp et al., 1976)",6,Fentanyl,Kety-Schmidt,,,509.82,19.64,133.00,11.00
 Rattus,"(Harp et al., 1976)",8,Halothane,Kety-Schmidt,,,363.39,37.50,136.00,9.00
 Rattus,"(Harp et al., 1976)",6,Halothane,Kety-Schmidt,,,243.75,25.00,97.00,8.00
-Rattus,"(Carlsson et al., 1976)",5,N 20,Kety-Schmidt,,,455.40,8.90,121.00,8.00
-Rattus,"(Hemmingsen et al., 1979a)",10,N 20,Kety-Schmidt,,,549.10,nr,97.00,nr
-Rattus,"(Hemmingsen et al., 1979a)",8,"Halothane, N 20",Kety-Schmidt,,,522.30,nr,107.00,nr
+Rattus,"(Carlsson et al., 1976)",5,N2O,Kety-Schmidt,,,455.40,8.90,121.00,8.00
+Rattus,"(Hemmingsen et al., 1979a)",10,N2O,Kety-Schmidt,,,549.10,nr,97.00,nr
+Rattus,"(Hemmingsen et al., 1979a)",8,"Halothane, N2O",Kety-Schmidt,,,522.30,nr,107.00,nr
 Rattus,"(Hemmingsen et al., 1979a)",9,Pentobarbital,Kety-Schmidt,,,540.20,nr,78.00,nr
-Rattus,"(Nilsson and Siesjo, 1976)",8,N 20,Kety-Schmidt,,,338.39,8.03,79.50,2.40
-Rattus,"(Dahlgren et al., 1981b)",8,N 20,Kety-Schmidt,,,391.00,28.00,110.00,11.00
-Rattus,"(Hemmingsen et al., 1979b)",7,N 20,Kety-Schmidt,,,584.80,nr,103.00,nr
-Rattus,"(Klementavicius etal., 1996b)",17,"Halothane, N 20",Kety-Schmidt,,,305.80,31.30,131.80,20.20
-Rattus,"(Nemoto et al., 1996b)",14,N 20,Kety-Schmidt,,,346.88,66.30,110.50,28.00
+Rattus,"(Nilsson and Siesjö, 1976)",8,N2O,Kety-Schmidt,,,338.39,8.03,79.50,2.40
+Rattus,"(Dahlgren et al., 1981b)",8,N2O,Kety-Schmidt,,,391.00,28.00,110.00,11.00
+Rattus,"(Hemmingsen et al., 1979b)",7,N2O,Kety-Schmidt,,,584.80,nr,103.00,nr
+Rattus,"(Klementavicius et al., 1996b)",17,"Halothane, N2O",Kety-Schmidt,,,305.80,31.30,131.80,20.20
+Rattus,"(Nemoto et al., 1996b)",14,N2O,Kety-Schmidt,,,346.88,66.30,110.50,28.00
 Rattus,"(Fiat and Kang, 1993)",5,Pentobarbital,Kety-Schmidt,,,209.00,35.00,140.00,nr
-Rattus,"(Wang et al., 1993)",12,N 20,Kety-Schmidt,,,316.96,13.40,85.00,17.00
-Rattus,"(Kochanek et al., 1988)",17,"Halothane, N 20",Kety-Schmidt,,,424.10,55.80,149.00,17.00
-Rattus,"(Singh etal., 1992)",16,N 20,Kety-Schmidt,,,455.36,148.40,141.30,40.50
+Rattus,"(Wang et al., 1993)",12,N2O,Kety-Schmidt,,,316.96,13.40,85.00,17.00
+Rattus,"(Kochanek et al., 1988)",17,"Halothane, N2O",Kety-Schmidt,,,424.10,55.80,149.00,17.00
+Rattus,"(Singh et al., 1992)",16,N2O,Kety-Schmidt,,,455.36,148.40,141.30,40.50
 Rattus,"(Kozniewska and Oseka, 1992)",10,Chloral Hydrate,Kety-Schmidt,,,334.80,22.30,85.00,4.00
-Rattus,"(Nilsson and Siesjo, 1983)",4,Halothane,Kety-Schmidt,,,321.40,nr,76.00,nr
-Rattus,"(Klementavicius et al., 1996a)",10,"Isoflurane, N 20",Kety-Schmidt,,,288.39,95.10,169.88,37.61
-Rattus,"(Baughman et al., 1990)",8,N 20,Kety-Schmidt,,,511.16,53.60,,
-Rattus,"(Nemoto et al., 1988)",10,N 20,Kety-Schmidt,,,261.16,107.10,,
-Rattus,"(Matsumoto et al., 1975)",12,N 20,Kety-Schmidt,,,,,86.00,15.00
+Rattus,"(Nilsson and Siesjö, 1983)",4,Halothane,Kety-Schmidt,,,321.40,nr,76.00,nr
+Rattus,"(Klementavicius et al., 1996a)",10,"Isoflurane, N2O",Kety-Schmidt,,,288.39,95.10,169.88,37.61
+Rattus,"(Baughman et al., 1990)",8,N2O,Kety-Schmidt,,,511.16,53.60,,
+Rattus,"(Nemoto et al., 1988)",10,N2O,Kety-Schmidt,,,261.16,107.10,,
+Rattus,"(Matsumoto et al., 1975)",12,N2O,Kety-Schmidt,,,,,86.00,15.00
 Mus,"(Itoh et al., 2001)",5,none,Sokoloff,58.00,6.00,,,117.00,20.00
 Mus,"(Kamp et al., 1980)",10,none,Sokoloff,71.60,11.40,,,,
 Mus,"(Kamp et al., 1980)",17,none,Sokoloff,65.00,9.00,,,,
@@ -193,5 +192,5 @@ Ovis,"(Donegan et al., 1985)",3,none,Microspheres,,,245.50,84.00,78.00,17.30
 Ovis,"(Iwamoto et al., 1991)",8,none,Microspheres,,,,,66.40,5.80
 Ovis,"(Yang and Krasney, 1995)",9,none,Microspheres,,,,,55.00,17.00
 Ovis,"(Matalon et al., 1983)",10,none,Microspheres,,,,,60.00,3.50
-Capra,"(Schwedler et al., 1982)",17,none Probe 192.40 16.10 77.00 7.00,,,,,,,
-Capra,"(Stanley and Chemiack, 1976)",6,none Probe 154.46 4.50,,,,,,,
+Capra,"(Schwedler et al., 1982)",17,none,Probe,,,192.40,16.10,77.00,7.00
+Capra,"(Stanley and Cherniack, 1976)",6,none,Probe,,,154.46,4.50,,

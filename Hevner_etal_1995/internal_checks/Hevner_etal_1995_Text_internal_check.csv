@@ -1,0 +1,17 @@
+"check_id","basis","observed","printed","difference","tolerance","status","note"
+"text19_vs_fig31A_whole_brain_mean","text row 19 (p. 335, 158 mU/mg tissue) vs Fig. 31A whole brain bar",158,158,0,1,"pass",
+"text19_sd_vs_fig31A_whole_brain_sem","text row 19 S.D. 12 / sqrt(6) vs Fig. 31A whole brain S.E.M. bar",5.1,4.89897948556636,0.201020514433643,1,"pass","p. 335 states mean ± S.D.; the legend says the figure plots S.E.M."
+"text20_vs_fig31B_whole_brain_mean","text row 20 (p. 335, 1760 mU/mg protein) vs Fig. 31B whole brain bar",1767,1760,7,15,"pass",
+"text20_sd_vs_fig31B_whole_brain_sem","text row 20 S.D. 100 / sqrt(6) vs Fig. 31B whole brain S.E.M. bar",31,40.8248290463863,-9.82482904638631,10,"pass","digitised 31 vs 41 expected from the printed S.D.; kept as digitised"
+"text26_vs_fig31A_cerebellar_cortex","text row 26 (p. 336, 157 ± 17) vs Fig. 31A cerebellar cortex bar",157.8,157,0.800000000000011,1,"pass",
+"text26_sem_vs_fig31A_cerebellar_cortex","text row 26 S.E.M. 17 vs Fig. 31A cerebellar cortex cap",15.9,17,-1.1,1.5,"pass",
+"text27_vs_fig31B_visual_cortex","text row 27 (p. 336, 1760 ± 150) vs Fig. 31B visual cortex bar",1770,1760,10,15,"pass",
+"text27_sem_vs_fig31B_visual_cortex","text row 27 S.E.M. 150 vs Fig. 31B visual cortex cap",132,150,-18,15,"mismatch","digitised 132 vs printed 150 (7 px); the printed value takes precedence"
+"text35_vs_fig32_CA3","text row 35 (p. 337, 0.495 ± 0.017) vs Fig. 32 CA3 bar",0.4951,0.495,9.9999999999989e-05,0.0015,"pass",
+"text35_sem_vs_fig32_CA3","text row 35 S.E.M. 0.017 vs Fig. 32 CA3 cap",0.0167,0.017,-0.000300000000000002,0.0025,"pass",
+"text36_vs_fig32_CA1","text row 36 (p. 337, 0.357 ± 0.005) vs Fig. 32 CA1 bar",0.3564,0.357,-0.000599999999999989,0.0015,"pass",
+"text36_sem_vs_fig32_CA1","text row 36 S.E.M. 0.005 vs Fig. 32 CA1 cap",0.005,0.005,0,0.0025,"pass",
+"text34_vs_fig32_ratio","text row 34 (p. 337, 78 % higher) vs 100 x (Fig. 32 mesencephalic V / dentate granule - 1)",76.6734279918864,78,-1.32657200811359,1,"mismatch","marginal: 76.7 vs 78; the authors may have used unrounded means"
+"text24_vs_fig31A_gray_white","text row 24 (p. 336, 'about 10- to 12-fold') vs mean gray / mean white of Fig. 31A (printed = range midpoint)",10.6889312977099,11,-0.311068702290077,1,"pass",
+"text25_vs_fig31B_gray_white","text row 25 (p. 336, 'about eight- to 10-fold') vs mean gray / mean white of Fig. 31B",8.82618613138686,9,-0.173813868613138,1,"pass",
+"text28_vs_fig31C_gray_white","text row 28 (p. 337, 'about four to five times') vs mean gray / mean white of Fig. 31C",3.84545875810936,4.5,-0.654541241890639,0.5,"mismatch","3.85 by mean-of-means; the authors' basis for 'four to five' is not stated"

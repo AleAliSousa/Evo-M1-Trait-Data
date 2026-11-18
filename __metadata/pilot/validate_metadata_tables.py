@@ -22,14 +22,15 @@ PAPERS = (
     "Fobbs_etal_2011",
     "Kennedy_etal_1978",
 )
-EXPECTED_ACTIVE_TABLES = 47  # Ten-paper pilot baseline; update deliberately if scope grows.
+EXPECTED_ACTIVE_TABLES = 49  # Includes Kaufman's bibliography and OCR audit.
 
 # Keep the suffixes required by build_variable_catalog.R and source_match.R.
 ROLE_SUFFIXES = {
+    "bibliography": ("bibliography",),
     "field_definitions": ("definitions",),
     "citation_lookup": ("references", "footnotes"),
     "citation_scope": ("reference_columns",),
-    "errata_ledger": ("errata",),
+    "errata_ledger": ("errata", "ocr_audit"),
     "proposed_taxon_mapping": ("species_key_proposed",),
     "taxon_annotation_lookup": ("taxa",),
     "generated_source_match": ("source_match",),
@@ -43,6 +44,7 @@ HEADERS = {
     "footnotes": ("letter", "definition"),
     "reference_columns": ("key_column", "applies_to", "separator", "note"),
     "errata": ("errata_id", "item", "variable", "locator", "printed_value", "repo_value_before", "issue_type", "proposed_value", "evidence", "status", "status_reason", "raised_by", "date_raised", "date_resolved", "note"),
+    "ocr_audit": ("entry_id", "pdf_page", "original_ocr", "page_checked_transcription", "review_scope"),
     "species_key_proposed": ("variant_name", "accepted_name", "source_publication", "collection", "ncbi_taxid", "basis", "note"),
     "taxa": ("printed_name", "printed_column", "Species_binomial", "taxon_rank", "species_basis", "taxon_type", "note"),
     "source_match": ("item", "row_id", "species", "key_column", "key_cell_as_printed", "n_keys_in_cell", "ref_key", "citation", "variable", "value", "match_basis", "status"),
@@ -52,7 +54,7 @@ HEADERS = {
 
 # These files can intentionally cover more than the manifest's related item.
 PAPER_SCOPED_ROLES = {"errata_ledger", "proposed_taxon_mapping"}
-SHARED_SCOPES = {"Kaufman__2004_TablesA1-A14"}
+SHARED_SCOPES = {"Kaufman__2004_TablesA1-A14", "Kaufman__2004_bibliography"}
 
 
 def read_rows(path: Path) -> list[dict[str, str]]:
@@ -78,7 +80,10 @@ def validate(root: Path) -> int:
             errors.append(f"{paper}: missing pipeline_files.csv")
             continue
         for row in read_rows(manifest):
-            if row.get("content_role") not in ROLE_SUFFIXES or row.get("lifecycle_status") != "active":
+            if ((row.get("content_role") == "bibliography"
+                 and row.get("file_role") != "metadata_table")
+                    or row.get("content_role") not in ROLE_SUFFIXES
+                    or row.get("lifecycle_status") != "active"):
                 continue
             row = {**row, "paper": paper}
             active.append(row)

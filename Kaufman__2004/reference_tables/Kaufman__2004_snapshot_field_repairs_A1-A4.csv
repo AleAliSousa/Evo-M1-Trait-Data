@@ -1,0 +1,100 @@
+table,snapshot_row,pdf_page,field,observed_ocr,printed_value
+TableA1,42,117,Anesthesia,"Phencyclidine, N 20","Phencyclidine, N2O"
+TableA1,43,117,Anesthesia,70% N 20,70% N2O
+TableA1,45,117,Anesthesia,"Ketamine, N 20","Ketamine, N2O"
+TableA1,55,118,Anesthesia,"Sevoflurane, N 20","Sevoflurane, N2O"
+TableA1,58,118,Anesthesia,"Fentanyl, N 20","Fentanyl, N2O"
+TableA1,65,118,Anesthesia,N 20,N2O
+TableA1,76,119,Anesthesia,N 20,N2O
+TableA1,91,119,Anesthesia,N 20,N2O
+TableA1,93,119,Anesthesia,N 20,N2O
+TableA2,11,121,Anesthesia,"Phencyclidine, N 20","Phencyclidine, N2O"
+TableA2,12,121,Anesthesia,"Phencyclidine, N 20","Phencyclidine, N2O"
+TableA2,13,121,Anesthesia,N 20,N2O
+TableA2,21,121,Anesthesia,"Fentanyl, N 20","Fentanyl, N2O"
+TableA2,26,122,Anesthesia,N 20,N2O
+TableA2,40,122,Anesthesia,N 20,N2O
+TableA2,56,123,Anesthesia,N 20,N2O
+TableA3,43,126,Anesthesia,"Phencyclidine, N2","Phencyclidine, N2O"
+TableA3,44,126,Anesthesia,"Phencyclidine, N2","Phencyclidine, N2O"
+TableA3,45,126,Anesthesia,N 20,N2O
+TableA3,55,127,Anesthesia,"Sevoflurane, N 20","Sevoflurane, N2O"
+TableA3,58,127,Anesthesia,"Fentanyl, N 20","Fentanyl, N2O"
+TableA3,65,127,Anesthesia,N 20,N2O
+TableA3,67,127,Anesthesia,N 20,N2O
+TableA3,80,128,Anesthesia,N 20,N2O
+TableA3,94,128,Anesthesia,N 20,N2O
+TableA4,31,131,Anesthesia,"Phencyclidine, N 20","Phencyclidine, N2O"
+TableA4,41,131,Anesthesia,"Fentanyl, N 20","Fentanyl, N2O"
+TableA4,47,131,Anesthesia,N 20,N2O
+TableA4,49,132,Anesthesia,N 20,N2O
+TableA4,68,132,Anesthesia,N 20,N2O
+TableA3,52,126,Anesthesia,"Ketamine, N 20","Ketamine, N2O"
+TableA1,60,118,Mode,MicTospheres,Microspheres
+TableA1,109,120,Reference,(,"(Sokoloff et al., 1977)"
+TableA1,109,120,n,,10
+TableA1,109,120,Anesthesia,,none
+TableA1,109,120,Glucose,1977,84.5
+TableA1,109,120,Glucose_SD,10,2.5
+TableA1,109,120,Oxygen,84.5,
+TableA1,109,120,Oxygen_SD,2.5,
+TableA1,120,120,Glucose,73,73.4
+TableA1,120,120,Glucose_SD,4,5.2
+TableA1,120,120,Oxygen,5.2,
+TableA2,69,123,Reference,(,"(Sokoloff et al., 1977)"
+TableA2,69,123,n,,10
+TableA2,69,123,Anesthesia,,none
+TableA2,69,123,Glucose,1977,79.0
+TableA2,69,123,Glucose_SD,10,1.0
+TableA2,69,123,Oxygen,79.0,
+TableA2,69,123,Oxygen_SD,1.0,
+TableA3,52,126,Oxygen,,245.0
+TableA3,52,126,Oxygen_SD,,34.0
+TableA3,52,126,BloodFlow,,70.5
+TableA3,52,126,BloodFlow_SD,,15.0
+TableA3,59,127,Anesthesia,none 76.8 4.5,none
+TableA3,59,127,BloodFlow,,76.8
+TableA3,59,127,BloodFlow_SD,,4.5
+TableA3,60,127,Anesthesia,Sevoflurane 46.2 3.0,Sevoflurane
+TableA3,60,127,BloodFlow,,46.2
+TableA3,60,127,BloodFlow_SD,,3.0
+TableA3,61,127,Anesthesia,Sevoflurane 59.0 5.5,Sevoflurane
+TableA3,61,127,BloodFlow,,59.0
+TableA3,61,127,BloodFlow_SD,,5.5
+TableA3,69,127,BloodFlow,,139.5
+TableA3,69,127,BloodFlow_SD,,22.0
+TableA3,111,129,Reference,(,"(Sokoloff et al., 1977)"
+TableA3,111,129,n,,10
+TableA3,111,129,Anesthesia,,none
+TableA3,111,129,Glucose,1977,104.0
+TableA3,111,129,Glucose_SD,10,2.0
+TableA3,111,129,Oxygen,104.0,
+TableA3,111,129,Oxygen_SD,2.0,
+TableA4,77,133,Reference,(,"(Sokoloff et al., 1977)"
+TableA4,77,133,n,,10
+TableA4,77,133,Anesthesia,,none
+TableA4,77,133,Glucose,1977,61.0
+TableA4,77,133,Glucose_SD,10,2.0
+TableA4,77,133,Oxygen,61.0,
+TableA4,77,133,Oxygen_SD,2.0,
+TableA1,14,116,Glucose_SD,"8,7",8.7
+TableA2,9,121,BloodFlow_SD,,8.8
+TableA2,10,121,BloodFlow_SD,,8.4
+TableA2,15,121,BloodFlow_SD,,7.6
+TableA3,117,129,BloodFlow_SD,,11.0
+TableA3,118,129,BloodFlow_SD,,32.0
+TableA3,119,129,BloodFlow_SD,,6.0
+TableA3,120,129,BloodFlow_SD,,8.0
+TableA4,22,130,Glucose,"33,1",33.1
+TableA4,27,131,BloodFlow_SD,,6.8
+TableA4,38,131,BloodFlow_SD,,5.1
+TableA4,42,131,BloodFlow_SD,,7.0
+TableA4,43,131,BloodFlow_SD,,3.6
+TableA4,44,131,BloodFlow_SD,,4.7
+TableA4,45,131,BloodFlow_SD,,7.8
+TableA4,50,132,BloodFlow_SD,,6.4
+TableA4,51,132,BloodFlow_SD,,5.0
+TableA4,82,133,BloodFlow_SD,,17.0
+TableA4,83,133,BloodFlow_SD,,17.1
+TableA3,68,127,BloodFlow,,117.0
+TableA3,68,127,BloodFlow_SD,,10.0

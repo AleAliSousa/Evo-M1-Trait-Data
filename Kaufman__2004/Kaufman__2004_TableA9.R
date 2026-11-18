@@ -2,8 +2,8 @@
 #   "Pattern and scaling of regional cerebral glucose metabolism in mammals"
 # Appendix per-study table: regional cerebral metabolic rate (rCMR) & blood flow (rCBF).
 #
-# Snapshot -> clean tidy CSV. Golden rule: the snapshot is frozen/faithful to the
-# dissertation PDF; ALL cleaning happens here. One row per published study entry.
+# Snapshot -> clean tidy CSV. The snapshot is a transcription of the PDF table;
+# it may contain OCR errors. One row per published study entry.
 #
 # Units: CMRgl (glucose) & CMRO2 (oxygen) in umol/100 g/min; CBF (blood flow) in mL/100 g/min.
 # Columns documented in reference_tables/Kaufman__2004_definitions.csv.
@@ -55,7 +55,7 @@ region_map <- c(
 region <- unname(region_map[item_name])
 if (is.na(region)) stop("No region mapping for '", item_name, "'.", call. = FALSE)
 
-## ---- read the frozen snapshot (verbatim capture of the PDF table) ----
+## ---- read the snapshot transcription of the PDF table ----
 raw <- read.csv(paste0(item_name, "_snapshot.csv"),
                 check.names = FALSE, colClasses = "character", stringsAsFactors = FALSE)
 source(file.path(folder, "Kaufman__2004_source_corrections.R"), local = TRUE)

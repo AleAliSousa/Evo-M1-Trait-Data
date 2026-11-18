@@ -44,3 +44,8 @@ kaufman-a08-tsv,kaufman-a08-builder,produced_by,,Producer declared in file regis
 kaufman-a08-tsv,kaufman-a08-csv,exported_from,,Same registered item build
 kaufman-a09-tsv,kaufman-a09-builder,produced_by,,Producer declared in file registry
 kaufman-a09-tsv,kaufman-a09-csv,exported_from,,Same registered item build
+kaufman-bibliography,kaufman-paper,transcribed_from,Literature Cited,OCR-derived source transcription; page image verification is recorded per entry where available.
+kaufman-reference-lookup,kaufman-bibliography,reads,entry_id and citation_transcription,Reference-key lookup resolves against the source-local bibliography.
+kaufman-reference-lookup,shared-cerebral-reference-catalog-builder,produced_by,,Generated citation lookup from the compilation catalog builder.
+kaufman-bibliography-ocr-audit,kaufman-paper,validates_against,Literature Cited; individual PDF pages in audit,Targeted checks compare OCR transcription against printed page images.
+kaufman-bibliography,kaufman-bibliography-ocr-audit,derived_from,entry_id,Targeted corrections to source bibliography are documented in the audit ledger.

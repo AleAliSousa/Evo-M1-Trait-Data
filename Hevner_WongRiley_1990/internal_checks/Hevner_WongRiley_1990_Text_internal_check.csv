@@ -1,0 +1,5 @@
+"check_id","basis","observed","printed","difference","tolerance","status","note"
+"puff_enrichment_histochemistry","Table 1 Puff / Histochemistry: 100 x (relOD - 1) vs RESULTS p. 1335 'Puffs stained histochemically were 32% darker'",32,32,7.105427357601e-15,0.5,"pass",NA
+"puff_enrichment_immunohistochemistry","Table 1 Puff / Immunohistochemistry: 100 x (relOD - 1) vs RESULTS p. 1335 '19% darker'",19,19,-7.105427357601e-15,0.5,"pass",NA
+"light_column_decline_histochemistry","Table 1 Light column / Histochemistry: 100 x (1 - relOD) vs RESULTS p. 1337 '20% decreased'",20,20,-3.5527136788005e-15,0.5,"pass",NA
+"light_column_decline_immunohistochemistry","Table 1 Light column / Immunohistochemistry: 100 x (1 - relOD) vs RESULTS p. 1337 'the decrease was 21%'",21,21,-3.5527136788005e-15,0.5,"pass",NA

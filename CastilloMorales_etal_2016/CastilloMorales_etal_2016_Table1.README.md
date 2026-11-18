@@ -14,24 +14,6 @@ body mass^0.64), slope from the 493-species data of González-Lagos et al.
 
 ## Source → Snapshot → Data readable → Online database
 
-<<<<<<< HEAD
-- **Frozen source:** the publisher PDF in this folder (Table 1, p. 3),
-  plus the paper's figshare supplementary file `rsob160132_si_001.csv`
-  (gene-family results only — no trait data).
-- **Reformat:** `CastilloMorales_etal_2016_Table1.R` transcribes Table 1
-  verbatim (volumes in cm³ as printed; species names as printed) and
-  writes:
-  - `CastilloMorales_etal_2016_Table1.csv` (analysis-ready, 28 rows)
-  - `../__Public/comparative-data/10.1098%2Frsob.160132_Table1.tsv` (public, DOI-encoded —
-    name is the expected Item encoded; see Registry)
-- **Definitions:** `reference_tables/CastilloMorales_etal_2016_Table1_definitions.csv`.
-- **Reader:** the CSV/TSV were produced by Muse (Buddy), Michael Proulx's
-  AI assistant, with a Python equivalent of the .R build and
-  cross-checked programmatically: recomputing Nr from the two volume
-  columns reproduces all 28 printed Nr values to 2 dp. The R script was
-  run in an isolated copy on 2026-11-18; its CSV and TSV matched the
-  committed files by cell.
-=======
 - **Source:** the publisher PDF of the paper, held in this folder
   (`Castillo-Morales-2016-Neocortex_expansion.pdf`); Table 1 is a printed
   table on p. 3. The paper's figshare supplementary file
@@ -70,7 +52,6 @@ printed decimal. **Result (R run, 2026-11-18): 28 of 28 pass.** The
 mouse row is the widest case (printed volumes 0.48/0.12 cm³ carry only
 two significant figures; recomputed Nr 0.333 against printed 0.32,
 inside the envelope). Nothing was adjusted to make a check pass.
->>>>>>> 92a9b69404ddaff1cfd1c8f6e9607368c2dbeb5b
 
 ## Data role and caveats
 
@@ -95,10 +76,6 @@ inside the envelope). Nothing was adjusted to make a check pass.
 <!-- errata:begin -->
 ## Errata
 
-<<<<<<< HEAD
-The public TSV name above is the expected Item encoded
-(10.1098%2Frsob.160132_Table1). The registry row was added on 2026-11-18; descriptive metadata remain incomplete. Merge ingestion is pending.
-=======
 Generated from `reference_tables/CastilloMorales_etal_2016_errata.csv` by `_tools/dataset_builder/render_errata.R` -- edit the CSV, not this block. See `_tools/dataset_builder/ERRATA_CONVENTION.md`.
 
 | id | variable | where printed | printed | repo value before | issue | proposed | status | evidence | note |
@@ -107,4 +84,3 @@ Generated from `reference_tables/CastilloMorales_etal_2016_errata.csv` by `_tool
 
 1 recorded, 1 open (proposed), 0 confirmed, 0 withdrawn.
 <!-- errata:end -->
->>>>>>> 92a9b69404ddaff1cfd1c8f6e9607368c2dbeb5b

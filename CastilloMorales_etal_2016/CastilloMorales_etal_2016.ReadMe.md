@@ -17,13 +17,6 @@ is the trait source.
 
 --> USE THIS FILE: Castillo-Morales-2016-Neocortex_expansion.pdf (Table 1)
 
-<<<<<<< HEAD
-Build: `CastilloMorales_etal_2016_Table1.R` transcribes Table 1 to
-`CastilloMorales_etal_2016_Table1.csv` and to the DOI-coded public TSV.
-See `CastilloMorales_etal_2016_Table1.README.md` for the data role
-(secondary compilation), caveats and checks. The registry row was added
-on 2026-11-18; descriptive metadata remain incomplete.
-=======
 Build: Table 1 was transcribed exactly as printed into the frozen
 snapshot `CastilloMorales_etal_2016_Table1_snapshot.csv` before any
 cleaning; `CastilloMorales_etal_2016_Table1.R` reads only that snapshot
@@ -31,19 +24,10 @@ and writes `CastilloMorales_etal_2016_Table1.csv` and the DOI-coded
 public TSV. See `CastilloMorales_etal_2016_Table1.README.md` for the
 data role (secondary compilation), caveats and table checks. Registry
 row in `__ReadMe.xlsx` added 2026-11-18.
->>>>>>> 92a9b69404ddaff1cfd1c8f6e9607368c2dbeb5b
 
 Quality Notes:
 
 1. Every row's `Source` names the publication the authors compiled the
-<<<<<<< HEAD
-   volumes from (paper refs 84–99). 14 of the 16 sources are already
-   Evo-M1 folders, so most rows can be checked directly against the
-   primary compilations. Not in the repo when this item was built:
-   Beatty_Laughlin_2006 (mouse), Röhrs__1986 (ferret), Kruska__1980
-   (alpaca); the Ei values rest on Gonzalez-Lagos et al. 2010 (ref 83),
-   also not in the repo.
-=======
    volumes from (paper refs 84–99, itemised in
    `reference_tables/CastilloMorales_etal_2016_Table1_references.csv`).
    14 of the 16 sources are already Evo-M1 folders, so most rows can be
@@ -52,7 +36,6 @@ Quality Notes:
    (mouse), Roehrs__1986 (ferret), Kruska__1980 (alpaca); the Ei values
    rest on Gonzalez-Lagos et al. 2010 (ref 83) — see the
    GonzalezLagos_etal_2010 folder.
->>>>>>> 92a9b69404ddaff1cfd1c8f6e9607368c2dbeb5b
 
 2. Suspected misprint in the source table: the dog row (Schleifenbaum
    1973) prints brain volume 458.273 cm3 and neocortex 177.753 cm3 for a
@@ -62,9 +45,5 @@ Quality Notes:
    CastilloMorales_etal_2016-E001 (proposed), not fixed.
 
 3. Folder added 2026-11-18 by Muse (Buddy), Michael Proulx's AI
-<<<<<<< HEAD
-   assistant, at Michael Proulx's request. The registry row was added later on 2026-11-18; merge ingestion is pending.
-=======
    assistant, at Michael Proulx's request; rebuilt to the snapshot-first
    form in `_skills/build-dataset-item` the same day.
->>>>>>> 92a9b69404ddaff1cfd1c8f6e9607368c2dbeb5b

@@ -1,41 +1,3 @@
-<<<<<<< HEAD
-# CastilloMorales_etal_2016_Table1.R
-#
-# Castillo-Morales A, Monzon-Sandoval J, de Sousa AA, Urrutia AO,
-# Gutierrez H (2016). Neocortex expansion is linked to size variations in
-# gene families with chemotaxis, cell-cell signalling and immune response
-# functions in mammals. Open Biology 6: 160132. doi:10.1098/rsob.160132
-#
-# Item: Table 1 -- phenotypic traits for the 28 mammalian species analysed:
-# brain volume (cm3), neocortex volume (cm3), the literature source of the
-# volumes (refs 84-99), neocortex ratio Nr, encephalization index Ei and
-# maximum lifespan MLSP.
-#
-# Frozen source: the publisher PDF of the paper in this folder
-# (Castillo-Morales-2016-Neocortex_expansion.pdf, downloaded from
-# rsob.royalsocietypublishing.org). Table 1 is a printed table in the paper,
-# so the build is a verified transcription: the table below is the
-# transcription, and the script checks it by recomputing Nr from the two
-# volume columns for all 28 rows.
-#
-# Data role: SECONDARY compilation. The authors compiled each species'
-# volumes from the single literature source named in Source; Ei derives
-# from brain/body masses for 493 species provided by Gonzalez-Lagos et al.
-# 2010 (paper ref 83). Nothing in this table is a primary measurement.
-#
-# Transcription notes:
-#   * Ei signs: the PDF text layer renders the minus sign as a leading "2"
-#     (e.g. -2.014 prints as "22.014"); the signed values below are as
-#     intended by the paper's formula Ei = ln(brain mass / body mass^0.64).
-#   * Volumes kept in cm3 exactly as printed (no unit conversion).
-#
-# Outputs:
-#   CastilloMorales_etal_2016_Table1.csv          (this folder)
-#   ../__Public/comparative-data/10.1098%2Frsob.160132_Table1.tsv   (for __Public/comparative-data/)
-#
-# Registry note: the public TSV name is the expected Item encoded
-# (10.1098%2Frsob.160132_Table1). The registry row was added on 2026-11-18; descriptive metadata remain incomplete.
-=======
 ## ============================================================================
 ## CastilloMorales_etal_2016_Table1.R
 ##
@@ -79,7 +41,6 @@
 ##   __Public/comparative-data/<Item encoded>.tsv
 ##     (Item encoded looked up in __ReadMe.xlsx by Item name)
 ## ============================================================================
->>>>>>> 92a9b69404ddaff1cfd1c8f6e9607368c2dbeb5b
 
 ## ---- self-locating header: names are derived, never retyped ----------------
 ## (same mechanism as _tools/dataset_builder/load_dataset_builder.R:
@@ -120,11 +81,6 @@ while (!file.exists(file.path(repo_root, "__ReadMe.xlsx")) &&
 if (!file.exists(file.path(repo_root, "__ReadMe.xlsx")))
   stop("__ReadMe.xlsx not found walking up from ", folder)
 
-<<<<<<< HEAD
-write.csv(tab, "CastilloMorales_etal_2016_Table1.csv", row.names = FALSE)
-write.table(tab, "../__Public/comparative-data/10.1098%2Frsob.160132_Table1.tsv",
-            sep = "\t", row.names = FALSE, quote = FALSE)
-=======
 ## ---- Item encoded, looked up by Item name (never by row number) ------------
 registry     <- readxl::read_excel(file.path(repo_root, "__ReadMe.xlsx"),
                                    sheet = "Sheet1")
@@ -232,4 +188,3 @@ if (dir.exists(tsv_dir)) {
   warning("__Public/comparative-data not found under the repo root; ",
           "public TSV not written.")
 }
->>>>>>> 92a9b69404ddaff1cfd1c8f6e9607368c2dbeb5b

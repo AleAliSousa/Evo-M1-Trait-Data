@@ -14,13 +14,16 @@ Habilitationsschrift (Tierärztliche Hochschule Hannover, 1979).
 
 --> USE THIS FILE: Kruska-1980-Domestikationsbeding.pdf (Tabellen 1–2)
 
-Build: `Kruska__1980_Tabellen1-2.R` transcribes Tabelle 1 (fresh brain
-weights + fixation shrinkage, 40 specimens) and Tabelle 2 (per-specimen
-camelid brain-part volumes) to CSVs and DOI-coded public TSVs. The full
-verbatim extraction of all 14 tables is archived in `extracted_tables/`
-with its REPORT.md. See `Kruska__1980_Tabellen1-2.README.md` for
-methods, data role (primary), caveats, checks, and the registry step
-still pending.
+Build: each table is its own item with its own frozen snapshot,
+transcribed exactly as printed before any cleaning
+(`Kruska__1980_Tabelle1_snapshot.csv`, `Kruska__1980_Tabelle2_snapshot.csv`),
+and its own reader (`Kruska__1980_Tabelle1.R`, `Kruska__1980_Tabelle2.R`)
+that reads only its snapshot and writes the item CSV and DOI-coded
+public TSV. The full verbatim extraction of all 14 tables is archived
+in `extracted_tables/` with its REPORT.md. See
+`Kruska__1980_Tabelle1.README.md` and `Kruska__1980_Tabelle2.README.md`
+for methods, data role (primary), caveats and table checks. Registry
+rows in `__ReadMe.xlsx` added 2026-11-18.
 
 Quality Notes:
 
@@ -31,8 +34,9 @@ Quality Notes:
 2. One misprint in the original: Tabelle 2 prints specimen A 7's
    allocortex as 14 386 mm3, but Tabellen 6 and 11 print 14 368 and
    Tabelle 3's share (8.22%) confirms 14 368. Tabelle 2 is transcribed
-   as printed and the cell is flagged in the CSV.
+   as printed and the cell is flagged in the CSV; recorded as erratum
+   Kruska__1980-E001 (proposed).
 
 3. Folder added 2026-11-18 by Muse (Buddy), Michael Proulx's AI
-   assistant, at Michael Proulx's request; registry rows in
-   `__ReadMe.xlsx` remain an owner step.
+   assistant, at Michael Proulx's request; rebuilt to the snapshot-first
+   form in `_skills/build-dataset-item` the same day.

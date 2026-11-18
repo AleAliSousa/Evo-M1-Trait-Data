@@ -40,8 +40,18 @@ test_that("plot, audit and data table share species scope and keep provenance", 
     expect_null(r_fit()$err)
     expect_no_error(output$r_plot)
     expect_no_error(output$r_summary)
+    exported <- read.csv(output$r_download, check.names = FALSE,
+                         colClasses = c(Discordant_sources = "character"))
+    expect_equal(exported[names(r_ok()$species)], r_ok()$species, ignore_attr = TRUE)
+    for (v in r_terms()[c("y", "x")]) {
+      expect_true(all(nzchar(exported[[paste0(v, "_References")]])))
+      expect_true(any(nzchar(exported[[paste0(v, "_Reference_URLs")]])))
+    }
+    expect_equal(exported$Order[exported$Species == "Rhinopoma microphyllum"], "Chiroptera")
+    expect_no_error(output$r_species)
     expect_setequal(unique(c_filtered()$Variable), c(r_terms()$x, r_terms()$y))
     expect_true(all(c("Items", "Teams", "Source_details", "Definition") %in% names(c_display())))
+    expect_true(all(c("References", "Reference_URLs") %in% names(c_display())))
     session$setInputs(r_clade = "Primates")
     expect_true(all(app$tax_order[c_filtered()$Species] == "Primates"))
     session$setInputs(r_species_filter = c("Homo sapiens", "Pan troglodytes"))

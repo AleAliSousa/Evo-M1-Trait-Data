@@ -140,6 +140,44 @@ Rscript _checks/shiny_species_regression.R
 These checks read local data and do not rebuild it. Local mode also reads the
 phylogeny from `_keys/mammal_tree.*` without attempting a network fetch.
 
+### Taxonomic orders and references in plot downloads
+
+Rebuild navigation taxonomy with `python3 _keys/build_species_taxonomy.py`.
+It uses the current compiled species universe, the species reference and NCBI
+snapshot, explicit taxonomy in the checked-in AnAge, amniote, metabolic-rate
+and dispersal databases, and agreement among source-label keys. Exact labels
+are preferred; unambiguous family/genus classifications fill gaps. Each result
+retains `Order_basis`; `Genus` prevents common-name words such as "Tree" from
+being treated as genera. This classification does not rename or pool species.
+Unmatched or conflicting labels retain `Unknown` in the app.
+The regression checks write `_checks/shiny_taxonomy_unresolved.csv` with these
+labels and their originating datasets for curation.
+
+`_tools/update_navigation_taxonomy.py` starts with NCBI and automatically
+continues missing Orders through MDD (mammal names and synonyms), GBIF, ITIS,
+and PBDB for fossils. NCBI absence or a service error is not a terminal outcome.
+Source-reviewed spellings/abbreviations and specialist evidence support the
+remaining labels without changing species identity. Full instructions and the
+handoff rules are in `_keys/README_navigation_taxonomy.md` and root `AGENTS.md`.
+It requires network access; the normal taxonomy rebuild uses checked-in files
+only. Source references and match bases remain explicit in `Order_basis`.
+
+The **Plot & data → Species** table and species CSV include source reports,
+source items, full references and publication URLs separately for Y, X and
+every control, plus the taxonomic order's basis. Bibliography is attached after
+fitting and follows only the finite records supplying each species value.
+The **Data & sources** table and its download also include references and URLs.
+Only exact item/file or publication matches supply bibliography; a contributor
+name alone is not enough to assign a reference. Unresolved citations stay blank
+while their original source text is retained. Compilation references identify
+the reporting publication, which may itself cite earlier original studies.
+
+Brain-mass item links are read from the canonical
+`__merging_brain_mass/brain_mass_unfiltered.csv`, following the merge's eligible
+reports, primary-team preference, and the combined trait's `selected_measure`.
+This preserves the reference for the selected mass basis and excludes vetoed,
+ineligible and other-basis reports from that bibliography.
+
 ## Files
 
 ```

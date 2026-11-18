@@ -1,0 +1,59 @@
+Species,Status,Next_action,Checked_on
+Allocortex,non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+Amygdaloid complex,non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+Amygdaloid complex a) centromedial group,non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+Amygdaloid complex b) basolateral group,non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+Asphyxia (suicide),non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+Body weight; isolated cord length; point-counted sectional areas and slab reference-volume estimation,non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+Bronchopneumonia,non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+Bulbus olfactorius,non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+"Cardiac arrest, diabetes",non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+"Cardiac arrest, pneumonia",non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+Cardiac arrhythmia,non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+Cardiac arrythmia,non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+Cerebellum,non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+Coronary artery heart disease,non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+Corpus striatum,non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+Diencephalon,non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+"Emphysema, antitrypsin deficiency",non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+Failed prosthetic mitral valve,non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+Gastrointestinal hemorrhage,non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+Hafner et al 2007,non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+Heroin overdose,non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+Isler et al 2008,non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+Medulla oblongata,non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+Mesencephalon,non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+Motor vehicle accident,non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+Myocardial infarction,non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+Myxoid leiomyosarcoma,non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+NA,missing_source_label,Repair the missing Species label from the source row; do not invent an Order. Source: _keys/species_taxonomy.csv: literal NA label among compiled inputs,2026-11-17
+Neocortex,non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+Not recognised,source_field_ambiguity,"Use the scientific species field, not phylacine_binomial=Not recognised. This placeholder occurs for 433 source species across multiple Orders; rebuild affected body/brain-mass harvests rather than classify the mixed placeholder. Source: __Public/comparative-data/10.1002%2Fecy.3344_Traitdatareported.tsv: phylacine_binomial placeholder versus species/order columns",2026-11-17
+Nuclei basalis,non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+Palaeocortex + Amygdaloid complex,non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+Phylogeny of Sleep high-quality compilation,non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+Pneumonia,non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+"Printed source block spans the two component lines; individual key-to-value allocation unresolved. Snapshot retains the two line-aligned fragments. Published values are retained; CV is reported percent, not reconstructed. n=0 denotes no measurement cases, never zero mass. No paired-sample assumption or independent summary ingestion.",non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+Prostate cancer,non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+"Published values are retained; CV is reported percent, not reconstructed. n=0 denotes no measurement cases, never zero mass. No paired-sample assumption or independent summary ingestion.",non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+"Published values are retained; CV is reported percent, not reconstructed. n=0 denotes no measurement cases, never zero mass. No paired-sample assumption or independent summary ingestion. Definite adults are a separately printed subset, not an additional independent cohort. S and B are cooperating collection identifiers, not proof of independent cohorts.",non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+"Published values are retained; CV is reported percent, not reconstructed. n=0 denotes no measurement cases, never zero mass. No paired-sample assumption or independent summary ingestion. Footnote a: between-sex MEDIAN in statistically significant sex differences; not a new individual or arithmetic mean.",non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+"Published values are retained; CV is reported percent, not reconstructed. n=0 denotes no measurement cases, never zero mass. No paired-sample assumption or independent summary ingestion. Footnote b: only secondary inferred data from Rehkämper et al. (1986).",non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+"Published values are retained; CV is reported percent, not reconstructed. n=0 denotes no measurement cases, never zero mass. No paired-sample assumption or independent summary ingestion. Footnote c: table prints estimated adult weights; juvenile actual 31.4 g / 957 mg is contextual only. Cranial-capacity n=7 is not either table n.",non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+"Published values are retained; CV is reported percent, not reconstructed. n=0 denotes no measurement cases, never zero mass. No paired-sample assumption or independent summary ingestion. Footnote d: uncertain determination; formerly Sylvisorex (lunaris?) in Fons et al. (1984). No reassignment.",non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+"Published values are retained; CV is reported percent, not reconstructed. n=0 denotes no measurement cases, never zero mass. No paired-sample assumption or independent summary ingestion. Keep printed pooled n=35/22; do not replace with sums of component n=21/21 and 16/3.",non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+"Published values are retained; CV is reported percent, not reconstructed. n=0 denotes no measurement cases, never zero mass. No paired-sample assumption or independent summary ingestion. S and B are cooperating collection identifiers, not proof of independent cohorts.",non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+Pulmonary hemorrhage,non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+Regio praepiriformis,non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+Regio retrobulbaris,non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+Respiratory arrest,non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+Schizocortex,non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+"Sepsis, liver cirrhosis",non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+Septum,non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+Telencephalon,non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+Tuberculum olfactorium,non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+Unknown,unidentified_source_label,Trace the original unidentified organism; an Unknown label and zero body-mass entry are not a resolvable scientific name. Source: __merging_body_ecology/body_ecology_long.csv; deCastro source stream,2026-11-17
+actigraphy,non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+limbic structures,non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17
+not specified,source_field_ambiguity,"Repair the source-row mapping: the same label currently combines squirrel, tree shrew and macaque, spanning Rodentia, Scandentia and Primates. Restore species_as_published before remerging; do not assign one global Order. Source: __Public/comparative-data/10.1126%2Fsciadv.abn0954_TableS1.tsv: species=not specified occurs for Squirrel, Tree shrew and Macaque",2026-11-17
+videography,non_taxon_label,Repair the source Species field; do not assign a taxonomic Order.,2026-11-17

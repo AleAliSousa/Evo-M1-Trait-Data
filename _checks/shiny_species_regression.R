@@ -15,6 +15,11 @@ test_that("taxonomy fallback is explicit and never resolves conflicting genera",
   x <- app$build_species_index(c("A one", "A two", "B three", "C one"), tx)
   expect_equal(x$Order, c("First", "First", "Unknown", "Unknown"))
   expect_match(x$Order_basis[2], "Inferred")
+  tx <- data.frame(Species = c("Tree swallow", "Tree shrew"),
+                   Order = c("Passeriformes", "Scandentia"), Genus = c("Tachycineta", "Tupaia"))
+  x <- app$build_species_index(c("Tree swallow", "Tree shrew", "Tree unknown", "Tupaia new"), tx)
+  expect_equal(x$Order[match(c("Tree swallow", "Tree shrew", "Tree unknown", "Tupaia new"), x$Species)],
+               c("Passeriformes", "Scandentia", "Unknown", "Scandentia"))
 })
 
 test_that("coverage counts zeros and categories, not blank values or duplicates", {
@@ -42,6 +47,63 @@ test_that("all Ctenomys records remain available under Rodentia", {
   shared <- app$trait_coverage(app$compiled, sp, shared = TRUE)
   expect_true(all(shared$Species_with_data == length(sp)))
   cat(sprintf("Ctenomys: %d species, %d traits, %d shared traits\n", length(sp), nrow(t), nrow(shared)))
+})
+
+test_that("published taxonomy completes orders across mammals and other animals", {
+  expected <- c("Rhinopoma microphyllum" = "Chiroptera", "Nycteris thebaica" = "Chiroptera",
+                "Craseonycteris thonglongyai" = "Chiroptera", "Thyroptera tricolor" = "Chiroptera",
+                "Hirundo rustica" = "Passeriformes", "Camponotus herculeanus" = "Hymenoptera",
+                "Tree shrew" = "Scandentia", "Lepomis macrochirus" = "Centrarchiformes")
+  expect_equal(unname(app$tax_order[names(expected)]), unname(expected))
+  expect_true(all(nzchar(app$species_index$Order_basis[match(names(expected), app$species_index$Species)])))
+})
+
+test_that("NCBI gaps continue to other authorities and disambiguate full species", {
+  expected <- c("Laonastes aenigmamus" = "Rodentia", "Nesophontes edithae" = "Eulipotyphla",
+                "Acanthaster planci" = "Valvatida", "Myomys daltoni" = "Rodentia")
+  expect_equal(unname(app$tax_order[names(expected)]), unname(expected))
+  basis <- app$species_index$Order_basis[match("Laonastes aenigmamus", app$species_index$Species)]
+  expect_match(basis, "https://www.ncbi.nlm.nih.gov/Taxonomy/")
+  expect_equal(unname(app$tax_order[c("Ariadne ariadne ariadne", "Sergia grandis")]),
+               c("Lepidoptera", "Decapoda"))
+  expect_equal(unname(app$tax_order[c("Adapis parisiensis", "L. chrysomelas", "Possum", "Aloutta palliata")]),
+               c("Primates", "Primates", "Diprotodontia", "Primates"))
+  fallback <- app$species_index$Order_basis[match("Adapis parisiensis", app$species_index$Species)]
+  expect_match(fallback, "GBIF")
+  expect_equal(unname(app$tax_order[c("Neocortex", "not specified")]), c("Unknown", "Unknown"))
+})
+
+test_that("brain-mass references follow eligible reports, selected basis and primary teams", {
+  reports <- data.frame(Species = "Test one", measure_emitted = c("mass", "mass", "volume", "mass"),
+    Value_g = 1:4, pool_eligible = c(TRUE, TRUE, TRUE, FALSE),
+    Team = c("A", "B", "C", "A"), role = c("primary", "secondary", "primary", "primary"),
+    Source = c("measured.tsv", "relay.tsv", "estimated.tsv", "juvenile.tsv"))
+  merged <- data.frame(Species = c("Test one", "Test one", "Test one"),
+    Measure = c("combined", "volume", "absent"), selected_measure = c("mass", "", ""))
+  expect_equal(app$brain_mass_items(merged, reports), c("measured.tsv", "estimated.tsv", ""))
+  reports$role <- "secondary"
+  expect_equal(app$brain_mass_items(merged, reports)[1], "measured.tsv; relay.tsv")
+})
+
+test_that("regression bibliography stays attached to its measurement and finite records", {
+  catalogue <- data.frame(item_name = c("Y_item", "X_item", "Control_item", "Bad_item"),
+    file = c("Y;doi.tsv", "X.tsv", "Control.tsv", "Bad.tsv"), publication = paste0("Paper", 1:4),
+    citation = paste0("Reference ", 1:4), url = paste0("https://example.org/", 1:4))
+  d <- data.frame(Species = "Test one", Variable = c("Y", "X", "Control", "Y"),
+    Value_num = c(1, 2, 3, NA), Items = c("Y_item", "X.tsv", "Paper3", "Bad_item"),
+    Source = "Recorded source", Teams = "Contributor", Source_details = "Original references")
+  sp <- data.frame(Species = "Test one", Y = 1, X = 2, Control = 3)
+  out <- app$regression_sources(sp, c("Y", "X", "Control"), d, catalogue)
+  expect_equal(out$Y_References, "Reference 1")
+  expect_equal(out$X_References, "Reference 2")
+  expect_equal(out$Control_References, "Reference 3")
+  expect_equal(out$X_Reference_URLs, "https://example.org/2")
+  expect_equal(out[names(sp)], sp)
+  d$Items <- "Contributor"
+  expect_equal(app$regression_sources(sp, "Y", d, catalogue)$Y_References, "")
+  expect_equal(nrow(app$measurement_reference_columns(d[FALSE, ], catalogue)), 0L)
+  expect_equal(app$measurement_references("Y;doi.tsv; X.tsv", "", catalogue)[["References"]],
+               "Reference 1 | Reference 2")
 })
 
 test_that("OLS adjustment agrees with lm and handles degenerate samples", {
@@ -101,6 +163,8 @@ test_that("server selectors, species subsets and model comparison work together"
     session$setInputs(e_order = "", e_genus = character(), e_species = character())
     expect_length(e_selected(), 0L)
     f <- r_ok()
+    expect_true(paste0(input$r_body, "_References") %in% names(r_export()))
+    expect_equal(r_export()[names(f$species)], f$species)
     expect_equal(sum(r_audit()$Status == "Included"), f$n)
     expect_equal(r_unadjusted()$n, f$n)
     expect_no_error(output$r_adjustment)
@@ -135,3 +199,11 @@ test_that("PGLS uses the same eligible species for the unadjusted comparison", {
     expect_setequal(simple$species$Species, f$species$Species)
   }
 })
+
+# Passive curation report: preserve unresolved labels, including malformed
+# source labels, so they can be traced to the merge that supplied them.
+unknown <- app$species_index[app$species_index$Order == "Unknown", ]
+d <- app$compiled[app$compiled$Species %in% unknown$Species, ]
+datasets <- tapply(d$Dataset, d$Species, function(x) paste(sort(unique(x)), collapse = "; "))
+unknown$Datasets <- unname(datasets[unknown$Species])
+write.csv(unknown, file.path(repo, "_checks/shiny_taxonomy_unresolved.csv"), row.names = FALSE)

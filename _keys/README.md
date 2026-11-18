@@ -70,6 +70,12 @@ Some shared references began with Stephan volume keys and isotropic-fractionator
 
 ## NCBI reconciliation and temporal grade (2026-10-22)
 
+**Missing Orders continue beyond NCBI.** Follow
+[`README_navigation_taxonomy.md`](README_navigation_taxonomy.md): NCBI → MDD
+(mammals, including synonyms) → GBIF → ITIS → PBDB for fossils → source/specialist
+literature. An NCBI miss is not a terminal classification outcome. The updater
+implements this handoff and records provider attempts and source references.
+
 The shared species reference and source-label keys carry reconciled taxids. `taxon_name` and `temporal_grade`
 are separate identity attributes, returned by the R and Python species resolvers
 along with NCBI name, rank, and mapping basis. Early and archaic H. sapiens

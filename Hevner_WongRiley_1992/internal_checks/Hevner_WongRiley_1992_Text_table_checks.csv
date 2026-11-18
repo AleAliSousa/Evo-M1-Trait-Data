@@ -1,0 +1,5 @@
+"check_id","basis","observed","printed","difference","tolerance","status"
+"macaque_species_sum","two M. fascicularis + two M. radiata + two M. mulatta vs six macaques (p. 452)",6,6,0,0,"pass"
+"macaque_species_count","three macaque species (p. 459) vs the three binomials printed in METHODS",3,3,0,0,"pass"
+"island_count_abstract_low","abstract ~200-250 islands: counted 224 islands (p. 459) lies within the range",1,1,0,0,"pass"
+"hemispheres_ge_individuals","six hemispheres from four individuals (p. 452): hemispheres >= individuals",1,1,0,0,"pass"

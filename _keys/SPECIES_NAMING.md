@@ -1,5 +1,13 @@
 # Species naming — one way for the whole dataset
 
+**Current navigation-Order policy:** NCBI is preferred, not exclusive. Missing
+Orders must continue through MDD, GBIF, ITIS, PBDB and source/literature checks
+as specified in [`README_navigation_taxonomy.md`](README_navigation_taxonomy.md).
+The historical "NCBI-only" v1 discussion below concerns identity-resolver
+architecture; it must not be used to stop missing-Order lookup after NCBI.
+Fallback classifications retain their actual authority and do not change the
+identity anchor or invent an NCBI taxid.
+
 **Status:** v1 implemented 2026-09-28 — `_keys/resolve_species.R` (identity resolver, §3c), all
 spokes on the unified schema (§3b) incl. the new `_keys/General/species_key.csv` for papers with no
 registered collection, and every `__merging_*` build script (13 R + 4 Python, via

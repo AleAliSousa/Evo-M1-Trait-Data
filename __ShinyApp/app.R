@@ -262,6 +262,9 @@ load_compiled <- function() {
     if (dataset == "Brain mass") {
       d <- d[d$Measure != "Brain_Mass_mass_or_volume", , drop = FALSE]
       d$Measure[d$Measure == "Brain_Mass_from_volume_or_ecv"] <- "Brain_Mass_estimated_from_volume"
+      reports <- read_csv_gh("__merging_brain_mass/brain_mass_unfiltered.csv",
+                             file.path(data_dir, "brain_mass_unfiltered.csv"))
+      d$items <- brain_mass_items(d, reports)
     }
     lab <- paste0(d$Measure, " (", d$Units, ")")
     provenance <- paste0("EvoM1 ", tolower(d$Measure), " merge (", d$n_sources, " sources)")
@@ -586,10 +589,9 @@ manifest$picker <- paste0(manifest$citation_short,
 # Exact item identities come from the source registry at build time. A
 # publication-only match is explicitly labelled, never presented as an exact item.
 source_items <- function(tokens, catalogue = manifest) {
-  tokens <- unique(trimws(unlist(strsplit(paste(tokens, collapse = ";"), "[;|]"))))
-  tokens <- tokens[!is.na(tokens) & nzchar(tokens)]
+  tokens <- source_tokens(tokens)
   if (!"item_name" %in% names(catalogue)) return(catalogue[FALSE, ])
-  exact <- catalogue[catalogue$item_name %in% tokens, , drop = FALSE]
+  exact <- catalogue[catalogue$item_name %in% tokens | catalogue$file %in% tokens, , drop = FALSE]
   exact$Match <- rep("Exact source item", nrow(exact))
   compact <- function(x) tolower(gsub("[^[:alnum:]]", "", x))
   contributor <- compact(catalogue$first_author)
@@ -1580,7 +1582,7 @@ ui <- page_navbar(
         selectizeInput("r_species_filter", "Species subset (blank = all above)",
                        choices = NULL, multiple = TRUE,
                        options = list(placeholder = "Or send a set from Species explorer")),
-        downloadButton("r_download", "Download species data + residuals (CSV)",
+        downloadButton("r_download", "Download species data + sources + residuals (CSV)",
                        class = "btn-primary btn-sm")
       ),
       uiOutput("r_warnings"),
@@ -1617,8 +1619,8 @@ ui <- page_navbar(
                     selected = sort(unique(compiled$Dataset)),
                     multiple = TRUE),
         textInput("c_source", "Source or item contains", placeholder = "e.g. Stephan"),
-            selectizeInput("c_columns", "Visible columns", choices = c("Species", "Domain", "Class", "Variable", "Value", "Unit", "Source", "Items", "N_sources", "Dataset", "Definition"),
-              selected = c("Species", "Variable", "Value", "Unit", "Source", "Items", "Dataset"), multiple = TRUE),
+            selectizeInput("c_columns", "Visible columns", choices = c("Species", "Domain", "Class", "Variable", "Value", "Unit", "Source", "Items", "References", "Reference_URLs", "N_sources", "Dataset", "Definition"),
+              selected = c("Species", "Variable", "Value", "Unit", "Source", "References", "Items", "Dataset"), multiple = TRUE),
             helpText("Additional published datasets are source-specific measurements not covered by the main subject merges. They include primary studies and literature compilations; see each row's sources.")),
           downloadButton("c_download", "Download table with definitions and sources"),
           uiOutput("c_count"), DTOutput("c_table")),
@@ -1646,7 +1648,10 @@ ui <- page_navbar(
             tags$code("Y_resid_on_covariates"), " — Y relative to the ",
             "covariates alone (for example, brain-part size relative to body ",
             "size) — and the full model's fitted values and residuals, in ",
-            "the transformed (log₁₀ if chosen) scale."),
+            "the transformed (log₁₀ if chosen) scale. Source reports, source items, ",
+            "references and publication links are included separately for every measurement ",
+            "(Y, X and controls), in this table and the CSV download. References identify ",
+            "the reporting publications; a compilation may cite earlier original studies."),
           DTOutput("r_species")
         )
       )
@@ -2181,7 +2186,7 @@ server <- function(input, output, session) {
       stringsAsFactors = FALSE)
     out$Domain[!nzchar(out$Domain)] <- "Unclassified"
     out$Definition <- look(lab_def, d$Variable)
-    out
+    measurement_reference_columns(out, manifest)
   })
 
   output$c_table <- renderDT({
@@ -2470,8 +2475,14 @@ server <- function(input, output, session) {
       theme_minimal(base_size = 14)
   })
 
+  r_export <- reactive({
+    f <- r_ok()
+    sp <- regression_sources(f$species, f$vars, compiled, manifest)
+    sp$Order_basis <- species_index$Order_basis[match(sp$Species, species_index$Species)]
+    sp
+  })
   output$r_species <- renderDT({
-    sp <- r_ok()$species
+    sp <- r_export()
     num <- names(sp)[vapply(sp, is.numeric, logical(1))]
     datatable(sp, rownames = FALSE, filter = "top",
               options = list(pageLength = 25, scrollX = TRUE)) |>
@@ -2480,7 +2491,7 @@ server <- function(input, output, session) {
 
   output$r_download <- downloadHandler(
     filename = function() sprintf("evom1_regression_%s_%s.csv", input$r_method, Sys.Date()),
-    content  = function(file) write.csv(r_ok()$species, file, row.names = FALSE)
+    content  = function(file) write.csv(r_export(), file, row.names = FALSE)
   )
 
   # ---- Glossary: abbreviations

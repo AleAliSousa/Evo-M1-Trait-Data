@@ -16,6 +16,17 @@ mean density and SD (fmol/mg protein) of 10–17 transmitter-receptor binding si
 the dataset. The datasets also deposit laminar **profiles** (`*_pr_*.tsv`, 128 files over the series) and autoradiograph
 images (`*_ar_*`); these are *recorded* in `ebrains_downloads/laminar_profiles_present.csv` / the manifest but not ingested.
 
+**Laminar profiles — downloaded, NOT yet built as items (pending, 2026-11-18).** The 128 `*_pr_*.tsv` files listed in
+`laminar_profiles_present.csv` (8 human areas: 3b, 4p, 7A, 44d, 45, 47, PFm, hOc1 × 16 receptors) were downloaded untouched to
+`ebrains_downloads/profiles/` with `ebrains_downloads/profiles_manifest.csv` (item_name, file, local_file, receptor_from_url,
+url, bytes, sha256, downloaded, note). Each file is 4 columns (`cortical depth (value)` 0–100 %, 0 = pial surface; `receptor
+density (value)` fmol/mg) × 101 equidistant samples; the EBRAINS folder name is `*_pr_examples/<receptor>/`, i.e. one example
+profile per receptor (one brain/section), not the dataset mean. One source anomaly: the 3b `M3/` subfolder holds a file named
+`3b_pr_M2.tsv` that is byte-identical (sha256) to the `M2/` file, so the 3b M3 profile is effectively missing; it is kept as
+`3b_pr_examples_M3__3b_pr_M2.tsv` (bytes untouched, name disambiguated). Profile items (snapshot → CSV → TSV → definitions)
+are pending an owner decision on item granularity (per area, or per area × receptor). The analysis-repo prototype
+`scripts/s1e_4_laminar_prototype.R` reads these files in place and verifies them against the manifest.
+
 **Species per dataset — as stated in the dataset's own KG specimen metadata, never assumed:**
 - *Homo sapiens* — 41 datasets (dataset titles say `[human]`); post-mortem brains, unfixed frozen sections; 2–6 brains per dataset (see table).
 - *Macaca fascicularis* — 5 datasets (titles say `[macaque]`; 3 adult males, left hemispheres, ages 6–8 y). **Not** *M. mulatta*.

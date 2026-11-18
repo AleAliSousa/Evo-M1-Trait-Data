@@ -20,6 +20,10 @@ are unchanged.
   then carried into the generated index. It registers the supporting file in
   this pilot without presenting it as a separate public measurement item or
   claiming every definition is quoted from the paper.
+- `Falcone_etal_2019/item_registry.pilot.csv` demonstrates two observation
+  items from one paper. Each item identifies its printed table, prepared data,
+  definitions file and public TSV; the source PDF is shared. The records are
+  provisional and do not replace the existing folder-level file inventory.
 - `build_item_index_pilot.py` combines `*/item_registry.pilot.csv` files into
   `__metadata/item_registry_index.pilot.csv`. Its `index_scope` explicitly says
   `partial_pilot`: a missing item is not evidence that the item does not exist.
@@ -65,9 +69,9 @@ For a read-only comparison of the 15 seeded records with the current
 python3 __metadata/build_item_index_pilot.py --check-workbook
 ```
 
-The latter compares every imported field for Kaufman, and checks Catania's item
-identity and public filename against the workbook; Catania has no imported fields
-to compare. It does not evaluate Excel formulas or prove that their caches, titles,
+The latter compares every imported field for Kaufman, and checks Catania's and
+Falcone's item identities and public filenames against the workbook; these minimal
+records have no imported fields to compare. It does not evaluate Excel formulas or prove that their caches, titles,
 references or locations are correct. It
 reports an error if the workbook or local fields diverge; that is a review
 signal, not an instruction to overwrite either side. The builder validates

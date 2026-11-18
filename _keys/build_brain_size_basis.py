@@ -118,6 +118,12 @@ SOURCE_STATEMENTS = {
                             "The volume of the perfused brain was calculated by dividing the "
                             "brain mass by the fixed brain tissue density (1.036 g/cm3).",
                             PAPER_PROSE),
+    # Lewitus_etal_2012 Table S1A brain mass: the supplement footnotes Jones et al.
+    # (2009) for body mass and gestation only; the brain weights are the recorded
+    # weights of the authors' own specimen sample (see the ASSIGN entry below).
+    "Lewitus_etal_2012": ("The recorded brain weights in our sample, nonetheless, do not show "
+                          "significant deviations from species-typical average fresh weights.",
+                          PAPER_PROSE),
     "Weaver__2001": ("from measured brain volume (extant) or endocranial volume via Ruff et al. "
                      "1997 (fossils)", FOLDER_NOTE),
     "Changizi_Shimojo_2005": ("Brain mass information is used throughout the paper, and these "
@@ -232,6 +238,16 @@ ASSIGN = {
         ("mass", "mass_excl_olfactory_bulb", "unknown", "no", "unknown", "unknown",
          "mass_measured_excl_ob", True, "quoted", F),
     # ---- mass and volume mixed, unresolvable per row ----------------------
+    # Baker et al. 2025 (Nat Commun) Supplementary Data 1: a compilation whose
+    # per-row Source names the original publication; endocranial volumes were
+    # converted to mass at 1 g = 1 cm3 where only volumes were available and
+    # the per-row basis is not flagged (folder definitions file). Same
+    # situation as Burger_etal_2019 SD1 below: mass_or_volume_mixed, so the
+    # values enter the audited harvest and the review file, unpooled, until
+    # row-level decisions (brain_mass_row_basis.csv) split them by source.
+    ("Baker_etal_2025_b", "Brain_mass_g"):
+        ("mass", "mass_or_volume_mixed", "unknown", "unknown", "unknown", "unknown",
+         "mass_or_volume_mixed", True, "quoted", D),
     ("Burger_etal_2019", "Mean_brain_mass_g"):
         ("mass", "mass_or_volume_mixed", "unknown", "unknown", "unknown", "unknown",
          "mass_or_volume_mixed", True, "quoted", D),
@@ -352,6 +368,197 @@ ASSIGN = {
     # adult great apes; neither dataset states fixation state or olfactory-bulb inclusion --
     # default "unstated" tuple A.
     ("HrvojMihic_etal_2026", "brain_weight_mg"): A,
+    # ---- 2026-11-17: the 34 (paper, column) groups a fresh harvest used to
+    # abort on, classified from each folder's definitions file / item README /
+    # paper (verified by running the merge builder against a local replica).
+    # Bahney TABLES 3-4 printed columns: the same compilation of published
+    # brain weights as this folder's brain_mass_mg above, in as-printed form;
+    # they are the only Bahney brain-mass columns that reach the harvest.
+    ("Bahney_vonBartheld_2018", "brain_mass_printed"):
+        ("mass", "mass_compilation_unspecified", "unknown", "unknown", "unknown",
+         "unknown", "mass_measured", True, "quoted", D),
+    ("Bahney_vonBartheld_2018", "brain_weight_printed"):
+        ("mass", "mass_compilation_unspecified", "unknown", "unknown", "unknown",
+         "unknown", "mass_measured", True, "quoted", D),
+    # Coto et al. 2026 Fig 7: literature brain masses for 7 mammals (plus one
+    # ant row that also harvests); definitions state literature values.
+    ("Coto_etal_2026", "brain_mass_g"):
+        ("mass", "mass_compilation_unspecified", "unknown", "unknown", "unknown",
+         "unknown", "mass_measured", True, "quoted", C),
+    # Elia 1992 organ-weight tables: compiled reference values (TABLE 1 human
+    # reference subjects; TABLE 3 the Brody-lineage 11-animal table).
+    ("Elia__1992", "Brain_Mass.mg"):
+        ("mass", "mass_compilation_unspecified", "unknown", "unknown", "unknown",
+         "unknown", "mass_measured", True, "quoted", C),
+    ("Elia__1992", "brain_mass.g"):
+        ("mass", "mass_compilation_unspecified", "unknown", "unknown", "unknown",
+         "unknown", "mass_measured", True, "quoted", C),
+    # Elia 1997 TABLE 8: brain weights printed for model scenarios (12-month
+    # child, normal and marasmic) -- compiled reference values, not specimens.
+    ("Elia__1997", "Brain_Mass.mg"):
+        ("mass", "mass_compilation_unspecified", "unknown", "unknown", "unknown",
+         "unknown", "mass_measured", True, "quoted", C),
+    # Filiminoff 1932: whole-brain weights of the authors' human specimens;
+    # the folder definitions read them as fresh weights before alcohol
+    # fixation (stated there as a presumption, carried in the quote).
+    ("Filiminoff__1932", "brain_weight_g"):
+        ("mass", "mass_fresh", "fresh", "unknown", "unknown", "unknown",
+         "mass_measured", True, "quoted", D),
+    # Garey 2006 Table 4: Brodmann 1909 brain weights via the English
+    # translation; definitions mark the item secondary throughout.
+    ("Garey__2006", "BrainWeight.g"):
+        ("mass", "mass_compilation_unspecified", "unknown", "unknown", "unknown",
+         "unknown", "mass_measured", True, "quoted", C),
+    # Glendenning & Masterton 1998 Table 1: weighed brain masses, 53 spp;
+    # the folder's errata concern blank cells, not the basis.
+    ("Glendenning_Masterton_1998", "brain_mass_mg"):
+        ("mass", "mass_unspecified", "unknown", "unknown", "unknown",
+         "unknown", "mass_measured", True, "quoted", C),
+    # Herberstein et al. 2022 (Animalia trait database): the folder
+    # definitions state the column includes volume-derived estimates, so it
+    # sits with the other mixed compilations: harvest and review, unpooled.
+    ("Herberstein_etal_2022", "Brain_Mass.mg"):
+        ("mass", "mass_or_volume_mixed", "unknown", "unknown", "unknown",
+         "unknown", "mass_or_volume_mixed", True, "quoted", D),
+    # Herculano-Houzel et al. 2007 Table 1: species means of whole brains
+    # dissected by the authors; olfactory-bulb handling not stated (the
+    # definitions file flags exactly that), so OB fields stay unknown.
+    ("HerculanoHouzel_etal_2007", "brain_mass_g"):
+        ("mass", "mass_unspecified", "unknown", "unknown", "unknown",
+         "unknown", "mass_measured", True, "quoted", D),
+    # Holliday et al. 1967 Table III: Brody 1945 weighed masses reprinted.
+    ("Holliday_etal_1967", "brain_mass_mg"):
+        ("mass", "mass_compilation_unspecified", "unknown", "unknown", "unknown",
+         "unknown", "mass_measured", True, "quoted", C),
+    # Huttenlocher 1979 Figure 6: human total brain weights digitised from
+    # the figure (individual brains plus Adult/Aged group means).
+    ("Huttenlocher__1979", "Brain_mass.mg"):
+        ("mass", "mass_unspecified", "unknown", "unknown", "unknown",
+         "unknown", "mass_measured", True, "quoted", C),
+    # Jacobs & Spencer 1994: Dipodomys mean brain masses; the definitions
+    # file states fixed tissue.
+    ("Jacobs_Spencer_1994", "brain_mass_mean_mg"):
+        ("mass", "mass_fixed", "fixed", "unknown", "unknown", "unknown",
+         "mass_measured", True, "quoted", D),
+    # Kruska & Rohrs 1974: the definitions file describes the column as
+    # fresh/fixed brain weight -- the mixed-state basis, pooled as measured.
+    ("Kruska_Rohrs_1974", "brain_weight_g"):
+        ("mass", "mass_fresh_or_fixed_mixed", "fresh_or_fixed", "unknown", "unknown",
+         "unknown", "mass_measured", True, "quoted", D),
+    # Lewitus et al. 2012 Table S1A: species means of the recorded brain
+    # weights of the authors' own specimen sample (paper Methods, quoted in
+    # SOURCE_STATEMENTS); the supplement footnotes Jones et al. (2009) for
+    # body mass and gestation only. Stored as back-transformed log10 means.
+    # Weighed masses, so mass_unspecified rather than a compilation basis.
+    ("Lewitus_etal_2012", "brain_mass_g"):
+        ("mass", "mass_unspecified", "unknown", "unknown", "unknown",
+         "unknown", "mass_measured", True, "quoted", P),
+    # Lewitus et al. 2012 Evolution paper (folder Lewitus_etal_2012_b)
+    # Table S2: recorded specimen brain weights per its definitions file.
+    # The merge builder keys the column under Lewitus_etal_2012 by its
+    # folder tie-break, so the entry lives here.
+    ("Lewitus_etal_2012", "brain_mass_mg"):
+        ("mass", "mass_unspecified", "unknown", "unknown", "unknown",
+         "unknown", "mass_measured", True, "quoted", D),
+    # MacLarnon 1996 Table 1: literature compilation of brain weights with
+    # per-row references (item ReadMe, incl. erratum E001 confirming the
+    # values are brain weights).
+    ("MacLarnon__1996", "Brain weight (mg)"):
+        ("mass", "mass_compilation_unspecified", "unknown", "unknown", "unknown",
+         "unknown", "mass_measured", True, "quoted", F),
+    # Manger et al. 2012 Table 1: compiled brain masses; part of the values
+    # are attributed in the definitions file to Pillay & Manger 2007 and
+    # Zilles et al. 1989; fresh/fixed not given.
+    ("Manger_etal_2012", "brain_mass_g"):
+        ("mass", "mass_compilation_unspecified", "unknown", "unknown", "unknown",
+         "unknown", "mass_measured", True, "quoted", C),
+    # Meyer 1981 Table I: the definitions note states fixed brain masses,
+    # not fresh volumes.
+    ("Meyer__1981", "brain_mass_mg"):
+        ("mass", "mass_fixed", "fixed", "unknown", "unknown", "unknown",
+         "mass_measured", True, "quoted", D),
+    # Mink et al. 1981 Table 1: printed brain weights compiled from the
+    # literature across vertebrates.
+    ("Mink_etal_1981", "brain_weight.g"):
+        ("mass", "mass_compilation_unspecified", "unknown", "unknown", "unknown",
+         "unknown", "mass_measured", True, "quoted", C),
+    # Munger et al. 2022 Table 1: present-study individuals; the folder
+    # documents 23 of 25 printed values as measured specimens (one
+    # hemisphere-extrapolated, one a Robson & Wood 2008 species average,
+    # told apart per row by the folder's brain_weight_basis column).
+    ("Munger_etal_2022", "brain_weight_printed"):
+        ("mass", "mass_unspecified", "unknown", "unknown", "unknown",
+         "unknown", "mass_measured", True, "quoted", D),
+    # Patzke et al. 2015 Table 1: published brain masses (source_key 5 is
+    # the present study, the rest secondary; sample types differ, but no
+    # volume conversion is documented for any source).
+    ("Patzke_etal_2015", "brain_mass_mg"):
+        ("mass", "mass_compilation_unspecified", "unknown", "unknown", "unknown",
+         "unknown", "mass_measured", True, "quoted", C),
+    # Pirlot & Kamiya 1982: brain weights of the authors' own specimens.
+    ("Pirlot_Kamiya_1982", "brain_weight_g"):
+        ("mass", "mass_unspecified", "unknown", "unknown", "unknown",
+         "unknown", "mass_measured", True, "quoted", D),
+    # Reep & O'Shea 1990: manatee brain weights, formaldehyde/embedded
+    # specimens, measured -- fixed.
+    ("Reep_OShea_1990", "brain_weight_g"):
+        ("mass", "mass_fixed", "fixed", "unknown", "unknown", "unknown",
+         "mass_measured", True, "quoted", C),
+    # Riddell & Corl 1977: E values joined from cited secondary sources.
+    ("Riddell_Corl_1977", "Brain_Mass.g"):
+        ("mass", "mass_compilation_unspecified", "unknown", "unknown", "unknown",
+         "unknown", "mass_measured", True, "quoted", C),
+    # Sawaguchi 1988 Appendix: E (brain weight) compiled for primates,
+    # mean of female and male adults.
+    ("Sawaguchi__1988", "brain_weight_g"):
+        ("mass", "mass_compilation_unspecified", "unknown", "unknown", "unknown",
+         "unknown", "mass_measured", True, "quoted", C),
+    # Sherwood et al. 2009 Table 1 ONLY: specimen masses measured at the
+    # zoo/lab. The x1.036 Bush & Allman-derived values sit in a different
+    # table whose public TSV carries no brain-mass column, so they cannot
+    # inherit this entry.
+    ("Sherwood_etal_2009", "brain_mass_g"):
+        ("mass", "mass_unspecified", "unknown", "unknown", "unknown",
+         "unknown", "mass_measured", True, "quoted", D),
+    # Shoshani et al. 2006 Table 1: one printed column mixing the authors'
+    # weighed elephant brains, literature values and extinct-proboscidean
+    # endocast estimates (weights also include dura fragments and variable
+    # brain stem) -- not separable per row, so mixed: harvest and review.
+    ("Shoshani_etal_2006", "brain_mass_g_printed"):
+        ("mass", "mass_or_volume_mixed", "unknown", "unknown", "unknown",
+         "unknown", "mass_or_volume_mixed", True, "quoted", C),
+    # Soria et al. 2021 (COMBINE): adult brain mass as published; the
+    # folder definitions file does not transcribe a per-row basis and no
+    # volume conversion is documented in the repo, so it follows the other
+    # large mass compilations. Largest single judgement call in this set:
+    # parking it as mixed instead would hold 1,836 rows in review.
+    ("Soria_etal_2021", "adult_brain_mass_g"):
+        ("mass", "mass_compilation_unspecified", "unknown", "unknown", "unknown",
+         "unknown", "mass_measured", True, "quoted", D),
+    # Weisbecker & Goswami 2010 Table S6: marsupial compilation whose
+    # definitions file leaves the basis (fresh/fixed/endocast) unstated --
+    # endocast is explicitly open, so mixed: harvest and review, unpooled.
+    ("Weisbecker_Goswami_2010", "brain_mass_g"):
+        ("mass", "mass_or_volume_mixed", "unknown", "unknown", "unknown",
+         "unknown", "mass_or_volume_mixed", True, "quoted", D),
+    # West & Gundersen 1990: human brain masses at autopsy.
+    ("West_Gundersen_1990", "brain_mass_mg"):
+        ("mass", "mass_unspecified", "unknown", "unknown", "unknown",
+         "unknown", "mass_measured", True, "quoted", C),
+    # West & Schwerdtfeger 1985 Table I: reported brain weights, own and
+    # compiled (catalogue role "both"); no basis statement found.
+    ("West_Schwerdtfeger_1985", "brain_mass_mg"):
+        ("mass", "mass_compilation_unspecified", "unknown", "unknown", "unknown",
+         "unknown", "mass_measured", True, "unstated", C),
+    # Zilles et al. 1989 Table 1: E (brain weight) for nonhuman primates,
+    # a Stephan-collection compilation. The folder definitions file advises
+    # conservative merge exclusion because the values largely duplicate
+    # the Stephan tables; classified here as a secondary compilation so
+    # the harvest can run -- exclusion remains available at any time via
+    # the merge builder's SKIP list.
+    ("Zilles_etal_1989", "Brain_Mass.mg"):
+        ("mass", "mass_compilation_unspecified", "unknown", "unknown", "unknown",
+         "unknown", "mass_measured", True, "quoted", D),
 }
 
 # quoted inclusion evidence that lives in a FOLDER definitions file rather than
@@ -364,6 +571,68 @@ FOLDER_QUOTES = {
     ("Lewitus_etal_2013", "brain_weight_g"):
         "Brain weight -- Table A1 footnote a attributes these values to Stephan et al. (1981), "
         "whose source definition records fresh brain weight",
+    ("Baker_etal_2025_b", "Brain_mass_g"):
+        "Brain_mass_g -- species mean whole-brain mass (g); compilation: masses "
+        "reported excluding the olfactory bulb were excluded by the paper, and "
+        "endocranial volumes were converted to mass at 1 g = 1 cm3 where only "
+        "volumes were available; per-row basis not flagged (folder definitions file)",
+    ("Bahney_vonBartheld_2018", "brain_mass_printed"):
+        "Brain mass cell as printed (unit not printed; g assumed, as Table 3) -- "
+        "compilation of published brain weights (folder definitions file)",
+    ("Bahney_vonBartheld_2018", "brain_weight_printed"):
+        "Brain weight (g) cell as printed -- compilation of published brain "
+        "weights (folder definitions file)",
+    ("Filiminoff__1932", "brain_weight_g"):
+        "Hirngewicht as printed (unit not printed; grams presumed); whole fresh "
+        "brain weight before alcohol fixation (presumed) (folder definitions file)",
+    ("Herberstein_etal_2022", "Brain_Mass.mg"):
+        "Brain mass in milligrams, including volume-derived estimates "
+        "(folder definitions file)",
+    ("HerculanoHouzel_etal_2007", "brain_mass_g"):
+        "Brain mass, g (species mean); whole brain as dissected by the authors; "
+        "olfactory-bulb handling is not stated in Table 1 (folder definitions file)",
+    ("Jacobs_Spencer_1994", "brain_mass_mean_mg"):
+        "mean brain mass, mg; fixed tissue (folder definitions file)",
+    ("Kruska_Rohrs_1974", "brain_weight_g"):
+        "Fresh/fixed brain weight in grams (folder definitions file)",
+    ("Lewitus_etal_2012", "brain_mass_g"):
+        "Brain mass, g -- species means of the recorded brain weights of the "
+        "authors' own specimen sample (paper Methods: 'The recorded brain "
+        "weights in our sample ... do not show significant deviations from "
+        "species-typical average fresh weights'); the supplement footnotes "
+        "Jones et al. (2009) for body mass and gestation only, not brain mass",
+    ("Lewitus_etal_2012", "brain_mass_mg"):
+        "Brain mass, mg -- recorded specimen brain weights per Methods "
+        "(Lewitus_etal_2012_b Table S2 definitions file; the merge builder "
+        "keys this column under Lewitus_etal_2012 by its folder tie-break)",
+    ("MacLarnon__1996", "Brain weight (mg)"):
+        "Brain weight (mg) -- literature compilation with per-row references "
+        "(Table 1, p. 73; item ReadMe, incl. erratum E001 confirming the "
+        "values are brain weights)",
+    ("Meyer__1981", "brain_mass_mg"):
+        "Mean brain mass, mg; fixed brain masses, not fresh volumes "
+        "(folder definitions file)",
+    ("Munger_etal_2022", "brain_weight_printed"):
+        "brain weight in grams exactly as printed; 23 of the 25 printed "
+        "values are measured specimens of the present study (folder "
+        "definitions file; item README, brain_weight_basis)",
+    ("Pirlot_Kamiya_1982", "brain_weight_g"):
+        "Brain weight of the individual specimen in grams "
+        "(folder definitions file)",
+    ("Sherwood_etal_2009", "brain_mass_g"):
+        "Brain mass of the specimen, g; measured at the zoo/lab except the "
+        "giant anteater (76 g, see footnote a) (folder definitions file)",
+    ("Soria_etal_2021", "adult_brain_mass_g"):
+        "Trait column as published in COMBINE; full definition in Soria "
+        "et al. 2021 (not transcribed here) (folder definitions file); "
+        "per-row basis not documented",
+    ("Weisbecker_Goswami_2010", "brain_mass_g"):
+        "Brain weight, g; compilation; basis (fresh/fixed/endocast) not "
+        "stated (folder definitions file)",
+    ("Zilles_etal_1989", "Brain_Mass.mg"):
+        "Brain weight E converted from grams to milligrams; the folder "
+        "definitions file advises conservative merge exclusion (the values "
+        "largely duplicate the Stephan-collection tables)",
     ("Burger_etal_2019", "Mean_brain_mass_g"):
         "Mean brain mass -- compilation; 1 g = 1 cm3 conversion used when volumes reported "
         "(per source methods)",

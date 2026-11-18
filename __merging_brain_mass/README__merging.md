@@ -258,3 +258,78 @@ Reason: absolute values of this single-animal FSU lineage are not validated and 
 see `_keys/specimen_crosswalk/Green_monkey_FSU_specimen_note.md`. Implemented in both `build_brain_mass_merge.py` and
 `brain_mass_compiled.R`. Note: the R twin currently stops during pooling on the present inputs (an NA `role`), independent of this change.
 The `extraction_error_zero` veto drops the DeCasien 2017 *Chlorocebus aethiops* row with brain mass 0 (source Haug 1987; DeCasien marks it IGNORE). Haug 1987 Table 2 (`Haug__1987/`) prints a vervet brain volume of 64 cm3: the 0 is a blank volume carried through Boddy 2012 and DeCasien 2017. Effect: the cell's `n_sources` 7 -> 6 and `value_min` 0 -> 60; the pooled value is unchanged.
+
+## Update: Baker et al. 2025 (Nat Commun) wired into the brain-mass merge (2026-11-17)
+
+`Baker_etal_2025_b` Supplementary Data 1 `Brain_mass_g` (1,684 mammal species
+means) is classified in `_keys/brain_size_basis.csv` as `mass_or_volume_mixed`
+(secondary, in the merge), following the Burger et al. 2019 SD1 precedent: the
+paper converted endocranial volumes to mass at 1 g = 1 cm3 where only volumes
+were available and does not flag the basis per row.
+
+1,337 guarded row decisions in `__metadata/curation/brain_mass_row_basis.csv`
+split the compilation by the per-row `Source` column Baker itself supplies:
+840 rows to `mass_measured` (Baron, Stephan & Frahm 1996; McNab & Eisenberg
+1989; Kverkova et al. 2018, basis `mass_fixed`; Sacher & Staffeldt 1974;
+Tsuboi et al. 2018; Lopez-Torres et al. 2017; Stephan, Baron & Frahm 1991;
+Manger 2006; Marino et al. 2006; Herculano-Houzel et al. 2014; Dos Santos
+et al. 2018; Mangold-Wirz 1966) and 497 rows to
+`mass_estimated_from_endocranial_volume` (Isler et al. 2008; Isler & van
+Schaik 2009, 2012, 2014; Isler 2011). These are source-level assignments from
+Baker's Source column, not per-value re-checks against the primary
+publications; each decision's evidence field says so.
+
+347 rows are deliberately left unpooled: 224 sourced from Boddy et al. 2012
+and 56 from Burger et al. 2019 (both themselves `mass_or_volume_mixed`), and
+67 flagged for verification first (Weisbecker, Ashwell & Fisher marsupials
+38; Kaufman et al. 2008, a brain-volume paper, 18; Shultz & Dunbar 2010, 9;
+Barton & Capellini 2011, 2). The decisions take effect on the next merge run
+whose harvest includes Baker's public TSV.
+
+## Update: 34 unclassified groups classified, Lewitus S1A provenance, row-basis repairs (2026-11-17)
+
+A fresh harvest used to abort on 34 (paper, column) groups with no entry in
+`_keys/brain_size_basis.csv` (5,486 harvested rows; the count of 19 quoted in
+earlier notes was stale). All 34 are now classified in
+`build_brain_size_basis.py`, each from its folder's definitions file, item
+README or paper:
+
+- 30 groups pool as Brain_Mass_measured (3,045 rows): weighed masses
+  (mass_unspecified), literature compilations of weighed masses
+  (mass_compilation_unspecified, the Baron/Graham pattern), fixed-tissue
+  columns (Jacobs & Spencer 1994; Meyer 1981; Reep & O'Shea 1990,
+  mass_fixed), Filiminoff 1932 (mass_fresh, the folder's stated reading)
+  and Kruska & Rohrs 1974 (mass_fresh_or_fixed_mixed).
+- 3 groups park as mass_or_volume_mixed (2,441 rows), harvested into the
+  review file unpooled: Herberstein et al. 2022 (its definition includes
+  volume-derived estimates), Weisbecker & Goswami 2010 (basis
+  fresh/fixed/endocast explicitly unstated) and Shoshani et al. 2006
+  (weighed, literature and fossil endocast values in one printed column).
+- Zilles et al. 1989 is classified as a compilation although its folder
+  definitions file advises conservative merge exclusion; exclusion remains
+  available via the merge builder's SKIP list.
+
+Lewitus et al. 2012 Table S1A `brain_mass_g` was traced before classifying:
+the values are species means of the recorded brain weights of the authors'
+own specimen sample (paper Methods, "Specimens": "The recorded brain
+weights in our sample ... do not show significant deviations from
+species-typical average fresh weights"); the supplement footnotes Jones
+et al. (2009) for body mass and gestation only. It is therefore
+mass_unspecified (measured), not a compilation.
+
+Row-basis repairs in `__metadata/curation/brain_mass_row_basis.csv`: 261
+decisions no longer matched the harvest. 29 were re-keyed to the accepted
+names the harvest now resolves (e.g. Cephalophus zebra -> Cephalophula
+zebra; Nycticebus pygmaeus -> Xanthonycticebus pygmaeus). The other 232
+are Burger et al. 2019 decisions whose rows the rebuilt Burger TSV no
+longer surfaces (species_sci is blank for 231 of its rows; one row is
+absent): their n_expected was set to 0 with a note in the row, so the
+decisions are retained, match the current harvest truthfully, and revive
+by restoring n_expected if the TSV rows return.
+
+Verified end-to-end against a local replica of the repo (all public TSVs
+size-checked against the git tree): with these entries and repairs a
+fresh harvest completes -- Brain_Mass_measured 2,311 species and the
+combined trait 2,456 species, against 678 and 1,277 in the last committed
+merge. The growth is everything queued since the last successful harvest,
+not these groups alone.

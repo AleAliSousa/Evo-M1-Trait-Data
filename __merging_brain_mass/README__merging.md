@@ -333,3 +333,14 @@ fresh harvest completes -- Brain_Mass_measured 2,311 species and the
 combined trait 2,456 species, against 678 and 1,277 in the last committed
 merge. The growth is everything queued since the last successful harvest,
 not these groups alone.
+
+Addendum (2026-11-17, later the same day): the Burger TSV's 231 blank
+species_sci cells have been filled with the resolved names (the file's own
+convention -- on all 1,321 previously filled rows, species_sci equals the
+resolver's output for the printed Binomial), the 231 parked decisions are
+revived with n_expected restored to 1, and the merge outputs were
+regenerated from the filled TSV: Brain_Mass_estimated_from_endocranial_volume
+947 -> 957 species, combined trait 2,456 -> 2,459 species, measured
+unchanged at 2,311. One decision remains at n_expected 0 (Rattus
+norvegicus, 1.4 g): no row with that value exists in the current Burger
+TSV.

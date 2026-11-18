@@ -7,9 +7,8 @@
 ##   * __ReadMe.xlsx is resolved by walking up from item_dir to the repo root
 ##     (same sentinel-file walk used by run_all_scripts_v2.R), so cwd does not
 ##     matter.
-##   * Build-script picker excludes both *compare* and *_extract_snapshot.R*
-##     files — extract-snapshot scripts are frozen-source helpers, not item
-##     builders, and should never run here.
+##   * The builder is selected by its exact item name, never by taking the
+##     first R file. Snapshot makers and other items' scripts cannot be run.
 ##   * Public TSVs are looked up in __Public/comparative-data/ (their canonical
 ##     location), not inside the paper folder.
 ##   * Table checks: if the build script checks the table against its own printed
@@ -58,6 +57,8 @@ build_dataset_item <- function(
     stop(
       "Item '", item_name, "' not found in registry: ", registry_file
     )
+  if (nrow(row) != 1L)
+    stop("Item '", item_name, "' has multiple registry rows; resolve the ambiguity.")
 
   item_encoded <- row[["Item encoded"]][[1L]]
 
@@ -69,28 +70,57 @@ build_dataset_item <- function(
     cat("Dry run: ", dry_run,      "\n\n")
   }
 
-  ## ---- find build script (exclude compare and extract_snapshot) ------------
+  ## ---- resolve the requested item's files; never pick an arbitrary first ----
   files <- list.files(item_dir, recursive = TRUE, full.names = TRUE)
-
-  build_script <- files[
-    grepl("\\.R$", files, ignore.case = TRUE) &
-      !grepl("compare",              files, ignore.case = TRUE) &
-      !grepl("_extract_snapshot\\.R$", files, ignore.case = TRUE)
-  ]
-
-  if (length(build_script) == 0L) {
-    warning("No build script found in: ", item_dir)
-    return(invisible(NULL))
+  exactly_one <- function(paths, description, required = TRUE) {
+    if (length(paths) > 1L)
+      stop("Ambiguous ", description, " for '", item_name, "': ",
+           paste(paths, collapse = "; "), call. = FALSE)
+    if (!length(paths)) {
+      if (required) stop("No ", description, " found for '", item_name, "'.", call. = FALSE)
+      return(NA_character_)
+    }
+    paths[[1L]]
   }
+  build_script <- exactly_one(files[basename(files) == paste0(item_name, ".R")],
+                              "item builder")
+
+  # A source may be a named, born-digital file rather than <item>_snapshot.*.
+  # Honor an explicit registry filename only when it unambiguously names one
+  # existing file. Multiple source files need an explicit multi-source model.
+  override_col <- "Snapshot filename (only if not <Item name>_snapshot)"
+  override <- if (override_col %in% names(row)) as.character(row[[override_col]][[1L]]) else NA_character_
+  if (!is.na(override) && nzchar(trimws(override))) {
+    declared <- trimws(override)
+    # A real filename may itself contain parentheses or semicolons. Match it
+    # exactly first, then try removing a trailing explanatory parenthetical.
+    candidate <- files[basename(files) == basename(declared)]
+    if (!length(candidate)) {
+      filename <- sub("[[:space:]]+\\(.*\\)[[:space:]]*$", "", declared)
+      candidate <- files[basename(files) == basename(filename)]
+    }
+    if (!length(candidate) && length(strsplit(declared, ";", fixed = TRUE)[[1L]]) > 1L)
+      stop("Multiple declared snapshot/source files for '", item_name,
+           "' require explicit review.", call. = FALSE)
+  } else {
+    snapshot_names <- paste0(item_name, "_snapshot.",
+                             c("csv", "xlsx", "xls", "tsv", "txt", "doc", "docx", "nex"))
+    candidate <- files[basename(files) %in% snapshot_names]
+  }
+  snapshot_file <- exactly_one(candidate, "snapshot/source")
+  # Check for an existing duplicate before running, and resolve the output again
+  # after the builder writes it. Its expected name may include dots.
+  exactly_one(files[basename(files) == paste0(item_name, ".csv")],
+              "analysis CSV", required = FALSE)
 
   if (dry_run) {
-    cat("DRY RUN — would run:\n  ", build_script[1L], "\n")
+    cat("DRY RUN — would run:\n  ", build_script, "\n")
     return(invisible(NULL))
   }
 
   ## ---- execute build script ------------------------------------------------
   build_env <- new.env(parent = baseenv())
-  sys.source(build_script[1L], envir = build_env)
+  sys.source(build_script, envir = build_env)
 
   ## ---- table checks reported by the build script (HOWTO §7a) -----------------
   table_checks <- NULL
@@ -100,25 +130,16 @@ build_dataset_item <- function(
               "tolerance", "status", "note")
     if (!is.data.frame(table_checks) || !all(need %in% names(table_checks)) ||
         !all(table_checks$status %in% c("pass", "mismatch", "not_evaluable")))
-      stop("`table_checks` from ", basename(build_script[1L]),
+      stop("`table_checks` from ", basename(build_script),
            " must be a data.frame with columns ", paste(need, collapse = ", "),
            " and status pass / mismatch / not_evaluable (build HOWTO section 7a).", call. = FALSE)
   }
 
   ## ---- gather output files for validation ----------------------------------
 
-  ## analysis CSV (non-snapshot)
-  csv_files <- list.files(
-    item_dir,
-    recursive = TRUE, pattern = "\\.csv$", full.names = TRUE
-  )
-  csv_files <- csv_files[!grepl("_snapshot\\.(csv|xlsx|xls|tsv)$", csv_files, ignore.case = TRUE)]
-
-  ## frozen source (snapshot CSV)
-  snapshot_files <- list.files(
-    item_dir,
-    recursive = TRUE, pattern = "_snapshot\\.(csv|xlsx|xls|tsv)$", full.names = TRUE
-  )
+  files <- list.files(item_dir, recursive = TRUE, full.names = TRUE)
+  csv_file <- exactly_one(files[basename(files) == paste0(item_name, ".csv")],
+                          "analysis CSV")
 
   ## public TSV lives in __Public/comparative-data/, not inside the paper folder
   public_dir <- file.path(root_dir, "__Public", "comparative-data")
@@ -127,23 +148,42 @@ build_dataset_item <- function(
 
   readme_files <- list.files(
     item_dir,
-    recursive = TRUE, pattern = "README\\.md$", full.names = TRUE
+    recursive = TRUE, pattern = "README\\.md$", full.names = TRUE, ignore.case = TRUE
   )
+  folder_name <- basename(item_dir)
+  item_readme_names <- tolower(paste0(item_name, c(".README.md", "_README.md")))
+  paper_readme_names <- tolower(c(paste0(folder_name, c(".README.md", "_README.md")), "README.md"))
+  item_readmes <- readme_files[tolower(basename(readme_files)) %in% item_readme_names]
+  paper_readmes <- readme_files[tolower(basename(readme_files)) %in% paper_readme_names]
+  readme_file <- if (length(item_readmes)) {
+    exactly_one(item_readmes, "item README")
+  } else {
+    exactly_one(paper_readmes, "paper README", required = FALSE)
+  }
 
   definitions_files <- list.files(
     file.path(item_dir, "reference_tables"),
     recursive = TRUE, pattern = "_definitions\\.csv$", full.names = TRUE
   )
+  # A single unrelated item's file is not a paper-wide dictionary. Match only
+  # the requested item or the explicitly paper-named shared dictionary.
+  item_definitions <- definitions_files[basename(definitions_files) == paste0(item_name, "_definitions.csv")]
+  paper_definitions <- definitions_files[basename(definitions_files) == paste0(folder_name, "_definitions.csv")]
+  definitions_file <- if (length(item_definitions)) {
+    exactly_one(item_definitions, "item definitions")
+  } else {
+    exactly_one(paper_definitions, "paper definitions", required = FALSE)
+  }
 
   ## ---- validate (all 7 invariants) -----------------------------------------
   report <- validate_dataset_item(
 
-    csv_file         = csv_files[1L],
+    csv_file         = csv_file,
     tsv_file         = if (file.exists(tsv_file)) tsv_file else NA_character_,
-    readme_file      = readme_files[1L],
-    definitions_file = definitions_files[1L],
+    readme_file      = readme_file,
+    definitions_file = definitions_file,
 
-    frozen_source_file = snapshot_files[1L],
+    frozen_source_file = snapshot_file,
     registry           = registry,
     item_name          = item_name,
     item_encoded       = item_encoded
@@ -154,7 +194,7 @@ build_dataset_item <- function(
   if (verbose) {
     print(report)
     if (is.null(table_checks)) {
-      cat("\nTable checks: none reported by", basename(build_script[1L]), "(not assessed).\n")
+      cat("\nTable checks: none reported by", basename(build_script), "(not assessed).\n")
     } else {
       cat("\nTable checks (", basename(build_script[1L]), "): ",
           paste(names(table(table_checks$status)), table(table_checks$status),

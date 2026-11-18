@@ -108,8 +108,20 @@ _skills/build-dataset-item/references/__HOWTO_make_a_snapshot.md
 - `__ReadMe.xlsx` is resolved by walking up from `item_dir` to the nearest
   ancestor containing that file (same logic as `run_all_scripts_v2.R`).
   `cwd` does not need to be the repo root.
-- The build-script picker excludes both `*compare*` and `*_extract_snapshot.R`
-  files; extract-snapshot scripts are frozen-source helpers, not item builders.
+- The build-script picker requires exactly one `<Item name>.R`; snapshot makers,
+  comparison scripts, and other items' builders cannot be selected by accident.
+  The analysis CSV and frozen input are also matched to the requested item, or
+  to its explicitly named registry source. Ambiguous paths stop the build.
+  Definitions and README selection uses the requested item or a paper-named
+  shared file; unrelated items' files are not used as fallbacks. Other shared
+  definitions scopes require explicit modeling.
+- Exact selection does not guarantee that a builder can run through this wrapper.
+  The real Catania and Falcone builders currently fail when sourced in the wrapper's
+  isolated environment; changing that environment alone leaves their script-path
+  detection pointing at the wrapper. Test actual builders in isolated copies before
+  using this helper as a migration gate. Some registered items use shared or
+  differently named builders; exact-name selection intentionally stops for those
+  until an explicit reviewed mapping is available.
 - Public TSVs live in `__Public/comparative-data/`, not inside paper folders.
   `audit_dataset_item()` flags any `.tsv` found inside a paper folder (other
   than a `*_snapshot.tsv` frozen source) as an orphan.

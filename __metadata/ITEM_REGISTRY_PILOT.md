@@ -13,16 +13,21 @@ are unchanged.
   proposes one supporting, non-public `reference_list` item for Literature Cited.
   The proposed bibliography ID is local to this pilot; it is not a public registry
   ID. The source locators identify the appendix table or Literature Cited section.
+  All 15 tables link to the same definitions file. Each A1–A14 table declares the
+  `Kaufman__2004_TableA1..A14` definition scope; A15 declares the separate
+  `Kaufman__2004_TableA15` scope. These correspond to exact values in the existing
+  definitions file's `Reference` column. The builder checks that the declared scope
+  exists; it does not establish that the declaration is scientifically correct.
 - `Catania_etal_1999/item_registry.pilot.csv` demonstrates the same idea with a
-  single item. It identifies Table 1, its PDF page, prepared data file, public
-  TSV, and the existing `definitions_file`; it does not repeat the workbook's
+  single item. It identifies Table 1, its PDF page, snapshot, builder, prepared
+  data file, public TSV, and the existing `definitions_file`; it does not repeat the workbook's
   41 legacy fields. The optional definitions link is validated when supplied,
   then carried into the generated index. It registers the supporting file in
   this pilot without presenting it as a separate public measurement item or
   claiming every definition is quoted from the paper.
 - `Falcone_etal_2019/item_registry.pilot.csv` demonstrates two observation
   items from one paper. Each item identifies its printed table, prepared data,
-  definitions file and public TSV; the source PDF is shared. The records are
+  snapshot, builder, definitions file and public TSV; the source PDF is shared. The records are
   provisional and do not replace the existing folder-level file inventory.
 - `build_item_index_pilot.py` combines `*/item_registry.pilot.csv` files into
   `__metadata/item_registry_index.pilot.csv`. Its `index_scope` explicitly says
@@ -69,12 +74,18 @@ For a read-only comparison of the 15 seeded records with the current
 python3 __metadata/build_item_index_pilot.py --check-workbook
 ```
 
-The latter compares every imported field for Kaufman, and checks Catania's and
+Run `PYTHONDONTWRITEBYTECODE=1 python3 __metadata/test_item_index_pilot.py` for
+focused checks of shared-definition groups and handling of generated workbook
+status changes.
+
+The latter compares imported fields for Kaufman, and checks Catania's and
 Falcone's item identities and public filenames against the workbook; these minimal
 records have no imported fields to compare. It does not evaluate Excel formulas or prove that their caches, titles,
 references or locations are correct. It
-reports an error if the workbook or local fields diverge; that is a review
-signal, not an instruction to overwrite either side. The builder validates
+reports an error if maintained item fields diverge; that is a review signal, not
+an instruction to overwrite either side. The generated workbook public-file-match
+cache is reported separately when it differs; the builder checks actual declared
+TSV existence instead of treating that cache as item authority. The builder validates
 unique item IDs and public filenames, declared source/item files, and folder
 ownership before writing the partial index. It does not discover or validate
 all project items, cross-paper resources, hidden/retired work, or workbook

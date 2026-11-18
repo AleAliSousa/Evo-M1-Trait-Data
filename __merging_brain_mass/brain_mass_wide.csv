@@ -773,7 +773,7 @@ Genetta pardina,15.4,,,,,15.4
 Genetta servalina,15.3005,,,,,15.3005
 Genetta tigrina,15.6135,,,,,15.6135
 Geocapromys ingrahami,4.46,,4.46,,,4.46
-Geomys breviceps,1.7,,,,,1.7
+Geomys breviceps,1.7,,2.29,,,1.7
 Geomys bursarius,1.35,,,,,1.35
 Geomys pinetis,2.507,,2.5086,,,2.507
 Georychus capensis,1.6585,,,,,1.6585
@@ -991,7 +991,7 @@ Lasiurus borealis,0.17,,,,,0.17
 Lavia frons,0.644,,,,,0.644
 Lemmus lemmus,0.86,,0.86,,,0.86
 Lemmus sibiricus,1.49,,,,,1.49
-Lemmus trimucronatus,1.1625,,,,,1.1625
+Lemmus trimucronatus,1.1625,,0.9,,,1.1625
 Lemniscomys rosalia,0.626,,,,,0.626
 Lemniscomys striatus,0.85,,0.85,,,0.85
 Lemur alb.fulvus,32.9,,,,,32.9
@@ -1336,7 +1336,7 @@ Murina tubinaris,0.217,,,,,0.217
 Murina turbinaris,0.22,,,,,0.22
 Mus booduga,0.31,,0.31,,,0.31
 Mus minutoides,0.27,,0.27,,,0.27
-Mus musculoides,0.37,,,,,0.37
+Mus musculoides,0.37,,0.96,,,0.37
 Mus musculus,0.5074,,,,0.402,0.5074
 Mus platythrix,0.5,,0.5,,,0.5
 Mus sp.,0.5,,,,,0.5
@@ -1810,7 +1810,7 @@ Potorous tridactylus,12.235,,9.53,,,12.235
 Potorous tridactylus tridactylus,9.53,,9.53,,,
 Potos flavus,30.1087,,,,,30.1087
 Praomys coetzeei,0.86,,,,,0.86
-Praomys daltoni,0.68,,,,,0.68
+Praomys daltoni,0.68,,0.68,,,0.68
 Praomys jacksoni,0.87,,,,,0.87
 Praomys morio,0.84,,0.84,,,0.84
 Praomys tullbergi,0.86,,0.86,,,0.86
@@ -1930,7 +1930,7 @@ Rattus fuscipes,1.955,,1.69,,,1.955
 Rattus leucopus,1.863,,,,,1.863
 Rattus lutreolus,2.0345,,1.64,,,2.0345
 Rattus morotaiensis,1.92,,1.92,,,1.92
-Rattus niobe,1.1,,,,,1.1
+Rattus niobe,1.1,,1.1,,,1.1
 Rattus nitidus,1.7,,1.7,,,1.7
 Rattus norvegicus,1.983,,,,1.724,1.983
 Rattus norvegicus f.d.,1.7209,,,,,1.7209
@@ -1941,7 +1941,7 @@ Rattus sordidus,1.607,,1.7,,,1.607
 Rattus sp,2.3,,,,,2.3
 Rattus sp.,1.91,,,,,1.91
 Rattus tunneyi,1.609,,1.41,,,1.609
-Rattus verecundus,1.48,,,,,1.48
+Rattus verecundus,1.48,,1.48,,,1.48
 Ratufa affinis,9.85,,9.85,,,9.85
 Ratufa bicolor,11.01,,11.01,,,11.01
 Ratufa indica,11.5,,,,,11.5
@@ -2076,7 +2076,7 @@ Scapanus townsendii,2.02,,2.02,,,2.02
 Scarturus elater,1.9,,,,,1.9
 Schizocortex,103.7,,,,,103.7
 Sciurocheirus gabonensis,5.36,,,,,5.36
-Sciurus aberti,7.145,,,,,7.145
+Sciurus aberti,7.145,,7.44,,,7.145
 Sciurus anomalus,5.56,,,,,5.56
 Sciurus aureogaster,7.81,,7.81,,,7.81
 Sciurus carolinensis,6.337,,7.17,,5.548,6.337
@@ -2149,15 +2149,17 @@ Spermophilus adocetus,3.01,,3.01,,,
 Spermophilus alashanicus,2.89,,2.89,,,
 Spermophilus armatus,3.09,,3.09,,,
 Spermophilus atricapillus,5.24,,5.24,,,
-Spermophilus beldingi,3.28,,3.28,,,
+Spermophilus beldingi,3.12,,3.12,,,
 Spermophilus brunneus,2.11,,2.11,,,
 Spermophilus canus,1.6,,1.6,,,
 Spermophilus citellus,2.7137,,2.89,,,2.7137
+Spermophilus columbianus,3.95,,3.95,,,
 Spermophilus dauricus,2.7948,,2.75,,,2.7948
 Spermophilus elegans,2.76,,2.76,,,
 Spermophilus erythrogenys,3.5054,,3.44,,,3.5054
-Spermophilus franklinii,3.82,,3.82,,,
+Spermophilus franklinii,3.89,,3.89,,,
 Spermophilus fulvus,4.6314,,4.55,,,4.6314
+Spermophilus lateralis,3.06,,3.06,,,
 Spermophilus madrensis,2.715,,2.715,,,
 Spermophilus major,4.186,,4.12,,,4.186
 Spermophilus mexicanus,3.5,,3.5,,,
@@ -2168,14 +2170,15 @@ Spermophilus parryii,5.78,,5.78,,,
 Spermophilus perotensis,2.79,,2.79,,,
 Spermophilus pygmaeus,2.5294,,2.44,,,2.5294
 Spermophilus relictus,3.5417,,3.49,,,3.5417
+Spermophilus richardsonii,3.18,,3.18,,,
 Spermophilus saturatus,3.38,,3.38,,,
 Spermophilus spilosoma,2.37,,2.37,,,
 Spermophilus suslicus,2.5891,,2.55,,,2.5891
 Spermophilus taurensis,3.144,,,,,3.144
 Spermophilus tereticaudus,1.75,,1.75,,,
-Spermophilus townsendii,2.06,,2.06,,,
+Spermophilus townsendii,1.975,,1.975,,,
 Spermophilus tridecemlineatus,2.7065,,2.27,,,2.7065
-Spermophilus undulatus,4.84,,4.84,,,
+Spermophilus undulatus,4.285,,4.285,,,
 Spermophilus variegatus,7.01,,7.01,,,
 Spermophilus washingtoni,1.8,,1.8,,,
 Spermophilus xanthoprymnus,3.0149,,3.04,,,3.0149

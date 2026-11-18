@@ -21,15 +21,15 @@ body mass^0.64), slope from the 493-species data of González-Lagos et al.
   verbatim (volumes in cm³ as printed; species names as printed) and
   writes:
   - `CastilloMorales_etal_2016_Table1.csv` (analysis-ready, 28 rows)
-  - `public_tsv/10.1098%2Frsob.160132_Table1.tsv` (public, DOI-encoded —
+  - `../__Public/comparative-data/10.1098%2Frsob.160132_Table1.tsv` (public, DOI-encoded —
     name is the expected Item encoded; see Registry)
 - **Definitions:** `reference_tables/CastilloMorales_etal_2016_Table1_definitions.csv`.
 - **Reader:** the CSV/TSV were produced by Muse (Buddy), Michael Proulx's
   AI assistant, with a Python equivalent of the .R build and
   cross-checked programmatically: recomputing Nr from the two volume
-  columns reproduces all 28 printed Nr values to 2 dp. **R execution of
-  the .R script is pending** — the script reproduces the same outputs
-  from the transcription it documents.
+  columns reproduces all 28 printed Nr values to 2 dp. The R script was
+  run in an isolated copy on 2026-11-18; its CSV and TSV matched the
+  committed files by cell.
 
 ## Data role and caveats
 
@@ -53,5 +53,4 @@ body mass^0.64), slope from the 493-species data of González-Lagos et al.
 ## Registry
 
 The public TSV name above is the expected Item encoded
-(10.1098%2Frsob.160132_Table1). Adding the registry row in `__ReadMe.xlsx`
-is an owner step, as is any ingestion into the volumes merge.
+(10.1098%2Frsob.160132_Table1). The registry row was added on 2026-11-18; descriptive metadata remain incomplete. Merge ingestion is pending.

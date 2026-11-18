@@ -13,19 +13,20 @@ with the literature sources for each row named in `References`.
 ## What we built
 
 - **Frozen sources:** the Dryad CSV and its README PDF, verbatim, in
-  this folder.
+  this folder. `GonzalezVoyer_etal_2016_BrainData_snapshot.csv` is a
+  byte-identical item snapshot of the Dryad CSV.
 - **Reformat:** `GonzalezVoyer_etal_2016_BrainData.R` adds `species_sci`
   (printed name, underscores replaced by spaces; printed name preserved
   as `Species_name`) and writes:
   - `GonzalezVoyer_etal_2016_BrainData.csv` (596 rows)
-  - `public_tsv/10.1111%2Fevo.12943_BrainData.tsv` (public, DOI-encoded
+  - `../__Public/comparative-data/10.1111%2Fevo.12943_BrainData.tsv` (public, DOI-encoded
     — name is the expected Item encoded; see Registry)
 - **Definitions:** `reference_tables/GonzalezVoyer_etal_2016_BrainData_definitions.csv`.
 - **Reader:** the CSV/TSV were produced by Muse (Buddy), Michael
   Proulx's AI assistant, with a Python equivalent of the .R build and
   cross-checked against the frozen source (596 rows, no duplicates,
-  brain+body mass present for all rows). **R execution of the .R script
-  is pending** — the script reproduces the same outputs.
+  brain+body mass present for all rows). The R script was run in an isolated
+  copy on 2026-11-18; its output matched the committed CSV and TSV by cell.
 
 ## Data role and caveats
 
@@ -45,5 +46,5 @@ with the literature sources for each row named in `References`.
 ## Registry
 
 The public TSV name above is the expected Item encoded
-(10.1111%2Fevo.12943_BrainData). Adding the registry row in
-`__ReadMe.xlsx` is an owner step, as is any ingestion into a merge.
+(10.1111%2Fevo.12943_BrainData). The registry row was added on
+2026-11-18; descriptive metadata remain incomplete. Merge ingestion is pending.

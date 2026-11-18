@@ -25,11 +25,11 @@
 #
 # Outputs:
 #   Kruska__1980_Tabelle1.csv / Kruska__1980_Tabelle2.csv  (this folder)
-#   public_tsv/10.1111%2Fj.1439-0469.1980.tb00738.x_Tabelle1.tsv
-#   public_tsv/10.1111%2Fj.1439-0469.1980.tb00738.x_Tabelle2.tsv
+#   ../__Public/comparative-data/10.1111%2Fj.1439-0469.1980.tb00738.x_Tabelle1.tsv
+#   ../__Public/comparative-data/10.1111%2Fj.1439-0469.1980.tb00738.x_Tabelle2.tsv
 #
 # Registry note: the public TSV names are the expected Items encoded.
-# The registry rows in __ReadMe.xlsx are an owner step.
+# The registry rows were added on 2026-11-18; descriptive metadata remain incomplete.
 
 t1 <- read.csv(text = "
 specimen_code,species_sci,species_as_printed,Fresh_brain_weight_g,Fixation_shrinkage_pct
@@ -93,7 +93,7 @@ stopifnot(mean(alp$Brain_volume_mm3_fresh) == 181467,
 
 write.csv(t1, "Kruska__1980_Tabelle1.csv", row.names = FALSE)
 write.csv(t2, "Kruska__1980_Tabelle2.csv", row.names = FALSE)
-write.table(t1, "public_tsv/10.1111%2Fj.1439-0469.1980.tb00738.x_Tabelle1.tsv",
+write.table(t1, "../__Public/comparative-data/10.1111%2Fj.1439-0469.1980.tb00738.x_Tabelle1.tsv",
             sep = "\t", row.names = FALSE, quote = FALSE)
-write.table(t2, "public_tsv/10.1111%2Fj.1439-0469.1980.tb00738.x_Tabelle2.tsv",
+write.table(t2, "../__Public/comparative-data/10.1111%2Fj.1439-0469.1980.tb00738.x_Tabelle2.tsv",
             sep = "\t", row.names = FALSE, quote = FALSE)

@@ -20,8 +20,8 @@ is the trait source.
 Build: `CastilloMorales_etal_2016_Table1.R` transcribes Table 1 to
 `CastilloMorales_etal_2016_Table1.csv` and to the DOI-coded public TSV.
 See `CastilloMorales_etal_2016_Table1.README.md` for the data role
-(secondary compilation), caveats, checks, and the registry step that is
-still pending.
+(secondary compilation), caveats and checks. The registry row was added
+on 2026-11-18; descriptive metadata remain incomplete.
 
 Quality Notes:
 
@@ -29,7 +29,7 @@ Quality Notes:
    volumes from (paper refs 84–99). 14 of the 16 sources are already
    Evo-M1 folders, so most rows can be checked directly against the
    primary compilations. Not in the repo when this item was built:
-   Beatty_Laughlin_2006 (mouse), Roehrs__1986 (ferret), Kruska__1980
+   Beatty_Laughlin_2006 (mouse), Röhrs__1986 (ferret), Kruska__1980
    (alpaca); the Ei values rest on Gonzalez-Lagos et al. 2010 (ref 83),
    also not in the repo.
 
@@ -40,5 +40,4 @@ Quality Notes:
    the factor cancels. Transcribed as printed; flagged here, not fixed.
 
 3. Folder added 2026-11-18 by Muse (Buddy), Michael Proulx's AI
-   assistant, at Michael Proulx's request; registry row in `__ReadMe.xlsx`
-   and any merge ingestion remain owner steps.
+   assistant, at Michael Proulx's request. The registry row was added later on 2026-11-18; merge ingestion is pending.

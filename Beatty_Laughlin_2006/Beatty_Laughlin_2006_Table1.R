@@ -22,11 +22,10 @@
 #
 # Outputs:
 #   Beatty_Laughlin_2006_Table1.csv               (this folder)
-#   public_tsv/10.1186%2F1471-2202-7-16_Table1.tsv (for __Public/comparative-data/)
+#   ../__Public/comparative-data/10.1186%2F1471-2202-7-16_Table1.tsv (for __Public/comparative-data/)
 #
 # Registry note: the public TSV name is the expected Item encoded
-# (10.1186%2F1471-2202-7-16_Table1). The registry row in __ReadMe.xlsx is
-# an owner step.
+# (10.1186%2F1471-2202-7-16_Table1). The registry row was added on 2026-11-18; descriptive metadata remain incomplete.
 
 tab <- read.csv(text = "
 Strain,N,Cortical_volume_mm3_in_vivo,Noncortical_volume_mm3_in_vivo,Cortical_volume_mm3_regressed,Noncortical_volume_mm3_regressed
@@ -78,5 +77,5 @@ stopifnot(c57$Cortical_volume_mm3_in_vivo == 115.59,
           c57$Noncortical_volume_mm3_in_vivo == 362.01)
 
 write.csv(tab, "Beatty_Laughlin_2006_Table1.csv", row.names = FALSE)
-write.table(tab, "public_tsv/10.1186%2F1471-2202-7-16_Table1.tsv",
+write.table(tab, "../__Public/comparative-data/10.1186%2F1471-2202-7-16_Table1.tsv",
             sep = "\t", row.names = FALSE, quote = FALSE)

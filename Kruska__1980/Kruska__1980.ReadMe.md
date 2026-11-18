@@ -19,8 +19,8 @@ weights + fixation shrinkage, 40 specimens) and Tabelle 2 (per-specimen
 camelid brain-part volumes) to CSVs and DOI-coded public TSVs. The full
 verbatim extraction of all 14 tables is archived in `extracted_tables/`
 with its REPORT.md. See `Kruska__1980_Tabellen1-2.README.md` for
-methods, data role (primary), caveats, checks, and the registry step
-still pending.
+methods, data role (primary), caveats and checks. The two registry rows
+were added on 2026-11-18; descriptive metadata remain incomplete.
 
 Quality Notes:
 
@@ -34,5 +34,4 @@ Quality Notes:
    as printed and the cell is flagged in the CSV.
 
 3. Folder added 2026-11-18 by Muse (Buddy), Michael Proulx's AI
-   assistant, at Michael Proulx's request; registry rows in
-   `__ReadMe.xlsx` remain an owner step.
+   assistant, at Michael Proulx's request. The two registry rows were added later on 2026-11-18; descriptive metadata remain incomplete.

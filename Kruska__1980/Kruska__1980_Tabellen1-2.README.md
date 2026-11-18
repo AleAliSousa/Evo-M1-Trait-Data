@@ -30,16 +30,14 @@ alpaca specimens (brain volume (180502 + 182432)/2 = 181467 mm³ =
   (German decimal commas and space thousands separators normalised)
   and writes:
   - `Kruska__1980_Tabelle1.csv` (40 rows), `Kruska__1980_Tabelle2.csv` (7 rows)
-  - `public_tsv/10.1111%2Fj.1439-0469.1980.tb00738.x_Tabelle1.tsv` and
+  - `../__Public/comparative-data/10.1111%2Fj.1439-0469.1980.tb00738.x_Tabelle1.tsv` and
     `_Tabelle2.tsv` (public, DOI-encoded — names are the expected
     Items encoded; see Registry)
 - **Definitions:** `reference_tables/Kruska__1980_Tabelle1_definitions.csv`
   and `..._Tabelle2_definitions.csv`.
 - **Reader:** the CSVs/TSVs were produced by Muse (Buddy), Michael
   Proulx's AI assistant, from the verified extraction in
-  `extracted_tables/`. **R execution of the .R script is pending** —
-  the script reproduces the same outputs and re-checks the alpaca
-  means against Castillo-Morales et al. (2016).
+  `extracted_tables/`. The R script was run in an isolated copy on 2026-11-18; both CSVs and TSVs matched the committed files by cell, and the alpaca checks passed.
 
 ## Data role and caveats
 
@@ -69,6 +67,4 @@ alpaca specimens (brain volume (180502 + 182432)/2 = 181467 mm³ =
 ## Registry
 
 The public TSV names above are the expected Items encoded
-(10.1111%2Fj.1439-0469.1980.tb00738.x_Tabelle1 / _Tabelle2). Adding the
-registry rows in `__ReadMe.xlsx` is an owner step, as is any ingestion
-into the volumes merge.
+(10.1111%2Fj.1439-0469.1980.tb00738.x_Tabelle1 / _Tabelle2). The two registry rows were added on 2026-11-18; descriptive metadata remain incomplete. Merge ingestion is pending.

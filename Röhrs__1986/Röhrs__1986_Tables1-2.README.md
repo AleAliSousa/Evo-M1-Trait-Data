@@ -20,20 +20,19 @@ furo*, 8.8996 cm³ / 4.147 cm³.
 
 - **Frozen source:** the publisher PDF scan in this folder, supplied by
   Michael Proulx (2026-11-18).
-- **Reformat:** `Roehrs__1986_Tables1-2.R` transcribes both tables
+- **Reformat:** `Röhrs__1986_Tables1-2.R` transcribes both tables
   (German decimal commas converted to points) and writes:
-  - `Roehrs__1986_Table1.csv` (20 rows), `Roehrs__1986_Table2.csv` (10 rows)
-  - `public_tsv/10.1111%2Fj.1439-0469.1986.tb00624.x_Table1.tsv` and
+  - `Röhrs__1986_Table1.csv` (20 rows), `Röhrs__1986_Table2.csv` (10 rows)
+  - `../__Public/comparative-data/10.1111%2Fj.1439-0469.1986.tb00624.x_Table1.tsv` and
     `_Table2.tsv` (public, DOI-encoded — names are the expected Items
     encoded; see Registry)
-- **Definitions:** `reference_tables/Roehrs__1986_Table1_definitions.csv`
+- **Definitions:** `reference_tables/Röhrs__1986_Table1_definitions.csv`
   and `..._Table2_definitions.csv`.
 - **Reader:** the CSVs/TSVs were produced by Muse (Buddy), Michael
   Proulx's AI assistant, by transcribing the printed tables and
   verifying every value against page images of the scan (journal
-  pp. 161, 163). **R execution of the .R script is pending** — the
-  script reproduces the same outputs and re-checks the identities
-  noted below.
+  pp. 161, 163). The R script was run in an isolated copy on 2026-11-18;
+  both CSVs and TSVs matched the committed files by cell.
 
 ## Data role and caveats
 
@@ -59,6 +58,4 @@ furo*, 8.8996 cm³ / 4.147 cm³.
 ## Registry
 
 The public TSV names above are the expected Items encoded
-(10.1111%2Fj.1439-0469.1986.tb00624.x_Table1 / _Table2). Adding the
-registry rows in `__ReadMe.xlsx` is an owner step, as is any ingestion
-into the volumes merge.
+(10.1111%2Fj.1439-0469.1986.tb00624.x_Table1 / _Table2). The two registry rows were added on 2026-11-18; descriptive metadata remain incomplete. Merge ingestion is pending.

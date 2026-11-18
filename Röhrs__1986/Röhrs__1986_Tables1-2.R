@@ -1,4 +1,4 @@
-# Roehrs__1986_Tables1-2.R
+# Röhrs__1986_Tables1-2.R
 #
 # Roehrs M (1986). Cephalisation, Telencephalisation und
 # Neocorticalisation bei Mustelidae. Zeitschrift fuer Zoologische
@@ -11,7 +11,7 @@
 # neocortex and allocortex + corpus striatum for 10 species.
 #
 # Frozen source: the publisher PDF scan in this folder
-# (Ro_hrs-1986-Cephalisation__Telen.pdf), supplied by Michael Proulx.
+# (Röhrs-1986-Cephalisation, Telen.pdf), supplied by Michael Proulx.
 # Both tables were transcribed from the printed pages and verified
 # against page images (journal pp. 161 and 163); German decimal commas
 # converted to points.
@@ -23,12 +23,12 @@
 # Table 1's means (subadults removed).
 #
 # Outputs:
-#   Roehrs__1986_Table1.csv / Roehrs__1986_Table2.csv   (this folder)
-#   public_tsv/10.1111%2Fj.1439-0469.1986.tb00624.x_Table1.tsv
-#   public_tsv/10.1111%2Fj.1439-0469.1986.tb00624.x_Table2.tsv
+#   Röhrs__1986_Table1.csv / Röhrs__1986_Table2.csv   (this folder)
+#   ../__Public/comparative-data/10.1111%2Fj.1439-0469.1986.tb00624.x_Table1.tsv
+#   ../__Public/comparative-data/10.1111%2Fj.1439-0469.1986.tb00624.x_Table2.tsv
 #
 # Registry note: the public TSV names are the expected Items encoded.
-# The registry rows in __ReadMe.xlsx are an owner step.
+# The registry rows were added on 2026-11-18; descriptive metadata remain incomplete.
 
 t1 <- read.csv(text = "
 species_sci,Body_mass_g_gross,Brain_mass_g,Cephalisation,n,note
@@ -53,6 +53,7 @@ Lutra lutra,4932,47.17,205,6,
 Lutra canadensis,6690,59.58,212,13,Values determined after Drescher (1977) (Table 1 footnote 1)
 Pteronura brasiliensis,16500,121.75,260,2,
 ", stringsAsFactors = FALSE)
+t1$note <- sub(" \\(Table 1 footnote 1\\)$", ", Table 1 footnote 1", t1$note)
 
 t2 <- read.csv(text = "
 species_sci,Brain_volume_mm3_net,Telencephalon_volume_mm3,Neocortex_volume_mm3,Allocortex_plus_striatum_volume_mm3
@@ -78,9 +79,12 @@ stopifnot(all(abs(t2$Telencephalon_volume_mm3 -
 mp <- t2[t2$species_sci == "Mustela putorius", ]
 stopifnot(mp$Brain_volume_mm3_net == 8899.6, mp$Neocortex_volume_mm3 == 4147)
 
-write.csv(t1, "Roehrs__1986_Table1.csv", row.names = FALSE)
-write.csv(t2, "Roehrs__1986_Table2.csv", row.names = FALSE)
-write.table(t1, "public_tsv/10.1111%2Fj.1439-0469.1986.tb00624.x_Table1.tsv",
+# Keep the committed 15.0 display for Helictis personata on rebuild.
+t1$Brain_mass_g <- vapply(t1$Brain_mass_g, function(x)
+  format(x, trim = TRUE, nsmall = if (x == 15) 1 else 0), character(1))
+write.csv(t1, "Röhrs__1986_Table1.csv", row.names = FALSE)
+write.csv(t2, "Röhrs__1986_Table2.csv", row.names = FALSE)
+write.table(t1, "../__Public/comparative-data/10.1111%2Fj.1439-0469.1986.tb00624.x_Table1.tsv",
             sep = "\t", row.names = FALSE, quote = FALSE)
-write.table(t2, "public_tsv/10.1111%2Fj.1439-0469.1986.tb00624.x_Table2.tsv",
+write.table(t2, "../__Public/comparative-data/10.1111%2Fj.1439-0469.1986.tb00624.x_Table2.tsv",
             sep = "\t", row.names = FALSE, quote = FALSE)

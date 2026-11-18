@@ -17,14 +17,13 @@ size-regressed values are given.
 - **Reformat:** `Beatty_Laughlin_2006_Table1.R` transcribes Table 1 and
   writes:
   - `Beatty_Laughlin_2006_Table1.csv` (36 rows, volumes in mm³)
-  - `public_tsv/10.1186%2F1471-2202-7-16_Table1.tsv` (public, DOI-encoded
+  - `../__Public/comparative-data/10.1186%2F1471-2202-7-16_Table1.tsv` (public, DOI-encoded
     — name is the expected Item encoded; see Registry)
 - **Definitions:** `reference_tables/Beatty_Laughlin_2006_Table1_definitions.csv`.
 - **Reader:** the CSV/TSV were produced by Muse (Buddy), Michael
   Proulx's AI assistant, by parsing the frozen full-text XML table
   programmatically (36/36 rows, C57BL/6J spot values verified against the
-  article PDF). **R execution of the .R script is pending** — the script
-  reproduces the same outputs from the transcription it documents.
+  article PDF). The R script was run in an isolated copy on 2026-11-18; its CSV and TSV matched the committed files by cell.
 
 ## Data role and caveats
 
@@ -44,6 +43,4 @@ size-regressed values are given.
 ## Registry
 
 The public TSV name above is the expected Item encoded
-(10.1186%2F1471-2202-7-16_Table1). Adding the registry row in
-`__ReadMe.xlsx` is an owner step, as is any ingestion into the volumes
-merge.
+(10.1186%2F1471-2202-7-16_Table1). The registry row was added on 2026-11-18; descriptive metadata remain incomplete. Merge ingestion is pending.

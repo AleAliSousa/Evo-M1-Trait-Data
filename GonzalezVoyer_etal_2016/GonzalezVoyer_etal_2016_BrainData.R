@@ -30,13 +30,12 @@
 #
 # Outputs:
 #   GonzalezVoyer_etal_2016_BrainData.csv          (this folder)
-#   public_tsv/10.1111%2Fevo.12943_BrainData.tsv   (for __Public/comparative-data/)
+#   ../__Public/comparative-data/10.1111%2Fevo.12943_BrainData.tsv   (for __Public/comparative-data/)
 #
 # Registry note: the public TSV name is the expected Item encoded
-# (10.1111%2Fevo.12943_BrainData). The registry row in __ReadMe.xlsx is
-# an owner step.
+# (10.1111%2Fevo.12943_BrainData). The registry row was added on 2026-11-18; descriptive metadata remain incomplete.
 
-d <- read.csv("Gonzalez-Voyer_et_al_Evolution_Brain_Data.csv",
+d <- read.csv("GonzalezVoyer_etal_2016_BrainData_snapshot.csv",
               stringsAsFactors = FALSE, check.names = FALSE)
 d$species_sci <- gsub("_", " ", d$Species_name)
 d <- d[, c("species_sci", setdiff(names(d), "species_sci"))]
@@ -44,5 +43,5 @@ stopifnot(nrow(d) == 596, !anyDuplicated(d$species_sci),
           all(!is.na(d$Brain_mass_g)), all(!is.na(d$Adult_body_mass_g)))
 
 write.csv(d, "GonzalezVoyer_etal_2016_BrainData.csv", row.names = FALSE)
-write.table(d, "public_tsv/10.1111%2Fevo.12943_BrainData.tsv",
+write.table(d, "../__Public/comparative-data/10.1111%2Fevo.12943_BrainData.tsv",
             sep = "\t", row.names = FALSE, quote = FALSE)

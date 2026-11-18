@@ -12,20 +12,6 @@ size-regressed values are given.
 
 ## Source → Snapshot → Data readable → Online database
 
-<<<<<<< HEAD
-- **Frozen sources:** publisher PDF, Europe PMC full-text XML, and the
-  publisher's figure files (the article has no supplementary data files).
-- **Reformat:** `Beatty_Laughlin_2006_Table1.R` transcribes Table 1 and
-  writes:
-  - `Beatty_Laughlin_2006_Table1.csv` (36 rows, volumes in mm³)
-  - `../__Public/comparative-data/10.1186%2F1471-2202-7-16_Table1.tsv` (public, DOI-encoded
-    — name is the expected Item encoded; see Registry)
-- **Definitions:** `reference_tables/Beatty_Laughlin_2006_Table1_definitions.csv`.
-- **Reader:** the CSV/TSV were produced by Muse (Buddy), Michael
-  Proulx's AI assistant, by parsing the frozen full-text XML table
-  programmatically (36/36 rows, C57BL/6J spot values verified against the
-  article PDF). The R script was run in an isolated copy on 2026-11-18; its CSV and TSV matched the committed files by cell.
-=======
 - **Source:** the publisher's full-text XML of the article (Europe PMC,
   PMCID PMC1402304), frozen in this folder as `fulltext.xml`, with the
   publisher PDF (`1471-2202-7-16.pdf`) held as provenance. The article
@@ -46,7 +32,6 @@ size-regressed values are given.
 - **Online database:** public TSV `10.1186%2F1471-2202-7-16_Table1.tsv`
   in `__Public/comparative-data/`; registry row in `__ReadMe.xlsx`
   (Item name `Beatty_Laughlin_2006_Table1`).
->>>>>>> 92a9b69404ddaff1cfd1c8f6e9607368c2dbeb5b
 
 ## Data role and caveats
 
@@ -64,11 +49,3 @@ size-regressed values are given.
 - **Regressed columns are size-corrected values for QTL mapping**, not
   volumes; they are flagged `derived` in the definitions and must not be
   pooled with measured volumes.
-<<<<<<< HEAD
-
-## Registry
-
-The public TSV name above is the expected Item encoded
-(10.1186%2F1471-2202-7-16_Table1). The registry row was added on 2026-11-18; descriptive metadata remain incomplete. Merge ingestion is pending.
-=======
->>>>>>> 92a9b69404ddaff1cfd1c8f6e9607368c2dbeb5b

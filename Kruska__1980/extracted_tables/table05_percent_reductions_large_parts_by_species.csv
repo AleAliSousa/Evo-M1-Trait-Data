@@ -1,0 +1,12 @@
+structure,Ratte_pct_reduction,Schwein_pct_reduction,Schaf_pct_reduction,Lama_Alpaka_pct_reduction,Frettchen_pct_reduction,Pudel_pct_reduction,note
+Hirnvolumen,"8,1","33,6","23,9","17,6","32,4","34,0",
+Medulla oblongata,"1,6","27,8","13,4","13,3","15,3","29,1",
+Cerebellum,"10,3","27,3","15,8","12,4","23,4","32,1",
+Mesencephalon,"2,3","29,7","21,5","8,4","16,6","11,5",
+Diencephalon,"4,9","34,1","21,2","9,1","29,3","34,3",
+Telencephalon,"10,6","37,4","26,3","21,5","36,7","35,4",
+Neocortex,"12,5","38,5","26,2","23,9","38,9","36,5",
+Corpus striatum,"10,9","28,9","20,8","9,2","30,9","27,1","Frettchen: single joint value 30,9 printed for Corpus striatum + Allocortex (brace in original)"
+Allocortex,"7,7","35,4","29,3","5,5",,"27,0",Frettchen: see Corpus striatum row (joint value)
+Neocortex grau,"14,4","34,3","24,9","26,1",-,-,"dash = not measured, as printed"
+Neocortex weiss,0,"44,3","28,9","20,6",-,-,"dash = not measured, as printed"

@@ -39,5 +39,8 @@ Quality Notes:
    its methods only — no analysis CSV, no public TSV, no registry row.
 
 2. Folder added 2026-11-18 by Muse (Buddy), Michael Proulx's AI
-   assistant, at Michael Proulx's request; registry row in `__ReadMe.xlsx`
-   remains an owner step.
+   assistant, at Michael Proulx's request. There is no registry row
+   for this folder and none is needed: the registry's unit is the
+   dataset item, and this folder has none — if the 493-species file is
+   ever obtained, it becomes an item then (with its own registry row,
+   snapshot and build script).

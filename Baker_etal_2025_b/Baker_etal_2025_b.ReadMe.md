@@ -14,18 +14,19 @@ Supplementary Data 1 — species-level brain and body mass data (4,679 species).
 Publisher filename: 41467_2025_66843_MOESM3_ESM.xlsx
 
 3. The download is digital-native (XLSX with sheets "Data S1" and
-"Reference List"), so it is kept verbatim in this folder as the frozen
-source — no snapshot is made (see
-`_skills/build-dataset-item/references/__HOWTO_build_a_dataset_file.md`
-§0a invariant 1).
+"Reference List"), so no snapshot is made: it is kept verbatim in
+this folder under its original name, is listed in the registry under
+that name (the item's "Snapshot filename" field), and the build
+script reads it directly. Nothing was re-saved or converted.
 
 --> USE THIS FILE: 41467_2025_66843_MOESM3_ESM.xlsx
 
-Build: `Baker_etal_2025_b_SupplementaryData1.R` extracts the mammal rows
-(1,684 species) to `Baker_etal_2025_b_SupplementaryData1.csv` and to the
-DOI-coded public TSV. See `Baker_etal_2025_b_SupplementaryData1.README.md`
-for the data role (secondary compilation), caveats, checks, and the
-registry step that is still pending.
+Build: `Baker_etal_2025_b_SupplementaryData1.R` reads only that
+file, extracts the mammal rows (1,684 species) to
+`Baker_etal_2025_b_SupplementaryData1.csv` and to the DOI-coded public
+TSV. See `Baker_etal_2025_b_SupplementaryData1.README.md` for the data
+role (secondary compilation), caveats and checks. Registry row in
+`__ReadMe.xlsx` added 2026-11-17 (item Baker_etal_2025_b_SupplementaryData1).
 
 Quality Notes:
 
@@ -38,5 +39,5 @@ Quality Notes:
    per-row basis is not flagged — see the item README before any merge use.
 
 3. Folder added 2026-11-16 by Muse (Buddy), Michael Proulx's AI assistant,
-   at Michael Proulx's request; registry row in `__ReadMe.xlsx` and any
-   merge ingestion remain owner steps.
+   at Michael Proulx's request; rebuilt to the snapshot-first form in
+   `_skills/build-dataset-item` on 2026-11-18.

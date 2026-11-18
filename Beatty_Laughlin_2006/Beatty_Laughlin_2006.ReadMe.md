@@ -12,10 +12,18 @@ figure originals (12868_2005_221_MOESM1_ESM.png, MOESM2).
 
 --> USE THIS FILE: fulltext.xml (machine-readable Table 1; PDF for audit)
 
-Build: `Beatty_Laughlin_2006_Table1.R` writes
+Build: `Beatty_Laughlin_2006_Table1_snapshot.R` captures Table 1 from
+the frozen XML into `Beatty_Laughlin_2006_Table1_snapshot.csv` (the
+frozen snapshot; it refuses to overwrite a differing copy), and
+`Beatty_Laughlin_2006_Table1.R` reads only that snapshot and writes
 `Beatty_Laughlin_2006_Table1.csv` and the DOI-coded public TSV. See
 `Beatty_Laughlin_2006_Table1.README.md` for the data role (primary,
+<<<<<<< HEAD
 strain-level), caveats and checks. The item is registered; its descriptive metadata remain incomplete.
+=======
+strain-level), caveats and checks. Registry row in `__ReadMe.xlsx`
+added 2026-11-18.
+>>>>>>> 92a9b69404ddaff1cfd1c8f6e9607368c2dbeb5b
 
 Quality Notes:
 
@@ -28,4 +36,9 @@ Quality Notes:
    magnitudes and by the match in note 1.
 
 3. Folder added 2026-11-18 by Muse (Buddy), Michael Proulx's AI
+<<<<<<< HEAD
    assistant, at Michael Proulx's request. The registry row was added later on 2026-11-18; merge ingestion is pending.
+=======
+   assistant, at Michael Proulx's request; rebuilt to the snapshot-first
+   form in `_skills/build-dataset-item` the same day.
+>>>>>>> 92a9b69404ddaff1cfd1c8f6e9607368c2dbeb5b

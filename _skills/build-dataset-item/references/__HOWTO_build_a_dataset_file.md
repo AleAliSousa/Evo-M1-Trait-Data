@@ -13,7 +13,9 @@ ancestor of this document; this is the expanded, authoritative version.
 ```
 Source (PDF / journal Excel / Adobe export)
   → frozen source   faithful copy that cleaning is reproducible from:
-                      digital-native → the untouched download itself (no derived snapshot)
+                      digital-native → the untouched download itself: copy-renamed to ..._snapshot.<ext>,
+                                       or (public, non-paywalled data only) kept under its own name,
+                                       listed in __ReadMe.xlsx, read by the .R
                       printed/scanned → a hand-verified ..._snapshot.xlsx | .csv
   → reformat (R)    clean + type + convert units               (..._Table<N>.R)
       + table check  same script: sums re-added and compared with the printed totals (§7a)
@@ -38,8 +40,10 @@ analysis program. Every transformation between the two belongs in the R script.
 **One golden rule (inherited from the snapshot guide):** freeze the source *before* any cleaning;
 every change after that happens in the `.R` script, never silently in the frozen copy. What counts as
 the frozen copy depends on the source: for a **digital-native** source (a journal-supplied CSV/XLSX)
-the untouched download *is* the frozen copy — keep it verbatim and script from it directly; only a
-**printed/scanned** source needs a separate hand-made `_snapshot` (see §0a invariant 1 and §2).
+the untouched download *is* the frozen copy — keep it verbatim, and either copy-rename it to
+`<Item name>_snapshot.<ext>` or, with no snapshot, list its filename in `__ReadMe.xlsx` and have the
+`.R` read it (allowed only when the data are publicly available at a URL without a paywall); only a
+**printed/scanned** source must have a separate hand-made `_snapshot` (see §0a invariant 1 and §2).
 **The public TSV (invariant 2) is required either way** — it is what gets databased, merged, and read
 by the Shiny app, and it does not depend on whether a snapshot exists.
 
@@ -59,12 +63,30 @@ the curator's judgement and the shape of the source table.
 
 1. A **frozen source exists** and all cleaning is reproducible from it (golden rule). This is
    satisfied one of two ways depending on the source:
-   - **Digital-native source** (a journal-supplied CSV/XLSX you can download and script directly):
+   - **Digital-native source** (a journal-supplied CSV/XLSX/TSV you can download and script directly):
      the **untouched download itself is the frozen copy** — keep it in the folder verbatim and never
-     edit it. **Do not make a derived `_snapshot`**; a re-save only duplicates the file and can
-     introduce drift (type coercion, re-encoding). The `.R` reads the original download. Record the
-     download filename as the source in the README and the registry's `Snapshot` / `Data readable`
-     columns (as Burger SD1 already does: `gyz043_suppl_Supplement_Data.csv`).
+     edit, open-and-resave or convert it; a re-save can introduce drift (type coercion, re-encoding).
+     A `_snapshot` is **not always needed** here. Use one of two forms:
+     - **(a) Snapshot copy** — copy-rename the download to `<Item name>_snapshot.<original ext>`,
+       bytes untouched; the `.R` reads the snapshot.
+     - **(b) No snapshot** — keep the download under its original filename. Then all three of these
+       are required:
+       1. **the data used to make the CSV/TSV are publicly available at a URL without a paywall** —
+          if the download is paywalled or otherwise not publicly retrievable, use form (a). Give the
+          URL in the README, and in the registry's `Source URL (if not DOI URL)` when it is not the
+          DOI URL;
+       2. **the digital-native filename is listed in `__ReadMe.xlsx`** (Sheet1,
+          `Snapshot filename (only if not <Item name>_snapshot)`);
+       3. **the item's `<Item>.R` reads that exact file** (2 and 3 as in Burger SD1:
+          `gyz043_suppl_Supplement_Data.csv`).
+
+       Name the file as the source in the README too.
+
+     A digital-native item with neither a `_snapshot` nor a public, registry-listed download that its
+     `.R` reads has no frozen source and fails this invariant. Tool-layer note: `audit_dataset_item()` and
+     `build_dataset_item()` find the frozen source only by the `_snapshot` suffix, so under form (b)
+     the audit reports the snapshot as MISSING and the `frozen_source` invariant is skipped — confirm
+     the registry entry and the `.R` read by hand.
    - **Printed / scanned / OCR / Adobe-export source** (the source is a *picture* of the table, not
      the data): a **`_snapshot` is required** — the hand-verified faithful capture is the only frozen,
      auditable copy, and it may be hand-made or built by an `*_extract.R`/scrape saved as a hardcopy.
@@ -97,10 +119,12 @@ the curator's judgement and the shape of the source table.
 
 - Every analysis CSV/TSV has its own script, `<Item>.R`, named exactly like the CSV. One script never
   writes two items.
-- The item script only **reads** the frozen snapshot; it never writes it.
+- The item script only **reads** the frozen source (the snapshot, or the registry-listed digital-native
+  download when no snapshot is used — invariant 1, form b); it never writes it.
 - If a snapshot has to be generated (scrape, PDF extract, `pdftools` regex), that is a separate script
   with the same name plus `_snapshot`: `<Item>_snapshot.R` -> `<Item>_snapshot.<ext>`. Not every item has
-  one: a digital-native source copy-renamed by hand, or a hand transcription, has no snapshot script.
+  one: a digital-native source (copy-renamed by hand, or read directly under its own name), or a hand
+  transcription, has no snapshot script.
 - One snapshot per item. Items never share a snapshot file. If a paper table feeds two items, give each its
   own copy (`<ItemA>_snapshot.<ext>`, `<ItemB>_snapshot.<ext>`) and, where a snapshot script exists, its
   own `<Item>_snapshot.R`. Do not name scripts `*_extract_snapshot.R`, `*_extract.R` or `*_extract_snapshots.R`.
@@ -144,11 +168,14 @@ The model folders to copy: **`Stephan_etal_1982`** (hierarchy in one species col
 
 ---
 
-## 2. Frozen source — snapshot only when the source is printed/scanned — see `__HOWTO_make_a_snapshot.md`
+## 2. Frozen source — snapshot required only when the source is printed/scanned — see `__HOWTO_make_a_snapshot.md`
 
 **First decide which case you are in (§0a invariant 1).** If the source is **digital-native** (a
-journal CSV/XLSX), skip this section: keep the download verbatim and point the `.R` at it — there is
-no snapshot to make, and no PDF-to-snapshot visual check: record `Not applicable: tabulated and
+journal CSV/XLSX/TSV), there is nothing to transcribe: keep the download verbatim and either
+copy-rename it to `<Item name>_snapshot.<original ext>`, or — only when the data are publicly
+available at a URL without a paywall — make no snapshot, list the download's filename in
+`__ReadMe.xlsx` (`Snapshot filename (only if not <Item name>_snapshot)`) and point the `.R` at it.
+Either way there is no PDF-to-snapshot visual check: record `Not applicable: tabulated and
 digital already` in the `Human visual check of snapshot` column of `__ReadMe.xlsx` (a check inside
 the table, §7a, still applies if the table has one). The steps below apply to **printed/scanned/OCR**
 sources, where the snapshot is the frozen copy.
@@ -235,7 +262,10 @@ In `__ReadMe.xlsx` **Sheet1**, one row per table:
     legibility/method notes, e.g. `table; scanned; transcribed`. Never a file type.
   - **O** `Source filetype (pdf, xlsx, csv…)`: the source file's type, lower case, no dot.
   - **R** `Snapshot filename (only if not <Item name>_snapshot)`: leave blank when the snapshot
-    has the standard name `<Item name>_snapshot.<ext>`.
+    has the standard name `<Item name>_snapshot.<ext>`. **Required** for a digital-native source
+    used without a snapshot: enter the download's filename exactly as it sits in the paper folder —
+    the file the item's `.R` reads (§0a invariant 1, form b). That form also needs the data to be
+    publicly available at a URL without a paywall.
   - **S** `Snapshot filetype (csv, xlsx, tsv…)`: the snapshot's type, lower case, no dot. A CSV
     source with a CSV snapshot has `csv` in both O and S.
   (These four headers were renamed on 2026-11-08; before, they were `Source format`,
@@ -546,7 +576,9 @@ applies this rubric.
 
 ## 11. "Done" checklist (one table)
 
-- [ ] frozen source in place — digital-native: original download kept verbatim (no derived snapshot);
+- [ ] frozen source in place — digital-native: original download kept verbatim, either copy-renamed to
+      `_snapshot.<original ext>` or, with no snapshot, publicly available at a URL without a paywall,
+      its filename listed in `__ReadMe.xlsx` (`Snapshot filename`) and read by the `.R`;
       printed/scanned: `_snapshot` frozen + reads like the PDF (caption, headers, footnotes, units, row order kept)
 - [ ] the `.R` **reads** the frozen source — no table values hardcoded in the script, and the
       snapshot is not just the clean CSV under another name

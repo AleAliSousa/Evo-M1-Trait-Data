@@ -54,7 +54,9 @@ build_dataset_item(item_dir, item_name, dry_run = FALSE)        # 3. build + val
    `*_snapshot.tsv` frozen source — as an orphan (public TSVs belong in
    `__Public/comparative-data/`, never in the paper folder).
 2. **Snapshot** — transcribe only printed/scanned sources; a born-digital
-   download is copy-renamed untouched (house rule below). Follow
+   download is either copy-renamed untouched, or — only when the data are
+   publicly available at a URL without a paywall — used without a snapshot,
+   listed in `__ReadMe.xlsx` and read by the `.R` (house rule below). Follow
    `__HOWTO_make_a_snapshot.md`: freeze the table exactly as printed *before*
    any cleaning — headers, footnote marks, `n.a.`/blank cells, row order, all
    preserved.
@@ -108,6 +110,10 @@ snapshot.
      case, no dot.
    - R `Snapshot filename (only if not <Item name>_snapshot)`: leave blank
      when the snapshot has the standard name `<Item name>_snapshot.<ext>`.
+     Required for a digital-native source used without a snapshot: enter the
+     download's filename exactly as it sits in the paper folder, the file the
+     item's `.R` reads. That form needs the data to be publicly available at
+     a URL without a paywall.
    - S `Snapshot filetype (csv, xlsx, tsv…)`: the snapshot's type, lower
      case, no dot. A CSV source with a CSV snapshot has `csv` in both O and S.
    These four headers were renamed on 2026-11-08 (before: `Source format`,
@@ -207,12 +213,22 @@ snapshot.
   `Evo-M1-Trait-Data-restricted` per `REPO_BOUNDARY.md` §3. The build writes
   its TSV directly to the repo-level `__Public/comparative-data/` — never a
   nested `__Public/` or `comparison/` inside the paper folder.
-- **Digital-native sources skip the transcription, never the suffix.** If
+- **Digital-native sources skip the transcription; the snapshot copy is
+  optional, the registry entry is not.** If
   the source is a journal-supplied CSV/XLSX/TSV you can download and script
-  directly, the untouched download *is* the frozen copy: copy-rename it to
-  `<Paper>_<locus>_snapshot.<original ext>`, bytes untouched — never
+  directly, the untouched download *is* the frozen copy — never
   open-and-resave or convert; a re-save risks silent drift (type coercion,
-  re-encoding). Transcribe only printed/scanned/OCR sources. In every case
+  re-encoding). Either (a) copy-rename it to
+  `<Paper>_<locus>_snapshot.<original ext>`, bytes untouched, or (b) make no
+  snapshot: keep the download under its original filename, list that filename
+  in `__ReadMe.xlsx` (`Snapshot filename (only if not <Item name>_snapshot)`),
+  and ensure the item's `.R` reads that file. Form (b) is allowed only when
+  the data used to make the CSV/TSV are publicly available at a URL without a
+  paywall; a paywalled or otherwise non-public download takes form (a).
+  Under (b)
+  `audit_dataset_item()` reports the snapshot as MISSING and the
+  `frozen_source` invariant is skipped, so confirm the registry entry and the
+  `.R` read by hand. Transcribe only printed/scanned/OCR sources. In every case
   the snapshot is **evidence, not product**: choose the capture that
   minimizes transformation from the publication, and standardize downstream
   in the build script (`references/__HOWTO_make_a_snapshot.md`,

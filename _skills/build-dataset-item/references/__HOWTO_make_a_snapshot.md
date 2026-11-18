@@ -10,7 +10,10 @@ comparable format. For every table we keep four files in the paper's folder:
 | `....R` | the script that turns the snapshot into the clean CSV |
 | `....ReadMe.md` | a short note on where the table came from and what was done |
 
-This guide is about the first one.
+This guide is about the first one. (A born-digital download can stand in for
+it without a `_snapshot` copy, provided the data are publicly available at a
+URL without a paywall, its filename is listed in `__ReadMe.xlsx` and the `.R`
+reads it — see *Choosing the format*.)
 
 ## The memorable distinction
 
@@ -148,9 +151,19 @@ one. So there is no standard snapshot *format*, only a standard *rule*, by
 source type:
 
 1. **Born digital** — the journal or repository supplies the data as
-   `.csv` / `.xlsx` / `.tsv`: the untouched download **is** the snapshot.
-   Copy-rename it to `<Paper>_<locus>_snapshot.<original ext>`, bytes
-   untouched — never open-and-resave, never convert. Record the original
+   `.csv` / `.xlsx` / `.tsv`: the untouched download **is** the frozen copy,
+   so a separate snapshot is not always needed. Either:
+   - copy-rename it to `<Paper>_<locus>_snapshot.<original ext>`, bytes
+     untouched; or
+   - make no snapshot: keep the download under its original filename, list
+     that filename in `__ReadMe.xlsx`
+     (`Snapshot filename (only if not <Item name>_snapshot)`), and make sure
+     the item's `.R` script reads that file. This is allowed only when the
+     data used to make the CSV/TSV are publicly available at a URL without a
+     paywall; if the download is paywalled or otherwise not publicly
+     retrievable, make the `_snapshot` copy instead.
+
+   In both cases never open-and-resave, never convert. Record the original
    filename, URL and download date in the ReadMe. There is no PDF-to-snapshot
    visual check for such a file: record `Not applicable: tabulated and digital
    already` in the `Human visual check of snapshot` column of `__ReadMe.xlsx`.
@@ -223,9 +236,12 @@ without changing the faithful snapshot.
 ## How to make one — methods, best first
 
 1. **Direct download.** If the journal offers the table/supplement as `.xlsx`
-   or `.csv`, download it and use that file as the snapshot. Easiest and most
-   faithful. Copy-rename it to `..._snapshot.<original ext>` with the bytes
-   untouched — never open-and-resave or convert (see *Choosing the format*).
+   or `.csv`, download it and use that file as the frozen copy. Easiest and most
+   faithful. Either copy-rename it to `..._snapshot.<original ext>`, or — only
+   when the data are publicly available at a URL without a paywall — keep its
+   original filename, list that filename in `__ReadMe.xlsx` and have the `.R`
+   read it. In both cases the bytes stay untouched — never open-and-resave or
+   convert (see *Choosing the format*).
 
 2. **Web-scrape the publisher's HTML.** Pull the table from the open-access
    HTML version (PMC, journal site) in R with `rvest` — handy when the PDF won't
@@ -290,7 +306,9 @@ Inside the paper's folder (e.g. `JardimMesseder_etal_2017/`):
 ```
 
 `<Table>` is the **locus**: `Table1`, `TableS2`, `Figure2`, `text`, or the
-original dataset name for a born-digital download.
+original dataset name for a born-digital download. A born-digital download
+used without a snapshot keeps its original filename; that filename is listed
+in `__ReadMe.xlsx` and is the file the `.R` reads (see *Choosing the format*).
 
 The ReadMe follows the team pipeline:
 `Source → Snapshot → Data readable → (Transpose / Variables / Species notes) →

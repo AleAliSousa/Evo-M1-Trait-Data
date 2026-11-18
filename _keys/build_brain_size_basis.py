@@ -232,6 +232,16 @@ ASSIGN = {
         ("mass", "mass_excl_olfactory_bulb", "unknown", "no", "unknown", "unknown",
          "mass_measured_excl_ob", True, "quoted", F),
     # ---- mass and volume mixed, unresolvable per row ----------------------
+    # Baker et al. 2025 (Nat Commun) Supplementary Data 1: a compilation whose
+    # per-row Source names the original publication; endocranial volumes were
+    # converted to mass at 1 g = 1 cm3 where only volumes were available and
+    # the per-row basis is not flagged (folder definitions file). Same
+    # situation as Burger_etal_2019 SD1 below: mass_or_volume_mixed, so the
+    # values enter the audited harvest and the review file, unpooled, until
+    # row-level decisions (brain_mass_row_basis.csv) split them by source.
+    ("Baker_etal_2025_b", "Brain_mass_g"):
+        ("mass", "mass_or_volume_mixed", "unknown", "unknown", "unknown", "unknown",
+         "mass_or_volume_mixed", True, "quoted", D),
     ("Burger_etal_2019", "Mean_brain_mass_g"):
         ("mass", "mass_or_volume_mixed", "unknown", "unknown", "unknown", "unknown",
          "mass_or_volume_mixed", True, "quoted", D),
@@ -364,6 +374,11 @@ FOLDER_QUOTES = {
     ("Lewitus_etal_2013", "brain_weight_g"):
         "Brain weight -- Table A1 footnote a attributes these values to Stephan et al. (1981), "
         "whose source definition records fresh brain weight",
+    ("Baker_etal_2025_b", "Brain_mass_g"):
+        "Brain_mass_g -- species mean whole-brain mass (g); compilation: masses "
+        "reported excluding the olfactory bulb were excluded by the paper, and "
+        "endocranial volumes were converted to mass at 1 g = 1 cm3 where only "
+        "volumes were available; per-row basis not flagged (folder definitions file)",
     ("Burger_etal_2019", "Mean_brain_mass_g"):
         "Mean brain mass -- compilation; 1 g = 1 cm3 conversion used when volumes reported "
         "(per source methods)",

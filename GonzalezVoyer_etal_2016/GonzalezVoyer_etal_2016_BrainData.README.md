@@ -10,22 +10,29 @@ mammal species** — complete for both masses on all 596 rows — plus
 gestation, litter size, weaning age, population density and IUCN status,
 with the literature sources for each row named in `References`.
 
-## What we built
+## Source → Snapshot → Data readable → Online database
 
-- **Frozen sources:** the Dryad CSV and its README PDF, verbatim, in
-  this folder.
-- **Reformat:** `GonzalezVoyer_etal_2016_BrainData.R` adds `species_sci`
-  (printed name, underscores replaced by spaces; printed name preserved
-  as `Species_name`) and writes:
-  - `GonzalezVoyer_etal_2016_BrainData.csv` (596 rows)
-  - `public_tsv/10.1111%2Fevo.12943_BrainData.tsv` (public, DOI-encoded
-    — name is the expected Item encoded; see Registry)
+- **Source:** the authors' data package on Dryad
+  (doi:10.5061/dryad.m2tj3), downloaded 2026-11-18.
+- **Snapshot:** none — the file is digital-native. The untouched
+  Dryad download is kept verbatim in this folder under its original
+  name (`Gonzalez-Voyer_et_al_Evolution_Brain_Data.csv`), is listed
+  in the registry (the item's "Snapshot filename" field in
+  `__ReadMe.xlsx`), and the build script reads it directly. Nothing
+  was re-saved or converted. The package's own README PDF is kept in
+  this folder as provenance; it holds the reference list that the
+  data file's `References` keys (e.g. `1|2`) point into.
+- **Data readable:** `GonzalezVoyer_etal_2016_BrainData.R` reads
+  **only** that file, adds `species_sci` (printed name with
+  underscores replaced by spaces; the printed name is preserved as
+  `Species_name`), carries every published value over verbatim, and
+  writes `GonzalezVoyer_etal_2016_BrainData.csv` (596 rows) and the
+  public TSV. The script runs clean under Rscript and reproduces the
+  committed CSV/TSV exactly.
 - **Definitions:** `reference_tables/GonzalezVoyer_etal_2016_BrainData_definitions.csv`.
-- **Reader:** the CSV/TSV were produced by Muse (Buddy), Michael
-  Proulx's AI assistant, with a Python equivalent of the .R build and
-  cross-checked against the frozen source (596 rows, no duplicates,
-  brain+body mass present for all rows). **R execution of the .R script
-  is pending** — the script reproduces the same outputs.
+- **Online database:** public TSV `10.1111%2Fevo.12943_BrainData.tsv`
+  in `__Public/comparative-data/`; registry row in `__ReadMe.xlsx`
+  (Item name `GonzalezVoyer_etal_2016_BrainData`).
 
 ## Data role and caveats
 
@@ -41,9 +48,3 @@ with the literature sources for each row named in `References`.
   from this file's two mass columns, but the result is an Evo-M1-side
   derivation, not a value published in either paper.
 - Domestic forms are largely absent (e.g. no *Vicugna pacos* row).
-
-## Registry
-
-The public TSV name above is the expected Item encoded
-(10.1111%2Fevo.12943_BrainData). Adding the registry row in
-`__ReadMe.xlsx` is an owner step, as is any ingestion into a merge.

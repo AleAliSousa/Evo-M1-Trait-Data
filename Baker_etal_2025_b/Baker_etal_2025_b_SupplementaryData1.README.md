@@ -19,12 +19,13 @@ the file's "Reference List" sheet). The mammal subset is **1,684 species**.
 ## What we built
 
 - **Frozen source (digital-native, no snapshot):** the journal download
-  `41467_2025_66843_MOESM3_ESM.xlsx` is machine-readable, so it **is** the
-  frozen source — kept verbatim in this folder, never edited
-  (see `_skills/build-dataset-item/references/__HOWTO_build_a_dataset_file.md`
-  §0a invariant 1).
-- **Reformat:** `Baker_etal_2025_b_SupplementaryData1.R` reads the frozen source
-  (sheet "Data S1"), keeps the mammal rows, adds `species_sci` (printed name
+  `41467_2025_66843_MOESM3_ESM.xlsx` is machine-readable and is kept
+  verbatim in this folder under its original name; it is listed in the
+  registry under that name (the item's "Snapshot filename" field) and
+  the build script reads it directly — no snapshot was made and
+  nothing was re-saved or converted.
+- **Reformat:** `Baker_etal_2025_b_SupplementaryData1.R` reads only the
+  frozen source file (sheet "Data S1"), keeps the mammal rows, adds `species_sci` (printed name
   with underscores replaced by spaces; printed name preserved verbatim as
   `Species_Baker2025`), and writes:
   - `Baker_etal_2025_b_SupplementaryData1.csv` (analysis-ready, 1,684 rows)
@@ -32,11 +33,11 @@ the file's "Reference List" sheet). The mammal subset is **1,684 species**.
     (public, DOI-encoded — name is the expected Item encoded; see Registry)
 - **Definitions:** `reference_tables/Baker_etal_2025_b_SupplementaryData1_definitions.csv`.
 - **Reader:** the publisher XLSX was downloaded from nature.com on 2026-11-16
-  and the CSV/TSV were extracted by Muse (Buddy), Michael Proulx's AI
-  assistant, with a Python equivalent of the .R build; every value was
+  by Muse (Buddy), Michael Proulx's AI assistant; every value was
   cross-checked against the frozen source programmatically (row counts, no
-  duplicates, spot values). **R execution of the .R script is pending** — the
-  script reproduces the same outputs from the frozen source.
+  duplicates, spot values). The item was rebuilt to the _skills form
+  on 2026-11-18: the .R script reads only the frozen source file, runs clean
+  under Rscript, and reproduces the committed CSV/TSV exactly.
 
 ## Data role
 
@@ -46,11 +47,12 @@ the merge-worthy sources. The paper's own methods: only whole-brain masses
 were used (masses reported excluding the olfactory bulb were excluded);
 juvenile values were excluded; where only endocranial volumes were available
 they were converted to mass at **1 g = 1 cm³**. The per-row basis (weighed
-mass vs volume-converted) is **not** flagged in the source, so before this
-item can feed `__merging_brain_mass` its `Brain_mass_g` column needs a
-basis classification in `_keys/brain_size_basis.csv` (compilation,
-basis unresolved per row — the Burger 2019 pattern), and pooling must stay
-primary-preferred so these values never displace a primary measurement.
+mass vs volume-converted) is **not** flagged in the source; for the
+brain-mass merge the column is classified in `_keys/brain_size_basis.csv`
+as `mass_or_volume_mixed` (the Burger 2019 pattern) and individual rows
+enter the pooled traits only through the row-basis decisions described
+under Downstream use, so these values never displace a primary
+measurement.
 
 ## Quality caveats
 
@@ -74,26 +76,29 @@ species, every row carries both masses.
 
 ## Registry
 
-**PENDING — owner step.** This item is not yet registered in `__ReadMe.xlsx`
-Sheet1. The registry row still needs: Item number `Supplementary Data 1`,
-Item full original title (the printed caption), and the descriptive columns
-N–AJ (Source format: table; Source filetype: xlsx; Data role: secondary;
-Source (if secondary): per-row literature sources named in the Source column;
-Human visual check of snapshot: Not applicable: tabulated and digital
-already). Columns E–L are formulas and must not be hand-edited. The public
-TSV has been written under the expected Item encoded
-`10.1038%2Fs41467-025-66843-0_SupplementaryData1`; the .R build looks the
-code up in the registry once the row exists and warns until then.
+Registered in `__ReadMe.xlsx` Sheet1 on 2026-11-17 (Item name
+`Baker_etal_2025_b_SupplementaryData1`, Item encoded
+`10.1038%2Fs41467-025-66843-0_SupplementaryData1`); the .R build looks the
+code up by Item name. The frozen-source fields (the publisher filename
+in "Snapshot filename", frozen date 2026-11-16 — the download date —
+filetype xlsx) and the descriptive columns were completed on
+2026-11-18 via `_tools/registry_apply.R`. Human visual check of
+snapshot: Not applicable: tabulated and digital already.
 
 ## Downstream use
 
-Candidate for the `__merging_brain_mass` harvest as a **secondary**
-compilation (after the basis classification above) and for
-`__merging_body_ecology` (body mass, secondary). Worked example of the gap it
-fills: of the 298 `compiled_genome_data` cohort species (added 2026-11-16),
-150 lack the combined brain-mass trait in the current merge output; this
-dataset carries a published brain mass for **67** of them, including 7 of the
-8 cohort species that have a neocortex volume but no brain mass
+Ingested into `__merging_brain_mass` on 2026-11-17: the item's
+`Brain_mass_g` column is classified in `_keys/brain_size_basis.csv` as
+`mass_or_volume_mixed` (review-only as a whole), and 1,337 of its rows
+were split into measured vs endocranial-volume-estimated by row-basis
+decisions in `__metadata/curation/brain_mass_row_basis.csv`, keyed on
+each row's named source; the merge outputs were regenerated the same
+day. Also a candidate for `__merging_body_ecology` (body mass,
+secondary). Worked example of the gap it fills: of the 298
+`compiled_genome_data` cohort species (added 2026-11-16), 150 lacked
+the combined brain-mass trait in the merge output of that date; this
+dataset carries a published brain mass for **67** of them, including 7
+of the 8 cohort species that have a neocortex volume but no brain mass
 (*Eumetopias jubatus* 575 g; *Puma concolor* 128 g; *Mustela erminea*
 4.11 g; *Mustela nivalis* 1.67 g; *Neogale vison* 7.2 g;
 *Rhinopoma microphyllum* 0.387 g; *Fukomys damarensis* 1.3353 g, compiled

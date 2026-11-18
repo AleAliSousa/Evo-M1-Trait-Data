@@ -1,0 +1,14 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+ID,Museum catalogue number of the specimen,,,info,,Artiodactyla,Balcarcel_etal_2022_SD1,One row per specimen,SD1 column "ID"
+Museum,Museum code of the holding collection,,,info,,Artiodactyla,Balcarcel_etal_2022_SD1,,SD1 column "Museum"
+Museum_full_name,Full name of the holding museum,,,info,,Artiodactyla,Balcarcel_etal_2022_SD1,Unheaded in the published sheet; named here,SD1 third column (unheaded)
+Genus,Genus as printed,,,info,,Artiodactyla,Balcarcel_etal_2022_SD1,,SD1 column "Genus"
+species,Species epithet(s) as printed,,,info,,Artiodactyla,Balcarcel_etal_2022_SD1,"Printed forms include ""aegagrus hircus"" and ""domesticus"" (for the domestic pig)",SD1 column "species"
+species_sci,Printed Genus + species combined,,,info,,Artiodactyla,Balcarcel_etal_2022_SD1,Printed names kept verbatim; harmonisation to accepted names is a merge-side step via the species keys,Derived from SD1 columns "Genus" and "species"
+W_D,"Wild or domestic status of the specimen's form",,category,,primary,Artiodactyla,Balcarcel_etal_2022_SD1,wild (158 specimens) / domestic (95),SD1 column "W_D" (title row: "W_D= wild or domestic status")
+BCL,"Braincase length (mm)",braincase,length,individual measurement,primary,Artiodactyla,Balcarcel_etal_2022_SD1,Landmarks as defined in Balcarcel et al. 2021 (see SD2 Figure S1),SD1 column "BCL" (title row: "BCL= braincase legth" [sic])
+BCW,"Braincase width (mm)",braincase,length,individual measurement,primary,Artiodactyla,Balcarcel_etal_2022_SD1,Landmarks as defined in Balcarcel et al. 2021 (see SD2 Figure S1),SD1 column "BCW"
+BCH,"Braincase height (mm)",braincase,length,individual measurement,primary,Artiodactyla,Balcarcel_etal_2022_SD1,Ventral landmark is No. 60 of Balcarcel et al. 2021 (see SD2 Figure S1),SD1 column "BCH"
+FM,"Foramen magnum breadth (mm)",foramen magnum,length,individual measurement,primary,Artiodactyla,Balcarcel_etal_2022_SD1,Used by the authors as the size covariate in the ANCOVA comparisons (SD2/SD3),SD1 column "FM"
+FL,"Full skull length (mm)",skull,length,individual measurement,primary,Artiodactyla,Balcarcel_etal_2022_SD1,,SD1 column "FL"
+log10_EV,"Log10 of the endocranial volume estimate (EV in cm3, from the braincase dimensions)",endocranial cavity,volume (log10),individual estimate,derived,Artiodactyla,Balcarcel_etal_2022_SD1,"Authors' estimate per specimen: ln(EV) = -6.1834 - 0.384 ln(BCH) + 1.3182 ln(BCL) + 1.4892 ln(BCW) (Finarelli 2011 all-artiodactyl model, as stated in SD3), converted to log10; NOT a measured volume. The item script recomputes it from the printed dimensions as a table check (all 253 within 5e-4)",SD1 column "log10(EV)" (title row: "Log10(EV)= endocranial volume estimate"); model in SD3

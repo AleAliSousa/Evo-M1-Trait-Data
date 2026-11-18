@@ -14,15 +14,6 @@ Habilitationsschrift (Tierärztliche Hochschule Hannover, 1979).
 
 --> USE THIS FILE: Kruska-1980-Domestikationsbeding.pdf (Tabellen 1–2)
 
-<<<<<<< HEAD
-Build: `Kruska__1980_Tabellen1-2.R` transcribes Tabelle 1 (fresh brain
-weights + fixation shrinkage, 40 specimens) and Tabelle 2 (per-specimen
-camelid brain-part volumes) to CSVs and DOI-coded public TSVs. The full
-verbatim extraction of all 14 tables is archived in `extracted_tables/`
-with its REPORT.md. See `Kruska__1980_Tabellen1-2.README.md` for
-methods, data role (primary), caveats and checks. The two registry rows
-were added on 2026-11-18; descriptive metadata remain incomplete.
-=======
 Build: each table is its own item with its own frozen snapshot,
 transcribed exactly as printed before any cleaning
 (`Kruska__1980_Tabelle1_snapshot.csv`, `Kruska__1980_Tabelle2_snapshot.csv`),
@@ -33,7 +24,6 @@ in `extracted_tables/` with its REPORT.md. See
 `Kruska__1980_Tabelle1.README.md` and `Kruska__1980_Tabelle2.README.md`
 for methods, data role (primary), caveats and table checks. Registry
 rows in `__ReadMe.xlsx` added 2026-11-18.
->>>>>>> 92a9b69404ddaff1cfd1c8f6e9607368c2dbeb5b
 
 Quality Notes:
 
@@ -48,9 +38,5 @@ Quality Notes:
    Kruska__1980-E001 (proposed).
 
 3. Folder added 2026-11-18 by Muse (Buddy), Michael Proulx's AI
-<<<<<<< HEAD
-   assistant, at Michael Proulx's request. The two registry rows were added later on 2026-11-18; descriptive metadata remain incomplete.
-=======
    assistant, at Michael Proulx's request; rebuilt to the snapshot-first
    form in `_skills/build-dataset-item` the same day.
->>>>>>> 92a9b69404ddaff1cfd1c8f6e9607368c2dbeb5b

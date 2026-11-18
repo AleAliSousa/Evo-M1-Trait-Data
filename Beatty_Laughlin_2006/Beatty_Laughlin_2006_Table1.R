@@ -1,33 +1,3 @@
-<<<<<<< HEAD
-# Beatty_Laughlin_2006_Table1.R
-#
-# Beatty J, Laughlin RE (2006). Genomic regulation of natural variation in
-# cortical and noncortical brain volume. BMC Neuroscience 7: 16.
-# doi:10.1186/1471-2202-7-16 (PMID 16503985; PMCID PMC1402304)
-#
-# Item: Table 1 -- neocortical (cortical) and non-cortical brain volumes
-# (mm3) for 34 BXD recombinant inbred mouse strains and the parental
-# strains C57BL/6J and DBA/2J (strain means, N = 3-5).
-#
-# Frozen sources in this folder: the publisher PDF (1471-2202-7-16.pdf),
-# the Europe PMC full-text XML (fulltext.xml, the machine-readable copy
-# this transcription was taken from), and the publisher's supplementary
-# figure files. The article has NO supplementary data files; all data are
-# in the main-text tables.
-#
-# Data role: PRIMARY. The volumes are the authors' own measurements.
-# In-vivo values are shrinkage-corrected by the authors; non-cortical
-# volume = total - cortical, with total from fresh brain weight at
-# specific gravity ~1.00. The "Regressed" columns are size-corrected
-# values for QTL mapping (derived) and must not be pooled with volumes.
-#
-# Outputs:
-#   Beatty_Laughlin_2006_Table1.csv               (this folder)
-#   ../__Public/comparative-data/10.1186%2F1471-2202-7-16_Table1.tsv (for __Public/comparative-data/)
-#
-# Registry note: the public TSV name is the expected Item encoded
-# (10.1186%2F1471-2202-7-16_Table1). The registry row was added on 2026-11-18; descriptive metadata remain incomplete.
-=======
 ## ============================================================================
 ## Beatty_Laughlin_2006_Table1.R
 ##
@@ -61,7 +31,6 @@
 ##   __Public/comparative-data/<Item encoded>.tsv
 ##     (Item encoded looked up in __ReadMe.xlsx by Item name)
 ## ============================================================================
->>>>>>> 92a9b69404ddaff1cfd1c8f6e9607368c2dbeb5b
 
 ## ---- self-locating header: names are derived, never retyped ----------------
 script_path <- local({
@@ -99,11 +68,6 @@ while (!file.exists(file.path(repo_root, "__ReadMe.xlsx")) &&
 if (!file.exists(file.path(repo_root, "__ReadMe.xlsx")))
   stop("__ReadMe.xlsx not found walking up from ", folder)
 
-<<<<<<< HEAD
-write.csv(tab, "Beatty_Laughlin_2006_Table1.csv", row.names = FALSE)
-write.table(tab, "../__Public/comparative-data/10.1186%2F1471-2202-7-16_Table1.tsv",
-            sep = "\t", row.names = FALSE, quote = FALSE)
-=======
 ## ---- Item encoded, looked up by Item name (never by row number) ------------
 registry     <- readxl::read_excel(file.path(repo_root, "__ReadMe.xlsx"),
                                    sheet = "Sheet1")
@@ -158,4 +122,3 @@ if (dir.exists(tsv_dir)) {
   warning("__Public/comparative-data not found under the repo root; ",
           "public TSV not written.")
 }
->>>>>>> 92a9b69404ddaff1cfd1c8f6e9607368c2dbeb5b

@@ -30,6 +30,7 @@ BASE = HERE.parent
 KAUFMAN = BASE / "Kaufman__2004"
 KARBOWSKI = BASE / "Karbowski__2007"
 
+KAUF_BIBLIOGRAPHY = KAUFMAN / "reference_tables" / "Kaufman__2004_bibliography.csv"
 KAUF_OUT = KAUFMAN / "reference_tables" / "Kaufman__2004_TablesA1-A14_references.csv"
 KARB_OUT = KARBOWSKI / "reference_tables" / "Karbowski__2007_TablesS1-S23_references.csv"
 ISSUES_OUT = HERE / "cerebral_metabolic_rate_reference_resolution_issues.csv"
@@ -183,6 +184,11 @@ def pdftotext(pdf: Path, layout: bool = False) -> str:
 
 
 def parse_kaufman_bibliography(text: str) -> list[dict[str, str]]:
+    """Parse the original PDF text layer for the one-time bibliography import.
+
+    The regular catalog build reads the maintained source-local bibliography;
+    it must not silently replace page-checked transcriptions with fresh OCR.
+    """
     # Removing form feeds is important: the first citation on each PDF page then
     # has the same indentation as all other entry starts.
     lines = text.replace("\f", "").split("\n")
@@ -226,6 +232,56 @@ def parse_kaufman_bibliography(text: str) -> list[dict[str, str]]:
                 "locator": f"Literature Cited entry {index}",
             }
         )
+    return parsed
+
+
+def load_kaufman_bibliography(path: Path) -> list[dict[str, str]]:
+    """Load the maintained, source-local Literature Cited transcription.
+
+    IDs refer to positions in the dissertation bibliography, rather than to
+    globally deduplicated works.  Parse the author/year directly from the stored
+    citation, so a future page-checked correction cannot leave derived fields
+    stale. The standard locator is retained for existing catalog consumers.
+    """
+    with path.open(newline="", encoding="utf-8-sig") as handle:
+        reader = csv.DictReader(handle)
+        required = {
+            "entry_id", "entry_number", "citation_transcription",
+            "transcription_status", "evidence_file", "pdf_page_start", "pdf_page_end",
+        }
+        if not reader.fieldnames or not required.issubset(reader.fieldnames):
+            raise RuntimeError(f"Missing required Kaufman bibliography columns in {path}")
+        rows = list(reader)
+
+    if len(rows) != 504:
+        raise RuntimeError(f"Expected 504 Kaufman bibliography entries, found {len(rows)}")
+
+    parsed = []
+    for index, row in enumerate(rows, 1):
+        expected_id = f"Kaufman__2004_bib_{index:03d}"
+        if row["entry_number"] != str(index) or row["entry_id"] != expected_id:
+            raise RuntimeError(f"Unexpected Kaufman bibliography entry ID or ordering at row {index}")
+        citation = row["citation_transcription"]
+        if not citation.strip() or not row["transcription_status"].strip():
+            raise RuntimeError(f"Missing transcription or status for {expected_id}")
+        if row["evidence_file"] != "Kaufman__2004_dissertation.pdf":
+            raise RuntimeError(f"Unexpected evidence file for {expected_id}")
+        try:
+            start, end = int(row["pdf_page_start"]), int(row["pdf_page_end"])
+        except ValueError as exc:
+            raise RuntimeError(f"Invalid PDF page span for {expected_id}") from exc
+        if start < 1 or end < start:
+            raise RuntimeError(f"Invalid PDF page span for {expected_id}")
+        match = re.search(r"\(((?:18|19|20)\d{2})([a-z]?)\)", citation, re.I)
+        if not match:
+            raise RuntimeError(f"No parenthesized year in Kaufman bibliography entry {index}: {citation}")
+        parsed.append({
+            "citation": citation,
+            "year": match.group(1),
+            "suffix": match.group(2).lower(),
+            "author_block": citation[:match.start()],
+            "locator": f"Literature Cited entry {index}",
+        })
     return parsed
 
 
@@ -432,9 +488,7 @@ def write_catalog(path: Path, rows: list[dict[str, str]]) -> None:
 
 
 def build() -> None:
-    kauf_bib = parse_kaufman_bibliography(
-        pdftotext(KAUFMAN / "Kaufman__2004_dissertation.pdf", layout=True)
-    )
+    kauf_bib = load_kaufman_bibliography(KAUF_BIBLIOGRAPHY)
     kauf_counts, kauf_tables = kaufman_reference_counts()
     kauf_rows = []
     for raw in sorted(kauf_counts, key=str.casefold):

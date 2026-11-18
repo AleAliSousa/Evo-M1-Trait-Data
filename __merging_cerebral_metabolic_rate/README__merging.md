@@ -38,7 +38,7 @@ data table. Added columns provide the stable cited-source ID, source level/type,
 primary ID where applicable, conservative repaired core, resolution status,
 source PDF/locator, tables, and occurrence count.
 
-The catalogs contain 424 Kaufman citation aliases resolving to 319 cited-source
+The catalogs contain 320 Kaufman citation keys resolving to 319 cited-source
 IDs (317 primary) and 56 Karbowski aliases resolving to 36 cited-source IDs (34
 primary). Seventeen primary IDs occur in both catalogs; one is the compound-only
 Madsen 1991b case, leaving 16 direct shared works.
@@ -143,20 +143,19 @@ consumers.
 
 ## Source repairs and units
 
-The frozen snapshots are unchanged. The Kaufman cleaners apply a checked overlay
-to 11 rows whose PDF extraction shifted `Sokoloff et al. (1977)`, `n=10`, and
-CMRgl/SD across columns; three rows whose scanned `n` and `Anesthesia` tokens ran
-together; and PDF-verified collapsed/misaligned measurements or methods in A1,
-A3, A6, A11, A13, and A14. The repair manifest guards the entire frozen row plus
-its PDF locator before changing anything. `source_correction` marks all 43
+The Kaufman snapshots include page-checked corrections; the earlier OCR captures are
+archived in the source folder. Page-checked repairs are now in the snapshots, including
+eleven shifted Sokoloff rows, three shifted n/anesthesia tokens, and collapsed or
+misaligned measurements in A1, A3, A6, A11, A13, and A14. The item builders check
+the repaired snapshot rows. `source_correction` marks all 43
 affected output observations, and the validator checks every repaired printed
 mean/SD lexeme. A positional audit covered all 1,435 logical A1-A14 rows.
 For unaffected Kaufman records, `Value_raw` and `SD_raw` come directly from the
-frozen snapshot, preserving decimal commas and printed trailing zeros. Karbowski's
+snapshot, preserving decimal commas and printed trailing zeros. Karbowski's
 extractor retains the published supplement PDF's `value_printed` and `sd_printed`
 lexemes (S1 to three decimals; S2–S23 to two); its frozen workbook supplies numeric
 values and row locations but loses some display-only zeros.
-`source_snapshot_row` records the corresponding frozen-source data row; for
+`source_snapshot_row` records the corresponding corrected snapshot data row; for
 Karbowski this remains correct when one workbook row expands into two measures or
 when printed subdivision rows are omitted from the analysis table.
 
@@ -198,19 +197,19 @@ which requires pandas, plus the generated catalog CSVs.
 
 ## Outputs
 
-- `cerebral_metabolic_rate_long.csv`: 254 Species × Region × Measure cells,
+- `cerebral_metabolic_rate_long.csv`: 255 Species × Region × Measure cells,
   covering 14 species and 40 canonical regions. There are 216 metabolic cells
-  (`CMRgl`, `CMRO2`) and 38 perfusion cells (`CBF`).
+  (`CMRgl`, `CMRO2`) and 39 perfusion cells (`CBF`).
 - `cerebral_metabolic_rate_wide.csv`: one row per species.
-- `cerebral_metabolic_rate_unfiltered.csv`: all 2,422 source/provenance records,
+- `cerebral_metabolic_rate_unfiltered.csv`: all 2,423 source/provenance records,
   including excluded compiler and derived rows, primary-item rows and Mink 1981
-  rows; 1,547 are currently in the conservative primary pool.
+  rows; 1,548 are currently in the conservative primary pool.
 - `primary_item_ingestion_manifest.csv`: 261 primary-item / Mink rows (106 eligible
   for the pool), one per printed value or right/left pair, each with its item CSV
   and locator.
 - `cerebral_metabolic_rate_arm_ambiguity_report.csv`: 77 unresolved
   within-primary arm groups covering 157 quarantined Kaufman rows.
-- `cerebral_metabolic_rate_value_reference_links.csv`: 2,622 value-source links,
+- `cerebral_metabolic_rate_value_reference_links.csv`: 2,623 value-source links,
   including compound, estimate, compiler-average, and cross-area-summary lineage.
   Only the three unresolved Zimmer measurement records have no link.
 - `cerebral_metabolic_rate_cited_references.csv`: all 345 resolved cited works,

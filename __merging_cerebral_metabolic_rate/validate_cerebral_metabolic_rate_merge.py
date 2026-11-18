@@ -67,8 +67,8 @@ MANIFEST_NAME = "primary_item_ingestion_manifest.csv"
 # 2,161 provenance / 1,444 pool / 235 cells / 44 dedupe / 335 primary works /
 # 339 cited works / 2,361 links).
 EXPECTED = {
-    "manifest": 261, "manifest_pool": 106, "unfiltered": 2422, "pool": 1547,
-    "merged": 254, "dedupe": 95, "registry": 339, "cited_registry": 345, "links": 2622,
+    "manifest": 261, "manifest_pool": 106, "unfiltered": 2423, "pool": 1548,
+    "merged": 255, "dedupe": 95, "registry": 339, "cited_registry": 345, "links": 2623,
     "dedupe_kennedy_1978": 14, "dedupe_passero_1981": 15,
 }
 PRIMARY_CHECK_EXCLUSIONS = {
@@ -452,6 +452,12 @@ def check():
     )
     # Compilation rows shown by the primary-item audit to be unsupported stay out.
     by_id = {row["record_id"]: row for row in unfiltered}
+    # Kaufman's PDF p. 127 prints this blood-flow result; both cells were
+    # absent from the original OCR extraction. It creates one new merge cell.
+    recovered = by_id["Kaufman__2004:TableA3:68:CBF"]
+    assert (recovered["Value_raw"], recovered["SD_raw"]) == ("117.0", "10.0")
+    assert recovered["primary_reference_ids"] == "mies_1984"
+    assert recovered["include_in_primary_merge"] == "True"
     for record_id, reason in PRIMARY_CHECK_EXCLUSIONS.items():
         assert by_id[record_id]["include_in_primary_merge"] == "False"
         assert by_id[record_id]["exclusion_reason"] == reason
@@ -504,7 +510,7 @@ def check():
     }
     for table, (source_row, oxygen, oxygen_sd) in expected_sokoloff_snapshot.items():
         frozen = source_rows(
-            BASE / "Kaufman__2004" / f"Kaufman__2004_{table}_snapshot.csv"
+            BASE / "Kaufman__2004" / "old" / f"Kaufman__2004_{table}_ocr_capture.csv"
         )[source_row - 1]
         expected = {**frozen_common, "Oxygen": oxygen, "Oxygen_SD": oxygen_sd}
         assert all((frozen.get(field) or "").strip() == value

@@ -55,6 +55,19 @@ def round3(x):
 HERE = os.path.dirname(os.path.abspath(__file__))
 BASE = os.path.dirname(HERE)
 
+# The source-repair manifest guards the frozen citation, while the cleaned
+# table may also apply a separately documented citation correction.
+with open(os.path.join(BASE, "Kaufman__2004", "reference_tables",
+                       "Kaufman__2004_citation_corrections.csv"),
+          newline="", encoding="utf-8-sig") as handle:
+    kauf_citation_rows = list(csv.DictReader(handle))
+KAUF_CITATION_CORRECTIONS = {
+    row["observed_reference"]: row["corrected_reference"]
+    for row in kauf_citation_rows
+}
+if len(KAUF_CITATION_CORRECTIONS) != len(kauf_citation_rows):
+    raise RuntimeError("Duplicate Kaufman citation correction keys")
+
 # ---- crosswalks -------------------------------------------------------------
 REGION_CANON = {
     "Whole Brain (direct measurement)": "Whole_brain", "Brain": "Whole_brain",
@@ -269,7 +282,7 @@ def source_type_for(source_id):
 
 # Corrections to eleven rows whose PDF-to-table extraction shifted Reference,
 # n, CMRgl and SD across columns.  Keys use the 1-based data-row number in the
-# analysis CSV (header excluded); the frozen snapshots remain untouched.
+# analysis CSV (header excluded); the initial OCR captures are archived.
 KAUF_SOKOLOFF_REPAIRS = {
     ("TableA1", 109): (84.5, 2.5, "Sokoloff"),
     ("TableA2", 69): (79.0, 1.0, "Sokoloff"),
@@ -297,9 +310,9 @@ KAUF_SOKOLOFF_PRINTED = {
     ("TableA12", 64): ("124.00", "3.00"),
 }
 KAUF_CONDITION_REPAIRS = {
-    ("TableA7", 101): (6, "‘ none", "(Moore et al., 2000)", "Sokoloff", 79.0, 9.7),
-    ("TableA10", 5): (6, "6 none", "(Schwartzman et al., 1988)", "Sokoloff", 70.3, 12.2),
-    ("TableA10", 6): (3, "3 none", "(Choki et al., 1984)", "Sokoloff", 79.0, 12.0),
+    ("TableA7", 101): (6, "none", "(Moore et al., 2000)", "Sokoloff", 79.0, 9.7),
+    ("TableA10", 5): (6, "none", "(Schwartzman et al., 1988)", "Sokoloff", 70.3, 12.2),
+    ("TableA10", 6): (3, "none", "(Choki et al., 1984)", "Sokoloff", 79.0, 12.0),
 }
 KAUF_EXTRACTION_REPAIRS = {
     ("TableA1", 60): dict(
@@ -318,9 +331,9 @@ KAUF_EXTRACTION_REPAIRS = {
         evidence="dissertation PDF physical p. 120 (printed p. 112)",
     ),
     ("TableA3", 52): dict(
-        snapshot_row=52, species="M mulatta", reference="inlund et al., 1997)", n=4,
-        anesthesia_raw="Ketamine, N 20", mode_raw="PET",
-        anesthesia="Ketamine, N 20", mode="PET",
+        snapshot_row=52, species="M mulatta", reference="(Enlund et al., 1997)", n=4,
+        anesthesia_raw="Ketamine, N2O", mode_raw="PET",
+        anesthesia="Ketamine, N2O", mode="PET",
         printed={"CMRO2": ("245.0", "34.0"), "CBF": ("70.5", "15.0")},
         evidence="dissertation PDF physical p. 127 (printed p. 119)",
     ),
@@ -422,8 +435,7 @@ KAUF_EXTRACTION_REPAIRS = {
         printed={"CMRO2": ("155.8", "21.1")},
         evidence="dissertation PDF physical p. 159 (printed p. 151)",
     ),
-    # Table A14 cleaned rows are one lower than their frozen rows because the
-    # correction overlay removes bibliography-continuation row 102.
+    # The archived A14 OCR has an extra citation-continuation fragment at row 102.
     ("TableA14", 84): dict(
         snapshot_row=84, species="Canis", reference="(Zimmer, 1975)", n=13,
         anesthesia_raw="& Ethylene urea", mode_raw="Kety-Schmidt",
@@ -442,7 +454,7 @@ KAUF_EXTRACTION_REPAIRS = {
     ("TableA14", 110): dict(
         snapshot_row=111, species="Canis", reference="(Boarini et al., 1984)", n=10,
         anesthesia_raw="N 20", mode_raw="Kety-Schmidt",
-        anesthesia="N 20", mode="Kety-Schmidt",
+        anesthesia="N2O", mode="Kety-Schmidt",
         snapshot_measurements={
             "Oxygen": "218.75", "Oxygen_SD": "20",
             "BloodFlow": "57.00", "BloodFlow_SD": "4.00",
@@ -459,7 +471,7 @@ KAUF_EXTRACTION_REPAIRS = {
         evidence="dissertation PDF physical p. 168 (printed p. 160)",
     ),
     ("TableA14", 195): dict(
-        snapshot_row=196, species="Capra", reference="(Stanley and Chemiack, 1976)", n=6,
+        snapshot_row=196, species="Capra", reference="(Stanley and Cherniack, 1976)", n=6,
         anesthesia_raw="none Probe 154.46 4.50", mode_raw="",
         anesthesia="none", mode="Probe", printed={"CMRO2": ("154.46", "4.50")},
         evidence="dissertation PDF physical p. 168 (printed p. 160)",
@@ -564,11 +576,16 @@ for f in kauf_files:
     table = re.search(r"TableA[0-9]+", os.path.basename(f)).group(0)
     snapshot_file = f.replace(".csv", "_snapshot.csv")
     snapshot_rows = rows_of(snapshot_file)
+    ocr_file = os.path.join(BASE, "Kaufman__2004", "old",
+                            f"Kaufman__2004_{table}_ocr_capture.csv")
+    ocr_rows = rows_of(ocr_file)
     for source_row, r in enumerate(rows_of(f), 1):
-        # Table A14 snapshot row 102 is a citation continuation fragment, so
-        # cleaned rows from 102 onward map one row later in the frozen capture.
-        source_snapshot_row = source_row + (1 if table == "TableA14" and source_row >= 102 else 0)
+        # A14's archived OCR includes an extra continuation fragment, while the
+        # corrected snapshot joins it to the corresponding printed study row.
+        source_snapshot_row = source_row
+        ocr_row = source_row + (1 if table == "TableA14" and source_row >= 102 else 0)
         snapshot = snapshot_rows[source_snapshot_row - 1]
+        archived_ocr = ocr_rows[ocr_row - 1]
         if (r.get("Species") or "").strip() != (snapshot.get("Species") or "").strip():
             raise RuntimeError(
                 f"Kaufman cleaned/snapshot row alignment drifted at {table}:{source_row}"
@@ -636,7 +653,7 @@ for f in kauf_files:
              printed_values["CMRgl_SD"]) = KAUF_SOKOLOFF_PRINTED[(table, source_row)]
             correction = (
                 "Repaired column-shifted Sokoloff et al. (1977) row from the "
-                "dissertation table page; frozen snapshot unchanged."
+                "dissertation table page; original OCR archived."
             )
         else:
             source_values = r
@@ -666,8 +683,8 @@ for f in kauf_files:
                     f"Checked Kaufman condition-token correction drifted at {table}:{source_row}"
                 )
             correction = (
-                f"Repaired OCR-shifted n/anesthesia token {expected_anesthesia_raw!r} "
-                "against the dissertation table page; frozen snapshot unchanged."
+                "Repaired OCR-shifted n/anesthesia token against the dissertation table page; "
+                "the original OCR is archived."
             )
         if extraction_repair:
             expected_snapshot = {
@@ -681,15 +698,33 @@ for f in kauf_files:
                 field: extraction_repair.get("snapshot_measurements", {}).get(field, "")
                 for fields in KAUF_MEASURE_FIELDS.values() for field in fields[2:]
             })
-            if source_snapshot_row != extraction_repair["snapshot_row"] or any(
-                (snapshot.get(field) or "").strip() != expected
+            # Guard the original extraction as well as the corrected output.
+            # Citation and anesthesia text in the current snapshot may have been
+            # transcribed directly from the page since this repair was recorded.
+            archived_expected = dict(archived_ocr)
+            archived_ref = (archived_expected.get("Reference") or "").strip()
+            archived_expected["Reference"] = KAUF_CITATION_CORRECTIONS.get(
+                archived_ref, archived_ref
+            )
+            if (table, source_row) == ("TableA3", 52):
+                if (archived_expected.get("Anesthesia") or "").strip() != "Ketamine, N 20":
+                    raise RuntimeError("Archived TableA3 row 52 anesthesia drifted")
+                archived_expected["Anesthesia"] = "Ketamine, N2O"
+            if (table, source_row) == ("TableA14", 195):
+                if archived_ref != "(Stanley and Chemiack, 1976)":
+                    raise RuntimeError("Archived TableA14 row 196 citation drifted")
+                archived_expected["Reference"] = "(Stanley and Cherniack, 1976)"
+            if ocr_row != extraction_repair["snapshot_row"] or any(
+                (archived_expected.get(field) or "").strip() != expected
                 for field, expected in expected_snapshot.items()
             ):
                 raise RuntimeError(
-                    f"Frozen Kaufman extraction-repair row drifted at {table}:{source_row}"
+                    f"Archived Kaufman extraction-repair row drifted at {table}:{source_row}"
                 )
             if (
-                (r.get("Reference") or "").strip() != extraction_repair["reference"]
+                (r.get("Reference") or "").strip() != KAUF_CITATION_CORRECTIONS.get(
+                    extraction_repair["reference"], extraction_repair["reference"]
+                )
                 or num(r.get("n")) != extraction_repair["n"]
                 or (r.get("Anesthesia") or "").strip() != extraction_repair["anesthesia"]
                 or (r.get("Mode") or "").strip() != extraction_repair["mode"]
@@ -721,7 +756,7 @@ for f in kauf_files:
             correction = (
                 "Repaired PDF-extraction omitted/collapsed/misaligned measurement, "
                 f"sample-size, or method fields against {extraction_repair['evidence']}; "
-                "frozen snapshot unchanged."
+                "original OCR archived."
             )
         for col, sd_col, printed_col, printed_sd_col, meas, raw_unit in (
             ("CMRgl_umol_100g_min", "CMRgl_SD", "Glucose", "Glucose_SD",

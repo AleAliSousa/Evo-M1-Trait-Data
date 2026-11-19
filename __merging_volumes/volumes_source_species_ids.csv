@@ -1265,6 +1265,7 @@ Bauernfeind_etal_2013_Table2,Homo sapiens,Bauernfeind_etal_2013,Homo sapiens,ver
 Bauernfeind_etal_2013_Table2,Pan paniscus,Bauernfeind_etal_2013,Pan paniscus,verbatim,FALSE,paper,FALSE
 Bauernfeind_etal_2013_Table2,Pan troglodytes,Bauernfeind_etal_2013,Pan troglodytes,verbatim,FALSE,paper,FALSE
 Bauernfeind_etal_2013_Table2,Pongo pygmaeus and Pongo abelii,Bauernfeind_etal_2013,Pongo sp.,lump,FALSE,paper,FALSE
+Beatty_Laughlin_2006_Table1,Mus musculus,Beatty_Laughlin_2006,Mus musculus,verbatim,FALSE,variant,FALSE
 Bush_Allman_2003_Table1,Ailurus fulgens,Bush_Allman_2003,Ailurus fulgens,verbatim,FALSE,paper,FALSE
 Bush_Allman_2003_Table1,Alouatta palliata,Bush_Allman_2003,Alouatta palliata,verbatim,FALSE,paper,FALSE
 Bush_Allman_2003_Table1,Aotus trivirgatus,Bush_Allman_2003,Aotus trivirgatus,verbatim,FALSE,paper,FALSE
@@ -1548,6 +1549,9 @@ Frahm_etal_1998_Table1,Pithecia monachus,Frahm_etal_1998,Pithecia monachus,verba
 Frahm_etal_1998_Table1,Saguinus midas,Frahm_etal_1998,Saguinus midas,verbatim,FALSE,paper,FALSE
 Frahm_etal_1998_Table1,Saguinus oedipus,Frahm_etal_1998,Saguinus oedipus,verbatim,FALSE,paper,FALSE
 Frahm_etal_1998_Table1,Tarsius spec.,Frahm_etal_1998,Tarsius sp.,spelling,FALSE,paper,FALSE
+Hakeem_etal_2005_Table2,Loxodonta africana,Hakeem_etal_2005,Loxodonta africana,verbatim,FALSE,variant,FALSE
+Kruska__1980_Tabelle2,Lama guanicoe,Kruska__1980,Lama guanicoe,verbatim,FALSE,variant,FALSE
+Kruska__1980_Tabelle2,Vicugna pacos,Kruska__1980,Vicugna pacos,unresolved,FALSE,unresolved,TRUE
 Kverkova_etal_2018_TableS1,Bathyergus suillus,Kverkova_etal_2018,Bathyergus suillus,verbatim,FALSE,paper,FALSE
 Kverkova_etal_2018_TableS1,Cryptomys hottentotus,Kverkova_etal_2018,Cryptomys hottentotus,verbatim,FALSE,paper,FALSE
 Kverkova_etal_2018_TableS1,Cryptomys natalensis,Kverkova_etal_2018,Cryptomys hottentotus natalensis,synonym:NCBI,FALSE,paper,FALSE
@@ -1810,6 +1814,16 @@ Reep_etal_2007_Table1,Trichechus manatus,Reep_etal_2007,Trichechus manatus,verba
 Reep_etal_2007_Table1,Ursus maritimus,Reep_etal_2007,Ursus maritimus,verbatim,FALSE,paper,FALSE
 Reep_etal_2007_Table1,Vulpes vulpes,Reep_etal_2007,Vulpes vulpes,verbatim,FALSE,paper,FALSE
 Reep_etal_2007_Table1,Zalophus californianus,Reep_etal_2007,Zalophus californianus,verbatim,FALSE,paper,FALSE
+Röhrs__1986_Table2,Conepatus chinga,Röhrs__1986,Conepatus chinga,unresolved,FALSE,unresolved,TRUE
+Röhrs__1986_Table2,Conepatus humboldti,Röhrs__1986,Conepatus humboldti,unresolved,FALSE,unresolved,TRUE
+Röhrs__1986_Table2,Eira barbara,Röhrs__1986,Eira barbara,verbatim,FALSE,variant,FALSE
+Röhrs__1986_Table2,Galictis cuja,Röhrs__1986,Galictis cuja,synonym:NCBI,FALSE,variant,FALSE
+Röhrs__1986_Table2,Martes foina,Röhrs__1986,Martes foina,verbatim,FALSE,variant,FALSE
+Röhrs__1986_Table2,Meles meles,Röhrs__1986,Meles meles,verbatim,FALSE,variant,FALSE
+Röhrs__1986_Table2,Mustela erminea,Röhrs__1986,Mustela erminea,verbatim,FALSE,variant,FALSE
+Röhrs__1986_Table2,Mustela nivalis,Röhrs__1986,Mustela nivalis,verbatim,FALSE,variant,FALSE
+Röhrs__1986_Table2,Mustela putorius,Röhrs__1986,Mustela putorius,hub,FALSE,hub,FALSE
+Röhrs__1986_Table2,Pteronura brasiliensis,Röhrs__1986,Pteronura brasiliensis,synonym:NCBI,FALSE,variant,FALSE
 Semendeferi_etal_1998_Table2,Gorilla gorilla,Semendeferi_etal_1998,Gorilla sp.,lump,FALSE,paper,FALSE
 Semendeferi_etal_1998_Table2,Homo sapiens,Semendeferi_etal_1998,Homo sapiens,verbatim,FALSE,paper,FALSE
 Semendeferi_etal_1998_Table2,Hylobates lar,Semendeferi_etal_1998,Hylobates lar,verbatim,FALSE,paper,FALSE
@@ -2597,6 +2611,14 @@ Stephan_etal_1987_Table1,Tupaia glis,Stephan_etal_1987,Tupaia glis,verbatim,FALS
 Stephan_etal_1987_Table1,Tupaia minor,Stephan_etal_1987,Tupaia minor,verbatim,FALSE,paper,FALSE
 Stephan_etal_1987_Table1,Urogale everetti,Stephan_etal_1987,Urogale everetti,verbatim,FALSE,paper,FALSE
 Stephan_etal_1987_Table1,Varecia variegata,Stephan_etal_1987,Varecia variegata,verbatim,FALSE,paper,FALSE
+Tschudin__1998_Table2.5,Delphinus delphis,Tschudin__1998,Delphinus delphis,synonym:NCBI,FALSE,variant,FALSE
+Tschudin__1998_Table2.5,Grampus griseus,Tschudin__1998,Grampus griseus,hub,FALSE,hub,FALSE
+Tschudin__1998_Table2.5,Kogia simus,Tschudin__1998,Kogia sima,synonym:NCBI,FALSE,paper,FALSE
+Tschudin__1998_Table2.5,Lagenodelphis hosei,Tschudin__1998,Lagenodelphis hosei,verbatim,FALSE,paper,FALSE
+Tschudin__1998_Table2.5,Sousa chinensis,Tschudin__1998,Sousa chinensis,verbatim,FALSE,paper,FALSE
+Tschudin__1998_Table2.5,Stenella attenuata,Tschudin__1998,Stenella attenuata,verbatim,FALSE,paper,FALSE
+Tschudin__1998_Table2.5,Stenella coeruleoalba,Tschudin__1998,Stenella coeruleoalba,verbatim,FALSE,paper,FALSE
+Tschudin__1998_Table2.5,Tursiops truncatus,Tschudin__1998,Tursiops truncatus,verbatim,FALSE,variant,FALSE
 Zilles_Rehkämper_1988_Table12-2,Pongo sp.,Zilles_Rehkämper_1988,Pongo sp.,verbatim,FALSE,paper,FALSE
 deSousa_etal_2010_Table1,Gorilla gorilla,deSousa_etal_2010,Gorilla sp.,lump,FALSE,paper,FALSE
 deSousa_etal_2010_Table1,Homo sapiens,deSousa_etal_2010,Homo sapiens,verbatim,FALSE,paper,FALSE

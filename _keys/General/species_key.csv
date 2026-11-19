@@ -4138,12 +4138,12 @@ Cercopithecus mona,Cercopithecus mona,Dupont_etal_2026,General,36226,verbatim,pi
 Colobus guereza,Colobus guereza,Dupont_etal_2026,General,33548,verbatim,pinned from existing hub/spoke resolution at build; item: Dupont_etal_2026_TableS3
 Erythrocebus patas,Erythrocebus patas,Dupont_etal_2026,General,9538,verbatim,pinned from existing hub/spoke resolution at build; item: Dupont_etal_2026_TableS3
 Eulemur coronatus,Eulemur coronatus,Dupont_etal_2026,General,13514,verbatim,pinned from existing hub/spoke resolution at build; item: Dupont_etal_2026_TableS3
-Eulemur albocollaris,Eulemur cinereiceps,Dupont_etal_2026,General,,author_judgment,pinned from existing hub/spoke resolution at build; item: Dupont_etal_2026_TableS3
+Eulemur albocollaris,Eulemur cinereiceps,Dupont_etal_2026,General,,synonym:MDD,"MDD v2.5 (release 2026-07-28) lists Eulemur albocollaris as a synonym (name_combination) of Eulemur cinereiceps; the Grabowski_etal_2023 key row gives the same mapping with basis author_judgment; item: Dupont_etal_2026_TableS3"
 Eulemur flavifrons,Eulemur flavifrons,Dupont_etal_2026,General,,verbatim,pinned from existing hub/spoke resolution at build; item: Dupont_etal_2026_TableS3
 Eulemur mongoz,Eulemur mongoz,Dupont_etal_2026,General,34828,verbatim,pinned from existing hub/spoke resolution at build; item: Dupont_etal_2026_TableS3
 Eulemur rubriventer,Eulemur rubriventer,Dupont_etal_2026,General,34829,verbatim,pinned from existing hub/spoke resolution at build; item: Dupont_etal_2026_TableS3
 Gorilla gorilla,Gorilla gorilla,Dupont_etal_2026,General,9593,verbatim,pinned from existing hub/spoke resolution at build; item: Dupont_etal_2026_TableS3
-Hapalemur alaotrensis,Hapalemur griseus,Dupont_etal_2026,General,13557,subspecies_assign,pinned from existing hub/spoke resolution at build; item: Dupont_etal_2026_TableS3
+Hapalemur alaotrensis,Hapalemur griseus,Dupont_etal_2026,General,13557,subspecies_assign,"kept consistent with the Grabowski_etal_2023 and Melchionna_etal_2020 rows (NCBI lists alaotrensis only as Hapalemur griseus alaotrensis). REVIEW: MDD v2.5 accepts Hapalemur alaotrensis as a full species, so this assignment lumps it into H. griseus; item: Dupont_etal_2026_TableS3"
 Hapalemur griseus,Hapalemur griseus,Dupont_etal_2026,General,13557,verbatim,pinned from existing hub/spoke resolution at build; item: Dupont_etal_2026_TableS3
 Hapalemur simus,Prolemur simus,Dupont_etal_2026,General,1328070,synonym:NCBI,pinned from existing hub/spoke resolution at build; item: Dupont_etal_2026_TableS3
 Hylobates lar,Hylobates lar,Dupont_etal_2026,General,9580,verbatim,pinned from existing hub/spoke resolution at build; item: Dupont_etal_2026_TableS3
@@ -4196,7 +4196,7 @@ Dasyprocta fuliginosa,Dasyprocta fuliginosa,Dupont_etal_2026,General,193455,syno
 Eliomys quercinus,Eliomys quercinus,Dupont_etal_2026,General,53277,synonym:NCBI,pinned from existing hub/spoke resolution at build; item: Dupont_etal_2026_TableS3
 Erethizon dorsatum,Erethizon dorsatum,Dupont_etal_2026,General,34844,verbatim,pinned from existing hub/spoke resolution at build; item: Dupont_etal_2026_TableS3
 Glaucomys volans,Glaucomys volans,Dupont_etal_2026,General,64683,verbatim,pinned from existing hub/spoke resolution at build; item: Dupont_etal_2026_TableS3
-Glis glis,Myoxus glis,Dupont_etal_2026,General,41261,synonym:legacy_key,pinned from existing hub/spoke resolution at build; item: Dupont_etal_2026_TableS3
+Glis glis,Glis glis,Dupont_etal_2026,General,41261,verbatim,"current accepted name (MDD v2.5; NCBI current name Glis glis; hub row Glis glis, taxid 41261); the older Wilman key row maps this variant to the outdated Myoxus glis, which is not carried over; item: Dupont_etal_2026_TableS3"
 Graphiurus murinus,Graphiurus murinus,Dupont_etal_2026,General,51346,synonym:NCBI,pinned from existing hub/spoke resolution at build; item: Dupont_etal_2026_TableS3
 Marmota bobak,Marmota bobak,Dupont_etal_2026,General,93158,synonym:NCBI,pinned from existing hub/spoke resolution at build; item: Dupont_etal_2026_TableS3
 Marmota monax,Marmota monax,Dupont_etal_2026,General,9995,synonym:NCBI,pinned from existing hub/spoke resolution at build; item: Dupont_etal_2026_TableS3

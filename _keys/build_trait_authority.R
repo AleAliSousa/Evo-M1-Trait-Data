@@ -79,6 +79,8 @@ DS <- c(
   "Brain-part weights"       = "__merging_weights",
   "Endocranial volume"       = "__merging_endocranial_volume",
   "Cerebellar folding"       = "__merging_cerebellar_folding",
+  ## added 2026-11-19: app.R std_merge(GH$postcranial)
+  "Postcranial & limb function" = "__merging_postcranial",
   "Cerebral metabolic rate"  = "__merging_cerebral_metabolic_rate",
   "Grey-level index"         = "__merging_GLI",
   "Cortical areas & surfaces"= "__merging_cortical_areas",

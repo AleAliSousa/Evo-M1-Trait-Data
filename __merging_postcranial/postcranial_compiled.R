@@ -56,9 +56,10 @@ fmt <- function(v) format(v, scientific = FALSE, trim = TRUE, digits = 12)
 
 ## cross-listing check: every named Measure/Team must exist in the other merge's observations file
 xl <- unique(src$cross_listed_from[nzchar(src$cross_listed_from)])
-xl_files <- c(behaviour = file.path(root, "__merging_behaviour", "behaviour_observations_long.csv"))
+xl_files <- c(behaviour = file.path(root, "__merging_behaviour", "behaviour_observations_long.csv"),
+              supplementary = file.path(root, "__merging_supplementary", "supplementary_long.csv"))
 xl_seen <- lapply(xl_files, function(f) if (file.exists(f)) {
-  o <- read.csv(f, stringsAsFactors = FALSE, check.names = FALSE); paste(o$Measure, o$Team, sep = ":") } else NULL)
+  o <- read_utf8(f); paste(o$Measure, if ("Team" %in% names(o)) o$Team else o$Teams, sep = ":") } else NULL)
 for (x in xl) {
   p <- strsplit(x, ":", fixed = TRUE)[[1]]
   if (length(p) != 3 || !p[1] %in% names(xl_files)) { warning("cross_listed_from not understood: ", x); next }

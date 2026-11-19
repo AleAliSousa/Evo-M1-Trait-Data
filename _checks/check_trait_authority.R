@@ -83,6 +83,7 @@ DS <- c("Brain-structure volumes"="__merging_volumes","Cell counts"="__merging_c
         "Brain mass"="__merging_brain_mass","Behaviour"="__merging_behaviour",
         "Brain-part weights"="__merging_weights","Endocranial volume"="__merging_endocranial_volume",
         "Cerebellar folding"="__merging_cerebellar_folding",
+        "Postcranial & limb function"="__merging_postcranial",  # added 2026-11-19
         "Cerebral metabolic rate"="__merging_cerebral_metabolic_rate","Grey-level index"="__merging_GLI",
         "Cortical areas & surfaces"="__merging_cortical_areas",
         "Cortical layer thickness"="__merging_cortical_layers",

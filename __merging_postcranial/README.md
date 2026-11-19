@@ -78,6 +78,17 @@ measure_class, cross_listed_from). The item's analysis CSV must already exist.
 - Unresolved species labels (46 at build): 13 Baker and 8 Dupont fossil names, 16 Heffner/Iwaniuk historical or
   genus-level labels (including rows with a blank species), 6 Wimberly and 1 Medina-González (`Panthera leo × tigris`).
   These are pre-existing in the source items except the fossils; resolve via the lookup ladder in `AGENTS.md`.
-- Not registered in the Shiny app or `_keys/variable_domain.csv` (no postcranial domain); the species-audit
-  regression tooling does not list this merge.
+- **Registered (2026-11-19)** in `__ShinyApp/app.R` (`GH$postcranial`, Dataset label "Postcranial & limb function"),
+  the dataset-name maps in `_keys/build_trait_authority.R` and `_checks/check_trait_authority.R`, the provenance
+  map in `_keys/build_population_status.py`, `_keys/variable_domain.csv` (22 new labels; 5 reused existing rows)
+  and `_keys/variable_definitions.csv` (22 rows, definitions from `__merging_postcranial_definitions.csv`).
+  The app serves **only** `postcranial_species_long.csv`; specimen, fossil, record-level and categorical tables
+  stay here. The app reads canonical files from GitHub, so it shows the data once this branch is merged.
+- Derived tables not regenerated here (the build container cannot read accented paths, and a rebuild also
+  re-seeds unrelated rows): re-run `_keys/build_population_status.py`, `_keys/build_trait_authority.R` and
+  `_keys/build_variable_definitions.R` on a normal checkout after merging, and review that diff separately.
+- Label collisions are deliberate: `Duty_Factor`, `Phase`, `Intermembral_index (ratio)` and the handedness labels
+  match rows already in the catalog (domain = first row wins), and appear under both Datasets. The three dexterity
+  scales have distinct labels so the app cannot pool them.
+- The species-audit regression tooling does not list this merge.
 - The three Wimberly/Heffner/Caspar pairs and Baker/Granatosky columns are duplicated across merges by design.

@@ -127,6 +127,10 @@ GH <- list(
   brain_mass = "__merging_brain_mass/brain_mass_long.csv",
   behaviour  = "__merging_behaviour/behaviour_long.csv",
   cerebellar = "__merging_cerebellar_folding/cerebellar_folding_long.csv",
+  # 2026-11-19: postcranial anatomy, hand use and limb function. Only the numeric, extant,
+  # species-level table is served; specimen, fossil, record-level and categorical tables stay in the
+  # merge folder. Same long schema as std_merge(); methods are separate Measure names, never pooled.
+  postcranial = "__merging_postcranial/postcranial_species_long.csv",
   cmr        = "__merging_cerebral_metabolic_rate/cerebral_metabolic_rate_long.csv",
   ecv        = "__merging_endocranial_volume/endocranial_volume_long.csv",
   gli        = "__merging_GLI/GLI_long.csv",
@@ -494,6 +498,8 @@ load_compiled <- function() {
     std_merge(GH$behaviour,  file.path(data_dir, "behaviour_long.csv"),    "Behaviour"),
     std_merge(GH$cerebellar, file.path(data_dir, "cerebellar_folding_long.csv"),
               "Cerebellar folding"),
+    std_merge(GH$postcranial, file.path(data_dir, "postcranial_species_long.csv"),
+              "Postcranial & limb function"),
     std_cmr(GH$cmr, file.path(data_dir, "cerebral_metabolic_rate_long.csv"),
             "Cerebral metabolic rate"),
     std_gli(GH$gli, file.path(data_dir, "GLI_long.csv"),

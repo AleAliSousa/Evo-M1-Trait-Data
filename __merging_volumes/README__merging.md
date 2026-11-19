@@ -70,6 +70,18 @@ publication date** (the later paper supersedes the earlier), *unless flagged*:
 > Baron 1983 / 1987 / 1988 / 1990, Matano 1985a / 1985b / 1986 / 1992, and
 > Zilles & Rehkämper 1988.
 
+**Provenance of the Tier-1 specimens.** The Stephan and Zilles specimen collections
+represented in these data are held in the Vogt Archive of the Cécile and Oskar Vogt
+Institute of Brain Research at Heinrich Heine University Düsseldorf and Düsseldorf
+University Hospital. The archive preserves the Vogt brain and brain-section
+collection and estate, together with the collections of Heinz Stephan, Karl Zilles,
+and Katrin Amunts. "Stephan Collection" and "Zilles Collection" are retained as the
+specimen-collection names; the Vogt Archive is the holding archive, not a separate
+measurement team. The de Sousa measurements were made in Düsseldorf using these
+collections: Stephan material is principally Nissl Cresyl Violet and myelin stained,
+whereas the more recent Zilles material is Merkur silver stained and was optimised
+for GLI measurement.
+
 Worked example: the amygdala is taken from **Stephan 1987** (its re-measurement)
 over Stephan 1981 — e.g. *Alouatta seniculus* 426 (1987) not 413 (1981).
 
@@ -365,3 +377,48 @@ two sources disagree by nearly 2x and the merged value now sits between
 them. Castillo-Morales et al. (2016) Table 1 itself is deliberately NOT
 wired in: it is a secondary compilation, and its rows are superseded by
 the primary sources above where those exist in the repo.
+
+## Update (2026-11-18, later): three primate tables wired in
+
+Three more tables join the merge, all in the Tier-2 team "Zilles" (the team
+the merge already uses for de Sousa 2010/2013, MacLeod, Smaers 2011,
+Semendeferi and Sherwood 2005):
+
+- deSousa_etal_2010_SupTable2 -- species means of the same paper as
+  Table 1 (44 species), cm3 -> mm3 in a reshape block. Neocortex and whole
+  brain are both-hemisphere; V1 and LGN are the authors' doubled 2x-left
+  estimates (laterality_known.csv, doubling = by_source) and are
+  term-mapped to the both-sides terms. Its term rows already existed in
+  standardized_term_volumes.csv; a per-reference term file now backs them.
+- Sherwood_etal_2003_Table1 -- neocortex volumes for 18 species, each with
+  a literature reference per row (neocortex_vol_ref); only the neocortex
+  column is term-mapped. Its brain weights are NOT mapped here: they
+  belong to the brain-mass merge, which already harvests them.
+- Smaers_etal_2010_Table1 -- per-specimen neopallium (= neocortex) and
+  frontal volumes for 18 primates, Stephan/Zilles-collection specimens
+  (catalogue numbers); the grey/white splits and frontal grey/white
+  columns are term-mapped, the Semendeferi/Stephan-unpublished alternate
+  columns are not.
+
+Species resolution: seven spoke rows were added to the shared keys
+(_keys/Hof/species_key.csv for Sherwood_etal_2003, _keys/Stephan/
+species_key.csv for Smaers_etal_2010) so the new tables land on the
+merge's existing entities -- Gorilla gorilla -> Gorilla sp. and Pongo
+pygmaeus -> Pongo sp. (the merge-wide lump), Lagothrix lagotricha ->
+Lagothrix lagothricha (the Stephan spelling used throughout), Tarsius
+syrichta -> Tarsius sp. (as for the same Stephan et al. 1981 value in
+deSousa_etal_2010). SupTable2 needed no new spokes: its paper folder's
+rows already resolve it.
+
+Regenerated outputs: 19 species x variable cells added, none removed, no
+new species (568 before and after). The added cells are neocortex
+grey/white splits for eight species (from Smaers 2010) and three
+Area_striata_grey_matter values (from SupTable2's doubled V1). 211
+pre-existing values move because the three tables join the Zilles team
+mean; the largest moves are Nasalis larvatus Neocortex_Vol.mm3 62,685 ->
+52,353.5 and Total 92,797 -> 77,407 (Smaers' single proboscis specimen is
+much smaller than the Stephan means), and Pongo sp. neocortex grey/white
+matter up ~20-38% (Smaers' orangutan specimen, 327,005 mm3 total
+neocortex, is much larger than the de Sousa / Zilles-Rehkamper means).
+deSousa_etal_2009_Table1 was assessed and deliberately NOT wired: all six
+of its neocortex values are already in the merge verbatim.

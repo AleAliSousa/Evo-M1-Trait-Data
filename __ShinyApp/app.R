@@ -748,11 +748,11 @@ var_class  <- look(lab_class, present)
 is_meas <- look(lab_ismeas, present)
 meas_ok <- !(toupper(is_meas) == "FALSE")
 
-domain_order <- c("brain structure & size", "cellular composition",
-                  "cortical & cerebellar folding", "body size", "metabolism",
-                  "life history", "diet & ecology", "behaviour & cognition",
-                  "sensorimotor & motor pathways", "hand & limb morphology",
-                  "sleep & torpor", "dataset metadata", "Unclassified")
+domain_order <- c("brain structure & size", "brain cells & molecules",
+                  "brain metabolism & blood flow", "sensory",
+                  "body size & morphology", "physiology & metabolism",
+                  "life history", "diet", "behaviour",
+                  "ecology & ranging", "dataset metadata", "Unclassified")
 dom_present  <- unique(var_domain)
 domain_levels <- c(intersect(domain_order, dom_present),
                    setdiff(sort(dom_present), domain_order))
@@ -1617,7 +1617,7 @@ ui <- page_navbar(
           tags$details(tags$summary("Filter table / choose columns"),
         selectizeInput("c_domain", "Domain (blank = all)",
                        choices = domain_levels, multiple = TRUE,
-                       options = list(placeholder = "e.g. cellular composition")),
+                       options = list(placeholder = "e.g. brain cells & molecules")),
         selectizeInput("c_class", "Measure class (blank = all in domain)",
                        choices = NULL, multiple = TRUE,
                        options = list(placeholder = "narrows within the domain")),
@@ -1812,7 +1812,7 @@ ui <- page_navbar(
                  tags$code("_keys/species_pooling.csv"), "; the merges do not change."),
         selectizeInput("k_domain", "Domain (blank = all)",
                        choices = domain_levels, multiple = TRUE,
-                       options = list(placeholder = "e.g. cellular composition")),
+                       options = list(placeholder = "e.g. brain cells & molecules")),
         sliderInput("k_min", "Show traits held for at least (species)",
                     min = 0, max = 1, value = 1, step = 1),
         hr(),
@@ -1885,8 +1885,8 @@ ui <- page_navbar(
         "measure classes — rather than by which compiled table they came from. ",
         "The source dataset is still available as a provenance filter. Anatomical ",
         "and behavioural traits relating to body and ecology therefore sit with ",
-        "their own kind (body size, life history, diet & ecology, metabolism, ",
-        "behaviour & cognition) instead of being pooled into one trait bucket."),
+        "their own kind (body size & morphology, life history, diet, ",
+        "physiology & metabolism, behaviour) instead of being pooled into one trait bucket."),
       h5("Statistics"),
       p("The Statistics view in Plot & data fits regression on species values (median across sources): a response, a predictor of ",
         "interest, and covariates — body size, whole-brain size (on one ",

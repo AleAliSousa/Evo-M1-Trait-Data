@@ -75,11 +75,18 @@ level, fossil flag, source column, Measure, Units, value_type, method, role, typ
 measure_class, cross_listed_from). The item's analysis CSV must already exist.
 
 ## Open items
-- Unresolved species labels (23 at build): 13 Baker and 8 Dupont fossil names, 1 Heffner 1975 bat
-  (`Horpyiocepalus leucogostra`, genuinely ambiguous between Murina leucogaster and a Harpiocephalus species;
-  see `Heffner_Masterton_1975/reference_tables/..._taxon_resolution.csv`), and 1 Medina-González
-  hybrid (`Panthera leo × tigris`: classified as a hybrid, deliberately not assigned to either parent species). The other Heffner/Iwaniuk historical names were resolved 2026-11-19 from MDD v2.5
-  (synonyms/spelling), subspecies assigned to species, and genus-only labels kept as `Genus sp.`.
+- Unresolved species labels (2 at build, both deliberate): `Horpyiocepalus leucogostra` (Heffner 1975 bat, genuinely
+  ambiguous between Murina leucogaster and a Harpiocephalus species; see
+  `Heffner_Masterton_1975/reference_tables/..._taxon_resolution.csv`) and `Panthera leo × tigris` (Medina-González,
+  a hybrid, deliberately not assigned to either parent species).
+- Fossil names resolved 2026-11-19 with GBIF and the Paleobiology Database (evidence in
+  `Baker_etal_2025/reference_tables/Baker_etal_2025_taxon_resolution.csv` and
+  `Dupont_etal_2026/reference_tables/Dupont_etal_2026_taxon_resolution.csv`): GBIF exact accepted species kept as
+  printed, PBDB accepted species kept where GBIF lists a different treatment, Ectoconus majusculus -> Ectoconus
+  ditrigonus and Godinotia neglecta -> Pronycticebus neglectus as PBDB synonyms, and three Messel taxa
+  (Kopidodon macrognathus, Messelogale kessleri, Paroodectes feisti) kept as printed with `our_judgment`
+  (species absent from GBIF and PBDB; lower confidence). The Baker fossil/extinct list itself is still curator
+  judgement; PBDB confirms all of its names as fossil taxa except the three Messel ones, which are not indexed.
 - **Registered (2026-11-19)** in `__ShinyApp/app.R` (`GH$postcranial`, Dataset label "Postcranial & limb function"),
   the dataset-name maps in `_keys/build_trait_authority.R` and `_checks/check_trait_authority.R`, the provenance
   map in `_keys/build_population_status.py`, `_keys/variable_domain.csv` (22 new labels; 5 reused existing rows)

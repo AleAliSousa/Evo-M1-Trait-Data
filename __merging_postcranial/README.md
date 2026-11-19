@@ -85,8 +85,9 @@ measure_class, cross_listed_from). The item's analysis CSV must already exist.
   printed, PBDB accepted species kept where GBIF lists a different treatment, Ectoconus majusculus -> Ectoconus
   ditrigonus and Godinotia neglecta -> Pronycticebus neglectus as PBDB synonyms, and three Messel taxa
   (Kopidodon macrognathus, Messelogale kessleri, Paroodectes feisti) kept as printed with `our_judgment`
-  (species absent from GBIF and PBDB; lower confidence). The Baker fossil/extinct list itself is still curator
-  judgement; PBDB confirms all of its names as fossil taxa except the three Messel ones, which are not indexed.
+  (species absent from GBIF and PBDB; lower confidence). The Baker fossil/extinct list itself
+  (`postcranial_fossil_taxa.csv`) is still curator judgement; PBDB/GBIF were checked only for the names listed above,
+  not for every taxon on it.
 - **Registered (2026-11-19)** in `__ShinyApp/app.R` (`GH$postcranial`, Dataset label "Postcranial & limb function"),
   the dataset-name maps in `_keys/build_trait_authority.R` and `_checks/check_trait_authority.R`, the provenance
   map in `_keys/build_population_status.py`, `_keys/variable_domain.csv` (22 new labels; 5 reused existing rows)

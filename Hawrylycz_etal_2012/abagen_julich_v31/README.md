@@ -34,7 +34,7 @@ i.e. abagen defaults plus: bidirectional L/R mirroring of samples, tolerance 2 m
 ## Files
 | file | content |
 |---|---|
-| `abagen_julich_v31_expression.csv` | 414 regions (row index = atlas id) × 15,633 genes; values are donor-averaged, SRS-normalised expression in [0, 1] (sha256 3c3104697fce6dc8…) |
+| `abagen_julich_v31_expression.csv` | Stored outside this GitHub repository at `~/Library/CloudStorage/OneDrive-AllenInstitute/Analysis_region_celltype_human/abagen_julich_v31/`; 414 regions (row index = atlas id) × 15,633 genes; values are donor-averaged, SRS-normalised expression in [0, 1] (sha256 `3c3104697fce6dc82ed0b2b060834558e5c1245efa90091e6f1357ceda0325ac`). Set `AHBA_JULICH_V31_DIR` to a different local directory when running the cortical c6 analysis elsewhere. |
 | `abagen_julich_v31_sample_counts.csv` | samples assigned per region × donor (after mirroring); total 4604 |
 | `regions_without_own_samples.csv` | 31 hemisphere-regions (19 cortical: 8v2, IFJ2, IFS3, Ia1, Ia3, Id9, MFG1, Op1, Op10, Op7, PirT, hIP7, hOc5, hOc6 on one or both sides; 12 subcortical) whose values come from the nearest centroid sample — **treat as imputed; drop for strict analyses** |
 | `julich_v31_hemisplit_atlas_info.csv`, `JulichBrain_v31_MNI152_hemisplit.nii.gz` | atlas used |

@@ -4,6 +4,8 @@ Hawrylycz, M. J., Lein, E. S., Guillozet-Bongaarts, A. L., Shen, E. H., Ng, L., 
 
 Folder created 2026-11-19. PDF copied from the owner's References.Data library. **Route B was run on 2026-11-19 (owner approved human.brain-map.org): see `abagen_julich_v31/README.md`** — 414 hemisphere-specific Julich-Brain v3.1 regions × 15,633 genes. Route A (ENIGMA precomputed matrices) not pursued.
 
+The 118 MB derived expression matrix is stored in OneDrive `Analysis_region_celltype_human/abagen_julich_v31/`, outside this GitHub repository. The small atlas, sample-count, and methods files remain here; see `abagen_julich_v31/README.md` for the checksum and analysis path.
+
 ## What the owner called "Allen Inst bulk RNA"
 The AHBA is bulk microarray (Agilent 8×60K) from 6 adult donors (3,702 tissue samples; ~20,700 genes), not RNA-seq. (The Allen Institute also released RNA-seq on a subset of the same samples — 2 donors, 120 samples each; this is the only "bulk RNA-seq" at the regional level.) Castrillon et al. 2023 (dataset #4) used the microarray via the abagen pipeline as packaged in the ENIGMA toolbox (HCP-MMP1.0 parcels, 8,426 genes after donor-consistency filtering ≥ 0.2).
 

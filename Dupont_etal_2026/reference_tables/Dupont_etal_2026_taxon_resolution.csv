@@ -1,0 +1,84 @@
+table,printed_name,database,outcome,accepted_name,order,family,evidence,note
+S3,Leopardus colocolo,NCBI snapshot,resolved,Leopardus colocola,Carnivora,Felidae,_keys/ncbi_taxonomy_snapshot.csv 2026-10-22: synonym of taxid 3055696,synonym:NCBI; hub name Leopardus colocola; MDD/GBIF not consulted for this name
+S3,Micoureus demerarae,NCBI snapshot,resolved,Marmosa demerarae,Didelphimorphia,Didelphidae,_keys/ncbi_taxonomy_snapshot.csv 2026-10-22: synonym of taxid 42719,synonym:NCBI; hub name Marmosa demerarae; MDD/GBIF not consulted for this name
+S3,Spilocuscus maculatus,NCBI snapshot,resolved,Phalanger maculatus,Diprotodontia,Phalangeridae,_keys/ncbi_taxonomy_snapshot.csv 2026-10-22: synonym of taxid 175810,synonym:NCBI; hub name Phalanger maculatus; MDD/GBIF not consulted for this name
+S3,Eulemur fulvus albifrons,NCBI snapshot,resolved,Eulemur albifrons,Primates,Lemuridae,_keys/ncbi_taxonomy_snapshot.csv 2026-10-22: synonym of taxid 1215604,synonym:NCBI; hub name Eulemur albifrons; MDD/GBIF not consulted for this name
+S3,Macaca irus,NCBI snapshot,resolved,Macaca fascicularis,Primates,Cercopithecidae,_keys/ncbi_taxonomy_snapshot.csv 2026-10-22: synonym of taxid 9541,synonym:NCBI; hub name Macaca fascicularis; MDD/GBIF not consulted for this name
+S3,Xerus erythropus,NCBI snapshot,resolved,Euxerus erythropus,Rodentia,Sciuridae,_keys/ncbi_taxonomy_snapshot.csv 2026-10-22: synonym of taxid 3371098,synonym:NCBI; hub name Euxerus erythropus; MDD/GBIF not consulted for this name
+S3,Paradoxurus philippinensis,MDD,resolved,Paradoxurus philippinensis,Carnivora,Viverridae,accepted,accepted species in MDD v2.5 (release 2026-07-28)
+S3,Urva auropunctata,MDD,resolved,Urva auropunctata,Carnivora,Herpestidae,accepted,accepted species in MDD v2.5 (release 2026-07-28)
+S3,Dendrolagus inustus,MDD,resolved,Dendrolagus inustus,Diprotodontia,Macropodidae,accepted,accepted species in MDD v2.5 (release 2026-07-28)
+S3,Smutsia gigantea,MDD,resolved,Smutsia gigantea,Pholidota,Manidae,accepted,accepted species in MDD v2.5 (release 2026-07-28)
+S3,Dendrohyrax arboreus,MDD,resolved,Dendrohyrax arboreus,Hyracoidea,Procaviidae,accepted,accepted species in MDD v2.5 (release 2026-07-28)
+S3,Callosciurus finlaysonii,MDD,resolved,Callosciurus finlaysonii,Rodentia,Sciuridae,accepted,accepted species in MDD v2.5 (release 2026-07-28)
+S3,Callosciurus prevostii,MDD,resolved,Callosciurus prevostii,Rodentia,Sciuridae,accepted,accepted species in MDD v2.5 (release 2026-07-28)
+S3,Dactylomys dactylinus,MDD,resolved,Dactylomys dactylinus,Rodentia,Echimyidae,accepted,accepted species in MDD v2.5 (release 2026-07-28)
+S3,Eliomys melanurus,MDD,resolved,Eliomys melanurus,Rodentia,Gliridae,accepted,accepted species in MDD v2.5 (release 2026-07-28)
+S3,Eliurus myoxinus,MDD,resolved,Eliurus myoxinus,Rodentia,Nesomyidae,accepted,accepted species in MDD v2.5 (release 2026-07-28)
+S3,Funambulus palmarum,MDD,resolved,Funambulus palmarum,Rodentia,Sciuridae,accepted,accepted species in MDD v2.5 (release 2026-07-28)
+S3,Hylopetes alboniger,MDD,resolved,Hylopetes alboniger,Rodentia,Sciuridae,accepted,accepted species in MDD v2.5 (release 2026-07-28)
+S3,Marmota sibirica,MDD,resolved,Marmota sibirica,Rodentia,Sciuridae,accepted,accepted species in MDD v2.5 (release 2026-07-28)
+S3,Petaurista petaurista,MDD,resolved,Petaurista petaurista,Rodentia,Sciuridae,accepted,accepted species in MDD v2.5 (release 2026-07-28)
+S3,Petaurista elegans,MDD,resolved,Petaurista elegans,Rodentia,Sciuridae,accepted,accepted species in MDD v2.5 (release 2026-07-28)
+S3,Petaurista alborufus,MDD,resolved,Petaurista alborufus,Rodentia,Sciuridae,accepted,accepted species in MDD v2.5 (release 2026-07-28)
+S3,Phloeomys cumingi,MDD,resolved,Phloeomys cumingi,Rodentia,Muridae,accepted,accepted species in MDD v2.5 (release 2026-07-28)
+S3,Ratufa indica,MDD,resolved,Ratufa indica,Rodentia,Sciuridae,accepted,accepted species in MDD v2.5 (release 2026-07-28)
+S3,Tupaia gracilis,MDD,resolved,Tupaia gracilis,Scandentia,Tupaiidae,accepted,accepted species in MDD v2.5 (release 2026-07-28)
+S3,Propithecus coronatus (deckenii),MDD,resolved,Propithecus coronatus,Primates,Indriidae,accepted + parenthetical,printed epithet in parentheses (deckenii); accepted species Propithecus coronatus in MDD v2.5 (release 2026-07-28)
+S3,Phataginus tetradactyla,MDD,resolved,Phataginus tetradactylus,Pholidota,Manidae,synonym,orthographic variant (gender ending); MDD v2.5 (release 2026-07-28) lists P. tetradactylus
+S3,Tamiops macclellandii,MDD,resolved,Tamiops mcclellandii,Rodentia,Sciuridae,synonym,MDD v2.5 (release 2026-07-28) lists macclellandii as incorrect subsequent spelling of mcclellandii
+S3,Cebus flavus,MDD,resolved,Sapajus flavius,Primates,Cebidae,synonym,MDD v2.5 (release 2026-07-28) lists Cebus flavius (flavus = incorrect subsequent spelling) under Sapajus flavius; GBIF fuzzy match agrees
+S3,Pithecia satana,MDD,resolved,Chiropotes satanas,Primates,Pitheciidae,synonym,MDD v2.5 (release 2026-07-28) lists Pithecia satanas under Chiropotes satanas; printed satana is a spelling variant
+S3,Micoureus regina,MDD,resolved,Marmosa isthmica,Didelphimorphia,Didelphidae,synonym,"MDD v2.5 (release 2026-07-28) lists Micoureus regina / Marmosa regina as synonyms of Marmosa isthmica; authors' tree proxy (Marmosa regina) differs, review"
+S3,Aotus felinus,MDD,resolved,Aotus trivirgatus,Primates,Aotidae,synonym,"MDD v2.5 (release 2026-07-28) lists Aotus felinus as an available synonym of Aotus trivirgatus; authors' tree proxy (Aotus nigriceps) differs, review"
+S3,Martes melampus tsuensis,MDD,resolved,Martes melampus,Carnivora,Mustelidae,name_combination,subspecies printed; assigned to species Martes melampus (name_combination in MDD v2.5 (release 2026-07-28)); subspecies identity not retained in species value
+S3,Galeopterus variegatus peninsulae,MDD,resolved,Galeopterus variegatus,Dermoptera,Cynocephalidae,name_combination,subspecies printed; assigned to species Galeopterus variegatus (name_combination in MDD v2.5 (release 2026-07-28)); subspecies identity not retained in species value
+S3,Ateles fusciceps robustus,MDD,resolved,Ateles fusciceps,Primates,Atelidae,name_combination,subspecies printed; assigned to species Ateles fusciceps (name_combination in MDD v2.5 (release 2026-07-28)); subspecies identity not retained in species value
+S3,Piliocolobus badius temminckii,MDD,resolved,Piliocolobus badius,Primates,Cercopithecidae,name_combination,subspecies printed; assigned to species Piliocolobus badius (name_combination in MDD v2.5 (release 2026-07-28)); subspecies identity not retained in species value
+S3,Manis sp.,MDD/GBIF,resolved,Manis sp.,,,genus only,genus-only label in source; no species-level assignment asserted (authors' tree proxy is not identity)
+S3,Pithecia sp.,MDD/GBIF,resolved,Pithecia sp.,,,genus only,genus-only label in source; no species-level assignment asserted (authors' tree proxy is not identity)
+S3,Dasyprocta sp.,MDD/GBIF,resolved,Dasyprocta sp.,,,genus only,genus-only label in source; no species-level assignment asserted (authors' tree proxy is not identity)
+S3,Echimys sp.,MDD/GBIF,resolved,Echimys sp.,,,genus only,genus-only label in source; no species-level assignment asserted (authors' tree proxy is not identity)
+S3,Pteromys sp.,MDD/GBIF,resolved,Pteromys sp.,,,genus only,genus-only label in source; no species-level assignment asserted (authors' tree proxy is not identity)
+S3,Tupaia sp,MDD/GBIF,resolved,Tupaia sp.,,,genus only,genus-only label in source; no species-level assignment asserted (authors' tree proxy is not identity)
+S2,Agilodocodon scansorius,GBIF,resolved,Agilodocodon scansorius,,Cynodontia,accepted,"accepted species in GBIF backbone (key 8598849); fossil taxon, MDD not applicable"
+S2,Macrocranion tupaiodon,GBIF,resolved,Macrocranion tupaiodon,Erinaceomorpha,Amphilemuridae,accepted,"accepted species in GBIF backbone (key 4971643); fossil taxon, MDD not applicable"
+S2,Paroodectes feisti,GBIF,unresolved_pending,,Carnivora,Miacidae,unresolved,"species absent from GBIF backbone (genus only, doubtful); PBDB (paleobiodb.org) not reachable from build container"
+S2,Kopidodon macrognathus,GBIF,unresolved_pending,,,Paroxyclaenidae,unresolved,"species absent from GBIF backbone (genus only, doubtful); PBDB (paleobiodb.org) not reachable from build container"
+S2,Eurotamandua joresi,GBIF,resolved,Eurotamandua joresi,Pholidota,Manidae,accepted,"accepted species in GBIF backbone (key 11150822); fossil taxon, MDD not applicable"
+S2,Heterohyus nanus,GBIF,resolved,Heterohyus nanus,,Apatemyidae,accepted,"accepted species in GBIF backbone (key 4972167); fossil taxon, MDD not applicable"
+S2,Arboroharamiya jenkinsi,GBIF,resolved,Arboroharamiya jenkinsi,,Arboroharamiyidae,accepted,"accepted species in GBIF backbone (key 8698996); fossil taxon, MDD not applicable"
+S2,Shenshou lui,GBIF,resolved,Shenshou lui,,Shenshouidae,accepted,"accepted species in GBIF backbone (key 8583355); fossil taxon, MDD not applicable"
+S2,Jeholodens jenkinsi,GBIF,resolved,Jeholodens jenkinsi,,Jeholodentidae,accepted,"accepted species in GBIF backbone (key 8577464); fossil taxon, MDD not applicable"
+S2,Juramaia sinensis,GBIF,resolved,Juramaia sinensis,,,accepted,"accepted species in GBIF backbone (key 8515960); fossil taxon, MDD not applicable"
+S2,Henkelotherium guimarotae,GBIF,resolved,Henkelotherium guimarotae,,Henkelotheriidae,accepted,"accepted species in GBIF backbone (key 8636865); fossil taxon, MDD not applicable"
+S2,Eomaia scansoria,GBIF,resolved,Eomaia scansoria,,,accepted,"accepted species in GBIF backbone (key 4974363); fossil taxon, MDD not applicable"
+S2,Sinodelphys szalayi,GBIF,resolved,Sinodelphys szalayi,,Borhyaenidae,accepted,"accepted species in GBIF backbone (key 4975183); fossil taxon, MDD not applicable"
+S2,Phenacodus primaveus,GBIF,resolved,Phenacodus primaevus,,Phenacodontidae,fuzzy+source,"one-letter orthographic variant of Phenacodus primaevus (GBIF fuzzy match key 8499875); source citation (Rose 1990, Phenacodus postcrania) consistent"
+S2,Tetraclaenodon puercensis,GBIF,unresolved_pending,,,Phenacodontidae,unresolved,"GBIF lists as synonym of Phenacodus puercensis Cope, 1881; fossil synonymy not confirmed, printed name retained as unresolved until PBDB/source check; PBDB (paleobiodb.org) not reachable from build container"
+S2,Ectoconus majusculus,GBIF,unresolved_pending,,,Periptychidae,unresolved,"GBIF lists as synonym of Periptychus ditrigonus (Cope, 1882); fossil synonymy not confirmed, printed name retained as unresolved until PBDB/source check; PBDB (paleobiodb.org) not reachable from build container"
+S2,Chriacus sp,GBIF,resolved,Chriacus sp.,,Oxyclaenidae,genus only,genus-only label in source (Chriacus); no species-level assignment asserted
+S2,Hyracotherium grangeri,GBIF,resolved,Hyracotherium grangeri,Perissodactyla,Equidae,accepted,"accepted species in GBIF backbone (key 4969399); fossil taxon, MDD not applicable"
+S2,Apatemys chardini,GBIF,unresolved_pending,,,Apatemyidae,unresolved,"GBIF lists as synonym of Teilhardella chardini (Jepsen, 1930); fossil synonymy not confirmed, printed name retained as unresolved until PBDB/source check; PBDB (paleobiodb.org) not reachable from build container"
+S2,Palaeosinopa sp,GBIF,resolved,Palaeosinopa sp.,,,genus only,genus-only label in source (Mammalia); no species-level assignment asserted
+S2,Ambolestes zhoui,GBIF,resolved,Ambolestes zhoui,,,accepted,"accepted species in GBIF backbone (key 10313471); fossil taxon, MDD not applicable"
+S2,Volaticotherium antiquus,GBIF,resolved,Volaticotherium antiquus,,Triconodontidae,accepted,"accepted species in GBIF backbone (key 4968607); fossil taxon, MDD not applicable"
+S2,Maotherium sinensis,GBIF,resolved,Maotherium sinensis,,Zhangheotheriidae,accepted,"accepted species in GBIF backbone (key 8444516); fossil taxon, MDD not applicable"
+S2,Zhangheotherium quinquecuspidens,GBIF,resolved,Zhangheotherium quinquecuspidens,,Zhangheotheriidae,accepted,"accepted species in GBIF backbone (key 4968791); fossil taxon, MDD not applicable"
+S2,Sinobaatar lingyuanensis,GBIF,resolved,Sinobaatar lingyuanensis,,Eobaataridae,accepted,"accepted species in GBIF backbone (key 8467012); fossil taxon, MDD not applicable"
+S2,Rugosodon eurasiaticus,GBIF,resolved,Rugosodon eurasiaticus,,,accepted,"accepted species in GBIF backbone (key 8512942); fossil taxon, MDD not applicable"
+S2,Prothylacinus patagonicus,GBIF,resolved,Prothylacynus patagonicus,,Borhyaenidae,spelling,orthographic variant; GBIF lists Prothylacynus patagonicus Ameghino 1891 (key 4975066)
+S2,Borhyaena tuberata,GBIF,resolved,Borhyaena tuberata,,Borhyaenidae,accepted,"accepted species in GBIF backbone (key 4975075); fossil taxon, MDD not applicable"
+S2,Mixodectes pungens,GBIF,resolved,Mixodectes pungens,Dermoptera,Mixodectidae,accepted,"accepted species in GBIF backbone (key 4972177); fossil taxon, MDD not applicable"
+S2,Messelogale kessleri,GBIF,unresolved_pending,,Carnivora,Miacidae,unresolved,"species absent from GBIF backbone (genus only, doubtful); PBDB (paleobiodb.org) not reachable from build container"
+S2,Lesmesodon behnkeae,GBIF,resolved,Lesmesodon behnkeae,,Hyaenodontidae,accepted,"accepted species in GBIF backbone (key 10750824); fossil taxon, MDD not applicable"
+S2,Alcidedorbignya inopinata,GBIF,resolved,Alcidedorbignya inopinata,,Wangliidae,accepted,"accepted species in GBIF backbone (key 8677135); fossil taxon, MDD not applicable"
+S2,Mesopithecus pentelici,GBIF,resolved,Mesopithecus pentelicus,Primates,Cercopithecidae,fuzzy accepted,orthographic variant (genitive vs adjective ending); GBIF accepted Mesopithecus pentelicus (key 4974750)
+S2,Nannodectes intermedius,GBIF,unresolved_pending,,Primates,Plesiadapidae,unresolved,"GBIF lists as synonym of Pronothodectes intermedius (Gazin, 1971); fossil synonymy not confirmed, printed name retained as unresolved until PBDB/source check; PBDB (paleobiodb.org) not reachable from build container"
+S2,Carpolestes simpsoni,GBIF,resolved,Carpolestes simpsoni,Primates,Carpolestidae,accepted,"accepted species in GBIF backbone (key 4974529); fossil taxon, MDD not applicable"
+S2,Darwinius masillae,GBIF,resolved,Darwinius masillae,Primates,Notharctidae,accepted,"accepted species in GBIF backbone (key 4974569); fossil taxon, MDD not applicable"
+S2,Archicebus achilles,GBIF,resolved,Archicebus achilles,Primates,Archicebidae,accepted,"accepted species in GBIF backbone (key 8928305); fossil taxon, MDD not applicable"
+S2,Europolemur kelleri,GBIF,resolved,Europolemur kelleri,Primates,Notharctidae,accepted,"accepted species in GBIF backbone (key 4974578); fossil taxon, MDD not applicable"
+S2,Godinotia neglecta,GBIF,unresolved_pending,,Primates,Adapidae,unresolved,"GBIF lists as synonym of Pronycticebus neglectus (Thalmann et al., 1989); fossil synonymy not confirmed, printed name retained as unresolved until PBDB/source check; PBDB (paleobiodb.org) not reachable from build container"
+S2,Australopithecus sediba,GBIF,resolved,Australopithecus sediba,Primates,Hominidae,accepted,"accepted species in GBIF backbone (key 4827679); fossil taxon, MDD not applicable"
+S2,Protopithecus brasiliensis,GBIF,resolved,Protopithecus brasiliensis,Primates,Atelidae,accepted,"accepted species in GBIF backbone (key 5936370); fossil taxon, MDD not applicable"

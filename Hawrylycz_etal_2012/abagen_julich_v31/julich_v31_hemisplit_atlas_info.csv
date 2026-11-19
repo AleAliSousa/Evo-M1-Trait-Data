@@ -1,0 +1,415 @@
+id,label,hemisphere,structure
+1,Area 3b (PostCG),L,cortex
+2,Area hOc4la (LOC),L,cortex
+3,Area PF (IPL),L,cortex
+4,Area CoS1 (CoS),L,cortex
+5,Astr (Amygdala),L,subcortex/brainstem
+6,Area Id8 (Insula),L,cortex
+7,Area SFG4 (SFG),L,cortex
+8,Area 1 (PostCG),L,cortex
+9,"Po (Thalamus, posterior Nucleus)",L,subcortex/brainstem
+10,Area Te 1.0 (HESCHL),L,cortex
+11,Area STS2 (STS),L,cortex
+12,"LD (Thalamus, lateral dorsal Nucleus)",L,subcortex/brainstem
+13,"Area 6mp (SMA, mesial SFG)",L,cortex
+14,Area Id3 (Insula),L,cortex
+15,"ZI (Thalamus, zona incerta)",L,subcortex/brainstem
+16,CGM (Metathalamus),L,subcortex/brainstem
+17,"Area PirTB (PiriformCortexMesial, temporobasal)",L,cortex
+18,"NRp (Midbrain, Nucleus Ruber, parvocellular part)",L,subcortex/brainstem
+19,Area PFt (IPL),L,cortex
+20,Area p24ab (pACC),L,cortex
+21,Area TI (STG),L,cortex
+22,Area FG5 (FusG),L,cortex
+23,"PUm (Thalamus, medial pulvinar)",L,subcortex/brainstem
+24,"PUi (Thalamus, inferior pulvinar)",L,subcortex/brainstem
+25,Area Te 3 (STG),L,cortex
+26,Area MFG1 (MFG),L,cortex
+27,Frontal-to-Occipital (GapMap),L,cortex
+28,Area 7P (SPL),L,cortex
+29,Area 6r1 (PreCG),L,cortex
+30,Area 6d1 (PreCG),L,cortex
+31,"VA (Thalamus, ventral anterior Nucleus (ventral))",L,subcortex/brainstem
+32,Area hIP4 (IPS),L,cortex
+33,Area Op6 (Frontal Operculum),L,cortex
+34,Area FG2 (FusG),L,cortex
+35,Area hIP6 (IPS),L,cortex
+36,Area Fo5 (OFC),L,cortex
+37,"Area TPJ (STG, SMG)",L,cortex
+38,"BST (Basal Forebrain, Bed Nucleus)",L,subcortex/brainstem
+39,"AM (Thalamus, anteromedial Nucleus)",L,subcortex/brainstem
+40,Area Op7 (Frontal Operculum),L,cortex
+41,Area hOc6 (POS),L,cortex
+42,Area Ia3 (Insula),L,cortex
+43,Area Ig2 (Insula),L,cortex
+44,CA2 (Hippocampus),L,subcortex/brainstem
+45,"VLP (Thalamus, ventral lateral posterior Nucleus)",L,subcortex/brainstem
+46,Area Fp2 (FPole),L,cortex
+47,"Li (Thalamus, limitans Nucleus)",L,subcortex/brainstem
+48,"Area EC (Hippocampal Region, Entorhinal Cortex)",L,cortex
+49,Area Id4 (Insula),L,cortex
+50,Area Op1 (POperc),L,cortex
+51,"Tu (Basal Forebrain, Tuberculum)",L,subcortex/brainstem
+52,"Rt (Thalamus, reticular Nucleus)",L,subcortex/brainstem
+53,Area Id6 (Insula),L,cortex
+54,Area IFS4 (IFS),L,cortex
+55,Area 6d3 (SFS),L,cortex
+56,"Ndentv (Cerebellum, Ventral Dentate Nucleus)",L,cerebellum
+57,Area 6v1 (PreCG),L,cortex
+58,Area hIP2 (IPS),L,cortex
+59,Area 44 (IFG),L,cortex
+60,Area Fo7 (OFC),L,cortex
+61,"Pv (Thalamus, paraventricular Nucleus)",L,subcortex/brainstem
+62,Area PGa (IPL),L,cortex
+63,"PUa (Thalamus, anterior pulvinar)",L,subcortex/brainstem
+64,Area 8d2 (SFG),L,cortex
+65,Area Ia1 (Insula),L,cortex
+66,VTM (Amygdala),L,subcortex/brainstem
+67,Area Op8 (Frontal Operculum),L,cortex
+68,"FuP (Ventral Striatum, Fundus of Putamen)",L,subcortex/brainstem
+69,"Area IFJ2 (IFS, PreCS)",L,cortex
+70,Area 7M (SPL),L,cortex
+71,Area 25 (sACC),L,cortex
+72,Area Op5 (Frontal Operculum),L,cortex
+73,Area PFm (IPL),L,cortex
+74,"MD (Thalamus, mediodorsal Nucleus)",L,subcortex/brainstem
+75,LB (Amygdala),L,subcortex/brainstem
+76,Area 4a (PreCG),L,cortex
+77,Area 5M (SPL),L,cortex
+78,Area Op10 (Frontal Operculum),L,cortex
+79,"Pf (Thalamus, parafascicular Nucleus)",L,subcortex/brainstem
+80,Area Fp1 (FPole),L,cortex
+81,"PUl (Thalamus, lateral pulvinar)",L,subcortex/brainstem
+82,Area MFG2 (MFG),L,cortex
+83,Area Ph1 (PhG),L,cortex
+84,Area 3a (PostCG),L,cortex
+85,Area FG4 (FusG),L,cortex
+86,Area Id7 (Insula),L,cortex
+87,"Ninterp (Cerebellum, Interposed Nucleus)",L,cerebellum
+88,STN (Subthalamus),L,subcortex/brainstem
+89,Area Fo6 (OFC),L,cortex
+90,Area p32 (pACC),L,cortex
+91,"Area hOc1 (V1, 17, CalcS)",L,cortex
+92,CGL (Metathalamus),L,subcortex/brainstem
+93,"SNC (Midbrain, Substantia Nigra pars compacta)",L,subcortex/brainstem
+94,Area Ph3 (PhG),L,cortex
+95,Area 8v1 (MFG),L,cortex
+96,Area hOc4lp (LOC),L,cortex
+97,Area SFG2 (SFG),L,cortex
+98,Area Fo3 (OFC),L,cortex
+99,Area Te 1.1 (HESCHL),L,cortex
+100,"Area MFG5 (MFG, IFG)",L,cortex
+101,"Area hOc2 (V2, 18)",L,cortex
+102,Area MFG4 (MFG),L,cortex
+103,"LP (Thalamus, lateral posterior Nucleus)",L,subcortex/brainstem
+104,Area 6d2 (PreCG),L,cortex
+105,Area Ig3 (Insula),L,cortex
+106,Area hOc4d (Cuneus),L,cortex
+107,Area SFG3 (SFG),L,cortex
+108,Area 6v3 (PreCG),L,cortex
+109,"NRm (Midbrain, Nucleus Ruber, magnocellular part)",L,subcortex/brainstem
+110,Area Fo4 (OFC),L,cortex
+111,Area IFS1 (IFS),L,cortex
+112,Area Op4 (POperc),L,cortex
+113,Ch 4 (Basal Forebrain),L,subcortex/brainstem
+114,Area hPO1 (POS),L,cortex
+115,"Ndentd (Cerebellum, Dorsal Dentate Nucleus)",L,cerebellum
+116,Area IFS3 (IFS),L,cortex
+117,Area Op2 (POperc),L,cortex
+118,Area 8v2 (MFG),L,cortex
+119,"AcbM (Ventral Striatum, Medial Accumbens)",L,subcortex/brainstem
+120,DG (Hippocampus),L,subcortex/brainstem
+121,Area PGp (IPL),L,cortex
+122,"Area 6ma (preSMA, mesial SFG)",L,cortex
+123,Area Ig1 (Insula),L,cortex
+124,Area Id10 (Insula),L,cortex
+125,"VM (Thalamus, ventral medial Nucleus)",L,subcortex/brainstem
+126,Area p24c (pACC),L,cortex
+127,Area hOc3v (LingG),L,cortex
+128,Area PFcm (IPL),L,cortex
+129,Area SFS2 (SFS),L,cortex
+130,"Area PirT (PiriformCortexMesial, temporal)",L,cortex
+131,"CM (Thalamus, centromedian Nucleus)",L,subcortex/brainstem
+132,Area hIP5 (IPS),L,cortex
+133,Area SFS1 (SFS),L,cortex
+134,Area FG1 (FusG),L,cortex
+135,Frontal-to-Temporal-I (GapMap),L,cortex
+136,"FuCd (Ventral Striatum, Fundus of Caudate Nucleus)",L,subcortex/brainstem
+137,"VAmc (Thalamus, ventral anterior Nucleus, magnocellular part)",L,subcortex/brainstem
+138,"MV (Thalamus, medioventral Nucleus)",L,subcortex/brainstem
+139,Area hIP3 (IPS),L,cortex
+140,Frontal-I.2 (GapMap),L,cortex
+141,CM (Amygdala),L,subcortex/brainstem
+142,Area 4p (PreCG),L,cortex
+143,Area 33 (ACC),L,cortex
+144,Area OTS1 (OTS),L,cortex
+145,Area Id2 (Insula),L,cortex
+146,CA1 (Hippocampus),L,subcortex/brainstem
+147,Frontal-I.1 (GapMap),L,cortex
+148,Area hIP8 (IPS),L,cortex
+149,IF (Amygdala),L,subcortex/brainstem
+150,Area Op9 (Frontal Operculum),L,cortex
+151,"VIM (Thalamus, ventral intermediate Nucleus)",L,subcortex/brainstem
+152,Temporal-to-Parietal (GapMap),L,cortex
+153,HATA (Hippocampus),L,subcortex/brainstem
+154,"TuTi (Basal Forebrain, Terminal islands)",L,subcortex/brainstem
+155,Area 45 (IFG),L,cortex
+156,"CL (Thalamus, anterior intralaminar nuclei)",L,subcortex/brainstem
+157,Area 5Ci (SPL),L,cortex
+158,Frontal-to-Temporal-II (GapMap),L,cortex
+159,Area Ia2 (Insula),L,cortex
+160,Area Id1 (Insula),L,cortex
+161,Area Te 1.2 (HESCHL),L,cortex
+162,Area Id5 (Insula),L,cortex
+163,Area hIP1 (IPS),L,cortex
+164,Area 2 (PostCS),L,cortex
+165,Area hOc3d (Cuneus),L,cortex
+166,Ch 123 (Basal Forebrain),L,subcortex/brainstem
+167,Area Te 2.1 (STG),L,cortex
+168,"VPL (Thalamus, ventral posterior lateral Nucleus)",L,subcortex/brainstem
+169,"Sg (Thalamus, suprageniculate Nucleus)",L,subcortex/brainstem
+170,Area 7A (SPL),L,cortex
+171,Area Op3 (POperc),L,cortex
+172,"Subc (Hippocampus, Subicular complex)",L,subcortex/brainstem
+173,"TrS (Hippocampus, Transsubiculum)",L,subcortex/brainstem
+174,CA3 (Hippocampus),L,subcortex/brainstem
+175,Frontal-II (GapMap),L,cortex
+176,"VLA (Thalamus, ventral lateral anterior Nucleus)",L,subcortex/brainstem
+177,Area STS1 (STS),L,cortex
+178,"VPM (Thalamus, ventral posterior medial Nucleus)",L,subcortex/brainstem
+179,Area 5L (SPL),L,cortex
+180,Area Id9 (Insula),L,cortex
+181,"SNR (Midbrain, Substantia Nigra pars reticulata)",L,subcortex/brainstem
+182,Area FG3 (FusG),L,cortex
+183,Area IFS2 (IFS),L,cortex
+184,"AV (Thalamus, anteroventral Nucleus)",L,subcortex/brainstem
+185,VP (Ventral Pallidum),L,subcortex/brainstem
+186,Area s32 (sACC),L,cortex
+187,"Nfast (Cerebellum, Fastigial Nucleus)",L,cerebellum
+188,MF (Amygdala),L,subcortex/brainstem
+189,Area hOc5 (LOC),L,cortex
+190,"sPf (Thalamus, subparafascicular Nucleus)",L,subcortex/brainstem
+191,SF (Amygdala),L,subcortex/brainstem
+192,Area Fo1 (OFC),L,cortex
+193,"VPMpc (Thalamus, ventral posterior medial Nucleus, parvocellular part)",L,subcortex/brainstem
+194,"VPi (Thalamus, ventroposterior inferior Nucleus)",L,subcortex/brainstem
+195,Area 8d1 (SFG),L,cortex
+196,"Area IFJ1 (IFS, PreCS)",L,cortex
+197,Area s24 (sACC),L,cortex
+198,Area hOc4v (LingG),L,cortex
+199,Area PFop (IPL),L,cortex
+200,Area 6v2 (PreCG),L,cortex
+201,Area Ph2 (PhG),L,cortex
+202,"AcbL (Ventral Striatum, Lateral Accumbens)",L,subcortex/brainstem
+203,Area Fo2 (OFC),L,cortex
+204,Area Te 2.2 (STG),L,cortex
+205,Area hIP7 (IPS),L,cortex
+206,Area 7PC (SPL),L,cortex
+207,Area TeI (STG),L,cortex
+208,Area 3b (PostCG),R,cortex
+209,Area hOc4la (LOC),R,cortex
+210,Area PF (IPL),R,cortex
+211,Area CoS1 (CoS),R,cortex
+212,Astr (Amygdala),R,subcortex/brainstem
+213,Area Id8 (Insula),R,cortex
+214,Area SFG4 (SFG),R,cortex
+215,Area 1 (PostCG),R,cortex
+216,"Po (Thalamus, posterior Nucleus)",R,subcortex/brainstem
+217,Area Te 1.0 (HESCHL),R,cortex
+218,Area STS2 (STS),R,cortex
+219,"LD (Thalamus, lateral dorsal Nucleus)",R,subcortex/brainstem
+220,"Area 6mp (SMA, mesial SFG)",R,cortex
+221,Area Id3 (Insula),R,cortex
+222,"ZI (Thalamus, zona incerta)",R,subcortex/brainstem
+223,CGM (Metathalamus),R,subcortex/brainstem
+224,"Area PirTB (PiriformCortexMesial, temporobasal)",R,cortex
+225,"NRp (Midbrain, Nucleus Ruber, parvocellular part)",R,subcortex/brainstem
+226,Area PFt (IPL),R,cortex
+227,Area p24ab (pACC),R,cortex
+228,Area TI (STG),R,cortex
+229,Area FG5 (FusG),R,cortex
+230,"PUm (Thalamus, medial pulvinar)",R,subcortex/brainstem
+231,"PUi (Thalamus, inferior pulvinar)",R,subcortex/brainstem
+232,Area Te 3 (STG),R,cortex
+233,Area MFG1 (MFG),R,cortex
+234,Frontal-to-Occipital (GapMap),R,cortex
+235,Area 7P (SPL),R,cortex
+236,Area 6r1 (PreCG),R,cortex
+237,Area 6d1 (PreCG),R,cortex
+238,"VA (Thalamus, ventral anterior Nucleus (ventral))",R,subcortex/brainstem
+239,Area hIP4 (IPS),R,cortex
+240,Area Op6 (Frontal Operculum),R,cortex
+241,Area FG2 (FusG),R,cortex
+242,Area hIP6 (IPS),R,cortex
+243,Area Fo5 (OFC),R,cortex
+244,"Area TPJ (STG, SMG)",R,cortex
+245,"BST (Basal Forebrain, Bed Nucleus)",R,subcortex/brainstem
+246,"AM (Thalamus, anteromedial Nucleus)",R,subcortex/brainstem
+247,Area Op7 (Frontal Operculum),R,cortex
+248,Area hOc6 (POS),R,cortex
+249,Area Ia3 (Insula),R,cortex
+250,Area Ig2 (Insula),R,cortex
+251,CA2 (Hippocampus),R,subcortex/brainstem
+252,"VLP (Thalamus, ventral lateral posterior Nucleus)",R,subcortex/brainstem
+253,Area Fp2 (FPole),R,cortex
+254,"Li (Thalamus, limitans Nucleus)",R,subcortex/brainstem
+255,"Area EC (Hippocampal Region, Entorhinal Cortex)",R,cortex
+256,Area Id4 (Insula),R,cortex
+257,Area Op1 (POperc),R,cortex
+258,"Tu (Basal Forebrain, Tuberculum)",R,subcortex/brainstem
+259,"Rt (Thalamus, reticular Nucleus)",R,subcortex/brainstem
+260,Area Id6 (Insula),R,cortex
+261,Area IFS4 (IFS),R,cortex
+262,Area 6d3 (SFS),R,cortex
+263,"Ndentv (Cerebellum, Ventral Dentate Nucleus)",R,cerebellum
+264,Area 6v1 (PreCG),R,cortex
+265,Area hIP2 (IPS),R,cortex
+266,Area 44 (IFG),R,cortex
+267,Area Fo7 (OFC),R,cortex
+268,"Pv (Thalamus, paraventricular Nucleus)",R,subcortex/brainstem
+269,Area PGa (IPL),R,cortex
+270,"PUa (Thalamus, anterior pulvinar)",R,subcortex/brainstem
+271,Area 8d2 (SFG),R,cortex
+272,Area Ia1 (Insula),R,cortex
+273,VTM (Amygdala),R,subcortex/brainstem
+274,Area Op8 (Frontal Operculum),R,cortex
+275,"FuP (Ventral Striatum, Fundus of Putamen)",R,subcortex/brainstem
+276,"Area IFJ2 (IFS, PreCS)",R,cortex
+277,Area 7M (SPL),R,cortex
+278,Area 25 (sACC),R,cortex
+279,Area Op5 (Frontal Operculum),R,cortex
+280,Area PFm (IPL),R,cortex
+281,"MD (Thalamus, mediodorsal Nucleus)",R,subcortex/brainstem
+282,LB (Amygdala),R,subcortex/brainstem
+283,Area 4a (PreCG),R,cortex
+284,Area 5M (SPL),R,cortex
+285,Area Op10 (Frontal Operculum),R,cortex
+286,"Pf (Thalamus, parafascicular Nucleus)",R,subcortex/brainstem
+287,Area Fp1 (FPole),R,cortex
+288,"PUl (Thalamus, lateral pulvinar)",R,subcortex/brainstem
+289,Area MFG2 (MFG),R,cortex
+290,Area Ph1 (PhG),R,cortex
+291,Area 3a (PostCG),R,cortex
+292,Area FG4 (FusG),R,cortex
+293,Area Id7 (Insula),R,cortex
+294,"Ninterp (Cerebellum, Interposed Nucleus)",R,cerebellum
+295,STN (Subthalamus),R,subcortex/brainstem
+296,Area Fo6 (OFC),R,cortex
+297,Area p32 (pACC),R,cortex
+298,"Area hOc1 (V1, 17, CalcS)",R,cortex
+299,CGL (Metathalamus),R,subcortex/brainstem
+300,"SNC (Midbrain, Substantia Nigra pars compacta)",R,subcortex/brainstem
+301,Area Ph3 (PhG),R,cortex
+302,Area 8v1 (MFG),R,cortex
+303,Area hOc4lp (LOC),R,cortex
+304,Area SFG2 (SFG),R,cortex
+305,Area Fo3 (OFC),R,cortex
+306,Area Te 1.1 (HESCHL),R,cortex
+307,"Area MFG5 (MFG, IFG)",R,cortex
+308,"Area hOc2 (V2, 18)",R,cortex
+309,Area MFG4 (MFG),R,cortex
+310,"LP (Thalamus, lateral posterior Nucleus)",R,subcortex/brainstem
+311,Area 6d2 (PreCG),R,cortex
+312,Area Ig3 (Insula),R,cortex
+313,Area hOc4d (Cuneus),R,cortex
+314,Area SFG3 (SFG),R,cortex
+315,Area 6v3 (PreCG),R,cortex
+316,"NRm (Midbrain, Nucleus Ruber, magnocellular part)",R,subcortex/brainstem
+317,Area Fo4 (OFC),R,cortex
+318,Area IFS1 (IFS),R,cortex
+319,Area Op4 (POperc),R,cortex
+320,Ch 4 (Basal Forebrain),R,subcortex/brainstem
+321,Area hPO1 (POS),R,cortex
+322,"Ndentd (Cerebellum, Dorsal Dentate Nucleus)",R,cerebellum
+323,Area IFS3 (IFS),R,cortex
+324,Area Op2 (POperc),R,cortex
+325,Area 8v2 (MFG),R,cortex
+326,"AcbM (Ventral Striatum, Medial Accumbens)",R,subcortex/brainstem
+327,DG (Hippocampus),R,subcortex/brainstem
+328,Area PGp (IPL),R,cortex
+329,"Area 6ma (preSMA, mesial SFG)",R,cortex
+330,Area Ig1 (Insula),R,cortex
+331,Area Id10 (Insula),R,cortex
+332,"VM (Thalamus, ventral medial Nucleus)",R,subcortex/brainstem
+333,Area p24c (pACC),R,cortex
+334,Area hOc3v (LingG),R,cortex
+335,Area PFcm (IPL),R,cortex
+336,Area SFS2 (SFS),R,cortex
+337,"Area PirT (PiriformCortexMesial, temporal)",R,cortex
+338,"CM (Thalamus, centromedian Nucleus)",R,subcortex/brainstem
+339,Area hIP5 (IPS),R,cortex
+340,Area SFS1 (SFS),R,cortex
+341,Area FG1 (FusG),R,cortex
+342,Frontal-to-Temporal-I (GapMap),R,cortex
+343,"FuCd (Ventral Striatum, Fundus of Caudate Nucleus)",R,subcortex/brainstem
+344,"VAmc (Thalamus, ventral anterior Nucleus, magnocellular part)",R,subcortex/brainstem
+345,"MV (Thalamus, medioventral Nucleus)",R,subcortex/brainstem
+346,Area hIP3 (IPS),R,cortex
+347,Frontal-I.2 (GapMap),R,cortex
+348,CM (Amygdala),R,subcortex/brainstem
+349,Area 4p (PreCG),R,cortex
+350,Area 33 (ACC),R,cortex
+351,Area OTS1 (OTS),R,cortex
+352,Area Id2 (Insula),R,cortex
+353,CA1 (Hippocampus),R,subcortex/brainstem
+354,Frontal-I.1 (GapMap),R,cortex
+355,Area hIP8 (IPS),R,cortex
+356,IF (Amygdala),R,subcortex/brainstem
+357,Area Op9 (Frontal Operculum),R,cortex
+358,"VIM (Thalamus, ventral intermediate Nucleus)",R,subcortex/brainstem
+359,Temporal-to-Parietal (GapMap),R,cortex
+360,HATA (Hippocampus),R,subcortex/brainstem
+361,"TuTi (Basal Forebrain, Terminal islands)",R,subcortex/brainstem
+362,Area 45 (IFG),R,cortex
+363,"CL (Thalamus, anterior intralaminar nuclei)",R,subcortex/brainstem
+364,Area 5Ci (SPL),R,cortex
+365,Frontal-to-Temporal-II (GapMap),R,cortex
+366,Area Ia2 (Insula),R,cortex
+367,Area Id1 (Insula),R,cortex
+368,Area Te 1.2 (HESCHL),R,cortex
+369,Area Id5 (Insula),R,cortex
+370,Area hIP1 (IPS),R,cortex
+371,Area 2 (PostCS),R,cortex
+372,Area hOc3d (Cuneus),R,cortex
+373,Ch 123 (Basal Forebrain),R,subcortex/brainstem
+374,Area Te 2.1 (STG),R,cortex
+375,"VPL (Thalamus, ventral posterior lateral Nucleus)",R,subcortex/brainstem
+376,"Sg (Thalamus, suprageniculate Nucleus)",R,subcortex/brainstem
+377,Area 7A (SPL),R,cortex
+378,Area Op3 (POperc),R,cortex
+379,"Subc (Hippocampus, Subicular complex)",R,subcortex/brainstem
+380,"TrS (Hippocampus, Transsubiculum)",R,subcortex/brainstem
+381,CA3 (Hippocampus),R,subcortex/brainstem
+382,Frontal-II (GapMap),R,cortex
+383,"VLA (Thalamus, ventral lateral anterior Nucleus)",R,subcortex/brainstem
+384,Area STS1 (STS),R,cortex
+385,"VPM (Thalamus, ventral posterior medial Nucleus)",R,subcortex/brainstem
+386,Area 5L (SPL),R,cortex
+387,Area Id9 (Insula),R,cortex
+388,"SNR (Midbrain, Substantia Nigra pars reticulata)",R,subcortex/brainstem
+389,Area FG3 (FusG),R,cortex
+390,Area IFS2 (IFS),R,cortex
+391,"AV (Thalamus, anteroventral Nucleus)",R,subcortex/brainstem
+392,VP (Ventral Pallidum),R,subcortex/brainstem
+393,Area s32 (sACC),R,cortex
+394,"Nfast (Cerebellum, Fastigial Nucleus)",R,cerebellum
+395,MF (Amygdala),R,subcortex/brainstem
+396,Area hOc5 (LOC),R,cortex
+397,"sPf (Thalamus, subparafascicular Nucleus)",R,subcortex/brainstem
+398,SF (Amygdala),R,subcortex/brainstem
+399,Area Fo1 (OFC),R,cortex
+400,"VPMpc (Thalamus, ventral posterior medial Nucleus, parvocellular part)",R,subcortex/brainstem
+401,"VPi (Thalamus, ventroposterior inferior Nucleus)",R,subcortex/brainstem
+402,Area 8d1 (SFG),R,cortex
+403,"Area IFJ1 (IFS, PreCS)",R,cortex
+404,Area s24 (sACC),R,cortex
+405,Area hOc4v (LingG),R,cortex
+406,Area PFop (IPL),R,cortex
+407,Area 6v2 (PreCG),R,cortex
+408,Area Ph2 (PhG),R,cortex
+409,"AcbL (Ventral Striatum, Lateral Accumbens)",R,subcortex/brainstem
+410,Area Fo2 (OFC),R,cortex
+411,Area Te 2.2 (STG),R,cortex
+412,Area hIP7 (IPS),R,cortex
+413,Area 7PC (SPL),R,cortex
+414,Area TeI (STG),R,cortex

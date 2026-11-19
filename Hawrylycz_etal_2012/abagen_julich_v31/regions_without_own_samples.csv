@@ -1,0 +1,32 @@
+label,hemisphere,structure,id
+"Po (Thalamus, posterior Nucleus)",L,subcortex/brainstem,9
+Area Op7 (Frontal Operculum),L,cortex,40
+Area Ia3 (Insula),L,cortex,42
+"Pv (Thalamus, paraventricular Nucleus)",L,subcortex/brainstem,61
+Area Ia1 (Insula),L,cortex,65
+VTM (Amygdala),L,subcortex/brainstem,66
+Area Op10 (Frontal Operculum),L,cortex,78
+Area 8v2 (MFG),L,cortex,118
+"VM (Thalamus, ventral medial Nucleus)",L,subcortex/brainstem,125
+"Area PirT (PiriformCortexMesial, temporal)",L,cortex,130
+"VPM (Thalamus, ventral posterior medial Nucleus)",L,subcortex/brainstem,178
+Area Id9 (Insula),L,cortex,180
+MF (Amygdala),L,subcortex/brainstem,188
+"VPMpc (Thalamus, ventral posterior medial Nucleus, parvocellular part)",L,subcortex/brainstem,193
+Area hIP7 (IPS),L,cortex,205
+Area MFG1 (MFG),R,cortex,233
+Area Op7 (Frontal Operculum),R,cortex,247
+Area hOc6 (POS),R,cortex,248
+Area Ia3 (Insula),R,cortex,249
+Area Op1 (POperc),R,cortex,257
+"Pv (Thalamus, paraventricular Nucleus)",R,subcortex/brainstem,268
+Area Ia1 (Insula),R,cortex,272
+"Area IFJ2 (IFS, PreCS)",R,cortex,276
+Area Op10 (Frontal Operculum),R,cortex,285
+Area IFS3 (IFS),R,cortex,323
+"VM (Thalamus, ventral medial Nucleus)",R,subcortex/brainstem,332
+"Area PirT (PiriformCortexMesial, temporal)",R,cortex,337
+"VPM (Thalamus, ventral posterior medial Nucleus)",R,subcortex/brainstem,385
+MF (Amygdala),R,subcortex/brainstem,395
+Area hOc5 (LOC),R,cortex,396
+"VPMpc (Thalamus, ventral posterior medial Nucleus, parvocellular part)",R,subcortex/brainstem,400

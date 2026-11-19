@@ -125,6 +125,7 @@ GH <- list(
   traits     = "__ShinyApp/data/evom1_traits_long.csv",
   body       = "__merging_body_ecology/body_ecology_long.csv",
   brain_mass = "__merging_brain_mass/brain_mass_long.csv",
+  brain_size = "__merging_brain_size/brain_size_long.csv",
   behaviour  = "__merging_behaviour/behaviour_long.csv",
   cerebellar = "__merging_cerebellar_folding/cerebellar_folding_long.csv",
   # 2026-11-19: postcranial anatomy, hand use and limb function. Only the numeric, extant,
@@ -272,6 +273,12 @@ load_compiled <- function() {
     }
     lab <- paste0(d$Measure, " (", d$Units, ")")
     provenance <- paste0("EvoM1 ", tolower(d$Measure), " merge (", d$n_sources, " sources)")
+    if (dataset == "Combined brain size") {
+      provenance <- paste0("Pooled brain size; ", d$n_sources, " contributing reports; ",
+                           d$n_teams, " source teams; ", d$reports_with_unknown_n,
+                           " reports with unknown sample size")
+      d$measurement_method <- paste(d$measurement_method, d$weighting, d$conversion, sep = "; ")
+    }
     if (dataset == "Brain mass" && all(c("selected_measure", "measurement_method") %in% names(d))) {
       selected <- d$Measure == "Brain mass (measured or estimated from volume)"
       provenance[selected] <- paste0("Selected ", d$measurement_method[selected],
@@ -491,8 +498,10 @@ load_compiled <- function() {
     # Brain mass is emitted as PARALLEL variables, one per measurement basis
     # (measured, excluding olfactory bulbs, or explicitly derived estimates);
     # unresolved mixed-basis records are held for review. Endocranial volume
-    # is its own merge, in mL, and is never converted to a mass.
+    # retains its own native-volume merge. The explicit combined view below
+    # additionally uses ECV as a proxy under the AnimalTraits density convention.
     std_merge(GH$brain_mass, file.path(data_dir, "brain_mass_long.csv"),   "Brain mass"),
+    std_merge(GH$brain_size, file.path(data_dir, "brain_size_long.csv"), "Combined brain size"),
     std_merge(GH$ecv, file.path(data_dir, "endocranial_volume_long.csv"),
               "Endocranial volume"),
     std_merge(GH$behaviour,  file.path(data_dir, "behaviour_long.csv"),    "Behaviour"),
@@ -700,6 +709,7 @@ POOL_LABEL <- c(
     "not a measured percept: from retinal ganglion cell isodensity contours",
   binocular_field_optical   = "not a measured percept: angular overlap of the two retinal fields",
   volume_net                = "brain volume net of ventricles",
+  brain_size_combined_equivalent = "pooled mass/volume-equivalent brain size, including endocranial proxies; 1.036 g/mL",
   endocranial_volume        = "endocranial capacity: brain plus meninges, CSF and vessels",
   endocranial_volume_female = "endocranial capacity, female-only means")
 

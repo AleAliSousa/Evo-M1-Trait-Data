@@ -307,4 +307,9 @@ write.csv(manifest, file.path(out, "source_manifest.csv"),
           row.names = FALSE, fileEncoding = "UTF-8")
 message("manifest rows: ", nrow(manifest),
         " | with citation: ", sum(nzchar(manifest$citation)))
+# Rebuild the paired brain-size view after its source manifest is current.
+python <- Sys.which("python3")
+if (!nzchar(python)) stop("python3 is required to build the combined brain-size traits.")
+status <- system2(python, shQuote(file.path(repo, "__merging_brain_size", "build_brain_size.py")))
+if (status != 0L) stop("Combined brain-size build failed; no deployment should proceed.")
 message("DONE -> ", out)

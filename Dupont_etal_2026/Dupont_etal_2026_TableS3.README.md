@@ -48,8 +48,9 @@ Pithecia satana). Several new accepted names are not yet rows in `_keys/species_
 backfill and NCBI sync are separate steps.
 
 ## Not built
-- Table S2 (49 fossil/extinct taxa with per-specimen IDs): to be built as its own item once taxa are
-  resolved (Paleobiology Database / source papers); excluded from merges until then.
+- Table S2 (49 fossil/extinct taxa with per-specimen IDs) is a separate item, `Dupont_etal_2026_TableS2`. It is
+  skipped by the body_ecology body-mass pool and enters only the specimen-level fossil table of
+  `__merging_postcranial`.
 - Table S1 (specimen list), S4–S7 (statistics): not data for this repository.
 - `Item full original title` (registry col M) needs the printed Table S3 caption, which is not in the
   supplement; type it from the paper.

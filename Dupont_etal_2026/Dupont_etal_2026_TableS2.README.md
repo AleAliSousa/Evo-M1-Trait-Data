@@ -24,22 +24,19 @@ authors' model-inferred % time arboreal (point estimate with lower/upper bound) 
   confirmed. Some rows are casts or literature-sourced (see `Origin`).
 
 ## Species identity
-Evidence for every name is in `reference_tables/Dupont_etal_2026_taxon_resolution.csv` (GBIF backbone match
-type, status and key, checked 2026-11-19; MDD does not cover most fossils). 41 printed names were not in the
-extant species hub; 33 now have paper-scoped rows in `_keys/General/species_key.csv`: exact accepted GBIF
-species (verbatim), three orthographic variants (`spelling`) and two `sp` labels (`unspecified_in_source`).
-No NCBI taxid was assigned.
-
-**8 names remain unresolved** (`species_unresolved = TRUE`). Next action: check each in the Paleobiology
-Database (`paleobiodb.org` is not reachable from the build container) and the source papers cited in `Origin`.
-- `Paroodectes feisti`: species absent from GBIF backbone (genus only, doubtful); PBDB (paleobiodb.org) not reachable from build container
-- `Kopidodon macrognathus`: species absent from GBIF backbone (genus only, doubtful); PBDB (paleobiodb.org) not reachable from build container
-- `Tetraclaenodon puercensis`: GBIF lists as synonym of Phenacodus puercensis Cope, 1881; fossil synonymy not confirmed, printed name retained as unresolved until PBDB/source check; PBDB (paleobiodb.org) not reachable from build container
-- `Ectoconus majusculus`: GBIF lists as synonym of Periptychus ditrigonus (Cope, 1882); fossil synonymy not confirmed, printed name retained as unresolved until PBDB/source check; PBDB (paleobiodb.org) not reachable from build container
-- `Apatemys chardini`: GBIF lists as synonym of Teilhardella chardini (Jepsen, 1930); fossil synonymy not confirmed, printed name retained as unresolved until PBDB/source check; PBDB (paleobiodb.org) not reachable from build container
-- `Messelogale kessleri`: species absent from GBIF backbone (genus only, doubtful); PBDB (paleobiodb.org) not reachable from build container
-- `Nannodectes intermedius`: GBIF lists as synonym of Pronothodectes intermedius (Gazin, 1971); fossil synonymy not confirmed, printed name retained as unresolved until PBDB/source check; PBDB (paleobiodb.org) not reachable from build container
-- `Godinotia neglecta`: GBIF lists as synonym of Pronycticebus neglectus (Thalmann et al., 1989); fossil synonymy not confirmed, printed name retained as unresolved until PBDB/source check; PBDB (paleobiodb.org) not reachable from build container
+Evidence for every name is in `reference_tables/Dupont_etal_2026_taxon_resolution.csv` (GBIF backbone match type,
+status and key, then the Paleobiology Database for names where GBIF differed or had no species, checked 2026-11-19;
+MDD does not cover most fossils). 41 printed names were not in the extant species hub and all now have paper-scoped
+rows in `_keys/General/species_key.csv`:
+- exact accepted GBIF species, kept as printed (`verbatim`), and three orthographic variants (`spelling`);
+- PBDB accepted species kept as printed where GBIF lists a different treatment (Nannodectes intermedius, Apatemys
+  chardini, Tetraclaenodon puercensis);
+- two PBDB synonyms (`synonym:PBDB`): Ectoconus majusculus -> Ectoconus ditrigonus (GBIF agrees on the species but
+  places it in Periptychus) and Godinotia neglecta -> Pronycticebus neglectus;
+- two `sp` labels (`unspecified_in_source`);
+- three Messel taxa with no species record in GBIF or PBDB (Kopidodon macrognathus, Messelogale kessleri,
+  Paroodectes feisti), kept as printed with `our_judgment`. **Lower confidence: confirm in the Messel literature.**
+No NCBI taxid was assigned. `species_unresolved` is FALSE for all 49 rows.
 
 ## Not built / for the owner
 - Registry row: paste `Dupont_etal_2026_TableS2_registry_row.xlsx` (same procedure as Table S3) and type the

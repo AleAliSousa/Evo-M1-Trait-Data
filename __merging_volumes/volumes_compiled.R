@@ -93,6 +93,7 @@ papers <- tribble(
   "Matano__1992_Table4",                  "Stephan_collection", 1992,
   "Zilles_Rehkämper_1988_Table12-2",      "Stephan_collection", 1988,
   "deSousa_etal_2010_Table1",             "Zilles",             2010,
+  "deSousa_etal_2010_SupTable2",          "Zilles",             2010,  # species means of the same paper (44 spp.); cm3 -> mm3 in the reshape below. Neocortex + whole brain are both-hemisphere; V1/LGN are the authors' doubled 2x-left estimates (laterality_known.csv, doubling = by_source).
   "deSousa_etal_2013_Table1",             "Zilles",             2013,
   "MacLeod_etal_2003_Table1",             "Zilles",             2003,
   "MacLeod_etal_2003_Table2",             "Zilles",             2003,
@@ -102,11 +103,13 @@ papers <- tribble(
   "Bush_Allman_2003_Table1",              "Bush",               2003,
   "Bush_Allman_2004_b_TABLE1",            "Bush",               2004,
   "Bush_Allman_2004_a_Table2",            "Bush",               2004,  # ref 55 (frontal/neocortex GM+WM; 55 spp incl. Cheirogaleus/Mandrillus). Derives Neocortex_Vol.mm3 (GM+WM) in the reshape below. Same team 'Bush' as 2003/2004b (Tier-2, averaged).
+  "Smaers_etal_2010_Table1",              "Zilles",             2010,  # per-specimen neopallium (= neocortex) and frontal volumes, Stephan/Zilles-collection specimens (catalogue numbers); mm3 as printed.
   "Smaers_etal_2011_SupplementaryTable1", "Zilles",             2011,
   "Smaers_etal_2011_SupplementaryTable2", "Zilles",             2011,  # raw anterior-frontal/prefrontal block; replaces the 2017 secondary republication
   "Ashwell__2020_SupplementaryTable",     "Ashwell",            2020,
   "Semendeferi_etal_1998_Table2",         "Zilles",             1998,
   "Semendeferi_etal_2001_Table2",         "Zilles",             2001,
+  "Sherwood_etal_2003_Table1",            "Zilles",             2003,  # neocortex volumes per species, compiled with a literature reference per row (neocortex_vol_ref); mm3 as printed. Its brain weights are NOT mapped here -- they belong to the brain-mass merge.
   "Sherwood_etal_2005_Table1",            "Zilles",             2005,
   "Barger_etal_2007_TABLE1",              "Zilles",             2007,
   "Reep_etal_2007_Table1",                "Reep",               2007,
@@ -373,7 +376,9 @@ paper_long <- function(row) {
   if (it == "Bush_Allman_2004_a_Table2")                         # derive combined Neocortex (GM+WM) before the generic cm3->mm3 pass picks it up (term map: neocortex_GMWM_cm3 -> Neocortex_Vol.mm3)
     df <- df %>% mutate(neocortex_GMWM_cm3 = num(neocortex_grey_cm3) + num(neocortex_white_cm3),
                         across(ends_with("_cm3"), ~num(.x)*1000))  # whole brain, neocortex grey/white/combined
-  if (it == "deSousa_etal_2010_Table1")                          # per-specimen hominoid volumes: cm3 -> mm3 (per-specimen rows collapse to species mean in step 6). V1/LGN are LEFT-only and printed UNDOUBLED (laterality_known.csv, doubling = none); neocortex + whole-brain are both-hemisphere. The doubled 2x-left figures are the same paper's Supp. Table 2 (doubling = by_source), not merged here.
+  if (it == "deSousa_etal_2010_Table1")                          # per-specimen hominoid volumes: cm3 -> mm3 (per-specimen rows collapse to species mean in step 6). V1/LGN are LEFT-only and printed UNDOUBLED (laterality_known.csv, doubling = none); neocortex + whole-brain are both-hemisphere. The doubled 2x-left figures are the same paper's Supp. Table 2 (doubling = by_source), wired in directly below.
+    df <- df %>% mutate(across(ends_with("_cm3"), ~num(.x)*1000))
+  if (it == "deSousa_etal_2010_SupTable2")                       # species means of the same paper: cm3 -> mm3. V1/LGN are the authors' doubled 2x-left totals (laterality_known.csv, doubling = by_source) and are term-mapped to the both-sides terms; never double them again.
     df <- df %>% mutate(across(ends_with("_cm3"), ~num(.x)*1000))
   if (it == "Smaers_etal_2011_SupplementaryTable1") {            # per-individual frontal -> species means of COMBINED L+R (cm3->mm3)
     fix <- c("Cercopithecus ascianus"="Cercopithecus ascanius","Cercocebus albigena"="Lophocebus albigena",

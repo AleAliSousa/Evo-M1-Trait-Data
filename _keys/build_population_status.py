@@ -43,6 +43,7 @@ PROV_COL = {
     "body_ecology_long.csv": "Teams", "brain_mass_long.csv": "Teams",
     "endocranial_volume_long.csv": "Teams", "behaviour_long.csv": "Teams",
     "behaviour_observations_long.csv": "Team", "cerebellar_folding_long.csv": "Teams",
+    "postcranial_species_long.csv": "Teams",
     "cerebral_metabolic_rate_long.csv": "Compilations", "GLI_long.csv": "source",
     "GLI_species_area_stratum_comparison_qa_long.csv": "source",
     "cortical_areas_long.csv": "source", "cortical_layers_all_regions_long.csv": "source",

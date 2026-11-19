@@ -1,0 +1,18 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Group,"Taxonomic or informal group as printed (e.g. Carnivora, Primate, Marsupial, Folivora)",,,,info,mammals,Dupont_etal_2026_TableS3,informal groups; not a standardised Order,
+Species,"Species name exactly as printed in Table S3, including stray spaces and subspecies/'sp.' labels",,,,info,mammals,Dupont_etal_2026_TableS3,printed name preserved,
+species_sci,"Accepted name from the shared resolver (_keys/General/species_key.csv, source_publication = Dupont_etal_2026). When species_unresolved is TRUE it holds the cleaned printed string, not an accepted name",,,,info,mammals,Dupont_etal_2026_TableS3,join key; do not use rows with species_unresolved = TRUE as hub-matched,added in build
+species_basis,"Basis of the species mapping (verbatim, spelling, synonym:*, subspecies_assign, unresolved ...)",,,,info,mammals,Dupont_etal_2026_TableS3,from resolve_species(),added in build
+species_unresolved,TRUE when the printed name did not resolve to a species_reference.csv row,,,,info,mammals,Dupont_etal_2026_TableS3,"0 rows at build; see reference_tables/Dupont_etal_2026_taxon_resolution.csv for the 42 names resolved from MDD/GBIF/NCBI",added in build
+Tree_species,Species used in the phylogenetic tree (the authors' proxy for the printed species),,,,info,mammals,Dupont_etal_2026_TableS3,tree proxy only; never species identity (e.g. 'Manis sp.' -> Manis pentadactyla),
+PI_forefoot_digit1,Phalangeal index (PI) of forefoot (hand) digit I,Forefoot digit I,PI.index,species value,primary,mammals,Dupont_etal_2026_TableS3,dimensionless; blank = NA in source (47 species),PIForefootDigit1
+PI_forefoot_digits3and4,Phalangeal index of forefoot (hand) digits III and IV,Forefoot digits III and IV,PI.index,species value,primary,mammals,Dupont_etal_2026_TableS3,dimensionless; blank = NA in source,PIForefootDigits3and4
+PI_hindfoot_digit1,Phalangeal index of hindfoot (foot) digit I,Hindfoot digit I,PI.index,species value,primary,mammals,Dupont_etal_2026_TableS3,dimensionless; blank = NA in source,PIHindfootDigit1
+PI_hindfoot_digits3and4,Phalangeal index of hindfoot (foot) digits III and IV,Hindfoot digits III and IV,PI.index,species value,primary,mammals,Dupont_etal_2026_TableS3,dimensionless; blank = NA in source,PIHindfootDigits3and4
+Body_Mass.g,Body mass compiled by the authors,Body,Mass.g,species value,secondary,mammals,Dupont_etal_2026_TableS3,"printed in kg, converted to g (x 1000); mostly from Animal Diversity Web; already compiled elsewhere, not merged",BodymassKg
+Ref_Body_Mass,Source the authors cite for body mass,,,,info,mammals,Dupont_etal_2026_TableS3,"verbatim; a URL host, a citation or a GBIF string",Ref BodyMass
+Time_Arboreal_pct,"Approximate percentage of time spent in trees (numeric, tilde removed)",Locomotion,pct.time.arboreal,approximate category,primary,mammals,Dupont_etal_2026_TableS3,"binned estimate (0,10,25,50,75,76,...), literature/ADW-based; not a measurement",TimeArbo%
+Time_Arboreal_printed,Time-arboreal value exactly as printed (with '~'),,,,info,mammals,Dupont_etal_2026_TableS3,,
+Ref_Time_Arboreal,Source the authors cite for the time-arboreal value,,,,info,mammals,Dupont_etal_2026_TableS3,verbatim,Ref TimeArbo
+Method:units,Unit conversion and parsing applied in the build,,,,method,mammals,Dupont_etal_2026_TableS3,BodymassKg x 1000 -> g; '~NN' -> NN; text 'NA' -> blank,
+Method:observation_level,"One row per species as printed (species-level value), not per specimen",,,,method,mammals,Dupont_etal_2026_TableS3,per-specimen data exist only for the fossil table S2 and the specimen list S1 (not built),

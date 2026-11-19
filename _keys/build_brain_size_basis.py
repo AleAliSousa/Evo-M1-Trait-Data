@@ -760,6 +760,36 @@ RESOLVED = {
     ("Smaers_etal_2018", "Brain_Vol.mm3"):
         ("volume", "volume_mri_or_histological_mixed", "in_vivo_or_fixed", "unknown",
          "unknown", "unknown", "volume_mri_or_histological_mixed", True, "quoted", P),
+    # ---- items added 2026-11-18, classified 2026-11-18 for the merge wiring ----
+    # Roehrs 1986 Table 1: species-mean brain weights (Hirngewicht, HG) of the
+    # author's own mustelid sample (196 individuals; three species' values after
+    # Drescher 1977). Weighed masses; the paper does not state fresh vs fixed,
+    # so mass_unspecified on the Lewitus S1A precedent. Primary.
+    ("Röhrs__1986", "Brain_mass_g"):
+        ("mass", "mass_unspecified", "unknown", "unknown", "unknown", "unknown",
+         "mass_measured", True, "quoted", D),
+    # Kruska 1980 Tabelle 1: FRESH brain weight per specimen, weighed before
+    # fixation (the same table prints the fixation shrinkage %). Primary.
+    ("Kruska__1980", "Fresh_brain_weight_g"):
+        ("mass", "mass_fresh", "fresh", "unknown", "unknown", "unknown",
+         "mass_measured", True, "quoted", D),
+    # Kruska 1980 Tabelle 2 prints the SAME seven camelid specimens' fresh
+    # weights again as the basis of its volume table (values identical to
+    # Tabelle 1, specimen by specimen). The basis is a genuine fresh mass,
+    # but the seven rows are kept out of the pool by row-basis decisions in
+    # __metadata/curation/brain_mass_row_basis.csv so each specimen is
+    # counted once, from Tabelle 1.
+    ("Kruska__1980", "Brain_mass_g_fresh"):
+        ("mass", "mass_fresh", "fresh", "unknown", "unknown", "unknown",
+         "mass_measured", True, "quoted", D),
+    # Gonzalez-Voyer et al. 2016 (Dryad): a literature compilation of brain
+    # masses whose underlying sources mix weighed masses with values converted
+    # from endocranial volumes (the per-row References name the sources).
+    # Parked with the other mixed compilations (Baker, Boddy, Burger) until
+    # row-basis decisions split it by source.
+    ("GonzalezVoyer_etal_2016", "Brain_mass_g"):
+        ("mass", "mass_or_volume_mixed", "unknown", "unknown", "unknown", "unknown",
+         "mass_or_volume_mixed", True, "quoted", D),
 }
 ASSIGN.update(RESOLVED)
 

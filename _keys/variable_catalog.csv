@@ -5596,3 +5596,91 @@ Reader_etal_2011,Reader_etal_2011_Data,Extractive_foraging_reduced,whole-organis
 Reader_etal_2011,Reader_etal_2011_Data,Innovation_2002,whole-organism behaviour,whole-organism behaviour,NA,report_count,count (number),count,secondary,Primates,innovation count from the Reader & Laland 2002 survey
 Reader_etal_2011,Reader_etal_2011_Data,Social_learning_2002,whole-organism behaviour,whole-organism behaviour,NA,report_count,count (number),count,secondary,Primates,social-learning count from the 2002 survey
 Reader_etal_2011,Reader_etal_2011_Data,Tool_use_2002,whole-organism behaviour,whole-organism behaviour,NA,report_count,count (number),count,secondary,Primates,tool-use count from the 2002 survey
+CastilloMorales_etal_2016,CastilloMorales_etal_2016_Table1,species_sci,,,cell_counts,,,info,,Mammals (28 species),"Species name exactly as printed in Table 1 (binomial; Mustela putorius furo is a trinomen as printed, and Canis familiaris is now usually Canis lupus familiaris)"
+CastilloMorales_etal_2016,CastilloMorales_etal_2016_Table1,common_name,,,cell_counts,,,info,,Mammals (28 species),Common name as printed in Table 1
+CastilloMorales_etal_2016,CastilloMorales_etal_2016_Table1,Brain_volume_cm3,Brain,Brain,cell_counts,volume cm3,volume,species value,secondary,Mammals (28 species),Whole-brain volume in cm3 as compiled by the authors from the source named in Source
+CastilloMorales_etal_2016,CastilloMorales_etal_2016_Table1,Neocortex_volume_cm3,Neocortex,Neocortex,cell_counts,volume cm3,volume,species value,secondary,Mammals (28 species),"Neocortex volume in cm3 as compiled by the authors; neocortex = grey + white matter of the cerebral cortex, excluding grey matter of palaeocortical structures (entorhinal cortex, schizocortex, hippocampus, amygdala)"
+CastilloMorales_etal_2016,CastilloMorales_etal_2016_Table1,Source_ref_no,,,cell_counts,,,info,,Mammals (28 species),Reference number of the volume source in the paper's reference list (refs 84-99)
+CastilloMorales_etal_2016,CastilloMorales_etal_2016_Table1,Source,,,cell_counts,,,info,,Mammals (28 species),Evo-M1 folder-style key of the publication the row's volumes were compiled from (full citations in the item README)
+CastilloMorales_etal_2016,CastilloMorales_etal_2016_Table1,Nr,Neocortex,Neocortex,cell_counts,ratio,index,index,secondary,Mammals (28 species),"Neocortex ratio after Dunbar: neocortex volume / (brain volume - neocortex volume), as printed"
+CastilloMorales_etal_2016,CastilloMorales_etal_2016_Table1,Ei,Brain,Brain,cell_counts,size index (allometric),index,index,secondary,Mammals (28 species),Encephalization index as printed: Ei = ln( brain mass / body mass^0.64 ); the slope 0.64 was estimated from brain/body mass data for 493 mammalian species provided by Gonzalez-Lagos et al. 2010 (paper ref 83)
+CastilloMorales_etal_2016,CastilloMorales_etal_2016_Table1,MLSP_years,,,cell_counts,years,years,maximum,secondary,Mammals (28 species),Maximum lifespan in years from the AnAge database (paper ref 100)
+CastilloMorales_etal_2016,CastilloMorales_etal_2016_Table1,Method:observation_level,,,cell_counts,,,,,,One row per species (species-level compiled values)
+CastilloMorales_etal_2016,CastilloMorales_etal_2016_Table1,Method:units,,,cell_counts,,,,,,Volumes are cm3 in the source and are kept in cm3 (multiply by 1000 for the project mm3 standard)
+Beatty_Laughlin_2006,Beatty_Laughlin_2006_Table1,species_sci,,,cell_counts,,,info,,Mus musculus (36 strains),All rows are Mus musculus (laboratory mouse); the strain is given in Strain
+Beatty_Laughlin_2006,Beatty_Laughlin_2006_Table1,Strain,,,cell_counts,,,info,,Mus musculus,Mouse strain: 34 BXD recombinant inbred strains plus the two parental strains C57BL/6J and DBA/2J
+Beatty_Laughlin_2006,Beatty_Laughlin_2006_Table1,N,,,cell_counts,count,count (number),sample size,primary,Mus musculus,Number of animals measured for the strain
+Beatty_Laughlin_2006,Beatty_Laughlin_2006_Table1,Cortical_volume_mm3_in_vivo,Neocortex,Neocortex,cell_counts,volume mm3,volume,strain mean,primary,Mus musculus,"Neocortical (cortical) volume in mm3, in-vivo estimate: histological volumes corrected for shrinkage (x fresh brain weight / fixed total brain volume)"
+Beatty_Laughlin_2006,Beatty_Laughlin_2006_Table1,Noncortical_volume_mm3_in_vivo,Brain (non-cortical),Brain (non-cortical),cell_counts,volume mm3,volume,strain mean,primary,Mus musculus,"Non-cortical brain volume in mm3, in-vivo estimate: total brain volume minus cortical volume; total estimated from fresh brain weight at specific gravity ~1.00 (1 g = 1 cm3)"
+Beatty_Laughlin_2006,Beatty_Laughlin_2006_Table1,Cortical_volume_mm3_regressed,Neocortex,Neocortex,cell_counts,volume mm3 (adjusted),volume,strain mean,derived,Mus musculus,Cortical volume after regression on body/brain size (size-corrected values used for QTL mapping)
+Beatty_Laughlin_2006,Beatty_Laughlin_2006_Table1,Noncortical_volume_mm3_regressed,Brain (non-cortical),Brain (non-cortical),cell_counts,volume mm3 (adjusted),volume,strain mean,derived,Mus musculus,Non-cortical volume after regression (size-corrected values used for QTL mapping)
+Beatty_Laughlin_2006,Beatty_Laughlin_2006_Table1,Method:observation_level,,,cell_counts,,,,,,One row per strain (strain means over N = 3-5 animals)
+Beatty_Laughlin_2006,Beatty_Laughlin_2006_Table1,Method:units,,,cell_counts,,,,,,Volumes are mm3 in the source and are kept in mm3 (the project standard)
+Röhrs__1986,Röhrs__1986_Table1,species_sci,,,cell_counts,,,info,,Mustelidae (20 species),Species name as printed in Table 1
+Röhrs__1986,Röhrs__1986_Table1,Body_mass_g_gross,Body,Body,cell_counts,mass g,mass,mean,primary,Mustelidae,"Gross body weight (Bruttokoerpergewicht, BKG) in g; species mean"
+Röhrs__1986,Röhrs__1986_Table1,Brain_mass_g,Brain,Brain,cell_counts,mass g,mass,mean,primary,Mustelidae,"Brain weight (Hirngewicht, HG) in g; species mean"
+Röhrs__1986,Röhrs__1986_Table1,Cephalisation,Brain,Brain,cell_counts,size index (allometric),index,index,derived,Mustelidae,"Cephalisation index: deviation from the Mustela reference line (log HG on log BKG for M. nivalis, M. putorius, M. vison) set to 100"
+Röhrs__1986,Röhrs__1986_Table1,n,,,cell_counts,count,count (number),sample size,primary,Mustelidae,Number of individuals behind the species mean
+Röhrs__1986,Röhrs__1986_Table1,Method:observation_level,,,cell_counts,,,,,,One row per species (species means)
+Röhrs__1986,Röhrs__1986_Table2,species_sci,,,cell_counts,,,info,,Mustelidae (10 species),Species name as printed in Table 2
+Röhrs__1986,Röhrs__1986_Table2,Brain_volume_mm3_net,Brain,Brain,cell_counts,volume mm3,volume,species-typical value,secondary,Mustelidae,"Species-typical net volume of the whole brain (Hirnvolumen, HV) in mm3"
+Röhrs__1986,Röhrs__1986_Table2,Telencephalon_volume_mm3,Telencephalon,Telencephalon,cell_counts,volume mm3,volume,species-typical value,secondary,Mustelidae,Species-typical net volume of the telencephalon (TEL V) in mm3
+Röhrs__1986,Röhrs__1986_Table2,Neocortex_volume_mm3,Neocortex,Neocortex,cell_counts,volume mm3,volume,species-typical value,secondary,Mustelidae,Species-typical net volume of the neocortex (NEOC V) in mm3
+Röhrs__1986,Röhrs__1986_Table2,Allocortex_plus_striatum_volume_mm3,Allocortex + corpus striatum,Allocortex + corpus striatum,cell_counts,volume mm3,volume,species-typical value,secondary,Mustelidae,Species-typical net volume of allocortex + corpus striatum (ALLO + CSTR V) in mm3
+Röhrs__1986,Röhrs__1986_Table2,Method:observation_level,,,cell_counts,,,,,,One row per species (species-typical values converted to the species type specimen scale)
+Röhrs__1986,Röhrs__1986_Table2,Method:units,,,cell_counts,,,,,,Volumes are mm3 net in the source and are kept in mm3 (the project standard)
+Kruska__1980,Kruska__1980_Tabelle1,specimen_code,,,cell_counts,,,info,,,"Specimen code as printed (G/A/L camelids; Ss wild pig, Sd domestic pig, A feral pig; W wild rat, E domestic rat)"
+Kruska__1980,Kruska__1980_Tabelle1,species_sci,,,cell_counts,,,info,,,Accepted name of the specimen's form
+Kruska__1980,Kruska__1980_Tabelle1,species_as_printed,,,cell_counts,,,info,,,Name/form as printed in Kruska 1980
+Kruska__1980,Kruska__1980_Tabelle1,Fresh_brain_weight_g,Brain,Brain,cell_counts,mass g,mass,individual value,primary,"Camelidae (7), Sus scrofa forms (17), Rattus norvegicus forms (16)",Fresh brain weight in g
+Kruska__1980,Kruska__1980_Tabelle1,Fixation_shrinkage_pct,Brain,Brain,cell_counts,shrinkage %,proportion,individual value,primary,"Camelidae, Sus scrofa forms, Rattus norvegicus forms","Shrinkage of the brain through formalin fixation and histological processing, in percent of the fresh volume"
+Kruska__1980,Kruska__1980_Tabelle1,Method:observation_level,,,cell_counts,,,,,,One row per specimen (40 brains)
+Kruska__1980,Kruska__1980_Tabelle2,specimen_code,,,cell_counts,,,info,,Camelidae,"Specimen code as printed (G = guanaco, A = alpaca, L = llama, with the animal's number)"
+Kruska__1980,Kruska__1980_Tabelle2,species_sci,,,cell_counts,,,info,,Camelidae,Accepted name of the specimen's form (alpaca Vicugna pacos; llama Lama glama; guanaco Lama guanicoe)
+Kruska__1980,Kruska__1980_Tabelle2,species_as_printed,,,cell_counts,,,info,,Camelidae,Name/form as printed in Kruska 1980
+Kruska__1980,Kruska__1980_Tabelle2,Brain_mass_g_fresh,Brain,Brain,cell_counts,mass g,mass,individual value,primary,Camelidae (7 specimens),Fresh brain weight in g (Hirngewicht)
+Kruska__1980,Kruska__1980_Tabelle2,Brain_volume_mm3_fresh,Brain,Brain,cell_counts,volume mm3,volume,individual value,primary,Camelidae (7 specimens),"Whole-brain volume in mm3, fresh state (Hirnvolumen): fresh brain weight / specific gravity of brain substance 1.035"
+Kruska__1980,Kruska__1980_Tabelle2,Pure_brain_substance_mm3,Brain,Brain,cell_counts,volume mm3,volume,individual value,primary,Camelidae,Volume of pure brain substance (Reine Hirnsubstanz) in mm3 -- brain volume net of meninges/ventricular spaces as delimited in the sections; the reference volume for the paper's relative-share tables
+Kruska__1980,Kruska__1980_Tabelle2,Telencephalon_mm3,Telencephalon,Telencephalon,cell_counts,volume mm3,volume,individual value,primary,Camelidae,"Telencephalon volume in mm3 (fresh, shrinkage-corrected)"
+Kruska__1980,Kruska__1980_Tabelle2,Diencephalon_mm3,Diencephalon,Diencephalon,cell_counts,volume mm3,volume,individual value,primary,Camelidae,"Diencephalon volume in mm3 (fresh, shrinkage-corrected)"
+Kruska__1980,Kruska__1980_Tabelle2,Mesencephalon_mm3,Mesencephalon,Mesencephalon,cell_counts,volume mm3,volume,individual value,primary,Camelidae,"Mesencephalon volume in mm3 (fresh, shrinkage-corrected)"
+Kruska__1980,Kruska__1980_Tabelle2,Cerebellum_mm3,Cerebellum,Cerebellum,cell_counts,volume mm3,volume,individual value,primary,Camelidae,"Cerebellum volume in mm3 (fresh, shrinkage-corrected)"
+Kruska__1980,Kruska__1980_Tabelle2,Medulla_oblongata_mm3,Medulla oblongata,Medulla oblongata,cell_counts,volume mm3,volume,individual value,primary,Camelidae,"Medulla oblongata volume in mm3 (fresh, shrinkage-corrected)"
+Kruska__1980,Kruska__1980_Tabelle2,Neocortex_mm3,Neocortex,Neocortex,cell_counts,volume mm3,volume,individual value,primary,Camelidae,"Neocortex volume in mm3 (fresh, shrinkage-corrected); grey + white matter"
+Kruska__1980,Kruska__1980_Tabelle2,Neocortex_grey_mm3,Neocortex (grey),Neocortex (grey),cell_counts,volume mm3,volume,individual value,primary,Camelidae,Neocortex grey matter volume in mm3 (Neocortex grau)
+Kruska__1980,Kruska__1980_Tabelle2,Neocortex_white_mm3,Neocortex (white),Neocortex (white),cell_counts,volume mm3,volume,individual value,primary,Camelidae,Neocortex white matter volume in mm3 (Neocortex weiss)
+Kruska__1980,Kruska__1980_Tabelle2,Corpus_striatum_mm3,Corpus striatum,Corpus striatum,cell_counts,volume mm3,volume,individual value,primary,Camelidae,"Corpus striatum volume in mm3 (fresh, shrinkage-corrected)"
+Kruska__1980,Kruska__1980_Tabelle2,Allocortex_mm3,Allocortex,Allocortex,cell_counts,volume mm3,volume,individual value,primary,Camelidae,"Allocortex volume in mm3 (fresh, shrinkage-corrected)"
+Kruska__1980,Kruska__1980_Tabelle2,Method:observation_level,,,cell_counts,,,,,,"One row per specimen (7 camelid brains: 3 guanaco, 2 alpaca, 2 llama)"
+Kruska__1980,Kruska__1980_Tabelle2,Method:units,,,cell_counts,,,,,,Volumes are mm3 in the source and are kept in mm3 (the project standard); masses in g
+GonzalezVoyer_etal_2016,GonzalezVoyer_etal_2016_BrainData,species_sci,,,cell_counts,,,info,,Mammals (596 species),"Accepted binomial used by the project, derived from the printed name (underscores replaced by spaces); no synonym harmonisation applied"
+GonzalezVoyer_etal_2016,GonzalezVoyer_etal_2016_BrainData,Species_name,,,cell_counts,,,info,,Mammals (596 species),Species name exactly as printed in the Dryad file (underscores)
+GonzalezVoyer_etal_2016,GonzalezVoyer_etal_2016_BrainData,Taxonomic_order,,,cell_counts,,,info,,Mammals,Order as printed
+GonzalezVoyer_etal_2016,GonzalezVoyer_etal_2016_BrainData,Taxonomic_family,,,cell_counts,,,info,,Mammals,Family as printed
+GonzalezVoyer_etal_2016,GonzalezVoyer_etal_2016_BrainData,Taxonomic_genus,,,cell_counts,,,info,,Mammals,Genus as printed
+GonzalezVoyer_etal_2016,GonzalezVoyer_etal_2016_BrainData,Brain_mass_g,Brain,Brain,cell_counts,mass g,mass,mean,secondary,Mammals (596 species),"Species mean adult brain mass in grams, compiled from the literature sources named per row in References; where several estimates existed the authors averaged them (arithmetic mean of the available measures of central tendency)"
+GonzalezVoyer_etal_2016,GonzalezVoyer_etal_2016_BrainData,Adult_body_mass_g,Body,Body,cell_counts,mass g,mass,mean,secondary,Mammals (596 species),"Species mean adult body mass in grams, compiled as for Brain_mass_g"
+GonzalezVoyer_etal_2016,GonzalezVoyer_etal_2016_BrainData,Gestation_day,,,cell_counts,days,days,mean,secondary,Mammals (585 species),Mean gestation length in days
+GonzalezVoyer_etal_2016,GonzalezVoyer_etal_2016_BrainData,Litter_size_ind,,,cell_counts,count,count (number),mean,secondary,Mammals (596 species),Mean litter size (offspring per litter per female)
+GonzalezVoyer_etal_2016,GonzalezVoyer_etal_2016_BrainData,Weaning_age_day,,,cell_counts,days,days,mean,secondary,Mammals (569 species),Mean weaning age in days
+GonzalezVoyer_etal_2016,GonzalezVoyer_etal_2016_BrainData,Pop_density_ind.km2,,,cell_counts,density,density,median,secondary,Mammals (499 species),Median population density (individuals per km2)
+GonzalezVoyer_etal_2016,GonzalezVoyer_etal_2016_BrainData,IUCN_species_ID,,,cell_counts,,,info,,Mammals,IUCN species identifier
+GonzalezVoyer_etal_2016,GonzalezVoyer_etal_2016_BrainData,Red_List_status,,,cell_counts,,,info,,Mammals,IUCN Red List category (version 2010.4)
+GonzalezVoyer_etal_2016,GonzalezVoyer_etal_2016_BrainData,Red_List_num_status,,,cell_counts,,,info,,Mammals,Numeric coding of the Red List category
+GonzalezVoyer_etal_2016,GonzalezVoyer_etal_2016_BrainData,IUCN_assessement_year,,,cell_counts,,,info,,Mammals,Year of the IUCN assessment (spelling as in the source file)
+GonzalezVoyer_etal_2016,GonzalezVoyer_etal_2016_BrainData,References,,,cell_counts,,,info,,Mammals,"Literature sources consulted for the row's trait values, as printed"
+GonzalezVoyer_etal_2016,GonzalezVoyer_etal_2016_BrainData,Method:observation_level,,,cell_counts,,,,,,One row per species (species means compiled from the literature)
+GonzalezVoyer_etal_2016,GonzalezVoyer_etal_2016_BrainData,Method:units,,,cell_counts,,,,,,Masses are grams in the source and are kept in grams (no conversion; values kept at full printed precision)
+Balcarcel_etal_2022,Balcarcel_etal_2022_SD1,ID,,,cell_counts,,,info,,Artiodactyla,Museum catalogue number of the specimen
+Balcarcel_etal_2022,Balcarcel_etal_2022_SD1,Museum,,,cell_counts,,,info,,Artiodactyla,Museum code of the holding collection
+Balcarcel_etal_2022,Balcarcel_etal_2022_SD1,Museum_full_name,,,cell_counts,,,info,,Artiodactyla,Full name of the holding museum
+Balcarcel_etal_2022,Balcarcel_etal_2022_SD1,Genus,,,cell_counts,,,info,,Artiodactyla,Genus as printed
+Balcarcel_etal_2022,Balcarcel_etal_2022_SD1,species,,,cell_counts,,,info,,Artiodactyla,Species epithet(s) as printed
+Balcarcel_etal_2022,Balcarcel_etal_2022_SD1,species_sci,,,cell_counts,,,info,,Artiodactyla,Printed Genus + species combined
+Balcarcel_etal_2022,Balcarcel_etal_2022_SD1,W_D,,,cell_counts,category,category,,primary,Artiodactyla,Wild or domestic status of the specimen's form
+Balcarcel_etal_2022,Balcarcel_etal_2022_SD1,BCL,braincase,braincase,cell_counts,length,length,individual measurement,primary,Artiodactyla,Braincase length (mm)
+Balcarcel_etal_2022,Balcarcel_etal_2022_SD1,BCW,braincase,braincase,cell_counts,length,length,individual measurement,primary,Artiodactyla,Braincase width (mm)
+Balcarcel_etal_2022,Balcarcel_etal_2022_SD1,BCH,braincase,braincase,cell_counts,length,length,individual measurement,primary,Artiodactyla,Braincase height (mm)
+Balcarcel_etal_2022,Balcarcel_etal_2022_SD1,FM,foramen magnum,foramen magnum,cell_counts,length,length,individual measurement,primary,Artiodactyla,Foramen magnum breadth (mm)
+Balcarcel_etal_2022,Balcarcel_etal_2022_SD1,FL,skull,skull,cell_counts,length,length,individual measurement,primary,Artiodactyla,Full skull length (mm)
+Balcarcel_etal_2022,Balcarcel_etal_2022_SD1,log10_EV,endocranial cavity,endocranial cavity,cell_counts,volume (log10),volume,individual estimate,derived,Artiodactyla,"Log10 of the endocranial volume estimate (EV in cm3, from the braincase dimensions)"

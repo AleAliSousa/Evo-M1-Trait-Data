@@ -75,9 +75,11 @@ level, fossil flag, source column, Measure, Units, value_type, method, role, typ
 measure_class, cross_listed_from). The item's analysis CSV must already exist.
 
 ## Open items
-- Unresolved species labels (46 at build): 13 Baker and 8 Dupont fossil names, 16 Heffner/Iwaniuk historical or
-  genus-level labels (including rows with a blank species), 6 Wimberly and 1 Medina-González (`Panthera leo × tigris`).
-  These are pre-existing in the source items except the fossils; resolve via the lookup ladder in `AGENTS.md`.
+- Unresolved species labels (29 at build): 13 Baker and 8 Dupont fossil names, 1 Heffner 1975 bat
+  (`Horpyiocepalus leucogostra`, genuinely ambiguous between Murina leucogaster and a Harpiocephalus species;
+  see `Heffner_Masterton_1975/reference_tables/..._taxon_resolution.csv`), 6 Wimberly and 1 Medina-González
+  (`Panthera leo × tigris`). The other Heffner/Iwaniuk historical names were resolved 2026-11-19 from MDD v2.5
+  (synonyms/spelling), subspecies assigned to species, and genus-only labels kept as `Genus sp.`.
 - **Registered (2026-11-19)** in `__ShinyApp/app.R` (`GH$postcranial`, Dataset label "Postcranial & limb function"),
   the dataset-name maps in `_keys/build_trait_authority.R` and `_checks/check_trait_authority.R`, the provenance
   map in `_keys/build_population_status.py`, `_keys/variable_domain.csv` (22 new labels; 5 reused existing rows)

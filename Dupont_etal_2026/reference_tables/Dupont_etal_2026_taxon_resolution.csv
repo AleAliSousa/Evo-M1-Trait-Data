@@ -24,7 +24,7 @@ S3,Petaurista alborufus,MDD,resolved,Petaurista alborufus,Rodentia,Sciuridae,acc
 S3,Phloeomys cumingi,MDD,resolved,Phloeomys cumingi,Rodentia,Muridae,accepted,accepted species in MDD v2.5 (release 2026-07-28)
 S3,Ratufa indica,MDD,resolved,Ratufa indica,Rodentia,Sciuridae,accepted,accepted species in MDD v2.5 (release 2026-07-28)
 S3,Tupaia gracilis,MDD,resolved,Tupaia gracilis,Scandentia,Tupaiidae,accepted,accepted species in MDD v2.5 (release 2026-07-28)
-S3,Propithecus coronatus (deckenii),MDD,resolved,Propithecus coronatus,Primates,Indriidae,accepted + parenthetical,printed epithet in parentheses (deckenii); accepted species Propithecus coronatus in MDD v2.5 (release 2026-07-28)
+S3,Propithecus coronatus (deckenii),NCBI/MDD,resolved,Propithecus deckenii,Primates,Indriidae,conflict,"Kept consistent with Melchionna 2020, Grabowski 2023 and the authors' tree label: NCBI lists coronatus only as Propithecus deckenii coronatus. MDD v2.5 accepts both as separate species, so this lumps them; flagged for review."
 S3,Phataginus tetradactyla,MDD,resolved,Phataginus tetradactylus,Pholidota,Manidae,synonym,orthographic variant (gender ending); MDD v2.5 (release 2026-07-28) lists P. tetradactylus
 S3,Tamiops macclellandii,MDD,resolved,Tamiops mcclellandii,Rodentia,Sciuridae,synonym,MDD v2.5 (release 2026-07-28) lists macclellandii as incorrect subsequent spelling of mcclellandii
 S3,Cebus flavus,MDD,resolved,Sapajus flavius,Primates,Cebidae,synonym,MDD v2.5 (release 2026-07-28) lists Cebus flavius (flavus = incorrect subsequent spelling) under Sapajus flavius; GBIF fuzzy match agrees

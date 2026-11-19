@@ -30,14 +30,15 @@ Paper-scoped rows for all 205 printed names are in `_keys/General/species_key.cs
 2026-10-22 for six names). The authors' `Species used in phylogenetic tree` column is a tree proxy and is
 never used as identity. No NCBI taxid was assigned to the new rows.
 
-- **Accepted in MDD, kept verbatim (20):** e.g. Paradoxurus philippinensis, Urva auropunctata, Smutsia
+- **Accepted in MDD, kept verbatim (19):** e.g. Paradoxurus philippinensis, Urva auropunctata, Smutsia
   gigantea, Petaurista spp., Ratufa indica.
 - **Synonym / spelling (12):** six from the NCBI snapshot (Macaca irus -> Macaca fascicularis, Xerus
   erythropus -> Euxerus erythropus, ...) and six from MDD (Phataginus tetradactyla, Tamiops macclellandii,
   Cebus flavus -> Sapajus flavius, Pithecia satana -> Chiropotes satanas, Micoureus regina -> Marmosa
   isthmica, Aotus felinus -> Aotus trivirgatus).
-- **Subspecies assigned to species (4, `subspecies_assign`):** Martes melampus tsuensis, Galeopterus variegatus
-  peninsulae, Ateles fusciceps robustus, Piliocolobus badius temminckii. The subspecies is not kept in the
+- **Subspecies assigned to species (5, `subspecies_assign`):** Martes melampus tsuensis, Galeopterus variegatus
+  peninsulae, Ateles fusciceps robustus, Piliocolobus badius temminckii, and `Propithecus coronatus (deckenii)` ->
+  Propithecus deckenii (project convention; MDD v2.5 keeps the two as separate species, so review). The subspecies is not kept in the
   species value; keep `Species` if a subspecies analysis is needed.
 - **Genus-only labels (6, `unspecified_in_source`):** Manis sp., Pithecia sp., Dasyprocta sp., Echimys sp.,
   Pteromys sp., Tupaia sp. They are not assigned to the authors' proxy species.

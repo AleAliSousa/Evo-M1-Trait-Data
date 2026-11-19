@@ -2491,7 +2491,7 @@ server <- function(input, output, session) {
 
   output$r_download <- downloadHandler(
     filename = function() sprintf("evom1_regression_%s_%s.csv", input$r_method, Sys.Date()),
-    content  = function(file) write.csv(r_export(), file, row.names = FALSE)
+    content  = function(file) readr::write_excel_csv(r_export(), file)
   )
 
   # ---- Glossary: abbreviations

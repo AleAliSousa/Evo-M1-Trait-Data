@@ -168,10 +168,16 @@ with open(os.path.join(KEYS, "team_grouping_crosswalk.csv"), newline="", encodin
     for row in rd:
         if len(row) < 2 or not row[1].strip():
             continue
-        m = re.search(r"([A-Za-z]+).*?((?:19|20)[0-9]{2})", row[0])
+        m = re.search(r"([^\W\d_]+).*?((?:19|20)[0-9]{2})", row[0])
         if m:
-            team_ay[(m.group(1).lower(), m.group(2))] = row[1].strip()
+            team_ay[(unicodedata.normalize("NFC", m.group(1).lower()), m.group(2))] = row[1].strip()
 
+# Author-year keys below extract the author with [^\W\d_]+ (Unicode letters),
+# not [A-Za-z]+: an ASCII-only class truncates names like "Röhrs" to "R", the
+# key then never matches the manifest's author, and the paper silently falls
+# back to role "secondary" (and to its bare author name as team). Keys are
+# NFC-normalised on both sides because the catalog and the manifest do not
+# always store accented names in the same Unicode normalisation.
 role_ay, cat_rows = {}, read_csv_rows(os.path.join(KEYS, "variable_catalog.csv"))
 for r in cat_rows:
     if r["measure_class"] != "mass":
@@ -179,9 +185,9 @@ for r in cat_rows:
     t = (r["Code"] + " " + r["Definition"]).lower()
     if "brain" not in t or "body" in t:
         continue
-    m = re.search(r"([A-Za-z]+).*?((?:19|20)[0-9]{2})", r["paper"])
+    m = re.search(r"([^\W\d_]+).*?((?:19|20)[0-9]{2})", r["paper"])
     if m:
-        role_ay.setdefault((m.group(1).lower(), m.group(2)), r["role"])
+        role_ay.setdefault((unicodedata.normalize("NFC", m.group(1).lower()), m.group(2)), r["role"])
 
 ref = [r["accepted_name"] for r in read_csv_rows(os.path.join(KEYS, "species_reference.csv"))]
 ref_l = {a.lower(): a for a in ref if a}
@@ -319,7 +325,7 @@ else:
     uf = []
     for t in targets:
         unit = named_unit(t["col"]) or ("mg" if gmax[(t["author"].lower(), n(t["col"]))] > 20000 else "g")
-        ay = (t["author"].lower(), t["year"])
+        ay = (unicodedata.normalize("NFC", t["author"].lower()), t["year"])
         team = team_ay.get(ay) or (t["author"] if t["author"] else t["fn"])
         role = role_ay.get(ay, "secondary")
         folder = folder_of(t["author"], t["year"], t["col"])

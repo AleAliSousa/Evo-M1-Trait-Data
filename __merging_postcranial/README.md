@@ -27,22 +27,40 @@ must already exist (see the build-dataset-item workflow). Species names resolve 
 `_keys/resolve_species.R` with `source_publication` = the paper folder.
 
 ## Currently ingested
-| Item | Level | Measures |
-|---|---|---|
-| Dupont_etal_2026_TableS3 | species, extant | phalangeal index: forefoot digit I and III+IV, hindfoot digit I and III+IV |
-| Dupont_etal_2026_TableS2 | specimen, fossil | the same four indices |
-| Granatosky__2018_TableS1 | species, extant | intermembral index |
+| Item | Level | Role | Measures |
+|---|---|---|---|
+| Dupont_etal_2026_TableS3 | species, extant | primary | phalangeal index: forefoot digit I and III+IV, hindfoot digit I and III+IV |
+| Dupont_etal_2026_TableS2 | specimen, fossil | primary | the same four indices |
+| Granatosky__2018_TableS1 | species, extant | primary | intermembral index |
+| Wimberly_etal_2021_MammalGait | species, extant | secondary | hindlimb length (mm) |
+| Liu_etal_2016_TableS1 | specimen, extant primates | secondary | 7 hand-segment proportions; modelled workspace (WS) and global manipulation index (GMI) |
+| Baker_etal_2025_SupplementaryData1 | mixed | secondary | 19 hand-bone lengths (log10 mm, as printed) |
 
-Not ingested from Dupont: `Time_Arboreal_pct` and the `TimeArbo_*` model inferences (ecology, not anatomy),
-body mass (stays in body_ecology).
+How the mixed and fossil handling works:
+- **Baker** rows whose `Individuals` is `taxon-level` pool at species level; rows with specimen IDs stay in the
+  specimen table. Baker is a secondary compilation of other papers' measurements, so it is `secondary`; the
+  `*` Lemelin restricted values are NA.
+- **Fossils** are listed in `postcranial_fossil_taxa.csv` (item + printed name). Baker's 32 fossil/extinct taxa
+  are routed to the specimen table with `fossil = TRUE`. This list is curator judgement from the taxon names and
+  Baker's specimen IDs, not a database check; confirm against the Paleobiology Database.
+- **Overlap warning.** Liu 2016 and Baker both descend from Feix et al. 2015 (Liu proportions, Liu WS/GMI,
+  Baker `peak_workspace`), and Baker's bone lengths come from primary sources not yet in the repo. Both are
+  therefore `secondary`; do not treat them as independent replicates of each other. Values of different
+  `method` are never pooled.
 
-## Candidates to add (not yet built into this merge; confirm each is postcranial and has a built item)
-Wimberly 2021 (hindlimb length, foot posture, gait), Liu 2016 (hand-bone lengths), Frost 2000 (digits,
-hindlimb/trunk), Püschel 2026 and Caspar 2022 (humeral indices), MedinaGonzález 2026 (joint angles), Baker and
-Boyer-Harrington (hand and thumb size). Most need their column names and units checked against their
-definitions files first.
+Deliberately not ingested:
+- Dupont `Time_Arboreal_pct` / `TimeArbo_*` (ecology, model inference) and body mass (stay in body_ecology).
+- Baker `peak_workspace`, `relative_size`, `real_size` (not verified as postcranial anatomy; `peak_workspace`
+  shares Feix 2015 with Liu).
+- Wimberly `Foot_Posture`, MedinaGonzález `Posture` (categorical; the merge is numeric only).
+- MedinaGonzález 2026 joint angles (limb kinematics, locomotion not anatomy).
+- Frost 2000 (somatosensory cortical areas), Caspar 2022 and Püschel 2026 (handedness), Boyer-Harrington
+  2018/2019 (cranial vascular canals). An earlier draft of this README listed these as postcranial candidates;
+  that was wrong.
 
 ## Open items
 - No `__ShinyApp` / variable-catalog registration yet (`_keys/variable_domain.csv` has no postcranial domain).
 - Not yet in the species-audit regression tooling (its merge list is hard-coded).
-- 8 Dupont fossil names are still `species_basis = unresolved` pending a Paleobiology Database or source check.
+- Unresolved fossil names: 8 from Dupont and 13 from Baker (`species_basis = unresolved`) pending a Paleobiology
+  Database or source check. Wimberly also has 6 extant names that do not resolve (pre-existing, in that item).
+- Categorical postcranial traits (foot posture) need a separate categorical table.

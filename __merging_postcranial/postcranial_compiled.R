@@ -12,7 +12,11 @@
 #   * methods stay separate: values pool only when (species, Measure, Units, method) are identical;
 #   * raw lengths and derived indices are both kept, labelled by `value_type`
 #     (raw | derived | model_inference).
-# Only primary-role rows are pooled; secondary-role rows are kept with primary_used = FALSE.
+# Only primary-role rows set the pooled Value; where a species has only secondary rows the pooled Value comes from
+# them with primary_used = FALSE.
+# `postcranial_fossil_taxa.csv` lists extinct taxa per source item (printed names): they are routed to the
+# specimen table with fossil = TRUE. A source with level = "mixed" pools rows whose id column is "taxon-level" at
+# species level and keeps rows with specimen IDs at specimen level.
 
 suppressWarnings(suppressMessages(library(tidyverse)))
 .sp <- local({
@@ -25,7 +29,9 @@ root <- normalizePath(file.path(merge_dir, ".."))
 source(file.path(root, "_keys", "resolve_species.R"))
 
 src <- read.csv(file.path(merge_dir, "postcranial_sources.csv"), stringsAsFactors = FALSE, check.names = FALSE)
-stopifnot(all(src$level %in% c("species", "specimen")), all(src$value_type %in% c("raw", "derived", "model_inference")))
+stopifnot(all(src$level %in% c("species", "specimen", "mixed")), all(src$value_type %in% c("raw", "derived", "model_inference")))
+fossil_taxa <- read.csv(file.path(merge_dir, "postcranial_fossil_taxa.csv"), stringsAsFactors = FALSE)
+squish <- function(x) trimws(gsub("[[:space:]]+", " ", x))
 fmt <- function(v) format(v, scientific = FALSE, trim = TRUE, digits = 12)
 
 rows <- list()
@@ -39,13 +45,20 @@ for (i in seq_len(nrow(src))) {
   v <- suppressWarnings(as.numeric(d[[s$source_col]])); keep <- !is.na(v)
   printed <- as.character(d[[s$species_col]])[keep]
   rs <- resolve_species(printed, source_publication = s$folder)
+  sid <- if (nzchar(s$specimen_col)) as.character(d[[s$specimen_col]])[keep] else rep(NA_character_, sum(keep))
+  pn <- squish(printed)
+  is_fossil <- pn %in% squish(fossil_taxa$species_printed[fossil_taxa$item == s$item]) | as.logical(s$fossil)
+  # level: 'mixed' sources pool at species level only for rows whose id column says taxon-level
+  lvl <- if (s$level == "mixed") ifelse(is.na(sid) | sid == "" | sid == "taxon-level", "species", "specimen") else rep(s$level, sum(keep))
+  lvl[is_fossil] <- "specimen"               # fossils never enter the extant species pool
+  sid[!is.na(sid) & sid == "taxon-level"] <- NA_character_
   rows[[i]] <- tibble(
-    species_printed = trimws(gsub("[[:space:]]+", " ", printed)),
+    species_printed = pn,
     accepted_name = rs$accepted_name, species_basis = rs$species_basis, reidentified = rs$reidentified,
-    specimen_id = if (nzchar(s$specimen_col)) as.character(d[[s$specimen_col]])[keep] else NA_character_,
+    specimen_id = sid,
     measure_class = "postcranial", Measure = s$Measure, Units = s$Units, value = v[keep],
-    value_type = s$value_type, method = s$method, fossil = as.logical(s$fossil),
-    level = s$level, Teams = s$item, roles = s$role)
+    value_type = s$value_type, method = s$method, fossil = is_fossil,
+    level = lvl, Teams = s$item, roles = s$role)
 }
 all_rows <- bind_rows(rows) |> mutate(Species = accepted_name)
 

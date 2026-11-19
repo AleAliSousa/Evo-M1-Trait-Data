@@ -138,7 +138,32 @@ papers <- tribble(
   # state neither. Mapping one side to a both-sides term is a silent 2x error, so it waits.
   "Baron_etal_1996_Table8",               "Baron_Chiroptera",   1996,
   "Baron_etal_1996_Table10",              "Baron_Chiroptera",   1996,
-  "Baron_etal_1996_Table32",              "Baron_Chiroptera",   1996
+  "Baron_etal_1996_Table32",              "Baron_Chiroptera",   1996,
+  # --- 2026-11-18 intake: five tables wired so their primary data reach the app.
+  # Each is an independent series (own specimens, own lab), so each is its own
+  # Tier-2 team and cross-team averaging applies -- none of these values is a
+  # reprint of a table already in the merge.
+  # Kruska 1980 Tabelle 2: per-specimen planimetric volumes (7 camelid specimens,
+  # shrinkage-corrected back to fresh volumes), mm3 as printed; per-specimen rows
+  # collapse to species means in step 6. Tabelle 1 (fresh brain weights) enters
+  # through the brain-mass merge, not here.
+  "Kruska__1980_Tabelle2",                "Kruska",             1980,
+  # Roehrs 1986 Table 2: species-typical net volumes for 10 mustelids, after
+  # Schumacher (1963) and Thiede (1973) as converted by Roehrs; mm3 as printed.
+  # This is the table Castillo-Morales et al. 2016 took the ferret row from.
+  "Röhrs__1986_Table2",                   "Röhrs",              1986,
+  # Beatty & Laughlin 2006 Table 1: in-vivo cortical volumes of 36 inbred mouse
+  # strains; the reshape below keeps the C57BL/6J reference strain only (see
+  # there), so this contributes Mus musculus.
+  "Beatty_Laughlin_2006_Table1",          "Beatty",             2006,
+  # Hakeem et al. 2005 Table 2: structure-rows for a single African elephant,
+  # cm3; the reshape below pivots it and derives the neocortex and cerebellum
+  # totals from their printed parts.
+  "Hakeem_etal_2005_Table2",              "Hakeem",             2005,
+  # Tschudin 1998 (PhD thesis) Table 2.5: per-specimen cetacean volumes, cm3 ->
+  # mm3 in the reshape below; 44 specimens, 8 species. This is the table
+  # Castillo-Morales et al. 2016 took the dolphin row from.
+  "Tschudin__1998_Table2.5",              "Tschudin",           1998
 )
 expanded_only_items <- c(
   "Sherwood_etal_2004_TABLEI", "Barks_etal_2014_TABLE1", "Barks_etal_2014_Fig4A",
@@ -367,6 +392,22 @@ paper_long <- function(row) {
   }
   if (it == "Kverkova_etal_2018_TableS1")                         # source brain mass is g; canonical merge stores mg
     df <- df %>% mutate(`Brain_Mass.g` = num(`Brain_Mass.g`) * 1000)
+  if (it == "Beatty_Laughlin_2006_Table1")               # 36 inbred strains of Mus musculus (34 BXD recombinant inbred lines + the C57BL/6J and DBA/2J parentals). The panel's variation IS the paper's subject, so a cross-strain mean is not a species value: keep the C57BL/6J reference strain only -- the strain Castillo-Morales et al. 2016 used for their mouse row (their 0.12 cm3 = this strain's 115.59 mm3). Only the in-vivo cortical column is term-mapped; the regressed columns are the authors' derived values and stay out.
+    df <- df %>% filter(Strain == "C57BL/6J")
+  if (it == "Tschudin__1998_Table2.5")                   # per-specimen cetacean volumes, cm3 -> mm3 (per-specimen rows collapse to species means in step 6). neocortex_ratio is the thesis's derived index and is not term-mapped.
+    df <- df %>% mutate(across(ends_with("_cm3"), ~num(.x)*1000))
+  if (it == "Hakeem_etal_2005_Table2") {                 # structure-rows for ONE African elephant, cm3 -> mm3. The table prints parts only, so the two whole-structure totals the merge carries are derived here from their printed parts (the Bush_Allman_2004_a GM+WM precedent): Neocortex = neocortical gray + white; Cerebellum = cerebellar gray + white + other cerebellar structures. "Other cerebellar structures" has no standardized term and enters only through the cerebellum total.
+    z <- df %>% transmute(Species = "Loxodonta africana",
+                          Variable = tmap$Standardized_Term[match(Structure, tmap$Original_Term)],
+                          Value = num(Volume_cm3) * 1000) %>% filter(!is.na(Variable))
+    .part <- function(v) sum(z$Value[z$Variable == v])
+    .other_cbl <- num(df$Volume_cm3[match("Other cerebellar structures", df$Structure)]) * 1000
+    z <- bind_rows(z, tibble(Species = "Loxodonta africana",
+                             Variable = c("Neocortex_Vol.mm3", "Cerebellum_Vol.mm3"),
+                             Value = c(.part("Neocortex_grey_matter_Vol.mm3") + .part("Neocortex_white_matter_Vol.mm3"),
+                                       .part("Cerebellum_grey_matter_Vol.mm3") + .part("Cerebellum_white_matter_Vol.mm3") + .other_cbl)))
+    return(z %>% mutate(Source = it, Team = row$team, Year = row$year))
+  }
   if (it == "Stephan_etal_1987_Table1")                          # NTO printed "0" = "not determinable with certainty" (data dictionary), not a true zero -> NA
     df <- df %>% mutate(Nucleus_tractus_olfactorius_mm3 =
             ifelse(num(Nucleus_tractus_olfactorius_mm3) == 0, NA_real_, num(Nucleus_tractus_olfactorius_mm3)))

@@ -2350,6 +2350,12 @@ Colobus angolensis,Granular_insular_cortex_left_Vol.mm3,Bauernfeind_etal_2013_Ta
 Colobus angolensis,Insula_Vol.mm3,Bauernfeind_etal_2013_Table1,Bauernfeind et al. (2013) Table 1,10.1016/j.jhevol.2012.12.003,NA,NA,NA,444,NA,"derived both-hemisphere value (step 7: left+right, or 2x a one-side measurement); cite this source for the one-side figure",NA,Zilles,1,1,2013
 Colobus angolensis,Insula_left_Vol.mm3,Bauernfeind_etal_2013_Table1,Bauernfeind et al. (2013) Table 1,10.1016/j.jhevol.2012.12.003,Zilles,2013,222,222,0,sole source,1,Zilles,1,1,2013
 Colobus angolensis,Total_brain_net_volume_Vol.mm3,Bauernfeind_etal_2013_Table1,Bauernfeind et al. (2013) Table 1,10.1016/j.jhevol.2012.12.003,Zilles,2013,71815,71815,0,sole source,1,Zilles,1,1,2013
+Conepatus chinga,Neocortex_Vol.mm3,Röhrs__1986_Table2,Röhrs (1986) Table 2,10.1111/j.1439-0469.1986.tb00624.x,Röhrs,1986,9228,9228,0,sole source,1,Röhrs,1,1,1986
+Conepatus chinga,Telencephalon_Vol.mm3,Röhrs__1986_Table2,Röhrs (1986) Table 2,10.1111/j.1439-0469.1986.tb00624.x,Röhrs,1986,13153,13153,0,sole source,1,Röhrs,1,1,1986
+Conepatus chinga,Total_brain_net_volume_Vol.mm3,Röhrs__1986_Table2,Röhrs (1986) Table 2,10.1111/j.1439-0469.1986.tb00624.x,Röhrs,1986,17822,17822,0,sole source,1,Röhrs,1,1,1986
+Conepatus humboldti,Neocortex_Vol.mm3,Röhrs__1986_Table2,Röhrs (1986) Table 2,10.1111/j.1439-0469.1986.tb00624.x,Röhrs,1986,5735.9,5735.9,0,sole source,1,Röhrs,1,1,1986
+Conepatus humboldti,Telencephalon_Vol.mm3,Röhrs__1986_Table2,Röhrs (1986) Table 2,10.1111/j.1439-0469.1986.tb00624.x,Röhrs,1986,8446.1,8446.1,0,sole source,1,Röhrs,1,1,1986
+Conepatus humboldti,Total_brain_net_volume_Vol.mm3,Röhrs__1986_Table2,Röhrs (1986) Table 2,10.1111/j.1439-0469.1986.tb00624.x,Röhrs,1986,11682,11682,0,sole source,1,Röhrs,1,1,1986
 Cormura brevirostris,Amygdala_Vol.mm3,Baron_etal_1996_Table32,Baron et al. (1996) Table 32,ISBN:9783764353704,Baron_Chiroptera,1996,12.9,12.9,0,sole source,1,Baron_Chiroptera,1,1,1996
 Cormura brevirostris,Bulbus_olfactorius_Vol.mm3,Baron_etal_1996_Table32,Baron et al. (1996) Table 32,ISBN:9783764353704,Baron_Chiroptera,1996,2.28,2.28,0,sole source,1,Baron_Chiroptera,1,1,1996
 Cormura brevirostris,Cerebellum_Vol.mm3,Baron_etal_1996_Table10,Baron et al. (1996) Table 10,ISBN:9783764353704,Baron_Chiroptera,1996,38.9,38.9,0,sole source,1,Baron_Chiroptera,1,1,1996
@@ -2940,6 +2946,9 @@ Daubentonia madagascariensis,Trigeminal_motor_nucleus_left_Vol.mm3,Sherwood_etal
 Daubentonia madagascariensis,Tuberculum_olfactorium_Vol.mm3,Baron_etal_1987_Table1,Baron et al. (1987) Table 1,PMID:3116076,Stephan_collection,1987,240,240,0,sole source,1,Stephan_collection,1,1,1987
 Daubentonia madagascariensis,Ventral_pons_Vol.mm3,Matano_etal_1985_b_Table1,Matano et al. (1985) Table 1,10.1159/000156211,Stephan_collection,1985,304.8,304.8,0,sole source,1,Stephan_collection,1,1,1985
 Daubentonia madagascariensis,Ventricles_Vol.mm3,Stephan_etal_1981_TableII,Stephan et al. (1981) Table II,10.1159/000155963,Stephan_collection,1981,392,392,0,sole source,1,Stephan_collection,1,1,1981
+Delphinus delphis,Cerebellum_Vol.mm3,Tschudin__1998_Table2.5,Tschudin (1998) Table 2.5,CorpusID:142614626,Tschudin,1998,170796.25,170796.25,0,sole source,16,Tschudin,1,1,1998
+Delphinus delphis,Neocortex_Vol.mm3,Tschudin__1998_Table2.5,Tschudin (1998) Table 2.5,CorpusID:142614626,Tschudin,1998,759802.5,759802.5,0,sole source,16,Tschudin,1,1,1998
+Delphinus delphis,Total_brain_net_volume_Vol.mm3,Tschudin__1998_Table2.5,Tschudin (1998) Table 2.5,CorpusID:142614626,Tschudin,1998,957871.25,957871.25,0,sole source,16,Tschudin,1,1,1998
 Dendrolagus goodfellowi,CerebellarCortex_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,3966,3966,0,sole source,1,Ashwell,1,1,2020
 Dendrolagus goodfellowi,CerebellarHemisphere_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,1832,1832,0,sole source,1,Ashwell,1,1,2020
 Dendrolagus goodfellowi,CerebellarVermis_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,1833,1833,0,sole source,1,Ashwell,1,1,2020
@@ -3247,6 +3256,9 @@ Eidolon helvum,Striatum_Vol.mm3,Baron_etal_1996_Table32,Baron et al. (1996) Tabl
 Eidolon helvum,Telencephalon_Vol.mm3,Baron_etal_1996_Table10,Baron et al. (1996) Table 10,ISBN:9783764353704,Baron_Chiroptera,1996,2714,2714,0,sole source,1,Baron_Chiroptera,1,1,1996
 Eidolon helvum,Total_brain_net_volume_Vol.mm3,Baron_etal_1996_Table8,Baron et al. (1996) Table 8,ISBN:9783764353704,Baron_Chiroptera,1996,4018.6,4018.6,0,sole source,1,Baron_Chiroptera,1,1,1996
 Eidolon helvum,Ventricles_Vol.mm3,Baron_etal_1996_Table8,Baron et al. (1996) Table 8,ISBN:9783764353704,Baron_Chiroptera,1996,68.5,68.5,0,sole source,1,Baron_Chiroptera,1,1,1996
+Eira barbara,Neocortex_Vol.mm3,Röhrs__1986_Table2,Röhrs (1986) Table 2,10.1111/j.1439-0469.1986.tb00624.x,Röhrs,1986,29077,29077,0,sole source,1,Röhrs,1,1,1986
+Eira barbara,Telencephalon_Vol.mm3,Röhrs__1986_Table2,Röhrs (1986) Table 2,10.1111/j.1439-0469.1986.tb00624.x,Röhrs,1986,35148,35148,0,sole source,1,Röhrs,1,1,1986
+Eira barbara,Total_brain_net_volume_Vol.mm3,Röhrs__1986_Table2,Röhrs (1986) Table 2,10.1111/j.1439-0469.1986.tb00624.x,Röhrs,1986,45688,45688,0,sole source,1,Röhrs,1,1,1986
 Elephantulus fuscipes,AccessoryOlfactoryBulb_Vol.mm3,Stephan_etal_1982_Table1,Stephan et al. (1982) Table 1,PMID:7161483,Stephan_collection,1982,0.662,0.662,0,sole source,1,Stephan_collection,1,1,1982
 Elephantulus fuscipes,AccessoryOlfactoryBulb_layer_6_Vol.mm3,Stephan_etal_1982_Table1,Stephan et al. (1982) Table 1,PMID:7161483,Stephan_collection,1982,0.179,0.179,0,sole source,1,Stephan_collection,1,1,1982
 Elephantulus fuscipes,AccessoryOlfactoryBulb_layers_1_2_Vol.mm3,Stephan_etal_1982_Table1,Stephan et al. (1982) Table 1,PMID:7161483,Stephan_collection,1982,0.142,0.142,0,sole source,1,Stephan_collection,1,1,1982
@@ -4120,6 +4132,9 @@ Galemys pyrenaicus,Total_brain_net_volume_Vol.mm3,Stephan_etal_1981_TableI,Steph
 Galemys pyrenaicus,Tractus_olfactorius_lateralis_Vol.mm3,Baron_etal_1987_Table1,Baron et al. (1987) Table 1,PMID:3116076,Stephan_collection,1987,1.8,1.8,0,sole source,1,Stephan_collection,1,1,1987
 Galemys pyrenaicus,Tuberculum_olfactorium_Vol.mm3,Baron_etal_1987_Table1,Baron et al. (1987) Table 1,PMID:3116076,Stephan_collection,1987,18.8,18.8,0,sole source,1,Stephan_collection,1,1,1987
 Galemys pyrenaicus,Ventricles_Vol.mm3,Stephan_etal_1981_TableI,Stephan et al. (1981) Table I,10.1159/000155963,Stephan_collection,1981,27.5,27.5,0,sole source,1,Stephan_collection,1,1,1981
+Galictis cuja,Neocortex_Vol.mm3,Röhrs__1986_Table2,Röhrs (1986) Table 2,10.1111/j.1439-0469.1986.tb00624.x,Röhrs,1986,10726,10726,0,sole source,1,Röhrs,1,1,1986
+Galictis cuja,Telencephalon_Vol.mm3,Röhrs__1986_Table2,Röhrs (1986) Table 2,10.1111/j.1439-0469.1986.tb00624.x,Röhrs,1986,13518,13518,0,sole source,1,Röhrs,1,1,1986
+Galictis cuja,Total_brain_net_volume_Vol.mm3,Röhrs__1986_Table2,Röhrs (1986) Table 2,10.1111/j.1439-0469.1986.tb00624.x,Röhrs,1986,17944,17944,0,sole source,1,Röhrs,1,1,1986
 Galictis vittatus,CerebellarCortex_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,1007,1007,0,sole source,1,Ashwell,1,1,2020
 Galictis vittatus,CerebellarHemisphere_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,404,404,0,sole source,1,Ashwell,1,1,2020
 Galictis vittatus,CerebellarVermis_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,470,470,0,sole source,1,Ashwell,1,1,2020
@@ -4379,6 +4394,9 @@ Gorilla sp.,Ventricles_Vol.mm3,Stephan_etal_1981_TableIII,Stephan et al. (1981) 
 Gorilla sp.,fronto_insular_cortex_Vol.mm3,Bauernfeind_etal_2013_Table1,Bauernfeind et al. (2013) Table 1,10.1016/j.jhevol.2012.12.003,NA,NA,NA,335.5,NA,"derived both-hemisphere value (step 7: left+right, or 2x a one-side measurement); cite this source for the one-side figure",NA,Zilles,1,1,2013
 Gorilla sp.,fronto_insular_cortex_left_Vol.mm3,Bauernfeind_etal_2013_Table1,Bauernfeind et al. (2013) Table 1,10.1016/j.jhevol.2012.12.003,Zilles,2013,232,232,0,sole source,1,Zilles,1,1,2013
 Gorilla sp.,fronto_insular_cortex_right_Vol.mm3,Bauernfeind_etal_2013_Table2,Bauernfeind et al. (2013) Table 2,10.1016/j.jhevol.2012.12.003,Zilles,2013,103.5,103.5,0,sole source,1,Zilles,1,1,2013
+Grampus griseus,Cerebellum_Vol.mm3,Tschudin__1998_Table2.5,Tschudin (1998) Table 2.5,CorpusID:142614626,Tschudin,1998,290100,290100,0,sole source,1,Tschudin,1,1,1998
+Grampus griseus,Neocortex_Vol.mm3,Tschudin__1998_Table2.5,Tschudin (1998) Table 2.5,CorpusID:142614626,Tschudin,1998,1245660,1245660,0,sole source,1,Tschudin,1,1,1998
+Grampus griseus,Total_brain_net_volume_Vol.mm3,Tschudin__1998_Table2.5,Tschudin (1998) Table 2.5,CorpusID:142614626,Tschudin,1998,1572540,1572540,0,sole source,1,Tschudin,1,1,1998
 Gymnobelideus leadbeateri,CerebellarCortex_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,315,315,0,sole source,1,Ashwell,1,1,2020
 Gymnobelideus leadbeateri,CerebellarHemisphere_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,161,161,0,sole source,1,Ashwell,1,1,2020
 Gymnobelideus leadbeateri,CerebellarVermis_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,137,137,0,sole source,1,Ashwell,1,1,2020
@@ -5365,6 +5383,12 @@ Kerivoula phalaena,Striatum_Vol.mm3,Baron_etal_1996_Table32,Baron et al. (1996) 
 Kerivoula phalaena,Telencephalon_Vol.mm3,Baron_etal_1996_Table10,Baron et al. (1996) Table 10,ISBN:9783764353704,Baron_Chiroptera,1996,47.8,47.8,0,sole source,1,Baron_Chiroptera,1,1,1996
 Kerivoula phalaena,Total_brain_net_volume_Vol.mm3,Baron_etal_1996_Table8,Baron et al. (1996) Table 8,ISBN:9783764353704,Baron_Chiroptera,1996,110.3,110.3,0,sole source,1,Baron_Chiroptera,1,1,1996
 Kerivoula phalaena,Ventricles_Vol.mm3,Baron_etal_1996_Table8,Baron et al. (1996) Table 8,ISBN:9783764353704,Baron_Chiroptera,1996,0.5,0.5,0,sole source,1,Baron_Chiroptera,1,1,1996
+Kogia sima,Cerebellum_Vol.mm3,Tschudin__1998_Table2.5,Tschudin (1998) Table 2.5,CorpusID:142614626,Tschudin,1998,58400,58400,0,sole source,1,Tschudin,1,1,1998
+Kogia sima,Neocortex_Vol.mm3,Tschudin__1998_Table2.5,Tschudin (1998) Table 2.5,CorpusID:142614626,Tschudin,1998,381300,381300,0,sole source,1,Tschudin,1,1,1998
+Kogia sima,Total_brain_net_volume_Vol.mm3,Tschudin__1998_Table2.5,Tschudin (1998) Table 2.5,CorpusID:142614626,Tschudin,1998,463800,463800,0,sole source,1,Tschudin,1,1,1998
+Lagenodelphis hosei,Cerebellum_Vol.mm3,Tschudin__1998_Table2.5,Tschudin (1998) Table 2.5,CorpusID:142614626,Tschudin,1998,194580,194580,0,sole source,1,Tschudin,1,1,1998
+Lagenodelphis hosei,Neocortex_Vol.mm3,Tschudin__1998_Table2.5,Tschudin (1998) Table 2.5,CorpusID:142614626,Tschudin,1998,877020,877020,0,sole source,1,Tschudin,1,1,1998
+Lagenodelphis hosei,Total_brain_net_volume_Vol.mm3,Tschudin__1998_Table2.5,Tschudin (1998) Table 2.5,CorpusID:142614626,Tschudin,1998,1112280,1112280,0,sole source,1,Tschudin,1,1,1998
 Lagorchestes conspicillatus,CerebellarCortex_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,879,879,0,sole source,1,Ashwell,1,1,2020
 Lagorchestes conspicillatus,CerebellarHemisphere_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,372,372,0,sole source,1,Ashwell,1,1,2020
 Lagorchestes conspicillatus,CerebellarVermis_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,449,449,0,sole source,1,Ashwell,1,1,2020
@@ -5493,6 +5517,16 @@ Lama glama,Septum_Vol.mm3,Reep_etal_2007_Table1,Reep et al. (2007) Table 1,10.11
 Lama glama,Striatum_including_globus_pallidus_Vol.mm3,Reep_etal_2007_Table1,Reep et al. (2007) Table 1,10.1159/000101491,Reep,2007,7429.44,7429.44,0,sole source,1,Reep,1,1,2007
 Lama glama,Total_brain_net_volume_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,232000,256635,-9.6,averaged into the merged value,1,Ashwell; Bush,2,2,2020
 Lama glama,Total_brain_net_volume_Vol.mm3,Bush_Allman_2004_a_Table2,Bush & Allman (2004) Table 2,10.1073/pnas.0305760101,Bush,2004,281270,256635,9.6,averaged into the merged value,1,Ashwell; Bush,2,2,2020
+Lama guanicoe,Cerebellum_Vol.mm3,Kruska__1980_Tabelle2,Kruska (1980) Tabelle 2,10.1111/j.1439-0469.1980.tb00738.x,Kruska,1980,30179.666666666668,30179.666666666668,0,sole source,3,Kruska,1,1,1980
+Lama guanicoe,Diencephalon_Vol.mm3,Kruska__1980_Tabelle2,Kruska (1980) Tabelle 2,10.1111/j.1439-0469.1980.tb00738.x,Kruska,1980,13662.333333333334,13662.333333333334,0,sole source,3,Kruska,1,1,1980
+Lama guanicoe,Medulla_oblongata_Vol.mm3,Kruska__1980_Tabelle2,Kruska (1980) Tabelle 2,10.1111/j.1439-0469.1980.tb00738.x,Kruska,1980,12200,12200,0,sole source,3,Kruska,1,1,1980
+Lama guanicoe,Mesencephalon_Vol.mm3,Kruska__1980_Tabelle2,Kruska (1980) Tabelle 2,10.1111/j.1439-0469.1980.tb00738.x,Kruska,1980,9545.666666666666,9545.666666666666,0,sole source,3,Kruska,1,1,1980
+Lama guanicoe,Neocortex_Vol.mm3,Kruska__1980_Tabelle2,Kruska (1980) Tabelle 2,10.1111/j.1439-0469.1980.tb00738.x,Kruska,1980,148865,148865,0,sole source,3,Kruska,1,1,1980
+Lama guanicoe,Neocortex_grey_matter_Vol.mm3,Kruska__1980_Tabelle2,Kruska (1980) Tabelle 2,10.1111/j.1439-0469.1980.tb00738.x,Kruska,1980,90151.33333333333,90151.33333333333,0,sole source,3,Kruska,1,1,1980
+Lama guanicoe,Neocortex_white_matter_Vol.mm3,Kruska__1980_Tabelle2,Kruska (1980) Tabelle 2,10.1111/j.1439-0469.1980.tb00738.x,Kruska,1980,58713,58713,0,sole source,3,Kruska,1,1,1980
+Lama guanicoe,Striatum_Vol.mm3,Kruska__1980_Tabelle2,Kruska (1980) Tabelle 2,10.1111/j.1439-0469.1980.tb00738.x,Kruska,1980,7251.666666666667,7251.666666666667,0,sole source,3,Kruska,1,1,1980
+Lama guanicoe,Telencephalon_Vol.mm3,Kruska__1980_Tabelle2,Kruska (1980) Tabelle 2,10.1111/j.1439-0469.1980.tb00738.x,Kruska,1980,172655,172655,0,sole source,3,Kruska,1,1,1980
+Lama guanicoe,Total_brain_net_volume_Vol.mm3,Kruska__1980_Tabelle2,Kruska (1980) Tabelle 2,10.1111/j.1439-0469.1980.tb00738.x,Kruska,1980,245817.33333333334,245817.33333333334,0,sole source,3,Kruska,1,1,1980
 Lampronycteris brachyotis,Amygdala_Vol.mm3,Baron_etal_1996_Table32,Baron et al. (1996) Table 32,ISBN:9783764353704,Baron_Chiroptera,1996,14,14,0,sole source,1,Baron_Chiroptera,1,1,1996
 Lampronycteris brachyotis,Bulbus_olfactorius_Vol.mm3,Baron_etal_1996_Table32,Baron et al. (1996) Table 32,ISBN:9783764353704,Baron_Chiroptera,1996,21.8,21.8,0,sole source,1,Baron_Chiroptera,1,1,1996
 Lampronycteris brachyotis,Cerebellum_Vol.mm3,Baron_etal_1996_Table10,Baron et al. (1996) Table 10,ISBN:9783764353704,Baron_Chiroptera,1996,76.3,76.3,0,sole source,1,Baron_Chiroptera,1,1,1996
@@ -5951,6 +5985,13 @@ Loris tardigradus,Trigeminal_motor_nucleus_left_Vol.mm3,Sherwood_etal_2005_Table
 Loris tardigradus,Tuberculum_olfactorium_Vol.mm3,Baron_etal_1987_Table1,Baron et al. (1987) Table 1,PMID:3116076,Stephan_collection,1987,22.5,22.5,0,sole source,1,Stephan_collection,1,1,1987
 Loris tardigradus,Ventral_pons_Vol.mm3,Matano_etal_1985_b_Table1,Matano et al. (1985) Table 1,10.1159/000156211,Stephan_collection,1985,28.9,28.9,0,sole source,1,Stephan_collection,1,1,1985
 Loris tardigradus,Ventricles_Vol.mm3,Stephan_etal_1981_TableII,Stephan et al. (1981) Table II,10.1159/000155963,Stephan_collection,1981,51.6,51.6,0,sole source,1,Stephan_collection,1,1,1981
+Loxodonta africana,Cerebellum_Vol.mm3,Hakeem_etal_2005_Table2,Hakeem et al. (2005) Table 2,10.1002/ar.a.20255,Hakeem,2005,946600,946600,0,sole source,1,Hakeem,1,1,2005
+Loxodonta africana,Cerebellum_grey_matter_Vol.mm3,Hakeem_etal_2005_Table2,Hakeem et al. (2005) Table 2,10.1002/ar.a.20255,Hakeem,2005,720300,720300,0,sole source,1,Hakeem,1,1,2005
+Loxodonta africana,Cerebellum_white_matter_Vol.mm3,Hakeem_etal_2005_Table2,Hakeem et al. (2005) Table 2,10.1002/ar.a.20255,Hakeem,2005,202700,202700,0,sole source,1,Hakeem,1,1,2005
+Loxodonta africana,Neocortex_Vol.mm3,Hakeem_etal_2005_Table2,Hakeem et al. (2005) Table 2,10.1002/ar.a.20255,Hakeem,2005,2460100,2460100,0,sole source,1,Hakeem,1,1,2005
+Loxodonta africana,Neocortex_grey_matter_Vol.mm3,Hakeem_etal_2005_Table2,Hakeem et al. (2005) Table 2,10.1002/ar.a.20255,Hakeem,2005,1378700,1378700,0,sole source,1,Hakeem,1,1,2005
+Loxodonta africana,Neocortex_white_matter_Vol.mm3,Hakeem_etal_2005_Table2,Hakeem et al. (2005) Table 2,10.1002/ar.a.20255,Hakeem,2005,1081400,1081400,0,sole source,1,Hakeem,1,1,2005
+Loxodonta africana,Total_brain_net_volume_Vol.mm3,Hakeem_etal_2005_Table2,Hakeem et al. (2005) Table 2,10.1002/ar.a.20255,Hakeem,2005,3886700,3886700,0,sole source,1,Hakeem,1,1,2005
 Lyroderma lyra,Amygdala_Vol.mm3,Baron_etal_1996_Table32,Baron et al. (1996) Table 32,ISBN:9783764353704,Baron_Chiroptera,1996,30.9,30.9,0,sole source,1,Baron_Chiroptera,1,1,1996
 Lyroderma lyra,Bulbus_olfactorius_Vol.mm3,Baron_etal_1996_Table32,Baron et al. (1996) Table 32,ISBN:9783764353704,Baron_Chiroptera,1996,18,18,0,sole source,1,Baron_Chiroptera,1,1,1996
 Lyroderma lyra,Cerebellum_Vol.mm3,Baron_etal_1996_Table10,Baron et al. (1996) Table 10,ISBN:9783764353704,Baron_Chiroptera,1996,162.5,162.5,0,sole source,1,Baron_Chiroptera,1,1,1996
@@ -6190,6 +6231,9 @@ Marmosa mitis,Neocortex_grey_matter_Vol.mm3,Bush_Allman_2004_a_Table2,Bush & All
 Marmosa mitis,Neocortex_white_matter_Vol.mm3,Bush_Allman_2003_Table1,Bush & Allman (2003) Table 1,10.1159/000068880,Bush,2003,11.3,10.65,6.1,averaged into the merged value,1,Bush,1,2,2004
 Marmosa mitis,Neocortex_white_matter_Vol.mm3,Bush_Allman_2004_a_Table2,Bush & Allman (2004) Table 2,10.1073/pnas.0305760101,Bush,2004,10,10.65,-6.1,averaged into the merged value,1,Bush,1,2,2004
 Marmosa mitis,Total_brain_net_volume_Vol.mm3,Bush_Allman_2004_a_Table2,Bush & Allman (2004) Table 2,10.1073/pnas.0305760101,Bush,2004,770,770,0,sole source,1,Bush,1,1,2004
+Martes foina,Neocortex_Vol.mm3,Röhrs__1986_Table2,Röhrs (1986) Table 2,10.1111/j.1439-0469.1986.tb00624.x,Röhrs,1986,11594,11594,0,sole source,1,Röhrs,1,1,1986
+Martes foina,Telencephalon_Vol.mm3,Röhrs__1986_Table2,Röhrs (1986) Table 2,10.1111/j.1439-0469.1986.tb00624.x,Röhrs,1986,15393,15393,0,sole source,1,Röhrs,1,1,1986
+Martes foina,Total_brain_net_volume_Vol.mm3,Röhrs__1986_Table2,Röhrs (1986) Table 2,10.1111/j.1439-0469.1986.tb00624.x,Röhrs,1986,20857,20857,0,sole source,1,Röhrs,1,1,1986
 Megaderma spasma,Amygdala_Vol.mm3,Baron_etal_1996_Table32,Baron et al. (1996) Table 32,ISBN:9783764353704,Baron_Chiroptera,1996,22,22,0,sole source,1,Baron_Chiroptera,1,1,1996
 Megaderma spasma,Bulbus_olfactorius_Vol.mm3,Baron_etal_1996_Table32,Baron et al. (1996) Table 32,ISBN:9783764353704,Baron_Chiroptera,1996,10.5,10.5,0,sole source,1,Baron_Chiroptera,1,1,1996
 Megaderma spasma,Cerebellum_Vol.mm3,Baron_etal_1996_Table10,Baron et al. (1996) Table 10,ISBN:9783764353704,Baron_Chiroptera,1996,117.8,117.8,0,sole source,1,Baron_Chiroptera,1,1,1996
@@ -6238,6 +6282,9 @@ Megaloglossus woermanni,Striatum_Vol.mm3,Baron_etal_1996_Table32,Baron et al. (1
 Megaloglossus woermanni,Telencephalon_Vol.mm3,Baron_etal_1996_Table10,Baron et al. (1996) Table 10,ISBN:9783764353704,Baron_Chiroptera,1996,398.7,398.7,0,sole source,1,Baron_Chiroptera,1,1,1996
 Megaloglossus woermanni,Total_brain_net_volume_Vol.mm3,Baron_etal_1996_Table8,Baron et al. (1996) Table 8,ISBN:9783764353704,Baron_Chiroptera,1996,645,645,0,sole source,1,Baron_Chiroptera,1,1,1996
 Megaloglossus woermanni,Ventricles_Vol.mm3,Baron_etal_1996_Table8,Baron et al. (1996) Table 8,ISBN:9783764353704,Baron_Chiroptera,1996,5.3,5.3,0,sole source,1,Baron_Chiroptera,1,1,1996
+Meles meles,Neocortex_Vol.mm3,Röhrs__1986_Table2,Röhrs (1986) Table 2,10.1111/j.1439-0469.1986.tb00624.x,Röhrs,1986,32604,32604,0,sole source,1,Röhrs,1,1,1986
+Meles meles,Telencephalon_Vol.mm3,Röhrs__1986_Table2,Röhrs (1986) Table 2,10.1111/j.1439-0469.1986.tb00624.x,Röhrs,1986,42839.4,42839.4,0,sole source,1,Röhrs,1,1,1986
+Meles meles,Total_brain_net_volume_Vol.mm3,Röhrs__1986_Table2,Röhrs (1986) Table 2,10.1111/j.1439-0469.1986.tb00624.x,Röhrs,1986,56771,56771,0,sole source,1,Röhrs,1,1,1986
 Melonycteris melanops,Amygdala_Vol.mm3,Baron_etal_1996_Table32,Baron et al. (1996) Table 32,ISBN:9783764353704,Baron_Chiroptera,1996,33.7,33.7,0,sole source,1,Baron_Chiroptera,1,1,1996
 Melonycteris melanops,Bulbus_olfactorius_Vol.mm3,Baron_etal_1996_Table32,Baron et al. (1996) Table 32,ISBN:9783764353704,Baron_Chiroptera,1996,63.7,63.7,0,sole source,1,Baron_Chiroptera,1,1,1996
 Melonycteris melanops,Cerebellum_Vol.mm3,Baron_etal_1996_Table10,Baron et al. (1996) Table 10,ISBN:9783764353704,Baron_Chiroptera,1996,151.1,151.1,0,sole source,1,Baron_Chiroptera,1,1,1996
@@ -6986,6 +7033,7 @@ Murina tubinaris,Striatum_Vol.mm3,Baron_etal_1996_Table32,Baron et al. (1996) Ta
 Murina tubinaris,Telencephalon_Vol.mm3,Baron_etal_1996_Table10,Baron et al. (1996) Table 10,ISBN:9783764353704,Baron_Chiroptera,1996,113.9,113.9,0,sole source,1,Baron_Chiroptera,1,1,1996
 Murina tubinaris,Total_brain_net_volume_Vol.mm3,Baron_etal_1996_Table8,Baron et al. (1996) Table 8,ISBN:9783764353704,Baron_Chiroptera,1996,205.1,205.1,0,sole source,1,Baron_Chiroptera,1,1,1996
 Murina tubinaris,Ventricles_Vol.mm3,Baron_etal_1996_Table8,Baron et al. (1996) Table 8,ISBN:9783764353704,Baron_Chiroptera,1996,1.4,1.4,0,sole source,1,Baron_Chiroptera,1,1,1996
+Mus musculus,Neocortex_Vol.mm3,Beatty_Laughlin_2006_Table1,Beatty & Laughlin (2006) Table 1,10.1186/1471-2202-7-16,Beatty,2006,115.59,115.59,0,sole source,1,Beatty,1,1,2006
 Mustela erminea,CerebellarCortex_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,398,398,0,sole source,1,Ashwell,1,1,2020
 Mustela erminea,CerebellarHemisphere_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,180,180,0,sole source,1,Ashwell,1,1,2020
 Mustela erminea,CerebellarVermis_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,191,191,0,sole source,1,Ashwell,1,1,2020
@@ -6993,23 +7041,29 @@ Mustela erminea,Cerebellar_nuclei_total_Vol.mm3,Ashwell__2020_SupplementaryTable
 Mustela erminea,Cerebellum_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,486,486,0,sole source,1,Ashwell,1,1,2020
 Mustela erminea,Cerebellum_white_matter_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,57.9,57.9,0,sole source,1,Ashwell,1,1,2020
 Mustela erminea,FlocculonodularLobe_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,27.8,27.8,0,sole source,1,Ashwell,1,1,2020
-Mustela erminea,Neocortex_Vol.mm3,Bush_Allman_2004_a_Table2,Bush & Allman (2004) Table 2,10.1073/pnas.0305760101,Bush,2004,1580,1580,0,sole source,1,Bush,1,1,2004
+Mustela erminea,Neocortex_Vol.mm3,Bush_Allman_2004_a_Table2,Bush & Allman (2004) Table 2,10.1073/pnas.0305760101,Bush,2004,1580,1840.55,-14.16,averaged into the merged value,1,Bush; Röhrs,2,2,2004
+Mustela erminea,Neocortex_Vol.mm3,Röhrs__1986_Table2,Röhrs (1986) Table 2,10.1111/j.1439-0469.1986.tb00624.x,Röhrs,1986,2101.1,1840.55,14.16,averaged into the merged value,1,Bush; Röhrs,2,2,2004
 Mustela erminea,Neocortex_grey_matter_Vol.mm3,Bush_Allman_2004_a_Table2,Bush & Allman (2004) Table 2,10.1073/pnas.0305760101,Bush,2004,1350,1350,0,sole source,1,Bush,1,1,2004
 Mustela erminea,Neocortex_white_matter_Vol.mm3,Bush_Allman_2004_a_Table2,Bush & Allman (2004) Table 2,10.1073/pnas.0305760101,Bush,2004,230,230,0,sole source,1,Bush,1,1,2004
 Mustela erminea,Pontine_and_reticulotegmental_nuclei_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,11.8,11.8,0,sole source,1,Ashwell,1,1,2020
-Mustela erminea,Total_brain_net_volume_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,3153,3521.5,-10.46,averaged into the merged value,1,Ashwell; Bush,2,2,2020
-Mustela erminea,Total_brain_net_volume_Vol.mm3,Bush_Allman_2004_a_Table2,Bush & Allman (2004) Table 2,10.1073/pnas.0305760101,Bush,2004,3890,3521.5,10.46,averaged into the merged value,1,Ashwell; Bush,2,2,2020
+Mustela erminea,Telencephalon_Vol.mm3,Röhrs__1986_Table2,Röhrs (1986) Table 2,10.1111/j.1439-0469.1986.tb00624.x,Röhrs,1986,3033.7,3033.7,0,sole source,1,Röhrs,1,1,1986
+Mustela erminea,Total_brain_net_volume_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,3153,3828.6666666666665,-17.65,averaged into the merged value,1,Ashwell; Bush; Röhrs,3,3,2020
+Mustela erminea,Total_brain_net_volume_Vol.mm3,Bush_Allman_2004_a_Table2,Bush & Allman (2004) Table 2,10.1073/pnas.0305760101,Bush,2004,3890,3828.6666666666665,1.6,averaged into the merged value,1,Ashwell; Bush; Röhrs,3,3,2020
+Mustela erminea,Total_brain_net_volume_Vol.mm3,Röhrs__1986_Table2,Röhrs (1986) Table 2,10.1111/j.1439-0469.1986.tb00624.x,Röhrs,1986,4443,3828.6666666666665,16.05,averaged into the merged value,1,Ashwell; Bush; Röhrs,3,3,2020
 Mustela nivalis,Amygdala_Vol.mm3,Reep_etal_2007_Table1,Reep et al. (2007) Table 1,10.1159/000101491,Reep,2007,17.28,17.28,0,sole source,1,Reep,1,1,2007
 Mustela nivalis,Cerebellum_Vol.mm3,Reep_etal_2007_Table1,Reep et al. (2007) Table 1,10.1159/000101491,Reep,2007,298.56,298.56,0,sole source,1,Reep,1,1,2007
 Mustela nivalis,Diencephalon_excluding_globus_pallidus_Vol.mm3,Reep_etal_2007_Table1,Reep et al. (2007) Table 1,10.1159/000101491,Reep,2007,148.32,148.32,0,sole source,1,Reep,1,1,2007
 Mustela nivalis,Hippocampus_Vol.mm3,Reep_etal_2007_Table1,Reep et al. (2007) Table 1,10.1159/000101491,Reep,2007,168,168,0,sole source,1,Reep,1,1,2007
 Mustela nivalis,Medulla_oblongata_Vol.mm3,Reep_etal_2007_Table1,Reep et al. (2007) Table 1,10.1159/000101491,Reep,2007,149.76,149.76,0,sole source,1,Reep,1,1,2007
 Mustela nivalis,Mesencephalon_Vol.mm3,Reep_etal_2007_Table1,Reep et al. (2007) Table 1,10.1159/000101491,Reep,2007,92.16,92.16,0,sole source,1,Reep,1,1,2007
-Mustela nivalis,Neocortex_Vol.mm3,Reep_etal_2007_Table1,Reep et al. (2007) Table 1,10.1159/000101491,Reep,2007,994.08,994.08,0,sole source,1,Reep,1,1,2007
+Mustela nivalis,Neocortex_Vol.mm3,Reep_etal_2007_Table1,Reep et al. (2007) Table 1,10.1159/000101491,Reep,2007,994.08,878.12,13.21,averaged into the merged value,1,Reep; Röhrs,2,2,2007
+Mustela nivalis,Neocortex_Vol.mm3,Röhrs__1986_Table2,Röhrs (1986) Table 2,10.1111/j.1439-0469.1986.tb00624.x,Röhrs,1986,762.16,878.12,-13.21,averaged into the merged value,1,Reep; Röhrs,2,2,2007
 Mustela nivalis,Palaeocortex_Vol.mm3,Reep_etal_2007_Table1,Reep et al. (2007) Table 1,10.1159/000101491,Reep,2007,73.44,73.44,0,sole source,1,Reep,1,1,2007
 Mustela nivalis,Schizo_cortex_Vol.mm3,Reep_etal_2007_Table1,Reep et al. (2007) Table 1,10.1159/000101491,Reep,2007,42.24,42.24,0,sole source,1,Reep,1,1,2007
 Mustela nivalis,Septum_Vol.mm3,Reep_etal_2007_Table1,Reep et al. (2007) Table 1,10.1159/000101491,Reep,2007,9.6,9.6,0,sole source,1,Reep,1,1,2007
 Mustela nivalis,Striatum_including_globus_pallidus_Vol.mm3,Reep_etal_2007_Table1,Reep et al. (2007) Table 1,10.1159/000101491,Reep,2007,74.88,74.88,0,sole source,1,Reep,1,1,2007
+Mustela nivalis,Telencephalon_Vol.mm3,Röhrs__1986_Table2,Röhrs (1986) Table 2,10.1111/j.1439-0469.1986.tb00624.x,Röhrs,1986,1151.13,1151.13,0,sole source,1,Röhrs,1,1,1986
+Mustela nivalis,Total_brain_net_volume_Vol.mm3,Röhrs__1986_Table2,Röhrs (1986) Table 2,10.1111/j.1439-0469.1986.tb00624.x,Röhrs,1986,1795,1795,0,sole source,1,Röhrs,1,1,1986
 Mustela putorius,CerebellarCortex_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,628,628,0,sole source,1,Ashwell,1,1,2020
 Mustela putorius,CerebellarHemisphere_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,318,318,0,sole source,1,Ashwell,1,1,2020
 Mustela putorius,CerebellarVermis_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,290,290,0,sole source,1,Ashwell,1,1,2020
@@ -7019,10 +7073,13 @@ Mustela putorius,Cerebellum_grey_matter_Vol.mm3,Bush_Allman_2003_Table1,Bush & A
 Mustela putorius,Cerebellum_white_matter_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,80,101,-20.79,averaged into the merged value,1,Ashwell; Bush,2,2,2020
 Mustela putorius,Cerebellum_white_matter_Vol.mm3,Bush_Allman_2003_Table1,Bush & Allman (2003) Table 1,10.1159/000068880,Bush,2003,122,101,20.79,averaged into the merged value,1,Ashwell; Bush,2,2,2020
 Mustela putorius,FlocculonodularLobe_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,20.2,20.2,0,sole source,1,Ashwell,1,1,2020
+Mustela putorius,Neocortex_Vol.mm3,Röhrs__1986_Table2,Röhrs (1986) Table 2,10.1111/j.1439-0469.1986.tb00624.x,Röhrs,1986,4147,4147,0,sole source,1,Röhrs,1,1,1986
 Mustela putorius,Neocortex_grey_matter_Vol.mm3,Bush_Allman_2003_Table1,Bush & Allman (2003) Table 1,10.1159/000068880,Bush,2003,2140,2140,0,sole source,1,Bush,1,1,2003
 Mustela putorius,Neocortex_white_matter_Vol.mm3,Bush_Allman_2003_Table1,Bush & Allman (2003) Table 1,10.1159/000068880,Bush,2003,569,569,0,sole source,1,Bush,1,1,2003
 Mustela putorius,Pontine_and_reticulotegmental_nuclei_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,16.4,16.4,0,sole source,1,Ashwell,1,1,2020
-Mustela putorius,Total_brain_net_volume_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,4987,4987,0,sole source,1,Ashwell,1,1,2020
+Mustela putorius,Telencephalon_Vol.mm3,Röhrs__1986_Table2,Röhrs (1986) Table 2,10.1111/j.1439-0469.1986.tb00624.x,Röhrs,1986,6063.3,6063.3,0,sole source,1,Röhrs,1,1,1986
+Mustela putorius,Total_brain_net_volume_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,4987,6943.3,-28.18,averaged into the merged value,1,Ashwell; Röhrs,2,2,2020
+Mustela putorius,Total_brain_net_volume_Vol.mm3,Röhrs__1986_Table2,Röhrs (1986) Table 2,10.1111/j.1439-0469.1986.tb00624.x,Röhrs,1986,8899.6,6943.3,28.18,averaged into the merged value,1,Ashwell; Röhrs,2,2,2020
 Mustela putorius furo,Neocortex_Vol.mm3,Bush_Allman_2004_a_Table2,Bush & Allman (2004) Table 2,10.1073/pnas.0305760101,Bush,2004,2710,2710,0,sole source,1,Bush,1,1,2004
 Mustela putorius furo,Neocortex_grey_matter_Vol.mm3,Bush_Allman_2004_a_Table2,Bush & Allman (2004) Table 2,10.1073/pnas.0305760101,Bush,2004,2140,2140,0,sole source,1,Bush,1,1,2004
 Mustela putorius furo,Neocortex_white_matter_Vol.mm3,Bush_Allman_2004_a_Table2,Bush & Allman (2004) Table 2,10.1073/pnas.0305760101,Bush,2004,570,570,0,sole source,1,Bush,1,1,2004
@@ -9789,6 +9846,9 @@ Pteronotus personatus,Striatum_Vol.mm3,Baron_etal_1996_Table32,Baron et al. (199
 Pteronotus personatus,Telencephalon_Vol.mm3,Baron_etal_1996_Table10,Baron et al. (1996) Table 10,ISBN:9783764353704,Baron_Chiroptera,1996,107.5,107.5,0,sole source,1,Baron_Chiroptera,1,1,1996
 Pteronotus personatus,Total_brain_net_volume_Vol.mm3,Baron_etal_1996_Table8,Baron et al. (1996) Table 8,ISBN:9783764353704,Baron_Chiroptera,1996,216,216,0,sole source,1,Baron_Chiroptera,1,1,1996
 Pteronotus personatus,Ventricles_Vol.mm3,Baron_etal_1996_Table8,Baron et al. (1996) Table 8,ISBN:9783764353704,Baron_Chiroptera,1996,1.5,1.5,0,sole source,1,Baron_Chiroptera,1,1,1996
+Pteronura brasiliensis,Neocortex_Vol.mm3,Röhrs__1986_Table2,Röhrs (1986) Table 2,10.1111/j.1439-0469.1986.tb00624.x,Röhrs,1986,83257.3,83257.3,0,sole source,1,Röhrs,1,1,1986
+Pteronura brasiliensis,Telencephalon_Vol.mm3,Röhrs__1986_Table2,Röhrs (1986) Table 2,10.1111/j.1439-0469.1986.tb00624.x,Röhrs,1986,91955.1,91955.1,0,sole source,1,Röhrs,1,1,1986
+Pteronura brasiliensis,Total_brain_net_volume_Vol.mm3,Röhrs__1986_Table2,Röhrs (1986) Table 2,10.1111/j.1439-0469.1986.tb00624.x,Röhrs,1986,115203.1,115203.1,0,sole source,1,Röhrs,1,1,1986
 Pteropus alecto,Amygdala_Vol.mm3,Baron_etal_1996_Table32,Baron et al. (1996) Table 32,ISBN:9783764353704,Baron_Chiroptera,1996,115.9,115.9,0,sole source,1,Baron_Chiroptera,1,1,1996
 Pteropus alecto,Bulbus_olfactorius_Vol.mm3,Baron_etal_1996_Table32,Baron et al. (1996) Table 32,ISBN:9783764353704,Baron_Chiroptera,1996,238.2,238.2,0,sole source,1,Baron_Chiroptera,1,1,1996
 Pteropus alecto,Cerebellum_Vol.mm3,Baron_etal_1996_Table10,Baron et al. (1996) Table 10,ISBN:9783764353704,Baron_Chiroptera,1996,843.7,843.7,0,sole source,1,Baron_Chiroptera,1,1,1996
@@ -10068,8 +10128,8 @@ Rattus norvegicus,Cerebellum_grey_matter_Vol.mm3,Bush_Allman_2003_Table1,Bush & 
 Rattus norvegicus,Cerebellum_white_matter_Vol.mm3,Bush_Allman_2003_Table1,Bush & Allman (2003) Table 1,10.1159/000068880,Bush,2003,28.7,28.7,0,sole source,1,Bush,1,1,2003
 Rattus norvegicus,Diencephalon_Vol.mm3,Frahm_etal_1997_Table1,Frahm et al. (1997) Table 1,PMID:9176733,Stephan_collection,1997,1770,1770,0,sole source,1,Stephan_collection,1,1,1997
 Rattus norvegicus,Hippocampus_Vol.mm3,Frahm_etal_1997_Table1,Frahm et al. (1997) Table 1,PMID:9176733,Stephan_collection,1997,90.48,90.48,0,sole source,1,Stephan_collection,1,1,1997
-Rattus norvegicus,Neocortex_Vol.mm3,Bush_Allman_2004_a_Table2,Bush & Allman (2004) Table 2,10.1073/pnas.0305760101,Bush,2004,580,321.59000000000003,80.35,averaged into the merged value,1,Bush; Stephan_collection,2,2,2004
-Rattus norvegicus,Neocortex_Vol.mm3,Frahm_etal_1997_Table1,Frahm et al. (1997) Table 1,PMID:9176733,Stephan_collection,1997,63.18,321.59000000000003,-80.35,averaged into the merged value,1,Bush; Stephan_collection,2,2,2004
+Rattus norvegicus,Neocortex_Vol.mm3,Bush_Allman_2004_a_Table2,Bush & Allman (2004) Table 2,10.1073/pnas.0305760101,Bush,2004,580,321.59,80.35,averaged into the merged value,1,Bush; Stephan_collection,2,2,2004
+Rattus norvegicus,Neocortex_Vol.mm3,Frahm_etal_1997_Table1,Frahm et al. (1997) Table 1,PMID:9176733,Stephan_collection,1997,63.18,321.59,-80.35,averaged into the merged value,1,Bush; Stephan_collection,2,2,2004
 Rattus norvegicus,Neocortex_grey_matter_Vol.mm3,Bush_Allman_2003_Table1,Bush & Allman (2003) Table 1,10.1159/000068880,Bush,2003,529,529.5,-0.09,averaged into the merged value,1,Bush,1,2,2004
 Rattus norvegicus,Neocortex_grey_matter_Vol.mm3,Bush_Allman_2004_a_Table2,Bush & Allman (2004) Table 2,10.1073/pnas.0305760101,Bush,2004,530,529.5,0.09,averaged into the merged value,1,Bush,1,2,2004
 Rattus norvegicus,Neocortex_white_matter_Vol.mm3,Bush_Allman_2003_Table1,Bush & Allman (2003) Table 1,10.1159/000068880,Bush,2003,53.4,51.7,3.29,averaged into the merged value,1,Bush,1,2,2004
@@ -11383,6 +11443,9 @@ Sorex minutus,Tractus_olfactorius_lateralis_Vol.mm3,Baron_etal_1987_Table1,Baron
 Sorex minutus,Tractus_opticus_Vol.mm3,Stephan_etal_1981_TableVII,Stephan et al. (1981) Table VII,10.1159/000155963,Stephan_collection,1981,0.106,0.106,0,sole source,1,Stephan_collection,1,1,1981
 Sorex minutus,Tuberculum_olfactorium_Vol.mm3,Baron_etal_1987_Table1,Baron et al. (1987) Table 1,PMID:3116076,Stephan_collection,1987,4,4,0,sole source,1,Stephan_collection,1,1,1987
 Sorex minutus,Ventricles_Vol.mm3,Stephan_etal_1981_TableI,Stephan et al. (1981) Table I,10.1159/000155963,Stephan_collection,1981,0.46,0.46,0,sole source,1,Stephan_collection,1,1,1981
+Sousa chinensis,Cerebellum_Vol.mm3,Tschudin__1998_Table2.5,Tschudin (1998) Table 2.5,CorpusID:142614626,Tschudin,1998,255797.14285714287,255797.14285714287,0,sole source,7,Tschudin,1,1,1998
+Sousa chinensis,Neocortex_Vol.mm3,Tschudin__1998_Table2.5,Tschudin (1998) Table 2.5,CorpusID:142614626,Tschudin,1998,1046286.25,1046286.25,0,sole source,8,Tschudin,1,1,1998
+Sousa chinensis,Total_brain_net_volume_Vol.mm3,Tschudin__1998_Table2.5,Tschudin (1998) Table 2.5,CorpusID:142614626,Tschudin,1998,1338498.75,1338498.75,0,sole source,8,Tschudin,1,1,1998
 Sphaerias blanfordi,Amygdala_Vol.mm3,Baron_etal_1996_Table32,Baron et al. (1996) Table 32,ISBN:9783764353704,Baron_Chiroptera,1996,19.7,19.7,0,sole source,1,Baron_Chiroptera,1,1,1996
 Sphaerias blanfordi,Bulbus_olfactorius_Vol.mm3,Baron_etal_1996_Table32,Baron et al. (1996) Table 32,ISBN:9783764353704,Baron_Chiroptera,1996,33.5,33.5,0,sole source,1,Baron_Chiroptera,1,1,1996
 Sphaerias blanfordi,Cerebellum_Vol.mm3,Baron_etal_1996_Table10,Baron et al. (1996) Table 10,ISBN:9783764353704,Baron_Chiroptera,1996,114.8,114.8,0,sole source,1,Baron_Chiroptera,1,1,1996
@@ -11415,6 +11478,12 @@ Sphaeronycteris toxophyllum,Striatum_Vol.mm3,Baron_etal_1996_Table32,Baron et al
 Sphaeronycteris toxophyllum,Telencephalon_Vol.mm3,Baron_etal_1996_Table10,Baron et al. (1996) Table 10,ISBN:9783764353704,Baron_Chiroptera,1996,263.8,263.8,0,sole source,1,Baron_Chiroptera,1,1,1996
 Sphaeronycteris toxophyllum,Total_brain_net_volume_Vol.mm3,Baron_etal_1996_Table8,Baron et al. (1996) Table 8,ISBN:9783764353704,Baron_Chiroptera,1996,496.1,496.1,0,sole source,1,Baron_Chiroptera,1,1,1996
 Sphaeronycteris toxophyllum,Ventricles_Vol.mm3,Baron_etal_1996_Table8,Baron et al. (1996) Table 8,ISBN:9783764353704,Baron_Chiroptera,1996,3.4,3.4,0,sole source,1,Baron_Chiroptera,1,1,1996
+Stenella attenuata,Cerebellum_Vol.mm3,Tschudin__1998_Table2.5,Tschudin (1998) Table 2.5,CorpusID:142614626,Tschudin,1998,138200,138200,0,sole source,2,Tschudin,1,1,1998
+Stenella attenuata,Neocortex_Vol.mm3,Tschudin__1998_Table2.5,Tschudin (1998) Table 2.5,CorpusID:142614626,Tschudin,1998,611750,611750,0,sole source,2,Tschudin,1,1,1998
+Stenella attenuata,Total_brain_net_volume_Vol.mm3,Tschudin__1998_Table2.5,Tschudin (1998) Table 2.5,CorpusID:142614626,Tschudin,1998,783800,783800,0,sole source,2,Tschudin,1,1,1998
+Stenella coeruleoalba,Cerebellum_Vol.mm3,Tschudin__1998_Table2.5,Tschudin (1998) Table 2.5,CorpusID:142614626,Tschudin,1998,96600,96600,0,sole source,1,Tschudin,1,1,1998
+Stenella coeruleoalba,Neocortex_Vol.mm3,Tschudin__1998_Table2.5,Tschudin (1998) Table 2.5,CorpusID:142614626,Tschudin,1998,525400,525400,0,sole source,1,Tschudin,1,1,1998
+Stenella coeruleoalba,Total_brain_net_volume_Vol.mm3,Tschudin__1998_Table2.5,Tschudin (1998) Table 2.5,CorpusID:142614626,Tschudin,1998,665800,665800,0,sole source,1,Tschudin,1,1,1998
 Sturnira lilium,Amygdala_Vol.mm3,Baron_etal_1996_Table32,Baron et al. (1996) Table 32,ISBN:9783764353704,Baron_Chiroptera,1996,18,18,0,sole source,1,Baron_Chiroptera,1,1,1996
 Sturnira lilium,Bulbus_olfactorius_Vol.mm3,Baron_etal_1996_Table32,Baron et al. (1996) Table 32,ISBN:9783764353704,Baron_Chiroptera,1996,28.4,28.4,0,sole source,1,Baron_Chiroptera,1,1,1996
 Sturnira lilium,Cerebellum_Vol.mm3,Baron_etal_1996_Table10,Baron et al. (1996) Table 10,ISBN:9783764353704,Baron_Chiroptera,1996,96.1,96.1,0,sole source,1,Baron_Chiroptera,1,1,1996
@@ -12276,11 +12345,14 @@ Tursiops truncatus,CerebellarCortex_Vol.mm3,Ashwell__2020_SupplementaryTable,Ash
 Tursiops truncatus,CerebellarHemisphere_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,182365,182365,0,sole source,1,Ashwell,1,1,2020
 Tursiops truncatus,CerebellarVermis_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,19398,19398,0,sole source,1,Ashwell,1,1,2020
 Tursiops truncatus,Cerebellar_nuclei_total_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,7105,7105,0,sole source,1,Ashwell,1,1,2020
-Tursiops truncatus,Cerebellum_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,248266,248266,0,sole source,1,Ashwell,1,1,2020
+Tursiops truncatus,Cerebellum_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,248266,248401.92857142858,-0.05,averaged into the merged value,1,Ashwell; Tschudin,2,2,2020
+Tursiops truncatus,Cerebellum_Vol.mm3,Tschudin__1998_Table2.5,Tschudin (1998) Table 2.5,CorpusID:142614626,Tschudin,1998,248537.85714285713,248401.92857142858,0.05,averaged into the merged value,14,Ashwell; Tschudin,2,2,2020
 Tursiops truncatus,Cerebellum_white_matter_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,35070,35070,0,sole source,1,Ashwell,1,1,2020
 Tursiops truncatus,FlocculonodularLobe_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,4328,4328,0,sole source,1,Ashwell,1,1,2020
+Tursiops truncatus,Neocortex_Vol.mm3,Tschudin__1998_Table2.5,Tschudin (1998) Table 2.5,CorpusID:142614626,Tschudin,1998,1088615,1088615,0,sole source,14,Tschudin,1,1,1998
 Tursiops truncatus,Pontine_and_reticulotegmental_nuclei_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,14940,14940,0,sole source,1,Ashwell,1,1,2020
-Tursiops truncatus,Total_brain_net_volume_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,1490385,1490385,0,sole source,1,Ashwell,1,1,2020
+Tursiops truncatus,Total_brain_net_volume_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,1490385,1433680.7142857143,3.96,averaged into the merged value,1,Ashwell; Tschudin,2,2,2020
+Tursiops truncatus,Total_brain_net_volume_Vol.mm3,Tschudin__1998_Table2.5,Tschudin (1998) Table 2.5,CorpusID:142614626,Tschudin,1998,1376976.4285714286,1433680.7142857143,-3.96,averaged into the merged value,14,Ashwell; Tschudin,2,2,2020
 Tylonycteris pachypus,Amygdala_Vol.mm3,Baron_etal_1996_Table32,Baron et al. (1996) Table 32,ISBN:9783764353704,Baron_Chiroptera,1996,4.19,4.19,0,sole source,1,Baron_Chiroptera,1,1,1996
 Tylonycteris pachypus,Bulbus_olfactorius_Vol.mm3,Baron_etal_1996_Table32,Baron et al. (1996) Table 32,ISBN:9783764353704,Baron_Chiroptera,1996,1.78,1.78,0,sole source,1,Baron_Chiroptera,1,1,1996
 Tylonycteris pachypus,Cerebellum_Vol.mm3,Baron_etal_1996_Table10,Baron et al. (1996) Table 10,ISBN:9783764353704,Baron_Chiroptera,1996,11.7,11.7,0,sole source,1,Baron_Chiroptera,1,1,1996
@@ -12568,6 +12640,16 @@ Vespadelus pumilus,Striatum_Vol.mm3,Baron_etal_1996_Table32,Baron et al. (1996) 
 Vespadelus pumilus,Telencephalon_Vol.mm3,Baron_etal_1996_Table10,Baron et al. (1996) Table 10,ISBN:9783764353704,Baron_Chiroptera,1996,52.4,52.4,0,sole source,1,Baron_Chiroptera,1,1,1996
 Vespadelus pumilus,Total_brain_net_volume_Vol.mm3,Baron_etal_1996_Table8,Baron et al. (1996) Table 8,ISBN:9783764353704,Baron_Chiroptera,1996,115.2,115.2,0,sole source,1,Baron_Chiroptera,1,1,1996
 Vespadelus pumilus,Ventricles_Vol.mm3,Baron_etal_1996_Table8,Baron et al. (1996) Table 8,ISBN:9783764353704,Baron_Chiroptera,1996,0.6,0.6,0,sole source,1,Baron_Chiroptera,1,1,1996
+Vicugna pacos,Cerebellum_Vol.mm3,Kruska__1980_Tabelle2,Kruska (1980) Tabelle 2,10.1111/j.1439-0469.1980.tb00738.x,Kruska,1980,23908.5,23908.5,0,sole source,2,Kruska,1,1,1980
+Vicugna pacos,Diencephalon_Vol.mm3,Kruska__1980_Tabelle2,Kruska (1980) Tabelle 2,10.1111/j.1439-0469.1980.tb00738.x,Kruska,1980,11927.5,11927.5,0,sole source,2,Kruska,1,1,1980
+Vicugna pacos,Medulla_oblongata_Vol.mm3,Kruska__1980_Tabelle2,Kruska (1980) Tabelle 2,10.1111/j.1439-0469.1980.tb00738.x,Kruska,1980,8697.5,8697.5,0,sole source,2,Kruska,1,1,1980
+Vicugna pacos,Mesencephalon_Vol.mm3,Kruska__1980_Tabelle2,Kruska (1980) Tabelle 2,10.1111/j.1439-0469.1980.tb00738.x,Kruska,1980,7769,7769,0,sole source,2,Kruska,1,1,1980
+Vicugna pacos,Neocortex_Vol.mm3,Kruska__1980_Tabelle2,Kruska (1980) Tabelle 2,10.1111/j.1439-0469.1980.tb00738.x,Kruska,1980,101810,101810,0,sole source,2,Kruska,1,1,1980
+Vicugna pacos,Neocortex_grey_matter_Vol.mm3,Kruska__1980_Tabelle2,Kruska (1980) Tabelle 2,10.1111/j.1439-0469.1980.tb00738.x,Kruska,1980,58661.5,58661.5,0,sole source,2,Kruska,1,1,1980
+Vicugna pacos,Neocortex_white_matter_Vol.mm3,Kruska__1980_Tabelle2,Kruska (1980) Tabelle 2,10.1111/j.1439-0469.1980.tb00738.x,Kruska,1980,43149,43149,0,sole source,2,Kruska,1,1,1980
+Vicugna pacos,Striatum_Vol.mm3,Kruska__1980_Tabelle2,Kruska (1980) Tabelle 2,10.1111/j.1439-0469.1980.tb00738.x,Kruska,1980,5956.5,5956.5,0,sole source,2,Kruska,1,1,1980
+Vicugna pacos,Telencephalon_Vol.mm3,Kruska__1980_Tabelle2,Kruska (1980) Tabelle 2,10.1111/j.1439-0469.1980.tb00738.x,Kruska,1980,122403.5,122403.5,0,sole source,2,Kruska,1,1,1980
+Vicugna pacos,Total_brain_net_volume_Vol.mm3,Kruska__1980_Tabelle2,Kruska (1980) Tabelle 2,10.1111/j.1439-0469.1980.tb00738.x,Kruska,1980,181467,181467,0,sole source,2,Kruska,1,1,1980
 Vombatus ursinus,CerebellarCortex_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,2636,2636,0,sole source,1,Ashwell,1,1,2020
 Vombatus ursinus,CerebellarHemisphere_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,1275,1275,0,sole source,1,Ashwell,1,1,2020
 Vombatus ursinus,CerebellarVermis_Vol.mm3,Ashwell__2020_SupplementaryTable,Ashwell (2020) Supplementary Table,10.1016/j.zool.2020.125753,Ashwell,2020,1138,1138,0,sole source,1,Ashwell,1,1,2020

@@ -323,3 +323,45 @@ sources), using `../Smaers_etal_2017/primary_source_checks/species_name_changes_
 2. Ensure its TSV is in `__Public/comparative-data/`; add it to `item_name` with its
    `team` (default `Stephan_collection`) and `token` (species_key) in `volumes_compiled.R`.
 3. Re-run `standardized_term.R`, then `volumes_compiled.R`.
+
+## Update (2026-11-18): five tables wired in
+
+Five source tables were added to the `papers` table in volumes_compiled.R,
+each as its own Tier-2 team (independent specimens, so cross-team averaging
+applies; none is a reprint of a table already in the merge), with
+per-reference term maps under standardized_term_by_reference/:
+
+- Kruska__1980_Tabelle2 -- per-specimen planimetric volumes for 7 camelid
+  specimens (mm3 as printed; per-specimen rows collapse to species means in
+  step 6). Gives Vicugna pacos its first volumes: Neocortex_Vol.mm3 101,810,
+  exactly the value Castillo-Morales et al. (2016) printed for the alpaca.
+- Röhrs__1986_Table2 -- species-typical net volumes for 10 mustelids, after
+  Schumacher (1963) and Thiede (1973) as converted by Röhrs. This is the
+  table Castillo-Morales et al. (2016) took their ferret row from
+  (Mustela putorius Neocortex_Vol.mm3 4,147, new).
+- Beatty_Laughlin_2006_Table1 -- in-vivo cortical volumes of 36 inbred mouse
+  strains. A reshape block keeps the C57BL/6J reference strain only: the
+  panel's variation is the paper's subject, so a cross-strain mean is not a
+  species value. Mus musculus gains Neocortex_Vol.mm3 115.59 (the strain
+  Castillo-Morales et al. used for their mouse row). The regressed columns
+  are the authors' derived values and are not term-mapped.
+- Hakeem_etal_2005_Table2 -- structure-rows for one African elephant (cm3).
+  A reshape block pivots it and derives the two whole-structure totals from
+  their printed parts (the Bush_Allman_2004_a grey+white precedent):
+  Neocortex_Vol.mm3 2,460,100; Cerebellum_Vol.mm3 946,600 (including the
+  printed "other cerebellar structures"); Total_brain_net_volume_Vol.mm3
+  3,886,700.
+- Tschudin__1998_Table2.5 -- per-specimen cetacean volumes (cm3 -> mm3),
+  44 specimens, 8 species. Tursiops truncatus gains Neocortex_Vol.mm3
+  1,088,615 (mean of 14 specimens); this is the table Castillo-Morales
+  et al. (2016) took their dolphin row from. neocortex_ratio is the
+  thesis's derived index and is not term-mapped.
+
+Regenerated outputs: 76 species x variable cells added, none removed.
+Seven pre-existing values move because a new team joins their cross-team
+average; the largest is Mustela putorius Total_brain_net_volume_Vol.mm3
+4,987 (Ashwell__2020 alone) -> 6,943.3 (mean with Röhrs' 8,899.6) -- the
+two sources disagree by nearly 2x and the merged value now sits between
+them. Castillo-Morales et al. (2016) Table 1 itself is deliberately NOT
+wired in: it is a secondary compilation, and its rows are superseded by
+the primary sources above where those exist in the repo.

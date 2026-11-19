@@ -344,3 +344,50 @@ regenerated from the filled TSV: Brain_Mass_estimated_from_endocranial_volume
 unchanged at 2,311. One decision remains at n_expected 0 (Rattus
 norvegicus, 1.4 g): no row with that value exists in the current Burger
 TSV.
+
+Update (2026-11-18): the November 18 source intake is wired into this merge.
+Four new (paper, column) groups are classified in _keys/brain_size_basis.csv
+(generator entries in _keys/build_brain_size_basis.py), and
+_keys/variable_catalog.csv gains rows for the eight new items so their roles
+are on record. Kruska 1980 Tabelle 1 Fresh_brain_weight_g is mass_fresh
+(primary; weighed before fixation -- the same table prints the fixation
+shrinkage), and Röhrs 1986 Table 1 Brain_mass_g is mass_unspecified
+(primary; the paper does not state fresh vs fixed), on the Lewitus S1A
+precedent. Gonzalez-Voyer et al. 2016 Brain_mass_g is a literature
+compilation whose sources mix weighed masses with endocranial-volume
+conversions, so it is parked as mass_or_volume_mixed with the other mixed
+compilations: its 596 rows sit in brain_mass_basis_review.csv and pool
+nowhere until row-basis decisions split them by their per-row References.
+Kruska 1980 Tabelle 2 Brain_mass_g_fresh is a genuine fresh mass, but it
+reprints Tabelle 1's seven camelid specimens' weights specimen-for-specimen
+(identical values), so seven row-basis decisions
+(__metadata/curation/brain_mass_row_basis.csv) mark those rows
+pool_eligible = False and each specimen is counted once, from Tabelle 1.
+Regenerated outputs: Brain_Mass_measured 2,311 -> 2,315 species, combined
+trait 2,459 -> 2,463. New measured species: Vicugna pacos (188 g, Kruska --
+the alpaca previously had no brain-mass row at all), Lama glama and Lama
+guanicoe gain primary Kruska teams, and three mustelids (Conepatus
+humboldti, Helictis personata, Lutra canadensis) enter from Röhrs. The same
+run fixes an author-matching bug in build_brain_mass_merge.py: the
+author-year keys for the team crosswalk and the variable-catalog role
+lookup extracted the author with an ASCII-only regex ([A-Za-z]+), which
+truncates "Röhrs" to "R", so the key never matched the manifest's author
+and Röhrs silently fell back to role "secondary" although its catalog
+role is primary. Nothing was skipped -- its 20 values were harvested and
+pooled throughout -- but with the wrong role the primary-first pooling
+rule mis-fired for its species. The extraction now uses Unicode letters
+([^\W\d_]+) and NFC-normalised keys on both sides. Effect of the fix:
+Röhrs' 20 rows are stamped primary; 20 mustelid species gain
+primary_used = True; and 17 species' pooled values change because
+Röhrs' team mean now joins (or alone forms) the primary pool instead of
+being mixed with, or excluded by, the secondary teams -- e.g. Eira
+barbara 42.96 -> 47.9 g (Röhrs alone, Soria's compilation value no
+longer averaged in) and Mustela putorius 10.7 -> 9.965 g (Röhrs joins
+the existing primary teams). Röhrs is the only paper affected today:
+the other harvested non-ASCII name, Zilles_Rehkämper_1988, has an ASCII
+first author, and no other non-ASCII-first-author paper has brain-mass
+data in the merge; but any future primary source whose first author
+contains an accented letter would have hit the same silent fallback.
+The auxiliary build_merge_audit.py / build_merge_dump.py /
+build_merge_repair.py copies carry the same two regex lines and were
+left untouched.

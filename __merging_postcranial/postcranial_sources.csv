@@ -1,0 +1,10 @@
+item,folder,species_col,specimen_col,level,fossil,source_col,Measure,Units,value_type,method,role,note
+Dupont_etal_2026_TableS3,Dupont_etal_2026,Species,,species,FALSE,PI_forefoot_digit1,PI_forefoot_digit1,index,derived,phalangeal index (Dupont 2026),primary,dimensionless PI; species value
+Dupont_etal_2026_TableS3,Dupont_etal_2026,Species,,species,FALSE,PI_forefoot_digits3and4,PI_forefoot_digits3and4,index,derived,phalangeal index (Dupont 2026),primary,dimensionless PI; species value
+Dupont_etal_2026_TableS3,Dupont_etal_2026,Species,,species,FALSE,PI_hindfoot_digit1,PI_hindfoot_digit1,index,derived,phalangeal index (Dupont 2026),primary,dimensionless PI; species value
+Dupont_etal_2026_TableS3,Dupont_etal_2026,Species,,species,FALSE,PI_hindfoot_digits3and4,PI_hindfoot_digits3and4,index,derived,phalangeal index (Dupont 2026),primary,dimensionless PI; species value
+Dupont_etal_2026_TableS2,Dupont_etal_2026,Species,Specimen_ID,specimen,TRUE,PI_forefoot_digit1,PI_forefoot_digit1,index,derived,phalangeal index (Dupont 2026),primary,fossil specimen
+Dupont_etal_2026_TableS2,Dupont_etal_2026,Species,Specimen_ID,specimen,TRUE,PI_forefoot_digits3and4,PI_forefoot_digits3and4,index,derived,phalangeal index (Dupont 2026),primary,fossil specimen
+Dupont_etal_2026_TableS2,Dupont_etal_2026,Species,Specimen_ID,specimen,TRUE,PI_hindfoot_digit1,PI_hindfoot_digit1,index,derived,phalangeal index (Dupont 2026),primary,fossil specimen
+Dupont_etal_2026_TableS2,Dupont_etal_2026,Species,Specimen_ID,specimen,TRUE,PI_hindfoot_digits3and4,PI_hindfoot_digits3and4,index,derived,phalangeal index (Dupont 2026),primary,fossil specimen
+Granatosky__2018_TableS1,Granatosky__2018,Species,,species,FALSE,Intermembral_index,Intermembral_index,index,derived,intermembral index (Granatosky 2018),primary,species value; forelimb/hindlimb length ratio as printed

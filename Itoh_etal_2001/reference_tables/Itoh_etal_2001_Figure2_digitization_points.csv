@@ -1,0 +1,58 @@
+region_order,anatomical_group_as_printed,region_as_printed,series_key,x_pixel,mean_edge_y_pixel,upper_error_edge_y_pixel,printed_alpha_percent,printed_significance,pixel_reading_halfwidth
+1,Cerebral Cortex,Sensory Cortex,WT,276,475,445,-63%,**,3
+1,Cerebral Cortex,Sensory Cortex,TRbeta,308,489,441,-63%,**,3
+1,Cerebral Cortex,Sensory Cortex,TRalpha,290,885,874,-63%,**,3
+2,Cerebral Cortex,Parietal Cortex,WT,348,524,490,-61%,**,3
+2,Cerebral Cortex,Parietal Cortex,TRbeta,378,524,469,-61%,**,3
+2,Cerebral Cortex,Parietal Cortex,TRalpha,361,888,878,-61%,**,3
+3,Cerebral Cortex,Auditory Cortex,WT,416,531,497,-66%,**,3
+3,Cerebral Cortex,Auditory Cortex,TRbeta,448,503,477,-66%,**,3
+3,Cerebral Cortex,Auditory Cortex,TRalpha,430,927,909,-66%,**,3
+4,Cerebral Cortex,Visual Cortex,WT,486,580,529,-58%,**,3
+4,Cerebral Cortex,Visual Cortex,TRbeta,517,524,470,-58%,**,3
+4,Cerebral Cortex,Visual Cortex,TRalpha,500,898,881,-58%,**,3
+5,Diencephalon,Thalamus,WT,626,538,519,-68%,**,3
+5,Diencephalon,Thalamus,TRbeta,658,483,431,-68%,**,3
+5,Diencephalon,Thalamus,TRalpha,640,940,919,-68%,**,3
+6,Diencephalon,Hypothalamus,WT,696,615,557,-60%,**,3
+6,Diencephalon,Hypothalamus,TRbeta,728,611,568,-60%,**,3
+6,Diencephalon,Hypothalamus,TRalpha,711,923,898,-60%,**,3
+7,Diencephalon,Medial Geniculate Body,WT,767,554,536,-62%,**,3
+7,Diencephalon,Medial Geniculate Body,TRbeta,799,486,445,-62%,**,3
+7,Diencephalon,Medial Geniculate Body,TRalpha,782,909,871,-62%,**,3
+8,Diencephalon,Lateral Geniculate Body,WT,838,476,466,-67%,**,3
+8,Diencephalon,Lateral Geniculate Body,TRbeta,870,444,414,-67%,**,3
+8,Diencephalon,Lateral Geniculate Body,TRalpha,851,913,892,-67%,**,3
+9,Limbic System,Amygdala,WT,977,748,721,-61%,**,3
+9,Limbic System,Amygdala,TRbeta,1009,741,697,-61%,**,3
+9,Limbic System,Amygdala,TRalpha,992,979,962,-61%,**,3
+10,Limbic System,Hippocampus,WT,1047,529,463,-57%,**,3
+10,Limbic System,Hippocampus,TRbeta,1078,556,540,-57%,**,3
+10,Limbic System,Hippocampus,TRalpha,1062,865,822,-57%,**,3
+11,Extrapyramidal,Caudate-Putamen,WT,1188,434,408,-63%,**,3
+11,Extrapyramidal,Caudate-Putamen,TRbeta,1220,341,313,-63%,**,3
+11,Extrapyramidal,Caudate-Putamen,TRalpha,1203,872,854,-63%,**,3
+12,Brain Stem,Superior Colliculus,WT,1329,518,495,-58%,**,3
+12,Brain Stem,Superior Colliculus,TRbeta,1359,413,383,-58%,**,3
+12,Brain Stem,Superior Colliculus,TRalpha,1344,872,865,-58%,**,3
+13,Brain Stem,Inferior Colliculus,WT,1399,424,394,-63%,**,3
+13,Brain Stem,Inferior Colliculus,TRbeta,1430,561,527,-63%,**,3
+13,Brain Stem,Inferior Colliculus,TRalpha,1413,868,823,-63%,**,3
+14,Brain Stem,Pontine Gray Matter,WT,1468,707,684,-62%,**,3
+14,Brain Stem,Pontine Gray Matter,TRbeta,1499,676,639,-62%,**,3
+14,Brain Stem,Pontine Gray Matter,TRalpha,1482,966,956,-62%,**,3
+15,Cerebellum,Cerebellar Nucleus,WT,1608,407,373,-58%,**,3
+15,Cerebellum,Cerebellar Nucleus,TRbeta,1640,331,261,-58%,**,3
+15,Cerebellum,Cerebellar Nucleus,TRalpha,1623,821,806,-58%,**,3
+16,Cerebellum,Cerebellar Cortex,WT,1677,714,691,-72%,**,3
+16,Cerebellum,Cerebellar Cortex,TRbeta,1708,662,611,-72%,**,3
+16,Cerebellum,Cerebellar Cortex,TRalpha,1692,1012,1005,-72%,**,3
+17,White matter,Corpus Callosum,WT,1818,697,653,-62%,**,3
+17,White matter,Corpus Callosum,TRbeta,1850,687,677,-62%,**,3
+17,White matter,Corpus Callosum,TRalpha,1833,964,939,-62%,**,3
+18,White matter,Internal Capsule,WT,1888,840,813,-67%,**,3
+18,White matter,Internal Capsule,TRbeta,1919,770,733,-67%,**,3
+18,White matter,Internal Capsule,TRalpha,1902,1030,1019,-67%,**,3
+19,White matter,Genu of Corpus Callosum,WT,1960,832,817,-66%,**,3
+19,White matter,Genu of Corpus Callosum,TRbeta,1990,774,716,-66%,**,3
+19,White matter,Genu of Corpus Callosum,TRalpha,1974,1026,1005,-66%,**,3

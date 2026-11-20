@@ -1,0 +1,20 @@
+{
+  "item_name": "Itoh_etal_2001_Figure2",
+  "doi": "10.1073/pnas.171319498",
+  "pdf_filename": "Itoh-2001-Brain glucose utilization in mice wi.pdf",
+  "pdf_sha256": "e9ce43435562b3fa548c543e071b4bf69307f696ac01f2e32a68ad277d12574c",
+  "pdf_page": 4,
+  "printed_page": 9916,
+  "native_bitmap_object": 27,
+  "bitmap_width": 2030,
+  "bitmap_height": 1558,
+  "bitmap_sha256": "7a804741b9a3e2a5a34be998df97ecedb8b39c6fb2717c001b4c7c48b47965fb",
+  "coordinate_origin": "zero based upper left",
+  "extraction": "pdfimages -f 4 -l 4 -png; native 300 dpi one-bit stencil, white ink on black background",
+  "reader": "Codex AI assistant",
+  "date": "2026-11-20",
+  "reading_uncertainty": "mean edge +/-3 native pixels, uniform digitization sensitivity; excludes biological sampling error",
+  "checks_independent": true,
+  "errorbar_type": "not specified in Figure 2 caption; Table 1 SEM statement not transferred to Figure 2",
+  "registry_source": "__ReadMeAddON.xlsx, matched by Item name; main registry preferred if later registered"
+}

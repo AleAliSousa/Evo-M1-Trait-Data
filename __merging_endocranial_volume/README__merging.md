@@ -24,6 +24,7 @@ which keeps endocranial capacity and brain-tissue quantities apart for the fossi
 | `Seymour_etal_2015` | TableS1 | secondary | 60 | 60 | `Brain_volume_ml` |
 | `Caspar_etal_2022` | Supplementary file 3 | primary | 38 | 38 | `female_endocranial_volume_ml` |
 | `Heldstab_etal_2016` | TableS1 | secondary | 37 | 37 | `ECV_ml` (female) |
+| `Weisbecker_etal_2013` | TableS1 | secondary | 191 | 191 | `endocranial_volume_mm3` (mm3, converted to mL) |
 
 Isler et al. (2008) is the reference primate ECV compilation and measured 264 of its own
 species (`Source of ECV` = "This study"), so it is treated as primary.
@@ -53,6 +54,19 @@ ECV, which no other source in this merge supplies.
 One disagreement is worth knowing about: *Cercopithecus hamlyni* is 51.2 mL in Heldstab against
 61.9 mL in Powell, both nominally from van Woerden.
 
+### Weisbecker et al. 2013 (added later)
+
+The marsupial ECVs from Weisbecker et al. 2013 Table S1. The table's own
+`brain_volume_source_key` column attributes every one of its 191 values to **Ashwell 2008**,
+so the source is secondary with Ashwell as upstream; because no other team in this merge
+carries Ashwell, the rows are kept (with the attribution recorded per row in
+`source_of_value`) rather than dropped as reprints. Values are printed in **mm3** and are
+converted to mL in the harvest (`divide_by = 1000`). The table has no sex split, so all rows
+land in the both-sexes/unspecified variable. 18 of its species were already carried by
+Seymour 2015 (also secondary), so those pooled values are now the mean of the two team
+means, per the pooling rule below. The same table's body-mass columns are harvested by
+`__merging_body_ecology`, not here.
+
 ## Pipeline
 
 1. **Harvest** each source's ECV column, resolve the species name through
@@ -76,11 +90,11 @@ One disagreement is worth knowing about: *Cercopithecus hamlyni* is 51.2 mL in H
 
 | File | What it is |
 |---|---|
-| `endocranial_volume_long.csv` | the merged table the app reads — 281 species both-sexes, 106 female-only |
+| `endocranial_volume_long.csv` | the merged table the app reads — 447 species both-sexes, 105 female-only |
 | `endocranial_volume_wide.csv` | species × variable |
 | `endocranial_volume_unfiltered.csv` | every harvested row with its team, role, `source_of_value` and sex scope |
-| `endocranial_volume_dedupe_report.csv` | the 100 rows dropped as reprints — 64 whose own source column names another team here, 36 by the Heldstab `reprint_of` rule |
-| `endocranial_volume_team_comparison.csv` | the 108 species measured by more than one team, with the max/min ratio; 3 disagree by >1.5× |
+| `endocranial_volume_dedupe_report.csv` | the 98 rows dropped as reprints — 64 whose own source column names another team here, 34 by the Heldstab `reprint_of` rule |
+| `endocranial_volume_team_comparison.csv` | the 127 species measured by more than one team, with the max/min ratio; 3 disagree by >1.5× |
 
 ## Caveats
 

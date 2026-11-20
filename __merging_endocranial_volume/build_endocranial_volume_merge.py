@@ -15,6 +15,15 @@ Sources
                                          rows are DROPPED as double counts
   Seymour_etal_2015 TableS1   SECONDARY  60 extant primates, 'Brain_volume_ml'
   Caspar_etal_2022  Suppfile3 PRIMARY    38 species, 'female_endocranial_volume_ml'
+  Weisbecker_etal_2013 TableS1 SECONDARY 191 marsupial species, 'endocranial_volume_mm3'
+                                         (reported in mm3, converted to mL here). Every
+                                         value is attributed by the table's own
+                                         'brain_volume_source_key' column to Ashwell 2008;
+                                         no other team in this merge carries Ashwell, so
+                                         the rows are kept as a secondary source with the
+                                         attribution recorded in source_of_value, not
+                                         dropped as reprints. (The same table's body-mass
+                                         columns are harvested by __merging_body_ecology.)
 
 Not used
   10.6084/m9.figshare.c.3899422.v1_Dataset1.tsv is the figshare export of the SAME
@@ -57,6 +66,14 @@ SOURCES = [
          year="2016", role="secondary", col="ECV_ml", species_col="Species",
          src_col=None, sex_col=None, sex_fixed="female",
          reprint_of=("Isler", "Powell")),
+    # Weisbecker et al. 2013, marsupial ECVs. SECONDARY: the table's own
+    # brain_volume_source_key attributes every value to Ashwell 2008 (upstream),
+    # which no other team here carries. Values are printed in mm3 -> divide_by
+    # converts to this merge's mL. No sex column: the ECV is a species mean, so
+    # the rows land in the both-sexes/unspecified variable.
+    dict(file="10.1159%2F000348647_TableS1.tsv", team="Weisbecker", author="Weisbecker",
+         year="2013", role="secondary", col="endocranial_volume_mm3", species_col="species",
+         src_col="brain_volume_source_key", sex_col=None, divide_by=1000),
 ]
 # `reprint_of` — a source whose ECV column is, by its own definitions file, a reprint of an
 # upstream compilation that ANOTHER team in this merge already carries. Heldstab et al. 2016's
@@ -108,6 +125,8 @@ for s in SOURCES:
         v = num(r.get(s["col"]))
         if v is None:
             continue
+        if s.get("divide_by"):
+            v = v / s["divide_by"]
         sp, sp_basis, sp_reid = resolve(r.get(s["species_col"], ""),
                                         paper_folder_of_author_year(s["author"], s["year"], REPO))
         if not sp or sp.lower() in ("na", "none", "nan"):

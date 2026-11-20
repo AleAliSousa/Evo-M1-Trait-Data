@@ -1,6 +1,8 @@
 Species,Species_printed,Measure,Units,Value,Source,first_author,Year,Team,role,source_of_value,upstream_team,reprint_of,sex_scope,species_basis,reidentified
 Acrobates pygmaeus,Acrobates pygmaeus,Endocranial_volume,mL,0.25,10.1242%2Fjeb.124826_TableS1.tsv,Seymour,2015,Seymour,secondary,,,,unknown,verbatim,False
+Acrobates pygmaeus,Acrobates pygmaeus,Endocranial_volume,mL,0.35,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
 Aepyprymnus rufescens,Aepyprymnus rufescens,Endocranial_volume,mL,13.32,10.1242%2Fjeb.124826_TableS1.tsv,Seymour,2015,Seymour,secondary,,,,unknown,verbatim,False
+Aepyprymnus rufescens,Aepyprymnus rufescens,Endocranial_volume,mL,12.3,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
 Allenopithecus nigroviridis,Allenopithecus nigroviridis,Endocranial_volume,mL,58.02,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,Pooled (this study and Verheyen 1962),,,unknown,verbatim,False
 Allenopithecus nigroviridis,Allenopithecus_nigroviridis,Endocranial_volume,mL,53.6970457142857,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,Isler et al. 2008,Isler,,female,verbatim,False
 Allochrocebus preussi,Cercopithecus_preussi,Endocranial_volume,mL,62.8,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,synonym:NCBI,False
@@ -10,8 +12,8 @@ Alouatta caraya,Alouatta caraya,Endocranial_volume,mL,52.63,10.1016%2Fj.jhevol.2
 Alouatta caraya,Alouatta_caraya,Endocranial_volume,mL,49.2293219911002,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
 Alouatta guariba,Alouatta guariba,Endocranial_volume,mL,51.7,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Alouatta guariba,Alouatta_guariba,Endocranial_volume,mL,48.5043926261223,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
-Alouatta macconnelli,Alouatta macconnelli,Endocranial_volume,mL,61.33,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
-Alouatta macconnelli,Alouatta_macconnelli,Endocranial_volume,mL,53.6615681473474,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,unresolved,False
+Alouatta macconnelli,Alouatta macconnelli,Endocranial_volume,mL,61.33,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
+Alouatta macconnelli,Alouatta_macconnelli,Endocranial_volume,mL,53.6615681473474,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
 Alouatta palliata,Alouatta palliata,Endocranial_volume,mL,49.88,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Alouatta palliata,Alouatta_palliata,Endocranial_volume,mL,48.915738,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
 Alouatta pigra,Alouatta pigra,Endocranial_volume,mL,51.13,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
@@ -20,22 +22,33 @@ Alouatta sara,Alouatta sara,Endocranial_volume,mL,59.08,10.1016%2Fj.jhevol.2008.
 Alouatta sara,Alouatta_sara,Endocranial_volume,mL,56.75,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
 Alouatta seniculus,Alouatta seniculus,Endocranial_volume,mL,55.22,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Alouatta seniculus,Alouatta_seniculus,Endocranial_volume,mL,55.2887579101683,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
+Antechinomys laniger,Antechinomys laniger,Endocranial_volume,mL,0.47,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Antechinus agilis,Antechinus  agilis,Endocranial_volume,mL,0.56,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,synonym:NCBI,False
+Antechinus bellus,Antechinus  bellus,Endocranial_volume,mL,0.63,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Antechinus flavipes,Antechinus flavipes,Endocranial_volume,mL,0.64,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Antechinus leo,Antechinus leo,Endocranial_volume,mL,0.75,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Antechinus melanurus,Antechinus  melanurus,Endocranial_volume,mL,0.65,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Antechinus minimus,Antechinus minimus,Endocranial_volume,mL,0.74,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Antechinus naso,Antechinus naso,Endocranial_volume,mL,0.77,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Antechinus stuartii,Antechinus stuartii,Endocranial_volume,mL,0.76,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Antechinus subtropicus,Antechinus subtropicus,Endocranial_volume,mL,0.72,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,synonym:NCBI,False
+Antechinus swainsonii,Antechinus swainsonii,Endocranial_volume,mL,1.09,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
 Aotus azarai,Aotus azarae,Endocranial_volume,mL,20.67,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,synonym:NCBI,False
 Aotus azarai,Aotus_azarae,Endocranial_volume,mL,20.1389375,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,synonym:NCBI,False
 Aotus lemurinus,Aotus lemurinus,Endocranial_volume,mL,16.3,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Aotus miconax,Aotus_miconax,Endocranial_volume,mL,16.6571428571429,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,unresolved,False
-Aotus nancymaae,Aotus_nancymaae,Endocranial_volume,mL,17.8875,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,hub,False
+Aotus nancymaae,Aotus_nancymaae,Endocranial_volume,mL,17.8875,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
 Aotus nigriceps,Aotus_nigriceps,Endocranial_volume,mL,17.5909090909091,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
 Aotus trivirgatus,Aotus trivirgatus,Endocranial_volume,mL,16.85,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Aotus trivirgatus,Aotus_trivirgatus,Endocranial_volume,mL,16.0656034187608,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
 Aotus vociferans,Aotus_vociferans,Endocranial_volume,mL,17.7,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
-Arctocebus aureus,Arctocebus aureus,Endocranial_volume,mL,5.88,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
-Arctocebus aureus,Arctocebus_aureus,Endocranial_volume,mL,5.88136255456102,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,unresolved,False
-Arctocebus calabarensis,Arctocebus calabarensis,Endocranial_volume,mL,6.92,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
-Arctocebus calabarensis,Arctocebus_calabarensis,Endocranial_volume,mL,6.985385780004,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,unresolved,False
+Arctocebus aureus,Arctocebus aureus,Endocranial_volume,mL,5.88,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
+Arctocebus aureus,Arctocebus_aureus,Endocranial_volume,mL,5.88136255456102,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
+Arctocebus calabarensis,Arctocebus calabarensis,Endocranial_volume,mL,6.92,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
+Arctocebus calabarensis,Arctocebus_calabarensis,Endocranial_volume,mL,6.985385780004,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
 Ateles belzebuth,Ateles belzebuth,Endocranial_volume,mL,117.02,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Ateles belzebuth,Ateles_belzebuth,Endocranial_volume,mL,112.817798718748,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
-Ateles chamek,Ateles_chamek,Endocranial_volume,mL,110.277777777778,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,unresolved,False
+Ateles chamek,Ateles_chamek,Endocranial_volume,mL,110.277777777778,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
 Ateles fusciceps,Ateles fusciceps,Endocranial_volume,mL,107.549,10.7554%2FeLife.77875_Supplementaryfile3.tsv,Caspar,2022,Caspar,primary,"Powell, L. E., Isler, K., & Barton, R. A. (2017). Re-evaluating the link between brain size and behavioural ecology in primates. Proceedings of the Royal Society B: Biological Sciences, 284(1865), 20171765.",Isler,,female,verbatim,False
 Ateles fusciceps,Ateles fusciceps,Endocranial_volume,mL,107.6,10.1038%2Fsrep24528_TableS1.tsv,Heldstab,2016,Heldstab,secondary,,Isler,Isler; Powell,female,verbatim,False
 Ateles fusciceps,Ateles fusciceps,Endocranial_volume,mL,114.24,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
@@ -53,27 +66,26 @@ Avahi laniger,Avahi laniger,Endocranial_volume,mL,9.86,10.1016%2Fj.jhevol.2008.0
 Avahi laniger,Avahi_laniger,Endocranial_volume,mL,9.51543581081081,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,hub,False
 Avahi occidentalis,Avahi occidentalis,Endocranial_volume,mL,7.95,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Avahi occidentalis,Avahi_occidentalis,Endocranial_volume,mL,7.95,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
+Bettongia gaimardi,Bettongia gaimardi,Endocranial_volume,mL,11.7,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
 Bettongia lesueur,Bettongia lesueur,Endocranial_volume,mL,9.2,10.1242%2Fjeb.124826_TableS1.tsv,Seymour,2015,Seymour,secondary,,,,unknown,verbatim,False
+Bettongia lesueur,Bettongia lesueur,Endocranial_volume,mL,10.5,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Bettongia penicillata,Bettongia penicillata,Endocranial_volume,mL,9.56,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Bettongia tropica,Bettongia tropica,Endocranial_volume,mL,8.92,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,synonym:NCBI,False
 Brachyteles arachnoides,Brachyteles_arachnoides,Endocranial_volume,mL,102.042857142857,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
-Brachyteles sp.,Brachyteles sp.,Endocranial_volume,mL,116.72,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,Pooled (this study and Hershkovitz 1970),,,unknown,unresolved,False
+Brachyteles sp.,Brachyteles sp.,Endocranial_volume,mL,116.72,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,Pooled (this study and Hershkovitz 1970),,,unknown,verbatim,False
+Burramys parvus,Burramys parvus,Endocranial_volume,mL,1.0,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
 Cacajao calvus,Cacajao calvus,Endocranial_volume,mL,76.0,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,Hershkovitz 1970,,,unknown,verbatim,False
 Cacajao calvus,Cacajao_calvus,Endocranial_volume,mL,70.7454545454545,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,Isler et al. 2008,Isler,,female,verbatim,False
 Cacajao calvus,Cacajao calvus,Endocranial_volume,mL,100.0,10.1242%2Fjeb.124826_TableS1.tsv,Seymour,2015,Seymour,secondary,,,,unknown,verbatim,False
 Cacajao melanocephalus,Cacajao melanocephalus,Endocranial_volume,mL,68.77,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Cacajao melanocephalus,Cacajao_melanocephalus,Endocranial_volume,mL,61.98,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
+Caenolestes fuliginosus,Caenolestes fuliginosus,Endocranial_volume,mL,0.68,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,hub,False
 Callicebus brunneus,Callicebus_brunneus,Endocranial_volume,mL,18.0,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
-Callicebus caligatus,Callicebus caligatus,Endocranial_volume,mL,17.25,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
-Callicebus caligatus,Callicebus_caligatus,Endocranial_volume,mL,17.175,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,unresolved,False
 Callicebus cupreus,Callicebus cupreus,Endocranial_volume,mL,17.4,10.1038%2Fsrep24528_TableS1.tsv,Heldstab,2016,Heldstab,secondary,,Isler,Isler; Powell,female,verbatim,False
 Callicebus cupreus,Callicebus cupreus,Endocranial_volume,mL,17.63,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Callicebus cupreus,Callicebus_cupreus,Endocranial_volume,mL,17.4397377532215,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
-Callicebus discolor,Callicebus discolor,Endocranial_volume,mL,17.53,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
-Callicebus discolor,Callicebus_discolor,Endocranial_volume,mL,17.0,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,unresolved,False
-Callicebus lugens,Callicebus lugens,Endocranial_volume,mL,18.97,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
-Callicebus lugens,Callicebus_lugens,Endocranial_volume,mL,19.1321602990064,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,unresolved,False
-Callicebus medemi,Callicebus medemi,Endocranial_volume,mL,19.44,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
 Callicebus moloch,Callicebus_moloch,Endocranial_volume,mL,15.4,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,our_judgment,False
-Callicebus oenanthe,Callicebus_oenanthe,Endocranial_volume,mL,13.9,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,unresolved,False
+Callicebus oenanthe,Callicebus_oenanthe,Endocranial_volume,mL,13.9,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
 Callicebus personatus,Callicebus_personatus,Endocranial_volume,mL,20.2,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
 Callicebus torquatus,Callicebus_torquatus,Endocranial_volume,mL,19.7741433333333,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
 Callimico goeldii,Callimico goeldii,Endocranial_volume,mL,11.1,10.1038%2Fsrep24528_TableS1.tsv,Heldstab,2016,Heldstab,secondary,,Isler,Isler; Powell,female,verbatim,False
@@ -86,12 +98,14 @@ Callithrix jacchus,Callithrix jacchus,Endocranial_volume,mL,7.4,10.1038%2Fsrep24
 Callithrix jacchus,Callithrix jacchus,Endocranial_volume,mL,7.24,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Callithrix jacchus,Callithrix_jacchus,Endocranial_volume,mL,7.487306625,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
 Callithrix jacchus,Callithrix jacchus,Endocranial_volume,mL,6.6,10.1242%2Fjeb.124826_TableS1.tsv,Seymour,2015,Seymour,secondary,,,,unknown,verbatim,False
-Callithrix kuhlii,Callithrix_kuhlii,Endocranial_volume,mL,7.97337167589007,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,unresolved,False
+Callithrix kuhlii,Callithrix_kuhlii,Endocranial_volume,mL,7.97337167589007,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
 Callithrix penicillata,Callithrix penicillata,Endocranial_volume,mL,7.32,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,hub,False
 Callithrix penicillata,Callithrix_penicillata,Endocranial_volume,mL,7.16692858857895,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,hub,False
 Callithrix pygmaea,Callithrix pygmaea,Endocranial_volume,mL,4.17,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,hub,False
-Callithrix pygmaea,Cebuella_pygmaea,Endocranial_volume,mL,4.1945058,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,synonym:legacy_override,False
 Callithrix pygmaea,Callithrix pygmaea,Endocranial_volume,mL,7.0,10.1242%2Fjeb.124826_TableS1.tsv,Seymour,2015,Seymour,secondary,,,,unknown,verbatim,False
+Caluromys derbianus,Caluromys derbianus,Endocranial_volume,mL,3.4,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Caluromys philander,Caluromys philander,Endocranial_volume,mL,3.5,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Cebuella pygmaea,Cebuella_pygmaea,Endocranial_volume,mL,4.1945058,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,hub,False
 Cebus albifrons,Cebus albifrons,Endocranial_volume,mL,65.45,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Cebus albifrons,Cebus albifrons,Endocranial_volume,mL,76.0,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Cebus albifrons,Cebus albifrons,Endocranial_volume,mL,60.92,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
@@ -102,10 +116,12 @@ Cebus capucinus,Cebus capucinus,Endocranial_volume,mL,72.93,10.1016%2Fj.jhevol.2
 Cebus capucinus,Cebus_capucinus,Endocranial_volume,mL,69.2204984214101,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
 Cebus olivaceus,Cebus olivaceus,Endocranial_volume,mL,69.84,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Cebus olivaceus,Cebus_olivaceus,Endocranial_volume,mL,70.0863180558,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
-Cebus xanthosternos,Cebus xanthosternos,Endocranial_volume,mL,66.09,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
-Cebus xanthosternos,Cebus_xanthosternos,Endocranial_volume,mL,64.0048194022301,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,Isler et al. 2008,Isler,,female,unresolved,False
+Cercartetus caudatus,Cercartetus caudatus,Endocranial_volume,mL,0.71,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
 Cercartetus concinnus,Cercartetus concinnus,Endocranial_volume,mL,0.28,10.1242%2Fjeb.124826_TableS1.tsv,Seymour,2015,Seymour,secondary,,,,unknown,verbatim,False
+Cercartetus concinnus,Cercartetus concinnus,Endocranial_volume,mL,0.3,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Cercartetus lepidus,Cercartetus lepidus,Endocranial_volume,mL,0.36,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
 Cercartetus nanus,Cercartetus nanus,Endocranial_volume,mL,0.55,10.1242%2Fjeb.124826_TableS1.tsv,Seymour,2015,Seymour,secondary,,,,unknown,verbatim,False
+Cercartetus nanus,Cercartetus nanus,Endocranial_volume,mL,0.43,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
 Cercocebus agilis,Cercocebus agilis,Endocranial_volume,mL,116.43,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Cercocebus agilis,Cercocebus_agilis,Endocranial_volume,mL,100.96867,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
 Cercocebus atys,Cercocebus atys,Endocranial_volume,mL,85.9,10.1038%2Fsrep24528_TableS1.tsv,Heldstab,2016,Heldstab,secondary,,Isler,Isler; Powell,female,verbatim,False
@@ -123,15 +139,16 @@ Cercopithecus albogularis,Cercopithecus albogularis,Endocranial_volume,mL,71.43,
 Cercopithecus ascanius,Cercopithecus ascanius,Endocranial_volume,mL,59.58,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Cercopithecus ascanius,Cercopithecus_ascanius,Endocranial_volume,mL,56.6841772518078,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
 Cercopithecus campbelli,Cercopithecus campbelli,Endocranial_volume,mL,57.39,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
+Cercopithecus campbelli,Cercopithecus lowei,Endocranial_volume,mL,55.64,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,subspecies_assign,False
 Cercopithecus campbelli,Cercopithecus_campbelli,Endocranial_volume,mL,54.0644842229008,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
 Cercopithecus campbelli lowei,Cercopithecus_campbelli_lowei,Endocranial_volume,mL,51.1862771314734,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
-Cercopithecus cephus,Cercopithecus cephus,Endocranial_volume,mL,65.26,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
-Cercopithecus cephus,Cercopithecus_cephus,Endocranial_volume,mL,60.577771372549,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,unresolved,False
+Cercopithecus cephus,Cercopithecus cephus,Endocranial_volume,mL,65.26,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
+Cercopithecus cephus,Cercopithecus_cephus,Endocranial_volume,mL,60.577771372549,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
 Cercopithecus diana,Cercopithecus diana/roloway,Endocranial_volume,mL,57.293,10.7554%2FeLife.77875_Supplementaryfile3.tsv,Caspar,2022,Caspar,primary,"Powell, L. E., Isler, K., & Barton, R. A. (2017). Re-evaluating the link between brain size and behavioural ecology in primates. Proceedings of the Royal Society B: Biological Sciences, 284(1865), 20171765.",Isler,,female,our_judgment,False
 Cercopithecus diana,Cercopithecus diana,Endocranial_volume,mL,57.3,10.1038%2Fsrep24528_TableS1.tsv,Heldstab,2016,Heldstab,secondary,,Isler,Isler; Powell,female,verbatim,False
 Cercopithecus diana,Cercopithecus diana,Endocranial_volume,mL,62.61,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Cercopithecus diana,Cercopithecus_diana,Endocranial_volume,mL,57.2928571428571,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
-Cercopithecus doggetti,Cercopithecus doggetti,Endocranial_volume,mL,65.36,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
+Cercopithecus doggetti,Cercopithecus doggetti,Endocranial_volume,mL,65.36,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Cercopithecus erythrotis,Cercopithecus erythrotis,Endocranial_volume,mL,65.4,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,Male: this study; species mean: Harvey and Clutton-Brock 1985,,,unknown,verbatim,False
 Cercopithecus hamlyni,Cercopithecus hamlyni,Endocranial_volume,mL,51.2,10.1038%2Fsrep24528_TableS1.tsv,Heldstab,2016,Heldstab,secondary,,Isler,Isler; Powell,female,verbatim,False
 Cercopithecus hamlyni,Cercopithecus hamlyni,Endocranial_volume,mL,65.9,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,Verheyen 1962,,,unknown,verbatim,False
@@ -139,7 +156,6 @@ Cercopithecus hamlyni,Cercopithecus_hamlyni,Endocranial_volume,mL,61.86666666666
 Cercopithecus lhoesti,Cercopithecus lhoesti,Endocranial_volume,mL,66.5,10.1038%2Fsrep24528_TableS1.tsv,Heldstab,2016,Heldstab,secondary,,Isler,Isler; Powell,female,verbatim,False
 Cercopithecus lhoesti,Cercopithecus lhoesti,Endocranial_volume,mL,74.2,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,Verheyen 1962,,,unknown,verbatim,False
 Cercopithecus lhoesti,Cercopithecus_lhoesti,Endocranial_volume,mL,66.1272727272727,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
-Cercopithecus lowei,Cercopithecus lowei,Endocranial_volume,mL,55.64,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
 Cercopithecus mitis,Cercopithecus mitis,Endocranial_volume,mL,71.33,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Cercopithecus mitis,Cercopithecus_mitis,Endocranial_volume,mL,65.623209914992,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
 Cercopithecus mitis,Cercopithecus mitis,Endocranial_volume,mL,71.0,10.1242%2Fjeb.124826_TableS1.tsv,Seymour,2015,Seymour,secondary,,,,unknown,verbatim,False
@@ -157,31 +173,35 @@ Cercopithecus petaurista,Cercopithecus petaurista,Endocranial_volume,mL,53.93,10
 Cercopithecus petaurista,Cercopithecus_petaurista,Endocranial_volume,mL,52.7482902095439,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
 Cercopithecus pogonias,Cercopithecus pogonias,Endocranial_volume,mL,59.56,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Cercopithecus pogonias,Cercopithecus_pogonias,Endocranial_volume,mL,57.5936507936508,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
-Cercopithecus pogonias wolfi,Cercopithecus_pogonias_wolfi,Endocranial_volume,mL,53.5,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,unresolved,False
 Cercopithecus wolfi,Cercopithecus wolfi,Endocranial_volume,mL,61.45,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,Verheyen 1962,,,unknown,verbatim,False
+Cercopithecus wolfi,Cercopithecus_pogonias_wolfi,Endocranial_volume,mL,53.5,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,synonym:NCBI,False
+Chaeropus ecaudatus,Chaeropus ecaudatus,Endocranial_volume,mL,2.4,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
 Cheirogaleus adipicaudatus,Cheirogaleus adipicaudatus,Endocranial_volume,mL,3.04,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
 Cheirogaleus major,Cheirogaleus major,Endocranial_volume,mL,5.81,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Cheirogaleus major,Cheirogaleus_major,Endocranial_volume,mL,5.64528416666667,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
 Cheirogaleus medius,Cheirogaleus medius,Endocranial_volume,mL,2.6,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Cheirogaleus medius,Cheirogaleus_medius,Endocranial_volume,mL,2.54368421052632,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
-Cheirogaleus sibreei,Cheirogaleus sibreei,Endocranial_volume,mL,4.4,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
-Chiropotes albinasus,Chiropotes_albinasus,Endocranial_volume,mL,57.64,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,unresolved,False
-Chiropotes chiropotes,Chiropotes chiropotes,Endocranial_volume,mL,57.04,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
-Chiropotes chiropotes,Chiropotes_chiropotes,Endocranial_volume,mL,54.8676963744485,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,unresolved,False
-Chiropotes israelita,Chiropotes israelita,Endocranial_volume,mL,55.13,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
-Chiropotes satanas,Chiropotes satanas,Endocranial_volume,mL,48.33,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
-Chiropotes satanas,Chiropotes_satanas,Endocranial_volume,mL,49.4067838095238,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,unresolved,False
+Cheirogaleus sibreei,Cheirogaleus sibreei,Endocranial_volume,mL,4.4,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
+Cheracebus lugens,Callicebus lugens,Endocranial_volume,mL,18.97,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,our_judgment,False
+Cheracebus lugens,Callicebus_lugens,Endocranial_volume,mL,19.1321602990064,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,our_judgment,False
+Cheracebus medemi,Callicebus medemi,Endocranial_volume,mL,19.44,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,our_judgment,False
+Chiropotes albinasus,Chiropotes_albinasus,Endocranial_volume,mL,57.64,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
+Chiropotes chiropotes,Chiropotes chiropotes,Endocranial_volume,mL,57.04,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
+Chiropotes chiropotes,Chiropotes_chiropotes,Endocranial_volume,mL,54.8676963744485,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
+Chiropotes israelita,Chiropotes israelita,Endocranial_volume,mL,55.13,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
+Chiropotes satanas,Chiropotes satanas,Endocranial_volume,mL,48.33,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
+Chiropotes satanas,Chiropotes_satanas,Endocranial_volume,mL,49.4067838095238,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
 Chlorocebus aethiops,Chlorocebus aethiops,Endocranial_volume,mL,65.0,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,"Hopf and Claussen 1970 (fresh brain weights, wild animals from Eritrea)",,,unknown,verbatim,False
 Chlorocebus aethiops,Chlorocebus_aethiops,Endocranial_volume,mL,58.2469745350796,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
 Chlorocebus aethiops,Chlorocebus aethiops,Endocranial_volume,mL,67.0,10.1242%2Fjeb.124826_TableS1.tsv,Seymour,2015,Seymour,secondary,,,,unknown,verbatim,False
-Chlorocebus pygerythrus,Chlorocebus pygerythrus,Endocranial_volume,mL,62.58,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,hub,False
-Chlorocebus pygerythrus,Chlorocebus pygerythrus,Endocranial_volume,mL,63.69,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,hub,False
-Chlorocebus pygerythrus,Chlorocebus pygerythrus,Endocranial_volume,mL,55.4,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,hub,False
-Chlorocebus pygerythrus,Chlorocebus pygerythrus,Endocranial_volume,mL,64.64,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,hub,False
-Chlorocebus pygerythrus,Chlorocebus pygerythrus,Endocranial_volume,mL,61.9,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,hub,False
-Chlorocebus pygerythrus,Chlorocebus_pygerythrus,Endocranial_volume,mL,59.919952005599,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,hub,False
-Chlorocebus sabaeus,Chlorocebus sabaeus,Endocranial_volume,mL,64.91,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,hub,False
-Chlorocebus sabaeus,Chlorocebus_sabaeus,Endocranial_volume,mL,58.662812036859,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,Isler et al. 2008,Isler,,female,hub,False
+Chlorocebus pygerythrus,Chlorocebus pygerythrus,Endocranial_volume,mL,62.58,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
+Chlorocebus pygerythrus,Chlorocebus pygerythrus,Endocranial_volume,mL,63.69,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
+Chlorocebus pygerythrus,Chlorocebus pygerythrus,Endocranial_volume,mL,55.4,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
+Chlorocebus pygerythrus,Chlorocebus pygerythrus,Endocranial_volume,mL,64.64,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
+Chlorocebus pygerythrus,Chlorocebus pygerythrus,Endocranial_volume,mL,61.9,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
+Chlorocebus pygerythrus,Chlorocebus_pygerythrus,Endocranial_volume,mL,59.919952005599,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
+Chlorocebus sabaeus,Chlorocebus sabaeus,Endocranial_volume,mL,64.91,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
+Chlorocebus sabaeus,Chlorocebus_sabaeus,Endocranial_volume,mL,58.662812036859,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,Isler et al. 2008,Isler,,female,verbatim,False
 Colobus angolensis,Colobus angolensis,Endocranial_volume,mL,77.7,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,Verheyen 1962,,,unknown,verbatim,False
 Colobus angolensis,Colobus_angolensis,Endocranial_volume,mL,72.3,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,Isler et al. 2008,Isler,,female,verbatim,False
 Colobus guereza,Colobus guereza,Endocranial_volume,mL,72.6,10.1038%2Fsrep24528_TableS1.tsv,Heldstab,2016,Heldstab,secondary,,Isler,Isler; Powell,female,verbatim,False
@@ -197,20 +217,54 @@ Colobus satanas,Colobus_satanas,Endocranial_volume,mL,71.8,10.1098%2Frspb.2017.1
 Colobus satanas,Colobus satanas,Endocranial_volume,mL,79.0,10.1242%2Fjeb.124826_TableS1.tsv,Seymour,2015,Seymour,secondary,,,,unknown,verbatim,False
 Colobus vellerosus,Colobus vellerosus,Endocranial_volume,mL,73.07,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Colobus vellerosus,Colobus_vellerosus,Endocranial_volume,mL,70.6051957540316,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
+Dactylonax palpator,Dactylonax palpator,Endocranial_volume,mL,6.91,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Dactylopsila tatei,Dactylopsila tatei,Endocranial_volume,mL,4.45,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Dactylopsila trivirgata,Dactylopsila trivirgata,Endocranial_volume,mL,5.83,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Dasycercus cristicauda,Dasycercus cristicauda,Endocranial_volume,mL,1.24,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Dasykaluta rosamondae,Dasykaluta rosamondae,Endocranial_volume,mL,0.54,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Dasyuroides byrnei,Dasyuroides byrnei,Endocranial_volume,mL,1.5,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Dasyurus albopunctatus,Dasyurus albopunctatus,Endocranial_volume,mL,3.79,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Dasyurus geoffroii,Dasyurus geoffroii,Endocranial_volume,mL,5.17,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Dasyurus hallucatus,Dasyurus hallucatus,Endocranial_volume,mL,3.38,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Dasyurus maculatus,Dasyurus maculatus,Endocranial_volume,mL,9.41,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Dasyurus spartacus,Dasyurus spartacus,Endocranial_volume,mL,5.3,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Dasyurus viverrinus,Dasyurus viverrinus,Endocranial_volume,mL,5.33,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
 Daubentonia madagascariensis,Daubentonia madagascariensis,Endocranial_volume,mL,44.85,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Daubentonia madagascariensis,Daubentonia_madagascariensis,Endocranial_volume,mL,44.6996470540466,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,Isler et al. 2008,Isler,,both,verbatim,False
+Dendrolagus bennetianus,Dendrolagus bennetianus,Endocranial_volume,mL,18.5,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
 Dendrolagus dorianus,Dendrolagus dorianus,Endocranial_volume,mL,38.0,10.1242%2Fjeb.124826_TableS1.tsv,Seymour,2015,Seymour,secondary,,,,unknown,verbatim,False
+Dendrolagus dorianus,Dendrolagus dorianus,Endocranial_volume,mL,32.3,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,Endocranial_volume,mL,28.4,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Dendrolagus inustus,Dendrolagus inustus,Endocranial_volume,mL,30.1,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Dendrolagus lumholtzi,Dendrolagus lumholtzi,Endocranial_volume,mL,26.2,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
 Dendrolagus matschiei,Dendrolagus matschiei,Endocranial_volume,mL,29.0,10.1242%2Fjeb.124826_TableS1.tsv,Seymour,2015,Seymour,secondary,,,,unknown,verbatim,False
+Dendrolagus matschiei,Dendrolagus matschiei,Endocranial_volume,mL,27.5,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Dendrolagus scottae,Dendrolagus scottae,Endocranial_volume,mL,29.2,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Dendrolagus spadix,Dendrolagus spadix,Endocranial_volume,mL,28.5,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Dendrolagus ursinus,Dendrolagus ursinus,Endocranial_volume,mL,26.3,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Didelphis marsupialis californica,Didelphis marsupialis californica,Endocranial_volume,mL,6.35,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Didelphis virginiana,Didelphis virginiana,Endocranial_volume,mL,6.72,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Distoechurus pennatus,Distoechurus pennatus,Endocranial_volume,mL,0.94,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Dorcopsis atrata,Dorcopsis atrata,Endocranial_volume,mL,16.7,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Dorcopsis hageni,Dorcopsis hageni,Endocranial_volume,mL,22.5,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Dorcopsis luctuosa,Dorcopsis luctuosa,Endocranial_volume,mL,20.6,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Dorcopsis muelleri,Dorcopsis muelleri,Endocranial_volume,mL,20.4,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Dorcopsulus vanheurni,Dorcopsulus vanheurni,Endocranial_volume,mL,11.8,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Dorcopsulusmacleayi,Dorcopsulusmacleayi,Endocranial_volume,mL,13.5,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Dromciops gliroides,Dromciops gliroides,Endocranial_volume,mL,0.81,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Echymipera clara,Echymipera clara,Endocranial_volume,mL,4.48,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Echymipera kalubu,Echymipera kalubu,Endocranial_volume,mL,3.67,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Echymipera rufescens,Echymipera rufescens,Endocranial_volume,mL,3.73,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
 Erythrocebus patas,Erythrocebus patas,Endocranial_volume,mL,97.73,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,Pooled (this study and Verheyen 1962),,,unknown,verbatim,False
 Erythrocebus patas,Erythrocebus_patas,Endocranial_volume,mL,87.5749442857143,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,Isler et al. 2008,Isler,,female,verbatim,False
 Eulemur albifrons,Eulemur albifrons,Endocranial_volume,mL,21.45,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Eulemur albifrons,Eulemur_albifrons,Endocranial_volume,mL,23.019452173913,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
-Eulemur albocollaris,Eulemur albocollaris,Endocranial_volume,mL,22.1,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
-Eulemur collaris,Eulemur_collaris,Endocranial_volume,mL,22.8852941176471,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,unresolved,False
+Eulemur cinereiceps,Eulemur albocollaris,Endocranial_volume,mL,22.1,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,author_judgment,False
 Eulemur coronatus,Eulemur coronatus,Endocranial_volume,mL,19.2,10.1038%2Fsrep24528_TableS1.tsv,Heldstab,2016,Heldstab,secondary,,Isler,Isler; Powell,female,verbatim,False
 Eulemur coronatus,Eulemur coronatus,Endocranial_volume,mL,20.65,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Eulemur coronatus,Eulemur_coronatus,Endocranial_volume,mL,19.7837826666667,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
 Eulemur fulvus,Eulemur fulvus,Endocranial_volume,mL,25.77,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
+Eulemur fulvus,Eulemur_collaris,Endocranial_volume,mL,22.8852941176471,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,subspecies_assign,False
 Eulemur fulvus,Eulemur_fulvus,Endocranial_volume,mL,24.6577336055855,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
 Eulemur macaco,Eulemur macaco,Endocranial_volume,mL,22.7,10.1038%2Fsrep24528_TableS1.tsv,Heldstab,2016,Heldstab,secondary,,Isler,Isler; Powell,female,verbatim,False
 Eulemur macaco,Eulemur macaco,Endocranial_volume,mL,24.51,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
@@ -222,27 +276,26 @@ Eulemur rubriventer,Eulemur rubriventer,Endocranial_volume,mL,26.23,10.1016%2Fj.
 Eulemur rubriventer,Eulemur_rubriventer,Endocranial_volume,mL,23.9129237560405,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
 Eulemur rufus,Eulemur rufus,Endocranial_volume,mL,25.4,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Eulemur rufus,Eulemur_rufus,Endocranial_volume,mL,22.5407023529412,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
-Eulemur sanfordi,Eulemur_sanfordi,Endocranial_volume,mL,21.6666666666667,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,unresolved,False
-Euoticus elegantulus,Euoticus elegantulus,Endocranial_volume,mL,5.53,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
-Euoticus elegantulus,Euoticus_elegantulus,Endocranial_volume,mL,5.44724303703704,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,unresolved,False
+Eulemur sanfordi,Eulemur_sanfordi,Endocranial_volume,mL,21.6666666666667,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
+Euoticus elegantulus,Euoticus elegantulus,Endocranial_volume,mL,5.53,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
+Euoticus elegantulus,Euoticus_elegantulus,Endocranial_volume,mL,5.44724303703704,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
 Euoticus pallidus,Euoticus pallidus,Endocranial_volume,mL,5.19,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
 Euoticus pallidus,Euoticus_pallidus,Endocranial_volume,mL,5.18567511111111,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,Isler et al. 2008,Isler,,both,unresolved,False
-Galago cameronensis,Galago cameronensis,Endocranial_volume,mL,5.58,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
-Galago gabonensis,Galago gabonensis,Endocranial_volume,mL,5.36,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
-Galago gallarum,Galago_gallarum,Endocranial_volume,mL,4.32,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,unresolved,False
-Galago granti,Galago granti,Endocranial_volume,mL,4.07,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
+Galago alleni,Galago cameronensis,Endocranial_volume,mL,5.58,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,author_judgment,False
+Galago alleni,Sciurocheirus_alleni_cameronensis,Endocranial_volume,mL,5.68,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,subspecies_assign,False
+Galago demidoff,Galago demidoff,Endocranial_volume,mL,2.65,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,hub,False
+Galago gabonensis,Galago gabonensis,Endocranial_volume,mL,5.36,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
+Galago gabonensis,Sciurocheirus_gabonensis,Endocranial_volume,mL,5.35737214285714,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,Isler et al. 2008,Isler,,both,our_judgment,False
+Galago gallarum,Galago_gallarum,Endocranial_volume,mL,4.32,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
 Galago matschiei,Galago matschiei,Endocranial_volume,mL,4.62,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Galago moholi,Galago moholi,Endocranial_volume,mL,3.71,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Galago moholi,Galago_moholi,Endocranial_volume,mL,3.67314438452334,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
-Galago orinus,Galago orinus,Endocranial_volume,mL,2.64,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
 Galago senegalensis,Galago senegalensis,Endocranial_volume,mL,3.96,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Galago senegalensis,Galago_senegalensis,Endocranial_volume,mL,3.95153820382861,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
 Galago senegalensis,Galago senegalensis,Endocranial_volume,mL,5.0,10.1242%2Fjeb.124826_TableS1.tsv,Seymour,2015,Seymour,secondary,,,,unknown,verbatim,False
-Galago thomasi,Galago thomasi,Endocranial_volume,mL,3.12,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
-Galago zanzibaricus,Galago zanzibaricus,Endocranial_volume,mL,3.51,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
-Galagoides demidoff,Galago demidoff,Endocranial_volume,mL,2.65,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,synonym:legacy_key,False
 Galagoides demidoff,Galagoides_demidovii,Endocranial_volume,mL,2.63338838565995,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,synonym:NCBI,False
-Galagoides granti,Galagoides_granti,Endocranial_volume,mL,4.073808,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,unresolved,False
+Galagoides orinus,Galago orinus,Endocranial_volume,mL,2.64,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,our_judgment,False
+Galagoides thomasi,Galago thomasi,Endocranial_volume,mL,3.12,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,synonym:NCBI,False
 Galagoides thomasi,Galagoides_thomasi,Endocranial_volume,mL,2.82251383333333,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
 Gorilla beringei,Gorilla beringei,Endocranial_volume,mL,491.27,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,hub,False
 Gorilla beringei,Gorilla_beringei,Endocranial_volume,mL,456.14506,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,hub,False
@@ -251,14 +304,16 @@ Gorilla gorilla,Gorilla gorilla,Endocranial_volume,mL,434.4,10.1038%2Fsrep24528_
 Gorilla gorilla,Gorilla gorilla,Endocranial_volume,mL,490.41,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,hub,False
 Gorilla gorilla,Gorilla_gorilla,Endocranial_volume,mL,433.735294117647,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,hub,False
 Gorilla sp.,Gorilla gorilla,Endocranial_volume,mL,461.0,10.1242%2Fjeb.124826_TableS1.tsv,Seymour,2015,Seymour,secondary,,,,unknown,lump,False
-Hapalemur alaotrensis,Hapalemur alaotrensis,Endocranial_volume,mL,13.8,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
-Hapalemur alaotrensis,Hapalemur_alaotrensis,Endocranial_volume,mL,14.5,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,unresolved,False
+Gymnobelideus leadbeateri,Gymnobelideus leadbeateri,Endocranial_volume,mL,2.85,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
 Hapalemur griseus,Hapalemur griseus,Endocranial_volume,mL,13.7,10.1038%2Fsrep24528_TableS1.tsv,Heldstab,2016,Heldstab,secondary,,Isler,Isler; Powell,female,verbatim,False
 Hapalemur griseus,Hapalemur griseus,Endocranial_volume,mL,14.09,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
+Hapalemur griseus,Hapalemur alaotrensis,Endocranial_volume,mL,13.8,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,subspecies_assign,False
+Hapalemur griseus,Hapalemur_alaotrensis,Endocranial_volume,mL,14.5,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,subspecies_assign,False
 Hapalemur griseus,Hapalemur_griseus,Endocranial_volume,mL,13.7754512195122,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
-Hapalemur occidentalis,Hapalemur occidentalis,Endocranial_volume,mL,14.2,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
-Hapalemur occidentalis,Hapalemur_occidentalis,Endocranial_volume,mL,13.75,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,unresolved,False
+Hapalemur occidentalis,Hapalemur occidentalis,Endocranial_volume,mL,14.2,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
+Hapalemur occidentalis,Hapalemur_occidentalis,Endocranial_volume,mL,13.75,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
 Hemibelideus lemuroides,Hemibelideus lemuroides,Endocranial_volume,mL,3.35,10.1242%2Fjeb.124826_TableS1.tsv,Seymour,2015,Seymour,secondary,,,,unknown,verbatim,False
+Hemibelideus lemuroides,Hemibelideus lemuroides,Endocranial_volume,mL,3.15,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
 Homo sapiens,Homo sapiens,Endocranial_volume,mL,1253.3,10.7554%2FeLife.77875_Supplementaryfile3.tsv,Caspar,2022,Caspar,primary,"Bienvenu, T., Guy, F., Coudyzer, W., Gilissen, E., Roualdès, G., Vignaud, P., & Brunet, M. (2011). Assessing endocranial variations in great apes and humans using 3D data from virtual endocasts. American journal of physical anthropology, 145(2), 231-246.",,,female,verbatim,False
 Homo sapiens,Homo sapiens,Endocranial_volume,mL,1212.7,10.1038%2Fsrep24528_TableS1.tsv,Heldstab,2016,Heldstab,secondary,,,Isler; Powell,female,verbatim,False
 Homo sapiens,Homo sapiens,Endocranial_volume,mL,1186.0,10.1242%2Fjeb.124826_TableS1.tsv,Seymour,2015,Seymour,secondary,,,,unknown,verbatim,False
@@ -267,7 +322,7 @@ Hoolock hoolock,Hoolock_hoolock,Endocranial_volume,mL,108.316400827117,10.1098%2
 Hylobates agilis,Hylobates agilis,Endocranial_volume,mL,91.16,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,Pooled (this study and Hrdlicka 1925),,,unknown,verbatim,False
 Hylobates agilis,Hylobates_agilis,Endocranial_volume,mL,95.9407407407408,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
 Hylobates agilis,Hylobates agilis,Endocranial_volume,mL,115.0,10.1242%2Fjeb.124826_TableS1.tsv,Seymour,2015,Seymour,secondary,,,,unknown,verbatim,False
-Hylobates albibarbis,Hylobates_albibarbis,Endocranial_volume,mL,84.35,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,unresolved,False
+Hylobates albibarbis,Hylobates_albibarbis,Endocranial_volume,mL,84.35,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
 Hylobates klossii,Hylobates klossii,Endocranial_volume,mL,87.99,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Hylobates klossii,Hylobates_klossii,Endocranial_volume,mL,87.5534865,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
 Hylobates lar,Hylobates lar,Endocranial_volume,mL,101.378,10.7554%2FeLife.77875_Supplementaryfile3.tsv,Caspar,2022,Caspar,primary,"Powell, L. E., Isler, K., & Barton, R. A. (2017). Re-evaluating the link between brain size and behavioural ecology in primates. Proceedings of the Royal Society B: Biological Sciences, 284(1865), 20171765.",Isler,,female,verbatim,False
@@ -286,18 +341,28 @@ Hylobates pileatus,Hylobates_pileatus,Endocranial_volume,mL,84.6851851851852,10.
 Hylobates syndactylus,Hylobates syndactylus,Endocranial_volume,mL,120.0,10.1242%2Fjeb.124826_TableS1.tsv,Seymour,2015,Seymour,secondary,,,,unknown,verbatim,False
 Indri indri,Indri indri,Endocranial_volume,mL,34.81,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Indri indri,Indri_indri,Endocranial_volume,mL,35.0086457446808,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
-Lagothrix cana,Lagothrix cana,Endocranial_volume,mL,99.34,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
-Lagothrix cana,Lagothrix_cana,Endocranial_volume,mL,96.227615,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,unresolved,False
-Lagothrix lagothricha,Lagothrix lagotricha,Endocranial_volume,mL,96.5,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,Hershkovitz 1970,,,unknown,spelling,False
-Lagothrix lagothricha,Lagothrix_lagotricha,Endocranial_volume,mL,88.2181818181818,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,spelling,False
+Isoodon macrourus,Isoodon macrourus,Endocranial_volume,mL,4.42,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Isoodono besulus,Isoodono besulus,Endocranial_volume,mL,3.89,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Lagorchestes conspicillatus,Lagorchestes conspicillatus,Endocranial_volume,mL,14.0,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Lagorchestes hirsutus,Lagorchestes hirsutus,Endocranial_volume,mL,7.77,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Lagorchestes leporides,Lagorchestes leporides,Endocranial_volume,mL,12.6,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Lagostrophus fasciatus,Lagostrophus fasciatus,Endocranial_volume,mL,7.0,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Lagothrix cana,Lagothrix cana,Endocranial_volume,mL,99.34,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
+Lagothrix cana,Lagothrix_cana,Endocranial_volume,mL,96.227615,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
 Lagothrix lagothricha,Lagothrix lagotricha,Endocranial_volume,mL,110.0,10.1242%2Fjeb.124826_TableS1.tsv,Seymour,2015,Seymour,secondary,,,,unknown,spelling,False
-Lagothrix lugens,Lagothrix_lugens,Endocranial_volume,mL,94.8,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,unresolved,False
-Lagothrix poeppigii,Lagothrix_poeppigii,Endocranial_volume,mL,86.1,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,unresolved,False
+Lagothrix lagotricha,Lagothrix lagotricha,Endocranial_volume,mL,96.5,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,Hershkovitz 1970,,,unknown,hub,False
+Lagothrix lagotricha,Lagothrix_lagotricha,Endocranial_volume,mL,88.2181818181818,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,hub,False
+Lagothrix lugens,Lagothrix_lugens,Endocranial_volume,mL,94.8,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
+Lagothrix poeppigii,Lagothrix_poeppigii,Endocranial_volume,mL,86.1,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
 Lasiorhinus latifrons,Lasiorhinus latifrons,Endocranial_volume,mL,56.0,10.1242%2Fjeb.124826_TableS1.tsv,Seymour,2015,Seymour,secondary,,,,unknown,verbatim,False
+Lasiorhinus latifrons,Lasiorhinus latifrons,Endocranial_volume,mL,55.5,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
 Lemur catta,Lemur catta,Endocranial_volume,mL,23.4,10.1038%2Fsrep24528_TableS1.tsv,Heldstab,2016,Heldstab,secondary,,Isler,Isler; Powell,female,verbatim,False
 Lemur catta,Lemur catta,Endocranial_volume,mL,22.9,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Lemur catta,Lemur_catta,Endocranial_volume,mL,22.1015616666667,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
 Lemur catta,Lemur catta,Endocranial_volume,mL,23.0,10.1242%2Fjeb.124826_TableS1.tsv,Seymour,2015,Seymour,secondary,,,,unknown,verbatim,False
+Leontocebus nigricollis,Saguinus nigricollis,Endocranial_volume,mL,8.9,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,Harvey and Clutton-Brock 1985,,,unknown,our_judgment,False
+Leontocebus nigricollis,Saguinus_nigricollis,Endocranial_volume,mL,8.9,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,Isler et al. 2008,Isler,,both,our_judgment,False
+Leontocebus tripartitus,Saguinus_tripartitus,Endocranial_volume,mL,8.5,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,our_judgment,False
 Leontopithecus chrysomelas,Leontopithecus chrysomelas,Endocranial_volume,mL,11.836,10.7554%2FeLife.77875_Supplementaryfile3.tsv,Caspar,2022,Caspar,primary,"Powell, L. E., Isler, K., & Barton, R. A. (2017). Re-evaluating the link between brain size and behavioural ecology in primates. Proceedings of the Royal Society B: Biological Sciences, 284(1865), 20171765.",Isler,,female,verbatim,False
 Leontopithecus chrysomelas,Leontopithecus chrysomelas,Endocranial_volume,mL,11.8,10.1038%2Fsrep24528_TableS1.tsv,Heldstab,2016,Heldstab,secondary,,Isler,Isler; Powell,female,verbatim,False
 Leontopithecus chrysomelas,Leontopithecus chrysomelas,Endocranial_volume,mL,11.84,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
@@ -324,8 +389,8 @@ Lophocebus albigena,Lophocebus_albigena,Endocranial_volume,mL,90.6426757158101,1
 Lophocebus albigena,Lophocebus albigena,Endocranial_volume,mL,98.0,10.1242%2Fjeb.124826_TableS1.tsv,Seymour,2015,Seymour,secondary,,,,unknown,verbatim,False
 Lophocebus aterrimus,Lophocebus aterrimus,Endocranial_volume,mL,101.59,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Lophocebus aterrimus,Lophocebus_aterrimus,Endocranial_volume,mL,87.600676,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
-Loris lydekkerianus,Loris lydekkerianus,Endocranial_volume,mL,6.34,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
-Loris lydekkerianus,Loris_lydekkerianus,Endocranial_volume,mL,6.36504723258506,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,unresolved,False
+Loris lydekkerianus,Loris lydekkerianus,Endocranial_volume,mL,6.34,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,synonym:NCBI,False
+Loris lydekkerianus,Loris_lydekkerianus,Endocranial_volume,mL,6.36504723258506,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,synonym:NCBI,False
 Loris tardigradus,Loris tardigradus,Endocranial_volume,mL,5.87,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Loris tardigradus,Loris_tardigradus,Endocranial_volume,mL,5.383692,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
 Loris tardigradus,Loris tardigradus,Endocranial_volume,mL,4.0,10.1242%2Fjeb.124826_TableS1.tsv,Seymour,2015,Seymour,secondary,,,,unknown,verbatim,False
@@ -346,9 +411,9 @@ Macaca fascicularis,Macaca_fascicularis,Endocranial_volume,mL,60.933949232039,10
 Macaca fascicularis,Macaca fascicularis,Endocranial_volume,mL,53.8,10.1242%2Fjeb.124826_TableS1.tsv,Seymour,2015,Seymour,secondary,,,,unknown,verbatim,False
 Macaca fuscata,Macaca fuscata,Endocranial_volume,mL,102.92,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,Ikeda and Watanabe 1966,,,unknown,verbatim,False
 Macaca fuscata,Macaca_fuscata,Endocranial_volume,mL,97.9,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,Isler et al. 2008,Isler,,female,verbatim,False
-Macaca hecki,Macaca_hecki,Endocranial_volume,mL,94.58,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,unresolved,False
-Macaca leonina,Macaca leonina,Endocranial_volume,mL,85.6,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
-Macaca leonina,Macaca_leonina,Endocranial_volume,mL,82.1245876742054,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,Isler et al. 2008,Isler,,female,unresolved,False
+Macaca hecki,Macaca_hecki,Endocranial_volume,mL,94.58,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
+Macaca leonina,Macaca leonina,Endocranial_volume,mL,85.6,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
+Macaca leonina,Macaca_leonina,Endocranial_volume,mL,82.1245876742054,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,Isler et al. 2008,Isler,,female,verbatim,False
 Macaca maura,Macaca_maura,Endocranial_volume,mL,87.3666666666667,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
 Macaca maura,Macaca maura,Endocranial_volume,mL,105.0,10.1242%2Fjeb.124826_TableS1.tsv,Seymour,2015,Seymour,secondary,,,,unknown,verbatim,False
 Macaca mulatta,Macaca mulatta,Endocranial_volume,mL,88.98,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
@@ -382,9 +447,18 @@ Macaca tonkeana,Macaca tonkeana,Endocranial_volume,mL,93.791,10.7554%2FeLife.778
 Macaca tonkeana,Macaca tonkeana,Endocranial_volume,mL,93.7,10.1038%2Fsrep24528_TableS1.tsv,Heldstab,2016,Heldstab,secondary,,Powell,Isler; Powell,female,verbatim,False
 Macaca tonkeana,Macaca_tonkeana,Endocranial_volume,mL,93.7909090909091,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
 Macropus dorsalis,Macropus dorsalis,Endocranial_volume,mL,26.6,10.1242%2Fjeb.124826_TableS1.tsv,Seymour,2015,Seymour,secondary,,,,unknown,verbatim,False
+Macropus dorsalis,Macropus dorsalis,Endocranial_volume,mL,29.2,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,hub,False
 Macropus fuliginosus,Macropus fuliginosus,Endocranial_volume,mL,66.75,10.1242%2Fjeb.124826_TableS1.tsv,Seymour,2015,Seymour,secondary,,,,unknown,verbatim,False
+Macropus fuliginosus,Macropus fuliginosus,Endocranial_volume,mL,58.0,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Macropus giganteus,Macropus giganteus,Endocranial_volume,mL,69.8,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Macropus greyi,Macropus greyi,Endocranial_volume,mL,25.0,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Macropus parryi,Macropus parryi,Endocranial_volume,mL,41.3,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
 Macropus robustus,Macropus robustus,Endocranial_volume,mL,58.24,10.1242%2Fjeb.124826_TableS1.tsv,Seymour,2015,Seymour,secondary,,,,unknown,verbatim,False
+Macropus robustus,Macropus robustus,Endocranial_volume,mL,59.0,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
 Macropus rufus,Macropus rufus,Endocranial_volume,mL,51.575,10.1242%2Fjeb.124826_TableS1.tsv,Seymour,2015,Seymour,secondary,,,,unknown,verbatim,False
+Macropus rufus,Macropus rufus,Endocranial_volume,mL,62.4,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,hub,False
+Macrotis lagotis,Macrotis lagotis,Endocranial_volume,mL,6.57,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Macrotis leucura,Macrotis leucura,Endocranial_volume,mL,4.3,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
 Mandrillus leucophaeus,Mandrillus leucophaeus,Endocranial_volume,mL,148.0,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,Elton et al. 2001,,,unknown,verbatim,False
 Mandrillus leucophaeus,Mandrillus_leucophaeus,Endocranial_volume,mL,133.17647,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
 Mandrillus leucophaeus,Mandrillus leucophaeus,Endocranial_volume,mL,160.0,10.1242%2Fjeb.124826_TableS1.tsv,Seymour,2015,Seymour,secondary,,,,unknown,verbatim,False
@@ -393,36 +467,59 @@ Mandrillus sphinx,Mandrillus sphinx,Endocranial_volume,mL,137.3,10.1038%2Fsrep24
 Mandrillus sphinx,Mandrillus sphinx,Endocranial_volume,mL,153.88,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Mandrillus sphinx,Mandrillus_sphinx,Endocranial_volume,mL,136.42175,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
 Mandrillus sphinx,Mandrillus sphinx,Endocranial_volume,mL,161.2,10.1242%2Fjeb.124826_TableS1.tsv,Seymour,2015,Seymour,secondary,,,,unknown,verbatim,False
+Marmosa mexicana,Marmosa mexicana,Endocranial_volume,mL,1.0,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Marmosa murina madierensis,Marmosa murina madierensis,Endocranial_volume,mL,1.1,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Marmosa robinsoni,Marmosa robinsoni,Endocranial_volume,mL,0.7,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,synonym:NCBI,False
+Marmosa rubra,Marmosa rubra,Endocranial_volume,mL,1.2,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Metachirus nudicaudatus,Metachirus nudicaudatus,Endocranial_volume,mL,3.5,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
 Mico argentatus,Callithrix argentata,Endocranial_volume,mL,7.95,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,synonym:NCBI,False
-Mico argentatus,Mico_argentatus,Endocranial_volume,mL,7.7551583,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,hub,False
-Mico humeralifer,Mico_humeralifer,Endocranial_volume,mL,8.37571428571428,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,hub,False
+Mico argentatus,Mico_argentatus,Endocranial_volume,mL,7.7551583,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
+Mico humeralifer,Mico_humeralifer,Endocranial_volume,mL,8.37571428571428,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
 Microcebus murinus,Microcebus murinus,Endocranial_volume,mL,1.63,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Microcebus murinus,Microcebus_murinus,Endocranial_volume,mL,1.60463191666667,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
 Microcebus rufus,Microcebus rufus,Endocranial_volume,mL,1.72,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Microcebus rufus,Microcebus_rufus,Endocranial_volume,mL,1.62527196428571,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
-Miopithecus ogouensis,Miopithecus ogouensis,Endocranial_volume,mL,37.35,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
-Miopithecus ogouensis,Miopithecus_ogouensis,Endocranial_volume,mL,34.7595142424242,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,Isler et al. 2008,Isler,,female,unresolved,False
+Microperoryctes longicauda,Microperoryctes longicauda,Endocranial_volume,mL,3.81,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Miopithecus ogouensis,Miopithecus ogouensis,Endocranial_volume,mL,37.35,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
+Miopithecus ogouensis,Miopithecus_ogouensis,Endocranial_volume,mL,34.7595142424242,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,Isler et al. 2008,Isler,,female,verbatim,False
 Mirza coquereli,Mirza coquereli,Endocranial_volume,mL,5.8,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Mirza coquereli,Mirza_coquereli,Endocranial_volume,mL,5.7867002,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
+Monodelphis brevicaudata,Monodelphis brevicaudata,Endocranial_volume,mL,0.9,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Murexia longicaudata,Murexia longicaudata,Endocranial_volume,mL,1.68,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Murexia melanurus,Murexia melanurus,Endocranial_volume,mL,0.65,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Murexia rothschildi,Murexia rothschildi,Endocranial_volume,mL,1.05,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Myoictis melas,Myoictis melas,Endocranial_volume,mL,2.05,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Myrmecobius fasciatus,Myrmecobius fasciatus,Endocranial_volume,mL,4.25,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,synonym:NCBI,False
 Nasalis larvatus,Nasalis larvatus,Endocranial_volume,mL,92.3,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Nasalis larvatus,Nasalis_larvatus,Endocranial_volume,mL,84.847022848406,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
 Nasalis larvatus,Nasalis larvatus,Endocranial_volume,mL,78.5,10.1242%2Fjeb.124826_TableS1.tsv,Seymour,2015,Seymour,secondary,,,,unknown,verbatim,False
+Neophascogale lorentzi,Neophascogale lorentzi,Endocranial_volume,mL,2.45,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Ningaui ridei,Ningaui ridei,Endocranial_volume,mL,0.24,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Ningaui yvonneae,Ningaui yvonneae,Endocranial_volume,mL,0.26,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
 Nomascus concolor,Nomascus_concolor,Endocranial_volume,mL,125.671428571429,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
 Nomascus gabriellae,Nomascus gabriellae,Endocranial_volume,mL,117.044,10.7554%2FeLife.77875_Supplementaryfile3.tsv,Caspar,2022,Caspar,primary,"Powell, L. E., Isler, K., & Barton, R. A. (2017). Re-evaluating the link between brain size and behavioural ecology in primates. Proceedings of the Royal Society B: Biological Sciences, 284(1865), 20171765.",Isler,,female,verbatim,False
 Nomascus gabriellae,Nomascus gabriellae,Endocranial_volume,mL,119.38,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Nomascus gabriellae,Nomascus_gabriellae,Endocranial_volume,mL,117.044444444444,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
 Nomascus leucogenys,Nomascus leucogenys /siki,Endocranial_volume,mL,121.967,10.7554%2FeLife.77875_Supplementaryfile3.tsv,Caspar,2022,Caspar,primary,"Powell, L. E., Isler, K., & Barton, R. A. (2017). Re-evaluating the link between brain size and behavioural ecology in primates. Proceedings of the Royal Society B: Biological Sciences, 284(1865), 20171765.",Isler,,female,our_judgment,False
 Nomascus leucogenys,Nomascus_leucogenys,Endocranial_volume,mL,121.966666666667,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
-Nycticebus bengalensis,Nycticebus bengalensis,Endocranial_volume,mL,13.49,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
-Nycticebus bengalensis,Nycticebus_bengalensis,Endocranial_volume,mL,12.8721774631272,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,unresolved,False
+Notamacropus agilis,Macropus  agilis,Endocranial_volume,mL,33.3,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,synonym:NCBI,False
+Notamacropus eugenii,Macropus eugenii,Endocranial_volume,mL,23.7,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,synonym:NCBI,False
+Notamacropus irma,Macropus irma,Endocranial_volume,mL,24.7,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,synonym:NCBI,False
+Notamacropus parma,Macropus parma,Endocranial_volume,mL,18.7,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,synonym:legacy_override,False
+Notamacropus rufogriseus,Macropus rufogriseus,Endocranial_volume,mL,36.0,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,synonym:legacy_key,False
+Notoryctes caurinus,Notoryctes caurinus,Endocranial_volume,mL,0.78,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Nycticebus bengalensis,Nycticebus bengalensis,Endocranial_volume,mL,13.49,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,synonym:NCBI,False
+Nycticebus bengalensis,Nycticebus_bengalensis,Endocranial_volume,mL,12.8721774631272,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,synonym:NCBI,False
 Nycticebus coucang,Nycticebus coucang,Endocranial_volume,mL,10.13,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Nycticebus coucang,Nycticebus coucang,Endocranial_volume,mL,10.38,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Nycticebus coucang,Nycticebus coucang,Endocranial_volume,mL,9.67,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Nycticebus coucang,Nycticebus_coucang,Endocranial_volume,mL,9.97419143285283,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
 Nycticebus coucang,Nycticebus coucang,Endocranial_volume,mL,8.8,10.1242%2Fjeb.124826_TableS1.tsv,Seymour,2015,Seymour,secondary,,,,unknown,verbatim,False
-Nycticebus javanicus,Nycticebus_javanicus,Endocranial_volume,mL,10.3799193221141,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,unresolved,False
-Nycticebus pygmaeus,Nycticebus pygmaeus,Endocranial_volume,mL,7.23,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
-Nycticebus pygmaeus,Nycticebus_pygmaeus,Endocranial_volume,mL,7.22901183333333,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,unresolved,False
+Nycticebus javanicus,Nycticebus_javanicus,Endocranial_volume,mL,10.3799193221141,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
+Onychogalea fraenata,Onychogalea fraenata,Endocranial_volume,mL,14.7,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Onychogalea lunata,Onychogalea lunata,Endocranial_volume,mL,10.2,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Onychogalea unguifera,Onychogalea unguifera,Endocranial_volume,mL,16.7,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Osphranter antilopinus,Macropus antilopinus,Endocranial_volume,mL,56.8,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,synonym:NCBI,False
 Otolemur crassicaudatus,Otolemur crassicaudatus,Endocranial_volume,mL,11.78,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Otolemur crassicaudatus,Otolemur_crassicaudatus,Endocranial_volume,mL,11.7519564896826,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
 Otolemur garnettii,Otolemur garnettii,Endocranial_volume,mL,11.5,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
@@ -430,7 +527,7 @@ Otolemur garnettii,Otolemur garnettii,Endocranial_volume,mL,10.4,10.1016%2Fj.jhe
 Otolemur garnettii,Otolemur garnettii,Endocranial_volume,mL,9.83,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Otolemur garnettii,Otolemur garnettii,Endocranial_volume,mL,12.58,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Otolemur garnettii,Otolemur_garnettii,Endocranial_volume,mL,10.7663274452125,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
-Otolemur monteiri,Otolemur monteiri,Endocranial_volume,mL,11.4,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
+Otolemur monteiri,Otolemur monteiri,Endocranial_volume,mL,11.4,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Pan paniscus,Pan paniscus,Endocranial_volume,mL,326.5,10.7554%2FeLife.77875_Supplementaryfile3.tsv,Caspar,2022,Caspar,primary,"Powell, L. E., Isler, K., & Barton, R. A. (2017). Re-evaluating the link between brain size and behavioural ecology in primates. Proceedings of the Royal Society B: Biological Sciences, 284(1865), 20171765.",Isler,,female,verbatim,False
 Pan paniscus,Pan paniscus,Endocranial_volume,mL,341.29,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Pan paniscus,Pan_paniscus,Endocranial_volume,mL,326.25,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,Isler et al. 2008,Isler,,female,verbatim,False
@@ -454,23 +551,67 @@ Papio hamadryas,Papio hamadryas,Endocranial_volume,mL,156.5,10.1242%2Fjeb.124826
 Papio papio,Papio papio,Endocranial_volume,mL,142.5,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,Elton et al. 2001,,,unknown,verbatim,False
 Papio ursinus,Papio ursinus,Endocranial_volume,mL,178.0,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,Elton et al. 2001,,,unknown,hub,False
 Papio ursinus,Papio_ursinus,Endocranial_volume,mL,165.0,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,Isler et al. 2008,Isler,,female,hub,False
+Paragalago granti,Galago granti,Endocranial_volume,mL,4.07,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,our_judgment,False
+Paragalago granti,Galagoides_granti,Endocranial_volume,mL,4.073808,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,our_judgment,False
+Paragalago zanzibaricus,Galago zanzibaricus,Endocranial_volume,mL,3.51,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,synonym:NCBI,False
 Paragalago zanzibaricus,Galagoides_zanzibaricus,Endocranial_volume,mL,4.1287945,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,synonym:NCBI,False
+Parantechinus apicalis,Parantechinus apicalis,Endocranial_volume,mL,1.2,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Parantechinus bilarni,Parantechinus bilarni,Endocranial_volume,mL,0.65,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Perameles bougainville,Perameles bougainville,Endocranial_volume,mL,3.21,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Perameles gunnii,Perameles gunnii,Endocranial_volume,mL,4.5,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Perameles nasuta,Perameles nasuta,Endocranial_volume,mL,4.96,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
 Perodicticus potto,Perodicticus potto,Endocranial_volume,mL,12.42,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Perodicticus potto,Perodicticus potto,Endocranial_volume,mL,13.43,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Perodicticus potto,Perodicticus potto,Endocranial_volume,mL,13.62,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Perodicticus potto,Perodicticus potto,Endocranial_volume,mL,11.93,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Perodicticus potto,Perodicticus_potto,Endocranial_volume,mL,12.4982586509524,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
+Peroryctes raffrayana,Peroryctes raffrayana,Endocranial_volume,mL,6.33,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Petauroides volans,Petauroides volans,Endocranial_volume,mL,4.69,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Petaurus australis,Petaurus australis,Endocranial_volume,mL,5.71,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
 Petaurus breviceps,Petaurus breviceps,Endocranial_volume,mL,2.33,10.1242%2Fjeb.124826_TableS1.tsv,Seymour,2015,Seymour,secondary,,,,unknown,verbatim,False
+Petaurus breviceps,Petaurus breviceps,Endocranial_volume,mL,2.09,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Petaurus norfolcensis,Petaurus norfolcensis,Endocranial_volume,mL,3.02,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Petrogale assimilis,Petrogale assimilis,Endocranial_volume,mL,17.5,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Petrogale brachyotis,Petrogale brachyotis,Endocranial_volume,mL,15.75,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Petrogale concinna,Petrogale concinna,Endocranial_volume,mL,11.0,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Petrogale godmani,Petrogale godmani,Endocranial_volume,mL,18.0,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Petrogale herberti,Petrogale herberti,Endocranial_volume,mL,21.2,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Petrogale inornata,Petrogale inornata,Endocranial_volume,mL,17.0,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Petrogale lateralis,Petrogale lateralis,Endocranial_volume,mL,19.2,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Petrogale mareeba,Petrogale mareeba,Endocranial_volume,mL,17.0,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Petrogale penicillata,Petrogale penicillata,Endocranial_volume,mL,23.9,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Petrogale persephone,Petrogale persephone,Endocranial_volume,mL,21.5,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Petrogale xanthopus,Petrogale xanthopus,Endocranial_volume,mL,23.0,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Petropseudes dahli,Petropseudes dahli,Endocranial_volume,mL,5.038,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Phalanger carmelitae,Phalanger  carmelitae,Endocranial_volume,mL,8.49,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Phalanger gymnotis,Phalanger  gymnotis,Endocranial_volume,mL,13.0,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Phalanger lulullae,Phalanger lulullae,Endocranial_volume,mL,6.09,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
 Phalanger maculatus,Phalanger maculatus,Endocranial_volume,mL,13.55,10.1242%2Fjeb.124826_TableS1.tsv,Seymour,2015,Seymour,secondary,,,,unknown,verbatim,False
-Phaner electromontis,Phaner electromontis,Endocranial_volume,mL,7.2,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
-Phaner pallescens,Phaner pallescens,Endocranial_volume,mL,6.68,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
-Phaner pallescens,Phaner_pallescens,Endocranial_volume,mL,6.68142142857143,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,unresolved,False
+Phalanger maculatus,Spilocuscus maculatus,Endocranial_volume,mL,13.4,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,synonym:NCBI,False
+Phalanger mimicus,Phalanger  mimicus,Endocranial_volume,mL,8.13,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Phalanger orientalis,Phalanger orientalis,Endocranial_volume,mL,7.37,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Phalanger ornatus,Phalanger ornatus,Endocranial_volume,mL,7.02,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Phalanger rothschildi,Phalanger rothschildi,Endocranial_volume,mL,6.14,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Phalanger sericeus,Phalanger sericeus,Endocranial_volume,mL,9.96,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Phalanger vestitus,Phalanger vestitus,Endocranial_volume,mL,9.54,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Phaner electromontis,Phaner electromontis,Endocranial_volume,mL,7.2,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
+Phaner pallescens,Phaner pallescens,Endocranial_volume,mL,6.68,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
+Phaner pallescens,Phaner_pallescens,Endocranial_volume,mL,6.68142142857143,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
+Phascogale calura,Phascogale calura,Endocranial_volume,mL,0.91,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Phascogale tapoatafa,Phascogale tapoatafa,Endocranial_volume,mL,1.81,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
 Phascolarctos cinereus,Phascolarctos cinereus,Endocranial_volume,mL,29.75,10.1242%2Fjeb.124826_TableS1.tsv,Seymour,2015,Seymour,secondary,,,,unknown,verbatim,False
+Phascolarctos cinereus,Phascolarctos cinereus,Endocranial_volume,mL,20.2,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Phascolosorex dorsalis,Phascolosorex dorsalis,Endocranial_volume,mL,1.11,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Philander opossum,Philander opossum,Endocranial_volume,mL,3.83,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,synonym:NCBI,False
 Piliocolobus badius,Piliocolobus badius,Endocranial_volume,mL,63.59,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Piliocolobus badius,Piliocolobus badius,Endocranial_volume,mL,64.49,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Piliocolobus badius,Procolobus_badius,Endocranial_volume,mL,61.5199071737742,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,synonym:NCBI,False
 Piliocolobus kirkii,Piliocolobus kirkii,Endocranial_volume,mL,57.25,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,Verheyen 1962,,,unknown,verbatim,False
-Piliocolobus tephrosceles,Piliocolobus tephrosceles,Endocranial_volume,mL,70.95,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
+Piliocolobus kirkii,Procolobus_kirkii,Endocranial_volume,mL,55.5,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,Isler et al. 2008,Isler,,female,our_judgment,False
+Piliocolobus pennantii,Procolobus_pennantii,Endocranial_volume,mL,71.6545454545455,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,our_judgment,False
+Piliocolobus rufomitratus,Procolobus_rufomitratus,Endocranial_volume,mL,70.5654156211403,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,our_judgment,False
+Piliocolobus tephrosceles,Piliocolobus tephrosceles,Endocranial_volume,mL,70.95,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
+Piliocolobus tephrosceles,Procolobus_rufomitratus_tephrosceles,Endocranial_volume,mL,72.4541562114034,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,our_judgment,False
 Piliocolobus tholloni and foai,Piliocolobus tholloni and foai,Endocranial_volume,mL,76.35,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,Verheyen 1962,,,unknown,unresolved,False
 Pithecia irrorata,Pithecia_irrorata,Endocranial_volume,mL,37.1,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
 Pithecia monachus,Pithecia monachus,Endocranial_volume,mL,36.45,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
@@ -479,6 +620,15 @@ Pithecia pithecia,Pithecia pithecia,Endocranial_volume,mL,31.474,10.7554%2FeLife
 Pithecia pithecia,Pithecia pithecia,Endocranial_volume,mL,31.6,10.1038%2Fsrep24528_TableS1.tsv,Heldstab,2016,Heldstab,secondary,,Isler,Isler; Powell,female,verbatim,False
 Pithecia pithecia,Pithecia pithecia,Endocranial_volume,mL,32.26,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Pithecia pithecia,Pithecia_pithecia,Endocranial_volume,mL,31.4742918864164,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
+Planigale gilesi,Planigale gilesi,Endocranial_volume,mL,0.17,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,synonym:NCBI,False
+Planigale ingrami,Planigale ingrami,Endocranial_volume,mL,0.15,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Planigale maculata,Planigale maculata,Endocranial_volume,mL,0.2,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Planigale novaeguineae,Planigale novaeguineae,Endocranial_volume,mL,0.27,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Planigale tenuirostris,Planigale tenuirostris,Endocranial_volume,mL,0.14,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,synonym:NCBI,False
+Plecturocebus caligatus,Callicebus caligatus,Endocranial_volume,mL,17.25,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,our_judgment,False
+Plecturocebus caligatus,Callicebus_caligatus,Endocranial_volume,mL,17.175,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,our_judgment,False
+Plecturocebus discolor,Callicebus discolor,Endocranial_volume,mL,17.53,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,our_judgment,False
+Plecturocebus discolor,Callicebus_discolor,Endocranial_volume,mL,17.0,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,our_judgment,False
 Pongo abelii,Pongo abelii,Endocranial_volume,mL,389.5,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,hub,False
 Pongo abelii,Pongo_abelii,Endocranial_volume,mL,346.058221816637,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,hub,False
 Pongo pygmaeus,Pongo pygmaeus,Endocranial_volume,mL,377.38,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,hub,False
@@ -486,20 +636,22 @@ Pongo pygmaeus,Pongo pygmaeus,Endocranial_volume,mL,357.11,10.1016%2Fj.jhevol.20
 Pongo pygmaeus,Pongo pygmaeus,Endocranial_volume,mL,400.1,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,hub,False
 Pongo pygmaeus,Pongo pygmaeus,Endocranial_volume,mL,378.52,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,hub,False
 Pongo pygmaeus,Pongo_pygmaeus,Endocranial_volume,mL,339.563956530624,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,hub,False
-Pongo pygmaeus morio,Pongo_pygmaeus_morio,Endocranial_volume,mL,330.134531222436,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,unresolved,False
-Pongo pygmaeus wurmbii,Pongo_pygmaeus_wurmbii,Endocranial_volume,mL,336.630517592132,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,unresolved,False
+Pongo pygmaeus,Pongo_pygmaeus_morio,Endocranial_volume,mL,330.134531222436,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,lump,False
+Pongo pygmaeus,Pongo_pygmaeus_wurmbii,Endocranial_volume,mL,336.630517592132,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,lump,False
 Pongo sp.,Pongo sp.,Endocranial_volume,mL,342.811,10.7554%2FeLife.77875_Supplementaryfile3.tsv,Caspar,2022,Caspar,primary,"Powell, L. E., Isler, K., & Barton, R. A. (2017). Re-evaluating the link between brain size and behavioural ecology in primates. Proceedings of the Royal Society B: Biological Sciences, 284(1865), 20171765.",Isler,,female,verbatim,False
 Pongo sp.,Pongo abelii,Endocranial_volume,mL,349.7,10.1038%2Fsrep24528_TableS1.tsv,Heldstab,2016,Heldstab,secondary,,,Isler; Powell,female,lump,False
 Pongo sp.,Pongo pygmaeus,Endocranial_volume,mL,375.0,10.1242%2Fjeb.124826_TableS1.tsv,Seymour,2015,Seymour,secondary,,,,unknown,lump,False
-Presbytis chrysomelas,Presbytis chrysomelas,Endocranial_volume,mL,72.11,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
+Potorous platyops,Potorous platyops,Endocranial_volume,mL,6.3,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Potorous tridactylus,Potorous tridactylus,Endocranial_volume,mL,9.53,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Presbytis chrysomelas,Presbytis chrysomelas,Endocranial_volume,mL,72.11,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Presbytis comata,Presbytis comata,Endocranial_volume,mL,80.3,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,Female: this study; species mean: Harvey and Clutton-Brock 1985,,,unknown,verbatim,False
 Presbytis comata,Presbytis_comata,Endocranial_volume,mL,68.0,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
-Presbytis femoralis,Presbytis femoralis,Endocranial_volume,mL,73.74,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
-Presbytis femoralis,Presbytis femoralis,Endocranial_volume,mL,73.08,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
-Presbytis femoralis,Presbytis_femoralis,Endocranial_volume,mL,70.2326611520957,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,Isler et al. 2008,Isler,,female,unresolved,False
+Presbytis femoralis,Presbytis femoralis,Endocranial_volume,mL,73.74,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
+Presbytis femoralis,Presbytis femoralis,Endocranial_volume,mL,73.08,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
+Presbytis femoralis,Presbytis_femoralis,Endocranial_volume,mL,70.2326611520957,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,Isler et al. 2008,Isler,,female,verbatim,False
 Presbytis frontata,Presbytis frontata,Endocranial_volume,mL,81.02,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Presbytis frontata,Presbytis_frontata,Endocranial_volume,mL,73.1260971428571,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
-Presbytis hosei,Presbytis_hosei,Endocranial_volume,mL,60.0222222222222,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,unresolved,False
+Presbytis hosei,Presbytis_hosei,Endocranial_volume,mL,60.0222222222222,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
 Presbytis melalophos,Presbytis melalophos,Endocranial_volume,mL,64.85,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Presbytis melalophos,Presbytis melalophos,Endocranial_volume,mL,66.46,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Presbytis melalophos,Presbytis melalophos,Endocranial_volume,mL,63.26,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
@@ -515,39 +667,52 @@ Presbytis siamensis,Presbytis siamensis,Endocranial_volume,mL,57.38,10.1016%2Fj.
 Presbytis siamensis,Presbytis_siamensis,Endocranial_volume,mL,57.1828361761279,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,Isler et al. 2008,Isler,,female,verbatim,False
 Presbytis thomasi,Presbytis thomasi,Endocranial_volume,mL,72.93,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Presbytis thomasi,Presbytis_thomasi,Endocranial_volume,mL,65.4610033333333,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
-Procolobus kirkii,Procolobus_kirkii,Endocranial_volume,mL,55.5,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,Isler et al. 2008,Isler,,female,unresolved,False
-Procolobus pennantii,Procolobus_pennantii,Endocranial_volume,mL,71.6545454545455,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,unresolved,False
-Procolobus rufomitratus,Procolobus_rufomitratus,Endocranial_volume,mL,70.5654156211403,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,unresolved,False
-Procolobus rufomitratus tephrosceles,Procolobus_rufomitratus_tephrosceles,Endocranial_volume,mL,72.4541562114034,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,unresolved,False
 Procolobus verus,Procolobus verus,Endocranial_volume,mL,52.6,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Procolobus verus,Procolobus_verus,Endocranial_volume,mL,51.6287985591947,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,Isler et al. 2008,Isler,,female,verbatim,False
-Prolemur simus,Prolemur simus,Endocranial_volume,mL,27.14,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,hub,False
-Prolemur simus,Prolemur_simus,Endocranial_volume,mL,26.22693,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,hub,False
-Propithecus candidus,Propithecus_candidus,Endocranial_volume,mL,37.2,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,unresolved,False
-Propithecus coquereli,Propithecus coquereli,Endocranial_volume,mL,30.19,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
-Propithecus coquereli,Propithecus_coquereli,Endocranial_volume,mL,28.8617625,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,unresolved,False
-Propithecus deckenii,Propithecus deckenii,Endocranial_volume,mL,30.15,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
-Propithecus deckenii,Propithecus_deckenii,Endocranial_volume,mL,28.0083215789474,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,unresolved,False
+Prolemur simus,Prolemur simus,Endocranial_volume,mL,27.14,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
+Prolemur simus,Prolemur_simus,Endocranial_volume,mL,26.22693,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
+Propithecus candidus,Propithecus_candidus,Endocranial_volume,mL,37.2,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
+Propithecus coquereli,Propithecus coquereli,Endocranial_volume,mL,30.19,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
+Propithecus coquereli,Propithecus_coquereli,Endocranial_volume,mL,28.8617625,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
+Propithecus deckenii,Propithecus deckenii,Endocranial_volume,mL,30.15,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
+Propithecus deckenii,Propithecus_deckenii,Endocranial_volume,mL,28.0083215789474,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
 Propithecus diadema,Propithecus diadema,Endocranial_volume,mL,39.8,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Propithecus diadema,Propithecus_diadema,Endocranial_volume,mL,36.8607515184826,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
 Propithecus diadema,Propithecus diadema,Endocranial_volume,mL,41.0,10.1242%2Fjeb.124826_TableS1.tsv,Seymour,2015,Seymour,secondary,,,,unknown,verbatim,False
-Propithecus edwardsi,Propithecus edwardsi,Endocranial_volume,mL,39.49,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
-Propithecus edwardsi,Propithecus_edwardsi,Endocranial_volume,mL,37.9452626799879,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,unresolved,False
+Propithecus edwardsi,Propithecus edwardsi,Endocranial_volume,mL,39.49,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
+Propithecus edwardsi,Propithecus_edwardsi,Endocranial_volume,mL,37.9452626799879,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
 Propithecus verreauxi,Propithecus verreauxi,Endocranial_volume,mL,26.1,10.1038%2Fsrep24528_TableS1.tsv,Heldstab,2016,Heldstab,secondary,,Isler,Isler; Powell,female,verbatim,False
 Propithecus verreauxi,Propithecus verreauxi,Endocranial_volume,mL,26.21,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Propithecus verreauxi,Propithecus_verreauxi,Endocranial_volume,mL,25.9983661111111,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
+Pseudantechinus macdonnellensis,Pseudantechinus macdonnellensis,Endocranial_volume,mL,0.49,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Pseudantechinus roryi,Pseudantechinus roryi,Endocranial_volume,mL,0.42,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Pseudocheirus occidentalis,Pseudocheirus occidentalis,Endocranial_volume,mL,5.58,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,synonym:NCBI,False
+Pseudocheirus peregrinus,Pseudocheirus peregrinus,Endocranial_volume,mL,4.52,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
 Pseudocheirus peregrinus notialis,Pseudocheirus peregrinus notialis,Endocranial_volume,mL,4.73,10.1242%2Fjeb.124826_TableS1.tsv,Seymour,2015,Seymour,secondary,,,,unknown,verbatim,False
+Pseudochirops albertisii,Pseudochirops albertisii,Endocranial_volume,mL,4.68,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Pseudochirops archeri,Pseudochirops archeri,Endocranial_volume,mL,5.87,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Pseudochirops corinnae,Pseudochirops corinnae,Endocranial_volume,mL,5.36,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Pseudochirops coronatus,Pseudochirops coronatus,Endocranial_volume,mL,5.13,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Pseudochirops cupreus,Pseudochirops cupreus,Endocranial_volume,mL,7.54,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Pseudochirulus canescens,Pseudochirulus canescens,Endocranial_volume,mL,1.8,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Pseudochirulus carolli,Pseudochirulus carolli,Endocranial_volume,mL,3.2,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Pseudochirulus forbesi,Pseudochirulus forbesi,Endocranial_volume,mL,3.36,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,hub,False
+Pseudochirulus herbertensis,Pseudochirulus herbertensis,Endocranial_volume,mL,4.32,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Pseudochirulus mayeri,Pseudochirulus mayeri,Endocranial_volume,mL,2.01,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Pseudochirulus schlegelli,Pseudochirulus schlegelli,Endocranial_volume,mL,2.8,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
 Pygathrix cinerea,Pygathrix cinerea,Endocranial_volume,mL,94.85,10.7554%2FeLife.77875_Supplementaryfile3.tsv,Caspar,2022,Caspar,primary,"Powell, L. E., Isler, K., & Barton, R. A. (2017). Re-evaluating the link between brain size and behavioural ecology in primates. Proceedings of the Royal Society B: Biological Sciences, 284(1865), 20171765.",Isler,,female,verbatim,False
 Pygathrix nemaeus,Pygathrix nemaeus,Endocranial_volume,mL,91.41,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Pygathrix nemaeus,Pygathrix_nemaeus,Endocranial_volume,mL,94.85,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,"van Woerden compilation, 89 N=4 females in Lippold in press ATwo 2011",,,both,verbatim,False
-Pygathrix nigripes,Pygathrix nigripes,Endocranial_volume,mL,82.75,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
-Pygathrix nigripes,Pygathrix_nigripes,Endocranial_volume,mL,83.7026816666667,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,unresolved,False
-Pygathrix sp.,Pygathrix sp.,Endocranial_volume,mL,85.86,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
-Rhinopithecus bieti,Rhinopithecus_bieti,Endocranial_volume,mL,114.714285714286,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,unresolved,False
-Rhinopithecus brelichi,Rhinopithecus_brelichi,Endocranial_volume,mL,111.5,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,unresolved,False
+Pygathrix nigripes,Pygathrix nigripes,Endocranial_volume,mL,82.75,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
+Pygathrix nigripes,Pygathrix_nigripes,Endocranial_volume,mL,83.7026816666667,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
+Pygathrix sp.,Pygathrix sp.,Endocranial_volume,mL,85.86,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
+Rhinopithecus bieti,Rhinopithecus_bieti,Endocranial_volume,mL,114.714285714286,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
+Rhinopithecus brelichi,Rhinopithecus_brelichi,Endocranial_volume,mL,111.5,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
 Rhinopithecus roxellana,Rhinopithecus roxellana,Endocranial_volume,mL,115.535,10.7554%2FeLife.77875_Supplementaryfile3.tsv,Caspar,2022,Caspar,primary,"Powell, L. E., Isler, K., & Barton, R. A. (2017). Re-evaluating the link between brain size and behavioural ecology in primates. Proceedings of the Royal Society B: Biological Sciences, 284(1865), 20171765.",Isler,,female,verbatim,False
 Rhinopithecus roxellana,Rhinopithecus roxellana,Endocranial_volume,mL,117.76,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Rhinopithecus roxellana,Rhinopithecus_roxellana,Endocranial_volume,mL,115.535188888889,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
+Rhyncholestes raphanurus,Rhyncholestes raphanurus,Endocranial_volume,mL,0.65,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Rhynchomeles prattorum,Rhynchomeles prattorum,Endocranial_volume,mL,4.9,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
 Saguinus bicolor,Saguinus bicolor,Endocranial_volume,mL,9.5,10.1038%2Fsrep24528_TableS1.tsv,Heldstab,2016,Heldstab,secondary,,Powell,Isler; Powell,female,verbatim,False
 Saguinus bicolor,Saguinus_bicolor,Endocranial_volume,mL,9.2,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
 Saguinus fuscicollis,Saguinus fuscicollis,Endocranial_volume,mL,7.94,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
@@ -566,17 +731,14 @@ Saguinus leucopus,Saguinus_leucopus,Endocranial_volume,mL,9.75169756784756,10.10
 Saguinus midas,Saguinus midas,Endocranial_volume,mL,9.78,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Saguinus midas,Saguinus_midas,Endocranial_volume,mL,9.81056818126224,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
 Saguinus mystax,Saguinus mystax,Endocranial_volume,mL,11.09,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
+Saguinus mystax,Saguinus pileatus,Endocranial_volume,mL,9.56,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,subspecies_assign,False
 Saguinus mystax,Saguinus_mystax,Endocranial_volume,mL,10.4171805491055,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
-Saguinus mystax pileatus,Saguinus_mystax_pileatus,Endocranial_volume,mL,9.66611265627852,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,unresolved,False
-Saguinus niger,Saguinus niger,Endocranial_volume,mL,9.48,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
-Saguinus niger,Saguinus_niger,Endocranial_volume,mL,9.13262370101747,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,unresolved,False
-Saguinus nigricollis,Saguinus nigricollis,Endocranial_volume,mL,8.9,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,Harvey and Clutton-Brock 1985,,,unknown,unresolved,False
-Saguinus nigricollis,Saguinus_nigricollis,Endocranial_volume,mL,8.9,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,Isler et al. 2008,Isler,,both,unresolved,False
+Saguinus mystax,Saguinus_mystax_pileatus,Endocranial_volume,mL,9.66611265627852,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,subspecies_assign,False
+Saguinus niger,Saguinus niger,Endocranial_volume,mL,9.48,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
+Saguinus niger,Saguinus_niger,Endocranial_volume,mL,9.13262370101747,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
 Saguinus oedipus,Saguinus oedipus,Endocranial_volume,mL,9.7,10.1038%2Fsrep24528_TableS1.tsv,Heldstab,2016,Heldstab,secondary,,Isler,Isler; Powell,female,verbatim,False
 Saguinus oedipus,Saguinus oedipus,Endocranial_volume,mL,9.76,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Saguinus oedipus,Saguinus_oedipus,Endocranial_volume,mL,9.69791523988764,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
-Saguinus pileatus,Saguinus pileatus,Endocranial_volume,mL,9.56,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
-Saguinus tripartitus,Saguinus_tripartitus,Endocranial_volume,mL,8.5,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,unresolved,False
 Saimiri boliviensis,Saimiri_boliviensis,Endocranial_volume,mL,21.5222222222222,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
 Saimiri oerstedii,Saimiri oerstedii,Endocranial_volume,mL,25.07,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Saimiri oerstedii,Saimiri_oerstedii,Endocranial_volume,mL,24.23636,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
@@ -598,25 +760,40 @@ Sapajus nigritus,Cebus nigritus,Endocranial_volume,mL,68.23,10.1016%2Fj.jhevol.2
 Sapajus nigritus,Cebus nigritus,Endocranial_volume,mL,65.63,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,synonym:NCBI,False
 Sapajus nigritus,Cebus_nigritus,Endocranial_volume,mL,65.0320399929579,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,Isler et al. 2008,Isler,,female,synonym:NCBI,False
 Sapajus xanthosternos,Sapajus xanthosternos,Endocranial_volume,mL,64.005,10.7554%2FeLife.77875_Supplementaryfile3.tsv,Caspar,2022,Caspar,primary,"Powell, L. E., Isler, K., & Barton, R. A. (2017). Re-evaluating the link between brain size and behavioural ecology in primates. Proceedings of the Royal Society B: Biological Sciences, 284(1865), 20171765.",Isler,,female,verbatim,False
-Sciurocheirus alleni cameronensis,Sciurocheirus_alleni_cameronensis,Endocranial_volume,mL,5.68,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,unresolved,False
-Sciurocheirus gabonensis,Sciurocheirus_gabonensis,Endocranial_volume,mL,5.35737214285714,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,Isler et al. 2008,Isler,,both,unresolved,False
-Semnopithecus ajax,Semnopithecus ajax,Endocranial_volume,mL,132.06,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
-Semnopithecus dussumieri,Semnopithecus dussumieri,Endocranial_volume,mL,90.09,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
-Semnopithecus dussumieri,Semnopithecus_dussumieri,Endocranial_volume,mL,88.295905534766,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,unresolved,False
+Sapajus xanthosternos,Cebus xanthosternos,Endocranial_volume,mL,66.09,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,synonym:NCBI,False
+Sapajus xanthosternos,Cebus_xanthosternos,Endocranial_volume,mL,64.0048194022301,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,Isler et al. 2008,Isler,,female,synonym:NCBI,False
+Sarcophilus harrisii,Sarcophilus harrisii,Endocranial_volume,mL,16.09,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Semnopithecus ajax,Semnopithecus ajax,Endocranial_volume,mL,132.06,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Semnopithecus entellus,Semnopithecus entellus,Endocranial_volume,mL,95.237,10.7554%2FeLife.77875_Supplementaryfile3.tsv,Caspar,2022,Caspar,primary,"Powell, L. E., Isler, K., & Barton, R. A. (2017). Re-evaluating the link between brain size and behavioural ecology in primates. Proceedings of the Royal Society B: Biological Sciences, 284(1865), 20171765.",Isler,,female,verbatim,False
+Semnopithecus entellus,Semnopithecus dussumieri,Endocranial_volume,mL,90.09,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,author_judgment,False
 Semnopithecus entellus,Semnopithecus entellus,Endocranial_volume,mL,110.93,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
+Semnopithecus entellus,Semnopithecus_dussumieri,Endocranial_volume,mL,88.295905534766,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,author_judgment,False
 Semnopithecus entellus,Semnopithecus_entellus,Endocranial_volume,mL,95.2368451233632,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
 Semnopithecus entellus,Semnopithecus entellus,Endocranial_volume,mL,101.6,10.1242%2Fjeb.124826_TableS1.tsv,Seymour,2015,Seymour,secondary,,,,unknown,verbatim,False
-Semnopithecus priam,Semnopithecus priam,Endocranial_volume,mL,83.07,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
-Semnopithecus priam,Semnopithecus_priam,Endocranial_volume,mL,75.2916319102293,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,unresolved,False
-Semnopithecus schistaceus,Semnopithecus schistaceus,Endocranial_volume,mL,129.25,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
-Semnopithecus schistaceus,Semnopithecus_schistaceus,Endocranial_volume,mL,126.12611881504,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,unresolved,False
-Simias concolor,Simias concolor,Endocranial_volume,mL,58.42,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
-Simias concolor,Simias_concolor,Endocranial_volume,mL,52.4523855453849,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,unresolved,False
+Semnopithecus priam,Semnopithecus priam,Endocranial_volume,mL,83.07,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
+Semnopithecus priam,Semnopithecus_priam,Endocranial_volume,mL,75.2916319102293,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
+Semnopithecus schistaceus,Semnopithecus schistaceus,Endocranial_volume,mL,129.25,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
+Semnopithecus schistaceus,Semnopithecus_schistaceus,Endocranial_volume,mL,126.12611881504,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
+Setonix brachyurus,Setonix brachyurus,Endocranial_volume,mL,13.9,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Simias concolor,Simias concolor,Endocranial_volume,mL,58.42,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
+Simias concolor,Simias_concolor,Endocranial_volume,mL,52.4523855453849,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
+Sminthopsis bindi,Sminthopsis  bindi,Endocranial_volume,mL,0.35,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Sminthopsis crassicaudata,Sminthopsis crassicaudata,Endocranial_volume,mL,0.36,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Sminthopsis douglasi,Sminthopsis douglasi,Endocranial_volume,mL,0.35,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Sminthopsis griseoventer,Sminthopsis griseoventer,Endocranial_volume,mL,0.49,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Sminthopsis hirtipes,Sminthopsis hirtipes,Endocranial_volume,mL,0.41,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Sminthopsis leucopus,Sminthopsis leucopus,Endocranial_volume,mL,0.41,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Sminthopsis macroura,Sminthopsis macroura,Endocranial_volume,mL,0.4,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Sminthopsis murina,Sminthopsis murina,Endocranial_volume,mL,0.44,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Sminthopsis virginiae,Sminthopsis virginiae,Endocranial_volume,mL,0.34,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Spilocuscus kraemeri,Spilocuscus kraemeri,Endocranial_volume,mL,11.5,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Spilocuscus rufoniger,Spilocuscus rufoniger,Endocranial_volume,mL,16.8,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Strigocuscus pelengensis,Strigocuscus pelengensis,Endocranial_volume,mL,6.22,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
 Symphalangus syndactylus,Symphalangus syndactylus,Endocranial_volume,mL,124.512,10.7554%2FeLife.77875_Supplementaryfile3.tsv,Caspar,2022,Caspar,primary,"Powell, L. E., Isler, K., & Barton, R. A. (2017). Re-evaluating the link between brain size and behavioural ecology in primates. Proceedings of the Royal Society B: Biological Sciences, 284(1865), 20171765.",Isler,,female,verbatim,False
 Symphalangus syndactylus,Symphalangus syndactylus,Endocranial_volume,mL,124.5,10.1038%2Fsrep24528_TableS1.tsv,Heldstab,2016,Heldstab,secondary,,Isler,Isler; Powell,female,verbatim,False
 Symphalangus syndactylus,Symphalangus syndactylus,Endocranial_volume,mL,123.5,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Symphalangus syndactylus,Symphalangus_syndactylus,Endocranial_volume,mL,124.511955526298,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,Isler et al. 2008,Isler,,both,verbatim,False
+Tarsipes rostratus,Tarsipes rostratus,Endocranial_volume,mL,0.36,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
 Tarsius bancanus,Tarsius bancanus,Endocranial_volume,mL,3.16,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Tarsius bancanus,Tarsius_bancanus,Endocranial_volume,mL,3.14773457310149,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
 Tarsius dentatus,Tarsius dentatus,Endocranial_volume,mL,3.0,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
@@ -629,6 +806,13 @@ Theropithecus gelada,Theropithecus gelada,Endocranial_volume,mL,123.223,10.7554%
 Theropithecus gelada,Theropithecus gelada,Endocranial_volume,mL,123.2,10.1038%2Fsrep24528_TableS1.tsv,Heldstab,2016,Heldstab,secondary,,Isler,Isler; Powell,female,verbatim,False
 Theropithecus gelada,Theropithecus gelada,Endocranial_volume,mL,133.33,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Theropithecus gelada,Theropithecus_gelada,Endocranial_volume,mL,123.22345,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
+Thylacinus cynocephalus,Thylacinus cynocephalus,Endocranial_volume,mL,51.19,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Thylamys elegans,Thylamys elegans,Endocranial_volume,mL,0.71,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Thylogale billardierii,Thylogale billardieri,Endocranial_volume,mL,22.1,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,spelling,False
+Thylogale browni,Thylogale browni,Endocranial_volume,mL,18.3,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Thylogale brunii,Thylogale brunii,Endocranial_volume,mL,17.5,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,unresolved,False
+Thylogale stigmatica,Thylogale stigmatica,Endocranial_volume,mL,17.8,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Thylogale thetis,Thylogale thetis,Endocranial_volume,mL,19.2,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
 Trachypithecus auratus,Trachypithecus auratus,Endocranial_volume,mL,62.594,10.7554%2FeLife.77875_Supplementaryfile3.tsv,Caspar,2022,Caspar,primary,"Powell, L. E., Isler, K., & Barton, R. A. (2017). Re-evaluating the link between brain size and behavioural ecology in primates. Proceedings of the Royal Society B: Biological Sciences, 284(1865), 20171765.",Isler,,female,verbatim,False
 Trachypithecus auratus,Trachypithecus_auratus,Endocranial_volume,mL,62.59375,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
 Trachypithecus cristatus,Trachypithecus cristatus,Endocranial_volume,mL,57.86,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,hub,False
@@ -642,14 +826,16 @@ Trachypithecus johnii,Trachypithecus_johnii,Endocranial_volume,mL,78.0,10.1098%2
 Trachypithecus obscurus,Trachypithecus obscurus,Endocranial_volume,mL,62.12,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Trachypithecus obscurus,Trachypithecus_obscurus,Endocranial_volume,mL,59.3030397723348,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
 Trachypithecus obscurus,Trachypithecus obscurus,Endocranial_volume,mL,105.0,10.1242%2Fjeb.124826_TableS1.tsv,Seymour,2015,Seymour,secondary,,,,unknown,verbatim,False
-Trachypithecus phayrei,Trachypithecus phayrei,Endocranial_volume,mL,72.84,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,unresolved,False
-Trachypithecus phayrei,Trachypithecus_phayrei,Endocranial_volume,mL,70.2020520738227,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,unresolved,False
+Trachypithecus phayrei,Trachypithecus phayrei,Endocranial_volume,mL,72.84,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
+Trachypithecus phayrei,Trachypithecus_phayrei,Endocranial_volume,mL,70.2020520738227,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
 Trachypithecus pileatus,Trachypithecus pileatus,Endocranial_volume,mL,103.64,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Trachypithecus pileatus,Trachypithecus_pileatus,Endocranial_volume,mL,97.3556245367224,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
 Trachypithecus vetulus,Trachypithecus vetulus,Endocranial_volume,mL,61.29,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Trachypithecus vetulus,Trachypithecus_vetulus,Endocranial_volume,mL,59.9127370852017,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,female,verbatim,False
 Trachypithecus vetulus,Trachypithecus vetulus,Endocranial_volume,mL,58.0,10.1242%2Fjeb.124826_TableS1.tsv,Seymour,2015,Seymour,secondary,,,,unknown,verbatim,False
+Trichosurus caninus,Trichosurus caninus,Endocranial_volume,mL,11.9,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
 Trichosurus vulpecula,Trichosurus vulpecula,Endocranial_volume,mL,9.8,10.1242%2Fjeb.124826_TableS1.tsv,Seymour,2015,Seymour,secondary,,,,unknown,verbatim,False
+Trichosurus vulpecula,Trichosurus vulpecula,Endocranial_volume,mL,11.0,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
 Varecia rubra,Varecia rubra,Endocranial_volume,mL,29.4,10.1038%2Fsrep24528_TableS1.tsv,Heldstab,2016,Heldstab,secondary,,Isler,Isler; Powell,female,verbatim,False
 Varecia rubra,Varecia rubra,Endocranial_volume,mL,31.08,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,verbatim,False
 Varecia rubra,Varecia_rubra,Endocranial_volume,mL,29.815174,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
@@ -657,3 +843,8 @@ Varecia variegata,Varecia variegata,Endocranial_volume,mL,32.12,10.1016%2Fj.jhev
 Varecia variegata,Varecia_variegata,Endocranial_volume,mL,30.4822781311774,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,verbatim,False
 Varecia variegata,Varecia variegata,Endocranial_volume,mL,26.0,10.1242%2Fjeb.124826_TableS1.tsv,Seymour,2015,Seymour,secondary,,,,unknown,verbatim,False
 Vombatus ursinus,Vombatus ursinus,Endocranial_volume,mL,60.0,10.1242%2Fjeb.124826_TableS1.tsv,Seymour,2015,Seymour,secondary,,,,unknown,verbatim,False
+Vombatus ursinus,Vombatus ursinus,Endocranial_volume,mL,59.0,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Wallabia bicolor,Wallabia bicolor,Endocranial_volume,mL,32.9,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,verbatim,False
+Wyulda squamicaudata,Wyulda squamicaudata,Endocranial_volume,mL,10.1,10.1159%2F000348647_TableS1.tsv,Weisbecker,2013,Weisbecker,secondary,Ashwell2008,,,unknown,synonym:NCBI,False
+Xanthonycticebus pygmaeus,Nycticebus pygmaeus,Endocranial_volume,mL,7.23,10.1016%2Fj.jhevol.2008.08.004_TableS2.tsv,Isler,2008,Isler,primary,This study,,,unknown,synonym:NCBI,False
+Xanthonycticebus pygmaeus,Nycticebus_pygmaeus,Endocranial_volume,mL,7.22901183333333,10.1098%2Frspb.2017.1765_Dataset1.tsv,Powell,2017,Powell,secondary,van Woerden compilation,,,both,synonym:NCBI,False

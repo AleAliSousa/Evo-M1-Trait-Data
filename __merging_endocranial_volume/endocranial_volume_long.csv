@@ -1,6 +1,6 @@
 Species,measure_class,Measure,Units,Value,n_sources,n_teams,n_teams_primary,primary_used,Teams,roles,sex_scope,value_min,value_max,species_printed,accepted_name,species_basis,reidentified
-Acrobates pygmaeus,endocranial_volume,Endocranial_volume,mL,0.25,1,1,0,False,Seymour,secondary,unknown,0.25,0.25,Acrobates pygmaeus,Acrobates pygmaeus,verbatim,False
-Aepyprymnus rufescens,endocranial_volume,Endocranial_volume,mL,13.32,1,1,0,False,Seymour,secondary,unknown,13.32,13.32,Aepyprymnus rufescens,Aepyprymnus rufescens,verbatim,False
+Acrobates pygmaeus,endocranial_volume,Endocranial_volume,mL,0.3,2,2,0,False,Seymour; Weisbecker,secondary,unknown,0.25,0.35,Acrobates pygmaeus,Acrobates pygmaeus,verbatim,False
+Aepyprymnus rufescens,endocranial_volume,Endocranial_volume,mL,12.81,2,2,0,False,Seymour; Weisbecker,secondary,unknown,12.3,13.32,Aepyprymnus rufescens,Aepyprymnus rufescens,verbatim,False
 Allenopithecus nigroviridis,endocranial_volume,Endocranial_volume,mL,58.02,1,1,1,True,Isler,primary,unknown,58.02,58.02,Allenopithecus nigroviridis,Allenopithecus nigroviridis,verbatim,False
 Allochrocebus preussi,endocranial_volume,Endocranial_volume_female,mL,62.8,1,1,0,False,Powell,secondary,female,62.8,62.8,Cercopithecus_preussi,Allochrocebus preussi,synonym:NCBI,False
 Alouatta belzebul,endocranial_volume,Endocranial_volume,mL,52.84,1,1,1,True,Isler,primary,unknown,52.84,52.84,Alouatta belzebul,Alouatta belzebul,verbatim,False
@@ -9,8 +9,8 @@ Alouatta caraya,endocranial_volume,Endocranial_volume,mL,52.63,1,1,1,True,Isler,
 Alouatta caraya,endocranial_volume,Endocranial_volume_female,mL,49.229,1,1,0,False,Powell,secondary,female,49.229,49.229,Alouatta_caraya,Alouatta caraya,verbatim,False
 Alouatta guariba,endocranial_volume,Endocranial_volume,mL,51.7,1,1,1,True,Isler,primary,unknown,51.7,51.7,Alouatta guariba,Alouatta guariba,verbatim,False
 Alouatta guariba,endocranial_volume,Endocranial_volume_female,mL,48.504,1,1,0,False,Powell,secondary,female,48.504,48.504,Alouatta_guariba,Alouatta guariba,verbatim,False
-Alouatta macconnelli,endocranial_volume,Endocranial_volume,mL,61.33,1,1,1,True,Isler,primary,unknown,61.33,61.33,Alouatta macconnelli,Alouatta macconnelli,unresolved,False
-Alouatta macconnelli,endocranial_volume,Endocranial_volume_female,mL,53.662,1,1,0,False,Powell,secondary,female,53.662,53.662,Alouatta_macconnelli,Alouatta macconnelli,unresolved,False
+Alouatta macconnelli,endocranial_volume,Endocranial_volume,mL,61.33,1,1,1,True,Isler,primary,unknown,61.33,61.33,Alouatta macconnelli,Alouatta macconnelli,verbatim,False
+Alouatta macconnelli,endocranial_volume,Endocranial_volume_female,mL,53.662,1,1,0,False,Powell,secondary,female,53.662,53.662,Alouatta_macconnelli,Alouatta macconnelli,verbatim,False
 Alouatta palliata,endocranial_volume,Endocranial_volume,mL,49.88,1,1,1,True,Isler,primary,unknown,49.88,49.88,Alouatta palliata,Alouatta palliata,verbatim,False
 Alouatta palliata,endocranial_volume,Endocranial_volume_female,mL,48.916,1,1,0,False,Powell,secondary,female,48.916,48.916,Alouatta_palliata,Alouatta palliata,verbatim,False
 Alouatta pigra,endocranial_volume,Endocranial_volume,mL,51.13,1,1,1,True,Isler,primary,unknown,51.13,51.13,Alouatta pigra,Alouatta pigra,verbatim,False
@@ -19,18 +19,29 @@ Alouatta sara,endocranial_volume,Endocranial_volume,mL,59.08,1,1,1,True,Isler,pr
 Alouatta sara,endocranial_volume,Endocranial_volume_female,mL,56.75,1,1,0,False,Powell,secondary,female,56.75,56.75,Alouatta_sara,Alouatta sara,verbatim,False
 Alouatta seniculus,endocranial_volume,Endocranial_volume,mL,55.22,1,1,1,True,Isler,primary,unknown,55.22,55.22,Alouatta seniculus,Alouatta seniculus,verbatim,False
 Alouatta seniculus,endocranial_volume,Endocranial_volume_female,mL,55.289,1,1,0,False,Powell,secondary,female,55.289,55.289,Alouatta_seniculus,Alouatta seniculus,verbatim,False
+Antechinomys laniger,endocranial_volume,Endocranial_volume,mL,0.47,1,1,0,False,Weisbecker,secondary,unknown,0.47,0.47,Antechinomys laniger,Antechinomys laniger,verbatim,False
+Antechinus agilis,endocranial_volume,Endocranial_volume,mL,0.56,1,1,0,False,Weisbecker,secondary,unknown,0.56,0.56,Antechinus  agilis,Antechinus agilis,synonym:NCBI,False
+Antechinus bellus,endocranial_volume,Endocranial_volume,mL,0.63,1,1,0,False,Weisbecker,secondary,unknown,0.63,0.63,Antechinus  bellus,Antechinus bellus,unresolved,False
+Antechinus flavipes,endocranial_volume,Endocranial_volume,mL,0.64,1,1,0,False,Weisbecker,secondary,unknown,0.64,0.64,Antechinus flavipes,Antechinus flavipes,verbatim,False
+Antechinus leo,endocranial_volume,Endocranial_volume,mL,0.75,1,1,0,False,Weisbecker,secondary,unknown,0.75,0.75,Antechinus leo,Antechinus leo,unresolved,False
+Antechinus melanurus,endocranial_volume,Endocranial_volume,mL,0.65,1,1,0,False,Weisbecker,secondary,unknown,0.65,0.65,Antechinus  melanurus,Antechinus melanurus,unresolved,False
+Antechinus minimus,endocranial_volume,Endocranial_volume,mL,0.74,1,1,0,False,Weisbecker,secondary,unknown,0.74,0.74,Antechinus minimus,Antechinus minimus,verbatim,False
+Antechinus naso,endocranial_volume,Endocranial_volume,mL,0.77,1,1,0,False,Weisbecker,secondary,unknown,0.77,0.77,Antechinus naso,Antechinus naso,unresolved,False
+Antechinus stuartii,endocranial_volume,Endocranial_volume,mL,0.76,1,1,0,False,Weisbecker,secondary,unknown,0.76,0.76,Antechinus stuartii,Antechinus stuartii,verbatim,False
+Antechinus subtropicus,endocranial_volume,Endocranial_volume,mL,0.72,1,1,0,False,Weisbecker,secondary,unknown,0.72,0.72,Antechinus subtropicus,Antechinus subtropicus,synonym:NCBI,False
+Antechinus swainsonii,endocranial_volume,Endocranial_volume,mL,1.09,1,1,0,False,Weisbecker,secondary,unknown,1.09,1.09,Antechinus swainsonii,Antechinus swainsonii,verbatim,False
 Aotus azarai,endocranial_volume,Endocranial_volume,mL,20.67,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,20.139,20.67,Aotus azarae; Aotus_azarae,Aotus azarai,synonym:NCBI,False
 Aotus lemurinus,endocranial_volume,Endocranial_volume,mL,16.3,1,1,1,True,Isler,primary,unknown,16.3,16.3,Aotus lemurinus,Aotus lemurinus,verbatim,False
 Aotus miconax,endocranial_volume,Endocranial_volume,mL,16.657,1,1,0,False,Powell,secondary,both,16.657,16.657,Aotus_miconax,Aotus miconax,unresolved,False
-Aotus nancymaae,endocranial_volume,Endocranial_volume,mL,17.887,1,1,0,False,Powell,secondary,both,17.887,17.887,Aotus_nancymaae,Aotus nancymaae,hub,False
+Aotus nancymaae,endocranial_volume,Endocranial_volume,mL,17.887,1,1,0,False,Powell,secondary,both,17.887,17.887,Aotus_nancymaae,Aotus nancymaae,verbatim,False
 Aotus nigriceps,endocranial_volume,Endocranial_volume,mL,17.591,1,1,0,False,Powell,secondary,both,17.591,17.591,Aotus_nigriceps,Aotus nigriceps,verbatim,False
 Aotus trivirgatus,endocranial_volume,Endocranial_volume,mL,16.85,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,16.066,16.85,Aotus trivirgatus; Aotus_trivirgatus,Aotus trivirgatus,verbatim,False
 Aotus vociferans,endocranial_volume,Endocranial_volume,mL,17.7,1,1,0,False,Powell,secondary,both,17.7,17.7,Aotus_vociferans,Aotus vociferans,verbatim,False
-Arctocebus aureus,endocranial_volume,Endocranial_volume,mL,5.88,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,5.88,5.881,Arctocebus aureus; Arctocebus_aureus,Arctocebus aureus,unresolved,False
-Arctocebus calabarensis,endocranial_volume,Endocranial_volume,mL,6.92,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,6.92,6.985,Arctocebus calabarensis; Arctocebus_calabarensis,Arctocebus calabarensis,unresolved,False
+Arctocebus aureus,endocranial_volume,Endocranial_volume,mL,5.88,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,5.88,5.881,Arctocebus aureus; Arctocebus_aureus,Arctocebus aureus,verbatim,False
+Arctocebus calabarensis,endocranial_volume,Endocranial_volume,mL,6.92,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,6.92,6.985,Arctocebus calabarensis; Arctocebus_calabarensis,Arctocebus calabarensis,verbatim,False
 Ateles belzebuth,endocranial_volume,Endocranial_volume,mL,117.02,1,1,1,True,Isler,primary,unknown,117.02,117.02,Ateles belzebuth,Ateles belzebuth,verbatim,False
 Ateles belzebuth,endocranial_volume,Endocranial_volume_female,mL,112.818,1,1,0,False,Powell,secondary,female,112.818,112.818,Ateles_belzebuth,Ateles belzebuth,verbatim,False
-Ateles chamek,endocranial_volume,Endocranial_volume_female,mL,110.278,1,1,0,False,Powell,secondary,female,110.278,110.278,Ateles_chamek,Ateles chamek,unresolved,False
+Ateles chamek,endocranial_volume,Endocranial_volume_female,mL,110.278,1,1,0,False,Powell,secondary,female,110.278,110.278,Ateles_chamek,Ateles chamek,verbatim,False
 Ateles fusciceps,endocranial_volume,Endocranial_volume,mL,114.24,1,1,1,True,Isler,primary,unknown,114.24,114.24,Ateles fusciceps,Ateles fusciceps,verbatim,False
 Ateles fusciceps,endocranial_volume,Endocranial_volume_female,mL,107.549,1,1,0,False,Powell,secondary,female,107.549,107.549,Ateles_fusciceps,Ateles fusciceps,verbatim,False
 Ateles geoffroyi,endocranial_volume,Endocranial_volume,mL,105.09,1,1,1,True,Isler,primary,unknown,105.09,105.09,Ateles geoffroyi,Ateles geoffroyi,verbatim,False
@@ -41,29 +52,33 @@ Ateles paniscus,endocranial_volume,Endocranial_volume,mL,103.85,1,1,1,True,Isler
 Ateles paniscus,endocranial_volume,Endocranial_volume_female,mL,107.567,1,1,0,False,Powell,secondary,female,107.567,107.567,Ateles_paniscus,Ateles paniscus,verbatim,False
 Avahi laniger,endocranial_volume,Endocranial_volume,mL,9.86,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,9.515,9.86,Avahi laniger; Avahi_laniger,Avahi laniger,hub,False
 Avahi occidentalis,endocranial_volume,Endocranial_volume,mL,7.95,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,7.95,7.95,Avahi occidentalis; Avahi_occidentalis,Avahi occidentalis,verbatim,False
-Bettongia lesueur,endocranial_volume,Endocranial_volume,mL,9.2,1,1,0,False,Seymour,secondary,unknown,9.2,9.2,Bettongia lesueur,Bettongia lesueur,verbatim,False
+Bettongia gaimardi,endocranial_volume,Endocranial_volume,mL,11.7,1,1,0,False,Weisbecker,secondary,unknown,11.7,11.7,Bettongia gaimardi,Bettongia gaimardi,verbatim,False
+Bettongia lesueur,endocranial_volume,Endocranial_volume,mL,9.85,2,2,0,False,Seymour; Weisbecker,secondary,unknown,9.2,10.5,Bettongia lesueur,Bettongia lesueur,verbatim,False
+Bettongia penicillata,endocranial_volume,Endocranial_volume,mL,9.56,1,1,0,False,Weisbecker,secondary,unknown,9.56,9.56,Bettongia penicillata,Bettongia penicillata,verbatim,False
+Bettongia tropica,endocranial_volume,Endocranial_volume,mL,8.92,1,1,0,False,Weisbecker,secondary,unknown,8.92,8.92,Bettongia tropica,Bettongia tropica,synonym:NCBI,False
 Brachyteles arachnoides,endocranial_volume,Endocranial_volume,mL,102.043,1,1,0,False,Powell,secondary,both,102.043,102.043,Brachyteles_arachnoides,Brachyteles arachnoides,verbatim,False
-Brachyteles sp.,endocranial_volume,Endocranial_volume,mL,116.72,1,1,1,True,Isler,primary,unknown,116.72,116.72,Brachyteles sp.,Brachyteles sp.,unresolved,False
+Brachyteles sp.,endocranial_volume,Endocranial_volume,mL,116.72,1,1,1,True,Isler,primary,unknown,116.72,116.72,Brachyteles sp.,Brachyteles sp.,verbatim,False
+Burramys parvus,endocranial_volume,Endocranial_volume,mL,1.0,1,1,0,False,Weisbecker,secondary,unknown,1.0,1.0,Burramys parvus,Burramys parvus,verbatim,False
 Cacajao calvus,endocranial_volume,Endocranial_volume,mL,76.0,2,2,1,True,Isler; Seymour,primary; secondary,unknown,76.0,100.0,Cacajao calvus,Cacajao calvus,verbatim,False
 Cacajao melanocephalus,endocranial_volume,Endocranial_volume,mL,68.77,1,1,1,True,Isler,primary,unknown,68.77,68.77,Cacajao melanocephalus,Cacajao melanocephalus,verbatim,False
 Cacajao melanocephalus,endocranial_volume,Endocranial_volume_female,mL,61.98,1,1,0,False,Powell,secondary,female,61.98,61.98,Cacajao_melanocephalus,Cacajao melanocephalus,verbatim,False
+Caenolestes fuliginosus,endocranial_volume,Endocranial_volume,mL,0.68,1,1,0,False,Weisbecker,secondary,unknown,0.68,0.68,Caenolestes fuliginosus,Caenolestes fuliginosus,hub,False
 Callicebus brunneus,endocranial_volume,Endocranial_volume,mL,18.0,1,1,0,False,Powell,secondary,both,18.0,18.0,Callicebus_brunneus,Callicebus brunneus,verbatim,False
-Callicebus caligatus,endocranial_volume,Endocranial_volume,mL,17.25,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,17.175,17.25,Callicebus caligatus; Callicebus_caligatus,Callicebus caligatus,unresolved,False
 Callicebus cupreus,endocranial_volume,Endocranial_volume,mL,17.63,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,17.44,17.63,Callicebus cupreus; Callicebus_cupreus,Callicebus cupreus,verbatim,False
-Callicebus discolor,endocranial_volume,Endocranial_volume,mL,17.53,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,17.0,17.53,Callicebus discolor; Callicebus_discolor,Callicebus discolor,unresolved,False
-Callicebus lugens,endocranial_volume,Endocranial_volume,mL,18.97,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,18.97,19.132,Callicebus lugens; Callicebus_lugens,Callicebus lugens,unresolved,False
-Callicebus medemi,endocranial_volume,Endocranial_volume,mL,19.44,1,1,1,True,Isler,primary,unknown,19.44,19.44,Callicebus medemi,Callicebus medemi,unresolved,False
 Callicebus moloch,endocranial_volume,Endocranial_volume,mL,15.4,1,1,0,False,Powell,secondary,both,15.4,15.4,Callicebus_moloch,Callicebus moloch,our_judgment,False
-Callicebus oenanthe,endocranial_volume,Endocranial_volume,mL,13.9,1,1,0,False,Powell,secondary,both,13.9,13.9,Callicebus_oenanthe,Callicebus oenanthe,unresolved,False
+Callicebus oenanthe,endocranial_volume,Endocranial_volume,mL,13.9,1,1,0,False,Powell,secondary,both,13.9,13.9,Callicebus_oenanthe,Callicebus oenanthe,verbatim,False
 Callicebus personatus,endocranial_volume,Endocranial_volume,mL,20.2,1,1,0,False,Powell,secondary,both,20.2,20.2,Callicebus_personatus,Callicebus personatus,verbatim,False
 Callicebus torquatus,endocranial_volume,Endocranial_volume,mL,19.774,1,1,0,False,Powell,secondary,both,19.774,19.774,Callicebus_torquatus,Callicebus torquatus,verbatim,False
 Callimico goeldii,endocranial_volume,Endocranial_volume,mL,11.43,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,11.243,11.43,Callimico goeldii; Callimico_goeldii,Callimico goeldii,verbatim,False
 Callithrix aurita,endocranial_volume,Endocranial_volume,mL,8.425,1,1,0,False,Powell,secondary,both,8.425,8.425,Callithrix_aurita,Callithrix aurita,verbatim,False
 Callithrix geoffroyi,endocranial_volume,Endocranial_volume,mL,9.775,1,1,0,False,Powell,secondary,both,9.775,9.775,Callithrix_geoffroyi,Callithrix geoffroyi,verbatim,False
 Callithrix jacchus,endocranial_volume,Endocranial_volume,mL,7.24,3,3,1,True,Isler; Powell; Seymour,primary; secondary,both; unknown,6.6,7.487,Callithrix jacchus; Callithrix_jacchus,Callithrix jacchus,verbatim,False
-Callithrix kuhlii,endocranial_volume,Endocranial_volume,mL,7.973,1,1,0,False,Powell,secondary,both,7.973,7.973,Callithrix_kuhlii,Callithrix kuhlii,unresolved,False
+Callithrix kuhlii,endocranial_volume,Endocranial_volume,mL,7.973,1,1,0,False,Powell,secondary,both,7.973,7.973,Callithrix_kuhlii,Callithrix kuhlii,verbatim,False
 Callithrix penicillata,endocranial_volume,Endocranial_volume,mL,7.32,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,7.167,7.32,Callithrix penicillata; Callithrix_penicillata,Callithrix penicillata,hub,False
-Callithrix pygmaea,endocranial_volume,Endocranial_volume,mL,4.17,3,3,1,True,Isler; Powell; Seymour,primary; secondary,both; unknown,4.17,7.0,Callithrix pygmaea; Cebuella_pygmaea,Callithrix pygmaea,hub; synonym:legacy_override; verbatim,False
+Callithrix pygmaea,endocranial_volume,Endocranial_volume,mL,4.17,2,2,1,True,Isler; Seymour,primary; secondary,unknown,4.17,7.0,Callithrix pygmaea,Callithrix pygmaea,hub; verbatim,False
+Caluromys derbianus,endocranial_volume,Endocranial_volume,mL,3.4,1,1,0,False,Weisbecker,secondary,unknown,3.4,3.4,Caluromys derbianus,Caluromys derbianus,verbatim,False
+Caluromys philander,endocranial_volume,Endocranial_volume,mL,3.5,1,1,0,False,Weisbecker,secondary,unknown,3.5,3.5,Caluromys philander,Caluromys philander,verbatim,False
+Cebuella pygmaea,endocranial_volume,Endocranial_volume,mL,4.195,1,1,0,False,Powell,secondary,both,4.195,4.195,Cebuella_pygmaea,Cebuella pygmaea,hub,False
 Cebus albifrons,endocranial_volume,Endocranial_volume,mL,67.457,3,1,1,True,Isler,primary,unknown,60.92,76.0,Cebus albifrons,Cebus albifrons,verbatim,False
 Cebus albifrons,endocranial_volume,Endocranial_volume_female,mL,66.004,1,1,0,False,Powell,secondary,female,66.004,66.004,Cebus_albifrons,Cebus albifrons,verbatim,False
 Cebus apella,endocranial_volume,Endocranial_volume,mL,66.63,1,1,1,True,Isler,primary,unknown,66.63,66.63,Cebus apella,Cebus apella,hub,False
@@ -72,9 +87,10 @@ Cebus capucinus,endocranial_volume,Endocranial_volume,mL,72.93,1,1,1,True,Isler,
 Cebus capucinus,endocranial_volume,Endocranial_volume_female,mL,69.22,1,1,0,False,Powell,secondary,female,69.22,69.22,Cebus_capucinus,Cebus capucinus,verbatim,False
 Cebus olivaceus,endocranial_volume,Endocranial_volume,mL,69.84,1,1,1,True,Isler,primary,unknown,69.84,69.84,Cebus olivaceus,Cebus olivaceus,verbatim,False
 Cebus olivaceus,endocranial_volume,Endocranial_volume_female,mL,70.086,1,1,0,False,Powell,secondary,female,70.086,70.086,Cebus_olivaceus,Cebus olivaceus,verbatim,False
-Cebus xanthosternos,endocranial_volume,Endocranial_volume,mL,66.09,1,1,1,True,Isler,primary,unknown,66.09,66.09,Cebus xanthosternos,Cebus xanthosternos,unresolved,False
-Cercartetus concinnus,endocranial_volume,Endocranial_volume,mL,0.28,1,1,0,False,Seymour,secondary,unknown,0.28,0.28,Cercartetus concinnus,Cercartetus concinnus,verbatim,False
-Cercartetus nanus,endocranial_volume,Endocranial_volume,mL,0.55,1,1,0,False,Seymour,secondary,unknown,0.55,0.55,Cercartetus nanus,Cercartetus nanus,verbatim,False
+Cercartetus caudatus,endocranial_volume,Endocranial_volume,mL,0.71,1,1,0,False,Weisbecker,secondary,unknown,0.71,0.71,Cercartetus caudatus,Cercartetus caudatus,unresolved,False
+Cercartetus concinnus,endocranial_volume,Endocranial_volume,mL,0.29,2,2,0,False,Seymour; Weisbecker,secondary,unknown,0.28,0.3,Cercartetus concinnus,Cercartetus concinnus,verbatim,False
+Cercartetus lepidus,endocranial_volume,Endocranial_volume,mL,0.36,1,1,0,False,Weisbecker,secondary,unknown,0.36,0.36,Cercartetus lepidus,Cercartetus lepidus,verbatim,False
+Cercartetus nanus,endocranial_volume,Endocranial_volume,mL,0.49,2,2,0,False,Seymour; Weisbecker,secondary,unknown,0.43,0.55,Cercartetus nanus,Cercartetus nanus,verbatim,False
 Cercocebus agilis,endocranial_volume,Endocranial_volume,mL,116.43,1,1,1,True,Isler,primary,unknown,116.43,116.43,Cercocebus agilis,Cercocebus agilis,verbatim,False
 Cercocebus agilis,endocranial_volume,Endocranial_volume_female,mL,100.969,1,1,0,False,Powell,secondary,female,100.969,100.969,Cercocebus_agilis,Cercocebus agilis,verbatim,False
 Cercocebus atys,endocranial_volume,Endocranial_volume,mL,94.68,1,1,1,True,Isler,primary,unknown,94.68,94.68,Cercocebus atys,Cercocebus atys,verbatim,False
@@ -85,20 +101,19 @@ Cercocebus torquatus,endocranial_volume,Endocranial_volume_female,mL,93.482,1,1,
 Cercopithecus albogularis,endocranial_volume,Endocranial_volume,mL,70.237,4,1,1,True,Isler,primary,unknown,64.17,75.25,Cercopithecus albogularis,Cercopithecus albogularis,verbatim,False
 Cercopithecus ascanius,endocranial_volume,Endocranial_volume,mL,59.58,1,1,1,True,Isler,primary,unknown,59.58,59.58,Cercopithecus ascanius,Cercopithecus ascanius,verbatim,False
 Cercopithecus ascanius,endocranial_volume,Endocranial_volume_female,mL,56.684,1,1,0,False,Powell,secondary,female,56.684,56.684,Cercopithecus_ascanius,Cercopithecus ascanius,verbatim,False
-Cercopithecus campbelli,endocranial_volume,Endocranial_volume,mL,57.39,1,1,1,True,Isler,primary,unknown,57.39,57.39,Cercopithecus campbelli,Cercopithecus campbelli,verbatim,False
+Cercopithecus campbelli,endocranial_volume,Endocranial_volume,mL,56.515,2,1,1,True,Isler,primary,unknown,55.64,57.39,Cercopithecus campbelli; Cercopithecus lowei,Cercopithecus campbelli,subspecies_assign; verbatim,False
 Cercopithecus campbelli,endocranial_volume,Endocranial_volume_female,mL,54.064,1,1,0,False,Powell,secondary,female,54.064,54.064,Cercopithecus_campbelli,Cercopithecus campbelli,verbatim,False
 Cercopithecus campbelli lowei,endocranial_volume,Endocranial_volume_female,mL,51.186,1,1,0,False,Powell,secondary,female,51.186,51.186,Cercopithecus_campbelli_lowei,Cercopithecus campbelli lowei,verbatim,False
-Cercopithecus cephus,endocranial_volume,Endocranial_volume,mL,65.26,1,1,1,True,Isler,primary,unknown,65.26,65.26,Cercopithecus cephus,Cercopithecus cephus,unresolved,False
-Cercopithecus cephus,endocranial_volume,Endocranial_volume_female,mL,60.578,1,1,0,False,Powell,secondary,female,60.578,60.578,Cercopithecus_cephus,Cercopithecus cephus,unresolved,False
+Cercopithecus cephus,endocranial_volume,Endocranial_volume,mL,65.26,1,1,1,True,Isler,primary,unknown,65.26,65.26,Cercopithecus cephus,Cercopithecus cephus,verbatim,False
+Cercopithecus cephus,endocranial_volume,Endocranial_volume_female,mL,60.578,1,1,0,False,Powell,secondary,female,60.578,60.578,Cercopithecus_cephus,Cercopithecus cephus,verbatim,False
 Cercopithecus diana,endocranial_volume,Endocranial_volume,mL,62.61,1,1,1,True,Isler,primary,unknown,62.61,62.61,Cercopithecus diana,Cercopithecus diana,verbatim,False
 Cercopithecus diana,endocranial_volume,Endocranial_volume_female,mL,57.293,1,1,0,False,Powell,secondary,female,57.293,57.293,Cercopithecus_diana,Cercopithecus diana,verbatim,False
-Cercopithecus doggetti,endocranial_volume,Endocranial_volume,mL,65.36,1,1,1,True,Isler,primary,unknown,65.36,65.36,Cercopithecus doggetti,Cercopithecus doggetti,unresolved,False
+Cercopithecus doggetti,endocranial_volume,Endocranial_volume,mL,65.36,1,1,1,True,Isler,primary,unknown,65.36,65.36,Cercopithecus doggetti,Cercopithecus doggetti,verbatim,False
 Cercopithecus erythrotis,endocranial_volume,Endocranial_volume,mL,65.4,1,1,1,True,Isler,primary,unknown,65.4,65.4,Cercopithecus erythrotis,Cercopithecus erythrotis,verbatim,False
 Cercopithecus hamlyni,endocranial_volume,Endocranial_volume,mL,65.9,1,1,1,True,Isler,primary,unknown,65.9,65.9,Cercopithecus hamlyni,Cercopithecus hamlyni,verbatim,False
 Cercopithecus hamlyni,endocranial_volume,Endocranial_volume_female,mL,61.867,1,1,0,False,Powell,secondary,female,61.867,61.867,Cercopithecus_hamlyni,Cercopithecus hamlyni,verbatim,False
 Cercopithecus lhoesti,endocranial_volume,Endocranial_volume,mL,74.2,1,1,1,True,Isler,primary,unknown,74.2,74.2,Cercopithecus lhoesti,Cercopithecus lhoesti,verbatim,False
 Cercopithecus lhoesti,endocranial_volume,Endocranial_volume_female,mL,66.127,1,1,0,False,Powell,secondary,female,66.127,66.127,Cercopithecus_lhoesti,Cercopithecus lhoesti,verbatim,False
-Cercopithecus lowei,endocranial_volume,Endocranial_volume,mL,55.64,1,1,1,True,Isler,primary,unknown,55.64,55.64,Cercopithecus lowei,Cercopithecus lowei,unresolved,False
 Cercopithecus mitis,endocranial_volume,Endocranial_volume,mL,71.33,2,2,1,True,Isler; Seymour,primary; secondary,unknown,71.0,71.33,Cercopithecus mitis,Cercopithecus mitis,verbatim,False
 Cercopithecus mitis,endocranial_volume,Endocranial_volume_female,mL,65.623,1,1,0,False,Powell,secondary,female,65.623,65.623,Cercopithecus_mitis,Cercopithecus mitis,verbatim,False
 Cercopithecus mona,endocranial_volume,Endocranial_volume,mL,61.84,1,1,1,True,Isler,primary,unknown,61.84,61.84,Cercopithecus mona,Cercopithecus mona,verbatim,False
@@ -110,21 +125,24 @@ Cercopithecus petaurista,endocranial_volume,Endocranial_volume,mL,54.85,3,1,1,Tr
 Cercopithecus petaurista,endocranial_volume,Endocranial_volume_female,mL,52.748,1,1,0,False,Powell,secondary,female,52.748,52.748,Cercopithecus_petaurista,Cercopithecus petaurista,verbatim,False
 Cercopithecus pogonias,endocranial_volume,Endocranial_volume,mL,59.56,1,1,1,True,Isler,primary,unknown,59.56,59.56,Cercopithecus pogonias,Cercopithecus pogonias,verbatim,False
 Cercopithecus pogonias,endocranial_volume,Endocranial_volume_female,mL,57.594,1,1,0,False,Powell,secondary,female,57.594,57.594,Cercopithecus_pogonias,Cercopithecus pogonias,verbatim,False
-Cercopithecus pogonias wolfi,endocranial_volume,Endocranial_volume_female,mL,53.5,1,1,0,False,Powell,secondary,female,53.5,53.5,Cercopithecus_pogonias_wolfi,Cercopithecus pogonias wolfi,unresolved,False
 Cercopithecus wolfi,endocranial_volume,Endocranial_volume,mL,61.45,1,1,1,True,Isler,primary,unknown,61.45,61.45,Cercopithecus wolfi,Cercopithecus wolfi,verbatim,False
+Cercopithecus wolfi,endocranial_volume,Endocranial_volume_female,mL,53.5,1,1,0,False,Powell,secondary,female,53.5,53.5,Cercopithecus_pogonias_wolfi,Cercopithecus wolfi,synonym:NCBI,False
+Chaeropus ecaudatus,endocranial_volume,Endocranial_volume,mL,2.4,1,1,0,False,Weisbecker,secondary,unknown,2.4,2.4,Chaeropus ecaudatus,Chaeropus ecaudatus,unresolved,False
 Cheirogaleus adipicaudatus,endocranial_volume,Endocranial_volume,mL,3.04,1,1,1,True,Isler,primary,unknown,3.04,3.04,Cheirogaleus adipicaudatus,Cheirogaleus adipicaudatus,unresolved,False
 Cheirogaleus major,endocranial_volume,Endocranial_volume,mL,5.81,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,5.645,5.81,Cheirogaleus major; Cheirogaleus_major,Cheirogaleus major,verbatim,False
 Cheirogaleus medius,endocranial_volume,Endocranial_volume,mL,2.6,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,2.544,2.6,Cheirogaleus medius; Cheirogaleus_medius,Cheirogaleus medius,verbatim,False
-Cheirogaleus sibreei,endocranial_volume,Endocranial_volume,mL,4.4,1,1,1,True,Isler,primary,unknown,4.4,4.4,Cheirogaleus sibreei,Cheirogaleus sibreei,unresolved,False
-Chiropotes albinasus,endocranial_volume,Endocranial_volume,mL,57.64,1,1,0,False,Powell,secondary,both,57.64,57.64,Chiropotes_albinasus,Chiropotes albinasus,unresolved,False
-Chiropotes chiropotes,endocranial_volume,Endocranial_volume,mL,57.04,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,54.868,57.04,Chiropotes chiropotes; Chiropotes_chiropotes,Chiropotes chiropotes,unresolved,False
-Chiropotes israelita,endocranial_volume,Endocranial_volume,mL,55.13,1,1,1,True,Isler,primary,unknown,55.13,55.13,Chiropotes israelita,Chiropotes israelita,unresolved,False
-Chiropotes satanas,endocranial_volume,Endocranial_volume,mL,48.33,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,48.33,49.407,Chiropotes satanas; Chiropotes_satanas,Chiropotes satanas,unresolved,False
+Cheirogaleus sibreei,endocranial_volume,Endocranial_volume,mL,4.4,1,1,1,True,Isler,primary,unknown,4.4,4.4,Cheirogaleus sibreei,Cheirogaleus sibreei,verbatim,False
+Cheracebus lugens,endocranial_volume,Endocranial_volume,mL,18.97,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,18.97,19.132,Callicebus lugens; Callicebus_lugens,Cheracebus lugens,our_judgment,False
+Cheracebus medemi,endocranial_volume,Endocranial_volume,mL,19.44,1,1,1,True,Isler,primary,unknown,19.44,19.44,Callicebus medemi,Cheracebus medemi,our_judgment,False
+Chiropotes albinasus,endocranial_volume,Endocranial_volume,mL,57.64,1,1,0,False,Powell,secondary,both,57.64,57.64,Chiropotes_albinasus,Chiropotes albinasus,verbatim,False
+Chiropotes chiropotes,endocranial_volume,Endocranial_volume,mL,57.04,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,54.868,57.04,Chiropotes chiropotes; Chiropotes_chiropotes,Chiropotes chiropotes,verbatim,False
+Chiropotes israelita,endocranial_volume,Endocranial_volume,mL,55.13,1,1,1,True,Isler,primary,unknown,55.13,55.13,Chiropotes israelita,Chiropotes israelita,verbatim,False
+Chiropotes satanas,endocranial_volume,Endocranial_volume,mL,48.33,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,48.33,49.407,Chiropotes satanas; Chiropotes_satanas,Chiropotes satanas,verbatim,False
 Chlorocebus aethiops,endocranial_volume,Endocranial_volume,mL,65.0,2,2,1,True,Isler; Seymour,primary; secondary,unknown,65.0,67.0,Chlorocebus aethiops,Chlorocebus aethiops,verbatim,False
 Chlorocebus aethiops,endocranial_volume,Endocranial_volume_female,mL,58.247,1,1,0,False,Powell,secondary,female,58.247,58.247,Chlorocebus_aethiops,Chlorocebus aethiops,verbatim,False
-Chlorocebus pygerythrus,endocranial_volume,Endocranial_volume,mL,61.642,5,1,1,True,Isler,primary,unknown,55.4,64.64,Chlorocebus pygerythrus,Chlorocebus pygerythrus,hub,False
-Chlorocebus pygerythrus,endocranial_volume,Endocranial_volume_female,mL,59.92,1,1,0,False,Powell,secondary,female,59.92,59.92,Chlorocebus_pygerythrus,Chlorocebus pygerythrus,hub,False
-Chlorocebus sabaeus,endocranial_volume,Endocranial_volume,mL,64.91,1,1,1,True,Isler,primary,unknown,64.91,64.91,Chlorocebus sabaeus,Chlorocebus sabaeus,hub,False
+Chlorocebus pygerythrus,endocranial_volume,Endocranial_volume,mL,61.642,5,1,1,True,Isler,primary,unknown,55.4,64.64,Chlorocebus pygerythrus,Chlorocebus pygerythrus,verbatim,False
+Chlorocebus pygerythrus,endocranial_volume,Endocranial_volume_female,mL,59.92,1,1,0,False,Powell,secondary,female,59.92,59.92,Chlorocebus_pygerythrus,Chlorocebus pygerythrus,verbatim,False
+Chlorocebus sabaeus,endocranial_volume,Endocranial_volume,mL,64.91,1,1,1,True,Isler,primary,unknown,64.91,64.91,Chlorocebus sabaeus,Chlorocebus sabaeus,verbatim,False
 Colobus angolensis,endocranial_volume,Endocranial_volume,mL,77.7,1,1,1,True,Isler,primary,unknown,77.7,77.7,Colobus angolensis,Colobus angolensis,verbatim,False
 Colobus guereza,endocranial_volume,Endocranial_volume,mL,75.98,4,1,1,True,Isler,primary,unknown,72.14,82.95,Colobus guereza,Colobus guereza,verbatim,False
 Colobus guereza,endocranial_volume,Endocranial_volume_female,mL,72.0,1,1,0,False,Powell,secondary,female,72.0,72.0,Colobus_guereza,Colobus guereza,verbatim,False
@@ -133,49 +151,77 @@ Colobus polykomos,endocranial_volume,Endocranial_volume_female,mL,70.975,1,1,0,F
 Colobus satanas,endocranial_volume,Endocranial_volume,mL,74.9,2,2,1,True,Isler; Seymour,primary; secondary,unknown,74.9,79.0,Colobus satanas,Colobus satanas,verbatim,False
 Colobus vellerosus,endocranial_volume,Endocranial_volume,mL,73.07,1,1,1,True,Isler,primary,unknown,73.07,73.07,Colobus vellerosus,Colobus vellerosus,verbatim,False
 Colobus vellerosus,endocranial_volume,Endocranial_volume_female,mL,70.605,1,1,0,False,Powell,secondary,female,70.605,70.605,Colobus_vellerosus,Colobus vellerosus,verbatim,False
+Dactylonax palpator,endocranial_volume,Endocranial_volume,mL,6.91,1,1,0,False,Weisbecker,secondary,unknown,6.91,6.91,Dactylonax palpator,Dactylonax palpator,unresolved,False
+Dactylopsila tatei,endocranial_volume,Endocranial_volume,mL,4.45,1,1,0,False,Weisbecker,secondary,unknown,4.45,4.45,Dactylopsila tatei,Dactylopsila tatei,unresolved,False
+Dactylopsila trivirgata,endocranial_volume,Endocranial_volume,mL,5.83,1,1,0,False,Weisbecker,secondary,unknown,5.83,5.83,Dactylopsila trivirgata,Dactylopsila trivirgata,verbatim,False
+Dasycercus cristicauda,endocranial_volume,Endocranial_volume,mL,1.24,1,1,0,False,Weisbecker,secondary,unknown,1.24,1.24,Dasycercus cristicauda,Dasycercus cristicauda,verbatim,False
+Dasykaluta rosamondae,endocranial_volume,Endocranial_volume,mL,0.54,1,1,0,False,Weisbecker,secondary,unknown,0.54,0.54,Dasykaluta rosamondae,Dasykaluta rosamondae,unresolved,False
+Dasyuroides byrnei,endocranial_volume,Endocranial_volume,mL,1.5,1,1,0,False,Weisbecker,secondary,unknown,1.5,1.5,Dasyuroides byrnei,Dasyuroides byrnei,verbatim,False
+Dasyurus albopunctatus,endocranial_volume,Endocranial_volume,mL,3.79,1,1,0,False,Weisbecker,secondary,unknown,3.79,3.79,Dasyurus albopunctatus,Dasyurus albopunctatus,unresolved,False
+Dasyurus geoffroii,endocranial_volume,Endocranial_volume,mL,5.17,1,1,0,False,Weisbecker,secondary,unknown,5.17,5.17,Dasyurus geoffroii,Dasyurus geoffroii,verbatim,False
+Dasyurus hallucatus,endocranial_volume,Endocranial_volume,mL,3.38,1,1,0,False,Weisbecker,secondary,unknown,3.38,3.38,Dasyurus hallucatus,Dasyurus hallucatus,verbatim,False
+Dasyurus maculatus,endocranial_volume,Endocranial_volume,mL,9.41,1,1,0,False,Weisbecker,secondary,unknown,9.41,9.41,Dasyurus maculatus,Dasyurus maculatus,verbatim,False
+Dasyurus spartacus,endocranial_volume,Endocranial_volume,mL,5.3,1,1,0,False,Weisbecker,secondary,unknown,5.3,5.3,Dasyurus spartacus,Dasyurus spartacus,unresolved,False
+Dasyurus viverrinus,endocranial_volume,Endocranial_volume,mL,5.33,1,1,0,False,Weisbecker,secondary,unknown,5.33,5.33,Dasyurus viverrinus,Dasyurus viverrinus,verbatim,False
 Daubentonia madagascariensis,endocranial_volume,Endocranial_volume,mL,44.85,1,1,1,True,Isler,primary,unknown,44.85,44.85,Daubentonia madagascariensis,Daubentonia madagascariensis,verbatim,False
-Dendrolagus dorianus,endocranial_volume,Endocranial_volume,mL,38.0,1,1,0,False,Seymour,secondary,unknown,38.0,38.0,Dendrolagus dorianus,Dendrolagus dorianus,verbatim,False
-Dendrolagus matschiei,endocranial_volume,Endocranial_volume,mL,29.0,1,1,0,False,Seymour,secondary,unknown,29.0,29.0,Dendrolagus matschiei,Dendrolagus matschiei,verbatim,False
+Dendrolagus bennetianus,endocranial_volume,Endocranial_volume,mL,18.5,1,1,0,False,Weisbecker,secondary,unknown,18.5,18.5,Dendrolagus bennetianus,Dendrolagus bennetianus,unresolved,False
+Dendrolagus dorianus,endocranial_volume,Endocranial_volume,mL,35.15,2,2,0,False,Seymour; Weisbecker,secondary,unknown,32.3,38.0,Dendrolagus dorianus,Dendrolagus dorianus,verbatim,False
+Dendrolagus goodfellowi,endocranial_volume,Endocranial_volume,mL,28.4,1,1,0,False,Weisbecker,secondary,unknown,28.4,28.4,Dendrolagus goodfellowi,Dendrolagus goodfellowi,verbatim,False
+Dendrolagus inustus,endocranial_volume,Endocranial_volume,mL,30.1,1,1,0,False,Weisbecker,secondary,unknown,30.1,30.1,Dendrolagus inustus,Dendrolagus inustus,verbatim,False
+Dendrolagus lumholtzi,endocranial_volume,Endocranial_volume,mL,26.2,1,1,0,False,Weisbecker,secondary,unknown,26.2,26.2,Dendrolagus lumholtzi,Dendrolagus lumholtzi,verbatim,False
+Dendrolagus matschiei,endocranial_volume,Endocranial_volume,mL,28.25,2,2,0,False,Seymour; Weisbecker,secondary,unknown,27.5,29.0,Dendrolagus matschiei,Dendrolagus matschiei,verbatim,False
+Dendrolagus scottae,endocranial_volume,Endocranial_volume,mL,29.2,1,1,0,False,Weisbecker,secondary,unknown,29.2,29.2,Dendrolagus scottae,Dendrolagus scottae,unresolved,False
+Dendrolagus spadix,endocranial_volume,Endocranial_volume,mL,28.5,1,1,0,False,Weisbecker,secondary,unknown,28.5,28.5,Dendrolagus spadix,Dendrolagus spadix,unresolved,False
+Dendrolagus ursinus,endocranial_volume,Endocranial_volume,mL,26.3,1,1,0,False,Weisbecker,secondary,unknown,26.3,26.3,Dendrolagus ursinus,Dendrolagus ursinus,unresolved,False
+Didelphis marsupialis californica,endocranial_volume,Endocranial_volume,mL,6.35,1,1,0,False,Weisbecker,secondary,unknown,6.35,6.35,Didelphis marsupialis californica,Didelphis marsupialis californica,unresolved,False
+Didelphis virginiana,endocranial_volume,Endocranial_volume,mL,6.72,1,1,0,False,Weisbecker,secondary,unknown,6.72,6.72,Didelphis virginiana,Didelphis virginiana,verbatim,False
+Distoechurus pennatus,endocranial_volume,Endocranial_volume,mL,0.94,1,1,0,False,Weisbecker,secondary,unknown,0.94,0.94,Distoechurus pennatus,Distoechurus pennatus,verbatim,False
+Dorcopsis atrata,endocranial_volume,Endocranial_volume,mL,16.7,1,1,0,False,Weisbecker,secondary,unknown,16.7,16.7,Dorcopsis atrata,Dorcopsis atrata,unresolved,False
+Dorcopsis hageni,endocranial_volume,Endocranial_volume,mL,22.5,1,1,0,False,Weisbecker,secondary,unknown,22.5,22.5,Dorcopsis hageni,Dorcopsis hageni,unresolved,False
+Dorcopsis luctuosa,endocranial_volume,Endocranial_volume,mL,20.6,1,1,0,False,Weisbecker,secondary,unknown,20.6,20.6,Dorcopsis luctuosa,Dorcopsis luctuosa,verbatim,False
+Dorcopsis muelleri,endocranial_volume,Endocranial_volume,mL,20.4,1,1,0,False,Weisbecker,secondary,unknown,20.4,20.4,Dorcopsis muelleri,Dorcopsis muelleri,unresolved,False
+Dorcopsulus vanheurni,endocranial_volume,Endocranial_volume,mL,11.8,1,1,0,False,Weisbecker,secondary,unknown,11.8,11.8,Dorcopsulus vanheurni,Dorcopsulus vanheurni,unresolved,False
+Dorcopsulusmacleayi,endocranial_volume,Endocranial_volume,mL,13.5,1,1,0,False,Weisbecker,secondary,unknown,13.5,13.5,Dorcopsulusmacleayi,Dorcopsulusmacleayi,unresolved,False
+Dromciops gliroides,endocranial_volume,Endocranial_volume,mL,0.81,1,1,0,False,Weisbecker,secondary,unknown,0.81,0.81,Dromciops gliroides,Dromciops gliroides,unresolved,False
+Echymipera clara,endocranial_volume,Endocranial_volume,mL,4.48,1,1,0,False,Weisbecker,secondary,unknown,4.48,4.48,Echymipera clara,Echymipera clara,unresolved,False
+Echymipera kalubu,endocranial_volume,Endocranial_volume,mL,3.67,1,1,0,False,Weisbecker,secondary,unknown,3.67,3.67,Echymipera kalubu,Echymipera kalubu,verbatim,False
+Echymipera rufescens,endocranial_volume,Endocranial_volume,mL,3.73,1,1,0,False,Weisbecker,secondary,unknown,3.73,3.73,Echymipera rufescens,Echymipera rufescens,unresolved,False
 Erythrocebus patas,endocranial_volume,Endocranial_volume,mL,97.73,1,1,1,True,Isler,primary,unknown,97.73,97.73,Erythrocebus patas,Erythrocebus patas,verbatim,False
 Eulemur albifrons,endocranial_volume,Endocranial_volume,mL,21.45,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,21.45,23.019,Eulemur albifrons; Eulemur_albifrons,Eulemur albifrons,verbatim,False
-Eulemur albocollaris,endocranial_volume,Endocranial_volume,mL,22.1,1,1,1,True,Isler,primary,unknown,22.1,22.1,Eulemur albocollaris,Eulemur albocollaris,unresolved,False
-Eulemur collaris,endocranial_volume,Endocranial_volume,mL,22.885,1,1,0,False,Powell,secondary,both,22.885,22.885,Eulemur_collaris,Eulemur collaris,unresolved,False
+Eulemur cinereiceps,endocranial_volume,Endocranial_volume,mL,22.1,1,1,1,True,Isler,primary,unknown,22.1,22.1,Eulemur albocollaris,Eulemur cinereiceps,author_judgment,False
 Eulemur coronatus,endocranial_volume,Endocranial_volume,mL,20.65,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,19.784,20.65,Eulemur coronatus; Eulemur_coronatus,Eulemur coronatus,verbatim,False
-Eulemur fulvus,endocranial_volume,Endocranial_volume,mL,25.77,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,24.658,25.77,Eulemur fulvus; Eulemur_fulvus,Eulemur fulvus,verbatim,False
+Eulemur fulvus,endocranial_volume,Endocranial_volume,mL,25.77,3,2,1,True,Isler; Powell,primary; secondary,both; unknown,22.885,25.77,Eulemur fulvus; Eulemur_collaris; Eulemur_fulvus,Eulemur fulvus,subspecies_assign; verbatim,False
 Eulemur macaco,endocranial_volume,Endocranial_volume,mL,24.51,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,23.322,24.51,Eulemur macaco; Eulemur_macaco,Eulemur macaco,verbatim,False
 Eulemur mongoz,endocranial_volume,Endocranial_volume,mL,20.17,3,3,1,True,Isler; Powell; Seymour,primary; secondary,both; unknown,18.888,20.17,Eulemur mongoz; Eulemur_mongoz,Eulemur mongoz,verbatim,False
 Eulemur rubriventer,endocranial_volume,Endocranial_volume,mL,26.23,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,23.913,26.23,Eulemur rubriventer; Eulemur_rubriventer,Eulemur rubriventer,verbatim,False
 Eulemur rufus,endocranial_volume,Endocranial_volume,mL,25.4,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,22.541,25.4,Eulemur rufus; Eulemur_rufus,Eulemur rufus,verbatim,False
-Eulemur sanfordi,endocranial_volume,Endocranial_volume,mL,21.667,1,1,0,False,Powell,secondary,both,21.667,21.667,Eulemur_sanfordi,Eulemur sanfordi,unresolved,False
-Euoticus elegantulus,endocranial_volume,Endocranial_volume,mL,5.53,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,5.447,5.53,Euoticus elegantulus; Euoticus_elegantulus,Euoticus elegantulus,unresolved,False
+Eulemur sanfordi,endocranial_volume,Endocranial_volume,mL,21.667,1,1,0,False,Powell,secondary,both,21.667,21.667,Eulemur_sanfordi,Eulemur sanfordi,verbatim,False
+Euoticus elegantulus,endocranial_volume,Endocranial_volume,mL,5.53,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,5.447,5.53,Euoticus elegantulus; Euoticus_elegantulus,Euoticus elegantulus,verbatim,False
 Euoticus pallidus,endocranial_volume,Endocranial_volume,mL,5.19,1,1,1,True,Isler,primary,unknown,5.19,5.19,Euoticus pallidus,Euoticus pallidus,unresolved,False
-Galago cameronensis,endocranial_volume,Endocranial_volume,mL,5.58,1,1,1,True,Isler,primary,unknown,5.58,5.58,Galago cameronensis,Galago cameronensis,unresolved,False
-Galago gabonensis,endocranial_volume,Endocranial_volume,mL,5.36,1,1,1,True,Isler,primary,unknown,5.36,5.36,Galago gabonensis,Galago gabonensis,unresolved,False
-Galago gallarum,endocranial_volume,Endocranial_volume,mL,4.32,1,1,0,False,Powell,secondary,both,4.32,4.32,Galago_gallarum,Galago gallarum,unresolved,False
-Galago granti,endocranial_volume,Endocranial_volume,mL,4.07,1,1,1,True,Isler,primary,unknown,4.07,4.07,Galago granti,Galago granti,unresolved,False
+Galago alleni,endocranial_volume,Endocranial_volume,mL,5.58,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,5.58,5.68,Galago cameronensis; Sciurocheirus_alleni_cameronensis,Galago alleni,author_judgment; subspecies_assign,False
+Galago demidoff,endocranial_volume,Endocranial_volume,mL,2.65,1,1,1,True,Isler,primary,unknown,2.65,2.65,Galago demidoff,Galago demidoff,hub,False
+Galago gabonensis,endocranial_volume,Endocranial_volume,mL,5.36,1,1,1,True,Isler,primary,unknown,5.36,5.36,Galago gabonensis,Galago gabonensis,verbatim,False
+Galago gallarum,endocranial_volume,Endocranial_volume,mL,4.32,1,1,0,False,Powell,secondary,both,4.32,4.32,Galago_gallarum,Galago gallarum,verbatim,False
 Galago matschiei,endocranial_volume,Endocranial_volume,mL,4.62,1,1,1,True,Isler,primary,unknown,4.62,4.62,Galago matschiei,Galago matschiei,verbatim,False
 Galago moholi,endocranial_volume,Endocranial_volume,mL,3.71,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,3.673,3.71,Galago moholi; Galago_moholi,Galago moholi,verbatim,False
-Galago orinus,endocranial_volume,Endocranial_volume,mL,2.64,1,1,1,True,Isler,primary,unknown,2.64,2.64,Galago orinus,Galago orinus,unresolved,False
 Galago senegalensis,endocranial_volume,Endocranial_volume,mL,3.96,3,3,1,True,Isler; Powell; Seymour,primary; secondary,both; unknown,3.952,5.0,Galago senegalensis; Galago_senegalensis,Galago senegalensis,verbatim,False
-Galago thomasi,endocranial_volume,Endocranial_volume,mL,3.12,1,1,1,True,Isler,primary,unknown,3.12,3.12,Galago thomasi,Galago thomasi,unresolved,False
-Galago zanzibaricus,endocranial_volume,Endocranial_volume,mL,3.51,1,1,1,True,Isler,primary,unknown,3.51,3.51,Galago zanzibaricus,Galago zanzibaricus,unresolved,False
-Galagoides demidoff,endocranial_volume,Endocranial_volume,mL,2.65,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,2.633,2.65,Galago demidoff; Galagoides_demidovii,Galagoides demidoff,synonym:NCBI; synonym:legacy_key,False
-Galagoides granti,endocranial_volume,Endocranial_volume,mL,4.074,1,1,0,False,Powell,secondary,both,4.074,4.074,Galagoides_granti,Galagoides granti,unresolved,False
-Galagoides thomasi,endocranial_volume,Endocranial_volume,mL,2.823,1,1,0,False,Powell,secondary,both,2.823,2.823,Galagoides_thomasi,Galagoides thomasi,verbatim,False
+Galagoides demidoff,endocranial_volume,Endocranial_volume,mL,2.633,1,1,0,False,Powell,secondary,both,2.633,2.633,Galagoides_demidovii,Galagoides demidoff,synonym:NCBI,False
+Galagoides orinus,endocranial_volume,Endocranial_volume,mL,2.64,1,1,1,True,Isler,primary,unknown,2.64,2.64,Galago orinus,Galagoides orinus,our_judgment,False
+Galagoides thomasi,endocranial_volume,Endocranial_volume,mL,3.12,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,2.823,3.12,Galago thomasi; Galagoides_thomasi,Galagoides thomasi,synonym:NCBI; verbatim,False
 Gorilla beringei,endocranial_volume,Endocranial_volume,mL,491.27,1,1,1,True,Isler,primary,unknown,491.27,491.27,Gorilla beringei,Gorilla beringei,hub,False
 Gorilla beringei,endocranial_volume,Endocranial_volume_female,mL,456.145,1,1,0,False,Powell,secondary,female,456.145,456.145,Gorilla_beringei,Gorilla beringei,hub,False
 Gorilla gorilla,endocranial_volume,Endocranial_volume,mL,490.41,1,1,1,True,Isler,primary,unknown,490.41,490.41,Gorilla gorilla,Gorilla gorilla,hub,False
 Gorilla gorilla,endocranial_volume,Endocranial_volume_female,mL,433.735,1,1,0,False,Powell,secondary,female,433.735,433.735,Gorilla_gorilla,Gorilla gorilla,hub,False
 Gorilla sp.,endocranial_volume,Endocranial_volume,mL,461.0,1,1,0,False,Seymour,secondary,unknown,461.0,461.0,Gorilla gorilla,Gorilla sp.,lump,False
-Hapalemur alaotrensis,endocranial_volume,Endocranial_volume,mL,13.8,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,13.8,14.5,Hapalemur alaotrensis; Hapalemur_alaotrensis,Hapalemur alaotrensis,unresolved,False
-Hapalemur griseus,endocranial_volume,Endocranial_volume,mL,14.09,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,13.775,14.09,Hapalemur griseus; Hapalemur_griseus,Hapalemur griseus,verbatim,False
-Hapalemur occidentalis,endocranial_volume,Endocranial_volume,mL,14.2,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,13.75,14.2,Hapalemur occidentalis; Hapalemur_occidentalis,Hapalemur occidentalis,unresolved,False
-Hemibelideus lemuroides,endocranial_volume,Endocranial_volume,mL,3.35,1,1,0,False,Seymour,secondary,unknown,3.35,3.35,Hemibelideus lemuroides,Hemibelideus lemuroides,verbatim,False
+Gymnobelideus leadbeateri,endocranial_volume,Endocranial_volume,mL,2.85,1,1,0,False,Weisbecker,secondary,unknown,2.85,2.85,Gymnobelideus leadbeateri,Gymnobelideus leadbeateri,verbatim,False
+Hapalemur griseus,endocranial_volume,Endocranial_volume,mL,13.945,4,2,1,True,Isler; Powell,primary; secondary,both; unknown,13.775,14.5,Hapalemur alaotrensis; Hapalemur griseus; Hapalemur_alaotrensis; Hapalemur_griseus,Hapalemur griseus,subspecies_assign; verbatim,False
+Hapalemur occidentalis,endocranial_volume,Endocranial_volume,mL,14.2,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,13.75,14.2,Hapalemur occidentalis; Hapalemur_occidentalis,Hapalemur occidentalis,verbatim,False
+Hemibelideus lemuroides,endocranial_volume,Endocranial_volume,mL,3.25,2,2,0,False,Seymour; Weisbecker,secondary,unknown,3.15,3.35,Hemibelideus lemuroides,Hemibelideus lemuroides,verbatim,False
 Homo sapiens,endocranial_volume,Endocranial_volume,mL,1186.0,1,1,0,False,Seymour,secondary,unknown,1186.0,1186.0,Homo sapiens,Homo sapiens,verbatim,False
 Homo sapiens,endocranial_volume,Endocranial_volume_female,mL,1253.3,2,2,1,True,Caspar; Heldstab,primary; secondary,female,1212.7,1253.3,Homo sapiens,Homo sapiens,verbatim,False
 Hoolock hoolock,endocranial_volume,Endocranial_volume,mL,110.68,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,108.316,110.68,Bunopithecus hoolock; Hoolock_hoolock,Hoolock hoolock,synonym:NCBI; verbatim,False
 Hylobates agilis,endocranial_volume,Endocranial_volume,mL,91.16,3,3,1,True,Isler; Powell; Seymour,primary; secondary,both; unknown,91.16,115.0,Hylobates agilis; Hylobates_agilis,Hylobates agilis,verbatim,False
-Hylobates albibarbis,endocranial_volume,Endocranial_volume,mL,84.35,1,1,0,False,Powell,secondary,both,84.35,84.35,Hylobates_albibarbis,Hylobates albibarbis,unresolved,False
+Hylobates albibarbis,endocranial_volume,Endocranial_volume,mL,84.35,1,1,0,False,Powell,secondary,both,84.35,84.35,Hylobates_albibarbis,Hylobates albibarbis,verbatim,False
 Hylobates klossii,endocranial_volume,Endocranial_volume,mL,87.99,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,87.553,87.99,Hylobates klossii; Hylobates_klossii,Hylobates klossii,verbatim,False
 Hylobates lar,endocranial_volume,Endocranial_volume,mL,102.353,5,3,1,True,Isler; Powell; Seymour,primary; secondary,both; unknown,101.378,103.32,Hylobates lar; Hylobates_lar,Hylobates lar,verbatim,False
 Hylobates moloch,endocranial_volume,Endocranial_volume,mL,93.469,1,1,0,False,Powell,secondary,both,93.469,93.469,Hylobates_moloch,Hylobates moloch,verbatim,False
@@ -183,14 +229,23 @@ Hylobates muelleri,endocranial_volume,Endocranial_volume,mL,85.13,2,2,1,True,Isl
 Hylobates pileatus,endocranial_volume,Endocranial_volume,mL,84.69,1,1,1,True,Isler,primary,unknown,84.69,84.69,Hylobates pileatus,Hylobates pileatus,verbatim,False
 Hylobates syndactylus,endocranial_volume,Endocranial_volume,mL,120.0,1,1,0,False,Seymour,secondary,unknown,120.0,120.0,Hylobates syndactylus,Hylobates syndactylus,verbatim,False
 Indri indri,endocranial_volume,Endocranial_volume,mL,34.81,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,34.81,35.009,Indri indri; Indri_indri,Indri indri,verbatim,False
-Lagothrix cana,endocranial_volume,Endocranial_volume,mL,99.34,1,1,1,True,Isler,primary,unknown,99.34,99.34,Lagothrix cana,Lagothrix cana,unresolved,False
-Lagothrix cana,endocranial_volume,Endocranial_volume_female,mL,96.228,1,1,0,False,Powell,secondary,female,96.228,96.228,Lagothrix_cana,Lagothrix cana,unresolved,False
-Lagothrix lagothricha,endocranial_volume,Endocranial_volume,mL,96.5,2,2,1,True,Isler; Seymour,primary; secondary,unknown,96.5,110.0,Lagothrix lagotricha,Lagothrix lagothricha,spelling,False
-Lagothrix lagothricha,endocranial_volume,Endocranial_volume_female,mL,88.218,1,1,0,False,Powell,secondary,female,88.218,88.218,Lagothrix_lagotricha,Lagothrix lagothricha,spelling,False
-Lagothrix lugens,endocranial_volume,Endocranial_volume_female,mL,94.8,1,1,0,False,Powell,secondary,female,94.8,94.8,Lagothrix_lugens,Lagothrix lugens,unresolved,False
-Lagothrix poeppigii,endocranial_volume,Endocranial_volume_female,mL,86.1,1,1,0,False,Powell,secondary,female,86.1,86.1,Lagothrix_poeppigii,Lagothrix poeppigii,unresolved,False
-Lasiorhinus latifrons,endocranial_volume,Endocranial_volume,mL,56.0,1,1,0,False,Seymour,secondary,unknown,56.0,56.0,Lasiorhinus latifrons,Lasiorhinus latifrons,verbatim,False
+Isoodon macrourus,endocranial_volume,Endocranial_volume,mL,4.42,1,1,0,False,Weisbecker,secondary,unknown,4.42,4.42,Isoodon macrourus,Isoodon macrourus,verbatim,False
+Isoodono besulus,endocranial_volume,Endocranial_volume,mL,3.89,1,1,0,False,Weisbecker,secondary,unknown,3.89,3.89,Isoodono besulus,Isoodono besulus,unresolved,False
+Lagorchestes conspicillatus,endocranial_volume,Endocranial_volume,mL,14.0,1,1,0,False,Weisbecker,secondary,unknown,14.0,14.0,Lagorchestes conspicillatus,Lagorchestes conspicillatus,verbatim,False
+Lagorchestes hirsutus,endocranial_volume,Endocranial_volume,mL,7.77,1,1,0,False,Weisbecker,secondary,unknown,7.77,7.77,Lagorchestes hirsutus,Lagorchestes hirsutus,unresolved,False
+Lagorchestes leporides,endocranial_volume,Endocranial_volume,mL,12.6,1,1,0,False,Weisbecker,secondary,unknown,12.6,12.6,Lagorchestes leporides,Lagorchestes leporides,unresolved,False
+Lagostrophus fasciatus,endocranial_volume,Endocranial_volume,mL,7.0,1,1,0,False,Weisbecker,secondary,unknown,7.0,7.0,Lagostrophus fasciatus,Lagostrophus fasciatus,unresolved,False
+Lagothrix cana,endocranial_volume,Endocranial_volume,mL,99.34,1,1,1,True,Isler,primary,unknown,99.34,99.34,Lagothrix cana,Lagothrix cana,verbatim,False
+Lagothrix cana,endocranial_volume,Endocranial_volume_female,mL,96.228,1,1,0,False,Powell,secondary,female,96.228,96.228,Lagothrix_cana,Lagothrix cana,verbatim,False
+Lagothrix lagothricha,endocranial_volume,Endocranial_volume,mL,110.0,1,1,0,False,Seymour,secondary,unknown,110.0,110.0,Lagothrix lagotricha,Lagothrix lagothricha,spelling,False
+Lagothrix lagotricha,endocranial_volume,Endocranial_volume,mL,96.5,1,1,1,True,Isler,primary,unknown,96.5,96.5,Lagothrix lagotricha,Lagothrix lagotricha,hub,False
+Lagothrix lagotricha,endocranial_volume,Endocranial_volume_female,mL,88.218,1,1,0,False,Powell,secondary,female,88.218,88.218,Lagothrix_lagotricha,Lagothrix lagotricha,hub,False
+Lagothrix lugens,endocranial_volume,Endocranial_volume_female,mL,94.8,1,1,0,False,Powell,secondary,female,94.8,94.8,Lagothrix_lugens,Lagothrix lugens,verbatim,False
+Lagothrix poeppigii,endocranial_volume,Endocranial_volume_female,mL,86.1,1,1,0,False,Powell,secondary,female,86.1,86.1,Lagothrix_poeppigii,Lagothrix poeppigii,verbatim,False
+Lasiorhinus latifrons,endocranial_volume,Endocranial_volume,mL,55.75,2,2,0,False,Seymour; Weisbecker,secondary,unknown,55.5,56.0,Lasiorhinus latifrons,Lasiorhinus latifrons,verbatim,False
 Lemur catta,endocranial_volume,Endocranial_volume,mL,22.9,3,3,1,True,Isler; Powell; Seymour,primary; secondary,both; unknown,22.102,23.0,Lemur catta; Lemur_catta,Lemur catta,verbatim,False
+Leontocebus nigricollis,endocranial_volume,Endocranial_volume,mL,8.9,1,1,1,True,Isler,primary,unknown,8.9,8.9,Saguinus nigricollis,Leontocebus nigricollis,our_judgment,False
+Leontocebus tripartitus,endocranial_volume,Endocranial_volume,mL,8.5,1,1,0,False,Powell,secondary,both,8.5,8.5,Saguinus_tripartitus,Leontocebus tripartitus,our_judgment,False
 Leontopithecus chrysomelas,endocranial_volume,Endocranial_volume,mL,11.84,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,11.836,11.84,Leontopithecus chrysomelas; Leontopithecus_chrysomelas,Leontopithecus chrysomelas,verbatim,False
 Leontopithecus chrysopygus,endocranial_volume,Endocranial_volume_female,mL,13.04,1,1,1,True,Caspar,primary,female,13.04,13.04,Leontopithecus chrysopygus,Leontopithecus chrysopygus,verbatim,False
 Leontopithecus rosalia,endocranial_volume,Endocranial_volume,mL,12.83,3,3,1,True,Isler; Powell; Seymour,primary; secondary,both; unknown,12.0,12.83,Leontopithecus rosalia; Leontopithecus_rosalia,Leontopithecus rosalia,verbatim,False
@@ -205,7 +260,7 @@ Lophocebus albigena,endocranial_volume,Endocranial_volume,mL,93.09,3,2,1,True,Is
 Lophocebus albigena,endocranial_volume,Endocranial_volume_female,mL,90.643,1,1,0,False,Powell,secondary,female,90.643,90.643,Lophocebus_albigena,Lophocebus albigena,verbatim,False
 Lophocebus aterrimus,endocranial_volume,Endocranial_volume,mL,101.59,1,1,1,True,Isler,primary,unknown,101.59,101.59,Lophocebus aterrimus,Lophocebus aterrimus,verbatim,False
 Lophocebus aterrimus,endocranial_volume,Endocranial_volume_female,mL,87.601,1,1,0,False,Powell,secondary,female,87.601,87.601,Lophocebus_aterrimus,Lophocebus aterrimus,verbatim,False
-Loris lydekkerianus,endocranial_volume,Endocranial_volume,mL,6.34,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,6.34,6.365,Loris lydekkerianus; Loris_lydekkerianus,Loris lydekkerianus,unresolved,False
+Loris lydekkerianus,endocranial_volume,Endocranial_volume,mL,6.34,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,6.34,6.365,Loris lydekkerianus; Loris_lydekkerianus,Loris lydekkerianus,synonym:NCBI,False
 Loris tardigradus,endocranial_volume,Endocranial_volume,mL,5.87,3,3,1,True,Isler; Powell; Seymour,primary; secondary,both; unknown,4.0,5.87,Loris tardigradus; Loris_tardigradus,Loris tardigradus,verbatim,False
 Macaca arctoides,endocranial_volume,Endocranial_volume,mL,100.7,1,1,1,True,Isler,primary,unknown,100.7,100.7,Macaca arctoides,Macaca arctoides,verbatim,False
 Macaca assamensis,endocranial_volume,Endocranial_volume,mL,90.46,1,1,1,True,Isler,primary,unknown,90.46,90.46,Macaca assamensis,Macaca assamensis,verbatim,False
@@ -215,8 +270,8 @@ Macaca cyclopis,endocranial_volume,Endocranial_volume_female,mL,76.1,1,1,0,False
 Macaca fascicularis,endocranial_volume,Endocranial_volume,mL,66.968,6,2,1,True,Isler; Seymour,primary; secondary,unknown,53.8,73.5,Macaca fascicularis,Macaca fascicularis,verbatim,False
 Macaca fascicularis,endocranial_volume,Endocranial_volume_female,mL,60.934,1,1,0,False,Powell,secondary,female,60.934,60.934,Macaca_fascicularis,Macaca fascicularis,verbatim,False
 Macaca fuscata,endocranial_volume,Endocranial_volume,mL,102.92,1,1,1,True,Isler,primary,unknown,102.92,102.92,Macaca fuscata,Macaca fuscata,verbatim,False
-Macaca hecki,endocranial_volume,Endocranial_volume_female,mL,94.58,1,1,0,False,Powell,secondary,female,94.58,94.58,Macaca_hecki,Macaca hecki,unresolved,False
-Macaca leonina,endocranial_volume,Endocranial_volume,mL,85.6,1,1,1,True,Isler,primary,unknown,85.6,85.6,Macaca leonina,Macaca leonina,unresolved,False
+Macaca hecki,endocranial_volume,Endocranial_volume_female,mL,94.58,1,1,0,False,Powell,secondary,female,94.58,94.58,Macaca_hecki,Macaca hecki,verbatim,False
+Macaca leonina,endocranial_volume,Endocranial_volume,mL,85.6,1,1,1,True,Isler,primary,unknown,85.6,85.6,Macaca leonina,Macaca leonina,verbatim,False
 Macaca maura,endocranial_volume,Endocranial_volume,mL,105.0,1,1,0,False,Seymour,secondary,unknown,105.0,105.0,Macaca maura,Macaca maura,verbatim,False
 Macaca maura,endocranial_volume,Endocranial_volume_female,mL,87.367,1,1,0,False,Powell,secondary,female,87.367,87.367,Macaca_maura,Macaca maura,verbatim,False
 Macaca mulatta,endocranial_volume,Endocranial_volume,mL,88.553,4,2,1,True,Isler; Seymour,primary; secondary,unknown,78.2,93.5,Macaca mulatta,Macaca mulatta,verbatim,False
@@ -235,32 +290,61 @@ Macaca sylvanus,endocranial_volume,Endocranial_volume,mL,93.2,1,1,1,True,Isler,p
 Macaca sylvanus,endocranial_volume,Endocranial_volume_female,mL,92.913,1,1,0,False,Powell,secondary,female,92.913,92.913,Macaca_sylvanus,Macaca sylvanus,verbatim,False
 Macaca thibetana,endocranial_volume,Endocranial_volume_female,mL,108.9,1,1,0,False,Powell,secondary,female,108.9,108.9,Macaca_thibetana,Macaca thibetana,verbatim,False
 Macaca tonkeana,endocranial_volume,Endocranial_volume_female,mL,93.791,1,1,0,False,Powell,secondary,female,93.791,93.791,Macaca_tonkeana,Macaca tonkeana,verbatim,False
-Macropus dorsalis,endocranial_volume,Endocranial_volume,mL,26.6,1,1,0,False,Seymour,secondary,unknown,26.6,26.6,Macropus dorsalis,Macropus dorsalis,verbatim,False
-Macropus fuliginosus,endocranial_volume,Endocranial_volume,mL,66.75,1,1,0,False,Seymour,secondary,unknown,66.75,66.75,Macropus fuliginosus,Macropus fuliginosus,verbatim,False
-Macropus robustus,endocranial_volume,Endocranial_volume,mL,58.24,1,1,0,False,Seymour,secondary,unknown,58.24,58.24,Macropus robustus,Macropus robustus,verbatim,False
-Macropus rufus,endocranial_volume,Endocranial_volume,mL,51.575,1,1,0,False,Seymour,secondary,unknown,51.575,51.575,Macropus rufus,Macropus rufus,verbatim,False
+Macropus dorsalis,endocranial_volume,Endocranial_volume,mL,27.9,2,2,0,False,Seymour; Weisbecker,secondary,unknown,26.6,29.2,Macropus dorsalis,Macropus dorsalis,hub; verbatim,False
+Macropus fuliginosus,endocranial_volume,Endocranial_volume,mL,62.375,2,2,0,False,Seymour; Weisbecker,secondary,unknown,58.0,66.75,Macropus fuliginosus,Macropus fuliginosus,verbatim,False
+Macropus giganteus,endocranial_volume,Endocranial_volume,mL,69.8,1,1,0,False,Weisbecker,secondary,unknown,69.8,69.8,Macropus giganteus,Macropus giganteus,verbatim,False
+Macropus greyi,endocranial_volume,Endocranial_volume,mL,25.0,1,1,0,False,Weisbecker,secondary,unknown,25.0,25.0,Macropus greyi,Macropus greyi,unresolved,False
+Macropus parryi,endocranial_volume,Endocranial_volume,mL,41.3,1,1,0,False,Weisbecker,secondary,unknown,41.3,41.3,Macropus parryi,Macropus parryi,verbatim,False
+Macropus robustus,endocranial_volume,Endocranial_volume,mL,58.62,2,2,0,False,Seymour; Weisbecker,secondary,unknown,58.24,59.0,Macropus robustus,Macropus robustus,verbatim,False
+Macropus rufus,endocranial_volume,Endocranial_volume,mL,56.987,2,2,0,False,Seymour; Weisbecker,secondary,unknown,51.575,62.4,Macropus rufus,Macropus rufus,hub; verbatim,False
+Macrotis lagotis,endocranial_volume,Endocranial_volume,mL,6.57,1,1,0,False,Weisbecker,secondary,unknown,6.57,6.57,Macrotis lagotis,Macrotis lagotis,verbatim,False
+Macrotis leucura,endocranial_volume,Endocranial_volume,mL,4.3,1,1,0,False,Weisbecker,secondary,unknown,4.3,4.3,Macrotis leucura,Macrotis leucura,unresolved,False
 Mandrillus leucophaeus,endocranial_volume,Endocranial_volume,mL,148.0,2,2,1,True,Isler; Seymour,primary; secondary,unknown,148.0,160.0,Mandrillus leucophaeus,Mandrillus leucophaeus,verbatim,False
 Mandrillus leucophaeus,endocranial_volume,Endocranial_volume_female,mL,133.176,1,1,0,False,Powell,secondary,female,133.176,133.176,Mandrillus_leucophaeus,Mandrillus leucophaeus,verbatim,False
 Mandrillus sphinx,endocranial_volume,Endocranial_volume,mL,153.88,2,2,1,True,Isler; Seymour,primary; secondary,unknown,153.88,161.2,Mandrillus sphinx,Mandrillus sphinx,verbatim,False
 Mandrillus sphinx,endocranial_volume,Endocranial_volume_female,mL,136.422,1,1,0,False,Powell,secondary,female,136.422,136.422,Mandrillus_sphinx,Mandrillus sphinx,verbatim,False
-Mico argentatus,endocranial_volume,Endocranial_volume,mL,7.95,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,7.755,7.95,Callithrix argentata; Mico_argentatus,Mico argentatus,hub; synonym:NCBI,False
-Mico humeralifer,endocranial_volume,Endocranial_volume,mL,8.376,1,1,0,False,Powell,secondary,both,8.376,8.376,Mico_humeralifer,Mico humeralifer,hub,False
+Marmosa mexicana,endocranial_volume,Endocranial_volume,mL,1.0,1,1,0,False,Weisbecker,secondary,unknown,1.0,1.0,Marmosa mexicana,Marmosa mexicana,unresolved,False
+Marmosa murina madierensis,endocranial_volume,Endocranial_volume,mL,1.1,1,1,0,False,Weisbecker,secondary,unknown,1.1,1.1,Marmosa murina madierensis,Marmosa murina madierensis,unresolved,False
+Marmosa robinsoni,endocranial_volume,Endocranial_volume,mL,0.7,1,1,0,False,Weisbecker,secondary,unknown,0.7,0.7,Marmosa robinsoni,Marmosa robinsoni,synonym:NCBI,False
+Marmosa rubra,endocranial_volume,Endocranial_volume,mL,1.2,1,1,0,False,Weisbecker,secondary,unknown,1.2,1.2,Marmosa rubra,Marmosa rubra,unresolved,False
+Metachirus nudicaudatus,endocranial_volume,Endocranial_volume,mL,3.5,1,1,0,False,Weisbecker,secondary,unknown,3.5,3.5,Metachirus nudicaudatus,Metachirus nudicaudatus,verbatim,False
+Mico argentatus,endocranial_volume,Endocranial_volume,mL,7.95,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,7.755,7.95,Callithrix argentata; Mico_argentatus,Mico argentatus,synonym:NCBI; verbatim,False
+Mico humeralifer,endocranial_volume,Endocranial_volume,mL,8.376,1,1,0,False,Powell,secondary,both,8.376,8.376,Mico_humeralifer,Mico humeralifer,verbatim,False
 Microcebus murinus,endocranial_volume,Endocranial_volume,mL,1.63,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,1.605,1.63,Microcebus murinus; Microcebus_murinus,Microcebus murinus,verbatim,False
 Microcebus rufus,endocranial_volume,Endocranial_volume,mL,1.72,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,1.625,1.72,Microcebus rufus; Microcebus_rufus,Microcebus rufus,verbatim,False
-Miopithecus ogouensis,endocranial_volume,Endocranial_volume,mL,37.35,1,1,1,True,Isler,primary,unknown,37.35,37.35,Miopithecus ogouensis,Miopithecus ogouensis,unresolved,False
+Microperoryctes longicauda,endocranial_volume,Endocranial_volume,mL,3.81,1,1,0,False,Weisbecker,secondary,unknown,3.81,3.81,Microperoryctes longicauda,Microperoryctes longicauda,unresolved,False
+Miopithecus ogouensis,endocranial_volume,Endocranial_volume,mL,37.35,1,1,1,True,Isler,primary,unknown,37.35,37.35,Miopithecus ogouensis,Miopithecus ogouensis,verbatim,False
 Mirza coquereli,endocranial_volume,Endocranial_volume,mL,5.8,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,5.787,5.8,Mirza coquereli; Mirza_coquereli,Mirza coquereli,verbatim,False
+Monodelphis brevicaudata,endocranial_volume,Endocranial_volume,mL,0.9,1,1,0,False,Weisbecker,secondary,unknown,0.9,0.9,Monodelphis brevicaudata,Monodelphis brevicaudata,verbatim,False
+Murexia longicaudata,endocranial_volume,Endocranial_volume,mL,1.68,1,1,0,False,Weisbecker,secondary,unknown,1.68,1.68,Murexia longicaudata,Murexia longicaudata,unresolved,False
+Murexia melanurus,endocranial_volume,Endocranial_volume,mL,0.65,1,1,0,False,Weisbecker,secondary,unknown,0.65,0.65,Murexia melanurus,Murexia melanurus,unresolved,False
+Murexia rothschildi,endocranial_volume,Endocranial_volume,mL,1.05,1,1,0,False,Weisbecker,secondary,unknown,1.05,1.05,Murexia rothschildi,Murexia rothschildi,unresolved,False
+Myoictis melas,endocranial_volume,Endocranial_volume,mL,2.05,1,1,0,False,Weisbecker,secondary,unknown,2.05,2.05,Myoictis melas,Myoictis melas,unresolved,False
+Myrmecobius fasciatus,endocranial_volume,Endocranial_volume,mL,4.25,1,1,0,False,Weisbecker,secondary,unknown,4.25,4.25,Myrmecobius fasciatus,Myrmecobius fasciatus,synonym:NCBI,False
 Nasalis larvatus,endocranial_volume,Endocranial_volume,mL,92.3,2,2,1,True,Isler; Seymour,primary; secondary,unknown,78.5,92.3,Nasalis larvatus,Nasalis larvatus,verbatim,False
 Nasalis larvatus,endocranial_volume,Endocranial_volume_female,mL,84.847,1,1,0,False,Powell,secondary,female,84.847,84.847,Nasalis_larvatus,Nasalis larvatus,verbatim,False
+Neophascogale lorentzi,endocranial_volume,Endocranial_volume,mL,2.45,1,1,0,False,Weisbecker,secondary,unknown,2.45,2.45,Neophascogale lorentzi,Neophascogale lorentzi,unresolved,False
+Ningaui ridei,endocranial_volume,Endocranial_volume,mL,0.24,1,1,0,False,Weisbecker,secondary,unknown,0.24,0.24,Ningaui ridei,Ningaui ridei,unresolved,False
+Ningaui yvonneae,endocranial_volume,Endocranial_volume,mL,0.26,1,1,0,False,Weisbecker,secondary,unknown,0.26,0.26,Ningaui yvonneae,Ningaui yvonneae,unresolved,False
 Nomascus concolor,endocranial_volume,Endocranial_volume,mL,125.671,1,1,0,False,Powell,secondary,both,125.671,125.671,Nomascus_concolor,Nomascus concolor,verbatim,False
 Nomascus gabriellae,endocranial_volume,Endocranial_volume,mL,119.38,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,117.044,119.38,Nomascus gabriellae; Nomascus_gabriellae,Nomascus gabriellae,verbatim,False
 Nomascus leucogenys,endocranial_volume,Endocranial_volume,mL,121.967,1,1,0,False,Powell,secondary,both,121.967,121.967,Nomascus_leucogenys,Nomascus leucogenys,verbatim,False
-Nycticebus bengalensis,endocranial_volume,Endocranial_volume,mL,13.49,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,12.872,13.49,Nycticebus bengalensis; Nycticebus_bengalensis,Nycticebus bengalensis,unresolved,False
+Notamacropus agilis,endocranial_volume,Endocranial_volume,mL,33.3,1,1,0,False,Weisbecker,secondary,unknown,33.3,33.3,Macropus  agilis,Notamacropus agilis,synonym:NCBI,False
+Notamacropus eugenii,endocranial_volume,Endocranial_volume,mL,23.7,1,1,0,False,Weisbecker,secondary,unknown,23.7,23.7,Macropus eugenii,Notamacropus eugenii,synonym:NCBI,False
+Notamacropus irma,endocranial_volume,Endocranial_volume,mL,24.7,1,1,0,False,Weisbecker,secondary,unknown,24.7,24.7,Macropus irma,Notamacropus irma,synonym:NCBI,False
+Notamacropus parma,endocranial_volume,Endocranial_volume,mL,18.7,1,1,0,False,Weisbecker,secondary,unknown,18.7,18.7,Macropus parma,Notamacropus parma,synonym:legacy_override,False
+Notamacropus rufogriseus,endocranial_volume,Endocranial_volume,mL,36.0,1,1,0,False,Weisbecker,secondary,unknown,36.0,36.0,Macropus rufogriseus,Notamacropus rufogriseus,synonym:legacy_key,False
+Notoryctes caurinus,endocranial_volume,Endocranial_volume,mL,0.78,1,1,0,False,Weisbecker,secondary,unknown,0.78,0.78,Notoryctes caurinus,Notoryctes caurinus,unresolved,False
+Nycticebus bengalensis,endocranial_volume,Endocranial_volume,mL,13.49,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,12.872,13.49,Nycticebus bengalensis; Nycticebus_bengalensis,Nycticebus bengalensis,synonym:NCBI,False
 Nycticebus coucang,endocranial_volume,Endocranial_volume,mL,10.06,5,3,1,True,Isler; Powell; Seymour,primary; secondary,both; unknown,8.8,10.38,Nycticebus coucang; Nycticebus_coucang,Nycticebus coucang,verbatim,False
-Nycticebus javanicus,endocranial_volume,Endocranial_volume,mL,10.38,1,1,0,False,Powell,secondary,both,10.38,10.38,Nycticebus_javanicus,Nycticebus javanicus,unresolved,False
-Nycticebus pygmaeus,endocranial_volume,Endocranial_volume,mL,7.23,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,7.229,7.23,Nycticebus pygmaeus; Nycticebus_pygmaeus,Nycticebus pygmaeus,unresolved,False
+Nycticebus javanicus,endocranial_volume,Endocranial_volume,mL,10.38,1,1,0,False,Powell,secondary,both,10.38,10.38,Nycticebus_javanicus,Nycticebus javanicus,verbatim,False
+Onychogalea fraenata,endocranial_volume,Endocranial_volume,mL,14.7,1,1,0,False,Weisbecker,secondary,unknown,14.7,14.7,Onychogalea fraenata,Onychogalea fraenata,verbatim,False
+Onychogalea lunata,endocranial_volume,Endocranial_volume,mL,10.2,1,1,0,False,Weisbecker,secondary,unknown,10.2,10.2,Onychogalea lunata,Onychogalea lunata,unresolved,False
+Onychogalea unguifera,endocranial_volume,Endocranial_volume,mL,16.7,1,1,0,False,Weisbecker,secondary,unknown,16.7,16.7,Onychogalea unguifera,Onychogalea unguifera,verbatim,False
+Osphranter antilopinus,endocranial_volume,Endocranial_volume,mL,56.8,1,1,0,False,Weisbecker,secondary,unknown,56.8,56.8,Macropus antilopinus,Osphranter antilopinus,synonym:NCBI,False
 Otolemur crassicaudatus,endocranial_volume,Endocranial_volume,mL,11.78,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,11.752,11.78,Otolemur crassicaudatus; Otolemur_crassicaudatus,Otolemur crassicaudatus,verbatim,False
-Otolemur garnettii,endocranial_volume,Endocranial_volume,mL,11.077,5,2,1,True,Isler; Powell,primary; secondary,both; unknown,9.83,12.58,Otolemur garnettii; Otolemur_garnettii,Otolemur garnettii,verbatim,False
-Otolemur monteiri,endocranial_volume,Endocranial_volume,mL,11.4,1,1,1,True,Isler,primary,unknown,11.4,11.4,Otolemur monteiri,Otolemur monteiri,unresolved,False
+Otolemur garnettii,endocranial_volume,Endocranial_volume,mL,11.078,5,2,1,True,Isler; Powell,primary; secondary,both; unknown,9.83,12.58,Otolemur garnettii; Otolemur_garnettii,Otolemur garnettii,verbatim,False
+Otolemur monteiri,endocranial_volume,Endocranial_volume,mL,11.4,1,1,1,True,Isler,primary,unknown,11.4,11.4,Otolemur monteiri,Otolemur monteiri,verbatim,False
 Pan paniscus,endocranial_volume,Endocranial_volume,mL,341.29,1,1,1,True,Isler,primary,unknown,341.29,341.29,Pan paniscus,Pan paniscus,verbatim,False
 Pan troglodytes,endocranial_volume,Endocranial_volume,mL,373.368,5,2,1,True,Isler; Seymour,primary; secondary,unknown,363.05,475.0,Pan troglodytes,Pan troglodytes,verbatim,False
 Pan troglodytes,endocranial_volume,Endocranial_volume_female,mL,357.713,1,1,0,False,Powell,secondary,female,357.713,357.713,Pan_troglodytes,Pan troglodytes,verbatim,False
@@ -272,36 +356,81 @@ Papio hamadryas,endocranial_volume,Endocranial_volume,mL,146.17,2,2,1,True,Isler
 Papio hamadryas,endocranial_volume,Endocranial_volume_female,mL,137.0,1,1,0,False,Powell,secondary,female,137.0,137.0,Papio_hamadryas,Papio hamadryas,verbatim,False
 Papio papio,endocranial_volume,Endocranial_volume,mL,142.5,1,1,1,True,Isler,primary,unknown,142.5,142.5,Papio papio,Papio papio,verbatim,False
 Papio ursinus,endocranial_volume,Endocranial_volume,mL,178.0,1,1,1,True,Isler,primary,unknown,178.0,178.0,Papio ursinus,Papio ursinus,hub,False
-Paragalago zanzibaricus,endocranial_volume,Endocranial_volume,mL,4.129,1,1,0,False,Powell,secondary,both,4.129,4.129,Galagoides_zanzibaricus,Paragalago zanzibaricus,synonym:NCBI,False
+Paragalago granti,endocranial_volume,Endocranial_volume,mL,4.07,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,4.07,4.074,Galago granti; Galagoides_granti,Paragalago granti,our_judgment,False
+Paragalago zanzibaricus,endocranial_volume,Endocranial_volume,mL,3.51,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,3.51,4.129,Galago zanzibaricus; Galagoides_zanzibaricus,Paragalago zanzibaricus,synonym:NCBI,False
+Parantechinus apicalis,endocranial_volume,Endocranial_volume,mL,1.2,1,1,0,False,Weisbecker,secondary,unknown,1.2,1.2,Parantechinus apicalis,Parantechinus apicalis,unresolved,False
+Parantechinus bilarni,endocranial_volume,Endocranial_volume,mL,0.65,1,1,0,False,Weisbecker,secondary,unknown,0.65,0.65,Parantechinus bilarni,Parantechinus bilarni,unresolved,False
+Perameles bougainville,endocranial_volume,Endocranial_volume,mL,3.21,1,1,0,False,Weisbecker,secondary,unknown,3.21,3.21,Perameles bougainville,Perameles bougainville,unresolved,False
+Perameles gunnii,endocranial_volume,Endocranial_volume,mL,4.5,1,1,0,False,Weisbecker,secondary,unknown,4.5,4.5,Perameles gunnii,Perameles gunnii,verbatim,False
+Perameles nasuta,endocranial_volume,Endocranial_volume,mL,4.96,1,1,0,False,Weisbecker,secondary,unknown,4.96,4.96,Perameles nasuta,Perameles nasuta,verbatim,False
 Perodicticus potto,endocranial_volume,Endocranial_volume,mL,12.85,5,2,1,True,Isler; Powell,primary; secondary,both; unknown,11.93,13.62,Perodicticus potto; Perodicticus_potto,Perodicticus potto,verbatim,False
-Petaurus breviceps,endocranial_volume,Endocranial_volume,mL,2.33,1,1,0,False,Seymour,secondary,unknown,2.33,2.33,Petaurus breviceps,Petaurus breviceps,verbatim,False
-Phalanger maculatus,endocranial_volume,Endocranial_volume,mL,13.55,1,1,0,False,Seymour,secondary,unknown,13.55,13.55,Phalanger maculatus,Phalanger maculatus,verbatim,False
-Phaner electromontis,endocranial_volume,Endocranial_volume,mL,7.2,1,1,1,True,Isler,primary,unknown,7.2,7.2,Phaner electromontis,Phaner electromontis,unresolved,False
-Phaner pallescens,endocranial_volume,Endocranial_volume,mL,6.68,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,6.68,6.681,Phaner pallescens; Phaner_pallescens,Phaner pallescens,unresolved,False
-Phascolarctos cinereus,endocranial_volume,Endocranial_volume,mL,29.75,1,1,0,False,Seymour,secondary,unknown,29.75,29.75,Phascolarctos cinereus,Phascolarctos cinereus,verbatim,False
+Peroryctes raffrayana,endocranial_volume,Endocranial_volume,mL,6.33,1,1,0,False,Weisbecker,secondary,unknown,6.33,6.33,Peroryctes raffrayana,Peroryctes raffrayana,unresolved,False
+Petauroides volans,endocranial_volume,Endocranial_volume,mL,4.69,1,1,0,False,Weisbecker,secondary,unknown,4.69,4.69,Petauroides volans,Petauroides volans,verbatim,False
+Petaurus australis,endocranial_volume,Endocranial_volume,mL,5.71,1,1,0,False,Weisbecker,secondary,unknown,5.71,5.71,Petaurus australis,Petaurus australis,verbatim,False
+Petaurus breviceps,endocranial_volume,Endocranial_volume,mL,2.21,2,2,0,False,Seymour; Weisbecker,secondary,unknown,2.09,2.33,Petaurus breviceps,Petaurus breviceps,verbatim,False
+Petaurus norfolcensis,endocranial_volume,Endocranial_volume,mL,3.02,1,1,0,False,Weisbecker,secondary,unknown,3.02,3.02,Petaurus norfolcensis,Petaurus norfolcensis,verbatim,False
+Petrogale assimilis,endocranial_volume,Endocranial_volume,mL,17.5,1,1,0,False,Weisbecker,secondary,unknown,17.5,17.5,Petrogale assimilis,Petrogale assimilis,verbatim,False
+Petrogale brachyotis,endocranial_volume,Endocranial_volume,mL,15.75,1,1,0,False,Weisbecker,secondary,unknown,15.75,15.75,Petrogale brachyotis,Petrogale brachyotis,verbatim,False
+Petrogale concinna,endocranial_volume,Endocranial_volume,mL,11.0,1,1,0,False,Weisbecker,secondary,unknown,11.0,11.0,Petrogale concinna,Petrogale concinna,verbatim,False
+Petrogale godmani,endocranial_volume,Endocranial_volume,mL,18.0,1,1,0,False,Weisbecker,secondary,unknown,18.0,18.0,Petrogale godmani,Petrogale godmani,verbatim,False
+Petrogale herberti,endocranial_volume,Endocranial_volume,mL,21.2,1,1,0,False,Weisbecker,secondary,unknown,21.2,21.2,Petrogale herberti,Petrogale herberti,verbatim,False
+Petrogale inornata,endocranial_volume,Endocranial_volume,mL,17.0,1,1,0,False,Weisbecker,secondary,unknown,17.0,17.0,Petrogale inornata,Petrogale inornata,verbatim,False
+Petrogale lateralis,endocranial_volume,Endocranial_volume,mL,19.2,1,1,0,False,Weisbecker,secondary,unknown,19.2,19.2,Petrogale lateralis,Petrogale lateralis,verbatim,False
+Petrogale mareeba,endocranial_volume,Endocranial_volume,mL,17.0,1,1,0,False,Weisbecker,secondary,unknown,17.0,17.0,Petrogale mareeba,Petrogale mareeba,unresolved,False
+Petrogale penicillata,endocranial_volume,Endocranial_volume,mL,23.9,1,1,0,False,Weisbecker,secondary,unknown,23.9,23.9,Petrogale penicillata,Petrogale penicillata,verbatim,False
+Petrogale persephone,endocranial_volume,Endocranial_volume,mL,21.5,1,1,0,False,Weisbecker,secondary,unknown,21.5,21.5,Petrogale persephone,Petrogale persephone,unresolved,False
+Petrogale xanthopus,endocranial_volume,Endocranial_volume,mL,23.0,1,1,0,False,Weisbecker,secondary,unknown,23.0,23.0,Petrogale xanthopus,Petrogale xanthopus,verbatim,False
+Petropseudes dahli,endocranial_volume,Endocranial_volume,mL,5.038,1,1,0,False,Weisbecker,secondary,unknown,5.038,5.038,Petropseudes dahli,Petropseudes dahli,verbatim,False
+Phalanger carmelitae,endocranial_volume,Endocranial_volume,mL,8.49,1,1,0,False,Weisbecker,secondary,unknown,8.49,8.49,Phalanger  carmelitae,Phalanger carmelitae,unresolved,False
+Phalanger gymnotis,endocranial_volume,Endocranial_volume,mL,13.0,1,1,0,False,Weisbecker,secondary,unknown,13.0,13.0,Phalanger  gymnotis,Phalanger gymnotis,verbatim,False
+Phalanger lulullae,endocranial_volume,Endocranial_volume,mL,6.09,1,1,0,False,Weisbecker,secondary,unknown,6.09,6.09,Phalanger lulullae,Phalanger lulullae,unresolved,False
+Phalanger maculatus,endocranial_volume,Endocranial_volume,mL,13.475,2,2,0,False,Seymour; Weisbecker,secondary,unknown,13.4,13.55,Phalanger maculatus; Spilocuscus maculatus,Phalanger maculatus,synonym:NCBI; verbatim,False
+Phalanger mimicus,endocranial_volume,Endocranial_volume,mL,8.13,1,1,0,False,Weisbecker,secondary,unknown,8.13,8.13,Phalanger  mimicus,Phalanger mimicus,unresolved,False
+Phalanger orientalis,endocranial_volume,Endocranial_volume,mL,7.37,1,1,0,False,Weisbecker,secondary,unknown,7.37,7.37,Phalanger orientalis,Phalanger orientalis,verbatim,False
+Phalanger ornatus,endocranial_volume,Endocranial_volume,mL,7.02,1,1,0,False,Weisbecker,secondary,unknown,7.02,7.02,Phalanger ornatus,Phalanger ornatus,unresolved,False
+Phalanger rothschildi,endocranial_volume,Endocranial_volume,mL,6.14,1,1,0,False,Weisbecker,secondary,unknown,6.14,6.14,Phalanger rothschildi,Phalanger rothschildi,unresolved,False
+Phalanger sericeus,endocranial_volume,Endocranial_volume,mL,9.96,1,1,0,False,Weisbecker,secondary,unknown,9.96,9.96,Phalanger sericeus,Phalanger sericeus,unresolved,False
+Phalanger vestitus,endocranial_volume,Endocranial_volume,mL,9.54,1,1,0,False,Weisbecker,secondary,unknown,9.54,9.54,Phalanger vestitus,Phalanger vestitus,verbatim,False
+Phaner electromontis,endocranial_volume,Endocranial_volume,mL,7.2,1,1,1,True,Isler,primary,unknown,7.2,7.2,Phaner electromontis,Phaner electromontis,verbatim,False
+Phaner pallescens,endocranial_volume,Endocranial_volume,mL,6.68,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,6.68,6.681,Phaner pallescens; Phaner_pallescens,Phaner pallescens,verbatim,False
+Phascogale calura,endocranial_volume,Endocranial_volume,mL,0.91,1,1,0,False,Weisbecker,secondary,unknown,0.91,0.91,Phascogale calura,Phascogale calura,unresolved,False
+Phascogale tapoatafa,endocranial_volume,Endocranial_volume,mL,1.81,1,1,0,False,Weisbecker,secondary,unknown,1.81,1.81,Phascogale tapoatafa,Phascogale tapoatafa,verbatim,False
+Phascolarctos cinereus,endocranial_volume,Endocranial_volume,mL,24.975,2,2,0,False,Seymour; Weisbecker,secondary,unknown,20.2,29.75,Phascolarctos cinereus,Phascolarctos cinereus,verbatim,False
+Phascolosorex dorsalis,endocranial_volume,Endocranial_volume,mL,1.11,1,1,0,False,Weisbecker,secondary,unknown,1.11,1.11,Phascolosorex dorsalis,Phascolosorex dorsalis,unresolved,False
+Philander opossum,endocranial_volume,Endocranial_volume,mL,3.83,1,1,0,False,Weisbecker,secondary,unknown,3.83,3.83,Philander opossum,Philander opossum,synonym:NCBI,False
 Piliocolobus badius,endocranial_volume,Endocranial_volume,mL,64.04,2,1,1,True,Isler,primary,unknown,63.59,64.49,Piliocolobus badius,Piliocolobus badius,verbatim,False
 Piliocolobus badius,endocranial_volume,Endocranial_volume_female,mL,61.52,1,1,0,False,Powell,secondary,female,61.52,61.52,Procolobus_badius,Piliocolobus badius,synonym:NCBI,False
 Piliocolobus kirkii,endocranial_volume,Endocranial_volume,mL,57.25,1,1,1,True,Isler,primary,unknown,57.25,57.25,Piliocolobus kirkii,Piliocolobus kirkii,verbatim,False
-Piliocolobus tephrosceles,endocranial_volume,Endocranial_volume,mL,70.95,1,1,1,True,Isler,primary,unknown,70.95,70.95,Piliocolobus tephrosceles,Piliocolobus tephrosceles,unresolved,False
+Piliocolobus pennantii,endocranial_volume,Endocranial_volume_female,mL,71.655,1,1,0,False,Powell,secondary,female,71.655,71.655,Procolobus_pennantii,Piliocolobus pennantii,our_judgment,False
+Piliocolobus rufomitratus,endocranial_volume,Endocranial_volume_female,mL,70.565,1,1,0,False,Powell,secondary,female,70.565,70.565,Procolobus_rufomitratus,Piliocolobus rufomitratus,our_judgment,False
+Piliocolobus tephrosceles,endocranial_volume,Endocranial_volume,mL,70.95,1,1,1,True,Isler,primary,unknown,70.95,70.95,Piliocolobus tephrosceles,Piliocolobus tephrosceles,verbatim,False
+Piliocolobus tephrosceles,endocranial_volume,Endocranial_volume_female,mL,72.454,1,1,0,False,Powell,secondary,female,72.454,72.454,Procolobus_rufomitratus_tephrosceles,Piliocolobus tephrosceles,our_judgment,False
 Piliocolobus tholloni and foai,endocranial_volume,Endocranial_volume,mL,76.35,1,1,1,True,Isler,primary,unknown,76.35,76.35,Piliocolobus tholloni and foai,Piliocolobus tholloni and foai,unresolved,False
 Pithecia irrorata,endocranial_volume,Endocranial_volume,mL,37.1,1,1,0,False,Powell,secondary,both,37.1,37.1,Pithecia_irrorata,Pithecia irrorata,verbatim,False
 Pithecia monachus,endocranial_volume,Endocranial_volume,mL,36.45,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,36.138,36.45,Pithecia monachus; Pithecia_monachus,Pithecia monachus,verbatim,False
 Pithecia pithecia,endocranial_volume,Endocranial_volume,mL,32.26,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,31.474,32.26,Pithecia pithecia; Pithecia_pithecia,Pithecia pithecia,verbatim,False
+Planigale gilesi,endocranial_volume,Endocranial_volume,mL,0.17,1,1,0,False,Weisbecker,secondary,unknown,0.17,0.17,Planigale gilesi,Planigale gilesi,synonym:NCBI,False
+Planigale ingrami,endocranial_volume,Endocranial_volume,mL,0.15,1,1,0,False,Weisbecker,secondary,unknown,0.15,0.15,Planigale ingrami,Planigale ingrami,verbatim,False
+Planigale maculata,endocranial_volume,Endocranial_volume,mL,0.2,1,1,0,False,Weisbecker,secondary,unknown,0.2,0.2,Planigale maculata,Planigale maculata,verbatim,False
+Planigale novaeguineae,endocranial_volume,Endocranial_volume,mL,0.27,1,1,0,False,Weisbecker,secondary,unknown,0.27,0.27,Planigale novaeguineae,Planigale novaeguineae,unresolved,False
+Planigale tenuirostris,endocranial_volume,Endocranial_volume,mL,0.14,1,1,0,False,Weisbecker,secondary,unknown,0.14,0.14,Planigale tenuirostris,Planigale tenuirostris,synonym:NCBI,False
+Plecturocebus caligatus,endocranial_volume,Endocranial_volume,mL,17.25,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,17.175,17.25,Callicebus caligatus; Callicebus_caligatus,Plecturocebus caligatus,our_judgment,False
+Plecturocebus discolor,endocranial_volume,Endocranial_volume,mL,17.53,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,17.0,17.53,Callicebus discolor; Callicebus_discolor,Plecturocebus discolor,our_judgment,False
 Pongo abelii,endocranial_volume,Endocranial_volume,mL,389.5,1,1,1,True,Isler,primary,unknown,389.5,389.5,Pongo abelii,Pongo abelii,hub,False
 Pongo abelii,endocranial_volume,Endocranial_volume_female,mL,346.058,1,1,0,False,Powell,secondary,female,346.058,346.058,Pongo_abelii,Pongo abelii,hub,False
 Pongo pygmaeus,endocranial_volume,Endocranial_volume,mL,378.278,4,1,1,True,Isler,primary,unknown,357.11,400.1,Pongo pygmaeus,Pongo pygmaeus,hub,False
-Pongo pygmaeus,endocranial_volume,Endocranial_volume_female,mL,339.564,1,1,0,False,Powell,secondary,female,339.564,339.564,Pongo_pygmaeus,Pongo pygmaeus,hub,False
-Pongo pygmaeus morio,endocranial_volume,Endocranial_volume_female,mL,330.135,1,1,0,False,Powell,secondary,female,330.135,330.135,Pongo_pygmaeus_morio,Pongo pygmaeus morio,unresolved,False
-Pongo pygmaeus wurmbii,endocranial_volume,Endocranial_volume_female,mL,336.631,1,1,0,False,Powell,secondary,female,336.631,336.631,Pongo_pygmaeus_wurmbii,Pongo pygmaeus wurmbii,unresolved,False
+Pongo pygmaeus,endocranial_volume,Endocranial_volume_female,mL,335.443,3,1,0,False,Powell,secondary,female,330.135,339.564,Pongo_pygmaeus; Pongo_pygmaeus_morio; Pongo_pygmaeus_wurmbii,Pongo pygmaeus,hub; lump,False
 Pongo sp.,endocranial_volume,Endocranial_volume,mL,375.0,1,1,0,False,Seymour,secondary,unknown,375.0,375.0,Pongo pygmaeus,Pongo sp.,lump,False
 Pongo sp.,endocranial_volume,Endocranial_volume_female,mL,349.7,1,1,0,False,Heldstab,secondary,female,349.7,349.7,Pongo abelii,Pongo sp.,lump,False
-Presbytis chrysomelas,endocranial_volume,Endocranial_volume,mL,72.11,1,1,1,True,Isler,primary,unknown,72.11,72.11,Presbytis chrysomelas,Presbytis chrysomelas,unresolved,False
+Potorous platyops,endocranial_volume,Endocranial_volume,mL,6.3,1,1,0,False,Weisbecker,secondary,unknown,6.3,6.3,Potorous platyops,Potorous platyops,unresolved,False
+Potorous tridactylus,endocranial_volume,Endocranial_volume,mL,9.53,1,1,0,False,Weisbecker,secondary,unknown,9.53,9.53,Potorous tridactylus,Potorous tridactylus,verbatim,False
+Presbytis chrysomelas,endocranial_volume,Endocranial_volume,mL,72.11,1,1,1,True,Isler,primary,unknown,72.11,72.11,Presbytis chrysomelas,Presbytis chrysomelas,verbatim,False
 Presbytis comata,endocranial_volume,Endocranial_volume,mL,80.3,1,1,1,True,Isler,primary,unknown,80.3,80.3,Presbytis comata,Presbytis comata,verbatim,False
 Presbytis comata,endocranial_volume,Endocranial_volume_female,mL,68.0,1,1,0,False,Powell,secondary,female,68.0,68.0,Presbytis_comata,Presbytis comata,verbatim,False
-Presbytis femoralis,endocranial_volume,Endocranial_volume,mL,73.41,2,1,1,True,Isler,primary,unknown,73.08,73.74,Presbytis femoralis,Presbytis femoralis,unresolved,False
+Presbytis femoralis,endocranial_volume,Endocranial_volume,mL,73.41,2,1,1,True,Isler,primary,unknown,73.08,73.74,Presbytis femoralis,Presbytis femoralis,verbatim,False
 Presbytis frontata,endocranial_volume,Endocranial_volume,mL,81.02,1,1,1,True,Isler,primary,unknown,81.02,81.02,Presbytis frontata,Presbytis frontata,verbatim,False
 Presbytis frontata,endocranial_volume,Endocranial_volume_female,mL,73.126,1,1,0,False,Powell,secondary,female,73.126,73.126,Presbytis_frontata,Presbytis frontata,verbatim,False
-Presbytis hosei,endocranial_volume,Endocranial_volume_female,mL,60.022,1,1,0,False,Powell,secondary,female,60.022,60.022,Presbytis_hosei,Presbytis hosei,unresolved,False
+Presbytis hosei,endocranial_volume,Endocranial_volume_female,mL,60.022,1,1,0,False,Powell,secondary,female,60.022,60.022,Presbytis_hosei,Presbytis hosei,verbatim,False
 Presbytis melalophos,endocranial_volume,Endocranial_volume,mL,64.857,4,2,1,True,Isler; Seymour,primary; secondary,unknown,63.26,70.5,Presbytis melalophos,Presbytis melalophos,verbatim,False
 Presbytis melalophos,endocranial_volume,Endocranial_volume_female,mL,61.272,1,1,0,False,Powell,secondary,female,61.272,61.272,Presbytis_melalophos,Presbytis melalophos,verbatim,False
 Presbytis potenziani,endocranial_volume,Endocranial_volume_female,mL,56.975,1,1,0,False,Powell,secondary,female,56.975,56.975,Presbytis_potenziani,Presbytis potenziani,verbatim,False
@@ -310,24 +439,38 @@ Presbytis rubicunda,endocranial_volume,Endocranial_volume_female,mL,68.775,1,1,0
 Presbytis siamensis,endocranial_volume,Endocranial_volume,mL,60.457,3,1,1,True,Isler,primary,unknown,57.38,63.05,Presbytis siamensis,Presbytis siamensis,verbatim,False
 Presbytis thomasi,endocranial_volume,Endocranial_volume,mL,72.93,1,1,1,True,Isler,primary,unknown,72.93,72.93,Presbytis thomasi,Presbytis thomasi,verbatim,False
 Presbytis thomasi,endocranial_volume,Endocranial_volume_female,mL,65.461,1,1,0,False,Powell,secondary,female,65.461,65.461,Presbytis_thomasi,Presbytis thomasi,verbatim,False
-Procolobus pennantii,endocranial_volume,Endocranial_volume_female,mL,71.655,1,1,0,False,Powell,secondary,female,71.655,71.655,Procolobus_pennantii,Procolobus pennantii,unresolved,False
-Procolobus rufomitratus,endocranial_volume,Endocranial_volume_female,mL,70.565,1,1,0,False,Powell,secondary,female,70.565,70.565,Procolobus_rufomitratus,Procolobus rufomitratus,unresolved,False
-Procolobus rufomitratus tephrosceles,endocranial_volume,Endocranial_volume_female,mL,72.454,1,1,0,False,Powell,secondary,female,72.454,72.454,Procolobus_rufomitratus_tephrosceles,Procolobus rufomitratus tephrosceles,unresolved,False
 Procolobus verus,endocranial_volume,Endocranial_volume,mL,52.6,1,1,1,True,Isler,primary,unknown,52.6,52.6,Procolobus verus,Procolobus verus,verbatim,False
-Prolemur simus,endocranial_volume,Endocranial_volume,mL,27.14,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,26.227,27.14,Prolemur simus; Prolemur_simus,Prolemur simus,hub,False
-Propithecus candidus,endocranial_volume,Endocranial_volume_female,mL,37.2,1,1,0,False,Powell,secondary,female,37.2,37.2,Propithecus_candidus,Propithecus candidus,unresolved,False
-Propithecus coquereli,endocranial_volume,Endocranial_volume,mL,30.19,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,28.862,30.19,Propithecus coquereli; Propithecus_coquereli,Propithecus coquereli,unresolved,False
-Propithecus deckenii,endocranial_volume,Endocranial_volume,mL,30.15,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,28.008,30.15,Propithecus deckenii; Propithecus_deckenii,Propithecus deckenii,unresolved,False
+Prolemur simus,endocranial_volume,Endocranial_volume,mL,27.14,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,26.227,27.14,Prolemur simus; Prolemur_simus,Prolemur simus,verbatim,False
+Propithecus candidus,endocranial_volume,Endocranial_volume_female,mL,37.2,1,1,0,False,Powell,secondary,female,37.2,37.2,Propithecus_candidus,Propithecus candidus,verbatim,False
+Propithecus coquereli,endocranial_volume,Endocranial_volume,mL,30.19,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,28.862,30.19,Propithecus coquereli; Propithecus_coquereli,Propithecus coquereli,verbatim,False
+Propithecus deckenii,endocranial_volume,Endocranial_volume,mL,30.15,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,28.008,30.15,Propithecus deckenii; Propithecus_deckenii,Propithecus deckenii,verbatim,False
 Propithecus diadema,endocranial_volume,Endocranial_volume,mL,39.8,3,3,1,True,Isler; Powell; Seymour,primary; secondary,both; unknown,36.861,41.0,Propithecus diadema; Propithecus_diadema,Propithecus diadema,verbatim,False
-Propithecus edwardsi,endocranial_volume,Endocranial_volume,mL,39.49,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,37.945,39.49,Propithecus edwardsi; Propithecus_edwardsi,Propithecus edwardsi,unresolved,False
+Propithecus edwardsi,endocranial_volume,Endocranial_volume,mL,39.49,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,37.945,39.49,Propithecus edwardsi; Propithecus_edwardsi,Propithecus edwardsi,verbatim,False
 Propithecus verreauxi,endocranial_volume,Endocranial_volume,mL,26.21,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,25.998,26.21,Propithecus verreauxi; Propithecus_verreauxi,Propithecus verreauxi,verbatim,False
+Pseudantechinus macdonnellensis,endocranial_volume,Endocranial_volume,mL,0.49,1,1,0,False,Weisbecker,secondary,unknown,0.49,0.49,Pseudantechinus macdonnellensis,Pseudantechinus macdonnellensis,unresolved,False
+Pseudantechinus roryi,endocranial_volume,Endocranial_volume,mL,0.42,1,1,0,False,Weisbecker,secondary,unknown,0.42,0.42,Pseudantechinus roryi,Pseudantechinus roryi,unresolved,False
+Pseudocheirus occidentalis,endocranial_volume,Endocranial_volume,mL,5.58,1,1,0,False,Weisbecker,secondary,unknown,5.58,5.58,Pseudocheirus occidentalis,Pseudocheirus occidentalis,synonym:NCBI,False
+Pseudocheirus peregrinus,endocranial_volume,Endocranial_volume,mL,4.52,1,1,0,False,Weisbecker,secondary,unknown,4.52,4.52,Pseudocheirus peregrinus,Pseudocheirus peregrinus,verbatim,False
 Pseudocheirus peregrinus notialis,endocranial_volume,Endocranial_volume,mL,4.73,1,1,0,False,Seymour,secondary,unknown,4.73,4.73,Pseudocheirus peregrinus notialis,Pseudocheirus peregrinus notialis,verbatim,False
+Pseudochirops albertisii,endocranial_volume,Endocranial_volume,mL,4.68,1,1,0,False,Weisbecker,secondary,unknown,4.68,4.68,Pseudochirops albertisii,Pseudochirops albertisii,unresolved,False
+Pseudochirops archeri,endocranial_volume,Endocranial_volume,mL,5.87,1,1,0,False,Weisbecker,secondary,unknown,5.87,5.87,Pseudochirops archeri,Pseudochirops archeri,verbatim,False
+Pseudochirops corinnae,endocranial_volume,Endocranial_volume,mL,5.36,1,1,0,False,Weisbecker,secondary,unknown,5.36,5.36,Pseudochirops corinnae,Pseudochirops corinnae,unresolved,False
+Pseudochirops coronatus,endocranial_volume,Endocranial_volume,mL,5.13,1,1,0,False,Weisbecker,secondary,unknown,5.13,5.13,Pseudochirops coronatus,Pseudochirops coronatus,unresolved,False
+Pseudochirops cupreus,endocranial_volume,Endocranial_volume,mL,7.54,1,1,0,False,Weisbecker,secondary,unknown,7.54,7.54,Pseudochirops cupreus,Pseudochirops cupreus,verbatim,False
+Pseudochirulus canescens,endocranial_volume,Endocranial_volume,mL,1.8,1,1,0,False,Weisbecker,secondary,unknown,1.8,1.8,Pseudochirulus canescens,Pseudochirulus canescens,unresolved,False
+Pseudochirulus carolli,endocranial_volume,Endocranial_volume,mL,3.2,1,1,0,False,Weisbecker,secondary,unknown,3.2,3.2,Pseudochirulus carolli,Pseudochirulus carolli,unresolved,False
+Pseudochirulus forbesi,endocranial_volume,Endocranial_volume,mL,3.36,1,1,0,False,Weisbecker,secondary,unknown,3.36,3.36,Pseudochirulus forbesi,Pseudochirulus forbesi,hub,False
+Pseudochirulus herbertensis,endocranial_volume,Endocranial_volume,mL,4.32,1,1,0,False,Weisbecker,secondary,unknown,4.32,4.32,Pseudochirulus herbertensis,Pseudochirulus herbertensis,verbatim,False
+Pseudochirulus mayeri,endocranial_volume,Endocranial_volume,mL,2.01,1,1,0,False,Weisbecker,secondary,unknown,2.01,2.01,Pseudochirulus mayeri,Pseudochirulus mayeri,unresolved,False
+Pseudochirulus schlegelli,endocranial_volume,Endocranial_volume,mL,2.8,1,1,0,False,Weisbecker,secondary,unknown,2.8,2.8,Pseudochirulus schlegelli,Pseudochirulus schlegelli,unresolved,False
 Pygathrix nemaeus,endocranial_volume,Endocranial_volume,mL,91.41,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,91.41,94.85,Pygathrix nemaeus; Pygathrix_nemaeus,Pygathrix nemaeus,verbatim,False
-Pygathrix nigripes,endocranial_volume,Endocranial_volume,mL,82.75,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,82.75,83.703,Pygathrix nigripes; Pygathrix_nigripes,Pygathrix nigripes,unresolved,False
-Pygathrix sp.,endocranial_volume,Endocranial_volume,mL,85.86,1,1,1,True,Isler,primary,unknown,85.86,85.86,Pygathrix sp.,Pygathrix sp.,unresolved,False
-Rhinopithecus bieti,endocranial_volume,Endocranial_volume,mL,114.714,1,1,0,False,Powell,secondary,both,114.714,114.714,Rhinopithecus_bieti,Rhinopithecus bieti,unresolved,False
-Rhinopithecus brelichi,endocranial_volume,Endocranial_volume_female,mL,111.5,1,1,0,False,Powell,secondary,female,111.5,111.5,Rhinopithecus_brelichi,Rhinopithecus brelichi,unresolved,False
+Pygathrix nigripes,endocranial_volume,Endocranial_volume,mL,82.75,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,82.75,83.703,Pygathrix nigripes; Pygathrix_nigripes,Pygathrix nigripes,verbatim,False
+Pygathrix sp.,endocranial_volume,Endocranial_volume,mL,85.86,1,1,1,True,Isler,primary,unknown,85.86,85.86,Pygathrix sp.,Pygathrix sp.,verbatim,False
+Rhinopithecus bieti,endocranial_volume,Endocranial_volume,mL,114.714,1,1,0,False,Powell,secondary,both,114.714,114.714,Rhinopithecus_bieti,Rhinopithecus bieti,verbatim,False
+Rhinopithecus brelichi,endocranial_volume,Endocranial_volume_female,mL,111.5,1,1,0,False,Powell,secondary,female,111.5,111.5,Rhinopithecus_brelichi,Rhinopithecus brelichi,verbatim,False
 Rhinopithecus roxellana,endocranial_volume,Endocranial_volume,mL,117.76,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,115.535,117.76,Rhinopithecus roxellana; Rhinopithecus_roxellana,Rhinopithecus roxellana,verbatim,False
+Rhyncholestes raphanurus,endocranial_volume,Endocranial_volume,mL,0.65,1,1,0,False,Weisbecker,secondary,unknown,0.65,0.65,Rhyncholestes raphanurus,Rhyncholestes raphanurus,verbatim,False
+Rhynchomeles prattorum,endocranial_volume,Endocranial_volume,mL,4.9,1,1,0,False,Weisbecker,secondary,unknown,4.9,4.9,Rhynchomeles prattorum,Rhynchomeles prattorum,unresolved,False
 Saguinus bicolor,endocranial_volume,Endocranial_volume,mL,9.2,1,1,0,False,Powell,secondary,both,9.2,9.2,Saguinus_bicolor,Saguinus bicolor,verbatim,False
 Saguinus fuscicollis,endocranial_volume,Endocranial_volume,mL,7.993,4,2,1,True,Isler; Powell,primary; secondary,both; unknown,7.94,8.162,Saguinus fuscicollis; Saguinus_fuscicollis,Saguinus fuscicollis,verbatim,False
 Saguinus geoffroyi,endocranial_volume,Endocranial_volume,mL,10.14,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,10.087,10.14,Saguinus geoffroyi; Saguinus_geoffroyi,Saguinus geoffroyi,verbatim,False
@@ -335,13 +478,9 @@ Saguinus imperator,endocranial_volume,Endocranial_volume,mL,10.7,1,1,0,False,Pow
 Saguinus labiatus,endocranial_volume,Endocranial_volume,mL,10.01,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,10.01,10.012,Saguinus labiatus; Saguinus_labiatus,Saguinus labiatus,verbatim,False
 Saguinus leucopus,endocranial_volume,Endocranial_volume,mL,9.7,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,9.7,9.752,Saguinus leucopus; Saguinus_leucopus,Saguinus leucopus,verbatim,False
 Saguinus midas,endocranial_volume,Endocranial_volume,mL,9.78,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,9.78,9.811,Saguinus midas; Saguinus_midas,Saguinus midas,verbatim,False
-Saguinus mystax,endocranial_volume,Endocranial_volume,mL,11.09,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,10.417,11.09,Saguinus mystax; Saguinus_mystax,Saguinus mystax,verbatim,False
-Saguinus mystax pileatus,endocranial_volume,Endocranial_volume,mL,9.666,1,1,0,False,Powell,secondary,both,9.666,9.666,Saguinus_mystax_pileatus,Saguinus mystax pileatus,unresolved,False
-Saguinus niger,endocranial_volume,Endocranial_volume,mL,9.48,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,9.133,9.48,Saguinus niger; Saguinus_niger,Saguinus niger,unresolved,False
-Saguinus nigricollis,endocranial_volume,Endocranial_volume,mL,8.9,1,1,1,True,Isler,primary,unknown,8.9,8.9,Saguinus nigricollis,Saguinus nigricollis,unresolved,False
+Saguinus mystax,endocranial_volume,Endocranial_volume,mL,10.325,4,2,1,True,Isler; Powell,primary; secondary,both; unknown,9.56,11.09,Saguinus mystax; Saguinus pileatus; Saguinus_mystax; Saguinus_mystax_pileatus,Saguinus mystax,subspecies_assign; verbatim,False
+Saguinus niger,endocranial_volume,Endocranial_volume,mL,9.48,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,9.133,9.48,Saguinus niger; Saguinus_niger,Saguinus niger,verbatim,False
 Saguinus oedipus,endocranial_volume,Endocranial_volume,mL,9.76,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,9.698,9.76,Saguinus oedipus; Saguinus_oedipus,Saguinus oedipus,verbatim,False
-Saguinus pileatus,endocranial_volume,Endocranial_volume,mL,9.56,1,1,1,True,Isler,primary,unknown,9.56,9.56,Saguinus pileatus,Saguinus pileatus,unresolved,False
-Saguinus tripartitus,endocranial_volume,Endocranial_volume,mL,8.5,1,1,0,False,Powell,secondary,both,8.5,8.5,Saguinus_tripartitus,Saguinus tripartitus,unresolved,False
 Saimiri boliviensis,endocranial_volume,Endocranial_volume_female,mL,21.522,1,1,0,False,Powell,secondary,female,21.522,21.522,Saimiri_boliviensis,Saimiri boliviensis,verbatim,False
 Saimiri oerstedii,endocranial_volume,Endocranial_volume,mL,25.07,1,1,1,True,Isler,primary,unknown,25.07,25.07,Saimiri oerstedii,Saimiri oerstedii,verbatim,False
 Saimiri oerstedii,endocranial_volume,Endocranial_volume_female,mL,24.236,1,1,0,False,Powell,secondary,female,24.236,24.236,Saimiri_oerstedii,Saimiri oerstedii,verbatim,False
@@ -350,25 +489,45 @@ Saimiri sciureus,endocranial_volume,Endocranial_volume_female,mL,23.523,1,1,0,Fa
 Sapajus apella,endocranial_volume,Endocranial_volume_female,mL,64.2,1,1,0,False,Heldstab,secondary,female,64.2,64.2,Sapajus apella,Sapajus apella,verbatim,False
 Sapajus libidinosus,endocranial_volume,Endocranial_volume,mL,64.69,1,1,1,True,Isler,primary,unknown,64.69,64.69,Cebus libidinosus,Sapajus libidinosus,synonym:NCBI,False
 Sapajus nigritus,endocranial_volume,Endocranial_volume,mL,66.977,3,1,1,True,Isler,primary,unknown,65.63,68.23,Cebus nigritus,Sapajus nigritus,synonym:NCBI,False
-Sciurocheirus alleni cameronensis,endocranial_volume,Endocranial_volume,mL,5.68,1,1,0,False,Powell,secondary,both,5.68,5.68,Sciurocheirus_alleni_cameronensis,Sciurocheirus alleni cameronensis,unresolved,False
-Semnopithecus ajax,endocranial_volume,Endocranial_volume,mL,132.06,1,1,1,True,Isler,primary,unknown,132.06,132.06,Semnopithecus ajax,Semnopithecus ajax,unresolved,False
-Semnopithecus dussumieri,endocranial_volume,Endocranial_volume,mL,90.09,1,1,1,True,Isler,primary,unknown,90.09,90.09,Semnopithecus dussumieri,Semnopithecus dussumieri,unresolved,False
-Semnopithecus dussumieri,endocranial_volume,Endocranial_volume_female,mL,88.296,1,1,0,False,Powell,secondary,female,88.296,88.296,Semnopithecus_dussumieri,Semnopithecus dussumieri,unresolved,False
-Semnopithecus entellus,endocranial_volume,Endocranial_volume,mL,110.93,2,2,1,True,Isler; Seymour,primary; secondary,unknown,101.6,110.93,Semnopithecus entellus,Semnopithecus entellus,verbatim,False
-Semnopithecus entellus,endocranial_volume,Endocranial_volume_female,mL,95.237,1,1,0,False,Powell,secondary,female,95.237,95.237,Semnopithecus_entellus,Semnopithecus entellus,verbatim,False
-Semnopithecus priam,endocranial_volume,Endocranial_volume,mL,83.07,1,1,1,True,Isler,primary,unknown,83.07,83.07,Semnopithecus priam,Semnopithecus priam,unresolved,False
-Semnopithecus priam,endocranial_volume,Endocranial_volume_female,mL,75.292,1,1,0,False,Powell,secondary,female,75.292,75.292,Semnopithecus_priam,Semnopithecus priam,unresolved,False
-Semnopithecus schistaceus,endocranial_volume,Endocranial_volume,mL,129.25,1,1,1,True,Isler,primary,unknown,129.25,129.25,Semnopithecus schistaceus,Semnopithecus schistaceus,unresolved,False
-Semnopithecus schistaceus,endocranial_volume,Endocranial_volume_female,mL,126.126,1,1,0,False,Powell,secondary,female,126.126,126.126,Semnopithecus_schistaceus,Semnopithecus schistaceus,unresolved,False
-Simias concolor,endocranial_volume,Endocranial_volume,mL,58.42,1,1,1,True,Isler,primary,unknown,58.42,58.42,Simias concolor,Simias concolor,unresolved,False
-Simias concolor,endocranial_volume,Endocranial_volume_female,mL,52.452,1,1,0,False,Powell,secondary,female,52.452,52.452,Simias_concolor,Simias concolor,unresolved,False
+Sapajus xanthosternos,endocranial_volume,Endocranial_volume,mL,66.09,1,1,1,True,Isler,primary,unknown,66.09,66.09,Cebus xanthosternos,Sapajus xanthosternos,synonym:NCBI,False
+Sarcophilus harrisii,endocranial_volume,Endocranial_volume,mL,16.09,1,1,0,False,Weisbecker,secondary,unknown,16.09,16.09,Sarcophilus harrisii,Sarcophilus harrisii,verbatim,False
+Semnopithecus ajax,endocranial_volume,Endocranial_volume,mL,132.06,1,1,1,True,Isler,primary,unknown,132.06,132.06,Semnopithecus ajax,Semnopithecus ajax,verbatim,False
+Semnopithecus entellus,endocranial_volume,Endocranial_volume,mL,100.51,3,2,1,True,Isler; Seymour,primary; secondary,unknown,90.09,110.93,Semnopithecus dussumieri; Semnopithecus entellus,Semnopithecus entellus,author_judgment; verbatim,False
+Semnopithecus entellus,endocranial_volume,Endocranial_volume_female,mL,91.766,2,1,0,False,Powell,secondary,female,88.296,95.237,Semnopithecus_dussumieri; Semnopithecus_entellus,Semnopithecus entellus,author_judgment; verbatim,False
+Semnopithecus priam,endocranial_volume,Endocranial_volume,mL,83.07,1,1,1,True,Isler,primary,unknown,83.07,83.07,Semnopithecus priam,Semnopithecus priam,verbatim,False
+Semnopithecus priam,endocranial_volume,Endocranial_volume_female,mL,75.292,1,1,0,False,Powell,secondary,female,75.292,75.292,Semnopithecus_priam,Semnopithecus priam,verbatim,False
+Semnopithecus schistaceus,endocranial_volume,Endocranial_volume,mL,129.25,1,1,1,True,Isler,primary,unknown,129.25,129.25,Semnopithecus schistaceus,Semnopithecus schistaceus,verbatim,False
+Semnopithecus schistaceus,endocranial_volume,Endocranial_volume_female,mL,126.126,1,1,0,False,Powell,secondary,female,126.126,126.126,Semnopithecus_schistaceus,Semnopithecus schistaceus,verbatim,False
+Setonix brachyurus,endocranial_volume,Endocranial_volume,mL,13.9,1,1,0,False,Weisbecker,secondary,unknown,13.9,13.9,Setonix brachyurus,Setonix brachyurus,verbatim,False
+Simias concolor,endocranial_volume,Endocranial_volume,mL,58.42,1,1,1,True,Isler,primary,unknown,58.42,58.42,Simias concolor,Simias concolor,verbatim,False
+Simias concolor,endocranial_volume,Endocranial_volume_female,mL,52.452,1,1,0,False,Powell,secondary,female,52.452,52.452,Simias_concolor,Simias concolor,verbatim,False
+Sminthopsis bindi,endocranial_volume,Endocranial_volume,mL,0.35,1,1,0,False,Weisbecker,secondary,unknown,0.35,0.35,Sminthopsis  bindi,Sminthopsis bindi,unresolved,False
+Sminthopsis crassicaudata,endocranial_volume,Endocranial_volume,mL,0.36,1,1,0,False,Weisbecker,secondary,unknown,0.36,0.36,Sminthopsis crassicaudata,Sminthopsis crassicaudata,verbatim,False
+Sminthopsis douglasi,endocranial_volume,Endocranial_volume,mL,0.35,1,1,0,False,Weisbecker,secondary,unknown,0.35,0.35,Sminthopsis douglasi,Sminthopsis douglasi,unresolved,False
+Sminthopsis griseoventer,endocranial_volume,Endocranial_volume,mL,0.49,1,1,0,False,Weisbecker,secondary,unknown,0.49,0.49,Sminthopsis griseoventer,Sminthopsis griseoventer,unresolved,False
+Sminthopsis hirtipes,endocranial_volume,Endocranial_volume,mL,0.41,1,1,0,False,Weisbecker,secondary,unknown,0.41,0.41,Sminthopsis hirtipes,Sminthopsis hirtipes,unresolved,False
+Sminthopsis leucopus,endocranial_volume,Endocranial_volume,mL,0.41,1,1,0,False,Weisbecker,secondary,unknown,0.41,0.41,Sminthopsis leucopus,Sminthopsis leucopus,verbatim,False
+Sminthopsis macroura,endocranial_volume,Endocranial_volume,mL,0.4,1,1,0,False,Weisbecker,secondary,unknown,0.4,0.4,Sminthopsis macroura,Sminthopsis macroura,verbatim,False
+Sminthopsis murina,endocranial_volume,Endocranial_volume,mL,0.44,1,1,0,False,Weisbecker,secondary,unknown,0.44,0.44,Sminthopsis murina,Sminthopsis murina,verbatim,False
+Sminthopsis virginiae,endocranial_volume,Endocranial_volume,mL,0.34,1,1,0,False,Weisbecker,secondary,unknown,0.34,0.34,Sminthopsis virginiae,Sminthopsis virginiae,unresolved,False
+Spilocuscus kraemeri,endocranial_volume,Endocranial_volume,mL,11.5,1,1,0,False,Weisbecker,secondary,unknown,11.5,11.5,Spilocuscus kraemeri,Spilocuscus kraemeri,unresolved,False
+Spilocuscus rufoniger,endocranial_volume,Endocranial_volume,mL,16.8,1,1,0,False,Weisbecker,secondary,unknown,16.8,16.8,Spilocuscus rufoniger,Spilocuscus rufoniger,unresolved,False
+Strigocuscus pelengensis,endocranial_volume,Endocranial_volume,mL,6.22,1,1,0,False,Weisbecker,secondary,unknown,6.22,6.22,Strigocuscus pelengensis,Strigocuscus pelengensis,unresolved,False
 Symphalangus syndactylus,endocranial_volume,Endocranial_volume,mL,123.5,1,1,1,True,Isler,primary,unknown,123.5,123.5,Symphalangus syndactylus,Symphalangus syndactylus,verbatim,False
+Tarsipes rostratus,endocranial_volume,Endocranial_volume,mL,0.36,1,1,0,False,Weisbecker,secondary,unknown,0.36,0.36,Tarsipes rostratus,Tarsipes rostratus,verbatim,False
 Tarsius bancanus,endocranial_volume,Endocranial_volume,mL,3.16,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,3.148,3.16,Tarsius bancanus; Tarsius_bancanus,Tarsius bancanus,verbatim,False
 Tarsius dentatus,endocranial_volume,Endocranial_volume,mL,3.0,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,2.995,3.0,Tarsius dentatus; Tarsius_dentatus,Tarsius dentatus,verbatim,False
 Tarsius syrichta,endocranial_volume,Endocranial_volume,mL,3.36,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,3.36,3.383,Tarsius syrichta; Tarsius_syrichta,Tarsius syrichta,hub,False
 Tarsius tarsier,endocranial_volume,Endocranial_volume,mL,3.06,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,3.06,3.255,Tarsius tarsier; Tarsius_tarsier,Tarsius tarsier,verbatim,False
 Theropithecus gelada,endocranial_volume,Endocranial_volume,mL,133.33,1,1,1,True,Isler,primary,unknown,133.33,133.33,Theropithecus gelada,Theropithecus gelada,verbatim,False
 Theropithecus gelada,endocranial_volume,Endocranial_volume_female,mL,123.223,1,1,0,False,Powell,secondary,female,123.223,123.223,Theropithecus_gelada,Theropithecus gelada,verbatim,False
+Thylacinus cynocephalus,endocranial_volume,Endocranial_volume,mL,51.19,1,1,0,False,Weisbecker,secondary,unknown,51.19,51.19,Thylacinus cynocephalus,Thylacinus cynocephalus,unresolved,False
+Thylamys elegans,endocranial_volume,Endocranial_volume,mL,0.71,1,1,0,False,Weisbecker,secondary,unknown,0.71,0.71,Thylamys elegans,Thylamys elegans,verbatim,False
+Thylogale billardierii,endocranial_volume,Endocranial_volume,mL,22.1,1,1,0,False,Weisbecker,secondary,unknown,22.1,22.1,Thylogale billardieri,Thylogale billardierii,spelling,False
+Thylogale browni,endocranial_volume,Endocranial_volume,mL,18.3,1,1,0,False,Weisbecker,secondary,unknown,18.3,18.3,Thylogale browni,Thylogale browni,unresolved,False
+Thylogale brunii,endocranial_volume,Endocranial_volume,mL,17.5,1,1,0,False,Weisbecker,secondary,unknown,17.5,17.5,Thylogale brunii,Thylogale brunii,unresolved,False
+Thylogale stigmatica,endocranial_volume,Endocranial_volume,mL,17.8,1,1,0,False,Weisbecker,secondary,unknown,17.8,17.8,Thylogale stigmatica,Thylogale stigmatica,verbatim,False
+Thylogale thetis,endocranial_volume,Endocranial_volume,mL,19.2,1,1,0,False,Weisbecker,secondary,unknown,19.2,19.2,Thylogale thetis,Thylogale thetis,verbatim,False
 Trachypithecus auratus,endocranial_volume,Endocranial_volume_female,mL,62.594,1,1,0,False,Powell,secondary,female,62.594,62.594,Trachypithecus_auratus,Trachypithecus auratus,verbatim,False
 Trachypithecus cristatus,endocranial_volume,Endocranial_volume,mL,57.86,1,1,1,True,Isler,primary,unknown,57.86,57.86,Trachypithecus cristatus,Trachypithecus cristatus,hub,False
 Trachypithecus cristatus,endocranial_volume,Endocranial_volume_female,mL,58.402,1,1,0,False,Powell,secondary,female,58.402,58.402,Trachypithecus_cristatus,Trachypithecus cristatus,hub,False
@@ -378,13 +537,17 @@ Trachypithecus johnii,endocranial_volume,Endocranial_volume,mL,84.6,1,1,1,True,I
 Trachypithecus johnii,endocranial_volume,Endocranial_volume_female,mL,78.0,1,1,0,False,Powell,secondary,female,78.0,78.0,Trachypithecus_johnii,Trachypithecus johnii,hub,False
 Trachypithecus obscurus,endocranial_volume,Endocranial_volume,mL,62.12,2,2,1,True,Isler; Seymour,primary; secondary,unknown,62.12,105.0,Trachypithecus obscurus,Trachypithecus obscurus,verbatim,False
 Trachypithecus obscurus,endocranial_volume,Endocranial_volume_female,mL,59.303,1,1,0,False,Powell,secondary,female,59.303,59.303,Trachypithecus_obscurus,Trachypithecus obscurus,verbatim,False
-Trachypithecus phayrei,endocranial_volume,Endocranial_volume,mL,72.84,1,1,1,True,Isler,primary,unknown,72.84,72.84,Trachypithecus phayrei,Trachypithecus phayrei,unresolved,False
-Trachypithecus phayrei,endocranial_volume,Endocranial_volume_female,mL,70.202,1,1,0,False,Powell,secondary,female,70.202,70.202,Trachypithecus_phayrei,Trachypithecus phayrei,unresolved,False
+Trachypithecus phayrei,endocranial_volume,Endocranial_volume,mL,72.84,1,1,1,True,Isler,primary,unknown,72.84,72.84,Trachypithecus phayrei,Trachypithecus phayrei,verbatim,False
+Trachypithecus phayrei,endocranial_volume,Endocranial_volume_female,mL,70.202,1,1,0,False,Powell,secondary,female,70.202,70.202,Trachypithecus_phayrei,Trachypithecus phayrei,verbatim,False
 Trachypithecus pileatus,endocranial_volume,Endocranial_volume,mL,103.64,1,1,1,True,Isler,primary,unknown,103.64,103.64,Trachypithecus pileatus,Trachypithecus pileatus,verbatim,False
 Trachypithecus pileatus,endocranial_volume,Endocranial_volume_female,mL,97.356,1,1,0,False,Powell,secondary,female,97.356,97.356,Trachypithecus_pileatus,Trachypithecus pileatus,verbatim,False
 Trachypithecus vetulus,endocranial_volume,Endocranial_volume,mL,61.29,2,2,1,True,Isler; Seymour,primary; secondary,unknown,58.0,61.29,Trachypithecus vetulus,Trachypithecus vetulus,verbatim,False
 Trachypithecus vetulus,endocranial_volume,Endocranial_volume_female,mL,59.913,1,1,0,False,Powell,secondary,female,59.913,59.913,Trachypithecus_vetulus,Trachypithecus vetulus,verbatim,False
-Trichosurus vulpecula,endocranial_volume,Endocranial_volume,mL,9.8,1,1,0,False,Seymour,secondary,unknown,9.8,9.8,Trichosurus vulpecula,Trichosurus vulpecula,verbatim,False
+Trichosurus caninus,endocranial_volume,Endocranial_volume,mL,11.9,1,1,0,False,Weisbecker,secondary,unknown,11.9,11.9,Trichosurus caninus,Trichosurus caninus,verbatim,False
+Trichosurus vulpecula,endocranial_volume,Endocranial_volume,mL,10.4,2,2,0,False,Seymour; Weisbecker,secondary,unknown,9.8,11.0,Trichosurus vulpecula,Trichosurus vulpecula,verbatim,False
 Varecia rubra,endocranial_volume,Endocranial_volume,mL,31.08,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,29.815,31.08,Varecia rubra; Varecia_rubra,Varecia rubra,verbatim,False
 Varecia variegata,endocranial_volume,Endocranial_volume,mL,32.12,3,3,1,True,Isler; Powell; Seymour,primary; secondary,both; unknown,26.0,32.12,Varecia variegata; Varecia_variegata,Varecia variegata,verbatim,False
-Vombatus ursinus,endocranial_volume,Endocranial_volume,mL,60.0,1,1,0,False,Seymour,secondary,unknown,60.0,60.0,Vombatus ursinus,Vombatus ursinus,verbatim,False
+Vombatus ursinus,endocranial_volume,Endocranial_volume,mL,59.5,2,2,0,False,Seymour; Weisbecker,secondary,unknown,59.0,60.0,Vombatus ursinus,Vombatus ursinus,verbatim,False
+Wallabia bicolor,endocranial_volume,Endocranial_volume,mL,32.9,1,1,0,False,Weisbecker,secondary,unknown,32.9,32.9,Wallabia bicolor,Wallabia bicolor,verbatim,False
+Wyulda squamicaudata,endocranial_volume,Endocranial_volume,mL,10.1,1,1,0,False,Weisbecker,secondary,unknown,10.1,10.1,Wyulda squamicaudata,Wyulda squamicaudata,synonym:NCBI,False
+Xanthonycticebus pygmaeus,endocranial_volume,Endocranial_volume,mL,7.23,2,2,1,True,Isler; Powell,primary; secondary,both; unknown,7.229,7.23,Nycticebus pygmaeus; Nycticebus_pygmaeus,Xanthonycticebus pygmaeus,synonym:NCBI,False

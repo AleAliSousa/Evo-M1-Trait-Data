@@ -168,7 +168,6 @@ sources**; TraitExplorer discovers the folder automatically; `__Cytosplore_expor
 | Smaers_etal_2018_Figure2-data1 | MedialCerebellum_Vol.mm3 | MedialCerebellum_Vol (mm3) [distinct] | secondary | first |  |
 | Heesy__2004_Table1 | orbit_convergence_mean_deg | Orbit_convergence (deg) [distinct] | primary | first |  |
 | Heesy__2004_Table1 | binocular_visual_field_midpoint_deg | Binocular_field_compiled_Heesy2004 (deg) [distinct] | secondary | first | literature values cited by Heesy (binocular_visual_field_reference) |
-| Demirci_etal_2023_Fig.1 | total_surface_area_cm2 | CorticalSurface_Area_Demirci2023 (mm2) [distinct] | primary | mean | MRI total cortical surface; cm2 x100 |
 | Demirci_etal_2023_Fig.1 | cerebral_volume_cm3 | Cerebral_Vol_Demirci2023 (mm3) [distinct] | primary | mean | cm3 x1000 |
 | McDowell_etal_2024_Table1 | S_Cone_LambdaMax_nm | S_cone_lambda_max (nm) [distinct] | secondary | first |  |
 | McDowell_etal_2024_Table1 | M_Cone_LambdaMax_nm | M_cone_lambda_max (nm) [distinct] | secondary | first |  |

@@ -3,6 +3,7 @@ Antidorcas marsupialis,CorticalExposedSurface_Area.mm2,whole_cortex,4769,1,1,1,0
 Antidorcas marsupialis,CorticalSurface_Area.mm2,whole_cortex,9623,1,1,1,0,0,0,Mota_etal_2019_SupplementaryTableS1,9623,9623,NA,FALSE
 Antidorcas marsupialis,CorticalThickness.mm,whole_cortex,1.669,1,1,1,0,0,0,Mota_etal_2019_SupplementaryTableS1,1.669,1.669,NA,FALSE
 Antidorcas marsupialis,FoldingIndex_MHH,whole_cortex,2.018,1,1,1,0,0,0,Mota_HerculanoHouzel_2015_TableS1,2.018,2.018,NA,FALSE
+Aotus lemurinus,CorticalSurface_Area.mm2,whole_cortex,2650,1,1,1,0,0,0,Demirci_etal_2023_Fig.1,2650,2650,NA,FALSE
 Aotus nancymaae,M1_Surface_Area.mm2,regional,221.83,1,1,1,0,0,0,Young_etal_2013_Table1,221.83,221.83,NA,FALSE
 Aotus nancymaae,CorticalSurface_Area.mm2,whole_cortex,2036.5,1,1,1,0,0,0,Collins_etal_2010_DatasetS1,2036.5,2036.5,NA,FALSE
 Aotus trivirgatus,DI_Surface_Area.pct_Neocortex,regional_relative,1.55,4,1,4,0,0,4,Krubitzer_Kaas_1990_Table1,1.3,1.8,0.13430103222362147,FALSE
@@ -11,7 +12,7 @@ Aotus trivirgatus,DM_Surface_Area.pct_Neocortex,regional_relative,1.825,4,1,4,0,
 Aotus trivirgatus,FST_Surface_Area.pct_Neocortex,regional_relative,1.7,4,1,4,0,0,4,Krubitzer_Kaas_1990_Table1,1.2,2.1,0.24956709924231094,FALSE
 Aotus trivirgatus,MST_Surface_Area.pct_Neocortex,regional_relative,1.475,4,1,4,0,0,4,Krubitzer_Kaas_1990_Table1,1.1,1.8,0.22400257176948027,FALSE
 Aotus trivirgatus,MT_Surface_Area.pct_Neocortex,regional_relative,1.75,4,1,4,0,0,4,Krubitzer_Kaas_1990_Table1,1.3,2.1,0.18952141659173716,FALSE
-Aotus trivirgatus,V1_Surface_Area.pct_Neocortex,regional_relative,13.674999999999999,4,1,4,0,0,4,Krubitzer_Kaas_1990_Table1,6.7,18.4,0.3621713250613386,FALSE
+Aotus trivirgatus,V1_Surface_Area.pct_Neocortex,regional_relative,13.674999999999999,4,1,4,0,0,4,Krubitzer_Kaas_1990_Table1,6.7,18.4,0.36217132506133864,FALSE
 Aotus trivirgatus,V2_Surface_Area.pct_Neocortex,regional_relative,7.625,4,1,4,0,0,4,Krubitzer_Kaas_1990_Table1,5,9.2,0.24846027686960243,FALSE
 Aotus trivirgatus,CorticalExposedSurface_Area.mm2,whole_cortex,1633,1,1,1,0,0,0,Mota_etal_2019_SupplementaryTableS1,1633,1633,NA,FALSE
 Aotus trivirgatus,CorticalSurface_Area.mm2,whole_cortex,2214,1,1,1,0,0,0,Mota_etal_2019_SupplementaryTableS1,2214,2214,NA,FALSE
@@ -35,13 +36,13 @@ Callithrix jacchus,FrontalMotor_Surface_Area.mm2,regional,167,1,1,1,0,0,0,Smaers
 Callithrix jacchus,OtherAssociation_Surface_Area.mm2,regional,993,1,1,1,0,0,0,Smaers_etal_2017_TableS1part2,993,993,NA,FALSE
 Callithrix jacchus,Prefrontal_Surface_Area.mm2,regional,148,1,1,1,0,0,0,Smaers_etal_2017_TableS1part2,148,148,NA,FALSE
 Callithrix jacchus,V1_Surface_Area.mm2,regional,341,1,1,1,0,0,0,Smaers_etal_2017_TableS1part2,341,341,NA,FALSE
-Callithrix jacchus,DI_Surface_Area.pct_Neocortex,regional_relative,2.1333333333333333,6,1,6,0,0,6,Krubitzer_Kaas_1990_Table1,1.7,2.8,0.17705269342769117,FALSE
-Callithrix jacchus,DL_Surface_Area.pct_Neocortex,regional_relative,3.8,6,1,6,0,0,6,Krubitzer_Kaas_1990_Table1,3.1,4.4,0.12230473724865529,FALSE
+Callithrix jacchus,DI_Surface_Area.pct_Neocortex,regional_relative,2.1333333333333333,6,1,6,0,0,6,Krubitzer_Kaas_1990_Table1,1.7,2.8,0.17705269342769114,FALSE
+Callithrix jacchus,DL_Surface_Area.pct_Neocortex,regional_relative,3.8,6,1,6,0,0,6,Krubitzer_Kaas_1990_Table1,3.1,4.4,0.12230473724865527,FALSE
 Callithrix jacchus,DM_Surface_Area.pct_Neocortex,regional_relative,1.4,6,1,6,0,0,6,Krubitzer_Kaas_1990_Table1,1.1,1.8,0.1690308509457033,FALSE
 Callithrix jacchus,FST_Surface_Area.pct_Neocortex,regional_relative,2.3,6,1,6,0,0,6,Krubitzer_Kaas_1990_Table1,1.7,2.7,0.16268075594669312,FALSE
 Callithrix jacchus,MST_Surface_Area.pct_Neocortex,regional_relative,1.3833333333333333,6,1,6,0,0,6,Krubitzer_Kaas_1990_Table1,1.1,1.7,0.18524463704850666,FALSE
 Callithrix jacchus,MT_Surface_Area.pct_Neocortex,regional_relative,1.8333333333333333,6,1,6,0,0,6,Krubitzer_Kaas_1990_Table1,1.5,2.3,0.1605774702968699,FALSE
-Callithrix jacchus,V1_Surface_Area.pct_Neocortex,regional_relative,18.25,6,1,6,0,0,6,Krubitzer_Kaas_1990_Table1,15.7,22.3,0.13964542397122917,FALSE
+Callithrix jacchus,V1_Surface_Area.pct_Neocortex,regional_relative,18.25,6,1,6,0,0,6,Krubitzer_Kaas_1990_Table1,15.7,22.3,0.13964542397122914,FALSE
 Callithrix jacchus,V2_Surface_Area.pct_Neocortex,regional_relative,8.7,6,1,6,0,0,6,Krubitzer_Kaas_1990_Table1,7.5,9.6,0.08723524579774843,FALSE
 Callithrix jacchus,CorticalExposedSurface_Area.mm2,whole_cortex,1306,1,1,1,0,0,0,Mota_etal_2019_SupplementaryTableS1,1306,1306,NA,FALSE
 Callithrix jacchus,CorticalSurface_Area.mm2,whole_cortex,1534,1,1,1,0,0,0,Mota_etal_2019_SupplementaryTableS1,1534,1534,NA,FALSE
@@ -71,6 +72,7 @@ Cercopithecus sp.,CorticalSurface_Area.mm2,whole_cortex,14641,1,1,1,0,0,0,Brodma
 Cheirogaleus medius,V1_Surface_Area.mm2,regional,66,1,1,1,0,0,1,Preuss_Kaas_1996_ResultsText,66,66,NA,FALSE
 Cheirogaleus medius,V1_Surface_Area.pct_Neocortex,regional_relative,12,1,1,1,0,1,1,Preuss_Kaas_1996_ResultsText,12,12,NA,FALSE
 Cheirogaleus sp.,CorticalSurface_Area.mm2,whole_cortex,921,1,1,1,0,0,0,Brodmann__1913_Table1,921,921,NA,FALSE
+Colobus guereza,CorticalSurface_Area.mm2,whole_cortex,11400,1,1,1,0,0,0,Demirci_etal_2023_Fig.1,11400,11400,NA,FALSE
 Condylura cristata,n_cortical_areas,whole_cortex,3,1,1,1,0,0,0,Changizi_Shimojo_2005_Table1,3,3,NA,FALSE
 Cryptotis parva,A1_Surface_Area.mm2,regional,0.3,1,1,1,0,0,1,Catania_etal_1999_Table1,0.3,0.3,NA,FALSE
 Cryptotis parva,SomatosensoryS1S2_Surface_Area.mm2,regional,6.6,1,1,1,0,0,1,Catania_etal_1999_Table1,6.6,6.6,NA,FALSE
@@ -118,10 +120,12 @@ Galago senegalensis,MST_Surface_Area.pct_Neocortex,regional_relative,1.9,4,1,4,0
 Galago senegalensis,MT_Surface_Area.pct_Neocortex,regional_relative,2.175,4,1,4,0,0,4,Krubitzer_Kaas_1990_Table1,1.9,2.5,0.12661081717899086,FALSE
 Galago senegalensis,V1_Surface_Area.pct_Neocortex,regional_relative,16.25,4,1,4,0,0,4,Krubitzer_Kaas_1990_Table1,13.5,19.6,0.15474608584650093,FALSE
 Galago senegalensis,V2_Surface_Area.pct_Neocortex,regional_relative,5.95,4,1,4,0,0,4,Krubitzer_Kaas_1990_Table1,4.4,8,0.29351679321971397,FALSE
+Galago senegalensis,CorticalSurface_Area.mm2,whole_cortex,700,1,1,1,0,0,0,Demirci_etal_2023_Fig.1,700,700,NA,FALSE
 Giraffa camelopardalis,CorticalExposedSurface_Area.mm2,whole_cortex,16662,1,1,1,0,0,0,Mota_etal_2019_SupplementaryTableS1,16662,16662,NA,FALSE
 Giraffa camelopardalis,CorticalSurface_Area.mm2,whole_cortex,40128,1,1,1,0,0,0,Mota_etal_2019_SupplementaryTableS1,40128,40128,NA,FALSE
 Giraffa camelopardalis,CorticalThickness.mm,whole_cortex,2.394,1,1,1,0,0,0,Mota_etal_2019_SupplementaryTableS1,2.394,2.394,NA,FALSE
 Giraffa camelopardalis,FoldingIndex_MHH,whole_cortex,2.408,1,1,1,0,0,0,Mota_HerculanoHouzel_2015_TableS1,2.408,2.408,NA,FALSE
+Gorilla gorilla,CorticalSurface_Area.mm2,whole_cortex,38050,1,1,1,0,0,0,Demirci_etal_2023_Fig.1,38050,38050,NA,FALSE
 Heterocephalus glaber,S1_Surface_Area.mm2,regional,10.475,4,1,4,0,0,4,Catania_Remple_2002_Table1,7.9,12,0.1727853301838528,FALSE
 Heterocephalus glaber,S1_Surface_Area.pct_Neocortex,regional_relative,31,1,1,1,0,1,0,Catania_Remple_2002_Table1,31,31,NA,FALSE
 Heterocephalus glaber,CorticalSurface_Area.mm2,whole_cortex,33.7,4,1,4,0,0,4,Catania_Remple_2002_Table1,25.3,39.8,0.1888104860190974,FALSE
@@ -150,6 +154,8 @@ Hylobates lar,OtherAssociation_Surface_Area.mm2,regional,10912,1,1,1,0,0,0,Smaer
 Hylobates lar,Prefrontal_Surface_Area.mm2,regional,1839,1,1,1,0,0,0,Smaers_etal_2017_TableS1part2,1839,1839,NA,FALSE
 Hylobates lar,V1_Surface_Area.mm2,regional,1899,1,1,1,0,0,0,Smaers_etal_2017_TableS1part2,1899,1899,NA,FALSE
 Hylobates sp.,CorticalSurface_Area.mm2,whole_cortex,16301,1,1,1,0,0,0,Brodmann__1913_Table1,16301,16301,NA,FALSE
+Lagothrix lagotricha,CorticalSurface_Area.mm2,whole_cortex,12650,1,1,1,0,0,0,Demirci_etal_2023_Fig.1,12650,12650,NA,FALSE
+Lophocebus albigena,CorticalSurface_Area.mm2,whole_cortex,13050,1,1,1,0,0,0,Demirci_etal_2023_Fig.1,13050,13050,NA,FALSE
 Loxodonta africana,CorticalExposedSurface_Area.mm2,whole_cortex,62146,1,1,1,0,0,0,Mota_etal_2019_SupplementaryTableS1,62146,62146,NA,FALSE
 Loxodonta africana,CorticalSurface_Area.mm2,whole_cortex,257067,1,1,1,0,0,0,Mota_etal_2019_SupplementaryTableS1,257067,257067,NA,FALSE
 Loxodonta africana,CorticalThickness.mm,whole_cortex,2.633,1,1,1,0,0,0,Mota_etal_2019_SupplementaryTableS1,2.633,2.633,NA,FALSE
@@ -207,10 +213,11 @@ Ornithorhynchus anatinus,n_cortical_areas,whole_cortex,6,1,1,1,0,0,0,Changizi_Sh
 Oryctolagus cuniculus,CorticalSurface_Area.mm2,whole_cortex,1627,1,1,1,0,0,0,Brodmann__1913_Table1,1627,1627,NA,FALSE
 Otolemur garnettii,M1_Surface_Area.mm2,regional,43.22,1,1,1,0,0,0,Young_etal_2013_Table1,43.22,43.22,NA,FALSE
 Otolemur garnettii,CorticalExposedSurface_Area.mm2,whole_cortex,1399,1,1,1,0,0,0,Mota_etal_2019_SupplementaryTableS1,1399,1399,NA,FALSE
-Otolemur garnettii,CorticalSurface_Area.mm2,whole_cortex,1951.6666666666667,3,2,3,0,0,0,Collins_etal_2010_DatasetS1; Mota_etal_2019_SupplementaryTableS1,1745,2261,0.139824439885622,FALSE
+Otolemur garnettii,CorticalSurface_Area.mm2,whole_cortex,1951.6666666666667,3,2,3,0,0,0,Collins_etal_2010_DatasetS1; Mota_etal_2019_SupplementaryTableS1,1745,2261,0.13982443988562196,FALSE
 Otolemur garnettii,CorticalThickness.mm,whole_cortex,1.428,1,1,1,0,0,0,Mota_etal_2019_SupplementaryTableS1,1.428,1.428,NA,FALSE
 Otolemur garnettii,FoldingIndex_MHH,whole_cortex,1.247,1,1,1,0,0,0,Mota_HerculanoHouzel_2015_TableS1,1.247,1.247,NA,FALSE
 Ovis aries,CorticalSurface_Area.mm2,whole_cortex,14014,1,1,1,0,0,0,Brodmann__1913_Table1,14014,14014,NA,FALSE
+Pan paniscus,CorticalSurface_Area.mm2,whole_cortex,37500,1,1,1,0,0,0,Demirci_etal_2023_Fig.1,37500,37500,NA,FALSE
 Pan troglodytes,FrontalMotor_Surface_Area.mm2,regional,5389,1,1,1,0,0,0,Smaers_etal_2017_TableS1part2,5389,5389,NA,FALSE
 Pan troglodytes,M1_Surface_Area.mm2,regional,2700,1,1,1,0,0,0,Young_etal_2013_Table1,2700,2700,NA,FALSE
 Pan troglodytes,OtherAssociation_Surface_Area.mm2,regional,24252,1,1,1,0,0,0,Smaers_etal_2017_TableS1part2,24252,24252,NA,FALSE
@@ -236,6 +243,7 @@ Papio hamadryas,Prefrontal_Surface_Area.mm2,regional,1967,1,1,1,0,0,0,Smaers_eta
 Papio hamadryas,V1_Surface_Area.mm2,regional,2130,1,1,1,0,0,0,Smaers_etal_2017_TableS1part2,2130,2130,NA,FALSE
 Phoca sp.,CorticalSurface_Area.mm2,whole_cortex,27551,1,1,1,0,0,0,Brodmann__1913_Table1,27551,27551,NA,FALSE
 Phocoena phocoena,CorticalSurface_Area.mm2,whole_cortex,46994,1,1,1,0,0,0,Brodmann__1913_Table1,46994,46994,NA,FALSE
+Pithecia pithecia,CorticalSurface_Area.mm2,whole_cortex,4900,1,1,1,0,0,0,Demirci_etal_2023_Fig.1,4900,4900,NA,FALSE
 Procavia capensis,CorticalExposedSurface_Area.mm2,whole_cortex,1559,1,1,1,0,0,0,Mota_etal_2019_SupplementaryTableS1,1559,1559,NA,FALSE
 Procavia capensis,CorticalSurface_Area.mm2,whole_cortex,2112.6,1,1,1,0,0,0,Mota_etal_2019_SupplementaryTableS1,2112.6,2112.6,NA,FALSE
 Procavia capensis,CorticalThickness.mm,whole_cortex,1.482,1,1,1,0,0,0,Mota_etal_2019_SupplementaryTableS1,1.482,1.482,NA,FALSE
@@ -252,7 +260,7 @@ Rattus norvegicus,n_cortical_areas,whole_cortex,10,1,1,1,0,0,0,Changizi_Shimojo_
 Saimiri sciureus,M1_Surface_Area.mm2,regional,125.1,1,1,1,0,0,0,Young_etal_2013_Table1,125.1,125.1,NA,FALSE
 Saimiri sciureus,V1_Surface_Area.mm2,regional,744,1,1,1,0,0,0,Smaers_etal_2017_TableS1part2,744,744,NA,FALSE
 Saimiri sciureus,DI_Surface_Area.pct_Neocortex,regional_relative,1.1,6,1,6,0,0,6,Krubitzer_Kaas_1990_Table1,0.9,1.4,0.1818181818181818,FALSE
-Saimiri sciureus,DL_Surface_Area.pct_Neocortex,regional_relative,4.4,6,1,6,0,0,6,Krubitzer_Kaas_1990_Table1,3.4,5.7,0.1754569005965344,FALSE
+Saimiri sciureus,DL_Surface_Area.pct_Neocortex,regional_relative,4.4,6,1,6,0,0,6,Krubitzer_Kaas_1990_Table1,3.4,5.7,0.17545690059653438,FALSE
 Saimiri sciureus,DM_Surface_Area.pct_Neocortex,regional_relative,0.38333333333333336,6,1,6,0,0,6,Krubitzer_Kaas_1990_Table1,0.2,0.8,0.5813744226242358,FALSE
 Saimiri sciureus,FST_Surface_Area.pct_Neocortex,regional_relative,2.8333333333333335,6,1,6,0,0,6,Krubitzer_Kaas_1990_Table1,2.4,3.2,0.11086323754719762,FALSE
 Saimiri sciureus,MST_Surface_Area.pct_Neocortex,regional_relative,1.3333333333333333,6,1,6,0,0,6,Krubitzer_Kaas_1990_Table1,1.1,1.8,0.19937402037376886,FALSE
@@ -263,6 +271,7 @@ Saimiri sciureus,CorticalExposedSurface_Area.mm2,whole_cortex,3335,1,1,1,0,0,0,M
 Saimiri sciureus,CorticalSurface_Area.mm2,whole_cortex,5250,1,1,1,0,0,0,Mota_etal_2019_SupplementaryTableS1,5250,5250,NA,FALSE
 Saimiri sciureus,CorticalThickness.mm,whole_cortex,1.468,1,1,1,0,0,0,Mota_etal_2019_SupplementaryTableS1,1.468,1.468,NA,FALSE
 Saimiri sciureus,FoldingIndex_MHH,whole_cortex,1.574,1,1,1,0,0,0,Mota_HerculanoHouzel_2015_TableS1,1.574,1.574,NA,FALSE
+Sapajus apella,CorticalSurface_Area.mm2,whole_cortex,10500,1,1,1,0,0,0,Demirci_etal_2023_Fig.1,10500,10500,NA,FALSE
 Sarcophilus harrisii,CorticalExposedSurface_Area.mm2,whole_cortex,960,1,1,1,0,0,0,Mota_etal_2019_SupplementaryTableS1,960,960,NA,FALSE
 Sarcophilus harrisii,CorticalSurface_Area.mm2,whole_cortex,1473.35,2,2,2,0,0,0,Brodmann__1913_Table1; Mota_etal_2019_SupplementaryTableS1,1139.7,1807,0.32025815664016233,TRUE
 Sarcophilus harrisii,CorticalThickness.mm,whole_cortex,1.1976836009476177,1,1,1,0,0,0,Mota_etal_2019_SupplementaryTableS1,1.1976836009476177,1.1976836009476177,NA,FALSE

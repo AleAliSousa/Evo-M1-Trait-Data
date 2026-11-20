@@ -193,3 +193,25 @@ repeated genus labels. The broader heuristic that guesses species columns can
 also select common-name, species-group or citation columns in other sources;
 those cases require a separate source-by-source audit and are not corrected
 by this repair.
+
+## Update: Faurby et al. 2018 (PHYLACINE) body masses wired in
+
+PHYLACINE 1.2's trait table (`10.1002%2Fecy.2443_Traitdata.tsv`, 5,831
+species) calls its body-mass column simply `mass_g`, which `body_rx` cannot
+see, so the file was skipped by the mass harvest. It is now named in a
+`COLUMN_OVERRIDE` in `body_ecology_compiled.R` (unit g as printed, no
+conversion); `body_ecology_source_columns.csv` logs the choice on the next
+build. Role is the default secondary (a compilation; the catalogue carries
+no Faurby body-mass row). Of its 5,831 masses, 4,861 are "Reported" and ~970
+are model-estimated (its `mass_method` column: isometric / imputed /
+relative estimates) — the merge does not distinguish them, as with other
+compilations already pooled.
+
+Extinct species: PHYLACINE includes 352 extinct taxa (82 EX + 270
+Pleistocene "EP" in its `iucn_status`). The merge already carries extinct
+species from other sources (69 of the 82 EX and 28 of the EP taxa were
+already present, e.g. *Thylacinus cynocephalus* via PanTHERIA), so the full
+file is wired rather than filtered to extant species: 642 species are new
+to Body_Mass, 253 of them extinct (EX/EP). Body_Mass grows 9,457 → 10,099
+species (against a same-day re-run baseline; the committed outputs were
+additionally stale for six newer sources — see the wiring build report).

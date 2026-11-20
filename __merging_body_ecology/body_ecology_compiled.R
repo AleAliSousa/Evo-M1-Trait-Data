@@ -223,12 +223,25 @@ src_meta <- function(fn) {
 uf <- list(); colmap <- list()
 
 # ---- 1. body mass, every table that has a body column ----------------------
+# COLUMN_OVERRIDE: tables whose body-mass column body_rx cannot see. Faurby
+# et al. 2018 (PHYLACINE 1.2) calls it simply "mass_g" -- no body token for
+# the regex to match -- so the file was skipped entirely. Named explicitly
+# here rather than widening body_rx, which would change the harvest of every
+# other table. Unit g as printed (no conversion). Role stays the default
+# "secondary": PHYLACINE is a compilation, and ~970 of its 5,831 masses are
+# model-estimated rather than reported (its mass_method column); the merge
+# already carries extinct taxa from other sources (e.g. Thylacinus
+# cynocephalus via PanTHERIA), so its extinct species are wired too rather
+# than silently filtered out.
+COLUMN_OVERRIDE <- c("10.1002%2Fecy.2443_Traitdata.tsv" = "mass_g")
 for (path in sort(list.files(pub, pattern = "\\.tsv$", full.names = TRUE))) {
   fn <- basename(path)
   rows <- read_tsv_rows(path); if (is.null(rows)) next
   headers <- gsub('"', "", rows[[1]])
-  if (!any(grepl(body_rx, norm(headers), perl = TRUE))) next
-  pc <- if (fn %in% SKIP) list(col = NA_character_, unit = NA_character_) else pick_column(headers)
+  if (!(fn %in% names(COLUMN_OVERRIDE)) && !any(grepl(body_rx, norm(headers), perl = TRUE))) next
+  pc <- if (fn %in% SKIP) list(col = NA_character_, unit = NA_character_)
+        else if (fn %in% names(COLUMN_OVERRIDE)) list(col = COLUMN_OVERRIDE[[fn]], unit = "g")
+        else pick_column(headers)
   m <- src_meta(fn)
   colmap[[length(colmap) + 1L]] <- data.frame(
     file = fn, first_author = m$author, year = m$year,

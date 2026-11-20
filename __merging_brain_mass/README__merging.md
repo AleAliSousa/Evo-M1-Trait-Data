@@ -391,3 +391,29 @@ contains an accented letter would have hit the same silent fallback.
 The auxiliary build_merge_audit.py / build_merge_dump.py /
 build_merge_repair.py copies carry the same two regex lines and were
 left untouched.
+
+## Update: Herculano-Houzel et al. 2020 bat brain masses wired in
+
+Table 1 of Herculano-Houzel et al. 2020 (J Comp Neurol; the bat
+isotropic-fractionator paper, whose neuron counts were already wired via the
+fractionator merge) carries a whole-brain-mass column abbreviated to
+`MBRAIN, g`. The builders' `BRAIN_RX` scan cannot see that header ("brain" is
+not followed within 3 characters by a mass/weight token), so the file was
+skipped entirely. It is now named in a `COLUMN_OVERRIDE` in
+`build_brain_mass_merge.py`, `brain_mass_compiled.R` and the picker inside
+`_keys/build_brain_size_basis.py` (keep the three in step), and documented in
+`brain_mass_source_columns.csv`.
+
+Basis: the paper's Methods state the reported total brain mass excludes the
+olfactory bulbs ("following our practice since 2006"), so
+`_keys/brain_size_basis.csv` classifies the column
+`mass_excl_olfactory_bulb` / `mass_measured_excl_ob` — the same family as
+HerculanoHouzel_etal_2015 — and the 13 bat rows pool into
+`Brain_Mass_excl_olfactory_bulb` (40 → 53 species; no existing pooled value
+changes). Team is HerculanoHouzel, role primary, per the registry.
+
+Note: `_keys/variable_catalog.csv` has no HerculanoHouzel_etal_2020 mass row,
+so on a fresh harvest the builders' catalogue-derived role for this paper
+defaults to "secondary"; the pooled values are unaffected (the team is alone
+in its basis family for these species), but a catalogue row would be needed
+to make a fresh harvest reproduce the "primary" annotation.

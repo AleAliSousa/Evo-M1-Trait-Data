@@ -252,13 +252,13 @@ Capromys pilorides,11.1665,,,,,11.1665
 Caracal auratus,60.057,,,,,60.057
 Caracal caracal,56.4095,,55.15,,,56.4095
 Carassius auratus,0.097,,,,,0.097
-Cardioderma cor,0.6768,,,,,0.6768
+Cardioderma cor,0.6768,,,,0.562,0.6768
 Carlito syrichta,3.37,,,,,3.37
 Carollia benkeithi,0.448,,,,,0.448
 Carollia castanea,0.4436,,,,,0.4436
 Carollia perspicillata,0.52,,,,,0.52
 Carollia perspicullata,0.55,,,,,0.55
-Casinycteris argynnis,0.8438,,,,,0.8438
+Casinycteris argynnis,0.8438,,,,0.892,0.8438
 Cassistrellus dimissus,0.231,,,,,0.231
 Castor canadensis,36.5,,,,,36.5
 Castor fiber,45.0,,,,,45.0
@@ -342,6 +342,7 @@ Chaerephon atsinanana,0.287,,,,,0.287
 Chaerephon jobensis,0.36,,,,,0.36
 Chaerephon leucogaster,0.287,,,,,0.287
 Chaerephon plicatus,0.385,,,,,0.385
+Chaerephon pumilus,,,,,0.208,
 Chaerephon pusillus,0.287,,,,,0.287
 Chaeropus ecaudatus,2.486,,2.4,,,2.486
 Chaetodipus baileyi,0.679,,,,,0.679
@@ -405,7 +406,7 @@ Coendou baturitensis,17.332,,,,,17.332
 Coendou prehensilis,17.031,,,,,17.031
 Coendou quichua,32.1385,,,,,32.1385
 Coendou vestitus,11.921,,,,,11.921
-Coleura afra,0.259,,,,,0.259
+Coleura afra,0.259,,,,0.244,0.259
 Coleura kibomalandy,0.258,,,,,0.258
 Colobus angolensis,74.4,,,,,74.4
 Colobus guereza,83.9,,74.387,,,83.9
@@ -652,8 +653,8 @@ Epomophorus gambianus,4.328,,,,,4.328
 Epomophorus labiatus,1.5563,,,,,1.5563
 Epomophorus minor,1.589,,,,,1.589
 Epomophorus pusillus,0.82,,,,,0.82
-Epomophorus wahlbergi,1.9612,,,,,1.9612
-Epomops franqueti,2.169,,,,,2.169
+Epomophorus wahlbergi,1.9612,,,,1.224,1.9612
+Epomops franqueti,2.169,,,,2.044,2.169
 Eptesicus brasil. melanopterus,0.1863,,,,,0.1863
 Eptesicus brasiliensis,0.2,,,,,0.2
 Eptesicus dimissus,0.231,,,,,0.231
@@ -876,6 +877,7 @@ Hipposideros calcaratus,0.4487,,,,,0.4487
 Hipposideros calcaratus ssp.,0.398,,,,,0.398
 Hipposideros cervinus,0.2127,,,,,0.2127
 Hipposideros cineraceus,0.1755,,,,,0.1755
+Hipposideros commersoni,,,,,0.588,
 Hipposideros cupidus,0.335,,,,,0.335
 Hipposideros diadema,0.7268,,,,,0.7268
 Hipposideros fulvus,0.2405,,,,,0.2405
@@ -935,7 +937,7 @@ Hylobates sp.,118.0,,,74.1,,118.0
 Hylomys suillus,1.2,,,,,1.2
 Hylopetes spadiceus,1.87,,1.87,,,1.87
 Hypogeomys antimena,8.0,,,,,8.0
-Hypsignathus monstrosus,3.767,,3.35,,,3.767
+Hypsignathus monstrosus,3.767,,3.35,,3.459,3.767
 Hypsugo pulveratus,0.143,,,,,0.143
 Hystrix africaeaustralis,36.996,,22.4812,,,36.996
 Hystrix brachyura,40.9975,,,,,40.9975
@@ -1191,7 +1193,7 @@ Megadontomys thomasi,1.635,,,,,1.635
 Megaerops ecaudatus,0.8825,,,,,0.8825
 Megaerops niphanae,0.958,,,,,0.958
 Megaloglossus azagnyi,0.68,,,,,0.68
-Megaloglossus woermanni,0.6837,,,,,0.6837
+Megaloglossus woermanni,0.6837,,,,0.55,0.6837
 Megaptera novaeangliae,6253.0085,,,,,6253.0085
 Megascapheus bottae,1.518,,1.48,,,1.518
 Meles meles,59.56,,,,,59.56
@@ -1276,7 +1278,7 @@ Miniopterus pusillus,0.2173,,,,,0.2173
 Miniopterus schreib. arenarius,0.2423,,,,,0.2423
 Miniopterus schreib. blepotis,0.3135,,,,,0.3135
 Miniopterus schreibersi ssp.,0.2647,,,,,0.2647
-Miniopterus schreibersii,0.29,,,,,0.29
+Miniopterus schreibersii,0.29,,,,0.219,0.29
 Miniopterus schreibersii orianae,0.291,,,,,0.291
 Miniopterus tristis,0.336,,,,,0.336
 Minke Whale,1810.0,,,,,1810.0
@@ -2029,7 +2031,7 @@ Rhynchomeles prattorum,4.988,,4.9,,,4.988
 Rhynchonycteris naso,0.121,,,,,0.121
 Romerolagus diazi,5.095,,,,,5.095
 Rouserrus leschenaulti,1.742,,,,,1.742
-Rousettus aegyptiacus,2.246,,,,,2.246
+Rousettus aegyptiacus,2.246,,,,1.778,2.246
 Rousettus amplexicaudatus,1.3583,,,,,1.3583
 Rousettus leschenaulti,1.6625,,,,,1.6625
 Rucervus duvaucelii,223.96,,,,,223.96
@@ -2092,7 +2094,7 @@ Scotomanes ornatus,0.384,,,,,0.384
 Scotomanes sp.,0.34,,,,,0.34
 Scotonycteris bergmansi,0.71,,,,,0.71
 Scotonycteris occidentalis,0.71,,,,,0.71
-Scotonycteris zenkeri,0.721,,,,,0.721
+Scotonycteris zenkeri,0.721,,,,0.588,0.721
 Scotophilus dinganii,0.4407,,,,,0.4407
 Scotophilus heathi,0.4743,,,,,0.4743
 Scotophilus heathii,0.476,,,,,0.476
@@ -2358,7 +2360,7 @@ Tragulus napu,18.4,,18.3,,,18.4
 Tremarctos ornatus,314.0,,,,,314.0
 Triaenops afer,0.27,,,,,0.27
 Triaenops parvus,0.27,,,,,0.27
-Triaenops persicus,0.2733,,,,,0.2733
+Triaenops persicus,0.2733,,,,0.251,0.2733
 Trichechus inunguis,88.0,,88.0,,,
 Trichechus manatus,350.0,,,,,350.0
 Trichosurus caninus,12.225,,11.85,,,12.225

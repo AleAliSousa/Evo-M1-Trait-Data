@@ -70,6 +70,16 @@ for (i in seq_len(nrow(vc))) {
 source(file.path(repo, "_keys", "resolve_species.R"))
 resolve <- function(x, paper = NA_character_) resolve_species(x, source_publication = paper)
 
+## Tables whose whole-brain-mass column the brain_rx scan cannot see:
+## HerculanoHouzel_etal_2020 Table 1 abbreviates the header to "MBRAIN, g" --
+## "brain" is not followed within 3 characters by a mass/weight token, so the
+## file was skipped entirely. Named explicitly here (and in
+## build_brain_mass_merge.py and in the picker inside
+## _keys/build_brain_size_basis.py; keep the three in step) rather than
+## widening brain_rx, which would change the harvest of every other table.
+## The column is documented in brain_mass_source_columns.csv.
+column_override <- c("10.1002%2Fcne.24985_TABLE1.tsv" = "MBRAIN, g")
+
 pick_column <- function(headers) {
   cand <- headers[grepl(brain_rx, norm(headers), perl = TRUE)]
   cand <- cand[!vapply(cand, function(h) any(vapply(EXCLUDE, function(e) grepl(e, norm(h), fixed=TRUE), logical(1))), logical(1))]
@@ -105,8 +115,8 @@ targets <- list(); gmax <- list()
 for (path in files) {
   fn <- basename(path); lines <- readLines(path, warn = FALSE); if (!length(lines)) next
   rows <- strsplit(lines, "\t", fixed = TRUE); headers <- gsub('"',"",rows[[1]])
-  if (!any(grepl(brain_rx, norm(headers), perl = TRUE))) next
-  col <- pick_column(headers); if (is.na(col)) next
+  if (!(fn %in% names(column_override)) && !any(grepl(brain_rx, norm(headers), perl = TRUE))) next
+  col <- if (fn %in% names(column_override)) column_override[[fn]] else pick_column(headers); if (is.na(col)) next
   ci <- match(col, headers)
   # NA_character_, not NA: a short row (fewer fields than ci) returns the fallback, and a bare NA
   # is logical, which makes vapply(FUN.VALUE = character(1)) abort with

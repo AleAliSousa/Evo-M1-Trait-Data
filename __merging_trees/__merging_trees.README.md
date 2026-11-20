@@ -1,227 +1,367 @@
 # `__merging_trees` — the project phylogeny
 
-Turns a **published source tree** into the tree the Shiny app fits PGLS against, with an
-auditable record of which project species reached a tip and how. Same shape as the other
+Turns **published source trees** into the trees the project fits PGLS against, with an
+auditable record of which species reached a tip and how. Same shape as the other
 `__merging_*` layers: source folders hold the frozen published data, this folder holds the
-merge logic and the QA report, `_keys/` holds the output the rest of the repo reads.
+merge logic and the QA reports, `_keys/` holds the outputs the rest of the repo reads.
 
-**Current state — two builds from two Upham Items:**
+**Rebuilt 2026-11-19.** Until then the tree was pruned to the 214 species the curated list
+held in August, so `_keys/mammal_tree.nwk` had 199 tips while the app's data had grown to
+thousands of species. The pruning list is now the *species universe* — every label the app
+loads — and there are three tree products instead of one.
 
-*Single tree* (Upham et al. 2019 DNA-only MCC, 4,100 tips → built 2026-08-14):
-**199 of 214 project species on the tree**, root age 162.2 Ma, ultrametric. Every placement
-is sequence-based. The 15 not on it break down as 5 `sp.` placeholders, 3 subspecies pooled
-onto a parent tip already held by another row, 6 species with no DNA in Upham's supermatrix
-(*Crocidura jacksoni*, *Elephantulus fuscipes*, *Fukomys anselli*, *Micropotamogale
-ruwenzorii*, *Nesogale dobsoni*, plus *Marmosa mitis* which must not be bridged to
-*M. robinsoni*), and 1 corrupted duplicate name (see Known data problems).
+## The three trees
 
-*Multi-tree sample* (Upham et al. 2019 **Completed100**: 100 complete trees, 5,911 sp,
-`topoCons NDexp`, drawn from the 10k pseudoposterior → built 2026-08-24):
-**204 of 214 project species on every tree** — the completed set recovers the 5 no-DNA
-species via the *authors'* per-tree taxonomic imputation (placements differ across trees, so
-that uncertainty propagates into any PGLS run over the sample). Still off: the 5 `sp.`
-placeholders, the 3 pooled subspecies, *Marmosa mitis* (genuinely not an MDD tip), and the
-corrupted *Scutisorex* duplicate. This sample is for PGLS-across-trees sensitivity analyses;
-the app's canonical tree stays the DNA-only MCC.
+| | file in `_keys/` | what it is | tips | who placed the non-sequenced species |
+|---|---|---|---|---|
+| **A** | `mammal_tree.nwk` | Upham et al. 2019 DNA-only MCC tree, pruned. **The app reads this one.** | 3,825 | nobody: there are none |
+| **B** | `mammal_trees_sample100.nwk` | 100 of Upham et al.'s *completed* trees, pruned | 5,446 (3,825 sequenced + 1,621 imputed) | Upham et al., differently in each tree |
+| **C** | `mammal_tree_augmented.nwk`, `mammal_trees_augmented100.nwk` | tree A plus branches added here; one deterministic tree and 100 randomised | 5,646 (3,825 sequenced + 1,821 added) | this repo, by genus (or family) |
+
+Tips are project names with spaces as `_`. Every tree is ultrametric to the rounding of the
+published file (tip depths differ by < 0.0002 Myr). The root of A is 179.2 Ma, the mammal
+crown, because monotremes are now on the tree; the therian root is 162.2 Ma as before.
+
+**All three reduce to the same thing when the non-sequenced tips are dropped:** C minus its
+added tips is tree A exactly, and B's sequenced tips are A's species. So A is always
+available as the conservative baseline for any result obtained on B or C.
+
+### Which to use
+
+- **A** when the claim must rest on sequence data alone. It is the app's tree and the
+  default.
+- **B** when the species that matter lack DNA. The placements are published, and running
+  the analysis over the 100 trees carries both the placement uncertainty and the
+  uncertainty of the backbone into the result.
+- **C** for species B cannot give you — the 208 current species described or split
+  since 2019 — and as a check on B. Its 100 trees vary only where the added tips sit; the
+  backbone is fixed, so C understates uncertainty relative to B.
+
+Whatever is used, **report the result with the non-sequenced tips dropped as well.** The
+provenance tables (`tree_tip_provenance_completed100.csv`, `tree_tip_provenance_augmented.csv`)
+say which tips those are. An imputed or added tip sits where taxonomy puts it, with no
+information from the trait being analysed; a result that moves when those tips are removed
+rests on the placements.
+
+### Does the choice matter? One worked example
+
+`compare_pgls_across_trees.R` fits log10 brain mass on log10 body mass with Pagel's λ on every
+product (`pgls_method_comparison.csv`; run 2026-11-19):
+
+| tree | trees | species | not sequenced | slope, median (range over trees) | SE | λ |
+|---|---|---|---|---|---|---|
+| **A** DNA-only | 1 | 1,589 | 0 | 0.539 | 0.0075 | 0.957 |
+| **B** Upham completed, all tips | 100 | 1,721 | 132 | 0.535 (0.528–0.544) | 0.0073 | 0.949 |
+| **B** sequenced tips only | 100 | 1,589 | 0 | 0.541 (0.538–0.546) | 0.0075 | 0.960 |
+| **C** added branches, deterministic | 1 | 1,755 | 166 | 0.531 | 0.0073 | 0.947 |
+| **C** added branches, randomised | 100 | 1,755 | 166 | 0.532 (0.527–0.536) | 0.0073 | 0.943 |
+| **B** on the species B and C share | 100 | 1,720 | 131 | 0.533 (0.526–0.540) | 0.0073 | 0.949 |
+| **C** randomised, same species | 100 | 1,720 | 131 | 0.531 (0.528–0.534) | 0.0074 | 0.943 |
+| OLS, no phylogeny |  | 1,589 | 0 | 0.748 | 0.0041 | — |
+
+For this allometry the choice does not matter: every phylogenetic slope lies between 0.531
+and 0.541, about one standard error apart. Upham's imputation and our added branches, on the
+same 1,720 species, differ by 0.002. Adding the non-sequenced species lowers the slope by
+0.004–0.009 and λ slightly. Coverage mattered far more than method: on the old 199-tip tree
+the same model had 190 species and a slope of 0.675.
+
+This is one trait pair with strong signal and under 10% non-sequenced species. A comparison
+with few species, or a high share of imputed tips, can behave differently — rerun the script
+on the variables in question (change the two `pick()` calls) before relying on B or C.
+
+## The rule, restated
+
+The app does not graft or impute: tree A contains sequenced species only, as
+`__ShinyApp/PHYLO_SETUP.md` requires. Widening coverage beyond that happens only in the two
+separately named products, each with its own log:
+
+- **B** uses the source authors' own imputation. Nothing is placed locally.
+- **C** is the "clearly named downstream augmentation step with its own log table" the
+  earlier version of this README allowed for. `tree_augmentation_log.csv` has one row per
+  candidate species: constraint taxon and rank, number of sequenced relatives, whether the
+  genus is monophyletic on the backbone, crown age, method, authority, decided_by.
+
+`_keys/extend_phylo.R` stays deprecated. Nothing in this folder changes a tip of tree A.
+
+## Pipeline
 
 ```
-Upham_etal_2019/*.tre                    frozen published MCC (source 1)
-Upham_etal_2019/Completed100_topoCons_NDexp/output.nex
-                                         frozen 100-tree credible-set sample (source 2)
-        │
-        ├── tree_tip_crosswalk.csv       accepted_name -> candidate spellings, gated
-        │                                by auto_match (shared by both builds)
-        ▼
-   build_mammal_tree.R                   canonical single-tree build.  .py = offline mirror
-        ├──► _keys/mammal_tree.nwk                     tips = accepted_name  ← app.R reads this
-        ├──► mammal_tree_sourcelabels.nwk              tips = published labels, untouched
-        └──► tree_coverage_report.csv                  one row per project species
-   build_mammal_trees_sample.R           canonical multi-tree build.  .py = offline mirror
-        ├──► _keys/mammal_trees_sample100.nwk          100 trees, tips = accepted_name
-        ├──► mammal_trees_sample100_sourcelabels.nwk   100 trees, published labels
-        ├──► tree_sample_ids.csv                       line -> Upham posterior tree ID
-        └──► tree_coverage_report_completed100.csv     one row per project species
+__ShinyApp/app.R (GH list)   _keys/species_reference.csv   _keys/species_display_aliases.csv
+        └───────────────┬───────────────┘
+              build_species_universe.py ──► species_universe.csv      every name, with a scope
+                        │
+reference_tables/mdd_names_extract.csv  +  _keys/ species key, aliases
+                        │
+            make_tip_crosswalk_seed.py ──► tree_tip_crosswalk.csv     name -> candidate spellings,
+                        │                                             gated by auto_match
+                        │        resolve_tips.R / resolve_tips.py     shared name -> tip rules
+        ┌───────────────┼────────────────────────────┐
+build_mammal_tree.R     build_mammal_trees_sample.R   build_mammal_tree_augmented.R
+  (.py mirror)            (.py mirror)                  (R only)
+  A: _keys/mammal_tree.nwk
+     mammal_tree_sourcelabels.nwk        B: _keys/mammal_trees_sample100.nwk          C: _keys/mammal_tree_augmented.nwk
+     tree_coverage_report.csv               mammal_trees_sample100_sourcelabels.nwk      _keys/mammal_trees_augmented100.nwk
+                                            tree_sample_ids.csv                          tree_augmentation_log.csv
+                                            tree_coverage_report_completed100.csv        tree_tip_provenance_augmented.csv
+                                            tree_tip_provenance_completed100.csv         tree_coverage_report_augmented.csv
+                        │
+        compare_pgls_across_trees.R ──► pgls_method_comparison.csv, …_per_tree.csv
 ```
 
-## The one rule
-
-**No grafting, no imputation — locally.** A species that is not in the published source tree
-is reported absent and left off the tree; it still plots and still joins the OLS fit in the
-app, it just does not enter the PGLS fit. This is why `_keys/extend_phylo.R` was deprecated
-rather than fixed, and it is the whole argument of `__ShinyApp/PHYLO_SETUP.md`. To widen
-coverage, change the *source tree*, never the tips — which is exactly what the `Completed100`
-sample does: its no-DNA placements are Upham et al.'s own published imputation, not ours.
-If a future analysis needs taxa no published tree carries (fossils, `sp.` anomalies), that
-happens in a clearly named downstream augmentation step with its own log table (species,
-constraint/age, authority, method, decided_by) — never upstream, and never silently.
-
-## Why a crosswalk instead of just matching names
-
-`app.R` matches tree tips to species by binomial. That silently loses every species whose
-published tip spelling differs from the project's accepted name — and in this dataset that is
-not a rare edge case. Real examples, all of which the crosswalk recovers:
-
-| project accepted name | tip spelling in an MDD-based tree |
-|---|---|
-| Fukomys damarensis | Cryptomys damarensis |
-| Sapajus apella | Cebus apella |
-| Symphalangus syndactylus | Hylobates syndactylus |
-| Notamacropus parma | Macropus parma |
-| Lophocebus albigena | Cercocebus albigena |
-| Nesogale dobsoni | Microgale dobsoni |
-| Callithrix pygmaea | Cebuella pygmaea |
-| Tarsius syrichta | Carlito syrichta |
-
-`make_tip_crosswalk_seed.py` builds these candidates by inverting
-`_keys/Stephan/species_key.csv` and reading `_keys/species_display_aliases.csv` and the
-`mdd_accepted_name` column of `_keys/species_reference.csv`. It invents nothing — every
-candidate is a spelling already recorded somewhere in `_keys/`.
-
-## `auto_match` — the gate that matters
-
-The species key is **paper-scoped by design**, so inverting it drags in links that are *not*
-alternative spellings of one taxon. Matching those to tips would put a species in the wrong
-place on the tree and quietly bias every PGLS fit. So each candidate is classified:
-
-- **`auto_match = TRUE`** — same taxon, different generic assignment (`Galago demidoff` =
-  `Galagoides demidoff`) or minor orthographic variation (`Aotes`/`Aotus`,
-  `lagotricha`/`lagothricha`); or a subspecies falling back to its parent species, since a
-  species-level tree has no subspecies tips. Used automatically.
-- **`auto_match = FALSE`** — a different taxon concept. **Never matched.** Reported as a lead
-  so a human can adopt it, mirroring the `status` / `decided_by` / `decided_date` discipline in
-  `_keys/reidentifications.csv`.
-
-13 review-only leads remain, and none of them is currently on the tree, so promoting one would
-change nothing today — they matter only if the source tree changes. The ones that must *stay*
-unmatched whatever happens: `Rattus norvegicus` → `Rattus rattus` and `Avahi occidentalis` →
-`Avahi laniger` are **distinct species**.
-
-To promote one: set `auto_match` to `TRUE` on that row, put who decided and on what basis in
-`note`, and re-run the build. Do not delete the row.
-
-### `TREE_TIP_BRIDGES` — the hand-verified cases
-
-Eleven same-taxon equivalences are not recoverable from `_keys/` at all: the generic
-reassignment is more recent than the species key, or the epithet differs by more than the
-orthographic test allows. They live in a table at the top of `make_tip_crosswalk_seed.py`, each
-with its taxonomic authority, so re-seeding cannot lose them — and they bypass the plausibility
-filter, since by definition their genus (`Neovison`, `Pecari`, `Limnogale`, `Chaerephon`…) is
-one the project does not use.
-
-| project accepted name | tree tip | why |
-|---|---|---|
-| Mustela vison | Neovison vison | Neovison split from Mustela |
-| Mops pumilus | Chaerephon pumilus | generic reassignment |
-| Macronycteris commersoni | Hipposideros commersoni | Macronycteris split from Hipposideros |
-| Galictis vittatus | Galictis vittata | gender agreement |
-| Equus burchelli | Equus quagga | senior synonym |
-| Fukomys mechowii | Fukomys mechowi | orthographic |
-| Osphranter rufus | Macropus rufus | Osphranter raised from Macropus |
-| Tayassu tajacu | Pecari tajacu | moved to Pecari |
-| Chinchilla laniger | Chinchilla lanigera | correct original spelling |
-| Microgale mergulus | Limnogale mergulus | Limnogale sunk; Upham retains it |
-| Galagoides demidoff | Galagoides demidovii | orthographic |
-
-Five of these were already documented in `Wilman_etal_2014/…README.md`'s bridge table — the repo
-knew them, but only in prose. Together they lift coverage from 188 to 199.
-
-They are deliberately **not** in `_keys/species_display_aliases.csv`: `app.R` applies that file
-as a *global rename*, so putting `Mustela vison → Neovison vison` there would rename the species
-everywhere in the project. Renaming a species is a taxonomic decision; matching a tree tip is
-not.
-
-Dropped from the seed entirely, as they can never be tip labels: common names
-("Owl monkey", "Beagle Dog"), abbreviated genera ("C. mitis"), truncations
-("Daubentonia madagas."), and `sp.`/`spp.` lumps.
-
-## Reading `tree_coverage_report.csv`
-
-| status | meaning |
-|---|---|
-| `matched_direct` | accepted name is a tip. Nothing to do. |
-| `matched_synonym` | reached via an `auto_match` synonym; `matched_via` names the spelling used. |
-| `matched_subspecies_parent` | trinomial matched to its parent species tip. |
-| `subspecies_of_matched_species` | the parent tip is already held by another project row, so this one is excluded rather than duplicating a tip. Expected for the `Cryptomys hottentotus` subspecies and `Mustela putorius furo`. |
-| `absent_but_review_lead` | not on the tree under any `auto_match` name, but a review-only candidate exists — and the note says whether that candidate **is on the tree**. These are the rows worth your time. |
-| `absent_from_tree` | genuinely not in the source tree. Needs a different source tree, not a graft. |
-| `unresolvable_placeholder` | `Ateles sp.`, `Gorilla sp.`, `Callicebus sp.`, `Pongo sp.`, `Tarsius sp.` — genus-level names that no single tip can represent. |
-| `conflict_tip_already_used` | two species claim one tip other than via subspecies fallback. **A real error** — fix the crosswalk. |
-
-A species matching a tip in its own right always beats a subspecies falling back to the same
-tip, so the outcome does not depend on row order in the CSV.
-
-## Two output trees, on purpose
-
-`_keys/mammal_tree.nwk` carries **project accepted names** as tips, because that is what
-`app.R` can match against — a tree keeping `Cryptomys_damarensis` would lose that species in
-the app even though the crosswalk found it. The published labels are not lost: they are in
-`mammal_tree_sourcelabels.nwk`, in the `matched_tip` column of the coverage report, and of
-course in the untouched `.tre` in the source folder. This is the repo's usual
-printed-name-preserved-alongside-harmonised-name pattern
-(`__HOWTO_build_a_dataset_file.md` §0a invariant 3), applied to tips.
+Sources (frozen, untouched): `Upham_etal_2019/*.tre` (DNA-only MCC, 4,098 species) and
+`Upham_etal_2019/Completed100_topoCons_NDexp/output.nex` (100 completed trees, 5,911 species).
 
 ## Running it
 
 ```bash
-Rscript  __merging_trees/build_mammal_tree.R          # canonical single tree
-Rscript  __merging_trees/build_mammal_trees_sample.R  # canonical 100-tree sample
-python3  __merging_trees/build_mammal_tree.py         # offline mirrors, same outputs
-python3  __merging_trees/build_mammal_trees_sample.py
-python3  __merging_trees/make_tip_crosswalk_seed.py   # only when _keys/ species files change
+python3 __merging_trees/build_species_universe.py      # when a merge or _keys/ species file changes
+python3 __merging_trees/make_tip_crosswalk_seed.py
+Rscript __merging_trees/build_mammal_tree.R            # A  (python3 …/build_mammal_tree.py mirrors it)
+Rscript __merging_trees/build_mammal_trees_sample.R    # B  (python3 …/build_mammal_trees_sample.py)
+Rscript __merging_trees/build_mammal_tree_augmented.R  # C  needs B's reports; R only
+Rscript __merging_trees/compare_pgls_across_trees.R    # needs phylolm; ~3 min
 ```
 
-### Using the sample in an analysis
+Run in that order from the repo root. Each script reads from `$EVOM1_REPO` and writes under
+`$EVOM1_OUT`; both default to this repo, so the commands above behave as before. Setting
+`EVOM1_OUT` elsewhere builds everything into a scratch folder without touching the repo.
 
-`_keys/mammal_trees_sample100.nwk` is a plain multi-line Newick: `ape::read.tree()` returns a
-`multiPhylo` of 100 trees whose tips are project accepted names (spaces as `_`). To take the
-species subset an analysis actually has data for, prune per tree — never edit the file:
+The R builds and their Python mirrors produce byte-identical trees (checked for A and B on
+2026-11-19). The mirrors write the coverage CSVs with minimal quoting, R with full quoting;
+the contents are the same.
+
+**Rebuild whenever a merge grows.** The universe is read from the tables `app.R` loads, so a
+rebuild picks up new species by itself — but only if it is run. Coverage drifted from 199 of
+214 to 199 of several thousand because it was not.
+
+## The species universe and scope
+
+`species_universe.csv` lists 10,266 names: every `Species` label in the tables `app.R`
+loads (its `GH` list is parsed, so a new table is picked up automatically), after the app's
+display aliases, plus the names in `_keys/species_reference.csv`.
+
+| scope | names | meaning |
+|---|---|---|
+| `in_scope_mammal` | 7,038 | a mammal species or subspecies name; goes to the crosswalk |
+| `out_of_scope_non_mammal` | 2,404 | bird, reptile, fish, invertebrate. No mammal tree can hold it |
+| `out_of_scope_not_a_species_name` | 612 | common name, abbreviation, placeholder, hybrid, misspelt genus, note text |
+| `out_of_scope_no_order` | 196 | no order on record and genus not in the mammal checklist |
+| `out_of_scope_fossil` | 16 | flagged fossil in `species_reference.csv` |
+
+Out-of-scope names are listed in every coverage report with status `out_of_scope`. They are
+not counted as missing from the tree.
+
+## The crosswalk and `auto_match`
+
+`app.R` matches tree tips to species by name, which loses every species whose published tip
+spelling differs from the name the data use. `make_tip_crosswalk_seed.py` lists candidate
+spellings for each in-scope name; the builds try them in rank order. It reads no tree.
+
+- **`auto_match = TRUE`** — the same taxon: the name itself; MDD's current, Checklist-of-
+  Mammals (2020) or MSW3 (2005) name for it, when that older name belongs to one species only;
+  the same epithet under a genus MDD records for the species; a synonym MDD lists under exactly
+  one species; a spelling or gender-agreement variant; a display alias; a subspecies falling
+  back to its parent species; a hand-verified bridge.
+- **`auto_match = FALSE`** — a different or ambiguous concept, **never matched**: a pre-split
+  name that now covers several species, an epithet found under another genus of the family,
+  a species-key link between distinct species. These are leads for a person to decide.
+
+`candidate_source` records which rule produced each candidate; the seeder's docstring defines
+every value. 9,224 auto candidates and 305 review-only candidates are in the file.
+
+**`TREE_TIP_BRIDGES`** (in the seeder) holds the eleven hand-verified equivalences that no
+rule recovers; re-seeding cannot lose them. **`NEVER_BRIDGE`** (also in the seeder) holds pairs
+that must stay unmatched whatever a rule or database says: `Marmosa mitis → Marmosa robinsoni`
+(curator decision, although MDD lists *mitis* in that synonymy), `Rattus norvegicus → Rattus
+rattus`, `Avahi occidentalis → Avahi laniger`.
+
+To promote a review lead, add it to `TREE_TIP_BRIDGES` with its basis, re-seed and rebuild.
+Editing `auto_match` in the CSV by hand still works but **is overwritten by the next re-seed**.
+
+They are deliberately **not** put in `_keys/species_display_aliases.csv` by this layer: that
+file is a global rename applied by `app.R`. Renaming a species is a taxonomic decision;
+matching a tree tip is not.
+
+### The Mammal Diversity Database extract
+
+`reference_tables/mdd_names_extract.csv` is a 13-column extract of the MDD species table (see
+the README beside it for source, date and how to refresh). It supplies the name history that
+links a data label to the spelling Upham et al. used in 2019, and the list of current living
+species that tree C may add.
+
+## How a name gets a tip (`resolve_tips.R`)
+
+Only `auto_match = TRUE` candidates are tried. Two rules are new:
+
+1. **A name the source taxonomy recognises is matched only as itself.** Upham et al. list
+   5,911 species; one they recognise but did not sequence is absent from tree A, and is never
+   moved onto another tip by a later synonymy. (*Petaurista magnificus* is a separate,
+   unsequenced species in Upham; MDD has since sunk it into *P. albiventer*. It is absent
+   from A, imputed in B, added in C.)
+2. **One tip carries one name.** When several names resolve to the same tip it goes to, in
+   order: a species-level match before a subspecies fallback; a name in `species_reference.csv`
+   before a label found only in a merge; the current MDD name before an older one; the name
+   that is the tip spelling; the name in more app tables; byte order.
+
+## Reading the coverage reports
+
+One row per universe name in each of `tree_coverage_report.csv` (A),
+`tree_coverage_report_completed100.csv` (B) and `tree_coverage_report_augmented.csv` (C).
+
+| status | A | B | C | meaning |
+|---|---|---|---|---|
+| `matched_direct` | 3,627 | 5,201 | 3,627 | the name is a tip |
+| `matched_synonym` | 198 | 245 | 198 | reached via an `auto_match` candidate; `matched_via` names it |
+| `grafted_local` | – | – | 1,821 | added by `build_mammal_tree_augmented.R` |
+| `synonym_of_matched_name` | 585 | 675 | 585 | another label for the same taxon holds the tip (see below) |
+| `subspecies_of_matched_species` | 130 | 132 | 130 | the parent species holds the tip |
+| `absent_but_review_lead` | 202 | 201 | 202 | off the tree, but a review-only candidate exists; the note says whether it is on the tree |
+| `absent_from_tree` | 2,296 | 584 | 475 | no candidate is a tip |
+| `unresolvable_placeholder` | 51 | 51 | 51 | `Gorilla sp.` and the like in the curated list |
+| `out_of_scope` | 3,177 | 3,177 | 3,177 | not a mammal species name |
+| `conflict_tip_already_used` | 0 | 0 | 0 | two names that are the same tip spelling — a real error; fix the source |
+
+`matched_subspecies_parent` no longer occurs: every parent species is now in the data and
+holds its own tip.
+
+### Two labels for one species (675 of them)
+
+`synonym_of_matched_name` rows are data labels that are a second name for a species already
+on the tree — *Mustela vison* beside *Neogale vison*, *Lagothrix lagotricha* beside
+*L. lagothricha*. The app treats the two labels as two species, so the data under the losing
+label cannot enter PGLS, and the two appear as separate points in every plot.
+`tree_alias_candidates.csv` lists each pair with the tables each label occurs in and, where
+one of them is the current MDD name, a suggested canonical. Adding a pair to
+`_keys/species_display_aliases.csv` is the fix, and is a curator's decision.
+
+### The review queue (217 names)
+
+`tree_review_queue.csv` lists every off-tree name that has a review-only lead, most-used
+names first, with empty `decision` / `decided_by` / `decided_date` columns. 141 of them have a
+lead that is a tip of tree A; most are old generic placements (*Cercopithecus sabaeus* →
+*Chlorocebus sabaeus*, *Tatera brantsii* → *Gerbilliscus brantsii*).
+
+## How tree C places a species
+
+Only names with positive evidence of being a valid living species are added: species in
+Upham's taxonomy without DNA (1,613) and current, non-extinct MDD species absent from Upham
+altogether (208). Fossils, placeholders, names of unknown status, second labels and
+subspecies are never added.
+
+| sequenced relatives | deterministic tree | randomised trees |
+|---|---|---|
+| genus has two or more | at the genus crown node (a polytomy) | uniformly along the branches below that node |
+| genus has one | midpoint of that species' terminal branch | uniformly along it |
+| genus has none | the same two rules on the family | the same |
+| family has none | not placed | not placed |
+
+1,648 were placed by genus and 173 by family; 244 had a single sequenced relative.
+8 were not placed (Nesophontes edithae, Nesophontes hypomicrus, Nesophontes major, Nesophontes micrus, Nesophontes paramicrus, Nesophontes zamicrus, Prolagus sardus, Thylacinus cynocephalus).
+An added species is never put inside another genus that is monophyletic on the backbone. The
+build checks this, and that every added tip is inside its constraint clade, on the unpruned
+tree, and stops if either fails.
+
+**Limits to keep in view.** 586 of the genus-level additions are in genera that are *not*
+monophyletic on the backbone; their constraint clade is the smallest clade holding all
+sequenced congeners, which then includes other genera (`constraint_monophyletic`,
+`constraint_clade_tips` in the log). Family-level placements are loose: *Abditomys latidens*, whose
+genus is unsequenced, is attached at the crown of Muridae (412 sequenced species, 51.5 Ma),
+or anywhere below it in the randomised trees. The deterministic tree has 390 polytomies, the
+largest with 81 branches. Extinct species that Upham et al. include are added as present-day tips, as
+they are in B. Placement uses taxonomy only.
+
+## Using the trees in an analysis
 
 ```r
-trees <- ape::read.tree("_keys/mammal_trees_sample100.nwk")
-have  <- gsub(" ", "_", my_data$accepted_name)
-sub   <- lapply(trees, ape::keep.tip, tip = intersect(trees[[1]]$tip.label, have))
-class(sub) <- "multiPhylo"
-fits  <- lapply(sub, function(tr) <PGLS fit against tr>)   # then summarise across fits
+trees <- ape::read.tree("_keys/mammal_trees_sample100.nwk")        # multiPhylo, 100 trees
+prov  <- read.csv("__merging_trees/tree_tip_provenance_completed100.csv")
+have  <- intersect(gsub(" ", "_", my_data$Species), trees[[1]]$tip.label)
+seqd  <- intersect(have, prov$tip_label[prov$provenance == "sequenced"])
+fits_all <- lapply(trees, function(tr) <PGLS on ape::keep.tip(tr, have)>)
+fits_seq <- lapply(trees, function(tr) <PGLS on ape::keep.tip(tr, seqd)>)   # report both
 ```
 
-Report which posterior trees the lines are via `tree_sample_ids.csv` when citing. Fit results
-should be summarised across the 100 fits (median + spread), not cherry-picked.
+Summarise across the 100 fits (median and range), never one chosen tree. Cite the posterior
+trees by `tree_sample_ids.csv`. `nlme::gls` with `ape::corPagel` needs about 30 s per fit at
+1,600 species; `phylolm::phylolm(model = "lambda")` gives the same estimates in under a second.
 
-Re-seeding the crosswalk **overwrites hand-promoted `auto_match` values** — the seeder rebuilds
-the file from `_keys/`. Diff before committing, or re-apply promotions afterwards.
+## What changes for the app
 
-Then publish, exactly as `PHYLO_SETUP.md` describes:
+`app.R` fetches `_keys/mammal_tree.nwk` from GitHub at run time, so **committing the new tree
+changes the live app without a deploy.** Before or with that commit:
 
-```bash
-Rscript __ShinyApp/build_data.R     # copies the tree into __ShinyApp/data/ as offline fallback
-```
+1. **Replace `tip_binom()` in `__ShinyApp/app.R`** (and deploy). It keeps the first two
+   words of a tip label, so the tip `Capra_aegagrus_hircus` is read as *Capra aegagrus*: the
+   wild goat's data would be fitted on the domestic goat's tip, and the domestic goat's own
+   data would not match. The replacement drops only a published `FAMILY_ORDER` suffix:
 
-`build_data.R` already picks up `_keys/mammal_tree.*`; no app changes are needed.
+   ```r
+   # tree tip -> species name, as the data spell it. A published label
+   # ("Genus_species_FAMILY_ORDER") is recognised by its last word, the ORDER in
+   # capitals, on a label of four or more words; a project label is kept whole.
+   tip_binom <- function(tips) {
+     vapply(strsplit(trimws(gsub("_", " ", tips)), " +"), function(z) {
+       if (length(z) >= 4 && grepl("^[A-Z]+$", z[length(z)])) z <- z[1:2]
+       paste(z, collapse = " ")
+     }, character(1))
+   }
+   ```
 
-## Known data problems this layer exposed
+   It was tested on the function alone (project labels, raw Upham labels, every tip of A
+   and C), not in the running app.
+2. **Expect slower PGLS.** A mammal-wide fit now has up to ~1,600 species where it had at
+   most 199. The app's `nlme::gls` + `corPagel` took 27 s for brain mass on body mass on a
+   10-core laptop; shinyapps.io will be slower.
 
-- **`Scutisorex somereni` occupies two rows in `_keys/species_reference.csv`**, both with a
-  mojibake separator instead of a space: `scutisorexã\x8asomereni` (double-encoded) and
-  `ScutisorexÊsomereni` (single-encoded) — a non-breaking space run through a Latin-1/UTF-8
-  round trip, with the genus also lower-cased on the first. Neither can match a tree tip or
-  join any other table. The first has `mdd_accepted_name = Scutisorex somereni` so the
-  crosswalk rescues it; the second has no MDD name and is unrescuable. **Fix at source:**
-  repair to one row named `Scutisorex somereni`.
-- **`Order_resolved = Soricomorpha`** on 3 rows. Soricomorpha is defunct — these are
-  Eulipotyphla, which is what `Order_MDD` says. Harmless to tip matching (order is not used
-  to match) but it will misgroup those species anywhere the app colours by order.
-- **One entirely `NA` row** in `species_reference.csv` (line 134), carried through as a species.
-- Only **90 of 215** rows have `mdd_accepted_name` / `Order_MDD` / `Family_MDD` filled. Since
-  Upham tips follow MDD, finishing that reconciliation is the single highest-yield way to lift
-  tip-matching coverage.
+## Open items
 
-## Adding another source tree later
+Carried over from the two handoff notes of 2026-08/09 and 2026-11-19 (now removed), plus what
+this rebuild found.
 
-The second source arrived 2026-08-24 as a second **Item in the same folder**
-(`Upham_etal_2019/Completed100_topoCons_NDexp/` — same publication, so no new source folder),
-with its own build script and distinct output names, so the two are compared rather than
-silently swapped. The same pattern applies to the next one: Zoonomia (Foley et al. 2023) —
-best consistency with the M1 gene-expression analyses, but placental-only, so the project's
-12 marsupials would need `_keys/combine_trees.R` to join a published marsupial tree at a cited
-Theria age. Add it as its own source folder (`Foley_etal_2023/`), point a build at it, and
-write to a distinct output name.
+**App (handoff "Phase 4")**
+- Show *n matched / n in analysis* and a downloadable list of the species dropped from a PGLS
+  fit. Today only a count is shown.
+- Show the tree's name, source and tip count in the phylogeny panel.
+- Offer B (and C) in the app, with estimates pooled across trees; consider `phylolm` for speed.
+- Verify `ape` / `nlme` on shinyapps.io after the next deploy; PGLS disables quietly without them.
+
+**Names**
+- Decide the 675 label pairs in `tree_alias_candidates.csv`.
+- Work `tree_review_queue.csv` (217 names).
+- Confirm the *Marmosa mitis* decision: the curated rule keeps it off the *M. robinsoni* tip;
+  MDD treats *mitis* as a synonym of *M. robinsoni*.
+- 612 labels in the merges are not species names. Among them: free-text notes in the
+  `Species` column of `body_ecology_long.csv`, common names ("Honey possum"), and misspelt
+  genera ("Nasau nasau", "Isoodono besulus"). `species_universe.csv` lists them with the genus
+  `species_taxonomy.csv` files them under. They need fixing in the merges.
+- `Order_resolved = Soricomorpha` on 2 rows of `species_reference.csv` (*Microsorex hoyi*,
+  *Scutisorex somereni*); `Order_MDD` already says Eulipotyphla.
+- `mdd_accepted_name` is filled on 90 of 1,545 rows of `species_reference.csv`. No longer
+  needed for tip matching, which reads MDD directly.
+
+**Trees**
+- A second published tree. Álvarez-Carretero et al. 2022 (4,705 species) for taxa Upham's
+  DNA-only tree lacks; Zoonomia (Foley et al. 2023) for consistency with the M1 expression
+  work, placental-only, so marsupials would need `_keys/combine_trees.R`. Each as its own
+  source folder and its own output name.
+- Non-mammals (2,404 names) need their own trees (e.g. Jetz et al. for birds). A separate decision.
+
+**Validation not yet done**
+- Reproduce a published PGLS result end to end on tree A.
+- Confirm in the running app that OLS results are unchanged and that the matched-n the app
+  reports agrees with the coverage report.
+
+**Housekeeping**
+- Add "rebuild universe, crosswalk, trees and coverage reports" to the data-refresh checklist.
+
+## History
+
+- **2026-08-14** Tree layer built: Upham DNA-only MCC, 199 of 214 project species.
+- **2026-08-24** Completed100 sample added: 204 of 214.
+- **2026-11-19** Rebuilt at full coverage on the species universe; MDD name layer; tree C and
+  the comparison script added; shared resolver; `$EVOM1_REPO` / `$EVOM1_OUT`. The new tree A
+  pruned to the old 199 tips is identical to the old tree. Seven old names no longer label a
+  tip: the dog, pig and blesbok (their parent species now hold the tips) and *Mustela vison*,
+  *Myoxus glis*, *Spalax ehrenbergi*, *Tayassu tajacu* (the current names *Neogale vison*,
+  *Glis glis*, *Nannospalax ehrenbergi*, *Pecari tajacu* are separate labels in the data and
+  hold them). Four alias variants now carry the app's canonical spelling.

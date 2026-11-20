@@ -25,7 +25,11 @@ multiPhylo sample for PGLS-across-trees sensitivity analyses.
         line number -> source tree ID (e.g. tree_9002), the provenance link back
         to Upham's posterior
     __merging_trees/tree_coverage_report_completed100.csv
-        one row per project species, same columns as tree_coverage_report.csv
+        one row per universe name, same columns as tree_coverage_report.csv
+    __merging_trees/tree_tip_provenance_completed100.csv
+        one row per tip: sequenced, or imputed_by_Upham_etal_2019 (in the completed
+        set but not in the DNA-only tree). Any analysis on these trees must be able
+        to drop the imputed tips.
 
 NOTHING IS GRAFTED OR IMPUTED LOCALLY. The completed set's imputed placements are
 Upham et al.'s own, published per tree. All 100 trees share one tip set (verified),
@@ -42,14 +46,17 @@ import sys
 
 sys.setrecursionlimit(200000)
 
-REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import resolve_tips as RT  # noqa: E402
+
+REPO = RT.REPO          # read root: $EVOM1_REPO, default this repo
 MERGE = os.path.join(REPO, "__merging_trees")
 SOURCE = os.path.join(REPO, "Upham_etal_2019",
                       "Completed100_topoCons_NDexp", "output.nex")
 
-sys.path.insert(0, MERGE)
 from build_mammal_tree import (Node, read_newick, write_newick, fmt_len,  # noqa: E402
-                               tips, keep_tips, depths, tip_binomial)
+                               tips, keep_tips, depths, tip_binomial,
+                               find_source_tree)
 
 
 def parse_newick_string(text):
@@ -157,100 +164,15 @@ def main():
     tipset = frozenset(t.label for t in all_tips)
     print(f"  tips/tree   : {len(all_tips)}")
 
-    by_binom = {}
-    for t in all_tips:
-        by_binom.setdefault(tip_binomial(t.label).lower(), t.label)
-
     # ---- resolve species once, exactly as build_mammal_tree does ----------------
-    with open(os.path.join(MERGE, "tree_tip_crosswalk.csv"),
-              newline="", encoding="utf-8-sig") as f:
-        xw = list(csv.DictReader(f))
+    xw = RT.read_csv(RT.pipeline_file("tree_tip_crosswalk.csv"))
+    universe = RT.read_csv(RT.pipeline_file("species_universe.csv"))
+    report, keep, counts, order = RT.resolve_tips(
+        xw, [t.label for t in all_tips], universe)
 
-    order, grouped = [], {}
-    for r in xw:
-        a = r["accepted_name"]
-        if a not in grouped:
-            grouped[a] = []
-            order.append(a)
-        grouped[a].append(r)
-
-    resolved = {}
-    for acc in order:
-        rows = sorted(grouped[acc], key=lambda r: int(r["candidate_rank"] or 10**6))
-        auto = [r for r in rows if r["auto_match"] == "TRUE" and r["candidate_name"]]
-        hit = None
-        for r in auto:
-            lab = by_binom.get(r["candidate_name"].lower())
-            if lab:
-                hit = (r, lab)
-                break
-        resolved[acc] = hit
-
-    def claim_priority(acc):
-        hit = resolved[acc]
-        if hit is None:
-            return (2, acc)
-        return (1 if hit[0]["candidate_source"] == "subspecies_parent" else 0, acc)
-
-    report, keep, dup_guard, counts = [], [], {}, {}
-    for acc in sorted(order, key=claim_priority):
-        rows = sorted(grouped[acc], key=lambda r: int(r["candidate_rank"] or 10**6))
-        fam = rows[0].get("family_expected", "")
-        orderr = rows[0].get("order_expected", "")
-        review = [r for r in rows if r["auto_match"] == "FALSE" and r["candidate_name"]]
-        auto = [r for r in rows if r["auto_match"] == "TRUE" and r["candidate_name"]]
-        placeholder = any(r["candidate_source"] == "none_possible" for r in rows)
-        hit = resolved[acc]
-
-        if hit:
-            r, lab = hit
-            src_kind = r["candidate_source"]
-            status = ("matched_direct" if src_kind == "accepted_name"
-                      else "matched_subspecies_parent"
-                      if src_kind == "subspecies_parent" else "matched_synonym")
-            if lab in dup_guard:
-                if src_kind == "subspecies_parent":
-                    status = "subspecies_of_matched_species"
-                    note = (f"parent species tip is held by {dup_guard[lab]}; a "
-                            "species-level tree cannot separate them, so this row is "
-                            "excluded from PGLS rather than duplicating the tip")
-                else:
-                    status = "conflict_tip_already_used"
-                    note = (f"tip already assigned to {dup_guard[lab]}; "
-                            "resolve in tree_tip_crosswalk.csv before use")
-                matched_tip, via = "", ""
-            else:
-                dup_guard[lab] = acc
-                keep.append((lab, acc))
-                matched_tip, via = lab, r["candidate_name"]
-                note = "" if status == "matched_direct" else r.get("note", "")
-        else:
-            matched_tip, via = "", ""
-            if placeholder:
-                status = "unresolvable_placeholder"
-                note = "genus-level name: no single tip can represent it"
-            elif review:
-                status = "absent_but_review_lead"
-                note = ("not on tree under any auto_match name, but these review-only "
-                        "candidates exist: "
-                        + "; ".join(
-                            f"{r['candidate_name']}"
-                            + (" [ON TREE]" if r["candidate_name"].lower() in by_binom
-                               else " [not on tree either]")
-                            for r in review))
-            else:
-                status = "absent_from_tree"
-                note = "no candidate spelling occurs in the source tree"
-
-        counts[status] = counts.get(status, 0) + 1
-        report.append({
-            "accepted_name": acc, "status": status, "matched_tip": matched_tip,
-            "matched_via": via,
-            "candidate_source": hit[0]["candidate_source"] if hit else "",
-            "family_expected": fam, "order_expected": orderr,
-            "n_auto_candidates": len(auto), "n_review_candidates": len(review),
-            "note": note,
-        })
+    # which tips have sequence data: the tip set of the DNA-only tree
+    dna_src = find_source_tree(None)
+    sequenced = {tip_binomial(t.label).lower() for t in tips(read_newick(dna_src))}
 
     keep_labels = [lab for lab, _ in keep]
     if len(keep_labels) < 4:
@@ -277,33 +199,35 @@ def main():
             worst_spread, worst_depth = spread, max(d)
         ids.append({"line": k, "tree_id": tree_id})
 
-    with open(os.path.join(REPO, "_keys", "mammal_trees_sample100.nwk"),
+    with open(RT.out_path("_keys", "mammal_trees_sample100.nwk"),
               "w", encoding="utf-8", newline="\n") as f:
         f.write("\n".join(app_lines) + "\n")
-    with open(os.path.join(MERGE, "mammal_trees_sample100_sourcelabels.nwk"),
+    with open(RT.out_path("__merging_trees", "mammal_trees_sample100_sourcelabels.nwk"),
               "w", encoding="utf-8", newline="\n") as f:
         f.write("\n".join(src_lines) + "\n")
-    with open(os.path.join(MERGE, "tree_sample_ids.csv"),
+    with open(RT.out_path("__merging_trees", "tree_sample_ids.csv"),
               "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=["line", "tree_id"], lineterminator="\n")
         w.writeheader()
         w.writerows(ids)
 
-    rank = {a: i for i, a in enumerate(order)}
-    report.sort(key=lambda r: rank[r["accepted_name"]])
-    cols = ["accepted_name", "status", "matched_tip", "matched_via",
-            "candidate_source", "family_expected", "order_expected",
-            "n_auto_candidates", "n_review_candidates", "note"]
-    with open(os.path.join(MERGE, "tree_coverage_report_completed100.csv"),
-              "w", newline="", encoding="utf-8") as f:
-        w = csv.DictWriter(f, fieldnames=cols, quoting=csv.QUOTE_MINIMAL,
-                           lineterminator="\n")
-        w.writeheader()
-        w.writerows(report)
+    RT.write_report(report, RT.out_path("__merging_trees",
+                                        "tree_coverage_report_completed100.csv"))
 
-    print(f"\nmatched {len(keep_labels)} / {len(order)} project species")
+    prov = sorted(((acc, lab) for lab, acc in keep), key=lambda t: t[0].encode("utf-8"))
+    with open(RT.out_path("__merging_trees", "tree_tip_provenance_completed100.csv"),
+              "w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f, quoting=csv.QUOTE_MINIMAL, lineterminator="\n")
+        w.writerow(["accepted_name", "tip_label", "source_tip", "provenance"])
+        for acc, lab in prov:
+            w.writerow([acc, acc.replace(" ", "_"), lab,
+                        "sequenced" if tip_binomial(lab).lower() in sequenced
+                        else "imputed_by_Upham_etal_2019"])
+
+    print(f"\nmatched {len(keep_labels)} / {len(order) - counts.get('out_of_scope', 0)} "
+          f"in-scope names ({len(order)} universe names)")
     for k in sorted(counts):
-        print(f"  {counts[k]:4d}  {k}")
+        print(f"  {counts[k]:5d}  {k}")
     ultra = worst_spread <= 1e-3 * worst_depth
     print(f"\nworst root-to-tip spread across {len(trees_raw)} trees: "
           f"{worst_spread:.6g}  "
@@ -312,6 +236,7 @@ def main():
     print("wrote __merging_trees/mammal_trees_sample100_sourcelabels.nwk")
     print("wrote __merging_trees/tree_sample_ids.csv")
     print("wrote __merging_trees/tree_coverage_report_completed100.csv")
+    print("wrote __merging_trees/tree_tip_provenance_completed100.csv")
     return 0
 
 

@@ -9,8 +9,9 @@ Pure standard library -- no ape, no dendropy, no numpy.
 
 WHAT IT DOES
   1. reads a published source tree (Newick or NEXUS-embedded Newick)
-  2. resolves each project species to a real tip via tree_tip_crosswalk.csv,
-     using only candidates with auto_match = TRUE
+  2. resolves each name in species_universe.csv to a real tip via
+     tree_tip_crosswalk.csv, using only candidates with auto_match = TRUE
+     (resolve_tips.py -- the mirror of resolve_tips.R)
   3. prunes the tree to the matched tips (collapsing the resulting single-child
      nodes and summing their branch lengths, i.e. ape::keep.tip semantics)
   4. writes
@@ -19,11 +20,14 @@ WHAT IT DOES
                                                     __ShinyApp/app.R matches against
        __merging_trees/mammal_tree_sourcelabels.nwk same topology, PUBLISHED tip
                                                     labels untouched
-       __merging_trees/tree_coverage_report.csv     one row per project species
+       __merging_trees/tree_coverage_report.csv     one row per universe name
 
-NOTHING IS GRAFTED OR IMPUTED. Species absent from the source tree are reported as
-absent and excluded, per __ShinyApp/PHYLO_SETUP.md and the deprecation of
-_keys/extend_phylo.R.
+NOTHING IS GRAFTED OR IMPUTED HERE. Every tip is a sequenced species in the source
+tree; species absent from it are reported as absent. The wider products are
+separate builds: build_mammal_trees_sample (Upham's completed trees) and
+build_mammal_tree_augmented.R (locally added branches; R only, no mirror).
+
+Paths: reads $EVOM1_REPO (default: this repo), writes $EVOM1_OUT (default: same).
 
 Usage (from repo root):
     python3 __merging_trees/build_mammal_tree.py
@@ -37,7 +41,10 @@ import os
 import re
 import sys
 
-REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import resolve_tips as RT  # noqa: E402
+
+REPO = RT.REPO          # read root: $EVOM1_REPO, default this repo
 MERGE = os.path.join(REPO, "__merging_trees")
 
 TREE_EXTS = ("nwk", "tre", "newick", "nex", "tree")
@@ -145,11 +152,15 @@ def read_newick(path):
 
 
 def fmt_len(x):
-    """Match R's write.tree number formatting closely enough to diff cleanly."""
+    """Match ape::write.tree exactly: it formats with sprintf("%.10g") (digits = 10).
+
+    Until 2026-11 this used %.15g, which agreed with ape only while few branches
+    were merged by pruning; at full coverage the summed lengths differ in the
+    11th digit and the two builds stopped being byte-identical.
+    """
     if x is None:
         return None
-    s = "%.15g" % x
-    return s
+    return "%.10g" % x
 
 
 def write_newick(root, path):
@@ -262,117 +273,16 @@ def main():
     src = find_source_tree(args.tree)
     root = read_newick(src)
     all_tips = tips(root)
-    by_binom = {}
-    for t in all_tips:
-        by_binom.setdefault(tip_binomial(t.label).lower(), t.label)
     print(f"source tree : {os.path.relpath(src, REPO)}")
     print(f"  tips      : {len(all_tips)}")
 
-    with open(os.path.join(MERGE, "tree_tip_crosswalk.csv"),
-              newline="", encoding="utf-8-sig") as f:
-        xw = list(csv.DictReader(f))
-
-    order = []
-    grouped = {}
-    for r in xw:
-        a = r["accepted_name"]
-        if a not in grouped:
-            grouped[a] = []
-            order.append(a)
-        grouped[a].append(r)
-
-    report, keep, dup_guard = [], [], {}
-    counts = {}
-
-    # Resolve every species against the tree first, WITHOUT claiming tips, so that
-    # tip assignment can be done in a deterministic priority order below.
-    resolved = {}
-    for acc in order:
-        rows = sorted(grouped[acc],
-                      key=lambda r: int(r["candidate_rank"] or 10**6))
-        auto = [r for r in rows if r["auto_match"] == "TRUE" and r["candidate_name"]]
-        hit = None
-        for r in auto:
-            lab = by_binom.get(r["candidate_name"].lower())
-            if lab:
-                hit = (r, lab)
-                break
-        resolved[acc] = hit
-
-    # Priority: a species matching a tip in its own right always beats a SUBSPECIES
-    # falling back to that same tip. Otherwise "Cryptomys hottentotus" vs its two
-    # subspecies would be decided by row order in the CSV.
-    def claim_priority(acc):
-        hit = resolved[acc]
-        if hit is None:
-            return (2, acc)
-        return (1 if hit[0]["candidate_source"] == "subspecies_parent" else 0, acc)
-
-    for acc in sorted(order, key=claim_priority):
-        rows = sorted(grouped[acc],
-                      key=lambda r: int(r["candidate_rank"] or 10**6))
-        fam = rows[0].get("family_expected", "")
-        orderr = rows[0].get("order_expected", "")
-
-        review = [r for r in rows if r["auto_match"] == "FALSE" and r["candidate_name"]]
-        auto = [r for r in rows if r["auto_match"] == "TRUE" and r["candidate_name"]]
-        placeholder = any(r["candidate_source"] == "none_possible" for r in rows)
-        hit = resolved[acc]
-
-        if hit:
-            r, lab = hit
-            src_kind = r["candidate_source"]
-            status = ("matched_direct" if src_kind == "accepted_name"
-                      else "matched_subspecies_parent"
-                      if src_kind == "subspecies_parent" else "matched_synonym")
-            # two project species must never share one tip
-            if lab in dup_guard:
-                if src_kind == "subspecies_parent":
-                    status = "subspecies_of_matched_species"
-                    note = (f"parent species tip is held by {dup_guard[lab]}; a "
-                            "species-level tree cannot separate them, so this row is "
-                            "excluded from PGLS rather than duplicating the tip")
-                else:
-                    status = "conflict_tip_already_used"
-                    note = (f"tip already assigned to {dup_guard[lab]}; "
-                            "resolve in tree_tip_crosswalk.csv before use")
-                matched_tip, via = "", ""
-            else:
-                dup_guard[lab] = acc
-                keep.append((lab, acc))
-                matched_tip, via = lab, r["candidate_name"]
-                note = "" if status == "matched_direct" else r.get("note", "")
-        else:
-            matched_tip, via = "", ""
-            if placeholder:
-                status = "unresolvable_placeholder"
-                note = "genus-level name: no single tip can represent it"
-            elif review:
-                status = "absent_but_review_lead"
-                note = ("not on tree under any auto_match name, but these review-only "
-                        "candidates exist: "
-                        + "; ".join(
-                            f"{r['candidate_name']}"
-                            + (" [ON TREE]" if r["candidate_name"].lower() in by_binom
-                               else " [not on tree either]")
-                            for r in review))
-            else:
-                status = "absent_from_tree"
-                note = "no candidate spelling occurs in the source tree"
-
-        counts[status] = counts.get(status, 0) + 1
-        report.append({
-            "accepted_name": acc,
-            "status": status,
-            "matched_tip": matched_tip,
-            "matched_via": via,
-            "candidate_source": hit[0]["candidate_source"] if hit else "",
-            "family_expected": fam,
-            "order_expected": orderr,
-            "n_auto_candidates": len(auto),
-            "n_review_candidates": len(review),
-            "note": note,
-        })
+    xw = RT.read_csv(RT.pipeline_file("tree_tip_crosswalk.csv"))
+    universe = RT.read_csv(RT.pipeline_file("species_universe.csv"))
+    # Upham et al.'s full species list: a species they recognise but did not
+    # sequence is absent from this tree, never bridged to another tip.
+    recognised = RT.upham_completed_taxa()
+    report, keep, counts, order = RT.resolve_tips(
+        xw, [t.label for t in all_tips], universe, recognised)
 
     # ---- prune ----------------------------------------------------------------
     keep_labels = [lab for lab, _ in keep]
@@ -380,36 +290,24 @@ def main():
         sys.exit(f"ERROR: only {len(keep_labels)} species matched; PGLS needs >= 4.")
 
     pruned_src = keep_tips(read_newick(src), keep_labels)
-    write_newick(pruned_src, os.path.join(MERGE, "mammal_tree_sourcelabels.nwk"))
+    write_newick(pruned_src, RT.out_path("__merging_trees", "mammal_tree_sourcelabels.nwk"))
 
     pruned = keep_tips(read_newick(src), keep_labels)
     relab = {lab: acc.replace(" ", "_") for lab, acc in keep}
     for t in tips(pruned):
         t.label = relab.get(t.label, t.label)
-    write_newick(pruned, os.path.join(REPO, "_keys", "mammal_tree.nwk"))
+    write_newick(pruned, RT.out_path("_keys", "mammal_tree.nwk"))
 
     d = depths(pruned)
     spread = (max(d) - min(d)) if d else 0.0
     ultra = spread <= 1e-3 * (max(d) if d else 1.0)
 
-    # ---- report -------------------------------------------------------------
-    # report follows species_reference.csv order, not the internal claim order
-    rank = {a: i for i, a in enumerate(order)}
-    report.sort(key=lambda r: rank[r["accepted_name"]])
+    RT.write_report(report, RT.out_path("__merging_trees", "tree_coverage_report.csv"))
 
-    cols = ["accepted_name", "status", "matched_tip", "matched_via",
-            "candidate_source", "family_expected", "order_expected",
-            "n_auto_candidates", "n_review_candidates", "note"]
-    with open(os.path.join(MERGE, "tree_coverage_report.csv"),
-              "w", newline="", encoding="utf-8") as f:
-        w = csv.DictWriter(f, fieldnames=cols, quoting=csv.QUOTE_MINIMAL,
-                           lineterminator="\n")
-        w.writeheader()
-        w.writerows(report)
-
-    print(f"\nmatched {len(keep_labels)} / {len(order)} project species")
+    print(f"\nmatched {len(keep_labels)} / {len(order) - counts.get('out_of_scope', 0)} "
+          f"in-scope names ({len(order)} universe names)")
     for k in sorted(counts):
-        print(f"  {counts[k]:4d}  {k}")
+        print(f"  {counts[k]:5d}  {k}")
     print(f"\nroot-to-tip spread: {spread:.6g}  "
           f"({'ultrametric' if ultra else 'NOT ultrametric -- check the source tree'})")
     print("wrote _keys/mammal_tree.nwk")

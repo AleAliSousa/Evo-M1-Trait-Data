@@ -166,7 +166,57 @@ papers <- tribble(
   # Tschudin 1998 (PhD thesis) Table 2.5: per-specimen cetacean volumes, cm3 ->
   # mm3 in the reshape below; 44 specimens, 8 species. This is the table
   # Castillo-Morales et al. 2016 took the dolphin row from.
-  "Tschudin__1998_Table2.5",              "Tschudin",           1998
+  "Tschudin__1998_Table2.5",              "Tschudin",           1998,
+  # --- 2026-11-19 intake: five Stephan-method volume sources whose extraction was
+  # already finished (defined, species-resolved) but which were never added here.
+  # Each is an independent series (own specimens, own lab), so each is its own
+  # Tier-2 team and cross-team averaging applies -- none is Tier 1, because Tier 1
+  # is defined by the C&O Vogt specimens (README__merging.md) and none of these
+  # measured that collection (the Baron_etal_1996 bat-book precedent: same school,
+  # different animals -> own Tier-2 team).
+  # Kruska 2014 Tables 2-3: per-specimen planimetric volumes of 24 structures,
+  # fresh (unfixed), mm3 as printed; Table 2 = wild cavy (Cavia aperea), Table 3 =
+  # domestic guinea pig (Cavia porcellus). Same author/lab lineage as Kruska 1980
+  # (camelids + cavies share no species with the 2014 cavies), so both tables join
+  # the existing Tier-2 team "Kruska"; per-specimen rows collapse to species means
+  # in step 6. The TSVs are LONG (structure-rows), so a reshape branch in
+  # paper_long() pivots them. Only the pure (net) brain volume is mapped to
+  # Total_brain_net_volume_Vol.mm3; the printed gross total (pure + rest tissue +
+  # ventricles) and the rest-tissue remainder stay unmapped, as do the composite
+  # "Basal nuclei" and the cochlear nucleus (no canonical term).
+  "Kruska__2014_Table2",                  "Kruska",             2014,
+  "Kruska__2014_Table3",                  "Kruska",             2014,
+  # Stephan & Pirlot 1970 Table 1: net volumes of 12 structures in 18 bat species,
+  # Pirlot's own specimens (not the Vogt collection) -> own Tier-2 team "Pirlot".
+  # Values are corrected to fresh standard (Pirlot & Stephan 1970 standard weights
+  # / 1.036). The combined palaeocortex + amygdala column maps to the existing
+  # combined canonical Palaeocortex_plus_amygdala_Vol.mm3 (the same Stephan-school
+  # complex Stephan et al. 1970 Tables 4-6 already carry); it is NOT split.
+  "Stephan_Pirlot_1970_Table1",           "Pirlot",             1970,
+  # Ebinger 1974 Tables 3-4: per-specimen serial-section volumes (corrected to
+  # fresh, specific gravity 1.036) for 10 sheep -- wild mouflon and domestic
+  # sheep, both resolved to Ovis aries by the _keys spokes, so the 10 specimens
+  # average into one Ovis aries row within this team. Only the PURE brain volume
+  # maps to Total_brain_net_volume_Vol.mm3; the printed gross total (pure +
+  # remaining parts + ventricles) stays unmapped, keeping the total-vs-net
+  # distinction the canonical file draws for this paper. The composite columns
+  # (basal nuclei + commissura anterior; limbic structures) and the septal
+  # components (septal nuclei; diagonal band) stay unmapped.
+  "Ebinger__1974_Tables3-4",              "Ebinger",            1974,
+  # Haug 1987 Table 2: primary whole-brain volumes (printed cm3, already x1000 in
+  # the TSV) for 42 rows / 36 species or species groups, from Haug's own register
+  # -> own Tier-2 team "Haug". Printed names resolve through the Haug__1987 rows
+  # staged in _keys/General/species_key.csv; five names pass through unresolved
+  # by design (Delphinus delphinus and the genus-level Sorex, Wallabia,
+  # Tachyglossus and Lemur div. rows).
+  "Haug__1987_TABLE2",                    "Haug",               1987
+  # NOT wired: Schleifenbaum__1973_Tables1-2 (brain mass + part volumes of
+  # poodles and wolves). Its folder README defers merge wiring until a
+  # developmental-age policy is explicit -- all 12 sectioned profiles are
+  # neonatal/juvenile (neonate to 7 months), and this merge has no age dimension,
+  # so wiring it now would silently pool juvenile brains into adult species
+  # means. A term file is prepared with this intake but is not stacked until the
+  # policy exists.
 )
 expanded_only_items <- c(
   "Sherwood_etal_2004_TABLEI", "Barks_etal_2014_TABLE1", "Barks_etal_2014_Fig4A",
@@ -437,6 +487,41 @@ paper_long <- function(row) {
            "now has multiple specimens per species; add an explicit aggregation before the pivot.",
            call. = FALSE)
     df <- df %>% tidyr::pivot_wider(names_from = code, values_from = value)
+  }
+  if (it %in% c("Kruska__2014_Table2", "Kruska__2014_Table3")) {
+    # LONG source (the Campos_Welker precedent): one row per (specimen, structure),
+    # with the specimen-level totals repeated on every structure row. Pivot the
+    # structures wide and take the totals once per specimen, then let the generic
+    # term-map path below apply unchanged. Species is constant per table -- Table 2
+    # is the wild cavy, Table 3 the domestic guinea pig (printed "Cavia aperea f.
+    # porcellus"; the hub accepted name is Cavia porcellus). Brain weight is printed
+    # in g and the merge stores mg, so it is converted here and term-mapped as
+    # brain_mass_mg. The printed gross total volume (pure + rest tissue + ventricles)
+    # and the rest-tissue remainder are NOT carried into the wide frame: this merge's
+    # whole-brain variable is the net (pure tissue) volume, and the gross total has
+    # no canonical term (the Baron_etal_1996_Table8 precedent maps net + ventricles
+    # + rests only). "Basal nuclei" and "Nucleus cochlearis" pivot wide with the rest
+    # but are not term-mapped (composite / no canonical term), so the generic path
+    # drops them.
+    sp <- if (it == "Kruska__2014_Table2") "Cavia aperea" else "Cavia porcellus"
+    chk <- df %>% group_by(specimen_id) %>%
+      summarise(n_w = n_distinct(num(total_brain_weight_g)),
+                n_p = n_distinct(num(pure_brain_tissue_mm3)),
+                n_v = n_distinct(num(ventricle_mm3)), .groups = "drop")
+    if (any(chk$n_w > 1 | chk$n_p > 1 | chk$n_v > 1))
+      stop("paper_long('", it, "'): a specimen carries more than one distinct total -- ",
+           "the TSV no longer repeats specimen totals per structure row; revisit this branch.",
+           call. = FALSE)
+    spec <- df %>% group_by(specimen_id) %>%
+      summarise(brain_mass_mg         = first(num(total_brain_weight_g)) * 1000,
+                pure_brain_volume_mm3 = first(num(pure_brain_tissue_mm3)),
+                ventricle_mm3         = first(num(ventricle_mm3)),
+                .groups = "drop")
+    wide <- df %>% transmute(specimen_id, structure = structure_as_printed,
+                             value = num(volume_mm3)) %>%
+      tidyr::pivot_wider(names_from = structure, values_from = value)
+    df <- spec %>% left_join(wide, by = "specimen_id") %>%
+      mutate(Species = sp) %>% select(-specimen_id)
   }
   if (grepl("^Baron_etal_1996_Table", it)) {
     # The two HOLD gates on the Chiroptera block are both discharged by the paper's own frozen

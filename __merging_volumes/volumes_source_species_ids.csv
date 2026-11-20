@@ -1390,6 +1390,8 @@ Bush_Allman_2004_b_TABLE1,Semnopithecus entellus,Bush_Allman_2004_b,Semnopithecu
 Bush_Allman_2004_b_TABLE1,Tarsius syrichta,Bush_Allman_2004_b,Carlito syrichta,synonym:NCBI,FALSE,paper,FALSE
 Campos_Welker_1976_Table1,Cavia porcellus,Campos_Welker_1976,Cavia porcellus,verbatim,FALSE,variant,FALSE
 Campos_Welker_1976_Table1,Hydrochoerus hydrochoerus,Campos_Welker_1976,Hydrochoerus hydrochaeris,spelling,FALSE,paper,FALSE
+Ebinger__1974_Tables3-4,Ovis ammon f. aries,Ebinger__1974,Ovis aries,synonym:MDD,FALSE,paper,FALSE
+Ebinger__1974_Tables3-4,Ovis ammon musimon,Ebinger__1974,Ovis aries,subspecies_assign,FALSE,paper,FALSE
 Frahm_Zilles_1994_Table1,Alouatta seniculus,Frahm_Zilles_1994,Alouatta seniculus,verbatim,FALSE,paper,FALSE
 Frahm_Zilles_1994_Table1,Aotus trivirgatus,Frahm_Zilles_1994,Aotus trivirgatus,verbatim,FALSE,paper,FALSE
 Frahm_Zilles_1994_Table1,Ateles geoffroyi,Frahm_Zilles_1994,Ateles geoffroyi,verbatim,FALSE,paper,FALSE
@@ -1550,8 +1552,52 @@ Frahm_etal_1998_Table1,Saguinus midas,Frahm_etal_1998,Saguinus midas,verbatim,FA
 Frahm_etal_1998_Table1,Saguinus oedipus,Frahm_etal_1998,Saguinus oedipus,verbatim,FALSE,paper,FALSE
 Frahm_etal_1998_Table1,Tarsius spec.,Frahm_etal_1998,Tarsius sp.,spelling,FALSE,paper,FALSE
 Hakeem_etal_2005_Table2,Loxodonta africana,Hakeem_etal_2005,Loxodonta africana,verbatim,FALSE,variant,FALSE
+Haug__1987_TABLE2,Aotes trivirigatus,Haug__1987,Aotus trivirgatus,spelling,FALSE,paper,FALSE
+Haug__1987_TABLE2,Ateles ater,Haug__1987,Ateles paniscus,synonym:literature,FALSE,paper,FALSE
+Haug__1987_TABLE2,Callithrix jacchus,Haug__1987,Callithrix jacchus,verbatim,FALSE,paper,FALSE
+Haug__1987_TABLE2,Canis familiaris,Haug__1987,Canis lupus familiaris,synonym:legacy_key,FALSE,paper,FALSE
+Haug__1987_TABLE2,Canis latrans,Haug__1987,Canis latrans,verbatim,FALSE,paper,FALSE
+Haug__1987_TABLE2,Cavia porcellus,Haug__1987,Cavia porcellus,verbatim,FALSE,paper,FALSE
+Haug__1987_TABLE2,Cebus albifrons,Haug__1987,Cebus albifrons,verbatim,FALSE,paper,FALSE
+Haug__1987_TABLE2,Cercopithecus aetiops,Haug__1987,Chlorocebus aethiops,hypothesis,FALSE,paper,FALSE
+Haug__1987_TABLE2,Cercopithecus talapoin,Haug__1987,Miopithecus talapoin,synonym:legacy_key,FALSE,paper,FALSE
+Haug__1987_TABLE2,Delphinus delphinus,Haug__1987,Delphinus delphis,spelling,FALSE,variant,FALSE
+Haug__1987_TABLE2,Didelphis virginiana,Haug__1987,Didelphis virginiana,verbatim,FALSE,paper,FALSE
+Haug__1987_TABLE2,Equus caballus,Haug__1987,Equus caballus,verbatim,FALSE,paper,FALSE
+Haug__1987_TABLE2,Erinaceus europaeus,Haug__1987,Erinaceus europaeus,verbatim,FALSE,paper,FALSE
+Haug__1987_TABLE2,Felis domestica,Haug__1987,Felis catus,synonym:legacy_key,FALSE,paper,FALSE
+Haug__1987_TABLE2,Globicephala macrorryncha,Haug__1987,Globicephala macrorhynchus,spelling,FALSE,paper,FALSE
+Haug__1987_TABLE2,Gorilla gorilla,Haug__1987,Gorilla gorilla,verbatim,FALSE,paper,FALSE
+Haug__1987_TABLE2,Homo sapiens,Haug__1987,Homo sapiens,verbatim,FALSE,paper,FALSE
+Haug__1987_TABLE2,Lagothrix lagotricha,Haug__1987,Lagothrix lagothricha,spelling,FALSE,paper,FALSE
+Haug__1987_TABLE2,Lemur div.,Haug__1987,Lemur div.,unresolved,FALSE,unresolved,TRUE
+Haug__1987_TABLE2,Lemur ruficaudatus,Haug__1987,Lepilemur ruficaudatus,synonym:literature,FALSE,paper,FALSE
+Haug__1987_TABLE2,Loxodonta africana,Haug__1987,Loxodonta africana,verbatim,FALSE,paper,FALSE
+Haug__1987_TABLE2,Macaca mulatta,Haug__1987,Macaca mulatta,verbatim,FALSE,paper,FALSE
+Haug__1987_TABLE2,Marmosa mitis,Haug__1987,Marmosa mitis,verbatim,FALSE,paper,FALSE
+Haug__1987_TABLE2,Microcebus murinus,Haug__1987,Microcebus murinus,verbatim,FALSE,paper,FALSE
+Haug__1987_TABLE2,Mus musculus,Haug__1987,Mus musculus,verbatim,FALSE,paper,FALSE
+Haug__1987_TABLE2,Oryctolagus cuniculus,Haug__1987,Oryctolagus cuniculus,verbatim,FALSE,paper,FALSE
+Haug__1987_TABLE2,Ovis aries,Haug__1987,Ovis aries,verbatim,FALSE,paper,FALSE
+Haug__1987_TABLE2,Pan troglodytes,Haug__1987,Pan troglodytes,verbatim,FALSE,paper,FALSE
+Haug__1987_TABLE2,Panthera leo,Haug__1987,Panthera leo,verbatim,FALSE,paper,FALSE
+Haug__1987_TABLE2,Papio duguera,Haug__1987,Papio anubis,synonym:literature,FALSE,paper,FALSE
+Haug__1987_TABLE2,Phocaena phocaena,Haug__1987,Phocoena phocoena,spelling,FALSE,paper,FALSE
+Haug__1987_TABLE2,Procyon lotor,Haug__1987,Procyon lotor,verbatim,FALSE,paper,FALSE
+Haug__1987_TABLE2,Pseudorca crassidens,Haug__1987,Pseudorca crassidens,verbatim,FALSE,paper,FALSE
+Haug__1987_TABLE2,Rattus norvegicus,Haug__1987,Rattus norvegicus,verbatim,FALSE,paper,FALSE
+Haug__1987_TABLE2,Saimiri sciurius,Haug__1987,Saimiri sciureus,spelling,FALSE,paper,FALSE
+Haug__1987_TABLE2,Sorex,Haug__1987,Sorex sp.,lump,FALSE,paper,FALSE
+Haug__1987_TABLE2,Tachyglossus,Haug__1987,Tachyglossus,unresolved,FALSE,unresolved,TRUE
+Haug__1987_TABLE2,Talpa europaeus,Haug__1987,Talpa europaea,spelling,FALSE,paper,FALSE
+Haug__1987_TABLE2,Tupaia glis,Haug__1987,Tupaia glis,verbatim,FALSE,paper,FALSE
+Haug__1987_TABLE2,Tursiops truncatus,Haug__1987,Tursiops truncatus,verbatim,FALSE,paper,FALSE
+Haug__1987_TABLE2,Vulpes vulpes,Haug__1987,Vulpes vulpes,verbatim,FALSE,paper,FALSE
+Haug__1987_TABLE2,Wallabia,Haug__1987,Wallabia,unresolved,FALSE,unresolved,TRUE
 Kruska__1980_Tabelle2,Lama guanicoe,Kruska__1980,Lama guanicoe,verbatim,FALSE,variant,FALSE
-Kruska__1980_Tabelle2,Vicugna pacos,Kruska__1980,Vicugna pacos,unresolved,FALSE,unresolved,TRUE
+Kruska__1980_Tabelle2,Vicugna pacos,Kruska__1980,Vicugna pacos,verbatim,FALSE,variant,FALSE
+Kruska__2014_Table2,Cavia aperea,Kruska__2014,Cavia aperea,synonym:NCBI,FALSE,variant,FALSE
+Kruska__2014_Table3,Cavia porcellus,Kruska__2014,Cavia porcellus,verbatim,FALSE,variant,FALSE
 Kverkova_etal_2018_TableS1,Bathyergus suillus,Kverkova_etal_2018,Bathyergus suillus,verbatim,FALSE,paper,FALSE
 Kverkova_etal_2018_TableS1,Cryptomys hottentotus,Kverkova_etal_2018,Cryptomys hottentotus,verbatim,FALSE,paper,FALSE
 Kverkova_etal_2018_TableS1,Cryptomys natalensis,Kverkova_etal_2018,Cryptomys hottentotus natalensis,synonym:NCBI,FALSE,paper,FALSE
@@ -1957,6 +2003,24 @@ Smaers_etal_2011_SupplementaryTable2,Papio anubis,Smaers_etal_2011,Papio anubis,
 Smaers_etal_2011_SupplementaryTable2,Pithecia monachus,Smaers_etal_2011,Pithecia monachus,verbatim,FALSE,paper,FALSE
 Smaers_etal_2011_SupplementaryTable2,Pongo pygmaeus,Smaers_etal_2011,Pongo sp.,lump,FALSE,paper,FALSE
 Smaers_etal_2011_SupplementaryTable2,Procolobus badius,Smaers_etal_2011,Piliocolobus badius,synonym:legacy_override,FALSE,paper,FALSE
+Stephan_Pirlot_1970_Table1,Artibeus jamaicensis,Stephan_Pirlot_1970,Artibeus jamaicensis,verbatim,FALSE,paper,FALSE
+Stephan_Pirlot_1970_Table1,Artibeus lituratus,Stephan_Pirlot_1970,Artibeus lituratus,verbatim,FALSE,paper,FALSE
+Stephan_Pirlot_1970_Table1,Asellia tridens,Stephan_Pirlot_1970,Asellia tridens,verbatim,FALSE,paper,FALSE
+Stephan_Pirlot_1970_Table1,Carollia perspicillata,Stephan_Pirlot_1970,Carollia perspicillata,synonym:NCBI,FALSE,variant,FALSE
+Stephan_Pirlot_1970_Table1,Chaerophon leucostigma,Stephan_Pirlot_1970,Mops pumilus,synonym:MDD,FALSE,paper,FALSE
+Stephan_Pirlot_1970_Table1,Cynopterus brachyotis,Stephan_Pirlot_1970,Cynopterus brachyotis,verbatim,FALSE,paper,FALSE
+Stephan_Pirlot_1970_Table1,Cynopterus horsfieldii,Stephan_Pirlot_1970,Cynopterus horsfieldii,verbatim,FALSE,paper,FALSE
+Stephan_Pirlot_1970_Table1,Desmodus rotundus,Stephan_Pirlot_1970,Desmodus rotundus,synonym:NCBI,FALSE,variant,FALSE
+Stephan_Pirlot_1970_Table1,Eonycteris spelaea,Stephan_Pirlot_1970,Eonycteris spelaea,verbatim,FALSE,paper,FALSE
+Stephan_Pirlot_1970_Table1,Glossophaga soricina,Stephan_Pirlot_1970,Glossophaga soricina,synonym:NCBI,FALSE,variant,FALSE
+Stephan_Pirlot_1970_Table1,Hipposideros bicolor,Stephan_Pirlot_1970,Hipposideros bicolor,verbatim,FALSE,paper,FALSE
+Stephan_Pirlot_1970_Table1,Myotis myotis,Stephan_Pirlot_1970,Myotis myotis,verbatim,FALSE,paper,FALSE
+Stephan_Pirlot_1970_Table1,Myotis nattereri,Stephan_Pirlot_1970,Myotis nattereri,verbatim,FALSE,paper,FALSE
+Stephan_Pirlot_1970_Table1,Noctilio leporinus,Stephan_Pirlot_1970,Noctilio leporinus,verbatim,FALSE,paper,FALSE
+Stephan_Pirlot_1970_Table1,Phyllostomus discolor,Stephan_Pirlot_1970,Phyllostomus discolor,verbatim,FALSE,paper,FALSE
+Stephan_Pirlot_1970_Table1,Rhinolophus hipposideros,Stephan_Pirlot_1970,Rhinolophus hipposideros,verbatim,FALSE,paper,FALSE
+Stephan_Pirlot_1970_Table1,Sturnira lilium,Stephan_Pirlot_1970,Sturnira lilium,verbatim,FALSE,paper,FALSE
+Stephan_Pirlot_1970_Table1,Vampyrops helleri,Stephan_Pirlot_1970,Platyrrhinus helleri,synonym:NCBI,FALSE,paper,FALSE
 Stephan_etal_1970_TABLE1,Aethechinus algirus,Stephan_etal_1970,Atelerix algirus,synonym:legacy_override,FALSE,paper,FALSE
 Stephan_etal_1970_TABLE1,Chlorotalpa stuhlmanni,Stephan_etal_1970,Chrysochloris stuhlmanni,synonym:legacy_override,FALSE,paper,FALSE
 Stephan_etal_1970_TABLE1,Crocidura occidentalis,Stephan_etal_1970,Crocidura olivieri,synonym:NCBI,FALSE,paper,FALSE

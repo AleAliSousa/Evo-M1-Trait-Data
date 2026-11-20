@@ -78,6 +78,16 @@ BINOM_RX = re.compile(r"^[A-Z][a-z]+ [a-z][a-z-]+")
 SPECIES_OVERRIDE = {
     "10.1111%2Fj.1749-6632.2011.05978.x_TableS3.tsv": "Homo sapiens",
 }
+# Tables whose whole-brain-mass column the BRAIN_RX scan cannot see:
+# HerculanoHouzel_etal_2020 Table 1 abbreviates the header to "MBRAIN, g" --
+# "brain" is not followed within 3 characters by a mass/weight token, so the
+# file was skipped entirely. Named explicitly here (and in brain_mass_compiled.R
+# and in the picker inside _keys/build_brain_size_basis.py; keep the three in
+# step) rather than widening BRAIN_RX, which would change the harvest of every
+# other table. The column is documented in brain_mass_source_columns.csv.
+COLUMN_OVERRIDE = {
+    "10.1002%2Fcne.24985_TABLE1.tsv": "MBRAIN, g",
+}
 # poolable_group in brain_size_basis.csv -> the Measure emitted for it
 FAMILY = {
     "mass_measured": "Brain_Mass_measured",
@@ -303,9 +313,9 @@ else:
             continue
         rows = [ln.split("\t") for ln in lines]
         headers = [h.replace('"', "") for h in rows[0]]
-        if not any(BRAIN_RX.search(n(h)) for h in headers):
+        if fn not in COLUMN_OVERRIDE and not any(BRAIN_RX.search(n(h)) for h in headers):
             continue
-        col = pick_column(headers)
+        col = COLUMN_OVERRIDE.get(fn) or pick_column(headers)
         if col is None:
             continue
         ci = headers.index(col)

@@ -237,6 +237,14 @@ ASSIGN = {
     ("AvelinodeSouza_etal_2025", "Whole brain_Mass, g"):
         ("mass", "mass_excl_olfactory_bulb", "unknown", "no", "unknown", "unknown",
          "mass_measured_excl_ob", True, "quoted", F),
+    # Herculano-Houzel et al. 2020 (bats), Table 1: the header is abbreviated to
+    # "MBRAIN, g", which the merge's BRAIN_RX column scan cannot see, so the
+    # builders carry the file in a COLUMN_OVERRIDE (see build_brain_mass_merge.py).
+    # Same fractionator convention as the 2015 entry above: the paper's Methods
+    # state the reported total brain mass excludes the olfactory bulbs.
+    ("HerculanoHouzel_etal_2020", "MBRAIN, g"):
+        ("mass", "mass_excl_olfactory_bulb", "unknown", "no", "unknown", "unknown",
+         "mass_measured_excl_ob", True, "quoted", "paper methods (PDF in the paper folder)"),
     # ---- mass and volume mixed, unresolvable per row ----------------------
     # Baker et al. 2025 (Nat Commun) Supplementary Data 1: a compilation whose
     # per-row Source names the original publication; endocranial volumes were
@@ -647,6 +655,10 @@ FOLDER_QUOTES = {
         "[Herculano-Houzel whole-brain definition, per AvelinodeSouza_etal_2025 definitions]",
     ("AvelinodeSouza_etal_2025", "Whole brain_Mass, g"):
         "whole brain (both sides), NOT including the olfactory bulbs",
+    ("HerculanoHouzel_etal_2020", "MBRAIN, g"):
+        "MBRAIN, g -- total brain mass; 'reported total brain mass and numbers of "
+        "brain neurons exclude the olfactory bulbs, following our practice since "
+        "2006' (paper Methods)",
     ("Kverkova_etal_2018", "Brain_Mass.g"):
         "Brain_Mass.g -- Table S1 species mean brain mass (folder definitions code "
         "Mass.g: 'mass in grams'); brains dissected and weighed immediately after "
@@ -834,11 +846,18 @@ def pick_column(headers):
     return cand[0]
 
 
+# Tables whose whole-brain-mass column pick_column() cannot see because the
+# header carries no mass/weight token the BRAIN_RX scan recognises
+# (HerculanoHouzel et al. 2020 Table 1 abbreviates it to "MBRAIN, g"). Mirrors
+# COLUMN_OVERRIDE in __merging_brain_mass/build_brain_mass_merge.py and
+# brain_mass_compiled.R; keep the three in step.
+COLUMN_OVERRIDE = {"10.1002%2Fcne.24985_TABLE1.tsv": "MBRAIN, g"}
+
 file_col = {}
 for p in glob.glob(os.path.join(PUB, "*.tsv")):
     with open(p, encoding="utf-8", errors="replace") as fh:
         hdr = [h.strip('"') for h in fh.readline().rstrip("\n").split("\t")]
-    c = pick_column(hdr)
+    c = COLUMN_OVERRIDE.get(os.path.basename(p)) or pick_column(hdr)
     if c:
         file_col[os.path.basename(p)] = c
 

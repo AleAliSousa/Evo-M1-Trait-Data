@@ -27,6 +27,7 @@ item_name <- c("Changizi__2001_Figure3",
                "Smaers_etal_2017_TableS1part2",     # ADDED 2026-08-25 (owner decision): SECONDARY — Brodmann 1909 regional surfaces via Smaers 2017. Ingested deliberately (primary not built); a future Brodmann-1909 build supersedes it.
                "Brodmann__1913_Table1",             # ADDED 2026-08-25: PRIMARY — Brodmann 1913 total cortical surface, one hemisphere, 38 taxa (bespoke block: one human row kept).
                "Campos_Welker_1976_Table1",         # ADDED 2026-10-19: PRIMARY — total cortical surface, fissure subset/percentage, and thickness; one specimen/species, hemisphere count unclear.
+               "Demirci_etal_2023_Fig.1",           # ADDED 2026-11-19: SECONDARY gap-fill — total pial surface, MRI, printed cm2 for BOTH hemispheres -> per-hemisphere mm2 at net x50 (bespoke block below).
                "Huffman_etal_1999_TABLE2",          # ADDED 2026-10-19: PRIMARY — mapped S1 surface, averaged across cases within species.
                "VanEssen_Drury_1997_Table1",        # ADDED 2026-10-19: PRIMARY human total neocortex + authors' visual-cortex estimate; V1 and macaque rows are secondary and remain provenance-only.
                ## ---- RELATIVE + ABSOLUTE surface sources (ADDED 2026-10-21; see relative_absolute_helpers.R) ----
@@ -257,6 +258,22 @@ long[["Van Essen Drury 1997 surfaces"]] <- tibble(
   Standardized_Term = unname(ved97map[ved97$structure]),
   value = ved97$value, source = "VanEssen_Drury_1997_Table1",
   source_flags = ved97$source_flags, source_issue_note = ved97$source_issue_note)
+
+# Demirci et al. 2023 Fig. 1 (ADDED 2026-11-19): SECONDARY — total pial cortical surface from MRI
+# surface reconstructions of 12 primate species, printed in cm2 for BOTH hemispheres (whole-cerebrum
+# totals). Converted here to the merge's per-hemisphere mm2 convention at net x50 (cm2 -> mm2 x100,
+# then halved), per the item's own definitions ("HALVE for per-hemisphere merge convention").
+# Role is gap-fill only: the status rule further below keeps a Demirci row out of _wide wherever
+# another ACTIVE source already covers the species, so wiring it can add species but can never
+# move an existing wide value. Fig. 1 prints one representative/average value per species
+# (macaque n=31, chimp n=54, human n=501; the rest n=1).
+dem <- readr::read_tsv(file.path(tsvdir, paste0(enc("Demirci_etal_2023_Fig.1"), ".tsv")),
+                       show_col_types = FALSE)
+long[["Demirci 2023 surface"]] <- tibble(
+  Species = dem$Species, Standardized_Term = "CorticalSurface_Area.mm2",
+  value = dem$total_surface_area_cm2 * 50, source = "Demirci_etal_2023_Fig.1",
+  source_flags = "secondary_gapfill|both_hemispheres_printed_cm2_converted_x50",
+  source_issue_note = "Printed as total pial surface for BOTH hemispheres in cm2 (Fig. 1); converted to per-hemisphere mm2 at net x50. Secondary gap-fill: held out of _wide where another active source covers the species (status secondary_gapfill_Demirci_etal_2023).")
 
 ## ===================== RELATIVE + ABSOLUTE surface sources (2026-10-21) =====================
 ## Each block emits specimen, grain, n, value_status, value_basis = "printed", denominator_term and
@@ -491,6 +508,17 @@ long$status[long$source == "Felleman_VanEssen_1991_Table2"] <- "held_secondary_s
 long$status[long$source == "Sarko_etal_2011_ResultsText" & long$specimen == "group:juvenile"] <- "held_juvenile_group"
 long$status[long$source == "Catania_Remple_2002_Table1" & long$Species == "Rattus norvegicus" &
             long$Standardized_Term == "S1_Surface_Area.pct_Neocortex"] <- "held_secondary_comparator"
+
+## gap-fill: Demirci et al. 2023 (2026-11-19). A secondary source: its rows enter _wide ONLY for
+## species no other ACTIVE source covers with CorticalSurface_Area.mm2. Everywhere else the row
+## stays in _long as provenance with this status. Evaluated here, after all other status rules,
+## so "active" reflects the final state of every other source (Finlay flagged, Mota 2015
+## superseded, etc. do not count as covering).
+dem_covered <- long$Species[long$source != "Demirci_etal_2023_Fig.1" &
+                            long$Standardized_Term == "CorticalSurface_Area.mm2" &
+                            long$status == "active"]
+long$status[long$source == "Demirci_etal_2023_Fig.1" &
+            long$Species %in% dem_covered] <- "secondary_gapfill_Demirci_etal_2023"
 
 ## ---- same-specimen relative -> absolute conversion (exact arithmetic only) ----
 conv <- convert_relative_same_specimen(long, read_specimen_links("specimen_links.csv"))

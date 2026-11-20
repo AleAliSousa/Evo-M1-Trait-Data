@@ -59,6 +59,7 @@ Mota-lineage supersede misses and one animal splits into two Species rows.
 | `Smaers_etal_2017_TableS1part2` | | | | ✓ **regional** V1/prefrontal/other-assoc/frontal-motor (10 primates) | **secondary**⁸ |
 | `Brodmann__1913_Table1` | | | | ✓ whole-cortex, one hemisphere, **34 taxa across mammal orders** | primary⁹ |
 | `Campos_Welker_1976_Table1` | | | | ✓ total + fissure subset/% + thickness, hemisphere count unclear and flagged | primary |
+| `Demirci_etal_2023_Fig.1` | | | | ✓ whole-cortex (printed cm², BOTH hemispheres → per-hemisphere mm² ×50), **gap-fill**¹⁰ | **secondary**¹⁰ |
 | `Huffman_etal_1999_TABLE2` | | | | ✓ **regional S1**, case means within species | primary |
 | `VanEssen_Drury_1997_Table1` | | | | ✓ human total neocortex + estimated visual cortex, L/R mean | primary / primary synthesis |
 | `Krubitzer_Kaas_1990_Table1` | | reference² | | | not merged |
@@ -144,6 +145,22 @@ Mota-lineage supersede misses and one animal splits into two Species rows.
   method-fixed field count, **not comparable** to Finlay's visual-area counts (19–23) — averaging the
   two would be meaningless. So it is **documented here but not merged numerically**; only its Species
   rows are kept in the term map.
+
+¹⁰ **Demirci et al. 2023 (added 2026-11-19) — SECONDARY gap-fill.** Total pial cortical surface
+  for 12 primate species from MRI surface reconstructions (Demirci, Hoffman & Holland 2023,
+  *NeuroImage* 278:120283), printed in Fig. 1 in cm² for **both hemispheres**. Converted to the
+  per-hemisphere mm² convention at net ×50 (×100 cm²→mm², then halved), per the item's own
+  definitions ("HALVE for per-hemisphere merge convention"). Enters `_wide` only for species no
+  other active source covers (otherwise `status = secondary_gapfill_Demirci_etal_2023`, kept in
+  `_long`), so it adds species — *Galago senegalensis* (surface value), *Aotus lemurinus*,
+  *Pithecia pithecia*, *Sapajus apella*, *Lagothrix lagotricha*, *Colobus guereza*,
+  *Lophocebus albigena*, *Pan paniscus*, *Gorilla gorilla* — without moving any existing value.
+  Fig. 1 prints one representative/average value per species (macaque n=31, chimp n=54, human
+  n=501; the rest n=1). These values previously reached the app only via `__merging_supplementary`
+  as the standalone label `CorticalSurface_Area_Demirci2023 (mm2)` at ×100 **without** halving;
+  that route is retired in favour of this one. *Sapajus apella* is kept under its printed name;
+  the Mota lineage carries the same species as *Cebus apella* (identical `accepted_name` via the
+  species resolver).
 
 **2026-10-19 additions; source QC updated 2026-10-20.** Campos & Welker contributes the printed
 total cortical surface, fissure-surface subset and percentage, and thickness for one specimen from

@@ -56,6 +56,33 @@ sources**; TraitExplorer discovers the folder automatically; `__Cytosplore_expor
   export. The species name is assembled from the genus + epithet columns (`species_col` may now be an R
   expression; see `supplementary_compiled.R`). Caveat, as for BMR: PanTHERIA, Amniote and AnAge partly
   cite the same primaries, so `n_sources` counts compilations, not independent measurements.
+- **Home range pooled by precedence (added 2026-11-20).** Four secondary compilations report the
+  same quantity, home-range size, under four labels. `Home_range (km2)` is now the pooled label,
+  assembled by the new `precedence` column of `supplementary_sources.csv`: PanTHERIA (1),
+  Galán-Acedo 2019 (2), Kamilar & Cooper 2013 (3), Chivers 1984 (4, ha -> km2 via
+  `transform = *0.01`). The pool step in `supplementary_compiled.R` takes the
+  lowest-precedence value per species and never averages across compilations -- on the 165
+  species two or more compilations share, their values differ by a median of ~2x, because they
+  partly re-report the same primaries under different definitions. Each of the three
+  source-specific compilations is mapped twice (its own label, unchanged, plus a pooled-feed
+  row); provenance columns on the pooled rows still span all contributing compilations.
+  Coverage: 707 -> 919 species (winners: PanTHERIA 707, Galán-Acedo 2019 212; Kamilar &
+  Cooper 2013 and Chivers 1984 win none -- every species they report is already covered by a
+  higher-precedence compilation, so for now they contribute provenance and spread only).
+  `Max_home_range_ha` (a maximum) and
+  `Biomass_per_home-range_area_Chivers1984` (a density) are different quantities and stay out.
+- **Vocal repertoire size pooled by precedence (added 2026-11-20).** Enacts the owner's
+  ruling of 2026-11-19. Three labels report vocal repertoire size; `Vocal_repertoire_size (count)`
+  is now the pooled label, assembled by the `precedence` column of
+  `supplementary_sources.csv`: McComb & Semple 2005 (1), Dunn & Smaers 2018 (2).
+  McComb 2005 is the primary source; Dunn 2018 largely re-reports McComb's primaries
+  (of the 18 species both compilations report, 17 values are identical), so Dunn is
+  check-only where they overlap and fills gaps only -- never averaged in. Zimmermann 2017
+  is a partly independent recount and is NOT pooled; it remains its own source.
+  McComb's column is mapped twice (its own row carries the pooled label at precedence 1,
+  plus its source-specific label, unchanged); Dunn's likewise (own label plus a
+  pooled-feed row). Coverage: 58 species (winners: McComb & Semple 2005 42,
+  Dunn & Smaers 2018 16).
 - **AnAge interbirth interval is in days.** The item column is named `Inter_litter_Interbirth_interval_days`.
   AnAge's header carries no unit; the values are days (Homo 639, Mus 30, Sus 230) and are mapped directly.
 - **AnAge longevity quality filter.** `Data_quality` is AnAge's confidence in the longevity record only;
@@ -145,7 +172,7 @@ sources**; TraitExplorer discovers the folder automatically; `__Cytosplore_expor
 | Jones_etal_2009_PanTHERIA1-0WR05Aug2008.txt | 14-1_InterbirthInterval_d | Interbirth_interval (days) [distinct] | secondary | first | cf. Lewitus Inter-litter_interval_days (different compilation) |
 | Jones_etal_2009_PanTHERIA1-0WR05Aug2008.txt | 5-3_NeonateBodyMass_g | Neonate_body_mass (g) [distinct] | secondary | first | cf. Lewitus Weight_at_birth_g |
 | Jones_etal_2009_PanTHERIA1-0WR05Aug2008.txt | 16-1_LittersPerYear | Litters_per_year (count/yr) [distinct] | secondary | first | renamed 2026-10-20 from Litters_per_year_PanTHERIA: the Amniote DB and AnAge compile the same quantity, so one label is pooled across the three compilations; Lewitus 2014 Litters_per_year (EvoM1 traits) is superseded into it via variable_canonical.csv |
-| Jones_etal_2009_PanTHERIA1-0WR05Aug2008.txt | 22-1_HomeRange_km2 | Home_range (km2) [distinct] | secondary | first | group home range; cf. Max_home_range_ha |
+| Jones_etal_2009_PanTHERIA1-0WR05Aug2008.txt | 22-1_HomeRange_km2 | Home_range (km2) [distinct] | secondary | first | Pooled home range: this PanTHERIA column is precedence 1 of 4 for the Home_range (km2) label. Galán-Acedo 2019, Kamilar & Cooper 2013 and Chivers 1984 (ha x 0.01) fill gaps only, at precedences 2-4; values are never averaged across compilations. Source-specific views remain as Home_range_Galan2019, Home_range_Kamilar2013 and Home_range_Chivers1984. cf. Max_home_range_ha (a maximum, not pooled). |
 | Jones_etal_2009_PanTHERIA1-0WR05Aug2008.txt | 21-1_PopulationDensity_n/km2 | Population_density (n/km2) [distinct] | secondary | first |  |
 | Jones_etal_2009_PanTHERIA1-0WR05Aug2008.txt | 10-2_SocialGrpSize | Social_group_size_PanTHERIA (count) [distinct] | secondary | first |  |
 | Jones_etal_2009_PanTHERIA1-0WR05Aug2008.txt | 1-1_ActivityCycle | Activity_cycle_PanTHERIA (category) [distinct] | secondary | first | PanTHERIA code 1 nocturnal, 2 crepuscular/cathemeral, 3 diurnal |

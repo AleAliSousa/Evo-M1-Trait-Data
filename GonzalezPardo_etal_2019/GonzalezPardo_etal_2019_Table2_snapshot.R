@@ -1,0 +1,8 @@
+## Printed-layout transcription from the source PDF, 2026-11-20; AI check, human signoff pending.
+.sp<-local({f<-tryCatch(sys.frame(1)$ofile,error=function(e)NULL);if(!is.null(f))f else sub('^--file=','',grep('^--file=',commandArgs(FALSE),value=TRUE)[1])})
+folder<-dirname(normalizePath(.sp,mustWork=TRUE));item_name<-sub('_snapshot$','',tools::file_path_sans_ext(basename(.sp)))
+source_text <- "Table 2. Mean estimated volume (mm³) of the selected ROI in the right (RH) or left hemisphere (LH) by MRI volumetry of the experimental groups\t\t\t\t\t\n\t\tPrefrontal cortex\tDorsal striatum\tDorsal hippocampus\tVentral hippocampus\nSA\tLH\t8.15 ± 0.51\t48.59 ± 1.07\t29.27 ± 0.51\t15.10 ± 0.56\n\tRH\t7.20 ± 0.12\t46.19 ± 1.97\t27.75 ± 0.75\t15.01 ± 0.39\nMS\tLH\t8.85 ± 1.17\t46.50 ± 2.42\t29.53 ± 0.11\t15.75 ± 0.94\n\tRH\t7.74 ± 0.54\t48.63 ± 3.27\t28.16 ± 0.53\t14.66 ± 0.62\nSA-EE\tLH\t8.89 ± 0.18\t48.75 ± 1.13\t32.58 ± 1.04\t13.87 ± 0.32\n\tRH\t8.19 ± 0.19\t45.71 ± 1.46\t28.85 ± 1.04\t13.41 ± 0.73\nMS-EE\tLH\t8.53 ± 0.39\t47.12 ± 3.67\t31.83 ± 1.96\t18.40 ± 0.56\n\tRH\t8.54 ±0.39\t44.32 ± 3.32\t32.58 ± 2.76+\t16.32 ± 0.72\nNote: mean ± s.e.m. +significantly higher vs. SA-EE group in the RH (FDR p < 0.05)\t\t\t\t\t"
+d<-read.delim(text=source_text,header=FALSE,sep='\t',quote='',fill=TRUE,colClasses='character',check.names=FALSE,blank.lines.skip=FALSE)
+p<-file.path(folder,paste0(item_name,'_snapshot.csv'));tmp<-tempfile(fileext='.csv');write.table(d,tmp,sep=',',row.names=FALSE,col.names=FALSE,na='',fileEncoding='UTF-8',qmethod='double')
+if(file.exists(p)){if(!identical(readBin(p,'raw',n=file.info(p)$size),readBin(tmp,'raw',n=file.info(tmp)$size)))stop('Frozen snapshot differs; refusing overwrite.')}else file.copy(tmp,p)
+unlink(tmp)

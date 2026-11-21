@@ -589,6 +589,9 @@ applies this rubric.
 - [ ] where the table prints its own totals (or another checkable relation): the reader checks them
       into `table_checks` and the ReadMe has a `## Table checks` section (§7a)
 - [ ] analysis CSV/TSV has no accidental empty first column or other extraction artefact
+- [ ] for figure-derived data: a simple `<Item>_replot.R` reads the extracted table directly,
+      saves a local PNG, and has been run and visually compared with the source;
+      command and omissions are documented in the item README (see snapshot HOWTO)
 - [ ] the R script runs from a clean session and writes the intended CSV and public TSV
 - [ ] cleaning reproducible from the frozen source; names cleaned; units converted + documented
 - [ ] observation level recorded (species / individual / intraspecific group) when rows are not

@@ -1,3 +1,18 @@
+# Replot extracted figure data
+
+For every new or updated figure-derived dataset, add a separate `<Item>_replot.R`
+in the paper folder. Read the extracted item table directly and use the simplest
+practical R plotting code (prefer base R) to reproduce the figure's shape for an
+easy visual check. Preserve panel/series identity, source order, axis scale and
+units; include extracted error bars when available, without inventing their type.
+Do not hardcode measurements, refit/smooth the data, or rerun extraction/merges.
+Save `<Item>_replot.png` beside the script, run it, inspect it against the source,
+and document the command and any omissions in the item README. This supplements
+source/snapshot checks; it does not constitute human visual signoff.
+
+Past figures are an active backfill task: see
+`____TODO/figure_replots_handoff.md`. Itoh Figure 2 is the worked example.
+
 # Missing taxonomic orders
 
 NCBI is the first lookup because it is quick and genome-linked, not a requirement

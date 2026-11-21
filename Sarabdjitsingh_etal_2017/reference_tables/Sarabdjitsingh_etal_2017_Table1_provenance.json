@@ -1,0 +1,27 @@
+{
+  "paper": "Sarabdjitsingh_etal_2017",
+  "locus": "Table1",
+  "doi": "10.1371/journal.pone.0185061",
+  "pdf": "sarab2017.pdf",
+  "species": "Rattus norvegicus",
+  "species_print": "Wistar rats",
+  "citation": "Sarabdjitsingh, R. A., Loi, M., Joëls, M., Dijkhuizen, R. M., & van der Toorn, A. (2017). Early life stress-induced alterations in rat brain structures measured with high resolution MRI. PLOS ONE, 12(9), e0185061. https://doi.org/10.1371/journal.pone.0185061",
+  "caption": "Table 1. Volumes of the different ROIs based on high-resolution anatomical MRI. N = 10 rats per group. Data represents mean ± SEM in μl and was analyzed using 2-way ANOVA with MD and mifepristone treatment as main factors. Statistical significance based on p-values for the main effect is presented in the last three columns: * p < 0.05, ** p < 0.01, ns = not significant.",
+  "source_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0185061",
+  "page": "PDF p.6; Table 1",
+  "orientation": "region_rows",
+  "n": 10,
+  "age": "three months",
+  "note": "Maternal deprivation for 24 h at P3. Four experimental arms retained; primary deprivation contrast is MD vs noMD within vehicle. PFC overlaps its OFC, mPFC and insular subdivisions; never sum or fit parent and children together. Table n=10 per group retained as nominal; model degrees of freedom vary. 1 μl = 1 mm3.",
+  "arms": [
+    "vehicle_noMD",
+    "vehicle_MD",
+    "mifepristone_noMD",
+    "mifepristone_MD"
+  ],
+  "item_name": "Sarabdjitsingh_etal_2017_Table1",
+  "source_pdf_sha256": "f3c6f216a0d5c600185c17cfdee76116e5727491c3e4bdc110684c750920807d",
+  "retrieved": "2026-11-20",
+  "snapshot_method": "Printed-layout transcription read across each source row, crosschecked with PDF text and page render; Sarabdjitsingh values also independently compared with journal JATS XML.",
+  "human_visual_signoff": "Pending; AI checks do not constitute human RA signoff"
+}

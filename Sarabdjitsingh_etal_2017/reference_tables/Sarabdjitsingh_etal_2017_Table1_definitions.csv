@@ -1,0 +1,21 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+source_row,source row,,,,info,Wistar rats,Sarabdjitsingh_etal_2017_Table1,,PDF p.6; Table 1
+source_column,source column,,,,info,Wistar rats,Sarabdjitsingh_etal_2017_Table1,,PDF p.6; Table 1
+region_as_published,region as published,,,,info,Wistar rats,Sarabdjitsingh_etal_2017_Table1,,PDF p.6; Table 1
+hemisphere,hemisphere,,,,info,Wistar rats,Sarabdjitsingh_etal_2017_Table1,,PDF p.6; Table 1
+arm_id,arm id,,,,info,Wistar rats,Sarabdjitsingh_etal_2017_Table1,,PDF p.6; Table 1
+endpoint,endpoint,,,,info,Wistar rats,Sarabdjitsingh_etal_2017_Table1,,PDF p.6; Table 1
+cell_as_printed,"Verbatim cell from source-layout snapshot, including markers",,,,info,Wistar rats,Sarabdjitsingh_etal_2017_Table1,,PDF p.6; Table 1
+mean,Parsed printed group mean; no pooled or species-level mean,,Brain_volume,,primary,Wistar rats,Sarabdjitsingh_etal_2017_Table1,,PDF p.6; Table 1
+sem,"Printed standard error of the mean, not SD",,,,primary,Wistar rats,Sarabdjitsingh_etal_2017_Table1,,PDF p.6; Table 1
+dispersion_type,dispersion type,,,,info,Wistar rats,Sarabdjitsingh_etal_2017_Table1,,PDF p.6; Table 1
+physical_basis,"Area, volume, normalized volume ratio or normalized linear-size ratio; keep separate",,,,info,Wistar rats,Sarabdjitsingh_etal_2017_Table1,,PDF p.6; Table 1
+unit,Physical units based on caption and footnote; Spinelli CC/CBV are mm2 despite spanning mm3 header,,,,info,Wistar rats,Sarabdjitsingh_etal_2017_Table1,,PDF p.6; Table 1
+statistics_as_printed,"Published statistical significance entries, not recomputed tests",,,,info,Wistar rats,Sarabdjitsingh_etal_2017_Table1,,PDF p.6; Table 1
+pct_difference_as_printed,Published percent difference; retain even when inconsistent with means,,,,info,Wistar rats,Sarabdjitsingh_etal_2017_Table1,,PDF p.6; Table 1
+Species,Species,,,,info,Wistar rats,Sarabdjitsingh_etal_2017_Table1,,PDF p.6; Table 1
+species_as_published,species as published,,,,info,Wistar rats,Sarabdjitsingh_etal_2017_Table1,,PDF p.6; Table 1
+source,source,,,,info,Wistar rats,Sarabdjitsingh_etal_2017_Table1,,PDF p.6; Table 1
+n_nominal,Printed group n / MRI methods n; effective n of missing scans not reconstructed,,,,info,Wistar rats,Sarabdjitsingh_etal_2017_Table1,,PDF p.6; Table 1
+age_as_published,age as published,,,,info,Wistar rats,Sarabdjitsingh_etal_2017_Table1,,PDF p.6; Table 1
+source_note,Untabulated context and interpretation from paper methods; not pooled data,,,,info,Wistar rats,Sarabdjitsingh_etal_2017_Table1,,PDF p.6; Table 1

@@ -1,0 +1,28 @@
+{
+  "paper": "Spinelli_etal_2009",
+  "locus": "Table2",
+  "doi": "10.1001/archgenpsychiatry.2009.52",
+  "pdf": "spinelli2009.pdf",
+  "species": "Macaca mulatta",
+  "species_print": "rhesus monkeys (Macaca mulatta)",
+  "citation": "Spinelli, S., Chefer, S., Suomi, S. J., Higley, J. D., Barr, C. S., & Stein, E. (2009). Early-life stress induces long-term morphologic changes in primate brain. Archives of General Psychiatry, 66(6), 658–665. https://doi.org/10.1001/archgenpsychiatry.2009.52",
+  "caption": "Table 2. Normalized and Absolute Volumes of Brain Areas Measured in MR and PR Groups",
+  "source_url": "https://www.psychiatry.wisc.edu/courses/Nitschke/seminar/Spinelli%20S%2C%20Arch%20Gen%20Psych%2066%2C%202009.pdf",
+  "page": "PDF p.6, printed p.663",
+  "orientation": "paired_endpoints",
+  "age": "MR 27.40 ± 0.90 months; PR 26.39 ± 0.33 months (SEM)",
+  "note": "Random assignment at birth; MR n=15, PR n=13. PR animals nursery/peer reared without mothers for first 6 months, then groups housed together. One mPFC trace unavailable; group of missing animal not specified, so subgroup effective n is unknown. PFL includes gray and white matter; mPFC and dmPFC nested within PFL, dmPFC nested within mPFC. CC and CBV are midsagittal areas, not volumes, despite the spanning mm3 header. Preserve printed percentage differences and test independently.",
+  "n": null,
+  "arms": [
+    "MR",
+    "PR",
+    "MR",
+    "PR"
+  ],
+  "footnote": "Abbreviations: CBV, cerebellar vermis; CC, corpus callosum; dACC, dorsal anterior cingulate cortex; dmPFC, dorsomedial prefrontal cortex; ellipses, data not available; HC, hippocampus; ICV, intracranial volume; mPFC, medial prefrontal cortex; MR, mother reared; PCC, posterior cingulate cortex; PFL, prefrontal lobe; PR, peer reared. a Normalized values were calculated as region-of-interest volume/ICV. The CBV and CC were defined as areas rather than volumes; therefore, data were normalized by dividing the square root of the area by the cubic root of the ICV to bring all measures to the same geometric dimensionality. All normalized values were multiplied by 1000.",
+  "item_name": "Spinelli_etal_2009_Table2",
+  "source_pdf_sha256": "16868a44afa0eae1803ec7ebb441474aa87bfac93e7cfd00f825689de4023fbd",
+  "retrieved": "2026-11-20",
+  "snapshot_method": "Printed-layout transcription read across each source row, crosschecked with PDF text and page render; Sarabdjitsingh values also independently compared with journal JATS XML.",
+  "human_visual_signoff": "Pending; AI checks do not constitute human RA signoff"
+}

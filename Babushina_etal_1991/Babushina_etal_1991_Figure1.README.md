@@ -139,3 +139,26 @@ Run clean with `LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 Rscript --vanilla Babushina_
 Cited curves of other species are listed (roadmap only, not digitised) in `reference_tables/Babushina_etal_1991_Figure1_references.csv`.
 Data dictionary: `reference_tables/Babushina_etal_1991_Figure1_definitions.csv`. Registry update
 proposal: `Babushina_etal_1991_Figure1_registry_row.xlsx`.
+
+## Quick figure replot (pilot, 2026-11-20)
+
+From the repository root:
+
+```sh
+Rscript --vanilla Babushina_etal_1991/Babushina_etal_1991_Figure1_replot.R
+```
+
+This standalone base-R script reads `Babushina_etal_1991_Figure1.csv` and saves
+`Babushina_etal_1991_Figure1_replot.png` beside it. It plots all 12 extracted
+curve-1 points directly from `lg_f_kHz_as_plotted` and `threshold_as_plotted`.
+The x column is already log10 frequency in kHz and is not logged again; the y
+axis retains dB relative to 1 microbar. The source's other species and smooth
+curve were not digitised and are explicitly omitted. No fitted or connecting
+curve, invented error bars, or values from companion figures are added.
+
+Codex ran the script in clean R sessions with `Rscript --vanilla` and `source()`
+and visually compared its PNG with Figure 1 on printed p.911 / PDF p.4. The
+12-point trough, local variation around 10–20 kHz and steep high-frequency rise
+are represented; no new discrepancy was identified in this shape check. The
+existing precision limitations and missing ~30-kHz point noted above remain.
+This is AI review, not human visual signoff.

@@ -1,0 +1,949 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.1d3 20150301//EN" "http://jats.nlm.nih.gov/publishing/1.1d3/JATS-journalpublishing1.dtd">
+<article article-type="research-article" dtd-version="1.1d3" xml:lang="en" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id>
+<journal-title-group>
+<journal-title>PLOS ONE</journal-title>
+</journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, CA USA</publisher-loc>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1371/journal.pone.0185061</article-id>
+<article-id pub-id-type="publisher-id">PONE-D-17-15810</article-id>
+<article-categories>
+<subj-group subj-group-type="heading">
+<subject>Research Article</subject>
+</subj-group>
+<subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Anatomy</subject><subj-group><subject>Nervous system</subject><subj-group><subject>Central nervous system</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Anatomy</subject><subj-group><subject>Nervous system</subject><subj-group><subject>Central nervous system</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Anatomy</subject><subj-group><subject>Brain</subject><subj-group><subject>Prefrontal cortex</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Anatomy</subject><subj-group><subject>Brain</subject><subj-group><subject>Prefrontal cortex</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Anatomy</subject><subj-group><subject>Brain</subject><subj-group><subject>Hippocampus</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Anatomy</subject><subj-group><subject>Brain</subject><subj-group><subject>Hippocampus</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Organisms</subject><subj-group><subject>Eukaryota</subject><subj-group><subject>Animals</subject><subj-group><subject>Vertebrates</subject><subj-group><subject>Amniotes</subject><subj-group><subject>Mammals</subject><subj-group><subject>Rodents</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Anatomy</subject><subj-group><subject>Brain</subject><subj-group><subject>Cerebrum</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Anatomy</subject><subj-group><subject>Brain</subject><subj-group><subject>Cerebrum</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Diagnostic medicine</subject><subj-group><subject>Diagnostic radiology</subject><subj-group><subject>Magnetic resonance imaging</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Research and analysis methods</subject><subj-group><subject>Imaging techniques</subject><subj-group><subject>Diagnostic radiology</subject><subj-group><subject>Magnetic resonance imaging</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Radiology and imaging</subject><subj-group><subject>Diagnostic radiology</subject><subj-group><subject>Magnetic resonance imaging</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Anatomy</subject><subj-group><subject>Brain</subject><subj-group><subject>Amygdala</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Anatomy</subject><subj-group><subject>Brain</subject><subj-group><subject>Amygdala</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Research and analysis methods</subject><subj-group><subject>Experimental organism systems</subject><subj-group><subject>Model organisms</subject><subj-group><subject>Rats</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Research and analysis methods</subject><subj-group><subject>Model organisms</subject><subj-group><subject>Rats</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Research and analysis methods</subject><subj-group><subject>Experimental organism systems</subject><subj-group><subject>Animal models</subject><subj-group><subject>Rats</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Organisms</subject><subj-group><subject>Eukaryota</subject><subj-group><subject>Animals</subject><subj-group><subject>Vertebrates</subject><subj-group><subject>Amniotes</subject><subj-group><subject>Mammals</subject><subj-group><subject>Rodents</subject><subj-group><subject>Rats</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group></article-categories>
+<title-group>
+<article-title>Early life stress-induced alterations in rat brain structures measured with high resolution MRI</article-title>
+<alt-title alt-title-type="running-head">Early life stress and rodent brain structure</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" corresp="yes" equal-contrib="yes" xlink:type="simple">
+<contrib-id authenticated="true" contrib-id-type="orcid">http://orcid.org/0000-0001-9561-3261</contrib-id>
+<name name-style="western">
+<surname>Sarabdjitsingh</surname>
+<given-names>R. Angela</given-names>
+</name>
+<role content-type="http://credit.casrai.org/">Conceptualization</role>
+<role content-type="http://credit.casrai.org/">Data curation</role>
+<role content-type="http://credit.casrai.org/">Formal analysis</role>
+<role content-type="http://credit.casrai.org/">Funding acquisition</role>
+<role content-type="http://credit.casrai.org/">Investigation</role>
+<role content-type="http://credit.casrai.org/">Methodology</role>
+<role content-type="http://credit.casrai.org/">Project administration</role>
+<role content-type="http://credit.casrai.org/">Supervision</role>
+<role content-type="http://credit.casrai.org/">Validation</role>
+<role content-type="http://credit.casrai.org/">Visualization</role>
+<role content-type="http://credit.casrai.org/">Writing – original draft</role>
+<role content-type="http://credit.casrai.org/">Writing – review &amp; editing</role>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+<xref ref-type="corresp" rid="cor001">*</xref>
+</contrib>
+<contrib contrib-type="author" equal-contrib="yes" xlink:type="simple">
+<name name-style="western">
+<surname>Loi</surname>
+<given-names>Manila</given-names>
+</name>
+<role content-type="http://credit.casrai.org/">Conceptualization</role>
+<role content-type="http://credit.casrai.org/">Data curation</role>
+<role content-type="http://credit.casrai.org/">Investigation</role>
+<role content-type="http://credit.casrai.org/">Methodology</role>
+<role content-type="http://credit.casrai.org/">Project administration</role>
+<role content-type="http://credit.casrai.org/">Writing – original draft</role>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Joëls</surname>
+<given-names>Marian</given-names>
+</name>
+<role content-type="http://credit.casrai.org/">Conceptualization</role>
+<role content-type="http://credit.casrai.org/">Formal analysis</role>
+<role content-type="http://credit.casrai.org/">Funding acquisition</role>
+<role content-type="http://credit.casrai.org/">Methodology</role>
+<role content-type="http://credit.casrai.org/">Resources</role>
+<role content-type="http://credit.casrai.org/">Supervision</role>
+<role content-type="http://credit.casrai.org/">Writing – original draft</role>
+<role content-type="http://credit.casrai.org/">Writing – review &amp; editing</role>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Dijkhuizen</surname>
+<given-names>Rick M.</given-names>
+</name>
+<role content-type="http://credit.casrai.org/">Conceptualization</role>
+<role content-type="http://credit.casrai.org/">Formal analysis</role>
+<role content-type="http://credit.casrai.org/">Funding acquisition</role>
+<role content-type="http://credit.casrai.org/">Investigation</role>
+<role content-type="http://credit.casrai.org/">Methodology</role>
+<role content-type="http://credit.casrai.org/">Resources</role>
+<role content-type="http://credit.casrai.org/">Software</role>
+<role content-type="http://credit.casrai.org/">Supervision</role>
+<role content-type="http://credit.casrai.org/">Writing – original draft</role>
+<role content-type="http://credit.casrai.org/">Writing – review &amp; editing</role>
+<xref ref-type="aff" rid="aff003"><sup>3</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>van der Toorn</surname>
+<given-names>Annette</given-names>
+</name>
+<role content-type="http://credit.casrai.org/">Data curation</role>
+<role content-type="http://credit.casrai.org/">Formal analysis</role>
+<role content-type="http://credit.casrai.org/">Investigation</role>
+<role content-type="http://credit.casrai.org/">Methodology</role>
+<role content-type="http://credit.casrai.org/">Project administration</role>
+<role content-type="http://credit.casrai.org/">Resources</role>
+<role content-type="http://credit.casrai.org/">Software</role>
+<role content-type="http://credit.casrai.org/">Supervision</role>
+<role content-type="http://credit.casrai.org/">Validation</role>
+<role content-type="http://credit.casrai.org/">Visualization</role>
+<role content-type="http://credit.casrai.org/">Writing – original draft</role>
+<role content-type="http://credit.casrai.org/">Writing – review &amp; editing</role>
+<xref ref-type="aff" rid="aff003"><sup>3</sup></xref>
+</contrib>
+</contrib-group>
+<aff id="aff001"><label>1</label> <addr-line>Department Translational Neuroscience, Brain Center Rudolf Magnus, University Medical Center Utrecht, Utrecht University, Utrecht, The Netherlands</addr-line></aff>
+<aff id="aff002"><label>2</label> <addr-line>University of Groningen, University Medical Center Groningen, Groningen, The Netherlands</addr-line></aff>
+<aff id="aff003"><label>3</label> <addr-line>Biomedical MR Imaging and Spectroscopy Group, Center for Images Sciences, University Medical Center Utrecht, Utrecht University, Utrecht, The Netherlands</addr-line></aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple">
+<name name-style="western">
+<surname>Slattery</surname>
+<given-names>David A.</given-names>
+</name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/>
+</contrib>
+</contrib-group>
+<aff id="edit1"><addr-line>Klinikum der Johann Wolfgang Goethe-Universitat Frankfurt, GERMANY</addr-line></aff>
+<author-notes>
+<fn fn-type="conflict" id="coi001">
+<p>The authors have declared that no competing interests exist.</p>
+</fn>
+<corresp id="cor001">* E-mail: <email xlink:type="simple">r.a.sarabdjitsingh@umcutrecht.nl</email></corresp>
+</author-notes>
+<pub-date pub-type="epub">
+<day>25</day>
+<month>9</month>
+<year>2017</year>
+</pub-date>
+<pub-date pub-type="collection">
+<year>2017</year>
+</pub-date>
+<volume>12</volume>
+<issue>9</issue>
+<elocation-id>e0185061</elocation-id>
+<history>
+<date date-type="received">
+<day>24</day>
+<month>4</month>
+<year>2017</year>
+</date>
+<date date-type="accepted">
+<day>6</day>
+<month>9</month>
+<year>2017</year>
+</date>
+</history>
+<permissions>
+<copyright-year>2017</copyright-year>
+<copyright-holder>Sarabdjitsingh et al</copyright-holder>
+<license xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">
+<license-p>This is an open access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+</license>
+</permissions>
+<self-uri content-type="pdf" xlink:href="info:doi/10.1371/journal.pone.0185061"/>
+<abstract>
+<p>Adverse experiences early in life impair cognitive function both in rodents and humans. In humans this increases the vulnerability to develop mental illnesses while in the rodent brain early life stress (ELS) abnormalities are associated with changes in synaptic plasticity, excitability and microstructure. Detailed information on the effects of ELS on rodent brain structural integrity at large and connectivity within the brain is currently lacking; this information is highly relevant for understanding the mechanism by which early life stress predisposes to mental illnesses.</p>
+<p>Here, we exposed rats to 24 hours of maternal deprivation (MD) at postnatal day 3, a paradigm known to increase corticosterone levels and thereby activate glucocorticoid receptors in the brain. Using structural magnetic resonance imaging we examined: i) volumetric changes and white/grey matter properties of the whole cerebrum and of specific brain areas; and ii) whether potential alterations could be normalized by blocking glucocorticoid receptors with mifepristone during the critical developmental window of early adolescence, i.e. between postnatal days 26 and 28.</p>
+<p>The results show that MD caused a volumetric reduction of the prefrontal cortex, particularly the ventromedial part, and the orbitofrontal cortex. Within the whole cerebrum, white (relative to grey) matter volume was decreased and region-specifically in prefrontal cortex and dorsomedial striatum following MD. A trend was found for the hippocampus. Grey matter fractions were not affected. Treatment with mifepristone did not normalize these changes.</p>
+<p>This study indicates that early life stress in rodents has long lasting consequences for the volume and structural integrity of the brain. However, changes were relatively modest and–unlike behavior- not mitigated by blockade of glucocorticoid receptors during a critical developmental period.</p>
+</abstract>
+<funding-group>
+<award-group id="award001">
+<funding-source>
+<institution-wrap>
+<institution-id institution-id-type="funder-id">http://dx.doi.org/10.13039/501100003246</institution-id>
+<institution>Nederlandse Organisatie voor Wetenschappelijk Onderzoek</institution>
+</institution-wrap>
+</funding-source>
+<award-id>863.13.021</award-id>
+<principal-award-recipient>
+<contrib-id authenticated="true" contrib-id-type="orcid">http://orcid.org/0000-0001-9561-3261</contrib-id>
+<name name-style="western">
+<surname>Sarabdjitsingh</surname>
+<given-names>R. Angela</given-names>
+</name>
+</principal-award-recipient>
+</award-group>
+<award-group id="award002">
+<funding-source>
+<institution-wrap>
+<institution-id institution-id-type="funder-id">http://dx.doi.org/10.13039/501100003246</institution-id>
+<institution>Nederlandse Organisatie voor Wetenschappelijk Onderzoek</institution>
+</institution-wrap>
+</funding-source>
+<award-id>024.001.003</award-id>
+<principal-award-recipient>
+<name name-style="western">
+<surname>Joëls</surname>
+<given-names>Marian</given-names>
+</name>
+</principal-award-recipient>
+</award-group>
+<funding-statement>This work was supported by the Netherlands Organization for Scientific Research with Veni grant 863.13.021 to RAS, Gravitation grant 024.001.003 to MJ (<ext-link ext-link-type="uri" xlink:href="http://www.nwo.nl" xlink:type="simple">www.nwo.nl</ext-link>). The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+</funding-group>
+<counts>
+<fig-count count="1"/>
+<table-count count="4"/>
+<page-count count="14"/>
+</counts>
+<custom-meta-group>
+<custom-meta id="data-availability">
+<meta-name>Data Availability</meta-name>
+<meta-value>All MRI data files are available from the Figshare database (DOI <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.6084/m9.figshare.5285401" xlink:type="simple">10.6084/m9.figshare.5285401</ext-link>).</meta-value>
+</custom-meta>
+</custom-meta-group>
+</article-meta>
+</front>
+<body>
+<sec id="sec001" sec-type="intro">
+<title>Introduction</title>
+<p>Early life stress (ELS) refers to a condition of prolonged stress exposure (single or multiple stressors) during the perinatal period that exceeds the child’s coping resource [<xref ref-type="bibr" rid="pone.0185061.ref001">1</xref>]. It is well established that adverse experiences early in life have an enduring impact on the neuroendocrine system, and are associated with impaired memory and cognitive function, both in humans and rodents [<xref ref-type="bibr" rid="pone.0185061.ref002">2</xref>–<xref ref-type="bibr" rid="pone.0185061.ref004">4</xref>]. In humans, these alterations may increase the risk to develop psychopathology later in life [<xref ref-type="bibr" rid="pone.0185061.ref004">4</xref>–<xref ref-type="bibr" rid="pone.0185061.ref006">6</xref>]. Stress-related psychopathology is characterized by anomalies in the structural integrity of the brain [<xref ref-type="bibr" rid="pone.0185061.ref007">7</xref>,<xref ref-type="bibr" rid="pone.0185061.ref008">8</xref>]. These may have started already early in life, as a consequence of adversity. In agreement, structures of key areas implicated in the stress response as well as in the processing of higher cognitive function, e.g. the prefrontal cortex (PFC) [<xref ref-type="bibr" rid="pone.0185061.ref009">9</xref>] and hippocampus [<xref ref-type="bibr" rid="pone.0185061.ref010">10</xref>], are typically compromised by childhood adverse experiences. In rodents as well as humans, structural changes comprise diminished hippocampal volume [<xref ref-type="bibr" rid="pone.0185061.ref011">11</xref>,<xref ref-type="bibr" rid="pone.0185061.ref012">12</xref>], reduced dendritic length and branching of neurons within hippocampal regions [<xref ref-type="bibr" rid="pone.0185061.ref013">13</xref>,<xref ref-type="bibr" rid="pone.0185061.ref014">14</xref>], smaller prefrontal cortex volume [<xref ref-type="bibr" rid="pone.0185061.ref015">15</xref>,<xref ref-type="bibr" rid="pone.0185061.ref016">16</xref>], and anomalies in dendritic morphology of striatal subregions as well striatal volumetric reduction [<xref ref-type="bibr" rid="pone.0185061.ref017">17</xref>,<xref ref-type="bibr" rid="pone.0185061.ref018">18</xref>]. Moreover, adolescents who as a child experienced severe institutional deprivation showed greater amygdala volume [<xref ref-type="bibr" rid="pone.0185061.ref019">19</xref>]. In line with this, results from human neuroimaging studies reported an association between early life stress and alteration in the white and grey matter volume [<xref ref-type="bibr" rid="pone.0185061.ref020">20</xref>,<xref ref-type="bibr" rid="pone.0185061.ref021">21</xref>], also in areas involved in stress regulation [<xref ref-type="bibr" rid="pone.0185061.ref022">22</xref>].</p>
+<p>The driving force behind the structural anomalies after early life stress may be the functionality of the hypothalamus-pituitary-adrenal (HPA) axis. This axis is known to be disrupted by adverse early life experiences [<xref ref-type="bibr" rid="pone.0185061.ref023">23</xref>]. The HPA axis is the regulatory system for stress responsivity and a deregulation, resulting in increased corticosterone levels, may alter the structural and functional plasticity of the developing brain [<xref ref-type="bibr" rid="pone.0185061.ref004">4</xref>,<xref ref-type="bibr" rid="pone.0185061.ref024">24</xref>]. Based on this notion, we hypothesized that blocking the effects of circulating corticosterone acting through glucocorticoid receptors (GRs) may attenuate the early life stress-related brain structure anomalies.</p>
+<p>To test this idea, male rats were exposed to 24 hours of maternal deprivation (MD) at postnatal day (PND) 3. This represents a severe model of maternal neglect that (at PND 3) induces a substantial release of corticosterone [<xref ref-type="bibr" rid="pone.0185061.ref025">25</xref>]. In rodents, brain areas involved in higher cognitive function (e.g. prefrontal cortex and hippocampus) mainly develop postnatally; therefore they may be particularly vulnerable to the effects of early life stress. Our first aim was to examine if MD causes long lasting alterations in the normal brain development, using high resolution structural magnetic resonance imaging (MRI). Secondly, we assessed whether a transient blockade of GRs (at PND 26–28) can normalize the expected brain structural abnormalities. The choice of intervening during early adolescence is based on the high sensitivity of the brain and the HPA axis during this critical time window [<xref ref-type="bibr" rid="pone.0185061.ref026">26</xref>]. Moreover, brief administration of a glucocorticoid receptor antagonist during adolescence was recently found to ameliorate the behavioral deficits associated with early life stress [<xref ref-type="bibr" rid="pone.0185061.ref027">27</xref>].</p>
+</sec>
+<sec id="sec002" sec-type="materials|methods">
+<title>Materials and methods</title>
+<sec id="sec003">
+<title>Experimental animals</title>
+<p>Prior to the start of the study all animal procedures were approved by the local animal ethics committee at Utrecht University, the Netherlands. All efforts were made to minimize suffering. Adult male and female Wistar rats were purchased from Charles River (Sulzfeld, Germany) and habituated in random pairs to the animal facilities for two weeks. For breeding, male rats were put together with female rats in a 1:2 ratio for a period of 10 days. Females were housed in pairs after mating until the last week of pregnancy when they were housed individually. Every morning before 9 am cages were checked for births; upon birth that particular day was noted as postnatal day 0 (PND 0). Dams with litters were left undisturbed until PND 3 when culling took place. Litters contained on average 9 ± 1 pups, whenever possible evenly distributed over males and females. After culling, litters were randomly assigned to either the maternal deprivation (MD) condition or the control (no maternal deprivation; noMD) group. In the MD group, the mother was placed in a separate cage; the pups went back in the home cage and were placed on a heating pad (32°C) in a different room than where the mother was housed. MD litters were kept in this room for 24 h and then placed back with the dam, as described elsewhere [<xref ref-type="bibr" rid="pone.0185061.ref028">28</xref>]. All animals survived the MD procedure. NoMD litters were left entirely undisturbed.</p>
+<p>On PND 21 the litters were weaned and housed in same-sex groups of either two or three. Only males were used for this experiment. The MD and noMD rats were randomly assigned to either mifepristone (MIF; 5mg /100g bodyweight) or vehicle (VEH) administration through oral gavage, twice daily (early morning and late afternoon) on PND 26, 27 and 28. Each rat received the mifepristone powder (Sigma-Aldrich Chemie B.V., Zwijndrecht, the Netherlands) dissolved in 15μL 99% ethanol mixed with 1mL coffee cream (Campina, Woerden, the Netherlands) or vehicle by an experimenter that was blind to the treatment group. To minimize litter effects, offspring from each MD and noMD litter were randomly divided between MIF and VEH groups. The cages with the experimental animals were randomly placed in the room and kept under standard housing conditions (dark/light phase 12:12, lights on at 8 a.m., humidity 55±15%, temperature 20–22°C), received food and water <italic>ad libitum</italic> and were weekly handled for 1 minute.</p>
+</sec>
+<sec id="sec004">
+<title>Tissue preparation procedure</title>
+<p>In order to obtain high signal-to-noise ratio and spatial resolution for the structural brain images [<xref ref-type="bibr" rid="pone.0185061.ref029">29</xref>], we conducted post-mortem MRI, for which three months’ old rats (n = 10 per group) were anaesthetized with pentobarbital sodium salt (0.5 ml i.p.) and transcardially perfused with saline (0.9% NaCl) followed by 4% paraformaldehyde (PFA) in phosphate buffer (PB; 0.1 M; pH 7.4). All extracranial tissue was removed and the brains were left in the skulls to minimize the potential risk of deformation. After overnight post-fixation at 4°C, the skulls containing the brains were stored in the refrigerator (4°C) in PB with 0.01% sodium azide until use for high-resolution post-mortem MRI.</p>
+</sec>
+<sec id="sec005">
+<title>MRI acquisition</title>
+<p>Post-mortem high-resolution structural MRI was performed on a 9.4 T horizontal bore MR system (Varian, Palo Alto, CA, USA) equipped with a 6 cm internal diameter (ID) gradient insert with gradients up to 1 T/m. A custom made solenoid coil with an internal diameter of 2.6 cm was used for excitation and reception of the MR signal. The perfusion-fixed brains were inserted with the skulls intact in a custom-made holder and immersed in a proton-free perfluoropolyether solution (Fomblin, Solvay Solexis). Diffusion tensor imaging (DTI) was performed using a 3D diffusion-weighted spin-echo sequence with an isotropic spatial resolution of 150 μm, where the read- and phase- encode directions were acquired using 8-shot Echo Planar Imaging (EPI) encoding and the second phase direction was linearly phase-encoded (repetition time (TR)/echo time (TE) 500/32.4 ms, 220*128*108 matrix, field-of-view (FOV) 33*19.2*16 mm<sup>3</sup>,Δ/δ 15/4 ms, b 3842 s/mm<sup>2</sup>, 60 diffusion-weighted images in non-collinear directions and 5 images without diffusion weighting (b = 0), number of averages 1, total number of images 65). Subsequently, four 3D Balanced Steady-State Free Precession (BSSFP) images were acquired with an isotropic spatial resolution of 100 μm (TR/TE 15.4/7.7 ms, flip angle 40°, 320*160*190 matrix, FOV 32*16*19 mm<sup>3</sup>, 6 averages, pulse angle shift 0°, 90°, 180° and 270°). Total acquisition time was 3 hours and 7 minutes.</p>
+</sec>
+<sec id="sec006">
+<title>Morphometric analysis</title>
+<p>The four BSSFP images were added as complex images to obtain a single BSSFP image with reduced banding artifacts in the brain. To test whether maternal deprivation affected regional brain tissue volumes, the BSSFP images were used to obtain brain masks using Brain Extraction Tool 2 (BET2) as implemented in the FMRIB (Oxford Center for Functional MRI of the Brain) Software Library (FSL) [<xref ref-type="bibr" rid="pone.0185061.ref030">30</xref>]. Subsequently, a template image for morphometry analysis was iteratively computed by applying non-rigid registration of subject images to the current template using FMRIB’s Non-linear Image Registration Tool (FNIRT) after linear registration using FMRIB’s Linear Image Registration Tool (FLIRT) [<xref ref-type="bibr" rid="pone.0185061.ref031">31</xref>,<xref ref-type="bibr" rid="pone.0185061.ref032">32</xref>], both implemented in FSL. The template was generated by (1) non-rigid registration of the images of the noMD/vehicle group to the current template (starting with one image of this group), (2) averaging all the transformed images to generate a new template, (3) repeating the registration procedure for the new template. Representative images are shown in <xref ref-type="fig" rid="pone.0185061.g001">Fig 1A and 1B</xref>.</p>
+<fig id="pone.0185061.g001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0185061.g001</object-id>
+<label>Fig 1</label>
+<caption>
+<title>Representative MR images of the rat brain.</title>
+<p>A) High-resolution post-mortem anatomical images (100 x 100 x 100 μm<sup>3</sup>) of the rat brain template from all experimental animals (n = 40). Individual scans were registered to this template to perform voxel-wise comparisons on brain volume. B) Diffusion tensor imaging-based FA maps (150 x 150 x 150 μm<sup>3</sup>) of the rat brain template. The FA maps were used to analyze structural integrity properties of the white matter. C) ROIs, for example OFC (green), mPFC (purple), corpus callosum (red), dorsomedial striatum (blue) and hippocampus (yellow), depicted on the average rat brain template.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0185061.g001" xlink:type="simple"/>
+</fig>
+<p>We used a region of interest (ROI)-based approach to assess volumetric and white/grey matter properties, as previously described [<xref ref-type="bibr" rid="pone.0185061.ref029">29</xref>]. The following ROIs were chosen based on their prominent role in the stress circuitry and sensitivity to ELS [<xref ref-type="bibr" rid="pone.0185061.ref009">9</xref>,<xref ref-type="bibr" rid="pone.0185061.ref010">10</xref>]: Amygdala, Hippocampus, dorsomedial Striatum (dmStriatum), Prefrontal Cortex (PFC) and its subregions medial PFC (mPFC), Orbitofrontal Cortex (OFC) and Insular Cortex. We also included the whole cerebrum, lateral ventricles and corpus callosum as ROI. The ROIs were drawn on the template image using an in-house developed rat brain atlas based on the stereotaxic atlas from Paxinos and Watson [<xref ref-type="bibr" rid="pone.0185061.ref033">33</xref>] and registered to the individual rat brain images; from this, the size of the ROI in the individual images was obtained (<xref ref-type="fig" rid="pone.0185061.g001">Fig 1C</xref>).</p>
+<p>White and grey matter volumes in regions of interest were determined in the the FA and mean diffusivity maps. Pixels were assigned to white matter if their FA was higher than 0.25 and the mean diffusivity lower than 0.34*10–3 mm2/s, to grey matter if the FA was lower than 0.25 and the mean diffusivity lower than 0.34*10<sup>−3</sup> mm2/s, and to CSF if the FA was lower than 0.25 and the mean diffusivity higher than 0.34*10<sup>−3</sup> mm2/s.</p>
+</sec>
+<sec id="sec007">
+<title>Statistical analysis</title>
+<p>Data were analyzed using a two-way independent ANOVA. The rearing condition (MD or noMD) and intervention (VEH or MIF) were used as independent variables with p &lt; .05 considered to be significant. Tukey’s posthoc test was used where applicable. Data is expressed as mean ± SEM. All statistical analyses were conducted using SPSS version 20.0 (IBM, United States).</p>
+</sec>
+</sec>
+<sec id="sec008" sec-type="results">
+<title>Results</title>
+<sec id="sec009">
+<title>Volumetric analysis after early life stress</title>
+<p>To assess whether MD and/or MIF treatment affected brain structure, we measured total volume of the cerebrum and individual ROIs, based on the high-resolution structural images (<xref ref-type="fig" rid="pone.0185061.g001">Fig 1A and 1C</xref>). The data are presented in <xref ref-type="table" rid="pone.0185061.t001">Table 1</xref>. No significant volumetric changes of the whole cerebrum were found due to MD or MIF treatment. In most of the ROIs, analysis of total volume also did not reveal any changes. In the PFC however, MD significantly reduced volume (main MD effect F(1, 34) = 7.55, p &lt; 0.01), which was not affected by MIF treatment. Subregion analysis of the PFC showed that this effect was mainly present at the level of the OFC and mPFC but not the insular cortex (<xref ref-type="table" rid="pone.0185061.t001">Table 1</xref>). These data indicate that MD specifically reduces the volume of the PFC without affecting the total cerebral volume but that this reduction was not reversed by MIF treatment.</p>
+<table-wrap id="pone.0185061.t001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0185061.t001</object-id>
+<label>Table 1</label> <caption><title>Volumes of the different ROIs based on high-resolution anatomical MRI.</title> <p>N = 10 rats per group. Data represents mean ± SEM in μl and was analyzed using 2-way ANOVA with MD and mifepristone treatment as main factors. Statistical significance based on p-values for the main effect is presented in the last three columns: * p &lt; 0.05, ** p &lt; 0.01, ns = not significant.</p></caption>
+<alternatives>
+<graphic id="pone.0185061.t001g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0185061.t001" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left" style="border-bottom:thick;border-top:thick"/>
+<th align="center" colspan="2" style="border-bottom:thick;border-top:thick">Vehicle</th>
+<th align="center" colspan="2" style="border-bottom:thick;border-top:thick">Mifepristone</th>
+<th align="center" style="border-bottom:thick;border-top:thick">MD</th>
+<th align="center" style="border-bottom:thick;border-top:thick">Treatment</th>
+<th align="center" style="border-bottom:thick;border-top:thick">Interaction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><bold>Volume (μl)</bold></td>
+<td align="center" style="background-color:#D3DFEE"><bold>No MD</bold></td>
+<td align="center" style="background-color:#D3DFEE"><bold>MD</bold></td>
+<td align="center" style="background-color:#D3DFEE"><bold>No MD</bold></td>
+<td align="center" style="background-color:#D3DFEE"><bold>MD</bold></td>
+<td align="center" style="background-color:#D3DFEE"/>
+<td align="center" style="background-color:#D3DFEE"/>
+<td align="center" style="background-color:#D3DFEE"/>
+</tr>
+<tr>
+<td align="left"><bold>Cerebrum</bold></td>
+<td align="center" style="background-color:#D3DFEE">1550.5 ± 10.0</td>
+<td align="center" style="background-color:#D3DFEE">1546.6 ± 11.9</td>
+<td align="center" style="background-color:#D3DFEE">1573.8 ± 16.1</td>
+<td align="center" style="background-color:#D3DFEE">1548.9 ± 15.7</td>
+<td align="center" style="background-color:#D3DFEE">ns</td>
+<td align="center" style="background-color:#D3DFEE">ns</td>
+<td align="center" style="background-color:#D3DFEE">ns</td>
+</tr>
+<tr>
+<td align="left"><bold>Corpus Callosum</bold></td>
+<td align="center">30.4 ± 2.2</td>
+<td align="center">31.3 ± 2.4</td>
+<td align="center">31.0 ± 2.2</td>
+<td align="center">30.5 ± 3.0</td>
+<td align="center">ns</td>
+<td align="center">ns</td>
+<td align="center">ns</td>
+</tr>
+<tr>
+<td align="left"><bold>Lateral Ventricles</bold></td>
+<td align="center" style="background-color:#D3DFEE">40.1 ± 1.8</td>
+<td align="center" style="background-color:#D3DFEE">38.6 ± 0.7</td>
+<td align="center" style="background-color:#D3DFEE">39.6 ± 1.1</td>
+<td align="center" style="background-color:#D3DFEE">38.9 ± 1.3</td>
+<td align="center" style="background-color:#D3DFEE">ns</td>
+<td align="center" style="background-color:#D3DFEE">ns</td>
+<td align="center" style="background-color:#D3DFEE">ns</td>
+</tr>
+<tr>
+<td align="left"><bold>Hippocampus</bold></td>
+<td align="center">91.0 ± 1.1</td>
+<td align="center">91.4 ± 0.7</td>
+<td align="center">91.3 ± 1.2</td>
+<td align="center">90.6 ± 1.4</td>
+<td align="center">ns</td>
+<td align="center">ns</td>
+<td align="center">ns</td>
+</tr>
+<tr>
+<td align="left"><bold>Amygdala</bold></td>
+<td align="center" style="background-color:#D3DFEE">29.2 ± 0.3</td>
+<td align="center" style="background-color:#D3DFEE">29.1 ± 0.3</td>
+<td align="center" style="background-color:#D3DFEE">29.4 ± 0.3</td>
+<td align="center" style="background-color:#D3DFEE">29.6 ± 0.5</td>
+<td align="center" style="background-color:#D3DFEE">ns</td>
+<td align="center" style="background-color:#D3DFEE">ns</td>
+<td align="center" style="background-color:#D3DFEE">ns</td>
+</tr>
+<tr>
+<td align="left"><bold>dmStriatum</bold></td>
+<td align="center">16.8 ± 0.2</td>
+<td align="center">17.0 ± 0.3</td>
+<td align="center">17.6 ± 0.5</td>
+<td align="center">16.6 ± 0.3</td>
+<td align="center">ns</td>
+<td align="center">ns</td>
+<td align="center">ns</td>
+</tr>
+<tr>
+<td align="left"><bold>PFC</bold></td>
+<td align="center" style="background-color:#D3DFEE">101.7 ± 0.4</td>
+<td align="center" style="background-color:#D3DFEE">99.6 ± 0.3</td>
+<td align="center" style="background-color:#D3DFEE">101.4 ± 1.0</td>
+<td align="center" style="background-color:#D3DFEE">98.9 ± 1.1</td>
+<td align="center" style="background-color:#D3DFEE">**</td>
+<td align="center" style="background-color:#D3DFEE">ns</td>
+<td align="center" style="background-color:#D3DFEE">ns</td>
+</tr>
+<tr>
+<td align="right"><italic>OFC</italic></td>
+<td align="center">22.9 ± 0.2</td>
+<td align="center">22.1 ± 0.1</td>
+<td align="center">22.4 ± 0.3</td>
+<td align="center">22.2 ± 0.2</td>
+<td align="center">*</td>
+<td align="center">ns</td>
+<td align="center">ns</td>
+</tr>
+<tr>
+<td align="right"><italic>mPFC</italic></td>
+<td align="center" style="background-color:#D3DFEE">14.4 ± 0.3</td>
+<td align="center" style="background-color:#D3DFEE">13.6 ± 0.2</td>
+<td align="center" style="background-color:#D3DFEE">14.1 ± 0.2</td>
+<td align="center" style="background-color:#D3DFEE">13.1 ± 0.3</td>
+<td align="center" style="background-color:#D3DFEE">**</td>
+<td align="center" style="background-color:#D3DFEE">ns</td>
+<td align="center" style="background-color:#D3DFEE">ns</td>
+</tr>
+<tr>
+<td align="right"><italic>Insular cortex</italic></td>
+<td align="center">48.9 ± 0.3</td>
+<td align="center">48.5 ± 0.5</td>
+<td align="center">49.2 ± 0.7</td>
+<td align="center">48.9 ± 0.4</td>
+<td align="center">ns</td>
+<td align="center">ns</td>
+<td align="center">ns</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+</sec>
+<sec id="sec010">
+<title>Early life stress effects on structural integrity</title>
+<p>Next, we tested whether MD and the observed volumetric changes were accompanied by alterations in the structural integrity of the brain by comparing the relative fractions of white and grey matter within the cerebrum and each region calculated from the DTI-based FA and mean diffusivity maps (Tables <xref ref-type="table" rid="pone.0185061.t002">2</xref> and <xref ref-type="table" rid="pone.0185061.t003">3</xref>). At the level of the whole brain, MD shifted the grey/white matter ratio as result of a lowered relative volume of white matter (F(1,33) = 5.54, p &lt; 0.05), irrespective of the total brain volume (<xref ref-type="table" rid="pone.0185061.t002">Table 2</xref>). No effect or interaction in response to MIF was found. The relative volume of grey matter was not affected (<xref ref-type="table" rid="pone.0185061.t003">Table 3</xref>).</p>
+<table-wrap id="pone.0185061.t002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0185061.t002</object-id>
+<label>Table 2</label> <caption><title>Relative volumes of white matter content to whole cerebrum in the different ROIs (n = 10 per group) calculated from the DTI scan.</title> <p>Data represents percentage of total ROI volume in % (mean ± SEM). Data was analyzed using 2-way ANOVA with MD and mifepristone treatment as main factors. Statistical significance based on p-values for the main effects is presented in the last three columns: * p &lt; 0.05, ** p &lt; 0.01, ns = not significant.</p></caption>
+<alternatives>
+<graphic id="pone.0185061.t002g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0185061.t002" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center" style="border-bottom:thick;border-top:thick">White matter</th>
+<th align="center" colspan="2" style="border-bottom:thick;border-top:thick">Vehicle</th>
+<th align="center" colspan="2" style="border-bottom:thick;border-top:thick">Mifepristone</th>
+<th align="center" style="border-bottom:thick;border-top:thick">MD</th>
+<th align="center" style="border-bottom:thick;border-top:thick">Treatment</th>
+<th align="center" style="border-bottom:thick;border-top:thick">Interaction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><bold>Rel. volume (%)</bold></td>
+<td align="center" style="background-color:#D3DFEE"><bold>No MD</bold></td>
+<td align="center" style="background-color:#D3DFEE"><bold>MD</bold></td>
+<td align="center" style="background-color:#D3DFEE"><bold>No MD</bold></td>
+<td align="center" style="background-color:#D3DFEE"><bold>MD</bold></td>
+<td align="center" style="background-color:#D3DFEE"/>
+<td align="center" style="background-color:#D3DFEE"/>
+<td align="left" style="background-color:#D3DFEE"/>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left"><bold>Cerebrum</bold></td>
+<td align="center" style="background-color:#D3DFEE">13.3 ± 0.41</td>
+<td align="center" style="background-color:#D3DFEE">12.3 ± 0.22</td>
+<td align="center" style="background-color:#D3DFEE">12.5 ± 0.50</td>
+<td align="center" style="background-color:#D3DFEE">11.3 ± 0.60</td>
+<td align="center" style="background-color:#D3DFEE">*</td>
+<td align="center" style="background-color:#D3DFEE">ns</td>
+<td align="center" style="background-color:#D3DFEE">ns</td>
+</tr>
+<tr>
+<td align="left"><bold>Corpus Callosum</bold></td>
+<td align="center">78.3 ± 1.39</td>
+<td align="center">77.5 ± 0.60</td>
+<td align="center">76.9 ±1.06</td>
+<td align="center">76.4 ± 1.34</td>
+<td align="center">ns</td>
+<td align="center">ns</td>
+<td align="center">ns</td>
+</tr>
+<tr>
+<td align="left"><bold>Hippocampus</bold></td>
+<td align="center" style="background-color:#D3DFEE">11.0 ± 0.18</td>
+<td align="center" style="background-color:#D3DFEE">10.6 ± 0.32</td>
+<td align="center" style="background-color:#D3DFEE">10.2 ± 0.30</td>
+<td align="center" style="background-color:#D3DFEE">9.58 ± 0.38</td>
+<td align="center" style="background-color:#D3DFEE">p = 0.06</td>
+<td align="center" style="background-color:#D3DFEE">*</td>
+<td align="center" style="background-color:#D3DFEE">ns</td>
+</tr>
+<tr>
+<td align="left"><bold>Amygdala</bold></td>
+<td align="center">3.92 ± 0.82</td>
+<td align="center">2.99 ± 0.36</td>
+<td align="center">3.09 ± 0.44</td>
+<td align="center">2.26 ± 0.51</td>
+<td align="center">ns</td>
+<td align="center">ns</td>
+<td align="center">ns</td>
+</tr>
+<tr>
+<td align="left"><bold>dmStriatum</bold></td>
+<td align="center" style="background-color:#D3DFEE">2.40 ± 0.23</td>
+<td align="center" style="background-color:#D3DFEE">1.71 ± 0.13</td>
+<td align="center" style="background-color:#D3DFEE">2.14 ± 0.24</td>
+<td align="center" style="background-color:#D3DFEE">1.47 ± 0.22</td>
+<td align="center" style="background-color:#D3DFEE">**</td>
+<td align="center" style="background-color:#D3DFEE">ns</td>
+<td align="center" style="background-color:#D3DFEE">ns</td>
+</tr>
+<tr>
+<td align="left"><bold>PFC</bold></td>
+<td align="center">1.23 ± 0.16</td>
+<td align="center">0.77 ± 0.14</td>
+<td align="center">0.78 ± 0.14</td>
+<td align="center">0.49 ± 0.14</td>
+<td align="center">*</td>
+<td align="center">*</td>
+<td align="center">ns</td>
+</tr>
+<tr>
+<td align="right"><italic>OFC</italic></td>
+<td align="center" style="background-color:#D3DFEE">2.80 ± 0.29</td>
+<td align="center" style="background-color:#D3DFEE">2.10 ± 0.31</td>
+<td align="center" style="background-color:#D3DFEE">2.32 ± 0.38</td>
+<td align="center" style="background-color:#D3DFEE">1.28 ± 0.31</td>
+<td align="center" style="background-color:#D3DFEE">*</td>
+<td align="center" style="background-color:#D3DFEE">ns</td>
+<td align="center" style="background-color:#D3DFEE">ns</td>
+</tr>
+<tr>
+<td align="right"><italic>mPFC</italic></td>
+<td align="center">1.57 ± 0.24</td>
+<td align="center">1.11 ± 0.18</td>
+<td align="center">0.89 ± 0.15</td>
+<td align="center">0.81 ± 0.20</td>
+<td align="center">ns</td>
+<td align="center">*</td>
+<td align="center">ns</td>
+</tr>
+<tr>
+<td align="right"><italic>Insular cortex</italic></td>
+<td align="center" style="background-color:#D3DFEE">2.08 ± 0.27</td>
+<td align="center" style="background-color:#D3DFEE">1.37 ± 0.18</td>
+<td align="center" style="background-color:#D3DFEE">1.34 ± 0.36</td>
+<td align="center" style="background-color:#D3DFEE">0.98 ± 0.27</td>
+<td align="center" style="background-color:#D3DFEE">ns</td>
+<td align="center" style="background-color:#D3DFEE">ns</td>
+<td align="center" style="background-color:#D3DFEE">ns</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<table-wrap id="pone.0185061.t003" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0185061.t003</object-id>
+<label>Table 3</label> <caption><title>Relative volumes of grey matter content to whole cerebrum in the different ROIs (n = 10 per group) calculated from the DTI scan.</title> <p>Data represents percentage of total ROI volume in % (mean ± SEM). Data was analyzed using 2-way ANOVA with MD and mifepristone treatment as main factors. Statistical significance based on p-values for the main effects are described in the last three columns: * p &lt; 0.05, ** p &lt; 0.01, ns = not significant.</p></caption>
+<alternatives>
+<graphic id="pone.0185061.t003g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0185061.t003" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center" style="border-bottom:thick;border-top:thick">Grey matter</th>
+<th align="center" colspan="2" style="border-bottom:thick;border-top:thick">Vehicle</th>
+<th align="center" colspan="2" style="border-bottom:thick;border-top:thick">Mifepristone</th>
+<th align="center" style="border-bottom:thick;border-top:thick">MD</th>
+<th align="center" style="border-bottom:thick;border-top:thick">Treatment</th>
+<th align="center" style="border-bottom:thick;border-top:thick">Interaction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><bold>Rel. volume (%)</bold></td>
+<td align="center" style="background-color:#D3DFEE"><bold>No MD</bold></td>
+<td align="center" style="background-color:#D3DFEE"><bold>MD</bold></td>
+<td align="center" style="background-color:#D3DFEE"><bold>No MD</bold></td>
+<td align="center" style="background-color:#D3DFEE"><bold>MD</bold></td>
+<td align="center" style="background-color:#D3DFEE"/>
+<td align="center" style="background-color:#D3DFEE"/>
+<td align="center" style="background-color:#D3DFEE"/>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left"><bold>Cerebrum</bold></td>
+<td align="center" style="background-color:#D3DFEE">86.8 ± 0.73</td>
+<td align="center" style="background-color:#D3DFEE">87.0 ± 0.25</td>
+<td align="center" style="background-color:#D3DFEE">86.9 ± 0.50</td>
+<td align="center" style="background-color:#D3DFEE">87.6 ± 0.64</td>
+<td align="center" style="background-color:#D3DFEE">ns</td>
+<td align="center" style="background-color:#D3DFEE">ns</td>
+<td align="center" style="background-color:#D3DFEE">ns</td>
+</tr>
+<tr>
+<td align="left"><bold>Corpus Callosum</bold></td>
+<td align="center">21.6 ± 1.39</td>
+<td align="center">22.5 ± 0.59</td>
+<td align="center">23.1 ± 1.07</td>
+<td align="center">23.6 ± 1.34</td>
+<td align="center">ns</td>
+<td align="center">ns</td>
+<td align="center">ns</td>
+</tr>
+<tr>
+<td align="left"><bold>Hippocampus</bold></td>
+<td align="center" style="background-color:#D3DFEE">90.3 ± 0.98</td>
+<td align="center" style="background-color:#D3DFEE">89.3 ± 0.32</td>
+<td align="center" style="background-color:#D3DFEE">90.1 ± 0.44</td>
+<td align="center" style="background-color:#D3DFEE">91.2 ± 0.86</td>
+<td align="center" style="background-color:#D3DFEE">ns</td>
+<td align="center" style="background-color:#D3DFEE">ns</td>
+<td align="center" style="background-color:#D3DFEE">ns</td>
+</tr>
+<tr>
+<td align="left"><bold>Amygdala</bold></td>
+<td align="center">97.0 ± 0.58</td>
+<td align="center">97.0 ± 0.36</td>
+<td align="center">97.1 ± 0.46</td>
+<td align="center">97.7 ± 0.51</td>
+<td align="center">ns</td>
+<td align="center">ns</td>
+<td align="center">ns</td>
+</tr>
+<tr>
+<td align="left"><bold>dmStriatum</bold></td>
+<td align="center" style="background-color:#D3DFEE">97.8 ± 0.27</td>
+<td align="center" style="background-color:#D3DFEE">98.2 ± 0.13</td>
+<td align="center" style="background-color:#D3DFEE">97.9 ± 0.23</td>
+<td align="center" style="background-color:#D3DFEE">98.0 ± 0.35</td>
+<td align="center" style="background-color:#D3DFEE">ns</td>
+<td align="center" style="background-color:#D3DFEE">ns</td>
+<td align="center" style="background-color:#D3DFEE">ns</td>
+</tr>
+<tr>
+<td align="left"><bold>PFC</bold></td>
+<td align="center">98.8 ± 0.16</td>
+<td align="center">99.0 ± 0.18</td>
+<td align="center">99.2 ± 0.15</td>
+<td align="center">99.3 ± 0.17</td>
+<td align="center">ns</td>
+<td align="center">ns</td>
+<td align="center">ns</td>
+</tr>
+<tr>
+<td align="right"><italic>OFC</italic></td>
+<td align="center" style="background-color:#D3DFEE">97.4 ± 0.35</td>
+<td align="center" style="background-color:#D3DFEE">97.8 ± 0.34</td>
+<td align="center" style="background-color:#D3DFEE">97.6 ± 0.39</td>
+<td align="center" style="background-color:#D3DFEE">98.4 ± 0.38</td>
+<td align="center" style="background-color:#D3DFEE">ns</td>
+<td align="center" style="background-color:#D3DFEE">ns</td>
+<td align="center" style="background-color:#D3DFEE">ns</td>
+</tr>
+<tr>
+<td align="right"><italic>mPFC</italic></td>
+<td align="center">98.2 ± 0.25</td>
+<td align="center">98.4 ± 0.25</td>
+<td align="center">98.9 ± 0.16</td>
+<td align="center">99.0 ± 0.20</td>
+<td align="center">ns</td>
+<td align="center">**</td>
+<td align="center">ns</td>
+</tr>
+<tr>
+<td align="right"><italic>Insular cortex</italic></td>
+<td align="center" style="background-color:#D3DFEE">97.9 ± 0.35</td>
+<td align="center" style="background-color:#D3DFEE">98.2 ± 0.25</td>
+<td align="center" style="background-color:#D3DFEE">98.5 ± 0.36</td>
+<td align="center" style="background-color:#D3DFEE">98.4 ± 0.38</td>
+<td align="center" style="background-color:#D3DFEE">ns</td>
+<td align="center" style="background-color:#D3DFEE">ns</td>
+<td align="center" style="background-color:#D3DFEE">ns</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<p>To assess whether this was a general effect or whether there were specific changes in any of the ROIs, we also compared the relative grey and white volumes in specific brain regions. In the dorsomedial striatum (F(1,31) = 9.69, p &lt; 0.01) and PFC (F(1,31) = 5.74, p &lt; 0.05), MD significantly reduced relative white matter volume, while we found a trend in the hippocampus (p = 0.06). Subregion analysis showed that within the PFC, MD mainly affected the OFC (F(1,33) = 6.63, p &lt; 0.05). Interestingly, while we did not find an interaction effect, MIF treatment itself reduced relative white matter volume in the PFC (F(1,31) = 5.44, p &lt; 0.05), more specifically in the mPFC (F(1,33) = 5.92, p &lt; 0.05). Similar results were found for hippocampus (F(1,33) = 5.28, p &lt; 0.05) (<xref ref-type="table" rid="pone.0185061.t002">Table 2</xref>). In the corpus callosum, insular cortex and amygdala we did not find changes in either the relative white or grey matter volumes (Tables <xref ref-type="table" rid="pone.0185061.t002">2</xref> and <xref ref-type="table" rid="pone.0185061.t003">3</xref>).</p>
+<p>We next aimed to identify whether the changes in white or grey matter fraction were accompanied by altered structural characteristics, using voxel-wise comparison of the DTI-based mean diffusivity, and fractional anisotropy (FA) or volumetric analysis within each ROI (<xref ref-type="fig" rid="pone.0185061.g001">Fig 1B and 1C</xref>, <xref ref-type="table" rid="pone.0185061.t004">Table 4</xref>). This analysis did not reveal any significant differences between the groups (<xref ref-type="table" rid="pone.0185061.t004">Table 4</xref>).</p>
+<table-wrap id="pone.0185061.t004" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0185061.t004</object-id>
+<label>Table 4</label> <caption><title>Mean diffusivity (10<sup>−3</sup> mm<sup>2</sup>/s) and FA per ROI calculated from the DTI scan.</title> <p>Data is expressed as mean ± SEM (n = 10 per group) and was analyzed using 2-way ANOVA with MD and mifepristone treatment as factors. Statistical significance of main effects is shown in the last three columns (ns = not significant).</p></caption>
+<alternatives>
+<graphic id="pone.0185061.t004g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0185061.t004" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left" style="border-bottom:thick;border-top:thick"/>
+<th align="center" colspan="2" style="border-bottom:thick;border-top:thick">Vehicle</th>
+<th align="center" colspan="2" style="border-bottom:thick;border-top:thick">Mifepristone</th>
+</tr>
+<tr>
+<th align="center"/>
+<th align="center" style="background-color:#D3DFEE">No MD</th>
+<th align="center" style="background-color:#D3DFEE">MD</th>
+<th align="center" style="background-color:#D3DFEE">No MD</th>
+<th align="center" style="background-color:#D3DFEE">MD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><underline><bold>Mean Diffusivity</bold></underline></td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+</tr>
+<tr>
+<td align="left"><bold>Corpus Callosum</bold></td>
+<td align="center" style="background-color:#D3DFEE">0.20 ± 0.02</td>
+<td align="center" style="background-color:#D3DFEE">0.20 ± 0.01</td>
+<td align="center" style="background-color:#D3DFEE">0.20 ± 0.02</td>
+<td align="center" style="background-color:#D3DFEE">0.20 ± 0.01</td>
+</tr>
+<tr>
+<td align="left"><bold>Hippocampus</bold></td>
+<td align="center">0.29 ± 0.01</td>
+<td align="center">0.29 ± 0.003</td>
+<td align="center">0.30 ± 0.01</td>
+<td align="center">0.29 ± 0.01</td>
+</tr>
+<tr>
+<td align="left"><bold>Amygdala</bold></td>
+<td align="center" style="background-color:#D3DFEE">0.26 ± 0.01</td>
+<td align="center" style="background-color:#D3DFEE">0.26 ± 0.004</td>
+<td align="center" style="background-color:#D3DFEE">0.27 ± 0.01</td>
+<td align="center" style="background-color:#D3DFEE">0.26 ± 0.01</td>
+</tr>
+<tr>
+<td align="left"><bold>dmStriatum</bold></td>
+<td align="center">0.26 ± 0.01</td>
+<td align="center">0.26 ± 0.004</td>
+<td align="center">0.26 ± 0.01</td>
+<td align="center">0.26 ± 0.01</td>
+</tr>
+<tr>
+<td align="left"><bold>PFC</bold></td>
+<td align="center" style="background-color:#D3DFEE">0.25 ± 0.01</td>
+<td align="center" style="background-color:#D3DFEE">0.26 ± 0.01</td>
+<td align="center" style="background-color:#D3DFEE">0.26 ± 0.01</td>
+<td align="center" style="background-color:#D3DFEE">0.26 ± 0.01</td>
+</tr>
+<tr>
+<td align="right"><italic>OFC</italic></td>
+<td align="center">0.24 ± 0.01</td>
+<td align="center">0.25 ± 0.01</td>
+<td align="center">0.24 ± 0.01</td>
+<td align="center">0.25 ± 0.01</td>
+</tr>
+<tr>
+<td align="right"><italic>mPFC</italic></td>
+<td align="center" style="background-color:#D3DFEE">0.24 ± 0.01</td>
+<td align="center" style="background-color:#D3DFEE">0.25 ± 0.01</td>
+<td align="center" style="background-color:#D3DFEE">0.24 ± 0.01</td>
+<td align="center" style="background-color:#D3DFEE">0.25 ± 0.01</td>
+</tr>
+<tr>
+<td align="right"><italic>Insular cortex</italic></td>
+<td align="center">0.24 ± 0.01</td>
+<td align="center">0.25 ± 0.01</td>
+<td align="center">0.25 ± 0.01</td>
+<td align="center">0.25 ± 0.01</td>
+</tr>
+<tr>
+<td align="left"><underline><bold>Mean FA</bold></underline></td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+</tr>
+<tr>
+<td align="left"><bold>Corpus Callosum</bold></td>
+<td align="center" style="background-color:#D3DFEE">0.52 ± 0.046</td>
+<td align="center" style="background-color:#D3DFEE">0.52 ± 0.012</td>
+<td align="center" style="background-color:#D3DFEE">0.52 ± 0.027</td>
+<td align="center" style="background-color:#D3DFEE">0.50 ± 0.045</td>
+</tr>
+<tr>
+<td align="left"><bold>Hippocampus</bold></td>
+<td align="center">0.23 ± 0.004</td>
+<td align="center">0.24 ± 0.002</td>
+<td align="center">0.23 ± 0.002</td>
+<td align="center">0.23 ± 0.005</td>
+</tr>
+<tr>
+<td align="left"><bold>Amygdala</bold></td>
+<td align="center" style="background-color:#D3DFEE">0.23 ± 0.007</td>
+<td align="center" style="background-color:#D3DFEE">0.22 ± 0.004</td>
+<td align="center" style="background-color:#D3DFEE">0.22 ± 0.005</td>
+<td align="center" style="background-color:#D3DFEE">0.22 ± 0.008</td>
+</tr>
+<tr>
+<td align="left"><bold>dmStriatum</bold></td>
+<td align="center">0.18 ± 0.004</td>
+<td align="center">0.18 ± 0.002</td>
+<td align="center">0.18 ± 0.004</td>
+<td align="center">0.18 ± 0.005</td>
+</tr>
+<tr>
+<td align="left"><bold>PFC</bold></td>
+<td align="center" style="background-color:#D3DFEE">0.20 ± 0.004</td>
+<td align="center" style="background-color:#D3DFEE">0.20 ± 0.003</td>
+<td align="center" style="background-color:#D3DFEE">0.19 ± 0.003</td>
+<td align="center" style="background-color:#D3DFEE">0.19 ± 0.005</td>
+</tr>
+<tr>
+<td align="right"><italic>OFC</italic></td>
+<td align="center">0.20 ± 0.004</td>
+<td align="center">0.20 ± 0.003</td>
+<td align="center">0.20 ± 0.002</td>
+<td align="center">0.20 ± 0.005</td>
+</tr>
+<tr>
+<td align="right"><italic>mPFC</italic></td>
+<td align="center" style="background-color:#D3DFEE">0.20 ± 0.005</td>
+<td align="center" style="background-color:#D3DFEE">0.20 ± 0.004</td>
+<td align="center" style="background-color:#D3DFEE">0.19 ± 0.004</td>
+<td align="center" style="background-color:#D3DFEE">0.19 ± 0.004</td>
+</tr>
+<tr>
+<td align="right"><italic>Insular cortex</italic></td>
+<td align="center">0.20 ± 0.004</td>
+<td align="center">0.20 ± 0.003</td>
+<td align="center">0.19 ± 0.004</td>
+<td align="center">0.19 ± 0.006</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<p>Altogether these data indicate that MD specifically affected the ratio between white and grey matter, by decreasing white (relative to gray) matter volume in the cerebrum as a whole, and more specifically in the dorsomedial striatum and PFC. This was however not accompanied by significant changes in the regional FA or mean diffusivity.</p>
+</sec>
+</sec>
+<sec id="sec011" sec-type="conclusions">
+<title>Discussion</title>
+<p>In the present study we investigated the effect of early life stress (by 24 h MD at PND 3) on the structural integrity of the adult rodent brain. We demonstrate that MD was associated with relatively modest regional volumetric changes and shifts in grey:white matter ratios, none of which were normalized by transient blockade of glucocorticoid receptors during adolescence.</p>
+<sec id="sec012">
+<title>Experimental paradigm</title>
+<p>In the current study we chose to study behaviorally naïve animals to exclude any possible confounding task-inducing effects on structural integrity and brain volume. Although we did not examine any stress-sensitive parameters (e.g. corticosterone level) in the presently used batch of animals, we have no reason to doubt the effectiveness of the MD paradigm. Earlier this procedure was shown to be sufficiently severe to significantly reduce body weight, increase levels of corticosterone [<xref ref-type="bibr" rid="pone.0185061.ref034">34</xref>], alter glucocorticoid receptor expression (in the mPFC) and affect glutamatergic transmission (Loi et al. unpublished observation; study performed in parallel). Moreover, this paradigm was also shown to severely impair the behavioral performance of rats, as shown e.g. by deficits in memory formation [<xref ref-type="bibr" rid="pone.0185061.ref034">34</xref>].</p>
+<p>Although some brain regions seem sensitive to MD, MIF was not effective in normalizing the effects of early life stress on structure. The discrepancies between the current and earlier studies cannot be explained by assuming that MIF in general is ineffective in targeting structural plasticity. Earlier, it was reported that brief treatment with MIF is able to ameliorate the effects caused by exposure to chronic stress in adulthood on rat hippocampal structural plasticity [<xref ref-type="bibr" rid="pone.0185061.ref035">35</xref>]. Moreover, a recent study demonstrated that brief MIF treatment during early adolescence can fully reverse the behavioral phenotype induced by early life stress [<xref ref-type="bibr" rid="pone.0185061.ref027">27</xref>]. The treatment window in that study was selected based on the high sensitivity of the brain and the HPA axis during this critical time window [<xref ref-type="bibr" rid="pone.0185061.ref026">26</xref>]. MIF is not only effective in ameliorating behavioral effects of stress in rodents but also in humans, where this compound has shown its effectiveness in alleviating the symptoms of major depression and bipolar disorder [<xref ref-type="bibr" rid="pone.0185061.ref036">36</xref>,<xref ref-type="bibr" rid="pone.0185061.ref037">37</xref>]. We cannot exclude, however, that the ineffectiveness of MIF to normalize the subtle effects of MD in the current study was related to the selected MIF administration paradigm.</p>
+</sec>
+<sec id="sec013">
+<title>Regional structural effects of maternal deprivation</title>
+<p>Interestingly, the volume of the prefrontal cortex was found to be reduced after MD. More specifically, the medial PFC and the orbitofrontal cortex were identified as the subregions with the most pronounced volumetric reduction, although the effects were relatively small. This is in line with other studies in humans which report volumetric reduction in the medial prefrontal cortex [<xref ref-type="bibr" rid="pone.0185061.ref038">38</xref>] and orbitofrontal cortex [<xref ref-type="bibr" rid="pone.0185061.ref039">39</xref>] in stress-related mental illnesses such as post-traumatic stress disorder and major depression. Particularly the finding in the mPFC fits with its role in regulating the endocrine stress response and the regulation of adaptive coping responses to stress [<xref ref-type="bibr" rid="pone.0185061.ref040">40</xref>]. Additionally, regions of the PFC such as the orbital, medial and cingulate cortex are strongly involved in the allostatic processes [<xref ref-type="bibr" rid="pone.0185061.ref041">41</xref>]. Furthermore, as shown in earlier rat studies, the mPFC appears to be a major target area of glucocorticoids, since three weeks of corticosterone treatment (in rats) led to dramatic changes at the microscopic structural level, such as dendritic tree atrophy [<xref ref-type="bibr" rid="pone.0185061.ref042">42</xref>] and reduced spine density [<xref ref-type="bibr" rid="pone.0185061.ref043">43</xref>]. Prefrontal cortex dendritic remodeling due to stress is also hypothesized to be involved in deficits in attentional control that are seen in stress-related pathologies [<xref ref-type="bibr" rid="pone.0185061.ref044">44</xref>]. Interestingly, rodent studies employing chronic stress in adulthood showed opposite effects in the mPFC compared to OFC. While reduction in dendritic complexity was shown in the former area–which would be compatible with a reduced volume- increased complexity was described in the latter. In our study we did not observe opposite but rather comparable effects of MD in these two areas. Obviously, prolonged corticosterone-overexposure in adulthood does not necessarily induce similar effects as a brief period of MD early in life. Moreover, although changes in the microstructure such as dendritic complexity may be identified from altered FA or mean diffusivity values, previous MRI studies on chronic stress in rodents have shown that they cannot be directly translated into volumetric changes [<xref ref-type="bibr" rid="pone.0185061.ref029">29</xref>]. Yet, the here reported effects on volume, particularly in these two PFC ROIs, are in line with volumetric studies in humans.</p>
+<p>Notably, while MD modestly yet specifically reduced PFC volume we did not find concomitant compensatory changes in other regions such as the ventricles. This may be attributed to the differences in susceptibility to early life stress in relation to timing of the model and the developmental rate of different brain regions. In that respect, MD did result in a slightly smaller cerebrum volume, though not statistically significant. This however may indicate that brain development may be impaired in some regions overall but not in those that were specifically included in this study. The present design also did not lead to extensive volumetric changes in areas involved in memory formation (such as the hippocampus) or in the control of emotions (e.g. the amygdala). The human literature on volumetric changes in the hippocampus and amygdala after adverse conditions, however, is quite diverse [<xref ref-type="bibr" rid="pone.0185061.ref020">20</xref>], both in the adult and younger population. For instance, exposure to aggressive maternal behavioral did not lead to changes in hippocampal volume when assessed during adolescence [<xref ref-type="bibr" rid="pone.0185061.ref019">19</xref>,<xref ref-type="bibr" rid="pone.0185061.ref045">45</xref>] whereas a decrease was reported in other studies [<xref ref-type="bibr" rid="pone.0185061.ref046">46</xref>,<xref ref-type="bibr" rid="pone.0185061.ref047">47</xref>]. Others using rodent models for chronic stress early or later in life have also found more robust changes in hippocampal volume or integrity [<xref ref-type="bibr" rid="pone.0185061.ref048">48</xref>,<xref ref-type="bibr" rid="pone.0185061.ref049">49</xref>]. The differences in outcomes may be attributed to discrepancy in age of the animal, type and timing of the stress model which may impact on different developmental windows of susceptible brain areas and circuits.</p>
+<p>Concerning the amygdala, the same inconsistency has been found in human studies, where some report a link between early life stressors and increased amygdaloid volume [<xref ref-type="bibr" rid="pone.0185061.ref019">19</xref>] whereas other studies show either a reduction [<xref ref-type="bibr" rid="pone.0185061.ref047">47</xref>] or no differences at all [<xref ref-type="bibr" rid="pone.0185061.ref050">50</xref>–<xref ref-type="bibr" rid="pone.0185061.ref052">52</xref>]. Chronic stress exposure in adult rodents generally resulted in an enlarged amygdala volume [<xref ref-type="bibr" rid="pone.0185061.ref053">53</xref>,<xref ref-type="bibr" rid="pone.0185061.ref054">54</xref>]. As pointed out above though, chronic stress in adulthood is not necessarily expected to induce the same effect as 24h maternal deprivation early in life.</p>
+<p>In addition to these volumetric changes, voxel-based morphometry revealed that exposure to maternal deprivation resulted in aberrant white matter volume. A wide range of mental illnesses, including neurodevelopmental and cognitive disorders, have been related with white and grey matter defects; and some authors support the theory that myelin abnormalities affect processing and cognition [<xref ref-type="bibr" rid="pone.0185061.ref055">55</xref>]. In line with this, results from human neuroimaging studies reported an association between early life stress and alteration in the white and grey matter volume in stress-sensitive brain areas in adulthood [<xref ref-type="bibr" rid="pone.0185061.ref021">21</xref>,<xref ref-type="bibr" rid="pone.0185061.ref022">22</xref>,<xref ref-type="bibr" rid="pone.0185061.ref047">47</xref>]. In our study, MD-induced decreases in white matter fraction were found while grey matter fractions seemed largely unaffected. This decrease in relative white matter content was apparent for the whole cerebrum but we also report abnormalities at the level of single brain areas such as the PFC and dorsomedial striatum and at trend level for the hippocampus. In that respect, the volumetric decrease in PFC may be attributed to a smaller white matter fraction in this brain. Although the underlying mechanism is unclear, MD has been shown to increase cell death in white matters tracts of the cortex and dentate gyrus [<xref ref-type="bibr" rid="pone.0185061.ref056">56</xref>], which could affect connectivity processes related to behavior.</p>
+<p>In the hippocampus, we found a trend towards decreased relative white matter volume. Although not significant, this finding is in line with most literature on human hippocampus. Frodl and colleagues reported a reduction in hippocampal white matter in patients suffering from major depression who also experienced emotional neglect during childhood [<xref ref-type="bibr" rid="pone.0185061.ref016">16</xref>,<xref ref-type="bibr" rid="pone.0185061.ref057">57</xref>].</p>
+<p>In the current study we did not observe major changes in grey matter volume in the cerebrum or ROIs which was a somewhat unexpected finding. Human studies have shown that childhood maltreatments are associated with a reduction in grey matter in several brain areas including subregions of the striatum, PFC and hippocampus [<xref ref-type="bibr" rid="pone.0185061.ref058">58</xref>,<xref ref-type="bibr" rid="pone.0185061.ref059">59</xref>]. It should be noted that the changes in grey and white volume fractions that we report were not accompanied by significant changes in diffusion parameters measured from subsequent DTI analysis. This suggests that the structural integrity of these brain regions remained largely preserved at macroscopic level. Alternatively, a recent paper by Yan et al showed that maternal maltreatment specifically affect functional connectivity in the amygdala-PFC pathway during development [<xref ref-type="bibr" rid="pone.0185061.ref060">60</xref>]. As we were not able to perform functional analysis on post-mortem tissue it is possible that the MD procedure is more likely to affect functional connectivity even though we did not observe any changes on structural plasticity.</p>
+</sec>
+<sec id="sec014">
+<title>Concluding remarks</title>
+<p>We here present one of the few studies where the effects of early life stress are investigated at the level of macroscopic structure and structural integrity in the rat brain, using high-resolution magnetic resonance imaging. We only observed subtle structural effects in areas expected to be sensitive to MD, based on earlier studies involving early life stress or chronic stress in adulthood [<xref ref-type="bibr" rid="pone.0185061.ref029">29</xref>,<xref ref-type="bibr" rid="pone.0185061.ref034">34</xref>]. Although the within-group variation was quite low, we cannot exclude that more pronounced effects would be discernable when applying a within-subjects design, rather than the current cross-sectional between-subjects approach; this may be one of the explanations why e.g. MRI studies investigating effects of chronic stress reported no structural changes in between-subjects comparisons [<xref ref-type="bibr" rid="pone.0185061.ref029">29</xref>], whereas such changes did show up in within-subjects comparisons [<xref ref-type="bibr" rid="pone.0185061.ref061">61</xref>]. Clearly, our (post-mortem) high-resolution anatomical investigations are not compatible with repeated within-subjects measurements.</p>
+<p>Future studies would need to examine whether alterations in morphology, synaptic plasticity and reduction in volume of specific brain areas are also related to altered connectivity in the rodent brain. Clearly, more studies where the effects of stress early in life (in rodents) are consecutively assessed in both behavioral, macroscopic and connectivity outcome are necessary to improve our understanding of how early life stress can lead to abnormalities in the developing brain. Given the bias of specific mental illnesses towards the female population, such studies should also be carried out in females exposed to early life stress conditions.</p>
+</sec>
+</sec>
+</body>
+<back>
+<ref-list>
+<title>References</title>
+<ref id="pone.0185061.ref001"><label>1</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Pechtel</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Pizzagalli</surname> <given-names>DA</given-names></name>. <article-title>Effects of early life stress on cognitive and affective function: an integrated review of human literature</article-title>. <source>Psychopharmacology (Berl)</source> <year>2011</year>; <volume>214</volume>: <fpage>55</fpage>–<lpage>70</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1007/s00213-010-2009-2" xlink:type="simple">10.1007/s00213-010-2009-2</ext-link></comment> <object-id pub-id-type="pmid">20865251</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref002"><label>2</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hedges</surname> <given-names>DW</given-names></name>, <name name-style="western"><surname>Woon</surname> <given-names>FL</given-names></name>. <article-title>Early-life stress and cognitive outcome</article-title>. <source>Psychopharmacology (Berl)</source> <year>2011</year>; <volume>214</volume>: <fpage>121</fpage>–<lpage>130</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1007/s00213-010-2090-6" xlink:type="simple">10.1007/s00213-010-2090-6</ext-link></comment> <object-id pub-id-type="pmid">21107538</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref003"><label>3</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Naninck</surname> <given-names>EF</given-names></name>, <name name-style="western"><surname>Hoeijmakers</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Kakava-Georgiadou</surname> <given-names>N</given-names></name>, <name name-style="western"><surname>Meesters</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Lazic</surname> <given-names>SE</given-names></name>, <name name-style="western"><surname>Lucassen</surname> <given-names>PJ</given-names></name>, <etal>et al</etal>. <article-title>Chronic early life stress alters developmental and adult neurogenesis and impairs cognitive function in mice</article-title>. <source>Hippocampus</source> <year>2015</year>; <volume>25</volume>: <fpage>309</fpage>–<lpage>328</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1002/hipo.22374" xlink:type="simple">10.1002/hipo.22374</ext-link></comment> <object-id pub-id-type="pmid">25269685</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref004"><label>4</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lupien</surname> <given-names>SJ</given-names></name>, <name name-style="western"><surname>McEwen</surname> <given-names>BS</given-names></name>, <name name-style="western"><surname>Gunnar</surname> <given-names>MR</given-names></name>, <name name-style="western"><surname>Heim</surname> <given-names>C</given-names></name>. <article-title>Effects of stress throughout the lifespan on the brain, behaviour and cognition</article-title>. <source>Nat Rev Neurosci</source> <year>2009</year>; <volume>10</volume>: <fpage>434</fpage>–<lpage>445</lpage>. nrn2639 [pii]; <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1038/nrn2639" xlink:type="simple">10.1038/nrn2639</ext-link></comment> <object-id pub-id-type="pmid">19401723</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref005"><label>5</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Heim</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Nemeroff</surname> <given-names>CB</given-names></name>. <article-title>The role of childhood trauma in the neurobiology of mood and anxiety disorders: preclinical and clinical studies</article-title>. <source>Biol Psychiatry</source> <year>2001</year>; <volume>49</volume>: <fpage>1023</fpage>–<lpage>1039</lpage>. S000632230101157X [pii]. <object-id pub-id-type="pmid">11430844</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref006"><label>6</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Halligan</surname> <given-names>SL</given-names></name>, <name name-style="western"><surname>Herbert</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Goodyer</surname> <given-names>I</given-names></name>, <name name-style="western"><surname>Murray</surname> <given-names>L</given-names></name>. <article-title>Disturbances in morning cortisol secretion in association with maternal postnatal depression predict subsequent depressive symptomatology in adolescents</article-title>. <source>Biol Psychiatry</source> <year>2007</year>; <volume>62</volume>: <fpage>40</fpage>–<lpage>46</lpage>. S0006-3223(06)01143-7 [pii]; <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.biopsych.2006.09.011" xlink:type="simple">10.1016/j.biopsych.2006.09.011</ext-link></comment> <object-id pub-id-type="pmid">17188253</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref007"><label>7</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Admon</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Leykin</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Lubin</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Engert</surname> <given-names>V</given-names></name>, <name name-style="western"><surname>Andrews</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Pruessner</surname> <given-names>J</given-names></name>, <etal>et al</etal>.<article-title>Stress-induced reduction in hippocampal volume and connectivity with the ventromedial prefrontal cortex are related to maladaptive responses to stressful military service</article-title>. <source>Hum Brain Mapp</source> <year>2013</year>; <volume>34</volume>: <fpage>2808</fpage>–<lpage>2816</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1002/hbm.22100" xlink:type="simple">10.1002/hbm.22100</ext-link></comment> <object-id pub-id-type="pmid">22807242</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref008"><label>8</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ansell</surname> <given-names>EB</given-names></name>, <name name-style="western"><surname>Rando</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Tuit</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Guarnaccia</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Sinha</surname> <given-names>R</given-names></name>. <article-title>Cumulative adversity and smaller gray matter volume in medial prefrontal, anterior cingulate, and insula regions</article-title>. <source>Biol Psychiatry</source> <year>2012</year>; <volume>72</volume>: <fpage>57</fpage>–<lpage>64</lpage>. S0006-3223(11)01193-0[pii]; <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.biopsych.2011.11.022" xlink:type="simple">10.1016/j.biopsych.2011.11.022</ext-link></comment> <object-id pub-id-type="pmid">22218286</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref009"><label>9</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Van Harmelen</surname> <given-names>AL</given-names></name>, <name name-style="western"><surname>van Tol</surname> <given-names>MJ</given-names></name>, <name name-style="western"><surname>van der Wee</surname> <given-names>NJ</given-names></name>, <name name-style="western"><surname>Veltman</surname> <given-names>DJ</given-names></name>, <name name-style="western"><surname>Aleman</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Spinhoven</surname> <given-names>P</given-names></name>, <etal>et al</etal>.<article-title>Reduced medial prefrontal cortex volume in adults reporting childhood emotional maltreatment</article-title>. <source>Biol Psychiatry</source> <year>2010</year>; <volume>68</volume>: <fpage>832</fpage>–<lpage>838</lpage>. S0006-3223(10)00600-1 [pii]; <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.biopsych.2010.06.011" xlink:type="simple">10.1016/j.biopsych.2010.06.011</ext-link></comment> <object-id pub-id-type="pmid">20692648</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref010"><label>10</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rao</surname> <given-names>U</given-names></name>, <name name-style="western"><surname>Chen</surname> <given-names>LA</given-names></name>, <name name-style="western"><surname>Bidesi</surname> <given-names>AS</given-names></name>, <name name-style="western"><surname>Shad</surname> <given-names>MU</given-names></name>, <name name-style="western"><surname>Thomas</surname> <given-names>MA</given-names></name>, <name name-style="western"><surname>Hammen</surname> <given-names>CL</given-names></name>. <article-title>Hippocampal changes associated with early-life adversity and vulnerability to depression</article-title>. <source>Biol Psychiatry</source> <year>2010</year>; <volume>67</volume>: <fpage>357</fpage>–<lpage>364</lpage>. S0006-3223(09)01267-0 [pii]; <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.biopsych.2009.10.017" xlink:type="simple">10.1016/j.biopsych.2009.10.017</ext-link></comment> <object-id pub-id-type="pmid">20015483</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref011"><label>11</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Herpfer</surname> <given-names>I</given-names></name>, <name name-style="western"><surname>Hezel</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Reichardt</surname> <given-names>W</given-names></name>, <name name-style="western"><surname>Clark</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Geiger</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Gross</surname> <given-names>CM</given-names></name>, <etal>et al</etal>. <article-title>Early life stress differentially modulates distinct forms of brain plasticity in young and adult mice</article-title>. <source>PLoS One</source> <year>2012</year>; <volume>7</volume>: <fpage>e46004</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1371/journal.pone.0046004" xlink:type="simple">10.1371/journal.pone.0046004</ext-link></comment> PONE-D-12-12483 [pii]. <object-id pub-id-type="pmid">23071534</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref012"><label>12</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Vythilingam</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Heim</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Newport</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Miller</surname> <given-names>AH</given-names></name>, <name name-style="western"><surname>Anderson</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Bronen</surname> <given-names>R</given-names></name>, <etal>et al</etal>. <article-title>Childhood trauma associated with smaller hippocampal volume in women with major depression</article-title>. <source>Am J Psychiatry</source> <year>2002</year>; <volume>159</volume>: <fpage>2072</fpage>–<lpage>2080</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1176/appi.ajp.159.12.2072" xlink:type="simple">10.1176/appi.ajp.159.12.2072</ext-link></comment> <object-id pub-id-type="pmid">12450959</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref013"><label>13</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Brunson</surname> <given-names>KL</given-names></name>, <name name-style="western"><surname>Kramar</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Lin</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Chen</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Colgin</surname> <given-names>LL</given-names></name>, <name name-style="western"><surname>Yanagihara</surname> <given-names>TK</given-names></name>, <etal>et al</etal>. <article-title>Mechanisms of late-onset cognitive decline after early-life stress</article-title>. <source>J Neurosci</source> <year>2005</year>; <volume>25</volume>: <fpage>9328</fpage>–<lpage>9338</lpage>. 25/41/9328 [pii]; <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1523/JNEUROSCI.2281-05.2005" xlink:type="simple">10.1523/JNEUROSCI.2281-05.2005</ext-link></comment> <object-id pub-id-type="pmid">16221841</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref014"><label>14</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Maras</surname> <given-names>PM</given-names></name>, <name name-style="western"><surname>Baram</surname> <given-names>TZ</given-names></name>. <article-title>Sculpting the hippocampus from within: stress, spines, and CRH</article-title>. <source>Trends Neurosci</source> <year>2012</year>; <volume>35</volume>: <fpage>315</fpage>–<lpage>324</lpage>. S0166-2236(12)00017-3 [pii]; <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.tins.2012.01.005" xlink:type="simple">10.1016/j.tins.2012.01.005</ext-link></comment> <object-id pub-id-type="pmid">22386641</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref015"><label>15</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>De Bellis</surname> <given-names>MD</given-names></name>, <name name-style="western"><surname>Keshavan</surname> <given-names>MS</given-names></name>, <name name-style="western"><surname>Shifflett</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Iyengar</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Beers</surname> <given-names>SR</given-names></name>, <name name-style="western"><surname>Hall</surname> <given-names>J</given-names></name>, <etal>et al</etal>. <article-title>Brain structures in pediatric maltreatment-related posttraumatic stress disorder: a sociodemographically matched study</article-title>. <source>Biol Psychiatry</source> <year>2002</year>; <volume>52</volume>: <fpage>1066</fpage>–<lpage>1078</lpage>. S0006322302014592 [pii]. <object-id pub-id-type="pmid">12460690</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref016"><label>16</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Frodl</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Reinhold</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Koutsouleris</surname> <given-names>N</given-names></name>, <name name-style="western"><surname>Reiser</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Meisenzahl</surname> <given-names>EM</given-names></name>. <article-title>Interaction of childhood stress with hippocampus and prefrontal cortex volume reduction in major depression</article-title>. <source>J Psychiatr Res</source> <year>2010</year>; <volume>44</volume>: <fpage>799</fpage>–<lpage>807</lpage>. S0022-3956(10)00015-4 [pii]; <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.jpsychires.2010.01.006" xlink:type="simple">10.1016/j.jpsychires.2010.01.006</ext-link></comment> <object-id pub-id-type="pmid">20122698</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref017"><label>17</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Leao</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Sousa</surname> <given-names>JC</given-names></name>, <name name-style="western"><surname>Oliveira</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Silva</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Almeida</surname> <given-names>OF</given-names></name>, <name name-style="western"><surname>Sousa</surname> <given-names>N</given-names></name>. <article-title>Programming effects of antenatal dexamethasone in the developing mesolimbic pathways</article-title>. <source>Synapse</source> <year>2007</year>; <volume>61</volume>: <fpage>40</fpage>–<lpage>49</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1002/syn.20341" xlink:type="simple">10.1002/syn.20341</ext-link></comment> <object-id pub-id-type="pmid">17068773</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref018"><label>18</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Martinez-Tellez</surname> <given-names>RI</given-names></name>, <name name-style="western"><surname>Hernandez-Torres</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Gamboa</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Flores</surname> <given-names>G</given-names></name>. <article-title>Prenatal stress alters spine density and dendritic length of nucleus accumbens and hippocampus neurons in rat offspring</article-title>. <source>Synapse</source> <year>2009</year>; <volume>63</volume>: <fpage>794</fpage>–<lpage>804</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1002/syn.20664" xlink:type="simple">10.1002/syn.20664</ext-link></comment> <object-id pub-id-type="pmid">19489049</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref019"><label>19</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mehta</surname> <given-names>MA</given-names></name>, <name name-style="western"><surname>Golembo</surname> <given-names>NI</given-names></name>, <name name-style="western"><surname>Nosarti</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Colvert</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Mota</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Williams</surname> <given-names>SC</given-names></name>, <etal>et al</etal>. <article-title>Amygdala, hippocampal and corpus callosum size following severe early institutional deprivation: the English and Romanian Adoptees study pilot</article-title>. <source>J Child Psychol Psychiatry</source> <year>2009</year>; <volume>50</volume>: <fpage>943</fpage>–<lpage>951</lpage>. JCPP2084 [pii]; <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1111/j.1469-7610.2009.02084.x" xlink:type="simple">10.1111/j.1469-7610.2009.02084.x</ext-link></comment> <object-id pub-id-type="pmid">19457047</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref020"><label>20</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hanson</surname> <given-names>JL</given-names></name>, <name name-style="western"><surname>Adluru</surname> <given-names>N</given-names></name>, <name name-style="western"><surname>Chung</surname> <given-names>MK</given-names></name>, <name name-style="western"><surname>Alexander</surname> <given-names>AL</given-names></name>, <name name-style="western"><surname>Davidson</surname> <given-names>RJ</given-names></name>, <name name-style="western"><surname>Pollak</surname> <given-names>SD</given-names></name>. <article-title>Early neglect is associated with alterations in white matter integrity and cognitive functioning</article-title>. <source>Child Dev</source> <year>2013</year>; <volume>84</volume>: <fpage>1566</fpage>–<lpage>1578</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1111/cdev.12069" xlink:type="simple">10.1111/cdev.12069</ext-link></comment> <object-id pub-id-type="pmid">23480812</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref021"><label>21</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Walsh</surname> <given-names>ND</given-names></name>, <name name-style="western"><surname>Dalgleish</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Lombardo</surname> <given-names>MV</given-names></name>, <name name-style="western"><surname>Dunn</surname> <given-names>VJ</given-names></name>, <name name-style="western"><surname>Van Harmelen</surname> <given-names>AL</given-names></name>, <name name-style="western"><surname>Ban</surname> <given-names>M</given-names></name>, <etal>et al</etal>. <article-title>General and specific effects of early-life psychosocial adversities on adolescent grey matter volume</article-title>. <source>Neuroimage Clin</source> <year>2014</year>; <volume>4</volume>: <fpage>308</fpage>–<lpage>318</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.nicl.2014.01.001" xlink:type="simple">10.1016/j.nicl.2014.01.001</ext-link></comment> S2213-1582(14)00002-3 [pii]. <object-id pub-id-type="pmid">25061568</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref022"><label>22</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Fan</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Pestke</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Feeser</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Aust</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Pruessner</surname> <given-names>JC</given-names></name>, <name name-style="western"><surname>Boker</surname> <given-names>H</given-names></name>, <etal>et al</etal>.<article-title>Amygdala-Hippocampal Connectivity Changes During Acute Psychosocial Stress: Joint Effect of Early Life Stress and Oxytocin</article-title>. <source>Neuropsychopharmacology</source> <year>2015</year>; <volume>40</volume>: <fpage>2736</fpage>–<lpage>2744</lpage>. npp2015123 [pii]; <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1038/npp.2015.123" xlink:type="simple">10.1038/npp.2015.123</ext-link></comment> <object-id pub-id-type="pmid">25924202</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref023"><label>23</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Nishi</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Horii-Hayashi</surname> <given-names>N</given-names></name>, <name name-style="western"><surname>Sasagawa</surname> <given-names>T</given-names></name>. <article-title>Effects of early life adverse experiences on the brain: implications from maternal separation models in rodents</article-title>. <source>Front Neurosci</source> <year>2014</year>; <volume>8</volume>: <fpage>166</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.3389/fnins.2014.00166" xlink:type="simple">10.3389/fnins.2014.00166</ext-link></comment> <object-id pub-id-type="pmid">24987328</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref024"><label>24</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Cirulli</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Berry</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Alleva</surname> <given-names>E</given-names></name>. <article-title>Early disruption of the mother-infant relationship: effects on brain plasticity and implications for psychopathology</article-title>. <source>Neurosci Biobehav Rev</source> <year>2003</year>; <volume>27</volume>: <fpage>73</fpage>–<lpage>82</lpage>. S0149763403000101 [pii]. <object-id pub-id-type="pmid">12732224</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref025"><label>25</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Oomen</surname> <given-names>CA</given-names></name>, <name name-style="western"><surname>Girardi</surname> <given-names>CE</given-names></name>, <name name-style="western"><surname>Cahyadi</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Verbeek</surname> <given-names>EC</given-names></name>, <name name-style="western"><surname>Krugers</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Joels</surname> <given-names>M</given-names></name>, <etal>et al</etal>. <article-title>Opposite effects of early maternal deprivation on neurogenesis in male versus female rats</article-title>. <source>PLoS One</source> <year>2009</year>; <volume>4</volume>: <fpage>e3675</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1371/journal.pone.0003675" xlink:type="simple">10.1371/journal.pone.0003675</ext-link></comment> <object-id pub-id-type="pmid">19180242</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref026"><label>26</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Tsoory</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Richter-Levin</surname> <given-names>G</given-names></name>. <article-title>Learning under stress in the adult rat is differentially affected by 'juvenile' or 'adolescent' stress</article-title>. <source>Int J Neuropsychopharmacol</source> <year>2006</year>; <volume>9</volume>: <fpage>713</fpage>–<lpage>728</lpage>. S1461145705006255 [pii]; <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1017/S1461145705006255" xlink:type="simple">10.1017/S1461145705006255</ext-link></comment> <object-id pub-id-type="pmid">16321169</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref027"><label>27</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Arp</surname> <given-names>JM</given-names></name>, <name name-style="western"><surname>Ter Horst</surname> <given-names>JP</given-names></name>, <name name-style="western"><surname>Loi</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>den</surname> <given-names>BJ</given-names></name>, <name name-style="western"><surname>Bangert</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Fernandez</surname> <given-names>G</given-names></name>, <etal>et al</etal>.<article-title>Blocking glucocorticoid receptors at adolescent age prevents enhanced freezing between repeated cue-exposures after conditioned fear in adult mice raised under chronic early life stress</article-title>. <source>Neurobiol Learn Mem</source> <year>2016</year>; <volume>133</volume>: <fpage>30</fpage>–<lpage>38</lpage>. S1074-7427(16)30063-6 [pii]; <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.nlm.2016.05.009" xlink:type="simple">10.1016/j.nlm.2016.05.009</ext-link></comment> <object-id pub-id-type="pmid">27246249</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref028"><label>28</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Oomen</surname> <given-names>CA</given-names></name>, <name name-style="western"><surname>Soeters</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Audureau</surname> <given-names>N</given-names></name>, <name name-style="western"><surname>Vermunt</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>van Hasselt</surname> <given-names>FN</given-names></name>, <name name-style="western"><surname>Manders</surname> <given-names>EM</given-names></name>, <etal>et al</etal>. <article-title>Early maternal deprivation affects dentate gyrus structure and emotional learning in adult female rats</article-title>. <source>Psychopharmacology (Berl)</source> <year>2011</year>; <volume>214</volume>: <fpage>249</fpage>–<lpage>260</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1007/s00213-010-1922-" xlink:type="simple">10.1007/s00213-010-1922-</ext-link></comment>8.</mixed-citation></ref>
+<ref id="pone.0185061.ref029"><label>29</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Henckens</surname> <given-names>MJ</given-names></name>, <name name-style="western"><surname>van der Marel</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>van der Toorn</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Pillai</surname> <given-names>AG</given-names></name>, <name name-style="western"><surname>Fernandez</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Dijkhuizen</surname> <given-names>RM</given-names></name>, <etal>et al</etal>. <article-title>Stress-induced alterations in large-scale functional networks of the rodent brain</article-title>. <source>Neuroimage</source> <year>2015</year>; <volume>105</volume>: <fpage>312</fpage>–<lpage>322</lpage>. S1053-8119(14)00863-5 [pii]; <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.neuroimage.2014.10.037" xlink:type="simple">10.1016/j.neuroimage.2014.10.037</ext-link></comment> <object-id pub-id-type="pmid">25462693</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref030"><label>30</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Jenkinson</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Beckmann</surname> <given-names>CF</given-names></name>, <name name-style="western"><surname>Behrens</surname> <given-names>TE</given-names></name>, <name name-style="western"><surname>Woolrich</surname> <given-names>MW</given-names></name>, <name name-style="western"><surname>Smith</surname> <given-names>SM</given-names></name>. <article-title>FSL</article-title>. <source>Neuroimage</source> <year>2012</year>; <volume>62</volume>: <fpage>782</fpage>–<lpage>790</lpage>. S1053-8119(11)01060-3 [pii]; <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.neuroimage.2011.09.015" xlink:type="simple">10.1016/j.neuroimage.2011.09.015</ext-link></comment> <object-id pub-id-type="pmid">21979382</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref031"><label>31</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Jenkinson</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Bannister</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Brady</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Smith</surname> <given-names>S</given-names></name>. <article-title>Improved optimization for the robust and accurate linear registration and motion correction of brain images</article-title>. <source>Neuroimage</source> <year>2002</year>; <volume>17</volume>: <fpage>825</fpage>–<lpage>841</lpage>. S1053811902911328 [pii]. <object-id pub-id-type="pmid">12377157</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref032"><label>32</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Jenkinson</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Smith</surname> <given-names>S</given-names></name>. <article-title>A global optimisation method for robust affine registration of brain images</article-title>. <source>Med Image Anal</source> <year>2001</year>; <volume>5</volume>: <fpage>143</fpage>–<lpage>156</lpage>. S1361841501000366 [pii]. <object-id pub-id-type="pmid">11516708</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref033"><label>33</label><mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Paxinos</surname> <given-names>G.</given-names></name> and <name name-style="western"><surname>Watson</surname> <given-names>C</given-names></name>. <chapter-title>The rat brain in stereotaxis coordinates</chapter-title>. <publisher-name>Elsevier Academic Press</publisher-name> <year>2005</year>.</mixed-citation></ref>
+<ref id="pone.0185061.ref034"><label>34</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Oomen</surname> <given-names>CA</given-names></name>, <name name-style="western"><surname>Soeters</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Audureau</surname> <given-names>N</given-names></name>, <name name-style="western"><surname>Vermunt</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>van Hasselt</surname> <given-names>FN</given-names></name>, <name name-style="western"><surname>Manders</surname> <given-names>EM</given-names></name>, <etal>et al</etal>. <article-title>Severe early life stress hampers spatial learning and neurogenesis, but improves hippocampal synaptic plasticity and emotional learning under high-stress conditions in adulthood</article-title>. <source>J Neurosci</source> <year>2010</year>; <volume>30</volume>: <fpage>6635</fpage>–<lpage>6645</lpage>. 30/19/6635 [pii]; <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1523/JNEUROSCI.0247-10.2010" xlink:type="simple">10.1523/JNEUROSCI.0247-10.2010</ext-link></comment> <object-id pub-id-type="pmid">20463226</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref035"><label>35</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Oomen</surname> <given-names>CA</given-names></name>, <name name-style="western"><surname>Mayer</surname> <given-names>JL</given-names></name>, <name name-style="western"><surname>de Kloet</surname> <given-names>ER</given-names></name>, <name name-style="western"><surname>Joels</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Lucassen</surname> <given-names>PJ</given-names></name>. <article-title>Brief treatment with the glucocorticoid receptor antagonist mifepristone normalizes the reduction in neurogenesis after chronic stress</article-title>. <source>Eur J Neurosci</source> <year>2007</year>; <volume>26</volume>: <fpage>3395</fpage>–<lpage>3401</lpage>. EJN5972 [pii];10.1111/j.1460-9568.2007.05972.x. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1111/j.1460-9568.2007.05972.x" xlink:type="simple">10.1111/j.1460-9568.2007.05972.x</ext-link></comment> <object-id pub-id-type="pmid">18052970</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref036"><label>36</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Flores</surname> <given-names>BH</given-names></name>, <name name-style="western"><surname>Kenna</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Keller</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Solvason</surname> <given-names>HB</given-names></name>, <name name-style="western"><surname>Schatzberg</surname> <given-names>AF</given-names></name>. <article-title>Clinical and biological effects of mifepristone treatment for psychotic depression</article-title>. <source>Neuropsychopharmacology</source> <year>2006</year>; <volume>31</volume>: <fpage>628</fpage>–<lpage>636</lpage>. 1300884 [pii]; <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1038/sj.npp.1300884" xlink:type="simple">10.1038/sj.npp.1300884</ext-link></comment> <object-id pub-id-type="pmid">16160710</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref037"><label>37</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Young</surname> <given-names>AH</given-names></name>, <name name-style="western"><surname>Gallagher</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Watson</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Del-Estal</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Owen</surname> <given-names>BM</given-names></name>, <name name-style="western"><surname>Ferrier</surname> <given-names>IN</given-names></name>. <article-title>Improvements in neurocognitive function and mood following adjunctive treatment with mifepristone (RU-486) in bipolar disorder</article-title>. <source>Neuropsychopharmacology</source> <year>2004</year>; <volume>29</volume>: <fpage>1538</fpage>–<lpage>1545</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1038/sj.npp.1300471" xlink:type="simple">10.1038/sj.npp.1300471</ext-link></comment> 1300471 [pii]. <object-id pub-id-type="pmid">15127079</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref038"><label>38</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Shin</surname> <given-names>LM</given-names></name>, <name name-style="western"><surname>Rauch</surname> <given-names>SL</given-names></name>, <name name-style="western"><surname>Pitman</surname> <given-names>RK</given-names></name>. <article-title>Amygdala, medial prefrontal cortex, and hippocampal function in PTSD</article-title>. <source>Ann N Y Acad Sci</source> <year>2006</year>; <volume>1071</volume>: <fpage>67</fpage>–<lpage>79</lpage>. 1071/1/67 [pii]; <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1196/annals.1364.007" xlink:type="simple">10.1196/annals.1364.007</ext-link></comment> <object-id pub-id-type="pmid">16891563</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref039"><label>39</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bremner</surname> <given-names>JD</given-names></name>, <name name-style="western"><surname>Vythilingam</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Vermetten</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Nazeer</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Adil</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Khan</surname> <given-names>S</given-names></name>, <etal>et al</etal>. <article-title>Reduced volume of orbitofrontal cortex in major depression</article-title>. <source>Biol Psychiatry</source> <year>2002</year>; <volume>51</volume>: <fpage>273</fpage>–<lpage>279</lpage>. S0006322301013361 [pii]. <object-id pub-id-type="pmid">11958777</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref040"><label>40</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Weinberg</surname> <given-names>MS</given-names></name>, <name name-style="western"><surname>Johnson</surname> <given-names>DC</given-names></name>, <name name-style="western"><surname>Bhatt</surname> <given-names>AP</given-names></name>, <name name-style="western"><surname>Spencer</surname> <given-names>RL</given-names></name>. <article-title>Medial prefrontal cortex activity can disrupt the expression of stress response habituation</article-title>. <source>Neuroscience</source> <year>2010</year>; <volume>168</volume>: <fpage>744</fpage>–<lpage>756</lpage>. S0306-4522(10)00510-5 [pii]; <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.neuroscience.2010.04.006" xlink:type="simple">10.1016/j.neuroscience.2010.04.006</ext-link></comment> <object-id pub-id-type="pmid">20394807</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref041"><label>41</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>McEwen</surname> <given-names>BS</given-names></name>, <name name-style="western"><surname>Gianaros</surname> <given-names>PJ</given-names></name> <article-title>Stress- and allostasis-induced brain plasticity</article-title>. <source>Annu Rev Med</source> <year>2011</year>; <volume>62</volume>: <fpage>431</fpage>–<lpage>445</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1146/annurev-med-052209-100430" xlink:type="simple">10.1146/annurev-med-052209-100430</ext-link></comment> <object-id pub-id-type="pmid">20707675</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref042"><label>42</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wellman</surname> <given-names>CL</given-names></name>. <article-title>Dendritic reorganization in pyramidal neurons in medial prefrontal cortex after chronic corticosterone administration</article-title>. <source>J Neurobiol</source> <year>2001</year>; <volume>49</volume>: <fpage>245</fpage>–<lpage>253</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1002/neu.1079" xlink:type="simple">10.1002/neu.1079</ext-link></comment> [pii]. <object-id pub-id-type="pmid">11745662</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref043"><label>43</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Radley</surname> <given-names>JJ</given-names></name>, <name name-style="western"><surname>Rocher</surname> <given-names>AB</given-names></name>, <name name-style="western"><surname>Miller</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Janssen</surname> <given-names>WG</given-names></name>, <name name-style="western"><surname>Liston</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Hof</surname> <given-names>PR</given-names></name>, <etal>et al</etal>. <article-title>Repeated stress induces dendritic spine loss in the rat medial prefrontal cortex</article-title>. <source>Cereb Cortex</source> <year>2006</year>; <volume>16</volume>: <fpage>313</fpage>–<lpage>320</lpage>. bhi104 [pii]; <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1093/cercor/bhi104" xlink:type="simple">10.1093/cercor/bhi104</ext-link></comment> <object-id pub-id-type="pmid">15901656</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref044"><label>44</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Liston</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Miller</surname> <given-names>MM</given-names></name>, <name name-style="western"><surname>Goldwater</surname> <given-names>DS</given-names></name>, <name name-style="western"><surname>Radley</surname> <given-names>JJ</given-names></name>, <name name-style="western"><surname>Rocher</surname> <given-names>AB</given-names></name>, <name name-style="western"><surname>Hof</surname> <given-names>PR</given-names></name>, <etal>et al</etal>. <article-title>Stress-induced alterations in prefrontal cortical dendritic morphology predict selective impairments in perceptual attentional set-shifting</article-title>. <source>J Neurosci</source> <year>2006</year>; <volume>26</volume>: <fpage>7870</fpage>–<lpage>7874</lpage>. 26/30/7870 [pii]; <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1523/JNEUROSCI.1184-06.2006" xlink:type="simple">10.1523/JNEUROSCI.1184-06.2006</ext-link></comment> <object-id pub-id-type="pmid">16870732</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref045"><label>45</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Whittle</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Yap</surname> <given-names>MB</given-names></name>, <name name-style="western"><surname>Sheeber</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Dudgeon</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Yucel</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Pantelis</surname> <given-names>C</given-names></name>, <etal>et al</etal>. <article-title>Hippocampal volume and sensitivity to maternal aggressive behavior: a prospective study of adolescent depressive symptoms</article-title>. <source>Dev Psychopathol</source> <year>2011</year>; <volume>23</volume>: <fpage>115</fpage>–<lpage>129</lpage>. S0954579410000684 [pii]; <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1017/S0954579410000684" xlink:type="simple">10.1017/S0954579410000684</ext-link></comment> <object-id pub-id-type="pmid">21262043</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref046"><label>46</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Koolschijn</surname> <given-names>PC</given-names></name>, <name name-style="western"><surname>van IJzendoorn</surname> <given-names>MH</given-names></name>, <name name-style="western"><surname>Bakermans-Kranenburg</surname> <given-names>MJ</given-names></name>, <name name-style="western"><surname>Crone</surname> <given-names>EA</given-names></name>. <article-title>Hippocampal volume and internalizing behavior problems in adolescence</article-title>. <source>Eur Neuropsychopharmacol</source> <year>2013</year>; <volume>23</volume>: <fpage>622</fpage>–<lpage>628</lpage>. S0924-977X(12)00181-2 [pii]; <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.euroneuro.2012.07.001" xlink:type="simple">10.1016/j.euroneuro.2012.07.001</ext-link></comment> <object-id pub-id-type="pmid">22824414</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref047"><label>47</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hanson</surname> <given-names>JL</given-names></name>, <name name-style="western"><surname>Nacewicz</surname> <given-names>BM</given-names></name>, <name name-style="western"><surname>Sutterer</surname> <given-names>MJ</given-names></name>, <name name-style="western"><surname>Cayo</surname> <given-names>AA</given-names></name>, <name name-style="western"><surname>Schaefer</surname> <given-names>SM</given-names></name>, <name name-style="western"><surname>Rudolph</surname> <given-names>KD</given-names></name>, <etal>et al</etal>. <article-title>Behavioral problems after early life stress: contributions of the hippocampus and amygdala</article-title>. <source>Biol Psychiatry</source> <year>2015</year>; <volume>77</volume>: <fpage>314</fpage>–<lpage>323</lpage>. S0006-3223(14)00351-5 [pii]; <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.biopsych.2014.04.020" xlink:type="simple">10.1016/j.biopsych.2014.04.020</ext-link></comment> <object-id pub-id-type="pmid">24993057</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref048"><label>48</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Molet</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Maras</surname> <given-names>PM</given-names></name>, <name name-style="western"><surname>Kinney-Lang</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Harris</surname> <given-names>NG</given-names></name>, <name name-style="western"><surname>Rashid</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Ivy</surname> <given-names>AS</given-names></name>, <etal>et al</etal>. <article-title>MRI uncovers disrupted hippocampal microstructure that underlies memory impairments after early-life adversity</article-title>. <source>Hippocampus</source> <year>2016</year>; <volume>26</volume>: <fpage>1618</fpage>–<lpage>1632</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1002/hipo.22661" xlink:type="simple">10.1002/hipo.22661</ext-link></comment> <object-id pub-id-type="pmid">27657911</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref049"><label>49</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Delgado y Palacios</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Campo</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Henningsen</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Verhoye</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Poot</surname> <given-names>D</given-names></name>, <etal>et al</etal>. <article-title>Magnetic resonance imaging and spectroscopy reveal differential hippocampal changes in anhedonic and resilient subtypes of the chronic mild stress rat model</article-title>. <source>Biol Psychiatry</source> <year>2011</year>; <volume>70</volume>: <fpage>449</fpage>–<lpage>57</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.biopsych.2011.05.014" xlink:type="simple">10.1016/j.biopsych.2011.05.014</ext-link></comment> <object-id pub-id-type="pmid">21762877</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref050"><label>50</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Andersen</surname> <given-names>SL</given-names></name>, <name name-style="western"><surname>Tomada</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Vincow</surname> <given-names>ES</given-names></name>, <name name-style="western"><surname>Valente</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Polcari</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Teicher</surname> <given-names>MH</given-names></name>. <article-title>Preliminary evidence for sensitive periods in the effect of childhood sexual abuse on regional brain development</article-title>. <source>J Neuropsychiatry Clin Neurosci</source> <year>2008</year>; <volume>20</volume>: <fpage>292</fpage>–<lpage>301</lpage>. 20/3/292 [pii]; <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1176/appi.neuropsych.20.3.292" xlink:type="simple">10.1176/appi.neuropsych.20.3.292</ext-link></comment> <object-id pub-id-type="pmid">18806232</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref051"><label>51</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bremner</surname> <given-names>JD</given-names></name>, <name name-style="western"><surname>Randall</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Vermetten</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Staib</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Bronen</surname> <given-names>RA</given-names></name>, <name name-style="western"><surname>Mazure</surname> <given-names>C</given-names></name>, <etal>et al</etal>. <article-title>Magnetic resonance imaging-based measurement of hippocampal volume in posttraumatic stress disorder related to childhood physical and sexual abuse—a preliminary report</article-title>. <source>Biol Psychiatry</source> <year>1997</year>; <volume>41</volume>: <fpage>23</fpage>–<lpage>32</lpage>. S000632239600162X [pii]. <object-id pub-id-type="pmid">8988792</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref052"><label>52</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Carrion</surname> <given-names>VG</given-names></name>, <name name-style="western"><surname>Weems</surname> <given-names>CF</given-names></name>, <name name-style="western"><surname>Eliez</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Patwardhan</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Brown</surname> <given-names>W</given-names></name>, <name name-style="western"><surname>Ray</surname> <given-names>RD</given-names></name>, <etal>et al</etal>. <article-title>Attenuation of frontal asymmetry in pediatric posttraumatic stress disorder</article-title>. <source>Biol Psychiatry</source> <year>2001</year>; <volume>50</volume>: <fpage>943</fpage>–<lpage>951</lpage>. S0006322301012185 [pii]. <object-id pub-id-type="pmid">11750890</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref053"><label>53</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Vyas</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Pillai</surname> <given-names>AG</given-names></name>, <name name-style="western"><surname>Chattarji</surname> <given-names>S</given-names></name>. <article-title>Recovery after chronic stress fails to reverse amygdaloid neuronal hypertrophy and enhanced anxiety-like behavior</article-title>. <source>Neuroscience</source> <year>2004</year>; <volume>128</volume>: <fpage>667</fpage>–<lpage>673</lpage>. S0306-4522(04)00613-X [pii]; <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.neuroscience.2004.07.013" xlink:type="simple">10.1016/j.neuroscience.2004.07.013</ext-link></comment> <object-id pub-id-type="pmid">15464275</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref054"><label>54</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Vyas</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Mitra</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Shankaranarayana Rao</surname> <given-names>BS</given-names></name>, <name name-style="western"><surname>Chattarji</surname> <given-names>S</given-names></name>.<article-title>Chronic stress induces contrasting patterns of dendritic remodeling in hippocampal and amygdaloid neurons</article-title>. <source>J Neurosci</source> <year>2002</year>; <volume>22</volume>: <fpage>6810</fpage>–<lpage>6818</lpage>. 22/15/6810 [pii]. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/20026655" xlink:type="simple">20026655</ext-link></comment> <object-id pub-id-type="pmid">12151561</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref055"><label>55</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Fields</surname> <given-names>RD</given-names></name>. <article-title>White matter in learning, cognition and psychiatric disorders</article-title>. <source>Trends Neurosci</source> <year>2008</year>; <volume>31</volume>: <fpage>361</fpage>–<lpage>370</lpage>. S0166-2236(08)00132-X [pii]; <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.tins.2008.04.001" xlink:type="simple">10.1016/j.tins.2008.04.001</ext-link></comment> <object-id pub-id-type="pmid">18538868</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref056"><label>56</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Zhang</surname> <given-names>LX</given-names></name>, <name name-style="western"><surname>Levine</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Dent</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Zhan</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Xing</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Okimoto</surname> <given-names>D</given-names></name>, <etal>et al</etal>. <article-title>Maternal deprivation increases cell death in the infant rat brain</article-title>. <source>Brain Res Dev Brain Res</source> <year>2002</year>; <volume>133</volume>: <fpage>1</fpage>–<lpage>11</lpage>. S0926641001001185 [pii]. <object-id pub-id-type="pmid">11850058</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref057"><label>57</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Villarreal</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Hamilton</surname> <given-names>DA</given-names></name>, <name name-style="western"><surname>Petropoulos</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Driscoll</surname> <given-names>I</given-names></name>, <name name-style="western"><surname>Rowland</surname> <given-names>LM</given-names></name>, <name name-style="western"><surname>Griego</surname> <given-names>JA</given-names></name>, <etal>et al</etal>. <article-title>Reduced hippocampal volume and total white matter volume in posttraumatic stress disorder</article-title>. <source>Biol Psychiatry</source> <year>2002</year>; <volume>52</volume>: <fpage>119</fpage>–<lpage>125</lpage>. S0006322302013598 [pii]. <object-id pub-id-type="pmid">12114003</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref058"><label>58</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Gorka</surname> <given-names>AX</given-names></name>, <name name-style="western"><surname>Hanson</surname> <given-names>JL</given-names></name>, <name name-style="western"><surname>Radtke</surname> <given-names>SR</given-names></name>, <name name-style="western"><surname>Hariri</surname> <given-names>AR</given-names></name>. <article-title>Reduced hippocampal and medial prefrontal gray matter mediate the association between reported childhood maltreatment and trait anxiety in adulthood and predict sensitivity to future life stress</article-title>. <source>Biol Mood Anxiety Disord</source> <year>2014</year>; <volume>4</volume>: <fpage>12</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1186/2045-5380-4-12" xlink:type="simple">10.1186/2045-5380-4-12</ext-link></comment> 2045-5380-4-12 [pii]. <object-id pub-id-type="pmid">25408863</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref059"><label>59</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Dannlowski</surname> <given-names>U</given-names></name>, <name name-style="western"><surname>Stuhrmann</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Beutelmann</surname> <given-names>V</given-names></name>, <name name-style="western"><surname>Zwanzger</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Lenzen</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Grotegerd</surname> <given-names>D</given-names></name>, <etal>et al</etal>. <article-title>Limbic scars: long-term consequences of childhood maltreatment revealed by functional and structural magnetic resonance imaging</article-title>. <source>Biol Psychiatry</source> <year>2012</year>; <volume>71</volume>: <fpage>286</fpage>–<lpage>293</lpage>. S0006-3223(11)01021-3 [pii]; <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.biopsych.2011.10.021" xlink:type="simple">10.1016/j.biopsych.2011.10.021</ext-link></comment> <object-id pub-id-type="pmid">22112927</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref060"><label>60</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Yan</surname> <given-names>CG</given-names></name>, <name name-style="western"><surname>Rincón-Cortés</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Raineki</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Sarro</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Colcombe</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Guilfoyle</surname> <given-names>DN</given-names></name>, <etal>et al</etal>. <article-title>Aberrant development of intrinsic brain activity in a rat model of caregiver maltreatment of offspring</article-title>. <source>Transl Psychiatry</source> <year>2017</year>; <volume>7</volume>:<fpage>e1005</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1038/tp.2016.276" xlink:type="simple">10.1038/tp.2016.276</ext-link></comment> <object-id pub-id-type="pmid">28094810</object-id></mixed-citation></ref>
+<ref id="pone.0185061.ref061"><label>61</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Tse</surname> <given-names>YC</given-names></name>, <name name-style="western"><surname>Montoya</surname> <given-names>I</given-names></name>, <name name-style="western"><surname>Wong</surname> <given-names>AS</given-names></name>, <name name-style="western"><surname>Mathieu</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Lissemore</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Lagace</surname> <given-names>DC</given-names></name>, <etal>et al</etal>. <article-title>A longitudinal study of stress-induced hippocampal volume changes in mice that are susceptible or resilient to chronic social defeat</article-title>. <source>Hippocampus</source> <year>2014</year>; <volume>24</volume>: <fpage>1120</fpage>–<lpage>1128</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1002/hipo.22296" xlink:type="simple">10.1002/hipo.22296</ext-link></comment> <object-id pub-id-type="pmid">24753271</object-id></mixed-citation></ref>
+</ref-list>
+</back>
+</article>

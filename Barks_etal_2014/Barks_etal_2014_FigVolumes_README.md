@@ -39,3 +39,40 @@ hippocampus/amygdala/insula. `viaDeCasien` files remain on disk (archival, unuse
 (adults only) stays comparison-only.** Because these are eye-digitized, the merge now carries Barks
 regional volumes at figure-reading precision (±~1 cm³ large bars) — fine for the DeCasien comparison;
 re-digitize for publication-grade values.
+
+## Quick Figure 4A replot (pilot, 2026-11-20)
+
+From the repository root:
+
+```sh
+Rscript --vanilla Barks_etal_2014/Barks_etal_2014_Fig4A_replot.R
+```
+
+The standalone base-R script reads `Barks_etal_2014_Fig4A.csv` and writes
+`Barks_etal_2014_Fig4A_replot.png` beside it. It selects the 26 raw `_cm3`
+columns in table/source order and plots all 52 species-by-region means, with
+G. beringei grey and G. gorilla black. It retains the linear 0–45 cm³ axis and
+all-subject cohort; derived `_mm3` aggregates are excluded. Column labels are
+lightly reformatted, and `Claustrum` is displayed as `Claustrum area` to match
+the source's anatomical wording without changing the table.
+
+Panel B proportional volumes and significance marks are omitted. The source
+caption identifies the upper error bars as +1 SD, but those endpoints are not
+in the extracted table, so they are explicitly omitted rather than reconstructed.
+Figure 5A (adults only) is outside this pilot item.
+
+Codex ran the script in clean R sessions with `Rscript --vanilla` and `source()`
+and visually compared its PNG with Figure 4A on PDF p.7. All categories and the
+broad regional pattern are present, with readable labels. This is AI review,
+not human visual signoff or a validation of exact digitised values.
+
+**Open source-review flag:** in the source image, frontal GM left appears
+slightly higher for G. gorilla than G. beringei, and frontal GM right shows the
+opposite. The CSV has left = 31 versus 30.5 cm³ and right = 30 versus 31 cm³
+(G. beringei versus G. gorilla), reversing those small within-pair contrasts.
+These differences are of the order of the documented eye-reading precision;
+this visual check does not establish corrected values. Next action: inspect
+and independently re-digitise the four frontal-GM bar tops and verify species
+and hemisphere assignments against the high-resolution source. Keep the broader
+re-digitisation recommendation above active. No measurements, snapshots,
+aggregates, or merge inputs were changed for this replot.

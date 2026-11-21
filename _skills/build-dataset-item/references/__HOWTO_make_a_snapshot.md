@@ -294,6 +294,16 @@ provenance and the ReadMe **must** record it:
 The fidelity checklist still applies to the values themselves (units,
 footnote marks, `n.a.` as printed). Everything downstream is unchanged.
 
+For figure data, also add `<Item>_replot.R` in the paper folder. It reads the
+extracted item table directly and saves `<Item>_replot.png` there for a quick
+shape check against the source. Prefer short, base-R code: preserve source
+ordering, panels/series, units and linear/log axes, and draw extracted error
+bars when available without assuming their meaning. Do not hardcode values,
+smooth/refit, or rerun the extraction or merge. Run and inspect the plot, and
+record its command and any omitted source details in the item README; this is
+additional QA, not human signoff. See `Itoh_etal_2001/Itoh_etal_2001_Figure2_replot.R`
+for an example and `____TODO/figure_replots_handoff.md` for the older-figure backlog.
+
 ## File naming
 
 Inside the paper's folder (e.g. `JardimMesseder_etal_2017/`):

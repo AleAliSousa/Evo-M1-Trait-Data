@@ -30,6 +30,30 @@ No independent numeric table exists for a zero-mismatch external comparison; no 
 
 ## Build and registry
 
+### Quick figure replot
+
+From the repository root, run:
+
+```sh
+Rscript Itoh_etal_2001/Itoh_etal_2001_Figure2_replot.R
+```
+
+The standalone base-R script reads only `Itoh_etal_2001_Figure2.csv` and writes
+`Itoh_etal_2001_Figure2_replot.png` beside it. It plots all 57 extracted means
+and upper error endpoints in original umol/g/min units on the source's linear
+0–1.2 axis, with source region order and physical bar order (WT, alpha, beta).
+It simplifies the source's hatching, anatomical-group spacing/headings,
+percentages and significance annotations to make the overall shape easy to check.
+Error-bar type remains unspecified. This check does not replace the digitization
+overlay, percentage checks, or pending human visual signoff.
+
+2026-11-20: Codex ran the replot with `Rscript --vanilla` and with `source()`
+in a clean R session, then visually compared the PNG with the preserved source
+image. All 19 region triplets and their relative heights/order are represented;
+labels are readable. This is an AI review, not human signoff.
+
+### Data build
+
 Run Itoh_etal_2001_Figure2_snapshot.R only to reproduce the frozen capture; run Itoh_etal_2001_Figure2.R to regenerate the local CSV and DOI-coded public TSV. Item encoded is looked up by Item name in __ReadMe.xlsx, falling back to __ReadMeAddON.xlsx while registration is pending. The prepared registry-row workbook preserves the owner-provided citation, item number and original title, and leaves formula-owned E-L blank for owner paste. Human visual signoff and main-registry paste are pending.
 
 The CSV is a primary experimental item. Young and mutant arms must not be silently added to an adult baseline mean. The present request builds the item and uses WT for an age-matched anatomical comparison; it does not rerun the global adult metabolic-rate merge.

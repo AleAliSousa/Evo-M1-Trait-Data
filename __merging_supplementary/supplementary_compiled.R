@@ -38,6 +38,18 @@
 #   aggregate           first | mean | median | geomean | mode | any_Y | wmean:<column>
 #                       (per resolved species; wmean:<column> = mean weighted by that column
 #                       of the same rows, e.g. wmean:sample_size)
+#   precedence          optional integer. Rows feeding the same label WITH a precedence
+#                       form a precedence pool: for each species the label's Value (and
+#                       Value_median) is the value of the LOWEST-precedence item that
+#                       has one -- never a mean/median across items, because compilations
+#                       that re-report each other must not be averaged into a value no
+#                       source printed. A source column that also keeps its own
+#                       source-specific label is mapped twice: once under that label
+#                       (no precedence) and once onto the pooled label (with precedence).
+#                       Provenance columns (n_sources, Teams, items, value_min/max,
+#                       n_specimens) still span every contributing item. First used for
+#                       Home_range (km2): PanTHERIA 1, Galán-Acedo 2019 2,
+#                       Kamilar & Cooper 2013 3, Chivers 1984 4 (ha -> km2 via transform).
 #   note                free text, copied to README table
 #
 # Species: resolve_species(printed, source_publication) -- the single house
@@ -73,6 +85,7 @@ source(file.path(repo, "_keys", "resolve_species.R"))
 map <- read.csv(file.path(here, "supplementary_sources.csv"), stringsAsFactors = FALSE,
                 check.names = FALSE, encoding = "UTF-8", na.strings = character(0), colClasses = "character")
 stopifnot(all(c("item", "species_col", "value_col", "Measure", "Units", "role", "aggregate") %in% names(map)))
+if (!"precedence" %in% names(map)) map$precedence <- ""   # optional column (precedence pools)
 
 # Optional source-specific refresh preserves unrelated compiled records. It is
 # restricted to distinct labels so it cannot change an existing pooled measure.
@@ -138,7 +151,7 @@ agg_fun <- function(v, how, w = NULL) {
   stop("unknown aggregate: ", how)
 }
 
-cache <- list(); out <- list(); unresolved <- list()
+cache <- list(); out <- list(); unresolved <- list(); unres_seen <- character(0)
 for (i in seq_len(nrow(map))) {
   m <- map[i, ]
   key <- if (nzchar(m$path)) m$path else m$item
@@ -183,9 +196,15 @@ for (i in seq_len(nrow(map))) {
   rs <- resolve_species(d2$printed, source_publication = m$source_publication)
   d2$accepted <- rs$accepted_name; d2$basis <- rs$species_basis; d2$reident <- rs$reidentified
   d2$unres <- rs$unresolved
-  if (any(d2$unres))
+  ## Unresolved names are recorded once per source column (item + value_col +
+  ## filter + species_col): a column mapped twice -- its own label plus a pooled
+  ## label, see `precedence` -- must not list the same names twice.
+  ukey <- paste(m$item, m$value_col, m$filter, m$species_col, sep = "\r")
+  if (any(d2$unres) && !ukey %in% unres_seen) {
+    unres_seen <- c(unres_seen, ukey)
     unresolved[[length(unresolved) + 1]] <- data.frame(item = m$item, printed = unique(d2$printed[d2$unres]),
                                                        stringsAsFactors = FALSE)
+  }
   if (!nrow(d2)) next
   sp <- split(d2, d2$accepted)
   rows <- lapply(sp, function(g) {
@@ -202,6 +221,7 @@ for (i in seq_len(nrow(map))) {
       accepted_name = g$accepted[1],
       species_basis = paste(unique(g$basis), collapse = "; "),
       reidentified = any(g$reident), label_policy = m$label_policy,
+      precedence = suppressWarnings(as.numeric(m$precedence)),
       stringsAsFactors = FALSE)
   })
   out[[length(out) + 1]] <- do.call(rbind, rows)
@@ -213,9 +233,16 @@ long1 <- do.call(rbind, out)
 pool <- long1 %>%
   group_by(Species, measure_class, Measure, Units) %>%
   summarise(
-    Value = { vn <- suppressWarnings(as.numeric(Value))
-              if (all(!is.na(vn))) as.character(mean(vn)) else Value[1] },
-    Value_median = { vn <- suppressWarnings(as.numeric(Value)); if (all(!is.na(vn))) median(vn) else NA_real_ },
+    # Precedence pool (see `precedence` in the header): if any item in the group
+    # carries a precedence, Value / Value_median are the winning (lowest-precedence)
+    # item's own values -- never an average across items. Groups without precedence
+    # keep the historical behaviour (mean Value, median Value_median).
+    Value = { if (any(!is.na(precedence))) Value[order(precedence, na.last = TRUE)][1]
+              else { vn <- suppressWarnings(as.numeric(Value))
+                     if (all(!is.na(vn))) as.character(mean(vn)) else Value[1] } },
+    Value_median = { if (any(!is.na(precedence))) Value_median[order(precedence, na.last = TRUE)][1]
+                     else { vn <- suppressWarnings(as.numeric(Value))
+                            if (all(!is.na(vn))) median(vn) else NA_real_ } },
     n_sources = n_distinct(item), n_teams = n_distinct(team),
     n_teams_primary = n_distinct(team[role %in% c("primary", "both")]),
     primary_used = any(role %in% c("primary", "both")),

@@ -71,6 +71,18 @@ sources**; TraitExplorer discovers the folder automatically; `__Cytosplore_expor
   higher-precedence compilation, so for now they contribute provenance and spread only).
   `Max_home_range_ha` (a maximum) and
   `Biomass_per_home-range_area_Chivers1984` (a density) are different quantities and stay out.
+- **Vocal repertoire size pooled by precedence (added 2026-11-20).** Enacts the owner's
+  ruling of 2026-11-19. Three labels report vocal repertoire size; `Vocal_repertoire_size (count)`
+  is now the pooled label, assembled by the `precedence` column of
+  `supplementary_sources.csv`: McComb & Semple 2005 (1), Dunn & Smaers 2018 (2).
+  McComb 2005 is the primary source; Dunn 2018 largely re-reports McComb's primaries
+  (of the 18 species both compilations report, 17 values are identical), so Dunn is
+  check-only where they overlap and fills gaps only -- never averaged in. Zimmermann 2017
+  is a partly independent recount and is NOT pooled; it remains its own source.
+  McComb's column is mapped twice (its own row carries the pooled label at precedence 1,
+  plus its source-specific label, unchanged); Dunn's likewise (own label plus a
+  pooled-feed row). Coverage: 58 species (winners: McComb & Semple 2005 42,
+  Dunn & Smaers 2018 16).
 - **AnAge interbirth interval is in days.** The item column is named `Inter_litter_Interbirth_interval_days`.
   AnAge's header carries no unit; the values are days (Homo 639, Mus 30, Sus 230) and are mapped directly.
 - **AnAge longevity quality filter.** `Data_quality` is AnAge's confidence in the longevity record only;

@@ -333,7 +333,13 @@ outd <- do.call(rbind, res)
 # ManyPrimates mappings identify an exact item; shared codes such as Value must
 # not select a different table's definition from the same publication folder.
 if (!is.null(supp_map) && nrow(supp_map)) for (i in seq_len(nrow(supp_map))) {
-  m <- supp_map[i, ]; rel <- file.path(m$source_publication, "reference_tables", paste0(m$item, "_definitions.csv"))
+  m <- supp_map[i, ]
+  ## A precedence (pooled-feed) row maps a source column onto a POOLED label, not
+  ## onto that item's own view of it, so the item's definition must not land on the
+  ## pooled label (the pooled label's definition comes from
+  ## __merging_supplementary/supplementary_label_definitions.csv instead).
+  if ("precedence" %in% names(m) && nzchar(trim(m$precedence))) next
+  rel <- file.path(m$source_publication, "reference_tables", paste0(m$item, "_definitions.csv"))
   ds <- rd(file.path(repo, rel)); if (is.null(ds)) next
   hit <- which(ds$Code == m$value_col); j <- match(paste0(m$Measure, " (", m$Units, ")"), outd$label)
   if (length(hit) != 1L || is.na(j)) next

@@ -33,6 +33,9 @@ item_name <- c(
   "HerculanoHouzel_etal_2015_Table3",
   "HerculanoHouzel_etal_2015_Table4",
   "HerculanoHouzel_etal_2015_Table5",
+  "HerculanoHouzel_etal_2011_Table1",   # PRIMARY source for the Glires rows HH 2015 re-reported:
+                                       #   pinned above the 2015 tables in sec 8.2.H (compilation
+                                       #   rule) and carries one guarded misprint fix in sec 3.4d.
   "HerculanoHouzel_etal_2020_TABLE1",
   "HerculanoHouzel_etal_2020_TABLE2",
   "JardimMesseder_etal_2017_Table1",
@@ -273,6 +276,40 @@ if (!is.null(jardimmesseder_df)) {
   cell_counts_isotropic_fractionator_data_list$JardimMesseder_etal_2017_Table1 <- jardimmesseder_df
 }
 rm(jardimmesseder_df)
+
+# 3.4d Misprint fix for Herculano-Houzel et al. 2011 Table 1: Cynomys sp. whole-brain neurons.
+#      The 2011 table prints prairie dog "Brain neurons" as 473.94 +/- 78.74 x 10^6, but its own
+#      cortical + cerebellar + RoB neuron counts sum to 437.94 x 10^6 (53.77 + 350.08 + 34.09),
+#      and Herculano-Houzel et al. 2015 (Table 5) print 437,943,767 with the SAME SD (78,742,230):
+#      the 2011 mean is a digit transposition (473.94 for 437.94). The frozen snapshot and the
+#      built TSV stay verbatim -- this is the record of the misprint -- and the value is corrected
+#      here, to the parts sum of the same table, before any derivation (3.6/3.7) consumes it.
+#      NOT a rounding adjustment: the guards below stop the merge unless the printed value and
+#      the parts sum are exactly the expected ones. (The reverse case -- a compilation's misprint
+#      corrected by this primary source -- is the rabbit Cerebellum_O.p.N: HH 2015 Table 2 prints
+#      1.222, its own olfactory-bulb ratio duplicated; the 2011 counts derive 0.314 in sec 3.7 once
+#      the sec 8.2.H precedence pin puts this item above the 2015 tables.)
+hh2011_df <- cell_counts_isotropic_fractionator_data_list$HerculanoHouzel_etal_2011_Table1
+if (!is.null(hh2011_df)) {
+  pdog <- !is.na(hh2011_df$Species) & hh2011_df$Species == "Cynomys sp."
+  if (!("WholeBrain_N.n" %in% colnames(hh2011_df)) || sum(pdog) != 1L)
+    stop("3.4d: expected exactly one 'Cynomys sp.' row with a WholeBrain_N.n column in ",
+         "HerculanoHouzel_etal_2011_Table1; found ", sum(pdog), " row(s). The source table or ",
+         "its standardized terms changed -- re-check this correction before applying it.",
+         call. = FALSE)
+  printed_wb <- suppressWarnings(as.numeric(hh2011_df$WholeBrain_N.n[pdog]))
+  parts_wb <- sum(suppressWarnings(as.numeric(c(hh2011_df$CerebralCortex_N.n[pdog],
+                                                hh2011_df$Cerebellum_N.n[pdog],
+                                                hh2011_df$RoB_N.n[pdog]))))
+  if (!isTRUE(all.equal(printed_wb, 473940000, tolerance = 1e-9)) ||
+      !isTRUE(all.equal(parts_wb, 437940000, tolerance = 1e-9)))
+    stop("3.4d: expected the printed Cynomys sp. WholeBrain_N.n of 473940000 and a parts sum of ",
+         "437940000; found ", printed_wb, " and ", parts_wb, ". The source table changed -- ",
+         "re-check this correction before applying it.", call. = FALSE)
+  hh2011_df$WholeBrain_N.n[pdog] <- parts_wb
+  cell_counts_isotropic_fractionator_data_list$HerculanoHouzel_etal_2011_Table1 <- hh2011_df
+}
+rm(hh2011_df)
 
 ### DosSantos_etal_2020_Table1 omit ###
 # # 3.5 Calculate microglia per cells (I/C) data which was not reported in Dos Santos et al. 2020 Table 1 but must have been their primary data
@@ -858,8 +895,103 @@ worth_dataframe <- worth_dataframe[order(-worth_dataframe$date, -worth_dataframe
 rownames(worth_dataframe) <- NULL
 # Add a new column called "priority" with row numbers as values
 worth_dataframe$priority <- seq_len(nrow(worth_dataframe))
+# HH2011 precedence pin (2026-11): Herculano-Houzel et al. 2011 Table 1 is the PRIMARY publication
+# of the Glires cell counts that Herculano-Houzel et al. 2015 re-reported in its Tables 1-5 -- the
+# 2015 tables' own Source columns cite the 2011 paper for Heterocephalus glaber, Proechimys
+# cayennensis, Cynomys sp., Sciurus carolinensis and Oryctolagus cuniculus, and Herculano-Houzel
+# et al. 2006 for the other six species (averages recalculated in the 2011 paper; no 2006 dataset
+# exists in Evo-M1). Under the project's compilation rule the primary source outranks the
+# compilation for shared cells, so the 2011 item is pinned directly above the 2015 tables in this
+# worth order, overriding the date rule for this pair only; the 2015 tables remain the fallback
+# wherever the 2011 table lacks a cell (sec 8.3 keeps the best-priority non-NA value per cell).
+# This pin is what corrects the rabbit Cerebellum_O.p.N: HH 2015 Table 2 prints 1.222 (its own
+# olfactory-bulb ratio, duplicated in its cerebellum row), while the 2011 table prints no ratio
+# and its counts derive 0.314 in sec 3.7.
+# One scoped exception to the pin follows the priority match below: the olfactory-bulb carve-out.
+if ("HerculanoHouzel_etal_2011_Table1" %in% worth_dataframe$source) {
+  hh2015_tables <- paste0("HerculanoHouzel_etal_2015_Table", 1:5)
+  if (!all(hh2015_tables %in% worth_dataframe$source))
+    stop("8.2.H pin: expected all five HerculanoHouzel_etal_2015 tables in the HH-team worth ",
+         "table. The item list changed -- re-check the HH2011 precedence pin.", call. = FALSE)
+  pin_row <- worth_dataframe[worth_dataframe$source == "HerculanoHouzel_etal_2011_Table1", , drop = FALSE]
+  worth_dataframe <- worth_dataframe[worth_dataframe$source != "HerculanoHouzel_etal_2011_Table1", , drop = FALSE]
+  insert_at <- min(which(worth_dataframe$source %in% hh2015_tables))
+  worth_dataframe <- rbind(worth_dataframe[seq_len(insert_at - 1), , drop = FALSE],
+                           pin_row,
+                           worth_dataframe[insert_at:nrow(worth_dataframe), , drop = FALSE])
+  rownames(worth_dataframe) <- NULL
+  worth_dataframe$priority <- seq_len(nrow(worth_dataframe))
+}
 # Append a "priority" column to the "combined_data" dataframe by matching "Source" values with "source" in "worth_dataframe"
 combined_data$priority <- match(combined_data$Source,  worth_dataframe$source, worth_dataframe$priority)
+
+# HH2011 olfactory-bulb carve-out (2026-11, curator decision): the pin above makes the 2011
+# primary outrank the 2015 compilation for every shared cell, but HH 2015 Table 4 (olfactory
+# bulb) is NOT a pure re-carriage of the 2011 bulb data. Its per-species bulb n differs from the
+# 2011 study for three species -- rat 5 vs 4, spiny rat 1 vs 2, grey squirrel 9 vs 3 -- while
+# every other structure's n matches 2011 exactly, so the 2015 bulb means for rat and squirrel
+# rest on LARGER samples than the 2011 paper published (the team's fuller bulb dataset, still
+# cited to "Herculano-Houzel et al., 2011" in Table 4's own Source column). Decision: for
+# olfactory-bulb cells only, the larger sample wins. Where Table 4's printed bulb n exceeds the
+# 2011 paper's printed n for a species, the 2011 rows for that species' OlfactoryBulb_ variables
+# are demoted here to half a priority step below Table 4, so sec 8.3 keeps the 2015 bulb values;
+# where the 2011 n is equal or larger (spiny rat, and every other shared species), the pin
+# stands and the primary wins as before. Demotion by half a step (not removal) keeps the 2011
+# value as the fallback wherever Table 4 lacks a cell. WholeBrainOlfactoryBulb_ variables are
+# whole-brain values, not bulb cells, and are NOT carved out.
+# The species set is COMPUTED from the two tables' printed n values -- Table 4's bulb-specific
+# "OlfactoryBulb_n" against the 2011 table's "Sample_n" (the 2011 paper prints one n per
+# species; the same animals supplied every structure) -- read from
+# cell_counts_isotropic_fractionator_data_list, whose columns sec 6 annexed out of the filtered
+# dataframes the worth order is built from. The guards stop the merge if the printed n values
+# are not exactly the ones this exception was written for.
+if ("HerculanoHouzel_etal_2011_Table1" %in% worth_dataframe$source) {
+  bulb_t4 <- cell_counts_isotropic_fractionator_data_list$HerculanoHouzel_etal_2015_Table4
+  bulb_11 <- cell_counts_isotropic_fractionator_data_list$HerculanoHouzel_etal_2011_Table1
+  if (is.null(bulb_t4) || is.null(bulb_11) ||
+      !("OlfactoryBulb_n" %in% colnames(bulb_t4)) || !("Sample_n" %in% colnames(bulb_11)) ||
+      !("OlfactoryBulb_N.n" %in% colnames(bulb_11)))
+    stop("8.2.H bulb carve-out: expected OlfactoryBulb_n in HerculanoHouzel_etal_2015_Table4 ",
+         "and Sample_n + OlfactoryBulb_N.n in HerculanoHouzel_etal_2011_Table1. The source ",
+         "tables or their standardized terms changed -- re-check this exception before ",
+         "applying it.", call. = FALSE)
+  n_t4 <- setNames(suppressWarnings(as.numeric(bulb_t4$OlfactoryBulb_n)), bulb_t4$Species)
+  n_11 <- setNames(suppressWarnings(as.numeric(bulb_11$Sample_n)), bulb_11$Species)
+  bulb_measured_11 <- bulb_11$Species[!is.na(suppressWarnings(as.numeric(bulb_11$OlfactoryBulb_N.n)))]
+  shared_bulb_species <- intersect(intersect(names(n_t4)[!is.na(n_t4)], names(n_11)[!is.na(n_11)]),
+                                   bulb_measured_11)
+  n_diff_bulb <- n_t4[shared_bulb_species] - n_11[shared_bulb_species]
+  expected_n_diff_bulb <- c("Rattus norvegicus" = 1, "Proechimys guyannensis" = -1,
+                            "Sciurus carolinensis" = 6)
+  if (length(shared_bulb_species) != 10L ||
+      !isTRUE(all.equal(n_diff_bulb[names(expected_n_diff_bulb)], expected_n_diff_bulb,
+                        check.attributes = FALSE)) ||
+      any(n_diff_bulb[!(names(n_diff_bulb) %in% names(expected_n_diff_bulb))] != 0))
+    stop("8.2.H bulb carve-out: expected the printed bulb n of the two tables to differ only ",
+         "for Rattus norvegicus (5 vs 4), Proechimys guyannensis (1 vs 2) and Sciurus ",
+         "carolinensis (9 vs 3), with equal n for the other seven shared bulb species; found ",
+         "differences (2015 minus 2011) of ",
+         paste0(names(n_diff_bulb), " ", n_diff_bulb, collapse = ", "),
+         ". The source tables changed -- re-check this exception before applying it.",
+         call. = FALSE)
+  carve_out_species <- names(n_diff_bulb)[n_diff_bulb > 0]
+  if (!setequal(carve_out_species, c("Rattus norvegicus", "Sciurus carolinensis")))
+    stop("8.2.H bulb carve-out: expected the larger-2015-sample species to be exactly Rattus ",
+         "norvegicus and Sciurus carolinensis; computed ",
+         paste(carve_out_species, collapse = ", "), ". Re-check this exception before ",
+         "applying it.", call. = FALSE)
+  t4_priority <- worth_dataframe$priority[worth_dataframe$source == "HerculanoHouzel_etal_2015_Table4"]
+  carve_out_rows <- combined_data$Source == "HerculanoHouzel_etal_2011_Table1" &
+                    combined_data$Species %in% carve_out_species &
+                    startsWith(combined_data$Variable, "OlfactoryBulb_")
+  if (!any(carve_out_rows))
+    stop("8.2.H bulb carve-out: no HerculanoHouzel_etal_2011_Table1 olfactory-bulb rows found ",
+         "for the carve-out species in combined_data. The melt changed -- re-check this ",
+         "exception before applying it.", call. = FALSE)
+  combined_data$priority[carve_out_rows] <- t4_priority + 0.5
+  rm(bulb_t4, bulb_11, n_t4, n_11, bulb_measured_11, shared_bulb_species, n_diff_bulb,
+     expected_n_diff_bulb, carve_out_species, t4_priority, carve_out_rows)
+}
 
 ## 8.3.H Limit dataset to best available data
 # remove any NA values in combined_data
